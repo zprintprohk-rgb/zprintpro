@@ -11,6 +11,7 @@
  * 執行卡: 2026-09-09-autoclaw-plp-pdp-v91-execution-card.md (v1.3) 鎖定點 1-5
  */
 import Image from 'next/image';
+import { Factory, Zap, Truck, Clock, ShieldCheck, Headphones } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import {
   Product,
@@ -21,34 +22,22 @@ import { getProductImages, getProductMainImage } from '@/lib/product-image';
 import { getDisplayAnchor } from '@/lib/pricing';
 import { getPriceTableForSlug } from '@/lib/price-injector';
 import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversion-blocks';
-import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { GalleryV9 } from './GalleryV9';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
-/* ---------- 為何選擇 6 格（文案與 ProductWhyChooseUs zh-hk 逐字一致, 僅重排視覺） ---------- */
-const WHY6 = [
-  { title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控', icon: 'factory' },
-  { title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天', icon: 'zap' },
-  { title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全', icon: 'truck' },
-  { title: '免費打樣', sub: '滿意再下單', desc: '批量訂單免費提供實物樣板確認', icon: 'clock' },
-  { title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款', icon: 'shield' },
-  { title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線', icon: 'support' },
-] as const;
-
-function WhyIcon({ kind }: { kind: string }) {
-  const common = { className: 'w-6 h-6 stroke-white fill-none', strokeWidth: 1.8, viewBox: '0 0 24 24', 'aria-hidden': true } as const;
-  return (
-    <svg {...common}>
-      {kind === 'factory' && <><path d="M3 21V9l6 4V9l6 4V5h6v16H3z" /><path d="M7 17h2M13 17h2" /></>}
-      {kind === 'zap' && <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />}
-      {kind === 'truck' && <><rect x="1" y="6" width="14" height="11" rx="1" /><path d="M15 10h4l3 3v4h-7" /><circle cx="6" cy="19" r="1.6" /><circle cx="18" cy="19" r="1.6" /></>}
-      {kind === 'clock' && <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></>}
-      {kind === 'shield' && <><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" /><path d="M9 12l2 2 4-4" /></>}
-      {kind === 'support' && <><path d="M4 13a8 8 0 0116 0" /><rect x="2" y="13" width="4" height="6" rx="1.5" /><rect x="18" y="13" width="4" height="6" rx="1.5" /><path d="M20 19a3 3 0 01-3 3h-3" /></>}
-    </svg>
-  );
-}
+/* ---------- 為何選擇 6 格（統一區塊: 樣式對齊首頁 WhyChooseUs; 文案與 ProductWhyChooseUs zh-hk 逐字一致） ---------- */
+const WHY_CARDS = [
+  { icon: Factory, title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控' },
+  { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天' },
+  { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
+  { icon: Clock, title: '免費打樣', sub: '滿意再下單', desc: '批量訂單免費提供實物樣板確認' },
+  { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
+  { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
+];
+const WHY_INTRO = '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務日本及全球客戶。我們熟悉跨境印刷需求，提供 IP 保護、ISO 認證品質保證，以及全球物流支援。';
+const WHY_SHIPPING = '順豐香港本地送貨 · 港島/九龍/新界 48小時達 · DHL 全球 2-4 日';
+const WHY_PRICING = '以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。';
 
 export function ProductPageV9({
   locale,
@@ -136,7 +125,7 @@ export function ProductPageV9({
   ];
 
   const proofImages: [string, string, string][] = [
-    [factoryImage, '印刷', '海德堡 6+1 柯式印刷機'],
+    [factoryImage, '印刷', '海德堡柯式印刷機組'],
     ['/images/factory/factory-color-chart.webp', '品控', 'ICC 色彩管理 · 對色實景'],
     ['/images/factory/factory-weigang-uv.webp', '不乾膠專用', '輪轉 UV 印刷機 · 貼紙標籤專線'],
   ];
@@ -306,7 +295,7 @@ export function ProductPageV9({
           {detailSections.map((s, i) => (
             <details key={s.title || `sec-${i}`} className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]" open={i === 0}>
               {s.title && (
-                <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[16.5px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
+                <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[20px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
                   {s.title}
                   <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
                 </summary>
@@ -318,7 +307,7 @@ export function ProductPageV9({
           ))}
           {/* 規格參數 + 產品特點（products.ts specs/features 數據） */}
           <details className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
-            <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[16.5px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
+            <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[20px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
               規格參數
               <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
             </summary>
@@ -414,24 +403,35 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 藍本 .whys 為何選擇 6 格（文案 = ProductWhyChooseUs zh-hk 逐字） ═══ */}
+      {/* ═══ 為何選擇智印港 — 統一區塊（置於產品詳情之後; 樣式對齊首頁 WhyChooseUs; 文案 = Regional zh-hk 逐字; 無重複大按鈕） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
-        <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-6">為何選擇智印港？</h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {WHY6.map((w) => (
-            <div key={w.title} className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[18px]">
-              <div className="flex items-center gap-3 mb-2.5">
-                <span className="w-11 h-11 rounded-[12px] bg-[#2873F5] flex items-center justify-center shrink-0">
-                  <WhyIcon kind={w.icon} />
-                </span>
-                <div>
-                  <b className="block text-[16.5px] leading-tight">{w.title}</b>
-                  <span className="font-mono text-[12.5px] font-bold text-[#EA580C] bg-[#FEF1E6] rounded-[5px] px-1.5 py-0.5 inline-block mt-1">{w.sub}</span>
+        <div className="grid gap-9 lg:grid-cols-[5fr_7fr] items-start">
+          <div>
+            <div className="flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3.5">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
+              Why ZprintPro
+            </div>
+            <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#111827]">
+              為何選擇<em className="not-italic text-[#F87314]">智印港</em>
+            </h2>
+            <p className="mt-4 text-[16px] leading-[1.9] text-[#3A4250] text-justify">{WHY_INTRO}</p>
+            <p className="mt-3 text-[16px] leading-[1.9] text-[#3A4250] font-semibold">{WHY_SHIPPING}</p>
+            <p className="mt-3 text-[13px] text-[#6B7280]">{WHY_PRICING}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[18px]">
+            {WHY_CARDS.map((w) => (
+              <div key={w.title} className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px] hover:border-[#d6e0f5]">
+                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                  <w.icon className="w-6 h-6 text-white" aria-hidden="true" />
+                </div>
+                <div className="min-w-0">
+                  <h3 className="text-base font-extrabold text-[#111827]">{w.title}</h3>
+                  <p className="text-[13px] font-bold text-[#2873F5] mt-1 mb-1.5">{w.sub}</p>
+                  <p className="text-[13px] leading-[1.7] text-[#6B7280]">{w.desc}</p>
                 </div>
               </div>
-              <p className="text-[15px] text-[#6B7280] leading-[1.65]">{w.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -499,30 +499,6 @@ export function ProductPageV9({
           </div>
         </div>
       </section>
-
-      {/* 地區化內容（沿用現有組件與文案, 內容零改動） */}
-      <div className="max-w-[1320px] mx-auto px-6 pb-4">
-        <div className="bg-[linear-gradient(180deg,#ffffff,rgba(239,246,255,0.5))] rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
-          <div className="text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">為何選擇智印港？</h3>
-            <RegionalTrustBadges locale={locale} />
-          </div>
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-blue-100/60">
-            <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center">
-              <RegionalContent locale={locale} type="expertIntro" />
-            </p>
-          </div>
-          <div className="text-center space-y-4">
-            <p className="text-base md:text-lg text-gray-500">
-              <RegionalContent locale={locale} type="shipping" />
-            </p>
-            <RegionalCta locale={locale} productSlug={product.slug} />
-            <p className="text-sm text-gray-400">
-              <RegionalContent locale={locale} type="pricingNote" />
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* 移動端吸底報價軌（藍本 .mrail; 價格 = 真實檔位錨點） */}
       <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">

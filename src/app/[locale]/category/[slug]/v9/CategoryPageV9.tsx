@@ -9,6 +9,7 @@
  * 執行卡: 2026-09-09-autoclaw-plp-pdp-v91-execution-card.md (v1.3) 鎖定點 1-5
  */
 import Image from 'next/image';
+import { Factory, Zap, Truck, Clock, ShieldCheck, Headphones } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { Product, getProductDisplayTitle } from '@/data/products';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
@@ -27,10 +28,22 @@ import {
   getPriceUnitWord,
 } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { SpecFinderV9 } from './SpecFinderV9';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
+
+/* ---------- 統一信任區塊數據（文案與 ProductWhyChooseUs / RegionalContent zh-hk 逐字一致） ---------- */
+const WHY_CARDS = [
+  { icon: Factory, title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控' },
+  { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天' },
+  { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
+  { icon: Clock, title: '免費打樣', sub: '滿意再下單', desc: '批量訂單免費提供實物樣板確認' },
+  { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
+  { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
+];
+const WHY_INTRO = '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務日本及全球客戶。我們熟悉跨境印刷需求，提供 IP 保護、ISO 認證品質保證，以及全球物流支援。';
+const WHY_SHIPPING = '順豐香港本地送貨 · 港島/九龍/新界 48小時達 · DHL 全球 2-4 日';
+const WHY_PRICING = '以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。';
 
 /* ---------- 通用小件（藍本 .eyebrow / h2.st / .sec-sub） ---------- */
 
@@ -157,41 +170,42 @@ export function CategoryPageV9({
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
-      {/* ═══ 藍本 .bc 麵包屑 ═══ */}
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-[13px] text-[#6B7280]">
-        <a href={`${localePrefix}/`} className="text-[#6B7280] hover:text-[#2873F5]">首頁</a>
-        {' / '}
-        <span>{categoryName}</span>
-      </div>
-
-      {/* ═══ 藍本 .bn Banner — 左 H1 + 右分類主圖（H1 逐字 = customH1Map） ═══ */}
-      <section className="relative overflow-hidden text-white bg-[linear-gradient(165deg,#244780_0%,#1B3163_52%,#152649_100%)]">
-        <div className="relative z-[1] max-w-[1320px] mx-auto px-6 py-12 grid gap-11 items-center lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
-          <div>
-            <h1 className="text-[clamp(26px,2.8vw,38px)] font-extrabold tracking-[-0.01em] leading-[1.35]">{pageH1}</h1>
-            <p className="mt-3 text-[17.5px] text-white/85">專業品質，價格透明，快速交貨</p>
-            <div className="mt-6 flex flex-wrap gap-2.5">
-              {bannerCaps.map((cap) => (
-                <span key={cap} className="inline-flex items-center gap-[7px] bg-white/10 border border-white/20 backdrop-blur-[2px] px-[15px] py-2 rounded-full text-[14px] font-semibold">
-                  <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5" stroke="#FFD9BC" strokeWidth="2" aria-hidden="true"><path d="M20 7L9 18l-5-5" /></svg>
-                  {cap}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="relative rounded-[18px] overflow-hidden border border-white/25 shadow-[0_20px_50px_rgba(10,20,45,0.45)] [aspect-ratio:4/3]">
-            <Image src={bannerImage} alt={`${categoryName}全品類實拍`} fill className="object-cover" unoptimized priority sizes="(max-width: 1024px) 100vw, 560px" />
-            <div className="absolute left-3.5 bottom-3.5 bg-[rgba(21,38,73,0.82)] text-white font-mono text-[12.5px] tracking-[0.06em] px-3 py-1.5 rounded-[7px] backdrop-blur-[3px]">
-              STICKER PRINTING · HK
-            </div>
+      {/* ═══ Banner — 分類主圖直貼導航欄, H1 真實疊加在圖上（深色遮罩保對比度, 利於抓取與可讀） ═══ */}
+      <section className="relative overflow-hidden bg-[#1B3163] text-white">
+        <Image
+          src={bannerImage}
+          alt={`${categoryName}全品類實拍`}
+          fill
+          className="object-cover"
+          unoptimized
+          priority
+          sizes="100vw"
+        />
+        {/* 對比度遮罩：左深右淺, 保證 H1/麵包屑可讀（真實 H1 存在於 DOM, 非圖片文字） */}
+        <div aria-hidden="true" className="absolute inset-0 bg-[linear-gradient(100deg,rgba(15,26,51,0.9)_0%,rgba(21,38,73,0.78)_45%,rgba(21,38,73,0.3)_100%)]" />
+        <div className="relative z-[1] max-w-[1320px] mx-auto px-6 py-12 lg:py-14">
+          <nav aria-label="breadcrumb" className="text-[13px] text-white/70 mb-4">
+            <a href={`${localePrefix}/`} className="hover:text-white transition-colors">首頁</a>
+            <span className="mx-2">/</span>
+            <span className="text-white">{categoryName}</span>
+          </nav>
+          <h1 className="text-[clamp(26px,2.8vw,38px)] font-extrabold tracking-[-0.01em] leading-[1.35] max-w-[860px] drop-shadow-sm">{pageH1}</h1>
+          <p className="mt-3 text-[17.5px] text-white/85">專業品質，價格透明，快速交貨</p>
+          <div className="mt-6 flex flex-wrap gap-2.5">
+            {bannerCaps.map((cap) => (
+              <span key={cap} className="inline-flex items-center gap-[7px] bg-white/10 border border-white/20 backdrop-blur-[2px] px-[15px] py-2 rounded-full text-[14px] font-semibold">
+                <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5" stroke="#FFD9BC" strokeWidth="2" aria-hidden="true"><path d="M20 7L9 18l-5-5" /></svg>
+                {cap}
+              </span>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ═══ 藍本 .main — 凍結左欄 + 右欄 ═══ */}
       <div className="max-w-[1320px] mx-auto px-6 pt-9 pb-20 grid gap-9 items-start lg:grid-cols-[248px_minmax(0,1fr)]">
-        {/* 左側分類欄（凍結區: 生產沿用現有組件） */}
-        <aside className="lg:sticky lg:top-[88px]">
+        {/* 左側分類欄（凍結區: 生產沿用現有組件; sticky 偏移與首頁 WhyChooseUs 同源 110px, 避讓 sticky 導航） */}
+        <aside className="lg:sticky lg:top-[110px]">
           <CategorySidebar locale={locale} currentCategorySlug={slug} />
         </aside>
 
@@ -498,29 +512,37 @@ export function CategoryPageV9({
             </div>
           </section>
 
-          {/* 地區化內容（沿用現有組件與文案, 內容零改動） */}
-          <div className="pb-4">
-            <div className="bg-[linear-gradient(180deg,#ffffff,rgba(239,246,255,0.5))] rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
-              <div className="text-center">
-                <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">為何選擇智印港？</h3>
-                <RegionalTrustBadges locale={locale} />
+          {/* 為何選擇智印港 — 統一區塊（樣式對齊首頁 WhyChooseUs; 文案 = RegionalContent zh-hk 逐字; 無重複大按鈕） */}
+          <section className="mb-16">
+            <div className="grid gap-9 lg:grid-cols-[5fr_7fr] items-start">
+              <div>
+                <div className="flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3.5">
+                  <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
+                  Why ZprintPro
+                </div>
+                <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#111827]">
+                  為何選擇<em className="not-italic text-[#F87314]">智印港</em>
+                </h2>
+                <p className="mt-4 text-[16px] leading-[1.9] text-[#3A4250] text-justify">{WHY_INTRO}</p>
+                <p className="mt-3 text-[16px] leading-[1.9] text-[#3A4250] font-semibold">{WHY_SHIPPING}</p>
+                <p className="mt-3 text-[13px] text-[#6B7280]">{WHY_PRICING}</p>
               </div>
-              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-blue-100/60">
-                <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center">
-                  <RegionalContent locale={locale} type="expertIntro" />
-                </p>
-              </div>
-              <div className="text-center space-y-4">
-                <p className="text-base md:text-lg text-gray-500">
-                  <RegionalContent locale={locale} type="shipping" />
-                </p>
-                <RegionalCta locale={locale} />
-                <p className="text-sm text-gray-400">
-                  <RegionalContent locale={locale} type="pricingNote" />
-                </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[18px]">
+                {WHY_CARDS.map((w) => (
+                  <div key={w.title} className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px] hover:border-[#d6e0f5]">
+                    <div className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                      <w.icon className="w-6 h-6 text-white" aria-hidden="true" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="text-base font-extrabold text-[#111827]">{w.title}</h3>
+                      <p className="text-[13px] font-bold text-[#2873F5] mt-1 mb-1.5">{w.sub}</p>
+                      <p className="text-[13px] leading-[1.7] text-[#6B7280]">{w.desc}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
 

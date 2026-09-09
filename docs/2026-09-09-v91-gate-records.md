@@ -31,8 +31,29 @@
 ## ⑥ build:cf 本机执行记录
 
 - 第一次：`clean ✓ → gen-sitemap ✓ → @cloudflare/next-on-pages CLI 启动 → shellac spawn 'npm --version' 空输出崩`（EXIT WHEN NOT EXPECTED）。**非代码编译错误**——CLI 自带警告「Windows 系统 Vercel CLI 不可靠」，与 AGENTS §12「Windows 本机 build 卡 fonts 网络，以 CF Pages 状态为准」一致。
-- 第二次（重试）：结果见追加记录。
-- **权威编译闸 = push 后 CF Pages 构建**（§12 既有口径）；本机 `npx tsc --noEmit` 触碰文件 0 error 为本地编译佐证。
+- 第二次（重试）：同样死于 `npm --version` spawn 空输出，代码从未进入编译阶段。
+- **本地编译证据**：`npx next build`（绕过 Vercel CLI wrapper）**exit 0**，`/[locale]/category/[slug]` 7.26 kB 与 `/[locale]/product/[slug]` 38.1 kB 两路由正常产出 → 本地编译通过。
+- **权威闸六 = CF Pages 实际构建：aa5ff1f1 push 后 check-runs conclusion = `success`**（Deploy successful, 2026-09-09）→ **闸六 PASS**。
+
+## ⑥ 后置发现（Preview 环境配置缺口, 非本次代码问题）— 已修复
+
+- Commit Preview 初次返回 Cloudflare 错误页：**「Node.JS Compatibility Error — no nodejs_compat compatibility flag set」**。
+- 根因实测（Pages API GET project）：**PRODUCTION flags=[nodejs_compat_v2] / PREVIEW flags=[]**——生产有标志所以线上正常，Preview 空导致任何分支 preview 必报错（既有项目配置缺口）。
+- **修复（唐总提供 Pages:Edit token, 2026-09-09）**：`PATCH /pages/projects/zprintpro` 将 `deployment_configs.preview.compatibility_flags` 置为 `["nodejs_compat_v2"]`（与生产完全一致，compatibility_date 两环境同为 2026-04-01 未动，生产零改动）→ 触发 `POST .../deployments/d732137a.../retry` → 新部署 `e712f5e0`（commit aa5ff1f1）**deploy/success**。
+
+## ⑥ 最终复验（2026-09-09, Preview 实测 curl）
+
+| URL | 判定 |
+|-----|------|
+| `/zh-hk/category/stickers/` | **v9 生效 PASS**（規格任選/SpecFinder/banner caps/數據帶 全命中, 无 legacy `h-[400px]`） |
+| `/zh-hk/product/waterproof-stickers/` | **v9 生效 PASS**（階梯 `71%`/慳幅/工廠實證 3 圖/longDescription 5 手風琴+規格參數/交稿規範卡 300 DPI/CTA/6 格 whys 全命中） |
+| `/zh-hk/category/paper-bags/` | **legacy PASS**（`h-[400px]` 在, v9 零洩漏） |
+| `/en/category/stickers/` | **legacy PASS**（v9 零洩漏） |
+| `/en/product/waterproof-stickers/` | **legacy PASS**（v9 零洩漏） |
+| `/ja/category/stickers/` | **legacy PASS**（v9 零洩漏） |
+| `/zh-hk/` 首頁 | HTTP 200 PASS |
+
+> 備註：SSR 檢測中 `71<!-- -->%` 為 React 文本節點分隔註釋, `71%` 實際渲染無誤。
 
 ## 锁定三终检
 

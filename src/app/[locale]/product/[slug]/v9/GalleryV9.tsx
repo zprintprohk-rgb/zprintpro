@@ -22,8 +22,9 @@ export function GalleryV9({
 
   return (
     <div>
-      <div className="relative rounded-[18px] overflow-hidden bg-[#F3F3F3] border border-[#E5E7EB] [aspect-ratio:4/3] before:content-[''] before:absolute before:z-[2] before:w-4 before:h-4 before:top-3 before:left-3 before:pointer-events-none before:border-t-[1.5px] before:border-l-[1.5px] before:border-[rgba(31,41,55,0.5)] after:content-[''] after:absolute after:z-[2] after:w-4 after:h-4 after:bottom-3 after:right-3 after:pointer-events-none after:border-b-[1.5px] after:border-r-[1.5px] after:border-[rgba(31,41,55,0.5)]">
-        <Image key={main} src={main} alt={alt} fill className="object-cover" unoptimized priority sizes="(max-width: 1024px) 100vw, 760px" />
+      {/* 主圖 1:1 正方形（object-contain: 不同尺寸產品圖完整顯示不裁剪; 空白處以淺灰底補齐） */}
+      <div className="relative rounded-[18px] overflow-hidden bg-[#F3F3F3] border border-[#E5E7EB] [aspect-ratio:1/1] before:content-[''] before:absolute before:z-[2] before:w-4 before:h-4 before:top-3 before:left-3 before:pointer-events-none before:border-t-[1.5px] before:border-l-[1.5px] before:border-[rgba(31,41,55,0.5)] after:content-[''] after:absolute after:z-[2] after:w-4 after:h-4 after:bottom-3 after:right-3 after:pointer-events-none after:border-b-[1.5px] after:border-r-[1.5px] after:border-[rgba(31,41,55,0.5)]">
+        <Image key={main} src={main} alt={alt} fill className="object-contain" unoptimized priority sizes="(max-width: 1024px) 100vw, 760px" />
       </div>
       <div className="grid grid-cols-4 gap-3 mt-3">
         {thumbs.map((t, i) => (

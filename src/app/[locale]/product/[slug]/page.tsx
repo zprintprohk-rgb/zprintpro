@@ -339,8 +339,8 @@ export default function ProductPage({
   // 2026-09-09 PDP v9.1 樷板路由门控 (执行卡锁定点 2): 仅 zh-hk /product/waterproof-stickers/ 走 v9 渲染层,
   // 其余 SKU + en/ja 渲染零影响 (legacy 分支原样保留)
   const isV9Waterproof = locale === 'zh-hk' && slug === 'waterproof-stickers';
-  // v9.1 工厂实证图 (蓝本 §Factory Proof; 盘上实存 public/images/factory/)
-  const PDP_FACTORY_IMAGE = '/images/factory/factory-heidelberg-6plus1.webp';
+  // v9.1 工厂实证图 (海德堡柯式印刷机组; 盘上实存 public/images/factory/factory-heidelberg.webp)
+  const PDP_FACTORY_IMAGE = '/images/factory/factory-heidelberg.webp';
   
   return (
     <>
