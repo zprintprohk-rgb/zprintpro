@@ -1,7 +1,7 @@
 # 全站标题 v4 审计基线 (2026-09-09)
 
 数据来源: sku-seo-data.ts + blog-posts.ts + seo.ts(home/category) + GSC数据/gsc-fresh-2026-09-03.json (3m canonical); 口径 = v4 写满原则 (CJK×2)
-汇总: {"total":532,"byType":{"sku":252,"blog":255,"home":1,"category":24},"byBand":{"OK":382,"LEGACY":23,"TRIM":56,"FILL":64,"RED":7},"byAction":{"修品牌/污染":292,"OK":99,"修剪 50-54":28,"FROZEN(只读至窗判)":58,"补满 50-54":55},"brandIssues":368,"bcHits":0,"insightHits":1,"frozen":58}
+汇总: {"total":532,"byType":{"sku":252,"blog":255,"home":1,"category":24},"byBand":{"OK":294,"LEGACY":23,"TRIM":40,"FILL":168,"RED":7},"byAction":{"修品牌/污染":195,"OK":108,"修剪 50-54":12,"FROZEN(只读至窗判)":58,"补满 50-54":159},"brandIssues":323,"bcHits":0,"insightHits":1,"frozen":58}
 
 ## 违规明细 (非 OK)
 
@@ -183,223 +183,214 @@
 | sku | rounded-corner-greeting-cards | zh-hk | FILL | 46/33 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 圓角賀卡印刷 | R3mm 模切・柔和觸感 | ZprintPro |
 | sku | rounded-corner-greeting-cards | en | LEGACY | 56/56 | FROZEN(只读至窗判) | - | Rounded Corner Greeting Cards | R3mm Die-Cut | ZprintPro |
 | sku | rounded-corner-greeting-cards | ja | OK | 54/37 | FROZEN(只读至窗判) | 简体污染 | 角丸グリーティングカード印刷 | R3mm 型抜き | ZprintPro |
-| blog | sticker-buying-guide | zh-hk | FILL | 46/23 | 补满 50-54 | 缺品牌 智印港;品牌非一次;品牌不在末尾 | 貼紙印刷選購完全指南：材質、工藝、價格一次搞懂 |
-| blog | sticker-buying-guide | en | TRIM | 70/70 | 修剪 50-54 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Sticker Printing Guide: Materials, Finishes & Pricing |
-| blog | sticker-buying-guide | ja | FILL | 48/24 | 补满 50-54 | 缺品牌 ZprintPro;品牌不在末尾 | ステッカー印刷ガイド：材質、加工、価格を徹底解説 |
+| blog | sticker-buying-guide | zh-hk | FILL | 55/29 | 补满 50-54 | - | 貼紙印刷選購完全指南：材質、工藝、價格一次搞懂 | 智印港 |
+| blog | sticker-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | ステッカー印刷ガイド：材質、加工、価格を徹底解説 | ZprintPro |
 | blog | sticker-buying-guide | zh-hk | FILL | 53/28 | 补满 50-54 | - | 貼紙印刷選購完全指南：材質、形狀、用途全解析 | 智印港 |
-| blog | sticker-buying-guide | en | FILL | 32/32 | 补满 50-54 | - | Sticker Buying Guide | ZprintPro |
-| blog | sticker-buying-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | ステッカー印刷選び方完全ガイド：材質、形状、用途を徹底解説 | ZprintPro |
+| blog | sticker-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | ステッカー印刷選び方完全ガイド：材質、形状、用途 | ZprintPro |
 | blog | flyer-buying-guide | zh-hk | FILL | 53/28 | 补满 50-54 | - | 傳單印刷選購完全指南：尺寸、紙質、摺法全攻略 | 智印港 |
 | blog | flyer-buying-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Flyer Printing Buying Guide: Sizes, Paper & Folding Options |
-| blog | flyer-buying-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | チラシ印刷選び方完全ガイド：サイズ、用紙、折り方を徹底解説 | ZprintPro |
+| blog | flyer-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | チラシ印刷選び方完全ガイド：サイズ、用紙、折り方 | ZprintPro |
 | blog | packaging-buying-guide | zh-hk | FILL | 57/30 | 补满 50-54 | - | 包裝盒印刷選購完全指南：盒型、材質、工藝一次搞懂 | 智印港 |
 | blog | packaging-buying-guide | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Packaging Box Buying Guide: Styles, Materials & Finishes |
-| blog | packaging-buying-guide | ja | FILL | 68/40 | 补满 50-54 | 简体污染 | パッケージ箱選び方完全ガイド：箱型、材質、加工を徹底解説 | ZprintPro |
+| blog | packaging-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | パッケージ箱選び方完全ガイド：箱型、材質、加工を | ZprintPro |
 | blog | poster-buying-guide | zh-hk | FILL | 53/28 | 补满 50-54 | - | 海報印刷選購完全指南：尺寸、紙質、用途全解析 | 智印港 |
 | blog | poster-buying-guide | en | OK | 57/57 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Poster Printing Buying Guide: Sizes, Paper & Applications |
-| blog | poster-buying-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | ポスター印刷選び方完全ガイド：サイズ、用紙、用途を徹底解説 | ZprintPro |
+| blog | poster-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | ポスター印刷選び方完全ガイド：サイズ、用紙、用途 | ZprintPro |
 | blog | paper-bag-buying-guide | zh-hk | FILL | 53/28 | 补满 50-54 | - | 紙袋印刷選購完全指南：紙質、尺寸、手挽全攻略 | 智印港 |
 | blog | paper-bag-buying-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Paper Bag Printing Buying Guide: Materials, Sizes & Handles |
-| blog | paper-bag-buying-guide | ja | FILL | 68/40 | 补满 50-54 | 简体污染 | 紙袋印刷選び方完全ガイド：材質、サイズ、持ち手を徹底解説 | ZprintPro |
+| blog | paper-bag-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 紙袋印刷選び方完全ガイド：材質、サイズ、持ち手を | ZprintPro |
 | blog | banner-buying-guide | zh-hk | FILL | 58/31 | 补满 50-54 | - | 噴繪廣告選購完全指南：X展架、易拉寶、背景板全攻略 | 智印港 |
 | blog | banner-buying-guide | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Banner Printing Buying Guide: X-Stands, Roll-ups & Backdrops |
-| blog | banner-buying-guide | ja | OK | 97/55 | 修品牌/污染 | 简体污染 | バナー印刷選び方完全ガイド：Xスタンド、ロールアップ、背景板を徹底解説｜香港印刷ガイド | ZprintPro |
-| blog | book-buying-guide | zh-hk | FILL | 61/32 | 补满 50-54 | - | 書籍印刷選購完全指南：裝訂方式、紙張、封面工藝全攻略 | 智印港 |
+| blog | banner-buying-guide | ja | FILL | 59/36 | 补满 50-54 | 简体污染 | バナー印刷選び方完全ガイド：Xスタンド、ロールア | ZprintPro |
+| blog | book-buying-guide | zh-hk | FILL | 59/31 | 补满 50-54 | - | 書籍印刷選購完全指南：裝訂方式、紙張、封面工藝全攻 | 智印港 |
 | blog | book-buying-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Book Printing Buying Guide: Binding, Paper & Cover Finishes |
-| blog | book-buying-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | 書籍印刷選び方完全ガイド：製本方式、紙、表紙加工を徹底解説 | ZprintPro |
+| blog | book-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 書籍印刷選び方完全ガイド：製本方式、紙、表紙加工 | ZprintPro |
 | blog | menu-buying-guide | zh-hk | FILL | 55/29 | 补满 50-54 | - | 餐牌印刷選購完全指南：材質、工藝、耐用度全攻略 | 智印港 |
 | blog | menu-buying-guide | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Menu Printing Buying Guide: Materials, Finishes & Durability |
-| blog | menu-buying-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | メニュー印刷選び方完全ガイド：材質、加工、耐久性を徹底解説 | ZprintPro |
+| blog | menu-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | メニュー印刷選び方完全ガイド：材質、加工、耐久性 | ZprintPro |
 | blog | company-intro | zh-hk | FILL | 53/28 | 补满 50-54 | 品牌非一次 | 智印港印刷公司簡介：專業設備與一站式印刷服務 | 智印港 |
 | blog | company-intro | en | OK | 59/59 | 修品牌/污染 | 品牌不在末尾 | About ZprintPro: Professional Equipment & One-Stop Printing |
-| blog | company-intro | ja | FILL | 65/43 | 补满 50-54 | 简体污染 | ZprintPro会社概要：専門設備とワンストップ印刷サービス | ZprintPro |
+| blog | company-intro | ja | FILL | 59/40 | 补满 50-54 | 简体污染 | ZprintPro会社概要：専門設備とワンストップ印刷サ | ZprintPro |
 | blog | sticker-guide | zh-hk | FILL | 55/29 | 补满 50-54 | - | 香港貼紙印刷完全指南：材質、工藝與應用場景詳解 | 智印港 |
-| blog | sticker-guide | en | FILL | 43/43 | 补满 50-54 | - | Complete Sticker Printing Guide | ZprintPro |
-| blog | sticker-guide | ja | FILL | 70/41 | 补满 50-54 | 简体污染 | 香港ステッカー印刷完全ガイド：材質、加工、応用シーンを詳解 | ZprintPro |
+| blog | sticker-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 香港ステッカー印刷完全ガイド：材質、加工、応用シ | ZprintPro |
 | blog | sticker-design | zh-hk | FILL | 55/30 | 补满 50-54 | - | 貼紙設計的10個黃金法則：打造令人難忘的品牌形象 | 智印港 |
-| blog | sticker-design | en | FILL | 46/46 | 补满 50-54 | - | 10 Golden Rules for Sticker Design | ZprintPro |
-| blog | sticker-design | ja | FILL | 78/46 | 补满 50-54 | 简体污染 | ステッカーデザインの10の黄金法則：印象に残るブランドイメージを作る | ZprintPro |
+| blog | sticker-design | ja | FILL | 60/37 | 补满 50-54 | 简体污染 | ステッカーデザインの10の黄金法則：印象に残るブラ | ZprintPro |
 | blog | packaging-trends | zh-hk | FILL | 55/31 | 补满 50-54 | - | 2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出 | 智印港 |
-| blog | packaging-trends | en | FILL | 49/49 | 补满 50-54 | - | 2024 Packaging Design Trends Analysis | ZprintPro |
 | blog | packaging-trends | ja | FILL | 54/35 | 补满 50-54 | 简体污染 | 2024パッケージボックスデザイントレンド解析 | ZprintPro |
-| blog | cmyk-guide | zh-hk | FILL | 42/28 | 补满 50-54 | - | CMYK vs RGB：印刷色彩模式完全詳解 | 智印港 |
-| blog | cmyk-guide | ja | FILL | 49/36 | 补满 50-54 | 简体污染 | CMYK vs RGB：印刷カラーモード完全詳解 | ZprintPro |
-| blog | paper-materials | zh-hk | FILL | 43/23 | 补满 50-54 | - | 印刷紙材選擇指南：從銅版紙到特種紙 | 智印港 |
+| blog | cmyk-guide | zh-hk | FILL | 60/37 | 补满 50-54 | - | CMYK vs RGB：印刷色彩模式完全詳解｜香港印刷實戰指南 | 智印港 |
+| blog | cmyk-guide | ja | FILL | 55/39 | 补满 50-54 | 简体污染 | CMYK vs RGB：印刷カラーモード完全詳解｜入門 | ZprintPro |
+| blog | paper-materials | zh-hk | FILL | 59/31 | 补满 50-54 | - | 印刷紙材選擇指南：從銅版紙到特種紙｜材質工藝全攻略 | 智印港 |
 | blog | paper-materials | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Paper Selection Guide: From Art Paper to Specialty Stock |
 | blog | paper-materials | ja | FILL | 54/33 | 补满 50-54 | 简体污染 | 印刷紙材選択ガイド：コート紙から特殊紙まで | ZprintPro |
-| blog | eco-printing | zh-hk | FILL | 44/25 | 补满 50-54 | - | 環保印刷：企業ESG與可持續包裝的未來 | 智印港 |
+| blog | eco-printing | zh-hk | FILL | 60/33 | 补满 50-54 | - | 環保印刷：企業ESG與可持續包裝的未來｜材質工藝全攻略 | 智印港 |
 | blog | eco-printing | en | OK | 58/58 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Eco-Friendly Printing: The Future of Sustainable Packaging |
 | blog | eco-printing | ja | FILL | 59/37 | 补满 50-54 | 简体污染 | エコ印刷：企業のESGと持続可能なパッケージの未来 | ZprintPro |
-| blog | hong-kong-printing-guide | zh-hk | FILL | 63/33 | 补满 50-54 | - | 香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？ | 智印港 |
+| blog | hong-kong-printing-guide | zh-hk | FILL | 59/31 | 补满 50-54 | - | 香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可 | 智印港 |
 | blog | hong-kong-printing-guide | en | OK | 54/54 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Sticker & Packaging Printing Guide for US Small |
-| blog | hong-kong-printing-guide | ja | OK | 96/60 | 修品牌/污染 | 简体污染 | オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro | ZprintPro |
+| blog | hong-kong-printing-guide | ja | FILL | 54/33 | 补满 50-54 | 简体污染 | オリジナルステッカー・パッケージ印刷ガイド | ZprintPro |
 | blog | design-file-specs | zh-hk | FILL | 59/31 | 补满 50-54 | - | 印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂 | 智印港 |
-| blog | design-file-specs | en | FILL | 44/44 | 补满 50-54 | - | Print File Design Specifications | ZprintPro |
-| blog | design-file-specs | ja | FILL | 36/24 | 补满 50-54 | 简体污染 | 印刷ファイルデザイン仕様 | ZprintPro |
+| blog | design-file-specs | ja | FILL | 52/32 | 补满 50-54 | 简体污染 | 印刷ファイルデザイン仕様｜香港印刷ガイド | ZprintPro |
 | blog | brand-materials-checklist | zh-hk | FILL | 53/28 | 补满 50-54 | - | 企業品牌物料清單：從貼紙到展架的全套印刷方案 | 智印港 |
-| blog | brand-materials-checklist | en | FILL | 47/47 | 补满 50-54 | - | Corporate Brand Materials Checklist | ZprintPro |
-| blog | brand-materials-checklist | ja | FILL | 72/42 | 补满 50-54 | 简体污染 | 企業ブランド資材チェックリスト：ステッカーから展示パネルまで | ZprintPro |
-| blog | mtr-advertising-specs | zh-hk | FILL | 63/33 | 补满 50-54 | - | 港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南 | 智印港 |
+| blog | brand-materials-checklist | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 企業ブランド資材チェックリスト：ステッカーから展 | ZprintPro |
+| blog | mtr-advertising-specs | zh-hk | FILL | 59/31 | 补满 50-54 | - | 港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放 | 智印港 |
 | blog | mtr-advertising-specs | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Event Poster & Trade Show Print Specs for US B2B | Sizes |
-| blog | mtr-advertising-specs | ja | OK | 88/56 | 修品牌/污染 | 简体污染 | イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro | ZprintPro |
+| blog | mtr-advertising-specs | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | イベントポスター・展示パネル印刷仕様：サイズ・用 | ZprintPro |
 | blog | flyer-printing-guide | zh-hk | FILL | 59/31 | 补满 50-54 | - | 香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略 | 智印港 |
 | blog | flyer-printing-guide | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Flyer Printing Guide for US Small Business: Sizes |
-| blog | flyer-printing-guide | ja | OK | 87/51 | 修品牌/污染 | 简体污染 | オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応 | ZprintPro |
+| blog | flyer-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | オリジナルチラシ印刷ガイド：サイズ・用紙・デザイ | ZprintPro |
 | blog | food-packaging-printing-guide | zh-hk | FILL | 57/30 | 补满 50-54 | - | 食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港 |
-| blog | food-packaging-printing-guide | en | FILL | 41/41 | 补满 50-54 | - | Food Packaging Printing Guide | ZprintPro |
-| blog | food-packaging-printing-guide | ja | OK | 92/52 | 修品牌/污染 | 简体污染 | 食品パッケージ印刷完全ガイド：材質、安全性、法規制とデザイン実務｜香港印刷ガイド | ZprintPro |
+| blog | food-packaging-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 食品パッケージ印刷完全ガイド：材質、安全性、法規 | ZprintPro |
 | blog | paper-bag-printing-guide | zh-hk | FILL | 57/30 | 补满 50-54 | - | 香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢 | 智印港 |
-| blog | paper-bag-printing-guide | en | FILL | 36/36 | 补满 50-54 | - | Paper Bag Printing Guide | ZprintPro |
-| blog | paper-bag-printing-guide | ja | OK | 93/56 | 修品牌/污染 | 简体污染 | オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応 | ZprintPro |
-| blog | saddle-stitch-booklet-printing-guide | zh-hk | FILL | 64/36 | 补满 50-54 | - | 騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學 | 智印港 |
-| blog | saddle-stitch-booklet-printing-guide | ja | OK | 81/51 | 修品牌/污染 | 简体污染 | 中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 50冊から対応 | ZprintPro |
+| blog | paper-bag-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち | ZprintPro |
+| blog | saddle-stitch-booklet-printing-guide | zh-hk | FILL | 59/33 | 补满 50-54 | - | 騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ | 智印港 |
+| blog | saddle-stitch-booklet-printing-guide | ja | FILL | 58/35 | 补满 50-54 | 简体污染 | 中綴じ冊子印刷完全ガイド：ページ数・用紙・価格 | ZprintPro |
 | blog | poster-printing-guide | zh-hk | FILL | 57/30 | 补满 50-54 | - | 香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港 |
 | blog | poster-printing-guide | en | OK | 51/51 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Poster Printing Guide for US Events & Retail |
-| blog | poster-printing-guide | ja | OK | 99/57 | 修品牌/污染 | 简体污染 | オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応｜香港印刷ガイド | ZprintPro |
+| blog | poster-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | オリジナルポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro |
 | blog | packaging-box-custom-guide | zh-hk | FILL | 59/31 | 补满 50-54 | - | 香港包裝盒訂製完全指南：盒型、材質、工藝與預算控制 | 智印港 |
 | blog | packaging-box-custom-guide | en | OK | 58/58 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Packaging Box Guide 2026: 6 Box Styles, Materials & |
-| blog | packaging-box-custom-guide | ja | OK | 91/60 | 修品牌/污染 | 简体污染 | パッケージ箱カスタム完全ガイド2026：6つの箱型・素材・加工を徹底比較 | ZprintPro | ZprintPro |
-| blog | cross-border-ecommerce-shipping-box-guide | zh-hk | OK | 72/50 | 修品牌/污染 | 品牌非一次;简体字形污染 | 跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印港 ZprintPro | 智印港 |
-| blog | cross-border-ecommerce-shipping-box-guide | ja | OK | 75/54 | 修品牌/污染 | 简体污染 | 越境EC配送箱カスタムガイド：DHL 2-4日グローバル配送 | ZprintPro | ZprintPro |
-| blog | cosmetics-packaging-box-printing-guide | zh-hk | OK | 89/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | packaging-box-custom-guide | ja | FILL | 57/37 | 补满 50-54 | 简体污染 | パッケージ箱カスタム完全ガイド2026：6つの箱型 | ZprintPro |
+| blog | cross-border-ecommerce-shipping-box-guide | zh-hk | FILL | 60/39 | 补满 50-54 | - | 跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印 | 智印港 |
+| blog | cross-border-ecommerce-shipping-box-guide | ja | FILL | 59/40 | 补满 50-54 | 简体污染 | 越境EC配送箱カスタムガイド：DHL 2-4日グローバル | ZprintPro |
+| blog | cosmetics-packaging-box-printing-guide | zh-hk | FILL | 56/31 | 补满 50-54 | - | 化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 |
 | blog | cosmetics-packaging-box-printing-guide | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Cosmetics Packaging Box Guide: Materials, Structure & |
-| blog | cosmetics-packaging-box-printing-guide | ja | OK | 84/54 | 修品牌/污染 | 简体污染 | 化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro | ZprintPro |
-| blog | tea-beverage-gift-box-printing-guide | zh-hk | OK | 93/56 | 修品牌/污染 | 品牌非一次;简体字形污染;洞察词 | 香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | tea-beverage-gift-box-printing-guide | ja | OK | 88/51 | 修品牌/污染 | 简体污染 | 茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro |
-| blog | wedding-favor-bag-printing-guide | zh-hk | OK | 79/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印港 ZprintPro | 智印港 |
+| blog | cosmetics-packaging-box-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 化粧品パッケージ箱カスタムガイド：素材・構造・ブ | ZprintPro |
+| blog | tea-beverage-gift-box-printing-guide | zh-hk | FILL | 60/33 | 补满 50-54 | 洞察词 | 香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港 |
+| blog | tea-beverage-gift-box-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 茶・ドリンクギフトボックス印刷ガイド：リーフティ | ZprintPro |
+| blog | wedding-favor-bag-printing-guide | zh-hk | FILL | 60/37 | 补满 50-54 | - | 香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印港 |
 | blog | wedding-favor-bag-printing-guide | en | OK | 50/50 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Wedding Favor Bag & Invitation Printing Guide 2026 |
-| blog | wedding-favor-bag-printing-guide | ja | OK | 89/53 | 修品牌/污染 | 简体污染 | ウェディング ギフトバッグ・招待状印刷ガイド2026：素材・サイズ・パーソナライズ | ZprintPro |
-| blog | wedding-invitation-pricing-guide | zh-hk | OK | 88/60 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔實價 + 材質工藝全對比 | 智印港 ZprintP |
+| blog | wedding-favor-bag-printing-guide | ja | FILL | 59/38 | 补满 50-54 | 简体污染 | ウェディング ギフトバッグ・招待状印刷ガイド2026 | ZprintPro |
+| blog | wedding-invitation-pricing-guide | zh-hk | FILL | 59/40 | 补满 50-54 | - | 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔 | 智印港 |
 | blog | wedding-invitation-pricing-guide | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs |
-| blog | wedding-invitation-pricing-guide | ja | TRIM | 98/62 | 修剪 50-54 | 简体污染 | 結婚式招待状 価格ガイド 2026：50〜500個の中華式・西洋式リアル価格 + 素材・加工完全比較 | ZprintP |
-| blog | wedding-invitation-cost-guide | zh-hk | OK | 76/55 | 修品牌/污染 | 缺品牌 智印港;品牌非一次;品牌不在末尾;简体字形污染 | 美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價格 + 預算規劃 | ZprintPro |
+| blog | wedding-invitation-pricing-guide | ja | FILL | 59/41 | 补满 50-54 | 简体污染 | 結婚式招待状 価格ガイド 2026：50〜500個の中華式 | ZprintPro |
+| blog | wedding-invitation-cost-guide | zh-hk | FILL | 60/41 | 补满 50-54 | - | 美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價 | 智印港 |
 | blog | wedding-invitation-cost-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Wedding Invitation Cost Guide 2026: Real Pricing for 50-500 |
-| blog | wedding-invitation-cost-guide | ja | OK | 85/57 | 修品牌/污染 | 简体污染 | 結婚式招待状 コストガイド 2026：50〜500部のリアル価格 + 予算内訳 + 節約術 | ZprintPro |
-| blog | wedding-table-card-printing-guide | zh-hk | OK | 81/59 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 + 4 檔實價 | 智印港 ZprintPro |
+| blog | wedding-invitation-cost-guide | ja | FILL | 59/41 | 补满 50-54 | 简体污染 | 結婚式招待状 コストガイド 2026：50〜500部のリア | ZprintPro |
+| blog | wedding-table-card-printing-guide | zh-hk | FILL | 60/41 | 补满 50-54 | - | 婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 | 智印港 |
 | blog | wedding-table-card-printing-guide | en | OK | 54/54 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Wedding Table Card & Seating Chart Printing Guide 2026 |
-| blog | wedding-table-card-printing-guide | ja | OK | 89/57 | 修品牌/污染 | 简体污染 | 結婚式 テーブルカード・席次表印刷ガイド 2026：100〜500枚 価格・素材・デザイン | ZprintPro |
-| blog | retail-shop-poster-printing-guide | zh-hk | OK | 76/50 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印港 ZprintPro | 智印港 |
-| blog | retail-shop-poster-printing-guide | ja | OK | 85/51 | 修品牌/污染 | 简体污染 | 小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro |
-| blog | restaurant-menu-printing-guide | zh-hk | OK | 76/50 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港 ZprintPro | 智印港 |
+| blog | wedding-table-card-printing-guide | ja | FILL | 56/37 | 补满 50-54 | 简体污染 | 結婚式 テーブルカード・席次表印刷ガイド 2026 | ZprintPro |
+| blog | retail-shop-poster-printing-guide | zh-hk | FILL | 57/34 | 补满 50-54 | - | 香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印港 |
+| blog | retail-shop-poster-printing-guide | ja | FILL | 57/37 | 补满 50-54 | 简体污染 | 小売・セレクトショップ ポスター印刷ガイド2026 | ZprintPro |
+| blog | restaurant-menu-printing-guide | zh-hk | FILL | 57/34 | 补满 50-54 | - | 香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港 |
 | blog | restaurant-menu-printing-guide | en | OK | 55/55 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Restaurant Menu Printing Guide 2026: Waterproof, Fold & |
-| blog | restaurant-menu-printing-guide | ja | OK | 80/54 | 修品牌/污染 | 简体污染 | レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro | ZprintPro |
-| blog | wedding-red-packet-printing-guide | zh-hk | OK | 88/56 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | wedding-red-packet-printing-guide | ja | OK | 85/55 | 修品牌/污染 | 简体污染 | ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro |
-| blog | real-estate-brochure-box-printing-guide | zh-hk | OK | 89/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | restaurant-menu-printing-guide | ja | FILL | 60/38 | 补满 50-54 | 简体污染 | レストランメニュー印刷ガイド2026：防水・折りたた | ZprintPro |
+| blog | wedding-red-packet-printing-guide | zh-hk | FILL | 60/37 | 补满 50-54 | - | 香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智 | 智印港 |
+| blog | wedding-red-packet-printing-guide | ja | FILL | 53/39 | 补满 50-54 | 简体污染 | ウエディング レッド packet 印刷ガイド2026 | ZprintPro |
+| blog | real-estate-brochure-box-printing-guide | zh-hk | FILL | 56/31 | 补满 50-54 | - | 香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港 |
 | blog | real-estate-brochure-box-printing-guide | en | OK | 50/50 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Real Estate Brochure & Property Box Printing Guide |
-| blog | real-estate-brochure-box-printing-guide | ja | OK | 92/58 | 修品牌/污染 | 简体污染 | 不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro | ZprintPro |
-| blog | pharmaceutical-label-printing-guide | zh-hk | OK | 76/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港藥品標籤印刷指南 · GMP 認證 + 防偽追溯碼定製 | 智印港 ZprintPro | 智印港 |
+| blog | real-estate-brochure-box-printing-guide | ja | FILL | 56/34 | 补满 50-54 | 简体污染 | 不動産パンフレット・資料箱カスタム印刷ガイド | ZprintPro |
+| blog | pharmaceutical-label-printing-guide | zh-hk | FILL | 57/35 | 补满 50-54 | - | 香港藥品標籤印刷指南 · GMP 認證 + 防偽追溯碼定製 | 智印港 |
 | blog | pharmaceutical-label-printing-guide | en | OK | 55/55 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA |
-| blog | pharmaceutical-label-printing-guide | ja | OK | 80/57 | 修品牌/污染 | 简体污染 | 医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro | ZprintPro |
-| blog | jewellery-shopping-bag-printing-guide | zh-hk | OK | 82/52 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽定製 | 智印港 ZprintPro | 智印港 |
-| blog | jewellery-shopping-bag-printing-guide | ja | OK | 96/60 | 修品牌/污染 | 简体污染 | 宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro | ZprintPro |
-| blog | product-label-printing-guide | zh-hk | OK | 74/53 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 跨境電商產品標籤印刷指南 · GS1 條碼 + FDA 認證 SKU 標貼 | 智印港 ZprintPro |
+| blog | pharmaceutical-label-printing-guide | ja | FILL | 60/41 | 补满 50-54 | 简体污染 | 医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改 | ZprintPro |
+| blog | jewellery-shopping-bag-printing-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽 | 智印港 |
+| blog | jewellery-shopping-bag-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカー | ZprintPro |
+| blog | product-label-printing-guide | zh-hk | FILL | 59/40 | 补满 50-54 | - | 跨境電商產品標籤印刷指南 · GS1 條碼 + FDA 認證 SKU | 智印港 |
 | blog | product-label-printing-guide | en | OK | 51/51 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Amazon FBA Product Label Printing: GS1 UPC Barcodes |
-| blog | product-label-printing-guide | ja | TRIM | 85/61 | 修剪 50-54 | 品牌不在末尾;简体污染 | 越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | ZprintPro ZprintPr |
-| blog | graduation-yearbook-printing-guide | zh-hk | OK | 87/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | graduation-yearbook-printing-guide | ja | OK | 84/53 | 修品牌/污染 | 品牌不在末尾;简体污染 | 卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | ZprintPro ZprintPro |
-| blog | ip-character-sticker-printing-guide | zh-hk | OK | 81/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港 ZprintPro | 智印港 |
-| blog | ip-character-sticker-printing-guide | ja | TRIM | 97/61 | 修剪 50-54 | 品牌不在末尾;简体污染 | IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | ZprintPro ZprintPr |
-| blog | trade-show-banner-printing-guide | zh-hk | OK | 89/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | product-label-printing-guide | ja | FILL | 59/40 | 补满 50-54 | 简体污染 | 越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA | ZprintPro |
+| blog | graduation-yearbook-printing-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智 | 智印港 |
+| blog | graduation-yearbook-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 卒業記念アルバム印刷ガイド：製本・用紙・パーソナ | ZprintPro |
+| blog | ip-character-sticker-printing-guide | zh-hk | FILL | 60/34 | 补满 50-54 | - | 文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方 | 智印港 |
+| blog | ip-character-sticker-printing-guide | ja | FILL | 53/34 | 补满 50-54 | 简体污染 | IP キャラクター型抜きステッカー印刷ガイド | ZprintPro |
+| blog | trade-show-banner-printing-guide | zh-hk | FILL | 56/31 | 补满 50-54 | - | 香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印港 |
 | blog | trade-show-banner-printing-guide | en | OK | 50/50 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Trade Show Banner Printing Guide 2026: Retractable |
-| blog | trade-show-banner-printing-guide | ja | OK | 90/59 | 修品牌/污染 | 简体污染 | 展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro | ZprintPro |
-| blog | wedding-invitation-envelope-printing-guide | zh-hk | OK | 76/50 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro | 智印港 |
-| blog | wedding-invitation-envelope-printing-guide | ja | OK | 84/50 | 修品牌/污染 | 简体污染 | ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro |
-| blog | doujin-circle-printing-guide | zh-hk | OK | 90/56 | 修品牌/污染 | 品牌非一次;简体字形污染 | 同人誌 / 同人周邊印刷指南 · 香港創作者小批量定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | trade-show-banner-printing-guide | ja | FILL | 60/38 | 补满 50-54 | 简体污染 | 展示会バナー印刷ガイド2026：ロールアップ・バック | ZprintPro |
+| blog | wedding-invitation-envelope-printing-guide | zh-hk | FILL | 57/34 | 补满 50-54 | - | 香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 |
+| blog | wedding-invitation-envelope-printing-guide | ja | FILL | 60/38 | 补满 50-54 | 简体污染 | ウエディング招待状封筒印刷ガイド2026：パール・箔 | ZprintPro |
+| blog | doujin-circle-printing-guide | zh-hk | FILL | 57/33 | 补满 50-54 | - | 同人誌 / 同人周邊印刷指南 · 香港創作者小批量定製 | 智印港 |
 | blog | doujin-circle-printing-guide | en | OK | 50/50 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Doujin Circle Printing Guide: Small-Batch Booklets |
-| blog | doujin-circle-printing-guide | ja | OK | 78/51 | 修品牌/污染 | 简体污染 | 同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro | ZprintPro |
-| blog | hotel-amenity-sticker-printing-guide | zh-hk | OK | 85/55 | 修品牌/污染 | 品牌非一次;简体字形污染 | 酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港 ZprintPro | 智印港 |
-| blog | hotel-amenity-sticker-printing-guide | ja | TRIM | 113/68 | 修剪 50-54 | 品牌不在末尾;简体污染 | ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | ZprintPro Z |
-| blog | finance-summit-gift-bag-printing-guide | zh-hk | OK | 87/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港 ZprintPro | 智印港 |
-| blog | finance-summit-gift-bag-printing-guide | ja | TRIM | 116/73 | 修剪 50-54 | 品牌不在末尾;简体污染 | 金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | Zprint |
-| blog | marathon-event-poster-printing-guide | zh-hk | OK | 81/55 | 修品牌/污染 | 品牌非一次;简体字形污染 | 馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印港 ZprintPro | 智印港 |
+| blog | doujin-circle-printing-guide | ja | FILL | 58/35 | 补满 50-54 | 简体污染 | 同人誌印刷ガイド：小ロット・少部数・高品質対応 | ZprintPro |
+| blog | hotel-amenity-sticker-printing-guide | zh-hk | FILL | 60/36 | 补满 50-54 | - | 酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用 | 智印港 |
+| blog | hotel-amenity-sticker-printing-guide | ja | FILL | 59/36 | 补满 50-54 | 简体污染 | ホテル・リゾート アメニティステッカー印刷ガイド | ZprintPro |
+| blog | finance-summit-gift-bag-printing-guide | zh-hk | FILL | 60/33 | 补满 50-54 | - | 香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商 | 智印港 |
+| blog | finance-summit-gift-bag-printing-guide | ja | FILL | 60/38 | 补满 50-54 | 简体污染 | 金融サミット ギフトバッグ印刷ガイド：FSC認証・箔 | ZprintPro |
+| blog | marathon-event-poster-printing-guide | zh-hk | FILL | 60/38 | 补满 50-54 | - | 馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱 | 智印港 |
 | blog | marathon-event-poster-printing-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Marathon Event Poster Printing Guide: Waterproof A1/A2 Race |
-| blog | marathon-event-poster-printing-guide | ja | TRIM | 113/71 | 修剪 50-54 | 品牌不在末尾;简体污染 | マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPr |
-| blog | car-dealership-amenity-sticker-printing-guide | zh-hk | OK | 85/58 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼 + 服務提醒 | 智印港 ZprintPro |
-| blog | car-dealership-amenity-sticker-printing-guide | ja | TRIM | 130/79 | 修剪 50-54 | 品牌不在末尾;简体污染 | 自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け |  |
-| blog | hotel-keycard-sleeve-printing-guide | zh-hk | OK | 80/54 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo 客用品包裝 | 智印港 ZprintPro |
+| blog | marathon-event-poster-printing-guide | ja | FILL | 59/39 | 补满 50-54 | 简体污染 | マラソン大会ポスター印刷ガイド：防水 A1/A2 レー | ZprintPro |
+| blog | car-dealership-amenity-sticker-printing-guide | zh-hk | FILL | 60/39 | 补满 50-54 | - | 汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車 | 智印港 |
+| blog | car-dealership-amenity-sticker-printing-guide | ja | FILL | 59/36 | 补满 50-54 | 简体污染 | 自動車ディーラー アメニティステッカー印刷ガイド | ZprintPro |
+| blog | hotel-keycard-sleeve-printing-guide | zh-hk | FILL | 59/38 | 补满 50-54 | 简体字形污染 | 酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo | 智印港 |
 | blog | hotel-keycard-sleeve-printing-guide | en | OK | 50/50 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Hotel Key Card Sleeve & Luggage Tag Printing Guide |
-| blog | hotel-keycard-sleeve-printing-guide | ja | TRIM | 134/80 | 修剪 50-54 | 品牌不在末尾;简体污染 | ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | |
-| blog | thick-paper-flyer-printing-restaurant-takeout-guide | zh-hk | OK | 89/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | hotel-keycard-sleeve-printing-guide | ja | FILL | 58/36 | 补满 50-54 | 简体污染 | ホテル ルームキー スリーブ・荷物タグ印刷ガイド | ZprintPro |
+| blog | thick-paper-flyer-printing-restaurant-takeout-guide | zh-hk | FILL | 56/31 | 补满 50-54 | - | 厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港 |
 | blog | thick-paper-flyer-printing-restaurant-takeout-guide | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Thick Paper Flyer Printing Guide · Restaurant Menu Inserts & |
-| blog | thick-paper-flyer-printing-restaurant-takeout-guide | ja | OK | 87/57 | 修品牌/污染 | 简体污染 | 厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro | ZprintPro |
-| blog | magnetic-closure-gift-box-ecommerce-brand-guide | zh-hk | OK | 85/52 | 修品牌/污染 | 品牌非一次;简体字形污染 | 磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | thick-paper-flyer-printing-restaurant-takeout-guide | ja | FILL | 59/37 | 补满 50-54 | 简体污染 | 厚紙チラシ印刷ガイド · 飲食店メニュー・テイクア | ZprintPro |
+| blog | magnetic-closure-gift-box-ecommerce-brand-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印 | 智印港 |
 | blog | magnetic-closure-gift-box-ecommerce-brand-guide | en | OK | 57/57 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Magnetic Closure Gift Box Guide · Cross-Border E-commerce |
-| blog | magnetic-closure-gift-box-ecommerce-brand-guide | ja | OK | 95/59 | 修品牌/污染 | 简体污染 | マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro |
-| blog | folding-box-cosmetics-brand-eco-friendly-guide | zh-hk | OK | 83/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | magnetic-closure-gift-box-ecommerce-brand-guide | ja | FILL | 59/38 | 补满 50-54 | 简体污染 | マグネット式ギフト ボックス カスタムガイド · 越 | ZprintPro |
+| blog | folding-box-cosmetics-brand-eco-friendly-guide | zh-hk | FILL | 59/34 | 补满 50-54 | 品牌非一次 | 折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 | 智印港 |
 | blog | folding-box-cosmetics-brand-eco-friendly-guide | en | OK | 57/57 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Folding Box Printing Guide · Eco-Friendly Cosmetics Brand |
-| blog | folding-box-cosmetics-brand-eco-friendly-guide | ja | OK | 91/60 | 修品牌/污染 | 简体污染 | 折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro |ZprintPro |
-| blog | religious-ceremony-printing-guide | zh-hk | OK | 91/55 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | folding-box-cosmetics-brand-eco-friendly-guide | ja | FILL | 59/38 | 补满 50-54 | 简体污染 | 折り畳み箱 カスタム ガイド · 化粧品・スキンケア | ZprintPro |
+| blog | religious-ceremony-printing-guide | zh-hk | FILL | 58/32 | 补满 50-54 | - | 香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 |
 | blog | religious-ceremony-printing-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Religious Ceremony Printing Guide: Custom Church / Temple / |
-| blog | religious-ceremony-printing-guide | ja | OK | 87/51 | 修品牌/污染 | 简体污染 | 宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro |
-| blog | industrial-nameplate-printing-guide | zh-hk | OK | 81/60 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印港 ZprintPro |
+| blog | religious-ceremony-printing-guide | ja | FILL | 59/36 | 补满 50-54 | 简体污染 | 宗教儀式印刷ガイド：教会・寺院・メモリアル ボッ | ZprintPro |
+| blog | industrial-nameplate-printing-guide | zh-hk | FILL | 60/41 | 补满 50-54 | - | 工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANS | 智印港 |
 | blog | industrial-nameplate-printing-guide | en | OK | 58/58 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Industrial Equipment Nameplate & GHS Hazard Label Printing |
-| blog | industrial-nameplate-printing-guide | ja | OK | 77/56 | 修品牌/污染 | 简体污染 | 工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証 + ANSI Z535 規格 | ZprintPro |
-| blog | construction-material-sample-book-printing-guide | zh-hk | OK | 93/56 | 修品牌/污染 | 品牌非一次;简体字形污染 | 建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | construction-material-sample-book-printing-guide | ja | TRIM | 109/62 | 修剪 50-54 | 简体污染 | 建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintP |
-| blog | baby-food-packaging-box-printing-guide | zh-hk | OK | 83/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港 ZprintPro | 智印港 |
-| blog | baby-food-packaging-box-printing-guide | ja | OK | 84/56 | 修品牌/污染 | 简体污染 | 幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro | ZprintPro |
-| blog | real-estate-flyer-printing-guide | zh-hk | OK | 81/52 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港 ZprintPro | 智印港 |
+| blog | industrial-nameplate-printing-guide | ja | FILL | 51/35 | 补满 50-54 | 简体污染 | 工業設備銘板 / GHS 危険ラベル印刷ガイド | ZprintPro |
+| blog | construction-material-sample-book-printing-guide | zh-hk | FILL | 60/33 | 补满 50-54 | - | 建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 |
+| blog | construction-material-sample-book-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 建築装飾材料サンプルブック印刷ガイド：タイル・石 | ZprintPro |
+| blog | baby-food-packaging-box-printing-guide | zh-hk | FILL | 60/33 | 补满 50-54 | - | 香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝 | 智印港 |
+| blog | baby-food-packaging-box-printing-guide | ja | FILL | 59/37 | 补满 50-54 | 简体污染 | 幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボッ | ZprintPro |
+| blog | real-estate-flyer-printing-guide | zh-hk | FILL | 60/35 | 补满 50-54 | - | 香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定 | 智印港 |
 | blog | real-estate-flyer-printing-guide | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Real Estate Flyer Printing Guide: Property Listing Brochures |
-| blog | real-estate-flyer-printing-guide | ja | OK | 96/60 | 修品牌/污染 | 简体污染 | 不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro |ZprintPro |
-| blog | medical-device-packaging-box-guide | zh-hk | OK | 75/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 醫療器械包裝盒印刷指南 · ISO 13485 + 滅菌袋定製 | 智印港 ZprintPro | 智印港 |
-| blog | medical-device-packaging-box-guide | ja | OK | 85/54 | 修品牌/污染 | 简体污染 | 医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ カスタム 日本医療業界向け | ZprintPro |
-| blog | auto-parts-shopping-bag-printing-guide | zh-hk | OK | 81/52 | 修品牌/污染 | 品牌非一次;简体字形污染 | 汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港 ZprintPro | 智印港 |
-| blog | auto-parts-shopping-bag-printing-guide | ja | TRIM | 107/62 | 修剪 50-54 | 简体污染 | 自動車部品ショッピングバッグ印刷ガイド：4S アフターマーケット サービスバッグ 日本自動車業界向け | ZprintP |
-| blog | sports-merchandise-gift-box-printing-guide | zh-hk | OK | 87/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | sports-merchandise-gift-box-printing-guide | ja | OK | 98/56 | 修品牌/污染 | 简体污染 | スポーツイベント記念ギフトボックス印刷ガイド：チーム メモラビリア 米国スポーツ業界向け | ZprintPro |
-| blog | apparel-shopping-bag-printing-guide | zh-hk | OK | 87/53 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港 ZprintPro｜香港印刷指南 | 智印港 |
-| blog | apparel-shopping-bag-printing-guide | ja | OK | 88/56 | 修品牌/污染 | 简体污染 | アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro | ZprintPro |
-| blog | gang-run-card-boxes-hk-guide | zh-hk | OK | 80/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro | 智印港 |
+| blog | real-estate-flyer-printing-guide | ja | FILL | 58/35 | 补满 50-54 | 简体污染 | 不動産販売チラシ印刷ガイド：物件資料・折り畳み | ZprintPro |
+| blog | medical-device-packaging-box-guide | zh-hk | FILL | 56/37 | 补满 50-54 | - | 醫療器械包裝盒印刷指南 · ISO 13485 + 滅菌袋定製 | 智印港 |
+| blog | medical-device-packaging-box-guide | ja | FILL | 59/40 | 补满 50-54 | 简体污染 | 医療機器包装箱印刷ガイド：ISO 13485・滅菌バッグ | ZprintPro |
+| blog | auto-parts-shopping-bag-printing-guide | zh-hk | FILL | 60/35 | 补满 50-54 | - | 汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定 | 智印港 |
+| blog | auto-parts-shopping-bag-printing-guide | ja | FILL | 50/31 | 补满 50-54 | 简体污染 | 自動車部品ショッピングバッグ印刷ガイド | ZprintPro |
+| blog | sports-merchandise-gift-box-printing-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智 | 智印港 |
+| blog | sports-merchandise-gift-box-printing-guide | ja | FILL | 56/34 | 补满 50-54 | 简体污染 | スポーツイベント記念ギフトボックス印刷ガイド | ZprintPro |
+| blog | apparel-shopping-bag-printing-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智 | 智印港 |
+| blog | apparel-shopping-bag-printing-guide | ja | FILL | 56/34 | 补满 50-54 | 简体污染 | アパレルブランドショッピングバッグ印刷ガイド | ZprintPro |
+| blog | gang-run-card-boxes-hk-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首 | 智印港 |
 | blog | gang-run-card-boxes-hk-guide | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | |
-| blog | gang-run-card-boxes-hk-guide | ja | OK | 82/56 | 修品牌/污染 | 简体污染 | 合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro | ZprintPro |
-| blog | custom-card-boxes-small-batch-usa | zh-hk | FILL | 68/43 | 补满 50-54 | 品牌非一次;简体字形污染 | 小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro | 智印港 |
+| blog | gang-run-card-boxes-hk-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 合版ホワイトカードボックス印刷ガイド：型代不要で | ZprintPro |
+| blog | custom-card-boxes-small-batch-usa | zh-hk | FILL | 60/35 | 补满 50-54 | 品牌非一次 | 小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 Z | 智印港 |
 | blog | custom-card-boxes-small-batch-usa | en | OK | 58/58 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, |
-| blog | custom-card-boxes-small-batch-usa | ja | OK | 79/54 | 修品牌/污染 | 简体污染 | 小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro | ZprintPro |
-| blog | cosmetic-card-boxes-gang-run-japan | zh-hk | FILL | 69/44 | 补满 50-54 | 品牌非一次;简体字形污染 | 美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro | 智印港 |
+| blog | custom-card-boxes-small-batch-usa | ja | FILL | 59/38 | 补满 50-54 | 简体污染 | 小口カードボックス印刷：500個から型代不要・EC出 | ZprintPro |
+| blog | cosmetic-card-boxes-gang-run-japan | zh-hk | FILL | 59/34 | 补满 50-54 | 品牌非一次 | 美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 | 智印港 |
 | blog | cosmetic-card-boxes-gang-run-japan | en | OK | 51/51 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Cosmetic Card Boxes: Silver & Holographic Cardstock |
-| blog | cosmetic-card-boxes-gang-run-japan | ja | OK | 88/56 | 修品牌/污染 | 简体污染 | 化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro | ZprintPro |
-| blog | financial-institution-gift-bag-printing-guide | zh-hk | OK | 86/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定製 | 智印港 ZprintPro | 智印港 |
-| blog | financial-institution-gift-bag-printing-guide | ja | OK | 107/60 | 修品牌/污染 | 简体污染 | 金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro |
-| blog | real-estate-floor-plan-poster-printing-guide | zh-hk | OK | 79/52 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + 售樓處佈局 | 智印港 ZprintPro |
-| blog | real-estate-floor-plan-poster-printing-guide | ja | OK | 94/57 | 修品牌/污染 | 简体污染 | 不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro |
-| blog | same-day-flyers-printing-hong-kong-guide | zh-hk | OK | 84/54 | 修品牌/污染 | 品牌不在末尾;日文假名污染;简体字形污染 | 即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港 ZprintPro |
+| blog | cosmetic-card-boxes-gang-run-japan | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 化粧品カードボックス合版印刷：銀カード・ホログラ | ZprintPro |
+| blog | financial-institution-gift-bag-printing-guide | zh-hk | FILL | 59/34 | 补满 50-54 | - | 香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡 | 智印港 |
+| blog | financial-institution-gift-bag-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | 金融機関ギフトバッグ印刷ガイド：銀行キット・クレ | ZprintPro |
+| blog | real-estate-floor-plan-poster-printing-guide | zh-hk | FILL | 58/36 | 补满 50-54 | - | 香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + | 智印港 |
+| blog | real-estate-floor-plan-poster-printing-guide | ja | FILL | 59/39 | 补满 50-54 | 简体污染 | 不動産フロアプラン ポスター印刷ガイド：A1/A2 防 | ZprintPro |
+| blog | same-day-flyers-printing-hong-kong-guide | zh-hk | FILL | 59/34 | 补满 50-54 | 日文假名污染 | 即日印刷・即日傳單印刷指南 · 香港餐廳開業 / 活動速 | 智印港 |
 | blog | same-day-flyers-printing-hong-kong-guide | en | OK | 53/53 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush |
-| blog | same-day-flyers-printing-hong-kong-guide | ja | OK | 87/60 | 修品牌/污染 | 简体污染 | 即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro |ZprintPro |
-| blog | rush-printing-hk-guide | zh-hk | OK | 87/51 | 修品牌/污染 | 品牌非一次;简体字形污染 | 即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港 ZprintPro｜香港印刷指南 | 智印港 |
+| blog | same-day-flyers-printing-hong-kong-guide | ja | FILL | 60/41 | 补满 50-54 | 简体污染 | 即日印刷・即日チラシ ガイド · 4-6時間特急、100枚 | ZprintPro |
+| blog | rush-printing-hk-guide | zh-hk | FILL | 59/32 | 补满 50-54 | - | 即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智 | 智印港 |
 | blog | rush-printing-hk-guide | en | OK | 57/57 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Same-Day Printing HK Guide: Where Fastest? How Much? What |
-| blog | rush-printing-hk-guide | ja | OK | 78/51 | 修品牌/污染 | 简体污染 | 当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro | ZprintPro |
-| blog | packaging-box-pricing-2026 | zh-hk | OK | 74/54 | 修品牌/污染 | 品牌非一次;简体字形污染 | 包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智印港 ZprintPro | 智印港 |
-| blog | packaging-box-pricing-2026 | en | FILL | 47/47 | 补满 50-54 | 缺品牌 ZprintPro;品牌不在末尾 | Packaging Box Printing Price 2026: How Much for |
-| blog | packaging-box-pricing-2026 | ja | OK | 70/50 | 修品牌/污染 | 简体污染 | パッケージ印刷価格 2026：500/1000/5000 個でそれぞれいくら？| ZprintPro |
-| blog | calendar-printing-guide | zh-hk | OK | 84/54 | 修品牌/污染 | 品牌非一次;日文假名污染;简体字形污染 | 月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro | 智印港 |
+| blog | rush-printing-hk-guide | ja | FILL | 59/36 | 补满 50-54 | 简体污染 | 当日特急印刷 全ガイド：どこが一番早い？料金は？ | ZprintPro |
+| blog | packaging-box-pricing-2026 | zh-hk | FILL | 60/42 | 补满 50-54 | - | 包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智 | 智印港 |
+| blog | packaging-box-pricing-2026 | ja | FILL | 59/45 | 补满 50-54 | 简体污染 | パッケージ印刷価格 2026：500/1000/5000 個でそれ | ZprintPro |
+| blog | calendar-printing-guide | zh-hk | FILL | 59/35 | 补满 50-54 | 日文假名污染 | 月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期 | 智印港 |
 | blog | calendar-printing-guide | en | OK | 56/56 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | 2027 Calendar Printing Guide: Wall & Desk Calendar Sizes |
-| blog | calendar-printing-guide | ja | OK | 90/59 | 修品牌/污染 | 简体污染 | 2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro | ZprintPro |
-| blog | poster-size-guide | zh-hk | FILL | 64/47 | 补满 50-54 | 品牌非一次;简体字形污染 | A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智印港 | 智印港 |
+| blog | calendar-printing-guide | ja | FILL | 58/37 | 补满 50-54 | 简体污染 | 2027年カレンダー印刷ガイド：壁掛け・卓上サイズ | ZprintPro |
+| blog | poster-size-guide | zh-hk | FILL | 60/45 | 补满 50-54 | 简体字形污染 | A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智 | 智印港 |
 | blog | poster-size-guide | en | OK | 53/53 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | A1 A2 Poster Size Chart mm/cm/in + 12 Uses 3-5 Days | |
-| blog | poster-size-guide | ja | OK | 68/59 | 修品牌/污染 | 简体污染 | A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | ZprintPro | ZprintPro |
-| blog | a5-vs-a6-flyer-size | zh-hk | OK | 77/50 | 修品牌/污染 | 品牌非一次;日文假名污染;简体字形污染 | A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro | 智印港 |
+| blog | poster-size-guide | ja | OK | 60/51 | 修品牌/污染 | 简体污染 | A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | Z | ZprintPro |
+| blog | a5-vs-a6-flyer-size | zh-hk | FILL | 58/34 | 补满 50-54 | 日文假名污染 | A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 |
 | blog | a5-vs-a6-flyer-size | en | OK | 55/55 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost |
-| blog | a5-vs-a6-flyer-size | ja | OK | 75/53 | 修品牌/污染 | 简体污染 | A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro | ZprintPro |
-| blog | poster-printing-price-guide | zh-hk | OK | 84/53 | 修品牌/污染 | 品牌非一次;日文假名污染;简体字形污染 | A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro | 智印港 |
+| blog | a5-vs-a6-flyer-size | ja | FILL | 59/39 | 补满 50-54 | 简体污染 | A5 と A6 チラシのサイズ比較：寸法・用途・印刷コ | ZprintPro |
+| blog | poster-printing-price-guide | zh-hk | FILL | 59/34 | 补满 50-54 | 日文假名污染 | A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣 | 智印港 |
 | blog | poster-printing-price-guide | en | OK | 54/54 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk |
-| blog | poster-printing-price-guide | ja | OK | 82/56 | 修品牌/污染 | 简体污染 | A1 A2 ポスター印刷料金ガイド：単価・用紙・加工・ロット割引 | ZprintPro | ZprintPro |
-| blog | catalog-printing-guide | zh-hk | OK | 83/50 | 修品牌/污染 | 品牌非一次;日文假名污染;简体字形污染 | 畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro | 智印港 |
+| blog | poster-printing-price-guide | ja | FILL | 58/38 | 补满 50-54 | 简体污染 | A1 A2 ポスター印刷料金ガイド：単価・用紙・加工 | ZprintPro |
+| blog | catalog-printing-guide | zh-hk | FILL | 60/32 | 补满 50-54 | 日文假名污染 | 畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全 | 智印港 |
 | blog | catalog-printing-guide | en | OK | 51/51 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Catalog & Art Book Printing Guide: Paper, Binding & |
-| blog | catalog-printing-guide | ja | OK | 76/50 | 修品牌/污染 | 简体污染 | カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro | ZprintPro |
-| blog | catalog-printing-china-supplier-guide | zh-hk | TRIM | 98/77 | 修剪 50-54 | 品牌不在末尾;简体字形污染 | 中國目錄印刷供應商指南：4 裝訂 + 4 紙質 + bulk/wholesale 100/500/1000/5000 階 |
+| blog | catalog-printing-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | カタログ・写真集印刷ガイド：用紙・製本・加工の選 | ZprintPro |
+| blog | catalog-printing-china-supplier-guide | zh-hk | FILL | 60/41 | 补满 50-54 | 简体字形污染 | 中國目錄印刷供應商指南：4 裝訂 + 4 紙質 + bulk/whol | 智印港 |
 | blog | catalog-printing-china-supplier-guide | en | OK | 58/58 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Catalog Printing China Supplier Guide: 4 Binding + 4 Paper |
-| blog | catalog-printing-china-supplier-guide | ja | TRIM | 110/77 | 修剪 50-54 | 品牌不在末尾;简体污染 | カタログ印刷中国サプライヤーガイド: 4 製本 + 4 紙質 + 大量卸売 100/500/1000/5000 段階 | |
-| blog | 2027-monthly-calendar-printing-timetable | zh-hk | OK | 81/52 | 修品牌/污染 | 品牌非一次;简体字形污染 | 2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港 ZprintPro | 智印港 |
+| blog | catalog-printing-china-supplier-guide | ja | FILL | 58/39 | 补满 50-54 | 简体污染 | カタログ印刷中国サプライヤーガイド: 4 製本 + 4 | ZprintPro |
+| blog | 2027-monthly-calendar-printing-timetable | zh-hk | FILL | 60/35 | 补满 50-54 | - | 2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對 | 智印港 |
 | blog | 2027-monthly-calendar-printing-timetable | en | OK | 57/57 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | 2027 Calendar Printing Guide: When to Print? MOQ? 4 Paper |
-| blog | 2027-monthly-calendar-printing-timetable | ja | OK | 87/59 | 修品牌/污染 | 简体污染 | 2027 年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro | ZprintPro |
+| blog | 2027-monthly-calendar-printing-timetable | ja | FILL | 59/38 | 补满 50-54 | 简体污染 | 2027 年カレンダー印刷攻略：いつ注文？最小ロット | ZprintPro |
+| blog | large-envelope-printing-c4-c5 | zh-hk | FILL | 60/44 | 补满 50-54 | - | 大信封印刷 C4/C5 規格 100 個起 HK$0.5 | 即日急件 18 | 智印港 |
 | blog | large-envelope-printing-c4-c5 | en | OK | 59/59 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Large Envelopes C4/C5 100 MOQ from HK$0.5 | Same-Day Rush | |
-| blog | large-envelope-printing-c4-c5 | ja | OK | 68/57 | 修品牌/污染 | 简体污染 | 大型封筒 C4/C5 100 個〜 HK$0.5/個 | 当日特急 | ZprintPro | ZprintPro |
-| blog | sticker-material-pvc-vinyl-removable | zh-hk | OK | 83/58 | 修品牌/污染 | 品牌不在末尾;简体字形污染 | 防水貼紙材質完全指南: PVC / 透明 / 可移 / 燙金 4 大材質 1 篇搞掂 | 智印港 ZprintPro |
+| blog | large-envelope-printing-c4-c5 | ja | FILL | 60/49 | 补满 50-54 | 简体污染 | 大型封筒 C4/C5 100 個〜 HK$0.5/個 | 当日特急 | Z | ZprintPro |
+| blog | sticker-material-pvc-vinyl-removable | zh-hk | FILL | 60/40 | 补满 50-54 | - | 防水貼紙材質完全指南: PVC / 透明 / 可移 / 燙金 4 大 | 智印港 |
 | blog | sticker-material-pvc-vinyl-removable | en | OK | 60/60 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | Waterproof Sticker Material Guide: PVC / Clear / Removable / |
-| blog | sticker-material-pvc-vinyl-removable | ja | TRIM | 90/61 | 修剪 50-54 | 简体污染 | 防水ステッカー材質完全ガイド: PVC / 透明 / 再剥離 / 箔押し 4 大材質 1 冊で理解 | ZprintPr |
-| blog | instant-printing-30s-ai-quote-flow | zh-hk | TRIM | 92/65 | 修剪 50-54 | 品牌不在末尾;简体字形污染 | 即日印刷 30 秒 AI 報價流程: 中午前確認 下午起貨 18:00 截單翌日 12:00 順豐 | 智印港 Zpri |
-| blog | instant-printing-30s-ai-quote-flow | ja | TRIM | 96/67 | 修剪 50-54 | 简体污染 | 即日印刷 30秒AI見積もりフロー: 正午までに確認 午後に出荷 18:00締切翌日12時SF Express | Zp |
+| blog | sticker-material-pvc-vinyl-removable | ja | FILL | 59/41 | 补满 50-54 | 简体污染 | 防水ステッカー材質完全ガイド: PVC / 透明 / 再剥 | ZprintPro |
+| blog | instant-printing-30s-ai-quote-flow | zh-hk | FILL | 59/38 | 补满 50-54 | - | 即日印刷 30 秒 AI 報價流程: 中午前確認 下午起貨 18 | 智印港 |
+| blog | instant-printing-30s-ai-quote-flow | ja | FILL | 60/40 | 补满 50-54 | 简体污染 | 即日印刷 30秒AI見積もりフロー: 正午までに確認 午 | ZprintPro |
 | blog | foil-stamping-3-applications-2026 | zh-hk | OK | 85/59 | FROZEN(只读至窗判) | 品牌不在末尾;简体字形污染 | 燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片 GSC pos 2.3 衝首頁全對比 | 智印港 ZprintPro |
 | blog | foil-stamping-3-applications-2026 | en | TRIM | 122/122 | FROZEN(只读至窗判) | - | Foil Stamping 3-Application Guide 2026: Stickers / Wedding I |
 | blog | foil-stamping-3-applications-2026 | ja | TRIM | 105/79 | FROZEN(只读至窗判) | 品牌不在末尾;简体污染 | 箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード GSC pos 2.3 TOP3 突入 |  |
