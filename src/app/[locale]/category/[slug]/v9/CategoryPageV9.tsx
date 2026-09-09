@@ -67,7 +67,7 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
     <article className="bg-white border border-[#E5E7EB] rounded-[14px] overflow-hidden flex flex-col shadow-[0_1px_3px_rgba(16,24,40,0.07)] transition-[box-shadow,border-color] duration-200 hover:border-[#C9D6F2] hover:shadow-[0_8px_24px_rgba(40,115,245,0.09)]">
       <a href={`${localePrefix}/product/${product.slug}/`} className="block relative [aspect-ratio:1/1] bg-[#F3F3F3] overflow-hidden before:content-[''] before:absolute before:z-[2] before:w-3 before:h-3 before:top-2 before:left-2 before:pointer-events-none before:border-t-[1.5px] before:border-l-[1.5px] before:border-[rgba(31,41,55,0.55)] after:content-[''] after:absolute after:z-[2] after:w-3 after:h-3 after:bottom-2 after:right-2 after:pointer-events-none after:border-b-[1.5px] after:border-r-[1.5px] after:border-[rgba(31,41,55,0.55)]">
         {product.isHot && (
-          <span className="absolute top-2.5 left-2.5 z-[3] bg-[#1B3163] text-white text-[12.5px] font-bold px-2.5 py-1 rounded-[5px] tracking-[0.05em]">
+          <span className="absolute top-2.5 left-2.5 z-[3] bg-[#F87314] text-white text-[12.5px] font-bold px-2.5 py-1 rounded-[5px] tracking-[0.05em]">
             熱賣
           </span>
         )}
