@@ -23,7 +23,6 @@ import type {
   QuoteRequest,
   QuoteResult,
 } from './types';
-import { businessCardsFormulaV2 } from './formulas/business-cards';
 import { postersFormula } from './formulas/posters';
 import { stickersFormula } from './formulas/stickers';
 import { packagingFormula } from './formulas/packaging';
@@ -33,7 +32,8 @@ import { MARKETS, marketFromLocale, getMarket } from './markets';
 import type { Market } from './markets';
 
 const REGISTRY: Record<string, ProductFormula> = {
-  'business-cards': businessCardsFormulaV2, // v2 (Phase 2 — 印刷大脑版)
+  // BC-BAN-DEPRECATED (2026-09-09 K3 拍板②): 'business-cards' 公式已断注册 — deprecated 原因 = AGENTS.md §0.0 最高规则「禁做名片印刷」(K3 2026-09-08 01:15 终裁)。
+  // 代码保留于 ./formulas/business-cards.ts（未删除），禁止重新注册或在新代码中 import。
   'posters': postersFormula, // v1 (Phase 3 — 海报公式)
   'stickers': stickersFormula, // v1 (Phase 4 — 贴纸公式)
   'packaging': packagingFormula, // v1 (Phase 4 — 包装盒公式)

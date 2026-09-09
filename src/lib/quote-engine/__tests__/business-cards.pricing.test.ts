@@ -1,3 +1,5 @@
+// BC-BAN-DEPRECATED (2026-09-09 K3 拍板②): deprecated 名片公式模块的配套测试, 随模块保留, 不随门童阻断。
+
 /**
  * 报价系统 Sanity Tests (2026-06-07)
  * 防止价格 bug 回归

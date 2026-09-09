@@ -1,0 +1,624 @@
+{
+  "missing": [
+    {
+      "type": "blog",
+      "topic": "packaging-trends",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\packaging-trends.webp",
+      "suggestion": "生成 blog/zh-hk/packaging-trends.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "packaging-trends",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\packaging-trends.webp",
+      "suggestion": "生成 blog/en/packaging-trends.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "packaging-trends",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\packaging-trends.webp",
+      "suggestion": "生成 blog/ja/packaging-trends.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "hong-kong-printing-guide",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\hong-kong-printing-guide.webp",
+      "suggestion": "生成 blog/zh-hk/hong-kong-printing-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "hong-kong-printing-guide",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\hong-kong-printing-guide.webp",
+      "suggestion": "生成 blog/en/hong-kong-printing-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "hong-kong-printing-guide",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\hong-kong-printing-guide.webp",
+      "suggestion": "生成 blog/ja/hong-kong-printing-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "design-file-specs",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\design-file-specs.webp",
+      "suggestion": "生成 blog/zh-hk/design-file-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "design-file-specs",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\design-file-specs.webp",
+      "suggestion": "生成 blog/en/design-file-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "design-file-specs",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\design-file-specs.webp",
+      "suggestion": "生成 blog/ja/design-file-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "brand-materials-checklist",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\brand-materials-checklist.webp",
+      "suggestion": "生成 blog/zh-hk/brand-materials-checklist.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "brand-materials-checklist",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\brand-materials-checklist.webp",
+      "suggestion": "生成 blog/en/brand-materials-checklist.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "brand-materials-checklist",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\brand-materials-checklist.webp",
+      "suggestion": "生成 blog/ja/brand-materials-checklist.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "mtr-advertising-specs",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\mtr-advertising-specs.webp",
+      "suggestion": "生成 blog/zh-hk/mtr-advertising-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "mtr-advertising-specs",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\mtr-advertising-specs.webp",
+      "suggestion": "生成 blog/en/mtr-advertising-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "mtr-advertising-specs",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\mtr-advertising-specs.webp",
+      "suggestion": "生成 blog/ja/mtr-advertising-specs.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "cmyk-guide",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\cmyk-guide.webp",
+      "suggestion": "生成 blog/zh-hk/cmyk-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "cmyk-guide",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\cmyk-guide.webp",
+      "suggestion": "生成 blog/en/cmyk-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "cmyk-guide",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\cmyk-guide.webp",
+      "suggestion": "生成 blog/ja/cmyk-guide.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "paper-materials",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\paper-materials.webp",
+      "suggestion": "生成 blog/zh-hk/paper-materials.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "paper-materials",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\paper-materials.webp",
+      "suggestion": "生成 blog/en/paper-materials.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "paper-materials",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\paper-materials.webp",
+      "suggestion": "生成 blog/ja/paper-materials.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "eco-printing",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\eco-printing.webp",
+      "suggestion": "生成 blog/zh-hk/eco-printing.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "eco-printing",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\eco-printing.webp",
+      "suggestion": "生成 blog/en/eco-printing.webp"
+    },
+    {
+      "type": "blog",
+      "topic": "eco-printing",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\eco-printing.webp",
+      "suggestion": "生成 blog/ja/eco-printing.webp"
+    }
+  ],
+  "wrongLocale": [],
+  "uiIssues": [
+    {
+      "type": "hero-slider",
+      "issue": "首页轮播图可能包含渐变背景 slide",
+      "file": "src/components/home/HeroBanner.tsx",
+      "recommendation": "将第三张替换为真实场景图（书店/教室/办公室）"
+    }
+  ],
+  "heroAudit": [
+    {
+      "slug": "paper-bags",
+      "locale": "zh-hk",
+      "filename": "hero-kraft-bag-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "paper-bags",
+      "locale": "en",
+      "filename": "hero-kraft-bag-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "paper-bags",
+      "locale": "ja",
+      "filename": "hero-kraft-bag-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "flyers",
+      "locale": "zh-hk",
+      "filename": "hero-flyer-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "flyers",
+      "locale": "en",
+      "filename": "hero-flyer-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "flyers",
+      "locale": "ja",
+      "filename": "hero-flyer-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "stickers",
+      "locale": "zh-hk",
+      "filename": "hero-sticker-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "stickers",
+      "locale": "en",
+      "filename": "hero-sticker-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "stickers",
+      "locale": "ja",
+      "filename": "hero-sticker-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "packaging",
+      "locale": "zh-hk",
+      "filename": "hero-gift-box-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "packaging",
+      "locale": "en",
+      "filename": "hero-gift-box-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "packaging",
+      "locale": "ja",
+      "filename": "hero-gift-box-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "posters",
+      "locale": "zh-hk",
+      "filename": "hero-poster-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "posters",
+      "locale": "en",
+      "filename": "hero-poster-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "posters",
+      "locale": "ja",
+      "filename": "hero-poster-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "business-cards",
+      "locale": "zh-hk",
+      "filename": "hero-business-cards-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "business-cards",
+      "locale": "en",
+      "filename": "hero-business-cards-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "business-cards",
+      "locale": "ja",
+      "filename": "hero-business-cards-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "banners",
+      "locale": "zh-hk",
+      "filename": "hero-banners-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "banners",
+      "locale": "en",
+      "filename": "hero-banners-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "banners",
+      "locale": "ja",
+      "filename": "hero-banners-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "books",
+      "locale": "zh-hk",
+      "filename": "hero-books-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "books",
+      "locale": "en",
+      "filename": "hero-books-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "books",
+      "locale": "ja",
+      "filename": "hero-books-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "menus",
+      "locale": "zh-hk",
+      "filename": "hero-menus-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "menus",
+      "locale": "en",
+      "filename": "hero-menus-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "menus",
+      "locale": "ja",
+      "filename": "hero-menus-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "envelopes",
+      "locale": "zh-hk",
+      "filename": "hero-envelopes-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "envelopes",
+      "locale": "en",
+      "filename": "hero-envelopes-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "envelopes",
+      "locale": "ja",
+      "filename": "hero-envelopes-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "calendars",
+      "locale": "zh-hk",
+      "filename": "hero-calendars-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "calendars",
+      "locale": "en",
+      "filename": "hero-calendars-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "calendars",
+      "locale": "ja",
+      "filename": "hero-calendars-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "red-packets",
+      "locale": "zh-hk",
+      "filename": "hero-red-packets-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "red-packets",
+      "locale": "en",
+      "filename": "hero-red-packets-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "red-packets",
+      "locale": "ja",
+      "filename": "hero-red-packets-ja.webp",
+      "exists": true
+    },
+    {
+      "slug": "educational",
+      "locale": "zh-hk",
+      "filename": "hero-educational-zh-hk.webp",
+      "exists": true
+    },
+    {
+      "slug": "educational",
+      "locale": "en",
+      "filename": "hero-educational-en.webp",
+      "exists": true
+    },
+    {
+      "slug": "educational",
+      "locale": "ja",
+      "filename": "hero-educational-ja.webp",
+      "exists": true
+    }
+  ],
+  "productAudit": [
+    {
+      "summary": "seedream-webp: zh-hk=300, en=296, ja=284",
+      "risk": "OK"
+    }
+  ],
+  "blogAudit": [
+    {
+      "topic": "company-intro",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\company-intro.webp",
+      "exists": true
+    },
+    {
+      "topic": "company-intro",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\company-intro.webp",
+      "exists": true
+    },
+    {
+      "topic": "company-intro",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\company-intro.webp",
+      "exists": true
+    },
+    {
+      "topic": "sticker-guide",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\sticker-guide.webp",
+      "exists": true
+    },
+    {
+      "topic": "sticker-guide",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\sticker-guide.webp",
+      "exists": true
+    },
+    {
+      "topic": "sticker-guide",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\sticker-guide.webp",
+      "exists": true
+    },
+    {
+      "topic": "business-card-design",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\business-card-design.webp",
+      "exists": true
+    },
+    {
+      "topic": "business-card-design",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\business-card-design.webp",
+      "exists": true
+    },
+    {
+      "topic": "business-card-design",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\business-card-design.webp",
+      "exists": true
+    },
+    {
+      "topic": "packaging-trends",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\packaging-trends.webp",
+      "exists": false
+    },
+    {
+      "topic": "packaging-trends",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\packaging-trends.webp",
+      "exists": false
+    },
+    {
+      "topic": "packaging-trends",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\packaging-trends.webp",
+      "exists": false
+    },
+    {
+      "topic": "hong-kong-printing-guide",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\hong-kong-printing-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "hong-kong-printing-guide",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\hong-kong-printing-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "hong-kong-printing-guide",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\hong-kong-printing-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "design-file-specs",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\design-file-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "design-file-specs",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\design-file-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "design-file-specs",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\design-file-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "brand-materials-checklist",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\brand-materials-checklist.webp",
+      "exists": false
+    },
+    {
+      "topic": "brand-materials-checklist",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\brand-materials-checklist.webp",
+      "exists": false
+    },
+    {
+      "topic": "brand-materials-checklist",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\brand-materials-checklist.webp",
+      "exists": false
+    },
+    {
+      "topic": "mtr-advertising-specs",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\mtr-advertising-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "mtr-advertising-specs",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\mtr-advertising-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "mtr-advertising-specs",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\mtr-advertising-specs.webp",
+      "exists": false
+    },
+    {
+      "topic": "cmyk-guide",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\cmyk-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "cmyk-guide",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\cmyk-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "cmyk-guide",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\cmyk-guide.webp",
+      "exists": false
+    },
+    {
+      "topic": "paper-materials",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\paper-materials.webp",
+      "exists": false
+    },
+    {
+      "topic": "paper-materials",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\paper-materials.webp",
+      "exists": false
+    },
+    {
+      "topic": "paper-materials",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\paper-materials.webp",
+      "exists": false
+    },
+    {
+      "topic": "eco-printing",
+      "locale": "zh-hk",
+      "path": "public\\images\\blog\\zh-hk\\eco-printing.webp",
+      "exists": false
+    },
+    {
+      "topic": "eco-printing",
+      "locale": "en",
+      "path": "public\\images\\blog\\en\\eco-printing.webp",
+      "exists": false
+    },
+    {
+      "topic": "eco-printing",
+      "locale": "ja",
+      "path": "public\\images\\blog\\ja\\eco-printing.webp",
+      "exists": false
+    }
+  ],
+  "recommendations": []
+}

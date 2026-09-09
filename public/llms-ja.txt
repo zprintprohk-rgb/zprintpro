@@ -1,5 +1,5 @@
 # ZprintPro (ジープリント) 日本向け — AI検索最適化ページ
-# Last updated: 2026-06-28
+# Last updated: 2026-09-09
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
 ## 会社情報
@@ -22,7 +22,7 @@
 - 包裝盒定制 / Packaging / パッケージ印刷 -- 10 products
 - 定制海報 / Posters / ポスター印刷 -- 6 products
 - 紙袋印刷 / Paper Bags / 紙袋印刷 -- 6 products
-- 咭片印刷 / Business Cards / 名刺印刷 -- 6 products
+- 賀卡印刷 / Greeting Cards / グリーティングカード印刷 -- 6 products
 - 噴繪廣告 / Banners / バナー印刷 -- 5 products
 - 書籍印刷 / Books / 書籍印刷 -- 5 products
 - 餐牌印刷 / Menus / メニュー印刷 -- 5 products
@@ -97,16 +97,16 @@
 | 手挽紙袋 | handle-bags | Handle Bags | 手提げ紙袋 | 100 | CNY 8 |
 | 大號紙袋 | large-bags | Large Bags | 大判紙袋 | 100 | CNY 15 |
 
-### 咭片印刷 / Business Cards (6 products)
+### 賀卡印刷 / Greeting Cards (6 products)
 
 | Product | Slug | EN Name | JA Name | Min Qty | Base Price |
 |---------|------|---------|---------|---------|------------|
-| 高級商務咭片 | premium-business-cards | Premium Business Cards | 高級名刺 | 100 | CNY 1 |
-| 厚身咭片(400g) | thick-business-cards-400g | Thick Business Cards (400g) | 厚紙名刺(400g) | 100 | CNY 1.2 |
-| 燙金/燙銀咭片 | foil-business-cards | Foil Stamped Business Cards | 箔押し名刺 | 100 | CNY 1.8 |
-| UV局部光油咭片 | spot-uv-business-cards | Spot UV Business Cards | 局部UV名刺 | 100 | CNY 1.4 |
-| 啞膠咭片 | matte-business-cards | Matte Laminated Cards | マット名刺 | 100 | CNY 1.1 |
-| 圓角咭片 | rounded-corner-cards | Rounded Corner Cards | 丸角名刺 | 100 | CNY 1 |
+| 高級賀卡 | premium-greeting-cards | Premium Greeting Cards | プレミアムグリーティングカード | 100 | CNY 1 |
+| 厚身賀卡(400g) | thick-greeting-cards-400g | Thick 400g Greeting Cards | 厚手400gグリーティングカード | 100 | CNY 1.2 |
+| 燙金/燙銀賀卡 | foil-greeting-cards | Foil-Stamped Greeting Cards | 箔押しグリーティングカード | 100 | CNY 1.8 |
+| UV局部光油賀卡 | spot-uv-greeting-cards | Spot UV Greeting Cards | スポットUVグリーティングカード | 100 | CNY 1.4 |
+| 啞膠賀卡 | matte-greeting-cards | Matte Greeting Cards | マットラミネートグリーティングカード | 100 | CNY 1.1 |
+| 圓角賀卡 | rounded-corner-greeting-cards | Rounded Corner Greeting Cards | 角丸グリーティングカード | 100 | CNY 1 |
 
 ### 噴繪廣告 / Banners (5 products)
 

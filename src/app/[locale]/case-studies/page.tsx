@@ -165,7 +165,7 @@ const translations = {
         need: '400g thick greeting cards and corporate catalog for professional authority',
         solution: '400g ultra-thick glossy cards with matte lamination; perfect-bound catalogs on 157g glossy paper',
         products: ['Thick Cards (400g)', 'Perfect-bound Catalog', 'A4 Flyers'],
-        result: 'Business card retention up 60%, catalog highly praised at industry events',
+        result: 'Greeting card retention up 60%, catalog highly praised at industry events',
         quote: 'When clients received our 400g cards, they said it was the most substantial lawyer card they had seen.',
         author: 'Mr. Wong',
         role: 'Partner',
