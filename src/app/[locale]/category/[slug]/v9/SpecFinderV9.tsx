@@ -34,14 +34,14 @@ export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string 
   };
 
   const selectCls =
-    'h-12 rounded-lg border border-[#E5E7EB] bg-white px-3.5 text-[15.5px] text-[#1F2937] focus:outline-none focus:border-[#2873F5]';
+    'h-12 rounded-lg border border-[#E5E7EB] bg-white px-3.5 text-[15.5px] text-[#1F2937] focus:outline-none focus:border-[#2873F5] flex-1 min-w-[140px] lg:min-w-[150px]';
 
   return (
     <div
-      className="mt-7 rounded-[14px] px-[22px] py-[18px] flex items-center gap-3.5 flex-wrap text-white"
+      className="mt-7 rounded-[14px] px-[22px] py-[18px] flex items-center gap-x-3.5 gap-y-3 flex-wrap text-white"
       style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
     >
-      <b className="text-[16px]">30 秒找到你的規格：</b>
+      <b className="text-[16px] whitespace-nowrap">30 秒找到你的規格：</b>
       <select aria-label="用途" className={selectCls} value={purpose} onChange={(e) => setPurpose(e.target.value)}>
         {PURPOSE_OPTIONS.map((o) => (
           <option key={o} value={o}>用途：{o}</option>
@@ -60,7 +60,7 @@ export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string 
       <button
         type="button"
         onClick={go}
-        className="h-12 px-6 rounded-lg bg-[#2873F5] text-white font-bold text-[15.5px] ring-1 ring-white/25 hover:bg-[#1E5FD1] transition-colors"
+        className="h-12 px-6 rounded-lg bg-[#F87314] text-white font-bold text-[15.5px] ring-1 ring-white/25 hover:brightness-95 transition-all whitespace-nowrap"
       >
         跳轉對應產品 →
       </button>
