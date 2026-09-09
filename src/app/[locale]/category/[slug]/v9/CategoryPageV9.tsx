@@ -196,25 +196,10 @@ export function CategoryPageV9({
 
       {/* ═══ 藍本 .main — 凍結左欄 + 右欄 ═══ */}
       <div className="max-w-[1320px] mx-auto px-6 pt-9 pb-20 grid gap-9 items-start lg:grid-cols-[248px_minmax(0,1fr)]">
-        {/* 左側分類欄（凍結區: 生產沿用現有組件）
-            桌面 ≥1024px: sticky（top 110px 避讓 sticky 導航）+ 獨立滾動容器（max-h + overflow-y, 超長清單不出視口）
-            移動端 <1024px（含 <768px）: 取消 sticky, 降級為手風琴摺疊, 不佔屏 */}
-        <aside className="hidden lg:block">
-          <div className="lg:sticky lg:top-[110px]">
-            <div className="max-h-[calc(100vh-130px)] overflow-y-auto pr-1.5 [scrollbar-width:thin]">
-              <CategorySidebar locale={locale} currentCategorySlug={slug} />
-            </div>
-          </div>
+        {/* 左側分類欄（凍結區: 生產沿用現有組件; sticky 偏移與首頁 WhyChooseUs 同源 110px, 避讓 sticky 導航; 修訂輪3: 撤回滾動容器/手風琴, 恢復輪1 樣式） */}
+        <aside className="lg:sticky lg:top-[110px]">
+          <CategorySidebar locale={locale} currentCategorySlug={slug} />
         </aside>
-        <details className="lg:hidden bg-white border border-[#E5E7EB] rounded-[14px]">
-          <summary className="cursor-pointer list-none px-[18px] py-3.5 font-bold text-[16.5px] flex justify-between items-center [&::-webkit-details-marker]:hidden">
-            產品分類
-            <span className="text-[13px] font-semibold text-[#2873F5]">展開 / 收起</span>
-          </summary>
-          <div className="px-2 pb-2 pt-2 border-t border-[#E5E7EB]">
-            <CategorySidebar locale={locale} currentCategorySlug={slug} />
-          </div>
-        </details>
 
         {/* 右欄 */}
         <div>
@@ -503,11 +488,14 @@ export function CategoryPageV9({
             </section>
           )}
 
-          {/* 15. 頁底 CTA（付款/回覆時效口徑 = 既有數據: 轉數快/24 小時內回覆） */}
+          {/* 15. 頁底 CTA（修訂輪3: 皇家藏青色塊底色; 付款清單按唐總指定口徑, PayPal 正確拼寫） */}
           <section className="mb-16">
-            <div className="bg-white border border-[#E5E7EB] rounded-[20px] p-8 sm:p-12 text-center shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
-              <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5">WhatsApp 直接詢價 · 30 秒發需求</h3>
-              <p className="text-[#6B7280] text-[16px] mb-6">WhatsApp 詢價後銀行轉賬 / 轉數快 FPS / 支付寶香港 · 24 小時內回覆</p>
+            <div
+              className="rounded-[20px] p-8 sm:p-12 text-center"
+              style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
+            >
+              <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">WhatsApp 直接詢價 · 30 秒發需求</h3>
+              <p className="text-white/80 text-[16px] mb-6">WhatsApp 詢價後銀行轉賬 / 微信 / 支付寶香港 / PayPal · 24 小時內回覆</p>
               <div className="flex gap-3.5 justify-center flex-wrap">
                 <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">
                   立即獲取報價

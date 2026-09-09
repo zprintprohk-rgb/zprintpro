@@ -2,7 +2,8 @@
 
 /**
  * PDP v9.1 相册（藍本 design/pdp-v9.html §Hero.gal: 主圖四角裁切標 + 4 縮圖切換）
- * 圖源 = 現有 getProductImages 產品圖 + 工廠實拍第 4 格（工廠圖路徑由 page.tsx 傳入）
+ * 圖源 = 現有 getProductImages 產品圖（修訂輪3: 剔除工廠/印刷機圖, SKU 相冊只放產品圖;
+ * 工廠實拍僅保留在頁面「印刷實證」區, 由 page.tsx proofImages 單獨引用）
  */
 import { useState } from 'react';
 import Image from 'next/image';
@@ -10,13 +11,11 @@ import Image from 'next/image';
 export function GalleryV9({
   images,
   alt,
-  factoryImage,
 }: {
   images: string[];
   alt: string;
-  factoryImage: string;
 }) {
-  const thumbs = Array.from(new Set([...images.slice(0, 3), factoryImage]));
+  const thumbs = images.slice(0, 4);
   const [idx, setIdx] = useState(0);
   const main = thumbs[idx] ?? thumbs[0];
 

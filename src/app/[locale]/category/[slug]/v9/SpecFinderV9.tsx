@@ -37,7 +37,10 @@ export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string 
     'h-12 rounded-lg border border-[#E5E7EB] bg-white px-3.5 text-[15.5px] text-[#1F2937] focus:outline-none focus:border-[#2873F5]';
 
   return (
-    <div className="mt-7 bg-white border border-[#E5E7EB] rounded-[14px] px-[22px] py-[18px] flex items-center gap-3.5 flex-wrap shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+    <div
+      className="mt-7 rounded-[14px] px-[22px] py-[18px] flex items-center gap-3.5 flex-wrap text-white"
+      style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
+    >
       <b className="text-[16px]">30 秒找到你的規格：</b>
       <select aria-label="用途" className={selectCls} value={purpose} onChange={(e) => setPurpose(e.target.value)}>
         {PURPOSE_OPTIONS.map((o) => (
@@ -57,11 +60,11 @@ export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string 
       <button
         type="button"
         onClick={go}
-        className="h-12 px-6 rounded-lg bg-[#2873F5] text-white font-bold text-[15.5px] hover:bg-[#1E5FD1] transition-colors"
+        className="h-12 px-6 rounded-lg bg-[#2873F5] text-white font-bold text-[15.5px] ring-1 ring-white/25 hover:bg-[#1E5FD1] transition-colors"
       >
         跳轉對應產品 →
       </button>
-      <span className="text-[13px] text-[#6B7280]">全部指向真實 SKU · 不確定可直接 <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-[#2873F5] font-semibold hover:underline">WhatsApp 問</a></span>
+      <span className="text-[13px] text-white/75">全部指向真實 SKU · 不確定可直接 <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-[#9DB8F5] font-semibold underline decoration-white/40 underline-offset-4 hover:text-white">WhatsApp 問</a></span>
     </div>
   );
 }

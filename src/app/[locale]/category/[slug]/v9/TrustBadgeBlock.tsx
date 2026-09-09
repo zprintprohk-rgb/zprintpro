@@ -1,10 +1,8 @@
-import type { CSSProperties } from 'react';
 import { Factory, Zap, Truck, Clock, ShieldCheck, Headphones, type LucideIcon } from 'lucide-react';
 
-/* ═══ 為何選擇智印港 — 皇家藏青色塊組件（TrustBadgeBlock） ═══
+/* ═══ 為何選擇智印港 — 信任色塊組件（TrustBadgeBlock） ═══
    - PLP / PDP 復用同一組件, 文案經 props 控制（默認 = 2026-09-09 唐總修訂輪2 指定替換文案）
-   - 深色色塊色彩一律走 globals.css :root token（--color-royal-navy-*）, 禁止硬編碼 hex
-   - 色塊樣式 = 首頁 WhyChooseUs moment card 同源（圓角 2xl / p-7~10 / inset 高光 + 投影 / 徑向光暈） */
+   - 底色 = 6 步落單流程同款 #F2F6FF（修訂輪3 指定; 原皇家藏青 token 保留於 globals.css, 供 SpecFinder/CTA/Footer 引用） */
 
 /** 品牌與服務介紹（修訂輪2 指定文案; 繁體化僅轉字形, 措辭逐字保留） */
 export const TRUST_COPY_INTRO =
@@ -41,13 +39,6 @@ export interface TrustBadgeBlockProps {
   cards?: TrustCard[];
 }
 
-/** 色塊背景: 徑向光暈 + 皇家藏青漸變 token; 投影 = 首頁 moment card 同源 inset 高光 + 深投影 */
-const NAVY_BLOCK_STYLE: CSSProperties = {
-  background:
-    'radial-gradient(120% 150% at 88% -12%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 55%), var(--color-royal-navy-grad)',
-  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)',
-};
-
 export function TrustBadgeBlock({
   eyebrow = 'Why ZprintPro',
   paragraphs = [TRUST_COPY_INTRO],
@@ -56,28 +47,24 @@ export function TrustBadgeBlock({
 }: TrustBadgeBlockProps) {
   return (
     <section className="max-w-[1320px] mx-auto px-6 mb-16">
-      <div className="relative overflow-hidden rounded-2xl p-7 md:p-10 text-white isolate" style={NAVY_BLOCK_STYLE}>
-        <span
-          aria-hidden="true"
-          className="absolute -top-[60px] -right-[50px] w-[220px] h-[220px] rounded-full pointer-events-none -z-10"
-          style={{ background: 'radial-gradient(circle, rgba(93,144,235,0.25), transparent 68%)' }}
-        />
+      {/* 底色與圓角 = 6 步落單流程區同款（bg-[#F2F6FF] + rounded-[22px]） */}
+      <div className="overflow-hidden rounded-[22px] p-7 md:p-10 bg-[#F2F6FF]">
         <div className="grid gap-9 lg:grid-cols-[5fr_7fr] items-start">
           <div>
-            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#9DB8F5] mb-3.5">
+            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3.5">
               <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
               {eyebrow}
             </span>
-            <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-white">
+            <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#111827]">
               為何選擇<em className="not-italic text-[#F87314]">智印港</em>
             </h2>
             {paragraphs.map((p, i) => (
-              <p key={i} className="mt-4 text-[16.5px] leading-[1.9] text-white/90 text-justify">
+              <p key={i} className="mt-4 text-[16.5px] leading-[1.9] text-[#3A4250] text-justify">
                 {p}
               </p>
             ))}
             {logistics && (
-              <p className="mt-4 pt-4 border-t border-white/15 text-[16.5px] leading-[1.8] font-bold text-white">
+              <p className="mt-4 pt-4 border-t border-[#C9D6F2] text-[16.5px] leading-[1.8] font-bold text-[#2873F5]">
                 {logistics}
               </p>
             )}
@@ -86,7 +73,7 @@ export function TrustBadgeBlock({
             {cards.map((w) => (
               <div
                 key={w.title}
-                className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_14px_30px_rgba(9,17,35,0.3)] hover:-translate-y-[3px]"
+                className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px] hover:border-[#d6e0f5]"
               >
                 <div className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
                   <w.icon className="w-6 h-6 text-white" aria-hidden="true" />

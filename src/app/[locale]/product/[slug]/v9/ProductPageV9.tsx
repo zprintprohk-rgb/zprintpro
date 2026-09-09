@@ -141,39 +141,18 @@ export function ProductPageV9({
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
-      {/* ═══ Banner — 與 PLP 同規格: 同導航欄寬 1320px + 輪播圖同高 (300/400), 麵包屑入圖; H1 保留在 hero（每頁唯一 H1, SEO 安全） ═══ */}
-      <section className="max-w-[1320px] mx-auto">
-        <div
-          className="relative overflow-hidden h-[300px] md:h-[400px] text-white"
-          style={{ backgroundColor: 'var(--color-royal-navy)' }}
-        >
-          <Image
-            src={`/images/hero/hero-sticker-${locale}.webp`}
-            alt={`${productTitle} — 貼紙印刷分類實拍`}
-            fill
-            className="object-cover"
-            unoptimized
-            priority
-            sizes="(max-width: 1320px) 100vw, 1320px"
-          />
-          <div aria-hidden="true" className="absolute inset-0" style={{ background: 'var(--color-royal-navy-overlay)' }} />
-          <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10">
-            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
-              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">首頁</a>
-              <span className="mx-2">/</span>
-              <a href={`${localePrefix}/category/${product.category_slug}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">貼紙印刷</a>
-              <span className="mx-2">/</span>
-              <span className="text-white">{productTitle}</span>
-            </nav>
-            <p className="text-[22px] md:text-[26px] font-extrabold leading-snug max-w-[760px] drop-shadow-sm">{productTitle}</p>
-            <p className="mt-2.5 text-[16.5px] text-white/85">專業品質，價格透明，快速交貨</p>
-          </div>
-        </div>
-      </section>
+      {/* ═══ 藍本 .bc 麵包屑（修訂輪3: PDP banner 撤回, 恢復原白底麵包屑條） ═══ */}
+      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-[13px] text-[#6B7280]">
+        <a href={`${localePrefix}/`} className="text-[#6B7280] hover:text-[#2873F5]">首頁</a>
+        {' / '}
+        <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[#6B7280] hover:text-[#2873F5]">貼紙印刷</a>
+        {' / '}
+        <span>{productTitle}</span>
+      </div>
 
       {/* ═══ 藍本 .hero 首屏: 左相冊 + 右決策區 ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 pt-2 pb-12 grid gap-11 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-        <GalleryV9 images={galleryImages} alt={productTitle} factoryImage={factoryImage} />
+        <GalleryV9 images={galleryImages} alt={productTitle} />
 
         <div>
           {/* 即日徽章（沿用現有 RushDeliveryBadge 文案） */}
