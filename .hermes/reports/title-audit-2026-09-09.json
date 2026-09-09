@@ -8,21 +8,20 @@
    "category": 24
   },
   "byBand": {
-   "FILL": 206,
-   "LEGACY": 52,
-   "OK": 132,
-   "TRIM": 133,
-   "RED": 9
+   "OK": 382,
+   "LEGACY": 23,
+   "TRIM": 56,
+   "FILL": 64,
+   "RED": 7
   },
   "byAction": {
-   "补满 50-54": 197,
-   "OK": 65,
-   "修品牌/污染": 105,
-   "修剪 50-54": 105,
-   "超格修剪": 2,
-   "FROZEN(只读至窗判)": 58
+   "修品牌/污染": 292,
+   "OK": 99,
+   "修剪 50-54": 28,
+   "FROZEN(只读至窗判)": 58,
+   "补满 50-54": 55
   },
-  "brandIssues": 325,
+  "brandIssues": 368,
   "bcHits": 0,
   "insightHits": 1,
   "frozen": 58
@@ -32,27 +31,32 @@
    "type": "sku",
    "slug": "waterproof-stickers",
    "locale": "zh-hk",
-   "title": "防水貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "防水貼紙印刷 異形切割 100張起 HK$0.22起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "waterproof-stickers",
    "locale": "en",
-   "title": "Custom Waterproof Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Waterproof Stickers + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 59,
-   "len": 59,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -64,11 +68,11 @@
    "type": "sku",
    "slug": "waterproof-stickers",
    "locale": "ja",
-   "title": "防水ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "title": "防水ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 34,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 37,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -78,33 +82,38 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "transparent-stickers",
    "locale": "zh-hk",
-   "title": "透明貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "透明貼紙印刷 防水 PVC 100張起 HK$0.38起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 37,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "transparent-stickers",
    "locale": "en",
-   "title": "Custom Transparent Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Transparent Stickers + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -116,11 +125,11 @@
    "type": "sku",
    "slug": "transparent-stickers",
    "locale": "ja",
-   "title": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "title": "透明ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 34,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 37,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -130,33 +139,38 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "removable-stickers",
    "locale": "zh-hk",
-   "title": "可移貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "可移貼紙印刷 不殘膠 100張起 HK$0.45起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 52,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "removable-stickers",
    "locale": "en",
-   "title": "Custom Removable Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Removable Stickers + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
-   "band": "LEGACY",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -188,43 +202,47 @@
    "type": "sku",
    "slug": "small-batch-stickers",
    "locale": "zh-hk",
-   "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港",
+   "title": "小批量貼紙 50 張起 HK$0.45・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 63,
-   "len": 45,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 36,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "small-batch-stickers",
    "locale": "en",
-   "title": "Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro",
+   "title": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
    "cat": "",
-   "equiv": 67,
-   "len": 67,
-   "band": "TRIM",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "small-batch-stickers",
    "locale": "ja",
-   "title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro",
+   "title": "小ロットステッカー 50 枚〜 $0.045・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 63,
-   "len": 48,
-   "band": "TRIM",
+   "equiv": 53,
+   "len": 38,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -234,7 +252,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -260,11 +278,11 @@
    "type": "sku",
    "slug": "die-cut-stickers",
    "locale": "en",
-   "title": "Custom Die-Cut Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Die-Cut Stickers + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 56,
-   "band": "LEGACY",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -296,17 +314,22 @@
    "type": "sku",
    "slug": "foil-stickers",
    "locale": "zh-hk",
-   "title": "燙金貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "燙金貼紙印刷 金銀質感 100張起 HK$0.78起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -348,27 +371,32 @@
    "type": "sku",
    "slug": "security-stickers",
    "locale": "zh-hk",
-   "title": "防偽貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "防偽貼紙印刷 易碎材質 100張起 HK$0.66起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "security-stickers",
    "locale": "en",
-   "title": "Custom Security Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Security Stickers + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 57,
-   "len": 57,
-   "band": "LEGACY",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -400,27 +428,32 @@
    "type": "sku",
    "slug": "fluorescent-stickers",
    "locale": "zh-hk",
-   "title": "螢光貼紙 | 防水 PVC 異形切割 | 智印港",
+   "title": "螢光貼紙印刷 螢光材質 100張起 HK$0.66起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "fluorescent-stickers",
    "locale": "en",
-   "title": "Custom Fluorescent Stickers | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Fluorescent Stickers + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -432,11 +465,11 @@
    "type": "sku",
    "slug": "fluorescent-stickers",
    "locale": "ja",
-   "title": "蛍光ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "title": "蛍光ステッカー | 防水 PVC ダイカット・注文 | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 34,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 37,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -446,33 +479,37 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "kraft-paper-bags",
    "locale": "zh-hk",
-   "title": "牛皮紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "牛皮紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "kraft-paper-bags",
    "locale": "en",
-   "title": "Custom Kraft Paper Bags | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Kraft Paper Bags + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 56,
-   "band": "LEGACY",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -504,27 +541,31 @@
    "type": "sku",
    "slug": "white-card-bags",
    "locale": "zh-hk",
-   "title": "白卡紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "白卡紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "white-card-bags",
    "locale": "en",
-   "title": "Custom White Card Bags | Free Shipping $99+ | ZprintPro",
+   "title": "Custom White Card Bags + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 55,
-   "len": 55,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -536,11 +577,11 @@
    "type": "sku",
    "slug": "white-card-bags",
    "locale": "ja",
-   "title": "白カード紙袋 | エコ素材 多サイズ | ZprintPro",
+   "title": "白カード紙袋 | エコ素材 多サイズ・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 44,
-   "len": 30,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -550,33 +591,37 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "gift-bags",
    "locale": "zh-hk",
-   "title": "禮品紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "禮品紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "gift-bags",
    "locale": "en",
-   "title": "Custom Gift Paper Bags | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Gift Paper Bags + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 55,
-   "len": 55,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -608,17 +653,21 @@
    "type": "sku",
    "slug": "eco-paper-bags",
    "locale": "zh-hk",
-   "title": "環保紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "環保紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -640,11 +689,11 @@
    "type": "sku",
    "slug": "eco-paper-bags",
    "locale": "ja",
-   "title": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
+   "title": "エコ紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 40,
-   "len": 28,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -654,23 +703,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "handle-bags",
    "locale": "zh-hk",
-   "title": "環保手挽袋 | 100%環保 多尺寸 | 智印港",
+   "title": "環保手挽袋印刷 加固手挽袋 100個起 HK$4.5起 | 智印港",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
-   "band": "FILL",
+   "equiv": 51,
+   "len": 33,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -712,27 +761,31 @@
    "type": "sku",
    "slug": "small-bags",
    "locale": "zh-hk",
-   "title": "小號紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "小號紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "small-bags",
    "locale": "en",
-   "title": "Custom Small Paper Bags | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Small Paper Bags + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 56,
-   "band": "LEGACY",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -744,11 +797,11 @@
    "type": "sku",
    "slug": "small-bags",
    "locale": "ja",
-   "title": "小型紙袋 | エコ素材 多サイズ | ZprintPro",
+   "title": "小型紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 40,
-   "len": 28,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -758,33 +811,37 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "large-bags",
    "locale": "zh-hk",
-   "title": "大號紙袋 | 100%環保 多尺寸 | 智印港",
+   "title": "大號紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "large-bags",
    "locale": "en",
-   "title": "Custom Large Paper Bags | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Large Paper Bags + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 56,
-   "band": "LEGACY",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -796,11 +853,11 @@
    "type": "sku",
    "slug": "large-bags",
    "locale": "ja",
-   "title": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
+   "title": "大型紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 40,
-   "len": 28,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -810,7 +867,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -836,11 +893,11 @@
    "type": "sku",
    "slug": "a4-flyers",
    "locale": "en",
-   "title": "A4 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+   "title": "A4 Flyers for Holiday Cards + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -852,11 +909,11 @@
    "type": "sku",
    "slug": "a4-flyers",
    "locale": "ja",
-   "title": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "title": "A4 チラシ | 両面フルカラー 100枚〜・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 46,
-   "len": 34,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 38,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -866,7 +923,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -892,11 +949,11 @@
    "type": "sku",
    "slug": "a5-flyers",
    "locale": "en",
-   "title": "A5 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+   "title": "A5 Flyers for Holiday Cards + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -908,11 +965,11 @@
    "type": "sku",
    "slug": "a5-flyers",
    "locale": "ja",
-   "title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "title": "A5 チラシ | 両面フルカラー 100枚〜・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 46,
-   "len": 34,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 38,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -922,7 +979,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -964,11 +1021,11 @@
    "type": "sku",
    "slug": "double-sided-flyers",
    "locale": "ja",
-   "title": "両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro",
+   "title": "両面カラー印刷 両面チラシ・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 71,
-   "len": 46,
-   "band": "TRIM",
+   "equiv": 51,
+   "len": 32,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -978,23 +1035,28 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "folded-leaflets",
    "locale": "zh-hk",
-   "title": "摺頁單張 | 雙面四色 100張起 | 智印港",
+   "title": "摺頁單張印刷 雙面四色 100張起 HK$0.55起 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1036,17 +1098,17 @@
    "type": "sku",
    "slug": "thick-paper-flyers",
    "locale": "zh-hk",
-   "title": "厚身單張 | 雙面四色 100張起 | 智印港",
+   "title": "厚身單張印刷 157g/200g 厚紙 100張起 HK$0.45起 | 智印港",
    "cat": "",
-   "equiv": 36,
-   "len": 23,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 40,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -1068,11 +1130,11 @@
    "type": "sku",
    "slug": "thick-paper-flyers",
    "locale": "ja",
-   "title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "title": "厚口チラシ | 両面フルカラー 100枚〜・注文 | ZprintPro",
    "cat": "",
-   "equiv": 47,
-   "len": 33,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1082,7 +1144,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1124,13 +1186,12 @@
    "type": "sku",
    "slug": "same-day-flyers",
    "locale": "ja",
-   "title": "即日チラシ印刷｜¥125〜・100枚から・無料デザイン｜ZprintPro",
+   "title": "即日チラシ印刷・無料デザイン・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 37,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 31,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
     "简体污染"
    ],
    "pollution": [
@@ -1181,11 +1242,11 @@
    "type": "sku",
    "slug": "eco-flyers",
    "locale": "ja",
-   "title": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "title": "エコチラシ | 両面フルカラー 100枚〜・注文 | ZprintPro",
    "cat": "",
-   "equiv": 47,
-   "len": 33,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1195,23 +1256,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "a2-posters",
    "locale": "zh-hk",
-   "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港",
+   "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一 | 智印港",
    "cat": "",
-   "equiv": 65,
-   "len": 40,
-   "band": "TRIM",
+   "equiv": 53,
+   "len": 34,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -1233,13 +1294,12 @@
    "type": "sku",
    "slug": "a2-posters",
    "locale": "ja",
-   "title": "A2 ポスター印刷｜¥300〜・1枚から・防水・無料デザイン｜ZprintPro",
+   "title": "A2 ポスター印刷・無料デザイン・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 63,
-   "len": 40,
-   "band": "TRIM",
+   "equiv": 51,
+   "len": 33,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
     "简体污染"
    ],
    "pollution": [
@@ -1248,7 +1308,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1290,11 +1350,11 @@
    "type": "sku",
    "slug": "a1-posters",
    "locale": "ja",
-   "title": "A1 ポスター | 防水 翌日配送 | ZprintPro",
+   "title": "A1 ポスター | 防水 翌日配送・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 39,
-   "len": 29,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1304,33 +1364,38 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "outdoor-posters",
    "locale": "zh-hk",
-   "title": "戶外海報 | 防水材質 即日速遞 | 智印港",
+   "title": "戶外海報印刷 防水材質 10張起 即日速遞 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 52,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "outdoor-posters",
    "locale": "en",
-   "title": "Outdoor Posters Wall Art | Free Shipping $99+ | ZprintPro",
+   "title": "Outdoor Posters Wall Art + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 57,
-   "len": 57,
-   "band": "LEGACY",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1362,27 +1427,32 @@
    "type": "sku",
    "slug": "display-posters",
    "locale": "zh-hk",
-   "title": "展架海報 | 防水材質 即日速遞 | 智印港",
+   "title": "展架海報印刷 防水材質 10張起 即日速遞 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 52,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "display-posters",
    "locale": "en",
-   "title": "Display Posters Wall Art | Free Shipping $99+ | ZprintPro",
+   "title": "Display Posters Wall Art + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 57,
-   "len": 57,
-   "band": "LEGACY",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1414,17 +1484,22 @@
    "type": "sku",
    "slug": "art-posters",
    "locale": "zh-hk",
-   "title": "藝術海報 | 防水材質 即日速遞 | 智印港",
+   "title": "藝術海報印刷 高精度輸出 10張起 HK$16起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 53,
+   "len": 33,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1466,27 +1541,32 @@
    "type": "sku",
    "slug": "adhesive-posters",
    "locale": "zh-hk",
-   "title": "背膠海報 | 防水材質 即日速遞 | 智印港",
+   "title": "背膠海報印刷 即貼防水 10張起 HK$11起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "adhesive-posters",
    "locale": "en",
-   "title": "Adhesive Posters Wall Art | Free Shipping $99+ | ZprintPro",
+   "title": "Adhesive Posters Wall Art + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
-   "band": "LEGACY",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1498,11 +1578,11 @@
    "type": "sku",
    "slug": "adhesive-posters",
    "locale": "ja",
-   "title": "粘着ポスター | 防水 翌日配送 | ZprintPro",
+   "title": "粘着ポスター | 防水 翌日配送・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 40,
-   "len": 28,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1512,23 +1592,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "cosmetic-boxes",
    "locale": "zh-hk",
-   "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+   "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / | 智印港",
    "cat": "",
-   "equiv": 77,
-   "len": 50,
-   "band": "TRIM",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -1550,11 +1630,11 @@
    "type": "sku",
    "slug": "cosmetic-boxes",
    "locale": "ja",
-   "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
+   "title": "化粧品パッケージボックス 4 種類 100 個〜 | ZprintPro",
    "cat": "",
-   "equiv": 87,
-   "len": 55,
-   "band": "RED",
+   "equiv": 52,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1564,7 +1644,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "超格修剪"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1622,17 +1702,21 @@
    "type": "sku",
    "slug": "mailer-boxes",
    "locale": "zh-hk",
-   "title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港",
+   "title": "訂製郵寄盒 | 燙金 UV 100%訂製・多尺寸可選 | 智印港",
    "cat": "",
-   "equiv": 38,
-   "len": 26,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 50,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1674,17 +1758,22 @@
    "type": "sku",
    "slug": "folding-boxes",
    "locale": "zh-hk",
-   "title": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港",
+   "title": "折疊禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 31,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1726,17 +1815,22 @@
    "type": "sku",
    "slug": "rigid-boxes",
    "locale": "zh-hk",
-   "title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港",
+   "title": "精裝禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 31,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1814,11 +1908,11 @@
    "type": "sku",
    "slug": "foil-red-packets",
    "locale": "ja",
-   "title": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
+   "title": "箔押し年賀状 | 箔押し UV エンボス・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 45,
-   "len": 32,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -1828,23 +1922,27 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "embossed-red-packets",
    "locale": "zh-hk",
-   "title": "浮雕利是封 | 燙金 UV 壓紋 | 智印港",
+   "title": "浮雕利是封 | 燙金 UV 壓紋・免費送貨・即日速遞 | 智印港",
    "cat": "",
-   "equiv": 34,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -1886,21 +1984,23 @@
    "type": "sku",
    "slug": "custom-red-packets",
    "locale": "zh-hk",
-   "title": "custom red packets | 燙金 UV 壓紋 | 智印港",
+   "title": "custom red packets | 燙金 UV 壓紋・免費送貨 | 智印港",
    "cat": "",
-   "equiv": 42,
-   "len": 35,
-   "band": "FILL",
+   "equiv": 52,
+   "len": 40,
+   "band": "OK",
    "brandIssues": [
+    "日文假名污染",
     "简体字形污染"
    ],
    "pollution": [
+    "日文假名污染",
     "简体字形污染"
    ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2090,11 +2190,11 @@
    "type": "sku",
    "slug": "large-red-packets",
    "locale": "ja",
-   "title": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
+   "title": "大型年賀状 | 箔押し UV エンボス・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 43,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2104,7 +2204,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2166,17 +2266,21 @@
    "type": "sku",
    "slug": "desk-calendars",
    "locale": "zh-hk",
-   "title": "座檯年曆 | 企業禮品 多款式 | 智印港",
+   "title": "座檯年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2218,33 +2322,37 @@
    "type": "sku",
    "slug": "custom-calendars",
    "locale": "zh-hk",
-   "title": "定制年曆 | 企業禮品 多款式 | 智印港",
+   "title": "定制年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "custom-calendars",
    "locale": "en",
-   "title": "Custom Calendars | Free Shipping $99+ | ZprintPro",
+   "title": "Custom Calendars Wire-Bound from $3 | US | ZprintPro",
    "cat": "",
-   "equiv": 49,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -2362,11 +2470,11 @@
    "type": "sku",
    "slug": "photo-frame-calendars",
    "locale": "ja",
-   "title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "title": "フォトフレームカレンダー・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 38,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 31,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2382,17 +2490,21 @@
    "type": "sku",
    "slug": "magnetic-calendars",
    "locale": "zh-hk",
-   "title": "磁吸年曆 | 企業禮品 多款式 | 智印港",
+   "title": "磁吸年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2414,11 +2526,11 @@
    "type": "sku",
    "slug": "magnetic-calendars",
    "locale": "ja",
-   "title": "マグネットカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "title": "マグネットカレンダー・無料デザイン・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 36,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 33,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2434,17 +2546,21 @@
    "type": "sku",
    "slug": "pvc-menus",
    "locale": "zh-hk",
-   "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港",
+   "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起・免費送貨 | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 42,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 53,
+   "len": 33,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2466,11 +2582,11 @@
    "type": "sku",
    "slug": "pvc-menus",
    "locale": "ja",
-   "title": "PVC menu | 防水 ラミネート | ZprintPro",
+   "title": "PVC menu | 防水 ラミネート・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 38,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 52,
+   "len": 38,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2480,23 +2596,28 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "laminated-menus",
    "locale": "zh-hk",
-   "title": "過膠餐牌 | 防水 覆膜 50本起 | 智印港",
+   "title": "過膠餐牌印刷 防水覆膜 50本起 HK$12起 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2518,11 +2639,11 @@
    "type": "sku",
    "slug": "laminated-menus",
    "locale": "ja",
-   "title": "ラミネート menu | 防水 ラミネート | ZprintPro",
+   "title": "ラミネート menu | 防水 ラミネート・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 45,
-   "len": 33,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 37,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2532,23 +2653,28 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "hardcover-menus",
    "locale": "zh-hk",
-   "title": "精裝餐牌 | 防水 覆膜 50本起 | 智印港",
+   "title": "精裝餐牌印刷 防水覆膜 50本起 HK$18起 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2590,17 +2716,21 @@
    "type": "sku",
    "slug": "drink-menus",
    "locale": "zh-hk",
-   "title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港",
+   "title": "餐廳酒水牌 | 防水 覆膜 50本起・多尺寸可選 | 智印港",
    "cat": "",
-   "equiv": 38,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 50,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2662,27 +2792,27 @@
    "type": "sku",
    "slug": "disposable-menus",
    "locale": "en",
-   "title": "Disposable Menus | Free Shipping $99+ | ZprintPro",
+   "title": "Disposable Menus Paper Stock from $0.22 | | ZprintPro",
    "cat": "",
-   "equiv": 49,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "disposable-menus",
    "locale": "ja",
-   "title": "使い捨てメニュー | 防水 ラミネート | ZprintPro",
+   "title": "使い捨てメニュー | 防水 ラミネート・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 46,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2692,23 +2822,27 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "outdoor-vinyl-banners",
    "locale": "zh-hk",
-   "title": "戶外橫幅 | 鋁合金支架 高清 | 智印港",
+   "title": "戶外橫幅 | 鋁合金支架 高清・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2862,17 +2996,21 @@
    "type": "sku",
    "slug": "vehicle-wraps",
    "locale": "zh-hk",
-   "title": "汽車車身貼 | 車身廣告 全車包覆 | 智印港",
+   "title": "汽車車身貼 | 車身廣告 全車包覆・多尺寸可選 | 智印港",
    "cat": "",
-   "equiv": 39,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 29,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2914,17 +3052,21 @@
    "type": "sku",
    "slug": "mesh-banners",
    "locale": "zh-hk",
-   "title": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港",
+   "title": "網孔布易拉寶 | 鋁合金支架 高清・多尺寸可選 | 智印港",
    "cat": "",
-   "equiv": 39,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 51,
+   "len": 29,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -2966,17 +3108,22 @@
    "type": "sku",
    "slug": "catalog-printing",
    "locale": "zh-hk",
-   "title": "畫冊印刷 | 專業印刷 品質保證 | 智印港",
+   "title": "畫冊印刷 騎馬釘/膠裝 100本起 HK$9.5起 | 智印港・訂製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 52,
+   "len": 34,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3038,11 +3185,11 @@
    "type": "sku",
    "slug": "saddle-stitch-booklets",
    "locale": "en",
-   "title": "Saddle Stitch Booklets | Free Shipping $99+ | ZprintPro",
+   "title": "Saddle Stitch Booklets + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 55,
-   "len": 55,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3186,17 +3333,21 @@
    "type": "sku",
    "slug": "spiral-notebooks",
    "locale": "zh-hk",
-   "title": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港",
+   "title": "線圈筆記本 | 膠裝/騎馬釘 50本起・免費送貨 | 智印港",
    "cat": "",
-   "equiv": 40,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 50,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3238,17 +3389,21 @@
    "type": "sku",
    "slug": "business-envelopes",
    "locale": "zh-hk",
-   "title": "公司信封 | 雙面印刷 多規格 | 智印港",
+   "title": "公司信封 | 雙面印刷 多規格・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3270,11 +3425,11 @@
    "type": "sku",
    "slug": "business-envelopes",
    "locale": "ja",
-   "title": "会社封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "title": "会社封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 44,
-   "len": 30,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -3284,23 +3439,27 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "colored-envelopes",
    "locale": "zh-hk",
-   "title": "彩色信封 | 雙面印刷 多規格 | 智印港",
+   "title": "彩色信封 | 雙面印刷 多規格・免費送貨・2h 打稿 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3322,11 +3481,11 @@
    "type": "sku",
    "slug": "colored-envelopes",
    "locale": "ja",
-   "title": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "title": "カラー封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 46,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -3336,101 +3495,101 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "large-envelopes",
    "locale": "zh-hk",
-   "title": "大號信封 | 雙面印刷 多規格 | 智印港",
+   "title": "大號信封印刷 C4/DL 尺寸 100 個起 HK$0.60 起 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 21,
-   "band": "FILL",
+   "equiv": 52,
+   "len": 38,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "large-envelopes",
    "locale": "en",
-   "title": "Large Envelopes | Free Shipping $99+ | ZprintPro",
+   "title": "Large Envelopes C4/DL from $0.28 | Free US | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "large-envelopes",
    "locale": "ja",
-   "title": "大型封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "title": "大型封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 44,
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "sku",
+   "slug": "pearl-envelopes",
+   "locale": "zh-hk",
+   "title": "珍珠光信封印刷 珠光紙材質 100個起 即日報價 | 智印港",
+   "cat": "",
+   "equiv": 51,
    "len": 30,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "sku",
-   "slug": "pearl-envelopes",
-   "locale": "zh-hk",
-   "title": "珍珠光信封 | 雙面印刷 多規格 | 智印港",
-   "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "pearl-envelopes",
    "locale": "en",
-   "title": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
+   "title": "Pearl Envelopes Iridescent | Free US Ship | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "sku",
    "slug": "pearl-envelopes",
    "locale": "ja",
-   "title": "パール封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "title": "パール封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro",
    "cat": "",
-   "equiv": 46,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -3440,23 +3599,27 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "exercise-books",
    "locale": "zh-hk",
-   "title": "作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港",
+   "title": "作業簿印刷 | 膠裝/騎馬釘 50本起・免費送貨 | 智印港",
    "cat": "",
-   "equiv": 40,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 50,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3478,11 +3641,11 @@
    "type": "sku",
    "slug": "exercise-books",
    "locale": "ja",
-   "title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+   "title": "練習帳 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 43,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -3492,23 +3655,28 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "certificates",
    "locale": "zh-hk",
-   "title": "證書印刷 | 專業印刷 品質保證 | 智印港",
+   "title": "證書印刷 燙金徽章 50本起 專業品質 | 智印港・訂製・客製",
    "cat": "",
-   "equiv": 37,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 31,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3550,17 +3718,22 @@
    "type": "sku",
    "slug": "school-flyers",
    "locale": "zh-hk",
-   "title": "學校單張 | 雙面四色 100張起 | 智印港",
+   "title": "學校單張印刷 雙面四色 100張起 HK$0.35起 | 智印港・訂製",
    "cat": "",
-   "equiv": 36,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
+   "brandIssues": [
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -3638,11 +3811,11 @@
    "type": "sku",
    "slug": "textbooks",
    "locale": "ja",
-   "title": "教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+   "title": "教科書 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro",
    "cat": "",
-   "equiv": 43,
-   "len": 31,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -3652,33 +3825,37 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "magnetic-closure-gift-box",
    "locale": "zh-hk",
-   "title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港",
+   "title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨・訂製 | 智印港",
    "cat": "",
-   "equiv": 48,
-   "len": 29,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 54,
+   "len": 32,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "magnetic-closure-gift-box",
    "locale": "en",
-   "title": "Magnetic Closure Gift Box | Free Shipping $99+ | ZprintPro",
+   "title": "Magnetic Closure Gift Box + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
-   "band": "LEGACY",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3710,27 +3887,31 @@
    "type": "sku",
    "slug": "electronics-packaging-box",
    "locale": "zh-hk",
-   "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印港",
+   "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯・訂製 | 智印港",
    "cat": "",
-   "equiv": 46,
-   "len": 30,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 52,
+   "len": 33,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "electronics-packaging-box",
    "locale": "en",
-   "title": "Electronics Packaging Box | Free Shipping $99+ | ZprintPro",
+   "title": "Electronics Packaging Box + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
-   "band": "LEGACY",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3762,27 +3943,31 @@
    "type": "sku",
    "slug": "kraft-paper-packaging-box",
    "locale": "zh-hk",
-   "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印港",
+   "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸・免費送貨 | 智印港",
    "cat": "",
-   "equiv": 43,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
+   "equiv": 53,
+   "len": 30,
+   "band": "OK",
+   "brandIssues": [
+    "日文假名污染"
+   ],
+   "pollution": [
+    "日文假名污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "kraft-paper-packaging-box",
    "locale": "en",
-   "title": "Kraft Paper Packaging Box | Free Shipping $99+ | ZprintPro",
+   "title": "Kraft Paper Packaging Box + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
-   "band": "LEGACY",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3830,17 +4015,17 @@
    "type": "sku",
    "slug": "gang-run-card-boxes",
    "locale": "en",
-   "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
+   "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | ZprintPro",
    "cat": "",
-   "equiv": 90,
-   "len": 90,
-   "band": "RED",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "超格修剪"
+   "action": "OK"
   },
   {
    "type": "sku",
@@ -3866,15 +4051,12 @@
    "type": "sku",
    "slug": "doujinshi-printing",
    "locale": "zh-hk",
-   "title": "同人誌印刷 10本起印 | Comiket前24小時特急対応",
+   "title": "同人誌印刷 10本起印 | Comiket前24小時特急対応 | 智印港",
    "cat": "",
-   "equiv": 45,
-   "len": 30,
-   "band": "FILL",
+   "equiv": 54,
+   "len": 36,
+   "band": "OK",
    "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾",
     "简体字形污染"
    ],
    "pollution": [
@@ -3883,17 +4065,17 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "doujinshi-printing",
    "locale": "en",
-   "title": "Doujinshi Printing Comiket | Free Shipping $99+ | ZprintPro",
+   "title": "Doujinshi Printing Comiket + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 59,
-   "len": 59,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3945,11 +4127,11 @@
    "type": "sku",
    "slug": "acrylic-keychain",
    "locale": "en",
-   "title": "Acrylic Keychain VTuber | Free Shipping $99+ | ZprintPro",
+   "title": "Acrylic Keychain VTuber + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 56,
-   "band": "LEGACY",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3961,16 +4143,17 @@
    "type": "sku",
    "slug": "acrylic-keychain",
    "locale": "ja",
-   "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
+   "title": "アクリルキーホルダー キャラクター形 推し活 | ZprintPro",
    "cat": "",
-   "equiv": 57,
-   "len": 32,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 34,
+   "band": "OK",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -3980,15 +4163,12 @@
    "type": "sku",
    "slug": "can-badge",
    "locale": "zh-hk",
-   "title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備",
+   "title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 33,
-   "band": "FILL",
+   "equiv": 53,
+   "len": 39,
+   "band": "OK",
    "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾",
     "日文假名污染",
     "简体字形污染"
    ],
@@ -3999,17 +4179,17 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "can-badge",
    "locale": "en",
-   "title": "Can Badges 57mm & 76mm | Free Shipping $99+ | ZprintPro",
+   "title": "Can Badges 57mm & 76mm + Free 2h Proof | ZprintPro",
    "cat": "",
-   "equiv": 55,
-   "len": 55,
-   "band": "LEGACY",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -4061,11 +4241,11 @@
    "type": "sku",
    "slug": "postcard-set",
    "locale": "en",
-   "title": "Washi Postcard Sets 4-8 pcs | Free Shipping $99+ | ZprintPro",
+   "title": "Washi Postcard Sets 4-8 pcs + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -4097,36 +4277,31 @@
    "type": "sku",
    "slug": "eco-tote-bag",
    "locale": "zh-hk",
-   "title": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選",
+   "title": "環保托特袋 有機棉布 100% 推し活場售 10個起 | 智印港",
    "cat": "",
-   "equiv": 48,
-   "len": 33,
-   "band": "FILL",
+   "equiv": 51,
+   "len": 32,
+   "band": "OK",
    "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾",
-    "日文假名污染",
-    "简体字形污染"
+    "日文假名污染"
    ],
    "pollution": [
-    "日文假名污染",
-    "简体字形污染"
+    "日文假名污染"
    ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
    "slug": "eco-tote-bag",
    "locale": "en",
-   "title": "Organic Cotton Eco Tote Bag | Free Shipping $99+ | ZprintPro",
+   "title": "Organic Cotton Eco Tote Bag + Custom Sizes | ZprintPro",
    "cat": "",
-   "equiv": 60,
-   "len": 60,
-   "band": "LEGACY",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -4189,11 +4364,11 @@
    "type": "sku",
    "slug": "graduation-yearbook",
    "locale": "ja",
-   "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+   "title": "卒業記念アルバム印刷 50 冊〜・無料デザイン | ZprintPro",
    "cat": "",
-   "equiv": 69,
-   "len": 47,
-   "band": "TRIM",
+   "equiv": 54,
+   "len": 35,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -4203,7 +4378,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "sku",
@@ -4633,16 +4808,12 @@
    "type": "blog",
    "slug": "sticker-buying-guide",
    "locale": "zh-hk",
-   "title": "貼紙印刷選購完全指南：材質、形狀、用途全解析",
+   "title": "貼紙印刷選購完全指南：材質、形狀、用途全解析 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 22,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4653,35 +4824,33 @@
    "type": "blog",
    "slug": "sticker-buying-guide",
    "locale": "en",
-   "title": "Sticker Buying Guide: Materials, Shapes & Applications Explained",
+   "title": "Sticker Buying Guide | ZprintPro",
    "cat": "",
-   "equiv": 64,
-   "len": 64,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "equiv": 32,
+   "len": 32,
+   "band": "FILL",
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "补满 50-54"
   },
   {
    "type": "blog",
    "slug": "sticker-buying-guide",
    "locale": "ja",
-   "title": "ステッカー印刷選び方完全ガイド：材質、形状、用途を徹底解説",
+   "title": "ステッカー印刷選び方完全ガイド：材質、形状、用途を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 29,
+   "equiv": 70,
+   "len": 41,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -4691,16 +4860,12 @@
    "type": "blog",
    "slug": "flyer-buying-guide",
    "locale": "zh-hk",
-   "title": "傳單印刷選購完全指南：尺寸、紙質、摺法全攻略",
+   "title": "傳單印刷選購完全指南：尺寸、紙質、摺法全攻略 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 22,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4730,16 +4895,17 @@
    "type": "blog",
    "slug": "flyer-buying-guide",
    "locale": "ja",
-   "title": "チラシ印刷選び方完全ガイド：サイズ、用紙、折り方を徹底解説",
+   "title": "チラシ印刷選び方完全ガイド：サイズ、用紙、折り方を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 29,
+   "equiv": 70,
+   "len": 41,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -4749,16 +4915,12 @@
    "type": "blog",
    "slug": "packaging-buying-guide",
    "locale": "zh-hk",
-   "title": "包裝盒印刷選購完全指南：盒型、材質、工藝一次搞懂",
+   "title": "包裝盒印刷選購完全指南：盒型、材質、工藝一次搞懂 | 智印港",
    "cat": "",
-   "equiv": 48,
-   "len": 24,
+   "equiv": 57,
+   "len": 30,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4788,16 +4950,17 @@
    "type": "blog",
    "slug": "packaging-buying-guide",
    "locale": "ja",
-   "title": "パッケージ箱選び方完全ガイド：箱型、材質、加工を徹底解説",
+   "title": "パッケージ箱選び方完全ガイド：箱型、材質、加工を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 28,
+   "equiv": 68,
+   "len": 40,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -4807,16 +4970,12 @@
    "type": "blog",
    "slug": "poster-buying-guide",
    "locale": "zh-hk",
-   "title": "海報印刷選購完全指南：尺寸、紙質、用途全解析",
+   "title": "海報印刷選購完全指南：尺寸、紙質、用途全解析 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 22,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4846,16 +5005,17 @@
    "type": "blog",
    "slug": "poster-buying-guide",
    "locale": "ja",
-   "title": "ポスター印刷選び方完全ガイド：サイズ、用紙、用途を徹底解説",
+   "title": "ポスター印刷選び方完全ガイド：サイズ、用紙、用途を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 29,
+   "equiv": 70,
+   "len": 41,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -4865,16 +5025,12 @@
    "type": "blog",
    "slug": "paper-bag-buying-guide",
    "locale": "zh-hk",
-   "title": "紙袋印刷選購完全指南：紙質、尺寸、手挽全攻略",
+   "title": "紙袋印刷選購完全指南：紙質、尺寸、手挽全攻略 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 22,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4904,16 +5060,17 @@
    "type": "blog",
    "slug": "paper-bag-buying-guide",
    "locale": "ja",
-   "title": "紙袋印刷選び方完全ガイド：材質、サイズ、持ち手を徹底解説",
+   "title": "紙袋印刷選び方完全ガイド：材質、サイズ、持ち手を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 28,
+   "equiv": 68,
+   "len": 40,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -4923,16 +5080,12 @@
    "type": "blog",
    "slug": "banner-buying-guide",
    "locale": "zh-hk",
-   "title": "噴繪廣告選購完全指南：X展架、易拉寶、背景板全攻略",
+   "title": "噴繪廣告選購完全指南：X展架、易拉寶、背景板全攻略 | 智印港",
    "cat": "",
-   "equiv": 49,
-   "len": 25,
+   "equiv": 58,
+   "len": 31,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -4962,35 +5115,32 @@
    "type": "blog",
    "slug": "banner-buying-guide",
    "locale": "ja",
-   "title": "バナー印刷選び方完全ガイド：Xスタンド、ロールアップ、背景板を徹底解説",
+   "title": "バナー印刷選び方完全ガイド：Xスタンド、ロールアップ、背景板を徹底解説｜香港印刷ガイド | ZprintPro",
    "cat": "",
-   "equiv": 69,
-   "len": 35,
-   "band": "FILL",
+   "equiv": 97,
+   "len": 55,
+   "band": "OK",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "book-buying-guide",
    "locale": "zh-hk",
-   "title": "書籍印刷選購完全指南：裝訂方式、紙張、封面工藝全攻略",
+   "title": "書籍印刷選購完全指南：裝訂方式、紙張、封面工藝全攻略 | 智印港",
    "cat": "",
-   "equiv": 52,
-   "len": 26,
+   "equiv": 61,
+   "len": 32,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5020,16 +5170,17 @@
    "type": "blog",
    "slug": "book-buying-guide",
    "locale": "ja",
-   "title": "書籍印刷選び方完全ガイド：製本方式、紙、表紙加工を徹底解説",
+   "title": "書籍印刷選び方完全ガイド：製本方式、紙、表紙加工を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 29,
+   "equiv": 70,
+   "len": 41,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5039,16 +5190,12 @@
    "type": "blog",
    "slug": "menu-buying-guide",
    "locale": "zh-hk",
-   "title": "餐牌印刷選購完全指南：材質、工藝、耐用度全攻略",
+   "title": "餐牌印刷選購完全指南：材質、工藝、耐用度全攻略 | 智印港",
    "cat": "",
-   "equiv": 46,
-   "len": 23,
+   "equiv": 55,
+   "len": 29,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5078,16 +5225,17 @@
    "type": "blog",
    "slug": "menu-buying-guide",
    "locale": "ja",
-   "title": "メニュー印刷選び方完全ガイド：材質、加工、耐久性を徹底解説",
+   "title": "メニュー印刷選び方完全ガイド：材質、加工、耐久性を徹底解説 | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 29,
+   "equiv": 70,
+   "len": 41,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5097,13 +5245,13 @@
    "type": "blog",
    "slug": "company-intro",
    "locale": "zh-hk",
-   "title": "智印港印刷公司簡介：專業設備與一站式印刷服務",
+   "title": "智印港印刷公司簡介：專業設備與一站式印刷服務 | 智印港",
    "cat": "",
-   "equiv": 44,
-   "len": 22,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
    "brandIssues": [
-    "品牌不在末尾"
+    "品牌非一次"
    ],
    "pollution": [],
    "bcHit": false,
@@ -5115,11 +5263,11 @@
    "type": "blog",
    "slug": "company-intro",
    "locale": "en",
-   "title": "About ZprintPro: Professional Equipment & One-Stop Printing Services",
+   "title": "About ZprintPro: Professional Equipment & One-Stop Printing",
    "cat": "",
-   "equiv": 68,
-   "len": 68,
-   "band": "TRIM",
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [
     "品牌不在末尾"
    ],
@@ -5127,19 +5275,18 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "company-intro",
    "locale": "ja",
-   "title": "ZprintPro会社概要：専門設備とワンストップ印刷サービス",
+   "title": "ZprintPro会社概要：専門設備とワンストップ印刷サービス | ZprintPro",
    "cat": "",
-   "equiv": 53,
-   "len": 31,
+   "equiv": 65,
+   "len": 43,
    "band": "FILL",
    "brandIssues": [
-    "品牌不在末尾",
     "简体污染"
    ],
    "pollution": [
@@ -5154,55 +5301,49 @@
    "type": "blog",
    "slug": "sticker-guide",
    "locale": "zh-hk",
-   "title": "香港貼紙印刷完全指南：材質、工藝與應用場景詳解",
+   "title": "香港貼紙印刷完全指南：材質、工藝與應用場景詳解 | 智印港",
    "cat": "",
-   "equiv": 46,
-   "len": 23,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "sticker-guide",
-   "locale": "en",
-   "title": "Complete Sticker Printing Guide: Materials, Finishes & Applications",
-   "cat": "",
-   "equiv": 67,
-   "len": 67,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "sticker-guide",
-   "locale": "ja",
-   "title": "香港ステッカー印刷完全ガイド：材質、加工、応用シーンを詳解",
-   "cat": "",
-   "equiv": 58,
+   "equiv": 55,
    "len": 29,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "sticker-guide",
+   "locale": "en",
+   "title": "Complete Sticker Printing Guide | ZprintPro",
+   "cat": "",
+   "equiv": 43,
+   "len": 43,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "sticker-guide",
+   "locale": "ja",
+   "title": "香港ステッカー印刷完全ガイド：材質、加工、応用シーンを詳解 | ZprintPro",
+   "cat": "",
+   "equiv": 70,
+   "len": 41,
+   "band": "FILL",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5212,16 +5353,12 @@
    "type": "blog",
    "slug": "sticker-design",
    "locale": "zh-hk",
-   "title": "貼紙設計的10個黃金法則：打造令人難忘的品牌形象",
+   "title": "貼紙設計的10個黃金法則：打造令人難忘的品牌形象 | 智印港",
    "cat": "",
-   "equiv": 46,
-   "len": 24,
+   "equiv": 55,
+   "len": 30,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5232,15 +5369,12 @@
    "type": "blog",
    "slug": "sticker-design",
    "locale": "en",
-   "title": "10 Golden Rules for Sticker Design",
+   "title": "10 Golden Rules for Sticker Design | ZprintPro",
    "cat": "",
-   "equiv": 34,
-   "len": 34,
+   "equiv": 46,
+   "len": 46,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5251,16 +5385,17 @@
    "type": "blog",
    "slug": "sticker-design",
    "locale": "ja",
-   "title": "ステッカーデザインの10の黄金法則：印象に残るブランドイメージを作る",
+   "title": "ステッカーデザインの10の黄金法則：印象に残るブランドイメージを作る | ZprintPro",
    "cat": "",
-   "equiv": 66,
-   "len": 34,
+   "equiv": 78,
+   "len": 46,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5270,16 +5405,12 @@
    "type": "blog",
    "slug": "packaging-trends",
    "locale": "zh-hk",
-   "title": "2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出",
+   "title": "2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出 | 智印港",
    "cat": "",
-   "equiv": 46,
-   "len": 25,
+   "equiv": 55,
+   "len": 31,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5290,15 +5421,12 @@
    "type": "blog",
    "slug": "packaging-trends",
    "locale": "en",
-   "title": "2024 Packaging Design Trends Analysis",
+   "title": "2024 Packaging Design Trends Analysis | ZprintPro",
    "cat": "",
-   "equiv": 37,
-   "len": 37,
+   "equiv": 49,
+   "len": 49,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5309,35 +5437,32 @@
    "type": "blog",
    "slug": "packaging-trends",
    "locale": "ja",
-   "title": "2024パッケージボックスデザイントレンド解析",
+   "title": "2024パッケージボックスデザイントレンド解析 | ZprintPro",
+   "cat": "",
+   "equiv": 54,
+   "len": 35,
+   "band": "FILL",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "cmyk-guide",
+   "locale": "zh-hk",
+   "title": "CMYK vs RGB：印刷色彩模式完全詳解 | 智印港",
    "cat": "",
    "equiv": 42,
-   "len": 23,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "cmyk-guide",
-   "locale": "zh-hk",
-   "title": "CMYK vs RGB：印刷色彩模式完全詳解",
-   "cat": "",
-   "equiv": 33,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5348,35 +5473,33 @@
    "type": "blog",
    "slug": "cmyk-guide",
    "locale": "en",
-   "title": "CMYK vs RGB: Complete Guide to Print Color Modes",
+   "title": "CMYK vs RGB: Complete Guide to Print Color Modes | ZprintPro",
    "cat": "",
-   "equiv": 48,
-   "len": 48,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
    "slug": "cmyk-guide",
    "locale": "ja",
-   "title": "CMYK vs RGB：印刷カラーモード完全詳解",
+   "title": "CMYK vs RGB：印刷カラーモード完全詳解 | ZprintPro",
    "cat": "",
-   "equiv": 37,
-   "len": 24,
+   "equiv": 49,
+   "len": 36,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5386,16 +5509,12 @@
    "type": "blog",
    "slug": "paper-materials",
    "locale": "zh-hk",
-   "title": "印刷紙材選擇指南：從銅版紙到特種紙",
+   "title": "印刷紙材選擇指南：從銅版紙到特種紙 | 智印港",
    "cat": "",
-   "equiv": 34,
-   "len": 17,
+   "equiv": 43,
+   "len": 23,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5425,16 +5544,17 @@
    "type": "blog",
    "slug": "paper-materials",
    "locale": "ja",
-   "title": "印刷紙材選択ガイド：コート紙から特殊紙まで",
+   "title": "印刷紙材選択ガイド：コート紙から特殊紙まで | ZprintPro",
    "cat": "",
-   "equiv": 42,
-   "len": 21,
+   "equiv": 54,
+   "len": 33,
    "band": "FILL",
    "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
+    "简体污染"
    ],
-   "pollution": [],
+   "pollution": [
+    "简体污染"
+   ],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -5444,16 +5564,12 @@
    "type": "blog",
    "slug": "eco-printing",
    "locale": "zh-hk",
-   "title": "環保印刷：企業ESG與可持續包裝的未來",
+   "title": "環保印刷：企業ESG與可持續包裝的未來 | 智印港",
    "cat": "",
-   "equiv": 35,
-   "len": 19,
+   "equiv": 44,
+   "len": 25,
    "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
@@ -5483,536 +5599,48 @@
    "type": "blog",
    "slug": "eco-printing",
    "locale": "ja",
-   "title": "エコ印刷：企業のESGと持続可能なパッケージの未来",
+   "title": "エコ印刷：企業のESGと持続可能なパッケージの未来 | ZprintPro",
    "cat": "",
-   "equiv": 47,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "hong-kong-printing-guide",
-   "locale": "zh-hk",
-   "title": "香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？",
-   "cat": "",
-   "equiv": 54,
-   "len": 27,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "hong-kong-printing-guide",
-   "locale": "en",
-   "title": "Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day",
-   "cat": "",
-   "equiv": 102,
-   "len": 102,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "hong-kong-printing-guide",
-   "locale": "ja",
-   "title": "オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro",
-   "cat": "",
-   "equiv": 84,
-   "len": 48,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "design-file-specs",
-   "locale": "zh-hk",
-   "title": "印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂",
-   "cat": "",
-   "equiv": 50,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "design-file-specs",
-   "locale": "en",
-   "title": "Print File Design Specifications: Bleed, Resolution & Color Modes",
-   "cat": "",
-   "equiv": 65,
-   "len": 65,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "design-file-specs",
-   "locale": "ja",
-   "title": "印刷ファイルデザイン仕様",
-   "cat": "",
-   "equiv": 24,
-   "len": 12,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "brand-materials-checklist",
-   "locale": "zh-hk",
-   "title": "企業品牌物料清單：從貼紙到展架的全套印刷方案",
-   "cat": "",
-   "equiv": 44,
-   "len": 22,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "brand-materials-checklist",
-   "locale": "en",
-   "title": "Corporate Brand Materials Checklist: From Stickers to Displays",
-   "cat": "",
-   "equiv": 62,
-   "len": 62,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "brand-materials-checklist",
-   "locale": "ja",
-   "title": "企業ブランド資材チェックリスト：ステッカーから展示パネルまで",
-   "cat": "",
-   "equiv": 60,
-   "len": 30,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "mtr-advertising-specs",
-   "locale": "zh-hk",
-   "title": "港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南",
-   "cat": "",
-   "equiv": 54,
-   "len": 27,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "mtr-advertising-specs",
-   "locale": "en",
-   "title": "Event Poster & Trade Show Print Specs for US B2B | Sizes, Paper, Finishes, FedEx 2-Day",
-   "cat": "",
-   "equiv": 86,
-   "len": 86,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "mtr-advertising-specs",
-   "locale": "ja",
-   "title": "イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro",
-   "cat": "",
-   "equiv": 76,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "flyer-printing-guide",
-   "locale": "zh-hk",
-   "title": "香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略",
-   "cat": "",
-   "equiv": 50,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "flyer-printing-guide",
-   "locale": "en",
-   "title": "Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99+",
-   "cat": "",
-   "equiv": 92,
-   "len": 92,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "flyer-printing-guide",
-   "locale": "ja",
-   "title": "オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応",
-   "cat": "",
-   "equiv": 75,
-   "len": 39,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "food-packaging-printing-guide",
-   "locale": "zh-hk",
-   "title": "食品包裝印刷完全指南：材質、安全、法規與設計實務",
-   "cat": "",
-   "equiv": 48,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "food-packaging-printing-guide",
-   "locale": "en",
-   "title": "Food Packaging Printing Guide: Materials, Safety & Compliance",
-   "cat": "",
-   "equiv": 61,
-   "len": 61,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "food-packaging-printing-guide",
-   "locale": "ja",
-   "title": "食品パッケージ印刷完全ガイド：材質、安全性、法規制とデザイン実務",
-   "cat": "",
-   "equiv": 64,
-   "len": 32,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "paper-bag-printing-guide",
-   "locale": "zh-hk",
-   "title": "香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢",
-   "cat": "",
-   "equiv": 48,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "paper-bag-printing-guide",
-   "locale": "en",
-   "title": "Paper Bag Printing Guide: Materials, Sizes, Handles & Design Trends",
-   "cat": "",
-   "equiv": 67,
-   "len": 67,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "paper-bag-printing-guide",
-   "locale": "ja",
-   "title": "オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応",
-   "cat": "",
-   "equiv": 81,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "saddle-stitch-booklet-printing-guide",
-   "locale": "zh-hk",
-   "title": "騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學",
-   "cat": "",
-   "equiv": 55,
-   "len": 30,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "saddle-stitch-booklet-printing-guide",
-   "locale": "en",
-   "title": "Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pricing & Low MOQ",
-   "cat": "",
-   "equiv": 74,
-   "len": 74,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "saddle-stitch-booklet-printing-guide",
-   "locale": "ja",
-   "title": "中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 50冊から対応",
-   "cat": "",
-   "equiv": 69,
-   "len": 39,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-printing-guide",
-   "locale": "zh-hk",
-   "title": "香港海報印刷完全指南：尺寸、紙質、工藝與設計要點",
-   "cat": "",
-   "equiv": 48,
-   "len": 24,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-printing-guide",
-   "locale": "en",
-   "title": "Custom Poster Printing Guide for US Events & Retail: Sizes, Paper, Finishes | Free Shipping",
-   "cat": "",
-   "equiv": 91,
-   "len": 91,
-   "band": "TRIM",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-printing-guide",
-   "locale": "ja",
-   "title": "オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応",
-   "cat": "",
-   "equiv": 71,
+   "equiv": 59,
    "len": 37,
    "band": "FILL",
    "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "hong-kong-printing-guide",
+   "locale": "zh-hk",
+   "title": "香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？ | 智印港",
+   "cat": "",
+   "equiv": 63,
+   "len": 33,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "hong-kong-printing-guide",
+   "locale": "en",
+   "title": "Custom Sticker & Packaging Printing Guide for US Small",
+   "cat": "",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
    ],
@@ -6020,53 +5648,17 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
-   "slug": "packaging-box-custom-guide",
-   "locale": "zh-hk",
-   "title": "香港包裝盒訂製完全指南：盒型、材質、工藝與預算控制",
-   "cat": "",
-   "equiv": 50,
-   "len": 25,
-   "band": "FILL",
-   "brandIssues": [
-    "缺品牌 智印港",
-    "品牌非一次",
-    "品牌不在末尾"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "packaging-box-custom-guide",
-   "locale": "en",
-   "title": "Custom Packaging Box Guide 2026: 6 Box Styles, Materials & Finishes Compared | ZprintPro",
-   "cat": "",
-   "equiv": 88,
-   "len": 88,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "packaging-box-custom-guide",
+   "slug": "hong-kong-printing-guide",
    "locale": "ja",
-   "title": "パッケージ箱カスタム完全ガイド2026：6つの箱型・素材・加工を徹底比較 | ZprintPro",
+   "title": "オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 79,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 96,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6076,24 +5668,35 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "design-file-specs",
+   "locale": "zh-hk",
+   "title": "印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂 | 智印港",
+   "cat": "",
+   "equiv": 59,
+   "len": 31,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
    "action": "补满 50-54"
   },
   {
    "type": "blog",
-   "slug": "cross-border-ecommerce-shipping-box-guide",
-   "locale": "zh-hk",
-   "title": "跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印港 ZprintPro",
+   "slug": "design-file-specs",
+   "locale": "en",
+   "title": "Print File Design Specifications | ZprintPro",
    "cat": "",
-   "equiv": 63,
+   "equiv": 44,
    "len": 44,
    "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "简体字形污染"
-   ],
+   "brandIssues": [],
+   "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -6101,28 +5704,12 @@
   },
   {
    "type": "blog",
-   "slug": "cross-border-ecommerce-shipping-box-guide",
-   "locale": "en",
-   "title": "Cross-Border E-commerce Shipping Box Guide: DHL 2-4 Day Global Delivery | ZprintPro",
-   "cat": "",
-   "equiv": 83,
-   "len": 83,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "cross-border-ecommerce-shipping-box-guide",
+   "slug": "design-file-specs",
    "locale": "ja",
-   "title": "越境EC配送箱カスタムガイド：DHL 2-4日グローバル配送 | ZprintPro",
+   "title": "印刷ファイルデザイン仕様 | ZprintPro",
    "cat": "",
-   "equiv": 63,
-   "len": 42,
+   "equiv": 36,
+   "len": 24,
    "band": "FILL",
    "brandIssues": [
     "简体污染"
@@ -6137,20 +5724,15 @@
   },
   {
    "type": "blog",
-   "slug": "cosmetics-packaging-box-printing-guide",
+   "slug": "brand-materials-checklist",
    "locale": "zh-hk",
-   "title": "化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro",
+   "title": "企業品牌物料清單：從貼紙到展架的全套印刷方案 | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 41,
+   "equiv": 53,
+   "len": 28,
    "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "简体字形污染"
-   ],
+   "brandIssues": [],
+   "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
@@ -6158,25 +5740,25 @@
   },
   {
    "type": "blog",
-   "slug": "cosmetics-packaging-box-printing-guide",
+   "slug": "brand-materials-checklist",
    "locale": "en",
-   "title": "Custom Cosmetics Packaging Box Guide: Materials, Structure & Branding | ZprintPro",
+   "title": "Corporate Brand Materials Checklist | ZprintPro",
    "cat": "",
-   "equiv": 81,
-   "len": 81,
-   "band": "TRIM",
+   "equiv": 47,
+   "len": 47,
+   "band": "FILL",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "补满 50-54"
   },
   {
    "type": "blog",
-   "slug": "cosmetics-packaging-box-printing-guide",
+   "slug": "brand-materials-checklist",
    "locale": "ja",
-   "title": "化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro",
+   "title": "企業ブランド資材チェックリスト：ステッカーから展示パネルまで | ZprintPro",
    "cat": "",
    "equiv": 72,
    "len": 42,
@@ -6194,15 +5776,508 @@
   },
   {
    "type": "blog",
+   "slug": "mtr-advertising-specs",
+   "locale": "zh-hk",
+   "title": "港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南 | 智印港",
+   "cat": "",
+   "equiv": 63,
+   "len": 33,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "mtr-advertising-specs",
+   "locale": "en",
+   "title": "Event Poster & Trade Show Print Specs for US B2B | Sizes",
+   "cat": "",
+   "equiv": 56,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "mtr-advertising-specs",
+   "locale": "ja",
+   "title": "イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 88,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "flyer-printing-guide",
+   "locale": "zh-hk",
+   "title": "香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略 | 智印港",
+   "cat": "",
+   "equiv": 59,
+   "len": 31,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "flyer-printing-guide",
+   "locale": "en",
+   "title": "Custom Flyer Printing Guide for US Small Business: Sizes",
+   "cat": "",
+   "equiv": 56,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "flyer-printing-guide",
+   "locale": "ja",
+   "title": "オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応 | ZprintPro",
+   "cat": "",
+   "equiv": 87,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "food-packaging-printing-guide",
+   "locale": "zh-hk",
+   "title": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+   "cat": "",
+   "equiv": 57,
+   "len": 30,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "food-packaging-printing-guide",
+   "locale": "en",
+   "title": "Food Packaging Printing Guide | ZprintPro",
+   "cat": "",
+   "equiv": 41,
+   "len": 41,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "food-packaging-printing-guide",
+   "locale": "ja",
+   "title": "食品パッケージ印刷完全ガイド：材質、安全性、法規制とデザイン実務｜香港印刷ガイド | ZprintPro",
+   "cat": "",
+   "equiv": 92,
+   "len": 52,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "paper-bag-printing-guide",
+   "locale": "zh-hk",
+   "title": "香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢 | 智印港",
+   "cat": "",
+   "equiv": 57,
+   "len": 30,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "paper-bag-printing-guide",
+   "locale": "en",
+   "title": "Paper Bag Printing Guide | ZprintPro",
+   "cat": "",
+   "equiv": 36,
+   "len": 36,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "paper-bag-printing-guide",
+   "locale": "ja",
+   "title": "オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応 | ZprintPro",
+   "cat": "",
+   "equiv": 93,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "locale": "zh-hk",
+   "title": "騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學 | 智印港",
+   "cat": "",
+   "equiv": 64,
+   "len": 36,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "locale": "en",
+   "title": "Saddle Stitch Booklet Printing Guide 2026 | ZprintPro",
+   "cat": "",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "OK"
+  },
+  {
+   "type": "blog",
+   "slug": "saddle-stitch-booklet-printing-guide",
+   "locale": "ja",
+   "title": "中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 50冊から対応 | ZprintPro",
+   "cat": "",
+   "equiv": 81,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-guide",
+   "locale": "zh-hk",
+   "title": "香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港",
+   "cat": "",
+   "equiv": 57,
+   "len": 30,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-guide",
+   "locale": "en",
+   "title": "Custom Poster Printing Guide for US Events & Retail",
+   "cat": "",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-guide",
+   "locale": "ja",
+   "title": "オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応｜香港印刷ガイド | ZprintPro",
+   "cat": "",
+   "equiv": 99,
+   "len": 57,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "packaging-box-custom-guide",
+   "locale": "zh-hk",
+   "title": "香港包裝盒訂製完全指南：盒型、材質、工藝與預算控制 | 智印港",
+   "cat": "",
+   "equiv": 59,
+   "len": 31,
+   "band": "FILL",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "packaging-box-custom-guide",
+   "locale": "en",
+   "title": "Custom Packaging Box Guide 2026: 6 Box Styles, Materials &",
+   "cat": "",
+   "equiv": 58,
+   "len": 58,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "packaging-box-custom-guide",
+   "locale": "ja",
+   "title": "パッケージ箱カスタム完全ガイド2026：6つの箱型・素材・加工を徹底比較 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 91,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cross-border-ecommerce-shipping-box-guide",
+   "locale": "zh-hk",
+   "title": "跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 72,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cross-border-ecommerce-shipping-box-guide",
+   "locale": "en",
+   "title": "Cross-Border E-commerce Shipping Box Guide | ZprintPro",
+   "cat": "",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "OK"
+  },
+  {
+   "type": "blog",
+   "slug": "cross-border-ecommerce-shipping-box-guide",
+   "locale": "ja",
+   "title": "越境EC配送箱カスタムガイド：DHL 2-4日グローバル配送 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 75,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "locale": "zh-hk",
+   "title": "化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
+   "cat": "",
+   "equiv": 89,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "locale": "en",
+   "title": "Custom Cosmetics Packaging Box Guide: Materials, Structure &",
+   "cat": "",
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "locale": "ja",
+   "title": "化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 84,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
    "slug": "tea-beverage-gift-box-printing-guide",
    "locale": "zh-hk",
-   "title": "香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港 ZprintPro",
+   "title": "香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 70,
-   "len": 43,
-   "band": "FILL",
+   "equiv": 93,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6211,23 +6286,23 @@
    "bcHit": false,
    "insightHit": true,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "tea-beverage-gift-box-printing-guide",
    "locale": "en",
-   "title": "Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce Brands | ZprintPro",
+   "title": "Tea & Beverage Gift Box Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 94,
-   "len": 94,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6253,13 +6328,13 @@
    "type": "blog",
    "slug": "wedding-favor-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印港 ZprintPro",
+   "title": "香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 70,
-   "len": 47,
-   "band": "FILL",
+   "equiv": 79,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6268,23 +6343,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-favor-bag-printing-guide",
    "locale": "en",
-   "title": "Wedding Favor Bag & Invitation Printing Guide 2026: Materials, Sizes & Personalization | ZprintPro",
+   "title": "Wedding Favor Bag & Invitation Printing Guide 2026",
    "cat": "",
-   "equiv": 98,
-   "len": 98,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6310,11 +6388,11 @@
    "type": "blog",
    "slug": "wedding-invitation-pricing-guide",
    "locale": "zh-hk",
-   "title": "喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔實價 + 材質工藝全對比 | 智印港 ZprintPro",
+   "title": "喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔實價 + 材質工藝全對比 | 智印港 ZprintP",
    "cat": "",
-   "equiv": 90,
-   "len": 62,
-   "band": "TRIM",
+   "equiv": 88,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "品牌不在末尾",
     "简体字形污染"
@@ -6325,23 +6403,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-invitation-pricing-guide",
    "locale": "en",
-   "title": "Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs, Materials & Finishing Costs Compared | ZprintPro",
+   "title": "Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs",
    "cat": "",
-   "equiv": 106,
-   "len": 106,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 56,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6390,17 +6471,20 @@
    "type": "blog",
    "slug": "wedding-invitation-cost-guide",
    "locale": "en",
-   "title": "Wedding Invitation Cost Guide 2026: Real Pricing for 50-500 Piece Runs, Budget Breakdown & Savings Tips | ZprintPro",
+   "title": "Wedding Invitation Cost Guide 2026: Real Pricing for 50-500",
    "cat": "",
-   "equiv": 115,
-   "len": 115,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6447,17 +6531,20 @@
    "type": "blog",
    "slug": "wedding-table-card-printing-guide",
    "locale": "en",
-   "title": "Wedding Table Card & Seating Chart Printing Guide 2026: 100-500 Piece Pricing, Materials & Design | ZprintPro",
+   "title": "Wedding Table Card & Seating Chart Printing Guide 2026",
    "cat": "",
-   "equiv": 109,
-   "len": 109,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6483,13 +6570,13 @@
    "type": "blog",
    "slug": "retail-shop-poster-printing-guide",
    "locale": "zh-hk",
-   "title": "香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印港 ZprintPro",
+   "title": "香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 67,
-   "len": 44,
-   "band": "FILL",
+   "equiv": 76,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6498,23 +6585,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "retail-shop-poster-printing-guide",
    "locale": "en",
-   "title": "Retail Shop Poster Printing Guide 2026: Sizes, Paper & Display Tips | ZprintPro",
+   "title": "Retail Shop Poster Printing Guide 2026 | ZprintPro",
    "cat": "",
-   "equiv": 79,
-   "len": 79,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6540,13 +6627,13 @@
    "type": "blog",
    "slug": "restaurant-menu-printing-guide",
    "locale": "zh-hk",
-   "title": "香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港 ZprintPro",
+   "title": "香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 67,
-   "len": 44,
-   "band": "FILL",
+   "equiv": 76,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6555,33 +6642,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "restaurant-menu-printing-guide",
    "locale": "en",
-   "title": "Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro",
+   "title": "Restaurant Menu Printing Guide 2026: Waterproof, Fold &",
    "cat": "",
-   "equiv": 81,
-   "len": 81,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 55,
+   "len": 55,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "restaurant-menu-printing-guide",
    "locale": "ja",
-   "title": "レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro",
+   "title": "レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 68,
-   "len": 42,
-   "band": "FILL",
+   "equiv": 80,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6591,19 +6681,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-red-packet-printing-guide",
    "locale": "zh-hk",
-   "title": "香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro",
+   "title": "香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 65,
-   "len": 43,
-   "band": "FILL",
+   "equiv": 88,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6612,23 +6702,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-red-packet-printing-guide",
    "locale": "en",
-   "title": "Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro",
+   "title": "Wedding Red Packet Printing Guide 2026 | ZprintPro",
    "cat": "",
-   "equiv": 85,
-   "len": 85,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6654,13 +6744,13 @@
    "type": "blog",
    "slug": "real-estate-brochure-box-printing-guide",
    "locale": "zh-hk",
-   "title": "香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港 ZprintPro",
+   "title": "香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 41,
-   "band": "FILL",
+   "equiv": 89,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6669,33 +6759,96 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "real-estate-brochure-box-printing-guide",
    "locale": "en",
-   "title": "Real Estate Brochure & Property Box Printing Guide: Materials, Finishes & Luxury Tips | ZprintPro",
+   "title": "Real Estate Brochure & Property Box Printing Guide",
    "cat": "",
-   "equiv": 97,
-   "len": 97,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "real-estate-brochure-box-printing-guide",
    "locale": "ja",
-   "title": "不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro",
+   "title": "不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 92,
+   "len": 58,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "pharmaceutical-label-printing-guide",
+   "locale": "zh-hk",
+   "title": "香港藥品標籤印刷指南 · GMP 認證 + 防偽追溯碼定製 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 76,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "pharmaceutical-label-printing-guide",
+   "locale": "en",
+   "title": "Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA",
+   "cat": "",
+   "equiv": 55,
+   "len": 55,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "pharmaceutical-label-printing-guide",
+   "locale": "ja",
+   "title": "医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro | ZprintPro",
    "cat": "",
    "equiv": 80,
-   "len": 46,
-   "band": "FILL",
+   "len": 57,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6705,76 +6858,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "pharmaceutical-label-printing-guide",
-   "locale": "zh-hk",
-   "title": "香港藥品標籤印刷指南 · GMP 認證 + 防偽追溯碼定製 | 智印港 ZprintPro",
-   "cat": "",
-   "equiv": 67,
-   "len": 45,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "pharmaceutical-label-printing-guide",
-   "locale": "en",
-   "title": "Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Compliance & Tamper-Evident | ZprintPro",
-   "cat": "",
-   "equiv": 95,
-   "len": 95,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "pharmaceutical-label-printing-guide",
-   "locale": "ja",
-   "title": "医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro",
-   "cat": "",
-   "equiv": 68,
-   "len": 45,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "jewellery-shopping-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽定製 | 智印港 ZprintPro",
+   "title": "香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 73,
-   "len": 46,
-   "band": "FILL",
+   "equiv": 82,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6783,33 +6879,33 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "jewellery-shopping-bag-printing-guide",
    "locale": "en",
-   "title": "Jewellery & Watch Brand Paper Bag Printing Guide: Black Card, Foil & Satin Ribbon | ZprintPro",
+   "title": "Jewellery & Watch Brand Paper Bag Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 93,
-   "len": 93,
-   "band": "TRIM",
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
    "slug": "jewellery-shopping-bag-printing-guide",
    "locale": "ja",
-   "title": "宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro",
+   "title": "宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 84,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 96,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6819,7 +6915,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6846,17 +6942,20 @@
    "type": "blog",
    "slug": "product-label-printing-guide",
    "locale": "en",
-   "title": "Amazon FBA Product Label Printing: GS1 UPC Barcodes, FDA-Compliant SKU Labels for US Sellers | ZprintPro",
+   "title": "Amazon FBA Product Label Printing: GS1 UPC Barcodes",
    "cat": "",
-   "equiv": 104,
-   "len": 104,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6883,13 +6982,13 @@
    "type": "blog",
    "slug": "graduation-yearbook-printing-guide",
    "locale": "zh-hk",
-   "title": "畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印港 ZprintPro",
+   "title": "畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 64,
-   "len": 40,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6898,23 +6997,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "graduation-yearbook-printing-guide",
    "locale": "en",
-   "title": "US High School Yearbook Printing Guide: Class of 2026 Binding Styles, Cover Designs & Sponsor Ad Pages | ZprintPro",
+   "title": "US High School Yearbook Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 114,
-   "len": 114,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6941,13 +7040,13 @@
    "type": "blog",
    "slug": "ip-character-sticker-printing-guide",
    "locale": "zh-hk",
-   "title": "文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港 ZprintPro",
+   "title": "文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 72,
-   "len": 45,
-   "band": "FILL",
+   "equiv": 81,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -6956,23 +7055,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "ip-character-sticker-printing-guide",
    "locale": "en",
-   "title": "Custom Die-Cut Sticker Printing for US Creators, Etsy Sellers & Small Brands: Shapes, Premium Materials & Etsy US SEO | ZprintPro",
+   "title": "Custom Die-Cut Sticker Printing for US Creators | ZprintPro",
    "cat": "",
-   "equiv": 129,
-   "len": 129,
-   "band": "TRIM",
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6999,13 +7098,13 @@
    "type": "blog",
    "slug": "trade-show-banner-printing-guide",
    "locale": "zh-hk",
-   "title": "香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印港 ZprintPro",
+   "title": "香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 41,
-   "band": "FILL",
+   "equiv": 89,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7014,33 +7113,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "trade-show-banner-printing-guide",
    "locale": "en",
-   "title": "Trade Show Banner Printing Guide 2026: Retractable, Backdrop & USA Shipping | ZprintPro",
+   "title": "Trade Show Banner Printing Guide 2026: Retractable",
    "cat": "",
-   "equiv": 87,
-   "len": 87,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "trade-show-banner-printing-guide",
    "locale": "ja",
-   "title": "展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro",
+   "title": "展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 78,
-   "len": 47,
-   "band": "FILL",
+   "equiv": 90,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7050,19 +7152,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-invitation-envelope-printing-guide",
    "locale": "zh-hk",
-   "title": "香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro",
+   "title": "香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 67,
-   "len": 44,
-   "band": "FILL",
+   "equiv": 76,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7071,23 +7173,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "wedding-invitation-envelope-printing-guide",
    "locale": "en",
-   "title": "Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro",
+   "title": "Wedding Invitation Envelope Printing Guide 2026 | ZprintPro",
    "cat": "",
-   "equiv": 93,
-   "len": 93,
-   "band": "TRIM",
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7113,13 +7215,13 @@
    "type": "blog",
    "slug": "doujin-circle-printing-guide",
    "locale": "zh-hk",
-   "title": "同人誌 / 同人周邊印刷指南 · 香港創作者小批量定製 | 智印港 ZprintPro",
+   "title": "同人誌 / 同人周邊印刷指南 · 香港創作者小批量定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 67,
-   "len": 43,
-   "band": "FILL",
+   "equiv": 90,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7128,33 +7230,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "doujin-circle-printing-guide",
    "locale": "en",
-   "title": "Doujin Circle Printing Guide: Small-Batch Booklets, Fast Turnaround & Premium Quality for Indie Creators | ZprintPro",
+   "title": "Doujin Circle Printing Guide: Small-Batch Booklets",
    "cat": "",
-   "equiv": 116,
-   "len": 116,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "doujin-circle-printing-guide",
    "locale": "ja",
-   "title": "同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro",
+   "title": "同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 66,
-   "len": 39,
-   "band": "FILL",
+   "equiv": 78,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7164,19 +7269,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "hotel-amenity-sticker-printing-guide",
    "locale": "zh-hk",
-   "title": "酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港 ZprintPro",
+   "title": "酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 76,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 85,
+   "len": 55,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7185,23 +7290,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "hotel-amenity-sticker-printing-guide",
    "locale": "en",
-   "title": "Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties | ZprintPro",
+   "title": "Hotel & Resort Amenity Sticker Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 121,
-   "len": 121,
-   "band": "TRIM",
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7228,13 +7333,13 @@
    "type": "blog",
    "slug": "finance-summit-gift-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港 ZprintPro",
+   "title": "香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 78,
-   "len": 47,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7243,23 +7348,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "finance-summit-gift-bag-printing-guide",
    "locale": "en",
-   "title": "Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro",
+   "title": "Financial Summit Gift Bag Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 104,
-   "len": 104,
-   "band": "TRIM",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7286,13 +7391,13 @@
    "type": "blog",
    "slug": "marathon-event-poster-printing-guide",
    "locale": "zh-hk",
-   "title": "馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印港 ZprintPro",
+   "title": "馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 72,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 81,
+   "len": 55,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7301,23 +7406,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "marathon-event-poster-printing-guide",
    "locale": "en",
-   "title": "Marathon Event Poster Printing Guide: Waterproof A1/A2 Race Posters, Runner Packets & Start-Line Arches | ZprintPro",
+   "title": "Marathon Event Poster Printing Guide: Waterproof A1/A2 Race",
    "cat": "",
-   "equiv": 115,
-   "len": 115,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7365,17 +7473,17 @@
    "type": "blog",
    "slug": "car-dealership-amenity-sticker-printing-guide",
    "locale": "en",
-   "title": "Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro",
+   "title": "Car Dealership Amenity Sticker Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 133,
-   "len": 133,
-   "band": "TRIM",
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7423,17 +7531,20 @@
    "type": "blog",
    "slug": "hotel-keycard-sleeve-printing-guide",
    "locale": "en",
-   "title": "Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro",
+   "title": "Hotel Key Card Sleeve & Luggage Tag Printing Guide",
    "cat": "",
-   "equiv": 132,
-   "len": 132,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7460,13 +7571,13 @@
    "type": "blog",
    "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
    "locale": "zh-hk",
-   "title": "厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港 ZprintPro",
+   "title": "厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 41,
-   "band": "FILL",
+   "equiv": 89,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7475,33 +7586,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
    "locale": "en",
-   "title": "Thick Paper Flyer Printing Guide · Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro",
+   "title": "Thick Paper Flyer Printing Guide · Restaurant Menu Inserts &",
    "cat": "",
-   "equiv": 100,
-   "len": 100,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
    "locale": "ja",
-   "title": "厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro",
+   "title": "厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 75,
-   "len": 45,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 57,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7511,19 +7625,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
    "locale": "zh-hk",
-   "title": "磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印港 ZprintPro",
+   "title": "磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 62,
-   "len": 39,
-   "band": "FILL",
+   "equiv": 85,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7532,23 +7646,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
    "locale": "en",
-   "title": "Magnetic Closure Gift Box Guide · Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro",
+   "title": "Magnetic Closure Gift Box Guide · Cross-Border E-commerce",
    "cat": "",
-   "equiv": 105,
-   "len": 105,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7574,13 +7691,13 @@
    "type": "blog",
    "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
    "locale": "zh-hk",
-   "title": "折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 ZprintPro",
+   "title": "折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 60,
-   "len": 38,
-   "band": "FILL",
+   "equiv": 83,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7589,33 +7706,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
    "locale": "en",
-   "title": "Folding Box Printing Guide · Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro",
+   "title": "Folding Box Printing Guide · Eco-Friendly Cosmetics Brand",
    "cat": "",
-   "equiv": 104,
-   "len": 104,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
    "locale": "ja",
-   "title": "折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro",
+   "title": "折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro |ZprintPro",
    "cat": "",
-   "equiv": 80,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 91,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7625,19 +7745,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "religious-ceremony-printing-guide",
    "locale": "zh-hk",
-   "title": "香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 ZprintPro",
+   "title": "香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 68,
-   "len": 42,
-   "band": "FILL",
+   "equiv": 91,
+   "len": 55,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7646,23 +7766,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "religious-ceremony-printing-guide",
    "locale": "en",
-   "title": "Religious Ceremony Printing Guide: Custom Church / Temple / Memorial Boxes & Gift Bags | ZprintPro",
+   "title": "Religious Ceremony Printing Guide: Custom Church / Temple /",
    "cat": "",
-   "equiv": 98,
-   "len": 98,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7709,17 +7832,20 @@
    "type": "blog",
    "slug": "industrial-nameplate-printing-guide",
    "locale": "en",
-   "title": "Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL Certified + ANSI Z535 Standard | ZprintPro",
+   "title": "Industrial Equipment Nameplate & GHS Hazard Label Printing",
    "cat": "",
-   "equiv": 111,
-   "len": 111,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 58,
+   "len": 58,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7745,13 +7871,13 @@
    "type": "blog",
    "slug": "construction-material-sample-book-printing-guide",
    "locale": "zh-hk",
-   "title": "建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 ZprintPro",
+   "title": "建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 70,
-   "len": 43,
-   "band": "FILL",
+   "equiv": 93,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7760,23 +7886,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "construction-material-sample-book-printing-guide",
    "locale": "en",
-   "title": "Construction Material Sample Book Printing Guide: Tile, Stone, Curtain, Flooring Color Card Custom | ZprintPro",
+   "title": "Construction Material Sample Book Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 110,
-   "len": 110,
-   "band": "TRIM",
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7802,13 +7928,13 @@
    "type": "blog",
    "slug": "baby-food-packaging-box-printing-guide",
    "locale": "zh-hk",
-   "title": "香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港 ZprintPro",
+   "title": "香港嬰幼兒食品包裝盒印刷指南 · 奶粉輔食米糊安全包裝定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 74,
-   "len": 45,
-   "band": "FILL",
+   "equiv": 83,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7817,33 +7943,33 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "baby-food-packaging-box-printing-guide",
    "locale": "en",
-   "title": "Baby Food Packaging Box Printing Guide: FDA Food-Safe Boxes for US Infant Brands | ZprintPro",
+   "title": "Baby Food Packaging Box Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 92,
-   "len": 92,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
    "slug": "baby-food-packaging-box-printing-guide",
    "locale": "ja",
-   "title": "幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro",
+   "title": "幼児食品パッケージ箱印刷ガイド：FDA食品衛生ボックス 日本向け | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 72,
-   "len": 44,
-   "band": "FILL",
+   "equiv": 84,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7853,19 +7979,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "real-estate-flyer-printing-guide",
    "locale": "zh-hk",
-   "title": "香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港 ZprintPro",
+   "title": "香港房地產銷售單張印刷指南 · 新盤樓書派發 A4 摺頁定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 72,
-   "len": 46,
-   "band": "FILL",
+   "equiv": 81,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7874,33 +8000,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "real-estate-flyer-printing-guide",
    "locale": "en",
-   "title": "Real Estate Flyer Printing Guide: Property Listing Brochures for US Real Estate Agents | ZprintPro",
+   "title": "Real Estate Flyer Printing Guide: Property Listing Brochures",
    "cat": "",
-   "equiv": 98,
-   "len": 98,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "real-estate-flyer-printing-guide",
    "locale": "ja",
-   "title": "不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro",
+   "title": "不動産販売チラシ印刷ガイド：物件資料・折り畳み 米国不動産エージェント向け | ZprintPro |ZprintPro",
    "cat": "",
-   "equiv": 85,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 96,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7910,19 +8039,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "medical-device-packaging-box-guide",
    "locale": "zh-hk",
-   "title": "醫療器械包裝盒印刷指南 · ISO 13485 + 滅菌袋定製 | 智印港 ZprintPro",
+   "title": "醫療器械包裝盒印刷指南 · ISO 13485 + 滅菌袋定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 66,
-   "len": 47,
-   "band": "FILL",
+   "equiv": 75,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7931,23 +8060,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "medical-device-packaging-box-guide",
    "locale": "en",
-   "title": "Medical Device Packaging Box Printing Guide: ISO 13485, Sterile Bag Custom for US Healthcare | ZprintPro",
+   "title": "Medical Device Packaging Box Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 104,
-   "len": 104,
-   "band": "TRIM",
+   "equiv": 55,
+   "len": 55,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7973,13 +8102,13 @@
    "type": "blog",
    "slug": "auto-parts-shopping-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港 ZprintPro",
+   "title": "汽車 4S 店售後服務紙袋印刷指南 · 維修保養零件包裝定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 72,
-   "len": 46,
-   "band": "FILL",
+   "equiv": 81,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -7988,23 +8117,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "auto-parts-shopping-bag-printing-guide",
    "locale": "en",
-   "title": "Auto Parts Shopping Bag Printing Guide: 4S Service Bags for US Auto Aftermarket | ZprintPro",
+   "title": "Auto Parts Shopping Bag Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 91,
-   "len": 91,
-   "band": "TRIM",
+   "equiv": 50,
+   "len": 50,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8030,13 +8159,13 @@
    "type": "blog",
    "slug": "sports-merchandise-gift-box-printing-guide",
    "locale": "zh-hk",
-   "title": "體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港 ZprintPro",
+   "title": "體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 64,
-   "len": 40,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8045,23 +8174,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "sports-merchandise-gift-box-printing-guide",
    "locale": "en",
-   "title": "Sports Event Merchandise Gift Box Printing Guide: Team Memorabilia for US Leagues | ZprintPro",
+   "title": "Sports Event Merchandise Gift Box Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 93,
-   "len": 93,
-   "band": "TRIM",
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8087,13 +8216,13 @@
    "type": "blog",
    "slug": "apparel-shopping-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港 ZprintPro",
+   "title": "香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 64,
-   "len": 40,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8102,33 +8231,33 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "apparel-shopping-bag-printing-guide",
    "locale": "en",
-   "title": "Apparel Brand Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro",
+   "title": "Apparel Brand Shopping Bag Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 83,
-   "len": 83,
-   "band": "TRIM",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
    "slug": "apparel-shopping-bag-printing-guide",
    "locale": "ja",
-   "title": "アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro",
+   "title": "アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 76,
-   "len": 44,
-   "band": "FILL",
+   "equiv": 88,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8138,19 +8267,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "gang-run-card-boxes-hk-guide",
    "locale": "zh-hk",
-   "title": "香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro",
+   "title": "香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 71,
-   "len": 45,
-   "band": "FILL",
+   "equiv": 80,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8159,55 +8288,58 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "gang-run-card-boxes-hk-guide",
    "locale": "en",
-   "title": "Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro",
-   "cat": "",
-   "equiv": 69,
-   "len": 69,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "gang-run-card-boxes-hk-guide",
-   "locale": "ja",
-   "title": "合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro",
-   "cat": "",
-   "equiv": 70,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "custom-card-boxes-small-batch-usa",
-   "locale": "zh-hk",
-   "title": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro",
+   "title": "Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper |",
    "cat": "",
    "equiv": 59,
-   "len": 37,
+   "len": 59,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "gang-run-card-boxes-hk-guide",
+   "locale": "ja",
+   "title": "合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 82,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "custom-card-boxes-small-batch-usa",
+   "locale": "zh-hk",
+   "title": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 68,
+   "len": 43,
    "band": "FILL",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8222,27 +8354,30 @@
    "type": "blog",
    "slug": "custom-card-boxes-small-batch-usa",
    "locale": "en",
-   "title": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, Free Shipping $99+ | ZprintPro",
+   "title": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee,",
    "cat": "",
-   "equiv": 89,
-   "len": 89,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 58,
+   "len": 58,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "custom-card-boxes-small-batch-usa",
    "locale": "ja",
-   "title": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
+   "title": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 67,
-   "len": 42,
-   "band": "FILL",
+   "equiv": 79,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8252,55 +8387,58 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "cosmetic-card-boxes-gang-run-japan",
    "locale": "zh-hk",
-   "title": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro",
+   "title": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 60,
-   "len": 38,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "cosmetic-card-boxes-gang-run-japan",
-   "locale": "en",
-   "title": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
-   "cat": "",
-   "equiv": 79,
-   "len": 79,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "cosmetic-card-boxes-gang-run-japan",
-   "locale": "ja",
-   "title": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
-   "cat": "",
-   "equiv": 76,
+   "equiv": 69,
    "len": 44,
    "band": "FILL",
    "brandIssues": [
+    "品牌非一次",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "locale": "en",
+   "title": "Cosmetic Card Boxes: Silver & Holographic Cardstock",
+   "cat": "",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "cosmetic-card-boxes-gang-run-japan",
+   "locale": "ja",
+   "title": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 88,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
     "简体污染"
    ],
    "pollution": [
@@ -8309,19 +8447,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "financial-institution-gift-bag-printing-guide",
    "locale": "zh-hk",
-   "title": "香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定製 | 智印港 ZprintPro",
+   "title": "香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定製 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 77,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 86,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8330,23 +8468,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "financial-institution-gift-bag-printing-guide",
    "locale": "en",
-   "title": "Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro",
+   "title": "Financial Institution Gift Bag Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 120,
-   "len": 120,
-   "band": "TRIM",
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8393,17 +8531,17 @@
    "type": "blog",
    "slug": "real-estate-floor-plan-poster-printing-guide",
    "locale": "en",
-   "title": "Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro",
+   "title": "Real Estate Floor Plan Poster Printing Guide | ZprintPro",
    "cat": "",
-   "equiv": 115,
-   "len": 115,
-   "band": "TRIM",
+   "equiv": 56,
+   "len": 56,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8452,27 +8590,30 @@
    "type": "blog",
    "slug": "same-day-flyers-printing-hong-kong-guide",
    "locale": "en",
-   "title": "Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 100 MOQ, Free Shipping $99+ | ZprintPro",
+   "title": "Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush",
    "cat": "",
-   "equiv": 94,
-   "len": 94,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "same-day-flyers-printing-hong-kong-guide",
    "locale": "ja",
-   "title": "即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro",
+   "title": "即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro |ZprintPro",
    "cat": "",
-   "equiv": 76,
-   "len": 49,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 60,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8482,19 +8623,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "rush-printing-hk-guide",
    "locale": "zh-hk",
-   "title": "即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港 ZprintPro",
+   "title": "即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港 ZprintPro｜香港印刷指南 | 智印港",
    "cat": "",
-   "equiv": 64,
-   "len": 38,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8503,33 +8644,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "rush-printing-hk-guide",
    "locale": "en",
-   "title": "Same-Day Printing HK Guide: Where Fastest? How Much? What Cut-Off? | ZprintPro",
+   "title": "Same-Day Printing HK Guide: Where Fastest? How Much? What",
    "cat": "",
-   "equiv": 78,
-   "len": 78,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "rush-printing-hk-guide",
    "locale": "ja",
-   "title": "当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro",
+   "title": "当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 66,
-   "len": 39,
-   "band": "FILL",
+   "equiv": 78,
+   "len": 51,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8539,19 +8683,19 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "packaging-box-pricing-2026",
    "locale": "zh-hk",
-   "title": "包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智印港 ZprintPro",
+   "title": "包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 65,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 74,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8560,23 +8704,26 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "packaging-box-pricing-2026",
    "locale": "en",
-   "title": "Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro",
+   "title": "Packaging Box Printing Price 2026: How Much for",
    "cat": "",
-   "equiv": 81,
-   "len": 81,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 47,
+   "len": 47,
+   "band": "FILL",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "补满 50-54"
   },
   {
    "type": "blog",
@@ -8602,13 +8749,13 @@
    "type": "blog",
    "slug": "calendar-printing-guide",
    "locale": "zh-hk",
-   "title": "月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro",
+   "title": "月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 75,
-   "len": 48,
-   "band": "FILL",
+   "equiv": 84,
+   "len": 54,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "日文假名污染",
     "简体字形污染"
    ],
@@ -8619,148 +8766,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "calendar-printing-guide",
    "locale": "en",
-   "title": "2027 Calendar Printing Guide: Wall & Desk Calendar Sizes, Paper & Ordering | ZprintPro",
-   "cat": "",
-   "equiv": 86,
-   "len": 86,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "calendar-printing-guide",
-   "locale": "ja",
-   "title": "2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro",
-   "cat": "",
-   "equiv": 78,
-   "len": 47,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-size-guide",
-   "locale": "zh-hk",
-   "title": "A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智印港",
-   "cat": "",
-   "equiv": 55,
-   "len": 41,
-   "band": "FILL",
-   "brandIssues": [
-    "简体字形污染"
-   ],
-   "pollution": [
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-size-guide",
-   "locale": "en",
-   "title": "A1 A2 Poster Size Chart mm/cm/in + 12 Uses 3-5 Days | ZprintPro",
-   "cat": "",
-   "equiv": 63,
-   "len": 63,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-size-guide",
-   "locale": "ja",
-   "title": "A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | ZprintPro",
+   "title": "2027 Calendar Printing Guide: Wall & Desk Calendar Sizes",
    "cat": "",
    "equiv": 56,
-   "len": 47,
-   "band": "FILL",
+   "len": 56,
+   "band": "OK",
    "brandIssues": [
-    "简体污染"
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
    ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "a5-vs-a6-flyer-size",
-   "locale": "zh-hk",
-   "title": "A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro",
-   "cat": "",
-   "equiv": 68,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "a5-vs-a6-flyer-size",
-   "locale": "en",
-   "title": "A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro",
-   "cat": "",
-   "equiv": 78,
-   "len": 78,
-   "band": "TRIM",
-   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
-   "slug": "a5-vs-a6-flyer-size",
+   "slug": "calendar-printing-guide",
    "locale": "ja",
-   "title": "A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro",
+   "title": "2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 63,
-   "len": 41,
-   "band": "FILL",
+   "equiv": 90,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8770,115 +8805,57 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
-   "slug": "poster-printing-price-guide",
+   "slug": "poster-size-guide",
    "locale": "zh-hk",
-   "title": "A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro",
-   "cat": "",
-   "equiv": 75,
-   "len": 47,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-printing-price-guide",
-   "locale": "en",
-   "title": "A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Discounts | ZprintPro",
-   "cat": "",
-   "equiv": 76,
-   "len": 76,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "poster-printing-price-guide",
-   "locale": "ja",
-   "title": "A1 A2 ポスター印刷料金ガイド：単価・用紙・加工・ロット割引 | ZprintPro",
-   "cat": "",
-   "equiv": 70,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "简体污染"
-   ],
-   "pollution": [
-    "简体污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "catalog-printing-guide",
-   "locale": "zh-hk",
-   "title": "畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro",
-   "cat": "",
-   "equiv": 74,
-   "len": 44,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌不在末尾",
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "pollution": [
-    "日文假名污染",
-    "简体字形污染"
-   ],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "catalog-printing-guide",
-   "locale": "en",
-   "title": "Catalog & Art Book Printing Guide: Paper, Binding & Finishing | ZprintPro",
-   "cat": "",
-   "equiv": 73,
-   "len": 73,
-   "band": "TRIM",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "修剪 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "catalog-printing-guide",
-   "locale": "ja",
-   "title": "カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro",
+   "title": "A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智印港 | 智印港",
    "cat": "",
    "equiv": 64,
-   "len": 38,
+   "len": 47,
    "band": "FILL",
+   "brandIssues": [
+    "品牌非一次",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "补满 50-54"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-size-guide",
+   "locale": "en",
+   "title": "A1 A2 Poster Size Chart mm/cm/in + 12 Uses 3-5 Days |",
+   "cat": "",
+   "equiv": 53,
+   "len": 53,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-size-guide",
+   "locale": "ja",
+   "title": "A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 68,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8888,7 +8865,193 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "a5-vs-a6-flyer-size",
+   "locale": "zh-hk",
+   "title": "A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 77,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "a5-vs-a6-flyer-size",
+   "locale": "en",
+   "title": "A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost",
+   "cat": "",
+   "equiv": 55,
+   "len": 55,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "a5-vs-a6-flyer-size",
+   "locale": "ja",
+   "title": "A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 75,
+   "len": 53,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-price-guide",
+   "locale": "zh-hk",
+   "title": "A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 84,
+   "len": 53,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-price-guide",
+   "locale": "en",
+   "title": "A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk",
+   "cat": "",
+   "equiv": 54,
+   "len": 54,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "poster-printing-price-guide",
+   "locale": "ja",
+   "title": "A1 A2 ポスター印刷料金ガイド：単価・用紙・加工・ロット割引 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 82,
+   "len": 56,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "catalog-printing-guide",
+   "locale": "zh-hk",
+   "title": "畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro | 智印港",
+   "cat": "",
+   "equiv": 83,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "品牌非一次",
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "pollution": [
+    "日文假名污染",
+    "简体字形污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "catalog-printing-guide",
+   "locale": "en",
+   "title": "Catalog & Art Book Printing Guide: Paper, Binding &",
+   "cat": "",
+   "equiv": 51,
+   "len": 51,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
+  },
+  {
+   "type": "blog",
+   "slug": "catalog-printing-guide",
+   "locale": "ja",
+   "title": "カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro | ZprintPro",
+   "cat": "",
+   "equiv": 76,
+   "len": 50,
+   "band": "OK",
+   "brandIssues": [
+    "简体污染"
+   ],
+   "pollution": [
+    "简体污染"
+   ],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8915,17 +9078,20 @@
    "type": "blog",
    "slug": "catalog-printing-china-supplier-guide",
    "locale": "en",
-   "title": "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper Stocks + Bulk Wholesale 100/500/1000/5000 Tier | ZprintPro",
+   "title": "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper",
    "cat": "",
-   "equiv": 117,
-   "len": 117,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 58,
+   "len": 58,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8952,13 +9118,13 @@
    "type": "blog",
    "slug": "2027-monthly-calendar-printing-timetable",
    "locale": "zh-hk",
-   "title": "2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港 ZprintPro",
+   "title": "2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港 ZprintPro | 智印港",
    "cat": "",
-   "equiv": 72,
-   "len": 46,
-   "band": "FILL",
+   "equiv": 81,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [
-    "品牌不在末尾",
+    "品牌非一次",
     "简体字形污染"
    ],
    "pollution": [
@@ -8967,33 +9133,36 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "2027-monthly-calendar-printing-timetable",
    "locale": "en",
-   "title": "2027 Calendar Printing Guide: When to Print? MOQ? 4 Paper Stocks Compared | ZprintPro",
+   "title": "2027 Calendar Printing Guide: When to Print? MOQ? 4 Paper",
    "cat": "",
-   "equiv": 85,
-   "len": 85,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 57,
+   "len": 57,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "2027-monthly-calendar-printing-timetable",
    "locale": "ja",
-   "title": "2027 年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro",
+   "title": "2027 年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 75,
-   "len": 47,
-   "band": "FILL",
+   "equiv": 87,
+   "len": 59,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9003,7 +9172,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9025,27 +9194,30 @@
    "type": "blog",
    "slug": "large-envelope-printing-c4-c5",
    "locale": "en",
-   "title": "Large Envelopes C4/C5 100 MOQ from HK$0.5 | Same-Day Rush | ZprintPro",
+   "title": "Large Envelopes C4/C5 100 MOQ from HK$0.5 | Same-Day Rush |",
    "cat": "",
-   "equiv": 69,
-   "len": 69,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 59,
+   "len": 59,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
    "slug": "large-envelope-printing-c4-c5",
    "locale": "ja",
-   "title": "大型封筒 C4/C5 100 個〜 HK$0.5/個 | 当日特急 | ZprintPro",
+   "title": "大型封筒 C4/C5 100 個〜 HK$0.5/個 | 当日特急 | ZprintPro | ZprintPro",
    "cat": "",
-   "equiv": 56,
-   "len": 45,
-   "band": "FILL",
+   "equiv": 68,
+   "len": 57,
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9055,7 +9227,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9082,17 +9254,20 @@
    "type": "blog",
    "slug": "sticker-material-pvc-vinyl-removable",
    "locale": "en",
-   "title": "Waterproof Sticker Material Guide: PVC / Clear / Removable / Foil 4 Stocks in 1 Read | ZprintPro",
+   "title": "Waterproof Sticker Material Guide: PVC / Clear / Removable /",
    "cat": "",
-   "equiv": 96,
-   "len": 96,
-   "band": "TRIM",
-   "brandIssues": [],
+   "equiv": 60,
+   "len": 60,
+   "band": "OK",
+   "brandIssues": [
+    "缺品牌 ZprintPro",
+    "品牌不在末尾"
+   ],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9139,17 +9314,17 @@
    "type": "blog",
    "slug": "instant-printing-30s-ai-quote-flow",
    "locale": "en",
-   "title": "Instant Printing 30-Second AI Quote Flow: Confirm by Noon, Ship by Afternoon, 6 PM Cutoff Next-Day Noon SF Express | ZprintPro",
+   "title": "Instant Printing 30-Second AI Quote Flow | ZprintPro",
    "cat": "",
-   "equiv": 126,
-   "len": 126,
-   "band": "TRIM",
+   "equiv": 52,
+   "len": 52,
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
