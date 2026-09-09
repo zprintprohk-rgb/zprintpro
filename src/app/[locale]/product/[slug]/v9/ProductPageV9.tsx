@@ -220,7 +220,7 @@ export function ProductPageV9({
 
       {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據）+ .rail 側欄（修訂輪8 #4: 按第四張圖藍本效果重做 — 橙色大數字+標題行+28px 橫條+虛線分隔+最抵標籤+規格右上註） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
-        <div className="grid gap-9 lg:grid-cols-[minmax(0,8fr)_minmax(0,4fr)] items-start">
+        <div className="grid gap-9 lg:grid-cols-[minmax(0,15fr)_minmax(0,7fr)] items-stretch">
           <div>
             <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
               <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
@@ -229,7 +229,7 @@ export function ProductPageV9({
             <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
               訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
             </h2>
-            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-[34px] shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-[34px] shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col">
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
                   <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
@@ -262,13 +262,13 @@ export function ProductPageV9({
               <p className="text-[13.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
             </div>
           </div>
-          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 self-start lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)]">
+          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between">
             <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
             <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
             <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
             <dl className="border-t border-[#F0F1F3]">
               <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">標準交期</dt><dd className="font-semibold">5-7 天</dd></div>
-              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">即日急件</dt><dd className="font-semibold">今天下單 · 明天 12 點前到</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px] font-bold"><dt className="text-[#6B7280] font-normal">即日急件</dt><dd className="font-bold">今天下單 · 明天 12 點前到</dd></div>
               <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">滿 HK$500</dt><dd className="font-semibold">港九新界免運</dd></div>
             </dl>
             <div className="grid gap-2.5 mt-5">
@@ -285,17 +285,17 @@ export function ProductPageV9({
           className="rounded-[18px] p-6 sm:p-8 md:p-9 text-white"
           style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
         >
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-[1fr_1fr_320px]">
             <div>
-              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">標準 5-7 天</div>
-              <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
+              <div className="font-extrabold text-[19px] mb-1.5 text-white">標準 5-7 天</div>
+              <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 15K B2 數碼產線 · 提交檔案後 1 小時內免費數碼打稿 · 平均 2.3 天出貨，急單即日出貨</p>
             </div>
             <div>
-              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">DHL 全球 2-4 天</div>
-              <p className="text-[16.5px] text-white/90 leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
+              <div className="font-extrabold text-[19px] mb-1.5 text-white">DHL 全球 2-4 天</div>
+              <p className="text-[16.5px] text-white/90 leading-[1.65]">順豐香港本地送貨 · 港島/九龍/新界 24 小時達 · DHL 全球 2-4 日</p>
             </div>
             <a href={rushUrl} className="block bg-[#F87314] rounded-[14px] p-5 group">
-              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">即日急件</div>
+              <div className="font-extrabold text-[19px] mb-1.5 text-white">即日急件</div>
               <p className="text-[16.5px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
             </a>
           </div>
