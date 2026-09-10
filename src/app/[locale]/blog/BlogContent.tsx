@@ -5,39 +5,43 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Locale } from '@/lib/seo';
 import { blogPosts } from '@/data/blog-posts';
-import { products, getProductTitle, getProductDescription } from '@/data/products';
-import { convertPriceRangeString } from '@/lib/pricing';
-import { getProductMainImage } from '@/lib/product-image';
-import { ChevronRight, Calendar, Tag, MessageCircle } from 'lucide-react';
+import { MessageCircle, Clock, Calendar } from 'lucide-react';
+
+/**
+ * v9.2.3 任务 D — Blog 列表页 UX/UI 重设计 (2026-09-11)
+ * 视觉语言与 PLP v9.1 同族: 三色调令牌 / 17.5px 基线 / 1320px 容器 / 满版色交替 / 编辑式排版
+ * 结构: Banner(藏青渐变+几何装饰) → 精选(头条 2:1 + 次条 2 卡) → 分类筛选单行条 → 3 列白卡网格(hover 仅边框+阴影) → 页底 CTA
+ * 禁动: 文章 slug/标题/摘要/blog 详情/articleSlugs 注册表 (只读 blogPosts)
+ */
+
+interface BlogContentProps {
+  locale: Locale;
+  /** D: 服务器端从真实正文算出的阅读分钟数 (blog/page.tsx) */
+  readTimes: Record<string, number>;
+}
 
 const translations: Record<string, {
   h1: string;
   subtitle: string;
+  eyebrow: string;
   allArticles: string;
-  contentCategories: string;
-  hotProducts: string;
-  viewMore: string;
-  buyingGuideTag: string;
-  datePrefix: string;
-  author: string;
   featured: string;
-  moreArticles: string;
+  buyingGuideTag: string;
   readMore: string;
+  empty: string;
+  heroCheck: string[];
   categories: { key: string; label: string }[];
 }> = {
   'zh-hk': {
     h1: '印刷知識',
-    subtitle: '專業印刷知識與行業洞察',
+    subtitle: '專業印刷知識與行業洞察 — 從材質工藝到設計技巧，智印港印刷專家為你逐一拆解。',
+    eyebrow: '印刷知識庫',
     allArticles: '全部文章',
-    contentCategories: '內容分類',
-    hotProducts: '熱門產品',
-    viewMore: '查詢更多',
-    buyingGuideTag: '選購指南',
-    datePrefix: '發布於',
-    author: '智印港印刷專家',
     featured: '本週精選',
-    moreArticles: '更多文章',
+    buyingGuideTag: '選購指南',
     readMore: '閱讀全文 →',
+    empty: '暫無相關文章',
+    heroCheck: ['印刷工藝・設計技巧・行業趨勢', '30 秒 AI 報價', '15 分鐘內專人回覆'],
     categories: [
       { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
@@ -49,7 +53,7 @@ const translations: Record<string, {
       { key: 'hongkong', label: '香港本地' },
       { key: 'trends', label: '行業趨勢' },
       { key: 'buying-guide', label: '選購指南' },
-      // 2026-08-04 K3 拍板: 加 12 新产品类目 tabs (25 blog 全部归类, paper-bags x7 + flyers x3 + posters x3 + creator-ip/wedding-envelope/japan-doujin x2 + menus/red-packets/cross-border/education/banners/food-packaging x1)
+      // 2026-08-04 K3 拍板: 加 12 新产品类目 tabs (25 blog 全部归类)
       { key: 'paper-bags', label: '紙袋印刷' },
       { key: 'flyers', label: '傳單印刷' },
       { key: 'posters', label: '海報印刷' },
@@ -66,17 +70,14 @@ const translations: Record<string, {
   },
   'en': {
     h1: 'Printing Knowledge',
-    subtitle: 'Professional printing insights and industry trends',
+    subtitle: 'Professional printing insights and industry trends — materials, techniques and design tips from our experts.',
+    eyebrow: 'Printing Knowledge',
     allArticles: 'All Articles',
-    contentCategories: 'Categories',
-    hotProducts: 'Hot Products',
-    viewMore: 'View More',
+    featured: 'Featured',
     buyingGuideTag: 'Buying Guide',
-    datePrefix: 'Published',
-    author: 'ZprintPro Experts',
-    featured: 'Featured This Week',
-    moreArticles: 'More Articles',
     readMore: 'Read more →',
+    empty: 'No articles yet',
+    heroCheck: ['Techniques, Design Tips & Industry Trends', '30s AI Quote', 'Reply within 15 minutes'],
     categories: [
       { key: 'company-news', label: 'Company News' },
       { key: 'sticker', label: 'Sticker Guide' },
@@ -88,16 +89,15 @@ const translations: Record<string, {
       { key: 'hongkong', label: 'Hong Kong Local' },
       { key: 'trends', label: 'Industry Trends' },
       { key: 'buying-guide', label: 'Buying Guide' },
-      // 2026-08-04 K3 拍板: 加 12 新产品类目 tabs
       { key: 'paper-bags', label: 'Paper Bags' },
       { key: 'flyers', label: 'Flyers' },
       { key: 'posters', label: 'Posters' },
       { key: 'creator-ip', label: 'Creator IP' },
       { key: 'wedding-envelope', label: 'Wedding Envelope' },
-      { key: 'japan-doujin', label: 'Japan Doujin' },
+      { key: 'japan-doujin', label: 'Doujin Goods' },
       { key: 'menus', label: 'Menus' },
       { key: 'red-packets', label: 'Red Packets' },
-      { key: 'cross-border', label: 'Cross-Border' },
+      { key: 'cross-border', label: 'Cross-border E-commerce' },
       { key: 'education', label: 'Education' },
       { key: 'banners', label: 'Banners' },
       { key: 'food-packaging', label: 'Food Packaging' },
@@ -105,17 +105,14 @@ const translations: Record<string, {
   },
   'ja': {
     h1: '印刷知識',
-    subtitle: 'プロの印刷技術と業界トレンド',
+    subtitle: '印刷技術・デザインノウハウ・業界トレンドを、専門スタッフが分かりやすく解説します。',
+    eyebrow: '印刷ナレッジ',
     allArticles: 'すべての記事',
-    contentCategories: 'カテゴリー',
-    hotProducts: '人気製品',
-    viewMore: '詳細を見る',
+    featured: '注目記事',
     buyingGuideTag: '選び方ガイド',
-    datePrefix: '公開日',
-    author: 'ZprintPro専門家',
-    featured: '今週のおすすめ',
-    moreArticles: 'もっと記事を見る',
     readMore: '続きを読む →',
+    empty: '関連記事はありません',
+    heroCheck: ['印刷技術・デザイン・業界トレンド', '30秒AI見積もり', '15分以内に専門スタッフが返信'],
     categories: [
       { key: 'company-news', label: '会社ニュース' },
       { key: 'sticker', label: 'ステッカー知識' },
@@ -127,7 +124,6 @@ const translations: Record<string, {
       { key: 'hongkong', label: '香港ローカル' },
       { key: 'trends', label: '業界トレンド' },
       { key: 'buying-guide', label: '選び方ガイド' },
-      // 2026-08-04 K3 拍板: 加 12 新产品类目 tabs
       { key: 'paper-bags', label: '紙袋印刷' },
       { key: 'flyers', label: 'チラシ' },
       { key: 'posters', label: 'ポスター' },
@@ -166,17 +162,42 @@ function getCategoryColor(key: string) {
   return categoryColors[key] || { bg: 'bg-gray-50', text: 'text-gray-600' };
 }
 
-/**
- * Top 2 = "Featured" (hero cards with cover images, big & visual).
- * Rest = compact text list (no image) — saves vertical space, easy to scan
- * when article count grows to hundreds.
- *
- * Sort: by date DESC (latest = most recent and most relevant).
- * No analytics -> use latest as proxy for "popular/new".
- */
-const FEATURED_COUNT = 2;
+/** D: 封面占位 — 无 cover 的每日 SEO 博客用纯几何渐变, 不放图 (覆盖既有无图逻辑) */
+function CardCover({
+  image,
+  alt,
+  ratio,
+  label,
+}: {
+  image: string;
+  alt: string;
+  ratio: string;
+  label: string;
+}) {
+  if (image) {
+    return (
+      <div className={`relative ${ratio} w-full overflow-hidden bg-gray-100`}>
+        <Image src={image} alt={alt} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" />
+      </div>
+    );
+  }
+  return (
+    <div className={`relative ${ratio} w-full overflow-hidden`} style={{ background: 'var(--color-royal-navy-grad)' }}>
+      <div
+        aria-hidden
+        className="absolute inset-0 opacity-15"
+        style={{ backgroundImage: 'radial-gradient(circle at 25% 35%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '26px 26px' }}
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <span className="px-4 py-1.5 rounded-full bg-white/15 text-white/90 text-sm font-semibold backdrop-blur-sm">{label}</span>
+      </div>
+    </div>
+  );
+}
 
-export default function BlogContent({ locale }: { locale: Locale }) {
+const FEATURED_COUNT = 3; // 头条 1 + 次条 2
+
+export default function BlogContent({ locale, readTimes }: BlogContentProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -193,19 +214,16 @@ export default function BlogContent({ locale }: { locale: Locale }) {
           : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
       excerpt: post.excerpt[locale],
       image: post.cover?.[locale] || post.cover?.['zh-hk'] || '',
+      readMin: readTimes[post.slug] || 3,
     }))
-    // Newest first
     .sort((a, b) => (b.date || '').localeCompare(a.date || '')),
-    [locale, t]
+    [locale, t, readTimes]
   );
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === 'all') return allPosts;
     return allPosts.filter((post) => post.categoryKey === activeCategory);
   }, [activeCategory, allPosts]);
-
-  const featured = filteredPosts.slice(0, FEATURED_COUNT);
-  const rest = filteredPosts.slice(FEATURED_COUNT);
 
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -215,33 +233,36 @@ export default function BlogContent({ locale }: { locale: Locale }) {
     return counts;
   }, [allPosts]);
 
-  const hotProducts = useMemo(() =>
-    products
-      .filter((p) => p.isHot)
-      .sort((a, b) => b.weight_score - a.weight_score)
-      .slice(0, 4),
-    []
-  );
+  const featured = filteredPosts.slice(0, FEATURED_COUNT);
+  const rest = filteredPosts.slice(FEATURED_COUNT);
 
-  const countSuffix = locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts';
+  const readMinText = (n: number) =>
+    locale === 'zh-hk' ? `${n} 分鐘` : locale === 'ja' ? `読了 ${n} 分` : `${n} min read`;
 
   return (
     <main className="min-h-screen bg-white">
-      {/* Hero band — professional knowledge base */}
-      <section className="bg-[#0F1F3D] text-white">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+      {/* D1 Banner — 藏青渐变 + 右侧几何装饰 (禁侵权图) */}
+      <section className="relative overflow-hidden text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+        <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+          <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+          <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+          <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+          <div className="absolute right-64 top-16 w-[8px] h-[8px] rounded-full bg-[#F87314]/60" />
+          <div className="absolute right-40 top-40 w-[5px] h-[5px] rounded-full bg-white/50" />
+          <div
+            className="absolute inset-0 opacity-10"
+            style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
+          />
+        </div>
+        <div className="relative max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
           <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-4">
             <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
-            {locale === 'zh-hk' ? '印刷知識庫' : locale === 'ja' ? '印刷ナレッジ' : 'Printing Knowledge'}
+            {t.eyebrow}
           </p>
           <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight max-w-[720px]">{t.h1}</h1>
           <p className="mt-4 text-white/80 text-base md:text-lg max-w-[560px] leading-relaxed">{t.subtitle}</p>
           <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/85">
-            {[
-              locale === 'zh-hk' ? '印刷工藝・設計技巧・行業趨勢' : locale === 'ja' ? '印刷技術・デザイン・業界トレンド' : 'Process, Design Tips & Industry Trends',
-              locale === 'zh-hk' ? '30 秒 AI 報價' : locale === 'ja' ? '30秒AI見積もり' : '30s AI Quote',
-              locale === 'zh-hk' ? '15 分鐘內專人回覆' : locale === 'ja' ? '15分以内に専門スタッフが返信' : 'Reply within 15 minutes',
-            ].map((s) => (
+            {t.heroCheck.map((s) => (
               <span key={s} className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                 {s}
@@ -260,125 +281,132 @@ export default function BlogContent({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-start">
-          {/* Left rail: categories + hot products */}
-          <aside className="w-full lg:w-[260px] flex-shrink-0">
-            <div className="hidden lg:block">
-              <p className="text-sm font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.contentCategories}</p>
-              <ul className="border-t border-gray-100">
-                <li className="border-b border-gray-100">
-                  <button onClick={() => setActiveCategory('all')} className={`w-full text-left py-3.5 text-base font-semibold flex items-center justify-between transition-colors ${activeCategory === 'all' ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
-                    <span>{t.allArticles}</span>
-                    <span className="text-xs text-gray-400">{allPosts.length}</span>
-                  </button>
-                </li>
-                {t.categories.map((cat) => (
-                  <li key={cat.key} className="border-b border-gray-100">
-                    <button onClick={() => setActiveCategory(cat.key)} className={`w-full text-left py-3.5 text-base font-semibold flex items-center justify-between transition-colors ${activeCategory === cat.key ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
-                      <span>{cat.label}</span>
-                      <span className="text-xs text-gray-400">{categoryCounts[cat.key] || 0}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Mobile category scroll */}
-            <div className="lg:hidden mb-6">
-              <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-                <button onClick={() => setActiveCategory('all')} className={`px-4 py-2 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${activeCategory === 'all' ? 'bg-[#2873F5] text-white border-[#2873F5]' : 'bg-white text-gray-600 border-gray-200'}`}>{t.allArticles}</button>
-                {t.categories.map((cat) => (
-                  <button key={cat.key} onClick={() => setActiveCategory(cat.key)} className={`px-4 py-2 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${activeCategory === cat.key ? 'bg-[#2873F5] text-white border-[#2873F5]' : 'bg-white text-gray-600 border-gray-200'}`}>{cat.label}</button>
-                ))}
+      {/* D2 精选区 — 满版浅蓝带: 头条 2:1 + 次条 2 卡横排 */}
+      <section className="bg-[#F2F6FF]">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          {featured.length > 0 && (
+            <>
+              <div className="flex items-center justify-between mb-6">
+                <p className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5]">{t.featured}</p>
+                <span className="text-xs text-gray-500">{filteredPosts.length} {locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts'}</span>
               </div>
-            </div>
-
-            {/* Hot products card */}
-            <div className="mt-2 rounded-2xl border border-gray-100 bg-[#F9FAFB] p-5">
-              <p className="text-sm font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.hotProducts}</p>
-              <ul className="space-y-3">
-                {hotProducts.map((prod) => (
-                  <li key={prod.slug}>
-                    <Link href={`${localePrefix}/product/${prod.slug}/`} className="flex items-center gap-3 group">
-                      <span className="w-12 h-12 rounded-lg bg-white border border-gray-100 overflow-hidden flex-shrink-0">
-                        {getProductMainImage(prod, locale) ? <Image src={getProductMainImage(prod, locale)} alt={getProductTitle(prod, locale)} width={48} height={48} className="object-cover w-full h-full" /> : null}
-                      </span>
-                      <span className="min-w-0">
-                        <span className="block text-[13.5px] font-semibold text-[#111827] group-hover:text-[#2873F5] truncate">{getProductTitle(prod, locale)}</span>
-                        <span className="block text-xs text-[#F87314] font-bold mt-0.5">{convertPriceRangeString(prod.price_range, locale, prod.category_slug, prod.slug)}</span>
-                      </span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </aside>
-
-          {/* Main: article grid */}
-          <div className="flex-1 min-w-0 w-full">
-            <div className="flex items-baseline justify-between mb-6">
-              <h2 className="text-xl md:text-2xl font-extrabold text-[#111827]">{activeCategory === 'all' ? t.allArticles : t.categories.find((c) => c.key === activeCategory)?.label}</h2>
-              <span className="text-sm text-gray-400">{filteredPosts.length} {countSuffix}</span>
-            </div>
-
-            {featured.length > 0 && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {featured.map((post) => (
-                  <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group flex flex-col rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 bg-white">
-                    {post.image ? (
-                      <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
-                        <Image src={post.image} alt={post.title} width={640} height={360} className="object-cover w-full h-full group-hover:scale-[1.02] transition-transform duration-300" />
-                      </div>
-                    ) : null}
-                    <div className="p-5 md:p-6 flex flex-col flex-1">
-                      <div className="flex items-center gap-3 text-xs text-gray-400 mb-2.5">
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EFF4FF] text-[#2873F5] px-2.5 py-1 font-semibold"><Tag size={13} />{post.categoryLabel}</span>
-                        <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{post.date}</span>
-                      </div>
-                      <h3 className="text-lg md:text-xl font-extrabold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
-                      <p className="mt-2.5 text-sm text-gray-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-[#F87314]">
-                        {t.readMore}
-                        <ChevronRight size={16} />
-                      </span>
+              <div className="grid lg:grid-cols-3 gap-6 items-stretch">
+                {/* 头条大图卡 2:1 */}
+                <Link
+                  href={`${localePrefix}/blog/${featured[0].slug}/`}
+                  className="lg:col-span-2 group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:border-[#2873F5] hover:shadow-lg transition-all"
+                >
+                  <CardCover image={featured[0].image} alt={featured[0].title} ratio="aspect-[2/1]" label={featured[0].categoryLabel} />
+                  <div className="p-6 md:p-8">
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${getCategoryColor(featured[0].categoryKey).bg} ${getCategoryColor(featured[0].categoryKey).text}`}>
+                      {featured[0].categoryLabel}
+                    </span>
+                    <h2 className="mt-3 text-xl md:text-2xl font-extrabold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{featured[0].title}</h2>
+                    <p className="mt-3 text-[15px] text-gray-600 leading-relaxed line-clamp-2">{featured[0].excerpt}</p>
+                    <div className="mt-4 flex items-center gap-4 text-xs text-gray-500">
+                      <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{featured[0].date}</span>
+                      <span className="inline-flex items-center gap-1.5"><Clock size={13} />{readMinText(featured[0].readMin)}</span>
                     </div>
-                  </Link>
-                ))}
-              </div>
-            )}
+                    <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#F87314]">
+                      {t.readMore}
+                    </span>
+                  </div>
+                </Link>
 
-            {rest.length > 0 && (
-              <div className="mt-10">
-                <h3 className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-2">{t.moreArticles}</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
-                  {rest.map((post) => (
-                    <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group py-5 border-b border-gray-100 flex items-start gap-4">
-                      {post.image ? (
-                        <div className="w-24 h-16 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
-                          <Image src={post.image} alt={post.title} width={160} height={112} className="object-cover w-full h-full" />
+                {/* 次条 2 卡横排 (右列纵向) */}
+                <div className="flex flex-col gap-6">
+                  {featured.slice(1, 3).map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`${localePrefix}/blog/${post.slug}/`}
+                      className="group flex-1 bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:border-[#2873F5] hover:shadow-lg transition-all"
+                    >
+                      <CardCover image={post.image} alt={post.title} ratio="aspect-[16/9]" label={post.categoryLabel} />
+                      <div className="p-5">
+                        <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.categoryKey).bg} ${getCategoryColor(post.categoryKey).text}`}>
+                          {post.categoryLabel}
+                        </span>
+                        <h3 className="mt-3 text-lg font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
+                        <div className="mt-3 flex items-center gap-4 text-xs text-gray-500">
+                          <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{post.date}</span>
+                          <span className="inline-flex items-center gap-1.5"><Clock size={13} />{readMinText(post.readMin)}</span>
                         </div>
-                      ) : null}
-                      <div className="min-w-0">
-                        <span className="text-xs text-[#2873F5] font-semibold">{post.categoryLabel} · {post.date}</span>
-                        <h4 className="text-[15px] font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2 mt-1">{post.title}</h4>
                       </div>
                     </Link>
                   ))}
                 </div>
               </div>
-            )}
-
-            {filteredPosts.length === 0 && (
-              <div className="py-20 text-center text-gray-400">
-                {locale === 'zh-hk' ? '暫無相關文章' : locale === 'ja' ? '関連記事はありません' : 'No articles yet'}
-              </div>
-            )}
-          </div>
+            </>
+          )}
         </div>
+      </section>
 
-        {/* Bottom inquiry CTA */}
-        <section className="mt-14 rounded-2xl bg-[#0F1F3D] px-6 md:px-10 py-10 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      {/* D3 分类筛选条 (单行紧凑, SpecFinder 语言) + D4 文章网格 (白底 3 列) */}
+      <section className="bg-white">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          <div className="flex gap-2.5 overflow-x-auto pb-3 -mx-1 px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            <button
+              onClick={() => setActiveCategory('all')}
+              className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-colors border ${
+                activeCategory === 'all'
+                  ? 'bg-[#F87314] border-[#F87314] text-white shadow-sm shadow-orange-500/30'
+                  : 'bg-white border-gray-200 text-[#333333] hover:border-[#2873F5] hover:text-[#2873F5]'
+              }`}
+            >
+              {t.allArticles}
+              <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-gray-400'}`}>{allPosts.length}</span>
+            </button>
+            {t.categories.filter((c) => categoryCounts[c.key]).map((c) => (
+              <button
+                key={c.key}
+                onClick={() => setActiveCategory(c.key)}
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-colors border ${
+                  activeCategory === c.key
+                    ? 'bg-[#F87314] border-[#F87314] text-white shadow-sm shadow-orange-500/30'
+                    : 'bg-white border-gray-200 text-[#333333] hover:border-[#2873F5] hover:text-[#2873F5]'
+                }`}
+              >
+                {c.label}
+                <span className={`text-xs ${activeCategory === c.key ? 'text-white/80' : 'text-gray-400'}`}>{categoryCounts[c.key]}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* 3 列白卡网格 — hover 仅边框+阴影 (禁缩放位移) */}
+          {rest.length > 0 ? (
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {rest.map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`${localePrefix}/blog/${post.slug}/`}
+                  className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:border-[#2873F5] hover:shadow-lg transition-all"
+                >
+                  <CardCover image={post.image} alt={post.title} ratio="aspect-[16/9]" label={post.categoryLabel} />
+                  <div className="p-5">
+                    <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold ${getCategoryColor(post.categoryKey).bg} ${getCategoryColor(post.categoryKey).text}`}>
+                      {post.categoryLabel}
+                    </span>
+                    <h3 className="mt-3 text-[17px] font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
+                    <p className="mt-2.5 text-sm text-gray-600 leading-relaxed line-clamp-2">{post.excerpt}</p>
+                    <div className="mt-4 flex items-center gap-4 text-xs text-gray-500">
+                      <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{post.date}</span>
+                      <span className="inline-flex items-center gap-1.5"><Clock size={13} />{readMinText(post.readMin)}</span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            filteredPosts.length === 0 && (
+              <div className="py-20 text-center text-gray-400">{t.empty}</div>
+            )
+          )}
+        </div>
+      </section>
+
+      {/* D5 页底 CTA — 藏青渐变 + 橙免費報價 + 绿 WhatsApp */}
+      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-14 md:pb-20">
+        <div className="rounded-2xl overflow-hidden text-white px-6 md:px-10 py-10 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6" style={{ background: 'var(--color-royal-navy-grad)' }}>
           <div>
             <h2 className="text-xl md:text-2xl font-extrabold text-white">
               {locale === 'zh-hk' ? '睇完仲未決定？' : locale === 'ja' ? 'まだお決まりでないですか？' : 'Still deciding?'}
@@ -388,20 +416,20 @@ export default function BlogContent({ locale }: { locale: Locale }) {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
-            <a href={`https://wa.me/8619880851334`} target="_blank" rel="noopener noreferrer"
+            <Link href={`${localePrefix}/quote/`}
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
+              data-event="contact_click" data-source="blog-bottom-cta" data-locale={locale}>
+              {locale === 'zh-hk' ? '免費報價' : locale === 'ja' ? '無料見積もり' : 'Free Quote'}
+            </Link>
+            <a href={`https://wa.me/8619880851334`} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#25D366] text-white font-bold px-6 py-3 shadow-lg shadow-green-500/30 hover:brightness-105 transition-all"
               data-event="whatsapp_click" data-source="blog-bottom-cta" data-locale={locale}>
               <MessageCircle size={17} />
               {locale === 'zh-hk' ? 'WhatsApp 詢價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp Us'}
             </a>
-            <Link href={`${localePrefix}/contact/`}
-              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 text-white font-bold px-6 py-3 hover:bg-white/10 transition-all"
-              data-event="contact_click" data-source="blog-bottom-cta" data-locale={locale}>
-              {locale === 'zh-hk' ? '填寫詢價表' : locale === 'ja' ? '見積もりフォーム' : 'Quote Form'}
-            </Link>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }

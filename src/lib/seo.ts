@@ -946,6 +946,9 @@ export function generateBusinessJsonLd(locale: Locale) {
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: nap.phone,
+      // G4 (v9.2.3): contactPoint 补 邮箱 + WhatsApp (真实 NAP, §13.10 脱钩 — 法务层必须真实)
+      email: nap.email,
+      url: `https://wa.me/${nap.phone.replace(/[^0-9]/g, '')}`,
       contactType: config.contactType,
       availableLanguage: locale === 'zh-hk'
         ? ['Chinese', 'English']
