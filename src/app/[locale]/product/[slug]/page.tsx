@@ -339,8 +339,6 @@ export default function ProductPage({
   // 2026-09-10 C1 (v9.2.1): PDP v9 模板门控扩至 zh-hk 全 SKU (原仅 waterproof-stickers)。
   // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367; en/ja 至 C2/C3。
   const isV9Pdp = (l: Locale): boolean => l === 'zh-hk';
-  // v9.1 工厂实证图 (海德堡柯式印刷机组; 盘上实存 public/images/factory/factory-heidelberg.webp)
-  const PDP_FACTORY_IMAGE = '/images/factory/factory-heidelberg.webp';
   
   return (
     <>
@@ -371,7 +369,6 @@ export default function ProductPage({
           faqItems={faqItems ?? []}
           longDesc={longDesc ?? ''}
           skuBody={skuSeo?.seo?.[locale]?.body ?? ''}
-          factoryImage={PDP_FACTORY_IMAGE}
         />
       ) : (
       <main className="min-h-screen bg-gray-50">

@@ -37,7 +37,6 @@ export function ProductPageV9({
   faqItems,
   longDesc,
   skuBody,
-  factoryImage,
 }: {
   locale: Locale;
   product: Product;
@@ -48,7 +47,6 @@ export function ProductPageV9({
   faqItems: { q: string; a: string }[];
   longDesc: string;
   skuBody: string;
-  factoryImage: string;
 }) {
   const localePrefix = `/${locale}`;
   // C1 泛化 (2026-09-10): 单位词按产品 price_range 派生 (張/本/個/套…), 不再硬编码 張
@@ -124,9 +122,10 @@ export function ProductPageV9({
     ['港九新界順豐', '滿$500包郵'],
   ];
 
-  /* C1 泛化: 工廠實拍按品类工艺对号入座 (任务C 清单 item 6; 文件 `ls public/images/factory/` 实证)
-     柯式类 (传单/海报/书籍等) → heidelberg-6plus1; 贴纸(stickers) 保持蓝本 slot1=factoryImage(generic 海德堡, K3 定型页原图);
-     不干胶标签(stickers slot3) → weigang; 数码/包装类 → hpindigo */
+  /* C1 泛化: 工廠實拍按品类工艺对号入座 (任务C 清单 item 6 + 老板 9/10 指示:
+     PDP 内凡柯式印刷图统一用 factory-heidelberg.webp 实拍机图, 即食品包裝線同款;
+     文件 `ls public/images/factory/` 实证全部实存) */
+  const HKD_MACHINE: [string, string, string] = ['/images/factory/factory-heidelberg.webp', '柯式印刷', '海德堡柯式印刷機組'];
   const PROC_MAIN: Record<string, [string, string, string]> = {
     packaging: ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
     'paper-bags': ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
@@ -134,17 +133,12 @@ export function ProductPageV9({
   };
   const PROC_ALT: Record<string, [string, string, string]> = {
     stickers: ['/images/factory/factory-weigang-uv.webp', '不乾膠專用', '輪轉 UV 印刷機 · 貼紙標籤專線'],
-    packaging: ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
-    'paper-bags': ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
-    banners: ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
   };
   const proofImages: [string, string, string][] = [
-    PROC_MAIN[product.category_slug] ??
-      (product.category_slug === 'stickers'
-        ? [factoryImage, '印刷', '海德堡柯式印刷機組'] /* 蓝本原图不动 */
-        : ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組']),
+    PROC_MAIN[product.category_slug] ?? HKD_MACHINE,
     ['/images/factory/factory-color-chart.webp', '品控', 'ICC 色彩管理 · 對色實景'],
-    PROC_ALT[product.category_slug] ?? ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
+    PROC_ALT[product.category_slug] ??
+      (PROC_MAIN[product.category_slug] ? HKD_MACHINE : ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線']),
   ];
 
   const renderBodyPara = (p: string, key: string) => {
