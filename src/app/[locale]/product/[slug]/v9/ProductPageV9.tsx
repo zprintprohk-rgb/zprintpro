@@ -222,15 +222,15 @@ export function ProductPageV9({
 
       {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據）+ .rail 側欄（修訂輪8 #4: 按第四張圖藍本效果重做 — 橙色大數字+標題行+28px 橫條+虛線分隔+最抵標籤+規格右上註） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
+          <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
+          Price Ladder · 參考價
+        </div>
+        <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
+          訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
+        </h2>
         <div className="grid gap-9 lg:grid-cols-[minmax(0,15fr)_minmax(0,7fr)] items-stretch">
           <div>
-            <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
-              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
-              Price Ladder · 參考價
-            </div>
-            <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
-              訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
-            </h2>
             <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col h-full">
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
