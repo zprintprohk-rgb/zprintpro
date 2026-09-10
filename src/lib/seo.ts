@@ -1134,7 +1134,9 @@ export function generateProductJsonLd(
   price: number,
   currency: string = 'HKD',
   rating?: ProductRatingInput,
-  locale: string = 'zh-hk'
+  locale: string = 'zh-hk',
+  // v9.2.2 裁决3.3 (P1, 随 C2): 有价格表 SKU 传真实 Offer {price,currency}, 无表 SKU 传 null → 只挂 Product 不挂 Offer
+  offerData?: { price: string; currency: string } | null
 ) {
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
@@ -1149,11 +1151,14 @@ export function generateProductJsonLd(
       url: siteConfig.url,
       logo: siteConfig.logo,
     },
-    offers: {
-      '@type': 'Offer',
-      url: `${siteConfig.url}/${locale}/product/${slug}/`,
-      priceCurrency: currency,
-      price: (price ?? 0).toString(),
+    ...(offerData === null
+      ? {}
+      : {
+      offers: {
+        '@type': 'Offer',
+        url: `${siteConfig.url}/${locale}/product/${slug}/`,
+        priceCurrency: offerData ? offerData.currency : currency,
+        price: offerData ? offerData.price : (price ?? 0).toString(),
       // 2026-08-08 K3 14:56 GMC 缺价修复: 加 priceValidUntil (GMC 必填) + sku (GMC 强烈建议)
       //  注: hasMerchantReturnPolicy 在 L1188 en branch 统一加 (3 locale 兼容), 这里不再重复
       // 2026-08-11 K3 GSC warning 修复: GSC「商家信息」要求 validFrom (报价起始日), 5 PDP 缺这个字段
@@ -1245,7 +1250,8 @@ export function generateProductJsonLd(
           : 'Custom printed products are non-returnable. Digital proof provided before production.',
         applicableCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
       },
-    },
+      },
+      })
   };
 
   if (rating && rating.ratingValue) {
