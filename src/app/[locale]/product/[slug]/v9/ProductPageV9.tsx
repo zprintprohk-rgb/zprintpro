@@ -288,11 +288,11 @@ export function ProductPageV9({
           style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
         >
           <div className="grid gap-6 md:grid-cols-[1fr_1fr_320px]">
-            <div>
+            <div className="p-5">
               <div className="font-extrabold text-[19px] mb-1.5 text-white">標準 5-7 天</div>
               <p className="text-[15px] text-white/90 leading-[1.65]">HP Indigo 15K B2 數碼產線 · 提交檔案後 1 小時內免費數碼打稿 · 平均 2.3 天出貨，急單即日出貨</p>
             </div>
-            <div>
+            <div className="p-5">
               <div className="font-extrabold text-[19px] mb-1.5 text-white">DHL 全球 2-4 天</div>
               <p className="text-[15px] text-white/90 leading-[1.65]">順豐香港本地送貨 · 港島/九龍/新界 24 小時達 · DHL 全球 2-4 日</p>
             </div>
