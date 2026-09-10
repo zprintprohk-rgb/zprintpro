@@ -2,8 +2,10 @@
 
 /**
  * SpecFinder 緊湊版（藍本 design/plp-v9.html §SpecFinder, K3 拍板: 網格之後的挽回工具）
- * 選項文案取自藍本；「材質」選項映射到真實貼紙 SKU（products.ts 實存 slug），
+ * 選項文案取自藍本；「材質」選項映射到真實 SKU（products.ts 實存 slug），
  * 「不確定」走 WhatsApp 預填模板（category-conversion-blocks 報價貼紙模板）。
+ * B1 泛化 (2026-09-10): 新增 options prop — 非 stickers 類目由 products 實數據派生
+ * 材質/數量選項（內容零編造）; 不傳 options = 沿用貼紙硬編碼默認（定型頁逐像素不變）。
  */
 
 import { useState } from 'react';
@@ -22,14 +24,28 @@ const MATERIAL_TO_SLUG: Record<string, string> = {
 
 const QTY_OPTIONS = ['100 張', '500 張', '1000 張'];
 
-export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string }) {
+export interface SpecFinderOptions {
+  purposes?: string[];
+  materials: { label: string; slug: string }[];
+  quantities: string[];
+  defaultSlug: string;
+}
+
+export function SpecFinderV9({ locale, waUrl, options }: { locale: Locale; waUrl: string; options?: SpecFinderOptions }) {
   const router = useRouter();
-  const [purpose, setPurpose] = useState(PURPOSE_OPTIONS[0]);
-  const [material, setMaterial] = useState(Object.keys(MATERIAL_TO_SLUG)[0]);
-  const [qty, setQty] = useState(QTY_OPTIONS[0]);
+  const purposes = options?.purposes ?? PURPOSE_OPTIONS;
+  const materials =
+    options?.materials ??
+    Object.entries(MATERIAL_TO_SLUG).map(([label, slug]) => ({ label, slug }));
+  const quantities = options?.quantities ?? QTY_OPTIONS;
+  const defaultSlug = options?.defaultSlug ?? 'waterproof-stickers';
+
+  const [purpose, setPurpose] = useState(purposes[0] ?? '');
+  const [material, setMaterial] = useState(materials[0]?.label ?? '');
+  const [qty, setQty] = useState(quantities[0] ?? '');
 
   const go = () => {
-    const target = MATERIAL_TO_SLUG[material] ?? 'waterproof-stickers';
+    const target = materials.find((m) => m.label === material)?.slug ?? defaultSlug;
     router.push(`/${locale}/product/${target}/`);
   };
 
@@ -42,18 +58,22 @@ export function SpecFinderV9({ locale, waUrl }: { locale: Locale; waUrl: string 
       style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
     >
       <b className="text-[16px] whitespace-nowrap">30 秒找到你的規格：</b>
-      <select aria-label="用途" className={selectCls} value={purpose} onChange={(e) => setPurpose(e.target.value)}>
-        {PURPOSE_OPTIONS.map((o) => (
-          <option key={o} value={o}>用途：{o}</option>
-        ))}
-      </select>
-      <select aria-label="材質" className={selectCls} value={material} onChange={(e) => setMaterial(e.target.value)}>
-        {Object.keys(MATERIAL_TO_SLUG).map((o) => (
-          <option key={o} value={o}>{o}</option>
-        ))}
-      </select>
+      {purposes.length > 0 && (
+        <select aria-label="用途" className={selectCls} value={purpose} onChange={(e) => setPurpose(e.target.value)}>
+          {purposes.map((o) => (
+            <option key={o} value={o}>用途：{o}</option>
+          ))}
+        </select>
+      )}
+      {materials.length > 0 && (
+        <select aria-label="材質" className={selectCls} value={material} onChange={(e) => setMaterial(e.target.value)}>
+          {materials.map((o) => (
+            <option key={o.label} value={o.label}>{o.label}</option>
+          ))}
+        </select>
+      )}
       <select aria-label="數量" className={selectCls} value={qty} onChange={(e) => setQty(e.target.value)}>
-        {QTY_OPTIONS.map((o) => (
+        {quantities.map((o) => (
           <option key={o} value={o}>{o}</option>
         ))}
       </select>

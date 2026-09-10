@@ -315,9 +315,11 @@ export default function CategoryPage({
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
-  // 2026-09-09 PLP v9.1 樷板路由门控 (执行卡锁定点 2): 仅 zh-hk /category/stickers/ 走 v9 渲染层,
-  // 其余 15 品类 + en/ja 渲染零影响 (legacy 分支原样保留)
-  const isV9Stickers = locale === 'zh-hk' && slug === 'stickers';
+  // 2026-09-10 v9.2 任务 B1: zh-hk 全 16 品类走 v9 渲染层 (stickers 定型页泛化为可复用模板);
+  // en/ja 渲染零影响 (legacy 分支原样保留, B2/B3 批次处理)。
+  // 显式 :boolean 返回类型: 禁用 TS 5.5+ 推断类型谓词, 否则 else 分支 locale 被收窄为 'en'|'ja',
+  // legacy 分支内既有的 locale==='zh-hk' 判断会报 TS2367。
+  const isV9ZhHk = (l: Locale): boolean => l === 'zh-hk';
 
   // Sort options — 必须在 t 声明后 (依赖 t.popularity / t.priceAsc / t.priceDesc)
   const sortOptions: { value: string; label: string }[] = [
@@ -377,11 +379,12 @@ export default function CategoryPage({
         return <JsonLd data={mergedFaq} />;
       })()}
 
-      {isV9Stickers ? (
+      {isV9ZhHk(locale) ? (
         <CategoryPageV9
           locale={locale}
           slug={slug}
           categoryName={categoryName}
+          categoryNameEn={category.nameEn ?? category.name}
           pageH1={pageH1}
           products={sortedProducts}
         />
