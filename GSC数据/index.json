@@ -1,11 +1,11 @@
 {
   "schema": "gsc-data-index-v1",
-  "lastBuild": "2026-09-03T15:25:00+08:00",
+  "lastBuild": "2026-09-11T03:20:00+08:00",
   "host": "zprintpro.com",
   "freshnessGateHours": 72,
   "totalFiles": 123,
   "skippedFiles": 0,
-  "latestFreshData": "2026-09-03",
+  "latestFreshData": "2026-09-10",
   "stalenessDays": 0,
   "freshnessStatus": "FRESH",
   "filesByDate": {
@@ -19,7 +19,8 @@
     "2026-08-12": 4,
     "2026-08-13": 28,
     "2026-08-17": 28,
-    "extracted-0809": 7
+    "extracted-0809": 7,
+    "2026-09-10": 12
   },
   "freshnessRule": ">72h = STALE, 禁止输出带数字结论, 触发刷新, 9/3 15:00 GSC 校准窗口",
   "dataDimensions": [
@@ -650,5 +651,15 @@
     }
   ],
   "gsc-api-fresh-data-format": "gsc-fresh-YYYY-MM-DD.json (per §J-1.1 落盘义务, 9/3 15:00 启用)",
-  "actionRequired": "9/3 15:00 GSC 校准窗口: ① 拉新数据 → ② 按 gsc-fresh-2026-09-03.json 格式落盘 → ③ 更新 index.json"
+  "actionRequired": "9/3 15:00 GSC 校准窗口: ① 拉新数据 → ② 按 gsc-fresh-2026-09-03.json 格式落盘 → ③ 更新 index.json",
+  "notes": {
+    "2026-09-10": {
+      "files": 12,
+      "source": "xlsx 真总量 (24h/7d/28d × hk/en/ja/汇总)",
+      "parsed": [
+        ".hermes/hk28d-queries.json",
+        ".hermes/enja28d-queries.json"
+      ]
+    }
+  }
 }
