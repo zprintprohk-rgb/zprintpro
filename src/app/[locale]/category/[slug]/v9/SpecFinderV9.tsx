@@ -33,7 +33,9 @@ export interface SpecFinderOptions {
 
 export function SpecFinderV9({ locale, waUrl, options }: { locale: Locale; waUrl: string; options?: SpecFinderOptions }) {
   const router = useRouter();
-  const purposes = options?.purposes ?? PURPOSE_OPTIONS;
+  // B1 探针修正 (2026-09-10): options 模式未显式给 purposes → 默认 [] (隐藏用途下拉, 防贴纸用途选项泄漏到其他品类);
+  // 仅无 options (stickers 定型页) 才用硬编码 PURPOSE_OPTIONS。
+  const purposes = options ? (options.purposes ?? []) : PURPOSE_OPTIONS;
   const materials =
     options?.materials ??
     Object.entries(MATERIAL_TO_SLUG).map(([label, slug]) => ({ label, slug }));
