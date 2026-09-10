@@ -114,7 +114,7 @@ const categoryCounts: Record<string, number> = {
 
 // 下拉菜單對齊偏移（居中以按鈕中心為基準，再偏移）
 const dropdownOffsets: Record<string, string> = {
-  'paper-bags': 'translateX(calc(-50% + 240px))',
+  'paper-bags': 'translateX(calc(-50% - 240px))',
   'flyers': 'translateX(calc(-50% + 160px))',
   'stickers': 'translateX(calc(-50% + 80px))',
   'packaging': 'translateX(-50%)',
