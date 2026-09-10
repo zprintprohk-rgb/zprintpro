@@ -27,7 +27,7 @@ import {
   getPriceUnitWord,
 } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { SpecFinderV9 } from './SpecFinderV9';
+import { SpecFinderV9, SpecFinderOptions } from './SpecFinderV9';
 import { TrustBadgeBlock } from './TrustBadgeBlock';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
@@ -113,12 +113,14 @@ export function CategoryPageV9({
   locale,
   slug,
   categoryName,
+  categoryNameEn,
   pageH1,
   products,
 }: {
   locale: Locale;
   slug: string;
   categoryName: string;
+  categoryNameEn: string;
   pageH1: string;
   products: Product[];
 }) {
@@ -148,10 +150,58 @@ export function CategoryPageV9({
   const guideKey = guide?.paragraphs?.find((p) => p.startsWith('行業場景速配')) ?? '';
   const guideBody = (guide?.paragraphs ?? []).filter((p) => p !== guideLead && p !== guideKey);
 
-  const bannerImage = `/images/hero/hero-sticker-${locale}.webp`;
+  // B1 泛化 (2026-09-10): hero 圖按真實文件名映射 (ls public/images/hero/ 實證, 禁止編造圖名)。
+  // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應 zh-hk 圖 → 藏青底漸變 (B2/B3 補圖後接入)。
+  const V9_HERO_BASE: Record<string, string> = {
+    stickers: 'hero-sticker',
+    flyers: 'hero-flyer',
+    packaging: 'hero-gift-box',
+    'paper-bags': 'hero-kraft-bag',
+    posters: 'hero-poster',
+    banners: 'hero-banners',
+    books: 'hero-books',
+    educational: 'hero-educational',
+    envelopes: 'hero-envelopes',
+    calendars: 'hero-calendars',
+    'red-packets': 'hero-red-packets',
+    menus: 'hero-menus',
+  };
+  const heroBase = V9_HERO_BASE[slug];
+  const bannerImage = heroBase ? `/images/hero/${heroBase}-${locale}.webp` : null;
   const minBase = products.reduce((m, p) => Math.min(m, p.basePrice), Number.POSITIVE_INFINITY);
   const mrailPrice = Number.isFinite(minBase) ? `HK$${minBase.toFixed(2)}` : '';
   const usCol = compare ? compare.columns.length - 1 : -1;
+
+  // B1 泛化: 產品網格 eyebrow — stickers 保持藍本「Sticker Printing」(定型頁逐像素不變),
+  // 其餘類目用各分類現有 nameEn (products.ts 註冊, 內容零改寫)。
+  const gridEyebrow = slug === 'stickers' ? 'Sticker Printing' : categoryNameEn;
+
+  // B1 泛化: 非 stickers 類目由 products 實數據派生 SpecFinder 材質/數量選項 (內容零編造)。
+  // stickers 不傳 options → SpecFinderV9 沿用硬編碼默認, 定型頁不變。
+  const specOptions: SpecFinderOptions | undefined =
+    slug === 'stickers'
+      ? undefined
+      : (() => {
+          const seen = new Set<string>();
+          const materials: { label: string; slug: string }[] = [];
+          for (const p of products) {
+            const m = p.specs?.material;
+            if (m && !seen.has(m)) {
+              seen.add(m);
+              materials.push({ label: `材質：${m}`, slug: p.slug });
+            }
+          }
+          const qtySeen = new Set<number>();
+          const quantities: string[] = [];
+          for (const p of products) {
+            if (!qtySeen.has(p.minQuantity)) {
+              qtySeen.add(p.minQuantity);
+              quantities.push(`${p.minQuantity} 起`);
+            }
+          }
+          quantities.sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+          return { materials, quantities, defaultSlug: products[0]?.slug ?? 'waterproof-stickers' };
+        })();
 
   const bannerCaps = ['免費打樣', '即日交貨', 'ISO9001 認證', '全港順豐速遞'];
 
@@ -163,15 +213,17 @@ export function CategoryPageV9({
           className="relative overflow-hidden h-[300px] md:h-[400px] text-white"
           style={{ backgroundColor: 'var(--color-royal-navy)' }}
         >
-          <Image
-            src={bannerImage}
-            alt={`${categoryName}全品類實拍`}
-            fill
-            className="object-cover"
-            unoptimized
-            priority
-            sizes="(max-width: 1320px) 100vw, 1320px"
-          />
+          {bannerImage && (
+            <Image
+              src={bannerImage}
+              alt={`${categoryName}全品類實拍`}
+              fill
+              className="object-cover"
+              unoptimized
+              priority
+              sizes="(max-width: 1320px) 100vw, 1320px"
+            />
+          )}
           {/* 對比度遮罩（token: --color-royal-navy-overlay）: 左深右淺, 保證 H1/麵包屑可讀 */}
           <div aria-hidden="true" className="absolute inset-0" style={{ background: 'var(--color-royal-navy-overlay)' }} />
           <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10">
@@ -204,6 +256,7 @@ export function CategoryPageV9({
         {/* 右欄 */}
         <div>
           {/* 1. 3 個直接答案（數據: conversion quickAnswers） */}
+          {quickAnswers.length > 0 && (
           <section className="mb-16">
             <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
               {quickAnswers.map((a) => (
@@ -217,10 +270,11 @@ export function CategoryPageV9({
               ))}
             </div>
           </section>
+          )}
 
           {/* 2. 產品網格（K3 拍板: SKU 優先; 數據: products.ts 同源） */}
           <section className="mb-16">
-            <Eyebrow>Sticker Printing · {products.length} 款規格</Eyebrow>
+            <Eyebrow>{gridEyebrow} · {products.length} 款規格</Eyebrow>
             <SectionTitle>{categoryName} — <em className="not-italic text-[#F87314]">{products.length} 款規格任選</em></SectionTitle>
             <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">共 {products.length} 款產品</p>
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-5 mt-6">
@@ -230,7 +284,7 @@ export function CategoryPageV9({
             </div>
 
             {/* 3. SpecFinder 緊湊版（K3 拍板: 網格之後的挽回工具） */}
-            <SpecFinderV9 locale={locale} waUrl={waUrl} />
+            <SpecFinderV9 locale={locale} waUrl={waUrl} options={specOptions} />
           </section>
 
           {/* 4. 核心競爭優勢（數據: seo.coreAdvantages） */}
