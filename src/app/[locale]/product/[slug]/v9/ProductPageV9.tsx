@@ -94,11 +94,12 @@ export function ProductPageV9({
     detailSections.push({ title: part.slice(0, end).trim(), html: part.slice(end + 5) });
   });
 
-  /* 場景長文: sku-seo body 分段；交稿規範段拆為側欄規格卡（文字全部來自 body 本身） */
+  /* 場景長文: sku-seo body 分段；交稿規範段拆為側欄規格卡（文字全部來自 body 本身）
+     v9.2.2 裁决1: bodyMain 排除 bodyLead (paras[0]) —— 蓝本 lead 与正文第1段重复 bug */
   const paras = (skuBody ?? '').split('\n\n').map((p) => p.trim()).filter(Boolean);
   const bodyLead = paras[0] ?? '';
   const specPara = paras.find((p) => p.startsWith('交稿規範：'));
-  const bodyMain = paras.filter((p) => p !== specPara);
+  const bodyMain = paras.filter((p) => p !== specPara && p !== bodyLead);
   const noteIdx = specPara ? specPara.indexOf('如未有設計檔案') : -1;
   const specNote = noteIdx >= 0 ? specPara!.slice(noteIdx) : '';
   const specRows: [string, string][] = [
