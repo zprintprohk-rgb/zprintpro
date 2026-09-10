@@ -92,6 +92,23 @@
 
 ## 六、执行结果（老板 9/10 拍板方案 A：立即执行 45 条 P0 ✅ 已上线）
 
+### 6.1 追加执行（9/11 00:11，老板拍板「6 冻结贺卡 不冻结，解冻，深入优化」✅ 已上线）
+
+- **解冻**: 6 贺卡族（premium/thick/foil/spot-uv/matte/rounded-corner）冻结窗提前解除（老板 9/11 直接拍板）
+- **深入优化范围**: 18 标题（v4 写满 50-54 + **品牌修复 ZprintPro→智印港** + 数字钩 100張起 HK$100-180 实值）+ 18 meta description（**150-160 字符补足/修剪**：原 zh 93-111 不足、en 222-241 超限、ja 111-127 不足）
+- **GSC 实证**: 贺卡簇仅 ja グリーティングカード 3imp（弱）→ 长尾①不可用，按补序走②数字钩子（products 实值 HK$100-320/100張）③工艺修饰（specs: 燙金/壓紋/局部UV/啞膠光膠/圓角）
+- **验证**: 18/18 标题当量 50-54 + 品牌分语言 + 18/18 desc 150-160；名片 0 / zh 无 ZprintPro 混入；tsc 54=54 / build ✓
+- **线上探针（deploy 后 10 条全过）**:
+  - zh-hk premium: `高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港`（原 45 不足 + ZprintPro 品牌错 → 修复）
+  - en matte: `Matte Greeting Cards 100pcs Soft-Touch | ZprintPro`（原 RED 63 → 写满）
+  - ja thick: `厚口400gカード印刷 100枚〜 箔押し・特急 | ZprintPro`（原 RED 63 → 写满）
+  - ja rounded / en thick / zh-hk foil / en premium / ja premium / zh-hk matte ✅
+  - 蓝本 waterproof-stickers 标题回归未动 ✅
+- commit `0ffc96c0`（分支）→ merge `61ffd7a8`（00:11:52 push）→ CF deploy `f42df6a3` success（5 poll）
+- **9/13 合批剩余**: en 10 + ja 6 + zh-hk 3 RED 遗留修剪（gang-run/white-card/tuck-end 等）+ en LEGACY 34 / ja 10 只读；观察项挂账
+
+## 附：执行建议（原文，已拍板）
+
 - **注入**: `src/data/sku-seo-data.ts` 45 条 title（15 SKU × 3 locale），body/其他字段未动
 - **验证**: 45/45 值匹配 + 当量 50-54 + 品牌分语言 + 简体 0 + 名片词 0；tsc 54=54（0 新增）/ build exit 0 / encoding ✓
 - **commit** → merge `0c154d68`（23:57:22 push）→ CF deploy `b4ce2e87` success（5 poll ~4min）
