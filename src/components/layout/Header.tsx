@@ -60,7 +60,7 @@ const translations = {
       'posters': 'Posters',
       'educational': 'Educational',
     },
-    navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational'] as const,
+    navOrder: ['flyers', 'stickers', 'packaging', 'posters', 'educational', 'paper-bags'] as const,
   },
   ja: {
     phone: '+86 198 8085 1334',
@@ -83,7 +83,7 @@ const translations = {
       'posters': 'ポスター印刷',
       'educational': '教育印刷',
     },
-    navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational'] as const,
+    navOrder: ['flyers', 'stickers', 'packaging', 'posters', 'educational', 'paper-bags'] as const,
   },
 };
 
