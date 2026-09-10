@@ -54,6 +54,26 @@ const SF = {
     },
     quantities: ['100 pcs', '500 pcs', '1000 pcs'],
   },
+  /* v9.2.1 B3 (2026-09-10): ja 最小功能标签 (SpecFinder 在 ja 无前例, 与 en 同属新 UI 元素, 列 B3 报告已知偏差);
+     材質選項對應同一組實存 SKU (products.ts 實證), 數量單位按 ja 慣例 枚 */
+  ja: {
+    title: '30秒で仕様を見つける：',
+    purposeLabel: '用途',
+    purposePrefix: '用途：',
+    materialLabel: '材質',
+    quantityLabel: '数量',
+    jump: '該当製品へ →',
+    note1: 'すべて実在SKUへ · 不明な場合は',
+    waAsk: 'WhatsAppで質問',
+    purposes: ['製品ラベル', '屋外使用', 'パッケージ封緘', 'プロモーション'],
+    materials: {
+      '材質：防水PVC': 'waterproof-stickers',
+      '材質：透明PVC': 'transparent-stickers',
+      '材質：コート紙': 'small-batch-stickers',
+      '材質：剥がせる粘着': 'removable-stickers',
+    },
+    quantities: ['100枚', '500枚', '1000枚'],
+  },
 } as const;
 
 export interface SpecFinderOptions {
@@ -65,8 +85,8 @@ export interface SpecFinderOptions {
 
 export function SpecFinderV9({ locale, waUrl, options }: { locale: Locale; waUrl: string; options?: SpecFinderOptions }) {
   const router = useRouter();
-  // 门控保证运行时 locale ∈ {zh-hk, en} (B2; ja 至 B3 才进 v9)
-  const sf = SF[locale as 'zh-hk' | 'en'];
+  // 门控保证运行时 locale ∈ {zh-hk, en, ja} (B3)
+  const sf = SF[locale as 'zh-hk' | 'en' | 'ja'];
   // B1 探针修正 (2026-09-10): options 模式未显式给 purposes → 默认 [] (隐藏用途下拉, 防贴纸用途选项泄漏到其他品类);
   // 仅无 options (stickers 定型页) 才用 per-locale 硬编码默认项。
   const purposes = options ? (options.purposes ?? []) : sf.purposes;

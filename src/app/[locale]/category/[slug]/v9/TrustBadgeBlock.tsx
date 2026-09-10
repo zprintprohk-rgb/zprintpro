@@ -47,6 +47,23 @@ const EN_CARDS: TrustCard[] = [
   { icon: Headphones, title: '24/7 Support', sub: 'Always Available', desc: 'Professional customer service online 24/7' },
 ];
 
+/* v9.2.1 B3 (2026-09-10): ja 版正文/物流/卡片 — 逐字复用站内现有 ja 条目 (源文件注释标注, 非新造, 禁机翻):
+   - intro: src/components/seo/RegionalContent.tsx L30 content.ja.expertIntro (ja 分类页在用)
+   - logistics: RegionalContent.tsx L27 content.ja.shipping
+   - cards: src/components/ProductWhyChooseUs.tsx ja.features (title/subtitle/description, ja 产品页在用) */
+const JA_INTRO =
+  '智印港（ZprintPro）は、彩龍印刷が運営する国際印刷サービスブランドです。深圳自社工場から、DHL Express で日本を含む全世界へ高品質印刷を輸出しています。日本市場特有の品質基準への適合、厳密な納期管理、日本語対応スタッフによる丁寧なサポートで、深圳から日本への高品質印刷輸出を実現します。';
+const JA_LOGISTICS =
+  '深圳から日本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応';
+const JA_CARDS: TrustCard[] = [
+  { icon: Factory, title: '深圳自社工場', sub: '15年以上の実績', desc: '彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理' },
+  { icon: Zap, title: '即日納品', sub: '特急24時間対応', desc: '標準3-5営業日、急ぎは最短当日' },
+  { icon: Truck, title: '国際配送', sub: '日本全国対応', desc: 'DHL・FedExで日本全国へ2〜4日配送' },
+  { icon: Clock, title: '無料サンプル', sub: '安心の注文', desc: '大口注文で実物サンプルを無料提供' },
+  { icon: ShieldCheck, title: '品質保証', sub: '100%満足保証', desc: '不満足な場合は無料再印刷、全額返金' },
+  { icon: Headphones, title: '24時間サポート', sub: '年中無休対応', desc: 'プロのカスタマーサービスが24時間対応' },
+];
+
 export interface TrustBadgeBlockProps {
   /** 眉題（默認 Why ZprintPro） */
   eyebrow?: string;
@@ -58,7 +75,8 @@ export interface TrustBadgeBlockProps {
   cards?: TrustCard[];
   /** 底色變體: light = 6 步落單流程同款 #F2F6FF（默認, PLP 用）; navy = 皇家藏青 token（修訂輪4, PDP 用） */
   variant?: 'light' | 'navy';
-  /** 語系 (B2 2026-09-10): 默認 zh-hk = 現行文案不變; en 走現有條目 (ProductWhyChooseUs en + RegionalContent en), ja 待 B3 */
+  /** 語系 (B2 2026-09-10): 默認 zh-hk = 現行文案不變; en 走現有條目 (ProductWhyChooseUs en + RegionalContent en);
+   *  ja (B3) 走 ProductWhyChooseUs ja + RegionalContent ja */
   locale?: Locale;
 }
 
@@ -72,10 +90,11 @@ export function TrustBadgeBlock({
 }: TrustBadgeBlockProps) {
   const navy = variant === 'navy';
   const en = locale === 'en';
-  // en: 正文/物流/卡片复用现有 en 条目 (本地常量, 源见文件头注释)
-  const resolvedParagraphs = paragraphs ?? (en ? [EN_INTRO] : [TRUST_COPY_INTRO]);
-  const resolvedLogistics = logistics !== undefined ? logistics : en ? EN_LOGISTICS : TRUST_COPY_LOGISTICS;
-  const resolvedCards = cards ?? (en ? EN_CARDS : TRUST_CARDS);
+  const ja = locale === 'ja';
+  // en/ja: 正文/物流/卡片复用现有条目 (本地常量, 源见文件头注释)
+  const resolvedParagraphs = paragraphs ?? (en ? [EN_INTRO] : ja ? [JA_INTRO] : [TRUST_COPY_INTRO]);
+  const resolvedLogistics = logistics !== undefined ? logistics : en ? EN_LOGISTICS : ja ? JA_LOGISTICS : TRUST_COPY_LOGISTICS;
+  const resolvedCards = cards ?? (en ? EN_CARDS : ja ? JA_CARDS : TRUST_CARDS);
   return (
     <section className="max-w-[1320px] mx-auto px-6 mb-16">
       {/* light: 底色與圓角 = 6 步落單流程區同款（bg-[#F2F6FF] + rounded-[22px]）
@@ -93,6 +112,8 @@ export function TrustBadgeBlock({
             <h2 className={`text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight ${navy ? 'text-white' : 'text-[#111827]'}`}>
               {en ? (
                 <>Why Choose <em className="not-italic text-[#F87314]">ZprintPro</em></>
+              ) : ja ? (
+                <>なぜ<em className="not-italic text-[#F87314]">ZprintPro</em>を選ぶ？</>
               ) : (
                 <>為何選擇<em className="not-italic text-[#F87314]">智印港</em></>
               )}
