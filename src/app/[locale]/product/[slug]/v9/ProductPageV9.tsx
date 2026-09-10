@@ -1,5 +1,5 @@
 /**
- * PDP v9.1 — 防水貼紙樣板路由渲染層（zh-hk 門控，僅 /zh-hk/product/waterproof-stickers/）
+ * PDP v9.1 — 樣板路由渲染層（C1 2026-09-10 起 zh-hk 全 SKU 門控；原僅 waterproof-stickers）
  * 藍本: design/pdp-v9.html 逐 section 映射；頁眉/頁腳沿用現有組件（凍結區）
  * 數據全部取自現有數據源（內容零改動）：
  *   - Hero/meta/規格: products.ts（sku_code/minQuantity/specs/features）
@@ -16,9 +16,10 @@ import {
   Product,
   getProductDisplayTitle,
   getProductsByCategory,
+  getCategoryName,
 } from '@/data/products';
 import { getProductImages, getProductMainImage } from '@/lib/product-image';
-import { getDisplayAnchor } from '@/lib/pricing';
+import { getDisplayAnchor, getPriceUnitWord } from '@/lib/pricing';
 import { getPriceTableForSlug } from '@/lib/price-injector';
 import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversion-blocks';
 import { GalleryV9 } from './GalleryV9';
@@ -31,6 +32,7 @@ export function ProductPageV9({
   product,
   productTitle,
   productDescription,
+  categoryName,
   h1,
   faqItems,
   longDesc,
@@ -41,6 +43,7 @@ export function ProductPageV9({
   product: Product;
   productTitle: string;
   productDescription: string;
+  categoryName: string;
   h1: string;
   faqItems: { q: string; a: string }[];
   longDesc: string;
@@ -48,14 +51,16 @@ export function ProductPageV9({
   factoryImage: string;
 }) {
   const localePrefix = `/${locale}`;
+  // C1 泛化 (2026-09-10): 单位词按产品 price_range 派生 (張/本/個/套…), 不再硬编码 張
+  const unitWord = getPriceUnitWord(product.price_range) || '件';
   const galleryImages = getProductImages(product, locale).length
     ? getProductImages(product, locale)
     : [getProductMainImage(product, locale)].filter(Boolean) as string[];
 
   const anchor = getDisplayAnchor(product.slug, locale);
 
-  /* 價格階梯（真實檔位） */
-  const table = getPriceTableForSlug('waterproof-stickers');
+  /* 價格階梯（真實檔位; C1: 按当前 SKU 查表, 无表 SKU 整段隐藏 — 禁编数字） */
+  const table = getPriceTableForSlug(product.slug);
   const cfg = table ? table.configs?.[Math.max(0, table.defaultConfigIndex ?? 0)] ?? table.configs?.[0] : undefined;
   const tiers = cfg?.tiers ?? [];
   const rows = tiers.map((t) => ({ qty: t.qty, total: t.priceHKD, unit: t.qty > 0 ? t.priceHKD / t.qty : 0 }));
@@ -65,7 +70,8 @@ export function ProductPageV9({
   const topRow = rows[rows.length - 1];
   const savePct = unitMax > 0 ? Math.round((1 - unitMin / unitMax) * 100) : 0;
 
-  const conv = getConversionBlocks('stickers', locale);
+  // C1 泛化: 6 步流程/WhatsApp 模板按所属品类取 (原硬编码 stickers 类目)
+  const conv = getConversionBlocks(product.category_slug, locale);
   const waTemplate = conv?.whatsappTemplates?.[0]?.message ?? '';
   const waUrl = buildWhatsAppUrl(waTemplate);
   const quoteUrl = `${localePrefix}/quote/`;
@@ -112,16 +118,29 @@ export function ProductPageV9({
 
   const metaRows: [string, string][] = [
     [product.sku_code, '產品編號'],
-    [`${product.minQuantity} 張`, '最低訂購量'],
+    [`${product.minQuantity}${unitWord}`, '最低訂購量'],
     ['5-7 天', '標準交期'],
     ['不滿意免費重印', '品質保證'],
     ['港九新界順豐', '滿$500包郵'],
   ];
 
+  /* C1 泛化: 工廠實拍按品类工艺对号入座 (任务C 清单 item 6; 文件 `ls public/images/factory/` 实证)
+     柯式类 (贴纸/传单/海报/书籍等) → heidelberg-6plus1; 不干胶标签类 → weigang; 数码/包装类 → hpindigo */
+  const PROC_MAIN: Record<string, [string, string, string]> = {
+    packaging: ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
+    'paper-bags': ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
+    banners: ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
+  };
+  const PROC_ALT: Record<string, [string, string, string]> = {
+    stickers: ['/images/factory/factory-weigang-uv.webp', '不乾膠專用', '輪轉 UV 印刷機 · 貼紙標籤專線'],
+    packaging: ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
+    'paper-bags': ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
+    banners: ['/images/factory/factory-heidelberg-6plus1.webp', '柯式印刷', '海德堡 6+1 色柯式印刷機組'],
+  };
   const proofImages: [string, string, string][] = [
-    [factoryImage, '印刷', '海德堡柯式印刷機組'],
+    PROC_MAIN[product.category_slug] ?? [factoryImage, '印刷', '海德堡柯式印刷機組'],
     ['/images/factory/factory-color-chart.webp', '品控', 'ICC 色彩管理 · 對色實景'],
-    ['/images/factory/factory-weigang-uv.webp', '不乾膠專用', '輪轉 UV 印刷機 · 貼紙標籤專線'],
+    PROC_ALT[product.category_slug] ?? ['/images/factory/factory-hpindigo.webp', '數碼印刷', 'HP Indigo 15K B2 數碼產線'],
   ];
 
   const renderBodyPara = (p: string, key: string) => {
@@ -152,7 +171,7 @@ export function ProductPageV9({
       <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-[13px] text-[#6B7280]">
         <a href={`${localePrefix}/`} className="text-[#6B7280] hover:text-[#2873F5]">首頁</a>
         {' / '}
-        <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[#6B7280] hover:text-[#2873F5]">貼紙印刷</a>
+        <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[#6B7280] hover:text-[#2873F5]">{categoryName}</a>
         {' / '}
         <span>{productTitle}</span>
       </div>
@@ -183,7 +202,7 @@ export function ProductPageV9({
             </div>
             {!anchor && (
               <div className="text-[13.5px] text-[#6B7280] mt-1.5 font-medium">
-                {topRow ? `${topRow.qty.toLocaleString('en-US')} 張起批 · 整批 HK$${topRow.total}` : '實價按規格報價'}
+                {topRow ? `${topRow.qty.toLocaleString('en-US')} ${unitWord}起批 · 整批 HK$${topRow.total}` : '實價按規格報價'}
               </div>
             )}
             <div className="text-[13.5px] text-[#6B7280] mt-0.5">{anchor ? anchor.sub : '滿$500包郵'}</div>
@@ -220,14 +239,15 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據）+ .rail 側欄（修訂輪8 #4: 按第四張圖藍本效果重做 — 橙色大數字+標題行+28px 橫條+虛線分隔+最抵標籤+規格右上註） ═══ */}
+      {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據; C1: 无价格表 SKU 整段隐藏, 禁编数字）+ .rail 側欄 ═══ */}
+      {rows.length > 0 && (
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
         <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
           <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
           Price Ladder · 參考價
         </div>
         <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
-          訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
+          訂得越多，<em className="not-italic text-[#F87314]">每{unitWord}越平</em>
         </h2>
         <div className="grid gap-9 lg:grid-cols-[minmax(0,15fr)_minmax(0,7fr)] items-stretch">
           <div>
@@ -235,7 +255,7 @@ export function ProductPageV9({
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
                   <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
-                  <div className="text-[16px] font-bold text-[#1F2937] mt-2">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs {rows[0] ? rows[0].qty.toLocaleString('en-US') : '50'} 張 · 每張慳幾</div>
+                  <div className="text-[16px] font-bold text-[#1F2937] mt-2">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} {unitWord} vs {rows[0] ? rows[0].qty.toLocaleString('en-US') : '50'} {unitWord} · 每{unitWord}慳幾</div>
                 </div>
                 {cfg?.label?.['zh-hk'] && (
                   <div className="hidden sm:block text-[14px] text-[#6B7280] text-right max-w-[260px] leading-[1.7]">{cfg.label['zh-hk']}</div>
@@ -247,7 +267,7 @@ export function ProductPageV9({
                     {r.unit === unitMin && (
                       <span className="absolute right-0 top-[-9px] bg-[#F87314] text-white text-[13px] font-bold px-[9px] py-[2px] rounded-full">最抵</span>
                     )}
-                    <span className="font-mono font-bold text-[16.5px] text-right whitespace-nowrap">{r.qty} 張</span>
+                    <span className="font-mono font-bold text-[16.5px] text-right whitespace-nowrap">{r.qty} {unitWord}</span>
                     <span className="relative h-[28px] bg-[#F3F4F6] rounded-[6px] overflow-hidden">
                       <span
                         className={`absolute left-0 top-0 bottom-0 rounded-[6px] min-w-[8px] ${r.unit === unitMin ? 'bg-[#F87314]' : 'bg-[#2873F5]'}`}
@@ -256,7 +276,7 @@ export function ProductPageV9({
                     </span>
                     <span className="text-right whitespace-nowrap">
                       <span className={`font-mono font-bold text-[19px] ${r.unit === unitMin ? 'text-[#F87314]' : 'text-[#1F2937]'}`}>HK${r.unit.toFixed(2)}</span>
-                      <span className="text-[14px] text-[#6B7280]">/張 · 整批 ${r.total}</span>
+                      <span className="text-[14px] text-[#6B7280]">/{unitWord} · 整批 ${r.total}</span>
                     </span>
                   </div>
                 ))}
@@ -267,7 +287,7 @@ export function ProductPageV9({
           <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between h-full">
             <div className="text-[14px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
             <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
-            <div className="text-[14.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
+            <div className="text-[14.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} ${unitWord}整批 HK$${bestRow.total}` : ''}</div>
             <dl className="border-t border-[#F0F1F3]">
               <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px]"><dt className="text-[#6B7280]">標準交期</dt><dd className="font-semibold">5-7 天</dd></div>
               <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px] font-bold"><dt className="text-[#6B7280] font-normal">即日急件</dt><dd className="font-bold">今天下單 · 明天 12 點前到</dd></div>
@@ -280,6 +300,7 @@ export function ProductPageV9({
           </div>
         </div>
       </section>
+      )}
 
       {/* ═══ 服務承諾一體色塊（修訂輪8 #5: 三塊合併為一條皇家藏青大色塊，內含三部分內容；即日急件橙色塊整體可點，鏈接即日印刷服務） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
@@ -394,7 +415,8 @@ export function ProductPageV9({
         </section>
       )}
 
-      {/* ═══ 藍本 .ufs 適用場景與檔案規格（sku-seo body 逐字; 交稿規範拆側欄卡） ═══ */}
+      {/* ═══ 藍本 .ufs 適用場景與檔案規格（sku-seo body 逐字; 交稿規範拆側欄卡; C1: 无 body SKU 整段隐藏防空段） ═══ */}
+      {(bodyLead || bodyMain.length > 0) && (
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
         <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
           <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
@@ -422,6 +444,7 @@ export function ProductPageV9({
           </aside>
         </div>
       </section>
+      )}
 
       {/* ═══ 為何選擇智印港 — 皇家藏青色塊（修訂輪4: PDP 用 navy 變體; PLP 保持 light; 組件復用 TrustBadgeBlock） ═══ */}
       <TrustBadgeBlock variant="navy" />
@@ -498,7 +521,7 @@ export function ProductPageV9({
       <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
         <span className="whitespace-nowrap">
           <span className="font-mono font-bold text-[#F87314] text-[16px]">{anchor ? anchor.big : product.price_range}</span>
-          <span className="text-[12.5px] text-[#6B7280]">{bestRow ? ` · ${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</span>
+          <span className="text-[12.5px] text-[#6B7280]">{bestRow ? ` · ${bestRow.qty.toLocaleString('en-US')} ${unitWord}整批 HK$${bestRow.total}` : ''}</span>
         </span>
         <a href={quoteUrl} className="flex-1 text-center bg-[#F87314] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">30 秒報價</a>
         <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-[#25D366] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">WhatsApp</a>
