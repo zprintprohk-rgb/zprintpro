@@ -6,8 +6,9 @@
 import { Metadata } from 'next';
 import { generateHomeMetadata, Locale } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
+import { generateOrganizationSchema, generateLocalBusinessSchema, generateWebsiteJsonLd } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
+import { MainCategoryEntry } from '@/components/home/MainCategoryEntry';
 import { MobileValueStrip } from '@/components/home/MobileValueStrip';
 import { MobileCategoryEntry } from '@/components/home/MobileCategoryEntry';
 import { HotProducts } from '@/components/home/HotProducts';
@@ -55,17 +56,21 @@ export default function HomePage({
   // 结构化数据 — 按地區切換 LocalBusiness / Organization
   const orgSchema = generateOrganizationSchema(locale);
   const localSchema = generateLocalBusinessSchema(locale);
+  // G1 (v9.2.3): WebSite + SearchAction (首页 AEO/GEO 实体归一)
+  const websiteSchema = generateWebsiteJsonLd();
 
   return (
     <>
       <link rel="preload" as="image" href={heroPreloadMap[locale]} type="image/webp" />
       {/* 结构化数据 */}
-      <JsonLd data={[orgSchema, localSchema]} />
+      <JsonLd data={[orgSchema, localSchema, websiteSchema]} />
       
       <main className="min-h-screen">
         {/* 2026-07-19: 移动端定位+卖点条 (lg:hidden), header 下方 / hero 上方 */}
         <MobileValueStrip locale={locale} />
         <HeroBanner locale={locale} />
+        {/* G1 (v9.2.3): Hero 下 AEO 直接答案句 + 主营品类 5 入口卡 */}
+        <MainCategoryEntry locale={locale} />
         {/* 2026-07-18 P9: 移动端产品分类入口 (lg:hidden), hero 之后 / 印刷流程之前 */}
         <MobileCategoryEntry locale={locale} />
         <TrustWaterfall locale={locale} />
