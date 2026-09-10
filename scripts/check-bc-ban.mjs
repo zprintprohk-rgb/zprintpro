@@ -70,11 +70,16 @@ function scanFile(abs) {
   const rel = relative(ROOT, abs) || abs;
   const lines = text.split(/\r?\n/);
   const fileDeprecated = lines.slice(0, DEPRECATED_HEAD_LINES).some((l) => l.includes(DEPRECATED_MARKER));
+  // 挂账2 清偿 (2026-09-10 K3 裁定): GSC_404_R2 redirect 源行严格豁免 —
+  // 豁免面严格限定 next.config.js 内 GSC_404_R2 数组块 (URL 对行 + 序号注释行)。
+  let inGsc404R2 = false;
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
+    if (rel === 'next.config.js' && /const\s+GSC_404_R2\s*=\s*\[/.test(line)) inGsc404R2 = true;
+    else if (inGsc404R2 && /^\s*\]\s*;/.test(line)) inGsc404R2 = false;
     if (!BC_RE.test(line)) continue;
     const entry = `${rel}:${i + 1}: ${line.trim().slice(0, 200)}`;
-    if (fileDeprecated || line.includes(DEPRECATED_MARKER) || REDIRECT_LINE_RE.test(line) || BC_TO_GREETING_RE.test(line) || DECLARATION_RE.test(line)) {
+    if (fileDeprecated || line.includes(DEPRECATED_MARKER) || inGsc404R2 || REDIRECT_LINE_RE.test(line) || BC_TO_GREETING_RE.test(line) || DECLARATION_RE.test(line)) {
       redirectAllowed.push(entry);
     } else {
       blocking.push(entry);
