@@ -56,8 +56,8 @@ export default function HomePage({
   // 结构化数据 — 按地區切換 LocalBusiness / Organization
   const orgSchema = generateOrganizationSchema(locale);
   const localSchema = generateLocalBusinessSchema(locale);
-  // G1 (v9.2.3): WebSite + SearchAction (首页 AEO/GEO 实体归一)
-  const websiteSchema = generateWebsiteJsonLd();
+  // G1 (v9.2.3): WebSite + SearchAction (首页 AEO/GEO 实体归一; target 按 locale 指向 /search/?q= 200 端点)
+  const websiteSchema = generateWebsiteJsonLd(locale);
 
   return (
     <>

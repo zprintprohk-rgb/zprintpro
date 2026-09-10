@@ -1544,8 +1544,9 @@ export function generateFaqJsonLd(faqs: { question: string; answer: string }[]) 
 }
 
 // 生成 WebSite 結構化數據
-// G1 (v9.2.3): + SearchAction → 真实 /search?q= 端点 (2026-09-11 确认 /search 路由存在且支持 q 参数)
-export function generateWebsiteJsonLd() {
+// G1 (v9.2.3): + SearchAction → 真实 /search/ 端点 (2026-09-11 确认 /search/?q= 三 locale 均 200, trailingSlash=true)
+// locale 参数化: target 带 locale 前缀 + 尾斜杠, 避免指向 308
+export function generateWebsiteJsonLd(locale: Locale = 'zh-hk') {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -1554,7 +1555,7 @@ export function generateWebsiteJsonLd() {
     url: siteConfig.url,
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteConfig.url}/search?q={search_term_string}`,
+      target: `${siteConfig.url}/${locale}/search/?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   };
