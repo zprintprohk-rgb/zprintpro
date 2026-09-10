@@ -6,7 +6,7 @@
 import { Metadata } from 'next';
 import { generateHomeMetadata, Locale } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { generateOrganizationSchema, generateLocalBusinessSchema, generateWebsiteJsonLd } from '@/lib/seo';
+import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
 import { MainCategoryEntry } from '@/components/home/MainCategoryEntry';
 import { MobileValueStrip } from '@/components/home/MobileValueStrip';
@@ -56,14 +56,13 @@ export default function HomePage({
   // 结构化数据 — 按地區切換 LocalBusiness / Organization
   const orgSchema = generateOrganizationSchema(locale);
   const localSchema = generateLocalBusinessSchema(locale);
-  // G1 (v9.2.3): WebSite + SearchAction (首页 AEO/GEO 实体归一; target 按 locale 指向 /search/?q= 200 端点)
-  const websiteSchema = generateWebsiteJsonLd(locale);
+  // WebSite + SearchAction 由 layout.tsx 全站统一渲染 (G1, target 按 locale, 避免首页重复)
 
   return (
     <>
       <link rel="preload" as="image" href={heroPreloadMap[locale]} type="image/webp" />
       {/* 结构化数据 */}
-      <JsonLd data={[orgSchema, localSchema, websiteSchema]} />
+      <JsonLd data={[orgSchema, localSchema]} />
       
       <main className="min-h-screen">
         {/* 2026-07-19: 移动端定位+卖点条 (lg:hidden), header 下方 / hero 上方 */}

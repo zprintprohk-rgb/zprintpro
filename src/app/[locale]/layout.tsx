@@ -176,10 +176,11 @@ export default function RootLayout({
             此处手渲染的 generateHreflangTags(safeLocale) 不带 path，
             会导致深层页（产品/分类）hreflang 全部指向 home URL，Google 区域信号紊乱。
             让所有 page 完全靠 metadata.alternates.languages 输出 hreflang。 */}
+        {/* G1 (v9.2.3): WebSite + SearchAction 全站统一, target 按 locale 指向 /search/?q= 200 端点 (trailingSlash=true) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateWebsiteJsonLd()),
+            __html: JSON.stringify(generateWebsiteJsonLd(safeLocale)),
           }}
         />
         {/* 2026-07-02 Bing Webmaster Tools 站驗證 — zsprintpro.com (msvalidate.01)

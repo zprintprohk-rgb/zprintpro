@@ -982,3 +982,17 @@ EOF · 2026-09-06 17:45 · M3 自决 (per K3 §0.28.7 8/28 11:52 派活包 M3 �
 - **修复**: V22 6 SKU → 真实 1:1 改名 slug; 裸 `/product/business-cards` 新增 3 locale × 2 形态 → `/category/greeting-cards/`; QUOTE_PRODUCT_MAP 9 行同修 (rounded-corner→SKU, double-sided/same-day/eco→category)
 - **排查确认不改**: GSC_404_REDIRECTS 循环 fallback 本为 category 目标 (L236-240) = 已正确; L366 无 locale map = 已正确
 - **数据来源**: node https 全链探针实测 zprintpro.com (en/zh-hk/ja, 10 URL) + products.ts slug 全量清单 + next.config.js L117-260 + middleware.ts L97-112 + tsc 基线 54(全 __tests__)/非测试 0
+
+---
+
+## 21. D-9/11-1 · K3 9/10 校准日复校残留: buying-guide 两处 404 断链 + IndexNow 提交链修复 (9/11 ~03:40, per K3-0910 cron A5 复校派单)
+
+- **现象实测** (GET 全链探针, 9/11 03:0x):
+  1. `/{locale}/product/business-card-buying-guide/` → 301(loc)/308(V22 product rule) → `/{locale}/product/greeting-card-buying-guide/` → **404** (落点产品页不存在; V22 数组同一条目双前缀生效, /blog/ 路径另有专块正确落 blog)
+  2. `裸/business-card-buying-guide(/)` → middleware 补 locale 301 → `/{locale}/business-card-buying-guide/` 无任何规则 = **404** (V22 只生成 /product/ 前缀)
+- **其余 BC 复校全绿**: V22 剩 4 SKU 落点 12 + en/ja category 2 = 14/14 为 200; 中间 503 为瞬时抖动(重试即过); 三语 sitemap(本地+线上) business-card 残留 = 0
+- **IndexNow 链修复**: `scripts/indexnow-auto-submit.py` KEY_LOCATION 指向旧 `indexnow-key.txt`(未部署, 线上 500) → 改指 D-9/2-15 真 key `b47438…a5d9.txt`(线上 200); `.hermes/secrets/indexnow-key.json` 同步换真 key(原 placeholder `zprintpro-indexnow-2026` = 9/1 提交 403 根因)
+- **修复**: next.config.js ①V22 移除 buying-guide 条目 ②新增 product 旧路径 ×3 locale → `/{locale}/blog/greeting-card-buying-guide/`(实测 200) ③新增裸路径 2 形态 → /zh-hk/blog/(前缀由 middleware 补); 备份 next.config.js.20260911-k3-buying-guide-404.bak / indexnow-auto-submit.py.20260911-key-fix.bak
+- **验证**: node 解析 next.config.js PASS / 回读断言(product 2 + 裸 1 + 落点 3 + V22 移除)PASS / py ast PASS / IndexNow 27 URL(blog 9 × 3 locale)HTTP 200 提交成功(日志 indexnow-2026-09-11-k3-calibration.json)
+- **待线上验证**: CF Pages 部署后复测 2 断链(预期 200); `/{locale}/blog/business-card-buying-guide/` 重定向归路复测
+- **数据来源**: 线上实测(Invoke-WebRequest GET/HEAD 全链) + next.config.js/middleware.ts 源码 + 63af89ab/42d897b2 git show + docs/2026-09-10-gsc-calibration-report.md 对照
