@@ -231,7 +231,7 @@ export function ProductPageV9({
             <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
               訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
             </h2>
-            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col">
+            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col h-full">
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
                   <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
@@ -264,7 +264,7 @@ export function ProductPageV9({
               <p className="text-[13.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
             </div>
           </div>
-          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between">
+          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between h-full">
             <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
             <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
             <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
