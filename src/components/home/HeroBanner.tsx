@@ -18,44 +18,15 @@ interface HeroBannerProps {
   locale: Locale;
 }
 
-// 每张轮播图定义不同的遮罩颜色和强调色（透明度变浅50%）
+// v9.2.1 裁决5 (K3 9/10 15:19 拍板): 首页轮播与分类 Banner 同族换橙渐变 (裁决4 同一令牌), 禁止引入新色。
+// 6 张轮播统一橙族遮罩 (深 #C2410C → 中 #EA580C → 透明), 取代原 6 色相遮罩; 遮罩仅控制文字对比, 不承载品牌色。
 const slideStyles = [
-  {
-    // 第1张：即日服务 — 活力红色系
-    overlay: 'bg-gradient-to-r from-red-900/35 via-rose-700/25 to-transparent',
-    accentColor: 'bg-red-500',
-    accentHover: 'hover:bg-red-400',
-  },
-  {
-    // 第2张：牛皮纸袋 — 暖棕色系
-    overlay: 'bg-gradient-to-r from-amber-900/35 via-orange-800/25 to-transparent',
-    accentColor: 'bg-orange-500',
-    accentHover: 'hover:bg-orange-400',
-  },
-  {
-    // 第3张：宣传单张 — 品牌橙色系
-    overlay: 'bg-gradient-to-r from-orange-900/35 via-amber-700/25 to-transparent',
-    accentColor: 'bg-orange-500',
-    accentHover: 'hover:bg-orange-400',
-  },
-  {
-    // 第4张：贴纸 — 清新绿色系
-    overlay: 'bg-gradient-to-r from-emerald-900/35 via-teal-700/25 to-transparent',
-    accentColor: 'bg-emerald-500',
-    accentHover: 'hover:bg-emerald-400',
-  },
-  {
-    // 第5张：包装盒 — 高端紫色系
-    overlay: 'bg-gradient-to-r from-violet-900/35 via-purple-700/25 to-transparent',
-    accentColor: 'bg-violet-500',
-    accentHover: 'hover:bg-violet-400',
-  },
-  {
-    // 第6张：海报 — 深海蓝色系
-    overlay: 'bg-gradient-to-r from-blue-900/35 via-cyan-700/25 to-transparent',
-    accentColor: 'bg-blue-500',
-    accentHover: 'hover:bg-blue-400',
-  },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
+  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
 ];
 
 const translations = {

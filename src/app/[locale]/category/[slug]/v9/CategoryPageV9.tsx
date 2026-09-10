@@ -32,6 +32,117 @@ import { TrustBadgeBlock } from './TrustBadgeBlock';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
+/* ---------- v9.2.1 B2 (2026-09-10): per-locale 模板文案 ----------
+   zh-hk 值 = 定型页逐字不变 (B1 蓝本); en 值复用现有条目:
+   CategoryProductCard en (hot/orderNow/moqSuffix/viewMore) · page.tsx en bannerTitle ·
+   ProductWhyChooseUs en (Free Sample/Same-Day Delivery) · RegionalContent en (DHL Express) ·
+   faq/page.tsx en (FAQs) · RegionalCta en (Get Instant Quote); 无现成源的功能性 UI 标签
+   (SpecFinder 文案/部分 fallback) 为新 UI 元素最小 en 标签, 列报告已知偏差待老板复核。 */
+interface V9Strings {
+  hot: string;
+  materialTag: string;
+  moqTag: string;
+  fromSuffix: string;
+  orderNow: string;
+  moqLine: (q: number, u: string) => string;
+  bannerCaps: string[];
+  bannerSubtitle: string;
+  home: string;
+  bannerAlt: (name: string) => string;
+  specCountWord: string;
+  specsChooseWord: string;
+  fallbackCore: string;
+  fallbackMaterial: string;
+  fallbackFinishing: string;
+  fallbackTech: string;
+  serviceEyebrow: string;
+  fallbackService: string;
+  industriesTitle: string;
+  industriesSub: string;
+  tierA: string;
+  tierB: string;
+  viewFull: string;
+  faqTitle: string;
+  ctaHeading: string;
+  ctaSub: string;
+  getQuote: string;
+  whatsapp: string;
+  mrailPriceLabel: (p: string) => string;
+  mrailCta: string;
+  specMaterialPrefix: string;
+  qtyLabel: (q: number) => string;
+}
+const V9T: Record<'zh-hk' | 'en', V9Strings> = {
+  'zh-hk': {
+    hot: '熱賣',
+    materialTag: '[材質]',
+    moqTag: '[起訂]',
+    fromSuffix: '起',
+    orderNow: '立即訂購',
+    moqLine: (q, u) => `${q}${u || '件'}起訂 · 量大更優`,
+    bannerCaps: ['免費打樣', '即日交貨', 'ISO9001 認證', '全港順豐速遞'],
+    bannerSubtitle: '專業品質，價格透明，快速交貨',
+    home: '首頁',
+    bannerAlt: (name) => `${name}全品類實拍`,
+    specCountWord: '款規格',
+    specsChooseWord: '款規格任選',
+    fallbackCore: '核心競爭優勢',
+    fallbackMaterial: '材質工藝詳解',
+    fallbackFinishing: '特殊加工選項',
+    fallbackTech: '技術參數詳解',
+    serviceEyebrow: 'Local Service · 香港',
+    fallbackService: '本地化服務節點',
+    industriesTitle: '服務行業與應用場景',
+    industriesSub: '針對每個品類，我們整理了最常見的行業場景與對應方案。點擊了解詳情。',
+    tierA: '主力行業',
+    tierB: '次鋪行業',
+    viewFull: '查看完整方案 →',
+    faqTitle: '常見問題',
+    ctaHeading: 'WhatsApp 直接詢價 · 30 秒發需求',
+    ctaSub: 'WhatsApp 詢價後銀行轉賬 / 微信 / 支付寶香港 / PayPal · 24 小時內回覆',
+    getQuote: '立即獲取報價',
+    whatsapp: 'WhatsApp 查詢',
+    mrailPriceLabel: (p) => `${p} 起`,
+    mrailCta: '30 秒報價',
+    specMaterialPrefix: '材質：',
+    qtyLabel: (q) => `${q} 起`,
+  },
+  en: {
+    hot: 'Hot',
+    materialTag: '[Material]',
+    moqTag: '[MOQ]',
+    fromSuffix: '',
+    orderNow: 'Order Now',
+    moqLine: (q) => `${q} MOQ`,
+    bannerCaps: ['Free Sample', 'Same-Day Delivery', 'ISO9001 Certified', 'DHL Express Global'],
+    bannerSubtitle: 'Professional quality, transparent pricing, fast delivery',
+    home: 'Home',
+    bannerAlt: (name) => `${name} Full-Range Showcase`,
+    specCountWord: 'Specs',
+    specsChooseWord: 'Specs to Choose',
+    fallbackCore: 'Core Advantages',
+    fallbackMaterial: 'Materials & Craftsmanship',
+    fallbackFinishing: 'Special Finishing Options',
+    fallbackTech: 'Technical Specifications',
+    serviceEyebrow: 'Local Service',
+    fallbackService: 'Local Service Points',
+    industriesTitle: 'Industries & Applications',
+    industriesSub: 'Common industry scenarios with matching solutions for every category. Click for details.',
+    tierA: 'Key Industry',
+    tierB: 'Secondary',
+    viewFull: 'View More →',
+    faqTitle: 'FAQs',
+    ctaHeading: 'WhatsApp Direct Quote · 30s Request',
+    ctaSub: 'Pay after quote via Bank Transfer / WeChat Pay / Alipay / PayPal · reply within 24h',
+    getQuote: 'Get Instant Quote',
+    whatsapp: 'WhatsApp Us',
+    mrailPriceLabel: (p) => `from ${p}`,
+    mrailCta: '30s Quote',
+    specMaterialPrefix: 'Material: ',
+    qtyLabel: (q) => `From ${q}`,
+  },
+};
+
 /* ---------- 通用小件（藍本 .eyebrow / h2.st / .sec-sub） ---------- */
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -57,18 +168,18 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
     ? anchor.big
     : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
   const unitWord = getPriceUnitWord(product.price_range);
+  // 门控保证运行时 locale ∈ {zh-hk, en} (B2; ja 至 B3 才进 v9)
+  const t9 = V9T[locale as 'zh-hk' | 'en'];
   const moqLine = anchor
     ? anchor.sub
-    : locale === 'zh-hk'
-      ? `${product.minQuantity}${unitWord || '件'}起訂 · 量大更優`
-      : `${product.minQuantity} MOQ`;
+    : t9.moqLine(product.minQuantity, unitWord);
 
   return (
     <article className="bg-white border border-[#E5E7EB] rounded-[14px] overflow-hidden flex flex-col shadow-[0_1px_3px_rgba(16,24,40,0.07)] transition-[box-shadow,border-color] duration-200 hover:border-[#C9D6F2] hover:shadow-[0_8px_24px_rgba(40,115,245,0.09)]">
       <a href={`${localePrefix}/product/${product.slug}/`} className="block relative [aspect-ratio:1/1] bg-[#F3F3F3] overflow-hidden before:content-[''] before:absolute before:z-[2] before:w-3 before:h-3 before:top-2 before:left-2 before:pointer-events-none before:border-t-[1.5px] before:border-l-[1.5px] before:border-[rgba(31,41,55,0.55)] after:content-[''] after:absolute after:z-[2] after:w-3 after:h-3 after:bottom-2 after:right-2 after:pointer-events-none after:border-b-[1.5px] after:border-r-[1.5px] after:border-[rgba(31,41,55,0.55)]">
         {product.isHot && (
           <span className="absolute top-2.5 left-2.5 z-[3] bg-[#F87314] text-white text-[12.5px] font-bold px-2.5 py-1 rounded-[5px] tracking-[0.05em]">
-            熱賣
+            {t9.hot}
           </span>
         )}
         <Image
@@ -88,19 +199,19 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
           </a>
         </h3>
         <div className="font-mono text-[13px] text-[#6B7280] tracking-[0.02em] h-[2.6em] overflow-hidden leading-[1.5] mb-3">
-          {product.specs?.material && <span className="whitespace-nowrap mr-2.5">[材質] {product.specs.material}</span>}
-          <span className="whitespace-nowrap mr-2.5">[起訂] {product.minQuantity} {unitWord ? unitWord.replace('/', '') : '件'}</span>
+          {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{t9.materialTag} {product.specs.material}</span>}
+          <span className="whitespace-nowrap mr-2.5">{t9.moqTag} {product.minQuantity} {unitWord ? unitWord.replace('/', '') : '件'}</span>
         </div>
         <div className="flex items-baseline gap-1.5 h-8 whitespace-nowrap">
           <span className="font-mono text-[27px] font-bold text-[#F87314] tracking-[-0.02em]">{fromPrice}</span>
-          <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{locale === 'zh-hk' ? '起' : ''}</span>
+          <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{t9.fromSuffix}</span>
         </div>
         <div className="text-[13.5px] text-[#6B7280] h-[1.6em] whitespace-nowrap overflow-hidden text-ellipsis mb-3.5">{moqLine}</div>
         <a
           href={`${localePrefix}/product/${product.slug}/`}
           className="mt-auto block text-center bg-[#2873F5] text-white font-bold text-[15.5px] py-[13px] rounded-[9px] hover:bg-[#1E5FD1] transition-colors"
         >
-          立即訂購
+          {t9.orderNow}
         </a>
       </div>
     </article>
@@ -125,6 +236,8 @@ export function CategoryPageV9({
   products: Product[];
 }) {
   const localePrefix = `/${locale}`;
+  // 门控保证运行时 locale ∈ {zh-hk, en} (B2; ja 至 B3 才进 v9)
+  const t9 = V9T[locale as 'zh-hk' | 'en'];
   const conv = getConversionBlocks(slug, locale);
   const seo =
     categorySeoContent[slug]?.[locale as 'zh-hk' | 'en' | 'ja'] ??
@@ -151,7 +264,7 @@ export function CategoryPageV9({
   const guideBody = (guide?.paragraphs ?? []).filter((p) => p !== guideLead && p !== guideKey);
 
   // B1 泛化 (2026-09-10): hero 圖按真實文件名映射 (ls public/images/hero/ 實證, 禁止編造圖名)。
-  // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應 zh-hk 圖 → 藏青底漸變 (B2/B3 補圖後接入)。
+  // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應圖 → 橙系占位漸變 (v9.2.1 裁决4 护栏3: 占位同步换橙, 注释声明保留)。
   const V9_HERO_BASE: Record<string, string> = {
     stickers: 'hero-sticker',
     flyers: 'hero-flyer',
@@ -188,7 +301,7 @@ export function CategoryPageV9({
             const m = p.specs?.material;
             if (m && !seen.has(m)) {
               seen.add(m);
-              materials.push({ label: `材質：${m}`, slug: p.slug });
+              materials.push({ label: `${t9.specMaterialPrefix}${m}`, slug: p.slug });
             }
           }
           const qtySeen = new Set<number>();
@@ -196,14 +309,14 @@ export function CategoryPageV9({
           for (const p of products) {
             if (!qtySeen.has(p.minQuantity)) {
               qtySeen.add(p.minQuantity);
-              quantities.push(`${p.minQuantity} 起`);
+              quantities.push(t9.qtyLabel(p.minQuantity));
             }
           }
           quantities.sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
           return { materials, quantities, defaultSlug: products[0]?.slug ?? 'waterproof-stickers' };
         })();
 
-  const bannerCaps = ['免費打樣', '即日交貨', 'ISO9001 認證', '全港順豐速遞'];
+  const bannerCaps = t9.bannerCaps;
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
@@ -211,12 +324,12 @@ export function CategoryPageV9({
       <section className="max-w-[1320px] mx-auto">
         <div
           className="relative overflow-hidden h-[300px] md:h-[400px] text-white"
-          style={{ backgroundColor: 'var(--color-royal-navy)' }}
+          style={{ backgroundImage: 'var(--color-orange-grad)' }}
         >
           {bannerImage && (
             <Image
               src={bannerImage}
-              alt={`${categoryName}全品類實拍`}
+              alt={t9.bannerAlt(categoryName)}
               fill
               className="object-cover"
               unoptimized
@@ -224,20 +337,20 @@ export function CategoryPageV9({
               sizes="(max-width: 1320px) 100vw, 1320px"
             />
           )}
-          {/* 對比度遮罩（token: --color-royal-navy-overlay）: 左深右淺, 保證 H1/麵包屑可讀 */}
-          <div aria-hidden="true" className="absolute inset-0" style={{ background: 'var(--color-royal-navy-overlay)' }} />
+          {/* 對比度遮罩（token: --color-orange-grad-overlay, v9.2.1 裁决4: 藏青→橙系）: 左深右淺, 保證 H1/麵包屑可讀 */}
+          <div aria-hidden="true" className="absolute inset-0" style={{ background: 'var(--color-orange-grad-overlay)' }} />
           <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10">
             <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
-              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">首頁</a>
+              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">{t9.home}</a>
               <span className="mx-2">/</span>
               <span className="text-white">{categoryName}</span>
             </nav>
             <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[820px] drop-shadow-sm">{pageH1}</h1>
-            <p className="mt-2.5 text-[16.5px] text-white/85">專業品質，價格透明，快速交貨</p>
+            <p className="mt-2.5 text-[16.5px] text-white/85">{t9.bannerSubtitle}</p>
             <div className="mt-5 flex flex-wrap gap-2.5">
               {bannerCaps.map((cap) => (
-                <span key={cap} className="inline-flex items-center gap-[7px] bg-white/10 border border-white/20 backdrop-blur-[2px] px-[15px] py-2 rounded-full text-[14px] font-semibold">
-                  <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5" stroke="#FFD9BC" strokeWidth="2" aria-hidden="true"><path d="M20 7L9 18l-5-5" /></svg>
+                <span key={cap} className="inline-flex items-center gap-[7px] bg-white/15 border border-white/30 backdrop-blur-[2px] px-[15px] py-2 rounded-full text-[14px] font-semibold">
+                  <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5" stroke="#FFE8D6" strokeWidth="2" aria-hidden="true"><path d="M20 7L9 18l-5-5" /></svg>
                   {cap}
                 </span>
               ))}
@@ -274,9 +387,9 @@ export function CategoryPageV9({
 
           {/* 2. 產品網格（K3 拍板: SKU 優先; 數據: products.ts 同源） */}
           <section className="mb-16">
-            <Eyebrow>{gridEyebrow} · {products.length} 款規格</Eyebrow>
-            <SectionTitle>{categoryName} — <em className="not-italic text-[#F87314]">{products.length} 款規格任選</em></SectionTitle>
-            <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">共 {products.length} 款產品</p>
+            <Eyebrow>{gridEyebrow} · {products.length} {t9.specCountWord}</Eyebrow>
+            <SectionTitle>{categoryName} — <em className="not-italic text-[#F87314]">{products.length} {t9.specsChooseWord}</em></SectionTitle>
+            {/* v9.2.1 裁决3 (K3 9/10 15:19): 產品計數行删除 — H2+eyebrow 已含数量, 三重重复纯噪音 (全 16 分类) */}
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-5 mt-6">
               {products.map((p) => (
                 <V9ProductCard key={p.sku_code} product={p} locale={locale} />
@@ -290,7 +403,7 @@ export function CategoryPageV9({
           {/* 4. 核心競爭優勢（數據: seo.coreAdvantages） */}
           <section className="mb-16">
             <Eyebrow>Why ZprintPro</Eyebrow>
-            <SectionTitle>{advantages.length > 0 ? seo.coreAdvantages?.title : '核心競爭優勢'}</SectionTitle>
+            <SectionTitle>{advantages.length > 0 ? seo.coreAdvantages?.title : t9.fallbackCore}</SectionTitle>
             <div className="border-t border-[#E5E7EB] mt-5">
               {advantages.map((adv, i) => (
                 <div key={adv.heading} className="grid lg:grid-cols-[88px_1fr] gap-4 lg:gap-6 py-[30px] border-b border-[#E5E7EB]">
@@ -315,7 +428,7 @@ export function CategoryPageV9({
           {/* 5. 材質工藝詳解（數據: seo.materialTable） */}
           <section className="mb-16 bg-[#F2F6FF] rounded-[22px] p-7 sm:p-8 lg:p-9">
             <Eyebrow>Materials</Eyebrow>
-            <SectionTitle>{materialTable?.title ?? '材質工藝詳解'}</SectionTitle>
+            <SectionTitle>{materialTable?.title ?? t9.fallbackMaterial}</SectionTitle>
             {materialTable?.subtitle && <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">{materialTable.subtitle}</p>}
             {materialTable && (
               <div className="overflow-hidden rounded-[14px] shadow-[0_1px_3px_rgba(16,24,40,0.07)] border border-[#E5E7EB] mt-5">
@@ -344,7 +457,7 @@ export function CategoryPageV9({
           {/* 6. 特殊加工選項（數據: seo.specialOptions；藍本 85%/62% 統計行無數據來源, 依 §0.23 不上） */}
           <section className="mb-16">
             <Eyebrow>Finishing</Eyebrow>
-            <SectionTitle>{seo.specialOptions?.title ?? '特殊加工選項'}</SectionTitle>
+            <SectionTitle>{seo.specialOptions?.title ?? t9.fallbackFinishing}</SectionTitle>
             <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3 mt-5">
               {specialOptions.map((o) => (
                 <div key={o.name} className="bg-white border border-[#E5E7EB] rounded-[14px] p-[18px] shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
@@ -358,7 +471,7 @@ export function CategoryPageV9({
           {/* 7. 技術參數詳解（數據: seo.techSpecs） */}
           <section className="mb-16 bg-[#F2F6FF] rounded-[22px] p-7 sm:p-8 lg:p-9">
             <Eyebrow>Specifications</Eyebrow>
-            <SectionTitle>{seo.techSpecs?.title ?? '技術參數詳解'}</SectionTitle>
+            <SectionTitle>{seo.techSpecs?.title ?? t9.fallbackTech}</SectionTitle>
             <dl className="grid gap-x-10 lg:grid-cols-2 bg-white border border-[#E5E7EB] rounded-[14px] px-[26px] py-2 shadow-[0_1px_3px_rgba(16,24,40,0.07)] mt-5">
               {techSpecs.map((s) => (
                 <div key={s.label} className="grid grid-cols-[118px_1fr] gap-4 py-4 border-b border-[#F0F1F3] text-[15.5px]">
@@ -371,8 +484,8 @@ export function CategoryPageV9({
 
           {/* 8. 本地化服務節點（數據: seo.serviceNodes） */}
           <section className="mb-16">
-            <Eyebrow>Local Service · 香港</Eyebrow>
-            <SectionTitle>{seo.serviceNodes?.title ?? '本地化服務節點'}</SectionTitle>
+            <Eyebrow>{t9.serviceEyebrow}</Eyebrow>
+            <SectionTitle>{seo.serviceNodes?.title ?? t9.fallbackService}</SectionTitle>
             <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3 mt-5">
               {serviceNodes.map((n, i) => (
                 <div key={n.title} className="bg-white border border-[#E5E7EB] rounded-[14px] p-5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
@@ -394,8 +507,8 @@ export function CategoryPageV9({
           {industryCards.length > 0 && (
             <section className="mb-16 bg-[#F2F6FF] rounded-[22px] p-7 sm:p-8 lg:p-9">
               <Eyebrow>Industries</Eyebrow>
-              <SectionTitle>服務行業與應用場景</SectionTitle>
-              <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">針對每個品類，我們整理了最常見的行業場景與對應方案。點擊了解詳情。</p>
+              <SectionTitle>{t9.industriesTitle}</SectionTitle>
+              <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">{t9.industriesSub}</p>
               <div className="grid gap-4 lg:grid-cols-2 mt-5">
                 {industryCards.map((card, i) => (
                   <div key={`${card.industryName}-${i}`} className="bg-white border border-[#E5E7EB] rounded-[14px] p-[22px] shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex gap-[18px]">
@@ -406,7 +519,7 @@ export function CategoryPageV9({
                       <h4 className="text-[17.5px] font-extrabold mb-2">
                         {card.industryName}
                         <span className="text-[12.5px] font-bold text-[#EA580C] bg-[#FEF1E6] rounded-[5px] px-2 py-0.5 ml-2 inline-block align-middle">
-                          {card.tier === 'A' ? '主力行業' : '次鋪行業'}
+                          {card.tier === 'A' ? t9.tierA : t9.tierB}
                         </span>
                       </h4>
                       <ul className="mb-2.5">
@@ -417,7 +530,7 @@ export function CategoryPageV9({
                         ))}
                       </ul>
                       {card.covered && card.blogSlug && (
-                        <a href={`${localePrefix}/blog/${card.blogSlug}/`} className="text-[15px] font-bold text-[#2873F5] hover:underline">查看完整方案 →</a>
+                        <a href={`${localePrefix}/blog/${card.blogSlug}/`} className="text-[15px] font-bold text-[#2873F5] hover:underline">{t9.viewFull}</a>
                       )}
                     </div>
                   </div>
@@ -474,7 +587,7 @@ export function CategoryPageV9({
           {faqItems.length > 0 && (
             <section className="mb-16">
               <Eyebrow>FAQ</Eyebrow>
-              <SectionTitle>常見問題</SectionTitle>
+              <SectionTitle>{t9.faqTitle}</SectionTitle>
               <div className="mt-5">
                 {faqItems.map((f, i) => (
                   <details key={f.q} className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]" open={i === 0}>
@@ -548,28 +661,28 @@ export function CategoryPageV9({
               className="rounded-[20px] p-8 sm:p-12 text-center"
               style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
             >
-              <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">WhatsApp 直接詢價 · 30 秒發需求</h3>
-              <p className="text-white/80 text-[16px] mb-6">WhatsApp 詢價後銀行轉賬 / 微信 / 支付寶香港 / PayPal · 24 小時內回覆</p>
+              <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">{t9.ctaHeading}</h3>
+              <p className="text-white/80 text-[16px] mb-6">{t9.ctaSub}</p>
               <div className="flex gap-3.5 justify-center flex-wrap">
                 <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">
-                  立即獲取報價
+                  {t9.getQuote}
                 </a>
                 <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] hover:brightness-95">
-                  WhatsApp 查詢
+                  {t9.whatsapp}
                 </a>
               </div>
             </div>
           </section>
 
-          {/* 為何選擇智印港 — 皇家藏青色塊（組件復用: TrustBadgeBlock, 與 PDP 同源同文案） */}
-          <TrustBadgeBlock />
+          {/* 為何選擇智印港 — 信任色塊（組件復用: TrustBadgeBlock, 与 PDP 同源; B2: 传 locale, en 走现有条目） */}
+          <TrustBadgeBlock locale={locale} />
         </div>
       </div>
 
       {/* 移動端吸底報價軌（藍本 .mrail; 價格 = products.ts basePrice 最低值） */}
       <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
-        <span className="font-mono font-bold text-[#F87314] text-[16px] whitespace-nowrap">{mrailPrice} 起</span>
-        <a href={quoteUrl} className="flex-1 text-center bg-[#F87314] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">30 秒報價</a>
+        <span className="font-mono font-bold text-[#F87314] text-[16px] whitespace-nowrap">{t9.mrailPriceLabel(mrailPrice)}</span>
+        <a href={quoteUrl} className="flex-1 text-center bg-[#F87314] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">{t9.mrailCta}</a>
         <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-[#25D366] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">WhatsApp</a>
       </div>
     </main>
