@@ -28,10 +28,10 @@ import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlo
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
-/* C2 (v9.2.3): PDP v9 模板 per-locale 文案表 (zh-hk = 蓝本逐字不变; en 本地化; ja 至 C3)
-   数据源: 现有组件/页面 en 文案 (legacy PDP translations + 首页 Hero en + TrustBadgeBlock en + RegionalContent en) */
+/* C2 (v9.2.3): PDP v9 模板 per-locale 文案表 (zh-hk = 蓝本逐字不变; en 本地化; C3 (2026-09-11): ja 本地化)
+   数据源: 现有组件/页面 en/ja 文案 (legacy PDP translations + 首页 Hero en/ja + TrustBadgeBlock en/ja + RegionalContent en/ja + RushDeliveryBadge ja) */
 // specRows/metaRows/factory* 为结构值, 其余为字符串; 统一 any 以保持 ~30 处字符串查找可编译 (值全部为本表字面量)
-const T: Record<'zh-hk' | 'en', Record<string, any>> = {
+const T: Record<'zh-hk' | 'en' | 'ja', Record<string, any>> = {
   'zh-hk': {
     home: '首頁',
     sameDayBadge: '印刷即日速遞送貨',
@@ -69,8 +69,10 @@ const T: Record<'zh-hk' | 'en', Record<string, any>> = {
     svcRushTitle: '即日急件',
     svcRushDesc: '今天下單 · 明天 12 點前到 · 前往即日印刷服務 →',
     productDetails: '產品詳情',
+    detEyebrow: 'Product Details',
     specsTitle: '規格參數',
     ufsTitle: '適用場景與檔案規格',
+    ufsEyebrow: 'Use Cases & File Specs',
     specHead: '交稿規範',
     specRows: [['解析度', '300 DPI'], ['色彩模式', 'CMYK'], ['出血', '3 mm'], ['字體', '外框化'], ['免費數碼打稿', '1 小時內']] as [string, string][],
     faqTitle: '常見問題',
@@ -129,8 +131,10 @@ const T: Record<'zh-hk' | 'en', Record<string, any>> = {
     svcRushTitle: 'Rush Printing',
     svcRushDesc: 'order today · delivered by 12pm tomorrow · go to rush printing service →',
     productDetails: 'Product Details',
+    detEyebrow: 'Product Details',
     specsTitle: 'Specifications',
     ufsTitle: 'Use Cases & File Specs',
+    ufsEyebrow: 'Use Cases & File Specs',
     specHead: 'File Specs',
     specRows: [['Resolution', '300 DPI'], ['Color mode', 'CMYK'], ['Bleed', '3 mm'], ['Fonts', 'Outlined'], ['Free digital proof', 'within 1 hour']] as [string, string][],
     faqTitle: 'Frequently Asked Questions',
@@ -152,6 +156,73 @@ const T: Record<'zh-hk' | 'en', Record<string, any>> = {
     factoryLabel: { tag: 'Self-adhesive', cap: 'Rotary UV press · sticker & label line' },
     factoryQc: { tag: 'QC', cap: 'ICC color management · press-side proofing' },
   },
+  /* C3 (2026-09-11): ja 列 — 复用现有 ja 条目 (源注释):
+     - 徽章: RushDeliveryBadge ja (即日速達配送/本日注文・翌日12時まで)
+     - 基础词: page.tsx legacy ja translations (ホーム/仕様/関連製品/最小注文数/製品番号/品質保証/納期)
+     - 信任卡/CTA: TrustBadgeBlock JA_CARDS / RegionalCta ja / RegionalContent ja
+     - v9 新 UI 元素: 最小功能标签 (已知偏差, 待老板复核, 同 B2/B3 SpecFinder 先例) */
+  ja: {
+    home: 'ホーム',
+    sameDayBadge: '即日速達配送',
+    sameDayBadgeSub: '| 本日注文・翌日12時まで',
+    eachFrom: '単価 ',
+    fromSuffix: '〜',
+    batchLine: ' · セット合計 ',
+    noAnchor: '仕様により正式見積',
+    freeShip: '$500相当以上 送料無料',
+    ctaQuote: '30秒無料見積もり',
+    ctaWa: 'WhatsAppで問い合わせ',
+    trustFactory: 'アジア自社工場',
+    trustDesign: '無料デザイン',
+    trustProof: '無料サンプル',
+    trustDelivery: '全国配送',
+    trustGuarantee: '100%満足保証',
+    ladderEyebrow: 'プライスラダー · 参考価格',
+    ladderTitle: '注文数が多いほど、',
+    ladderTitleEm: '1{unit}あたりがお得',
+    ladderSave: '{qty1} {unit} と {qty2} {unit} を比較 · 1{unit}あたりお得',
+    bestValue: '最安',
+    perUnit: '/{unit} · セット ',
+    ladderNote: '参考価格 · 最終金額は WhatsApp の正式見積もりによります',
+    railQuote: '即時見積もり',
+    stdDelivery: '標準納期',
+    stdDeliveryVal: '5-7 営業日',
+    rushLabel: '即日特急',
+    rushValue: '本日注文・翌日12時まで',
+    freeShipHK: '日本全国',
+    freeShipHKVal: '配送対応',
+    svcStdTitle: '標準 5-7 営業日',
+    svcStdDesc: 'HP Indigo 15K B2 デジタルライン · ファイル提出後 1 時間以内に無料デジタル校正 · 平均 2.3 日で出荷、特急は即日対応',
+    svcDhlTitle: 'DHL 世界配送 2-4 日',
+    svcDhlDesc: '日本全国へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx 追跡番号付き',
+    svcRushTitle: '即日特急印刷',
+    svcRushDesc: '本日注文・翌日12時まで · 即日印刷サービスへ →',
+    productDetails: '製品詳細',
+    detEyebrow: '製品詳細',
+    specsTitle: '仕様',
+    ufsTitle: '活用シーンと原稿仕様',
+    ufsEyebrow: '活用シーンと原稿仕様',
+    specHead: '原稿仕様',
+    specRows: [['解像度', '300 DPI'], ['カラーモード', 'CMYK'], ['塗り足し', '3 mm'], ['フォント', 'アウトライン化'], ['無料デジタル校正', '1 時間以内']] as [string, string][],
+    faqTitle: 'よくある質問',
+    faqHeading: 'よくある質問',
+    ctaFooterTitle: 'ご注文の準備はできましたか？1 時間で無料校正',
+    ctaFooterDesc: 'WhatsApp +86 198 8085 1334 または「30秒無料見積もり」 · 24時間以内に返信 · 無料デザイン相談',
+    relatedTitle: '関連製品',
+    viewAll: 'すべて見る →',
+    mrailQuote: '30秒見積もり',
+    metaRows: (unit: string): [string, string][] => [
+      ['sku_code', '製品番号'],
+      ['{q}' + unit, '最小注文数'],
+      ['5-7 営業日', '標準納期'],
+      ['無料再印刷', '品質保証'],
+      ['全国配送', '送料無料'],
+    ],
+    factoryMain: { tag: 'オフセット', cap: 'ハイデルベルグ オフセット印刷ライン' },
+    factoryDigi: { tag: 'デジタル', cap: 'HP Indigo 15K B2 デジタルライン' },
+    factoryLabel: { tag: '粘着ラベル', cap: 'ロータリーUV印刷機 · ステッカー・ラベル専用ライン' },
+    factoryQc: { tag: '品質管理', cap: 'ICC カラーマネジメント · 色合わせ実機確認' },
+  },
 };
 
 /* 中文单位词 → 英文 (阶梯/起订展示用) */
@@ -159,6 +230,13 @@ const EN_UNIT_MAP: Record<string, string> = {
   '張': 'pcs', '個': 'pcs', '本': 'copies', '套': 'sets', '枚': 'pcs',
   '盒': 'boxes', '卷': 'rolls', '冊': 'copies', '條': 'rolls', '米': 'meters',
   '塊': 'pcs', '張起': 'pcs', '本起': 'copies',
+};
+
+/* C3: 中文单位词 → 日文 (ja 阶梯/起订展示用; getIndependentPrice ja 实值优先) */
+const JA_UNIT_MAP: Record<string, string> = {
+  '張': '枚', '個': '個', '本': '冊', '套': 'セット', '枚': '枚',
+  '盒': '箱', '卷': '巻', '冊': '冊', '條': '巻', '米': 'メートル',
+  '塊': '枚', '張起': '枚', '本起': '冊',
 };
 
 export function ProductPageV9({
@@ -183,13 +261,21 @@ export function ProductPageV9({
   skuBody: string;
 }) {
   const localePrefix = `/${locale}`;
-  // C2 (v9.2.3): per-locale 文案 + en 单位词/币种助手 (zh-hk 输出逐字不变)
-  const t = T[locale as 'zh-hk' | 'en'] || T['zh-hk'];
+  // C2/C3 (v9.2.3): per-locale 文案 + en/ja 单位词/币种助手 (zh-hk 输出逐字不变)
+  const t = T[locale as 'zh-hk' | 'en' | 'ja'] || T['zh-hk'];
   const isEn = locale === 'en';
+  const isJa = locale === 'ja';
   // C1 泛化 (2026-09-10): 单位词按产品 price_range 派生 (張/本/個/套…), 不再硬编码 張
   const unitWord = getPriceUnitWord(product.price_range) || '件';
-  const displayUnit = isEn ? (getIndependentPrice(product.slug, 'en')?.unit || EN_UNIT_MAP[unitWord] || 'pcs') : unitWord;
-  const lc = (hkd: number): string => (isEn ? formatPriceForLocale(hkd, 'en').text : `HK$${hkd.toFixed(2)}`);
+  const displayUnit = isEn
+    ? (getIndependentPrice(product.slug, 'en')?.unit || EN_UNIT_MAP[unitWord] || 'pcs')
+    : isJa
+    ? (getIndependentPrice(product.slug, 'ja')?.unit || JA_UNIT_MAP[unitWord] || unitWord)
+    : unitWord;
+  // 币种: zh-hk=HK$ 原样 / en=实时 USD / ja=实时 JPY (与站点换算同源, 禁编数字)
+  const lc = (hkd: number): string => (isEn || isJa ? formatPriceForLocale(hkd, locale as 'en' | 'ja').text : `HK$${hkd.toFixed(2)}`);
+  // 无 anchor 时的起价: en/ja 走换算 (convertToFromPrice 去区间上限), zh-hk 原样 price_range
+  const fromPrice = (): string => (locale === 'zh-hk' ? product.price_range : convertToFromPrice(product.price_range, locale as 'en' | 'ja', product.category_slug, product.slug));
   const galleryImages = getProductImages(product, locale).length
     ? getProductImages(product, locale)
     : [getProductMainImage(product, locale)].filter(Boolean) as string[];
@@ -237,9 +323,9 @@ export function ProductPageV9({
      v9.2.2 裁决1: bodyMain 排除 bodyLead (paras[0]) —— 蓝本 lead 与正文第1段重复 bug */
   const paras = (skuBody ?? '').split('\n\n').map((p) => p.trim()).filter(Boolean);
   const bodyLead = paras[0] ?? '';
-  const specPara = paras.find((p) => p.startsWith('交稿規範：'));
+  const specPara = paras.find((p) => p.startsWith('交稿規範：') || p.startsWith('原稿仕様：') || p.startsWith('入稿仕様：'));
   const bodyMain = paras.filter((p) => p !== specPara && p !== bodyLead);
-  const noteIdx = specPara ? specPara.indexOf('如未有設計檔案') : -1;
+  const noteIdx = specPara ? Math.max(specPara.indexOf('如未有設計檔案'), specPara.indexOf('デザインデータがない場合'), specPara.indexOf('デザインファイルがない場合')) : -1;
   const specNote = noteIdx >= 0 ? specPara!.slice(noteIdx) : '';
   const specRows = t.specRows as [string, string][];
 
@@ -288,7 +374,7 @@ export function ProductPageV9({
         </div>
       );
     }
-    if (p.startsWith('準備落單') || p.startsWith('Ready to order')) {
+    if (p.startsWith('準備落單') || p.startsWith('Ready to order') || p.startsWith('ご注文はお気軽に') || p.startsWith('ご注文のご相談')) {
       return <p key={key} className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 font-semibold text-[#1F2937] text-[16.5px] leading-[1.85]">{p}</p>;
     }
     return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{p}</p>;
@@ -320,26 +406,30 @@ export function ProductPageV9({
           <h1 className="text-[clamp(23px,2.4vw,30px)] font-extrabold leading-[1.4] tracking-[-0.01em]">{h1}</h1>
           <p className="mt-2.5 text-[15.5px] text-[#6B7280] leading-[1.75]">{productDescription}</p>
 
-          {/* v9.2.2 裁决3.1 (P1, 随 C2): AEO 答案块 — 首屏副标下 40-60 字「直接答案句」(价格+起订+交期三要素一句话) */}
+          {/* v9.2.2 裁决3.1 (P1, 随 C2): AEO 答案块 — 首屏副标下 40-60 字「直接答案句」(价格+起订+交期三要素一句话); C3: ja 版 */}
           <p className="mt-3 bg-[#F2F6FF] rounded-[10px] px-4 py-3 text-[15px] text-[#17284C] leading-[1.75]">
             {isEn
               ? `${productTitle} from ${product.minQuantity} ${displayUnit}, from ${anchor?.big || convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug)}, standard lead time 5-7 days, free digital proof within 1 hour of file submission.`
+              : isJa
+              ? `${productTitle} は ${product.minQuantity}${displayUnit}から、${anchor?.big || fromPrice()} 〜、標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。`
               : `${productTitle} ${product.minQuantity}${unitWord}起印，${anchor?.big || product.price_range} 起，標準交期 5-7 天，提交檔案後 1 小時內免費數碼打稿。`}
           </p>
 
           {/* 價格盒 */}
           <div className="mt-6 bg-[#FFF7ED] border border-[#FED7AA] rounded-[14px] p-5">
             <div className="text-[13px] font-semibold text-[#EA580C] uppercase tracking-[0.1em] mb-1">
-              {anchor ? `${t.eachFrom}${anchor.big}` : (isEn ? convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug) : product.price_range)}
+              {anchor ? `${t.eachFrom}${anchor.big}` : fromPrice()}
             </div>
             <div className="flex items-baseline gap-1.5">
-              <span className="font-mono text-[clamp(27px,3vw,38px)] font-bold text-[#F87314] tracking-[-0.02em]">{anchor ? anchor.big : (isEn ? convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug) : product.price_range)}</span>
+              <span className="font-mono text-[clamp(27px,3vw,38px)] font-bold text-[#F87314] tracking-[-0.02em]">{anchor ? anchor.big : fromPrice()}</span>
               <span className="text-[14px] text-[#6B7280]">{anchor ? `${anchor.unitLabel}${t.fromSuffix}` : ''}</span>
             </div>
             {!anchor && (
               <div className="text-[13.5px] text-[#6B7280] mt-1.5 font-medium">
                 {topRow ? (isEn
                   ? `${topRow.qty.toLocaleString('en-US')} ${displayUnit}${t.batchLine}${lc(topRow.total)}`
+                  : isJa
+                  ? `${topRow.qty.toLocaleString('ja-JP')} ${displayUnit}${t.batchLine}${lc(topRow.total)}`
                   : `${topRow.qty.toLocaleString('en-US')} ${unitWord}起批 · 整批 HK$${topRow.total}`) : t.noAnchor}
               </div>
             )}
@@ -382,7 +472,7 @@ export function ProductPageV9({
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
         <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
           <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
-          Price Ladder · 參考價
+          {t.ladderEyebrow}
         </div>
         <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
           {t.ladderTitle}<em className="not-italic text-[#F87314]">{t.ladderTitleEm.replace('{unit}', displayUnit)}</em>
@@ -417,7 +507,7 @@ export function ProductPageV9({
                     </span>
                     <span className="text-right whitespace-nowrap">
                       <span className={`font-mono font-bold text-[19px] ${r.unit === unitMin ? 'text-[#F87314]' : 'text-[#1F2937]'}`}>{lc(r.unit)}</span>
-                      <span className="text-[14px] text-[#6B7280]">{isEn ? `/${displayUnit} · batch ${formatPriceForLocale(r.total, 'en').text}` : `/${unitWord} · 整批 ${r.total}`}</span>
+                      <span className="text-[14px] text-[#6B7280]">{isEn ? `/${displayUnit} · batch ${formatPriceForLocale(r.total, 'en').text}` : isJa ? `/${displayUnit} · セット ${formatPriceForLocale(r.total, 'ja').text}` : `/${unitWord} · 整批 ${r.total}`}</span>
                     </span>
                   </div>
                 ))}
@@ -427,9 +517,11 @@ export function ProductPageV9({
           </div>
           <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between h-full">
             <div className="text-[14px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">{t.railQuote}</div>
-            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : (isEn ? convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug) : product.price_range)}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}${t.fromSuffix}` : ''}</span></div>
+            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : fromPrice()}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}${t.fromSuffix}` : ''}</span></div>
             <div className="text-[14.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? (isEn
               ? `${bestRow.qty.toLocaleString('en-US')} ${displayUnit}${t.batchLine}${lc(bestRow.total)}`
+              : isJa
+              ? `${bestRow.qty.toLocaleString('ja-JP')} ${displayUnit}${t.batchLine}${lc(bestRow.total)}`
               : `${bestRow.qty.toLocaleString('en-US')} ${unitWord}整批 HK$${bestRow.total}`) : ''}</div>
             <dl className="border-t border-[#F0F1F3]">
               <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px]"><dt className="text-[#6B7280]">{t.stdDelivery}</dt><dd className="font-semibold">{t.stdDeliveryVal}</dd></div>
@@ -472,7 +564,7 @@ export function ProductPageV9({
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
         <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
           <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
-          Product Details
+          {t.detEyebrow}
         </div>
         <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">{t.productDetails}</h2>
         <div>
@@ -563,7 +655,7 @@ export function ProductPageV9({
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
         <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
           <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
-          Use Cases &amp; File Specs
+          {t.ufsEyebrow}
         </div>
         <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">{t.ufsTitle}</h2>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
@@ -589,8 +681,8 @@ export function ProductPageV9({
       </section>
       )}
 
-      {/* ═══ 為何選擇智印港 — 皇家藏青色塊（修訂輪4: PDP 用 navy 變體; PLP 保持 light; 組件復用 TrustBadgeBlock） ═══ */}
-      <TrustBadgeBlock variant="navy" />
+      {/* ═══ 為何選擇智印港 — 皇家藏青色塊（修訂輪4: PDP 用 navy 變體; PLP 保持 light; 組件復用 TrustBadgeBlock; C3: 传 locale 供 en/ja 走现有条目） ═══ */}
+      <TrustBadgeBlock variant="navy" locale={locale} />
 
       {/* ═══ FAQ（數據: coreProductFAQMap, 藍本手風琴樣式） ═══ */}
       {faqItems.length > 0 && (
@@ -663,9 +755,11 @@ export function ProductPageV9({
       {/* 移動端吸底報價軌（藍本 .mrail; 價格 = 真實檔位錨點） */}
       <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
         <span className="whitespace-nowrap">
-          <span className="font-mono font-bold text-[#F87314] text-[16px]">{anchor ? anchor.big : (isEn ? convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug) : product.price_range)}</span>
+          <span className="font-mono font-bold text-[#F87314] text-[16px]">{anchor ? anchor.big : fromPrice()}</span>
           <span className="text-[12.5px] text-[#6B7280]">{bestRow ? (isEn
             ? ` · ${bestRow.qty.toLocaleString('en-US')} ${displayUnit}${t.batchLine}${lc(bestRow.total)}`
+            : isJa
+            ? ` · ${bestRow.qty.toLocaleString('ja-JP')} ${displayUnit}${t.batchLine}${lc(bestRow.total)}`
             : ` · ${bestRow.qty.toLocaleString('en-US')} ${unitWord}整批 HK$${bestRow.total}`) : ''}</span>
         </span>
         <a href={quoteUrl} className="flex-1 text-center bg-[#F87314] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">{t.mrailQuote}</a>

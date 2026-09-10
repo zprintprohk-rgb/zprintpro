@@ -351,9 +351,9 @@ export default function ProductPage({
   
   const t = translations[locale];
   // 2026-09-10 C1 (v9.2.1): PDP v9 模板门控扩至 zh-hk 全 SKU (原仅 waterproof-stickers)。
-  // 2026-09-11 C2 (v9.2.3): 扩至 en 全 SKU (模板本地化完成); ja 至 C3。
+  // 2026-09-11 C2 (v9.2.3): 扩至 en 全 SKU; 2026-09-11 C3: 扩至 ja 全 SKU (三 locale 全 v9)。
   // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367。
-  const isV9Pdp = (l: Locale): boolean => l === 'zh-hk' || l === 'en';
+  const isV9Pdp = (l: Locale): boolean => l === 'zh-hk' || l === 'en' || l === 'ja';
   
   return (
     <>
