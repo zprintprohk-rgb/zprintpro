@@ -320,6 +320,8 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     },
     twitter: {
       card: 'summary_large_image',
+      // G1 (v9.2.3): GEO 实体归一 — og:site_name / twitter:site / Organization.name 三者一致
+      site: getBrandName(locale),
       title: meta.title,
       description: meta.description,
       images: [`${siteConfig.url}/og-image.jpg`],
@@ -1542,6 +1544,7 @@ export function generateFaqJsonLd(faqs: { question: string; answer: string }[]) 
 }
 
 // 生成 WebSite 結構化數據
+// G1 (v9.2.3): + SearchAction → 真实 /search?q= 端点 (2026-09-11 确认 /search 路由存在且支持 q 参数)
 export function generateWebsiteJsonLd() {
   return {
     '@context': 'https://schema.org',
@@ -1549,6 +1552,11 @@ export function generateWebsiteJsonLd() {
     '@id': `${siteConfig.url}/#website`,
     name: siteConfig.name,
     url: siteConfig.url,
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: `${siteConfig.url}/search?q={search_term_string}`,
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
 
@@ -1706,6 +1714,19 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
     name: locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro',
     url: `${siteConfig.url}/${locale}`,
     logo: getGscLogoUrl(locale),
+    // G1 (v9.2.3): GEO 实体归一 — 双域名 (z-printpro.com / zprintpro.com) 品牌归一声明 + per-locale 品牌 alternateName
+    alternateName: [...nap.alternateName, 'zprintpro.com', 'z-printpro.com'],
+    // G1 (v9.2.3): 真实 NAP 地址 (深圳实体, 三 locale 对齐)
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: nap.address.street,
+      addressLocality: nap.address.city,
+      addressRegion: nap.address.region,
+      addressCountry: nap.address.country,
+      postalCode: nap.address.postalCode,
+    },
+    // G1 (v9.2.3): 真实社媒 sameAs (X + LinkedIn, §13.16.1 目录 campaign 同源; 禁假链接)
+    sameAs: ['https://twitter.com/zprintpro', 'https://linkedin.com/company/zprintpro'],
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
     contactPoint: {
       '@type': 'ContactPoint',
