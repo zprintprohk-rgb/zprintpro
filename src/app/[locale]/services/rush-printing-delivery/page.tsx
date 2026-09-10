@@ -138,6 +138,21 @@ export default function RushDeliveryPage({ params }: Props) {
       {/* S1 Hero — verbatim 加工厂图全屏 (K3 11:02 授权 viewport 满宽) */}
       <RushHero locale={locale} />
 
+      {/* G4 (v9.2.3): 服务页 AEO 答案块 — Hero 下 40-60 字直接答案句 (18:00 截單→翌日中午 12:00 前到, §0.23 唯一口径, 取自本页 FAQ verbatim) */}
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 -mt-2">
+        <div className="rounded-2xl border border-blue-100 bg-[#F2F6FF] px-6 md:px-8 py-5 md:py-6 flex items-start gap-3">
+          <svg className="w-5 h-5 text-[#2873F5] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          <p className="text-[15px] md:text-base leading-relaxed text-[#1D3465]">
+            {locale === 'zh-hk'
+              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，100 張起印。'
+              : locale === 'ja'
+                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。100枚〜から対応。'
+                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. 100+ MOQ.'}
+          </p>
+        </div>
+      </div>
+
+
       {/* S2 Timeline — 4 时刻 verbatim */}
       <RushTimeline locale={locale} />
 
