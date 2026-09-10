@@ -235,19 +235,19 @@ export function ProductPageV9({
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
                   <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
-                  <div className="text-[15px] font-bold text-[#1F2937] mt-2">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs {rows[0] ? rows[0].qty.toLocaleString('en-US') : '50'} 張 · 每張慳幾</div>
+                  <div className="text-[16px] font-bold text-[#1F2937] mt-2">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs {rows[0] ? rows[0].qty.toLocaleString('en-US') : '50'} 張 · 每張慳幾</div>
                 </div>
                 {cfg?.label?.['zh-hk'] && (
-                  <div className="hidden sm:block text-[13px] text-[#6B7280] text-right max-w-[260px] leading-[1.7]">{cfg.label['zh-hk']}</div>
+                  <div className="hidden sm:block text-[14px] text-[#6B7280] text-right max-w-[260px] leading-[1.7]">{cfg.label['zh-hk']}</div>
                 )}
               </div>
               <div>
                 {rows.map((r) => (
                   <div key={r.qty} className="relative grid grid-cols-[88px_1fr_150px] gap-4 items-center py-[11px] border-b border-dashed border-[#EBECEF] last:border-b-0">
                     {r.unit === unitMin && (
-                      <span className="absolute right-0 top-[-9px] bg-[#F87314] text-white text-[12px] font-bold px-[9px] py-[2px] rounded-full">最抵</span>
+                      <span className="absolute right-0 top-[-9px] bg-[#F87314] text-white text-[13px] font-bold px-[9px] py-[2px] rounded-full">最抵</span>
                     )}
-                    <span className="font-mono font-bold text-[15.5px] text-right whitespace-nowrap">{r.qty} 張</span>
+                    <span className="font-mono font-bold text-[16.5px] text-right whitespace-nowrap">{r.qty} 張</span>
                     <span className="relative h-[28px] bg-[#F3F4F6] rounded-[6px] overflow-hidden">
                       <span
                         className={`absolute left-0 top-0 bottom-0 rounded-[6px] min-w-[8px] ${r.unit === unitMin ? 'bg-[#F87314]' : 'bg-[#2873F5]'}`}
@@ -255,27 +255,27 @@ export function ProductPageV9({
                       />
                     </span>
                     <span className="text-right whitespace-nowrap">
-                      <span className={`font-mono font-bold text-[18px] ${r.unit === unitMin ? 'text-[#F87314]' : 'text-[#1F2937]'}`}>HK${r.unit.toFixed(2)}</span>
-                      <span className="text-[13px] text-[#6B7280]">/張 · 整批 ${r.total}</span>
+                      <span className={`font-mono font-bold text-[19px] ${r.unit === unitMin ? 'text-[#F87314]' : 'text-[#1F2937]'}`}>HK${r.unit.toFixed(2)}</span>
+                      <span className="text-[14px] text-[#6B7280]">/張 · 整批 ${r.total}</span>
                     </span>
                   </div>
                 ))}
               </div>
-              <p className="text-[13.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
+              <p className="text-[14.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
             </div>
           </div>
           <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between h-full">
-            <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
-            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
-            <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
+            <div className="text-[14px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
+            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[15px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
+            <div className="text-[14.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
             <dl className="border-t border-[#F0F1F3]">
-              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">標準交期</dt><dd className="font-semibold">5-7 天</dd></div>
-              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px] font-bold"><dt className="text-[#6B7280] font-normal">即日急件</dt><dd className="font-bold">今天下單 · 明天 12 點前到</dd></div>
-              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">滿 HK$500</dt><dd className="font-semibold">港九新界免運</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px]"><dt className="text-[#6B7280]">標準交期</dt><dd className="font-semibold">5-7 天</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px] font-bold"><dt className="text-[#6B7280] font-normal">即日急件</dt><dd className="font-bold">今天下單 · 明天 12 點前到</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[15px]"><dt className="text-[#6B7280]">滿 HK$500</dt><dd className="font-semibold">港九新界免運</dd></div>
             </dl>
             <div className="grid gap-2.5 mt-5">
-              <a href={quoteUrl} className="text-center bg-[#F87314] text-white font-bold text-[15.5px] py-3 rounded-[10px] hover:brightness-95">30 秒 AI 報價</a>
-              <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-center bg-[#25D366] text-white font-bold text-[15.5px] py-3 rounded-[10px] hover:brightness-95">WhatsApp 即時查詢</a>
+              <a href={quoteUrl} className="text-center bg-[#F87314] text-white font-bold text-[16.5px] py-3 rounded-[10px] hover:brightness-95">30 秒 AI 報價</a>
+              <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-center bg-[#25D366] text-white font-bold text-[16.5px] py-3 rounded-[10px] hover:brightness-95">WhatsApp 即時查詢</a>
             </div>
           </div>
         </div>
