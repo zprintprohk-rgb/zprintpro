@@ -182,6 +182,19 @@ export default function ProductPage({
   // 2026-06-10 Phase B 修复 P0-1：使用 locale 本地化的 name / description（不再传 product.name / product.description）
   // 之前 en/ja 页直接传中文，导致 Product JSON-LD name 字段是 "牛皮紙袋" 等中文。
   // productTitle / productDescription 来自 getProductTitle / getProductDescription，已经按 locale 切换。
+  // v9.2.2 裁决3.3 (P1, 随 C2): Product+Offer schema — 有价格表 SKU 挂真实 Offer (price/priceCurrency 取自 price_range 源值),
+  // 无表 SKU 只挂 Product 不挂 Offer (禁编造价格)。price_range 是站内真实报价源 (HK$/NT$/¥ 原币种),
+  // priceCurrency 显式标注源币种, 不做跨币换算 (schema 价格 = 真实参考价)。
+  const priceTable = getPriceTableForSlug(slug);
+  let offerData: { price: string; currency: string } | null | undefined;
+  if (priceTable) {
+    const sym = (product.price_range || '').match(/^(HK\$|NT\$|US\$|\$|¥|￥)/)?.[1] || '';
+    const currency = sym === 'NT$' ? 'TWD' : sym === '¥' || sym === '￥' ? 'JPY' : sym === 'US$' || sym === '$' ? 'USD' : 'HKD';
+    const num = (product.price_range || '').replace(/,/g, '').match(/[\d.]+/);
+    offerData = { price: num ? parseFloat(num[0]).toFixed(2).replace(/\.00$/, '') : '0', currency };
+  } else {
+    offerData = null;
+  }
   const productJsonLd = generateProductJsonLd(
     productTitle,
     productDescription,
@@ -190,7 +203,8 @@ export default function ProductPage({
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
     undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳过 aggregateRating (K3 v2 §3.3 约束 4)
-    locale
+    locale,
+    offerData
   );
   // ImageObject Schema（獨立節點，不影響 Product ranking）
   const productImageJsonLd = generateProductImageJsonLd(
@@ -337,8 +351,9 @@ export default function ProductPage({
   
   const t = translations[locale];
   // 2026-09-10 C1 (v9.2.1): PDP v9 模板门控扩至 zh-hk 全 SKU (原仅 waterproof-stickers)。
-  // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367; en/ja 至 C2/C3。
-  const isV9Pdp = (l: Locale): boolean => l === 'zh-hk';
+  // 2026-09-11 C2 (v9.2.3): 扩至 en 全 SKU (模板本地化完成); ja 至 C3。
+  // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367。
+  const isV9Pdp = (l: Locale): boolean => l === 'zh-hk' || l === 'en';
   
   return (
     <>
