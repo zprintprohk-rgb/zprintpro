@@ -90,7 +90,24 @@
 
 **提案合规要点**: ① 主词前置（瓦楞紙盒印刷/燙金喜帖/婚宴枱卡...）② 工艺修饰 1-3（specs 实值）③ 数字钩子 1-2（MOQ+价格实值, 禁编造: NT$/HK$ 来自 products.price_range）④ 品牌末尾一次分语言（智印港 / ZprintPro）⑤ 零污染（save-the-date zh-hk 改「結婚通知卡」消除英文; 无简体; en 无中文截断）⑥ 全部 ≤54 防 Google 重写
 
-## 六、执行建议（两级决策权: 改动 user-facing 文案, 报老板拍板）
+## 六、执行结果（老板 9/10 拍板方案 A：立即执行 45 条 P0 ✅ 已上线）
+
+- **注入**: `src/data/sku-seo-data.ts` 45 条 title（15 SKU × 3 locale），body/其他字段未动
+- **验证**: 45/45 值匹配 + 当量 50-54 + 品牌分语言 + 简体 0 + 名片词 0；tsc 54=54（0 新增）/ build exit 0 / encoding ✓
+- **commit** → merge `0c154d68`（23:57:22 push）→ CF deploy `b4ce2e87` success（5 poll ~4min）
+- **线上探针（deploy 后）**:
+  - en corrugated-boxes: `Corrugated Boxes E/F Flute 500pcs Custom | ZprintPro` ✅（原截断 ShippingPr 修复）
+  - en foil-wedding: `Foil Wedding Invites 50 Sets Foil Print | ZprintPro` ✅（原截断 Zpri 修复）
+  - ja corrugated: `段ボール箱印刷 E/Fフルート 500個〜 耐圧 | ZprintPro` ✅（原 RED 83 修复）
+  - zh-hk foil-wedding: `燙金喜帖印刷 金銀玫瑰金 50套起印 即日報價 | 智印港` ✅（原 FILL 40 修复）
+  - zh-hk wedding-place: `婚宴枱卡印刷 燙金壓紋 50張起 NT$8起 站立式 | 智印港` ✅
+  - zh-hk drink-tokens / en save-the-date / ja wedding-place ✅
+  - 蓝本 waterproof-stickers 标题回归未动 ✅
+  - zh-hk 16 品类全部 200 ✅（初次探针 2 个 ERR 为超时抖动，重试 200）
+
+**遗留（9/13 合批）**: 6 冻结贺卡族（zh-hk 尾缀 ZprintPro 品牌错 + 不足 41-48 + 无数字钩；en 3 LEGACY + 1 RED；ja 3 RED）→ 窗判后按 §四 P1 方向修复；en 11 + ja 6 + zh-hk 2 RED 遗留修剪回 50-54；en LEGACY 34 / ja 10 只读；观察项（ja 数字钩子、doujinshi Comiket 专名）挂账。
+
+## 附：执行建议（原文，已拍板）
 
 - **方案 A（推荐）**: 立即执行 45 条 P0 提案。理由: 线上标题当前**已破损**（en 截断 ShippingPr/Zpri、ja 61-93 超限、zh-hk 婚礼 40-44 不足），且 15 SKU 为 F1 新内容无验证窗、无 churn 风险（此前从未优化）；冻结 6 贺卡 + RED 遗留留 9/13 合批。流程: 改 sku-seo-data.ts（45 title 注入）→ 当量脚本复跑 + 三闸门 → 攒批 push（§0.25.9, 30min 窗口）→ 探针验收。
 - **方案 B**: 全部留 9/13 与贺卡/RED 合批（省 1 次 build, 但破损标题多挂 3 天）。
