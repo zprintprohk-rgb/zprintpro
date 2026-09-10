@@ -212,7 +212,9 @@ export function ProductPageV9({
           {/* trust 三點（文案 = 既有信任聲明） */}
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13.5px] text-[#6B7280]">
             <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />深圳自有工廠</li>
+            <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />免費設計</li>
             <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />免費打樣</li>
+            <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />送貨上門</li>
             <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />100%滿意保證</li>
           </ul>
         </div>
@@ -229,7 +231,7 @@ export function ProductPageV9({
             <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
               訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
             </h2>
-            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-[34px] shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col">
+            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 shadow-[0_1px_3px_rgba(16,24,40,0.07)] flex flex-col">
               <div className="flex items-end justify-between gap-5 mb-6">
                 <div>
                   <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
@@ -262,7 +264,7 @@ export function ProductPageV9({
               <p className="text-[13.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
             </div>
           </div>
-          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between">
+          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-7 self-stretch lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)] flex flex-col justify-between">
             <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
             <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
             <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
@@ -288,15 +290,15 @@ export function ProductPageV9({
           <div className="grid gap-6 md:grid-cols-[1fr_1fr_320px]">
             <div>
               <div className="font-extrabold text-[19px] mb-1.5 text-white">標準 5-7 天</div>
-              <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 15K B2 數碼產線 · 提交檔案後 1 小時內免費數碼打稿 · 平均 2.3 天出貨，急單即日出貨</p>
+              <p className="text-[15px] text-white/90 leading-[1.65]">HP Indigo 15K B2 數碼產線 · 提交檔案後 1 小時內免費數碼打稿 · 平均 2.3 天出貨，急單即日出貨</p>
             </div>
             <div>
               <div className="font-extrabold text-[19px] mb-1.5 text-white">DHL 全球 2-4 天</div>
-              <p className="text-[16.5px] text-white/90 leading-[1.65]">順豐香港本地送貨 · 港島/九龍/新界 24 小時達 · DHL 全球 2-4 日</p>
+              <p className="text-[15px] text-white/90 leading-[1.65]">順豐香港本地送貨 · 港島/九龍/新界 24 小時達 · DHL 全球 2-4 日</p>
             </div>
             <a href={rushUrl} className="block bg-[#F87314] rounded-[14px] p-5 group">
               <div className="font-extrabold text-[19px] mb-1.5 text-white">即日急件</div>
-              <p className="text-[16.5px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
+              <p className="text-[15px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
             </a>
           </div>
         </div>
@@ -452,7 +454,7 @@ export function ProductPageV9({
           className="rounded-[20px] p-8 sm:p-12 text-center"
           style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
         >
-          <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">準備落單？2 小時免費打稿</h3>
+          <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">準備落單？1 小時免費打稿</h3>
           <p className="text-white/80 text-[16px] mb-6">WhatsApp 客服 +86 198 8085 1334 或點擊「30 秒 AI 報價」· 24 小時內回覆 · 免費設計諮詢</p>
           <div className="flex gap-3.5 justify-center flex-wrap">
             <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">30 秒 AI 報價</a>
