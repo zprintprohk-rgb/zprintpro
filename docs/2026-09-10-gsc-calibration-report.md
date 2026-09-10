@@ -114,3 +114,29 @@
 - **边界**: 本次零 src 改动; 数据仅 matrix + docs; 未触发 build/tsc 门禁 (数据层)
 - **验收**: check-encoding + tsc 本轮对 .mjs 脚本执行 (数据改动验证); matrix JSON 合法性已由 node parse 确认
 - **撞增升级候选 (K3 拍板)**: 大信封 24imp pos6.3 零点击 (信封品类未覆盖); fluorescent stickers 无独立落地页
+
+
+---
+
+## 附: 9/11 凌晨实测复校补遗 (K3-0910 cron A5 执行层, 工具链实测而非仅 git 对照)
+
+### ① 九篇重写 blog 线上可达性 27/27 = 200 (9 slug × 3 locale, HEAD 请求)
+
+www 域 301 → 裸域规范化正常; GSC UI 逐条抓取状态仍需人工确认 (A5 交接项); IndexNow 27 URL 已补推 HTTP 200 (2026-09-11T03:30, 真 key 首次打通)
+
+### ② BC 旧 URL 404 复校: 主体全绿 + 新发现 2 处残留断链 (已修 D-9/11-1)
+
+| 检查项 | 结果 |
+|--------|------|
+| V22 6 SKU 落点 (premium/thick/foil/spot-uv/matte/rounded-corner-greeting-cards) × 3 locale | ✅ 200 (14/14 含 en/ja category) |
+| `/{locale}/product/business-cards/` → category 承接 | ✅ 200 |
+| `/{locale}/blog/business-card-buying-guide/` | ✅ 200 (落 /blog/greeting-card-buying-guide/) |
+| 三语 sitemap business-card 残留 (本地+线上) | ✅ = 0 |
+| `✗ /{locale}/product/business-card-buying-guide/` | **→ 404** (落点产品页不存在) |
+| `✗ 裸/business-card-buying-guide/` | **→ 404** (无规则覆盖) |
+
+→ 两处残留已于 next.config.js 修复 (product 旧路径改指 /blog/ 落点 + 裸路径兜底), 待 CF Pages 部署后复测归零
+
+### ③ FAQ schema 收录抽检 (63af89ab): 渲染链+线上 6/6 全过
+
+business-envelopes + wall-calendars × 3 locale: 均 200 + FAQPage JSON-LD 在位 + 4 问三语正确 + JSON 合法 (抽检子 agent 实测, 2026-09-10); Rich Results 全量抽检可在 GSC 上线后随巡检扩展

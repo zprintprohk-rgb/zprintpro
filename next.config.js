@@ -134,8 +134,6 @@ function buildGuideRedirects() {
     ['spot-uv-business-cards', 'spot-uv-greeting-cards'],
     ['matte-business-cards', 'matte-greeting-cards'],
     ['rounded-corner-cards', 'rounded-corner-greeting-cards'],
-    // buying guide
-    ['business-card-buying-guide', 'greeting-card-buying-guide'], // BC-BAN §0.0: BC traffic -> greeting (9/8)
   ];
   for (const [oldSlug, newSlug] of V22_REDIRECTS) {
     for (const locale of LOCALES) {
@@ -194,6 +192,31 @@ function buildGuideRedirects() {
     });
   }
   // buying guide /blog/business-card-buying-guide/ → /blog/greeting-card-buying-guide/ (3 locale)
+  // 2026-09-11 K3 §0.25.3 复校残留: buying-guide 旧 product 路径 308→404 回归修复
+  // 落点实测: /product/greeting-card-buying-guide/ = 404 (产品页不存在), /blog/greeting-card-buying-guide/ = 200
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/business-card-buying-guide`,
+      destination: `/${locale}/blog/greeting-card-buying-guide/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/business-card-buying-guide/`,
+      destination: `/${locale}/blog/greeting-card-buying-guide/`,
+      permanent: true,
+    });
+  }
+  // 2026-09-11 裸路径兜底: /business-card-buying-guide 无规则覆盖 = 404 回归修复 (3 locale 前缀由 middleware 补)
+  rules.push({
+    source: '/business-card-buying-guide',
+    destination: '/zh-hk/blog/greeting-card-buying-guide/',
+    permanent: true,
+  });
+  rules.push({
+    source: '/business-card-buying-guide/',
+    destination: '/zh-hk/blog/greeting-card-buying-guide/',
+    permanent: true,
+  });
   for (const locale of LOCALES) {
     rules.push({
       source: `/${locale}/blog/business-card-buying-guide`,
