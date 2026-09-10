@@ -319,9 +319,9 @@ export default function CategoryPage({
   // en/ja 渲染零影响 (legacy 分支原样保留, B2/B3 批次处理)。
   // 显式 :boolean 返回类型: 禁用 TS 5.5+ 推断类型谓词, 否则 else 分支 locale 被收窄为 'en'|'ja',
   // legacy 分支内既有的 locale==='zh-hk' 判断会报 TS2367。
-  // v9.2.1 B2 (2026-09-10): 门控扩至 en (zh-hk + en 走 v9 模板; ja 保持 legacy 至 B3)。
+  // v9.2.1 B2/B3 (2026-09-10): 门控扩至 en + ja (三 locale 全走 v9 模板; legacy 分支保留作回滚路径)。
   // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367。
-  const isV9 = (l: Locale): boolean => l === 'zh-hk' || l === 'en';
+  const isV9 = (l: Locale): boolean => l === 'zh-hk' || l === 'en' || l === 'ja';
 
   // Sort options — 必须在 t 声明后 (依赖 t.popularity / t.priceAsc / t.priceDesc)
   const sortOptions: { value: string; label: string }[] = [

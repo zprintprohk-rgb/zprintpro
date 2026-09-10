@@ -336,9 +336,9 @@ export default function ProductPage({
   };
   
   const t = translations[locale];
-  // 2026-09-09 PDP v9.1 樷板路由门控 (执行卡锁定点 2): 仅 zh-hk /product/waterproof-stickers/ 走 v9 渲染层,
-  // 其余 SKU + en/ja 渲染零影响 (legacy 分支原样保留)
-  const isV9Waterproof = locale === 'zh-hk' && slug === 'waterproof-stickers';
+  // 2026-09-10 C1 (v9.2.1): PDP v9 模板门控扩至 zh-hk 全 SKU (原仅 waterproof-stickers)。
+  // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367; en/ja 至 C2/C3。
+  const isV9Pdp = (l: Locale): boolean => l === 'zh-hk';
   // v9.1 工厂实证图 (海德堡柯式印刷机组; 盘上实存 public/images/factory/factory-heidelberg.webp)
   const PDP_FACTORY_IMAGE = '/images/factory/factory-heidelberg.webp';
   
@@ -360,12 +360,13 @@ export default function ProductPage({
           违反 v2 §3.3 "无真实评价数据, 不可编造" 铁律。
           generateProductReviewsJsonLd 函数保留, 后续如有真实评价数据 (Trustpilot/Google Reviews API 接入) 再启用。 */}
       
-      {isV9Waterproof ? (
+      {isV9Pdp(locale) ? (
         <ProductPageV9
           locale={locale}
           product={product}
           productTitle={productTitle}
           productDescription={productDescription}
+          categoryName={categoryName}
           h1={locale === 'zh-hk' ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug) : productTitle}
           faqItems={faqItems ?? []}
           longDesc={longDesc ?? ''}

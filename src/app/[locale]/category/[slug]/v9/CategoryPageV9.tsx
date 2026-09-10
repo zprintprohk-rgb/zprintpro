@@ -72,7 +72,7 @@ interface V9Strings {
   specMaterialPrefix: string;
   qtyLabel: (q: number) => string;
 }
-const V9T: Record<'zh-hk' | 'en', V9Strings> = {
+const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
   'zh-hk': {
     hot: '熱賣',
     materialTag: '[材質]',
@@ -141,6 +141,43 @@ const V9T: Record<'zh-hk' | 'en', V9Strings> = {
     specMaterialPrefix: 'Material: ',
     qtyLabel: (q) => `From ${q}`,
   },
+  /* v9.2.1 B3 (2026-09-10): ja 列 — 复用站内现有 ja 条目 (CategoryProductCard ja / page.tsx ja bannerTitle L309 /
+     ProductWhyChooseUs ja / RegionalContent ja / faq 页「よくある質問」schema-extensions L752 / RegionalCta ja L54/60);
+     UI 骨架标签 (材質/最小注文/コア競争力等) 为 ja 新最小功能标签, 列 B3 报告已知偏差 */
+  ja: {
+    hot: '人気',
+    materialTag: '[材質]',
+    moqTag: '[最小注文]',
+    fromSuffix: '〜',
+    orderNow: '今すぐ注文',
+    moqLine: (q, u) => `${q}${u || '枚'}〜`,
+    bannerCaps: ['無料サンプル', '即日納品', 'ISO9001認証', 'DHL速達'],
+    bannerSubtitle: 'プロ品質、透明な価格、迅速な納品',
+    home: 'ホーム',
+    bannerAlt: (name) => `${name}の全ラインナップ印刷見本`,
+    specCountWord: '種類',
+    specsChooseWord: '種類から選べる',
+    fallbackCore: 'コア競争力',
+    fallbackMaterial: '素材と加工',
+    fallbackFinishing: '特殊加工オプション',
+    fallbackTech: '技術仕様',
+    serviceEyebrow: 'Local Service',
+    fallbackService: '国内対応サービス',
+    industriesTitle: '導入事例と業界シーン',
+    industriesSub: 'カテゴリごとに、よくある業界シーンと対応プランをまとめました。詳しくはクリック。',
+    tierA: '主要業界',
+    tierB: 'サブ業界',
+    viewFull: '詳しく見る →',
+    faqTitle: 'よくある質問',
+    ctaHeading: 'WhatsAppで直接お問い合わせ · 30秒で依頼',
+    ctaSub: '見積もり後、銀行振込 / WeChat Pay / Alipay / PayPal で決済 · 24時間以内に返信',
+    getQuote: '無料お見積もり',
+    whatsapp: 'WhatsAppで相談',
+    mrailPriceLabel: (p) => `${p}〜`,
+    mrailCta: '30秒見積もり',
+    specMaterialPrefix: '材質：',
+    qtyLabel: (q) => `${q}〜`,
+  },
 };
 
 /* ---------- 通用小件（藍本 .eyebrow / h2.st / .sec-sub） ---------- */
@@ -168,8 +205,8 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
     ? anchor.big
     : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
   const unitWord = getPriceUnitWord(product.price_range);
-  // 门控保证运行时 locale ∈ {zh-hk, en} (B2; ja 至 B3 才进 v9)
-  const t9 = V9T[locale as 'zh-hk' | 'en'];
+  // 门控保证运行时 locale ∈ {zh-hk, en, ja} (B3)
+  const t9 = V9T[locale as 'zh-hk' | 'en' | 'ja'];
   const moqLine = anchor
     ? anchor.sub
     : t9.moqLine(product.minQuantity, unitWord);
@@ -236,8 +273,8 @@ export function CategoryPageV9({
   products: Product[];
 }) {
   const localePrefix = `/${locale}`;
-  // 门控保证运行时 locale ∈ {zh-hk, en} (B2; ja 至 B3 才进 v9)
-  const t9 = V9T[locale as 'zh-hk' | 'en'];
+  // 门控保证运行时 locale ∈ {zh-hk, en, ja} (B3)
+  const t9 = V9T[locale as 'zh-hk' | 'en' | 'ja'];
   const conv = getConversionBlocks(slug, locale);
   const seo =
     categorySeoContent[slug]?.[locale as 'zh-hk' | 'en' | 'ja'] ??
@@ -287,7 +324,8 @@ export function CategoryPageV9({
 
   // B1 泛化: 產品網格 eyebrow — stickers 保持藍本「Sticker Printing」(定型頁逐像素不變),
   // 其餘類目用各分類現有 nameEn (products.ts 註冊, 內容零改寫)。
-  const gridEyebrow = slug === 'stickers' ? 'Sticker Printing' : categoryNameEn;
+  // B3: ja 一律用 ja 類目名 (getCategoryName ja, 如「ステッカー印刷」), 不用英文 eyebrow。
+  const gridEyebrow = locale === 'ja' ? categoryName : slug === 'stickers' ? 'Sticker Printing' : categoryNameEn;
 
   // B1 泛化: 非 stickers 類目由 products 實數據派生 SpecFinder 材質/數量選項 (內容零編造)。
   // stickers 不傳 options → SpecFinderV9 沿用硬編碼默認, 定型頁不變。
