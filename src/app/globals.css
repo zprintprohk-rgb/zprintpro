@@ -14,6 +14,11 @@
   --color-royal-navy-deep: #17284C;
   --color-royal-navy-grad: linear-gradient(155deg, var(--color-royal-navy-soft) 0%, var(--color-royal-navy) 55%, var(--color-royal-navy-deep) 100%);
   --color-royal-navy-overlay: linear-gradient(100deg, rgba(15, 26, 51, 0.9) 0%, rgba(21, 38, 73, 0.78) 45%, rgba(21, 38, 73, 0.3) 100%);
+  /* v9.2.1 裁决4 (K3 9/10 15:19 拍板): 首屏 Banner 藏青 → 橙渐变 (150deg #F87314→#EA580C→#C2410C), 三语言统一
+     护栏: 橙渐变只许 Banner 首屏 + 首页轮播; CTA 按钮维持纯橙 #F87314; 藏青退守数据带/页脚/PDP 即日卡 */
+  --color-orange-grad: linear-gradient(150deg, #F87314 0%, #EA580C 52%, #C2410C 100%);
+  /* 橙渐变上的对比度遮罩: 左深右浅, 取自橙族三色加深 (不引入新色相, 保证 H1/面包屑纯白可读) */
+  --color-orange-grad-overlay: linear-gradient(100deg, rgba(120, 32, 0, 0.62) 0%, rgba(170, 55, 8, 0.32) 50%, rgba(234, 92, 12, 0.1) 100%);
 }
 
 * {

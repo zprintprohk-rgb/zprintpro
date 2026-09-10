@@ -1,4 +1,5 @@
 import { Factory, Zap, Truck, Clock, ShieldCheck, Headphones, type LucideIcon } from 'lucide-react';
+import { Locale } from '@/lib/seo';
 
 /* ═══ 為何選擇智印港 — 信任色塊組件（TrustBadgeBlock） ═══
    - PLP / PDP 復用同一組件, 文案經 props 控制（默認 = 2026-09-09 唐總修訂輪2 指定替換文案）
@@ -29,6 +30,23 @@ export const TRUST_CARDS: TrustCard[] = [
   { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
 ];
 
+/* v9.2.1 B2 (2026-09-10): en 版正文/物流/卡片 — 逐字复用站内现有 en 条目 (源文件注释标注, 非新造, 禁机翻):
+   - intro: src/components/seo/RegionalContent.tsx L23 content.en.expertIntro (en 分类页在用)
+   - logistics: RegionalContent.tsx L20 content.en.shipping
+   - cards: src/components/ProductWhyChooseUs.tsx en.features (title/subtitle/description, en 产品页在用) */
+const EN_INTRO =
+  'ZprintPro is the international printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and beyond. We understand the unique requirements of international printing and offer IP-protected, ISO-certified quality manufacturing with worldwide logistics support.';
+const EN_LOGISTICS =
+  'Worldwide shipping via DHL Express: 3-5 days to US/UK/Australia · 5-7 days to Europe · Tracking number provided';
+const EN_CARDS: TrustCard[] = [
+  { icon: Factory, title: 'Shenzhen ISO Factory', sub: '15+ Years Experience', desc: 'Owned production facility in Shenzhen, operated by Cailong Printing. ISO-certified quality manufacturing.' },
+  { icon: Zap, title: 'Same-Day Delivery', sub: 'Rush 24h Available', desc: 'Standard 3-5 days, urgent orders same day' },
+  { icon: Truck, title: 'DHL Express Direct', sub: 'Nationwide Coverage', desc: 'DHL door-to-door delivery across the US' },
+  { icon: Clock, title: 'Free Sample', sub: 'Order with Confidence', desc: 'Free physical sample for bulk orders' },
+  { icon: ShieldCheck, title: 'Quality Guarantee', sub: '100% Satisfaction', desc: 'Free reprint if not satisfied, full refund' },
+  { icon: Headphones, title: '24/7 Support', sub: 'Always Available', desc: 'Professional customer service online 24/7' },
+];
+
 export interface TrustBadgeBlockProps {
   /** 眉題（默認 Why ZprintPro） */
   eyebrow?: string;
@@ -40,16 +58,24 @@ export interface TrustBadgeBlockProps {
   cards?: TrustCard[];
   /** 底色變體: light = 6 步落單流程同款 #F2F6FF（默認, PLP 用）; navy = 皇家藏青 token（修訂輪4, PDP 用） */
   variant?: 'light' | 'navy';
+  /** 語系 (B2 2026-09-10): 默認 zh-hk = 現行文案不變; en 走現有條目 (ProductWhyChooseUs en + RegionalContent en), ja 待 B3 */
+  locale?: Locale;
 }
 
 export function TrustBadgeBlock({
   eyebrow = 'Why ZprintPro',
-  paragraphs = [TRUST_COPY_INTRO],
-  logistics = TRUST_COPY_LOGISTICS,
-  cards = TRUST_CARDS,
+  paragraphs,
+  logistics,
+  cards,
   variant = 'light',
+  locale = 'zh-hk',
 }: TrustBadgeBlockProps) {
   const navy = variant === 'navy';
+  const en = locale === 'en';
+  // en: 正文/物流/卡片复用现有 en 条目 (本地常量, 源见文件头注释)
+  const resolvedParagraphs = paragraphs ?? (en ? [EN_INTRO] : [TRUST_COPY_INTRO]);
+  const resolvedLogistics = logistics !== undefined ? logistics : en ? EN_LOGISTICS : TRUST_COPY_LOGISTICS;
+  const resolvedCards = cards ?? (en ? EN_CARDS : TRUST_CARDS);
   return (
     <section className="max-w-[1320px] mx-auto px-6 mb-16">
       {/* light: 底色與圓角 = 6 步落單流程區同款（bg-[#F2F6FF] + rounded-[22px]）
@@ -65,21 +91,25 @@ export function TrustBadgeBlock({
               {eyebrow}
             </span>
             <h2 className={`text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight ${navy ? 'text-white' : 'text-[#111827]'}`}>
-              為何選擇<em className="not-italic text-[#F87314]">智印港</em>
+              {en ? (
+                <>Why Choose <em className="not-italic text-[#F87314]">ZprintPro</em></>
+              ) : (
+                <>為何選擇<em className="not-italic text-[#F87314]">智印港</em></>
+              )}
             </h2>
-            {paragraphs.map((p, i) => (
+            {resolvedParagraphs.map((p, i) => (
               <p key={i} className={`mt-4 text-[16.5px] leading-[1.9] text-justify ${navy ? 'text-white/90' : 'text-[#3A4250]'}`}>
                 {p}
               </p>
             ))}
-            {logistics && (
+            {resolvedLogistics && (
               <p className={`mt-4 pt-4 border-t text-[16.5px] leading-[1.8] font-bold ${navy ? 'border-white/15 text-white' : 'border-[#C9D6F2] text-[#2873F5]'}`}>
-                {logistics}
+                {resolvedLogistics}
               </p>
             )}
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-[18px]">
-            {cards.map((w) => (
+            {resolvedCards.map((w) => (
               <div
                 key={w.title}
                 className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px] hover:border-[#d6e0f5]"

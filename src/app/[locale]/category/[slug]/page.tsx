@@ -272,7 +272,7 @@ export default function CategoryPage({
   // 翻译文本
   const translations = {
     'zh-hk': {
-      productsCount: `共 ${categoryProducts.length} 款產品`,
+      productsCount: '', // v9.2.1 裁决3: zh-hk 已走 v9 模板(计数行删除), 此键仅余类型占位, 永不渲染
       sortBy: '排序方式',
       priceAsc: '價格由低到高',
       priceDesc: '價格由高到低',
@@ -319,7 +319,9 @@ export default function CategoryPage({
   // en/ja 渲染零影响 (legacy 分支原样保留, B2/B3 批次处理)。
   // 显式 :boolean 返回类型: 禁用 TS 5.5+ 推断类型谓词, 否则 else 分支 locale 被收窄为 'en'|'ja',
   // legacy 分支内既有的 locale==='zh-hk' 判断会报 TS2367。
-  const isV9ZhHk = (l: Locale): boolean => l === 'zh-hk';
+  // v9.2.1 B2 (2026-09-10): 门控扩至 en (zh-hk + en 走 v9 模板; ja 保持 legacy 至 B3)。
+  // 显式 :boolean 返回注解禁用 TS5.5 推断类型谓词, 防 legacy 分支 locale 收窄报 TS2367。
+  const isV9 = (l: Locale): boolean => l === 'zh-hk' || l === 'en';
 
   // Sort options — 必须在 t 声明后 (依赖 t.popularity / t.priceAsc / t.priceDesc)
   const sortOptions: { value: string; label: string }[] = [
@@ -379,7 +381,7 @@ export default function CategoryPage({
         return <JsonLd data={mergedFaq} />;
       })()}
 
-      {isV9ZhHk(locale) ? (
+      {isV9(locale) ? (
         <CategoryPageV9
           locale={locale}
           slug={slug}
@@ -447,7 +449,7 @@ export default function CategoryPage({
 
             {/* 右侧产品列表 */}
             <div className="flex-1">
-              {/* 排序栏 — 浅灰条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-18: 蓝条改 gray-100, 与首页 HowItWorks 底部灰条同款) */}
+              {/* 排序栏 — 浅灰条（產品數 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-18: 蓝条改 gray-100, 与首页 HowItWorks 底部灰条同款) */}
               <div className="flex items-stretch mb-4 gap-0 rounded-t-lg overflow-hidden">
                 <div className="bg-gray-100 text-slate-700 px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
                   <div className="w-1 h-5 bg-gray-300 rounded-full flex-shrink-0" />
