@@ -4207,7 +4207,7 @@
       "verify_deploy_status": "pending"
     }
   ],
-  "last_updated": "2026-08-05T15:00:00+08:00",
+  "last_updated": "2026-09-12T05:25:00+08:00",
   "k3_section6_skip_log": [
     {
       "date": "2026-07-29",
@@ -11053,5 +11053,98 @@
       "pending": "9/12 CTR 判定日 (8/30 批): 31 词 + food-boxes 3 locale 同口径导出 + seo-weekly-history.json"
     },
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12), 9/12 判定; 9/10 标题 v4 45 条 P0 已上线 (0ffc96c0/61ffd7a8), 属新批次, 9/13 后才可判定; 本次零改文案, 仅数据回灌"
+  },
+  "gsc_weekly_meta_2026_09_12": {
+    "version": 1,
+    "run_at": "2026-09-12T05:25:00+08:00",
+    "cron": "weekly-meta-refresh 周五 23:07 Asia/Shanghai (延迟至周六 04:23 触发, v7 新执行层)",
+    "task": "W2 en/ja 类目页 meta description refresh (v4.0 主报告 6.2 Track B 槽位; T3 词对齐 + 150-160 当量收敛)",
+    "data_source": {
+      "striking_distance": ".hermes/industry-keyword-matrix.json gsc_feedback_2026_09_10 (28d 口径, canonical = GSC数据 9/10 xlsx 12 件)",
+      "word_map": "money-keyword-map-20260902.csv (v4.0 主报告 §M.3, 校准 9/2)",
+      "w2_plan": "weekly-meta-refresh SSoT §6 W2 排期 (en: stickers+packaging+paper-bags / ja: ステッカー+パッケージ+チラシ)"
+    },
+    "scope_decision": "Track B 内容槽位 (B1 貼紙支撑内容) 已于 9/11 03:10 完成 (commit 03a8a0d6) — 幂等跳过; 本轮净新交付 = W2 en/ja meta refresh 6 条; titles 全程未动 (8/30 批 + 9/4 批冻结窗尊重)",
+    "freezes_respected": [
+      "8/30 批 title (seo.ts 类目 titles 只读)",
+      "9/4 摘果批只读",
+      "0 title 改动"
+    ],
+    "refreshes": [
+      {
+        "key": "stickers.en",
+        "from_chars": 262,
+        "to_chars": 155,
+        "targets": [
+          "small batch sticker printing 56imp pos9.4",
+          "custom stickers small batch"
+        ]
+      },
+      {
+        "key": "stickers.ja",
+        "from_chars": 109,
+        "to_chars": 157,
+        "targets": [
+          "pvc シール 25imp pos18.3",
+          "ダイカット ステッカー"
+        ]
+      },
+      {
+        "key": "packaging.en",
+        "from_chars": 335,
+        "to_chars": 153,
+        "targets": [
+          "W2 排期",
+          "当量收敛"
+        ]
+      },
+      {
+        "key": "packaging.ja",
+        "from_chars": 142,
+        "to_chars": 144,
+        "targets": [
+          "クラフト紙 パッケージ pos27 T2"
+        ]
+      },
+      {
+        "key": "paper-bags.en",
+        "from_chars": 325,
+        "to_chars": 154,
+        "targets": [
+          "W2 排期",
+          "当量收敛"
+        ]
+      },
+      {
+        "key": "flyers.ja",
+        "from_chars": 104,
+        "to_chars": 141,
+        "targets": [
+          "両面カラー 24imp ja最大流量 T2",
+          "チラシ ja T3"
+        ]
+      }
+    ],
+    "length_unit": "JS .length 字符数 (ja CJK 当量口径以 K3 后续拍板为准)",
+    "idempotency": {
+      "b1_track_b_content": "skipped (03a8a0d6 2026-09-11 完成, 报告 31673b22)",
+      "w2_meta_since_9_6": "git log --grep=meta 无 en/ja 类目 meta commit — net-new 执行",
+      "weekly_meta_log_7d": "无 7 天内 weekly-meta 日志 — 放行"
+    },
+    "gates": {
+      "check_encoding": "PASS (staged UTF-8 LF)",
+      "tsc": "PASS (0 errors)",
+      "check_content_guard": "PASS (rc 0)",
+      "check_bc_ban": "BLOCK rc1 — 38 处命中全部为存量基线 (未触碰文件, 最后触碰 5/14-9/11), 本轮 6 行 diff 零命中",
+      "internal_links_cta": "BLOCK rc1 — 3 处存量 (campus pillar 内链 8<10, en/ja/zh-hk), 本轮零关联"
+    },
+    "push_status": "本地 commit 未 push — bc-ban 红灯为存量基线阻塞 (K3 待裁决: 基线清淤专项 vs 放行), 撞墙升级已记录",
+    "followups": [
+      "K3 裁决: bc-ban 38 处存量基线清淤排期 (涉及 quote-engine 测试夹具/quotation.ts/组件 icon map 等)",
+      "K3 裁决: campus pillar 内链 8→10 补齐 (3 locale, blog-data)",
+      "下槽位候选: flyers.en desc 262 字符遗留带外 + en title \"China Catalog Printing\" 与 desc \"Custom flyer printing\" 主题错位",
+      "ja 当量口径待 K3 拍板后复核 (当前 JS .length)",
+      "9/13 title v2 放行清单为独立车道, 本轮未动"
+    ]
   }
 }

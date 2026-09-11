@@ -365,8 +365,8 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '貼紙印刷 1 張起印，HK$0.22 起/張。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Custom sticker printing from $0.05, 1 MOQ. Waterproof, clear, gold foil, die-cut, matte & glossy for retail, restaurants, e-commerce brands. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC certified.',
-      'ja': 'ステッカー印刷 1 枚から、¥8〜。防水・透明・金箔・ダイカット・マット・光沢、小売・飲食・EC ブランド向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'en': 'Small batch sticker printing from $0.05 — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
+      'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 1 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
   'flyers': {
@@ -390,7 +390,7 @@ const categorySeoData: Record<string, {
       'zh-hk': '傳單印刷 100 張起印，HK$0.18 起/張。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
       'en': 'Custom flyer printing from $0.06, 100 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC certified.',
-      'ja': 'チラシ印刷 100 枚から、¥10〜。A4・A5・A3・両面・折込、飲食・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'ja': 'チラシ印刷・宣伝チラシ・両面カラー 100 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
   'packaging': {
@@ -408,8 +408,8 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '包裝盒訂製 100 個起印，HK$1.5 起/個。食品包裝 / 化妝品包裝 / 茶葉 / 電子產品通用，結構設計 / 燙金 / UV / 啞膠亮膜 / 內襯 / 開窗。免費 3D 打稿 6 小時，DHL 全球 2-4 天配送，滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      en: 'Custom packaging boxes from $0.85, 100 MOQ. Food safe / cosmetic / tea / electronics packaging, structural design + foil + UV + matte/glossy + inserts + windows. Free 3D proof in 6 hours, DHL 2-4 day USA delivery, free shipping $99+. Made for USA, perfect for e-commerce and retail brands. 30-second AI quote, ISO 9001 + FSC certified.',
-      ja: 'パッケージ箱印刷 100 個から、¥120〜。食品対応 / 化粧品 / 茶 / 電子機器向け、構造設計・箔押し・UV・マット/光沢・内装・窓開け。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      en: 'Custom packaging boxes from $0.85, 100 MOQ. Food-safe, cosmetic & kraft boxes with structural design. Free 3D proof, free shipping $99+, DHL 2-4 day USA.',
+      ja: 'パッケージ箱印刷・クラフト紙パッケージ 100 個から、¥120〜。食品対応・化粧品・茶・電子機器向け、構造設計・箔押し・UV・内装・窓開け。無料 3D 校正 6 時間、短納期、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
 'posters': {
@@ -447,7 +447,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       // 2026-08-26 K3 §6 轨 1 CTR 修复: 起价前置 + 美妝護膚/餐廳外賣机会词 + DHL 全球 + 5 sharp hook (Free Shipping / Free Design / 100 MOQ / Made for USA / Free Proof)
       'zh-hk': '紙袋印刷 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證品質。',
-      en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft, white card & eco gift bags with free design mockup. Free shipping $99+ to USA + free proof in 4 hours. Fast 3-5 day production, DHL 2-4 day USA delivery. Made for USA, perfect for retail, restaurants, takeaway, beauty brands. 30-second AI quote, ISO 9001 certified.',
+      en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft & white card bags with free design. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA.',
       ja: '紙袋印刷 100 個から、¥240〜。FSC 認証クラフト・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。無料見積もり 30 秒、ISO 9001 認証品質。',
     },
   },
