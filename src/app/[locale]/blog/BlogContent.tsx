@@ -357,52 +357,65 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
       {/* D3 分类筛选条 (单行紧凑, SpecFinder 语言) + 搜索条 + D4 文章网格 (白底 3 列) */}
       <section className="bg-white">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
-            <label className="relative flex-1 max-w-[380px]">
-              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" /></svg>
-              <input
-                type="search"
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
-                placeholder={locale === 'zh-hk' ? '搜尋文章…' : locale === 'ja' ? '記事を検索…' : 'Search articles…'}
-                className="w-full rounded-full border border-gray-200 bg-gray-50 pl-10 pr-4 py-2.5 text-sm text-[#333333] outline-none focus:border-[#2873F5] focus:bg-white focus:ring-2 focus:ring-[#2873F5]/15 transition-all"
-                aria-label={locale === 'zh-hk' ? '搜尋文章' : locale === 'ja' ? '記事検索' : 'Search articles'}
-              />
-            </label>
-            <span className="text-xs text-gray-500 sm:ml-auto">
-              {query.trim()
-                ? `${filteredPosts.length} ${locale === 'zh-hk' ? '篇結果' : locale === 'ja' ? '件の結果' : 'results'}`
-                : `${filteredPosts.length} ${locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts'}`}
-            </span>
-          </div>
-          {/* 2026-09-12 v9.4: 分类胶囊全量换行显示 (原 overflow-x-auto 单行横向滚动 + 隐藏滚动条
-              会导致右侧类目被裁切不可见); 去掉 flex-shrink-0, 选中态加橙色 ring (藏青填充锁定不变) */}
-          <div className="flex flex-wrap items-center gap-2 md:gap-3">
-            <button
-              onClick={() => setActiveCategory('all')}
-              className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
-                activeCategory === 'all'
-                  ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30 ring-2 ring-[#F87314]'
-                  : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
-              }`}
-            >
-              {t.allArticles}
-              <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-white/70'}`}>{allPosts.length}</span>
-            </button>
-            {t.categories.filter((c) => categoryCounts[c.key]).map((c) => (
+          {/* 2026-09-12 v9.6: 搜索条 + 文章计数 + 分类胶囊组收纳进统一 navy 圆角色块
+              token 复用范本B (PDP 服務承諾色塊 ProductPageV9 L542-545):
+              var(--color-royal-navy-grad) + rounded-[18px] + p-6 sm:p-8 md:p-9 + inset/drop shadow
+              深底配色: 搜索框由浅灰底改半透明白底; 未选中胶囊由 navy 实心改 bg-white/10
+              (容器本身已是 navy, 胶囊再用 navy 会糊成一片); 选中态橙色实心 (#F87314 站点橙 token)
+              回归保护: 分类仍全量 .map() + flex-wrap 换行, 无 overflow/slice/单行截断 */}
+          <div
+            className="w-full rounded-[18px] p-6 sm:p-8 md:p-9 text-white"
+            style={{
+              background: 'var(--color-royal-navy-grad)',
+              boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)',
+            }}
+          >
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <label className="relative w-full md:max-w-[380px]">
+                <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" /></svg>
+                <input
+                  type="search"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder={locale === 'zh-hk' ? '搜尋文章…' : locale === 'ja' ? '記事を検索…' : 'Search articles…'}
+                  className="w-full rounded-full border border-white/15 bg-white/10 pl-10 pr-4 py-2.5 text-sm text-white placeholder:text-white/50 outline-none focus:border-orange-400 focus:bg-white/15 focus:ring-2 focus:ring-orange-400/40 transition-all"
+                  aria-label={locale === 'zh-hk' ? '搜尋文章' : locale === 'ja' ? '記事検索' : 'Search articles'}
+                />
+              </label>
+              <span className="text-sm text-white/70 md:whitespace-nowrap">
+                {query.trim()
+                  ? `${filteredPosts.length} ${locale === 'zh-hk' ? '篇結果' : locale === 'ja' ? '件の結果' : 'results'}`
+                  : `${filteredPosts.length} ${locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts'}`}
+              </span>
+            </div>
+            {/* 分类胶囊组 (保留 v9.4 全量换行成果, 本批仅改深底配色) */}
+            <div className="mt-6 flex flex-wrap items-center gap-2 md:gap-3">
               <button
-                key={c.key}
-                onClick={() => setActiveCategory(c.key)}
-                className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
-                  activeCategory === c.key
-                    ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30 ring-2 ring-[#F87314]'
-                    : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
+                onClick={() => setActiveCategory('all')}
+                className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-all border ${
+                  activeCategory === 'all'
+                    ? 'bg-[#F87314] border-[#F87314] text-white shadow-md shadow-orange-500/30'
+                    : 'bg-white/10 border-white/15 text-white/90 hover:bg-white/20'
                 }`}
               >
-                {c.label}
-                <span className={`text-xs ${activeCategory === c.key ? 'text-white/80' : 'text-white/70'}`}>{categoryCounts[c.key]}</span>
+                {t.allArticles}
+                <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-white/50'}`}>{allPosts.length}</span>
               </button>
-            ))}
+              {t.categories.filter((c) => categoryCounts[c.key]).map((c) => (
+                <button
+                  key={c.key}
+                  onClick={() => setActiveCategory(c.key)}
+                  className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-all border ${
+                    activeCategory === c.key
+                      ? 'bg-[#F87314] border-[#F87314] text-white shadow-md shadow-orange-500/30'
+                      : 'bg-white/10 border-white/15 text-white/90 hover:bg-white/20'
+                  }`}
+                >
+                  {c.label}
+                  <span className={`text-xs ${activeCategory === c.key ? 'text-white/80' : 'text-white/50'}`}>{categoryCounts[c.key]}</span>
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* 3 列白卡网格 — hover 仅边框+阴影 (禁缩放位移) */}
