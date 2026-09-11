@@ -28,6 +28,10 @@ export function BreadcrumbNav({ locale }: BreadcrumbNavProps) {
   if (pathname.includes('/category/')) return null;
   // 产品页面包屑由 page.tsx 内部渲染（含真实分类名），不渲染独立面包屑
   if (pathname.includes('/product/')) return null;
+  // 2026-09-12 v9.4: blog 列表/详情 与 contact 页的 Hero 已改为通栏色块且自带浅色面包屑,
+  // 若此处再渲染独立白条面包屑会在导航栏与 Hero 之间留下白色间隙（且面包屑重复）。
+  if (pathname.includes('/blog')) return null;
+  if (pathname.includes('/contact')) return null;
 
   const segments = pathname.replace(`/${locale}`, '').split('/').filter(Boolean);
   if (segments.length === 0) return null;

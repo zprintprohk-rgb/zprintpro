@@ -72,7 +72,21 @@ PLP 選購指南段数据 links 含 **19 条死链**（7 个已下线 blog slug�
 - tsc 54=54 持平（0 命中本批改动文件）
 - `npm run build` Compiled successfully, exit 0
 - FAQ JSON ×3 合法性校验通过
-- 编码 UTF-8 LF ✓
+- 编码 UTF-8 LF ✓（`press-kit/page.tsx`、`services/seo/[slug]/page.tsx` 两文件为**既有 CRLF**，与 HEAD 完全一致，本批 0 EOL 改动，未做全文件 churn）
+
+## 八、上线与线上验收
+
+- 提交 `21cf35c5` → main 合并 `fcd4de63`（含 sku-seo-data.ts 冲突解决：**标题取 main**（他批 title 优化已上线，不覆盖）+ **description 取本批**（2h 回覆））
+- CF 部署 `3ad811cf` deploy:success
+- **线上抽查 `.hermes/e-consistency-probe.mjs`：24 PASS / 4 FAIL**
+  - 4 个 FAIL **全部** 是 CF 平台 503 取页失败（ja/contact、zh-hk/faq、zh-hk/quote、en/quote，各重试 6 次仍失败）
+  - **内容类断言 0 失败**：所有成功取回的页面均含统一后的 2 小時 / within 2 hours / 2時間以内 文案，且不含回覆类冲突串（reply within 24 hours / 24h response / within 15 minutes / 15分以内 / 24 小時內回覆）
+  - 覆盖：contact ×3 / faq ×3 / quote ×2 / about / PLP ×3 / legal / press-kit
+- 注：`/en/contact/` 页面内含 SLA FAQ 手风琴（打样/顺丰/数码 24 小時为**合法保留口径**），探针用「回覆专属串」判定以避免误报
+
+## 九、遗留
+
+- `src/data/category-seo-content.ts` 的 `buyingGuide.links` 仍保留 7 个已下线 blog slug（渲染层已过滤，线上不再出现；是否清理数据本体待老板定）
 
 ## 数据来源
 
