@@ -78,7 +78,14 @@
 | 导航下拉组件已接 M3 映射（客户端 bundle 含 `blog-m3`） | ✅ |
 | 抽样 M3 图 HTTP 200 + <115KB | ✅ 5/5 |
 
-## 七、遗留偏差
+## 七、线上验收（生产 zprintpro.com）
+
+- 上线链：commit `c8c18c03` → main merge `3ab215b9` → CF 部署 `87419431`（`3ab215b`）**deploy:success**
+- **线上探针：34 PASS / 0 FAIL — ALL GREEN**（`V97_BASE=https://zprintpro.com node .hermes/v97-verify.mjs`，结果落 `.hermes/logs/v97-probe-live.txt`）
+- **线上图与本地图字节级一致**（md5 比对 3/3 匹配）：`sticker-guide` 97.7KB / `print-specifications-reference-guide-2026` 113.3KB / `a5-vs-a6-flyer-size` 99.5KB，全部 <115KB → 证明新 M3 图确已上线（非 CDN 旧缓存）
+- **配额**：CF API 确认本批**仅 1 次生产构建**（`2026-09-11T20:29:10Z production 3ab215b`），无 preview → 延续「只推 main」的配额收敛口径
+
+## 八、遗留偏差
 
 1. **首页知识栏由「4 篇固定策划文章」改为「blog 最新 4 篇」**：这是为满足「信息 + 图片同点更新」（原硬编码信息已过期：日期写 2025-03，实际文章为 2024-04；且 ja 栏目的标题与所链文章不符）。若老板希望恢复固定 4 篇，仅需指回固定 slug 列表（1 处常量）。
 2. **hero 占比 48%**：其余为老板指定的回退变体（variety 18 / multi-angle 7）及更深回退（detail 13 / 其他 8）。原因：部分类目（packaging / posters / menus / wedding等）的 hero 多为 115-140KB，虽已压至 <100KB 但同篇已占用，或该类目 hero 数量少于文章数。

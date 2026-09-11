@@ -1,31 +1,23 @@
 /**
- * Blog M3 选图 v5（2026-09-12 老板两档体积规则）
- * 体积规则（按老板原话）:
- *   ① 图片 < 115KB → 直接选用（webp，不二次压缩，零画质损失）
- *   ② 图片 ≥ 115KB → 压缩处理后使用，目标 **< 100KB**
+ * Blog M3 选图 v4（2026-09-12 老板追加指令）
+ * 门禁更新: 落地文件必须 **严格 < 100KB**（老板原话「如果图片还是大于115kb，你可以再处理一下webp图片的大小，以小于100kb后我们再使用」）
+ *   → 体积不再是「选图筛选条件」，而是「落地处理目标」：
+ *     先按语义挑最佳图（hero 优先），再用 sharp 压到 <100KB 后使用（质量递降 90→60，必要时缩边）。
  * 选图规则:
- *   hero 优先 > variety > multi-angle > spread > detail > 其他(box-open/card-stand/calendar-open)
- *   文件名关键词 (category + productSlug) 与文章 slug 词元重合度；类目优先，类目耗尽跨类目兜底（保证 0 篇无图）
- *   全局唯一（顺序占位，一张图只给一篇）+ 三语同图（1 篇 = 1 张物理图）
+ *   1) 变体优先级 hero > variety > multi-angle > spread > detail > 其他(box-open/card-stand/calendar-open)
+ *   2) 文件名关键词 (category + productSlug 词元) 与文章 slug 词元重合度评分
+ *   3) 类目优先 (categoryKey 映射)，类目耗尽才跨类目兜底；保证 0 篇无图
+ *   4) 全局唯一 (一张图只给一篇) + 三语同图 (1 篇 = 1 张物理图)
  * 输出: public/images/blog-m3/{slug}.webp + src/data/blog-m3-images.ts + 日志
  */
 import fs from 'fs';
 import path from 'path';
-import crypto from 'crypto';
 import sharp from 'sharp';
-
-/** 物理内容哈希 (同一张图出现在多个 SKU 目录时去重, 保证线上卡片图视觉唯一) */
-const hashCache = new Map();
-function fileHash(p) {
-  if (!hashCache.has(p)) hashCache.set(p, crypto.createHash('md5').update(fs.readFileSync(p)).digest('hex'));
-  return hashCache.get(p);
-}
 
 const M3_ROOT = 'F:\\zprintpro-en-us-images M3的模型生成的图片';
 const SRC_ROOT = 'F:\\zprintpro-nextjs';
 const DEST = path.join(SRC_ROOT, 'public', 'images', 'blog-m3');
-const GATE_DIRECT = 115 * 1024; // <115KB 直接用
-const TARGET = 100 * 1024;      // ≥115KB 者压到 <100KB
+const LIMIT = 100 * 1024; // 严格小于 100KB
 
 const KNOWN_CATS = ['paper-bags', 'red-packets', 'japan-doujin', 'greeting-cards', 'wedding-invitations', 'educational', 'envelopes', 'packaging', 'calendars', 'stickers', 'banners', 'posters', 'flyers', 'menus', 'books'];
 const LOCALES = ['en', 'ja', 'zh-hk'];
@@ -106,41 +98,23 @@ function catsFor(post) {
 const STOP = new Set(['guide', 'printing', 'print', 'hk', 'hong', 'kong', '2026', '2027', 'best', 'vs', 'and', 'the', 'for', 'a', 'an', 'custom', 'how', 'to', 'in', 'of', 'complete', 'ultimate', 'your', 'why']);
 const tokens = (s) => s.split('-').filter((t) => t.length > 1 && !STOP.has(t));
 
-/** 两档体积规则落地 */
+/** 落地: 保证输出严格 <100KB */
 async function place(srcEntry, destPath) {
-  if (srcEntry.size < GATE_DIRECT) { fs.copyFileSync(srcEntry.src, destPath); return { bytes: srcEntry.size, mode: 'copy(<115KB)' }; }
+  if (srcEntry.size < LIMIT) { fs.copyFileSync(srcEntry.src, destPath); return { bytes: srcEntry.size, compressed: false, step: 'copy' }; }
   const tmp = `${destPath}.re.webp`;
   try {
-    // 阶梯 1: 保分辨率, 轻中度降质
-    for (const q of [88, 84, 80, 76, 72, 68, 64, 60]) {
+    for (const q of [90, 86, 82, 78, 74, 70, 66, 60]) {
       await sharp(srcEntry.src).webp({ quality: q, effort: 5 }).toFile(tmp);
       const s = fs.statSync(tmp).size;
-      if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `q${q}` }; }
+      if (s < LIMIT) { fs.renameSync(tmp, destPath); return { bytes: s, compressed: true, step: `q${q}` }; }
     }
-    // 阶梯 2: 降分辨率但保较高画质 (观感优于极低质量) — 2026-09-12 加, 避免 q50 这类低质产物
-    for (const w of [1080, 1000, 920, 840]) {
-      for (const q of [84, 80, 78]) {
-        await sharp(srcEntry.src).resize({ width: w, withoutEnlargement: true }).webp({ quality: q, effort: 5 }).toFile(tmp);
-        const s = fs.statSync(tmp).size;
-        if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `w${w}q${q}` }; }
-      }
-    }
-    // 阶梯 3: 极低质量兜底 (最后手段)
-    for (const q of [55, 50, 45, 40]) {
-      await sharp(srcEntry.src).webp({ quality: q, effort: 5 }).toFile(tmp);
+    for (const w of [1800, 1600, 1400, 1200]) {
+      await sharp(srcEntry.src).resize({ width: w, withoutEnlargement: true }).webp({ quality: 72, effort: 5 }).toFile(tmp);
       const s = fs.statSync(tmp).size;
-      if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `q${q}` }; }
-    }
-    // 阶梯 4: 深度降分辨率兜底 (保证 0 篇无图; 观感仍优于 q40 全尺寸)
-    for (const w of [820, 760, 700, 640]) {
-      for (const q of [78, 74, 70]) {
-        await sharp(srcEntry.src).resize({ width: w, withoutEnlargement: true }).webp({ quality: q, effort: 5 }).toFile(tmp);
-        const s = fs.statSync(tmp).size;
-        if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `w${w}q${q}` }; }
-      }
+      if (s < LIMIT) { fs.renameSync(tmp, destPath); return { bytes: s, compressed: true, step: `w${w}q72` }; }
     }
   } catch (e) {
-    console.error(`sharp failed ${srcEntry.name}: ${String(e).slice(0, 120)}`);
+    console.error(`sharp failed ${srcEntry.name}: ${String(e).slice(0, 100)}`);
   }
   if (fs.existsSync(tmp)) fs.unlinkSync(tmp);
   return null;
@@ -150,48 +124,57 @@ async function main() {
   const seen = new Set();
   const posts = loadBlogPosts().filter((p) => (seen.has(p.slug) ? false : (seen.add(p.slug), true)));
   const used = new Set();
-  const usedHashes = new Set();
   const map = {}, log = [];
   const stats = { hero: 0, variety: 0, 'multi-angle': 0, spread: 0, detail: 0, other: 0, compressed: 0, noMatch: 0, crossCat: 0 };
 
   fs.mkdirSync(DEST, { recursive: true });
   for (const f of fs.readdirSync(DEST)) if (f.endsWith('.webp')) fs.unlinkSync(path.join(DEST, f));
 
-  // 顺序分配: 即时占位保证全局唯一
-  for (const post of posts) {
+  const ranked = (post) => {
     const cats = catsFor(post);
     const pt = new Set(tokens(post.slug));
-    const rank = (allowCross) => pool
-      .filter((f) => !used.has(f.src) && !usedHashes.has(fileHash(f.src)))
+    return pool
+      .filter((f) => !used.has(f.src))
       .map((f) => {
         const overlap = tokens(f.productSlug).filter((t) => pt.has(t)).length;
         const inCat = cats.includes(f.category);
-        return { f, overlap, catRank: inCat ? cats.indexOf(f.category) : (allowCross ? 50 : 99), vRank: VARIANT_RANK[f.variant] ?? 9, locRank: f.locale === 'en' ? 0 : 1 };
+        return { f, overlap, catRank: inCat ? cats.indexOf(f.category) : 99, vRank: VARIANT_RANK[f.variant] ?? 9, locRank: f.locale === 'en' ? 0 : 1 };
       })
       .sort((a, b) => b.overlap - a.overlap || a.catRank - b.catRank || a.vRank - b.vRank || a.locRank - b.locRank || a.f.name.localeCompare(b.f.name));
+  };
 
-    let pick = rank(false).find((c) => c.catRank < 99 && (c.overlap > 0 || c.vRank <= 2)) || rank(false).find((c) => c.catRank < 99);
-    let crossCat = false;
-    if (!pick) { const all = rank(true); if (all.length) { pick = all[0]; crossCat = true; } }
+  // Pass 1: 类目内语义最佳 (hero 优先)
+  const pending = [];
+  for (const post of posts) {
+    const cands = ranked(post);
+    const pick = cands.find((c) => c.catRank < 99 && (c.overlap > 0 || c.vRank <= 2)) || cands.find((c) => c.catRank < 99);
+    if (pick) pending.push({ post, pick, crossCat: false });
+    else pending.push({ post, pick: null, crossCat: false });
+  }
+  // Pass 2: 类目耗尽者跨类目兜底 (仍 hero 优先), 保证 0 篇无图
+  for (const item of pending) {
+    if (item.pick) continue;
+    const cands = ranked(item.post);
+    if (cands.length) { item.pick = cands[0]; item.crossCat = true; }
+  }
+  for (const { post, pick, crossCat } of pending) {
     if (!pick) { stats.noMatch++; log.push(`ERROR no image [${post.slug}]`); continue; }
-
     used.add(pick.f.src);
-    usedHashes.add(fileHash(pick.f.src));
     const placed = await place(pick.f, path.join(DEST, `${post.slug}.webp`));
-    if (!placed) { stats.noMatch++; log.push(`ERROR compress failed [${post.slug}] <- ${pick.f.name} (${(pick.f.size / 1024).toFixed(0)}KB)`); continue; }
+    if (!placed) { stats.noMatch++; log.push(`ERROR compress failed [${post.slug}] <- ${pick.f.name}`); continue; }
     if (crossCat) stats.crossCat++;
     const vk = pick.f.variant in stats ? pick.f.variant : 'other';
     stats[vk]++;
-    if (placed.mode !== 'copy(<115KB)') stats.compressed++;
+    if (placed.compressed) stats.compressed++;
     map[post.slug] = `/images/blog-m3/${post.slug}.webp`;
-    log.push(`OK [${post.slug}] (${post.categoryKey}) <- ${pick.f.sku}/${pick.f.name} [${pick.f.variant}${crossCat ? ',跨类目' : ''}, ${(pick.f.size / 1024).toFixed(0)}KB → ${(placed.bytes / 1024).toFixed(1)}KB ${placed.mode}, overlap=${pick.overlap}]`);
+    log.push(`OK [${post.slug}] (${post.categoryKey}) <- ${pick.f.sku}/${pick.f.name} [${pick.f.variant}${crossCat ? ',跨类目' : ''}, ${(pick.f.size / 1024).toFixed(0)}KB → ${(placed.bytes / 1024).toFixed(1)}KB ${placed.step}, overlap=${pick.overlap}]`);
   }
 
   const mapLines = Object.entries(map).map(([k, v]) => `  '${k}': '${v}',`).join('\n');
   fs.writeFileSync(path.join(SRC_ROOT, 'src/data/blog-m3-images.ts'),
-`/** 自动生成 (2026-09-12 build-blog-m3-images-v5.ts): blog → M3 模型生成图
- * 体积两档规则: <115KB 直接选用; ≥115KB 压缩至 <100KB 后使用
- * 选图: hero 优先 > variety > multi-angle > spread > detail > 其他; 文件名关键词语义匹配; 全局唯一; 三语同图
+`/** 自动生成 (2026-09-12 build-blog-m3-images-v4.ts): blog → M3 模型生成图
+ * 规则: 变体 hero 优先 > variety > multi-angle > spread > detail > 其他; 文件名关键词语义匹配;
+ *      全局唯一; 三语同图 (1 slug = 1 张物理图); **落地文件严格 <100KB** (超标者 sharp 压缩后使用)
  * 消费点: /blog/ 列表卡 + /blog/[slug] 详情 hero + 首页「印刷知識」栏 + 导航「印刷知識」下拉 (四处同一张图) */
 export const blogM3Images: Record<string, string> = {
 ${mapLines}
@@ -199,18 +182,17 @@ ${mapLines}
 `, 'utf8');
 
   const sizes = fs.readdirSync(DEST).filter((f) => f.endsWith('.webp')).map((f) => fs.statSync(path.join(DEST, f)).size);
-  const over115 = sizes.filter((s) => s >= GATE_DIRECT).length;
   const maxSize = Math.max(...sizes);
-  const logPath = path.join(SRC_ROOT, '.hermes/logs/2026-09-12-blog-m3-selection-v5.md');
-  fs.writeFileSync(logPath, `# Blog M3 选图 v5 日志 (2026-09-12)
+  const logPath = path.join(SRC_ROOT, '.hermes/logs/2026-09-12-blog-m3-selection-v4.md');
+  fs.writeFileSync(logPath, `# Blog M3 选图 v4 日志 (2026-09-12, 门禁 <100KB)
 
-体积两档: <115KB 直接用 / ≥115KB 压到 <100KB
-
-- 源池(可解析): ${pool.length} 张（其中 <115KB: ${pool.filter((f) => f.size < GATE_DIRECT).length} 张）
+- 源池(可解析，含 ≥100KB): ${pool.length} 张
 - 文章数(去重): ${posts.length}
 - 变体分配: **hero=${stats.hero}** / variety=${stats.variety} / multi-angle=${stats['multi-angle']} / spread=${stats.spread} / detail=${stats.detail} / 其他=${stats.other}
-- 跨类目兜底: ${stats.crossCat} 篇; 压缩后使用: ${stats.compressed} 张; 无匹配: ${stats.noMatch}
-- 落地: ${sizes.length} 张, 最大 ${(maxSize / 1024).toFixed(1)}KB, ≥115KB 的 ${over115} 张
+- 跨类目兜底: ${stats.crossCat} 篇
+- sharp 压缩后落地: ${stats.compressed} 张
+- 无匹配: ${stats.noMatch}
+- 落地文件体积: 共 ${sizes.length} 张, 最大 ${(maxSize / 1024).toFixed(1)}KB（门禁 <100KB ${maxSize < LIMIT ? '✅ 全过' : '❌ 有超标'}）
 
 \`\`\`
 ${log.join('\n')}
@@ -220,7 +202,7 @@ ${log.join('\n')}
   console.log(`pool=${pool.length} posts=${posts.length}`);
   console.log(`variants: hero=${stats.hero} variety=${stats.variety} multi-angle=${stats['multi-angle']} spread=${stats.spread} detail=${stats.detail} other=${stats.other}`);
   console.log(`compressed=${stats.compressed} crossCat=${stats.crossCat} noMatch=${stats.noMatch}`);
-  console.log(`placed=${sizes.length} maxSize=${(maxSize / 1024).toFixed(1)}KB over115=${over115}`);
+  console.log(`placed=${sizes.length} maxSize=${(maxSize / 1024).toFixed(1)}KB (gate <100KB: ${maxSize < LIMIT})`);
   console.log(logPath);
 }
 

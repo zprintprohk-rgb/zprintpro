@@ -460,10 +460,12 @@ export function Header({ locale }: HeaderProps) {
                       <div className="flex-1 flex gap-4">
                         {['company-intro', 'sticker-guide', 'sticker-design'].map((slug, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
-                            <div className="relative overflow-hidden rounded-t-lg h-[120px]">
+                            {/* 2026-09-12: 图片框尺寸对齐「热门产品」分类下拉 (同用 flex-1 自适应高度, 去掉固定 h-[120px]);
+                                文字区 h-[60px] 与分类下拉一致, 保证两个下拉图片尺寸逐像素相同 */}
+                            <div className="flex-1 relative overflow-hidden rounded-t-lg">
                               <Image src={blogM3Images[slug] || `/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
                             </div>
-                            <div className="pt-2 h-[50px] flex items-center justify-center">
+                            <div className="pt-2 h-[60px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
                             </div>
                           </Link>
