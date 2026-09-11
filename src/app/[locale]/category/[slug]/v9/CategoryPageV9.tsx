@@ -331,34 +331,40 @@ export function CategoryPageV9({
     'place-cards': 'foil-stamping-3-applications-2026',
   };
   const rawGuideLinks = guide?.links ?? [];
-  const guideLinks =
-    rawGuideLinks.length > 0
-      ? rawGuideLinks
-      : (() => {
-          const links: { label: string; href: string }[] = [];
-          const siblingSlug = GUIDE_SIBLING_CAT[slug];
-          if (siblingSlug) {
-            const sib = allCategoryDefs.find((c) => c.slug === siblingSlug);
-            if (sib) {
-              const sibName =
-                locale === 'zh-hk'
-                  ? sib.name
-                  : locale === 'en'
-                  ? (sib.nameEn || sib.name)
-                  : (sib.nameJa || sib.name);
-              links.push({ label: sibName, href: `${localePrefix}/category/${siblingSlug}/` });
-            }
-          }
-          const blogSlug = GUIDE_BLOG_SLUG[slug];
-          if (blogSlug) {
-            const post = getBlogPostMetaBySlug(blogSlug);
-            if (post) {
-              const title = post.title[locale as Locale] || post.title['zh-hk'];
-              if (title) links.push({ label: title, href: `${localePrefix}/blog/${post.slug}/` });
-            }
-          }
-          return links;
-        })();
+  // G2.3 (2026-09-11): 選購指南内链保证 — 数据 links 缺失任一类时, 从静态映射补足
+  // ≥1 相关分类 + ≥1 相关 blog (三语言同结构; 链接 slug 全为线上 200 实存路由, 禁 404/301)。
+  const guideLinks = (() => {
+    const base = rawGuideLinks;
+    const needCat = !base.some((l) => l.href.includes('/category/'));
+    const needBlog = !base.some((l) => l.href.includes('/blog/'));
+    const extra: { label: string; href: string }[] = [];
+    if (needCat) {
+      const siblingSlug = GUIDE_SIBLING_CAT[slug];
+      if (siblingSlug) {
+        const sib = allCategoryDefs.find((c) => c.slug === siblingSlug);
+        if (sib) {
+          const sibName =
+            locale === 'zh-hk'
+              ? sib.name
+              : locale === 'en'
+              ? (sib.nameEn || sib.name)
+              : (sib.nameJa || sib.name);
+          extra.push({ label: sibName, href: `${localePrefix}/category/${siblingSlug}/` });
+        }
+      }
+    }
+    if (needBlog) {
+      const blogSlug = GUIDE_BLOG_SLUG[slug];
+      if (blogSlug) {
+        const post = getBlogPostMetaBySlug(blogSlug);
+        if (post) {
+          const title = post.title[locale as Locale] || post.title['zh-hk'];
+          if (title) extra.push({ label: title, href: `${localePrefix}/blog/${post.slug}/` });
+        }
+      }
+    }
+    return [...base, ...extra];
+  })();
 
   // B1 泛化 (2026-09-10): hero 圖按真實文件名映射 (ls public/images/hero/ 實證, 禁止編造圖名)。
   // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應圖 → 橙系占位漸變 (v9.2.1 裁决4 护栏3: 占位同步换橙, 注释声明保留)。
