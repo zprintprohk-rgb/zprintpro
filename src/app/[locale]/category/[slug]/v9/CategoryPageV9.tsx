@@ -10,7 +10,8 @@
  */
 import Image from 'next/image';
 import { Locale } from '@/lib/seo';
-import { Product, getProductDisplayTitle } from '@/data/products';
+import { Product, getProductDisplayTitle, categories as allCategoryDefs } from '@/data/products';
+import { getBlogPostMetaBySlug } from '@/data/blog-posts';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
 import {
   getConversionBlocks,
@@ -300,6 +301,65 @@ export function CategoryPageV9({
   const guideKey = guide?.paragraphs?.find((p) => p.startsWith('行業場景速配')) ?? '';
   const guideBody = (guide?.paragraphs ?? []).filter((p) => p !== guideLead && p !== guideKey);
 
+  // G2.3 (2026-09-11): 選購指南内链兜底 — guide.links 为空时按品类生成
+  // 1 相关分类 + 1 相关 blog (三语言同结构; 链接 slug 全为线上 200 实存路由, 禁 404/301)。
+  // 相关分类取同簇/相邻品类 (products.ts categories 全量实存), 相关 blog 取对应
+  // BlogCategoryKey 下日期最新一篇 (blog-posts.ts getBlogPostsByCategory, 标题按 locale)。
+  const GUIDE_SIBLING_CAT: Record<string, string> = {
+    stickers: 'packaging', packaging: 'stickers', flyers: 'posters', posters: 'flyers',
+    'paper-bags': 'packaging', books: 'educational', educational: 'books', menus: 'flyers',
+    envelopes: 'greeting-cards', calendars: 'educational', 'red-packets': 'greeting-cards',
+    banners: 'posters', 'japan-doujin': 'stickers', 'greeting-cards': 'red-packets',
+    'wedding-invitations': 'greeting-cards', 'place-cards': 'greeting-cards',
+  };
+  const GUIDE_BLOG_SLUG: Record<string, string> = {
+    stickers: 'sticker-material-pvc-vinyl-removable',
+    packaging: 'kraft-paper-box-types-comparison-2026',
+    flyers: 'a5-vs-a6-flyer-size',
+    posters: 'poster-size-guide',
+    'paper-bags': 'apparel-shopping-bag-printing-guide',
+    books: 'print-specifications-reference-guide-2026',
+    educational: 'graduation-yearbook-printing-guide',
+    menus: 'restaurant-menu-printing-guide',
+    envelopes: 'large-envelope-printing-c4-c5',
+    calendars: 'calendar-printing-guide',
+    'red-packets': 'wedding-red-packet-printing-guide',
+    banners: 'trade-show-banner-printing-guide',
+    'japan-doujin': 'doujin-circle-printing-guide',
+    'greeting-cards': 'foil-stamping-3-applications-2026',
+    'wedding-invitations': 'wedding-invitation-envelope-printing-guide',
+    'place-cards': 'foil-stamping-3-applications-2026',
+  };
+  const rawGuideLinks = guide?.links ?? [];
+  const guideLinks =
+    rawGuideLinks.length > 0
+      ? rawGuideLinks
+      : (() => {
+          const links: { label: string; href: string }[] = [];
+          const siblingSlug = GUIDE_SIBLING_CAT[slug];
+          if (siblingSlug) {
+            const sib = allCategoryDefs.find((c) => c.slug === siblingSlug);
+            if (sib) {
+              const sibName =
+                locale === 'zh-hk'
+                  ? sib.name
+                  : locale === 'en'
+                  ? (sib.nameEn || sib.name)
+                  : (sib.nameJa || sib.name);
+              links.push({ label: sibName, href: `${localePrefix}/category/${siblingSlug}/` });
+            }
+          }
+          const blogSlug = GUIDE_BLOG_SLUG[slug];
+          if (blogSlug) {
+            const post = getBlogPostMetaBySlug(blogSlug);
+            if (post) {
+              const title = post.title[locale as Locale] || post.title['zh-hk'];
+              if (title) links.push({ label: title, href: `${localePrefix}/blog/${post.slug}/` });
+            }
+          }
+          return links;
+        })();
+
   // B1 泛化 (2026-09-10): hero 圖按真實文件名映射 (ls public/images/hero/ 實證, 禁止編造圖名)。
   // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應圖 → 橙系占位漸變 (v9.2.1 裁决4 护栏3: 占位同步换橙, 注释声明保留)。
   const V9_HERO_BASE: Record<string, string> = {
@@ -412,10 +472,11 @@ export function CategoryPageV9({
             <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
               {quickAnswers.map((a) => (
                 <div key={a.q} className="bg-white border border-[#E5E7EB] rounded-[14px] px-[18px] pt-[18px] pb-4 shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
-                  <div className="font-bold text-[16px] mb-2 flex gap-2 items-baseline">
+                  {/* G2.1: 问句即 H3 (2026-09-11) — 3 直接答案卡 Q 升级语义标题, FAQPage schema 同源挂载 */}
+                  <h3 className="font-bold text-[16px] mb-2 flex gap-2 items-baseline m-0">
                     <span className="font-mono text-[12px] font-bold text-white bg-[#2873F5] rounded-[5px] px-1.5 py-0.5 shrink-0 -translate-y-px">Q</span>
                     {a.q}
-                  </div>
+                  </h3>
                   <p className="text-[15px] text-[#6B7280] leading-[1.7]">{a.a}</p>
                 </div>
               ))}
@@ -608,9 +669,9 @@ export function CategoryPageV9({
                 {guideKey && (
                   <p className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 text-[#1F2937] font-semibold text-[17px] leading-[1.9]">{guideKey}</p>
                 )}
-                {guide.links && guide.links.length > 0 && (
+                {guideLinks.length > 0 && (
                   <div className="mt-6 flex flex-wrap gap-2">
-                    {guide.links.map((l) => (
+                    {guideLinks.map((l) => (
                       <a key={l.href} href={l.href} className="inline-flex items-center rounded-full border border-[#E5E7EB] bg-white px-3.5 py-1.5 text-[13px] font-semibold text-[#1B3163] hover:border-[#2873F5] hover:text-[#2873F5] transition-colors">
                         {l.label}
                       </a>
