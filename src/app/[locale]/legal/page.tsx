@@ -50,7 +50,7 @@ const translations = {
     contactBody:
       '如有任何疑問，歡迎透過以下方式聯絡我們。客服時間：星期一至五 9:00-18:00（香港時間），粵語、普通話、英語及日語皆可。',
     contactHours: '星期一至五 9:00-18:00（香港時間）',
-    contactResponseSla: '一般 1-2 個工作天內回覆',
+    contactResponseSla: '一般 2 小時內回覆',
     contactEmailLabel: '電郵',
     contactPhoneLabel: '電話',
     lastUpdatedDate: '2026年6月18日',
@@ -110,7 +110,7 @@ const translations = {
     contactBody:
       'Please reach out using the channels below. Japanese-speaking staff will respond on weekdays 9:00-18:00 JST.',
     contactHours: 'Weekdays 9:00-18:00 JST',
-    contactResponseSla: 'Typically replies within 1-2 business days',
+    contactResponseSla: 'Typically replies within 2 hours',
     contactEmailLabel: 'Email',
     contactPhoneLabel: 'Phone',
     lastUpdatedDate: 'June 18, 2026',
@@ -170,7 +170,7 @@ const translations = {
     contactBody:
       'ご質問・お問い合わせは下記までご連絡ください。日本語対応スタッフがお答えします(平日 9:00-18:00 日本時間)。',
     contactHours: '平日 9:00-18:00 日本時間',
-    contactResponseSla: '通常 1-2 営業日以内に返信',
+    contactResponseSla: '通常 2 時間以内に返信',
     contactEmailLabel: 'メール',
     contactPhoneLabel: '電話',
     lastUpdatedDate: '2026年6月18日',

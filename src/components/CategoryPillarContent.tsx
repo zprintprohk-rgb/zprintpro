@@ -6,6 +6,18 @@
 
 import Link from 'next/link';
 import { categorySeoContent, getDefaultCategoryContent } from '@/data/category-seo-content';
+import { categories as allCategoryDefs } from '@/data/products';
+import { getAllBlogPostSlugs } from '@/data/blog-posts';
+
+// 2026-09-11 G2.3/§13.6: 指南内链存在性过滤 — 数据 links 含已下线 blog slug (6 处死链),
+// 渲染前剔除, 保证线上 0 个 404 内链。
+const validBlogSlugs = new Set(getAllBlogPostSlugs());
+const validCategorySlugs = new Set(allCategoryDefs.map((c) => c.slug));
+function guideLinkExists(href: string): boolean {
+  const m = href.match(/\/(blog|category)\/([^/?#]+)\/?$/);
+  if (!m) return true;
+  return m[1] === 'blog' ? validBlogSlugs.has(m[2]) : validCategorySlugs.has(m[2]);
+}
 
 interface CategoryPillarContentProps {
   locale: string;
@@ -166,7 +178,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="mr-1">
               <path d="M8 1C4.1 1 1 4.1 1 8c0 1.3 0.3 2.5 0.9 3.6L1 15l3.5-0.9C5.6 14.6 6.8 15 8 15c3.9 0 7-3.1 7-7s-3.1-7-7-7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
             </svg>
-            {isZh ? 'WhatsApp 5 分鐘報價回覆 →' : isJa ? 'WhatsApp 5分以内見積返信 →' : 'WhatsApp quote reply in 5 min →'}
+            {isZh ? 'WhatsApp 2 小時內報價回覆 →' : isJa ? 'WhatsApp 2時間以内見積返信 →' : 'WhatsApp quote reply within 2 hours →'}
           </a>
         </div>
 
@@ -343,9 +355,9 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                 <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
               ))}
             </div>
-            {data.buyingGuide.links && data.buyingGuide.links.length > 0 && (
+            {data.buyingGuide.links && data.buyingGuide.links.filter((l) => guideLinkExists(l.href)).length > 0 && (
               <div className="mt-5 flex flex-wrap gap-2 sm:gap-3">
-                {data.buyingGuide.links.map((link, idx) => (
+                {data.buyingGuide.links.filter((l) => guideLinkExists(l.href)).map((link, idx) => (
                   <Link
                     key={idx}
                     href={link.href}

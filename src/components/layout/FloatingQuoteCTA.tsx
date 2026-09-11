@@ -41,7 +41,7 @@ const TEXTS = {
   },
   'ja': {
     btnLabel: '無料見積もり',
-    microCopy: '4時間以内に返信 · サンプル送料無料',
+    microCopy: '2時間以内に返信 · サンプル送料無料',
     formTitle: '無料見積もり依頼',
     nameLabel: 'お名前',
     emailLabel: 'メールアドレス',
@@ -56,7 +56,7 @@ const TEXTS = {
   },
   'zh-hk': {
     btnLabel: 'WhatsApp 立即查詢',
-    microCopy: '5 分鐘回覆 · 全港順豐本地倉',
+    microCopy: '2 小時內回覆 · 全港順豐本地倉',
     whatsappMsg: '你好！我想查詢印刷服務：',
     trustLine: 'ISO 9001 · FSC 認證 · 順豐本地倉 1 日到貨',
     emailBtn: '電郵查詢',

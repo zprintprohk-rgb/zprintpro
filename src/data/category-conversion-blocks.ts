@@ -156,7 +156,7 @@ categoryConversionBlocks['stickers:zh-hk'] = {
       },
       {
         "title": "報價確認",
-        "desc": "24 小時內回覆價錢同交期"
+        "desc": "2 小時內回覆價錢同交期"
       },
       {
         "title": "提供設計檔",
@@ -434,7 +434,7 @@ categoryConversionBlocks['stickers:ja'] = {
       },
       {
         "title": "お見積もり・確認",
-        "desc": "24時間以内に金額と納期をご返答"
+        "desc": "2時間以内に金額と納期をご返答"
       },
       {
         "title": "デザインデータ入稿",
@@ -3052,7 +3052,7 @@ categoryConversionBlocks['japan-doujin:zh-hk'] = {
       },
       {
         "title": "報價確認",
-        "desc": "24 小時內回覆價錢同交期"
+        "desc": "2 小時內回覆價錢同交期"
       },
       {
         "title": "提供設計檔",

@@ -21,17 +21,17 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: 'China Catalog Printing | 50 MOQ + Shenzhen Factory + DHL 2-4 Days | 智印港 ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified.',
+    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china',
   },
   'en': {
     title: 'China Catalog Printing | 50 MOQ + Shenzhen Factory + DHL 2-4 Days | ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 24h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
+    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china,magazine printing china,brochure printing china,lookbook printing china',
   },
   'ja': {
     title: '中国カタログ印刷｜50部から・深セン工場・DHL 2-4日｜ZprintPro',
-    desc: '中国深セン工場からのカタログ印刷、50部から対応、無料ファイルチェック、24時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',
+    desc: '中国深セン工場からのカタログ印刷、50部から対応、無料ファイルチェック、2時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',
     keywords: '中国カタログ印刷,中国印刷工場,深セン印刷工場,大量カタログ印刷,卸売カタログ印刷,安いカタログ印刷,小ロットカタログ印刷,カタログ印刷 50部,即納カタログ印刷,カタログ印刷 アメリカ,カタログ印刷 ヨーロッパ,カスタムカタログ印刷,冊子印刷 中国',
   },
 };

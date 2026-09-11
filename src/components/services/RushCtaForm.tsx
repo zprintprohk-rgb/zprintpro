@@ -85,9 +85,9 @@ export default function RushCtaForm({ locale }: { locale?: string } = {}) {
           <button className={`${styles.btn} ${styles.btnPrimary} ${styles.formSubmit}`} type="submit" disabled={sending}>
             {sending ? "提交中…" : "提交詢價"}
           </button>
-          <p className={styles.formNote}>提交後 15 分鐘內專人以電郵回覆</p>
+          <p className={styles.formNote}>提交後 2 小時內專人以電郵回覆</p>
           <div className={`${styles.formOk} ${ok ? styles.formOkShow : ""}`} role="status">
-            多謝你嘅詢價！我哋會喺 15 分鐘內透過電郵回覆你（發送至你填寫嘅郵箱）。如需加急，可直接 WhatsApp 我哋。
+            多謝你嘅詢價！我哋會喺 2 小時內透過電郵回覆你（發送至你填寫嘅郵箱）。如需加急，可直接 WhatsApp 我哋。
           </div>
         </form>
       </div>

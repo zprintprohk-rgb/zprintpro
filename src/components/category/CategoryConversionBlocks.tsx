@@ -18,7 +18,7 @@ const ui = {
     compareTitle: '渠道比較',
     flowTitle: '落單流程',
     faqTitle: '更多常見問題',
-    ctaNote: '5 分鐘內回覆 · 無在線支付，WhatsApp 詢價後銀行轉賬 / 轉數快 / 拍碼付款',
+    ctaNote: '2 小時內回覆 · 無在線支付，WhatsApp 詢價後銀行轉賬 / 轉數快 / 拍碼付款',
     step: '步',
   },
   en: {
@@ -27,7 +27,7 @@ const ui = {
     compareTitle: 'Options Compared',
     flowTitle: 'How to Order',
     faqTitle: 'More FAQs',
-    ctaNote: 'Replies within 5 minutes · No online payment — inquire on WhatsApp, pay by bank transfer / FPS / QR',
+    ctaNote: 'Replies within 2 hours · No online payment — inquire on WhatsApp, pay by bank transfer / FPS / QR',
     step: '',
   },
   ja: {
@@ -36,7 +36,7 @@ const ui = {
     compareTitle: '選択肢の比較',
     flowTitle: 'ご注文の流れ',
     faqTitle: 'よくある質問',
-    ctaNote: '5分以内に返信 · オンライン決済なし。WhatsAppで問い合わせ後、銀行振込 / FPS / QR決済',
+    ctaNote: '2時間以内に返信 · オンライン決済なし。WhatsAppで問い合わせ後、銀行振込 / FPS / QR決済',
     step: '',
   },
 } as const;
