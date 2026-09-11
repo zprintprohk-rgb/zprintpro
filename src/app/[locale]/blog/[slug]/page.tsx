@@ -48,6 +48,9 @@ const translations = {
     author: '智印港印刷專家',
     published: '發布於',
     relatedProducts: '相關產品推薦',
+    // G3.4 (v9.2.3): 文末品牌署名块 — 复用既有 token (blog 列表 heroCheck / readMore 同源)
+    signatureBody: '印刷工藝・設計技巧・行業趨勢',
+    signatureCta: '更多印刷知識',
   },
   'en': {
     backToBlog: '← Back to Blog',
@@ -57,6 +60,8 @@ const translations = {
     author: 'ZprintPro Printing Experts',
     published: 'Published',
     relatedProducts: 'Related Products',
+    signatureBody: 'Techniques, Design Tips & Industry Trends',
+    signatureCta: 'More Articles',
   },
   'ja': {
     backToBlog: '← ブログに戻る',
@@ -66,6 +71,8 @@ const translations = {
     author: 'ZprintPro印刷専門家',
     published: '公開日',
     relatedProducts: '関連製品',
+    signatureBody: '印刷技術・デザイン・業界トレンド',
+    signatureCta: 'その他の記事',
   },
 };
 
@@ -1043,6 +1050,24 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
+
+              {/* G3.4 (v9.2.3): 文末品牌署名块 — GEO 按 locale 分层 (zh-hk=智印港 / en,ja=ZprintPro; ジープリント 不字面同现) */}
+              <div className="mt-10 rounded-xl bg-[#F2F6FF] border border-blue-50 px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-4">
+                <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <span className="text-[#2873F5] font-extrabold">{t.author.charAt(0)}</span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[15px] font-bold text-[#111827]">{t.author}</div>
+                  <p className="text-sm text-gray-600 mt-0.5">{t.signatureBody}</p>
+                </div>
+                <Link
+                  href={`${localePrefix}/blog/`}
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#2873F5] hover:underline flex-shrink-0"
+                >
+                  {t.signatureCta}
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </Link>
+              </div>
 
               {/* 相關產品推薦 */}
               {linkedProducts.length > 0 && (
