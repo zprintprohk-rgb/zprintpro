@@ -191,6 +191,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: '支持出口包裝標準嗎？', a: '支持。我們熟悉歐盟 WEEE、美國 FTC 綠色指南等出口包裝法規，可協助準備相關合規文件。' },
       { q: '香港港島、九龍、新界都可以安排送貨嗎？', a: '可以。支援順豐／專車配送，港島（如中環、銅鑼灣）、九龍（如旺角、觀塘）、新界（如沙田、屯門）均可安排；大批量可協調貨車送倉或寫字樓，運費與時效會按重量與區域於報價單列明。' },
       { q: '可以先網上報價再上傳設計稿嗎？', a: '可以。建議先提交盒型、展開尺寸、數量、紙材與表面工藝（燙金／UV／覆膜等）取得報價；確認後再上傳 AI／PDF，印前會檢查刀模、出血與色彩模式，避免批量後才發現結構或檔案問題。' },
+        { q: '你哋做唔做膠袋／真空袋？', a: '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，100 個起印、免費 2 小時打稿、WhatsApp 即時報價。' },
     ],
   },
   en: {
@@ -294,6 +295,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you support export packaging standards?', a: 'Yes. We are familiar with EU WEEE, US FTC Green Guides, and other export packaging regulations, and can assist with compliance documentation.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit box type, unfolded dimensions, quantity, paper material, and surface finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die lines, bleed, and color mode.' },
+        { q: 'Do you make plastic bags or vacuum bags for food packaging?', a: 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.' },
     ],
   },
   ja: {
@@ -397,6 +399,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: '輸出包装規格に対応していますか？', a: 'はい。EU WEEE、米国FTCグリーンガイドなどの輸出包装法規に精通しており、コンプライアンス文書の準備をサポートします。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず箱型、展開寸法、数量、紙材、表面加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleed、カラーモードをチェックします。' },
+        { q: '食品用のビニール袋・真空パックは作れますか？', a: 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。' },
     ],
   },
 };
@@ -1721,7 +1724,6 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       links: [
         { label: '2027 月曆印刷一條龍攻略', href: '/zh-hk/blog/2027-monthly-calendar-printing-timetable/' },
         { label: '月曆材質全對比 (銅版紙/啞粉紙/咭紙)', href: '/zh-hk/blog/calendar-printing-guide/' },
-        { label: '企業禮品月曆 Q4 旺季採購指南', href: '/zh-hk/blog/corporate-gift-calendar-q4-guide/' },
       ],
     },
     faq: [
@@ -4281,8 +4283,6 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         '量產甜蜜點:100-500 張走數碼印刷免製版,500-5000 張走柯式印刷單價可壓至 HK$0.5/張。旺季 (聖誕 / 情人節 / 母親節) 提前 4 星期落單。',
       ],
       links: [
-        { label: '3D 立體賀卡跨境指南', href: '/zh-hk/blog/3d-pop-up-card-guide/' },
-        { label: '節日賀卡印刷攻略', href: '/zh-hk/blog/holiday-card-printing-guide/' },
         { label: '貼紙印刷', href: '/zh-hk/category/stickers/' },
         { label: '喜帖印刷', href: '/zh-hk/category/wedding-invitations/' },
       ],
@@ -4370,8 +4370,6 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         "Production sweet spot: 100-500 sheets digital (no plate), 500-5000 sheets offset (unit price can drop to $0.07). Peak season (Christmas / Valentine / Mother's Day) order 4 weeks ahead.",
       ],
       links: [
-        { label: '3D Pop-Up Card Cross-Border Guide', href: '/en/blog/3d-pop-up-card-guide/' },
-        { label: 'Holiday Card Printing Strategy', href: '/en/blog/holiday-card-printing-guide/' },
         { label: 'Sticker Printing', href: '/en/category/stickers/' },
         { label: 'Wedding Invitations', href: '/en/category/wedding-invitations/' },
       ],
@@ -4459,8 +4457,6 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         '量産スイートスポット:100-500 枚デジタル (版不要)、500-5000 枚オフセット (単価 $0.07 まで圧縮可)。繁忙期 (クリスマス / バレンタイン / 母の日) は 4 週間前発注。',
       ],
       links: [
-        { label: '立体 3D カード越境ガイド', href: '/ja/blog/3d-pop-up-card-guide/' },
-        { label: '祝日カード印刷戦略', href: '/ja/blog/holiday-card-printing-guide/' },
         { label: 'ステッカー印刷', href: '/ja/category/stickers/' },
         { label: '結婚式招待状', href: '/ja/category/wedding-invitations/' },
       ],
@@ -4563,9 +4559,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
           '婚慶套裝 9 折優惠:喜帖 + 信封 + 婚禮禮袋 + 席卡 + 桌牌 + 迎賓牌 + 利是封 一站印齊,享 9 折 + 免費寄樣,適合婚慶全套 / 海外婚禮 / 教堂 / 酒店婚禮。',
         ],
         links: [
-          { label: '婚慶整套配套指南', href: '/zh-hk/blog/wedding-invitation-pricing-guide/' },
           { label: '喜帖 vs 賀卡 vs 貼紙', href: '/zh-hk/category/greeting-cards/' },
-          { label: '婚宴枱卡', href: '/zh-hk/blog/wedding-table-card-printing-guide/' },
           { label: '婚嫁利是封', href: '/zh-hk/blog/wedding-red-packet-printing-guide/' },
         ],
       },
@@ -4666,9 +4660,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
           'Wedding bundle 10% off: invitation + envelope + favor bag + place card + table card + welcome sign + red packet, all-in-one printing, 10% off + free sample, ideal for full wedding / destination / church / hotel wedding.',
         ],
         links: [
-          { label: 'Wedding Invitation Pricing Guide 2026', href: '/en/blog/wedding-invitation-pricing-guide/' },
           { label: 'Invitation vs Card vs Sticker', href: '/en/category/greeting-cards/' },
-          { label: 'Wedding Table Card Guide', href: '/en/blog/wedding-table-card-printing-guide/' },
           { label: 'Wedding Red Packet Guide', href: '/en/blog/wedding-red-packet-printing-guide/' },
         ],
       },
@@ -4769,9 +4761,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
           'ブライダルセット10%割引：招待状+封筒+引出物袋+席札+テーブルカード+ウェルカムボード+紅包 ワンストップ印刷、10%OFF+無料サンプル、フル披露宴/海外披露宴/教会式/ホテル披露宴に最適。',
         ],
         links: [
-          { label: '結婚式招待状 価格ガイド 2026', href: '/ja/blog/wedding-invitation-pricing-guide/' },
           { label: '招待状 vs カード vs ステッカー', href: '/ja/category/greeting-cards/' },
-          { label: '結婚式テーブルカード ガイド', href: '/ja/blog/wedding-table-card-printing-guide/' },
           { label: 'ブライダル紅包 ガイド', href: '/ja/blog/wedding-red-packet-printing-guide/' },
         ],
       },
@@ -4864,8 +4854,6 @@ const placeCardsContent: Record<string, CategoryLocaleContent> = {
         '預算甜蜜點:50-200 張走數碼印刷免製版,200 張以上走柯式印刷單價更低。台卡 / 酒水牌常用 300g 銅版紙 + UV 局部,性價比最高。',
       ],
       links: [
-        { label: '婚宴台卡設計指南', href: '/zh-hk/blog/wedding-place-card-guide/' },
-        { label: 'PVC 透明卡印刷', href: '/zh-hk/blog/pvc-card-printing-guide/' },
         { label: '喜帖印刷', href: '/zh-hk/category/wedding-invitations/' },
         { label: '賀卡印刷', href: '/zh-hk/category/greeting-cards/' },
       ],
@@ -4955,8 +4943,6 @@ const placeCardsContent: Record<string, CategoryLocaleContent> = {
         'Budget sweet spot: 50-200 sheets digital (no plate), 200+ offset (lower unit price). Place cards / drink tokens most cost-effective with 300gsm art + spot UV.',
       ],
       links: [
-        { label: 'Wedding Place Card Design Guide', href: '/en/blog/wedding-place-card-guide/' },
-        { label: 'Clear PVC Card Printing', href: '/en/blog/pvc-card-printing-guide/' },
         { label: 'Wedding Invitations', href: '/en/category/wedding-invitations/' },
         { label: 'Greeting Cards', href: '/en/category/greeting-cards/' },
       ],
@@ -5046,8 +5032,6 @@ const placeCardsContent: Record<string, CategoryLocaleContent> = {
         '予算スイートスポット:50-200 枚デジタル (版不要)、200+ オフセット (単価低い)。席札 / ドリンクトークンは 300g コート + スポット UV がコスパ最高。',
       ],
       links: [
-        { label: '披露宴席札デザインガイド', href: '/ja/blog/wedding-place-card-guide/' },
-        { label: '透明 PVC カード印刷', href: '/ja/blog/pvc-card-printing-guide/' },
         { label: '結婚式招待状', href: '/ja/category/wedding-invitations/' },
         { label: 'グリーティングカード', href: '/ja/category/greeting-cards/' },
       ],
