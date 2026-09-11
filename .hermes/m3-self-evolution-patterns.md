@@ -178,3 +178,41 @@ cred.items
 - zprintpro 8/24 12:04 / 14:25 / 18:35 / 18:42 / 19:03 / 20:02 K3 拍板 6 次反转
 - M3 3 次严重误诊 + 3 次字段策略误读
 - 跨项目: 任何 M3 派活/上报, 必跑 SOP-10 5 问
+
+---
+
+## 10. 2026-09-10~12 执行沉淀（v9.2.3 全批 + v9.4~v9.7 布局配图批）
+
+> **同步位置**：技能侧已写入 `zprintpro-content-standards` §12（blog 配图能力）+ §13（自进化能力台账）；
+> 配图专项技能 = `zprintpro-blog-images`（可直接调用）。本节为项目侧留档，与该两处保持一致。
+
+### 10.1 线上真值优先（本次最高价值通则）
+
+**通则**：任何「布局/视觉/尺寸」工单，**先抓线上 HTML/类名与范本逐字节比对，再改代码**；禁止按描述直接改。
+
+| 现象 | 真因（线上查证） | 正确处理 |
+|---|---|---|
+| Hero 上有白条、面包屑在色块外 | `layout.tsx` 全局 `BreadcrumbNav` 白条（已豁免 `/category` `/product`，**漏 `/blog` `/contact`**） | 路由级豁免（沿用既有模式），不动全局布局 |
+| Hero 比导航栏色块宽 | Navbar 蓝条在 Header 的 `max-w-[1320px] mx-auto bg-white` 内 → 实为 **1320 居中** | 复用同一宽度类（方案 A），禁 `w-full` |
+| CTA 撑满整行 | `<a>` 是 `flex flex-col` 直接子元素 → `align-items: stretch` | 共享组件 + `self-start`（或包裹 div） |
+| 内容顶部对齐、下方空白 | 内容容器 `h-full` 的父级仅 `min-height` → 百分比高度不可解析 | 父级 `flex` + `min-h` 与 `justify-center` 同元素 |
+
+### 10.2 部署/边缘判据（勿把平台问题当代码 bug）
+
+- **CDN 边缘混服旧版**：部署后首轮探针可能大面积失败（v9.4 首轮 27 项）→ **等 1-2 分钟复探**，不得据此改代码。
+- **CF 平台事故特征**：自定义域名动态 503 + pages.dev/静态正常 + **旧部署同现** → 平台侧；轮询可能整段落在事故窗口（v9.2.3 G2 曾 40 轮 ×2h 全落窗口内）。
+- 资产化：恢复即验证脚本 `.hermes/v9x-live-watch.mjs`（轮询到新版特征 → 自动跑探针 → 落盘）。
+
+### 10.3 CF Pages 配额纪律
+
+- 实测 9 月 **100 次构建 = production 63 + preview 37（预览 37%）**；「分支 push + main push」= **2 次**。
+- **收敛法**：日常**只推 main**；分支走本地路径进合并仓（`git fetch "F:/zprintpro-nextjs" <branch>:<tmp>` → merge → push main）；CF API 核对「仅 1 条 production、无 preview」。已连续 3 批单构建（v9.5/9.6/9.7）。
+
+### 10.4 其他可复用口径
+
+- **合并冲突**：他批改同区域时 → **标题取 main、其余取本批**；先列全标记再逐 hunk；`git add` 后复核 `git ls-files -u` = 0。PowerShell 无 heredoc → 信息写文件 + `git commit -F`。
+- **死链防御**：数据链接下线 → 渲染层做目标存在性过滤（blog slug ∈ blogPosts / category slug ∈ categories）+ 过滤后仍保证「≥1 分类 + ≥1 blog」。
+- **验收方法论**：本地生产构建 + `next start` + 断言探针（比等部署更快更硬）；**探针期望值必须取自组件实际数据源**（曾用默认数据源误判 137 项）；环境标记串须与实际渲染一致；线上图/文件用 `Get-FileHash` 与本地比对证明确实换新。
+- **图片落地三件套**：webp + 体积两档（<115KB 直接用 / ≥115KB 压 <100KB）+ 内容 md5 唯一。sharp 坑：已优化源图重编码可能变大（117.9KB→q80 137KB）；`withoutEnlargement` 使放大式 resize 失效；`toFile('.tmp')` 无法推断格式；tsx CJS 不支持顶层 await（包 `async main()`）。
+- **纯前端改动的验收含「像素级对齐」类要求时**：无浏览器环境 → 用**类名等价性证明**（同一宽度约束 + 无 padding 父级 → 任意视口宽度恒等）并在报告**显式声明未做实拍截图**，请老板复核或授权浏览器代理。
+
