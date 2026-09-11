@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { generateContactPageJsonLd } from "@/lib/seo/schema-extensions";
 import { ContactFormWrapper } from "./ContactFormWrapper";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
+import { WhatsAppCtaButton } from "@/components/WhatsAppCtaButton";
 import { parseInlineLinks } from "@/utils/parseInlineLinks";
 import { MessageCircle, Truck, Zap, Shield, Palette, Mail, Phone, Clock, ChevronDown, MapPin } from "lucide-react";
 // E: FAQ 手风琴数据源 — 现有 SLA FAQ (src/data/faq/{locale}.json), 只读不改
@@ -236,11 +237,12 @@ export default function ContactPage({ params }: ContactPageProps) {
       {/* 2026-06-28 fix(contact-500): 连续 3 个独立 <JsonLd> 会 streaming 末尾抛错 — 用 home 同款 1 个 <JsonLd data={[array]}> */}
       <JsonLd data={[businessJsonLd, contactPageJsonLd, localBusinessJsonLd]} />
 
-      {/* E1 Banner — 2026-09-12 v9.4: 改通栏贴边 (外层 w-full 紧贴导航栏, 无 max-w/pt 留白;
-          内层 max-w-[1320px] 居中承载面包屑/H1/描述/信任点/CTA; 藏青渐变色值锁定不变;
-          DOM 层级与容器策略同构 blog 列表页 D1 Banner) */}
-      <section className="w-full">
-        <div className="relative w-full overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: "var(--color-royal-navy-grad)" }}>
+      {/* E1 Banner — 2026-09-12 v9.5: 宽度与导航栏蓝色色块精确同宽
+          (Navbar 蓝条位于 Header 的 max-w-[1320px] mx-auto 容器内 → 色块实际 1320 居中;
+           故 Hero 外层复用同一宽度类 max-w-[1320px] mx-auto, 不再用 w-full 视口满宽);
+          内层色块 flex + min-h 保证内容垂直居中, 上下留白对称 (同 PLP 范本)。藏青渐变色值锁定不变。 */}
+      <section className="max-w-[1320px] mx-auto">
+        <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white" style={{ background: "var(--color-royal-navy-grad)" }}>
           <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
             <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
             <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
@@ -250,7 +252,7 @@ export default function ContactPage({ params }: ContactPageProps) {
               style={{ backgroundImage: "radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)", backgroundSize: "28px 28px" }}
             />
           </div>
-          <div className="relative z-[1] max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-10">
+          <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
             <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
               <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
                 {locale === "zh-hk" ? "首頁" : locale === "ja" ? "ホーム" : "Home"}
@@ -266,15 +268,12 @@ export default function ContactPage({ params }: ContactPageProps) {
             <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.heroSubtitle}</p>
             <p className="mt-2 text-white/60 text-sm underline-offset-4 [&_a]:underline [&_a]:hover:text-white">{parseInlineLinks(t.slaLink)}</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a
+              <WhatsAppCtaButton
                 href={generateWhatsAppLink(locale)}
-                target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
-                data-event="whatsapp_click" data-source="contact-hero" data-locale={locale}
-              >
-                <MessageCircle size={18} />
-                {t.whatsappBigCta}
-              </a>
+                label={t.whatsappBigCta}
+                source="contact-hero"
+                locale={locale}
+              />
             </div>
           </div>
         </div>

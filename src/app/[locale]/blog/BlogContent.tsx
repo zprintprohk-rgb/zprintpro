@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Locale } from '@/lib/seo';
 import { blogPosts } from '@/data/blog-posts';
 import { MessageCircle, Clock, Calendar } from 'lucide-react';
+import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
 
 /**
  * v9.2.3 任务 D — Blog 列表页 UX/UI 重设计 (2026-09-11)
@@ -238,9 +239,12 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
 
   return (
     <main className="min-h-screen bg-white">
-      {/* D1 Banner — 2026-09-11 老板执行提示词 ①: 全宽贴边 (背景色块 w-full 紧贴导航栏外沿, 内容容器 max-w-1320 居中; 藏青颜色锁定不变) */}
-      <section className="w-full">
-        <div className="relative w-full overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+      {/* D1 Banner — 2026-09-12 v9.5: 宽度改与导航栏蓝色色块同宽
+          (Navbar 蓝条位于 Header 的 max-w-[1320px] mx-auto 容器内 → 色块实际 1320 居中,
+           故 Hero 外层复用同一宽度类, 不再用 w-full 视口满宽);
+          内层色块 flex + min-h 保证内容垂直居中, 上下留白对称 (同 PLP 范本) */}
+      <section className="max-w-[1320px] mx-auto">
+        <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
           <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
             <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
             <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
@@ -252,7 +256,7 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
               style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
             />
           </div>
-          <div className="relative z-[1] max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-10">
+          <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
             <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
               <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
                 {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
@@ -266,23 +270,24 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
             </p>
             <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{t.h1}</h1>
             <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.subtitle}</p>
-            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/85">
+            {/* 信任点: 描边小胶囊 pill (对齐 PLP 范本 bannerCaps 样式, 非纯文本散排) */}
+            <ul className="mt-5 flex flex-wrap items-center gap-2.5">
               {t.heroCheck.map((s) => (
-                <span key={s} className="flex items-center gap-2">
-                  <svg className="w-4 h-4 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                <li key={s} className="inline-flex items-center gap-[7px] bg-white/15 border border-white/30 backdrop-blur-[2px] px-3 py-1.5 rounded-full text-sm font-semibold text-white/90">
+                  <svg className="w-3.5 h-3.5 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                   {s}
-                </span>
+                </li>
               ))}
+            </ul>
+            {/* CTA: 共享组件 (与 Contact 同款, 自适应宽度, 不再因 flex-col stretch 撑满整行) */}
+            <div className="mt-7">
+              <WhatsAppCtaButton
+                href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
+                label={locale === 'zh-hk' ? 'WhatsApp 即時報價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp for a Quote'}
+                source="blog-hero"
+                locale={locale}
+              />
             </div>
-            <a
-              href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
-              target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-6 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
-              data-event="whatsapp_click" data-source="blog-hero" data-locale={locale}
-            >
-              <MessageCircle size={18} />
-              {locale === 'zh-hk' ? 'WhatsApp 即時報價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp for a Quote'}
-            </a>
           </div>
         </div>
       </section>
