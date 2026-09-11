@@ -18,6 +18,8 @@ interface BlogContentProps {
   locale: Locale;
   /** D: 服务器端从真实正文算出的阅读分钟数 (blog/page.tsx) */
   readTimes: Record<string, number>;
+  /** 2026-09-11 老板指令: 每篇 blog 的 SKU 真实图 (blog/page.tsx 服务器端算好) */
+  blogImages: Record<string, string>;
 }
 
 const translations: Record<string, {
@@ -197,10 +199,11 @@ function CardCover({
 
 const FEATURED_COUNT = 3; // 头条 1 + 次条 2
 
-export default function BlogContent({ locale, readTimes }: BlogContentProps) {
+export default function BlogContent({ locale, readTimes, blogImages }: BlogContentProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
+  const [query, setQuery] = useState<string>('');
 
   const allPosts = useMemo(() => blogPosts
     .map((post) => ({
@@ -213,17 +216,25 @@ export default function BlogContent({ locale, readTimes }: BlogContentProps) {
           ? t.buyingGuideTag
           : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
       excerpt: post.excerpt[locale],
-      image: post.cover?.[locale] || post.cover?.['zh-hk'] || '',
+      image: blogImages[post.slug] || post.cover?.[locale] || post.cover?.['zh-hk'] || '',
       readMin: readTimes[post.slug] || 3,
     }))
     .sort((a, b) => (b.date || '').localeCompare(a.date || '')),
-    [locale, t, readTimes]
+    [locale, t, readTimes, blogImages]
   );
 
   const filteredPosts = useMemo(() => {
-    if (activeCategory === 'all') return allPosts;
-    return allPosts.filter((post) => post.categoryKey === activeCategory);
-  }, [activeCategory, allPosts]);
+    const q = query.trim().toLowerCase();
+    return allPosts.filter((post) => {
+      if (activeCategory !== 'all' && post.categoryKey !== activeCategory) return false;
+      if (!q) return true;
+      return (
+        post.title.toLowerCase().includes(q) ||
+        post.excerpt.toLowerCase().includes(q) ||
+        post.categoryLabel.toLowerCase().includes(q)
+      );
+    });
+  }, [activeCategory, query, allPosts]);
 
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -241,49 +252,59 @@ export default function BlogContent({ locale, readTimes }: BlogContentProps) {
 
   return (
     <main className="min-h-screen bg-white">
-      {/* D1 Banner — 藏青渐变 + 右侧几何装饰 (禁侵权图) */}
-      <section className="relative overflow-hidden text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
-        <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
-          <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
-          <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
-          <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
-          <div className="absolute right-64 top-16 w-[8px] h-[8px] rounded-full bg-[#F87314]/60" />
-          <div className="absolute right-40 top-40 w-[5px] h-[5px] rounded-full bg-white/50" />
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
-          />
-        </div>
-        <div className="relative max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-          <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-4">
-            <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
-            {t.eyebrow}
-          </p>
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight max-w-[720px]">{t.h1}</h1>
-          <p className="mt-4 text-white/80 text-base md:text-lg max-w-[560px] leading-relaxed">{t.subtitle}</p>
-          <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/85">
-            {t.heroCheck.map((s) => (
-              <span key={s} className="flex items-center gap-2">
-                <svg className="w-4 h-4 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
-                {s}
-              </span>
-            ))}
+      {/* D1 Banner — 1320px 横色块 (同导航栏宽度, 对齐 PLP wedding-invitations; 颜色不变=藏青渐变) */}
+      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <div className="relative overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+          <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+            <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+            <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+            <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+            <div className="absolute right-64 top-16 w-[8px] h-[8px] rounded-full bg-[#F87314]/60" />
+            <div className="absolute right-40 top-40 w-[5px] h-[5px] rounded-full bg-white/50" />
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
+            />
           </div>
-          <a
-            href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
-            target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-9 rounded-xl bg-[#F87314] text-white font-bold px-7 py-3.5 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
-            data-event="whatsapp_click" data-source="blog-hero" data-locale={locale}
-          >
-            <MessageCircle size={18} />
-            {locale === 'zh-hk' ? 'WhatsApp 即時報價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp for a Quote'}
-          </a>
+          <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10 py-10">
+            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
+                {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+              </a>
+              <span className="mx-2">/</span>
+              <span className="text-white">{locale === 'zh-hk' ? '印刷知識' : locale === 'ja' ? 'ブログ' : 'Blog'}</span>
+            </nav>
+            <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+              {t.eyebrow}
+            </p>
+            <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{t.h1}</h1>
+            <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.subtitle}</p>
+            <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/85">
+              {t.heroCheck.map((s) => (
+                <span key={s} className="flex items-center gap-2">
+                  <svg className="w-4 h-4 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                  {s}
+                </span>
+              ))}
+            </div>
+            <a
+              href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-6 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
+              data-event="whatsapp_click" data-source="blog-hero" data-locale={locale}
+            >
+              <MessageCircle size={18} />
+              {locale === 'zh-hk' ? 'WhatsApp 即時報價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp for a Quote'}
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* D2 精选区 — 满版浅蓝带: 头条 2:1 + 次条 2 卡横排 */}
-      <section className="bg-[#F2F6FF]">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      {/* D2 精选区 — 1320px 浅蓝块 (对齐 PLP 卡片化; 头条 2:1 + 次条 2 卡横排) */}
+      <section className="bg-white">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-12 md:pt-16">
+          <div className="rounded-2xl bg-[#F2F6FF] border border-blue-50 px-6 md:px-8 py-8 md:py-10">
           {featured.length > 0 && (
             <>
               <div className="flex items-center justify-between mb-6">
@@ -338,12 +359,31 @@ export default function BlogContent({ locale, readTimes }: BlogContentProps) {
               </div>
             </>
           )}
+          </div>
         </div>
       </section>
 
-      {/* D3 分类筛选条 (单行紧凑, SpecFinder 语言) + D4 文章网格 (白底 3 列) */}
+      {/* D3 分类筛选条 (单行紧凑, SpecFinder 语言) + 搜索条 + D4 文章网格 (白底 3 列) */}
       <section className="bg-white">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-5">
+            <label className="relative flex-1 max-w-[380px]">
+              <svg className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" /></svg>
+              <input
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder={locale === 'zh-hk' ? '搜尋文章…' : locale === 'ja' ? '記事を検索…' : 'Search articles…'}
+                className="w-full rounded-full border border-gray-200 bg-gray-50 pl-10 pr-4 py-2.5 text-sm text-[#333333] outline-none focus:border-[#2873F5] focus:bg-white focus:ring-2 focus:ring-[#2873F5]/15 transition-all"
+                aria-label={locale === 'zh-hk' ? '搜尋文章' : locale === 'ja' ? '記事検索' : 'Search articles'}
+              />
+            </label>
+            <span className="text-xs text-gray-500 sm:ml-auto">
+              {query.trim()
+                ? `${filteredPosts.length} ${locale === 'zh-hk' ? '篇結果' : locale === 'ja' ? '件の結果' : 'results'}`
+                : `${filteredPosts.length} ${locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts'}`}
+            </span>
+          </div>
           <div className="flex gap-2.5 overflow-x-auto pb-3 -mx-1 px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <button
               onClick={() => setActiveCategory('all')}

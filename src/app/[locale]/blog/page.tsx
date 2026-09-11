@@ -5,6 +5,9 @@ import BlogContent from './BlogContent';
 import blogContentsZhHk from '@/data/blog-data/zh-hk.json';
 import blogContentsEn from '@/data/blog-data/en.json';
 import blogContentsJa from '@/data/blog-data/ja.json';
+// 2026-09-11 老板指令: blog 照片全用 SKU 真实图 (服务器端算好 map 传入客户端, 客户端不 import products 大树)
+import { blogPosts } from '@/data/blog-posts';
+import { getBlogSkuImage } from '@/lib/blog-sku-image';
 
 interface BlogPageProps {
   params: { locale: string };
@@ -87,5 +90,11 @@ export default function BlogPage({ params }: BlogPageProps) {
   for (const slug of Object.keys(contents)) {
     readTimes[slug] = computeReadMinutes(locale, contents[slug]?.content || '');
   }
-  return <BlogContent locale={locale} readTimes={readTimes} />;
+  // 2026-09-11 老板指令: 每篇 blog 的 SKU 真实图 (categoryKey → 产品类目 → top SKU locale 首图)
+  const blogImages: Record<string, string> = {};
+  for (const post of blogPosts) {
+    const img = getBlogSkuImage(post.slug, locale, post.categoryKey);
+    if (img) blogImages[post.slug] = img;
+  }
+  return <BlogContent locale={locale} readTimes={readTimes} blogImages={blogImages} />;
 }
