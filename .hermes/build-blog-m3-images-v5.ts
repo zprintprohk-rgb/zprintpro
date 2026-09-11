@@ -111,24 +111,34 @@ async function place(srcEntry, destPath) {
   if (srcEntry.size < GATE_DIRECT) { fs.copyFileSync(srcEntry.src, destPath); return { bytes: srcEntry.size, mode: 'copy(<115KB)' }; }
   const tmp = `${destPath}.re.webp`;
   try {
-    // 先降质量 (保分辨率)
-    for (const q of [85, 80, 75, 70, 65, 60, 55, 50, 45, 40]) {
+    // 阶梯 1: 保分辨率, 轻中度降质
+    for (const q of [88, 84, 80, 76, 72, 68, 64, 60]) {
       await sharp(srcEntry.src).webp({ quality: q, effort: 5 }).toFile(tmp);
       const s = fs.statSync(tmp).size;
       if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `q${q}` }; }
     }
-    // 再降分辨率 + 质量
-    for (const w of [1100, 1000, 900, 800]) {
-      for (const q of [80, 70, 60, 50]) {
+    // 阶梯 2: 降分辨率但保较高画质 (观感优于极低质量) — 2026-09-12 加, 避免 q50 这类低质产物
+    for (const w of [1080, 1000, 920, 840]) {
+      for (const q of [84, 80, 78]) {
         await sharp(srcEntry.src).resize({ width: w, withoutEnlargement: true }).webp({ quality: q, effort: 5 }).toFile(tmp);
         const s = fs.statSync(tmp).size;
         if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `w${w}q${q}` }; }
       }
     }
-    // 极端兜底
-    await sharp(srcEntry.src).resize({ width: 700 }).webp({ quality: 70, effort: 5 }).toFile(tmp);
-    const s = fs.statSync(tmp).size;
-    if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: 'w700q70' }; }
+    // 阶梯 3: 极低质量兜底 (最后手段)
+    for (const q of [55, 50, 45, 40]) {
+      await sharp(srcEntry.src).webp({ quality: q, effort: 5 }).toFile(tmp);
+      const s = fs.statSync(tmp).size;
+      if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `q${q}` }; }
+    }
+    // 阶梯 4: 深度降分辨率兜底 (保证 0 篇无图; 观感仍优于 q40 全尺寸)
+    for (const w of [820, 760, 700, 640]) {
+      for (const q of [78, 74, 70]) {
+        await sharp(srcEntry.src).resize({ width: w, withoutEnlargement: true }).webp({ quality: q, effort: 5 }).toFile(tmp);
+        const s = fs.statSync(tmp).size;
+        if (s < TARGET) { fs.renameSync(tmp, destPath); return { bytes: s, mode: `w${w}q${q}` }; }
+      }
+    }
   } catch (e) {
     console.error(`sharp failed ${srcEntry.name}: ${String(e).slice(0, 120)}`);
   }

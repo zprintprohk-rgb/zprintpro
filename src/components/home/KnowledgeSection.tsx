@@ -213,6 +213,10 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                   decoding="async"
+                  /* 2026-09-12 修复"烂图": PictureImage 默认会把 x.webp 推断出 x.avif 并作为首个 <source>,
+                     而 M3 目录只有 .webp (无 .avif 配套) → 浏览器优先取 .avif 命中 404 破图。
+                     故当使用 M3 图时显式传 sources=[] 关闭格式推断 (回落旧图时仍保留推断)。 */
+                  sources={m3ImageForHref(article.href) ? [] : undefined}
                 />
               </div>
 

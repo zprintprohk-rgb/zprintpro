@@ -39,6 +39,9 @@ for (const loc of ['zh-hk', 'en', 'ja']) {
   const hImgs = m3In(home);
   check(hImgs.length === 4, `${loc}/ 首页知识栏 M3 图 = 4 (实际 ${hImgs.length})`);
   check(!home.includes('/images/articles/sticker-guide.jpg'), `${loc}/ 首页知识栏已停用旧 /images/articles 封面`);
+  // 2026-09-12 修复验证: M3 图不得生成 .avif 候选源 (blog-m3 目录无 avif 配套 → 会 404 破图)
+  check(!/\/images\/blog-m3\/[a-z0-9-]+\.avif/.test(home), `${loc}/ 首页 M3 图无 .avif 破图候选`);
+  check(!/<source[^>]*blog-m3[^>]*>/.test(home), `${loc}/ 首页 M3 图无 <source> 覆盖 (PictureImage sources=[])`);
 }
 
 // ③ 详情页 hero
