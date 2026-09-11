@@ -5,6 +5,18 @@ import { PictureImage } from '@/components/picture-image';
 import Link from 'next/link';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { blogM3Images } from '@/data/blog-m3-images';
+import { blogPosts } from '@/data/blog-posts';
+
+/**
+ * 2026-09-12 老板指令: 首页「印刷知識」栏图片与 blog 图片**同点更新** —
+ * 直接复用 blog 同一张 M3 模型生成图 (blogM3Images 以 blog slug 为键;
+ * href 形如 /blog/{slug}/), 三语同图; 无映射时回落既有 /images/articles 封面。
+ */
+function m3ImageForHref(href: string): string {
+  const slug = href.split('/').filter(Boolean).pop() || '';
+  return blogM3Images[slug] || '';
+}
 
 interface KnowledgeSectionProps {
   locale: Locale;
@@ -146,6 +158,26 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
+  // 2026-09-12 老板指令: 本栏「信息 + 图片」与 /blog/ 同点更新 —
+  // 直接取 blog 最新 4 篇真实数据 (标题/日期/摘要来自 blog-posts, 图片来自 M3 选图映射);
+  // 卡片 tag/配色沿用本栏既有 token, 无 M3 映射时回落本栏既有封面。
+  const latestArticles = [...blogPosts]
+    .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+    .slice(0, 4)
+    .map((post, index) => {
+      const style = t.articles[index] || t.articles[0];
+      return {
+        slug: post.slug,
+        image: blogM3Images[post.slug] || post.cover?.[locale] || style.image,
+        tag: style.tag,
+        tagColor: style.tagColor,
+        date: post.date,
+        title: post.title[locale],
+        description: post.excerpt[locale],
+        href: `/blog/${post.slug}/`,
+      };
+    });
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -166,7 +198,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
 
         {/* Articles Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {t.articles.map((article, index) => (
+          {latestArticles.map((article, index) => (
             <Link
               key={index}
               href={`${localePrefix}${article.href}`}
@@ -175,7 +207,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
               {/* Image — 1:1 统一视觉 */}
               <div className="aspect-square relative overflow-hidden">
                 <PictureImage
-                  src={article.image}
+                  src={m3ImageForHref(article.href) || article.image}
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
