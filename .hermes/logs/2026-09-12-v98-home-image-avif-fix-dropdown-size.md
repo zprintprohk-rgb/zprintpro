@@ -67,7 +67,14 @@
 | 图库落地体检 | 89 张全 `.webp`，最大 114.8KB，**0 张 ≥115KB**，字节级重复 0 |
 | 变体分配（重跑后） | **hero 43 / variety 18 / multi-angle 7 / detail 13 / 其他 8**；无匹配 0 |
 
-## 五、遗留
+## 五、线上验收（生产 zprintpro.com）
+
+- 上线链：commit `24f54556` → main merge `1868c496` → CF 部署 `554a5744`（`1868c49`）**deploy:success**（**本批 1 次生产构建，无 preview**）
+- **线上探针：40 PASS / 0 FAIL — ALL GREEN**（含新增 2 条破图断言：首页 M3 图 `.avif` 候选 = 0、M3 图 `<source>` 覆盖 = 0；三语）
+- **线上首页 4 张 M3 图实测**：全部 **HTTP 200** — 113.3KB / 97.6KB / 99.5KB / 108KB（均 <115KB）
+- **反向验证**：直接请求 `https://zprintpro.com/images/blog-m3/sticker-guide.avif` → **404** ✓ 证明该文件确不存在，而页面已不再引用它（修复前浏览器正是取到此 404 才破图）
+
+## 六、遗留
 
 1. **首页知识栏卡片 `aspect-square` 裁切**：图片按 1:1 居中裁剪显示；若某张语义不适配方形（如宽幅传单/海报图），可换变体或改 `object-position`，请指出具体页/图我调整。
 2. **`PictureImage` 的 AVIF 推断仍为默认行为**：本次只在 M3 段落关闭（`sources={[]}`）。若将来 M3 目录补齐 `.avif` 配套，可直接移除该参数；反之其他目录新增 webp-only 图片时需同样注意此坑（已写入技能 `zprintpro-blog-images` 建议补一条踩坑）。

@@ -396,9 +396,9 @@ const categorySeoData: Record<string, {
   'packaging': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
-      'zh-hk': '紙盒訂製 100個起 | 食品包裝盒 + 結構設計 + 燙金 + DHL 全球 | 智印港',
-      en: 'Custom Packaging Boxes from $0.85 | 100 MOQ + Free 3D + Made for USA | ZprintPro',
-      ja: 'クラフト紙 パッケージ印刷 100個〜 | 構造設計 + 箔押し + 全国送料 + 短納期 | ZprintPro',
+      'zh-hk': '紙質食品包裝盒印刷 100個起 | 食品紙盒/紙袋 | 智印港',
+      en: 'Paper Food Packaging Boxes from $0.85 | Food-Safe Box/Bag, Made for USA | ZprintPro',
+      ja: '紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro',
     },
     keywords: {
       'zh-hk': '包裝盒訂製,紙盒訂製,彩盒訂製,禮盒訂製,結構設計,燙金包裝,小批量包裝,定制包裝,品牌包裝,電商包裝,化妝品包裝,食品包裝,茶葉包裝,電子產品包裝,食品包裝盒,食品包裝印刷,化妝品包裝盒,DHL全球',
@@ -407,9 +407,9 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '包裝盒訂製 100 個起印，HK$1.5 起/個。食品包裝 / 化妝品包裝 / 茶葉 / 電子產品通用，結構設計 / 燙金 / UV / 啞膠亮膜 / 內襯 / 開窗。免費 3D 打稿 6 小時，DHL 全球 2-4 天配送，滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      en: 'Custom packaging boxes from $0.85, 100 MOQ. Food-safe, cosmetic & kraft boxes with structural design. Free 3D proof, free shipping $99+, DHL 2-4 day USA.',
-      ja: 'パッケージ箱印刷・クラフト紙パッケージ 100 個から、¥120〜。食品対応・化粧品・茶・電子機器向け、構造設計・箔押し・UV・内装・窓開け。無料 3D 校正 6 時間、短納期、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      'zh-hk': '紙質食品包裝訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。WhatsApp 30 秒即時報價。',
+      en: 'Paper food packaging from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA.',
+      ja: '紙製食品パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり。',
     },
   },
 'posters': {

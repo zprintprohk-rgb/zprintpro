@@ -143,9 +143,9 @@ export default function CategoryPage({
   // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
-      'zh-hk': '香港紙盒訂製 食品包裝 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
-      'en': 'Custom Packaging Boxes Made in USA · 100 MOQ Free Shipping over $99 · Small Batch Custom Boxes',
-      'ja': 'クラフト紙 パッケージ印刷 カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
+      'zh-hk': '香港紙質食品包裝訂製 — 食品紙盒 / 食品紙袋 / 防油紙卡 / 禮盒 / 彩盒',
+      'en': 'Paper Food Packaging Made for USA · Food-Safe Paper Boxes / Bags / Greaseproof Cards',
+      'ja': '紙製食品パッケージ印刷 — 食品用紙箱 / 紙袋 / 耐油紙カード / ギフト箱',
     },
     'paper-bags': {
       'zh-hk': '香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
