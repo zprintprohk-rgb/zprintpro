@@ -34,7 +34,7 @@ import { CategorySortSelect } from '@/components/category/CategorySortSelect';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { CategoryConversionBlocks } from '@/components/category/CategoryConversionBlocks';
-import { getConversionFaqs } from '@/data/category-conversion-blocks';
+import { getConversionBlocks, getConversionFaqs } from '@/data/category-conversion-blocks';
 import { CategoryIndustries } from '@/components/category/CategoryIndustries';
 import { CategorySharpHooks } from '@/components/category/CategorySharpHooks';
 import { CategoryViewTracker } from '@/components/tracking/CategoryViewTracker';
@@ -246,6 +246,16 @@ export default function CategoryPage({
   // 强製 url 走 SITE_URL 兜底，name 按 locale 切换。
   const itemListJsonLd = generateCategoryItemListJsonLd(categoryName, categoryProducts, locale);
 
+  // G2.2 (2026-09-11): CollectionPage schema — 分类页页型标注, mainEntity 内嵌 ItemList。
+  // 三语言同结构; url 同 breadcrumb 硬编码口径 (SITE_URL 恒 https://zprintpro.com)。
+  const collectionJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: localizedCategoryName,
+    url: `https://zprintpro.com/${locale}/category/${slug}/`,
+    mainEntity: itemListJsonLd,
+  };
+
   // 2026-06-10 Phase B 修复 P0-3：主钻 4 品类分类页注入 HowTo + Speakable。
   // 与产品页同源：让搜索/AI 知道"分类页工艺是什么"。
   const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars'];
@@ -359,26 +369,47 @@ export default function CategoryPage({
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage + HowTo + Speakable */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />
+      <JsonLd data={collectionJsonLd} />
       <JsonLd data={businessJsonLd} />
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
       <JsonLd data={speakableJsonLd} />
       {(() => {
+        // G2.1 (2026-09-11): FAQPage 挂 3 直接答案卡 (问句即 H3) — quickAnswers 前置,
+        // 再合并蓝本 seo.faq + conversion newFaqs, 全量按问题文本去重 (大小写/空白归一)。
         const baseFaq = generateFaqSchema(locale, slug);
         const extraFaqs = getConversionFaqs(slug, locale);
-        if (extraFaqs.length === 0) return baseFaq ? <JsonLd data={baseFaq} /> : null;
-        const mergedFaq = {
-          '@context': 'https://schema.org',
-          '@type': 'FAQPage',
-          mainEntity: [
-            ...((baseFaq && (baseFaq as { mainEntity?: unknown[] }).mainEntity) || []),
-            ...extraFaqs.map((f) => ({
-              '@type': 'Question',
-              name: f.q,
-              acceptedAnswer: { '@type': 'Answer', text: f.a },
-            })),
-          ],
+        const quickFaqs = getConversionBlocks(slug, locale)?.quickAnswers ?? [];
+        const seen = new Set<string>();
+        const isDup = (q: string): boolean => {
+          const k = (q || '').trim().toLowerCase();
+          if (!k || seen.has(k)) return true;
+          seen.add(k);
+          return false;
         };
-        return <JsonLd data={mergedFaq} />;
+        const mainEntity: unknown[] = [];
+        for (const a of quickFaqs) {
+          if (isDup(a.q)) continue;
+          mainEntity.push({
+            '@type': 'Question',
+            name: a.q,
+            acceptedAnswer: { '@type': 'Answer', text: a.a },
+          });
+        }
+        const baseMain = (baseFaq && (baseFaq as { mainEntity?: Array<{ name?: string }> }).mainEntity) || [];
+        for (const q of baseMain) {
+          if (!q.name || isDup(q.name)) continue;
+          mainEntity.push(q);
+        }
+        for (const f of extraFaqs) {
+          if (isDup(f.q)) continue;
+          mainEntity.push({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          });
+        }
+        if (mainEntity.length === 0) return null;
+        return <JsonLd data={{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity }} />;
       })()}
 
       {isV9(locale) ? (
