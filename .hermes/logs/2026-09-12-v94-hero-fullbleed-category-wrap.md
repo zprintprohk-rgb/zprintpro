@@ -67,6 +67,12 @@
 ### 分类数据完整性核对
 `blogPosts` 共 **90 篇**，`categoryKey` 覆盖 **23 个类目**（packaging 19 / printing 15 / buying-guide 9 / sticker 9 / paper-bags 7 / flyers 6 / posters 5 / hongkong 2 / creator-ip 2 / wedding-envelope 2 / japan-doujin 2 / 其余 11 类目各 1）→ 全部 >0，**24 个胶囊全量渲染，无 `.slice()` 截断**（`slice()` 仅用于头图区 featured/rest 三分，属展示布局，与分类无关）。
 
+### 线上验收（生产 zprintpro.com，三语言）
+- 上线链：commit `4d5f0637`（branch）→ main merge `46b87370` → CF 部署 `770bbc5b` **deploy:success**
+- **线上探针：44 PASS / 0 FAIL — ALL GREEN**（`V94_BASE=https://zprintpro.com node .hermes/v94-verify-local.mjs`，结果落 `.hermes/logs/v94-probe-live.txt`）
+- 验收项与本地一致：三语言 `/blog/`+`/contact/` 无白条面包屑、Hero `w-full` 通栏、面包屑在色块内浅色、胶囊容器 `flex-wrap` 且 24 个全渲染、埋点/JsonLd 保留、`/services/` 全局面包屑未被误伤
+- 备注：首轮线上探针（部署后 ~1 分钟）命中 CDN 边缘混服旧版 + CF 平台 503 抖动窗口（期间连上一批部署 `3ad811cf` 亦 503），按既有判据以「恢复后复探」为准 —— 复探即全绿
+
 ## 五、全局布局处理方式（按指令要求说明）
 
 - 未大改全局布局：`layout.tsx` / `Header` / `main` 结构 **零改动**。
