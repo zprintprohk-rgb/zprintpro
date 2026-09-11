@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { blogM3Images } from '@/data/blog-m3-images';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, Mail, ShoppingCart, ChevronDown } from 'lucide-react';
@@ -460,7 +461,7 @@ export function Header({ locale }: HeaderProps) {
                         {['company-intro', 'sticker-guide', 'sticker-design'].map((slug, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
                             <div className="relative overflow-hidden rounded-t-lg h-[120px]">
-                              <Image src={`/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
+                              <Image src={blogM3Images[slug] || `/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
                             </div>
                             <div className="pt-2 h-[50px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
