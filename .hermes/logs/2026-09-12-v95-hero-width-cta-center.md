@@ -93,6 +93,11 @@
 - **核对方式**：类名等价性断言（本地 + 线上 HTML 均确认 Hero 外层与 Navbar 蓝色块共用 `max-w-[1320px] mx-auto`，且各自父元素均无水平 padding）→ 三视口计算宽度恒等且同为中心对齐，左右边缘重合，无溢出/缩进。
 - ⚠️ **未能真机截图核对**：本执行环境无浏览器/截图工具，无法出 1920/1440/1280 三视口实拍图。若需像素级实拍复核，请老板用浏览器三档视口各截一图，或授权启用浏览器代理工具后我补跑。
 
+### 线上验收（生产 zprintpro.com）
+- 上线链：commit `e63ad366` → main merge `ec867d95` → CF 部署 `f136eed3`（`ec867d9`）**deploy:success**，**本批仅 1 次构建（无 preview）**
+- **线上探针：76 PASS / 0 FAIL — ALL GREEN**（`V95_BASE=https://zprintpro.com node .hermes/v95-verify.mjs`，结果落 `.hermes/logs/v95-probe-live.txt`）
+- 备注：部署完成后首轮探针 63/13（命中 CDN 边缘混服旧版传播窗口，部分页面已绿），按既有判据以「恢复后复探」为准 —— 复探全绿
+
 ## 五、遗留偏差
 
 1. **信任点胶囊仅 Blog 有为 3 个**：Contact Hero 内**本无信任点列表**（其信任带是 Hero 下方的 E2 四徽章卡片）。按「不改文案/不擅自新增内容」红线，未凭空为 Contact 造 3 条信任点。若需 Contact Hero 也上胶囊，请指定取自哪几条既有文案（如 `t.trustBand` 的 4 条）。
