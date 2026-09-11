@@ -370,12 +370,14 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
                 : `${filteredPosts.length} ${locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts'}`}
             </span>
           </div>
-          <div className="flex gap-2.5 overflow-x-auto pb-3 -mx-1 px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {/* 2026-09-12 v9.4: 分类胶囊全量换行显示 (原 overflow-x-auto 单行横向滚动 + 隐藏滚动条
+              会导致右侧类目被裁切不可见); 去掉 flex-shrink-0, 选中态加橙色 ring (藏青填充锁定不变) */}
+          <div className="flex flex-wrap items-center gap-2 md:gap-3">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
+              className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
                 activeCategory === 'all'
-                  ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30'
+                  ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30 ring-2 ring-[#F87314]'
                   : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
               }`}
             >
@@ -386,9 +388,9 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
               <button
                 key={c.key}
                 onClick={() => setActiveCategory(c.key)}
-                className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
+                className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
                   activeCategory === c.key
-                    ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30'
+                    ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30 ring-2 ring-[#F87314]'
                     : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
                 }`}
               >
