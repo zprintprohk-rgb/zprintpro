@@ -236,35 +236,44 @@ export default function ContactPage({ params }: ContactPageProps) {
       {/* 2026-06-28 fix(contact-500): 连续 3 个独立 <JsonLd> 会 streaming 末尾抛错 — 用 home 同款 1 个 <JsonLd data={[array]}> */}
       <JsonLd data={[businessJsonLd, contactPageJsonLd, localBusinessJsonLd]} />
 
-      {/* E1 Banner — 藏青渐变 + 几何装饰 + H1 + 副标(指令原文) */}
-      <section className="relative overflow-hidden text-white" style={{ background: "var(--color-royal-navy-grad)" }}>
-        <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
-          <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
-          <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
-          <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{ backgroundImage: "radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)", backgroundSize: "28px 28px" }}
-          />
-        </div>
-        <div className="relative max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
-          <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-4">
-            <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
-            {locale === "zh-hk" ? "免費報價・30 秒 AI" : locale === "ja" ? "無料見積もり・30秒AI" : "Free Quote · 30s AI"}
-          </p>
-          <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight max-w-[720px]">{t.h1}</h1>
-          <p className="mt-4 text-white/85 text-base md:text-lg max-w-[640px] leading-relaxed">{t.heroSubtitle}</p>
-          <p className="mt-2 text-white/60 text-sm underline-offset-4 [&_a]:underline [&_a]:hover:text-white">{parseInlineLinks(t.slaLink)}</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a
-              href={generateWhatsAppLink(locale)}
-              target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl bg-[#F87314] text-white font-bold px-7 py-3.5 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
-              data-event="whatsapp_click" data-source="contact-hero" data-locale={locale}
-            >
-              <MessageCircle size={18} />
-              {t.whatsappBigCta}
-            </a>
+      {/* E1 Banner — 1320px 横色块 (同导航栏宽度, 对齐 PLP wedding-invitations; 颜色不变=藏青渐变) */}
+      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+        <div className="relative overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: "var(--color-royal-navy-grad)" }}>
+          <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+            <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+            <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+            <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+            <div
+              className="absolute inset-0 opacity-10"
+              style={{ backgroundImage: "radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)", backgroundSize: "28px 28px" }}
+            />
+          </div>
+          <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10 py-10">
+            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
+                {locale === "zh-hk" ? "首頁" : locale === "ja" ? "ホーム" : "Home"}
+              </a>
+              <span className="mx-2">/</span>
+              <span className="text-white">{locale === "zh-hk" ? "聯絡我們" : locale === "ja" ? "お問い合わせ" : "Contact"}</span>
+            </nav>
+            <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+              {locale === "zh-hk" ? "免費報價・30 秒 AI" : locale === "ja" ? "無料見積もり・30秒AI" : "Free Quote · 30s AI"}
+            </p>
+            <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{t.h1}</h1>
+            <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.heroSubtitle}</p>
+            <p className="mt-2 text-white/60 text-sm underline-offset-4 [&_a]:underline [&_a]:hover:text-white">{parseInlineLinks(t.slaLink)}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href={generateWhatsAppLink(locale)}
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
+                data-event="whatsapp_click" data-source="contact-hero" data-locale={locale}
+              >
+                <MessageCircle size={18} />
+                {t.whatsappBigCta}
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -14,6 +14,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
+import { getBlogSkuImage } from '@/lib/blog-sku-image';
 import { products, getProductTitle, getProductDescription, getProductDisplayTitle, getProductBySlug } from '@/data/products';
 import { getTopSkuByCategory, getRelatedByCategory, inferBlogCategory } from '@/lib/popularity';
 import { convertPriceRangeString } from '@/lib/pricing';
@@ -911,9 +912,37 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
+  // 1) 智能推断 finalBlogCat (按 K3 14:20 拍板: 跟 blog 标题核心产品类目相同)
+  // - post.title: 已经 getPostData 处理好的 locale-specific string
+  // - post.category: getPostData 返回的 category (可能是 product slug 'paper-bags' 或中文 '印刷知識' 或 legacy 字符串)
+  // 修法: 优先 trust post.category 如果是 13 个有效 product category_slug 之一
+  //       否则 fallback 跑 inferBlogCategory (title 关键词推断)
+  // 2026-08-05 15:30 K3 P0 修复: blogCat 必须在 if/else 双分支都定义, 否则 DEBUG marker 引用 ReferenceError → 19/24 blog 500
+  const validProductCategorySlugs = ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'];
+  let finalBlogCat: string;
+  let blogCat: string | undefined;  // hoisted: 避免 JSX 引用时 ReferenceError
+  if (post.category && validProductCategorySlugs.includes(post.category)) {
+    // post.category 是有效 product category_slug (meta path 来自 BlogPostMeta.categoryKey)
+    blogCat = post.category;
+    finalBlogCat = post.category;
+  } else {
+    // post.category 是中文/英文字符串 (buying-guide path 来自 guide.category[locale])
+    //    跑 inferBlogCategory title 关键词推断 (zh-hk/en/ja 标题都含类目关键词)
+    blogCat = inferBlogCategory({
+      title: post.title,  // string 不是 Record<Locale, string> (getPostData 已处理)
+      category: post.category,
+    });
+    finalBlogCat = blogCat;
+  }
+  const linkedProducts = getRelatedByCategory(finalBlogCat, 4);
+  // 2026-08-05 15:30 K3 P0 修复: 移除 DEBUG marker (避免后续改 scope 又踩雷, 验证流程跑独立 Python 脚本)
+
   const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
-  const postImage = getBlogCover(params.slug, locale);
+  // 2026-09-11 老板指令: blog 照片全用 SKU 真实图 (categoryKey 映射 + finalBlogCat 兜底), 无 SKU 图才走 cover
+  const postImage =
+    getBlogSkuImage(params.slug, locale, getBlogPostMetaBySlug(params.slug)?.categoryKey ?? '', finalBlogCat) ||
+    getBlogCover(params.slug, locale);
 
   // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
   // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。
@@ -969,36 +998,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   // Q2=A: CSS marquee 14 条全 DOM, 5 visible
   const hotProducts = getTopSkuByCategory(14);
 
-  // 2026-08-05 K3 14:50 紧急 DEBUG (bc7cd62 验证揭露): post.title?.[locale] 永远是 undefined
-  // 因为 getPostData() 返回的 post.title 已经是 string (locale-specific), 不是 Record<Locale, string>
-  // post.categoryKey 也不存在 (getPostData 没返回这字段)
-  // 真正根因: getPostData 用了 meta?.title?.[locale] 已经是 string, 我之前用 post.title?.[locale] = string[locale] = undefined
-  // 真修法: 直接用 post.title (string) + 智能判断 category
-
-  // 1) 智能推断 finalBlogCat (按 K3 14:20 拍板: 跟 blog 标题核心产品类目相同)
-  // - post.title: 已经 getPostData 处理好的 locale-specific string
-  // - post.category: getPostData 返回的 category (可能是 product slug 'paper-bags' 或中文 '印刷知識' 或 legacy 字符串)
-  // 修法: 优先 trust post.category 如果是 13 个有效 product category_slug 之一
-  //       否则 fallback 跑 inferBlogCategory (title 关键词推断)
-  // 2026-08-05 15:30 K3 P0 修复: blogCat 必须在 if/else 双分支都定义, 否则 DEBUG marker 引用 ReferenceError → 19/24 blog 500
-  const validProductCategorySlugs = ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'];
-  let finalBlogCat: string;
-  let blogCat: string | undefined;  // hoisted: 避免 JSX 引用时 ReferenceError
-  if (post.category && validProductCategorySlugs.includes(post.category)) {
-    // post.category 是有效 product category_slug (meta path 来自 BlogPostMeta.categoryKey)
-    blogCat = post.category;
-    finalBlogCat = post.category;
-  } else {
-    // post.category 是中文/英文字符串 (buying-guide path 来自 guide.category[locale])
-    //    跑 inferBlogCategory title 关键词推断 (zh-hk/en/ja 标题都含类目关键词)
-    blogCat = inferBlogCategory({
-      title: post.title,  // string 不是 Record<Locale, string> (getPostData 已处理)
-      category: post.category,
-    });
-    finalBlogCat = blogCat;
-  }
-  const linkedProducts = getRelatedByCategory(finalBlogCat, 4);
-  // 2026-08-05 15:30 K3 P0 修复: 移除 DEBUG marker (避免后续改 scope 又踩雷, 验证流程跑独立 Python 脚本)
+  // 2) 相关产品 (finalBlogCat 已在组件顶部推断)
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
