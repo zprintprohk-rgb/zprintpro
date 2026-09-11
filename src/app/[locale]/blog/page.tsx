@@ -5,9 +5,8 @@ import BlogContent from './BlogContent';
 import blogContentsZhHk from '@/data/blog-data/zh-hk.json';
 import blogContentsEn from '@/data/blog-data/en.json';
 import blogContentsJa from '@/data/blog-data/ja.json';
-// 2026-09-11 老板指令: blog 照片全用 SKU 真实图 (服务器端算好 map 传入客户端, 客户端不 import products 大树)
-import { blogPosts } from '@/data/blog-posts';
-import { getBlogSkuImage } from '@/lib/blog-sku-image';
+// 2026-09-11 老板指令: blog 照片全用 M3 模型生成图 (src/data/blog-m3-images.ts, 由 build-blog-m3-images.ts 生成, 三语同图)
+import { blogM3Images } from '@/data/blog-m3-images';
 
 interface BlogPageProps {
   params: { locale: string };
@@ -90,11 +89,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   for (const slug of Object.keys(contents)) {
     readTimes[slug] = computeReadMinutes(locale, contents[slug]?.content || '');
   }
-  // 2026-09-11 老板指令: 每篇 blog 的 SKU 真实图 (categoryKey → 产品类目 → top SKU locale 首图)
-  const blogImages: Record<string, string> = {};
-  for (const post of blogPosts) {
-    const img = getBlogSkuImage(post.slug, locale, post.categoryKey);
-    if (img) blogImages[post.slug] = img;
-  }
+  // 2026-09-11 老板指令: 每篇 blog 的 M3 图 (静态映射, 三语共用同一张物理图)
+  const blogImages: Record<string, string> = blogM3Images;
   return <BlogContent locale={locale} readTimes={readTimes} blogImages={blogImages} />;
 }

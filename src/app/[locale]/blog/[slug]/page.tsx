@@ -14,7 +14,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
-import { getBlogSkuImage } from '@/lib/blog-sku-image';
+import { blogM3Images } from '@/data/blog-m3-images';
 import { products, getProductTitle, getProductDescription, getProductDisplayTitle, getProductBySlug } from '@/data/products';
 import { getTopSkuByCategory, getRelatedByCategory, inferBlogCategory } from '@/lib/popularity';
 import { convertPriceRangeString } from '@/lib/pricing';
@@ -939,10 +939,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
-  // 2026-09-11 老板指令: blog 照片全用 SKU 真实图 (categoryKey 映射 + finalBlogCat 兜底), 无 SKU 图才走 cover
-  const postImage =
-    getBlogSkuImage(params.slug, locale, getBlogPostMetaBySlug(params.slug)?.categoryKey ?? '', finalBlogCat) ||
-    getBlogCover(params.slug, locale);
+  // 2026-09-11 老板指令: blog 照片用 M3 模型生成图 (三语同图), 无 M3 图才走既有 cover
+  const postImage = blogM3Images[params.slug] || getBlogCover(params.slug, locale);
 
   // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
   // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。
@@ -1001,7 +999,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   // 2) 相关产品 (finalBlogCat 已在组件顶部推断)
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
+    <main className="min-h-screen bg-white">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={speakableJsonLd} />
@@ -1012,7 +1010,43 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         const howToJsonLd = generateHowToJsonLd(howTo.name, howTo.description, howTo.steps, locale, howTo.totalTime);
         return <JsonLd data={howToJsonLd} />;
       })()}
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+
+      {/* 2026-09-11 老板执行提示词 ①: Hero 全宽贴边 (背景色块 w-full 紧贴导航栏, 内容 max-w-1320 居中; 藏青颜色锁定) */}
+      <div className="relative overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+        <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+          <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+          <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+          <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+          <div
+            className="absolute inset-0 opacity-10"
+            style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
+          />
+        </div>
+        <div className="relative z-[1] max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-10">
+          <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+            <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
+              {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+            </a>
+            <span className="mx-2">/</span>
+            <a href={`${localePrefix}/blog/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
+              {locale === 'zh-hk' ? '印刷知識' : locale === 'ja' ? 'ブログ' : 'Blog'}
+            </a>
+            <span className="mx-2">/</span>
+            <span className="text-white line-clamp-1">{post.title}</span>
+          </nav>
+          <span className="inline-flex items-center self-start rounded-full bg-white/15 border border-white/25 px-3.5 py-1.5 text-[13px] font-semibold text-white backdrop-blur-[2px]">
+            {post.category}
+          </span>
+          <h1 className="mt-4 text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[820px] drop-shadow-sm">{post.title}</h1>
+          <div className="mt-3 flex items-center gap-3 text-sm text-white/75">
+            <span>{t.published} {post.date}</span>
+            <span>·</span>
+            <span className="text-white/90">{t.authorPrefix}{t.author}</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <Link href={`${localePrefix}/blog/`} className="text-[#2873F5] hover:underline text-sm mb-6 inline-block">
           {t.backToBlog}
         </Link>
@@ -1035,19 +1069,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             )}
 
             <div className="p-8">
-              <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2.5 py-1 rounded-full">
-                {post.category}
-              </span>
-              <h1 className="mt-4 text-2xl md:text-3xl font-bold text-[#333333]">{post.title}</h1>
-              <div className="mt-3 flex items-center gap-3 text-sm text-gray-400">
-                <span>{t.published} {post.date}</span>
-                <span>·</span>
-                <span className="text-[#2873F5]">
-                  {t.authorPrefix}{t.author}
-                </span>
-              </div>
+              {/* 2026-09-11: 分类 pill/H1/作者 meta 已上移到 Hero (避免 H1 重复, SEO 单 H1) */}
               <div
-                className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
+                className="prose prose-blue max-w-none text-gray-600 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 

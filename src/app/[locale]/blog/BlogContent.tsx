@@ -68,6 +68,7 @@ const translations: Record<string, {
       { key: 'education', label: '教育培訓' },
       { key: 'banners', label: '易拉寶' },
       { key: 'food-packaging', label: '食品包裝' },
+      { key: 'calendars', label: '月曆印刷' },
     ],
   },
   'en': {
@@ -103,6 +104,7 @@ const translations: Record<string, {
       { key: 'education', label: 'Education' },
       { key: 'banners', label: 'Banners' },
       { key: 'food-packaging', label: 'Food Packaging' },
+      { key: 'calendars', label: 'Calendars' },
     ],
   },
   'ja': {
@@ -138,30 +140,14 @@ const translations: Record<string, {
       { key: 'education', label: '教育研修' },
       { key: 'banners', label: 'バナー' },
       { key: 'food-packaging', label: '食品パッケージ' },
+      { key: 'calendars', label: 'カレンダー' },
     ],
   },
 };
 
-const categoryColors: Record<string, { bg: string; text: string }> = {
-  'company-news': { bg: 'bg-red-50', text: 'text-red-600' },
-  'sticker': { bg: 'bg-pink-50', text: 'text-pink-600' },
-  'card': { bg: 'bg-cyan-50', text: 'text-cyan-600' },
-  'packaging': { bg: 'bg-emerald-50', text: 'text-emerald-600' },
-  'printing': { bg: 'bg-gray-50', text: 'text-gray-600' },
-  'design': { bg: 'bg-purple-50', text: 'text-purple-600' },
-  'branding': { bg: 'bg-amber-50', text: 'text-amber-600' },
-  'hongkong': { bg: 'bg-blue-50', text: 'text-blue-600' },
-  'trends': { bg: 'bg-green-50', text: 'text-green-600' },
-  'buying-guide': { bg: 'bg-orange-50', text: 'text-orange-600' },
-  'flyers': { bg: 'bg-rose-50', text: 'text-rose-600' },
-  'food-packaging': { bg: 'bg-lime-50', text: 'text-lime-700' },
-  'paper-bags': { bg: 'bg-amber-50', text: 'text-amber-700' },
-  'posters': { bg: 'bg-violet-50', text: 'text-violet-600' },
-  'restaurant-flyer': { bg: 'bg-orange-50', text: 'text-orange-700' },
-};
-
-function getCategoryColor(key: string) {
-  return categoryColors[key] || { bg: 'bg-gray-50', text: 'text-gray-600' };
+// 2026-09-11 老板执行提示词 ③: 分类标签统一藏青实心底 + 白字 (浅色背景强视觉锚点), 悬停微亮/阴影但底色基调不变
+function getCategoryColor(_key: string) {
+  return { bg: 'bg-[#1D3465] shadow-sm hover:brightness-110', text: 'text-white' };
 }
 
 /** D: 封面占位 — 无 cover 的每日 SEO 博客用纯几何渐变, 不放图 (覆盖既有无图逻辑) */
@@ -252,9 +238,9 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
 
   return (
     <main className="min-h-screen bg-white">
-      {/* D1 Banner — 1320px 横色块 (同导航栏宽度, 对齐 PLP wedding-invitations; 颜色不变=藏青渐变) */}
-      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-        <div className="relative overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+      {/* D1 Banner — 2026-09-11 老板执行提示词 ①: 全宽贴边 (背景色块 w-full 紧贴导航栏外沿, 内容容器 max-w-1320 居中; 藏青颜色锁定不变) */}
+      <section className="w-full">
+        <div className="relative w-full overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
           <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
             <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
             <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
@@ -266,7 +252,7 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
               style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
             />
           </div>
-          <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10 py-10">
+          <div className="relative z-[1] max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-10">
             <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
               <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
                 {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
@@ -387,27 +373,27 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
           <div className="flex gap-2.5 overflow-x-auto pb-3 -mx-1 px-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             <button
               onClick={() => setActiveCategory('all')}
-              className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-colors border ${
+              className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
                 activeCategory === 'all'
-                  ? 'bg-[#F87314] border-[#F87314] text-white shadow-sm shadow-orange-500/30'
-                  : 'bg-white border-gray-200 text-[#333333] hover:border-[#2873F5] hover:text-[#2873F5]'
+                  ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30'
+                  : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
               }`}
             >
               {t.allArticles}
-              <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-gray-400'}`}>{allPosts.length}</span>
+              <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-white/70'}`}>{allPosts.length}</span>
             </button>
             {t.categories.filter((c) => categoryCounts[c.key]).map((c) => (
               <button
                 key={c.key}
                 onClick={() => setActiveCategory(c.key)}
-                className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold transition-colors border ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-semibold text-white transition-all border ${
                   activeCategory === c.key
-                    ? 'bg-[#F87314] border-[#F87314] text-white shadow-sm shadow-orange-500/30'
-                    : 'bg-white border-gray-200 text-[#333333] hover:border-[#2873F5] hover:text-[#2873F5]'
+                    ? 'bg-[#17284C] border-[#17284C] shadow-lg shadow-blue-900/30'
+                    : 'bg-[#1D3465] border-[#1D3465] hover:brightness-110 hover:shadow-md'
                 }`}
               >
                 {c.label}
-                <span className={`text-xs ${activeCategory === c.key ? 'text-white/80' : 'text-gray-400'}`}>{categoryCounts[c.key]}</span>
+                <span className={`text-xs ${activeCategory === c.key ? 'text-white/80' : 'text-white/70'}`}>{categoryCounts[c.key]}</span>
               </button>
             ))}
           </div>
