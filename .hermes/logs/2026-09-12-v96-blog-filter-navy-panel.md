@@ -77,6 +77,11 @@
 - 深底可读性：未选中胶囊 `bg-white/10` + `border-white/15`（在 `#26477F~#17284C` 渐变上形成明确边界与层次）；选中 `#F87314` 实心对比充足。
 - ⚠️ **未能真机截图核对**：本执行环境无浏览器/截图工具，无法出 1920/1440/1280 三视口实拍图。如需像素级实拍复核，请三档视口各截一图，或授权启用浏览器代理工具后我补跑。
 
+### 线上验收（生产 zprintpro.com）
+- 上线链：commit `ea857e77` → main merge `f767ac9b` → CF 部署 `49eaa70f`（`f767ac9`）**deploy:success**
+- **线上探针：60 PASS / 0 FAIL — ALL GREEN**（`V96_BASE=https://zprintpro.com node .hermes/v96-verify.mjs`，结果落 `.hermes/logs/v96-probe-live.txt`），本轮部署后首轮即全绿（无 CDN 传播延迟）
+- **配额**：CF API 确认本批**仅 1 次生产构建**（`2026-09-11T20:06:12Z production f767ac9`），无 preview 部署 → 相较「分支+main 双推」省 1 次
+
 ## 六、遗留偏差
 
 1. **选中胶囊橙色用 `#F87314`（站点橙 token）而非 Tailwind `orange-500`**：与全站 CTA / Hero eyebrow / PLP 强调色同色，避免同页出现两种橙；如需严格对齐 `orange-500`(#f97316)，1 处可切。
