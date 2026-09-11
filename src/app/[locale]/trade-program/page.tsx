@@ -41,7 +41,7 @@ const COPY = {
         features: [
           '20% off all products (stickers, packaging, paper bags, etc.)',
           'Self-serve quote calculator',
-          'Email support (24h response)',
+          'Email support (2h response)',
           'Monthly invoice billing (NET-30)',
         ],
         cta: 'Apply Free',
@@ -147,7 +147,7 @@ const COPY = {
     tiers: [
       {
         icon: 'briefcase', name: 'Trade', price: '免費加盟', priceUnit: '永久',
-        discount: '8 折', features: ['所有產品 8 折優惠 (貼紙 / 包裝 / 紙袋 等)', '自助報價計算器', '電郵支援 (24 小時回覆)', '月結 NET-30 賬單'],
+        discount: '8 折', features: ['所有產品 8 折優惠 (貼紙 / 包裝 / 紙袋 等)', '自助報價計算器', '電郵支援 (2 小時回覆)', '月結 NET-30 賬單'],
         cta: '免費申請', featured: false,
       },
       {
@@ -196,7 +196,7 @@ const COPY = {
     tiers: [
       {
         icon: 'briefcase', name: 'Trade', price: '無料登録', priceUnit: '永久',
-        discount: '20% OFF', features: ['全商品 20% OFF (ステッカー・パッケージ・紙袋等)', 'セルフ見積もり計算', 'メールサポート (24 時間対応)', '月次 NET-30 請求'],
+        discount: '20% OFF', features: ['全商品 20% OFF (ステッカー・パッケージ・紙袋等)', 'セルフ見積もり計算', 'メールサポート (2 時間対応)', '月次 NET-30 請求'],
         cta: '無料申請', featured: false,
       },
       {

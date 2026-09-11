@@ -113,11 +113,11 @@ export default function FaqPage({ params }: { params: { locale: string } }) {
           </h2>
           <p className="text-sm md:text-base text-gray-600 mb-4">
             {params.locale === 'zh-hk' &&
-              'WhatsApp 我們 24 小時內專業跟進, 或填寫報價表 30 秒 AI 即時報價.'}
+              'WhatsApp 我們 2 小時內專業跟進, 或填寫報價表 30 秒 AI 即時報價.'}
             {params.locale === 'en' &&
-              'WhatsApp us for professional follow-up within 24 hours, or fill the quote form for 30-second AI instant quote.'}
+              'WhatsApp us for professional follow-up within 2 hours, or fill the quote form for 30-second AI instant quote.'}
             {params.locale === 'ja' &&
-              'WhatsApp で 24 時間以内に専門スタッフが対応, または見積もりフォームで 30 秒 AI 即時見積もり.'}
+              'WhatsApp で 2 時間以内に専門スタッフが対応, または見積もりフォームで 30 秒 AI 即時見積もり.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a

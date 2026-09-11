@@ -43,7 +43,7 @@ const translations: Record<string, {
     buyingGuideTag: '選購指南',
     readMore: '閱讀全文 →',
     empty: '暫無相關文章',
-    heroCheck: ['印刷工藝・設計技巧・行業趨勢', '30 秒 AI 報價', '15 分鐘內專人回覆'],
+    heroCheck: ['印刷工藝・設計技巧・行業趨勢', '30 秒 AI 報價', '2 小時內專人回覆'],
     categories: [
       { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
@@ -116,7 +116,7 @@ const translations: Record<string, {
     buyingGuideTag: '選び方ガイド',
     readMore: '続きを読む →',
     empty: '関連記事はありません',
-    heroCheck: ['印刷技術・デザイン・業界トレンド', '30秒AI見積もり', '15分以内に専門スタッフが返信'],
+    heroCheck: ['印刷技術・デザイン・業界トレンド', '30秒AI見積もり', '2時間以内に専門スタッフが返信'],
     categories: [
       { key: 'company-news', label: '会社ニュース' },
       { key: 'sticker', label: 'ステッカー知識' },
@@ -438,7 +438,7 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
               {locale === 'zh-hk' ? '睇完仲未決定？' : locale === 'ja' ? 'まだお決まりでないですか？' : 'Still deciding?'}
             </h2>
             <p className="mt-2 text-white/75 text-sm md:text-base">
-              {locale === 'zh-hk' ? 'WhatsApp 30 秒攞精準報價，15 分鐘內專人回覆。' : locale === 'ja' ? 'WhatsAppで30秒の見積もり、15分以内に専門スタッフが返信。' : 'Get a precise quote in 30 seconds on WhatsApp; reply within 15 minutes.'}
+              {locale === 'zh-hk' ? 'WhatsApp 30 秒攞精準報價，2 小時內專人回覆。' : locale === 'ja' ? 'WhatsAppで30秒の見積もり、2時間以内に専門スタッフが返信。' : 'Get a precise quote in 30 seconds on WhatsApp; reply within 2 hours.'}
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">

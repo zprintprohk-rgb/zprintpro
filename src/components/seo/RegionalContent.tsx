@@ -9,7 +9,7 @@ interface RegionalContentProps {
 
 const content: Record<Locale, Record<RegionalContentProps['type'], string>> = {
   'zh-hk': {
-    trustSignals: '深圳自有工廠 · 順豐香港本地派送 (48小時) · 24小時報價 · ISO9001認證',
+    trustSignals: '深圳自有工廠 · 順豐香港本地派送 (48小時) · 2 小時報價 · ISO9001認證',
     shipping: '順豐香港本地送貨 · 港島/九龍/新界 48小時達 · DHL 全球 2-4 日',
     pricingNote: '以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。',
     contactCta: 'WhatsApp即時查詢',
@@ -55,9 +55,9 @@ export function RegionalCta({ locale, productSlug, className = '' }: RegionalCta
   }[locale];
 
   const subtext = {
-    'zh-hk': '24小時內回覆 · 免費設計諮詢',
-    'en': 'Response within 24h · Free design consultation',
-    'ja': '24時間以内に返信 · 無料デザイン相談',
+    'zh-hk': '2 小時內回覆 · 免費設計諮詢',
+    'en': 'Response within 2h · Free design consultation',
+    'ja': '2時間以内に返信 · 無料デザイン相談',
   }[locale];
 
   return (

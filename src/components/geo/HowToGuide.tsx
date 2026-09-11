@@ -19,7 +19,7 @@ const I18N: Record<Locale, { title: string; subtitle: string; steps: Array<{ nam
     steps: [
       { name: '選擇規格', text: '在報價計算器中選擇尺寸、材質、數量、印後工藝，30秒獲得估算價格。' },
       { name: '上傳設計稿', text: '支持 PDF、AI、PSD、PNG、JPG 格式（最大 50MB），系統自動印前預檢。' },
-      { name: '確認報價', text: '客服將在 24 小時內確認最終價格（含運費、稅費），並提供付款方式。' },
+      { name: '確認報價', text: '客服將在 2 小時內確認最終價格（含運費、稅費），並提供付款方式。' },
       { name: '生產印刷', text: '確認訂單後 1-2 個工作天完成生產，急件可當天完成。' },
       { name: '送達收貨', text: '香港本地即日送達；海外 3-7 個工作天全球配送。' },
     ],
@@ -30,7 +30,7 @@ const I18N: Record<Locale, { title: string; subtitle: string; steps: Array<{ nam
     steps: [
       { name: 'Choose Specs', text: 'Use the quote calculator to pick size, material, quantity, and finish. Get an estimate in 30 seconds.' },
       { name: 'Upload Design', text: 'PDF, AI, PSD, PNG, JPG supported (up to 50MB). System runs automatic preflight check.' },
-      { name: 'Confirm Quote', text: 'Our team confirms final pricing (including shipping and tax) within 24 hours.' },
+      { name: 'Confirm Quote', text: 'Our team confirms final pricing (including shipping and tax) within 2 hours.' },
       { name: 'Production', text: 'Production takes 1-2 business days. Same-day rush available for urgent jobs.' },
       { name: 'Delivery', text: 'Same-day production at our Asia facility. 2-4 business day DHL delivery for US orders.' },
     ],
@@ -41,7 +41,7 @@ const I18N: Record<Locale, { title: string; subtitle: string; steps: Array<{ nam
     steps: [
       { name: '仕様選択', text: '見積もり計算機でサイズ、素材、数量、加工を選び、30秒で概算価格を取得。' },
       { name: 'デザインアップロード', text: 'PDF、AI、PSD、PNG、JPG 対応（最大50MB）。システムが自動で印刷適性チェック。' },
-      { name: '見積もり確認', text: '24時間以内に最終価格（送料・税込み）と支払い方法をご案内。' },
+      { name: '見積もり確認', text: '2時間以内に最終価格（送料・税込み）と支払い方法をご案内。' },
       { name: '生産・印刷', text: '確認後 1-2 営業日で生産完了。緊急時は当日対応可能。' },
       { name: 'お届け', text: '香港現地は即日配送。海外は 3-7 営業日でグローバル配送。' },
     ],

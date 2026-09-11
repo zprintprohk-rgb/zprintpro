@@ -41,19 +41,19 @@ const I18N_CTA: Record<Locale, { cta: string; faqTitle: string; ctaTitle: string
     cta: '立即獲取報價',
     faqTitle: '常見問題',
     ctaTitle: '需要更多資訊？',
-    ctaSub: 'WhatsApp 我們，1 分鐘回覆',
+    ctaSub: 'WhatsApp 我們，2 小時內回覆',
   },
   en: {
     cta: 'Get a Free Quote',
     faqTitle: 'FAQ',
     ctaTitle: 'Need more info?',
-    ctaSub: 'WhatsApp us, 1-minute reply',
+    ctaSub: 'WhatsApp us, 2-hour reply',
   },
   ja: {
     cta: '無料見積もりを取得',
     faqTitle: 'よくある質問',
     ctaTitle: '詳細が必要ですか？',
-    ctaSub: 'WhatsApp で1分返信',
+    ctaSub: 'WhatsApp で2時間以内に返信',
   },
 };
 

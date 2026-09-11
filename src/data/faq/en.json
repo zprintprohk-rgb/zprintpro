@@ -1,20 +1,20 @@
 {
   "metadata": {
     "slug": "sla-faq",
-    "title": "ZprintPro 24-Hour Service Commitment · Eligibility FAQ",
-    "description": "ZprintPro 4 types of 24-hour service commitments (response / proofing / SF Express local / digital printing) with eligibility and exclusion conditions, aligned with NAP consistency.",
+    "title": "ZprintPro Service Commitment · Eligibility FAQ",
+    "description": "ZprintPro 4 types of service commitments (2-hour response / 24-hour proofing / SF Express local / 24-hour digital printing) with eligibility and exclusion conditions, aligned with NAP consistency.",
     "lastUpdated": "2026-08-25",
     "version": "1.0"
   },
   "categories": [
     {
       "id": "sla-response",
-      "label": "24-Hour Response",
-      "scope": "Inquiry / contact follow-up within 24 hours",
+      "label": "2-Hour Response",
+      "scope": "Inquiry / contact follow-up within 2 hours",
       "faqs": [
         {
-          "question": "What are the eligibility conditions for 24-hour response?",
-          "answer": "Inquiries submitted on business days 9:00-18:00 (UTC+8), with complete contact details (WhatsApp / email / phone) and standard categories (stickers / packaging / paper bags / posters / books), will receive professional follow-up within 24 hours.",
+          "question": "What are the eligibility conditions for 2-hour response?",
+          "answer": "Inquiries submitted on business days 9:00-18:00 (UTC+8), with complete contact details (WhatsApp / email / phone) and standard categories (stickers / packaging / paper bags / posters / books), will receive professional follow-up within 2 hours.",
           "applicable": [
             "✅ Business days 9:00-18:00 (UTC+8) submission",
             "✅ Inquiry with complete contact details",
@@ -28,13 +28,13 @@
         },
         {
           "question": "How are weekends and Hong Kong public holidays handled?",
-          "answer": "On weekends and public holidays, the 24-hour response commitment defers to the next business day 9:00. For urgent cases, contact us via WhatsApp (+86 198 8085 1334) with 'URGENT' tag for priority handling.",
+          "answer": "On weekends and public holidays, the 2-hour response commitment defers to the next business day 9:00. For urgent cases, contact us via WhatsApp (+86 198 8085 1334) with 'URGENT' tag for priority handling.",
           "applicable": [
             "✅ Urgent WhatsApp 'URGENT' tag for priority",
-            "✅ Follow-up within 24 hours after holiday ends"
+            "✅ Follow-up within 2 hours after holiday ends"
           ],
           "notApplicable": [
-            "❌ 24-hour response guaranteed during holidays"
+            "❌ 2-hour response guaranteed during holidays"
           ]
         }
       ]

@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: QuotePageProps): Promise<Meta
     'ja': '無料お見積もり | ZprintPro',
   };
   const descriptions: Record<string, string> = {
-    'zh-hk': '填寫表單獲取免費印刷報價，24小時內回覆',
-    'en': 'Fill out the form to get a free printing quote, reply within 24 hours',
-    'ja': 'フォームに記入して無料印刷見積もりを取得、24時間以内に返信',
+    'zh-hk': '填寫表單獲取免費印刷報價，2 小時內回覆',
+    'en': 'Fill out the form to get a free printing quote, reply within 2 hours',
+    'ja': 'フォームに記入して無料印刷見積もりを取得、2時間以内に返信',
   };
 
   // 静态导出时无法使用 searchParams，移除静态 noindex 避免阻止所有报价页收录
@@ -44,9 +44,9 @@ export async function generateMetadata({ params }: QuotePageProps): Promise<Meta
 export default function QuotePage({ params }: QuotePageProps) {
   // 2026-08-25 P1 #8 拍板 24h SLA FAQ 触发位置 (K3 8/24 19:03 拍板 SLA 适用条款, 8/25 P0 #5 数据 + 8/25 P1 #8 触发)
   const faqLinkText: Record<string, string> = {
-    'zh-hk': '查看 24 小時 SLA 適用條款',
-    'en': 'View 24h SLA Terms',
-    'ja': '24 時間 SLA 適用条件を見る',
+    'zh-hk': '查看服務承諾 SLA 適用條款',
+    'en': 'View SLA Terms',
+    'ja': 'SLA適用条件を見る',
   };
   return (
     <>

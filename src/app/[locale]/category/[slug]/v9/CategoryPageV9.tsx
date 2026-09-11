@@ -11,7 +11,7 @@
 import Image from 'next/image';
 import { Locale } from '@/lib/seo';
 import { Product, getProductDisplayTitle, categories as allCategoryDefs } from '@/data/products';
-import { getBlogPostMetaBySlug } from '@/data/blog-posts';
+import { getBlogPostMetaBySlug, getAllBlogPostSlugs } from '@/data/blog-posts';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
 import {
   getConversionBlocks,
@@ -100,7 +100,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     viewFull: '查看完整方案 →',
     faqTitle: '常見問題',
     ctaHeading: 'WhatsApp 直接詢價 · 30 秒發需求',
-    ctaSub: 'WhatsApp 詢價後銀行轉賬 / 微信 / 支付寶香港 / PayPal · 24 小時內回覆',
+    ctaSub: 'WhatsApp 詢價後銀行轉賬 / 微信 / 支付寶香港 / PayPal · 2 小時內回覆',
     getQuote: '立即獲取報價',
     whatsapp: 'WhatsApp 查詢',
     mrailPriceLabel: (p) => `${p} 起`,
@@ -134,7 +134,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     viewFull: 'View More →',
     faqTitle: 'FAQs',
     ctaHeading: 'WhatsApp Direct Quote · 30s Request',
-    ctaSub: 'Pay after quote via Bank Transfer / WeChat Pay / Alipay / PayPal · reply within 24h',
+    ctaSub: 'Pay after quote via Bank Transfer / WeChat Pay / Alipay / PayPal · reply within 2h',
     getQuote: 'Get Instant Quote',
     whatsapp: 'WhatsApp Us',
     mrailPriceLabel: (p) => `from ${p}`,
@@ -171,7 +171,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     viewFull: '詳しく見る →',
     faqTitle: 'よくある質問',
     ctaHeading: 'WhatsAppで直接お問い合わせ · 30秒で依頼',
-    ctaSub: '見積もり後、銀行振込 / WeChat Pay / Alipay / PayPal で決済 · 24時間以内に返信',
+    ctaSub: '見積もり後、銀行振込 / WeChat Pay / Alipay / PayPal で決済 · 2時間以内に返信',
     getQuote: '無料お見積もり',
     whatsapp: 'WhatsAppで相談',
     mrailPriceLabel: (p) => `${p}〜`,
@@ -331,10 +331,22 @@ export function CategoryPageV9({
     'place-cards': 'foil-stamping-3-applications-2026',
   };
   const rawGuideLinks = guide?.links ?? [];
-  // G2.3 (2026-09-11): 選購指南内链保证 — 数据 links 缺失任一类时, 从静态映射补足
-  // ≥1 相关分类 + ≥1 相关 blog (三语言同结构; 链接 slug 全为线上 200 实存路由, 禁 404/301)。
+  // G2.3 (2026-09-11): 選購指南内链保证 —
+  // ① 数据 links 先过存在性过滤 (blog slug 必须在 blogPosts, category slug 必须在 categories) → 线上 0 死链/404
+  // ② 过滤后缺失任一类时, 从静态映射补足 ≥1 相关分类 + ≥1 相关 blog (三语言同结构)
   const guideLinks = (() => {
-    const base = rawGuideLinks;
+    const validBlogSlugs = new Set(getAllBlogPostSlugs());
+    const validCategorySlugs = new Set(allCategoryDefs.map((c) => c.slug));
+    const linkTargetExists = (href: string) => {
+      const m = href.match(/\/(blog|category)\/([^/?#]+)\/?$/);
+      if (!m) return true; // 非 blog/category 内链不在此校验范围
+      return m[1] === 'blog' ? validBlogSlugs.has(m[2]) : validCategorySlugs.has(m[2]);
+    };
+    const base = rawGuideLinks.filter((l) => {
+      const ok = linkTargetExists(l.href);
+      if (!ok) console.warn('[G2.3] 过滤死链 (目标不存在):', l.href);
+      return ok;
+    });
     const needCat = !base.some((l) => l.href.includes('/category/'));
     const needBlog = !base.some((l) => l.href.includes('/blog/'));
     const extra: { label: string; href: string }[] = [];
