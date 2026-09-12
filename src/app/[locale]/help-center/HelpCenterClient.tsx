@@ -26,6 +26,8 @@ import {
   Eye,
 } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+// v9.3-L3: 共享 CTA 按钮 (与 contact / blog hero 同款, 自适应宽度)
+import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
 
 interface HelpCenterClientProps {
   locale: Locale;
@@ -651,7 +653,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         </div>
         <ul className="space-y-2">
           {items.map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+            <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 mt-0.5 flex-shrink-0" />
               <span>{item}</span>
             </li>
@@ -664,7 +666,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
   /* ── helper: price row ── */
   const PriceRow = ({ label, value }: { label: string; value: string }) => (
     <div className="flex items-center justify-between py-2.5 border-b border-gray-50 last:border-0">
-      <span className="text-base text-gray-600">{label}</span>
+      <span className="text-[17.5px] leading-[1.75] text-gray-600">{label}</span>
       <span className="text-base font-bold text-[#333333]">{value}</span>
     </div>
   );
@@ -686,7 +688,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="artwork" title={o.artworkTitle} icon={FileText}>
             <ul className="space-y-2.5">
               {o.artworkItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
                   <AlertCircle className="w-3.5 h-3.5 text-[#F87314] mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -696,7 +698,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="typography" title={o.typographyTitle} icon={Type}>
             <ul className="space-y-2.5">
               {o.typographyItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
                   <Eye className="w-3.5 h-3.5 text-[#2873F5] mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -706,7 +708,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="color" title={o.colorTitle} icon={Palette}>
             <ul className="space-y-2.5">
               {o.colorItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
                   <Palette className="w-3.5 h-3.5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -845,7 +847,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs flex items-center justify-center font-bold">
                       {i + 1}
                     </span>
-                    <p className="text-base text-gray-600 leading-relaxed pt-0.5">{step}</p>
+                    <p className="text-[17.5px] leading-[1.75] text-gray-600 pt-0.5">{step}</p>
                   </div>
                 ))}
               </div>
@@ -853,11 +855,11 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
             {/* Security notice */}
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-              <p className="text-base text-red-700 leading-relaxed">{p.securityNotice}</p>
+              <p className="text-[17.5px] leading-[1.75] text-red-700">{p.securityNotice}</p>
             </div>
 
             {/* Contact card */}
-            <div className="bg-[#1a1a2e] rounded-xl p-5 text-white">
+            <div className="rounded-[18px] p-5 text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
               <h4 className="font-bold mb-3 text-lg">{t.contactCta}</h4>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-base text-gray-300">
@@ -892,7 +894,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
               <Package className="w-5 h-5 text-[#2873F5]" />
               {s.expressTitle}
             </h3>
-            <p className="text-base text-gray-500 mb-4">{s.expressSubtitle}</p>
+            <p className="text-[17.5px] leading-[1.75] text-gray-500 mb-4">{s.expressSubtitle}</p>
             <div className="space-y-1">
               {s.expressItems.map((item, i) => (
                 <PriceRow key={i} label={item.label} value={item.value} />
@@ -926,7 +928,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
             </h3>
             <ul className="space-y-2">
               {s.noticeItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
                   <Ban className="w-3.5 h-3.5 text-gray-400 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -945,7 +947,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
       <div className="space-y-6">
         {/* Intro: general policy statement */}
         <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-5">
-          <p className="text-base text-gray-800 leading-relaxed">{r.intro}</p>
+          <p className="text-[17.5px] leading-[1.75] text-gray-800">{r.intro}</p>
         </div>
 
         {/* Returnable + Non-returnable */}
@@ -970,7 +972,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
             </h3>
             <ul className="space-y-2">
               {r.legalItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-[17.5px] leading-[1.75] text-gray-600">
                   <AlertCircle className="w-3.5 h-3.5 text-red-400 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -991,13 +993,36 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.title}</h1>
-          <p className="text-gray-500 text-lg">{t.subtitle}</p>
+    <div className="min-h-screen bg-[#F2F6FF]">
+      {/* v9.3-L3: Hero 色块对齐 8 页族 (spec §1) — max-w-[1320px] mx-auto + 藏青渐变 token
+          原居中标题块 (h1 + 副标) 文案原样迁入 Hero, 零文字改动 */}
+      <section className="max-w-[1320px] mx-auto">
+        <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+          <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
+            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+              {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+              <span className="mx-1.5 text-white/40">/</span>
+              <span className="text-white">{t.title}</span>
+            </nav>
+            <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+              {locale === 'zh-hk' ? '幫助中心' : locale === 'ja' ? 'ヘルプセンター' : 'Help Center'}
+            </p>
+            <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{t.title}</h1>
+            <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.subtitle}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <WhatsAppCtaButton
+                href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
+                label={locale === 'zh-hk' ? 'WhatsApp 即時查詢' : locale === 'ja' ? 'WhatsApp で問い合わせ' : 'Chat on WhatsApp'}
+                source="help-center-hero"
+                locale={locale}
+              />
+            </div>
+          </div>
         </div>
+      </section>
+
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
 
         {/* Tab Navigation - Large Cards */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
@@ -1039,25 +1064,32 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         {tabContent[activeTab]}
 
         {/* Bottom Contact CTA */}
-        <div className="mt-10 bg-white rounded-xl border border-gray-100 p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        {/* v9.3-L3: 尾 CTA 色块统一 (spec §4) — NAP 邮箱/电话文案原样保留, 仅换底与按钮配色 */}
+        <div className="mt-10 rounded-2xl overflow-hidden text-white px-6 md:px-10 py-10 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6" style={{ background: 'var(--color-royal-navy-grad)' }}>
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-[#2873F5]/10 flex items-center justify-center">
-              <Phone className="w-5 h-5 text-[#2873F5]" />
+            <div className="w-10 h-10 rounded-full bg-white/15 flex items-center justify-center">
+              <Phone className="w-5 h-5 text-white" />
             </div>
             <div>
-              <p className="font-bold text-[#333333] text-sm">{t.contactCta}</p>
-              <p className="text-xs text-gray-500">{t.contactDesc}</p>
+              <p className="font-bold text-white text-[17.5px]">{t.contactCta}</p>
+              <p className="text-sm text-white/70 mt-0.5">{t.contactDesc}</p>
             </div>
           </div>
-          <div className="flex items-center gap-4 text-sm">
-            <a href="mailto:zprintpro@outlook.com" className="flex items-center gap-1.5 text-[#2873F5] hover:underline">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+            <a href="mailto:zprintpro@outlook.com" className="flex items-center gap-1.5 text-white hover:text-[#F87314] transition-colors">
               <Mail className="w-4 h-4" />
               zprintpro@outlook.com
             </a>
-            <a href="tel:+8619880851334" className="flex items-center gap-1.5 text-[#2873F5] hover:underline">
+            <a href="tel:+8619880851334" className="flex items-center gap-1.5 text-white hover:text-[#F87314] transition-colors">
               <Phone className="w-4 h-4" />
               +86 198 8085 1334
             </a>
+            <WhatsAppCtaButton
+              href="https://wa.me/8619880851334?text=Hi%20ZprintPro%2C%20I%20need%20a%20quote"
+              label={locale === 'zh-hk' ? 'WhatsApp 查詢' : locale === 'ja' ? 'WhatsApp 相談' : 'WhatsApp Us'}
+              source="help-center-tail-cta"
+              locale={locale}
+            />
           </div>
         </div>
       </div>
