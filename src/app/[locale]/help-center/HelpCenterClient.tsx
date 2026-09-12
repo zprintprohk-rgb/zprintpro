@@ -649,7 +649,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <span className={`w-8 h-8 rounded-lg ${accentMap[accent]} flex items-center justify-center`}>
             <Icon className="w-4 h-4" />
           </span>
-          <h3 className="font-bold text-[#333333] text-lg">{title}</h3>
+          <h3 className="font-bold text-[#333333] text-[clamp(20px,2vw,26px)]">{title}</h3>
         </div>
         <ul className="space-y-2">
           {items.map((item, i) => (
@@ -837,7 +837,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           {/* Confirmation steps */}
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-gray-100 p-6">
-              <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-lg">
+              <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-[clamp(20px,2vw,26px)]">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 {p.confirmTitle}
               </h3>
@@ -890,7 +890,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Express */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">
-            <h3 className="font-bold text-[#333333] mb-1 flex items-center gap-2 text-lg">
+            <h3 className="font-bold text-[#333333] mb-1 flex items-center gap-2 text-[clamp(20px,2vw,26px)]">
               <Package className="w-5 h-5 text-[#2873F5]" />
               {s.expressTitle}
             </h3>
@@ -904,7 +904,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
           {/* Truck */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">
-            <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-lg">
+            <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-[clamp(20px,2vw,26px)]">
               <Truck className="w-5 h-5 text-[#F87314]" />
               {s.truckTitle}
             </h3>
@@ -922,7 +922,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
           {/* Notice */}
           <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
+            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-[clamp(20px,2vw,26px)]">
               <AlertCircle className="w-4 h-4 text-red-500" />
               {s.noticeTitle}
             </h3>
@@ -966,7 +966,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         <div className="grid lg:grid-cols-2 gap-6">
           <InfoCard title={r.spareTitle} icon={Package} items={r.spareItems} accent="green" />
           <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
+            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-[clamp(20px,2vw,26px)]">
               <Copyright className="w-4 h-4 text-red-500" />
               {r.legalTitle}
             </h3>
@@ -998,6 +998,14 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           原居中标题块 (h1 + 副标) 文案原样迁入 Hero, 零文字改动 */}
       <section className="max-w-[1320px] mx-auto">
         <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+          {/* v9.3.2 P3: 补 S1 缺件 — 装饰圆组 (逐字复制骨架, 禁改尺寸) */}
+          <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+            <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+            <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+            <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+            <div className="absolute inset-0 opacity-10"
+                 style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }} />
+          </div>
           <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
             <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
               {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
@@ -1052,7 +1060,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         {/* Active Tab Title */}
         <div className="flex items-center gap-2 mb-5">
           <ActiveIcon className="w-5 h-5 text-[#2873F5]" />
-          <h2 className="text-2xl font-bold text-[#333333]">
+          <h2 className="text-[clamp(20px,2vw,26px)] font-bold text-[#333333]">
             {activeTab === 'order' && t.order.sectionTitle}
             {activeTab === 'payment' && t.payment.sectionTitle}
             {activeTab === 'shipping' && t.shipping.sectionTitle}
