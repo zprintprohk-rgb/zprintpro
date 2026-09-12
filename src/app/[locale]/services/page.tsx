@@ -329,7 +329,7 @@ export default function ServicesPage({ params }: Props) {
       />
 
       {/* Hero（面包屑由 layout 全局 BreadcrumbNav 渲染，此处不重复） */}
-      <section className="bg-gradient-to-r from-[#2873F5] to-[#1a5fd4] text-white">
+      <section className="max-w-[1320px] mx-auto bg-gradient-to-r from-[#2873F5] to-[#1a5fd4] text-white">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{t.h1}</h1>
           <p className="text-xl text-blue-100 max-w-2xl mb-6">{t.subtitle}</p>

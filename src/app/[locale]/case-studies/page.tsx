@@ -369,7 +369,7 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
       <main className="min-h-screen bg-white">
         {/* Hero - 1320×400，与分类页保持一致 */}
         <div className="max-w-[1320px] mx-auto">
-          <section className="relative w-full h-[400px] overflow-hidden bg-gradient-to-r from-[#1e3a8a] to-[#06b6d4] text-white">
+          <section className="relative w-full max-w-[1320px] mx-auto h-[400px] overflow-hidden bg-gradient-to-r from-[#1e3a8a] to-[#06b6d4] text-white">
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
               <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
               <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>

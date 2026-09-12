@@ -737,6 +737,7 @@ export const coreProductFAQMap: Record<string, FAQItem[]> = {
   'red-packets': generalProductFAQs,
   envelopes: envelopesFAQs,
   educational: generalProductFAQs,
-  // packaging 沒有專屬 FAQ（只有 packaging-boxes），回退到通用
-  packaging: generalProductFAQs,
+  // 2026-09-12 v9.3 任务 K 遗留修复: packaging 类 SKU (如 food-boxes, category_slug='packaging')
+  // 原回退到通用 FAQ → PDP 取错类目; 改指专属集 (含任务 K 新增「做唔做膠袋」真实回答)
+  packaging: packagingBoxesFAQs,
 };

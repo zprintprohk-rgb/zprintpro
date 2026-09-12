@@ -1011,8 +1011,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         return <JsonLd data={howToJsonLd} />;
       })()}
 
-      {/* 2026-09-11 老板执行提示词 ①: Hero 全宽贴边 (背景色块 w-full 紧贴导航栏, 内容 max-w-1320 居中; 藏青颜色锁定) */}
-      <div className="relative overflow-hidden min-h-[300px] md:min-h-[400px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+      {/* v9.3 补 (方案 A): 色块宽度对齐导航栏色块 — 由满宽改 max-w-[1320px] mx-auto, 与 /blog/ 列表 +
+          /contact/ + PLP + PDP 同款; flex 保证内层垂直居中生效 (原满宽为 M3 批未受指令的新增项) */}
+      <div className="relative w-full overflow-hidden flex max-w-[1320px] mx-auto min-h-[380px] md:min-h-[440px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
         <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
           <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
           <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
