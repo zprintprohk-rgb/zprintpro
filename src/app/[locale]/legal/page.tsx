@@ -317,9 +317,12 @@ export default function LegalPage({ params }: LegalPageProps) {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
+    <main className="min-h-screen bg-[#F2F6FF] py-12">
       <JsonLd data={jsonLd} />
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* v9.3-L4: 外层容器对齐 8 页族 max-w-[1320px] (spec 2);
+          inner max-w-4xl kept as the legal long-form reading column - layout only, zero text change (spec 5) */}
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold text-[#333333] mb-8">{t.h1}</h1>
 
         {/* Section: Cross-border disclosure preamble */}
@@ -327,7 +330,7 @@ export default function LegalPage({ params }: LegalPageProps) {
           <h2 className="text-xl font-semibold text-amber-900 mb-3">
             {t.sectionCrossBorder}
           </h2>
-          <p className="text-gray-800 leading-relaxed">{t.crossBorderBody}</p>
+          <p className="text-[17.5px] leading-[1.75] text-gray-800">{t.crossBorderBody}</p>
         </section>
 
         {/* Section: Seller info (11 required items, group 1) */}
@@ -442,7 +445,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.price}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.price}
               </dd>
             </div>
@@ -450,7 +453,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.additionalFees}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.additionalFees}
               </dd>
             </div>
@@ -458,7 +461,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.paymentMethod}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.paymentMethod}
               </dd>
             </div>
@@ -466,7 +469,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.paymentTiming}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.paymentTiming}
               </dd>
             </div>
@@ -474,7 +477,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.deliveryTiming}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.deliveryTiming}
               </dd>
             </div>
@@ -482,7 +485,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.returns}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.returns}
               </dd>
             </div>
@@ -490,7 +493,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.quantityLimit}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.quantityLimit}
               </dd>
             </div>
@@ -498,7 +501,7 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dt className="text-sm font-medium text-gray-500">
                 {t.fields.techEnv}
               </dt>
-              <dd className="mt-1 text-gray-900 leading-relaxed">
+              <dd className="mt-1 text-[17.5px] leading-[1.75] text-gray-900">
                 {t.values.techEnv}
               </dd>
             </div>
@@ -510,7 +513,7 @@ export default function LegalPage({ params }: LegalPageProps) {
           <h2 className="text-xl font-semibold text-blue-900 mb-3">
             {t.sectionCustoms}
           </h2>
-          <p className="text-gray-800 leading-relaxed">{t.customsBody}</p>
+          <p className="text-[17.5px] leading-[1.75] text-gray-800">{t.customsBody}</p>
         </section>
 
         {/* Section: Contact */}
@@ -518,7 +521,7 @@ export default function LegalPage({ params }: LegalPageProps) {
           <h2 className="text-2xl font-semibold text-[#333333] mb-4">
             {t.sectionContact}
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-4">{t.contactBody}</p>
+          <p className="text-[17.5px] leading-[1.75] text-gray-700 mb-4">{t.contactBody}</p>
           <ul className="space-y-2 text-gray-900">
             <li>
               <strong>{t.contactEmailLabel}:</strong>{' '}
@@ -548,6 +551,7 @@ export default function LegalPage({ params }: LegalPageProps) {
         <p className="text-sm text-gray-500 text-center mt-8">
           {t.lastUpdated}: {t.lastUpdatedDate}
         </p>
+      </div>
       </div>
     </main>
   );

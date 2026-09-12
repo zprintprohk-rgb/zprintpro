@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, siteConfig, getBrandName, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+// v9.3.2 P1: Hero CTA 用共享组件 (与 contact/blog/help-center 同款)
+import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
 import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 
@@ -565,39 +567,68 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       {/* 2026-06-12 Phase B-P1 修复 R08: LocalBusiness schema */}
       <JsonLd data={localBusinessJsonLd} />
       <main className="min-h-screen bg-white">
-        {/* 2026-07-31 K3 拍板 A: Hero 改用 factory-banner.webp 背景 + 深色蒙层 */}
-        <section className="relative text-white py-20 md:py-32 max-w-[1320px] mx-auto overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src="/images/factory/factory-banner.webp"
-              alt="ZprintPro 工厂横幅 · 自家廠房實拍"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0F2A4A]/85 to-[#1E3A5F]/80" />
-          </div>
-          <div className="relative px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
+        {/* v9.3.2 P1: 旧 factory-banner 照片 hero (2026-07-31 设计) 整段拆除 → S1 标准骨架
+            图片资产不丢: /images/factory/factory-banner.webp 仍在下文工厂段作配图 (alt=t.altBanner 未动)
+            文案来源铁律: H1=t.h1 / 副标=t.subtitle 原文迁入, 零新编营销文案 */}
+        <section className="max-w-[1320px] mx-auto">
+          <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white"
+               style={{ background: 'var(--color-royal-navy-grad)' }}>
+            {/* 装饰圆组 (S1 骨架逐字复制, 禁改尺寸) */}
+            <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+              <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+              <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+              <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+              <div className="absolute inset-0 opacity-10"
+                   style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }} />
+            </div>
+            <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
+              {/* ① 面包屑 */}
+              <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+                <a href={`/${locale}/`} className="underline decoration-white/40 hover:text-white">
+                  {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+                </a>
+                <span className="mx-1.5 text-white/40">/</span>
+                <span className="text-white">{locale === 'zh-hk' ? '關於我們' : locale === 'ja' ? '会社概要' : 'About Us'}</span>
+              </nav>
+              {/* ② eyebrow */}
+              <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+                <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+                {locale === 'zh-hk' ? '關於我們' : locale === 'ja' ? '会社概要' : 'About Us'}
+              </p>
+              {/* ③ H1 (t.h1 原文迁入) */}
+              <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{t.h1}</h1>
+              {/* ④ 副标 (t.subtitle 原文迁入) */}
+              <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">{t.subtitle}</p>
+              {/* ⑤ CTA 槽位: 页面既有 WhatsApp 渠道 (共享组件) */}
+              <div className="mt-6 flex flex-wrap gap-3">
+                <WhatsAppCtaButton
+                  href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
+                  label={locale === 'zh-hk' ? 'WhatsApp 即時查詢' : locale === 'ja' ? 'WhatsApp で問い合わせ' : 'Chat on WhatsApp'}
+                  source="about-hero"
+                  locale={locale}
+                />
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Stats Bar */}
-        <section className="py-10 bg-gray-50 border-b border-gray-100">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
+        {/* Stats Bar (v9.3.2 P1: 灰底 → 白底 + 4 格卡片化 S2; 数字与文案原样) */}
+        <section className="py-10 md:py-12 bg-white">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+              <div className="rounded-xl bg-[#F2F6FF] border border-blue-50 px-4 py-5">
                 <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.clients}</div>
                 <div className="text-gray-600 text-sm mt-1">{t.statsLabels.clients}</div>
               </div>
-              <div>
+              <div className="rounded-xl bg-[#F2F6FF] border border-blue-50 px-4 py-5">
                 <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.years}</div>
                 <div className="text-gray-600 text-sm mt-1">{t.statsLabels.years}</div>
               </div>
-              <div>
+              <div className="rounded-xl bg-[#F2F6FF] border border-blue-50 px-4 py-5">
                 <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.products}</div>
                 <div className="text-gray-600 text-sm mt-1">{t.statsLabels.products}</div>
               </div>
-              <div>
+              <div className="rounded-xl bg-[#F2F6FF] border border-blue-50 px-4 py-5">
                 <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.satisfaction}</div>
                 <div className="text-gray-600 text-sm mt-1">{t.statsLabels.satisfaction}</div>
               </div>

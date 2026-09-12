@@ -199,18 +199,42 @@ export default function PaymentMethodsPage({ params }: Props) {
 
   return (
     <main className="bg-gradient-to-b from-white via-gray-50 to-white">
-      {/* Hero */}
-      <section className="max-w-[1320px] mx-auto relative overflow-hidden text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
-        <div className="w-full px-4 sm:px-6 lg:px-8 py-12 text-center">
+      {/* v9.3.2 P2: hero 结构对齐 S1 骨架 (L2 只换了色值, 本批补结构件: 面包屑 + eyebrow + min-h + 装饰圆组)
+          文案来源铁律: H1=section.h1 / 副标=section.subtitle / 徽章=既有 pill 原样保留, 零新编 */}
+      <section className="max-w-[1320px] mx-auto">
+        <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white"
+             style={{ background: 'var(--color-royal-navy-grad)' }}>
+          {/* 装饰圆组 (S1 骨架逐字复制, 禁改尺寸) */}
+          <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
+            <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
+            <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
+            <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
+            <div className="absolute inset-0 opacity-10"
+                 style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }} />
+          </div>
+          <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-12">
+          {/* ① 面包屑 */}
+          <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+            <a href={`/${locale}/`} className="underline decoration-white/40 hover:text-white">
+              {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+            </a>
+            <span className="mx-1.5 text-white/40">/</span>
+            <span className="text-white">{locale === 'zh-hk' ? '付款方式' : locale === 'ja' ? 'お支払い方法' : 'Payment Methods'}</span>
+          </nav>
+          {/* ② eyebrow */}
+          <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+            <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+            {locale === 'zh-hk' ? '付款方式' : locale === 'ja' ? 'お支払い方法' : 'Payment Methods'}
+          </p>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-medium mb-4">
             <span>💳</span>
             <span>{section.heroBadge}</span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">{section.h1}</h1>
-          <p className="text-gray-300 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px] drop-shadow-sm">{section.h1}</h1>
+          <p className="mt-2.5 text-[16.5px] text-white/85 max-w-[640px] leading-relaxed">
             {section.subtitle}
           </p>
-          <div className="flex flex-wrap justify-center gap-3 mt-6 text-sm text-gray-300">
+          <div className="flex flex-wrap justify-start gap-3 mt-6 text-sm text-white/85">
             <span className="inline-flex items-center gap-1.5 bg-white/5 px-3 py-1 rounded-full">
               ⚡ {section.badge1}
             </span>
@@ -221,6 +245,7 @@ export default function PaymentMethodsPage({ params }: Props) {
               🔒 {section.badge3}
             </span>
           </div>
+        </div>
         </div>
       </section>
 
