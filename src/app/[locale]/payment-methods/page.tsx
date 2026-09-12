@@ -200,8 +200,8 @@ export default function PaymentMethodsPage({ params }: Props) {
   return (
     <main className="bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Hero */}
-      <section className="bg-[#1a1a2e] text-white">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+      <section className="max-w-[1320px] mx-auto relative overflow-hidden text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+        <div className="w-full px-4 sm:px-6 lg:px-8 py-12 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-medium mb-4">
             <span>💳</span>
             <span>{section.heroBadge}</span>
@@ -225,7 +225,7 @@ export default function PaymentMethodsPage({ params }: Props) {
       </section>
 
       {/* Online Channels */}
-      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 text-[17.5px] leading-[1.75]">
         <div className="text-center mb-10">
           <span className="text-xs font-semibold tracking-widest text-[#F87314] uppercase">
             {section.onlineLabel}

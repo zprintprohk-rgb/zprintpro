@@ -583,7 +583,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
 
         {/* Stats Bar */}
         <section className="py-10 bg-gray-50 border-b border-gray-100">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
                 <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.clients}</div>
@@ -607,7 +607,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
 
         {/* Brand Story */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6 text-center">{t.storyTitle}</h2>
               <div className="prose prose-lg text-gray-600 leading-relaxed whitespace-pre-line">
@@ -836,7 +836,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
 
         {/* Core Advantages */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.advantageTitle}</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {t.advantages.map((adv, i) => (
@@ -854,8 +854,8 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
 
 
         {/* 2026-07-30 K4 拍板 2: Production Process 5 步 + SVG 占位 (K3 拍图后替换 SVG 为 <img>) */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-20 bg-[#F2F6FF]">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-3 text-center">{t.processTitle}</h2>
             <p className="text-gray-600 text-center mb-10 max-w-2xl mx-auto">{t.processSubtitle}</p>
             <div className="grid md:grid-cols-5 gap-4">
@@ -872,7 +872,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
         </section>
         {/* Team */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.teamTitle}</h2>
             <div className="grid md:grid-cols-3 gap-8">
               {t.teams.map((team, i) => (
@@ -891,7 +891,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
 
         {/* 2026-07-31 K3 拍板 A: 12 Tier A 行业 icon 卡片 (删 MOCK 占位, 不走网上搜真实 logo) */}
         <section className="py-16 md:py-20">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-3 text-center">{t.testimonialTitle}</h2>
             <p className="text-gray-500 text-center mb-10 text-sm">{t.testimonialSubtitle}</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -911,8 +911,8 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
           </div>
         </section>
         {/* 2026-08-19 P0-A: 公司資質塊 (证书编号 + 认证机构 + 有效期, K3 拍板新增) */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:py-20 bg-[#F2F6FF]">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-[17.5px] leading-[1.75]">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-3">{t.credTitle}</h2>
               <p className="text-gray-500 text-sm max-w-2xl mx-auto">{t.credSubtitle}</p>
@@ -944,7 +944,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
         </section>
 
         {/* 2026-08-19 P0-A: Page-end CTA section (K3 拍板) — 集中转化入口 */}
-        <section className="py-16 md:py-20 bg-gradient-to-br from-[#0F2A4A] via-[#1E3A5F] to-[#0F2A4A] relative overflow-hidden">
+        <section className="max-w-[1320px] mx-auto py-16 md:py-20 bg-gradient-to-br from-[#0F2A4A] via-[#1E3A5F] to-[#0F2A4A] relative overflow-hidden">
           {/* 氛围光斑 */}
           <div aria-hidden="true" className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-[#2873F5]/20 blur-[120px]" />
           <div aria-hidden="true" className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-[#1E5AA8]/15 blur-[120px]" />
