@@ -319,11 +319,27 @@ export default function LegalPage({ params }: LegalPageProps) {
   return (
     <main className="min-h-screen bg-[#F2F6FF] py-12">
       <JsonLd data={jsonLd} />
+      {/* v9.3.2 P4: 精简版 S1 Hero (色块 + 面包屑 + H1) — 免 eyebrow / 免 CTA / 免副标 (法务严肃性);
+          H1 = t.h1 原文迁入 (原 h1 移入 Hero 避免双 H1); min-h 降 240/280; 法务文字一字未改 */}
+      <section className="max-w-[1320px] mx-auto">
+        <div className="relative w-full overflow-hidden flex min-h-[240px] md:min-h-[280px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
+          <div className="relative z-[1] w-full flex flex-col justify-center px-4 sm:px-6 lg:px-8 py-10">
+            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+              <a href={`/${locale}/`} className="underline decoration-white/40 hover:text-white">
+                {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+              </a>
+              <span className="mx-1.5 text-white/40">/</span>
+              <span className="text-white">{t.h1}</span>
+            </nav>
+            <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[720px]">{t.h1}</h1>
+          </div>
+        </div>
+      </section>
+
       {/* v9.3-L4: 外层容器对齐 8 页族 max-w-[1320px] (spec 2);
           inner max-w-4xl kept as the legal long-form reading column - layout only, zero text change (spec 5) */}
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-[#333333] mb-8">{t.h1}</h1>
 
         {/* Section: Cross-border disclosure preamble */}
         <section className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-6 mb-8">
