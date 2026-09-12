@@ -279,7 +279,7 @@ export default function TradeProgramPage({ params }: { params: { locale: Locale 
 
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#2873F5] via-blue-600 to-emerald-500 text-white py-12 md:py-20">
+        <section className="max-w-[1320px] mx-auto bg-gradient-to-br from-[#2873F5] via-blue-600 to-emerald-500 text-white py-12 md:py-20">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
               <Briefcase className="w-4 h-4" />

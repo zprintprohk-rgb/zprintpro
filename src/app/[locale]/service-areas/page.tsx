@@ -196,7 +196,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
       
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] text-white">
+        <div className="max-w-[1320px] mx-auto bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] text-white">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl">{t.subtitle}</p>
