@@ -186,8 +186,14 @@ export default function ProductPage({
   // 无表 SKU 只挂 Product 不挂 Offer (禁编造价格)。price_range 是站内真实报价源 (HK$/NT$/¥ 原币种),
   // priceCurrency 显式标注源币种, 不做跨币换算 (schema 价格 = 真实参考价)。
   const priceTable = getPriceTableForSlug(slug);
+  // 2026-09-12 GSC P0 修复: 原逻辑「无价格表 → offerData=null → 不挂 offers」导致 Product schema
+  //   缺 offers, GSC 报「应指定 offers、review 或 aggregateRating」(严重问题, 商品摘要无法展示)。
+  //   review/aggregateRating 因站内 0 真实评价被 §0.23 禁止编造 → 唯一合法出路 = offers。
+  //   修复口径: 无价格表时回退用 price_range (站内真实报价源, 与 v9.2.2 裁决3.3 同口径, 不跨币换算, 不编造);
+  //   两者皆无 → 仍不挂 offers (宁缺不造)。
+  const hasPriceRange = !!((product.price_range || '').match(/[\d.]+/));
   let offerData: { price: string; currency: string } | null | undefined;
-  if (priceTable) {
+  if (priceTable || hasPriceRange) {
     const sym = (product.price_range || '').match(/^(HK\$|NT\$|US\$|\$|¥|￥)/)?.[1] || '';
     const currency = sym === 'NT$' ? 'TWD' : sym === '¥' || sym === '￥' ? 'JPY' : sym === 'US$' || sym === '$' ? 'USD' : 'HKD';
     const num = (product.price_range || '').replace(/,/g, '').match(/[\d.]+/);

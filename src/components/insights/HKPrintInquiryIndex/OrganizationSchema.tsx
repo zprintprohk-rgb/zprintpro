@@ -14,7 +14,9 @@ const ORG_SCHEMA = {
   logo: 'https://zprintpro.com/images/logo-web.png',
   description:
     'Custom printing service for catalogs, packaging, stickers, calendars, paper bags, and educational materials. Serving Japan, USA, UK, and Hong Kong with Asia factory-direct pricing and DHL 2-4 day global delivery.',
-  foundingDate: '2024-Q1',
+  // 2026-09-12 清毒 (v93-v18-cleanse): 撤原 foundingDate 行为 2024 年第一季度
+  //   原因: 与 K3 8/19 拍板口径「扎根香港超過15年」(§0.22 SOP-10 第 3 款保护的拍板数据) 直接矛盾,
+  //   且属 V18 批 (8/14) 自动生成的无人拍板数字 (§0.23)。撤值不改其它字段; 若需保留请 K3 给真实成立年份。
   areaServed: [
     { '@type': 'Country', name: 'Japan' },
     { '@type': 'Country', name: 'United States' },
