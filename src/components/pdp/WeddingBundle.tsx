@@ -50,7 +50,7 @@ const T: Record<string, {
     competitorTitle: "vs 競品對比 · 智印港 6 件 vs 競品 3 件",
     competitorSubtitle: "智印港提供 6 件婚慶整套一站印齊,競品只覆蓋 3 件,客人需分 3 個供應商下單,溝通成本 ×3 + 運費 ×3 + 品質不一致風險。",
     competitors: [
-      { name: "智印港 ZprintPro", items: "6 件 (喜帖 + 信封 + 禮袋 + 席卡 + 桌牌 + 利是封)", total: "HK$ 4,527", pricePerSet: "HK$ 45 / 套", turnaround: "5-10 個工作天" },
+      { name: "智印港", items: "6 件 (喜帖 + 信封 + 禮袋 + 席卡 + 桌牌 + 利是封)", total: "HK$ 4,527", pricePerSet: "HK$ 45 / 套", turnaround: "5-10 個工作天" },
       { name: "e-print", items: "3 件 (喜帖 + 信封 + 禮袋, 席卡 / 桌牌 / 利是封 需另找)", total: "HK$ 3,800", pricePerSet: "HK$ 38 / 套", turnaround: "7-14 個工作天" },
       { name: "intuan", items: "3 件 (喜帖 + 利是封 + 禮袋, 信封 / 席卡 / 桌牌 需另找)", total: "HK$ 4,200", pricePerSet: "HK$ 42 / 套", turnaround: "10-15 個工作天" },
     ],

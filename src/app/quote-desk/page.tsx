@@ -9,7 +9,7 @@
  * 2. SHA-256 密钥门: URL ?k=<secret>, client 端字符串比较
  * 3. 页面 noindex (robots/SEO 屏蔽)
  * 4. 任何位置不出现: e-print / intuan / yate98 / 成本 / anchor / ×1.5 / ×2.2
- * 5. 落款: zh-hk = 智印港 ZprintPro, en/ja = ZprintPro
+ * 5. 落款: zh-hk = 智印港, en/ja = ZprintPro
  */
 
 import { useState, useEffect, useMemo, Suspense } from 'react';
@@ -393,7 +393,7 @@ function QuoteDeskInner() {
 
         {/* Footer */}
         <p className="text-center text-xs text-slate-400 mt-6">
-          {t.freeDesign} · {locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
+          {t.freeDesign} · {locale === 'zh-hk' ? '智印港' : 'ZprintPro'}
         </p>
       </div>
     </div>

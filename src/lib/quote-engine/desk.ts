@@ -497,7 +497,7 @@ export function buildCopy(input: {
   const { productName, configHuman, qty, sellHKD, sellUSD, sellJPY, shipping, locale } = input;
   const currency = locale === 'en' ? '$' : locale === 'ja' ? '¥' : 'HK$';
   const price = locale === 'en' ? sellUSD : locale === 'ja' ? sellJPY : sellHKD;
-  const brand = locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro';
+  const brand = locale === 'zh-hk' ? '智印港' : 'ZprintPro';
 
   if (locale === 'zh-hk') {
     return [

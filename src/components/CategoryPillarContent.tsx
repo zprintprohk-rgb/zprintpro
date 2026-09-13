@@ -410,7 +410,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         {/* 2026-08-19 R3 5 件套: Last Updated 时间戳 (Freshness signal for GSC) */}
         {data.lastUpdated && (
           <p className="mt-10 pt-4 border-t border-gray-200 text-xs text-gray-500">
-            最後更新 / Last updated / 最終更新: <time dateTime={data.lastUpdated}>{data.lastUpdated}</time> · 智印港 ZprintPro
+            最後更新 / Last updated / 最終更新: <time dateTime={data.lastUpdated}>{data.lastUpdated}</time> · 智印港
           </p>
         )}
       </div>

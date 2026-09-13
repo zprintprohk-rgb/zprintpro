@@ -20,9 +20,9 @@ export function getWebLogoUrl(locale: Locale): string {
 }
 
 export function getWebLogoAlt(locale: Locale): string {
-  // 2026-08-10 §0.15 升级: ja locale ジープリント ZprintPro (双品牌, ja 公式 per §13.16.1)
-  if (locale === 'zh-hk') return '智印港 ZprintPro';
-  if (locale === 'ja') return 'ジープリント ZprintPro';
+  // ja 品牌名: 2026-09-01 K3 单品牌分层拍板 → ja = 'ZprintPro' (原 2026-08-10 双品牌口径已废)
+  if (locale === 'zh-hk') return '智印港';
+  if (locale === 'ja') return 'ZprintPro';
   return 'ZprintPro';
 }
 
@@ -765,7 +765,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成重复品牌 (历史 bug)。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = getBrandName(locale);
 
@@ -840,7 +840,7 @@ export function generateProductMetadata(
   // Title: 50-60字符，含核心關鍵詞
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成重复品牌 (历史 bug)。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
@@ -1339,7 +1339,7 @@ export function generateProductImageJsonLd(
   };
 
   const alt = locale === 'zh-hk'
-    ? `${productName} 香港印刷高清產品圖 | 智印港 ZprintPro`
+    ? `${productName} 香港印刷高清產品圖 | 智印港`
     : locale === 'ja'
     ? `${productName} 印刷 高画質商品画像 | ZprintPro`
     : `${productName} custom printing high-resolution product image | ZprintPro`;
@@ -1351,7 +1351,7 @@ export function generateProductImageJsonLd(
     : `${productName} - ZprintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'
-    ? '© 智印港 ZprintPro 版權所有'
+    ? '© 智印港 版權所有'
     : locale === 'ja'
     ? '© ZprintPro 無断転載禁止'
     : '© ZprintPro All Rights Reserved';

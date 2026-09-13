@@ -1159,7 +1159,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         />
                       </div>
                       {/* 2026-08-05 K3 12:24 拍板: 标题用 getProductDisplayTitle (长尾词+核心词版) 替代 getProductTitle (短名版)
-                          e.g. flyer blog sidebar 显示 "A4傳單印刷印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro" 而不是 "A4傳單印刷"
+                          e.g. flyer blog sidebar 显示 "A4傳單印刷印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港" 而不是 "A4傳單印刷"
                           line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断)
                           2026-08-05 K3 14:00 拍板: 标题字号放大 1.5 倍 (11px → 17px) 配合 6 visible
                           (整 17px 适配 sidebar 280px 宽度, line-clamp-1 单行, 长尾词标题"·品质保证·智印港" 仍能展示) */}

@@ -42,9 +42,9 @@ export const RUSH = {
 };
 
 export const ALT = {
-  hero: "即日印刷-智印港工廠Heidelberg印刷機-智印港 ZprintPro",
-  heidelberg: "即日印刷-智印港工廠Heidelberg印刷機-智印港 ZprintPro",
-  hpindigo: "即日印刷-智印港HP Indigo數碼印刷機-智印港 ZprintPro",
+  hero: "即日印刷-智印港工廠Heidelberg印刷機-智印港",
+  heidelberg: "即日印刷-智印港工廠Heidelberg印刷機-智印港",
+  hpindigo: "即日印刷-智印港HP Indigo數碼印刷機-智印港",
 };
 
 // 埋点类型（与现有 window.zpTrack 基建对齐）

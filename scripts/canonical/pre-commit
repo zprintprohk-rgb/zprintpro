@@ -88,6 +88,22 @@ else
   echo "⚠️ Node not found, skipping regression guard"
 fi
 
+# 3.5 门童 #3 全量基线闸门 (K3 2026-09-13 批准方案 C)
+# 背景: 步骤 3 的 --commit 只扫 staged diff → 存量双品牌天然豁免 (实测 9/13 仍有 150 处)。
+# 本步全量扫 src/ + messages/, 与 .hermes/brand-baseline.json 基线比对, 任何新增即拦。
+echo "3️⃣.5  门童 #3 品牌分层 全量基线闸门..."
+if command -v node &> /dev/null; then
+  node scripts/check-brand-baseline.mjs
+  EXIT_CODE=$?
+  if [ $EXIT_CODE -ne 0 ]; then
+    echo ""
+    echo "❌ 门童 #3 拦截: 双品牌新增命中 (基线只许递减)"
+    echo ""
+    echo "💡 修法: 按 locale 单品牌分层 (zh-hk=智印港 / en·ja=ZprintPro), 清掉新增命中后重跑"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

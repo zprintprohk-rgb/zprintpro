@@ -1303,7 +1303,7 @@ const lpApparelShoppingBag: BlogPostMeta = {
 };
 
 // 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品 (Tier A) — 純文字・v7 報價型 (5 檔實價)
-// 双品牌宪法 (2026-07-21): zh-hk = 智印港 ZprintPro, en/ja = ZprintPro
+// 双品牌宪法 (2026-07-21): zh-hk = 智印港, en/ja = ZprintPro
 const lpGangRunCardBoxesHK: BlogPostMeta = {
   slug: 'gang-run-card-boxes-hk-guide',
   categoryKey: 'packaging',

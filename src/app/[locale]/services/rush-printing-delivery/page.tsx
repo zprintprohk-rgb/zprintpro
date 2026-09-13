@@ -173,7 +173,7 @@ export default function RushDeliveryPage({ params }: Props) {
 
       {/* Last Updated + 内部链接 — 8/19 5 件套保留 (F0 红线) */}
       <section className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
-        <p className="mb-3"><strong>最後更新：</strong>2026 年 8 月 26 日 · 智印港 ZprintPro（彩龍印刷旗下）</p>
+        <p className="mb-3"><strong>最後更新：</strong>2026 年 8 月 26 日 · 智印港（彩龍印刷旗下）</p>
         <p className="mb-2"><strong>相關服務：</strong></p>
         <ul className="space-y-1 list-disc list-inside">
           <li><a href="/zh-hk/category/posters/" className="text-[#2873F5] hover:underline">海報印刷</a> · A1/A2 即日速遞，順豐港九新界翌日中午到</li>

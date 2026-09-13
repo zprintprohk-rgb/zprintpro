@@ -131,7 +131,7 @@ function QuoteDeskAllUnlocked() {
         </div>
 
         <p className="text-center text-xs text-slate-400 mt-6">
-          智印港 ZprintPro · Boss Internal View
+          智印港 · Boss Internal View
         </p>
       </div>
     </div>

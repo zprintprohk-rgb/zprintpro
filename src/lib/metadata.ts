@@ -33,7 +33,7 @@ export function createMetadata(seo: SEOMetadata, locale: Locale): Metadata {
       url: seo.canonical,
       // 2026-07-22 v6: 智印港 是 zh-hk 合法品牌词 (AGENTS.md §1 v2 / §13.10 NAP 脱钩)
       // en/ja 不写中文品牌词, 保持 'ZprintPro' 纯英文
-      siteName: locale === 'zh-hk' ? 'ZprintPro 智印港' : 'ZprintPro',
+      siteName: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
       images: [{ url: seo.ogImage, width: 1200, height: 630 }],
       locale: hreflangMap[locale],
       type: seo.ogType === 'product' ? 'website' : seo.ogType,

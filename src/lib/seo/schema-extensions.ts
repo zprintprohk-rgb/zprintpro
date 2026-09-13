@@ -436,7 +436,7 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
     author,
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/gsc-logo.png` },
     },
     mainEntityOfPage: {
@@ -510,7 +510,7 @@ export function generateCategoryItemListJsonLd(
           // GSC「商家信息」要求: 提供全局品牌标识符
           brand: {
             '@type': 'Brand',
-            name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+            name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
           },
           // 2026-08-04 K3 P0-2: 删 aggregateRating 假数据 (K3 v2 §3.3 约束 4: 无真实评价数据, 不可编造)
           // 7/13 注释加的 "公司级综合评分 4.9/128" 是假数据, 7/28 v2.1 拍板删但 schema-extensions.ts 漏改
@@ -600,11 +600,11 @@ export function generateContactPageJsonLd(
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/images/gsc-logo.png`,
     },
@@ -636,7 +636,7 @@ export function generateAboutPageJsonLd(
     mainEntity: {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/images/gsc-logo.png`,
       foundingDate,
@@ -676,7 +676,7 @@ export function generateCoreWebPageJsonLd(
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
       url: SITE_URL,
     },
   };
