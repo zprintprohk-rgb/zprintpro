@@ -88,6 +88,33 @@ function checkTitleLength(content, file) {
   return hits;
 }
 
+// 自定义检查: locale 作用域扫描 (2026-09-13, 取代 src/data 整树豁免)
+//  - I18N_POLLUTION: 仅当命中落在 **zh-hk 字段** 内才算污染 (ja 文本用「会」等汉字合法)
+//  - I18N_CURRENCY : 仅 zh-hk 字段要求统一 HK$ (en/ja 字段出现 USD/¥ 合法)
+function scanLocaleScoped(content, file, rule, onlyLocales) {
+  const hits = [];
+  const re = new RegExp(rule.pattern.source, rule.pattern.flags.includes('g') ? rule.pattern.flags : rule.pattern.flags + 'g');
+  let m, count = 0;
+  while ((m = re.exec(content)) !== null) {
+    if (m.index === re.lastIndex) re.lastIndex++;
+    if (count >= common.MAX_HITS_PER_RULE) break;
+    const loc = common.resolveLocale(content, m.index, file);
+    if (!loc || !onlyLocales.includes(loc)) continue;      // 非目标 locale (或判定不出) -> 不报
+    if (common.isCommentLine(content, m.index)) continue;
+    hits.push({
+      file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
+      line: common.findLineNumber(content, m.index),
+      match: `${m[0]} (locale=${loc})`,
+      severity: rule.severity,
+      ruleId: rule.id,
+      ruleName: rule.name,
+      fix: rule.fix,
+    });
+    count++;
+  }
+  return hits;
+}
+
 async function scan(files) {
   const allHits = [];
   for (const file of files) {
@@ -98,11 +125,20 @@ async function scan(files) {
       content = require('fs').readFileSync(file, 'utf-8');
     } catch (e) { continue; }
 
-    // 标准规则扫描
-    for (const rule of RULES.filter(r => r.id !== 'I18N_TITLE_LENGTH')) {
+    // 标准规则扫描 (排除需要自定义逻辑的三条)
+    const customIds = ['I18N_TITLE_LENGTH', 'I18N_POLLUTION', 'I18N_CURRENCY'];
+    for (const rule of RULES.filter(r => !customIds.includes(r.id))) {
       const hits = common.scanRule(content, file, rule);
       allHits.push(...hits);
     }
+
+    // locale 作用域: 简体字残留 -> 只看 zh-hk 字段
+    const pollution = RULES.find(r => r.id === 'I18N_POLLUTION');
+    allHits.push(...scanLocaleScoped(content, file, pollution, ['zh-hk']));
+
+    // locale 作用域: 币种统一 -> 只看 zh-hk 字段
+    const currency = RULES.find(r => r.id === 'I18N_CURRENCY');
+    allHits.push(...scanLocaleScoped(content, file, currency, ['zh-hk']));
 
     // title 长度自定义检查
     if (file.includes('sku-seo-data') || file.includes('seo.ts') || file.includes('page.tsx')) {

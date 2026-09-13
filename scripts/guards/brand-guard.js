@@ -57,6 +57,43 @@ const RULES = [
   },
 ];
 
+// locale 作用域的品牌混用检查 (2026-09-13, 取代 src/data 整树豁免)
+//  矩阵 (K3 9/1 02:54 §13.16 v2 + 2026-09-13 ja 收口为 ZprintPro):
+//    zh-hk 字段: 不得出现 ZprintPro / ジープリント   -> hit
+//    en   字段: 不得出现 智印港 / ジープリント        -> hit
+//    ja   字段: 不得出现 智印港 (ZprintPro 合法; ジープリント 单独出现合法) -> hit
+const BRAND_TOKENS = [
+  { re: /ZprintPro/g, badIn: ['zh-hk'] },
+  { re: /智印港/g, badIn: ['en', 'ja'] },
+  { re: /ジープリント/g, badIn: ['zh-hk', 'en'] },
+];
+
+function scanLocaleMismatch(content, file, rule) {
+  const hits = [];
+  let count = 0;
+  for (const tok of BRAND_TOKENS) {
+    tok.re.lastIndex = 0;
+    let m;
+    while ((m = tok.re.exec(content)) !== null) {
+      if (count >= common.MAX_HITS_PER_RULE) break;
+      if (common.isCommentLine(content, m.index)) continue;
+      const loc = common.resolveLocale(content, m.index, file);
+      if (!loc || !tok.badIn.includes(loc)) continue;
+      hits.push({
+        file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
+        line: common.findLineNumber(content, m.index),
+        match: `${m[0]} (locale=${loc})`,
+        severity: rule.severity,
+        ruleId: rule.id,
+        ruleName: rule.name,
+        fix: rule.fix,
+      });
+      count++;
+    }
+  }
+  return hits;
+}
+
 async function scan(files) {
   const allHits = [];
   for (const file of files) {
@@ -68,6 +105,11 @@ async function scan(files) {
     } catch (e) { continue; }
 
     for (const rule of RULES) {
+      // BRAND_LOCALE_MISMATCH 走 locale 作用域自定义检查 (逐字面扫描在多语言文件上必然误报)
+      if (rule.id === 'BRAND_LOCALE_MISMATCH') {
+        allHits.push(...scanLocaleMismatch(content, file, rule));
+        continue;
+      }
       const hits = common.scanRule(content, file, rule);
       allHits.push(...hits);
     }
