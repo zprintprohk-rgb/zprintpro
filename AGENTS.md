@@ -3,6 +3,23 @@
 
 ## §0.0 最高规则：禁做品类 — 名片印刷 (K3 2026-09-08 01:15 终裁, 凌驾一切旧规则)
 
+> ## ⚠️ §0.0 已于 2026-09-12 被 K3 新拍板**解禁**（本节历史正文保留不改写, per §0.34.2）
+>
+> **K3 2026-09-12 拍板原话**：「前几天有一个小单名片，昨天一个小单名片，昨天有个英国地产公司名片，下单了，400 多美金……国外的名片是可以接的，**不拒绝名片了**，有单就接」「今天还有一个美国的客户问名片有 A4 三折页」「在名片上我稍改观了一些了」
+>
+> **解禁范围（已生效 · 接单层）**：
+> 1. 名片 / 咭片 / business card **订单一律接单, 不再拒绝**（含海外地产、律所、专业服务类 B2B 询盘）。
+> 2. 名片询盘正常报价, 走既有 WhatsApp / 线下收款流程, 与其它品类同权。
+> 3. `scripts/check-bc-ban.mjs` 由「阻断式门禁」降级为「**报告式盘点**」(exit 0, 不再阻断 push)；名片词出现在**新增内容**不再构成 push 阻断项。
+> 4. 「名片」作为**业务词**可正常出现在客服话术、报价单、案例描述与内容中；原 §11.9「绝对禁词」口径随本条失效。「智印印港」错字禁令、外部竞品名禁令**不受影响, 继续有效**。
+>
+> **尚未拍板（不得擅自执行, 待 K3 选项裁决）**：
+> - **展示层 / SEO 层是否恢复或新建名片页面**：v22 (7347c503) 已把 6 个名片 SKU 1:1 改名贺卡（premium / thick-400g / foil / spot-uv / matte / rounded-corner greeting-cards），301 承接、sitemap、内链均以贺卡为落点。是否 (a) 维持现状只接单 / (b) 新建独立名片品类页 + SKU / (c) 折中新增 1 个「名片 · 咭片印刷」承接落地页而**不动**已部署贺卡资产 —— **待 K3 一句话裁决**。
+> - 裁决前, 任何执行层**不得**删除或改写既有贺卡资产、**不得**改动 middleware 301 映射、**不得**批量改写含「卡片」的历史内容（该内容现为**资产**, 见 `.hermes/logs/v93-L-checkpoint.md` 2026-09-12 查案记录：案例页 8 行名片语境 + 全站活文件 40+ 处「卡片」+ GSC 有「咭片 / 咭片印刷 / 印咭片」展示）。
+>
+> **冲突规则**：本条与下方历史正文冲突时以本条为准（K3 最新拍板 > AGENTS.md 旧条款, per §0.34.2 冲突优先级）。
+
+
 > **条款**：**zprintpro.com 不做名片印刷（business cards / 咭片 / 名刺 / name cards）。**
 > v22 (7347c503) 已将全部名片 SKU 1:1 改名为贺卡（greeting-cards），该裁决为终局：任何车道、任何 Agent、任何会话都**不得**把名片重新引入站内——包括但不限于：产品数据、SEO title/description/H1/keywords/FAQ、分类内容、sitemap、manifest、案例、博客、内链、图片 alt、重定向目标。
 > 例外（允许保留的唯一形态）：**301/308 重定向**——旧名片 URL 必须永久收拢到贺卡或相邻品类（见 §0.0.1），这是唯一允许「名片」字样出现的地方（重定向源 URL）。
@@ -20,8 +37,8 @@
 
 ### §0.0.3 执行层承接（per §0.34, K3 9/8 05:58 起生效）
 1. 本条款对**任何执行层**生效，含新执行层 autoclaw / deepseek hermes——M3 出局不豁免，本条款随规则迁移继续生效。
-2. 新执行层开工自检第 1 问 = 名片扫描（统一入口技能 `zprintpro-content-standards/SKILL.md` §0）：任何 SKU/SEO/FAQ/博客产出前先对照禁止行为清单，命中即停，承接主品类 = 贺卡 greeting-cards。
-3. push 前兜底扫描（§0.0.1 第 3 条）由仓库门童脚本 `scripts/check-bc-ban.mjs`（2026-09-09 补建落地）+ 新执行层验收命令承接，命中 > 0 阻断 push。
+2. 新执行层开工自检（**2026-09-12 起口径变更**）：名片**已解禁**，开工自检第 1 问不再是「扫名片禁词」，而是「本批是否触及名片**展示层/SEO 层**？触及则须先确认 K3 已就 §0.0 解禁块 (a)/(b)/(c) 选项拍板」。未拍板前仅保留两条禁止：**不得删改既有贺卡资产**、**不得改动 middleware 301 映射**。
+3. push 前扫描脚本 `scripts/check-bc-ban.mjs` **已于 2026-09-12 降级为「报告式盘点」**（退出码恒 0，不再阻断 push）；保留用途 = 运营盘点名片语境内容分布。统一入口技能 `zprintpro-content-standards/SKILL.md` §0 的「名片扫描自检」须同步改口径（待办）。
 4. 本节历史记录中的执行者称谓为史实不改写（per §0.34.2）。
 
 ## §0.34 执行层迁移：M3 出局 → autoclaw + deepseek hermes (K3 2026-09-08 05:58 拍板, 跨项目 P0 强制级)
@@ -29,7 +46,7 @@
 > **核心**: M3 已出局（K3 9/8 05:58 拍板"M3已出局，能力太弱了"）。执行层 = **autoclaw + deepseek hermes**。原项目全部有用规则 / 自进化能力 / 技能已迁移到新执行层。
 
 ### §0.34.1 统一入口（新执行层开工前必读第 0 优先级）
-1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 6 问（第 1 问 = §0.0 最高规则名片扫描）/ 最高规则速查 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 自动化窗口速查 / 执行纪律 / 自进化 4 步 SOP。
+1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 6 问（**第 1 问已变更为 2026-09-12 口径**：本批是否触及名片展示层/SEO 层 → 触及须先确认 K3 已裁决 §0.0 解禁块 (a)/(b)/(c)；名片本身已解禁，不再扫禁词）/ 最高规则速查 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 自动化窗口速查 / 执行纪律 / 自进化 4 步 SOP。
 2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则 v4 写满原则（K3 9/9 06:18 最新，四元素 + 写满区 50-54 / ≥55 满格禁加 / 长尾 3 筛选 / 冻结 2-4 周）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
 3. **既有 7 技能保留**: zprintpro / zprintpro-blog-writing-sop / zprintpro-content-depth-page-sop / zprintpro-design-tokens / zprintpro-release-pipeline / zprintpro-sku-detail-sop / zprintpro-verify-probes（全部位于 `.openclaw-autoclaw\skills\`）。
 
@@ -217,6 +234,7 @@ orchestrator 收到 ack 后:
 
 **必含 (强制)**:
 - ✅ 任何报告必含"数据来源"行, 格式: `数据来源: <表名/查询/事件>`
+- ✅ **批量生成的数据文件必过「编造 lint」（2026-09-12 补，源于 V18 清毒教训）**：任何由生成器产出或批量填充的数据文件（如 `src/data/products.ts` 的 V18 SEO/GEO 块、`src/data/sku-seo-data.ts`）commit 前必跑 `node scripts/check-brand-mentions.mjs --strict`（第三方品牌名 / 假评审人 `Daniel T.`·`Maya L.` / 无人拍板数字 `Founded 2024`·`50,000+ brands` 须 0 命中）；**派生文件禁手搓（SOP-5）**：改源头（如 `zprintpro-sku-seo-data.csv`）再跑生成器（`scripts/csv-to-sku-seo.mjs`），**冲突时也回源头重新生成**，禁 `--ours/--theirs` 手选
 - ✅ baseline / 关键数字必标"待 XX 校准"或"已 XX 校准" + 校准日期
 - ✅ 任何撤回声明必含原报告 commit ID + 撤回日期
 
@@ -562,7 +580,7 @@ node scripts/check-i18n.js
 
 ## 8. 7 大"绝对不要做"清单
 
-1. ❌ 不要用"智印印港" (错字竞品词) / 任何外部竞品名;「智印港」是自有品牌 (zh-hk 专用),允许且必须使用
+1. ❌ 不要用"智印印港" (错字竞品词) / 任何外部竞品名;「智印港」是自有品牌 (zh-hk 专用),允许且必须使用 —— **本条机审 = `node scripts/check-brand-mentions.mjs --strict`（2026-09-12 建，A 类命中即阻断 push）**；背景：V18 批（8/14 自动生成）把生图提示词的品牌参照派生进了 seoTitle/metaTitle/aiSearchSummary 等对外字段，累积 Tiffany 33 / Mohawk 45 / Crane & Co 27 等 156 处 + 假评审人 88 处，因**该规则此前零门禁**才得以存活；已于 2026-09-12 按「留壳清值」全批清毒（696 行 / 87 SKU × 8 字段族）
 2. ❌ 不要在 user-facing 文本里出现 GBK 乱码 (中文必须 UTF-8)
 3. ❌ 不要漏 hreflang (8 locale 必须完整)
 4. ❌ 不要让 /app/ 目录被提交 (会冲突 Cloudflare 构建)
@@ -718,7 +736,7 @@ For image tasks, prefer the model's native visual capability when the image is a
 
 - **业务子类目 (2026-08-17 K3 战略修正新增)**: 贺卡 / 喜帖 / 台卡 / 酒水牌 / 感谢卡 / 名牌卡 / 邀请函 — 新建 `greeting-cards` + `wedding-invitations` + `place-cards` 三个类目后, 业务子类目页面可写"咭片/名片"等业务子类目用法, 内部链接到对应类目, 主营误用禁词豁免
 - **纸卡 (paper card / cardstock)**: 保留为物理材质, 是 FSC 咭片/纸卡行业术语, 不是 §11 主营误用
-- ❌ **绝对禁词 (2026-08-17 修订)**: 咭片 (作为业务子类目用法) / 名片 / business cards / 名刺 (ja 行业术语提及 8/17 拍板保留 ja 客户案例) = 主营误用禁, 业务子类目豁免
+- ~~❌ **绝对禁词 (2026-08-17 修订)**: 咭片 / 名片 / business cards / 名刺~~ → **2026-09-12 K3 解禁作废**：名片/咭片/business cards/名刺 现为**正当业务词**，可正常用于 SEO 字段、产品文案、案例、客服话术（口径 SSoT = §0.0 解禁块）。「智印印港」错字禁令与外部竞品名禁令**继续有效**。
 - 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现 主营误用 (主营品类 5 误用 + 业务子类目未链接豁免)
 - 咭片/名片 业务子类目用法 = 链接到 `greeting-cards` / `wedding-invitations` + `place-cards` 类目, 主页可写
 - 详见 `docs/k3-greeting-cards-strategy-2026-08-17.md` (M3 战略思考 + 联网核实数据) + `docs/2026-09-01-k3-pillar-architecture-restructure.md` (主营架构 v2 决策文档)
@@ -810,7 +828,7 @@ v3 增补内容 (K3 8/20-8/23 拍板):
 - **P0 主推**（先铺）: stickers / flyers / packaging / paper-bags
 - **P1 辅助**（次铺）: posters / books / educational / menus / red-packets / calendars
 - **P2 长尾**（按需）: banners / envelopes / japan-doujin
-- **禁区**（永不写）: business-cards（§11 主营品类约束）
+- ~~**禁区**（永不写）: business-cards~~ → **2026-09-12 解禁**：名片可写、可建页；展示层具体走 (a)/(b)/(c) 哪条待 K3 裁决（见 §0.0 解禁块）
 
 ### 13.4 纯文字博客硬约束（v2，2026-07-05 修订）
 
@@ -841,7 +859,7 @@ v3 增补内容 (K3 8/20-8/23 拍板):
 - ✅ **写链接前** 必须先在 matrix `valid_internal_links` 清单里核对
 - ✅ **写链接后** 必须 curl 验证每个内链返回 200
 - **有效路由模式**: `/{locale}/category/<slug>/`、`/{locale}/product/<slug>/`、`/{locale}/blog/<slug>/`、`/{locale}/quote/`、`/{locale}/contact/` 等（详见 context.md §8）
-- **禁止模式**: 无 locale 前缀、`/products/`（错路径，正确是 `/product/`）、未在 products.ts 注册的 slug、`/category/business-cards/`（禁区）
+- **禁止模式**: 无 locale 前缀、`/products/`（错路径，正确是 `/product/`）、未在 products.ts 注册的 slug；~~`/category/business-cards/`（禁区）~~ → **2026-09-12 解禁**（旧 URL 301 映射在 K3 裁决展示层选项前不动）
 
 ### 13.7 矩阵跟踪
 
