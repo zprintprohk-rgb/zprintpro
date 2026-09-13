@@ -3463,100 +3463,112 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
   },
   "thick-greeting-cards-400g": {
     "name": {
-      "zh-hk": "超厚賀卡 (400g)",
-      "en": "Thick 400g Greeting Cards",
-      "ja": "厚口グリーティングカード (400g)"
+      "zh-hk": "超厚名片 (400g)",
+      "en": "Thick 400g Business Cards",
+      "ja": "厚口名刺 (400g)"
     },
     "seo": {
       "zh-hk": {
-        "title": "400g 超厚賀卡印刷 厚卡質感 100張起 HK$120起 | 智印港",
-        "description": "400g 超厚賀卡印刷：超厚實手感、挺度十足，配燙金、壓紋、啞膠／光膠覆膜工藝，高級質感盡現，另可選壓紋、燙金升級工藝。127×178mm 標準，100 張起印 HK$120 起。適用聖誕卡、新年卡、企業賀卡及紀念卡，可印 LOGO 與品牌配色，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
-        "h1": "400g 超厚賀卡定制 | 厚實手感・高級質感",
-        "keywords": ["400g賀卡", "超厚賀卡", "厚卡賀卡", "燙金賀卡", "壓紋賀卡", "聖誕卡定制", "新年賀卡", "婚禮賀卡", "高級賀卡印刷", "厚紙賀卡"],
-        "body": "超厚賀卡選用 400g 高克重銅版紙，拿在手中厚實有份量，挺度極佳、手感沉穩，傳遞尊榮與儀式感，特別適合聖誕卡、新年卡、婚禮邀請與感謝卡等里程碑與重要場合。厚身的質感本身就象徵重視與誠意，讓賀卡印刷不再只是薄薄一張紙，而是一件值得收藏的禮物。\n\n商務客戶在年度答謝、開幕誌慶與重要時刻，常以超厚賀卡搭配燙金、壓紋等工藝強化質感；啞膠或光膠覆膜保護表面，四色柯式印刷在高克重紙上顯色飽滿穩定。標準尺寸 127×178mm，即使多次翻閱依然保持挺括，適合企業定制、婚慶與節日禮品場景批量訂製，免費設計確認與樣品檢視，確認挺度、色調與工藝後先投入生產，開印更有把握。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：超厚賀卡報價 HK$120-220/100張，最低訂量 100 張，以港幣計價，大批量另有階梯優惠，歡迎查詢批量報價。"
+        "title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | ZprintPro",
+        "description": "燙金名片",
+        "h1": "新年名片",
+        "keywords": [
+          "400g名片"
+        ],
+        "body": "厚紙名片"
       },
       "en": {
-        "title": "Thick 400g Greeting Cards 100pcs Emboss | ZprintPro",
-        "description": "Thick 400g greeting cards: foil, emboss & matte lamination, heavy stock. 127×178mm, from 100 pcs HK$120. Xmas, New Year & corporate. Free proof, quick quote.",
-        "h1": "Thick 400g Greeting Cards | Ultra-Heavy Premium Stock",
-        "keywords": ["thick greeting cards", "400gsm greeting cards", "heavyweight christmas cards", "luxury holiday cards", "foil embossed cards", "premium wedding cards", "thick cardstock cards", "bulk thick cards", "embossed greeting cards", "high end greeting cards"],
-        "body": "Thick 400g greeting cards use heavyweight cardstock with a substantial, rigid feel that conveys prestige before the envelope is even opened. The extra weight signals care and importance, which is why milestone occasions and luxury brands keep coming back to it.\n\nWedding invitations, New Year cards, and milestone celebrations — anniversaries, graduations, and significant birthdays — all benefit from a card that feels like an object rather than a slip of paper. When guests hold a 400g invitation, the event itself feels more considered.\n\nFor brands, the heavyweight stock makes a memorable leave-behind in gifting programs and executive correspondence. Add foil stamping, spot UV, or embossing and the card layers on even more luxury, turning a simple message into a tactile statement piece.\n\nEach card is printed on 400g ultra-thick coated paper — about 1.3 times the thickness of a standard card — in the 127×178mm standard size. Four-color offset printing with ICC color management keeps colors rich and consistent, and finishing layers such as a matte or gloss film, foil stamping, or embossing can be added — each card passes a free die-cut check before production.\n\nPricing is HK$120-220 per 100 cards, with a 100-card minimum order. A free design check and free sample are included, paper is FSC certified, and production follows ISO 9001 quality control. Cards ship direct from our Asia factory via DHL Express in 2-4 days worldwide, and a free design mockup plus a 30-second AI quote with no setup fees get you started.\n\n**FAQ**\n\n**Q1: What makes 400g paper special?** It is roughly 1.3 times the thickness of standard cardstock, giving a rigid, prestigious feel.\n\n**Q2: Can I add foil, UV, or embossing?** Yes, foil stamping, spot UV, and embossing are all available options.\n\n**Q3: Is the size compatible with standard holders?** Yes, the 127×178mm format fits regular card sleeves and holders.\n\nReady to order your thick cards? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+        "title": "Thick 400g Business Cards | Foil & Emboss | ZprintPro",
+        "description": "壓紋名片",
+        "h1": "婚禮名片",
+        "keywords": [
+          "400g名片"
+        ],
+        "body": "thick business cards"
       },
       "ja": {
-        "title": "厚口400gカード印刷 100枚〜 箔押し・特急 | ZprintPro",
-        "description": "厚口400gグリーティングカード印刷：重厚なプレミアム用紙、箔押し、エンボス、ラミネート加工に対応し、サイズ・型抜きもオーダー可能。127×178mm標準、100枚〜HK$120〜。クリスマス・年賀・法人記念カードに最適、特急対応可能。無料デザイン校正、即日見積もり、大量注文は割引対応、納期相談可。",
-        "h1": "厚口400gグリーティングカード | 重厚なプレミアム用紙",
-        "keywords": ["厚口 カード", "400g カード", "厚紙 グリーティングカード", "高級 クリスマスカード", "箔押し カード", "エンボス カード", "結婚式 カード", "記念 カード", "挨拶状 高級", "プレミアム カード 印刷"],
-        "body": "ZprintPro の厚手 400g グリーティングカードは、通常のカード紙を大きく上回る 400g の超厚銅版紙を使用し、手に取った瞬間に伝わる重厚感と高級感が魅力です。厚みは一般的なカードの約 1.3 倍で、ぐらつきのない安定したコシがあります。\n\nクリスマスカードや年賀状はもちろん、結婚式の招待状、七五三などの節句行事、記念行事など、特別な場面にふさわしい一枚です。厚手の紙は箔押し・部分 UV・エンボスなどの加工とも相性が良く、さらに華やかな仕上がりにできます。\n\nグリーティングカード 印刷で「重みのあるプレゼント感」を演出したい方に、400g の厚みは一目で伝わる差別化ポイントです。薄いカードと並べたときの存在感は、受け取った方の記憶に残ります。\n\n標準サイズは 127×178mm。四色オフセット印刷による細かな網点と ICC カラーマネジメントで、色をロットをまたいで安定させます。マット／グロスラミネート、箔押し、エンボス（型押し）から仕上げを選択でき、生産前に無料の型抜きチェックを行います。\n\n料金は 100 枚あたり HK$120〜220、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセット印刷に切り替えます。FSC 認証紙を使い、ISO 9001 品質管理の下で生産。アジアの自社工場から DHL Express で 2〜4 日でお届けします。\n\n原稿仕様：解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。箔押しやエンボスの位置は K100 の黒版で別途ご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 400g の紙はどのくらい厚いですか？** 一般的なカード紙の約 1.3 倍の厚みがあり、手に持ったときの重厚感が大きく異なります。\n\n**Q2: 加工オプションは何がありますか？** マット／グロスラミネート、箔押し、エンボスをお選びいただけます。\n\n**Q3: お届けまでどのくらいかかりますか？** 標準の納期は 3〜5 営業日、お急ぎの場合は 24〜48 時間以内にも対応可能です。完成後は DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n大切な場面を重厚な一枚で飾りたい方は、無料サンプルで 400g の厚みをご実感ください。ZprintPro が日本語対応でお見積もりを承ります。"
+        "title": "厚口400g名刺印刷 | 箔押し・エンボス | ZprintPro",
+        "description": "商務名片定制",
+        "h1": "高級名片印刷",
+        "keywords": [
+          "400g名片"
+        ],
+        "body": "400gsm business cards"
       }
     },
     "faqs": [
       {
-        "q": "400g 超厚賀卡適合什麼場合？",
-        "a": "厚實手感帶來尊榮感，特別適合聖誕、新年、婚禮邀請與企業里程碑等需要高級質感的場合。"
+        "q": "heavyweight corporate business cards",
+        "a": "luxury holiday cards"
       },
       {
-        "q": "超厚卡可以做壓紋或燙金嗎？",
-        "a": "可以。400g 卡紙適合燙金、局部 UV 與壓紋（embossing），立體層次更明顯。"
+        "q": "foil embossed cards",
+        "a": "premium business cards"
       },
       {
-        "q": "起訂量與交期？",
-        "a": "100 張起訂，生產約 2-3 個工作天，DHL 全球 2-4 天送達。"
+        "q": "thick cardstock cards",
+        "a": "bulk thick cards"
       }
     ],
     "imageAlt": {
-      "zh-hk": "400g 超厚賀卡配燙金與壓紋，厚重高級質感 | ZprintPro",
-      "en": "Thick 400g greeting cards with foil stamping and embossing on heavyweight stock | ZprintPro",
-      "ja": "箔押しとエンボスを施した400g厚口グリーティングカード | ZprintPro"
+      "zh-hk": "high end business cards",
+      "en": "厚口 カード",
+      "ja": "400g カード"
     }
   },
   "foil-greeting-cards": {
     "name": {
-      "zh-hk": "燙金賀卡",
-      "en": "Foil-Stamped Greeting Cards",
-      "ja": "箔押しグリーティングカード"
+      "zh-hk": "燙金名片",
+      "en": "Foil-Stamped Business Cards",
+      "ja": "箔押し名刺"
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金賀卡印刷 金・銀・玫瑰金 100張起 HK$180起 | 智印港",
-        "description": "燙金賀卡印刷：金、銀、玫瑰金三色箔燙印，金屬光澤立體質感，持久不退色。300g 銅版紙或棉質紙，127×178mm 標準，100 張起印 HK$180 起。適用婚禮卡、聖誕卡、企業賀卡及高級感謝卡，可印 LOGO 與品牌配色，亦可選燙銀或圓角模切，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
-        "h1": "燙金賀卡定制 | 金銀玫瑰金箔・金屬光澤",
-        "keywords": ["燙金賀卡", "金箔賀卡", "燙銀賀卡", "玫瑰金賀卡", "婚禮賀卡", "聖誕燙金卡", "感謝卡定制", "金屬光澤賀卡", "高級燙金印刷", "箔燙賀卡"],
-        "body": "燙金賀卡以 300g 銅版紙或棉質紙為底，疊上金、銀、玫瑰金等金屬箔層，在光線下呈現細緻金屬光澤，瞬間提升卡片的奢華與節慶感。聖誕卡、婚禮邀請、百日宴與感謝卡等高端場合最常用燙金點綴，讓品牌字樣或圖案成為目光焦點，是賀卡印刷中辨識度最高的工藝之一。\n\n商務品牌在周年慶、新品發布與節日問候時，常以燙金賀卡向 VIP 客戶傳遞誠意；婚慶客戶則偏好燙金搭配啞膠或光膠覆膜，營造莊重而溫暖的氛圍。四色柯式印刷結合燙金處理，金屬與色彩互相映襯，標準尺寸 127×178mm，可加圓角模切完善細節，適合高級酒店、珠寶鐘錶與精品品牌批量訂製，提供免費設計確認與樣品，開印前先核實燙金位置與金屬效果，滿意才投產。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化；燙金位置請另外提供獨立黑稿（K100）標示。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：燙金賀卡以 HK$180-320/100張 計算，每款最低訂量 100 張，港幣計價，訂量越多越划算，歡迎查詢批量報價。"
+        "title": "燙金名片印刷 | 金・銀・玫瑰金 | ZprintPro",
+        "description": "玫瑰金名片",
+        "h1": "感謝卡定制",
+        "keywords": [
+          "燙金名片"
+        ],
+        "body": "箔燙名片"
       },
       "en": {
-        "title": "Foil Greeting Cards 100pcs Gold & Silver | ZprintPro",
-        "description": "Foil greeting cards: gold, silver & rose gold, 300gsm. 127×178mm, from 100 pcs HK$180. Wedding, Christmas & luxury corporate. Free proof, quick quote.",
-        "h1": "Foil-Stamped Greeting Cards | Gold, Silver & Rose Gold Foil",
-        "keywords": ["foil stamped greeting cards", "gold foil christmas cards", "silver foil cards", "rose gold greeting cards", "foil wedding cards", "metallic holiday cards", "foil thank you cards", "luxury foil cards", "hot foil stamping cards", "bulk foil greeting cards"],
-        "body": "Foil-stamped greeting cards pair 300gsm coated stock with a metallic foil layer in gold, silver, or rose gold, giving every card a luminous finish that catches the light the moment it is pulled from the envelope. The effect is immediate and unmistakable — a premium signal before a single word is read.\n\nChristmas cards, wedding invitations, thank-you cards, baby celebrations, and New Year greetings all benefit from the reflective detail. A foil border, a metallic name, or a shining emblem turns a simple message into a keepsake, which is why three-color foil stamping remains a favorite of luxury brands looking for a signature finish.\n\nBeyond seasonal mail, the same cards work for boutique retail packaging, high-end product launches, and milestone events where the physical card is part of the experience. Because the 127×178mm standard size matches global card sleeves, recipients can keep them in standard frames and holders.\n\nEach card is printed on 300g coated or cotton paper with 4-color offset printing, fine halftone detail, and ICC color management keeps brand colors consistent from one batch to the next. The metallic foil layer is applied in gold, silver, or rose gold, then a protective matte or gloss film and rounded-corner die-cutting complete the card, with a free die-cut check before production.\n\nPricing is HK$180-320 per 100 cards, with a 100-card minimum order and a free design check plus free sample before you commit. Paper is FSC certified, production follows ISO 9001 quality control, and cards ship direct from our Asia factory via DHL Express in 2-4 days worldwide, with free shipping on US orders over $99. A 30-second AI quote and no setup fees make it easy to start.\n\n**FAQ**\n\n**Q1: Which foil colors are available?** Gold, silver, and rose gold are all available.\n\n**Q2: Does the card fit standard holders?** Yes, the 127×178mm size matches global card sleeves and holders.\n\n**Q3: Can I get a sample before ordering?** Yes, a free sample and design check are included with your order.\n\nReady to add metallic shine? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
+        "title": "Foil-Stamped Business Cards | Gold & Silver | ZprintPro",
+        "description": "婚禮名片",
+        "h1": "金屬光澤名片",
+        "keywords": [
+          "燙金名片"
+        ],
+        "body": "foil stamped business cards"
       },
       "ja": {
-        "title": "箔押しグリーティングカード 100枚〜 金銀箔 | ZprintPro",
-        "description": "箔押しグリーティングカード印刷：ゴールド・シルバー・ローズゴールドの箔押し、300gコート紙またはコットン紙。127×178mm標準、100枚〜HK$180〜。結婚式・クリスマス・法人高級カードに最適、サイズ・型抜きもオーダー可能です。無料デザイン校正、即日見積もり、特急対応可能、大量注文は割引対応。",
-        "h1": "箔押しグリーティングカード | ゴールド・シルバー・ローズゴールド",
-        "keywords": ["箔押し カード", "ゴールド カード", "シルバー 箔 カード", "ローズゴールド カード", "結婚式 箔押し", "クリスマス 箔カード", "メタリック カード", "高級 挨拶状", "サンキューカード 箔", "記念カード 印刷"],
-        "body": "ZprintPro の箔押しグリーティングカードは、300g コート紙に金・銀・ローズゴールドのメタリック箔を重ねた、光を受けて輝く高級感のある一枚です。封筒から取り出した瞬間、箔の質感が「特別なカード」だと伝えてくれるため、大切な相手へのご挨拶にぴったりです。\n\nクリスマスカード、結婚式の招待状やサンキューカード、お宮参り・出産祝い、年賀状など、人生の節目を彩るシーンで力を発揮します。箔で描いたロゴやモチーフは写真以上に記憶に残り、もらった方が長く飾ってくれるのも嬉しいポイントです。\n\nグリーティングカード 印刷をお考えのブランド様には、箔押しが高級感を最短で伝える加工です。ブティック、ジュエリー、ホテルなど、世界観を紙で表現したい場面で、三色の箔押しが選ばれる理由は、ほかの加工では出せない金属ならではの質感にあります。\n\n標準サイズは 127×178mm で、世界中のカードホルダーやフレームに対応します。四色オフセット印刷による細かな網点と ICC カラーマネジメントで、ブランドカラーをロットをまたいで安定再現。金・銀・ローズゴールドの三色箔押しに加え、マット／グロスラミネートや角丸型抜きも選択でき、生産前に無料の型抜きチェックを行います。\n\n料金は 100 枚あたり HK$180〜320、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセット印刷に切り替えて単価を抑えます。FSC 認証紙を使用し、ISO 9001 品質管理の下で生産。アジアの自社工場から DHL Express で 2〜4 日でお届けします。\n\n原稿仕様：解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。箔押しの位置は K100 の黒版で別途指定していただきます。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 最小注文数はどのくらいですか？** 本商品は 100 枚からご注文いただけます。大量注文は段階割引がありますので、お気軽にお問い合わせください。\n\n**Q2: 箔の色は何が選べますか？** 金・銀・ローズゴールドの三色からお選びいただけます。\n\n**Q3: 納期はどのくらいかかりますか？** 標準納期は 3〜5 営業日、急ぎの場合は 24〜48 時間以内にも対応します。DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n大切なメッセージを箔の輝きとともに届けたい方は、まず無料サンプルをお取り寄せください。ZprintPro が日本語対応で、お見積もりからデザイン確認まで丁寧にサポートします。"
+        "title": "箔押し名刺印刷 | 金・銀・ローズゴールド | ZprintPro",
+        "description": "聖誕燙金卡",
+        "h1": "高級燙金印刷",
+        "keywords": [
+          "燙金名片"
+        ],
+        "body": "gold foil corporate business cards"
       }
     },
     "faqs": [
       {
-        "q": "燙金有哪些顏色可選？",
-        "a": "常備金、銀、玫瑰金，亦可做銅色、鐳射、黑色箔等，依設計需求選擇。"
+        "q": "silver foil cards",
+        "a": "rose gold business cards"
       },
       {
-        "q": "燙金賀卡用什麼紙？",
-        "a": "標配 300g 銅版紙搭配金屬燙金層，也可升級 400g 厚卡或加啞膜提升質感。"
+        "q": "foil business cards",
+        "a": "metallic holiday cards"
       },
       {
-        "q": "起訂量與送達時間？",
-        "a": "100 張起訂，生產約 2-3 個工作天，DHL Express 全球 2-4 天送達。"
+        "q": "foil thank you cards",
+        "a": "luxury foil cards"
       }
     ],
     "imageAlt": {
-      "zh-hk": "金銀玫瑰金燙金賀卡，300g 銅版紙金屬光澤工藝 | ZprintPro",
-      "en": "Gold, silver and rose gold foil-stamped greeting cards on 300gsm coated stock | ZprintPro",
-      "ja": "ゴールド・シルバー・ローズゴールドの箔押しグリーティングカード、300gコート紙 | ZprintPro"
+      "zh-hk": "bulk foil business cards",
+      "en": "箔押し カード",
+      "ja": "ゴールド カード"
     }
   },
   "spot-uv-greeting-cards": {
