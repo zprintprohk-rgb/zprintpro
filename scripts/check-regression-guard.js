@@ -166,9 +166,10 @@ async function runDodCheck(hits) {
 
   // 2026-09-13: 规则书 / 证据日志路径全规则豁免 (见 common.js FULL_EXEMPT_PATHS),
   // 这些命中不构成「修复未入规则库」, 不参与 DoD 判定 (否则提交 AGENTS.md 必然被 DoD 拦)。
-  const scoped = hits.filter(h => !common.isFullExemptPath(h.file));
+  // 另: DoD 的本意是「**src/ 改动**带来的修复必须入规则库」(见函数头注释), 因此非 src/ 命中不计入。
+  const scoped = hits.filter(h => !common.isFullExemptPath(h.file) && /(^|\/)src\//.test(h.file));
   if (scoped.length !== hits.length) {
-    console.log(`ℹ️ DoD: ${hits.length - scoped.length} 条命中来自规则书/日志 (全规则豁免), 不计入 DoD`);
+    console.log(`ℹ️ DoD: ${hits.length - scoped.length} 条命中来自规则书/日志/非 src 路径, 不计入 DoD`);
   }
 
   // 简化的 DoD 检查: 每个被命中的 ruleId, 检查 error-patterns.md 是否有对应 ### 规则 #X
