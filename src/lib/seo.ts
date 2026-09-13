@@ -260,7 +260,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   'zh-hk': {
     // 2026-07-22 v6: 智印港 是 zh-hk 合法品牌词 (AGENTS.md §1 v2 / §13.10 NAP 脱钩)
     // §13.13 三 Locale 鐵律: en/ja 標題 100% 過濾 Shenzhen/China/中國/智印港
-    title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷',
+    title: '智印港 | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒',
     description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
     keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,傳單印刷印刷,包裝盒印刷,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZprintPro,智印港',
   },
@@ -1618,7 +1618,7 @@ export function generateServiceJsonLd(input: {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印港 ZprintPro',
+    'zh-hk': '即時報價 | 智印港',
     'en': 'Instant Quote | ZprintPro',
     'ja': '即時見積もり | ZprintPro',
   };

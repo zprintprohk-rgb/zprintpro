@@ -37,9 +37,9 @@ function getLocaleBrand(safeLocale: 'zh-hk' | 'en' | 'ja'): {
   if (safeLocale === 'zh-hk') {
     return {
       siteName: '智印港',
-      ogTitle: '智印港 ZprintPro | 香港印刷服務 — 全球 72 小時交貨',
+      ogTitle: '智印港 | 香港印刷服務 — 全球 72 小時交貨',
       ogDesc: '香港印刷定制服務, 貼紙/包裝盒/紙袋/海報/書刊。30 秒 AI 報價, 順豐本地 + DHL 全球 2-4 天。',
-      twitterTitle: '智印港 ZprintPro | 香港印刷服務',
+      twitterTitle: '智印港 | 香港印刷服務',
       authorName: '智印港',
       ogLocale: 'zh_HK',
     };
@@ -47,9 +47,9 @@ function getLocaleBrand(safeLocale: 'zh-hk' | 'en' | 'ja'): {
   if (safeLocale === 'ja') {
     return {
       siteName: 'ジープリント',
-      ogTitle: 'ジープリント ZprintPro | 印刷サービス — グローバル 72 時間配送',
+      ogTitle: 'ZprintPro | 印刷サービス — グローバル 72 時間配送',
       ogDesc: 'カスタマイズ印刷サービス, ステッカー/パッケージ/紙袋/ポスター/書籍。30 秒 AI 見積もり, DHL グローバル 2-4 日。',
-      twitterTitle: 'ジープリント ZprintPro | 印刷サービス',
+      twitterTitle: 'ZprintPro | 印刷サービス',
       authorName: 'ZprintPro',
       ogLocale: 'ja_JP',
     };

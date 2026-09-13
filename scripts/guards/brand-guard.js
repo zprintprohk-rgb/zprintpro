@@ -104,13 +104,18 @@ async function scan(files) {
       content = require('fs').readFileSync(file, 'utf-8');
     } catch (e) { continue; }
 
+    // 2026-09-13 K3 拍板: 一次性英文括注「智印港（ZprintPro）」**保留**(实体消歧别名用法, 与 6/17 alternateName 同源)
+    //   -> 扫描前先剔除该形态, 不再计入品牌违规 (T1b 8 处的正式豁免)
+    const GLOSS = /智印港\s*[（(]\s*ZprintPro\s*[）)]|ZprintPro\s*[（(]\s*智印港\s*[）)]|ジープリント\s*[（(]\s*ZprintPro\s*[）)]/g;
+    const scanContent = content.replace(GLOSS, (m) => '　'.repeat(m.length));
+
     for (const rule of RULES) {
       // BRAND_LOCALE_MISMATCH 走 locale 作用域自定义检查 (逐字面扫描在多语言文件上必然误报)
       if (rule.id === 'BRAND_LOCALE_MISMATCH') {
-        allHits.push(...scanLocaleMismatch(content, file, rule));
+        allHits.push(...scanLocaleMismatch(scanContent, file, rule));
         continue;
       }
-      const hits = common.scanRule(content, file, rule);
+      const hits = common.scanRule(scanContent, file, rule);
       allHits.push(...hits);
     }
   }
