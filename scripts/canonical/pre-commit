@@ -70,9 +70,12 @@ fi
 # 3. 反审门童 v1 — K3 9/1 15:06 拍板落地
 echo "3️⃣  反审门童 v1 (5 道门童 + 3 道防线)..."
 if command -v node &> /dev/null; then
-  # --commit 模式: 仅扫 staged diff (< 5s, pre-commit hook 性能优化)
-  # 默认仅 red 硬拦, shadow mode (orange/yellow 仅警告)
-  node scripts/check-regression-guard.js --commit --strict
+  # --commit 模式: 仅扫 staged 文件 (< 5s, pre-commit hook 性能优化)
+  # 严重度口径 = K3 9/1 15:06 修正 3「shadow mode 分级执法」: **red 硬拦 / orange·yellow 仅警告 (9/15 转正)**
+  #   ⚠️ 2026-09-13 修正: 原写 `--commit --strict` 与该拍板冲突 (orange 也硬拦 => 内容类文件因存量 orange 命中无法提交);
+  #   品牌类 red 规则另有 .hermes/brand-baseline.json 存量扣减 (方案 C), 只拦新增。
+  #   👉 9/15 转正时改回 `--commit --strict`
+  node scripts/check-regression-guard.js --commit
   EXIT_CODE=$?
   if [ $EXIT_CODE -ne 0 ]; then
     echo ""

@@ -49,6 +49,21 @@ const QUOTE_RULES = new Set([
   'PHONE_HK_BLACKLIST', 'PHONE_WA_852', 'PHONE_NON_WHITELIST',
 ]);
 
+/**
+ * 2026-09-13 新增: 多语言数据文件豁免「语言混用类」规则
+ * 起因: 复活 pre-commit 后, 提交 src/data/blog-posts.ts 触发 50 red (I18N_POLLUTION 34 + BRAND_LOCALE_MISMATCH 16):
+ *   该文件每条数据同时存 zh-hk / en / ja 三语字符串 ⇒ 逐字面扫描必然误报
+ *   (ja 文本里的「会」被当成简体污染; ja 文本用 ZprintPro 被当成跨语言混用 —— 实际两者都合规)。
+ * 口径: src/data/** 下豁免语言混用类规则; **BRAND_DOUBLE 仍强制** (locale 无关, 双品牌照样拦);
+ *       CRED_/SOP10_/COUNT_ 等数据诚信类不受影响。
+ * 后续增强 (未做): 改为「按 locale 字段切分后再查混用」的真同源检查。
+ */
+const MULTILOCALE_DATA = /(^|[\/\\])src[\/\\]data[\/\\]/;
+const LOCALE_MIX_RULES = new Set([
+  'I18N_POLLUTION', 'I18N_CURRENCY', 'I18N_TITLE_LENGTH', 'I18N_META_LENGTH',
+  'BRAND_LOCALE_MISMATCH', 'BRAND_JA_ALTERNATE',
+]);
+
 function isFullExemptPath(file) {
   return FULL_EXEMPT_PATHS.some(re => re.test(file));
 }
@@ -198,6 +213,8 @@ function scanRule(content, file, rule) {
   if (isFullExemptPath(file)) return hits;
   // docs/ 等豁免路径上的「引用型规则」(品牌/跨语言/电话): 允许文档引用字面, 不做字面拦截
   if (rule.id && QUOTE_RULES.has(rule.id) && EXEMPT_PATHS.some(re => re.test(file))) return hits;
+  // 多语言数据文件 (src/data/**): 语言混用类规则必然误报 (三语同文件), BRAND_DOUBLE 仍强制
+  if (rule.id && LOCALE_MIX_RULES.has(rule.id) && MULTILOCALE_DATA.test(file)) return hits;
   // regression-guard 规则库自身豁免: 模式库/日志必须记录假数据原文作示例,
   // CRED_ 类 (数据诚信示例) / SOP10_CERT_NO / SECRET_LEAK (规则 regex 示例)
   // 在此目录强制扫描 = 必然误报 (9/4 门童 #15 落地时发现,

@@ -200,8 +200,10 @@ async function runDodCheck(hits) {
 
   // 2026-09-13: 规则书 / 证据日志路径全规则豁免 (见 common.js FULL_EXEMPT_PATHS),
   // 这些命中不构成「修复未入规则库」, 不参与 DoD 判定 (否则提交 AGENTS.md 必然被 DoD 拦)。
-  // 另: DoD 的本意是「**src/ 改动**带来的修复必须入规则库」(见函数头注释), 因此非 src/ 命中不计入。
-  const scoped = hits.filter(h => !common.isFullExemptPath(h.file) && /(^|\/)src\//.test(h.file));
+  // 另: DoD 的本意是「**src/ 改动**带来的修复必须入规则库」(见函数头注释),
+  // 因此非 src/ 命中不计入; 且只计入**实际硬拦级别**的命中 (K3 9/1 拍板: orange/yellow 为 shadow,
+  // 其命中多为存量真数据的合法引用, 例如 CRED_ISO_9001 命中「ISO 9001」——不应要求入错误库)
+  const scoped = hits.filter(h => !common.isFullExemptPath(h.file) && /(^|\/)src\//.test(h.file) && shouldBlock(h.severity));
   if (scoped.length !== hits.length) {
     console.log(`ℹ️ DoD: ${hits.length - scoped.length} 条命中来自规则书/日志/非 src 路径, 不计入 DoD`);
   }

@@ -87,7 +87,7 @@ export default function ContactError({
             {t.whatsapp}
           </a>
           <a
-            href="tel:+86198108851334"
+            href="tel:+8619880851334"
             className="flex items-center justify-center gap-2 w-full bg-[#2873F5] hover:bg-[#1E5BD6] text-white font-semibold py-3 px-6 rounded-xl transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
