@@ -7292,7 +7292,7 @@ export const products: Product[] = [
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-white-card-boxes-zh-hk-1.webp', en: 'zprintpro-packaging-white-card-boxes-en-1.webp', ja: 'zprintpro-packaging-white-card-boxes-ja-1.webp' },
       alt: {
-        'zh-hk': '白卡彩盒印刷定製 | 香港零售精品美妝護膚包裝盒 | 智印港 ZprintPro',
+        'zh-hk': '白卡彩盒印刷定製 | 香港零售精品美妝護膚包裝盒 | 智印港',
         en: 'White Cardboard Boxes | Premium Retail & Beauty Packaging | ZprintPro',
         ja: '白カードボックス | 高級小売・ビューティパッケージ | ZprintPro',
       },
@@ -7352,7 +7352,7 @@ export const products: Product[] = [
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-corrugated-boxes-zh-hk-1.webp', en: 'zprintpro-packaging-corrugated-boxes-en-1.webp', ja: 'zprintpro-packaging-corrugated-boxes-ja-1.webp' },
       alt: {
-        'zh-hk': '瓦楞彩盒印刷定製 (E坑/F坑) | 香港跨境電商物流快遞包裝盒 | 智印港 ZprintPro',
+        'zh-hk': '瓦楞彩盒印刷定製 (E坑/F坑) | 香港跨境電商物流快遞包裝盒 | 智印港',
         en: 'Corrugated Boxes (E/F Flute) | Cross-Border E-Commerce & Shipping | ZprintPro',
         ja: '段ボール箱 (E/Fフルート) | 越境EC・物流パッケージ | ZprintPro',
       },
@@ -7408,7 +7408,7 @@ export const products: Product[] = [
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp', en: 'zprintpro-packaging-tuck-end-boxes-en-1.webp', ja: 'zprintpro-packaging-tuck-end-boxes-ja-1.webp' },
       alt: {
-        'zh-hk': '插口盒印刷定製 (直插/反插/飛機插) | 香港餐飲外賣零售快消包裝盒 | 智印港 ZprintPro',
+        'zh-hk': '插口盒印刷定製 (直插/反插/飛機插) | 香港餐飲外賣零售快消包裝盒 | 智印港',
         en: 'Tuck End Boxes (Straight/Reverse/Auto-Bottom) | F&B Takeaway & Retail | ZprintPro',
         ja: '差し込み式ボックス (直挿/反挿/飛行機) | F&B テイクアウト・小売 | ZprintPro',
       },

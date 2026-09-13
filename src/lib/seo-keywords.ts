@@ -45,7 +45,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['食品包裝印刷', 'food packaging printing', '食品包装', 'food grade'],
     intro: {
-      'zh-hk': '香港專業食品包裝印刷服務，智印港 ZprintPro 為您提供食品級包裝盒、食品袋、食品標籤等一站式定制印刷方案。',
+      'zh-hk': '香港專業食品包裝印刷服務，智印港 為您提供食品級包裝盒、食品袋、食品標籤等一站式定制印刷方案。',
       en: 'Professional food packaging printing worldwide. ZprintPro provides one-stop custom solutions for food-grade boxes, bags, and labels.',
       ja: '食品パッケージ印刷専門サービス。ZprintPro は食品グレードの箱、袋、ラベルのワンストップカスタムソリューションを提供。',
     },
@@ -76,7 +76,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '智印港 ZprintPro 深耕香港印刷行業，食品包裝印刷客戶遍布港九新界。立即聯絡報價，免費打樣確認品質後再大貨生產，零風險合作。',
+      'zh-hk': '智印港 深耕香港印刷行業，食品包裝印刷客戶遍布港九新界。立即聯絡報價，免費打樣確認品質後再大貨生產，零風險合作。',
       en: 'ZprintPro serves bakeries, restaurants, and food brands worldwide. Contact us for a free quote — sample proof before mass production, zero-risk cooperation.',
       ja: 'ZprintPro は日本全国のベーカリー、レストラン、食品ブランドにサービスを提供。無料見積もり、本生産前のサンプル確認でリスクゼロ。',
     },
@@ -101,7 +101,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['紙袋印刷', 'paper bag printing', 'kraft bag', '牛皮纸袋'],
     intro: {
-      'zh-hk': '香港專業紙袋印刷服務，智印港 ZprintPro 提供牛皮紙袋、白卡紙袋、精品紙袋一站式定制印刷，品質保證。',
+      'zh-hk': '香港專業紙袋印刷服務，智印港 提供牛皮紙袋、白卡紙袋、精品紙袋一站式定制印刷，品質保證。',
       en: 'Professional paper bag printing worldwide. ZprintPro provides one-stop custom kraft, white card, and premium paper bags with quality guaranteed.',
       ja: '紙袋印刷専門サービス。ZprintPro はクラフト、白カード、プレミアム紙袋のワンストップカスタム印刷。',
     },
@@ -160,7 +160,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['傳單印刷', 'flyer printing', '傳單', 'leaflet'],
     intro: {
-      'zh-hk': '香港傳單印刷印刷服務，智印港 ZprintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
+      'zh-hk': '香港傳單印刷印刷服務，智印港 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
       en: 'Professional flyer printing worldwide. ZprintPro handles all types of flyers, leaflets, and single sheets with transparent pricing and on-time delivery.',
       ja: 'チラシ印刷サービス。ZprintPro は全タイプのチラシ、Leaflet、単紙を透明価格と納期保証で対応。',
     },
@@ -219,7 +219,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['餐牌印刷', 'menu printing', 'menu', '餐牌'],
     intro: {
-      'zh-hk': '香港專業餐牌印刷服務，智印港 ZprintPro 為各類餐飲企業提供菜單、酒水牌、餐桌牌等一站式印刷方案。',
+      'zh-hk': '香港專業餐牌印刷服務，智印港 為各類餐飲企業提供菜單、酒水牌、餐桌牌等一站式印刷方案。',
       en: 'Professional menu printing worldwide. ZprintPro provides one-stop printing solutions for menus, wine lists, and table cards for F&B businesses.',
       ja: 'メニュープリント専門サービス。ZprintPro はメニュー、ワインリスト、テーブルカードなど F&B 企業向けワンストップ印刷を提供。',
     },
@@ -278,7 +278,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['利是封印刷', 'red packet printing', 'lai see', '利是封'],
     intro: {
-      'zh-hk': '香港專業利是封印刷定制服務，智印港 ZprintPro 承接企業年會、婚禮喜慶、春節賀年用利是封批量印刷。',
+      'zh-hk': '香港專業利是封印刷定制服務，智印港 承接企業年會、婚禮喜慶、春節賀年用利是封批量印刷。',
       en: 'Professional Lai See / red packet printing worldwide. ZprintPro handles corporate, wedding, and Chinese New Year red packets in bulk.',
       ja: 'ポチ袋印刷専門サービス。ZprintPro は法人、婚礼、旧正月用ポチ袋の大量印刷を承ります。',
     },

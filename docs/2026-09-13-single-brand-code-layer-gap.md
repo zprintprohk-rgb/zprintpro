@@ -120,6 +120,29 @@ https://zprintpro.com/zh-hk/                 ← 首页
 
 **剩余存量 150 处 / 33 文件 = title 面 + 多行 locale-map 页 title**（`seo-keywords.ts` 12、`blog-posts.ts` 8、`products.ts` title_zh 13、`layout.tsx` og:title/twitter:title、`metadata.ts` title 模板、`seo.ts` 首页 title 等）→ 等 K3 指定窗口做 A，门禁基线数字即进度表。
 
+### 6.2 补漏两轮（同日 18:45，把 150 → **83**）
+
+B 批的允许清单是「行内字段名」启发式生成的，实测漏了三类**非 title 面**，已用两支 pattern 级脚本补齐（同样三件套 + 更强断言）：
+
+| 轮次 | 脚本 | 清除 | 覆盖 |
+|---|---|---|---|
+| B2 | `scripts/fix-dual-brand-nontitle-b2.mjs` | **15 处** | `seo-keywords.ts` 的 `intro/outro` 正文（6）、`products.ts` 的 `seoImages.alt`（3）、`category-seo-content.ts` 的 `featuredSnippet` 答案块（6） |
+| B2c | `scripts/fix-dual-brand-jsonld-names.mjs` | **52 处** | blog-data 内嵌 JSON-LD：`\"name\":\"智印港 ZprintPro\"` ×26、`\"name\":\"ZprintPro 智印港\"` ×5、`ZprintPro ジープリント` ×3、`智印港 ZprintPro 首頁` ×12、`跨境印刷 SaaS` ×5、`印刷規格指南` ×1 |
+
+**为什么 blog-data 必须 pattern 级而不能整行替换**：`content` 是「整篇一行」字符串，同一行里既有 `\"name\"`（JSON-LD Organization 名 → 非 title 面，本批范围内），也有 `\"headline\"` / `<h1>`（文章标题镜像 → title 面，按裁决留待冻结窗）。因此脚本断言：**JSON.parse 合法性 + 键数不变 + 长度差 == 预期 + headline 含双品牌数前后不变**（实测 1 → 1，未被误伤）。
+
+### 6.3 最终口径（2026-09-13 18:45）
+
+| 项 | 数值 |
+|---|---|
+| 起始存量（本日发现） | **443 处 / 47 文件** |
+| 本日清除合计 | **360 处**（B 292 + B2 15 + B2c 52 + 前批数据层 1） |
+| 剩余存量（门禁基线） | **83 处 / 32 文件 = 纯 title 面 + `alternateName` 别名** |
+| 剩余构成 | `blog/[slug]/page.tsx` 17（blog title 映射）、`products.ts` 10（`title_zh`）、`blog-posts.ts` 7、`seo-keywords.ts` 6（title/h1）、`blog-data/zh-hk.json` 5（3 title + 1 headline + 1 h1）、`layout.tsx` og/twitter 4、`about` 3、`seo.ts` 3（含首页 title）、`contact` 2、`press-kit` 2、**`OrganizationSchema` 2（`alternateName` 别名表 —— 语义上「别名」本就是多名称，建议 K3 单独确认，本批未动）**、其余单点 |
+
+**门禁 C 的价值即在此**：83 = 存量白名单，此后任何新增双品牌都会在 pre-commit 被拦（已负向测试验证）；清一批 → `--update` 重录 → 数字即进度。
+
+
 ### 6.1 本批两条工具教训（已固化 `.hermes/logs/tool-lessons-2026-09-13.md`）
 
 1. **假零**：在无 `node_modules` 的 worktree 里跑 `npx tsc` 会直接失败，而我当时只统计 `error TS` 行数 → 误报「0 error」。修法：守卫必须断言「命令真跑起来」（`.hermes/tsc-analyze.cjs` 现在会校验 exit code 与输出）。

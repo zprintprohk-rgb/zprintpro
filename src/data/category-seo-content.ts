@@ -905,7 +905,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   ja: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送) + bulk/wholesale 段 + ジープリント 埋点 1 次
-    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ジープリント ZprintPro.',
+    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ZprintPro.',
     lastUpdated: '2026-08-24',
     h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
@@ -1335,7 +1335,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
 const envelopesContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T18: envelopes CTR 修复 (pos 1-2.6 但 0 click = 改 snippet 触发)
-    featuredSnippet: '大信封 C4/C5 印刷 100 個起 HK$0.5/個起 | DL/B4 4 尺寸可選 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 雙面彩色 + 燙金 + 120g-250g 4 紙張, 商務/婚禮/節日信封通用. 即日截單 18:00, 順豐滿 HK$500 免費.',
+    featuredSnippet: '大信封 C4/C5 印刷 100 個起 HK$0.5/個起 | DL/B4 4 尺寸可選 | 24h 出貨 順豐本地 | 智印港. 雙面彩色 + 燙金 + 120g-250g 4 紙張, 商務/婚禮/節日信封通用. 即日截單 18:00, 順豐滿 HK$500 免費.',
     lastUpdated: '2026-08-22',
     h2: '信封 / 信封印刷 / 邀請函信封 / 商務信封 — 100 個起, 免費打樣, 即日特急',
     coreAdvantages: {
@@ -1533,7 +1533,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.13 T18: 封筒 CTR fix
-    featuredSnippet: '封筒 C4/C5 印刷 100枚から HK$0.5／枚 | DL/B4 4サイズ対応 | 24h出荷 工場直送 | ジープリント ZprintPro. 両面カラー + 箔押し + 120-250gsm 4紙質, 招待状・ビジネス・年賀状. 即日注文 18:00 まで, DHL 2-4 日国際配送.',
+    featuredSnippet: '封筒 C4/C5 印刷 100枚から HK$0.5／枚 | DL/B4 4サイズ対応 | 24h出荷 工場直送 | ZprintPro. 両面カラー + 箔押し + 120-250gsm 4紙質, 招待状・ビジネス・年賀状. 即日注文 18:00 まで, DHL 2-4 日国際配送.',
     lastUpdated: '2026-08-22',
     h2: '封筒印刷 / 封筒 オーダーメイド / 招待状封筒 / ビジネス封筒 — 100枚から, 無料校正, 即日特急',
     coreAdvantages: {
@@ -1638,7 +1638,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-21 v3.13 T14: 月曆 5 词对齐 + 2027 时效 + 5 FAQ (季节窗最急)
-    featuredSnippet: '月曆印刷 9-11 月旺季軍令狀 | 100 本起 HK$28 起 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 掛曆 HK$18 / 檯曆 HK$9 / 年曆卡 HK$3, 2027 早鳥 9 折 + 免費設計 + 燙金, 企業禮品旺季採購 8-10 月落單 → 9-12 月交貨.',
+    featuredSnippet: '月曆印刷 9-11 月旺季軍令狀 | 100 本起 HK$28 起 | 24h 出貨 順豐本地 | 智印港. 掛曆 HK$18 / 檯曆 HK$9 / 年曆卡 HK$3, 2027 早鳥 9 折 + 免費設計 + 燙金, 企業禮品旺季採購 8-10 月落單 → 9-12 月交貨.',
     lastUpdated: '2026-08-26',
     h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, R5 9/15 硬截止前企業禮品旺季採購',
     coreAdvantages: {
@@ -1850,7 +1850,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
-    featuredSnippet: 'カレンダー印刷 9-11月繁忙期軍令状 | 100冊から HK$28／冊 | 24h出荷 工場直送 | ジープリント ZprintPro. 卓上 HK$9 / 壁掛け HK$18 / カード HK$3, 2027 早期予約 9 割引 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
+    featuredSnippet: 'カレンダー印刷 9-11月繁忙期軍令状 | 100冊から HK$28／冊 | 24h出荷 工場直送 | ZprintPro. 卓上 HK$9 / 壁掛け HK$18 / カード HK$3, 2027 早期予約 9 割引 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
     lastUpdated: '2026-08-19',
     h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 100冊から, 企業ギフト 9-11月繁忙期前夜',
     coreAdvantages: {
@@ -2866,7 +2866,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.14 T30: ja 词盘点加固 (小单利润轨 ja 侧, 加両面印刷/はがき/正方形/キャラクターシール)
-    featuredSnippet: 'ステッカー印刷 50枚から, 防水マット ¥7／枚, オリジナルステッカー100枚から, キャラクター/防水/屋外/剥がせる 4 種対応, 両面印刷+正方形+はがきサイズ, 5-7日納期, DHL 2-4日. ジープリント ZprintPro 工場直送価格. 9/4 ja CTR ≥2% 目標: ステッカー印刷/オリジナル/作成/キャラクター/防水/屋外/両面 7 詞 cluster snippet.',
+    featuredSnippet: 'ステッカー印刷 50枚から, 防水マット ¥7／枚, オリジナルステッカー100枚から, キャラクター/防水/屋外/剥がせる 4 種対応, 両面印刷+正方形+はがきサイズ, 5-7日納期, DHL 2-4日. ZprintPro 工場直送価格. 9/4 ja CTR ≥2% 目標: ステッカー印刷/オリジナル/作成/キャラクター/防水/屋外/両面 7 詞 cluster snippet.',
     lastUpdated: '2026-08-22',
     h2: 'ステッカー 印刷 / 屋外 ステッカー / 防水ステッカー / 剥がせるステッカー — 50枚から 5-7日納期',
     coreAdvantages: {
