@@ -9,7 +9,7 @@ import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
  * 目的: 抢回 GSC 实测需求 —— 「咭片印刷」99 展示 / 「咭片」99 / 「印咭片」88, 合计约 286 展示/月,
  *       0 点击, pos 31-39 (第 4 页)。来源: GSC数据/gsc-fresh-2026-09-03.json (calibration 2026-09-03)。
  * 红线遵守:
- *   - 不用 /category/business-cards/ (v22 301 源), 新走独立路径
+ *   - 不用 /category/business-card-printing/ (v22 301 源), 新走独立路径
  *   - 不动 middleware 301 映射 / 不动其余 4 款贺卡 SKU / 不动既有贺卡资产
  *   - 规格数字全部取自已上线真实字段 (400g / 700-810g 三合一 / 90×54mm / 100 张起 / DHL 2-4 天), 禁编造
  *   - 三语本地化按 §13.10 (禁机械翻译): zh-hk 香港场景 / en UK-US 场景 / ja 日本市场卖点
@@ -127,12 +127,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t.title,
     description: t.description,
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/business-cards/`,
+      canonical: `${siteConfig.url}/${locale}/business-card-printing/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/business-cards/`,
-        en: `${siteConfig.url}/en/business-cards/`,
-        ja: `${siteConfig.url}/ja/business-cards/`,
-        'x-default': `${siteConfig.url}/zh-hk/business-cards/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/business-card-printing/`,
+        en: `${siteConfig.url}/en/business-card-printing/`,
+        ja: `${siteConfig.url}/ja/business-card-printing/`,
+        'x-default': `${siteConfig.url}/zh-hk/business-card-printing/`,
       },
     },
   };
@@ -148,7 +148,7 @@ export default function BusinessCardsPage({ params }: Props) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home', item: `${siteConfig.url}/${locale}/` },
-      { '@type': 'ListItem', position: 2, name: t.crumb, item: `${siteConfig.url}/${locale}/business-cards/` },
+      { '@type': 'ListItem', position: 2, name: t.crumb, item: `${siteConfig.url}/${locale}/business-card-printing/` },
     ],
   };
 
