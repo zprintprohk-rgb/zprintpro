@@ -15,8 +15,11 @@
  */
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 import { join, relative, dirname } from 'node:path';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
 
 const ROOT = process.cwd();
+const common = require(join(ROOT, 'scripts', 'guards', 'common.js'));
 const BASELINE = '.hermes/brand-baseline.json';
 const SCAN_DIRS = ['src', 'messages'];
 const EXTS = /\.(ts|tsx|js|mjs|cjs|json|html|md|css|txt)$/;
@@ -24,6 +27,13 @@ const EXTS = /\.(ts|tsx|js|mjs|cjs|json|html|md|css|txt)$/;
 const PATTERNS = [
   { id: 'zh-dual', re: /智印港\s*ZprintPro|智印港\s*\|\s*ZprintPro|ZprintPro\s*智印港/g },
   { id: 'ja-dual', re: /ジープリント\s*ZprintPro|ZprintPro\s*ジープリント|智印港\s*ジープリント|ジープリント\s*智印港/g },
+];
+// 2026-09-13 扩充: 单品牌跨 locale (BRAND_LOCALE_MISMATCH) 也计入基线 —— 否则任何触碰含这类存量的文件都无法提交
+// (T1b「智印港（ZprintPro）」括注与 ja 正文孤立 智印港 属**语义待裁决**项, 保留在基线里计数可见、只许递减)
+const LONE = [
+  { re: /ZprintPro/g, badIn: ['zh-hk'] },
+  { re: /智印港/g, badIn: ['en', 'ja', 'other'] },
+  { re: /ジープリント/g, badIn: ['zh-hk', 'en'] },
 ];
 // 检测脚本自身 / 历史备份 不算命中
 const EXEMPT = [/^\.hermes\//, /^scripts\/guards\//, /^scripts\/check-/, /\.bak/, /backup-/];
@@ -50,6 +60,15 @@ for (const f of files) {
   const t = readFileSync(f, 'utf8');
   let n = 0;
   for (const p of PATTERNS) { p.re.lastIndex = 0; const m = t.match(p.re); if (m) { n += m.length; details.push(...m.map(x => `${rel}: ${x}`)); } }
+  // 单品牌跨 locale (与门童同口径: 用 common.resolveLocale 判定命中所属 locale)
+  for (const tok of LONE) {
+    tok.re.lastIndex = 0;
+    let m;
+    while ((m = tok.re.exec(t)) !== null) {
+      const loc = common.resolveLocale(t, m.index, f);
+      if (loc && tok.badIn.includes(loc)) { n++; details.push(`${rel}: ${m[0]} (locale=${loc})`); }
+    }
+  }
   if (n) { perFile[rel] = n; total += n; }
 }
 

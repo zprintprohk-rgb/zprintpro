@@ -125,11 +125,19 @@ async function scan(files) {
       content = require('fs').readFileSync(file, 'utf-8');
     } catch (e) { continue; }
 
-    // 标准规则扫描 (排除需要自定义逻辑的三条)
-    const customIds = ['I18N_TITLE_LENGTH', 'I18N_POLLUTION', 'I18N_CURRENCY'];
+    // 标准规则扫描 (排除需要自定义逻辑的三条 + 需文件作用域的规则)
+    const customIds = ['I18N_TITLE_LENGTH', 'I18N_POLLUTION', 'I18N_CURRENCY', 'I18N_FOOD_BOXES_CROSS'];
     for (const rule of RULES.filter(r => !customIds.includes(r.id))) {
       const hits = common.scanRule(content, file, rule);
       allHits.push(...hits);
+    }
+
+    // I18N_FOOD_BOXES_CROSS 只对 sku-seo-data 有效
+    // (2026-09-13: 原模式 /food-boxes.*[一-鿿]{20,}/ 在 blog-data 上必然误报 —— 文章里出现 food-boxes 内链
+    //  + 中文正文即命中; 该规则的历史目标是 sku-seo-data 的 food-boxes 段, 故按文件作用域收窄)
+    if (/sku-seo-data/.test(file)) {
+      const fb = RULES.find(r => r.id === 'I18N_FOOD_BOXES_CROSS');
+      allHits.push(...common.scanRule(content, file, fb));
     }
 
     // locale 作用域: 简体字残留 -> 只看 zh-hk 字段

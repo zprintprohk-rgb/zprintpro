@@ -8,8 +8,15 @@
 const fs = require('fs');
 const path = require('path');
 
-const MAX_FILE_SIZE = 500 * 1024;  // 500KB per file
+/**
+ * 2026-09-13 修正 (重要): 原上限 500KB 造成**静默盲区** —— blog-data/{zh-hk,en,ja}.json 单文件 650KB-1MB,
+ * 被 size 过滤直接跳过, 于是门禁对**内容最密集的文件**从未真正扫描过
+ * (实测: `check-regression-guard.js src/data/blog-data` 报「扫描文件数: 0」= 假通过, 与教训 7「假零」同族)。
+ * 现改为 4MB, 并对被跳过的大文件**显式打印警告**, 不再静默。
+ */
+const MAX_FILE_SIZE = 4 * 1024 * 1024;   // 4MB per file
 const MAX_HITS_PER_RULE = 50;       // 每规则最多记录 50 hits
+const SKIPPED_OVERSIZE = [];        // 被 size 过滤跳过的文件 (供调用方打印)
 
 // 豁免路径 (K3 9/1 15:06 拍板: docs/ + .hermes/ + scripts/guards/ 自身 + .hermes/cron-prompts/)
 const EXEMPT_PATHS = [
