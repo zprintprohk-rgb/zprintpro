@@ -3469,7 +3469,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | ZprintPro",
+        "title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港",
         "description": "燙金名片",
         "h1": "新年名片",
         "keywords": [
@@ -3524,7 +3524,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金名片印刷 | 金・銀・玫瑰金 | ZprintPro",
+        "title": "燙金名片印刷 | 金・銀・玫瑰金 | 智印港",
         "description": "玫瑰金名片",
         "h1": "感謝卡定制",
         "keywords": [
