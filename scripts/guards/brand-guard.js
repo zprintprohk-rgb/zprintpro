@@ -63,9 +63,9 @@ const RULES = [
 //    en   字段: 不得出现 智印港 / ジープリント        -> hit
 //    ja   字段: 不得出现 智印港 (ZprintPro 合法; ジープリント 单独出现合法) -> hit
 const BRAND_TOKENS = [
-  { re: /ZprintPro/g, badIn: ['zh-hk'] },
-  { re: /智印港/g, badIn: ['en', 'ja'] },
-  { re: /ジープリント/g, badIn: ['zh-hk', 'en'] },
+  { re: /ZprintPro/g, badIn: ['zh-hk'] },                              // zh-hk 禁 ZprintPro; other(=en/ja 分支) 合法
+  { re: /智印港/g, badIn: ['en', 'ja', 'other'] },                     // en/ja(含三元 else 分支) 禁 智印港
+  { re: /ジープリント/g, badIn: ['zh-hk', 'en'] },                     // zh-hk/en 禁; ja 与 other 不判 (可能合法埋点)
 ];
 
 function scanLocaleMismatch(content, file, rule) {

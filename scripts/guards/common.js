@@ -62,10 +62,38 @@ const QUOTE_RULES = new Set([
  */
 const LOCALE_KEY_RE = /["']?(zh-hk|en|ja)["']?\s*:/g;
 const FILE_LOCALE_RE = /(?:^|[\/\\])(?:blog-data[\/\\])?(zh-hk|en|ja)(?:\.json|[\/\\])/;
+// 行内三元: locale === 'zh-hk' ? A : B  -> A 属该 locale, B 属「非该 locale」(记为 other)
+const TERNARY_RE = /locale\s*===?\s*['"](zh-hk|en|ja)['"]\s*\?/;
 
+/** 求某命中位置所属 locale。
+ *  优先级: 文件名 (blog-data/<loc>.json) > 行内 locale 三元 > 最近左侧 locale 键 > null (判不出)
+ *  返回值: 'zh-hk' | 'en' | 'ja' | 'other' (明确「非某 locale」) | null
+ */
 function resolveLocale(content, matchIndex, file) {
-  const fm = FILE_LOCALE_RE.exec(file.replace(/\\/g, '/'));
-  if (fm && /blog-data/.test(file.replace(/\\/g, '/'))) return fm[1];
+  const norm = file.replace(/\\/g, '/');
+  const fm = FILE_LOCALE_RE.exec(norm);
+  if (fm && /blog-data/.test(norm)) return fm[1];
+
+  const lineStart = content.lastIndexOf('\n', matchIndex - 1) + 1;
+  const lineEndRaw = content.indexOf('\n', matchIndex);
+  const lineEnd = lineEndRaw === -1 ? content.length : lineEndRaw;
+  const line = content.slice(lineStart, lineEnd);
+  const rel = matchIndex - lineStart;
+
+  // 行内三元判定 (解决 `locale === 'zh-hk' ? '智印港' : 'ZprintPro'` 这类写法的误判)
+  const tm = TERNARY_RE.exec(line);
+  if (tm) {
+    const q = line.indexOf('?', tm.index);
+    let colon = -1, quote = null;
+    for (let i = q + 1; i < line.length; i++) {
+      const ch = line[i];
+      if (quote) { if (ch === quote && line[i - 1] !== '\\') quote = null; continue; }
+      if (ch === '"' || ch === "'" || ch === '`') { quote = ch; continue; }
+      if (ch === ':') { colon = i; break; }
+    }
+    if (q > 0 && colon > 0) return rel < colon ? tm[1] : 'other';
+  }
+
   const before = content.slice(0, matchIndex);
   let last = null, mm;
   LOCALE_KEY_RE.lastIndex = 0;
