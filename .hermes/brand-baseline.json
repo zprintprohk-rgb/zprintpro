@@ -1,7 +1,7 @@
 {
- "at": "2026-09-13T10:34:16.567Z",
+ "at": "2026-09-13T10:54:13.890Z",
  "note": "K3 2026-09-13 批准方案 C: 存量基线, 只许递减",
- "total": 359,
+ "total": 410,
  "perFile": {
   "src/app/[locale]/about/page.tsx": 8,
   "src/app/[locale]/blog/page.tsx": 2,
@@ -47,7 +47,7 @@
   "src/data/category-seo-content.ts": 2,
   "src/data/pillar-content.ts": 24,
   "src/data/product-seo.ts": 6,
-  "src/data/products.ts": 26,
+  "src/data/products.ts": 77,
   "src/data/sku-seo-data.ts": 47,
   "src/lib/h1-builder.ts": 6,
   "src/lib/metadata.ts": 3,
