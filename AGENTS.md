@@ -1281,6 +1281,30 @@ if (locale === 'zh-hk') {
 >
 > **拍板来源**: K3 8/28 04:53 当前 turn 拍板 "你只能在你的根目录文件夹中读取文件, 如果要跨项目到根目录外读取文件, 需要遵守这条规则" + K3 8/28 05:09 当前 turn 拍板 "继续" = K3 必再拍 1 次回复决策 working tree 63 文件 (K3 8/28 03:56 撞墙升级).
 
+### §0.26.0 ⛔ 项目最高宪法级 · 文件访问规则 (2026-09-13 K3 拍板 · 凌驾 §0.26.1 矩阵, 冲突以本条为准)
+
+> **拍板原话**: 「项目路径 F:\zprintpro-nextjs 是根目录，里面都可以读写，如果要跨项目到根目录外读取文件，需要遵守这条规则：
+> 1. C 盘目录的文件可以读取；
+> 2. F 盘的 QQ 存储文件夹 和 抖音小店资料 和 微信存储文件夹 和 xwechat_files 四个文件夹**绝对不能读取**，其余文件可以读取；
+> 3. D 盘和 G 盘读取**每次需要经过我的同意**才可以；
+> 4. E 盘和 H 盘**绝对不能读取，也不能碰盘符**。」
+>
+> **执行层**: 任何执行层 (autoclaw / deepseek hermes / 后续新层) 一律适用, 不因换层豁免 (per §0.34.2)。
+
+| # | 路径 / 盘符 | 读 | 写 | 硬规则 |
+|---|---|---|---|---|
+| 0 | `F:\zprintpro-nextjs\**` (**项目根目录**) | ✅ | ✅ | 根目录内**读写自由**, 无需逐次请示 |
+| 1 | `C:\**` | ✅ | ⚠️ 未拍板→按 §0.26.2 请示 | **C 盘目录的文件可以读取** |
+| 2 | `F:\**` **除 4 个禁区外** | ✅ | ⚠️ 未拍板→按 §0.26.2 请示 | 禁区见下方, **其余 F 盘文件可以读取** |
+| 3 | `D:\**` · `G:\**` | ⚠️ **每次**须 K3 同意 | ⚠️ 同左 | **逐次拍板**, 不得沿用上一次同意 |
+| 4 | `E:\**` · `H:\**` | ❌ **绝对禁止** | ❌ **绝对禁止** | **不能读, 也不能碰盘符** (不 `ls` / 不 Read / 不 cat / 不 grep / 不枚举盘符) |
+
+**F 盘四大禁区 (绝对不能读取)**: ① **QQ 存储文件夹** ② **抖音小店资料** ③ **微信存储文件夹** ④ **xwechat_files**
+→ 命中即停: 不读 / 不写 / 不枚举 / 不 grep; 并在报告中声明「命中 §0.26.0 禁区, 未访问」。
+
+**违规后果**: 撞墙升级, K3 必拍 1 次回复决策 (同 §0.26 原口径)。
+**与旧矩阵的关系**: §0.26.1 中「F 盘根目录外需拍板」被本条**细化为「仅上述 4 个禁区禁读, 其余 F 盘文件可读」**; D/G 由「拍板」明确为「**每次**同意」; E/H 口径不变 = 绝对禁止。两者冲突时**以本条 §0.26.0 为准**。
+
 ### §0.26.1 盘符访问矩阵 (K3 8/28 04:53 拍板, 跨项目 P0)
 
 | 盘符 / 路径 | 访问权限 | M3 必读规则 | 违反后果 |
@@ -2606,3 +2630,13 @@ When the user asks about Feishu/Lark/飞书 matters, route through Feishu/Lark s
 3. If you find a matching skill that is not installed or enabled, ask the user whether to install/enable and use it before proceeding.
 4. If no matching skill exists, say so briefly and continue with the safest available fallback.
 <!-- /autoclaw:feishu-lark-skill-guidance -->
+
+<!-- autoclaw:zcode-app-context-v1 -->
+<app-context>
+# AutoClaw 桌面端上下文
+
+## 文件与 URL
+- 请将本地网页 URL 以 Markdown 链接形式返回 (例如：[label](http://127.0.0.1:8080))。
+- 文件路径应为绝对路径，或者包含工作区文件夹名称，以便能够相对于工作区解析该路径。
+- 除非另有说明，请将文件引用写成 Markdown 链接 (例如：[name.md](/absolute/path/to/name.md))。
+</app-context>
