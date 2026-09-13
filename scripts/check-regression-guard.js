@@ -96,13 +96,44 @@ async function main() {
   console.log(`📁 扫描文件数: ${files.length}`);
   console.log('');
 
+  // 2026-09-13: 品牌类规则按「存量基线」扣减 (否则任何触碰 products.ts 等含存量 title 面双品牌的文件都无法 commit)
+  // 依据: .hermes/brand-baseline.json (方案 C 的存量白名单, 只许递减); 走 scripts/check-brand-baseline.mjs --update 重录
+  const baseline = (() => {
+    try {
+      const p = path.join(__dirname, '..', '.hermes', 'brand-baseline.json');
+      if (!fs.existsSync(p)) return null;
+      const b = JSON.parse(fs.readFileSync(p, 'utf8'));
+      console.log(`📉 品牌存量基线: total=${b.total} files=${Object.keys(b.perFile || {}).length} (基线内命中不拦, 只拦新增)`);
+      console.log('');
+      return b;
+    } catch (e) { console.log('⚠️ 品牌基线读取失败, 退化为不扣减:', e.message); return null; }
+  })();
+  const baselineLeft = baseline ? { ...(baseline.perFile || {}) } : null;
+  const withinBaseline = (hit) => {
+    if (!baselineLeft) return false;
+    if (!common.QUOTE_RULES.has(hit.ruleId)) return false;
+    const key = hit.file.replace(/^\/+/, '');
+    const left = baselineLeft[key] || 0;
+    if (left <= 0) return false;
+    baselineLeft[key] = left - 1;
+    return true;
+  };
+
   // 5 道门童依次跑
   const allHits = [];
+  let baselineSkipped = 0;
   for (const [guardKey, guard] of Object.entries(GUARDS)) {
     const label = GUARD_LABELS[guardKey];
-    const hits = await guard.scan(files);
+    const hitsAll = await guard.scan(files);
+    const hits = hitsAll.filter(h => {
+      if (withinBaseline(h)) { baselineSkipped++; return false; }
+      return true;
+    });
+    if (hitsAll.length > 0 && hits.length !== hitsAll.length) {
+      console.log(`${label}: ${hits.length} 命中 (另有 ${hitsAll.length - hits.length} 条属存量基线内, 不计)`);
+    }
     if (hits.length > 0) {
-      console.log(`${label}: ${hits.length} 命中`);
+      if (hits.length === hitsAll.length) console.log(`${label}: ${hits.length} 命中`);
       for (const hit of hits) {
         const blockMark = shouldBlock(hit.severity) ? '🔴 HARD' : '🟡 SHADOW';
         console.log(`  ${blockMark} [${hit.severity}] ${hit.file}:${hit.line}`);
@@ -111,11 +142,14 @@ async function main() {
         if (hit.fix) console.log(`    修法: ${hit.fix}`);
         allHits.push({ guard: guardKey, ...hit });
       }
-    } else {
+    } else if (hitsAll.length === 0) {
       console.log(`${label}: ✅ 0 命中`);
+    } else {
+      console.log(`${label}: ✅ 0 新增命中 (存量基线内 ${hitsAll.length})`);
     }
     console.log('');
   }
+  if (baselineSkipped) console.log(`ℹ️ 存量基线内豁免命中: ${baselineSkipped} 条 (方案 C 白名单, 只许递减)`);
 
   // 汇总
   const counts = { red: 0, orange: 0, yellow: 0, white: 0 };
