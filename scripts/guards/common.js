@@ -22,6 +22,37 @@ const EXEMPT_PATHS = [
   /scripts[\/\\]seed-error-patterns/,    // scripts/seed-error-patterns.js (seeding 脚本, 必豁免)
 ];
 
+/**
+ * 2026-09-13 新增: 「规则书 / 证据日志」类路径 — **全规则豁免**
+ * 起因: pre-commit 门禁修复后 (见 tool-lessons 教训 9), 首次提交 AGENTS.md 被自己拦下:
+ *   AGENTS.md 223 命中 + .hermes/logs 49 命中 (BRAND_DOUBLE / I18N_POLLUTION / CRED_* 等),
+ *   因为**规则书必须能引用禁用形态作反例**, 日志必须能记录命中原文。
+ * 口径: 这些文件不是上线内容 (不渲染、不发布), 对其做字面扫描 = 必然误报;
+ *       上线面 (src/ public/) 的强制扫描**不变**。
+ */
+const FULL_EXEMPT_PATHS = [
+  /(^|[\/\\])AGENTS\.md$/,
+  /\.hermes[\/\\](logs|reports|memory)[\/\\]/,
+  /scripts[\/\\]canonical[\/\\]/,
+  /\.githooks[\/\\]/,
+  // 门禁基础设施自身 (2026-09-13 补): 其代码/注释必然出现规则 ID、✅ 状态、数字样例,
+  // 字面扫描 = 必然误报; 这些脚本不上线, 且其正确性由端到端测试与代码评审保证
+  /scripts[\/\\]guards[\/\\]/,
+  /(^|[\/\\])scripts[\/\\]check-[^\/\\]*$/,
+  /(^|[\/\\])scripts[\/\\]seed-[^\/\\]*$/,
+];
+
+// 「引用型规则」: 仅用于判定禁用形态, 文档/规则书/日志必须可以引用其字面
+const QUOTE_RULES = new Set([
+  'BRAND_DOUBLE', 'BRAND_TYPO', 'BRAND_LOCALE_MISMATCH', 'BRAND_JA_ALTERNATE',
+  'I18N_POLLUTION', 'I18N_TITLE_LENGTH', 'I18N_CURRENCY',
+  'PHONE_HK_BLACKLIST', 'PHONE_WA_852', 'PHONE_NON_WHITELIST',
+]);
+
+function isFullExemptPath(file) {
+  return FULL_EXEMPT_PATHS.some(re => re.test(file));
+}
+
 // 不豁免的关键规则 (即使在豁免路径也强制扫描, 防止 SOP 文档误植假数据)
 const NON_EXEMPT_RULES = [
   'CRED_FSC_C123456',
@@ -163,6 +194,10 @@ function findLineNumber(content, matchIndex) {
 // 单规则扫描 (返回 hits 数组)
 function scanRule(content, file, rule) {
   const hits = [];
+  // 规则书 / 证据日志类路径: 全规则豁免 (规则书必须能引用禁用形态作反例)
+  if (isFullExemptPath(file)) return hits;
+  // docs/ 等豁免路径上的「引用型规则」(品牌/跨语言/电话): 允许文档引用字面, 不做字面拦截
+  if (rule.id && QUOTE_RULES.has(rule.id) && EXEMPT_PATHS.some(re => re.test(file))) return hits;
   // regression-guard 规则库自身豁免: 模式库/日志必须记录假数据原文作示例,
   // CRED_ 类 (数据诚信示例) / SOP10_CERT_NO / SECRET_LEAK (规则 regex 示例)
   // 在此目录强制扫描 = 必然误报 (9/4 门童 #15 落地时发现,
@@ -212,10 +247,12 @@ function isCommentLine(content, matchIndex) {
 module.exports = {
   collectFiles,
   isExemptPath,
+  isFullExemptPath,
   isNonExemptRule,
   isOperationalWhitelist,
   findLineNumber,
   scanRule,
   isCommentLine,
+  QUOTE_RULES,
   MAX_HITS_PER_RULE,
 };

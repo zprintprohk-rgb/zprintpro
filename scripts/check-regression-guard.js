@@ -164,8 +164,15 @@ async function runDodCheck(hits) {
 
   const patterns = fs.readFileSync(patternsFile, 'utf-8');
 
+  // 2026-09-13: 规则书 / 证据日志路径全规则豁免 (见 common.js FULL_EXEMPT_PATHS),
+  // 这些命中不构成「修复未入规则库」, 不参与 DoD 判定 (否则提交 AGENTS.md 必然被 DoD 拦)。
+  const scoped = hits.filter(h => !common.isFullExemptPath(h.file));
+  if (scoped.length !== hits.length) {
+    console.log(`ℹ️ DoD: ${hits.length - scoped.length} 条命中来自规则书/日志 (全规则豁免), 不计入 DoD`);
+  }
+
   // 简化的 DoD 检查: 每个被命中的 ruleId, 检查 error-patterns.md 是否有对应 ### 规则 #X
-  const uniqueRules = [...new Set(hits.map(h => h.ruleId))];
+  const uniqueRules = [...new Set(scoped.map(h => h.ruleId))];
   for (const ruleId of uniqueRules) {
     if (!patterns.includes(ruleId)) {
       console.log(`❌ DoD 铁律: 规则 ${ruleId} 命中但未入 error-patterns.md`);

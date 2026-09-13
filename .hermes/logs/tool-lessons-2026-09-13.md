@@ -56,3 +56,10 @@
 - 修法: (a) 正则保留逗号分组 `(")(,?)\s*$` 并替换回去; (b) 新增断言: **尾随逗号保持** + **引号/括号守恒** (`"` `{` `}` `[` `]` 计数前后必须相等) + **行不得变长**。
 - 关键收获: §12 三件套里的**备份**让恢复只花 1 条命令 (从 .hermes/backup-single-brand-data-* 还原 3 文件后重跑), 没有靠 git 回滚、没有污染提交历史。
 - 归类: 与「双竖线 | | 被计数守卫放过」同族 —— **计数断言 ≠ 形状断言**; 本批把形状断言扩到「结构性字符守恒」。
+
+### 教训 9 (最严重的一条): 门禁「装了但没生效」— core.hooksPath 陷阱
+- 现象: 我按 §12 把升级后的 pre-commit 装到 `.git/hooks/pre-commit`, 并对脚本做了负向测试(注入双品牌 → exit 1), 结论是「门禁已生效」。
+- 打脸: 端到端集成测试(真跑 `git commit`)——**commit 成功了**。查因: `git config core.hooksPath` = `.githooks`, 而 `.githooks/` 下**只有 pre-push、没有 pre-commit** → 8/26 起(为 submodule guard 设 hooksPath 那次), **整条 pre-commit 门禁(encoding / 简体字 / blog-data JSON / 反审门童 / DoD)全部静默失效**。
+- 修法(已落): (a) 把 canonical hook 装到 `.githooks/pre-commit`(受影响目录, 且受版本控制) + 同步 `.git/hooks/` 兜底; (b) `scripts/setup-hooks.sh` 改为**先读 `core.hooksPath` 再决定安装路径**; (c) 集成测试固化: 临时文件注入双品牌 → `git commit` 必须 exit 1。
+- 元教训: **只测脚本的负向用例 ≠ 测通门禁**。任何「闸门/守卫已生效」的结论, 必须有一条**端到端**证据(真触发一次被拦), 否则与「假零」同类——都是把「工具没跑」当成「没有问题」。
+- 归类: 教训 3(不存在需双工具交叉) + 教训 7(假零) 的同一族: **负向结论/保护性结论, 必须证明机制真的在运行**。

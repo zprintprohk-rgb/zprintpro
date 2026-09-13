@@ -781,7 +781,9 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 - `.gitattributes`: 强制 LF + UTF-8 working-tree-encoding
 - `core.autocrlf=false`, `core.eol=lf`
 - `i18n.commitEncoding=utf-8`
-- `.git/hooks/pre-commit`: 自动调 `node scripts/check-encoding.js`，UTF-16/CRLF 直接拒绝 commit
+- **hook 生效路径 = `git config core.hooksPath` 指向的目录**（本项目 = `.githooks/`，**不是** `.git/hooks/`）：`pre-commit` 自动调 `node scripts/check-encoding.js`（UTF-16/CRLF 直接拒绝 commit）+ 反审门童 v1 + `node scripts/check-brand-baseline.mjs`（品牌全量基线，新增双品牌即拦）
+  - ⚠️ **2026-09-13 事故**：8/26 为 submodule guard 设了 `core.hooksPath=.githooks`，但 canonical hook 仍装进 `.git/hooks/` ⇒ **pre-commit 门禁整条静默失效（8/26–9/13）**。装 hook 只认一个口径：先 `git config --get core.hooksPath`，装到那里（`bash scripts/setup-hooks.sh` 已按此改写）。
+  - ✅ **验证 hook 真生效 = 端到端**：临时在 `src/` 写一行 `智印港 ZprintPro` → `git commit` **必须 exit 1**；只测脚本负向用例不算（见 `.hermes/logs/tool-lessons-2026-09-13.md` 教训 9）。
 
 ### 记住（push 5 步 SOP）
 - **commit 前 3 问**: ① Size 合理? ② encoding check 过了? ③ build 过了（或至少没新增错）?
