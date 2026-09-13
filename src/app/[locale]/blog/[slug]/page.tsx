@@ -1011,40 +1011,30 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         return <JsonLd data={howToJsonLd} />;
       })()}
 
-      {/* v9.3 补 (方案 A): 色块宽度对齐导航栏色块 — 由满宽改 max-w-[1320px] mx-auto, 与 /blog/ 列表 +
-          /contact/ + PLP + PDP 同款; flex 保证内层垂直居中生效 (原满宽为 M3 批未受指令的新增项) */}
-      <div className="relative w-full overflow-hidden flex max-w-[1320px] mx-auto min-h-[380px] md:min-h-[440px] text-white" style={{ background: 'var(--color-royal-navy-grad)' }}>
-        <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">
-          <div className="absolute -right-20 -top-24 w-[420px] h-[420px] rounded-full border-[3px] border-white/10" />
-          <div className="absolute -right-6 -top-8 w-[300px] h-[300px] rounded-full border-2 border-white/10" />
-          <div className="absolute right-44 bottom-6 w-[160px] h-[160px] rounded-full border-2 border-[#F87314]/30" />
-          <div
-            className="absolute inset-0 opacity-10"
-            style={{ backgroundImage: 'radial-gradient(circle at 30% 40%, rgba(255,255,255,.6) 1.5px, transparent 1.5px)', backgroundSize: '28px 28px' }}
-          />
-        </div>
-        <div className="relative z-[1] max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center py-10">
-          <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
-            <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
-              {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
-            </a>
-            <span className="mx-2">/</span>
-            <a href={`${localePrefix}/blog/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">
-              {locale === 'zh-hk' ? '印刷知識' : locale === 'ja' ? 'ブログ' : 'Blog'}
-            </a>
-            <span className="mx-2">/</span>
-            <span className="text-white line-clamp-1">{post.title}</span>
-          </nav>
-          <span className="inline-flex items-center self-start rounded-full bg-white/15 border border-white/25 px-3.5 py-1.5 text-[13px] font-semibold text-white backdrop-blur-[2px]">
-            {post.category}
-          </span>
-          <h1 className="mt-4 text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[820px] drop-shadow-sm">{post.title}</h1>
-          <div className="mt-3 flex items-center gap-3 text-sm text-white/75">
-            <span>{t.published} {post.date}</span>
-            <span>·</span>
-            <span className="text-white/90">{t.authorPrefix}{t.author}</span>
-          </div>
-        </div>
+      {/* v9.3.3 (K3 2026-09-12 拍板): blog 详情页标题区【去色块 + 去重复标题】
+          老板口径: 页眉 → 留白 → 大 H1(可用两行) → 一行小字; blog 详情页不要色块。
+          原结构问题: 面包屑末段已是 post.title(小标题) + 下面大 H1 又重复一次 post.title;
+          且整块被藏青渐变色块(min-h 380/440 + 装饰圆)包裹 -> 内容重心压顶。
+          现结构: 无底色白底、面包屑末段改挂「分类」(避免与 H1 重复, 保留面包屑 SEO 价值)、
+                  H1 放大到 clamp(28px,3.4vw,44px) 可自然折两行、日期/作者压缩为一行小字。 */}
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-2">
+        <nav aria-label="breadcrumb" className="text-[13px] text-[#6B7280] mb-6">
+          <a href={`${localePrefix}/`} className="hover:text-[#2873F5] transition-colors">
+            {locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home'}
+          </a>
+          <span className="mx-2 text-[#9CA3AF]">/</span>
+          <a href={`${localePrefix}/blog/`} className="hover:text-[#2873F5] transition-colors">
+            {locale === 'zh-hk' ? '印刷知識' : locale === 'ja' ? 'ブログ' : 'Blog'}
+          </a>
+          <span className="mx-2 text-[#9CA3AF]">/</span>
+          <span className="text-[#333333] line-clamp-1">{post.category}</span>
+        </nav>
+        <h1 className="text-[clamp(28px,3.4vw,44px)] font-extrabold tracking-[-0.01em] leading-[1.25] text-[#111827] max-w-[900px]">
+          {post.title}
+        </h1>
+        <p className="mt-4 text-[15px] text-[#6B7280]">
+          {t.published} {post.date} <span className="mx-1.5 text-[#D1D5DB]">·</span> {t.authorPrefix}{t.author}
+        </p>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
