@@ -1791,6 +1791,35 @@ const printSpecificationsReferenceGuide2026: BlogPostMeta = {
   },
 };
 
+// 2026-09-14 D14: ja 教材・教科書の印刷製本 (K3 9/1 09:46 D8-D14 战略 SOP, G3 簇 textbook binding)
+// 12 段骨架 + 6 FAQ + 20 内链 + 2 CTA + 3 表格, 100 冊から HK$5-50/冊, 中綴じ/無線綴じ/上製本 3 製本方式
+// GSC 实证: 教科書 印刷 104 imp pos 40.6 / 教科書 印刷会社 59 imp pos 62.6 / 教材 印刷製本 53 imp pos 52.4 / 教材 テキスト印刷 32 imp pos 42.7 (3mo ~280 imp B2B 簇, 8/31 V2.0)
+// 内链矩阵: booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar (G3 簇互链)
+const lpTextbookPrintingGuide: BlogPostMeta = {
+  slug: 'textbook-printing-guide',
+  categoryKey: 'education',
+  source: 'daily',
+  date: '2026-09-14',
+  title: {
+    'zh-hk': '教科書印刷・教材印刷指南 100本起 製本方式 | 智印港',
+    en: 'Textbook Printing Guide: 3 Bindings, 100 Copies | ZprintPro',
+    ja: '教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '教科書印刷・教材印刷 100 本起, HK$5-50/本. 騎馬釘/膠裝/精裝 3 大製本方式, 80-100g 道林紙護眼, 5-7 個工作天交貨, DHL 2-4 天, ISBN 條碼. 學校/補習社/出版社 B2B 年度採購適用.',
+    en: 'Textbook printing from 100 copies at HK$5-50/book. 3 binding types (saddle stitch / perfect bound / hardcover), 80-100g wood-free paper, 5-7 day turnaround, DHL 2-4 day delivery, ISBN/barcode support. For schools, tutoring centers and publishers.',
+    ja: '教科書・教材の印刷製本 100冊から HK$5-50/冊. 中綴じ・無線綴じ・上製本 3 製本方式, 80-100g 道林紙, 5-7 営業日納品, DHL 2-4日, ISBN 対応. 学校法人・塾・出版社の B2B 年度契約に最適.',
+  },
+  targetKeywords: {
+    primary: '教科書 印刷',
+    secondary: [
+      '教材 印刷', '教材・教科書の印刷製本', '教科書 印刷会社', '教材 印刷製本', '教材 テキスト印刷',
+      'textbook printing', 'educational printing', 'textbook binding', 'book printing',
+      '教科書印刷', '教材印刷', '無線綴じ', '中綴じ', '上製本', '道林紙',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1933,6 +1962,10 @@ export const blogPosts: BlogPostMeta[] = [
   hongKongPrintingCostBaseline2026,
   // 2026-09-06 W7 §E 三语《印刷尺寸对照表》FAQ 资产 (K3 9/6 W7 addendum §A + §E 拍板, 12 鐵律 Pillar 标准, 命中 AEO 知识词 cluster)
   printSpecificationsReferenceGuide2026,
+  // 2026-09-14 D14 (K3 9/1 09:46 拍板 D8-D14 战略 SOP): ja 教材・教科書の印刷製本 (G3 簇, 教科書 印刷 104 imp pos 40.6 + 教材 印刷製本 53 imp pos 52.4, 3mo ~280 imp B2B 簇)
+  // 12 段骨架 + 6 FAQ + 20 内链 + 2 CTA + 3 表格, 100 冊から HK$5-50/冊, 中綴じ/無線綴じ/上製本 3 製本方式, 年度契約 B2B, ISBN 対応
+  // 内链: booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar (G3 簇内链矩阵)
+  lpTextbookPrintingGuide,
   ];
 
 // =============================================================================

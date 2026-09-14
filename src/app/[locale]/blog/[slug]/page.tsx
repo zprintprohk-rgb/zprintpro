@@ -754,6 +754,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'a5-vs-a6-flyer-size', // 2026-08-06 v8 daily: A5 vs A6 傳單尺寸
   'poster-printing-price-guide', // 2026-08-07 v8 daily: A1/A2 海報印刷價格指南
   'catalog-printing-guide', // 2026-08-10 v8 daily: 畫冊印刷指南 (GSC 畫冊印刷 12 imp pos 15.33)
+  'textbook-printing-guide', // 2026-09-14 D14: ja 教材・教科書の印刷製本 (G3 簇 textbook binding, K3 9/1 D8-D14 SOP)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
