@@ -94,11 +94,27 @@
 
 ---
 
-## 六、遗留 & 下游派单
+## 六、部署 & 遗留 & 下游派单
+
+### 6.1 部署记录 (push 已落地)
+
+- commit: `13a2725e` (main, 2026-09-14 09:42 +0800) — fast-forward push `a6922c56..13a2725e`
+- 今天唯一 push (距上次 9/13 18:54 > 30min 硬下限, quota 合规)
+- 可推清单 5 条全绿: 路径排除 ✓ / 秘密 0 ✓ / 旧图 0 ✓ / 三闸门 (encoding 基线 + tsc 54=54 + build) ✓ / verify-deploy 待 build 完成复跑
+- 分支策略: 本批为小改动 (≤3 文件 src 行为修复), 按 §0.25.10 直推 main; 原 redesign/plp-pdp-v9 分支历史未动 (28 commits 领先系既有状态, 非本批引入)
+- verify-deploy: `13a2725e` 查询时 build queued → 待 1-2 min 后重跑确认 CF Pages success + 关键 URL curl 200 (§12 不豁免)
+
+### 6.1.1 部署验证结果 (2026-09-14 09:47 终验)
+
+- CF Pages build: **success** (run 103832037043) — `node scripts/verify-deploy.mjs 13a2725e` → `PASS — deploy is live`
+- 线上探针 5 URL 全 200: posters/menus/banners 类目页 + poster-printing-guide + restaurant-menu-printing-guide 博客
+- 新段渲染: posters (海報列印/a3海報/戶外海報/poster-printing-guide) ✅ / menus (膠片餐牌/膠卡餐牌/restaurant-menu-printing-guide) ✅ / banners (車身廣告) ✅
+
+### 6.2 遗留 & 下游派单
 
 - ⏳ 9/17 干净窗: weekly-meta 复核 4 簇词 7d 环比 (戶外海報/包裝盒/膠片餐牌/戶外橫額)
 - ⏳ 9/17 后: gsc-feedback 8 T1 词首轮可判定数据拉取
-- ⏳ push 后线上探针: 3 类目页 200 + 新段渲染 (cron/手动兜底)
+- ⏳ push 后线上探针: 3 类目页 200 + 新段渲染 (cron/手动兜底, verify-deploy 复跑)
 - 📌 sitemap 6 文件 + scripts 5 文件 (9/13 遗留) 待另批 commit
 
 ---

@@ -12,6 +12,17 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
+# v9.4 §三-1 修复 (K3 2026-09-13 20:10 签发): 根治 Windows 控制台 GBK 编码假失败。
+# 原症状: Task Scheduler / cron 无 UTF-8 控制台时, 脚本内任何中文 print 抛
+# UnicodeEncodeError('gbk' codec can't encode character ...) → 脚本在「报告已落盘之后」
+# 非零退出 → 被记为失败 (假失败), consecutiveErrors 被污染, 报告在盘上却报失败。
+# 双保险: 本处 reconfigure (Python 3.7+, 比环境变量更兜底) + 调度命令带 PYTHONIOENCODING=utf-8。
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = Path(r"F:\zprintpro-nextjs")
 GSC_CSV = ROOT / "gsc_data.csv"
 MATRIX_JSON = ROOT / ".hermes" / "industry-keyword-matrix.json"
@@ -385,6 +396,31 @@ def write_daily_report(signal: dict, boosts: dict, changes: list, matrix_path: P
     return out
 
 
+def append_git_section(report_path: Path, rc: int, msg: str) -> None:
+    """v9.4 §三-2: 把 git step 的真实结果 (rc + stderr/stdout 原文) 追加进报告落盘。
+
+    git 失败不再是假失败, 但也不许静默吞掉 —— 失败原因必须进报告, 供 K3 复盘与
+    下一次 cron 处置 (§三-2「报告已落盘 = 任务成功, git 推送是锦上添花」)。"""
+    stamp = datetime.now().astimezone().strftime("%Y-%m-%dT%H:%M:%S%z")
+    status = "✅ OK" if rc == 0 else f"⚠️ FAILED (rc={rc}) — 非阻断, 已告警落盘"
+    body = [
+        "",
+        "## 6. git step 结果 (v9.4 §三-2: 失败只告警不阻断)",
+        "",
+        f"**状态**: {status}",
+        f"**时间**: {stamp}",
+        "",
+        "```text",
+        msg.strip() if msg.strip() else "(empty)",
+        "```",
+        "",
+        "_免责: 本节由脚本在报告落盘后追加; 报告已落盘 = 本车道任务成功, git commit/push 失败不影响 exit code (v9.4 K3 2026-09-13 拍板)。_",
+        "",
+    ]
+    with open(report_path, "ab") as fh:
+        fh.write("\n".join(body).encode("utf-8"))
+
+
 def git_commit_and_push(files: list[Path], message: str) -> tuple[int, str]:
     """git add + commit + push."""
     res = subprocess.run(
@@ -467,7 +503,17 @@ def main():
     )
     print(f"      git rc={rc}")
     print(msg)
-    return 0 if rc == 0 else 1
+
+    # v9.4 §三-2 (K3 2026-09-13 20:10): git step 失败只告警不阻断。
+    # 依据: 报告已落盘 = 本车道任务成功; git commit/push 是锦上添花 (push 另有 AGENTS.md
+    # §0.25 30min 间隔 / §0.25.9 攒批纪律, pre-commit 门童拦截属预期内), 不得让 exit code
+    # 被 git 结果污染 → 否则 consecutiveErrors 又出现假失败, watchdog/复盘的存活信号失真。
+    append_git_section(report_path, rc, msg)
+    if rc != 0:
+        print(f"[WARN] git step 失败 (rc={rc}) — 已写入报告 §6, 不阻断任务 (exit 0)")
+    else:
+        print("[OK] git step 成功")
+    return 0
 
 
 if __name__ == "__main__":

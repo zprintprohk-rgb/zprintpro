@@ -15,6 +15,15 @@ import sys
 from datetime import date, datetime
 from pathlib import Path
 
+# v9.4 §三-1 修复 (K3 2026-09-13 20:10 签发): 根治 Windows 控制台 GBK 编码假失败。
+# 双击/计划任务环境下 stdout 常回落到 cp936(gbk), 中文 print 抛 UnicodeEncodeError →
+# 报告已落盘却非零退出 = 假失败。reconfigure 为原生兜底, 调度层再带 PYTHONIOENCODING=utf-8 双保险。
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = Path(r"F:\zprintpro-nextjs")
 MATRIX_JSON = ROOT / ".hermes" / "industry-keyword-matrix.json"
 LOGS_DIR = ROOT / ".hermes" / "logs"
@@ -500,6 +509,31 @@ def write_monthly_report(matrix: dict, coverage: dict, tier_results: dict, chang
     return out
 
 
+def append_git_section(report_path: Path, rc: int, msg: str) -> None:
+    """v9.4 §三-2: 把 git step 的真实结果 (rc + stderr/stdout 原文) 追加进报告落盘。
+
+    git 失败不再是假失败, 但也不许静默吞掉 —— 失败原因必须进报告, 供 K3 复盘与
+    下一次 cron 处置 (§三-2「报告已落盘 = 任务成功, git 推送是锦上添花」)。"""
+    stamp = datetime.now().astimezone().strftime("%Y-%m-%dT%H:%M:%S%z")
+    status = "✅ OK" if rc == 0 else f"⚠️ FAILED (rc={rc}) — 非阻断, 已告警落盘"
+    body = [
+        "",
+        "## 11. git step 结果 (v9.4 §三-2: 失败只告警不阻断)",
+        "",
+        f"**状态**: {status}",
+        f"**时间**: {stamp}",
+        "",
+        "```text",
+        msg.strip() if msg.strip() else "(empty)",
+        "```",
+        "",
+        "_免责: 本节由脚本在报告落盘后追加; 报告已落盘 = 本车道任务成功, git commit/push 失败不影响 exit code (v9.4 K3 2026-09-13 拍板)。_",
+        "",
+    ]
+    with open(report_path, "ab") as fh:
+        fh.write("\n".join(body).encode("utf-8"))
+
+
 def git_commit_and_push(files: list[Path], message: str) -> tuple[int, str]:
     res = subprocess.run(
         ["git", "-C", str(ROOT), "status", "-sb"], capture_output=True, text=True, encoding="utf-8"
@@ -572,7 +606,15 @@ def main():
     )
     print(f"      git rc={rc}")
     print(msg)
-    return 0 if rc == 0 else 1
+
+    # v9.4 §三-2 (K3 2026-09-13 20:10): git step 失败只告警不阻断。
+    # 报告已落盘即任务成功; git 结果不得污染 exit code (防假失败污染 consecutiveErrors)。
+    append_git_section(report_path, rc, msg)
+    if rc != 0:
+        print(f"[WARN] git step 失败 (rc={rc}) — 已写入报告 §11, 不阻断任务 (exit 0)")
+    else:
+        print("[OK] git step 成功")
+    return 0
 
 
 if __name__ == "__main__":

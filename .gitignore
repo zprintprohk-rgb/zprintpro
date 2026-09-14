@@ -287,3 +287,6 @@ design/*.jpg
 *.bak_gc_content
 *.bak_gc_seo
 *.w5-now
+
+# IndexNow key ÃØÃÜ²»Èë¿â (K3 9/14 ÅÄ°å)
+.hermes/secrets/indexnow-key.json
