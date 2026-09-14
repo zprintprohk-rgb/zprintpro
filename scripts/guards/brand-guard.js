@@ -79,6 +79,11 @@ function scanLocaleMismatch(content, file, rule) {
       if (common.isCommentLine(content, m.index)) continue;
       const loc = common.resolveLocale(content, m.index, file);
       if (!loc || !tok.badIn.includes(loc)) continue;
+      // 2026-09-14 K3 拍板 (第 3 次澄清): ZprintPro 是域名前缀/品牌词,
+      //   zh-hk 页面**正文**出现 ZprintPro 单现 = 品牌+域名提示, 合法保留 (客户记住域名直接输入);
+      //   **仅 title 类字段** (title/seoTitle/metaTitle/title_zh) 禁 ZprintPro (title 黄金位置不双品牌, zh-hk title 用智印港)。
+      //   双品牌同现 (智印港 ZprintPro) 仍由 BRAND_DOUBLE 独立规则拦截。
+      if (tok.re.source === 'ZprintPro' && loc === 'zh-hk' && !common.isInTitleField(content, m.index)) continue;
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: common.findLineNumber(content, m.index),

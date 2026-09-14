@@ -108,6 +108,34 @@ function resolveLocale(content, matchIndex, file) {
   return last;
 }
 
+/**
+ * 2026-09-14 (K3 第 3 次澄清): 判断某命中位置是否位于 title 类字段的**值**内。
+ *   zh-hk 页面: 正文 ZprintPro 单现 = 品牌/域名提示, 合法; 仅 title 类字段禁 (黄金位置不双品牌)。
+ *   title 类键: title / title_zh / seoTitle / metaTitle / metaTitle_zh / h1 等 SEO 标题字段。
+ * 实现: 找命中位置最近的左侧键, 若键名匹配 TITLE_FIELD_RE 且命中在键值引号内 -> true。
+ */
+const TITLE_FIELD_RE = /["']?(?:title|title_zh|title_en|title_ja|seoTitle|metaTitle|metaTitle_zh|metaTitle_en|metaTitle_ja|h1)["']?\s*:/g;
+function isInTitleField(content, matchIndex) {
+  // 取命中行
+  const lineStart = content.lastIndexOf('\n', matchIndex - 1) + 1;
+  const lineEndRaw = content.indexOf('\n', matchIndex);
+  const lineEnd = lineEndRaw === -1 ? content.length : lineEndRaw;
+  const line = content.slice(lineStart, lineEnd);
+  const rel = matchIndex - lineStart;
+  // 行内判断: 找到本行所有 title 类键, 检查命中是否落在某 title 键的「冒号之后、该键值结束前」区间
+  const re = new RegExp(TITLE_FIELD_RE.source, 'g');
+  let mm;
+  while ((mm = re.exec(line)) !== null) {
+    const colonIdx = mm.index + mm[0].lastIndexOf(':') + 1;
+    // 命中在键冒号之后 -> 属该 title 字段值 (同 JSON 行, 值到行尾或下一个键)
+    if (rel >= colonIdx) {
+      // 确认值边界: 冒号后到命中之间没有出现新的顶层键 (JSON 单行场景少, 保守判断)
+      return true;
+    }
+  }
+  return false;
+}
+
 // 合法混用 token 白名单 (枚举制, 其余照扫)
 const LEGIT_MIX_TOKENS = [
   // 币种 / 价格符号 (en·ja 字段合法出现)
@@ -340,6 +368,7 @@ module.exports = {
   scanRule,
   isCommentLine,
   resolveLocale,
+  isInTitleField,
   isLegitMixToken,
   QUOTE_RULES,
   LEGIT_MIX_TOKENS,
