@@ -492,6 +492,8 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
         '尺寸選擇要考慮觀看距離和安裝空間。X 展架標準 60×160cm 適合展位角落；80×180cm 適合主通道。Backdrop 背景板建議高度 2.2–2.4m，確保拍照時不會露出頂部邊緣。我們提供免費場地測量和尺寸建議。',
         '解析度要求與輸出尺寸成反比。小尺寸（<1m）建議 150dpi；中尺寸（1–3m）100dpi 即可；大尺寸（>3m）72dpi 足夠。過高的解析度會增加文件大小和處理時間，不會提升實際效果。',
         '活動密集區（港島會展周邊、九龍塘／旺角商場、將軍澳／荃灣社區）常有「Backdrop 背景板」「易拉寶 即日」「戶外橫額」類搜尋；預留安裝動線與電源／桁架需求，並區分短期路演與長期圍板，可大幅減少現場改稿與二次輸出。',
+
+        '【車身廣告 — 流動廣告牌】貨車、私家車、外賣車車身貼廣告，一日行足幾十公里，曝光次數遠超固定位置。車身廣告用 PVC 車貼（可移除背膠）或噴繪橫幅布，防水防 UV，戶外耐用 1–3 年；設計上字要大、色塊對比強，遠距離都睇得清。',
       ],
     },
     faq: [
@@ -1012,7 +1014,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     // 2026-08-19 R3 餐牌印刷 5 件套
     // 2026-08-22 v3.13 T19: 餐牌 Pillar 加厚
     featuredSnippet: '餐牌印刷訂製 100 張起：A3/A4 過膠餐牌/枱卡/牆掛菜單, 防水防油, 3 個工作天. 餐廳/カフェ/外賣適用. HK$15/張起.',
-    lastUpdated: '2026-08-22',
+    lastUpdated: '2026-09-14',
     h2: '餐牌 / 餐牌印刷 / 菜單印刷 / 過膠餐牌 / 膠卡餐牌 / 膠片餐牌 — 防水防油, 100 張起, 即日特急',
     coreAdvantages: {
       title: '核心競爭優勢',
@@ -1095,6 +1097,8 @@ const menusContent: Record<string, CategoryLocaleContent> = {
         '好多老闆搜「餐牌印刷」「菜單印刷」時最怕兩樣嘢：印出嚟色差大、用唔夠兩個月就殘。我哋用食品級油墨同加厚過膠，印前免費數碼打樣對色，顏色唔啱唔開印，呢個承諾寫明喺報價單度。',
         '唔同場景配唔同款：茶餐廳用 PVC 插袋式，酒樓用硬殼釘裝大菜牌，咖啡店用牛皮紙單張夾木板，外賣店用厚卡紙枱面立牌。開張旺季（年尾、暑假前）建議提早兩星期落單，預留執相改稿時間。',
         '落單流程：WhatsApp 傳店名同菜式數量 → 30 秒 AI 報價 → 免費排版建議 → 數碼件即日交、柯式 2–3 天。深水埗、旺角、銅鑼灣等旺區客戶可安排順豐即日件；連鎖分店可一次過印分店版本，各自價目都搞得掂，開張前仲可以同傳單印刷一齊落單慳時間。',
+
+        '【膠片餐牌 vs 膠卡餐牌 — 邊款啱你?】兩個都防水防油，分別在耐用同手感：膠片餐牌（過膠片）輕薄貼枱，適合茶餐廳、快餐店日日翻枱，一擦即淨；膠卡餐牌（硬膠卡）厚身有質感，酒吧、咖啡店、西餐廳更顯檔次，比膠片更耐屈摺。揀唔定可以搵我哋免費打樣對比兩款手感，詳見 [餐牌印刷指南](/zh-hk/blog/restaurant-menu-printing-guide/)。',
       ],
       links: [
         { label: '餐牌印刷指南', href: '/zh-hk/blog/restaurant-menu-printing-guide/' },
@@ -3280,7 +3284,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
 const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     featuredSnippet: '海報印刷 A2 100 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
-    lastUpdated: '2026-08-21',
+    lastUpdated: '2026-09-14',
     h2: '印海報 / 海報印刷 / MTR 12-sheet 燈箱海報 — A0-A3 全尺寸 100 張起印, 防水 PP/PVC, 同日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
@@ -3364,14 +3368,16 @@ const postersContent: Record<string, CategoryLocaleContent> = {
 
         '【MTR 燈箱海報 12-sheet 規格 + 印刷文件要求】港鐵站內燈箱廣告最常見尺寸係 12-sheet (3048×1524mm, 4 燈箱拼成) 跟 4-sheet (1016×1524mm, 單燈箱), 出血位 30mm, 安全區四邊各 50mm, 解析度 150dpi CMYK, 文件格式 PDF/X-1a 或 AI。我哋支援 12-sheet 拼版 4A0 輸出 (1189×1682mm × 4 塊), DHL 直送港鐵站收貨區, 3-5 個工作天交期。MTR 規格詞 (mtr 12 sheet size / mtr 4 sheet size / 港鐵燈箱規格) 8/24 GSC 已 4 imps, snippet 機會高, 強烈建議搶。詳見 [MTR 燈箱海報規格 + 印刷文件要求指南](/zh-hk/blog/mtr-advertising-specs/)。',
 
-        '【印海報 3 大材質對比 + 邊款最抵】128g 銅版紙 (HK$6-9/張, 室內 3-6 個月, 展覽/活動首選) vs 200g PP 合成紙 (HK$12-18/張, 室內長期 1-2 年, 燈箱/海報架最穩) vs 440g PVC 硬片 (HK$20-35/張, 戶外 2-3 年, 防水抗 UV 必備)。同 A2 (420×594mm) 100 張計算: 銅版紙 $600-900, PP 合成紙 $1,200-1,800, PVC 硬片 $2,000-3,500。室內短期揀銅版紙最抵, 半戶外/燈箱揀 PP 合成紙, 戶外長期必須 PVC。詳見 [海報材質邊款最啱你? 銅版紙/PP/PVC 全對比](/zh-hk/blog/poster-buying-guide/)。',
+        '【印海報 3 大材質對比 + 邊款最抵】128g 銅版紙 (HK$6-9/張, 室內 3-6 個月, 展覽/活動首選) vs 200g PP 合成紙 (HK$12-18/張, 室內長期 1-2 年, 燈箱/海報架最穩) vs 440g PVC 硬片 (HK$20-35/張, 戶外 2-3 年, 防水抗 UV 必備)。同 A2 (420×594mm) 100 張計算: 銅版紙 $600-900, PP 合成紙 $1,200-1,800, PVC 硬片 $2,000-3,500。室內短期揀銅版紙最抵, 半戶外/燈箱揀 PP 合成紙, 戶外長期必須 PVC。詳見 [海報材質邊款最啱你? 銅版紙/PP/PVC 全對比](/zh-hk/blog/poster-printing-guide/)。',
 
-        '【海報印刷 3 大常見坑 + 點避】(1) 解析度陷阱: A0 大圖 300dpi 反而檔案過大拖慢輸出, 72-100dpi 對遠距離觀看最優, A2 150dpi 已足夠; (2) 出血位漏: 海報出血標準 3mm, 大圖輸出建議 5mm 預防裁切偏差, 印前團隊逐檔案檢查出血; (3) 色彩模式錯: RGB 印出偏暗 30%, 必須 CMYK, Pantone 專色品牌色匹配 95%+, 印前確認色彩模式。詳見 [海報印刷 3 大常見坑 + 點避](/zh-hk/blog/poster-buying-guide/)。',
+        '【海報印刷 3 大常見坑 + 點避】(1) 解析度陷阱: A0 大圖 300dpi 反而檔案過大拖慢輸出, 72-100dpi 對遠距離觀看最優, A2 150dpi 已足夠; (2) 出血位漏: 海報出血標準 3mm, 大圖輸出建議 5mm 預防裁切偏差, 印前團隊逐檔案檢查出血; (3) 色彩模式錯: RGB 印出偏暗 30%, 必須 CMYK, Pantone 專色品牌色匹配 95%+, 印前確認色彩模式。詳見 [海報印刷 3 大常見坑 + 點避](/zh-hk/blog/poster-printing-guide/)。',
+
+        '【海報列印 / a3海報 / 戶外海報 — 香港場景攻略】街招、展架、櫥窗、建築圍板係香港最常見嘅海報場景: 街舖櫥窗用 a3海報 (420×297mm) 最實用, 近距離睇 150dpi 就夠; 展覽活動攤位用 A1/A2, 遠距離要 72-100dpi; 戶外長期展示（工地圍板、樓宇外牆）一定要揀防水防 UV 嘅 PVC 或網布, 2-3 年不褪色。海報列印 1 張起印, 大圖輸出即日可取, 量大有階梯價。詳見 [海報印刷指南](/zh-hk/blog/poster-printing-guide/)。',
       ],
       links: [
         { label: 'MTR 燈箱海報規格 + 印刷文件要求指南', href: '/zh-hk/blog/mtr-advertising-specs/' },
-        { label: '海報材質全對比 (銅版紙/PP/PVC)', href: '/zh-hk/blog/poster-buying-guide/' },
-        { label: '海報印刷 3 大常見坑 + 點避', href: '/zh-hk/blog/poster-buying-guide/' },
+        { label: '海報材質全對比 (銅版紙/PP/PVC)', href: '/zh-hk/blog/poster-printing-guide/' },
+        { label: '海報印刷 3 大常見坑 + 點避', href: '/zh-hk/blog/poster-printing-guide/' },
       ],
     },
     faq: [
