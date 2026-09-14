@@ -164,7 +164,21 @@ def main():
             return 4
         print(f"[lane-git] report commit 完成 (--no-verify): {msg} ({len(report_files)} 文件)")
 
-    # 5) push (host 侧, SSH 已认证)
+    # 5) push (host 侧, SSH 已认证) — §0.25 30min 间隔硬下限:
+    #    距上次 push <30min 只 commit 不 push (commit 已落本地, 下次 lane/手动 push 带走)
+    #    撞车判定: 用 origin/main 最新 commit 时间
+    last_push = run([GIT, "log", "origin/main", "-1", "--format=%ct"], cwd=repo, check=False).stdout.strip()
+    now_ts = int(time.time())
+    try:
+        last_ts = int(last_push)
+        gap = now_ts - last_ts
+    except ValueError:
+        gap = 99999
+    if gap < 1800:
+        print(f"[lane-git] 距上次 push {gap}s (<30min) -> 本次只 commit 不 push (§0.25 硬下限), "
+              f"commit 留待下次 lane/manual push")
+        return 0
+
     r = run([GIT, "push", "origin", "main"], cwd=repo, check=False)
     if r.returncode != 0:
         print(f"[lane-git] push 失败: {r.stdout}\n{r.stderr}", file=sys.stderr)
