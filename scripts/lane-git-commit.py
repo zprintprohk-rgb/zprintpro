@@ -35,6 +35,8 @@ GIT = "git"
 
 # lane 允许提交的路径 (白名单: 只提交 lane 真正会改的生产文件 + 报告)
 # 排除: .hermes/*.cjs 工具/备份/回滚 (一次性诊断工具, 不属 lane 产物)
+# 排除: .hermes/industry-keyword-matrix.json (K3 拍板 defer 到 gsc-feedback cron 单独提交,
+#        避免 lane 自动提交把残留 M 状态一并带走; gsc-feedback prompt 内部处理该文件)
 ALLOWED_PATHS = [
     "src/data/blog-data/",
     "src/data/blog-posts.ts",
@@ -42,7 +44,6 @@ ALLOWED_PATHS = [
     "src/data/sku-seo-data.ts",
     "src/app/[locale]/blog/[slug]/page.tsx",
     "src/lib/",
-    ".hermes/industry-keyword-matrix.json",
     ".hermes/logs/",
     ".hermes/reports/",
     "docs/",
@@ -63,6 +64,9 @@ def main():
     ap.add_argument("--lane", required=True, help="lane name, e.g. ZP-daily-content")
     ap.add_argument("--repo", default=MAIN_REPO)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--include-matrix", action="store_true",
+                    help="仅 gsc-feedback lane 使用: 允许提交 .hermes/industry-keyword-matrix.json "
+                         "(K3 拍板该文件由 gsc-feedback cron 单独提交)")
     args = ap.parse_args()
 
     repo = args.repo
@@ -96,10 +100,13 @@ def main():
             changed.append(path)
 
     # 2) 白名单过滤
+    allowed_paths = list(ALLOWED_PATHS)
+    if args.include_matrix:
+        allowed_paths.append(".hermes/industry-keyword-matrix.json")
     allowed = []
     for p in changed:
         norm = p.replace("\\", "/")
-        if any(norm.startswith(prefix) or norm == prefix for prefix in ALLOWED_PATHS):
+        if any(norm.startswith(prefix) or norm == prefix for prefix in allowed_paths):
             allowed.append(p)
         else:
             print(f"[lane-git] 跳过白名单外改动: {p}")

@@ -86,7 +86,7 @@ foreach ($L in $Lanes) {
     "`"$Dsh`" --profile headless `"$msg`" >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
     'set RC=%ERRORLEVEL%',
     "echo ===== dsh exit=%RC% -- host-side git commit/push -- ===== >> `"$LogDir\cron-$($L.Name).log`"",
-    "`"$Python`" `"$MainRepo\scripts\lane-git-commit.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`" >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
+    ("`"$Python`" `"$MainRepo\scripts\lane-git-commit.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`"" + $(if ($L.Name -eq 'ZP-gsc-feedback') { ' --include-matrix' } else { '' }) + " >> `"$LogDir\cron-$($L.Name).log`" 2>&1"),
     "echo ===== run end   %DATE% %TIME% exit=%RC% ===== >> `"$LogDir\cron-$($L.Name).log`"",
     'exit /b %RC%'
   )
