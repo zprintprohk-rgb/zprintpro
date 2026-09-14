@@ -1244,8 +1244,9 @@ export function generateProductJsonLd(
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
         merchantReturnDays: 0,
-        returnMethod: 'https://schema.org/ReturnByMail',
-        returnFees: 'https://schema.org/FreeReturn',
+        // 2026-09-14 GMC P0-C fix: MerchantReturnNotPermitted must NOT carry returnMethod/returnFees
+        //   (NotPermitted + ReturnByMail + FreeReturn combo is self-contradictory → GMC「return policy rejected」).
+        //   Google validation for NotPermitted: keep only category + days:0 + description + applicableCountry.
         description: locale === 'zh-hk'
           ? '定制印刷產品不適用退貨政策，出廠前提供數碼樣確認'
           : locale === 'ja'

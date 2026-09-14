@@ -192,12 +192,26 @@ export default function ProductPage({
   //   修复口径: 无价格表时回退用 price_range (站内真实报价源, 与 v9.2.2 裁决3.3 同口径, 不跨币换算, 不编造);
   //   两者皆无 → 仍不挂 offers (宁缺不造)。
   const hasPriceRange = !!((product.price_range || '').match(/[\d.]+/));
+  // 2026-09-14 GMC P0-A/B fix: schema price must equal page display price + shipping currency.
+  //   Old logic used first price_range number (HK$0.22) + inferred currency (always HKD) → en/ja pages
+  //   schema price HKD but page shows USD/JPY, shipping USD/JPY → GMC「shipping currency ≠ item price
+  //   currency」mismatch (68 items, 28.8%).
+  //   Fix: prefer getUnitPriceAnchor (same source as page, UNIT_PRICE_ANCHORS[slug][locale].priceDisplay),
+  //   currency follows locale (zh-hk=HKD / en=USD / ja=JPY) → schema price = page price = shipping currency.
   let offerData: { price: string; currency: string } | null | undefined;
-  if (priceTable || hasPriceRange) {
-    const sym = (product.price_range || '').match(/^(HK\$|NT\$|US\$|\$|¥|￥)/)?.[1] || '';
-    const currency = sym === 'NT$' ? 'TWD' : sym === '¥' || sym === '￥' ? 'JPY' : sym === 'US$' || sym === '$' ? 'USD' : 'HKD';
-    const num = (product.price_range || '').replace(/,/g, '').match(/[\d.]+/);
-    offerData = { price: num ? parseFloat(num[0]).toFixed(2).replace(/\.00$/, '') : '0', currency };
+  const anchor = getUnitPriceAnchor(slug, locale);
+  if (anchor) {
+    offerData = { price: anchor.price.toFixed(2).replace(/\.00$/, ''), currency: locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD' };
+  } else if (priceTable || hasPriceRange) {
+    // 2026-09-14 GMC P0-B fix: fallback branch uses page-converted price (convertToFromPrice = page display),
+    //   currency forced to locale (not inferred from price_range symbol), else no-anchor SKUs schema price
+    //   HKD + shipping USD/JPY → GMC「shipping currency ≠ item price currency」mismatch.
+    const displayPrice = convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
+    const num = (displayPrice || '').replace(/[^\d.]/g, '').match(/[\d.]+/);
+    offerData = {
+      price: num ? parseFloat(num[0]).toFixed(2).replace(/\.00$/, '') : '0',
+      currency: locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
+    };
   } else {
     offerData = null;
   }
@@ -208,7 +222,7 @@ export default function ProductPage({
     product.slug,
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
-    undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳过 aggregateRating (K3 v2 §3.3 约束 4)
+    undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳過 aggregateRating (K3 v2 §3.3 約束 4)
     locale,
     offerData
   );
