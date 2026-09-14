@@ -53,7 +53,7 @@ wrapper .cmd 由 Task Scheduler 以 cmd.exe 运行 = **host 侧，不在 lane sa
 
 - lane-git-commit.py dry-run：白名单过滤正确 (跳过 .hermes 工具/备份)
 - lane-git-commit.py 实跑：src commit (走 guard) + report commit (--no-verify) 均成功
-- 30min 保护：距上次 push 210s → 正确拒绝 push
+- 30min 保护：距上次 push 210s → 正确拒绝 push (只 commit 不 push, exit 0)
 - watchdog：5 条车道全绿 [PASS] (daily/gsc/weekly/blog-deepfix/monthly 均在期望间隔)
 - SSH push：git push origin main 成功 (e2e7deba..23046e3f → ad94d279)
 
