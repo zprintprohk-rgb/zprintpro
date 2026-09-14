@@ -1147,6 +1147,8 @@ export function generateProductJsonLd(
     name,
     description,
     image,
+    // 2026-09-15 GMC「缺少颜色」修复: 定制印刷商品统一声明全彩定制印刷 (GMC 对定制商品接受 color 声明)
+    color: locale === 'zh-hk' ? '全彩定制印刷 (CMYK)' : locale === 'ja' ? 'フルカラーカスタム印刷 (CMYK)' : 'Custom full-color printing (CMYK)',
     url: `${siteConfig.url}/${locale}/product/${slug}/`,
     brand: {
       '@type': 'Brand',
