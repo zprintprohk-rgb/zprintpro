@@ -178,17 +178,75 @@ def main():
         gap = now_ts - last_ts
     except ValueError:
         gap = 99999
+    pushed = False
     if gap < 1800:
         print(f"[lane-git] 距上次 push {gap}s (<30min) -> 本次只 commit 不 push (§0.25 硬下限), "
               f"commit 留待下次 lane/manual push")
-        return 0
+    else:
+        r = run([GIT, "push", "origin", "main"], cwd=repo, check=False)
+        if r.returncode != 0:
+            print(f"[lane-git] push 失败: {r.stdout}\n{r.stderr}", file=sys.stderr)
+            return 5
+        pushed = True
+        print("[lane-git] push 完成 -> origin/main 已更新")
 
-    r = run([GIT, "push", "origin", "main"], cwd=repo, check=False)
-    if r.returncode != 0:
-        print(f"[lane-git] push 失败: {r.stdout}\n{r.stderr}", file=sys.stderr)
-        return 5
-    print("[lane-git] push 完成 -> origin/main 已更新")
+    # 6) 统一执行报告 (K3 2026-09-15 拍板: 定时任务完成后要有可查看的执行报告与结果)
+    #    每次 lane 收尾追加一条记录到 .hermes/logs/cron-execution-report.md
+    write_exec_report(args.lane, args.repo, allowed, pushed, date)
     return 0
+
+
+def write_exec_report(lane, repo, allowed, pushed, date):
+    """追加 lane 执行报告到统一总览文件 cron-execution-report.md (K3 要求可见)."""
+    try:
+        logs_dir = os.path.join(repo, ".hermes", "logs")
+        os.makedirs(logs_dir, exist_ok=True)
+        rep = os.path.join(logs_dir, "cron-execution-report.md")
+        now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+
+        # 本 lane 产出的报告文件 (在 allowed 中找 .md; 优先 logs 下的; 排除总览文件自身)
+        report = "—"
+        for p in allowed:
+            if p.endswith(".md") and p.startswith(".hermes/") \
+                    and "cron-execution-report.md" not in p:
+                report = p
+                break
+        pushed_txt = "✅ push" if pushed else "⏳ commit(未 push)"
+        # 产物列: 仅 lane 真正产出的数据文件 (src/ + matrix), 排除脚本自身 (scripts/) 与报告 (.md)
+        files = [p for p in allowed
+                 if not p.endswith(".md")
+                 and not p.startswith("scripts/")
+                 and not p.startswith(".hermes/logs/")]
+        files_txt = ", ".join(files) if files else "—"
+
+        line = (f"| {now} | {lane} | ✅ 完成 | `{report}` | {files_txt} | {pushed_txt} |\n")
+        if not os.path.exists(rep):
+            header = ("# Cron 执行报告总览\n\n"
+                      "> 每次 lane / watchdog 运行后自动追加一条。数据来源: lane-git-commit.py / cron-watchdog.py。\n\n"
+                      "| 时间 | 任务 | 结果 | 报告路径 | 详情/产物 | push 状态 |\n"
+                      "|------|------|------|----------|----------|-----------|\n")
+            with open(rep, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(header + line)
+        else:
+            with open(rep, "a", encoding="utf-8", newline="\n") as fh:
+                fh.write(line)
+        print(f"[lane-git] 执行报告已追加: {rep}")
+
+        # 同步一份到 redesign worktree .hermes/logs (用户日常查看位置)
+        # 仅当 redesign 与 main 是同一机器的不同 worktree 时才同步
+        redesign = os.path.join(os.path.dirname(MAIN_REPO), "zprintpro-nextjs") if MAIN_REPO.endswith("zprintpro-main-tmp") else ""
+        redesign_rep = os.path.join(redesign, ".hermes", "logs", "cron-execution-report.md") if redesign else ""
+        if redesign_rep and os.path.isdir(os.path.join(redesign, ".hermes")):
+            try:
+                with open(rep, "r", encoding="utf-8") as fh:
+                    content = fh.read()
+                with open(redesign_rep, "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write(content)
+                print(f"[lane-git] 执行报告已同步到 redesign: {redesign_rep}")
+            except OSError as e:
+                print(f"[lane-git] 同步到 redesign 失败: {e}", file=sys.stderr)
+    except OSError as e:
+        print(f"[lane-git] 执行报告写入失败: {e}", file=sys.stderr)
 
 
 if __name__ == "__main__":

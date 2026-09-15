@@ -104,6 +104,55 @@ def main():
     for r in rows:
         print(r)
 
+    # 统一执行报告 (K3 2026-09-15 拍板: 定时任务完成后要有可查看的执行报告与结果)
+    # 每次 watchdog 运行都追加一条到 cron-execution-report.md, 含 5 lane 存活状态。
+    # PASS 也记录 (不只是告警) -> 用户打开总览即可见全部任务状态。
+    try:
+        report_path = os.path.join(LOGS, "cron-execution-report.md")
+        os.makedirs(LOGS, exist_ok=True)
+        ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(now))
+        status_txt = "✅ 通过" if not alerts else f"⚠️ {len(alerts)} 条告警"
+        # 汇总 5 lane 存活状态 -> 放进「产物文件」列 (紧凑展示各 lane 状态)
+        statuses = []
+        for r in rows:
+            r2 = r.strip()
+            if r2.startswith("[OK]"):
+                statuses.append(r2.replace("[OK]  ", "✅").split(":")[0].strip())
+            elif r2.startswith("[FAIL]"):
+                statuses.append(r2.replace("[FAIL]", "❌").split(":")[0].strip())
+            elif r2.startswith("[WAIT]"):
+                statuses.append(r2.replace("[WAIT]", "⏳").split(":")[0].strip())
+        detail = " | ".join(statuses) if statuses else "—"
+        line = (f"| {ts} | ZP-cron-watchdog | {status_txt} | `cron-watchdog-alerts.md` "
+                f"(告警时才写) | {detail} | — |\n")
+        if not os.path.exists(report_path):
+            header = ("# Cron 执行报告总览\n\n"
+                      "> 每次 lane / watchdog 运行后自动追加一条。数据来源: lane-git-commit.py / cron-watchdog.py。\n\n"
+                      "| 时间 | 任务 | 结果 | 报告路径 | 详情/产物 | push 状态 |\n"
+                      "|------|------|------|----------|----------|-----------|\n")
+            with open(report_path, "w", encoding="utf-8", newline="\n") as fh:
+                fh.write(header + line)
+        else:
+            with open(report_path, "a", encoding="utf-8", newline="\n") as fh:
+                fh.write(line)
+        print(f"[watchdog] 执行报告已追加: {report_path}")
+
+        # 同步一份到 redesign worktree .hermes/logs (用户日常查看位置)
+        main_repo = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        redesign = os.path.join(os.path.dirname(main_repo), "zprintpro-nextjs") if main_repo.endswith("zprintpro-main-tmp") else ""
+        redesign_rep = os.path.join(redesign, ".hermes", "logs", "cron-execution-report.md") if redesign else ""
+        if redesign_rep and os.path.isdir(os.path.join(redesign, ".hermes")):
+            try:
+                with open(report_path, "r", encoding="utf-8") as fh:
+                    content = fh.read()
+                with open(redesign_rep, "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write(content)
+                print(f"[watchdog] 执行报告已同步到 redesign: {redesign_rep}")
+            except OSError as e:
+                print(f"[watchdog] 同步到 redesign 失败: {e}", file=sys.stderr)
+    except OSError as e:
+        print(f"[watchdog] 执行报告写入失败: {e}", file=sys.stderr)
+
     if not alerts:
         print(f"\n[PASS] 5 条车道均在期望间隔内 (无告警)")
         return 0
