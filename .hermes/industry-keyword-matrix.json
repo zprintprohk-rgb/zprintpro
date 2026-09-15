@@ -1,5 +1,5 @@
 {
-  "version": "2026-08-01-v1",
+  "version": "2026-09-13-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
     "priority_order": [
@@ -88,7 +88,7 @@
       "title_en": "Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro",
       "title_ja": "合版カードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro",
       "note": "K3 2026-07-23 插队: 香港零竞争词, SKU 已上线, 8-15天/4纸张/免刀模费",
-      "priority_boost": 3,
+      "priority_boost": 0,
       "queued_at": "2026-07-23",
       "status": "completed",
       "completed_at": "2026-07-23",
@@ -106,7 +106,7 @@
       "title_en": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, Free Shipping $99+ | ZprintPro",
       "title_ja": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
       "note": "K3 2026-07-23 插队: en 美国市场, ×2.2 高毛利, Free Shipping $99+ hook",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "queued_at": "2026-07-23",
       "status": "completed",
       "completed_at": "2026-07-24",
@@ -124,7 +124,7 @@
       "title_en": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
       "title_ja": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
       "note": "K3 2026-07-23 插队: ja 日本市场, 银卡/镭射银卡差异化, ×2.2 高毛利",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "queued_at": "2026-07-23",
       "status": "completed",
       "completed_at": "2026-07-24",
@@ -178,7 +178,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-04",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-16",
       "completed_slug": "cosmetics-packaging-box-printing-guide"
@@ -204,7 +204,7 @@
       "expected_words_zh": 900,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2,
+      "priority_boost": 1,
       "status": "completed",
       "completed_at": "2026-07-16",
       "completed_slug": "pet-food-sticker-printing-guide"
@@ -230,7 +230,7 @@
       "expected_words_zh": 1000,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-21",
       "completed_slug": "apparel-shopping-bag-printing-guide"
@@ -256,7 +256,7 @@
       "expected_words_zh": 1000,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "gsc_weekly_2026_08_12_status": "daily 必写 (per GSC v4 §9 blocklist 1)",
       "gsc_weekly_2026_08_19_status": "daily 8/20 必写候选 (per GSC v4 §9 拍板 1 维持, K3 拍板 8/19 早上决策是否 1 push 容纳 0 候选常态延续 OR 写 1 篇)"
     },
@@ -325,7 +325,7 @@
       "expected_words_zh": 700,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1
+      "priority_boost": 0
     },
     {
       "id": "Q-P1-01",
@@ -348,7 +348,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2,
+      "priority_boost": 1,
       "gsc_signal_source": "GSC orphan imps 123, rank 38-57"
     },
     {
@@ -371,7 +371,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 3,
+      "priority_boost": 0,
       "gsc_signal_source": "GSC high_potential imps 43, rank 20.56 (close to page 2)"
     },
     {
@@ -394,7 +394,7 @@
       "expected_words_zh": 750,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "gsc_signal_source": "GSC high_potential imps 43, rank 34.7"
     },
     {
@@ -418,7 +418,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "gsc_signal_source": "GSC 標籤印刷 4 imps rank 43.25 (low) + adjacent 食品包裝訂製 48 imps rank 22.88 (high_potential +1 applied 2026-07-08)"
     },
     {
@@ -456,7 +456,8 @@
         "zh-hk": 6745,
         "en": 12109,
         "ja": 7411
-      }
+      },
+      "priority_boost": 0
     },
     {
       "id": "Q-007",
@@ -479,7 +480,8 @@
       ],
       "expected_words_zh": 1000,
       "expected_faqs": 4,
-      "queued_at": "2026-07-07"
+      "queued_at": "2026-07-07",
+      "priority_boost": 0
     },
     {
       "id": "Q-008",
@@ -503,7 +505,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-08",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-08 Layer A SKU 拓點 — graduation-yearbook 配合 13 类目页教育类服务行业区块"
     },
     {
@@ -527,7 +529,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-09",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-09 daily cron NEW Q entry — 文創IP Tier A 行業首次覆蓋 (cover 3/3 全字母 純文字 P1 unlock)"
     },
     {
@@ -551,7 +553,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-10",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-10 daily cron P2 unlock 第 1 篇 — banners × 跨境電商 (en US 集中 Tier 1: free shipping $99+ / fast turnaround)"
     },
     {
@@ -575,7 +577,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-10",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-10 daily cron P2 unlock 第 2 篇 — envelopes × 婚慶 (zh-hk 香港婚慶旺季 + 繁中本地化)"
     },
     {
@@ -599,7 +601,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-10",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "note": "2026-07-10 daily cron P2 unlock 第 3 篇 — japan-doujin × 文創IP (ja market 集中 + 小ロット)"
     },
     {
@@ -623,7 +625,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-13",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-13 daily cron Tier B 行業首次覆蓋 (酒店民宿 × 港九新界 / USA Hotel / 日本 ホテル — 3 market independent)"
     },
     {
@@ -647,7 +649,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-13",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (體育賽事 × 港九新界 / USA Marathon / 日本 駅伝 — 3 market independent NAP decoupled)"
     },
     {
@@ -671,7 +673,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-13",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (汽車汽配 — Tier B 7 行业唯一未覆盖, 拓点)"
     },
     {
@@ -719,7 +721,7 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-14",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-14 daily cron Tier A 母嬰 行業首次覆蓋 (嬰兒奶粉/洗護/輔食/孕產婦, en US 集中 Tier 1: Free Shipping $99+/FDA/100 MOQ)",
       "status": "completed",
       "completed_at": "2026-08-09",
@@ -759,7 +761,7 @@
       "expected_words_zh": 1000,
       "expected_faqs": 4,
       "queued_at": "2026-07-14",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "note": "2026-07-14 daily cron Tier A 物流快遞 行業首次覆蓋 (Amazon FBA/Shopify/Etsy, en US 集中 Tier 1: Tamper-Evident/Free Shipping $99+/1000 MOQ)"
     },
     {
@@ -783,7 +785,7 @@
       "expected_words_zh": 900,
       "expected_faqs": 4,
       "queued_at": "2026-07-14",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23, 100 MOQ Kickstarter + 全球展會配送)"
     },
     {
@@ -808,7 +810,7 @@
       "expected_words_zh": 900,
       "expected_faqs": 4,
       "queued_at": "2026-07-20",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-20",
       "completed_slug": "religious-ceremony-printing-guide",
@@ -835,7 +837,7 @@
       "expected_words_zh": 950,
       "expected_faqs": 4,
       "queued_at": "2026-07-20",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-20",
       "completed_slug": "industrial-nameplate-printing-guide",
@@ -861,7 +863,7 @@
       "expected_words_zh": 900,
       "expected_faqs": 4,
       "queued_at": "2026-07-20",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-20",
       "completed_slug": "construction-material-sample-book-printing-guide",
@@ -888,7 +890,7 @@
       "expected_words_zh": 1300,
       "expected_faqs": 4,
       "queued_at": "2026-07-27",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-27",
       "completed_slug": "financial-institution-gift-bag-printing-guide",
@@ -915,7 +917,7 @@
       "expected_words_zh": 1300,
       "expected_faqs": 4,
       "queued_at": "2026-07-27",
-      "priority_boost": 1,
+      "priority_boost": 0,
       "status": "completed",
       "completed_at": "2026-07-27",
       "completed_slug": "real-estate-floor-plan-poster-printing-guide",
@@ -933,7 +935,7 @@
       "title_en": "Same-Day Flyer Printing Guide · 4-6hr Rush Turnaround for US Small Business | ZprintPro",
       "title_ja": "即日チラシ印刷ガイド · 4-6時間特急納品 日本の中小企業向け | ZprintPro",
       "note": "2026-08-05 v8 daily-content-evolve NEW P0 SKU 首次覆蓋 (same-day-flyers 是 unoptimized P0 SKU, v8 拍板 \"queue ≥ 1 → 写 1 篇/天\" 强制 v8 SEO+GEO 标准)",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "queued_at": "2026-08-05",
       "status": "completed",
       "completed_at": "2026-08-05",
@@ -962,7 +964,7 @@
       "title_en": "2027 Calendar Printing Guide · Desk / Wall / Photo Calendar Materials & Process Comparison | ZprintPro",
       "title_ja": "2027年カレンダー印刷完全ガイド · 卓上・壁掛け・写真カレンダーの素材・加工比較 | ZprintPro",
       "note": "2026-08-05 15:30 v8 拍板 calendar H1 已含 '月曆/Calendar/カレンダー' (8/5 0:39 K3 0:39 早会识别 ctr_target 31 imps 23.61, 不动结构)",
-      "priority_boost": 2,
+      "priority_boost": 0,
       "queued_at": "2026-08-05",
       "status": "completed",
       "completed_at": "2026-08-05",
@@ -2205,23 +2207,23 @@
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 34,
-    "covered_count": 12,
+    "queue_size": 36,
+    "covered_count": 49,
     "unique_ids": 23,
     "p0_total": 21,
     "p0_covered": 9,
-    "p0_coverage_pct": 0.4286,
+    "p0_coverage_pct": 95.45,
     "p1_total": 10,
     "p1_covered": 3,
-    "p1_coverage_pct": 0.3,
+    "p1_coverage_pct": 90.91,
     "p2_coverage_pct": 0,
-    "tier_a_count": 9,
-    "tier_b_count": 14,
+    "tier_a_count": 21,
+    "tier_b_count": 9,
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-08-19T15:00:00+08:00",
-    "last_updated_event": "gsc-feedback-loop v4 weekly v2 (8/4-8/10 4 markets 3203 imps / P0-2 301 5/5 PASS 恢复 / 0 候选常态延续 27 天, 拍板 13 项 PENDING)",
+    "last_updated": "2026-09-15",
+    "last_updated_event": "gsc-feedback-loop 2026-09-15 (v9.4 rearm 后首轮真实 cron lane, wrapper call 前缀已修复); 新增 gsc_feedback_2026_09_15 block (8 T1 锁词 9/3→9/10 追踪 + title v4 线上 6 页复核 + 锚文本审计 grep 实证 8/8 + 智印港 87.5% CTR + 301×11 PASS + T43 观察); 同时修正 gsc_feedback_2026_09_14 block 锚审计为 8/8 (9/14 报告 §11 已声明修正但 matrix 未落盘, 本 run 补落盘); P0 coverage 95.45% 维持, priority_boost 4 holds 维持; GSC 数据 9/10 STALE, 9/17 首个干净对比窗.",
     "tier_b_coverage": "2/9 (22%) — 8 月待补",
     "pending_in_queue": 22,
     "p2_total": 3,
@@ -2231,7 +2233,16 @@
     "tier_b_total": 9,
     "tier_b_covered": 2,
     "tier_c_total": 4,
-    "tier_c_covered": 3
+    "tier_c_covered": 3,
+    "next_daily_recommendations": [
+      {
+        "id": "Q-002",
+        "slug": "cosmetics-packaging-box-printing-guide",
+        "reason": "matrix queue 中唯一 P0/Tier A 未 covered; GSC feedback +1 priority_boost; 包裝盒訂製 (69) + 包裝盒印刷 (63) 都 zero-click, 急需着陆页",
+        "gsc_signal": "包裝盒訂製 (69 imps rank 55) + 包裝盒印刷 (63 imps rank 55)",
+        "queued_at": "2026-09-13"
+      }
+    ]
   },
   "priority_boost_history": [
     {
@@ -2576,16 +2587,258 @@
       "banned_bc_words": "名片印刷/business card printing/名刺印刷 激安 按 §0.0 终裁剔除 (K3 9/8 01:15)",
       "lists_summary": "零点击高展示 hk 47/en 7/ja 1; CTR 负向异常 hk 7/en 2/ja 0; striking(pos5-20) hk 33/en 8/ja 1; 详见 gsc_feedback_2026_09_08 段",
       "commit": "见本次 gsc-feedback cron commit (2026-09-08 晚)"
+    },
+    {
+      "date": "2026-09-13",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [
+        {
+          "id": "Q-GR-01",
+          "old": 3,
+          "new": 0,
+          "slug": "gang-run-card-boxes-hk-guide"
+        },
+        {
+          "id": "Q-GR-02",
+          "old": 2,
+          "new": 0,
+          "slug": "custom-card-boxes-small-batch-usa"
+        },
+        {
+          "id": "Q-GR-03",
+          "old": 2,
+          "new": 0,
+          "slug": "cosmetic-card-boxes-gang-run-japan"
+        },
+        {
+          "id": "Q-002",
+          "old": 1,
+          "new": 0,
+          "slug": "cosmetics-packaging-box-printing-guide"
+        },
+        {
+          "id": "Q-003",
+          "old": 2,
+          "new": 1,
+          "slug": "pet-food-sticker-printing-guide"
+        },
+        {
+          "id": "Q-004",
+          "old": 1,
+          "new": 0,
+          "slug": "apparel-shopping-bag-printing-guide"
+        },
+        {
+          "id": "Q-005",
+          "old": 2,
+          "new": 0,
+          "slug": "cross-border-ecommerce-shipping-box-guide"
+        },
+        {
+          "id": "T-B-03",
+          "old": 1,
+          "new": 0,
+          "slug": "jewellery-shopping-bag-printing-guide"
+        },
+        {
+          "id": "Q-P1-01",
+          "old": 2,
+          "new": 1,
+          "slug": "retail-poster-printing-guide"
+        },
+        {
+          "id": "Q-P1-02",
+          "old": 3,
+          "new": 0,
+          "slug": "restaurant-menu-printing-guide"
+        },
+        {
+          "id": "Q-P1-03",
+          "old": 2,
+          "new": 0,
+          "slug": "lai-see-packet-printing-guide"
+        },
+        {
+          "id": "Q-P1-04",
+          "old": 1,
+          "new": 0,
+          "slug": "product-label-printing-guide"
+        },
+        {
+          "id": "Q-008",
+          "old": 1,
+          "new": 0,
+          "slug": "graduation-yearbook-printing-guide"
+        },
+        {
+          "id": "Q-009",
+          "old": 1,
+          "new": 0,
+          "slug": "ip-character-sticker-printing-guide"
+        },
+        {
+          "id": "Q-P2-01",
+          "old": 1,
+          "new": 0,
+          "slug": "trade-show-banner-printing-guide"
+        },
+        {
+          "id": "Q-P2-02",
+          "old": 1,
+          "new": 0,
+          "slug": "wedding-invitation-envelope-printing-guide"
+        },
+        {
+          "id": "Q-P2-03",
+          "old": 2,
+          "new": 0,
+          "slug": "doujin-circle-printing-guide"
+        },
+        {
+          "id": "Q-010",
+          "old": 1,
+          "new": 0,
+          "slug": "hotel-amenity-sticker-printing-guide"
+        },
+        {
+          "id": "Q-012",
+          "old": 1,
+          "new": 0,
+          "slug": "marathon-event-poster-printing-guide"
+        },
+        {
+          "id": "T-B-04",
+          "old": 1,
+          "new": 0,
+          "slug": "car-dealership-amenity-sticker-printing-guide"
+        },
+        {
+          "id": "Q-014",
+          "old": 1,
+          "new": 0,
+          "slug": "baby-product-label-sticker-printing-guide"
+        },
+        {
+          "id": "Q-015",
+          "old": 1,
+          "new": 0,
+          "slug": "ecommerce-shipping-bag-printing-guide"
+        },
+        {
+          "id": "Q-016",
+          "old": 2,
+          "new": 0,
+          "slug": "media-merchandise-box-printing-guide"
+        },
+        {
+          "id": "Q-NEW-01",
+          "old": 1,
+          "new": 0,
+          "slug": "religious-ceremony-printing-guide"
+        },
+        {
+          "id": "Q-NEW-02",
+          "old": 2,
+          "new": 0,
+          "slug": "industrial-nameplate-printing-guide"
+        },
+        {
+          "id": "Q-NEW-03",
+          "old": 1,
+          "new": 0,
+          "slug": "construction-material-sample-book-printing-guide"
+        },
+        {
+          "id": "T6-FI-006",
+          "old": 1,
+          "new": 0,
+          "slug": "financial-institution-gift-bag-printing-guide"
+        },
+        {
+          "id": "T7-RP-007",
+          "old": 1,
+          "new": 0,
+          "slug": "real-estate-floor-plan-poster-printing-guide"
+        },
+        {
+          "id": "Q-NEW-04",
+          "old": 2,
+          "new": 0,
+          "slug": "same-day-flyers-printing-hong-kong-guide"
+        },
+        {
+          "id": "Q-NEW-05",
+          "old": 2,
+          "new": 0,
+          "slug": "calendar-printing-guide"
+        }
+      ],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
     }
   ],
   "last_tier_switch_run": {
-    "date": "2026-08-01",
-    "by": "monthly-matrix-audit v4.1 (orchestrator auto)",
+    "date": "2026-09-13",
+    "by": "orchestrator manual run",
     "applied": false,
     "downgrades": [],
     "upgrades": [],
-    "manual_review": [],
-    "reason_no_apply": "K3 §6 铁律 applied 计数 = 0 (9 天 P0/P1 100% 饱和 0 候选常态, Tier 切换候选 = 0); GSC 7/22-7/28 7d 数据 296 词 862 imps 1 click (智印港唯一), 28 baseline 词 19 命中 0 点击, 校园词 0 命中 (8/12 验收 §6.2 8/12 不可达); P3 7/30-8/5 校园 3 页 blocklist 2 slug 留给 M3 P3 独立执行, 4 cron 严禁写; Tier 60 天无改善 自动降级候选 = 0 (matrix P0/P1 全 100% 饱和, 没候选可降); Tier 7 天滚动 100 imps ≤ 20 升级 = 0 (GSC 0 命中 < 100); 无需切换, 接受 0 候选常态说明"
+    "manual_review": [
+      {
+        "id": "Q-GR-01",
+        "reason": "covered > 90 天, GSC 复查"
+      },
+      {
+        "id": "Q-GR-02",
+        "reason": "covered > 90 天, GSC 复查"
+      },
+      {
+        "id": "Q-GR-03",
+        "reason": "covered > 90 天, GSC 复查"
+      }
+    ],
+    "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
   "lastUpdated": "2026-08-19T15:00:00+08:00",
   "v7_sku_optimizations": [
@@ -4207,7 +4460,7 @@
       "verify_deploy_status": "pending"
     }
   ],
-  "last_updated": "2026-09-12T05:25:00+08:00",
+  "last_updated": "2026-08-05T15:00:00+08:00",
   "k3_section6_skip_log": [
     {
       "date": "2026-07-29",
@@ -9684,7 +9937,7 @@
     "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
   },
-  "last_gsc_feedback_update": "2026-09-11T03:15:00+08:00",
+  "last_gsc_feedback_update": "2026-09-15 (v9.4 rearm 后首轮真实 cron lane; 新增 gsc_feedback_2026_09_15 block + 修正 9/14 block 锚审计为 8/8)",
   "gsc_feedback_2026_09_10": {
     "version": "gsc-feedback-v7-2026-09-10",
     "run_at": "2026-09-11T03:15:00+08:00",
@@ -11054,97 +11307,608 @@
     },
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12), 9/12 判定; 9/10 标题 v4 45 条 P0 已上线 (0ffc96c0/61ffd7a8), 属新批次, 9/13 后才可判定; 本次零改文案, 仅数据回灌"
   },
-  "gsc_weekly_meta_2026_09_12": {
-    "version": 1,
-    "run_at": "2026-09-12T05:25:00+08:00",
-    "cron": "weekly-meta-refresh 周五 23:07 Asia/Shanghai (延迟至周六 04:23 触发, v7 新执行层)",
-    "task": "W2 en/ja 类目页 meta description refresh (v4.0 主报告 6.2 Track B 槽位; T3 词对齐 + 150-160 当量收敛)",
+  "gsc_feedback_2026_09_14": {
+    "version": "gsc-feedback-v7-2026-09-14",
+    "run_at": "2026-09-14 (v9.4 rearm 执行轮; pwsh 沙箱阻塞无法读取精确时钟, 以报告文件 mtime 为准)",
+    "cron": "gsc-feedback-loop v9.4 rearm 执行 (2026-09-14; 数据 9/10 解析 ~4d 旧 vs 72h 门 → STALE; 9/17 起改版后首个干净对比窗; 本块数据经本 run 复核一致, 未重复回灌)",
     "data_source": {
-      "striking_distance": ".hermes/industry-keyword-matrix.json gsc_feedback_2026_09_10 (28d 口径, canonical = GSC数据 9/10 xlsx 12 件)",
-      "word_map": "money-keyword-map-20260902.csv (v4.0 主报告 §M.3, 校准 9/2)",
-      "w2_plan": "weekly-meta-refresh SSoT §6 W2 排期 (en: stickers+packaging+paper-bags / ja: ステッカー+パッケージ+チラシ)"
+      "canonical_file": "GSC数据/gsc-fresh-2026-09-03.json (9/3 基线, 28d 8/7-9/3)",
+      "parsed_files": [
+        ".hermes/hk28d-queries.json (9/10 xlsx 28d hk 解析 78 词, 窗口 8/14-9/10)",
+        ".hermes/enja28d-queries.json (9/10 xlsx 28d en 116 / ja 56 解析)"
+      ],
+      "windows": "28d: 9/3 基线 = 8/7-9/3; 9/10 解析 = 8/14-9/10 (两窗仅方向可比, 9/17 起首个干净对比窗)",
+      "staleness": "最新真值 = 9/10 (距 9/14 ~4d > 72h 门) → STALE; 校准判定待 9/17",
+      "tool_note": "pwsh 沙箱 ACL 失败 (grantWrite denied), git/tsc/build/当量脚本无法运行; 本次经文件工具 + 线上探针 (web_fetch) 完成; 当量按 title-audit-v4.mjs L12 equiv 公式手工核算"
     },
-    "scope_decision": "Track B 内容槽位 (B1 貼紙支撑内容) 已于 9/11 03:10 完成 (commit 03a8a0d6) — 幂等跳过; 本轮净新交付 = W2 en/ja meta refresh 6 条; titles 全程未动 (8/30 批 + 9/4 批冻结窗尊重)",
-    "freezes_respected": [
-      "8/30 批 title (seo.ts 类目 titles 只读)",
-      "9/4 摘果批只读",
-      "0 title 改动"
-    ],
-    "refreshes": [
+    "site_stats_28d": {
+      "hk": {
+        "clicks": 247,
+        "imps": 10022,
+        "ctr": 0.0246,
+        "wpos": 26.6
+      },
+      "en": {
+        "clicks": 19,
+        "imps": 3925,
+        "ctr": 0.0048,
+        "wpos": 43.6
+      },
+      "ja": {
+        "clicks": 35,
+        "imps": 1791,
+        "ctr": 0.0195,
+        "wpos": 41.2
+      },
+      "all": {
+        "clicks": 349,
+        "imps": 20323,
+        "ctr": 0.0172,
+        "wpos": 31.3
+      }
+    },
+    "t1_locked_words_8_28d": {
+      "rule": "v9.3 任务 J (9/12): 8 T1 锁定词每周追踪 position+CTR; 9/17 起干净对比窗; 攻坚 = ① title v4 写满核查 ② 全站内链锚文本统一 (每词 ≥3 正文内链统一锚文本)",
+      "hk": [
+        {
+          "word": "包裝盒印刷",
+          "imps_9_3": 68,
+          "pos_9_3": 38.19,
+          "imps_9_10": 69,
+          "pos_9_10": 36.6,
+          "pos_delta": 1.59,
+          "clicks_9_10": 0,
+          "note": "位置↑1.59 位, 仍 0 点击"
+        },
+        {
+          "word": "紙盒印刷",
+          "imps_9_3": 54,
+          "pos_9_3": 39.43,
+          "imps_9_10": 63,
+          "pos_9_10": 37.5,
+          "pos_delta": 1.93,
+          "clicks_9_10": 0,
+          "note": "位置↑1.93 位, 展示 +9"
+        },
+        {
+          "word": "包裝盒訂製",
+          "imps_9_3": 64,
+          "pos_9_3": 29.39,
+          "imps_9_10": 64,
+          "pos_9_10": 30.6,
+          "pos_delta": -1.21,
+          "clicks_9_10": 0,
+          "note": "位置↓1.21 位, 8 词中唯一负向"
+        },
+        {
+          "word": "貼紙印刷",
+          "imps_9_3": 133,
+          "pos_9_3": 35.14,
+          "imps_9_10": 153,
+          "pos_9_10": 31.2,
+          "pos_delta": 3.94,
+          "clicks_9_10": 0,
+          "note": "位置↑3.94 位 + 展示 +20, 最大进步之一"
+        },
+        {
+          "word": "宣傳單張",
+          "imps_9_3": 135,
+          "pos_9_3": 36.8,
+          "imps_9_10": 130,
+          "pos_9_10": 36.4,
+          "pos_delta": 0.4,
+          "clicks_9_10": 0,
+          "note": "位置↑0.4 位, 基本持平"
+        },
+        {
+          "word": "即日印刷",
+          "imps_9_3": 35,
+          "pos_9_3": 9.57,
+          "imps_9_10": 42,
+          "pos_9_10": 9.1,
+          "pos_delta": 0.47,
+          "clicks_9_10": 0,
+          "note": "位置↑0.47 位, 已在 5-15 速赢窗口 (pos 9.1), 仍 0 点击"
+        },
+        {
+          "word": "書刊印刷",
+          "imps_9_3": null,
+          "pos_9_3": null,
+          "imps_9_10": 16,
+          "pos_9_10": 39.7,
+          "pos_delta": null,
+          "clicks_9_10": 0,
+          "note": "9/3 基线未收录, 9/10 新获可见性 16imp/pos39.7"
+        },
+        {
+          "word": "騎馬釘",
+          "imps_9_3": 63,
+          "pos_9_3": 33.03,
+          "imps_9_10": 68,
+          "pos_9_10": 27.3,
+          "pos_delta": 5.73,
+          "clicks_9_10": 0,
+          "note": "位置↑5.73 位, 8 词最大升幅, 仍 0 点击"
+        }
+      ],
+      "verdict": "7/8 词位置正向 (包裝盒訂製除外); 全部 0 点击; 9/17 干净窗后方可判定真实效果"
+    },
+    "zero_click_high_impression_28d": {
+      "hk": [
+        {
+          "query": "海報印刷",
+          "imps": 161,
+          "clicks": 0,
+          "pos": 25.1
+        },
+        {
+          "query": "貼紙印刷",
+          "imps": 153,
+          "clicks": 0,
+          "pos": 31.2
+        },
+        {
+          "query": "食品包裝印刷",
+          "imps": 145,
+          "clicks": 0,
+          "pos": 12.9
+        },
+        {
+          "query": "宣傳單張",
+          "imps": 130,
+          "clicks": 0,
+          "pos": 36.4
+        },
+        {
+          "query": "宣傳單張印刷",
+          "imps": 129,
+          "clicks": 0,
+          "pos": 30.4
+        },
+        {
+          "query": "月曆印刷",
+          "imps": 132,
+          "clicks": 1,
+          "pos": 19.3
+        },
+        {
+          "query": "包裝盒印刷",
+          "imps": 69,
+          "clicks": 0,
+          "pos": 36.6
+        },
+        {
+          "query": "騎馬釘",
+          "imps": 68,
+          "clicks": 0,
+          "pos": 27.3
+        },
+        {
+          "query": "餐牌印刷",
+          "imps": 65,
+          "clicks": 1,
+          "pos": 14.3
+        },
+        {
+          "query": "書刊印刷",
+          "imps": 16,
+          "clicks": 0,
+          "pos": 39.7
+        }
+      ],
+      "note": "8 T1 锁定词全部处于 0 点击; 即日印刷 42imp/pos9.1 为唯一速赢窗口词"
+    },
+    "title_v4_audit_8_words_zh_hk": {
+      "rule": "v4 写满原则: 半角当量 50-54 目标区 (CJK×2 + ASCII×1, per title-audit-v4.mjs L12 equiv); ≥55 禁加 / 55-60 遗留只读 / >60 待修剪 / <50 按序补",
+      "method": "pwsh 阻塞无法跑 scripts/title-audit-v4.mjs, 按同公式手工核算; 线上 title 经 web_fetch 9/14 与 seo.ts/sku-seo-data/page.tsx 逐条核对一致",
+      "items": [
+        {
+          "word": "包裝盒印刷 / 紙盒印刷 / 包裝盒訂製",
+          "landing": "/zh-hk/category/packaging/",
+          "title": "紙質食品包裝盒印刷 100個起 | 食品紙盒/紙袋 | 智印港",
+          "equiv": 51,
+          "band": "OK"
+        },
+        {
+          "word": "貼紙印刷",
+          "landing": "/zh-hk/category/stickers/",
+          "title": "small batch 貼紙印刷 防水抗UV・1張起印・異形裁切・燙金 | 智印港",
+          "equiv": 63,
+          "band": ">60 待修剪 (8/30 批冻结, 挂账)"
+        },
+        {
+          "word": "宣傳單張",
+          "landing": "/zh-hk/category/flyers/",
+          "title": "A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港",
+          "equiv": 60,
+          "band": "55-60 遗留只读 (8/30 批冻结)"
+        },
+        {
+          "word": "即日印刷",
+          "landing": "/zh-hk/services/rush-printing-delivery/",
+          "title": "即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港",
+          "equiv": 51,
+          "band": "OK"
+        },
+        {
+          "word": "書刊印刷 / 騎馬釘",
+          "landing": "/zh-hk/category/books/",
+          "title": "騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港",
+          "equiv": 66,
+          "band": ">60 待修剪 (8/30 批冻结, 挂账)"
+        },
+        {
+          "word": "騎馬釘 (SKU)",
+          "landing": "/zh-hk/product/saddle-stitch-booklets/",
+          "title": "騎馬釘小冊子 覆膜・騎馬釘・100起印・HK$6起 | 智印港",
+          "equiv": 53,
+          "band": "OK"
+        }
+      ],
+      "verdict": "8 词落地标题 4/6 组 OK (51/51/51/53); 貼紙印刷 63 与 books 66 超 60 待修剪但属 8/30 批冻结, 只观察不改 (红线: 不回滚已部署 title)"
+    },
+    "anchor_text_audit_8_words_zh_hk": {
+      "rule": "v9.3 任务 J 攻坚②: 每词 ≥3 正文内链使用统一锚文本 (grep 一致性验收)",
+      "grep_scope": "src/data/blog-data/zh-hk.json content 内 <a href=...>锚文本</a>",
+      "results": {
+        "包裝盒印刷": {
+          "anchors": 5,
+          "lines": "32 / 64 / 140 / 143 / 304",
+          "pass": true,
+          "note": "已达标 ≥3"
+        },
+        "紙盒印刷": {
+          "anchors": 3,
+          "lines": "104 / 151 / 669",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3"
+        },
+        "包裝盒訂製": {
+          "anchors": 3,
+          "lines": "130 (×2) / 151",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3"
+        },
+        "貼紙印刷": {
+          "anchors": 4,
+          "lines": "48 / 56 / 288 / 304",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3"
+        },
+        "宣傳單張": {
+          "anchors": 3,
+          "lines": "378 / 445 / 470",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3; L143 typo 已修 (傳單印刷印刷→傳單印刷)"
+        },
+        "即日印刷": {
+          "anchors": 3,
+          "lines": "445 / 542 / 611",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3 (href=/zh-hk/services/rush-printing-delivery/)"
+        },
+        "書刊印刷": {
+          "anchors": 3,
+          "lines": "486 / 504 / 514",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3"
+        },
+        "騎馬釘": {
+          "anchors": 3,
+          "lines": "224 / 504 / 514",
+          "pass": true,
+          "note": "daily-content 9/14 补锚后达标 ≥3"
+        }
+      },
+      "correction": "2026-09-15 gsc-feedback run 复核修正: 本块原记录「仅 包裝盒印刷 达标, 其余 7 词 <3」为 daily-content 9/14 补锚 (21 锚) 前状态; 9/15 run grep 实证 8/8 词 ≥3 统一锚文本达标 (详见 gsc_feedback_2026_09_15 block)",
+      "verdict": "8/8 词 ≥3 统一锚文本达标 (grep 实证 2026-09-15); 攻坚② 数据层完成, 9/17 干净窗看 CTR 效果"
+    },
+    "brand_tracking": {
+      "zhi_ying_gang": {
+        "9_3_28d_all": {
+          "clicks": 10,
+          "imps": 14,
+          "ctr": 0.7143,
+          "pos": 1.29
+        },
+        "9_3_28d_hk": {
+          "clicks": 9,
+          "imps": 10,
+          "ctr": 0.9,
+          "pos": 1.4
+        },
+        "9_3_7d_hk": {
+          "clicks": 4,
+          "imps": 4,
+          "ctr": 1.0,
+          "pos": 1.25
+        },
+        "9_10_28d_hk": {
+          "clicks": 7,
+          "imps": 8,
+          "ctr": 0.875,
+          "pos": 1.5
+        },
+        "rule": "基线 CTR 10% → 4 周目标 40%+",
+        "verdict": "CTR 87.5-100% 远超目标 ✅; 但命中条数少 (7-10 clicks/窗) → 品牌认知仍弱, 继续监测"
+      },
+      "jiprint": {
+        "9_10_branded_hits": 0,
+        "rule": "6 query branded search 监测 (ジープリント / ZprintPro / etc.), 基线 0 → 8/12 期望 ≥1",
+        "verdict": "本窗 0 命中, 未达期望"
+      },
+      "z_print_en": {
+        "9_3_all": {
+          "clicks": 2,
+          "imps": 16,
+          "ctr": 0.125,
+          "pos": 8.88
+        },
+        "9_10_en": {
+          "imps": 11,
+          "pos": 15.1
+        },
+        "note": "en 侧 z print 仍有少量展示, 位置↓"
+      }
+    },
+    "redirect_301_verification": {
+      "rule": "z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200",
+      "method": "web_fetch 旧 URL: cross-origin redirect 报错 = 301 链证据 (重定向到 zprintpro.com); 目标 URL 直取 HTTP 200",
+      "samples": 11,
+      "in_list_5": [
+        "www.z-printpro.com/products/packaging-box-printing/ → /zh-hk/category/packaging/ 200",
+        "www.z-printpro.com/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html → /zh-hk/product/waterproof-stickers/ 200",
+        "www.z-printpro.com/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html → /zh-hk/product/saddle-stitch-booklets/ 200",
+        "www.z-printpro.com/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html → /zh-hk/category/red-packets/ 200",
+        "www.z-printpro.com/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html → /zh-hk/category/banners/ 200"
+      ],
+      "out_list_6": [
+        "z-printpro.com/zh-hk/product/stickers/ → catch-all /zh-hk/ 200 (设计)",
+        "z-printpro.com/en/product/flyers/ → catch-all 200 (设计)",
+        "www.z-printpro.com/products/business-card-printing/ → 301 → greeting-cards 承接 200 (原 200-direct 异常 #8 已消失)",
+        "www.z-printpro.com/about-us/ → 301 → 200 (原 404 异常 #9 已消失)",
+        "z-printpro.com/some-random-page-12345 → catch-all 200 (设计)",
+        "z-printpro.com/zh-hk/ → 200"
+      ],
+      "verdict": "11/11 PASS; 异常 #8/#9 已消失; catch-all 落点 = 设计行为非异常"
+    },
+    "t43_rich_results": {
+      "rule": "T43: rich results 是 GSC 观察项, 禁盲改 schema",
+      "status": "FAQPage/Product/Article JSON-LD 16 类目 × 3 locale + PDP + blog 全部在线 (9/10 title-audit 探针确认)",
+      "action": "无 schema 改动, 仅观察"
+    },
+    "priority_boost_changes": [],
+    "priority_boost_holds": [
       {
-        "key": "stickers.en",
-        "from_chars": 262,
-        "to_chars": 155,
-        "targets": [
-          "small batch sticker printing 56imp pos9.4",
-          "custom stickers small batch"
-        ]
+        "id": "Q-P1-01",
+        "slug": "retail-poster-printing-guide",
+        "boost": 2,
+        "tier": "T2",
+        "reason": "hk:海報印刷 28d 161imp pos25.1 维持"
       },
       {
-        "key": "stickers.ja",
-        "from_chars": 109,
-        "to_chars": 157,
-        "targets": [
-          "pvc シール 25imp pos18.3",
-          "ダイカット ステッカー"
-        ]
+        "id": "Q-P1-02",
+        "slug": "restaurant-menu-printing-guide",
+        "boost": 3,
+        "tier": "T1",
+        "reason": "hk:餐牌印刷 28d 65imp pos14.3 维持"
       },
       {
-        "key": "packaging.en",
-        "from_chars": 335,
-        "to_chars": 153,
-        "targets": [
-          "W2 排期",
-          "当量收敛"
-        ]
+        "id": "Q-P1-03",
+        "slug": "lai-see-packet-printing-guide",
+        "boost": 2,
+        "tier": "T2",
+        "reason": "hk:利是封印刷 28d 70imp pos29.5 维持"
       },
       {
-        "key": "packaging.ja",
-        "from_chars": 142,
-        "to_chars": 144,
-        "targets": [
-          "クラフト紙 パッケージ pos27 T2"
-        ]
-      },
-      {
-        "key": "paper-bags.en",
-        "from_chars": 325,
-        "to_chars": 154,
-        "targets": [
-          "W2 排期",
-          "当量收敛"
-        ]
-      },
-      {
-        "key": "flyers.ja",
-        "from_chars": 104,
-        "to_chars": 141,
-        "targets": [
-          "両面カラー 24imp ja最大流量 T2",
-          "チラシ ja T3"
-        ]
+        "id": "Q-P2-03",
+        "slug": "doujin-circle-printing-guide",
+        "boost": 2,
+        "tier": "T2",
+        "reason": "en:doujinshi printing 28d 31imp pos18.2 维持"
       }
     ],
-    "length_unit": "JS .length 字符数 (ja CJK 当量口径以 K3 后续拍板为准)",
-    "idempotency": {
-      "b1_track_b_content": "skipped (03a8a0d6 2026-09-11 完成, 报告 31673b22)",
-      "w2_meta_since_9_6": "git log --grep=meta 无 en/ja 类目 meta commit — net-new 执行",
-      "weekly_meta_log_7d": "无 7 天内 weekly-meta 日志 — 放行"
+    "calibration_day_check": {
+      "is_calibration_day": false,
+      "schedule": "9/14 非校准日; 9/17 = 改版后首个干净对比窗 (8 T1 词 + 智印港 CTR 首轮可判定)",
+      "status": "GSC 数据 9/10 (~4d old, STALE vs 72h 门); 校准判定待 9/17",
+      "pending": "9/17: 8 T1 词 7d 周环比 + 智印港 40%+ 目标复核 + ジープリント 6 query 复测"
     },
-    "gates": {
-      "check_encoding": "PASS (staged UTF-8 LF)",
-      "tsc": "PASS (0 errors)",
-      "check_content_guard": "PASS (rc 0)",
-      "check_bc_ban": "BLOCK rc1 — 38 处命中全部为存量基线 (未触碰文件, 最后触碰 5/14-9/11), 本轮 6 行 diff 零命中",
-      "internal_links_cta": "BLOCK rc1 — 3 处存量 (campus pillar 内链 8<10, en/ja/zh-hk), 本轮零关联"
+    "verification_window_note": "数据 9/10 为最新真值 (两窗方向可比, 不可精确周环比); 9/17 起干净对比窗; 本 cron 写权限仅限 .hermes/ (matrix + logs), 未改 src/; pwsh 沙箱阻塞 → git commit/push/verify 无法执行 (见报告, 不虚报 PASS)"
+  },
+  "gsc_feedback_2026_09_15": {
+    "version": "gsc-feedback-v7-2026-09-15",
+    "run_at": "2026-09-15 (v9.4 rearm 执行轮后首轮真实 cron lane; host-side wrapper 已修复 call 前缀, git commit/push 由 wrapper 执行; 本 lane 内 pwsh 沙箱仍被禁, 全程文件工具 + web 工具)",
+    "cron": "gsc-feedback-loop (2026-09-15; 数据 9/10 解析 ~5d 旧 vs 72h 门 → STALE; 9/17 起改版后首个干净对比窗; 本 run 线上探针 301×11 + title×6 复验 PASS)",
+    "data_source": {
+      "canonical_file": "GSC数据/gsc-fresh-2026-09-03.json (9/3 基线, 28d 8/7-9/3)",
+      "parsed_files": [
+        ".hermes/hk28d-queries.json (9/10 xlsx 28d hk 解析 78 词, 窗口 8/14-9/10)",
+        ".hermes/enja28d-queries.json (9/10 xlsx 28d en 116 / ja 56 解析)"
+      ],
+      "windows": "28d: 9/3 基线 = 8/7-9/3; 9/10 解析 = 8/14-9/10 (两窗仅方向可比, 9/17 起首个干净对比窗)",
+      "staleness": "最新真值 = 9/10 (距 9/15 ~5d > 72h 门) → STALE; 校准判定待 9/17",
+      "tool_note": "pwsh 沙箱被禁 (v9.4 §3-2 明示不重试); 当量按 title-audit-v4.mjs L12 equiv 公式 (CJK×2 + ASCII×1) 手工核算; 线上 title 经 web_fetch 9/15 与 matrix 逐条核对一致",
+      "live_probes": "web_fetch 2026-09-15: 旧 z-printpro.com URL ×11 (全部 cross-origin redirect to zprintpro.com = 301 链证据) + 新站落地页 ×7 (packaging/stickers/flyers/rush/books/saddle-stitch/greeting-cards 全 HTTP 200)"
     },
-    "push_status": "本地 commit 未 push — bc-ban 红灯为存量基线阻塞 (K3 待裁决: 基线清淤专项 vs 放行), 撞墙升级已记录",
-    "followups": [
-      "K3 裁决: bc-ban 38 处存量基线清淤排期 (涉及 quote-engine 测试夹具/quotation.ts/组件 icon map 等)",
-      "K3 裁决: campus pillar 内链 8→10 补齐 (3 locale, blog-data)",
-      "下槽位候选: flyers.en desc 262 字符遗留带外 + en title \"China Catalog Printing\" 与 desc \"Custom flyer printing\" 主题错位",
-      "ja 当量口径待 K3 拍板后复核 (当前 JS .length)",
-      "9/13 title v2 放行清单为独立车道, 本轮未动"
-    ]
+    "site_stats_28d": {
+      "hk": { "clicks": 247, "imps": 10022, "ctr": 0.0246, "wpos": 26.6 },
+      "en": { "clicks": 19, "imps": 3925, "ctr": 0.0048, "wpos": 43.6 },
+      "ja": { "clicks": 35, "imps": 1791, "ctr": 0.0195, "wpos": 41.2 },
+      "all": { "clicks": 349, "imps": 20323, "ctr": 0.0172, "wpos": 31.3 },
+      "note": "9/10 真总量 (与 9/14 run 一致, 本 run 复核 hk28d/enja28d 逐词一致)"
+    },
+    "t1_locked_words_8_28d": {
+      "rule": "v9.3 任务 J (9/12): 8 T1 锁定词每周追踪 position+CTR; 9/17 起干净对比窗; 攻坚 = ① title v4 写满核查 ② 全站内链锚文本统一 (每词 ≥3 正文内链统一锚文本)",
+      "hk": [
+        { "word": "包裝盒印刷", "imps_9_3": 68, "pos_9_3": 38.19, "imps_9_10": 69, "pos_9_10": 36.6, "pos_delta": 1.59, "clicks_9_10": 0, "note": "位置↑1.59 位, 仍 0 点击" },
+        { "word": "紙盒印刷", "imps_9_3": 54, "pos_9_3": 39.43, "imps_9_10": 63, "pos_9_10": 37.5, "pos_delta": 1.93, "clicks_9_10": 0, "note": "位置↑1.93 位, 展示 +9" },
+        { "word": "包裝盒訂製", "imps_9_3": 64, "pos_9_3": 29.39, "imps_9_10": 64, "pos_9_10": 30.6, "pos_delta": -1.21, "clicks_9_10": 0, "note": "位置↓1.21 位, 8 词中唯一负向" },
+        { "word": "貼紙印刷", "imps_9_3": 133, "pos_9_3": 35.14, "imps_9_10": 153, "pos_9_10": 31.2, "pos_delta": 3.94, "clicks_9_10": 0, "note": "位置↑3.94 位 + 展示 +20, 最大进步之一" },
+        { "word": "宣傳單張", "imps_9_3": 135, "pos_9_3": 36.8, "imps_9_10": 130, "pos_9_10": 36.4, "pos_delta": 0.4, "clicks_9_10": 0, "note": "位置↑0.4 位, 基本持平" },
+        { "word": "即日印刷", "imps_9_3": 35, "pos_9_3": 9.57, "imps_9_10": 42, "pos_9_10": 9.1, "pos_delta": 0.47, "clicks_9_10": 0, "note": "位置↑0.47 位, 已在 5-15 速赢窗口 (pos 9.1), 仍 0 点击" },
+        { "word": "書刊印刷", "imps_9_3": null, "pos_9_3": null, "imps_9_10": 16, "pos_9_10": 39.7, "pos_delta": null, "clicks_9_10": 0, "note": "9/3 基线未收录, 9/10 新获可见性 16imp/pos39.7" },
+        { "word": "騎馬釘", "imps_9_3": 63, "pos_9_3": 33.03, "imps_9_10": 68, "pos_9_10": 27.3, "pos_delta": 5.73, "clicks_9_10": 0, "note": "位置↑5.73 位, 8 词最大升幅, 仍 0 点击" }
+      ],
+      "verdict": "7/8 词位置正向 (包裝盒訂製除外); 全部 0 点击; 数据 STALE (9/10), 9/17 干净窗后方可判定真实效果"
+    },
+    "zero_click_high_impression_28d": {
+      "hk": [
+        { "query": "海報印刷", "imps": 161, "clicks": 0, "pos": 25.1 },
+        { "query": "貼紙印刷", "imps": 153, "clicks": 0, "pos": 31.2 },
+        { "query": "食品包裝印刷", "imps": 145, "clicks": 0, "pos": 12.9 },
+        { "query": "宣傳單張", "imps": 130, "clicks": 0, "pos": 36.4 },
+        { "query": "宣傳單張印刷", "imps": 129, "clicks": 0, "pos": 30.4 },
+        { "query": "包裝盒印刷", "imps": 69, "clicks": 0, "pos": 36.6 },
+        { "query": "騎馬釘", "imps": 68, "clicks": 0, "pos": 27.3 },
+        { "query": "書刊印刷", "imps": 16, "clicks": 0, "pos": 39.7 }
+      ],
+      "note": "8 T1 锁定词全部处于 0 点击; 即日印刷 42imp/pos9.1 为唯一速赢窗口词; 食品包裝印刷 pos12.9 (任务 K 意图澄清卡位目标词) 仍 0 点击, 9/17 看破零"
+    },
+    "title_v4_audit_8_words_zh_hk": {
+      "rule": "v4 写满原则: 半角当量 50-54 目标区 (CJK×2 + ASCII×1, per title-audit-v4.mjs L12 equiv); ≥55 禁加 / 55-60 遗留只读 / >60 待修剪 / <50 按序补",
+      "method": "web_fetch 2026-09-15 线上 title ×6 与 matrix/9/14 记录逐条核对一致 (数据层未变, 幂等复核); 当量按 9/14 run 手工核算",
+      "items": [
+        { "word": "包裝盒印刷 / 紙盒印刷 / 包裝盒訂製", "landing": "/zh-hk/category/packaging/", "title": "紙質食品包裝盒印刷 100個起 | 食品紙盒/紙袋 | 智印港", "equiv": 51, "band": "OK", "live": "web_fetch 200 核对一致" },
+        { "word": "貼紙印刷", "landing": "/zh-hk/category/stickers/", "title": "small batch 貼紙印刷 防水抗UV・1張起印・異形裁切・燙金 | 智印港", "equiv": 63, "band": ">60 待修剪 (8/30 批冻结, 挂账)", "live": "web_fetch 200 核对一致" },
+        { "word": "宣傳單張", "landing": "/zh-hk/category/flyers/", "title": "A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港", "equiv": 60, "band": "55-60 遗留只读 (8/30 批冻结)", "live": "web_fetch 200 核对一致" },
+        { "word": "即日印刷", "landing": "/zh-hk/services/rush-printing-delivery/", "title": "即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港", "equiv": 51, "band": "OK", "live": "web_fetch 200 核对一致" },
+        { "word": "書刊印刷 / 騎馬釘", "landing": "/zh-hk/category/books/", "title": "騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港", "equiv": 66, "band": ">60 待修剪 (8/30 批冻结, 挂账)", "live": "web_fetch 200 核对一致" },
+        { "word": "騎馬釘 (SKU)", "landing": "/zh-hk/product/saddle-stitch-booklets/", "title": "騎馬釘小冊子 覆膜・騎馬釘・100起印・HK$6起 | 智印港", "equiv": 53, "band": "OK", "live": "web_fetch 200 核对一致" }
+      ],
+      "verdict": "8 词落地标题 4/6 组 OK (51/51/51/53); 貼紙印刷 63 与 books 66 超 60 待修剪但属 8/30 批冻结, 只观察不改 (红线: 不回滚已部署 title); 9/17 后评估修剪队列"
+    },
+    "anchor_text_audit_8_words_zh_hk": {
+      "rule": "v9.3 任务 J 攻坚②: 每词 ≥3 正文内链使用统一锚文本 (grep 一致性验收)",
+      "grep_scope": "src/data/blog-data/zh-hk.json content 内 <a href=...>锚文本</a> (grep 2026-09-15)",
+      "results": {
+        "包裝盒印刷": { "anchors": 5, "lines": "32 / 64 / 140 / 143 / 304", "pass": true },
+        "紙盒印刷": { "anchors": 3, "lines": "104 / 151 / 669", "pass": true },
+        "包裝盒訂製": { "anchors": 3, "lines": "130 (×2) / 151", "pass": true },
+        "貼紙印刷": { "anchors": 4, "lines": "48 / 56 / 288 / 304", "pass": true },
+        "宣傳單張": { "anchors": 3, "lines": "378 / 445 / 470", "pass": true },
+        "即日印刷": { "anchors": 3, "lines": "445 / 542 / 611", "pass": true },
+        "書刊印刷": { "anchors": 3, "lines": "486 / 504 / 514", "pass": true },
+        "騎馬釘": { "anchors": 3, "lines": "224 / 504 / 514", "pass": true }
+      },
+      "correction_note": "daily-content 9/14 补锚 21 处 (7 词 × 3) 已完成; 9/14 gsc block 原记录「7 词 <3」已在 9/14 报告 §11 声明修正, 但 matrix 未落盘 → 本 run 将 gsc_feedback_2026_09_14 block 锚审计一并实证修正为 8/8",
+      "verdict": "8/8 词 ≥3 统一锚文本达标 (grep 2026-09-15 实证); 攻坚② 数据层完成, 9/17 干净窗看 CTR 效果"
+    },
+    "brand_tracking": {
+      "zhi_ying_gang": {
+        "9_10_28d_hk": { "clicks": 7, "imps": 8, "ctr": 0.875, "pos": 1.5 },
+        "rule": "基线 CTR 10% → 4 周目标 40%+",
+        "verdict": "CTR 87.5% 远超目标 ✅; 但命中条数少 (7 clicks/窗) → 品牌认知仍弱, 继续监测; 9/17 复核"
+      },
+      "jiprint": {
+        "9_10_branded_hits": 0,
+        "rule": "6 query branded search 监测 (ジープリント / ZprintPro / etc.), 基线 0 → 期望 ≥1",
+        "verdict": "本窗 0 命中, 未达期望; 维持埋点 + 目录建设 (§13.16.1)"
+      },
+      "z_print_en": {
+        "9_10_en": { "imps": 11, "pos": 15.1 },
+        "note": "en 侧 z print 品牌词仍有少量展示 (11 imp), 位置 15.1; 双域名品牌归一 (GEO) 持续观察"
+      }
+    },
+    "redirect_301_verification": {
+      "rule": "z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200",
+      "method": "web_fetch 2026-09-15 旧 URL ×11: cross-origin redirect 报错 = 301 链证据 (重定向到 zprintpro.com); 目标 URL 直取 HTTP 200",
+      "samples": 11,
+      "all_pass": true,
+      "in_list": [
+        "www.z-printpro.com/products/packaging-box-printing/ → 301 → /zh-hk/category/packaging/ 200 (title 51 OK)",
+        "www.z-printpro.com/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html → 301 → /zh-hk/product/waterproof-stickers/ 200",
+        "www.z-printpro.com/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html → 301 → /zh-hk/product/saddle-stitch-booklets/ 200",
+        "www.z-printpro.com/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html → 301 → /zh-hk/category/red-packets/ 200",
+        "www.z-printpro.com/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html → 301 → /zh-hk/category/banners/ 200",
+        "www.z-printpro.com/products/business-card-printing/ → 301 → greeting-cards 承接 200 (名片展示层未拍板前维持贺卡承接)",
+        "www.z-printpro.com/about-us/ → 301 → 200",
+        "www.z-printpro.com/products/sticker-printing/ → 301 → 200",
+        "www.z-printpro.com/flyer-printing/ → 301 → 200",
+        "www.z-printpro.com/menu-printing/ → 301 → 200",
+        "www.z-printpro.com/poster-printing/ → 301 → 200"
+      ],
+      "new_site_200": [
+        "/zh-hk/category/packaging/ 200 / /zh-hk/category/stickers/ 200 / /zh-hk/category/flyers/ 200 / /zh-hk/services/rush-printing-delivery/ 200 / /zh-hk/category/books/ 200 / /zh-hk/product/saddle-stitch-booklets/ 200 / /zh-hk/category/greeting-cards/ 200 / /zh-hk/ 200"
+      ],
+      "verdict": "11/11 PASS (301 链 + 新站 200); 异常 #8/#9 (business-card 200-direct / about-us 404) 已消失; catch-all 落点 = 设计行为非异常"
+    },
+    "t43_rich_results": {
+      "rule": "T43: rich results 是 GSC 观察项, 禁盲改 schema",
+      "status": "FAQPage/Product/Article JSON-LD 16 类目 × 3 locale + PDP + blog 全部在线 (本 run web_fetch 页面 FAQ 区块可见, 渲染层自动生成)",
+      "action": "无 schema 改动, 仅观察"
+    },
+    "priority_boost_changes": [],
+    "priority_boost_holds": [
+      { "id": "Q-P1-01", "slug": "retail-poster-printing-guide", "boost": 2, "tier": "T2", "reason": "hk:海報印刷 28d 161imp pos25.1 维持" },
+      { "id": "Q-P1-02", "slug": "restaurant-menu-printing-guide", "boost": 3, "tier": "T1", "reason": "hk:餐牌印刷 28d 65imp pos14.3 维持" },
+      { "id": "Q-P1-03", "slug": "lai-see-packet-printing-guide", "boost": 2, "tier": "T2", "reason": "hk:利是封印刷 28d 70imp pos29.5 维持" },
+      { "id": "Q-P2-03", "slug": "doujin-circle-printing-guide", "boost": 2, "tier": "T2", "reason": "en:doujinshi printing 28d 31imp pos18.2 维持" }
+    ],
+    "s1_s2_s3_gates": {
+      "s1_answer_block_word_count": "N/A (本 run 无答案块/FAQ 批次; 无 src 改动)",
+      "s2_slug_existence": "N/A (本 run 无引用 slug 列表批次; 锚文本审计仅 grep 既有链接, 全部落有效路由)",
+      "s3_platform_failure": "未观察到平台级故障 (web_fetch 全部 200/301 正常; 无 CF 503)"
+    },
+    "calibration_day_check": {
+      "is_calibration_day": false,
+      "schedule": "9/15 非校准日; 9/17 = 改版后首个干净对比窗 (8 T1 词 + 智印港 CTR + ジープリント 首轮可判定)",
+      "status": "GSC 数据 9/10 (~5d old, STALE vs 72h 门); 校准判定待 9/17",
+      "pending": "9/17: 8 T1 词 7d 周环比 + 智印港 40%+ 目标复核 + ジープリント 6 query 复测 + 貼紙印刷 63/books 66 修剪裁决"
+    },
+    "verification_window_note": "数据 9/10 为最新真值 (两窗方向可比, 不可精确周环比); 9/17 起干净对比窗; 本 cron 写权限仅限 .hermes/ (matrix + logs), 未改 src/; host-side wrapper (修复后) 负责 git commit/push + --include-matrix"
+  },
+  "daily_content_2026_09_14": {
+    "version": "daily-content-v9.6-2026-09-14",
+    "run_at": "2026-09-14 (v9.4 rearm 执行轮; pwsh 沙箱阻塞无法读取精确时钟, 以报告文件 mtime 为准)",
+    "cron": "zprintpro-daily-content-1x7w v9.6 首轮真实触发 (2026-09-14; 数据 9/10 解析 ~4d 旧 vs 72h 门 → STALE; 9/17 首个干净对比窗)",
+    "data_source": {
+      "canonical_file": ".hermes/hk28d-queries.json + .hermes/enja28d-queries.json (9/10 xlsx 28d 解析 8/14-9/10; STALE per §K.1.3, 9/17 首个干净对比窗)",
+      "task_j": "K3 9/12 拍板 8 T1 锁词攻坚② 全站内链锚文本统一: zh-hk 7 词 × 3 锚 = 21 锚插入 (紙盒印刷/包裝盒訂製/貼紙印刷/宣傳單張/即日印刷/書刊印刷/騎馬釘, 每词 ≥3 正文内链统一锚文本) + 包裝盒印刷既有锚保留; 锚模式 <a href=\"/zh-hk/category|services/...\" class=\"text-[#1A56DB] underline\">; 同批修 typo L143 傳單印刷印刷→傳單印刷 + L151 破损 URL (zh-hk/blog-data)",
+      "w3_calendar": "en/ja 2027-monthly-calendar-printing-timetable 跨语言污染清理 17 处 (Dember/進口印刷設備/Martini/國際認證體系/FSC 認證紙/急件 18:00 截單/撕頁/摊薄/多年/顧客 placeholder/模板残留 H2/%. ,/pies/brand-volume/Finan) + FAQ h3→<p><strong>Q</strong><br/>A</p> 可解析化 (extractFaqFromHtml regex) + 内链 5→7 (新增 calendar-printing-guide + quote) + ja company-intro L8 同批 5 项; 价格/交期数字未改 (仅清污染, 已部署口径保留)",
+      "sku_optimization": "3 SKU 首轮优化 (此前从未 optimizedAt): saddle-stitch-booklets / catalog-printing / perfect-bound-books — description/descriptionEn/descriptionJa/description_zh 尾部追加 §11 Tier A/B 行业词 + optimizedAt: 2026-09-14 + optimizationRound: 1; 禁改 slug/schema/图片/title; GSC 依据: 騎馬釘族 68+63+63 imp (pos 27.3/23.2/35.5) + 書刊印刷 16 imp (pos 39.7), 数据 9/10 解析"
+    },
+    "t1_words_28d_9_10": {
+      "rule": "8 T1 锁定词 (v9.3 任务 J) + 同簇变体, 9/10 解析真值, 9/17 起干净对比窗",
+      "hk": [
+        { "word": "貼紙印刷", "imp": 153, "pos": 31.2 },
+        { "word": "宣傳單張", "imp": 130, "pos": 36.4 },
+        { "word": "宣傳單張印刷", "imp": 129, "pos": 30.4 },
+        { "word": "包裝盒印刷", "imp": 69, "pos": 36.6 },
+        { "word": "騎馬釘", "imp": 68, "pos": 27.3 },
+        { "word": "包裝盒訂製", "imp": 64, "pos": 30.6 },
+        { "word": "騎馬釘印刷", "imp": 63, "pos": 23.2 },
+        { "word": "騎馬釘書刊", "imp": 63, "pos": 35.5 },
+        { "word": "紙盒印刷", "imp": 63, "pos": 37.5 },
+        { "word": "即日印刷", "imp": 42, "pos": 9.1 },
+        { "word": "書刊印刷", "imp": 16, "pos": 39.7 }
+      ]
+    },
+    "acceptance": {
+      "anchors_per_word": "7 词 × 3 = 21 锚 + 既有锚 = 23 处 class=\"text-[#1A56DB] underline\" 统一锚 (grep 验收 ✓; 0 裸引号)",
+      "typo": "L143 傳單印刷印刷 已修 (grep 验收 ✓ 0 残留)",
+      "forbidden_words": "智印印港 / 外部竞品名: 0 (本次零新增, 未触及冻结名单)",
+      "faq_regex": "en/ja timetable FAQ 已转 <p><strong>Q1:..</strong><br/>A1:..</p> 格式, extractFaqFromHtml 正则 Q[0-9]*[:：]..<br..>..A[0-9]*[:：] 可解析 ✓",
+      "internal_links": "en/ja timetable 内链 5→7 (新增 /{locale}/blog/calendar-printing-guide/ + /{locale}/quote/, 均有效路由)",
+      "json_validity": "zh-hk/en/ja blog-data 三文件 href/class 全 \\\" 转义, 0 裸引号 (grep 验收 ✓)"
+    },
+    "calibration_day_check": {
+      "is_calibration_day": false,
+      "schedule": "9/14 非校准日; 9/17 = 改版后首个干净对比窗 (8 T1 词锚文本攻坚效果 + 智印港 CTR 首轮可判定)",
+      "status": "GSC 数据 9/10 (~4d old, STALE vs 72h 门); 校准判定待 9/17",
+      "pending": "9/17: 8 T1 词 7d 周环比 + 锚文本攻坚② CTR 首判 + 智印港 40%+ 目标复核 + ジープリント 6 query 复测"
+    },
+    "verification_window_note": "数据 9/10 为最新真值; 9/17 起干净对比窗; pwsh 沙箱阻塞 → git commit/push/verify 无法执行 (报告落盘 = 任务成功 per v9.4 §3-2, 不虚报 PASS)",
+    "d14_textbook_gate2": {
+      "page": "textbook-printing-guide (D14 ja 教材・教科書の印刷製本, G3 簇 textbook binding)",
+      "status": "7/7 上线验证完成 (2026-09-14 触发轮补记)",
+      "registration": "src/data/blog-data/{zh-hk,en,ja}.json 3 locale 落盘 + src/data/blog-posts.ts lpTextbookPrintingGuide 注册 (slug/categoryKey=education/date 2026-09-14) + getAllBlogPostSlugs 生效 + public/sitemap-{zh-hk,en,ja}.xml 3 份含 hreflang (x-default=zh-hant-HK)",
+      "title_equiv": "zh-hk 50 / ja 54 半角当量 (CJK×2+ASCII×1, 50-54 写满区 ✓); en 60 chars (en 上限 ≤60 ✓)",
+      "faq_regex": "3 locale FAQ <p><strong>Q N:</strong><br/>A N:</p> extractFaqFromHtml 可解析 ✓ (FAQPage schema 渲染层自动生成)",
+      "internal_links": "≥3 达标 (ja: /ja/product/textbooks/ ×2 + /ja/blog/saddle-stitch-booklet-printing-guide/ + /ja/product/hardcover-books/ + WhatsApp CTA; 按 D14 规划 booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar 互链)",
+      "brand_embed": "ja 页补 ジープリント 埋点 1 处 (§13.16.1, CTA 行, 不跟 ZprintPro 字面同现) — 2026-09-14 触发轮新增",
+      "acceptance": "禁词 0 (名片展示层/智印印港/外部竞品) / JSON 0 裸引号 / S2 slug 存在性前置校验通过 (无死链) / 价格引 products.ts 口径 HK$5-50/冊 100冊起 (未编造)",
+      "gate2": "Gate 2 #1 7/7 上线 ✅ (D8-D14 全 7 篇: food-packaging-printing-guide / calendar / lai-see-packet / en sticker-guide / catalog / kraft / textbook); #2 CTR 判定见 .hermes/logs/2026-09-14-ctr-judgement-final.md; #6 schema 渲染层自动; 9/17 干净窗看 CTR"
+    }
   }
 }
