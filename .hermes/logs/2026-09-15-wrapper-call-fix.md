@@ -68,3 +68,33 @@
 ### 待办
 - 69028ef4 (lane-git-commit.py 修复) + bda793ab (matrix) 留待下次 lane push 带走
   (攒批优先 + 省 CF build; 明天 21:17 daily-content lane 自动 push)
+
+---
+
+## 七、统一执行报告总览 (2026-09-15 23:20, K3 要求「能看到执行报告与结果」)
+
+### 需求
+K3: 「完成的定时任务要有执行报告, 我要能看到执行报告与结果」——原来报告分散在 .hermes/logs/ 多个文件,
+watchdog 只告警不记 PASS, 用户无法一眼看到任务状态。
+
+### 实现 (commit 1a40e42d)
+1. **lane-git-commit.py**: 每次 lane 收尾 (commit/push 后) 追加一条到
+   `.hermes/logs/cron-execution-report.md` (统一总览, markdown 表格:
+   时间 / 任务 / 结果 / 报告路径 / 详情产物 / push 状态)
+2. **cron-watchdog.py**: 每次运行 (PASS 也记) 追加一条, 含 5 lane 存活状态
+3. **同步 redesign**: 两份总览同时写入 main + redesign worktree 的 .hermes/logs/
+   (用户日常查看位置)
+4. 文件被 lane-git-commit 白名单 (.hermes/logs/) 收录, 随 lane commit/push 上线
+
+### 今日总览 (9/15)
+| 时间 | 任务 | 结果 |
+|------|------|------|
+| 06:43 | ZP-cron-watchdog | ✅ 通过 (5 lane 存活) |
+| 21:17 | ZP-daily-content | ✅ 完成 → push 22:08 |
+| 22:43 | ZP-gsc-feedback | ✅ 完成 → push 23:07 |
+| 23:17 | ZP-cron-watchdog (复查) | ✅ 通过 |
+
+### 用户可见位置
+- `F:\zprintpro-main-tmp\.hermes\logs\cron-execution-report.md` (main, 入库)
+- `F:\zprintpro-nextjs\.hermes\logs\cron-execution-report.md` (redesign, 同步)
+- 每次 lane/watchdog 运行自动追加, 无需人工
