@@ -44,3 +44,27 @@
 - lane 日志: F:\zprintpro-nextjs\.hermes\logs\cron-ZP-daily-content.log (L7046 run start 21:17:03)
 - git: main worktree reflog (最后 push 04:18 → 22:08 补跑)
 - cmd 语义测试: 本机 %TEMP% 模拟 (无 call vs 加 call)
+
+---
+
+## 六、二次修复: matrix 静默丢弃 (2026-09-15 23:10)
+
+### 现象
+- 22:43 gsc-feedback lane 用修复后 wrapper 跑完, `--include-matrix` 生效:
+  `白名单改动 2 个 (+ .hermes/industry-keyword-matrix.json + 报告)`
+- **但只有 `report commit 完成 (1 文件)`** — matrix 无 commit, 工作区仍 M
+
+### 根因 (lane-git-commit.py 分类逻辑)
+- `src_files = [p for p in allowed if not p.startswith(".hermes/")]` → matrix 以 `.hermes/` 开头, 不属于 src
+- `report_files = [p for p in allowed if p.startswith(".hermes/logs/") or p.startswith(".hermes/reports/")]` → matrix 不匹配 logs/reports
+- **matrix 被 --include-matrix 加入 allowed, 但两个 commit 桶都不含 → 静默丢弃**
+
+### 修复
+- lane-git-commit.py: matrix (--include-matrix 时) 归入 report 类 (内部数据文件, --no-verify 提交)
+- 实测: 重新跑 → `report commit 完成 (--no-verify): (1 文件)` = matrix 提交成功
+- 同时 lane-git-commit.py 修复本身也被提交 (69028ef4)
+- 30min 保护: 距上次 push 253s → 只 commit 不 push (本地待 23:37 后)
+
+### 待办
+- 69028ef4 (lane-git-commit.py 修复) + bda793ab (matrix) 留待下次 lane push 带走
+  (攒批优先 + 省 CF build; 明天 21:17 daily-content lane 自动 push)
