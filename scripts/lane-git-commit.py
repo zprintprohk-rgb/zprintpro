@@ -141,7 +141,11 @@ def main():
     #       (报告含 GSC 决策数字但无来源行是常态), 用 --no-verify 单独提交, 防止
     #       lane 自动提交因报告 guard 命中而整体失败
     src_files = [p for p in allowed if not p.startswith(".hermes/")]
-    report_files = [p for p in allowed if p.startswith(".hermes/logs/") or p.startswith(".hermes/reports/")]
+    # 2026-09-15 fix: matrix 必须被提交。matrix 以 .hermes/ 开头、不属于 logs/reports,
+    #   原分类导致 --include-matrix 白名单命中但两个 commit 桶都不含 → 静默丢弃 (永不 commit)。
+    #   归入 report 类 (内部数据文件, --no-verify 提交, 与其它 .hermes 数据一致)。
+    report_files = [p for p in allowed if p.startswith(".hermes/logs/") or p.startswith(".hermes/reports/")
+                    or (args.include_matrix and p == ".hermes/industry-keyword-matrix.json")]
 
     date = time.strftime("%Y-%m-%d %H:%M")
 
