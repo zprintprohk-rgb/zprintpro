@@ -83,7 +83,9 @@ foreach ($L in $Lanes) {
     'set PYTHONUTF8=1',
     "cd /d `"$MainRepo`"",
     "echo ===== run start %DATE% %TIME% ===== >> `"$LogDir\cron-$($L.Name).log`"",
-    "`"$Dsh`" --profile headless `"$msg`" >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
+    # 2026-09-15 call-fix: 无 call 直接调 .bat 时, 被调 .bat 的 exit /b 会终止整个 cmd.exe,
+    #   跳过后续 host-side git 步骤 (21:17 lane 产物落盘但未 commit/push 的根因). 必须加 call.
+    "call `"$Dsh`" --profile headless `"$msg`" >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
     'set RC=%ERRORLEVEL%',
     "echo ===== dsh exit=%RC% -- host-side git commit/push -- ===== >> `"$LogDir\cron-$($L.Name).log`"",
     ("`"$Python`" `"$MainRepo\scripts\lane-git-commit.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`"" + $(if ($L.Name -eq 'ZP-gsc-feedback') { ' --include-matrix' } else { '' }) + " >> `"$LogDir\cron-$($L.Name).log`" 2>&1"),
