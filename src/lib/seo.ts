@@ -37,6 +37,48 @@ export function getBrandName(locale: Locale): string {
   return 'ZprintPro';
 }
 
+/**
+ * 2026-09-15 S2 (K3 按推荐执行): 半角当量感知的 title 截断
+ * 口径: docs/2026-09-15-blog-title-length-research.md + scripts/guards/title-equiv.js (CJK×2, 目标区 50-58)
+ * 行为:
+ *  1. 计算半角当量 (全角 CJK ×2, 其余 ×1), 超过 MAX 当量才截
+ *  2. 优先在 " | " 或 "・" 分隔符处断词 (避免切出残词, 如旧的 ".slice(0,60)" 切出 "bulk/whol")
+ *  3. 保品牌后缀完整 (品牌末尾一次, v4 铁律)
+ */
+const TITLE_EQUIV_MAX = 58;
+function titleEquiv(s: string): number {
+  return [...s].reduce((n, ch) => n + (/[\u2E80-\u9FFF\uF900-\uFAFF\uFF01-\uFF60\u3000-\u303F]/.test(ch) ? 2 : 1), 0);
+}
+export function truncateTitleByEquiv(s: string, maxEquiv: number = TITLE_EQUIV_MAX): string {
+  if (titleEquiv(s) <= maxEquiv) return s;
+  // 拆出品牌后缀 (最后一个 " | " 之后), 主体部分截断, 品牌保尾 (v4 铁律: 品牌末尾一次)
+  const brandSep = ' | ';
+  const lastSep = s.lastIndexOf(brandSep);
+  const brand = lastSep > 0 ? s.slice(lastSep) : '';
+  const body = lastSep > 0 ? s.slice(0, lastSep) : s;
+  const bodyBudget = maxEquiv - titleEquiv(brand);
+  if (bodyBudget <= 10) return brand; // 主体几乎没空间, 只留品牌
+  // 主体优先在分隔符处断 (・, ·, —, -), 再逐字符截
+  let cut = body;
+  const separators = [' ・ ', ' · ', ' — ', ' - ', ' '];
+  for (const sep of separators) {
+    const idx = body.lastIndexOf(sep);
+    if (idx > 0) {
+      const candidate = body.slice(0, idx);
+      if (titleEquiv(candidate) <= bodyBudget) { cut = candidate; break; }
+    }
+  }
+  if (titleEquiv(cut) > bodyBudget) {
+    let acc = '';
+    for (const ch of cut) {
+      if (titleEquiv(acc + ch) > bodyBudget) break;
+      acc += ch;
+    }
+    cut = acc;
+  }
+  return `${cut}${brand}`;
+}
+
 // 網站配置
 export const siteConfig = {
   // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
@@ -837,7 +879,7 @@ export function generateProductMetadata(
   const baseDesc = descriptions[locale] || '';
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
-  // Title: 50-60字符，含核心關鍵詞
+  // Title: 50-58 半角当量 (2026-09-15 S2: 当量感知断词取代 .slice(0,60), 防 CJK 截出残词)
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成重复品牌 (历史 bug)。
@@ -845,11 +887,11 @@ export function generateProductMetadata(
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
   const brandSuffix = getBrandName(locale);
-  const title = locale === 'zh-hk'
-    ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`.slice(0, 60)
+  const title = truncateTitleByEquiv(locale === 'zh-hk'
+    ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`
     : locale === 'en'
-    ? `${titleBase} | Free Shipping $99+ | ${brandSuffix}`.slice(0, 60)
-    : `${titleBase} | 日本向け高品質印刷 | ${brandSuffix}`.slice(0, 60);
+    ? `${titleBase} | Free Shipping $99+ | ${brandSuffix}`
+    : `${titleBase} | 日本向け高品質印刷 | ${brandSuffix}`);
   
   // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
   // 2026-06-12 Phase B-P1 修复 P1-1：扩大 descPrefix 到 100 字符，确保 baseDesc 短时仍能凑足 150+

@@ -1,7 +1,7 @@
 /**
  * title-audit-v4.mjs — 全站标题 v4 写满原则审计 + 补词提案 (2026-09-09)
- * 口径: docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (CJK×2; 写满区 50-54 / ≥55 禁加 / 55-60 遗留只读 / 60-80 待修剪 / <50 按序补)
- * blog 口径: SSoT 第二部分 (50-60 chars, guard #12)
+ * 口径: docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (CJK×2) + docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁目标区 50-58)
+ * 2026-09-15: blog 分支从 raw chars 改半角当量 (统一 title-equiv.js 口径), SKU/类目/首页同步 50-58
  * 冻结: 8/30 批 32001e17 (seo.ts 类目 titles) + 9/4 摘果批 + 9/3-9/8 近改 (幂等铁律 #3)
  * 用法: node scripts/title-audit-v4.mjs [--emit]  (--emit = 生成补词提案)
  */
@@ -133,19 +133,15 @@ for (const r of results) {
   const t = r.title;
   r.equiv = equiv(t);
   r.len = t.length;
-  const isSkuLike = r.type === 'sku' || r.type === 'category' || r.type === 'home';
-  if (isSkuLike) {
-    r.band = r.equiv < 50 ? 'FILL' : r.equiv <= 54 ? 'OK' : r.equiv <= 60 ? 'LEGACY' : r.equiv <= 80 ? 'TRIM' : 'RED';
-  } else {
-    r.band = r.len < 50 ? 'FILL' : r.len <= 60 ? 'OK' : 'TRIM';
-  }
+  // 2026-09-15: 全站统一 50-58 半角当量 (K3 9/13 终裁, title-equiv.js), blog 不再用 raw chars
+  r.band = r.equiv < 50 ? 'FILL' : r.equiv <= 58 ? 'OK' : r.equiv <= 65 ? 'TRIM' : 'RED';
   r.brandIssues = brandIssue(r);
   r.pollution = r.brandIssues.filter((i) => /污染/.test(i));
   r.bcHit = BC_RE.test(t);
   r.insightHit = INSIGHT_RE.test(t);
   if (r.type === 'sku' && !r.frozen) r.frozen = FROZEN_SKU.has(r.slug);
   if (r.type === 'blog' && !r.frozen) r.frozen = FROZEN_BLOG.has(r.slug);
-  r.action = r.frozen ? 'FROZEN(只读至窗判)' : r.band === 'FILL' ? '补满 50-54' : r.band === 'TRIM' ? '修剪 50-54' : r.band === 'RED' ? '超格修剪' : r.brandIssues.length ? '修品牌/污染' : 'OK';
+  r.action = r.frozen ? 'FROZEN(只读至窗判)' : r.band === 'FILL' ? '补满 50-58' : r.band === 'TRIM' ? '修剪 50-58' : r.band === 'RED' ? '超格修剪' : r.brandIssues.length ? '修品牌/污染' : 'OK';
 }
 
 // ---- 汇总 ----

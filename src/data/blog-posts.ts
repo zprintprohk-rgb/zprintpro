@@ -1132,7 +1132,7 @@ const lpFoldingBoxCosmetics: BlogPostMeta = {
   source: 'daily',
   date: '2026-07-15',
   title: {
-    'zh-hk': '折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 | 智印港',
+    'zh-hk': '折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港',
     en: 'Folding Box Printing Guide · Eco-Friendly Cosmetics Brand',
     ja: '折り畳み箱 カスタム ガイド · 化粧品・スキンケア | ZprintPro',
   },
@@ -1329,8 +1329,8 @@ const lpCustomCardBoxesUSA: BlogPostMeta = {
   source: 'daily',
   date: '2026-07-24',
   title: {
-    'zh-hk': '小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 Z | 智印港',
-    en: 'Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee,',
+    'zh-hk': '小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港',
+    en: 'Custom Card Boxes for E-commerce: 500 MOQ | ZprintPro',
     ja: '小口カードボックス印刷：500個から型代不要・EC出 | ZprintPro',
   },
   excerpt: {
@@ -1348,7 +1348,7 @@ const lpCosmeticCardBoxesJapan: BlogPostMeta = {
   source: 'daily',
   date: '2026-07-24',
   title: {
-    'zh-hk': '美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 | 智印港',
+    'zh-hk': '美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港',
     en: 'Cosmetic Card Boxes: Silver & Holographic Cardstock',
     ja: '化粧品カードボックス合版印刷：銀カード・ホログラ | ZprintPro',
   },

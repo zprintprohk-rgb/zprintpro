@@ -19,9 +19,10 @@
 const fs = require('fs');
 const path = require('path');
 
+// 2026-09-15: title 长度统一为半角当量口径 (K3 9/13 终裁 50-58, SSoT = title-equiv.js)
+const { equiv: titleEquiv, TITLE_MIN, TITLE_MAX } = require('./title-equiv.js');
+
 const REQUIRED_DATE = '2026-09-03';
-const MIN_TITLE_CHARS = 50;
-const MAX_TITLE_CHARS = 60;
 const MIN_PILLAR_CHARS = 12000;
 const REQUIRED_SCHEMAS = ['Article', 'FAQPage', 'BreadcrumbList', 'HowTo', 'Organization'];
 
@@ -83,17 +84,17 @@ function checkPillar(file, content) {
       });
     }
 
-    // 检查 3: title 长度 50-60 字
-    const titleLen = title.length;
-    if (titleLen < MIN_TITLE_CHARS || titleLen > MAX_TITLE_CHARS) {
+    // 检查 3: title 长度 50-58 半角当量 (2026-09-15 统一口径, 取代 raw chars 50-60)
+    const titleEq = titleEquiv(title);
+    if (titleEq < TITLE_MIN || titleEq > TITLE_MAX) {
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: 0,
-        match: `${slug}: title len=${titleLen} 不在 ${MIN_TITLE_CHARS}-${MAX_TITLE_CHARS} 范围 (per AGENTS.md §5 SEO Title 规则)`,
+        match: `${slug}: title 当量=${titleEq} 不在 ${TITLE_MIN}-${TITLE_MAX} 范围 (per K3 9/13 终裁 + title-equiv.js)`,
         severity: 'red',
         ruleId: 'BLOG_TITLE_LENGTH',
-        ruleName: `Pillar blog Title 长度 ${MIN_TITLE_CHARS}-${MAX_TITLE_CHARS} 字`,
-        fix: `改 ${slug} title 到 50-60 字 (主关键词前置, 品牌后置, 只用一次)`,
+        ruleName: `Pillar blog Title 当量 ${TITLE_MIN}-${TITLE_MAX}`,
+        fix: `改 ${slug} title 到 ${TITLE_MIN}-${TITLE_MAX} 半角当量 (主关键词前置, 品牌后置, 只用一次)`,
       });
     }
 

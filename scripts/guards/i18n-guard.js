@@ -60,19 +60,21 @@ const RULES = [
   },
 ];
 
-// 自定义检查: title 长度
+// 自定义检查: title 长度 (2026-09-15 统一口径: 半角当量 CJK×2, 目标区 50-58, SSoT = title-equiv.js)
+const { equiv: titleEquiv, TITLE_MIN, TITLE_MAX } = require('./title-equiv.js');
+// 只对明确是 SEO title 数据源的文件检查 (page.tsx 组件的普通文案 title 字段会误报, 2026-09-15 收紧)
+const TITLE_LENGTH_FILES = [
+  'sku-seo-data', 'blog-data', 'buying-guides', 'blog-posts.ts',
+  'seo.ts', 'h1-builder.ts', 'pillar-content.ts', 'schema-extensions.ts', 'seo-keywords.ts',
+];
 function checkTitleLength(content, file) {
   const hits = [];
   const titleRe = /title:\s*["']([^"']{1,200})["']/g;
   let match;
   while ((match = titleRe.exec(content)) !== null) {
     const title = match[1];
-    // zh-hk / en / ja 半角当量计算 (每中文字符 = 1.5 半角当量, 每 ASCII = 1)
-    let equiv = 0;
-    for (const ch of title) {
-      equiv += ch.charCodeAt(0) > 127 ? 1.5 : 1;
-    }
-    if (equiv < 45 || equiv > 65) {
+    const e = titleEquiv(title);
+    if (e < TITLE_MIN || e > TITLE_MAX) {
       const line = common.findLineNumber(content, match.index);
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
@@ -80,8 +82,8 @@ function checkTitleLength(content, file) {
         match: title.slice(0, 60) + (title.length > 60 ? '...' : ''),
         severity: 'yellow',
         ruleId: 'I18N_TITLE_LENGTH',
-        ruleName: `title 字符体检 50-60 (实测 ${equiv.toFixed(1)} 当量)`,
-        fix: `title 长度 50-60 当量 (per §0.29 v3.1), 当前 ${equiv.toFixed(1)} 当量`,
+        ruleName: `title 字符体检 ${TITLE_MIN}-${TITLE_MAX} 当量 (实测 ${e} 当量)`,
+        fix: `title 长度 ${TITLE_MIN}-${TITLE_MAX} 半角当量 (per K3 9/13 终裁 + title-equiv.js), 当前 ${e} 当量`,
       });
     }
   }
@@ -148,8 +150,8 @@ async function scan(files) {
     const currency = RULES.find(r => r.id === 'I18N_CURRENCY');
     allHits.push(...scanLocaleScoped(content, file, currency, ['zh-hk']));
 
-    // title 长度自定义检查
-    if (file.includes('sku-seo-data') || file.includes('seo.ts') || file.includes('page.tsx')) {
+    // title 长度自定义检查 (2026-09-15: 白名单文件 = 真实 SEO title 数据源, 排除 page.tsx 组件文案误报)
+    if (TITLE_LENGTH_FILES.some((f) => file.includes(f))) {
       const titleHits = checkTitleLength(content, file);
       allHits.push(...titleHits);
     }
