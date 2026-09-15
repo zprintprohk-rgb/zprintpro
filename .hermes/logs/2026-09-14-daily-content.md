@@ -209,3 +209,76 @@
 **补漏动作 (本触发轮唯一改动)**: `src/data/blog-data/ja.json` L8 两处替换 (上述末行), 未扩散至其它 out-of-scope post (报告 §范围纪律 已登记列表不动)。
 
 **结论**: 任务 J / W3 月曆 / SKU 优化 / Matrix 四作业全部在盘完成并二次验真; 本次仅补 1 个真 gap, 未重做任何已完成工作 (幂等铁律 ✓)。push 仍受 pwsh 沙箱限制无法执行 (v9.4 §3-2: 报告落盘 = 任务成功, 如实标注)。
+
+---
+
+## 十、D14 textbook Gate 2 验收 + ジープリント埋点补强 (本触发轮 · main worktree 完整流程)
+
+> **触发背景**: 本触发轮在 main worktree (F:\zprintpro-main-tmp, 部署源) 执行, 采用 2026-09-15 C 修复后的 lane 机制 — **git commit/push 由 host-side wrapper 在本 lane 退出后自动执行** (scripts/lane-git-commit.py, 白名单 src/data + docs + .hermes/logs, 30min push 保护)。本 lane 只产出内容 + 报告落盘。
+>
+> **R4 幂等核验 (3 问)**: ① 预期输出文件 `.hermes/logs/2026-09-14-daily-content.md` 存在且非空 ✅ ② mtime 在当日 TTL 内 ✅ ③ 覆盖任务签名全部子项 → **缺 D14 textbook 验收记录** (CTR 判定报告 Gate 2 #1 明确「7/7 上线待 D14 当日落地」, 页面已在盘但从未文档化/验收) → 本触发轮补齐, 未重做任何已完成作业。
+
+### 10.1 D14 textbook-printing-guide 上线验收 (Gate 2 #1 · 7/7)
+
+| 验收项 | 结果 | 文件级证据 (grep/read 实测) |
+|---|---|---|
+| 3 locale 内容落盘 | ✅ | `src/data/blog-data/{zh-hk,en,ja}.json` 均有 `textbook-printing-guide` 条目 (zh-hk L689 / en L697 / ja L698), date/lastUpdated = 2026-09-14 |
+| blog-posts.ts 注册 | ✅ | `lpTextbookPrintingGuide` (L1798-1821): slug/categoryKey=education/source=daily/date 2026-09-14 + 3 locale title/excerpt + targetKeywords (primary 教科書 印刷) |
+| articleSlugs 生效 | ✅ | `getAllBlogPostSlugs()` (blog-posts.ts L1983) 由 blogPosts 数组驱动, lpTextbookPrintingGuide 已入数组 |
+| sitemap 重建 | ✅ | `public/sitemap-{zh-hk,en,ja}.xml` 各含 textbook-printing-guide `<loc>` + 完整 hreflang (zh-Hant-HK / en / ja-JP / x-default=zh-hant-HK), 三文件 L2204-2211 |
+| FAQ regex 可解析 | ✅ | 3 locale FAQ 均为 `<p><strong>Q N: …</strong><br/>A N: …</p>` (grep `<strong>Q` 命中 textbook 行; extractFaqFromHtml 正则 Q[0-9]*[:：]…br…A[0-9]*[:：] 匹配) → FAQPage schema 渲染层自动生成 |
+| 内链 ≥3 | ✅ | ja 页内链: `/ja/product/textbooks/` ×2 + `/ja/blog/saddle-stitch-booklet-printing-guide/` + `/ja/product/hardcover-books/` + WhatsApp CTA (grep 实证) — 按 D14 规划 (booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar) 互链 |
+| title v4 当量 | ✅ | zh-hk 50 / ja 54 半角当量 (CJK×2+ASCII×1, 50-54 写满区); en 60 chars (en 上限 ≤60); 无需修剪 |
+| 价格/交期口径 | ✅ | 100冊起 HK$5-50/冊 引 products.ts textbooks SKU 现行口径, 未编造 |
+
+### 10.2 本触发轮改动 (2 文件)
+
+1. **`src/data/blog-data/ja.json` L704**: `教材・教科書の印刷見積:` → `ジープリントの教材・教科書印刷見積:` — **§13.16.1 ja 品牌词「ジープリント」埋点补强** (D14 ja 页此前只有 ZprintPro, 0 次ジープリント; 现 CTA 行自然埋点 1 处, 独立句不跟 ZprintPro 字面同现)。
+2. **`.hermes/industry-keyword-matrix.json`**: `daily_content_2026_09_14` 块新增 `d14_textbook_gate2` 子块 (L11750-11760), 记录 7/7 上线验收 + title 当量 + FAQ regex + 内链 + ジープリント埋点。
+
+### 10.3 Gate 2 状态 (对照 2026-09-14-ctr-judgement-final.md)
+
+| # | Gate 2 项 | 状态 |
+|---|---|---|
+| 1 | 7/7 上线 (D8-D14) | ✅ **本触发轮补齐** — 7 篇全在 blog-data 3 locale + blog-posts.ts + sitemap: food-packaging-printing-guide / calendar-printing-guide / wedding-red-packet / sticker-guide (en) / catalog (en) / kraft (ja) / textbook-printing-guide (ja) |
+| 2 | CTR 判定 | ✅ 2026-09-14-ctr-judgement-final.md (31 词全 0 clk → title v4 合批已由 K3 手工上线; 9/17 干净窗终判) |
+| 3 | 曝光 | ✅ 28d 全站 20,323 imp (9/10 解析) |
+| 5 | 验证窗数据 | ⏳ 9/17 校准日拉新 (lane 无 GSC 凭证 + pwsh 禁, 不虚报) |
+| 6 | schema | ✅ 渲染层自动生成 (Article/BreadcrumbList/FAQPage/Speakable/HowTo) |
+| 7 | 内链 | ✅ 每篇 ≥3 (本触发轮逐篇 grep 复核) |
+
+### 10.4 验收 (5 步 baseline, 本触发轮)
+
+| 步 | 结果 | 说明 |
+|---|---|---|
+| encoding | ✅ | 全部经 UTF-8 文本工具 (write/edit), 无 PowerShell/Node 写入, 无 UTF-16/BOM |
+| bc-ban | ✅ 不阻断 | 已降级报告式; 本轮零新增名片展示层词 (名片=接单层解禁, 展示层 (a)/(b)/(c) 未拍板 → 未动 greeting-cards 资产/301) |
+| tsc | 🔴 +5 回归 | books.pricing.test.ts paperCostHKD 移除未同步 (9/13 已知, PENDING_K3 D-9/13-1); 本触发轮零 src 类型改动 |
+| build / verify-deploy | ⏳ 由 host-side wrapper 触发 | lane 内 pwsh 禁无法执行; 不虚报 PASS — wrapper 走 `scripts/lane-git-commit.py` commit + push (30min 保护), CF Pages build 以 check-runs 为准 |
+| 链接完整性 / 禁词 | ✅ | 新埋点 0 裸引号 (grep `ジープリントの教材` 1 处); 智印印港 0; 外部竞品 0; textbook 内链 slug 全部存在 (S2 前置校验) |
+
+### 10.5 数据来源 (§0.23)
+
+```
+数据来源:
+- D14 页面在盘证据: src/data/blog-data/{zh-hk,en,ja}.json + src/data/blog-posts.ts + public/sitemap-{zh-hk,en,ja}.xml (grep/read 2026-09-14 实测)
+- D8-D14 战略 SOP: docs/2026-09-01-k3-d8-d14-blog-topic-strategy.md (K3 9/1 09:46 拍板; §0 一览表 + §5 Gate 2)
+- CTR 判定: .hermes/logs/2026-09-14-ctr-judgement-final.md (9/14 06:00, Gate 2 7/7 清单 + D8-D13 对账)
+- 8 T1 词 imps/pos: .hermes/hk28d-queries.json (9/10 xlsx 28d 解析, STALE, 9/17 首个干净对比窗)
+- ジープリント 埋点规则: AGENTS.md §13.16.1 (K3 8/8 02:52 拍板)
+- lane 机制: .hermes/logs/2026-09-15-lane-git-channel-fix.md (C 修复, host-side wrapper commit/push)
+```
+
+### 10.6 合规声明
+
+- **幂等铁律** (K3 9/9 06:18): 本触发轮仅补 D14 验收记录 + ジープリント埋点, 未重做任务 J/W3/SKU/Matrix 既有交付。
+- **§13.16 双品牌**: 埋点后 ja 页 ZprintPro (intro) 与 ジープリント (CTA) 分句出现, 无连写; zh-hk 只用智印港; en 只用 ZprintPro。
+- **§0.25**: 本 lane 无 push 动作; wrapper 侧按 30min 保护执行。
+- **S1/S2/S3 门禁**: S1 本轮未触碰答案卡 (无 quickAnswers 批次); S2 textbook 内链 slug 全部存在 (无死链挂账); S3 本触发轮观察期未见平台级故障。
+- **§0.24**: 完成项均有文件级证据 (上方 10.1 表 grep 行号), 无笼统批准当完成。
+
+### 10.7 下游交接
+
+1. **9/17 干净对比窗**: 8 T1 词 7d 周环比 + textbook 页 (教科書 印刷 104 imp / 教材 印刷製本 53 imp, 9/10 STALE) CTR 首判 + 智印港 40%+ 复核 + ジープリント 6 query 复测。
+2. **PENDING_K3 (未替拍板)**: tsc+5 修法 (D-9/13-1) / GSC STALE 修法 (D-9/13-5) / 貼紙印刷 63 与 books 66 标题当量修剪裁决。
+3. **push 状态**: 本 lane 改动 = ja.json + matrix + 本报告; host-side wrapper 自动 commit + push (30min 保护 + 白名单), CF build 后按 §12 push 后校验确认 deploy 真生效。
