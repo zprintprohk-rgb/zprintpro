@@ -1,80 +1,86 @@
 # 全站标题 v4 审计基线 (2026-09-09)
 
 数据来源: sku-seo-data.ts + blog-posts.ts + seo.ts(home/category) + GSC数据/gsc-fresh-2026-09-03.json (3m canonical); 口径 = v4 写满原则 (CJK×2)
-汇总: {"total":532,"byType":{"sku":252,"blog":255,"home":1,"category":24},"byBand":{"OK":294,"LEGACY":23,"TRIM":40,"FILL":168,"RED":7},"byAction":{"修品牌/污染":195,"OK":108,"修剪 50-54":12,"FROZEN(只读至窗判)":58,"补满 50-54":159},"brandIssues":323,"bcHits":0,"insightHits":1,"frozen":58}
+汇总: {"total":580,"byType":{"sku":297,"blog":258,"home":1,"category":24},"byBand":{"FILL":243,"LEGACY":49,"OK":233,"TRIM":46,"RED":9},"byAction":{"补满 50-54":237,"OK":126,"修品牌/污染":134,"修剪 50-54":23,"超格修剪":2,"FROZEN(只读至窗判)":58},"brandIssues":297,"bcHits":6,"insightHits":1,"frozen":58}
 
 ## 违规明细 (非 OK)
 
 | type | slug | locale | band | 当量/len | 动作 | 问题 | title |
 |---|---|---|---|---|---|---|---|
-| sku | waterproof-stickers | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 防水貼紙印刷 異形切割 100張起 HK$0.22起 | 智印港・訂製 |
-| sku | waterproof-stickers | ja | OK | 54/37 | 修品牌/污染 | 简体污染 | 防水ステッカー | 防水 PVC ダイカット・注文 | ZprintPro |
-| sku | transparent-stickers | zh-hk | OK | 54/37 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 透明貼紙印刷 防水 PVC 100張起 HK$0.38起 | 智印港・訂製 |
-| sku | transparent-stickers | ja | OK | 54/37 | 修品牌/污染 | 简体污染 | 透明ステッカー | 防水 PVC ダイカット・注文 | ZprintPro |
-| sku | removable-stickers | zh-hk | OK | 52/34 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 可移貼紙印刷 不殘膠 100張起 HK$0.45起 | 智印港・訂製 |
+| sku | waterproof-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 防水貼紙 | 防水 PVC 異形切割 | 智印港 |
+| sku | waterproof-stickers | ja | FILL | 48/34 | 补满 50-54 | 简体污染 | 防水ステッカー | 防水 PVC ダイカット | ZprintPro |
+| sku | transparent-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 透明貼紙 | 防水 PVC 異形切割 | 智印港 |
+| sku | transparent-stickers | ja | FILL | 48/34 | 补满 50-54 | 简体污染 | 透明ステッカー | 防水 PVC ダイカット | ZprintPro |
+| sku | removable-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 可移貼紙 | 防水 PVC 異形切割 | 智印港 |
 | sku | removable-stickers | ja | OK | 50/35 | 修品牌/污染 | 简体污染 | 再剥離ステッカー | 防水 PVC ダイカット | ZprintPro |
-| sku | small-batch-stickers | zh-hk | OK | 54/36 | 修品牌/污染 | 日文假名污染 | 小批量貼紙 50 張起 HK$0.45・免費送貨・2h 打稿 | 智印港 |
-| sku | small-batch-stickers | ja | OK | 53/38 | 修品牌/污染 | 简体污染 | 小ロットステッカー 50 枚〜 $0.045・最安値 | ZprintPro |
+| sku | small-batch-stickers | zh-hk | TRIM | 63/45 | 修剪 50-54 | - | 小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港 |
+| sku | small-batch-stickers | en | TRIM | 67/67 | 修剪 50-54 | - | Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | Zp |
+| sku | small-batch-stickers | ja | TRIM | 63/48 | 修剪 50-54 | 简体污染 | 小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro |
 | sku | die-cut-stickers | zh-hk | OK | 52/33 | 修品牌/污染 | 日文假名污染 | 異形模切貼紙 透明・模切・100起印・HK$0.58起 | 智印港 |
 | sku | die-cut-stickers | ja | OK | 54/37 | 修品牌/污染 | 简体污染 | ダイカットステッカー | 防水 PVC ダイカット | ZprintPro |
-| sku | foil-stickers | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 燙金貼紙印刷 金銀質感 100張起 HK$0.78起 | 智印港・訂製 |
+| sku | foil-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 燙金貼紙 | 防水 PVC 異形切割 | 智印港 |
 | sku | foil-stickers | ja | OK | 50/35 | 修品牌/污染 | 简体污染 | 箔押しステッカー | 防水 PVC ダイカット | ZprintPro |
-| sku | security-stickers | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 防偽貼紙印刷 易碎材質 100張起 HK$0.66起 | 智印港・訂製 |
+| sku | security-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 防偽貼紙 | 防水 PVC 異形切割 | 智印港 |
 | sku | security-stickers | ja | LEGACY | 56/38 | 修品牌/污染 | 简体污染 | セキュリティステッカー | 防水 PVC ダイカット | ZprintPro |
-| sku | fluorescent-stickers | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 螢光貼紙印刷 螢光材質 100張起 HK$0.66起 | 智印港・訂製 |
-| sku | fluorescent-stickers | ja | OK | 54/37 | 修品牌/污染 | 简体污染 | 蛍光ステッカー | 防水 PVC ダイカット・注文 | ZprintPro |
-| sku | kraft-paper-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 牛皮紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
+| sku | fluorescent-stickers | zh-hk | FILL | 37/24 | 补满 50-54 | - | 螢光貼紙 | 防水 PVC 異形切割 | 智印港 |
+| sku | fluorescent-stickers | ja | FILL | 48/34 | 补满 50-54 | 简体污染 | 蛍光ステッカー | 防水 PVC ダイカット | ZprintPro |
+| sku | kraft-paper-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 牛皮紙袋 | 100%環保 多尺寸 | 智印港 |
 | sku | kraft-paper-bags | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | クラフト紙袋 箔押し・ラミネート・100枚〜 | ZprintPro |
-| sku | white-card-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 白卡紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
-| sku | white-card-bags | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 白カード紙袋 | エコ素材 多サイズ・無料校正 | ZprintPro |
-| sku | gift-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 禮品紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
+| sku | white-card-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 白卡紙袋 | 100%環保 多尺寸 | 智印港 |
+| sku | white-card-bags | ja | FILL | 44/30 | 补满 50-54 | 简体污染 | 白カード紙袋 | エコ素材 多サイズ | ZprintPro |
+| sku | gift-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 禮品紙袋 | 100%環保 多尺寸 | 智印港 |
 | sku | gift-bags | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | ギフトバッグ 箔押し・ラミネート・100枚〜 | ZprintPro |
-| sku | eco-paper-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 環保紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
-| sku | eco-paper-bags | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | エコ紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro |
+| sku | eco-paper-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 環保紙袋 | 100%環保 多尺寸 | 智印港 |
+| sku | eco-paper-bags | ja | FILL | 40/28 | 补满 50-54 | 简体污染 | エコ紙袋 | エコ素材 多サイズ | ZprintPro |
+| sku | handle-bags | zh-hk | FILL | 37/24 | 补满 50-54 | - | 環保手挽袋 | 100%環保 多尺寸 | 智印港 |
 | sku | handle-bags | ja | OK | 53/33 | 修品牌/污染 | 简体污染 | ハンドルバッグ 箔押し・ラミネート・最安値 | ZprintPro |
-| sku | small-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 小號紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
-| sku | small-bags | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 小型紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro |
-| sku | large-bags | zh-hk | OK | 54/34 | 修品牌/污染 | 日文假名污染 | 大號紙袋 | 100%環保 多尺寸・免費送貨・2h 打稿 | 智印港 |
-| sku | large-bags | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 大型紙袋 | エコ素材 多サイズ・無料デザイン | ZprintPro |
+| sku | small-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 小號紙袋 | 100%環保 多尺寸 | 智印港 |
+| sku | small-bags | ja | FILL | 40/28 | 补满 50-54 | 简体污染 | 小型紙袋 | エコ素材 多サイズ | ZprintPro |
+| sku | large-bags | zh-hk | FILL | 35/23 | 补满 50-54 | - | 大號紙袋 | 100%環保 多尺寸 | 智印港 |
+| sku | large-bags | ja | FILL | 40/28 | 补满 50-54 | 简体污染 | 大型紙袋 | エコ素材 多サイズ | ZprintPro |
 | sku | a4-flyers | zh-hk | OK | 51/34 | 修品牌/污染 | 日文假名污染 | A4 傳單印刷 圓角・覆膜・100起印・HK$0.35起 | 智印港 |
-| sku | a4-flyers | ja | OK | 54/38 | 修品牌/污染 | 简体污染 | A4 チラシ | 両面フルカラー 100枚〜・最安値 | ZprintPro |
+| sku | a4-flyers | ja | FILL | 46/34 | 补满 50-54 | 简体污染 | A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro |
 | sku | a5-flyers | zh-hk | OK | 51/34 | 修品牌/污染 | 日文假名污染 | A5 傳單印刷 圓角・覆膜・100起印・HK$0.25起 | 智印港 |
-| sku | a5-flyers | ja | OK | 54/38 | 修品牌/污染 | 简体污染 | A5 チラシ | 両面フルカラー 100枚〜・最安値 | ZprintPro |
+| sku | a5-flyers | ja | FILL | 46/34 | 补满 50-54 | 简体污染 | A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro |
 | sku | double-sided-flyers | zh-hk | OK | 52/33 | 修品牌/污染 | 日文假名污染 | 雙面傳單印刷 圓角・覆膜・100起印・HK$0.40起 | 智印港 |
-| sku | double-sided-flyers | ja | OK | 51/32 | 修品牌/污染 | 简体污染 | 両面カラー印刷 両面チラシ・無料デザイン | ZprintPro |
-| sku | folded-leaflets | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 摺頁單張印刷 雙面四色 100張起 HK$0.55起 | 智印港・訂製 |
+| sku | double-sided-flyers | ja | TRIM | 71/46 | 修剪 50-54 | 简体污染 | 両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro |
+| sku | folded-leaflets | zh-hk | FILL | 36/23 | 补满 50-54 | - | 摺頁單張 | 雙面四色 100張起 | 智印港 |
 | sku | folded-leaflets | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 折りパンフレット | 両面フルカラー 100枚〜 | ZprintPro |
-| sku | thick-paper-flyers | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 厚口チラシ | 両面フルカラー 100枚〜・注文 | ZprintPro |
+| sku | thick-paper-flyers | zh-hk | FILL | 36/23 | 补满 50-54 | - | 厚身單張 | 雙面四色 100張起 | 智印港 |
+| sku | thick-paper-flyers | ja | FILL | 47/33 | 补满 50-54 | 简体污染 | 厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro |
 | sku | same-day-flyers | zh-hk | OK | 51/34 | 修品牌/污染 | 日文假名污染 | 即日印刷 傳單 100張起 HK$0.55起 圓角・覆膜 | 智印港 |
 | sku | same-day-flyers | en | TRIM | 67/67 | 修剪 50-54 | - | Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | Zp |
-| sku | same-day-flyers | ja | OK | 50/31 | 修品牌/污染 | 简体污染 | 即日チラシ印刷・無料デザイン・無料校正 | ZprintPro |
+| sku | same-day-flyers | ja | LEGACY | 58/37 | 修品牌/污染 | 品牌不在末尾;简体污染 | 即日チラシ印刷｜¥125〜・100枚から・無料デザイン｜ZprintPro |
 | sku | eco-flyers | zh-hk | OK | 52/33 | 修品牌/污染 | 日文假名污染 | 環保傳單印刷 圓角・覆膜・100起印・HK$0.38起 | 智印港 |
-| sku | eco-flyers | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | エコチラシ | 両面フルカラー 100枚〜・注文 | ZprintPro |
+| sku | eco-flyers | ja | FILL | 47/33 | 补满 50-54 | 简体污染 | エコチラシ | 両面フルカラー 100枚〜 | ZprintPro |
+| sku | a2-posters | zh-hk | TRIM | 65/40 | 修剪 50-54 | - | A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港 |
 | sku | a2-posters | en | TRIM | 62/62 | 修剪 50-54 | - | A2 Poster Printing from $2.30 | Free Shipping $99+ | ZprintP |
-| sku | a2-posters | ja | OK | 51/33 | 修品牌/污染 | 简体污染 | A2 ポスター印刷・無料デザイン・無料校正 | ZprintPro |
+| sku | a2-posters | ja | TRIM | 63/40 | 修剪 50-54 | 品牌不在末尾;简体污染 | A2 ポスター印刷｜¥300〜・1枚から・防水・無料デザイン｜ZprintPro |
 | sku | a1-posters | zh-hk | OK | 54/35 | 修品牌/污染 | 日文假名污染 | A1 大幅海報 厚紙・100起印・HK$20起・4小時打稿 | 智印港 |
-| sku | a1-posters | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | A1 ポスター | 防水 翌日配送・無料デザイン | ZprintPro |
-| sku | outdoor-posters | zh-hk | OK | 52/30 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 戶外海報印刷 防水材質 10張起 即日速遞 | 智印港・訂製 |
+| sku | a1-posters | ja | FILL | 39/29 | 补满 50-54 | 简体污染 | A1 ポスター | 防水 翌日配送 | ZprintPro |
+| sku | outdoor-posters | zh-hk | FILL | 37/22 | 补满 50-54 | - | 戶外海報 | 防水材質 即日速遞 | 智印港 |
 | sku | outdoor-posters | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | 屋外ポスター 防水・ラミネート・100枚〜 | ZprintPro |
-| sku | display-posters | zh-hk | OK | 52/30 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 展架海報印刷 防水材質 10張起 即日速遞 | 智印港・訂製 |
+| sku | display-posters | zh-hk | FILL | 37/22 | 补满 50-54 | - | 展架海報 | 防水材質 即日速遞 | 智印港 |
 | sku | display-posters | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | ディスプレイポスター印刷 100枚〜・最安 | ZprintPro |
-| sku | art-posters | zh-hk | OK | 53/33 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 藝術海報印刷 高精度輸出 10張起 HK$16起 | 智印港・訂製 |
+| sku | art-posters | zh-hk | FILL | 37/22 | 补满 50-54 | - | 藝術海報 | 防水材質 即日速遞 | 智印港 |
 | sku | art-posters | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | アートポスター 100枚〜・最安値・無料校正 | ZprintPro |
-| sku | adhesive-posters | zh-hk | OK | 51/32 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 背膠海報印刷 即貼防水 10張起 HK$11起 | 智印港・訂製 |
-| sku | adhesive-posters | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 粘着ポスター | 防水 翌日配送・無料デザイン | ZprintPro |
-| sku | cosmetic-boxes | ja | OK | 52/36 | 修品牌/污染 | 简体污染 | 化粧品パッケージボックス 4 種類 100 個〜 | ZprintPro |
-| sku | food-boxes | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | 食品パッケージ印刷 透明・箔押し・100枚〜 | ZprintPro |
-| sku | mailer-boxes | zh-hk | OK | 50/32 | 修品牌/污染 | 日文假名污染 | 訂製郵寄盒 | 燙金 UV 100%訂製・多尺寸可選 | 智印港 |
+| sku | adhesive-posters | zh-hk | FILL | 37/22 | 补满 50-54 | - | 背膠海報 | 防水材質 即日速遞 | 智印港 |
+| sku | adhesive-posters | ja | FILL | 40/28 | 补满 50-54 | 简体污染 | 粘着ポスター | 防水 翌日配送 | ZprintPro |
+| sku | cosmetic-boxes | zh-hk | TRIM | 77/50 | 修剪 50-54 | - | 化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港 |
+| sku | cosmetic-boxes | ja | RED | 87/55 | 超格修剪 | 简体污染 | 化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro |
+| sku | food-boxes | en | TRIM | 71/71 | 修剪 50-54 | - | Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags  |
+| sku | food-boxes | ja | TRIM | 73/46 | 修剪 50-54 | 简体污染 | 紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro |
+| sku | mailer-boxes | zh-hk | FILL | 38/26 | 补满 50-54 | - | 訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港 |
 | sku | mailer-boxes | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | メーラーボックス | 特注 高級パッケージ | ZprintPro |
-| sku | folding-boxes | zh-hk | OK | 51/31 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 折疊禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製 |
+| sku | folding-boxes | zh-hk | FILL | 36/25 | 补满 50-54 | - | 折疊禮盒 | 燙金 UV 100%訂製 | 智印港 |
 | sku | folding-boxes | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | 折り畳み箱 箔押し・ラミネート・100枚〜 | ZprintPro |
-| sku | rigid-boxes | zh-hk | OK | 51/31 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 精裝禮盒印刷 燙金UV 100個起 即日報價 | 智印港・訂製 |
+| sku | rigid-boxes | zh-hk | FILL | 36/25 | 补满 50-54 | - | 精裝禮盒 | 燙金 UV 100%訂製 | 智印港 |
 | sku | rigid-boxes | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | リジッドボックス | 特注 高級パッケージ | ZprintPro |
 | sku | foil-red-packets | zh-hk | OK | 52/34 | 修品牌/污染 | 日文假名污染 | 燙金利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港 |
-| sku | foil-red-packets | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 箔押し年賀状 | 箔押し UV エンボス・最安値 | ZprintPro |
-| sku | embossed-red-packets | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 浮雕利是封 | 燙金 UV 壓紋・免費送貨・即日速遞 | 智印港 |
+| sku | foil-red-packets | ja | FILL | 45/32 | 补满 50-54 | 简体污染 | 箔押し年賀状 | 箔押し UV エンボス | ZprintPro |
+| sku | embossed-red-packets | zh-hk | FILL | 34/22 | 补满 50-54 | - | 浮雕利是封 | 燙金 UV 壓紋 | 智印港 |
 | sku | embossed-red-packets | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | エンボス年賀状 箔押し・100枚〜・最安値 | ZprintPro |
-| sku | custom-red-packets | zh-hk | OK | 52/40 | 修品牌/污染 | 日文假名污染;简体字形污染 | custom red packets | 燙金 UV 壓紋・免費送貨 | 智印港 |
+| sku | custom-red-packets | zh-hk | FILL | 42/35 | 补满 50-54 | 简体字形污染 | custom red packets | 燙金 UV 壓紋 | 智印港 |
 | sku | custom-red-packets | ja | OK | 51/44 | 修品牌/污染 | 简体污染 | custom red packets | 箔押し UV エンボス | ZprintPro |
 | sku | cartoon-red-packets | zh-hk | OK | 52/34 | 修品牌/污染 | 日文假名污染 | 卡通利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港 |
 | sku | cartoon-red-packets | ja | OK | 50/34 | 修品牌/污染 | 简体污染 | イラスト年賀状 箔押し・局部UV・100枚〜 | ZprintPro |
@@ -82,45 +88,47 @@
 | sku | eco-red-packets | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | エコ年賀状 箔押し・ラミネート・100枚〜 | ZprintPro |
 | sku | large-red-packets | zh-hk | OK | 50/33 | 修品牌/污染 | 日文假名污染 | 大利是封 燙金・局部UV・100起印・HK$2.20起 | 智印港 |
 | sku | large-red-packets | en | TRIM | 62/62 | 修剪 50-54 | - | Large Red Packets | Gold Foil Print | Free US Ship | ZprintP |
-| sku | large-red-packets | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 大型年賀状 | 箔押し UV エンボス・無料校正 | ZprintPro |
+| sku | large-red-packets | ja | FILL | 43/31 | 补满 50-54 | 简体污染 | 大型年賀状 | 箔押し UV エンボス | ZprintPro |
 | sku | wall-calendars | zh-hk | OK | 53/33 | 修品牌/污染 | 日文假名污染 | 掛牆年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港 |
 | sku | wall-calendars | en | TRIM | 61/61 | 修剪 50-54 | - | Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPr |
 | sku | wall-calendars | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | 壁掛けカレンダー | ノベルティ 各種サイズ | ZprintPro |
-| sku | desk-calendars | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 座檯年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港 |
+| sku | desk-calendars | zh-hk | FILL | 35/21 | 补满 50-54 | - | 座檯年曆 | 企業禮品 多款式 | 智印港 |
 | sku | desk-calendars | en | TRIM | 61/61 | 修剪 50-54 | - | Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPr |
 | sku | desk-calendars | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | デスクカレンダー | ノベルティ 各種サイズ | ZprintPro |
-| sku | custom-calendars | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 定制年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港 |
+| sku | custom-calendars | zh-hk | FILL | 35/21 | 补满 50-54 | - | 定制年曆 | 企業禮品 多款式 | 智印港 |
+| sku | custom-calendars | en | FILL | 49/49 | 补满 50-54 | - | Custom Calendars | Free Shipping $99+ | ZprintPro |
 | sku | custom-calendars | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | カスタムカレンダー | ノベルティ 各種サイズ | ZprintPro |
 | sku | mini-calendars | zh-hk | OK | 53/33 | 修品牌/污染 | 日文假名污染 | 迷你年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港 |
 | sku | mini-calendars | en | TRIM | 61/61 | 修剪 50-54 | - | Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPr |
 | sku | mini-calendars | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | ミニカレンダー | ノベルティ 各種サイズ | ZprintPro |
 | sku | photo-frame-calendars | zh-hk | OK | 53/33 | 修品牌/污染 | 日文假名污染 | 相框年曆 騎馬釘・1000起印・HK$3起・4小時打稿 | 智印港 |
-| sku | photo-frame-calendars | ja | OK | 50/31 | 修品牌/污染 | 简体污染 | フォトフレームカレンダー・無料デザイン | ZprintPro |
-| sku | magnetic-calendars | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 磁吸年曆 | 企業禮品 多款式・免費送貨・2h 打稿 | 智印港 |
-| sku | magnetic-calendars | ja | OK | 54/33 | 修品牌/污染 | 简体污染 | マグネットカレンダー・無料デザイン・最安値 | ZprintPro |
-| sku | pvc-menus | zh-hk | OK | 53/33 | 修品牌/污染 | 日文假名污染 | PVC 餐牌印刷 · 防水防油覆膜 50本起・免費送貨 | 智印港 |
-| sku | pvc-menus | ja | OK | 52/38 | 修品牌/污染 | 简体污染 | PVC menu | 防水 ラミネート・無料デザイン | ZprintPro |
-| sku | laminated-menus | zh-hk | OK | 51/32 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 過膠餐牌印刷 防水覆膜 50本起 HK$12起 | 智印港・訂製 |
+| sku | photo-frame-calendars | ja | LEGACY | 60/38 | 修品牌/污染 | 简体污染 | フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro |
+| sku | magnetic-calendars | zh-hk | FILL | 35/21 | 补满 50-54 | - | 磁吸年曆 | 企業禮品 多款式 | 智印港 |
+| sku | magnetic-calendars | ja | LEGACY | 56/36 | 修品牌/污染 | 简体污染 | マグネットカレンダー | ノベルティ 各種サイズ | ZprintPro |
+| sku | pvc-menus | zh-hk | TRIM | 66/42 | 修剪 50-54 | - | PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港 |
+| sku | pvc-menus | ja | FILL | 38/31 | 补满 50-54 | 简体污染 | PVC menu | 防水 ラミネート | ZprintPro |
+| sku | laminated-menus | zh-hk | FILL | 36/23 | 补满 50-54 | - | 過膠餐牌 | 防水 覆膜 50本起 | 智印港 |
 | sku | laminated-menus | en | TRIM | 62/62 | 修剪 50-54 | - | Laminated Menus | Laminated Durable | Free US Ship | ZprintP |
-| sku | laminated-menus | ja | OK | 53/37 | 修品牌/污染 | 简体污染 | ラミネート menu | 防水 ラミネート・最安値 | ZprintPro |
-| sku | hardcover-menus | zh-hk | OK | 51/32 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 精裝餐牌印刷 防水覆膜 50本起 HK$18起 | 智印港・訂製 |
+| sku | laminated-menus | ja | FILL | 45/33 | 补满 50-54 | 简体污染 | ラミネート menu | 防水 ラミネート | ZprintPro |
+| sku | hardcover-menus | zh-hk | FILL | 36/23 | 补满 50-54 | - | 精裝餐牌 | 防水 覆膜 50本起 | 智印港 |
 | sku | hardcover-menus | en | TRIM | 62/62 | 修剪 50-54 | - | Hardcover Menus | Laminated Durable | Free US Ship | ZprintP |
 | sku | hardcover-menus | ja | OK | 51/36 | 修品牌/污染 | 简体污染 | ハードカバー menu 防水・箔押し・100枚〜 | ZprintPro |
-| sku | drink-menus | zh-hk | OK | 50/30 | 修品牌/污染 | 日文假名污染 | 餐廳酒水牌 | 防水 覆膜 50本起・多尺寸可選 | 智印港 |
+| sku | drink-menus | zh-hk | FILL | 38/24 | 补满 50-54 | - | 餐廳酒水牌 | 防水 覆膜 50本起 | 智印港 |
 | sku | drink-menus | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | ドリンクメニュー 防水・マット・100枚〜 | ZprintPro |
 | sku | disposable-menus | zh-hk | OK | 50/32 | 修品牌/污染 | 日文假名污染 | 一次性餐牌 防水・圓角・100起印・HK$0.22起 | 智印港 |
-| sku | disposable-menus | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 使い捨てメニュー | 防水 ラミネート・最安値 | ZprintPro |
-| sku | outdoor-vinyl-banners | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 戶外橫幅 | 鋁合金支架 高清・免費送貨・2h 打稿 | 智印港 |
+| sku | disposable-menus | en | FILL | 49/49 | 补满 50-54 | - | Disposable Menus | Free Shipping $99+ | ZprintPro |
+| sku | disposable-menus | ja | FILL | 46/31 | 补满 50-54 | 简体污染 | 使い捨てメニュー | 防水 ラミネート | ZprintPro |
+| sku | outdoor-vinyl-banners | zh-hk | FILL | 35/21 | 补满 50-54 | - | 戶外橫幅 | 鋁合金支架 高清 | 智印港 |
 | sku | outdoor-vinyl-banners | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 屋外ビニールバナー | アルミスタンド 高画質 | ZprintPro |
 | sku | roll-up-banners | zh-hk | OK | 53/33 | 修品牌/污染 | 日文假名污染 | 展示易拉寶 防水・100起印・HK$85起・4小時打稿 | 智印港 |
 | sku | roll-up-banners | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | ロールアップバナー | アルミスタンド 高画質 | ZprintPro |
 | sku | adhesive-banners | zh-hk | OK | 51/32 | 修品牌/污染 | 日文假名污染 | 背膠噴繪 透明・100起印・HK$10起・4小時打稿 | 智印港 |
 | sku | adhesive-banners | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 粘着バナー 透明・100枚〜・最安値・無料校正 | ZprintPro |
-| sku | vehicle-wraps | zh-hk | OK | 51/29 | 修品牌/污染 | 日文假名污染 | 汽車車身貼 | 車身廣告 全車包覆・多尺寸可選 | 智印港 |
+| sku | vehicle-wraps | zh-hk | FILL | 39/23 | 补满 50-54 | - | 汽車車身貼 | 車身廣告 全車包覆 | 智印港 |
 | sku | vehicle-wraps | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | 車両ラッピング | 車両フルラップ カスタム | ZprintPro |
-| sku | mesh-banners | zh-hk | OK | 51/29 | 修品牌/污染 | 日文假名污染 | 網孔布易拉寶 | 鋁合金支架 高清・多尺寸可選 | 智印港 |
+| sku | mesh-banners | zh-hk | FILL | 39/23 | 补满 50-54 | - | 網孔布易拉寶 | 鋁合金支架 高清 | 智印港 |
 | sku | mesh-banners | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | メッシュバナー | アルミスタンド 高画質 | ZprintPro |
-| sku | catalog-printing | zh-hk | OK | 52/34 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 畫冊印刷 騎馬釘/膠裝 100本起 HK$9.5起 | 智印港・訂製 |
+| sku | catalog-printing | zh-hk | FILL | 37/22 | 补满 50-54 | - | 畫冊印刷 | 專業印刷 品質保證 | 智印港 |
 | sku | catalog-printing | en | TRIM | 61/61 | 修剪 50-54 | - | Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPr |
 | sku | catalog-printing | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | カタログ印刷 箔押し・ラミネート・100枚〜 | ZprintPro |
 | sku | saddle-stitch-booklets | zh-hk | OK | 51/31 | 修品牌/污染 | 日文假名污染 | 騎馬釘小冊子 覆膜・騎馬釘・100起印・HK$6起 | 智印港 |
@@ -130,59 +138,79 @@
 | sku | perfect-bound-books | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | 無線綴じ冊子 ラミネート・中綴じ・100枚〜 | ZprintPro |
 | sku | hardcover-books | zh-hk | OK | 50/32 | 修品牌/污染 | 日文假名污染 | 公司精裝書 燙金・局部UV・100起印・HK$40起 | 智印港 |
 | sku | hardcover-books | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | ハードカバー書籍 | 中綴じ/無線綴じ 50冊〜 | ZprintPro |
-| sku | spiral-notebooks | zh-hk | OK | 50/30 | 修品牌/污染 | 日文假名污染 | 線圈筆記本 | 膠裝/騎馬釘 50本起・免費送貨 | 智印港 |
+| sku | spiral-notebooks | zh-hk | FILL | 40/25 | 补满 50-54 | - | 線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港 |
 | sku | spiral-notebooks | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | スパイラルノート | 中綴じ/無線綴じ 50冊〜 | ZprintPro |
-| sku | business-envelopes | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 公司信封 | 雙面印刷 多規格・免費送貨・2h 打稿 | 智印港 |
-| sku | business-envelopes | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 会社封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro |
-| sku | colored-envelopes | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 彩色信封 | 雙面印刷 多規格・免費送貨・2h 打稿 | 智印港 |
-| sku | colored-envelopes | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | カラー封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro |
-| sku | large-envelopes | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 大型封筒 | 両面印刷 マルチサイズ・無料校正 | ZprintPro |
-| sku | pearl-envelopes | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | パール封筒 | 両面印刷 マルチサイズ・最安値 | ZprintPro |
-| sku | exercise-books | zh-hk | OK | 50/30 | 修品牌/污染 | 日文假名污染 | 作業簿印刷 | 膠裝/騎馬釘 50本起・免費送貨 | 智印港 |
-| sku | exercise-books | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 練習帳 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro |
-| sku | certificates | zh-hk | OK | 54/31 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 證書印刷 燙金徽章 50本起 專業品質 | 智印港・訂製・客製 |
+| sku | business-envelopes | zh-hk | FILL | 35/21 | 补满 50-54 | - | 公司信封 | 雙面印刷 多規格 | 智印港 |
+| sku | business-envelopes | ja | FILL | 44/30 | 补满 50-54 | 简体污染 | 会社封筒 | 両面印刷 マルチサイズ | ZprintPro |
+| sku | colored-envelopes | zh-hk | FILL | 35/21 | 补满 50-54 | - | 彩色信封 | 雙面印刷 多規格 | 智印港 |
+| sku | colored-envelopes | ja | FILL | 46/31 | 补满 50-54 | 简体污染 | カラー封筒 | 両面印刷 マルチサイズ | ZprintPro |
+| sku | large-envelopes | zh-hk | FILL | 35/21 | 补满 50-54 | - | 大號信封 | 雙面印刷 多規格 | 智印港 |
+| sku | large-envelopes | en | FILL | 48/48 | 补满 50-54 | - | Large Envelopes | Free Shipping $99+ | ZprintPro |
+| sku | large-envelopes | ja | FILL | 44/30 | 补满 50-54 | 简体污染 | 大型封筒 | 両面印刷 マルチサイズ | ZprintPro |
+| sku | pearl-envelopes | zh-hk | FILL | 37/22 | 补满 50-54 | - | 珍珠光信封 | 雙面印刷 多規格 | 智印港 |
+| sku | pearl-envelopes | en | FILL | 48/48 | 补满 50-54 | - | Pearl Envelopes | Free Shipping $99+ | ZprintPro |
+| sku | pearl-envelopes | ja | FILL | 46/31 | 补满 50-54 | 简体污染 | パール封筒 | 両面印刷 マルチサイズ | ZprintPro |
+| sku | exercise-books | zh-hk | FILL | 40/25 | 补满 50-54 | - | 作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港 |
+| sku | exercise-books | ja | FILL | 43/31 | 补满 50-54 | 简体污染 | 練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro |
+| sku | certificates | zh-hk | FILL | 37/22 | 补满 50-54 | - | 證書印刷 | 專業印刷 品質保證 | 智印港 |
 | sku | certificates | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | 賞状印刷 箔押し・中綴じ・100枚〜・最安値 | ZprintPro |
-| sku | school-flyers | zh-hk | OK | 54/35 | 修品牌/污染 | 品牌不在末尾;日文假名污染 | 學校單張印刷 雙面四色 100張起 HK$0.35起 | 智印港・訂製 |
+| sku | school-flyers | zh-hk | FILL | 36/23 | 补满 50-54 | - | 學校單張 | 雙面四色 100張起 | 智印港 |
 | sku | school-flyers | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | 学校チラシ ラミネート・中綴じ・100枚〜 | ZprintPro |
 | sku | textbooks | zh-hk | OK | 50/31 | 修品牌/污染 | 日文假名污染 | 公司教科書 覆膜・騎馬釘・100起印・HK$24起 | 智印港 |
-| sku | textbooks | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 教科書 | 中綴じ/無線綴じ 50冊〜・無料校正 | ZprintPro |
-| sku | magnetic-closure-gift-box | zh-hk | OK | 54/32 | 修品牌/污染 | 日文假名污染 | 磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨・訂製 | 智印港 |
+| sku | textbooks | ja | FILL | 43/31 | 补满 50-54 | 简体污染 | 教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro |
+| sku | magnetic-closure-gift-box | zh-hk | FILL | 48/29 | 补满 50-54 | - | 磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港 |
 | sku | magnetic-closure-gift-box | ja | OK | 53/34 | 修品牌/污染 | 简体污染 | マグネット式ギフトボックス | カスタム印刷 | ZprintPro |
-| sku | electronics-packaging-box | zh-hk | OK | 52/33 | 修品牌/污染 | 日文假名污染 | 電子產品包裝盒印刷 | 3C 數碼 EVA 內襯・訂製 | 智印港 |
+| sku | electronics-packaging-box | zh-hk | FILL | 46/30 | 补满 50-54 | - | 電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印港 |
 | sku | electronics-packaging-box | ja | OK | 53/33 | 修品牌/污染 | 简体污染 | 電子製品包装箱 箔押し・マグネット・最安値 | ZprintPro |
-| sku | kraft-paper-packaging-box | zh-hk | OK | 53/30 | 修品牌/污染 | 日文假名污染 | 牛皮紙包裝印刷盒 | 環保材質 多尺寸・免費送貨 | 智印港 |
+| sku | kraft-paper-packaging-box | zh-hk | FILL | 43/25 | 补满 50-54 | - | 牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印港 |
 | sku | kraft-paper-packaging-box | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | クラフト紙包装箱 エコ・300枚〜・最安値 | ZprintPro |
 | sku | gang-run-card-boxes | zh-hk | TRIM | 64/40 | 修剪 50-54 | - | 拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港 |
+| sku | gang-run-card-boxes | en | RED | 90/90 | 超格修剪 | - | Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnar |
 | sku | gang-run-card-boxes | ja | TRIM | 73/52 | 修剪 50-54 | 简体污染 | 合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro |
-| sku | doujinshi-printing | zh-hk | OK | 54/36 | 修品牌/污染 | 简体字形污染 | 同人誌印刷 10本起印 | Comiket前24小時特急対応 | 智印港 |
+| sku | doujinshi-printing | zh-hk | FILL | 45/30 | 补满 50-54 | 缺品牌 智印港;品牌非一次;品牌不在末尾;简体字形污染 | 同人誌印刷 10本起印 | Comiket前24小時特急対応 |
 | sku | doujinshi-printing | ja | OK | 50/33 | 修品牌/污染 | 简体污染 | 同人誌印刷 コミケ対応印刷 10枚〜・最安 | ZprintPro |
 | sku | acrylic-keychain | zh-hk | OK | 52/33 | 修品牌/污染 | 日文假名污染 | 亞克力鑰匙扣 角色造型訂製 10起印・HK$2275起 | 智印港 |
-| sku | acrylic-keychain | ja | OK | 54/34 | 修品牌/污染 | 简体污染 | アクリルキーホルダー キャラクター形 推し活 | ZprintPro |
-| sku | can-badge | zh-hk | OK | 53/39 | 修品牌/污染 | 日文假名污染;简体字形污染 | 罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 智印港 |
+| sku | acrylic-keychain | ja | LEGACY | 57/32 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | アクリルキーホルダー キャラクター形 推し活応援 | 10個から |
+| sku | can-badge | zh-hk | FILL | 44/33 | 补满 50-54 | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 |
 | sku | can-badge | ja | OK | 51/38 | 修品牌/污染 | 简体污染 | 缶バッジ印刷 57mm 76mm印刷 10枚〜・最安 | ZprintPro |
 | sku | postcard-set | zh-hk | OK | 51/32 | 修品牌/污染 | 日文假名污染 | 明信片套裝 4-8張 和紙風 100起印・4小時打稿 | 智印港 |
 | sku | postcard-set | ja | OK | 51/36 | 修品牌/污染 | 简体污染 | ポストカードセット 4-8枚 和紙風 100枚〜 | ZprintPro |
-| sku | eco-tote-bag | zh-hk | OK | 51/32 | 修品牌/污染 | 日文假名污染 | 環保托特袋 有機棉布 100% 推し活場售 10個起 | 智印港 |
+| sku | eco-tote-bag | zh-hk | FILL | 48/33 | 补满 50-54 | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 環保托特袋 有機棉 100% | 推し活 Comiket 場售首選 |
 | sku | eco-tote-bag | ja | OK | 53/29 | 修品牌/污染 | 缺品牌 ZprintPro;品牌不在末尾 | エコトートバッグ オーガニックコットン | 推し活 コミケ |
-| sku | graduation-yearbook | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | 卒業記念アルバム印刷 50 冊〜・無料デザイン | ZprintPro |
-| sku | premium-greeting-cards | zh-hk | FILL | 45/31 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 高級賀卡印刷 | 燙金・局部UV・啞膜 | ZprintPro |
-| sku | premium-greeting-cards | en | LEGACY | 58/58 | FROZEN(只读至窗判) | - | Premium Greeting Cards | Foil & UV | Free Ship | ZprintPro |
-| sku | premium-greeting-cards | ja | LEGACY | 59/38 | FROZEN(只读至窗判) | 简体污染 | プレミアムグリーティングカード印刷 | 箔押し・UV | ZprintPro |
-| sku | thick-greeting-cards-400g | zh-hk | FILL | 48/34 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 400g 超厚賀卡印刷 | 厚卡・燙金・壓紋 | ZprintPro |
-| sku | thick-greeting-cards-400g | en | OK | 53/53 | FROZEN(只读至窗判) | - | Thick 400g Greeting Cards | Foil & Emboss | ZprintPro |
-| sku | thick-greeting-cards-400g | ja | TRIM | 63/41 | FROZEN(只读至窗判) | 简体污染 | 厚口400gグリーティングカード印刷 | 箔押し・エンボス | ZprintPro |
-| sku | foil-greeting-cards | zh-hk | FILL | 41/28 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 燙金賀卡印刷 | 金・銀・玫瑰金 | ZprintPro |
-| sku | foil-greeting-cards | en | LEGACY | 55/55 | FROZEN(只读至窗判) | - | Foil-Stamped Greeting Cards | Gold & Silver | ZprintPro |
-| sku | foil-greeting-cards | ja | TRIM | 67/41 | FROZEN(只读至窗判) | 简体污染 | 箔押しグリーティングカード印刷 | 金・銀・ローズゴールド | ZprintPro |
-| sku | spot-uv-greeting-cards | zh-hk | FILL | 45/31 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 局部UV賀卡印刷 | 啞面底・高光對比 | ZprintPro |
-| sku | spot-uv-greeting-cards | en | OK | 50/50 | FROZEN(只读至窗判) | - | Spot UV Greeting Cards | Matte + Gloss | ZprintPro |
-| sku | spot-uv-greeting-cards | ja | LEGACY | 56/37 | FROZEN(只读至窗判) | 简体污染 | 部分UVグリーティングカード印刷 | マット+光沢 | ZprintPro |
-| sku | matte-greeting-cards | zh-hk | FILL | 43/29 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 啞膜賀卡印刷 | 防指紋・細膩手感 | ZprintPro |
-| sku | matte-greeting-cards | en | TRIM | 63/63 | FROZEN(只读至窗判) | - | Matte Greeting Cards | Soft-Touch, Fingerprint-Free | Zprint |
-| sku | matte-greeting-cards | ja | TRIM | 63/39 | FROZEN(只读至窗判) | 简体污染 | マットグリーティングカード印刷 | さらさら・指紋防止 | ZprintPro |
-| sku | rounded-corner-greeting-cards | zh-hk | FILL | 46/33 | FROZEN(只读至窗判) | 缺品牌 智印港;品牌非一次;品牌不在末尾;日文假名污染;简体字形污染 | 圓角賀卡印刷 | R3mm 模切・柔和觸感 | ZprintPro |
-| sku | rounded-corner-greeting-cards | en | LEGACY | 56/56 | FROZEN(只读至窗判) | - | Rounded Corner Greeting Cards | R3mm Die-Cut | ZprintPro |
-| sku | rounded-corner-greeting-cards | ja | OK | 54/37 | FROZEN(只读至窗判) | 简体污染 | 角丸グリーティングカード印刷 | R3mm 型抜き | ZprintPro |
+| sku | graduation-yearbook | ja | TRIM | 69/47 | 修剪 50-54 | 简体污染 | 卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro |
+| sku | premium-greeting-cards | zh-hk | OK | 51/34 | FROZEN(只读至窗判) | 日文假名污染 | 高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港 |
+| sku | premium-greeting-cards | en | OK | 51/51 | FROZEN(只读至窗判) | - | Premium Greeting Cards 100pcs Foil & UV | ZprintPro |
+| sku | premium-greeting-cards | ja | OK | 51/35 | FROZEN(只读至窗判) | 简体污染 | プレミアムカード印刷 100枚〜 箔押し・UV | ZprintPro |
+| sku | thick-greeting-cards-400g | zh-hk | FILL | 45/28 | FROZEN(只读至窗判) | 日文假名污染;BC词 | 400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港 |
+| sku | thick-greeting-cards-400g | en | OK | 53/53 | FROZEN(只读至窗判) | BC词 | Thick 400g Business Cards | Foil & Emboss | ZprintPro |
+| sku | thick-greeting-cards-400g | ja | FILL | 47/33 | FROZEN(只读至窗判) | 简体污染;BC词 | 厚口400g名刺印刷 | 箔押し・エンボス | ZprintPro |
+| sku | foil-greeting-cards | zh-hk | FILL | 38/22 | FROZEN(只读至窗判) | 日文假名污染;BC词 | 燙金名片印刷 | 金・銀・玫瑰金 | 智印港 |
+| sku | foil-greeting-cards | en | LEGACY | 55/55 | FROZEN(只读至窗判) | BC词 | Foil-Stamped Business Cards | Gold & Silver | ZprintPro |
+| sku | foil-greeting-cards | ja | OK | 51/33 | FROZEN(只读至窗判) | 简体污染;BC词 | 箔押し名刺印刷 | 金・銀・ローズゴールド | ZprintPro |
+| sku | spot-uv-greeting-cards | zh-hk | OK | 51/34 | FROZEN(只读至窗判) | 日文假名污染 | 局部UV賀卡印刷 啞面・高光 100張起 HK$140起 | 智印港 |
+| sku | spot-uv-greeting-cards | en | OK | 53/53 | FROZEN(只读至窗判) | - | Spot UV Greeting Cards 100pcs Matte+Gloss | ZprintPro |
+| sku | spot-uv-greeting-cards | ja | OK | 53/36 | FROZEN(只读至窗判) | 简体污染 | 部分UVグリーティングカード 100枚〜 マット | ZprintPro |
+| sku | matte-greeting-cards | zh-hk | OK | 51/33 | FROZEN(只读至窗判) | 日文假名污染 | 啞膜賀卡印刷 防指紋・柔順 100張起 HK$110起 | 智印港 |
+| sku | matte-greeting-cards | en | OK | 50/50 | FROZEN(只读至窗判) | - | Matte Greeting Cards 100pcs Soft-Touch | ZprintPro |
+| sku | matte-greeting-cards | ja | OK | 51/34 | FROZEN(只读至窗判) | 简体污染 | マットカード印刷 100枚〜 指紋防止・特急 | ZprintPro |
+| sku | rounded-corner-greeting-cards | zh-hk | OK | 52/36 | FROZEN(只读至窗判) | - | 圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港 |
+| sku | rounded-corner-greeting-cards | en | OK | 54/54 | FROZEN(只读至窗判) | - | Rounded Greeting Cards 100pcs R3mm Die-Cut | ZprintPro |
+| sku | rounded-corner-greeting-cards | ja | OK | 53/37 | FROZEN(只读至窗判) | 简体污染 | 角丸グリーティングカード印刷 100枚〜 R3mm | ZprintPro |
+| sku | cafe-table-cards | ja | OK | 53/35 | 修品牌/污染 | 简体污染 | カフェテーブルカード印刷 防水 50枚〜 特急 | ZprintPro |
+| sku | corrugated-boxes | ja | OK | 51/36 | 修品牌/污染 | 简体污染 | 段ボール箱印刷 E/Fフルート 500個〜 耐圧 | ZprintPro |
+| sku | drink-tokens | ja | OK | 54/37 | 修品牌/污染 | 简体污染 | ドリンクトークン PVC防水 50枚〜 オリジナル | ZprintPro |
+| sku | escort-cards | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | エスコートカード印刷 50枚〜 箔押し・特急 | ZprintPro |
+| sku | foil-wedding-invitations | ja | OK | 51/34 | 修品牌/污染 | 简体污染 | 箔押し結婚式招待状 金銀 50セット〜 特急 | ZprintPro |
+| sku | name-tags-badges | ja | OK | 53/35 | 修品牌/污染 | 简体污染 | 名札印刷 会議用 50枚〜 箔押し・磁石・特急 | ZprintPro |
+| sku | save-the-date-cards | ja | OK | 54/42 | 修品牌/污染 | 简体污染 | Save the Date カード印刷 50セット〜 箔押し | ZprintPro |
+| sku | tuck-end-boxes | ja | OK | 54/36 | 修品牌/污染 | 简体污染 | 差し込み式ボックス印刷 直挿し 500個〜 軽量 | ZprintPro |
+| sku | wedding-menu-cards | ja | OK | 54/35 | 修品牌/污染 | 简体污染 | ウェディングメニュー印刷 50セット〜 箔押し | ZprintPro |
+| sku | wedding-place-cards | ja | OK | 52/34 | 修品牌/污染 | 简体污染 | ウエディング席札印刷 50枚〜 箔押し・特急 | ZprintPro |
+| sku | wedding-program-cards | ja | OK | 53/36 | 修品牌/污染 | 简体污染 | 結婚式プログラム印刷 A5 50セット〜 箔押し | ZprintPro |
+| sku | wedding-seating-charts | ja | OK | 54/38 | 修品牌/污染 | 简体污染 | 披露宴座席表印刷 A1/A2 50枚〜 箔押し・特急 | ZprintPro |
+| sku | wedding-suite-bundle | ja | OK | 53/35 | 修品牌/污染 | 简体污染 | 結婚式6枚セット印刷 50セット〜 箔押し特急 | ZprintPro |
+| sku | wedding-thank-you-cards | ja | OK | 52/35 | 修品牌/污染 | 简体污染 | 結婚式サンキュカード 50セット〜 箔押しUV | ZprintPro |
+| sku | white-card-boxes | ja | OK | 53/35 | 修品牌/污染 | 简体污染 | 白カードボックス印刷 500個〜 特注・化粧品 | ZprintPro |
 | blog | sticker-buying-guide | zh-hk | FILL | 55/29 | 补满 50-54 | - | 貼紙印刷選購完全指南：材質、工藝、價格一次搞懂 | 智印港 |
 | blog | sticker-buying-guide | ja | FILL | 60/36 | 补满 50-54 | 简体污染 | ステッカー印刷ガイド：材質、加工、価格を徹底解説 | ZprintPro |
 | blog | sticker-buying-guide | zh-hk | FILL | 53/28 | 补满 50-54 | - | 貼紙印刷選購完全指南：材質、形狀、用途全解析 | 智印港 |
@@ -406,7 +434,9 @@
 | blog | print-specifications-reference-guide-2026 | zh-hk | TRIM | 88/64 | FROZEN(只读至窗判) | 品牌不在末尾;简体字形污染 | 印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 Zprin |
 | blog | print-specifications-reference-guide-2026 | en | TRIM | 94/94 | FROZEN(只读至窗判) | - | Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK  |
 | blog | print-specifications-reference-guide-2026 | ja | TRIM | 89/61 | FROZEN(只读至窗判) | 简体污染 | 印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPr |
-| home | home | zh-hk | TRIM | 74/48 | FROZEN(只读至窗判) | 品牌不在末尾;简体字形污染 | 智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷 |
+| blog | textbook-printing-guide | zh-hk | FILL | 50/29 | 补满 50-54 | 日文假名污染 | 教科書印刷・教材印刷指南 100本起 製本方式 | 智印港 |
+| blog | textbook-printing-guide | ja | FILL | 54/36 | 补满 50-54 | 简体污染 | 教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro |
+| home | home | zh-hk | LEGACY | 60/36 | FROZEN(只读至窗判) | 品牌不在末尾 | 智印港 | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒 |
 | category | calendars | zh-hk | TRIM | 72/47 | FROZEN(只读至窗判) | 日文假名污染 | 月曆印刷 2027 | 100本起印・Q4旺季・60天預訂・燙金精裝・企業LOGO | 智印港 |
 | category | calendars | en | RED | 113/113 | FROZEN(只读至窗判) | - | Calendar Printing 2027 from $5 | 100 MOQ + Q4 Peak + 60-Day  |
 | category | calendars | ja | RED | 99/72 | FROZEN(只读至窗判) | 简体污染 | カレンダー印刷 2027 100部〜 · Q4繁忙期 + 60日予約 + 箔押し上製本 + 企業 LOGO + 日本全国 |
