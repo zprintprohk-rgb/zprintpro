@@ -263,7 +263,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                         <Link href={`${localePrefix}/product/${product.slug}/`} className="font-mono text-[27px] font-bold text-[#F87314] tracking-[-0.02em] hover:underline">
                           {anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
                         </Link>
-                        <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{locale === 'zh-hk' ? '起' : locale === 'ja' ? '〜' : 'From'}</span>
+                        <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{locale === 'zh-hk' ? '起' : locale === 'ja' ? '〜' : ''}</span>
                       </div>
                       ); })()}
                       {/* single primary CTA — v9 单主 CTA (替代双按钮) */}
