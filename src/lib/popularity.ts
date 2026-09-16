@@ -75,17 +75,8 @@ function popularityScore(slug: string): number {
   return p?.gsc_impressions ?? 0;
 }
 
-function categoryHeat(): Map<string, number> {
-  const heat = new Map<string, number>();
-  for (const c of categories) {
-    let total = 0;
-    for (const p of products.filter((p) => p.category_slug === c.slug)) {
-      total += popularityScore(p.slug) || p.weight_score;
-    }
-    heat.set(c.slug, total);
-  }
-  return heat;
-}
+// 2026-09-16 K3 拍板: 首页/侧栏 SKU 排序由「分类热度」改为「SKU 自身热度」
+// categoryHeat() 函数已移除 (原用于按分类总热度排序, 现已无引用)
 
 // 2026-08-05 K3 12:24 拍板: 排除贺卡印刷类目 (greeting-cards) 在首页 12 条 / blog sidebar 14 条 top SKU 排名
 // §11 主营品类约束: 不写贴纸/纸卡/stickers; K3 8/4 18:35 决策"贺卡印刷"同属非核心主营, 一并排除
@@ -94,13 +85,13 @@ function categoryHeat(): Map<string, number> {
 const EXCLUDED_CATEGORIES: ReadonlyArray<string> = ['greeting-cards'];
 
 /**
- * Sidebar 14 条 — K3 11:02 拍板
- * 14 类各取 1 条 top SKU (按 popularity), 按分类热度排
+ * 首页 12 条 / Sidebar 14 条 — K3 11:02 拍板
+ * 各分类各取 1 条 top SKU (按 popularity), 再按「SKU 自身搜索热度」降序排
  * 2026-08-05 K3 12:24: 排除 EXCLUDED_CATEGORIES (greeting-cards)
- * @param limit 14
+ * 2026-09-16 K3 拍板: 排序由「分类热度」改为「SKU 自身热度」(热度最高 SKU 排最前)
+ * @param limit 12 (首页) / 14 (sidebar)
  */
 export function getTopSkuByCategory(limit = 14): Product[] {
-  const heat = categoryHeat();
   const topPerCategory: Product[] = [];
   for (const c of categories) {
     // 2026-08-05 K3 拍板: 跳过非核心主营类目 (greeting-cards 等)
@@ -112,8 +103,13 @@ export function getTopSkuByCategory(limit = 14): Product[] {
     );
     topPerCategory.push(sorted[0]);
   }
+  // 2026-09-16 K3 拍板: 首页 SKU 按「SKU 自身搜索热度」降序排 (不再是按分类热度)
+  // 原: sort by category heat (分类总热度) → 包装盒(834) 靠前但 SKU 自身未必最热
+  // 新: sort by SKU 自身 popularityScore (weight_score proxy, matrix 无 sku_popularity 时) 降序
   topPerCategory.sort(
-    (a, b) => (heat.get(b.category_slug) ?? 0) - (heat.get(a.category_slug) ?? 0)
+    (a, b) =>
+      (popularityScore(b.slug) || b.weight_score) -
+      (popularityScore(a.slug) || a.weight_score)
   );
   return topPerCategory.slice(0, limit);
 }

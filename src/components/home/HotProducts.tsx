@@ -8,7 +8,7 @@ import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, 
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, getQuoteLabel, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { products, categories, getProductDisplayTitle, getProductDescription, getProductImageAlt } from '@/data/products';
+import { products, categories, getProductDisplayTitle, getProductImageAlt } from '@/data/products';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 interface HotProductsProps {
@@ -22,7 +22,6 @@ const translations = {
     viewAll: '查看全部產品',
     categoryTitle: '產品分類',
     getQuote: '立即訂購',
-    viewMore: '查詢更多',
     hotBadge: '熱銷',
     popular: '熱門',
     enterpriseCta: '企業批量訂單',
@@ -32,8 +31,6 @@ const translations = {
     trustBadge: '已有 15,000+ 客戶選擇智印港',
     cantFind: '找不到想要的產品?',
     quickQuote: '快速詢價',
-    from: '起',
-    freeDesign: '免費設計',
   },
   en: {
     title: 'Hot Printing Products',
@@ -41,7 +38,6 @@ const translations = {
     viewAll: 'View All Products',
     categoryTitle: 'Categories',
     getQuote: 'Order Now',
-    viewMore: 'View More',
     hotBadge: 'Hot',
     popular: 'Popular',
     enterpriseCta: 'Enterprise Bulk Orders',
@@ -51,8 +47,6 @@ const translations = {
     trustBadge: 'Trusted by 15,000+ customers',
     cantFind: "Can't find what you need?",
     quickQuote: 'Quick Quote',
-    from: 'From',
-    freeDesign: 'Free design',
   },
   ja: {
     title: '人気の印刷製品',
@@ -60,7 +54,6 @@ const translations = {
     viewAll: 'すべての製品を見る',
     categoryTitle: 'カテゴリー',
     getQuote: '今すぐ注文',
-    viewMore: '詳細を見る',
     hotBadge: '人気',
     popular: '人気',
     enterpriseCta: '企業向け大口注文',
@@ -70,8 +63,6 @@ const translations = {
     trustBadge: '15,000人以上のお客様に選ばれています',
     cantFind: 'お探しの製品が見つからない？',
     quickQuote: 'お見積もり',
-    from: '〜',
-    freeDesign: '無料デザイン',
   },
 };
 
@@ -237,9 +228,8 @@ export function HotProducts({ locale }: HotProductsProps) {
           {/* Products Grid */}
           <div className="flex-1 relative right-[-5px]">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-              {hotProducts.map((product, index) => {
+              {hotProducts.map((product) => {
                 const productName = getProductDisplayTitle(product, locale);
-                const productDesc = getProductDescription(product, locale);
                 const imageSrc = getProductMainImage(product, locale);
                 return (
                   <div
@@ -256,50 +246,33 @@ export function HotProducts({ locale }: HotProductsProps) {
                       )}
                     </Link>
 
-                    {/* Info */}
-                    <div className="p-4">
-                      <h3 className="font-semibold text-lg text-[#333333] text-center mb-1 line-clamp-3 h-[84px] leading-7">
-                        {productName}
+                    {/* Info — v9 卡片格式 (K3 2026-09-16 拍板: 同产品分类页 SKU 格式) */}
+                    <div className="p-4 flex flex-col flex-1">
+                      {/* 标题两行 */}
+                      <h3 className="text-base font-bold text-[#333333] text-center leading-6 min-h-[48px] line-clamp-2 mb-2.5">
+                        <Link href={`${localePrefix}/product/${product.slug}/`} className="hover:text-[#2873F5]">{productName}</Link>
                       </h3>
-                      <p className="text-sm text-gray-500 line-clamp-2 mb-2 text-center h-[44px] leading-5">
-                        {productDesc}
-                      </p>
-                      {/* price area — 单价小锚 + MOQ 副行 (2026-07-26 K3: getDisplayAnchor 优先), clickable to PDP */}
+                      {/* 材质 + 起订 行 (font-mono 规格行, 同分类页 v9) */}
+                      <div className="font-mono text-[13px] text-[#6B7280] tracking-[0.02em] h-[2.6em] overflow-hidden leading-[1.5] mb-3 text-center">
+                        {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{locale === 'zh-hk' ? '[材質]' : locale === 'ja' ? '[材質]' : '[Material]'} {product.specs.material}</span>}
+                        <span className="whitespace-nowrap mr-2.5">{locale === 'zh-hk' ? '[起訂]' : locale === 'ja' ? '[最小注文]' : '[MOQ]'} {product.minQuantity} {getPriceUnitWord(product.price_range) ? getPriceUnitWord(product.price_range).replace('/', '') : (locale === 'ja' ? '個' : '件')}</span>
+                      </div>
+                      {/* price area — v9 大号价格 (getDisplayAnchor 优先), clickable to PDP */}
                       {(() => { const anchor = getDisplayAnchor(product.slug, locale); return (
-                      <div className="mb-2 text-center">
-                        <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-sm tracking-wider hover:underline">
-                          {locale === 'en' && <span className="text-xs font-medium text-gray-400 mr-1 tracking-normal">{t.from}</span>}
+                      <div className="flex items-baseline gap-1.5 h-8 whitespace-nowrap justify-center mb-3.5">
+                        <Link href={`${localePrefix}/product/${product.slug}/`} className="font-mono text-[27px] font-bold text-[#F87314] tracking-[-0.02em] hover:underline">
                           {anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
-                          {anchor && <span className="text-xs font-normal text-gray-400 ml-0.5 tracking-normal">{anchor.unitLabel}</span>}
-                          {locale !== 'en' && <span className="text-xs font-normal text-gray-400 ml-0.5 tracking-normal">{t.from}</span>}
                         </Link>
-                        <p className="text-[11px] text-gray-400 leading-tight mt-0.5">
-                          {anchor
-                            ? anchor.sub
-                            : locale === 'zh-hk'
-                            ? `${product.minQuantity}${getPriceUnitWord(product.price_range) || '件'}起訂 · 量大更優`
-                            : locale === 'ja'
-                            ? `${product.minQuantity}個〜 · 大口割引`
-                            : `MOQ ${product.minQuantity} · Volume pricing`}
-                        </p>
-                        <p className="text-[11px] text-gray-400 leading-tight mt-0.5">{t.freeDesign}</p>
+                        <span className="text-[14px] text-[#6B7280]">{anchor ? anchor.unitLabel : ''}{locale === 'zh-hk' ? '起' : locale === 'ja' ? '〜' : 'From'}</span>
                       </div>
                       ); })()}
-                      {/* dual buttons */}
-                      <div className="flex gap-2">
-                        <Link
-                          href={`${localePrefix}/product/${product.slug}/`}
-                          className="flex-1 text-center py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
-                        >
-                          {t.viewMore}
-                        </Link>
-                        <Link
-                          href={`${localePrefix}/product/${product.slug}/`}
-                          className="flex-1 text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
-                        >
-                          {t.getQuote}
-                        </Link>
-                      </div>
+                      {/* single primary CTA — v9 单主 CTA (替代双按钮) */}
+                      <Link
+                        href={`${localePrefix}/product/${product.slug}/`}
+                        className="mt-auto w-full text-center py-2.5 bg-[#2873F5] text-white rounded-lg text-sm font-semibold hover:bg-[#1E5FD1] transition-colors"
+                      >
+                        {t.getQuote}
+                      </Link>
                     </div>
                   </div>
                 );
