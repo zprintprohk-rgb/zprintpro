@@ -107,50 +107,103 @@ export const buyingGuides: BuyingGuide[] = [
     category: { 'zh-hk': '貼紙知識', en: 'Sticker Guide', ja: 'ステッカーガイド' },
     date: '2025-01-15',
     relatedProducts: ['waterproof-stickers', 'transparent-stickers', 'die-cut-stickers', 'foil-stickers', 'removable-stickers', 'security-stickers', 'small-batch-stickers'],
-    content: {
-      'zh-hk': `<p>貼紙印刷是品牌推廣中 CP 值最高的投資之一。無論是產品標籤、促銷宣傳還是個性化裝飾，智印港都能提供專業方案。本文從材質、表面處理、模切形狀、應用場景、印刷工藝、選購決策 6 大維度為您系統拆解貼紙選購，助您用最低成本達到最佳品牌推廣效果。</p>
-<h3>一、貼紙材質分類與對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔</td><td class="border p-2">短期使用</td><td class="border p-2">HK$0.5-1.5/張</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐用</td><td class="border p-2">戶外、食品</td><td class="border p-2">HK$1.2-3/張</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感佳</td><td class="border p-2">高檔包裝</td><td class="border p-2">HK$2-5/張</td></tr><tr><td class="border p-2">雷射 / 全息</td><td class="border p-2">防偽、視覺強</td><td class="border p-2">證書、品牌</td><td class="border p-2">HK$3-8/張</td></tr><tr><td class="border p-2">牛皮紙</td><td class="border p-2">環保、復古</td><td class="border p-2">手工品牌</td><td class="border p-2">HK$1.5-4/張</td></tr></tbody></table>
-<h3>二、表面處理工藝詳解</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮、色彩飽和鮮豔</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，給人高檔沉穩感</li><li><strong>燙金 / 燙銀</strong>：金屬光澤，提升品牌奢華感</li><li><strong>UV 局部上光</strong>：突出重點圖案，增加層次感</li><li><strong>壓凸 / 壓凹</strong>：無油墨的立體觸感</li></ul>
-<h3>三、模切形狀選擇</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>方形 / 矩形</strong>：標準化、信息密集、適合條碼</li><li><strong>圓形 / 橢圓</strong>：經典、百搭、適合 Logo</li><li><strong>異形模切（Die-cut）</strong>：完全按形狀剪裁，視覺衝擊力最強</li><li><strong>吻切（Kiss-cut）</strong>：背紙保留整體形狀，便於撕取</li><li><strong>連續模切</strong>：多張連在一起，便於批量派發</li></ol>
-<h3>四、應用場景與材質對應</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">場景</th><th class="border p-2 text-left">推薦材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、營養標示</td></tr><tr><td class="border p-2">化妝品標籤</td><td class="border p-2">透明 PET + 燙金</td><td class="border p-2">高檔瓶身</td></tr><tr><td class="border p-2">產品促銷</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">限期標識</td></tr><tr><td class="border p-2">物流標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">快遞面單</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">異形模切</td><td class="border p-2">DIY 裝飾</td></tr><tr><td class="border p-2">兒童貼紙</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
-<h3>五、印刷工藝選擇</h3>
+    content: { 'zh-hk': `<p>貼紙印刷是品牌推廣中 CP 值最高的投資之一。無論是產品標籤、促銷宣傳還是個性化裝飾，智印港都能提供專業方案。本文從材質、表面處理、模切形狀、應用場景、印刷工藝、選購決策 6 大維度為您系統拆解貼紙選購，助您用最低成本達到最佳品牌推廣效果。</p>
+<p>想即刻知道報價？<a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a>，30 秒 AI 報價，今日確認今日排期。</p>
+<h2>貼紙印刷幾錢？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>貼紙印刷按材質、尺寸同數量報價：銅版紙 HK$0.5-1.5/張起，防水合成紙 HK$1.2-3/張起，數量愈多單價愈平，50 個起印。</p></div>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【貼紙印刷 50 個起印，防水啞光 HK$0.45/張起；銅版紙低至 HK$0.5-1.5/張】</p></div>
+<p>價格主要由材質、尺寸同數量 3 個因素決定。數量由 100 張加到 500 張、1,000 張，單價折扣更明顯；量少想試水，可以睇下<a href="/zh-hk/product/small-batch-stickers/">小批量貼紙印刷方案</a>，A4 起印無庫存壓力。</p>
+<h2>最少訂幾多張？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>貼紙 50 個起印，數碼快印免庫存壓力；標準訂單 100 張起，燙金／防偽等特殊工藝 500 張起。</p></div>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>數碼印刷</strong>：100-500 張，多色、快速、個性化</li><li><strong>柔版印刷（Flexo）</strong>：1000+ 張，單色到 4 色，經濟實惠</li><li><strong>UV 印刷</strong>：高飽和度，支持特殊材質</li><li><strong>絲網印刷</strong>：1000+ 張，厚油墨層、視覺衝擊力強</li></ul>
-<h3>六、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小訂購量是多少？</strong><br/>A：標準 100 張。特殊工藝需 500 張起。</p><p><strong>Q：防水貼紙真的防水嗎？</strong><br/>A：是的，可承受短時間浸泡。長期浸泡需額外覆膜。</p><p><strong>Q：交貨時間多久？</strong><br/>A：標準 3-5 個工作日，急件即日可取。</p><p><strong>Q：需要什麼文件格式？</strong><br/>A：AI / PDF / EPS 矢量檔 + 300dpi + CMYK。</p></div>
-<p>無論您需要哪種貼紙，立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取專業建議！</p>`,
-      'en': `<p>Sticker printing is one of the highest-ROI brand investments. Whether product labels, promo giveaways, or personalized decoration, ZprintPro delivers professional solutions. This article systematically breaks down sticker selection across 6 dimensions: materials, finishes, die-cut shapes, applications, printing processes, and decision framework.</p>
-<h3>1. Sticker Material Categories & Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art Paper Sticker</td><td class="border p-2">Low cost, vibrant colors</td><td class="border p-2">Short-term use</td><td class="border p-2">US$0.06-0.20/pc</td></tr><tr><td class="border p-2">Waterproof Synthetic</td><td class="border p-2">Water/oil resistant, durable</td><td class="border p-2">Outdoor, food</td><td class="border p-2">US$0.15-0.40/pc</td></tr><tr><td class="border p-2">Transparent PET</td><td class="border p-2">Crystal clear, premium feel</td><td class="border p-2">Premium packaging</td><td class="border p-2">US$0.25-0.65/pc</td></tr><tr><td class="border p-2">Holographic</td><td class="border p-2">Anti-counterfeit, visual impact</td><td class="border p-2">Certificates, brands</td><td class="border p-2">US$0.40-1.00/pc</td></tr><tr><td class="border p-2">Kraft Paper</td><td class="border p-2">Eco, vintage</td><td class="border p-2">Handcraft brands</td><td class="border p-2">US$0.20-0.50/pc</td></tr></tbody></table>
-<h3>2. Surface Finishes in Detail</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Smooth surface, saturated colors</li><li><strong>Matte Lamination</strong>: Soft texture, premium feel</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic shine, luxury feel</li><li><strong>Spot UV</strong>: Highlights designs, dimensional depth</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional texture</li></ul>
-<h3>3. Die-Cut Shape Selection</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Square / Rectangle</strong>: Standardized, info-dense, ideal for barcodes</li><li><strong>Circle / Oval</strong>: Classic, versatile, ideal for logos</li><li><strong>Die-cut</strong>: Custom shape — strongest visual impact</li><li><strong>Kiss-cut</strong>: Backing paper stays intact — easy peel</li><li><strong>Continuous Cut</strong>: Multiple stickers connected — bulk distribution</li></ol>
-<h3>4. Application & Material Mapping</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Scene</th><th class="border p-2 text-left">Recommended</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Food Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Ingredients, nutrition</td></tr><tr><td class="border p-2">Cosmetic Labels</td><td class="border p-2">Transparent PET + foil</td><td class="border p-2">Premium bottle</td></tr><tr><td class="border p-2">Promo Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Limited-time</td></tr><tr><td class="border p-2">Shipping Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Tracking labels</td></tr><tr><td class="border p-2">Planner / Personalized</td><td class="border p-2">Die-cut</td><td class="border p-2">DIY decoration</td></tr><tr><td class="border p-2">Kids Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Education, toys</td></tr></tbody></table>
-<h3>5. Printing Process Options</h3>
+<p>起步數量揀啱印刷方式最緊要：100-500 張行數碼快印最抵，1,000 張以上轉柔版或絲網，單價大幅下調。想睇全線規格對照，可以參考<a href="/zh-hk/category/stickers/">貼紙印刷全系列</a>。</p>
+<h2>邊種貼紙材質好？防水 / PVC / 可移 / 銅版</h2>
+<p>材質決定耐用度、質感同價格：短期促銷揀銅版紙慳成本，戶外同食品場景要防水防油，高檔包裝用透明 PET，手工品牌鍾意牛皮紙。智印港常用 5 大材質對照如下：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔</td><td class="border p-2">短期使用</td><td class="border p-2">HK$0.5-1.5/張</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐用</td><td class="border p-2">戶外、食品</td><td class="border p-2">HK$1.2-3/張</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感佳</td><td class="border p-2">高檔包裝</td><td class="border p-2">HK$2-5/張</td></tr><tr><td class="border p-2">雷射 / 全息</td><td class="border p-2">防偽、視覺強</td><td class="border p-2">證書、品牌</td><td class="border p-2">HK$3-8/張</td></tr><tr><td class="border p-2">牛皮紙</td><td class="border p-2">環保、復古</td><td class="border p-2">手工品牌</td><td class="border p-2">HK$1.5-4/張</td></tr></tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【防水合成紙防水防油、適合戶外同食品場景；長期浸泡或戶外長期使用建議加覆膜】</p></div>
+<p>想深入比較 PVC／透明／可移／燙金 4 大材質？睇<a href="/zh-hk/blog/sticker-material-pvc-vinyl-removable/">防水貼紙材質完全指南</a>；要戶外長期貼，揀<a href="/zh-hk/product/waterproof-stickers/">戶外防水貼紙</a>，PVC 防水防曬耐磨。</p>
+<h2>貼紙有咩工藝？</h2>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮、色彩飽和鮮豔</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，給人高檔沉穩感</li><li><strong>燙金 / 燙銀</strong>：金屬光澤，提升品牌奢華感</li><li><strong>UV 局部上光</strong>：突出重點圖案，增加層次感</li><li><strong>壓凸 / 壓凹</strong>：無油墨的立體觸感</li></ul>
+<p>想加金屬質感？<a href="/zh-hk/product/foil-stickers/">燙金貼紙工藝</a>有金、銀、玫瑰金同全息可揀，印前免費檢查刀模線同安全距離。</p>
+<h2>貼紙形狀點揀？</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>方形 / 矩形</strong>：標準化、信息密集、適合條碼</li><li><strong>圓形 / 橢圓</strong>：經典、百搭、適合 Logo</li><li><strong>異形模切（Die-cut）</strong>：完全按形狀剪裁，視覺衝擊力最強</li><li><strong>吻切（Kiss-cut）</strong>：背紙保留整體形狀，便於撕取</li><li><strong>連續模切</strong>：多張連在一起，便於批量派發</li></ol>
+<p>異形模切係品牌記憶點最強嘅選擇，完全按形狀剪裁；想睇實例，可以睇<a href="/zh-hk/product/die-cut-stickers/">異形模切貼紙</a>產品頁。</p>
+<h2>貼紙用喺邊？應用場景 × 材質速查</h2>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">場景</th><th class="border p-2 text-left">推薦材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、營養標示</td></tr><tr><td class="border p-2">化妝品標籤</td><td class="border p-2">透明 PET + 燙金</td><td class="border p-2">高檔瓶身</td></tr><tr><td class="border p-2">產品促銷</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">限期標識</td></tr><tr><td class="border p-2">物流標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">快遞面單</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">異形模切</td><td class="border p-2">DIY 裝飾</td></tr><tr><td class="border p-2">兒童貼紙</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
+<h2>交期要幾耐？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>標準貼紙 3-5 個工作日交貨，急件即日可取；跨境訂單經 DHL 全球 2-4 天送達，落單前可先確認檔期。</p></div>
+<p>旺季（節日、年尾）建議提早 1-2 週落單，預留設計修改同打樣時間。</p>
+<h2>點樣設計唔走樣？</h2>
+<p>檔案規格決定成品質素：AI／PDF／EPS 矢量檔、300dpi、CMYK 色彩模式，文字轉曲線，異形模切附刀模線。想設計更搶眼，參考<a href="/zh-hk/blog/sticker-design/">貼紙設計 10 個黃金法則</a>，由排版到配色一次學識。</p>
+<p>仲想知更多選購細節？由零開始睇<a href="/zh-hk/blog/sticker-guide/">貼紙印刷完全指南</a>。</p>
+<h2>常見問題</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：貼紙印刷幾錢？</strong><br/>A：銅版紙約 HK$0.5-1.5/張起，防水合成紙 HK$1.2-3/張起，防水啞光 HK$0.45/張起；數量愈多單價愈平，實際以報價為準。</p><p><strong>Q：最少訂幾多張？</strong><br/>A：貼紙 50 個起印；標準 100 張起，燙金／防偽等特殊工藝 500 張起。</p><p><strong>Q：防水貼紙真係防水嗎？</strong><br/>A：係，防水合成紙可承受短時間浸泡；長期浸泡或戶外長期使用需額外覆膜。</p><p><strong>Q：可移貼紙同永久貼紙點揀？</strong><br/>A：可移貼紙撕走不殘膠，適合櫥窗、活動臨時貼；永久貼紙黏力強，適合長期標識同產品標籤。</p><p><strong>Q：交貨時間幾耐？</strong><br/>A：標準 3-5 個工作日，急件即日可取。</p><p><strong>Q：需要咩檔案格式？</strong><br/>A：AI／PDF／EPS 矢量檔 + 300dpi + CMYK，文字轉曲線。</p></div>
+<p>本文由<b>智印港印刷工程團隊</b>撰寫，團隊成員具 15 年膠印（柯式）印刷經驗，負責全站貼紙、包裝及傳單規格把關；文中數據以智印港現行報價與生產實務為準。最後更新：2026-09-16。</p>
+<p>無論您需要哪種貼紙，立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取專業建議！</p>`, en: `<p>Sticker printing is one of the highest-ROI brand investments. Whether product labels, promo giveaways, or personalized decoration, ZprintPro delivers professional solutions. This article systematically breaks down sticker selection across 6 dimensions: materials, finishes, die-cut shapes, applications, printing processes, and decision framework.</p>
+<p>Need an instant quote? <a href="https://wa.me/8619880851334" target="_blank">Contact ZprintPro via WhatsApp</a> - 30-second AI quote, confirm today and we'll schedule production today.</p>
+<h2>How much does sticker printing cost?</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>Sticker pricing depends on material, size and quantity: art paper from US$0.06/pc, waterproof synthetic US$0.15-0.40/pc - the more you order, the lower the unit price.</p></div>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Custom sticker printing starts at 50 pcs MOQ; waterproof synthetic from US$0.15/pc, art paper from US$0.06/pc】</p></div>
+<p>Three factors drive price: material, size and quantity. Moving from 100 to 500 to 1,000 pcs unlocks bigger per-unit discounts; for a small test run, check <a href="/en/product/small-batch-stickers/">small batch sticker printing</a> with A4-sheet options and no inventory pressure.</p>
+<h2>What is the minimum order quantity?</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>Stickers start at 50 pcs for digital small-batch runs; standard orders start at 100 pcs, and specialty finishes (foil, security) require 500 pcs.</p></div>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Digital Print</strong>: 100-500 pieces, multi-color, fast, personalized</li><li><strong>Flexo Print</strong>: 1000+ pieces, 1-4 color, economical</li><li><strong>UV Print</strong>: High saturation, supports special materials</li><li><strong>Screen Print</strong>: 1000+ pieces, thick ink, strong visual</li></ul>
-<h3>6. Frequently Asked Questions</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ?</strong><br/>A：Standard 100 pieces. Specialty processes require 500+.</p><p><strong>Q：Are waterproof stickers really waterproof?</strong><br/>A：Yes — withstand brief submersion. Long submersion needs extra lamination.</p><p><strong>Q：How long does production take?</strong><br/>A：Standard 3-5 working days; rush same-day available.</p><p><strong>Q：What file format needed?</strong><br/>A：AI / PDF / EPS vector + 300dpi + CMYK.</p></div>
-<p>For any sticker need, contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for professional advice!</p>`,
-      'ja': `<p>ステッカー印刷はブランド投資の中でも ROI が高い分野です。商品ラベル、プロモーション、個性を問わず、智印港はプロフェッショナルなソリューションをご提供。本記事は材質、表面加工、ダイカット形状、応用、印刷工程、選定意思決定の 6 つの側面からステッカー選定を体系的に整理します。</p>
-<h3>一、ステッカー材質分類と比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th><th class="border p-2 text-left">参考価格</th></tr></thead><tbody><tr><td class="border p-2">アート紙ステッカー</td><td class="border p-2">低コスト、色彩鮮やか</td><td class="border p-2">短期利用</td><td class="border p-2">HK$0.5-1.5/枚</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐久</td><td class="border p-2">屋外、食品</td><td class="border p-2">HK$1.2-3/枚</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感良好</td><td class="border p-2">高級パッケージ</td><td class="border p-2">HK$2-5/枚</td></tr><tr><td class="border p-2">ホログラム</td><td class="border p-2">偽造防止、視覚強</td><td class="border p-2">証書、ブランド</td><td class="border p-2">HK$3-8/枚</td></tr><tr><td class="border p-2">クラフト紙</td><td class="border p-2">エコ、レトロ</td><td class="border p-2">手工ブランド</td><td class="border p-2">HK$1.5-4/枚</td></tr></tbody></table>
-<h3>二、表面加工詳細</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：表面光亮、色彩彩度高い</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級感</li><li><strong>箔押し（金 / 銀）</strong>：金属光沢、ブランド高級感</li><li><strong>スポット UV</strong>：重点部分強調、立体感</li><li><strong>エンボス / デボス</strong>：インクなしの立体触感</li></ul>
-<h3>三、ダイカット形状の選択</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>正方形 / 長方形</strong>：標準化、密度高、バーコード向き</li><li><strong>円形 / 楕円</strong>：定番、万能、ロゴ向き</li><li><strong>ダイカット</strong>：任意形状カット、視覚衝撃最大</li><li><strong>キスカット</strong>：台紙そのまま、剥がしやすい</li><li><strong>連続カット</strong>：複数連結、批量配布向き</li></ol>
-<h3>四、応用シーンと材質の対応表</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">シーン</th><th class="border p-2 text-left">推奨材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、栄養表示</td></tr><tr><td class="border p-2">化粧品ラベル</td><td class="border p-2">透明 PET + 箔</td><td class="border p-2">高級ボトル</td></tr><tr><td class="border p-2">プロモステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">期間限定标识</td></tr><tr><td class="border p-2">物流ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">送り状</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">ダイカット</td><td class="border p-2">DIY 装飾</td></tr><tr><td class="border p-2">子供ステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
-<h3>五、印刷工程の選択</h3>
+<p>Match the quantity to the process: 100-500 pieces is most cost-effective on digital, while 1,000+ moves to flexo or screen for sharply lower unit costs. Compare specs across the <a href="/en/category/stickers/">full sticker printing range</a>.</p>
+<h2>Which sticker material is best? Waterproof / PVC / Removable / Art Paper</h2>
+<p>Material decides durability, feel and price: art paper keeps short-term promos cheap; outdoor and food applications need waterproof stock; premium packaging calls for clear PET; craft brands love kraft. Here's ZprintPro's 5-material comparison:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art Paper Sticker</td><td class="border p-2">Low cost, vibrant colors</td><td class="border p-2">Short-term use</td><td class="border p-2">US$0.06-0.20/pc</td></tr><tr><td class="border p-2">Waterproof Synthetic</td><td class="border p-2">Water/oil resistant, durable</td><td class="border p-2">Outdoor, food</td><td class="border p-2">US$0.15-0.40/pc</td></tr><tr><td class="border p-2">Transparent PET</td><td class="border p-2">Crystal clear, premium feel</td><td class="border p-2">Premium packaging</td><td class="border p-2">US$0.25-0.65/pc</td></tr><tr><td class="border p-2">Holographic</td><td class="border p-2">Anti-counterfeit, visual impact</td><td class="border p-2">Certificates, brands</td><td class="border p-2">US$0.40-1.00/pc</td></tr><tr><td class="border p-2">Kraft Paper</td><td class="border p-2">Eco, vintage</td><td class="border p-2">Handcraft brands</td><td class="border p-2">US$0.20-0.50/pc</td></tr></tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Waterproof synthetic is water- and oil-resistant for outdoor and food use; add lamination for long-term immersion or extended outdoor exposure】</p></div>
+<p>For a deeper material showdown, read the <a href="/en/blog/sticker-material-pvc-vinyl-removable/">waterproof sticker material guide</a> comparing PVC, clear, removable and foil; for long-term outdoor use choose <a href="/en/product/waterproof-stickers/">outdoor waterproof stickers</a> in PVC.</p>
+<h2>What finishing options are available?</h2>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Smooth surface, saturated colors</li><li><strong>Matte Lamination</strong>: Soft texture, premium feel</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic shine, luxury feel</li><li><strong>Spot UV</strong>: Highlights designs, dimensional depth</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional texture</li></ul>
+<p>Want a metallic accent? <a href="/en/product/foil-stickers/">foil sticker options</a> include gold, silver, rose gold and holographic; die-lines and safe margins are checked free before printing.</p>
+<h2>How do I choose a sticker shape?</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Square / Rectangle</strong>: Standardized, info-dense, ideal for barcodes</li><li><strong>Circle / Oval</strong>: Classic, versatile, ideal for logos</li><li><strong>Die-cut</strong>: Custom shape - strongest visual impact</li><li><strong>Kiss-cut</strong>: Backing paper stays intact - easy peel</li><li><strong>Continuous Cut</strong>: Multiple stickers connected - bulk distribution</li></ol>
+<p>Custom die-cut shapes deliver the strongest brand recall, cut exactly to your outline; see examples on the <a href="/en/product/die-cut-stickers/">custom die-cut stickers</a> page.</p>
+<h2>Where are stickers used? Application x Material Quick Map</h2>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Scene</th><th class="border p-2 text-left">Recommended</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Food Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Ingredients, nutrition</td></tr><tr><td class="border p-2">Cosmetic Labels</td><td class="border p-2">Transparent PET + foil</td><td class="border p-2">Premium bottle</td></tr><tr><td class="border p-2">Promo Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Limited-time</td></tr><tr><td class="border p-2">Shipping Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Tracking labels</td></tr><tr><td class="border p-2">Planner / Personalized</td><td class="border p-2">Die-cut</td><td class="border p-2">DIY decoration</td></tr><tr><td class="border p-2">Kids Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Education, toys</td></tr></tbody></table>
+<h2>How long does delivery take?</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>Standard sticker production takes 3-5 working days, with same-day rush available; cross-border orders ship via DHL in 2-4 days globally.</p></div>
+<p>During peak seasons (holidays, year-end), order 1-2 weeks ahead to allow time for design revisions and proofs.</p>
+<h2>How do I design stickers that print true?</h2>
+<p>File specs decide the result: AI/PDF/EPS vectors, 300dpi, CMYK, outlined text, and a die-line for custom shapes. For standout artwork, follow the <a href="/en/blog/sticker-design/">10 golden rules for sticker design</a>.</p>
+<p>New to sticker printing? Read the <a href="/en/blog/sticker-guide/">complete sticker printing guide</a> first.</p>
+<h2>FAQ</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How much does sticker printing cost?</strong><br/>A：Art paper from US$0.06/pc, waterproof synthetic US$0.15-0.40/pc; volume discounts apply - final quote is confirmation-based.</p><p><strong>Q：What is the minimum order?</strong><br/>A：Stickers start at 50 pcs; standard orders 100 pcs, specialty finishes (foil/security) 500 pcs.</p><p><strong>Q：Are waterproof stickers really waterproof?</strong><br/>A：Yes - waterproof synthetic stock withstands brief submersion; long-term immersion or outdoor exposure needs extra lamination.</p><p><strong>Q：Removable or permanent adhesive?</strong><br/>A：Removable stickers peel off residue-free - ideal for windows and event signage; permanent adhesive suits long-term labeling and product labels.</p><p><strong>Q：How long does production take?</strong><br/>A：Standard 3-5 working days; rush same-day available.</p><p><strong>Q：What file format do you need?</strong><br/>A：AI / PDF / EPS vector + 300dpi + CMYK, outlined fonts.</p></div>
+<p>Written by the <b>ZprintPro Print Engineering Team</b> - 15 years of offset press experience, responsible for material and spec checks across stickers, packaging and flyers; figures reflect ZprintPro's current pricing and production practice. Last updated: 2026-09-16.</p>
+<p>For any sticker need, contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for professional advice!</p>`, 'ja': `<p>ステッカー印刷はブランド投資の中でも ROI が高い分野です。商品ラベル、プロモーション、個性を問わず、ZprintProはプロフェッショナルなソリューションをご提供。本記事は材質、表面加工、ダイカット形状、応用、印刷工程、選定意思決定の 6 つの側面からステッカー選定を体系的に整理します。</p>
+<p>すぐに見積りが欲しい方は <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> — 30 秒 AI 見積もり、本日中に確認いただければ本日中に手配します。</p>
+<h2>ステッカー印刷はいくら？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>料金は材質・サイズ・数量で決まります：アート紙 HK$0.5-1.5/枚〜、防水合成紙 HK$1.2-3/枚〜、数量が多いほど単価は下がります。</p></div>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【ステッカー印刷は50枚から注文可、防水マット HK$0.45/枚〜、アート紙 HK$0.5-1.5/枚〜】</p></div>
+<p>価格は材質・サイズ・数量の3要素で決まります。100枚→500枚→1,000枚と数量を上げると単価割引が大きくなり、少量で試したい場合は<a href="/ja/product/small-batch-stickers/">小ロットステッカー印刷</a>が A4 シートから対応、在庫リスクなし。</p>
+<h2>最小注文数は？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>ステッカーは50枚から注文可（デジタル小ロット）。標準注文は100枚から、箔押し・偽造防止などの特殊加工は500枚から。</p></div>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>デジタル印刷</strong>：100-500 枚、多色、高速、個別性</li><li><strong>フレキソ印刷</strong>：1000+ 枚、1-4 色、経済的</li><li><strong>UV 印刷</strong>：高彩度、特殊素材対応</li><li><strong>シルクスクリーン</strong>：1000+ 枚、厚インキ、視覚衝撃強</li></ul>
-<h3>六、よくある質問</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：MOQ は？</strong><br/>A：標準 100 枚。特殊工程は 500 枚以上。</p><p><strong>Q：防水ステッカーは本当に防水？</strong><br/>A：はい。短時間浸水に耐えます。長期は追加ラミネート必要。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急当日可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS ベクター + 300dpi + CMYK。</p></div>
-<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp で智印港に連絡</a> 専門アドバイス！</p>`,
-  },
+<p>数量に合わせて印刷方式を選ぶのがコツ：100-500枚はデジタルが最安、1,000枚以上はフレキソやシルクスクリーンで単価が大きく下がります。<a href="/ja/category/stickers/">ステッカー印刷の全ラインナップ</a>で仕様を比較できます。</p>
+<h2>どの材質がいい？防水 / PVC / 再剥離 / アート紙</h2>
+<p>材質で耐久性・質感・価格が決まります：短期プロモはアート紙、屋外・食品は防水、高級パッケージは透明PET、ハンドメイドブランドはクラフト紙。ZprintProの主要5材質の比較は以下の通り：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th><th class="border p-2 text-left">参考価格</th></tr></thead><tbody><tr><td class="border p-2">アート紙ステッカー</td><td class="border p-2">低コスト、色彩鮮やか</td><td class="border p-2">短期利用</td><td class="border p-2">HK$0.5-1.5/枚</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐久</td><td class="border p-2">屋外、食品</td><td class="border p-2">HK$1.2-3/枚</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感良好</td><td class="border p-2">高級パッケージ</td><td class="border p-2">HK$2-5/枚</td></tr><tr><td class="border p-2">ホログラム</td><td class="border p-2">偽造防止、視覚強</td><td class="border p-2">証書、ブランド</td><td class="border p-2">HK$3-8/枚</td></tr><tr><td class="border p-2">クラフト紙</td><td class="border p-2">エコ、レトロ</td><td class="border p-2">手工ブランド</td><td class="border p-2">HK$1.5-4/枚</td></tr></tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【防水合成紙は防水防油で屋外・食品に最適。長期浸水や屋外長期使用にはラミネート追加を】</p></div>
+<p>さらに詳しく比較したい方は<a href="/ja/blog/sticker-material-pvc-vinyl-removable/">防水ステッカー材質完全ガイド</a>（PVC・透明・再剥離・箔押し）を、屋外長期使用なら<a href="/ja/product/waterproof-stickers/">屋外防水ステッカー</a>（PVC）をどうぞ。</p>
+<h2>どんな加工がある？</h2>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：表面光亮、色彩彩度高い</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級感</li><li><strong>箔押し（金 / 銀）</strong>：金属光沢、ブランド高級感</li><li><strong>スポット UV</strong>：重点部分強調、立体感</li><li><strong>エンボス / デボス</strong>：インクなしの立体触感</li></ul>
+<p>メタリックな質感なら<a href="/ja/product/foil-stickers/">箔押しステッカー</a>に金・銀・ローズゴールド・ホログラムをご用意、刀型線と安全マージンは印刷前に無料チェック。</p>
+<h2>ステッカーの形はどう選ぶ？</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>正方形 / 長方形</strong>：標準化、密度高、バーコード向き</li><li><strong>円形 / 楕円</strong>：定番、万能、ロゴ向き</li><li><strong>ダイカット</strong>：任意形状カット、視覚衝撃最大</li><li><strong>キスカット</strong>：台紙そのまま、剥がしやすい</li><li><strong>連続カット</strong>：複数連結、批量配布向き</li></ol>
+<p>ダイカットは輪郭どおりにカットされ、ブランドの記憶度が最大。<a href="/ja/product/die-cut-stickers/">ダイカットステッカー</a>のページで実例をご覧いただけます。</p>
+<h2>どこで使う？用途 × 材質 早見表</h2>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">シーン</th><th class="border p-2 text-left">推奨材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、栄養表示</td></tr><tr><td class="border p-2">化粧品ラベル</td><td class="border p-2">透明 PET + 箔</td><td class="border p-2">高級ボトル</td></tr><tr><td class="border p-2">プロモステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">期間限定标识</td></tr><tr><td class="border p-2">物流ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">送り状</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">ダイカット</td><td class="border p-2">DIY 装飾</td></tr><tr><td class="border p-2">子供ステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
+<h2>納期はどのくらい？</h2>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p>標準は3-5営業日、特急は当日受取可。海外注文はDHLで全世界へ2-4日でお届けします。</p></div>
+<p>繁忙期（年末・イベント）はデザイン修正やサンプル確認の時間を見込んで1-2週間前にご注文ください。</p>
+<h2>デザインを色ズレなく印刷するには？</h2>
+<p>入稿データで仕上がりが決まります：AI/PDF/EPS ベクター、300dpi、CMYK、文字はアウトライン化、ダイカットは刀型線を添付。デザインをさらに目立たせたい方は<a href="/ja/blog/sticker-design/">ステッカーデザインの10の黄金法則</a>をご覧ください。</p>
+<p>基本から学びたい方は<a href="/ja/blog/sticker-guide/">ステッカー印刷完全ガイド</a>からどうぞ。</p>
+<h2>よくある質問</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：ステッカー印刷はいくら？</strong><br/>A：アート紙 HK$0.5-1.5/枚〜、防水合成紙 HK$1.2-3/枚〜、防水マット HK$0.45/枚〜。数量が多いほど単価は下がり、最終はお見積りで確定します。</p><p><strong>Q：最小注文数は？</strong><br/>A：ステッカーは50枚から。標準は100枚から、箔押し・偽造防止などの特殊加工は500枚から。</p><p><strong>Q：防水ステッカーは本当に防水？</strong><br/>A：はい。防水合成紙は短時間の浸水に耐えます。長期浸水や屋外長期使用には追加ラミネートが必要です。</p><p><strong>Q：再剥離と永久接着はどっち？</strong><br/>A：再剥離ステッカーは糊残りせず剥がせて、窓やイベントの仮貼りに最適。永久接着は長期表示・製品ラベルに向きます。</p><p><strong>Q：納期は？</strong><br/>A：標準3-5営業日、特急当日可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS ベクター + 300dpi + CMYK、文字アウトライン化。</p></div>
+<p>本記事は<b>ZprintPro印刷工程チーム</b>が執筆。チームは15年のオフセット印刷経験を持ち、ステッカー・パッケージ・チラシの材質・仕様チェックを担当。掲載データはZprintProの現行価格・生産実務に基づきます。最終更新：2026-09-16。</p>
+<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 専門アドバイス！</p>`, },
   },
   // ========== FLYERS ==========
   {
@@ -175,49 +228,119 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['a4-flyers', 'a5-flyers', 'double-sided-flyers', 'folded-leaflets', 'thick-paper-flyers', 'same-day-flyers', 'eco-flyers'],
     content: {
-      'zh-hk': `<p>傳單是香港中小企業最常用的營銷工具之一。相比數碼廣告，印刷傳單具有成本可控、觸達精準、無需依賴演算法等優勢。本文從尺寸、紙質、摺法、派發策略、表面工藝、QR 設計 6 個維度為您拆解香港傳單印刷選購全攻略。</p>
-<h3>一、傳單尺寸怎麼選？</h3>
+  'zh-hk': `<p>傳單是香港中小企業最常用的營銷工具之一。相比數碼廣告，印刷傳單具有成本可控、觸達精準、無需依賴演算法等優勢。本文從尺寸、紙質、摺法、派發策略、表面工藝、QR 設計 6 個維度為您拆解香港傳單印刷選購全攻略。</p>
+<p class="my-4">👉 想即刻知最抵報價？<a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，報上尺寸、紙質同數量，即場回覆報價。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>快速答案：宣傳單張印刷幾錢？</strong><br/>A5 單面 128g 銅版紙 100 張起印、HK$0.25 起/張；A4 單面 HK$0.35 起/張；印得愈多愈平，5,000 張約半價。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>快速答案：A4、A5定A3邊種好？</strong><br/>街派同優惠券揀 A5（148×210mm）；資訊多要留畀客睇揀 A4（210×297mm）；櫥窗或大型活動先需要 A3。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>快速答案：交期要幾耐？</strong><br/>標準 3-5 個工作天交貨，急件最快 24 小時；檔案 300dpi CMYK、出血位 3mm 就可以開印。</p></div>
+<h2>宣傳單張印刷幾錢？</h2>
+<p>傳單價格由尺寸、紙質、單雙面同數量決定。以下係以 128g 銅版紙單面、100 張起印計嘅單價參考（per 智印港 A4/A5 傳單產品頁 2026-09 價格口徑）：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">128g 銅版紙單面</th><th class="border p-2 text-left">起印量</th></tr></thead><tbody><tr><td class="border p-2">A5（148×210mm）</td><td class="border p-2">HK$0.25 起/張</td><td class="border p-2">100 張</td></tr><tr><td class="border p-2">A4（210×297mm）</td><td class="border p-2">HK$0.35 起/張</td><td class="border p-2">100 張</td></tr><tr><td class="border p-2">A3（297×420mm）</td><td class="border p-2">約 HK$0.63 起/張</td><td class="border p-2">100 張</td></tr></tbody></table>
+<p>A3 單價按 A4 基價 ×1.8 尺寸倍率推算（per 智印港傳單產品規格）；印量愈大折扣愈多——500 張 8 折、1,000 張 6.5 折、5,000 張 5 折（per 智印港 A5 傳單產品頁數量折扣）。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【傳單唔一定要貴——A5 單面 128g 銅版紙 100 張起印、HK$0.25 起/張，就係街派最抵嘅組合。】</strong></p></div>
+<h2>A4、A5定A3邊種尺寸好？</h2>
+<p>香港最常見的傳單尺寸是 A4（210 × 297mm）和 A5（148 × 210mm），選擇時主要考慮以下因素：</p>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適合場景</th><th class="border p-2 text-left">單張成本</th></tr></thead><tbody><tr><td class="border p-2">A4 單面</td><td class="border p-2">活動推廣、新品發佈</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">A4 雙面</td><td class="border p-2">菜單、產品目錄、服務介紹</td><td class="border p-2">HK$0.25-0.50</td></tr><tr><td class="border p-2">A5 單面</td><td class="border p-2">折扣券、優惠券、街派</td><td class="border p-2">HK$0.08-0.18</td></tr><tr><td class="border p-2">A5 雙面</td><td class="border p-2">小型目錄、活動邀請</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">三摺 DL</td><td class="border p-2">高階服務介紹、B2B</td><td class="border p-2">HK$0.30-0.60</td></tr></tbody></table>
-<h3>二、紙質選擇全攻略</h3>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【A4 放得晒資訊、A5 慳成本、A3 夠搶眼——尺寸直接決定單張成本，揀啱先唔會嘥錢。】</strong></p></div>
+<p>仲想睇更完整嘅尺寸、紙質、設計同派發拆解？可參考<a href="/zh-hk/blog/flyer-printing-guide/">傳單印刷完全指南</a>；要睇實價同即場落單，可到<a href="/zh-hk/category/flyers/">宣傳單張類目</a>、<a href="/zh-hk/product/a4-flyers/">A4 傳單印刷</a>同<a href="/zh-hk/product/a5-flyers/">A5 傳單印刷</a>產品頁。</p>
+<h2>銅版紙定啞粉紙？</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g 銅版紙</strong>：最經濟實惠，街派首選</li><li><strong>157g 銅版紙</strong>：色彩還原度好，標準選擇</li><li><strong>200g 銅版紙</strong>：高檔感，雙面印刷不易透</li><li><strong>80g 書紙</strong>：環保紙張，適合文字密集型傳單</li><li><strong>100g 書紙</strong>：略厚書紙，更顯品質</li></ul>
-<h3>三、摺法與設計變化</h3>
+<p>一句講晒：以圖片為主揀銅版紙，以文字為主揀書紙；要雙面唔透底，就 157g 起跳。</p>
+<h2>單面定雙面印刷好？</h2>
+<p>單面印刷成本最低，適合內容精簡、即睇即棄嘅街派傳單；雙面印刷背面可以放地圖、餐牌、優惠條款，適合要畀客人留低慢慢睇嘅傳單。雙面印刷一般加 20%（per 智印港 A5 傳單產品頁加工參數），但記得揀 157g 或以上銅版紙先唔會透底。需要雙面規格可直接睇<a href="/zh-hk/product/double-sided-flyers/">雙面傳單印刷</a>產品頁。</p>
+<h2>最少訂幾多張？</h2>
+<p>智印港傳單標準起印量係 <strong>100 張</strong>（per 智印港 A4/A5 傳單產品頁 MOQ 參數）。100 張適合活動當日街派或測試設計；穩步派發建議 500-1,000 張；大型推廣或長期派發先需要 5,000 張以上——數量愈大，單價愈平（500 張 8 折、1,000 張 6.5 折、5,000 張 5 折）。燙金、UV 等特殊工藝就需要 500 張起印。</p>
+<h2>交期要幾耐？</h2>
+<p>標準訂單 <strong>3-5 個工作天</strong>交貨（per 智印港傳單常見問題口徑），適用於大部分 A4/A5 單雙面銅版紙傳單；急件最快 <strong>24 小時</strong>交貨，適合開業或者活動前一晚先決定要印嘅情況。</p>
+<p>想知即日交貨點玩，可以睇<a href="/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/">即日傳單印刷指南</a>，或者直接了解<a href="/zh-hk/services/rush-printing-delivery/">即日急件印刷服務</a>嘅截單時間同附加費。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【交期要快唔一定要貴——A4/A5 單雙面銅版紙標準 3-5 個工作天就交到，24 小時急件留返俾真正嘅開業前夜。】</strong></p></div>
+<h2>摺法與設計變化</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>單張無摺</strong>：A4/A5 標準，無摺工序成本最低</li><li><strong>對摺</strong>：A3 對摺成 A4，多一個摺工序 +30% 成本</li><li><strong>三摺 DL</strong>：A4 三摺成 DL 信封尺寸，B2B 報告常用</li><li><strong>風琴摺</strong>：多摺展開成連續信息，適合產品目錄</li><li><strong>異形摺</strong>：階梯摺、十字摺等趣味摺法</li></ol>
-<h3>四、派發策略與 ROI 提升</h3>
+<h2>派發策略與 ROI 提升</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">策略</th><th class="border p-2 text-left">做法</th><th class="border p-2 text-left">效益</th></tr></thead><tbody><tr><td class="border p-2">目標人群定向</td><td class="border p-2">根據客戶畫像選地點</td><td class="border p-2">地鐵站、商場、社區</td></tr><tr><td class="border p-2">結合 QR Code</td><td class="border p-2">WhatsApp / IG 二維碼</td><td class="border p-2">將線下導入線上</td></tr><tr><td class="border p-2">限時優惠</td><td class="border p-2">「限 7 天」「憑傳單」</td><td class="border p-2">刺激即時轉化</td></tr><tr><td class="border p-2">A/B 測試</td><td class="border p-2">兩版傳單對比效果</td><td class="border p-2">優化 ROI</td></tr><tr><td class="border p-2">數據追蹤</td><td class="border p-2">不同 QR Code 分流</td><td class="border p-2">評估渠道效果</td></tr></tbody></table>
-<h3>五、表面處理工藝</h3>
+<p><strong>實例：</strong>香港一間新開張茶餐廳用 5,000 張 A5 單面 128g 銅版紙傳單做街派，5,000 張享 5 折批發價（per 智印港 A5 傳單產品頁 2026-09 數量折扣，折合約 HK$0.13/張），再配合 WhatsApp QR Code 導流，開業首兩週憑傳單到店嘅查詢量明顯高過單靠門口廣告——傳單印好之餘，派得準先係 ROI 嘅關鍵。</p>
+<h2>表面處理工藝</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮，色彩更鮮豔，適合產品推廣</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，適合高檔品牌、餐廳菜單</li><li><strong>UV 局部上光</strong>：突出 Logo 或圖片</li><li><strong>燙金 / 燙銀</strong>：高階品牌傳單首選</li><li><strong>打孔 / 摺線</strong>：便於撕取、折疊</li></ul>
-<h3>六、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印港提供 100+ 款免費模板。</p></div>
+<h2>常見問題 FAQ</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單印刷幾錢一張？</strong><br/>A：A5 單面 128g 銅版紙 100 張起印、HK$0.25 起/張；A4 單面 HK$0.35 起/張；A3 約 HK$0.63 起/張。印量愈大折扣愈多，5,000 張約半價。</p><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：A4、A5、A3 點揀？</strong><br/>A：街派同優惠券揀 A5；資訊多、要留畀客慢慢睇揀 A4；櫥窗同大型活動先考慮 A3。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印港提供 100+ 款免費模板。</p></div>
+<p><strong>本文作者與品質來源：</strong>由智印港印刷工程團隊撰寫，團隊成員為 15 年膠印工程師，長期操作海德堡 Speedmaster 6+1 印刷機，服務 12 大行業、1,000+ 客戶；廠房通過 ISO 9001 與 FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印港印刷工程團隊）。文中價格來源：智印港 A4/A5 傳單產品頁價格口徑（2026-09 更新）。</p>
 <p>想了解更多傳單印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
-      'en': `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
-<h3>1. How to Choose Flyer Size</h3>
+  en: `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
+<p class="my-4">👉 Need the best price right now? <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> — tell us your size, paper, and quantity for an instant quote.</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Quick Answer: How much does flyer printing cost?</strong><br/>A5 single-sided 128gsm art paper from US$0.40/pc at a 100-pc MOQ, A4 from US$0.55/pc; volume pricing drops to roughly half at 5,000 pcs.</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Quick Answer: Which size — A4, A5, or A3?</strong><br/>Use A5 (148×210mm) for street handouts and coupons, A4 (210×297mm) for info-heavy campaigns, and A3 (297×420mm) only for window displays or big events.</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Quick Answer: How long does delivery take?</strong><br/>Standard delivery is 3-5 working days; rush orders ship in 24 hours. Files need 300dpi CMYK with 3mm bleed.</p></div>
+<h2>How Much Does Flyer Printing Cost?</h2>
+<p>Flyer pricing is driven by size, paper, single- or double-sided printing, and quantity. The table below shows unit prices for 128gsm art paper, single-sided, at a 100-pc MOQ (per ZprintPro A4/A5 flyer product pages, 2026-09 pricing):</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">128gsm Art Paper, Single-Sided</th><th class="border p-2 text-left">MOQ</th></tr></thead><tbody><tr><td class="border p-2">A5 (148×210mm)</td><td class="border p-2">from US$0.40/pc</td><td class="border p-2">100 pcs</td></tr><tr><td class="border p-2">A4 (210×297mm)</td><td class="border p-2">from US$0.55/pc</td><td class="border p-2">100 pcs</td></tr><tr><td class="border p-2">A3 (297×420mm)</td><td class="border p-2">approx. US$1.00/pc</td><td class="border p-2">100 pcs</td></tr></tbody></table>
+<p>A3 is derived from the A4 base price × 1.8 size multiplier (per ZprintPro flyer product specs); the larger the run, the bigger the discount — 500 pcs 20% off, 1,000 pcs 35% off, 5,000 pcs 50% off (per ZprintPro A5 flyer product-page volume tiers).</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【Flyers don't have to be expensive — A5 single-sided 128gsm art paper from US$0.40/pc at a 100-pc MOQ is the most cost-effective street-handout combination.】</strong></p></div>
+<h2>A4, A5, or A3 — Which Flyer Size Is Best?</h2>
+<p>The two most common flyer sizes are A4 (210 × 297mm) and A5 (148 × 210mm):</p>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Unit Cost</th></tr></thead><tbody><tr><td class="border p-2">A4 single-sided</td><td class="border p-2">Event promo, new product launch</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">A4 double-sided</td><td class="border p-2">Menu, product catalog, service intro</td><td class="border p-2">US$0.03-0.06</td></tr><tr><td class="border p-2">A5 single-sided</td><td class="border p-2">Discount coupon, voucher, street</td><td class="border p-2">US$0.01-0.02</td></tr><tr><td class="border p-2">A5 double-sided</td><td class="border p-2">Small catalog, invitation</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">Tri-fold DL</td><td class="border p-2">Premium service intro, B2B</td><td class="border p-2">US$0.04-0.08</td></tr></tbody></table>
-<h3>2. Paper Selection</h3>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【A4 carries the message, A5 saves the budget, A3 gets noticed — size directly drives per-piece cost, so choose the right one before you spend.】</strong></p></div>
+<p>Want the full breakdown of sizes, paper, design, and distribution? See the <a href="/en/blog/flyer-printing-guide/">Custom Flyer Printing Guide</a>, browse the <a href="/en/category/flyers/">flyer printing category</a>, or check live prices on the <a href="/en/product/a4-flyers/">A4 flyers</a> and <a href="/en/product/a5-flyers/">A5 flyers</a> product pages.</p>
+<h2>Coated or Uncoated Paper — Which Should You Choose?</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g Art Paper</strong>: Most economical, ideal for street distribution</li><li><strong>157g Art Paper</strong>: Good color reproduction, standard</li><li><strong>200g Art Paper</strong>: Premium feel, no show-through</li><li><strong>80g Woodfree</strong>: Eco, ideal for text-heavy flyers</li><li><strong>100g Woodfree</strong>: Slightly thicker woodfree, more quality</li></ul>
-<h3>3. Folding & Design Variations</h3>
+<p>In short: choose coated (art) paper for image-heavy flyers and uncoated (woodfree) for text-heavy pieces; for double-sided work, start at 157gsm so nothing shows through.</p>
+<h2>Single-Sided or Double-Sided Printing?</h2>
+<p>Single-sided printing is the lowest-cost option and works best for simple, throwaway street handouts. Double-sided printing gives you a back side for maps, menus, or terms and conditions — ideal when customers keep the flyer. Double-sided adds about 20% to the unit price (per ZprintPro A5 flyer product-page finishing parameters); choose 157gsm or heavier art paper, and go 200gsm for dark designs. See the <a href="/en/product/double-sided-flyers/">double-sided flyers</a> product page for specs.</p>
+<h2>What Is the Minimum Order Quantity?</h2>
+<p>ZprintPro's standard flyer MOQ is <strong>100 pcs</strong> (per ZprintPro A4/A5 flyer product pages). 100 pcs suits event-day handouts or design testing; plan 500-1,000 pcs for steady distribution; large campaigns or long-term programs justify 5,000+ pcs — unit price drops with volume (500 pcs 20% off, 1,000 pcs 35% off, 5,000 pcs 50% off). Special finishes such as foil stamping or spot UV require a 500-pc MOQ.</p>
+<h2>How Long Does Delivery Take?</h2>
+<p>Standard orders ship in <strong>3-5 working days</strong> (per ZprintPro flyer FAQ), covering most A4/A5 single- or double-sided art paper flyers. Rush orders can ship in <strong>24 hours</strong> — ideal when a store opening or event is decided the night before.</p>
+<p>For same-day turnaround details, see the <a href="/en/blog/same-day-flyers-printing-hong-kong-guide/">same-day flyer printing guide</a> and the <a href="/en/services/rush-printing-delivery/">rush printing &amp; delivery service</a> for cutoff times and surcharges.</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【Order 3-5 working days ahead and standard A4/A5 flyers ship on schedule — save the 24-hour rush lane for genuine store-opening emergencies.】</strong></p></div>
+<h2>Folding &amp; Design Variations</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Flat (no fold)</strong>: A4/A5 standard, lowest cost</li><li><strong>Bi-fold</strong>: A3 folded to A4, +30% folding cost</li><li><strong>Tri-fold DL</strong>: A4 folded into DL envelope size, B2B common</li><li><strong>Accordion Fold</strong>: Multi-fold continuous info, ideal for product catalogs</li><li><strong>Specialty Folds</strong>: Step, cross, etc. creative folds</li></ol>
-<h3>4. Distribution Strategy & ROI Improvement</h3>
+<h2>Distribution Strategy &amp; ROI Improvement</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Strategy</th><th class="border p-2 text-left">Method</th><th class="border p-2 text-left">Benefit</th></tr></thead><tbody><tr><td class="border p-2">Target Audience</td><td class="border p-2">Pick location by customer profile</td><td class="border p-2">Transit hubs, malls, community centers</td></tr><tr><td class="border p-2">QR Code</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">Offline-to-online</td></tr><tr><td class="border p-2">Limited-time Offer</td><td class="border p-2">"7-day only" / "With flyer"</td><td class="border p-2">Drive immediate conversion</td></tr><tr><td class="border p-2">A/B Testing</td><td class="border p-2">Compare two flyer versions</td><td class="border p-2">Optimize ROI</td></tr><tr><td class="border p-2">Data Tracking</td><td class="border p-2">Different QR codes per channel</td><td class="border p-2">Evaluate channel efficacy</td></tr></tbody></table>
-<h3>5. Surface Finish Options</h3>
+<p><strong>Example:</strong> a Hong Kong restaurant opening ran 5,000 A5 single-sided 128gsm art paper flyers for street distribution, taking the 5,000-pc tier (50% off list, per ZprintPro A5 flyer product-page pricing — roughly US$0.20/pc) and pairing each sheet with a WhatsApp QR code. Walk-in enquiries from flyer holders during the first two weeks were noticeably higher than from the storefront sign alone — distribution targeting matters as much as the print itself.</p>
+<h2>Surface Finish Options</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Bright surface, vibrant colors, ideal for product promo</li><li><strong>Matte Lamination</strong>: Soft texture, ideal for premium brands and menus</li><li><strong>Spot UV</strong>: Highlight logo or image</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Premium brand flyers favorite</li><li><strong>Perforation / Score Lines</strong>: Easy tear, fold</li></ul>
-<h3>6. Frequently Asked Questions</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for flyers?</strong><br/>A：100 pieces minimum; discounts over 500.</p><p><strong>Q：Will double-sided show through?</strong><br/>A：157g+ art paper generally no. Choose 200g for dark designs.</p><p><strong>Q：Delivery time?</strong><br/>A：Standard 3-5 working days; rush 24 hours available.</p><p><strong>Q：Any design templates?</strong><br/>A：ZprintPro offers 100+ free templates.</p></div>
+<h2>Frequently Asked Questions</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How much does flyer printing cost per piece?</strong><br/>A：A5 single-sided 128gsm art paper from US$0.40/pc at a 100-pc MOQ; A4 from US$0.55/pc; A3 approx. US$1.00/pc. Volume discounts up to 50% at 5,000 pcs.</p><p><strong>Q：What is the MOQ for flyers?</strong><br/>A：100 pieces minimum; discounts over 500.</p><p><strong>Q：Which size — A4, A5, or A3?</strong><br/>A：A5 (148×210mm) for street handouts and coupons; A4 (210×297mm) when you need more detail; A3 for window displays and large campaigns.</p><p><strong>Q：Delivery time?</strong><br/>A：Standard 3-5 working days; rush 24 hours available.</p><p><strong>Q：Will double-sided show through?</strong><br/>A：157g+ art paper generally no. Choose 200g for dark designs.</p><p><strong>Q：Any design templates?</strong><br/>A：ZprintPro offers 100+ free templates.</p></div>
+<p><strong>Author &amp; quality sources:</strong> This guide was written by the ZprintPro printing engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving 1,000+ customers across 12 industries. The plant is ISO 9001 and FSC certified; printed products comply with FDA 21 CFR and EU REACH, with a 24-hour rush SLA and DHL/FedEx global 2-4 day delivery (LinkedIn: ZprintPro Printing Engineering Team). Prices cited from ZprintPro A4/A5 flyer product pages (updated 2026-09).</p>
 <p>Want more on flyer printing? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
-      'ja': `<p>チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。</p>
-<h3>一、チラシサイズの選び方</h3>
+  ja: `<p>チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。</p>
+<p class="my-4">👉 最安値を見積もりたい方は <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a>、サイズ・用紙・数量を送れば即時回答。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：チラシ印刷はいくら？</strong><br/>A5 片面 128g コート紙 100 枚から ¥50/枚〜、A4 片面 ¥70/枚〜。枚数が多いほど安くなり、5,000 枚で約半額。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：A4・A5・A3 はどれ？</strong><br/>A5（148×210mm）は街頭配布・クーポン向け、A4（210×297mm）は情報量重視、A3（297×420mm）はショーウィンドウや大規模イベント向け。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：納期はどのくらい？</strong><br/>標準 3〜5 営業日、特急は最短 24 時間。データは 300dpi CMYK・塗りたし 3mm で入稿してください。</p></div>
+<h2>チラシ印刷はいくらかかる？</h2>
+<p>チラシ価格はサイズ・用紙・片面両面・数量で決まります。下表は 128g コート紙・片面・100 枚からの単価目安（ZprintPro A4/A5 チラシ製品ページ 2026-09 価格に基づく）：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">128g コート紙 片面</th><th class="border p-2 text-left">最小ロット</th></tr></thead><tbody><tr><td class="border p-2">A5（148×210mm）</td><td class="border p-2">¥50 〜/枚</td><td class="border p-2">100 枚</td></tr><tr><td class="border p-2">A4（210×297mm）</td><td class="border p-2">¥70 〜/枚</td><td class="border p-2">100 枚</td></tr><tr><td class="border p-2">A3（297×420mm）</td><td class="border p-2">約 ¥126 〜/枚</td><td class="border p-2">100 枚</td></tr></tbody></table>
+<p>A3 は A4 基準価格 ×1.8 のサイズ倍率で算出（ZprintPro チラシ製品仕様による）。枚数が多いほど割引が大きく、500 枚 2 割引・1,000 枚 3.5 割引・5,000 枚 5 割引（ZprintPro A5 チラシ製品ページ数量割引による）。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【チラシは高くない——A5 片面 128g コート紙 100 枚から ¥50/枚で、街頭配布には最強のコスパ。】</strong></p></div>
+<h2>A4・A5・A3 はどれを選ぶべき？</h2>
+<p>日本で最も一般的なチラシサイズは A4（210 × 297mm）と A5（148 × 210mm）です。ポスティング・店舗配布・同封物など用途別に、JPY 単価目安を整理しました：</p>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">適用シーン</th><th class="border p-2 text-left">単価</th></tr></thead><tbody><tr><td class="border p-2">A4 片面</td><td class="border p-2">イベントプロモ、新商品発表</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">A4 両面</td><td class="border p-2">メニュー、製品カタログ、サービス紹介</td><td class="border p-2">HK$0.25-0.50</td></tr><tr><td class="border p-2">A5 片面</td><td class="border p-2">割引券、クーポン、街頭配布</td><td class="border p-2">HK$0.08-0.18</td></tr><tr><td class="border p-2">A5 両面</td><td class="border p-2">小型カタログ、招待状</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">三つ折り DL</td><td class="border p-2">高級サービス紹介、B2B</td><td class="border p-2">HK$0.30-0.60</td></tr></tbody></table>
-<h3>二、用紙選定完全ガイド</h3>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【A4 は情報量、A5 はコスト、A3 はインパクト——サイズが単価を決めるので、先にサイズを決めてから印刷する。】</strong></p></div>
+<p>もっと詳しいサイズ・用紙・デザイン・配布の解説は<a href="/ja/blog/flyer-printing-guide/">チラシ印刷ガイド</a>、全規格の比較は<a href="/ja/category/flyers/">チラシ印刷カテゴリ</a>、実価格は<a href="/ja/product/a4-flyers/">A4 チラシ</a>・<a href="/ja/product/a5-flyers/">A5 チラシ</a>製品ページで確認できます。</p>
+<h2>コート紙か書籍用紙か？</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g アート紙</strong>：最安、街頭配布に最適</li><li><strong>157g アート紙</strong>：色彩再現良好、標準選択</li><li><strong>200g アート紙</strong>：高級感、両面透けなし</li><li><strong>80g 書籍用紙</strong>：エコ、文字密集型チラシ向き</li><li><strong>100g 書籍用紙</strong>：やや厚い書籍用紙、質感向上</li></ul>
-<h3>三、折りとデザインのバリエーション</h3>
+<p>まとめ：画像中心ならコート紙、文字中心なら書籍用紙。両面印刷で裏写りを避けるなら 157g 以上を選びましょう。</p>
+<h2>片面か両面か？</h2>
+<p>片面印刷は最も安く、内容がシンプルで使い捨ての街頭配布に最適。両面印刷は裏面に地図・メニュー・特典条件を載せられ、手元に残すチラシ向け。両面は単価に約 20% 加算（ZprintPro A5 チラシ製品ページ加工パラメータ）。裏写りを防ぐには 157g 以上のコート紙、濃いデザインは 200g を推奨。両面規格は<a href="/ja/product/double-sided-flyers/">両面チラシ印刷</a>製品ページで確認できます。</p>
+<h2>最小注文数量は？</h2>
+<p>ZprintPro のチラシ標準 MOQ は <strong>100 枚</strong>（ZprintPro A4/A5 チラシ製品ページによる）。100 枚は当日配布やデザインテスト向け、継続配布なら 500〜1,000 枚、大規模プロモーションなら 5,000 枚以上が目安。数量が多いほど単価が下がり、500 枚 2 割引・1,000 枚 3.5 割引・5,000 枚 5 割引。箔押し・UV などの特殊加工は 500 枚から。</p>
+<h2>納期はどのくらい？</h2>
+<p>標準は <strong>3〜5 営業日</strong>（ZprintPro チラシ FAQ による）で、A4/A5 片面・両面コート紙の大半に対応。特急は最短 <strong>24 時間</strong>で、オープン前日までに決まった場合も間に合います。</p>
+<p>即日対応の詳細は<a href="/ja/blog/same-day-flyers-printing-hong-kong-guide/">即日チラシ印刷ガイド</a>と<a href="/ja/services/rush-printing-delivery/">特急印刷・配送サービス</a>で締切時間・追加料金を確認してください。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p><strong>【3〜5 営業日前に発注すれば標準納期で間に合う——24 時間特急は開店直前の緊急用に取っておく。】</strong></p></div>
+<h2>折りとデザインのバリエーション</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>無折り</strong>：A4/A5 標準、折り工程コスト最小</li><li><strong>二つ折り</strong>：A3 を A4 に二つ折り、折り工程 +30%</li><li><strong>三つ折り DL</strong>：A4 を DL 封筒サイズに三つ折り、B2B 定番</li><li><strong>アコーディオン折り</strong>：連続情報展開、製品カタログ向き</li><li><strong>特殊折り</strong>：階段、十字など面白い折り</li></ol>
-<h3>四、配布戦略と ROI 向上</h3>
+<h2>配布戦略と ROI 向上</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">戦略</th><th class="border p-2 text-left">方法</th><th class="border p-2 text-left">効果</th></tr></thead><tbody><tr><td class="border p-2">ターゲット選別</td><td class="border p-2">顧客プロファイルで場所選択</td><td class="border p-2">MTR、ショッピングモール、住宅街</td></tr><tr><td class="border p-2">QR コード</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">オフライン→オンライン</td></tr><tr><td class="border p-2">期間限定オファー</td><td class="border p-2">「7 日限定」「チラシ持参で」</td><td class="border p-2">即時転換促進</td></tr><tr><td class="border p-2">A/B テスト</td><td class="border p-2">2 バージョン比較効果</td><td class="border p-2">ROI 最適化</td></tr><tr><td class="border p-2">データ追跡</td><td class="border p-2">QR コード分流</td><td class="border p-2">チャネル効果評価</td></tr></tbody></table>
-<h3>五、表面加工オプション</h3>
+<p><strong>事例：</strong>香港の新規オープン飲食店が 5,000 枚の A5 片面 128g コート紙チラシを街頭配布。5,000 枚ティアの 5 割引（ZprintPro A5 チラシ製品ページ 2026-09 数量割引、約 ¥25/枚）を適用し、WhatsApp QR コードを併記。オープン後 2 週間で、チラシを持参した来店問い合わせが店頭看板だけの場合より明らかに増加しました。印刷と同じくらい配布の精度が ROI を決めます。</p>
+<h2>表面加工オプション</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：明るい表面、色彩鮮やか、產品プロモに最適</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級ブランド・メニューに最適</li><li><strong>スポット UV</strong>：ロゴや画像を強調</li><li><strong>箔押し（金 / 銀）</strong>：高級ブランドチラシ定番</li><li><strong>ミシン目 / 罫線</strong>：切り取り、折り畳み便利</li></ul>
-<h3>六、よくある質問</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：チラシの最小印刷数量は？</strong><br/>A：100 枚から、500 枚以上で割引。</p><p><strong>Q：両面は透けますか？</strong><br/>A：157g 以上のアート紙なら通常透けません。濃い色は 200g 選択。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急 24 時間対応可。</p><p><strong>Q：デザインテンプレートは？</strong><br/>A：智印港は 100 種類以上の無料テンプレートをご提供。</p></div>
-<p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp で智印港に連絡</a> 見積もり！</p>`,
-  },
+<h2>よくある質問 FAQ</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：チラシ印刷はいくら？</strong><br/>A：A5 片面 128g コート紙 100 枚から ¥50/枚〜、A4 片面 ¥70/枚〜、A3 約 ¥126/枚〜。5,000 枚で約半額。</p><p><strong>Q：最小注文数量は？</strong><br/>A：100 枚から、500 枚以上で割引。</p><p><strong>Q：A4・A5・A3 の選び方は？</strong><br/>A：街頭配布・クーポンは A5、情報量重視は A4、ショーウィンドウや大規模イベントは A3。</p><p><strong>Q：納期は？</strong><br/>A：標準 3〜5 営業日、特急 24 時間対応可。</p><p><strong>Q：両面は透けますか？</strong><br/>A：157g 以上のコート紙なら通常透けません。濃い色は 200g を選択。</p><p><strong>Q：デザインテンプレートは？</strong><br/>A：ZprintPro は 100 種類以上の無料テンプレートをご提供。</p></div>
+<p><strong>本記事の著者と品質情報：</strong>ZprintPro 印刷エンジニアチームが執筆。15 年のオフセット印刷エンジニアがハイデルベルグ Speedmaster 6+1 を運用し、12 業界・1,000+ 顧客に対応。工場は ISO 9001・FSC 認証を取得し、FDA 21 CFR・EU REACH に準拠、24 時間特急 SLA・DHL/FedEx グローバル 2〜4 日配送に対応（LinkedIn：ZprintPro Printing Engineering Team）。価格は ZprintPro A4/A5 チラシ製品ページ（2026-09 更新）より。</p>
+<p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 見積もり！</p>`,
+},
+
   },
   // ========== PACKAGING ==========
   {
@@ -513,47 +636,110 @@ export const buyingGuides: BuyingGuide[] = [
     relatedProducts: ['saddle-stitch-books', 'perfect-bound-books', 'hardcover-books', 'catalogs', 'annual-reports'],
     content: {
       'zh-hk': `<p>書籍印刷是文化傳承的重要載體。無論是公司年報、品牌手冊、教輔材料還是個人出版，選擇合適的裝訂方式、紙張材質和印刷工藝都是關鍵。本文從裝訂方式、紙張選擇、封面工藝、印量價格、設計要點、印刷廠選擇 6 個維度為您系統拆解香港書籍印刷選購全攻略。</p>
-<h3>一、常見裝訂方式對比</h3>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>書刊印刷幾錢？</strong>騎馬釘小冊子 HK$14-57/本（500 本），膠裝書 HK$16-80/本；印量愈大單價愈低，2000+ 本低至 HK$15-30/本。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>騎馬釘定膠裝？</strong>8-64 頁薄本用騎馬釘最抵，64 頁以上用膠裝書脊更平整；預算充足可揀精裝。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>最少訂幾多本？</strong>書刊 50 本起印（數碼印刷），500/1000/5000 本享批量折扣；30 秒 AI 即時報價，DHL 全球 2-4 天。</p></div>
+<p>想知邊種裝訂同紙張最啱您嘅書刊？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a>，30 秒 AI 即時報價！</p>
+<h2>騎馬釘定膠裝？常見裝訂方式對比</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">裝訂方式</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">騎馬釘</td><td class="border p-2">成本最低、平整好翻</td><td class="border p-2">畫冊、雜誌、小冊子 32-64 頁</td></tr><tr><td class="border p-2">膠裝（無線膠裝）</td><td class="border p-2">美觀、容量大</td><td class="border p-2">書刊、教材、論文 60+ 頁</td></tr><tr><td class="border p-2">精裝（硬殼）</td><td class="border p-2">高端、保護強</td><td class="border p-2">精裝書、紀念冊、收藏品</td></tr><tr><td class="border p-2">螺旋裝訂</td><td class="border p-2">可 360 度翻</td><td class="border p-2">筆記本、食譜、便攜手冊</td></tr><tr><td class="border p-2">活頁裝訂</td><td class="border p-2">可拆卸增頁</td><td class="border p-2">教學手冊、工作手冊</td></tr><tr><td class="border p-2">鎖線膠裝</td><td class="border p-2">結實耐用、可平攤</td><td class="border p-2">高檔書刊、字典</td></tr></tbody></table>
-<h3>二、紙張選擇詳解</h3>
+<p>8-64 頁嘅畫冊、雜誌同小冊子，騎馬釘最經濟；想知頁數規則同真實價格階梯，可參考<a href="/zh-hk/blog/saddle-stitch-booklet-printing-guide/">騎馬釘小冊子印刷指南</a>。</p>
+<h2>邊種紙適合書刊？紙張選擇詳解</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>封面紙：250-300g 銅版紙 / 啞膠過膠</strong>：標準</li><li><strong>封面紙：特種紙 + 燙金</strong>：高端書籍首選</li><li><strong>內頁紙：80g 書紙</strong>：經濟、長篇小說</li><li><strong>內頁紙：105g 書紙</strong>：教材、工具書</li><li><strong>內頁紙：128g 銅版紙</strong>：畫冊、雜誌</li><li><strong>內頁紙：157g 銅版紙</strong>：高檔畫冊</li></ul>
-<h3>三、封面工藝選擇</h3>
+<p>畫冊、雜誌、攝影集最常用 128g-157g 銅版紙；紙材對比同應用場景可參考<a href="/zh-hk/blog/catalog-printing-guide/">畫冊印刷選購指南</a>。</p>
+<h2>封面工藝點樣揀？</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：基礎保護，最經濟</li><li><strong>UV 局部上光</strong>：突出 Logo 和主視覺</li><li><strong>燙金 / 燙銀</strong>：書名 + Logo 高檔呈現</li><li><strong>擊凸 / 壓凹</strong>：立體觸感，獨特品牌記憶</li><li><strong>燙金 + 擊凸</strong>：極致高檔組合，工藝品級</li><li><strong>布面精裝</strong>：布紋裱殼，古典書籍</li></ol>
-<h3>四、印量與價格對應</h3>
+<p>一般品牌手冊用啞膠過膠已夠體面；高檔書籍建議燙金 + 擊凸組合，呈現工藝品級質感。</p>
+<h2>書刊印刷幾錢？印量與價格對應</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊印刷 50 本起印：騎馬釘 8-64 頁、膠裝 64 頁以上；500 本騎馬釘 HK$14-57/本，大批量 2000+ 本低至 HK$15-30/本】</p></div>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">印量</th><th class="border p-2 text-left">單本成本</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">50-100 本</td><td class="border p-2">HK$80-150/本</td><td class="border p-2">個人出版、紀念冊</td></tr><tr><td class="border p-2">200-500 本</td><td class="border p-2">HK$40-80/本</td><td class="border p-2">品牌手冊、公司刊物</td></tr><tr><td class="border p-2">500-1000 本</td><td class="border p-2">HK$25-50/本</td><td class="border p-2">教材、行業報告</td></tr><tr><td class="border p-2">2000+ 本</td><td class="border p-2">HK$15-30/本</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
-<h3>五、設計要點</h3>
+<p>以上為大批量柯式口徑；小批量可用數碼印刷，50 本起印，詳見<a href="/zh-hk/category/books/">書刊印刷類別</a>。</p>
+<h2>最少訂幾多本？</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊 50 本起印：騎馬釘小冊子 50 本起、膠裝書 100 本起、精裝書 50 本起；批量 500/1000/5000 本享折扣】</p></div>
+<p>智印港書刊 50 本起印（數碼印刷），個人出版、活動場刊同市場測試都唔使囤貨；500 本以上轉柯式印刷，單本成本大幅下降。</p>
+<p>想比較騎馬釘、膠裝、精裝同畫冊嘅詳細規格？直接去<a href="/zh-hk/category/books/">書刊印刷類別</a>睇晒所有書刊產品。</p>
+<h2>交期要幾耐？</h2>
+<p>書刊一般 3-5 個工作天出貨（畫冊口徑），確認稿後即可排期印刷；DHL 全球配送 2-4 天，歐美日客戶約一週內收貨。</p>
+<p>批量畫冊、產品型錄嘅生產排期同交期安排，見<a href="/zh-hk/blog/catalog-printing-guide/">畫冊印刷選購指南</a>。</p>
+<h2>書刊印刷流程係點？</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>上傳文件</strong>：PDF（轉曲線 + 嵌入字體）</li><li><strong>30 秒 AI 即時報價</strong>：揀尺寸、紙張、裝訂同印量</li><li><strong>免費排版 / 打樣確認</strong>：目錄、頁碼、章節標註</li><li><strong>印刷 + 覆膜 + 裝訂</strong>：四色柯式印刷</li><li><strong>QC 檢查 + DHL 出貨</strong>：全球 2-4 天送達</li></ol>
+<p>每一步嘅注意事項同常見陷阱，可參考<a href="/zh-hk/blog/saddle-stitch-booklet-printing-guide/">騎馬釘小冊子印刷指南</a>。</p>
+<h2>設計文件要點</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>頁碼計算</strong>：騎馬釘頁數必須是 4 的倍數</li><li><strong>裝訂線預留</strong>：膠裝需預留 1.2cm 內邊距</li><li><strong>出血位</strong>：四周 3mm，避免裁切後白邊</li><li><strong>分色與色彩</strong>：CMYK 模式，RGB 不可印刷</li><li><strong>圖片解析度</strong>：300dpi 保證清晰</li><li><strong>字體嵌入 / 轉曲線</strong>：避免字體丟失</li></ul>
-<h3>六、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小批量 50 本可以印嗎？</strong><br/>A：可以，數碼印刷可少量。但每本單價較高。</p><p><strong>Q：騎馬釘 vs 膠裝？</strong><br/>A：騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。</p><p><strong>Q：精裝書最貴多少？</strong><br/>A：視乎尺寸 + 工藝，HK$200-500/本起。</p></div>
+<p>更詳細嘅頁數計算同出血設定，可參閱<a href="/zh-hk/blog/saddle-stitch-booklet-printing-guide/">騎馬釘小冊子印刷指南</a>嘅設計篇。</p>
+<h2>常見問題</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小批量 50 本可以印嗎？</strong><br/>A：可以，數碼印刷可少量。但每本單價較高。</p><p><strong>Q：騎馬釘 vs 膠裝？</strong><br/>A：騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。</p><p><strong>Q：精裝書最貴多少？</strong><br/>A：視乎尺寸 + 工藝，HK$200-500/本起。</p><p><strong>Q：書刊印刷交期要幾耐？</strong><br/>A：一般 3-5 個工作天出貨，DHL 全球配送 2-4 天；批量或精裝另議。</p><p><strong>Q：書刊印刷流程係點？</strong><br/>A：上傳 PDF → 30 秒 AI 即時報價 → 免費排版確認 → 印刷裝訂 → QC 出貨；詳見<a href="/zh-hk/blog/catalog-printing-guide/">畫冊印刷選購指南</a>。</p></div>
+<p>本文由<b>智印港印刷工程團隊</b>編寫（15 年膠印工程師），最後更新 2026-09-16。</p>
 <p>想了解更多書籍印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
       'en': `<p>Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.</p>
-<h3>1. Common Binding Options</h3>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>How much does book printing cost?</strong> Saddle-stitch booklets run US$1.84-7.36/copy at 500 copies; small 50-100 copy runs cost US$10-20/copy; 2,000+ copies drop to US$2-4/copy.</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Saddle stitch or perfect binding?</strong> Use saddle stitch for 8-64 page booklets — cheapest and lays flat; use perfect binding for 64+ page books with a clean square spine.</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>What is the minimum order?</strong> Book printing starts at 50 copies on digital press, with volume discounts at 500/1,000/5,000; 30-second AI quote, DHL global 2-4 days.</p></div>
+<p>Not sure which binding and paper fit your book? <a href="https://wa.me/8619880851334" target="_blank">Contact ZprintPro via WhatsApp</a> for a 30-second AI quote!</p>
+<h2>Saddle Stitch or Perfect Binding?</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Binding</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Saddle Stitch</td><td class="border p-2">Lowest cost, lays flat</td><td class="border p-2">Catalogs, magazines, 32-64 page booklets</td></tr><tr><td class="border p-2">Perfect Binding</td><td class="border p-2">Aesthetic, high capacity</td><td class="border p-2">Books, textbooks, 60+ page theses</td></tr><tr><td class="border p-2">Hardcover</td><td class="border p-2">Premium, strong protection</td><td class="border p-2">Hardcover books, commemorative, collector</td></tr><tr><td class="border p-2">Spiral Binding</td><td class="border p-2">360° lay-flat</td><td class="border p-2">Notebooks, recipes, portable manuals</td></tr><tr><td class="border p-2">Loose-leaf</td><td class="border p-2">Removable add pages</td><td class="border p-2">Teaching manuals, work manuals</td></tr><tr><td class="border p-2">Sewn Perfect</td><td class="border p-2">Sturdy, lay-flat</td><td class="border p-2">Premium books, dictionaries</td></tr></tbody></table>
-<h3>2. Paper Selection</h3>
+<p>For 8-64 page catalogs, magazines, and booklets, saddle stitch is the most economical choice; for page-count rules and 2026 pricing tiers, see <a href="/en/blog/saddle-stitch-booklet-printing-guide/">our saddle stitch booklet printing guide</a>.</p>
+<h2>Which Paper Is Best for Book Printing?</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Cover: 250-300g art paper / matte lamination</strong>: Standard</li><li><strong>Cover: Specialty paper + foil</strong>: Premium choice</li><li><strong>Inner: 80g woodfree</strong>: Economical, novels</li><li><strong>Inner: 105g woodfree</strong>: Textbooks, reference</li><li><strong>Inner: 128g art paper</strong>: Catalogs, magazines</li><li><strong>Inner: 157g art paper</strong>: Premium catalogs</li></ul>
-<h3>3. Cover Finishes</h3>
+<p>For catalogs, magazines, and photo books, 128g-157g art paper is the standard; compare paper stocks and use cases in <a href="/en/blog/catalog-printing-guide/">the complete catalog and art book printing guide</a>.</p>
+<h2>Which Cover Finish Should You Choose?</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Glossy / Matte Lamination</strong>: Basic protection, most economical</li><li><strong>Spot UV</strong>: Highlight logo and main visuals</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Title + logo premium</li><li><strong>Embossing / Debossing</strong>: Dimensional tactile, unique brand memory</li><li><strong>Foil + Emboss</strong>: Ultimate premium combination, craftwork level</li><li><strong>Cloth Hardcover</strong>: Cloth-wrapped shell, classic books</li></ol>
-<h3>4. Quantity & Pricing</h3>
+<p>Matte lamination is enough for most brand manuals; combine foil stamping with embossing for a premium, craft-level finish.</p>
+<h2>How Much Does Book Printing Cost?</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Book printing starts at 50 copies: saddle stitch for 8-64 pages, perfect binding for 64+ pages; saddle-stitch booklets US$1.84-7.36/copy at 500, bulk 2,000+ from US$2-4/copy】</p></div>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Quantity</th><th class="border p-2 text-left">Per Copy</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">50-100 copies</td><td class="border p-2">US$10-20/copy</td><td class="border p-2">Self-publishing, commemorative</td></tr><tr><td class="border p-2">200-500 copies</td><td class="border p-2">US$5-10/copy</td><td class="border p-2">Brand manual, corporate publications</td></tr><tr><td class="border p-2">500-1000 copies</td><td class="border p-2">US$3-6/copy</td><td class="border p-2">Textbooks, industry reports</td></tr><tr><td class="border p-2">2000+ copies</td><td class="border p-2">US$2-4/copy</td><td class="border p-2">Large-scale commercial print</td></tr></tbody></table>
-<h3>5. Design Tips</h3>
+<p>Prices above reflect large offset runs; small batches start at 50 copies on digital printing. Browse <a href="/en/category/books/">the full book printing category</a> for every option.</p>
+<h2>What Is the Minimum Order Quantity?</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Book printing MOQ: saddle-stitch booklets from 50 copies, perfect-bound books from 100, hardcover books from 50; volume discounts at 500/1,000/5,000】</p></div>
+<p>ZprintPro book printing starts at 50 copies on digital press — ideal for self-publishing, event booklets, and market tests without stockpiling; above 500 copies, offset printing cuts unit cost sharply.</p>
+<p>Compare saddle-stitch, perfect-bound, hardcover, and catalog specs in <a href="/en/category/books/">the full book printing category</a>.</p>
+<h2>How Long Does Book Printing Take?</h2>
+<p>Books typically ship in 3-5 business days after proof approval, with DHL global delivery in 2-4 days — most US, EU, and JP customers receive orders within a week.</p>
+<p>For bulk catalogs and product lookbooks, see production scheduling in <a href="/en/blog/catalog-printing-guide/">the complete catalog and art book printing guide</a>.</p>
+<h2>What Is the Book Printing Process?</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Upload files</strong>: PDF (outlined + embedded fonts)</li><li><strong>30-second AI quote</strong>: pick size, paper, binding, quantity</li><li><strong>Free typesetting / proof</strong>: TOC, page numbers, chapter marks</li><li><strong>Print + lamination + binding</strong>: 4-color offset</li><li><strong>QC + DHL shipping</strong>: global 2-4 days</li></ol>
+<p>For step-by-step pitfalls and page-count rules, see <a href="/en/blog/saddle-stitch-booklet-printing-guide/">our saddle stitch booklet printing guide</a>.</p>
+<h2>Design and File Tips</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Page Count</strong>: Saddle stitch must be multiple of 4</li><li><strong>Binding Allowance</strong>: Perfect binding needs 1.2cm inner margin</li><li><strong>Bleed</strong>: 3mm all sides, avoid white edges</li><li><strong>Color Separation</strong>: CMYK mode, RGB not printable</li><li><strong>Image Resolution</strong>: 300dpi for clarity</li><li><strong>Font Embedding / Outline</strong>: Avoid missing fonts</li></ul>
-<h3>6. Frequently Asked Questions</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Can I print 50 copies only?</strong><br/>A：Yes, digital printing suits small quantity. But per-copy cost higher.</p><p><strong>Q：Saddle stitch vs perfect binding?</strong><br/>A：Saddle stitch cheaper but limit pages; perfect binding higher capacity but +US$0.5-1.5/copy.</p><p><strong>Q：What files are needed?</strong><br/>A：PDF primarily (outlined + embedded fonts); AI / INDD also accepted.</p><p><strong>Q：What's the most expensive for hardcover?</strong><br/>A：Depending on size + finish, starts from US$25-65/copy.</p></div>
+<p>For deeper guidance on page-count math and bleed setup, see <a href="/en/blog/saddle-stitch-booklet-printing-guide/">our saddle stitch booklet printing guide</a>.</p>
+<h2>Frequently Asked Questions</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Can I print 50 copies only?</strong><br/>A：Yes, digital printing suits small quantity. But per-copy cost higher.</p><p><strong>Q：Saddle stitch vs perfect binding?</strong><br/>A：Saddle stitch cheaper but limit pages; perfect binding higher capacity but +US$0.5-1.5/copy.</p><p><strong>Q：What files are needed?</strong><br/>A：PDF primarily (outlined + embedded fonts); AI / INDD also accepted.</p><p><strong>Q：What's the most expensive for hardcover?</strong><br/>A：Depending on size + finish, starts from US$25-65/copy.</p><p><strong>Q：How long does book printing take?</strong><br/>A：Typically 3-5 business days after proof approval, plus DHL global 2-4 day delivery.</p><p><strong>Q：What is the book printing process?</strong><br/>A：Upload PDF → 30-second AI quote → free typesetting &amp; proof → print &amp; bind → QC &amp; DHL shipping. See <a href="/en/blog/catalog-printing-guide/">the complete catalog and art book printing guide</a> for details.</p></div>
+<p>Written by the <b>ZprintPro Print Engineering Team</b> (15-year offset press engineers). Last updated: September 16, 2026.</p>
 <p>Want more on book printing? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
       'ja': `<p>書籍印刷は文化継承の重要な担い手です。企業レポート、ブランドマニュアル、教材、個人出版まで、適切な製本、用紙、印刷工程の選択が重要です。本記事は製本、用紙選択、表紙加工、部数/価格、デザイン要点、印刷会社選択の 6 つの側面から香港書籍印刷を体系的に整理します。</p>
-<h3>一、主な製本方式の比較</h3>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>書籍印刷の料金は？</strong>中綴じ冊子は 1 部 HK$14-57（500 部）、無線綴じ書籍は HK$16-80/部；部数が多いほど単価は低下、2000+ 部で HK$15-30/部。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>中綴じ vs 無線綴じ？</strong>8-64 ページの薄い冊子は中綴じが最安、64 ページ以上は無線綴じで背表紙が綺麗；予算があれば上製本も。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>最小注文数は？</strong>書籍印刷は 50 冊から（デジタル印刷）、500/1000/5000 冊でボリューム割引；30 秒 AI 即時見積、DHL グローバル 2-4 日。</p></div>
+<p>どの製本・用紙が最適か迷っていますか？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a>、30 秒 AI 即時見積もり！</p>
+<h2>中綴じ vs 無線綴じ、どっちを選ぶ？</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">製本</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">中綴じ</td><td class="border p-2">コスト最低、平置</td><td class="border p-2">カタログ、雑誌、32-64 ページ冊子</td></tr><tr><td class="border p-2">無線綴じ</td><td class="border p-2">美しい、大容量</td><td class="border p-2">書籍、教材、論文 60+ ページ</td></tr><tr><td class="border p-2">上製本（ハードカバー）</td><td class="border p-2">高級、保護力強</td><td class="border p-2">上製本、記念冊、コレクション</td></tr><tr><td class="border p-2">スパイラル製本</td><td class="border p-2">360 度平置</td><td class="border p-2">ノート、レシピ、ポータブルマニュアル</td></tr><tr><td class="border p-2">ルーズリーフ</td><td class="border p-2">取り外し追加可</td><td class="border p-2">教学マニュアル、ワークマニュアル</td></tr><tr><td class="border p-2">糸かがり無線綴じ</td><td class="border p-2">丈夫、平置</td><td class="border p-2">高級書籍、辞書</td></tr></tbody></table>
-<h3>二、用紙選択詳細</h3>
+<p>8-64 ページのカタログ・雑誌・冊子は中綴じが最経済；ページ数ルールと実勢価格は<a href="/ja/blog/saddle-stitch-booklet-printing-guide/">中綴じ冊子印刷完全ガイド</a>をご参照ください。</p>
+<h2>書籍印刷に適した用紙は？</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>表紙：250-300g アート紙 / マットラミネート</strong>：標準</li><li><strong>表紙：特殊紙 + 箔押し</strong>：高級書籍定番</li><li><strong>本文：80g 書籍用紙</strong>：経済的、長編小説</li><li><strong>本文：105g 書籍用紙</strong>：教材、参考書</li><li><strong>本文：128g アート紙</strong>：カタログ、雑誌</li><li><strong>本文：157g アート紙</strong>：高級カタログ</li></ul>
-<h3>三、表紙加工選択</h3>
+<p>カタログ・雑誌・写真集は 128g-157g アート紙が定番；用紙比較と用途は<a href="/ja/blog/catalog-printing-guide/">カタログ・写真集印刷ガイド</a>をご参照ください。</p>
+<h2>表紙加工はどう選ぶ？</h2>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光沢 / マットラミネート</strong>：基本保護、最経済</li><li><strong>スポット UV</strong>：ロゴ・主視覚を強調</li><li><strong>箔押し（金 / 銀）</strong>：書名 + ロゴの高級呈示</li><li><strong>エンボス / デボス</strong>：立体触感、独特ブランド記憶</li><li><strong>箔 + エンボス</strong>：究極高級組合せ、工芸品級</li><li><strong>布クロス</strong>：布張り表紙、古典書籍</li></ol>
-<h3>四、部数と価格対応</h3>
+<p>一般のブランドマニュアルはマットラミネートで十分；高級書籍は箔 + エンボスで工芸品級の質感に。</p>
+<h2>書籍印刷の料金はいくら？</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書籍印刷は 50 冊から：中綴じ 8-64 ページ、無線綴じ 64 ページ以上；500 部中綴じ HK$14-57/部、2000+ 部は HK$15-30/部】</p></div>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">部数</th><th class="border p-2 text-left">単価</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">50-100 部</td><td class="border p-2">1 部 HK$80-150</td><td class="border p-2">個人出版、記念冊</td></tr><tr><td class="border p-2">200-500 部</td><td class="border p-2">1 部 HK$40-80</td><td class="border p-2">ブランドマニュアル、社内出版物</td></tr><tr><td class="border p-2">500-1000 部</td><td class="border p-2">1 部 HK$25-50</td><td class="border p-2">教材、業界レポート</td></tr><tr><td class="border p-2">2000+ 部</td><td class="border p-2">1 部 HK$15-30</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
-<h3>五、デザイン要点</h3>
+<p>上記は大量オフセットの目安；小ロットはデジタル印刷で 50 冊から対応、詳細は<a href="/ja/category/books/">書籍印刷カテゴリー</a>をご覧ください。</p>
+<h2>最小注文数は何冊から？</h2>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書籍印刷 50 冊から：中綴じ冊子 50 冊〜、無線綴じ書籍 100 冊〜、上製本 50 冊〜；500/1000/5000 冊でボリューム割引】</p></div>
+<p>ZprintProの書籍印刷は 50 冊から（デジタル印刷）、個人出版・イベント冊子・市場テストに最適で在庫の心配なし；500 冊以上はオフセット印刷で単価が大幅に低下します。</p>
+<p>中綴じ・無線綴じ・上製本・カタログの詳細仕様を比較するなら<a href="/ja/category/books/">書籍印刷カテゴリー</a>へ。</p>
+<h2>納期はどのくらい？</h2>
+<p>書籍は校了後 3-5 営業日で出荷（カタログ基準）、DHL グローバル配送 2-4 日で、米国・欧州・日本の顧客は約 1 週間で受取可能です。</p>
+<p>大量カタログ・商品図録の生産スケジュールは<a href="/ja/blog/catalog-printing-guide/">カタログ・写真集印刷ガイド</a>をご参照ください。</p>
+<h2>書籍印刷の流れは？</h2>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>ファイルアップロード</strong>：PDF（アウトライン化 + フォント埋め込み）</li><li><strong>30 秒 AI 即時見積</strong>：サイズ・用紙・製本・部数を選択</li><li><strong>無料レイアウト / 校正確認</strong>：目次、ページ番号、章立て</li><li><strong>印刷 + ラミネート + 製本</strong>：4 色オフセット</li><li><strong>QC 検査 + DHL 出荷</strong>：グローバル 2-4 日</li></ol>
+<p>各ステップの注意点と落とし穴は<a href="/ja/blog/saddle-stitch-booklet-printing-guide/">中綴じ冊子印刷完全ガイド</a>をご参照ください。</p>
+<h2>デザインファイルの要点</h2>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ページ数計算</strong>：中綴じは 4 の倍数必須</li><li><strong>製本余白</strong>：無線綴じは 1.2cm 内側余白必要</li><li><strong>ブリード</strong>：4 辺 3mm、裁切後白縁回避</li><li><strong>色分解</strong>：CMYK モード、RGB 印刷不可</li><li><strong>画像解像度</strong>：300dpi 清晰</li><li><strong>フォント埋め込み / アウトライン化</strong>：フォント欠落防止</li></ul>
-<h3>六、よくある質問</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小ロット 50 部でも頼めますか？</strong><br/>A：可能。デジタル印刷が小ロット対応。ただし単価高め。</p><p><strong>Q：中綴じ vs 無線綴じ？</strong><br/>A：中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。</p><p><strong>Q：上製本の最高額は？</strong><br/>A：サイズ + 加工次第、HK$200-500/部 から。</p></div>
-<p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp で智印港に連絡</a> 見積もり！</p>`,
+<p>ページ数計算とブリード設定の詳細は<a href="/ja/blog/saddle-stitch-booklet-printing-guide/">中綴じ冊子印刷完全ガイド</a>のデザイン編をご覧ください。</p>
+<h2>よくある質問</h2>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小ロット 50 部でも頼めますか？</strong><br/>A：可能。デジタル印刷が小ロット対応。ただし単価高め。</p><p><strong>Q：中綴じ vs 無線綴じ？</strong><br/>A：中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。</p><p><strong>Q：上製本の最高額は？</strong><br/>A：サイズ + 加工次第、HK$200-500/部 から。</p><p><strong>Q：納期はどのくらい？</strong><br/>A：校了後 3-5 営業日で出荷、DHL グローバル 2-4 日配送。</p><p><strong>Q：書籍印刷の流れは？</strong><br/>A：PDF アップロード → 30 秒 AI 即時見積 → 無料レイアウト確認 → 印刷製本 → QC 出荷。詳細は<a href="/ja/blog/catalog-printing-guide/">カタログ・写真集印刷ガイド</a>を参照。</p></div>
+<p>本記事は<b>ZprintPro印刷工程チーム</b>（15 年オフセット印刷エンジニア）が執筆、最終更新：2026年9月16日。</p>
+<p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 見積もり！</p>`,
   },
   },
 
