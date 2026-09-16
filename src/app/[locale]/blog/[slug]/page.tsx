@@ -799,6 +799,14 @@ function getPostData(locale: Locale, slug: string) {
     content = content.replace(/href="\/category\//g, `href="/${locale}/category/`);
     content = content.replace(/href="\/(en|ja)\/category\//g, `href="/${locale}/category/`);
 
+    // 2026-09-16 K3 拍板 v5: blog 全站 .blog-content 渲染层排版 — 预处理
+    // ① h2 去旧编号 (campus「一、」/ textbook「1.」→ 由 CSS counter 统一生成「一、二、三…」, 防重复)
+    content = content.replace(/<h2[^>]*>[\s\S]*?<\/h2>/g, (h2) => {
+      return h2.replace(/>\s*(?:[一二三四五六七八九十百]+\s*[、.．]|\d+\s*[.、.)．]|[A-Za-z]\s*[.、.)])\s*/, '>');
+    });
+    // ② 段落/块开头 emoji 去除 (💡/⚡ 等, 保留句中 emoji)
+    content = content.replace(/(<p[^>]*>)\s*[💡⚡✅❌⭐🔹🔸📌🎯]+\s*/g, '$1');
+
     // 2026-07-05 fix: 优先级 meta (本地化标题) > legacyPost > slug fallback
     const title = meta?.title?.[locale] || legacyPost?.title || (jsonEntry && jsonEntry.content ? slug : '');
     const description = meta?.description?.[locale] || legacyPost?.description || '';
@@ -1063,7 +1071,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="p-8">
               {/* 2026-09-11: 分类 pill/H1/作者 meta 已上移到 Hero (避免 H1 重复, SEO 单 H1) */}
               <div
-                className="prose prose-blue max-w-none text-gray-600 leading-relaxed"
+                className="blog-content max-w-none text-gray-600 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 

@@ -846,6 +846,30 @@ v3 增补内容 (K3 8/20-8/23 拍板):
 - ✅ zh-hk 800-1000 字 / en 250-350 词 / ja 250-350 词
 - ✅ 4 FAQ + Article + BreadcrumbList + FAQPage JSON-LD
 
+### 13.4.1 Blog 正文渲染层排版 v5（K3 2026-09-16 拍板，自进化执行固定）
+
+> **适用范围**：全站所有 blog 正文（`blog/[slug]/page.tsx` 容器 = `.blog-content`）。**所有 blog 文件必须走此样式**，新增/修改 blog 文章均自动生效（渲染层，无需改 content 数据）。
+
+**样式 SSoT**：`src/app/globals.css` 的 `.blog-content` 块（2026-09-16 追加，v5）。
+
+**核心样式**（来源：sticker-material 块格式 + campus 小段落小标题）：
+| 元素 | 样式 |
+|------|------|
+| H1 大标题 | clamp(28px→44px)（页 hero 区，`text-[clamp(28px,3.4vw,44px)]`） |
+| H2 小标题 | **皇家藏青 #1D3465** · 22px · 前缀 counter 编号「一、二、三…」24px 藏青 · 左 5px 藏青竖条 · 浅藏青渐变底 |
+| H3 子层 | 藏青 #1D3465 · 18px · 左浅橙条 |
+| 正文小段落 | 16.5px · 行高 1.9 · 段距 16px |
+| 链接 | **默认深藏青 #1D3465**（不显眼，比正文 #4B5563 深）+ 浅下划线；hover 亮蓝 #2873F5 |
+| div 块 | 浅灰底 #F9FAFB（bg-blue 统一）· 圆角 12px · 块间 16px 留白 · 无色条 |
+| 表格 | 表头浅灰+藏青字 · 斑马纹 · 圆角 · 细边框 · 阴影 |
+| blockquote | 藏青左条 + 浅蓝底 |
+
+**配套渲染层预处理**（`blog/[slug]/page.tsx` L797-807，不可删除）：
+1. **h2 去旧编号**：content 里 h2 开头的「一、二、…」「1. 2. …」等旧编号由 CSS counter 统一替换生成（防重复）。**新增 blog content 的 h2 可不用写编号**（渲染层自动加「一、二、三…」）。
+2. **段落开头 emoji 去除**：`<p>` 开头的 💡/⚡ 等 emoji 自动去除（句中保留）。**新增 blog content 段落开头不要写 emoji**。
+
+**验收**：push 后线上 curl 检查 `.blog-content` 容器 + H2 编号 + 链接深藏青（无亮蓝 2873F5 正文链接）。
+
 ### 13.5 SKU 自进化优化
 
 - 直接编辑 `src/data/products.ts` 对应 SKU 对象的:
