@@ -861,14 +861,22 @@ v3 增补内容 (K3 8/20-8/23 拍板):
 | 正文小段落 | 16.5px · 行高 1.9 · 段距 16px |
 | 链接 | **默认深藏青 #1D3465**（不显眼，比正文 #4B5563 深）+ 浅下划线；hover 亮蓝 #2873F5 |
 | div 块 | 浅灰底 #F9FAFB（bg-blue 统一）· 圆角 12px · 块间 16px 留白 · 无色条 |
+| **快速答案块**（v5.1） | **琥珀渐变底 + 细琥珀边框 + ⚡ 徽标胶囊「快速答案」+ 轻琥珀阴影**（AEO/GEO 核心环节，见下） |
 | 表格 | 表头浅灰+藏青字 · 斑马纹 · 圆角 · 细边框 · 阴影 |
 | blockquote | 藏青左条 + 浅蓝底 |
 
-**配套渲染层预处理**（`blog/[slug]/page.tsx` L797-807，不可删除）：
+**快速答案块 v5.1（AEO/GEO 核心环节，K3 2026-09-16 拍板）**：
+- **定位**：文章首屏「40 秒讀完」直接答案摘要——Google AI Overviews / featured snippet 提取「问题→答案」的首选对象；LLM 生成回答引用「结构清晰 + 数据具体 + 结论明确」文本单元（数字/实体密度越高被引用概率越高）。
+- **识别**：page.tsx 预处理 ③——div 首段含「快速答案」→ 自动加 `qa-answer` class（全站 7 篇文章现有块统一生效）。
+- **样式 SSoT**：`globals.css` `.blog-content div.qa-answer`（琥珀渐变 #FFF8EC→#FFFBEB + 1px #FDE68A 边框 + 圆角 12px + 轻阴影；首 p = ⚡ 徽标胶囊 #F59E0B 白字；⚡ 由 CSS ::before 生成）。
+- **新增 blog content 规范**：写「快速答案」块时用 `<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">⚡ 快速答案 (40 秒讀完)</p>…</div>`，内容必须**结论先行 + 数字密集 + 分类明确**（2 問框架 / 價格梯度 / 認證），渲染层自动美化。
+
+**配套渲染层预处理**（`blog/[slug]/page.tsx` L797-810，不可删除）：
 1. **h2 去旧编号**：content 里 h2 开头的「一、二、…」「1. 2. …」等旧编号由 CSS counter 统一替换生成（防重复）。**新增 blog content 的 h2 可不用写编号**（渲染层自动加「一、二、三…」）。
 2. **段落开头 emoji 去除**：`<p>` 开头的 💡/⚡ 等 emoji 自动去除（句中保留）。**新增 blog content 段落开头不要写 emoji**。
+3. **快速答案块识别**：div 首段含「快速答案」→ 加 `qa-answer` class（专属样式 + ⚡ 徽标）。
 
-**验收**：push 后线上 curl 检查 `.blog-content` 容器 + H2 编号 + 链接深藏青（无亮蓝 2873F5 正文链接）。
+**验收**：push 后线上 curl 检查 `.blog-content` 容器 + H2 编号 + 链接深藏青（无亮蓝 2873F5 正文链接）+ `qa-answer` 块（琥珀底 + ⚡ 徽标）。
 
 ### 13.5 SKU 自进化优化
 

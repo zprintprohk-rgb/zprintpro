@@ -267,3 +267,24 @@ textarea:focus-visible {
   border-left: 4px solid #1D3465; padding: 12px 16px; margin: 20px 0;
   background: #F0F6FF; border-radius: 0 10px 10px 0;
 }
+
+/* ============================================================
+   .qa-answer 快速答案块 v5.1 (K3 2026-09-16 拍板) — AEO/GEO 核心环节
+   定位: 文章首屏「40 秒讀完」直接答案摘要 (Google AI Overviews / LLM 引用概率最高的文本单元)
+   识别: page.tsx 预处理 ③ (div 首段含「快速答案」→ 加 qa-answer class)
+   样式: 琥珀渐变底 + 细琥珀边框 + ⚡ 徽标胶囊 + 轻琥珀阴影 (卡片感, 融入 v5 干净风格)
+   注意: 特异性 (0,2,1) 同 div[class*="bg-amber"], 必须后定义才能覆盖
+   ============================================================ */
+.blog-content div.qa-answer {
+  background: linear-gradient(135deg, #FFF8EC 0%, #FFFBEB 100%) !important;
+  border: 1px solid #FDE68A !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.08) !important;
+  margin: 20px 0 !important;
+}
+.blog-content .qa-answer > p:first-child {
+  display: inline-block; background: #F59E0B; color: #FFFFFF !important;
+  padding: 3px 12px; border-radius: 20px; font-size: 13px; font-weight: 700;
+  margin: 0 0 10px !important; letter-spacing: 0.02em;
+}
+.blog-content .qa-answer > p:first-child::before { content: "⚡ "; }
