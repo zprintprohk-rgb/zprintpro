@@ -8,21 +8,20 @@
    "category": 24
   },
   "byBand": {
-   "FILL": 243,
-   "LEGACY": 49,
-   "OK": 233,
-   "TRIM": 46,
-   "RED": 9
+   "FILL": 82,
+   "TRIM": 163,
+   "OK": 293,
+   "RED": 42
   },
   "byAction": {
-   "补满 50-54": 237,
-   "OK": 126,
-   "修品牌/污染": 134,
-   "修剪 50-54": 23,
-   "超格修剪": 2,
+   "补满 50-58": 77,
+   "修剪 50-58": 160,
+   "OK": 132,
+   "修品牌/污染": 142,
+   "超格修剪": 11,
    "FROZEN(只读至窗判)": 58
   },
-  "brandIssues": 297,
+  "brandIssues": 293,
   "bcHits": 6,
   "insightHits": 1,
   "frozen": 58
@@ -42,7 +41,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -52,13 +51,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -78,7 +77,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -94,7 +93,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -104,13 +103,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -130,7 +129,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -146,7 +145,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -156,7 +155,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -198,7 +197,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -208,13 +207,13 @@
    "cat": "",
    "equiv": 67,
    "len": 67,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -234,7 +233,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -264,7 +263,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -306,7 +305,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -358,7 +357,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -368,7 +367,7 @@
    "cat": "",
    "equiv": 57,
    "len": 57,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -384,7 +383,7 @@
    "cat": "",
    "equiv": 56,
    "len": 38,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -410,7 +409,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -420,13 +419,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -446,7 +445,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -462,7 +461,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -472,7 +471,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -514,7 +513,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -524,7 +523,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -550,7 +549,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -566,7 +565,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -576,7 +575,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -618,7 +617,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -654,7 +653,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -670,7 +669,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -722,7 +721,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -732,7 +731,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -758,7 +757,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -774,7 +773,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -784,7 +783,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -810,7 +809,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -840,13 +839,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -866,7 +865,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -896,13 +895,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -922,7 +921,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -968,7 +967,7 @@
    "cat": "",
    "equiv": 71,
    "len": 46,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -978,7 +977,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -994,7 +993,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1004,13 +1003,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -1046,7 +1045,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1082,7 +1081,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1112,13 +1111,13 @@
    "cat": "",
    "equiv": 67,
    "len": 67,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -1128,7 +1127,7 @@
    "cat": "",
    "equiv": 58,
    "len": 37,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "品牌不在末尾",
     "简体污染"
@@ -1169,7 +1168,7 @@
    "cat": "",
    "equiv": 57,
    "len": 57,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1195,7 +1194,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1211,7 +1210,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -1227,7 +1226,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -1248,7 +1247,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -1304,7 +1303,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1320,7 +1319,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1330,7 +1329,7 @@
    "cat": "",
    "equiv": 57,
    "len": 57,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1372,7 +1371,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1382,7 +1381,7 @@
    "cat": "",
    "equiv": 57,
    "len": 57,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1424,7 +1423,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1476,7 +1475,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1486,7 +1485,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -1512,7 +1511,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1522,13 +1521,13 @@
    "cat": "",
    "equiv": 77,
    "len": 50,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -1590,13 +1589,13 @@
    "cat": "",
    "equiv": 71,
    "len": 71,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -1606,7 +1605,7 @@
    "cat": "",
    "equiv": 73,
    "len": 46,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -1616,7 +1615,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -1632,7 +1631,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1684,7 +1683,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1736,7 +1735,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1828,7 +1827,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1844,7 +1843,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -1900,7 +1899,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2022,13 +2021,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2084,7 +2083,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2104,7 +2103,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2140,7 +2139,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2176,7 +2175,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2192,7 +2191,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2228,7 +2227,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2244,7 +2243,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2300,7 +2299,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2366,7 +2365,7 @@
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -2376,7 +2375,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2392,7 +2391,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2418,7 +2417,7 @@
    "cat": "",
    "equiv": 56,
    "len": 36,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -2438,13 +2437,13 @@
    "cat": "",
    "equiv": 66,
    "len": 42,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -2454,7 +2453,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -2480,7 +2479,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2496,7 +2495,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2512,7 +2511,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2532,7 +2531,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2548,7 +2547,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2564,7 +2563,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2600,7 +2599,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2610,7 +2609,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -2672,7 +2671,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2692,7 +2691,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2708,7 +2707,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2774,13 +2773,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2830,13 +2829,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -2872,7 +2871,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2882,7 +2881,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -2924,7 +2923,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2934,7 +2933,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -2976,7 +2975,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -2992,7 +2991,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3042,7 +3041,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3104,7 +3103,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3154,7 +3153,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3196,7 +3195,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3206,13 +3205,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3248,7 +3247,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3284,7 +3283,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3300,7 +3299,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3336,7 +3335,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3352,7 +3351,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3368,7 +3367,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3388,7 +3387,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3404,7 +3403,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3420,7 +3419,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3440,7 +3439,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3456,7 +3455,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3466,7 +3465,7 @@
    "cat": "",
    "equiv": 57,
    "len": 57,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3492,7 +3491,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3508,7 +3507,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3518,7 +3517,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3560,7 +3559,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3570,13 +3569,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3652,7 +3651,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3668,7 +3667,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3678,7 +3677,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3720,7 +3719,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3730,7 +3729,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3772,7 +3771,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3782,7 +3781,7 @@
    "cat": "",
    "equiv": 58,
    "len": 58,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3824,7 +3823,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3850,7 +3849,7 @@
    "cat": "",
    "equiv": 73,
    "len": 52,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -3860,7 +3859,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -3883,7 +3882,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -3893,13 +3892,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -3949,7 +3948,7 @@
    "cat": "",
    "equiv": 56,
    "len": 56,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -3965,7 +3964,7 @@
    "cat": "",
    "equiv": 57,
    "len": 32,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -3999,7 +3998,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -4009,7 +4008,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -4065,13 +4064,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -4116,7 +4115,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "sku",
@@ -4126,13 +4125,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "sku",
@@ -4177,7 +4176,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -4193,7 +4192,7 @@
    "cat": "",
    "equiv": 69,
    "len": 47,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -4203,7 +4202,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修剪 50-54"
+   "action": "超格修剪"
   },
   {
    "type": "sku",
@@ -4345,7 +4344,7 @@
    "cat": "",
    "equiv": 55,
    "len": 55,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": true,
@@ -5325,13 +5324,13 @@
    "cat": "",
    "equiv": 55,
    "len": 29,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5357,7 +5356,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5367,7 +5366,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5377,13 +5376,13 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5409,7 +5408,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5419,7 +5418,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5429,13 +5428,13 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5445,7 +5444,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -5454,7 +5453,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5464,7 +5463,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5474,7 +5473,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5484,13 +5483,13 @@
    "cat": "",
    "equiv": 57,
    "len": 30,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5519,7 +5518,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5529,7 +5528,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5539,13 +5538,13 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5574,7 +5573,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5584,7 +5583,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5594,13 +5593,13 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5610,7 +5609,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -5619,7 +5618,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5629,7 +5628,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5639,7 +5638,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5649,13 +5648,13 @@
    "cat": "",
    "equiv": 58,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5665,7 +5664,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -5674,7 +5673,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5684,7 +5683,7 @@
    "cat": "",
    "equiv": 59,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5694,7 +5693,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5704,13 +5703,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5720,7 +5719,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -5729,7 +5728,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5739,7 +5738,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5749,7 +5748,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5759,13 +5758,13 @@
    "cat": "",
    "equiv": 55,
    "len": 29,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5775,7 +5774,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -5784,7 +5783,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5794,7 +5793,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5804,7 +5803,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5814,27 +5813,9 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌非一次"
-   ],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "company-intro",
-   "locale": "en",
-   "title": "About ZprintPro: Professional Equipment & One-Stop Printing",
-   "cat": "",
-   "equiv": 59,
-   "len": 59,
    "band": "OK",
    "brandIssues": [
-    "品牌不在末尾"
+    "品牌非一次"
    ],
    "pollution": [],
    "bcHit": false,
@@ -5845,12 +5826,30 @@
   {
    "type": "blog",
    "slug": "company-intro",
+   "locale": "en",
+   "title": "About ZprintPro: Professional Equipment & One-Stop Printing",
+   "cat": "",
+   "equiv": 59,
+   "len": 59,
+   "band": "TRIM",
+   "brandIssues": [
+    "品牌不在末尾"
+   ],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修剪 50-58"
+  },
+  {
+   "type": "blog",
+   "slug": "company-intro",
    "locale": "ja",
    "title": "ZprintPro会社概要：専門設備とワンストップ印刷サ | ZprintPro",
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5860,7 +5859,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5870,13 +5869,13 @@
    "cat": "",
    "equiv": 55,
    "len": 29,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -5886,13 +5885,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5902,7 +5901,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5912,7 +5911,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5922,22 +5921,6 @@
    "cat": "",
    "equiv": 55,
    "len": 30,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "sticker-design",
-   "locale": "en",
-   "title": "10 Golden Rules for Sticker Design | Print Guide | ZprintPro",
-   "cat": "",
-   "equiv": 60,
-   "len": 60,
    "band": "OK",
    "brandIssues": [],
    "pollution": [],
@@ -5949,12 +5932,28 @@
   {
    "type": "blog",
    "slug": "sticker-design",
+   "locale": "en",
+   "title": "10 Golden Rules for Sticker Design | Print Guide | ZprintPro",
+   "cat": "",
+   "equiv": 60,
+   "len": 60,
+   "band": "TRIM",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修剪 50-58"
+  },
+  {
+   "type": "blog",
+   "slug": "sticker-design",
    "locale": "ja",
    "title": "ステッカーデザインの10の黄金法則：印象に残るブラ | ZprintPro",
    "cat": "",
    "equiv": 60,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -5964,7 +5963,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -5974,13 +5973,13 @@
    "cat": "",
    "equiv": 55,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6006,7 +6005,7 @@
    "cat": "",
    "equiv": 54,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6016,7 +6015,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6026,13 +6025,13 @@
    "cat": "",
    "equiv": 60,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6042,13 +6041,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6058,7 +6057,7 @@
    "cat": "",
    "equiv": 55,
    "len": 39,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6068,7 +6067,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6078,13 +6077,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6113,7 +6112,7 @@
    "cat": "",
    "equiv": 54,
    "len": 33,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6123,7 +6122,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6133,13 +6132,13 @@
    "cat": "",
    "equiv": 60,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6168,7 +6167,7 @@
    "cat": "",
    "equiv": 59,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6178,7 +6177,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6188,13 +6187,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6223,7 +6222,7 @@
    "cat": "",
    "equiv": 54,
    "len": 33,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6233,7 +6232,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6243,13 +6242,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6275,7 +6274,7 @@
    "cat": "",
    "equiv": 52,
    "len": 32,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6285,7 +6284,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6295,13 +6294,13 @@
    "cat": "",
    "equiv": 53,
    "len": 28,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6327,7 +6326,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6337,7 +6336,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6347,13 +6346,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6382,7 +6381,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6392,7 +6391,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6402,13 +6401,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6437,7 +6436,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6447,7 +6446,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6457,13 +6456,13 @@
    "cat": "",
    "equiv": 57,
    "len": 30,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6489,7 +6488,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6499,7 +6498,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6509,13 +6508,13 @@
    "cat": "",
    "equiv": 57,
    "len": 30,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6541,7 +6540,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6551,7 +6550,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6561,13 +6560,13 @@
    "cat": "",
    "equiv": 59,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6593,7 +6592,7 @@
    "cat": "",
    "equiv": 58,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6603,7 +6602,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6613,13 +6612,13 @@
    "cat": "",
    "equiv": 57,
    "len": 30,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6648,7 +6647,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6658,7 +6657,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6668,13 +6667,13 @@
    "cat": "",
    "equiv": 59,
    "len": 31,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6703,7 +6702,7 @@
    "cat": "",
    "equiv": 57,
    "len": 37,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -6713,7 +6712,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -6723,13 +6722,13 @@
    "cat": "",
    "equiv": 60,
    "len": 39,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6755,7 +6754,7 @@
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6765,7 +6764,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6775,13 +6774,13 @@
    "cat": "",
    "equiv": 56,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -6791,7 +6790,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -6800,7 +6799,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6810,7 +6809,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6820,7 +6819,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6830,13 +6829,13 @@
    "cat": "",
    "equiv": 60,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": true,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6862,7 +6861,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6872,7 +6871,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6882,13 +6881,13 @@
    "cat": "",
    "equiv": 60,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6917,7 +6916,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6927,7 +6926,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6937,13 +6936,13 @@
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6972,7 +6971,7 @@
    "cat": "",
    "equiv": 59,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -6982,7 +6981,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -6992,13 +6991,13 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7008,7 +7007,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -7017,7 +7016,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7027,7 +7026,7 @@
    "cat": "",
    "equiv": 59,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7037,7 +7036,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7047,13 +7046,13 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7082,7 +7081,7 @@
    "cat": "",
    "equiv": 56,
    "len": 37,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7092,7 +7091,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7102,13 +7101,13 @@
    "cat": "",
    "equiv": 57,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7134,7 +7133,7 @@
    "cat": "",
    "equiv": 57,
    "len": 37,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7144,7 +7143,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7154,13 +7153,13 @@
    "cat": "",
    "equiv": 57,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7189,7 +7188,7 @@
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7199,7 +7198,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7209,13 +7208,13 @@
    "cat": "",
    "equiv": 60,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7241,7 +7240,7 @@
    "cat": "",
    "equiv": 53,
    "len": 39,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7251,7 +7250,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7261,13 +7260,13 @@
    "cat": "",
    "equiv": 56,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7296,7 +7295,7 @@
    "cat": "",
    "equiv": 56,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7306,7 +7305,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7316,13 +7315,13 @@
    "cat": "",
    "equiv": 57,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7351,7 +7350,7 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7361,7 +7360,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7371,13 +7370,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7387,13 +7386,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7403,7 +7402,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7413,7 +7412,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7423,13 +7422,13 @@
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7458,7 +7457,7 @@
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7468,7 +7467,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7478,13 +7477,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7510,7 +7509,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7520,7 +7519,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7530,13 +7529,13 @@
    "cat": "",
    "equiv": 60,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7546,13 +7545,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7562,7 +7561,7 @@
    "cat": "",
    "equiv": 53,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7572,7 +7571,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7582,13 +7581,13 @@
    "cat": "",
    "equiv": 56,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7617,7 +7616,7 @@
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7627,7 +7626,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7637,22 +7636,6 @@
    "cat": "",
    "equiv": 57,
    "len": 34,
-   "band": "FILL",
-   "brandIssues": [],
-   "pollution": [],
-   "bcHit": false,
-   "insightHit": false,
-   "frozen": false,
-   "action": "补满 50-54"
-  },
-  {
-   "type": "blog",
-   "slug": "wedding-invitation-envelope-printing-guide",
-   "locale": "en",
-   "title": "Wedding Invitation Envelope Printing Guide 2026 | ZprintPro",
-   "cat": "",
-   "equiv": 59,
-   "len": 59,
    "band": "OK",
    "brandIssues": [],
    "pollution": [],
@@ -7664,12 +7647,28 @@
   {
    "type": "blog",
    "slug": "wedding-invitation-envelope-printing-guide",
+   "locale": "en",
+   "title": "Wedding Invitation Envelope Printing Guide 2026 | ZprintPro",
+   "cat": "",
+   "equiv": 59,
+   "len": 59,
+   "band": "TRIM",
+   "brandIssues": [],
+   "pollution": [],
+   "bcHit": false,
+   "insightHit": false,
+   "frozen": false,
+   "action": "修剪 50-58"
+  },
+  {
+   "type": "blog",
+   "slug": "wedding-invitation-envelope-printing-guide",
    "locale": "ja",
    "title": "ウエディング招待状封筒印刷ガイド2026：パール・箔 | ZprintPro",
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7679,7 +7678,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7689,13 +7688,13 @@
    "cat": "",
    "equiv": 57,
    "len": 33,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -7724,7 +7723,7 @@
    "cat": "",
    "equiv": 58,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -7734,7 +7733,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -7744,13 +7743,13 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7776,7 +7775,7 @@
    "cat": "",
    "equiv": 59,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7786,7 +7785,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7796,13 +7795,13 @@
    "cat": "",
    "equiv": 60,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7828,7 +7827,7 @@
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7838,7 +7837,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7848,13 +7847,13 @@
    "cat": "",
    "equiv": 60,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7864,7 +7863,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -7873,7 +7872,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7883,7 +7882,7 @@
    "cat": "",
    "equiv": 59,
    "len": 39,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7893,7 +7892,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7903,13 +7902,13 @@
    "cat": "",
    "equiv": 60,
    "len": 39,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7935,7 +7934,7 @@
    "cat": "",
    "equiv": 59,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -7945,7 +7944,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7955,7 +7954,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体字形污染"
    ],
@@ -7965,7 +7964,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -7994,7 +7993,7 @@
    "cat": "",
    "equiv": 58,
    "len": 36,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8004,7 +8003,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8014,13 +8013,13 @@
    "cat": "",
    "equiv": 56,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8030,7 +8029,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -8039,7 +8038,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8049,7 +8048,7 @@
    "cat": "",
    "equiv": 59,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8059,7 +8058,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8069,13 +8068,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8104,7 +8103,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8114,25 +8113,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
    "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
    "locale": "zh-hk",
-   "title": "折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港 | 智印港",
+   "title": "折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印港",
    "cat": "",
-   "equiv": 59,
-   "len": 34,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌非一次"
-   ],
+   "equiv": 50,
+   "len": 28,
+   "band": "OK",
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8161,7 +8158,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8171,7 +8168,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8181,13 +8178,13 @@
    "cat": "",
    "equiv": 58,
    "len": 32,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8197,7 +8194,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -8206,7 +8203,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8216,7 +8213,7 @@
    "cat": "",
    "equiv": 59,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8226,7 +8223,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8236,13 +8233,13 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8271,7 +8268,7 @@
    "cat": "",
    "equiv": 51,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8281,7 +8278,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8291,13 +8288,13 @@
    "cat": "",
    "equiv": 60,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8307,13 +8304,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8323,7 +8320,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8333,7 +8330,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8343,13 +8340,13 @@
    "cat": "",
    "equiv": 60,
    "len": 33,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8375,7 +8372,7 @@
    "cat": "",
    "equiv": 59,
    "len": 37,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8385,7 +8382,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8395,13 +8392,13 @@
    "cat": "",
    "equiv": 60,
    "len": 35,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8411,7 +8408,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -8420,7 +8417,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8430,7 +8427,7 @@
    "cat": "",
    "equiv": 58,
    "len": 35,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8440,7 +8437,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8450,13 +8447,13 @@
    "cat": "",
    "equiv": 56,
    "len": 37,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8482,7 +8479,7 @@
    "cat": "",
    "equiv": 59,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8492,7 +8489,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8502,13 +8499,13 @@
    "cat": "",
    "equiv": 60,
    "len": 35,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8534,7 +8531,7 @@
    "cat": "",
    "equiv": 50,
    "len": 31,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8544,7 +8541,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8554,13 +8551,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8570,13 +8567,13 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8586,7 +8583,7 @@
    "cat": "",
    "equiv": 56,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8596,7 +8593,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8606,13 +8603,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8638,7 +8635,7 @@
    "cat": "",
    "equiv": 56,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -8648,7 +8645,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -8658,13 +8655,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8674,7 +8671,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -8683,7 +8680,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8693,7 +8690,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8703,44 +8700,39 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
    "slug": "custom-card-boxes-small-batch-usa",
    "locale": "zh-hk",
-   "title": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 Z | 智印港",
+   "title": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港",
    "cat": "",
-   "equiv": 60,
-   "len": 35,
+   "equiv": 49,
+   "len": 27,
    "band": "FILL",
-   "brandIssues": [
-    "品牌非一次"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "补满 50-58"
   },
   {
    "type": "blog",
    "slug": "custom-card-boxes-small-batch-usa",
    "locale": "en",
-   "title": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee,",
+   "title": "Custom Card Boxes for E-commerce: 500 MOQ | ZprintPro",
    "cat": "",
-   "equiv": 58,
-   "len": 58,
+   "equiv": 53,
+   "len": 53,
    "band": "OK",
-   "brandIssues": [
-    "缺品牌 ZprintPro",
-    "品牌不在末尾"
-   ],
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8750,7 +8742,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8760,25 +8752,23 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
    "slug": "cosmetic-card-boxes-gang-run-japan",
    "locale": "zh-hk",
-   "title": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 | 智印港",
+   "title": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港",
    "cat": "",
-   "equiv": 59,
-   "len": 34,
-   "band": "FILL",
-   "brandIssues": [
-    "品牌非一次"
-   ],
+   "equiv": 50,
+   "len": 28,
+   "band": "OK",
+   "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8807,7 +8797,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8817,7 +8807,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8827,13 +8817,13 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8859,7 +8849,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8869,7 +8859,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8879,13 +8869,13 @@
    "cat": "",
    "equiv": 58,
    "len": 36,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "OK"
   },
   {
    "type": "blog",
@@ -8911,7 +8901,7 @@
    "cat": "",
    "equiv": 59,
    "len": 39,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8921,7 +8911,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8931,7 +8921,7 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -8941,7 +8931,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8970,7 +8960,7 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -8980,7 +8970,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -8990,13 +8980,13 @@
    "cat": "",
    "equiv": 59,
    "len": 32,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9025,7 +9015,7 @@
    "cat": "",
    "equiv": 59,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9035,7 +9025,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9045,13 +9035,13 @@
    "cat": "",
    "equiv": 60,
    "len": 42,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9061,13 +9051,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9077,7 +9067,7 @@
    "cat": "",
    "equiv": 59,
    "len": 45,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9087,7 +9077,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9097,7 +9087,7 @@
    "cat": "",
    "equiv": 59,
    "len": 35,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -9107,7 +9097,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9136,7 +9126,7 @@
    "cat": "",
    "equiv": 58,
    "len": 37,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9146,7 +9136,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9156,7 +9146,7 @@
    "cat": "",
    "equiv": 60,
    "len": 45,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体字形污染"
    ],
@@ -9166,7 +9156,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9195,7 +9185,7 @@
    "cat": "",
    "equiv": 60,
    "len": 51,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9205,7 +9195,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9215,7 +9205,7 @@
    "cat": "",
    "equiv": 58,
    "len": 34,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -9225,7 +9215,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9254,7 +9244,7 @@
    "cat": "",
    "equiv": 59,
    "len": 39,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9264,7 +9254,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9274,7 +9264,7 @@
    "cat": "",
    "equiv": 59,
    "len": 34,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -9284,7 +9274,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9313,7 +9303,7 @@
    "cat": "",
    "equiv": 58,
    "len": 38,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9323,7 +9313,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9333,7 +9323,7 @@
    "cat": "",
    "equiv": 60,
    "len": 32,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -9343,7 +9333,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9372,7 +9362,7 @@
    "cat": "",
    "equiv": 60,
    "len": 36,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9382,7 +9372,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9392,7 +9382,7 @@
    "cat": "",
    "equiv": 60,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体字形污染"
    ],
@@ -9402,7 +9392,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9431,7 +9421,7 @@
    "cat": "",
    "equiv": 58,
    "len": 39,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9441,7 +9431,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9451,13 +9441,13 @@
    "cat": "",
    "equiv": 60,
    "len": 35,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9486,7 +9476,7 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9496,7 +9486,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9506,13 +9496,13 @@
    "cat": "",
    "equiv": 60,
    "len": 44,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9522,7 +9512,7 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -9531,7 +9521,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9541,7 +9531,7 @@
    "cat": "",
    "equiv": 60,
    "len": 49,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9551,7 +9541,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9561,13 +9551,13 @@
    "cat": "",
    "equiv": 60,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9577,7 +9567,7 @@
    "cat": "",
    "equiv": 60,
    "len": 60,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -9586,7 +9576,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "修品牌/污染"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9596,7 +9586,7 @@
    "cat": "",
    "equiv": 59,
    "len": 41,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9606,7 +9596,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9616,13 +9606,13 @@
    "cat": "",
    "equiv": 59,
    "len": 38,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9648,7 +9638,7 @@
    "cat": "",
    "equiv": 60,
    "len": 40,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [
     "简体污染"
    ],
@@ -9658,7 +9648,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9668,7 +9658,7 @@
    "cat": "",
    "equiv": 85,
    "len": 59,
-   "band": "OK",
+   "band": "RED",
    "brandIssues": [
     "品牌不在末尾",
     "简体字形污染"
@@ -9689,7 +9679,7 @@
    "cat": "",
    "equiv": 122,
    "len": 122,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -9705,7 +9695,7 @@
    "cat": "",
    "equiv": 105,
    "len": 79,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "品牌不在末尾",
     "简体污染"
@@ -9726,7 +9716,7 @@
    "cat": "",
    "equiv": 64,
    "len": 42,
-   "band": "FILL",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -9742,7 +9732,7 @@
    "cat": "",
    "equiv": 78,
    "len": 78,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -9758,7 +9748,7 @@
    "cat": "",
    "equiv": 75,
    "len": 52,
-   "band": "OK",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -9778,7 +9768,7 @@
    "cat": "",
    "equiv": 90,
    "len": 66,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "品牌不在末尾",
     "简体字形污染"
@@ -9799,7 +9789,7 @@
    "cat": "",
    "equiv": 122,
    "len": 122,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -9815,7 +9805,7 @@
    "cat": "",
    "equiv": 142,
    "len": 93,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -9835,7 +9825,7 @@
    "cat": "",
    "equiv": 94,
    "len": 62,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "品牌不在末尾",
     "简体字形污染"
@@ -9856,7 +9846,7 @@
    "cat": "",
    "equiv": 123,
    "len": 123,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "缺品牌 ZprintPro",
     "品牌不在末尾"
@@ -9875,7 +9865,7 @@
    "cat": "",
    "equiv": 123,
    "len": 77,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -9895,7 +9885,7 @@
    "cat": "",
    "equiv": 88,
    "len": 64,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "品牌不在末尾",
     "简体字形污染"
@@ -9916,7 +9906,7 @@
    "cat": "",
    "equiv": 94,
    "len": 94,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -9932,7 +9922,7 @@
    "cat": "",
    "equiv": 89,
    "len": 61,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -9952,7 +9942,7 @@
    "cat": "",
    "equiv": 50,
    "len": 29,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -9962,7 +9952,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "blog",
@@ -9972,13 +9962,13 @@
    "cat": "",
    "equiv": 59,
    "len": 59,
-   "band": "OK",
+   "band": "TRIM",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "OK"
+   "action": "修剪 50-58"
   },
   {
    "type": "blog",
@@ -9988,7 +9978,7 @@
    "cat": "",
    "equiv": 54,
    "len": 36,
-   "band": "FILL",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
@@ -9998,7 +9988,7 @@
    "bcHit": false,
    "insightHit": false,
    "frozen": false,
-   "action": "补满 50-54"
+   "action": "修品牌/污染"
   },
   {
    "type": "home",
@@ -10009,7 +9999,7 @@
    "frozen": true,
    "equiv": 60,
    "len": 36,
-   "band": "LEGACY",
+   "band": "TRIM",
    "brandIssues": [
     "品牌不在末尾"
    ],
@@ -10027,7 +10017,7 @@
    "frozen": true,
    "equiv": 72,
    "len": 47,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "日文假名污染"
    ],
@@ -10083,7 +10073,7 @@
    "frozen": true,
    "equiv": 76,
    "len": 50,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "日文假名污染",
     "简体字形污染"
@@ -10157,7 +10147,7 @@
    "frozen": true,
    "equiv": 68,
    "len": 68,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -10194,7 +10184,7 @@
    "frozen": true,
    "equiv": 66,
    "len": 42,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -10210,7 +10200,7 @@
    "frozen": true,
    "equiv": 74,
    "len": 74,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -10247,7 +10237,7 @@
    "frozen": true,
    "equiv": 69,
    "len": 43,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -10279,7 +10269,7 @@
    "frozen": true,
    "equiv": 80,
    "len": 52,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -10299,7 +10289,7 @@
    "frozen": true,
    "equiv": 70,
    "len": 50,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "缺品牌 智印港",
     "品牌非一次",
@@ -10355,7 +10345,7 @@
    "frozen": true,
    "equiv": 55,
    "len": 36,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "缺品牌 智印港",
     "品牌非一次",
@@ -10391,7 +10381,7 @@
    "frozen": true,
    "equiv": 69,
    "len": 47,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [
     "简体污染"
    ],
@@ -10431,7 +10421,7 @@
    "frozen": true,
    "equiv": 76,
    "len": 76,
-   "band": "TRIM",
+   "band": "RED",
    "brandIssues": [],
    "pollution": [],
    "bcHit": false,
@@ -10447,7 +10437,7 @@
    "frozen": true,
    "equiv": 56,
    "len": 39,
-   "band": "LEGACY",
+   "band": "OK",
    "brandIssues": [
     "简体污染"
    ],
