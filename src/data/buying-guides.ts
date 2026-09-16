@@ -365,50 +365,142 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['gift-boxes', 'cosmetic-boxes', 'food-boxes', 'mailer-boxes', 'folding-boxes', 'rigid-boxes'],
     content: {
-      'zh-hk': `<p>包裝盒定製是品牌升級的重要環節。面對琳瑯滿目的盒型、材質和工藝選擇，企業主常感到困惑。本文從盒型分類、材質選擇、表面工藝、應用場景、印刷工藝、選購決策 6 個維度為您系統拆解香港包裝盒定製選購全攻略。</p>
-<h3>一、常見盒型分類</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">盒型</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">典型應用</th></tr></thead><tbody><tr><td class="border p-2">天地蓋盒</td><td class="border p-2">上下分開，高端禮品常用</td><td class="border p-2">高檔禮品、首飾</td></tr><tr><td class="border p-2">書型盒</td><td class="border p-2">翻蓋式，像書本打開</td><td class="border p-2">高端品牌、收藏品</td></tr><tr><td class="border p-2">抽屜盒</td><td class="border p-2">抽拉式設計，神秘感</td><td class="border p-2">珠寶、限量版</td></tr><tr><td class="border p-2">翻蓋盒</td><td class="border p-2">單蓋板開啟，簡潔</td><td class="border p-2">電子產品、文具</td></tr><tr><td class="border p-2">開窗盒</td><td class="border p-2">盒子有透明窗</td><td class="border p-2">食品、化妝品展示</td></tr><tr><td class="border p-2">普通摺盒</td><td class="border p-2">瓦楞紙 / 卡紙摺成</td><td class="border p-2">快遞盒、外賣盒</td></tr></tbody></table>
-<h3>二、材質選擇詳解</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>白卡紙 250-400g</strong>：白色挺度高，適合作畫冊型、禮品盒</li><li><strong>灰板裱紙</strong>：灰芯紙 + 表面裱印刷紙，結構穩固</li><li><strong>瓦楞紙 3-7 層</strong>：緩衝性佳，適合快遞盒、運輸包裝</li><li><strong>特種紙裱盒</strong>：珠光紙、棉絮紙裱面，高端禮品盒首選</li><li><strong>牛皮紙</strong>：環保復古風，常用於禮品盒外層</li><li><strong>PET / PP 膠片</strong>：透明 / 半透明，視窗盒、開窗盒</li></ul>
-<h3>三、表面處理工藝</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：最基礎的表面保護，提升觸感與耐用度</li><li><strong>UV 局部上光</strong>：突出 Logo、圖案，增加視覺層次</li><li><strong>燙金 / 燙銀</strong>：金屬光澤，提升品牌奢華感</li><li><strong>擊凸 / 壓凹</strong>：無油墨立體壓紋，極簡設計首選</li><li><strong>絲網印刷 UV</strong>：厚油墨層，觸感強烈</li></ol>
-<h3>四、應用場景與盒型對應</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">行業</th><th class="border p-2 text-left">推薦盒型</th><th class="border p-2 text-left">材質組合</th></tr></thead><tbody><tr><td class="border p-2">化妝品</td><td class="border p-2">天地蓋盒 / 開窗盒</td><td class="border p-2">白卡 + 燙金</td></tr><tr><td class="border p-2">首飾 / 珠寶</td><td class="border p-2">書型盒 / 抽屜盒</td><td class="border p-2">特種紙 + 絨布內襯</td></tr><tr><td class="border p-2">食品</td><td class="border p-2">開窗盒 / 普通摺盒</td><td class="border p-2">食品級白卡 + 淋膜</td></tr><tr><td class="border p-2">電子產品</td><td class="border p-2">書型盒 / 翻蓋盒</td><td class="border p-2">EVA 內襯 + 燙金</td></tr><tr><td class="border p-2">服飾</td><td class="border p-2">普通摺盒 / 抽屜盒</td><td class="border p-2">銅版紙 + 啞膠</td></tr><tr><td class="border p-2">禮品 / 紀念品</td><td class="border p-2">天地蓋盒 + 燙金</td><td class="border p-2">特種紙裱 + 手挽</td></tr></tbody></table>
-<h3>五、印刷工藝選擇</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色印刷（CMYK）</strong>：照片類設計、複雜漸變</li><li><strong>專色印刷（Pantone）</strong>：品牌標準色、金屬色、螢光色</li><li><strong>數碼印刷</strong>：小批量（100-500 個）、個性化</li><li><strong>柔版印刷</strong>：大批量（1000+ 個）、成本低</li><li><strong>絲網印刷</strong>：厚油墨、強立體感</li></ul>
-<h3>六、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：包裝盒最少訂幾多個？</strong><br/>A：100 個起。禮品盒標準起訂量。</p><p><strong>Q：有無提供設計服務？</strong><br/>A：提供，HK$800/款起，含 3D 模擬圖。</p><p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板 + 大豆油墨 + PLA 淋膜。</p><p><strong>Q：可以製作特殊形狀嗎？</strong><br/>A：可以，異形模切按客戶要求訂製。</p></div>
-<p>想了解更多包裝盒定製？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
-      'en': `<p>Custom packaging is critical for brand upgrades. With diverse box types, materials, and finishes, business owners often feel confused. This article systematically breaks down custom packaging selection across 6 dimensions: box types, materials, finishes, applications, printing processes, and decision framework.</p>
-<h3>1. Common Box Type Categories</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Box Type</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Typical Use</th></tr></thead><tbody><tr><td class="border p-2">Telescope Box</td><td class="border p-2">Top + bottom separated, premium gifts</td><td class="border p-2">Premium gifts, jewelry</td></tr><tr><td class="border p-2">Book Box</td><td class="border p-2">Opens like a book, flip cover</td><td class="border p-2">Premium brands, collectibles</td></tr><tr><td class="border p-2">Drawer Box</td><td class="border p-2">Pull-out design, mysterious</td><td class="border p-2">Jewelry, limited editions</td></tr><tr><td class="border p-2">Flip Cover</td><td class="border p-2">Single flap opening, clean</td><td class="border p-2">Electronics, stationery</td></tr><tr><td class="border p-2">Window Box</td><td class="border p-2">Transparent window</td><td class="border p-2">Food, cosmetics display</td></tr><tr><td class="border p-2">Standard Folding</td><td class="border p-2">Corrugated / card folded</td><td class="border p-2">Shipping, takeaway</td></tr></tbody></table>
-<h3>2. Material Selection</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>White Card 250-400g</strong>: White stiffness, ideal for book-style and gift boxes</li><li><strong>Grey Board Laminated</strong>: Grey core + surface laminated, sturdy structure</li><li><strong>Corrugated 3-7 layer</strong>: Good cushioning, ideal for shipping and transport</li><li><strong>Specialty Paper Laminated</strong>: Pearl, cotton-paper laminated surface, premium gift boxes</li><li><strong>Kraft Paper</strong>: Eco vintage, common for gift box outer layer</li><li><strong>PET / PP Film</strong>: Transparent / semi-transparent, window boxes</li></ul>
-<h3>3. Surface Finishes</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Glossy / Matte Lamination</strong>: Basic protection, tactile and durability boost</li><li><strong>Spot UV</strong>: Highlight logo and design, visual depth</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic shine, luxury feel</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional relief, minimalist favorite</li><li><strong>Screen Print UV</strong>: Thick ink layer, strong tactile</li></ol>
-<h3>4. Application & Box Type Mapping</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Industry</th><th class="border p-2 text-left">Recommended Box</th><th class="border p-2 text-left">Material Combo</th></tr></thead><tbody><tr><td class="border p-2">Cosmetics</td><td class="border p-2">Telescope / window box</td><td class="border p-2">White card + foil</td></tr><tr><td class="border p-2">Jewelry</td><td class="border p-2">Book / drawer box</td><td class="border p-2">Specialty + velvet interior</td></tr><tr><td class="border p-2">Food</td><td class="border p-2">Window / standard fold</td><td class="border p-2">Food-grade white card + lamination</td></tr><tr><td class="border p-2">Electronics</td><td class="border p-2">Book / flip cover</td><td class="border p-2">EVA interior + foil</td></tr><tr><td class="border p-2">Apparel</td><td class="border p-2">Standard fold / drawer</td><td class="border p-2">Art paper + matte</td></tr><tr><td class="border p-2">Gift / Souvenir</td><td class="border p-2">Telescope + foil</td><td class="border p-2">Specialty laminated + handle</td></tr></tbody></table>
-<h3>5. Printing Process Options</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4-color (CMYK)</strong>: Photo designs, complex gradients</li><li><strong>Spot Color (Pantone)</strong>: Brand standard, metallic, fluorescent</li><li><strong>Digital Print</strong>: Small batch (100-500), personalized</li><li><strong>Flexo Print</strong>: Large batch (1000+), low cost</li><li><strong>Screen Print</strong>: Thick ink, strong dimensional feel</li></ul>
-<h3>6. Frequently Asked Questions</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for packaging boxes?</strong><br/>A：100 pieces for standard gift boxes.</p><p><strong>Q：Do you offer design services?</strong><br/>A：Yes — from US$100/design, includes 3D mockup.</p><p><strong>Q：What eco-box materials are available?</strong><br/>A：FSC card + soy ink + PLA lamination.</p><p><strong>Q：Can you produce custom shapes?</strong><br/>A：Yes — custom die-cut available; tooling fee applies.</p></div>
-<p>Want more on custom packaging? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
-      'ja': `<p>パッケージボックスカスタムはブランドアップグレードの重要な環節。多様な箱型、材質、加工の選択に、企業主は困惑することも。本記事は箱型分類、材質選択、表面加工、応用、印刷工程、選定意思決定の 6 つの側面から香港パッケージボックスカスタムを体系的に整理します。</p>
-<h3>一、主な箱型分類</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">箱型</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">典型用途</th></tr></thead><tbody><tr><td class="border p-2">天地箱</td><td class="border p-2">上下分離、高級ギフト定番</td><td class="border p-2">高級ギフト、宝石</td></tr><tr><td class="border p-2">ブック型箱</td><td class="border p-2">蓋付き、本のように開く</td><td class="border p-2">高級ブランド、コレクション</td></tr><tr><td class="border p-2">引き出し箱</td><td class="border p-2">引き出し式、神秘的</td><td class="border p-2">宝石、リミテッド</td></tr><tr><td class="border p-2">フラップカバー</td><td class="border p-2">単蓋、シンプル</td><td class="border p-2">電子機器、文具</td></tr><tr><td class="border p-2">窓付き箱</td><td class="border p-2">透明窓付き</td><td class="border p-2">食品、化粧品展示</td></tr><tr><td class="border p-2">標準組立箱</td><td class="border p-2">段ボール / カード組立</td><td class="border p-2">配送、テイクアウト</td></tr></tbody></table>
-<h3>二、材質選択詳細</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>白カード 250-400g</strong>：白で腰強い、ブック型・ギフトボックス向き</li><li><strong>灰板ラミネート</strong>：灰芯 + 表面ラミネート、構造しっかり</li><li><strong>段ボール 3-7 層</strong>：緩衝性よし、輸送包装向き</li><li><strong>特殊紙ラミネート箱</strong>：パール、コットン紙ラミネート、高級ギフトボックス定番</li><li><strong>クラフト紙</strong>：エコレトロ、ギフトボックス外層に多い</li><li><strong>PET / PP フィルム</strong>：透明 / 半透明、窓付き箱</li></ul>
-<h3>三、表面加工</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光沢 / マットラミネート</strong>：基本保護、触感・耐久性向上</li><li><strong>スポット UV</strong>：ロゴ・図案強調、視覚階層</li><li><strong>箔押し（金 / 銀）</strong>：金属光沢、高級感向上</li><li><strong>エンボス / デボス</strong>：インクなし立体圧痕、ミニマルデザイン向き</li><li><strong>シルク印刷 UV</strong>：厚インキ、強い触感</li></ol>
-<h3>四、応用シーンと箱型対応</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">業界</th><th class="border p-2 text-left">推奨箱型</th><th class="border p-2 text-left">材質組合せ</th></tr></thead><tbody><tr><td class="border p-2">化粧品</td><td class="border p-2">天地箱 / 窓付箱</td><td class="border p-2">白カード + 箔</td></tr><tr><td class="border p-2">宝石</td><td class="border p-2">ブック型 / 引き出し箱</td><td class="border p-2">特殊紙 + ベルベット内装</td></tr><tr><td class="border p-2">食品</td><td class="border p-2">窓付 / 標準組立</td><td class="border p-2">食品対応白カード + ラミネート</td></tr><tr><td class="border p-2">電子機器</td><td class="border p-2">ブック型 / フラップカバー</td><td class="border p-2">EVA 内装 + 箔</td></tr><tr><td class="border p-2">アパレル</td><td class="border p-2">標準組立 / 引き出し</td><td class="border p-2">アート紙 + マット</td></tr><tr><td class="border p-2">ギフト / 記念品</td><td class="border p-2">天地箱 + 箔</td><td class="border p-2">特殊紙ラミネート + 持ち手</td></tr></tbody></table>
-<h3>五、印刷工程の選択</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4 色印刷（CMYK）</strong>：写真系デザイン、複雑なグラデーション</li><li><strong>特色印刷（Pantone）</strong>：ブランド標準色、メタリック、蛍光</li><li><strong>デジタル印刷</strong>：小ロット（100-500 個）、個別性</li><li><strong>フレキソ印刷</strong>：大ロット（1000+ 個）、低コスト</li><li><strong>シルク印刷</strong>：厚インキ、強い立体感</li></ul>
-<h3>六、よくある質問</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準ギフトボックスは 100 個から。</p><p><strong>Q：デザインサービスはありますか？</strong><br/>A：はい。HK$800/デザインから、3D モックアップを含む。</p><p><strong>Q：エコボックス素材は？</strong><br/>A：FSC 認証カード + 大豆インキ + PLA ラミネート。</p><p><strong>Q：特注形状は作れますか？</strong><br/>A：はい。特注トムソン抜き対応、型代が発生します。</p></div>
-<p>パッケージボックスカスタムをもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp で智印港に連絡</a> 見積もり！</p>`,
-  },
-  },
+      'zh-hk': `<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>重點摘要：</strong>包裝盒訂製 100 個起印，精裝盒（rigid box）HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個，3-7 天交貨，無刀模費視乎批量。本文拆解 6 大盒型、材質×工藝組合、2026 真實價格階梯與選購避坑清單。完整<a href="/zh-hk/category/packaging/" class="text-[#1A56DB] underline">包裝盒印刷</a>服務可到包裝類目。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，30 秒 AI 即時報價；或直接睇<a href="/zh-hk/product/rigid-boxes/" class="text-[#1A56DB] underline">精裝盒產品頁</a>。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>價格：</strong>精裝盒（灰板裱紙）HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個、磁吸盒 HK$15-80/個，全部 100 個起印（白卡盒 500 個起）。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>起訂：</strong>標準包裝盒 100 個起印，無刀模費視乎批量；拼版白卡盒更可免刀模費 + 免排版費，成本直降 40-60%。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>交期：</strong>3-7 個工作天完成生產，順豐本地送貨、DHL 全球 2-4 天；急單可選<a href="/zh-hk/blog/rush-printing-hk-guide/" class="text-[#1A56DB] underline">即日印刷服務</a>。</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">1. 包裝盒訂製幾錢一個？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">包裝盒價格由盒型、材質、尺寸、數量同工藝決定。以下係智印港 2026 真實價目（per products.ts 2026-09 價格口徑，全部 100 個起印）：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">盒型</th><th class="border p-3 text-left">價目（HK$/個）</th><th class="border p-3 text-left">起印量</th></tr></thead><tbody>
+<tr><td class="border p-3">精裝盒 / 硬盒</td><td class="border p-3">HK$8-42/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">磁吸翻蓋盒</td><td class="border p-3">HK$15-80/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">摺盒 / 卡盒</td><td class="border p-3">HK$2.5-15/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">郵寄盒 / 快遞盒</td><td class="border p-3">HK$3.5-10/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">白卡紙盒（卡盒）</td><td class="border p-3">HK$0.50-3.00/個</td><td class="border p-3">500 個</td></tr>
+<tr><td class="border p-3">食品包裝盒</td><td class="border p-3">HK$2.5-18/個</td><td class="border p-3">100 個</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【包裝盒訂製 100 個起印、3-7 天交貨，精裝盒 HK$8-42/個、白卡盒 HK$0.50-3.00/個，量大單價遞減】</p></div>
+<p class="text-base text-[#444444] leading-relaxed mb-4">想比較其他印刷品成本，可參考<a href="/zh-hk/blog/hong-kong-printing-cost-baseline-2026/" class="text-[#1A56DB] underline">香港印刷成本基準 2026</a>與<a href="/zh-hk/blog/packaging-box-pricing-2026/" class="text-[#1A56DB] underline">包裝盒價格指南 2026</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">2. 盒型點揀：天地蓋 vs 書型 vs 抽屜？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">包裝盒 6 大盒型各有特性，揀啱先慳成本又顯檔次：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">盒型</th><th class="border p-3 text-left">特點</th><th class="border p-3 text-left">典型應用</th></tr></thead><tbody>
+<tr><td class="border p-3">天地蓋盒</td><td class="border p-3">上下分開，高端大氣</td><td class="border p-3">高檔禮品、首飾</td></tr>
+<tr><td class="border p-3">書型盒</td><td class="border p-3">翻蓋式，像書本打開</td><td class="border p-3">高端品牌、收藏品</td></tr>
+<tr><td class="border p-3">抽屜盒</td><td class="border p-3">抽拉式設計，有儀式感</td><td class="border p-3">珠寶、限量版</td></tr>
+<tr><td class="border p-3">磁吸翻蓋盒</td><td class="border p-3">磁吸閉合，開合順滑</td><td class="border p-3">奢侈品、化妝品、電子產品</td></tr>
+<tr><td class="border p-3">開窗盒</td><td class="border p-3">透明窗展示產品</td><td class="border p-3">食品、化妝品陳列</td></tr>
+<tr><td class="border p-3">普通摺盒</td><td class="border p-3">瓦楞 / 卡紙摺疊，成本低</td><td class="border p-3">電商快遞、外賣</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【零售走量揀摺盒/卡盒慳成本，品牌禮品揀精裝盒/磁吸盒顯檔次——盒型直接決定單價與開箱體驗】</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">3. 材質同工藝點配合先高級？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">常見材質：白卡紙（250-400g，挺度高）、灰板裱紙（結構穩固）、瓦楞紙（緩衝好，跨境運輸）、特種紙（珠光/棉絮，高端禮盒）、牛皮紙（環保復古）、PET/PP 膠片（開窗）。工藝組合：光膠/啞膠做基礎保護，UV 局部上光突出 Logo，燙金燙銀提升奢華感，擊凸壓凹走極簡高級。想睇材料延伸可參考<a href="/zh-hk/blog/kraft-paper-box-types-comparison-2026/" class="text-[#1A56DB] underline">牛皮紙盒比較</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">4. 揀包裝盒要避開咩坑？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">5 大常見坑：(1) 低估起印量——精裝盒 100 個起，白卡盒 500 個起，試單前先計好；(2) 忽略刀模費——異形盒要刀模，拼版白卡盒免刀模費最抵；(3) 色差——RGB 設計轉 CMYK 會變色，一定要用 Pantone 專色；(4) 內托未預留——珠寶/電子產品要 EVA 內托，成本另計；(5) 交期太趕——3-7 天標準，急單要提前。完整選購框架可參考<a href="/zh-hk/blog/packaging-box-custom-guide/" class="text-[#1A56DB] underline">包裝盒訂製指南</a>。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">5. 包裝盒訂製常見問題有邊啲？</h2>
+<p><strong>Q：包裝盒最少訂幾多個？</strong><br/>A：標準精裝盒、摺盒、磁吸盒 100 個起印；白卡紙盒（卡盒）500 個起；拼版白卡盒亦 500 個起但可免刀模費。</p>
+<p><strong>Q：包裝盒訂製幾多錢一個？</strong><br/>A：視乎盒型：精裝盒 HK$8-42/個、摺盒 HK$2.5-15/個、白卡盒 HK$0.50-3.00/個、磁吸盒 HK$15-80/個，數量愈大單價愈平。</p>
+<p><strong>Q：有無設計服務？</strong><br/>A：提供設計服務，含 3D 模擬圖；亦接受客戶自備 AI/PDF 檔案，我哋免費做 PDF 預檢。</p>
+<p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板、大豆油墨、牛皮紙、食品級白卡（FDA 接觸安全）均可選，適合 ESG 品牌。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，攞 30 秒 AI 即時報價，順豐本地免運費、DHL 全球 2-4 天送貨。</p>
+<div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
+<p class="text-base text-[#333333] font-semibold mb-2">關於智印港</p>
+<p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。ISO 9001 品質管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
+<p class="mb-0"><strong>資料來源：</strong>智印港 2026 內部報價資料庫（products.ts 2026-09 價目）；ISO 12647-2:2013 色彩管理標準；FSC 2025 永續印刷報告。</p>
+</div>
+<p class="text-sm text-[#444444] mt-4"><strong>本文作者：</strong>智印港印刷工程團隊 — 15 年膠印工程師，專注包裝盒／彩盒／精裝盒工藝。<strong>最後更新：2026-09-16。</strong></p>
+`,
+      'en': `<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>Key takeaway:</strong> Custom packaging boxes print from <strong>100 pcs</strong>, with rigid boxes from <strong>US$1.84/pc</strong>, folding boxes US$0.51/pc, and white-card boxes from US$0.10-0.60/pc, delivered in 3-7 days. This guide covers 6 box styles, material × finish combos, real 2026 pricing tiers, and a buying checklist to avoid hidden costs. Full <a href="/en/category/packaging/" class="text-[#1A56DB] underline">packaging printing</a> services are on the packaging category page.</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI instant quote, or jump to the <a href="/en/product/rigid-boxes/" class="text-[#1A56DB] underline">rigid box product page</a>.</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Pricing:</strong> Rigid boxes (grey board, laminated) US$1.84-9.66/pc, folding boxes US$0.51-3.45/pc, white-card boxes US$0.10-0.60/pc, magnetic-closure boxes US$3.45-18.39/pc — all from 100 pcs (white-card from 500 pcs).</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>MOQ:</strong> Standard boxes start at 100 pcs with no plate fees on gang-run white-card boxes — shared dies cut tooling and layout costs by 40-60%.</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>Turnaround:</strong> Production takes 3-7 business days; DHL Express delivers globally in 2-4 days. For rush jobs, see our <a href="/en/blog/rush-printing-hk-guide/" class="text-[#1A56DB] underline">rush printing service</a>.</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">1. How Much Does Custom Packaging Cost?</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">Packaging price is driven by box style, material, size, quantity, and finishing. The table below shows ZprintPro's real 2026 price tiers (per products.ts 2026-09 pricing):</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">Box Style</th><th class="border p-3 text-left">Price (US$/pc)</th><th class="border p-3 text-left">MOQ</th></tr></thead><tbody>
+<tr><td class="border p-3">Rigid box / hard box</td><td class="border p-3">US$1.84-9.66/pc</td><td class="border p-3">100 pcs</td></tr>
+<tr><td class="border p-3">Magnetic-closure box</td><td class="border p-3">US$3.45-18.39/pc</td><td class="border p-3">100 pcs</td></tr>
+<tr><td class="border p-3">Folding box / carton</td><td class="border p-3">US$0.51-3.45/pc</td><td class="border p-3">100 pcs</td></tr>
+<tr><td class="border p-3">Mailer box</td><td class="border p-3">US$0.80-2.30/pc</td><td class="border p-3">100 pcs</td></tr>
+<tr><td class="border p-3">White-card box</td><td class="border p-3">US$0.10-0.60/pc</td><td class="border p-3">500 pcs</td></tr>
+<tr><td class="border p-3">Food packaging box</td><td class="border p-3">US$0.74-4.14/pc</td><td class="border p-3">100 pcs</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Custom boxes from 100 pcs, 3-7 day turnaround; rigid boxes US$1.84-9.66/pc and white-card boxes US$0.10-0.60/pc — unit price drops with volume】</p></div>
+<p class="text-base text-[#444444] leading-relaxed mb-4">For wider print cost context, see the <a href="/en/blog/hong-kong-printing-cost-baseline-2026/" class="text-[#1A56DB] underline">Hong Kong printing cost baseline 2026</a> and the <a href="/en/blog/packaging-box-pricing-2026/" class="text-[#1A56DB] underline">packaging box pricing guide 2026</a>.</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">2. Which Box Style Should You Choose: Telescope, Book, or Drawer?</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">Each of the 6 box styles has its own strengths — choose right to save cost and elevate your brand:</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">Box Style</th><th class="border p-3 text-left">Features</th><th class="border p-3 text-left">Typical Use</th></tr></thead><tbody>
+<tr><td class="border p-3">Telescope box</td><td class="border p-3">Top + bottom separated, premium</td><td class="border p-3">Premium gifts, jewelry</td></tr>
+<tr><td class="border p-3">Book box</td><td class="border p-3">Flip-open like a book</td><td class="border p-3">Premium brands, collectibles</td></tr>
+<tr><td class="border p-3">Drawer box</td><td class="border p-3">Pull-out design, ceremonial</td><td class="border p-3">Jewelry, limited editions</td></tr>
+<tr><td class="border p-3">Magnetic-closure box</td><td class="border p-3">Magnetic snap, smooth open/close</td><td class="border p-3">Luxury, cosmetics, electronics</td></tr>
+<tr><td class="border p-3">Window box</td><td class="border p-3">Transparent window display</td><td class="border p-3">Food, cosmetics display</td></tr>
+<tr><td class="border p-3">Standard folding box</td><td class="border p-3">Corrugated / card folded, low cost</td><td class="border p-3">E-commerce shipping, takeaway</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【Choose folding/white-card boxes for retail volume to save cost; choose rigid/magnetic boxes for brand gifting — box style drives both unit price and unboxing experience】</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">3. Which Material and Finish Combos Look Premium?</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">Common materials: white card (250-400g, high stiffness), grey board laminated (sturdy), corrugated (cushioning for cross-border shipping), specialty paper (pearl/cotton for luxury), kraft (eco vintage), PET/PP film (window boxes). Finishing combos: glossy/matte lamination for base protection, spot UV to highlight logos, foil stamping for luxury, embossing/debossing for minimalist premium. For material deep-dives, see the <a href="/en/blog/kraft-paper-box-types-comparison-2026/" class="text-[#1A56DB] underline">kraft paper box comparison</a>.</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">4. What Pitfalls Should You Avoid When Ordering Packaging?</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">5 common pitfalls: (1) Underestimating MOQ — rigid boxes 100 pcs, white-card boxes 500 pcs; (2) Ignoring die-cut tooling fees — gang-run white-card boxes waive tooling; (3) Color shift — RGB designs convert to CMYK with visible shifts, use Pantone spot colors for brand colors; (4) Forgetting inserts — jewelry/electronics need EVA inserts at extra cost; (5) Tight timelines — standard 3-7 days, plan ahead for rush. For the full selection framework, see the <a href="/en/blog/packaging-box-custom-guide/" class="text-[#1A56DB] underline">custom packaging guide</a>.</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">5. Custom Packaging FAQ: What Do Buyers Ask?</h2>
+<p><strong>Q：What is the minimum order quantity for packaging boxes?</strong><br/>A：Standard rigid, folding, and magnetic-closure boxes start at 100 pcs; white-card boxes start at 500 pcs; gang-run white-card boxes also start at 500 pcs but waive tooling fees.</p>
+<p><strong>Q：How much does custom packaging cost per box?</strong><br/>A：It depends on the style: rigid boxes US$1.84-9.66/pc, folding boxes US$0.51-3.45/pc, white-card boxes US$0.10-0.60/pc, magnetic-closure boxes US$3.45-18.39/pc — unit price drops as quantity rises.</p>
+<p><strong>Q：Do you offer design services?</strong><br/>A：Yes — design with 3D mockups is available; we also accept client AI/PDF files with free prepress checks.</p>
+<p><strong>Q：What eco-friendly box materials are available?</strong><br/>A：FSC-certified board, soy ink, kraft paper, and FDA food-contact-safe white card are all available for ESG-focused brands.</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI quote — free shipping in Hong Kong, DHL global 2-4 day delivery.</p>
+<div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
+<p class="text-base text-[#333333] font-semibold mb-2">About ZprintPro</p>
+<p class="text-sm text-[#444444] leading-relaxed">ZprintPro serves US, UK, AU, and global clients with 30-second AI instant print quotes, DHL global 2-4 day delivery. ISO 9001 quality management, FSC-certified paper supply. Custom packaging from 100 pcs covering cosmetics, jewelry, food, and electronics.</p>
+<p class="mb-0"><strong>Sources:</strong> ZprintPro 2026 internal pricing database (products.ts 2026-09 pricing); ISO 12647-2:2013 color management standard; FSC 2025 sustainable printing report.</p>
+</div>
+<p class="text-sm text-[#444444] mt-4"><strong>About the author:</strong> ZprintPro Print Engineering Team — 15 years of offset press engineering specializing in packaging, cartons, and rigid boxes. <strong>Last updated: 2026-09-16.</strong></p>
+`,
+      'ja': `<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>要点：</strong>パッケージボックスカスタムは 100 個から対応、化粧箱（リジッド）¥240/個〜、折り箱 ¥69/個〜、白カード箱 ¥10-60/個〜、3-7 日納品。本記事は 6 つの箱型、材質×加工の組み合わせ、2026 実価格ステップ、選定時の失敗回避チェックリストを解説。パッケージ印刷全般は<a href="/ja/category/packaging/" class="text-[#1A56DB] underline">パッケージカテゴリ</a>へ。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI リアルタイム見積もり。化粧箱は<a href="/ja/product/rigid-boxes/" class="text-[#1A56DB] underline">化粧箱製品ページ</a>から。</p>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>価格：</strong>化粧箱（灰板ラミネート）¥240-3100/個、折り箱 ¥69-450/個、白カード箱 ¥10-60/個、マグネット箱 ¥450-2400/個、全て 100 個から（白カード箱は 500 個から）。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>注文単位：</strong>標準ボックスは 100 個から。共同版白カード箱は型代・レイアウト費用無料で、コスト 40-60% 削減。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>納期：</strong>生産 3-7 営業日、DHL 国際 2-4 日配送。急ぎは<a href="/ja/blog/rush-printing-hk-guide/" class="text-[#1A56DB] underline">特急印刷サービス</a>をご確認ください。</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">1. パッケージボックスのカスタム料金はいくら？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">パッケージ価格は箱型・材質・サイズ・数量・加工で決まります。以下は ZprintPro 2026 実価格（products.ts 2026-09 価格に基づく）：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">箱型</th><th class="border p-3 text-left">価格（円/個）</th><th class="border p-3 text-left">最小ロット</th></tr></thead><tbody>
+<tr><td class="border p-3">化粧箱 / リジッド箱</td><td class="border p-3">¥240-3100/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">マグネット箱</td><td class="border p-3">¥450-2400/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">折り箱 / カートン</td><td class="border p-3">¥69-450/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">メーラー箱</td><td class="border p-3">¥105-300/個</td><td class="border p-3">100 個</td></tr>
+<tr><td class="border p-3">白カード箱</td><td class="border p-3">¥10-60/個</td><td class="border p-3">500 個</td></tr>
+<tr><td class="border p-3">食品パッケージ箱</td><td class="border p-3">¥101-540/個</td><td class="border p-3">100 個</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【カスタムボックス 100 個から、3-7 日納品、化粧箱 ¥240-3100/個・白カード箱 ¥10-60/個、数量が多ければ単価は下がる】</p></div>
+<p class="text-base text-[#444444] leading-relaxed mb-4">他の印刷コスト比較は<a href="/ja/blog/hong-kong-printing-cost-baseline-2026/" class="text-[#1A56DB] underline">印刷コスト基準 2026</a>と<a href="/ja/blog/packaging-box-pricing-2026/" class="text-[#1A56DB] underline">パッケージ箱価格ガイド 2026</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">2. 箱型の選び方：天地箱 vs ブック型 vs 引き出し箱？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">6 つの箱型それぞれに特性があります。コストと高級感のバランスで選びましょう：</p>
+<table class="w-full text-sm border-collapse my-6"><thead><tr class="bg-gray-100"><th class="border p-3 text-left">箱型</th><th class="border p-3 text-left">特徴</th><th class="border p-3 text-left">典型用途</th></tr></thead><tbody>
+<tr><td class="border p-3">天地箱</td><td class="border p-3">上下分離、高級感</td><td class="border p-3">高級ギフト、宝石</td></tr>
+<tr><td class="border p-3">ブック型箱</td><td class="border p-3">本のように開く</td><td class="border p-3">高級ブランド、コレクション</td></tr>
+<tr><td class="border p-3">引き出し箱</td><td class="border p-3">引き出し式、演出感</td><td class="border p-3">宝石、リミテッド</td></tr>
+<tr><td class="border p-3">マグネット箱</td><td class="border p-3">磁石で閉じる、滑らか</td><td class="border p-3">ラグジュアリー、化粧品、電子機器</td></tr>
+<tr><td class="border p-3">窓付き箱</td><td class="border p-3">透明窓で商品展示</td><td class="border p-3">食品、化粧品陳列</td></tr>
+<tr><td class="border p-3">標準組立箱</td><td class="border p-3">段ボール組立、低コスト</td><td class="border p-3">EC 配送、テイクアウト</td></tr>
+</tbody></table>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【小売り量産は折り箱・白カード箱でコスト優先、ブランドギフトは化粧箱・マグネット箱で高級感——箱型が単価と開封体験を決める】</p></div>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">3. 材質と加工の組み合わせは？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">主要材質：白カード（250-400g、腰が強い）、灰板ラミネート（構造しっかり）、段ボール（緩衝性、越境輸送向き）、特殊紙（パール・コットン、高級ギフト）、クラフト紙（エコ）、PET/PP フィルム（窓付き箱）。加工組合せ：光沢/マットラミネートで基本保護、スポット UV でロゴ強調、箔押しで高級感、エンボス/デボスでミニマル高級。材質の詳細は<a href="/ja/blog/kraft-paper-box-types-comparison-2026/" class="text-[#1A56DB] underline">クラフト紙箱比較</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">4. パッケージ発注時の失敗を避けるには？</h2>
+<p class="text-base text-[#444444] leading-relaxed mb-4">5 つの失敗ポイント：(1) 最小ロットを過小評価——化粧箱 100 個、白カード箱 500 個から；(2) 型代を無視——共同版白カード箱は型代無料；(3) 色ズレ——RGB デザインは CMYK 変換で色が変わるため、ブランドカラーは Pantone 特色で；(4) 内装を忘れる——宝石・電子機器は EVA 内装で別途費用；(5) 納期が厳しい——標準 3-7 日、急ぎは前もって計画。選定フレームワークは<a href="/ja/blog/packaging-box-custom-guide/" class="text-[#1A56DB] underline">パッケージカスタムガイド</a>をご覧ください。</p>
+<h2 class="text-2xl font-bold text-[#333333] mt-10 mb-4">5. パッケージボックスよくある質問は？</h2>
+<p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準の化粧箱・折り箱・マグネット箱は 100 個から、白カード箱は 500 個から。共同版白カード箱も 500 個からですが型代が無料です。</p>
+<p><strong>Q：カスタムパッケージの単価は？</strong><br/>A：箱型によります：化粧箱 ¥240-3100/個、折り箱 ¥69-450/個、白カード箱 ¥10-60/個、マグネット箱 ¥450-2400/個。数量が多ければ単価が下がります。</p>
+<p><strong>Q：デザインサービスはありますか？</strong><br/>A：あります。3D モックアップ付きデザイン対応、お客様の AI/PDF データも無料プリチェックで受け付けます。</p>
+<p><strong>Q：エコ対応の素材は？</strong><br/>A：FSC 認証ボード、大豆インキ、クラフト紙、FDA 食品接触安全の白カードが選べます。ESG ブランド向けです。</p>
+<p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI 見積もり、全国送料込み、DHL 国際 2-4 日配送。</p>
+<div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
+<p class="text-base text-[#333333] font-semibold mb-2">ZprintPro について</p>
+<p class="text-sm text-[#444444] leading-relaxed">ZprintPro は米国・英国・豪州・グローバル顧客に 30 秒 AI リアルタイム印刷見積もり、DHL 国際 2-4 日配送を提供。ISO 9001 品質マネジメント、FSC 認証用紙供給。パッケージカスタム 100 個から、化粧品・宝石・食品・電子機器の全シーンをカバー。</p>
+<p class="mb-0"><strong>出典：</strong>ZprintPro 2026 内部見積もりデータベース（products.ts 2026-09 価格）；ISO 12647-2:2013 カラー管理標準；FSC 2025 持続可能印刷レポート。</p>
+</div>
+<p class="text-sm text-[#444444] mt-4"><strong>本文執筆：</strong>ZprintPro 印刷エンジニアリングチーム — 15 年のオフセット印刷エンジニアがパッケージ・カートン・化粧箱の工程を担当。<strong>最終更新：2026-09-16。</strong></p>
+`,
+  }  },
   // ========== POSTERS ==========
   {
     slug: 'poster-buying-guide',

@@ -173,6 +173,8 @@ node scripts/verify-deploy.mjs
 
 **8/8 锁词覆盖**：包裝盒印刷⭐（pricing ✅ + buying-guide ⏳）/ 紙盒⭐（kraft ✅）/ 包裝盒訂製（✅）/ 貼紙（sticker-guide ✅ + sticker-material ✅ + sticker-buying-guide ✅）/ 宣傳單張（flyer-buying-guide ✅ + flyer-printing-guide ✅）/ 即日（rush ✅ + same-day ✅）/ 書刊（book ✅）/ 騎馬釘（saddle ✅）。
 
+**§5.5.1 packaging-buying-guide 补强（2026-09-16 09:06）**：初轮子代理 b1b5b97e 运行 60 分钟零产出判定卡死（3 次 ping 无回复）→ 已终止；**K3 指示执行 → 改为自写补强**（不再派子代理）：三语 12 段全达标（zh-hk 5863字 / en 8974字 / ja 6177字，H2=5 全问句 · 表=2 · FAQ=4(提取4) · 块=5 · 链=9 · CTA=2 · 金块=2），ja 品牌 ZprintPro 单品牌守规（智印港=0），价格引用 products.ts 2026-09 真实口径（精裝盒 HK$8-42 / 磁吸盒 HK$15-80 / 摺盒 HK$2.5-15 / 郵寄盒 HK$3.5-10 / 白卡盒 HK$0.50-3.00 / 食品盒 HK$2.5-18），内链 0 死链。**T1 = 9/9 词全部完成**。
+
 **集成教训**：4 个子代理中有 3 个误写 redesign 工作树（F:\zprintpro-nextjs）——集成时统一「从 redesign 提取 → 写入 main-tmp → 还原 redesign」流程；ja 品牌「智印港」需统一修正为 ZprintPro（子代理沿用既有 ja 内容导致）。
 
 ### 5.6 rush-printing H2 问句化修正（2026-09-16）
