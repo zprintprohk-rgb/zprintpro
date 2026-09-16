@@ -5931,7 +5931,7 @@ export const products: Product[] = [
     category: 'books',
     category_slug: 'books',
     name: '香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊', nameEn: 'Hardcover Books for Wedding Albums, Family Histories & Graduation Yearbooks', nameJa: 'ハードカバー書籍 — 結婚記念アルバム・家族史・卒業記念アルバム・同窓会誌', title_zh: '香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊',
-    description: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。', descriptionEn: 'Hardcover book printing for wedding albums, family histories, graduation yearbooks, school anniversary publications. 2.5mm gray board cover with foil-stamped titles and ribbon bookmarks.', descriptionJa: 'ハードカバー書籍印刷、結婚記念アルバム、家族史、卒業記念アルバム、校史特刊に最適。2.5mm 厚紙ボード表紙、箔押しタイトルとリボン栞付き。', description_zh: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。',
+    description: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。適用行業：婚慶、教育院校、企業品牌、文創IP、攝影、藝術展覽、政企機構、酒店民宿。', descriptionEn: 'Hardcover book printing for wedding albums, family histories, graduation yearbooks, school anniversary publications. 2.5mm gray board cover with foil-stamped titles and ribbon bookmarks. Ideal for weddings, education, corporate branding, IP merchandise, photography, art exhibitions, government & organizations, and hospitality.', descriptionJa: 'ハードカバー書籍印刷、結婚記念アルバム、家族史、卒業記念アルバム、校史特刊に最適。2.5mm 厚紙ボード表紙、箔押しタイトルとリボン栞付き。結婚式、教育機関、企業ブランド、同人・IP、写真、アート展示、官公庁・団体、ホテル・宿泊業界に最適。', description_zh: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。適用行業：婚慶、教育院校、企業品牌、文創IP、攝影、藝術展覽、政企機構、酒店民宿。',
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
       '【四色柯式印刷】色彩飽和，適合照片與插畫',
@@ -5955,6 +5955,8 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
+    optimizedAt: '2026-09-16',
+    optimizationRound: 1,
     images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp'],
   imagesByLocale: {
       'zh-hk': [
@@ -6486,7 +6488,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: 'Exercise Book Printing School Programs | K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs', nameEn: 'School Exercise Book Printing | K12 Workbooks & School Textbook Printing', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 / School Exercise Book Printing — MOQ 50 30秒AI報價 DHL 2-4天',
-    description: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。', descriptionEn: 'School exercise book printing service — 50-100 book MOQ (vs Alibaba yellow pages 500+ MOQ), 30-second AI quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). Africa/Middle East/Southeast Asia education ministries, tutoring centers, K12 schools. Custom school textbook printing, grade-level workbooks.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。',
+    description: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。適用行業：教育培訓、校園、補習社、K12 學校、海外教育部門、職業培訓。', descriptionEn: 'School exercise book printing service — 50-100 book MOQ (vs Alibaba yellow pages 500+ MOQ), 30-second AI quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). Africa/Middle East/Southeast Asia education ministries, tutoring centers, K12 schools. Custom school textbook printing, grade-level workbooks. Ideal for education & training, K12 schools, tutoring centers, ministries of education, and vocational training.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。教育・研修、K12 学校、学習塾、教育省、職業訓練業界に最適。', description_zh: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。適用行業：教育培訓、校園、補習社、K12 學校、海外教育部門、職業培訓。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
       '【四色印刷】封面色彩鮮豔，內頁清晰',
@@ -6510,6 +6512,8 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
+    optimizedAt: '2026-09-16',
+    optimizationRound: 1,
     images: ['/images/products/exercise-books.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -6758,7 +6762,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: '香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
-    description: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
+    description: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。適用行業：教育培訓、校園、補習社、出版社、企業培訓、政企機構。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available. Ideal for education & training, K12 schools, tutoring centers, publishers, corporate training, and government organizations.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。教育・研修、K12 学校、学習塾、出版社、企業研修、官公庁・団体に最適。', description_zh: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。適用行業：教育培訓、校園、補習社、出版社、企業培訓、政企機構。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
       '【四色印刷】封面色彩鮮豔，內頁清晰',
@@ -6782,6 +6786,8 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
+    optimizedAt: '2026-09-16',
+    optimizationRound: 1,
     images: ['/images/products/textbooks.jpg'],
   imagesByLocale: {
     'zh-hk': [
