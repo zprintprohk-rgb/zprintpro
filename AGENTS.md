@@ -279,9 +279,15 @@ orchestrator 收到 ack 后:
 - ✅ src/data 代码**注释**（// 行）：内部工作记录可含 GSC 数据（客户不可见）
 - ✅ 客户营销语境词不受影响：`US$0.10-0.20/imp`（每印象成本）、`cost-per-impression`、`8,000-12,000 imp`（街头发放量）等
 
-**机审**: `scripts/guards/gsc-leak-guard.js`（门童 #16，red 硬拦）——扫描 src/data 客户可见字段值（JSON 全字段 + TS 的 title/excerpt/description/keywords），命中 GSC 后台黑话即拦 commit；pre-commit 钩子已接入。
+**机审**: `scripts/guards/gsc-leak-guard.js`（门童 #16，red 硬拦）——扫描 src/data 客户可见字段值（JSON 全字段 + TS 的 title/excerpt/description/keywords + 段落数组），命中 GSC 后台黑话即拦 commit；pre-commit 钩子已接入。
 
 **教训固化**: 2026-09-17 全站清查：4 篇文章 × 3 语种 title/description/excerpt + 7 篇 content 共 116 处 GSC 数据泄漏（sticker-material / foil-stamping / school-exercise-book / kraft-paper-box / poster-size / campus / calendar 等），全部清除；此前门童 #9 gscSource 只查 GSC 来源新鲜度且跳过 src/，**无客户可见泄漏检测**——门童 #16 补上此盲区。
+
+**线上探针二轮补漏（同日）**: 门童 #16 全量 0 后，**线上 curl 探针仍发现 8 处漏网**（本地已清但 build 未部署 + 修复残留半截）：
+- ⚠️ **半截残留模式**: 修复 `GSC foil stamping pos 2.3 + 4 imps` 时中文版留下 `GSC 燙金 +` 空壳（pos/imps 删了但 GSC 前缀 + 运算符残留）——**修复必须整句重写, 不能只删数字**
+- ⚠️ **变体未覆盖**: `GSC review 月曆印刷 21.12` / `GSC 17.1 速赢词` / `GSC 2026/8 數據` / `校準後 GSC a1a2` / `9/3 GSC 校準後` 等变体（首轮正则只覆盖 `GSC pos X` / `X imps` 形态）
+- ⚠️ **类别页同源泄漏**: `category-seo-content.ts`（buyingGuide.paragraphs 军令状段 / poster 攻艱段 / MTR imps 段）+ `catalog-printing-china/page.tsx` 关键词表 `~32 imps/週`（客户可见搜索量, 应写 `次搜尋/週`）——门童 #16 已扩展覆盖段落数组 + category-seo-content.ts
+- ✅ **验证标准**: 门童 #16 0 命中 ≠ 线上干净——**必须 curl 线上重灾页面抽查**（kraft/calendar/restaurant/poster/campus × 3 locale），确认无 GSC 黑话才报完成
 
 ### §0.24 笼统批准 ≠ 动作完成 (K3 8/25 13:45 拍板, 千问评核 #4)
 
