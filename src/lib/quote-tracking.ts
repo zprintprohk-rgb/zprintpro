@@ -24,6 +24,15 @@
 
 import { supabase } from './supabase';
 import type { WhatsAppContext } from './whatsapp';
+import {
+  getAttribution,
+  parseUtmParams,
+  resolveLeadSource,
+  isMissingLeadColumnError,
+  markLeadColumnMissing,
+  type Attribution,
+  type LeadSource,
+} from './attribution';
 
 export type QuoteSource =
   | 'quote-form'        // /quote/ 表单提交
@@ -63,19 +72,12 @@ function getOrCreateSessionId(): string {
   }
 }
 
-/** UTM 参数解析 (从 URL) */
-function parseUtmParams(url: string): { source: string | null; medium: string | null; campaign: string | null } {
-  try {
-    const u = new URL(url);
-    return {
-      source: u.searchParams.get('utm_source'),
-      medium: u.searchParams.get('utm_medium'),
-      campaign: u.searchParams.get('utm_campaign'),
-    };
-  } catch {
-    return { source: null, medium: null, campaign: null };
-  }
-}
+// Lane O 归因 (v10 P0-3, K3 2026-09-17): 归因实现抽到零依赖模块 src/lib/attribution.ts
+// —— 与 src/lib/tracking.ts (事件层) 共用同一套 UTM 捕获 / last-touch 持久化 / 车道映射,
+// 避免重复维护, 也避免 tracking.ts 为拿归因而 import 本文件 (会拉入 supabase client)。
+// 下列 re-export 保持既有消费方的 import 路径不变。
+export { getAttribution, parseUtmParams, resolveLeadSource, isMissingLeadColumnError };
+export type { Attribution, LeadSource };
 
 /** 设备类型解析 (UA) */
 function getDeviceType(ua: string): string {
@@ -130,16 +132,25 @@ export async function trackQuoteRequest(input: QuoteTrackingInput): Promise<void
     const ua = navigator.userAgent;
     const ga4 = getGa4ClientId();
     const sessionId = getOrCreateSessionId();
-    const utm = parseUtmParams(pageUrl);
 
-    const { error } = await supabase.from('quote_requests').insert({
+    // Lane O 归因 (v10 P0-3): 取值优先级 = 显式 pageUrl 的 UTM > 持久化归因(last-touch deeplink) > organic
+    const utm = parseUtmParams(pageUrl);
+    const attr = getAttribution();
+    const effSource = utm.source || attr.utmSource;
+    const effContent = utm.source ? utm.content : attr.utmContent;
+    const leadSource = resolveLeadSource(effSource);
+
+    const payload = {
       source: input.source,
       locale: input.locale,
       landing_page: pageUrl,
       referrer: referrer,
-      utm_source: utm.source,
-      utm_medium: utm.medium,
-      utm_campaign: utm.campaign,
+      utm_source: effSource,
+      utm_medium: utm.source ? utm.medium : attr.utmMedium,
+      utm_campaign: utm.source ? utm.campaign : attr.utmCampaign,
+      utm_content: effContent,
+      lead_id: effContent,
+      lead_source: leadSource,
       ga4_client_id: ga4,
       session_id: sessionId,
       last_touch_at: new Date().toISOString(),
@@ -155,7 +166,20 @@ export async function trackQuoteRequest(input: QuoteTrackingInput): Promise<void
       user_agent: ua,
       device_type: getDeviceType(ua),
       page_url: pageUrl,
-    });
+    };
+
+    let { error } = await supabase.from('quote_requests').insert(payload);
+
+    // migration 010 未应用 (K3 手动跑 SQL 前) → 去掉新列降级重试, 保证 008 度量层不破
+    if (error && isMissingLeadColumnError(error.message)) {
+      markLeadColumnMissing(); // 同步告知事件层 (tracking.ts) 自动降级, 避免 009 事件被拒
+      const { utm_content: _uc, lead_id: _li, lead_source: _ls, ...legacy } = payload;
+      const retry = await supabase.from('quote_requests').insert(legacy);
+      error = retry.error;
+      if (process.env.NODE_ENV === 'development' && !error) {
+        console.debug('[quote-tracking] 010 未应用, 已降级写入 (无车道字段)');
+      }
+    }
 
     if (error) {
       if (process.env.NODE_ENV === 'development') {

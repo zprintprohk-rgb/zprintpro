@@ -14,6 +14,7 @@
 
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
+import { resolveLeadSource } from '@/lib/attribution';
 
 // CF Pages (next-on-pages) 强制要求所有动态路由声明 edge runtime
 // 2026-06-07 修复部署失败 — 加此声明
@@ -43,6 +44,11 @@ const QuoteRequestSchema = z.object({
   // 8/26 修 2 补全: locale default 'en' → 'zh-hk' (zprintpro 是香港公司, 默认 zh-hk)
   locale: z.string().default('zh-hk'),
   referrerUrl: z.string().optional(),
+  // Lane O 归因 (v10 P0-3, K3 2026-09-17): outbound 深链 UTM 由前端上送, 服务端落 008 车道字段
+  utmSource: z.string().optional(),
+  utmMedium: z.string().optional(),
+  utmCampaign: z.string().optional(),
+  utmContent: z.string().optional(),
 });
 
 export async function POST(req: NextRequest) {
@@ -125,30 +131,56 @@ export async function POST(req: NextRequest) {
 
     // 8/26 修 3 真修复: 服务端插入 quote_requests 度量层 (不依赖 env-gated 客户端 trackQuoteRequest)
     // 业务表成功后才插, 失败不影响业务主流程
+    // Lane O 归因 (v10 P0-3): 透传前端 UTM → utm_source/medium/campaign/content +
+    //   lead_source 车道 (迁移 010 未应用时自动降级重试, 保证度量层不破)
     try {
-      const metricRes = await fetch(`${supabaseUrl}/rest/v1/quote_requests`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          apikey: supabaseKey,
-          Authorization: `Bearer ${supabaseKey}`,
-          Prefer: 'return=minimal',
-        },
-        body: JSON.stringify({
-          source: data.source,
-          locale: data.locale,
-          landing_page: data.referrerUrl || null,
-          customer_name: data.customerName,
-          customer_email: data.customerEmail,
-          product_slug: data.productSlug,
-          product_name: data.productName,
-          category: data.material,
-          quantity: String(data.quantity),
-          size: sizeString,
-          message: data.productName,
-          last_touch_at: new Date().toISOString(),
-        }),
-      });
+      const metricBase: Record<string, unknown> = {
+        source: data.source,
+        locale: data.locale,
+        landing_page: data.referrerUrl || null,
+        referrer: data.referrerUrl || null,
+        utm_source: data.utmSource || null,
+        utm_medium: data.utmMedium || null,
+        utm_campaign: data.utmCampaign || null,
+        customer_name: data.customerName,
+        customer_email: data.customerEmail,
+        product_slug: data.productSlug,
+        product_name: data.productName,
+        category: data.material,
+        quantity: String(data.quantity),
+        size: sizeString,
+        message: data.productName,
+        last_touch_at: new Date().toISOString(),
+      };
+      const metricFull = {
+        ...metricBase,
+        utm_content: data.utmContent || null,
+        lead_id: data.utmContent || null,
+        lead_source: resolveLeadSource(data.utmSource),
+      };
+
+      const postMetric = (payloadObj: Record<string, unknown>) =>
+        fetch(`${supabaseUrl}/rest/v1/quote_requests`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            apikey: supabaseKey,
+            Authorization: `Bearer ${supabaseKey}`,
+            Prefer: 'return=minimal',
+          },
+          body: JSON.stringify(payloadObj),
+        });
+
+      let metricRes = await postMetric(metricFull);
+      if (!metricRes.ok && metricRes.status === 400) {
+        // 迁移 010 未应用 (PGRST204 / column not found) → 降级重试, 不带车道字段
+        const errText = await metricRes.text();
+        if (/PGRST204|lead_source|utm_content|lead_id/i.test(errText)) {
+          metricRes = await postMetric(metricBase);
+        } else {
+          console.warn('[Quote API] quote_requests 度量层插入失败:', metricRes.status, errText);
+        }
+      }
       if (!metricRes.ok) {
         console.warn('[Quote API] quote_requests 度量层插入失败:', metricRes.status, await metricRes.text());
       }

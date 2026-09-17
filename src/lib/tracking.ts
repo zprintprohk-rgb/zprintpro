@@ -32,6 +32,15 @@
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
+// Lane O 归因 (v10 P0-3): 归因来自零依赖共享模块 (不与 quote-tracking 耦合 →
+// 不把 supabase client 拉进事件层 bundle)
+import {
+  getAttribution,
+  parseUtmParams,
+  resolveLeadSource,
+  isLeadColumnKnownMissing,
+} from './attribution';
+
 // ============ 类型定义 ============
 
 export type TrackingEventType =
@@ -104,19 +113,7 @@ function getDeviceType(): string {
   return 'desktop';
 }
 
-/** UTM 参数解析 (从 URL) */
-function parseUtmParams(url: string): { source: string | null; medium: string | null; campaign: string | null } {
-  try {
-    const u = new URL(url);
-    return {
-      source: u.searchParams.get('utm_source'),
-      medium: u.searchParams.get('utm_medium'),
-      campaign: u.searchParams.get('utm_campaign'),
-    };
-  } catch {
-    return { source: null, medium: null, campaign: null };
-  }
-}
+/** UTM 参数解析: 用共享模块 src/lib/attribution.ts 的实现 (与 quote-tracking 同口径) */
 
 // ============ sendBeacon + fetch keepalive 兜底 ============
 
@@ -184,9 +181,15 @@ export function track(event: TrackingEvent): void {
     const ua = navigator.userAgent;
     const utm = parseUtmParams(pageUrl);
 
+    // Lane O 归因 (v10 P0-3): 取值口径与 quote-tracking 完全一致
+    // (显式 URL UTM 优先 → 持久化 last-touch 归因兜底 → organic)
+    const attr = getAttribution();
+    const effSource = utm.source || attr.utmSource;
+    const effContent = utm.source ? utm.content : attr.utmContent;
+
     // payload 严格对齐 009 tracking_events schema
     // 0 PII: no customer_name/email/phone/message
-    const payload = {
+    const payload: Record<string, unknown> = {
       event_type: event.event,
       locale: getLocale(),
       page_url: pageUrl,
@@ -197,12 +200,20 @@ export function track(event: TrackingEvent): void {
       product_name: event.productName || null,
       category: event.category || null,
       label: event.label || null,
-      utm_source: utm.source,
-      utm_medium: utm.medium,
-      utm_campaign: utm.campaign,
+      utm_source: effSource,
+      utm_medium: utm.source ? utm.medium : attr.utmMedium,
+      utm_campaign: utm.source ? utm.campaign : attr.utmCampaign,
       user_agent: ua,
       device_type: getDeviceType(),
     };
+
+    // 车道字段 (010 迁移)。migration 未跑时带这些列会被 PostgREST 拒 (PGRST204)
+    // → 一旦 008 路径探测到缺失并打标记, 此处自动降级 (不带新列), 事件层不丢事件
+    if (!isLeadColumnKnownMissing()) {
+      payload.utm_content = effContent;
+      payload.lead_id = effContent;
+      payload.lead_source = resolveLeadSource(effSource);
+    }
 
     const body = JSON.stringify(payload);
     // PostgREST anon INSERT, apikey 在 URL (避免 Authorization 头 CORS)
