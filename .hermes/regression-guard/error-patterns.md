@@ -329,3 +329,25 @@
 ---
 
 **自进化记录**: 后续每周 (5 cron SSoT v6.4 嵌入) 输出新发现 + 复发率, 增量追加
+
+---
+
+### 规则 GSC_LEAK_CUSTOMER_VISIBLE — GSC 后台数据泄漏到客户可见内容 (K3 2026-09-17 拍板, 门童 #16)
+
+> **拍板原话**: 「为什么这些GSC的数据出现在客户阅读的blog文章中，造成数据的污染，写进规则，这些信息是后台只有我能看到的数据，怎么出现在的文章中，这也是非常高的规则，反审门童是干嘛用的，这个问题说过不止一次」
+
+**触发条件** (任一命中即 red 硬拦):
+- 客户可见字段 (title/description/excerpt/keywords/content) 含 `GSC pos X` / `pos X` / `X imps` / `imps X` / `攻艱` / `攻堅` / `衝首頁` / `TOP3` / `突入` / `gsc-fresh-*.json` 等后台黑话
+- 客户可见内容含 GSC 数据源行 (`数据出處：GSC 數據 / gsc-fresh-*.json`)
+- 客户可见内容含 GSC 校准/基线运营笔记 (如 `GSC 8/18 baseline ... pos 2.0 + 16 imps`)
+
+**机审**: `scripts/guards/gsc-leak-guard.js` — 扫描 `src/data/blog-data/*.json` + `blog-posts.ts` + `buying-guides.ts` + `products.ts` + `pillar-content.ts` 的客户可见字段值 (JSON 全字段 + TS 单行字段 + 多行对象, 跳过 // 注释)
+
+**豁免 (合法客户语境, 不拦)**:
+- `US$0.10-0.20/imp` / `HK$X/imp` / `¥X/imp` (每印象成本, 客户营销语境)
+- `8,000-12,000 imp` (营销统计发放量) / `cost-per-impression`
+- `Impressions` 单词 (艺术/营销语境, 不跟数字) / `position/pose/positive` / `TOP 3` 带空格 / `top-3 picks` 类
+
+**教训固化**: 2026-09-17 全站清查 116 处泄漏 (67 META + 49 CONTENT): sticker-material / foil-stamping / school-exercise-book / kraft-paper-box / poster-size / campus / calendar × 3 locale; 双品牌 `智印港 ZprintPro` 2 处 zh-hk title 同批修复。根因: 门童 #9 gscSource 跳过 src/ 无客户可见泄漏检测。
+
+**配套**: AGENTS.md §0.23.1 (规则 SSoT) | 门童 #16 注册于 check-regression-guard.js | pre-commit 钩子端到端验证已过 (注入泄漏 → commit 被拦)

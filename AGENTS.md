@@ -263,6 +263,26 @@ orchestrator 收到 ack 后:
 - 008 询盘跟踪表: 8/29 首报, baseline 首报真实数据
 - `.hermes/m3-self-evolution-patterns.md` SOP-10 第 3 款详细说明
 
+### §0.23.1 GSC 后台数据禁入客户可见内容 (K3 2026-09-17 拍板, 跨项目 P0 强制级)
+
+> **拍板原话**: 「为什么这些GSC的数据出现在客户阅读的blog文章中，造成数据的污染，写进规则，这些信息是后台只有我能看到的数据，怎么出现在的文章中，这也是非常高的规则，反审门童是干嘛用的，这个问题说过不止一次」
+
+**核心**: GSC 后台运营数据（pos/imps/position/impression/攻艱/攻堅/衝首頁/TOP3/突入/GSC 簇/锁词/补词/gsc-fresh-*.json 文件名等）是**只有 K3 能看到的内部数据**，**绝对禁止**出现在任何客户可见内容（src/data 的 title/description/excerpt/keywords/content、blog-data JSON、blog-posts.ts、buying-guides.ts、products.ts、pillar-content.ts 等）。
+
+**红线（绝对禁止）**:
+- ❌ 客户可见 title/description/excerpt/content 中出现 `GSC pos X` / `pos X` / `X imps` / `攻艱` / `衝首頁` / `TOP3 突入` / `gsc-fresh-*.json` 等后台黑话
+- ❌ 把 GSC 数据源行（`数据出處：GSC 數據 / gsc-fresh-*.json`）写进客户可见内容——数据源行只进内部报告（.hermes/ docs/）
+- ❌ GSC 校准/基线/攻艱记录作为内容段落写进 blog 正文（如 "GSC 8/18 baseline ... pos 2.0 + 16 imps"）
+
+**允许（后台文档）**:
+- ✅ .hermes/ docs/ 内部报告、cron 日志、GSC数据/ 文件夹：GSC 数据完整使用（含数据源行）
+- ✅ src/data 代码**注释**（// 行）：内部工作记录可含 GSC 数据（客户不可见）
+- ✅ 客户营销语境词不受影响：`US$0.10-0.20/imp`（每印象成本）、`cost-per-impression`、`8,000-12,000 imp`（街头发放量）等
+
+**机审**: `scripts/guards/gsc-leak-guard.js`（门童 #16，red 硬拦）——扫描 src/data 客户可见字段值（JSON 全字段 + TS 的 title/excerpt/description/keywords），命中 GSC 后台黑话即拦 commit；pre-commit 钩子已接入。
+
+**教训固化**: 2026-09-17 全站清查：4 篇文章 × 3 语种 title/description/excerpt + 7 篇 content 共 116 处 GSC 数据泄漏（sticker-material / foil-stamping / school-exercise-book / kraft-paper-box / poster-size / campus / calendar 等），全部清除；此前门童 #9 gscSource 只查 GSC 来源新鲜度且跳过 src/，**无客户可见泄漏检测**——门童 #16 补上此盲区。
+
 ### §0.24 笼统批准 ≠ 动作完成 (K3 8/25 13:45 拍板, 千问评核 #4)
 
 > **K3 一句"按你的建议执行" / "建议 A" / "批准" ≠ 真人动作完成**
@@ -496,6 +516,8 @@ orchestrator 收到 ack 后:
 5. **本地开发 + Cloudflare Pages 部署**(Node.js runtime via @opennextjs/cloudflare)
 
 ## 3. 项目结构（关键路径）
+
+> **⛔ 目录铁律（K3 2026-09-17 拍板, 凌驾一切旧目录假设）**: `F:\zprintpro-nextjs` = **唯一项目根目录 + 唯一生产工作目录**（main 分支, commit/push 一律在此执行）。`redesign/plp-pdp-v9` 分支**仅用于设计版面预览**（设计确定后再推送 main）。`F:\zprintpro-main-tmp` **已移除 worktree**（2026-09-17, 内容备份至 `.hermes/_archive-main-tmp-20260917/`）, **不得再作为生产/工作目录**。任何执行层不得在 nextjs 之外另设生产 worktree。
 
 ```
 F:\zprintpro-nextjs\

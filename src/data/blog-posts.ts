@@ -1039,7 +1039,7 @@ const lpBabyProductLabel: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-14',
   title: {
-    'zh-hk': "母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港 ZprintPro",
+    'zh-hk': "母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定製 | 智印港",
     en: "Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro",
     ja: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro",
   },
@@ -1056,7 +1056,7 @@ const lpEcommerceShippingBag: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-14',
   title: {
-    'zh-hk': "跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送 | 智印港 ZprintPro",
+    'zh-hk': "跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送 | 智印港",
     en: "E-commerce Shipping Bag Printing Guide: Tamper-Evident & Waterproof Mailers for US Brands | ZprintPro",
     ja: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro",
   },
@@ -1073,7 +1073,7 @@ const lpMediaMerchandiseBox: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-14',
   title: {
-    'zh-hk': "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港 ZprintPro",
+    'zh-hk': "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定製 | 智印港",
     en: "Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US Fans | ZprintPro",
     ja: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro",
   },
@@ -1631,9 +1631,9 @@ const lpStickerMaterialPvcVinylRemovable: BlogPostMeta = {
     ja: '防水ステッカー材質完全ガイド: PVC / 透明 / 再剥 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '防水貼紙材質點揀? 4 大材質對比 (PVC 防水 3 年耐候 / 透明防水 90% 透光 / 可移不殘膠 / 燙金 pos 2.3 衝首頁) + 100 張起印 HK$0.35/張 + 5 個行業場景 (餐飲外賣 / 物流倉儲 / 戶外設備 / 化妝品 / 活動門票) + 4 條 FAQ + 5 條內部連結 + 12 大行業底色, 30 秒 WhatsApp 報價.',
-    en: 'Which waterproof sticker material? 4 stocks compared (PVC 3-yr outdoor / clear 90% transparency / removable no residue / foil pos 2.3 top-3 push) + 100 MOQ from $0.045 USD/pc + 5 use cases (food delivery / logistics / outdoor gear / cosmetics / event tickets) + 4 FAQs + 5 internal links + 12 industries, 30s WhatsApp quote.',
-    ja: '防水ステッカー材質選び方? 4 大材質比較 (PVC 3 年耐候 / 透明 90% 透光 / 再剥離糊残らず / 箔押し pos 2.3 TOP3 突入) + 100 枚〜 \$0.045/枚〜 + 5 場面 (飲食デリバリー / 物流倉庫 / アウトドア / コスメ / イベントチケット) + 4 FAQ + 5 内部リンク + 12 業界対応, 30 秒 WhatsApp 見積.',
+    'zh-hk': '防水貼紙材質點揀? 4 大材質對比 (PVC 防水 3 年耐候 / 透明防水 90% 透光 / 可移不殘膠 / 燙金工藝) + 100 張起印 HK$0.35/張 + 5 個行業場景 (餐飲外賣 / 物流倉儲 / 戶外設備 / 化妝品 / 活動門票) + 4 條 FAQ + 5 條內部連結 + 12 大行業底色, 30 秒 WhatsApp 報價.',
+    en: 'Which waterproof sticker material? 4 stocks compared (PVC 3-yr outdoor / clear 90% transparency / removable no residue / foil finishing) + 100 MOQ from $0.045 USD/pc + 5 use cases (food delivery / logistics / outdoor gear / cosmetics / event tickets) + 4 FAQs + 5 internal links + 12 industries, 30s WhatsApp quote.',
+    ja: '防水ステッカー材質選び方? 4 大材質比較 (PVC 3 年耐候 / 透明 90% 透光 / 再剥離糊残らず / 箔押し加工) + 100 枚〜 \$0.045/枚〜 + 5 場面 (飲食デリバリー / 物流倉庫 / アウトドア / コスメ / イベントチケット) + 4 FAQ + 5 内部リンク + 12 業界対応, 30 秒 WhatsApp 見積.',
   },
   targetKeywords: {
     primary: '防水貼紙',
@@ -1674,14 +1674,14 @@ const lpFoilStamping3Applications2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-03',
   title: {
-    'zh-hk': '燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片 GSC pos 2.3 衝首頁全對比 | 智印港 ZprintPro',
-    en: 'Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards GSC pos 2.3 Top-3 Push | ZprintPro',
-    ja: '箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード GSC pos 2.3 TOP3 突入 | ZprintPro ZprintPro',
+    'zh-hk': '燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片全對比 | 智印港',
+    en: 'Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards | ZprintPro',
+    ja: '箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード | ZprintPro ZprintPro',
   },
   excerpt: {
-    'zh-hk': '燙金點揀? 3 大應用 (貼紙 pos 2.3 4 imps 衝首頁 / 喜帖 Q4 旺季 / 禮盒卡片 R5 聖誕新年) + 4 種箔 (金/銀/玫瑰金/鐳射) + 5 種材質相容性 + 100 個起印 HK$0.80/個起 + 智印港 2026 H1 訂單實證 + 9 段 + 4 FAQ + 5 內部連結 + 30 秒 WhatsApp 報價.',
-    en: 'Which foil finish? 3 applications (foil stickers pos 2.3 4 imps top-3 push / wedding Q4 peak / gift box cards R5 Christmas New Year) + 4 foil colors (gold/silver/rose gold/holographic) + 5 material compatibilities + 100 MOQ from HK$0.80/pc + ZprintPro 2026 H1 order data + 9 sections + 4 FAQs + 5 internal links + 30s WhatsApp quote.',
-    ja: '箔押し印刷の選び方は？3 大活用シーン（箔押しステッカー pos 2.3 4 imps TOP3 突入 / Q4 婚礼シーズン / R5 クリスマス新年ギフトカード）+ 4 色の箔（金/銀/ローズゴールド/ホログラム）+ 5 種素材適合性 + 100 個〜 HK$0.80/個〜 + ZprintPro 2026 年上半期注文データ + 9 段 + 4 FAQ + 5 内部リンク + 30 秒 WhatsApp 見積もり.',
+    'zh-hk': '燙金點揀? 3 大應用 (貼紙 / 喜帖 Q4 旺季 / 禮盒卡片 R5 聖誕新年) + 4 種箔 (金/銀/玫瑰金/鐳射) + 5 種材質相容性 + 100 個起印 HK$0.80/個起 + 智印港 2026 H1 訂單實證 + 9 段 + 4 FAQ + 5 內部連結 + 30 秒 WhatsApp 報價.',
+    en: 'Which foil finish? 3 applications (foil stickers / wedding Q4 peak / gift box cards R5 Christmas New Year) + 4 foil colors (gold/silver/rose gold/holographic) + 5 material compatibilities + 100 MOQ from HK$0.80/pc + ZprintPro 2026 H1 order data + 9 sections + 4 FAQs + 5 internal links + 30s WhatsApp quote.',
+    ja: '箔押し印刷の選び方は？3 大活用シーン（箔押しステッカー / Q4 婚礼シーズン / R5 クリスマス新年ギフトカード）+ 4 色の箔（金/銀/ローズゴールド/ホログラム）+ 5 種素材適合性 + 100 個〜 HK$0.80/個〜 + ZprintPro 2026 年上半期注文データ + 9 段 + 4 FAQ + 5 内部リンク + 30 秒 WhatsApp 見積もり.',
   },
   targetKeywords: {
     primary: '燙金',
@@ -1721,7 +1721,7 @@ const lpKraftPaperBoxTypesComparison2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-05',
   title: {
-    'zh-hk': '牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港 ZprintPro',
+    'zh-hk': '牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 | 智印港',
     en: '8 Packaging Box Types Compared: Kraft vs Corrugated vs Color vs Gift vs Aircraft vs Book vs Drawer vs Shoulder | ZprintPro',
     ja: '8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs ブック vs ドロワー vs ショルダー | ZprintPro',
   },
@@ -1742,7 +1742,7 @@ const hongKongPrintingCostBaseline2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-05',
   title: {
-    'zh-hk': '2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港 ZprintPro',
+    'zh-hk': '2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港',
     en: '2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Stickers, Flyers, Books, Packaging & 12 More Categories',
     ja: '2026年香港印刷コスト ベースラインレポート: ステッカー・チラシ・冊子・パッケージ他 16 カテゴリ 99 SKU 価格データ | ZprintPro',
   },
@@ -1766,7 +1766,7 @@ const printSpecificationsReferenceGuide2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-06',
   title: {
-    'zh-hk': '印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 ZprintPro',
+    'zh-hk': '印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港',
     en: 'Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Print Modes | ZprintPro',
     ja: '印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPro',
   },
@@ -1830,9 +1830,9 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
     ja: '練習帳印刷ガイド 2026: 4 種用紙 3 製本 100 部から | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季 GSC school exercise book pos 21.7-23.8 攻堅, 智印港 全球客戶, ISO 认证体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
-    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes, GSC pos 21.7-23.8, ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
-    ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. GSC pos 21.7. グローバル顧客. ISO + FSC + FDA + EU REACH.',
+    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 认证体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
+    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
+    ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. グローバル顧客. ISO + FSC + FDA + EU REACH.',
   },
   targetKeywords: {
     primary: 'school exercise book',

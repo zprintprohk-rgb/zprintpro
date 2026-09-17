@@ -44,6 +44,7 @@ const GUARDS = {
   register: require(path.join(GUARDS_DIR, 'register-guard.js')),
   gscSource: require(path.join(GUARDS_DIR, 'gsc-source-guard.js')),
   blogDataIntegrity: require(path.join(GUARDS_DIR, 'blog-data-integrity-guard.js')),
+  gscLeak: require(path.join(GUARDS_DIR, 'gsc-leak-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -57,6 +58,7 @@ const GUARD_LABELS = {
   register: '门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT)',
   gscSource: '门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h)',
   blogDataIntegrity: '门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数)',
+  gscLeak: '门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则)',
 };
 
 const args = process.argv.slice(2);

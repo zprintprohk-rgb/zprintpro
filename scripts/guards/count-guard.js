@@ -214,6 +214,9 @@ async function scan(files) {
   for (const file of files) {
     // §0.33 跨项目 P0 强制级, 报告类文件必查 (含 docs/ AGENTS.md commit message 等)
     // 但豁免 .hermes/regression-guard/ (自身) + scripts/guards/ (门童脚本自身)
+    // 2026-09-17 K3 拍板 (GSC 数据污染事故): src/data/** 是**客户可见内容**而非内部报告,
+    //   不适用「数据来源/校准日期」口径要求 (数据来源行只进后台文档, 见 gsc-leak-guard 门童 #16)
+    if (/^src[\/\\]data[\/\\]/.test(file.replace(/\\/g, '/'))) continue;
     if (common.isExemptPath(file)) {
       // 仅扫描 docs/ + AGENTS.md + commit message 类 (报告型文件)
       const isReportFile = /\.(md|mdx|txt)$/i.test(file) && (
