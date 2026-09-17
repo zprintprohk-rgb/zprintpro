@@ -51,6 +51,47 @@
 
 **008 侧**（运营表，非代码）：周报复盘按 `quote_requests.source` 分组 = 分车道 ROI；lead_id = utm_content 与雷达台账行号对账。
 
+### 执行结果（2026-09-17 落地，两处按实测修正）
+
+> 本卡上述 3 处改造 + 008 侧已全部落地，但**两处按实测修正**，理由如下：
+
+**修正 1 — 车道不写 `source` 列，改建独立 `lead_source` 列。**
+
+本卡原写"`quote_requests.source` = 优先 UTM source"。实测发现 `source` 列**已有语义**：
+值域是触点类型（`quote-form` / `whatsapp-cta` / `pdp-cta` / `header-phone` / `sticky-cta`…），
+且既有视图 `v_quote_source_distribution` / `v_quote_funnel` 都按它分组。
+若把 `reddit` 写进 `source`，会**覆盖触点语义、打崩既有视图**。
+
+→ 改为：`source` 保持触点类型；UTM 落 `utm_source/medium/campaign`；**车道落新列 `lead_source`**
+（迁移 010 加，值域 reddit/linkedin/quora/email/wa/organic，带 CHECK 约束 + 3 个新视图）。
+**两者正交**：`source='quote-form'` + `lead_source='reddit'` = "Reddit 深链带来的表单询盘"。
+
+**修正 2 — `QuoteRedirect` 的问题比本卡描述更严重（已修）。**
+
+本卡 L14 写"QuoteRedirect 只认 product 参数，丢弃 UTM"。实测更细：
+- `/[locale]/quote/` **没有表单**，是重定向页；表单 `QuoteForm` 实际渲染在 `/contact/`
+- 无 `product` 分支跳 `/contact/` 时**完全不携带参数** → 而 v10 深链 `/zh-hk/quote/?utm_...`
+  **正是无 product 形态** → **UTM 在重定向第一步就丢光**，用户在 contact 提交时归因已归零
+- 已映射分支（产品页）原本**已保留**参数（用 `params.toString()`），本卡描述偏严
+
+→ 已修：挂载时**先捕获归因再跳转**（写 localStorage 30 天）+ **三个分支全部保留 UTM** +
+URL 构造抽成纯函数 `buildRedirectUrl()`（可被测试锁住）。
+
+**补充 — 本卡没提但同期做的（归因命脉）**：
+
+1. **UTM 持久化**：用户深链落地后若先浏览其他页再回 `/contact/` 提交，URL 已无 UTM。
+   不加持久化则 lead_id 全丢 → **车道 ROI 系统性低估**。已实现 last-touch + 30 天窗口。
+2. **迁移未跑不破度量层**：010 是 K3 手动跑的一次性迁移（同 008 模式）。若代码先上线而
+   SQL 未跑，带新列的 insert 会被拒（PGRST204）→ **008 度量层整层写入失败**（8/20"上线即死"
+   事故重演）。已实现降级重试 + 事件层自动降级。
+3. **`quotes.design_notes` 留底 UTM**（本卡 L49 要求）：已在 `api/quote` + `QuoteForm` 两处落地。
+
+**验收口径更新**：本卡 L54 写"提交后 `quote_requests.source = 'reddit'`" → 修正为
+**`quote_requests.lead_source = 'reddit'` 且 `lead_id = 'LD-0042'`**（`source` 仍为 `quote-form`）。
+完整验收步骤见 `docs/k3-010-verify-script-2026-09-17.md` §三点五。
+
+**测试**: `npx tsx scripts/verify-lead-attribution.ts` = **69 pass / 0 fail**
+
 **验收**：`curl 'https://zprintpro.com/zh-hk/quote/?utm_source=reddit&utm_medium=outreach&utm_campaign=lane-o-stickers&utm_content=LD-0042'` → 页面 200；表单提交后 Supabase quote_requests.source = 'reddit'。
 
 ---
@@ -90,7 +131,7 @@
 | # | 任务 | 文件 | 状态 |
 |---|------|------|------|
 | P0-1 | unsubscribe 部署 | 3 文件重建 + CF env | ✅ 本批执行 |
-| P0-3 | UTM 归因 | QuoteForm + api/quote + QuoteRedirect | 本批执行 |
+| P0-3 | UTM 归因 | QuoteForm + api/quote + QuoteRedirect + quote-tracking + tracking + attribution(新) + migration 010 | ✅ **代码完成**（commit ab5a92a5 + 60f6242f）；⏳ **待 K3 跑 010 SQL** 后车道归因生效 |
 | P0-4a | Candle/Soap guide | buying-guides.ts 三语完整版 + sitemap 收录（2ce4db49+d969459c 已推 9/17 19:12） | ✅ 已上线 |
 | P0-4b | Self-Publishing blog | 同上 | 排期 |
 | P0-4c | Etsy 小批量包装 blog | 同上 | 排期 |
