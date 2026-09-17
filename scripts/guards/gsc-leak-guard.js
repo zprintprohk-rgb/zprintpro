@@ -29,6 +29,7 @@ const CUSTOMER_VISIBLE_FILES = [
   /src[\/\\]data[\/\\]buying-guides\.ts$/,
   /src[\/\\]data[\/\\]pillar-content\.ts$/,
   /src[\/\\]data[\/\\]products\.ts$/,
+  /src[\/\\]data[\/\\]category-seo-content\.ts$/,   // 分类页 SEO 内容 (含 buyingGuide.paragraphs 等客户可见段落)
 ];
 
 // GSC 后台运营黑话模式 (客户可见即泄漏)
@@ -171,6 +172,20 @@ function scanTs(file) {
       const lineText = lines[lineNo - 1] || '';
       if (lineText.trim().startsWith('//')) continue;
       hits.push(...checkValue(lm[2], rel, `${field}.${lm[1]}`, `${path.basename(file)}:L${lineNo}`));
+    }
+  }
+
+  // 3. 通用段落数组: 形如 paragraphs: [ '...', '...' ] / points: [...] — 逐字符串字面量扫描
+  const arrayStrRe = /:\s*\[\s*\n([\s\S]{0,20000}?)\n\s*\]/g;
+  while ((m = arrayStrRe.exec(content)) !== null) {
+    const block = m[1];
+    const strRe = /^\s*['"]([^'"]{20,})['"],?\s*$/gm;
+    let sm;
+    while ((sm = strRe.exec(block)) !== null) {
+      const lineNo = content.slice(0, m.index + sm.index).split('\n').length;
+      const lineText = lines[lineNo - 1] || '';
+      if (lineText.trim().startsWith('//')) continue;
+      hits.push(...checkValue(sm[1], rel, 'content', `${path.basename(file)}:L${lineNo}`));
     }
   }
   return hits;
