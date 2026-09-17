@@ -100,4 +100,30 @@
 
 ---
 
+## 四、遗留项 2 提权脚本交付（2026-09-18 04:47 补记）
+
+**动作**: 新增 `.hermes/cron-run/delete-legacy-watchdog.cmd`（本会话无管理员权限，`schtasks /delete` 与 `Unregister-ScheduledTask` 均被 Access denied）。
+
+**脚本行为**: 查询 → 不存在则 SKIP → 存在则 `schtasks /delete /tn "ZprintPro-CronWatchdog-2125" /f` → 打印结果 → 复核剩余 ZP-*/ZprintPro 实体 → `pause`。
+
+**K3 待执行**: 右键「以管理员身份运行」`.hermes/cron-run/delete-legacy-watchdog.cmd`（1 次，约 5 秒）。
+
+**复核结果（2026-09-18 04:47 schtasks 实测）**:
+
+| 实体 | 下次运行 | 状态 | 判定 |
+|---|---|---|---|
+| ZP-blog-deepfix | 2026/9/19 05:37 | Ready | ✅ 保留 |
+| ZP-cron-watchdog | 2026/9/18 06:43 | Ready | ✅ 保留 |
+| ZP-daily-content | 2026/9/18 21:17 | Ready | ✅ 保留（今晚首验） |
+| ZP-gsc-feedback | 2026/9/18 22:43 | Ready | ✅ 保留 |
+| ZP-monthly-matrix | 2026/10/1 06:13 | Ready | ✅ 保留 |
+| ZP-weekly-meta | 2026/9/18 23:07 | Ready | ✅ 保留 |
+| **ZprintPro-CronWatchdog-2125** | 2026/9/18 21:25 | Ready | 🔴 **待 K3 提权删除** |
+
+**数据来源**: `schtasks /query /fo TABLE /nh` 2026-09-18 04:47 实测输出；autoclaw jobs.json 25 条（仅 1 条 enabled）见 §二。
+
+**说明**: 本次补记仅追加记录，未改动任何调度实体；提权脚本以 commit `3a92dc63` 落盘。
+
+---
+
 **文件结束。**
