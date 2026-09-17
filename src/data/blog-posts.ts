@@ -1819,6 +1819,33 @@ const lpTextbookPrintingGuide: BlogPostMeta = {
     ],
   },
 };
+const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
+  slug: 'school-exercise-book-printing-guide',
+  categoryKey: 'education',
+  source: 'daily',
+  date: '2026-09-17',
+  title: {
+    'zh-hk': '練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港',
+    en: 'School Exercise Book Printing Guide 2026: 4 Paper Stocks 3 Bindings 100 MOQ from HK$3.5 | ZprintPro',
+    ja: '練習帳印刷ガイド 2026: 4 種用紙 3 製本 100 部から | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季 GSC school exercise book pos 21.7-23.8 攻堅, 智印港 全球客戶, ISO 认证体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
+    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes, GSC pos 21.7-23.8, ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
+    ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. GSC pos 21.7. グローバル顧客. ISO + FSC + FDA + EU REACH.',
+  },
+  targetKeywords: {
+    primary: 'school exercise book',
+    secondary: [
+      'school exercise book printing', '練習簿印刷', '練習簿', '作業簿', '學校練習簿', '道林紙 80gsm', '米黃道林紙', '再生紙 FSC',
+      'practice book printing', 'educational notebook printing', 'school notebook printing',
+      'school exercise books', 'exercise book printing', 'school stationery printing', 'notebook printing',
+      '練習帳', '練習ノート', '学校ノート', '宿題帳', '上学用品', '道林紙', '学校印刷', '教材印刷',
+    ],
+  },
+};
+
+
 
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
@@ -1966,6 +1993,7 @@ export const blogPosts: BlogPostMeta[] = [
   // 12 段骨架 + 6 FAQ + 20 内链 + 2 CTA + 3 表格, 100 冊から HK$5-50/冊, 中綴じ/無線綴じ/上製本 3 製本方式, 年度契約 B2B, ISBN 対応
   // 内链: booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar (G3 簇内链矩阵)
   lpTextbookPrintingGuide,
+  lpSchoolExerciseBookPrintingGuide,
   ];
 
 // =============================================================================
