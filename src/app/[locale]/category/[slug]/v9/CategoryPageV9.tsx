@@ -646,9 +646,10 @@ export function CategoryPageV9({
                           </li>
                         ))}
                       </ul>
-                      {card.covered && card.blogSlug && (
-                        <a href={`${localePrefix}/blog/${card.blogSlug}/`} className="text-[15px] font-bold text-[#2873F5] hover:underline">{t9.viewFull}</a>
-                      )}
+                      {/* 2026-09-17 修复: href 已由 getIndustryCards 三层降级解析完毕
+                          (blog > SKU > 品类页), 恒有值 —— 旧实现此处拼 blog/ 且受 covered 限制,
+                          tier B 无链接 + 位置索引错配 (茶飲食品 → 樓盤書) */}
+                      <a href={card.href} className="text-[15px] font-bold text-[#2873F5] hover:underline">{t9.viewFull}</a>
                     </div>
                   </div>
                 ))}

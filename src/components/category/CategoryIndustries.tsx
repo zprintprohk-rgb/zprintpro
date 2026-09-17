@@ -18,6 +18,7 @@
  */
 
 import { CATEGORY_INDUSTRIES, Locale } from '@/lib/seo';
+import { resolveScenarioHref } from '@/data/industry-scenario-links';
 
 // ============================================================================
 // Industry Scenario Descriptions — 每个行业的典型场景 (per locale)
@@ -603,17 +604,11 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
   ],
 };
 
-// Blog slugs that are covered (used to decide "link to blog" or "coming soon")
-// Same as page.tsx categoryCoveredBlogSlugsMap
-const coveredBlogMap: Record<string, string[]> = {
-  flyers: ['restaurant-opening-flyer-printing-guide'],
-  packaging: ['cosmetics-packaging-box-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'tea-beverage-gift-box-printing-guide'],
-  stickers: ['pet-food-sticker-printing-guide', 'pharmaceutical-label-printing-guide'],
-  'paper-bags': ['apparel-shopping-bag-printing-guide', 'jewellery-shopping-bag-printing-guide', 'wedding-favor-bag-printing-guide'],
-  posters: ['retail-shop-poster-printing-guide'],
-  menus: ['restaurant-menu-printing-guide'],
-  'red-packets': ['wedding-red-packet-printing-guide'],
-};
+// 2026-09-17 删除 coveredBlogMap:
+//   它曾是"品类→blog slug 列表", 与场景数据靠**位置索引**对齐 (coveredSlugs[posInTier]),
+//   这正是「茶飲食品 → 樓盤書」错配的根源, 且 tier B 场景完全无链接。
+//   现由 src/data/industry-scenario-links.ts 的 **语义映射** (SCENARIO_LINKS) 取代:
+//   按 scenario.key 精确取目标, 三层降级 (blog > SKU > 品类页), 恒有链接。
 
 // 3-locale labels
 const labels: Record<string, Record<string, string>> = {
@@ -653,7 +648,6 @@ const labels: Record<string, Record<string, string>> = {
 export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
   const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
   const scenarios = categoryIndustryScenarios[categorySlug] || [];
-  const coveredSlugs = coveredBlogMap[categorySlug] || [];
 
   if (industries.length === 0 && scenarios.length === 0) {
     return null;
@@ -669,8 +663,8 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
     industryName: string;
     tier: 'A' | 'B';
     scenarios: string[];
-    blogSlug?: string;
-    covered: boolean;
+    /** 该场景的最终链接 (三层降级: blog > SKU > 品类页, 恒有值) */
+    href: string;
   }[] = [];
 
   for (let i = 0; i < maxCards; i++) {
@@ -682,9 +676,12 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
     const posInTier = tier === 'A' ? i : i - 5;
     const scenario = tierScenarios[posInTier];
 
-    // Determine blog slug match by position into coveredSlugs
-    const covered = coveredSlugs.length > 0 && tier === 'A';
-    const blogSlug = covered ? coveredSlugs[Math.min(posInTier, coveredSlugs.length - 1)] : undefined;
+    // 2026-09-17 修复 (K3 报告: 茶飲食品 → 樓盤書 错配):
+    // 旧实现用 `coveredSlugs[posInTier]` 位置索引取 blog, 而 coveredSlugs 与场景是
+    // 两个独立排序的数组 → 一旦顺序不一致就错配 (茶飲取到樓盤書), 且 tier B 完全无链接。
+    // 现改为 **按 scenario.key 语义映射** + 三层降级 (blog > SKU > 品类页), 恒有链接。
+    // 见 src/data/industry-scenario-links.ts
+    const href = resolveScenarioHref(categorySlug, scenario?.key || '', localePrefix);
 
     // 2026-09-06 UX 修复: 场景数据未铺的卡片不渲染 (原显示「場景數據整理中…」占位)
     const scenarioLines = scenario?.scenarios[locale] || [];
@@ -694,8 +691,7 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
       industryName,
       tier,
       scenarios: scenarioLines,
-      blogSlug,
-      covered: covered && !!blogSlug,
+      href,
     });
   }
 
@@ -720,10 +716,7 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
               industryName={card.industryName}
               tier={card.tier}
               scenarios={card.scenarios}
-              blogSlug={card.blogSlug}
-              covered={card.covered}
-              locale={locale}
-              localePrefix={localePrefix}
+              href={card.href}
               labels={t}
             />
           ))}
@@ -754,19 +747,14 @@ function IndustryCard({
   industryName,
   tier,
   scenarios,
-  blogSlug,
-  covered,
-  locale,
-  localePrefix,
+  href,
   labels,
 }: {
   industryName: string;
   tier: 'A' | 'B';
   scenarios: string[];
-  blogSlug?: string;
-  covered: boolean;
-  locale: Locale;
-  localePrefix: string;
+  /** 该场景的最终链接 (三层降级后恒有值: blog / SKU / 品类页) */
+  href: string;
   labels: Record<string, string>;
 }) {
   // Visual tokens per tier
@@ -786,31 +774,18 @@ function IndustryCard({
         divider: 'border-amber-100',
       };
 
-  const comingSoonStyle = {
-    card: 'border-gray-200 bg-white hover:border-gray-300',
-    badge: 'bg-gray-100 text-gray-500',
-    dot: 'bg-gray-400',
-    accent: 'text-gray-500',
-    divider: 'border-gray-100',
-  };
-
-  const style = covered ? tierStyles : comingSoonStyle;
-  const href = covered && blogSlug
-    ? `${localePrefix}/blog/${blogSlug}/`
-    : undefined;
-
-  const CardWrapper = href ? 'a' : 'div';
+  const style = tierStyles;
 
   return (
-    <CardWrapper
-      href={href as string | undefined}
+    <a
+      href={href}
       className={`group block rounded-xl border p-5 transition-all duration-200 hover:shadow-md ${style.card}`}
     >
       {/* Header Row: Badge + Industry Name */}
       <div className="flex items-start justify-between mb-3">
         <span className={`inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium ${style.badge}`}>
           <span className={`w-1.5 h-1.5 rounded-full mr-1.5 ${style.dot}`} />
-          {covered ? (tier === 'A' ? labels.tierA : labels.tierB) : labels.comingSoon}
+          {tier === 'A' ? labels.tierA : labels.tierB}
         </span>
       </div>
 
@@ -820,7 +795,7 @@ function IndustryCard({
       </h4>
 
       {/* Scenario Hooks — the "why this category fits this industry" */}
-      {scenarios.length > 0 ? (
+      {scenarios.length > 0 && (
         <ul className="space-y-1.5 mb-4">
           {scenarios.map((s, si) => (
             <li key={si} className="flex items-start gap-2 text-xs md:text-sm text-gray-600 leading-relaxed">
@@ -829,32 +804,20 @@ function IndustryCard({
             </li>
           ))}
         </ul>
-      ) : (
-        <p className="text-xs text-gray-400 italic mb-4">
-          {locale === 'zh-hk' ? '場景數據整理中…' : locale === 'en' ? 'Scenario data loading…' : 'データ準備中…'}
-        </p>
       )}
 
-      {/* Divider */}
+      {/* Divider + CTA
+          2026-09-17: 所有卡片恒有链接 (三层降级保证), 故不再有 coming-soon 分支 —
+          旧实现 tier B 显示「查看完整方案 →」却是 <div>, 客户点了没反应 */}
       <div className={`border-t ${style.divider} pt-3`}>
-        {covered ? (
-          <span className={`inline-flex items-center gap-1 text-xs font-medium ${style.accent} group-hover:gap-1.5 transition-all`}>
-            {labels.readGuide}
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="group-hover:translate-x-0.5 transition-transform">
-              <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </span>
-        ) : (
-          <span className="inline-flex items-center gap-1 text-xs text-gray-400">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-              <path d="M6 3.5V6M6 8.5H6.005" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round"/>
-              <circle cx="6" cy="6" r="5" stroke="currentColor" strokeWidth="0.8"/>
-            </svg>
-            {labels.comingSoon}
-          </span>
-        )}
+        <span className={`inline-flex items-center gap-1 text-xs font-medium ${style.accent} group-hover:gap-1.5 transition-all`}>
+          {labels.readGuide}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="group-hover:translate-x-0.5 transition-transform">
+            <path d="M4.5 2.5L8 6L4.5 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </span>
       </div>
-    </CardWrapper>
+    </a>
   );
 }
 
@@ -865,14 +828,14 @@ function IndustryCard({
 export function getIndustryCards(categorySlug: string, locale: Locale) {
   const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
   const scenarios = categoryIndustryScenarios[categorySlug] || [];
-  const coveredSlugs = coveredBlogMap[categorySlug] || [];
 
+  const localePrefix = `/${locale}`;
   const cards: {
     industryName: string;
     tier: 'A' | 'B';
     scenarios: string[];
-    blogSlug?: string;
-    covered: boolean;
+    /** 三层降级后的最终链接 (blog > SKU > 品类页), 恒有值 — 与主组件同口径 */
+    href: string;
   }[] = [];
 
   const maxCards = Math.min(industries.length, 8);
@@ -882,11 +845,11 @@ export function getIndustryCards(categorySlug: string, locale: Locale) {
     const tierScenarios = scenarios.filter((s) => s.tier === tier);
     const posInTier = tier === 'A' ? i : i - 5;
     const scenario = tierScenarios[posInTier];
-    const covered = coveredSlugs.length > 0 && tier === 'A';
-    const blogSlug = covered ? coveredSlugs[Math.min(posInTier, coveredSlugs.length - 1)] : undefined;
+    // 与主组件同修 (2026-09-17): 语义映射取代位置索引, 见 industry-scenario-links.ts
+    const href = resolveScenarioHref(categorySlug, scenario?.key || '', localePrefix);
     const scenarioLines = scenario?.scenarios[locale] || [];
     if (scenarioLines.length === 0) continue;
-    cards.push({ industryName, tier, scenarios: scenarioLines, blogSlug, covered: covered && !!blogSlug });
+    cards.push({ industryName, tier, scenarios: scenarioLines, href });
   }
   return cards;
 }
