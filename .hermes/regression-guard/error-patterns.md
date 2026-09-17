@@ -488,3 +488,49 @@ const blogSlug = coveredSlugs[Math.min(posInTier, coveredSlugs.length - 1)];
 
 **边界判断 (记录)**: `campus-education-printing-pillar-guide` 这个 **URL slug 保留不改** ——
 slug 是 SEO 技术标识, 改动会造成 404 并需 301 链, 成本 > 收益; 客户可见的**正文术语**已全部清除。
+
+
+---
+
+### 规则 CRON_HARDCODED_WORKTREE_PATH — 定时任务脚本硬编码已移除的 worktree 路径 (2026-09-17 K3 报告)
+
+**K3 报告原话**: 「在这里我们的定时任务还是没有建设好，在M3里面去执行了，思考理解问题，分析研究给到解决方案。」
+
+**事故形态**: cron/lane 脚本把**执行目录硬编码**为 `F:\zprintpro-main-tmp`（M3 时代的主工作目录）。
+该 worktree 按 K3 2026-09-17 目录铁律被移除后，任务**照常被触发、照常 exit=0**，但实际什么都没做：
+
+| 时间 | 现象 |
+|------|------|
+| 9/13 | K3 v9.4 cron-rearm 改用 schtasks + deepseek harness，脚本写死 main-tmp（当时有效） |
+| 9/14–9/17 早 | 正常执行（main-tmp 存在） |
+| **9/17 白天** | K3 目录铁律移除 main-tmp worktree |
+| **9/17 21:17** | `ZP-daily-content` lane 报 **BLOCKED**（declared repo root is empty；`.hermes/cron-prompts/*.md` not found），但 **dsh exit=0** |
+| **9/17 22:43** | `ZP-gsc-feedback` 同样 BLOCKED |
+| — | host-side git 也失败：`can't open file 'F:\zprintpro-main-tmp\scripts\lane-git-commit.py'` |
+
+**★ 最危险的特征**: `schtasks` 的 `Last Result` 显示 **0（成功）** ——
+**任务在看板上全绿，实际零产出**。这类"假成功"比直接报错危险得多，因为它不会触发任何告警，
+只能靠 watchdog 的"报告新鲜度"间接发现，且容差 26h 意味着**最长可静默一整天**。
+
+**触发条件**（任一命中即需修）:
+- cron / lane / wrapper 脚本中出现**已从 `git worktree list` 消失的路径**
+- 脚本中出现**硬编码的项目根目录**（应自动探测）
+- `cd /d "<path>"` 的 path 为空或不存在
+
+**修复模式 (可复用)**:
+1. **禁止硬编码项目根** → 用自动探测：`os.path.dirname(os.path.dirname(os.path.abspath(__file__)))`（Python）
+   或 `$Repo = 'F:\zprintpro-nextjs'` 单点定义（PowerShell 生成器，其余路径全部 join 它）
+2. **单一事实源**：生成器（`register-cron-tasks.ps1`）里的路径变量是唯一来源，生成的 wrapper 不得另有假设
+3. **生成物入库**：`.hermes/cron-run/` 11 个脚本此前**从未被 git 跟踪** → 迁移/灾难恢复不可复现；
+   本次入库，配合生成器保证一致性
+4. **改 PS1 生成器必须保持 ASCII-only**：文件头已注明 "Windows PowerShell 5.1 reads non-BOM UTF-8
+   as ANSI and mangles CJK -> parser errors"；本次我在 `$MainRepo = $Repo` 附近加中文注释，
+   直接导致变量解析失败、生成 `cd /d ""` 空路径 —— **回归即被自己的这次教训印证**
+
+**机审建议**: 在 cron 巡检里加"脚本路径存在性"断言（脚本内所有绝对路径必须 Test-Path 通过）。
+
+**遗留 (待 K3)**:
+- `F:\zprintpro-main-tmp` 空壳目录建议删除（内容已备份 2329 文件至 `.hermes/_archive-main-tmp-20260917/`）
+- **exit=0 假成功**：lane BLOCKED 时 dsh 仍返 0 → 依赖 watchdog 次日告警兜底，建议 wrapper 增加
+  "本次是否产出新报告"的判定并把无产出转为非 0
+- `autoclaw jobs.json` 内 40 条任务（12 enabled）为 M3 时代残留僵尸（**从未建实体**）→ 建议清理
