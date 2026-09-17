@@ -73,7 +73,7 @@ for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePi
 const clusterBlogSlugs = clusterSlugs.filter(s => !pillarSlugs.has(s));
 const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs, ...buyingGuideSlugs])];
 
-const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
+const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','institutional-printing/','trade-program/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
 function getPriority(u) {
   if(u==='')return'1.0';
@@ -81,6 +81,7 @@ function getPriority(u) {
   if(u.startsWith('product/'))return'0.9';
   if(u.startsWith('guide/') || u.startsWith('blog/'))return'0.7';
   if(['about/','contact/','faq/','service-areas/','case-studies/'].includes(u))return'0.7';
+  if(['institutional-printing/','trade-program/'].includes(u))return'0.7';
   if(['cart/','checkout/','order-confirmation/','payment/success/'].includes(u))return'0.3';
   if(['privacy/','terms/'].includes(u))return'0.3';
   return'0.5';
