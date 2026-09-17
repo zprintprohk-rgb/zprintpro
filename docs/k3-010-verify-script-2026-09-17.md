@@ -83,6 +83,49 @@ https://zprintpro.com/{locale}/quote/?utm_source={reddit|linkedin|quora|email|wa
 https://zprintpro.com/zh-hk/quote/?utm_source=reddit&utm_medium=outreach&utm_campaign=lane-o-sticker&utm_content=L-00042
 ```
 
+### 深链实际链路（已修，重要）
+
+`/[locale]/quote/` 页**没有表单**，它是重定向页；真正的报价表单 `QuoteForm` 渲染在 **`/contact/`**：
+
+```
+深链 /zh-hk/quote/?utm_...  →  (QuoteRedirect: 先捕获归因 → 再跳转，保留 UTM)
+                            →  /zh-hk/contact/?utm_...
+                            →  QuoteForm 提交 → 008 quote_requests (lead_source/lead_id 落库)
+```
+
+**修复前**：无 `product` 的深链会被跳到 `/contact/` 且**不带任何参数** → UTM 当场丢光
+→ lead_id 归零 → 车道 ROI 不可判（正是 v10 §一-1 说的"归因断层"）。
+**修复后**：`QuoteRedirect` 先捕获（写 localStorage 30 天）+ 三个跳转分支全部保留 UTM，双保险。
+
+---
+
+## 三点五、K3 验收方法（跑完 SQL 后）
+
+**方法 1（最快，看落库）**：
+1. 手机/浏览器打开深链（把 `L-00042` 换成你自己的测试号）：
+   `https://zprintpro.com/zh-hk/quote/?utm_source=reddit&utm_medium=outreach&utm_campaign=lane-o-test&utm_content=L-TEST01`
+2. 确认页面落到 `/zh-hk/contact/`，且**地址栏仍带 UTM 参数**
+3. 填表提交（姓名/电邮/电话/留言必填）
+4. Supabase → SQL Editor 跑：
+   ```sql
+   SELECT lead_source, lead_id, utm_campaign, source, created_at
+   FROM quote_requests ORDER BY created_at DESC LIMIT 3;
+   -- 期望最新一行: lead_source='reddit', lead_id='L-TEST01'
+   ```
+5. 清测试数据（可选）：
+   ```sql
+   DELETE FROM quote_requests WHERE lead_id = 'L-TEST01';
+   ```
+
+**方法 2（看车道总览）**：
+```sql
+SELECT * FROM v_lane_o_attribution;
+SELECT * FROM v_lead_id_conversion WHERE lead_source <> 'organic';
+```
+
+**方法 3（跳页归因不丢）**：打开深链 → 先点进任意产品页 → 再回 `/contact/` 提交
+→ 仍应落 `lead_source='reddit', lead_id='L-TEST01'`（localStorage 兜底生效）。
+
 ---
 
 ## 四、跑完后可用视图（周复盘读这些）

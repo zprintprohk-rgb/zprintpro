@@ -213,3 +213,30 @@ export function isMissingLeadColumnError(message: string | undefined | null): bo
     /column .*(lead_source|utm_content|lead_id).* does not exist/i.test(message)
   );
 }
+
+/**
+ * 构造重定向目标 URL, **保留 UTM 归因参数** (v10 P0-3)
+ *
+ * 存在理由: `/quote/` 是 outbound 深链的落点, 但它只做重定向 (无 product → /contact/,
+ * 有 product → 产品页)。旧实现无 product 分支直接跳 `/contact/` 不带参数 →
+ * **深链 UTM 在重定向瞬间永久丢失** → 用户在 contact 提交询盘时 lead_id 归零,
+ * Lane O 车道 ROI 系统性低估。故 URL 构造必须收敛到这个可测试的纯函数。
+ *
+ * @param locale   语言 (zh-hk / en / ja)
+ * @param path     目标路径 (如 '/contact/' 或 '/product/stickers/')
+ * @param search   当前 query string (含或不含 '?' 均可)
+ * @param dropKeys 需要剔除的参数名 (如 'product' / 'locale')
+ * @returns 形如 `/zh-hk/contact/?utm_source=reddit&...`
+ */
+export function buildRedirectUrl(
+  locale: string,
+  path: string,
+  search: string,
+  dropKeys: string[] = []
+): string {
+  const params = new URLSearchParams(search);
+  for (const k of dropKeys) params.delete(k);
+  const qs = params.toString();
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `/${locale}${normalizedPath}${qs ? '?' + qs : ''}`;
+}

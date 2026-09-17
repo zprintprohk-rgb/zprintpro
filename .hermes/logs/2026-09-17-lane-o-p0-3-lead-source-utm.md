@@ -24,17 +24,19 @@
 
 ---
 
-## 二、交付物（6 件）
+## 二、交付物（9 件）
 
 | # | 文件 | 性质 | 说明 |
 |---|------|------|------|
 | 1 | `supabase/migrations/010_add_lead_source_attribution.sql` | 新增 | 008+009 加 `lead_source`/`utm_content`/`lead_id` + 值域约束 + 索引 + 历史回填 + 3 视图 |
-| 2 | `src/lib/attribution.ts` | 新增 | **零依赖**归因模块（UTM 捕获 / localStorage 持久化 / 车道映射 / 降级判定），被两个层共用 |
+| 2 | `src/lib/attribution.ts` | 新增 | **零依赖**归因模块（UTM 捕获 / localStorage 持久化 / 车道映射 / 降级判定 / 重定向 URL 构造），被各层共用 |
 | 3 | `src/lib/quote-tracking.ts` | 改 | 询盘层（008）：透传 UTM 四件套 + lead_source；010 未应用时**降级重试** |
 | 4 | `src/lib/tracking.ts` | 改 | 事件层（009）：同步车道字段；读降级标记自动降级（支撑 KPI「深链点击 UTM」） |
-| 5 | `src/app/api/quote/route.ts` | 改 | 服务端路径：schema 加 UTM 可选字段 + 008 insert 透传 + 降级重试 |
-| 6 | `docs/k3-010-verify-script-2026-09-17.md` | 新增 | **K3 手动执行脚本卡**（9 min 闭环：跑 SQL → 自查 → 回话） |
-| — | `scripts/verify-lead-attribution.ts` | 新增 | 归因回归测试（54 断言，可重跑） |
+| 5 | `src/app/api/quote/route.ts` | 改 | schema 加 UTM 可选字段 + 008 insert 透传 + 降级重试 + `quotes.design_notes` 留底 UTM |
+| 6 | **`src/components/quote/QuoteRedirect.tsx`** | 改 | ★ **深链落点**：先捕获归因再跳转 + 三个跳转分支全部保留 UTM（详见 §3.1） |
+| 7 | **`src/components/quote/QuoteForm.tsx`** | 改 | 主表单：`quotes.design_notes` 留底 UTM（K3 在业务表直接看来源车道） |
+| 8 | `docs/k3-010-verify-script-2026-09-17.md` | 新增 | **K3 手动执行脚本卡**（9 min 闭环：跑 SQL → 自查 → 回话） |
+| 9 | `scripts/verify-lead-attribution.ts` | 新增 | 归因回归测试（**69 断言**，可重跑） |
 
 ### 值域（与 010 CHECK 约束严格一致，6 值）
 
@@ -51,17 +53,32 @@
 
 ## 三、三个关键工程决策（为什么这样做）
 
-### 3.1 ★ UTM 必须持久化，不能只读 URL
+### 3.1 ★ UTM 必须持久化，且深链落点不许丢参数
 
-**问题**：outbound 深链落地后，用户常先浏览别的页再回 `/quote/` 提交。那一刻
+**问题 A（跳页断链）**：outbound 深链落地后，用户常先浏览别的页再回 `/quote/` 提交。那一刻
 `window.location.href` 已无 UTM → 归因断裂 → **lead_id 全丢 → Lane O ROI 系统性低估**。
 
-**做法**：`getAttribution()` = last-touch deeplink + **30 天窗口**（对齐 GA4 默认归因窗口）：
+**做法 A**：`getAttribution()` = last-touch deeplink + **30 天窗口**（对齐 GA4 默认归因窗口）：
 1. URL 带 UTM → 视为新触达，写 `localStorage`
 2. URL 无 UTM → 读 `localStorage` 兜底
 3. 超 30 天 → 作废（清记录，退 organic）
 
-回归测试用 4 条断言锁死此行为（含"跳页后归因不丢"与"31 天作废 / 29 天有效"边界）。
+**问题 B（落点丢参数，本轮新发现）**：`/[locale]/quote/` 页**没有表单**，它是个重定向页
+（`QuoteRedirect`：无 `product` → `/contact/`，有 `product` → 产品页）。
+
+而 v10 的深链 `/zh-hk/quote/?utm_source=reddit&...` **正是无 product 形态** → 旧实现
+`window.location.href = /${locale}/contact/` **不带任何查询参数** → **UTM 在重定向瞬间永久丢失**，
+用户随后在 contact 页（QuoteForm 实际渲染处）提交询盘时归因已归零。
+
+**做法 B**：`QuoteRedirect` 改为：
+1. 挂载时**先 `getAttribution()` 捕获**（写 localStorage）再跳转
+2. 三个跳转分支**全部保留 UTM**：
+   - 无 product → `/contact/?utm_...`（旧实现丢光）
+   - 未映射 product → `/contact/?product=x&utm_...`（旧实现丢光 UTM）
+   - 已映射 product → 产品页 `?utm_...`（旧实现已保留，本次收敛到统一纯函数）
+3. URL 构造抽成纯函数 `buildRedirectUrl()` → **可被测试锁住**（测试里复制逻辑不算测）
+
+**全链路断言**（测试 §5.6）：深链 → 重定向 → 落地页读取，`lead_id` 与车道**逐项不变**。
 
 ### 3.2 ★ 迁移未跑时不许破既有度量层（P0 回归防护）
 
@@ -89,14 +106,21 @@
 
 | 验证项 | 命令 | 结果 |
 |--------|------|------|
-| 归因逻辑 | `npx tsx scripts/verify-lead-attribution.ts` | **54 pass / 0 fail**（PASS） |
+| 归因逻辑 | `npx tsx scripts/verify-lead-attribution.ts` | **69 pass / 0 fail**（PASS） |
 | 类型 | `npx tsc --noEmit` | **54**（基线 54，持平，0 新增） |
 | 门童 | `node scripts/check-regression-guard.js --dod` | **🔴51 \| 🟠1529 \| 🟡1088**（与改动前逐项持平） |
 | 编码 | pre-commit hook | 通过 |
 
+**测试覆盖的 5 组（69 断言）**：
+1. `parseUtmParams`（4 参解析 + 无 UTM + 非法 URL 不抛）
+2. `resolveLeadSource`（18 组映射 + **值域封闭性**：任意输入都落在 6 值域内）
+3. `getAttribution`（SSR 守卫 / URL 捕获 / **跳页不丢** / last-touch 覆盖 / **31 天作废·29 天有效** / 脏数据不抛）
+4. `isMissingLeadColumnError`（4 正例 + 6 反例 —— 含 `permission denied` **不许误判降级**）
+5. `buildRedirectUrl`（★ 三跳转分支保留 UTM + 无尾随 `?` + **全链路 lead_id 不变**）
+
 **测试期间发现并修掉一个测试自身的坑**：第一版 mock 的 `window.localStorage` 按值捕获
 storage 对象，换 storage 后 window 仍指旧对象 → "脏数据"用例**假通过**（1 fail 暴露）。
-改用 getter 动态绑定后 54/54 真通过。→ 教训：**mock 必须验证"确实测到了目标分支"，否则假绿**。
+改用 getter 动态绑定后 69/69 真通过。→ 教训：**mock 必须验证"确实测到了目标分支"，否则假绿**。
 
 ---
 

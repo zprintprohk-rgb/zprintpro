@@ -10,6 +10,7 @@ import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
 import { generateQuoteRef, generateQuoteSheetLink, generateWhatsAppLink, type QuoteSheetContext } from '@/lib/whatsapp';
 import { trackQuoteSubmit, trackQuoteSubmitSuccess, trackQuoteSubmitError } from '@/lib/tracking';
+import { getAttribution } from '@/lib/attribution';
 import { QuoteTrustBar } from './QuoteTrustBar';
 
 const quoteSchema = z.object({
@@ -311,6 +312,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
       const quantityNum = parseInt((data.quantity || '').replace(/[^\d]/g, ''), 10) || 0;
 
+      // Lane O 归因留底 (v10 P0-3): 业务表也留一行 UTM, K3 在 quotes 表可直接看到来源车道
+      const attr = getAttribution();
+      const utmNote = attr.utmSource
+        ? `\nUTM: ${attr.utmSource}/${attr.utmMedium || '-'}/${attr.utmCampaign || '-'}/${attr.utmContent || '-'}`
+        : '';
+
       const { error } = await supabase.from('quotes').insert({
         customer_name: data.name || data.phone,
         customer_email: data.email,
@@ -319,7 +326,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
         product_name: productName,
         quantity: quantityNum,
         size: data.size || null,
-        design_notes: `[${sheet.ref}] ${data.message}${fileNote}`,
+        design_notes: `[${sheet.ref}] ${data.message}${fileNote}${utmNote}`,
         user_agent: navigator.userAgent,
         referrer: document.referrer || null,
       });

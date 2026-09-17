@@ -20,6 +20,7 @@ import {
   isMissingLeadColumnError,
   markLeadColumnMissing,
   isLeadColumnKnownMissing,
+  buildRedirectUrl,
   type LeadSource,
 } from '../src/lib/attribution';
 
@@ -235,6 +236,61 @@ console.log('\n=== 4. isMissingLeadColumnError (010 未应用降级识别) ===')
   eq(isLeadColumnKnownMissing(), true, '打标记后: 已知缺失 (事件层将降级)');
   uninstallBrowser();
   eq(isLeadColumnKnownMissing(), false, 'SSR: 标记读取不抛, 返回 false');
+}
+
+// ============================================================
+console.log('\n=== 5. buildRedirectUrl (深链重定向不丢 UTM) ===');
+// ============================================================
+{
+  const search =
+    '?utm_source=reddit&utm_medium=outreach&utm_campaign=lane-o-sticker&utm_content=L-00042';
+
+  // 5.1 ★ 无 product → /contact/ 必须带全 UTM (旧实现此处丢光 UTM)
+  const r1 = buildRedirectUrl('zh-hk', '/contact/', search, ['product', 'locale']);
+  ok(r1.startsWith('/zh-hk/contact/?'), '无 product → 落到 /zh-hk/contact/');
+  const q1 = parseUtmParams(`https://x.com${r1.slice('/zh-hk'.length)}`);
+  eq(q1.source, 'reddit', '★ 重定向保留 utm_source');
+  eq(q1.campaign, 'lane-o-sticker', '★ 重定向保留 utm_campaign');
+  eq(q1.content, 'L-00042', '★ 重定向保留 utm_content (lead_id)');
+
+  // 5.2 已映射 product → 产品页带全 UTM + 剔除 product/locale
+  const r2 = buildRedirectUrl(
+    'en',
+    '/product/stickers/',
+    '?product=stickers&locale=en&utm_source=linkedin&utm_content=L-00077',
+    ['product', 'locale']
+  );
+  eq(r2, '/en/product/stickers/?utm_source=linkedin&utm_content=L-00077', '已映射: 产品页保留 UTM, 剔除 product/locale');
+
+  // 5.3 未映射 product → contact 页保留 product (表单要用) + UTM
+  const r3 = buildRedirectUrl(
+    'ja',
+    '/contact/',
+    '?product=unknown-x&locale=ja&utm_source=quora&utm_content=L-00099',
+    ['locale']
+  );
+  ok(r3.includes('product=unknown-x'), '未映射: 保留 product (contact 表单需要)');
+  ok(r3.includes('utm_source=quora') && r3.includes('utm_content=L-00099'), '未映射: 保留 UTM');
+  ok(!r3.includes('locale=ja'), '未映射: 剔除 locale (避免重复)');
+
+  // 5.4 无任何参数 → 干净 URL, 不产生尾随 '?'
+  eq(buildRedirectUrl('zh-hk', '/contact/', '', []), '/zh-hk/contact/', '无参数 → 不带尾随 ?');
+  eq(buildRedirectUrl('en', 'contact/', '?', []), '/en/contact/', 'search 仅 "?" → 不带尾随 ?');
+  eq(buildRedirectUrl('ja', '/contact/', '?locale=ja', ['locale']), '/ja/contact/', '剔除后无剩余 → 不带尾随 ?');
+
+  // 5.5 路径缺前导斜杠 → 自动补 (防拼出 /zh-hkcontact/)
+  eq(buildRedirectUrl('zh-hk', 'contact/', '', []), '/zh-hk/contact/', '路径自动补前导斜杠');
+
+  // 5.6 ★ 全链路: 深链 → 重定向 → 落地页仍能取到同一 lead_id
+  storage = new MemStorage();
+  installBrowser(`https://zprintpro.com/zh-hk/quote/${search}`);
+  const captured = getAttribution();                       // QuoteRedirect 挂载时捕获
+  const target = buildRedirectUrl('zh-hk', '/contact/', search, ['product', 'locale']);
+  installBrowser(`https://zprintpro.com${target}`);        // 浏览器跟随重定向
+  const afterRedirect = getAttribution();                  // 用户在 contact 页提交时读取
+  eq(afterRedirect.leadId, captured.leadId, '★ 全链路: 重定向后 lead_id 不变');
+  eq(afterRedirect.leadSource, 'reddit', '★ 全链路: 重定向后车道仍为 reddit');
+  eq(afterRedirect.leadId, 'L-00042', '★ 全链路: lead_id 值正确');
 }
 
 // ---------- 汇总 ----------

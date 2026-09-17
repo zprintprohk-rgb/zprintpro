@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { getAttribution, buildRedirectUrl } from '@/lib/attribution';
 
 interface QuoteRedirectProps {
   locale: string;
@@ -152,27 +153,32 @@ export function QuoteRedirect({ locale }: QuoteRedirectProps) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
+    // Lane O 归因 (v10 P0-3): 本页常被 outbound 深链直接落地
+    // (/zh-hk/quote/?utm_source=reddit&...&utm_content=LD-0042)。
+    // 必须"先捕获再跳转" —— 否则本次重定向一发生, URL 里的 UTM 就永久丢了,
+    // 用户在 /contact/ 提交询盘时归因断裂 (lead_id 全丢 → 车道 ROI 不可判)。
+    // 捕获即写入 localStorage (30 天窗口); 下方 buildRedirectUrl 再把 UTM 带过去 (双保险)。
+    getAttribution();
+
     const params = new URLSearchParams(window.location.search);
     const product = params.get('product');
+    const search = window.location.search;
 
     if (!product) {
-      // 无 product 参数 → 基础报价表单页（不应被直接访问，重定向到 contact）
-      window.location.href = `/${locale}/contact/`;
+      // 无 product 参数 → 基础报价表单页 (基础页不应被索引, 落到 contact 表单)
+      // 保留其余查询参数 (UTM 归因参数) —— 见 buildRedirectUrl 注释
+      window.location.href = buildRedirectUrl(locale, '/contact/', search, ['product', 'locale']);
       return;
     }
 
-    // 有 product 参数 → 查找产品映射，硬重定向到产品详情页
+    // 有 product 参数 → 查找产品映射, 硬重定向到产品详情页
     const productPath = QUOTE_PRODUCT_MAP[product];
     if (productPath) {
-      // 保留其他查询参数（如果有的话，去掉 product 和 locale 参数）
-      params.delete('product');
-      params.delete('locale');
-      const remainingParams = params.toString();
-      const targetUrl = `/${locale}${productPath}${remainingParams ? '?' + remainingParams : ''}`;
-      window.location.href = targetUrl;
+      window.location.href = buildRedirectUrl(locale, productPath, search, ['product', 'locale']);
     } else {
       // 未映射的产品 → 重定向到 contact 页面
-      window.location.href = `/${locale}/contact/?product=${encodeURIComponent(product)}`;
+      // 保留 product (contact 表单读取) + UTM 归因参数, 只剔除 locale
+      window.location.href = buildRedirectUrl(locale, '/contact/', search, ['locale']);
     }
   }, [locale]);
 
