@@ -125,4 +125,27 @@
 
 ---
 
+## 五、上线验收（push 后线上探针）
+
+**push**: `ed9c72fc..3b8ec078` (2026-09-18 05:02:55)
+**CF Pages build**: `success`（`node scripts/verify-deploy.mjs 3b8ec07` → PASS，run 105382571872）
+
+**线上 curl 探针**（`node .hermes/probe-live-calendar-band.cjs`，三篇 × 3 locale = 9 URL）：
+
+| locale | slug | 新值 | 旧值残留 | 结果 |
+|---|---|---|---|---|
+| zh-hk | `calendar-printing-guide` | HK$8-25/本 ✓ | 无 | PASS |
+| zh-hk | `2027-calendar-printing-complete-guide` | HK$8-25/本 ✓ | 无 | PASS |
+| zh-hk | `2027-monthly-calendar-printing-timetable` | HK$8-25 ✓ | 无 | PASS |
+| en | `calendar-printing-guide` | US$1.00/pc ✓ | 无 | PASS |
+| en | `2027-calendar-printing-complete-guide` | US$1.00-3.20 ✓ | 无 | PASS |
+| en | `2027-monthly-calendar-printing-timetable` | US$1.00-3.20/pc ✓ | 无 | PASS |
+| ja | `calendar-printing-guide` | 1部160円から ✓ | 无 | PASS |
+| ja | `2027-calendar-printing-complete-guide` | 1冊160〜500円 ✓ | 无 | PASS |
+| ja | `2027-monthly-calendar-printing-timetable` | HK$8-25/冊 ✓ | 无 | PASS |
+
+**汇总: PASS 9 / FAIL 0** —— 本地 0 命中**且**线上 9/9 干净（per §0.23.1 教训：本地干净 ≠ 线上干净）。
+
+---
+
 **文件结束。**
