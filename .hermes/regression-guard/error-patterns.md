@@ -351,3 +351,38 @@
 **教训固化**: 2026-09-17 全站清查 116 处泄漏 (67 META + 49 CONTENT): sticker-material / foil-stamping / school-exercise-book / kraft-paper-box / poster-size / campus / calendar × 3 locale; 双品牌 `智印港 ZprintPro` 2 处 zh-hk title 同批修复。根因: 门童 #9 gscSource 跳过 src/ 无客户可见泄漏检测。
 
 **配套**: AGENTS.md §0.23.1 (规则 SSoT) | 门童 #16 注册于 check-regression-guard.js | pre-commit 钩子端到端验证已过 (注入泄漏 → commit 被拦)
+
+
+---
+
+### 规则 CE_TRUNCATION_CUSTOMER_VISIBLE — 批量文本脚本删除 "ce" 序列毁掉客户可见文本 (2026-09-02 事故, 2026-09-17 修复, 门童 #17)
+
+**事故形态**: 某批量文本处理脚本 (commit `2f8d9438` "packaging-blog-reorg-v3" 2026-09-02 06:13) 把客户可见文本里**所有 "ce" 字符序列删除**, 破坏 **2,799 处**并存活 15 天:
+
+| 破坏 | 应为 | 处数 | 影响 |
+|------|------|------|------|
+| `servi` | service | 168 | 最高频商业词被毁 |
+| `spa-y-1` | space-y-1 | **762** | **Tailwind CSS 类名被毁 → 版面样式失效** |
+| `rtification` | certification | 68 | 认证表述被毁 |
+| `nstatd.gov.hk` | censtatd.gov.hk | 3 | **香港政府统计处网址被毁** |
+| `Pamaker` | Pacemaker | 9 | NSPA 年鉴奖项名 (面向美国学校客户) |
+| `offirs` | officers | 2 | — |
+| `e-commer` | e-commerce | 50+ | — |
+| `pre-ra` / `Dreamfor` / `llophane` | pre-race / Dreamforce / cellophane | — | 铁证: 连字符词/专有名词同样中招 |
+
+**为什么能存活 15 天**: 门童 #9 gscSource 跳过 src/; 门童 #15 blog-data-integrity 只校验 JSON 结构不校验文本正确性; 门童 #16 GSC 泄漏只管后台黑话 —— **没有任何门童检查"英文文本是否完整"**。
+
+**触发条件** (任一命中即 red 硬拦):
+- 客户可见内容出现基线中 323 个 ce 截断 token (如 `servi` / `complian` / `rtification` / `spa-y-` / `e-commer`)
+
+**机审**: `scripts/guards/ce-truncation-guard.js` + 基线 `scripts/guards/data/ce-truncation-baseline.json` (323 条, 从干净父版本 `be744435` 自动学得)
+
+**修复方法 (可复用)**: 用 `git log -S <受破坏字符串>` + 二分定位引入 commit → 取其**父 commit** 为干净参照 → 用 token 集差集自动生成 `(截断 → 正确)` 映射 → 全词边界替换 + JSON 断言。**比人工核对快且不漏**。
+
+**教训固化**:
+1. **批量文本脚本必须做"文本完整性"断言** (§12 三件套只要求计数/形状断言, 不足以拦住"每个词少 2 个字母")
+2. **回归检测要找机器可判的锚点**: 本次用"干净版本 token 差集"自动学得 323 条基线, 而非人工列词表
+3. **CSS 类名也是客户可见内容**: `spa-y-1` 不会报错、不会 404, 只会让版面悄悄失效 —— 与文字错误同样优先
+4. **事故存活期 = 门童盲区期**: 覆盖不到的地方, 错误不会自己消失
+
+**配套**: 门童 #17 注册于 check-regression-guard.js | 修复 commit (2026-09-17) | 全站残留验证 0

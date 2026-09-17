@@ -1,0 +1,1301 @@
+{
+  "_comment": "ce-truncation guard baseline — 从 2f8d9438 事故 (2026-09-02, packaging-blog-reorg-v3) 的干净父版本 be744435 学得。该 commit 的脚本把文本中所有 \"ce\" 字符序列删除, 导致 2,799 处客户可见破坏 (servi/service, spa-y-/space-y- CSS 类, rtification/certification, nstatd/censtatd 政府网址, Pamaker/Pacemaker 等)。此文件供门童 #17 检测同类回归, 勿手工编辑。",
+  "generatedFrom": "be744435 (src/data/blog-data/*.json)",
+  "incident": "2f8d9438 @ 2026-09-02 06:13:17",
+  "fixedAt": "2026-09-17",
+  "count": 323,
+  "entries": [
+    {
+      "broken": "aclerated",
+      "correct": "accelerated"
+    },
+    {
+      "broken": "acnt",
+      "correct": "accent"
+    },
+    {
+      "broken": "acpt",
+      "correct": "accept"
+    },
+    {
+      "broken": "acpt-ready",
+      "correct": "accept-ready"
+    },
+    {
+      "broken": "acptable",
+      "correct": "acceptable"
+    },
+    {
+      "broken": "Acptable",
+      "correct": "Acceptable"
+    },
+    {
+      "broken": "acptan",
+      "correct": "acceptance"
+    },
+    {
+      "broken": "acpted",
+      "correct": "accepted"
+    },
+    {
+      "broken": "acpts",
+      "correct": "accepts"
+    },
+    {
+      "broken": "acssories",
+      "correct": "accessories"
+    },
+    {
+      "broken": "Acssories",
+      "correct": "Accessories"
+    },
+    {
+      "broken": "acssory",
+      "correct": "accessory"
+    },
+    {
+      "broken": "advan",
+      "correct": "advance"
+    },
+    {
+      "broken": "Advand",
+      "correct": "Advanced"
+    },
+    {
+      "broken": "advi",
+      "correct": "advice"
+    },
+    {
+      "broken": "allian",
+      "correct": "alliance"
+    },
+    {
+      "broken": "Announments",
+      "correct": "Announcements"
+    },
+    {
+      "broken": "appearan",
+      "correct": "appearance"
+    },
+    {
+      "broken": "applian",
+      "correct": "appliance"
+    },
+    {
+      "broken": "applians",
+      "correct": "appliances"
+    },
+    {
+      "broken": "assuran",
+      "correct": "assurance"
+    },
+    {
+      "broken": "atic",
+      "correct": "acetic"
+    },
+    {
+      "broken": "Audien",
+      "correct": "Audience"
+    },
+    {
+      "broken": "balan",
+      "correct": "balance"
+    },
+    {
+      "broken": "baland",
+      "correct": "balanced"
+    },
+    {
+      "broken": "behind-the-snes",
+      "correct": "behind-the-scenes"
+    },
+    {
+      "broken": "chan",
+      "correct": "chance"
+    },
+    {
+      "broken": "choi",
+      "correct": "choice"
+    },
+    {
+      "broken": "Choi",
+      "correct": "Choice"
+    },
+    {
+      "broken": "chois",
+      "correct": "choices"
+    },
+    {
+      "broken": "Chois",
+      "correct": "Choices"
+    },
+    {
+      "broken": "Colorspa",
+      "correct": "Colorspace"
+    },
+    {
+      "broken": "commer",
+      "correct": "commerce"
+    },
+    {
+      "broken": "complian",
+      "correct": "compliance"
+    },
+    {
+      "broken": "Complian",
+      "correct": "Compliance"
+    },
+    {
+      "broken": "conferen",
+      "correct": "conference"
+    },
+    {
+      "broken": "conferens",
+      "correct": "conferences"
+    },
+    {
+      "broken": "conntrate",
+      "correct": "concentrate"
+    },
+    {
+      "broken": "conntrated",
+      "correct": "concentrated"
+    },
+    {
+      "broken": "conpts",
+      "correct": "concepts"
+    },
+    {
+      "broken": "conrt",
+      "correct": "concert"
+    },
+    {
+      "broken": "Conrt",
+      "correct": "Concert"
+    },
+    {
+      "broken": "conrts",
+      "correct": "concerts"
+    },
+    {
+      "broken": "consequen",
+      "correct": "consequence"
+    },
+    {
+      "broken": "convenien",
+      "correct": "convenience"
+    },
+    {
+      "broken": "corresponden",
+      "correct": "correspondence"
+    },
+    {
+      "broken": "cross-border-ecommer-shipping-box-guide",
+      "correct": "cross-border-ecommerce-shipping-box-guide"
+    },
+    {
+      "broken": "cross-referen",
+      "correct": "cross-reference"
+    },
+    {
+      "broken": "Dember",
+      "correct": "December"
+    },
+    {
+      "broken": "Dember-January",
+      "correct": "December-January"
+    },
+    {
+      "broken": "desnding",
+      "correct": "descending"
+    },
+    {
+      "broken": "devi",
+      "correct": "device"
+    },
+    {
+      "broken": "Devi",
+      "correct": "Device"
+    },
+    {
+      "broken": "devis",
+      "correct": "devices"
+    },
+    {
+      "broken": "differen",
+      "correct": "difference"
+    },
+    {
+      "broken": "Differen",
+      "correct": "Difference"
+    },
+    {
+      "broken": "differens",
+      "correct": "differences"
+    },
+    {
+      "broken": "distan",
+      "correct": "distance"
+    },
+    {
+      "broken": "dominan",
+      "correct": "dominance"
+    },
+    {
+      "broken": "double-clearan",
+      "correct": "double-clearance"
+    },
+    {
+      "broken": "Double-clearan",
+      "correct": "Double-clearance"
+    },
+    {
+      "broken": "Dreamfor",
+      "correct": "Dreamforce"
+    },
+    {
+      "broken": "e-commer",
+      "correct": "e-commerce"
+    },
+    {
+      "broken": "E-commer",
+      "correct": "E-commerce"
+    },
+    {
+      "broken": "e-rt",
+      "correct": "e-Cert"
+    },
+    {
+      "broken": "e-rtificate",
+      "correct": "e-certificate"
+    },
+    {
+      "broken": "E-rtificate",
+      "correct": "E-Certificate"
+    },
+    {
+      "broken": "E-rtificates",
+      "correct": "E-Certificates"
+    },
+    {
+      "broken": "eco-rt",
+      "correct": "eco-cert"
+    },
+    {
+      "broken": "Eco-rt",
+      "correct": "Eco-Cert"
+    },
+    {
+      "broken": "ecommer",
+      "correct": "ecommerce"
+    },
+    {
+      "broken": "eCommer",
+      "correct": "eCommerce"
+    },
+    {
+      "broken": "Ecommer",
+      "correct": "Ecommerce"
+    },
+    {
+      "broken": "ecommer-shipping-bag-printing-guide",
+      "correct": "ecommerce-shipping-bag-printing-guide"
+    },
+    {
+      "broken": "elegan",
+      "correct": "elegance"
+    },
+    {
+      "broken": "enford",
+      "correct": "enforced"
+    },
+    {
+      "broken": "enforment",
+      "correct": "enforcement"
+    },
+    {
+      "broken": "enhan",
+      "correct": "enhance"
+    },
+    {
+      "broken": "enhand",
+      "correct": "enhanced"
+    },
+    {
+      "broken": "enhans",
+      "correct": "enhances"
+    },
+    {
+      "broken": "entran",
+      "correct": "entrance"
+    },
+    {
+      "broken": "essen",
+      "correct": "essence"
+    },
+    {
+      "broken": "exed",
+      "correct": "exceed"
+    },
+    {
+      "broken": "exedan",
+      "correct": "exceedance"
+    },
+    {
+      "broken": "exeds",
+      "correct": "exceeds"
+    },
+    {
+      "broken": "Exl",
+      "correct": "Excel"
+    },
+    {
+      "broken": "exllent",
+      "correct": "excellent"
+    },
+    {
+      "broken": "experien",
+      "correct": "experience"
+    },
+    {
+      "broken": "Experien",
+      "correct": "Experience"
+    },
+    {
+      "broken": "experiens",
+      "correct": "experiences"
+    },
+    {
+      "broken": "exrpt",
+      "correct": "excerpt"
+    },
+    {
+      "broken": "fa-to-fa",
+      "correct": "face-to-face"
+    },
+    {
+      "broken": "Fa-to-fa",
+      "correct": "Face-to-face"
+    },
+    {
+      "broken": "fast-pad",
+      "correct": "fast-paced"
+    },
+    {
+      "broken": "fen",
+      "correct": "fence"
+    },
+    {
+      "broken": "fierly",
+      "correct": "fiercely"
+    },
+    {
+      "broken": "finan",
+      "correct": "finance"
+    },
+    {
+      "broken": "Finan",
+      "correct": "Finance"
+    },
+    {
+      "broken": "finan-summit",
+      "correct": "finance-summit"
+    },
+    {
+      "broken": "Finan-Summit",
+      "correct": "Finance-Summit"
+    },
+    {
+      "broken": "finan-summit-gift-bag-printing-guide",
+      "correct": "finance-summit-gift-bag-printing-guide"
+    },
+    {
+      "broken": "fluoresnt",
+      "correct": "fluorescent"
+    },
+    {
+      "broken": "Fluoresnt",
+      "correct": "Fluorescent"
+    },
+    {
+      "broken": "fluoresnts",
+      "correct": "fluorescents"
+    },
+    {
+      "broken": "fors",
+      "correct": "forces"
+    },
+    {
+      "broken": "four-rt",
+      "correct": "four-cert"
+    },
+    {
+      "broken": "four-rtification",
+      "correct": "four-certification"
+    },
+    {
+      "broken": "fragran",
+      "correct": "fragrance"
+    },
+    {
+      "broken": "FSC-rtified",
+      "correct": "FSC-certified"
+    },
+    {
+      "broken": "full-complian",
+      "correct": "full-compliance"
+    },
+    {
+      "broken": "full-servi",
+      "correct": "full-service"
+    },
+    {
+      "broken": "glan",
+      "correct": "glance"
+    },
+    {
+      "broken": "Governan",
+      "correct": "Governance"
+    },
+    {
+      "broken": "grories",
+      "correct": "groceries"
+    },
+    {
+      "broken": "grory",
+      "correct": "grocery"
+    },
+    {
+      "broken": "guidan",
+      "correct": "guidance"
+    },
+    {
+      "broken": "Hand-canllation",
+      "correct": "Hand-cancellation"
+    },
+    {
+      "broken": "high-performan",
+      "correct": "high-performance"
+    },
+    {
+      "broken": "iling",
+      "correct": "ceiling"
+    },
+    {
+      "broken": "iling",
+      "correct": "Ceiling"
+    },
+    {
+      "broken": "imperptible",
+      "correct": "imperceptible"
+    },
+    {
+      "broken": "influenr",
+      "correct": "influencer"
+    },
+    {
+      "broken": "influens",
+      "correct": "influences"
+    },
+    {
+      "broken": "inntive",
+      "correct": "incentive"
+    },
+    {
+      "broken": "insuran",
+      "correct": "insurance"
+    },
+    {
+      "broken": "Insuran",
+      "correct": "Insurance"
+    },
+    {
+      "broken": "introdus",
+      "correct": "introduces"
+    },
+    {
+      "broken": "invoi",
+      "correct": "invoice"
+    },
+    {
+      "broken": "invois",
+      "correct": "invoices"
+    },
+    {
+      "broken": "iridesnt",
+      "correct": "iridescent"
+    },
+    {
+      "broken": "ISO-rtified",
+      "correct": "ISO-certified"
+    },
+    {
+      "broken": "Lay",
+      "correct": "Lacey"
+    },
+    {
+      "broken": "lebration",
+      "correct": "celebration"
+    },
+    {
+      "broken": "lebrations",
+      "correct": "celebrations"
+    },
+    {
+      "broken": "linse",
+      "correct": "license"
+    },
+    {
+      "broken": "Linse",
+      "correct": "License"
+    },
+    {
+      "broken": "linsed",
+      "correct": "licensed"
+    },
+    {
+      "broken": "Linsed",
+      "correct": "Licensed"
+    },
+    {
+      "broken": "linsing",
+      "correct": "licensing"
+    },
+    {
+      "broken": "Linsing",
+      "correct": "Licensing"
+    },
+    {
+      "broken": "linsors",
+      "correct": "licensors"
+    },
+    {
+      "broken": "llophane",
+      "correct": "cellophane"
+    },
+    {
+      "broken": "long-distan",
+      "correct": "long-distance"
+    },
+    {
+      "broken": "magnetic-closure-gift-box-ecommer-brand-guide",
+      "correct": "magnetic-closure-gift-box-ecommerce-brand-guide"
+    },
+    {
+      "broken": "maintenan",
+      "correct": "maintenance"
+    },
+    {
+      "broken": "marketpla",
+      "correct": "marketplace"
+    },
+    {
+      "broken": "Marketpla",
+      "correct": "Marketplace"
+    },
+    {
+      "broken": "medical-devi",
+      "correct": "medical-device"
+    },
+    {
+      "broken": "medical-devi-packaging-box-guide",
+      "correct": "medical-device-packaging-box-guide"
+    },
+    {
+      "broken": "metery",
+      "correct": "cemetery"
+    },
+    {
+      "broken": "multi-pie",
+      "correct": "multi-piece"
+    },
+    {
+      "broken": "mylium",
+      "correct": "mycelium"
+    },
+    {
+      "broken": "non-complian",
+      "correct": "non-compliance"
+    },
+    {
+      "broken": "noti",
+      "correct": "notice"
+    },
+    {
+      "broken": "Noti",
+      "correct": "Notice"
+    },
+    {
+      "broken": "NOTI",
+      "correct": "NOTICE"
+    },
+    {
+      "broken": "notiable",
+      "correct": "noticeable"
+    },
+    {
+      "broken": "nstatd",
+      "correct": "censtatd"
+    },
+    {
+      "broken": "nter",
+      "correct": "center"
+    },
+    {
+      "broken": "nter",
+      "correct": "Center"
+    },
+    {
+      "broken": "ntered",
+      "correct": "Centered"
+    },
+    {
+      "broken": "nters",
+      "correct": "centers"
+    },
+    {
+      "broken": "ntimeters",
+      "correct": "Centimeters"
+    },
+    {
+      "broken": "ntral",
+      "correct": "Central"
+    },
+    {
+      "broken": "oan",
+      "correct": "ocean"
+    },
+    {
+      "broken": "Oan",
+      "correct": "Ocean"
+    },
+    {
+      "broken": "Oania",
+      "correct": "Oceania"
+    },
+    {
+      "broken": "October-Dember",
+      "correct": "October-December"
+    },
+    {
+      "broken": "offi",
+      "correct": "office"
+    },
+    {
+      "broken": "Offi",
+      "correct": "Office"
+    },
+    {
+      "broken": "offir",
+      "correct": "officer"
+    },
+    {
+      "broken": "offirs",
+      "correct": "officers"
+    },
+    {
+      "broken": "offis",
+      "correct": "offices"
+    },
+    {
+      "broken": "on-folded",
+      "correct": "once-folded"
+    },
+    {
+      "broken": "one-pie",
+      "correct": "one-piece"
+    },
+    {
+      "broken": "One-pie",
+      "correct": "One-piece"
+    },
+    {
+      "broken": "oun",
+      "correct": "ounce"
+    },
+    {
+      "broken": "outsour",
+      "correct": "outsource"
+    },
+    {
+      "broken": "packaging-box-pri-",
+      "correct": "packaging-box-price-"
+    },
+    {
+      "broken": "Pamaker",
+      "correct": "Pacemaker"
+    },
+    {
+      "broken": "Pamaker-bid",
+      "correct": "Pacemaker-bid"
+    },
+    {
+      "broken": "paper-fad",
+      "correct": "paper-faced"
+    },
+    {
+      "broken": "parl",
+      "correct": "parcel"
+    },
+    {
+      "broken": "parls",
+      "correct": "parcels"
+    },
+    {
+      "broken": "pearlesnt",
+      "correct": "pearlescent"
+    },
+    {
+      "broken": "per-pie",
+      "correct": "per-piece"
+    },
+    {
+      "broken": "Per-pie",
+      "correct": "Per-piece"
+    },
+    {
+      "broken": "performan",
+      "correct": "performance"
+    },
+    {
+      "broken": "perived",
+      "correct": "perceived"
+    },
+    {
+      "broken": "permanen",
+      "correct": "permanence"
+    },
+    {
+      "broken": "perption",
+      "correct": "perception"
+    },
+    {
+      "broken": "pharmautical",
+      "correct": "pharmaceutical"
+    },
+    {
+      "broken": "Pharmautical",
+      "correct": "Pharmaceutical"
+    },
+    {
+      "broken": "pharmautical-label-printing-guide",
+      "correct": "pharmaceutical-label-printing-guide"
+    },
+    {
+      "broken": "pie",
+      "correct": "piece"
+    },
+    {
+      "broken": "Pie",
+      "correct": "Piece"
+    },
+    {
+      "broken": "pies",
+      "correct": "pieces"
+    },
+    {
+      "broken": "Pies",
+      "correct": "Pieces"
+    },
+    {
+      "broken": "pla",
+      "correct": "place"
+    },
+    {
+      "broken": "Pla",
+      "correct": "Place"
+    },
+    {
+      "broken": "plad",
+      "correct": "placed"
+    },
+    {
+      "broken": "plament",
+      "correct": "placement"
+    },
+    {
+      "broken": "plastic-replament",
+      "correct": "plastic-replacement"
+    },
+    {
+      "broken": "poster-printing-pri-guide",
+      "correct": "poster-printing-price-guide"
+    },
+    {
+      "broken": "practi",
+      "correct": "practice"
+    },
+    {
+      "broken": "practis",
+      "correct": "practices"
+    },
+    {
+      "broken": "pre-ra",
+      "correct": "pre-race"
+    },
+    {
+      "broken": "predent",
+      "correct": "precedent"
+    },
+    {
+      "broken": "preferen",
+      "correct": "preference"
+    },
+    {
+      "broken": "Preferen",
+      "correct": "Preference"
+    },
+    {
+      "broken": "preferens",
+      "correct": "preferences"
+    },
+    {
+      "broken": "presen",
+      "correct": "presence"
+    },
+    {
+      "broken": "pri",
+      "correct": "price"
+    },
+    {
+      "broken": "Pri",
+      "correct": "Price"
+    },
+    {
+      "broken": "pri-to-quality",
+      "correct": "price-to-quality"
+    },
+    {
+      "broken": "pri-to-volume",
+      "correct": "price-to-volume"
+    },
+    {
+      "broken": "prid",
+      "correct": "priced"
+    },
+    {
+      "broken": "pris",
+      "correct": "prices"
+    },
+    {
+      "broken": "Pris",
+      "correct": "Prices"
+    },
+    {
+      "broken": "produ",
+      "correct": "produce"
+    },
+    {
+      "broken": "Produr",
+      "correct": "Producer"
+    },
+    {
+      "broken": "Produres",
+      "correct": "Procedures"
+    },
+    {
+      "broken": "produrs",
+      "correct": "producers"
+    },
+    {
+      "broken": "produs",
+      "correct": "produces"
+    },
+    {
+      "broken": "pross",
+      "correct": "process"
+    },
+    {
+      "broken": "Pross",
+      "correct": "Process"
+    },
+    {
+      "broken": "prosses",
+      "correct": "processes"
+    },
+    {
+      "broken": "Prosses",
+      "correct": "Processes"
+    },
+    {
+      "broken": "prossing",
+      "correct": "processing"
+    },
+    {
+      "broken": "ra-day",
+      "correct": "race-day"
+    },
+    {
+      "broken": "ras",
+      "correct": "races"
+    },
+    {
+      "broken": "redu",
+      "correct": "reduce"
+    },
+    {
+      "broken": "Redu",
+      "correct": "Reduce"
+    },
+    {
+      "broken": "redud",
+      "correct": "reduced"
+    },
+    {
+      "broken": "redus",
+      "correct": "reduces"
+    },
+    {
+      "broken": "Redus",
+      "correct": "Reduces"
+    },
+    {
+      "broken": "referen",
+      "correct": "reference"
+    },
+    {
+      "broken": "Referen",
+      "correct": "Reference"
+    },
+    {
+      "broken": "referend",
+      "correct": "referenced"
+    },
+    {
+      "broken": "reinford",
+      "correct": "reinforced"
+    },
+    {
+      "broken": "Reinford",
+      "correct": "Reinforced"
+    },
+    {
+      "broken": "reinforment",
+      "correct": "reinforcement"
+    },
+    {
+      "broken": "reipt",
+      "correct": "receipt"
+    },
+    {
+      "broken": "reipts",
+      "correct": "receipts"
+    },
+    {
+      "broken": "reive",
+      "correct": "receive"
+    },
+    {
+      "broken": "reived",
+      "correct": "received"
+    },
+    {
+      "broken": "relevan",
+      "correct": "relevance"
+    },
+    {
+      "broken": "religious-remony-printing-guide",
+      "correct": "religious-ceremony-printing-guide"
+    },
+    {
+      "broken": "remonial",
+      "correct": "ceremonial"
+    },
+    {
+      "broken": "remonial",
+      "correct": "Ceremonial"
+    },
+    {
+      "broken": "remonies",
+      "correct": "ceremonies"
+    },
+    {
+      "broken": "remony",
+      "correct": "ceremony"
+    },
+    {
+      "broken": "remony",
+      "correct": "Ceremony"
+    },
+    {
+      "broken": "remony-oriented",
+      "correct": "Ceremony-oriented"
+    },
+    {
+      "broken": "rency",
+      "correct": "recency"
+    },
+    {
+      "broken": "replaable",
+      "correct": "replaceable"
+    },
+    {
+      "broken": "replad",
+      "correct": "replaced"
+    },
+    {
+      "broken": "replament",
+      "correct": "replacement"
+    },
+    {
+      "broken": "replas",
+      "correct": "replaces"
+    },
+    {
+      "broken": "Replas",
+      "correct": "Replaces"
+    },
+    {
+      "broken": "reprodu",
+      "correct": "reproduce"
+    },
+    {
+      "broken": "reprodud",
+      "correct": "reproduced"
+    },
+    {
+      "broken": "reprodus",
+      "correct": "reproduces"
+    },
+    {
+      "broken": "reption",
+      "correct": "reception"
+    },
+    {
+      "broken": "Reption",
+      "correct": "Reception"
+    },
+    {
+      "broken": "residens",
+      "correct": "residences"
+    },
+    {
+      "broken": "resistan",
+      "correct": "resistance"
+    },
+    {
+      "broken": "Resistan",
+      "correct": "Resistance"
+    },
+    {
+      "broken": "ressed",
+      "correct": "recessed"
+    },
+    {
+      "broken": "rtain",
+      "correct": "certain"
+    },
+    {
+      "broken": "rtificate",
+      "correct": "certificate"
+    },
+    {
+      "broken": "rtificate",
+      "correct": "Certificate"
+    },
+    {
+      "broken": "rtificate-printing-guide",
+      "correct": "certificate-printing-guide"
+    },
+    {
+      "broken": "rtificates",
+      "correct": "certificates"
+    },
+    {
+      "broken": "rtificates",
+      "correct": "Certificates"
+    },
+    {
+      "broken": "rtification",
+      "correct": "certification"
+    },
+    {
+      "broken": "rtification",
+      "correct": "Certification"
+    },
+    {
+      "broken": "rtifications",
+      "correct": "certifications"
+    },
+    {
+      "broken": "rtified",
+      "correct": "certified"
+    },
+    {
+      "broken": "rtified",
+      "correct": "Certified"
+    },
+    {
+      "broken": "sacrifis",
+      "correct": "sacrifices"
+    },
+    {
+      "broken": "servi",
+      "correct": "service"
+    },
+    {
+      "broken": "Servi",
+      "correct": "Service"
+    },
+    {
+      "broken": "servis",
+      "correct": "services"
+    },
+    {
+      "broken": "Servis",
+      "correct": "Services"
+    },
+    {
+      "broken": "sin",
+      "correct": "since"
+    },
+    {
+      "broken": "Sin",
+      "correct": "Since"
+    },
+    {
+      "broken": "single-pie",
+      "correct": "single-piece"
+    },
+    {
+      "broken": "snario",
+      "correct": "scenario"
+    },
+    {
+      "broken": "Snario",
+      "correct": "Scenario"
+    },
+    {
+      "broken": "snarios",
+      "correct": "scenarios"
+    },
+    {
+      "broken": "Snarios",
+      "correct": "Scenarios"
+    },
+    {
+      "broken": "sne",
+      "correct": "scene"
+    },
+    {
+      "broken": "Sne",
+      "correct": "Scene"
+    },
+    {
+      "broken": "snes",
+      "correct": "scenes"
+    },
+    {
+      "broken": "Snes",
+      "correct": "Scenes"
+    },
+    {
+      "broken": "sour",
+      "correct": "source"
+    },
+    {
+      "broken": "Sour",
+      "correct": "Source"
+    },
+    {
+      "broken": "sourd",
+      "correct": "sourced"
+    },
+    {
+      "broken": "sours",
+      "correct": "sources"
+    },
+    {
+      "broken": "Sours",
+      "correct": "Sources"
+    },
+    {
+      "broken": "spa-saving",
+      "correct": "space-saving"
+    },
+    {
+      "broken": "spa-y-",
+      "correct": "space-y-"
+    },
+    {
+      "broken": "substans",
+      "correct": "substances"
+    },
+    {
+      "broken": "Suced",
+      "correct": "Succeed"
+    },
+    {
+      "broken": "sucss",
+      "correct": "success"
+    },
+    {
+      "broken": "surfa",
+      "correct": "surface"
+    },
+    {
+      "broken": "Surfa",
+      "correct": "Surface"
+    },
+    {
+      "broken": "toleran",
+      "correct": "tolerance"
+    },
+    {
+      "broken": "tra",
+      "correct": "trace"
+    },
+    {
+      "broken": "traability",
+      "correct": "traceability"
+    },
+    {
+      "broken": "Traability",
+      "correct": "Traceability"
+    },
+    {
+      "broken": "traable",
+      "correct": "traceable"
+    },
+    {
+      "broken": "translunt",
+      "correct": "translucent"
+    },
+    {
+      "broken": "Translunt",
+      "correct": "Translucent"
+    },
+    {
+      "broken": "triple-rt",
+      "correct": "triple-cert"
+    },
+    {
+      "broken": "triple-rtified",
+      "correct": "triple-certified"
+    },
+    {
+      "broken": "twi",
+      "correct": "twice"
+    },
+    {
+      "broken": "twi-folded",
+      "correct": "twice-folded"
+    },
+    {
+      "broken": "typefas",
+      "correct": "typefaces"
+    },
+    {
+      "broken": "UL-rtified",
+      "correct": "UL-certified"
+    },
+    {
+      "broken": "US-experiend",
+      "correct": "US-experienced"
+    },
+    {
+      "broken": "well-plad",
+      "correct": "well-placed"
+    }
+  ]
+}
