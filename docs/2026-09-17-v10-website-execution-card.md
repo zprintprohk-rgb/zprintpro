@@ -105,7 +105,16 @@ URL 构造抽成纯函数 `buildRedirectUrl()`（可被测试锁住）。
 
 ## 三、P0-4：P0 三篇 en blog（Candle/Soap → Self-Publishing → Etsy）
 
-**队列规则**（v10 §四）：月曆季收尾 + GSC 4 簇补词（9/14 已派）之后 → P0 三篇插在 8 锁词之前 → P1 三篇（zines/journals/童书）10 月初。
+**队列规则**（v10 §四 —— **2026-09-17 K3 拍板更新**）：
+1. 月曆季收尾 + GSC 4 簇补词（9/14 已派，进行中，不动）
+2. **★ 4 篇新需求承接 —— 提前至 P0 三篇之前**（K3 2026-09-17 拍板"是的"；依据 139 条雷达线索实证）：
+   Zine & Small-Batch Booklet / Children's Picture Book / Photo Book / Journal & Notebook
+   —— 属长尾需求承接，**不需域名权重复利**，可与 Track B 并行不占其周五槽位
+3. P0 三篇 en blog（Candle/Soap → Self-Publishing → Etsy）
+4. 8 锁词 T1（weekly-meta 车道）
+5. P1 三篇（zines/journals/童书）—— 与第 2 项合并，**不再重复排期**
+
+> 决策全文: docs/2026-09-17-k3-decisions-institutional-queue-wovenlabel.md
 
 **每篇必含**（v10 §四红线）：
 1. v5.1 快速答案块（AEO，琥珀 + ⚡ 徽标，自动渲染）

@@ -46,6 +46,7 @@ const GUARDS = {
   blogDataIntegrity: require(path.join(GUARDS_DIR, 'blog-data-integrity-guard.js')),
   gscLeak: require(path.join(GUARDS_DIR, 'gsc-leak-guard.js')),
   ceTruncation: require(path.join(GUARDS_DIR, 'ce-truncation-guard.js')),
+  institutionalPromise: require(path.join(GUARDS_DIR, 'institutional-promise-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -61,6 +62,7 @@ const GUARD_LABELS = {
   blogDataIntegrity: '门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数)',
   gscLeak: '门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则)',
   ceTruncation: '门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复)',
+  institutionalPromise: '门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件)',
 };
 
 const args = process.argv.slice(2);
