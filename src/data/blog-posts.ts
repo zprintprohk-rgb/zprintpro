@@ -1847,6 +1847,91 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
 
 
 
+const lpApparelTagGuide: BlogPostMeta = {
+  slug: 'apparel-clothing-tag-printing-guide',
+  categoryKey: 'card',
+  source: 'daily',
+  date: '2026-08-25',
+  title: {
+    'zh-hk': '服裝吊牌印刷完全指南：材質、工藝、價格與品牌案例 | 智印港',
+    en: 'Custom Apparel Tag & Label Printing Guide: Materials, Finishes, Pricing & Brand Cases | ZprintPro',
+    ja: 'アパレルタグ・ネーム印刷完全ガイド：素材、加工、価格、事例 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '服裝吊牌 / 織標 / 洗水標 / 吊牌印刷 100 起, 8 大材質，4 種工藝, HK$0.12-1.20/張 (1000 張), 順豐本地，DHL 全球 2-4 天. 服裝品牌整套印刷配套.',
+    en: 'Custom apparel hang tags / woven labels / care labels 100 MOQ, 8 materials (coated / kraft / PVC / woven / satin / cotton / silk screen / gold foil), 4 finishes, US$0.015-0.15/pc at 1000 pieces, 30-second quote, DHL 2-4 days.',
+    ja: 'アパレル Hang tag / 織ネーム / 洗濯ネーム 100 枚から対応, 8 大素材（コート紙 / クラフト紙 / PVC / 織ネーム / サテン / 綿 / シルクスクリーン / 金箔） 4 種加工, ¥19-150/枚 (1000 枚), 30 秒 AI 即時見積もり, DHL グローバル 2-4 日.',
+  },
+};
+
+const lpCertificatePrintingGuide: BlogPostMeta = {
+  slug: 'certificate-printing-guide',
+  categoryKey: 'education',
+  source: 'daily',
+  date: '2026-08-31',
+  title: {
+    'zh-hk': '證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港',
+    en: 'Certificate Printing Guide 2026: Materials, Finishes, Sizes & Compliance | ZprintPro',
+    ja: '証書印刷完全ガイド 2026：素材・加工・サイズ・コンプライアンス認証を徹底解説 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2026 香港證書印刷 8000 字攻略：7 大場景（學業/企業/機構/活動/培訓/婚禮/醫療） 4 種材質（200-300gsm 雙粉咭/仿羊皮紙/棉紙/特種紙） 4 種工藝（燙金/局部UV/擊凸/壓紋） 4 種呎吋（A4/A5/A3/自訂） 5 大合規認證。',
+    en: '2026 Certificate Printing 8000-word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical), 4 materials (200-300gsm C2S/parchment/cotton/specialty), 4 finishes (foil/spot UV/emboss/texture), 4 sizes, 5 compliance certifications.',
+    ja: '2026 年 証書印刷 8000 字完全ガイド：7 大シナリオ（学業/企業/機関/イベント/研修/婚礼/医療） 4 種素材（200-300gsm コート紙/パーチメント/コットン紙/特殊紙） 4 種加工（箔押し/スポット UV/エンボス/テクスチャ） 4 種サイズ、5 大コンプライアンス認証。',
+  },
+};
+
+const lp2027CalendarCompleteGuide: BlogPostMeta = {
+  slug: '2027-calendar-printing-complete-guide',
+  categoryKey: 'calendars',
+  source: 'daily',
+  date: '2026-08-25',
+  title: {
+    'zh-hk': '2027 月曆印刷完全指南: 8 大材質，4 種工藝，中秋旺季提前 4-6 週預訂 | 智印港',
+    en: '2027 Calendar Printing Guide: 8 Materials, 4 Finishes, Order 4-6 Weeks Ahead | ZprintPro',
+    ja: '2027年カレンダー印刷完全ガイド：8大素材・4種加工・中秋繁忙期は4-6週前発注 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2027 月曆印刷旺季提前 4-6 週預訂, 8 大材質 (銅版紙 / 啞粉紙 / 美術紙 / 仿皮紙 / 木漿紙 / 棉紙 / 牛皮紙 / 銀箔紙)，4 種工藝 (打孔 / 摺疊 / 燙金 / 局部 UV), HK$14-57/本 (500 本批量), 30 秒 AI 即時報價。',
+    en: '2027 calendar printing: book 4-6 weeks early for peak season. 8 materials (coated / matte / art / leatherette / wood pulp / cotton / kraft / silver foil), 4 finishes (drilling / folding / foil / spot UV), HK$14-57/copy at 500 pcs, 30-second AI quote.',
+    ja: '2027年カレンダー印刷は繁忙期の4-6週前発注が推奨。8大素材（コート紙/マット紙/アート紙/合成皮革/木漿紙/コットン紙/クラフト紙/銀箔紙）、4種加工（穴あけ/折り/箔押し/スポットUV）、500部で HK$14-57/部、30秒AI見積。',
+  },
+};
+
+const lpRushPrintingDeliveryGuide: BlogPostMeta = {
+  slug: 'rush-printing-delivery-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-28',
+  title: {
+    'zh-hk': '即日印刷交期指南：邊間最快？幾錢？截單時間？ | 智印港',
+    en: 'Rush Printing Delivery Guide: Where\'s Fastest? Cost? Order Cutoff? | ZprintPro',
+    ja: '当日急行印刷攻略：どこが最速？料金？何時締切？ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2026 即日印刷交期全比較：FedEx Express 2 天、DHL 2-4 天、USPS Priority 1-3 天；智印港急件 18:00 截單、翌日 12:00 交貨。4 檔截單時間、4 檔成本、4 大使用場景、4 條 FAQ，工廠直發 $0.07/張起。',
+    en: 'Rush printing delivery 2026 US: FedEx Express 2-day, DHL 2-4 day, USPS Priority 1-3 day, ZprintPro rush 18:00 cutoff next-day 12:00 delivery, 4 cut-off tiers, 4 cost tiers, 4 use cases, 4 FAQs, factory-direct from $0.07/sheet.',
+    ja: '当日急行印刷の 18:00 締切翌日 12:00 納品サービス全解説。SF Express 翌日配送，DHL 国際 2-4 日，4 大実勢価格（フライヤー・ポスター・ステッカー・紙袋） 4 FAQ、WhatsApp 30 秒見積。',
+  },
+};
+
+const lpPackagingBoxPrice2026: BlogPostMeta = {
+  slug: 'packaging-box-price-2026',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-08-28',
+  title: {
+    'zh-hk': '包裝盒印刷價格 2026：500/1000/5000 個幾錢？ | 智印港',
+    en: 'Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro',
+    ja: 'パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2026 包裝盒印刷價格：精裝盒 / 摺盒 / 快遞盒 / 瓦楞盒。500/1000/5000 個階梯報價、4 種紙材、4 種工藝升級、FDA 21 CFR 食品級、FSC 認證。100 個起印，30 秒 AI 報價。',
+    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, FDA 21 CFR food-safe, FSC certified, 100 MOQ.',
+    ja: 'パッケージ箱印刷 100 個〜。2026 年実勢価格：段ボール 500 個 ¥120-220/個、カラー箱 1000 個 ¥180-300/個、ギフト箱 5000 個 ¥370-590/個。4 大コスト要因、5 種用紙、4 FAQ、WhatsApp 30 秒見積。',
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1994,6 +2079,13 @@ export const blogPosts: BlogPostMeta[] = [
   // 内链: booklets 类目 + 書刊 + 同人誌 + 教科書 SKU + 卒業記念 + campus pillar (G3 簇内链矩阵)
   lpTextbookPrintingGuide,
   lpSchoolExerciseBookPrintingGuide,
+  
+  // 2026-09-17 补注册 (K3 拍板: title=slug 修复; 吊牌归 card/贺卡吊牌, 三语言齐全)
+  lpApparelTagGuide,
+  lpCertificatePrintingGuide,
+  lp2027CalendarCompleteGuide,
+  lpRushPrintingDeliveryGuide,
+  lpPackagingBoxPrice2026,
   ];
 
 // =============================================================================
