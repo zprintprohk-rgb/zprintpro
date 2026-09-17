@@ -30,7 +30,11 @@ try:  # 根治 Windows 控制台 GBK 崩 (v9.4 §三-1)
 except Exception:
     pass
 
-MAIN_REPO = "F:/zprintpro-main-tmp"
+# 2026-09-17 K3 目录铁律: F:\zprintpro-nextjs 是唯一项目根 + 唯一生产工作目录。
+# 旧值硬编码 "F:/zprintpro-main-tmp"; 该 worktree 于 2026-09-17 移除后, 硬编码路径让
+# host-side commit 直接失败 (can't open file .../lane-git-commit.py: No such file)。
+# 改为自动探测: 本脚本位于 <repo>/scripts/ 下 → repo 根 = 上两级目录, 无路径假设。
+MAIN_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GIT = "git"
 
 # lane 允许提交的路径 (白名单: 只提交 lane 真正会改的生产文件 + 报告)
