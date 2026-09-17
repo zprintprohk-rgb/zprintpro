@@ -86,6 +86,13 @@ URL 构造抽成纯函数 `buildRedirectUrl()`（可被测试锁住）。
    事故重演）。已实现降级重试 + 事件层自动降级。
 3. **`quotes.design_notes` 留底 UTM**（本卡 L49 要求）：已在 `api/quote` + `QuoteForm` 两处落地。
 
+**差异 3 — UTM 实装 4 参（不含 `utm_term`）。**
+
+本卡 L46 写"解析 UTM 5 参（…/utm_content/utm_term）"。实装为 **4 参**（source/medium/campaign/content），理由：
+- v10 §三 Spec 1 的深链标准**只有 4 个参数**（source/medium/campaign/content），Lane O 无 `utm_term` 用途
+- 010 迁移也只建了 `utm_content` 列（无 `utm_term` 列）→ 解析了也无处可落
+- 若将来要做付费搜索（`utm_term` = 关键词）再加列，属独立需求
+
 **验收口径更新**：本卡 L54 写"提交后 `quote_requests.source = 'reddit'`" → 修正为
 **`quote_requests.lead_source = 'reddit'` 且 `lead_id = 'LD-0042'`**（`source` 仍为 `quote-form`）。
 完整验收步骤见 `docs/k3-010-verify-script-2026-09-17.md` §三点五。
