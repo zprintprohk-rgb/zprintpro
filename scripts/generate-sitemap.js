@@ -53,6 +53,9 @@ const productSlugs = (() => {
 
 // === Blog slugs — dynamically read from blog-posts.ts (covers buying-guide + legacy + future additions) ===
 const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blog-posts.ts'), /slug:\s*['"]([^'"]+)['"],/g);
+// 2026-09-17 K3 v10 P0-4: buying-guides.ts 的 slug 也是 /blog/:slug 路由 (blog page getPostData 优先 guide 渲染),
+// 必须纳入 sitemap 收录 (此前 candle-soap-label-printing-guide 等 guide 形态内容 0 收录, 白做了页面)
+const buyingGuideSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/buying-guides.ts'), /slug:\s*['"]([^'"]+)['"],/g);
 // Also include cluster slugs from pillar-content (may overlap, deduped by Set)
 const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
 // 2026-09-09 404 审计修复: pillar 页 slug (sticker-guide/flyer-guide/packaging-guide) 走 /guide/ 路由,
@@ -68,7 +71,7 @@ for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePi
   }
 }
 const clusterBlogSlugs = clusterSlugs.filter(s => !pillarSlugs.has(s));
-const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs])];
+const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs, ...buyingGuideSlugs])];
 
 const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
