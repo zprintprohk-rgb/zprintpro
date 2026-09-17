@@ -146,19 +146,6 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
     comiket: { sku: 'postcard-set' },
     original_ip: { sku: 'eco-tote-bag' },
   },
-
-  // ── 賀卡 / 喜帖 / 枱卡 (若有场景数据则自动生效) ────────
-  'greeting-cards': {
-    corporate: { sku: 'foil-greeting-cards' },
-    wedding: { sku: 'wedding-invitations' },
-  },
-  'wedding-invitations': {
-    wedding: { sku: 'wedding-suite-bundle' },
-  },
-  'place-cards': {
-    wedding: { sku: 'wedding-place-cards' },
-    cafe: { sku: 'cafe-table-cards' },
-  },
 };
 
 /**
@@ -179,4 +166,116 @@ export function resolveScenarioHref(
   if (link?.sku) return `${localePrefix}/product/${link.sku}/`;
   // 层级 3: 品类页保底 (永不 404)
   return `${localePrefix}/category/${categorySlug}/`;
+}
+
+
+/**
+ * 场景行业名 (3 语言) —— 与 SCENARIO_LINKS 同 key, 构成场景的**唯一权威注册表**
+ *
+ * 为什么并入本文件 (2026-09-17, 修位置索引错配的第二层):
+ *   旧实现行业名来自 seo.ts 的 CATEGORY_INDUSTRIES[], 场景来自 categoryIndustryScenarios[],
+ *   两者靠**位置**配对, 且 tier 用 `i < 5 ? 'A' : 'B'` 硬编码 —— 三重位置假设:
+ *     1. scenarios.filter(tier) 剔除 tier B 项 → tier A 列表索引相对原数组前移 (posters 错位)
+ *     2. CATEGORY_INDUSTRIES 的顺序 与 scenarios 的 priority 顺序在 stickers/paper-bags/packaging 本就不同
+ *     3. i<5 硬编码 tier, 但各品类 tier A 数量不同 (4/3/3/4…)
+ *   结果: 卡片标题与场景文案不符 (如 stickers「藥品標籤」显示「燙金 LOGO · 啞光質感」文案)。
+ *   现改为 **key 驱动**: 行业名 + 场景文案 + tier + 链接 全部由同一 key 取, 位置无关。
+ */
+export const SCENARIO_INDUSTRY_NAMES: Record<string, Record<string, {
+  'zh-hk': string; en: string; ja: string;
+}>> = {
+  stickers: {
+    pet_food:  { 'zh-hk': '寵物食品', en: 'Pet food brands', ja: 'ペットフード' },
+    pharma:    { 'zh-hk': '藥品標籤', en: 'Pharmaceutical labels', ja: '医薬品ラベル' },
+    beauty:    { 'zh-hk': '美妝護膚', en: 'Beauty & skincare', ja: '化粧品・スキンケア' },
+    ecommerce: { 'zh-hk': '跨境電商', en: 'Cross-border e-commerce', ja: '越境EC' },
+    beverage:  { 'zh-hk': '飲料品牌', en: 'Beverage brands', ja: '飲料ブランド' },
+  },
+  flyers: {
+    restaurant:  { 'zh-hk': '餐廳開業', en: 'Restaurant openings', ja: '飲食店開業' },
+    real_estate: { 'zh-hk': '房地產新盤', en: 'Real estate launches', ja: '不動産プロモ' },
+    education:   { 'zh-hk': '補習社宣傳', en: 'Tutoring centers', ja: '塾・予備校' },
+    events:      { 'zh-hk': '活動展覽', en: 'Events & exhibitions', ja: 'イベント・展示会' },
+    wedding:     { 'zh-hk': '婚慶喜帖', en: 'Wedding invitations', ja: '結婚式招待' },
+  },
+  packaging: {
+    beauty:       { 'zh-hk': '美妝護膚品牌', en: 'Beauty & skincare brands', ja: '化粧品ブランド' },
+    ecommerce:    { 'zh-hk': '跨境電商品牌', en: 'Cross-border e-commerce', ja: '越境ECブランド' },
+    tea_beverage: { 'zh-hk': '茶飲食品', en: 'Tea & beverage brands', ja: '茶・ドリンク' },
+    real_estate:  { 'zh-hk': '房地產禮盒', en: 'Real estate gifts', ja: '不動産ギフト' },
+  },
+  'paper-bags': {
+    apparel:   { 'zh-hk': '服飾品牌', en: 'Fashion & apparel brands', ja: 'アパレルブランド' },
+    jewellery: { 'zh-hk': '珠寶鐘錶', en: 'Jewellery & watches', ja: '宝飾・腕時計' },
+    wedding:   { 'zh-hk': '婚慶禮品袋', en: 'Wedding favor bags', ja: '結婚式ギフトバッグ' },
+    bakery:    { 'zh-hk': '烘焙食品', en: 'Bakery & food brands', ja: 'ベーカリー・食品' },
+  },
+  posters: {
+    retail:     { 'zh-hk': '零售店面', en: 'Retail storefronts', ja: '小売店' },
+    exhibition: { 'zh-hk': '展覽活動', en: 'Exhibitions & events', ja: '展示会・イベント' },
+    property:   { 'zh-hk': '房地產新盤', en: 'Real estate promotion', ja: '不動産プロモ' },
+    restaurant: { 'zh-hk': '餐廳推廣', en: 'Restaurant marketing', ja: '飲食店プロモ' },
+    education:  { 'zh-hk': '補習社宣傳', en: 'Tutoring & education', ja: '塾・教育' },
+  },
+  menus: {
+    restaurant: { 'zh-hk': '茶餐廳', en: 'Cha chaan teng & cafes', ja: '茶餐廳・カフェ' },
+    cafe:       { 'zh-hk': '咖啡店', en: 'Coffee shops', ja: 'コーヒーショップ' },
+    bar:        { 'zh-hk': '酒吧', en: 'Bars & pubs', ja: 'バー・居酒屋' },
+  },
+  'red-packets': {
+    wedding:   { 'zh-hk': '婚慶喜宴', en: 'Wedding banquets', ja: '結婚式・披露宴' },
+    corporate: { 'zh-hk': '企業年會', en: 'Corporate events', ja: '企業イベント' },
+    ip:        { 'zh-hk': '卡通 IP 授權', en: 'Cartoon IP licensing', ja: 'キャラクターIP' },
+  },
+  calendars: {
+    corporate_gift: { 'zh-hk': '企業禮品', en: 'Corporate gifts', ja: '企業ギフト' },
+    school:         { 'zh-hk': '學校定制', en: 'School printing', ja: '学校向け' },
+    realestate:     { 'zh-hk': '房地產送禮', en: 'Real estate gifts', ja: '不動産ギフト' },
+    auto:           { 'zh-hk': '汽車汽配', en: 'Auto & parts', ja: '自動車・部品' },
+    finance:        { 'zh-hk': '金融客戶', en: 'Financial clients', ja: '金融機関' },
+  },
+  banners: {
+    trade_show:     { 'zh-hk': '展覽活動', en: 'Trade shows', ja: '展示会' },
+    outdoor_ad:     { 'zh-hk': '戶外廣告', en: 'Outdoor advertising', ja: '屋外広告' },
+    auto_showroom:  { 'zh-hk': '汽車展廳', en: 'Auto showrooms', ja: '自動車ショールーム' },
+    mall_promo:     { 'zh-hk': '商場促銷', en: 'Mall promotions', ja: '商業施設プロモ' },
+    school_event:   { 'zh-hk': '學校開放日', en: 'School open days', ja: '学校オープンデー' },
+  },
+  books: {
+    tutoring_textbook: { 'zh-hk': '補習社教材', en: 'Tutoring textbooks', ja: '塾・教材' },
+    doujin:            { 'zh-hk': '同人誌創作', en: 'Doujinshi creators', ja: '同人誌制作' },
+    corp_brochure:     { 'zh-hk': '企業畫冊', en: 'Corporate brochures', ja: '企業パンフレット' },
+    children_book:     { 'zh-hk': '兒童繪本', en: 'Children picture books', ja: '絵本' },
+    yearbook:          { 'zh-hk': '精裝紀念冊', en: 'Premium hardcover yearbooks', ja: '記念誌・上製本' },
+  },
+  envelopes: {
+    corp_business: { 'zh-hk': '企業商務', en: 'Corporate business', ja: '企業向け' },
+    finance_mail:  { 'zh-hk': '金融信封', en: 'Financial mailing', ja: '金融郵便' },
+    school_notice: { 'zh-hk': '補習社通告', en: 'School notices', ja: '塾・学校通知' },
+    logistics:     { 'zh-hk': '物流面單', en: 'Logistics & shipping', ja: '物流・送り状' },
+    member_event:  { 'zh-hk': '會員活動', en: 'Member events', ja: '会員イベント' },
+  },
+  educational: {
+    graduation:   { 'zh-hk': '中學大學畢業紀念冊', en: 'Graduation yearbooks', ja: '卒業記念誌' },
+    workbook:     { 'zh-hk': '補習社皇牌教材', en: 'Tutoring textbook series', ja: '塾教材シリーズ' },
+    school_bulk:  { 'zh-hk': '學校批量定制', en: 'School bulk printing', ja: '学校一括発注' },
+    pta_event:    { 'zh-hk': '家長會活動', en: 'Parent-teacher events', ja: '保護者会' },
+    certificates: { 'zh-hk': '獎狀證書', en: 'Award certificates', ja: '賞状・証明書' },
+  },
+  'japan-doujin': {
+    doujinshi:   { 'zh-hk': '同人誌創作', en: 'Doujinshi creators', ja: '同人誌制作' },
+    anime_goods: { 'zh-hk': '動漫周邊', en: 'Anime merchandise', ja: 'アニメグッズ' },
+    vtuber:      { 'zh-hk': 'VTuber 推活', en: 'VTuber fan goods', ja: 'VTuber 推し活' },
+    comiket:     { 'zh-hk': 'Comiket 委託', en: 'Comiket commissions', ja: 'コミケ委託' },
+    original_ip: { 'zh-hk': '原創 IP 周邊', en: 'Original IP merch', ja: 'オリジナルIP' },
+  },
+};
+
+/** 取某场景的行业名 (3 语言), 缺失时回退空串 */
+export function getScenarioIndustryName(
+  categorySlug: string,
+  scenarioKey: string,
+  locale: 'zh-hk' | 'en' | 'ja'
+): string {
+  return SCENARIO_INDUSTRY_NAMES[categorySlug]?.[scenarioKey]?.[locale] || '';
 }

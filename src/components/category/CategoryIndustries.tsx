@@ -17,8 +17,8 @@
  * 数据源: src/lib/seo.ts CATEGORY_INDUSTRIES + page.tsx categoryCoveredBlogSlugsMap
  */
 
-import { CATEGORY_INDUSTRIES, Locale } from '@/lib/seo';
-import { resolveScenarioHref } from '@/data/industry-scenario-links';
+import { Locale } from '@/lib/seo';
+import { resolveScenarioHref, getScenarioIndustryName } from '@/data/industry-scenario-links';
 
 // ============================================================================
 // Industry Scenario Descriptions — 每个行业的典型场景 (per locale)
@@ -646,19 +646,24 @@ const labels: Record<string, Record<string, string>> = {
 // ============================================================================
 
 export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
-  const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
   const scenarios = categoryIndustryScenarios[categorySlug] || [];
 
-  if (industries.length === 0 && scenarios.length === 0) {
+  if (scenarios.length === 0) {
     return null;
   }
 
   const t = labels[locale] || labels['zh-hk'];
   const localePrefix = `/${locale}`;
 
-  // Pair by position: both CATEGORY_INDUSTRIES and scenario data are ordered by priority.
-  // First 5 = Tier A, next 3 = Tier B.
-  const maxCards = Math.min(industries.length, 8);
+  // 2026-09-17 修复 (K3 报告: 茶飲食品 → 樓盤書 错配):
+  //   旧实现行业名取 CATEGORY_INDUSTRIES[i], 场景取 scenarios.filter(tier)[posInTier],
+  //   链接取 coveredSlugs[posInTier] —— **三重位置索引**, 任一处顺序不一致即错配:
+  //     · filter(tier) 剔除 tier B 项 → tier A 列表索引前移 (posters「補習社宣傳」配到「餐廳海報」)
+  //     · CATEGORY_INDUSTRIES 顺序 ≠ scenarios priority 顺序 (stickers/paper-bags/packaging)
+  //     · i<5 硬编码 tier, 但各品类 tier A 数量不同 (4/3/3/4…)
+  //   现改为 **key 驱动单一权威**: 遍历场景 (按 priority), 用 key 取 行业名 + 文案 + tier + 链接。
+  //   全部数据源: src/data/industry-scenario-links.ts (SCENARIO_INDUSTRY_NAMES + SCENARIO_LINKS)
+  //   —— 位置不再参与任何配对, 从结构上消灭此类错配。
   const cards: {
     industryName: string;
     tier: 'A' | 'B';
@@ -667,31 +672,18 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
     href: string;
   }[] = [];
 
-  for (let i = 0; i < maxCards; i++) {
-    const industryName = industries[i];
-    const tier: 'A' | 'B' = i < 5 ? 'A' : 'B';
-
-    // Match scenario by position (same priority order as CATEGORY_INDUSTRIES)
-    const tierScenarios = scenarios.filter(s => s.tier === tier);
-    const posInTier = tier === 'A' ? i : i - 5;
-    const scenario = tierScenarios[posInTier];
-
-    // 2026-09-17 修复 (K3 报告: 茶飲食品 → 樓盤書 错配):
-    // 旧实现用 `coveredSlugs[posInTier]` 位置索引取 blog, 而 coveredSlugs 与场景是
-    // 两个独立排序的数组 → 一旦顺序不一致就错配 (茶飲取到樓盤書), 且 tier B 完全无链接。
-    // 现改为 **按 scenario.key 语义映射** + 三层降级 (blog > SKU > 品类页), 恒有链接。
-    // 见 src/data/industry-scenario-links.ts
-    const href = resolveScenarioHref(categorySlug, scenario?.key || '', localePrefix);
-
-    // 2026-09-06 UX 修复: 场景数据未铺的卡片不渲染 (原显示「場景數據整理中…」占位)
-    const scenarioLines = scenario?.scenarios[locale] || [];
-    if (scenarioLines.length === 0) continue;
+  const sorted = [...scenarios].sort((a, b) => a.priority - b.priority);
+  for (const scenario of sorted) {
+    const industryName = getScenarioIndustryName(categorySlug, scenario.key, locale);
+    const scenarioLines = scenario.scenarios[locale] || [];
+    // 无行业名或无场景文案 → 不渲染 (宁缺毋滥: 不显示半成品卡片)
+    if (!industryName || scenarioLines.length === 0) continue;
 
     cards.push({
       industryName,
-      tier,
+      tier: scenario.tier,
       scenarios: scenarioLines,
-      href,
+      href: resolveScenarioHref(categorySlug, scenario.key, localePrefix),
     });
   }
 
@@ -722,18 +714,9 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
           ))}
         </div>
 
-        {/* Placeholder row for upcoming industries */}
-        {industries.length > 8 && (
-          <div className="mt-6 pt-4 border-t border-gray-100">
-            <p className="text-xs text-gray-400">
-              {locale === 'zh-hk'
-                ? `另有 ${industries.length - 8} 個行業場景內容整理中，將陸續上線。`
-                : locale === 'en'
-                ? `${industries.length - 8} more industry guides are being researched and will be added soon.`
-                : `さらに ${industries.length - 8} 業界のガイドを準備中です。順次公開予定。`}
-            </p>
-          </div>
-        )}
+        {/* 2026-09-17: 原「另有 N 個行業場景整理中」占位行已删 —
+            其判据 (CATEGORY_INDUSTRIES.length > 8) 依赖已弃用的位置配对模型;
+            现以场景注册表为权威, scenarios 中每个登记行业名 + 文案的场景全部渲染, 无「整理中」概念 */}
       </section>
     </div>
   );
@@ -826,30 +809,30 @@ function IndustryCard({
 // 仅导出数据, 不改变现有组件渲染路径 — 蓝本 design/plp-v9.html §Industries 使用
 // ============================================================================
 export function getIndustryCards(categorySlug: string, locale: Locale) {
-  const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
   const scenarios = categoryIndustryScenarios[categorySlug] || [];
-
   const localePrefix = `/${locale}`;
+
+  // 2026-09-17: 与主组件同口径 — key 驱动 (行业名 + 文案 + tier + 链接 全部由 scenario.key 取),
+  // 不再依赖 CATEGORY_INDUSTRIES 的位置配对。见 industry-scenario-links.ts
   const cards: {
     industryName: string;
     tier: 'A' | 'B';
     scenarios: string[];
-    /** 三层降级后的最终链接 (blog > SKU > 品类页), 恒有值 — 与主组件同口径 */
+    /** 三层降级后的最终链接 (blog > SKU > 品类页), 恒有值 */
     href: string;
   }[] = [];
 
-  const maxCards = Math.min(industries.length, 8);
-  for (let i = 0; i < maxCards; i++) {
-    const industryName = industries[i];
-    const tier: 'A' | 'B' = i < 5 ? 'A' : 'B';
-    const tierScenarios = scenarios.filter((s) => s.tier === tier);
-    const posInTier = tier === 'A' ? i : i - 5;
-    const scenario = tierScenarios[posInTier];
-    // 与主组件同修 (2026-09-17): 语义映射取代位置索引, 见 industry-scenario-links.ts
-    const href = resolveScenarioHref(categorySlug, scenario?.key || '', localePrefix);
-    const scenarioLines = scenario?.scenarios[locale] || [];
-    if (scenarioLines.length === 0) continue;
-    cards.push({ industryName, tier, scenarios: scenarioLines, href });
+  const sorted = [...scenarios].sort((a, b) => a.priority - b.priority);
+  for (const scenario of sorted) {
+    const industryName = getScenarioIndustryName(categorySlug, scenario.key, locale);
+    const scenarioLines = scenario.scenarios[locale] || [];
+    if (!industryName || scenarioLines.length === 0) continue;
+    cards.push({
+      industryName,
+      tier: scenario.tier,
+      scenarios: scenarioLines,
+      href: resolveScenarioHref(categorySlug, scenario.key, localePrefix),
+    });
   }
   return cards;
 }

@@ -22,7 +22,7 @@
 
 import * as fs from 'fs';
 import * as path from 'path';
-import { SCENARIO_LINKS, resolveScenarioHref } from '../src/data/industry-scenario-links';
+import { SCENARIO_LINKS, resolveScenarioHref, SCENARIO_INDUSTRY_NAMES, getScenarioIndustryName } from '../src/data/industry-scenario-links';
 
 let pass = 0;
 const failures: string[] = [];
@@ -176,6 +176,26 @@ console.log('\n=== F. 场景覆盖: SCENARIO_LINKS 应覆盖组件里的全部�
   // 未登记不算错 (会降级到品类页), 但列出以便补齐
   console.log(`  未登记场景 (将降级到品类页): ${uncovered.length ? uncovered.join(', ') : '无 ✅'}`);
   ok(true, '覆盖性检查完成');
+}
+
+// ============================================================
+console.log('\n=== G. 每个登记场景必须有 3 语言行业名 (否则卡片不渲染) ===');
+// ============================================================
+{
+  let missing = 0;
+  for (const cat of Object.keys(SCENARIO_LINKS)) {
+    for (const key of Object.keys(SCENARIO_LINKS[cat])) {
+      for (const loc of ['zh-hk', 'en', 'ja'] as const) {
+        const nm = getScenarioIndustryName(cat, key, loc);
+        if (!nm) {
+          missing++;
+          failures.push(`${cat}.${key} 缺 ${loc} 行业名 — 卡片将不渲染`);
+        }
+      }
+    }
+  }
+  ok(missing === 0, `行业名完整性 (缺 ${missing} 条)`);
+  console.log(`  行业名条目: zh-hk ${Object.values(SCENARIO_INDUSTRY_NAMES).reduce((a, o) => a + Object.keys(o).length, 0)} 个场景`);
 }
 
 // ---------- 汇总 ----------
