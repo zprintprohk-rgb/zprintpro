@@ -1932,6 +1932,36 @@ const lpPackagingBoxPrice2026: BlogPostMeta = {
   },
 };
 
+// 2026-09-18 新需求承接 #1 (K3 2026-09-17 拍板: 4 篇新需求承接提前至 P0 三篇之前)
+// 依据: docs/2026-09-17-website-traffic-expansion-plan-v1.md §五 路径 1 第 1 项 + §四 差距矩阵 (zine en/zh-hk 侧空白)
+// 承接 SKU: saddle-stitch-booklets (BK-002) | 9 段 + 5 FAQ + 3 CTA + 2 表格 + 3 快速答案块 + 8 内链 + 3 locale native
+// 价格口径来源: 线上 PDP 结构化区 (2026-09-18 curl): 100 本起印 / HK$6-32/本 / 5,000 本低至 HK$1.20/本
+const lpZineSmallBatchBookletGuide: BlogPostMeta = {
+  slug: 'zine-small-batch-booklet-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-18',
+  title: {
+    'zh-hk': '小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 | 智印港',
+    en: 'Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc | ZprintPro',
+    ja: 'ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '小誌 Zine 印刷 100 本起印, 8-64 頁騎馬釘, 每本約 HK$6-32, 5,000 本批量低至 HK$1.20/本. 內頁 80-100g 書紙或 128-157g 銅版紙, 封面可覆膜, 頁數須為 4 的倍數, 標準交期 5-7 個工作天, 提交檔案 1 小時內免費打稿, 滿 HK$500 港九新界順豐免運, DHL 全球 2-4 天.',
+    en: 'Zine printing from 100 copies, saddle stitch 8-64 pages, about HK$6-32 per copy and HK$1.20 per copy at 5,000. Interior in 80-100gsm woodfree or 128-157gsm art paper, optional cover lamination, page count must divide by 4. 5-7 working day turnaround, free proof within 1 hour, DHL worldwide in 2-4 days.',
+    ja: 'ジン（Zine）印刷は 100 部から、中綴じ 8〜64 ページ、1 部あたり約 HK$6〜32、5,000 部で HK$1.20。本文は 80〜100g 上質紙または 128〜157g コート紙、表紙ラミネート可、ページ数は 4 の倍数。標準納期 5〜7 営業日、入稿後 1 時間以内に無料校正、DHL で世界 2〜4 日。',
+  },
+  targetKeywords: {
+    primary: 'zine printing',
+    secondary: [
+      'small batch booklet printing', 'saddle stitch zine', 'zine printing cost',
+      'custom booklet printing small batch', 'booklet printing 100 copies',
+      '小誌印刷', 'Zine 印刷', '騎馬釘小冊子', '小批量書刊印刷', '獨立出版印刷',
+      'ジン 印刷', 'Zine 印刷 小ロット', '中綴じ 冊子 印刷', '同人誌 印刷',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2086,6 +2116,7 @@ export const blogPosts: BlogPostMeta[] = [
   lp2027CalendarCompleteGuide,
   lpRushPrintingDeliveryGuide,
   lpPackagingBoxPrice2026,
+  lpZineSmallBatchBookletGuide,
   ];
 
 // =============================================================================
