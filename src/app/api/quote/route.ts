@@ -84,7 +84,11 @@ export async function POST(req: NextRequest) {
     //          deadline → turnaround, referrerUrl+source → referrer, ip_address + user_agent 写齐
     const sizeString = `${data.size.w}${data.size.unit === 'mm' ? '' : '"'}x${data.size.h}${data.size.unit === 'mm' ? 'mm' : '"'}`;
     const finishingString = data.finishes.length > 0 ? data.finishes.join(', ') : null;
-    const designNotes = `Product: ${data.productName}\nPrice: ${data.currency} ${data.totalPrice} (unit ${data.unitPrice})\nSource: ${data.source}\nLocale: ${data.locale}\nIP country: ${data.customerCountry || 'unknown'}`;
+    // Lane O 归因留底 (v10 P0-3): 业务表也留一行 UTM, 方便 K3 在 quotes 表直接看到来源车道
+    const utmLine = data.utmSource
+      ? `\nUTM: ${data.utmSource}/${data.utmMedium || '-'}/${data.utmCampaign || '-'}/${data.utmContent || '-'}`
+      : '';
+    const designNotes = `Product: ${data.productName}\nPrice: ${data.currency} ${data.totalPrice} (unit ${data.unitPrice})\nSource: ${data.source}\nLocale: ${data.locale}\nIP country: ${data.customerCountry || 'unknown'}${utmLine}`;
 
     const response = await fetch(`${supabaseUrl}/rest/v1/quotes`, {
       method: 'POST',
