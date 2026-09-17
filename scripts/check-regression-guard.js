@@ -47,6 +47,7 @@ const GUARDS = {
   gscLeak: require(path.join(GUARDS_DIR, 'gsc-leak-guard.js')),
   ceTruncation: require(path.join(GUARDS_DIR, 'ce-truncation-guard.js')),
   institutionalPromise: require(path.join(GUARDS_DIR, 'institutional-promise-guard.js')),
+  priceBand: require(path.join(GUARDS_DIR, 'price-band-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -63,6 +64,7 @@ const GUARD_LABELS = {
   gscLeak: '门童 #16 GSC 内部数据泄漏 (K3 2026-09-17 拍板: GSC pos/imps/攻艱/衝首頁/TOP3 后台黑话禁入客户可见字段 — 反审门童是干嘛用的, 写进规则)',
   ceTruncation: '门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复)',
   institutionalPromise: '门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件)',
+  priceBand: '门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57)',
 };
 
 const args = process.argv.slice(2);
