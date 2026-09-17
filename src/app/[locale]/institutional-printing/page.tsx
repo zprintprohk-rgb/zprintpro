@@ -26,7 +26,6 @@ import { Metadata } from 'next';
 import { Locale } from '@/types/locale';
 import { generateBusinessJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { TrustBadges } from '@/components/TrustBadges';
 import { Building2, FileCheck2, Globe2, ClipboardList, ShieldCheck, Truck, Info } from 'lucide-react';
 
 export function generateStaticParams() {
@@ -491,7 +490,18 @@ export default function InstitutionalPrintingPage({ params }: { params: { locale
         </div>
       </section>
 
-      <TrustBadges locale={params.locale} />
+      {/* 2026-09-17: 此页不渲染 TrustBadges —— 该共享组件含「100% 滿意保證」等通用营销承诺,
+          与机构/招标场景的承诺口径要求 (禁用确定性词汇) 冲突, 故按 K3 口径移出本页 */}
+
+      <footer className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-10">
+        <p className="text-xs text-slate-400 leading-relaxed text-center">
+          {params.locale === 'zh-hk'
+            ? '本頁內容以最終簽訂的合同條款為準，並以甲方書面確認的技術規格書為前提。'
+            : params.locale === 'ja'
+            ? '本ページの内容は最終的に締結される契約条項に準じ、発注機関が書面で確認した技術仕様書を前提とします。'
+            : 'The content of this page is subject to the finally executed contract and to the technical specification confirmed in writing by the contracting authority.'}
+        </p>
+      </footer>
     </main>
   );
 }
