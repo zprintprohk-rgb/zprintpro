@@ -91,7 +91,7 @@
 |---|------|------|------|
 | P0-1 | unsubscribe 部署 | 3 文件重建 + CF env | ✅ 本批执行 |
 | P0-3 | UTM 归因 | QuoteForm + api/quote + QuoteRedirect | 本批执行 |
-| P0-4a | Candle/Soap blog | en.json 新篇（或 blog-data） | 下一篇 |
+| P0-4a | Candle/Soap guide | buying-guides.ts 三语完整版 + sitemap 收录（2ce4db49+d969459c 已推 9/17 19:12） | ✅ 已上线 |
 | P0-4b | Self-Publishing blog | 同上 | 排期 |
 | P0-4c | Etsy 小批量包装 blog | 同上 | 排期 |
 | P1-5 | Quora/LinkedIn 公司页 + sameAs | 站外 + Organization schema | 站外账号就绪后 |
@@ -106,3 +106,19 @@
 - G1 模板先例：src/lib/insights/index-vol1.ts + /insights/hk-print-inquiry-index/（已上线）
 - 雷达资产：F:\全球印刷资讯（deepseek 2026-09-17 穷尽读取；139 条线索 + keywords.json 336 词）
 - 队列现状：daily-content 21:17 / weekly-meta 周五 23:07 / gsc-feedback 22:43（§0.34.3）
+
+---
+
+## 七、目录迁移记录（K3 铁律 2026-09-17）
+
+**铁律**：F:\zprintpro-nextjs = 项目根目录（唯一生产工作目录）；redesign/plp-pdp-v9 仅设计版面预览；main-tmp 不再是生产目录。
+
+**已执行（2026-09-17 19:12 完成）**：
+1. F:\zprintpro-main-tmp worktree 已移除（.hermes 2329 文件备份至 nextjs/.hermes/_archive-main-tmp-20260917/，无未 push commit）
+2. nextjs 已从 redesign/plp-pdp-v9 切到 **main** 分支 + 同步 origin/main（9f50eee1）
+3. redesign 分支 2 个未推 commit 内容已保全：school-exercise-book → cherry-pick 净化版 745d7e5a；GSC 补词 8866703d = main 已有 13a2725e 同款（弃）
+4. 工作区未提交工作（GMC 修复/cron 脚本等）经核对均为 main 已有或旧版，stash@{0} 保留备查
+5. 3 commit 已推：745d7e5a（school-exercise-book 净化）+ 2ce4db49（Candle/Soap guide）+ d969459c（sitemap 收录 buying-guides）
+6. 冲突文件 22 个归档至 nextjs/.hermes/_conflict-pre-migrate-20260917/
+
+**后续纪律**：commit/push 一律在 F:\zprintpro-nextjs（main 分支）执行；redesign 分支仅设计版面时切换。
