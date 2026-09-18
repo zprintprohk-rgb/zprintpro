@@ -1,0 +1,55 @@
+=== ① 9 頁 (原未註冊 slug) 線上驗收 ===
+OK    zh-hk/wedding-invitation-pricing-guide
+        title: 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔 | 智印港
+        h1   : 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔 | 智印港
+        desc : [148] 準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,中式喜帖、西式邀請卡、教堂婚禮、集團婚禮 4 大場景,50-5
+        brand: OK
+OK    en/wedding-invitation-pricing-guide
+        title: Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs
+        h1   : Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs
+        desc : [278] Couples, wedding planners, and venues — 2026 dragon-year wed
+        brand: ★ 品牌分層異常
+OK    ja/wedding-invitation-pricing-guide
+        title: 結婚式招待状 価格ガイド 2026：50〜500個の中華式 | ZprintPro
+        h1   : 結婚式招待状 価格ガイド 2026：50〜500個の中華式 | ZprintPro
+        desc : [106] ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、中華式招待状・西洋式カード・教会式・合
+        brand: OK
+OK    zh-hk/wedding-invitation-cost-guide
+        title: 美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價 | 智印港
+        h1   : 美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價 | 智印港
+        desc : [123] 美國新婚夫婦、婚禮策劃師、預算規劃師必睇。2026 年美國婚禮邀請卡 4 檔真實成交價 ($0.85-3.20 / 份)
+        brand: OK
+OK    en/wedding-invitation-cost-guide
+        title: Wedding Invitation Cost Guide 2026: Real Pricing for 50-500
+        h1   : Wedding Invitation Cost Guide 2026: Real Pricing for 50-500
+        desc : [245] Couples, planners, and budget advisors — 2026 real pricing f
+        brand: ★ 品牌分層異常
+OK    ja/wedding-invitation-cost-guide
+        title: 結婚式招待状 コストガイド 2026：50〜500部のリア | ZprintPro
+        h1   : 結婚式招待状 コストガイド 2026：50〜500部のリア | ZprintPro
+        desc : [110] ご婚約カップル・プランナー・予算プランナーへ。2026年米国結婚式招待状リアル価格 ($0.85-3.20 / 枚)、5
+        brand: OK
+OK    zh-hk/wedding-table-card-printing-guide
+        title: 婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 | 智印港
+        h1   : 婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 | 智印港
+        desc : [140] 準新人、婚禮統籌師、宴會場地必睇。2026 龍年婚宴枱卡 / 席位圖 / 桌牌 / 席次表 4 大場景,100-500 
+        brand: OK
+OK    en/wedding-table-card-printing-guide
+        title: Wedding Table Card &amp; Seating Chart Printing Guide 2026
+        h1   : Wedding Table Card &amp; Seating Chart Printing Guide 2026
+        desc : [246] Couples, wedding planners, and venues — 2026 dragon year gui
+        brand: ★ 品牌分層異常
+OK    ja/wedding-table-card-printing-guide
+        title: 結婚式 テーブルカード・席次表印刷ガイド 2026 | ZprintPro
+        h1   : 結婚式 テーブルカード・席次表印刷ガイド 2026 | ZprintPro
+        desc : [99] ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダル テーブルカード・席次表・場札・席札4大シーン、
+        brand: OK
+
+小計: title/H1 修好 9/9 | 有 description 9/9 | 品牌分層 6/9 | 失敗 0
+
+=== ② en/ja qa-answer class 覆蓋 (v5.1 快速答案塊樣式) ===
+OK    zh-hk/photo-book-printing-guide  qa-answer 出現 6 次
+OK    en/photo-book-printing-guide  qa-answer 出現 6 次
+OK    ja/photo-book-printing-guide  qa-answer 出現 6 次
+OK    en/zine-small-batch-booklet-printing-guide  qa-answer 出現 6 次
+OK    ja/childrens-picture-book-printing-guide  qa-answer 出現 6 次

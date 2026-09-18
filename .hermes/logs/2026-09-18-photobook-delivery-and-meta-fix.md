@@ -213,7 +213,10 @@ const description = legacyPost?.description || jsonEntry?.description || meta?.e
 
 ## ⑥ 遗留挂账（发现但**未**顺手做，需 K3 裁决或留待后续窗口）
 
-### 挂账 1（P0 级，建议优先）— 3 篇「已宣告未注册」文章：线上 title/H1 = slug
+> **2026-09-18 23:0x 结案更新**：挂账 1 与挂账 2 已由 K3 拍板（分别选 **a「注册」** / **i「只对齐直译等价位」**），
+> 已落地 commit `d0f52c97` 并**线上验收通过**。新增挂账 4。结案详情见 §⑧ 追加段。
+
+### 挂账 1 ✅ 已结案（P0）— 3 篇「已宣告未注册」文章：线上 title/H1 = slug
 
 `blog-posts.ts` 中 **3 个 `BlogPostMeta` 对象已完整声明（title + excerpt 三语齐备），但从未加入 `export const blogPosts` 数组**：
 
@@ -247,7 +250,7 @@ const description = legacyPost?.description || jsonEntry?.description || meta?.e
 - **(b) 退役 + 301**：若这 3 篇已被 `wedding-favor-bag` / `wedding-red-packet` / `wedding-envelope`（均在数组中）取代，则收拢到承接页。
 - **(c) 仅补数据**：给 JSON 条目补 `title`/`description`，title 仍走 slug 档位，不解决 H1 问题 —— **不推荐**。
 
-### 挂账 2（跨语系一致性）— en/ja 的「快速答案块」拿不到 v5.1 琥珀样式
+### 挂账 2 ✅ 已结案 — en/ja 的「快速答案块」拿不到 v5.1 琥珀样式
 
 `page.tsx:813` 的 v5.1 预处理正则**硬编码中文字面** `快速答案`：
 
@@ -333,3 +336,95 @@ content = content.replace(/<div class="([^"]*)">\s*<p[^>]*>(?:\s*<[^>]+>)*\s*快
 ### 橙色（shadow）增量说明
 
 门童汇总橙色由上一批记录的 🟠 1528 → 本轮 🟠 **1555**（+27）。经查为**新文章复用 SOP-10 第 3 款已拍板的既有事实数据**所致（实测：寫真書 content 含 `15 年` 三语、`海德堡/Heidelberg` zh-hk+en、`ISO 9001` zh-hk），属 `CRED_*` / `SOP10_*` 影子类，**非阻断项**（orange 为 shadow mode）。未逐条定位到条 —— 如需精确对账可另开只读任务。
+
+---
+
+## ⑧ 追加段（23:0x）— 两项挂账结案 + 新增挂账 4 + 事故 6
+
+### 8.1 挂账 1 结案（K3 选项 a「注册」）— commit `d0f52c97`
+
+3 条常量 `lpWeddingInvitationPricing` / `lpWeddingInvitationCost` / `lpWeddingTableCard` 加入 `blogPosts` 数组（置于婚慶簇 `lpWeddingEnvelope` 之后）。
+
+**★ 零 sitemap churn（落地前实测）**：这 3 个 slug 在 `public/sitemap*.xml` 中**早已各有 30 处命中**，与已注册的 `wedding-favor-bag` / `wedding-red-packet` **完全相同** ⇒ 这些 URL 早就躺在 sitemap 里、且一直以 slug 标题暴露给 Google。注册后 sitemap **无任何变化**，不存在「新进 sitemap」的副作用。
+
+**线上验收（9/9，CF Pages success 后实测）**：
+
+| locale | title（实测，节录） | description |
+|---|---|---|
+| zh-hk | 喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔 \| 智印港 | 148 |
+| en | Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs | 278 |
+| ja | 結婚式招待状 価格ガイド 2026：50〜500個の中華式 \| ZprintPro | 106 |
+| zh-hk | 美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價 \| 智印港 | 123 |
+| en | Wedding Invitation Cost Guide 2026: Real Pricing for 50-500 | 245 |
+| ja | 結婚式招待状 コストガイド 2026：50〜500部のリア \| ZprintPro | 110 |
+| zh-hk | 婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 \| 智印港 | 140 |
+| en | Wedding Table Card & Seating Chart Printing Guide 2026 | 246 |
+| ja | 結婚式 テーブルカード・席次表印刷ガイド 2026 \| ZprintPro | 99 |
+
+**小計：title/H1 修好 9/9 ｜ 有 description 9/9 ｜ 失败 0** ✅（修复前 9/9 皆为 slug + 无描述）
+
+### 8.2 挂账 2 结案（K3 选项 i「只对齐直译等价位」）— commit `d0f52c97`
+
+`page.tsx` L813 识别正则可选组补 `(?:快速答案|Quick [Aa]nswer|クイック回答)`。
+
+**线上验收（CF Pages success 后实测，`qa-answer` class 出现次数）**：
+
+| URL | zh-hk | en | ja |
+|---|---|---|---|
+| photo-book-printing-guide | 6 | **6**（修复前 0） | **6**（修复前 0） |
+| zine-small-batch-booklet-printing-guide | — | **6**（修复前 0） | — |
+| childrens-picture-book-printing-guide | — | — | **6**（修复前 0） |
+
+⇒ 三语 AEO 答案块样式**已对齐**；跨 3 篇抽样确认非单篇偶然 ✅
+
+### 8.3 门禁补齐（DoD：No fix without a rule）
+
+新增两条 **red** 规则并接入 `check-regression-guard.js` 门童 #20：
+
+| 规则 | ID | 作用 |
+|---|---|---|
+| 规则 E | `META_UNREGISTERED` | `const X: BlogPostMeta = { slug: … }` 声明即必须出现在 `blogPosts` 数组；差集即报（直接拦下本次 9 页 slug 标题根因） |
+| 规则 F | `BLOG_QA_ANSWER_LOCALE` | 快速答案块识别正则必须同时含 zh-hk / en / ja 三语直译标记 |
+
+回归测试扩至 **11 用例 11/11 PASS**（新增 E 正负 2 例、F 正负 3 例，含「原事故写法必命中」与「修复后写法不得误报」双向控制）。
+
+**门禁实测**：门童汇总 🔴 **51 = 基线**（未新增）｜门童 #20 存量基线 **120 不变**｜`tsc` **54 = 54**（`blog-posts.ts` **无** `@ts-nocheck`，本次改动受类型闸门真实覆盖）｜esbuild 语法校验 4/4 文件 OK。
+
+### 挂账 4（新，需 K3 裁决）— en 标题缺品牌后缀：**49 / 100**，zh-hk 与 ja 为 0
+
+**现象**（`blog-posts.ts` 全量实测）：
+
+| locale | 标题缺品牌 | 范例 |
+|---|---|---|
+| **en** | **49 / 100** ❌ | `Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs`、`Flyer Printing Buying Guide: Sizes, Paper & Folding Options`、`Poster Printing Buying Guide: …` |
+| zh-hk | **0 / 100** ✅ | 全部以「\| 智印港」收尾 |
+| ja | **0 / 100** ✅ | 全部以「\| ZprintPro」收尾 |
+
+**性质判定**：这是**既有系统性问题**（与本次注册无关——这些 en 标题一直如此，只是过去 9 页被 slug 标题掩盖）；且 §5 标题规则要求「**品牌末尾一次**」。zh-hk / ja 100% 合规、en 仅 51% ⇒ en 侧是离群值。
+
+**为何未改**：① 改 title 文案属「**禁区 2 零改文案**」→ 走 §8 升级，不自主裁决；② K3 拍板「**title 数字钩子 9/30 终审前冻结，暂不改**」⇒ 标题当前处于冻结窗。
+
+**待 K3 裁决**：(i) 纳入 **9/30 标题终审窗**一并批量处理（推荐，与冻结令一致）；(ii) 视为 en 侧正当差异化口径（en 标题以长尾词写满优先、品牌可省），则把该口径写进 §5 并以门禁固化 49 条为基线；(iii) 立即逐条补品牌（**不建议**，与冻结令冲突且会动 49 个已部署标题 = churn）。
+
+### 事故 6（自查，须 K3 拍板）— push 间隔撞车：15 min < 30 min（§0.25.2）
+
+**事实**（§0.25.2 要求格式：本次 push 时间戳 + 上次 push 时间戳 + 间隔分钟数 + 撞车原因）：
+
+```
+本次 push : commit d0f52c97 2026-09-18 23:03  (a22aa811..d0f52c97  main -> main)
+上次 push : commit a22aa811 2026-09-18 22:48:27 (cron ZP-gsc-feedback lane 报告)
+间隔      : 约 15 min  ❌ < 30 min 硬下限
+撞车原因  : 我在计算窗口时，只以「我自己的上一次 push」(21:09 的 4923ced4) 为基准
+            → 21:09 + 30 min = 21:39，23:03 看似已满足；但期间 cron 于 21:24(b1b3900a/77ee701c)
+            与 22:48(a22aa811) 在**同一个 repo** 各推了 lane 报告，我 push 前**未重新 fetch 并以
+            origin/main 最新 commit 时间重算间隔** ⇒ 实际间隔仅 15 min。
+```
+
+**影响**：push 本身为**干净 fast-forward**（`a22aa811..d0f52c97`，非 force），无历史改写、无内容丢失；本地与 origin/main 对齐 `0/0`。历史线性：`4923ced4 → 77ee701c → b1b3900a → a22aa811 → d0f52c97`。
+
+**性质**：**流程违规（非数据事故）**。按 §0.25.2「撞车 = K3 必拍 1 次回复」→ **本段即撞车报告，等 K3 拍板确认后续口径**。
+
+**已固化的修法（供 K3 采纳）**：push 前**必须**执行 `git fetch` 并取 **`origin/main` 最新 commit 时间**（不是我上次 push 的时间）作为 30 min 基准；建议在 push 脚本里加一条硬校验：
+`now - (origin/main commit time) >= 1800s`，不足则直接 commit 留本地、立即结束（per §0.25.8 不阻塞）。
+
+**附带观察（非我发起）**：cron 于 21:24 推送时，距我 21:09 的推送仅约 15 min，同样落在 30 min 内 —— 即本项目**存在「人工 push 与 cron push 互不知情」的结构性撞车面**，值得一并裁决。
