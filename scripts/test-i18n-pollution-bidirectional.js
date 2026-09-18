@@ -36,13 +36,17 @@ const guard = require(path.join(ROOT, 'scripts', 'guards', 'i18n-guard.js'));
  * 汇总 red 期望值 (空跑用例)
  *  · 改造前实测 (2026-09-19, scope=src/) = 4, 全部为 I18N_POLLUTION
  *    (quote-desk/all/page.tsx:126 个 / CompareTable.tsx:57 对 / RushDeliveryGrid.tsx:141 页 / whatsapp.ts:27 来)
- *  · 改造后 = 2 —— 差异 −2 逐笔可归因:
+ *  · 双向化改造后 = 2 —— 差异 −2 逐笔可归因:
  *      quote-desk/all/page.tsx:126 与 RushDeliveryGrid.tsx:141 两笔落在 **JSX 代码注释** (花括号注释块) 内,
  *      不是「值」; 本门童判据原文即「**值**含简体专用字形 / **值**含 CJK」,
  *      双向化后改为「只扫字符串字面量 + 结构化 locale 值作用域」⇒ 该两笔属实现缺陷造成的假阳性, 已消除。
- *  · 若此值为 2 → 门童与基线同时正常; 若 > 2 → 有新增污染或基线失守
+ *  · 2026-09-19 Step 4 收尾后 = 0 —— 末两笔 (CompareTable.tsx:57 对 / whatsapp.ts:27 来) 经定位属
+ *      **zh-hk 值内真简体** (真值 = src/components/geo/CompareTable.tsx:57 caption、
+ *      src/lib/whatsapp.ts:27 zh-hk 模板), 已按字形修复 (對/來), 同值内其余存量简体字形一并修正
+ *      ⇒ 既有内向 red 从 2 降至 0, 故 EXPECTED_RED 由 2 更新为 0 (**判据不变严也不放宽: 期望值 = 当前已知 red 清册**)。
+ *  · 若此值 > 0 → 有新增污染或基线失守 (期望值只随「已修完的 red」下调, 不随新增污染上调)
  */
-const EXPECTED_RED = 2;
+const EXPECTED_RED = 0;
 const SRC = path.join(ROOT, 'src');
 
 let pass = 0, fail = 0;

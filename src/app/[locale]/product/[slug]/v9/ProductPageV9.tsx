@@ -25,6 +25,9 @@ import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversio
 import { formatPriceForLocale, getIndependentPrice, convertToFromPrice } from '@/lib/pricing';
 import { GalleryV9 } from './GalleryV9';
 import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlock';
+// Step 4 (方案 (a)): 規格值三語化 — products.ts 規格三欄 (material/printMethod/finishing) 原文 -> 本地化值;
+// 查不到 -> fallback 中文原文 (不報錯/不留空); zh-hk 值 = 原文逐字 ⇒ zh-hk 渲染輸出零改動
+import { localizeSpecValue } from '@/data/product-specs-i18n';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -594,7 +597,7 @@ export function ProductPageV9({
                     v ? (
                       <div key={k} className="grid grid-cols-[128px_1fr] gap-4 py-2.5 border-b border-[#F0F1F3] text-[15.5px]">
                         <dt className="font-bold text-[#1F2937]">{k}</dt>
-                        <dd className="text-[#6B7280]">{v}</dd>
+                        <dd className="text-[#6B7280]">{localizeSpecValue(v, locale)}</dd>
                       </div>
                     ) : null
                   ))}

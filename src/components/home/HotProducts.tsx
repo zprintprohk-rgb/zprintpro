@@ -9,6 +9,8 @@ import { Locale } from '@/lib/seo';
 import { shouldShowPrice, getQuoteLabel, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 import { products, categories, getProductDisplayTitle, getProductImageAlt } from '@/data/products';
+// Step 4 (方案 (a)): 規格材質值三語化 (查不到 -> fallback 中文原文)
+import { localizeSpecValue } from '@/data/product-specs-i18n';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 interface HotProductsProps {
@@ -254,7 +256,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                       </h3>
                       {/* 材质 + 起订 行 (font-mono 规格行, 同分类页 v9) */}
                       <div className="font-mono text-[13px] text-[#6B7280] tracking-[0.02em] h-[2.6em] overflow-hidden leading-[1.5] mb-3 text-center">
-                        {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{locale === 'zh-hk' ? '[材質]' : locale === 'ja' ? '[材質]' : '[Material]'} {product.specs.material}</span>}
+                        {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{locale === 'zh-hk' ? '[材質]' : locale === 'ja' ? '[材質]' : '[Material]'} {localizeSpecValue(product.specs.material, locale)}</span>}
                         <span className="whitespace-nowrap mr-2.5">{locale === 'zh-hk' ? '[起訂]' : locale === 'ja' ? '[最小注文]' : '[MOQ]'} {product.minQuantity} {getPriceUnitWord(product.price_range) ? getPriceUnitWord(product.price_range).replace('/', '') : (locale === 'ja' ? '個' : '件')}</span>
                       </div>
                       {/* price area — v9 大号价格 (getDisplayAnchor 优先), clickable to PDP */}

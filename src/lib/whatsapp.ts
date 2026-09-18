@@ -19,12 +19,12 @@ const PHONE = '8619880851334'; // +8619880851334，去掉 +
 const TEMPLATE: Record<string, (ctx: WhatsAppContext) => string> = {
   'zh-hk': (ctx) => {
     const lines = [
-      `你好，我想咨询${ctx.productName || '印刷'}的报价。`,
+      `你好，我想諮詢${ctx.productName || '印刷'}的報價。`,
       ctx.size ? `尺寸：${ctx.size}` : null,
-      ctx.material ? `材质：${ctx.material}` : null,
-      ctx.quantity ? `数量：${ctx.quantity}` : null,
+      ctx.material ? `材質：${ctx.material}` : null,
+      ctx.quantity ? `數量：${ctx.quantity}` : null,
       ctx.extra || null,
-      `来源：${ctx.source || 'zprintpro.com'}`,
+      `來源：${ctx.source || 'zprintpro.com'}`,
     ].filter(Boolean);
     return lines.join('\n');
   },

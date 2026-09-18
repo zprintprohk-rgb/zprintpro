@@ -3,9 +3,10 @@
   "recordedAt": "2026-09-19",
   "decision": "K3 2026-09-19 派活 Step 3: 门童 #4 双向化 — 专用基线通道 (比照门童 #20 meta-baseline.json), 不共用 check-regression-guard.js 全局 perFile 预算",
   "note": "基线 = 双向化新增检测维度 (en 含 CJK / ja 简体专用字形 / zh-hk 广义简体专用字形) 的实测存量命中; 存量只许递减, 超出基线的部分 = 新增缺陷 (red 硬拦). 既有内向窄集 red (v1 pattern) 永不进基线.",
-  "total": 1459,
-  "measuredTotal": 1466,
-  "legacyRedNotBaselined": 7,
+  "step4Dec": "2026-09-19 Step 4 (products.ts 规格三栏三语化) 附带递减 −11: src/components/geo/CompareTable.tsx 6→0 与 src/lib/whatsapp.ts 5→0 —— 该两档 zh-hk 值内的简体字形经实测确认为**真缺陷**, 全值改字形 (CompareTable caption「PVC、PP合成紙、銅版紙、牛皮紙的詳細對比」/ whatsapp zh-hk 模板「諮詢/材質/數量/來源」), 故 perFile 同步递减 (只许递减, 未上调任何条目).",
+  "total": 1448,
+  "measuredTotal": 1453,
+  "legacyRedNotBaselined": 5,
   "perRule": {
     "I18N_POLLUTION_JA": 197,
     "I18N_POLLUTION": 124,
@@ -21,7 +22,6 @@
     "src/app/[locale]/payment-methods/page.tsx": 18,
     "src/app/[locale]/press-kit/page.tsx": 6,
     "src/components/ProductLongDescription.tsx": 1,
-    "src/components/geo/CompareTable.tsx": 6,
     "src/components/japan/DoujinSKU.tsx": 3,
     "src/components/layout/Footer.tsx": 13,
     "src/components/layout/Header.tsx": 1,
@@ -42,7 +42,6 @@
     "src/data/price-tables/white-card-bags-cost.json": 1,
     "src/data/sku-seo-data.ts": 33,
     "src/lib/seo.ts": 4,
-    "src/lib/seo/schema-extensions.ts": 1,
-    "src/lib/whatsapp.ts": 5
+    "src/lib/seo/schema-extensions.ts": 1
   }
 }

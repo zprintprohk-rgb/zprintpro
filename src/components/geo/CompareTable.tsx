@@ -54,7 +54,7 @@ const MATERIALS: Material[] = [
 const I18N: Record<Locale, { title: string; caption: string; dimensions: string; waterproof: string; sun: string; cost: string; best: string; paragraph: { title: string; p1: string; p2: string; p3: string } }> = {
   'zh-hk': {
     title: '材質對比完全指南',
-    caption: 'PVC、PP合成纸、铜版纸、牛皮纸的详细对比',
+    caption: 'PVC、PP合成紙、銅版紙、牛皮紙的詳細對比',
     dimensions: '對比維度',
     waterproof: '防水性',
     sun: '耐曬度',

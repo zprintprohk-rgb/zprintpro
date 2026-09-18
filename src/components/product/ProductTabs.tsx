@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { Check, Info, Truck, FileText } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { Product } from '@/data/products';
+// Step 4 (方案 (a)): 規格值三語化 (查不到 -> fallback 中文原文)
+import { localizeSpecValue } from '@/data/product-specs-i18n';
 
 interface ProductTabsProps {
   product: Product;
@@ -169,25 +171,25 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
                 {product.specs?.material && (
                   <tr className="border-b border-[#EEEEEE]">
                     <td className="py-3 text-[#666666] w-1/3">{t.specs.material}</td>
-                    <td className="py-3 text-[#333333]">{product.specs.material}</td>
+                    <td className="py-3 text-[#333333]">{localizeSpecValue(product.specs.material, locale)}</td>
                   </tr>
                 )}
                 {product.specs?.size && (
                   <tr className="border-b border-[#EEEEEE]">
                     <td className="py-3 text-[#666666]">{t.specs.size}</td>
-                    <td className="py-3 text-[#333333]">{product.specs.size}</td>
+                    <td className="py-3 text-[#333333]">{localizeSpecValue(product.specs.size, locale)}</td>
                   </tr>
                 )}
                 {product.specs?.printMethod && (
                   <tr className="border-b border-[#EEEEEE]">
                     <td className="py-3 text-[#666666]">{t.specs.printMethod}</td>
-                    <td className="py-3 text-[#333333]">{product.specs.printMethod}</td>
+                    <td className="py-3 text-[#333333]">{localizeSpecValue(product.specs.printMethod, locale)}</td>
                   </tr>
                 )}
                 {product.specs?.finishing && (
                   <tr className="border-b border-[#EEEEEE]">
                     <td className="py-3 text-[#666666]">{t.specs.finishing}</td>
-                    <td className="py-3 text-[#333333]">{product.specs.finishing}</td>
+                    <td className="py-3 text-[#333333]">{localizeSpecValue(product.specs.finishing, locale)}</td>
                   </tr>
                 )}
                 <tr>

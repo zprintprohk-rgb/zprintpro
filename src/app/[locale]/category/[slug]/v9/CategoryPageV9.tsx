@@ -28,6 +28,8 @@ import {
   getPriceUnitWord,
 } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
+// Step 4 (方案 (a)): 規格材質值三語化 (查不到 -> fallback 中文原文)
+import { localizeSpecValue } from '@/data/product-specs-i18n';
 import { SpecFinderV9, SpecFinderOptions } from './SpecFinderV9';
 import { TrustBadgeBlock } from './TrustBadgeBlock';
 
@@ -237,7 +239,7 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
           </a>
         </h3>
         <div className="font-mono text-[13px] text-[#6B7280] tracking-[0.02em] h-[2.6em] overflow-hidden leading-[1.5] mb-3">
-          {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{t9.materialTag} {product.specs.material}</span>}
+          {product.specs?.material && <span className="whitespace-nowrap mr-2.5">{t9.materialTag} {localizeSpecValue(product.specs.material, locale)}</span>}
           <span className="whitespace-nowrap mr-2.5">{t9.moqTag} {product.minQuantity} {unitWord ? unitWord.replace('/', '') : '件'}</span>
         </div>
         <div className="flex items-baseline gap-1.5 h-8 whitespace-nowrap">
@@ -417,7 +419,7 @@ export function CategoryPageV9({
             const m = p.specs?.material;
             if (m && !seen.has(m)) {
               seen.add(m);
-              materials.push({ label: `${t9.specMaterialPrefix}${m}`, slug: p.slug });
+              materials.push({ label: `${t9.specMaterialPrefix}${localizeSpecValue(m, locale)}`, slug: p.slug });
             }
           }
           const qtySeen = new Set<number>();
