@@ -1,0 +1,25 @@
+（chrome 基線取自對照頁 photo-book zh-hk: 场国务产与语言无还东时）
+OK    zh-hk  HTTP 200
+        title  : 自費出版印刷：1 本起印、無最低起訂量 平裝精裝 | 智印港
+        h1     : 自費出版印刷：1 本起印、無最低起訂量 平裝精裝 | 智印港
+        desc   : [94] OK
+        hreflang: zh-HK,en,ja,x-default
+        qa-answer: 6 | <table>: 2 | 問句 H2: 5 | 正文非空: true
+        品牌    : OK (智印港) | 他語系品牌: 0
+        簡體字  : 0
+OK    en  HTTP 200
+        title  : Self-Publishing Printing: 1 Copy, Paperback | ZprintPro
+        h1     : Self-Publishing Printing: 1 Copy, Paperback | ZprintPro
+        desc   : [156] OK
+        hreflang: zh-HK,en,ja,x-default
+        qa-answer: 6 | <table>: 2 | 問句 H2: 5 | 正文非空: true
+        品牌    : OK (ZprintPro) | 他語系品牌: 0
+OK    ja  HTTP 200
+        title  : 自費出版印刷：1 部から、最低注文数なし 並製本 | ZprintPro
+        h1     : 自費出版印刷：1 部から、最低注文数なし 並製本 | ZprintPro
+        desc   : [90] OK
+        hreflang: zh-HK,en,ja,x-default
+        qa-answer: 6 | <table>: 2 | 問句 H2: 5 | 正文非空: true
+        品牌    : OK (ZprintPro) | 他語系品牌: 0
+
+== ✅ 全部通過 (3/3) ==
