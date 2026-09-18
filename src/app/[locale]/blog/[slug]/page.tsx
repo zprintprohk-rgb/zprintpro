@@ -810,7 +810,11 @@ function getPostData(locale: Locale, slug: string) {
     // ③ 快速答案块识别 (AEO/GEO 核心环节, v5.1): div 首段以「快速答案」开头(允许 strong 包裹) → 加 qa-answer class
     //    专属样式见 globals.css .qa-answer (琥珀底 + ⚡ 徽标 + 卡片感, ⚡ 由 CSS ::before 生成)
     //    变体覆盖: <p>快速答案… / <p><strong>快速答案…</strong> (FAQ 的「A：快速答案」不误伤, 因非内容开头)
-    content = content.replace(/<div class="([^"]*)">\s*<p[^>]*>(?:\s*<[^>]+>)*\s*快速答案/g, (m, cls) => {
+    //    2026-09-18 修复 (K3 拍板 挂账 2 选项 i「只对齐直译等价位」): 本正则原硬编码中文字面
+    //      ⇒ en/ja 的快速答案块永远拿不到 qa-answer class (线上实测: zh-hk 6 / en 0 / ja 0)
+    //      ⇒ 补上 en「Quick Answer / Quick answer」与 ja「クイック回答」(实测变体枚举: 18 / 6 / 15 处)
+    //      范围仅限直译等价位; en「Answer Nugget」/ ja「答え nugget」属另一语义标签, 经 K3 裁决**不纳入**
+    content = content.replace(/<div class="([^"]*)">\s*<p[^>]*>(?:\s*<[^>]+>)*\s*(?:快速答案|Quick [Aa]nswer|クイック回答)/g, (m, cls) => {
       const newCls = cls.includes('qa-answer') ? cls : `qa-answer ${cls}`;
       return m.replace(`class="${cls}"`, `class="${newCls}"`);
     });

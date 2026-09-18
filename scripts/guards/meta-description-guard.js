@@ -204,6 +204,96 @@ function scanRenderPath(hits, rawOverride) {
 }
 
 /**
+ * 规则 E: 未注册 meta 检测 (2026-09-18 线上探针事故固化, K3 拍板挂账 1 选项 a)
+ *
+ * 事故: `src/data/blog-posts.ts` 中 3 条 `BlogPostMeta` 早已完整声明 (title/excerpt 三语齐备),
+ *   但从未加入 `export const blogPosts` 数组 ⇒ `getBlogPostMetaBySlug()` (只查该数组, L2190)
+ *   返回 undefined ⇒ 线上 9 页 <title> 与 <h1> **退化成 slug 本身**, 且无 meta description。
+ *   (实测: wedding-invitation-{pricing,cost}-guide + wedding-table-card-printing-guide × zh-hk/en/ja)
+ *   「声明了却没接上」= 静默失效, 与规则 D 同源缺陷族。
+ *
+ * 本规则把「声明即必须注册」变成机审不变量。
+ */
+const POSTS_FILE = 'src/data/blog-posts.ts';
+
+function scanUnregisteredMeta(hits, rawOverride) {
+  let raw = rawOverride;
+  if (raw === undefined) {
+    try { raw = fs.readFileSync(path.join(ROOT, POSTS_FILE), 'utf8'); } catch (e) { return; }
+  }
+  // 1) 已聲明的 meta 常數 (名稱 + slug + 行號)
+  const declared = [];
+  const dRe = /const\s+(\w+)\s*:\s*BlogPostMeta\s*=\s*\{\s*\n?\s*slug:\s*'([^']+)'/g;
+  let m;
+  while ((m = dRe.exec(raw)) !== null) {
+    declared.push({ name: m[1], slug: m[2], line: raw.slice(0, m.index).split('\n').length });
+  }
+  // 2) 註冊進 blogPosts 陣列的識別字集合
+  const start = raw.indexOf('export const blogPosts');
+  if (start < 0) return;
+  const end = raw.indexOf('];', start);
+  const arrSrc = raw.slice(start, end < 0 ? raw.length : end);
+  const registered = new Set();
+  for (const a of arrSrc.matchAll(/([A-Za-z_]\w*)\s*,/g)) registered.add(a[1]);
+
+  // 3) 差集 = 未註冊
+  const lines = raw.split('\n');
+  for (const d of declared) {
+    if (registered.has(d.name)) continue;
+    hits.push({
+      file: POSTS_FILE, line: d.line, severity: 'red', ruleId: 'META_UNREGISTERED',
+      match: `${d.name} -> ${d.slug}`,
+      ruleName: 'BlogPostMeta 已聲明但未註冊進 blogPosts 陣列 (title/description 靜默退化成 slug)',
+      fix: `把 ${d.name} 加入 export const blogPosts 陣列 (同簇位置), 或明確退役該篇`,
+    });
+  }
+}
+
+/**
+ * 规则 F: 快速答案块識別的跨語系覆蓋 (2026-09-18 固化, K3 拍板挂账 2 选项 i)
+ *
+ * 事故: v5.1 快速答案块 (AEO/GEO 核心) 的識別正則硬編碼中文字面「快速答案」⇒ en/ja 全部不命中,
+ *   線上實測 qa-answer class: zh-hk 6 / en 0 / ja 0 (即 en/ja 的答案块拿不到琥珀底 + ⚡ 徽标樣式)。
+ * 範圍: 僅直譯等價位 (快速答案 / Quick Answer / クイック回答);
+ *   en「Answer Nugget」與 ja「答え nugget」屬另一語義標籤, 經 K3 裁決不納入, 故本規則不要求。
+ */
+const QA_MARKER_REQUIRED = [
+  { token: '快速答案', label: 'zh-hk' },
+  { token: 'クイック回答', label: 'ja' },
+  { re: /Quick\s*\[Aa\]nswer/, label: 'en (Quick Answer / Quick answer)' },
+];
+
+function scanQaAnswerLocaleCoverage(hits, rawOverride) {
+  let raw = rawOverride;
+  if (raw === undefined) {
+    try { raw = fs.readFileSync(path.join(ROOT, RENDER_PATH_FILE), 'utf8'); } catch (e) { return; }
+  }
+  // 抓「快速答案块識別」正則字面 (從 <div class="..." 起到第一個 /g 止)
+  const at = raw.indexOf('快速答案块识别');
+  const anchor = at >= 0 ? at : raw.indexOf('qa-answer ${cls}');
+  if (anchor < 0) return;                          // 找不到該段 → 不誤報 (由規則 D 的 D2 兜底)
+  const seg = raw.slice(anchor, anchor + 2000);
+  const reStart = seg.indexOf('/<div class="');
+  if (reStart < 0) return;
+  const reEnd = seg.indexOf('/g', reStart);
+  if (reEnd < 0) return;
+  const regexSrc = seg.slice(reStart, reEnd + 2);
+  const line = raw.slice(0, anchor).split('\n').length;
+
+  for (const need of QA_MARKER_REQUIRED) {
+    const ok = need.token ? regexSrc.includes(need.token) : need.re.test(regexSrc);
+    if (!ok) {
+      hits.push({
+        file: RENDER_PATH_FILE, line, severity: 'red', ruleId: 'BLOG_QA_ANSWER_LOCALE',
+        match: regexSrc.slice(0, 90),
+        ruleName: `快速答案块識別正則缺少 ${need.label} 語系標記 (該語系 AEO 答案块無樣式)`,
+        fix: `在識別正則的引言比對處補上 ${need.token || 'Quick Answer'} (直譯等價位)`,
+      });
+    }
+  }
+}
+
+/**
  * 扫描入口 —— 不依赖变更文件列表, 每次 commit 全量复核
  * (meta 完整性是数据文件级不变量, 否则改 .tsx 的那次 commit 会漏过)
  *
@@ -262,6 +352,12 @@ function scan(_files) {
   // 规则 D: 渲染路径可解析性 (与文件级扫描无关, 每次全量复核)
   scanRenderPath(hits);
 
+  // 规则 E: 未注册 meta 检测 (声明即必须注册)
+  scanUnregisteredMeta(hits);
+
+  // 规则 F: 快速答案块識別跨語系覆蓋
+  scanQaAnswerLocaleCoverage(hits);
+
   // 专用基线豁免: 每个文件只豁免 baseline.perFile[file] 条, 其余 = 新增缺陷
   const b = loadMetaBaseline();
   if (b.total === 0) return hits; // 无基线 → 全量裸报
@@ -287,10 +383,15 @@ module.exports = {
   RULES: [
     { id: 'META_DESCRIPTION_INTEGRITY', severity: 'red' },
     { id: 'META_DESCRIPTION_RENDER_PATH', severity: 'red' },
+    { id: 'META_UNREGISTERED', severity: 'red' },
+    { id: 'BLOG_QA_ANSWER_LOCALE', severity: 'red' },
   ],
   FILES,
   RENDER_PATH_FILE,
+  POSTS_FILE,
   DUP_EXACT,
   DUP_PREFIX,
   scanRenderPath,
+  scanUnregisteredMeta,
+  scanQaAnswerLocaleCoverage,
 };

@@ -2096,6 +2096,14 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-07-10 v4 daily-content-evolve P2 unlock (3 P2 blogs)
   lpTradeShowBanner,
   lpWeddingEnvelope,
+  // 2026-09-18 K3 拍板 (挂账 1 选项 a「注册」): 以下 3 条 BlogPostMeta 早已完整声明 (title/excerpt 三语齐备)
+  //   但从未加入本数组 → getBlogPostMetaBySlug() 返回 undefined → 线上 <title>/<h1> 退化成 slug 本身,
+  //   且无 meta description (2026-09-18 线上探针实测: wedding-invitation-{pricing,cost}-guide +
+  //   wedding-table-card-printing-guide, 各 × zh-hk/en/ja = 9 页)。同属婚慶簇 (favor-bag / red-packet /
+  //   envelope 之上), 一并注册; 防复发机审 = 门童 #20 规则 E (未注册 meta 检测)。
+  lpWeddingInvitationPricing,
+  lpWeddingInvitationCost,
+  lpWeddingTableCard,
   lpDoujinCircle,
   // 2026-07-13 daily-content-evolve Tier B 拓點 (酒店民宿)
   lpHotelAmenitySticker,
