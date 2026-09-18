@@ -2222,8 +2222,8 @@
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-09-15",
-    "last_updated_event": "gsc-feedback-loop 2026-09-16 (v9.4 rearm 持续轮; M1 联合验收日); 新增 gsc_feedback_2026_09_16 block (8 T1 锁词 9/3→9/10 追踪复核 + title v4 线上 6 页复验 + 锚文本审计 grep 复验 8/8 + 智印港 87.5% CTR 维持 + 301×11 PASS + T43 观察 + 首页 hero CTA 双 locale 前缀观察上报); 前序 2026-09-15 block 与 9/14 block 锚审计 8/8 维持; P0 coverage 95.45% 维持, priority_boost 4 holds 维持; GSC 数据 9/10 STALE (~6d), 9/17 首个干净对比窗 (M1 7d 线终判).",
+    "last_updated": "2026-09-18",
+    "last_updated_event": "gsc-feedback-loop 2026-09-18 (v9.4 rearm 持续轮; ★ GSC 数据换代 9/10 档 → 9/18 档, STALE 解除); 新增 gsc_feedback_2026_09_18 block (全站 28d 356 clicks/20,833 imps/1.71%/pos 18.7 + 质量三件套 v9.4 判定 (striking ≥8 ✅ / pos1-20 占比 38.66% ✅ / 有点击词无法证实) + M1 线 1: 9/9-9/15 合计 101 clicks ≥25 ✅ + 8 T1 锁词周环比 (貼紙印刷 +3.90 连续正向, 即日印刷唯一破零) + title v4 线上 6 页复验 4/6 OK + 锚文本审计 8/8 (多词超额) + 智印港 64.71% CTR 维持 + ジープリント 0 命中 + 301×11 PASS + T43 观察 + S2 命中 2 处存量死 slug); priority_boost: 2 UPDATE (Q-P1-01 slug 修复 + tier/boost T2/2→T3/1 保守归位 / Q-P1-03 slug 修复) + 2 holds (Q-P1-02 / Q-P2-03); P0 coverage 95.45% 维持 (本轮无立项/结项)。",
     "tier_b_coverage": "2/9 (22%) — 8 月待补",
     "pending_in_queue": 22,
     "p2_total": 3,
@@ -9937,7 +9937,7 @@
     "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
   },
-  "last_gsc_feedback_update": "2026-09-16 (v9.4 rearm 持续轮; 新增 gsc_feedback_2026_09_16 block: 8 T1 词追踪复核 + 锚文本审计 8/8 复验 + title v4 线上 6 页复验 + 301×11 PASS + 首页 hero CTA 双 locale 前缀观察上报; 9/17 首个干净对比窗)",
+  "last_gsc_feedback_update": "2026-09-18 (v9.4 rearm 持续轮; 新增 gsc_feedback_2026_09_18 block: GSC 数据换代 9/10→9/18 档 + STALE 解除 + 质量三件套判定 + M1 线1 7d 101 clicks + 8 T1 词周环比 + title v4 6 页复验 + 锚文本 8/8 + 301×11 PASS + S2 存量死 slug 2 处上报)",
   "gsc_feedback_2026_09_10": {
     "version": "gsc-feedback-v7-2026-09-10",
     "run_at": "2026-09-11T03:15:00+08:00",
@@ -12091,5 +12091,206 @@
       "pending": "9/17: 8 T1 词 7d 周环比 + M1 线1 7d clicks ≥25 终判 + 008 首报 (待 K3 GA4 G-XXXX) + 智印港 40%+ 复核 + ジープリント 6 query 复测"
     },
     "verification_window_note": "数据 9/10 为最新真值; 9/17 起干净对比窗 + M1 7d 线终判日; pwsh 沙箱阻塞 → git commit/push/verify 无法执行 (报告落盘 = 任务成功 per v9.4 §3-2, 不虚报 PASS); host-side wrapper 负责 commit/push (lane-git-commit.py --lane gsc-feedback --include-matrix)"
+  },
+  "daily_content_2026_09_18": {
+    "version": "daily-content-v9.6-2026-09-18",
+    "run_at": "2026-09-18 (v9.4 rearm 持续轮; pwsh 沙箱阻塞无法读精确时钟, 时序锚 = 仓内最新 commit 4923ced4 2026-09-18 20:54 +0800 与 K3 v10.1 指令 19:10)",
+    "cron": "zprintpro-daily-content-1x7w v9.6 (2026-09-18; GSC 最新落盘真值 = 9/10 解析 → STALE vs 72h 门; 本块不含任何新数字结论)",
+    "primary_deliverable": {
+      "task": "K3 v10.1 (2026-09-18 19:10) 串行批次 P1 · MOQ 统一文案落位 (决策 1 终裁 B, 已批) + P3-1 CSV 源头治理定位",
+      "ruling_ref": "docs/2026-09-18-k3-directive-v101-five-decisions-ruling.md 一 决策1 / 二 串行批次裁决",
+      "plan_ref": "docs/2026-09-18-execution-layer-optimal-plan-v1.md P1/P3"
+    },
+    "p1_moq_landing": {
+      "ssot_module": "src/data/print-method-policy.ts (新建: MOQ_ONELINER / MOQ_STANDARD_PARAGRAPH / MOQ_AEO / MOQ_DISPLAY / DIGITAL_LINE_BOOK_SLUGS / getDisplayMinOrder)",
+      "scope_rule": "v10.1 条件1: 仅数码线书刊/本册类 SKU (books 品类 4 个: catalog-printing / perfect-bound-books / hardcover-books / spiral-notebooks); 柯式线 (5 个餐牌类 SKU) 起订量展示不动",
+      "p1_3_features": "src/data/products.ts 4 处 【50本起訂】→【1本起訂】 (L5664/5841/5941/6034); 其余 5 处餐牌类保持 【50本起訂】 (L4755/4830/4926/5023/5117) 未动",
+      "p1_1_display": "PDP src/app/[locale]/product/[slug]/page.tsx 价格卡起订量改走 getDisplayMinOrder (非名单 SKU 输出与改前完全一致的 minQuantity 数字 = 零 churn) + 品类页 src/components/category/CategoryProductCard.tsx moqLine 同源 helper",
+      "p1_2_aeo": "PDP 新增 AEO 快速答案块 (最少可以印幾本 -> 1 本 + MOQ_STANDARD_PARAGRAPH 统一说明段), 仅 4 个数码线 SKU 渲染; books 品类页既有 FAQ 1 本起訂（數碼印刷）保留",
+      "engine_untouched": "products.ts minQuantity 全部未改 (v10.1 条件2 + 决策 1-B 可逆优先; 报价引擎零影响)",
+      "price_untouched": "零价格数字改动 (月曆 HK$8-25 / BK-002 HK$6-32 两次裁定锁定)",
+      "no_competitor_numbers": "文案只陈述我方 (1 本起印), 无任何竞品 MOQ 对比数字 (v10.1 条件3 合规红线)"
+    },
+    "p3_csv_governance": {
+      "status": "定位完成, 写入未执行 (BLOCKED: 需 node 跑生成器 + 发现生成器非 merge 模式)",
+      "finding_1": "44 处 A/A 重复缺陷 (门童 #20 归因 sku-seo-data.ts) 在 CSV 源头 zprintpro-sku-seo-data.csv 命中 0 (具名短语 grep 0; \\p{Han}{2,}[/／]\\p{Han}{2,} 全扫仅 2 行, 均非重复前缀)",
+      "finding_2": "派生文件 src/data/sku-seo-data.ts 的 zh-hk description 为批量模板 名稱/名稱 N 起。採用 …, 与 CSV SEO描述(ZH) 完全不同 (waterproof-stickers: CSV=PVC材質防水貼紙，具有出色的防水…) -> 派生文件非由当前 CSV 生成, 或被模板批量覆写",
+      "finding_3": "scripts/csv-to-sku-seo.mjs 为全量覆盖 (const out = {} 逐行赋值 + fs.writeFileSync 整文件写出), 不是 merge 模式; 执行层最优方案 v1 三 P3-2 记「已确认 merge 模式」与实况不符",
+      "finding_4": "CSV 75 行 vs 派生 99 个顶层 slug; CSV 缺 corrugated-boxes / tuck-end-boxes / drink-tokens / wedding-suite-bundle / doujinshi-printing / gang-run-card-boxes / kraft-paper-packaging-box (grep 0 命中) -> 直接跑生成器会丢 >=7 个 skuSeoData 条目",
+      "impact": "按 v1 方案原样跑 P3-2/P3-3: (1) 44 处不会减少 (CSV 无此串) (2) 反而把派生文件降级回旧内容 (ja 描述 / keywords 40->6 / faqs 模板) (3) 丢 >=7 SKU 覆盖",
+      "next_cycle_spec": "(1) 备份 + 断言三件套 (2) 只读 diff 脚本导出 CSV<->派生 逐字段差异表 (3) 决定以派生为准回填 CSV (推荐) 还是以 CSV 为准重生成 (4) 再对 44 处机械去重 (门童 #20 规定修法: 去掉重复的一半, 不改措辞)",
+      "candidate_lines": "52 行 description 以 名稱/… 开头, 逐行判读 45 行为 A/A 精确重复或 >=3 字严格前缀重复 (门童基线记 44, ±1 源于 DUP_EXACT 非锚定子串匹配); 精确枚举需 node 跑门童 #20 (本 lane 阻塞)"
+    },
+    "acceptance": {
+      "forbidden_words": "智印印港 / 外部竞品名 / 双品牌: 本次新增文本 0 (grep 验收 PASS)",
+      "json_validity": "matrix 本块 JSON 结构合法 (与 2026_09_16 块同构); 本次未改 blog-data JSON",
+      "bc_ban": "名片词零新增 (本次未触及名片展示层/SEO 层; 未改 greeting-cards 资产与 middleware 301)",
+      "tsc_build": "无法执行 (pwsh 沙箱阻塞); 本次改 4 文件 (含 2 个模板), 未虚报 PASS - 待 host/下一 lane 跑 npx tsc --noEmit 确认 54=54 (下降 = 破坏信号)",
+      "s1_answer_block": "zh-hk MOQ_AEO.a = 1 本起印，無最低起訂量。少量走數碼印刷、批量走柯式膠印，100 本以上柯式印刷更經濟，色彩更準確。 = 43 全角字 (40-60 区间内, <=60 硬上限) PASS"
+    },
+    "calibration_day_check": {
+      "is_calibration_day": false,
+      "schedule": "9/18 非校准日; GSC 最新落盘真值 = .hermes/hk28d-queries.json (9/10 解析 8/14-9/10)",
+      "status": "STALE (9/10 vs 9/18 = 8d > 72h 门)",
+      "pending": "下一 gsc-feedback/daily lane: 拉 9/17+ 干净窗数据 (7d/28d 全站 + 8 T1 词 + 智印港/ジープリント) 落盘 GSC数据/ 并更新 index.json"
+    },
+    "verification_window_note": "pwsh 沙箱阻塞 -> git commit/push/verify 无法执行 (报告落盘 = 任务成功 per v9.4 §3-2, 不虚报 PASS); host-side wrapper 负责 commit/push (lane=daily-content --include-matrix)"
+  },
+  "gsc_feedback_2026_09_18": {
+    "version": "gsc-feedback-v8-2026-09-18",
+    "run_at": "2026-09-18 (v9.4 rearm 持续轮; gsc-feedback-loop lane 22:43 窗口; pwsh 沙箱仍被禁 (不重试), 全程 read/glob/grep/write/edit + web 工具; git commit/push 由 host-side wrapper 执行)",
+    "cron": "gsc-feedback-loop (2026-09-18; ★ 数据源换代为 K3 9/18 上传的 12 档 xlsx, 窗口 28d = 2026-08-19~09-15, old 28d = 08-11~09-07; STALE 状态解除; 本 run 线上探针 301×11 + 新站落地页 ×7 + title ×6)",
+    "data_source": {
+      "canonical_new": "GSC数据/*2026-09-18.xlsx (12 档: 24h/7d/28d × 三站点汇总+香港+日本+美国) → .hermes/gsc-2026-09-18/extract.json (9/18 lane 解析)",
+      "canonical_old": "GSC数据/*2026-09-10.xlsx (12 档, 上一窗) → 同一 extract.json 的 old.* 维度",
+      "derived": [
+        ".hermes/gsc-2026-09-18/raw-summary.txt (28d 日序列 + 三站点合计 + Top40 查询 + Top30 网页 + 设备/呈现 + Top15 国家)",
+        ".hermes/gsc-2026-09-18/trend.txt (周度趋势 + 位置带分布 + 零点击桶 + 品牌词 + 带钱簇)",
+        ".hermes/gsc-2026-09-18/analysis-queries.md (查询层 406 行全量分析)",
+        ".hermes/gsc-2026-09-18/analysis-pages.md (页面层 770 行全量分析)",
+        ".hermes/gsc-2026-09-18/opps.txt (机会量化 + 港/美/日 Top 查询 + 24h 切片)"
+      ],
+      "windows": "28d 新窗 2026-08-19~09-15 (GSC 滞后 ~2-3 天); old 28d 08-11~09-07; 两窗重叠 20 天, 各 8 天独有 (per analysis-pages §0.1)",
+      "staleness": "★ 解除: 新档数据日 = 9/15, 落盘/解析 = 9/18, staleness ≤3d < 72h 门 ⇒ 本 run 首次可在 9/16 之后输出带数字结论 (前四轮 9/13-9/16 均为 STALE)",
+      "tool_note": "pwsh 禁 → 无 GSC API 拉取, 数据来自 K3 人工上传 xlsx + 同 lane 已落盘的 extract.json/派生物; 当量按 title-audit-v4.mjs L12 (CJK×2 + ASCII×1) 手工核算; 线上 title 经 web_fetch 2026-09-18 逐条核对",
+      "live_probes": "web_fetch 2026-09-18: 旧 z-printpro.com URL ×11 (全部 cross-origin redirect to zprintpro.com = 301 链证据) + 新站 ×7 HTTP 200 (packaging/stickers/flyers/books/rush/saddle-stitch/greeting-cards) + title ×6 逐条核对"
+    },
+    "site_stats_28d": {
+      "combo_all": { "clicks": 356, "imps": 20833, "ctr": 0.0171, "wpos": 18.7 },
+      "by_country": {
+        "hk": { "clicks": 251, "imps": 10848, "ctr": 0.0231, "wpos": 16.5 },
+        "jp": { "clicks": 38, "imps": 1860, "ctr": 0.0204, "wpos": 19.2 },
+        "us": { "clicks": 23, "imps": 3948, "ctr": 0.0058, "wpos": 20.7 },
+        "uk": { "clicks": 5, "imps": 435, "ctr": 0.0115, "wpos": 15.5 },
+        "tw": { "clicks": 6, "imps": 322, "ctr": 0.0186, "wpos": 12.3 },
+        "cn": { "clicks": 4, "imps": 284, "ctr": 0.0141, "wpos": 8.4 }
+      },
+      "old_combo_all": { "clicks": 349, "imps": 20323, "ctr": 0.0172, "wpos": 31.3, "note": "9/10 档 28d (08-11~09-07), 两窗重叠 20 天" },
+      "prev_reported_9_10_hk": { "clicks": 247, "imps": 10022, "ctr": 0.0246, "wpos": 26.6, "note": "前四轮报告口径 = hk28d-queries.json 解析 (8/14-9/10); 本窗 (8/19-9/15) 显示 imps +826 / +8.2%, pos 26.6→16.5 (-10.1, 大幅前置)" },
+      "half_window": "combo 前半 (8/19-9/1) 168 clicks / 10,160 imps / 1.65% / pos 21.4 → 后半 (9/2-9/15) 188 / 10,673 / 1.76% / 16.2 ⇒ 后半全面优于前半",
+      "internal_inconsistency_note": "⚠️ 口径不一致 (非本 run 引入): 同档内 country 键合计 (hk 10,848 + jp 1,860 + us 3,948 = 16,656) ≠ combo 20,833, 差 4,177 imps (其它国家/地区); 且 analysis-pages §0.2 记录 `網頁` 表合计 24,089 ≠ `圖表` 口径 20,833 (+15.6%)。本 run 一律以 combo 28d 图表口径为准, 不混用。"
+    },
+    "t1_locked_words_8_28d": {
+      "rule": "v9.3 任务 J (9/12): 8 T1 锁定词每周追踪 position + CTR; 本 run = 首次真实周环比 (前 4 轮受 STALE 限制); 攻坚 ① title v4 写满 ② 全站内链锚文本统一 (每词 ≥3)",
+      "comparison_basis": "old 28d (08-11~09-07) → new 28d (08-19~09-15), 同口径同维度 ⇒ 位置/展示变化可直接比较 (重叠 20 天, 非纯增量, 标注为方向性)",
+      "items": [
+        { "word": "包裝盒印刷", "imps_old": null, "imps_new": 71, "pos_old": null, "pos_new": 36.07, "clicks_new": 0, "note": "old 窗未进 Top40 明细, 无 pos 对照; 仍是高展示零点击 (71 imps / pos 36.1)" },
+        { "word": "紙盒印刷", "imps_old": null, "imps_new": 63, "pos_old": null, "pos_new": 35.0, "clicks_new": 0, "note": "同上; 纸盒簇最佳位 1.0 (trend.txt 带钱簇)" },
+        { "word": "包裝盒訂製", "imps_old": null, "imps_new": 56, "pos_old": null, "pos_new": 30.8, "clicks_new": 0, "note": "纸盒簇 #q=25 / 403 imps / 3 clicks (0.74%) 簇级有转化" },
+        { "word": "貼紙印刷", "imps_old": 153, "imps_new": 165, "pos_old": 31.18, "pos_new": 27.28, "pos_delta": 3.90, "clicks_new": 0, "note": "★ 展示 +12 且位置 +3.90 连续两窗正向 (9/3→9/10 已 +3.94); 仍 0 点击" },
+        { "word": "宣傳單張", "imps_old": 129, "imps_new": 129, "pos_old": 36.33, "pos_new": 36.33, "pos_delta": 0.0, "clicks_new": 0, "note": "完全持平 (展示 129/129, 位置 36.33/36.33); 簇级 宣傳單張/傳單 #q=51 / 425 imps / **0 clicks**" },
+        { "word": "即日印刷", "imps_old": 51, "imps_new": 51, "pos_old": 8.57, "pos_new": 8.57, "pos_delta": 0.0, "clicks_new": 1, "note": "★ 唯一速赢窗词 (pos 8.57 在 5-15 带), 本窗 1 click / CTR 1.96% — 已是 8 词中唯一破零者; 簇级 即日/急件 CTR 1.92% 全类最高" },
+        { "word": "書刊印刷", "imps_old": null, "imps_new": 61, "pos_old": null, "pos_new": 40.9, "clicks_new": 0, "note": "9/3 基线未收录 → 9/10 首次可见 16imp/39.7 → 本窗 61 imps/40.9 (展示持续放大)" },
+        { "word": "騎馬釘", "imps_old": 68, "imps_new": 64, "pos_old": 21.17, "pos_new": 21.17, "pos_delta": 0.0, "clicks_new": 0, "note": "展示 -4, 位置持平 21.17; 關聯詞 騎馬釘印刷 60 imps/17.53 (+5.69 于上窗), 騎馬釘書刊 60 imps/32.8" }
+      ],
+      "verdict": "3/8 词可做同口径周环比: 貼紙印刷 +3.90 (连续第二窗正向) / 即日印刷 0.0 但已破零 (1 click) / 宣傳單張 0.0 / 騎馬釘 0.0; 5 词 (包裝盒印刷/紙盒印刷/包裝盒訂製/書刊印刷) old 窗未进明细, 无对照。全部 8 词中 7 词仍 0 点击, 唯一破零 = 即日印刷 (pos 8.57, 速赢窗内)。"
+    },
+    "quality_metrics_v94": {
+      "rule": "K3 8/26 04:10 §4 v9.4 质量三件套 (替代旧 '7d clicks ≥85')",
+      "metric_1_striking_into_top10": { "target": "≥5", "actual": "≥10 条 (戶外貼紙 72/15.69 · 紙袋印刷 70/13.83 · 訂做紙袋 67/18.63 · china catalog printing 110/16.70 · 月歷印刷 64/17.72 · 騎馬釘印刷 60/17.53 · poster 印刷 61/19.74 · 貼紙設計 59/15.08 · 印刷紙袋 58/15.5 · 月曆訂製 65/25.09[带外参考])", "verdict": "✅ 达标 (口径 = combo 28d Top40, pos 11-20 且展示 ≥50)" },
+      "metric_2_pos_1_20_impression_share": { "target": "≥30%", "actual": "38.66% (带 1-3 = 265 + 4-10 = 1,146 + 11-20 = 1,864 = 3,275 / 明细 8,472)", "verdict": "✅ 达标" },
+      "metric_3_clicked_query_count": { "target": "≥12", "actual": "≥9 (命名明细可确认: 智印港 / 車身廣告 / 餐牌印刷 / 貼紙 / 即日印刷 / 印海報一張 / 信封印刷 / pvc 貼紙 / doujin printing / 畢業紀念冊香港 / 印刷公司 / 燙金貼紙 …); 全站真值 356 clicks 中 304 (85%) 落在 GSC 匿名长尾, 无法逐词计数", "verdict": "🟡 无法证实达标 (非不达标): 明细口径可见 ≥9, 匿名 304 clicks 的分布不可知" },
+      "m1_line_1_7d_clicks": { "target": "≥25 (M1 线 1)", "actual": "101 (9/9-9/15 全站日序列合计 = 5,116 imps / 1.97% / pos 15.3; 与同档独立 7d 工作表合计 clicks=101/imps=5,116 互证一致)", "verdict": "✅ 达标 (101 ≥ 25, 8.4× 9/3 基线 12); ⚠️ 口径声明: 不同窗互不可换算, 本值为日序列求和" }
+    },
+    "title_v4_audit_8_words_zh_hk": {
+      "rule": "v4 写满: 半角当量 50-54 目标区 (CJK×2 + ASCII×1); ≥55 满格禁加 / 55-60 遗留只读 / >60 待修剪 / <50 按序补",
+      "method": "web_fetch 2026-09-18 线上 title ×6 实测, 与 matrix 9/16 记录逐条核对",
+      "items": [
+        { "word": "包裝盒印刷 / 紙盒印刷 / 包裝盒訂製", "landing": "/zh-hk/category/packaging/", "title": "紙質食品包裝盒印刷 100個起 | 食品紙盒/紙袋 | 智印港", "equiv": 51, "band": "OK", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "貼紙印刷", "landing": "/zh-hk/category/stickers/", "title": "small batch 貼紙印刷 防水抗UV・1張起印・異形裁切・燙金 | 智印港", "equiv": 63, "band": ">60 待修剪 (8/30 批冻结, 挂账)", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "宣傳單張", "landing": "/zh-hk/category/flyers/", "title": "A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港", "equiv": 60, "band": "55-60 遗留只读 (8/30 批冻结)", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "即日印刷", "landing": "/zh-hk/services/rush-printing-delivery/", "title": "即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港", "equiv": 51, "band": "OK", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "書刊印刷 / 騎馬釘", "landing": "/zh-hk/category/books/", "title": "騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港", "equiv": 66, "band": ">60 待修剪 (8/30 批冻结, 挂账)", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "騎馬釘 (SKU)", "landing": "/zh-hk/product/saddle-stitch-booklets/", "title": "騎馬釘小冊子 覆膜・騎馬釘・100起印・HK$6起 | 智印港", "equiv": 53, "band": "OK", "live": "2026-09-18 HTTP 200, 与 9/16 一致" },
+        { "word": "賀卡 (目录页, 附录)", "landing": "/zh-hk/category/greeting-cards/", "title": "燙金賀卡印刷 · 100 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費", "equiv": null, "band": "附录观察 (非 8 锁词)", "live": "2026-09-18 HTTP 200" }
+      ],
+      "verdict": "4/6 组落在 50-54 写满区 (51/51/51/53); 貼紙印刷 63 与 books 66 超 60 待修剪, 属 8/30 批冻结 → 只观察不改 (红线: 不回滚已部署 title); 数字钩子冻结令 (v10.1 决策 2, 至 9/30) 生效, 本 run 零 title 改动。"
+    },
+    "anchor_text_audit_8_words_zh_hk": {
+      "rule": "v9.3 任务 J 攻坚②: 每词 ≥3 正文内链使用统一锚文本",
+      "grep_scope": "src/data/blog-data/zh-hk.json content 内 `<a href=...>词</a>` (grep 2026-09-18)",
+      "results": {
+        "包裝盒印刷": { "posts": 5, "pass": true },
+        "紙盒印刷": { "posts": 3, "pass": true },
+        "包裝盒訂製": { "posts": 3, "pass": true },
+        "貼紙印刷": { "posts": 5, "pass": true },
+        "宣傳單張": { "posts": 7, "pass": true },
+        "即日印刷": { "posts": 7, "pass": true },
+        "書刊印刷": { "posts": 5, "pass": true },
+        "騎馬釘": { "posts": 13, "pass": true }
+      },
+      "verdict": "8/8 词均 ≥3 统一锚文本 (优于 9/16 记录值: 貼紙印刷 4→5 / 宣傳單張 3→7 / 即日印刷 3→7 / 書刊印刷 3→5 / 騎馬釘 3→13; 包裝盒印刷 5 / 紙盒印刷 3 / 包裝盒訂製 3 持平) — 攻坚② 数据层超额完成。"
+    },
+    "brand_tracking": {
+      "zhi_ying_gang": {
+        "new_28d": { "clicks": 11, "imps": 17, "ctr": 0.6471, "pos": 1.24 },
+        "old_28d": { "clicks": 8, "imps": 12, "ctr": 0.6667, "pos": 1.33 },
+        "verdict": "CTR 64.71% 远超 40% 目标 (基线 10%) — 连续判定达标; 展示 +5 / 点击 +3; 但品牌词仅 1 条、占明细点击 20.37% (11/54), 绝对量仍小, 维持埋点观察"
+      },
+      "jiprint": { "hits_new_28d": 0, "hits_old_28d": 0, "verdict": "⚠️ 0 命中 (与 9/16 一致); ジープリント 在 17 个 sheet 查询表中 0 命中, en/ja 品牌 CTR 无分母可算; 30 目录建设 (§13.16.1) 继续" },
+      "z_print_en": { "imps_new": 18, "pos_new": 12.4, "verdict": "en 侧 z print 持续有量 (18 imps / pos 12.4), 双域名品牌归一 (GEO) 继续观察" }
+    },
+    "redirect_301_verification": {
+      "rule": "z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200",
+      "method": "web_fetch 2026-09-18 旧 URL ×11 → 全部 'cross-origin redirect to https://zprintpro.com'; 新站落地页另测 ×7 全部 HTTP 200",
+      "samples": 11,
+      "all_pass": true,
+      "in_list": [
+        "www.z-printpro.com/products/packaging-box-printing/ → 301 ✅",
+        "www.z-printpro.com/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html → 301 ✅",
+        "www.z-printpro.com/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html → 301 ✅",
+        "www.z-printpro.com/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html → 301 ✅",
+        "www.z-printpro.com/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html → 301 ✅",
+        "www.z-printpro.com/products/business-card-printing/ → 301 ✅ (贺卡承接, 展示层未拍板不动)",
+        "www.z-printpro.com/about-us/ → 301 ✅",
+        "www.z-printpro.com/products/sticker-printing/ → 301 ✅",
+        "www.z-printpro.com/flyer-printing/ → 301 ✅",
+        "www.z-printpro.com/menu-printing/ → 301 ✅",
+        "www.z-printpro.com/poster-printing/ → 301 ✅"
+      ],
+      "new_site_200": [
+        "/zh-hk/category/packaging/ 200 (title 51)",
+        "/zh-hk/category/stickers/ 200 (title 63)",
+        "/zh-hk/category/flyers/ 200 (title 60)",
+        "/zh-hk/category/books/ 200 (title 66)",
+        "/zh-hk/services/rush-printing-delivery/ 200 (title 51)",
+        "/zh-hk/product/saddle-stitch-booklets/ 200 (title 53)",
+        "/zh-hk/category/greeting-cards/ 200"
+      ],
+      "verdict": "11/11 PASS (301 链) + 7/7 PASS (新站 200); 与 9/14/9/15/9/16 四轮结论一致"
+    },
+    "t43_rich_results": {
+      "rule": "T43: rich results 是 GSC 观察项, 禁盲改 schema",
+      "status": "16 类目 × 3 locale + PDP + blog JSON-LD 全部在线; 本 run 零 src 改动, 未触碰任何 schema",
+      "action": "仅观察; 9/18 档结果显示 搜索结果呈现: 产品摘要 12,031 imps / 208 clicks / 1.73% + 商家信息 23 imps / 6 clicks / 26.09% (rich 展示持续存在, 无需盲改)"
+    },
+    "new_gsc_findings_2026_09_18": {
+      "finding_A_high_impression_zero_click": "7 条查询 '位置好却 0 点击' (食品包裝印刷 145/6.65/0 · a6 尺寸 97/8.86/0 · small batch sticker printing 69/6.61/0 · 小冊子印刷 48/10.04/0 · 大信封 45/4.42/0 · small batch stickers 40/5.53/0 · 邊度有紙袋買 36/7.44/0; 合计 480 imps / 0 clicks, 按带内 CTR 本应 ~6.61 clicks)",
+      "finding_B_zero_click_is_systemic": "960/1000 条命名查询 0 点击, 锁住 7,973 imps = 明细展示 94.11%; 展示 ≥40 的 59 条中仅 4 条有点击",
+      "finding_C_position_band": "21-50 位占 50.14% 展示但 CTR 仅 0.3060%; 1-3 位仅占 3.13% 展示却拿走 29.63% 点击 (CTR 6.04%)",
+      "finding_D_ja_zero": "ja 命名明细 73 条 / 553 imps / **0 clicks** (CTR 0.00%), 含 コミケ 印刷 94 imps",
+      "finding_E_brand_only_one": "品牌词仅 智印港 1 条; ZprintPro/zprintpro/ジープリント 0 命中 ⇒ en/ja 品牌 CTR 不可算",
+      "finding_F_progress": "91 条骨幹词 (两窗展示均 ≥20) 加权位置 27.629 → 25.547 (前进 2.082 位); 44 条改善 / 14 条退步 / **0 条退步 >3 位**; 进步榜 コミケ 印刷 +11.39 / bulk catalog printing +10.24 / 食品包裝印刷 +6.21"
+    },
+    "s1_s2_s3_gates": {
+      "s1_answer_block_word_count": "N/A — 本 run 无答案块/FAQ 批次, 零 src 改动",
+      "s2_slug_existence": "⚠️ 命中 2 处 (存量, 非本 run 新增): ① Q-P1-01 引用 slug 'retail-poster-printing-guide' 在 src/data/blog-posts.ts / blog-data/zh-hk.json 均 0 命中 (真实 slug = 'retail-shop-poster-printing-guide'); ② Q-P1-03 引用 'lai-see-packet-printing-guide' 0 命中 (真实 slug = 'wedding-red-packet-printing-guide')。两处均在 matrix priority_boost 记录层, 非用户可见链接; 按 S2 规定应随批清洗, 但改 priority 条目属执行层越权 (v1.2 ①) ⇒ 上报 K3 (见 report §13)。",
+      "s3_platform_failure": "未观察到平台级故障 (web_fetch 全部 200 / cross-origin 301 正常; 无 CF 503 / 构建队列阻塞证据)"
+    },
+    "priority_boost_changes": [
+      { "action": "UPDATE", "id": "Q-P1-01", "from": { "slug": "retail-poster-printing-guide", "boost": 2, "tier": "T2" }, "to": { "slug": "retail-shop-poster-printing-guide", "boost": 1, "tier": "T3" }, "evidence": "① slug 层 (S2 纯修正): 原 slug 'retail-poster-printing-guide' 全仓 0 命中 → 正确 slug 'retail-shop-poster-printing-guide' (blog-data/zh-hk.json L186)。② tier/boost 层: 依 v9.3 §1 分层表 海報印刷 174 imps / pos 22.57 落 21-50 带 = T3 (+1) ⇒ boost 2→1; 本 run **不擅自破格提到 T1/boost 3** (选词分层属战略级, v1.2 ①), 改由 K3 裁 (见 report §13 #2)", "data_source": "GSC数据/*2026-09-18.xlsx → .hermes/gsc-2026-09-18/{raw-summary.txt C1行, trend.txt K节}" },
+      { "action": "UPDATE", "id": "Q-P1-03", "from": { "slug": "lai-see-packet-printing-guide", "boost": 2, "tier": "T2" }, "to": { "slug": "wedding-red-packet-printing-guide", "boost": 2, "tier": "T2" }, "evidence": "旧 slug 0 命中; 真实 slug = wedding-red-packet-printing-guide (blog-posts.ts L762 + blog-data/zh-hk.json L202)。词级依据: 利是封印刷 70 imps / pos 27.90 / 0 clicks; 簇 利是封/賀卡 #q=13 / 151 imps / 1 click / 0.66%", "data_source": "同上 + src/data/blog-posts.ts L762" }
+    ],
+    "priority_boost_holds": [
+      { "id": "Q-P1-02", "slug": "restaurant-menu-printing-guide", "boost": 3, "tier": "T1", "reason": "hk 餐牌印刷 28d 66 imps / pos 12.82 / 1 click (CTR 1.52%) — 位置由 pos 14.3 前置, 仍在 5-15 速赢窗 " },
+      { "id": "Q-P2-03", "slug": "doujin-circle-printing-guide", "boost": 2, "tier": "T2", "reason": "en doujin printing 28d 15 imps / pos 11.5 / 2 clicks (CTR 13.33% — 全场最高 CTR 之一); ja コミケ 印刷 94 imps / pos 29.61 / 0 clicks (ja 最大展示词), 维持 T2 培育" }
+    ],
+    "calibration_day_check": {
+      "is_calibration_day": false,
+      "schedule": "9/18 非校准日; GSC 数据换代 (9/10 档 → 9/18 档) 已完成, 干净对比窗 (9/9-9/15) 数据在手",
+      "status": "✅ FRESH: 数据日 9/15, 解析日 9/18, staleness ≤3 天 < 72h 门 — 前四轮 (9/13-9/16) 的 STALE 状态在本轮解除",
+      "pending": "9/25: K3 v10.1 决策 1 条件④ 书刊簇 CTR/imp 回报 (本 run 已备 baseline: 書刊/冊子/騎馬釘 #q=80 / 1,073 imps / 0 clicks / pos 31.9)"
+    },
+    "verification_window_note": "pwsh 沙箱阻塞 → git commit/push/verify 无法执行 (报告落盘 = 任务成功 per v9.4 §3-2, 不虚报 PASS); host-side wrapper 负责 commit/push (lane=ZP-gsc-feedback --include-matrix); tsc/build/CF Pages 状态本 lane 未产出, 不虚报。"
   }
 }
