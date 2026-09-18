@@ -2019,6 +2019,38 @@ const lpPhotoBookPrintingGuide: BlogPostMeta = {
   },
 };
 
+
+// 2026-09-18 队列 (v10 §四.2「P0 三篇 en blog」第 2 篇: Candle/Soap → Self-Publishing → Etsy)
+// 队列依据: docs/2026-09-17-k3-directive-v10-outbound-masterplan-v2.md §四.2
+// 承接 SKU: perfect-bound-books / hardcover-books / saddle-stitch-booklets / spiral-notebooks / catalog-printing (books 类目)
+// 3 locale native | MOQ 口径 (K3 2026-09-18): 1 copy 起印无最低起订; 少量数码免版费; 100+ 柯式更经济
+// 价格/规格一律引 products.ts 与线上 PDP (batch total US$207.94 等经线上 Price Ladder 实测核对)
+const lpSelfPublishingGuide: BlogPostMeta = {
+  slug: 'self-publishing-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-18',
+  title: {
+    'zh-hk': "自費出版印刷：1 本起印、無最低起訂量 平裝精裝 | 智印港",
+    en: "Self-Publishing Printing: 1 Copy, Paperback | ZprintPro",
+    ja: "自費出版印刷：1 部から、最低注文数なし 並製本 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "自費出版印刷 1 本起印、無最低起訂量，呢份指南拆解五種裝訂方式同紙材點揀，講清楚 100 本由數碼轉柯式嘅分界線，並公開 100 本到 10,000 本嘅逐本參考單價階梯，最後逐項核對低 MOQ、快樣品、透明工廠三件事。",
+    en: "Self-publishing book printing starts at 1 copy with no minimum order. This guide compares five binding formats, explains the digital-to-offset break at 100 copies, and publishes the per-copy reference ladder from 100 to 10,000 copies.",
+    ja: "自費出版の印刷は 1 部から、最低注文数なし。5 つの製本形式と用紙の選び方を比較し、100 部でデジタルからオフセットに切り替わる分岐点を解説します。100 部から 10,000 部までの 1 部単価ラダーを掲載し、小ロット・スピード校正・透明な工場の 3 点も確認方法つきでまとめました。",
+  },
+  targetKeywords: {
+    primary: 'self publishing printing',
+    secondary: [
+      'print my own book', 'self publish a book printing', 'book printing for authors',
+      'paperback book printing', 'hardcover book printing', 'book printing 1 copy',
+      'small batch book printing', '自費出版印刷', '自助出版印刷', '一本起印',
+      '自費出版 印刷', '自主出版 印刷', '少部数 製本',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2184,6 +2216,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpZineSmallBatchBookletGuide,
   lpChildrensPictureBookGuide,
   lpPhotoBookPrintingGuide,
+  lpSelfPublishingGuide,
   ];
 
 // =============================================================================
