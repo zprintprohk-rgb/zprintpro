@@ -698,3 +698,47 @@ hreflang」，并已准备按此开通全站修复。**该结论是错的 ——
 
 **同批流程事故（§12 已固化）**: 用 PowerShell `Set-Content` 改脚本 → **CJK 被 GBK 读坏**，
 脚本语法崩溃。正是 §12「禁止 PowerShell 写 .ts/.tsx」同类陷阱 —— 扩至**任何含 CJK 的脚本文件**。
+
+
+---
+
+### 规则 META_DESCRIPTION_MECHANICAL_DEFECT — meta 摘要三类机械缺陷 (K3 2026-09-18 决策 3-B 批准, 门童 #20)
+
+**批准来源**: K3 2026-09-18 §8 选项 A「建 meta description 门童 + 只修机械缺陷」
+**裁定卡**: `docs/2026-09-18-k3-directive-v101-five-decisions-ruling.md` 决策 3（终裁 B）
+
+**事故形态**（L1-1 诊断实测）:
+1. **语言错配**：`zh-hk/blog/food-packaging-printing-guide` 的 meta 为**纯英文**
+   （`Food-grade packaging essentials — from kraft boxes to food-safe lamination…`）
+   → 对应 query `食品包裝印刷` **位置 6.65 / 145 展示 / 28 天 0 点击**。中文查询展示英文摘要 = 不点。
+2. **首词/前缀重复**（44 处）：`防水貼紙/防水貼紙`、`公司信封/公司信封`、`大號信封/大號信封`、
+   `定制年曆/定制年曆`、`畫冊印刷/畫冊印刷`、`騎馬釘小冊子/騎馬釘`
+3. **空 description**（27 处）：zh-hk 9 / en 9 / ja 9
+
+**根因**: `src/lib/seo.ts` 产品 meta 构造 `fullDesc = ${descPrefix}${priceText}${descSuffix}`，
+`descPrefix = baseDesc.slice(0,100)`，而 `baseDesc` 本身以「名稱/名稱(或前綴)」开头。
+
+**★ 为什么此前无人发现**: 门童 #4 i18n 只查「zh-hk 简体字残留」，**查不到「zh-hk 字段写成英文」**；
+也**没有任何门童做 meta 结构校验**。与 ce 截断、GSC 泄漏同源：**门童盲区 = 事故存活期**。
+
+**机审**: `scripts/guards/meta-description-guard.js`（门童 #20, red）
+
+**★ 专用基线通道（本次核心工程教训）**:
+既有基线是 `check-regression-guard.js` 的**全局 `perFile` 计数，先到先扣** —— 前面的门童
+（#4/#16/#17）会把某文件的预算扣完，新门童的存量命中**拿不到豁免**。
+实测：直接接入后 **red 51 → 171**，会拦死全站 commit；按 §6.4 路径级回退后复验 51。
+⇒ 修法：**门童自带基线** `.hermes/meta-baseline.json`（语义「只许递减」，每次报告附剩余数），
+不共用全局预算。**新增门童一律走专用基线，不要动全局 perFile。**
+
+**P0 验收实录（K3 三条验收条件）**:
+| 条件 | 结果 |
+|---|---|
+| 注入假缺陷必拦 | ✅ 注入 `A/A` → red 51 → **52**，门童 #20 报「★本次新增 1」 |
+| 空跑 red 仍 = 51 | ✅ |
+| 存量 120 条基线落盘 + 只许递减 + 报剩余数 | ✅ `基线 120, 现存 120, 已修 0, 剩余待修 120` |
+
+**P0-3 代码层修复（本轮已做）**: `seo.ts` 加 `collapseLeadingNameDup()` —— 只折叠
+「完全相同」与「严格前缀」两种，**合法 `A/B` 並列原样保留**（负例实测：`包裝盒/紙盒`、
+`Foil sticker/Paper` 均不动）。单测 6/6 通过。
+⚠️ **注意**：代码层修复**不会降低门童 #20 的基线计数**（门童扫的是数据文件，数据仍在）
+→ 数据层 44 处须在 **P3 CSV 源头治理** 中解决。

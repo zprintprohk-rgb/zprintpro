@@ -1,0 +1,14 @@
+{
+  "guard": "META_DESCRIPTION_INTEGRITY",
+  "recordedAt": "2026-09-18",
+  "decision": "K3 2026-09-18 决策 3-B: 专用基线通道, 存量只许递减, 每批报告附剩余数",
+  "total": 120,
+  "perFile": {
+    "src/data/blog-data/zh-hk.json": 9,
+    "src/data/blog-data/en.json": 56,
+    "src/data/blog-data/ja.json": 9,
+    "src/data/sku-seo-data.ts": 44,
+    "src/data/products.ts": 1,
+    "src/data/category-seo-content.ts": 1
+  }
+}

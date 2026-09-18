@@ -800,7 +800,19 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   const names = { 'zh-hk': categoryName, en: categoryNameEn, ja: categoryNameJa };
   const rawName = names[locale];
   const name = rawName && !rawName.endsWith('印刷') && locale === 'zh-hk' ? `${rawName}印刷` : rawName;
-  const baseDescription = seoData.descriptions[locale];
+  // 2026-09-18 P0-3 (K3 决策 3-B 批次, 门童 #20): 折叠 baseDescription 开头的「名稱/名稱(或前綴)」重复
+  //   线上实测: 防水貼紙/防水貼紙、公司信封/公司信封、大號信封/大號信封、定制年曆/定制年曆、
+  //             畫冊印刷/畫冊印刷、騎馬釘小冊子/騎馬釘 —— 共 44 处 (门童 #20 基线 120 条之一类)
+  //   只折叠「完全相同」与「严格前缀」两种; 合法 A/B 並列 (如 包裝盒/紙盒) 原样保留
+  const collapseLeadingNameDup = (s: string): string =>
+    typeof s !== 'string'
+      ? s
+      : s.replace(
+          /^([^\s/／]{2,24})[/／]([^\s/／]{2,24})(?=[\s，。、,；;]|$)/,
+          (m: string, a: string, b: string) =>
+            a === b || a.startsWith(b) || b.startsWith(a) ? (a.length >= b.length ? a : b) : m
+        );
+  const baseDescription = collapseLeadingNameDup(seoData.descriptions[locale]);
   const keywords = seoData.keywords[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
 

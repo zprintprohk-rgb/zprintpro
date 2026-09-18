@@ -48,6 +48,7 @@ const GUARDS = {
   ceTruncation: require(path.join(GUARDS_DIR, 'ce-truncation-guard.js')),
   institutionalPromise: require(path.join(GUARDS_DIR, 'institutional-promise-guard.js')),
   priceBand: require(path.join(GUARDS_DIR, 'price-band-guard.js')),
+  metaDescription: require(path.join(GUARDS_DIR, 'meta-description-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -65,6 +66,7 @@ const GUARD_LABELS = {
   ceTruncation: '门童 #17 ce 截断残缺词 (2026-09-02 事故固化: 脚本删除 "ce" 序列毁掉 service/space-y-/certification 等 2,799 处, 存活 15 天 — 2026-09-17 从干净父版本学得 323 条基线全量修复)',
   institutionalPromise: '门童 #18 机构/招标页承诺口径 (K3 2026-09-17 拍板: 禁 保证/承诺/确保/已具备/已完成, 改 拟/计划/预计/以…为准/待确认; 必附生效条件)',
   priceBand: '门童 #19 跨文价格口径一致性 (K3 2026-09-18 裁定: 月曆基准区间 HK$8-25/份 — 三篇文章 × 3 locale 曾互差 3-5 倍 / HK$3-8 vs HK$3-15 vs HK$14-57)',
+  metaDescription: '门童 #20 meta description 完整性 (K3 2026-09-18 决策 3-B 专用基线通道: 语言错配/首词前缀重复/空 meta; 存量 120 条只许递减)',
 };
 
 const args = process.argv.slice(2);

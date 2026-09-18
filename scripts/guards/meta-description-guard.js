@@ -144,7 +144,43 @@ function scanEmptyDesc(file, hits) {
 /**
  * 扫描入口 —— 不依赖变更文件列表, 每次 commit 全量复核
  * (meta 完整性是数据文件级不变量, 否则改 .tsx 的那次 commit 会漏过)
+ *
+ * ★ 专用基线通道 (K3 2026-09-18 决策 3-B):
+ *   本门童**自带**基线 `.hermes/meta-baseline.json`, 不共用 check-regression-guard.js 的
+ *   全局 perFile 预算 —— 后者是「先到先扣」, 前面的门童 (#4/#16/#17) 会把预算扣完,
+ *   导致本门童的存量命中拿不到豁免 (实测: 接入后 red 51 → 171, 会拦死全站 commit)。
+ *   语义: 存量**只许递减**; 超出基线的部分才作为新增缺陷返回 (red 硬拦)。
+ *   每次报告须附「剩余数」—— 已减到 0 时可直接把基线归零/删除。
  */
+const BASELINE_FILE = path.join(ROOT, '.hermes', 'meta-baseline.json');
+
+function loadMetaBaseline() {
+  try {
+    const b = JSON.parse(fs.readFileSync(BASELINE_FILE, 'utf8'));
+    return { total: b.total || 0, perFile: b.perFile || {} };
+  } catch (e) {
+    return { total: 0, perFile: {} };
+  }
+}
+
+/** 状态汇总 (供报告引用) */
+function baselineStatus(hitsAll) {
+  const b = loadMetaBaseline();
+  const per = {};
+  for (const h of hitsAll) per[h.file] = (per[h.file] || 0) + 1;
+  const rows = [];
+  let remaining = 0;
+  for (const f of new Set([...Object.keys(b.perFile), ...Object.keys(per)])) {
+    const allowed = b.perFile[f] || 0;
+    const now = per[f] || 0;
+    const left = Math.max(0, allowed - now);
+    const excess = Math.max(0, now - allowed);
+    remaining += left;
+    rows.push({ file: f, allowed, now, left, excess });
+  }
+  return { baselineTotal: b.total, nowTotal: hitsAll.length, remaining, rows };
+}
+
 function scan(_files) {
   const hits = [];
   const cache = new Map();
@@ -155,16 +191,34 @@ function scan(_files) {
       cache.set(rel, raw);
     }
     if (raw === null) continue;
-    const loc = /zh-hk/.test(rel) ? 'zh-hk' : /\/en\.json|en\.json/.test(rel) ? 'en' : /ja\.json/.test(rel) ? 'ja' : 'multi';
+    const loc = /zh-hk/.test(rel) ? 'zh-hk' : /en\.json/.test(rel) ? 'en' : /ja\.json/.test(rel) ? 'ja' : 'multi';
     if (loc !== 'multi') scanLocaleMismatch(raw, loc, rel, hits);
     scanDup(raw, rel, hits);
     scanEmptyDesc(rel, hits);
   }
-  return hits;
+
+  // 专用基线豁免: 每个文件只豁免 baseline.perFile[file] 条, 其余 = 新增缺陷
+  const b = loadMetaBaseline();
+  if (b.total === 0) return hits; // 无基线 → 全量裸报
+  const used = {};
+  const fresh = [];
+  for (const h of hits) {
+    used[h.file] = used[h.file] || 0;
+    const allowed = b.perFile[h.file] || 0;
+    if (used[h.file] < allowed) { used[h.file]++; continue; }
+    fresh.push(h);
+  }
+  const st = baselineStatus(hits);
+  const fixed = Math.max(0, b.total - hits.length);           // 基线录制后已修的条数
+  const todo = hits.length;                                   // 存量待修 (K3 要的「剩余数」)
+  console.log(`ℹ️ 门童 #20 存量基线: 基线 ${b.total}, 现存 ${todo}, 已修 ${fixed}, 剩余待修 ${todo}${fresh.length ? `, ★本次新增 ${fresh.length}` : ''}`);
+  return fresh;
 }
 
 module.exports = {
   scan,
+  baselineStatus,
+  loadMetaBaseline,
   RULES: [{ id: 'META_DESCRIPTION_INTEGRITY', severity: 'red' }],
   FILES,
   DUP_EXACT,
