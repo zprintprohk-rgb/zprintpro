@@ -27,7 +27,7 @@ import { GalleryV9 } from './GalleryV9';
 import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlock';
 // Step 4 (方案 (a)): 規格值三語化 — products.ts 規格三欄 (material/printMethod/finishing) 原文 -> 本地化值;
 // 查不到 -> fallback 中文原文 (不報錯/不留空); zh-hk 值 = 原文逐字 ⇒ zh-hk 渲染輸出零改動
-import { localizeSpecValue } from '@/data/product-specs-i18n';
+import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -596,7 +596,8 @@ export function ProductPageV9({
                   {Object.entries(product.specs).map(([k, v]) => (
                     v ? (
                       <div key={k} className="grid grid-cols-[128px_1fr] gap-4 py-2.5 border-b border-[#F0F1F3] text-[15.5px]">
-                        <dt className="font-bold text-[#1F2937]">{k}</dt>
+                        {/* Step 5 (B2): 欄名 (dt) 也必須本地化 — 原本直出 Object.keys 的英文欄名, zh-hk 頁會顯示英文 */}
+                        <dt className="font-bold text-[#1F2937]">{localizeSpecField(k, locale)}</dt>
                         <dd className="text-[#6B7280]">{localizeSpecValue(v, locale)}</dd>
                       </div>
                     ) : null

@@ -1,19 +1,20 @@
 /**
- * products.ts 規格三欄 (specs.material / specs.printMethod / specs.finishing) 三語映射 — **源頭資料**
+ * products.ts 規格四欄 (specs.material / specs.size / specs.printMethod / specs.finishing) 三語映射 — **源頭資料**
  *
  * 為什麼是這一份 (Step 4 方案 (a), K3 拍板):
- *   · products.ts 的 material / printMethod / finishing **保持中文單值 = 事實源**, 不改型別契約
+ *   · products.ts 的 material / size / printMethod / finishing **保持中文單值 = 事實源**, 不改型別契約
  *     (不動 data layer schema; zh-hk 頁面輸出逐字不變 ⇒ 零 churn)。
  *   · 本檔以**原文為 key** 提供 zh-hk / en / ja 三語值, 渲染層查表; 查不到 -> fallback 中文原文 (不報錯/不留空)。
  *   · 與 src/components/ProductTabs.tsx 既有的 specsBySlug 分工不同, 故不併入:
  *     specsBySlug 是**按 slug/類目**的 16 條策展文案 (類目級, 粗粒度);
- *     本檔是**按規格值**的 238 條逐字映射 (products.ts 逐 SKU 事實源, 細粒度), 兩者 key 空間不同、不可互換。
+ *     本檔是**按規格值**的 311 條逐字映射 (products.ts 逐 SKU 事實源, 細粒度), 兩者 key 空間不同、不可互換。
  *   · zh-hk 值 = 原文逐字 (原文本身即繁體港式, 已用門童 #4 SIMP_ZH 字集實測 0 命中);
  *     en = 門店/海外印刷通用英文 (C1S art paper / 4-color offset / matte or gloss lamination / spot UV /
  *          foil stamping / rounded-corner die-cut / grey board / book paper);
  *     ja = 日文印刷術語 (コート紙 / 4色オフセット / マット・グロスラミネート / スポットUV / 箔押し /
  *          角丸型抜き / グレー板紙)。
- *   · 數字一律照抄原文 (350g → 350g, 90×54mm 原樣), 未做任何單位換算。
+ *   · 數字與尺寸一律照抄原文 (350g → 350g, 210×297mm → 210×297mm, 20–120mm 原樣), 未做任何單位換算;
+ *     size 欄只譯自然語言詞 (標準/可客製/自訂…), 括號依目標語系慣例 (en 半角, ja 全角)。
  *
  * 生成: node .hermes/_probe-pb/gen-spec-i18n.cjs (源 = .hermes/_probe-pb/_spec-tr-*.json, 逐條 anchor 斷言);
  *       本檔為**資料源頭**, 請直接改譯文並重跑生成器, 不要手改渲染層的字面量。
@@ -26,7 +27,7 @@ export interface SpecI18nValue {
   ja: string;
 }
 
-/** key = products.ts 規格原文 (material / printMethod / finishing) */
+/** key = products.ts 規格原文 (material / size / printMethod / finishing) */
 export const SPEC_I18N: Record<string, SpecI18nValue> = {
   "300g銅版紙或250g啞粉藝術紙；啞膠／光膠覆膜": { 'zh-hk': "300g銅版紙或250g啞粉藝術紙；啞膠／光膠覆膜", en: "300g art paper or 250g matte art paper; matte or gloss lamination", ja: "300gコート紙または250gマットアート紙；マット／グロスラミネート" },
   "四色柯式印刷（海德堡）": { 'zh-hk': "四色柯式印刷（海德堡）", en: "4-color offset printing (Heidelberg)", ja: "4色オフセット印刷（ハイデルベルク）" },
@@ -266,6 +267,79 @@ export const SPEC_I18N: Record<string, SpecI18nValue> = {
   "300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)": { 'zh-hk': "300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)", en: "300g C1S art paper / 350g Conqueror paper (thicker for large sizes)", ja: "300gコート紙／350gコンカラー紙（大判用厚手）" },
   "柯式印刷 4C 單面或雙面": { 'zh-hk': "柯式印刷 4C 單面或雙面", en: "Offset printing 4C single- or double-sided", ja: "オフセット印刷 4C 片面または両面" },
   "燙金 / UV / 模切 / 摺疊": { 'zh-hk': "燙金 / UV / 模切 / 摺疊", en: "Foil stamping / UV / die-cut / folding", ja: "箔押し／UV／型抜き／折り" },
+  "127×178mm（標準）；R3mm圓角可選": { 'zh-hk': "127×178mm（標準）；R3mm圓角可選", en: "127×178mm (standard); optional R3mm rounded corners", ja: "127×178mm（標準）；R3mm角丸も選択可" },
+  "90×54mm（標準名片）；54×54mm 方形可選": { 'zh-hk': "90×54mm（標準名片）；54×54mm 方形可選", en: "90×54mm (standard business card); 54×54mm square optional", ja: "90×54mm（標準名刺）；54×54mm スクエアも選択可" },
+  "127×178mm（標準）": { 'zh-hk': "127×178mm（標準）", en: "127×178mm (standard)", ja: "127×178mm（標準）" },
+  "127×178mm（標準）；R3mm圓角": { 'zh-hk': "127×178mm（標準）；R3mm圓角", en: "127×178mm (standard); R3mm rounded corners", ja: "127×178mm（標準）；R3mm角丸" },
+  "最小約 10×10mm，最大約 300×400mm（依稿而定）": { 'zh-hk': "最小約 10×10mm，最大約 300×400mm（依稿而定）", en: "Min. approx. 10×10mm, max. approx. 300×400mm (depends on artwork)", ja: "最小約 10×10mm、最大約 300×400mm（原稿により異なります）" },
+  "客製模切外形，常用寬邊 20–120mm 級距": { 'zh-hk': "客製模切外形，常用寬邊 20–120mm 級距", en: "Custom die-cut outline, common width range 20–120mm", ja: "カスタム型抜き形状、一般的な幅 20–120mm" },
+  "最小約 15×15mm，最大約 250×350mm": { 'zh-hk': "最小約 15×15mm，最大約 250×350mm", en: "Min. approx. 15×15mm, max. approx. 250×350mm", ja: "最小約 15×15mm、最大約 250×350mm" },
+  "A4 起印；單張尺寸最小 10×10mm，最大 300×400mm": { 'zh-hk': "A4 起印；單張尺寸最小 10×10mm，最大 300×400mm", en: "From A4; single-sheet min. 10×10mm, max. 300×400mm", ja: "A4 から対応；単片最小 10×10mm、最大 300×400mm" },
+  "依稿模切；建議最小元素寬度 ≥1.5mm（視材質）": { 'zh-hk': "依稿模切；建議最小元素寬度 ≥1.5mm（視材質）", en: "Die-cut to artwork; recommended min. element width ≥1.5mm (varies by material)", ja: "原稿に合わせて型抜き；最小要素幅 ≥1.5mm 推奨（素材により異なります）" },
+  "依稿模切；箔面最小字高視稿評估": { 'zh-hk': "依稿模切；箔面最小字高視稿評估", en: "Die-cut to artwork; min. foil letter height assessed from artwork", ja: "原稿に合わせて型抜き；箔面の最小文字高は原稿により判断" },
+  "依應用模切；小標籤至 A4 拼版皆可": { 'zh-hk': "依應用模切；小標籤至 A4 拼版皆可", en: "Die-cut to application; from small labels up to A4 imposition", ja: "用途に合わせて型抜き；小ロットのラベルから A4 面付けまで対応" },
+  "最小約 20×20mm，最大約 280×380mm": { 'zh-hk': "最小約 20×20mm，最大約 280×380mm", en: "Min. approx. 20×20mm, max. approx. 280×380mm", ja: "最小約 20×20mm、最大約 280×380mm" },
+  "小／中／大袋型或客製展開尺寸": { 'zh-hk': "小／中／大袋型或客製展開尺寸", en: "Small / medium / large bag styles or custom flat size", ja: "小／中／大の袋型、またはカスタム展開サイズ" },
+  "小／中／大或客製展開": { 'zh-hk': "小／中／大或客製展開", en: "Small / medium / large or custom flat size", ja: "小／中／大、またはカスタム展開" },
+  "禮品常用中／大袋或客製": { 'zh-hk': "禮品常用中／大袋或客製", en: "Medium / large bags commonly used for gifts, or custom", ja: "ギフトには中／大サイズが一般的、カスタムも可" },
+  "小／中／大袋或客製": { 'zh-hk': "小／中／大袋或客製", en: "Small / medium / large bag or custom", ja: "小／中／大袋、またはカスタム" },
+  "中／大袋為主；可客製": { 'zh-hk': "中／大袋為主；可客製", en: "Mainly medium / large bags; custom available", ja: "中／大袋が中心；カスタム対応可" },
+  "展開約 320×120×380mm（可客製）": { 'zh-hk': "展開約 320×120×380mm（可客製）", en: "Flat approx. 320×120×380mm (customizable)", ja: "展開 約 320×120×380mm（カスタム可）" },
+  "A4（210×297mm）": { 'zh-hk': "A4（210×297mm）", en: "A4 (210×297mm)", ja: "A4（210×297mm）" },
+  "A5（148×210mm）": { 'zh-hk': "A5（148×210mm）", en: "A5 (148×210mm)", ja: "A5（148×210mm）" },
+  "A4（210×297mm）或A5（148×210mm）": { 'zh-hk': "A4（210×297mm）或A5（148×210mm）", en: "A4 (210×297mm) or A5 (148×210mm)", ja: "A4（210×297mm）または A5（148×210mm）" },
+  "A4展開（210×297mm）或DL（99×210mm）": { 'zh-hk': "A4展開（210×297mm）或DL（99×210mm）", en: "A4 flat (210×297mm) or DL (99×210mm)", ja: "A4 展開（210×297mm）または DL（99×210mm）" },
+  "A2 420×594mm（可改比例）": { 'zh-hk': "A2 420×594mm（可改比例）", en: "A2 420×594mm (ratio adjustable)", ja: "A2 420×594mm（比率変更可）" },
+  "A1 594×841mm": { 'zh-hk': "A1 594×841mm", en: "A1 594×841mm", ja: "A1 594×841mm" },
+  "依稿面；可對標 A 系列或全幅": { 'zh-hk': "依稿面；可對標 A 系列或全幅", en: "To artwork; A-series or full-bleed sizes available", ja: "原稿に合わせて；A 判または全幅サイズに対応" },
+  "X 展架 60×160cm／80×180cm；易拉寶 85×200cm（可客製）": { 'zh-hk': "X 展架 60×160cm／80×180cm；易拉寶 85×200cm（可客製）", en: "X-banner 60×160cm / 80×180cm; roll-up 85×200cm (customizable)", ja: "X バナー 60×160cm／80×180cm；ロールアップ 85×200cm（カスタム可）" },
+  "A4 至 A0（59.4×84.1cm），更大尺寸可拼接": { 'zh-hk': "A4 至 A0（59.4×84.1cm），更大尺寸可拼接", en: "A4 to A0 (59.4×84.1cm); larger sizes can be joined", ja: "A4〜A0（59.4×84.1cm）、それ以上は分割接合で対応" },
+  "A4 至 A0，異形模切依稿件而定": { 'zh-hk': "A4 至 A0，異形模切依稿件而定", en: "A4 to A0; custom die-cut shapes depend on artwork", ja: "A4〜A0；異形型抜きは原稿によります" },
+  "完全訂製，常見 15×10×5cm 至 25×20×8cm": { 'zh-hk': "完全訂製，常見 15×10×5cm 至 25×20×8cm", en: "Fully custom; commonly 15×10×5cm to 25×20×8cm", ja: "完全オーダーメイド、一般的に 15×10×5cm〜25×20×8cm" },
+  "依瓶器三維客製; 標準 50×50×30mm 至 250×250×120mm": { 'zh-hk': "依瓶器三維客製; 標準 50×50×30mm 至 250×250×120mm", en: "3D custom to bottle shape; standard 50×50×30mm to 250×250×120mm", ja: "ボトル形状に合わせた 3D カスタム；標準 50×50×30mm〜250×250×120mm" },
+  "小／中／大或依內裝物客製": { 'zh-hk': "小／中／大或依內裝物客製", en: "Small / medium / large or custom to contents", ja: "小／中／大、または内容物に合わせてカスタム" },
+  "展開平板約 40×30cm 至 60×50cm；成型後約 15×10×5cm 起": { 'zh-hk': "展開平板約 40×30cm 至 60×50cm；成型後約 15×10×5cm 起", en: "Flat approx. 40×30cm to 60×50cm; assembled from approx. 15×10×5cm", ja: "展開 約 40×30cm〜60×50cm；組立後 約 15×10×5cm から" },
+  "全客製內徑；常用禮品三階尺寸": { 'zh-hk': "全客製內徑；常用禮品三階尺寸", en: "Fully custom inner dimensions; three common gift sizes", ja: "内寸は完全カスタム；ギフト向けの3段階サイズが一般的" },
+  "標準約90×170mm（可客製）": { 'zh-hk': "標準約90×170mm（可客製）", en: "Standard approx. 90×170mm (customizable)", ja: "標準 約 90×170mm（カスタム可）" },
+  "完全訂製": { 'zh-hk': "完全訂製", en: "Fully custom", ja: "完全オーダーメイド" },
+  "標準約90×170mm": { 'zh-hk': "標準約90×170mm", en: "Standard approx. 90×170mm", ja: "標準 約 90×170mm" },
+  "約110×200mm（較標準大30%–50%）": { 'zh-hk': "約110×200mm（較標準大30%–50%）", en: "Approx. 110×200mm (30%–50% larger than standard)", ja: "約 110×200mm（標準より 30%–50% 大きい）" },
+  "A3（297×420mm）或A4（210×297mm）": { 'zh-hk': "A3（297×420mm）或A4（210×297mm）", en: "A3 (297×420mm) or A4 (210×297mm)", ja: "A3（297×420mm）または A4（210×297mm）" },
+  "A5（148×210mm）或A4（210×297mm）": { 'zh-hk': "A5（148×210mm）或A4（210×297mm）", en: "A5 (148×210mm) or A4 (210×297mm)", ja: "A5（148×210mm）または A4（210×297mm）" },
+  "A3、A4或完全客製": { 'zh-hk': "A3、A4或完全客製", en: "A3, A4 or fully custom", ja: "A3、A4、または完全カスタム" },
+  "約85×55mm或90×60mm": { 'zh-hk': "約85×55mm或90×60mm", en: "Approx. 85×55mm or 90×60mm", ja: "約 85×55mm または 90×60mm" },
+  "A4（210×297mm）或A3（297×420mm）": { 'zh-hk': "A4（210×297mm）或A3（297×420mm）", en: "A4 (210×297mm) or A3 (297×420mm)", ja: "A4（210×297mm）または A3（297×420mm）" },
+  "按客製長寬平方米計": { 'zh-hk': "按客製長寬平方米計", en: "Priced per square metre of custom width × length", ja: "カスタムの幅×丈の平方メートル単位で算出" },
+  "常見 850×2000mm 至 1200×3000mm 級": { 'zh-hk': "常見 850×2000mm 至 1200×3000mm 級", en: "Commonly 850×2000mm to 1200×3000mm", ja: "一般的に 850×2000mm〜1200×3000mm" },
+  "依車型版型，常見轎車約 15–20 平方米": { 'zh-hk': "依車型版型，常見轎車約 15–20 平方米", en: "Per vehicle template; approx. 15–20 sq m for a typical car", ja: "車種別型紙に合わせて；一般的な乗用車で 約 15–20 平方メートル" },
+  "最大寬度 5 米，長度無限；常見 3×6m、4×8m": { 'zh-hk': "最大寬度 5 米，長度無限；常見 3×6m、4×8m", en: "Max width 5 m, unlimited length; commonly 3×6m, 4×8m", ja: "最大幅 5 m、長さ無制限；一般的に 3×6m、4×8m" },
+  "A5（148×210mm）或B5（176×250mm）": { 'zh-hk': "A5（148×210mm）或B5（176×250mm）", en: "A5 (148×210mm) or B5 (176×250mm)", ja: "A5（148×210mm）または B5（176×250mm）" },
+  "DL／C5／C4 等常用規格": { 'zh-hk': "DL／C5／C4 等常用規格", en: "Common formats such as DL / C5 / C4", ja: "DL／C5／C4 などの一般的な規格" },
+  "DL、C5、C4（變數可選）": { 'zh-hk': "DL、C5、C4（變數可選）", en: "DL, C5, C4 (variable options)", ja: "DL、C5、C4（変形も選択可）" },
+  "C4（229×324mm）等": { 'zh-hk': "C4（229×324mm）等", en: "C4 (229×324mm) and others", ja: "C4（229×324mm）など" },
+  "A4（210×297mm）或B5（176×250mm）": { 'zh-hk': "A4（210×297mm）或B5（176×250mm）", en: "A4 (210×297mm) or B5 (176×250mm)", ja: "A4（210×297mm）または B5（176×250mm）" },
+  "依產品＋內襯厚度全客製": { 'zh-hk': "依產品＋內襯厚度全客製", en: "Fully custom to product + insert thickness", ja: "製品と内台の厚みに合わせて完全カスタム" },
+  "完全訂製，常見 10×10×4cm 至 20×15×6cm": { 'zh-hk': "完全訂製，常見 10×10×4cm 至 20×15×6cm", en: "Fully custom; commonly 10×10×4cm to 20×15×6cm", ja: "完全オーダーメイド、一般的に 10×10×4cm〜20×15×6cm" },
+  "常見 12×8×5cm 至 20×15×8cm（可客製）": { 'zh-hk': "常見 12×8×5cm 至 20×15×8cm（可客製）", en: "Commonly 12×8×5cm to 20×15×8cm (customizable)", ja: "一般的に 12×8×5cm〜20×15×8cm（カスタム可）" },
+  "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸, 飛機盒/扣底盒/雙插盒 3 種盒型)": { 'zh-hk': "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸, 飛機盒/扣底盒/雙插盒 3 種盒型)", en: "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 standard sizes; aircraft box / tuck-end box / two-piece box, 3 styles)", ja: "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm（標準8サイズ、エアクラフト箱／キャラメル箱／両差し箱の3型）" },
+  "最小約 20×20mm，最大約 200×300mm": { 'zh-hk': "最小約 20×20mm，最大約 200×300mm", en: "Min. approx. 20×20mm, max. approx. 200×300mm", ja: "最小約 20×20mm、最大約 200×300mm" },
+  "A5 (148×210mm) / B5 (182×257mm) / A4 (可選)": { 'zh-hk': "A5 (148×210mm) / B5 (182×257mm) / A4 (可選)", en: "A5 (148×210mm) / B5 (182×257mm) / A4 (optional)", ja: "A5（148×210mm）／B5（182×257mm）／A4（選択可）" },
+  "30-80mm (自訂形狀,Illustrator パス路徑入稿)": { 'zh-hk': "30-80mm (自訂形狀,Illustrator パス路徑入稿)", en: "30-80mm (custom shape, Illustrator path artwork)", ja: "30-80mm（形状カスタム、Illustrator パス原稿入稿）" },
+  "57mm (標準) / 76mm (大尺寸) / 44mm (迷你)": { 'zh-hk': "57mm (標準) / 76mm (大尺寸) / 44mm (迷你)", en: "57mm (standard) / 76mm (large) / 44mm (mini)", ja: "57mm（標準）／76mm（大サイズ）／44mm（ミニ）" },
+  "105×148mm (A6 標準明信片)": { 'zh-hk': "105×148mm (A6 標準明信片)", en: "105×148mm (A6 standard postcard)", ja: "105×148mm（A6 標準ポストカード）" },
+  "38×42×10cm (可收納 A4) / 側寬 10cm": { 'zh-hk': "38×42×10cm (可收納 A4) / 側寬 10cm", en: "38×42×10cm (fits A4) / 10cm gusset", ja: "38×42×10cm（A4 収納可）／マチ 10cm" },
+  "130×190mm 標準請帖 / 190×260mm 對摺請帖": { 'zh-hk': "130×190mm 標準請帖 / 190×260mm 對摺請帖", en: "130×190mm standard invitation / 190×260mm folded invitation", ja: "130×190mm 標準招待状／190×260mm 二つ折り招待状" },
+  "A6 (105×148mm) / 自訂": { 'zh-hk': "A6 (105×148mm) / 自訂", en: "A6 (105×148mm) / custom", ja: "A6（105×148mm）／カスタム" },
+  "A6 (105×148mm) / 對摺 A5": { 'zh-hk': "A6 (105×148mm) / 對摺 A5", en: "A6 (105×148mm) / A5 folded", ja: "A6（105×148mm）／A5 二つ折り" },
+  "A5 對摺 (148×210mm) / A4 對摺": { 'zh-hk': "A5 對摺 (148×210mm) / A4 對摺", en: "A5 folded (148×210mm) / A4 folded", ja: "A5 二つ折り（148×210mm）／A4 二つ折り" },
+  "A5 對摺 (148×210mm) / 自訂": { 'zh-hk': "A5 對摺 (148×210mm) / 自訂", en: "A5 folded (148×210mm) / custom", ja: "A5 二つ折り（148×210mm）／カスタム" },
+  "6 件不同尺寸 (請帖 130×190mm 等)": { 'zh-hk': "6 件不同尺寸 (請帖 130×190mm 等)", en: "6 pieces in different sizes (invitation 130×190mm etc.)", ja: "6 点の異なるサイズ（招待状 130×190mm など）" },
+  "A6 (105×148mm) / A5 對摺 / 自訂站立式": { 'zh-hk': "A6 (105×148mm) / A5 對摺 / 自訂站立式", en: "A6 (105×148mm) / A5 folded / custom standing", ja: "A6（105×148mm）／A5 二つ折り／自立型カスタム" },
+  "A8 (52×74mm) / A7 (74×105mm) / 自訂圓形": { 'zh-hk': "A8 (52×74mm) / A7 (74×105mm) / 自訂圓形", en: "A8 (52×74mm) / A7 (74×105mm) / custom round", ja: "A8（52×74mm）／A7（74×105mm）／円形カスタム" },
+  "A7 (74×105mm) / A6 對摺 / 自訂站立": { 'zh-hk': "A7 (74×105mm) / A6 對摺 / 自訂站立", en: "A7 (74×105mm) / A6 folded / custom standing", ja: "A7（74×105mm）／A6 二つ折り／自立型カスタム" },
+  "A7 (74×105mm) / 90×120mm / 自訂": { 'zh-hk': "A7 (74×105mm) / 90×120mm / 自訂", en: "A7 (74×105mm) / 90×120mm / custom", ja: "A7（74×105mm）／90×120mm／カスタム" },
+  "A6 (105×148mm) / A5 對摺 / 自訂站立": { 'zh-hk': "A6 (105×148mm) / A5 對摺 / 自訂站立", en: "A6 (105×148mm) / A5 folded / custom standing", ja: "A6（105×148mm）／A5 二つ折り／自立型カスタム" },
+  "A1 (594×841mm) / A2 (420×594mm) / 自訂": { 'zh-hk': "A1 (594×841mm) / A2 (420×594mm) / 自訂", en: "A1 (594×841mm) / A2 (420×594mm) / custom", ja: "A1（594×841mm）／A2（420×594mm）／カスタム" },
 };
 
 /**
@@ -281,7 +355,7 @@ export function localizeSpecValue(value: string | null | undefined, locale: Loca
 
 /**
  * 規格物件整批本地化 (PDP 規格條目: { material, size, printMethod, finishing })
- * 只對有映射的欄位生效, 其餘 (如 size) 原樣返回 -> 不影響未覆蓋欄位
+ * 只對有映射的欄位生效, 其餘欄位原樣返回 -> 不影響未覆蓋欄位
  */
 export function localizeSpecs<T extends Record<string, string | undefined>>(
   specs: T | undefined | null,
@@ -293,4 +367,31 @@ export function localizeSpecs<T extends Record<string, string | undefined>>(
     if (typeof v === 'string' && v) out[k] = localizeSpecValue(v, locale);
   }
   return out;
+}
+
+/**
+ * PDP 規格條目的**欄名** (dt) 三語映射 — Step 5 (B2)
+ *
+ * 為什麼需要: v9 PDP 用 Object.keys(specs) 原文渲染 dt, 導致 **zh-hk 頁也顯示英文欄名**
+ * (material / size / printMethod / finishing)。欄名是 UI 文案, 不是資料值, 必須本地化。
+ * · zh-hk: 材質 / 尺寸 / 印刷方式 / 後加工 (港式印刷用語)
+ * · en   : Material / Size / Print Method / Finishing
+ * · ja   : 素材 / サイズ / 印刷方法 / 後加工
+ * ⚠️ 已知站內不一致 (未在本批修): legacy ProductTabs.tsx 的同欄名為「加工工藝」/「加工」。
+ *    若要全站統一, 改本表一行並重跑生成器即可 (改動會再動 zh-hk/ja 既有輸出, 需另行拍板)。
+ */
+export const SPEC_FIELD_LABELS: Record<string, SpecI18nValue> = {
+  material: { 'zh-hk': "材質", en: "Material", ja: "素材" },
+  size: { 'zh-hk': "尺寸", en: "Size", ja: "サイズ" },
+  printMethod: { 'zh-hk': "印刷方式", en: "Print Method", ja: "印刷方法" },
+  finishing: { 'zh-hk': "後加工", en: "Finishing", ja: "後加工" },
+};
+
+/**
+ * 規格欄名本地化: 命中映射 -> 取該語系值; 未命中 -> **fallback 原 key** (不報錯, 不留空)
+ */
+export function localizeSpecField(key: string, locale: Locale | string): string {
+  const hit = SPEC_FIELD_LABELS[key];
+  if (!hit) return key;
+  return hit[locale as keyof SpecI18nValue] || key;
 }

@@ -2146,8 +2146,9 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can you customize corporate red packets?', a: 'Yes. Professional designers create branded red packets integrating logos, brand colors, and blessings.' },
       { q: 'Can each packet have different blessings?', a: 'Yes. Variable data printing allows different employee names or blessings per packet.' },
       { q: 'Can red packet sizes be customized?', a: 'Yes. Standard sizes: small, medium, large. Fully custom sizes also supported.' },
-      // 2026-08-22 v3.14 T25: red-packets Pillar 去模板化 (防 scaled content abuse, 加 CNY 2027 文化 + 時間線)
-      { q: 'CNY 2027 利是封備貨時間線 + 行業趨勢？', a: '8 月設計 → 9 月打樣 (HK$200 含郵費) → 10 月量產 (5-7 天交期) → 11 月前完成派發 (旺季 +30% 費用). 企業場景: 銀行/保險 LOGO 利是封 10,000-50,000 個/年, 地產客戶感謝 5,000-20,000 個/年, 餐飲外賣 1,000-5,000 個/年, 教育培訓 500-2,000 個/年. 行業趨勢: 客製化 +58% (企業 LOGO 從 18% 升到 28%), 環保材質 (FSC 紅卡 + 大豆油墨) +42%. 對打 e-print HK$1.6/個 (100 個), 我方 HK$1.2/個 (1000 個 + 燙金 + 早鳥 9 折 = HK$1.08/個).' },
+      // 2026-09-19 Step 5 (B3): 此處原有「2026-08-22 v3.14 T25」留下的**整條繁體中文** CNY 2027 FAQ
+      //   （q + a 全中文），插在 en 語系的 faq 陣列內 ⇒ en 頁面會渲染中文 FAQ，屬真缺陷，已刪除。
+      //   同一 FAQ 的英文版就在下方（v3.15 S2 T36，L2155）⇒ 去重，內容無損失。
       { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and foil stamping area annotations.' },
