@@ -14,9 +14,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-90X60X30-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-90X60X30-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-90X60X30-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-90X60X30-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -58,9 +58,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -102,9 +102,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -146,9 +146,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -190,9 +190,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -227,9 +227,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -264,9 +264,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -301,9 +301,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-120X80X40-單面-[印白墨][逆向UV]-模切[異形],黏吊口",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-120X80X40-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-120X80X40-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -338,9 +338,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -368,9 +368,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -405,9 +405,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-150X100X60-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -442,9 +442,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-150X100X60-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -479,9 +479,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-飛機盒-150X100X60-單面-[印白墨][逆向UV]-模切[異形],貼膠片[0.15][50x30],黏吊口",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Airplane box-150X100X60-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Film patch [0.15][50x30],Hang tab",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-飛行機箱-150X100X60-片面-[白インク印刷][リバースUV]-型抜き[異形],フィルム貼り[0.15][50x30],吊り下げ口"
       },
       "tiers": [
         {
@@ -516,9 +516,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-200X150X80-單面-[印白墨][逆向UV]-模切[異形],貼膠片[0.15][50x30],黏吊口",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-200X150X80-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Film patch [0.15][50x30],Hang tab",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-200X150X80-片面-[白インク印刷][リバースUV]-型抜き[異形],フィルム貼り[0.15][50x30],吊り下げ口"
       },
       "tiers": [
         {
@@ -553,9 +553,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-200X150X80-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-200X150X80-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -590,9 +590,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-200X150X80-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-200X150X80-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -627,9 +627,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-飛機盒-200X150X80-單面-[印白墨]-模切[異形],擊凸[10x10],黏吊口",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Airplane box-200X150X80-Single-sided-[Back-print white ink]-Die-cut [custom shape],Embossing [10x10],Hang tab",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-飛行機箱-200X150X80-片面-[白インク印刷]-型抜き[異形],エンボス[10x10],吊り下げ口"
       },
       "tiers": [
         {
@@ -664,9 +664,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-80X60X35-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-80X60X35-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-80X60X35-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -701,9 +701,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-80X60X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-普通扣底盒-80X60X35-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Standard lock-bottom box-80X60X35-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-標準ロック底箱-80X60X35-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -738,9 +738,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-普通扣底盒-80X60X35-單面-[印白墨]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Standard lock-bottom box-80X60X35-Single-sided-[Back-print white ink]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-標準ロック底箱-80X60X35-片面-[白インク印刷]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -775,9 +775,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-普通扣底盒-80X60X35-單面-[印白墨][逆向UV]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Standard lock-bottom box-80X60X35-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-標準ロック底箱-80X60X35-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -812,9 +812,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-普通扣底盒-100X70X35-單面-[印白墨][逆向UV]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Standard lock-bottom box-100X70X35-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-標準ロック底箱-100X70X35-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -849,9 +849,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-普通扣底盒-100X70X35-單面-[印白墨]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Standard lock-bottom box-100X70X35-Single-sided-[Back-print white ink]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-標準ロック底箱-100X70X35-片面-[白インク印刷]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -886,9 +886,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-普通扣底盒-100X70X35-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Standard lock-bottom box-100X70X35-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-標準ロック底箱-100X70X35-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -923,9 +923,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-100X70X35-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-100X70X35-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-100X70X35-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-100X70X35-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -960,9 +960,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-普通扣底盒-150X100X50-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-普通扣底盒-150X100X50-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Standard lock-bottom box-150X100X50-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-標準ロック底箱-150X100X50-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -997,9 +997,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-普通扣底盒-150X50X100-单面-模切[异形],覆膜[覆光膜],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-400g單粉卡(345g超高鬆)[400克]-普通扣底盒-150X50X100-單面-模切[異形],覆膜[覆光膜],黏吊口,黏盒",
+        "en": "Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Standard lock-bottom box-150X50X100-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab,Box gluing",
+        "ja": "合版カードボックス-400gコートボール(345g超高嵩)[400g]-標準ロック底箱-150X50X100-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -1034,9 +1034,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-銀卡紙（375g）[375克]-普通扣底盒-150X50X100-單面-[印白墨]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Silver card（375g）[375g]-Standard lock-bottom box-150X50X100-Single-sided-[Back-print white ink]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-銀カード（375g）[375g]-標準ロック底箱-150X50X100-片面-[白インク印刷]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -1071,9 +1071,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-150X50X100-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+        "zh-hk": "拼版卡盒-鐳射銀卡（375g）[375克]-普通扣底盒-150X50X100-單面-[印白墨][逆向UV]-模切[異形],黏吊口,黏盒",
+        "en": "Gang-run card box-Holographic silver card（375g）[375g]-Standard lock-bottom box-150X50X100-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab,Box gluing",
+        "ja": "合版カードボックス-ホログラム銀カード（375g）[375g]-標準ロック底箱-150X50X100-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -1119,9 +1119,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1163,9 +1163,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-60X40X20-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-60X40X20-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-60X40X20-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1200,9 +1200,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-銀卡紙（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -1237,9 +1237,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-60X40X20-单面-模切[异形],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-60X40X20-單面-模切[異形],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-60X40X20-Single-sided-Die-cut [custom shape],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-60X40X20-片面-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -1274,9 +1274,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-120X80X40-单面-[印白墨][逆向UV]-模切[异形],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-120X80X40-單面-[印白墨][逆向UV]-模切[異形],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-120X80X40-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-120X80X40-片面-[白インク印刷][リバースUV]-型抜き[異形],吊り下げ口"
       },
       "tiers": [
         {
@@ -1311,9 +1311,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1341,9 +1341,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-120X80X40-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-120X80X40-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1378,9 +1378,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-150X100X60-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1415,9 +1415,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-150X100X60-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-150X100X60-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-150X100X60-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1452,9 +1452,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-150X100X60-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-銀卡紙（375g）[375克]-飛機盒-150X100X60-單面-[印白墨][逆向UV]-模切[異形],貼膠片[0.15][50x30],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Silver card（375g）[375g]-Airplane box-150X100X60-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Film patch [0.15][50x30],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-銀カード（375g）[375g]-飛行機箱-150X100X60-片面-[白インク印刷][リバースUV]-型抜き[異形],フィルム貼り[0.15][50x30],吊り下げ口"
       },
       "tiers": [
         {
@@ -1489,9 +1489,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-飞机盒-200X150X80-单面-[印白墨][逆向UV]-模切[异形],贴胶片[0.15][50x30],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-鐳射銀卡（375g）[375克]-飛機盒-200X150X80-單面-[印白墨][逆向UV]-模切[異形],貼膠片[0.15][50x30],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Holographic silver card（375g）[375g]-Airplane box-200X150X80-Single-sided-[Back-print white ink][Reverse UV]-Die-cut [custom shape],Film patch [0.15][50x30],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-ホログラム銀カード（375g）[375g]-飛行機箱-200X150X80-片面-[白インク印刷][リバースUV]-型抜き[異形],フィルム貼り[0.15][50x30],吊り下げ口"
       },
       "tiers": [
         {
@@ -1526,9 +1526,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-飛機盒-200X150X80-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Airplane box-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-飛行機箱-200X150X80-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1563,9 +1563,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-飞机盒-200X150X80-单面-模切[异形],覆膜[覆光膜],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-400g單粉卡(345g超高鬆)[400克]-飛機盒-200X150X80-單面-模切[異形],覆膜[覆光膜],黏吊口",
+        "en": "【Airplane box】Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Airplane box-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-400gコートボール(345g超高嵩)[400g]-飛行機箱-200X150X80-片面-型抜き[異形],ラミネート[光沢ラミネート],吊り下げ口"
       },
       "tiers": [
         {
@@ -1600,9 +1600,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【飛機盒】拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口",
-        "en": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口",
-        "ja": "拼版卡盒-银卡纸（375g）[375克]-飞机盒-200X150X80-单面-[印白墨]-模切[异形],击凸[10x10],粘吊口"
+        "zh-hk": "【飛機盒】拼版卡盒-銀卡紙（375g）[375克]-飛機盒-200X150X80-單面-[印白墨]-模切[異形],擊凸[10x10],黏吊口",
+        "en": "【Airplane box】Gang-run card box-Silver card（375g）[375g]-Airplane box-200X150X80-Single-sided-[Back-print white ink]-Die-cut [custom shape],Embossing [10x10],Hang tab",
+        "ja": "【飛行機箱】合版カードボックス-銀カード（375g）[375g]-飛行機箱-200X150X80-片面-[白インク印刷]-型抜き[異形],エンボス[10x10],吊り下げ口"
       },
       "tiers": [
         {
@@ -1648,9 +1648,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "【雙插盒】拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "en": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "ja": "拼版卡盒-350g单粉卡(305g)(超高松)[350克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+        "zh-hk": "【雙插盒】拼版卡盒-350g單粉卡(305g)(超高鬆)[350克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒",
+        "en": "【Double tuck-end box】Gang-run card box-350g C1S art card (305g)(Ultra high bulk)[350g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing",
+        "ja": "【差し込み式ボックス】合版カードボックス-350gコートボール(305g)(超高嵩)[350g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -1692,9 +1692,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "【雙插盒】拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "en": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒",
-        "ja": "拼版卡盒-400g单粉卡(345g超高松)[400克]-双插盒-100X80X120-单面-模切[异形],覆膜[覆光膜],烫金[亮黄金][10x10],UV[10x10],贴胶片[0.15][50x30],粘吊口,粘盒"
+        "zh-hk": "【雙插盒】拼版卡盒-400g單粉卡(345g超高鬆)[400克]-雙插盒-100X80X120-單面-模切[異形],覆膜[覆光膜],燙金[亮黃金][10x10],UV[10x10],貼膠片[0.15][50x30],黏吊口,黏盒",
+        "en": "【Double tuck-end box】Gang-run card box-400g C1S art card (345g Ultra high bulk)[400g]-Double tuck-end box-100X80X120-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Foil stamping [Bright gold][10x10],UV[10x10],Film patch [0.15][50x30],Hang tab,Box gluing",
+        "ja": "【差し込み式ボックス】合版カードボックス-400gコートボール(345g超高嵩)[400g]-差し込み式ボックス-100X80X120-片面-型抜き[異形],ラミネート[光沢ラミネート],箔押し[ブライトゴールド][10x10],UV[10x10],フィルム貼り[0.15][50x30],吊り下げ口,のり付け"
       },
       "tiers": [
         {
@@ -1739,7 +1739,7 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'corrugated-boxes': {
   "source": "corrugated-boxes-cost.json",
   "productName": {
-    "zh-hk": "瓦楞彩盒(专版)",
+    "zh-hk": "瓦楞彩盒(專版)",
     "en": "Corrugated Boxes (Custom)",
     "ja": "段ボール箱(専版)"
   },
@@ -1747,9 +1747,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-飛機盒[A9（加強芯）黃色]-120X80X40-單面-模切[異形],覆膜[覆光膜],瓦楞紙紋[長度橫紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Airplane box [A9（Reinforced core）Yellow]-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Corrugated flute direction [horizontal grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-飛行機箱[A9（補強芯）イエロー]-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],段ボール目の方向[長手方向の横目]"
       },
       "tiers": [
         {
@@ -1791,9 +1791,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-飛機盒[W9（高加強芯）白色]-120X80X40-單面-模切[異形],覆膜[覆光膜],瓦楞紙紋[長度橫紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Airplane box [W9（High-strength core）White]-120X80X40-Single-sided-Die-cut [custom shape],Lamination [Gloss lamination],Corrugated flute direction [horizontal grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-飛行機箱[W9（高補強芯）ホワイト]-120X80X40-片面-型抜き[異形],ラミネート[光沢ラミネート],段ボール目の方向[長手方向の横目]"
       },
       "tiers": [
         {
@@ -1835,9 +1835,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-飛機盒[W9（高加強芯）白色]-150X100X60-單面-模切[異形],覆膜[覆啞膜],瓦楞紙紋[長度橫紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Airplane box [W9（High-strength core）White]-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Corrugated flute direction [horizontal grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-飛行機箱[W9（高補強芯）ホワイト]-150X100X60-片面-型抜き[異形],ラミネート[マットラミネート],段ボール目の方向[長手方向の横目]"
       },
       "tiers": [
         {
@@ -1879,9 +1879,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-普通扣底盒[W9（高加強芯）白色]-150X100X60-單面-模切[異形],覆膜[覆啞膜],黏盒,瓦楞紙紋[長度橫紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Standard lock-bottom box [W9（High-strength core）White]-150X100X60-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Box gluing,Corrugated flute direction [horizontal grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-標準ロック底箱[W9（高補強芯）ホワイト]-150X100X60-片面-型抜き[異形],ラミネート[マットラミネート],のり付け,段ボール目の方向[長手方向の横目]"
       },
       "tiers": [
         {
@@ -1923,9 +1923,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-普通扣底盒[W9（高加強芯）白色]-200X80X150-單面-模切[異形],覆膜[覆啞膜],黏盒,瓦楞紙紋[長度直紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Standard lock-bottom box [W9（High-strength core）White]-200X80X150-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Box gluing,Corrugated flute direction [vertical grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-標準ロック底箱[W9（高補強芯）ホワイト]-200X80X150-片面-型抜き[異形],ラミネート[マットラミネート],のり付け,段ボール目の方向[長手方向の縦目]"
       },
       "tiers": [
         {
@@ -1967,9 +1967,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-飛機盒[B9（加強芯）黃色]-200X150X80-單面-模切[異形],覆膜[覆啞膜],瓦楞紙紋[長度直紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Airplane box [B9（Reinforced core）Yellow]-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Corrugated flute direction [vertical grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-飛行機箱[B9（補強芯）イエロー]-200X150X80-片面-型抜き[異形],ラミネート[マットラミネート],段ボール目の方向[長手方向の縦目]"
       },
       "tiers": [
         {
@@ -2011,9 +2011,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-飛機盒[AF（加強芯）黃色]-200X150X80-單面-模切[異形],覆膜[覆啞膜],瓦楞紙紋[長度直紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Airplane box [AF（Reinforced core）Yellow]-200X150X80-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Corrugated flute direction [vertical grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-飛行機箱[AF（補強芯）イエロー]-200X150X80-片面-型抜き[異形],ラミネート[マットラミネート],段ボール目の方向[長手方向の縦目]"
       },
       "tiers": [
         {
@@ -2055,9 +2055,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-普通扣底盒[WF（加強芯）白色]-200X80X150-單面-模切[異形],覆膜[覆啞膜],貼膠片[0.1][50x30],黏盒,瓦楞紙紋[長度直紋]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Standard lock-bottom box [WF（Reinforced core）White]-200X80X150-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Film patch [0.1][50x30],Box gluing,Corrugated flute direction [vertical grain along length]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-標準ロック底箱[WF（補強芯）ホワイト]-200X80X150-片面-型抜き[異形],ラミネート[マットラミネート],フィルム貼り[0.1][50x30],のり付け,段ボール目の方向[長手方向の縦目]"
       },
       "tiers": [
         {
@@ -2099,9 +2099,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-普通扣底盒[AF（加強芯）黃色]-180X50X120-單面-模切[異形],覆膜[覆啞膜],黏盒,瓦楞紙紋[任意]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Standard lock-bottom box [AF（Reinforced core）Yellow]-180X50X120-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Box gluing,Corrugated flute direction [Any]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-標準ロック底箱[AF（補強芯）イエロー]-180X50X120-片面-型抜き[異形],ラミネート[マットラミネート],のり付け,段ボール目の方向[任意]"
       },
       "tiers": [
         {
@@ -2136,9 +2136,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
-        "en": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
-        "ja": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]"
+        "zh-hk": "瓦楞紙盒-灰卡（單面白）[250克]-普通扣底盒[AF（加強芯）黃色]-300X80X200-單面-模切[異形],覆膜[覆啞膜],黏盒,瓦楞紙紋[任意]",
+        "en": "Corrugated box-Grey board（One-side white）[250g]-Standard lock-bottom box [AF（Reinforced core）Yellow]-300X80X200-Single-sided-Die-cut [custom shape],Lamination [Matte lamination],Box gluing,Corrugated flute direction [Any]",
+        "ja": "段ボール箱-グレー板紙（片面白）[250g]-標準ロック底箱[AF（補強芯）イエロー]-300X80X200-片面-型抜き[異形],ラミネート[マットラミネート],のり付け,段ボール目の方向[任意]"
       },
       "tiers": [
         {
@@ -2183,7 +2183,7 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'white-card-bags': {
   "source": "white-card-bags-cost.json",
   "productName": {
-    "zh-hk": "白卡手提袋(专版)",
+    "zh-hk": "白卡紙手提袋(專版)",
     "en": "White Card Bags (Custom)",
     "ja": "白カード手提げ袋(専版)"
   },
@@ -2191,9 +2191,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒",
-        "en": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒",
-        "ja": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-200X100X250-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],粘盒"
+        "zh-hk": "白卡紙手提袋-白卡紙[250克]-白卡紙手提袋-200X100X250-手提繩[380厘米手提繩][紅色]-單面-模切[普通],覆膜[覆啞膜],黏盒",
+        "en": "White card paper bag-White card [250g]-White card paper bag-200X100X250-Handle cord [380cm handle cord][Red]-Single-sided-Die-cut [Standard],Lamination [Matte lamination],Box gluing",
+        "ja": "白カード紙袋-白カード紙[250g]-白カード紙袋-200X100X250-持ち手紐[380cm持ち手紐][レッド]-片面-型抜き[標準],ラミネート[マットラミネート],のり付け"
       },
       "tiers": [
         {
@@ -2235,9 +2235,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒",
-        "en": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒",
-        "ja": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[150x100],粘盒"
+        "zh-hk": "白卡紙手提袋-白卡紙[250克]-白卡紙手提袋-300X120X350-手提繩[380厘米手提繩][紅色]-單面-模切[普通],覆膜[覆啞膜],燙金[啞金][100x100],UV[150x100],黏盒",
+        "en": "White card paper bag-White card [250g]-White card paper bag-300X120X350-Handle cord [380cm handle cord][Red]-Single-sided-Die-cut [Standard],Lamination [Matte lamination],Foil stamping [Matte gold][100x100],UV[150x100],Box gluing",
+        "ja": "白カード紙袋-白カード紙[250g]-白カード紙袋-300X120X350-持ち手紐[380cm持ち手紐][レッド]-片面-型抜き[標準],ラミネート[マットラミネート],箔押し[マットゴールド][100x100],UV[150x100],のり付け"
       },
       "tiers": [
         {
@@ -2279,9 +2279,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒",
-        "en": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒",
-        "ja": "白卡纸手袋-白卡纸[250克]-白卡纸手提袋-300X120X350-手提绳[380厘米手提绳][红色]-单面-模切[普通],覆膜[覆哑膜],烫金[哑金][100x100],UV[100x100],击凸[100x100],粘盒"
+        "zh-hk": "白卡紙手提袋-白卡紙[250克]-白卡紙手提袋-300X120X350-手提繩[380厘米手提繩][紅色]-單面-模切[普通],覆膜[覆啞膜],燙金[啞金][100x100],UV[100x100],擊凸[100x100],黏盒",
+        "en": "White card paper bag-White card [250g]-White card paper bag-300X120X350-Handle cord [380cm handle cord][Red]-Single-sided-Die-cut [Standard],Lamination [Matte lamination],Foil stamping [Matte gold][100x100],UV[100x100],Embossing [100x100],Box gluing",
+        "ja": "白カード紙袋-白カード紙[250g]-白カード紙袋-300X120X350-持ち手紐[380cm持ち手紐][レッド]-片面-型抜き[標準],ラミネート[マットラミネート],箔押し[マットゴールド][100x100],UV[100x100],エンボス[100x100],のり付け"
       },
       "tiers": [
         {
@@ -2326,7 +2326,7 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'waterproof-stickers': {
   "source": "digital-stickers-cost.json",
   "productName": {
-    "zh-hk": "数码贴纸(专版)",
+    "zh-hk": "數碼貼紙(專版)",
     "en": "Digital Stickers (Custom)",
     "ja": "デジタルステッカー(専版)"
   },
@@ -2334,9 +2334,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-格仔底紙/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Grid backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-グリッド台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2378,9 +2378,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-厚白底/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Thick white backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-厚白台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2422,9 +2422,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2466,9 +2466,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X297-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X297-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X297-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2510,9 +2510,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜",
-        "en": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜",
-        "ja": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+        "zh-hk": "卷裝/平裝標籤-格仔底紙/銅板（熱熔膠）-150X100-單面-模切(啤)[異形],卷裝[卷芯直徑4cm][出標方向橫版左出標][每卷張數1000],不覆膜",
+        "en": "Roll/Sheet label-Grid backing/Art paper（Hot-melt adhesive）-150X100-Single-sided-Die-cut [custom shape],Roll [Core diameter 4cm][Unwind direction landscape left unwind][Labels per roll 1000],No lamination",
+        "ja": "ロール/シートラベル-グリッド台紙/アート紙（ホットメルト）-150X100-片面-型抜き[異形],ロール[巻芯径4cm][繰り出し方向横位置左出し][巻あたり枚数1000],ラミネートなし"
       },
       "tiers": [
         {
@@ -2529,7 +2529,7 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'digital-stickers': {
   "source": "digital-stickers-cost.json",
   "productName": {
-    "zh-hk": "数码贴纸(专版)",
+    "zh-hk": "數碼貼紙(專版)",
     "en": "Digital Stickers (Custom)",
     "ja": "デジタルステッカー(専版)"
   },
@@ -2537,9 +2537,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-格仔底紙/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Grid backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-グリッド台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2581,9 +2581,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-厚白底/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Thick white backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-厚白台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2625,9 +2625,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2669,9 +2669,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "en": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
-        "ja": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料"
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X297-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X297-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X297-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
         {
@@ -2713,9 +2713,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜",
-        "en": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜",
-        "ja": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜"
+        "zh-hk": "卷裝/平裝標籤-格仔底紙/銅板（熱熔膠）-150X100-單面-模切(啤)[異形],卷裝[卷芯直徑4cm][出標方向橫版左出標][每卷張數1000],不覆膜",
+        "en": "Roll/Sheet label-Grid backing/Art paper（Hot-melt adhesive）-150X100-Single-sided-Die-cut [custom shape],Roll [Core diameter 4cm][Unwind direction landscape left unwind][Labels per roll 1000],No lamination",
+        "ja": "ロール/シートラベル-グリッド台紙/アート紙（ホットメルト）-150X100-片面-型抜き[異形],ロール[巻芯径4cm][繰り出し方向横位置左出し][巻あたり枚数1000],ラミネートなし"
       },
       "tiers": [
         {
@@ -2732,17 +2732,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'a5-flyers': {
   "source": "flyers.json (eprint ×0.95)",
   "productName": {
-    "zh-hk": "A5 (210x148mm) 157g哑粉纸 双面彩色",
-    "en": "A5 (210x148mm) 157g哑粉纸 双面彩色",
-    "ja": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+    "zh-hk": "A5 (210x148mm) 157g啞粉紙 雙面彩色",
+    "en": "A5 (210x148mm) 157g Matte art paper Colour both sides",
+    "ja": "A5 (210x148mm) 157gマットコート紙 両面カラー"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A5 (210x148mm) 157g哑粉纸 双面彩色",
-        "en": "A5 (210x148mm) 157g哑粉纸 双面彩色",
-        "ja": "A5 (210x148mm) 157g哑粉纸 双面彩色"
+        "zh-hk": "A5 (210x148mm) 157g啞粉紙 雙面彩色",
+        "en": "A5 (210x148mm) 157g Matte art paper Colour both sides",
+        "ja": "A5 (210x148mm) 157gマットコート紙 両面カラー"
       },
       "tiers": [
         {
@@ -2808,17 +2808,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'a4-flyers': {
   "source": "flyers.json (eprint ×0.95)",
   "productName": {
-    "zh-hk": "A4 (297x210mm) 157g哑粉纸 双面彩色",
-    "en": "A4 (297x210mm) 157g哑粉纸 双面彩色",
-    "ja": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+    "zh-hk": "A4 (297x210mm) 157g啞粉紙 雙面彩色",
+    "en": "A4 (297x210mm) 157g Matte art paper Colour both sides",
+    "ja": "A4 (297x210mm) 157gマットコート紙 両面カラー"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A4 (297x210mm) 157g哑粉纸 双面彩色",
-        "en": "A4 (297x210mm) 157g哑粉纸 双面彩色",
-        "ja": "A4 (297x210mm) 157g哑粉纸 双面彩色"
+        "zh-hk": "A4 (297x210mm) 157g啞粉紙 雙面彩色",
+        "en": "A4 (297x210mm) 157g Matte art paper Colour both sides",
+        "ja": "A4 (297x210mm) 157gマットコート紙 両面カラー"
       },
       "tiers": [
         {
@@ -2870,17 +2870,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'same-day-flyers': {
   "source": "flyers.json (eprint ×0.95)",
   "productName": {
-    "zh-hk": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面",
-    "en": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面",
-    "ja": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+    "zh-hk": "A4 / A5 雙面 128g 光/啞粉紙 (急件標準) 彩色 雙面",
+    "en": "A4 / A5 Double-sided 128g Gloss/Matte art paper (Rush standard) Colour Double-sided",
+    "ja": "A4 / A5 両面 128g 光沢/マットコート紙 (急ぎ標準) カラー 両面"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面",
-        "en": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面",
-        "ja": "A4 / A5 雙面 128g 光/啞粉紙 (急件标准) 彩色 雙面"
+        "zh-hk": "A4 / A5 雙面 128g 光/啞粉紙 (急件標準) 彩色 雙面",
+        "en": "A4 / A5 Double-sided 128g Gloss/Matte art paper (Rush standard) Colour Double-sided",
+        "ja": "A4 / A5 両面 128g 光沢/マットコート紙 (急ぎ標準) カラー 両面"
       },
       "tiers": [
         {
@@ -2939,17 +2939,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'eco-flyers': {
   "source": "flyers.json (eprint ×0.95)",
   "productName": {
-    "zh-hk": "A5/A4 再生纸/FSC 双面彩色",
-    "en": "A5/A4 再生纸/FSC 双面彩色",
-    "ja": "A5/A4 再生纸/FSC 双面彩色"
+    "zh-hk": "A5/A4 再造紙/FSC 雙面彩色",
+    "en": "A5/A4 Recycled paper/FSC Colour both sides",
+    "ja": "A5/A4 再生紙/FSC 両面カラー"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A5/A4 再生纸/FSC 双面彩色",
-        "en": "A5/A4 再生纸/FSC 双面彩色",
-        "ja": "A5/A4 再生纸/FSC 双面彩色"
+        "zh-hk": "A5/A4 再造紙/FSC 雙面彩色",
+        "en": "A5/A4 Recycled paper/FSC Colour both sides",
+        "ja": "A5/A4 再生紙/FSC 両面カラー"
       },
       "tiers": [
         {
@@ -2973,17 +2973,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'saddle-stitch-booklets': {
   "source": "books.json (eprint ×0.97)",
   "productName": {
-    "zh-hk": "A4 8P 骑马钉",
-    "en": "A4 8P 骑马钉",
-    "ja": "A4 8P 骑马钉"
+    "zh-hk": "A4 8P 騎馬釘",
+    "en": "A4 8P Saddle stitch",
+    "ja": "A4 8P 中綴じ"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A4 8P 骑马钉",
-        "en": "A4 8P 骑马钉",
-        "ja": "A4 8P 骑马钉"
+        "zh-hk": "A4 8P 騎馬釘",
+        "en": "A4 8P Saddle stitch",
+        "ja": "A4 8P 中綴じ"
       },
       "tiers": [
         {
@@ -3042,17 +3042,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'perfect-bound-books': {
   "source": "books.json (eprint ×0.94)",
   "productName": {
-    "zh-hk": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)",
-    "en": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)",
-    "ja": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+    "zh-hk": "A5 (148×210mm) 直度 4+32PP (封面4P+內文32P, 內文16張雙面) 無線膠裝 (PUR)",
+    "en": "A5 (148×210mm) Portrait 4+32PP (Cover 4P+Text pages 32P, Text pages 16 sheets Double-sided) Perfect binding (PUR)",
+    "ja": "A5 (148×210mm) 縦向き 4+32PP (表紙4P+本文32P, 本文16枚両面) 無線綴じ (PUR)"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)",
-        "en": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)",
-        "ja": "A5 (148×210mm) 直度 4+32PP (封面4P+内文32P, 内文16张双面) 无线胶装 (PUR)"
+        "zh-hk": "A5 (148×210mm) 直度 4+32PP (封面4P+內文32P, 內文16張雙面) 無線膠裝 (PUR)",
+        "en": "A5 (148×210mm) Portrait 4+32PP (Cover 4P+Text pages 32P, Text pages 16 sheets Double-sided) Perfect binding (PUR)",
+        "ja": "A5 (148×210mm) 縦向き 4+32PP (表紙4P+本文32P, 本文16枚両面) 無線綴じ (PUR)"
       },
       "tiers": [
         {
@@ -3111,17 +3111,17 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'exercise-books': {
   "source": "books.json (eprint ×0.97)",
   "productName": {
-    "zh-hk": "A5 (148×210mm) 32PP (16张双面) 骑马钉",
-    "en": "A5 (148×210mm) 32PP (16张双面) 骑马钉",
-    "ja": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+    "zh-hk": "A5 (148×210mm) 32PP (16張雙面) 騎馬釘",
+    "en": "A5 (148×210mm) 32PP (16 sheets Double-sided) Saddle stitch",
+    "ja": "A5 (148×210mm) 32PP (16枚両面) 中綴じ"
   },
   "defaultConfigIndex": 0,
   "configs": [
     {
       "label": {
-        "zh-hk": "A5 (148×210mm) 32PP (16张双面) 骑马钉",
-        "en": "A5 (148×210mm) 32PP (16张双面) 骑马钉",
-        "ja": "A5 (148×210mm) 32PP (16张双面) 骑马钉"
+        "zh-hk": "A5 (148×210mm) 32PP (16張雙面) 騎馬釘",
+        "en": "A5 (148×210mm) 32PP (16 sheets Double-sided) Saddle stitch",
+        "ja": "A5 (148×210mm) 32PP (16枚両面) 中綴じ"
       },
       "tiers": [
         {
@@ -3175,8 +3175,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
-        "en": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
-        "ja": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+        "en": "Accordion fold 594x210→A5 3 creases Gloss art paper 157g Double-sided",
+        "ja": "ジャバラ折り 594x210→A5 3山 光沢コート紙157g 両面"
       },
       "tiers": [
         {
@@ -3303,8 +3303,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 157g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙157g 両面"
       },
       "tiers": [
         {
@@ -3431,8 +3431,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 128g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙128g 両面"
       },
       "tiers": [
         {
@@ -3559,8 +3559,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Book paper 100g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 書籍用紙100g 両面"
       },
       "tiers": [
         {
@@ -3698,8 +3698,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
-        "en": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
-        "ja": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面"
+        "en": "Accordion fold 594x210→A5 3 creases Gloss art paper 157g Double-sided",
+        "ja": "ジャバラ折り 594x210→A5 3山 光沢コート紙157g 両面"
       },
       "tiers": [
         {
@@ -3826,8 +3826,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 157g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙157g 両面"
       },
       "tiers": [
         {
@@ -3954,8 +3954,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 128g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙128g 両面"
       },
       "tiers": [
         {
@@ -4082,8 +4082,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
-        "en": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
-        "ja": "風琴摺 210x444→A5 2條骨 書紙100g 雙面"
+        "en": "Accordion fold 210x444→A5 2 creases Book paper 100g Double-sided",
+        "ja": "ジャバラ折り 210x444→A5 2山 書籍用紙100g 両面"
       },
       "tiers": [
         {
@@ -4212,7 +4212,7 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   'custom-flyers': {
   "source": "flyers-cost-yate98.json",
   "productName": {
-    "zh-hk": "宣传单张(专版成本)",
+    "zh-hk": "宣傳單張(專版成本)",
     "en": "Custom Flyers (Factory Cost)",
     "ja": "チラシ(専版コスト)"
   },
@@ -4220,9 +4220,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[120克]-大度32开140X210-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[120克]-大度32開140X210-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [120g]-Large size 32mo 140X210-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[120g]-大判32判140X210-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4264,9 +4264,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[157克]-大度32开140X210-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[157克]-大度32開140X210-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [157g]-Large size 32mo 140X210-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-大判32判140X210-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4308,9 +4308,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[128克]-大度16开210X285-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[128克]-大度16開210X285-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [128g]-Large size 16mo 210X285-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-大判16判210X285-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4352,9 +4352,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[128克]-210X297-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [128g]-210X297-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4396,9 +4396,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[157克]-210X297-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [157g]-210X297-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4440,9 +4440,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[157克]-210X148-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[157克]-210X148-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [157g]-210X148-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4484,9 +4484,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-铜版纸高松[128克]-210X148-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[128克]-210X148-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [128g]-210X148-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4528,9 +4528,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[80克]-210X148-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[80克]-210X148-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [80g]-210X148-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[80g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4572,9 +4572,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[100克]-210X148-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[100克]-210X148-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [100g]-210X148-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[100g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4623,9 +4623,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[120克]-210X148-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[120克]-210X148-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [120g]-210X148-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[120g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4660,9 +4660,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[120克]-210X297-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[120克]-210X297-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [120g]-210X297-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[120g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4704,9 +4704,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[100克]-210X297-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[100克]-210X297-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [100g]-210X297-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[100g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4748,9 +4748,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜",
-        "en": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜",
-        "ja": "专版单页/折页-双胶纸[80克]-210X297-双面不同-切成品,不覆膜"
+        "zh-hk": "專版單頁/摺頁-雙膠紙[80克]-210X297-雙面不同-切成品,不覆膜",
+        "en": "Dedicated single sheet/folded sheet-Woodfree offset paper [80g]-210X297-Different on both sides-Trimmed to size,No lamination",
+        "ja": "専用版シングル/折り加工-上質紙[80g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
         {
@@ -4792,9 +4792,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]",
-        "en": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]",
-        "ja": "专版单页/折页-铜版纸高松[157克]-210X297-双面不同-切成品,不覆膜,折页[2折3页][包心折]"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[157克]-210X297-雙面不同-切成品,不覆膜,摺頁[2摺3頁][包心摺]",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [157g]-210X297-Different on both sides-Trimmed to size,No lamination,folded sheet [2 fold 3 pages][Roll fold]",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-210X297-両面異なる-断裁済み,ラミネートなし,折り加工[2折り3ページ][巻き三つ折り]"
       },
       "tiers": [
         {
@@ -4836,9 +4836,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]",
-        "en": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]",
-        "ja": "专版单页/折页-铜版纸高松[128克]-210X297-双面不同-切成品,不覆膜,折页[1折2页][对折]"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[128克]-210X297-雙面不同-切成品,不覆膜,摺頁[1摺2頁][對摺]",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [128g]-210X297-Different on both sides-Trimmed to size,No lamination,folded sheet [1 fold 2 pages][Half fold]",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-210X297-両面異なる-断裁済み,ラミネートなし,折り加工[1折り2ページ][二つ折り]"
       },
       "tiers": [
         {
@@ -4880,9 +4880,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]",
-        "en": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]",
-        "ja": "专版单页/折页-铜版纸高松[128克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[128克]-420X297-雙面不同-切成品,不覆膜,摺頁[3摺4頁][關門摺]",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [128g]-420X297-Different on both sides-Trimmed to size,No lamination,folded sheet [3 fold 4 pages][Gate fold]",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-420X297-両面異なる-断裁済み,ラミネートなし,折り加工[3折り4ページ][観音折り]"
       },
       "tiers": [
         {
@@ -4924,9 +4924,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]",
-        "en": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]",
-        "ja": "专版单页/折页-铜版纸高松[157克]-420X297-双面不同-切成品,不覆膜,折页[3折4页][关门折]"
+        "zh-hk": "專版單頁/摺頁-銅版紙高鬆[157克]-420X297-雙面不同-切成品,不覆膜,摺頁[3摺4頁][關門摺]",
+        "en": "Dedicated single sheet/folded sheet-High-bulk art paper [157g]-420X297-Different on both sides-Trimmed to size,No lamination,folded sheet [3 fold 4 pages][Gate fold]",
+        "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-420X297-両面異なる-断裁済み,ラミネートなし,折り加工[3折り4ページ][観音折り]"
       },
       "tiers": [
         {
@@ -4979,9 +4979,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
   "configs": [
     {
       "label": {
-        "zh-hk": "A2 · 铜版纸 · 157g · 單面",
-        "en": "A2 · 铜版纸 · 157g · 單面",
-        "ja": "A2 · 铜版纸 · 157g · 單面"
+        "zh-hk": "A2 · 銅版紙 · 157g · 單面",
+        "en": "A2 · Art paper · 157g · Single-sided",
+        "ja": "A2 · アート紙 · 157g · 片面"
       },
       "tiers": [
         {
@@ -5030,9 +5030,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A2 · 铜版纸 · 157g · 雙面",
-        "en": "A2 · 铜版纸 · 157g · 雙面",
-        "ja": "A2 · 铜版纸 · 157g · 雙面"
+        "zh-hk": "A2 · 銅版紙 · 157g · 雙面",
+        "en": "A2 · Art paper · 157g · Double-sided",
+        "ja": "A2 · アート紙 · 157g · 両面"
       },
       "tiers": [
         {
@@ -5081,9 +5081,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 铜版纸 · 157g · 單面",
-        "en": "A3 · 铜版纸 · 157g · 單面",
-        "ja": "A3 · 铜版纸 · 157g · 單面"
+        "zh-hk": "A3 · 銅版紙 · 157g · 單面",
+        "en": "A3 · Art paper · 157g · Single-sided",
+        "ja": "A3 · アート紙 · 157g · 片面"
       },
       "tiers": [
         {
@@ -5132,9 +5132,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 铜版纸 · 157g · 雙面",
-        "en": "A3 · 铜版纸 · 157g · 雙面",
-        "ja": "A3 · 铜版纸 · 157g · 雙面"
+        "zh-hk": "A3 · 銅版紙 · 157g · 雙面",
+        "en": "A3 · Art paper · 157g · Double-sided",
+        "ja": "A3 · アート紙 · 157g · 両面"
       },
       "tiers": [
         {
@@ -5183,9 +5183,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A2 · 哑粉纸 · 157g · 單面",
-        "en": "A2 · 哑粉纸 · 157g · 單面",
-        "ja": "A2 · 哑粉纸 · 157g · 單面"
+        "zh-hk": "A2 · 啞粉紙 · 157g · 單面",
+        "en": "A2 · Matte art paper · 157g · Single-sided",
+        "ja": "A2 · マットコート紙 · 157g · 片面"
       },
       "tiers": [
         {
@@ -5234,9 +5234,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A2 · 哑粉纸 · 157g · 雙面",
-        "en": "A2 · 哑粉纸 · 157g · 雙面",
-        "ja": "A2 · 哑粉纸 · 157g · 雙面"
+        "zh-hk": "A2 · 啞粉紙 · 157g · 雙面",
+        "en": "A2 · Matte art paper · 157g · Double-sided",
+        "ja": "A2 · マットコート紙 · 157g · 両面"
       },
       "tiers": [
         {
@@ -5285,9 +5285,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 哑粉纸 · 157g · 單面",
-        "en": "A3 · 哑粉纸 · 157g · 單面",
-        "ja": "A3 · 哑粉纸 · 157g · 單面"
+        "zh-hk": "A3 · 啞粉紙 · 157g · 單面",
+        "en": "A3 · Matte art paper · 157g · Single-sided",
+        "ja": "A3 · マットコート紙 · 157g · 片面"
       },
       "tiers": [
         {
@@ -5336,9 +5336,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 哑粉纸 · 157g · 雙面",
-        "en": "A3 · 哑粉纸 · 157g · 雙面",
-        "ja": "A3 · 哑粉纸 · 157g · 雙面"
+        "zh-hk": "A3 · 啞粉紙 · 157g · 雙面",
+        "en": "A3 · Matte art paper · 157g · Double-sided",
+        "ja": "A3 · マットコート紙 · 157g · 両面"
       },
       "tiers": [
         {
@@ -5387,9 +5387,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A2 · 铜版纸 · 250g · 單面",
-        "en": "A2 · 铜版纸 · 250g · 單面",
-        "ja": "A2 · 铜版纸 · 250g · 單面"
+        "zh-hk": "A2 · 銅版紙 · 250g · 單面",
+        "en": "A2 · Art paper · 250g · Single-sided",
+        "ja": "A2 · アート紙 · 250g · 片面"
       },
       "tiers": [
         {
@@ -5438,9 +5438,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A2 · 铜版纸 · 250g · 雙面",
-        "en": "A2 · 铜版纸 · 250g · 雙面",
-        "ja": "A2 · 铜版纸 · 250g · 雙面"
+        "zh-hk": "A2 · 銅版紙 · 250g · 雙面",
+        "en": "A2 · Art paper · 250g · Double-sided",
+        "ja": "A2 · アート紙 · 250g · 両面"
       },
       "tiers": [
         {
@@ -5489,9 +5489,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 铜版纸 · 250g · 單面",
-        "en": "A3 · 铜版纸 · 250g · 單面",
-        "ja": "A3 · 铜版纸 · 250g · 單面"
+        "zh-hk": "A3 · 銅版紙 · 250g · 單面",
+        "en": "A3 · Art paper · 250g · Single-sided",
+        "ja": "A3 · アート紙 · 250g · 片面"
       },
       "tiers": [
         {
@@ -5540,9 +5540,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
-        "zh-hk": "A3 · 铜版纸 · 250g · 雙面",
-        "en": "A3 · 铜版纸 · 250g · 雙面",
-        "ja": "A3 · 铜版纸 · 250g · 雙面"
+        "zh-hk": "A3 · 銅版紙 · 250g · 雙面",
+        "en": "A3 · Art paper · 250g · Double-sided",
+        "ja": "A3 · アート紙 · 250g · 両面"
       },
       "tiers": [
         {
@@ -5592,8 +5592,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "en": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "ja": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼"
+        "en": "A1 · PP/Eco poster (Yupo) · Single-sided · Large-format inkjet print · Excluding installation and mounting",
+        "ja": "A1 · PP/エコポスター (Yupo) · 片面 · インクジェット出力 · 設置・貼り込みなし"
       },
       "tiers": [
         {
@@ -5636,8 +5636,8 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     {
       "label": {
         "zh-hk": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "en": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
-        "ja": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼"
+        "en": "A1 · Photo paper poster · Single-sided · Large-format inkjet print · Excluding installation and mounting",
+        "ja": "A1 · フォトペーパーポスター · 片面 · インクジェット出力 · 設置・貼り込みなし"
       },
       "tiers": [
         {
