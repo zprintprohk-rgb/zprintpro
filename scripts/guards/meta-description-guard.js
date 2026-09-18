@@ -142,6 +142,68 @@ function scanEmptyDesc(file, hits) {
 }
 
 /**
+ * 规则 D: 渲染路径 description 来源可解析性 (2026-09-18 线上探针事故固化)
+ *
+ * 事故 (2026-09-18 全量线上探针实测):
+ *   - 线上 201 个 HTTP200 blog URL 中 **124 个没有 <meta name="description">** (也没有 og:description)
+ *   - 根因: `page.tsx:820` 旧写法 `meta?.description?.[locale] || legacyPost?.description || ''`
+ *     而 `BlogPostMeta` 接口的字段名是 **`excerpt`** (blog-posts.ts L53), **不存在 description**
+ *     ⇒ 第一项恒 undefined, 实际只剩 legacyPost.description 一条来源
+ *     ⇒ 凡「只在 blog-posts.ts 注册 + blog-data JSON 有内容、但不在 page.tsx 内联 legacyPosts 记录里」
+ *       的文章 → 线上 meta 描述完全空白 (SERP 无摘要可展示)
+ *   - 为什么此前 3 道防线全漏:
+ *     ① `page.tsx` L1 有 `// @ts-nocheck` → tsc 门禁吞掉该类型错误
+ *     ② 本门童规则 C 只查 **blog-data JSON 的 description 字段** (该字段一直是有的) → 0 命中
+ *     ③ 规则 A/B 只查语言错配与重复词
+ *     ⇒ 与 ce 截断 / GSC 泄漏同源: **门童 0 命中 ≠ 线上干净** (已在 §0.23.1 固化)
+ *
+ * 本规则把「字段名必须与数据模型一致」变成机审不变量:
+ *   D1 (负向, hard): 渲染页不得读取 `meta?.description` / `meta.description`
+ *       —— BlogPostMeta 无此字段, 恒 undefined = 静默失效
+ *   D2 (正向, hard): 描述解析表达式必须至少引用一个真实来源
+ *       (`legacyPost?.description` / `jsonEntry?.description` / `meta?.excerpt`)
+ *       —— 防止有人「修好 D1」却把来源整体删掉, 变成恒空字符串
+ */
+const RENDER_PATH_FILE = 'src/app/[locale]/blog/[slug]/page.tsx';
+
+function scanRenderPath(hits, rawOverride) {
+  let raw = rawOverride;
+  if (raw === undefined) {
+    try { raw = fs.readFileSync(path.join(ROOT, RENDER_PATH_FILE), 'utf8'); } catch (e) { return; }
+  }
+  const lines = raw.split('\n');
+
+  // D1: 禁用不存在字段 meta.description
+  const BAD_FIELD = /\bmeta\s*\??\.\s*description\b/;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (/^\s*(\/\/|\*|\/\*)/.test(line)) continue;         // 跳过注释行 (解释性文字)
+    if (BAD_FIELD.test(line)) {
+      hits.push({
+        file: RENDER_PATH_FILE, line: i + 1, severity: 'red', ruleId: 'META_DESCRIPTION_RENDER_PATH',
+        match: line.trim().slice(0, 90),
+        ruleName: 'blog 渲染页读取 BlogPostMeta.description —— 该字段不存在, 恒 undefined (SERP 摘要静默消失)',
+        fix: 'BlogPostMeta 的描述字段名是 excerpt (blog-posts.ts L53); 改用 meta?.excerpt?.[locale], '
+           + '并保留 legacyPost?.description / jsonEntry?.description 作为前序来源',
+      });
+    }
+  }
+
+  // D2: 描述解析必须有真实来源
+  const hasSource = /legacyPost\s*\??\.\s*description/.test(raw)
+                 || /jsonEntry\s*\??\.\s*description/.test(raw)
+                 || /meta\s*\??\.\s*excerpt/.test(raw);
+  if (!hasSource) {
+    hits.push({
+      file: RENDER_PATH_FILE, line: 0, severity: 'red', ruleId: 'META_DESCRIPTION_RENDER_PATH',
+      match: RENDER_PATH_FILE,
+      ruleName: 'blog 渲染页没有任何可解析的描述来源 (描述将恒为空)',
+      fix: '至少引用 legacyPost?.description / jsonEntry?.description / meta?.excerpt 之一',
+    });
+  }
+}
+
+/**
  * 扫描入口 —— 不依赖变更文件列表, 每次 commit 全量复核
  * (meta 完整性是数据文件级不变量, 否则改 .tsx 的那次 commit 会漏过)
  *
@@ -197,6 +259,9 @@ function scan(_files) {
     scanEmptyDesc(rel, hits);
   }
 
+  // 规则 D: 渲染路径可解析性 (与文件级扫描无关, 每次全量复核)
+  scanRenderPath(hits);
+
   // 专用基线豁免: 每个文件只豁免 baseline.perFile[file] 条, 其余 = 新增缺陷
   const b = loadMetaBaseline();
   if (b.total === 0) return hits; // 无基线 → 全量裸报
@@ -219,8 +284,13 @@ module.exports = {
   scan,
   baselineStatus,
   loadMetaBaseline,
-  RULES: [{ id: 'META_DESCRIPTION_INTEGRITY', severity: 'red' }],
+  RULES: [
+    { id: 'META_DESCRIPTION_INTEGRITY', severity: 'red' },
+    { id: 'META_DESCRIPTION_RENDER_PATH', severity: 'red' },
+  ],
   FILES,
+  RENDER_PATH_FILE,
   DUP_EXACT,
   DUP_PREFIX,
+  scanRenderPath,
 };

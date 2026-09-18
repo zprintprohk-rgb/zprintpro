@@ -817,7 +817,16 @@ function getPostData(locale: Locale, slug: string) {
 
     // 2026-07-05 fix: 优先级 meta (本地化标题) > legacyPost > slug fallback
     const title = meta?.title?.[locale] || legacyPost?.title || (jsonEntry && jsonEntry.content ? slug : '');
-    const description = meta?.description?.[locale] || legacyPost?.description || '';
+    // 2026-09-18 修复 (线上探针实测发现, root cause):
+    //   BlogPostMeta 的字段名是 excerpt (blog-posts.ts L53), 不存在 description
+    //   → 旧写法 `meta?.description?.[locale]` 恒为 undefined, 实际只剩 legacyPost.description 一条来源
+    //   → 凡「只在 blog-posts.ts 注册 + blog-data JSON 有内容、但不在 page.tsx 内联 legacyPosts 记录里」的文章
+    //     ⇒ 线上 <meta name="description"> / og:description 完全空白 (SERP 无摘要)
+    //   本文件 L1 有 @ts-nocheck, 该类型错误被 tsc 门禁吞掉; 门童 #20 只查 blog-data JSON 的 description 字段
+    //   (该字段一直是有的) ⇒ 门童全过但线上空白 = §0.23.1 已固化的「门童 0 命中 ≠ 线上干净」盲区
+    //   优先序 (legacyPost 优先 = 既有线上输出零 churn):
+    //     legacyPost.description → blog-data JSON description (门童 #20 管治的 meta 字段) → meta.excerpt
+    const description = legacyPost?.description || jsonEntry?.description || meta?.excerpt?.[locale] || '';
     const date = meta?.date || legacyPost?.date || '2024-01-01';
     const category = meta?.categoryKey || legacyPost?.category || '';
     return {
