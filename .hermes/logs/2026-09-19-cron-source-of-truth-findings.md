@@ -1,0 +1,135 @@
+# 定时任务查案与结果总线落地 — 证据记录 (2026-09-19 07:5x, DSH 会话)
+
+> 案由：K3 提出 5 问 ——「定时任务设在哪 / 主程序有没有读 / 每次执行有没有报告 / 未分组里一堆 read 开头是什么 / 把执行结果和数据交给主程序做判断依据」。
+> 本文只记**实测证据 + 已改动的文件 + 验收结果**；完整分析与执行方案见 `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`，规则固化见 `AGENTS.md §0.35`。
+
+## 一、实测证据（全部本机可复现）
+
+### 1. 触发层 = Windows Task Scheduler（7 条）
+```
+schtasks /query /tn <name> /v /fo LIST
+\ZP-daily-content    Daily  21:17  Last 2026-09-18 21:17:01  Result 0  Enabled/Ready
+\ZP-gsc-feedback     Daily  22:43  Last 2026-09-18 22:43:01  Result 0  Enabled/Ready
+\ZP-weekly-meta      Weekly FRI 23:07  Last 2026-09-18 23:07:00  Result 0  Enabled/Ready
+\ZP-blog-deepfix     Weekly SAT 05:37  Last 2026-09-19 05:37:00  Result 0  Enabled/Ready
+\ZP-monthly-matrix   Monthly 1 06:13   Last 1999-11-30 (从未跑) Result 267011 Enabled/Ready
+\ZP-cron-watchdog    Daily  06:43  Last 2026-09-19 06:43:01  Result 0  Enabled/Ready
+\ZprintPro-CronWatchdog-2125  Daily 21:25  Last 2026-09-18 21:25:01  Result 0  ← 遗留/读错对象
+```
+`Get-ScheduledTask` 交叉验证：5 lane + watchdog `State=Ready`；`monthly-matrix` `Result=267011`。
+
+### 2. autoclaw 注册表不含任何 ZP 车道
+`jobs.json` 24 条：23 条 `enabled=false`（8 月一次性历史任务，`lastRunStatus=error`），唯一 `enabled=true` = `印刷需求雷达·每日采集 01:00`（`consecutiveErrors=4`，`lastError=402`，与本站无关）。
+⇒ `AGENTS.md §0.34.3` 记的「autoclaw Blueprint Automation 5 实体」是**从未创建**的调度层（`cron-check-tonight.md` 9/13–9/17 每日实测 `首次启动 0/5`）。
+
+### 3. 权限边界（实测）
+```
+[System.Security.Principal.WindowsIdentity]::GetCurrent() -> JEROME\Administrator
+IsInRole(Administrator) -> False
+```
+⇒ 本会话无法 `schtasks /delete` / `Unregister-ScheduledTask`；`.hermes/cron-run/delete-legacy-watchdog.cmd` 9/18 备好但因权限未执行。
+
+### 4. 空转事故（9/17 daily-content，4 分钟算力烧在已删除 worktree）
+`cron-ZP-daily-content.log` L12048–12587：
+```
+===== run start 2026/09/17 21:17:01.44 =====
+dsh ... F:\zprintpro-main-tmp 是空的 (worktree 已于 9/17 移除) ...
+===== run end   2026/09/17 21:21:20.38 exit=0 =====
+```
+零产出、零报告、Task Scheduler `Result=0`、watchdog 9/18 06:43 仍判 `[OK]`（用的是 9/16 旧报告的 mtime）。
+
+### 5. mtime 已失真
+`.hermes/logs/2026-09-14/16-daily-content.md`、`2026-09-13/14/15/16-gsc-feedback.md` 等 mtime 全被刷成 `2026-09-17 13:31:55` ⇒ 看门狗唯一依赖的 mtime 不再是新鲜度证据。
+
+### 6. 9/19 blog-deepfix：跑成功但报告里没有
+wrapper 日志 05:37:09 → 05:49:40 `exit=0`，`[lane-git] ZP-blog-deepfix: 白名单改动 11 个`，随后 `src commit 被拦`/`生产文件未过 guard` → `cron-execution-report.md` **无 9/19 blog-deepfix 行**（该文件最后一行是 06:43 watchdog）。
+根因（源码）：`lane-git-commit.py` L156–164 在 src commit 失败时 `return 4`，**跳过 `write_exec_report()`**。
+
+### 7. 报告文件从未入库
+`.hermes/logs/2026-09-19-blog-deepfix.md`（28,746B，05:49:19）与 `.hermes/logs/blog-deepfix-2026-09-19.md`（7,186B，06:10:28）实测 `NOT-IN-HEAD`（untracked）。
+
+### 8. 报告路径取错（历史行实锤）
+`cron-execution-report.md:13`：`ZP-daily-content` 的报告列写的是 `.hermes/reports/title-audit-2026-09-09.md`（9/9 旧文件）；
+`:17`：`ZP-gsc-feedback` 写的是 `.hermes/logs/cron-check-tonight.md`（别人的文件）。根因：原实现取 git status 里字母序第一个 `.md`。
+
+### 9. 遗留看门狗每天写假结果
+`\ZprintPro-CronWatchdog-2125` → `.hermes/cron-check-tonight.py` 读 autoclaw `jobs[5..9]`，而这 5 个下标实为 `8/16 07:20 主任务触发核验` / `W2-0823 集群合并push` / `W3-0831 IndexNow全推` / `legit 信任产线` / `W2-0819 GEO首读数`（全 disabled）。
+`cron-check-tonight.md`：9/13–9/17 每天 `FAIL: 5 条仍未被调度器装载`；9/18 `PASS: 至少一个任务已首次运行` —— 两次结论都与 5 条 ZP 车道无关。
+
+### 10. 「未分组一堆 read 开头」= DSH headless lane 会话
+`C:\Users\Administrator\.dsh\sessions\--F-zprintpro-nextjs--\`：
+```
+session-6ffe0619-...  9/18 21:17:05  <- ZP-daily-content
+session-258f43f2-...  9/18 22:43:30  <- ZP-gsc-feedback
+session-85fa1de8-...  9/18 23:07:02  <- ZP-weekly-meta
+session-8798d496-...  9/19 05:37:13  <- ZP-blog-deepfix (3.4 MB)
+```
+会话首行 `cwd=F:\zprintpro-nextjs`；prompt verbatim 以 `Read .hermes/cron-prompts/...` 开头（wrapper 内写死）⇒ GUI 按首条 prompt 起标题，故成「未分组 / read 开头」条目。**是运行记录，不是任务定义，无副作用。**
+另有 `--F-zprintpro-main-tmp--`（9/17 22:43 仍写）= 已删除 worktree 的幽灵会话目录。
+
+### 11. 9/19 撞车事实链（非"遗留同名任务"）
+- `\ZP-blog-deepfix` 09-19 05:37:00 正常触发（Last Result 0，Next 2026-09-26 05:37）；
+- lane wrapper `run start 05:37:09` → `run end 05:49:40`；
+- 人手会话 05:41 起并发改同一文件 `src/data/blog-data/zh-hk.json` → 坏版备份 `.hermes/_broken-zhhk-lane-20260919.json`（1,120,662B，06:01:16）；
+- `d193adda` 06:09:11 落重写（zh-hk.json 内 `a5-vs-a6-flyer-size` 条目实测 13,496 字符，含 3 个琥珀答案块 + 10 个问句 H2 + `ISO 216`/`ANA/DMA 2025`/`Lob 2025`/`USPS`/`Canada Post`/`Grand View Research` 数据源行）—— **重写内容确实在 HEAD 里**（`--stat` 只显示 6 行是因为 content 字段单行承载全文）。
+⇒ 修因 = 加互斥锁（§0.35.6），不是删任务。
+
+## 二、本批已改动文件
+
+| 文件 | 改动 |
+|------|------|
+| `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md` | 新增：全案查案报告 + 执行方案 P0–P3 + 验收判据 |
+| `AGENTS.md` | 新增 §0.35（触发层 / 结果总线 / 判据铁律 / 已知坑 / 待落地）；§0.34.3 定时任务行加 2026-09-19 修正 |
+| `.hermes/cron-lanes.json` | 新增：车道清单 SSoT（5 lane + watchdog + 待清理遗留任务 + 报告命名规则） |
+| `scripts/lane-status.mjs` | 新增：结果总线汇总器 → `lane-status.json`（机器读）+ `lane-status.md`（人读） |
+| `scripts/remove-legacy-cron-tasks.ps1` | 新增：管理员清理遗留任务（幂等 + 验证 + 证据输出） |
+| `scripts/lane-git-commit.py` | 修复：① 失败也写报告（抽出 `_commit_reports()`，guard 拦下时先落报告再返回 4）② 报告路径取本 lane 产物 ③ 结果列写真实 verdict+exit ④ 新增 `write_lane_run()` 写 `lane-runs.jsonl` |
+| `.hermes/logs/lane-runs.jsonl` | 新增：结果总线首条记录（自测记录，已标 `test_record:true`，lane-status 汇总时排除） |
+| `.hermes/logs/lane-status.json` / `.md` | 新增：本批生成的实况状态（首跑即判出 blog-deepfix 9/19 = STALE、monthly-matrix `LastTaskResult=267011`） |
+
+## 三、验收结果
+
+### 3.1 `lane-status.mjs` 实测（`node scripts/lane-status.mjs --days=7`）
+```
+verdict=ATTENTION problems=2
+  PENDING  ZP-daily-content    last=2026-09-19 report=yes
+  PENDING  ZP-gsc-feedback     last=2026-09-19 report=yes
+  OK       ZP-weekly-meta      last=2026-09-18 report=yes
+  STALE    ZP-blog-deepfix     last=2026-09-19 report=yes   <- 9/19 guard 拦截迹象（suspected）
+  UNKNOWN  ZP-monthly-matrix   last=-           report=no
+problems: ZP-blog-deepfix 2026-09-19 -> STALE ; ZP-monthly-matrix scheduler LastTaskResult=267011
+```
+- 9/13 之前判 `MISSING` 与事实吻合（v9.4 于 9/13 20:10 武装、触发层 9/14 起才有）；
+- 判据**未使用 mtime**，故不受 §一.5 的 mtime 失真影响；
+- 报告匹配已加固：`step5-merge-batch-report-2026-09-19.md` 这类第三方文件不再被误认（首版曾误配，已修）。
+
+### 3.2 `lane-git-commit.py` 行为测试（临时目录内跑，断言全过）
+```
+--- cron-execution-report.md (临时目录) ---
+| 2026-09-19 07:52:16 | ZP-blog-deepfix | FAILED(guard) (exit=4) | `.hermes/logs/2026-09-19-blog-deepfix.md` | src/data/blog-data/zh-hk.json | ⏳ commit(未 push) |
+--- lane-runs.jsonl ---
+{"run_id":"ZP-blog-deepfix-20260919T075216", ..., "wrapper_exit":4, "verdict":"BLOCKED", ...}
+ASSERTIONS: PASS   (report 路径正确 / verdict 正确 / exit=4 正确)
+```
+`python -m py_compile scripts/lane-git-commit.py` → exit 0；`--dry-run` → 白名单 19 文件、未写盘。
+
+## 四、未完成（不得报"已解决"）
+
+| 项 | 状态 | 阻塞 |
+|----|------|------|
+| 清理 `\ZprintPro-CronWatchdog-2125`（每天 21:25 写假报告） | 🔴 撞墙 | 需 K3 管理员跑 `scripts/remove-legacy-cron-tasks.ps1`（会话 `IsAdmin=False` 实测无法 delete） |
+| 看门狗改「期望触发 vs 实跑记录」对账 | ⏳ 已设计未落地 | 见 §0.35.6-1（需改 `scripts/cron-watchdog.py` 并重跑 `register-cron-tasks.ps1 -ArtifactsOnly`） |
+| lane 前置检查 `lane-preflight.py` | ⏳ 已设计未落地 | §0.35.6-2（防 9/17 空转复发） |
+| `.hermes/locks/lane.lock` 互斥 | ⏳ 已设计未落地 | §0.35.6-3（防 9/19 撞车复发） |
+| `k3-ceo-daily-review.md` 改为读 `lane-status.json` | ⏳ 已设计未落地 | §0.35.6-4（旧文引用 main-tmp/mavis 已失效，且未被任何调度器注册） |
+| 本批 commit / push | ⏳ commit 本地 | §0.25 30min 窗口（origin/main 8e67354e @ 09-19 07:34；下次可推 ≥ 08:04） |
+
+## 五、数据来源
+- `schtasks /query /tn <name> /v /fo LIST` 与 `Get-ScheduledTask`/`Get-ScheduledTaskInfo`（2026-09-19 实测）
+- `C:\Users\Administrator\.openclaw-autoclaw\cron\jobs.json`（24 条 job 及其 state）
+- `.hermes/cron-run/{ZP-*.cmd,ZP-*.ps1,delete-legacy-watchdog.cmd}`、`scripts/{register-cron-tasks.ps1,lane-git-commit.py,cron-watchdog.py}`
+- `.hermes/logs/cron-ZP-{daily-content,gsc-feedback,weekly-meta,blog-deepfix,cron-watchdog}.log`
+- `.hermes/logs/{cron-execution-report.md,cron-check-tonight.md,cron-check-tonight.py}`
+- `C:\Users\Administrator\.dsh\{sessions\--F-zprintpro-nextjs--,profiles\headless,settings.yaml}`
+- `git log/show`（d193adda / ab288758 / 8e67354e / e2048652）、`git status --porcelain`
+- 自测输出：`node scripts/lane-status.mjs --days=7`、`python -m py_compile scripts/lane-git-commit.py`

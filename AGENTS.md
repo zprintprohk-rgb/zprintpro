@@ -58,7 +58,46 @@
 ### §0.34.3 当前战略指令 SSoT
 - 最新主报告: `docs/2026-09-08-v4-full-alignment-master-report.md`（原子指令 A1-A12 + 问 K3 八件）。
 - 最新拍板增补: `docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：标题规则 v4 写满原则 50-54 半角当量 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）。
-- 定时任务（autoclaw Blueprint Automation, K3 9/8 06:15 拍板设于 19:00-07:00 窗口）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13（Asia/Shanghai）。
+- 定时任务（**2026-09-19 修正**：调度 SSoT 见 §0.35；本节原写"autoclaw Blueprint Automation"的表述已作废——autoclaw 侧 5 实体**从未创建**（`cron-check-tonight.md` 9/13–9/17 每日实测 `0/5`），真身在 Windows Task Scheduler）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13 + watchdog 每天 06:43（Asia/Shanghai）。
+
+## §0.35 定时任务 SSoT 与结果总线 (K3 2026-09-19 查案定稿, 跨项目 P0 强制级)
+
+> **全案 SSoT**: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md` · **机器可读状态**: `.hermes/logs/lane-status.json`
+
+### §0.35.1 三层触发层, 只有一层是真的
+| 层 | 位置 | 真伪 |
+|----|------|------|
+| **Windows Task Scheduler** `\ZP-*` | 5 lane + `ZP-cron-watchdog`，`Run As=Administrator`、`RunLevel=HighestAvailable` | ✅ **唯一真触发层** |
+| autoclaw 注册表 | `C:\Users\Administrator\.openclaw-autoclaw\cron\jobs.json`（24 条，23 条 disabled，唯一 enabled 的是"印刷需求雷达 01:00"且 `consecutiveErrors=4`，与本站无关） | ❌ 不含任何 ZP 车道 |
+| Kimi Work Automation | 5 条占位，只能跑 kimi 模型 | ❌ 非执行层（K3 已恢复禁用） |
+
+### §0.35.2 真实调用链与执行器
+`\ZP-<lane>` → `.hermes/cron-run/ZP-<lane>.ps1`（墙钟上限守卫）→ `.hermes/cron-run/ZP-<lane>.cmd`（host 侧 wrapper，`cd /d F:\zprintpro-nextjs`）→ `dsh --profile headless "<prompt>"`（DSH Home `C:\Users\Administrator\.dsh`，DeepSeek 官方 key；`hermes.exe` 因 402 余额耗尽已停用）→ `python scripts/lane-git-commit.py`（host 侧 commit/push + 写结果）。**生成器 = `scripts/register-cron-tasks.ps1`（wrapper 内已写 "do not hand-edit"），车道清单 SSoT = `.hermes/cron-lanes.json`。**
+
+### §0.35.3 结果总线 (定时任务 → 主程序的判断依据)
+1. **`\.hermes\logs\lane-runs\.jsonl`** — 每次 lane 收尾追加一行结构化记录（lane / verdict / dsh_exit / wrapper_exit / guard / report / files / pushed / head）。
+2. **`node scripts/lane-status.mjs [--days=7]`** — 汇总成 `.hermes/logs/lane-status.json`（机器读）+ `lane-status.md`（人读）；verdict ∈ `OK / MISSING / FAILED / BLOCKED / STALE / PENDING`。
+3. **消费方（强制）**：5 个 lane prompt 的启动必读 SSoT、K3 复盘流程、任何"读执行报告出次日指令"的动作，**第一输入必须是 `lane-status.json`**，不得只翻散报告。
+4. **报告命名强制**：车道报告一律 `<YYYY-MM-DD>-<lane>.md` 落 `.hermes/logs/`（`lane-status.mjs` 只认这个口径；`2026-09-17-lane-o-p0-3-*.md` 这类无 lane 名文件无法归属）。
+
+### §0.35.4 判据铁律 (机器判据, 不看自我播报)
+- ❌ **禁用「文件 mtime 新鲜度」当存活证据**：9/17 全档复制把 `.hermes/logs/2026-09-1x-*.md` 的 mtime 统一刷成 `2026-09-17 13:31:55`；且看门狗曾拿**前一天的旧报告**判当天 `[OK]`，掩盖 9/17 21:17 lane 在已删除 worktree 空转 4 分钟零产出的事故。
+- ❌ **禁用「wrapper exit=0」当成功**：wrapper 恒 `exit /b %RC%`，dsh 空转也返回 0；Task Scheduler `LastResult=0` 只是一致性假象。
+- ✅ **必看四件**：① `lane-runs.jsonl` 是否有该日的 run 记录 ② wrapper 日志 `dsh exit` / `run end exit` ③ **当日日期**的报告文件是否存在（= 有没有真产出）④ `Get-ScheduledTask` 的 `LastTaskResult`。
+- ✅ `exit code` 映射：`2`=git 失败 / `3`=encoding guard 失败 / `4`=**pre-commit guard 拦下 src commit** / `5`=push 失败 / `124`=墙钟上限 kill。
+
+### §0.35.5 已知坑与责任人
+- **报告必须"失败也写"**：`lane-git-commit.py` 原在 src commit 被拦时 `return 4` 并**跳过写报告** → 9/19 blog-deepfix 整批成功却在 `cron-execution-report.md` 无任何记录（已修：先落报告 + 写总线再返回 4）。
+- **遗留任务需管理员**：`\ZprintPro-CronWatchdog-2125`（每天 21:25）读错 registry 下标（autoclaw `jobs[5..9]` 是 8 月一次性历史任务），每天写假 PASS/FAIL；**非提升会话实测无法 delete**（`IsAdmin=False`）。清理脚本：`scripts/remove-legacy-cron-tasks.ps1`（**K3 管理员执行一次**）。
+- **lane 会话会出现在 DSH 会话列表**：headless 调用以 `Read .hermes/cron-prompts/...` 开头，GUI 按首条 prompt 起标题 → 看起来像"未分组一堆 read 开头的任务"，实为**运行记录，不是任务定义**，也无副作用。
+- **人手会话与 lane 并发改同一文件** = 9/19 撞车事故（lane 05:37→05:49 与人手 05:41 起同时写 `src/data/blog-data/zh-hk.json`，产生 `_broken-zhhk-lane-20260919.json` 坏版）；根治手段 = `.hermes/locks/lane.lock` 互斥（待落地，见 §0.35.6）。
+
+### §0.35.6 待落地 (P1/P2, 未完成不得报"已解决")
+1. `scripts/lane-status.mjs` 接入 `ZP-cron-watchdog` 每日 06:43 轮次（看门狗改"期望触发 vs 实跑记录"对账，弃 mtime）；
+2. `scripts/lane-preflight.py`（repo 根/分支/锁/依赖四项前置，不过则不调用 dsh 并写 `BLOCKED`）；
+3. `.hermes/locks/lane.lock` 互斥（wrapper 持锁，人手会话改 `src/data/blog-data/*.json` 前必读锁）；
+4. `k3-ceo-daily-review.md` 重写为读 `lane-status.json`（旧文引用 `F:\zprintpro-main-tmp` / `mavis cron` 已失效且**未被任何调度器注册**）。
+
 
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)

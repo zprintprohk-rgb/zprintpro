@@ -1,0 +1,349 @@
+{
+  "generated_at": "2026-09-18T23:53:10.068Z",
+  "generated_local": "2026-09-19 07:53",
+  "repo": "F:\\zprintpro-nextjs",
+  "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
+  "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
+  "bus_file": ".hermes/logs/lane-runs.jsonl",
+  "bus_records": 0,
+  "bus_records_test_excluded": 1,
+  "window_days": 7,
+  "lanes": [
+    {
+      "task": "ZP-daily-content",
+      "schedule": {
+        "kind": "DAILY"
+      },
+      "start": "21:17",
+      "scheduler": {
+        "Name": "ZP-daily-content",
+        "State": "Ready",
+        "Last": "2026-09-18 21:17:01",
+        "Result": 0,
+        "Next": "2026-09-19 21:17:00"
+      },
+      "lastReportFile": {
+        "file": "2026-09-18-daily-content.md",
+        "dateToken": "2026-09-18",
+        "mtime": "2026-09-18T13:23:48.945Z"
+      },
+      "lastWrapperRun": {
+        "start": "2026-09-18 21:17:01",
+        "end": "0",
+        "dshExit": 0,
+        "wrapperExit": 0,
+        "guardBlocked": false,
+        "commitOnly": true,
+        "runsTotal": 6,
+        "logFile": ".hermes/logs/cron-ZP-daily-content.log"
+      },
+      "lastRunRecord": null,
+      "days": [
+        {
+          "day": "2026-09-13",
+          "expected": "21:17",
+          "status": "MISSING",
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": "2026-09-13-cron-rearm.md",
+          "reportStrict": false
+        },
+        {
+          "day": "2026-09-14",
+          "expected": "21:17",
+          "status": "OK",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-14-daily-content.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-15",
+          "expected": "21:17",
+          "status": "OK",
+          "notes": [
+            "report naming not date-first (2026-09-15-wrapper-call-fix.md) -> treated as reference only"
+          ],
+          "exit": null,
+          "report": "2026-09-15-wrapper-call-fix.md",
+          "reportStrict": false
+        },
+        {
+          "day": "2026-09-16",
+          "expected": "21:17",
+          "status": "OK",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-16-daily-content.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-17",
+          "expected": "21:17",
+          "status": "OK",
+          "notes": [
+            "report naming not date-first (2026-09-17-lane-o-p0-3-lead-source-utm.md) -> treated as reference only"
+          ],
+          "exit": null,
+          "report": "2026-09-17-lane-o-p0-3-lead-source-utm.md",
+          "reportStrict": false
+        },
+        {
+          "day": "2026-09-18",
+          "expected": "21:17",
+          "status": "OK",
+          "notes": [],
+          "exit": 0,
+          "report": "2026-09-18-daily-content.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-19",
+          "expected": "21:17",
+          "status": "PENDING",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-19-cron-source-of-truth-findings.md",
+          "reportStrict": false
+        }
+      ],
+      "verdict": "PENDING"
+    },
+    {
+      "task": "ZP-gsc-feedback",
+      "schedule": {
+        "kind": "DAILY"
+      },
+      "start": "22:43",
+      "scheduler": {
+        "Name": "ZP-gsc-feedback",
+        "State": "Ready",
+        "Last": "2026-09-18 22:43:01",
+        "Result": 0,
+        "Next": "2026-09-19 22:43:00"
+      },
+      "lastReportFile": {
+        "file": "2026-09-18-gsc-feedback.md",
+        "dateToken": "2026-09-18",
+        "mtime": "2026-09-18T14:48:17.519Z"
+      },
+      "lastWrapperRun": {
+        "start": "2026-09-18 22:43:01",
+        "end": "0",
+        "dshExit": 0,
+        "wrapperExit": 0,
+        "guardBlocked": false,
+        "commitOnly": false,
+        "runsTotal": 9,
+        "logFile": ".hermes/logs/cron-ZP-gsc-feedback.log"
+      },
+      "lastRunRecord": null,
+      "days": [
+        {
+          "day": "2026-09-13",
+          "expected": "22:43",
+          "status": "MISSING",
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": "2026-09-13-gsc-feedback.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-14",
+          "expected": "22:43",
+          "status": "OK",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-14-gsc-feedback.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-15",
+          "expected": "22:43",
+          "status": "OK",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-15-gsc-feedback.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-16",
+          "expected": "22:43",
+          "status": "OK",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-16-gsc-feedback.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-17",
+          "expected": "22:43",
+          "status": "OK",
+          "notes": [
+            "report naming not date-first (2026-09-17-lane-o-p0-3-lead-source-utm.md) -> treated as reference only"
+          ],
+          "exit": null,
+          "report": "2026-09-17-lane-o-p0-3-lead-source-utm.md",
+          "reportStrict": false
+        },
+        {
+          "day": "2026-09-18",
+          "expected": "22:43",
+          "status": "OK",
+          "notes": [],
+          "exit": 0,
+          "report": "2026-09-18-gsc-feedback.md",
+          "reportStrict": true
+        },
+        {
+          "day": "2026-09-19",
+          "expected": "22:43",
+          "status": "PENDING",
+          "notes": [],
+          "exit": null,
+          "report": "2026-09-19-cron-source-of-truth-findings.md",
+          "reportStrict": false
+        }
+      ],
+      "verdict": "PENDING"
+    },
+    {
+      "task": "ZP-weekly-meta",
+      "schedule": {
+        "kind": "WEEKLY",
+        "day": "FRI"
+      },
+      "start": "23:07",
+      "scheduler": {
+        "Name": "ZP-weekly-meta",
+        "State": "Ready",
+        "Last": "2026-09-18 23:07:00",
+        "Result": 0,
+        "Next": "2026-09-25 23:07:00"
+      },
+      "lastReportFile": {
+        "file": "2026-09-18-weekly-meta.md",
+        "dateToken": "2026-09-18",
+        "mtime": "2026-09-18T15:13:25.178Z"
+      },
+      "lastWrapperRun": {
+        "start": "2026-09-18 23:07:00",
+        "end": "0",
+        "dshExit": 0,
+        "wrapperExit": 0,
+        "guardBlocked": false,
+        "commitOnly": true,
+        "runsTotal": 1,
+        "logFile": ".hermes/logs/cron-ZP-weekly-meta.log"
+      },
+      "lastRunRecord": null,
+      "days": [
+        {
+          "day": "2026-09-18",
+          "expected": "23:07",
+          "status": "OK",
+          "notes": [],
+          "exit": 0,
+          "report": "2026-09-18-weekly-meta.md",
+          "reportStrict": true
+        }
+      ],
+      "verdict": "OK"
+    },
+    {
+      "task": "ZP-blog-deepfix",
+      "schedule": {
+        "kind": "WEEKLY",
+        "day": "SAT"
+      },
+      "start": "05:37",
+      "scheduler": {
+        "Name": "ZP-blog-deepfix",
+        "State": "Ready",
+        "Last": "2026-09-19 05:37:00",
+        "Result": 0,
+        "Next": "2026-09-26 05:37:00"
+      },
+      "lastReportFile": {
+        "file": "2026-09-19-blog-deepfix.md",
+        "dateToken": "2026-09-19",
+        "mtime": "2026-09-18T21:49:19.415Z"
+      },
+      "lastWrapperRun": {
+        "start": "2026-09-19 05:37:09",
+        "end": "0",
+        "dshExit": 0,
+        "wrapperExit": 0,
+        "guardBlocked": true,
+        "commitOnly": false,
+        "runsTotal": 1,
+        "logFile": ".hermes/logs/cron-ZP-blog-deepfix.log"
+      },
+      "lastRunRecord": null,
+      "days": [
+        {
+          "day": "2026-09-19",
+          "expected": "05:37",
+          "status": "STALE",
+          "notes": [
+            "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
+          ],
+          "exit": 0,
+          "report": "2026-09-19-blog-deepfix.md",
+          "reportStrict": true
+        }
+      ],
+      "verdict": "STALE"
+    },
+    {
+      "task": "ZP-monthly-matrix",
+      "schedule": {
+        "kind": "MONTHLY",
+        "day": 1
+      },
+      "start": "06:13",
+      "scheduler": {
+        "Name": "ZP-monthly-matrix",
+        "State": "Ready",
+        "Last": "1999-11-30 00:00:00",
+        "Result": 267011,
+        "Next": "2026-10-01 06:13:00"
+      },
+      "lastReportFile": {
+        "file": "2026-09-19-cron-source-of-truth-findings.md",
+        "dateToken": "2026-09-19",
+        "mtime": "2026-09-18T23:53:03.262Z"
+      },
+      "lastWrapperRun": null,
+      "lastRunRecord": null,
+      "days": [],
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "watchdog": {
+    "task": "ZP-cron-watchdog",
+    "scheduler": {
+      "Name": "ZP-cron-watchdog",
+      "State": "Ready",
+      "Last": "2026-09-19 06:43:01",
+      "Result": 0,
+      "Next": "2026-09-20 06:43:00"
+    }
+  },
+  "legacy_tasks_pending_removal": [
+    {
+      "task": "ZprintPro-CronWatchdog-2125",
+      "start": "21:25",
+      "reason": "reads autoclaw jobs.json indices 5..9 (historical one-shot jobs, not the ZP lanes) -> PASS/FAIL meaningless; superseded by ZP-cron-watchdog"
+    }
+  ],
+  "problems": [
+    "ZP-blog-deepfix 2026-09-19 -> STALE",
+    "ZP-monthly-matrix scheduler LastTaskResult=267011"
+  ],
+  "verdict": "ATTENTION"
+}

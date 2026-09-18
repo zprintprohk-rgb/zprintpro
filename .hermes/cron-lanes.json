@@ -1,0 +1,64 @@
+{
+  "_comment": "SSoT for the Windows Task Scheduler lane set. Consumed by scripts/register-cron-tasks.ps1 (task generation) and scripts/lane-status.mjs (expected-vs-actual reconciliation). Edit here, then re-run register-cron-tasks.ps1 (-ArtifactsOnly to regenerate wrappers without touching the scheduler).",
+  "_created": "2026-09-19",
+  "_source": "docs/2026-09-13-k3-directive-v94-cron-rearm-deepseek.md + docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
+  "_report_naming_rule": "车道报告文件必须命名为 <YYYY-MM-DD>-<lane>.md 落在 .hermes/logs/ ；lane-status.mjs 只认这个口径作为「当日产出」证据 (9/19 之前的历史报告命名不规范，仅作参考)。",
+  "repo": "F:\\zprintpro-nextjs",
+  "timezone": "Asia/Shanghai",
+  "lanes": [
+    {
+      "task": "ZP-daily-content",
+      "schedule": { "kind": "DAILY" },
+      "start": "21:17",
+      "timeoutSeconds": 3600,
+      "prompt": "zprintpro-daily-content-1x7w.md",
+      "reportGlob": "*-daily-content.md"
+    },
+    {
+      "task": "ZP-gsc-feedback",
+      "schedule": { "kind": "DAILY" },
+      "start": "22:43",
+      "timeoutSeconds": 3600,
+      "prompt": "zprintpro-gsc-feedback-loop.md",
+      "includeMatrix": true,
+      "reportGlob": "*-gsc-feedback.md"
+    },
+    {
+      "task": "ZP-weekly-meta",
+      "schedule": { "kind": "WEEKLY", "day": "FRI" },
+      "start": "23:07",
+      "timeoutSeconds": 1800,
+      "prompt": "zprintpro-weekly-meta-refresh.md",
+      "reportGlob": "*-weekly-meta.md"
+    },
+    {
+      "task": "ZP-blog-deepfix",
+      "schedule": { "kind": "WEEKLY", "day": "SAT" },
+      "start": "05:37",
+      "timeoutSeconds": 3600,
+      "prompt": "zprintpro-blog-deepfix.md",
+      "reportGlob": "*-blog-deepfix.md"
+    },
+    {
+      "task": "ZP-monthly-matrix",
+      "schedule": { "kind": "MONTHLY", "day": 1 },
+      "start": "06:13",
+      "timeoutSeconds": 3600,
+      "prompt": "zprintpro-monthly-matrix-audit.md",
+      "reportGlob": "*-monthly-matrix-audit.md"
+    }
+  ],
+  "watchdog": {
+    "task": "ZP-cron-watchdog",
+    "schedule": { "kind": "DAILY" },
+    "start": "06:43",
+    "script": "scripts\\cron-watchdog.py"
+  },
+  "legacyTasksToRemove": [
+    {
+      "task": "ZprintPro-CronWatchdog-2125",
+      "start": "21:25",
+      "reason": "reads autoclaw jobs.json indices 5..9 (historical one-shot jobs, not the ZP lanes) -> PASS/FAIL meaningless; superseded by ZP-cron-watchdog"
+    }
+  ]
+}
