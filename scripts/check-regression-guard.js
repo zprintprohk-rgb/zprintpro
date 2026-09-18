@@ -169,6 +169,23 @@ async function main() {
 
   console.log('═'.repeat(60));
   console.log(`📊 汇总: 🔴 ${counts.red} | 🟠 ${counts.orange} | 🟡 ${counts.yellow} | ⚪ ${counts.white}`);
+  // ★ 2026-09-19 K3 Step 3.5「門禁真實計數改造」: 輸出**未截斷**真值
+  //   背景: common.js 原在 MAX_HITS_PER_RULE(=50) 處 break, 使彙總顯示的上限飽和值「50」
+  //   冒充穩定紅線 —— price-data 90 處 + 全站頁腳簡體等真缺陷因此長期不可見。
+  //   現在: 掃描不再 break(僅截斷明細), 此處列出每規則真實命中數; 被截斷者標示「明細截斷」。
+  try {
+    const stats = require('./guards/common.js').getScanStats
+      ? require('./guards/common.js').getScanStats()
+      : [];
+    const capped = stats.filter(s => s.capped);
+    if (stats.length) {
+      console.log(`📊 真實計數 (未截斷): ${stats.map(s => s.ruleId + '=' + s.trueCount).join(' | ')}`);
+    }
+    if (capped.length) {
+      console.log(`⚠️ 明細截斷 (真實命中 > 保留上限 ${require('./guards/common.js').MAX_HITS_PER_RULE}): ` +
+        capped.map(s => `${s.ruleId} 真值 ${s.trueCount} / 僅保留 ${s.retained}`).join(' | '));
+    }
+  } catch (e) { /* 真實計數為輔助輸出, 失敗不阻斷門禁 */ }
   console.log('');
 
   // DoD 铁律

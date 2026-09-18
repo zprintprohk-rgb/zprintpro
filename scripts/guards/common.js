@@ -318,17 +318,25 @@ function scanRule(content, file, rule) {
   if (isGuardLibFile && rule.id && (rule.id.startsWith('CRED_') || rule.id === 'SOP10_CERT_NO' || rule.id === 'SECRET_LEAK')) return hits;
   const re = new RegExp(rule.pattern.source, rule.pattern.flags.includes('g') ? rule.pattern.flags : rule.pattern.flags + 'g');
   let match;
-  let count = 0;
+  let count = 0;                       // 已保留的明細數 (≤ MAX_HITS_PER_RULE)
+  // ★ 2026-09-19 K3 Step 3.5「門禁真實計數改造」:
+  //   原實現在 count >= MAX_HITS_PER_RULE 時 **break** ⇒ 超出部分**從未被計數**,
+  //   彙總顯示的「50」是**上限飽和值**, 讓真缺陷量級完全不可見, 也讓「修了卻沒動」看起來像沒修
+  //   (實證: price-data 90 處 + 全站頁腳簡體等真缺陷長期被 50 遮蓋)。
+  //   修法: **繼續掃描但只保留前 N 條明細**, 真實命中數另計並登記到 SCAN_STATS 供彙總輸出。
+  let trueCount = 0;
   while ((match = re.exec(content)) !== null) {
     if (match.index === re.lastIndex) re.lastIndex++;
-    if (count >= MAX_HITS_PER_RULE) break;
 
-    // 经营参数白名单检查
+    // 經營參數白名單檢查
     const wl = isOperationalWhitelist(match[0], rule.id);
     if (wl.whitelisted) continue;
 
-    // 注释行排除
+    // 註解行排除
     if (isCommentLine(content, match.index)) continue;
+
+    trueCount++;
+    if (count >= MAX_HITS_PER_RULE) continue;   // 只保留前 N 條明細, 但仍持續計數
 
     const line = findLineNumber(content, match.index);
     hits.push({
@@ -342,7 +350,22 @@ function scanRule(content, file, rule) {
     });
     count++;
   }
+  if (rule.id) {
+    const st = SCAN_STATS.get(rule.id) || { trueCount: 0, retained: 0, severity: rule.severity };
+    st.trueCount += trueCount;
+    st.retained += count;
+    SCAN_STATS.set(rule.id, st);
+  }
   return hits;
+}
+
+/** 真實命中計數登記 (供 check-regression-guard.js 彙總輸出「未截斷真值」) */
+const SCAN_STATS = new Map();
+function resetScanStats() { SCAN_STATS.clear(); }
+function getScanStats() {
+  return [...SCAN_STATS.entries()]
+    .map(([ruleId, v]) => ({ ruleId, trueCount: v.trueCount, retained: v.retained, severity: v.severity, capped: v.trueCount > v.retained }))
+    .sort((a, b) => b.trueCount - a.trueCount);
 }
 
 function isCommentLine(content, matchIndex) {
@@ -357,6 +380,8 @@ function isCommentLine(content, matchIndex) {
 
 module.exports = {
   collectFiles,
+  resetScanStats,
+  getScanStats,
   isExemptPath,
   isFullExemptPath,
   isNonExemptRule,
