@@ -755,6 +755,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'poster-printing-price-guide', // 2026-08-07 v8 daily: A1/A2 海報印刷價格指南
   'catalog-printing-guide', // 2026-08-10 v8 daily: 畫冊印刷指南 (GSC 畫冊印刷 12 imp pos 15.33)
   'textbook-printing-guide', // 2026-09-14 D14: ja 教材・教科書の印刷製本 (G3 簇 textbook binding, K3 9/1 D8-D14 SOP)
+  'childrens-picture-book-printing-guide', // 2026-09-18 新需求承接 #2: 童書繪本 (承接 SKU hardcover-books BK-004)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

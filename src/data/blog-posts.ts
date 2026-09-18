@@ -1962,6 +1962,33 @@ const lpZineSmallBatchBookletGuide: BlogPostMeta = {
   },
 };
 
+// 2026-09-18 新需求承接 #2 (K3 2026-09-17 拍板: 4 篇新需求承接提前至 P0 三篇之前)
+// 依据: docs/2026-09-17-website-traffic-expansion-plan-v1.md §五 路径 1 第 2 项 (童書繪本) + §四 差距矩阵 (zh-hk/en/ja 三语 0 承接)
+// 承接 SKU: hardcover-books (BK-004) | 3 快速答案块 + 3 真表格 + 5 FAQ + 3 CTA + 8+ 唯一内链 + 3 locale native
+// 价格口径来源: 线上 PDP 结构化区 (2026-09-18 curl): 100 本起印 / HK$40-240/本 / 標準交期 5-7 天 / 膠裝 +HK$30 精裝 +HK$100
+const lpChildrensPictureBookGuide: BlogPostMeta = {
+  slug: 'childrens-picture-book-printing-guide',
+  categoryKey: 'education',
+  source: 'daily',
+  date: '2026-09-18',
+  title: {
+    'zh-hk': '童書繪本印刷：精裝硬皮 32 頁 100 本起 HK$40 起 | 智印港',
+    en: 'Custom Picture Book Printing: 32pp, 100 MOQ | ZprintPro',
+    ja: '絵本印刷：ハードカバー 32 ページ 100 部から | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '童書繪本印刷 100 本起印。精裝硬皮 2.5mm 灰紙板封面、32 頁標準開本、單價 HK$40-240/本、100 本 85 折 500 本 7 折。A5/A4/B5 開本，80g/100g 書紙或 128g 銅版紙，燙金/壓凹/局部 UV 可選，FSC 認證紙，5-7 個工作天，滿 HK$500 港九新界順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。',
+    en: 'Picture book printing from 100 copies: hardcover with 2.5mm greyboard cover, 32pp standard trim, HK$40-240 per copy, 85% at 100 and 70% at 500, A5/A4/B5, 80-128gsm stocks, foil and deboss options, FSC-certified paper, 5-7 day turnaround, DHL worldwide 2-4 days.',
+    ja: '絵本印刷は 100 部から。2.5mm 厚紙ボード表紙のハードカバー、32 ページ標準判、1 部 HK$40〜240、100 部 85 折・500 部 7 折、A5/A4/B5、80〜128g 用紙、箔押し・型押し対応、FSC 認証紙、標準納期 5〜7 営業日、日本全国送料無料、海外 DHL 2〜4 日。',
+  },
+  targetKeywords: {
+    primary: 'children picture book printing',
+    secondary: [
+      'picture book printing', 'hardcover picture book printing', 'custom picture book printing', 'childrens book printing', 'picture book printing cost', '32 page picture book', '童書印刷', '繪本印刷', '精裝繪本', '童書繪本訂製', '繪本印刷價錢', '絵本印刷', 'ハードカバー絵本', 'オリジナル絵本 印刷', '絵本 印刷 小ロット',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2117,6 +2144,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpRushPrintingDeliveryGuide,
   lpPackagingBoxPrice2026,
   lpZineSmallBatchBookletGuide,
+  lpChildrensPictureBookGuide,
   ];
 
 // =============================================================================
