@@ -8,6 +8,8 @@ import { Product, getProductDisplayTitle } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
+// 2026-09-18 K3 v10.1 決策 1-B: 品類頁卡片「起訂量」展示層口徑 (數碼線書刊/本冊類 = 1 本起印)
+import { getDisplayMinOrder, isDigitalLineBook } from '@/data/print-method-policy';
 
 interface CategoryProductCardProps {
   product: Product;
@@ -67,13 +69,15 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const anchor = getDisplayAnchor(product.slug, locale);
   const fromPrice = anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
   const unitWord = getPriceUnitWord(product.price_range);
-  const moqLine = anchor
-    ? anchor.sub
-    : locale === 'zh-hk'
-      ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
-      : locale === 'ja'
-      ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
-      : `${t.moqSuffix} ${product.minQuantity} · ${t.volumeNote}`;
+  const moqLine = isDigitalLineBook(product.slug)
+    ? getDisplayMinOrder(locale, product.slug, product.minQuantity)
+    : anchor
+      ? anchor.sub
+      : locale === 'zh-hk'
+        ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
+        : locale === 'ja'
+        ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
+        : `${t.moqSuffix} ${product.minQuantity} · ${t.volumeNote}`;
 
   return (
     <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">

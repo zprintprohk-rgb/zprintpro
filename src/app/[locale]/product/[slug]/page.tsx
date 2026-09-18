@@ -45,6 +45,8 @@ import { getProductSeo } from '@/data/product-seo';
 import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
+// 2026-09-18 K3 v10.1 決策 1-B: 展示層 MOQ 口徑 (1 本起印, 數碼線書刊/本冊類) — SSoT
+import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook } from '@/data/print-method-policy';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
 import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
@@ -565,7 +567,7 @@ export default function ProductPage({
                 </div>
                 <div className="flex items-center justify-between gap-3 text-xs text-gray-400 mt-4 pt-3 border-t border-[#E5E7EB]">
                   <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
-                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{product.minQuantity}</span></span>
+                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{getDisplayMinOrder(locale, product.slug, product.minQuantity)}</span></span>
                 </div>
                 {(() => {
                   // 2026-09-06 UX 试点: 小批量起步行 — 报价表真实档位, 消除 0.42 vs 73/71 口径落差
@@ -589,6 +591,17 @@ export default function ProductPage({
                   );
                 })()}
               </div>
+
+              {/* 2026-09-18 K3 v10.1 決策 1-B: 數碼線書刊/本冊類 SKU 的 AEO 快速答案塊 + 印刷方式統一說明 */}
+              {isDigitalLineBook(product.slug) && (
+                <div className="mb-5 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4">
+                  <p className="text-sm text-amber-900 leading-relaxed">
+                    <span className="font-semibold">⚡ {MOQ_AEO[locale].q}</span>{' '}
+                    {MOQ_AEO[locale].a}
+                  </p>
+                  <p className="text-xs text-amber-800/90 leading-relaxed mt-2">{MOQ_STANDARD_PARAGRAPH[locale]}</p>
+                </div>
+              )}
 
               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
               {(() => {
