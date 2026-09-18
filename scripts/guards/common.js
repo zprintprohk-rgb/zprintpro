@@ -362,6 +362,14 @@ function scanRule(content, file, rule) {
 /** 真實命中計數登記 (供 check-regression-guard.js 彙總輸出「未截斷真值」) */
 const SCAN_STATS = new Map();
 function resetScanStats() { SCAN_STATS.clear(); }
+/** 供自帶掃描迴圈的門童 (brand-guard / i18n-guard) 登記真實計數 */
+function addScanStat(ruleId, trueCount, retained, severity) {
+  if (!ruleId) return;
+  const st = SCAN_STATS.get(ruleId) || { trueCount: 0, retained: 0, severity };
+  st.trueCount += trueCount;
+  st.retained += retained;
+  SCAN_STATS.set(ruleId, st);
+}
 function getScanStats() {
   return [...SCAN_STATS.entries()]
     .map(([ruleId, v]) => ({ ruleId, trueCount: v.trueCount, retained: v.retained, severity: v.severity, capped: v.trueCount > v.retained }))
@@ -382,6 +390,7 @@ module.exports = {
   collectFiles,
   resetScanStats,
   getScanStats,
+  addScanStat,
   isExemptPath,
   isFullExemptPath,
   isNonExemptRule,

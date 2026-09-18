@@ -102,6 +102,7 @@ async function main() {
 
   // 收集文件
   const common = require(path.join(GUARDS_DIR, 'common.js'));
+  if (common.resetScanStats) common.resetScanStats();   // ★ Step 3.5: 真實計數須自零起算 (防跨階段重複累加)
   const files = common.collectFiles(SCOPE, COMMIT_MODE);
   console.log(`📁 扫描文件数: ${files.length}`);
   console.log('');

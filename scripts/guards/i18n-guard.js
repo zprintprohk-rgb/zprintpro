@@ -224,12 +224,16 @@ function scanLocaleScoped(content, file, rule, onlyLocales) {
   const hits = [];
   const re = new RegExp(rule.pattern.source, rule.pattern.flags.includes('g') ? rule.pattern.flags : rule.pattern.flags + 'g');
   let m, count = 0;
+  // ★ 2026-09-19 K3 Step 3.5: 原在 count>=MAX 處 break ⇒ 超出部分從未被計數, 顯示值為飽和偽值。
+  //   改為持續掃描計數、只截斷明細, 真實計數登記 common.SCAN_STATS。
+  let trueCount = 0;
   while ((m = re.exec(content)) !== null) {
     if (m.index === re.lastIndex) re.lastIndex++;
-    if (count >= common.MAX_HITS_PER_RULE) break;
     const loc = common.resolveLocale(content, m.index, file);
     if (!loc || !onlyLocales.includes(loc)) continue;      // 非目标 locale (或判定不出) -> 不报
     if (common.isCommentLine(content, m.index)) continue;
+    trueCount++;
+    if (count >= common.MAX_HITS_PER_RULE) continue;       // 只截斷明細, 仍持續計數
     hits.push({
       file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
       line: common.findLineNumber(content, m.index),
@@ -241,6 +245,7 @@ function scanLocaleScoped(content, file, rule, onlyLocales) {
     });
     count++;
   }
+  if (common.addScanStat) common.addScanStat(rule.id, trueCount, count, rule.severity);
   return hits;
 }
 

@@ -71,11 +71,13 @@ const BRAND_TOKENS = [
 function scanLocaleMismatch(content, file, rule) {
   const hits = [];
   let count = 0;
+  // ★ 2026-09-19 K3 Step 3.5: 原在 count>=MAX 處 break ⇒ 超出部分從未被計數, 顯示的「50」是飽和偽值。
+  //   改為: 持續掃描並計數, 只截斷**明細**; 真實計數登記 common.SCAN_STATS 供彙總輸出未截斷真值。
+  let trueCount = 0;
   for (const tok of BRAND_TOKENS) {
     tok.re.lastIndex = 0;
     let m;
     while ((m = tok.re.exec(content)) !== null) {
-      if (count >= common.MAX_HITS_PER_RULE) break;
       if (common.isCommentLine(content, m.index)) continue;
       const loc = common.resolveLocale(content, m.index, file);
       if (!loc || !tok.badIn.includes(loc)) continue;
@@ -84,6 +86,8 @@ function scanLocaleMismatch(content, file, rule) {
       //   **仅 title 类字段** (title/seoTitle/metaTitle/title_zh) 禁 ZprintPro (title 黄金位置不双品牌, zh-hk title 用智印港)。
       //   双品牌同现 (智印港 ZprintPro) 仍由 BRAND_DOUBLE 独立规则拦截。
       if (tok.re.source === 'ZprintPro' && loc === 'zh-hk' && !common.isInTitleField(content, m.index)) continue;
+      trueCount++;
+      if (count >= common.MAX_HITS_PER_RULE) continue;   // 只截斷明細, 仍持續計數
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: common.findLineNumber(content, m.index),
@@ -96,6 +100,7 @@ function scanLocaleMismatch(content, file, rule) {
       count++;
     }
   }
+  if (common.addScanStat) common.addScanStat(rule.id, trueCount, count, rule.severity);
   return hits;
 }
 
