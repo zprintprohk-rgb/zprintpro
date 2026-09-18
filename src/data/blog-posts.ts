@@ -1989,6 +1989,36 @@ const lpChildrensPictureBookGuide: BlogPostMeta = {
   },
 };
 
+
+// 2026-09-18 队列 A #3 (v10 §四.2「4 篇新需求承接」剩余项; v10 卡未排期 = 净增量)
+// 队列依据: docs/2026-09-17-k3-directive-v10-outbound-masterplan-v2.md §四 + docs/2026-09-17-website-traffic-expansion-plan-v1.md §四/§五 路径1
+// 承接 SKU: perfect-bound-books / hardcover-books | 3 locale native | MOQ 口径 = 1 本起印 (K3 2026-09-18 业务口径)
+const lpPhotoBookPrintingGuide: BlogPostMeta = {
+  slug: 'photo-book-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-18',
+  title: {
+    'zh-hk': "寫真書印刷：相冊相簿精裝 1 本起印 100 本更平 | 智印港",
+    en: "Custom Photo Book Printing: MOQ 1, Bulk 100+ | ZprintPro",
+    ja: "フォトブック印刷：少部数 1部から 100部で割安 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "寫真書、相冊、攝影集由 1 本起印、無最低起訂量。本文拆解單價由頁數、開本、內頁紙同裝訂四項驅動的計法，對比數碼（HP Indigo，免開版費、交期短）同柯式（海德堡，100 本以上更經濟、色彩準確度高）兩種方式，並附裝訂、開本與紙材對比表、婚禮攝影師與畢業相冊的典型落單情況，以及「低 MOQ · 快樣品 · 透明工廠」三項保障。",
+    en: "Photo books, wedding albums and portfolios start at 1 copy with no minimum order. This guide breaks down how the per-copy price is driven by page count, trim size, interior stock and binding, compares digital printing (HP Indigo, no plate fee, shortest lead time) with offset (Heidelberg, more economical above 100 copies, higher colour accuracy), and adds binding and paper comparison tables, typical ordering situations for wedding photographers and graduation albums, and the Low MOQ, Fast Samples, Transparent Factory guarantees.",
+    ja: "フォトブック・結婚アルバム・作品集は 1 部から、最低注文数なしで印刷できます。本記事では 1 部ごとの単価がページ数・判型・本文用紙・製本方法でどう決まるかを整理し、デジタル印刷（HP Indigo、版代なし・納期最短）とオフセット印刷（ハイデルベルク、100 部以上で経済的・色再現が安定）を比較。製本・判型・用紙の比較表、婚礼カメラマンと卒業アルバムの典型的な発注パターン、そして小ロット・スピード校正・透明な工場の 3 つの取り組みも掲載しています。",
+  },
+  targetKeywords: {
+    primary: 'photo book printing',
+    secondary: [
+      'custom photo book printing', 'wedding photo album printing', 'photo book printing small batch',
+      'hardcover photo book', 'perfect bound photo book', 'photography portfolio printing',
+      '寫真書印刷', '相冊印刷', '相簿訂製', '婚禮相冊印刷', '攝影集印刷',
+      'フォトブック 印刷', '写真集 印刷', 'アルバム 印刷', '少部数 印刷',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2145,6 +2175,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpPackagingBoxPrice2026,
   lpZineSmallBatchBookletGuide,
   lpChildrensPictureBookGuide,
+  lpPhotoBookPrintingGuide,
   ];
 
 // =============================================================================
