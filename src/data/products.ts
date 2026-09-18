@@ -5733,15 +5733,15 @@ export const products: Product[] = [
     slug: 'saddle-stitch-booklets',
     category: 'books',
     category_slug: 'books',
-    name: '香港騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 50 本起', nameEn: 'Saddle Stitch Booklet Printing | Custom Catalogs 50 Copies MOQ | US$1.84-7.36/pc', nameJa: '中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 50冊から', title_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 50 本起',
-    description: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 50 本（vs Alibaba 黃頁 500+）、30 秒 AI 即時報價（vs 郵件詢盤 2 天）、DHL 全球 2-4 天（vs 海運 3-4 週）。US$1.84-7.36/pc，HK$14-57/pc。適用行業：餐飲外賣、零售精品、教育培訓、婚慶、文創IP、寵物、母嬰、茶飲食品、物流快遞、服裝。', descriptionEn: 'Saddle stitch booklet printing 50-copy MOQ (vs Alibaba yellow pages 500+), 30-second AI instant quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). 8-64 pages, lays flat at 180°, uniform paper weight. US$1.84-7.36/pc. Ideal for F&B, retail, education, wedding, IP merchandise, pet, baby & mom, tea & beverage, logistics, apparel, and cross-border e-commerce brands.', descriptionJa: '中綴じ冊子印刷 50冊 MOQ（Alibaba 黄頁 500+ 相比）、30秒 AI 即時見積もり（メール 2日 相比）、DHL グローバル 2-4日（海上 3-4週 相比）。8-64頁、180°フラット開き、均一紙厚。¥258-1030/個。飲食・小売・教育・結婚式・同人・ペット・ベビー・茶飲・物流・アパレル・越境EC業界に最適。', description_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 50 本、30 秒 AI 即時報價、DHL 全球 2-4 天。HK$14-57/pc。適用行業：餐飲外賣、零售精品、教育培訓、婚慶、文創IP、寵物、母嬰、茶飲食品、物流快遞、服裝。',
+    name: '香港騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 100 本起', nameEn: 'Saddle Stitch Booklet Printing | Custom Catalogs 100 Copies MOQ | US$1.84-7.36/pc', nameJa: '中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 100冊から', title_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 100 本起',
+    description: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 100 本（vs Alibaba 黃頁 500+）、30 秒 AI 即時報價（vs 郵件詢盤 2 天）、DHL 全球 2-4 天（vs 海運 3-4 週）。HK$6-32/pc。適用行業：餐飲外賣、零售精品、教育培訓、婚慶、文創IP、寵物、母嬰、茶飲食品、物流快遞、服裝。', descriptionEn: 'Saddle stitch booklet printing 100-copy MOQ (vs Alibaba yellow pages 500+), 30-second AI instant quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). 8-64 pages, lays flat at 180°, uniform paper weight. US$1.84-7.36/pc. Ideal for F&B, retail, education, wedding, IP merchandise, pet, baby & mom, tea & beverage, logistics, apparel, and cross-border e-commerce brands.', descriptionJa: '中綴じ冊子印刷 100冊 MOQ（Alibaba 黄頁 500+ 相比）、30秒 AI 即時見積もり（メール 2日 相比）、DHL グローバル 2-4日（海上 3-4週 相比）。8-64頁、180°フラット開き、均一紙厚。¥258-1030/個。飲食・小売・教育・結婚式・同人・ペット・ベビー・茶飲・物流・アパレル・越境EC業界に最適。', description_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 100 本、30 秒 AI 即時報價、DHL 全球 2-4 天。HK$6-32/pc。適用行業：餐飲外賣、零售精品、教育培訓、婚慶、文創IP、寵物、母嬰、茶飲食品、物流快遞、服裝。',
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
       '【四色柯式印刷】色彩飽和，適合照片與插畫',
       '【多種裝訂】騎馬釘、膠裝、線裝或硬皮',
       '【騎馬釘裝訂】8–64頁薄本，經濟實惠',
       '【免費排版】目錄、頁碼與章節標註',
-      '【50本起訂】小批量數碼，大量柯式',
+      '【100本起訂】小批量數碼，大量柯式',
       '【節慶檔期】Q4為高峰期，建議提早確認'
     ],
     specs: {

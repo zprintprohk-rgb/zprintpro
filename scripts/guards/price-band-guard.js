@@ -72,6 +72,50 @@ const BANDS = [
       { slug: '2027-monthly-calendar-printing-timetable', required: ['HK$8-25/冊'], forbidden: ['$0.40-1.90/冊'] },
     ],
   },
+
+  // ── BK-002 騎馬釘小冊子 (saddle-stitch-booklets) ──
+  // K3 2026-09-18 裁定: 以「结构化区 / PDP title / minQuantity」为准
+  //   = 100 本起印 + HK$6-32/本; 作废旧自由文本值 MOQ 50 本 / HK$14-57/pc
+  // 边界: catalog-printing-china-supplier-guide 的 HK$14-57/本 属「目錄/畫冊」另一產品線, 不在本带内
+  {
+    id: 'BK002_PRICE_BAND',
+    locale: 'zh-hk',
+    file: 'src/data/blog-data/zh-hk.json',
+    canonical: 'HK$6-32/本 (100 本起印)',
+    entries: [
+      {
+        slug: 'saddle-stitch-booklet-printing-guide',
+        required: ['HK$6-32/本', '100 本起'],
+        forbidden: ['HK$14-57/本', '50 本起', '無最低起印量'],
+      },
+    ],
+  },
+  {
+    id: 'BK002_PRICE_BAND',
+    locale: 'en',
+    file: 'src/data/blog-data/en.json',
+    canonical: '100-copy MOQ (US$1.84-7.36/pc = en 结构化基准价, 不变)',
+    entries: [
+      {
+        slug: 'saddle-stitch-booklet-printing-guide',
+        required: ['100-copy MOQ', '100 copies'],
+        forbidden: ['50-copy', '50 copies'],
+      },
+    ],
+  },
+  {
+    id: 'BK002_PRICE_BAND',
+    locale: 'ja',
+    file: 'src/data/blog-data/ja.json',
+    canonical: '100 冊から (¥258-1030/冊 = ja 结构化基准价, 不变)',
+    entries: [
+      {
+        slug: 'saddle-stitch-booklet-printing-guide',
+        required: ['100冊', '100 冊から'],
+        forbidden: ['50冊', '50 冊から'],
+      },
+    ],
+  },
 ];
 
 const count = (hay, needle) => hay.split(needle).length - 1;
