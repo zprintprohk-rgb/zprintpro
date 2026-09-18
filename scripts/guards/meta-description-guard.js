@@ -1,0 +1,172 @@
+/**
+ * 门童 #20: meta description 完整性 (K3 2026-09-18 批准 §8 选项 A)
+ *
+ * 批准范围: 「建 meta description 门童 + 只修机械缺陷」
+ *   ① zh-hk/en/ja meta 语言错配   ② 首词重复/前缀重复   ③ 空 meta
+ *
+ * 事故依据 (2026-09-18 L1-1 诊断实测):
+ *   - zh-hk/blog/food-packaging-printing-guide 的 meta 为**纯英文**:
+ *     "Food-grade packaging essentials — from kraft boxes to food-safe lamination..."
+ *     → Google 对中文查询展示英文摘要 → 0 点击 (该 query 位置 6.65 / 145 展示 / 0 点击)
+ *   - PDP meta 普遍出现「名稱/前綴」重复, 线上实测: 防水貼紙/防水貼紙、公司信封/公司信封、
+ *     大號信封/大號信封、定制年曆/定制年曆、畫冊印刷/畫冊印刷、騎馬釘小冊子/騎馬釘
+ *     → 根因在**代码层** src/lib/seo.ts: `fullDesc = ${descPrefix}${priceText}${descSuffix}`,
+ *       descPrefix = baseDesc.slice(0,100), 而 baseDesc 本身以「名稱/前綴」开头
+ *   - 9 篇 zh-hk blog-data description 为空
+ *
+ * 为什么此前无人发现: 既有门童 #4 i18n 只查「zh-hk 简体字残留」,
+ *   **查不到「zh-hk 字段写成英文」**; 也**没有任何门童做 meta 结构校验**。
+ *   (与 ce 截断 / GSC 泄漏同源: 门童盲区 = 事故存活期)
+ *
+ * 严重度: red (客户可见 SERP 摘要直接受损)
+ * 误报防线: 规则 B 只抓**精确重复**与**严格前缀重复**, 不抓正常的 `A/B` 並列 (如「包裝盒/紙盒」)
+ */
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const ROOT = path.resolve(__dirname, '..', '..');
+
+/** 客户可见数据文件 (与门童 #16/#17 同源范围) */
+const FILES = [
+  'src/data/blog-data/zh-hk.json',
+  'src/data/blog-data/en.json',
+  'src/data/blog-data/ja.json',
+  'src/data/blog-posts.ts',
+  'src/data/buying-guides.ts',
+  'src/data/sku-seo-data.ts',
+  'src/data/products.ts',
+  'src/data/category-seo-content.ts',
+  'src/data/product-faqs.ts',
+];
+
+const CJK = /[\u3400-\u9FFF\uF900-\uFAFF]/;
+const KANA = /[\u3040-\u30FF]/;
+const LATIN = /[A-Za-z]/;
+
+/** 规则 B: 精确重复 `A/A` 或 严格前缀重复 `AAA…/AA` (如 騎馬釘小冊子/騎馬釘) */
+const DUP_EXACT = /([\u4e00-\u9fff]{2,12})[/／]\1/g;
+const DUP_PREFIX = /([\u4e00-\u9fff]{3,12})[\u4e00-\u9fff]{0,4}[/／]\1/g;
+
+/** 提取一行中所有字符串字面量的值 (TS 用) —— 简易: 抓 "..." 与 '...' */
+function stringLiterals(line) {
+  const out = [];
+  const re = /"((?:[^"\\]|\\.)*)"|'((?:[^'\\]|\\.)*)'|`((?:[^`\\]|\\.)*)`/g;
+  let m;
+  while ((m = re.exec(line)) !== null) out.push(m[1] ?? m[2] ?? m[3] ?? '');
+  return out;
+}
+
+/** 判断一个字符串是否是「meta 类」字段值: 长度 >= 40 且含句读, 视为描述文本 */
+function looksLikeMeta(s) {
+  if (typeof s !== 'string') return false;
+  const t = s.trim();
+  if (t.length < 40) return false;
+  return /[。．.！!？?]/.test(t) || t.length >= 80;
+}
+
+function scanLocaleMismatch(raw, loc, file, hits) {
+  const lines = raw.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    for (const v of stringLiterals(line)) {
+      if (!looksLikeMeta(v)) continue;
+      const cjk = (v.match(/[\u3400-\u9FFF\uF900-\uFAFF]/g) || []).length;
+      const kana = (v.match(/[\u3040-\u30FF]/g) || []).length;
+      const latin = (v.match(/[A-Za-z]/g) || []).length;
+      const total = v.replace(/\s/g, '').length || 1;
+      let bad = null, why = '';
+      if ((loc === 'zh-hk' || loc === 'ja') && cjk === 0 && kana === 0 && latin / total > 0.6) {
+        bad = 'english-in-cjk-locale';
+        why = '简体/繁体/日文 locale 的描述字段为纯英文';
+      } else if (loc === 'en' && cjk > 3) {
+        bad = 'cjk-in-en-locale';
+        why = 'en locale 的描述字段含中日文字符';
+      }
+      if (bad) {
+        hits.push({
+          file, line: i + 1, severity: 'red', ruleId: 'META_DESCRIPTION_INTEGRITY',
+          match: v.slice(0, 80),
+          ruleName: `meta 语言错配 (${why})`,
+          fix: `把该 ${loc} 描述改为对应语言; 若无可复用同语言来源 → 不得自造, 走 §8 升级 (禁区 2 零改文案)`,
+        });
+      }
+    }
+  }
+}
+
+function scanDup(raw, file, hits) {
+  const lines = raw.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    DUP_EXACT.lastIndex = 0; DUP_PREFIX.lastIndex = 0;
+    const m1 = DUP_EXACT.exec(line);
+    const m2 = DUP_PREFIX.exec(line);
+    if (m1) {
+      hits.push({
+        file, line: i + 1, severity: 'red', ruleId: 'META_DESCRIPTION_INTEGRITY',
+        match: m1[0].slice(0, 60),
+        ruleName: 'meta/描述出现精确重复词 (A/A)',
+        fix: '去掉重复的一半 (纯机械去重, 不改措辞)',
+      });
+    } else if (m2 && m2[0].length >= 5) {
+      hits.push({
+        file, line: i + 1, severity: 'red', ruleId: 'META_DESCRIPTION_INTEGRITY',
+        match: m2[0].slice(0, 60),
+        ruleName: 'meta/描述出现前缀重复 (名称/名称前缀, 如 騎馬釘小冊子/騎馬釘)',
+        fix: '删掉 `/` 及其后重复前缀 (纯机械去重, 不改措辞); 根因见 src/lib/seo.ts fullDesc 拼接',
+      });
+    }
+  }
+}
+
+/** 规则 C: 空 meta —— 仅针对 blog-data JSON 的 description 字段 (对象键精确匹配, 防误报) */
+function scanEmptyDesc(file, hits) {
+  let raw;
+  try { raw = fs.readFileSync(path.join(ROOT, file), 'utf8'); } catch (e) { return; }
+  if (!/blog-data[\\/]/.test(file)) return;
+  let obj;
+  try { obj = JSON.parse(raw); } catch (e) { return; }
+  for (const [slug, entry] of Object.entries(obj)) {
+    const d = entry && entry.description;
+    if (typeof d !== 'string' || d.trim() === '') {
+      hits.push({
+        file, line: 0, severity: 'red', ruleId: 'META_DESCRIPTION_INTEGRITY',
+        match: slug,
+        ruleName: 'blog-data description 为空 (SERP 无摘要可展示)',
+        fix: '补 description (属文案 → 走 §8 升级或引用既有同语言来源)',
+      });
+    }
+  }
+}
+
+/**
+ * 扫描入口 —— 不依赖变更文件列表, 每次 commit 全量复核
+ * (meta 完整性是数据文件级不变量, 否则改 .tsx 的那次 commit 会漏过)
+ */
+function scan(_files) {
+  const hits = [];
+  const cache = new Map();
+  for (const rel of FILES) {
+    let raw = cache.get(rel);
+    if (raw === undefined) {
+      try { raw = fs.readFileSync(path.join(ROOT, rel), 'utf8'); } catch (e) { raw = null; }
+      cache.set(rel, raw);
+    }
+    if (raw === null) continue;
+    const loc = /zh-hk/.test(rel) ? 'zh-hk' : /\/en\.json|en\.json/.test(rel) ? 'en' : /ja\.json/.test(rel) ? 'ja' : 'multi';
+    if (loc !== 'multi') scanLocaleMismatch(raw, loc, rel, hits);
+    scanDup(raw, rel, hits);
+    scanEmptyDesc(rel, hits);
+  }
+  return hits;
+}
+
+module.exports = {
+  scan,
+  RULES: [{ id: 'META_DESCRIPTION_INTEGRITY', severity: 'red' }],
+  FILES,
+  DUP_EXACT,
+  DUP_PREFIX,
+};
