@@ -1,0 +1,71 @@
+=== 修復後線上探針 (commit c4146e7f) ===
+總請求: 297 | HTTP200: 258 | 非200: 39
+有 name="description": 247
+★ 仍缺 name="description": 11
+
+仍缺清單:
+   zh-hk/wedding-invitation-pricing-guide
+   zh-hk/wedding-invitation-cost-guide
+   zh-hk/wedding-table-card-printing-guide
+   en/wedding-invitation-pricing-guide
+   en/wedding-invitation-cost-guide
+   en/wedding-table-card-printing-guide
+   en/construction-material-sample-book-printing-guide
+   en/packaging-box-pricing-2026
+   ja/wedding-invitation-pricing-guide
+   ja/wedding-invitation-cost-guide
+   ja/wedding-table-card-printing-guide
+
+og:description 有值: 247 / 258
+★ 缺 og:description (11):
+   zh-hk/wedding-invitation-pricing-guide
+   zh-hk/wedding-invitation-cost-guide
+   zh-hk/wedding-table-card-printing-guide
+   en/wedding-invitation-pricing-guide
+   en/wedding-invitation-cost-guide
+   en/wedding-table-card-printing-guide
+   en/construction-material-sample-book-printing-guide
+   en/packaging-box-pricing-2026
+   ja/wedding-invitation-pricing-guide
+   ja/wedding-invitation-cost-guide
+   ja/wedding-table-card-printing-guide
+
+抽樣 (前 20 條實測描述):
+   zh-hk/flyer-buying-guide [64] A4傳單、A5傳單、對摺、三摺頁...傳單印刷點樣揀？智印港為您整理香港傳單印刷的完整選購攻略，助您用最抵價錢達到最佳宣傳效果。
+   zh-hk/sticker-buying-guide [56] 防水貼紙、透明貼紙、異形模切貼紙、燙金貼紙...面對眾多選擇如何下手？智印港為您整理香港貼紙印刷的完整選購攻略。
+   zh-hk/packaging-buying-guide [48] 禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印港為您整理香港包裝盒印刷的完整選購攻略。
+   zh-hk/paper-bag-buying-guide [46] 牛皮紙袋、白卡紙袋、禮品紙袋...紙袋印刷點樣揀？智印港為您整理香港紙袋印刷的完整選購攻略。
+   zh-hk/poster-buying-guide [51] A1海報、A2海報、戶外海報、藝術海報...海報印刷點樣揀？智印港為您整理香港海報印刷的完整選購攻略。
+   zh-hk/banner-buying-guide [49] X展架、易拉寶、背景板、戶外大橫幅...噴繪廣告點樣揀？智印港為您整理香港噴繪廣告的完整選購攻略。
+   zh-hk/book-buying-guide [41] 騎馬釘、膠裝、精裝...書籍印刷點樣揀？智印港為您整理香港書籍印刷的完整選購攻略。
+   zh-hk/menu-buying-guide [51] PVC餐牌、過膠餐牌、硬膠套、皮革餐牌...餐牌印刷點樣揀？智印港為您整理香港餐牌印刷的完整選購攻略。
+   zh-hk/company-intro [70] 智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。
+   zh-hk/sticker-guide [87] Deep dive into sticker material choices, surface treatments, and application scenarios.
+   zh-hk/sticker-design [45] Master the core techniques of sticker design.
+   zh-hk/packaging-trends [39] Explore latest packaging design trends.
+   zh-hk/paper-materials [44] Analysis of different paper characteristics.
+   zh-hk/eco-printing [44] Learn about eco-friendly printing materials.
+   zh-hk/cmyk-guide [49] Understand color modes for optimal print results.
+   zh-hk/brand-materials-checklist [81] A complete checklist of printed brand materials for startups and brand refreshes.
+   zh-hk/design-file-specs [94] Master bleed settings, resolution requirements, and color mode conversions for perfect prints.
+   zh-hk/hong-kong-printing-guide [95] Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.
+   zh-hk/flyer-printing-guide [110] From A4 to A5, bi-fold to tri-fold, art paper to book paper — a complete guide to flyer printing in Hong Kong.
+   zh-hk/mtr-advertising-specs [76] Detailed specifications and strategies for MTR advertising across Hong Kong.
+
+非 200 (39):
+   狀態分佈: {"503":39}
+   en/real-estate-flyer-printing-guide -> 503 
+   en/calendar-printing-guide -> 503 
+   en/poster-printing-price-guide -> 503 
+   en/catalog-printing-guide -> 503 
+   en/2027-monthly-calendar-printing-timetable -> 503 
+   en/sticker-material-pvc-vinyl-removable -> 503 
+   en/foil-stamping-3-applications-2026 -> 503 
+   en/kraft-paper-box-types-comparison-2026 -> 503 
+   en/hong-kong-printing-cost-baseline-2026 -> 503 
+   en/2027-calendar-printing-complete-guide -> 503 
+   en/packaging-box-price-2026 -> 503 
+   ja/sticker-buying-guide -> 503 
+   ja/flyer-buying-guide -> 503 
+   ja/menu-buying-guide -> 503 
+   ja/company-intro -> 503 

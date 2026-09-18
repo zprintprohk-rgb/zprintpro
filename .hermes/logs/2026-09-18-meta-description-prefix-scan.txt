@@ -1,0 +1,235 @@
+總請求: 297 | HTTP200: 201 | 非200: 96
+
+★ 缺 name="description" (SERP 無摘要): 124
+   wedding-invitation-cost-guide  [zh-hk, en, ja]
+   wedding-table-card-printing-guide  [zh-hk, en, ja]
+   jewellery-shopping-bag-printing-guide  [zh-hk, en, ja]
+   real-estate-brochure-box-printing-guide  [zh-hk, en, ja]
+   doujin-circle-printing-guide  [zh-hk, en, ja]
+   2027-monthly-calendar-printing-timetable  [zh-hk, en, ja]
+   kraft-paper-box-types-comparison-2026  [zh-hk, en, ja]
+   saddle-stitch-booklet-printing-guide  [zh-hk, en]
+   packaging-box-custom-guide  [zh-hk, en]
+   wedding-invitation-pricing-guide  [zh-hk, en]
+   pharmaceutical-label-printing-guide  [zh-hk, en]
+   product-label-printing-guide  [zh-hk, en]
+   graduation-yearbook-printing-guide  [zh-hk, en]
+   trade-show-banner-printing-guide  [zh-hk, en]
+   wedding-invitation-envelope-printing-guide  [zh-hk, en]
+   finance-summit-gift-bag-printing-guide  [zh-hk, en]
+   ip-character-sticker-printing-guide  [zh-hk, en]
+   hotel-amenity-sticker-printing-guide  [zh-hk, en]
+   marathon-event-poster-printing-guide  [zh-hk, en]
+   car-dealership-amenity-sticker-printing-guide  [zh-hk, en]
+   hotel-keycard-sleeve-printing-guide  [zh-hk, en]
+   medical-device-packaging-box-guide  [zh-hk, en]
+   sports-merchandise-gift-box-printing-guide  [zh-hk, en]
+   financial-institution-gift-bag-printing-guide  [zh-hk, en]
+   same-day-flyers-printing-hong-kong-guide  [zh-hk, en]
+   packaging-box-pricing-2026  [zh-hk, en]
+   sticker-material-pvc-vinyl-removable  [zh-hk, en]
+   instant-printing-30s-ai-quote-flow  [zh-hk, en]
+   campus-education-printing-pillar-guide  [zh-hk, en]
+   hong-kong-printing-cost-baseline-2026  [zh-hk, en]
+   apparel-clothing-tag-printing-guide  [zh-hk, ja]
+   packaging-box-price-2026  [zh-hk, en]
+   childrens-picture-book-printing-guide  [zh-hk, en]
+   zine-small-batch-booklet-printing-guide  [zh-hk, ja]
+   photo-book-printing-guide  [zh-hk, en]
+   baby-food-packaging-box-printing-guide  [zh-hk]
+   real-estate-flyer-printing-guide  [zh-hk]
+   auto-parts-shopping-bag-printing-guide  [zh-hk]
+   custom-card-boxes-small-batch-usa  [zh-hk]
+   cosmetic-card-boxes-gang-run-japan  [zh-hk]
+   rush-printing-hk-guide  [zh-hk]
+   real-estate-floor-plan-poster-printing-guide  [zh-hk]
+   calendar-printing-guide  [zh-hk]
+   large-envelope-printing-c4-c5  [zh-hk]
+   catalog-printing-china-supplier-guide  [zh-hk]
+   foil-stamping-3-applications-2026  [zh-hk]
+   print-specifications-reference-guide-2026  [zh-hk]
+   textbook-printing-guide  [zh-hk]
+   2027-calendar-printing-complete-guide  [zh-hk]
+   school-exercise-book-printing-guide  [zh-hk]
+   rush-printing-delivery-guide  [zh-hk]
+   company-intro  [en]
+   sticker-guide  [en]
+   packaging-trends  [en]
+   sticker-design  [en]
+   cmyk-guide  [en]
+   paper-materials  [en]
+   eco-printing  [en]
+   design-file-specs  [en]
+   brand-materials-checklist  [en]
+   mtr-advertising-specs  [en]
+   hong-kong-printing-guide  [en]
+   food-packaging-printing-guide  [en]
+   flyer-printing-guide  [en]
+   poster-printing-guide  [en]
+   restaurant-opening-flyer-printing-guide  [en]
+   paper-bag-printing-guide  [en]
+   pet-food-sticker-printing-guide  [en]
+   cross-border-ecommerce-shipping-box-guide  [en]
+   tea-beverage-gift-box-printing-guide  [en]
+   wedding-favor-bag-printing-guide  [en]
+   cosmetics-packaging-box-printing-guide  [en]
+   retail-shop-poster-printing-guide  [en]
+   restaurant-menu-printing-guide  [en]
+   wedding-red-packet-printing-guide  [en]
+   ecommerce-shipping-bag-printing-guide  [en]
+   thick-paper-flyer-printing-restaurant-takeout-guide  [en]
+   media-merchandise-box-printing-guide  [en]
+   magnetic-closure-gift-box-ecommerce-brand-guide  [en]
+   folding-box-cosmetics-brand-eco-friendly-guide  [en]
+   baby-product-label-sticker-printing-guide  [en]
+   apparel-shopping-bag-printing-guide  [en]
+
+✓ 有 name="description": 77
+   a5-vs-a6-flyer-size  [zh-hk, ja]
+   apparel-shopping-bag-printing-guide  [zh-hk, ja]
+   baby-product-label-sticker-printing-guide  [zh-hk]
+   banner-buying-guide  [zh-hk, en]
+   book-buying-guide  [zh-hk, en]
+   brand-materials-checklist  [zh-hk]
+   calendar-printing-guide  [ja]
+   catalog-printing-guide  [zh-hk, en, ja]
+   certificate-printing-guide  [zh-hk, ja]
+   cmyk-guide  [zh-hk]
+   company-intro  [zh-hk, ja]
+   construction-material-sample-book-printing-guide  [zh-hk, en, ja]
+   cosmetics-packaging-box-printing-guide  [zh-hk, ja]
+   cross-border-ecommerce-shipping-box-guide  [zh-hk]
+   design-file-specs  [zh-hk]
+   eco-printing  [zh-hk]
+   ecommerce-shipping-bag-printing-guide  [zh-hk, ja]
+   financial-institution-gift-bag-printing-guide  [ja]
+   flyer-buying-guide  [zh-hk, en, ja]
+   flyer-printing-guide  [zh-hk]
+   folding-box-cosmetics-brand-eco-friendly-guide  [zh-hk]
+   food-packaging-printing-guide  [zh-hk, ja]
+   gang-run-card-boxes-hk-guide  [zh-hk, en]
+   hong-kong-printing-guide  [zh-hk]
+   industrial-nameplate-printing-guide  [zh-hk, en]
+   magnetic-closure-gift-box-ecommerce-brand-guide  [zh-hk, ja]
+   media-merchandise-box-printing-guide  [zh-hk]
+   menu-buying-guide  [zh-hk, en]
+   mtr-advertising-specs  [zh-hk, ja]
+   packaging-buying-guide  [zh-hk, en]
+   packaging-trends  [zh-hk]
+   paper-bag-buying-guide  [zh-hk, en]
+   paper-bag-printing-guide  [zh-hk]
+   paper-materials  [zh-hk, ja]
+   pet-food-sticker-printing-guide  [zh-hk]
+   poster-buying-guide  [zh-hk, en]
+   poster-printing-guide  [zh-hk]
+   poster-printing-price-guide  [zh-hk]
+   poster-size-guide  [zh-hk]
+   religious-ceremony-printing-guide  [zh-hk, en]
+   restaurant-menu-printing-guide  [zh-hk]
+   restaurant-opening-flyer-printing-guide  [zh-hk]
+   retail-shop-poster-printing-guide  [zh-hk]
+   sticker-buying-guide  [zh-hk, en]
+   sticker-design  [zh-hk]
+   sticker-guide  [zh-hk, ja]
+   tea-beverage-gift-box-printing-guide  [zh-hk]
+   thick-paper-flyer-printing-restaurant-takeout-guide  [zh-hk]
+   wedding-favor-bag-printing-guide  [zh-hk]
+   wedding-red-packet-printing-guide  [zh-hk]
+
+非 200 / 錯誤:
+   en/baby-food-packaging-box-printing-guide -> 503 
+   en/real-estate-flyer-printing-guide -> 503 
+   en/auto-parts-shopping-bag-printing-guide -> 503 
+   en/custom-card-boxes-small-batch-usa -> 503 
+   en/cosmetic-card-boxes-gang-run-japan -> 503 
+   en/real-estate-floor-plan-poster-printing-guide -> 503 
+   en/rush-printing-hk-guide -> 503 
+   en/calendar-printing-guide -> 503 
+   en/poster-size-guide -> 503 
+   en/a5-vs-a6-flyer-size -> 503 
+   en/poster-printing-price-guide -> 503 
+   en/catalog-printing-china-supplier-guide -> 503 
+   en/large-envelope-printing-c4-c5 -> 503 
+   en/foil-stamping-3-applications-2026 -> 503 
+   en/print-specifications-reference-guide-2026 -> 503 
+   en/textbook-printing-guide -> 503 
+   en/school-exercise-book-printing-guide -> 503 
+   en/certificate-printing-guide -> 503 
+   en/2027-calendar-printing-complete-guide -> 503 
+   en/apparel-clothing-tag-printing-guide -> 503 
+   en/zine-small-batch-booklet-printing-guide -> 503 
+   en/rush-printing-delivery-guide -> 503 
+   ja/packaging-buying-guide -> 503 
+   ja/sticker-buying-guide -> 503 
+   ja/poster-buying-guide -> 503 
+   ja/banner-buying-guide -> 503 
+   ja/book-buying-guide -> 503 
+   ja/menu-buying-guide -> 503 
+   ja/sticker-design -> 503 
+   ja/packaging-trends -> 503 
+   ja/cmyk-guide -> 503 
+   ja/eco-printing -> 503 
+   ja/hong-kong-printing-guide -> 503 
+   ja/design-file-specs -> 503 
+   ja/brand-materials-checklist -> 503 
+   ja/flyer-printing-guide -> 503 
+   ja/paper-bag-printing-guide -> 503 
+   ja/saddle-stitch-booklet-printing-guide -> 503 
+   ja/poster-printing-guide -> 503 
+   ja/paper-bag-buying-guide -> 503 
+   ja/packaging-box-custom-guide -> 503 
+   ja/restaurant-opening-flyer-printing-guide -> 503 
+   ja/pet-food-sticker-printing-guide -> 503 
+   ja/tea-beverage-gift-box-printing-guide -> 503 
+   ja/cross-border-ecommerce-shipping-box-guide -> 503 
+   ja/wedding-invitation-pricing-guide -> 503 
+   ja/wedding-favor-bag-printing-guide -> 503 
+   ja/restaurant-menu-printing-guide -> 503 
+   ja/retail-shop-poster-printing-guide -> 503 
+   ja/pharmaceutical-label-printing-guide -> 503 
+   ja/product-label-printing-guide -> 503 
+   ja/wedding-red-packet-printing-guide -> 503 
+   ja/graduation-yearbook-printing-guide -> 503 
+   ja/ip-character-sticker-printing-guide -> 503 
+   ja/trade-show-banner-printing-guide -> 503 
+   ja/wedding-invitation-envelope-printing-guide -> 503 
+   ja/hotel-amenity-sticker-printing-guide -> 503 
+   ja/finance-summit-gift-bag-printing-guide -> 503 
+   ja/marathon-event-poster-printing-guide -> 503 
+   ja/hotel-keycard-sleeve-printing-guide -> 503 
+   ja/car-dealership-amenity-sticker-printing-guide -> 503 
+   ja/baby-product-label-sticker-printing-guide -> 503 
+   ja/media-merchandise-box-printing-guide -> 503 
+   ja/thick-paper-flyer-printing-restaurant-takeout-guide -> 503 
+   ja/folding-box-cosmetics-brand-eco-friendly-guide -> 503 
+   ja/religious-ceremony-printing-guide -> 503 
+   ja/industrial-nameplate-printing-guide -> 503 
+   ja/baby-food-packaging-box-printing-guide -> 503 
+   ja/real-estate-flyer-printing-guide -> 503 
+   ja/medical-device-packaging-box-guide -> 503 
+   ja/auto-parts-shopping-bag-printing-guide -> 503 
+   ja/sports-merchandise-gift-box-printing-guide -> 503 
+   ja/gang-run-card-boxes-hk-guide -> 503 
+   ja/custom-card-boxes-small-batch-usa -> 503 
+   ja/cosmetic-card-boxes-gang-run-japan -> 503 
+   ja/real-estate-floor-plan-poster-printing-guide -> 503 
+   ja/rush-printing-hk-guide -> 503 
+   ja/same-day-flyers-printing-hong-kong-guide -> 503 
+   ja/poster-size-guide -> 503 
+   ja/poster-printing-price-guide -> 503 
+   ja/catalog-printing-china-supplier-guide -> 503 
+   ja/packaging-box-pricing-2026 -> 503 
+   ja/large-envelope-printing-c4-c5 -> 503 
+   ja/sticker-material-pvc-vinyl-removable -> 503 
+   ja/instant-printing-30s-ai-quote-flow -> 503 
+   ja/foil-stamping-3-applications-2026 -> 503 
+   ja/hong-kong-printing-cost-baseline-2026 -> 503 
+   ja/campus-education-printing-pillar-guide -> 503 
+   ja/print-specifications-reference-guide-2026 -> 503 
+   ja/textbook-printing-guide -> 503 
+   ja/2027-calendar-printing-complete-guide -> 503 
+   ja/school-exercise-book-printing-guide -> 503 
+   ja/rush-printing-delivery-guide -> 503 
+   ja/packaging-box-price-2026 -> 503 
+   ja/childrens-picture-book-printing-guide -> 503 
+   ja/photo-book-printing-guide -> 503 

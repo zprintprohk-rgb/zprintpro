@@ -1,0 +1,192 @@
+﻿--- ZP-daily-content ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-daily-content
+Next Run Time:                        2026/9/14 21:17:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        2026/9/14 3:04:04
+Last Result:                          -2147020576
+Author:                               JEROME\Administrator
+Task To Run:                          powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\zprintpro-nextjs\.hermes\cron-run\ZP-daily-content.ps1
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Daily 
+Start Time:                           21:17:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 Every 1 day(s)
+Months:                               N/A
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+
+--- ZP-gsc-feedback ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-gsc-feedback
+Next Run Time:                        2026/9/14 22:43:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        2026/9/14 3:04:04
+Last Result:                          -2147020576
+Author:                               JEROME\Administrator
+Task To Run:                          powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\zprintpro-nextjs\.hermes\cron-run\ZP-gsc-feedback.ps1
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Daily 
+Start Time:                           22:43:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 Every 1 day(s)
+Months:                               N/A
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+
+--- ZP-weekly-meta ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-weekly-meta
+Next Run Time:                        2026/9/18 23:07:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        1999/11/30 0:00:00
+Last Result:                          267011
+Author:                               JEROME\Administrator
+Task To Run:                          powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\zprintpro-nextjs\.hermes\cron-run\ZP-weekly-meta.ps1
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Weekly
+Start Time:                           23:07:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 FRI
+Months:                               Every 1 week(s)
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+
+--- ZP-blog-deepfix ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-blog-deepfix
+Next Run Time:                        2026/9/19 5:37:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        1999/11/30 0:00:00
+Last Result:                          267011
+Author:                               JEROME\Administrator
+Task To Run:                          powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\zprintpro-nextjs\.hermes\cron-run\ZP-blog-deepfix.ps1
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Weekly
+Start Time:                           5:37:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 SAT
+Months:                               Every 1 week(s)
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+
+--- ZP-monthly-matrix ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-monthly-matrix
+Next Run Time:                        2026/10/1 6:13:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        1999/11/30 0:00:00
+Last Result:                          267011
+Author:                               JEROME\Administrator
+Task To Run:                          powershell.exe -NoProfile -ExecutionPolicy Bypass -File F:\zprintpro-nextjs\.hermes\cron-run\ZP-monthly-matrix.ps1
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Monthly
+Start Time:                           6:13:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 01
+Months:                               Every month
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+
+--- ZP-cron-watchdog ---
+
+Folder: \
+HostName:                             JEROME
+TaskName:                             \ZP-cron-watchdog
+Next Run Time:                        2026/9/14 6:43:00
+Status:                               Ready
+Logon Mode:                           Interactive/Background
+Last Run Time:                        1999/11/30 0:00:00
+Last Result:                          267011
+Author:                               JEROME\Administrator
+Task To Run:                          cmd.exe /c F:\zprintpro-nextjs\.hermes\cron-run\ZP-cron-watchdog.cmd
+Start In:                             N/A
+Comment:                              N/A
+Scheduled Task State:                 Enabled
+Idle Time:                            Disabled
+Power Management:                     Stop On Battery Mode, No Start On Batteries
+Run As User:                          Administrator
+Delete Task If Not Rescheduled:       Disabled
+Stop Task If Runs X Hours and X Mins: 72:00:00
+Schedule:                             Scheduling data is not available in this format.
+Schedule Type:                        Daily 
+Start Time:                           6:43:00
+Start Date:                           2026/9/14
+End Date:                             N/A
+Days:                                 Every 1 day(s)
+Months:                               N/A
+Repeat: Every:                        Disabled
+Repeat: Until: Time:                  Disabled
+Repeat: Until: Duration:              Disabled
+Repeat: Stop If Still Running:        Disabled
+

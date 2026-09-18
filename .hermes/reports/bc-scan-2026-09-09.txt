@@ -1,0 +1,466 @@
+﻿=== §0.0 最高规则 名片禁令兜底扫描 (check-bc-ban.mjs) ===
+扫描文本文件: 454 个 (范围: src/ + public/ + 根配置; 豁免: .bak / gsc / 根目录.md)
+
+[i] 允许形态行 (redirect 源行 / bc→greeting 承接映射 / 禁区声明, 仅记录 40 处, 不阻断):
+  src\components\category\CategorySharpHooks.tsx:238: // 2026-07-19 user 拍板: 推荐位撤名片 → 贺卡 (greeting cards, 美国站情绪价值品类)
+  src\components\quotation-widget.tsx:38: 'business-card': 'Greeting Cards', // BC-BAN §0.0
+  src\data\category-seo-content.ts:2543: 'business-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード印刷' },
+  src\lib\h1-builder.ts:81: 'business-cards': ['咭片', '印刷'],  // §11 禁区，仅作 fallback（不应触发）
+  src\lib\seo.ts:593: // 2026-08-17 K3 §11 业务子类目豁免: 咭片/名片 归并到 greeting-cards
+  src\lib\seo.ts:602: en: 'greeting card printing,custom greeting cards,birthday card printing,thank you cards,holiday cards,3D pop up card,custom card printing,FSC certified card stock,foil stamped greeting cards,event in
+  src\middleware.ts:97: // === Business Cards → Greeting Cards (v3.2 §11 战略修正, 2026-08-18) ===
+  src\middleware.ts:100: 'premium-business-cards': '/product/premium-greeting-cards/',
+  src\middleware.ts:101: 'thick-business-cards-400g': '/product/thick-greeting-cards-400g/',
+  src\middleware.ts:102: 'foil-business-cards': '/product/foil-greeting-cards/',
+  src\middleware.ts:103: 'spot-uv-business-cards': '/product/spot-uv-greeting-cards/',
+  src\middleware.ts:104: 'matte-business-cards': '/product/matte-greeting-cards/',
+  src\middleware.ts:107: 'same-day-business-cards': '/category/greeting-cards/',
+  src\middleware.ts:108: 'eco-business-cards': '/category/greeting-cards/',
+  public\llms.txt:27: - **🚫 禁区**: business cards / 名片 / 咭片 (不属于 ZprintPro 主营业务, 不提供)
+  public\llms.txt:100: A: 5 大主营类目 (P0): 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤. P1 辅助: posters / books / educational / menus / red-packets / calendars. 禁区: business cards / 名片 / 咭片 (不提供).
+  public\llms.txt:109: A: 不提供. 名片 (business cards / 名片 / 咭片) 不属于 ZprintPro 主营业务. 请联系专业名片印厂.
+  next.config.js:127: // buying guide 旧 slug (business-card-buying-guide → greeting-card-buying-guide) 也走 next.config.js
+  next.config.js:131: ['premium-business-cards', 'premium-greeting-cards'],
+  next.config.js:132: ['thick-business-cards-400g', 'thick-greeting-cards-400g'],
+  next.config.js:133: ['foil-business-cards', 'foil-greeting-cards'],
+  next.config.js:134: ['spot-uv-business-cards', 'spot-uv-greeting-cards'],
+  next.config.js:135: ['matte-business-cards', 'matte-greeting-cards'],
+  next.config.js:138: ['business-card-buying-guide', 'greeting-card-buying-guide'], // BC-BAN §0.0: BC traffic -> greeting (9/8)
+  next.config.js:160: source: `/${locale}/product/business-cards`,
+  next.config.js:165: source: `/${locale}/product/business-cards/`,
+  next.config.js:170: // 类目路径 /category/business-cards/ → /category/greeting-cards/ (3 locale)
+  next.config.js:173: source: `/${locale}/category/business-cards`,
+  next.config.js:178: source: `/${locale}/category/business-cards/`,
+  next.config.js:183: // 2026-09-08 BC-BAN §0.0: plural /products/business-cards legacy path -> greeting category (3 locale)
+  next.config.js:186: source: `/${locale}/products/business-cards`,
+  next.config.js:191: source: `/${locale}/products/business-cards/`,
+  next.config.js:196: // buying guide /blog/business-card-buying-guide/ → /blog/greeting-card-buying-guide/ (3 locale)
+  next.config.js:199: source: `/${locale}/blog/business-card-buying-guide`,
+  next.config.js:204: source: `/${locale}/blog/business-card-buying-guide/`,
+  next.config.js:214: source: `/${locale}/business-cards`,
+  next.config.js:219: source: `/${locale}/business-cards/`,
+  next.config.js:259: ['same-day-business-cards', 'greeting-cards'],
+  next.config.js:260: ['eco-business-cards', 'greeting-cards'],
+  next.config.js:406: ['eco-business-cards', 'greeting-cards'],
+
+[x] 阻断命中 418 处 (名片词进入活数据, 先清再发 per §0.0.1):
+  src\app\api\search\route.ts:20: // 2026-06-08: 用 searchAll 统一入口 — 同时支持 简繁互通 + 业务别名 (贴纸/纸卡/名刺)
+  src\app\[locale]\case-studies\page.tsx:168: result: 'Business card retention up 60%, catalog highly praised at industry events',
+  src\components\category\CategoryProductCard.tsx:20: 'business-cards': { icon: CreditCard, bgColor: 'bg-blue-50', iconColor: 'text-blue-500' },
+  src\components\category\CategorySharpHooks.tsx:237: 'business-cards': [
+  src\components\category\CategorySidebar.tsx:22: 'business-cards': CreditCard,
+  src\components\home\HotProducts.tsx:85: 'business-cards': <CreditCard className="w-4 h-4" />,
+  src\components\product\ProductCard.tsx:42: 'business-cards': { icon: CreditCard, gradient: 'from-blue-500/15 to-indigo-600/15', iconColor: 'text-blue-500' },
+  src\components\ProductCard.tsx:22: 'business-cards': { icon: CreditCard, gradient: 'from-blue-500/15 to-indigo-600/15', iconColor: 'text-blue-500' },
+  src\components\ProductTabs.tsx:26: 'business-cards': {
+  src\components\ProductTabs.tsx:170: 'business-cards': ['zh-hk,高品質四色印刷,多種紙張可選,即日交貨服務,免費設計諮詢'.split(','), 'en,High-quality full-color printing,Multiple paper options,Same-day delivery,Free design consultation'.split(','), 'ja,高品質4色印刷,複数の紙
+  src\components\ProductTabs.tsx:197: 'business-cards': ['zh-hk,商務會議,品牌推廣,個人形象,公司介紹'.split(','), 'en,Business meetings,Brand promotion,Personal branding,Company introduction'.split(','), 'ja,ビジネスミーティング,ブランドプロモーション,個人ブランディング,会社紹介'.split(',
+  src\components\quotation-widget.tsx:30: 'business-card': '賀卡', // BC-BAN §0.0: legacy product-type key relabeled
+  src\components\quotation-widget.tsx:46: 'business-card': 'グリーティングカード', // BC-BAN §0.0
+  src\data\blog-posts.ts:83: const bgBusinessCard: BlogPostMeta = {
+  src\data\blog-posts.ts:274: const lpBusinessCardDesign: BlogPostMeta = {
+  src\data\blog-posts.ts:1796: bgBusinessCard,
+  src\data\blog-posts.ts:1808: lpBusinessCardDesign,
+  src\data\category-seo-content.ts:405: // 2. BUSINESS CARDS — 卡片印刷
+  src\data\category-seo-content.ts:3924: // 内容设计依据：AGENTS.md §13 P2 长尾类目 + §11 永不写 business-cards 约束
+  src\data\search-helpers.ts:31: // 例: 用户搜 "贴纸" → 系统视同 "纸卡" (HK) / "名刺" (JP)
+  src\data\search-helpers.ts:33: // 业务卡 (HK: 纸卡 / CN: 贴纸 / JP: 名刺) — 全部互通
+  src\data\search-helpers.ts:36: { primary: '卡片', aliases: ['名片', '咭片', '名刺', '名卡', 'card', 'cards', 'sticker'] },
+  src\lib\h1-builder.ts:98: 'business-cards': '咭片',
+  src\lib\h1-builder.ts:189: 'business-cards': 'No Minimum',
+  src\lib\h1-builder.ts:230: 'business-cards': '100枚から',
+  src\lib\pricing.ts:640: 'business-cards': { en: 2.3, ja: 2.3 }, // 名片：保持原有，不调整
+  src\lib\pricing.ts:779: 'business-card': 200,
+  src\lib\quote-engine\engine.ts:26: import { businessCardsFormulaV2 } from './formulas/business-cards';
+  src\lib\quote-engine\engine.ts:36: 'business-cards': businessCardsFormulaV2, // v2 (Phase 2 — 印刷大脑版)
+  src\lib\quote-engine\formulas\business-cards.ts:8: * - 拼版：85×55mm 名片，A3+ 大版 329×483mm，单版可排 28 张
+  src\lib\quote-engine\formulas\business-cards.ts:28: interface BusinessCardConfig {
+  src\lib\quote-engine\formulas\business-cards.ts:39: * 旧: 硬编码 90×54mm, US/AU/UK 客户收到的名片塞不进当地卡夹
+  src\lib\quote-engine\formulas\business-cards.ts:53: const DEFAULT_CONFIG: BusinessCardConfig = {
+  src\lib\quote-engine\formulas\business-cards.ts:61: export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { market?: Market }): FormulaResult => {
+  src\lib\quote-engine\formulas\business-cards.ts:195: slug: 'business-cards',
+  src\lib\quote-engine\formulas\business-cards.ts:196: name: 'Premium Business Cards',
+  src\lib\quote-engine\formulas\business-cards.ts:197: description: 'Premium 400gsm business cards. Heidelberg 4-color offset + HP Indigo. Printed in 24 hours, shipped to 50+ countries.',
+  src\lib\quote-engine\formulas\business-cards.ts:206: formula: businessCardsFormulaV2,
+  src\lib\quote-engine\__tests__\business-cards.pricing.test.ts:8: import { businessCardsFormulaV2 } from '../formulas/business-cards';
+  src\lib\quote-engine\__tests__\business-cards.pricing.test.ts:20: return businessCardsFormulaV2({ ...baseCtx, market: m });
+  src\lib\quote-engine\__tests__\debug-double.ts:1: import { businessCardsFormulaV2 } from '../formulas/business-cards';
+  src\lib\quote-engine\__tests__\debug-double.ts:4: const r = businessCardsFormulaV2({
+  src\lib\quote-engine\__tests__\debug-pricing.ts:2: import { businessCardsFormulaV2 } from '../formulas/business-cards';
+  src\lib\quote-engine\__tests__\debug-pricing.ts:5: const r = businessCardsFormulaV2({
+  src\lib\quote-engine\__tests__\e2e-verification.ts:5: import { businessCardsFormulaV2 } from '../formulas/business-cards';
+  src\lib\quote-engine\__tests__\e2e-verification.ts:16: const r = businessCardsFormulaV2({
+  src\lib\quote-engine\__tests__\e2e-verification.ts:56: const hk = businessCardsFormulaV2({ quantity: 1000, size: { w: 90, h: 54, unit: 'mm' as const }, material: '400g_gloss_art', finishes: [], deadline: 'standard' as const, market: MARKETS.HK });
+  src\lib\quote-engine\__tests__\e2e-verification.ts:57: const us = businessCardsFormulaV2({ quantity: 1000, size: { w: 89, h: 51, unit: 'mm' as const }, material: '400g_gloss_art', finishes: [], deadline: 'standard' as const, market: MARKETS.US });
+  src\lib\quote-engine\__tests__\e2e-verification.ts:58: const gb = businessCardsFormulaV2({ quantity: 1000, size: { w: 85, h: 55, unit: 'mm' as const }, material: '400g_gloss_art', finishes: [], deadline: 'standard' as const, market: MARKETS.GB });
+  src\lib\quote-engine\__tests__\e2e-verification.ts:59: const jp = businessCardsFormulaV2({ quantity: 1000, size: { w: 91, h: 55, unit: 'mm' as const }, material: '400g_gloss_art', finishes: [], deadline: 'standard' as const, market: MARKETS.JP });
+  src\lib\quote-engine\__tests__\search.regression.test.ts:7: //  - 业务别名 (名片/咭片/名刺, フライヤー/チラシ)
+  src\lib\quote-engine\__tests__\search.regression.test.ts:8: //  - 英文别名 (flyers, business card, sticker)
+  src\lib\quote-engine\__tests__\search.regression.test.ts:14: { q: '名片', minP: 5, desc: 'CN 名片 → 咭片 alias' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:15: { q: '咭片', minP: 5, desc: 'HK 咭片 direct' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:16: { q: '名刺', minP: 5, desc: 'JP 名刺 → alias' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:17: { q: 'business card', minP: 5, desc: 'EN business card' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:58: { q: '名片', expectedCat: 'business-cards' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:59: { q: '咭片', expectedCat: 'business-cards' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:60: { q: '名刺', expectedCat: 'business-cards' },
+  src\lib\quote-engine\__tests__\search.regression.test.ts:62: { q: 'business card', expectedCat: 'business-cards' },
+  src\middleware.ts:98: // 咭片/名片 → 归并到贺卡 (K3 8/17 05:32 拍板 + 9/8 §0.0 终裁)
+  src\types\quotation.ts:5: export type ProductType = 'business-card' | 'sticker' | 'flyer' | 'paper-bag' | 'box' | 'poster';
+  public\llms-ja.txt:25: - 咭片印刷 / Business Cards / 名刺印刷 -- 6 products
+  public\llms-ja.txt:100: ### 咭片印刷 / Business Cards (6 products)
+  public\llms-ja.txt:104: | 高級商務咭片 | premium-business-cards | Premium Business Cards | 高級名刺 | 100 | CNY 1 |
+  public\llms-ja.txt:105: | 厚身咭片(400g) | thick-business-cards-400g | Thick Business Cards (400g) | 厚紙名刺(400g) | 100 | CNY 1.2 |
+  public\llms-ja.txt:106: | 燙金/燙銀咭片 | foil-business-cards | Foil Stamped Business Cards | 箔押し名刺 | 100 | CNY 1.8 |
+  public\llms-ja.txt:107: | UV局部光油咭片 | spot-uv-business-cards | Spot UV Business Cards | 局部UV名刺 | 100 | CNY 1.4 |
+  public\llms-ja.txt:108: | 啞膠咭片 | matte-business-cards | Matte Laminated Cards | マット名刺 | 100 | CNY 1.1 |
+  public\llms-ja.txt:109: | 圓角咭片 | rounded-corner-cards | Rounded Corner Cards | 丸角名刺 | 100 | CNY 1 |
+  public\llms-zh-hk.txt:25: - 咭片印刷 / Business Cards / 名刺印刷 -- 6 products
+  public\llms-zh-hk.txt:100: ### 咭片印刷 / Business Cards (6 products)
+  public\llms-zh-hk.txt:104: | 高級商務咭片 | premium-business-cards | Premium Business Cards | 高級名刺 | 100 | CNY 1 |
+  public\llms-zh-hk.txt:105: | 厚身咭片(400g) | thick-business-cards-400g | Thick Business Cards (400g) | 厚紙名刺(400g) | 100 | CNY 1.2 |
+  public\llms-zh-hk.txt:106: | 燙金/燙銀咭片 | foil-business-cards | Foil Stamped Business Cards | 箔押し名刺 | 100 | CNY 1.8 |
+  public\llms-zh-hk.txt:107: | UV局部光油咭片 | spot-uv-business-cards | Spot UV Business Cards | 局部UV名刺 | 100 | CNY 1.4 |
+  public\llms-zh-hk.txt:108: | 啞膠咭片 | matte-business-cards | Matte Laminated Cards | マット名刺 | 100 | CNY 1.1 |
+  public\llms-zh-hk.txt:109: | 圓角咭片 | rounded-corner-cards | Rounded Corner Cards | 丸角名刺 | 100 | CNY 1 |
+  public\llms.txt:108: ### Q5: ZprintPro 是否提供名片印刷?
+  public\sitemap_check_sample.txt:1: <loc>https://zprintpro.com/zh-hk/quote/?product=premium-business-cards</loc>
+  public\sitemap_check_sample.txt:2: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:3: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:4: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:5: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:6: <loc>https://zprintpro.com/en/quote/?product=premium-business-cards</loc>
+  public\sitemap_check_sample.txt:7: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:8: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:9: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:10: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:11: <loc>https://zprintpro.com/ja/quote/?product=premium-business-cards</loc>
+  public\sitemap_check_sample.txt:12: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:13: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:14: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:15: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=premium-business-cards" />
+  public\sitemap_check_sample.txt:16: <loc>https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g</loc>
+  public\sitemap_check_sample.txt:17: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:18: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:19: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:20: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:21: <loc>https://zprintpro.com/en/quote/?product=thick-business-cards-400g</loc>
+  public\sitemap_check_sample.txt:22: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:23: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:24: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:25: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:26: <loc>https://zprintpro.com/ja/quote/?product=thick-business-cards-400g</loc>
+  public\sitemap_check_sample.txt:27: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:28: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:29: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:30: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=thick-business-cards-400g" />
+  public\sitemap_check_sample.txt:31: <loc>https://zprintpro.com/zh-hk/quote/?product=foil-business-cards</loc>
+  public\sitemap_check_sample.txt:32: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:33: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:34: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:35: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:36: <loc>https://zprintpro.com/en/quote/?product=foil-business-cards</loc>
+  public\sitemap_check_sample.txt:37: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:38: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:39: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:40: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:41: <loc>https://zprintpro.com/ja/quote/?product=foil-business-cards</loc>
+  public\sitemap_check_sample.txt:42: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:43: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:44: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:45: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=foil-business-cards" />
+  public\sitemap_check_sample.txt:46: <loc>https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards</loc>
+  public\sitemap_check_sample.txt:47: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:48: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:49: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:50: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:51: <loc>https://zprintpro.com/en/quote/?product=spot-uv-business-cards</loc>
+  public\sitemap_check_sample.txt:52: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:53: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:54: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:55: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:56: <loc>https://zprintpro.com/ja/quote/?product=spot-uv-business-cards</loc>
+  public\sitemap_check_sample.txt:57: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:58: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:59: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:60: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=spot-uv-business-cards" />
+  public\sitemap_check_sample.txt:61: <loc>https://zprintpro.com/zh-hk/quote/?product=matte-business-cards</loc>
+  public\sitemap_check_sample.txt:62: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:63: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:64: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:65: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:66: <loc>https://zprintpro.com/en/quote/?product=matte-business-cards</loc>
+  public\sitemap_check_sample.txt:67: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:68: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:69: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:70: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:71: <loc>https://zprintpro.com/ja/quote/?product=matte-business-cards</loc>
+  public\sitemap_check_sample.txt:72: <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:73: <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:74: <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/quote/?product=matte-business-cards" />
+  public\sitemap_check_sample.txt:75: <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/quote/?product=matte-business-cards" />
+  auto-rename-retry.js:84: } else if (/¥|円|人気|無料|名刺|ステッカー|デザイン/.test(text)) {
+  image-audit-report.json:273: "slug": "business-cards",
+  image-audit-report.json:275: "filename": "hero-business-cards-zh-hk.webp",
+  image-audit-report.json:279: "slug": "business-cards",
+  image-audit-report.json:281: "filename": "hero-business-cards-en.webp",
+  image-audit-report.json:285: "slug": "business-cards",
+  image-audit-report.json:287: "filename": "hero-business-cards-ja.webp",
+  image-audit-report.json:461: "topic": "business-card-design",
+  image-audit-report.json:463: "path": "public\\images\\blog\\zh-hk\\business-card-design.webp",
+  image-audit-report.json:467: "topic": "business-card-design",
+  image-audit-report.json:469: "path": "public\\images\\blog\\en\\business-card-design.webp",
+  image-audit-report.json:473: "topic": "business-card-design",
+  image-audit-report.json:475: "path": "public\\images\\blog\\ja\\business-card-design.webp",
+  image-generation-tasks-temp.json:307: "product": "business-cards",
+  image-generation-tasks-temp.json:309: "filename": "business-cards-en-card.webp",
+  image-generation-tasks-temp.json:312: "alt": "business-cards English product card"
+  image-generation-tasks-temp.json:437: "product": "premium-business-cards",
+  image-generation-tasks-temp.json:438: "reason":"missing"filename": "premium-business-cards-ja-card.webp",
+  image-generation-tasks-temp.json:441: "alt": "premium-business-cards Japanese product card"
+  image-generation-tasks-temp.json:447: "product": "thick-business-cards-400g",
+  image-generation-tasks-temp.json:448: "reason":"missing"filename": "thick-business-cards-400g-ja-card.webp",
+  image-generation-tasks-temp.json:451: "alt": "thick-business-cards-400g Japanese product card"
+  image-generation-tasks-v2.json:126: "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting
+  image-generation-tasks-v2.json:138: "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting
+  image-generation-tasks-v2.json:150: "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting
+  image-generation-tasks-v2.json:270: "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealist
+  image-generation-tasks-v2.json:282: "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealist
+  image-generation-tasks-v2.json:294: "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealist
+  image-generation-tasks.json:115: "prompt": "Complete brand identity kit laid out on desk, business cards, letterhead, envelopes, cohesive design, Chinese aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO 
+  image-generation-tasks.json:126: "prompt": "Complete brand identity kit laid out on desk, business cards, letterhead, envelopes, cohesive design, English aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO 
+  image-generation-tasks.json:137: "prompt": "Complete brand identity kit laid out on desk, business cards, letterhead, envelopes, cohesive design, Japanese aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO
+  image-generation-tasks.json:331: "product": "business-cards",
+  image-generation-tasks.json:333: "filename": "business-cards-en-card.webp",
+  image-generation-tasks.json:335: "prompt": "Professional e-commerce product photography, business-cards displayed on clean wooden table with soft natural lighting, top-right red badge showing price in English, subtle shadow, high-end
+  image-generation-tasks.json:336: "alt": "business-cards English product card"
+  image-generation-tasks.json:463: "product": "premium-business-cards",
+  image-generation-tasks.json:465: "filename": "premium-business-cards-ja-card.webp",
+  image-generation-tasks.json:467: "prompt": "Professional e-commerce product photography, premium-business-cards displayed on clean wooden table with soft natural lighting, top-right red badge showing price in Japanese, subtle shadow,
+  image-generation-tasks.json:468: "alt": "premium-business-cards Japanese product card"
+  image-generation-tasks.json:474: "product": "thick-business-cards-400g",
+  image-generation-tasks.json:476: "filename": "thick-business-cards-400g-ja-card.webp",
+  image-generation-tasks.json:478: "prompt": "Professional e-commerce product photography, thick-business-cards-400g displayed on clean wooden table with soft natural lighting, top-right red badge showing price in Japanese, subtle shad
+  image-generation-tasks.json:479: "alt": "thick-business-cards-400g Japanese product card"
+  lighthouse-zh.json:302: "url": "http://localhost:3456/category/business-cards/index.txt?_rsc=1pk8g",
+  lighthouse-zh.json:1238: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  lighthouse-zh.json:1289: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:1476: "url": "http://localhost:3456/category/business-cards/index.txt?_rsc=1pk8g",
+  lighthouse-zh.json:3214: "snippet": "<a class=\"relative right-[-5px] inline-flex items-center gap-1 text-[#2873F5] hover:…\" href=\"/category/business-cards/\">",
+  lighthouse-zh.json:3236: "nodeLabel": "熱門印刷產品\n\n專業品質，價格透明，快速交貨\n\n查看全部產品\n熱銷\n高級商務咭片\n\n採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠…"
+  lighthouse-zh.json:3297: "nodeLabel": "熱銷\n高級商務咭片\n\n採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處理，觸感細膩，色彩鮮豔持久。\n\nHK$150-300/1…"
+  lighthouse-zh.json:3317: "snippet": "<a class=\"mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#2873F5] ho…\" href=\"/product/premium-business-cards/\">",
+  lighthouse-zh.json:3518: "nodeLabel": "厚身咭片(400g)\n\n400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。\n\nHK$250-450/100張\n立即訂購"
+  lighthouse-zh.json:3538: "snippet": "<a class=\"mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#2873F5] ho…\" href=\"/product/thick-business-cards-400g/\">",
+  lighthouse-zh.json:4075: "nodeLabel": "設計靈感\n2025-03-10\n企業品牌物料清單：從名片到展架的全套印刷方案\n\n無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有…"
+  lighthouse-zh.json:5264: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:5271: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  lighthouse-zh.json:5438: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:5442: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  lighthouse-zh.json:5830: "snippet": "<img alt=\"香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transfor
+  lighthouse-zh.json:5831: "nodeLabel": "香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云"
+  lighthouse-zh.json:5833: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:5854: "snippet": "<img alt=\"香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform du
+  lighthouse-zh.json:5855: "nodeLabel": "香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印云"
+  lighthouse-zh.json:5857: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  lighthouse-zh.json:6928: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:6934: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  lighthouse-zh.json:7414: "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
+  lighthouse-zh.json:7428: "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
+  next.config.js:125: // 2026-07-27 v22: 名片 → 賀卡 改造 (K3 拍板方案 b, §11 憲法長期衝突清理)
+  next.config.js:156: // 2026-09-8 紧急 404 修复: 裸 /product/business-cards (旧通用产品页, 无 1:1 改名对应)
+  next.config.js:460: // #3 /zh-hk/zh-hk/product/eco-business-cards/ → /zh-hk/category/packaging/
+  next.config.js:461: ['/zh-hk/zh-hk/product/eco-business-cards', '/zh-hk/category/packaging/'],
+  rename-by-time-report.json:4: "target": "zprintpro-business-cards-thick-business-cards-400g-ja-3.png",
+  rename-by-time-report.json:5: "nearest": "zprintpro-business-cards-thick-business-cards-400g-ja.png",
+  rename-by-time-report.json:11: "target": "zprintpro-business-cards-thick-business-cards-400g-ja-4.png",
+  rename-by-time-report.json:12: "nearest": "zprintpro-business-cards-thick-business-cards-400g-ja-2.png",
+  rename-by-time-report.json:18: "target": "zprintpro-business-cards-foil-business-cards-en-5.png",
+  rename-by-time-report.json:19: "nearest": "zprintpro-business-cards-foil-business-cards-en.png",
+  rename-by-time-report.json:25: "target": "zprintpro-business-cards-foil-business-cards-en-6.png",
+  rename-by-time-report.json:26: "nearest": "zprintpro-business-cards-foil-business-cards-en.png",
+  rename-by-time-report.json:32: "target": "zprintpro-business-cards-foil-business-cards-en-7.png",
+  rename-by-time-report.json:33: "nearest": "zprintpro-business-cards-foil-business-cards-en.png",
+  rename-by-time-report.json:39: "target": "zprintpro-business-cards-foil-business-cards-en-8.png",
+  rename-by-time-report.json:40: "nearest": "zprintpro-business-cards-foil-business-cards-en.png",
+  rename-by-time-report.json:46: "target": "zprintpro-business-cards-foil-business-cards-en-9.png",
+  rename-by-time-report.json:47: "nearest": "zprintpro-business-cards-foil-business-cards-en.png",
+  rename-by-time-report.json:53: "target": "zprintpro-business-cards-foil-business-cards-ja-2.png",
+  rename-by-time-report.json:54: "nearest": "zprintpro-business-cards-foil-business-cards-ja.png",
+  rename-by-time-report.json:60: "target": "zprintpro-business-cards-foil-business-cards-ja-3.png",
+  rename-by-time-report.json:61: "nearest": "zprintpro-business-cards-foil-business-cards-ja.png",
+  rename-by-time-report.json:67: "target": "zprintpro-business-cards-foil-business-cards-ja-4.png",
+  rename-by-time-report.json:68: "nearest": "zprintpro-business-cards-foil-business-cards-ja.png",
+  rename-by-time-report.json:74: "target": "zprintpro-business-cards-spot-uv-business-cards-en-5.png",
+  rename-by-time-report.json:75: "nearest": "zprintpro-business-cards-spot-uv-business-cards-en.png",
+  rename-by-time-report.json:81: "target": "zprintpro-business-cards-spot-uv-business-cards-en-6.png",
+  rename-by-time-report.json:82: "nearest": "zprintpro-business-cards-spot-uv-business-cards-en.png",
+  rename-by-time-report.json:88: "target": "zprintpro-business-cards-spot-uv-business-cards-en-7.png",
+  rename-by-time-report.json:89: "nearest": "zprintpro-business-cards-spot-uv-business-cards-en.png",
+  rename-by-time-report.json:95: "target": "zprintpro-business-cards-spot-uv-business-cards-en-8.png",
+  rename-by-time-report.json:96: "nearest": "zprintpro-business-cards-spot-uv-business-cards-en.png",
+  rename-by-time-report.json:102: "target": "zprintpro-business-cards-premium-business-cards-ja-11.png",
+  rename-by-time-report.json:103: "nearest": "zprintpro-business-cards-premium-business-cards-ja.png",
+  rename-by-time-report.json:109: "target": "zprintpro-business-cards-premium-business-cards-ja-12.png",
+  rename-by-time-report.json:110: "nearest": "zprintpro-business-cards-premium-business-cards-ja.png",
+  rename-by-time-report.json:116: "target": "zprintpro-business-cards-premium-business-cards-ja-13.png",
+  rename-by-time-report.json:117: "nearest": "zprintpro-business-cards-premium-business-cards-ja.png",
+  rename-by-time-report.json:123: "target": "zprintpro-business-cards-matte-business-cards-en-5.png",
+  rename-by-time-report.json:124: "nearest": "zprintpro-business-cards-matte-business-cards-en.png",
+  rename-by-time-report.json:130: "target": "zprintpro-business-cards-matte-business-cards-en-6.png",
+  rename-by-time-report.json:131: "nearest": "zprintpro-business-cards-matte-business-cards-en.png",
+  rename-by-time-report.json:137: "target": "zprintpro-business-cards-matte-business-cards-en-7.png",
+  rename-by-time-report.json:138: "nearest": "zprintpro-business-cards-matte-business-cards-en.png",
+  rename-by-time-report.json:144: "target": "zprintpro-business-cards-matte-business-cards-ja-3.png",
+  rename-by-time-report.json:145: "nearest": "zprintpro-business-cards-matte-business-cards-ja.png",
+  rename-by-time-report.json:151: "target": "zprintpro-business-cards-matte-business-cards-ja-4.png",
+  rename-by-time-report.json:152: "nearest": "zprintpro-business-cards-matte-business-cards-ja.png",
+  rename-by-time-report.json:158: "target": "zprintpro-business-cards-matte-business-cards-ja-5.png",
+  rename-by-time-report.json:159: "nearest": "zprintpro-business-cards-matte-business-cards-ja-2.png",
+  rename-by-time-report.json:165: "target": "zprintpro-business-cards-matte-business-cards-ja-6.png",
+  rename-by-time-report.json:166: "nearest": "zprintpro-business-cards-matte-business-cards-ja-2.png",
+  rename-by-time-report.json:172: "target": "zprintpro-business-cards-matte-business-cards-ja-7.png",
+  rename-by-time-report.json:173: "nearest": "zprintpro-business-cards-matte-business-cards-ja-2.png",
+  rename-by-time-report.json:179: "target": "zprintpro-business-cards-matte-business-cards-ja-8.png",
+  rename-by-time-report.json:180: "nearest": "zprintpro-business-cards-matte-business-cards-ja-2.png",
+  rename-by-time-report.json:186: "target": "zprintpro-business-cards-premium-business-cards-ja-14.png",
+  rename-by-time-report.json:187: "nearest": "zprintpro-business-cards-premium-business-cards-ja-9.png",
+  rename-by-time-report.json:193: "target": "zprintpro-business-cards-premium-business-cards-ja-15.png",
+  rename-by-time-report.json:194: "nearest": "zprintpro-business-cards-premium-business-cards-ja-10.png",
+  rename-by-time-report.json:200: "target": "zprintpro-business-cards-premium-business-cards-ja-16.png",
+  rename-by-time-report.json:201: "nearest": "zprintpro-business-cards-premium-business-cards-ja-10.png",
+  rename-by-time-report.json:235: "target": "zprintpro-business-cards-thick-business-cards-400g-en-5.png",
+  rename-by-time-report.json:236: "nearest": "zprintpro-business-cards-thick-business-cards-400g-en.png",
+  rename-by-time-report.json:242: "target": "zprintpro-business-cards-thick-business-cards-400g-en-6.png",
+  rename-by-time-report.json:243: "nearest": "zprintpro-business-cards-thick-business-cards-400g-en.png",
+  rename-by-time-report.json:249: "target": "zprintpro-business-cards-thick-business-cards-400g-en-7.png",
+  rename-by-time-report.json:250: "nearest": "zprintpro-business-cards-thick-business-cards-400g-en.png",
+  rename-by-time-report.json:410: "target": "zprintpro-business-cards-matte-business-cards-en-8.png",
+  rename-by-time-report.json:411: "nearest": "zprintpro-business-cards-matte-business-cards-en-4.png",
+  rename-report.json:10: "target": "zprintpro-business-cards-thick-business-cards-400g-ja.png",
+  rename-report.json:13: "slug": "thick-business-cards-400g",
+  rename-report.json:15: "seo": "zprintpro-business-cards-thick-business-cards-400g-ja.jpg",
+  rename-report.json:178: "target": "zprintpro-business-cards-premium-business-cards-ja.png",
+  rename-report.json:181: "slug": "premium-business-cards",
+  rename-report.json:183: "seo": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  rename-report.json:208: "target": "zprintpro-business-cards-matte-business-cards-en.png",
+  rename-report.json:211: "slug": "matte-business-cards",
+  rename-report.json:213: "seo": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  rename-report.json:220: "target": "zprintpro-business-cards-matte-business-cards-en-2.png",
+  rename-report.json:223: "slug": "matte-business-cards",
+  rename-report.json:225: "seo": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  rename-report.json:232: "target": "zprintpro-business-cards-matte-business-cards-en-3.png",
+  rename-report.json:235: "slug": "matte-business-cards",
+  rename-report.json:237: "seo": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  rename-report.json:250: "target": "zprintpro-business-cards-matte-business-cards-ja.png",
+  rename-report.json:253: "slug": "matte-business-cards",
+  rename-report.json:255: "seo": "zprintpro-business-cards-matte-business-cards-ja.jpg",
+  rename-report.json:304: "target": "zprintpro-business-cards-rounded-corner-cards-en.png",
+  rename-report.json:309: "seo": "zprintpro-business-cards-rounded-corner-cards-en.jpg",
+  rename-report.json:316: "target": "zprintpro-business-cards-rounded-corner-cards-en-2.png",
+  rename-report.json:321: "seo": "zprintpro-business-cards-rounded-corner-cards-en.jpg",
+  rename-report.json:346: "target": "zprintpro-business-cards-premium-business-cards-ja-5.png",
+  rename-report.json:349: "slug": "premium-business-cards",
+  rename-report.json:351: "seo": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  rename-report.json:418: "target": "zprintpro-business-cards-premium-business-cards-ja-6.png",
+  rename-report.json:421: "slug": "premium-business-cards",
+  rename-report.json:423: "seo": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  rename-report.json:940: "target": "zprintpro-business-cards-matte-business-cards-en-4.png",
+  rename-report.json:943: "slug": "matte-business-cards",
+  rename-report.json:945: "seo": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  rename-report.json:1126: "target": "zprintpro-business-cards-premium-business-cards-ja-7.png",
+  rename-report.json:1129: "slug": "premium-business-cards",
+  rename-report.json:1131: "seo": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  rename-report.json:1138: "target": "zprintpro-business-cards-premium-business-cards-ja-8.png",
+  rename-report.json:1141: "slug": "premium-business-cards",
+  rename-report.json:1143: "seo": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  seedream-progress.json:5: "filename": "zprintpro-business-cards-premium-business-cards-zh-hk.jpg",
+  seedream-progress.json:10: "filename": "zprintpro-business-cards-premium-business-cards-en.jpg",
+  seedream-progress.json:15: "filename": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  seedream-progress.json:20: "filename": "zprintpro-business-cards-thick-business-cards-400g-zh-hk.jpg",
+  seedream-progress.json:25: "filename": "zprintpro-business-cards-thick-business-cards-400g-en.jpg",
+  seedream-progress.json:30: "filename": "zprintpro-business-cards-thick-business-cards-400g-ja.jpg",
+  seedream-progress.json:35: "filename": "zprintpro-business-cards-foil-business-cards-zh-hk.jpg",
+  seedream-progress.json:40: "filename": "zprintpro-business-cards-foil-business-cards-en.jpg",
+  seedream-progress.json:45: "filename": "zprintpro-business-cards-foil-business-cards-ja.jpg",
+  seedream-tasks.json:4: "slug": "premium-business-cards",
+  seedream-tasks.json:6: "filename": "zprintpro-business-cards-premium-business-cards-zh-hk.jpg",
+  seedream-tasks.json:7: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：高級商務咭片｜HK$100-180/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为有图
+  seedream-tasks.json:11: "slug": "premium-business-cards",
+  seedream-tasks.json:13: "filename": "zprintpro-business-cards-premium-business-cards-en.jpg",
+  seedream-tasks.json:14: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:18: "slug": "premium-business-cards",
+  seedream-tasks.json:20: "filename": "zprintpro-business-cards-premium-business-cards-ja.jpg",
+  seedream-tasks.json:21: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:25: "slug": "thick-business-cards-400g",
+  seedream-tasks.json:27: "filename": "zprintpro-business-cards-thick-business-cards-400g-zh-hk.jpg",
+  seedream-tasks.json:28: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：厚身咭片(400g)｜HK$120-220/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前
+  seedream-tasks.json:32: "slug": "thick-business-cards-400g",
+  seedream-tasks.json:34: "filename": "zprintpro-business-cards-thick-business-cards-400g-en.jpg",
+  seedream-tasks.json:35: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:39: "slug": "thick-business-cards-400g",
+  seedream-tasks.json:41: "filename": "zprintpro-business-cards-thick-business-cards-400g-ja.jpg",
+  seedream-tasks.json:42: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:46: "slug": "foil-business-cards",
+  seedream-tasks.json:48: "filename": "zprintpro-business-cards-foil-business-cards-zh-hk.jpg",
+  seedream-tasks.json:49: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：燙金/燙銀咭片｜HK$180-320/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为有
+  seedream-tasks.json:53: "slug": "foil-business-cards",
+  seedream-tasks.json:55: "filename": "zprintpro-business-cards-foil-business-cards-en.jpg",
+  seedream-tasks.json:56: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:60: "slug": "foil-business-cards",
+  seedream-tasks.json:62: "filename": "zprintpro-business-cards-foil-business-cards-ja.jpg",
+  seedream-tasks.json:63: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:67: "slug": "spot-uv-business-cards",
+  seedream-tasks.json:69: "filename": "zprintpro-business-cards-spot-uv-business-cards-zh-hk.jpg",
+  seedream-tasks.json:70: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：UV局部光油咭片｜HK$140-260/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为
+  seedream-tasks.json:74: "slug": "spot-uv-business-cards",
+  seedream-tasks.json:76: "filename": "zprintpro-business-cards-spot-uv-business-cards-en.jpg",
+  seedream-tasks.json:77: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:81: "slug": "spot-uv-business-cards",
+  seedream-tasks.json:83: "filename": "zprintpro-business-cards-spot-uv-business-cards-ja.jpg",
+  seedream-tasks.json:84: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:88: "slug": "matte-business-cards",
+  seedream-tasks.json:90: "filename": "zprintpro-business-cards-matte-business-cards-zh-hk.jpg",
+  seedream-tasks.json:91: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：啞膠咭片｜HK$110-190/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为有图案或
+  seedream-tasks.json:95: "slug": "matte-business-cards",
+  seedream-tasks.json:97: "filename": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  seedream-tasks.json:102: "slug": "matte-business-cards",
+  seedream-tasks.json:104: "filename": "zprintpro-business-cards-matte-business-cards-ja.jpg",
+  seedream-tasks.json:105: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  seedream-tasks.json:111: "filename": "zprintpro-business-cards-rounded-corner-cards-zh-hk.jpg",
+  seedream-tasks.json:112: "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：圓角咭片｜HK$100-170/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为有图案或
+  seedream-tasks.json:118: "filename": "zprintpro-business-cards-rounded-corner-cards-en.jpg",
+  seedream-tasks.json:125: "filename": "zprintpro-business-cards-rounded-corner-cards-ja.jpg",
+  seedream-tasks.json:126: "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, o
+  sku-list.json:4: "slug": "premium-business-cards",
+  sku-list.json:5: "altZh": "高級商務咭片 - 採用300g高級銅版紙，配合專業四色印刷，",
+  sku-list.json:6: "seoZh": "zprintpro-business-cards-premium-business-cards-zh-hk.jpg",
+  sku-list.json:7: "seoEn": "zprintpro-business-cards-premium-business-cards-en.jpg",
+  sku-list.json:8: "seoJa": "zprintpro-business-cards-premium-business-cards-ja.jpg"
+  sku-list.json:12: "slug": "thick-business-cards-400g",
+  sku-list.json:13: "altZh": "厚身咭片(400g) - 400g超厚紙質，厚實手感彰顯尊貴",
+  sku-list.json:14: "seoZh": "zprintpro-business-cards-thick-business-cards-400g-zh-hk.jpg",
+  sku-list.json:15: "seoEn": "zprintpro-business-cards-thick-business-cards-400g-en.jpg",
+  sku-list.json:16: "seoJa": "zprintpro-business-cards-thick-business-cards-400g-ja.jpg"
+  sku-list.json:20: "slug": "foil-business-cards",
+  sku-list.json:21: "altZh": "燙金/燙銀咭片 - 局部燙金或燙銀工藝，在光線下閃耀奪目，瞬",
+  sku-list.json:22: "seoZh": "zprintpro-business-cards-foil-business-cards-zh-hk.jpg",
+  sku-list.json:23: "seoEn": "zprintpro-business-cards-foil-business-cards-en.jpg",
+  sku-list.json:24: "seoJa": "zprintpro-business-cards-foil-business-cards-ja.jpg"
+  sku-list.json:28: "slug": "spot-uv-business-cards",
+  sku-list.json:29: "altZh": "UV局部光油咭片 - 局部UV光油工藝，讓Logo或圖案呈現",
+  sku-list.json:30: "seoZh": "zprintpro-business-cards-spot-uv-business-cards-zh-hk.jpg",
+  sku-list.json:31: "seoEn": "zprintpro-business-cards-spot-uv-business-cards-en.jpg",
+  sku-list.json:32: "seoJa": "zprintpro-business-cards-spot-uv-business-cards-ja.jpg"
+  sku-list.json:36: "slug": "matte-business-cards",
+  sku-list.json:37: "altZh": "啞膠咭片 - 啞膠表面處理，低調內斂的質感，不易留下指紋。適",
+  sku-list.json:38: "seoZh": "zprintpro-business-cards-matte-business-cards-zh-hk.jpg",
+  sku-list.json:39: "seoEn": "zprintpro-business-cards-matte-business-cards-en.jpg",
+  sku-list.json:40: "seoJa": "zprintpro-business-cards-matte-business-cards-ja.jpg"
+  sku-list.json:45: "altZh": "圓角咭片 - 圓角設計，柔和美觀且不易折損。展現與眾不同的品",
+  sku-list.json:46: "seoZh": "zprintpro-business-cards-rounded-corner-cards-zh-hk.jpg",
+  sku-list.json:47: "seoEn": "zprintpro-business-cards-rounded-corner-cards-en.jpg",
+  sku-list.json:48: "seoJa": "zprintpro-business-cards-rounded-corner-cards-ja.jpg"
+  _before-en.json:514: "content": "<p class=\"text-base text-[#1A56DB] font-medium mb-4\"><strong>Key takeaway:</strong> Catalog printing from a China supplier means factory-direct pricing at <strong>US$1.84-7.36 per book a
+  _before-en.json:614: "content": "<p>Need 200 C4 envelopes for a 9 AM contract meeting. ZprintPro's 30-second AI quote flow answers three pain points: fastest delivery, exact pri, cutoff time. Confirm by noon, ship same af
+
+[BLOCK] 退出码 1 — 阻断 push。处理: 清除名片词或改写为贺卡 greeting-cards 承接后重扫。

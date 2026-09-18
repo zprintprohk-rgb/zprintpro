@@ -1,0 +1,48 @@
+[200]  zh-hk/blog/wedding-invitation-pricing-guide/
+        <title>: wedding-invitation-pricing-guide
+        <h1>   : wedding-invitation-pricing-guide
+        desc   : ★ 缺失
+[200]  en/blog/wedding-invitation-pricing-guide/
+        <title>: wedding-invitation-pricing-guide
+        <h1>   : wedding-invitation-pricing-guide
+        desc   : ★ 缺失
+[200]  ja/blog/wedding-invitation-pricing-guide/
+        <title>: wedding-invitation-pricing-guide
+        <h1>   : wedding-invitation-pricing-guide
+        desc   : ★ 缺失
+[200]  zh-hk/blog/wedding-invitation-cost-guide/
+        <title>: wedding-invitation-cost-guide
+        <h1>   : wedding-invitation-cost-guide
+        desc   : ★ 缺失
+[200]  en/blog/wedding-invitation-cost-guide/
+        <title>: wedding-invitation-cost-guide
+        <h1>   : wedding-invitation-cost-guide
+        desc   : ★ 缺失
+[200]  ja/blog/wedding-invitation-cost-guide/
+        <title>: wedding-invitation-cost-guide
+        <h1>   : wedding-invitation-cost-guide
+        desc   : ★ 缺失
+[200]  zh-hk/blog/wedding-table-card-printing-guide/
+        <title>: wedding-table-card-printing-guide
+        <h1>   : wedding-table-card-printing-guide
+        desc   : ★ 缺失
+[200]  en/blog/wedding-table-card-printing-guide/
+        <title>: wedding-table-card-printing-guide
+        <h1>   : wedding-table-card-printing-guide
+        desc   : ★ 缺失
+[200]  ja/blog/wedding-table-card-printing-guide/
+        <title>: wedding-table-card-printing-guide
+        <h1>   : wedding-table-card-printing-guide
+        desc   : ★ 缺失
+[200]  en/blog/construction-material-sample-book-printing-guide/
+        <title>: Construction Material Sample Book Printing Guide | ZprintPro
+        <h1>   : Construction Material Sample Book Printing Guide | ZprintPro
+        desc   : [300] US construction material suppliers, interior designers, and building p
+[200]  en/blog/packaging-box-pricing-2026/
+        <title>: Packaging Box Printing Price 2026: How Much for | ZprintPro
+        <h1>   : Packaging Box Printing Price 2026: How Much for | ZprintPro
+        desc   : [237] Packaging box printing from 100 pcs: pit box 500 pcs HK$8-15/each, col
+[200]  en/blog/photo-book-printing-guide/
+        <title>: Custom Photo Book Printing: MOQ 1, Bulk 100+ | ZprintPro
+        <h1>   : Custom Photo Book Printing: MOQ 1, Bulk 100+ | ZprintPro
+        desc   : [156] Photo book printing from 1 copy, no minimum order. Compare 3 bindings 
