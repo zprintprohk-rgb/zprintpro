@@ -488,9 +488,9 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       // 2026-08-26 K3 §6 轨 1 CTR 修复: 起价前置 + 美妝護膚/餐廳外賣机会词 + DHL 全球 + 5 sharp hook (Free Shipping / Free Design / 100 MOQ / Made for USA / Free Proof)
-      'zh-hk': '紙袋印刷 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證品質。',
+      'zh-hk': '紙袋印刷 / 訂做紙袋 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證。',
       en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft & white card bags with free design. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA.',
-      ja: '紙袋印刷 100 個から、¥240〜。FSC 認証クラフト・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。無料見積もり 30 秒、ISO 9001 認証品質。',
+      ja: '紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
    
@@ -506,9 +506,9 @@ const categorySeoData: Record<string, {
       ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー,箔押しカレンダー,上製本カレンダー,学校カレンダー,事務用品,Q4繁忙期,60日予約,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '月曆印刷 100 本起印, HK$10起/本. 座檯/掛牆/2027 + 燙金精裝 + 企業 LOGO. Q4 旺季建議提前 60 天下單 (9/15 硬截止前). ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送, 滿 HK$500 順豐香港免運費。',
-      en: 'Custom calendar printing 2027, 100 MOQ. Desk/wall/monthly + foil hardcover + corporate branding. Order 60 days before Q4 peak (Sep 15 hard deadline). Free shipping over $99 to USA + free proof in 4 hours. DHL Express 2-4 day USA delivery. Made for USA, perfect for corporate gifts, schools, retail brands. 30-second AI quote, ISO 9001 certified.',
-      ja: 'カレンダー印刷 2027, 100 部から対応。デスク・壁掛け・月別 + 箔押し上製本 + 企業 LOGO。繁忙期 60 日前までのご注文を推奨 (9月15日 ハードデッドライン)。日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      'zh-hk': '月曆印刷 2027 100 本起印、HK$10 起/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單,月曆訂製免費設計打稿。港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送,ISO 9001 認證,WhatsApp 30 秒即時報價。',
+      en: 'Custom calendar printing 2027, 100 MOQ. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
+      ja: 'カレンダー印刷 2027 100 部〜。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
 'japan-doujin': {
@@ -577,9 +577,9 @@ const categorySeoData: Record<string, {
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
     descriptions: {
-      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定製，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
-      en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV, wedding, CNY & corporate branding with free design proof. DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
-      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
+      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。企業利是封 / 燙金利是封 / 婚慶 / 賀年 / 卡通 IP 訂製 + 局部 UV，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV & wedding or CNY red packets. Free design proof, DHL 2-4 day USA. 30-second AI quote.',
+      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。企業ポチ袋・干支ポチ袋・新年ポチ袋にも対応。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
   'banners': {
