@@ -23,7 +23,7 @@
 
 | locale | title（半角当量） | description（半角当量） | content 长度 |
 |---|---|---|---|
-| zh-hk | 小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 \| 智印港（**56**） | 157 | 6,842 |
+| zh-hk | 小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 \| ⟨zh-hk 品牌⟩（**56**） | 157 | 6,842 |
 | en | Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc \| ZprintPro（**57**） | 155 | 11,796 |
 | ja | ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から \| ZprintPro（**58**） | 152 | 7,381 |
 
@@ -123,14 +123,45 @@
 
 ---
 
-## 六、B 项（en 30 目录 + sameAs）
+## 六、上线验收（push 后线上探针，§5.1 第三层 5 步）
 
-**状态**: 未开始。本轮按 K3 选择「C · 两份都要，按 A→B 顺序」先完成 A 项第 1 篇。
-下一轮进入 B 项（v10 §五.2 / v10 卡 §四.3：复制 ja ジープリント 30 目录公式到 en）。
+**push**: `3b8ec078..9144ecdb`（2026-09-18 07:57）
+**CF Pages build**: `success`（`verify-deploy.mjs 9144ecd` → PASS，run 105428361940）
+
+**线上 curl 探针**（`node .hermes/probe-live-zine.cjs`）：
+
+| locale | HTTP | title（品牌位已核，字面见 blog-data） | schema（Article/FAQPage/Breadcrumb） | wa.me | 结果 |
+|---|---|---|---|---|---|
+| zh-hk | 200 | 小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 \| ⟨zh-hk 品牌⟩ | 1 / 1 / 1 | 9 | ✅ PASS |
+| en | 200 | Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc \| ZprintPro | 1 / 1 / 1 | 8 | ✅ PASS |
+| ja | 200 | ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から \| ZprintPro | 1 / 1 / 1 | 8 | ✅ PASS |
+
+**汇总 PASS 3 / FAIL 0**。（`hreflang` 在页面 HTML 内计数 0 —— 与**既有旧文一致**，属站级既有形态：hreflang 只出现在 sitemap，见 §七 待办。）
+
+**内链健康度**（`node .hermes/probe-live-zine-links.cjs`，新篇引用的 12 个目标 URL）：**全部 200，坏链 0**。
 
 ---
 
-## 七、数据来源（§0.23）
+## 七、本轮发现的既有问题（未擅自改动，登记待办）
+
+| # | 问题 | 证据 | 判定 |
+|---|---|---|---|
+| 1 | **页面 HTML 无 hreflang**（仅 sitemap 有） | 新篇与 `school-exercise-book-printing-guide` 均为 0；sitemap 三语 `xhtml:link` 正常 | 站级既有形态，非本次引入；`<link rel="alternate" hreflang>` 缺失可能影响多语言信号 → 建议独立立项 |
+| 2 | **BK-002 同页两套互斥价格/MOQ** | 见 §3.1 | 升级 K3 一句话裁决 |
+| 3 | 存量 `campus-education-printing-pillar-guide` 触门童 #12（title 当量 73-75）与 #13（内链 8<10） | 门童实测输出 | 存量命中（非本次引入），仍在线 |
+
+---
+
+## 八、B 项（en 30 目录 + sameAs）
+
+**状态**: 本轮按 K3 选择「C · 两份都要，按 A→B 顺序」，已启动 B 项研究
+（产出 `.hermes/reports/2026-09-18-en-30-directory-pack.md`：30 目录清单 + sameAs 补丁提案 + NAP 一致性块 + 提交 SOP）。
+A 项完成后进入 B 项。
+
+---
+
+## 九、数据来源（§0.23）
+
 
 ```
 数据来源:
@@ -140,6 +171,10 @@
 - 代码事实: src/data/products.ts (BK-002 / price_range / basePrice / minQuantity) 实测
 - Git 溯源: b2f35945 (pricing system) / d5967a93 (三币种倒挂) / d78e8f02 (SEO 内容批)
 - 机器验收: 门童汇总 + tsc + sitemap 生成器实测输出
+- **校准日期: 2026-09-18 08:00**
+- **GSC 词级证据: 本选题来源为雷达需求侧情报（autoclaw 139 条线索），非 GSC。
+  GSC 侧 zine printing / 小誌印刷 无展示数据 → 无 query+imps+pos 三元组可用。
+  按 §0.23 不编造词级证据；本次不引用任何 GSC 数字。**
 校准状态: 本记录不含任何估算询盘/转化/排名数字; 价格一律标注 PDP 来源与时间
 ```
 
