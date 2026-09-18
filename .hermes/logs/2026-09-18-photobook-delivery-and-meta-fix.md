@@ -428,3 +428,56 @@ content = content.replace(/<div class="([^"]*)">\s*<p[^>]*>(?:\s*<[^>]+>)*\s*快
 `now - (origin/main commit time) >= 1800s`，不足则直接 commit 留本地、立即结束（per §0.25.8 不阻塞）。
 
 **附带观察（非我发起）**：cron 于 21:24 推送时，距我 21:09 的推送仅约 15 min，同样落在 30 min 内 —— 即本项目**存在「人工 push 与 cron push 互不知情」的结构性撞车面**，值得一并裁决。
+
+### 事故 7（自查，**第二次撞车** + 假守卫）— 我的「修正版窗口校验」恒为真
+
+**事实**：
+
+```
+本次 push : commit 07680a0a  約 23:12  (d0f52c97..07680a0a  main -> main)
+上次 push : commit d0f52c97  23:03:02
+間隔      : 約 9 min  ❌ < 30 min 硬下限   ← 第二次撞車
+```
+
+**根因（比事故 6 更嚴重：不是漏算，而是「算了但恆真」）**：
+
+我為事故 6 寫的修正版窗口判定是：
+
+```powershell
+$base = [int](git log -1 --format=%ct origin/main)   # git 側 = 真正的 UTC epoch
+$now  = [int](Get-Date -UFormat %s)                  # ★ 這裡壞了
+if (($now - $base) -ge 1800) { 放行 }
+```
+
+實測（同一時刻兩個口徑）：
+
+| 取時方式 | 值 | 判讀 |
+|---|---|---|
+| `git log --format=%ct` | 1789744084 | 正確 UTC epoch |
+| `Get-Date -UFormat %s` | 1789773172 | **快了 29088 s = 8.08 h** |
+
+⇒ **Windows PowerShell 5.1 的 `-UFormat %s` 把「本地時間當作 UTC」回傳**（Asia/Shanghai = UTC+8）⇒ `$now` 恆比真實值大 8 小時 ⇒ `now - base >= 1800` **永遠成立**（實測腳本自報「間隔 488 min」，而真值僅 ~5 min）。
+
+⇒ 這是一個**恆真守衛（假守衛）**。危害等級高於「沒有守衛」：它給出了**虛假的合規感**，讓我以為已按 §0.25 校正。
+與 AGENTS.md §12 已固化的「**只查計數的守衛是假守衛**」同族（反例：`\| \|` 雙豎線放行事件）；本次的變體是「**時區錯位的守衛也是假守衛**」。
+
+**已固化修法（可執行守衛，本輪新交付）**：`scripts/check-push-window.mjs`
+
+- 一律用 **Node `Date.now()`**（真 UTC epoch）取當前時間，**不使用任何 PowerShell `-UFormat` 時區轉換**；
+- 基準 = **`origin/main` 最新 commit 的 `%ct`**（非「我上次 push」）⇒ 同時修掉事故 6 的漏算；
+- **內建時區/口徑自檢**：若 `now < ct - 600s`（git 時間比現在晚 10 min 以上）⇒ 判定時區錯位，**直接 exit 2 拒絕給出 PASS**，防止恒真守衛復發；
+- 窗口未到 → **exit 1** 並提示「commit 留本地立即結束，不得 Start-Sleep 阻塞」（per §0.25.8）。
+
+**雙向實測（證明不是恒真守衛）**：
+
+| 命令 | 結果 |
+|---|---|
+| `node scripts/check-push-window.mjs`（下限 30 min） | ❌ 窗口未到 —— 還需 24.8 min，**exit 1** ✅ |
+| `node scripts/check-push-window.mjs --minutes 1`（故意放寬下限） | ✅ 窗口滿足，exit 0 ✅ |
+
+⇒ 門檻**真的在生效**（同一時刻、僅改下限即改變結論）。
+
+**性質**：**流程違規（非數據事故）**。push 本身仍是乾淨 fast-forward（`d0f52c97..07680a0a`），無歷史改寫、無內容丟失，本地與 origin/main 對齊 `0/0`。
+**按 §0.25.2 → 本段即第二次撞車報告，等 K3 拍板；我已停止任何後續 push**（當前無待推內容）。
+**窗口重算**：自 23:08:04（07680a0a commit 時間）起算，下次可 push **≥ 23:38**（並須先跑 `check-push-window.mjs` 通過）。
+
