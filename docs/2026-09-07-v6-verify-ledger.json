@@ -1,0 +1,99 @@
+{
+  "task": "zprintpro v6 设计稿重制 (PDP 貼紙印刷产品详情页 + PLP 貼紙印刷分类页)",
+  "date": "2026-09-07",
+  "deliverables": {
+    "pdp_v6_html": "F:\\zprintpro-nextjs\\design\\pdp-v6.html",
+    "plp_v6_html": "F:\\zprintpro-nextjs\\design\\plp-v6.html",
+    "shots": {
+      "pdp_desktop": {
+        "path": "F:\\zprintpro-nextjs\\design\\shots\\pdp-v6-desktop-full.png",
+        "size": "1440x8582",
+        "bytes": 2364567,
+        "content_end": 8532
+      },
+      "plp_desktop": {
+        "path": "F:\\zprintpro-nextjs\\design\\shots\\plp-v6-desktop-full.png",
+        "size": "1440x8456",
+        "bytes": 2214935,
+        "content_end": 8406
+      },
+      "pdp_mobile": {
+        "path": "F:\\zprintpro-nextjs\\design\\shots\\pdp-v6-mobile-full.png",
+        "size": "375x13470",
+        "bytes": 2264081,
+        "content_end": 13408
+      },
+      "plp_mobile": {
+        "path": "F:\\zprintpro-nextjs\\design\\shots\\plp-v6-mobile-full.png",
+        "size": "375x16326",
+        "bytes": 2739301,
+        "content_end": 16276
+      }
+    }
+  },
+  "verification": {
+    "checklist": "29 PASS / 0 FAIL / 1 REGISTERED (红线全过)",
+    "pdp": {
+      "cjk_ratio": "3781-3881 字 (111.5%)",
+      "h2h3": 25,
+      "questions": 13,
+      "brand_mentions": 31,
+      "geo_places": 18,
+      "eeat": 5
+    },
+    "plp": {
+      "cjk_ratio": "4582 字 (106.0%)",
+      "h2h3": 32,
+      "questions": 25,
+      "brand_mentions": 30,
+      "geo_places": 14,
+      "eeat": 4
+    }
+  },
+  "changes": [
+    {
+      "id": 1,
+      "item": "9 卡畸形标题修复",
+      "detail": "literal replace 逐字替换 9/9 全中, 站内链接结构未动"
+    },
+    {
+      "id": 2,
+      "item": "第 5 卡编造价格整改",
+      "detail": "HK$0.35-1.20 → HK$38 起 (线上 schema 有据), 禁编造红线"
+    },
+    {
+      "id": 3,
+      "item": "彩耀品牌陈述升级",
+      "detail": "品牌陈述区按 v6 条款升级, 逐字繁體中文(香港)"
+    },
+    {
+      "id": 4,
+      "item": "PDP 孤儿卡/多余闭合修复",
+      "detail": "删除孤立闭合标签, 标签配平"
+    },
+    {
+      "id": 5,
+      "item": "PLP 嵌套手术",
+      "detail": "finder 显式闭合@34840 + 剥误开壳 + 删多余 </section>, 29 PASS"
+    },
+    {
+      "id": 6,
+      "item": "flexfix",
+      "detail": "brandcta+foot 移 </main> 后, main 补 'wrap layout' 双类, 文本零改动"
+    },
+    {
+      "id": 7,
+      "item": "空白带裁决",
+      "detail": "7970px 空白带确认为 Chromium 超高截图 2^14=16384px 图块伪影, 非页面 bug; 页面真实高度 PLP 桌面 8456 / PDP 桌面 8582"
+    }
+  ],
+  "env_notes": [
+    "Chromium headless 超高截图 (>16384px) 有图块伪影: 0-16384 渲染第一份页面, 16384 起重复渲染第二份, 表现为『空白带+重复页头』",
+    "Chrome headless 间歇 0 字节 (16000 窗+375 宽高发), Edge (msedge.exe, 同内核) 实测更稳",
+    "--user-data-dir 会导致截图 0 字节, 禁用",
+    "--dump-dom 本环境持续空输出, JS 探针通道不可用",
+    "GLM 识图: 本地服务 WinError 10061 + 网关 image 工具 403, 用像素法/轮廓染色法替代",
+    "移动端 PDP fixed 报价轨 (mob-rail) 会污染内容末行测量, 扫描需 ylimit 排除视口底 300-600px",
+    "截图必须做断言: 尺寸断言 + 内容体检 (末行达标 + 无 >1000px 空洞 + footer 深蓝 navy 校验), 防『渲染一半就拍』"
+  ]
+}

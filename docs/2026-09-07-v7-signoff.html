@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卡片對齊修復 · 拍板審閱確認單</title>
+<style>
+  :root{
+    --ink:#111111; --paper:#ffffff; --hair:#d8d8d8; --accent:#2873F5;
+    --muted:#6b6b6b;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Helvetica Neue",Helvetica,Arial,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+    background:var(--paper); color:var(--ink);
+    -webkit-font-smoothing:antialiased; line-height:1.6;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:64px 40px 96px}
+  .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:700}
+  h1{font-size:40px;line-height:1.15;letter-spacing:-.01em;margin:14px 0 10px;font-weight:700}
+  .sub{color:var(--muted);font-size:15px;max-width:640px}
+  .rule{border:none;border-top:1px solid var(--ink);margin:36px 0}
+  .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+  .metric{padding:20px 18px;border-left:1px solid var(--hair)}
+  .metric:first-child{border-left:none;padding-left:0}
+  .metric .n{font-size:30px;font-weight:700;letter-spacing:-.02em}
+  .metric .n em{font-style:normal;color:var(--accent)}
+  .metric .l{font-size:12px;color:var(--muted);margin-top:4px;letter-spacing:.06em}
+  h2{font-size:13px;letter-spacing:.24em;text-transform:uppercase;margin:0 0 18px;font-weight:700}
+  h2 span{color:var(--accent)}
+  .sec{margin-top:56px}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{text-align:left;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+     padding:10px 12px;border-bottom:1px solid var(--ink);font-weight:700}
+  td{padding:12px;border-bottom:1px solid var(--hair);vertical-align:top}
+  td.k{font-weight:700;white-space:nowrap}
+  td .was{color:var(--muted)}
+  td .now{font-weight:600}
+  td .now b{color:var(--accent)}
+  .item{border:1px solid var(--ink);margin-top:-1px;padding:22px 24px;display:grid;grid-template-columns:34px 1fr 220px;gap:20px;align-items:start}
+  .item .idx{font-size:22px;font-weight:700;color:var(--accent)}
+  .item h3{font-size:17px;margin-bottom:6px}
+  .item p{font-size:13.5px;color:var(--muted)}
+  .item .box{font-size:12.5px;color:var(--muted)}
+  .item .box .opt{display:block;border:1px solid var(--hair);padding:9px 12px;margin-top:8px;letter-spacing:.08em}
+  .item .box .opt:first-child{border-color:var(--ink);color:var(--ink);font-weight:600}
+  .files{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--ink)}
+  .file{padding:18px 0;border-bottom:1px solid var(--hair);display:flex;gap:14px;align-items:baseline}
+  .file .no{font-size:11px;color:var(--accent);font-weight:700;letter-spacing:.1em;min-width:34px}
+  .file .nm{font-weight:600;font-size:14.5px}
+  .file .pa{font-size:12px;color:var(--muted);word-break:break-all}
+  .step{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:14px 0;border-bottom:1px solid var(--hair)}
+  .step .no{font-size:26px;font-weight:700;color:var(--hair);-webkit-text-stroke:1px var(--ink)}
+  .step .t{font-weight:600;font-size:14.5px}
+  .step .d{font-size:13px;color:var(--muted)}
+  .verdict{border:1px solid var(--ink);padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .verdict .opt{border:1px solid var(--hair);padding:16px;text-align:center;font-size:14px;letter-spacing:.2em}
+  .verdict .opt.v1{border-color:var(--ink);font-weight:700}
+  .foot{margin-top:48px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;letter-spacing:.08em}
+  @media(max-width:760px){
+    .wrap{padding:40px 20px 72px}
+    h1{font-size:30px}
+    .metrics{grid-template-columns:1fr 1fr}
+    .metric{padding:16px 12px}
+    .item{grid-template-columns:28px 1fr;gap:12px}
+    .item .box{grid-column:2}
+    .files{grid-template-columns:1fr}
+    .verdict{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="kicker">ZprintPro · v7 Preview Only · 生產環境零改動</div>
+  <h1>「立即訂購」按鈕對齊修復<br>拍板審閱確認單</h1>
+  <p class="sub">本次全部改動僅存在於設計預覽稿（F:\zprintpro-nextjs\design\），未觸碰 src/ 生產代碼、未 commit、未 push、未部署。以下效果逐項過目，勾選通過或標註修改意見，拍板後再另行排期上線。</p>
+
+  <hr class="rule">
+
+  <div class="metrics">
+    <div class="metric"><div class="n"><em>14</em>/14</div><div class="l">CSS 規則替換命中</div></div>
+    <div class="metric"><div class="n">29 PASS</div><div class="l">SEO 對照表複驗 0 FAIL</div></div>
+    <div class="metric"><div class="n">70-73 → 42-43</div><div class="l">按鈕帶高度(px) 對齊實測</div></div>
+    <div class="metric"><div class="n"><em>0</em></div><div class="l">生產環境改動數</div></div>
+  </div>
+
+  <div class="sec">
+    <h2><span>01</span> — 改動內容（兩稿同源根因）</h2>
+    <table>
+      <tr><th style="width:22%">區塊</th><th style="width:39%">修前</th><th>修後</th></tr>
+      <tr><td class="k">卡片標題</td><td class="was">min-height 寫在 h4 選擇器，標記用 h3 → 規則未命中，標題 2~3 行浮動，把下方內容頂得高低不齊</td><td class="now">h3 固定 <b>3 行</b>（PDP 66px / PLP 68px）+ 超長裁切，行數鎖死</td></tr>
+      <tr><td class="k">材質/起訂/交期</td><td class="was">自然高度 1~2 行浮動</td><td class="now">固定 <b>2 行</b>（45px）</td></tr>
+      <tr><td class="k">價格行</td><td class="was">自然高度</td><td class="now">固定 <b>1 行</b> nowrap（PLP 連 MOQ 行同固 1 行）</td></tr>
+      <tr><td class="k">訂購按鈕</td><td class="was">margin-top 跟內容流，隨標題行數漂移</td><td class="now">margin-top:auto <b>釘在卡片底部</b>，同排按鈕強制同線</td></tr>
+      <tr><td class="k">文案</td><td class="was" colspan="2">零改動 —— 線上逐字標題/參數/價格全部原樣保留，只動 CSS（PDP 4 處 + PLP 5 處，共 9 條規則 14 處替換全命中）</td></tr>
+    </table>
+  </div>
+
+  <div class="sec">
+    <h2><span>02</span> — 像素級驗證（Edge 1440 寬實測）</h2>
+    <table>
+      <tr><th style="width:30%">卡區</th><th style="width:25%">修前按鈕帶高</th><th style="width:25%">修後按鈕帶高</th><th>判定</th></tr>
+      <tr><td class="k">PLP 九卡區 第 1 行</td><td>70px（三卡錯位並集）</td><td><b style="color:var(--accent)">42px</b> = 單按鈕高</td><td>三按鈕完全同線</td></tr>
+      <tr><td class="k">PLP 九卡區 第 2 行</td><td>70px</td><td><b style="color:var(--accent)">42px</b></td><td>對齊</td></tr>
+      <tr><td class="k">PLP 九卡區 第 3 行</td><td>73px</td><td><b style="color:var(--accent)">43px</b></td><td>對齊</td></tr>
+      <tr><td class="k">PDP 相關產品 4 卡行</td><td>73px</td><td><b style="color:var(--accent)">43px</b></td><td>四按鈕完全同線</td></tr>
+      <tr><td class="k">SEO 對照表</td><td colspan="2">29 PASS / 0 FAIL / 1 REGISTERED（v6 台賬口徑複驗）</td><td>零回歸</td></tr>
+    </table>
+    <p style="font-size:12.5px;color:var(--muted);margin-top:12px">驗證方法：掃描 #2873F5 品牌藍像素帶。修前同排各卡按鈕 y 位錯開成 70-73px 高的併集帶；修後收斂為一個按鈕自身高度（42-43px），即同排全部按鈕頂部同 y。桌面內容總高 PLP 8456→8350、PDP 8582→8519（固行後自然微縮）。</p>
+  </div>
+
+  <div class="sec">
+    <h2><span>03</span> — 逐項拍板清單</h2>
+    <div class="item">
+      <div class="idx">A</div>
+      <div>
+        <h3>標題固定 3 行</h3>
+        <p>卡片標題統一鎖 3 行，第 4 卡（燙金貼紙）2 行標題不再把按鈕頂高；超長標題第 3 行尾省略號裁切。</p>
+      </div>
+      <div class="box"><span class="opt">通過</span><span class="opt">需修改：________</span></div>
+    </div>
+    <div class="item">
+      <div class="idx">B</div>
+      <div>
+        <h3>參數/價格固定行</h3>
+        <p>材質/起訂/交期參數鎖 2 行、價格鎖 1 行（PLP MOQ 行同鎖 1 行），全卡各段行數恆定。</p>
+      </div>
+      <div class="box"><span class="opt">通過</span><span class="opt">需修改：________</span></div>
+    </div>
+    <div class="item">
+      <div class="idx">C</div>
+      <div>
+        <h3>按鈕釘底對齊</h3>
+        <p>「立即訂購」margin-top:auto 钉底，同排卡片按鈕頂部強制同 y（像素實測 42-43px 單按鈕高）。</p>
+      </div>
+      <div class="box"><span class="opt">通過</span><span class="opt">需修改：________</span></div>
+    </div>
+    <div class="item">
+      <div class="idx">D</div>
+      <div>
+        <h3>文案零改動</h3>
+        <p>標題/參數/價格逐字保留線上內容；SEO 對照表 29 PASS 零回歸。</p>
+      </div>
+      <div class="box"><span class="opt">通過</span><span class="opt">需修改：________</span></div>
+    </div>
+    <div style="border:1px solid var(--ink);border-top:none;padding:20px 24px">
+      <p style="font-size:13.5px"><b>整體結論</b>（拍板用）：整體通過，按此推進上線 / 需修改後復看（意見寫在對應條目）。</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span>04</span> — 預覽版說明與交付物</h2>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:18px">預覽即設計稿本體，雙擊直開（無需 dev server、不連網也完整渲染；卡片圖片引用線上 CDN）。本次涉及的全部文件如下。</p>
+    <div class="files">
+      <div class="file"><span class="no">F-01</span><div><div class="nm">PDP 設計稿（已修）</div><div class="pa">F:\zprintpro-nextjs\design\pdp-v6.html</div></div></div>
+      <div class="file"><span class="no">F-02</span><div><div class="nm">PLP 設計稿（已修）</div><div class="pa">F:\zprintpro-nextjs\design\plp-v6.html</div></div></div>
+      <div class="file"><span class="no">F-03</span><div><div class="nm">PLP 桌面整頁 1440×8400</div><div class="pa">design\shots\v7-plp-desktop-full.png</div></div></div>
+      <div class="file"><span class="no">F-04</span><div><div class="nm">PDP 桌面整頁 1440×8570</div><div class="pa">design\shots\v7-pdp-desktop-full.png</div></div></div>
+      <div class="file"><span class="no">F-05</span><div><div class="nm">PLP 移動整頁 375×16641</div><div class="pa">design\shots\v7-plp-mobile-full.png</div></div></div>
+      <div class="file"><span class="no">F-06</span><div><div class="nm">PDP 移動整頁 375×13688</div><div class="pa">design\shots\v7-pdp-mobile-full.png</div></div></div>
+      <div class="file"><span class="no">F-07</span><div><div class="nm">修前/修後對比 ×4（PLP/PDP 各一對）</div><div class="pa">design\shots\v7-compare-{plp,pdp}-{before,after}.png</div></div></div>
+      <div class="file"><span class="no">F-08</span><div><div class="nm">生產零改動核對記錄（JSON）</div><div class="pa">…\.openclaw\tmp\v7_prodcheck.json（隨附檔交付）</div></div></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h2><span>05</span> — 拍板通過後的上線步驟</h2>
+    <div class="step"><span class="no">1</span><div><div class="t">CSS 移植 src/</div><div class="d">把 9 條規則等價移植到生產組件（PLP 卡 CategoryProductCard.tsx / PDP 卡渲染組件），文案不動。</div></div></div>
+    <div class="step"><span class="no">2</span><div><div class="t">三閘門 + 30 分鐘間隔</div><div class="d">tsc 重測（node node_modules/typescript/bin/tsc）→ build → git diff --cached --name-only 核對暫存集。</div></div></div>
+    <div class="step"><span class="no">3</span><div><div class="t">單獨 commit 可回滾</div><div class="d">UTF-8 message 文件 + git commit -F（C:\ 全路徑），一次只含本次卡片對齊改動。</div></div></div>
+    <div class="step"><span class="no">4</span><div><div class="t">push + 五步驗收</div><div class="d">線上 marker 輪詢確認部署 → 線上頁面按鈕對齊複驗（同像素掃描法）。</div></div></div>
+  </div>
+
+  <div class="sec">
+    <h2><span>06</span> — 簽核</h2>
+    <div class="verdict">
+      <div class="opt v1">通過 ✕＿＿＿＿＿</div>
+      <div class="opt">需修改 ✕＿＿＿＿＿</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>ZPRINTPRO · V7 CARD ALIGNMENT · PREVIEW ONLY</span>
+    <span>2026-09-07 · 生產零改動</span>
+  </div>
+</div>
+</body>
+</html>
