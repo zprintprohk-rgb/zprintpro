@@ -22,7 +22,7 @@ const TEXT: Record<Locale, string> = {
     '智印港 是面向香港及全球市場的國際印刷服務品牌，由亞洲生產基地提供專業印刷與品控。' +
     '服務覆蓋香港（順豐本地派送）、美國、英國、澳大利亞、日本（DHL Express 全球 2-4 日送達）等市場。' +
     '支持多語言客服和本地化支付。' +
-    '無論您在香港、紐約、倫敦、悉尼還是東京，都能享受 ZprintPro 的專業印刷服務與 72 小時全球交付承諾。',
+    '無論您在香港、紐約、倫敦、悉尼還是東京，都能享受 智印港 的專業印刷服務與 72 小時全球交付承諾。',
   en:
     'ZprintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. ' +
     'US delivery via DHL Express (2-4 days); worldwide shipping to 100+ countries. ' +
