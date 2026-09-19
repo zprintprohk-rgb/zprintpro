@@ -50,5 +50,32 @@
   "zh-hk|sticker-material-pvc-vinyl-removable|12|FAIL",
   "zh-hk|sticker-material-pvc-vinyl-removable|3|FAIL",
   "zh-hk|sticker-material-pvc-vinyl-removable|8|FAIL"
- ]
+ ],
+ "accepted_deviations": [
+  {
+   "key": "zh-hk|sticker-material-pvc-vinyl-removable|3|FAIL",
+   "reason": "K3 2026-09-19 裁决 (iii) 统一 >=50% 口径后, sticker 三语段 3 问句占比 40-47% (zh-hk 7/15 / ja 7/15 / en 6/15, 三语一致差 <=7pt) 低于 50%; 全量问句化改写会新增 6+ 处未经授权的文案改动, 故按已接受偏差处理。",
+   "reviewed_by": "K3 (2026-09-19 建议登记)",
+   "registered_at": "2026-09-19",
+   "review_due": "2026-12-19",
+   "review_cadence": "quarterly (与 cron-prompts 豁免 review 同步)"
+  },
+  {
+   "key": "en|sticker-material-pvc-vinyl-removable|3|FAIL",
+   "reason": "同上 (三语同一偏差)",
+   "reviewed_by": "K3",
+   "registered_at": "2026-09-19",
+   "review_due": "2026-12-19",
+   "review_cadence": "quarterly"
+  },
+  {
+   "key": "ja|sticker-material-pvc-vinyl-removable|3|FAIL",
+   "reason": "同上 (三语同一偏差)",
+   "reviewed_by": "K3",
+   "registered_at": "2026-09-19",
+   "review_due": "2026-12-19",
+   "review_cadence": "quarterly"
+  }
+ ],
+ "accepted_deviations_note": "已接受偏差 (accepted deviation): 语义 = 已知并接受, 与 fails (待清债务) **分离**; 到期未 review 由门童报 WARN。口径来源 SSoT §7.5 + K3 2026-09-19 评估建议。"
 }
