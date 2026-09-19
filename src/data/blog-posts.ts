@@ -1138,7 +1138,7 @@ const lpFoldingBoxCosmetics: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '美妝護膚品牌、面膜品牌、精華液品牌、口紅品牌、彩妝品牌，手作護膚品品牌必睇。300g 牛卡 / 350g 白卡 / 400g 雙面白卡 / 300g 再生紙 / 350g 黑卡 5 款折疊盒材質,FSC 認證 + 大豆油墨 + 可回收標誌全套。',
-    en: 'US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials — 300gsm kraft / 350gsm white card / 400gsm duplex / 300gsm recycled / 350gsm black card. FSC certified + soy ink + recyclable mark.',
+    en: 'US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials — 300gsm kraft / 350gsm white card / 400gsm duplex / 300gsm recycled / 350gsm black card. FSC-certified + soy ink + recyclable mark.',
     ja: '日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。',
   },
 };
@@ -1656,7 +1656,7 @@ const lpInstantPrinting30sAiQuoteFlow: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '急件 1,200+ 客戶最常問 3 條: 即日印刷邊度最快? 幾錢? 幾點截單? 智印港 30 秒 AI 報價 6 步流程, 中午前確認下午起貨, 18:00 截單翌日 12:00 順豐送達, 跨境 DHL 2-4 天直送 50+ 國家. 5 大即日印刷品類 (防水貼紙 / 公司信封 / 賀卡 / A4 單張 / 卡片紙) 100 個起印 HK$0.25/個起, 4,200 張急件實證 + 99.2% 達成率 + ISO 9001 + FSC 認證, 服務 100+ 國家 15,000+ 客戶, 30 秒 WhatsApp 即時報價.',
-    en: 'Rush order FAQ answered: fastest delivery, exact price, cutoff time. ZprintPro 30-second AI quote in 6 steps, confirm by noon ship same afternoon, 18:00 cutoff next-day 12:00 SF Express, DHL 2-4 day cross-border to 50+ countries. 5 instant categories (waterproof stickers / business envelopes / greeting cards / A4 flyers / thank-you cards) 100 MOQ from HK$0.25/pc, 4,200+ rush orders 99.2% on-time, ISO 9001 + FSC certified, 100+ countries 15,000+ clients, 30s WhatsApp quote.',
+    en: 'Rush order FAQ answered: fastest delivery, exact price, cutoff time. ZprintPro 30-second AI quote in 6 steps, confirm by noon ship same afternoon, 18:00 cutoff next-day 12:00 SF Express, DHL 2-4 day cross-border to 50+ countries. 5 instant categories (waterproof stickers / business envelopes / greeting cards / A4 flyers / thank-you cards) 100 MOQ from HK$0.25/pc, 4,200+ rush orders 99.2% on-time, ISO 9001 + FSC-certified, 100+ countries 15,000+ clients, 30s WhatsApp quote.',
     ja: '急ぎオーダーFAQ: 最速納期、正確な単価、明確な締切。ZprintPro 30秒AI見積もり6ステップ、正午までに確認午後に出荷、18:00締切翌日12時SF Express、DHL国際2-4日で50ヶ国以上。5大即日カテゴリー（防水ステッカー/社用封筒/グリーティングカード/A4チラシ/カード）100枚からHK$0.25、4,200件以上99.2%達成率、ISO 9001 + FSC認証、100ヶ国以上15,000社以上、30秒WhatsApp見積。',
   },
   targetKeywords: {
@@ -1772,7 +1772,7 @@ const printSpecificationsReferenceGuide2026: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'A1-A6 尺寸 + CMYK vs RGB vs Pantone 色彩 + 6 大印刷模式 (數碼/柯式/絲網/燙金/UV/擊凸) 一文睇晒。智印港 15 年膠印工程師張志明編寫, FDA 21 CFR + EU REACH + FSC 認證, 香港工廠直印, 30 秒 AI 報價。',
-    en: 'A1-A6 sizes + CMYK vs RGB vs Pantone color modes + 6 print modes (digital/offset/screen/foil/UV/emboss) in one reference table. Authored by 15-year ZprintPro offset engineer. FDA 21 CFR + EU REACH + FSC certified. Hong Kong factory-direct, 30-second AI quote.',
+    en: 'A1-A6 sizes + CMYK vs RGB vs Pantone color modes + 6 print modes (digital/offset/screen/foil/UV/emboss) in one reference table. Authored by 15-year ZprintPro offset engineer. FDA 21 CFR + EU REACH + FSC-certified. Hong Kong factory-direct, 30-second AI quote.',
     ja: 'A1-A6 サイズ + CMYK vs RGB vs Pantone 色モード + 6 大印刷モード (デジタル/オフセット/シルク/箔/UV/エンボス) 一表対照。ZprintPro 15 年オフセットエンジニア執筆。FDA 21 CFR + EU REACH + FSC 認証、即時見積もり無料。',
   },
   targetKeywords: {
@@ -1927,7 +1927,7 @@ const lpPackagingBoxPrice2026: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '2026 包裝盒印刷價格：精裝盒 / 摺盒 / 快遞盒 / 瓦楞盒。500/1000/5000 個階梯報價、4 種紙材、4 種工藝升級、FDA 21 CFR 食品級、FSC 認證。100 個起印，30 秒 AI 報價。',
-    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, FDA 21 CFR food-safe, FSC certified, 100 MOQ.',
+    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, FDA 21 CFR food-safe, FSC-certified, 100 MOQ.',
     ja: 'パッケージ箱印刷 100 個〜。2026 年実勢価格：段ボール 500 個 ¥120-220/個、カラー箱 1000 個 ¥180-300/個、ギフト箱 5000 個 ¥370-590/個。4 大コスト要因、5 種用紙、4 FAQ、WhatsApp 30 秒見積。',
   },
 };
@@ -2051,6 +2051,31 @@ const lpSelfPublishingGuide: BlogPostMeta = {
   },
 };
 
+const lpEtsySellerPrintingGuide: BlogPostMeta = {
+  slug: 'etsy-seller-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-19',
+  title: {
+    'zh-hk': "Etsy 賣家印刷指南：10 件起印、免費打樣 | 智印港",
+    en: "Etsy Printing: 10-Piece Min, Free Proof | ZprintPro",
+    ja: "Etsy セラー向け印刷ガイド：10枚から・無料校正 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "Etsy 賣家最關心起訂量同補貨速度。呢篇講清楚 10 件起印（100 件起單價明顯下降）、免費數碼打樣、DHL 2-4 日補貨，以及 FDA 21 CFR 175.105 同 EU REACH 合規文件點樣取得。",
+    en: "Etsy sellers print from 10 pieces with no 500-piece minimum, get a free digital proof, DHL 2-4 day restock and FDA plus REACH files on request. Quote in 30s.",
+    ja: "Etsy セラー向けに、10 枚からの少部数印刷、無料デジタル校正、DHL 2-4 日の補充、FDA 21 CFR 175.105 と EU REACH のコンプライアンス書類の取得方法をまとめました。",
+  },
+  targetKeywords: {
+    primary: 'etsy seller printing',
+    secondary: [
+      'printing for etsy sellers', 'etsy product labels', 'small batch printing etsy',
+      'etsy packaging printing', 'etsy seller supplies', 'low minimum print run',
+      'etsy seller printing', 'Etsy 賣家印刷', 'Etsy 印刷',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2136,6 +2161,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpWeddingInvitationPricing,
   lpWeddingInvitationCost,
   lpWeddingTableCard,
+  // 2026-09-19 K3 终裁: Etsy 卖家印刷指南 (en 单语正文) — 注册以免 <title>/<h1> 退化为 slug (门童 #20 规则 E)
+  lpEtsySellerPrintingGuide,
   lpDoujinCircle,
   // 2026-07-13 daily-content-evolve Tier B 拓點 (酒店民宿)
   lpHotelAmenitySticker,
