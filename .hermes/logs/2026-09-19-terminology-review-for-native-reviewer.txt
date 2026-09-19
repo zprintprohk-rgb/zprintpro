@@ -1,0 +1,138 @@
+TERMINOLOGY REVIEW LIST v2  ·  2026-09-19
+==========================================================
+WHAT THIS IS
+  These terms are ALREADY LIVE on zprintpro.com.
+  This is a REVIEW, not a translation. We are NOT re-translating.
+  The list groups related terms into 7 FAMILIES (see the family note below).
+  Items marked (dup) repeat a term already listed above -- we kept them in
+  place so no family is broken; please just confirm them once. (4 items are
+  so marked; the same 8 terms also appear in Family 4 / Family 2, so read
+  Families 2, 4 and 7 together.)
+
+HOW TO REPLY
+  For each numbered item:  OK            (= confirmed, will be frozen)
+                       or  CHANGE: <your suggestion>
+  Only "CHANGE" items will be edited (targeted rewrite, not a site redo).
+
+*** IMPORTANT: THE BINDING/FOLDING FAMILY MUST BE APPROVED AS ONE FAMILY ***
+  Blocks 2 and 7 below are the same terminology family.
+  Please read both blocks together and approve them in ONE pass.
+  Reason: if one item is changed and its family partner is not, the site
+  immediately contradicts itself (e.g. "case binding" on one page and
+  "hardcover" on another).
+==========================================================
+
+
+### FAMILY 1 -- PAPER / BOARD MATERIALS ###
+1  灰底白板                en: duplex board (grey back)          ja: グレー裏白板紙
+2  單粉卡(超高松)           en: one-side coated card (ultra-high bulk)  ja: 片面コートカード(超嵩高)
+3  認證紙                  en: FSC-certified paper               ja: 認証紙
+4  157g啞粉紙 雙面彩色       en: -                                  ja: 157gマットコート紙 両面カラー
+5  專版單頁/摺頁-銅版紙高鬆   en: -                                  ja: 専用版シングル/折り加工-高嵩アート紙
+6  專版單頁/摺頁-雙膠紙       en: -                                  ja: 専用版シングル/折り加工-上質紙
+7  白卡紙手提袋-白卡紙       en: -                                  ja: 白カード紙袋-白カード紙
+
+
+### FAMILY 2 -- BINDING / FOLDING  *** APPROVE AS ONE FAMILY (with Family 7) *** ###
+8  騎馬釘                  en: saddle stitch                      ja: 中綴じ
+9  無線膠裝                en: perfect binding                    ja: 無線綴じ
+10 摺頁                   en: folded sheet                       ja: 折り加工
+11 對摺                   en: 1 fold 2 pages                     ja: 二つ折り
+12 包心摺                  en: 2 fold 3 pages                     ja: 巻き三つ折り
+13 關門摺                  en: 3 fold 4 pages                     ja: 観音折り
+14 1摺2頁                  en: -                                  ja: 1折り2ページ
+15 2摺3頁                  en: -                                  ja: 2折り3ページ
+16 3摺4頁                  en: -                                  ja: 3折り4ページ
+17 封面4P+內文32P           en: cover 4P + text 32P                 ja: 表紙4P+本文32P
+18 書脊封面 / 內袋 / 繡名字   en: spine cover / inner pocket / embroidered name  ja: 背表紙 / 内ポケット / 刺しゅう名入れ
+
+
+### FAMILY 3 -- LAMINATION / SURFACE ###
+19 覆膜                   en: lamination                         ja: ラミネート
+20 覆光膜                  en: gloss lamination                   ja: 光沢ラミネート
+21 覆啞膜                  en: matte lamination                   ja: マットラミネート
+22 不覆膜                  en: no lamination                      ja: ラミネートなし
+23 貼膠片                  en: film mounting                      ja: フィルム貼り
+24 熱熔膠                  en: hot melt glue                      ja: ホットメルト
+25 黏盒                   en: box gluing                         ja: のり付け
+26 3M／Avery 品牌升級       en: upgrade to 3M / Avery brand         ja: 3M／Averyブランドへのアップグレード
+                             (reference brand names of the laminate material -- K3 approved to keep)
+27 導氣槽底紙                en: air-release liner                  ja: エアフロー加工台紙
+28 單透孔                  en: one-way vision holes                ja: ワンウェイビジョン穴
+
+
+### FAMILY 4 -- SURFACE FINISHING ###
+29 擊凸                   en: embossing                          ja: エンボス
+30 壓凹                   en: debossing                          ja: デボス
+31 局部UV                 en: spot UV                            ja: スポットUV
+32 燙金                   en: foil stamping                      ja: 箔押し
+33 12 色藝術微噴（Giclée）  en: 12-color giclée printing            ja: 12色ジクレー印刷
+34 珠光／冰白                en: pearl / ice-white                   ja: パール／アイスホワイト
+35 -模切 / -單面-模切        en: die-cut / single-sided die-cut       ja: 型抜き / 片面-型抜き
+
+
+### FAMILY 5 -- BOX STRUCTURES ###
+36 拼版卡盒-350g單粉卡       en: -                                  ja: 合版カードボックス-350gコートボール
+37 拼版卡盒-400g單粉卡       en: -                                  ja: 合版カードボックス-400gコートボール
+38 拼版卡盒-銀卡紙          en: -                                  ja: 合版カードボックス-銀カード
+39 拼版卡盒-鐳射銀卡         en: -                                  ja: 合版カードボックス-ホログラム銀カード
+40 飛機盒                  en: airplane box                       ja: 飛行機箱
+41 普通扣底盒 / 普通         en: standard lock-bottom box / standard  ja: 標準ロック底箱 / 標準
+42 雙插盒                  en: double tuck box                    ja: 差し込み式ボックス
+43 瓦楞紙盒-灰卡             en: corrugated box - grey back          ja: 段ボール箱-グレー板紙
+44 瓦楞紙紋                en: corrugated grain direction          ja: 段ボール目の方向
+45 相架 / 硬紙板相架         en: easel frame / rigid board easel frame  ja: フレームスタンド / 厚紙フレームスタンド
+46 內托 / 吸塑 / 紙漿內托     en: insert / blister tray / moulded pulp insert  ja: 内台 / ブリスタ / パルプ内台
+
+
+### FAMILY 6 -- OTHER CRAFT / PRODUCTION ###
+47 易碎紙                  en: tamper-evident paper                ja: 易破壊紙
+48 筒芯出貨                en: shipped on core                     ja: 巻き取り出荷
+49 手挽 / 手挽材             en: handles / handle material           ja: 手提げ / 手提げ素材
+50 打扣 / 高品數碼 / 片裝     en: grommets / high-quality digital / sheet  ja: ハトメ / 高品質デジタル / シート
+51 急件標準                en: rush standard                       ja: 急ぎ標準
+52 國際認證體系             en: internationally certified           ja: 国際認証
+53 進口印刷設備             en: Heidelberg presses                  ja: ハイデルベルク印刷機
+54 急件 + 截單              en: rush orders, 18:00 cutoff           ja: 特急・18:00 締切
+55 答案（"nugget" label）   en: Answer nugget                       ja: (does not appear in Japanese)
+
+
+### FAMILY 7 -- BINDING/FOLDING (cont.)  *** SAME FAMILY AS BLOCK 2 *** ###
+   (These belong with items 8-18 above -- please approve together)
+56 (dup) 擊凸/壓凹/局部UV/燙金 组合写法   ja: エンボス / デボス / スポットUV / 箔押し
+57 (dup) A4 8P 騎馬釘                     ja: A4 8P 中綴じ
+58 (dup) -飛機盒                          ja: -飛行機箱
+
+FAMILY COUNT SUMMARY
+  Family 1  paper/board ............ 7 items  (1-7)
+  Family 2  binding/folding ........ 11 items (8-18)   <- same family as 7
+  Family 3  lamination/surface ..... 10 items (19-28)
+  Family 4  surface finishing ...... 7 items  (29-35)
+  Family 5  box structures ......... 11 items (36-46)
+  Family 6  other craft/production . 9 items  (47-55)
+  Family 7  binding/folding cont. .. 3 items  (56-58, duplicates kept in place)
+  ---------------------------------------------------------------
+  TOTAL 58 numbered lines  =  50 unique terms + 8 lines that restate a term
+  already listed (kept in place so no family is broken; confirm them once).
+  (Working-copy reconciliation: 16 [Step-4 spec] + 39 [price labels]
+   + 5 [site-wide core] - 10 shared = 50 unique terms.)
+
+
+NOTES
+  · "-" in the en column = the English side was not extractable by our tool
+    (the English rows use "-" as a separator while Chinese/Japanese use
+    commas and brackets, so segment alignment is unreliable).
+    For English judgement, please read the live page directly -- more accurate
+    than a table.
+  · Items 51-55 are already live site-wide and were verified online
+    (0 leftovers, 9/9 positive controls).
+  · If you change a term, we do a TARGETED rewrite (only affected strings),
+    not a site-wide re-translation.
+
+==========================================================
+REPLY FORMAT EXAMPLE
+  1  OK
+  2  CHANGE: one-side coated board (ultra high bulk)
+  8  OK
+  12 OK
+==========================================================
