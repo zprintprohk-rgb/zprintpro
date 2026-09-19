@@ -1,0 +1,409 @@
+TERMINOLOGY REVIEW  ·  zprintpro.com  ·  2026-09-19
+================================================================
+WHAT THIS IS
+  Every term below is ALREADY LIVE on the site. This is a REVIEW,
+  not a translation -- we are not re-translating anything.
+
+HOW TO REPLY  (please keep this format)
+  FAMILY <n>: OK
+  ITEM <n>  : OK
+  ITEM <n>  : CHANGE -> <your suggestion>
+  Any item not mentioned is treated as OK.
+
+*** THE BINDING / FOLDING FAMILY MUST BE APPROVED AS ONE FAMILY ***
+  It is FAMILY 1 below. Please read all 14 items together and give
+  one verdict for the family. If one item is changed and its family
+  partner is not, the site will contradict itself on the same page.
+
+NOTES
+  - "en: -" means our extraction tool could not reliably line up the
+    English column (the English rows use "-" as a separator, Chinese
+    and Japanese use commas/brackets). For English judgement please
+    read the live page -- that is more accurate than a table.
+  - Numbers (350g, 90x54mm, 2-fold-3-page) are copied through as-is;
+    we made no unit conversions.
+================================================================
+
+########## FAMILY 1: 装订 / 折页族 ★必须整族一次批  --  14 items ##########
+
+ITEM 1   [source: Step4]
+   zh : 書脊封面 / 內袋 / 繡名字
+   en : spine cover / inner pocket / embroidered name
+   ja : 背表紙 / 内ポケット / 刺しゅう名入れ
+   note: 同人周边结构
+
+ITEM 2   [source: price-label]
+   zh : 專版單頁/摺頁-銅版紙高鬆
+   en : -
+   ja : 専用版シングル/折り加工-高嵩アート紙
+   note: 出现 10
+
+ITEM 3   [source: price-label]
+   zh : 專版單頁/摺頁-雙膠紙
+   en : -
+   ja : 専用版シングル/折り加工-上質紙
+   note: 出现 7
+
+ITEM 4   [source: price-label]
+   zh : 摺頁
+   en : -
+   ja : 折り加工
+   note: 出现 4
+
+ITEM 5   [source: price-label]
+   zh : 3摺4頁
+   en : -
+   ja : 3折り4ページ
+   note: 出现 2
+
+ITEM 6   [source: price-label]
+   zh : 關門摺
+   en : -
+   ja : 観音折り
+   note: 出现 2
+
+ITEM 7   [source: price-label]
+   zh : A4 8P 騎馬釘
+   en : -
+   ja : A4 8P 中綴じ
+   note: 出现 1
+
+ITEM 8   [source: price-label]
+   zh : 封面4P+內文32P
+   en : -
+   ja : 表紙4P+本文32P
+   note: 出现 1
+
+ITEM 9   [source: price-label]
+   zh : 無線膠裝
+   en : -
+   ja : 無線綴じ
+   note: 出现 1
+
+ITEM 10   [source: price-label]
+   zh : 騎馬釘
+   en : -
+   ja : 中綴じ
+   note: 出现 1
+
+ITEM 11   [source: price-label]
+   zh : 2摺3頁
+   en : -
+   ja : 2折り3ページ
+   note: 出现 1
+
+ITEM 12   [source: price-label]
+   zh : 包心摺
+   en : -
+   ja : 巻き三つ折り
+   note: 出现 1
+
+ITEM 13   [source: price-label]
+   zh : 1摺2頁
+   en : -
+   ja : 1折り2ページ
+   note: 出现 1
+
+ITEM 14   [source: price-label]
+   zh : 對摺
+   en : -
+   ja : 二つ折り
+   note: 出现 1
+
+########## FAMILY 2: 盒型 / 结构族  --  11 items ##########
+
+ITEM 15   [source: Step4]
+   zh : 手挽 / 手挽材
+   en : handles / handle material
+   ja : 手提げ / 手提げ素材
+   note: 纸袋行话
+
+ITEM 16   [source: Step4]
+   zh : 相架 / 硬紙板相架
+   en : easel frame / rigid board easel frame
+   ja : フレームスタンド / 厚紙フレームスタンド
+   note: 台卡结构
+
+ITEM 17   [source: Step4]
+   zh : 內托 / 吸塑 / 紙漿內托
+   en : insert / blister tray / moulded pulp insert
+   ja : 内台 / ブリスタ / パルプ内台
+   note: 包装内衬
+
+ITEM 18   [source: price-label]
+   zh : 拼版卡盒-350g單粉卡
+   en : -
+   ja : 合版カードボックス-350gコートボール
+   note: 出现 14
+
+ITEM 19   [source: price-label]
+   zh : 飛機盒
+   en : -
+   ja : 飛行機箱
+   note: 出现 14
+
+ITEM 20   [source: price-label]
+   zh : 拼版卡盒-400g單粉卡
+   en : -
+   ja : 合版カードボックス-400gコートボール
+   note: 出现 13
+
+ITEM 21   [source: price-label]
+   zh : 瓦楞紙盒-灰卡
+   en : -
+   ja : 段ボール箱-グレー板紙
+   note: 出现 10
+
+ITEM 22   [source: price-label]
+   zh : 拼版卡盒-銀卡紙
+   en : -
+   ja : 合版カードボックス-銀カード
+   note: 出现 9
+
+ITEM 23   [source: price-label]
+   zh : -飛機盒
+   en : -
+   ja : -飛行機箱
+   note: 出现 5
+
+ITEM 24   [source: price-label]
+   zh : -普通扣底盒
+   en : -
+   ja : -標準ロック底箱
+   note: 出现 5
+
+ITEM 25   [source: price-label]
+   zh : 雙插盒
+   en : -
+   ja : 差し込み式ボックス
+   note: 出现 2
+
+########## FAMILY 3: 覆膜 / 表面保护族  --  9 items ##########
+
+ITEM 26   [source: Step4]
+   zh : 導氣槽底紙
+   en : air-release liner
+   ja : エアフロー加工台紙
+   note: 日文惯用
+
+ITEM 27   [source: Step4]
+   zh : 單透孔
+   en : one-way vision holes
+   ja : ワンウェイビジョン穴
+   note: 车贴行话
+
+ITEM 28   [source: price-label]
+   zh : 覆膜
+   en : -
+   ja : ラミネート
+   note: 出现 44
+
+ITEM 29   [source: price-label]
+   zh : 覆光膜
+   en : -
+   ja : 光沢ラミネート
+   note: 出现 33
+
+ITEM 30   [source: price-label]
+   zh : 黏盒
+   en : -
+   ja : のり付け
+   note: 出现 25
+
+ITEM 31   [source: price-label]
+   zh : 不覆膜
+   en : -
+   ja : ラミネートなし
+   note: 出现 17
+
+ITEM 32   [source: price-label]
+   zh : 覆啞膜
+   en : -
+   ja : マットラミネート
+   note: 出现 11
+
+ITEM 33   [source: price-label]
+   zh : 貼膠片
+   en : -
+   ja : フィルム貼り
+   note: 出现 9
+
+ITEM 34   [source: price-label]
+   zh : 熱熔膠
+   en : -
+   ja : ホットメルト
+   note: 出现 5
+
+########## FAMILY 4: 纸材 / 纸板族  --  8 items ##########
+
+ITEM 35   [source: Step4]
+   zh : 灰底白板
+   en : duplex board (grey back)
+   ja : グレー裏白板紙
+   note: 材质名地域差异
+
+ITEM 36   [source: Step4]
+   zh : 單粉卡(超高松)
+   en : one-side coated card (ultra-high bulk)
+   ja : 片面コートカード(超嵩高)
+   note: 港式行话直译
+
+ITEM 37   [source: Step4]
+   zh : 易碎紙
+   en : tamper-evident paper
+   ja : 易破壊紙
+   note: 行业称谓
+
+ITEM 38   [source: Step4]
+   zh : 珠光／冰白
+   en : pearl / ice-white
+   ja : パール／アイスホワイト
+   note: アイスホワイト 为品牌通称
+
+ITEM 39   [source: price-label]
+   zh : 瓦楞紙紋
+   en : -
+   ja : 段ボール目の方向
+   note: 出现 10
+
+ITEM 40   [source: price-label]
+   zh : 白卡紙手提袋-白卡紙
+   en : -
+   ja : 白カード紙袋-白カード紙
+   note: 出现 3
+
+ITEM 41   [source: price-label]
+   zh : 157g啞粉紙 雙面彩色
+   en : -
+   ja : 157gマットコート紙 両面カラー
+   note: 出现 2
+
+ITEM 42   [source: core]
+   zh : 認證紙
+   en : FSC-certified paper
+   ja : 認証紙
+   note: 全站核心术语
+
+########## FAMILY 5: 表面工艺族  --  8 items ##########
+
+ITEM 43   [source: Step4]
+   zh : 打扣
+   en : grommets
+   ja : ハトメ
+   note: 喷绘后道
+
+ITEM 44   [source: Step4]
+   zh : 12 色藝術微噴（Giclée）
+   en : 12-color giclée printing
+   ja : 12色ジクレー印刷
+   note: 原文已含 Giclée
+
+ITEM 45   [source: Step4]
+   zh : 擊凸 / 壓凹 / 局部UV / 燙金
+   en : embossing / debossing / spot UV / foil stamping
+   ja : エンボス / デボス / スポットUV / 箔押し
+   note: 行业标准译法
+
+ITEM 46   [source: price-label]
+   zh : -模切
+   en : -
+   ja : -型抜き
+   note: 出现 14
+
+ITEM 47   [source: price-label]
+   zh : 燙金
+   en : -
+   ja : 箔押し
+   note: 出现 6
+
+ITEM 48   [source: price-label]
+   zh : 擊凸
+   en : -
+   ja : エンボス
+   note: 出现 3
+
+ITEM 49   [source: price-label]
+   zh : -單面-模切
+   en : -
+   ja : -片面-型抜き
+   note: 出现 3
+
+ITEM 50   [source: price-label]
+   zh : -150X100-單面-模切
+   en : -
+   ja : -150X100-片面-型抜き
+   note: 出现 1
+
+########## FAMILY 6: 认证 / 设备 / 交期族  --  5 items ##########
+
+ITEM 51   [source: price-label]
+   zh : 急件標準
+   en : -
+   ja : 急ぎ標準
+   note: 出现 1
+
+ITEM 52   [source: core]
+   zh : 國際認證體系
+   en : internationally certified
+   ja : 国際認証
+   note: 全站核心术语
+
+ITEM 53   [source: core]
+   zh : 進口印刷設備
+   en : Heidelberg presses / Heidelberg 6+1 press
+   ja : ハイデルベルク印刷機
+   note: 全站核心术语
+
+ITEM 54   [source: core]
+   zh : 急件 + 截單
+   en : rush orders, 18:00 cutoff
+   ja : 特急・18:00 締切
+   note: 全站核心术语
+
+ITEM 55   [source: core]
+   zh : 答案（nugget 标签）
+   en : Answer nugget
+   ja : (ja 未出现)
+   note: 全站核心术语
+
+########## FAMILY 7: 其他  --  4 items ##########
+
+ITEM 56   [source: Step4]
+   zh : 筒芯出貨
+   en : shipped on core
+   ja : 巻き取り出荷
+   note: 出货形态
+
+ITEM 57   [source: Step4]
+   zh : 高品數碼
+   en : high-quality digital
+   ja : 高品質デジタル
+   note: 工艺等级
+
+ITEM 58   [source: Step4]
+   zh : 3M／Avery 品牌升級
+   en : upgrade to 3M / Avery brand
+   ja : 3M／Averyブランドへのアップグレード
+   note: K3 已裁保留
+
+ITEM 59   [source: price-label]
+   zh : 普通
+   en : -
+   ja : 標準
+   note: 出现 3
+
+########## FAMILY 8: 出货形态族（片装 / 卷装 / 标签）  --  1 items ##########
+
+ITEM 60   [source: price-label]
+   zh : 片裝
+   en : -
+   ja : シート
+   note: 出现 4
+
+================================================================
+TOTAL: 60 items in 8 families.
+Reply example:
+  FAMILY 1: OK
+  ITEM 7 : OK
+  ITEM 12: CHANGE -> one-side coated board (ultra high bulk)
+================================================================

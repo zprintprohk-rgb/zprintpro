@@ -1,3 +1,63 @@
+**协议补遗 10.1 — 混合档的精准暂存手法（2026-09-19 实测可用）**
+
+当**同一檔内**同时含自己与他人的未提交改动（文件粒度拆分不可能）时，用 **hunk 级精准暂存**：
+1. `git diff -- <file>` 取 patch → 逐 `@@` 切 hunk；
+2. 只保留**改动行全部匹配本任务特征**（如每行含 `FSC`）的 hunk，其余丢弃；
+3. `git apply --cached <过滤后的 patch>` 只把该 hunk 进索引；
+4. **暂存后必核**: `git diff --cached -U0` 的每一行 `+`/`-` 都必须匹配本任务特征（非 0 ⇒ 误带，立即 `git reset`）。
+   工具: `.hermes/_probe-pb/_stage-fsc-hunks-only.cjs` · 核验: `.hermes/_probe-pb/_verify-staged-only-fsc.cjs`
+
+> ⚠️ 注意 `git apply --cached` 的 `--unidiff-zero` **是布尔旗标, 不能写 `=false`**（实测报错 `option takes no value`）。
+
+**协议补遗 10.2 — 他人 commit 可能「带走」自己的档（对称风险）**
+
+2026-09-19 实测: 对方 commit 时把我 5 个档（`lib/seo.ts` / `CategoryIndustries.tsx` / `HeroBanner.tsx` /
+`product-faqs.ts` / `products.ts`）的改动一并带入 ⇒ 我的工作量被拆到两个 commit。
+**处置**: 不撤销他人已落 commit（撤销成本高于收益），改为**显式记录**（在交付报告中写明
+「本任务 N 档已随他人 commit `<hash>` 进入, 另 M 档在本 commit」），保证可追溯;
+此后提交前用 `git status --porcelain` 核「我的档是否已不在未提交列表」以发现该情况。
+
+---
+
+# ⚠️【置顶·2026-09-19 技术债 10】—— 并发会话协议：禁用 `git add -A`
+
+## 技术债 10 — 批量 stage 禁用 `-A`；并发仓必须**逐档显式 add**
+
+**模式**: `git add -A <dir>` / `git add .` 会**把工作区里所有人的未提交改动一并暂存**。
+在多会话（或多车道）并发的仓库里, 这会把**别人的在途工作混进自己的 commit** ——
+后果不是「多提交了几行」, 而是:
+① 无法追溯谁改的; ② 别人的工作在你不知情下被推上线; ③ 一旦要回滚你的 commit, 会**连带毁掉别人未提交的工作**。
+
+**事故 (2026-09-19, 推送前 3 分钟拦下)**:
+- 本会话执行 FSC 写法归一 (20 档), 最后一次图省事用了 `git add -A src/`;
+- 该命令把**另一并发会话（MOQ 10 纸品线起订量 100→10 改造）**的 **17 档在途改动**一并提交:
+  `src/data/print-method-policy.ts`(新增 `PAPER_GOODS_*` 族) · `src/lib/price-data.generated.ts`(+1,327 行)
+  · `src/data/price-tables/*.json` 5 档(+1,483 行) · PDP/services 组件 · `h1-builder.ts` · `seo-keywords.ts` 等;
+- **发现方式**: 提交后核对 `git show --stat`, 察觉统计里出现自己没碰过的档;
+- **止损**: 该 commit 尚未推送 ⇒ 立即 kill 延迟 push 任务 (`pwsh-43`), 核实远端仍为 `1e0a584b`, 污染未上线;
+- **拆分失败**: 同一文件内有**两个会话的行级改动**（`CategoryIndustries.tsx` 同时含
+  我的 `FSC certified→FSC-certified` 与其 `100 張起印→10 張起印`）⇒ **文件粒度拆分不可能**,
+  回滚我的 commit 会毁掉对方工作 ⇒ 停手上报, 由人裁决。
+
+**并发会话协议（强制, 本仓适用）**:
+1. **禁用批量 stage**: 不得使用 `git add -A` / `git add .` / `git add -u`;
+   **只能逐档显式 add**（`git add -- <file>` 一行一档）。
+2. **提交前核对**: `git diff --cached --name-only` 必须**逐档等于本次任务的档清单**;
+   多一档都要停下查来源。
+3. **提交后复查**: `git show --stat HEAD` 再核一遍; 发现陌生档立即 `git reset --soft HEAD~1`（**保留改动**）并上报。
+4. **推送前核查**: `git fetch` + `git log origin/main..main` 确认待推 commit 集合 = 自己的产出;
+   并核 `git ls-remote origin refs/heads/main`（唯一可信远端头判据）。
+5. **作业前查并发**: 开工先看 (a) `.hermes/locks/lane.lock`; (b) `git status` 是否有**非自己产出**的未提交改动;
+   (c) `C:\Users\Administrator\.dsh\sessions\--F-zprintpro-nextjs--` 下最近 mtime 的会话数
+   （>1 表示有人手会话并发）。
+6. **并行任务的改动必须由该任务自己 commit**: 不得代提交他人的在途工作;
+   必要时**停手上报**（本事故即如此处置）。
+
+**与既有规则的呼应**: §0.35.5「人手会话与 lane 并发改同一文件 = 9/19 撞车事故」是同一族问题的**车道版**;
+本条是**人手/多会话版**, 两者共同构成「并发写入防护」。
+
+---
+
 # ⚠️【置顶·2026-09-19 裁定】第三方**材质品牌名** ≠ 竞品对比（已批白名单，不判违规）
 
 ## 裁定 — 区分「材质品牌名」与「竞品对比」
