@@ -190,6 +190,87 @@ export function getDisplayMinOrder(locale: Locale, slug: string, minQuantity: nu
 }
 
 /* ============================================================================
+ * 「價目同步波」工具 (K3 2026-09-19 規劃)
+ * ============================================================================
+ * 為什麼需要: 站內大量字串同時含 MOQ 口徑與價目檔位, 例如
+ *   「100 張起印，HK$0.22/張」 —— 呢個 100 係**價目檔位** (HK$0.22/張 係 100 張檔的價),
+ *   唔係 MOQ。若機械改成「10 張起印，HK$0.22/張」, 10 張實際 HK$71 起 ⇒ 報價當場變假。
+ *   ⇒ 任何批量修正前必須先分類。本組函式即該分類器 (純函式, 無副作用)。
+ */
+
+export type MoqStringKind =
+  /** 「最低 10 張起印」——純門檻, 應改為現行 MOQ */
+  | 'moq_display'
+  /** 「100 張起印，HK$0.22/張」——價格承諾綁定該數量檔, 保留數字, 只改格式 */
+  | 'price_tier'
+  /** 「傳統柯式印刷普遍 500 張起」——行業事實陳述, 保留不動 */
+  | 'industry_fact'
+  /** 無法判定 */
+  | 'other';
+
+/**
+ * 價格/檔位特徵 (與 bulk 修正腳本的價目保護同一口徑, 集中於此)。
+ *
+ * ⚠ 逐項都有實測依據 (首版漏了 3 類, 由 moq10-classify-check.ts 攔下):
+ *   · 「100 張起印 HK$0.45-0.80/張, 1000 張 …」→ 需一般 HK$ 金額特徵
+ *   · 「100 copies at US$1.20-1.80 per piece」→ 需 `copies` 與 `at US$…`
+ *   · 「100 枚から、1 枚 HK$0.22〜」→ 需容許「枚」後接逗號/〜 等非空白字元
+ */
+const PRICE_SIGNAL =
+  /(HK\$[\d.,]+|US\$[\d.,]+|\$[\d.,]+|¥[\d,]+|每張低至|每張約|低至\s*HK|約\s*HK|價格參考|單價參考|價目|批量價|起批|量產|per\s*piece|per\s*pc\b|\/\s*(張|枚|個|本|pc|pcs|sheet|copy|copies)|1\s*枚[^。，,]{0,3}HK\$|単価目安)/i;
+
+/**
+ * MOQ 口徑特徵。
+ * ⚠ 補上英文 `start at N copies` 與日文 `N 枚から` (首版漏, 由 moq10-classify-check.ts 攔下):
+ *   呢兩個係 en/ja 最常見的 MOQ 寫法, 缺了就會令「Saddle stitch booklets start at 100 copies
+ *   at US$1.20-1.80 per piece」被判成 other, 無法進入價目保護流程。
+ * ⚠ 再補 `N 張起` / `N 本起` 等**無「印」字**的變體 (smoke G 段攔下):
+ *   「100 張起，HK$0.25/張起」係站上常見寫法, 只寫「起印」會漏判。
+ */
+const MOQ_SIGNAL =
+  /(起印|起訂|\d+\s*(張|本|個|枚|套|部|冊)\s*起|最低訂購|最低起印|最低數量|最小ロット|最小注文|minimum\s*order|MOQ|from\s*\d+\s*(copies|pcs)|\d+\s*copies?|\d+\s*枚から|\d+\s*部から|\d+\s*冊から)/i;
+
+/** 行業事實特徵 (講市場慣例, 非自家門檻) */
+const INDUSTRY_SIGNAL = /(傳統|行業|普遍|同業|市面|業界|通常|Alibaba|黃頁|競品|業內|一般的|多くの)/i;
+
+/**
+ * 分類一段含起印量字樣的文本。
+ *
+ * 判序:
+ *   ① 含 MOQ 特徵 **且** 含價格特徵 → `price_tier`  (最保守, 優先)
+ *   ② 含行業事實特徵              → `industry_fact`
+ *   ③ 只含 MOQ 特徵               → `moq_display`
+ *   ④ 其餘                        → `other`
+ *
+ * ⚠ ① 必須優先於 ③: 「100 張起印，HK$0.22/張」兩個特徵皆有, 必須判 price_tier,
+ *   否則就會產生本次已實測過的「假報價」風險。
+ */
+export function classifyMoqString(text: string): MoqStringKind {
+  if (typeof text !== 'string' || !text) return 'other';
+  const hasPrice = PRICE_SIGNAL.test(text);
+  const hasMoq = MOQ_SIGNAL.test(text);
+  if (hasMoq && hasPrice) return 'price_tier';
+  if (INDUSTRY_SIGNAL.test(text)) return 'industry_fact';
+  if (hasMoq) return 'moq_display';
+  return 'other';
+}
+
+/**
+ * `price_tier` 的新展示格式 (K3 規劃表):
+ *   「100 張起印，HK$0.22/張」→「100 張檔位：HK$0.22/張」
+ * 只把「起印/起訂」語意改為「檔位」, **不動任何數字** ⇒ 報價承諾不變。
+ */
+export function formatPriceTier(text: string): string {
+  return text
+    .replace(/(\d[\d,]*)\s*張起印[，,]\s*/g, '$1 張檔位：')
+    .replace(/(\d[\d,]*)\s*張起[，,]\s*/g, '$1 張檔位：')
+    .replace(/(\d[\d,]*)\s*本起印[，,]\s*/g, '$1 本檔位：')
+    .replace(/(\d[\d,]*)\s*個起印[，,]\s*/g, '$1 個檔位：')
+    .replace(/(\d[\d,]*)\s*copies?[，,]\s*/gi, '$1 copies: ')
+    .replace(/(\d[\d,]*)\s*冊から[，,]\s*/g, '$1 冊〜: ');
+}
+
+/* ============================================================================
  * P2-6 傳統膠印軟分流 (K3 2026-09-19 路線圖)
  * ============================================================================
  * 需求原話: 「傳統膠印軟分流 (報價器邏輯)」+ 研究提案 §二:

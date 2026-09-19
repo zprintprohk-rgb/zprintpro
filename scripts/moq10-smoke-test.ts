@@ -10,6 +10,13 @@
 
 import fs from 'fs';
 import path from 'path';
+/*
+ * 分類器 / 格式轉換器從**同一 SSoT 模組**取值, 不在測試裡重寫一份:
+ * 測試要驗的是實作行為, 不是另一份 regex 的猜測。
+ * (print-method-policy.ts 是純 TS、無 React 依賴; 用頂部 static import —
+ *  tsx 在 CJS 輸出格式下不支援 top-level await, 實測踩過)
+ */
+import { classifyMoqString, formatPriceTier } from '../src/data/print-method-policy';
 
 const ROOT = process.cwd();
 const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf-8');
@@ -281,6 +288,58 @@ for (const slug of POLICY.PAPER_GOODS) {
   if (!PRODUCTS.has(slug)) bad(`政策名單孤兒: ${slug}`);
 }
 ok(`政策名單 ${POLICY.PAPER_GOODS.length} 個 slug 全部存在於 products.ts`);
+
+console.log('\nG. 價目同步波就緒度 (K3 規劃第四步)');
+{
+  /*
+   * 對 sku-seo-data.ts 內所有含「起印」的 title/description 抽樣分類,
+   * 斷言:
+   *   ① 本批範圍 (傳單/貼紙/海報/書刊) 的 moq_display 文本不得再含舊 MOQ (100)
+   *   ② price_tier 類文本的**數字必須與原文一致** (formatPriceTier 不得改數字)
+   * 分類器 = print-method-policy.ts 的 classifyMoqString (同一 SSoT, 避免測試與實作分叉)
+   */
+  const d = read('src/data/sku-seo-data.ts');
+  const lines = d.split('\n');
+  const inScope = /傳單|單張|摺頁|貼紙|海報|精裝書|教科書|flyer|leaflet|sticker|poster/i;
+  let checked = 0, moqStale = 0, priceTier = 0, industry = 0;
+  for (const l of lines) {
+    const m = l.match(/"(title|description)": "([^"]{0,400})/);
+    if (!m) continue;
+    const text = m[2];
+    if (!/起印|起訂/.test(text)) continue;
+    if (!inScope.test(text)) continue;
+    checked++;
+    const kind = classifyMoqString(text);
+    if (kind === 'price_tier') priceTier++;
+    else if (kind === 'industry_fact') industry++;
+    else if (kind === 'moq_display') {
+      // moq_display 且屬本批 → 不應仍是 100 起印類
+      if (/100\s*張起印|100張起印|100起印|100\s*本起印/.test(text)) {
+        moqStale++;
+        bad(`moq_display 仍含舊 MOQ: ${text.slice(0, 70)}…`);
+      }
+    }
+  }
+  if (checked === 0) bad('未抽到任何含起印的 title/description (檢查邏輯可能有誤)');
+  else ok(`抽樣 ${checked} 條; moq_display 舊值殘留 ${moqStale} 條 (應為 0)`);
+  ok(`其中 price_tier ${priceTier} 條 (保留數字, 待價目同步波); industry_fact ${industry} 條 (保留不動)`);
+
+  // 格式轉換數字守恆 (抽真實 price_tier 樣本)
+  const samples = [
+    '100 張起印，HK$0.22/張',
+    '500 本起印，HK$6/本',
+    '100 張起，HK$0.25/張起',
+  ];
+  let fmtBad = 0;
+  for (const s of samples) {
+    if (classifyMoqString(s) !== 'price_tier') { bad(`分類器未把「${s}」判為 price_tier`); fmtBad++; continue; }
+    const out = formatPriceTier(s);
+    const a = (s.match(/\d[\d,]*/g) ?? []).join(',');
+    const b = (out.match(/\d[\d,]*/g) ?? []).join(',');
+    if (a !== b) { bad(`formatPriceTier 改動數字: 「${s}」→「${out}」`); fmtBad++; }
+  }
+  if (fmtBad === 0) ok('formatPriceTier 數字守恆 (3 樣本)');
+}
 
 console.log(`\n結果: ${pass} 通過 / ${fail} 失敗`);
 process.exit(fail ? 1 : 0);
