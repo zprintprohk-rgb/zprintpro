@@ -178,6 +178,30 @@ if (FROM_PROPOSALS) {
 }
 
 const BATCHES = {
+  /* ---------- manual-1: 人工改写批 (K3 2026-09-19 决策「21 条人工改写」) ----------
+   * 来源: 生成器「替代池+删除」双无解的槽位, 由人工按 GSC 展示量降序逐条改写。
+   * 纪律: 每条数字均取自 products.ts (minQuantity / basePrice, 已逐条回源头核对);
+   *       主词一律保留原文首段 (churn 红线); 品牌末尾一次; 目标 50-57。
+   * 注: 本批为**人工**产出, 不经生成器; 但**同样过四道闸门 + 独立复核** (脚本内校验)。
+   */
+  'manual-1': [
+    { slug: 'electronics-packaging-box', slots: { 'zh-hk': '電子產品包裝盒印刷 | EVA 內襯 | 200個起 HK$8起 | 智印港' }, src: { 'zh-hk': 46, note: 'moq=200 basePrice=8; EVA 為 features 實證內襯材質' } },
+    { slug: 'exercise-books', slots: { 'zh-hk': '作業簿印刷 | 四色印刷 膠裝 | 10本起 HK$4起 | 智印港' }, src: { 'zh-hk': 40, note: 'moq=10 (原標題稱 50本起 = DRIFT, 已對齊真值) basePrice=4; 58→51 收進 57 內' } },
+    { slug: 'waterproof-stickers', slots: { ja: '防水ステッカー | PVC ダイカット | 10枚〜¥41〜 | ZprintPro' }, src: { ja: 48, note: 'moq=10 basePrice_ja=41; 鉤子併寫去空格 58→57' } },
+    { slug: 'folded-leaflets', slots: { 'zh-hk': '摺頁單張 | A4/A5 雙面四色 | 10張起 HK$0.7起 | 智印港' }, src: { 'zh-hk': 36, note: 'moq=10 (原稱 100張起=DRIFT) basePrice=0.7; A4/A5 為 features 實證' } },
+    { slug: 'catalog-printing', slots: { en: 'Catalog Printing | 10 MOQ | Free US Ship | ZprintPro' }, src: { en: 61, note: 'TRIM: 以 10 MOQ (moq=10) 替換 Saddle-Stitched; Free US Ship 為線上既有短鉤' } },
+    { slug: 'kraft-paper-packaging-box', slots: { 'zh-hk': '牛皮紙包裝印刷盒 | 環保材質 | 300個起 HK$5起 | 智印港' }, src: { 'zh-hk': 43, note: 'moq=300 basePrice=5; 刪「多尺寸」為鉤子騰位' } },
+    { slug: 'school-flyers', slots: { 'zh-hk': '學校單張 | 雙面四色 80g書紙 | 10張起 HK$0.2起 | 智印港' }, src: { 'zh-hk': 36, note: 'moq=10 (原稱 100張起=DRIFT) basePrice=0.2; 80g書紙 為 features 實證' } },
+    { slug: 'spiral-notebooks', slots: { 'zh-hk': '線圈筆記本 | A4/A5 膠裝/騎馬釘 | 10本起 HK$8起 | 智印港' }, src: { 'zh-hk': 40, note: 'moq=10 (原稱 50本起=DRIFT) basePrice=8; A4/A5 為 features 實證' } },
+    { slug: 'thick-paper-flyers', slots: { 'zh-hk': '厚身單張 | A4/A5 雙面四色 | 10張起 HK$0.45起 | 智印港' }, src: { 'zh-hk': 36, note: 'moq=10 (原稱 100張起=DRIFT) basePrice=0.45; A4/A5 為 features 實證' } },
+    { slug: 'drink-menus', slots: { 'zh-hk': '餐廳酒水牌 | 防水 覆膜 圓角 | 100本起 HK$12起 | 智印港' }, src: { 'zh-hk': 38, note: 'moq=100 (原稱 50本起=DRIFT) basePrice=12; 圓角 為 features 實證' } },
+    { slug: 'pearl-envelopes', slots: { ja: 'パール封筒 | 両面印刷 凹凸 | 100枚〜¥64〜 | ZprintPro' }, src: { ja: 46, note: 'moq=100 basePrice_ja=64; 凹凸 為 features 實證 (可搭細線燙金或凹凸)' } },
+    { slug: 'fluorescent-stickers', slots: { ja: '蛍光ステッカー | PVC ダイカット | 10枚〜¥60〜 | ZprintPro' }, src: { ja: 48, note: 'moq=10 basePrice_ja=60; 併寫去空格 58→57' } },
+    { slug: 'a4-flyers', slots: { ja: 'A4 チラシ | 両面フルカラー | 10枚〜 ¥70〜 | ZprintPro' }, src: { ja: 46, note: 'moq=10 basePrice_ja=70' } },
+    { slug: 'textbooks', slots: { ja: '教科書 | 中綴じ/無線綴じ | 100冊〜 ¥1,288〜 | ZprintPro' }, src: { ja: 43, note: 'moq=100 basePrice_ja=1288' } },
+    { slug: 'white-card-bags', slots: { ja: '白カード紙袋 | エコ素材 | 100枚〜 ¥360〜 | ZprintPro' }, src: { ja: 44, note: 'moq=100 basePrice_ja=360' } },
+  ],
+
   p0: [
     {
       slug: 'business-envelopes',
