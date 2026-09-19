@@ -517,8 +517,16 @@ export function formatPriceTier(text: string): string {
 
 /** 膠印起訂量 (現行真實口徑; price-tables 內 anchor 亦以此為最低檔) */
 export const OFFSET_MIN_QTY = 100;
-/** 膠印開始有成本優勢的數量 (低於此值引導數碼) */
-export const OFFSET_ECONOMICAL_FROM = 200;
+/**
+ * 數碼／柯式的**經濟分界點**（≥ 此量建議走柯式）。
+ *
+ * 200 → 300（K3 2026-09-19 中期項，原話）：
+ *   「胶印建议门槛从 200 微调至 300 —— 市场数据显示数码/胶印经济分界点
+ *     通常在 **300-500**，而非 200。」
+ * 影響：`getPrintMethodAdvice()` 的過渡區間（OFFSET_MIN_QTY ~ 此值-1）與三語文案；
+ *   文案皆以變數插值，改此常數即同步（無硬編碼殘留）。
+ */
+export const OFFSET_ECONOMICAL_FROM = 300;
 
 export type PrintMethod = 'digital' | 'offset';
 
