@@ -1,13 +1,13 @@
 {
  "schema": "rule-translation-ledger/v1",
  "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
- "updated_at": "2026-09-19T11:16:59.196Z",
+ "updated_at": "2026-09-19T11:40:11.315Z",
  "bindings": {
   "blog-12-segment-skeleton": {
    "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "d65ef7eb28f61d0587a2d60c6885c6137ca43da3e1bab8da461776c80d26ca1d"
+    "sha256": "e18f06470fe808732c1b58cc7d744926c8088875e38e122c5d69cd15773572fa"
    },
    "producers": [
     {
@@ -34,18 +34,18 @@
    "title": "Blog/SKU 标题 + meta 规则 (v4 写满原则)",
    "rule": {
     "path": "docs/2026-09-09-k3-title-rule-v4-write-full.md",
-    "sha256": "6f7d6e593f4c91b58df2562856414a9cf2a6aa182c1eb5f51efdf41d85fae57f"
+    "sha256": "f27210ff302b6af194d8140376fb587f0e8ac054c36158aa4f84e7d99c307ad0"
    },
    "producers": [
     {
      "path": ".hermes/cron-prompts/zprintpro-weekly-meta-refresh.md",
-     "sha256": "16d646add5d84d4f573fdb2b009f25131afd707e8a2e7e0cf543c471c586fce5"
+     "sha256": "d2bd4107467fa0c92b6cf289c8b5f37dd15e5978f224cd0e0009f01f857c5fd6"
     }
    ],
    "guards": [
     {
      "path": "scripts/guards/blog-standard-guard.js",
-     "sha256": "f0e91be9b274a43b8b904a44118e61d218f1ab3396cfa9d682e93adfcb909fa5"
+     "sha256": "bd7328a1274c8b5726b2c2c08e93bbc26533a4317426199d49198e3e8bb1d167"
     },
     {
      "path": "scripts/guards/meta-description-guard.js",
@@ -57,7 +57,7 @@
    "title": "Schema 单一来源 = page.tsx (content 禁内嵌 JSON-LD)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "d65ef7eb28f61d0587a2d60c6885c6137ca43da3e1bab8da461776c80d26ca1d"
+    "sha256": "e18f06470fe808732c1b58cc7d744926c8088875e38e122c5d69cd15773572fa"
    },
    "producers": [
     {

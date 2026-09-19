@@ -331,4 +331,56 @@ node scripts/guards/rule-translation-guard.js --stamp    # 规则变更后刷新
 
 §6.3 第 3 步「拦截」= 沉淀门童规则；**本节是它的补丁**：沉淀时**必须同时回答「谁生成、谁检、谁读」三问**，缺任一位置即为未完成的规则。四步 SOP 的「验证」新增一闸：**新规则上线前，`rule-translation-guard.js` 必须已登记该绑定的三处 sha256**。
 
+## 7.4 一期→二期：从「发现漂移」到「证明被消费」（K3 2026-09-19 评估 C 批）
+
+**一期 = sha256 三处绑定**：解决「**能不能发现漂移**」。
+**二期的真问题不是「规则有没有发下去」，而是「规则有没有被消费」** —— 行业反面教材：某团队把契约编译成分发物（Prompt 前缀 / JSON Schema / Checklist / CI 规则）后，**Prompt 前缀发布 30 天没有任何 AI 会话注入记录，CI 规则配了半年拦截日志是空的**。契约写了、编译完了、分发下去了，**不等于被用了**。
+
+**最小可行消费追踪**：门禁每次运行输出 `[消费追踪]` 一行 + 证据 JSON 的 `rule_versions_used`：
+`{ rule_ssot, rule_section, rule_sha256_12, rule_mtime, guard_sha256_12 }`。
+**判据**：`rule_sha256_12` 与当前 SSoT 指纹不一致 ⇒ 本次产出基于**旧规则**，须报警，不得当作「已消费最新规则」。
+**待办（二期二步）**：同字段注入 lane 的 `run-context-<lane>.json`，实现**生成侧**消费追踪（当前已实现门禁侧）。
+
+## 7.5 基线必须是「递减机制」而非「静态快照」（K3 2026-09-19 评估 A3 加固）
+
+**失败模式（绝对基线）**：存量缺陷拍成静态豁免清单 ⇒ 继承的漂移在每个 PR 报红 ⇒ **红色不再区分「你破坏了它」与「它本来就这样」** ⇒ 红色被当噪音忽略，清单从「待清理债务」变「永久豁免」。
+
+| 机制 | 做法 |
+|------|------|
+| 只拦新增 | `--baseline` 下基线内 FAIL 不阻断；**新增/回归**即 exit 1 |
+| **自动递减** | 每轮跑完，基线内条目已转 PASS ⇒ **自动从台账删除并落盘**（`--no-prune` 仅用于排查，禁常态） |
+| 报告口径 | 固定输出「基线 X / 现存 Y / 已修 Z / 剩余待修 Y」 |
+
+**命令**（已接入 `.githooks/pre-push`）：`node scripts/guards/blog-quality-12-rules-guard.js --baseline --online --json`
+
+## 7.6 bypass（`--no-verify`）必须「有痕迹、有理由」（K3 2026-09-19 评估）
+
+**前提认知**：pre-commit / pre-push **不是边界** —— 一行 `--no-verify` 即可绕过。治理点不是「禁止」，而是**留痕 + 留理由 + 可统计**。
+
+1. bypass 提交的 commit message **末尾必须带 footer**：`Bypass-rationale: <为什么这次必须绕过门禁>`；
+2. 审计台账 `.hermes/regression-guard/bypass-audit.jsonl`（append-only：时间 / sha / 理由 / 触及文件数）；
+3. `.githooks/pre-push` 门童 #22（`scripts/guards/bypass-audit-guard.js`）检查最近 5 条 commit：**旁路但无 footer ⇒ 拒 push**；`--report` 输出旁路频率（可监控指标）；`--backfill` 在 commit 事后补 footer 时回填台账。
+4. **诚实性声明**：git 读不出「是否用了 `--no-verify`」⇒ 判定以 message footer 为**唯一可信凭据**；缺凭据记 `UNATTRIBUTED`，**不得当作「没有旁路」**。
+
+## 7.7 豁免治理：不再用 `--no-verify` 绕过误报（K3 2026-09-19 决策一(a)）
+
+**问题性质**：**规则书的引用形态与规则书的扫描规则产生了结构性冲突** —— cron prompt 必须记录「12 件事属实」历史条款（含 `FSC-C123456`），字面扫描必然判违规。实测代价：改动 2 个 prompt 被 `SOP10_CERT_NO`(red) 硬拦 ⇒ 只能整批 `git commit --no-verify`，而它**连带放过所有门童**。
+
+**决策 (a)**：`.hermes/cron-prompts/` 加入 `scripts/guards/common.js` 的 `FULL_EXEMPT_PATHS`（与 AGENTS.md / `.hermes/logs` 同族理由：规则书必然引用禁用形态字面）。
+
+**附加条件**：逐条登记 `.hermes/regression-guard/cron-prompts-exemption-manifest.json`（每文件 `literals` + `reason` + 登记时间/人），由门童 #23 `cron-prompts-exemption-guard.js` 对账「**声明集合 = 实际集合**」：
+- 文件有 / 台账无 ⇒ 🔴 豁免范围外新字面（拒 push，须登记或清除）；
+- 台账有 / 文件无 ⇒ 🟡 幽灵豁免（台账过期，不许留）；
+- 台账未列出的文件 ⇒ **等于不豁免**。
+⇒ 豁免范围从「整目录全放行」收紧为「**已登记字面**」，可审计、可对账。
+
+## 7.8 Pillar 字数「季度递减目标」制（K3 2026-09-19 建议，⏳ 待正式拍板）
+
+**配置** `.hermes/regression-guard/pillar-wordcount-targets.json`（`floor` 当季硬线 / `target` 当季目标）。
+**判据**（`blog-standard-guard.js`）：`len < floor` ⇒ 🔴 FAIL；`floor ≤ len < target` ⇒ 🟠 WARN 不阻断；`len ≥ target` ⇒ 达标。
+**路径**：2026Q3 6,000/8,000 → 2026Q4 6,000/**12,000** → 2027Q1 8,000 → 2027Q2 10,000 → 2027Q3+ 12,000。
+**未拍板态** `PENDING_K3_APPROVAL` ⇒ `floor = 0`（只 WARN），**避免 12,000 硬线长期报红被当噪音**（实测 5 篇 Pillar zh-hk 3,817 / 3,952 / 4,337 / 6,034 / 5,704，无一达 12,000）。
+**行业水位**：pillar post 通常 2,500-10,000 词 ⇒ **12,000 字适合作 SSoT 目标值而非即时硬线**。
+**拍板后动作**：K3 一句「采纳」⇒ 把 `status` 改 `APPROVED` + 填 `approved_by/approved_at`，门禁自动按当季 floor 生效（零代码改动）。
+
 **文件结束。**

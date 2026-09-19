@@ -1,0 +1,43 @@
+{
+  "schema": "cron-prompts-exemption-manifest/v1",
+  "note": "K3 2026-09-19 决策一(a): .hermes/cron-prompts/ 加入 common.js FULL_EXEMPT_PATHS —— 理由与 AGENTS.md / .hermes/logs 同族: 规则书/指令书**必然引用禁用形态字面**(例如『不要写 FSC-C123456』这句话本身就含 FSC-C123456), 字面扫描 = 必然误报。本 manifest 把『豁免范围』从『整个目录全放行』收紧为『逐条登记的已知字面』, 可审计、可对账。任何新增命中都必须在此登记并附理由, 否则门童 #23 报漂移。",
+  "exempt_dir": ".hermes/cron-prompts/",
+  "rule_ids": ["SOP10_CERT_NO", "CRED_FSC_C123456", "CRED_ISO_9001", "CRED_1000_PLUS", "CRED_HEIDELBERG", "CRED_4_PLUS_NUMBER"],
+  "entries": [
+    {
+      "file": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
+      "literals": ["FSC-C123456", "ISO 9001", "1,000+", "海德堡", "12 大行业", "24h SLA"],
+      "reason": "历史条款原文: K3 8/19 拍板「12 件事属实」清单与 8/28 重写指令含这些字面; 属『规则书引用』, 非客户可见内容。",
+      "registered_at": "2026-09-19",
+      "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
+    },
+    {
+      "file": ".hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
+      "literals": ["FSC-C123456", "ISO 9001", "1,000+", "海德堡", "Heidelberg", "12 大行业", "24h SLA"],
+      "reason": "同上; 另含 §0.23 数据诚信示例与 SOP-10 5 问门禁原文。",
+      "registered_at": "2026-09-19",
+      "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
+    },
+    {
+      "file": ".hermes/cron-prompts/zprintpro-gsc-feedback-loop.md",
+      "literals": [],
+      "reason": "未检出禁用形态字面 (占位登记, 便于未来对账)。",
+      "registered_at": "2026-09-19",
+      "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
+    },
+    {
+      "file": ".hermes/cron-prompts/zprintpro-weekly-meta-refresh.md",
+      "literals": [],
+      "reason": "未检出禁用形态字面 (占位登记, 便于未来对账)。",
+      "registered_at": "2026-09-19",
+      "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
+    },
+    {
+      "file": ".hermes/cron-prompts/zprintpro-monthly-matrix-audit.md",
+      "literals": [],
+      "reason": "未检出禁用形态字面 (占位登记, 便于未来对账)。",
+      "registered_at": "2026-09-19",
+      "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
+    }
+  ]
+}

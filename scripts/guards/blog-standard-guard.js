@@ -23,8 +23,40 @@ const path = require('path');
 const { equiv: titleEquiv, TITLE_MIN, TITLE_MAX } = require('./title-equiv.js');
 
 const REQUIRED_DATE = '2026-09-03';
-const MIN_PILLAR_CHARS = 12000;
+const MIN_PILLAR_CHARS = 12000;   // 12,000 = 最终目标值 (实际判定由 getPillarWordTarget() 季度配置决定)
 const REQUIRED_SCHEMAS = ['Article', 'FAQPage', 'BreadcrumbList', 'HowTo', 'Organization'];
+
+/**
+ * Pillar 字数「季度递减目标」配置读取 (K3 2026-09-19 建议; 配置 = .hermes/regression-guard/pillar-wordcount-targets.json)
+ * 语义: floor = 当季硬线 (低于即 FAIL); target = 当季目标 (未达记 WARN, 不阻断)。
+ * 未拍板态 (status != APPROVED) ⇒ floor 取 effective_now.floor (当前 = 0, 只 WARN 不阻断) ——
+ *   避免 12,000 硬线因存量 (5 篇均 <6,100 字) 长期报红被当噪音忽略。
+ * 配置缺失/损坏 ⇒ 退回旧行为 (floor=target=12,000) 且不静默放行。
+ */
+function getPillarWordTarget(now = new Date()) {
+  const fs = require('fs');
+  const cfgPath = path.join(__dirname, '..', '..', '.hermes', 'regression-guard', 'pillar-wordcount-targets.json');
+  const fallback = { floor: MIN_PILLAR_CHARS, target: MIN_PILLAR_CHARS, quarter: 'N/A', status: 'CONFIG_MISSING', note: '配置缺失, 退回 12,000 硬线' };
+  try {
+    const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8').replace(/^\uFEFF/, ''));
+    const iso = now.toISOString().slice(0, 10);
+    const q = (cfg.quarters || []).find(x => iso >= x.from && iso <= x.to);
+    if (cfg.status && cfg.status !== 'APPROVED') {
+      const e = cfg.effective_now || {};
+      return {
+        floor: typeof e.floor === 'number' ? e.floor : 0,
+        target: typeof e.target === 'number' ? e.target : MIN_PILLAR_CHARS,
+        quarter: q ? q.quarter : 'N/A',
+        status: cfg.status,
+        note: e.label || '',
+      };
+    }
+    if (!q) return fallback;
+    return { floor: q.floor, target: q.target, quarter: q.quarter, status: 'APPROVED', note: q.note || '' };
+  } catch (e) {
+    return fallback;
+  }
+}
 
 const PILLAR_TRIGGERS = [
   /pillar/i,
@@ -111,16 +143,27 @@ function checkPillar(file, content) {
       });
     }
 
-    // 检查 5: content 长度 >= 12,000 字
-    if (blogContent.length < MIN_PILLAR_CHARS) {
+    // 检查 5: content 长度 —— 季度递减目标制 (K3 2026-09-19 建议; 见 pillar-wordcount-targets.json)
+    const wc = getPillarWordTarget();
+    if (blogContent.length < wc.floor) {
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: 0,
-        match: `${slug}: content len=${blogContent.length} < ${MIN_PILLAR_CHARS}`,
+        match: `${slug}: content len=${blogContent.length} < 当季下限 ${wc.floor} (${wc.quarter}, ${wc.status})`,
         severity: 'red',
         ruleId: 'BLOG_LENGTH_INSUFFICIENT',
-        ruleName: 'Pillar blog 12,000+ 字硬性要求',
-        fix: `升级 ${slug} content 到 12,000+ 字 Pillar 深度版`,
+        ruleName: `Pillar blog 字数下限 ${wc.floor} (季度递减目标制)`,
+        fix: `升级 ${slug} content 到 >=${wc.floor} 字 (当季下限); 本季目标 ${wc.target} 字`,
+      });
+    } else if (blogContent.length < wc.target) {
+      hits.push({
+        file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
+        line: 0,
+        match: `${slug}: content len=${blogContent.length} >= 下限 ${wc.floor} 但 < 目标 ${wc.target} (${wc.quarter}, 差 ${wc.target - blogContent.length} 字)`,
+        severity: 'orange',
+        ruleId: 'BLOG_LENGTH_BELOW_TARGET',
+        ruleName: 'Pillar blog 字数低于季度目标 (WARN, 不阻断)',
+        fix: `按季度递减路径把 ${slug} 扩到 ${wc.target} 字`,
       });
     }
 

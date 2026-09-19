@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T11:14:26.497Z",
+ "generated_at": "2026-09-19T11:40:08.984Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -1639,63 +1639,63 @@
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=228085",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/en/blog/campus-education-printing-pillar-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "en",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=250588",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/en/blog/foil-stamping-3-applications-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=187337",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/packaging-box-pricing-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=180131",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[HowTo,Organization,Article,FAQPage,BreadcrumbList] blocks=6+5 len=166",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/poster-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=193706",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=213985",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/foil-stamping-3-applications-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   }
  ]
 }

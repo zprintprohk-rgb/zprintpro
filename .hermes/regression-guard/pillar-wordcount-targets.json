@@ -1,0 +1,20 @@
+{
+  "schema": "pillar-wordcount-targets/v1",
+  "note": "Pillar 字数门禁「季度递减目标」配置 (K3 2026-09-19 建议采纳, 待 K3 正式拍板)。口径: 硬线 = 当季 floor (低于即 FAIL); 目标 = target (低于目标但 >= floor 记 WARN, 不阻断)。设计理由: 12,000 字是高于行业通用标准的目标值 (行业 pillar 通常 2,500-10,000 词), 直接当硬线会因存量 (5 篇均 <6,100 字) 长期报红 → 红色被当噪音忽略 (口径同 .hermes/regression-guard error-patterns 「接错门童 = 全站停摆」的反面)。季度递减则给出可追踪的改进路径。",
+  "status": "PENDING_K3_APPROVAL",
+  "approved_by": null,
+  "approved_at": null,
+  "effective_now": {
+    "floor": 0,
+    "target": 12000,
+    "label": "未拍板态: floor=0 (不阻断), 只报 WARN 提示与 12,000 目标差距"
+  },
+  "quarters": [
+    { "quarter": "2026Q3", "from": "2026-07-01", "to": "2026-09-30", "floor": 6000, "target": 8000,  "note": "过渡季: 现状 5 篇中 1 篇 (campus zh-hk 6,034) 已达 floor" },
+    { "quarter": "2026Q4", "from": "2026-10-01", "to": "2026-12-31", "floor": 6000, "target": 12000, "note": "K3 建议的起点: 6,000 下限 / 12,000 目标" },
+    { "quarter": "2027Q1", "from": "2027-01-01", "to": "2027-03-31", "floor": 8000, "target": 12000, "note": "每篇扩充 2,000 字" },
+    { "quarter": "2027Q2", "from": "2027-04-01", "to": "2027-06-30", "floor": 10000, "target": 12000, "note": "每篇扩充 2,000 字" },
+    { "quarter": "2027Q3", "from": "2027-07-01", "to": "2027-12-31", "floor": 12000, "target": 12000, "note": "达标: 下限 = 目标 = 12,000" }
+  ],
+  "data_source": "本配置由 K3 2026-09-19 评估建议生成; 现状字数实测 = .hermes/reports/blog-12seg-checklist-2026-09-19-online.json (§段5/可见字数) + 2026-09-19 现场实测 (zh-hk 3,817/3,952/4,337/6,034/5,704)"
+}
