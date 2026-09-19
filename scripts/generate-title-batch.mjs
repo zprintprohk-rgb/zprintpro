@@ -138,6 +138,39 @@ function harvestShortHooks(bank) {
   }
   return out;
 }
+/* ★ G3 语义语言一致性 helper (K3 2026-09-19 决策 3)
+ * 事故背书: `両面カラー印刷 両面チラシ | Free US Ship | ZprintPro` ——
+ *   **日文页面向日本用户承诺「美国免运费」**。原 G3 只查字符集 (CJK/假名/简体),
+ *   而 `Free US Ship` 是纯拉丁串 ⇒ **字面合法、语义错误**, 原 G3 恒判通过。
+ * 设计难点: CJK 标题**合法**含大量拉丁 token (PVC/UV/DHL/A4/C4/420×594mm/HK$/2h),
+ *   一律禁拉丁 = 海量误报。⇒ 只拦**多词拉丁短语** (≥2 拉丁词), 且非规格/单位/品牌白名单。
+ *   单 token 规格词放行; `Free US Ship` / `Same Day Printing` / `Free Proof` 类英文短语则拦。
+ */
+const LATIN_ALLOW = new Set(['pvc', 'pp', 'bopp', 'uv', 'dpi', 'cmyk', 'dhl', 'fsc', 'iso', 'sgs', 'fda',
+  'hk', 'hkd', 'usd', 'jpy', 'nt', 'rmb', 'ai', 'moq', 'mm', 'cm', 'kg', 'g', 'mil', 'lb', 'gsm',
+  'dl', 'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'b4', 'b5', 'c4', 'c5', 'c6', 'e', 'f', 'r3mm',
+  'zprintpro', 'qr', 'code', 'id', 'k', 'x', 'eva', 'ppp']);
+function latinPhraseViolation(title) {
+  const re = /[A-Za-z0-9][A-Za-z0-9.'\-]*(?:[ \t]+[A-Za-z0-9][A-Za-z0-9.'\-]*)+/g;
+  let m;
+  while ((m = re.exec(title)) !== null) {
+    const toks = m[0].split(/[ \t]+/).map((w) => w.replace(/[.'\-]+$/, '')).filter(Boolean);
+    if (toks.length < 2) continue;
+    if (toks.every((w) => LATIN_ALLOW.has(w.toLowerCase()))) continue;
+    /* ★ 判别实质: 统计**真英文词** = 纯字母 + 长度≥3 + 不在白名单。
+     *   两轮实测确立的边界:
+     *     ① 只看「有空格的多词拉丁串」不够 —— `UV 100` / `C4 229` / `A6 50` / `57mm 76mm`
+     *        是「规格 token + 数字」, 全部误报 (含数字的 token 视为规格, 不计英文词);
+     *     ② 至少要 **2 个真英文词** 才是英文短语: `Free US Ship`(free/ship) /
+     *        `custom red packets`(custom/red/packets) / `Save the Date`(save/the/date) ✅ 命中;
+     *        `PVC menu`(仅 menu 一个) 放过 —— 宁可漏一个轻微case, 不可制造 20 条误报。
+     */
+    const englishWords = toks.filter((w) => /^[A-Za-z]{3,}$/.test(w) && !LATIN_ALLOW.has(w.toLowerCase()));
+    if (englishWords.length >= 2) return m[0];
+  }
+  return null;
+}
+
 function gates(title, locale, trace) {
   const e = equiv(title);
   const g = [];
@@ -147,15 +180,23 @@ function gates(title, locale, trace) {
   const nums = [...title.matchAll(/\d+/g)].map((m) => m[0]);
   const allTraced = trace.every((t) => t.src);
   g.push({ id: 'G2_数字来源', pass: allTraced, detail: `${trace.length} 个要素全附来源: ${trace.map((t) => t.src.slice(0, 34)).join(' / ')}` });
-  // 闸门3 语言纯净
+  // 闸门3 语言纯净 (= 字符集污染 + ★语义语言一致性, K3 2026-09-19 决策 3)
   const brand = BRAND[locale];
   let pure = true, why = 'ok';
   if (locale === 'en' && /[\u2E80-\u9FFF\u3040-\u30FF]/.test(title)) { pure = false; why = 'en 含 CJK'; }
   if (locale === 'ja' && SIMP.test(title)) { pure = false; why = 'ja 含简体字形'; }
   if (locale === 'zh-hk') {
-    if (KANA.test(title)) { pure = false; why = 'zh-hk 含日文假名'; }    else if (SIMP.test(title)) { pure = false; why = 'zh-hk 含简体字形'; }
+    if (KANA.test(title)) { pure = false; why = 'zh-hk 含日文假名'; }
+    else if (SIMP.test(title)) { pure = false; why = 'zh-hk 含简体字形'; }
   }
   if (locale === 'zh-hk' && /ZprintPro/.test(title)) { pure = false; why = 'zh-hk 混入 ZprintPro (双品牌)'; }
+  // ★ 语义语言一致性: CJK 标题内不得出现**英文短语** (多词拉丁)
+  //   事故: ja 标题被塞入 `Free US Ship` (= 向日本用户承诺美国免运费)。
+  //   原 G3 只查字符集 ⇒ 纯拉丁串恒通过 ⇒ 该缺陷可静默上线。
+  if (pure && locale !== 'en') {
+    const ph = latinPhraseViolation(title);
+    if (ph) { pure = false; why = `${locale} 标题含**英文短语**「${ph}」⇒ 跨市场语义错配 (非规格/单位/品牌, 应换为同语言钩子)`; }
+  }
   g.push({ id: 'G3_语言纯净', pass: pure, detail: why });
   // 闸门4 品牌末尾一次
   const bc = title.split(brand).length - 1;
