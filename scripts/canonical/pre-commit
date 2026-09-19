@@ -134,6 +134,28 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.7 門童清單編號衝突檢查 (K3 2026-09-19 第四項建議)
+# 背景事故: 新增 MOQ 閘門時只掃 check-regression-guard.js, 漏掃 scripts/guards/ 目錄
+#   → 誤編 #22 (已被 bypass-audit-guard 佔用), #23 (cron-prompts-exemption-guard)
+#   → push 時才發現撞號, 浪費一輪。
+# 口徑: 門童編號 / 規則 ID 是**共享命名空間**, 新增前必須先查清單。
+# 清單: scripts/guards/guard-manifest.json (產生器 scripts/gen-guard-manifest.mjs)
+echo "3️⃣.7  門童清單編號衝突檢查..."
+if command -v node &> /dev/null; then
+  if [ -f scripts/gen-guard-manifest.mjs ]; then
+    node scripts/gen-guard-manifest.mjs
+    if [ $? -ne 0 ]; then
+      echo ""
+      echo "❌ 門童編號衝突: 同一編號被多個門童聲明"
+      echo ""
+      echo "💡 修法:"
+      echo "  1. 查 scripts/guards/guard-manifest.json 的 maxGuardNumber, 取遞增值"
+      echo "  2. 改完執行 node scripts/gen-guard-manifest.mjs --write 刷新清單"
+      exit 1
+    fi
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

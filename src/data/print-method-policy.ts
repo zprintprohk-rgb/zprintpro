@@ -363,6 +363,38 @@ export function withSceneMoq(sceneKey: string, locale: Locale, lines: string[]):
   return [...lines.slice(0, 2), parts.join(' · ')];
 }
 
+/* ============================================================================
+ * E. 貼紙子品類 MOQ 分層（K3 2026-09-19 裁決）
+ * ============================================================================
+ * K3 原話：「贴纸『户外/可移 100 个起』是正确的分层设置，不是漂移——市场数据显示
+ *   3M 户外贴和可移贴确实需要更高门槛，应在 SSoT 中明确子品类 MOQ 映射。」
+ *
+ * ★ 兩層概念必須分開，否則必然誤判為漂移：
+ *   ① **SKU 起訂量**（`products.ts minQuantity`）= 引擎可接的最小量 → 貼紙線 8 個 SKU 皆 10
+ *   ② **子品類檔位**（本節）= 對外說明用的分層門檻，含「大量檔」
+ *
+ *   2026-09-19 實測：貼紙線**無「大批量」專屬 SKU**（8 個 SKU 全部 minQuantity=10，
+ *   價表 stickers.json 兩個 config 價階亦由 10 起）。
+ *   ⇒ K3 所述「戶外可移大批量 100」屬**大量檔位**，不是任何 SKU 的起訂量，
+ *     故與 `minQuantity` 不矛盾。把兩者混為一談，正是本輪漂移誤判的來源之一。
+ */
+export const STICKER_SUBCATEGORY_MOQ = {
+  /** 通用貼紙（銅版紙／合成紙／透明等標準面材） */
+  general: { minQty: 10, kind: 'sku' as const },
+  /** 3M 戶外貼（耐候膠系；對應 waterproof-stickers） */
+  outdoor3m: { minQty: 10, kind: 'sku' as const },
+  /** 可移貼（無殘膠；對應 removable-stickers） */
+  removable: { minQty: 10, kind: 'sku' as const },
+  /** 戶外可移·**大量檔**（非 SKU 起訂量，是批量經濟門檻） */
+  outdoorRemovableBulk: { minQty: 100, kind: 'bulk_tier' as const },
+} as const;
+
+/** 取子品類門檻；`kind` 區分「SKU 起訂量」與「大量檔」，呼叫端不得混用 */
+export function getStickerSubcategoryMoq(key: keyof typeof STICKER_SUBCATEGORY_MOQ) {
+  return STICKER_SUBCATEGORY_MOQ[key];
+}
+
+
 
 /**
  * C. 海報按尺寸細分目標。

@@ -1,0 +1,1671 @@
+{
+  "schema": "guard-manifest/v1",
+  "note": "門童編號與規則 ID 是**共享命名空間**：新增前必須先查本清單避免撞號（K3 2026-09-19 建議）。產生器：scripts/gen-guard-manifest.mjs；校驗：node scripts/gen-guard-manifest.mjs（有衝突 exit 1）",
+  "generatedAt": "2026-09-19T12:01:51.006Z",
+  "guardNumbers": {
+    "1": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "2": [
+      "scripts\\guards\\phone-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "3": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\canonical\\pre-commit",
+      "scripts\\check-brand-baseline.mjs",
+      "scripts\\check-regression-guard.js",
+      "scripts\\setup-hooks.sh",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ],
+    "4": [
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\check-regression-guard.js",
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "5": [
+      "scripts\\guards\\sop10-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "6": [
+      "scripts\\guards\\entity-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "7": [
+      "scripts\\guards\\count-guard.js",
+      "scripts\\guards\\gsc-source-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "8": [
+      "scripts\\guards\\register-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "9": [
+      "scripts\\guards\\gsc-source-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "11": [
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "12": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "13": [
+      "scripts\\guards\\internal-links-cta-guard.js"
+    ],
+    "14": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js",
+      "scripts\\gen-guard-manifest.mjs",
+      ".githooks/pre-push"
+    ],
+    "15": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\guards\\common.js",
+      "scripts\\canonical\\pre-commit",
+      "scripts\\check-regression-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ],
+    "16": [
+      "scripts\\guards\\ce-truncation-guard.js",
+      "scripts\\guards\\count-guard.js",
+      "scripts\\guards\\gsc-leak-guard.js",
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "17": [
+      "scripts\\guards\\ce-truncation-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "18": [
+      "scripts\\guards\\institutional-promise-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "19": [
+      "scripts\\guards\\price-band-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "20": [
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\check-regression-guard.js",
+      "scripts\\gen-guard-manifest.mjs",
+      "scripts\\test-meta-description-guard.js"
+    ],
+    "21": [
+      "scripts\\guards\\rule-translation-guard.js",
+      ".githooks/pre-push"
+    ],
+    "22": [
+      "scripts\\guards\\bypass-audit-guard.js"
+    ],
+    "23": [
+      "scripts\\guards\\bypass-audit-guard.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
+    "24": [
+      "scripts\\canonical\\pre-commit",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ]
+  },
+  "ruleIds": {
+    "ACCENT_ORANGE": [
+      "scripts\\generate-og-image-v2.js"
+    ],
+    "ACCENT_ORANGE_DARK": [
+      "scripts\\generate-og-image-v2.js"
+    ],
+    "ACTIVE_LOCALE": [
+      "scripts\\audit-seo-meta.ts"
+    ],
+    "AIRWALLEX_API_KEY": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "ALLOWLIST_KEYWORDS": [
+      "scripts\\check-content-guard.js"
+    ],
+    "ALL_URLS": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "ALREADY_SYNCED": [
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "ALT_FIXES": [
+      "scripts\\fix-ja-alt-23sku.ts",
+      "scripts\\fix-ja-warn-12sku.ts",
+      "scripts\\fix-p3-en-error.ts",
+      "scripts\\fix-p3-ja-error.ts"
+    ],
+    "APPLY_MODE": [
+      "scripts\\apply-en-longdesc-v3.mjs",
+      "scripts\\apply-en-sku-seo.mjs"
+    ],
+    "APPROVED_BULK_TIERS": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "ARK_API_KEY": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "A_FIELDS": [
+      "scripts\\check-brand-mentions.mjs"
+    ],
+    "BACKUP_DIR": [
+      "scripts\\gen-price-data.mjs",
+      "scripts\\process-product-images-v2.js",
+      "scripts\\process-product-images.js"
+    ],
+    "BAD_FIELD": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "BASELINE_FILE": [
+      "scripts\\guards\\ce-truncation-guard.js",
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "BASELINE_PATH": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "BASE_URL": [
+      "scripts\\generate-image-sitemap.js",
+      "scripts\\generate-sitemap.js"
+    ],
+    "BASH_SOURCE": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "BATCH_NAME": [
+      "scripts\\apply-title-batch.mjs"
+    ],
+    "BC_TO_GREETING_RE": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "BIDIRECTIONAL_RULES": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "BK002_GUIDE": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "BK002_PRICE_BAND": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "BK002_SLUG": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "BK004_SOURCE": [
+      "scripts\\convert-product-images.mjs"
+    ],
+    "BLOGJSON_CTRL": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js"
+    ],
+    "BLOGJSON_EMPTY": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js"
+    ],
+    "BLOGJSON_KEYS": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js"
+    ],
+    "BLOGJSON_MOJIBAKE": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js"
+    ],
+    "BLOGJSON_PARSE": [
+      "scripts\\guards\\blog-data-integrity-guard.js",
+      "scripts\\test-blog-data-integrity-guard.js"
+    ],
+    "BLOG_DATE_INVALID": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_DIR": [
+      "scripts\\setup-multilingual-images.js"
+    ],
+    "BLOG_EXCERPT_EMPTY": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_H1_TEMPLATE": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_LASTUPDATED_INVALID": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_LENGTH_BELOW_TARGET": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_LENGTH_INSUFFICIENT": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_OUT": [
+      "scripts\\batch-process-images.js"
+    ],
+    "BLOG_PROMPTS": [
+      "scripts\\batch-process-images.js",
+      "scripts\\fix-meta-json.js"
+    ],
+    "BLOG_QA_ANSWER_LOCALE": [
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\test-meta-description-guard.js"
+    ],
+    "BLOG_SCHEMAS_ARRAY_MISSING": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_SCHEMA_5BLOCKS": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_TARGET": [
+      "scripts\\batch-process-images.js"
+    ],
+    "BLOG_TITLE_LENGTH": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLUE_DARK": [
+      "scripts\\generate-og-image-v3.js"
+    ],
+    "BLUE_DEEP": [
+      "scripts\\generate-og-image-v3.js"
+    ],
+    "BLUE_LIGHT": [
+      "scripts\\generate-og-image-v4.js",
+      "scripts\\generate-og-image-v5.js"
+    ],
+    "BLUE_SOFT": [
+      "scripts\\generate-og-image-v4.js",
+      "scripts\\generate-og-image-v5.js"
+    ],
+    "BOOK_HINT": [
+      "scripts\\moq10-check-books-claims.mjs",
+      "scripts\\moq10-scan-books-page-claims.ts"
+    ],
+    "BOOK_SKUS": [
+      "scripts\\moq10-scan-books-page-claims.ts"
+    ],
+    "BOOK_SLUGS": [
+      "scripts\\moq10-books-minquantity-10.mjs"
+    ],
+    "BRAND_CONSISTENCY": [
+      "scripts\\guards\\brand-guard.js"
+    ],
+    "BRAND_DOUBLE": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js",
+      "scripts\\check-brand-baseline.mjs"
+    ],
+    "BRAND_JA_ALTERNATE": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js"
+    ],
+    "BRAND_LOCALE_MISMATCH": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js",
+      "scripts\\check-brand-baseline.mjs",
+      "scripts\\check-regression-guard-clean.mjs",
+      "scripts\\moq10-action-list-v3.ts",
+      "scripts\\moq10-diag-brand.js"
+    ],
+    "BRAND_OK": [
+      "scripts\\sku-title-census.mjs"
+    ],
+    "BRAND_TOKENS": [
+      "scripts\\guards\\brand-guard.js"
+    ],
+    "BRAND_TYPO": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js"
+    ],
+    "BUS_UNAVAILABLE": [
+      "scripts\\inject-results-bus-contract.mjs"
+    ],
+    "BYPASS_MARK_RE": [
+      "scripts\\guards\\bypass-audit-guard.js"
+    ],
+    "CALENDAR_PRICE_BAND": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "CALENDAR_SLUGS": [
+      "scripts\\moq10-repair-drift.ts"
+    ],
+    "CALIBRATION_DATE_PATTERNS": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "CALIBRATION_KEYWORDS": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "CANONICAL_HOOK": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "CATEGORIES_DIR": [
+      "scripts\\setup-multilingual-images.js"
+    ],
+    "CATEGORY_DEFAULT": [
+      "scripts\\seedream-prompt-router.js"
+    ],
+    "CATEGORY_LEVEL_TARGETS": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "CATEGORY_MAP": [
+      "scripts\\moq10-verify-residual-moq.ts"
+    ],
+    "CATEGORY_SCENES": [
+      "scripts\\generate-seedream-prompts-csv.js"
+    ],
+    "CATEGORY_TEMPLATES": [
+      "scripts\\enrich-body-p4.ts"
+    ],
+    "CAT_DEFAULT_MATERIAL": [
+      "scripts\\clean-faq-alt.ts"
+    ],
+    "CAT_KEYFEATURE": [
+      "scripts\\clean-faq-alt.ts"
+    ],
+    "CAT_VERB": [
+      "scripts\\clean-faq-alt.ts"
+    ],
+    "CAT_VERB_ZHHK": [
+      "scripts\\fix-meta-warn.ts"
+    ],
+    "CE_TRUNCATION_CUSTOMER_VISIBLE": [
+      "scripts\\guards\\ce-truncation-guard.js"
+    ],
+    "CJK_IDEOGRAPH_RE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "COMMIT_MODE": [
+      "scripts\\check-regression-guard.js"
+    ],
+    "COMMIT_MSG_TMP": [
+      "scripts\\commit-isolated.mjs"
+    ],
+    "CONDITION_MARKERS": [
+      "scripts\\guards\\institutional-promise-guard.js"
+    ],
+    "CONFIG_MISSING": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "CONTAINER_FIELDS": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "CONTENT_DIR": [
+      "scripts\\rewrite-blog-content-v3.mjs"
+    ],
+    "CONTENT_MAP": [
+      "scripts\\rewrite-blog-content-v3.mjs"
+    ],
+    "COUNT_MISLEADING": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "COUNT_NO_4_LOCALE": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "COUNT_NO_CALIBRATION": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "COUNT_NO_RETRACTION": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "COUNT_NO_SOURCE": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "CRED_1000_PLUS": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
+    "CRED_15_YEARS": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_4_PLUS_NUMBER": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_FSC_C123456": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_HEIDELBERG": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
+    "CRED_INTL_TOP": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_ISO_9001": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "CRED_SELF_FACTORY": [
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_TUV_RHEINLAND": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_X_FOLD": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRED_X_INDUSTRIES": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js"
+    ],
+    "CROSS_CATEGORY_PAGES": [
+      "scripts\\moq10-action-list-v3.ts"
+    ],
+    "CSV_PATH": [
+      "scripts\\fix-missing-seo-images.js",
+      "scripts\\integrate-seo-images.js"
+    ],
+    "CSV_TITLE_COL": [
+      "scripts\\check-sku-csv-sync.mjs"
+    ],
+    "CTA_TRIGGERS": [
+      "scripts\\fix-p3-en-cta.ts",
+      "scripts\\fix-p3-ja-cta.ts"
+    ],
+    "CTA_TRIGGERS_BY_LOCALE": [
+      "scripts\\audit-seo-meta.ts"
+    ],
+    "CTA_TRIGGERS_ZHHK": [
+      "scripts\\audit-seo-meta.ts"
+    ],
+    "CUSTOMER_VISIBLE_FILES": [
+      "scripts\\guards\\ce-truncation-guard.js",
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "DATA_DIR": [
+      "scripts\\manual-weekly-recovery-2026-07-06.mjs"
+    ],
+    "DATA_FILES": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "DECLARATION_RE": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "DELETIONS_ONLY": [
+      "scripts\\moq10-repair-drift.ts"
+    ],
+    "DEPLOY_TARGET": [
+      "scripts\\deploy.sh"
+    ],
+    "DEPRECATED_HEAD_LINES": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "DEPRECATED_MARKER": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "DIGITAL_LINE_BOOK_SLUGS": [
+      "scripts\\moq10-books-minquantity-10.mjs"
+    ],
+    "DOCS_URLS": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "DOD_MODE": [
+      "scripts\\check-regression-guard.js"
+    ],
+    "DOUBLE_METHOD_RECOUNT": [
+      "scripts\\gen-guard-manifest.mjs"
+    ],
+    "DRY_RUN_OK": [
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "DUPLICATE_IDEMPOTENCY_KEY": [
+      "scripts\\lane-status.mjs"
+    ],
+    "DUP_EXACT": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "DUP_PREFIX": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "ECO_TARGET": [
+      "scripts\\batch-process-images.js"
+    ],
+    "ENTITY_ADDRESS_EN": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "ENTITY_ADDRESS_ZH": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "ENTITY_FULL_NAME_EN": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "ENTITY_FULL_NAME_ZH": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "ENTITY_ZIPCODE": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "EN_100_PERCENT_DOMESTIC": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_100_PERCENT_USA": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_ALL_AMERICAN_MADE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_AMERICAN_MADE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_FORBIDDEN_RULES": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_MADE_IN_USA": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_META_FIXES": [
+      "scripts\\fix-meta-final-9plus20.ts"
+    ],
+    "EN_NAKED_BULK_DISCOUNT": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_NAKED_FREE_SHIPPING": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EN_RULES": [
+      "scripts\\locale-audit\\fix.js"
+    ],
+    "EN_US_BASED": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "EXCLUDE_ARTICLES": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "EXEMPT_PATHS": [
+      "scripts\\guards\\common.js",
+      "scripts\\check-content-guard.js"
+    ],
+    "EXIT_CODE": [
+      "scripts\\canonical\\pre-commit",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ],
+    "EXPECTED_RED": [
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "FALLBACK_HOOK": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "FAQ_TRIGGERS_BY_LOCALE": [
+      "scripts\\audit-seo-meta.ts"
+    ],
+    "FAQ_TRIGGERS_ZHHK": [
+      "scripts\\audit-seo-meta.ts",
+      "scripts\\clean-faq-alt.ts"
+    ],
+    "FILE_LOCALE_ONLY_RE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "FILE_LOCALE_RE": [
+      "scripts\\guards\\common.js"
+    ],
+    "FIX_MODE": [
+      "scripts\\check-encoding.js"
+    ],
+    "FORBIDDEN_NAP": [
+      "scripts\\audit-seo-meta.ts"
+    ],
+    "FORBIDDEN_RULES": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "FORBIDDEN_WORDS": [
+      "scripts\\audit-h1-all-sku.mjs"
+    ],
+    "FRESHNESS_GATE_HOURS": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "FROZEN_BLOG": [
+      "scripts\\title-audit-v4.mjs"
+    ],
+    "FROZEN_SKU": [
+      "scripts\\title-audit-v4.mjs"
+    ],
+    "FULL_EXEMPT_PATHS": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "GRACE_MIN": [
+      "scripts\\lane-status.mjs"
+    ],
+    "GSC_404_R2": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "GSC_DATA_DIR": [
+      "scripts\\sku-keyword-gsc-map.mjs"
+    ],
+    "GSC_INDEX_PATH": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GSC_LEAK_CUSTOMER_VISIBLE": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "GSC_LEAK_PATTERNS": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "GSC_NO_CALIBRATION_DATE": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GSC_NO_SOURCE": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GSC_NO_WORD_LEVEL_EVIDENCE": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GSC_SOURCE_PATTERNS": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GSC_STALE": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "GUARDED_FILES": [
+      "scripts\\guards\\institutional-promise-guard.js"
+    ],
+    "GUARDS_DIR": [
+      "scripts\\audit-exposure-set.mjs",
+      "scripts\\check-regression-guard.js"
+    ],
+    "GUARD_LABELS": [
+      "scripts\\check-regression-guard.js"
+    ],
+    "HERO_OUT": [
+      "scripts\\batch-process-images.js"
+    ],
+    "HERO_OUTPUT": [
+      "scripts\\optimize-images.js"
+    ],
+    "HERO_PROMPTS": [
+      "scripts\\batch-process-images.js",
+      "scripts\\fix-meta-json.js"
+    ],
+    "HERO_TARGET": [
+      "scripts\\batch-process-images.js"
+    ],
+    "HKD_TO_JPY": [
+      "scripts\\gen-price-data.mjs"
+    ],
+    "HKD_TO_USD": [
+      "scripts\\gen-price-data.mjs"
+    ],
+    "HOLD_PATTERNS": [
+      "scripts\\fix-title-batch-T1.mjs"
+    ],
+    "HOLIDAY_UPDATE": [
+      "scripts\\enrich-en-themes.ts"
+    ],
+    "HOOKS_PATH": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "I18N_BASELINE_FILE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "I18N_CURRENCY": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\moq10-action-list-v3.ts"
+    ],
+    "I18N_FOOD_BOXES_CROSS": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "I18N_FULL_WIDTH": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "I18N_META_LENGTH": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "I18N_POLLUTION": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\moq10-action-list-v3.ts",
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "I18N_POLLUTION_EN": [
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "I18N_POLLUTION_JA": [
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "I18N_SINK": [
+      "scripts\\gen-price-data.mjs"
+    ],
+    "I18N_TITLE_LENGTH": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "INDEPENDENT_PRICES": [
+      "scripts\\update-pricing.js"
+    ],
+    "INDEXNOW_API": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "INDEXNOW_KEY": [
+      "scripts\\generate-sitemap.js",
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "INDUSTRIES_EDU": [
+      "scripts\\moq10-category-page-check.ts"
+    ],
+    "INSIGHT_RE": [
+      "scripts\\title-audit-v4.mjs"
+    ],
+    "INSTITUTIONAL_PROMISE_WORDING": [
+      "scripts\\guards\\institutional-promise-guard.js"
+    ],
+    "INTERESTING_FIELDS": [
+      "scripts\\audit-nap.ts"
+    ],
+    "IN_PROGRESS": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "IN_SCOPE_ARTICLES": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "IS_MOQ_QUESTION": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "JA_CORPUS": [
+      "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "JA_EXCLUDE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "JA_FORBIDDEN_RULES": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "JA_META_FIXES": [
+      "scripts\\fix-meta-final-9plus20.ts"
+    ],
+    "JA_NAKED_FREE_SHIPPING": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "JA_RULES": [
+      "scripts\\locale-audit\\fix.js"
+    ],
+    "JA_SHINJITAI": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "JA_SHINJITAI_CLEAN": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "JSON_ONLY": [
+      "scripts\\lane-status.mjs"
+    ],
+    "JSON_OUT": [
+      "scripts\\check-regression-guard-clean.mjs",
+      "scripts\\moq10-action-list.ts"
+    ],
+    "JSON_PARSE": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "KEY_COUNT": [
+      "scripts\\lib\\price-label-i18n.mjs"
+    ],
+    "KEY_LOCATION": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "KEY_ONLY_RE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "KEY_PREV_OK": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "KEY_RE_SRC": [
+      "scripts\\locale-audit\\fix.js"
+    ],
+    "KNOWN_GAP": [
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "LABEL_10": [
+      "scripts\\moq10-prepend-qty-tiers.mjs"
+    ],
+    "LEDGER_ESCALATE_AT": [
+      "scripts\\sku-title-census.mjs"
+    ],
+    "LEDGER_PATH": [
+      "scripts\\guards\\rule-translation-guard.js",
+      "scripts\\sku-title-census.mjs"
+    ],
+    "LEGACY_POLLUTION_CHARS": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "LEGIT_CUSTOMER_TOKENS": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "LEGIT_MIX_TOKENS": [
+      "scripts\\guards\\common.js"
+    ],
+    "LINE_RULES": [
+      "scripts\\moq10-fix-category-hooks.mjs"
+    ],
+    "LITERAL_RULES": [
+      "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
+    "LOCALE_KEYS": [
+      "scripts\\locale-audit\\fix.js"
+    ],
+    "LOCALE_KEYWORDS": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "LOCALE_KEY_INLINE_RE": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "LOCALE_KEY_RE": [
+      "scripts\\guards\\common.js"
+    ],
+    "LOCALE_MAP": [
+      "scripts\\fix-dual-brand-nontitle-b2.mjs"
+    ],
+    "LONGDESC_V3": [
+      "scripts\\apply-en-longdesc-v3.mjs"
+    ],
+    "MARKDOWN_LINK_RE": [
+      "scripts\\find-markdown-render.js"
+    ],
+    "MATCH_MOD": [
+      "scripts\\probe-live-titles.mjs"
+    ],
+    "MAX_BEFORE_CTA": [
+      "scripts\\fix-meta-warn.ts"
+    ],
+    "MAX_BYTES": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "MAX_CHARS": [
+      "scripts\\test-h1-en-ja.mjs"
+    ],
+    "MAX_FILE_SIZE": [
+      "scripts\\guards\\common.js",
+      "scripts\\check-content-guard.js"
+    ],
+    "MAX_HITS_PER_RULE": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\check-content-guard.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "MENU_SLUGS": [
+      "scripts\\moq10-repair-drift.ts"
+    ],
+    "META_DESCRIPTION_INTEGRITY": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "META_DESCRIPTION_RENDER_PATH": [
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\test-meta-description-guard.js"
+    ],
+    "META_FIXES": [
+      "scripts\\fix-en-overlong.ts",
+      "scripts\\fix-ja-warn-12sku.ts"
+    ],
+    "META_TEMPLATES": [
+      "scripts\\blog-content-engine.js"
+    ],
+    "META_UNREGISTERED": [
+      "scripts\\guards\\meta-description-guard.js",
+      "scripts\\test-meta-description-guard.js"
+    ],
+    "METRIC_INTEGRITY_FIVE_TRAPS": [
+      "scripts\\gen-guard-manifest.mjs"
+    ],
+    "MINQTY_FALLBACK": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "MINQTY_WARNINGS": [
+      "scripts\\guards\\price-band-guard.js"
+    ],
+    "MIN_INTERNAL_LINKS": [
+      "scripts\\guards\\internal-links-cta-guard.js"
+    ],
+    "MIN_PILLAR_CHARS": [
+      "scripts\\guards\\blog-standard-guard.js",
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "MIN_WHATSAPP_CTA": [
+      "scripts\\guards\\internal-links-cta-guard.js"
+    ],
+    "MISC_OUTPUT": [
+      "scripts\\optimize-images.js"
+    ],
+    "MISSING_FILE": [
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "MOJIBAKE_SIGNATURES": [
+      "scripts\\guards\\blog-data-integrity-guard.js"
+    ],
+    "MONEY_SET": [
+      "scripts\\fix-title-batch-T2-1b.mjs"
+    ],
+    "MOQ_PATTERNS": [
+      "scripts\\moq10-books-context-scan.ts",
+      "scripts\\moq10-diag3.ts"
+    ],
+    "MOQ_SHAPE": [
+      "scripts\\moq10-category-page-check.ts"
+    ],
+    "MUST_NOT_IN_SIMP_ZH": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "NAP_FALSE_POSITIVE": [
+      "scripts\\fix-meta-warn.ts"
+    ],
+    "NAP_FORBIDDEN": [
+      "scripts\\clean-faq-alt.ts"
+    ],
+    "NEED_FILL": [
+      "scripts\\accurate-count.js",
+      "scripts\\count-content-words.js"
+    ],
+    "NEGATION_CONTEXT": [
+      "scripts\\guards\\institutional-promise-guard.js"
+    ],
+    "NEGATIVE_JA": [
+      "scripts\\generate-prompts.js"
+    ],
+    "NESTED_MINQTY_WHITELIST": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "NEW_ABOVE_ANCHOR": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "NEW_BAD_TOTAL": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "NEW_NO_CALIB": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "NEW_QTY_NOT_BELOW_ANCHOR": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "NEW_QUANTITIES": [
+      "scripts\\moq10-set-a1-moq.mjs"
+    ],
+    "NODE_VERSION": [
+      "scripts\\pre-deploy-check.sh"
+    ],
+    "NON_EXEMPT_RULES": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\credibility-guard.js",
+      "scripts\\check-content-guard.js"
+    ],
+    "NON_VISIBLE_KEYS": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "NO_GARBAGE": [
+      "scripts\\generate-image-prompts.js"
+    ],
+    "NO_INDEX": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "NO_MATCH": [
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "NO_SCHED": [
+      "scripts\\lane-status.mjs"
+    ],
+    "NO_TABLE": [
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "NO_TABLE_SLUGS": [
+      "scripts\\moq10-prepend-qty-tiers.mjs"
+    ],
+    "NUMBER_TRIGGERS": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "OFFSET_DUPLEX": [
+      "scripts\\gen-posters-json.mjs"
+    ],
+    "OFFSET_ECONOMICAL_FROM": [
+      "scripts\\moq10-print-method-check.ts"
+    ],
+    "OFFSET_MIN_QTY": [
+      "scripts\\moq10-print-method-check.ts"
+    ],
+    "OFFSET_SIMPLEX": [
+      "scripts\\gen-posters-json.mjs"
+    ],
+    "OPERATIONAL_WHITELIST": [
+      "scripts\\guards\\common.js"
+    ],
+    "ORANGE_LIGHT": [
+      "scripts\\generate-og-image-v3.js",
+      "scripts\\generate-og-image-v5.js"
+    ],
+    "ORANGE_SOFT": [
+      "scripts\\generate-og-image-v4.js"
+    ],
+    "OTHER_CATEGORY": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "OUTLINE_TEMPLATES": [
+      "scripts\\blog-content-engine.js"
+    ],
+    "OUTPUT_DIR": [
+      "scripts\\batch-webp-convert.js",
+      "scripts\\generate-localized-product-images.js",
+      "scripts\\generate-seedream-blog-prompts.js",
+      "scripts\\generate-seedream-hero-prompts.js"
+    ],
+    "OUTPUT_PATH": [
+      "scripts\\blog-content-engine.js",
+      "scripts\\sku-keyword-gsc-map.mjs"
+    ],
+    "OUT_BATCH_POSTERS": [
+      "scripts\\moq10-action-list-v3.ts"
+    ],
+    "OUT_FILE": [
+      "scripts\\generate-sitemap-content.mjs"
+    ],
+    "OUT_JSON": [
+      "scripts\\lane-status.mjs",
+      "scripts\\moq10-price-sync-report.ts"
+    ],
+    "OUT_KEYS": [
+      "scripts\\fix-dual-brand-nontitle-b2.mjs"
+    ],
+    "OUT_SCOPE": [
+      "scripts\\moq10-fix-sku-seo-scoped.mjs"
+    ],
+    "OUT_SCOPE_TERMS": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "PAGE_FILE": [
+      "scripts\\rewrite-blog-content-v3.mjs"
+    ],
+    "PAPER_GOODS": [
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "PAPER_GOODS_MOQ": [
+      "scripts\\moq10-runtime-check.ts"
+    ],
+    "PAPER_GOODS_MOQ_AEO": [
+      "scripts\\moq10-runtime-check.ts"
+    ],
+    "PAPER_GOODS_MOQ_NOTE": [
+      "scripts\\moq10-runtime-check.ts",
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "PARSE_ERROR": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "PEER_BRANDS": [
+      "scripts\\check-brand-mentions.mjs"
+    ],
+    "PENDING_GSC": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "PENDING_LIST": [
+      "scripts\\canonical\\pre-commit",
+      "scripts\\moq10-books-context-scan.ts",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ],
+    "PET_UPDATE": [
+      "scripts\\enrich-en-themes.ts"
+    ],
+    "PHONE_CN_WHITELIST": [
+      "scripts\\guards\\phone-guard.js"
+    ],
+    "PHONE_HK_BLACKLIST": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\phone-guard.js"
+    ],
+    "PHONE_NON_WHITELIST": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\phone-guard.js"
+    ],
+    "PHONE_WA_852": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\phone-guard.js"
+    ],
+    "PHONE_WHITELIST": [
+      "scripts\\guards\\phone-guard.js"
+    ],
+    "PILLAR_INTERNAL_LINKS": [
+      "scripts\\guards\\internal-links-cta-guard.js"
+    ],
+    "PILLAR_LENGTH": [
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_SCHEMAS_ARRAY_MISSING": [
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_SCHEMA_5BLOCKS": [
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_SCHEMA_MISSING": [
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_SLUGS": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "PILLAR_TRIGGERS": [
+      "scripts\\guards\\blog-standard-guard.js",
+      "scripts\\guards\\internal-links-cta-guard.js",
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_URLS": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "PILLAR_WHATSAPP_CTA": [
+      "scripts\\guards\\internal-links-cta-guard.js"
+    ],
+    "PKG016_SOURCE": [
+      "scripts\\convert-product-images.mjs"
+    ],
+    "POSTER_SIZE_TARGETS": [
+      "scripts\\moq10-action-list-v3.ts"
+    ],
+    "POSTS_FILE": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "PRICE_TABLE_DIR": [
+      "scripts\\gen-price-data.mjs",
+      "scripts\\lib\\price-label-i18n.mjs"
+    ],
+    "PRICE_TABLE_MAP": [
+      "scripts\\gen-price-data.mjs",
+      "scripts\\moq10-check-book-tables.mjs",
+      "scripts\\moq10-inspect-a1.mjs",
+      "scripts\\moq10-investigate-posters.ts",
+      "scripts\\moq10-smoke-test.ts",
+      "scripts\\moq10-verify-anchors.mjs"
+    ],
+    "PRICE_TIER_TERMS": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "PRIMARY_BLUE": [
+      "scripts\\generate-og-image-v2.js"
+    ],
+    "PRIMARY_BLUE_DARK": [
+      "scripts\\generate-og-image-v2.js"
+    ],
+    "PRODUCTS_DIR": [
+      "scripts\\setup-multilingual-images.js"
+    ],
+    "PRODUCTS_FILE": [
+      "scripts\\apply-en-longdesc-v3.mjs",
+      "scripts\\inject-all-variables.js"
+    ],
+    "PRODUCTS_OUT": [
+      "scripts\\batch-process-images.js"
+    ],
+    "PRODUCTS_PATH": [
+      "scripts\\enrich-body-p4.ts",
+      "scripts\\fix-missing-webp-seo.js",
+      "scripts\\inject-images-by-locale.js",
+      "scripts\\update-products-images.js"
+    ],
+    "PRODUCTS_TS": [
+      "scripts\\guards\\price-band-guard.js",
+      "scripts\\audit-nap.ts"
+    ],
+    "PRODUCTS_TS_PATH": [
+      "scripts\\fix-missing-seo-images.js",
+      "scripts\\integrate-seo-images.js"
+    ],
+    "PRODUCT_COUNT": [
+      "scripts\\pre-deploy-check.sh"
+    ],
+    "PRODUCT_OUTPUT": [
+      "scripts\\optimize-images.js"
+    ],
+    "PRODUCT_SLUG_INDENT": [
+      "scripts\\moq10-books-context-scan.ts",
+      "scripts\\moq10-diag5.ts"
+    ],
+    "PRODUCT_TARGETS": [
+      "scripts\\moq10-action-list-v3.ts"
+    ],
+    "PROJECT_DIR": [
+      "scripts\\batch-process-images.js",
+      "scripts\\fix-meta-json.js",
+      "scripts\\integrity-check.js",
+      "scripts\\setup-multilingual-images.js"
+    ],
+    "PROJECT_ROOT": [
+      "scripts\\check-encoding.js"
+    ],
+    "PROMPT_TEMPLATES": [
+      "scripts\\blog-content-engine.js"
+    ],
+    "QA_MARKER_REQUIRED": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "QUOTE_RULES": [
+      "scripts\\guards\\common.js",
+      "scripts\\check-regression-guard.js"
+    ],
+    "RATIONALE_RE": [
+      "scripts\\guards\\bypass-audit-guard.js"
+    ],
+    "RAW_HTML": [
+      "scripts\\fix-blog-final.js"
+    ],
+    "RAW_MARKDOWN_LINK": [
+      "scripts\\check-content-guard.js"
+    ],
+    "RAW_STRINGS": [
+      "scripts\\gen-price-data.mjs"
+    ],
+    "READY_TO_ESCALATE_RED": [
+      "scripts\\sku-title-census.mjs"
+    ],
+    "REAL_USER_CONTENT": [
+      "scripts\\generate-seedream-prompts-csv.js"
+    ],
+    "REDIRECT_LINE_RE": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "RED_LINE": [
+      "scripts\\check-regression-guard-clean.mjs"
+    ],
+    "RED_PACKET_SLUGS": [
+      "scripts\\moq10-repair-drift.ts"
+    ],
+    "REGISTER_ID_PATTERNS": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "REGISTER_INFLATED": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "REGISTER_NO_ID": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "REGISTER_NO_VERIFICATION": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "RENDER_PATH_FILE": [
+      "scripts\\guards\\meta-description-guard.js"
+    ],
+    "REPORT_PATH": [
+      "scripts\\batch-webp-convert.js"
+    ],
+    "REQUIRED_DATE": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "REQUIRED_SCHEMAS": [
+      "scripts\\guards\\blog-standard-guard.js",
+      "scripts\\guards\\pillar-guard.js"
+    ],
+    "REQUIRED_VERSION": [
+      "scripts\\pre-deploy-check.sh"
+    ],
+    "RETRACTION_KEYWORDS": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "ROBOTS_TXT": [
+      "scripts\\generate-sitemap-content.mjs"
+    ],
+    "ROOT_FILE_EXTS": [
+      "scripts\\check-bc-ban.mjs"
+    ],
+    "RULE_TRANSLATION_MISSING": [
+      "scripts\\guards\\rule-translation-guard.js"
+    ],
+    "SAMPLE_N": [
+      "scripts\\audit-exposure-set.mjs"
+    ],
+    "SCAN_DIRS": [
+      "scripts\\check-bc-ban.mjs",
+      "scripts\\check-brand-baseline.mjs",
+      "scripts\\check-brand-mentions.mjs",
+      "scripts\\find-markdown-render.js",
+      "scripts\\find-markdown-residual.js",
+      "scripts\\moq10-action-list-v3.ts",
+      "scripts\\moq10-action-list.ts",
+      "scripts\\moq10-price-sync-report-v2.ts",
+      "scripts\\moq10-price-sync-report.ts"
+    ],
+    "SCAN_EXT": [
+      "scripts\\find-markdown-render.js",
+      "scripts\\find-markdown-residual.js"
+    ],
+    "SCAN_LOCALES": [
+      "scripts\\guards\\entity-guard.js"
+    ],
+    "SCAN_STATS": [
+      "scripts\\guards\\brand-guard.js",
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "SCENARIO_INDUSTRY_NAMES": [
+      "scripts\\verify-scenario-links.ts"
+    ],
+    "SCENARIO_LINKS": [
+      "scripts\\verify-scenario-links.ts"
+    ],
+    "SCENE_MOQ_SOURCE": [
+      "scripts\\moq10-category-page-check.ts",
+      "scripts\\moq10-verify-scene-moq.ts"
+    ],
+    "SCENE_TEMPLATES": [
+      "scripts\\generate-seedream-prompts-csv.js"
+    ],
+    "SCRIPT_DIR": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "SECRET_LEAK": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SEEDREAM_DIR": [
+      "scripts\\convert-product-images.mjs"
+    ],
+    "SELF_DECLARED_RE": [
+      "scripts\\guards\\bypass-audit-guard.js"
+    ],
+    "SETUP_FEE": [
+      "scripts\\gen-posters-json.mjs"
+    ],
+    "SETUP_FEE_HKD": [
+      "scripts\\moq10-add-small-batch-tiers.mjs"
+    ],
+    "SETUP_RATIO": [
+      "scripts\\moq10-add-books-ladder.mjs"
+    ],
+    "SEVERITY_CODE": [
+      "scripts\\check-regression-guard.js"
+    ],
+    "SHARED_TEMPLATE": [
+      "scripts\\moq10-action-list-v3.ts",
+      "scripts\\moq10-action-list.ts",
+      "scripts\\moq10-price-sync-report-v2.ts"
+    ],
+    "SHOW_CONTEXT": [
+      "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "SIMPLIFIED_CHARS": [
+      "scripts\\audit-h1-all-sku.mjs",
+      "scripts\\audit-seo-meta.ts",
+      "scripts\\scan-simplified.mjs"
+    ],
+    "SIMPLIFIED_CHINESE": [
+      "scripts\\check-content-guard.js"
+    ],
+    "SIMP_ONLY": [
+      "scripts\\gen-price-data.mjs",
+      "scripts\\lib\\price-label-i18n.mjs"
+    ],
+    "SIMP_ZH_ALL": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "SIMP_ZH_CLEAN": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "SIMP_ZH_EXTRA": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "SITEMAP_IMAGE_XML": [
+      "scripts\\generate-sitemap-content.mjs"
+    ],
+    "SITE_BASE": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "SKIPPED_OVERSIZE": [
+      "scripts\\guards\\common.js"
+    ],
+    "SKIP_DIRS": [
+      "scripts\\check-bc-ban.mjs",
+      "scripts\\check-brand-mentions.mjs",
+      "scripts\\check-encoding.js"
+    ],
+    "SKIP_FILES": [
+      "scripts\\find-markdown-render.js"
+    ],
+    "SKU_DATA_PATH": [
+      "scripts\\clean-faq-alt.ts",
+      "scripts\\enrich-body-p4.ts",
+      "scripts\\enrich-en-themes.ts",
+      "scripts\\fix-en-overlong.ts",
+      "scripts\\fix-final-9sku.ts",
+      "scripts\\fix-ja-alt-23sku.ts",
+      "scripts\\fix-ja-warn-12sku.ts",
+      "scripts\\fix-meta-final-9plus20.ts",
+      "scripts\\fix-meta-warn.ts",
+      "scripts\\fix-p3-en-cta.ts",
+      "scripts\\fix-p3-en-error.ts",
+      "scripts\\fix-p3-ja-cta.ts",
+      "scripts\\fix-p3-ja-error.ts"
+    ],
+    "SKU_FILE": [
+      "scripts\\apply-en-sku-seo.mjs"
+    ],
+    "SKU_LIST": [
+      "scripts\\sku-keyword-gsc-map.mjs"
+    ],
+    "SKU_MAP_PATH": [
+      "scripts\\update-products-images.js"
+    ],
+    "SKU_THEMES": [
+      "scripts\\enrich-en-themes.ts"
+    ],
+    "SKU_URLS": [
+      "scripts\\indexnow-submit.mjs"
+    ],
+    "SLUG_TO_TABLE_SKU": [
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "SMALL_BATCH_DISCOUNT": [
+      "scripts\\moq10-books-minquantity-10.mjs",
+      "scripts\\moq10-prepend-qty-tiers.mjs"
+    ],
+    "SOP10_12_INDUSTRIES": [
+      "scripts\\guards\\cron-prompts-exemption-guard.js",
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_15_YEARS": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_24H_SLA": [
+      "scripts\\guards\\cron-prompts-exemption-guard.js",
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_4_PLUS_NUMBER": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_CERT_NO": [
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\cron-prompts-exemption-guard.js",
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_HEIDELBERG": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_HEIDELBERG_6_1": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOP10_INTL_TOP": [
+      "scripts\\guards\\sop10-guard.js"
+    ],
+    "SOURCE_BASE": [
+      "scripts\\process-product-images-v2.js",
+      "scripts\\process-product-images.js"
+    ],
+    "SOURCE_DIR": [
+      "scripts\\batch-process-images.js",
+      "scripts\\batch-webp-convert.js",
+      "scripts\\generate-localized-product-images.js",
+      "scripts\\integrity-check.js",
+      "scripts\\optimize-images.js"
+    ],
+    "SOURCE_KEYWORDS": [
+      "scripts\\guards\\count-guard.js"
+    ],
+    "STAGED_BLOG_JSON": [
+      "scripts\\canonical\\pre-commit",
+      "scripts/canonical/pre-commit",
+      ".githooks/pre-commit"
+    ],
+    "STATE_MACHINE": [
+      "scripts\\lane-status.mjs"
+    ],
+    "STATE_MACHINE_VIOLATION": [
+      "scripts\\lane-status.mjs"
+    ],
+    "STATUS_TRIGGERS": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "STD_HOOK": [
+      "scripts\\fix-p3-en-cta.ts",
+      "scripts\\fix-p3-ja-cta.ts"
+    ],
+    "STICKER_SUBCATEGORY_MOQ": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "STRATEGY_JARGON": [
+      "scripts\\check-content-guard.js"
+    ],
+    "STRICT_ALL": [
+      "scripts\\check-regression-guard.js"
+    ],
+    "STYLE_RULES": [
+      "scripts\\seedream-prompt-router.js"
+    ],
+    "TABLE_SLUGS": [
+      "scripts\\moq10-smoke-test.ts"
+    ],
+    "TARGET_CATS": [
+      "scripts\\moq10-investigate-campus-books.ts"
+    ],
+    "TARGET_DIR": [
+      "scripts\\process-product-images-v2.js",
+      "scripts\\process-product-images.js"
+    ],
+    "TARGET_HOOK": [
+      "scripts\\setup-hooks.sh"
+    ],
+    "TARGET_KB": [
+      "scripts\\convert-product-images.mjs"
+    ],
+    "TERMS_WITH_DIGITS": [
+      "scripts\\lib\\price-label-i18n.mjs"
+    ],
+    "TERM_COUNT": [
+      "scripts\\lib\\price-label-i18n.mjs"
+    ],
+    "TERNARY_RE": [
+      "scripts\\guards\\common.js"
+    ],
+    "TEST_CASES": [
+      "scripts\\test-h1-en-ja.mjs"
+    ],
+    "TEXT_DARK": [
+      "scripts\\generate-og-image-v4.js"
+    ],
+    "TEXT_EXTENSIONS": [
+      "scripts\\check-encoding.js"
+    ],
+    "TEXT_EXTS": [
+      "scripts\\check-bc-ban.mjs",
+      "scripts\\check-brand-mentions.mjs"
+    ],
+    "THEME_CONFIG": [
+      "scripts\\enrich-en-themes.ts"
+    ],
+    "TITLE_FIELD_NAMES": [
+      "scripts\\guards\\common.js"
+    ],
+    "TITLE_FIELD_RE": [
+      "scripts\\guards\\common.js"
+    ],
+    "TITLE_FIXES": [
+      "scripts\\fix-en-overlong.ts",
+      "scripts\\fix-p3-en-error.ts"
+    ],
+    "TITLE_LENGTH_FILES": [
+      "scripts\\guards\\i18n-guard.js"
+    ],
+    "TITLE_MAX": [
+      "scripts\\guards\\blog-standard-guard.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\title-equiv.js",
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\gen-p0-title-batch.mjs",
+      "scripts\\sku-title-census.mjs",
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "TITLE_MIN": [
+      "scripts\\guards\\blog-standard-guard.js",
+      "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\title-equiv.js",
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\gen-p0-title-batch.mjs",
+      "scripts\\sku-title-census.mjs",
+      "scripts\\sync-title-rule-50-58.mjs"
+    ],
+    "TOPICS_POOL": [
+      "scripts\\blog-content-engine.js"
+    ],
+    "TOTAL_DROP": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "UNIT_PRICE_ANCHORS": [
+      "scripts\\gen-price-data.mjs",
+      "scripts\\moq10-inspect-a1.mjs",
+      "scripts\\moq10-smoke-test.ts",
+      "scripts\\moq10-verify-a1-generated.mjs",
+      "scripts\\moq10-verify-anchors.mjs"
+    ],
+    "UNIT_RISE": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "UNIT_STEP_TOL": [
+      "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "UNVERIFIED_CLAIM": [
+      "scripts\\check-content-guard.js"
+    ],
+    "URL_LIST": [
+      "scripts\\_indexnow-w6w7.js"
+    ],
+    "VERDICT_TO_STATE": [
+      "scripts\\lane-status.mjs"
+    ],
+    "VERIFICATION_PATTERNS": [
+      "scripts\\guards\\register-guard.js"
+    ],
+    "VISIBLE_FIELDS": [
+      "scripts\\guards\\gsc-leak-guard.js"
+    ],
+    "WALL_ART_UPDATE": [
+      "scripts\\enrich-en-themes.ts"
+    ],
+    "WARN_OVERSIZE": [
+      "scripts\\optimize-images.js"
+    ],
+    "WEBP_DIR": [
+      "scripts\\inject-images-by-locale.js",
+      "scripts\\update-products-images.js"
+    ],
+    "WINDOW_START": [
+      "scripts\\audit-exposure-set.mjs"
+    ],
+    "WORD_LEVEL_EVIDENCE": [
+      "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "YELLOW_WARN": [
+      "scripts\\sku-title-census.mjs"
+    ],
+    "ZP_SITE_BASE": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "ZP_SKIP_ONLINE": [
+      "scripts\\guards\\blog-quality-12-rules-guard.js",
+      ".githooks/pre-push"
+    ]
+  },
+  "maxGuardNumber": 24
+}

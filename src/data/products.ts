@@ -3063,7 +3063,10 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    // K3 2026-09-19 裁決: 依印刷方式判定 —— 本品為「12 色藝術微噴（Giclée）」+ 200g 美術紙/RC 相紙,
+    // 屬**噴繪/寫真類**（同 a1-posters 的 1 張起印線）, 非柯式銅版紙海報。
+    // 故真值改 1（與全站文案「1張起印」一致）; 原值 100 屬誤植。
+    minQuantity: 1,
     images: ['/images/products/art-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [

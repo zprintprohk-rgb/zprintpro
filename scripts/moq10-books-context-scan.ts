@@ -346,46 +346,45 @@ function assertShape(truth: Map<string, number>): string[] {
  * 詳見 docs/2026-09-19-moq-consistency-gate-and-scene-ssot-report.md
  */
 const PENDING_LIST: [string, string][] = [
-  // ── 海報線：文案與 minQuantity 互相矛盾，需 K3 真值裁決 ──
-  //   同一 SKU 的多個語系/措辭變體都要登錄，否則閘門會把變體當新漂移擋下
-  ['a2-posters|zh_張起|10', 'minQuantity=100 但文案「10張起印／10張起訂」；price-tables 該尺寸價階由 10 起 → 需裁決以何者為真值'],
-  ['a2-posters|ja_枚から|10', '同上（ja 文案「10枚から」）'],
-  ['art-posters|zh_張起|1', 'minQuantity=100 但文案「1張起印」→ 需裁決（或與 A1 噴繪線合併口徑）'],
-  // ── 利是封：features【500個起訂】vs minQuantity=100 ──
-  ...['foil-red-packets', 'embossed-red-packets', 'custom-red-packets', 'cartoon-red-packets', 'eco-red-packets', 'large-red-packets'].map(
-    (s): [string, string] => [
-      `${s}|zh_個起|500`,
-      `features 寫【500個起訂】但 minQuantity=100 → 待裁決「柯式經濟量」是否應寫進 features`,
-    ]
-  ),
-  // ── 月曆：features【500本起印】vs minQuantity=1000 ──
-  ...['wall-calendars', 'desk-calendars', 'custom-calendars', 'mini-calendars', 'photo-frame-calendars', 'magnetic-calendars'].map(
-    (s): [string, string] => [
-      `${s}|zh_本起|500`,
-      `features 寫【500本起印】但 minQuantity=1000 → 待裁決`,
-    ]
-  ),
-  // ── 餐牌：features【50本起訂】vs minQuantity=100 ──
-  ...['pvc-menus', 'laminated-menus', 'hardcover-menus', 'drink-menus', 'disposable-menus'].map(
-    (s): [string, string] => [
-      `${s}|zh_本起|50`,
-      `features 寫【50本起訂】但 minQuantity=100 → 待裁決`,
-    ]
-  ),
-  // ── 白卡彩盒：title_zh「100個起印」vs minQuantity=500 ──
-  ['white-card-boxes|zh_個起|100', 'title_zh 寫「100個起印」但 minQuantity=500 → 待裁決'],
-  // ── 品類級段落（category-seo-content.ts 貼紙品類頁；真值 10，文案寫 50/100）──
-  //   ⚠️ 這批是 2026-09-19 新增「品類級掃描」後才被看見的重大盲區：
-  //      該檔的品類級文案無 SKU slug → 原本被整檔跳過，永遠報 0 命中（假象）。
-  //   裁決點不止「改數字」：文案是「50 張起訂（數碼）+ 1,000 張以上柯式更經濟」的**完整階梯**，
-  //      改成 10 需同時確認柯式門檻措辭，故列待裁決而非逕改。
-  [`〔品類級〕stickers|zh_個起(品類級)|50`, 'featuredSnippet + h2 寫「貼紙印刷 50 個起」但貼紙真值 10'],
-  [`〔品類級〕stickers|zh_個起(品類級)|100`, 'featuredSnippet 寫「戶外/可移貼紙 100 個起」→ 待裁決是否改 10'],
-  [`〔品類級〕stickers|zh_張起(品類級)|50`, 'paragraphs/buyersGuide/FAQ 寫「50 張起（數碼印刷）」→ 待與柯式階梯一併裁決'],
-  [`〔品類級〕stickers|en_MOQ(品類級)|100`, 'en featuredSnippet 寫「outdoor vinyl stickers 100 pcs MOQ」→ 待裁決'],
+  // ── 已裁決並落地（2026-09-19 第二批，全部移出本名單）────────────────
+  //  · a2-posters 真值 100→10 ............（K3 2.1）
+  //  · white-card-boxes title→500 ........（K3 2.4）
+  //  · 利是封/月曆/餐牌 features 柯式經濟量 → 刪除 17 行（K3 2.3）
+  //  · 品類級貼紙「50 張起訂」→10 ........（K3 2.2，保留柯式措辭）
+  //  · art-posters 真值 100→1 ............（K3 第五節：印刷方式為 Giclée 藝術微噴 ⇒ 噴繪/寫真類 ⇒ 改真值）
+  //  · 貼紙「戶外／可移 100 個起」........（K3 六：**正確的分層設置，不是漂移**）
+  //      子品類映射已落地於 src/data/print-method-policy.ts §E（STICKER_SUBCATEGORY_MOQ）：
+  //        general / outdoor3m / removable = 10（kind='sku'，即 SKU 起訂量）
+  //        outdoorRemovableBulk = 100（kind='bulk_tier'，即**大量檔**，非 SKU 起訂量）
+  //      兩層概念分開後，「100 個起」與 minQuantity=10 不再矛盾。
+  //
+  // ── 目前無待裁決項 ──
+  // 說明：新出現的漂移由本閘門**直接擋下**（不經此名單）；
+  //       只有「確屬需 K3 裁決、且當下無法自行修」者才登記於此並附理由。
 ];
 
 const pendingMap = new Map(PENDING_LIST);
+
+/* ============================================================================
+ * 已核准的「大量檔門檻」（K3 2026-09-19 裁定：正確的分層設置，不是漂移）
+ * ============================================================================
+ * K3 原話：「贴纸『户外/可移 100 个起』是正确的分层设置，不是漂移——市场数据显示
+ *   3M 户外贴和可移贴确实需要更高门槛，应在 SSoT 中明确子品类 MOQ 映射。」
+ *
+ * 為什麼需要獨立於 PENDING_LIST：「待裁決」與「已核准」語義不同——
+ *   前者是**未解問題**（會被 K3 追問進度），後者是**已定案口徑**（不應再被當問題）。
+ *   混在同一名單會讓「待裁決數」這個指標失真。
+ *
+ * 判據：key = `${slug}|${kind}|${found}`；子品類映射見 print-method-policy.ts §E。
+ */
+const APPROVED_BULK_TIERS: [string, string][] = [
+  // 貼紙品類頁「戶外貼紙 100 個起」與「可移貼紙 100 個起」
+  //   = 大量檔（bulk_tier），非 SKU 起訂量（SKU 皆 10）
+  [`〔品類級〕stickers|zh_個起(品類級)|100`, 'K3 裁定：3M 戶外貼／可移貼需更高門檻 → 大量檔 100（非 SKU 起訂量）'],
+  [`〔品類級〕stickers|en_MOQ(品類級)|100`, '同上（en：outdoor vinyl / removable stickers 100 pcs MOQ）'],
+];
+
+const approvedMap = new Map(APPROVED_BULK_TIERS);
 
 /** 該漂移是否為已登錄項；回傳登錄說明或 undefined */
 function pendingNote(h: Hit): string | undefined {
@@ -462,19 +461,22 @@ if (AS_JSON) {
   }
 
   if (drift.length) {
-    // 區分「已登錄待裁決」與「新漂移」——前者不算閘門失敗，但一律顯示
+    // 三類語義必須分開顯示：已登錄待裁決（未解）／已核准（已定案口徑）／新漂移（問題）
     const pending = drift.filter((h) => pendingNote(h));
-    const fresh = drift.filter((h) => !pendingNote(h));
+    const approved = drift.filter((h) => approvedMap.has(`${h.slug}|${h.kind}|${h.found}`));
+    const fresh = drift.filter((h) => !pendingNote(h) && !approvedMap.has(`${h.slug}|${h.kind}|${h.found}`));
     console.log(`\n── 漂移明細（${bySlug.size} 個 SKU / ${drift.length} 條）──`);
-    console.log(`   已登錄待裁決 ${pending.length} 條 ｜ 🆕 新漂移 ${fresh.length} 條`);
+    console.log(`   📋 已登錄待裁決 ${pending.length} ｜ ✅ 已核准分層 ${approved.length} ｜ 🆕 新漂移 ${fresh.length}`);
     for (const [slug, hs] of bySlug) {
       console.log(`\n  [${slug}] 真值 ${hs[0].truth}`);
       for (const h of hs) {
         const note = pendingNote(h);
-        const mark = note ? '📋 已登錄' : '🆕 新漂移';
+        const appr = approvedMap.get(`${h.slug}|${h.kind}|${h.found}`);
+        const mark = note ? '📋 已登錄' : appr ? '✅ 已核准' : '🆕 新漂移';
         console.log(`    ${mark} ${path.basename(h.file)}:${h.line} 找到 ${h.found} (${h.kind})`);
         console.log(`       ${h.text}`);
         if (note) console.log(`       登錄理由: ${note}`);
+        if (appr) console.log(`       核准依據: ${appr}`);
       }
     }
   } else {
@@ -483,12 +485,12 @@ if (AS_JSON) {
 }
 
 if (AS_GATE) {
-  const fresh = drift.filter((h) => !pendingNote(h));
+  const fresh = drift.filter((h) => !pendingNote(h) && !approvedMap.has(`${h.slug}|${h.kind}|${h.found}`));
   const fail = fresh.length > 0 || shapeProblems.length > 0 || recount.some((r) => r.scan > r.grep);
   if (fail) {
     console.error('\n[GATE] FAIL — MOQ 口徑掃描閘門');
     if (fresh.length) {
-      console.error(`   🆕 新漂移 ${fresh.length} 條（未登錄，須先修或登錄理由）:`);
+      console.error(`   🆕 新漂移 ${fresh.length} 條（未登錄、未核准，須先修或登錄理由）:`);
       for (const h of fresh.slice(0, 20)) {
         console.error(`      [${h.slug}] ${path.basename(h.file)}:${h.line} 找到 ${h.found} / 真值 ${h.truth} (${h.kind})`);
       }
@@ -499,5 +501,9 @@ if (AS_GATE) {
     process.exit(1);
   }
   const pending = drift.filter((h) => pendingNote(h));
-  console.log(`\n[GATE] PASS — 🆕 新漂移 0 條${pending.length ? `（另有 ${pending.length} 條已登錄待裁決，不阻擋）` : ''}`);
+  const approved = drift.filter((h) => approvedMap.has(`${h.slug}|${h.kind}|${h.found}`));
+  const parts: string[] = [];
+  if (pending.length) parts.push(`待裁決 ${pending.length}`);
+  if (approved.length) parts.push(`已核准分層 ${approved.length}`);
+  console.log(`\n[GATE] PASS — 🆕 新漂移 0 條${parts.length ? `（${parts.join(' / ')}，皆不阻擋）` : ''}`);
 }
