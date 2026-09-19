@@ -28,6 +28,8 @@ import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlo
 // Step 4 (方案 (a)): 規格值三語化 — products.ts 規格三欄 (material/printMethod/finishing) 原文 -> 本地化值;
 // 查不到 -> fallback 中文原文 (不報錯/不留空); zh-hk 值 = 原文逐字 ⇒ zh-hk 渲染輸出零改動
 import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n';
+// 2026-09-19 K3 裁决 1: v10.1 决策 1-B 展示层 MOQ 口径 (数码线书刊/本册类 5 SKU = 1 本起印)
+import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH } from '@/data/print-method-policy';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -337,11 +339,18 @@ export function ProductPageV9({
     .filter((p) => p.sku_code !== product.sku_code)
     .slice(0, 4);
 
+  // 2026-09-19 K3 裁决 1「1-B 落点修复」: 線上 PDP 的起訂量行由本組件渲染 (非 page.tsx)
+  //   数码线书刊/本册类 5 SKU → 展示层改走 getDisplayMinOrder() (1 本起印口径)
+  //   其余 SKU 一律维持原本的 minQuantity 数字 (零 churn)
+  const isDigitalBook = isDigitalLineBook(product.slug);
   const metaRows: [string, string][] = (t.metaRows as (unit: string) => [string, string][])(displayUnit).map(([v, l]) => [
-    v === 'sku_code' ? product.sku_code : v.replace('{q}', String(product.minQuantity)),
+    v === 'sku_code'
+      ? product.sku_code
+      : v.includes('{q}')
+        ? (isDigitalBook ? getDisplayMinOrder(locale, product.slug, product.minQuantity) : v.replace('{q}', String(product.minQuantity)))
+        : v.replace('{q}', String(product.minQuantity)),
     l,
   ]);
-
   /* C1 泛化: 工廠實拍按品类工艺对号入座 (任务C 清单 item 6 + 老板 9/10 指示:
      PDP 内凡柯式印刷图统一用 factory-heidelberg.webp 实拍机图, 即食品包裝線同款;
      文件 `ls public/images/factory/` 实证全部实存) */
@@ -448,6 +457,18 @@ export function ProductPageV9({
               </div>
             ))}
           </dl>
+
+          {/* 2026-09-19 K3 裁决 1: v10.1 決策 1-B — 數碼線書刊/本冊類 SKU 的 AEO 快速答案塊 + 印刷方式統一說明
+              (原本誤接在 page.tsx 未渲染的路徑上, 本次接入線上實際渲染的本組件) */}
+          {isDigitalBook && (
+            <div className="mt-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4">
+              <p className="text-[13.5px] text-amber-900 leading-relaxed">
+                <span className="font-semibold">⚡ {MOQ_AEO[locale].q}</span>{' '}
+                {MOQ_AEO[locale].a}
+              </p>
+              <p className="text-xs text-amber-800/90 leading-relaxed mt-2">{MOQ_STANDARD_PARAGRAPH[locale]}</p>
+            </div>
+          )}
 
           {/* CTA 行 */}
           <div className="mt-5 grid grid-cols-2 gap-3">

@@ -45,8 +45,9 @@ import { getProductSeo } from '@/data/product-seo';
 import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
-// 2026-09-18 K3 v10.1 決策 1-B: 展示層 MOQ 口徑 (1 本起印, 數碼線書刊/本冊類) — SSoT
-import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook } from '@/data/print-method-policy';
+// 2026-09-19 K3 裁决 1: 1-B 展示層改接 v9/ProductPageV9.tsx (線上實際渲染路徑);
+//   本檔原 import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook }
+//   已隨死代碼一併移除 (本檔非 PDP 正文渲染組件, 保留只會形成兩處並存的維護困惑)
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
 import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
@@ -284,6 +285,8 @@ export default function ProductPage({
     { slug: 'wedding-table-card-printing-guide', titleZh: '枱卡印刷指南 · 7 個設計風格 + 材質對比', titleEn: 'Wedding Table Card Printing Guide: 7 Styles & Materials', titleJa: '席カード印刷ガイド' },
     { slug: 'wedding-favor-bag-printing-guide', titleZh: '香港婚慶喜帖 / 婚禮禮袋印刷指南', titleEn: 'Wedding Favor Bag & Invitation Printing Guide 2026', titleJa: 'ブライダル フォーバー バッグ印刷ガイド' },
     { slug: 'wedding-red-packet-printing-guide', titleZh: '婚禮利是封印刷指南 · 龍鳳 / 中式 / 燙金', titleEn: 'Wedding Red Packet Printing Guide', titleJa: '結婚式レッドパケット ガイド' },
+    // 2026-09-18 weekly-meta 内链自生长 (W3 婚慶/利是封簇): 信封指南补入 (slug 已核 blog-posts.ts L908)
+    { slug: 'wedding-invitation-envelope-printing-guide', titleZh: '香港婚禮邀請信封印刷指南 · 珍珠紙 + 燙金', titleEn: 'Wedding Invitation Envelope Printing Guide 2026', titleJa: 'ウエディング招待状封筒印刷ガイド 2026' },
   ];
 
   // V3.8 集群 A 纸袋一击四词 — 5 paper-bags 内部链接 (类目页 + 6 PDP + 2 blog)
@@ -298,6 +301,12 @@ export default function ProductPage({
     { slug: 'product/kraft-paper-bags', isCategory: false, titleZh: '牛皮紙袋 · 環保文創首選 HK$1.5 起', titleEn: 'Kraft Paper Bags · Eco-friendly Brand Favorite, from HK$1.5', titleJa: 'クラフト紙袋 · エコブランド向け HK$1.5 から' },
     { slug: 'product/white-card-paper-bags', isCategory: false, titleZh: '白卡紙袋 · 服裝美妝品牌升級首選', titleEn: 'White Card Paper Bags · Fashion & Beauty Brand Upgrade', titleJa: '白カード紙袋 · アパレル・美容ブランドアップグレード' },
     { slug: 'product/gift-paper-bags', isCategory: false, titleZh: '禮品紙袋 · 高檔燙金 + 婚禮回禮', titleEn: 'Gift Paper Bags · Premium Foil + Wedding Favors', titleJa: 'ギフト紙袋 · 高級箔押し + ブライダルギフト' },
+    // 2026-09-18 weekly-meta 内链自生长 (W3 紙袋簇 · 4 篇行业博客, slug 全部已核 blog-posts.ts):
+    // 珠宝 L818 / 服装 L1289 / 跨境电商 L1054 / 金融机构 L1364
+    { slug: 'jewellery-shopping-bag-printing-guide', isCategory: false, titleZh: '珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽', titleEn: 'Jewellery & Watch Brand Paper Bag Printing Guide', titleJa: '宝飾・腕時計ブランド紙袋印刷ガイド' },
+    { slug: 'apparel-shopping-bag-printing-guide', isCategory: false, titleZh: '服裝品牌紙袋印刷指南 · 環保購物袋品牌升級', titleEn: 'Apparel Brand Shopping Bag Printing Guide', titleJa: 'アパレルブランド ショッピングバッグ印刷ガイド' },
+    { slug: 'ecommerce-shipping-bag-printing-guide', isCategory: false, titleZh: '跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送', titleEn: 'E-commerce Shipping Bag Printing Guide', titleJa: 'EC配送袋印刷ガイド：防水・改ざん防止' },
+    { slug: 'financial-institution-gift-bag-printing-guide', isCategory: false, titleZh: '金融機構禮品袋印刷指南 · 銀行卡套 + 開卡禮盒', titleEn: 'Financial Institution Gift Bag Printing Guide', titleJa: '金融機関ギフトバッグ印刷ガイド' },
   ];
 
   // 取前 5 个作为内链 (V3.8 集群 A 验收 ≥5)
@@ -567,7 +576,7 @@ export default function ProductPage({
                 </div>
                 <div className="flex items-center justify-between gap-3 text-xs text-gray-400 mt-4 pt-3 border-t border-[#E5E7EB]">
                   <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
-                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{getDisplayMinOrder(locale, product.slug, product.minQuantity)}</span></span>
+                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{product.minQuantity}</span></span>
                 </div>
                 {(() => {
                   // 2026-09-06 UX 试点: 小批量起步行 — 报价表真实档位, 消除 0.42 vs 73/71 口径落差
@@ -592,16 +601,9 @@ export default function ProductPage({
                 })()}
               </div>
 
-              {/* 2026-09-18 K3 v10.1 決策 1-B: 數碼線書刊/本冊類 SKU 的 AEO 快速答案塊 + 印刷方式統一說明 */}
-              {isDigitalLineBook(product.slug) && (
-                <div className="mb-5 bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-4">
-                  <p className="text-sm text-amber-900 leading-relaxed">
-                    <span className="font-semibold">⚡ {MOQ_AEO[locale].q}</span>{' '}
-                    {MOQ_AEO[locale].a}
-                  </p>
-                  <p className="text-xs text-amber-800/90 leading-relaxed mt-2">{MOQ_STANDARD_PARAGRAPH[locale]}</p>
-                </div>
-              )}
+              {/* 2026-09-19 K3 裁决 1: 原 1-B AEO 塊與 getDisplayMinOrder 曾接在此處,
+                  但本頁實際 PDP 正文由 v9/ProductPageV9.tsx 渲染 ⇒ 此處為死代碼, 已移除;
+                  1-B 展示層已改接 ProductPageV9.tsx (線上實際渲染路徑) */}
 
               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
               {(() => {
@@ -660,9 +662,13 @@ export default function ProductPage({
                     {relatedBlogs.map((b) => {
                       const title = locale === 'zh-hk' ? b.titleZh : locale === 'en' ? b.titleEn : b.titleJa;
                       // V3.8 集群 A: paper-bags 类目页 / PDP 用 isCategory 区分路径
+                      // 2026-09-18 weekly-meta 修 404: `product/*` 前綴 slug 不得走 /blog/
+                      // 實證: /zh-hk/blog/product/kraft-paper-bags/ = HTTP 404 (2026-09-18 線上探針)
                       const href = b.isCategory
                         ? `${localePrefix}/category/${b.slug.replace('category/', '')}/`
-                        : `${localePrefix}/blog/${b.slug}/`;
+                        : b.slug.startsWith('product/')
+                          ? `${localePrefix}/product/${b.slug.replace('product/', '')}/`
+                          : `${localePrefix}/blog/${b.slug}/`;
                       return (
                         <li key={b.slug}>
                           <a
