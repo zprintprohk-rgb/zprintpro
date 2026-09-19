@@ -97,6 +97,22 @@ const titles = parseTitles();
 const NO_MOQ_HOOK_WHITELIST = {
   'small-batch-stickers': 'src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU 自身即小批量产品线, 50 为产品线口径而非品类漂移 (与 resolve-moq-conflicts.mjs 的 ATTESTED 同源)',
 };
+
+/* RULING_ATTESTED — **裁决已点名**的案例, 优先于机械簇规则
+ * ★ 2026-09-19 收敛修复: 两法对账发现 zh-hk menus 4 行分歧
+ *   (A 的「簇内≥4 → MANUAL_REVIEW」机械规则 vs B 的 DRIFT)。
+ *   真相: K3 **裁决已点名**该矛盾 (c18107a0「餐牌【50本起訂】 vs 真值 100」),
+ *   只是当时只修了 features 版 ⇒ 有硬证据, 不应降级为「无法判定」。
+ *   ⇒ 把裁决已点名的案例提升为硬判据 (与 B 的 ATTESTED 表同源), 消除两法分歧。
+ */
+const RULING_ATTESTED = {
+  'pvc-menus': '★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, title 版残留)',
+  'laminated-menus': '★ 同上 (c18107a0 餐牌 真值 100)',
+  'hardcover-menus': '★ 同上 (c18107a0 餐牌 真值 100)',
+  'drink-menus': '★ 同上 (c18107a0 餐牌 真值 100)',
+  'premium-greeting-cards': '★ 4593937c 第一波明列「紙品線 (傳單/貼紙/賀卡) 100→10」⇒ 賀卡真值 10, 标题 100 为残留',
+  'art-posters': '★ cc1d5293 (20:03) art-posters 真值批次已落; 标题「100枚〜」与真值 1 冲突',
+};
 function productLineNoHook(slug, claimed, p) {
   const ev = NO_MOQ_HOOK_WHITELIST[slug];
   return ev ? `人工核定: ${ev}` : null;
@@ -137,6 +153,7 @@ for (const h of hits) {
     const peerTotal = titles.filter((t) => products[t.slug]?.category === category && t.locale === locale).length;
 
     if (pline) { cls = 'NO_MOQ_HOOK'; reason = pline; }
+    else if (RULING_ATTESTED[slug]) { cls = 'TRUE_DRIFT'; reason = RULING_ATTESTED[slug]; }
     // ★ 2026-09-19 修复 (K3 决策 3.2): 原规则把每个 case 都归了类 ⇒ MANUAL_REVIEW 恒为 0
     //   = 「不猜」桶从未行使 = 隐性猜测。新阈值 (K3 指令):
     //     簇内 ≥5 槽位一致声称同一值  → LOCALE_SPECIFIC_KEEP (jo flyers 7/7 属此类)
