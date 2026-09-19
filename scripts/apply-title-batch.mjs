@@ -30,6 +30,97 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const TARGET = 'src/data/sku-seo-data.ts';
 const APPLY = process.argv.includes('--apply');
 const BATCH_NAME = (process.argv.find((a) => a.startsWith('--batch=')) || '--batch=p0').split('=')[1];
+const FROM_PROPOSALS = (process.argv.find((a) => a.startsWith('--from-proposals=')) || '').split('=')[1] || null;
+
+/* ---------- ★ 独立复核 (--from-proposals): 不信生成器的 trace, 自己重算 ----------
+ * K3 纪律「逐条审核, 不抽检」+ §0.23.2 双方法: 对每条候选独立验证
+ *   ① 当量 50-57  ② 主词保留  ③ 品牌末尾一次  ④ 语言纯净
+ *   ⑤ **MOQ 数字与 moqStatus 期望一致** (回 products.ts / 裁决真值重算)
+ *   ⑥ **价格数字与 products.ts basePrice 一致** (回源头重算)
+ *   ⑦ **单一 MOQ**: 候选内不得出现两个不同起订量 (laminated-menus 矛盾的根因)
+ * 任一不过 ⇒ 该槽位拒绝落盘并列明原因。
+ */
+function independentVerify(cand, slug, locale, curTitle, entry, clsRow) {
+  const { equiv: eq } = require('./guards/title-equiv.js');
+  const issues = [];
+  const e = eq(cand);
+  if (e < TITLE_MIN || e > TITLE_MAX) issues.push(`当量 ${e} 不在 ${TITLE_MIN}-${TITLE_MAX}`);
+  const headCur = String(curTitle).split(/\s*[|｜]\s*/)[0].trim();
+  const headCand = String(cand).split(/\s*[|｜]\s*/)[0].trim();
+  if (headCur !== headCand) issues.push(`主词被改: "${headCur}" → "${headCand}"`);
+  const brand = locale === 'zh-hk' ? '智印港' : 'ZprintPro';
+  if (cand.split(brand).length - 1 !== 1) issues.push('品牌出现次数≠1');
+  if (cand.trim().split(/[|｜]/).pop().trim() !== brand) issues.push('品牌不在末尾');
+  if (locale === 'en' && /[\u2E80-\u9FFF\u3040-\u30FF]/.test(cand)) issues.push('en 含 CJK');
+  const KANA = /[\u3041-\u30FA\u30FD\u30FE\u30FF]/;
+  const SIMP = /[订后发记观为价值乐电动净丝举宪获扩据产实当画]/;
+  if (locale === 'zh-hk' && (KANA.test(cand) || SIMP.test(cand))) issues.push('zh-hk 语言污染');
+  if (locale === 'zh-hk' && /ZprintPro/.test(cand)) issues.push('zh-hk 混入 ZprintPro');
+  // ⑤ MOQ 期望值
+  const status = clsRow ? clsRow.cls : 'NO_CONFLICT';
+  let expectMoq = null;
+  if (status === 'TRUE_DRIFT') expectMoq = clsRow.truth;
+  else if (status === 'LOCALE_SPECIFIC_KEEP') expectMoq = clsRow.claimed;
+  else if (status === 'MANUAL_REVIEW') issues.push('MANUAL_REVIEW 槽位不得落盘');
+  else if (status === 'NO_MOQ_HOOK') expectMoq = null;
+  else expectMoq = entry.moq; // 无冲突 → products.ts 真值
+  // 从候选抽取起印量声明
+  const moqRe = locale === 'en' ? /(\d{1,4})\s*(?:pcs\s*)?MOQ|MOQ\s*[:：]?\s*(\d{1,4})|(\d{2,4})\s*pcs/gi
+    : locale === 'ja' ? /(\d{1,4})\s*(?:枚|部|冊|本|セット|個)〜/g
+    : /(\d{1,4})\s*(?:張|個|本|套|份|枚)\s*起/g;
+  const found = [];
+  let m;
+  while ((m = moqRe.exec(cand)) !== null) found.push(Number(m[1] ?? m[2] ?? m[3]));
+  const distinct = [...new Set(found)];
+  if (distinct.length > 1) issues.push(`候选含 ${distinct.length} 个互斥起订量: ${distinct.join('/')}`);
+  if (expectMoq != null) {
+    if (!distinct.includes(expectMoq)) issues.push(`MOQ 缺失: 期望 ${expectMoq}, 候选内 ${distinct.length ? distinct.join('/') : '无'}`);
+  } else if (status === 'NO_MOQ_HOOK' && distinct.length) {
+    issues.push(`NO_MOQ_HOOK 槽位不应含 MOQ, 却出现 ${distinct.join('/')}`);
+  }
+  // ⑥ 价格回源头复核
+  const bp = entry.basePrice?.[locale];
+  if (bp != null) {
+    const priceRe = locale === 'zh-hk' ? /HK\$([\d.]+)/g : locale === 'en' ? /\$([\d.]+)/g : /¥([\d.]+)/g;
+    const prices = [];
+    while ((m = priceRe.exec(cand)) !== null) prices.push(Number(m[1]));
+    const bad = prices.filter((p) => p !== bp);
+    if (prices.length && bad.length) issues.push(`价格与 products.ts basePrice=${bp} 不符: ${bad.join('/')}`);
+  }
+  return { equiv: e, issues, ok: issues.length === 0, status, expectMoq };
+}
+
+/* ---------- --from-proposals: 由提案 JSON 组装批次 ---------- */
+function loadFromProposals(file) {
+  const p = JSON.parse(fs.readFileSync(path.join(ROOT, file), 'utf8'));
+  const bank = JSON.parse(fs.readFileSync(path.join(ROOT, '.hermes/reports/title-input-bank-2026-09-19.json'), 'utf8'));
+  const cls = JSON.parse(fs.readFileSync(path.join(ROOT, '.hermes/reports/moq-precision-classification-2026-09-19.json'), 'utf8'));
+  const clsOf = {};
+  for (const it of cls.items) clsOf[`${it.slug}|${it.locale || '?'}`] = it;
+
+  const perSlug = {};
+  const audit = [];
+  for (const r of p.results) {
+    if (!r.candidates) { audit.push({ slug: r.slug, locale: r.locale, ok: false, issues: [r.skipped || 'skipped'] }); continue; }
+    // 优先变体 A (最小增量), 否则首个全闸门通过者
+    const best = r.candidates.find((c) => c.variant === 'A' && c.allPass) || r.candidates.find((c) => c.allPass);
+    if (!best) { audit.push({ slug: r.slug, locale: r.locale, ok: false, issues: ['无全闸门通过候选'] }); continue; }
+    const entry = bank.skus[r.slug];
+    const v = independentVerify(best.title, r.slug, r.locale, r.current, entry, clsOf[`${r.slug}|${r.locale}`]);
+    audit.push({ slug: r.slug, locale: r.locale, batch: r.batch, title: best.title, from: r.current, ...v });
+    if (!v.ok) continue;
+    perSlug[r.slug] = perSlug[r.slug] || { slug: r.slug, slots: {}, src: {} };
+    perSlug[r.slug].slots[r.locale] = best.title;
+    perSlug[r.slug].src[r.locale] = r.currentEquiv;
+  }
+  return { batch: Object.values(perSlug).filter((x) => Object.keys(x.slots).length), audit, meta: { source: file, batchName: p.batch } };
+}
+
+let BATCH, AUDIT = null, META = null;
+if (FROM_PROPOSALS) {
+  const r = loadFromProposals(FROM_PROPOSALS);
+  BATCH = r.batch; AUDIT = r.audit; META = r.meta;
+}
 
 const BATCHES = {
   p0: [
@@ -90,10 +181,20 @@ const BATCHES = {
   ],
 };
 
-const BATCH = BATCHES[BATCH_NAME];
-if (!BATCH) {
+if (!FROM_PROPOSALS) BATCH = BATCHES[BATCH_NAME];
+if (!BATCH && !FROM_PROPOSALS) {
   console.error(`未知批次: ${BATCH_NAME} (可用: ${Object.keys(BATCHES).join(' / ')})`);
   process.exit(1);
+}
+
+/* ---------- 独立复核报告 (逐条, 不抽检) ---------- */
+if (AUDIT) {
+  const ok = AUDIT.filter((a) => a.ok);
+  console.log(`=== 独立复核 (逐条): ${ok.length}/${AUDIT.length} 槽通过 ===`);
+  for (const a of AUDIT) {
+    console.log(`  ${a.ok ? '✅' : '🔴'} ${a.slug}/${a.locale}\t${a.equiv ?? '-'} 当量\tstatus=${a.status || '-'} MOQ期望=${a.expectMoq ?? '无'}`);
+    if (!a.ok) for (const i of a.issues) console.log(`        ↳ ${i}`);
+  }
 }
 
 /* ---------- ★ 前置闸门: 复查 24h 内是否有新 K3 裁决影响数字口径 ----------
