@@ -1469,3 +1469,25 @@ node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/
 
 **同族规则**: `SEG12_SCHEMA`（内嵌/生成重复）· `SEG9_FAQ_FORMAT`（FAQPage 静默丢失）
 
+---
+
+### 规则 LOCATE_BEFORE_PATCH — 未 dump 真实文本就定位条目 = 盲修 (K3 2026-09-19 入档)
+
+**事故形态**: print-specs × 3 补 FAQ 时出现 1 处五要件越界 (zh-hk Q4 答案 55 字 / 首句 13 字)。
+我连续 **4 轮**打补丁去修 **Q5 (DPI/出血)**, 而真正越界的是 **Q4 (數碼 vs 柯式)**
+—— 自检读数一直是对的, 错的是**我没先 dump 真实文本就下手定位**。
+
+**与 DOUBLE_METHOD_RECOUNT / SEG9_FAQ_FORMAT 的关系**: 三者同源 (先取真实样本再动手), 场景不同 ——
+  · SEG9_FAQ_FORMAT: 写**正则**前先 dump 一条真实样本;
+  · LOCATE_BEFORE_PATCH (本条): 修**条目**前先 dump 该条目的真实文本与独立计数;
+  · 共同根因: 在确认目标条目的真实文本前, 任何修补都是盲目的; 反复打补丁只烧 token, 不消除越界。
+
+**修法 (三步, 不可省)**:
+1. **dump 真实文本**: 直接打印目标条目的完整字符串 (不入正则、不凭记忆);
+2. **分开打印「读到的文本」与「算出的数」**: 使计数口径与被数对象同时可见 —— 才能发现「数的是另一条」;
+3. **定位后才动手**: 确认目标条目的真实文本与判定阈值后, 再做精确串替换 (而非按序号/印象定位)。
+
+**工具留档**: .hermes/_probe-pb/diag-printspecs-count.mjs（按 locale 切块 + 独立计数 + 打印首 46 字）。
+**实证收口**: 三步执行后立即定位到真条 Q4 → 一条精确修补 → 五要件异常 0 → 落盘 (commit 5581a948)。
+
+**同族规则**: DOUBLE_METHOD_RECOUNT · SEG9_FAQ_FORMAT · HREFLANG_FALSE_ALARM_MEASUREMENT_BUGS
