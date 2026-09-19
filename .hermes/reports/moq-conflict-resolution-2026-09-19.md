@@ -1,6 +1,6 @@
 # MOQ 冲突裁决表 (2026-09-19)
 
-校准日期: 2026-09-19 12:25 UTC
+校准日期: 2026-09-19 12:31 UTC
 
 > **真值优先级**: 最新 K3 裁决 > products.ts 当前值 (products.ts 可能滞后于裁决)
 > 裁决基线:
@@ -49,9 +49,9 @@
 
 | slug | locale | 类别 | 标题声称 | 真值 | 簇一致 | 批次 | 理由 |
 |---|---|---|---|---|---|---|---|
-| small-batch-stickers | zh-hk | stickers | 50 | 10 | 1/9 | P2-修剪 | products.ts en description 明載「We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU **自身**即小批量产品线, 50 可能是其产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
-| small-batch-stickers | en | stickers | 50 | 10 | 1/9 | P2-修剪 | products.ts en description 明載「We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU **自身**即小批量产品线, 50 可能是其产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
-| small-batch-stickers | ja | stickers | 50 | 10 | 1/9 | P2-修剪 | products.ts en description 明載「We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU **自身**即小批量产品线, 50 可能是其产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
+| small-batch-stickers | zh-hk | stickers | 50 | 10 | 1/9 | P2-修剪 | ★ 引用已更正 (2026-09-19): 自证句「We support 50-sticker MOQ for the small-batch line」位于 **src/data/sku-seo-data.ts 的 en FAQ 答案**, 不在 products.ts (前版误引)。该 SKU 自身即小批量产品线, 50 可能是产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
+| small-batch-stickers | en | stickers | 50 | 10 | 1/9 | P2-修剪 | ★ 引用已更正 (2026-09-19): 自证句「We support 50-sticker MOQ for the small-batch line」位于 **src/data/sku-seo-data.ts 的 en FAQ 答案**, 不在 products.ts (前版误引)。该 SKU 自身即小批量产品线, 50 可能是产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
+| small-batch-stickers | ja | stickers | 50 | 10 | 1/9 | P2-修剪 | ★ 引用已更正 (2026-09-19): 自证句「We support 50-sticker MOQ for the small-batch line」位于 **src/data/sku-seo-data.ts 的 en FAQ 答案**, 不在 products.ts (前版误引)。该 SKU 自身即小批量产品线, 50 可能是产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」 |
 | a4-flyers | ja | flyers | 100 | 10 | 7/7 | P3-低优先 | 同簇 (flyers/ja) 全部 7 条一致声称 100 ⇒ 疑为分市场/产品线约定, 与全局真值 10 并存, 须 K3 定口径层级 |
 | a5-flyers | ja | flyers | 100 | 10 | 7/7 | P3-低优先 | 同簇 (flyers/ja) 全部 7 条一致声称 100 ⇒ 疑为分市场/产品线约定, 与全局真值 10 并存, 须 K3 定口径层级 |
 | double-sided-flyers | ja | flyers | 100 | 10 | 7/7 | P2-修剪 | 同簇 (flyers/ja) 全部 7 条一致声称 100 ⇒ 疑为分市场/产品线约定, 与全局真值 10 并存, 须 K3 定口径层级 |

@@ -88,7 +88,7 @@ const allTitles = parseTitles(catOf);
 const ATTESTED = {
   'small-batch-stickers': {
     verdict: 'PENDING_K3',
-    evidence: 'products.ts en description 明載「We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU **自身**即小批量产品线, 50 可能是其产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」',
+    evidence: '★ 引用已更正 (2026-09-19): 自证句「We support 50-sticker MOQ for the small-batch line」位于 **src/data/sku-seo-data.ts 的 en FAQ 答案**, 不在 products.ts (前版误引)。该 SKU 自身即小批量产品线, 50 可能是产品线固有口径; 但 4593937c 把貼紙線统一为 10 ⇒ 两者冲突, 须 K3 定「产品线口径」是否高于「品类线口径」',
   },
   'pvc-menus': { verdict: 'DRIFT', evidence: '★裁决已点名: c18107a0 明示「餐牌 【50本起訂】 vs 真值 100」为矛盾并移除 features 版; 标题版残留' },
   'laminated-menus': { verdict: 'DRIFT', evidence: '★同上 (c18107a0 餐牌 真值 100, 【50本起訂】判为矛盾)' },

@@ -38,7 +38,8 @@ function parseProducts() {
   return out;
 }
 
-/* ---- 全部 title (用于簇一致性 + locale 判据) ---- */
+/* ---- 全部 title + SKU 区块全文 (用于簇一致性 + 自证语料) ---- */
+const SKU_SEG = {};   // slug → sku-seo-data.ts 整段文本 (含 description/body/faqs)
 function parseTitles() {
   const txt = read('src/data/sku-seo-data.ts');
   const starts = [...txt.matchAll(/^(?: {2})?"([a-z0-9-]+)": \{/gm)].map((m) => ({ slug: m[1], idx: m.index }));
@@ -47,6 +48,7 @@ function parseTitles() {
   for (let i = 0; i < starts.length - 1; i++) {
     const seg = txt.slice(starts[i].idx, starts[i + 1].idx);
     if (!seg.includes('"seo"')) continue;
+    SKU_SEG[starts[i].slug] = (SKU_SEG[starts[i].slug] || '') + seg;
     for (const loc of ['zh-hk', 'en', 'ja']) {
       const m = seg.match(new RegExp(`"${loc}": \\{\\s*"title": "((?:[^"\\\\]|\\\\.)*)"`));
       if (m) rows.push({ slug: starts[i].slug, locale: loc, title: m[1].replace(/\\"/g, '"') });
@@ -82,12 +84,22 @@ console.log('payload shape:', JSON.stringify(shape));
 const products = parseProducts();
 const titles = parseTitles();
 
-/* NO_MOQ_HOOK 白名单: products.ts 自载的产品线级 MOQ (不猜 —— 逐条附自证原文) */
+/* NO_MOQ_HOOK — **人工核定白名单** (非启发式)
+ * ★ 2026-09-19 三轮试错结论: 「产品线级 MOQ」**无法用文本启发式可靠自动判定**。
+ *   实测两类失败:
+ *     ① 宽松窗口 (MOQ词+产品线词同现 ±80字) → 把**价格/数量散文**误吞进 NO_MOQ_HOOK
+ *        (exercise-books「50–100 copies are a fraction…」/ greeting-cards「100-180 per 1…」= 价格区间)
+ *     ② 加「本 SKU 独有」防样板规则后 → 反而把**唯一真案** small-batch-stickers 拒了,
+ *        因为该自证句正是貼紙簇的**同源样板** (多 SKU 共享)
+ *   ⇒ 启发式在此题上不可靠。改采**逐条人工核定 + 附引用出处** (与 K3「不猜」纪律一致);
+ *     未经核定的 SKU 一律走簇规则, 不自动进本桶。
+ */
+const NO_MOQ_HOOK_WHITELIST = {
+  'small-batch-stickers': 'src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU 自身即小批量产品线, 50 为产品线口径而非品类漂移 (与 resolve-moq-conflicts.mjs 的 ATTESTED 同源)',
+};
 function productLineNoHook(slug, claimed, p) {
-  if (!p) return null;
-  const re = new RegExp(`support[s]?\\s*${claimed}[\\s-]*(?:sticker|pcs|piece)`, 'i');
-  if (re.test(p.selfText)) return `products.ts 自载「…support ${claimed}-sticker MOQ for the … line」⇒ 该 SKU 属产品线级口径`;
-  return null;
+  const ev = NO_MOQ_HOOK_WHITELIST[slug];
+  return ev ? `人工核定: ${ev}` : null;
 }
 
 const out = [];
@@ -125,10 +137,15 @@ for (const h of hits) {
     const peerTotal = titles.filter((t) => products[t.slug]?.category === category && t.locale === locale).length;
 
     if (pline) { cls = 'NO_MOQ_HOOK'; reason = pline; }
-    else if (locale && locale !== 'zh-hk' && peers >= 5 && peers === peerTotal) { cls = 'LOCALE_SPECIFIC_KEEP'; reason = `同簇 (${category}/${locale}) 全部 ${peerTotal} 条一致声称 ${claimed} (与全局真值 ${truth} 不同) ⇒ 市场级约定`; }
-    else if (locale && locale !== 'zh-hk' && peers >= 5) { cls = 'LOCALE_SPECIFIC_KEEP'; reason = `同簇 (${category}/${locale}) ${peers}/${peerTotal} 条声称 ${claimed} (≥5) ⇒ 疑为市场级约定`; }
-    else if (locale && peers >= 5) { cls = 'MANUAL_REVIEW'; reason = `zh-hk 簇 ${peers}/${peerTotal} 条声称 ${claimed} ⇒ 可能是本 SKU 群真值口径, 但 zh-hk 无「市场差异」理由 ⇒ 人工判定`; }
-    else { cls = 'TRUE_DRIFT'; reason = `声称 ${claimed} != 真值 ${truth}; 无产品线自证、无 ≥5 簇约定`; }
+    // ★ 2026-09-19 修复 (K3 决策 3.2): 原规则把每个 case 都归了类 ⇒ MANUAL_REVIEW 恒为 0
+    //   = 「不猜」桶从未行使 = 隐性猜测。新阈值 (K3 指令):
+    //     簇内 ≥5 槽位一致声称同一值  → LOCALE_SPECIFIC_KEEP (jo flyers 7/7 属此类)
+    //     簇内 ≥4 槽位一致且与真值不同 → MANUAL_REVIEW (如 zh-hk menus 4/5: 可能是本 SKU 群
+    //        真值口径, 也可能是历史遗留错值 —— **无法自动判定, 不猜**)
+    //     其余                                        → TRUE_DRIFT
+    else if (peers >= 5) { cls = 'LOCALE_SPECIFIC_KEEP'; reason = `同簇 (${category}/${locale || '?'}) ${peers}/${peerTotal} 条一致声称 ${claimed} (≥5) 且与全局真值 ${truth} 不同 ⇒ 市场/产品线级约定`; }
+    else if (peers >= 4) { cls = 'MANUAL_REVIEW'; reason = `同簇 (${category}/${locale || '?'}) ${peers}/${peerTotal} 条一致声称 ${claimed} (≥4) 但与真值 ${truth} 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目**`; }
+    else { cls = 'TRUE_DRIFT'; reason = `声称 ${claimed} != 真值 ${truth}; 无产品线自证、簇内一致 <4 ⇒ 判漂移`; }
   }
 
   out.push({ slug, locale, category, kind: h.kind, claimed, truth, cls, reason, line: h.line, file: h.file, text: hitText.slice(0, 110) });
