@@ -349,7 +349,19 @@ function scanFile(file: string, truth: Map<string, number>): Hit[] {
         //   ① 數字緊鄰（前 18 字內）出現其他品類名 → 歸屬可疑
         //   ② 整行同時出現 ≥2 個品類名 → 綜合段落
         //   注意：`products.ts` 是一 SKU 一區塊的乾淨結構，**不做此排除**（避免誤殺）。
-        if (file !== SELF) {
+        //
+        // ★ 2026-09-19 判定域補漏（K3 指令：擴展門童 #24 至 title 字段）
+        //   事故：menus 簇「【50本起訂】 vs 真值 100」在 c18107a0 只修了 **features 版**，
+        //        **title 版殘留至今**；而本門童對 title 行恆判為「跨品類行」→ 靜默 continue
+        //        → 報「🆕 0 漂移」= 假零，掩蓋了 24 條 title 級漂移。
+        //   機制：本站標題格式恆為 `主詞(含品類名) | 修飾 MOQ鉤子 | 品牌`
+        //        ⇒ 品類名**必然**落在數字前 18 字內 ⇒ 規則 ① 對 title 行必然命中。
+        //   判據：title 是 SKU 區塊內的**單行標量字段**，結構上不可能是跨品類綜合段落
+        //        （該過濾器的設計目標是 `sku-seo-data.ts` 的 body/description 散文）
+        //        ⇒ title 行**豁免規則 ①②**，但 inNested() 與 slugForLine() 歸屬檢查不變。
+        const isTitleLine = (l: string): boolean =>
+          /^\s*"title"\s*:\s*"/.test(l) || /^\s*title\s*:\s*['"]/.test(l);
+        if (file !== SELF && !isTitleLine(line)) {
           const nearText = line.slice(Math.max(0, m.index - 18), m.index);
           if (OTHER_CATEGORY_NAMES.test(nearText)) continue;
           if (countCategoryNames(line) >= 2) continue;

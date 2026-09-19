@@ -113,17 +113,21 @@ for (const r of allTitles) {
   // products.ts 自证: 该 SKU 文本内是否出现同一数字 + 起印语素
   const selfCorrob = new RegExp(`(?:${claimed}\\s*(?:張|個|本|套|份|枚|pcs|MOQ))`, 'i').test(p.selfText);
 
-  let verdict, reason;
+  let verdict, reason, moqStatus;
   if (att) { verdict = att.verdict; reason = att.evidence; }
   else if (selfCorrob) { verdict = 'ALIGNED'; reason = `products.ts 自身文本含「${claimed} 起印」⇒ 该 SKU 有独立口径, 非漂移`; }
   else if (r.locale !== 'zh-hk' && peers.length >= 3 && peers.length === peerTotal) {
     verdict = 'PENDING_K3';
     reason = `同簇 (${r.category}/${r.locale}) 全部 ${peerTotal} 条一致声称 ${claimed} ⇒ 疑为分市场/产品线约定, 与全局真值 ${p.minQuantity} 并存, 须 K3 定口径层级`;
+    // ★ K3 2026-09-19 决策 3: 高一致性挂起项标 LOCALE_SPECIFIC_KEEP,
+    //   防生成器/后续批次误当 DRIFT 「修正」为全局值 (强改为 10 会砸掉 ja 市场约定)。
+    if (r.locale === 'ja') moqStatus = 'LOCALE_SPECIFIC_KEEP';
   } else { verdict = 'DRIFT'; reason = `无自证、无簇约定; 与裁决真值 ${p.minQuantity} 直接冲突`; }
 
   conflicts.push({
     slug: r.slug, locale: r.locale, category: r.category,
     claimed, truth: p.minQuantity, verdict, reason,
+    moqStatus: moqStatus || (verdict === 'DRIFT' ? 'USE_RULING_TRUTH' : verdict === 'ALIGNED' ? 'USE_PRODUCTS_TRUTH' : 'NO_MOQ_HOOK'),
     clusterPeers: `${peers.length}/${peerTotal}`,
     title: r.title,
   });
