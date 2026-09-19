@@ -62,12 +62,16 @@ def append_bus(repo, record):
 
 
 def newest_report(repo, lane):
-    """本车道当日/最近报告: 文件名口径 <YYYY-MM-DD>-<lane>.md 优先, 其次 *-<suffix>.md"""
+    """本车道当日报告: 口径强制 <YYYY-MM-DD>-<lane>.md; 剔除第三方报告 (如 cron-watchdog-alerts.md)。"""
     logs = os.path.join(repo, ".hermes", "logs")
     lane_suffix = lane.replace("ZP-", "")
     cands = []
-    for pat in (os.path.join(logs, f"*-{lane_suffix}.md"), os.path.join(logs, f"*-{lane_suffix}-audit.md")):
+    for pat in (os.path.join(logs, f"*-{lane_suffix}.md"), os.path.join(logs, f"*-{lane}.md")):
         cands += glob.glob(pat)
+    if not cands:
+        return None, []
+    # 只要文件名里含日期 token 的 (无日期的第三方文件不认)
+    cands = [c for c in cands if len(os.path.basename(c)) >= 10 and os.path.basename(c)[:4].isdigit()]
     if not cands:
         return None, []
     cands.sort(key=lambda f: (os.path.basename(f)[:10], os.path.getmtime(f)), reverse=True)

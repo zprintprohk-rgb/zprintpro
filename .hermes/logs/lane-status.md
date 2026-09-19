@@ -1,7 +1,7 @@
 # 定时任务状态 (lane-status)
 
-> 生成: 2026-09-19 08:17 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
-> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (0 条真实记录, 已排除 1 条自测记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
+> 生成: 2026-09-19 08:19 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
+> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (1 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
 > SSoT: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`
 > **verdict: ATTENTION** — ZP-blog-deepfix 2026-09-19 -> STALE ; ZP-monthly-matrix scheduler LastTaskResult=267011
 
@@ -42,7 +42,7 @@
 ### ZP-blog-deepfix — 2026-09-19 `STALE`
 
 - 期望触发: 05:37
-- run 记录: （总线尚无记录，证据来自 wrapper 日志）
+- run 记录: {"run_id":"ZP-blog-deepfix-20260919T081911","lane":"ZP-blog-deepfix","trigger":"schtasks","ended_at":"2026-09-19 08:19:11","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","blocked_reason":"","guard":{"ok":true},"report":".hermes/logs/cron-watchdog-alerts.md","files":[],"pushed":true,"head":"f5bb90b6","source":"lane-git-commit.py"}
 - wrapper 最近一次: start=2026-09-19 05:37:09 end=0 dsh_exit=0 guardBlocked=true runsTotal=1
 - 当天报告: `2026-09-19-blog-deepfix.md`
 - 调度器: LastRun=2026-09-19 05:37:00 Result=0 State=Ready

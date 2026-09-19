@@ -74,29 +74,32 @@
 ### §0.35.2 真实调用链与执行器
 `\ZP-<lane>` → `.hermes/cron-run/ZP-<lane>.ps1`（墙钟上限守卫）→ `.hermes/cron-run/ZP-<lane>.cmd`（host 侧 wrapper，`cd /d F:\zprintpro-nextjs`）→ `dsh --profile headless "<prompt>"`（DSH Home `C:\Users\Administrator\.dsh`，DeepSeek 官方 key；`hermes.exe` 因 402 余额耗尽已停用）→ `python scripts/lane-git-commit.py`（host 侧 commit/push + 写结果）。**生成器 = `scripts/register-cron-tasks.ps1`（wrapper 内已写 "do not hand-edit"），车道清单 SSoT = `.hermes/cron-lanes.json`。**
 
-### §0.35.3 结果总线 (定时任务 → 主程序的判断依据)
-1. **`\.hermes\logs\lane-runs\.jsonl`** — 每次 lane 收尾追加一行结构化记录（lane / verdict / dsh_exit / wrapper_exit / guard / report / files / pushed / head）。
+### §0.35.3 结果总线 (定时任务 → **执行层**的判断依据, K3 2026-09-19 更正消费者)
+> **K3 原话**: 「这些定时任务结果是要给 deepseek 执行任务的数据依据和支撑的，**不是给 K3 的**」。
+> 消费者 = **执行层（deepseek 车道自身）**：每轮开工先读上一轮结果，再决定今天干什么（幂等/避让/继承）。K3 复盘是次要消费者。
+1. **`\.hermes\logs\lane-runs\.jsonl`** — 每次 lane 收尾追加一行结构化记录（lane / verdict / dsh_exit / wrapper_exit / guard / report / files / pushed / head / blocked_reason）。
 2. **`node scripts/lane-status.mjs [--days=7]`** — 汇总成 `.hermes/logs/lane-status.json`（机器读）+ `lane-status.md`（人读）；verdict ∈ `OK / MISSING / FAILED / BLOCKED / STALE / PENDING`。
-3. **消费方（强制）**：5 个 lane prompt 的启动必读 SSoT、K3 复盘流程、任何"读执行报告出次日指令"的动作，**第一输入必须是 `lane-status.json`**，不得只翻散报告。
-4. **报告命名强制**：车道报告一律 `<YYYY-MM-DD>-<lane>.md` 落 `.hermes/logs/`（`lane-status.mjs` 只认这个口径；`2026-09-17-lane-o-p0-3-*.md` 这类无 lane 名文件无法归属）。
+3. **`scripts/lane-preflight.py`** — 每轮 dsh **之前**跑：前置检查（repo/worktree/branch/锁）+ 抢锁 + 生成 `.hermes/logs/run-context-<lane>.json`（上一轮结果 = **幂等账本**、`retry_queue`、`sibling_lanes`）；不过则 **不调用 dsh** 并写 `BLOCKED` 总线记录。
+4. **消费契约文件**: `.hermes/cron-prompts/lane-results-bus-contract.md`（全文 CJK），5 条 lane prompt 首部已注入**第 -1 优先级**引用块（生成器 `scripts/inject-results-bus-contract.mjs`，带计数/形状断言 + 备份 + 幂等）。
+5. **wrapper 的 dsh prompt** 由 `.hermes/cron-run/lane-prompt-template.txt` 生成，**STEP 0 必须先读** `run-context-<lane>.json` + `lane-status.json` + 契约文件；报告名强制 `<YYYY-MM-DD>-<lane>.md`，首段必含 `VERDICT / CONSUMED / DELIVERED / NEXT`。
+6. **报告命名强制**：`lane-status.mjs` 只认「文件名以当日日期开头 **或** 含当日日期且以车道后缀结尾」；`cron-watchdog-alerts.md`、`step5-merge-batch-report-<date>.md` 这类第三方文件**不得**冒充车道产物（2026-09-19 两次实测踩到，已收口）。
 
 ### §0.35.4 判据铁律 (机器判据, 不看自我播报)
-- ❌ **禁用「文件 mtime 新鲜度」当存活证据**：9/17 全档复制把 `.hermes/logs/2026-09-1x-*.md` 的 mtime 统一刷成 `2026-09-17 13:31:55`；且看门狗曾拿**前一天的旧报告**判当天 `[OK]`，掩盖 9/17 21:17 lane 在已删除 worktree 空转 4 分钟零产出的事故。
+- ❌ **禁用「文件 mtime 新鲜度」当存活证据**：9/17 全档复制把 `.hermes/logs/2026-09-1x-*.md` 的 mtime 统一刷成 `2026-09-17 13:31:55`；且看门狗曾拿**前一天的旧报告**判当天 `[OK]`，掩盖 9/17 21:17 lane 在已删除 worktree 空转 4 分钟零产出的事故。看门狗 v2 已改为**四方对账**（调度器 + `lane-runs.jsonl` + wrapper 日志 + 当日报告），mtime 仅留兜底参考。
 - ❌ **禁用「wrapper exit=0」当成功**：wrapper 恒 `exit /b %RC%`，dsh 空转也返回 0；Task Scheduler `LastResult=0` 只是一致性假象。
 - ✅ **必看四件**：① `lane-runs.jsonl` 是否有该日的 run 记录 ② wrapper 日志 `dsh exit` / `run end exit` ③ **当日日期**的报告文件是否存在（= 有没有真产出）④ `Get-ScheduledTask` 的 `LastTaskResult`。
-- ✅ `exit code` 映射：`2`=git 失败 / `3`=encoding guard 失败 / `4`=**pre-commit guard 拦下 src commit** / `5`=push 失败 / `124`=墙钟上限 kill。
+- ✅ `exit code` 映射：`2`=git 失败 / `3`=encoding guard 失败 / `4`=**pre-commit guard 拦下 src commit** / `5`=push 失败 / `124`=墙钟上限 kill / `10`=preflight 不过（不调用 dsh）/ `11`=锁被占用。
 
 ### §0.35.5 已知坑与责任人
-- **报告必须"失败也写"**：`lane-git-commit.py` 原在 src commit 被拦时 `return 4` 并**跳过写报告** → 9/19 blog-deepfix 整批成功却在 `cron-execution-report.md` 无任何记录（已修：先落报告 + 写总线再返回 4）。
+- **报告必须"失败也写"**：`lane-git-commit.py` 原在 src commit 被拦时 `return 4` 并**跳过写报告** → 9/19 blog-deepfix 整批成功却在 `cron-execution-report.md` 无任何记录（已修：先落报告 + 写总线再返回 4）；报告路径取本车道产物（`pick_lane_report()`），不再取 git status 字母序第一个 `.md`。
+- **编码铁律（2026-09-19 三次实测踩坑）**：`scripts/register-cron-tasks.ps1` **必须纯 ASCII**（PS 5.1 把 BOM-less UTF-8 当 ANSI/GBK → 解析崩；多行字符串拼接失败会**静默变 `$null`** → 生成的 wrapper 里 dsh 参数为空 `""`，5 条车道全部收到空 prompt）；生成的 `.cmd` **也必须纯 ASCII**（`-Encoding ASCII` 写出，CJK 变 `?`）。故 CJK prompt 文本一律放 `.md`/`.txt` 数据文件，PS 侧只读 + 断言 ASCII 纯净度。另：`if ... ( ... )` 块内含带引号 echo 会让 cmd.exe 报 `-- was unexpected at this time.` 中止整条 wrapper → 改单行 `if "%PF%"=="0" goto <label>`。
 - **遗留任务需管理员**：`\ZprintPro-CronWatchdog-2125`（每天 21:25）读错 registry 下标（autoclaw `jobs[5..9]` 是 8 月一次性历史任务），每天写假 PASS/FAIL；**非提升会话实测无法 delete**（`IsAdmin=False`）。清理脚本：`scripts/remove-legacy-cron-tasks.ps1`（**K3 管理员执行一次**）。
 - **lane 会话会出现在 DSH 会话列表**：headless 调用以 `Read .hermes/cron-prompts/...` 开头，GUI 按首条 prompt 起标题 → 看起来像"未分组一堆 read 开头的任务"，实为**运行记录，不是任务定义**，也无副作用。
-- **人手会话与 lane 并发改同一文件** = 9/19 撞车事故（lane 05:37→05:49 与人手 05:41 起同时写 `src/data/blog-data/zh-hk.json`，产生 `_broken-zhhk-lane-20260919.json` 坏版）；根治手段 = `.hermes/locks/lane.lock` 互斥（待落地，见 §0.35.6）。
+- **人手会话与 lane 并发改同一文件** = 9/19 撞车事故（lane 05:37→05:49 与人手 05:41 起同时写 `src/data/blog-data/zh-hk.json`，产生 `_broken-zhhk-lane-20260919.json` 坏版）；已落地 `.hermes/locks/lane.lock` 互斥（preflight 持锁 / 收尾释放 / 3600s 陈旧可夺 / 看门狗查残留）。**人手会话改 `src/data/blog-data/*.json` 前必须看锁**。
 
-### §0.35.6 待落地 (P1/P2, 未完成不得报"已解决")
-1. `scripts/lane-status.mjs` 接入 `ZP-cron-watchdog` 每日 06:43 轮次（看门狗改"期望触发 vs 实跑记录"对账，弃 mtime）；
-2. `scripts/lane-preflight.py`（repo 根/分支/锁/依赖四项前置，不过则不调用 dsh 并写 `BLOCKED`）；
-3. `.hermes/locks/lane.lock` 互斥（wrapper 持锁，人手会话改 `src/data/blog-data/*.json` 前必读锁）；
-4. `k3-ceo-daily-review.md` 重写为读 `lane-status.json`（旧文引用 `F:\zprintpro-main-tmp` / `mavis cron` 已失效且**未被任何调度器注册**）。
+### §0.35.6 状态
+- ✅ **已落地 (2026-09-19)**：结果总线（`lane-runs.jsonl` / `lane-status.mjs` / `run-context`）、5 条 prompt 注入消费契约、`lane-preflight.py`（前置 + 锁 + 上下文）、wrapper 接入 preflight 并把 run-context 作为 dsh 第一句、看门狗 v2 四方对账、`lane-git-commit.py` 失败也写报告 + 报告归属修正。
+- ⏳ **待办**：① `k3-ceo-daily-review.md` 重写为读 `lane-status.json` 并**注册成真实调度任务**（旧文引用 `F:\zprintpro-main-tmp` / `mavis cron` 已失效，且未被任何调度器注册）；② autoclaw registry 与 Kimi Work 两层正式废弃（只留历史记录），校验/看门狗只读 `.hermes/cron-lanes.json`；③ 集成测试纪律：**禁止在真实生产 wrapper 上跑端到端测试**（2026-09-19 因此误 push 2 次，违反 §0.25 30min 硬下限）；④ `delete-legacy-watchdog.cmd` 含 CJK（同 §0.35.5 编码铁律），待清理。
 
 
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)

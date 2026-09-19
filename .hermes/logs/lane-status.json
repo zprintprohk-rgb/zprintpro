@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-19T00:17:17.339Z",
-  "generated_local": "2026-09-19 08:17",
+  "generated_at": "2026-09-19T00:19:40.235Z",
+  "generated_local": "2026-09-19 08:19",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
   "bus_file": ".hermes/logs/lane-runs.jsonl",
-  "bus_records": 0,
-  "bus_records_test_excluded": 1,
+  "bus_records": 1,
+  "bus_records_test_excluded": 0,
   "window_days": 8,
   "lanes": [
     {
@@ -305,7 +305,24 @@
         "runsTotal": 1,
         "logFile": ".hermes/logs/cron-ZP-blog-deepfix.log"
       },
-      "lastRunRecord": null,
+      "lastRunRecord": {
+        "run_id": "ZP-blog-deepfix-20260919T081911",
+        "lane": "ZP-blog-deepfix",
+        "trigger": "schtasks",
+        "ended_at": "2026-09-19 08:19:11",
+        "dsh_exit": null,
+        "wrapper_exit": 0,
+        "verdict": "OK",
+        "blocked_reason": "",
+        "guard": {
+          "ok": true
+        },
+        "report": ".hermes/logs/cron-watchdog-alerts.md",
+        "files": [],
+        "pushed": true,
+        "head": "f5bb90b6",
+        "source": "lane-git-commit.py"
+      },
       "days": [
         {
           "day": "2026-09-12",
@@ -325,7 +342,7 @@
           "notes": [
             "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
           ],
-          "exit": 0,
+          "exit": null,
           "report": "2026-09-19-blog-deepfix.md",
           "reportStrict": true
         }

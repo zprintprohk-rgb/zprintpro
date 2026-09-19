@@ -1,3 +1,17 @@
+<!-- RESULTS-BUS-CONTRACT v1 (2026-09-19) -->
+> # ⛔ 【第 -1 优先级 · 结果总线消费契约】先读结果, 再干活 (K3 2026-09-19 指令)
+>
+> **K3 原话**: 「这些定时任务结果是要给 deepseek 执行任务的数据依据和支撑的，不是给 K3 的」。
+>
+> **开工第一步 (先于本 prompt 任何内容任务与 SSoT 必读)**: 按顺序读
+> 1. `.hermes/logs/run-context-<本车道名>.json` — 本轮专属上下文 (上次跑了几次/结果/产物/待重做/今日其他车道动作/锁与前置检查结论)
+> 2. `.hermes/logs/lane-status.json` — 全车道近 7 天逐日 verdict (`OK / MISSING / FAILED / BLOCKED / STALE / PENDING`) + 证据路径
+>
+> **全契约 (必读)**: `.hermes/cron-prompts/lane-results-bus-contract.md` — 幂等判定 (不重复做已完成的事) / 不重犯 (上次被 guard 拦下的必须先过断言) / 跨车道避让 (同一文件不在同一天被两条路径改写) / 数据继承 (上轮 X → 本轮 Y) / 写回格式 (报告首段必含 `VERDICT / CONSUMED / DELIVERED / NEXT` 四行)。
+>
+> **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
+<!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
+
 > **[v9.3 指令区 · 2026-09-12 K3 拍板 · 必读第 -3 优先级]** 来源 `docs/2026-09-12-k3-directive-v93-home-fix-money-words.md`（执行层评估 A 93/100 后新增标准 + 8 锁词 + 3 件终裁）
 >
 > **S1 答案块字数断言（新门禁 · 2026-09-12 生效）**：凡涉答案块/FAQ/答案卡（quickAnswers / AEO 3 直接答案卡 / FAQPage）的批次，**验收必跑字数断言** —— zh-hk 答案规格区 **40-60 全角字，硬上限 ≤60**；超出部分移到 FAQ 详情，不得留在答案卡。无字数断言的批次视为未验收。（教训：B1 已有 3 品类超标 red-packets 116 / educational 254 / japan-doujin 128 未被发现）

@@ -222,6 +222,31 @@ def _commit_reports(repo, args, report_files, date):
     return 0
 
 
+def pick_lane_report(lane, allowed):
+    """从本次白名单改动里挑出**本车道自己的报告文件**。
+
+    2026-09-19 实测教训: 原实现取 "第一个 .md" -> 会把别人的文件写进报告列
+    (历史行: daily-content 写成 title-audit-2026-09-09.md / gsc-feedback 写成 cron-check-tonight.md;
+     当日实测又把 ZP-blog-deepfix 写成 .hermes/logs/cron-watchdog-alerts.md)。
+    口径: ① 优先 <YYYY-MM-DD>-<lane>.md (契约强制命名) ② 其次 *-<lane 短名>.md ③ 都没有写 NONE。
+    """
+    short = lane.replace("ZP-", "")
+    md = [p for p in (allowed or [])
+          if p.endswith(".md") and "cron-execution-report.md" not in p]
+    dated = sorted([p for p in md if os.path.basename(p).startswith(tuple(
+        f"{d}-" for d in [time.strftime('%Y-%m-%d', time.localtime()),
+                          time.strftime('%Y-%m-%d', time.localtime(time.time() - 86400))]))])
+    for p in dated:
+        if os.path.basename(p).endswith(f"-{short}.md") or os.path.basename(p).endswith(f"-{lane}.md"):
+            return p
+    named = [p for p in sorted(md) if p.endswith(f"-{short}.md") or p.endswith(f"-{lane}.md")]
+    if named:
+        return named[-1]
+    if dated:
+        return dated[-1]
+    return "NONE"
+
+
 def write_lane_run(record):
     """追加一条结构化 run 记录到 .hermes/logs/lane-runs.jsonl (结果总线, K3 2026-09-19 指令)。
 
@@ -248,17 +273,14 @@ def write_exec_report(lane, repo, allowed, pushed, date,
       ② 结果列写真实 verdict + exit_code, 不再恒写「✅ 完成」;
       ③ 同时写结构化 lane-runs.jsonl, 供 lane-status.mjs 汇总。
     """
-    report = "—"
-    cand = [p for p in (report_files if report_files is not None else allowed)
-            if p.endswith(".md") and "cron-execution-report.md" not in p]
-    if cand:
-        report = cand[0]
+    report = pick_lane_report(lane, report_files if report_files is not None else allowed)
     pushed_txt = "✅ push" if pushed else "⏳ commit(未 push)"
     files = [p for p in allowed
              if not p.endswith(".md")
              and not p.startswith("scripts/")
-             and not p.startswith(".hermes/logs/")]
-    files_txt = ", ".join(files) if files else "—"
+             and not p.startswith(".hermes/logs/")
+             and not p.startswith(".hermes/reports/")]
+    files_txt = ", ".join(files) if files else "NONE"
     now = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     verdict_txt = verdict if verdict else ("✅ 完成" if exit_code == 0 else f"❌ exit={exit_code}")
 
