@@ -41,18 +41,24 @@ const URLS = [
 
 (async () => {
   const bodies = { en: [], ja: [] };
-  let fail = 0;
+  let fail = 0, invalid = 0;
   for (const [loc, p] of URLS) {
     try {
       const r = await get('https://zprintpro.com' + p);
+      // 技术债 9: 非 200 ⇒ 报 INVALID, 其「串缺失」不计入失败 (防探针 URL 写错被误读成内容缺失)
+      if (r.s !== 200) {
+        console.log(`🟡 INVALID ${p} (HTTP ${r.s}) — 不计入内容失败; 请核对 slug 是否取自数据实际键名`);
+        invalid++;
+        continue;
+      }
       const t = txt(r.h);
       bodies[loc].push(t);
       const gone = GONE[loc].filter(s => t.includes(s));
-      console.log(`${r.s === 200 ? '✅' : '⚠️'} ${p} (HTTP ${r.s}, ${t.length})  旧串残留: ${gone.length ? '❌ ' + JSON.stringify(gone) : '0'}`);
+      console.log(`✅ ${p} (HTTP 200, ${t.length})  旧串残留: ${gone.length ? '❌ ' + JSON.stringify(gone) : '0'}`);
       if (gone.length) fail++;
     } catch (e) {
       console.log(`💥 ${p} — ${e.message}`);
-      fail++;
+      invalid++;
     }
   }
   console.log('\n=== 阳性对照 (新串必须在) ===');
@@ -64,6 +70,6 @@ const URLS = [
       console.log(`  ${ok ? '✅' : '❌'} [${loc}] ${JSON.stringify(s)}`);
     }
   }
-  console.log(`\n=== 线上验收: FAIL ${fail} ===`);
+  console.log(`\n=== 线上验收: FAIL ${fail} | INVALID ${invalid} ===`);
   process.exit(0);
 })();
