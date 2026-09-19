@@ -1,8 +1,8 @@
 /**
  * apply-title-batch.mjs — 标题批次: 校验 + 安全落盘 (只改指定 title 槽)
  *
- * 规则 SSoT: docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁 目标区 50-58)
- * 当量 SSoT: scripts/guards/title-equiv.js (TITLE_MIN=50 / TITLE_MAX=58)
+ * 规则 SSoT: docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 目标区 50-57, 58 为阻断线)
+ * 当量 SSoT: scripts/guards/title-equiv.js (TITLE_MIN=50 / TITLE_MAX=57) —— 本脚本不自行硬编码, 一律读该模块
  * 数字钩子来源: src/data/products.ts 的 minQuantity / basePrice / price_range (禁编造, §0.23)
  *
  * 为什么直接改 src/data/sku-seo-data.ts 而不是走 CSV→生成器 (SOP-5 例外, 有据):
@@ -12,8 +12,9 @@
  *   (c) 用 ZH 关键词列覆盖 en/ja keywords。⇒ 采「外科式槽位替换」; CSV 反向同步列为待办。
  *
  * 批次:
- *   p0       — business-envelopes + large-envelopes 补齐 (35/44/48 → 50-58), 已落 commit 9a1a2a07
- *   a2-trim  — a2-posters 三语超限修剪 (65/62/63 → 50-58), K3 2026-09-19 决策「立即修剪」
+ *   p0       — business-envelopes + large-envelopes 补齐 (35/44/48 → 当量达标), 已落 commit 9a1a2a07
+ *   a2-trim  — a2-posters 三语超限修剪 (65/62/63 → 当量达标), K3 2026-09-19 决策「立即修剪」
+ *   (注: 上述批次的「达标」按当时口径判定; 现行口径 = 50-57 当量, 58 阻断)
  *
  * 用法:
  *   node scripts/apply-title-batch.mjs --batch=a2-trim           # dry-run (默认)

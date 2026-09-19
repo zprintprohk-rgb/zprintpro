@@ -2,8 +2,8 @@
  * sku-title-census.mjs — SKU 标题全量普查 (只读) + GSC 28d 交叉
  *
  * 口径 SSoT:
- *   - scripts/guards/title-equiv.js  (半角当量 / TITLE_MIN=50 / TITLE_MAX=58)
- *   - docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁 目标区 50-58)
+ *   - scripts/guards/title-equiv.js  (半角当量 / TITLE_MIN=50 / TITLE_MAX=57)
+ *   - docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 目标区 50-57, 58 阻断)
  *   - docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (v4 50-54, 已被 9/13 取代)
  *
  * 双方法复算 (§0.23.2): methodA = guards/title-equiv.js (regex 逐字), methodB = 数值区间逐码点,
@@ -126,7 +126,7 @@ function annotate(row) {
   row.utf16 = t.length;
   row.codepoints = [...t].length;
 
-  // 现行规则 (K3 9/13): 50-58
+  // 现行规则 (K3 2026-09-19): 50-57 目标区, 58 阻断 (band() 取自 title-equiv.js)
   row.band = band(t); // OK / FILL / TRIM
   // v4 旧规则 (已被取代, 仅作对照): 目标 50-54, >=55 满格
   row.bandV4 = e < 50 ? 'FILL' : e <= 54 ? 'OK' : e <= 60 ? 'LEGACY' : 'RED';
@@ -188,7 +188,7 @@ const listOver = rows.filter((r) => r.band === 'TRIM').sort(sortByImp);
 
 const summary = {
   generatedFor: TODAY,
-  ruleSSoT: 'docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁 目标区 50-58)',
+  ruleSSoT: `docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 目标区 ${TITLE_MIN}-${TITLE_MAX}, 58 为阻断线; 取代 v4 的 50-54 与 9/13 的 50-58)`,
   equivSSoT: 'scripts/guards/title-equiv.js',
   TITLE_MIN,
   TITLE_MAX,
@@ -209,7 +209,7 @@ const md = [];
 md.push(`# SKU 标题全量普查 (${TODAY})`);
 md.push('');
 md.push(`> 性质: **只读审计**。口径 SSoT = \`scripts/guards/title-equiv.js\` (半角当量, MIN=${TITLE_MIN} / MAX=${TITLE_MAX})`);
-md.push(`> 规则 SSoT = \`docs/2026-09-13-title-batch-T-freeze.md\` §6-3 (K3 9/13 终裁 目标区 **50-58 半角当量**, 取代 v4 的 50-54)`);
+md.push(`> 规则 SSoT = \`docs/2026-09-13-title-batch-T-freeze.md\` §6-3 (K3 2026-09-19 裁决 目标区 **${TITLE_MIN}-${TITLE_MAX} 半角当量**, 58 为阻断线; 取代 v4 的 50-54 与 9/13 的 50-58)`);
 md.push('');
 md.push('## 数据来源 (§0.23)');
 md.push(`校准日期: ${TODAY} ${new Date().toISOString().slice(11, 16)} UTC`);
@@ -250,11 +250,11 @@ md.push('');
 md.push(`- methodA vs methodB 不一致: **${mismatches.length}** 条 ${mismatches.length === 0 ? '✅ 两法一致' : '🔴 需查指标'}`);
 md.push(`- 槽位总数 ${rows.length} / 有 title ${summary.slotsPresent} / 缺 title ${missing.length}`);
 md.push('');
-md.push(`## E. 规则口径影响面 (v4 50-54 vs 现行 50-58)`);
+md.push(`## E. 规则口径影响面 (v4 50-54 vs 现行 ${TITLE_MIN}-${TITLE_MAX})`);
 md.push('');
 md.push(`- v4 旧口径分布: ${JSON.stringify(byBandV4)}`);
 md.push(`- 现行口径分布: ${JSON.stringify(byBand)}`);
-md.push(`- **仅因新口径 (50-58) 才判达标**的槽位: ${ruleDelta.length} 条 (旧口径下属 55-58 由「满格禁加」变为「合规」)`);
+md.push(`- **仅因新口径 (${TITLE_MIN}-${TITLE_MAX}) 才判达标**的槽位: ${ruleDelta.length} 条 (旧口径下属 55-${TITLE_MAX} 由「满格禁加」变为「合规」; ≥58 仍为阻断线)`);
 
 /* ---------- F. 优先级分层 (以真实数据为准, 非doc估计) ---------- */
 // P0 定义 (来源: 用户 2026-09-19 方案稿): 位置<=20 且 展示>=30 且 当量<40

@@ -1,12 +1,18 @@
 /**
  * title-audit-v4.mjs — 全站标题 v4 写满原则审计 + 补词提案 (2026-09-09)
- * 口径: docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (CJK×2) + docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁目标区 50-58)
- * 2026-09-15: blog 分支从 raw chars 改半角当量 (统一 title-equiv.js 口径), SKU/类目/首页同步 50-58
+ * 口径: docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (CJK×2) + docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 目标区 50-57, 58 阻断)
+ * 2026-09-15: blog 分支从 raw chars 改半角当量 (统一 title-equiv.js 口径), SKU/类目/首页同步
+ * 2026-09-19: 目标区由 50-58 收窄为 50-57 (TITLE_MAX 58→57), 本脚本读 title-equiv.js 常量
  * 冻结: 8/30 批 32001e17 (seo.ts 类目 titles) + 9/4 摘果批 + 9/3-9/8 近改 (幂等铁律 #3)
  * 用法: node scripts/title-audit-v4.mjs [--emit]  (--emit = 生成补词提案)
  */
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
+
+const require = createRequire(import.meta.url);
+// SSoT: 阈值与当量口径一律取 guards/title-equiv.js, 本脚本不再自带常量
+const { TITLE_MIN, TITLE_MAX } = require('./guards/title-equiv.js');
 
 const ROOT = path.resolve(import.meta.dirname, '..');
 const equiv = (s) => [...s].reduce((n, ch) => n + (/[\u2E80-\u9FFF\uF900-\uFAFF\uFF01-\uFF60\u3000-\u303F]/.test(ch) ? 2 : 1), 0);
@@ -133,15 +139,15 @@ for (const r of results) {
   const t = r.title;
   r.equiv = equiv(t);
   r.len = t.length;
-  // 2026-09-15: 全站统一 50-58 半角当量 (K3 9/13 终裁, title-equiv.js), blog 不再用 raw chars
-  r.band = r.equiv < 50 ? 'FILL' : r.equiv <= 58 ? 'OK' : r.equiv <= 65 ? 'TRIM' : 'RED';
+  // 2026-09-19: 阈值不再硬编码, 一律读 SSoT 模块 title-equiv.js (K3 裁决 目标区 50-57, 58 阻断)
+  r.band = r.equiv < TITLE_MIN ? 'FILL' : r.equiv <= TITLE_MAX ? 'OK' : r.equiv <= 65 ? 'TRIM' : 'RED';
   r.brandIssues = brandIssue(r);
   r.pollution = r.brandIssues.filter((i) => /污染/.test(i));
   r.bcHit = BC_RE.test(t);
   r.insightHit = INSIGHT_RE.test(t);
   if (r.type === 'sku' && !r.frozen) r.frozen = FROZEN_SKU.has(r.slug);
   if (r.type === 'blog' && !r.frozen) r.frozen = FROZEN_BLOG.has(r.slug);
-  r.action = r.frozen ? 'FROZEN(只读至窗判)' : r.band === 'FILL' ? '补满 50-58' : r.band === 'TRIM' ? '修剪 50-58' : r.band === 'RED' ? '超格修剪' : r.brandIssues.length ? '修品牌/污染' : 'OK';
+  r.action = r.frozen ? 'FROZEN(只读至窗判)' : r.band === 'FILL' ? `补满 ${TITLE_MIN}-${TITLE_MAX}` : r.band === 'TRIM' ? `修剪 ${TITLE_MIN}-${TITLE_MAX}` : r.band === 'RED' ? '超格修剪' : r.brandIssues.length ? '修品牌/污染' : 'OK';
 }
 
 // ---- 汇总 ----
@@ -192,9 +198,12 @@ if (process.argv.includes('--emit')) {
     const sep = r.locale === 'en' ? ' + ' : '・';
     const fixedEquiv = equiv(mainWord) + equiv(brand) + 5;
     let cand = '';
+    // 2026-09-19: 填充上限由 v4 硬编码 54 改为读 SSoT TITLE_MAX (=57)。
+    // v4 语义为「写满 50-54 / ≥55 禁加」, 该语义已被 K3 2026-09-19 裁决取代 (目标区 50-57, 58 阻断);
+    // 沿用 54 会在 55-57 区间静默欠填, 与现行口径不一致。
     for (const el of parts) {
       const trial = cand ? `${cand}${sep}${el}` : el;
-      if (equiv(trial) + fixedEquiv <= 54) cand = trial;
+      if (equiv(trial) + fixedEquiv <= TITLE_MAX) cand = trial;
     }
     for (const el of parts) {
       if (!cand.includes(el)) {

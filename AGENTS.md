@@ -47,7 +47,7 @@
 
 ### §0.34.1 统一入口（新执行层开工前必读第 0 优先级）
 1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 6 问（**第 1 问已变更为 2026-09-12 口径**：本批是否触及名片展示层/SEO 层 → 触及须先确认 K3 已裁决 §0.0 解禁块 (a)/(b)/(c)；名片本身已解禁，不再扫禁词）/ 最高规则速查 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 自动化窗口速查 / 执行纪律 / 自进化 4 步 SOP。
-2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则（**K3 9/13 终裁 目标区 50-58 半角当量 / >58 满格禁加**，取代 v4 的 50-54；四元素 + 长尾 3 筛选 / 冻结 2-4 周；当量口径 = `scripts/guards/title-equiv.js`，规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
+2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则（**K3 2026-09-19 裁决 目标区 50-57 半角当量 / >57 满格禁加**，取代 v4 的 50-54 与 9/13 的 50-58；四元素 + 长尾 3 筛选 / 冻结 2-4 周；当量口径 = `scripts/guards/title-equiv.js`，规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
 3. **既有 7 技能保留**: zprintpro / zprintpro-blog-writing-sop / zprintpro-content-depth-page-sop / zprintpro-design-tokens / zprintpro-release-pipeline / zprintpro-sku-detail-sop / zprintpro-verify-probes（全部位于 `.openclaw-autoclaw\skills\`）。
 
 ### §0.34.2 称谓承接口径
@@ -57,7 +57,7 @@
 
 ### §0.34.3 当前战略指令 SSoT
 - 最新主报告: `docs/2026-09-08-v4-full-alignment-master-report.md`（原子指令 A1-A12 + 问 K3 八件）。
-- 最新拍板增补: **标题规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（K3 9/13 终裁 目标区 50-58，取代 v4 的 50-54）**；`docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：v4 写满原则 50-54 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）—— **其 §1.2 区间表已被 9/13 取代，仅 §二 幂等铁律与 §四 闭环机制继续有效**。
+- 最新拍板增补: **标题规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（**K3 2026-09-19 裁决 目标区 50-57，58 为阻断线**；取代 v4 的 50-54 与 9/13 的 50-58）**；`docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：v4 写满原则 50-54 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）—— **其 §1.2 区间表已被 9/13 取代，仅 §二 幂等铁律与 §四 闭环机制继续有效**。
 - 定时任务（**2026-09-19 修正**：调度 SSoT 见 §0.35；本节原写"autoclaw Blueprint Automation"的表述已作废——autoclaw 侧 5 实体**从未创建**（`cron-check-tonight.md` 9/13–9/17 每日实测 `0/5`），真身在 Windows Task Scheduler）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13 + watchdog 每天 06:43（Asia/Shanghai）。
 
 ## §0.35 定时任务 SSoT 与结果总线 (K3 2026-09-19 查案定稿, 跨项目 P0 强制级)
@@ -640,7 +640,7 @@ F:\zprintpro-nextjs\
 
 ## 5. SEO/GEO 关键约定
 
-- **Title**: **K3 2026-09-13 终裁 目标区 50-58 半角当量**（取代 v4 的 50-54）: 主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次, **>58 满格禁加**, <50 按序补; 当量口径 = `scripts/guards/title-equiv.js`; 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（`docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」**已失效**）; 普查工具 = `node scripts/sku-title-census.mjs`
+- **Title**: **K3 2026-09-19 裁决 目标区 50-57 半角当量**（取代 v4 的 50-54 与 9/13 的 50-58；**58 为阻断线**）: 主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次, **>57 满格禁加**, <50 按序补; 当量口径 = `scripts/guards/title-equiv.js`; 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（`docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」**已失效**）; 普查工具 = `node scripts/sku-title-census.mjs`
 - **Meta description**: 150-160 字符,含数字 + CTA
 - **H1**: 每页唯一,含主关键词
 - **Schema**: Organization / BreadcrumbList / Product / FAQPage
@@ -1809,6 +1809,8 @@ working tree 9M + 18D = 27 文件 (含 src/components/services/Rush 8 组件 + z
 
 **§0.29.2.0 字符体检 3 区间表 (v3.1 升级, K3 9/1 10:22 拍板, 必查规则)**:
 
+> ⚠️ **取代声明 (K3 2026-09-19 裁决, 凌驾本表)**：标题目标区已由本表 v3.1 的「理想 50-60 / 可接受 60-80 / 满格线 ≥55 禁加 / 不足线 <45」**收窄为「目标区 50-57 / >57 满格禁加 / <50 按序补」**，且 **58 为硬阻断线**（`scripts/guards/title-equiv.js` `TITLE_MAX = 57`）。本表 9/1 原文为**史实保留**（per §0.34.2 历史不改写）；其中 `≥55` / `<45` / `50-60` / `60-80` **一律以本条为准** —— 55-57 属达标区, 不得再判为满格禁加；58-80 不得再视为可接受。规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3；正文口径见本文件 §5。
+
 | 区间 | 半角当量 | 状态 | 来源 |
 |------|----------|------|------|
 | **理想** | 50-60 | 满格线 ≥55 禁加 (防 76% Google 重写, Zyppy 8万/Portent 147万/2025 Q1 76%) | GLM 9/1 02:58 |
@@ -1837,8 +1839,11 @@ working tree 9M + 18D = 27 文件 (含 src/components/services/Rush 8 组件 + z
 - 例子: "食品包裝印刷 禮盒訂製 100個起 HK$4起 | 智印港 ZprintPro" = 16 全角×2 + 17 半角 = 32+17 = 49 半角当量 ≈ 530px (Google 桌面 600px 预算 88%, 满格)
 
 **§0.29.2.2 字符体检 3 行** (K3 9/1 02:58 GLM 拍板, 必查规则, 任何 title 改动前后跑当量脚本):
-1. **满格线: 半角当量 ≥ 55 → 禁加任何词** (防截断+防 Google 76% 重写风险, 拍板来源: Zyppy 8万 / Portent 147万 / 2025 Q1 76% 重写率研究)
-2. **不足线: 半角当量 < 45 → 按序补**: ① 第 2 个数字钩子 (MOQ+价格, CTR 弹药) ② 品牌名 (GEO 实体锚点, 必留) ③ GSC 实证同簇长尾 (唯一例外通道, 全站每页仍限 1 个长尾)
+
+> ⚠️ **取代声明 (K3 2026-09-19 裁决, 凌驾第 1、2 行)**：满格线已由本节的 `≥ 55 禁加` **改为 `> 57 禁加`（即 ≥58 才禁加）**；不足线已由 `< 45 按序补` **改为 `< 50 按序补`**。现行口径 = **目标区 50-57 / 58 为硬阻断线**（`scripts/guards/title-equiv.js` `TITLE_MAX = 57`）。本节 9/1 原文为**史实保留**（per §0.34.2 历史不改写）；55-57 属**达标区**，不得再判为满格禁加；58-80 不得再视为可接受。规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3；正文口径见本文件 §5。第 3 行（跨语言污染）**不受影响, 继续有效**。
+
+1. **满格线: 半角当量 ≥ 55 → 禁加任何词** (防截断+防 Google 76% 重写风险, 拍板来源: Zyppy 8万 / Portent 147万 / 2025 Q1 76% 重写率研究) — ⚠️ **已由 K3 2026-09-19 取代: 满格线 = >57（≥58 禁加）**
+2. **不足线: 半角当量 < 45 → 按序补**: ① 第 2 个数字钩子 (MOQ+价格, CTR 弹药) ② 品牌名 (GEO 实体锚点, 必留) ③ GSC 实证同簇长尾 (唯一例外通道, 全站每页仍限 1 个长尾) — ⚠️ **已由 K3 2026-09-19 取代: 不足线 = <50**
 3. **跨语言污染检查** (K3 9/1 02:58 拍板, P0): zh-hk 段不出现繁中字以外, en 段不出现中/日文字符, ja 段不出现中文字符 (例: en 标题 "Custom Food Packaging Boxes 禮盒訂製" 跨语言污染, 立即删除)
 
 **§0.29.2.3 不上第 2 个长尾, 3 个数据驱动理由** (K3 9/1 02:58 GLM 拍板):
@@ -2420,18 +2425,21 @@ www.zprintpro.com/枚から            → zprintpro.com/            301
 | Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
 |---------|--------|--------|---------|------|---------|
 | I18N_POLLUTION | zh-hk/ja 文本内简体字残留 | 🔴 red | `/[复电业为发这们个时来会说过对开现应学页]/g` | 改繁体字 (per §0.29 v3.1 跨语言污染零容忍) | K3 9/1 15:06 + §0.29 v3.1 |
-| I18N_TITLE_LENGTH | title 字符体检 50-60 当量 | 🟡 yellow | `/title:\s*["']([^"']{1,200})["']/g` + 自定义长度检查 | title 长度 50-60 当量 (中文字符=1.5, ASCII=1) | K3 9/1 10:22 §0.29 v3.1 |
+| I18N_TITLE_LENGTH | title 字符体检 50-57 当量 | 🟡 yellow | `/title:\s*["']([^"']{1,200})["']/g` + 自定义长度检查 | title 长度 **50-57** 半角当量, **当量口径 = CJK×2 / ASCII×1** (实现 = `require('./title-equiv.js')` 的 `TITLE_MIN`/`TITLE_MAX`, **无独立阈值**) | K3 **2026-09-19 裁决** (58 阻断) + title-equiv.js |
 | I18N_META_LENGTH | meta description 字符体检 150-160 | 🟡 yellow | `/description:\s*["']([^"']{1,500})["']/g` | meta description 长度 150-160 字符 | K3 9/1 10:22 §0.29 v3.1 |
 | I18N_CURRENCY | 币种格式不统一 | 🟡 yellow | `/US\$\|USD\|JPY\|￥/g` | 改 HK$ (跨境统一币种 per zprintpro §5) | K3 §13.10 + K3 9/1 15:06 |
 | I18N_FOOD_BOXES_CROSS | food-boxes en/ja 误用 zh-hk 文本 | 🔴 red | `/food-boxes.*[一-鿿]{20,}/g` | 检查 src/data/sku-seo-data.ts food-boxes 段 | K3 fd22275f 修复 (P0 教训) |
 
 **§0.29 v3.1 字符体检 3 行** (K3 9/1 10:22 拍板):
-- 满格 ≥55 禁加
-- 不足 <45 按序补
-- 跨语言污染零容忍
 
-**半角当量计算** (i18n-guard.js customCheck): 中文字符=1.5 半角当量, ASCII 字符=1
-**title 当量上限 65** (i18n-guard.js 中设 65 而非 60, 留给尾部 5 当量缓冲), 实际目标 50-60
+> ⚠️ **取代声明 (K3 2026-09-19 裁决, 凌驾下方 3 行)**：满格线 `≥55` → **`>57`（≥58 禁加）**；不足线 `<45` → **`<50`**；目标区 → **50-57**, **58 为硬阻断线**。下方 3 行为 9/1 原文**史实保留**（per §0.34.2）。规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3；正文口径见本文件 §5 与 §0.29.2.0 / §0.29.2.2。
+
+- 满格 ≥55 禁加 ⚠️ 已被取代 → **>57 禁加**
+- 不足 <45 按序补 ⚠️ 已被取代 → **<50 按序补**
+- 跨语言污染零容忍 ✅ **继续有效, 不受影响**
+
+**半角当量计算** (i18n-guard.js customCheck): ⚠️ **本节 2026-09-19 已核实更正** —— 现实现为 `require('./title-equiv.js')` 的 `equiv()`, 口径 **CJK ×2 / ASCII ×1**（**不是** 1.5）; 唯一 SSoT = `scripts/guards/title-equiv.js`。旧文写的「中文字符=1.5 半角当量」为 9/15 之前的旧实现, **已失效**。
+**title 当量上限** ⚠️ **已核实更正**: i18n-guard.js **不再自设阈值**（旧文写「设 65 而非 60」为 9/15 之前的旧实现, **已失效**）; 现取 `title-equiv.js` 的 `TITLE_MAX = 57`, 目标区 **50-57**。
 
 ### §0.31.1.5 门童 #5 SOP-10 5 问门禁 (sop10-guard.js) — 8 类规则完整展开
 

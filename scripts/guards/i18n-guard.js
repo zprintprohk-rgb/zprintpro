@@ -6,7 +6,7 @@
  *
  * 6 类规则:
  * 1. I18N_POLLUTION [red]: zh-hk 文本内简体字残留 (per §0.29 v3.1 字符体检)
- * 2. I18N_TITLE_LENGTH [yellow]: title 字符体检 50-60 (zh-hk) / 50-60 (en) / 50-60 (ja)
+ * 2. I18N_TITLE_LENGTH [yellow]: title 字符体检 50-57 半角当量 (CJK×2) / 目标区 50-57, 58 阻断
  * 3. I18N_META_LENGTH [yellow]: meta description 150-160
  * 4. I18N_FULL_WIDTH [yellow]: 半角/全角混用 (per §0.29 v2 半角当量)
  * 5. I18N_CURRENCY [yellow]: 币种格式 (统一 HK$ 不混 USD/JPY)
@@ -41,10 +41,10 @@ const RULES = [
   },
   {
     id: 'I18N_TITLE_LENGTH',
-    name: 'title 字符体检 50-60',
+    name: 'title 字符体检 50-57 当量',
     severity: 'yellow',
     pattern: /title:\s*["']([^"']{1,200})["']/g,  // 检测 title 字段, 单独验证长度
-    fix: 'title 长度 50-60 字符 (per §0.29 v3.1)',
+    fix: 'title 长度 50-57 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js)',
     // 注意: 此规则需要单独的长度检查, scanRule 不适用, 用 customCheck
   },
   {
@@ -187,7 +187,8 @@ const LEGACY_POLLUTION_CHARS = new Set('复电业为发这们个时来会说过�
 // 双向污染命中的标记 (Symbol 不会进 JSON 输出; 供 scan() 把基线豁免结果重新过滤回原序数组)
 const BIDI = Symbol('i18n-bidi');
 
-// 自定义检查: title 长度 (2026-09-15 统一口径: 半角当量 CJK×2, 目标区 50-58, SSoT = title-equiv.js)
+// 自定义检查: title 长度 (2026-09-15 统一口径: 半角当量 CJK×2, 目标区 50-57, SSoT = title-equiv.js;
+//            2026-09-19 K3 裁决: TITLE_MAX 58→57, 58 为阻断线)
 const { equiv: titleEquiv, TITLE_MIN, TITLE_MAX } = require('./title-equiv.js');
 // 只对明确是 SEO title 数据源的文件检查 (page.tsx 组件的普通文案 title 字段会误报, 2026-09-15 收紧)
 const TITLE_LENGTH_FILES = [
@@ -226,7 +227,7 @@ function checkTitleLength(content, file) {
         severity: 'yellow',
         ruleId: 'I18N_TITLE_LENGTH',
         ruleName: `title 字符体检 ${TITLE_MIN}-${TITLE_MAX} 当量 (实测 ${e} 当量)`,
-        fix: `title 长度 ${TITLE_MIN}-${TITLE_MAX} 半角当量 (per K3 9/13 终裁 + title-equiv.js), 当前 ${e} 当量`,
+        fix: `title 长度 ${TITLE_MIN}-${TITLE_MAX} 半角当量 (per K3 2026-09-19 裁决 + title-equiv.js), 当前 ${e} 当量`,
       });
     }
   }

@@ -2,13 +2,14 @@
  * scripts/guards/title-equiv.js — 全站 title 半角当量统一口径 (2026-09-15)
  *
  * SSoT: docs/2026-09-09-k3-title-rule-v4-write-full.md §一 (CJK×2)
- *       + docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 9/13 终裁目标区 50-58)
+ *       + docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 目标区 50-57, 58 阻断)
  *       + docs/2026-09-15-blog-title-length-research.md (K3 9/15 按推荐执行)
  *
  * 口径:
- *   - 半角当量: 全角 CJK 字符 ×2, 其余 ×1 (与 title-audit-v4.mjs equiv 一致)
- *   - 目标区: 50-58 半角当量 (K3 9/13 拍板, 取代 v4 的 50-54)
- *   - 满格线: >58 禁加 (防 Google SERP 截断 + 58% 重写率)
+ *   - 半角当量: 全角 CJK 字符 ×2, 其余 ×1 (2026-09-19 备注: title-audit-v4.mjs 曾自带同等实现,
+ *     该脚本阈值已失效并已改为读本模块; 本模块为唯一 SSoT)
+ *   - 目标区: 50-57 半角当量 (K3 2026-09-19 裁决, 取代 K3 9/13 的 50-58 与 v4 的 50-54)
+ *   - 满格线: >57 禁加 (即 ≥58 硬拦, 防 Google SERP 截断 + 重写风险)
  *   - 不足线: <50 按序补 (GSC 实证长尾 → 数字钩子 → 工艺 → 品牌)
  *
  * 用法:

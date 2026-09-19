@@ -20,11 +20,11 @@
 >
 > **任务 J · 8 个 T1 锁词（保护加强位，走 G2 攻坚通道 striking pos 11-20）**：包裝盒印刷 ⭐重中之重 / 紙盒印刷 ⭐重中之重 / 包裝盒訂製 / 貼紙印刷 / 宣傳單張 / 即日印刷 / 書刊印刷 / 騎馬釘。
 > - **gsc-feedback cron 每周追踪这 8 词的位置与 CTR 变化**（9/17 起为干净对比窗）。
-> - 攻坚动作：① title v4 写满核查（半角当量 50-54 区间，跑当量脚本存档）② 全站内链锚文本统一（每词 ≥3 个正文内链使用统一锚文本，grep 一致性验收）。
+> - 攻坚动作：① title v4 写满核查（半角当量 50-57 区间，跑当量脚本存档）② 全站内链锚文本统一（每词 ≥3 个正文内链使用统一锚文本，grep 一致性验收）。
 > - 红线：**不改 slug、不砍页、不回滚已部署 title**（churn 红线）。
 >
 > **不变引用（不复制全文，按需回查路径）**：
-> - 标题规则 v4 写满原则（50-54 写满 / ≥55 禁加 / 长尾 3 筛选 / 冻结 2-4 周）→ `docs/2026-09-09-k3-title-rule-v4-write-full.md`
+> - 标题规则（**50-57 目标区 / >57 禁加** / 长尾 3 筛选 / 冻结 2-4 周）→ `docs/2026-09-13-title-batch-T-freeze.md` §6-3（K3 2026-09-19 收窄）→ `docs/2026-09-09-k3-title-rule-v4-write-full.md`
 > - 幂等铁律「不重复做已完成的事」 → 同上
 > - G 梯队攻坚顺序（G1 首页 / G2 striking 11-20 / G3 详情模板 / G4 AEO）→ `docs/2026-09-10-k3-directive-v92-template-rollout.md`
 > - **冻结名单不变**：`zprintpro-en-us-images/` 整目录 · `_batch*.py` · `src/components/services/Rush*` 8 组件 · `page.redesign.tsx` · `src/services/rush/*`
@@ -44,7 +44,7 @@
 > ③ **content 内严禁内嵌 JSON-LD**（SSoT §3.2 红线）：**顺序铁律 = 先确认线上 page.tsx 生成区已有 FAQPage，才允许 strip 内嵌块**；顺序颠倒会把富摘要打没。strip 后必跑 `--online` 复验段 12 PASS。
 > ④ 规则变更纪律（SSoT §7 门童 #21）：任何影响生成的规则改动，必须同步刷新「生成位置（本文件）」+「门禁断言（guards）」+ `node scripts/guards/rule-translation-guard.js --stamp`，三者绑定才算规则生效。**⑤ push 前置门禁（已接入 .githooks/pre-push）**：`node scripts/guards/blog-quality-12-rules-guard.js --baseline --online --json` —— 只拦「**新增/回归**」的段级 FAIL，存量缺陷记入 `.hermes/regression-guard/blog-12seg-baseline.json`（语义「只许递减」），须在报告里写「基线 X / 现存 Y / 已修 Z / 剩余待修 Y」。
 
-> **[v8 大脑指令 · 2026-09-09 06:18 K3 拍板 · 必读第 -1 优先级]** ①标题规则 v4 写满原则：半角当量 **50-54 写满目标区**（主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次），≥55 满格禁加，<50 按序补；细则 SSoT = `docs/2026-09-09-k3-title-rule-v4-write-full.md`；§1.5 长尾口径由此终裁（允许 1-2 个）；验证窗纪律不变（8/30 批 + 9/4 批 title 只读至 9/12-13 判定）。②**幂等铁律（K3 拍板「不重复做已完成的事」）**：开工先查 git log + 既有内容实测——D8 食品包頁正文已落（f8c194a0）不得再动；月曆簇 3 篇已存在（calendar-printing-guide 2,267 字 / 2027-calendar-printing-complete-guide 9,177 字 / 2027-monthly-calendar-printing-timetable 4,579 字），D9 只做升级补强**禁新建第 4 篇**。③**9/9 当次指令（D9 月曆旺季补强收尾，死线 9/15 剩 6 天 P0）**：把 calendar-printing-guide（最浅 2,267 字）按 12 段骨架深度升级；核验另 2 篇 FAQ regex 可解析 + 内链 ≥7；内链接入 calendars 类目页（63af89ab FAQ 已落）；价格/交期以 products.ts calendars 现行条目为准禁编造；验收 = 门童六命令全 PASS + 三闸门 + §0.25.9 push；**报告落 `.hermes/logs/2026-09-09-daily-content.md`（含数据来源行，供周复盘读取）**。④**验收 12 铁律核查清单 + G 梯队选词顺序（K3 9/9 06:56 拍板，吸收自主提示词 v4.0）**：深度 blog 交付前逐条过 12 铁律清单（倒金字塔首段 100 字直答 / H2 问句+40-60 字答案块 / 比较表≥1 / 答案金块≥6每千字 / JSON-LD 六块 / 每篇 1 客户案例（无则标待校准禁编造）/ E-E-A-T 时间戳 / 内链≥7 含≥3 同簇双向 / FAQ 非空且 regex 实测可解析 / 价格仅引 products.ts / 跨语言污染零 / GSC 0 实证词禁入 title）——清单全文见 `docs/2026-09-09-k3-title-rule-v4-write-full.md` §5.1；选词排序按 **G1 捡钱 → G5 季节窗 → G2 攻坚 → G3 跨境 B2B → G4 大词地基**（§5.2）；成熟度口径：en/ja 新生儿不设 30 天首页目标（§5.3）。
+> **[v8 大脑指令 · 2026-09-09 06:18 K3 拍板 · 必读第 -1 优先级]** ①标题规则 v4 写满原则：半角当量 **50-57 目标区**（主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次），**>57 禁加**，<50 按序补；细则 SSoT = `docs/2026-09-09-k3-title-rule-v4-write-full.md`；§1.5 长尾口径由此终裁（允许 1-2 个）；验证窗纪律不变（8/30 批 + 9/4 批 title 只读至 9/12-13 判定）。②**幂等铁律（K3 拍板「不重复做已完成的事」）**：开工先查 git log + 既有内容实测——D8 食品包頁正文已落（f8c194a0）不得再动；月曆簇 3 篇已存在（calendar-printing-guide 2,267 字 / 2027-calendar-printing-complete-guide 9,177 字 / 2027-monthly-calendar-printing-timetable 4,579 字），D9 只做升级补强**禁新建第 4 篇**。③**9/9 当次指令（D9 月曆旺季补强收尾，死线 9/15 剩 6 天 P0）**：把 calendar-printing-guide（最浅 2,267 字）按 12 段骨架深度升级；核验另 2 篇 FAQ regex 可解析 + 内链 ≥7；内链接入 calendars 类目页（63af89ab FAQ 已落）；价格/交期以 products.ts calendars 现行条目为准禁编造；验收 = 门童六命令全 PASS + 三闸门 + §0.25.9 push；**报告落 `.hermes/logs/2026-09-09-daily-content.md`（含数据来源行，供周复盘读取）**。④**验收 12 铁律核查清单 + G 梯队选词顺序（K3 9/9 06:56 拍板，吸收自主提示词 v4.0）**：深度 blog 交付前逐条过 12 铁律清单（倒金字塔首段 100 字直答 / H2 问句+40-60 字答案块 / 比较表≥1 / 答案金块≥6每千字 / JSON-LD 六块 / 每篇 1 客户案例（无则标待校准禁编造）/ E-E-A-T 时间戳 / 内链≥7 含≥3 同簇双向 / FAQ 非空且 regex 实测可解析 / 价格仅引 products.ts / 跨语言污染零 / GSC 0 实证词禁入 title）——清单全文见 `docs/2026-09-09-k3-title-rule-v4-write-full.md` §5.1；选词排序按 **G1 捡钱 → G5 季节窗 → G2 攻坚 → G3 跨境 B2B → G4 大词地基**（§5.2）；成熟度口径：en/ja 新生儿不设 30 天首页目标（§5.3）。
 
 > **[v1.2 执行主提示词 · 2026-09-10 03:38/03:49 老板令 · 必读第 -2 优先级（仅低于 v8 大脑指令）】** 两级决策权生效：①执行层无战略级决策权（选词方向/新建砍页/预算节奏/零改文案/不自主新建任务/不扩大范围——违反 = 当次交付作废）；②执行层拍板权是义务：指令包内的实现方式/格式细节/执行顺序/工具路径，须穷尽 100% 能力+五视角+联网核查后**自主拍板并在报告写明理由**，不为琐事上报老板；③复杂问题 = A/B/C 选项+业务影响+明确推荐后上报（禁只抛问题/禁选项无推荐）；④能力全配 ≠ 裁决权放大（联网/五视角用于执行拍板/自检/验收/撞墙识别，禁止做战略取舍）。⑤工作树纪律：多 worktree 并发，禁 `git reset --hard`/整树 restore，只用路径级 `git restore --source --staged --worktree -- <path>`，只 add 自己任务文件。全文 SSoT = `docs/2026-09-10-autoclaw-executor-v1.2.md`。
 > **[v7 执行层迁移 · 2026-09-08 · K3 9/8 05:58 拍板 · 必读第 0 优先级]** M3 已出局（K3 拍板"能力太弱"）。执行层 = **autoclaw + deepseek hermes**。开工前必读统一入口技能 `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` + 规则 SSoT `docs/2026-09-08-title-rules-and-deep-blog-standard.md`（最高规则名片禁令 / SKU 标题规则 v4 写满原则 / 深度 blog 12 段骨架 / 12 铁律门童 / 5 步真验收 / 自进化 4 步 SOP）。本 SSoT 内所有"M3 执行/必跑/落地"等执行者称谓一律由新执行层承接；历史反例与拍板记录中的"M3"为史实不改写。冲突优先级：K3 最新拍板 > AGENTS.md §0.34 > 入口技能 > 专项技能。**最高规则（AGENTS.md §0.0，凌驾一切）：不做名片印刷**——任何产出不得引入名片词（名片/咭片/business cards/名刺/name cards），承接主品类 = 贺卡 greeting-cards，push 前必跑 `node scripts/check-bc-ban.mjs`。当前战略指令以 `docs/2026-09-08-v4-full-alignment-master-report.md` A1-A12 为准。
@@ -2503,6 +2503,7 @@ node scripts/guards/i18n-guard.js --full-scan
 - 完整 SSoT: docs/2026-09-01-k3-d25-tob-quote-sop.md (10.4KB)
 
 【新版标题规则 (K3 9/1 09:46 派活包, 已沉淀 zprintpro-seo-evolve SKILL.md v4 + AGENTS.md §0.29 v2)】
+【⚠️ 取代声明 (K3 2026-09-19 裁决, 凌驾本节 9/1 原文)】本条 9/1 口径「50-60 / 满格线 ≥55 禁加 / 不足线 <45」**已收窄为「目标区 50-57 / >57 禁加 / <50 按序补」**, 且 **58 = 硬阻断线** (`scripts/guards/title-equiv.js` `TITLE_MAX = 57`)。下方 9/1 派活包原文为**史实保留** (per §0.34.2 历史不改写); 其中 `≥55` / `<45` / `50-60` / `60-80` **一律以本条为准** —— 不得再据此把 55-57 判为满格禁加, 也不得再据此把 58-80 视为可接受。规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3。
 - §0.29 v2 半角当量口径: 全角 CJK = 2 半角当量 / 半角字符 = 1 半角当量 (50-60 区间)
 - §0.29 v2 字符体检 3 行: 满格线 ≥55 禁加 / 不足线 <45 按序补 (数字钩子→品牌→例外长尾) / 跨语言污染零容忍
 - §0.29 v2 不上第 2 个长尾 3 理由: 簇稀释 / 76% 重写风险 / 分层布局已给长尾们各自的家
@@ -2537,8 +2538,8 @@ node scripts/guards/i18n-guard.js --full-scan
 | 全功能 | 3 个 (MOQ + 价格 + 交期) | 8/30 实证 posters "1張起印 + 4小時打稿" | 8/30 |
 
 【字符体检 3 行护栏 (per GLM 9/1 02:58, v3.1 升级)】
-1. 满格禁加: 半角当量 ≥ 55 → 禁加任何词 (防 Google 76% 重写风险)
-2. 不足按序补: 半角当量 < 45 → 按序补: ① 第 2 数字钩子 ② 品牌 ③ GSC 实证同簇长尾
+1. 满格禁加: 半角当量 ≥ 55 → 禁加任何词 (防 Google 76% 重写风险) ⚠️ **已由 K3 2026-09-19 取代: 满格线 = >57 (即 ≥58 才禁加), 目标区 50-57; 55-57 属达标区, 不得再据此压标题**
+2. 不足按序补: 半角当量 < 45 → 按序补: ① 第 2 数字钩子 ② 品牌 ③ GSC 实证同簇长尾 ⚠️ **已由 K3 2026-09-19 取代: 不足线 = <50**
 3. 跨语言污染零容忍: zh-hk 不出日文, en 不出中日, ja 不出简体
 
 【3 段不足线 8/30 标题修复建议 (9/13 验证期后首批合批时统一修复)】

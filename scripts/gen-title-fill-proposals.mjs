@@ -2,7 +2,8 @@
 /**
  * scripts/gen-title-fill-proposals.mjs — 生成 T2-1b 提案表 (字符数对齐: 补长尾 / 裁到 ≤58, 保品牌末尾)
  * 输出: docs/2026-09-13-title-batch-T2-1b-proposals.md
- * 口径: 半角当量 (CJK=2, ASCII=1); 目标区 50-58 (K3 2026-09-13: 「更新到 58 字符数内就可以」);
+ * 口径: 半角当量 (CJK=2, ASCII=1); 目标区 50-57, 58 为阻断线 (K3 2026-09-19 裁决;
+ *       取代 K3 2026-09-13「更新到 58 字符数内就可以」的 50-58); 当量 SSoT = scripts/guards/title-equiv.js
  *       补词只从 **该 SKU 自身已有的关键词池** 取 (sku-seo-data.ts keywords / products.ts keywords), 不编造新词/新承诺
  */
 import { readFileSync, writeFileSync } from 'node:fs';

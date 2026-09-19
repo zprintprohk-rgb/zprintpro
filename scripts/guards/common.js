@@ -40,6 +40,18 @@ const EXEMPT_PATHS = [
 const FULL_EXEMPT_PATHS = [
   /(^|[\/\\])AGENTS\.md$/,
   /\.hermes[\/\\](logs|reports|memory)[\/\\]/,
+  // 2026-09-19 补齐 (K3 2026-09-19 决策一(a), 台账 = 门童 #23
+  // `.hermes/regression-guard/cron-prompts-exemption-manifest.json`):
+  //   `.hermes/cron-prompts/` 与 AGENTS.md / .hermes/logs **同族** —— 指令书/规则书必然
+  //   **引用**禁用形态字面 (例: SOP-10 第 4 款原文「撤 certNo: 改空字符串」必然写出
+  //   反例 `FSC-C123456`), 对其做字面扫描 = 必然误报。
+  //   ⚠️ 此前该目录只在 EXEMPT_PATHS (仅豁免 QUOTE_RULES) 而**未**入本表,
+  //   导致 `SOP10_CERT_NO` 等非引用型规则仍硬拦 ⇒ 5 条 live 车道 prompt **无法提交**
+  //   (门童 #23 文档声称「已由 apply-cron-prompts-exemption.mjs 施加」, 但该脚本
+  //   **不存在**, 豁免实际从未生效 —— 台账形同虚设)。
+  //   补偿控制: 门童 #23 保留「逐条登记 + 对称对账」——任何**新增**字面必须登记进
+  //   manifest 否则报漂移, 故本条不等于「整目录放行」。上线面 (src/ public/) 不受影响。
+  /\.hermes[\/\\]cron-prompts[\/\\]/,
   /scripts[\/\\]canonical[\/\\]/,
   /\.githooks[\/\\]/,
   // 门禁基础设施自身 (2026-09-13 补): 其代码/注释必然出现规则 ID、✅ 状态、数字样例,
