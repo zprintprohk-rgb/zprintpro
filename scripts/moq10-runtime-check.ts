@@ -24,8 +24,8 @@ const cases: [string, string][] = [
   ['die-cut-stickers', '10'],
   ['premium-greeting-cards', '10'],
   ['fluorescent-stickers', '10'],
-  ['catalog-printing', '1 本起印（數碼）· 100 本以上柯式更經濟'],
-  ['saddle-stitch-booklets', '1 本起印（數碼）· 100 本以上柯式更經濟'],
+  ['catalog-printing', '10 本起印（數碼）· 100 本以上柯式更經濟'],
+  ['saddle-stitch-booklets', '10 本起印（數碼）· 100 本以上柯式更經濟'],
   ['gang-run-card-boxes', '500'],
   ['wall-calendars', '1000'],
   // 2026-09-19 P0-2: A1 海報已獨立為 minQuantity=1 (K3 路線圖), 故期望值由 '100' 改為 '1'

@@ -23,61 +23,65 @@ import type { Locale } from '@/types/locale';
 
 /**
  * 統一說明 · 一句話版（各頁通用短句）
- * 只表述機制（1 本起 / 數碼 vs 柯式 / 單價與交期分流），不含任何競品 MOQ 數字。
+ * 只表述機制（10 本起 / 數碼 vs 柯式 / 單價與交期分流），不含任何競品 MOQ 數字。
+ * 2026-09-19 K3 拍板第三波: 書刊 10 本起 (原「1 本起印」已與 minQuantity=10 矛盾)。
  */
 export const MOQ_ONELINER: Record<Locale, string> = {
-  'zh-hk': '1 本起印，無最低起訂量。少量走數碼印刷、批量走柯式膠印，單價與交期按印量分流。',
-  en: 'From 1 copy, no minimum order. Short runs print digitally, larger runs on offset — unit price and lead time scale with quantity.',
-  ja: '1 部から、最低注文数なし。少部数はデジタル印刷、まとまった部数はオフセット印刷。単価と納期は部数に応じて変わります。',
+  'zh-hk': '10 本起印。少量走數碼印刷、批量走柯式膠印，單價與交期按印量分流。',
+  en: 'From 10 copies. Short runs print digitally, larger runs on offset — unit price and lead time scale with quantity.',
+  ja: '10 部から。少部数はデジタル印刷、まとまった部数はオフセット印刷。単価と納期は部数に応じて変わります。',
 };
 
 /** 統一說明 · 標準段（PDP／品類頁／blog 通用塊） */
 export const MOQ_STANDARD_PARAGRAPH: Record<Locale, string> = {
   'zh-hk':
-    '起印量與印刷方式：1 本起印，無最低起訂量。少量（自費出版、試產、限量本、樣書）採數碼印刷：免開版費、按需生產、打稿與交期較快，單本單價較高。批量採柯式膠印：需攤分版費，印量愈大單本單價愈低，100 本以上柯式印刷更經濟、色彩更準確；因需排版調機，前置時間較長。兩種方式的單價與交期不同，30 秒 AI 即時報價會按你的數量與規格自動對應最適方式。',
-  en: 'Minimum order and printing method: from 1 copy, no minimum order quantity. Short runs (self-publishing, prototypes, limited editions, proof copies) are printed digitally — no plate fee, on-demand production, faster proofing and lead time, higher unit price. Larger runs use offset litho: plate costs are shared across the run, so unit price drops as quantity rises, and 100+ copies is more economical on offset with more accurate colour; make-ready means a longer lead time. Unit price and lead time differ between the two methods, and our 30-second AI quote automatically matches the right method to your quantity and specs.',
-  ja: '最小ロットと印刷方式：1 部から、最低注文数はありません。少部数（自費出版・試作・限定版・見本）はデジタル印刷——版代不要・オンデマンド生産・校正と納期が速く、1 部あたり単価は高めです。まとまった部数はオフセット印刷——版代を部数で割るため、部数が増えるほど 1 部あたり単価が下がり、100 部以上はオフセットがより経済的で色再現も安定します。段取りが必要なため納期は長めです。単価と納期は方式で異なり、30 秒 AI 見積もりが数量と仕様に応じて最適な方式を自動で選びます。',
+    '起印量與印刷方式：10 本起印。少量（自費出版、試產、限量本、樣書）採數碼印刷：免開版費、按需生產、打稿與交期較快，單本單價較高。批量採柯式膠印：需攤分版費，印量愈大單本單價愈低，100 本以上柯式印刷更經濟、色彩更準確；因需排版調機，前置時間較長。兩種方式的單價與交期不同，30 秒 AI 即時報價會按你的數量與規格自動對應最適方式。',
+  en: 'Minimum order and printing method: from 10 copies. Short runs (self-publishing, prototypes, limited editions, proof copies) are printed digitally — no plate fee, on-demand production, faster proofing and lead time, higher unit price. Larger runs use offset litho: plate costs are shared across the run, so unit price drops as quantity rises, and 100+ copies is more economical on offset with more accurate colour; make-ready means a longer lead time. Unit price and lead time differ between the two methods, and our 30-second AI quote automatically matches the right method to your quantity and specs.',
+  ja: '最小ロットと印刷方式：10 部から。少部数（自費出版・試作・限定版・見本）はデジタル印刷——版代不要・オンデマンド生産・校正と納期が速く、1 部あたり単価は高めです。まとまった部数はオフセット印刷——版代を部数で割るため、部数が増えるほど 1 部あたり単価が下がり、100 部以上はオフセットがより経済的で色再現も安定します。段取りが必要なため納期は長めです。単価と納期は方式で異なり、30 秒 AI 見積もりが数量と仕様に応じて最適な方式を自動で選びます。',
 };
 
 /**
  * AEO 快速答案（最容易被 AI／SERP 摘取的問答形態）
  * 對應 `docs/2026-09-18-moq-unified-statement-and-enhancement-plan.md` §五 L1-2。
+ * 2026-09-19 K3 拍板第三波: 答案由「1 本起印」同步為「10 本起印」。
  */
 export const MOQ_AEO: Record<Locale, { q: string; a: string }> = {
   'zh-hk': {
     q: '最少可以印幾本？',
-    a: '1 本起印，無最低起訂量。少量走數碼印刷、批量走柯式膠印，100 本以上柯式印刷更經濟，色彩更準確。',
+    a: '10 本起印。少量走數碼印刷、批量走柯式膠印，100 本以上柯式印刷更經濟，色彩更準確。',
   },
   en: {
     q: 'What is the minimum order quantity?',
-    a: 'From 1 copy, no minimum order. Short runs print digitally, larger runs on offset — 100+ copies is more economical on offset.',
+    a: 'From 10 copies. Short runs print digitally, larger runs on offset — 100+ copies is more economical on offset.',
   },
   ja: {
     q: '最小ロットは何部からですか？',
-    a: '1 部から、最低注文数はありません。少部数はデジタル印刷、まとまった部数はオフセット印刷で、100 部以上はオフセットがより経済的です。',
+    a: '10 部から。少部数はデジタル印刷、まとまった部数はオフセット印刷で、100 部以上はオフセットがより経済的です。',
   },
 };
 
 /**
  * 展示層「起訂量」短句（PDP 價格卡 / 品類頁產品卡）
- * 只在數碼線書刊／本冊類 SKU 上顯示；其餘 SKU 一律維持原本的 `minQuantity` 數字（零 churn）。
+ * 2026-09-19 K3 拍板第三波: 書刊本冊 minQuantity 100 → **10**, 故本口徑由「1 本起印」改為
+ *   「10 本起印」。原文的「1 本」已與產品資料層矛盾 (minQuantity=10), 必須同步,
+ *   否則 PDP 會同時出現「1 本起印」(本檔) 與「10」(minQuantity) 兩個數字。
+ * 保留「100 本以上柯式更經濟」的機制說明 (與 P2-6 膠印軟分流同一分水嶺)。
  */
 export const MOQ_DISPLAY: Record<Locale, string> = {
-  'zh-hk': '1 本起印（數碼）· 100 本以上柯式更經濟',
-  en: 'From 1 copy (digital) · 100+ cheaper on offset',
-  ja: '1 部から（デジタル）· 100 部以上はオフセットが経済的',
+  'zh-hk': '10 本起印（數碼）· 100 本以上柯式更經濟',
+  en: 'From 10 copies (digital) · 100+ cheaper on offset',
+  ja: '10 部から（デジタル）· 100 部以上はオフセットが経済的',
 };
 
 /**
- * 數碼線書刊／本冊類 SKU（真實可接 1 本，per v10.1 決策 1-B 條件①）
- * 全部屬 `books` 品類（書刊／畫冊／本冊），走數碼按需生產線。
+ * 數碼線書刊／本冊類 SKU — 走數碼按需生產線。
  * ⚠️ 柯式線 SKU（如 5 個餐牌類）不在此名單 → 起訂量展示不動。
  *
  * 2026-09-19 K3 裁決 N1/N4「補進名單」: 加入 `saddle-stitch-booklets`。
- * 理由: books 品類頁既已如實寫「1 本起訂（數碼印刷）」且該表述覆蓋 5 個 SKU，
- *   而本名單原只有 4 個 ⇒ 程式碼與品類頁口徑不一致。裁決為「以品類頁為準，補進名單」。
- *   該 SKU 屬 `books`、走數碼線, 條件①（真實可接 1 本）成立; 其 `minQuantity` 仍為 100 不動
- *   （本檔僅改**展示層**口徑, 不碰引擎欄位 — per 1-B 紅線②）。
+ * 2026-09-19 K3 拍板第三波: 本名單 6 個 SKU 的 `products.ts minQuantity` 已由 100 改為 **10**,
+ *   口徑 (MOQ_DISPLAY / MOQ_AEO) 同步為「10 本起印」。
+ *   (歷史: 2026-09-18 v10.1 決策 1-B 曾只改展示層為「1 本起印」而 minQuantity 不動;
+ *    本次為 K3 拍板的正式放開, 展示層與資料層已一致。)
  */
 export const DIGITAL_LINE_BOOK_SLUGS: readonly string[] = [
   'catalog-printing',

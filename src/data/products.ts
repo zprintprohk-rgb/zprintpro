@@ -5710,7 +5710,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/catalog-printing.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5750,6 +5750,14 @@ export const products: Product[] = [
   
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段 + 4 FAQ (4 词 / 4 binding / 4 paper / 4 size)
+    variables: {
+      quantities: [
+        { value: 10, label: '10', discount: 2.35 },
+        { value: 100, label: '100本', discount: 1 },
+        { value: 500, label: '500本', discount: 0.85 },
+        { value: 1000, label: '1000本', discount: 0.75 },
+      ],
+    },
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
     seoDescription: {"zh-hk": "", "en": "", "ja": ""},
     metaTitle: "",
@@ -5790,7 +5798,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/saddle-stitch-booklets.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5832,6 +5840,7 @@ export const products: Product[] = [
         { value: 'hardcover', label: '精裝', surcharge: 100 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },
@@ -5887,7 +5896,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/perfect-bound-books.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5932,6 +5941,7 @@ export const products: Product[] = [
         { value: 'hardcover', label: '精裝', surcharge: 100 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },
@@ -5987,7 +5997,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
     images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp'],
@@ -6025,6 +6035,7 @@ export const products: Product[] = [
         { value: 'hardcover', label: '精裝', surcharge: 100 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },
@@ -6080,7 +6091,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/spiral-notebooks.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -6123,6 +6134,7 @@ export const products: Product[] = [
         { value: 'hardcover', label: '精裝', surcharge: 100 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },
@@ -6544,7 +6556,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
     images: ['/images/products/exercise-books.jpg'],
@@ -6581,6 +6593,14 @@ export const products: Product[] = [
   },
     
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+    variables: {
+      quantities: [
+        { value: 10, label: '10', discount: 2.35 },
+        { value: 100, label: '100本', discount: 1 },
+        { value: 500, label: '500本', discount: 0.85 },
+        { value: 1000, label: '1000本', discount: 0.75 },
+      ],
+    },
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
     seoDescription: {"zh-hk": "", "en": "", "ja": ""},
     metaTitle: "",

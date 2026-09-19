@@ -109,10 +109,12 @@ for (const slug of POLICY.PAPER_GOODS) {
 
 console.log('\nB. 非名單 SKU 維持原值 (抽樣)');
 const KEEP = {
-  'catalog-printing': 100, 'saddle-stitch-booklets': 100, 'hardcover-books': 100,
   'gang-run-card-boxes': 500, 'white-card-bags': 100, 'wall-calendars': 1000,
   'outdoor-vinyl-banners': 100,
-  // a1-posters 已於 2026-09-19 K3 路線圖 P0-2 獨立為 minQuantity=1 (見 §B2), 不再屬「維持原值」組
+  /*
+   * 2026-09-19 第三波 (K3 拍板): 書刊本冊 6 SKU 已由 100 改為 10 ⇒ 不再屬「維持原值」組。
+   * a1-posters 亦已於 P0-2 獨立為 1 ⇒ 同樣移出本組。
+   */
 };
 for (const [slug, expect] of Object.entries(KEEP)) {
   const p = PRODUCTS.get(slug);
@@ -152,6 +154,16 @@ console.log('\nB2. A1 海報獨立 (K3 路線圖 P0-2)');
     // 1 檔總價必須低過 10 檔總價 (客戶加量總價上升)
     if (t1 && t10 && Number(t1[1]) > Number(t10[1])) bad(`a1-posters 1張總價 > 10張總價 (倒掛)`);
   }
+}
+
+console.log('\nB3. 書刊本冊降至 10 (K3 拍板第三波)');
+for (const slug of ['catalog-printing', 'perfect-bound-books', 'hardcover-books', 'spiral-notebooks', 'saddle-stitch-booklets', 'exercise-books']) {
+  const p = PRODUCTS.get(slug);
+  if (!p) { bad(`${slug}: 不在 products.ts`); continue; }
+  if (p.minQuantity === 10) ok(`${slug} minQuantity = 10`);
+  else bad(`${slug} minQuantity = ${p.minQuantity} (期望 10)`);
+  if (p.quantities && p.quantities[0] === 10) ok(`   quantities 首檔 = 10 (${p.quantities.slice(0, 5).join('/')})`);
+  else bad(`   quantities 首檔 = ${p.quantities ? p.quantities[0] : 'NO-BLOCK'} (期望 10)`);
 }
 
 console.log('\nC. 無 price-table 紙品 SKU 的 10 檔可選性');
