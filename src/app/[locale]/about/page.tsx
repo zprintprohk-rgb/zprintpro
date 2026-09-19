@@ -347,7 +347,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     storyTitle: 'ブランドストーリー',
     story: `智印港 は、香港を起点にグローバル展開する総合印刷サービスプロバイダーです。企業、教育機関、クリエイターの皆様に、高品質でカスタマイズ可能な印刷ソリューションを提供しており、ビジネス、プロモーション、パッケージ、教育まで幅広いシーンをカバー。先進的な工芸、多様な素材、智能的なテクノロジーを活かし、お客様のブランド価値伝達と市場競争力向上を支援しています。
 
-「智印未来」（より聪明な印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
+「智印未来」（より賢いな印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
       { title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
@@ -411,7 +411,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { step: '3', title: 'サンプル確認', desc: 'デジタル校正 24 時間、オフセット校正 3-5 営業日。確認後すぐ生産開始。' },
       // 2026-08-19 P0-A: Step 4/5 净化 — 纯步骤描述 ≤30 字, 营销堆叠移至 page-end CTA
       { step: '4', title: '印刷生産', desc: 'ハイデルベルク 4 色オフセット + HP Indigo デジタル · 6 工程 · 下記工場写真参照' },
-      { step: '5', title: '世界配送', desc: '顺丰速运は香港全域 24h · DHL/FedEx は世界 2-4 日直送 · 50+ ヶ国対応' }
+      { step: '5', title: '世界配送', desc: '順豊速運は香港全域 24h · DHL/FedEx は世界 2-4 日直送 · 50+ ヶ国対応' }
     ],
 
     testimonialTitle: 'お客様の声',
@@ -435,7 +435,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     imageSlotFactory: '✅ 公開済 · 22 枚工程フローギャラリー (印刷機 → 輪転機 → 長尺印刷 → 半製品 → 後加工 → 完成品), commit 717825f 2026-08-16',
 
-    imageSlotTeam: 'チーム実写 · 拡張用预留 (K3 チーム写真待ち)',
+    imageSlotTeam: 'チーム実写 · 拡張用予備 (K3 チーム写真待ち)',
 
     // 2026-08-16 K3 拍板: 会社概要セクションに工場実写写真を埋め込み
     factorySectionTitle: '工場・設備の実写',
@@ -567,7 +567,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
       {/* 2026-06-12 Phase B-P1 修复 R08: LocalBusiness schema */}
       <JsonLd data={localBusinessJsonLd} />
       <main className="min-h-screen bg-white">
-        {/* v9.3.2 P1: 旧 factory-banner 照片 hero (2026-07-31 设计) 整段拆除 → S1 标准骨架
+        {/* v9.3.2 P1: 旧 factory-banner 照片 hero (2026-07-31 设计) 整段拆除 → S1 標準骨架
             图片资产不丢: /images/factory/factory-banner.webp 仍在下文工厂段作配图 (alt=t.altBanner 未动)
             文案来源铁律: H1=t.h1 / 副标=t.subtitle 原文迁入, 零新编营销文案 */}
         <section className="max-w-[1320px] mx-auto">
@@ -791,7 +791,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               </figure>
             </div>
 
-            {/* 05 节庆礼盒工艺 */}
+            {/* 05 节庆礼盒工芸 */}
             <div className="flex items-center gap-3 mt-12 mb-4">
               <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">05</span>
               <h3 className="text-lg font-bold text-white">{t.stageGiftbox}</h3>
@@ -1008,7 +1008,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               </Link>
             </div>
             <p className="text-white/50 text-xs mt-6">
-              {locale === 'zh-hk' ? '免費打樣 · 30 天品質保證 · 順豐本地 24h · DHL 全球 2-4 天' : locale === 'ja' ? '無料サンプル · 30 日品質保証 · 顺丰速运 24h · DHL 世界 2-4 日' : 'Free sample · 30-day quality guarantee · SF Express 24h · DHL worldwide 2-4 days'}
+              {locale === 'zh-hk' ? '免費打樣 · 30 天品質保證 · 順豐本地 24h · DHL 全球 2-4 天' : locale === 'ja' ? '無料サンプル · 30 日品質保証 · 順豊速運 24h · DHL 世界 2-4 日' : 'Free sample · 30-day quality guarantee · SF Express 24h · DHL worldwide 2-4 days'}
             </p>
           </div>
         </section>

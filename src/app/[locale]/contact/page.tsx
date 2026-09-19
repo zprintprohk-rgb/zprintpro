@@ -239,8 +239,8 @@ export default function ContactPage({ params }: ContactPageProps) {
 
       {/* E1 Banner — 2026-09-12 v9.5: 宽度与导航栏蓝色色块精确同宽
           (Navbar 蓝条位于 Header 的 max-w-[1320px] mx-auto 容器内 → 色块实际 1320 居中;
-           故 Hero 外层复用同一宽度类 max-w-[1320px] mx-auto, 不再用 w-full 视口满宽);
-          内层色块 flex + min-h 保证内容垂直居中, 上下留白对称 (同 PLP 范本)。藏青渐变色值锁定不变。 */}
+           故 Hero 外層复用同一宽度类 max-w-[1320px] mx-auto, 不再用 w-full 视口满宽);
+          内層色块 flex + min-h 保证内容垂直居中, 上下留白对称 (同 PLP 范本)。藏青渐变色值锁定不变。 */}
       <section className="max-w-[1320px] mx-auto">
         <div className="relative w-full overflow-hidden flex min-h-[380px] md:min-h-[440px] text-white" style={{ background: "var(--color-royal-navy-grad)" }}>
           <div aria-hidden className="hidden lg:block absolute right-0 top-0 h-full w-1/2 overflow-hidden pointer-events-none">

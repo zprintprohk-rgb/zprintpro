@@ -608,7 +608,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'ecommerce-shipping-bag-printing-guide': { title: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro", description: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。ZprintProは防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。", date: '2026-07-14', category: '配送袋', content: '' },
     'media-merchandise-box-printing-guide': { title: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro", description: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。ZprintProは引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。", date: '2026-07-14', category: '映像IPグッズ', content: '' },
     // 2026-07-15 daily-content-evolve: Q-017/018/019 new blogs (ja locale)
-    'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "厚紙チラシ印刷ガイド - 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro", description: "日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。", date: '2026-07-15', category: '厚紙チラシ', content: '' },
+    'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "厚紙チラシ印刷ガイド - 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro", description: "日本のレストラン・居酒屋・カフェ・テイクアウト専門店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。", date: '2026-07-15', category: '厚紙チラシ', content: '' },
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "マグネット式ギフト ボックス カスタムガイド - 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro", description: "日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。", date: '2026-07-15', category: 'マグネット ボックス', content: '' },
     'folding-box-cosmetics-brand-eco-friendly-guide': { title: "折り畳み箱 カスタム ガイド - 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro", description: "日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。", date: '2026-07-15', category: 'エコ 折り畳み箱', content: '' },
     'restaurant-opening-flyer-printing-guide': {
@@ -645,7 +645,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
     'construction-material-sample-book-printing-guide': {
       title: '建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintPro',
-      description: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（骑马钉 / 無線胶装 / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
+      description: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（中綴じ / 無線綴じ / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
       date: '2026-07-20', category: '建築サンプル ブック',
       content: '',
     },
@@ -1096,7 +1096,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 
-              {/* G3.4 (v9.2.3): 文末品牌署名块 — GEO 按 locale 分层 (zh-hk=智印港 / en,ja=ZprintPro; ジープリント 不字面同现) */}
+              {/* G3.4 (v9.2.3): 文末品牌署名块 — GEO 按 locale 分層 (zh-hk=智印港 / en,ja=ZprintPro; ジープリント 不字面同现) */}
               <div className="mt-10 rounded-xl bg-[#F2F6FF] border border-blue-50 px-6 py-5 flex flex-col sm:flex-row sm:items-center gap-4">
                 <div className="w-11 h-11 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm">
                   <span className="text-[#2873F5] font-extrabold">{t.author.charAt(0)}</span>

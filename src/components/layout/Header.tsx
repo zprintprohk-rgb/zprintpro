@@ -222,7 +222,7 @@ const featuredDescs: Record<string, Record<string, string>> = {
     'fruit-food-label-stickers': '食品グレード、安全ラベル',
     'cosmetic-boxes': 'スタイリッシュ、ブランド力', 'food-boxes': '食品級、衛生的',
     'mailer-boxes': '配送安全専用', 'folding-boxes': '平置き折り、省スペース', 'rigid-boxes': '硬質構造、高級ギフト',
-    'magnetic-closure-gift-box': 'マグネット蓋、仪式感', 'electronics-packaging-box': '帯電防止、精密保護',
+    'magnetic-closure-gift-box': 'マグネット蓋、儀式感', 'electronics-packaging-box': '帯電防止、精密保護',
     'kraft-paper-packaging-box': 'クラフト素材、自然風合', 'gang-run-card-boxes': '型代不要、標準サイズ',
     'a2-posters': '大判鮮やか色彩', 'a1-posters': '展示会専用', 'outdoor-posters': '防水耐候、屋外対応',
     'display-posters': '展示注目集める', 'art-posters': 'アート級、繊細色彩', 'adhesive-posters': '粘着付き、貼るだけ',

@@ -64,7 +64,7 @@ export const PRODUCT_LONG_DESCRIPTION_TEMPLATES = {
   'ja': {
     intro: '<h3>製品の中核的特徴</h3><p>{intro}</p>',
     industry: '<h3>対応業界と用途</h3><ul>{industries}</ul>',
-    material: '<h3>素材と工艺の比較</h3><table>{materialTable}</table>',
+    material: '<h3>素材と工芸の比較</h3><table>{materialTable}</table>',
     design: '<h3>デザインと印刷の提案</h3><p>{designTip}</p>',
     faq: '<h3>よくある質問</h3><div>{faqs}</div>',
   },

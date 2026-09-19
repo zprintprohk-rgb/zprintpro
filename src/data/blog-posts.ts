@@ -1105,7 +1105,7 @@ const lpThickPaperFlyer: BlogPostMeta = {
   excerpt: {
     'zh-hk': '香港餐廳旺季前必睇。200g-400g 全規格厚紙傳單,5,000 張 250g 銅版紙 A4 雙面四色 + 雙面過膠 HK$0.65/張 起。100 張起印,5-7 個工作天交貨,順豐本地派送港九新界。',
     en: 'US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code + loyalty stamp is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks.',
-    ja: '日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。',
+    ja: '日本のレストラン・居酒屋・カフェ・テイクアウト専門店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。',
   },
 };
 
@@ -1190,7 +1190,7 @@ const lpConstructionMaterialSampleBook: BlogPostMeta = {
   excerpt: {
     'zh-hk': '建築裝飾材料供應商必睇：5 種裝訂方式（騎馬釘 16-64 頁 / 膠裝 64-300 頁 / 精裝 100-500 頁 / 蝴蝶裝 樣板單頁抽換 / 活頁夾 可持續更新）+ 4 種印刷工藝（4 色 CMYK / Pantone 專色 / 燙金 / 局部 UV）+ 4 條建材供應商 FAQ，協助 50-500 本精準下單。',
     en: 'US construction material suppliers, interior designers, and building product brands: 5 binding styles (saddle stitch / perfect bound / hardcover / butterfly / loose-leaf), 4 print finishes, 4 supplier FAQs, 50-500 copies, Free Shipping over $99 USA, 5-7 business day production, No minimum 50 copies.',
-    ja: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（骑马钉 / 無線胶装 / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
+    ja: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（中綴じ / 無線綴じ / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
   },
 };
 
@@ -1830,7 +1830,7 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
     ja: '練習帳印刷ガイド 2026: 4 種用紙 3 製本 100 部から | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 认证体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
+    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 認証体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
     en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 9001 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
     ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. グローバル顧客. ISO + FSC + FDA + EU REACH.',
   },
