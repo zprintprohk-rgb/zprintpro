@@ -96,6 +96,34 @@ if (!BATCH) {
   process.exit(1);
 }
 
+/* ---------- ★ 前置闸门: 复查 24h 内是否有新 K3 裁决影响数字口径 ----------
+ * 事故背书 (2026-09-19): a2-trim 于 19:35 修剪时**原样保留**旧文案「1張起印」,
+ * 而 K3 已于 19:43 (commit c18107a0) 裁定 a2-posters 真值 minQuantity=10 /
+ * 「全站文案 10張起印」。若不复查 log, 该错值会随 commit 写入线上。
+ * 纪律: 「不动数字」只在**没有新裁决**时安全 ⇒ 本闸门把该纪律变成可执行检查。
+ */
+function checkRecentRulings() {
+  const { execSync } = require('node:child_process');
+  try {
+    const out = execSync(
+      'git log --since="24 hours ago" --pretty=format:"%h|%ad|%s" --date=format:"%H:%M" -- src/data/products.ts docs .hermes/regression-guard/error-patterns.md',
+      { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }
+    ).trim();
+    if (!out) return [];
+    return out.split('\n').filter((l) => /裁決|裁决|真值|minQuantity|MOQ|口径|口徑|title/i.test(l));
+  } catch { return []; }
+}
+
+const rulings = checkRecentRulings();
+if (rulings.length) {
+  console.log('\n⚠️  前置闸门: 过去 24h 有涉及「真值/口径/裁決/title」的提交 — 本批数字钩子须逐项对照:');
+  for (const l of rulings) console.log(`     ${l}`);
+  console.log('   → 若本批保留的任何数字与上述裁决冲突, **先改再提交** (a2 「1張起印」教训)。\n');
+} else {
+  console.log('\n✅ 前置闸门: 过去 24h 无新 K3 真值/口径裁决 (数字钩子无冲突风险)\n');
+}
+
+
 /* ---------- 校验 ---------- */
 const errors = [];
 const rows = [];
