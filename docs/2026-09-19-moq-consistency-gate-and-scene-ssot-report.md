@@ -132,8 +132,34 @@ K3 對 33 條出具分析與建議後，本輪逐項落地：
 | **四** 5 次指標踩坑固化為規則 | `error-patterns.md` 新增 `METRIC_INTEGRITY_FIVE_TRAPS` | ✅ |
 | **三** 雙資料源收斂 | 等價性驗證後判定**不能直接收斂**（見 §六之二） | ⚠️ 待裁決 |
 
-**漂移數：33 → 6**。剩餘 6 條 = `art-posters` 2 條（真值 100 vs 文案「1張起印」，K3 未裁決）
-+ 貼紙「戶外／可移貼紙 **100** 個起」4 條（真值 100 而非 10，與 K3 授權的「50→10」不同性質，待議）。
+**漂移數：33 → 0**（現況：待裁決 **0** ｜ 已核准分層 4 ｜ 🆕 新漂移 0）。
+
+### 六之一、第二批（K3 第二輪回饋落地）
+
+| K3 指示 | 落地 | 狀態 |
+|---------|------|------|
+| **五** 確認 `art-posters` 印刷方式 → 噴繪類改真值 1 | 判據：`printMethod: '12 色藝術微噴（Giclée）'` + 200g 美術紙/RC 相紙 → 與 `a1-posters`（真值 1）同屬噴繪/寫真類 ⇒ 真值 100→**1**。價表佐證：posters.json 14 config 中 12 個由 10 起、僅 2 個由 1 起（A1 噴繪線） | ✅ |
+| **五** 貼紙子品類 MOQ 映射寫入 SSoT | `print-method-policy.ts` §E `STICKER_SUBCATEGORY_MOQ`：general/outdoor3m/removable = 10（`kind='sku'`）／outdoorRemovableBulk = 100（`kind='bulk_tier'`） | ✅ |
+| **六** 貼紙「戶外/可移 100 個起」是正確分層、非漂移 | 閘門新增 **`APPROVED_BULK_TIERS`** 語義（與「待裁決」分開）；4 條標為 ✅ 已核准 | ✅ |
+| **四** 建 `guard-manifest.json` 防編號衝突 | `scripts/gen-guard-manifest.mjs` + `scripts/guards/guard-manifest.json`（23 編號 / 458 規則 ID / **0 衝突**），接入 pre-commit 步驟 3.7 | ✅ |
+| **五 中期** 膠印門檻 200 → 300 | `OFFSET_ECONOMICAL_FROM = 300`；過渡區由 100-199 改為 **100-299**；三語文案變數插值自動同步 | ✅ |
+| **三** 雙資料源收斂（方向 A） | 未動 — 見 §六之二（需先裁決 4 個分歧 + 孤兒類別） | ⚠️ |
+| **三** `categoryFallbacks` 零風險收斂 | **需修正 K3 判斷** — 見下 | ⚠️ |
+
+**★ `categoryFallbacks` 並非「零風險可收斂」**（實測推翻）：
+
+| 檔案 | 樣式欄位 | 內容 |
+|------|---------|------|
+| `components/category/CategoryProductCard.tsx` | `bgColor` | `'bg-blue-50'`（素色底） |
+| `components/product/ProductCard.tsx` | `gradient` | `'from-blue-500/15 …'`（漸層底） |
+| `components/ProductCard.tsx` | `gradient` | 與上者**逐字完全相同** ✓ |
+
+→ 鍵集合同構（13 keys）**但值不同**：不是單純重複，而是**兩套視覺設計**。
+後兩者可零風險互相收斂；前者與它們收斂會**改變卡片外觀** → 需 K3 定「素色 or 漸層」為準。
+證據：`.hermes/logs/_verify-fallbacks-equivalence.mjs`、`_diff-fallbacks.mjs`
+
+**★ 閘門語義細化**：原本只有「待登錄 / 新漂移」兩類，混用會讓「待裁決數」失真。
+現分三類：📋 已登錄待裁決（未解）｜✅ 已核准分層（已定案口徑）｜🆕 新漂移（問題）。
 
 ### 六之二、雙資料源收斂：驗證後發現**不能直接收斂**（K3 第三項）
 
