@@ -368,11 +368,64 @@ md.push(`- 门禁阶段: **${ledger.gatePhase}** (存量 ≤${LEDGER_ESCALATE_AT
 
 const report = { summary, ruleDelta, listUnder, listOver, issueRows, p0, p1, zeroClick, homogeneous, ledger, rows };
 
+/* ---------- I. 批次归属 + 全景 Markdown 清单 (K3 2026-09-19 两天冲刺方案) ---------- */
+function batchOf(r) {
+  const imps = r.gsc?.imps ?? 0;
+  const pos = r.gsc?.pos ?? null;
+  if (r.band === 'TRIM') return 'P2-修剪';
+  if (r.band === 'FILL') {
+    if (pos != null && pos <= 20 && imps >= 30 && r.equiv < 40) return 'P0-A';
+    if (pos != null && pos <= 20 && imps >= 30 && r.equiv >= 40 && r.equiv < 50) return 'P0-B';
+    if (pos != null && pos > 20 && pos <= 50 && imps >= 50) return 'P1';
+  }
+  return 'P3-低优先';
+}
+for (const r of rows) r.batch = batchOf(r);
+const ledgerRows = rows.filter((r) => r.band !== 'OK').sort((a, b) => (b.gsc?.imps || 0) - (a.gsc?.imps || 0));
+const batchCounts = ledgerRows.reduce((m, r) => ((m[r.batch] = (m[r.batch] || 0) + 1), m), {});
+
+const lmd = [];
+lmd.push(`# SKU 标题违规全景清单 (${TODAY})`);
+lmd.push('');
+lmd.push(`校准日期: ${TODAY} ${new Date().toISOString().slice(11, 16)} UTC`);
+lmd.push('');
+lmd.push('> 口径: `scripts/guards/title-equiv.js` (半角当量, 目标 ' + TITLE_MIN + '-' + TITLE_MAX + ') · 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3');
+lmd.push(`> **开放违规 ${ledgerRows.length} 条** / 300 槽 (${((ledgerRows.length / 300) * 100).toFixed(1)}%) · 门禁阶段 ${ledger.gatePhase} (存量 ≤${LEDGER_ESCALATE_AT} 升 red)`);
+lmd.push('');
+lmd.push('## 批次归属 (供分批独立 commit · 每批可单独 revert)');
+lmd.push('');
+lmd.push('| 批次 | 定义 | 条数 | 审核策略 |');
+lmd.push('|---|---|---|---|');
+lmd.push(`| P0-A | 位置≤20 + 展示≥30 + 当量<40 (排名已到位, 标题是唯一瓶颈) | ${batchCounts['P0-A'] || 0} | 100% 逐条过目 |`);
+lmd.push(`| P0-B | 位置≤20 + 展示≥30 + 当量 40-49 | ${batchCounts['P0-B'] || 0} | 抽检 30% |`);
+lmd.push(`| P1 | 位置 21-50 + 展示≥50 | ${batchCounts['P1'] || 0} | 抽检 20% |`);
+lmd.push(`| P2-修剪 | 超上限 >${TITLE_MAX} (需删内容, 风险较高) | ${batchCounts['P2-修剪'] || 0} | 逐条过目 |`);
+lmd.push(`| P3-低优先 | 其余 (en/ja 低展示, 受排名限制) | ${batchCounts['P3-低优先'] || 0} | 抽检 10% |`);
+lmd.push('');
+for (const b of ['P0-A', 'P0-B', 'P1', 'P2-修剪', 'P3-低优先']) {
+  const sub = ledgerRows.filter((r) => r.batch === b);
+  if (!sub.length) continue;
+  lmd.push(`## 批次 ${b} (${sub.length} 条)`);
+  lmd.push('');
+  lmd.push('| # | slug | locale | band | 当量 | 展示28d | 位置 | CTR | 问题 | 当前 title |');
+  lmd.push('|---|---|---|---|---|---|---|---|---|---|');
+  sub.forEach((r, i) => {
+    lmd.push(`| ${i + 1} | ${r.slug} | ${r.locale} | ${r.band} | ${r.equiv} | ${r.gsc?.imps ?? '-'} | ${r.gsc?.pos != null ? r.gsc.pos.toFixed(2) : '-'} | ${r.gsc ? (r.gsc.ctr * 100).toFixed(2) + '%' : '-'} | ${r.issues.join(';') || '-'} | ${(r.title || '').slice(0, 62)} |`);
+  });
+  lmd.push('');
+}
+lmd.push('## 同簇同质化 (≥4 SKU 共享完全相同修饰段 — 修标题时须差异化, 防同簇互相稀释)');
+lmd.push('');
+lmd.push('| locale | 共享修饰段 | SKU 数 | 当量 |');
+lmd.push('|---|---|---|---|');
+for (const h of homogeneous) lmd.push(`| ${h.locale} | ${h.tail} | ${h.count} | ${h.equivs.join('/')} |`);
+
 if (!process.argv.includes('--stdout')) {
   const dir = path.join(ROOT, '.hermes/reports');
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, `sku-title-census-${TODAY}.json`), JSON.stringify(report, null, 1));
   fs.writeFileSync(path.join(dir, `sku-title-census-${TODAY}.md`), md.join('\n'));
+  fs.writeFileSync(path.join(dir, `sku-title-ledger-${TODAY}.md`), lmd.join('\n'));
 }
 
 console.log(JSON.stringify(summary, null, 1));

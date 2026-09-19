@@ -4,7 +4,7 @@
 > 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3 (K3 9/13 终裁 目标区 **50-58 半角当量**, 取代 v4 的 50-54)
 
 ## 数据来源 (§0.23)
-校准日期: 2026-09-19 11:34 UTC
+校准日期: 2026-09-19 11:56 UTC
 - `src/data/sku-seo-data.ts` — 活 title 主源 (SKU × 3 locale)
 - `src/data/products.ts` — slug → category_slug
 - `.hermes/gsc-2026-09-18/extract.json` — GSC 28d 页面级 (窗口 2026-08-19~09-15, FRESH)
@@ -24,17 +24,17 @@
  "slotsMissing": 0,
  "byBand": {
   "FILL": 77,
-  "TRIM": 41,
-  "OK": 182
+  "TRIM": 38,
+  "OK": 185
  },
  "byBandV4": {
   "FILL": 77,
-  "LEGACY": 51,
+  "LEGACY": 54,
   "OK": 147,
-  "RED": 25
+  "RED": 22
  },
  "recountMismatch": 0,
- "ruleDeltaOkOnlyUnderNewRule": 35,
+ "ruleDeltaOkOnlyUnderNewRule": 38,
  "withGscRows": 260,
  "issueSlots": 40
 }
@@ -126,14 +126,11 @@
 
 | SKU slug | locale | 当量 | GSC展示28d | GSC位置 | CTR | 类别 | title |
 |---|---|---|---|---|---|---|---|
-| a2-posters | zh-hk | 65 | 980 | 16.13 | 1.73% | posters | A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港 |
 | small-batch-stickers | en | 67 | 396 | 17.81 | 0.00% | stickers | Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro |
-| a2-posters | en | 62 | 385 | 45.45 | 0.26% | posters | A2 Poster Printing from $2.30 | Free Shipping $99+ | ZprintPro |
 | doujinshi-printing | en | 59 | 359 | 11.72 | 1.39% | japan-doujin | Doujinshi Printing Comiket | Free Shipping $99+ | ZprintPro |
 | catalog-printing | en | 61 | 307 | 29.71 | 0.00% | books | Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro |
 | same-day-flyers | en | 67 | 93 | 40.39 | 0.00% | flyers | Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | ZprintPro |
 | waterproof-stickers | en | 59 | 80 | 40.46 | 1.25% | stickers | Custom Waterproof Stickers | Free Shipping $99+ | ZprintPro |
-| a2-posters | ja | 63 | 74 | 18.14 | 0.00% | posters | A2 ポスター印刷｜¥300〜・1枚から・防水・無料デザイン｜ZprintPro |
 | fluorescent-stickers | en | 60 | 71 | 15.37 | 2.82% | stickers | Custom Fluorescent Stickers | Free Shipping $99+ | ZprintPro |
 | double-sided-flyers | ja | 71 | 65 | 29.68 | 0.00% | flyers | 両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro |
 | pvc-menus | zh-hk | 66 | 53 | 9.13 | 3.77% | menus | PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港 |
@@ -179,7 +176,7 @@
 | same-day-flyers | zh-hk | 51 | 日文假名污染 | 即日印刷 傳單 100張起 HK$0.55起 圓角・覆膜 | 智印港 |
 | same-day-flyers | ja | 58 | 品牌不在末尾 | 即日チラシ印刷｜¥125〜・100枚から・無料デザイン｜ZprintPro |
 | eco-flyers | zh-hk | 51 | 日文假名污染 | 環保傳單印刷 圓角・覆膜・10起印・HK$0.38起 | 智印港 |
-| a2-posters | ja | 63 | 品牌不在末尾 | A2 ポスター印刷｜¥300〜・1枚から・防水・無料デザイン｜ZprintPro |
+| a2-posters | ja | 56 | 品牌不在末尾 | A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro |
 | a1-posters | zh-hk | 54 | 日文假名污染 | A1 大幅海報 厚紙・1張起印・HK$45起・4小時打稿 | 智印港 |
 | foil-red-packets | zh-hk | 52 | 日文假名污染 | 燙金利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港 |
 | cartoon-red-packets | zh-hk | 52 | 日文假名污染 | 卡通利是封 燙金・局部UV・100起印・HK$1.10起 | 智印港 |
@@ -220,9 +217,9 @@
 
 ## E. 规则口径影响面 (v4 50-54 vs 现行 50-58)
 
-- v4 旧口径分布: {"FILL":77,"LEGACY":51,"OK":147,"RED":25}
-- 现行口径分布: {"FILL":77,"TRIM":41,"OK":182}
-- **仅因新口径 (50-58) 才判达标**的槽位: 35 条 (旧口径下属 55-58 由「满格禁加」变为「合规」)
+- v4 旧口径分布: {"FILL":77,"LEGACY":54,"OK":147,"RED":22}
+- 现行口径分布: {"FILL":77,"TRIM":38,"OK":185}
+- **仅因新口径 (50-58) 才判达标**的槽位: 38 条 (旧口径下属 55-58 由「满格禁加」变为「合规」)
 
 ## F. 优先级分层 (真实数据实测)
 
@@ -274,8 +271,8 @@
 
 | locale | 共享修饰段 | SKU 数 | 当量 | 涉及 SKU |
 |---|---|---|---|---|
-| en | Free Shipping $99+ | ZprintPro | 50 | 59/60/58/56/53/57/55/54/51/52/67/62/49/50/48 | waterproof-stickers, transparent-stickers, removable-stickers, die-cut-stickers, foil-stickers, security-stickers, fluorescent-stickers, kraft-paper-bags, white-card-bags, gift-bags, eco-paper-bags, handle-bags, small-bags, large-bags, a4-flyers, a5-flyers, double-sided-flyers, thick-paper-flyers, same-day-flyers, a2-posters, a1-posters, outdoor-posters, display-posters, art-posters, adhesive-posters, cosmetic-boxes, mailer-boxes, folding-boxes, rigid-boxes, embossed-red-packets, custom-red-packets, cartoon-red-packets, custom-calendars, photo-frame-calendars, magnetic-calendars, disposable-menus, outdoor-vinyl-banners, saddle-stitch-booklets, business-envelopes, colored-envelopes, pearl-envelopes, magnetic-closure-gift-box, electronics-packaging-box, kraft-paper-packaging-box, fruit-food-label-stickers, doujinshi-printing, acrylic-keychain, can-badge, postcard-set, eco-tote-bag |
-| zh-hk | 智印港 | 45 | 51/50/65/54/77/52/53/49 | die-cut-stickers, a4-flyers, a5-flyers, double-sided-flyers, same-day-flyers, eco-flyers, a2-posters, a1-posters, cosmetic-boxes, foil-red-packets, cartoon-red-packets, eco-red-packets, large-red-packets, wall-calendars, mini-calendars, photo-frame-calendars, disposable-menus, roll-up-banners, adhesive-banners, saddle-stitch-booklets, perfect-bound-books, hardcover-books, textbooks, acrylic-keychain, postcard-set, graduation-yearbook, premium-greeting-cards, spot-uv-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, cafe-table-cards, corrugated-boxes, drink-tokens, escort-cards, foil-wedding-invitations, name-tags-badges, save-the-date-cards, tuck-end-boxes, wedding-menu-cards, wedding-place-cards, wedding-program-cards, wedding-seating-charts, wedding-suite-bundle, wedding-thank-you-cards, white-card-boxes |
+| en | Free Shipping $99+ | ZprintPro | 50 | 59/60/58/56/53/57/55/54/51/52/67/49/50/48 | waterproof-stickers, transparent-stickers, removable-stickers, die-cut-stickers, foil-stickers, security-stickers, fluorescent-stickers, kraft-paper-bags, white-card-bags, gift-bags, eco-paper-bags, handle-bags, small-bags, large-bags, a4-flyers, a5-flyers, double-sided-flyers, thick-paper-flyers, same-day-flyers, a2-posters, a1-posters, outdoor-posters, display-posters, art-posters, adhesive-posters, cosmetic-boxes, mailer-boxes, folding-boxes, rigid-boxes, embossed-red-packets, custom-red-packets, cartoon-red-packets, custom-calendars, photo-frame-calendars, magnetic-calendars, disposable-menus, outdoor-vinyl-banners, saddle-stitch-booklets, business-envelopes, colored-envelopes, pearl-envelopes, magnetic-closure-gift-box, electronics-packaging-box, kraft-paper-packaging-box, fruit-food-label-stickers, doujinshi-printing, acrylic-keychain, can-badge, postcard-set, eco-tote-bag |
+| zh-hk | 智印港 | 45 | 51/50/55/54/77/52/53/49 | die-cut-stickers, a4-flyers, a5-flyers, double-sided-flyers, same-day-flyers, eco-flyers, a2-posters, a1-posters, cosmetic-boxes, foil-red-packets, cartoon-red-packets, eco-red-packets, large-red-packets, wall-calendars, mini-calendars, photo-frame-calendars, disposable-menus, roll-up-banners, adhesive-banners, saddle-stitch-booklets, perfect-bound-books, hardcover-books, textbooks, acrylic-keychain, postcard-set, graduation-yearbook, premium-greeting-cards, spot-uv-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, cafe-table-cards, corrugated-boxes, drink-tokens, escort-cards, foil-wedding-invitations, name-tags-badges, save-the-date-cards, tuck-end-boxes, wedding-menu-cards, wedding-place-cards, wedding-program-cards, wedding-seating-charts, wedding-suite-bundle, wedding-thank-you-cards, white-card-boxes |
 | ja | ZprintPro | 42 | 52/53/50/51/54 | kraft-paper-bags, gift-bags, handle-bags, outdoor-posters, display-posters, art-posters, folding-boxes, embossed-red-packets, cartoon-red-packets, eco-red-packets, hardcover-menus, drink-menus, adhesive-banners, catalog-printing, saddle-stitch-booklets, perfect-bound-books, certificates, school-flyers, electronics-packaging-box, kraft-paper-packaging-box, doujinshi-printing, can-badge, postcard-set, premium-greeting-cards, spot-uv-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, cafe-table-cards, corrugated-boxes, drink-tokens, escort-cards, foil-wedding-invitations, name-tags-badges, save-the-date-cards, tuck-end-boxes, wedding-menu-cards, wedding-place-cards, wedding-program-cards, wedding-seating-charts, wedding-suite-bundle, wedding-thank-you-cards, white-card-boxes |
 | en | ZprintPro | 20 | 53/51/50/54/52 | foil-red-packets, premium-greeting-cards, spot-uv-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, cafe-table-cards, corrugated-boxes, drink-tokens, escort-cards, foil-wedding-invitations, name-tags-badges, save-the-date-cards, tuck-end-boxes, wedding-menu-cards, wedding-place-cards, wedding-program-cards, wedding-seating-charts, wedding-suite-bundle, wedding-thank-you-cards, white-card-boxes |
 | ja | 防水 PVC ダイカット | ZprintPro | 7 | 48/50/54/56 | waterproof-stickers, transparent-stickers, removable-stickers, die-cut-stickers, foil-stickers, security-stickers, fluorescent-stickers |
@@ -292,5 +289,5 @@
 ## H. 违规清单 ledger (黄灯期跟踪 · K3 2026-09-19 指令)
 
 - ledger: `.hermes/reports/sku-title-ledger.json` (稳定键 slug|locale, 记 firstSeen / 当量历史 / status)
-- **未修复 118** / 已修复 0 / 累计 118
+- **未修复 115** / 已修复 3 / 累计 118
 - 门禁阶段: **YELLOW_WARN** (存量 ≤10 时把 severity 由 yellow 升 red 硬拦)

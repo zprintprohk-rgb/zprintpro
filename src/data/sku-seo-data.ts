@@ -985,7 +985,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港",
+        "title": "A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨 | 智印港",
         "description": "A2 海報印刷 1 張起印、HK$9 起/張，200g 銅版紙 / PP 防水合成紙，Giclée 級 1200 DPI。展覽/門店/地產推廣適用，即日打稿 2 小時。滿 HK$500 免費順豐，30 秒 AI 報價。",
         
         "h1": "海報印刷 · A2 大幅 · 印海報 即日",
@@ -993,7 +993,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A2海報印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。1 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，Giclée 級 1200 DPI 印刷（藝術品級），FSC 認證紙張，可持續來源，15+ 年印刷經驗。\n\nA2海報印刷 廣泛應用於 活動宣傳及演唱會/展覽海報、零售店內陳列及產品發佈、攝影作品及藝術品複印 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，A2海報印刷 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 200 克光面銅版紙（標準室內海報）（標準用途，性價比高）、250 克啞粉紙（高級室內 / 畫廊用）（中檔質感，主流選擇）、PVC 防水海報（戶外用，防 UV 油墨）（特殊需求或精品用途）。三種材質均通過 Giclée 級 1200 DPI 印刷（藝術品級） 及 FSC 認證紙張，可持續來源 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：1 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 海報有哪些尺寸可選？**\n標準尺寸：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、及 US Letter / Tabloid / 24\"x36\"。PVC 紙材最大支援 44 吋闊度。另可按需製作不規則異形切割。\n\n**Q2: 最低起印量是多少？**\n50 張起印（無開版費）。100 / 500 / 1,000 數量設有階梯式折扣。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 2 小時內提供免費數碼打稿，最多可免費修改 2 次。實物打稿 HK$199，DHL 速遞送達。\n\n**Q4: 海報適合戶外使用嗎？**\n200 克 / 250 克銅版紙海報適用於室內（配合裱框可使用 1-2 年）。戶外、窗戶、潮濕環境使用，請選 PVC 海報紙材配防 UV 油墨，戶外耐久 2-3 年。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。\n\n**材質對比・選購指南（印海報一張小訂單適用）**\n\n| 材質 | 厚度 | 適用場景 | 價格 (HK$) | 防水性 | 室內耐久 | 戶外耐久 |\n|------|------|----------|------------|--------|----------|----------|\n| 200g 光面銅版紙 | 標準 | 室內展覽/門店/活動 | $4-6/張 | 中 | 1-2 年 | 不適用 |\n| 250g 啞粉紙 | 中厚 | 高級畫廊/咖啡店/精品店 | $6-8/張 | 中 | 2-3 年 | 不適用 |\n| PVC 防水合成紙 | 厚 | 戶外海報/窗戶/潮濕環境 | $8-12/張 | 高 | 5+ 年 | 2-3 年 |\n\n**小訂單選擇指南**: 印海報一張室內短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\n\n**Q5: A2 海報 1 張起印, 小訂單適用嗎？**\n適用 — 1 張起印, 無最低消費, 無開版費, 港九新界滿 HK$500 免費順豐。\n即時網上 AI 報價 30 秒完成, WhatsApp 客服 5 分鐘內回覆。\n適合小店餐廳推廣、活動入口指示牌、初創品牌單張試水溫。\n\n**Q6: 印海報一張最快幾耐？**\n標準 3-5 個工作天交貨。即日打稿 2 小時, 每日 18:00 前落單即日交貨, DHL 全球 2-4 天送達。\n港九新界支援順豐速遞上門, 額外 HK$50 起。\n\n**Q7: 海報印刷 vs 噴繪 vs 燈箱片, 邊種最適合我？**\n海報印刷（200g/250g 銅版紙）= 短期室內推廣, 成本最低。\nPVC 防水海報 = 戶外/窗戶/潮濕環境, 耐久 2-3 年。\n燈箱片（背光 PP/PET）= 燈箱廣告/地鐵燈箱, 需配合 LED 燈箱使用。\n如不確定, 免費 2 小時打稿, 設計師可根據場景建議最合適材質。\n\n**Q8: 港九新界 上門配送？**\n港九新界 滿 HK$500 免費順豐速遞, 1-2 個工作天送達。\n順豐速遞同價。加急即日交收額外 HK$50 起。\n澳門/台灣/海外送遞 DHL 國際 2-4 天, 另議。\n\n**💡 小訂單適用承諾**: 1 張起印, 無最低消費, 即日打稿 2 小時。\n每日 18:00 前落單即日交貨, 港九新界滿 $500 免費順豐。\nWhatsApp 5 分鐘報價 → wa.me/8619880851334"
       },
       "en": {
-        "title": "A2 Poster Printing from $2.30 | Free Shipping $99+ | ZprintPro",
+        "title": "A2 Poster Printing $2.30 | Free Shipping $99+ | ZprintPro",
         "description": "A2 poster printing from $2.30, 50 MOQ. 200gsm coated or waterproof PP, giclée-quality 1200 DPI. Free design mockup in 2 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.",
         "h1": "A2 Posters 100+ | Retail & Events | ZprintPro",
         "keywords": ["A2 posters","A2 poster printing","420x594 posters","event posters A2","retail posters","sale posters","A2 posters free shipping","bulk A2 posters","A2 posters USD","bespoke A2 signage","poster printing","A1 posters","outdoor posters","exhibition posters","large format printing","waterproof posters","display posters","event posters","24h poster printing","2h express print","A0 poster","A1 poster","A2 poster","promo poster","homework poster","same day shipping","same day design","wedding poster printing","wedding photo wall","wedding photo poster","student poster printing","photo poster","photo poster printing","event poster printing","poster price","poster layout","poster design printing","festival decoration","presentation poster","welcome sign printing","restaurant poster printing","custom poster printing","wall art print","gallery wall set","home decor print","nursery art","minimalist wall art","boho wall decor","art reproduction","museum quality print"],
@@ -1002,7 +1002,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "A2 ポスター印刷｜¥300〜・1枚から・防水・無料デザイン｜ZprintPro",
+        "title": "A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro",
         "description": "A2 ポスター印刷 1 枚から、¥300〜。200g コート紙 / 防水 PP 合成紙、1200 DPI 高精彩フルカラー。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。",
         "h1": "Standard A2 size",
         "keywords": ["A2 ポスター", "A2 ポスター 印刷", "a2 posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A1 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],

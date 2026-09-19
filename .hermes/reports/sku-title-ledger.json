@@ -9,8 +9,8 @@
  "gatePhase": "YELLOW_WARN",
  "escalateThreshold": 10,
  "counts": {
-  "open": 118,
-  "fixed": 0,
+  "open": 115,
+  "fixed": 3,
   "total": 118
  },
  "entries": {
@@ -696,7 +696,8 @@
    "issues": [],
    "gscImps": 980,
    "gscPos": 16.13,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a2-posters|en": {
    "slug": "a2-posters",
@@ -714,7 +715,8 @@
    "issues": [],
    "gscImps": 385,
    "gscPos": 45.45,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a2-posters|ja": {
    "slug": "a2-posters",
@@ -734,7 +736,8 @@
    ],
    "gscImps": 74,
    "gscPos": 18.14,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a1-posters|ja": {
    "slug": "a1-posters",

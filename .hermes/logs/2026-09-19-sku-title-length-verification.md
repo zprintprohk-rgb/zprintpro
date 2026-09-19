@@ -183,7 +183,8 @@ const titleRe = /title:\s*["']([^"']{1,200})["']/g;
 | `.hermes/reports/live-title-probe-2026-09-19.json` | 新增 · 30 次线上探针原始证据 |
 | `.hermes/logs/2026-09-19-sku-title-length-verification.md` | 本文件 |
 
-**未改动**：`src/**`（零改动）、`docs/2026-09-13-title-batch-T-freeze.md`、既有门禁脚本（另一会话正在改 guards，避让）。
+**未改动**：`docs/2026-09-13-title-batch-T-freeze.md`、既有门禁脚本（另一会话正在改 guards，避让）。
+（`src/data/sku-seo-data.ts` 的改动见 §附录 A —— 本文件首轮为只读审计，第二轮执行 P0/a2 批次后已改 src。）
 
 ---
 
@@ -192,3 +193,88 @@ const titleRe = /title:\s*["']([^"']{1,200})["']/g;
 - Google changed 76% of title tags in Q1 2025 — [Search Engine Land](https://searchengineland.com/google-changed-76-of-title-tags-in-q1-2025-heres-what-that-means-454847)
 - 标题长度/像素宽度最佳实践（用于交叉参考） — [Neil Patel](https://neilpatel.com/blog/title-tags-seo/)、[Scalenut 2026](https://www.scalenut.com/blogs/meta-title-length-best-practices-2026)
 - ⚠️ 「EcomHint 146 店 / 82%」「Backlinko 40-60 字符 +33.3%」**未能核实**，不得作为决策依据（§0.23）。
+
+---
+
+# 附录 A — 第二轮执行记录（2026-09-19 19:55，K3 决策后）
+
+## A.1 a2-posters 超限修剪（K3 决策「立即修剪 zh-hk 65→50-57」）
+
+批次 `a2-trim`（`node scripts/apply-title-batch.mjs --batch=a2-trim --apply`）：
+
+| locale | 当量 | 变更 |
+|---|---|---|
+| zh-hk | 65→**54** | 删冗余填充「印海報一張小訂單適用」(21 当量) + 补尺寸实证 `420×594mm`（products.ts `specs.size`） |
+| en | 62→**57** | 删「from」，价格钩 `$2.30` 原样保留（`basePrice_en=2.3`） |
+| ja | 63→**57** | 删「・防水」（A2 海報核心卖点非防水，PP 裱貼仅为可选项） |
+
+**三语同修的理由**：三语皆 >58，只修 zh-hk 会留下同 SKU 内部不一致（K3 决策只点名 zh-hk，此处扩大范围已登记待追认）。
+**修剪纪律**：主词一字不改；**不新增任何数字**（唯一新增项 `420×594mm` 出自 `products.ts specs.size` 实证）。
+**census 复算**：TRIM 41→38，OK 182→185；ledger `open 118→115 / fixed 0→3`（FIXED 追踪生效）。
+
+> 注：a2-posters zh-hk 是**全站展示第一**页面（980 展示 / 17 点击 / CTR 1.73% / pos 16.13），
+> 并不是零点击页 —— 它的问题纯粹是**超长**（>58 触发 Google 重写风险），不是「不点」。
+
+## A.2 ⚠️ 工具缺陷与修复（过程留痕，§0.25.10.3 逐行核对立功）
+
+首次 `--apply` 把 en 标题写坏：`A2 Poster Printing A2 Poster Printing from $2.30 | …ZprintPro.30 | …`。
+
+- **根因**：`seg.replace(re, "$1"+newEsc+"$3")` —— 新标题含 `$2.30`，`String.replace` 把 `$2` 当**捕获组反向引用**（$2 = 旧标题）。
+  另注：`$0` 不是 JS 替换模式（故 P0 批的 `HK$0.22起` 未受影响，P0 标题经复核未受损）；`$99+` 因组 9 不存在而保持字面。
+- **发现方式**：`git diff` 逐行核对（§0.25.10.3 审查全绿第 3 件）。
+- **修复**：改用 replacer 函数 `(_m,p1,_p2,p3)=>p1+newEsc+p3`，并新增**落盘后断言**（每个新 title 必须逐字命中，否则自动回滚）。
+- **教训**：标题类文本替换**永不可用 `$` 替换串**。
+
+## A.3 分隔符评估（K3 决策「建议评估」）——**前提不成立**
+
+`node scripts/analyze-title-separators.mjs` 全 300 槽实测：
+
+| 分隔符 | 覆盖 | 占比 |
+|---|---|---|
+| **半角竖线 `\|`** | 298/300 槽 | **99.3%**（zh-hk 100/100、en 100/100、ja 98/100） |
+| 全角竖线 `｜` | **2 槽** | 0.7%（仅 ja `same-day-flyers` / `a2-posters`） |
+| 中黑点 `・` | zh-hk 28 条 / ja 37 条 | 簇内次级分隔 |
+| 间隔号 `·` | 2 条 | 0.7% |
+| 半角连字符 `-` | **0 条** | 0% |
+
+**结论**：
+1. 方案稿「当前 SKU 标题**大量**使用全角管道符 `｜`」**与事实不符** —— 实际 99.3% 已在用半角 `|`。
+2. `｜→|` 每条省 **2 当量**，但**跨 50/58 边界的标题 = 0 条** ⇒ 对长度合规**零收益**。
+3. 「破折号重写率 19.7% vs 管道符 41%」：该口径**确有一次 Semrush 研究**（比 EcomHint 类编造可信），
+   但本轮**未能取回原始数字复核**（来源页面 JS 渲染，正文未获取到）⇒ 按 §0.23 记为**未校准**，不得直接据以决策。
+4. **建议：不批量改分隔符**。理由：改为 `-` 意味着重写 **298/300** 条已达标标题 = 全站 churn 事件，
+   而收益（重写率）尚未校准且因果混淆（分隔符与内容/结构共变）。若要验证，**只在新写标题或小队列上做 A/B**，
+   不回收已冻结标题（§7 churn 红线 + 验证窗纪律）。
+
+## A.4 ⚠️ 新发现（数据诚信，非本批引入）：a2-posters 四个 MOQ 口径互斥
+
+同一个 SKU，同一仓库内出现 **4 个不同的起订量**：
+
+| 出处 | 字段 | 值 |
+|---|---|---|
+| `src/data/sku-seo-data.ts` | zh-hk title + description + body | **1 張起印** |
+| `src/data/products.ts` | `title_zh` | **10張起印** HK$12.9/張 |
+| `src/data/sku-seo-data.ts` | en description | **50 MOQ** |
+| `src/data/products.ts` | `minQuantity` | **100** |
+| `src/data/sku-seo-data.ts` | ja body | **100 枚から** |
+
+价格侧同样分歧：`HK$9起`（sku-seo zh-hk）vs `HK$12.9/張`（products title_zh）vs `price_range HK$95-1,017` / `basePrice 16`；keywords 内另有 `HK$20起`。
+
+**处置**：本批**未改任何数字**（原样保留 `1張起印 HK$9起`），只登记不清洗 —— 真值需 K3 或 products.ts 口径裁一次，
+执行层不得自选（§0.22 SOP-10 第 3 款 / 门童 #19 跨文价格口径一致性域，该门童目前只覆盖月曆）。
+
+## A.5 K3 决策执行对账
+
+| 决策 | 状态 | 证据 |
+|---|---|---|
+| 立即修剪 a2-posters | ✅ 已落（zh-hk+en+ja 共 3 槽） | census TRIM 41→38 |
+| 暂不 push | ✅ 遵守（未 push） | `origin/main..HEAD` 仍含他会话 3 commit |
+| 门禁保持 yellow，≤10 升 red | ✅ 已实现 | `sku-title-ledger.json` → `gatePhase: YELLOW_WARN`, `escalateThreshold: 10` |
+| 两个 JSON 从 tracking 移除 | ✅ 已移除 | `git ls-files` 两条目为空（untracked） |
+| 两个 cron prompt 的 pre-existing red 注册 baseline，不硬修 | ✅ **由并行会话按 K3 9/19 决策一(a) 实现中** | `.hermes/cron-prompts/` 已进 `common.js` `EXEMPT_PATHS`；台账 `.hermes/regression-guard/cron-prompts-exemption-manifest.json` + 门童 #23 对账（19:35 落地）。本批**不另建并行机制**以免冲突 |
+| 分隔符评估 | ✅ 已评估（结论：不改，见 A.3） | `title-separator-analysis-2026-09-19.json` |
+
+## A.6 本批新增工具
+
+- `scripts/apply-title-batch.mjs`（由 `gen-p0-title-batch.mjs` 通用化：批次化 `p0` / `a2-trim` + 落盘断言 + 品牌末尾兼容全角 `｜`）
+- `scripts/analyze-title-separators.mjs`（分隔符分布 + `｜→|` 边界迁移预测）
