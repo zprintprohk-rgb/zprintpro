@@ -17,7 +17,12 @@
       "reason": "K3 2026-09-19 裁决 (iii) 统一 ≥50% 口径后，sticker 三语 40-47%（zh-hk 7/15 / ja 7/15 / en 6/15，三语一致差 ≤7pt）低于 50%。全量问句化改写会新增 6+ 处未经授权的文案改动，收益低于风险 ⇒ 按已接受偏差处理（不做全量改写）。",
       "reviewed_by": "K3 (2026-09-19 建议登记)",
       "registered_at": "2026-09-19",
-      "review_due": "2026-12-19"
+      "review_due": "2026-12-19",
+      "monitor": {
+        "observed_ratio": "问句式段锚 7/15 = 47%",
+        "alert_if_below": 0.35,
+        "status": "within_tolerance"
+      }
     },
     {
       "key": "en|sticker-material-pvc-vinyl-removable|3|FAIL",
@@ -29,7 +34,12 @@
       "reason": "同 zh-hk（三语同一偏差的同一处置）",
       "reviewed_by": "K3",
       "registered_at": "2026-09-19",
-      "review_due": "2026-12-19"
+      "review_due": "2026-12-19",
+      "monitor": {
+        "observed_ratio": "问句式段锚 6/15 = 40%",
+        "alert_if_below": 0.35,
+        "status": "within_tolerance"
+      }
     },
     {
       "key": "ja|sticker-material-pvc-vinyl-removable|3|FAIL",
@@ -41,8 +51,25 @@
       "reason": "同 zh-hk（三语同一偏差的同一处置）",
       "reviewed_by": "K3",
       "registered_at": "2026-09-19",
-      "review_due": "2026-12-19"
+      "review_due": "2026-12-19",
+      "monitor": {
+        "observed_ratio": "问句式段锚 7/15 = 47%",
+        "alert_if_below": 0.35,
+        "status": "within_tolerance"
+      }
     }
   ],
-  "data_source": "K3 2026-09-19 评估建议 + dump-sticker-headings.mjs 实测（三语 H2/H3/问句计数）+ 门禁 blog-quality-12-rules-guard 段 3 判定"
+  "data_source": "K3 2026-09-19 评估建议 + dump-sticker-headings.mjs 实测（三语 H2/H3/问句计数）+ 门禁 blog-quality-12-rules-guard 段 3 判定",
+  "monitor_policy": {
+    "rule": "持续监控: 若任一 accepted_deviation 的偏离度**扩大**超过阈值, 自动转回 FAIL (不再豁免)。",
+    "baseline_observed": {
+      "zh-hk": "7/15 = 47%",
+      "en": "6/15 = 40%",
+      "ja": "7/15 = 47%"
+    },
+    "alert_if_ratio_drops_below": 0.35,
+    "alert_if_nonquestion_exceeds_question": true,
+    "check_command": "node scripts/guards/blog-quality-12-rules-guard.js --slug=sticker-material-pvc-vinyl-removable",
+    "rationale": "K3 2026-09-19 建议: 「到期复核」是被动的, 「偏差扩大即告警」是主动的; 债务治理需区分「已知并接受(需监控)」与「待清债务(需偿还)」。"
+  }
 }
