@@ -160,19 +160,35 @@ function checkSegmentsOffline(file, locale, slug, value) {
   if (qlens.length < 3) addRow(locale, slug, 2, 'FAIL', `仅 ${qlens.length} 个合规快速答案块（长度分布 ${qlens.join('/') || '∅'}）`, `为 ${slug} 增加 >=3 个 40-60 字快速答案块`);
   else addRow(locale, slug, 2, 'PASS', `${qlens.length} 个块，长度 ${qlens.slice(0, 4).join('/')}${qlens.length > 4 ? '/…' : ''}`, '');
 
-  // 段 3: H2 问句段群
+  // 段 3: H2/H3 问句段群 (K3 2026-09-19 决策: 方案 a —— 主段锚可为 H2 或 H3)
+  //   修订理由 (K3 评估第二点 + 外部标准):
+  //     ① 多项 2026 AI 引用研究: 问句式 H2/H3 是「成本最低、回报最大」的格式化改动;
+  //        有清晰 H1-H2-H3 层级的页面被 ChatGPT 引用概率约为无层级页面的 ~3 倍 ⇒ 关键在「层级逻辑清晰」,
+  //        而非「必须用 H2」。
+  //     ② 实测判例: poster-printing-guide 的 en/ja 用 <h3> 作主段锚 (<h2> = 0) —— 段群结构真实存在,
+  //        语义上是问句主段; 旧规则只看 H2 ⇒ 直接判 FAIL = 过度严格。
+  //     ③ 不选方案 b (把 h3 提升为 h2): 会改动已上线 DOM 结构 (churn) 且影响锚点/样式。
+  //   判据: (H2+H3) 总数 ≥6 且 (H2+H3) 中问句式 > 50%。
   const h2re = /<h2[^>]*>([\s\S]*?)<\/h2>/gi; let hm;
+  const h3re = /<h3[^>]*>([\s\S]*?)<\/h3>/gi; let hm3;
+  const Q_RE = /[?？]|\b(how|what|why|when|which|can|does|is|are|should|much|many|long)\b|多少|怎樣|如何|什麼|哪|是否|邊款|邊個|幾多|いくら|どう|なに|どの|できる|選び方|違い|種類|相場/;
   let q = 0; let nq = 0; const nqEx = [];
+  let h2only = 0;
   while ((hm = h2re.exec(c)) !== null) {
-    const t = stripHtml(hm[1]);
-    if (/[?？]|\b(how|what|why|when|which|can|does|is|are|should|much|many|long)\b|多少|怎樣|如何|什麼|哪|是否|邊款|邊個|幾多|いくら|どう|なに|どの|できる|選び方|違い|種類|相場/.test(t)) q++;
-    else { nq++; if (nqEx.length < 2) nqEx.push(t.slice(0, 28)); }
+    const t = stripHtml(hm[1]); h2only++;
+    if (Q_RE.test(t)) q++; else { nq++; if (nqEx.length < 2) nqEx.push(t.slice(0, 28)); }
   }
-  const h2total = q + nq;
-  if (h2total === 0) addRow(locale, slug, 3, 'FAIL', 'H2 = 0（全篇无 H2，段群结构不存在）', `把 ${slug} 的 H3 段群提升为 H2 问句（12 段骨架以 H2 为段锚）`);
-  else if (h2total < 6) addRow(locale, slug, 3, 'FAIL', `H2 仅 ${h2total} 个 < 6`, `补 H2 段群到 6-10 个问句`);
-  else if (nq > q) addRow(locale, slug, 3, 'FAIL', `问句 ${q}/${h2total}，非问句 ${nq}（例: ${nqEx.join(' / ')}）`, `把陈述式 H2 改为用户真实搜索问句`);
-  else addRow(locale, slug, 3, 'PASS', `H2 ${h2total} 个，问句 ${q} 个（${Math.round(q / h2total * 100)}%）`, '');
+  let h3only = 0;
+  while ((hm3 = h3re.exec(c)) !== null) {
+    const t = stripHtml(hm3[1]); h3only++;
+    if (Q_RE.test(t)) q++; else { nq++; if (nqEx.length < 2) nqEx.push(t.slice(0, 28)); }
+  }
+  const h2n = h2only + h3only;
+  const headMix = h3only > 0 && h2only > 0 ? `H2 ${h2only} + H3 ${h3only}` : (h3only > 0 ? `H3 ${h3only}` : `H2 ${h2only}`);
+  if (h2n === 0) addRow(locale, slug, 3, 'FAIL', 'H2/H3 = 0（全篇无段锚，段群结构不存在）', `把 ${slug} 的主段锚补为 H2 或 H3 问句（≥6 个）`);
+  else if (h2n < 6) addRow(locale, slug, 3, 'FAIL', `H2/H3 仅 ${h2n} 个 (${headMix}) < 6`, `补段锚到 6-10 个问句（H2 或 H3 均可）`);
+  else if (nq > q) addRow(locale, slug, 3, 'FAIL', `问句 ${q}/${h2n} (${headMix})，非问句 ${nq}（例: ${nqEx.join(' / ')}）`, `把陈述式标题改为用户真实搜索问句`);
+  else addRow(locale, slug, 3, 'PASS', `${headMix} = ${h2n} 个，问句 ${q} 个（${Math.round(q / h2n * 100)}%）`, '');
 
   // 段 4: 比较表格
   const tables = (c.match(/<table[\s>]/gi) || []).length;

@@ -30,6 +30,13 @@
 > - **冻结名单不变**：`zprintpro-en-us-images/` 整目录 · `_batch*.py` · `src/components/services/Rush*` 8 组件 · `page.redesign.tsx` · `src/services/rush/*`
 > - **门禁纪律不变项**：tsc 54=54 基线持平 · build 687 URLs exit 0 · bc-ban 按 diff 0 新增 · 线上探针（非纸面结论）· 只推 main 省 CF 构建配额（分支走本地路径进合并仓）
 
+
+> **[v11 段3/FAQ口径修订 · 2026-09-19 K3 决策 方案 a]**
+> ① **段 3 主段锚 H2 或 H3 均可**（判据 = (H2+H3) 总数 ≥6 且问句式 >50%；关键在「层级逻辑清晰」，不强求 H2；**不要为迁就门禁去动已上线 DOM 结构**）。
+> ② **新写/补写 FAQ 答案长度口径 = 40-120 词**（旧口径 80-150 词偏高；40-80 词是 AI 引擎高引用「答案胶囊」区间，上限保留深度空间）。
+> ③ **写 FAQ 前必跑格式预检**：`node .hermes/_probe-pb/precheck-faq-format.mjs`（8 用例，含 3 条反例）—— 必写成 `<p><strong>Qn: 问?</strong><br/>A: 答</p>`；**禁** `<li>` 列表形态 / **禁**缺 A 标记 / **禁**答案另起 `<p>`（否则「写了 FAQ 但线上无 FAQPage」静默失败）。
+> ④ 本修订已同步 SSoT（§3.1 段3-5 行 + §0.3 FAQ 口径）+ 门禁断言（`blog-quality-12-rules-guard.js` 段 3 判定），经门童 #21 sha256 重新绑定。
+
 > **[v9 规则翻译层补丁 · 2026-09-19 K3 指令 · 必读第 -1 优先级]** 本批新增 3 条硬约束（SSoT = `docs/2026-09-08-title-rules-and-deep-blog-standard.md` §0 口径锁定卡 + §3.2 + §5.1 + §7；门禁 = `node scripts/guards/blog-quality-12-rules-guard.js --online`）：
 > ① **段位口径锁定**：深度 blog 段位标准 = **12 段骨架**（SSoT §3.1），**不是 9 段**（9 段已于 9/3 撤回），**V5.1 只是渲染层「快速答案块」样式标记、与段数无关**。
 > ② **段 9 FAQ 格式必须可被生产正则解析**：`<p><strong>Q1: 问题</strong><br/>A: 答案</p>`（`<p>` **不得带 class**）。实测教训：`<p class="mb-3">` 或 `<li><strong>问?</strong>答</li>` 形态 ⇒ `extractFaqFromHtml` 解析不出 ⇒ `faqJsonLd = null` ⇒ **线上静默失去 FAQPage**（2026-09-19 实测 12/15 个 Pillar-locale 组合踩坑）。**修复只改包装标签，答案文字逐字保留**（零改文案）；交付前必跑 `--online` 确认段 9 + 段 12 PASS。
