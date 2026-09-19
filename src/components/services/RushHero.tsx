@@ -12,7 +12,7 @@ export default function RushHero({ locale }: { locale?: string } = {}) {
       <div className={`${styles.heroInner} ${styles.rushInner}`}>
         <p className={styles.eyebrow}>通宵達旦・翌日送達</p>
         <h1 className={styles.heroTitle}>即日印刷・即日急件 — 今晚 <span className={styles.timeHi} style={{ color: "#F87314", fontSize: "1.18em", fontWeight: 800, whiteSpace: "nowrap" }}>6 點前</span>落單，聽日中午 <span className={styles.timeHi} style={{ color: "#F87314", fontSize: "1.18em", fontWeight: 800, whiteSpace: "nowrap" }}>12 點前</span>到</h1>
-        <p className={styles.heroLead}>傳單 / 海報 / 貼紙 / 紙袋 100 張起印 · CMYK 全彩 · 全港配送（順豐送貨上門 / 港鐵站交收）</p>
+        <p className={styles.heroLead}>傳單 / 海報 / 貼紙 10 張起印 · 紙袋 100 個起 · CMYK 全彩 · 全港配送（順豐送貨上門 / 港鐵站交收）</p>
         <ul className={styles.trustList}>
           {RUSH.trust.map((t) => (
             <li key={t}><Check size={16} strokeWidth={2.4} />{t}</li>

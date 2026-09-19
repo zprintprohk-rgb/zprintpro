@@ -26,9 +26,9 @@ const categoryIndustryScenarios: Record<string, {
   stickers: [
     // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Made for USA small business
     { key: 'pet_food', scenarios: {
-      'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '100 張起印 · 即日打樣'],
+      'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '10 張起印 · 即日打樣'],
       en: ['Waterproof FDA-grade food labels', 'Die-cut shapes for shelf appeal', 'From 50 · USA artisan brands'],
-      ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '100枚から・即日サンプル'],
+      ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '10枚から・即日サンプル'],
     }},
     { key: 'beauty', scenarios: {
       'zh-hk': ['燙金 LOGO · 啞光質感', '透明貼紙展示玻璃瓶身', '小批量試產 50 張起'],
@@ -46,9 +46,9 @@ const categoryIndustryScenarios: Record<string, {
     // 竞品 sharp hook 实证: 即日贴纸印刷 CTR 6.56%, A2 贴纸 即日 CTR 7.02%, 24小時急件 CTR 4-7%
     // 2026-07-09 v5 美国市场优化: en 加 Free Shipping + FedEx/DHL + Made for USA
     { key: 'digital_sameday', scenarios: {
-      'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 100 張起印', '小批量無版費 · 1 本起'],
-      en: ['Free shipping over $99 · same-day rush', 'Digital print + offset available', '100 MOQ · no plate fee · USA small business'],
-      ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 100枚から', '小ロット・版代不要・1枚から'],
+      'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 10 張起印', '小批量無版費 · 1 本起'],
+      en: ['Free shipping over $99 · same-day rush', 'Digital print + offset available', '10 MOQ · no plate fee · USA small business'],
+      ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 10枚から', '小ロット・版代不要・1枚から'],
     }},
     { key: 'restaurant', scenarios: {
       'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '500 張起 · 即日打樣'],

@@ -900,7 +900,13 @@ const DISPLAY_ANCHOR_OVERRIDES: Record<string, { low: number; high: number; unit
   'can-badge':           { low: 1.00, high: 5.00,  unit: '個' },
   'postcard-set':        { low: 1.00, high: 5.00,  unit: '枚' },
   'eco-tote-bag':        { low: 5.00, high: 10.00, unit: '個' },
-  'a1-posters':          { low: 29.00, high: 29.00, unit: '張' }, // 喷绘实价(诚实锚, K3 标注待 user 拍板)
+  /*
+   * A1 海報 — 2026-09-19 K3 路線圖 P0-2「A1 獨立 minQuantity=1 + 獨立價階」
+   *   原值 { 29, 29 } 註明「待 user 拍板」: 29 其實係 **200 張檔** 的單張價,
+   *   同 A1 一張起印 (modeled 1 張 = HK$45) 矛盾 —— 卡片寫「HK$29/張起」會誤導單張客。
+   *   改為誠實區間: 1 張 HK$45 → 量產檔 HK$29/張 (10 張 HK$290、200 張 HK$5,800)。
+   */
+  'a1-posters':          { low: 29.00, high: 45.00, unit: '張' }, // 噴繪實價: 量產檔 ~ 單張起印
 };
 
 const UNIT_LABEL: Record<string, { zh: string; en: string; ja: string }> = {

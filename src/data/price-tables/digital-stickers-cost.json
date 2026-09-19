@@ -17,11 +17,35 @@
   "anchor": true,
   "anchorType": "factory-cost",
   "calibratedAt": "2026-07-25",
-  "note": "v16: 普通×1.6/特殊×2.0/×2.6",
+  "note": "v16: 普通×1.6/特殊×2.0/×2.6 | 2026-09-19 全站起訂量修正: 加入小批量 modeled 檔 (10/25/50/75/99), 待工廠實詢校準。 | 2026-09-19 全站起訂量修正: 加入小批量 modeled 檔 (10/25/50/75/99), 待工廠實詢校準。",
   "configs": [
     {
       "config": "HP indigo 6K数码标签-格底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
       "tiers": [
+        {
+          "qty": 10,
+          "cost_rmb": 44.4,
+          "sell_hkd": 71,
+          "weight_kg": 0.09,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "cost_rmb": 44.4,
+          "sell_hkd": 71,
+          "weight_kg": 0.23,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
         {
           "qty": 50,
           "cost_rmb": 45.5,
@@ -68,6 +92,30 @@
       "config": "HP indigo 6K数码标签-厚白底/铜板（热熔胶）-105X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
       "tiers": [
         {
+          "qty": 10,
+          "cost_rmb": 73.4,
+          "sell_hkd": 117.5,
+          "weight_kg": 0.09,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "cost_rmb": 88.1,
+          "sell_hkd": 141,
+          "weight_kg": 0.23,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
           "qty": 50,
           "cost_rmb": 89.8,
           "sell_hkd": 144,
@@ -112,6 +160,30 @@
     {
       "config": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X148-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
       "tiers": [
+        {
+          "qty": 10,
+          "cost_rmb": 76.9,
+          "sell_hkd": 123,
+          "weight_kg": 0.12,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "cost_rmb": 94.4,
+          "sell_hkd": 151,
+          "weight_kg": 0.3,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
         {
           "qty": 50,
           "cost_rmb": 96.7,
@@ -158,6 +230,30 @@
       "config": "HP indigo 6K数码标签-黄底/铜板（热熔胶）-210X297-单面-数码模切[异形],片装,覆膜[覆光膜],本厂材料",
       "tiers": [
         {
+          "qty": 10,
+          "cost_rmb": 82.2,
+          "sell_hkd": 131.5,
+          "weight_kg": 0.18,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "cost_rmb": 105.6,
+          "sell_hkd": 169,
+          "weight_kg": 0.45,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
           "qty": 50,
           "cost_rmb": 108.4,
           "sell_hkd": 173,
@@ -203,6 +299,66 @@
       "config": "卷装/平装标签-格底/铜板（热熔胶）-150X100-单面-模切(啤)[异形],卷装[卷芯直径4cm][出标方向横版左出标][每卷张数1000],不覆膜",
       "tiers": [
         {
+          "qty": 10,
+          "cost_rmb": 34.4,
+          "sell_hkd": 55,
+          "weight_kg": 0.03,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "cost_rmb": 35.9,
+          "sell_hkd": 57.5,
+          "weight_kg": 0.08,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 50,
+          "cost_rmb": 38.1,
+          "sell_hkd": 61,
+          "weight_kg": 0.16,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 75,
+          "cost_rmb": 40.9,
+          "sell_hkd": 65.5,
+          "weight_kg": 0.24,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 99,
+          "cost_rmb": 43.8,
+          "sell_hkd": 70,
+          "weight_kg": 0.32,
+          "coeff_zh": 1.6,
+          "coeff_intl": 2.2,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
           "qty": 3000,
           "cost_rmb": 381.4,
           "sell_hkd": 610,
@@ -212,5 +368,6 @@
         }
       ]
     }
-  ]
+  ],
+  "smallBatchModelSrc": "modeled-small-batch"
 }

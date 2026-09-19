@@ -28,23 +28,26 @@ type Props = {
 };
 
 // 2026-08-26 K3 拍板 (gap-closure-card §2 Step 3): 3 locale 全换定稿
-// zh-hk: 含 18:00 截單 + 100 張起 + 順豐翌日中午 + WhatsApp 30 秒 (150-160 字符)
+// zh-hk: 含 18:00 截單 + 順豐翌日中午 + WhatsApp 30 秒 (150-160 字符)
 // en/ja: 不带 Shenzhen/Hong Kong 硬塞前缀 (per §13.10)
+// 2026-09-19 全站起訂量修正: 三語 meta 同步 10 口徑 (傳單/貼紙 10 起; 紙袋 100 起另述);
+//   並修一處既有矛盾 —— zh-hk desc 原寫「下午 3 時前落單即日交貨」, 與 title「18:00 截單・翌日 12:00」自相矛盾,
+//   站上 timeline / FAQ / rush-data 一律 18:00 截單, 故統一為 18:00。
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: '即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港',
-    desc: '即日印刷服務：下午 3 時前落單即日交貨，傳單/海報/貼紙全品類支援。免費 2 小時打稿，港九新界滿 HK$500 免費順豐，順豐速遞上門。30 秒 AI 報價，WhatsApp 即日回覆。',
-    keywords: '即日急件,急件印刷,同日印刷,即日印刷,下午3時前落單,即日交貨,免費 2 小時打稿,港九新界,免費順豐,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
+    desc: '即日印刷服務：每日 18:00 前落單並確認稿件，通宵印刷、順豐翌日中午前送達，傳單／貼紙 10 張起印。免費 2 小時打稿，港九新界滿 HK$500 免費順豐。30 秒 AI 報價，WhatsApp 即日回覆。',
+    keywords: '即日急件,急件印刷,同日印刷,即日印刷,18:00截單,順豐翌日中午,免費 2 小時打稿,港九新界,免費順豐,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
   },
   en: {
     title: 'Same-Day Printing | Order by 6pm, Delivered Next Day 12pm | ZprintPro',
-    desc: 'Same-day printing with 6PM cut-off, 100+ MOQ, delivered next-day 12pm. Flyers, posters, stickers, paper bags, booklets, roll-up banners in CMYK full color. WhatsApp 30-sec quote, 15-min email reply.',
-    keywords: 'same-day printing,rush printing,6pm cut-off,overnight print,next-day delivery,CMYK full color,flyers 100 moq,posters,stickers,paper bags,booklets,roll-up banner,urgent print,in-house factory',
+    desc: 'Same-day printing with 6PM cut-off, flyers & stickers from 10 pcs, delivered next-day 12pm. Flyers, posters, stickers, paper bags, booklets, roll-up banners in CMYK full color. WhatsApp 30-sec quote, 15-min email reply.',
+    keywords: 'same-day printing,rush printing,6pm cut-off,overnight print,next-day delivery,CMYK full color,flyers 10 moq,stickers 10 moq,posters,paper bags,booklets,roll-up banner,urgent print,in-house factory',
   },
   ja: {
-    title: '特急印刷 激安・DHL全国・翌日届 100枚〜 | ZprintPro',
-    desc: '即日印刷 18:00 締切、100 枚〜、翌日 12 時前配送。チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー、CMYK フルカラー防水。WhatsApp 30 秒見積もり、2 時間以内にメール返信。',
-    keywords: '即日印刷,当日特急,18:00締切,徹夜印刷,翌日12時,CMYK フルカラー,チラシ 100 枚,ポスター,ステッカー,紙袋,冊子,ロールアップバナー,緊急印刷,自社工場',
+    title: '特急印刷 激安・DHL全国・翌日届 10枚〜 | ZprintPro',
+    desc: '即日印刷 18:00 締切、チラシ・ステッカーは 10 枚〜、翌日 12 時前配送。ポスター・紙袋・冊子・ロールアップバナー、CMYK フルカラー防水。WhatsApp 30 秒見積もり、2 時間以内にメール返信。',
+    keywords: '即日印刷,当日特急,18:00締切,徹夜印刷,翌日12時,CMYK フルカラー,チラシ 10 枚,ステッカー 10 枚,ポスター,紙袋,冊子,ロールアップバナー,緊急印刷,自社工場',
   },
 };
 
@@ -144,10 +147,10 @@ export default function RushDeliveryPage({ params }: Props) {
           <svg className="w-5 h-5 text-[#2873F5] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           <p className="text-[15px] md:text-base leading-relaxed text-[#1D3465]">
             {locale === 'zh-hk'
-              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，100 張起印。'
+              ? '即日印刷：每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，傳單／貼紙 10 張起印。'
               : locale === 'ja'
-                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。100枚〜から対応。'
-                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. 100+ MOQ.'}
+                ? '即日印刷：18:00 までにご注文・データ確認で徹夜印刷、SFで翌日12時前にお届け。チラシ・ステッカーは10枚〜。'
+                : 'Same-day printing: order before 6PM and confirm artwork, we print overnight and SF Express delivers before noon the next day. Flyers & stickers from 10 pcs.'}
           </p>
         </div>
       </div>
@@ -177,8 +180,8 @@ export default function RushDeliveryPage({ params }: Props) {
         <p className="mb-2"><strong>相關服務：</strong></p>
         <ul className="space-y-1 list-disc list-inside">
           <li><a href="/zh-hk/category/posters/" className="text-[#2873F5] hover:underline">海報印刷</a> · A1/A2 即日速遞，順豐港九新界翌日中午到</li>
-          <li><a href="/zh-hk/category/flyers/" className="text-[#2873F5] hover:underline">傳單印刷</a> · A4/A5 100 張起印，即日截單翌日達</li>
-          <li><a href="/zh-hk/category/stickers/" className="text-[#2873F5] hover:underline">貼紙印刷</a> · 防水 Vinyl 50 張起，連工藝完成 24 小時</li>
+          <li><a href="/zh-hk/category/flyers/" className="text-[#2873F5] hover:underline">傳單印刷</a> · A4/A5 10 張起印，即日截單翌日達</li>
+          <li><a href="/zh-hk/category/stickers/" className="text-[#2873F5] hover:underline">貼紙印刷</a> · 防水 Vinyl 10 張起，連工藝完成 24 小時</li>
           <li><a href="/zh-hk/category/paper-bags/" className="text-[#2873F5] hover:underline">紙袋印刷</a> · 100 個起，活動 / 展會批量趕工</li>
           <li><a href="/zh-hk/category/calendars/" className="text-[#2873F5] hover:underline">月曆印刷</a> · 2027 掛曆 9 月開學季企業定制起量</li>
         </ul>

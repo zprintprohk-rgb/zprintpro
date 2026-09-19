@@ -395,9 +395,10 @@ const categorySeoData: Record<string, {
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
-      'zh-hk': 'small batch 貼紙印刷 防水抗UV・1張起印・異形裁切・燙金 | 智印港',
-      en: 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof + Free US Shipping $99+ | ZprintPro',
-      ja: 'small batch PVC シール 防水印刷 1枚〜・短納期2-4日・DHL全国 | ZprintPro',
+      // 2026-09-19 全站起訂量修正: 1張起印 (與 minQuantity 100 不符) → 10張起印 (真實口徑)
+      'zh-hk': 'small batch 貼紙印刷 防水抗UV・10張起印・異形裁切・燙金 | 智印港',
+      en: 'Small Batch Sticker Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping $99+ | ZprintPro',
+      ja: 'small batch PVC シール 防水印刷 10枚〜・短納期2-4日・DHL全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -406,9 +407,9 @@ const categorySeoData: Record<string, {
       'ja': 'ステッカー印刷,オリジナルステッカー,防水ステッカー,透明ステッカー,金箔ステッカー,ダイカットステッカー,小ロットステッカー,ロゴステッカー,ラベル印刷,UVステッカー,マットステッカー,光沢ステッカー',
     },
     descriptions: {
-      'zh-hk': '貼紙印刷 1 張起印，HK$0.22 起/張。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Small batch sticker printing from $0.05 — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
-      'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 1 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'en': 'Small batch sticker printing from $0.05, 10 MOQ — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
+      'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
   'flyers': {
@@ -417,9 +418,10 @@ const categorySeoData: Record<string, {
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
-      'zh-hk': 'A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
-      'en': 'China Catalog Printing from $0.06 | 100 MOQ + Free Shipping | ZprintPro',
-      'ja': 'A5 チラシ印刷 100枚〜・両面カラー・即日対応 | ZprintPro',
+      // 2026-09-19 全站起訂量修正: 100張起/100 MOQ/100枚〜 → 10 (真實口徑)
+      'zh-hk': 'A5 宣傳單張印刷 10張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
+      en: 'Custom Flyer Printing from $0.06 | 10 MOQ + Free Shipping | ZprintPro',
+      ja: 'A5 チラシ印刷 10枚〜・両面カラー・即日対応 | ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
@@ -429,10 +431,10 @@ const categorySeoData: Record<string, {
       'ja': 'チラシ印刷,オリジナルチラシ,両面チラシ,A4 チラシ,A5 チラシ,折込チラシ,急ピッチチラシ,飲食店チラシ,イベントチラシ,店舗チラシ,開業チラシ',
     },
     descriptions: {
-      'zh-hk': '傳單印刷 100 張起印，HK$0.18 起/張。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'zh-hk': '傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
-      'en': 'Custom flyer printing from $0.06, 100 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC certified.',
-      'ja': 'チラシ印刷・宣伝チラシ・両面カラー 100 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
+      'ja': 'チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
   'packaging': {
@@ -612,7 +614,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '書刊印刷 50 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC certified.',
+      'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
       'ja': '冊子印刷 50 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
@@ -629,7 +631,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '校園教育印刷 100 本起印. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
+      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -643,12 +645,12 @@ const categorySeoData: Record<string, {
     },
     keywords: {
       'zh-hk': '賀卡印刷,生日卡印刷,節日賀卡,感謝卡印刷,邀請卡印刷,商業賀卡,立體賀卡,3D 賀卡,客製化賀卡,訂製賀卡,聖誕卡,情人節卡,母親節卡,父親節卡',
-      en: 'greeting card printing,custom greeting cards,birthday card printing,thank you cards,holiday cards,3D pop up card,custom card printing,FSC certified card stock,foil stamped greeting cards,event invitation cards,corporate greeting cards,print on demand cards,USA small business cards',
+      en: 'greeting card printing,custom greeting cards,birthday card printing,thank you cards,holiday cards,3D pop up card,custom card printing,FSC-certified card stock,foil stamped greeting cards,event invitation cards,corporate greeting cards,print on demand cards,USA small business cards',
       ja: 'グリーティングカード印刷,オーダー カード,誕生日カード印刷,サンキュカード,ホリデーカード,立体 3D カード,カスタム カード,箔押しカード,FSC 認証カード,オリジナル カード,イベント招待状,法人向け グリーティングカード',
     },
     descriptions: {
       'zh-hk': '賀卡印刷 100 張起印. 節日 / 生日 / 感謝 / 邀請 / 商業 / 立體 3D 賀卡 + 燙金 / UV / 模切 工藝. 順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙 + 30 秒 AI 即時報價.',
-      en: 'Greeting card printing from $0.50 / 100 MOQ. Holiday / birthday / thank you / invitation / corporate / 3D pop-up cards + foil stamping / UV / die-cut finishes. Free shipping over $99 to USA. FSC certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee.',
+      en: 'Greeting card printing from $0.50 / 100 MOQ. Holiday / birthday / thank you / invitation / corporate / 3D pop-up cards + foil stamping / UV / die-cut finishes. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee.',
       ja: 'グリーティングカード印刷 100枚から. 节日・誕生日・サンキュ・招待状・法人向け・立体 3D カード + 箔押し・UV・拔型加工. DHL 国際配送 2-4 日 + FSC 認証 + 30 秒 AI 見積.',
     },
   },
@@ -667,7 +669,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '喜帖印刷 100 套起印. 燙金 / UV / 雕凹 / 模切 工艺 + Save the Date + 答謝卡 + 婚慶節目單 + 婚慶菜單 + 整套配套. 順豐本地 + DHL 全球 + FSC 認證 + 30 秒 AI 即時報價.',
-      en: 'Wedding invitation printing from $1.20 / 50 sets MOQ. Foil / UV / letterpress / die-cut finishes + Save the Date + thank you cards + programs + menus + full suite. Free shipping over $99 to USA. FSC certified + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Wedding invitation printing from $1.20 / 50 sets MOQ. Foil / UV / letterpress / die-cut finishes + Save the Date + thank you cards + programs + menus + full suite. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global.',
       ja: '結婚式招待状印刷 50セットから. 箔押し・UV・活版・拔型仕上げ + Save the Date + サンキュカード + 結婚式のしおり + ウエディング メニュー + フル セット. DHL 国際配送 + FSC 認証 + 30 秒 AI 見積.',
     },
   },
@@ -681,12 +683,12 @@ const categorySeoData: Record<string, {
     },
     keywords: {
       'zh-hk': '台卡印刷,酒水牌印刷,座位卡印刷,名牌卡印刷,席位圖,婚宴台卡,餐廳台卡,咖啡廳台卡,會議名牌,展會名牌,客製台卡,燙金台卡,壓紋台卡,FSC 認證台卡',
-      en: 'place card printing,drink token printing,escort card printing,name tag printing,table card printing,seating chart,wedding place cards,restaurant table cards,café table cards,name badge printing,event badge,custom place cards,foil stamped place cards,FSC certified place cards',
+      en: 'place card printing,drink token printing,escort card printing,name tag printing,table card printing,seating chart,wedding place cards,restaurant table cards,café table cards,name badge printing,event badge,custom place cards,foil stamped place cards,FSC-certified place cards',
       ja: '席札印刷,ドリンクトークン印刷,エスコートカード印刷,名札印刷,テーブルカード印刷,座席表,ウエディング席札,レストラン席札,カフェ席札,イベント名札,オリジナル 席札,箔押し 席札,FSC 認証 席札',
     },
     descriptions: {
       'zh-hk': '台卡 / 酒水牌 / 座位卡 / 名牌卡 印刷 50 張起印. 婚宴 + 餐廳 + 咖啡廳 + 會議 + 展會 全場景覆蓋. 燙金 / 壓紋 / 模切 工艺 + 順豐本地 + DHL 全球 + FSC 認證 + 30 秒 AI 即時報價.',
-      en: 'Place card / drink token / escort card / name tag printing from $0.30 / 50 MOQ. Wedding + restaurant + café + conference + event full-scenario coverage. Foil / embossing / die-cut finishes + Free shipping over $99 to USA + FSC certified + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Place card / drink token / escort card / name tag printing from $0.30 / 50 MOQ. Wedding + restaurant + café + conference + event full-scenario coverage. Foil / embossing / die-cut finishes + Free shipping over $99 to USA + FSC-certified + 30-second AI quote + DHL 2-4 day global.',
       ja: '席札 / ドリンクトークン / エスコートカード / 名札 印刷 50枚から. ウエディング + レストラン + カフェ + 会議 + イベント 全場面カバー. 箔押し・エンボス・拔型 + DHL 国際配送 + FSC 認証 + 30 秒 AI 見積.',
     },
   },

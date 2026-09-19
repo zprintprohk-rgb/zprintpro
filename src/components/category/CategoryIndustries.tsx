@@ -44,9 +44,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'pet_food',
       scenarios: {
-        'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '100 張起印 · 即日打樣'],
+        'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '10 張起印 · 即日打樣'],
         en: ['Waterproof FDA-grade food labels', 'Die-cut shapes for shelf appeal', 'From 100 sheets · same-day proof'],
-        ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '100枚から・即日サンプル'],
+        ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '10枚から・即日サンプル'],
       },
       priority: 0, tier: 'A',
     },
@@ -177,7 +177,7 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
       key: 'apparel',
       scenarios: {
         'zh-hk': ['服飾品牌購物袋 · 白卡/牛皮紙', '燙金 LOGO + 棉繩手挽', '500 個起 · FSC 認證'],
-        en: ['Apparel brand shopping bag · white/kraft card', 'Foil logo + cotton rope handle', 'From 500 · FSC certified'],
+        en: ['Apparel brand shopping bag · white/kraft card', 'Foil logo + cotton rope handle', 'From 500 · FSC-certified'],
         ja: ['アパレルブランドショッパー・白/クラフト', '箔押しロゴ + 綿ロープハンドル', '500枚から・FSC認証'],
       },
       priority: 0, tier: 'A',
@@ -531,7 +531,7 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
       key: 'school_bulk',
       scenarios: {
         'zh-hk': ['學校批量印刷 · 全校教材', 'FSC 認證紙張 · 大豆油墨', 'NET 30 賬期 · 門市打樣'],
-        en: ['School bulk printing · all-grade', 'FSC certified paper · soy ink', 'NET 30 terms · in-store proofs'],
+        en: ['School bulk printing · all-grade', 'FSC-certified paper · soy ink', 'NET 30 terms · in-store proofs'],
         ja: ['学校一括印刷・全校教材', 'FSC認証紙・大豆インク', 'NET 30支払・店頭校正'],
       },
       priority: 2, tier: 'A',

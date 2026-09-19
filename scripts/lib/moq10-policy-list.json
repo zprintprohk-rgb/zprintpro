@@ -1,0 +1,13 @@
+{
+  "_note": "測試用鏡像 — SSoT = src/data/print-method-policy.ts。兩者不同步時 moq10-smoke-test.mjs 會攔下。",
+  "MOQ": 10,
+  "PAPER_GOODS": [
+    "a4-flyers", "a5-flyers", "double-sided-flyers", "folded-leaflets",
+    "thick-paper-flyers", "eco-flyers", "same-day-flyers", "school-flyers",
+    "waterproof-stickers", "transparent-stickers", "removable-stickers", "small-batch-stickers",
+    "die-cut-stickers", "foil-stickers", "security-stickers", "fluorescent-stickers",
+    "premium-greeting-cards", "thick-greeting-cards-400g", "foil-greeting-cards",
+    "spot-uv-greeting-cards", "matte-greeting-cards", "rounded-corner-greeting-cards"
+  ],
+  "TABLE_SLUGS": ["a4-flyers", "a5-flyers", "same-day-flyers", "eco-flyers", "custom-flyers", "waterproof-stickers", "digital-stickers"]
+}

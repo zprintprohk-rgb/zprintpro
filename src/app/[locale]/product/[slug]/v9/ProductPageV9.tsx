@@ -29,7 +29,7 @@ import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlo
 // 查不到 -> fallback 中文原文 (不報錯/不留空); zh-hk 值 = 原文逐字 ⇒ zh-hk 渲染輸出零改動
 import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n';
 // 2026-09-19 K3 裁决 1: v10.1 决策 1-B 展示层 MOQ 口径 (数码线书刊/本册类 5 SKU = 1 本起印)
-import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH } from '@/data/print-method-policy';
+import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isPaperGoodsSmallBatch, PAPER_GOODS_MOQ, PAPER_GOODS_MOQ_AEO, PAPER_GOODS_MOQ_NOTE } from '@/data/print-method-policy';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -342,12 +342,22 @@ export function ProductPageV9({
   // 2026-09-19 K3 裁决 1「1-B 落点修复」: 線上 PDP 的起訂量行由本組件渲染 (非 page.tsx)
   //   数码线书刊/本册类 5 SKU → 展示层改走 getDisplayMinOrder() (1 本起印口径)
   //   其余 SKU 一律维持原本的 minQuantity 数字 (零 churn)
+  // 2026-09-19 全站起訂量修正: 紙品線 (傳單/貼紙/賀卡) 口徑改為 10 張起印。
+  //   `minQuantity` 已由 products.ts 同步改為 10, 此處僅需不再回退成 1 (getDisplayMinOrder
+  //   只認書刊名單, 紙品不在名單內), 故紙品走 PAPER_GOODS_MOQ 的權威常數
+  //   → 口徑 SSoT = src/data/print-method-policy.ts, 與 price-table 小批量檔同源。
   const isDigitalBook = isDigitalLineBook(product.slug);
+  const isPaperGoods = isPaperGoodsSmallBatch(product.slug);
+  const moqForDisplay = isPaperGoods
+    ? String(PAPER_GOODS_MOQ)
+    : isDigitalBook
+      ? getDisplayMinOrder(locale, product.slug, product.minQuantity)
+      : String(product.minQuantity);
   const metaRows: [string, string][] = (t.metaRows as (unit: string) => [string, string][])(displayUnit).map(([v, l]) => [
     v === 'sku_code'
       ? product.sku_code
       : v.includes('{q}')
-        ? (isDigitalBook ? getDisplayMinOrder(locale, product.slug, product.minQuantity) : v.replace('{q}', String(product.minQuantity)))
+        ? v.replace('{q}', moqForDisplay)
         : v.replace('{q}', String(product.minQuantity)),
     l,
   ]);
@@ -467,6 +477,18 @@ export function ProductPageV9({
                 {MOQ_AEO[locale].a}
               </p>
               <p className="text-xs text-amber-800/90 leading-relaxed mt-2">{MOQ_STANDARD_PARAGRAPH[locale]}</p>
+            </div>
+          )}
+
+          {/* 2026-09-19 全站起訂量修正: 紙品線 (傳單/貼紙/賀卡) 10 張起印 AEO 塊
+              口徑與 price-table 小批量檔同源 (開機費 + 隨量遞減單張價), 不含任何競品 MOQ 數字 */}
+          {isPaperGoods && (
+            <div className="mt-4 bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-4">
+              <p className="text-[13.5px] text-emerald-900 leading-relaxed">
+                <span className="font-semibold">⚡ {PAPER_GOODS_MOQ_AEO[locale].q}</span>{' '}
+                {PAPER_GOODS_MOQ_AEO[locale].a}
+              </p>
+              <p className="text-xs text-emerald-800/90 leading-relaxed mt-2">{PAPER_GOODS_MOQ_NOTE[locale]}</p>
             </div>
           )}
 

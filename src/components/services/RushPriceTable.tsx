@@ -10,7 +10,7 @@ export default function RushPriceTable({ locale }: { locale?: string } = {}) {
       <div className={styles.rushInner}>
         <p className={styles.eyebrow}>價格速查</p>
         <h2 className={styles.secTitle}>即日印刷價錢</h2>
-        <p className={styles.priceSub}>100 張起印，參考價以文件複雜度為準。</p>
+        <p className={styles.priceSub}>10 張起印。表列為量產檔參考價；起印量愈低單張愈高，最終以文件複雜度為準。</p>
         <table className={styles.pTable}>
           <thead>
             <tr><th>品類</th><th>起訂量</th><th>標準交期</th><th>通宵交期</th><th>參考價</th></tr>

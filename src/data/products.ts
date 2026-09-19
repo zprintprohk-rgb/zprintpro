@@ -146,7 +146,7 @@ export const products: Product[] = [
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【300g銅版／250g啞粉】高級紙張，挺度與觸感兼具',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -163,7 +163,7 @@ export const products: Product[] = [
     weight_score: 98,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/premium/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -211,6 +211,7 @@ export const products: Product[] = [
         { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
@@ -236,13 +237,13 @@ export const products: Product[] = [
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
     name: '厚卡名片 (400g 起)', nameEn: 'Thick Business Cards (400g+)', nameJa: '厚手名刺印刷 (400g〜)', title_zh: '厚卡名片｜400g 超厚 · 三合一裱貼 · 90×54mm',
-    description: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,100張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.', descriptionEn: 'Thick 400g+ business cards with a substantial premium hand-feel - the standard choice for estate agents, law firms, accountants, design studios and corporate identity. 90x54mm standard business card size, optional triple-layer lamination (700-810g ultra-thick), foil stamping, spot UV, embossing and rounded corners. MOQ 100 pcs, free sample, DHL Express 2-4 day global delivery. **Best for**: real estate / law & accounting / finance & insurance / design & creative / startups / hospitality / retail / e-commerce.', descriptionJa: '400g 超厚名刺、剛性と重厚感が高く、不動産・法律事務所・会計士・デザイン事務所・企業イメージ名刺に最適。90x54mm 標準名刺サイズ、三層貼り合わせ (700-810g 超厚)・箔押し・スポットUV・エンボス・角丸選択可。100枚から、無料サンプル、DHL Express 国際 2-4 日納品。 **適合業種**: 不動産 / 法律・会計 / 金融保険 / デザイン / スタートアップ / ホテル飲食 / 小売 / 越境EC.', description_zh: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,100張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.',
+    description: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.', descriptionEn: 'Thick 400g+ business cards with a substantial premium hand-feel - the standard choice for estate agents, law firms, accountants, design studios and corporate identity. 90x54mm standard business card size, optional triple-layer lamination (700-810g ultra-thick), foil stamping, spot UV, embossing and rounded corners. MOQ 10 pcs, free sample, DHL Express 2-4 day global delivery. **Best for**: real estate / law & accounting / finance & insurance / design & creative / startups / hospitality / retail / e-commerce.', descriptionJa: '400g 超厚名刺、剛性と重厚感が高く、不動産・法律事務所・会計士・デザイン事務所・企業イメージ名刺に最適。90x54mm 標準名刺サイズ、三層貼り合わせ (700-810g 超厚)・箔押し・スポットUV・エンボス・角丸選択可。10枚から、無料サンプル、DHL Express 国際 2-4 日納品。 **適合業種**: 不動産 / 法律・会計 / 金融保険 / デザイン / スタートアップ / ホテル飲食 / 小売 / 越境EC.', description_zh: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.',
     features: [
       '【90×54mm標準名片尺寸】全球通用規格，兼容名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【400g超厚紙】可升級三合一裱貼 700-810g 超厚檔，手感沉穩尊貴',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -259,7 +260,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/thick-400g/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -301,6 +302,7 @@ export const products: Product[] = [
         { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
@@ -340,7 +342,7 @@ export const products: Product[] = [
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【三色燙金】金／銀／玫瑰金，奢華品牌首選',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -357,7 +359,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/foil/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -398,6 +400,7 @@ export const products: Product[] = [
         { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
@@ -437,7 +440,7 @@ export const products: Product[] = [
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【局部UV】20–30微米立體光澤，視覺衝擊強烈',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -454,7 +457,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/spot-uv/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -493,6 +496,7 @@ export const products: Product[] = [
         { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
@@ -532,7 +536,7 @@ export const products: Product[] = [
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【啞膠覆膜】絲滑細膩，指紋反光雙抗性',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -549,7 +553,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/matte/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -590,6 +594,7 @@ export const products: Product[] = [
         { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
@@ -629,7 +634,7 @@ export const products: Product[] = [
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
       '【ICC色彩管理】品牌色還原穩定，批量一致',
       '【R3mm圓角】柔和美觀，邊角不易折損',
-      '【100張起印】小批量數碼可當日取，大量轉柯式',
+      '【10 張起印】小批量數碼可當日取，大量轉柯式',
       '【免費刀模檢查】確保圓角與模切精準',
       '【覆膜保護】啞膠／光膠可選，耐磨防指紋'
     ],
@@ -646,7 +651,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/v26/greeting-cards/rounded-corner/zh-hk/hero.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -681,6 +686,15 @@ export const products: Product[] = [
   },
   
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+    variables: {
+      quantities: [
+        { value: 10, label: '10', discount: 2.35 },
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.7 },
+      ],
+    },
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
     seoDescription: {"zh-hk": "", "en": "", "ja": ""},
     metaTitle: "",
@@ -723,7 +737,7 @@ export const products: Product[] = [
     weight_score: 98,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/waterproof-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -773,6 +787,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -799,7 +814,7 @@ export const products: Product[] = [
         optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '透明貼紙 / 透明貼 訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers / Clear Stickers | Waterproof & Die-Cut', nameJa: '透明ステッカー / 透明 ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼 / 透明貼紙 訂製 · 100張起印',
+    name: '透明貼紙 / 透明貼 訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers / Clear Stickers | Waterproof & Die-Cut', nameJa: '透明ステッカー / 透明 ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼 / 透明貼紙 訂製 · 10 張起印',
     description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。 适配行业: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     features: [
       '高透明 PET 面材，可選白墨打底',
@@ -823,7 +838,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp'],
   imagesByLocale: {
     'zh-hk': [
@@ -863,6 +878,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -904,7 +920,7 @@ export const products: Product[] = [
       '【3–5 次重貼】24 小時初黏測試，平滑面可反覆調整位置',
       '【異形模切】支援任意形狀裁切，活動分區管理更方便',
       '【可變資料】序號／條碼／QR Code，批次追蹤與防偽',
-      '【數碼快印】100 張起印，當日打樣，適合急件與試產',
+      '【數碼快印】10 張起印，當日打樣，適合急件與試產',
       '【覆膜選項】啞膜／光膜，提升耐磨與抗污能力',
     ],
     specs: {
@@ -920,7 +936,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/removable-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -957,6 +973,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -1014,7 +1031,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/small-batch-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -1052,6 +1069,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -1110,7 +1128,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/die-cut-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -1151,6 +1169,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -1208,7 +1227,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/foil-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -1247,6 +1266,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -1304,7 +1324,7 @@ export const products: Product[] = [
     weight_score: 82,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/security-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -1343,6 +1363,7 @@ export const products: Product[] = [
         { value: 'diecut', label: '異形模切', surcharge: 30 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.75 },
         { value: 1000, label: '1000張', discount: 0.6 },
@@ -1384,7 +1405,7 @@ export const products: Product[] = [
       '【SGS 認證】無重金屬遷移，安全用於食品與兒童相關標籤',
       '【反光組合】可搭配反光條紋，提升夜間可見度達 200%',
       '【異形模切】任意形狀裁切，安全標識與促銷標籤皆可',
-      '【數碼快印】100 張起印，當日打樣，急單無憂',
+      '【數碼快印】10 張起印，當日打樣，急單無憂',
       '【高對比建議】印前免費配色建議，確保 6pt 以上文字清晰',
     ],
     specs: {
@@ -1400,7 +1421,7 @@ export const products: Product[] = [
     weight_score: 80,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/fluorescent-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -1431,6 +1452,14 @@ export const products: Product[] = [
   },
   
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+    variables: {
+      quantities: [
+        { value: 10, label: '10', discount: 2.35 },
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+      ],
+    },
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
     seoDescription: {"zh-hk": "", "en": "", "ja": ""},
     metaTitle: "",
@@ -1739,7 +1768,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Eco Paper Bags | Paper Bags & Kraft Bags', nameJa: 'エコ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港',
-    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands. 适配行业: ESG brands, Eco beauty, Organic food, Fair trade, Cafés, Boutiques, Apparel, Gift shops.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。 适配行业: ESG、エコ美容、オーガニック、フェアトレード、カフェ、ブティック、アパレル.', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.',
+    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC-certified · Sustainable packaging for eco-conscious brands. 适配行业: ESG brands, Eco beauty, Organic food, Fair trade, Cafés, Boutiques, Apparel, Gift shops.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。 适配行业: ESG、エコ美容、オーガニック、フェアトレード、カフェ、ブティック、アパレル.', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.',
     features: [
       '可選 FSC 認證與再生紙材',
       '大豆油墨與環保手挽方案',
@@ -2008,8 +2037,8 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港',
-    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 10 張起印 HK$0.3/張 雙面彩印 | 智印港',
+    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2032,7 +2061,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/a4-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2099,8 +2128,8 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港',
-    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 10 張起印 雙面四色 免費設計 | 智印港',
+    description: 'A5傳單印刷訂製，10 張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2123,7 +2152,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/a5-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2216,7 +2245,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/double-sided-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2251,6 +2280,7 @@ export const products: Product[] = [
         { value: 'fold', label: '摺疊', surcharge: 35 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.8 },
         { value: 1000, label: '1000張', discount: 0.65 },
@@ -2286,7 +2316,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: '摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港',
-    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
+    description: '三摺雙摺宣傳單印刷訂製，10 張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2309,7 +2339,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/folded-leaflets.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2400,7 +2430,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/thick-paper-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2433,6 +2463,7 @@ export const products: Product[] = [
         { value: 'fold', label: '摺疊', surcharge: 35 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.8 },
         { value: 1000, label: '1000張', discount: 0.65 },
@@ -2491,7 +2522,7 @@ export const products: Product[] = [
     weight_score: 80,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/eco-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2585,7 +2616,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/same-day-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2753,7 +2784,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/a1-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2792,9 +2823,11 @@ export const products: Product[] = [
         { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
       ],
       quantities: [
-        { value: 100, label: '100張', discount: 1 },
-        { value: 500, label: '500張', discount: 0.85 },
-        { value: 1000, label: '1000張', discount: 0.7 },
+        { value: 1, label: '1張', discount: 1 },
+        { value: 3, label: '3張', discount: 0.86 },
+        { value: 5, label: '5張', discount: 0.77 },
+        { value: 10, label: '10張', discount: 0.64 },
+        { value: 20, label: '20張', discount: 0.55 },
       ],
     },
   seoImages: {
@@ -6664,7 +6697,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
-    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。100 張起印，48 小時香港本地速遞。',
+    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 10 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。10枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。10 張起印，48 小時香港本地速遞。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
       '【四色印刷】封面色彩鮮豔，內頁清晰',
@@ -6687,7 +6720,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/school-flyers.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -6738,6 +6771,7 @@ export const products: Product[] = [
         { value: 'perfect', label: '膠裝', surcharge: 15 },
       ],
       quantities: [
+        { value: 10, label: '10', discount: 2.35 },
         { value: 50, label: '50本', discount: 1 },
         { value: 100, label: '100本', discount: 0.85 },
         { value: 500, label: '500本', discount: 0.7 },

@@ -52,7 +52,7 @@ import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/
 import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
 import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
-import { getPriceTableForSlug, findClosestTierBatch } from '@/lib/price-injector';
+import { getPriceTableForSlug } from '@/lib/price-injector';
 import ReferencePriceBlock from '@/components/pdp/referencepriceblock';
 import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
@@ -97,9 +97,10 @@ export async function generateMetadata({
   
   const rushDescriptions: Record<string, Record<string, string>> = {
     'zh-hk': {
-      'flyers': '傳單印刷印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。滿$500包郵，標準交期。',
+      // 2026-09-19 全站起訂量修正: 傳單/貼紙 100 → 10 張 (紙品線)
+      'flyers': '傳單印刷印刷，A4/A5/A6尺寸、157g銅版紙，10張起訂。滿$500包郵，標準交期。',
       'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。',
-      'stickers': '貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。滿$500包郵，標準交期。',
+      'stickers': '貼紙印刷，防水/PVC/透明材質，10張起訂，支持異形切割。滿$500包郵，標準交期。',
       'books': '畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。滿$500包郵，標準交期。',
       'banners': '易拉寶噴繪，鋁合金支架、高清噴繪，1個起訂。滿$500包郵，標準交期。',
     },
@@ -607,7 +608,17 @@ export default function ProductPage({
 
               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
               {(() => {
-                const hasPriceTable = !!findClosestTierBatch(product.slug, product.minQuantity || 500);
+                /*
+                 * 2026-09-19 修: 原本用 `!!findClosestTierBatch(slug, minQuantity||500)` 判斷,
+                 * 但該函式只要 slug 出現在任何 price table 就回傳物件 —— 即使該 slug
+                 * **沒有** 進 price-data.generated.ts。
+                 * 結果 die-cut-stickers / small-batch-stickers (只在 stickers.json, 而
+                 * stickers.json 未被 gen-price-data 讀取) 兩邊都唔渲染:
+                 *   hasPriceTable=true ⇒ 唔出 QuoteCalculator;
+                 *   getPriceTableForSlug()=null ⇒ 亦唔出 ReferencePriceBlock ⇒ PDP 完全無價!
+                 * 改用 getPriceTableForSlug 作唯一判據 (同下面 render 條件完全一致)。
+                 */
+                const hasPriceTable = !!getPriceTableForSlug(product.slug);
                 if (!hasPriceTable) {
                   return (
                     <div className="mb-5">

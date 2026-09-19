@@ -12,11 +12,56 @@
   "anchor": true,
   "anchorType": "competitor-benchmark",
   "calibratedAt": "2026-07-25",
-  "note": "e-print 特殊尺寸風琴摺公开价 ×0.95",
+  "note": "e-print 特殊尺寸風琴摺公开价 ×0.95 | 2026-09-19 全站起訂量修正: 摺頁加入小批量 modeled 檔 (10/25/50/75/99)。",
   "configs": [
     {
       "config": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
       "tiers": [
+        {
+          "qty": 10,
+          "price": 161,
+          "unit": 16.1,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "price": 229.5,
+          "unit": 9.18,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 50,
+          "price": 305,
+          "unit": 6.1,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 75,
+          "price": 407.5,
+          "unit": 5.43,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 99,
+          "price": 517.5,
+          "unit": 5.23,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
         {
           "qty": 300,
           "eprint_hkd": 1490,
@@ -125,6 +170,51 @@
       "config": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
       "tiers": [
         {
+          "qty": 10,
+          "price": 157,
+          "unit": 15.7,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "price": 223.5,
+          "unit": 8.94,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 50,
+          "price": 296,
+          "unit": 5.92,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 75,
+          "price": 395.5,
+          "unit": 5.27,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 99,
+          "price": 501.5,
+          "unit": 5.07,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
           "qty": 300,
           "eprint_hkd": 1440,
           "sell_hkd": 1368,
@@ -231,6 +321,51 @@
     {
       "config": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
       "tiers": [
+        {
+          "qty": 10,
+          "price": 157,
+          "unit": 15.7,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "price": 223.5,
+          "unit": 8.94,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 50,
+          "price": 296,
+          "unit": 5.92,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 75,
+          "price": 395.5,
+          "unit": 5.27,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 99,
+          "price": 501.5,
+          "unit": 5.07,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
         {
           "qty": 300,
           "eprint_hkd": 1440,
@@ -339,6 +474,51 @@
       "config": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
       "tiers": [
         {
+          "qty": 10,
+          "price": 170,
+          "unit": 17,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 25,
+          "price": 244,
+          "unit": 9.76,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 50,
+          "price": 325.5,
+          "unit": 6.51,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 75,
+          "price": 436.5,
+          "unit": 5.82,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
+          "qty": 99,
+          "price": 555,
+          "unit": 5.61,
+          "src": "modeled-small-batch",
+          "note": "數碼小批量模擬檔 (開機費 HK$50 + 隨量遞減單張價); 待工廠實詢校準",
+          "calibratedAt": "待校準",
+          "setupFeeHKD": 50
+        },
+        {
           "qty": 300,
           "eprint_hkd": 1610,
           "sell_hkd": 1530,
@@ -442,5 +622,6 @@
         }
       ]
     }
-  ]
+  ],
+  "smallBatchModelSrc": "modeled-small-batch"
 }

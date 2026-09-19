@@ -19,7 +19,7 @@ const WA_NUMBER = '8619880851334';
 
 const TEXTS = {
   'zh-hk': {
-    answer: '30 秒 AI 即時報價，100 張起印，18:00 前落單翌日中午前送到，WhatsApp 即時回覆。',
+    answer: '30 秒 AI 即時報價，傳單／貼紙 10 張起印，18:00 前落單翌日中午前送到，WhatsApp 即時回覆。',
     cta: '獲取報價',
     waText: '你好，我想咨詢印刷報價',
     title: '主營品類',
@@ -33,7 +33,7 @@ const TEXTS = {
     ],
   },
   en: {
-    answer: 'Get a 30-second AI quote, print from 100 pcs, order before 6pm for next-day noon delivery. WhatsApp instant reply.',
+    answer: 'Get a 30-second AI quote, flyers & stickers from 10 pcs, order before 6pm for next-day noon delivery. WhatsApp instant reply.',
     cta: 'Get Quote',
     waText: 'Hi, I would like a printing quote',
     title: 'Main Categories',
@@ -47,7 +47,7 @@ const TEXTS = {
     ],
   },
   ja: {
-    answer: '30秒でAI即時見積もり、100枚〜対応、18:00締切で翌日正午までにお届け。WhatsAppで即返信。',
+    answer: '30秒でAI即時見積もり、チラシ・ステッカーは10枚から、18:00締切で翌日正午までにお届け。WhatsAppで即返信。',
     cta: '無料お見積もり',
     waText: 'こんにちは、印刷の見積もりをお願いします',
     title: '主なカテゴリー',

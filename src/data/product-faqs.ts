@@ -13,9 +13,10 @@ export const stickersFAQs: FAQItem[] = [
       'ja': 'シール印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印港提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定製，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
-      'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 100 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. See our Complete Sticker Printing Guide for details.',
-      'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは100枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。詳しくは「シール印刷完全ガイド」をご覧ください。',
+      // 2026-09-19 全站起訂量修正: 貼紙 100 → 10 張 (紙品線, 與 price-table 小批量檔同源)
+      'zh-hk': '智印港提供少批量貼紙印刷服務，最低10張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定製，適合初創品牌與產品包裝測試。10 張屬打樣性質，單張單價較高；量產檔位（100 張以上）單張明顯較平。詳情請參閱《貼紙印刷完全指南》。',
+      'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 10 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. A 10-piece run is a proofing quantity with a higher unit price; from 100 pieces the unit price drops clearly. See our Complete Sticker Printing Guide for details.',
+      'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは10枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。10枚はサンプル的な数量のため1枚単価は高め、100枚以上で単価が明確に下がります。詳しくは「シール印刷完全ガイド」をご覧ください。',
     },
   },
   {
@@ -37,9 +38,9 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '少ロットのシール印刷は即日対応可能ですか？',
     },
     answer: {
-      'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（100-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
-      'en': 'Yes. Small-batch sticker printing (100-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then 2-4 business day delivery to US addresses via DHL / FedEx.',
-      'ja': 'はい。少ロットシール印刷（100〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExで日本全国へ2〜4日でお届けします。',
+      'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（10-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
+      'en': 'Yes. Small-batch sticker printing (10-500 pcs) is available with rush production. Confirm your artwork before 12 PM (HKT) for same-day production at our Asia facility, then 2-4 business day delivery to US addresses via DHL / FedEx.',
+      'ja': 'はい。少ロットシール印刷（10〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExで日本全国へ2〜4日でお届けします。',
     },
   },
   {
@@ -309,7 +310,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
     },
     answer: {
       'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，100 個起印、免費 2 小時打稿、WhatsApp 即時報價。',
-      'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
+      'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC-certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
       'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
     },
   },

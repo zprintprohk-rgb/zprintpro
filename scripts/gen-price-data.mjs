@@ -149,6 +149,25 @@ const posters = loadJSON('posters.json');
 const posterConfigs = posters.configs.map(c => ({ label: L(c.config), tiers: normTiers(c.tiers) }));
 map['a2-posters'] = { source: 'posters.json (B2 digital ×3-stage formula)', productName: { 'zh-hk': 'A2海報', en: 'A2 Poster', ja: 'A2ポスター' }, defaultConfigIndex: 0, configs: posterConfigs };
 
+/*
+ * 9b. A1 海報 — 2026-09-19 K3 路線圖 P0-2「A1 海報獨立 minQuantity = 1 + 獨立價階」
+ *   背景: posters.json 一直有 2 個 A1 config (PP/環保海報 Yupo + 相紙海報, 均為噴繪成品),
+ *     但 **從未映射進 generated** ⇒ a1-posters 的 PDP 完全沒有 price table,
+ *     且 minQuantity=100 (與「A1 一張起印」的市場實況及 seo.ts 既有「1 張起印」口徑矛盾)。
+ *   本次: 獨立成 a1-posters 條目 (只取 A1 兩個 config), 並由
+ *     scripts/moq10-add-a1-ladder.mjs 在 JSON 加入 qty=1/3/5/7 的 modeled 起印檔。
+ */
+const a1PosterConfigs = posters.configs
+  .filter(c => String(c.config).includes('A1'))
+  .map(c => ({ label: L(c.config), tiers: normTiers(c.tiers) }));
+if (!a1PosterConfigs.length) throw new Error('posters.json 找不到 A1 config — A1 映射失敗');
+map['a1-posters'] = {
+  source: 'posters.json (A1 inkjet ×modeled 起印階梯)',
+  productName: { 'zh-hk': 'A1海報', en: 'A1 Poster', ja: 'A1ポスター' },
+  defaultConfigIndex: 0,
+  configs: a1PosterConfigs,
+};
+
 
 // Write output as compact JSON for each slug
 function ser(obj, indent = 2) {
@@ -172,14 +191,27 @@ function serUnitAnchors(map) {
       if (t.priceUSD / t.qty < bestUSD.ppu) bestUSD = { ppu: t.priceUSD / t.qty, qty: t.qty, batch: t.priceUSD };
       if (t.priceJPY / t.qty < bestJPY.ppu) bestJPY = { ppu: t.priceJPY / t.qty, qty: t.qty, batch: t.priceJPY };
     });
+    /*
+     * 2026-09-19 修正 (全站起訂量修正配套):
+     *   `priceDisplay` = 最低單價 (headline「HK$x/張起」) — 語意不變。
+     *   `qty` / `batchPrice` 語意是「起批量 + 該批量整批價」(見 pricing.ts getDisplayAnchor
+     *   的 sub = `${qty}張起批 · 整批 ${batch}`), 原文誤取「最低單價檔」的 qty。
+     *   加入 10 張小批量檔後會產生自相矛盾: 「HK$0.14/張起 · 10張起批 · 整批 HK$686」
+     *   (10 張的整批價實為 HK$80) ⇒ 改為一律取「最低數量檔」, 與起批量語意一致。
+     */
+    const minQty = Math.min(...cfg.tiers.map(t => t.qty));
+    const atMin = (k) => cfg.tiers.find(t => t.qty === minQty)?.[k] ?? 0;
+    const minBatchHKD = atMin('priceHKD');
+    const minBatchUSD = atMin('priceUSD');
+    const minBatchJPY = atMin('priceJPY');
     const fmt = v => v < 1 ? v.toFixed(2) : v < 10 ? v.toFixed(1) : Math.round(v).toString();
     const uw = sheets.includes(slug) ? { 'zh-hk': '每張', en: 'per sheet', ja: '1枚' }
       : books.includes(slug) ? { 'zh-hk': '每本', en: 'per book', ja: '1冊' }
       : { 'zh-hk': '每個', en: 'per pc', ja: '1個' };
     lines.push(`  '${slug}': {`);
-    lines.push(`    'zh-hk': { priceDisplay: '${fmt(bestHKD.ppu)}', qty: ${bestHKD.qty}, batchPrice: ${bestHKD.batch}, unitLabel: '${uw['zh-hk']}' },`);
-    lines.push(`    en: { priceDisplay: '${fmt(bestUSD.ppu)}', qty: ${bestUSD.qty}, batchPrice: ${bestUSD.batch}, unitLabel: '${uw.en}' },`);
-    lines.push(`    ja: { priceDisplay: '${fmt(bestJPY.ppu)}', qty: ${bestJPY.qty}, batchPrice: ${bestJPY.batch}, unitLabel: '${uw.ja}' },`);
+    lines.push(`    'zh-hk': { priceDisplay: '${fmt(bestHKD.ppu)}', qty: ${minQty}, batchPrice: ${minBatchHKD}, unitLabel: '${uw['zh-hk']}' },`);
+    lines.push(`    en: { priceDisplay: '${fmt(bestUSD.ppu)}', qty: ${minQty}, batchPrice: ${minBatchUSD}, unitLabel: '${uw.en}' },`);
+    lines.push(`    ja: { priceDisplay: '${fmt(bestJPY.ppu)}', qty: ${minQty}, batchPrice: ${minBatchJPY}, unitLabel: '${uw.ja}' },`);
     lines.push('  },');
   }
   return lines.join('\n');
@@ -226,7 +258,11 @@ export function findClosestTierBatch(
 /* ---------- 寫盤前斷言 (§12 三件套: 計數斷言 + 結果形狀斷言 + 備份; 未過不得寫盤) ---------- */
 const CJK_RE = /[\u3400-\u4dbf\u4e00-\u9fff]/;
 const KANA_RE = /[\u3040-\u30ff]/;
-const EXPECT = { slugs: 18, nameBlocks: 18, labelBlocks: 114 };
+/*
+ * 計數斷言 (改動時必須同步, 否則寫盤前即攔下 — 2026-09-19 已實測攔截 A1 新增)
+ *   2026-09-19: slug 18 → 19 (+a1-posters, K3 路線圖 P0-2)、label 114 → 116 (+2 個 A1 config)
+ */
+const EXPECT = { slugs: 19, nameBlocks: 19, labelBlocks: 116 };
 
 function assertLocalized() {
   const bad = [];

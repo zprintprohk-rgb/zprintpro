@@ -36,9 +36,9 @@ const translations = {
     fromPrice: '低至',
     // zh-hk 定位: 香港本地印刷服務 · 即日急件 · 港九新界速遞 · WhatsApp 中文客服
     slides: [
-      { title: '即日印刷・即日急件 — 今晚 6 點前落單，聽日中午 12 點前到', subtitle: '傳單 / 海報 / 貼紙 100 張起印 · 順豐翌日中午前送達 · WhatsApp 30 秒報價', price: '18:00 截單', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
+      { title: '即日印刷・即日急件 — 今晚 6 點前落單，聽日中午 12 點前到', subtitle: '傳單 / 海報 / 貼紙 10 張起印 · 順豐翌日中午前送達 · WhatsApp 30 秒報價', price: '18:00 截單', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
       { title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4 傳單印刷 · 即日可取', subtitle: '128-200g 銅版紙 · 雙面 CMYK · 500 張起印 · 上門收送稿服務', price: 'HK$0.3 起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
+      { title: 'A4 傳單印刷 · 即日可取', subtitle: '128-200g 銅版紙 · 雙面 CMYK · 10 張起印 · 上門收送稿服務', price: 'HK$0.3 起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
       { title: '防水貼紙 · 適用任何表面', subtitle: 'UV 防水材質 · 任意形狀模切 · 戶外耐候 3-5 年 · 全港配送上門', price: 'HK$0.5 起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
       { title: '精裝盒定製 · 提升品牌', subtitle: '燙金 · UV · 擊凸 · 100 個起訂 · 免費排版設計', price: 'HK$8 起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/rigid-boxes/' },
       { title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$15 起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },

@@ -21,6 +21,7 @@ import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-re
 import { trackQuoteStart, trackQuoteSubmit, trackContactFormSubmit, trackCalculatorInteraction, trackWhatsappClick } from '@/lib/analytics';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { useProductQuote } from './ProductQuoteProvider';
+import { getPrintMethodAdvice } from '@/data/print-method-policy';
 
 interface QuoteCalculatorProps {
   product: Product;
@@ -253,6 +254,19 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   const hasMaterials = product.variables?.materials && product.variables.materials.length > 0;
   const hasFinishings = product.variables?.finishings && product.variables.finishings.length > 0;
   const hasQuantities = product.variables?.quantities && product.variables.quantities.length > 0;
+
+  /*
+   * P2-6 傳統膠印軟分流 (K3 2026-09-19 路線圖)
+   *   「軟」= 只提示, 不改價、不阻擋落單。規則集中於 print-method-policy.ts:
+   *     <100  → 數碼 (未達膠印起訂量)
+   *     100-199 → 過渡區, 建議數碼 + 提示加到 200 走膠印更平
+   *     >=200 → 建議膠印
+   *   僅對紙品線與數碼線書刊生效, 其他品類回 null (不顯示)。
+   */
+  const printMethodAdvice = useMemo(
+    () => getPrintMethodAdvice(product.slug, config.quantity),
+    [product.slug, config.quantity],
+  );
 
   // 获取当前选中的标签名（含多语言翻译）
   const getSelectedLabel = (type: 'sizes' | 'materials' | 'finishings' | 'quantities', value: string | number) => {
@@ -513,6 +527,30 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
               );
             })}
           </div>
+        </div>
+      )}
+
+      {/* P2-6 傳統膠印軟分流提示 (只提示, 不改價不阻擋落單)
+          位置: 價格區塊之上, 令客戶在睇價前先知道「呢個量應該走邊條線」 */}
+      {printMethodAdvice && (
+        <div
+          className={`mb-4 rounded-xl border px-4 py-3 text-[13px] leading-relaxed ${
+            printMethodAdvice.recommended === 'offset'
+              ? 'border-blue-200 bg-blue-50 text-blue-900'
+              : printMethodAdvice.isCrossover
+                ? 'border-amber-200 bg-amber-50 text-amber-900'
+                : 'border-emerald-200 bg-emerald-50 text-emerald-900'
+          }`}
+          data-testid="print-method-advice"
+          data-recommended={printMethodAdvice.recommended}
+        >
+          <span className="font-semibold mr-1.5">
+            {printMethodAdvice.recommended === 'offset'
+              ? (locale === 'zh-hk' ? '柯式膠印' : locale === 'ja' ? 'オフセット印刷' : 'Offset')
+              : (locale === 'zh-hk' ? '數碼印刷' : locale === 'ja' ? 'デジタル印刷' : 'Digital')}
+            {' · '}
+          </span>
+          {printMethodAdvice.note[locale]}
         </div>
       )}
 

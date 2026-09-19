@@ -29,12 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     en: {
       title: 'Printing Services: Stickers, Flyers, Packaging | ZprintPro',
       description:
-        'Custom stickers, flyers, packaging & paper bags for US small business. Free shipping $99+, free design & mockup, 100 MOQ, 72-hour turnaround. Get your 30-second quote!',
+        'Custom stickers & flyers from 10 pcs, packaging & paper bags for US small business. Free shipping $99+, free design & mockup, 72-hour turnaround. Get your 30-second quote!',
     },
     ja: {
       title: '印刷サービス | ステッカー・チラシ・パッケージ・紙袋 | ZprintPro',
       description:
-        'ステッカー、チラシ、パッケージ、紙袋のオリジナル印刷。無料デザイン、小ロット100枚〜、72時間出荷、日本全国へ2-4日配送。30秒オンライン見積もり！',
+        'ステッカー、チラシ、パッケージ、紙袋のオリジナル印刷。無料デザイン、ステッカー・チラシは10枚〜、72時間出荷、日本全国へ2-4日配送。30秒オンライン見積もり！',
     },
   };
 
@@ -64,7 +64,7 @@ const serviceCards: ServiceCard[] = [
       en: 'Waterproof, clear, foil & security labels for packaging and branding.',
       ja: '防水・透明・箔押し・セキュリティラベルなど、パッケージやブランディングに。',
     },
-    meta: { 'zh-hk': '100 張起訂 · 72h 出貨', en: 'From 100 pcs · 72h turnaround', ja: '100枚〜 · 72時間出荷' },
+    meta: { 'zh-hk': '10 張起訂 · 72h 出貨', en: 'Stickers from 10 pcs · 72h turnaround', ja: '10枚〜 · 72時間出荷' },
   },
   {
     href: (l) => `/${l}/category/flyers/`,
@@ -74,7 +74,7 @@ const serviceCards: ServiceCard[] = [
       en: 'A5/A4 flyers, folded leaflets & thick cardstock for promos, openings and events.',
       ja: 'A5/A4チラシ、折りリーフレット、厚紙チラシ。販促・開業・イベント配布に。',
     },
-    meta: { 'zh-hk': '100 張起訂 · 72h 出貨', en: 'From 100 pcs · 72h turnaround', ja: '100枚〜 · 72時間出荷' },
+    meta: { 'zh-hk': '10 張起訂 · 72h 出貨', en: 'Flyers from 10 pcs · 72h turnaround', ja: '10枚〜 · 72時間出荷' },
   },
   {
     href: (l) => `/${l}/category/packaging/`,
@@ -239,9 +239,11 @@ const categories: Array<{ slug: string; name: L3 }> = [
 ];
 
 const heroBadges: Record<string, string[]> = {
-  'zh-hk': ['30 秒 AI 報價', '免費設計', '100 起訂', '72 小時出貨'],
-  en: ['Free Shipping $99+', 'Free Design & Mockup', '100 MOQ', '72h Turnaround'],
-  ja: ['無料デザイン', '100枚〜小ロット', '72時間出荷', '日本全国配送'],
+  // 2026-09-19: 本頁涵蓋貼紙/傳單(10) + 包裝盒/紙袋(100+), 故徽章改用「小批量友善」
+  //   而唔寫死單一 MOQ 數字, 避免任何品類對不上。
+  'zh-hk': ['30 秒 AI 報價', '免費設計', '小批量友善', '72 小時出貨'],
+  en: ['Free Shipping $99+', 'Free Design & Mockup', 'Low MOQ Welcome', '72h Turnaround'],
+  ja: ['無料デザイン', '小ロット対応', '72時間出荷', '日本全国配送'],
 };
 
 export default function ServicesPage({ params }: Props) {

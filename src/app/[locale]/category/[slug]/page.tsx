@@ -208,7 +208,8 @@ export default function CategoryPage({
     },
     'greeting-cards': {
       'zh-hk': '香港燙金賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
-      'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
+      // 2026-09-19 全站起訂量修正: 賀卡 100 → 10 張 (紙品線)
+      'en': 'Greeting Cards Free Shipping · 10 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
       'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,

@@ -2340,6 +2340,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.23
+        },
+        {
           "qty": 50,
           "priceHKD": 73,
           "priceUSD": 9,
@@ -2383,6 +2397,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "HP indigo 6Kデジタルラベル-厚白台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 118,
+          "priceUSD": 15,
+          "priceJPY": 2360,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 141,
+          "priceUSD": 18,
+          "priceJPY": 2820,
+          "weightKg": 0.23
+        },
         {
           "qty": 50,
           "priceHKD": 144,
@@ -2428,6 +2456,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 123,
+          "priceUSD": 16,
+          "priceJPY": 2460,
+          "weightKg": 0.12
+        },
+        {
+          "qty": 25,
+          "priceHKD": 151,
+          "priceUSD": 19,
+          "priceJPY": 3020,
+          "weightKg": 0.3
+        },
+        {
           "qty": 50,
           "priceHKD": 155,
           "priceUSD": 20,
@@ -2472,6 +2514,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 132,
+          "priceUSD": 17,
+          "priceJPY": 2640,
+          "weightKg": 0.18
+        },
+        {
+          "qty": 25,
+          "priceHKD": 169,
+          "priceUSD": 22,
+          "priceJPY": 3380,
+          "weightKg": 0.45
+        },
+        {
           "qty": 50,
           "priceHKD": 173,
           "priceUSD": 22,
@@ -2515,6 +2571,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "ロール/シートラベル-グリッド台紙/アート紙（ホットメルト）-150X100-片面-型抜き[異形],ロール[巻芯径4cm][繰り出し方向横位置左出し][巻あたり枚数1000],ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 55,
+          "priceUSD": 7,
+          "priceJPY": 1100,
+          "weightKg": 0.03
+        },
+        {
+          "qty": 25,
+          "priceHKD": 58,
+          "priceUSD": 7,
+          "priceJPY": 1160,
+          "weightKg": 0.08
+        },
+        {
+          "qty": 50,
+          "priceHKD": 61,
+          "priceUSD": 8,
+          "priceJPY": 1220,
+          "weightKg": 0.16
+        },
+        {
+          "qty": 75,
+          "priceHKD": 66,
+          "priceUSD": 8,
+          "priceJPY": 1320,
+          "weightKg": 0.24
+        },
+        {
+          "qty": 99,
+          "priceHKD": 70,
+          "priceUSD": 9,
+          "priceJPY": 1400,
+          "weightKg": 0.32
+        },
         {
           "qty": 3000,
           "priceHKD": 610,
@@ -2543,6 +2634,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.23
+        },
+        {
           "qty": 50,
           "priceHKD": 73,
           "priceUSD": 9,
@@ -2586,6 +2691,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "HP indigo 6Kデジタルラベル-厚白台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 118,
+          "priceUSD": 15,
+          "priceJPY": 2360,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 141,
+          "priceUSD": 18,
+          "priceJPY": 2820,
+          "weightKg": 0.23
+        },
         {
           "qty": 50,
           "priceHKD": 144,
@@ -2631,6 +2750,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 123,
+          "priceUSD": 16,
+          "priceJPY": 2460,
+          "weightKg": 0.12
+        },
+        {
+          "qty": 25,
+          "priceHKD": 151,
+          "priceUSD": 19,
+          "priceJPY": 3020,
+          "weightKg": 0.3
+        },
+        {
           "qty": 50,
           "priceHKD": 155,
           "priceUSD": 20,
@@ -2674,6 +2807,20 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X297-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 132,
+          "priceUSD": 17,
+          "priceJPY": 2640,
+          "weightKg": 0.18
+        },
+        {
+          "qty": 25,
+          "priceHKD": 169,
+          "priceUSD": 22,
+          "priceJPY": 3380,
+          "weightKg": 0.45
+        },
         {
           "qty": 50,
           "priceHKD": 173,
@@ -2719,6 +2866,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 55,
+          "priceUSD": 7,
+          "priceJPY": 1100,
+          "weightKg": 0.03
+        },
+        {
+          "qty": 25,
+          "priceHKD": 58,
+          "priceUSD": 7,
+          "priceJPY": 1160,
+          "weightKg": 0.08
+        },
+        {
+          "qty": 50,
+          "priceHKD": 61,
+          "priceUSD": 8,
+          "priceJPY": 1220,
+          "weightKg": 0.16
+        },
+        {
+          "qty": 75,
+          "priceHKD": 66,
+          "priceUSD": 8,
+          "priceJPY": 1320,
+          "weightKg": 0.24
+        },
+        {
+          "qty": 99,
+          "priceHKD": 70,
+          "priceUSD": 9,
+          "priceJPY": 1400,
+          "weightKg": 0.32
+        },
+        {
           "qty": 3000,
           "priceHKD": 610,
           "priceUSD": 78,
@@ -2745,6 +2927,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "A5 (210x148mm) 157gマットコート紙 両面カラー"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 98,
+          "priceUSD": 13,
+          "priceJPY": 1960,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 118,
+          "priceUSD": 15,
+          "priceJPY": 2360,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 122,
+          "priceUSD": 16,
+          "priceJPY": 2440,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 122,
+          "priceUSD": 16,
+          "priceJPY": 2440,
+          "weightKg": null
+        },
         {
           "qty": 100,
           "priceHKD": 125,
@@ -2822,6 +3039,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 140,
+          "priceUSD": 18,
+          "priceJPY": 2800,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 195,
+          "priceUSD": 25,
+          "priceJPY": 3900,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 255,
+          "priceUSD": 33,
+          "priceJPY": 5100,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 338,
+          "priceUSD": 43,
+          "priceJPY": 6760,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 372,
+          "priceUSD": 48,
+          "priceJPY": 7440,
+          "weightKg": null
+        },
+        {
           "qty": 100,
           "priceHKD": 380,
           "priceUSD": 49,
@@ -2883,6 +3135,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "A4 / A5 両面 128g 光沢/マットコート紙 (急ぎ標準) カラー 両面"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 184,
+          "priceUSD": 24,
+          "priceJPY": 3680,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 267,
+          "priceUSD": 34,
+          "priceJPY": 5340,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 358,
+          "priceUSD": 46,
+          "priceJPY": 7160,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 482,
+          "priceUSD": 62,
+          "priceJPY": 9640,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 558,
+          "priceUSD": 71,
+          "priceJPY": 11160,
+          "weightKg": null
+        },
         {
           "qty": 100,
           "priceHKD": 570,
@@ -2953,6 +3240,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 98,
+          "priceUSD": 13,
+          "priceJPY": 1960,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 119,
+          "priceUSD": 15,
+          "priceJPY": 2380,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 146,
+          "priceUSD": 19,
+          "priceJPY": 2920,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 176,
+          "priceUSD": 23,
+          "priceJPY": 3520,
+          "weightKg": null
+        },
+        {
           "qty": 300,
           "priceHKD": 380,
           "priceUSD": 49,
@@ -2986,6 +3308,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "A4 8P 中綴じ"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 179,
+          "priceUSD": 23,
+          "priceJPY": 3580,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 346,
+          "priceUSD": 44,
+          "priceJPY": 6920,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 545,
+          "priceUSD": 70,
+          "priceJPY": 10900,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 738,
+          "priceUSD": 94,
+          "priceJPY": 14760,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 922,
+          "priceUSD": 118,
+          "priceJPY": 18440,
+          "weightKg": null
+        },
         {
           "qty": 100,
           "priceHKD": 941,
@@ -3056,6 +3413,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 308,
+          "priceUSD": 39,
+          "priceJPY": 6160,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 597,
+          "priceUSD": 76,
+          "priceJPY": 11940,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 942,
+          "priceUSD": 121,
+          "priceJPY": 18840,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 1275,
+          "priceUSD": 163,
+          "priceJPY": 25500,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 1592,
+          "priceUSD": 204,
+          "priceJPY": 31840,
+          "weightKg": null
+        },
+        {
           "qty": 100,
           "priceHKD": 1624,
           "priceUSD": 208,
@@ -3125,6 +3517,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 53,
+          "priceUSD": 7,
+          "priceJPY": 1060,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 104,
+          "priceUSD": 13,
+          "priceJPY": 2080,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 164,
+          "priceUSD": 21,
+          "priceJPY": 3280,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 222,
+          "priceUSD": 28,
+          "priceJPY": 4440,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 281,
+          "priceUSD": 36,
+          "priceJPY": 5620,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 1414,
           "priceUSD": 181,
@@ -3179,6 +3606,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "ジャバラ折り 594x210→A5 3山 光沢コート紙157g 両面"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 161,
+          "priceUSD": 21,
+          "priceJPY": 3220,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 230,
+          "priceUSD": 29,
+          "priceJPY": 4600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 305,
+          "priceUSD": 39,
+          "priceJPY": 6100,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 408,
+          "priceUSD": 52,
+          "priceJPY": 8160,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 518,
+          "priceUSD": 66,
+          "priceJPY": 10360,
+          "weightKg": null
+        },
         {
           "qty": 300,
           "priceHKD": 1416,
@@ -3308,6 +3770,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 157,
+          "priceUSD": 20,
+          "priceJPY": 3140,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 224,
+          "priceUSD": 29,
+          "priceJPY": 4480,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 296,
+          "priceUSD": 38,
+          "priceJPY": 5920,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 396,
+          "priceUSD": 51,
+          "priceJPY": 7920,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 502,
+          "priceUSD": 64,
+          "priceJPY": 10040,
+          "weightKg": null
+        },
+        {
           "qty": 300,
           "priceHKD": 1368,
           "priceUSD": 175,
@@ -3436,6 +3933,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 157,
+          "priceUSD": 20,
+          "priceJPY": 3140,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 224,
+          "priceUSD": 29,
+          "priceJPY": 4480,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 296,
+          "priceUSD": 38,
+          "priceJPY": 5920,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 396,
+          "priceUSD": 51,
+          "priceJPY": 7920,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 502,
+          "priceUSD": 64,
+          "priceJPY": 10040,
+          "weightKg": null
+        },
+        {
           "qty": 300,
           "priceHKD": 1368,
           "priceUSD": 175,
@@ -3563,6 +4095,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "ジャバラ折り 210x444→A5 2山 書籍用紙100g 両面"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 170,
+          "priceUSD": 22,
+          "priceJPY": 3400,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 244,
+          "priceUSD": 31,
+          "priceJPY": 4880,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 326,
+          "priceUSD": 42,
+          "priceJPY": 6520,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 437,
+          "priceUSD": 56,
+          "priceJPY": 8740,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 555,
+          "priceUSD": 71,
+          "priceJPY": 11100,
+          "weightKg": null
+        },
         {
           "qty": 300,
           "priceHKD": 1530,
@@ -3703,6 +4270,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 161,
+          "priceUSD": 21,
+          "priceJPY": 3220,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 230,
+          "priceUSD": 29,
+          "priceJPY": 4600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 305,
+          "priceUSD": 39,
+          "priceJPY": 6100,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 408,
+          "priceUSD": 52,
+          "priceJPY": 8160,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 518,
+          "priceUSD": 66,
+          "priceJPY": 10360,
+          "weightKg": null
+        },
+        {
           "qty": 300,
           "priceHKD": 1416,
           "priceUSD": 181,
@@ -3830,6 +4432,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙157g 両面"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 157,
+          "priceUSD": 20,
+          "priceJPY": 3140,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 224,
+          "priceUSD": 29,
+          "priceJPY": 4480,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 296,
+          "priceUSD": 38,
+          "priceJPY": 5920,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 396,
+          "priceUSD": 51,
+          "priceJPY": 7920,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 502,
+          "priceUSD": 64,
+          "priceJPY": 10040,
+          "weightKg": null
+        },
         {
           "qty": 300,
           "priceHKD": 1368,
@@ -3959,6 +4596,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 157,
+          "priceUSD": 20,
+          "priceJPY": 3140,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 224,
+          "priceUSD": 29,
+          "priceJPY": 4480,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 296,
+          "priceUSD": 38,
+          "priceJPY": 5920,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 396,
+          "priceUSD": 51,
+          "priceJPY": 7920,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 502,
+          "priceUSD": 64,
+          "priceJPY": 10040,
+          "weightKg": null
+        },
+        {
           "qty": 300,
           "priceHKD": 1368,
           "priceUSD": 175,
@@ -4086,6 +4758,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "ジャバラ折り 210x444→A5 2山 書籍用紙100g 両面"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 170,
+          "priceUSD": 22,
+          "priceJPY": 3400,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 244,
+          "priceUSD": 31,
+          "priceJPY": 4880,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 326,
+          "priceUSD": 42,
+          "priceJPY": 6520,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 437,
+          "priceUSD": 56,
+          "priceJPY": 8740,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 555,
+          "priceUSD": 71,
+          "priceJPY": 11100,
+          "weightKg": null
+        },
         {
           "qty": 300,
           "priceHKD": 1530,
@@ -4226,6 +4933,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 93,
+          "priceUSD": 12,
+          "priceJPY": 1860,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 110,
+          "priceUSD": 14,
+          "priceJPY": 2200,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 128,
+          "priceUSD": 16,
+          "priceJPY": 2560,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 394,
           "priceUSD": 50,
@@ -4269,6 +5011,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-大判32判140X210-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 81,
+          "priceUSD": 10,
+          "priceJPY": 1620,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 93,
+          "priceUSD": 12,
+          "priceJPY": 1860,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 111,
+          "priceUSD": 14,
+          "priceJPY": 2220,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 129,
+          "priceUSD": 17,
+          "priceJPY": 2580,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 400,
@@ -4314,6 +5091,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 81,
+          "priceUSD": 10,
+          "priceJPY": 1620,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 94,
+          "priceUSD": 12,
+          "priceJPY": 1880,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 112,
+          "priceUSD": 14,
+          "priceJPY": 2240,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 131,
+          "priceUSD": 17,
+          "priceJPY": 2620,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 406,
           "priceUSD": 52,
@@ -4357,6 +5169,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 81,
+          "priceUSD": 10,
+          "priceJPY": 1620,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 94,
+          "priceUSD": 12,
+          "priceJPY": 1880,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 112,
+          "priceUSD": 14,
+          "priceJPY": 2240,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 131,
+          "priceUSD": 17,
+          "priceJPY": 2620,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 409,
@@ -4402,6 +5249,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 70,
+          "priceUSD": 9,
+          "priceJPY": 1400,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 82,
+          "priceUSD": 10,
+          "priceJPY": 1640,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 96,
+          "priceUSD": 12,
+          "priceJPY": 1920,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 114,
+          "priceUSD": 15,
+          "priceJPY": 2280,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 134,
+          "priceUSD": 17,
+          "priceJPY": 2680,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 422,
           "priceUSD": 54,
@@ -4445,6 +5327,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 81,
+          "priceUSD": 10,
+          "priceJPY": 1620,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 94,
+          "priceUSD": 12,
+          "priceJPY": 1880,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 111,
+          "priceUSD": 14,
+          "priceJPY": 2220,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 130,
+          "priceUSD": 17,
+          "priceJPY": 2600,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 402,
@@ -4490,6 +5407,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 93,
+          "priceUSD": 12,
+          "priceJPY": 1860,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 110,
+          "priceUSD": 14,
+          "priceJPY": 2200,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 128,
+          "priceUSD": 16,
+          "priceJPY": 2560,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 393,
           "priceUSD": 50,
@@ -4534,6 +5486,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 68,
+          "priceUSD": 9,
+          "priceJPY": 1360,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 79,
+          "priceUSD": 10,
+          "priceJPY": 1580,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 91,
+          "priceUSD": 12,
+          "priceJPY": 1820,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 108,
+          "priceUSD": 14,
+          "priceJPY": 2160,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 125,
+          "priceUSD": 16,
+          "priceJPY": 2500,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 380,
           "priceUSD": 49,
@@ -4577,6 +5564,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-上質紙[100g]-210X148-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 92,
+          "priceUSD": 12,
+          "priceJPY": 1840,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 109,
+          "priceUSD": 14,
+          "priceJPY": 2180,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 127,
+          "priceUSD": 16,
+          "priceJPY": 2540,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 389,
@@ -4629,6 +5651,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 60,
+          "priceUSD": 8,
+          "priceJPY": 1200,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 66,
+          "priceUSD": 8,
+          "priceJPY": 1320,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 73,
+          "priceUSD": 9,
+          "priceJPY": 1460,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 82,
+          "priceUSD": 10,
+          "priceJPY": 1640,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 91,
+          "priceUSD": 12,
+          "priceJPY": 1820,
+          "weightKg": null
+        },
+        {
           "qty": 1000,
           "priceHKD": 414,
           "priceUSD": 53,
@@ -4665,6 +5722,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-上質紙[120g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 70,
+          "priceUSD": 9,
+          "priceJPY": 1400,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 82,
+          "priceUSD": 10,
+          "priceJPY": 1640,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 95,
+          "priceUSD": 12,
+          "priceJPY": 1900,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 113,
+          "priceUSD": 14,
+          "priceJPY": 2260,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 132,
+          "priceUSD": 17,
+          "priceJPY": 2640,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 413,
@@ -4710,6 +5802,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 81,
+          "priceUSD": 10,
+          "priceJPY": 1620,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 94,
+          "priceUSD": 12,
+          "priceJPY": 1880,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 111,
+          "priceUSD": 14,
+          "priceJPY": 2220,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 130,
+          "priceUSD": 17,
+          "priceJPY": 2600,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 403,
           "priceUSD": 52,
@@ -4753,6 +5880,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-上質紙[80g]-210X297-両面異なる-断裁済み,ラミネートなし"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 69,
+          "priceUSD": 9,
+          "priceJPY": 1380,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 80,
+          "priceUSD": 10,
+          "priceJPY": 1600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 92,
+          "priceUSD": 12,
+          "priceJPY": 1840,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 109,
+          "priceUSD": 14,
+          "priceJPY": 2180,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 128,
+          "priceUSD": 16,
+          "priceJPY": 2560,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 391,
@@ -4798,6 +5960,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 73,
+          "priceUSD": 9,
+          "priceJPY": 1460,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 87,
+          "priceUSD": 11,
+          "priceJPY": 1740,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 102,
+          "priceUSD": 13,
+          "priceJPY": 2040,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 123,
+          "priceUSD": 16,
+          "priceJPY": 2460,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 145,
+          "priceUSD": 19,
+          "priceJPY": 2900,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 478,
           "priceUSD": 61,
@@ -4841,6 +6038,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-高嵩アート紙[128g]-210X297-両面異なる-断裁済み,ラミネートなし,折り加工[1折り2ページ][二つ折り]"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 72,
+          "priceUSD": 9,
+          "priceJPY": 1440,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 85,
+          "priceUSD": 11,
+          "priceJPY": 1700,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 100,
+          "priceUSD": 13,
+          "priceJPY": 2000,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 120,
+          "priceUSD": 15,
+          "priceJPY": 2400,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 142,
+          "priceUSD": 18,
+          "priceJPY": 2840,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 462,
@@ -4886,6 +6118,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 10,
+          "priceHKD": 87,
+          "priceUSD": 11,
+          "priceJPY": 1740,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 110,
+          "priceUSD": 14,
+          "priceJPY": 2200,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 134,
+          "priceUSD": 17,
+          "priceJPY": 2680,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 168,
+          "priceUSD": 22,
+          "priceJPY": 3360,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 205,
+          "priceUSD": 26,
+          "priceJPY": 4100,
+          "weightKg": null
+        },
+        {
           "qty": 500,
           "priceHKD": 780,
           "priceUSD": 100,
@@ -4929,6 +6196,41 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "専用版シングル/折り加工-高嵩アート紙[157g]-420X297-両面異なる-断裁済み,ラミネートなし,折り加工[3折り4ページ][観音折り]"
       },
       "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 88,
+          "priceUSD": 11,
+          "priceJPY": 1760,
+          "weightKg": null
+        },
+        {
+          "qty": 25,
+          "priceHKD": 111,
+          "priceUSD": 14,
+          "priceJPY": 2220,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 137,
+          "priceUSD": 18,
+          "priceJPY": 2740,
+          "weightKg": null
+        },
+        {
+          "qty": 75,
+          "priceHKD": 171,
+          "priceUSD": 22,
+          "priceJPY": 3420,
+          "weightKg": null
+        },
+        {
+          "qty": 99,
+          "priceHKD": 209,
+          "priceUSD": 27,
+          "priceJPY": 4180,
+          "weightKg": null
+        },
         {
           "qty": 500,
           "priceHKD": 800,
@@ -5597,6 +6899,34 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       },
       "tiers": [
         {
+          "qty": 1,
+          "priceHKD": 45,
+          "priceUSD": 6,
+          "priceJPY": 900,
+          "weightKg": null
+        },
+        {
+          "qty": 3,
+          "priceHKD": 116,
+          "priceUSD": 15,
+          "priceJPY": 2320,
+          "weightKg": null
+        },
+        {
+          "qty": 5,
+          "priceHKD": 167,
+          "priceUSD": 21,
+          "priceJPY": 3340,
+          "weightKg": null
+        },
+        {
+          "qty": 7,
+          "priceHKD": 213,
+          "priceUSD": 27,
+          "priceJPY": 4260,
+          "weightKg": null
+        },
+        {
           "qty": 10,
           "priceHKD": 290,
           "priceUSD": 37,
@@ -5640,6 +6970,189 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         "ja": "A1 · フォトペーパーポスター · 片面 · インクジェット出力 · 設置・貼り込みなし"
       },
       "tiers": [
+        {
+          "qty": 1,
+          "priceHKD": 56,
+          "priceUSD": 7,
+          "priceJPY": 1120,
+          "weightKg": null
+        },
+        {
+          "qty": 3,
+          "priceHKD": 144,
+          "priceUSD": 18,
+          "priceJPY": 2880,
+          "weightKg": null
+        },
+        {
+          "qty": 5,
+          "priceHKD": 207,
+          "priceUSD": 27,
+          "priceJPY": 4140,
+          "weightKg": null
+        },
+        {
+          "qty": 7,
+          "priceHKD": 265,
+          "priceUSD": 34,
+          "priceJPY": 5300,
+          "weightKg": null
+        },
+        {
+          "qty": 10,
+          "priceHKD": 360,
+          "priceUSD": 46,
+          "priceJPY": 7200,
+          "weightKg": null
+        },
+        {
+          "qty": 20,
+          "priceHKD": 720,
+          "priceUSD": 92,
+          "priceJPY": 14400,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 1800,
+          "priceUSD": 230,
+          "priceJPY": 36000,
+          "weightKg": null
+        },
+        {
+          "qty": 100,
+          "priceHKD": 3600,
+          "priceUSD": 461,
+          "priceJPY": 72000,
+          "weightKg": null
+        },
+        {
+          "qty": 200,
+          "priceHKD": 7200,
+          "priceUSD": 922,
+          "priceJPY": 144000,
+          "weightKg": null
+        }
+      ]
+    }
+  ]
+},
+  'a1-posters': {
+  "source": "posters.json (A1 inkjet ×modeled 起印階梯)",
+  "productName": {
+    "zh-hk": "A1海報",
+    "en": "A1 Poster",
+    "ja": "A1ポスター"
+  },
+  "defaultConfigIndex": 0,
+  "configs": [
+    {
+      "label": {
+        "zh-hk": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
+        "en": "A1 · PP/Eco poster (Yupo) · Single-sided · Large-format inkjet print · Excluding installation and mounting",
+        "ja": "A1 · PP/エコポスター (Yupo) · 片面 · インクジェット出力 · 設置・貼り込みなし"
+      },
+      "tiers": [
+        {
+          "qty": 1,
+          "priceHKD": 45,
+          "priceUSD": 6,
+          "priceJPY": 900,
+          "weightKg": null
+        },
+        {
+          "qty": 3,
+          "priceHKD": 116,
+          "priceUSD": 15,
+          "priceJPY": 2320,
+          "weightKg": null
+        },
+        {
+          "qty": 5,
+          "priceHKD": 167,
+          "priceUSD": 21,
+          "priceJPY": 3340,
+          "weightKg": null
+        },
+        {
+          "qty": 7,
+          "priceHKD": 213,
+          "priceUSD": 27,
+          "priceJPY": 4260,
+          "weightKg": null
+        },
+        {
+          "qty": 10,
+          "priceHKD": 290,
+          "priceUSD": 37,
+          "priceJPY": 5800,
+          "weightKg": null
+        },
+        {
+          "qty": 20,
+          "priceHKD": 580,
+          "priceUSD": 74,
+          "priceJPY": 11600,
+          "weightKg": null
+        },
+        {
+          "qty": 50,
+          "priceHKD": 1450,
+          "priceUSD": 186,
+          "priceJPY": 29000,
+          "weightKg": null
+        },
+        {
+          "qty": 100,
+          "priceHKD": 2900,
+          "priceUSD": 371,
+          "priceJPY": 58000,
+          "weightKg": null
+        },
+        {
+          "qty": 200,
+          "priceHKD": 5800,
+          "priceUSD": 743,
+          "priceJPY": 116000,
+          "weightKg": null
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
+        "en": "A1 · Photo paper poster · Single-sided · Large-format inkjet print · Excluding installation and mounting",
+        "ja": "A1 · フォトペーパーポスター · 片面 · インクジェット出力 · 設置・貼り込みなし"
+      },
+      "tiers": [
+        {
+          "qty": 1,
+          "priceHKD": 56,
+          "priceUSD": 7,
+          "priceJPY": 1120,
+          "weightKg": null
+        },
+        {
+          "qty": 3,
+          "priceHKD": 144,
+          "priceUSD": 18,
+          "priceJPY": 2880,
+          "weightKg": null
+        },
+        {
+          "qty": 5,
+          "priceHKD": 207,
+          "priceUSD": 27,
+          "priceJPY": 4140,
+          "weightKg": null
+        },
+        {
+          "qty": 7,
+          "priceHKD": 265,
+          "priceUSD": 34,
+          "priceJPY": 5300,
+          "weightKg": null
+        },
         {
           "qty": 10,
           "priceHKD": 360,
@@ -5688,94 +7201,99 @@ export function getPriceTableForSlug(slug: string): PriceTableData | null {
 /** v18: Pre-computed unit price anchors (lowest per-unit across all configs) */
 export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: string; qty: number; batchPrice: number; unitLabel: string }>> = {
   'gang-run-card-boxes': {
-    'zh-hk': { priceDisplay: '0.22', qty: 10000, batchPrice: 2198, unitLabel: '每個' },
-    en: { priceDisplay: '0.03', qty: 10000, batchPrice: 281, unitLabel: 'per pc' },
-    ja: { priceDisplay: '4.4', qty: 10000, batchPrice: 43960, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.22', qty: 500, batchPrice: 272, unitLabel: '每個' },
+    en: { priceDisplay: '0.03', qty: 500, batchPrice: 35, unitLabel: 'per pc' },
+    ja: { priceDisplay: '4.4', qty: 500, batchPrice: 5440, unitLabel: '1個' },
   },
   'white-card-boxes': {
-    'zh-hk': { priceDisplay: '0.09', qty: 10000, batchPrice: 884, unitLabel: '每個' },
-    en: { priceDisplay: '0.01', qty: 10000, batchPrice: 113, unitLabel: 'per pc' },
-    ja: { priceDisplay: '1.8', qty: 10000, batchPrice: 17680, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.09', qty: 500, batchPrice: 129, unitLabel: '每個' },
+    en: { priceDisplay: '0.01', qty: 500, batchPrice: 17, unitLabel: 'per pc' },
+    ja: { priceDisplay: '1.8', qty: 500, batchPrice: 2580, unitLabel: '1個' },
   },
   'tuck-end-boxes': {
-    'zh-hk': { priceDisplay: '0.70', qty: 10000, batchPrice: 7007, unitLabel: '每個' },
-    en: { priceDisplay: '0.09', qty: 10000, batchPrice: 897, unitLabel: 'per pc' },
-    ja: { priceDisplay: '14', qty: 10000, batchPrice: 140140, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.70', qty: 500, batchPrice: 1538, unitLabel: '每個' },
+    en: { priceDisplay: '0.09', qty: 500, batchPrice: 197, unitLabel: 'per pc' },
+    ja: { priceDisplay: '14', qty: 500, batchPrice: 30760, unitLabel: '1個' },
   },
   'corrugated-boxes': {
-    'zh-hk': { priceDisplay: '0.56', qty: 5000, batchPrice: 2792, unitLabel: '每個' },
-    en: { priceDisplay: '0.07', qty: 5000, batchPrice: 357, unitLabel: 'per pc' },
-    ja: { priceDisplay: '11', qty: 5000, batchPrice: 55840, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.56', qty: 500, batchPrice: 1517, unitLabel: '每個' },
+    en: { priceDisplay: '0.07', qty: 500, batchPrice: 194, unitLabel: 'per pc' },
+    ja: { priceDisplay: '11', qty: 500, batchPrice: 30340, unitLabel: '1個' },
   },
   'white-card-bags': {
-    'zh-hk': { priceDisplay: '1.4', qty: 5000, batchPrice: 7094, unitLabel: '每個' },
-    en: { priceDisplay: '0.18', qty: 5000, batchPrice: 908, unitLabel: 'per pc' },
-    ja: { priceDisplay: '28', qty: 5000, batchPrice: 141880, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '1.4', qty: 500, batchPrice: 1292, unitLabel: '每個' },
+    en: { priceDisplay: '0.18', qty: 500, batchPrice: 165, unitLabel: 'per pc' },
+    ja: { priceDisplay: '28', qty: 500, batchPrice: 25840, unitLabel: '1個' },
   },
   'waterproof-stickers': {
-    'zh-hk': { priceDisplay: '0.42', qty: 1000, batchPrice: 419, unitLabel: '每個' },
-    en: { priceDisplay: '0.05', qty: 1000, batchPrice: 54, unitLabel: 'per pc' },
-    ja: { priceDisplay: '8.4', qty: 1000, batchPrice: 8380, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.42', qty: 10, batchPrice: 71, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 10, batchPrice: 9, unitLabel: 'per pc' },
+    ja: { priceDisplay: '8.4', qty: 10, batchPrice: 1420, unitLabel: '1個' },
   },
   'digital-stickers': {
-    'zh-hk': { priceDisplay: '0.42', qty: 1000, batchPrice: 419, unitLabel: '每個' },
-    en: { priceDisplay: '0.05', qty: 1000, batchPrice: 54, unitLabel: 'per pc' },
-    ja: { priceDisplay: '8.4', qty: 1000, batchPrice: 8380, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.42', qty: 10, batchPrice: 71, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 10, batchPrice: 9, unitLabel: 'per pc' },
+    ja: { priceDisplay: '8.4', qty: 10, batchPrice: 1420, unitLabel: '1個' },
   },
   'a5-flyers': {
-    'zh-hk': { priceDisplay: '0.14', qty: 5000, batchPrice: 686, unitLabel: '每張' },
-    en: { priceDisplay: '0.02', qty: 5000, batchPrice: 88, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '2.7', qty: 5000, batchPrice: 13720, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '0.14', qty: 10, batchPrice: 80, unitLabel: '每張' },
+    en: { priceDisplay: '0.02', qty: 10, batchPrice: 10, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '2.7', qty: 10, batchPrice: 1600, unitLabel: '1枚' },
   },
   'a4-flyers': {
-    'zh-hk': { priceDisplay: '0.31', qty: 5000, batchPrice: 1568, unitLabel: '每張' },
-    en: { priceDisplay: '0.04', qty: 5000, batchPrice: 201, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '6.3', qty: 5000, batchPrice: 31360, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '0.31', qty: 10, batchPrice: 140, unitLabel: '每張' },
+    en: { priceDisplay: '0.04', qty: 10, batchPrice: 18, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '6.3', qty: 10, batchPrice: 2800, unitLabel: '1枚' },
   },
   'same-day-flyers': {
-    'zh-hk': { priceDisplay: '1.3', qty: 200, batchPrice: 250, unitLabel: '每張' },
-    en: { priceDisplay: '0.16', qty: 200, batchPrice: 32, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '25', qty: 200, batchPrice: 5000, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '1.3', qty: 10, batchPrice: 184, unitLabel: '每張' },
+    en: { priceDisplay: '0.16', qty: 10, batchPrice: 24, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '25', qty: 10, batchPrice: 3680, unitLabel: '1枚' },
   },
   'eco-flyers': {
-    'zh-hk': { priceDisplay: '0.72', qty: 1000, batchPrice: 720, unitLabel: '每張' },
-    en: { priceDisplay: '0.09', qty: 1000, batchPrice: 92, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '14', qty: 1000, batchPrice: 14400, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '0.72', qty: 10, batchPrice: 80, unitLabel: '每張' },
+    en: { priceDisplay: '0.09', qty: 10, batchPrice: 10, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '14', qty: 10, batchPrice: 1600, unitLabel: '1枚' },
   },
   'saddle-stitch-booklets': {
-    'zh-hk': { priceDisplay: '1.2', qty: 5000, batchPrice: 5777, unitLabel: '每本' },
-    en: { priceDisplay: '0.15', qty: 5000, batchPrice: 740, unitLabel: 'per book' },
-    ja: { priceDisplay: '23', qty: 5000, batchPrice: 115540, unitLabel: '1冊' },
+    'zh-hk': { priceDisplay: '1.2', qty: 10, batchPrice: 179, unitLabel: '每本' },
+    en: { priceDisplay: '0.15', qty: 10, batchPrice: 23, unitLabel: 'per book' },
+    ja: { priceDisplay: '23', qty: 10, batchPrice: 3580, unitLabel: '1冊' },
   },
   'perfect-bound-books': {
-    'zh-hk': { priceDisplay: '0.87', qty: 10000, batchPrice: 8697, unitLabel: '每本' },
-    en: { priceDisplay: '0.11', qty: 10000, batchPrice: 1114, unitLabel: 'per book' },
-    ja: { priceDisplay: '17', qty: 10000, batchPrice: 173940, unitLabel: '1冊' },
+    'zh-hk': { priceDisplay: '0.87', qty: 10, batchPrice: 308, unitLabel: '每本' },
+    en: { priceDisplay: '0.11', qty: 10, batchPrice: 39, unitLabel: 'per book' },
+    ja: { priceDisplay: '17', qty: 10, batchPrice: 6160, unitLabel: '1冊' },
   },
   'exercise-books': {
-    'zh-hk': { priceDisplay: '0.90', qty: 5000, batchPrice: 4508, unitLabel: '每本' },
-    en: { priceDisplay: '0.12', qty: 5000, batchPrice: 577, unitLabel: 'per book' },
-    ja: { priceDisplay: '18', qty: 5000, batchPrice: 90160, unitLabel: '1冊' },
+    'zh-hk': { priceDisplay: '0.90', qty: 10, batchPrice: 53, unitLabel: '每本' },
+    en: { priceDisplay: '0.12', qty: 10, batchPrice: 7, unitLabel: 'per book' },
+    ja: { priceDisplay: '18', qty: 10, batchPrice: 1060, unitLabel: '1冊' },
   },
   'folded-leaflets': {
-    'zh-hk': { priceDisplay: '0.38', qty: 10000, batchPrice: 3833, unitLabel: '每張' },
-    en: { priceDisplay: '0.05', qty: 10000, batchPrice: 491, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '7.7', qty: 10000, batchPrice: 76660, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '0.38', qty: 10, batchPrice: 161, unitLabel: '每張' },
+    en: { priceDisplay: '0.05', qty: 10, batchPrice: 21, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '7.7', qty: 10, batchPrice: 3220, unitLabel: '1枚' },
   },
   'special-fold-leaflets': {
-    'zh-hk': { priceDisplay: '0.38', qty: 10000, batchPrice: 3833, unitLabel: '每個' },
-    en: { priceDisplay: '0.05', qty: 10000, batchPrice: 491, unitLabel: 'per pc' },
-    ja: { priceDisplay: '7.7', qty: 10000, batchPrice: 76660, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.38', qty: 10, batchPrice: 161, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 10, batchPrice: 21, unitLabel: 'per pc' },
+    ja: { priceDisplay: '7.7', qty: 10, batchPrice: 3220, unitLabel: '1個' },
   },
   'custom-flyers': {
-    'zh-hk': { priceDisplay: '0.08', qty: 10000, batchPrice: 795, unitLabel: '每個' },
-    en: { priceDisplay: '0.01', qty: 10000, batchPrice: 102, unitLabel: 'per pc' },
-    ja: { priceDisplay: '1.6', qty: 10000, batchPrice: 15900, unitLabel: '1個' },
+    'zh-hk': { priceDisplay: '0.08', qty: 10, batchPrice: 69, unitLabel: '每個' },
+    en: { priceDisplay: '0.01', qty: 10, batchPrice: 9, unitLabel: 'per pc' },
+    ja: { priceDisplay: '1.6', qty: 10, batchPrice: 1380, unitLabel: '1個' },
   },
   'a2-posters': {
-    'zh-hk': { priceDisplay: '2.2', qty: 300, batchPrice: 656, unitLabel: '每張' },
-    en: { priceDisplay: '0.28', qty: 300, batchPrice: 84, unitLabel: 'per sheet' },
-    ja: { priceDisplay: '44', qty: 300, batchPrice: 13120, unitLabel: '1枚' },
+    'zh-hk': { priceDisplay: '2.2', qty: 10, batchPrice: 160, unitLabel: '每張' },
+    en: { priceDisplay: '0.28', qty: 10, batchPrice: 20, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '44', qty: 10, batchPrice: 3200, unitLabel: '1枚' },
+  },
+  'a1-posters': {
+    'zh-hk': { priceDisplay: '29', qty: 1, batchPrice: 45, unitLabel: '每張' },
+    en: { priceDisplay: '3.7', qty: 1, batchPrice: 6, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '580', qty: 1, batchPrice: 900, unitLabel: '1枚' },
   },
 };
 

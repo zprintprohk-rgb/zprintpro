@@ -72,51 +72,114 @@ const BANDS = [
       { slug: '2027-monthly-calendar-printing-timetable', required: ['HK$8-25/冊'], forbidden: ['$0.40-1.90/冊'] },
     ],
   },
-
-  // ── BK-002 騎馬釘小冊子 (saddle-stitch-booklets) ──
-  // K3 2026-09-18 裁定: 以「结构化区 / PDP title / minQuantity」为准
-  //   = 100 本起印 + HK$6-32/本; 作废旧自由文本值 MOQ 50 本 / HK$14-57/pc
-  // 边界: catalog-printing-china-supplier-guide 的 HK$14-57/本 属「目錄/畫冊」另一產品線, 不在本带内
-  {
-    id: 'BK002_PRICE_BAND',
-    locale: 'zh-hk',
-    file: 'src/data/blog-data/zh-hk.json',
-    canonical: 'HK$6-32/本 (100 本起印)',
-    entries: [
-      {
-        slug: 'saddle-stitch-booklet-printing-guide',
-        required: ['HK$6-32/本', '100 本起'],
-        forbidden: ['HK$14-57/本', '50 本起', '無最低起印量'],
-      },
-    ],
-  },
-  {
-    id: 'BK002_PRICE_BAND',
-    locale: 'en',
-    file: 'src/data/blog-data/en.json',
-    canonical: '100-copy MOQ (US$1.84-7.36/pc = en 结构化基准价, 不变)',
-    entries: [
-      {
-        slug: 'saddle-stitch-booklet-printing-guide',
-        required: ['100-copy MOQ', '100 copies'],
-        forbidden: ['50-copy', '50 copies'],
-      },
-    ],
-  },
-  {
-    id: 'BK002_PRICE_BAND',
-    locale: 'ja',
-    file: 'src/data/blog-data/ja.json',
-    canonical: '100 冊から (¥258-1030/冊 = ja 结构化基准价, 不变)',
-    entries: [
-      {
-        slug: 'saddle-stitch-booklet-printing-guide',
-        required: ['100冊', '100 冊から'],
-        forbidden: ['50冊', '50 冊から'],
-      },
-    ],
-  },
 ];
+
+/**
+ * 由 src/data/products.ts 動態讀取某 SKU 的 minQuantity。
+ *
+ * 2026-09-19 (K3 路線圖 P1-3「門童 #19 改為動態讀取 minQuantity」):
+ *   原實作把「100 本起」寫死在三條 locale 條目, 令 minQuantity 一旦調整
+ *   (例: 紙品線 100→10、A1 海報 100→1) 門童就會與 PDP 互相矛盾 —— 要麼誤攔,
+ *   要麼被迫手改門童 (SSoT 漂移)。改為每次掃描時由產品資料讀真值。
+ *
+ * 解析方式: products.ts 的每個產品物件以 `    slug: '<slug>',` 開頭, 其後數行內
+ *   有 `    minQuantity: <n>,`。以「下一個 slug 行」為區塊邊界, 與
+ *   scripts/moq10-smoke-test.mjs 同法 (該處已實測可靠)。
+ *   ⚠ 不使用 .hermes/_products_export.json 之類鏡像 — 會過期, 違反單一真源。
+ *
+ * 取不到時安全回退 (回退值僅防止門童自身崩潰, 不作為口徑來源), 並記錄 warning。
+ */
+const PRODUCTS_TS = 'src/data/products.ts';
+const MINQTY_FALLBACK = { 'saddle-stitch-booklets': 100 };
+const MINQTY_WARNINGS = [];
+
+function readMinQuantity(slug) {
+  let raw = null;
+  try {
+    raw = fs.readFileSync(path.join(ROOT, PRODUCTS_TS), 'utf-8');
+  } catch {
+    MINQTY_WARNINGS.push(`${PRODUCTS_TS} 讀取失敗`);
+    return MINQTY_FALLBACK[slug] ?? null;
+  }
+  const lines = raw.split('\n');
+  const slugRe = /^ {4}slug:\s*'([^']+)'/;
+  let start = -1;
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(slugRe);
+    if (m && m[1] === slug) { start = i; break; }
+  }
+  if (start < 0) {
+    MINQTY_WARNINGS.push(`${slug} 不在 ${PRODUCTS_TS}`);
+    return MINQTY_FALLBACK[slug] ?? null;
+  }
+  for (let i = start + 1; i < lines.length; i++) {
+    if (slugRe.test(lines[i])) break;                 // 下一個產品 → 區塊結束
+    const mq = lines[i].match(/^\s+minQuantity:\s*(\d+)\s*,/);
+    if (mq) return Number(mq[1]);
+  }
+  MINQTY_WARNINGS.push(`${slug} 找不到 minQuantity (格式可能已變)`);
+  return MINQTY_FALLBACK[slug] ?? null;
+}
+
+/** BK-002 三語條目: required/forbidden 的 MOQ 字樣一律由 minQuantity 推導 */
+const BK002_SLUG = 'saddle-stitch-booklets';
+const BK002_GUIDE = 'saddle-stitch-booklet-printing-guide';
+
+function bk002Bands(minQty) {
+  const q = Number.isFinite(minQty) ? minQty : (MINQTY_FALLBACK[BK002_SLUG] ?? 100);
+  // 舊的、已作廢的 MOQ 字樣 (K3 2026-09-18 作廢 50 本) → 動態排除自身當前值, 其餘一律禁
+  const staleNums = [50, 100].filter((n) => n !== q);
+  return [
+    {
+      id: 'BK002_PRICE_BAND',
+      locale: 'zh-hk',
+      file: 'src/data/blog-data/zh-hk.json',
+      canonical: `HK$6-32/本 (${q} 本起印, 由 products.ts minQuantity 動態讀取)`,
+      entries: [
+        {
+          slug: BK002_GUIDE,
+          required: ['HK$6-32/本', `${q} 本起`],
+          forbidden: [...staleNums.map((n) => `${n} 本起`), '無最低起印量'],
+        },
+      ],
+    },
+    {
+      id: 'BK002_PRICE_BAND',
+      locale: 'en',
+      file: 'src/data/blog-data/en.json',
+      canonical: `${q}-copy MOQ (US$1.84-7.36/pc = en 结构化基准价, 不变; MOQ 由 minQuantity 動態讀取)`,
+      entries: [
+        {
+          slug: BK002_GUIDE,
+          required: [`${q}-copy MOQ`, `${q} copies`],
+          forbidden: staleNums.map((n) => `${n}-copy`),
+        },
+      ],
+    },
+    {
+      id: 'BK002_PRICE_BAND',
+      locale: 'ja',
+      file: 'src/data/blog-data/ja.json',
+      canonical: `${q} 冊から (¥258-1030/冊 = ja 结构化基准价, 不变; MOQ 由 minQuantity 動態讀取)`,
+      entries: [
+        {
+          slug: BK002_GUIDE,
+          required: [`${q}冊`, `${q} 冊から`],
+          forbidden: [...staleNums.map((n) => `${n}冊`), ...staleNums.map((n) => `${n} 冊から`)],
+        },
+      ],
+    },
+  ];
+}
+
+/*
+ * BK-002 的三條 locale 條目動態併入 BANDS。
+ * K3 2026-09-18 裁定: 以「结构化区 / PDP title / minQuantity」为准, 作废旧值 MOQ 50 本。
+ * 边界: catalog-printing-china-supplier-guide 的 HK$14-57/本 属「目錄/畫冊」另一產品線, 不在本带内。
+ * 2026-09-19 (K3 路線圖 P1-3): MOQ 字樣改為讀 products.ts 真值, 避免門童與 PDP 互相矛盾。
+ */
+BANDS.push(...bk002Bands(readMinQuantity(BK002_SLUG)));
+
 
 const count = (hay, needle) => hay.split(needle).length - 1;
 

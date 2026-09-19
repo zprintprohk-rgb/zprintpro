@@ -12,7 +12,7 @@
   "anchor": "B2非会员价 + e-print柯式海报价",
   "anchorType": "factory-cost",
   "calibratedAt": "2026-07-25",
-  "note": "v16 K3 7/25: 小单数码/大单柯式自动取优。A1=喷绘e-banner×0.95。",
+  "note": "v16 K3 7/25: 小单数码/大单柯式自动取优。A1=喷绘e-banner×0.95。 | 2026-09-19 A1 獨立起印階梯: 加入 qty 1/3/5/7 modeled 檔 (K3 路線圖 P0-2)。",
   "configs": [
     {
       "config": "A2 · 铜版纸 · 157g · 單面",
@@ -510,6 +510,42 @@
       "config": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
       "tiers": [
         {
+          "qty": 1,
+          "sell_hkd": 45,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 3,
+          "sell_hkd": 115.5,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 5,
+          "sell_hkd": 167,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 7,
+          "sell_hkd": 213,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
           "qty": 10,
           "sell_hkd": 290,
           "production": "inkjet",
@@ -545,6 +581,42 @@
       "config": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
       "tiers": [
         {
+          "qty": 1,
+          "sell_hkd": 56,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 3,
+          "sell_hkd": 143.5,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 5,
+          "sell_hkd": 207,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
+          "qty": 7,
+          "sell_hkd": 264.5,
+          "production": "inkjet",
+          "weight_kg": null,
+          "src": "modeled-small-batch",
+          "note": "A1 起印模擬檔 (單張噴繪須攤開機與調機成本, 起印量愈低單張愈貴); 待工廠實詢校準",
+          "calibratedAt": "待校準"
+        },
+        {
           "qty": 10,
           "sell_hkd": 360,
           "production": "inkjet",
@@ -576,5 +648,6 @@
         }
       ]
     }
-  ]
+  ],
+  "smallBatchModelSrc": "modeled-small-batch"
 }

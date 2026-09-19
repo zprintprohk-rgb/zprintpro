@@ -49,7 +49,7 @@ export const CAT_KW_MAP_ZH_HK: Record<string, [string, string]> = {
  * 优先级: 工艺/速度/MOQ/材质/服务
  */
 export const SHARP_HOOKS_MAP_ZH_HK: Record<string, string> = {
-  stickers:     '100張起印',
+  stickers:     '10張起印',
   flyers:       '即日交貨',
   packaging:    '免費打樣',
   posters:      '防水材質',
@@ -103,7 +103,7 @@ export const DEFAULT_HOOK_ZH_HK: Record<string, string> = {
 /**
  * v6 新增：SKU 级 sellingPoint 覆盖映射表 (zh-hk)
  * 当 SKU 有独特卖点时，覆盖 category 级 hook
- * 例：fruit-stickers 的卖点是「食品級」而非泛 stickers 的「100張起印」
+ * 例：fruit-stickers 的卖点是「食品級」而非泛 stickers 的「10張起印」
  */
 export const SKU_SELLING_POINT_ZH_HK: Record<string, string> = {
   // stickers — 食品级/透明/烫金/镭射 差异化
@@ -214,7 +214,7 @@ export const SHARP_HOOKS_MAP_JA: Record<string, string> = {
 };
 
 export const DEFAULT_HOOK_JA: Record<string, string> = {
-  stickers:     '100枚から',
+  stickers:     '10枚から',
   flyers:       '送料無料',
   packaging:    '無料打稿',
   posters:      '高画質',
