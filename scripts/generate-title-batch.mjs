@@ -121,6 +121,65 @@ function gates(title, locale, trace) {
   return { equiv: e, gates: g, allPass: g.every((x) => x.pass) };
 }
 
+/* ---------- 5-Subst. 「替代」模式 (K3 2026-09-19 决策: 解锁 needsRewrite 槽位) ----------
+ * 背景: 纯删除对 82% 的超限标题无解 —— 冗余在**短语内部**而非整段可删。
+ *   例 en `Free Shipping $99+` 单段占 **18 当量**: 删则 <50, 留则 >58 ⇒ 必须**替换**。
+ * 做法 (三层枚举, 全部可溯源):
+ *   ① 识别**超长钩子段** (>10 当量且含钩子特征) 为替换对象
+ *   ② 替换池 = **来源可溯的短钩子**: MOQ (products.ts minQuantity / K3 裁决真值) + 价格 (basePrice)
+ *      —— **绝不编造**; `NO_MOQ_HOOK` 槽位从池中剔除 MOQ 钩子
+ *   ③ 按「丢 k 个最长钩子 + 取 j 个短钩子」枚举; 保留全部非钩子修饰段与主词
+ * 输出: 落入 50-57 且过四闸门的候选 (优先当量最高 = 改动最小); 仍无解 ⇒ needsRewrite 照旧。
+ */
+function buildSubstCandidates(slug, locale, p, slot) {
+  const cur = slot.current_title || '';
+  const segs = String(cur).split(/\s*[|｜]\s*/).map((s) => s.trim()).filter(Boolean);
+  const brand = BRAND[locale];
+  const head = segs[0] || '';
+  const tailIsBrand = segs[segs.length - 1] === brand;
+  const mid = segs.slice(1, tailIsBrand ? segs.length - 1 : segs.length);
+  const ms = moqStatusOf(slug, locale, p);
+  if (ms.status === 'MANUAL_REVIEW') return { skipped: 'MANUAL_REVIEW — 不生成, 待人工裁决', ms };
+
+  const eq = (s) => equiv(s);
+  const hooks = mid.filter((s) => HOOK_RE.test(s));
+  const mods = mid.filter((s) => !HOOK_RE.test(s) && !FILLER_RE.test(s));
+  const longHooks = hooks.filter((s) => eq(s) > 10).sort((a, b) => eq(b) - eq(a));
+  const shortHooks = hooks.filter((s) => eq(s) <= 10);   // 已足够短的钩子, 保留
+
+  // 替换池 (来源可溯)
+  const pool = [];
+  if (ms.status !== 'NO_MOQ_HOOK') {
+    const mp = moqPhrase(ms.status, ms.value, locale);
+    if (mp) pool.push({ text: mp, src: ms.src });
+  }
+  const pp = pricePhrase(p, locale);
+  if (pp) pool.push({ text: pp, src: `products.ts basePrice=${p.basePrice[locale]}` });
+
+  const join = (parts) => { const u = [...new Set(parts.filter(Boolean))]; let c = u.join(' | '); if (!new RegExp(`[|｜]\\s*${brand}\\s*$`).test(c)) c = `${c} | ${brand}`; return c; };
+  const out = [];
+  // drop = 丢掉的「最长钩子」个数; keep = 从替换池取几个
+  for (let drop = 1; drop <= longHooks.length; drop++) {
+    const keptLong = longHooks.slice(drop);
+    for (let keep = 0; keep <= pool.length; keep++) {
+      const repl = pool.slice(0, keep);
+      const parts = [head, ...mods, ...keptLong, ...shortHooks, ...repl.map((r) => r.text)];
+      const cand = join(parts);
+      const trace = [
+        { text: repl.map((r) => r.text).join(' '), src: repl.map((r) => r.src).join(' / ') || '未引入新数字' },
+        { text: longHooks.slice(0, drop).join(' '), src: `移除超长钩子 (${longHooks.slice(0, drop).map(eq).join('/')} 当量 ⇒ 替换为来源可溯短钩子)` },
+      ];
+      const g = gates(cand, locale, trace);
+      out.push({ variant: `S${drop}${keep}`, title: cand, equiv: g.equiv, gates: g.gates, allPass: g.allPass, trace, replCount: repl.length, hasBarePrice: repl.some((r) => /^\$\d|^¥\d/.test(r.text)), variantDesc: `丢 ${drop} 长钩子 + 取 ${keep} 短钩子` });
+    }
+  }
+  const anyPass = out.some((c) => c.allPass);
+  return {
+    ms, candidates: out, longtail: null, mode: 'subst', longHooks: longHooks.length, replPool: pool.length,
+    needsRewrite: anyPass ? null : `「替代」亦无解 (超长钩子 ${longHooks.length} 个 / 替换池 ${pool.length} 个仍无法落入 50-57) ⇒ 需人工改写`,
+  };
+}
+
 /* ---------- 5-Trim. 超限修剪 (P2 playbook, a2-posters 验证过) ----------
  * 目标: 当量 >58 → 降到 50-57。原则 (§7 红线):
  *   ① 主词一字不改  ② **数字钩子优先保** (K3: CTR 弹药)  ③ 先删**无效填充**, 再删**离主词最远的修饰**
@@ -312,16 +371,33 @@ for (const [slug, entry] of Object.entries(bank.skus)) {
 const results = [];
 for (const r of rows) {
   const isTrim = r.slot.band === 'TRIM' || /^P2/.test(r.batch || '');
-  const built = isTrim
-    ? buildTrimCandidates(r.slug, r.locale, r.entry, r.slot)
-    : buildCandidates(r.slug, r.locale, r.entry, r.slot);
-  // 修剪模式: 优选「删得最少但仍 ≤57」的候选 (churn 最小); 生成模式: 优选变体 A
+  let built;
+  if (isTrim) {
+    // 先试纯删除; 无解则**升级为「替代」模式** (K3: 替代是解锁 needsRewrite 的路径)
+    built = buildTrimCandidates(r.slug, r.locale, r.entry, r.slot);
+    if (!built.skipped && !built.candidates.some((c) => c.allPass)) {
+      const sub = buildSubstCandidates(r.slug, r.locale, r.entry, r.slot);
+      if (!sub.skipped && sub.candidates.some((c) => c.allPass)) built = sub;
+      else built = { ...built, substTried: sub.needsRewrite || 'subst 无解' };
+    }
+  } else {
+    built = buildCandidates(r.slug, r.locale, r.entry, r.slot);
+  }
+  // 修剪/替代: 优选**质量优先**的候选 —— 先少替换(改动小)、再避开裸价格、最后取当量最接近 54 (区间中位)
+  // ★ 2026-09-19 修正: 原按「当量最高」排序 ⇒ 倾向选 `… | 10 MOQ | $0.32 | …` 这类**裸价格**候选,
+  //   用「$0.32」(无单位语境) 替换强势钩子「Free Shipping $99+」= **hook 质量倒退**。
+  //   判据: 裸价格无上下文($0.32 是每张? 每件?), 不如 `10 MOQ` 自明; 故劣后于 MOQ。
   if (isTrim && built.candidates) {
     const passing = built.candidates.filter((c) => c.allPass);
-    const byMinChange = [...passing].sort((a, b) => b.equiv - a.equiv); // 尽量写满 (越高越接近原状)
-    built.candidates = [...new Set([...byMinChange, ...built.candidates])];
+    const score = (c) => [c.replCount || 0, c.hasBarePrice ? 1 : 0, Math.abs((c.equiv || 0) - 54)];
+    passing.sort((a, b) => {
+      const sa = score(a), sb = score(b);
+      for (let i = 0; i < 3; i++) if (sa[i] !== sb[i]) return sa[i] - sb[i];
+      return 0;
+    });
+    built.candidates = [...new Set([...passing, ...built.candidates])];
   }
-  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, mode: isTrim ? 'trim' : 'fill', ...built });
+  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, mode: built.mode || (isTrim ? 'trim' : 'fill'), ...built });
 }
 
 /* ---------- 7. 输出 ---------- */
