@@ -442,24 +442,41 @@ function buildCandidates(slug, locale, p, slot) {
   return { ms, candidates: out, pool: trace.length, longtail: lt?.q || null };
 }
 
-/* ---------- 6. 目标槽位选择 ---------- */
+/* ---------- 6. 目标槽位选择 (+ P3 第三套规则集: 按位置分带) ----------
+ * K3 2026-09-19 决策「P3 启动 (48 条)」:
+ *   位置 ≤30 → tier `full`    : 排名接近, 标题是兑现窗口 ⇒ 走完整 K3 v4 结构
+ *   位置 >30 → tier `minimal` : 排名尚未到位 ⇒ **只做最小合规** (补到 50 当量即止, 不加长尾)
+ *   零展示   → tier `defer`   : 无数据支撑的修改是赌博 ⇒ **不生成**, 标记待定
+ */
 const BATCH_FILTER = (process.argv.find((a) => a.startsWith('--batch=')) || '--batch=P0-A1').split('=')[1];
+function tierOf(slot) {
+  const imps = slot.imps ?? 0;
+  const pos = slot.pos ?? null;
+  if (!imps) return 'defer';                       // 零展示/无数据
+  if (pos == null) return 'minimal';
+  return pos <= 30 ? 'full' : 'minimal';
+}
 const rows = [];
+const deferred = [];
 for (const [slug, entry] of Object.entries(bank.skus)) {
   for (const [locale, slot] of Object.entries(entry.slots)) {
     const ms = moqStatusOf(slug, locale, entry);
     const isA1 = ms.status === 'USE_PRODUCTS_TRUTH' || ms.status === 'USE_RULING_TRUTH';
     const batchNow = slot.batch || null;
+    const tier = tierOf(slot);
     if (BATCH_FILTER === 'P0-A1') {
       if (!/^P0-A/.test(batchNow)) continue;
       if (!isA1) continue;
     } else if (BATCH_FILTER === 'P0-A2') {
       if (!/^P0-A/.test(batchNow)) continue;
       if (isA1) continue;
+    } else if (BATCH_FILTER === 'P3') {
+      if (!/^P3/.test(batchNow)) continue;
+      if (tier === 'defer') { deferred.push({ slug, locale, batch: batchNow, imps: slot.imps ?? 0, pos: slot.pos, current: slot.current_title, note: '零展示/无数据 ⇒ 不生成 (无数据支撑的修改是赌博)' }); continue; }
     } else if (BATCH_FILTER !== 'ALL') {
       if (batchNow !== BATCH_FILTER) continue;
     }
-    rows.push({ slug, locale, batch: batchNow, slot, entry, ms });
+    rows.push({ slug, locale, batch: batchNow, slot, entry, ms, tier });
   }
 }
 
@@ -492,7 +509,7 @@ for (const r of rows) {
     });
     built.candidates = [...new Set([...passing, ...built.candidates])];
   }
-  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, mode: built.mode || (isTrim ? 'trim' : 'fill'), ...built });
+  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, tier: r.tier || null, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, mode: built.mode || (isTrim ? 'trim' : 'fill'), ...built });
 }
 
 /* ---------- 7. 输出 ---------- */
@@ -514,6 +531,14 @@ for (const r of gen) {
 for (const r of skipped) console.log(`  ⏭️  跳过 ${r.slug}/${r.locale}: ${r.skipped}`);
 
 console.log(`\n汇总: 生成 ${gen.length} 槽 / 候选 ${gen.reduce((n, r) => n + r.candidates.length, 0)} 条 / 全闸门通过 ${passing.length} 条 / 跳过 ${skipped.length} 槽`);
+if (deferred.length) {
+  console.log(`\n⏸️  零展示/无数据 ⇒ 延后不改 (${deferred.length} 槽, K3 决策: 无数据支撑的修改是赌博):`);
+  for (const d of deferred.slice(0, 20)) console.log(`   ${d.slug}/${d.locale}  imp=${d.imps} pos=${d.pos ?? '-'}  ${String(d.current).slice(0, 50)}`);
+}
+if (BATCH_FILTER === 'P3') {
+  const byTier = gen.reduce((m, r) => ((m[r.tier] = (m[r.tier] || 0) + 1), m), {});
+  console.log(`\nP3 分带 (第三套规则集): ${JSON.stringify(byTier)}  · 延后 ${deferred.length} 槽`);
+}
 
 if (process.argv.includes('--emit')) {
   const dir = path.join(ROOT, '.hermes/reports');
