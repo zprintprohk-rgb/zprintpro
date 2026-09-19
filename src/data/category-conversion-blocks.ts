@@ -638,7 +638,7 @@ categoryConversionBlocks['packaging:en'] = {
   "category": "packaging",
   "locale": "en",
   "title": "Custom Packaging Boxes | 100 MOQ, No Die Cut Fee | B2B Packaging Solutions",
-  "metaDescription": "Premium custom packaging boxes from 100 pcs starting at HK$0.03 each. No die-cut fee on gang-run orders, FDA & FSC certified options. Get instant quote & WhatsApp us: +8619880851334",
+  "metaDescription": "Premium custom packaging boxes from 100 pcs starting at HK$0.03 each. No die-cut fee on gang-run orders, FDA & FSC-certified options. Get instant quote & WhatsApp us: +8619880851334",
   "quickAnswers": [
     {
       "q": "What's the minimum order for custom packaging boxes?",
@@ -3577,16 +3577,16 @@ categoryConversionBlocks['red-packets:zh-hk'] = {
 categoryConversionBlocks['books:zh-hk'] = {
   "category": "books",
   "locale": "zh-hk",
-  "title": "騎馬釘小冊子印刷 100本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
-  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 100 本起印。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，ISO 9001 認證，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
+  "title": "騎馬釘小冊子印刷 10本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
+  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，ISO 9001 認證，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
   "quickAnswers": [
     {
       "q": "騎馬釘小冊子印刷幾多錢一本？",
-      "a": "騎馬釘小冊子印刷 HK$6-32/本，100 本起印；"
+      "a": "騎馬釘小冊子印刷 HK$6-32/本，10 本起印；"
     },
     {
       "q": "印書最少要印幾多本？有冇批量優惠？",
-      "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 100 本起印；"
+      "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印（數碼）；"
     },
     {
       "q": "騎馬釘、膠裝定精裝點揀？",
@@ -3600,7 +3600,7 @@ categoryConversionBlocks['books:zh-hk'] = {
     },
     {
       "stat": "100 本起印",
-      "label": "五款書刊劃一 100 本起訂，校簿教材小批量都接得"
+      "label": "五款書刊劃一 10 本起訂，校簿教材小批量都接得"
     },
     {
       "stat": "ISO 9001 + FSC",
@@ -3658,7 +3658,7 @@ categoryConversionBlocks['books:zh-hk'] = {
     "steps": [
       {
         "title": "查價",
-        "desc": "WhatsApp 講低品類（騎馬釘小冊子/膠裝書/校簿練習冊）、頁數同數量，30 秒 AI 即時報價；騎馬釘小冊子 HK$6-32/本、畫冊型錄 HK$2.8-1000/本，全部 100 本起印"
+        "desc": "WhatsApp 講低品類（騎馬釘小冊子/膠裝書/校簿練習冊）、頁數同數量，30 秒 AI 即時報價；騎馬釘小冊子 HK$6-32/本、畫冊型錄 HK$2.8-1000/本，全部 10 本起印"
       },
       {
         "title": "交稿",
@@ -3702,11 +3702,11 @@ categoryConversionBlocks['books:zh-hk'] = {
     { "q": "騎馬釘、膠裝定精裝點揀？", "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；48-400 頁用無線膠裝，書脊平整牢固，可以印書名、條碼同 ISBN；畢業紀念冊、婚慶紀念書等珍藏版揀精裝，2.5mm 灰紙板封面可加燙金書名。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。" },
     {
       "q": "騎馬釘書刊係咩？邊啲書刊適合用騎馬釘？",
-      "a": "騎馬釘即係喺書脊中央用釘書釘裝訂，8-64 頁小冊子可以完全平攤 180°，翻閱方便、成本最低；活動場刊、校簿練習冊、產品目錄、宣傳冊子都啱用。HK$6-32/本，100 本起印。"
+      "a": "騎馬釘即係喺書脊中央用釘書釘裝訂，8-64 頁小冊子可以完全平攤 180°，翻閱方便、成本最低；活動場刊、校簿練習冊、產品目錄、宣傳冊子都啱用。HK$6-32/本，10 本起印。"
     },
     {
       "q": "校簿／練習冊可以批量印嗎？",
-      "a": "可以。騎馬釘練習冊用 128g–157g 銅版紙或書紙，100 本起印，100 本有 85 折、500 本 7 折；補習社教材、學校作業簿、培訓手冊批量單，WhatsApp 攞分層報價。"
+      "a": "可以。騎馬釘練習冊用 128g–157g 銅版紙或書紙，10 本起印，100 本有 85 折、500 本 7 折；補習社教材、學校作業簿、培訓手冊批量單，WhatsApp 攞分層報價。"
     },
     {
       "q": "印書交期要幾耐？",
@@ -3723,7 +3723,7 @@ categoryConversionBlocks['books:en'] = {
   "category": "books",
   "locale": "en",
   "title": "Catalog & Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro",
-  "metaDescription": "Custom book printing from $1.20 with a 50-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC certified.",
+  "metaDescription": "Custom book printing from $1.20 with a 50-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC-certified.",
   "quickAnswers": [
     {
       "q": "How much does booklet printing cost?",
@@ -3735,7 +3735,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "How fast can you print and ship custom books?",
-      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is ISO 9001 + FSC certified."
+      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is ISO 9001 + FSC-certified."
     }
   ],
   "socialProof": [
@@ -3859,7 +3859,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "Do you ship book printing orders to the USA?",
-      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is ISO 9001 + FSC certified, and a free digital proof is ready in 4 hours before anything goes to press."
+      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is ISO 9001 + FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
     }
   ]
 };

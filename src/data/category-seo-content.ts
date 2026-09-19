@@ -232,7 +232,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       rows: [
         { material: 'Premium Color Box (White Card/Art Paper)', features: '300–350g | Foil/UV support | Vibrant colors', scenarios: 'Beauty | Gifts | Wedding favors | Corporate' },
         { material: 'Corrugated Carton (E/F Flute)', features: 'Industrial strength | Custom sizes | Export-ready', scenarios: 'E-commerce | Cross-border warehousing | Wholesale' },
-        { material: 'FSC Certified Eco Paper', features: 'Biodegradable | Plasticizer-free | Green certified', scenarios: 'Sustainable brands | Organic food | Eco businesses' },
+        { material: 'FSC-certified Eco Paper', features: 'Biodegradable | Plasticizer-free | Green certified', scenarios: 'Sustainable brands | Organic food | Eco businesses' },
         { material: 'Food-Grade / Moisture-Proof Paper', features: 'Food-safe | Moisture treatment | QR code ready', scenarios: 'Baked goods | Health supplements | TCM packaging' },
         { material: 'Magnetic / Drawer Structure Box', features: 'Luxury structure | Silver foil logo | Reusable', scenarios: 'Perfume | Skincare | Premium beauty' },
       ],
@@ -295,7 +295,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you support export packaging standards?', a: 'Yes. We are familiar with EU WEEE, US FTC Green Guides, and other export packaging regulations, and can assist with compliance documentation.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit box type, unfolded dimensions, quantity, paper material, and surface finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die lines, bleed, and color mode.' },
-        { q: 'Do you make plastic bags or vacuum bags for food packaging?', a: 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.' },
+        { q: 'Do you make plastic bags or vacuum bags for food packaging?', a: 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC-certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.' },
     ],
   },
   ja: {
@@ -707,9 +707,9 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T16: books 338 imps 结构战 - 5 词对齐 + 5 FAQ
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷) + bulk/wholesale 段
-    featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 天郵件詢盤 + 3-4 週海運, 我方三錘碾壓. 8-32 頁品牌 catalog + 32-48 頁雜誌/活動場刊 + 48-64 頁 NGO 報告 + 非洲中東東南亞教育局批量採購 (50-200 本試印友好). 100 本起工廠直送價格 30 秒 AI 報價, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',
+    featuredSnippet: '騎馬釘小冊子印刷 10 本起 (數碼) / 500 本起柯式, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 天郵件詢盤 + 3-4 週海運, 我方三錘碾壓. 8-32 頁品牌 catalog + 32-48 頁雜誌/活動場刊 + 48-64 頁 NGO 報告 + 非洲中東東南亞教育局批量採購 (50-200 本試印友好). 10 本起工廠直送價格 30 秒 AI 報價, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',
     lastUpdated: '2026-08-24',
-    h2: '騎馬釘小冊子 / 騎馬釘書刊 / 畫冊印刷 / 產品型錄印刷 / 大量印刷 — 50 本起印, 8-64 頁全規格, 30 秒 AI 報價',
+    h2: '騎馬釘小冊子 / 騎馬釘書刊 / 畫冊印刷 / 產品型錄印刷 / 大量印刷 — 10 本起印, 8-64 頁全規格, 30 秒 AI 報價',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -807,7 +807,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   en: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段
-    featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 50-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders. Factory-direct bulk wholesale tier 500/1000/5000 pcs 15-30% discount. 4-word cluster 9/4 ranking target: catalog book printing + china catalog printing + catalog printing china + bulk catalog printing.',
+    featuredSnippet: 'Saddle stitch booklets from 10 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 10-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders. Factory-direct bulk wholesale tier 500/1000/5000 pcs 15-30% discount. 4-word cluster 9/4 ranking target: catalog book printing + china catalog printing + catalog printing china + bulk catalog printing.',
     lastUpdated: '2026-08-24',
     h2: 'Saddle Stitch Booklet / Catalog Printing / China Catalog Printing / Bulk Catalog Printing / Book Printing — From 50 Copies, Instant Quote, 8-64 Pages',
     coreAdvantages: {
@@ -907,7 +907,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   ja: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送) + bulk/wholesale 段 + ジープリント 埋点 1 次
-    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ZprintPro.',
+    featuredSnippet: '中綴じ冊子印刷 10冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 10冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ZprintPro.',
     lastUpdated: '2026-08-24',
     h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
@@ -2603,7 +2603,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
       rows: [
         { material: isZh ? '標準紙材' : isEn ? 'Standard Paper' : '標準紙材', features: isZh ? '經濟實惠｜色彩鮮豔｜適合大量' : isEn ? 'Affordable | Vibrant | Great for volume' : '手頃な価格｜発色鮮やか｜大量に最適', scenarios: isZh ? '一般宣傳｜活動推廣｜日常辦公' : isEn ? 'General promotion | Events | Office use' : '一般宣伝｜イベント｜オフィス用途' },
         { material: isZh ? '高級紙材' : isEn ? 'Premium Paper' : '高級紙材', features: isZh ? '厚實手感｜高級質感｜品牌首選' : isEn ? 'Substantial feel | Premium | Brand favorite' : '厚みのある質感｜高級感｜ブランド向け', scenarios: isZh ? '高端品牌｜企業禮品｜重要客戶' : isEn ? 'Luxury brands | Corporate gifts | VIP clients' : 'ラグジュアリー｜企業ギフト｜VIP' },
-        { material: isZh ? '環保紙材' : isEn ? 'Eco Paper' : 'エコ紙材', features: isZh ? 'FSC認證｜可降解｜綠色形象' : isEn ? 'FSC certified | Biodegradable | Green image' : 'FSC認証｜生分解性｜グリーンイメージ', scenarios: isZh ? '環保企業｜有機品牌｜永續發展' : isEn ? 'Eco businesses | Organic brands | Sustainability' : '環境企業｜有機ブランド｜サステナビリティ' },
+        { material: isZh ? '環保紙材' : isEn ? 'Eco Paper' : 'エコ紙材', features: isZh ? 'FSC認證｜可降解｜綠色形象' : isEn ? 'FSC-certified | Biodegradable | Green image' : 'FSC認証｜生分解性｜グリーンイメージ', scenarios: isZh ? '環保企業｜有機品牌｜永續發展' : isEn ? 'Eco businesses | Organic brands | Sustainability' : '環境企業｜有機ブランド｜サステナビリティ' },
         { material: isZh ? '特殊材質' : isEn ? 'Specialty Materials' : '特殊材質', features: isZh ? '防水｜防撕｜耐用｜戶外適用' : isEn ? 'Waterproof | Tear-resistant | Durable | Outdoor' : '防水｜耐裂｜耐久｜屋外向け', scenarios: isZh ? '戶外廣告｜工業標籤｜長期展示' : isEn ? 'Outdoor ads | Industrial labels | Long-term display' : '屋外広告｜工業ラベル｜長期展示' },
       ],
     },
@@ -3120,7 +3120,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         { material: '128gsm Art Paper', features: 'Vibrant colors | Economical | Great for mass distribution', scenarios: 'General promotion | Events | Grand openings | Limited offers' },
         { material: '157gsm Art Paper', features: 'Substantial feel | Premium quality | Brand favorite', scenarios: 'Luxury products | Corporate intro | VIP invites | Brand image' },
         { material: '200gsm White Card', features: 'Excellent stiffness | Great double-sided results | High-end', scenarios: 'Premium menus | Product catalogs | Annual reports | Premium events' },
-        { material: 'Eco Recycled Paper', features: 'FSC certified | Eco-friendly image | Social responsibility', scenarios: 'Eco brands | NGOs | Social enterprises | Green events' },
+        { material: 'Eco Recycled Paper', features: 'FSC-certified | Eco-friendly image | Social responsibility', scenarios: 'Eco brands | NGOs | Social enterprises | Green events' },
         { material: 'Lamination', features: 'Matte/gloss | Waterproof | Stain-resistant | Extended life', scenarios: 'Long-term display | Outdoor distribution | Humid environments | High-use' },
       ],
     },
@@ -3749,7 +3749,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
         { material: '200gsm Kraft Paper', features: 'Vintage feel | Eco-friendly | High recognition | Durable', scenarios: 'Creative brands | Coffee shops | Organic food | Handmade brands' },
         { material: '300gsm Black Card', features: 'Mysterious & premium | Excellent foil effect | Luxury feel', scenarios: 'Luxury goods | Jewelry | Premium beauty | VIP gifts' },
         { material: 'Pearl Paper', features: 'Pearlescent sheen | Unique visual | Premium feel', scenarios: 'Wedding gifts | Holiday packaging | Premium events | Brand campaigns' },
-        { material: 'Eco Recycled Paper', features: 'FSC certified | Biodegradable | Green image', scenarios: 'Eco businesses | Sustainable brands | CSR projects | Green events' },
+        { material: 'Eco Recycled Paper', features: 'FSC-certified | Biodegradable | Green image', scenarios: 'Eco businesses | Sustainable brands | CSR projects | Green events' },
       ],
     },
     specialOptions: {
@@ -4319,7 +4319,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
           points: [
             '6 core materials: 300gsm art, 350gsm Conqueror, 300gsm cotton, specialty gold/silver card, seed paper (plantable), 3D laser paper.',
             '4 core finishes: foil / silver / rose gold, spot UV, die-cut shapes, 3D pop-up — built for cross-border e-commerce.',
-            'Free shipping over $99 to USA + DHL Express 2-4 day global + FSC certified + ISO 9001 quality.',
+            'Free shipping over $99 to USA + DHL Express 2-4 day global + FSC-certified + ISO 9001 quality.',
           ],
         },
       ],
@@ -4355,7 +4355,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         { label: 'Proof Time', value: 'Digital proof 24h / 4h free proof (with physical sample shipping)' },
         { label: 'Production Lead Time', value: 'Standard 3-5 business days, rush 24-48h available' },
         { label: 'File Requirements', value: 'AI / PSD / PDF / CDR, 300dpi, CMYK, 3mm bleed, outlined text' },
-        { label: 'Eco Certifications', value: 'FSC certified + soy ink + ISO 9001 + recyclable' },
+        { label: 'Eco Certifications', value: 'FSC-certified + soy ink + ISO 9001 + recyclable' },
       ],
     },
     serviceNodes: {
@@ -4373,7 +4373,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         'First, define the use case: holiday gifts choose 3D pop-up (cross-border hero), correspondence cards choose foil 300gsm Conqueror, thank you cards choose cotton + spot UV. Clear use case cuts material and finish budget in half.',
         'Holiday card key is design consistency: Christmas / New Year / Valentine cards use unified visual language, customer repurchase rate +30%. Recommend 3-5 templates per season to reduce design cost.',
         'Cross-border hero 3D pop-up cards: 7-day 780K RMB GMV (TikTok Paper Love case), $14.99 retail, ¥7-12 wholesale = 15x margin. 3D pop-up is the cross-border core moat.',
-        'FSC certified + soy ink + seed paper (plantable) — three eco selling points. EU / US customers willing to pay 20% premium, matching ESG procurement trends.',
+        'FSC-certified + soy ink + seed paper (plantable) — three eco selling points. EU / US customers willing to pay 20% premium, matching ESG procurement trends.',
         "Production sweet spot: 100-500 sheets digital (no plate), 500-5000 sheets offset (unit price can drop to $0.07). Peak season (Christmas / Valentine / Mother's Day) order 4 weeks ahead.",
       ],
       links: [
@@ -4385,7 +4385,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       { q: 'What is the minimum order for greeting card printing?', a: '100 sheets minimum. 50-sheet small batches available for design confirmation or first-time clients.' },
       { q: 'How fast can I get 3D pop-up cards?', a: 'Digital proof 24h, bulk 3-5 business days, rush 24-48h available on request.' },
       { q: 'Can I print custom designs?', a: 'Yes. AI / PSD / PDF / CDR files supported, 300dpi CMYK. Free prepress check.' },
-      { q: 'What eco-friendly options are available?', a: 'FSC certified paper + soy ink + plantable seed paper (mint or alfalfa). EU/US compliance.' },
+      { q: 'What eco-friendly options are available?', a: 'FSC-certified paper + soy ink + plantable seed paper (mint or alfalfa). EU/US compliance.' },
     ],
   },
   ja: {

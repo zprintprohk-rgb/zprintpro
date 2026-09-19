@@ -498,9 +498,9 @@ const lpSaddleStitchBookletPrintingGuide: BlogPostMeta = {
     ja: '中綴じ冊子印刷完全ガイド：ページ数・用紙・価格 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '騎馬釘小冊子印刷 50 本起, 8-64 頁, HK$14-57/本 (500 本). 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
+    'zh-hk': '騎馬釘小冊子印刷 10 本起 (數碼), 8-64 頁, HK$14-57/本 (500 本). 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
     en: 'Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc at 500 copies. 30-second instant quote, DHL global 2-4 day delivery. Page-count rules, self-cover vs separate cover, real 2026 pricing, three moats vs Alibaba yellow pages.',
-    ja: '中綴じ冊子印刷 50冊から, 8-64ページ, ¥258-1030/個 (500冊). 30秒 AI 即時見積もり, DHL グローバル 2-4日. ページ数ルール・自表紙 vs 別表紙・2026 実価格・Alibaba 黄頁 3つの差別化.',
+    ja: '中綴じ冊子印刷 10冊から, 8-64ページ, ¥258-1030/個 (500冊). 30秒 AI 即時見積もり, DHL グローバル 2-4日. ページ数ルール・自表紙 vs 別表紙・2026 実価格・Alibaba 黄頁 3つの差別化.',
   },
 };
 
@@ -1227,7 +1227,7 @@ const lpRealEstateFlyer: BlogPostMeta = {
     ja: '不動産販売チラシ印刷ガイド：物件資料・折り畳み | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港新盤代理 / 二手樓經紀 / 物業管理必睇。157g 雙銅紙 A4 摺頁 + 騎馬釘小手冊 + 100 張起印，3-5 個工作天交付，順豐本地 + DHL 全球 2-4 天配送。',
+    'zh-hk': '香港新盤代理 / 二手樓經紀 / 物業管理必睇。157g 雙銅紙 A4 摺頁 + 騎馬釘小手冊 + 10 張起印，3-5 個工作天交付，順豐本地 + DHL 全球 2-4 天配送。',
     en: 'US real estate agents, brokerages, property managers, open house hosts: A4 bi-fold + tri-fold property listing flyers, 100 MOQ, 3-5 day production, Free Shipping over $99 USA.',
     ja: '米国の不動産エージェント、ブローカレッジ、プロパティ マネージャー、オープンハウス主催者様へ。A4 二つ折り・三つ折り物件資料チラシ、100 個小ロット、3-5 営業日生産、$99 以上で全米無料配送。',
   },
@@ -1542,7 +1542,7 @@ const lpCatalogPrintingGuide: BlogPostMeta = {
     ja: 'カタログ・写真集印刷ガイド：用紙・製本・加工の選 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，50 本起印，3-5 個工作天交付。',
+    'zh-hk': '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，10 本起印，3-5 個工作天交付。',
     en: 'Custom catalog and art book printing guide — photo books, exhibition catalogs, product catalogs. Paper choices (art/matte/specialty), binding (hardcover/perfect/saddle), finishes (spot UV/foil), 4 FAQs, 50-book MOQ, 3-5 day turnaround, Free Shipping $99+ USA.',
     ja: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
   },
@@ -1825,12 +1825,12 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-17',
   title: {
-    'zh-hk': '練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 100 本起印 HK$3.5/本起 B2B 開學季 | 智印港',
+    'zh-hk': '練習簿印刷完全指南 2026: 4 種紙材 3 種裝訂 10 本起印 HK$3.5/本起 B2B 開學季 | 智印港',
     en: 'School Exercise Book Printing Guide 2026: 4 Paper Stocks 3 Bindings 100 MOQ from HK$3.5 | ZprintPro',
     ja: '練習帳印刷ガイド 2026: 4 種用紙 3 製本 100 部から | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 認証体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
+    'zh-hk': '學校練習簿/作業簿 10 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 認証体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
     en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 9001 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
     ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. グローバル顧客. ISO + FSC + FDA + EU REACH.',
   },
@@ -1942,14 +1942,14 @@ const lpZineSmallBatchBookletGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-18',
   title: {
-    'zh-hk': '小誌 Zine 印刷: 騎馬釘 8-64 頁 100 本起 HK$6 起 | 智印港',
+    'zh-hk': '小誌 Zine 印刷: 騎馬釘 8-64 頁 10 本起 HK$6 起 | 智印港',
     en: 'Zine Printing Guide: 8-64pp, 100 MOQ, HK$6/pc | ZprintPro',
     ja: 'ジン印刷ガイド: 中綴じ 8〜64 ページ 100 部から | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '小誌 Zine 印刷 100 本起印, 8-64 頁騎馬釘, 每本約 HK$6-32, 5,000 本批量低至 HK$1.20/本. 內頁 80-100g 書紙或 128-157g 銅版紙, 封面可覆膜, 頁數須為 4 的倍數, 標準交期 5-7 個工作天, 提交檔案 1 小時內免費打稿, 滿 HK$500 港九新界順豐免運, DHL 全球 2-4 天.',
+    'zh-hk': '小誌 Zine 印刷 10 本起印, 8-64 頁騎馬釘, 每本約 HK$6-32, 5,000 本批量低至 HK$1.20/本. 內頁 80-100g 書紙或 128-157g 銅版紙, 封面可覆膜, 頁數須為 4 的倍數, 標準交期 5-7 個工作天, 提交檔案 1 小時內免費打稿, 滿 HK$500 港九新界順豐免運, DHL 全球 2-4 天.',
     en: 'Zine printing from 100 copies, saddle stitch 8-64 pages, about HK$6-32 per copy and HK$1.20 per copy at 5,000. Interior in 80-100gsm woodfree or 128-157gsm art paper, optional cover lamination, page count must divide by 4. 5-7 working day turnaround, free proof within 1 hour, DHL worldwide in 2-4 days.',
-    ja: 'ジン（Zine）印刷は 100 部から、中綴じ 8〜64 ページ、1 部あたり約 HK$6〜32、5,000 部で HK$1.20。本文は 80〜100g 上質紙または 128〜157g コート紙、表紙ラミネート可、ページ数は 4 の倍数。標準納期 5〜7 営業日、入稿後 1 時間以内に無料校正、DHL で世界 2〜4 日。',
+    ja: 'ジン（Zine）印刷は 10 部から、中綴じ 8〜64 ページ、1 部あたり約 HK$6〜32、5,000 部で HK$1.20。本文は 80〜100g 上質紙または 128〜157g コート紙、表紙ラミネート可、ページ数は 4 の倍数。標準納期 5〜7 営業日、入稿後 1 時間以内に無料校正、DHL で世界 2〜4 日。',
   },
   targetKeywords: {
     primary: 'zine printing',
@@ -1965,19 +1965,19 @@ const lpZineSmallBatchBookletGuide: BlogPostMeta = {
 // 2026-09-18 新需求承接 #2 (K3 2026-09-17 拍板: 4 篇新需求承接提前至 P0 三篇之前)
 // 依据: docs/2026-09-17-website-traffic-expansion-plan-v1.md §五 路径 1 第 2 项 (童書繪本) + §四 差距矩阵 (zh-hk/en/ja 三语 0 承接)
 // 承接 SKU: hardcover-books (BK-004) | 3 快速答案块 + 3 真表格 + 5 FAQ + 3 CTA + 8+ 唯一内链 + 3 locale native
-// 价格口径来源: 线上 PDP 结构化区 (2026-09-18 curl): 100 本起印 / HK$40-240/本 / 標準交期 5-7 天 / 膠裝 +HK$30 精裝 +HK$100
+// 价格口径来源: 线上 PDP 结构化区 (2026-09-18 curl; MOQ 已於 2026-09-19 第三波改為 10 本): 10 本起印 / HK$40-240/本 / 標準交期 5-7 天 / 膠裝 +HK$30 精裝 +HK$100
 const lpChildrensPictureBookGuide: BlogPostMeta = {
   slug: 'childrens-picture-book-printing-guide',
   categoryKey: 'education',
   source: 'daily',
   date: '2026-09-18',
   title: {
-    'zh-hk': '童書繪本印刷：精裝硬皮 32 頁 100 本起 HK$40 起 | 智印港',
+    'zh-hk': '童書繪本印刷：精裝硬皮 32 頁 10 本起 HK$40 起 | 智印港',
     en: 'Custom Picture Book Printing: 32pp, 100 MOQ | ZprintPro',
     ja: '絵本印刷：ハードカバー 32 ページ 100 部から | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '童書繪本印刷 100 本起印。精裝硬皮 2.5mm 灰紙板封面、32 頁標準開本、單價 HK$40-240/本、100 本 85 折 500 本 7 折。A5/A4/B5 開本，80g/100g 書紙或 128g 銅版紙，燙金/壓凹/局部 UV 可選，FSC 認證紙，5-7 個工作天，滿 HK$500 港九新界順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。',
+    'zh-hk': '童書繪本印刷 10 本起印。精裝硬皮 2.5mm 灰紙板封面、32 頁標準開本、單價 HK$40-240/本、100 本 85 折 500 本 7 折。A5/A4/B5 開本，80g/100g 書紙或 128g 銅版紙，燙金/壓凹/局部 UV 可選，FSC 認證紙，5-7 個工作天，滿 HK$500 港九新界順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。',
     en: 'Picture book printing from 100 copies: hardcover with 2.5mm greyboard cover, 32pp standard trim, HK$40-240 per copy, 85% at 100 and 70% at 500, A5/A4/B5, 80-128gsm stocks, foil and deboss options, FSC-certified paper, 5-7 day turnaround, DHL worldwide 2-4 days.',
     ja: '絵本印刷は 100 部から。2.5mm 厚紙ボード表紙のハードカバー、32 ページ標準判、1 部 HK$40〜240、100 部 85 折・500 部 7 折、A5/A4/B5、80〜128g 用紙、箔押し・型押し対応、FSC 認証紙、標準納期 5〜7 営業日、日本全国送料無料、海外 DHL 2〜4 日。',
   },
