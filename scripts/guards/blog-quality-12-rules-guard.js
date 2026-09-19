@@ -210,13 +210,21 @@ function checkSegmentsOffline(file, locale, slug, value) {
   else addRow(locale, slug, 6, 'FAIL', '无客户案例段，也无「待校准」标注', `补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」`);
 
   // 段 7: E-E-A-T
-  const hasPerson = /"@type"\s*:\s*"Person"/.test(c);
   const hasLinkedIn = /linkedin\.com/i.test(c);
   const hasFDA = /FDA/i.test(c);
   const hasREACH = /EU\s*REACH/i.test(c);
-  const eeatMiss = [!hasPerson && 'Person', !hasLinkedIn && 'LinkedIn', !hasFDA && 'FDA', !hasREACH && 'EU REACH'].filter(Boolean);
-  if (eeatMiss.length) addRow(locale, slug, 7, 'FAIL', `信号缺失: ${eeatMiss.join(', ')}`, `补 ${slug} 的 ${eeatMiss.join(' + ')}`);
-  else addRow(locale, slug, 7, 'PASS', 'Person + LinkedIn + FDA + EU REACH 4 信号齐', '');
+  // ★ 2026-09-19 口径修正 (strip 内嵌 LD 后实测暴露的**度量口径不一致**):
+  //   Person 是**页面生成层**产物 (page.tsx → Article.author, 定义在 schema-extensions.ts),
+  //   **从来不在 content 里**; 而 LinkedIn/FDA/EU REACH 既可能在生成层 (sameAs) 也可能在正文。
+  //   旧实现把 Person 当 content 信号 ⇒ 内嵌 LD 一旦 strip, 段 7 立刻报「信号缺失: Person」,
+  //   但线上 (--online) 该信号仍在生成区 ⇒ 属**离线度量假阳性**(与段 12 同类: 该信号本就在生成层)。
+  //   修法: 离线只判 content 侧可判信号 (FDA / EU REACH / LinkedIn 文本提及), Person 交线上断言;
+  //        离线证据里显式标注「Person 由 page.tsx 生成层承载, 待 --online 判定」。
+  const hasPersonInContent = /"@type"\s*:\s*"Person"/.test(c);
+  const eeatMiss = [!hasLinkedIn && 'LinkedIn', !hasFDA && 'FDA', !hasREACH && 'EU REACH'].filter(Boolean);
+  const personNote = hasPersonInContent ? 'Person(内嵌)' : 'Person(生成层承载,待 --online)';
+  if (eeatMiss.length) addRow(locale, slug, 7, 'FAIL', `content 侧信号缺失: ${eeatMiss.join(', ')} | ${personNote}`, `补 ${slug} 的 ${eeatMiss.join(' + ')}（FDA/EU REACH 属正文引用, 必须写在 content 内）`);
+  else addRow(locale, slug, 7, 'PASS', `${personNote} + LinkedIn + FDA + EU REACH（content 侧）`, '');
 
   // 段 8: GEO 知识原子
   const atoms = (c.match(/【[^】]{2,20}】/g) || []).length;
