@@ -190,6 +190,107 @@ export function getDisplayMinOrder(locale: Locale, slug: string, minQuantity: nu
 }
 
 /* ============================================================================
+ * 起印量「判定域」SSoT (K3 2026-09-19 價目同步波提質三件)
+ * ============================================================================
+ * 為什麼需要: 價目同步波 v2 分類報告抽驗發現假陽性, 三個根因全部係「判定域」唔清楚:
+ *   ① 跨品類綜合頁被當單一品類 —— 例: 即日印刷指南「100 張起印，6 大場景
+ *      (展會/投標/海報/傳單/易拉寶/貼紙)」被歸為海報 ⇒ 目標 1 張 = 錯。
+ *   ② 同一品類內門檻唔同 —— 海報 A1 噴繪 1 張起 vs A2/A3 銅版紙 10 張起。
+ *   ③ 標籤錯但目標值偶然對 —— 「1冊から」因窗內先出現「ステッカー」被標成貼紙。
+ *
+ * ⇒ 本章建立三個明確判定域, 令分類器唔再靠關鍵詞滑窗猜:
+ *   A. PRODUCT_TARGETS    : SKU → 目標起印量 (單一品類產品)
+ *   B. CROSS_CATEGORY_PAGES: 跨品類綜合頁 / 對比頁 → **不套用單一目標**, 另立門檻組
+ *   C. POSTER_SIZE_TARGETS: 海報按尺寸細分目標
+ */
+
+/** A. 單一產品 SKU → 目標起印量 (與 products.ts minQuantity 同步; 變動時一併更新) */
+export const PRODUCT_TARGETS: Record<string, { target: number; unit: string; label: string }> = {
+  // 傳單線
+  'a4-flyers': { target: 10, unit: '張', label: '傳單' },
+  'a5-flyers': { target: 10, unit: '張', label: '傳單' },
+  'double-sided-flyers': { target: 10, unit: '張', label: '傳單' },
+  'folded-leaflets': { target: 10, unit: '張', label: '傳單' },
+  'thick-paper-flyers': { target: 10, unit: '張', label: '傳單' },
+  'eco-flyers': { target: 10, unit: '張', label: '傳單' },
+  'same-day-flyers': { target: 10, unit: '張', label: '傳單' },
+  'school-flyers': { target: 10, unit: '張', label: '傳單' },
+  // 貼紙線
+  'waterproof-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'transparent-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'removable-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'small-batch-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'die-cut-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'foil-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'security-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'fluorescent-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  // 賀卡線
+  'premium-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
+  'thick-greeting-cards-400g': { target: 10, unit: '張', label: '賀卡' },
+  'foil-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
+  'spot-uv-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
+  'matte-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
+  'rounded-corner-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
+  // 書刊線
+  'catalog-printing': { target: 10, unit: '本', label: '書刊/畫冊' },
+  'saddle-stitch-booklets': { target: 10, unit: '本', label: '書刊/畫冊' },
+  'perfect-bound-books': { target: 10, unit: '本', label: '書刊/畫冊' },
+  'hardcover-books': { target: 10, unit: '本', label: '書刊/畫冊' },
+  'spiral-notebooks': { target: 10, unit: '本', label: '書刊/畫冊' },
+  'exercise-books': { target: 10, unit: '本', label: '書刊/畫冊' },
+  // 海報 (見 C: 按尺寸細分; 此處為 fallback)
+  'a1-posters': { target: 1, unit: '張', label: '海報 A1 噴繪' },
+  'a2-posters': { target: 10, unit: '張', label: '海報 A2/A3' },
+};
+
+/**
+ * B. 跨品類綜合頁 / 對比頁 — **不套用單一目標**, 需人工立門檻組。
+ *
+ * 判據 (任一即算): slug 含指南/對比類詞 **且** 內容同時覆蓋 ≥2 個支柱品類。
+ * 這些頁的「100 張起印」通常係**多品類共同描述**, 唔應該被改成單一品類的 10 或 1。
+ */
+export const CROSS_CATEGORY_PAGES: { match: RegExp; note: string }[] = [
+  { match: /rush-printing-hk-guide|即日急件/, note: '即日印刷綜合頁: 涵蓋展會/投標/海報/傳單/易拉寶/貼紙 ⇒ 需列各品類門檻' },
+  { match: /instant-printing|即日印刷/, note: '即日印刷綜合頁 (跨品類)' },
+  { match: /printing-cost-baseline|成本基準/, note: '成本基準比較頁 (跨品類)' },
+  { match: /print-specifications-reference|規格速查/, note: '規格速查參考頁 (跨品類)' },
+  // 多尺寸/多物料套裝頁 (例: 馬拉松賽事 = A1/A2 海報 + 跑手包 + 賽事指南 全套)
+  { match: /marathon|賽事|跑手包|スタートアーチ|起跑拱門/, note: '多尺寸/多物料套裝頁 (海報 + 周邊打包) ⇒ 唔可用單一尺寸門檻' },
+  { match: /-vs-|對比|比較/, note: '品類/規格對比頁' },
+];
+
+/** 判斷某文章 slug / 文本是否屬跨品類綜合頁 */
+export function isCrossCategoryPage(slugOrText: string): { cross: boolean; note?: string } {
+  for (const c of CROSS_CATEGORY_PAGES) {
+    if (c.match.test(slugOrText)) return { cross: true, note: c.note };
+  }
+  return { cross: false };
+}
+
+/**
+ * C. 海報按尺寸細分目標。
+ *
+ * 事實依據 (2026-09-19 實查 src/data/price-tables/posters.json):
+ *   · A1 config ×2 (PP/環保 Yupo、相紙) — 噴繪成品, 價階 qty 由 **1** 起 (modeled 檔)
+ *   · A2 config ×6 / A3 config ×6 (銅版紙/啞粉紙 × 157g/250g × 單/雙面) — 價階 qty 由 **10** 起
+ *   ⇒ 同一「海報」品類內, A1 與 A2/A3 的起印量本就不同, 唔可以用單一 target。
+ *
+ * ⚠ 其餘海報 SKU (outdoor/display/art/adhesive-posters) 目前 **無 price table、
+ *   minQuantity 仍為 100** ⇒ 本表暫列 100 (沿用現況), 是否放寬為 10 待 K3 拍板。
+ */
+export const POSTER_SIZE_TARGETS: { match: RegExp; target: number; unit: string; label: string; evidence: string }[] = [
+  { match: /\bA1\b|A1\s|A1•|A1噴繪|A1 噴繪/i, target: 1, unit: '張', label: '海報 A1 噴繪', evidence: 'posters.json A1 config 價階自 qty=1 起 (噴繪無製版)' },
+  { match: /\bA2\b|\bA3\b|A2|A3/i, target: 10, unit: '張', label: '海報 A2/A3', evidence: 'posters.json A2/A3 config 價階自 qty=10 起' },
+  { match: /outdoor-posters|display-posters|art-posters|adhesive-posters|戶外海報|展架海報|藝術海報|背膠海報/i, target: 100, unit: '張', label: '海報 (其他, 現況 100)', evidence: '無 price table, minQuantity 仍 100; 是否放寬待 K3 拍板' },
+];
+
+/** 依文字判定海報子品類目標 (取第一個命中; A1 優先於 A2/A3) */
+export function posterTargetFromText(text: string): { target: number; unit: string; label: string; evidence: string } | null {
+  for (const r of POSTER_SIZE_TARGETS) if (r.match.test(text)) return { target: r.target, unit: r.unit, label: r.label, evidence: r.evidence };
+  return null;
+}
+
+/* ============================================================================
  * 「價目同步波」工具 (K3 2026-09-19 規劃)
  * ============================================================================
  * 為什麼需要: 站內大量字串同時含 MOQ 口徑與價目檔位, 例如
