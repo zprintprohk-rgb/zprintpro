@@ -1,0 +1,250 @@
+{
+  "total": 778,
+  "terms": [
+    {
+      "term": "國際認證體系",
+      "chars": 270,
+      "files": {
+        "src/data/blog-data/en.json": 270
+      }
+    },
+    {
+      "term": "進口印刷設備",
+      "chars": 240,
+      "files": {
+        "src/data/blog-data/en.json": 240
+      }
+    },
+    {
+      "term": "認證紙",
+      "chars": 72,
+      "files": {
+        "src/data/blog-data/en.json": 72
+      }
+    },
+    {
+      "term": "急件",
+      "chars": 34,
+      "files": {
+        "src/data/blog-data/en.json": 34
+      }
+    },
+    {
+      "term": "截單",
+      "chars": 34,
+      "files": {
+        "src/data/blog-data/en.json": 34
+      }
+    },
+    {
+      "term": "答案",
+      "chars": 24,
+      "files": {
+        "src/data/blog-data/en.json": 24
+      }
+    },
+    {
+      "term": "深圳市彩龍印刷包裝有限公司",
+      "chars": 13,
+      "files": {
+        "src/app/[locale]/payment-methods/page.tsx": 13
+      }
+    },
+    {
+      "term": "輸入六色印刷設備",
+      "chars": 8,
+      "files": {
+        "src/data/buying-guides.ts": 8
+      }
+    },
+    {
+      "term": "批量以上",
+      "chars": 8,
+      "files": {
+        "src/data/buying-guides.ts": 8
+      }
+    },
+    {
+      "term": "月最後黃金窗",
+      "chars": 6,
+      "files": {
+        "src/app/[locale]/category/[slug]/page.tsx": 6
+      }
+    },
+    {
+      "term": "月前就位",
+      "chars": 4,
+      "files": {
+        "src/app/[locale]/category/[slug]/page.tsx": 4
+      }
+    },
+    {
+      "term": "中国本土",
+      "chars": 4,
+      "files": {
+        "src/components/layout/Footer.tsx": 4
+      }
+    },
+    {
+      "term": "時間対応",
+      "chars": 4,
+      "files": {
+        "src/components/layout/Footer.tsx": 4
+      }
+    },
+    {
+      "term": "香港現地",
+      "chars": 4,
+      "files": {
+        "src/components/layout/Footer.tsx": 4
+      }
+    },
+    {
+      "term": "餐牌",
+      "chars": 4,
+      "files": {
+        "src/data/blog-data/en.json": 4
+      }
+    },
+    {
+      "term": "彩龍印刷",
+      "chars": 4,
+      "files": {
+        "src/data/blog-data/en.json": 4
+      }
+    },
+    {
+      "term": "认证体系",
+      "chars": 4,
+      "files": {
+        "src/data/blog-posts.ts": 4
+      }
+    },
+    {
+      "term": "燙金名片",
+      "chars": 4,
+      "files": {
+        "src/data/sku-seo-data.ts": 4
+      }
+    },
+    {
+      "term": "唐运提",
+      "chars": 3,
+      "files": {
+        "src/app/[locale]/payment-methods/page.tsx": 3
+      }
+    },
+    {
+      "term": "万邑通",
+      "chars": 3,
+      "files": {
+        "src/data/blog-data/en.json": 3
+      }
+    },
+    {
+      "term": "騎馬釘",
+      "chars": 3,
+      "files": {
+        "src/data/blog-data/en.json": 3
+      }
+    },
+    {
+      "term": "核心頁",
+      "chars": 3,
+      "files": {
+        "src/data/blog-data/en.json": 3
+      }
+    },
+    {
+      "term": "坑紙",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "衍生",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "紅包",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "中綴",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "细分",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "月",
+      "chars": 2,
+      "files": {
+        "src/data/blog-data/en.json": 2
+      }
+    },
+    {
+      "term": "满足",
+      "chars": 2,
+      "files": {
+        "src/data/category-seo-content.ts": 2
+      }
+    },
+    {
+      "term": "镂空",
+      "chars": 2,
+      "files": {
+        "src/data/category-seo-content.ts": 2
+      }
+    },
+    {
+      "term": "離島",
+      "chars": 2,
+      "files": {
+        "src/data/category-seo-content.ts": 2
+      }
+    },
+    {
+      "term": "名片",
+      "chars": 2,
+      "files": {
+        "src/data/sku-seo-data.ts": 2
+      }
+    },
+    {
+      "term": "厚口",
+      "chars": 2,
+      "files": {
+        "src/data/sku-seo-data.ts": 2
+      }
+    },
+    {
+      "term": "箔押",
+      "chars": 2,
+      "files": {
+        "src/data/sku-seo-data.ts": 2
+      }
+    },
+    {
+      "term": "段",
+      "chars": 1,
+      "files": {
+        "src/data/blog-data/en.json": 1
+      }
+    }
+  ]
+}
