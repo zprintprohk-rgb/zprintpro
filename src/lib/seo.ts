@@ -603,8 +603,8 @@ const categorySeoData: Record<string, {
   },
   'books': {
     titles: {
-      'zh-hk': '騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
-      'en': 'Catalog & Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro',
+      'zh-hk': '騎馬釘小冊子印刷 10本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
+      'en': 'Catalog & Booklet Printing from $1.20 | 10 MOQ + Saddle Stitch | ZprintPro',
       'ja': '冊子印刷｜50部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
@@ -613,14 +613,14 @@ const categorySeoData: Record<string, {
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
     descriptions: {
-      'zh-hk': '書刊印刷 50 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'zh-hk': '書刊印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
       'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
       'ja': '冊子印刷 50 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'educational': {
     titles: {
-      'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印港',
+      'zh-hk': '校園教育印刷 · 證書/作業簿/教材 學校批量優惠 FSC認證 30秒報價 | 智印港',
       en: 'Education Printing 100 MOQ | Certificates / Workbooks / Textbooks Bulk Discount | ZprintPro',
       ja: '教育印刷 100部〜 | 証明書・ワークブック・教科書 学校一括割引 FSC認証 | ZprintPro',
     },
@@ -630,7 +630,7 @@ const categorySeoData: Record<string, {
       ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
     },
     descriptions: {
-      'zh-hk': '校園教育印刷 100 本起印. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      'zh-hk': '校園教育印刷. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
       en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
