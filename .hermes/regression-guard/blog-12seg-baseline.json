@@ -1,7 +1,7 @@
 {
  "schema": "blog-12seg-baseline/v1",
  "note": "12 段骨架存量 FAIL 基线 (语义 = 只许递减, --baseline 模式自动递减; --no-prune 可关闭)。刷新: node scripts/guards/blog-quality-12-rules-guard.js --stamp-baseline",
- "updated_at": "2026-09-19T16:15:37.850Z",
+ "updated_at": "2026-09-19T16:42:41.397Z",
  "fails": [
   "en|campus-education-printing-pillar-guide|12|FAIL",
   "en|campus-education-printing-pillar-guide|6|FAIL",
@@ -32,10 +32,7 @@
   "ja|poster-printing-guide|6|FAIL",
   "ja|poster-printing-guide|7|FAIL",
   "ja|poster-printing-guide|8|FAIL",
-  "ja|sticker-material-pvc-vinyl-removable|11|FAIL",
   "ja|sticker-material-pvc-vinyl-removable|3|FAIL",
-  "ja|sticker-material-pvc-vinyl-removable|6|FAIL",
-  "ja|sticker-material-pvc-vinyl-removable|7|FAIL",
   "ja|sticker-material-pvc-vinyl-removable|8|FAIL",
   "zh-hk|campus-education-printing-pillar-guide|12|FAIL",
   "zh-hk|campus-education-printing-pillar-guide|6|FAIL",

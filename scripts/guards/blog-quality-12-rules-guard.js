@@ -168,7 +168,8 @@ function checkSegmentsOffline(file, locale, slug, value) {
   //     ② 实测判例: poster-printing-guide 的 en/ja 用 <h3> 作主段锚 (<h2> = 0) —— 段群结构真实存在,
   //        语义上是问句主段; 旧规则只看 H2 ⇒ 直接判 FAIL = 过度严格。
   //     ③ 不选方案 b (把 h3 提升为 h2): 会改动已上线 DOM 结构 (churn) 且影响锚点/样式。
-  //   判据: (H2+H3) 总数 ≥6 且 (H2+H3) 中问句式 > 50%。
+  //   判据 (K3 2026-09-19 裁决 iii, 与 SSoT §3.1 字面统一): (H2+H3) 总数 ≥6 且 问句式 **≥50%（含边界）**。
+  //   口径分叉已消除: 原实现为「非问句 ≤ 问句」(等价 ≥50% 含边界), SSoT 字面原写「>50%」⇒ 已同步为「≥50%」。
   const h2re = /<h2[^>]*>([\s\S]*?)<\/h2>/gi; let hm;
   const h3re = /<h3[^>]*>([\s\S]*?)<\/h3>/gi; let hm3;
   const Q_RE = /[?？]|\b(how|what|why|when|which|can|does|is|are|should|much|many|long)\b|多少|怎樣|如何|什麼|哪|是否|邊款|邊個|幾多|いくら|どう|なに|どの|できる|選び方|違い|種類|相場/;

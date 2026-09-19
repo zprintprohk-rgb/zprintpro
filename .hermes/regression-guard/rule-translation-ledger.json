@@ -1,28 +1,28 @@
 {
  "schema": "rule-translation-ledger/v1",
  "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
- "updated_at": "2026-09-19T16:37:29.794Z",
+ "updated_at": "2026-09-19T16:42:20.262Z",
  "bindings": {
   "blog-12-segment-skeleton": {
    "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "ceff0c2691a619e968119308439bd055dbc521848bc7832ed372d531afefad7d"
+    "sha256": "4a52002c0492b78c979d1bbf0f4e963cd3f1f62029e3f6235f6c32496c7dcf06"
    },
    "producers": [
     {
      "path": ".hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
-     "sha256": "48179f3706967e477c5074212ccc3cd370ec3f7fef7fa17107b797e5da4a49de"
+     "sha256": "568ef9d8a6a9b60a84a783e1971ae5d5e16b22ecf3a4215280f656f72d90b138"
     },
     {
      "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
-     "sha256": "2345397cc573a49c3a6032cf0860cc7a3be9815674a0c61f894c0c691c2e07ea"
+     "sha256": "480e764fa027ccb4224af6d38d28c3a09cd778a3c7b1b42ad5ca3b30be8f9d92"
     }
    ],
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "acd138809cce298f30797916e2dc895723c878d89f81511c1efe744a0008eea3"
+     "sha256": "486afbdf1abe855f2163d31a7934cd28b580550bbd2ee235e320516ea94ab01a"
     },
     {
      "path": "scripts/guards/internal-links-cta-guard.js",
@@ -57,18 +57,18 @@
    "title": "Schema 单一来源 = page.tsx (content 禁内嵌 JSON-LD)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "ceff0c2691a619e968119308439bd055dbc521848bc7832ed372d531afefad7d"
+    "sha256": "4a52002c0492b78c979d1bbf0f4e963cd3f1f62029e3f6235f6c32496c7dcf06"
    },
    "producers": [
     {
      "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
-     "sha256": "2345397cc573a49c3a6032cf0860cc7a3be9815674a0c61f894c0c691c2e07ea"
+     "sha256": "480e764fa027ccb4224af6d38d28c3a09cd778a3c7b1b42ad5ca3b30be8f9d92"
     }
    ],
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "acd138809cce298f30797916e2dc895723c878d89f81511c1efe744a0008eea3"
+     "sha256": "486afbdf1abe855f2163d31a7934cd28b580550bbd2ee235e320516ea94ab01a"
     }
    ]
   }
