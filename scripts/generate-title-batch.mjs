@@ -121,7 +121,107 @@ function gates(title, locale, trace) {
   return { equiv: e, gates: g, allPass: g.every((x) => x.pass) };
 }
 
-/* ---------- 5. 候选构建 (最小增量: 保留既有段 + 只补缺失钩子) ----------
+/* ---------- 5-Trim. 超限修剪 (P2 playbook, a2-posters 验证过) ----------
+ * 目标: 当量 >58 → 降到 50-57。原则 (§7 红线):
+ *   ① 主词一字不改  ② **数字钩子优先保** (K3: CTR 弹药)  ③ 先删**无效填充**, 再删**离主词最远的修饰**
+ *   ④ **不新增任何数字** (修剪只做减法)  ⑤ 删后 ≥50, 否则该槽位标记需人工补写
+ * 有效填充/无效填充判据来自 2026-09-19 实证: `品質保證` / `香港印刷專家` 在线上 SKU 标题中
+ *   属模板填充 (无差异化价值), 且被 K3 v4「写满原则」点名应替换为数字钩子。
+ */
+const FILLER_RE = /品質保證|香港印刷專家|日本向け高品質印刷|品質檢驗/;
+const HOOK_RE = /HK\$|US\$|\$\d|¥\d|\d{1,4}\s*(?:張|個|本|套|份|枚|pcs|MOQ|%)?[^\s|｜]{0,6}(?:起印|起訂|起|〜|から|MOQ|枚)/i;
+
+/* ★ 悬空碎片守卫 (2026-09-19 实测踩坑): 子段截尾会切出**不完整的短语**:
+ *   `Free 2h Proof` → `Free` ; `Free US Ship` → `Free US` ; `食品用紙箱・耐油カード` → `食品用紙箱・` ;
+ *   `中綴じ / 無線綴じ` → `中綴じ /` ; `防水 PVC 異形切割 2h 打稿` → `… 2h`。
+ *   这类碎片对用户是**破损文本**, 绝不能上线。
+ * 判据 (任一即视为悬空 → 拒绝该截尾):
+ *   ① 以分隔符/连接符结尾 (`/` `・` `-` `+` `&` `、`)
+ *   ② 末 token 是「裸数量单位」(`2h` `24h` `4h`) 或裸数字
+ *   ③ 末 token 属连接/介词类英文词 (Free/US/UK/and/from/with/the/Ship/Print 等), 即被截断的复合短语残部
+ *   ④ 末 token 是 CJK 单字连接词 (的/與/和/及/或/用/為)
+ */
+const DANGLING_TAIL = /(?:\/|・|-|\+|&|、)\s*$/;
+const BARE_UNIT = /^(?:\d+\s*(?:h|hr|hrs|mm|cm|g|kg|mil|dpi|%)|\d+)$/i;
+const CONNECTOR = /^(?:free|us|uk|au|and|from|with|the|ship|shipping|print|printing|proof|design|day|days|hour|hours)$/i;
+const CJK_CONJ = /[的與和及或用為]$/;
+function isDangling(s) {
+  const t = String(s).trim();
+  if (!t) return true;
+  if (DANGLING_TAIL.test(t)) return true;
+  const toks = t.split(/[\s・/]+/).filter(Boolean);
+  const lastTok = toks[toks.length - 1] || '';
+  if (BARE_UNIT.test(lastTok)) return true;
+  if (CONNECTOR.test(lastTok)) return true;
+  if (CJK_CONJ.test(t)) return true;
+  return false;
+}
+
+function buildTrimCandidates(slug, locale, p, slot) {
+  const cur = slot.current_title || '';
+  const segs = String(cur).split(/\s*[|｜]\s*/).map((s) => s.trim()).filter(Boolean);
+  const brand = BRAND[locale];
+  const head = segs[0] || '';
+  const tailIsBrand = segs[segs.length - 1] === brand;
+  const mid = segs.slice(1, tailIsBrand ? segs.length - 1 : segs.length);
+  const ms = moqStatusOf(slug, locale, p);
+  if (ms.status === 'MANUAL_REVIEW') return { skipped: 'MANUAL_REVIEW — 不生成, 待人工裁决', ms };
+
+  const hooks = mid.filter((s) => HOOK_RE.test(s));
+  const others = mid.filter((s) => !HOOK_RE.test(s));
+  const fillers = others.filter((s) => FILLER_RE.test(s));
+  // 可删修饰 = 非填充、非钩子 (保留在原序)
+  const mods = others.filter((s) => !FILLER_RE.test(s));
+  // 钩子合并为一段 (省当量); 若原值被判错 (TRUE_DRIFT) 则整段剔除, 由裁决真值重建
+  let hookSeg = hooks.join(' ');
+  const trace = [];
+  if (ms.status === 'USE_RULING_TRUTH') {
+    hookSeg = [moqPhrase(ms.status, ms.value, locale), pricePhrase(p, locale)].filter(Boolean).join(' ');
+    trace.push({ text: moqPhrase(ms.status, ms.value, locale) || '', src: ms.src });
+  } else if (hookSeg) {
+    trace.push({ text: hookSeg, src: '保留原钩子 (修剪只做减法, 不新增数字)' });
+  }
+  const join = (parts) => { const u = [...new Set(parts.filter(Boolean))]; let c = u.join(' | '); if (!new RegExp(`[|｜]\\s*${brand}\\s*$`).test(c)) c = `${c} | ${brand}`; return c; };
+
+  const out = [];
+  const variants = [
+    { tag: 'B', parts: [head, ...mods, hookSeg], tagDesc: '删填充, 保修饰' },
+    { tag: 'A', parts: [head, hookSeg], tagDesc: '删填充+修饰' },
+  ];
+  for (let k = mods.length - 1; k >= 0; k--) {
+    variants.push({ tag: `C${mods.length - k}`, parts: [head, ...mods.slice(0, k), hookSeg], tagDesc: `保前 ${k} 修饰` });
+  }
+  /* ★ 2026-09-19 补: **子段级修剪** (段级删除粒度太粗, 会从 35 直接跳到 63, 中间无解)。
+   *   实测 small-batch-stickers/zh-hk: `小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港`
+   *     = 63; 删掉整个修饰段 → 35 (<50) ⇒ 段级无解。
+   *   做法: 对**最后一个可删修饰段**按 token 边界逐步截尾 (保留原分隔符与词序), 产生中间长度候选。
+   *   例: `防水 PVC 異形切割 2h 打稿` → `防水 PVC 異形切割` → `防水 PVC`。
+   */
+  if (mods.length) {
+    const last = mods[mods.length - 1];
+    const toks = last.split(/(\s+|・)/).filter((x) => x !== '');
+    for (let n = toks.length - 1; n >= 1; n--) {
+      const pref = toks.slice(0, n).join('').trim();
+      if (!pref) continue;
+      if (pref === last) continue;
+      if (isDangling(pref)) continue;   // ★ 悬空碎片守卫 (见下)
+      variants.push({ tag: `T${n}`, parts: [head, ...mods.slice(0, -1), pref, hookSeg], tagDesc: `末段截尾 → "${pref}"` });
+    }
+  }
+  for (const v of variants) {
+    const cand = join(v.parts);
+    const g = gates(cand, locale, trace.length ? trace : [{ text: hookSeg || '(无钩子)', src: '修剪减法, 未新增数字' }]);
+    out.push({ variant: v.tag, title: cand, equiv: g.equiv, gates: g.gates, allPass: g.allPass, trace, variantDesc: v.tagDesc, droppedFillers: fillers });
+  }
+  const anyPass = out.some((c) => c.allPass);
+  return {
+    ms, candidates: out, longtail: null, mode: 'trim', fillersFound: fillers,
+    // 纯减法无解 ⇒ 需改写 (替换/缩短某段), 不由生成器猜
+    needsRewrite: anyPass ? null : '纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜',
+  };
+}
+
+/* ---------- 5. 候选构建 (最小增量: 保留既有段 + 只补缺失钩子, FILL 用)
  * ★ 2026-09-19 设计修正 (首版失败留痕): 首版把现有标题**整段替换**成「主词+尺寸+MOQ+价格」,
  *   结果 ① 丢掉既有的 spec-true 修饰 (如 `防水 PVC 異形切割`) ② 当量反而掉到 36-48 (目标 50-57)
  *   ③ 尺寸取自 specs.size 的**最小值** (如 `10×10mm`), 当卖点会误导。
@@ -206,8 +306,17 @@ for (const [slug, entry] of Object.entries(bank.skus)) {
 
 const results = [];
 for (const r of rows) {
-  const built = buildCandidates(r.slug, r.locale, r.entry, r.slot);
-  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, ...built });
+  const isTrim = r.slot.band === 'TRIM' || /^P2/.test(r.batch || '');
+  const built = isTrim
+    ? buildTrimCandidates(r.slug, r.locale, r.entry, r.slot)
+    : buildCandidates(r.slug, r.locale, r.entry, r.slot);
+  // 修剪模式: 优选「删得最少但仍 ≤57」的候选 (churn 最小); 生成模式: 优选变体 A
+  if (isTrim && built.candidates) {
+    const passing = built.candidates.filter((c) => c.allPass);
+    const byMinChange = [...passing].sort((a, b) => b.equiv - a.equiv); // 尽量写满 (越高越接近原状)
+    built.candidates = [...new Set([...byMinChange, ...built.candidates])];
+  }
+  results.push({ slug: r.slug, locale: r.locale, batch: r.batch, imps: r.slot.imps, pos: r.slot.pos, current: r.slot.current_title, currentEquiv: r.slot.equiv, moq: r.ms, mode: isTrim ? 'trim' : 'fill', ...built });
 }
 
 /* ---------- 7. 输出 ---------- */
