@@ -1,14 +1,13 @@
 {
  "schema": "blog-12seg-baseline/v1",
  "note": "12 段骨架存量 FAIL 基线 (语义 = 只许递减, --baseline 模式自动递减; --no-prune 可关闭)。刷新: node scripts/guards/blog-quality-12-rules-guard.js --stamp-baseline",
- "updated_at": "2026-09-19T16:42:41.397Z",
+ "updated_at": "2026-09-19T17:16:44.181Z",
  "fails": [
   "en|campus-education-printing-pillar-guide|12|FAIL",
   "en|campus-education-printing-pillar-guide|6|FAIL",
   "en|campus-education-printing-pillar-guide|7|FAIL",
   "en|foil-stamping-3-applications-2026|12|FAIL",
   "en|foil-stamping-3-applications-2026|8|FAIL",
-  "en|foil-stamping-3-applications-2026|9|FAIL",
   "en|packaging-box-pricing-2026|12|FAIL",
   "en|packaging-box-pricing-2026|8|FAIL",
   "en|poster-printing-guide|10|FAIL",
@@ -23,7 +22,6 @@
   "ja|campus-education-printing-pillar-guide|6|FAIL",
   "ja|campus-education-printing-pillar-guide|7|FAIL",
   "ja|foil-stamping-3-applications-2026|8|FAIL",
-  "ja|foil-stamping-3-applications-2026|9|FAIL",
   "ja|packaging-box-pricing-2026|12|FAIL",
   "ja|packaging-box-pricing-2026|6|FAIL",
   "ja|packaging-box-pricing-2026|8|FAIL",
@@ -39,7 +37,6 @@
   "zh-hk|campus-education-printing-pillar-guide|7|FAIL",
   "zh-hk|foil-stamping-3-applications-2026|12|FAIL",
   "zh-hk|foil-stamping-3-applications-2026|8|FAIL",
-  "zh-hk|foil-stamping-3-applications-2026|9|FAIL",
   "zh-hk|packaging-box-pricing-2026|11|FAIL",
   "zh-hk|packaging-box-pricing-2026|12|FAIL",
   "zh-hk|packaging-box-pricing-2026|8|FAIL",
@@ -50,32 +47,5 @@
   "zh-hk|sticker-material-pvc-vinyl-removable|12|FAIL",
   "zh-hk|sticker-material-pvc-vinyl-removable|3|FAIL",
   "zh-hk|sticker-material-pvc-vinyl-removable|8|FAIL"
- ],
- "accepted_deviations": [
-  {
-   "key": "zh-hk|sticker-material-pvc-vinyl-removable|3|FAIL",
-   "reason": "K3 2026-09-19 裁决 (iii) 统一 >=50% 口径后, sticker 三语段 3 问句占比 40-47% (zh-hk 7/15 / ja 7/15 / en 6/15, 三语一致差 <=7pt) 低于 50%; 全量问句化改写会新增 6+ 处未经授权的文案改动, 故按已接受偏差处理。",
-   "reviewed_by": "K3 (2026-09-19 建议登记)",
-   "registered_at": "2026-09-19",
-   "review_due": "2026-12-19",
-   "review_cadence": "quarterly (与 cron-prompts 豁免 review 同步)"
-  },
-  {
-   "key": "en|sticker-material-pvc-vinyl-removable|3|FAIL",
-   "reason": "同上 (三语同一偏差)",
-   "reviewed_by": "K3",
-   "registered_at": "2026-09-19",
-   "review_due": "2026-12-19",
-   "review_cadence": "quarterly"
-  },
-  {
-   "key": "ja|sticker-material-pvc-vinyl-removable|3|FAIL",
-   "reason": "同上 (三语同一偏差)",
-   "reviewed_by": "K3",
-   "registered_at": "2026-09-19",
-   "review_due": "2026-12-19",
-   "review_cadence": "quarterly"
-  }
- ],
- "accepted_deviations_note": "已接受偏差 (accepted deviation): 语义 = 已知并接受, 与 fails (待清债务) **分离**; 到期未 review 由门童报 WARN。口径来源 SSoT §7.5 + K3 2026-09-19 评估建议。"
+ ]
 }
