@@ -47,6 +47,8 @@ console.log('✅ 硬门: 两法已统一 (SKU/行键/语义一致) → 允许生
 
 /* ---------- 1. 载入输入 ---------- */
 const bank = read('.hermes/reports/title-input-bank-2026-09-19.json');
+let SHORT_HOOKS = harvestShortHooks(bank);
+console.log('✅ 短钩子池 (线上既有, 按 locale 分池): ' + LOCALES.map((l) => `${l}=[${(SHORT_HOOKS[l] || []).map((h) => h.text).join(' / ') || '(空)'}]`).join('  |  '));
 const cls = read('.hermes/reports/moq-precision-classification-2026-09-19.json');
 const clsOf = {};
 for (const it of cls.items) clsOf[`${it.slug}|${it.locale || '?'}`] = it;
@@ -94,7 +96,48 @@ function pricePhrase(p, locale) {
   return `¥${v}〜`;
 }
 
-/* ---------- 4. 四道闸门 ---------- */
+/* ---------- 4.5 短钩子池: 从**线上既有标题**采集 (K3 2026-09-19 决策) ----------
+ * 问题: 替换池只有 MOQ+basePrice 两个元素 ⇒ `… | 10 MOQ | ZprintPro` = 46 当量 (<50)
+ *   ⇒ 必须再加价格段 ⇒ 产出**裸价格** `$0.32`(无单位语境) = hook 质量倒退。
+ * 解法: 采集**已上线**的短钩子复用 (来源 = 现行文案, **不引入新数字**)。
+ * 纪律:
+ *   ① 只收**服务承诺类**钩子 (Free/Proof/Ship/Design/校正/打稿/交貨/delivery/turnaround)
+ *      —— 全站统一承诺, 非 SKU 专有数字 ⇒ 跨 SKU 复用安全;
+ *      SKU 专有数字 (MOQ/价格) **绝不跨 SKU 复用**。
+ *   ② 频次 ≥3 才算「全站既有约定」(单次出现不足以证明是既定承诺)。
+ *   ③ 记录证据 (出现次数), 供复核追溯。
+ *   ★ ④ **必须按 locale 分池** (2026-09-19 致命踩坑): 首版跨 locale 共用池 ⇒
+ *      `Free US Ship` (en 钩子) 被塞进 **ja** 标题: `両面カラー印刷 両面チラシ | Free US Ship | ZprintPro`
+ *      —— 向日本用户承诺「美国免运费」= **跨市场错误文案**。G3 只查字形污染, 挡不住语义错配。
+ *      ⇒ 池按 locale 隔离; 绝不跨语言复用服务承诺。
+ */
+function harvestShortHooks(bank) {
+  const SERVICE_RE = /free|proof|ship|shipping|design|turnaround|delivery|校正|打稿|交貨|交期|配送|送料|設計|设计/i;
+  const perLocale = { 'zh-hk': new Map(), en: new Map(), ja: new Map() };
+  for (const entry of Object.values(bank.skus)) {
+    for (const [locale, slot] of Object.entries(entry.slots)) {
+      if (!perLocale[locale]) continue;
+      const t = slot.current_title || '';
+      for (const seg of String(t).split(/\s*[|｜]\s*/).map((s) => s.trim()).filter(Boolean)) {
+        if (equiv(seg) > 12) continue;
+        if (equiv(seg) < 3) continue;
+        if (!SERVICE_RE.test(seg)) continue;
+        if (/ZprintPro|智印港|ジープリント/.test(seg)) continue;
+        // ★ 同语言校验: 段内不得含**其他语言**的字符 (en 段不许有 CJK; CJK 段不许有英文实词)
+        if (locale === 'en' && /[\u2E80-\u9FFF\u3040-\u30FF]/.test(seg)) continue;
+        if (locale !== 'en' && /[A-Za-z]{3,}/.test(seg)) continue;   // 排除 "Free US Ship" 进入 CJK 池
+        const m = perLocale[locale];
+        m.set(seg, (m.get(seg) || 0) + 1);
+      }
+    }
+  }
+  const out = {};
+  for (const loc of Object.keys(perLocale)) {
+    out[loc] = [...perLocale[loc].entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1])
+      .map(([text, n]) => ({ text, n, src: `线上既有短钩子 (${loc}, ${n} 处在用, 服务承诺类)` }));
+  }
+  return out;
+}
 function gates(title, locale, trace) {
   const e = equiv(title);
   const g = [];
@@ -155,22 +198,33 @@ function buildSubstCandidates(slug, locale, p, slot) {
   }
   const pp = pricePhrase(p, locale);
   if (pp) pool.push({ text: pp, src: `products.ts basePrice=${p.basePrice[locale]}` });
+  // ★ 扩池 (K3 决策): 线上既有短钩子 —— 优先于裸价格 (质量优先)
+  const harvested = ((SHORT_HOOKS && SHORT_HOOKS[locale]) || []).slice(0, 8);
+  for (const h of harvested) pool.push(h);
 
   const join = (parts) => { const u = [...new Set(parts.filter(Boolean))]; let c = u.join(' | '); if (!new RegExp(`[|｜]\\s*${brand}\\s*$`).test(c)) c = `${c} | ${brand}`; return c; };
   const out = [];
-  // drop = 丢掉的「最长钩子」个数; keep = 从替换池取几个
+  // 池排序: MOQ 优先, 线上既有短钩子次之, **价格最后** (裸价格质量最弱, 只在必要时用)
+  const moqFirst = pool.filter((x) => /MOQ|個起|枚〜|張起|本起|枚から/.test(x.text) && !/^[¥$]|HK\$/.test(x.text));
+  const harvestedPool = pool.filter((x) => /线上既有/.test(x.src));
+  const priceLast = pool.filter((x) => !moqFirst.includes(x) && !harvestedPool.includes(x));
+  const ordered = [...moqFirst, ...harvestedPool, ...priceLast];
+  // 组合枚举: 取 1 个 + 取 2 个 (不做前缀堆叠, 防过长)
+  const combos = [];
+  for (let i = 0; i < ordered.length; i++) combos.push([ordered[i]]);
+  for (let i = 0; i < ordered.length; i++) for (let j = i + 1; j < ordered.length; j++) combos.push([ordered[i], ordered[j]]);
+  // drop = 丢掉的「最长钩子」个数
   for (let drop = 1; drop <= longHooks.length; drop++) {
     const keptLong = longHooks.slice(drop);
-    for (let keep = 0; keep <= pool.length; keep++) {
-      const repl = pool.slice(0, keep);
+    for (const repl of combos) {
       const parts = [head, ...mods, ...keptLong, ...shortHooks, ...repl.map((r) => r.text)];
       const cand = join(parts);
       const trace = [
-        { text: repl.map((r) => r.text).join(' '), src: repl.map((r) => r.src).join(' / ') || '未引入新数字' },
+        { text: repl.map((r) => r.text).join(' + '), src: repl.map((r) => r.src).join(' / ') },
         { text: longHooks.slice(0, drop).join(' '), src: `移除超长钩子 (${longHooks.slice(0, drop).map(eq).join('/')} 当量 ⇒ 替换为来源可溯短钩子)` },
       ];
       const g = gates(cand, locale, trace);
-      out.push({ variant: `S${drop}${keep}`, title: cand, equiv: g.equiv, gates: g.gates, allPass: g.allPass, trace, replCount: repl.length, hasBarePrice: repl.some((r) => /^\$\d|^¥\d/.test(r.text)), variantDesc: `丢 ${drop} 长钩子 + 取 ${keep} 短钩子` });
+      out.push({ variant: `S${drop}_${repl.length}`, title: cand, equiv: g.equiv, gates: g.gates, allPass: g.allPass, trace, replCount: repl.length, hasBarePrice: repl.some((r) => /^[¥$]\d|^HK\$\d/.test(r.text)), variantDesc: `丢 ${drop} 长钩子 + 替换 ${repl.map((r) => r.text).join('+')}` });
     }
   }
   const anyPass = out.some((c) => c.allPass);
