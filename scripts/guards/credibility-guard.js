@@ -121,6 +121,16 @@ async function scan(files) {
     for (const rule of RULES) {
       // 不豁免规则在豁免路径也强制扫描
       if (common.isExemptPath(file) && !common.isNonExemptRule(rule.id)) continue;
+      /**
+       * 2026-09-19 收口 (K3 拍板对齐): `CRED_HEIDELBERG` 已由 K3 选 A「**允许**」——
+       *   设备品牌名 (Heidelberg / HP Indigo) 属**行业标准识认**, 批为白名单 (见 AGENTS.md SOP-10 第 3 款「12 件事属实」)。
+       *   因此: 在「**规则书 / 证据日志类路径**」(FULL_EXEMPT_PATHS: AGENTS.md / .hermes/logs|reports|memory 等**不上线内容**)
+       *   中, 该规则的**字面命中属必然误报** —— 因为写术语表、写裁定说明就是会引用该词本身。
+       *   故对本规则额外尊重 FULL_EXEMPT_PATHS;
+       *   ⚠️ **上线面 (src/ public/) 的强制扫描完全不变** (NON_EXEMPT_RULES 的其余成员亦不变)。
+       *   可逆: 删除本 if 即恢复原行为。
+       */
+      if (rule.id === 'CRED_HEIDELBERG' && common.isFullExemptPath && common.isFullExemptPath(file)) continue;
 
       const hits = common.scanRule(content, file, rule);
       allHits.push(...hits);
