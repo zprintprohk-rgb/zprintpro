@@ -126,6 +126,22 @@ ASSERTIONS: PASS   (report 路径正确 / verdict 正确 / exit=4 正确)
 
 ## 六、下一阶段落地（K3 2026-09-19 指令：结果要喂给 **执行层**，不是喂给 K3）
 
+### 6.0 第二轮（P1/P3 收尾）实测结论
+
+| 项 | 结论 | 证据 |
+|----|------|------|
+| P3-10 幂等键 | ✅ 落地 | `idempotency_key = sha256(lane\|intent\|target\|day)[:16]`；单测：同模块/跨模块同日同目标一致、换天/换 intent 得新 key；负向用例注入重复 key → `warnings.DUPLICATE_IDEMPOTENCY_KEY 152fae94b2081d68` |
+| P3-11 恢复分类 | ✅ 落地 | `recovery_plan.action`：`blog-deepfix → modify_payload`（guard 拦 src commit 须先过断言）、`monthly-matrix → request_human`（窗口内无触发日但 `LastTaskResult=267011`） |
+| P3-12 8 态状态机 | ✅ 落地 | `state_machine` 迁移表导出；`blog-deepfix state=quarantined`、`weekly-meta state=completed` |
+| P1-3 K3 复盘 v2 | ✅ 文本完成（**未注册**） | `k3-ceo-daily-review.md` 第一输入 = `lane-status.json`；附处置表 + 注册方式；明示未注册 |
+| P1-5 锁互斥压测 | ✅ PASS | 两进程同时 `--acquire`：先到 `EXIT=0` 持锁，后到 `EXIT=10 blocked`（lock_free: ZP-daily-content 持锁 pid=10960）且不调用 dsh |
+| P1-6 legacy 断链 | ✅ PASS | `lane-status.mjs` / `lane-preflight.py` / `cron-watchdog.py` 全 clean；全仓 `jobs.json` 仅剩 2 处注释/独立清理脚本 |
+| P2-9 CJK 清理 | ✅ 落地 | `delete-legacy-watchdog.cmd` → 纯 ASCII（cmd.exe OEM 码页会吃掉 CJK） |
+
+**本轮又抓到 2 个真实缺陷（已修）**：
+1. **TDZ 崩溃**：幂等去重循环写在 `warnings`/`seenIdem` 声明之前 → `ReferenceError: Cannot access 'warnings' before initialization` ⇒ **整个对账器静默失效**（只在真正开始对账时才崩）。已把三个容器集中前移，并留注释记教训。
+2. **报告归属串档**：`monthly-matrix` 的最近报告曾被匹配成 `2026-09-19-cron-source-of-truth-findings.md`（本查案文档）⇒ 加**车道 token 归属判定**（文件名必须含车道名或完整 task 名），现正确显示 `—`。
+
 ### 6.1 结果回喂执行层（本批新增，闭环真正合上）
 
 | 件 | 作用 |
