@@ -1,22 +1,22 @@
 {
  "schema": "rule-translation-ledger/v1",
  "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
- "updated_at": "2026-09-19T16:15:49.254Z",
+ "updated_at": "2026-09-19T16:25:26.248Z",
  "bindings": {
   "blog-12-segment-skeleton": {
    "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "74bb54dc34c940aade600a91b6471b1e168b04868047c7acba41df326ac3c986"
+    "sha256": "7ea93106f7ad48e7d8ea00641b9c560e911388645501d98660d22fb41e9ce362"
    },
    "producers": [
     {
      "path": ".hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
-     "sha256": "3ca64eec7cc6e92ff0a4db2e5e173ce8046f8f1d4970a17f447e8b2fccb14438"
+     "sha256": "bb77e6341dcc41f04bcbca523bea149ad055472c7aeb1cee5916e5aa2c0fc34c"
     },
     {
      "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
-     "sha256": "bbb4934c501c8fe5b6f9264df2d52dfd98d331a03d6eec67561bafb518399ecf"
+     "sha256": "7bb932f96760bae07e99b69b79e8c4515e0364daba0aabf8f0365de2f3628629"
     }
    ],
    "guards": [
@@ -57,12 +57,12 @@
    "title": "Schema 单一来源 = page.tsx (content 禁内嵌 JSON-LD)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "74bb54dc34c940aade600a91b6471b1e168b04868047c7acba41df326ac3c986"
+    "sha256": "7ea93106f7ad48e7d8ea00641b9c560e911388645501d98660d22fb41e9ce362"
    },
    "producers": [
     {
      "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
-     "sha256": "bbb4934c501c8fe5b6f9264df2d52dfd98d331a03d6eec67561bafb518399ecf"
+     "sha256": "7bb932f96760bae07e99b69b79e8c4515e0364daba0aabf8f0365de2f3628629"
     }
    ],
    "guards": [
