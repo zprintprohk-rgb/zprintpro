@@ -217,6 +217,13 @@ function main() {
 
   const sched = schtasksSnapshot([...cfg.lanes.map((l) => l.task), cfg.watchdog?.task].filter(Boolean));
 
+  // 以下三个容器必须在任何使用之前初始化 (2026-09-19 两次实测踩到 TDZ:
+  // "Cannot access 'seenIdem'/'warnings' before initialization" -- 循环写在声明之前)
+  const seenIdem = new Map();   // idempotency_key -> run_id
+  const lanesOut = [];
+  const problems = [];
+  const warnings = [];
+
   // 幂等键去重 (P3-10): 同一 key 出现两次 = 同一 intent+target+day 被处理了两次 -> 重复处理告警
   for (const r of runsReal) {
     const k = r.idempotency_key;
@@ -229,10 +236,6 @@ function main() {
   const window = [];
   for (let i = DAYS - 1; i >= 0; i--) window.push(new Date(today.getFullYear(), today.getMonth(), today.getDate() - i));
 
-  const lanesOut = [];
-  const problems = [];
-  const warnings = [];
-  const seenIdem = new Map();   // idempotency_key -> run_id (重复 = 同一 intent+target+day 被处理两次)
 
   for (const lane of cfg.lanes) {
     const logRun = lastLogRun(lane);

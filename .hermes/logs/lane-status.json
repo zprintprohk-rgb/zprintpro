@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-19T00:33:30.838Z",
-  "generated_local": "2026-09-19 08:33",
+  "generated_at": "2026-09-19T00:35:26.465Z",
+  "generated_local": "2026-09-19 08:35",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
@@ -521,7 +521,10 @@
         "files": [],
         "pushed": true,
         "head": "f5bb90b6",
-        "source": "lane-git-commit.py"
+        "source": "lane-git-commit.py",
+        "idempotency_key": "152fae94b2081d68",
+        "state": "completed",
+        "backfilled": "idempotency_key/state added 2026-09-19 after P3-10 landed"
       },
       "days": [
         {
@@ -560,7 +563,9 @@
           "exit": null,
           "report": "2026-09-19-blog-deepfix.md",
           "reportStrict": true,
-          "idempotency_keys": []
+          "idempotency_keys": [
+            "152fae94b2081d68"
+          ]
         }
       ],
       "verdict": "STALE",
