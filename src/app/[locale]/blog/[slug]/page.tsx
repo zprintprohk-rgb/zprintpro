@@ -309,7 +309,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-07-15 daily-content-evolve: Q-017/018/019 new blogs
     'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "Thick Paper Flyer Printing Guide - Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro", description: "US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks, 100-piece test runs to 200,000-piece chain rollouts.", date: '2026-07-15', category: 'Thick Paper Flyer', content: '' },
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "Magnetic Closure Gift Box Guide - Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro", description: "US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.", date: '2026-07-15', category: 'Magnetic Gift Box', content: '' },
-    'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing Guide - Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro", description: "US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials. FSC certified + soy ink + recyclable mark. 500-piece from $0.13/box, 5-10 business day production.", date: '2026-07-15', category: 'Eco Folding Box', content: '' },
+    'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing Guide - Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro", description: "US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials. FSC-certified + soy ink + recyclable mark. 500-piece from $0.13/box, 5-10 business day production.", date: '2026-07-15', category: 'Eco Folding Box', content: '' },
     'restaurant-opening-flyer-printing-guide': {
       title: '餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印港 ZprintPro',
       description: '香港新餐廳開業如何用 A4 傳單吸客？本文整理旺季速遞、紙張選擇、單／雙面印刷、摺疊款實戰策略，附 4 條餐飲東主常見 FAQ，協助茶餐廳／私房菜／外賣小店精準觸及街坊與上班族。',
@@ -756,6 +756,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'catalog-printing-guide', // 2026-08-10 v8 daily: 畫冊印刷指南 (GSC 畫冊印刷 12 imp pos 15.33)
   'textbook-printing-guide', // 2026-09-14 D14: ja 教材・教科書の印刷製本 (G3 簇 textbook binding, K3 9/1 D8-D14 SOP)
   'childrens-picture-book-printing-guide', // 2026-09-18 新需求承接 #2: 童書繪本 (承接 SKU hardcover-books BK-004)
+  'folded-leaflet-printing-guide', // 2026-09-19 daily-seo: 摺頁印刷 (GSC 摺頁印刷 51 imp pos 36 / 摺頁傳單 28 imp pos 25)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

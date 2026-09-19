@@ -2076,6 +2076,32 @@ const lpEtsySellerPrintingGuide: BlogPostMeta = {
   },
 };
 
+const lpFoldedLeafletGuide: BlogPostMeta = {
+  slug: 'folded-leaflet-printing-guide',
+  categoryKey: 'flyers',
+  source: 'daily',
+  date: '2026-09-19',
+  title: {
+    'zh-hk': "摺頁印刷完全指南：對摺／三摺・尺寸・報價 10 張起 | 智印港",
+    en: "Folded Leaflets: Bi-Fold & Tri-Fold, 10 MOQ | ZprintPro",
+    ja: "折りたたみチラシ印刷 二つ折り三つ折り 10部から | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "摺頁印刷 10 張起印, 每張 HK$0.70-1.95, 157g／200g 銅版紙, 對摺／三摺／風琴摺, 壓線防爆色, 3-5 個工作天交貨, 500 張 8 折 1000 張 65 折 5000 張 5 折, 免費打樣, 滿 HK$500 順豐免運, DHL 全球 2-4 天.",
+    en: "Folded leaflet printing from 10 pieces at HK$0.70-1.95 each: 157gsm or 200gsm art paper, bi-fold, tri-fold and Z-fold, creasing, lamination, 3-5 day turnaround.",
+    ja: "折りたたみチラシ印刷は 10 部から。1 部 HK$0.70〜1.95、157g／200g コート紙、二つ折り・三つ折り・ジャバラ折り、スジ入れ対応、納期 3〜5 営業日、500 部 20% OFF、無料校正、日本全国送料無料。",
+  },
+  targetKeywords: {
+    primary: '摺頁印刷',
+    secondary: [
+      '摺頁印刷', '摺頁傳單', '摺頁印刷 香港', '三摺傳單', '對摺傳單',
+      'folded leaflet printing', 'tri fold leaflet printing', 'bi fold leaflet',
+      'folded flyer printing', 'z fold leaflet',
+      '折りたたみチラシ', '三つ折りチラシ', '二つ折りチラシ',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2244,6 +2270,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpChildrensPictureBookGuide,
   lpPhotoBookPrintingGuide,
   lpSelfPublishingGuide,
+  lpFoldedLeafletGuide,
   ];
 
 // =============================================================================
