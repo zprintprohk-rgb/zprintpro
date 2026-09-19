@@ -1,7 +1,7 @@
 {
  "schema": "rule-translation-ledger/v1",
  "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
- "updated_at": "2026-09-19T11:40:11.315Z",
+ "updated_at": "2026-09-19T12:11:02.087Z",
  "bindings": {
   "blog-12-segment-skeleton": {
    "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
@@ -22,7 +22,7 @@
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "5513ebc6b2e05ab86654804c0c679aaa216beb4af0a774fd934566054fb4a47b"
+     "sha256": "668adf2c55f2f4cd16e7530f8e5a74e41758accf0b01c24e9f4cc67ae9618df7"
     },
     {
      "path": "scripts/guards/internal-links-cta-guard.js",
@@ -68,7 +68,7 @@
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "5513ebc6b2e05ab86654804c0c679aaa216beb4af0a774fd934566054fb4a47b"
+     "sha256": "668adf2c55f2f4cd16e7530f8e5a74e41758accf0b01c24e9f4cc67ae9618df7"
     }
    ]
   }
