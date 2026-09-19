@@ -1,11 +1,11 @@
 # 标题候选提案 — 批次 P2-修剪 (2026-09-19)
 
-校准日期: 2026-09-19 16:19 UTC
+校准日期: 2026-09-19 16:25 UTC
 
 > 硬门: UNIFIED — 生成器可构建 · 口径: 50-58 当量 (≥58 硬拦)
 > 纪律: 不发明数字 · 主词不改 · MANUAL_REVIEW 不生成 · 四道闸门
 
-## 汇总: 38 槽生成 / 0 槽跳过 / 13 条全闸门通过
+## 汇总: 38 槽生成 / 0 槽跳过 / 11 条全闸门通过
 
 ### waterproof-stickers / en  ·  P2-修剪  ·  展示 80 / 位置 40.46
 
@@ -181,8 +181,6 @@
 
 | 变体 | 当量 | 闸门 | 候选标题 |
 |---|---|---|---|
-| T2 | 58 | ✅ 全过 | Paper Food Packaging Printing 100+ | Food-Safe | ZprintPro |
-| T1 | 58 | ✅ 全过 | Paper Food Packaging Printing 100+ | Food-Safe | ZprintPro |
 | B | 71 | 🔴 G1_当量 | Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro |
 | A | 46 | 🔴 G1_当量 | Paper Food Packaging Printing 100+ | ZprintPro |
 | C1 | 46 | 🔴 G1_当量 | Paper Food Packaging Printing 100+ | ZprintPro |

@@ -145,10 +145,15 @@ const DANGLING_TAIL = /(?:\/|・|-|\+|&|、)\s*$/;
 const BARE_UNIT = /^(?:\d+\s*(?:h|hr|hrs|mm|cm|g|kg|mil|dpi|%)|\d+)$/i;
 const CONNECTOR = /^(?:free|us|uk|au|and|from|with|the|ship|shipping|print|printing|proof|design|day|days|hour|hours)$/i;
 const CJK_CONJ = /[的與和及或用為]$/;
+// ⑤ 悬空**形容词/定语后缀** (2026-09-19 二次补漏): `Food-Safe Boxes & Bags` 截成 `Food-Safe`
+//    —— 形容词留下了, 被修饰的名词没了 ⇒ 仍是破损文本。判据: 以复合形容词后缀结尾且**无 CJK**
+//    (CJK 无此形态; 例 `防水`/`透明` 单独作段是合法的工艺词, 不在此列)。
+const DANGLING_ADJ = /[-‐-―](?:safe|free|ready|proof|resistant|grade|based|friendly|size|cut)$/i;
 function isDangling(s) {
   const t = String(s).trim();
   if (!t) return true;
   if (DANGLING_TAIL.test(t)) return true;
+  if (DANGLING_ADJ.test(t)) return true;
   const toks = t.split(/[\s・/]+/).filter(Boolean);
   const lastTok = toks[toks.length - 1] || '';
   if (BARE_UNIT.test(lastTok)) return true;

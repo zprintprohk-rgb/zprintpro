@@ -40,7 +40,7 @@ const FROM_PROPOSALS = (process.argv.find((a) => a.startsWith('--from-proposals=
  *   ⑦ **单一 MOQ**: 候选内不得出现两个不同起订量 (laminated-menus 矛盾的根因)
  * 任一不过 ⇒ 该槽位拒绝落盘并列明原因。
  */
-function independentVerify(cand, slug, locale, curTitle, entry, clsRow) {
+function independentVerify(cand, slug, locale, curTitle, entry, clsRow, mode) {
   const { equiv: eq } = require('./guards/title-equiv.js');
   const issues = [];
   const e = eq(cand);
@@ -56,6 +56,23 @@ function independentVerify(cand, slug, locale, curTitle, entry, clsRow) {
   const SIMP = /[订后发记观为价值乐电动净丝举宪获扩据产实当画]/;
   if (locale === 'zh-hk' && (KANA.test(cand) || SIMP.test(cand))) issues.push('zh-hk 语言污染');
   if (locale === 'zh-hk' && /ZprintPro/.test(cand)) issues.push('zh-hk 混入 ZprintPro');
+
+  /* ★ 2026-09-19 修正: 复核必须检查**本批改了什么**, 而非重审既有内容。
+   *   首版对 trim 批也套用「MOQ 期望值/价格须与 products.ts 一致」⇒ 大量误报:
+   *     · `small-batch-stickers` 是 NO_MOQ_HOOK, 但其**既有**标题本就含 `50 張起`/`50 pcs`
+   *       —— NO_MOQ_HOOK 的语义是「生成器**不得新增** MOQ 钩子」, **不是**「标题里不许有 MOQ」;
+   *       修剪是**纯删除**, 保留既有数字是正确行为。
+   *     · 既有价格 (`$0.045` / `HK$0.45`) 与本批无关, 回 products.ts 比对属**重审存量**。
+   *   ⇒ trim 模式的正确不变量是**删除性**: 候选的数字集合必须是原标题数字集合的**子集**
+   *      (即本批只做减法, 未引入任何新数字)。fill 模式才需要 MOQ/价格来源复核。
+   */
+  const numsOf = (s) => new Set([...String(s).matchAll(/\d+(?:\.\d+)?/g)].map((m) => m[0]));
+  if (mode === 'trim') {
+    const orig = numsOf(curTitle);
+    const added = [...numsOf(cand)].filter((n) => !orig.has(n));
+    if (added.length) issues.push(`修剪引入了原标题没有的数字: ${added.join('/')} (删除型批次不得新增数字)`);
+    return { equiv: e, issues, ok: issues.length === 0, status: 'TRIM', expectMoq: null };
+  }
   // ⑤ MOQ 期望值
   const status = clsRow ? clsRow.cls : 'NO_CONFLICT';
   let expectMoq = null;
@@ -102,11 +119,17 @@ function loadFromProposals(file) {
   const audit = [];
   for (const r of p.results) {
     if (!r.candidates) { audit.push({ slug: r.slug, locale: r.locale, ok: false, issues: [r.skipped || 'skipped'] }); continue; }
-    // 优先变体 A (最小增量), 否则首个全闸门通过者
-    const best = r.candidates.find((c) => c.variant === 'A' && c.allPass) || r.candidates.find((c) => c.allPass);
+    // 生成模式 (fill): 优先变体 A (最小增量); 修剪模式 (trim): 取**当量最高**的全过候选
+    //   (修剪的最优解 = 删得最少但仍 ≤57 = churn 最小; 变体 A 是最激进的删除, 不适用)。
+    let best;
+    if (r.mode === 'trim') {
+      best = [...r.candidates.filter((c) => c.allPass)].sort((a, b) => b.equiv - a.equiv)[0];
+    } else {
+      best = r.candidates.find((c) => c.variant === 'A' && c.allPass) || r.candidates.find((c) => c.allPass);
+    }
     if (!best) { audit.push({ slug: r.slug, locale: r.locale, ok: false, issues: ['无全闸门通过候选'] }); continue; }
     const entry = bank.skus[r.slug];
-    const v = independentVerify(best.title, r.slug, r.locale, r.current, entry, clsOf[`${r.slug}|${r.locale}`]);
+    const v = independentVerify(best.title, r.slug, r.locale, r.current, entry, clsOf[`${r.slug}|${r.locale}`], r.mode || 'fill');
     audit.push({ slug: r.slug, locale: r.locale, batch: r.batch, title: best.title, from: r.current, ...v });
     if (!v.ok) continue;
     perSlug[r.slug] = perSlug[r.slug] || { slug: r.slug, slots: {}, src: {} };
