@@ -26,6 +26,10 @@ const slug = (process.argv.find(a => a.startsWith('--slug=')) || '').split('=')[
 if (!slug) { console.error('用法: --slug=<slug> [--apply]'); process.exit(2); }
 
 const LEAD_RE = /^(?:\s*<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>)+/;
+// 全位置内嵌 LD 序列 (2026-09-19 扩展): 实测 poster en/ja 的 5 个块**不在开头**
+// (ja 位置 5,816 / en 8,405, 位于 Related Services 列表之后) ⇒ 只处理开头会漏。
+// 仍保持严格断言: 每个被删片段必须**恰好**是连续的 LD 序列 (不含任何其他内容)。
+const ANY_SEQ_RE = /(?:<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\s*)+/g;
 const TYPES_RE = /"@type"\s*:\s*"([A-Za-z]+)"/g;
 
 let changed = 0;
@@ -36,21 +40,41 @@ for (const loc of ['zh-hk', 'en', 'ja']) {
   const entry = data[slug];
   if (!entry || !entry.content) { console.log(`⚠️  ${loc}: 无该 slug`); continue; }
   const before = entry.content;
-  const m = before.match(LEAD_RE);
-  if (!m || !m[0].trim()) { console.log(`✅ ${loc}: content 开头无内嵌 LD 序列 (幂等/无需处理)`); continue; }
-  const removed = m[0];
-  const after = before.slice(removed.length);
-  // 结构断言: 删掉的必须是完整 LD 序列; 且 after 不含同型 LD (防残留半截)
-  const remnants = (after.match(/<script type="application\/ld\+json"/g) || []).length;
-  const strippedIsOnlyLd = /^(?:\s*<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>)+\s*$/.test(removed);
-  if (!strippedIsOnlyLd) { console.log(`🔴 ${loc}: 前置断言失败 — 被删片段含非 LD 内容, abort (不写盘)`); process.exitCode = 1; continue; }
-  if (remnants > 0) { console.log(`🔴 ${loc}: 断言失败 — strip 后仍残留 ${remnants} 个内嵌 LD, abort`); process.exitCode = 1; continue; }
-  if (before.replace(removed, '') !== after) { console.log(`🔴 ${loc}: 断言失败 — 剩余内容不等于原文减该序列, abort`); process.exitCode = 1; continue; }
-  const types = [...new Set([...removed.matchAll(TYPES_RE)].map(x => x[1]))];
-  console.log(`${APPLY ? '写入' : 'DRY-RUN'} ${loc}: 删 ${removed.length} 字节 / ${types.length} 块 (${types.join(',')}) | content ${before.length} → ${after.length}`);
+
+  // 收集全部 LD 序列 (含位置), 逐个验证
+  const hits = [...before.matchAll(ANY_SEQ_RE)]
+    .filter(m => m[0].trim().length > 0 && m[0].includes('<script type="application/ld+json"'));
+  if (!hits.length) { console.log(`✅ ${loc}: 无内嵌 LD 序列 (幂等/无需处理)`); continue; }
+
+  let out = '';
+  let cursor = 0;
+  const removedTypes = new Set();
+  let removedBytes = 0;
+  let bad = false;
+  for (const h of hits) {
+    const chunk = h[0];
+    // 断言 ①: 被删片段必须恰好是连续 LD 序列 (trim 后以 <script 开头、以 </script> 结尾, 且不含其他标签)
+    const stripped = chunk.trim();
+    const isOnlyLd = /^(?:<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>)+$/.test(stripped);
+    if (!isOnlyLd) { console.log(`🔴 ${loc}: 断言①失败 — 片段含非 LD 内容, abort (不写盘)`); bad = true; break; }
+    for (const t of chunk.matchAll(TYPES_RE)) removedTypes.add(t[1]);
+    out += before.slice(cursor, h.index);
+    cursor = h.index + chunk.length;
+    removedBytes += chunk.length;
+  }
+  if (bad) { process.exitCode = 1; continue; }
+  out += before.slice(cursor);
+
+  // 断言 ②: strip 后无残留
+  const remnants = (out.match(/<script type="application\/ld\+json"/g) || []).length;
+  if (remnants > 0) { console.log(`🔴 ${loc}: 断言②失败 — 残留 ${remnants} 个内嵌 LD, abort`); process.exitCode = 1; continue; }
+  // 断言 ③: 剩余字节 = 原文逐段拼接 (由构造保证), 再做一次长度守恒校验
+  if (out.length !== before.length - removedBytes) { console.log(`🔴 ${loc}: 断言③失败 — 长度守恒不成立, abort`); process.exitCode = 1; continue; }
+
+  console.log(`${APPLY ? '写入' : 'DRY-RUN'} ${loc}: 删 ${hits.length} 个 LD 序列 / ${removedBytes} 字节 / ${removedTypes.size} 类型 (${[...removedTypes].join(',')}) | content ${before.length} → ${out.length}`);
   changed++;
   if (APPLY) {
-    entry.content = after;
+    entry.content = out;
     fs.writeFileSync(p, JSON.stringify(data, null, 2) + '\n', 'utf8');
   }
 }
