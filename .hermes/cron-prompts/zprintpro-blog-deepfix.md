@@ -36,6 +36,7 @@
 > ② **新写/补写 FAQ 答案长度口径 = 40-80 词**（旧口径 80-150 词偏高；40-80 词是 AI 引擎高引用「答案胶囊」区间，上限保留深度空间）。
 > ③ **写 FAQ 前必跑格式预检**：`node .hermes/_probe-pb/precheck-faq-format.mjs`（8 用例，含 3 条反例）—— 必写成 `<p><strong>Qn: 问?</strong><br/>A: 答</p>`；**禁** `<li>` 列表形态 / **禁**缺 A 标记 / **禁**答案另起 `<p>`（否则「写了 FAQ 但线上无 FAQPage」静默失败）。
 > ④ 本修订已同步 SSoT（§3.1 段3-5 行 + §0.3 FAQ 口径）+ 门禁断言（`blog-quality-12-rules-guard.js` 段 3 判定），经门童 #21 sha256 重新绑定。
+> ⑤ **B3 FAQ 五要件（新写/补写一律照此）**: 格式 <p><strong>Qn: 问?</strong><br/>A: 答</p>（写入前跑 precheck-faq-format.mjs, 8 用例）/ **答案 40-80 词** / **首句 8-12 词直答 (answer-first)** / **自包含可独立引用** / **5-8 组聚焦问题**。
 
 > **[v9 规则翻译层补丁 · 2026-09-19 K3 指令 · 必读第 -1 优先级]** 本批新增 3 条硬约束（SSoT = `docs/2026-09-08-title-rules-and-deep-blog-standard.md` §0 口径锁定卡 + §3.2 + §5.1 + §7；门禁 = `node scripts/guards/blog-quality-12-rules-guard.js --online`）：
 > ① **段位口径锁定**：深度 blog 段位标准 = **12 段骨架**（SSoT §3.1），**不是 9 段**（9 段已于 9/3 撤回），**V5.1 只是渲染层「快速答案块」样式标记、与段数无关**。
