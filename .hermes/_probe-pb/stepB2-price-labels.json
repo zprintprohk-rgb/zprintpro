@@ -1,0 +1,154 @@
+{
+  "total": 114,
+  "unique": 105,
+  "coreHits": 17,
+  "candidates": [
+    {
+      "zh": "A5/A4 再造紙/FSC 雙面彩色",
+      "en": "A5/A4 Recycled paper/FSC Colour both sides",
+      "ja": "A5/A4 再生紙/FSC 両面カラー",
+      "zhLen": 7,
+      "ratio": 2
+    },
+    {
+      "zh": "A4 8P 騎馬釘",
+      "en": "A4 8P Saddle stitch",
+      "ja": "A4 8P 中綴じ",
+      "zhLen": 3,
+      "ratio": 2.111111111111111
+    },
+    {
+      "zh": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
+      "en": "Accordion fold 594x210→A5 3 creases Gloss art paper 157g Double-sided",
+      "ja": "ジャバラ折り 594x210→A5 3山 光沢コート紙157g 両面",
+      "zhLen": 10,
+      "ratio": 2.3
+    },
+    {
+      "zh": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
+      "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 157g Double-sided",
+      "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙157g 両面",
+      "zhLen": 10,
+      "ratio": 2.3
+    },
+    {
+      "zh": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
+      "en": "Accordion fold 210x444→A5 2 creases Gloss art paper 128g Double-sided",
+      "ja": "ジャバラ折り 210x444→A5 2山 光沢コート紙128g 両面",
+      "zhLen": 10,
+      "ratio": 2.3
+    },
+    {
+      "zh": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
+      "en": "Accordion fold 210x444→A5 2 creases Book paper 100g Double-sided",
+      "ja": "ジャバラ折り 210x444→A5 2山 書籍用紙100g 両面",
+      "zhLen": 9,
+      "ratio": 2.3703703703703702
+    },
+    {
+      "zh": "A2 · 銅版紙 · 157g · 單面",
+      "en": "A2 · Art paper · 157g · Single-sided",
+      "ja": "A2 · アート紙 · 157g · 片面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A2 · 銅版紙 · 157g · 雙面",
+      "en": "A2 · Art paper · 157g · Double-sided",
+      "ja": "A2 · アート紙 · 157g · 両面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A3 · 銅版紙 · 157g · 單面",
+      "en": "A3 · Art paper · 157g · Single-sided",
+      "ja": "A3 · アート紙 · 157g · 片面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A3 · 銅版紙 · 157g · 雙面",
+      "en": "A3 · Art paper · 157g · Double-sided",
+      "ja": "A3 · アート紙 · 157g · 両面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A2 · 銅版紙 · 250g · 單面",
+      "en": "A2 · Art paper · 250g · Single-sided",
+      "ja": "A2 · アート紙 · 250g · 片面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A2 · 銅版紙 · 250g · 雙面",
+      "en": "A2 · Art paper · 250g · Double-sided",
+      "ja": "A2 · アート紙 · 250g · 両面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A3 · 銅版紙 · 250g · 單面",
+      "en": "A3 · Art paper · 250g · Single-sided",
+      "ja": "A3 · アート紙 · 250g · 片面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A3 · 銅版紙 · 250g · 雙面",
+      "en": "A3 · Art paper · 250g · Double-sided",
+      "ja": "A3 · アート紙 · 250g · 両面",
+      "zhLen": 5,
+      "ratio": 2.4
+    },
+    {
+      "zh": "A5 (210x148mm) 157g啞粉紙 雙面彩色",
+      "en": "A5 (210x148mm) 157g Matte art paper Colour both sides",
+      "ja": "A5 (210x148mm) 157gマットコート紙 両面カラー",
+      "zhLen": 7,
+      "ratio": 2.5238095238095237
+    },
+    {
+      "zh": "A4 (297x210mm) 157g啞粉紙 雙面彩色",
+      "en": "A4 (297x210mm) 157g Matte art paper Colour both sides",
+      "ja": "A4 (297x210mm) 157gマットコート紙 両面カラー",
+      "zhLen": 7,
+      "ratio": 2.5238095238095237
+    },
+    {
+      "zh": "A2 · 啞粉紙 · 157g · 單面",
+      "en": "A2 · Matte art paper · 157g · Single-sided",
+      "ja": "A2 · マットコート紙 · 157g · 片面",
+      "zhLen": 5,
+      "ratio": 2.8
+    },
+    {
+      "zh": "A2 · 啞粉紙 · 157g · 雙面",
+      "en": "A2 · Matte art paper · 157g · Double-sided",
+      "ja": "A2 · マットコート紙 · 157g · 両面",
+      "zhLen": 5,
+      "ratio": 2.8
+    },
+    {
+      "zh": "A3 · 啞粉紙 · 157g · 單面",
+      "en": "A3 · Matte art paper · 157g · Single-sided",
+      "ja": "A3 · マットコート紙 · 157g · 片面",
+      "zhLen": 5,
+      "ratio": 2.8
+    },
+    {
+      "zh": "A3 · 啞粉紙 · 157g · 雙面",
+      "en": "A3 · Matte art paper · 157g · Double-sided",
+      "ja": "A3 · マットコート紙 · 157g · 両面",
+      "zhLen": 5,
+      "ratio": 2.8
+    },
+    {
+      "zh": "A5 (148×210mm) 32PP (16張雙面) 騎馬釘",
+      "en": "A5 (148×210mm) 32PP (16 sheets Double-sided) Saddle stitch",
+      "ja": "A5 (148×210mm) 32PP (16枚両面) 中綴じ",
+      "zhLen": 6,
+      "ratio": 3.2222222222222223
+    }
+  ]
+}
