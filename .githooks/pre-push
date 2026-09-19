@@ -34,5 +34,33 @@ if [ "$submodule_count" -gt 0 ]; then
   exit 1
 fi
 
+# ── 门童 #14 (12 段骨架) + #21 (规则翻译层) — push 前必跑 (K3 2026-09-19 指令) ──
+# 背景: 2026-09-19 实测「门童 #14 报 0 命中, 线上却有 12/15 个 Pillar-locale 组合丢失 FAQPage」——
+#       根因 = 旧 #14 只 JSON.parse(content) 数数、从不做线上断言; 且规则没翻译到生成位置与门禁位置。
+if command -v node &> /dev/null && [ -f scripts/guards/blog-quality-12-rules-guard.js ]; then
+  echo ""
+  echo "14 [GUARD #14] 12 段骨架 checklist + 基线对账 (只拦新增/回归段级 FAIL, 存量按批清)..."
+  node scripts/guards/blog-quality-12-rules-guard.js --baseline --online --json
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "[X] 门童 #14 拦截: 出现**新增**段级 FAIL (或线上断言出现 INVALID 导致的测量无效对比)"
+    echo "    修法: 修内容/格式使该段转 PASS; 证据文件见 .hermes/reports/blog-12seg-checklist-<date>-online.json"
+    echo "    网络导致的 INVALID 重跑: ZP_SKIP_ONLINE=1 git push   (仅跳过线上断言, 离线段级检查仍执行)"
+    exit 1
+  fi
+
+  if [ -f scripts/guards/rule-translation-guard.js ]; then
+    echo "21 [GUARD #21] 规则翻译层 (SSoT / 生成位置 / 门禁断言 三处绑定)..."
+    node scripts/guards/rule-translation-guard.js
+    if [ $? -ne 0 ]; then
+      echo ""
+      echo "[X] 门童 #21 拦截: 规则翻译层漂移"
+      echo "    口径: SSoT 变更 => cron prompt(生成位置) + guards(门禁断言) 必须同步翻译, 三者绑定才算规则生效"
+      echo "    修法: 三处确已更新后执行 node scripts/guards/rule-translation-guard.js --stamp, 随同一次 commit 提交"
+      exit 1
+    fi
+  fi
+fi
+
 # 全部 OK, 放行
 exit 0

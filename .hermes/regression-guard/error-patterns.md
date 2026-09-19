@@ -1295,4 +1295,76 @@ en/ja 键位含中文（252 栏位）、**zh-hk 键位含简体字 90 栏位**�
 
 **同族规则**: `TSC_ERROR_COUNT_DROP_IS_A_RED_FLAG`（第 5 条的结构性根因）· `DOUBLE_METHOD_RECOUNT`（第 3 条）
 
+---
+
+### 规则 SEG9_FAQ_FORMAT — 正文有 FAQ 但格式不可解析 ⇒ 线上静默失去 FAQPage (2026-09-19 实测, 门童 #14 v3)
+
+**事故形态**: 5 大 Pillar × 3 locale = 15 个组合中，**page.tsx 自动生成的 FAQPage 只有 3 个存在**。
+细分根因两类，**都不是「没写 FAQ」**：
+1. **有 Q&A 但包装标签不合规**（6/15）：写作格式是 `<p class="mb-3"><strong>Q：…</strong><br/>A：…</p>`
+   或 `<li><strong>问?</strong>答</li>`，而 `page.tsx` 的 `extractFaqFromHtml` 要求
+   `<p>` **不带 class** ⇒ 解析 0 组 ⇒ `faqJsonLd = null` ⇒ 页面静默无 FAQPage（无任何报错）。
+2. **正文完全缺 FAQ 段**（6/15）：`campus-education-printing-pillar-guide` / `foil-stamping-3-applications-2026`
+   × 3 locale —— FAQ 只存在于 content 内嵌的 JSON-LD 里，正文没有可见 Q&A 段。
+   （campus 的 FAQ 用的是 `<ol><li><strong>问?</strong>答</li>` 列表形态，语义在、格式不在。）
+
+**为什么门禁看不见（最贵的一条）**: 旧门童 #14 Rule 10 只 `JSON.parse(content)` 数内嵌 LD 的 `@type`，
+`Organization` 内嵌块让「5 块齐全」判定通过 ⇒ 报 **「0 命中，全部符合 12 鐵律」**。
+**门禁口径 ≠ 渲染口径** = 门禁盲区。
+
+**修法（口径已入 SSoT §3.2 + §5.1 + §7）**:
+1. `page.tsx` extractor 正则放宽（**已落**）：允许 `<p[^>]*>` / `</strong>` 后 `<br/>` 可选 / 冒号前允许空格。
+   实测回归：**旧 19 命中 → 新 43 命中，0 篇下降、0 假阳性**（全站 3 locale 逐篇对比）。
+2. 存量格式修复：**只改包装标签，答案文字逐字保留**（零改文案）。
+3. 门禁升级：段 9 必须**双方法判定** —— 生产正则命中数 + 宽松法命中数，两者不一致即报「格式不可解析」并给原文样本。
+4. **段 12 一律走线上 curl 断言**（`--online`），禁止只 `JSON.parse(content)`。
+
+**同族规则**: `SEG12_SCHEMA` · `DOUBLE_METHOD_RECOUNT`（本条正是它的实例：正则法 vs 宽松法）
+
+---
+
+### 规则 SEG12_SCHEMA — Schema 齐套性必须线上断言, 不得只数 content 内嵌 (2026-09-19 实测, 门童 #14 v3)
+
+**事故形态**: 13/15 个 Pillar-locale 组合的 content **首字节即 `<script type="application/ld+json">`**，
+线上与 page.tsx 生成的块**重复渲染**。实测线上 16 个 LD 块拆解：
+`WebSite / Article / BreadcrumbList / SpeakableSpecification / HowTo`（生成区 5-6 块）
+`+ Article / FAQPage / BreadcrumbList / HowTo / Organization`（content 注入区 5 块）。
+⇒ 线上 `Article ×2 / BreadcrumbList ×2 / HowTo ×2 / Organization ×4`，违反 SSoT §3.2 红线（8/28 惨案同型）。
+
+**顺手澄清的两条事实（否则会误判）**:
+- 线上 page.tsx 生成区**没有独立 Organization 块**：`Organization` 以 `Article.publisher` 内嵌形态存在，
+  `Person` 以 `Article.author` 内嵌 —— 所以段 12 的硬要求只能是
+  **Article + FAQPage + BreadcrumbList + HowTo 四块**，Organization/Person 记 WARN 不记 FAIL。
+- **那 13 篇现在靠内嵌兜底才有 FAQPage** ⇒ **先 strip 内嵌会把富摘要打没**。
+  顺序铁律：**先让 page.tsx 生成的 FAQPage 上线并线上验证，再 strip 内嵌块**（每批 ≤3 篇，每批后 `--online` 全量复验）。
+
+**修法**: 门禁段 12 = 线上 curl 抓真实 HTML → 按正文容器 `blog-content` 切成「生成区/注入区」→
+断言生成区四块齐全 + 输出原始 `generated=[…] 内嵌=[…] len=…` 片段；找不到容器 marker 判 `INVALID`，
+**`INVALID` 与 `SKIP` 都不算通过**。
+
+**同族规则**: `SEG9_FAQ_FORMAT` · `GSC_LEAK_CUSTOMER_VISIBLE`（同属「门童 0 命中 ≠ 线上干净」家族）
+
+---
+
+### 规则 RULE_TRANSLATION_MISSING — 规则写了但没翻译到「生成位置」与「门禁位置」 (2026-09-19 K3 指令, 门童 #21)
+
+**事故形态（12 段骨架全案）**: 规则**写在 SSoT 文档里**，但——
+**生成**发生在 `.hermes/cron-prompts/*.md`（执行层只读 prompt，不读 SSoT 全文）、
+**渲染**发生在 `src/app/[locale]/blog/[slug]/page.tsx`、
+**门禁**驻守在 `src/data/blog-data/*.json` 的 content 文本里。
+**四个位置各读各的，没有强制同步** ⇒ 门童报 0 命中，线上 12/15 组合丢 FAQPage、13/15 组合 schema 重复。
+
+**★ 反直觉判据（本条最值钱的一句）**: 当一条规则**反复失败**时，标准反应是「把规则写得更强/更权威」；
+但如果真正起作用的是**文件层面的执行位置错配**，加强措辞**不会有效**——
+把 12 段骨架「写进最高准则」既不会让 cron prompt 学会它，也不会让门禁检到它。
+
+**修法（规则翻译层机制，已落地）**: **任何影响内容生成的 SSoT 变更，必须同时产出「生成位置补丁」与「门禁断言补丁」，三者绑定才算规则生效。**
+- 载体: ① 规则 SSoT（`docs/`）② 生成位置（`.hermes/cron-prompts/`）③ 门禁断言（`scripts/guards/`）
+- 台账: `.hermes/regression-guard/rule-translation-ledger.json`（三处 sha256）
+- 命令: `node scripts/guards/rule-translation-guard.js`（校验）/ `--stamp`（刷新）
+- 接线: `.githooks/pre-push` 已接入（漂移即拦 push）；`--stamp` 须随同一次 commit 提交
+- 纪律: 确属无需翻译的变更（纯口径澄清）**仍须 `--stamp` 并在 commit message 说明理由 —— 禁止静默漂移**
+
+**同族规则**: `BREADTH_FIRST_DELIVERY_PARTIAL`（同为「有产物 ≠ 有生效」家族）
+
 **配套**: `docs/2026-09-18-execution-layer-optimal-plan-v1.md` · 技能 `zprintpro-content-standards` §14-J/K

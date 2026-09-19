@@ -1,0 +1,76 @@
+{
+ "schema": "rule-translation-ledger/v1",
+ "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
+ "updated_at": "2026-09-19T11:16:59.196Z",
+ "bindings": {
+  "blog-12-segment-skeleton": {
+   "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
+   "rule": {
+    "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
+    "sha256": "d65ef7eb28f61d0587a2d60c6885c6137ca43da3e1bab8da461776c80d26ca1d"
+   },
+   "producers": [
+    {
+     "path": ".hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
+     "sha256": "82b063cf1ca65e3f8ce1c92d1d4c5830e0312bae8dc9b1522c09183763c0b22b"
+    },
+    {
+     "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
+     "sha256": "8f1472d8227b65aa78e2dfbfb77c41f9ba48de4661adf34eb1d8aef2ed30ccfb"
+    }
+   ],
+   "guards": [
+    {
+     "path": "scripts/guards/blog-quality-12-rules-guard.js",
+     "sha256": "5513ebc6b2e05ab86654804c0c679aaa216beb4af0a774fd934566054fb4a47b"
+    },
+    {
+     "path": "scripts/guards/internal-links-cta-guard.js",
+     "sha256": "78b103049fd3cda7fc581f8531c3415302bacdac4f412d4bfdc714e813e7db4e"
+    }
+   ]
+  },
+  "blog-meta-title-rule": {
+   "title": "Blog/SKU 标题 + meta 规则 (v4 写满原则)",
+   "rule": {
+    "path": "docs/2026-09-09-k3-title-rule-v4-write-full.md",
+    "sha256": "6f7d6e593f4c91b58df2562856414a9cf2a6aa182c1eb5f51efdf41d85fae57f"
+   },
+   "producers": [
+    {
+     "path": ".hermes/cron-prompts/zprintpro-weekly-meta-refresh.md",
+     "sha256": "16d646add5d84d4f573fdb2b009f25131afd707e8a2e7e0cf543c471c586fce5"
+    }
+   ],
+   "guards": [
+    {
+     "path": "scripts/guards/blog-standard-guard.js",
+     "sha256": "f0e91be9b274a43b8b904a44118e61d218f1ab3396cfa9d682e93adfcb909fa5"
+    },
+    {
+     "path": "scripts/guards/meta-description-guard.js",
+     "sha256": "7f1769cdd65eedc3876c1337612a9c77b92a4be9848f0d60c0bdc3d1669c85ec"
+    }
+   ]
+  },
+  "schema-single-source-of-truth": {
+   "title": "Schema 单一来源 = page.tsx (content 禁内嵌 JSON-LD)",
+   "rule": {
+    "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
+    "sha256": "d65ef7eb28f61d0587a2d60c6885c6137ca43da3e1bab8da461776c80d26ca1d"
+   },
+   "producers": [
+    {
+     "path": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
+     "sha256": "8f1472d8227b65aa78e2dfbfb77c41f9ba48de4661adf34eb1d8aef2ed30ccfb"
+    }
+   ],
+   "guards": [
+    {
+     "path": "scripts/guards/blog-quality-12-rules-guard.js",
+     "sha256": "5513ebc6b2e05ab86654804c0c679aaa216beb4af0a774fd934566054fb4a47b"
+    }
+   ]
+  }
+ }
+}

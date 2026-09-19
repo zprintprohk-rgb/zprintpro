@@ -30,6 +30,12 @@
 > - **冻结名单不变**：`zprintpro-en-us-images/` 整目录 · `_batch*.py` · `src/components/services/Rush*` 8 组件 · `page.redesign.tsx` · `src/services/rush/*`
 > - **门禁纪律不变项**：tsc 54=54 基线持平 · build 687 URLs exit 0 · bc-ban 按 diff 0 新增 · 线上探针（非纸面结论）· 只推 main 省 CF 构建配额（分支走本地路径进合并仓）
 
+> **[v9 规则翻译层补丁 · 2026-09-19 K3 指令 · 必读第 -1 优先级]** 本批新增 3 条硬约束（SSoT = `docs/2026-09-08-title-rules-and-deep-blog-standard.md` §0 口径锁定卡 + §3.2 + §5.1 + §7；门禁 = `node scripts/guards/blog-quality-12-rules-guard.js --online`）：
+> ① **段位口径锁定**：深度 blog 段位标准 = **12 段骨架**（SSoT §3.1），**不是 9 段**（9 段已于 9/3 撤回），**V5.1 只是渲染层「快速答案块」样式标记、与段数无关**。
+> ② **段 9 FAQ 格式必须可被生产正则解析**：`<p><strong>Q1: 问题</strong><br/>A: 答案</p>`（`<p>` **不得带 class**）。实测教训：`<p class="mb-3">` 或 `<li><strong>问?</strong>答</li>` 形态 ⇒ `extractFaqFromHtml` 解析不出 ⇒ `faqJsonLd = null` ⇒ **线上静默失去 FAQPage**（2026-09-19 实测 12/15 个 Pillar-locale 组合踩坑）。**修复只改包装标签，答案文字逐字保留**（零改文案）；交付前必跑 `--online` 确认段 9 + 段 12 PASS。
+> ③ **content 内嵌 JSON-LD 是重复渲染源**（SSoT §3.2 红线）：**顺序铁律 = 先确认线上 page.tsx 生成区已有 FAQPage，才允许 strip 内嵌块**（顺序颠倒会把富摘要打没）。每批 ≤3 篇，每批后 `--online` 全量复验段 12。
+> ④ 规则变更纪律（SSoT §7 门童 #21）：规则改动必须同步刷新「生成位置（本文件）」+「门禁断言（guards）」+ `node scripts/guards/rule-translation-guard.js --stamp`。**⑤ push 前置门禁（已接入 .githooks/pre-push）**：`node scripts/guards/blog-quality-12-rules-guard.js --baseline --online --json` —— 只拦「**新增/回归**」的段级 FAIL；存量缺陷记入 `.hermes/regression-guard/blog-12seg-baseline.json`（语义「只许递减」），报告须写「基线 X / 现存 Y / 已修 Z / 剩余待修 Y」。**本车道天然是存量清理车道**：每批 ≤3 篇，优先清段 9（FAQ 格式）+ 段 12（内嵌去重），每批后 `--online` 全量复验并刷新基线。
+
 > **[v8 大脑指令 · 2026-09-09 06:18 K3 拍板 · 必读第 -1 优先级]** ①标题规则 v4 写满原则：半角当量 **50-54 写满目标区**（主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次），≥55 满格禁加，<50 按序补；细则 SSoT = `docs/2026-09-09-k3-title-rule-v4-write-full.md`；§1.5 长尾口径由此终裁；验证窗纪律不变（8/30 批 + 9/4 批 title 只读至 9/12-13 判定）。②幂等铁律（K3 拍板「不重复做已完成的事」）：开工先查 git log + 既有内容实测，已落项跳过（D8 f8c194a0 / 月曆簇 3 篇 / 品类 FAQ 63af89ab / 名片专项 / GSC 回灌 0f3c4818）。③周六槽位沿用 12 铁律重写路线（v3.3），选题按 9/3 GSC imps 排序让数据选页；开工先查 git log 防重复重写已达标篇目（menu R3 f87e88af / kraft 14f2123b / D8 f8c194a0 等已达标）。
 
 > **[v1.2 执行主提示词 · 2026-09-10 03:38/03:49 老板令 · 必读第 -2 优先级（仅低于 v8 大脑指令）】** 两级决策权生效：①执行层无战略级决策权（选词方向/新建砍页/预算节奏/零改文案/不自主新建任务/不扩大范围——违反 = 当次交付作废）；②执行层拍板权是义务：指令包内的实现方式/格式细节/执行顺序/工具路径，须穷尽 100% 能力+五视角+联网核查后**自主拍板并在报告写明理由**，不为琐事上报老板；③复杂问题 = A/B/C 选项+业务影响+明确推荐后上报（禁只抛问题/禁选项无推荐）；④能力全配 ≠ 裁决权放大（联网/五视角用于执行拍板/自检/验收/撞墙识别，禁止做战略取舍）。⑤工作树纪律：多 worktree 并发，禁 `git reset --hard`/整树 restore，只用路径级 `git restore --source --staged --worktree -- <path>`，只 add 自己任务文件。全文 SSoT = `docs/2026-09-10-autoclaw-executor-v1.2.md`。

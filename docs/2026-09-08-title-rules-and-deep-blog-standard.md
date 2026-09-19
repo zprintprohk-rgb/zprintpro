@@ -7,6 +7,47 @@
 
 ---
 
+# 第零部分 · 口径锁定卡（2026-09-19 新增 · 防版本轴串线）
+
+> **本卡解决的问题**：2026-09-19 K3 问「深度 blog 长文的标准是多少段、版本应该 V5.1 是最后确定的版本吗」——这个问题本身来自**版本轴串线**：项目里同时存在多条互不相干的版本号，被误读成同一条轴。本卡一次性锁死。
+
+## 0.1 四条版本轴（互不替代，禁止混用）
+
+| 版本号 | 属于哪条轴 | 现状 | 事实锚点 |
+|--------|------------|------|----------|
+| **SSoT v1.0** | **内容标准主文档**版本（本文件） | ✅ 现行 | 本文件标题 |
+| **v4 写满原则** | **标题规则**版本 | ✅ 现行（K3 9/9 06:18 拍板） | `docs/2026-09-09-k3-title-rule-v4-write-full.md` |
+| **V5.1** | **渲染层**「快速答案块」识别 + 琥珀色样式（仅段 2 的呈现方式） | ✅ 现行，但**与段数标准无关** | `src/app/[locale]/blog/[slug]/page.tsx` 注释「③ 快速答案块识别 (AEO/GEO 核心环节, v5.1)」（K3 2026-09-16 拍板 v5；2026-09-18 修跨语系 bug：原正则硬编码中文「快速答案」⇒ en/ja 永远拿不到该样式） |
+| v2.1 / 9 段 | 旧 blog 写做 SOP 版本 / 旧段位口径 | ❌ **已作废**（见 0.2） | `zprintpro-blog-writing-sop` SKILL.md（僵尸口径，待同步） |
+
+**结论口径（K3 询问的直接答案）**：
+- 「深度 blog 长文标准」= **12 段骨架**，SSoT = 本文件 §3.1，**不是 V5.1**；
+- **V5.1 不是内容标准的版本号**，它只覆盖「段 2 快速答案块怎么渲染」，不覆盖段数、不覆盖骨架、不覆盖字数；
+- 若问「内容标准的最终版本」，答案是**本文件 SSoT v1.0 + 标题叠加 v4 写满原则**（本文件 §1.5 已终裁）。
+
+## 0.2 段位口径锁定（12 段 vs 已作废的 9 段）
+
+```
+12 段 = 深度 blog 内容交付结构（Pillar + T1/T2 锁词深度篇通用）
+段 1 倒金字塔首段 / 段 2 快速答案块 / 段 3-5 H2 问句段群 / 段 4 比较表格 / 段 5 原创数据 /
+段 6 客户案例 / 段 7 E-E-A-T 署名 / 段 8 GEO 知识原子 / 段 9 FAQ / 段 10 CTA / 段 11 内链 / 段 12 Schema
+（段 3-5 为「H2 问句段群」占位段，实际交付以 12 条铁律逐条机器可检为准 —— 见 §5.3）
+```
+
+- **9 段 = 已作废**：`.hermes/cron-prompts/zprintpro-daily-content-1x7w.md` 明文「撤回：Pillar 9/3 16:25 之前 **9 段 + 4 FAQ + 5 內鏈舊版不符合 Pillar 12,000+ 字 5 schema 標準**」。
+- **僵尸口径警示**：`zprintpro-blog-writing-sop` SKILL.md 至今仍写「9 段结构」「6 段结构」——凡与本节冲突，**以本文件为准**。
+
+## 0.3 字数分档（⏳ 待 K3 拍板，不得擅自执行）
+
+| 档 | 对象 | 目标值 | 门禁下限 | 状态 |
+|----|------|--------|----------|------|
+| Pillar | 5 大 Pillar（packaging-box-pricing-2026 / sticker-material-pvc-vinyl-removable / poster-printing-guide / campus-education-printing-pillar-guide / foil-stamping-3-applications-2026） | §3.1 现写 12,000 字 | **建议 6,000 字** | ⏳ **待拍板** |
+| 标准深度篇 | T1/T2 锁词深度篇 | 6,000-9,000 字 | 6,000 字 | ✅ 与 §3.1 末句一致 |
+
+**为什么建议把门禁下限放到 6,000**：2026-09-19 实测 5 大 Pillar × 3 locale 去标签字数**无一 ≥6,100**（zh-hk 3,817 / 3,952 / 4,337 / 6,034 / 5,704）。门禁硬卡 12,000 会**长期报红**，最终被当噪音忽略 —— 正是 `.hermes/regression-guard/error-patterns.md`「接错门童 = 全站停摆」的反面。**未拍板前：门禁 `MIN_PILLAR_CHARS` 不动，本条只登记为待决项，执行层不得自行改门禁。**
+
+---
+
 # 第一部分 · SKU / 页面标题规则（v4 = K3 9/9 06:18 拍板「写满原则」，最新标准）
 
 > **[v4 覆盖指引 · 2026-09-09]** K3 9/9 06:18 拍板：标题在 <55 半角当量内**写满**，主词+长尾词深度分析后填充。新区间表与长尾口径以 `docs/2026-09-09-k3-title-rule-v4-write-full.md` 为准：**写满区 50-54（目标）/ ≥55 满格禁加（不变）/ 55-60 遗留只读 / 60-80 待修剪 / <50 按序补（可多个 GSC 实证长尾）**；独立长尾词 1-2 个（§1.5 待确认项由此终裁）。本节 v3 表格中与本指引冲突处以 v4 为准；验证窗纪律不变（8/30 批与 9/4 批窗内 title 只读至 9/12-13 判定）。
@@ -75,6 +116,13 @@
 
 # 第三部分 · 深度 Blog 段落结构（"多少段组成"标准答案）
 
+> **✅ 段位口径锁定（2026-09-19）**：本文件 §3.1 下表 = **12 段标准骨架**，是全站深度 blog 唯一段位标准。
+> **编号口径**：下表按「段 1-12」计；其中 `3-5` 是「H2 问句段群」占位段（一个段群占 3 个段号），因此
+> **FAQ = 段 11、CTA = 段 12**（本表口径）；而入口技能 `zprintpro-content-standards/SKILL.md` §3 的表
+> 把 H2 段群压成 1 行 ⇒ **FAQ = 段 9、CTA = 段 10、Schema = 段 12**（该表口径）。**两套编号的段内容完全一致，
+> 只是 H2 段群占位数不同**；机器门禁输出统一用 **SKILL 表口径**（FAQ=段9 / CTA=段10 / Schema=段12，
+> 见 `scripts/guards/blog-quality-12-rules-guard.js` 的 `SEGMENTS`）。写报告时须标名用哪套编号，禁混用。
+
 ## 3.1 Pillar 深度 blog（12,000+ 字，12 铁律全适用）= **12 段标准骨架**
 
 | 段 | 内容 | 规格（机器可检） |
@@ -98,14 +146,21 @@
 
 | 块 | 必含 | 校验 |
 |----|------|------|
-| Article（含 image 字段） | ✅ | guard #14 Rule 10：每个 JSON-LD 必须 `JSON.parse` 可解析 |
+| Article（含 image 字段） | ✅ | guard #14 段 12：每个 JSON-LD 必须 `JSON.parse` 可解析 |
 | FAQPage | ✅ | 由 §3.1-11 的 FAQ 格式自动提取 |
 | BreadcrumbList | ✅ | 3 段：首页/blog/post |
 | HowTo | ✅（流程类主题） | 4 主钻品类模板 |
 | Organization | ✅ | 实体一致性（§四-GEO） |
-| Person | ✅（E-E-A-T） | guard #14 Rule 5 |
+| Person | ✅（E-E-A-T） | guard #14 段 7 |
 
 **红线**：content 内嵌 inline JSON-LD = 重复渲染 = Google 警告（8/28 惨案判例）；SSoT = page.tsx 单一来源。
+
+**2026-09-19 线上实测口径修正（段 12 判定标准）**：
+- 线上 **page.tsx 生成区**（正文容器 `blog-content` 之前）实测块 = `WebSite / Article / BreadcrumbList / SpeakableSpecification / FAQPage / HowTo`；
+- **Organization 与 Person 以「Article 内嵌」形态存在**（`Article.publisher` / `Article.author`），**不独立成块**；
+- ⇒ 段 12 的**硬要求 = 生成区含 Article + FAQPage + BreadcrumbList + HowTo 四块**；
+  Organization / Person 只要求「生成区内检出实体」（独立成块或内嵌均可），缺则记 **WARN**，不记 FAIL。
+- ⇒ **FAQPage 是否由 page.tsx 生成 = 段 9 格式是否合规的直接后果**：`extractFaqFromHtml` 解析不出 FAQ 时 `faqJsonLd = null`，页面静默失去 FAQPage（2026-09-19 实测 12/15 组合命中此坑）。故**门禁的段 12 必须走线上 curl 断言**，不得只 `JSON.parse(content)`。
 
 ---
 
@@ -147,13 +202,23 @@
 **第一层 · 门童全量（提交前必跑，0 命中才允许 commit）**
 
 ```bash
-node scripts/guards/blog-quality-12-rules-guard.js   # #14 十二铁律（Pillar 5 slug 硬编码触发）
+node scripts/guards/blog-quality-12-rules-guard.js            # #14 12 段骨架显式 checklist (段1-12 逐项 PASS/FAIL/证据)
+node scripts/guards/blog-quality-12-rules-guard.js --online   # #14 段12 Schema 线上 curl 断言 (push 前必跑; 无网络判 INVALID, 不算通过)
 node scripts/guards/blog-standard-guard.js           # #12 date/title/模板字/schema/字数
 node scripts/guards/internal-links-cta-guard.js      # #13 内链≥10 + CTA≥2（Pillar）
 node scripts/guards/blog-data-integrity-guard.js     # #15 blog-data JSON 严格校验
+node scripts/guards/rule-translation-guard.js        # #21 规则翻译层 (SSoT/生成/门禁 三处 sha256 绑定, 见 §7)
 node scripts/check-content-guard.js                  # SOP-10 + 禁词 + Markdown 链接
 node scripts/check-i18n.js                           # 8 locale 完整性
 ```
+
+> **#14 v3 口径（2026-09-19 重写，K3 指令「让门禁输出证据而非结论」）**：
+> ① 输出 = **段 1-12 逐项 `{段号, 状态, 证据样本, 失败原因}`**，状态四态 `PASS/FAIL/WARN/SKIP/INVALID`，
+> 其中 **`SKIP`（本模式未测）与 `INVALID`（测量无效）绝不算通过**；
+> ② **段 12 与 FAQPage 归因一律走线上 curl 断言**：抓真实 HTML，按正文容器 `blog-content` 切成「生成区/注入区」，
+> 断言生成区含 `Article + FAQPage + BreadcrumbList + HowTo`，并输出原始 `generated=[…] 内嵌=[…] len=…` 片段；
+> ③ 离线（不加 `--online`）时**不输出段 12 的 PASS**，只输出 `SKIP` + 提示命令 —— 禁止把「没测」当「通过」；
+> ④ 证据留档：`--json` → `.hermes/reports/blog-12seg-checklist-<date>[-online].json`。
 
 **第二层 · 三闸门（push 前）**：`node scripts/check-encoding.js --fix` → `npx tsc --noEmit` → `npm run build`（build_verifier ≥400 页硬校验）。
 
@@ -227,6 +292,43 @@ node scripts/check-i18n.js                           # 8 locale 完整性
 - v4.0 主提示词: K3 9/8 05:06（§5.3/§5.4/§8）
 - GSC 数据: gsc-fresh-2026-09-03.json（canonical）
 - 拍板冲突待确认: §1.5（v3 工艺修饰堆砌 vs v4.0 不上第 2 个长尾的统一口径）
+- 2026-09-19 K3 指令 + 实测证据: 本文件 §0 口径锁定卡 / §3.2 线上实测修正 / §5.1 #14 v3 / §7 规则翻译层
+  （证据文件 = `.hermes/reports/blog-12seg-checklist-2026-09-19-online.json`；实测方法 = 生产正则 vs 宽松正则双方法复算 + 15 URL 线上 curl 串行探针）
 ```
+
+---
+
+# 第七部分 · 规则翻译层（2026-09-19 新增 · 规则不再"写了但没人执行"）
+
+## 7.1 问题定义（为什么"把规则写进最高准则"解决不了）
+
+2026-09-19 实测：**深度 blog 12 段骨架写在 SSoT 里，但生成发生在 cron prompt 里、渲染发生在 page.tsx 里、门禁驻守在 blog-data JSON 里**——四个位置各读各的，没有强制同步。结果：门童 #14 报「0 命中 / 5 大 Pillar × 3 locale 全部符合 12 鐵律」，而线上实测 12/15 个 Pillar-locale 组合没有 page.tsx 生成的 FAQPage、13/15 组合 content 内嵌 JSON-LD 重复渲染。
+
+⚠️ **结论（反直觉但重要）**：当一条规则反复失败时，标准反应是「把规则写得更强/更权威」——但如果真正起作用的是**文件层面的执行位置错配**，加强措辞不会有效。**把 12 段骨架写进最高准则，不会自动让 cron prompt 学会它，也不会自动让门禁检到它。**
+
+## 7.2 机制：三者绑定（门童 #21 强制）
+
+**任何影响内容生成的 SSoT 规则变更，必须同时产出「生成位置补丁」与「门禁断言补丁」，三者绑定才算规则生效。**
+
+| 位置 | 载体 | 缺了会怎样 |
+|------|------|------------|
+| ① 规则 SSoT | `docs/` 规则主文档 | 无标准，各写各的 |
+| ② 生成位置 | `.hermes/cron-prompts/<lane>.md`（lane prompt 的 STEP 0 必读段） | **执行层读不到 ⇒ 生成时照旧违规**（12 段骨架即此坑） |
+| ③ 门禁断言 | `scripts/guards/<guard>.js` + `.hermes/regression-guard/rule-translation-ledger.json` | **没人检 ⇒ 违规无声通过**（FAQPage 丢失即此坑） |
+
+**落地命令**：
+
+```bash
+node scripts/guards/rule-translation-guard.js            # 校验三处 sha256 是否同步 (exit 1 = 未翻译)
+node scripts/guards/rule-translation-guard.js --stamp    # 规则变更后刷新台账 (随同一次 commit 提交)
+```
+
+**台账**：`.hermes/regression-guard/rule-translation-ledger.json`（含每条绑定的 rule/producers/guards sha256）。
+**执行纪律**：改了 ① 而没改 ②③ ⇒ 门童 #21 报漂移；若确属无需翻译的变更（如纯口径澄清），仍须 `--stamp` 并在 commit message 说明理由 —— **禁止静默漂移**。
+**绑定表维护**：新增/调整绑定 = 改 `scripts/guards/rule-translation-guard.js` 的 `BINDINGS`（当前 3 条：12 段骨架 / 标题 meta 规则 / Schema 单一来源）。
+
+## 7.3 与自进化 4 步 SOP 的关系
+
+§6.3 第 3 步「拦截」= 沉淀门童规则；**本节是它的补丁**：沉淀时**必须同时回答「谁生成、谁检、谁读」三问**，缺任一位置即为未完成的规则。四步 SOP 的「验证」新增一闸：**新规则上线前，`rule-translation-guard.js` 必须已登记该绑定的三处 sha256**。
 
 **文件结束。**

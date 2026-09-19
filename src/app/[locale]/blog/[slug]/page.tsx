@@ -868,7 +868,14 @@ function getOgLocale(locale: Locale): string {
 
 function extractFaqFromHtml(html: string): { question: string; answer: string }[] | null {
   const faqs: { question: string; answer: string }[] = [];
-  const regex = /<p><strong>Q[0-9]*[:：]\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A[0-9]*[:：]\s*([\s\S]*?)<\/p>/gi;
+  // 2026-09-19 修复 (K3 指令「先让门禁能看见真实问题」):
+  //   旧正则硬要求 `<p>` 无属性 + `</strong>` 后必须有 `<br/>` ⇒ 凡写作格式为
+  //   `<p class="mb-3"><strong>Q：…</strong><br/>A：…</p>` 的文章 FAQPage **全部静默丢失**。
+  //   实测 (2026-09-19, 3 locale × 全站): 旧 = 19 命中 / 新 = 43 命中, 其中 9 篇 × 4 组
+  //   (packaging-box-pricing-2026 / sticker-material-pvc-vinyl-removable / kraft-paper-box-types-comparison-2026
+  //    × zh-hk/en/ja) 从 0 → 4; **0 篇下降, 0 假阳性** (「💡 答案 nugget:」「顧客背景」等非 FAQ 标签不误伤)。
+  //   放宽幅度 = ① `<p[^>]*>` 允许 class ② `</strong>` 后 `<br/>` 变可选 ③ Q/A 与冒号间允许空格。
+  const regex = /<p[^>]*>\s*<strong>\s*Q[0-9]*\s*[:：]\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)?\s*A[0-9]*\s*[:：]\s*([\s\S]*?)<\/p>/gi;
   let match;
   while ((match = regex.exec(html)) !== null) {
     const question = match[1].replace(/<[^>]+>/g, '').trim();
