@@ -3479,8 +3479,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Thick 400g Business Cards | Foil & Emboss | ZprintPro",
-        "description": "壓紋名片",
-        "h1": "婚禮名片",
+        "description": "Embossed Business Cards",
+        "h1": "Wedding Business Cards",
         "keywords": [
           "400g名片"
         ],
@@ -3534,8 +3534,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Foil-Stamped Business Cards | Gold & Silver | ZprintPro",
-        "description": "婚禮名片",
-        "h1": "金屬光澤名片",
+        "description": "Wedding Business Cards",
+        "h1": "Metallic Finish Business Cards",
         "keywords": [
           "燙金名片"
         ],
