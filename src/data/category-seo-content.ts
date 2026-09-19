@@ -4549,7 +4549,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
         title: '智印港香港本地服務節點',
         items: [
           { title: '5 張材質樣本免費寄送', description: '白卡 / 珠光 / 萊妮紋 / 棉 / 燙金專用 5 種材質,免費順豐到付,當日寄出 24h 達' },
-          { title: '設計師 24h 出稿', description: '微信 / WhatsApp / 電郵確認,K3 真實身份 ≤ 2 小時回覆,3 輪免費修改' },
+          { title: '設計師 24h 出稿', description: '微信 / WhatsApp / 電郵確認,客服 ≤ 2 小時回覆,3 輪免費修改' },
           { title: '每日生產進度更新', description: '印刷 + 燙金 + 對裱 + 摺卡 4 大工序實時反饋,生產全程透明' },
           { title: '順豐本地 24h 配送', description: '港九新界 24h 達,離島 1-2 天,滿 HK$500 免費上門' },
           { title: 'DHL 全球 2-4 天直送', description: '海外 50+ 國家,實時追蹤號碼 + 清關協助' },
@@ -4650,7 +4650,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
         title: 'ZprintPro Hong Kong Local Service',
         items: [
           { title: '5 Material Samples Free', description: 'White / pearl / linen / cotton / foil-ready, free SF Express COD, 24h delivery' },
-          { title: 'Designer 24h Draft', description: 'WeChat / WhatsApp / email confirm, K3 ≤ 2 hours reply, 3 free revision rounds' },
+          { title: 'Designer 24h Draft', description: 'WeChat / WhatsApp / email confirm, support ≤ 2 hours reply, 3 free revision rounds' },
           { title: 'Daily Production Updates', description: 'Print + foil + duplex + fold 4 major processes real-time feedback, full transparency' },
           { title: 'SF Express Local 24h', description: 'HK 24h delivery,離島 1-2 days, free pickup over HKD 500' },
           { title: 'DHL Global 2-4 Days', description: 'International 50+ countries, real-time tracking + customs support' },

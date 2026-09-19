@@ -30,6 +30,12 @@ const CUSTOMER_VISIBLE_FILES = [
   /src[\/\\]data[\/\\]pillar-content\.ts$/,
   /src[\/\\]data[\/\\]products\.ts$/,
   /src[\/\\]data[\/\\]category-seo-content\.ts$/,   // 分类页 SEO 内容 (含 buyingGuide.paragraphs 等客户可见段落)
+  // ===== 2026-09-19 Step B 补充 (K3 裁决 2) =====
+  // 实测: src/data 最大的两个档长期缺席名单, 且内容均为客户可见长文 HTML:
+  //   products-content.ts 1,195 KB (product/[slug] 的长描述字段 longDescription*) — 实测含 4 处活跃命中
+  //   sku-seo-data.ts     1,138 KB (SKU 详情页 SEO 正文) — 全档双引号, 旧提取层整体看空
+  /src[\/\\]data[\/\\]products-content\.ts$/,
+  /src[\/\\]data[\/\\]sku-seo-data\.ts$/,
 ];
 
 // GSC 后台运营黑话模式 (客户可见即泄漏)
@@ -76,6 +82,26 @@ const GSC_LEAK_PATTERNS = [
   // --- 内部表/拍板号 (通用编号模式) ---
   /(?<![A-Za-z])ED-\d{3}/g,                                          // ED-001~018 内部 SKU 分组编号
 
+  // ============ 2026-09-19 Step B 扩展 (K3 裁决 2) ============
+  // 根因: 原模式漏两类 —— ①日文片假名变体 ②"纯词"(不邻接数字)的内部口径词。
+  //   实测 (三语真实尾巴, 见 .hermes/_probe-pb/stepB-blindspot-result.json):
+  //     'GSC データ' → 0 正则命中; 'imps 數據/数据/データ' → 0; 'pos 數據/数据/データ' → 0;
+  //     '數據誠信紅線/数据诚信红线/データ诚信基準' → 0; '校準/校准/校正 + 日期' → 0; '拍板日' → 0; '§0.23' → 0
+  //   ⇒ 只删数字必留空壳 (§0.23.1 半截残留教训的直接成因)。
+  /GSC\s*データ/g,                                                    // GSC データ (日文片假名, 原模式只覆盖 数据/數據)
+  /gsc[\s-]*(?:data|데이터)/gi,                                       // gsc data 变体
+  /(?:^|[^a-zA-Z0-9])(?:imps?|impr(?:essions?)?)\s*(?:數據|数据|データ)/gi,   // imps 數據 (纯词, 无数字)
+  /(?:^|[^a-zA-Z0-9])pos\s*(?:數據|数据|データ)/gi,                    // pos 數據 (纯词, 无数字)
+  // 2026-09-19 v2 收紧: 「數據/数据/データ + 基準」会误伤客户语境的「データ基準 (数据基准)」
+  //   ⇒ 必须显式含「誠信/诚信」才算内部口径词 (实测误报来源: ja.json「C&SD 2026 データ基準」)
+  /(?:數據|数据|データ)\s*(?:誠信|诚信)\s*(?:紅線|红线|基準|基准)/g,      // 數據誠信紅線 / 数据诚信红线 / データ诚信基準
+  // ⚠️ 只收「内部定价口径」完整搭配:
+  //   · 不收「校準/校正 (+後)」——印刷行业动作词 (「無料データ校正後、3–5営業日で印刷」),
+  //     实测误伤 3 处; 收完整搭配即可无漏 (实测的 4 处真泄漏全为完整搭配)
+  /(?:校準|校准|校正)\s*(?:報價|报价|來源|来源|錨點|锚点)/g,              // 校準報價 / 校準來源 / 校準錨點
+  /(?:真實|真实)\s*(?:校準|校准)/g,                                    // 真實校準 (内部定价口径)
+  /拍板日|拍板/g,                                                     // 内部决策日
+  /§\s*0\.\d+/g,                                                      // §0.23 类内部规则编号
 ];
 
 // 豁免: 合法客户语境 token (可出现在客户可见内容)
@@ -114,7 +140,7 @@ function isLegitContext(value, matchIndex) {
 }
 
 // 检查单个字符串值是否有 GSC 泄漏
-function checkValue(value, file, field, slug) {
+function checkValue(value, file, field, slug, lineNo, rawText, valueOffset) {
   const hits = [];
   if (!value || typeof value !== 'string') return hits;
   for (const re of GSC_LEAK_PATTERNS) {
@@ -123,10 +149,16 @@ function checkValue(value, file, field, slug) {
     while ((m = re.exec(value)) !== null) {
       // 排除合法客户语境 (token 本身 或 命中位置上下文)
       if (isLegitCustomerToken(m[0]) || isLegitContext(value, m.index)) continue;
+      // 行号优先指向「命中词本身」所在行 (大段正文的值起点行参考价值低)
+      let line = lineNo || 0;
+      if (rawText && valueOffset != null) {
+        const at = rawText.indexOf(value.slice(m.index, m.index + 40), valueOffset);
+        if (at >= 0) line = rawText.slice(0, at).split('\n').length;
+      }
       // 排除跨 token 误伤: pos 2.3 但整段含 top-3 picks 等 (由 isLegitCustomerToken 处理整词)
       hits.push({
         file,
-        line: 0,
+        line,
         match: m[0].slice(0, 60),
         severity: 'red',
         ruleId: 'GSC_LEAK_CUSTOMER_VISIBLE',
@@ -139,12 +171,33 @@ function checkValue(value, file, field, slug) {
   return hits;
 }
 
+/** 2026-09-19 Step B: 为客户可见值定位其在**源文件中的起点行号** + 起点偏移。
+ *  原实现 JSON 路径恒报 line:0 ⇒ 报告无法定位, 违规清单不可执行 (JSON 恰是 blog-data 最常用路径)。
+ *  手法: 用「该值的一个唯一片段」在原文中反查; 片段从长到短退让, 命中即换算行号。
+ */
+function locate(rawText, value) {
+  if (!rawText || !value) return { line: 0, offset: -1 };
+  const probes = [];
+  for (const len of [160, 80, 40, 20]) {
+    const mid = Math.max(0, Math.floor(value.length / 2) - Math.floor(len / 2));
+    probes.push(value.slice(mid, mid + len));
+  }
+  probes.push(value.slice(0, 40), value.slice(-40));
+  for (const p of probes) {
+    if (!p || p.length < 12) continue;
+    const i = rawText.indexOf(p);
+    if (i >= 0) return { line: rawText.slice(0, i).split('\n').length, offset: i };
+  }
+  return { line: 0, offset: -1 };
+}
+
 // JSON 文件: blog-data/*.json — 遍历所有篇目 title/description/excerpt/keywords/content
 function scanJson(file) {
   const hits = [];
-  let obj;
+  let rawText, obj;
   try {
-    obj = JSON.parse(fs.readFileSync(file, 'utf-8'));
+    rawText = fs.readFileSync(file, 'utf-8');
+    obj = JSON.parse(rawText);
   } catch (e) { return hits; }
   const rel = file.replace(process.cwd() + path.sep, '').replace(/\\/g, '/');
   for (const [slug, entry] of Object.entries(obj)) {
@@ -152,11 +205,15 @@ function scanJson(file) {
     for (const field of ['title', 'description', 'excerpt', 'keywords', 'content']) {
       const v = entry[field];
       if (typeof v === 'string') {
-        hits.push(...checkValue(v, rel, field, slug));
+        const loc = locate(rawText, v);
+        hits.push(...checkValue(v, rel, field, slug, loc.line, rawText, loc.offset));
       } else if (v && typeof v === 'object') {
         // content 可能是 Record<locale, string>
-        for (const [loc, s] of Object.entries(v)) {
-          if (typeof s === 'string') hits.push(...checkValue(s, rel, `${field}.${loc}`, slug));
+        for (const [loc2, s] of Object.entries(v)) {
+          if (typeof s === 'string') {
+            const lo = locate(rawText, s);
+            hits.push(...checkValue(s, rel, `${field}.${loc2}`, slug, lo.line, rawText, lo.offset));
+          }
         }
       }
     }
@@ -164,9 +221,167 @@ function scanJson(file) {
   return hits;
 }
 
-// TS 文件: blog-posts.ts / buying-guides.ts / pillar-content.ts / products.ts
-// 提取客户可见字段值: 'zh-hk': '...' / title: { ... } / excerpt: { ... }
+/* ============================================================================
+ * 2026-09-19 Step B 改造 (K3 裁决 2): 提取层由「朴素正则」改为「解析式」
+ *
+ * 原实现的三条静默失效 (实测证据见 .hermes/_probe-pb/stepB-blindspot-result.json):
+ *   ① 字段盲区: 只扫 title|description|excerpt|keywords —— `content` (客户可读正文大头)
+ *      完全不在扫描面 ⇒ 命中**从未生成**, 报告却显示「✅ 0 命中」。
+ *   ② 引号截断: /['"]([^'"]{20,})['"]/ 以引号为边界; 客户 HTML 正文天然含引号
+ *      (class='text-gray-500' / class="..."), 捕获在第一个内层引号处截断并被 {20,} 丢弃 ⇒ 0 命中。
+ *   ③ 双引号看空: /(['"])([^'"]+)\1/ 对 "value" 匹配成 `""` (值=空) ⇒ 双引号写法整体看空。
+ *      (实测: blog-posts.ts 30 条 / sku-seo-data.ts 170 条双引号值长期未被扫)
+ *
+ * 新实现: 字符级扫描字符串字面量 ('…' / "…" / `…` 模板串), 先取整值, 再判字段所有权。
+ *   · 字段所有权: 取该值的**键**(前一个 `key:` ) 与**外层字段**(花括号栈内最近的长文本字段);
+ *     空键 (如 { 'en': "…" } 只有 locale 键) ⇒ 归外层字段。无法判定 ⇒ 'content' (**保守照扫**)。
+ *   · 注释豁免按**值起点所在行**判定 (注释行里的引用不算泄漏)。
+ * ============================================================================ */
+
+/** 客户可见字段 (键名) */
+const VISIBLE_FIELDS = new Set([
+  'content', 'body', 'longDescription', 'longDescriptionEn', 'longDescriptionJa',
+  'description', 'excerpt', 'title', 'keywords', 'paragraphs', 'paragraph',
+  'answer', 'question', 'text', 'intro', 'summary', 'seoTitle', 'metaTitle',
+  'aiSearchSummary', 'buyingGuide', 'faq', 'points',
+]);
+/** 外层容器字段 (其内层 locale/子键值归它) */
+const CONTAINER_FIELDS = new Set([...VISIBLE_FIELDS, 'content', 'seo', 'faqs']);
+/** 非客户可见的键 (值属技术/标识, 跳过) */
+const NON_VISIBLE_KEYS = new Set(['slug', 'href', 'url', 'src', 'id', 'sku_code', 'sku', 'category_slug', 'className', 'image', 'icon']);
+
+/** 跳过空白与注释, 返回下一个有效 index */
+function skipWsAndComments(s, i) {
+  for (;;) {
+    while (i < s.length && /\s/.test(s[i])) i++;
+    if (s[i] === '/' && s[i + 1] === '/') { while (i < s.length && s[i] !== '\n') i++; continue; }
+    if (s[i] === '/' && s[i + 1] === '*') { const e = s.indexOf('*/', i + 2); i = e < 0 ? s.length : e + 2; continue; }
+    return i;
+  }
+}
+
+/** 解析 index 处开始的字符串字面量, 返回 { value, end } (含引号内外), 失败返回 null */
+function parseStringAt(s, i) {
+  const q = s[i];
+  if (q !== "'" && q !== '"' && q !== '`') return null;
+  let j = i + 1, out = '';
+  while (j < s.length) {
+    const c = s[j];
+    if (c === '\\') { out += s[j + 1] ?? ''; j += 2; continue; }
+    if (c === q) return { value: out, start: i, end: j + 1 };
+    out += c; j++;
+  }
+  return { value: out, start: i, end: s.length };  // 未闭合 (容错)
+}
+
+/** 找到 index 处字符串的「键」: 向左看是否形如 key: <str> ; 返回 {key, objField} */
+function ownerOf(s, strStart, objStack) {
+  let i = strStart - 1;
+  while (i >= 0 && /\s/.test(s[i])) i--;
+  // 期待 ':'
+  let key = null;
+  if (s[i] === ':') {
+    let j = i - 1;
+    while (j >= 0 && /\s/.test(s[j])) j--;
+    if (s[j] === "'" || s[j] === '"') {                    // 'key': "..."
+      const q = s[j]; let k = j - 1;
+      while (k >= 0 && s[k] !== q) k--;
+      key = s.slice(k + 1, j);
+    } else {                                                // key: "..."
+      let k = j;
+      while (k >= 0 && /[\w$]/.test(s[k])) k--;
+      key = s.slice(k + 1, j + 1);
+    }
+  }
+  const objField = objStack.length ? objStack[objStack.length - 1] : null;
+  return { key: key || null, objField };
+}
+
+/** 取最近的外层字段名: 向左找 `<ident> : {` */
+function nearestContainerField(s, i) {
+  let j = i - 1;
+  while (j >= 0 && /\s/.test(s[j])) j--;
+  if (s[j] !== '{') return null;
+  let k = j - 1;
+  while (k >= 0 && /\s/.test(s[k])) k--;
+  if (s[k] !== ':') return null;
+  let m2 = k - 1;
+  while (m2 >= 0 && /\s/.test(s[m2])) m2--;
+  if (s[m2] === "'" || s[m2] === '"') {
+    const q = s[m2]; let p = m2 - 1;
+    while (p >= 0 && s[p] !== q) p--;
+    return s.slice(p + 1, m2);
+  }
+  let p = m2;
+  while (p >= 0 && /[\w$]/.test(s[p])) p--;
+  const id = s.slice(p + 1, m2 + 1);
+  return id || null;
+}
+
+/** 解析式提取客户可见字符串 (取代原三条朴素正则) */
+function extractVisibleStrings(content) {
+  const out = [];
+  const lineOf = (idx) => content.slice(0, idx).split('\n').length;
+  const lines = content.split('\n');
+  const objStack = [];   // 花括号栈: 每层记 { field }
+  let i = 0;
+  while (i < content.length) {
+    const c = content[i];
+    if (c === '/' && (content[i + 1] === '/' || content[i + 1] === '*')) { i = skipWsAndComments(content, i); continue; }
+    if (c === '{') {
+      const f = nearestContainerField(content, i);
+      objStack.push(f || null);
+      i++; continue;
+    }
+    if (c === '}') { objStack.pop(); i++; continue; }
+    if (c === '[') { i++; continue; }
+    if (c === ']') { i++; continue; }
+    if (c === "'" || c === '"' || c === '`') {
+      const st = parseStringAt(content, i);
+      if (!st) { i++; continue; }
+      const { key, objField } = ownerOf(content, st.start, objStack);
+      let field = key && VISIBLE_FIELDS.has(key) ? key
+        : (key && NON_VISIBLE_KEYS.has(key)) ? null
+          : (objField && CONTAINER_FIELDS.has(objField)) ? objField
+            : (key === null || /^(zh-hk|en|ja)$/.test(key) || (key && /^[a-z]{2}(-[A-Za-z]{2,4})?$/.test(key))) ? (objField || 'content')
+              : null;
+      // HTML 正文即便挂在技术键上也必须扫 (保守: 含尖括号标签即视为客户可见)
+      if (!field && /<\/?[a-z][\s\S]{0,40}>/i.test(st.value)) field = 'content';
+      if (field) {
+        const lineNo = lineOf(st.start);
+        const lineText = lines[lineNo - 1] || '';
+        const isCommentLine = /^\s*(\/\/|\*|\/\*)/.test(lineText);
+        if (!isCommentLine) out.push({ value: st.value, field, line: lineNo, start: st.start });
+      }
+      i = st.end;
+      continue;
+    }
+    i++;
+  }
+  return out;
+}
+
+// TS 文件: blog-posts.ts / buying-guides.ts / pillar-content.ts / products.ts / products-content.ts …
 function scanTs(file) {
+  const hits = [];
+  let content;
+  try {
+    content = fs.readFileSync(file, 'utf-8');
+  } catch (e) { return hits; }
+  const rel = file.replace(process.cwd() + path.sep, '').replace(/\\/g, '/');
+  const base = path.basename(file);
+
+  const extracted = extractVisibleStrings(content);
+  for (const { value, field, line, start } of extracted) {
+    hits.push(...checkValue(value, rel, field, `${base}:L${line}`, line, content, start));
+  }
+  return hits;
+}
+/* ---------------------------------------------------------------------------
+ * 以下为 2026-09-19 前的旧提取实现 (已停用, 保留供对照与回滚).
+ * 停用理由: 三条静默失效 (字段盲区 / 引号截断 / 双引号看空), 见上。
+ * --------------------------------------------------------------------------- */
+function scanTsLegacy(file) {
   const hits = [];
   let content;
   try {
@@ -237,7 +452,15 @@ async function scan(files) {
     const hits = rel.endsWith('.json') ? scanJson(file) : scanTs(file);
     allHits.push(...hits);
   }
-  return allHits;
+  // 2026-09-19: 解析式提取器可能对同一处命中重复上报 (同一行被多个字段/多条规则走到);
+  //   按 (文件, 行, 规则, 命中词) 去重 —— 保留每处真实位置, 去掉噪音。
+  const seen = new Set();
+  return allHits.filter(h => {
+    const k = `${h.file}|${h.line}|${h.ruleId}|${h.match}`;
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
 }
 
 module.exports = { scan, RULES: [{ id: 'GSC_LEAK_CUSTOMER_VISIBLE', severity: 'red' }], GSC_LEAK_PATTERNS };
