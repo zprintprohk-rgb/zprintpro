@@ -1,0 +1,79 @@
+{
+  "lane": "ZP-blog-deepfix",
+  "generated_at": "2026-09-19 08:19:02",
+  "repo": "F:\\zprintpro-nextjs",
+  "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+  "preflight": {
+    "verdict": "ok",
+    "blocked_reason": "",
+    "checks": [
+      {
+        "name": "repo_worktree_branch",
+        "ok": true,
+        "detail": "repo OK, branch=main"
+      },
+      {
+        "name": "lock_free",
+        "ok": true,
+        "detail": "无锁"
+      },
+      {
+        "name": "prev_run_known",
+        "ok": false,
+        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+      },
+      {
+        "name": "lane_status_available",
+        "ok": true,
+        "detail": "verdict=ATTENTION problems=2"
+      },
+      {
+        "name": "lock_acquired",
+        "ok": true,
+        "detail": "F:\\zprintpro-nextjs\\.hermes\\locks\\lane.lock"
+      }
+    ]
+  },
+  "lock": {
+    "lane": "ZP-blog-deepfix",
+    "pid": 32060,
+    "acquired_at": "2026-09-19 08:19:02",
+    "acquired_ts": 1789777142.691906,
+    "host": "JEROME"
+  },
+  "previous_run": {
+    "bus_record": null,
+    "latest_report": ".hermes/logs/2026-09-19-blog-deepfix.md",
+    "delivered_files_from_report": []
+  },
+  "sibling_lanes": [
+    {
+      "lane": "ZP-daily-content",
+      "status": "PENDING",
+      "report": null,
+      "start": "21:17"
+    },
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "PENDING",
+      "report": null,
+      "start": "22:43"
+    }
+  ],
+  "retry_queue": [
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-09-19",
+      "status": "STALE",
+      "notes": [
+        "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
+      ]
+    }
+  ],
+  "instructions_to_lane": [
+    "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
+    "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+    "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
+    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行"
+  ]
+}

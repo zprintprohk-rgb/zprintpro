@@ -15,3 +15,6 @@
 | 2026-09-18 06:43:01 | ZP-cron-watchdog | ✅ 通过 | `cron-watchdog-alerts.md` (告警时才写) | ✅ ZP-daily-content | ✅ ZP-gsc-feedback | ✅ ZP-weekly-meta | ✅ ZP-blog-deepfix | ✅ ZP-monthly-matrix | — |
 | 2026-09-18 21:24:05 | ZP-daily-content | ✅ 完成 | `.hermes/logs/2026-09-06-autoclaw-plp-pdp-v5-prompt.md` | src/data/products.ts, .hermes/reports/bc-scan-2026-09-09-final.txt, .hermes/reports/bc-scan-2026-09-09.txt, docs/2026-09-07-v5-execution-report.html, docs/2026-09-07-v6-handoff.html, docs/2026-09-07-v6-verify-ledger.json, docs/2026-09-07-v7-prodcheck.json, docs/2026-09-07-v7-signoff.html, docs/2026-09-08-v8-seo-roadmap.html | ⏳ commit(未 push) |
 | 2026-09-18 22:48:34 | ZP-gsc-feedback | ✅ 完成 | `.hermes/logs/cron-check-tonight.md` | .hermes/industry-keyword-matrix.json | ✅ push |
+| 2026-09-18 23:13:42 | ZP-weekly-meta | ✅ 完成 | `.hermes/logs/2026-09-18-weekly-meta.md` | src/lib/seo.ts | ⏳ commit(未 push) |
+| 2026-09-19 06:43:01 | ZP-cron-watchdog | ✅ 通过 | `cron-watchdog-alerts.md` (告警时才写) | ✅ ZP-daily-content | ✅ ZP-gsc-feedback | ✅ ZP-weekly-meta | ✅ ZP-blog-deepfix | ✅ ZP-monthly-matrix | — |
+| 2026-09-19 08:17:17 | ZP-cron-watchdog | ⚠️ 2 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | OK ZP-weekly-meta | STALE ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | — |

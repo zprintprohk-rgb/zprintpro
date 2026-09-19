@@ -10,3 +10,8 @@
 
 - ZP-blog-deepfix: **无任何报告文件** (期望 192h 内有产出)
 - ZP-monthly-matrix: **无任何报告文件** (期望 768h 内有产出)
+
+## 2026-09-19 08:17:17 车道对账告警
+
+- **车道结果异常**: ZP-blog-deepfix 2026-09-19 -> STALE -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=267011 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细

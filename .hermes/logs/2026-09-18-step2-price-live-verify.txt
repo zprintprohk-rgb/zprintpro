@@ -1,0 +1,14 @@
+★FAIL en perfect-bound-books
+        舊簡體樣本殘留: 0 ✅ | 價格 207.94=true 2.08=true
+        備註: ★ en 頁仍見中文標籤
+★FAIL zh-hk perfect-bound-books
+        舊簡體樣本殘留: 封面4P | 價格 207.94=false 2.08=false
+        備註: 殘留舊簡體樣本: 封面4P | ★ 關鍵價格缺失 (207.94=false / 2.08=false)
+★FAIL ja perfect-bound-books
+        舊簡體樣本殘留: 0 ✅ | 價格 207.94=false 2.08=false
+        備註: ★ 關鍵價格缺失 (207.94=false / 2.08=false)
+★FAIL en gang-run-card-boxes
+        舊簡體樣本殘留: 覆光膜 | 價格 207.94=false 2.08=false
+        備註: 殘留舊簡體樣本: 覆光膜 | ★ en 頁仍見中文標籤 | ★ 關鍵價格缺失 (207.94=false / 2.08=false)
+
+== Step 2 線上驗收: ❌ 4 頁未過 ==

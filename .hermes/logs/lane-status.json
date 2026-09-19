@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-18T23:53:10.068Z",
-  "generated_local": "2026-09-19 07:53",
+  "generated_at": "2026-09-19T00:17:17.339Z",
+  "generated_local": "2026-09-19 08:17",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
   "bus_file": ".hermes/logs/lane-runs.jsonl",
   "bus_records": 0,
   "bus_records_test_excluded": 1,
-  "window_days": 7,
+  "window_days": 8,
   "lanes": [
     {
       "task": "ZP-daily-content",
@@ -40,6 +40,17 @@
       "lastRunRecord": null,
       "days": [
         {
+          "day": "2026-09-12",
+          "expected": "21:17",
+          "status": "MISSING",
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null
+        },
+        {
           "day": "2026-09-13",
           "expected": "21:17",
           "status": "MISSING",
@@ -47,8 +58,8 @@
             "no wrapper log run-start and no bus record for this trigger"
           ],
           "exit": null,
-          "report": "2026-09-13-cron-rearm.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         },
         {
           "day": "2026-09-14",
@@ -62,13 +73,13 @@
         {
           "day": "2026-09-15",
           "expected": "21:17",
-          "status": "OK",
+          "status": "STALE",
           "notes": [
-            "report naming not date-first (2026-09-15-wrapper-call-fix.md) -> treated as reference only"
+            "ran but no report file dated 2026-09-15"
           ],
           "exit": null,
-          "report": "2026-09-15-wrapper-call-fix.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         },
         {
           "day": "2026-09-16",
@@ -82,13 +93,13 @@
         {
           "day": "2026-09-17",
           "expected": "21:17",
-          "status": "OK",
+          "status": "STALE",
           "notes": [
-            "report naming not date-first (2026-09-17-lane-o-p0-3-lead-source-utm.md) -> treated as reference only"
+            "ran but no report file dated 2026-09-17"
           ],
           "exit": null,
-          "report": "2026-09-17-lane-o-p0-3-lead-source-utm.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         },
         {
           "day": "2026-09-18",
@@ -105,8 +116,8 @@
           "status": "PENDING",
           "notes": [],
           "exit": null,
-          "report": "2026-09-19-cron-source-of-truth-findings.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         }
       ],
       "verdict": "PENDING"
@@ -141,6 +152,17 @@
       },
       "lastRunRecord": null,
       "days": [
+        {
+          "day": "2026-09-12",
+          "expected": "22:43",
+          "status": "MISSING",
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null
+        },
         {
           "day": "2026-09-13",
           "expected": "22:43",
@@ -182,13 +204,13 @@
         {
           "day": "2026-09-17",
           "expected": "22:43",
-          "status": "OK",
+          "status": "STALE",
           "notes": [
-            "report naming not date-first (2026-09-17-lane-o-p0-3-lead-source-utm.md) -> treated as reference only"
+            "ran but no report file dated 2026-09-17"
           ],
           "exit": null,
-          "report": "2026-09-17-lane-o-p0-3-lead-source-utm.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         },
         {
           "day": "2026-09-18",
@@ -205,8 +227,8 @@
           "status": "PENDING",
           "notes": [],
           "exit": null,
-          "report": "2026-09-19-cron-source-of-truth-findings.md",
-          "reportStrict": false
+          "report": null,
+          "reportStrict": null
         }
       ],
       "verdict": "PENDING"
@@ -286,6 +308,17 @@
       "lastRunRecord": null,
       "days": [
         {
+          "day": "2026-09-12",
+          "expected": "05:37",
+          "status": "MISSING",
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null
+        },
+        {
           "day": "2026-09-19",
           "expected": "05:37",
           "status": "STALE",
@@ -314,9 +347,9 @@
         "Next": "2026-10-01 06:13:00"
       },
       "lastReportFile": {
-        "file": "2026-09-19-cron-source-of-truth-findings.md",
+        "file": "i18n-en-cjk-classification-v2-2026-09-19.md",
         "dateToken": "2026-09-19",
-        "mtime": "2026-09-18T23:53:03.262Z"
+        "mtime": "2026-09-19T00:06:19.895Z"
       },
       "lastWrapperRun": null,
       "lastRunRecord": null,
