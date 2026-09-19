@@ -1,11 +1,11 @@
 # 标题候选提案 — 批次 P2-修剪 (2026-09-19)
 
-校准日期: 2026-09-19 16:41 UTC
+校准日期: 2026-09-19 16:58 UTC
 
 > 硬门: UNIFIED — 生成器可构建 · 口径: 50-58 当量 (≥58 硬拦)
 > 纪律: 不发明数字 · 主词不改 · MANUAL_REVIEW 不生成 · 四道闸门
 
-## 汇总: 38 槽生成 / 0 槽跳过 / 30 条全闸门通过
+## 汇总: 38 槽生成 / 0 槽跳过 / 29 条全闸门通过
 
 ### waterproof-stickers / en  ·  P2-修剪  ·  展示 80 / 位置 40.46
 
@@ -22,7 +22,7 @@
 | S1_2 | 61 | 🔴 G1_当量 | Custom Waterproof Stickers | Free US Ship | $0.32 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### transparent-stickers / en  ·  P2-修剪  ·  展示 30 / 位置 36.57
@@ -40,7 +40,7 @@
 | S1_2 | 62 | 🔴 G1_当量 | Custom Transparent Stickers | Free US Ship | $0.41 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### small-batch-stickers / zh-hk  ·  P2-修剪  ·  展示 18 / 位置 6.61
@@ -99,7 +99,7 @@
 | S1_2 | 62 | 🔴 G1_当量 | Custom Fluorescent Stickers | Free US Ship | $0.46 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### a4-flyers / en  ·  P2-修剪  ·  展示 36 / 位置 13.81
@@ -117,7 +117,7 @@
 | S1_2 | 62 | 🔴 G1_当量 | A4 Flyers for Holiday Cards | Free US Ship | $0.55 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### a5-flyers / en  ·  P2-修剪  ·  展示 26 / 位置 12.12
@@ -135,7 +135,7 @@
 | S1_2 | 61 | 🔴 G1_当量 | A5 Flyers for Holiday Cards | Free US Ship | $0.4 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### double-sided-flyers / ja  ·  P2-修剪  ·  展示 65 / 位置 29.68
@@ -145,15 +145,12 @@
 
 | 变体 | 当量 | 闸门 | 候选标题 |
 |---|---|---|---|
-| S1_1 | 52 | ✅ 全过 | 両面カラー印刷 両面チラシ | Free US Ship | ZprintPro |
 | S1_2 | 55 | ✅ 全过 | 両面カラー印刷 両面チラシ | 100枚〜 | ¥85〜 | ZprintPro |
 | S1_1 | 47 | 🔴 G1_当量 | 両面カラー印刷 両面チラシ | 100枚〜 | ZprintPro |
 | S1_1 | 45 | 🔴 G1_当量 | 両面カラー印刷 両面チラシ | ¥85〜 | ZprintPro |
-| S1_2 | 62 | 🔴 G1_当量 | 両面カラー印刷 両面チラシ | 100枚〜 | Free US Ship | ZprintPro |
-| S1_2 | 60 | 🔴 G1_当量 | 両面カラー印刷 両面チラシ | Free US Ship | ¥85〜 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `100枚〜 + ¥85〜` ← locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市) / products.ts basePrice=85
 - `両面フルカラー 100枚〜 翌日発送` ← 移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)
 
 ### folded-leaflets / en  ·  P2-修剪  ·  展示 6 / 位置 45.17
@@ -473,7 +470,7 @@
 | S1_2 | 61 | 🔴 G1_当量 | Custom Food Label Stickers | Free US Ship | $0.23 | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### doujinshi-printing / en  ·  P2-修剪  ·  展示 359 / 位置 11.72
@@ -486,7 +483,7 @@
 | S1_1 | 53 | ✅ 全过 | Doujinshi Printing Comiket | Free US Ship | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### postcard-set / en  ·  P2-修剪  ·  展示 1 / 位置 11
@@ -499,7 +496,7 @@
 | S1_1 | 54 | ✅ 全过 | Washi Postcard Sets 4-8 pcs | Free US Ship | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### eco-tote-bag / en  ·  P2-修剪  ·  展示 - / 位置 -
@@ -512,7 +509,7 @@
 | S1_1 | 54 | ✅ 全过 | Organic Cotton Eco Tote Bag | Free US Ship | ZprintPro |
 
 数字/要素来源:
-- `Free US Ship` ← 线上既有短钩子 (14 处在用, 服务承诺类, 非 SKU 专有数字)
+- `Free US Ship` ← 线上既有短钩子 (en, 14 处在用, 服务承诺类)
 - `Free Shipping $99+` ← 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)
 
 ### graduation-yearbook / ja  ·  P2-修剪  ·  展示 22 / 位置 62.82

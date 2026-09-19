@@ -73,6 +73,18 @@ function independentVerify(cand, slug, locale, curTitle, entry, clsRow, mode) {
     if (added.length) issues.push(`修剪引入了原标题没有的数字: ${added.join('/')} (删除型批次不得新增数字)`);
     return { equiv: e, issues, ok: issues.length === 0, status: 'TRIM', expectMoq: null };
   }
+  /* subst (替代) 的不变量: 允许**来源可溯**的新数字 (products.ts minQuantity / basePrice),
+   *   但**不得出现既非原文、又非源头**的数字。
+   * ★ 2026-09-19 修正: 原对 subst 套用 fill 的「MOQ 必须存在」⇒ 误报 ——
+   *   替代是**替换钩子**, 原标题没有 MOQ 的槽位 (例 en `… | Free Shipping $99+ | …`)
+   *   替换后自然也没有 MOQ, 这不是缺陷。fill 才要求必须补上 MOQ 钩子。 */
+  if (mode === 'subst') {
+    const orig = numsOf(curTitle);
+    const allowed = new Set([...orig, String(entry.moq), String(entry.basePrice?.[locale] ?? '')].filter(Boolean));
+    const unsourced = [...numsOf(cand)].filter((n) => !allowed.has(n));
+    if (unsourced.length) issues.push(`替代引入了无来源数字: ${unsourced.join('/')} (允许: 原标题 ∪ products.ts minQuantity/basePrice)`);
+    return { equiv: e, issues, ok: issues.length === 0, status: 'SUBST', expectMoq: null };
+  }
   // ⑤ MOQ 期望值
   const status = clsRow ? clsRow.cls : 'NO_CONFLICT';
   let expectMoq = null;
@@ -115,6 +127,23 @@ function loadFromProposals(file) {
   const clsOf = {};
   for (const it of cls.items) clsOf[`${it.slug}|${it.locale || '?'}`] = it;
 
+  /* ★ 2026-09-19: 必须读**文件真值**而非 bank 里的 `current_title`。
+   *   原因: bank 生成于 P0-A1/P2-batch-1 落盘**之前** ⇒ 其 current_title 已过期;
+   *   用过期值做 no-op 比较 ⇒ 6 个「其实已是 no-op」的槽位被计为目标,
+   *   落盘断言「变化行数 == 目标槽数」失败 (17 vs 11)。 */
+  const target = fs.readFileSync(path.join(ROOT, 'src/data/sku-seo-data.ts'), 'utf8');
+  const starts = [...target.matchAll(/^(?: {2})?"([a-z0-9-]+)": \{/gm)].map((m) => ({ slug: m[1], idx: m.index }));
+  starts.push({ slug: '__END__', idx: target.length });
+  const currentTitle = (slug, locale) => {
+    for (let i = 0; i < starts.length - 1; i++) {
+      if (starts[i].slug !== slug) continue;
+      const seg = target.slice(starts[i].idx, starts[i + 1].idx);
+      const m = seg.match(new RegExp(`"${locale}": \\{\\s*"title": "((?:[^"\\\\]|\\\\.)*)"`));
+      return m ? m[1].replace(/\\"/g, '"') : null;
+    }
+    return null;
+  };
+
   const perSlug = {};
   const audit = [];
   for (const r of p.results) {
@@ -128,9 +157,12 @@ function loadFromProposals(file) {
       best = r.candidates.find((c) => c.variant === 'A' && c.allPass) || r.candidates.find((c) => c.allPass);
     }
     if (!best) { audit.push({ slug: r.slug, locale: r.locale, ok: false, issues: ['无全闸门通过候选'] }); continue; }
+    // ★ no-op 排除: 与**文件真值**逐字相同 ⇒ 无改动, 不计为目标
+    const real = currentTitle(r.slug, r.locale);
+    if (real && best.title === real) { audit.push({ slug: r.slug, locale: r.locale, ok: true, noop: true, title: best.title, equiv: best.equiv, status: 'NOOP' }); continue; }
     const entry = bank.skus[r.slug];
-    const v = independentVerify(best.title, r.slug, r.locale, r.current, entry, clsOf[`${r.slug}|${r.locale}`], r.mode || 'fill');
-    audit.push({ slug: r.slug, locale: r.locale, batch: r.batch, title: best.title, from: r.current, ...v });
+    const v = independentVerify(best.title, r.slug, r.locale, real || r.current, entry, clsOf[`${r.slug}|${r.locale}`], r.mode || 'fill');
+    audit.push({ slug: r.slug, locale: r.locale, batch: r.batch, title: best.title, from: real || r.current, ...v });
     if (!v.ok) continue;
     perSlug[r.slug] = perSlug[r.slug] || { slug: r.slug, slots: {}, src: {} };
     perSlug[r.slug].slots[r.locale] = best.title;
