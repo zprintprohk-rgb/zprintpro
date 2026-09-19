@@ -20,17 +20,17 @@
 >
 > **任务 J · 8 个 T1 锁词（保护加强位，走 G2 攻坚通道 striking pos 11-20）**：包裝盒印刷 ⭐重中之重 / 紙盒印刷 ⭐重中之重 / 包裝盒訂製 / 貼紙印刷 / 宣傳單張 / 即日印刷 / 書刊印刷 / 騎馬釘。
 > - **gsc-feedback cron 每周追踪这 8 词的位置与 CTR 变化**（9/17 起为干净对比窗）。
-> - 攻坚动作：① title v4 写满核查（半角当量 50-54 区间，跑当量脚本存档）② 全站内链锚文本统一（每词 ≥3 个正文内链使用统一锚文本，grep 一致性验收）。
+> - 攻坚动作：① title 写满核查（半角当量 **50-58** 区间，跑 `node scripts/sku-title-census.mjs` 存档）② 全站内链锚文本统一（每词 ≥3 个正文内链使用统一锚文本，grep 一致性验收）。
 > - 红线：**不改 slug、不砍页、不回滚已部署 title**（churn 红线）。
 >
 > **不变引用（不复制全文，按需回查路径）**：
-> - 标题规则 v4 写满原则（50-54 写满 / ≥55 禁加 / 长尾 3 筛选 / 冻结 2-4 周）→ `docs/2026-09-09-k3-title-rule-v4-write-full.md`
+> - 标题规则（**50-58 目标区 / >58 禁加** / 长尾 3 筛选 / 冻结 2-4 周）→ `docs/2026-09-13-title-batch-T-freeze.md` §6-3（K3 9/13 终裁）→ `docs/2026-09-09-k3-title-rule-v4-write-full.md`
 > - 幂等铁律「不重复做已完成的事」 → 同上
 > - G 梯队攻坚顺序（G1 首页 / G2 striking 11-20 / G3 详情模板 / G4 AEO）→ `docs/2026-09-10-k3-directive-v92-template-rollout.md`
 > - **冻结名单不变**：`zprintpro-en-us-images/` 整目录 · `_batch*.py` · `src/components/services/Rush*` 8 组件 · `page.redesign.tsx` · `src/services/rush/*`
 > - **门禁纪律不变项**：tsc 54=54 基线持平 · build 687 URLs exit 0 · bc-ban 按 diff 0 新增 · 线上探针（非纸面结论）· 只推 main 省 CF 构建配额（分支走本地路径进合并仓）
 
-> **[v8 大脑指令 · 2026-09-09 06:18 K3 拍板 · 必读第 -1 优先级]** ①标题规则 v4 写满原则：半角当量 **50-54 写满目标区**（主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次），≥55 满格禁加，<50 按序补；细则 SSoT = `docs/2026-09-09-k3-title-rule-v4-write-full.md`；§1.5 长尾口径由此终裁；验证窗纪律不变（8/30 批 + 9/4 批 title 只读至 9/12-13 判定）。②幂等铁律（K3 拍板「不重复做已完成的事」）：开工先查 git log + 既有内容实测，已落项跳过（D8 f8c194a0 / 月曆簇 3 篇 / 品类 FAQ 63af89ab / 名片专项 / GSC 回灌 0f3c4818）。③本周五槽位按 v4.0 主报告 6.2 Track B 执行；meta refresh 如涉及 title 一律按 v4 写满区 50-54。
+> **[v8 大脑指令 · 2026-09-09 06:18 K3 拍板 · 必读第 -1 优先级]** ①标题规则：半角当量 **50-58 目标区**（主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次），**>58 禁加，<50 按序补**；**规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（K3 9/13 终裁，取代 v4 的 50-54）**；当量口径 = `scripts/guards/title-equiv.js`（MIN=50 / MAX=58）；⚠️ `docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」已失效，勿再据此压标题；§1.5 长尾口径由此终裁；验证窗纪律不变（8/30 批 + 9/4 批 title 只读至 9/12-13 判定）。②幂等铁律（K3 拍板「不重复做已完成的事」）：开工先查 git log + 既有内容实测，已落项跳过（D8 f8c194a0 / 月曆簇 3 篇 / 品类 FAQ 63af89ab / 名片专项 / GSC 回灌 0f3c4818）。③本周五槽位按 v4.0 主报告 6.2 Track B 执行；meta refresh 如涉及 title 一律按 v4 写满区 50-54。
 
 > **[v1.2 执行主提示词 · 2026-09-10 03:38/03:49 老板令 · 必读第 -2 优先级（仅低于 v8 大脑指令）】** 两级决策权生效：①执行层无战略级决策权（选词方向/新建砍页/预算节奏/零改文案/不自主新建任务/不扩大范围——违反 = 当次交付作废）；②执行层拍板权是义务：指令包内的实现方式/格式细节/执行顺序/工具路径，须穷尽 100% 能力+五视角+联网核查后**自主拍板并在报告写明理由**，不为琐事上报老板；③复杂问题 = A/B/C 选项+业务影响+明确推荐后上报（禁只抛问题/禁选项无推荐）；④能力全配 ≠ 裁决权放大（联网/五视角用于执行拍板/自检/验收/撞墙识别，禁止做战略取舍）。⑤工作树纪律：多 worktree 并发，禁 `git reset --hard`/整树 restore，只用路径级 `git restore --source --staged --worktree -- <path>`，只 add 自己任务文件。全文 SSoT = `docs/2026-09-10-autoclaw-executor-v1.2.md`。
 > **[v7 执行层迁移 · 2026-09-08 · K3 9/8 05:58 拍板 · 必读第 0 优先级]** M3 已出局（K3 拍板"能力太弱"）。执行层 = **autoclaw + deepseek hermes**。开工前必读统一入口技能 `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` + 规则 SSoT `docs/2026-09-08-title-rules-and-deep-blog-standard.md`（最高规则名片禁令 / SKU 标题规则 v4 写满原则 / 深度 blog 12 段骨架 / 12 铁律门童 / 5 步真验收 / 自进化 4 步 SOP）。本 SSoT 内所有"M3 执行/必跑/落地"等执行者称谓一律由新执行层承接；历史反例与拍板记录中的"M3"为史实不改写。冲突优先级：K3 最新拍板 > AGENTS.md §0.34 > 入口技能 > 专项技能。**最高规则（AGENTS.md §0.0，凌驾一切）：不做名片印刷**——任何产出不得引入名片词（名片/咭片/business cards/名刺/name cards），承接主品类 = 贺卡 greeting-cards，push 前必跑 `node scripts/check-bc-ban.mjs`。当前战略指令以 `docs/2026-09-08-v4-full-alignment-master-report.md` A1-A12 为准。

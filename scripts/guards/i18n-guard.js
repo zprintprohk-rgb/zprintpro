@@ -194,12 +194,28 @@ const TITLE_LENGTH_FILES = [
   'sku-seo-data', 'blog-data', 'buying-guides', 'blog-posts.ts',
   'seo.ts', 'h1-builder.ts', 'pillar-content.ts', 'schema-extensions.ts', 'seo-keywords.ts',
 ];
+// ★ 2026-09-19 盲区修复 (K3 指令: 先黄灯, 存量清零后再升 red)
+//   缺陷 1 — 匹配过宽: 原判定 `file.includes(f)` 让 'seo.ts' 意外命中 `product-seo.ts`
+//            (孤儿文件, 全仓 import 零引用)。实测全量跑 check-regression-guard.js 时
+//            I18N_TITLE_LENGTH 的 6 条命中**全部**落在该孤儿文件 = 纯噪音, 反而掩盖真缺陷。
+//            改为按**路径段**匹配 (basename 精确或目录段), 不再子串匹配。
+//   缺陷 2 — 正则看不见真源: 原正则 /title:\s*["']/ 只认**裸键** `title: "..."`,
+//            而 src/data/sku-seo-data.ts 全部使用**带引号 JSON 键** `"title": "..."`
+//            (title 后紧跟 `"` 再到 `:`, `title:` 子串永不出现) ⇒ 297 个 SKU 标题槽
+//            **实际零覆盖**。per §0.23.2 闸门 1「先 dump 真实样本再写正则」——此处正是反面案例。
+function isTitleLengthFile(file) {
+  const norm = String(file).replace(/\\/g, '/');
+  const base = norm.split('/').pop() || '';
+  return TITLE_LENGTH_FILES.some((f) => norm.includes(`/${f}`) || base === f || base.replace(/\.[a-z]+$/, '') === f.replace(/\.[a-z]+$/, ''));
+}
 function checkTitleLength(content, file) {
   const hits = [];
-  const titleRe = /title:\s*["']([^"']{1,200})["']/g;
+  // 同时认: 裸键 `title: "…"` 与 带引号 JSON 键 `"title": "…"`
+  const titleRe = /(?:"title"|title)\s*:\s*["']([^"']{1,300})["']/g;
   let match;
   while ((match = titleRe.exec(content)) !== null) {
     const title = match[1];
+    if (common.isCommentLine(content, match.index)) continue;   // 注释行不算标题
     const e = titleEquiv(title);
     if (e < TITLE_MIN || e > TITLE_MAX) {
       const line = common.findLineNumber(content, match.index);
@@ -472,7 +488,8 @@ async function scan(files) {
     allHits.push(...scanLocaleScoped(content, file, currency, ['zh-hk']));
 
     // title 长度自定义检查 (2026-09-15: 白名单文件 = 真实 SEO title 数据源, 排除 page.tsx 组件文案误报)
-    if (TITLE_LENGTH_FILES.some((f) => file.includes(f))) {
+    // 2026-09-19: 判定改 isTitleLengthFile() (路径段精确匹配, 修 'seo.ts' ⊂ 'product-seo.ts' 噪音)
+    if (isTitleLengthFile(file)) {
       const titleHits = checkTitleLength(content, file);
       allHits.push(...titleHits);
     }

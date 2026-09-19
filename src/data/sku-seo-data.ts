@@ -2588,7 +2588,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司信封 | 雙面印刷 多規格 | 智印港",
+        "title": "公司信封 | DL/C5/C4 開窗全封 100個起 HK$0.22起 | 智印港",
         "description": "公司信封/公司信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "公司信封",
@@ -2604,7 +2604,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "会社封筒 | 両面印刷 マルチサイズ | ZprintPro",
+        "title": "会社封筒 | DL/C5/C4 窓付き・自黏封口 100枚〜 | ZprintPro",
         "description": "会社封筒の会社封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Custom business envelopes with logo and address. Professional image",
         "keywords": ["会社封筒", "会社封筒 印刷", "business envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
@@ -2674,14 +2674,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "大號信封 | 雙面印刷 多規格 | 智印港",
+        "title": "大號信封 | C4 229×324mm 平放A4 100個起 HK$0.60起 | 智印港",
         "description": "大號信封/大號信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "A4尺寸大信封，可裝入文件、合同。辦公室必備。智印港提供專業大號信封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["大號信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封", "100個起", "2小時取", "50個起", "A4功課袋", "A4文件夾印刷", "C5信封", "C7信封", "ESG印刷", "Excel信封", "HK$0.5起", "HK$0.8起", "UV信封", "UV封套", "企業文件夾", "保密信封", "信封多少錢", "公司信封印刷", "公司抬頭文件夾", "公司簡介封套印刷", "再生紙信封", "再生紙封套", "即日取封套", "即日取封套印刷", "可變數據信封", "可降解信封", "喜帖信封", "地址列印", "婚禮信封印刷", "學校信封印刷", "學校功課袋印刷", "定製信封印刷", "封套印刷", "小學生功課袋", "展會資料夾", "律師信封印刷", "急件文件夾", "成績單信封", "批量信封", "批量封套", "抬頭信封", "文件夾 HK$199", "旺角信封", "旺角封套", "會計樓信封", "會議資料封套", "校徽封套", "無塑過膠", "燙金LOGO", "燙金信封", "特種紙信封", "特種紙封套", "環保信封印刷", "環保封套印刷", "畢業班用品", "畢業資料封套", "當日出貨", "紀念封套", "絲帶孔信封", "迷你信封", "透明功課套", "通知信印刷", "過膠封套", "霧面過膠封套", "高端信封"],
         "body": "辦公室日常少不免要寄出整疊文件——合約、標書、財務報表以至按揭文件，都需要摺疊無痕的空間。大號信封採用 C4（229×324mm）規格，A4 文件可平放寄出，免卻對摺之餘，亦令文件保持平整美觀，收件一方處理起來更見專業。文件毋須對摺，簽名與印章位置亦不會留下摺痕。\n\n對公往來尤其講究細節：招標文件、審計資料、法律文件等，一張平整無摺痕的大信封往往代表公司的嚴謹態度。信封印刷以 100–120g 書紙為主，挺度足夠保護內文，尺寸或紙張有特別要求亦可向我們諮詢，務求配合實際需要。辦公室採購大號信封，一次備足整季用量，亦可減少臨急補充的麻煩。訂製信封時亦可加上公司標誌與寄件地址，讓每封文件都帶有明確的企業識別。\n\n大號信封 100 個起印，單價由 HK$0.60-3.40/個 起，量大歡迎查詢批量報價。\n\n以單色至四色印刷，可選自黏封口與開窗設計；常用 C4（229×324mm）規格。下單後3-5 個工作天交貨，港九新界免費速遞。"
       },
       "en": {
-        "title": "Large Envelopes | Free Shipping $99+ | ZprintPro",
+        "title": "Large Envelopes C4 | Fits A4 Flat | 100 MOQ | ZprintPro",
         "description": "Custom large envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Envelopes 100+ | ZprintPro",
         "keywords": ["large envelopes", "custom large envelopes", "large envelopes printing online", "large envelopes free shipping", "large envelopes USD", "bulk large envelopes", "large envelopes DHL", "bespoke large envelopes", "large envelopes wholesale", "large envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from $0.06", "from $0.10", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
@@ -2689,7 +2689,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "大型封筒 | 両面印刷 マルチサイズ | ZprintPro",
+        "title": "大型封筒 | C4 229×324mm A4対応 100枚〜 | ZprintPro",
         "description": "大型封筒の大型封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["大型封筒", "大型封筒 印刷", "large envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],

@@ -1,0 +1,2167 @@
+{
+ "schema": "sku-title-ledger-v1",
+ "updatedAt": "2026-09-19",
+ "rule": {
+  "min": 50,
+  "max": 58,
+  "sov": "scripts/guards/title-equiv.js"
+ },
+ "gatePhase": "YELLOW_WARN",
+ "escalateThreshold": 10,
+ "counts": {
+  "open": 118,
+  "fixed": 0,
+  "total": 118
+ },
+ "entries": {
+  "waterproof-stickers|zh-hk": {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 304,
+   "gscPos": 9.44,
+   "status": "OPEN"
+  },
+  "waterproof-stickers|en": {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 59
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 59,
+   "issues": [],
+   "gscImps": 80,
+   "gscPos": 40.46,
+   "status": "OPEN"
+  },
+  "waterproof-stickers|ja": {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [],
+   "gscImps": 138,
+   "gscPos": 15.18,
+   "status": "OPEN"
+  },
+  "transparent-stickers|zh-hk": {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 184,
+   "gscPos": 15.78,
+   "status": "OPEN"
+  },
+  "transparent-stickers|en": {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 30,
+   "gscPos": 36.57,
+   "status": "OPEN"
+  },
+  "transparent-stickers|ja": {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [],
+   "gscImps": 2,
+   "gscPos": 8,
+   "status": "OPEN"
+  },
+  "removable-stickers|zh-hk": {
+   "slug": "removable-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 126,
+   "gscPos": 10.7,
+   "status": "OPEN"
+  },
+  "small-batch-stickers|zh-hk": {
+   "slug": "small-batch-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 63
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 63,
+   "issues": [],
+   "gscImps": 18,
+   "gscPos": 6.61,
+   "status": "OPEN"
+  },
+  "small-batch-stickers|en": {
+   "slug": "small-batch-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 67
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 67,
+   "issues": [],
+   "gscImps": 396,
+   "gscPos": 17.81,
+   "status": "OPEN"
+  },
+  "small-batch-stickers|ja": {
+   "slug": "small-batch-stickers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 63
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 63,
+   "issues": [],
+   "gscImps": 26,
+   "gscPos": 22.88,
+   "status": "OPEN"
+  },
+  "foil-stickers|zh-hk": {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 102,
+   "gscPos": 5.74,
+   "status": "OPEN"
+  },
+  "security-stickers|zh-hk": {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 37,
+   "gscPos": 6.43,
+   "status": "OPEN"
+  },
+  "fluorescent-stickers|zh-hk": {
+   "slug": "fluorescent-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 33,
+   "gscPos": 3.58,
+   "status": "OPEN"
+  },
+  "fluorescent-stickers|en": {
+   "slug": "fluorescent-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 71,
+   "gscPos": 15.37,
+   "status": "OPEN"
+  },
+  "fluorescent-stickers|ja": {
+   "slug": "fluorescent-stickers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [],
+   "gscImps": 21,
+   "gscPos": 14.48,
+   "status": "OPEN"
+  },
+  "kraft-paper-bags|zh-hk": {
+   "slug": "kraft-paper-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 130,
+   "gscPos": 11.17,
+   "status": "OPEN"
+  },
+  "white-card-bags|zh-hk": {
+   "slug": "white-card-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 15,
+   "gscPos": 4.13,
+   "status": "OPEN"
+  },
+  "white-card-bags|ja": {
+   "slug": "white-card-bags",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 44
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 44,
+   "issues": [],
+   "gscImps": 12,
+   "gscPos": 3.83,
+   "status": "OPEN"
+  },
+  "gift-bags|zh-hk": {
+   "slug": "gift-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 31,
+   "gscPos": 12.74,
+   "status": "OPEN"
+  },
+  "eco-paper-bags|zh-hk": {
+   "slug": "eco-paper-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 86,
+   "gscPos": 32.45,
+   "status": "OPEN"
+  },
+  "eco-paper-bags|ja": {
+   "slug": "eco-paper-bags",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": 20,
+   "gscPos": 12.25,
+   "status": "OPEN"
+  },
+  "handle-bags|zh-hk": {
+   "slug": "handle-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 199,
+   "gscPos": 15.91,
+   "status": "OPEN"
+  },
+  "small-bags|zh-hk": {
+   "slug": "small-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "small-bags|ja": {
+   "slug": "small-bags",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "large-bags|zh-hk": {
+   "slug": "large-bags",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 187,
+   "gscPos": 17.18,
+   "status": "OPEN"
+  },
+  "large-bags|ja": {
+   "slug": "large-bags",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": 8,
+   "gscPos": 18.12,
+   "status": "OPEN"
+  },
+  "a4-flyers|en": {
+   "slug": "a4-flyers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 36,
+   "gscPos": 13.81,
+   "status": "OPEN"
+  },
+  "a4-flyers|ja": {
+   "slug": "a4-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": 16,
+   "gscPos": 7.94,
+   "status": "OPEN"
+  },
+  "a5-flyers|en": {
+   "slug": "a5-flyers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 26,
+   "gscPos": 12.12,
+   "status": "OPEN"
+  },
+  "a5-flyers|ja": {
+   "slug": "a5-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "double-sided-flyers|ja": {
+   "slug": "double-sided-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 71
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 71,
+   "issues": [],
+   "gscImps": 65,
+   "gscPos": 29.68,
+   "status": "OPEN"
+  },
+  "folded-leaflets|zh-hk": {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 113,
+   "gscPos": 24.25,
+   "status": "OPEN"
+  },
+  "folded-leaflets|en": {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 6,
+   "gscPos": 45.17,
+   "status": "OPEN"
+  },
+  "thick-paper-flyers|zh-hk": {
+   "slug": "thick-paper-flyers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 26,
+   "gscPos": 8.19,
+   "status": "OPEN"
+  },
+  "thick-paper-flyers|ja": {
+   "slug": "thick-paper-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 47
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 47,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "same-day-flyers|en": {
+   "slug": "same-day-flyers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 67
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 67,
+   "issues": [],
+   "gscImps": 93,
+   "gscPos": 40.39,
+   "status": "OPEN"
+  },
+  "eco-flyers|ja": {
+   "slug": "eco-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 47
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 47,
+   "issues": [],
+   "gscImps": 1,
+   "gscPos": 4,
+   "status": "OPEN"
+  },
+  "a2-posters|zh-hk": {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 65
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 65,
+   "issues": [],
+   "gscImps": 980,
+   "gscPos": 16.13,
+   "status": "OPEN"
+  },
+  "a2-posters|en": {
+   "slug": "a2-posters",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 62
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 62,
+   "issues": [],
+   "gscImps": 385,
+   "gscPos": 45.45,
+   "status": "OPEN"
+  },
+  "a2-posters|ja": {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 63
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 63,
+   "issues": [
+    "品牌不在末尾"
+   ],
+   "gscImps": 74,
+   "gscPos": 18.14,
+   "status": "OPEN"
+  },
+  "a1-posters|ja": {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 39
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 39,
+   "issues": [],
+   "gscImps": 11,
+   "gscPos": 9.64,
+   "status": "OPEN"
+  },
+  "outdoor-posters|zh-hk": {
+   "slug": "outdoor-posters",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 24,
+   "gscPos": 7.67,
+   "status": "OPEN"
+  },
+  "display-posters|zh-hk": {
+   "slug": "display-posters",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 9,
+   "gscPos": 6.22,
+   "status": "OPEN"
+  },
+  "art-posters|zh-hk": {
+   "slug": "art-posters",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 28,
+   "gscPos": 16.46,
+   "status": "OPEN"
+  },
+  "adhesive-posters|zh-hk": {
+   "slug": "adhesive-posters",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 34,
+   "gscPos": 4.79,
+   "status": "OPEN"
+  },
+  "adhesive-posters|ja": {
+   "slug": "adhesive-posters",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": 3,
+   "gscPos": 36.67,
+   "status": "OPEN"
+  },
+  "cosmetic-boxes|zh-hk": {
+   "slug": "cosmetic-boxes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 77
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 77,
+   "issues": [],
+   "gscImps": 14,
+   "gscPos": 6.64,
+   "status": "OPEN"
+  },
+  "cosmetic-boxes|ja": {
+   "slug": "cosmetic-boxes",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 87
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 87,
+   "issues": [],
+   "gscImps": 30,
+   "gscPos": 6.6,
+   "status": "OPEN"
+  },
+  "food-boxes|en": {
+   "slug": "food-boxes",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 71
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 71,
+   "issues": [],
+   "gscImps": 49,
+   "gscPos": 38.63,
+   "status": "OPEN"
+  },
+  "food-boxes|ja": {
+   "slug": "food-boxes",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 73
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 73,
+   "issues": [],
+   "gscImps": 43,
+   "gscPos": 35.93,
+   "status": "OPEN"
+  },
+  "mailer-boxes|zh-hk": {
+   "slug": "mailer-boxes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 38
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 38,
+   "issues": [],
+   "gscImps": 72,
+   "gscPos": 7.72,
+   "status": "OPEN"
+  },
+  "folding-boxes|zh-hk": {
+   "slug": "folding-boxes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 14,
+   "gscPos": 5.07,
+   "status": "OPEN"
+  },
+  "rigid-boxes|zh-hk": {
+   "slug": "rigid-boxes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 49,
+   "gscPos": 8.69,
+   "status": "OPEN"
+  },
+  "foil-red-packets|ja": {
+   "slug": "foil-red-packets",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 45
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 45,
+   "issues": [],
+   "gscImps": 4,
+   "gscPos": 3.5,
+   "status": "OPEN"
+  },
+  "embossed-red-packets|zh-hk": {
+   "slug": "embossed-red-packets",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 34
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 34,
+   "issues": [],
+   "gscImps": 5,
+   "gscPos": 10,
+   "status": "OPEN"
+  },
+  "custom-red-packets|zh-hk": {
+   "slug": "custom-red-packets",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 42
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 42,
+   "issues": [],
+   "gscImps": 8,
+   "gscPos": 7,
+   "status": "OPEN"
+  },
+  "eco-red-packets|en": {
+   "slug": "eco-red-packets",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 4,
+   "gscPos": 11.25,
+   "status": "OPEN"
+  },
+  "large-red-packets|en": {
+   "slug": "large-red-packets",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 62
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 62,
+   "issues": [],
+   "gscImps": 1,
+   "gscPos": 4,
+   "status": "OPEN"
+  },
+  "large-red-packets|ja": {
+   "slug": "large-red-packets",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 43
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 43,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "wall-calendars|en": {
+   "slug": "wall-calendars",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 61
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 61,
+   "issues": [],
+   "gscImps": 20,
+   "gscPos": 44.05,
+   "status": "OPEN"
+  },
+  "desk-calendars|zh-hk": {
+   "slug": "desk-calendars",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 35,
+   "gscPos": 30.4,
+   "status": "OPEN"
+  },
+  "desk-calendars|en": {
+   "slug": "desk-calendars",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 61
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 61,
+   "issues": [],
+   "gscImps": 8,
+   "gscPos": 37.75,
+   "status": "OPEN"
+  },
+  "custom-calendars|zh-hk": {
+   "slug": "custom-calendars",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 215,
+   "gscPos": 22.25,
+   "status": "OPEN"
+  },
+  "custom-calendars|en": {
+   "slug": "custom-calendars",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 49
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 49,
+   "issues": [],
+   "gscImps": 7,
+   "gscPos": 55.29,
+   "status": "OPEN"
+  },
+  "mini-calendars|en": {
+   "slug": "mini-calendars",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 61
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 61,
+   "issues": [],
+   "gscImps": 9,
+   "gscPos": 5.56,
+   "status": "OPEN"
+  },
+  "photo-frame-calendars|ja": {
+   "slug": "photo-frame-calendars",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 2,
+   "gscPos": 3,
+   "status": "OPEN"
+  },
+  "magnetic-calendars|zh-hk": {
+   "slug": "magnetic-calendars",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 15,
+   "gscPos": 4.4,
+   "status": "OPEN"
+  },
+  "pvc-menus|zh-hk": {
+   "slug": "pvc-menus",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 66
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 66,
+   "issues": [],
+   "gscImps": 53,
+   "gscPos": 9.13,
+   "status": "OPEN"
+  },
+  "pvc-menus|ja": {
+   "slug": "pvc-menus",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 38
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 38,
+   "issues": [],
+   "gscImps": 5,
+   "gscPos": 15.2,
+   "status": "OPEN"
+  },
+  "laminated-menus|zh-hk": {
+   "slug": "laminated-menus",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 55,
+   "gscPos": 7.38,
+   "status": "OPEN"
+  },
+  "laminated-menus|en": {
+   "slug": "laminated-menus",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 62
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 62,
+   "issues": [],
+   "gscImps": 9,
+   "gscPos": 50.33,
+   "status": "OPEN"
+  },
+  "laminated-menus|ja": {
+   "slug": "laminated-menus",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 45
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 45,
+   "issues": [],
+   "gscImps": 5,
+   "gscPos": 20.4,
+   "status": "OPEN"
+  },
+  "hardcover-menus|zh-hk": {
+   "slug": "hardcover-menus",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 10,
+   "gscPos": 6.9,
+   "status": "OPEN"
+  },
+  "hardcover-menus|en": {
+   "slug": "hardcover-menus",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 62
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 62,
+   "issues": [],
+   "gscImps": 22,
+   "gscPos": 60.59,
+   "status": "OPEN"
+  },
+  "drink-menus|zh-hk": {
+   "slug": "drink-menus",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 38
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 38,
+   "issues": [],
+   "gscImps": 13,
+   "gscPos": 6.77,
+   "status": "OPEN"
+  },
+  "disposable-menus|en": {
+   "slug": "disposable-menus",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 49
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 49,
+   "issues": [],
+   "gscImps": 2,
+   "gscPos": 43,
+   "status": "OPEN"
+  },
+  "disposable-menus|ja": {
+   "slug": "disposable-menus",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "outdoor-vinyl-banners|zh-hk": {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 88,
+   "gscPos": 52.09,
+   "status": "OPEN"
+  },
+  "roll-up-banners|en": {
+   "slug": "roll-up-banners",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 59
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 59,
+   "issues": [],
+   "gscImps": 13,
+   "gscPos": 38.15,
+   "status": "OPEN"
+  },
+  "adhesive-banners|en": {
+   "slug": "adhesive-banners",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 46,
+   "gscPos": 38.54,
+   "status": "OPEN"
+  },
+  "vehicle-wraps|zh-hk": {
+   "slug": "vehicle-wraps",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 39
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 39,
+   "issues": [],
+   "gscImps": 112,
+   "gscPos": 46.44,
+   "status": "OPEN"
+  },
+  "mesh-banners|zh-hk": {
+   "slug": "mesh-banners",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 39
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 39,
+   "issues": [],
+   "gscImps": 15,
+   "gscPos": 7.4,
+   "status": "OPEN"
+  },
+  "catalog-printing|zh-hk": {
+   "slug": "catalog-printing",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [
+    "无效填充词"
+   ],
+   "gscImps": 98,
+   "gscPos": 14.5,
+   "status": "OPEN"
+  },
+  "catalog-printing|en": {
+   "slug": "catalog-printing",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 61
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 61,
+   "issues": [],
+   "gscImps": 307,
+   "gscPos": 29.71,
+   "status": "OPEN"
+  },
+  "perfect-bound-books|zh-hk": {
+   "slug": "perfect-bound-books",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 49
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 49,
+   "issues": [
+    "日文假名污染"
+   ],
+   "gscImps": 19,
+   "gscPos": 9.21,
+   "status": "OPEN"
+  },
+  "perfect-bound-books|en": {
+   "slug": "perfect-bound-books",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 62
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 62,
+   "issues": [],
+   "gscImps": 31,
+   "gscPos": 52.61,
+   "status": "OPEN"
+  },
+  "hardcover-books|zh-hk": {
+   "slug": "hardcover-books",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 49
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 49,
+   "issues": [
+    "日文假名污染"
+   ],
+   "gscImps": 10,
+   "gscPos": 9.5,
+   "status": "OPEN"
+  },
+  "spiral-notebooks|zh-hk": {
+   "slug": "spiral-notebooks",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": 27,
+   "gscPos": 7.41,
+   "status": "OPEN"
+  },
+  "spiral-notebooks|en": {
+   "slug": "spiral-notebooks",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 59
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 59,
+   "issues": [],
+   "gscImps": 6,
+   "gscPos": 24.33,
+   "status": "OPEN"
+  },
+  "colored-envelopes|zh-hk": {
+   "slug": "colored-envelopes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 35
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 35,
+   "issues": [],
+   "gscImps": 77,
+   "gscPos": 5.3,
+   "status": "OPEN"
+  },
+  "colored-envelopes|ja": {
+   "slug": "colored-envelopes",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "pearl-envelopes|zh-hk": {
+   "slug": "pearl-envelopes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [],
+   "gscImps": 96,
+   "gscPos": 5.27,
+   "status": "OPEN"
+  },
+  "pearl-envelopes|en": {
+   "slug": "pearl-envelopes",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [],
+   "gscImps": 4,
+   "gscPos": 20.25,
+   "status": "OPEN"
+  },
+  "pearl-envelopes|ja": {
+   "slug": "pearl-envelopes",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": 22,
+   "gscPos": 4.18,
+   "status": "OPEN"
+  },
+  "exercise-books|zh-hk": {
+   "slug": "exercise-books",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 40
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 40,
+   "issues": [],
+   "gscImps": 159,
+   "gscPos": 6.65,
+   "status": "OPEN"
+  },
+  "exercise-books|ja": {
+   "slug": "exercise-books",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 43
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 43,
+   "issues": [],
+   "gscImps": 2,
+   "gscPos": 25.5,
+   "status": "OPEN"
+  },
+  "certificates|zh-hk": {
+   "slug": "certificates",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 37
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 37,
+   "issues": [
+    "无效填充词"
+   ],
+   "gscImps": 112,
+   "gscPos": 10.63,
+   "status": "OPEN"
+  },
+  "school-flyers|zh-hk": {
+   "slug": "school-flyers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 36
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 36,
+   "issues": [],
+   "gscImps": 41,
+   "gscPos": 23.95,
+   "status": "OPEN"
+  },
+  "school-flyers|en": {
+   "slug": "school-flyers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 1,
+   "gscPos": 5,
+   "status": "OPEN"
+  },
+  "textbooks|ja": {
+   "slug": "textbooks",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 43
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 43,
+   "issues": [],
+   "gscImps": 18,
+   "gscPos": 47.61,
+   "status": "OPEN"
+  },
+  "magnetic-closure-gift-box|zh-hk": {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [],
+   "gscImps": 32,
+   "gscPos": 6.75,
+   "status": "OPEN"
+  },
+  "electronics-packaging-box|zh-hk": {
+   "slug": "electronics-packaging-box",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 46
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 46,
+   "issues": [],
+   "gscImps": 253,
+   "gscPos": 49.51,
+   "status": "OPEN"
+  },
+  "kraft-paper-packaging-box|zh-hk": {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 43
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 43,
+   "issues": [],
+   "gscImps": 67,
+   "gscPos": 32.57,
+   "status": "OPEN"
+  },
+  "gang-run-card-boxes|zh-hk": {
+   "slug": "gang-run-card-boxes",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 64
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 64,
+   "issues": [],
+   "gscImps": 16,
+   "gscPos": 5.69,
+   "status": "OPEN"
+  },
+  "gang-run-card-boxes|en": {
+   "slug": "gang-run-card-boxes",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 90
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 90,
+   "issues": [],
+   "gscImps": 7,
+   "gscPos": 30.29,
+   "status": "OPEN"
+  },
+  "gang-run-card-boxes|ja": {
+   "slug": "gang-run-card-boxes",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 73
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 73,
+   "issues": [],
+   "gscImps": 1,
+   "gscPos": 6,
+   "status": "OPEN"
+  },
+  "fruit-food-label-stickers|zh-hk": {
+   "slug": "fruit-food-label-stickers",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 47
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 47,
+   "issues": [],
+   "gscImps": 46,
+   "gscPos": 40.46,
+   "status": "OPEN"
+  },
+  "fruit-food-label-stickers|en": {
+   "slug": "fruit-food-label-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 59
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 59,
+   "issues": [],
+   "gscImps": 8,
+   "gscPos": 6.62,
+   "status": "OPEN"
+  },
+  "doujinshi-printing|zh-hk": {
+   "slug": "doujinshi-printing",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 45
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 45,
+   "issues": [
+    "品牌次数=0",
+    "品牌不在末尾"
+   ],
+   "gscImps": 68,
+   "gscPos": 8.74,
+   "status": "OPEN"
+  },
+  "doujinshi-printing|en": {
+   "slug": "doujinshi-printing",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 59
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 59,
+   "issues": [],
+   "gscImps": 359,
+   "gscPos": 11.72,
+   "status": "OPEN"
+  },
+  "can-badge|zh-hk": {
+   "slug": "can-badge",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 44
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 44,
+   "issues": [
+    "品牌次数=0",
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "gscImps": 12,
+   "gscPos": 9.67,
+   "status": "OPEN"
+  },
+  "postcard-set|en": {
+   "slug": "postcard-set",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": 1,
+   "gscPos": 11,
+   "status": "OPEN"
+  },
+  "eco-tote-bag|zh-hk": {
+   "slug": "eco-tote-bag",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 48
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 48,
+   "issues": [
+    "品牌次数=0",
+    "品牌不在末尾",
+    "日文假名污染"
+   ],
+   "gscImps": 1,
+   "gscPos": 5,
+   "status": "OPEN"
+  },
+  "eco-tote-bag|en": {
+   "slug": "eco-tote-bag",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 60
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 60,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "graduation-yearbook|ja": {
+   "slug": "graduation-yearbook",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 69
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 69,
+   "issues": [],
+   "gscImps": 22,
+   "gscPos": 62.82,
+   "status": "OPEN"
+  },
+  "thick-greeting-cards-400g|zh-hk": {
+   "slug": "thick-greeting-cards-400g",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 45
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 45,
+   "issues": [
+    "日文假名污染"
+   ],
+   "gscImps": 4,
+   "gscPos": 3.25,
+   "status": "OPEN"
+  },
+  "thick-greeting-cards-400g|ja": {
+   "slug": "thick-greeting-cards-400g",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 47
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 47,
+   "issues": [],
+   "gscImps": null,
+   "gscPos": null,
+   "status": "OPEN"
+  },
+  "foil-greeting-cards|zh-hk": {
+   "slug": "foil-greeting-cards",
+   "locale": "zh-hk",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 38
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "FILL",
+   "equiv": 38,
+   "issues": [
+    "日文假名污染"
+   ],
+   "gscImps": 30,
+   "gscPos": 11.07,
+   "status": "OPEN"
+  }
+ }
+}

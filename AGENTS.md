@@ -47,7 +47,7 @@
 
 ### §0.34.1 统一入口（新执行层开工前必读第 0 优先级）
 1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 6 问（**第 1 问已变更为 2026-09-12 口径**：本批是否触及名片展示层/SEO 层 → 触及须先确认 K3 已裁决 §0.0 解禁块 (a)/(b)/(c)；名片本身已解禁，不再扫禁词）/ 最高规则速查 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 自动化窗口速查 / 执行纪律 / 自进化 4 步 SOP。
-2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则 v4 写满原则（K3 9/9 06:18 最新，四元素 + 写满区 50-54 / ≥55 满格禁加 / 长尾 3 筛选 / 冻结 2-4 周）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
+2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则（**K3 9/13 终裁 目标区 50-58 半角当量 / >58 满格禁加**，取代 v4 的 50-54；四元素 + 长尾 3 筛选 / 冻结 2-4 周；当量口径 = `scripts/guards/title-equiv.js`，规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
 3. **既有 7 技能保留**: zprintpro / zprintpro-blog-writing-sop / zprintpro-content-depth-page-sop / zprintpro-design-tokens / zprintpro-release-pipeline / zprintpro-sku-detail-sop / zprintpro-verify-probes（全部位于 `.openclaw-autoclaw\skills\`）。
 
 ### §0.34.2 称谓承接口径
@@ -57,7 +57,7 @@
 
 ### §0.34.3 当前战略指令 SSoT
 - 最新主报告: `docs/2026-09-08-v4-full-alignment-master-report.md`（原子指令 A1-A12 + 问 K3 八件）。
-- 最新拍板增补: `docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：标题规则 v4 写满原则 50-54 半角当量 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）。
+- 最新拍板增补: **标题规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（K3 9/13 终裁 目标区 50-58，取代 v4 的 50-54）**；`docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：v4 写满原则 50-54 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）—— **其 §1.2 区间表已被 9/13 取代，仅 §二 幂等铁律与 §四 闭环机制继续有效**。
 - 定时任务（**2026-09-19 修正**：调度 SSoT 见 §0.35；本节原写"autoclaw Blueprint Automation"的表述已作废——autoclaw 侧 5 实体**从未创建**（`cron-check-tonight.md` 9/13–9/17 每日实测 `0/5`），真身在 Windows Task Scheduler）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13 + watchdog 每天 06:43（Asia/Shanghai）。
 
 ## §0.35 定时任务 SSoT 与结果总线 (K3 2026-09-19 查案定稿, 跨项目 P0 强制级)
@@ -640,7 +640,7 @@ F:\zprintpro-nextjs\
 
 ## 5. SEO/GEO 关键约定
 
-- **Title**: v4 写满原则 (K3 9/9 06:18 拍板): 半角当量 50-54 写满目标区 (主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次), ≥55 满格禁加, <50 按序补; SSoT = docs/2026-09-09-k3-title-rule-v4-write-full.md
+- **Title**: **K3 2026-09-13 终裁 目标区 50-58 半角当量**（取代 v4 的 50-54）: 主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次, **>58 满格禁加**, <50 按序补; 当量口径 = `scripts/guards/title-equiv.js`; 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（`docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」**已失效**）; 普查工具 = `node scripts/sku-title-census.mjs`
 - **Meta description**: 150-160 字符,含数字 + CTA
 - **H1**: 每页唯一,含主关键词
 - **Schema**: Organization / BreadcrumbList / Product / FAQPage
