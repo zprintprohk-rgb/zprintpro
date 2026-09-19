@@ -19,6 +19,7 @@ scripts/lane-git-commit.py -- lane 产物 host 侧 git 提交器 (K3 C 修复, 2
   PYTHONIOENCODING=utf-8 (wrapper 已设)
 """
 import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -222,6 +223,15 @@ def _commit_reports(repo, args, report_files, date):
     return 0
 
 
+def idempotency_key(lane, intent, target, day=None):
+    """P3-10 幂等键: (intent + target + day) 三元组的稳定哈希 (与 lane-preflight.py 同算法)。
+
+    消费者(执行层)据此判断"这一件事今天是否已处理过"; 命中相同 key 即跳过 -> 幂等铁律可执行化。
+    """
+    day = day or time.strftime("%Y-%m-%d")
+    return hashlib.sha256(f"{lane}|{intent}|{target}|{day}".encode("utf-8")).hexdigest()[:16]
+
+
 def pick_lane_report(lane, allowed):
     """从本次白名单改动里挑出**本车道自己的报告文件**。
 
@@ -264,15 +274,17 @@ def write_lane_run(record):
 
 
 def write_exec_report(lane, repo, allowed, pushed, date,
-                      exit_code=0, verdict="✅ 完成", blocked_reason="", report_files=None):
+                      exit_code=0, verdict="✅ 完成", blocked_reason="", report_files=None,
+                      fired_at=None):
     """追加 lane 执行报告到统一总览文件 cron-execution-report.md (K3 要求可见).
 
     2026-09-19 升级 (K3 指令「定时任务要有报告, 且报告要能作为判断依据」):
       ① 报告路径不再取「字母序第一个 .md」(原实现会写错成别人的旧报告), 改为优先取本 lane
          报告文件 (report_files 里第一个 .md);
       ② 结果列写真实 verdict + exit_code, 不再恒写「✅ 完成」;
-      ③ 同时写结构化 lane-runs.jsonl, 供 lane-status.mjs 汇总。
+      ③ 同时写结构化 lane-runs.jsonl (含 idempotency_key / state), 供 lane-status.mjs 汇总。
     """
+    fired_at = fired_at or time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     report = pick_lane_report(lane, report_files if report_files is not None else allowed)
     pushed_txt = "✅ push" if pushed else "⏳ commit(未 push)"
     files = [p for p in allowed
@@ -314,10 +326,13 @@ def write_exec_report(lane, repo, allowed, pushed, date,
         "run_id": f"{lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}",
         "lane": lane,
         "trigger": "schtasks",
+        "fired_at": fired_at,
         "ended_at": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+        "idempotency_key": idempotency_key(lane, "deliver", report if report and report != "NONE" else "lane-default"),
         "dsh_exit": None,           # wrapper 侧已知; 本脚本无法读取, 由 lane-status.mjs 从 wrapper 日志补齐
         "wrapper_exit": exit_code,
         "verdict": "OK" if exit_code == 0 else ("BLOCKED" if blocked_reason else "FAILED"),
+        "state": "completed" if exit_code == 0 else ("blocked" if blocked_reason else "failed"),
         "blocked_reason": blocked_reason,
         "guard": {"ok": exit_code != 4},
         "report": report,

@@ -49,6 +49,70 @@ const pad = (n) => String(n).padStart(2, '0');
 const fmt = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
 const dayKey = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
 
+/**
+ * 8 态执行状态机 (P3-12) —— 每次 lane 执行必须落在其中一个状态, 并只允许合法迁移:
+ *   pending -> running -> completed            (正常)
+ *   pending -> running -> failed -> pending    (瞬时失败, 下轮重试)
+ *   pending -> running -> failed -> dead_letter(同因连败 >=2 次, 停止自动重试)
+ *   pending -> blocked -> pending              (锁竞争/前置不过, 下轮重试)
+ *   pending -> running -> quarantined          (产物可疑/毒数据, 需人工放行)
+ *   pending -> skipped                         (显式判定无需执行, 如幂等命中)
+ * 迁移表: 只允许下列边; 出现表外边 = 状态机违规 (problems 里报 STATE_MACHINE_VIOLATION)
+ */
+const STATE_MACHINE = {
+  pending: ['running', 'skipped'],
+  running: ['completed', 'failed', 'blocked', 'quarantined'],
+  completed: [],
+  failed: ['pending', 'dead_letter'],
+  blocked: ['pending', 'dead_letter'],
+  dead_letter: [],
+  quarantined: ['pending', 'dead_letter'],
+  skipped: [],
+};
+const VERDICT_TO_STATE = {
+  OK: 'completed',
+  PENDING: 'pending',
+  MISSING: 'blocked',
+  FAILED: 'failed',
+  BLOCKED: 'blocked',
+  STALE: 'quarantined',
+  UNKNOWN: 'pending',
+};
+
+/**
+ * 恢复分类 (P3-11) —— 让执行层知道下一步该干什么, 而不是只看到"失败了":
+ *   retry            瞬时/外部原因 (网络/额度/锁竞争) -> 下轮自然重跑
+ *   modify_payload   输入或前置条件变了 (slug 不存在/文件改名/参数错) -> 先改入参再跑
+ *   request_human    需 K3 动作 (管理员权限/拍板/外部平台) -> 附一条可粘贴命令
+ *   abort            设计缺陷/红线冲突 -> 停手撞墙, 不带病重试第三次
+ */
+function recoveryPlan(status, lane, day, notes, exitCode) {
+  const n = (notes || []).join(' ');
+  const seatbelt = 'node scripts/lane-status.mjs --days=7';
+  if (status === 'MISSING') {
+    return { action: 'request_human', reason: '触发点已过但无任何 run 记录 (调度器/执行器未装载)',
+             evidence: `Get-ScheduledTask -TaskName ${lane} | Get-ScheduledTaskInfo`, retry_after_days: null };
+  }
+  if (status === 'BLOCKED') {
+    if (/锁|lock/i.test(n)) return { action: 'retry', reason: '锁竞争 (另一条 lane 或人手会话持锁)', evidence: '.hermes/locks/lane.lock', retry_after_days: 0 };
+    if (/preflight|前置|repo/i.test(n)) return { action: 'request_human', reason: '前置检查不过 (repo/worktree/branch)', evidence: `.hermes/logs/run-context-${lane}.json`, retry_after_days: null };
+    return { action: 'retry', reason: '前置不过, 下轮重试', evidence: seatbelt, retry_after_days: 0 };
+  }
+  if (status === 'FAILED') {
+    if (exitCode === 5) return { action: 'retry', reason: 'push 失败 (网络/远端)', evidence: `.hermes/logs/cron-${lane}.log`, retry_after_days: 0 };
+    if (exitCode === 3) return { action: 'modify_payload', reason: 'encoding guard 拒绝 (需先修文件编码)', evidence: 'node scripts/check-encoding.js', retry_after_days: null };
+    if (exitCode === 2) return { action: 'modify_payload', reason: 'git 操作失败 (冲突/状态异常)', evidence: 'git status --porcelain', retry_after_days: null };
+    return { action: 'retry', reason: `dsh/wrapper 退出码 ${exitCode}`, evidence: `.hermes/logs/cron-${lane}.log`, retry_after_days: 0 };
+  }
+  if (status === 'STALE') {
+    if (/guard/i.test(n)) return { action: 'modify_payload', reason: 'pre-commit guard 拦下 src commit -> 必须先让改动过对应断言', evidence: `node scripts/guards/sop10-guard.js`, retry_after_days: null };
+    return { action: 'retry', reason: '跑过但无当日报告 (空转/零产出)', evidence: `.hermes/logs/cron-${lane}.log`, retry_after_days: 0 };
+  }
+  if (status === 'OK') return { action: 'none', reason: '无异常', evidence: null, retry_after_days: null };
+  return { action: 'none', reason: '触发点未到或宽限期内', evidence: null, retry_after_days: null };
+}
+
+
 function readJson(p, fallback = null) {
   try { return JSON.parse(fs.readFileSync(p, 'utf8')); } catch { return fallback; }
 }
@@ -153,12 +217,22 @@ function main() {
 
   const sched = schtasksSnapshot([...cfg.lanes.map((l) => l.task), cfg.watchdog?.task].filter(Boolean));
 
+  // 幂等键去重 (P3-10): 同一 key 出现两次 = 同一 intent+target+day 被处理了两次 -> 重复处理告警
+  for (const r of runsReal) {
+    const k = r.idempotency_key;
+    if (!k) continue;
+    if (seenIdem.has(k)) warnings.push(`DUPLICATE_IDEMPOTENCY_KEY ${k}: ${seenIdem.get(k)} 与 ${r.run_id} 同日同目标重复处理`);
+    else seenIdem.set(k, r.run_id);
+  }
+
   const today = new Date();
   const window = [];
   for (let i = DAYS - 1; i >= 0; i--) window.push(new Date(today.getFullYear(), today.getMonth(), today.getDate() - i));
 
   const lanesOut = [];
   const problems = [];
+  const warnings = [];
+  const seenIdem = new Map();   // idempotency_key -> run_id (重复 = 同一 intent+target+day 被处理两次)
 
   for (const lane of cfg.lanes) {
     const logRun = lastLogRun(lane);
@@ -171,16 +245,19 @@ function main() {
     //   其余 (日期不在文件名 / 无车道后缀) 一律不认 —— 防 step5-merge-batch-report-<date>.md
     //   或 .hermes/logs/2026-09-19-cron-source-of-truth-findings.md 这类第三方文件冒充
     const suffix = lane.reportGlob ? lane.reportGlob.slice(lane.reportGlob.indexOf('*') + 1) : '';
+    const laneToken = lane.task.replace('ZP-', '');
     const mdFiles = allFiles
       .filter((f) => f.name.endsWith('.md'))
       .map((f) => {
         const strict = f.name.match(/^(\d{4}-\d{2}-\d{2})-/);
         const anyDate = f.name.match(DATE_RE);
+        // 车道归属: 文件名必须带车道 token (short 名或完整 task 名), 否则绝不认
+        const laneOwned = f.name.includes(laneToken) || f.name.includes(lane.task);
         const endsOk = Boolean(suffix) && f.name.endsWith(suffix);
         const dateToken = (strict || anyDate) ? (strict ? strict[1] : anyDate[0]) : null;
-        return { ...f, dateToken, strict: Boolean(strict) && endsOk, loose: Boolean(anyDate) && endsOk };
+        return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk };
       })
-      .filter((f) => f.dateToken)
+      .filter((f) => f.owned)
       .sort((a, b) => Number(b.strict) - Number(a.strict) || b.dateToken.localeCompare(a.dateToken) || b.mtime - a.mtime);
 
     const days = [];
@@ -217,7 +294,18 @@ function main() {
           notes.push(`report naming not date-first (${rep.name}) -> treated as reference only`);
         }
       }
-      days.push({ day, expected: start, status, notes, exit: rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null), report: rep ? rep.rel : null, reportStrict: rep ? rep.strict : null });
+      days.push({
+        day,
+        expected: start,
+        status,
+        state: VERDICT_TO_STATE[status] || 'pending',
+        recovery_plan: recoveryPlan(status, lane.task, day, notes, rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null)),
+        notes,
+        exit: rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null),
+        report: rep ? rep.rel : null,
+        reportStrict: rep ? rep.strict : null,
+        idempotency_keys: laneRuns.filter((r) => (r.fired_at || r.ended_at || '').startsWith(day)).map((r) => r.idempotency_key).filter(Boolean),
+      });
     }
 
     const last = days[days.length - 1] || null;
@@ -237,6 +325,12 @@ function main() {
       lastRunRecord: laneRuns.length ? laneRuns[laneRuns.length - 1] : null,
       days,
       verdict: last ? last.status : 'UNKNOWN',
+      state: last ? (VERDICT_TO_STATE[last.status] || 'pending') : 'pending',
+      recovery_plan: last
+        ? last.recovery_plan
+        : (s && Number(s.Result) !== 0
+          ? { action: 'request_human', reason: `窗口内无应触发日, 但调度器 LastTaskResult=${s.Result} (从未成功跑过)`, evidence: `Get-ScheduledTaskInfo -TaskName ${lane.task}`, retry_after_days: null }
+          : { action: 'none', reason: '窗口内无应触发日', evidence: null, retry_after_days: null }),
     });
   }
 
@@ -250,10 +344,19 @@ function main() {
     bus_records: runsReal.length,
     bus_records_test_excluded: runsTest,
     window_days: DAYS,
+    state_machine: STATE_MACHINE,
+    states_doc: 'pending -> running -> completed | failed -> {pending,dead_letter} | blocked -> {pending,dead_letter} | quarantined -> {pending,dead_letter} | skipped',
+    recovery_actions_doc: 'retry (瞬时/外部原因, 下轮重跑) | modify_payload (输入/前置变了, 先改入参) | request_human (需 K3 动作, 附可粘贴命令) | abort (设计缺陷/红线, 停手撞墙)',
+    consumers: {
+      primary: '执行层 (deepseek 车道) — 见 .hermes/cron-prompts/lane-results-bus-contract.md; 每轮开工先读 run-context-<lane>.json + 本文件',
+      secondary: 'K3 复盘 (k3-ceo-daily-review.md v2) — 把结果翻成次日指令',
+    },
+    need_human: problems.map((p) => ({ problem: p, hint: '见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理' })),
     lanes: lanesOut,
     watchdog: { task: cfg.watchdog?.task, scheduler: sched[cfg.watchdog?.task] || null },
     legacy_tasks_pending_removal: cfg.legacyTasksToRemove || [],
     problems,
+    warnings,
     verdict: problems.length ? 'ATTENTION' : 'OK',
   };
 
@@ -269,16 +372,40 @@ function main() {
     L.push(`> SSoT: \`${out.source_of_truth}\``);
     L.push(`> **verdict: ${out.verdict}**${problems.length ? ' — ' + problems.join(' ; ') : ''}`);
     L.push('');
-    L.push(`| lane | 触发 | 近 ${DAYS} 天逐日 verdict | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |`);
-    L.push('|------|------|----------------------|----------|-------------------------------|----------|');
+    L.push(`| lane | 触发 | 近 ${DAYS} 天逐日 verdict | state | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |`);
+    L.push('|------|------|----------------------|-------|----------|-------------------------------|----------|');
     for (const l of lanesOut) {
       const flags = l.days.map((d) => `${d.day.slice(5)}:${d.status}`).join(' ') || '—';
       const rep = l.lastReportFile ? `\`${l.lastReportFile.file}\` (${l.lastReportFile.dateToken})` : '—';
       const s = l.scheduler;
       const sc = s ? `${s.Last} / ${s.Result} / ${s.Next}` : 'n/a';
-      L.push(`| ${l.task} | ${l.schedule.kind}${l.schedule.day ? ' ' + l.schedule.day : ''} ${l.start} | ${flags} | ${rep} | ${sc} | \`${l.lastWrapperRun?.logFile || '—'}\` |`);
+      L.push(`| ${l.task} | ${l.schedule.kind}${l.schedule.day ? ' ' + l.schedule.day : ''} ${l.start} | ${flags} | ${l.state} | ${rep} | ${sc} | \`${l.lastWrapperRun?.logFile || '—'}\` |`);
     }
     L.push('');
+
+    // 恢复分类 (P3-11): 让执行层/主程序知道下一步该干什么
+    const actionable = lanesOut.filter((l) => l.recovery_plan && l.recovery_plan.action && l.recovery_plan.action !== 'none');
+    L.push('## 恢复分类 (recovery_plan — 下一步该干什么)');
+    L.push('');
+    if (!actionable.length) {
+      L.push('无 (所有 lane 无异常)。');
+    } else {
+      L.push('| lane | state | 动作 | 原因 | 证据/命令 | 建议重试 |');
+      L.push('|------|-------|------|------|-----------|----------|');
+      for (const l of actionable) {
+        const r = l.recovery_plan;
+        L.push(`| ${l.task} | ${l.state} | \`${r.action}\` | ${r.reason} | ${r.evidence ? '`' + r.evidence + '`' : '—'} | ${r.retry_after_days === 0 ? '下轮自然重跑' : (r.retry_after_days ? `+${r.retry_after_days} 天` : '需人处理')} |`);
+      }
+      L.push('');
+      L.push('> 动作含义: `retry`=瞬时/外部原因下轮重跑 ; `modify_payload`=先改入参/prompt 再跑 ; `request_human`=需 K3 动作(附一条可粘贴命令) ; `abort`=设计缺陷/红线, 停手撞墙。');
+    }
+    L.push('');
+    if (out.warnings.length) {
+      L.push('## 警告 (warnings)');
+      L.push('');
+      for (const w of out.warnings) L.push(`- ${w}`);
+      L.push('');
+    }
     L.push('## 逐 lane 明细 (最近一次应触发日)');
     L.push('');
     for (const l of lanesOut) {

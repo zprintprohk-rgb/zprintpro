@@ -1,23 +1,29 @@
 @echo off
-rem 2026-09-18 K3 拍板: 删除遗留重复 watchdog 任务 ZprintPro-CronWatchdog-2125
-rem 原因: 指向 .hermes/cron-check-tonight.cmd, 9/17 运行 Result=2 失败, 且与 ZP-cron-watchdog 功能重叠
-rem 需管理员权限 (deepseek harness 会话无权限, Unregister-ScheduledTask 亦被拒)
-rem 用法: 右键"以管理员身份运行"
-echo === 删除 ZprintPro-CronWatchdog-2125 ===
+rem 2026-09-18 K3 decision: delete the leftover duplicate watchdog task ZprintPro-CronWatchdog-2125.
+rem Reason: it points at .hermes/cron-check-tonight.cmd, which reads autoclaw jobs.json indices 5..9
+rem         (historical one-shot jobs, NOT the ZP lanes) -> its PASS/FAIL is meaningless; it is also
+rem         functionally superseded by \ZP-cron-watchdog.
+rem Requires administrator rights (the deepseek-harness session is non-elevated: measured IsAdmin=False,
+rem and both schtasks /delete and Unregister-ScheduledTask are denied there).
+rem ASCII-only on purpose: cmd.exe reads this file in the OEM code page, so CJK would print as '?'.
+rem Usage: right-click -> Run as administrator
+setlocal
+echo === delete ZprintPro-CronWatchdog-2125 ===
 schtasks /query /tn "ZprintPro-CronWatchdog-2125" >nul 2>&1
 if errorlevel 1 (
-  echo [SKIP] 任务不存在, 无需删除
+  echo [SKIP] task not present, nothing to delete
   goto :end
 )
 schtasks /delete /tn "ZprintPro-CronWatchdog-2125" /f
 if errorlevel 1 (
-  echo [FAIL] 删除失败 — 请确认以管理员身份运行
+  echo [FAIL] delete failed - confirm you are running as administrator
 ) else (
-  echo [OK] 已删除
+  echo [OK] deleted
 )
 :end
 echo.
-echo === 验证: 剩余 ZP-* 任务 ===
+echo === verify: remaining ZP-* / ZprintPro tasks ===
 schtasks /query /fo TABLE 2>nul | findstr /I "ZP- ZprintPro"
 echo.
+echo Prefer the richer script if you want evidence output: scripts\remove-legacy-cron-tasks.ps1
 pause

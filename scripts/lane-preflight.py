@@ -22,6 +22,7 @@ scripts/lane-preflight.py -- lane 前置检查 + 互斥锁 + 结果回喂 (K3 20
 
 import argparse
 import glob
+import hashlib
 import json
 import os
 import subprocess
@@ -37,6 +38,17 @@ except Exception:  # noqa: BLE001
 REPO_DEFAULT = r"F:\zprintpro-nextjs"
 LOCK_STALE_SECONDS = 3600          # 超过 = 陈旧锁, 可夺 (与 lane 墙钟上限 3600s 对齐)
 BUS = "lane-runs.jsonl"
+
+
+def idempotency_key(lane, intent, target, day=None):
+    """P3-10 幂等键: (intent + target + day) 三元组的稳定哈希。
+
+    消费者 (执行层) 据此判断"这一件事今天是否已经处理过" -> 命中即跳过 (幂等铁律的可执行形式)。
+    同一天同一 intent 同一 target 必然得到同一 key; 换天/换目标 => 新 key (允许重做)。
+    """
+    day = day or time.strftime("%Y-%m-%d")
+    raw = f"{lane}|{intent}|{target}|{day}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 
 def read_json(path, fallback=None):
@@ -249,6 +261,11 @@ def main():
         "generated_at": now,
         "repo": repo,
         "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+        "idempotency": {
+            "this_run_key": idempotency_key(args.lane, "run", "lane-default"),
+            "day": time.strftime("%Y-%m-%d"),
+            "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)",
+        },
         "preflight": {"verdict": "blocked" if blocked else "ok",
                       "blocked_reason": blocked or "",
                       "checks": checks},
@@ -278,7 +295,9 @@ def main():
         append_bus(repo, {
             "run_id": f"{args.lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}",
             "lane": args.lane, "trigger": "schtasks", "phase": "preflight",
-            "ended_at": now, "verdict": "BLOCKED", "blocked_reason": blocked,
+            "fired_at": now, "ended_at": now,
+            "idempotency_key": idempotency_key(args.lane, "run", "lane-default"),
+            "verdict": "BLOCKED", "state": "blocked", "blocked_reason": blocked,
             "guard": {"ok": True}, "pushed": False, "source": "lane-preflight.py",
         })
         print(f"\n[preflight] BLOCKED -> 禁止调用 dsh: {blocked}", file=sys.stderr)

@@ -20,9 +20,23 @@
 1. **幂等判定（最高价值）**：`run-context` 里 `previous_run` 的 `report` 与 `files` 就是"上一轮实际交付了什么"的事实账本。K3 幂等铁律「不重复做已完成的事」据此执行：
    - 若本轮目标与 `previous_run` 已交付项相同且其 verdict ∈ `OK` → **跳过该项**，报告写 `ALREADY_DONE(since <date>)`，把算力移到未完成项；
    - 若上次 verdict ∈ `{FAILED, BLOCKED, STALE}` → **优先重做未完成部分**，并在报告里指名 `RETRY_OF(<上次 run_id>)`，附上次失败原因。
-2. **不重犯**：`run-context.previous_run.guard` / `notes` 记录上轮的拦截与告警（如 pre-commit guard 拦下 src commit、答案块字数断言未过、slug 不存在）→ 本轮改动**先过对应断言再提交**，同因失败第二次必须升级上报（不得静默重试第三次）。
-3. **跨车道避让**：`run-context.sibling_lanes`（今日其他车道的实跑情况）用于避免同一天撞同一批文件。若某文件今日已被别的车道动过，**不得**在同一轮再次改写同一文件（9/19 `zh-hk.json` 撞车事故根因）；必须改时先看 `lock` 段结论。
-4. **数据继承**：上一轮报告里的基线数字（GSC 位置/展示量、字数、门禁计数）是本轮的**对比基准**，报告中必须写"上轮 X → 本轮 Y"，禁止只写绝对值。
+2. **幂等键（P3-10，机器判定，别靠记忆）**：每次执行带 `idempotency_key = sha256(lane|intent|target|day)[:16]`，写入 `lane-runs.jsonl` 与 `run-context.idempotency.this_run_key`。
+   - **命中同一个 key = 同一件事今天已处理过 → 跳过**（先查 key，不要凭印象）；
+   - 换天或换 target（如换另一篇文章）自然得到新 key → 允许重做（重做是合法的新工作，不是重复）；
+   - 若 `lane-status.json.warnings` 出现 `DUPLICATE_IDEMPOTENCY_KEY`，说明同一件事被处理了两次，必须查因后再动。
+3. **恢复分类（P3-11，下一步该干什么）**：`lane-status.json` 每条异常都带 `recovery_plan.action`：
+   | action | 你的动作 |
+   |--------|----------|
+   | `retry` | 瞬时/外部原因（网络、额度、锁竞争）→ 本轮跳过，下轮自然重跑 |
+   | `modify_payload` | 输入或前置条件变了（guard 拦下 src commit / slug 不存在 / 文件改名）→ **先改入参或 prompt 再跑**，禁止原样重试 |
+   | `request_human` | 需 K3 动作（管理员权限 / 拍板 / 外部平台）→ 报告里单列一行，附**一条可直接粘贴的命令** |
+   | `abort` | 设计缺陷或红线冲突 → 停手撞墙，**不带病重试第三次** |
+4. **执行状态机（P3-12，合法迁移）**：`pending → running → {completed | failed | blocked | quarantined}`；`failed | blocked | quarantined → {pending | dead_letter}`；`pending → skipped`（幂等命中时用 `skipped`）。
+   - 同一原因连续失败 2 次 → `dead_letter`（停止自动重试，等人工）；
+   - 产物可疑/疑似毒数据 → `quarantined`（需人工放行，不得自动重跑写盘）。
+5. **不重犯**：`run-context.previous_run.guard` / `notes` 记录上轮的拦截与告警（如 pre-commit guard 拦下 src commit、答案块字数断言未过、slug 不存在）→ 本轮改动**先过对应断言再提交**，同因失败第二次必须升级上报（不得静默重试第三次）。
+6. **跨车道避让**：`run-context.sibling_lanes`（今日其他车道的实跑情况）用于避免同一天撞同一批文件。若某文件今日已被别的车道动过，**不得**在同一轮再次改写同一文件（9/19 `zh-hk.json` 撞车事故根因）；必须改时先看 `lock` 段结论。
+7. **数据继承**：上一轮报告里的基线数字（GSC 位置/展示量、字数、门禁计数）是本轮的**对比基准**，报告中必须写"上轮 X → 本轮 Y"，禁止只写绝对值。
 
 ## 三、写回（每轮收尾必做）
 

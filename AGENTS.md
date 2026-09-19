@@ -99,7 +99,9 @@
 
 ### §0.35.6 状态
 - ✅ **已落地 (2026-09-19)**：结果总线（`lane-runs.jsonl` / `lane-status.mjs` / `run-context`）、5 条 prompt 注入消费契约、`lane-preflight.py`（前置 + 锁 + 上下文）、wrapper 接入 preflight 并把 run-context 作为 dsh 第一句、看门狗 v2 四方对账、`lane-git-commit.py` 失败也写报告 + 报告归属修正。
-- ⏳ **待办**：① `k3-ceo-daily-review.md` 重写为读 `lane-status.json` 并**注册成真实调度任务**（旧文引用 `F:\zprintpro-main-tmp` / `mavis cron` 已失效，且未被任何调度器注册）；② autoclaw registry 与 Kimi Work 两层正式废弃（只留历史记录），校验/看门狗只读 `.hermes/cron-lanes.json`；③ 集成测试纪律：**禁止在真实生产 wrapper 上跑端到端测试**（2026-09-19 因此误 push 2 次，违反 §0.25 30min 硬下限）；④ `delete-legacy-watchdog.cmd` 含 CJK（同 §0.35.5 编码铁律），待清理。
+- ✅ **P3 加固已落地 (2026-09-19 第二轮)**：① **幂等键** `idempotency_key = sha256(lane|intent|target|day)[:16]`（写 `lane-runs.jsonl` + `run-context.idempotency`；重复 key 进 `warnings.DUPLICATE_IDEMPOTENCY_KEY`）；② **恢复分类** `recovery_plan.action ∈ retry|modify_payload|request_human|abort`（每条异常附原因 + 证据命令 + 建议重试时机）；③ **8 态状态机** `pending→running→{completed|failed|blocked|quarantined}`、`failed/blocked/quarantined→{pending|dead_letter}`、`pending→skipped`，`lane-status.json.state_machine` 导出迁移表；④ `k3-ceo-daily-review.md` **v2 重写**（第一输入 = `lane-status.json`，清除 main-tmp/mavis 失效引用，注册方式见其文末 §注册）。
+- ✅ **两条实测结论 (2026-09-19)**：① **锁互斥压测通过**——两进程同时 `--acquire`，先到者 `EXIT=0` 持锁、后到者 `EXIT=10 (blocked)` 且**不调用 dsh**；② **legacy 读取路径已切断**——`lane-status.mjs` / `lane-preflight.py` / `cron-watchdog.py` 均只读 `.hermes/cron-lanes.json` + 自有总线，全仓 `jobs.json` 仅剩两处**说明性注释/独立清理脚本**（非读取路径）。
+- ⏳ **待办**：① `ZP-k3-review` 复盘实体**注册**（需管理员 `schtasks /create`；未注册前 `k3-ceo-daily-review.md` 只是 SSoT 文本，**不得声称"已在跑"**）；② autoclaw registry 与 Kimi Work 两层正式废弃（只留历史记录）；③ 集成测试纪律：**禁止在真实生产 wrapper 上跑端到端测试**（2026-09-19 因此误 push 2 次，违反 §0.25 30min 硬下限）；④ `\ZprintPro-CronWatchdog-2125` 删除（**需 K3 管理员**，`scripts/remove-legacy-cron-tasks.ps1`）。
 
 
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)

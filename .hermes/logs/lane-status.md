@@ -1,17 +1,26 @@
 # 定时任务状态 (lane-status)
 
-> 生成: 2026-09-19 08:19 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
+> 生成: 2026-09-19 08:33 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
 > 结构记录来源: `.hermes/logs/lane-runs.jsonl` (1 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
 > SSoT: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`
 > **verdict: ATTENTION** — ZP-blog-deepfix 2026-09-19 -> STALE ; ZP-monthly-matrix scheduler LastTaskResult=267011
 
-| lane | 触发 | 近 8 天逐日 verdict | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |
-|------|------|----------------------|----------|-------------------------------|----------|
-| ZP-daily-content | DAILY 21:17 | 09-12:MISSING 09-13:MISSING 09-14:OK 09-15:STALE 09-16:OK 09-17:STALE 09-18:OK 09-19:PENDING | `2026-09-18-daily-content.md` (2026-09-18) | 2026-09-18 21:17:01 / 0 / 2026-09-19 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
-| ZP-gsc-feedback | DAILY 22:43 | 09-12:MISSING 09-13:MISSING 09-14:OK 09-15:OK 09-16:OK 09-17:STALE 09-18:OK 09-19:PENDING | `2026-09-18-gsc-feedback.md` (2026-09-18) | 2026-09-18 22:43:01 / 0 / 2026-09-19 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
-| ZP-weekly-meta | WEEKLY FRI 23:07 | 09-18:OK | `2026-09-18-weekly-meta.md` (2026-09-18) | 2026-09-18 23:07:00 / 0 / 2026-09-25 23:07:00 | `.hermes/logs/cron-ZP-weekly-meta.log` |
-| ZP-blog-deepfix | WEEKLY SAT 05:37 | 09-12:MISSING 09-19:STALE | `2026-09-19-blog-deepfix.md` (2026-09-19) | 2026-09-19 05:37:00 / 0 / 2026-09-26 05:37:00 | `.hermes/logs/cron-ZP-blog-deepfix.log` |
-| ZP-monthly-matrix | MONTHLY 1 06:13 | — | `i18n-en-cjk-classification-v2-2026-09-19.md` (2026-09-19) | 1999-11-30 00:00:00 / 267011 / 2026-10-01 06:13:00 | `—` |
+| lane | 触发 | 近 8 天逐日 verdict | state | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |
+|------|------|----------------------|-------|----------|-------------------------------|----------|
+| ZP-daily-content | DAILY 21:17 | 09-12:MISSING 09-13:MISSING 09-14:OK 09-15:STALE 09-16:OK 09-17:STALE 09-18:OK 09-19:PENDING | pending | `2026-09-18-daily-content.md` (2026-09-18) | 2026-09-18 21:17:01 / 0 / 2026-09-19 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
+| ZP-gsc-feedback | DAILY 22:43 | 09-12:MISSING 09-13:MISSING 09-14:OK 09-15:OK 09-16:OK 09-17:STALE 09-18:OK 09-19:PENDING | pending | `2026-09-18-gsc-feedback.md` (2026-09-18) | 2026-09-18 22:43:01 / 0 / 2026-09-19 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
+| ZP-weekly-meta | WEEKLY FRI 23:07 | 09-18:OK | completed | `2026-09-18-weekly-meta.md` (2026-09-18) | 2026-09-18 23:07:00 / 0 / 2026-09-25 23:07:00 | `.hermes/logs/cron-ZP-weekly-meta.log` |
+| ZP-blog-deepfix | WEEKLY SAT 05:37 | 09-12:MISSING 09-19:STALE | quarantined | `2026-09-19-blog-deepfix.md` (2026-09-19) | 2026-09-19 05:37:00 / 0 / 2026-09-26 05:37:00 | `.hermes/logs/cron-ZP-blog-deepfix.log` |
+| ZP-monthly-matrix | MONTHLY 1 06:13 | — | pending | — | 1999-11-30 00:00:00 / 267011 / 2026-10-01 06:13:00 | `—` |
+
+## 恢复分类 (recovery_plan — 下一步该干什么)
+
+| lane | state | 动作 | 原因 | 证据/命令 | 建议重试 |
+|------|-------|------|------|-----------|----------|
+| ZP-blog-deepfix | quarantined | `modify_payload` | pre-commit guard 拦下 src commit -> 必须先让改动过对应断言 | `node scripts/guards/sop10-guard.js` | 需人处理 |
+| ZP-monthly-matrix | pending | `request_human` | 窗口内无应触发日, 但调度器 LastTaskResult=267011 (从未成功跑过) | `Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix` | 需人处理 |
+
+> 动作含义: `retry`=瞬时/外部原因下轮重跑 ; `modify_payload`=先改入参/prompt 再跑 ; `request_human`=需 K3 动作(附一条可粘贴命令) ; `abort`=设计缺陷/红线, 停手撞墙。
 
 ## 逐 lane 明细 (最近一次应触发日)
 
