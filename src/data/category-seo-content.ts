@@ -2660,9 +2660,9 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
 // =============================================================================
 const stickersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '貼紙印刷 50 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',
+    featuredSnippet: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',
     lastUpdated: '2026-08-21',
-    h2: '貼紙印刷 / 戶外貼紙 / 防水貼紙 / 可移貼紙 — 50 個起印 5-7 天交期',
+    h2: '貼紙印刷 / 戶外貼紙 / 防水貼紙 / 可移貼紙 — 10 個起印 5-7 天交期',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -2736,13 +2736,13 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '貼紙選購指南',
       paragraphs: [
-        '貼紙印刷揀款一句講晒：室內用銅版紙、戶外用 PVC 防水、要撕得甩用可移貼紙、要通透感用透明貼。50 張起印、即日可交，最細 25×25mm 都印到；落單前答埋「貼喺邊、貼幾耐」兩條問題，就唔會揀錯料。',
+        '貼紙印刷揀款一句講晒：室內用銅版紙、戶外用 PVC 防水、要撕得甩用可移貼紙、要通透感用透明貼。10 張起印、即日可交，最細 25×25mm 都印到；落單前答埋「貼喺邊、貼幾耐」兩條問題，就唔會揀錯料。',
         '銅版紙貼紙最經濟，色彩鮮豔，適合包裝標籤、封口貼同贈品貼；PVC 防水貼紙耐曬耐雨，係戶外貼紙首選，過膠後戶外可用 2–3 年唔褪色；透明貼（透明 PVC/PP）貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級。',
         '可移貼紙用可移除背膠，撕落嚟唔留殘膠，最啱促銷價錢牌、期間限定活動同櫥窗佈置；相反永久膠貼實咗就難撕，適合長期產品標籤；粗糙面或金屬曲面就要用 3M 強力膠。背膠揀錯，貼紙唔係甩就係留膠漬。',
         '形狀方面，標準圓形、方形免刀模費最抵印；異形模切（吉祥物輪廓、品牌 LOGO 外形）辨識度最高，首次只需收刀模工本費，之後翻印唔使再收。貼紙訂製仲可以做半穿（kiss-cut），一張紙撕起每個獨立圖案。',
         '工藝加乘：過啞膠高級防刮、過光膠鮮豔防水、燙金燙銀提升奢華感、擊凸做立體觸感。1,000 張以上柯式印刷單價可低至 HK$0.1/張；可變數據印刷仲可以每張印唔同序號、QR Code 或會員名。',
         '行業場景速配：餐飲外賣用防水封口貼，美妝護膚用透明貼做樽身標籤，零售精品用燙金貼做禮盒封口，寵物食品用耐油標籤，文創 IP 用異形模切貼紙做周邊。我哋有各行業現成規格表，照住揀就得。',
-        '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 50 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
+        '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 10 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
         '落單流程：提交尺寸、數量、材質 → 30 秒 AI 報價 → 免費檢查檔案（CMYK、300dpi、出血 3mm）→ 數碼即日、柯式 2–3 天交貨。急單順豐即日派件，港九新界全覆蓋；長期合作客戶可分批出貨，大量訂單仲可以分袋分包，方便門市派發。',
       ],
       links: [
@@ -2753,7 +2753,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '貼紙印刷最低多少張起？', a: '50 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟。' },
+      { q: '貼紙印刷最低多少張起？', a: '10 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟。' },
       { q: '貼紙可以印什麼形狀？', a: '任意形狀皆可。標準形狀免費，異形需製作刀模（首次僅收工本費）。' },
       { q: '防水貼紙真的防水嗎？', a: 'PVC 防水貼紙完全防水，可承受浸泡和戶外雨淋。銅版紙貼紙不防水。' },
       { q: '可以每張貼紙印不同內容嗎？', a: '可以。支持可變數據印刷，每張可印不同序號、條碼、QR Code 或姓名。' },
@@ -2766,9 +2766,9 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Custom stickers from 50 pcs, waterproof matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL global 2-4 days.',
+    featuredSnippet: 'Custom stickers from 10 pcs, waterproof matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL global 2-4 days.',
     lastUpdated: '2026-08-21',
-    h2: 'Custom Stickers / Outdoor Stickers / Waterproof Stickers / Removable Stickers — From 50 pcs, 5-7 Day Turnaround',
+    h2: 'Custom Stickers / Outdoor Stickers / Waterproof Stickers / Removable Stickers — From 10 pcs, 5-7 Day Turnaround',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Stickers?',
       items: [

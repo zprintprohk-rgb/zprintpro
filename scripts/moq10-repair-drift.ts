@@ -15,6 +15,13 @@ import path from 'path';
 
 const ROOT = process.cwd();
 const APPLY = process.argv.includes('--apply');
+/**
+ * `--deletions-only`：只跑行刪除（features 柯式經濟量）。
+ * 為什麼需要：FIXES（取代類）在第一批已套用完成 → 再跑會全部報「找不到原文」。
+ *   本腳本是冪等的（找不到 = 已套用），但為了讓刪除能**獨立、乾淨地**執行並有明確 exit code，
+ *   提供此參數跳過 FIXES 的檢查。
+ */
+const DELETIONS_ONLY = process.argv.includes('--deletions-only');
 const SELF = 'src/data/products.ts';
 
 type Fix = {
@@ -172,6 +179,51 @@ const FIXES: Fix[] = [
 ];
 
 // ---------- 定位：把每條 fix 綁定到 SKU 區塊 ----------
+/**
+ * 行刪除清單（K3 2026-09-19 裁決 2.3）。
+ *
+ * 裁決理由：features 是「產品特點」列表，「柯式經濟量」屬**採購決策輔助資訊**而非產品特點。
+ *   塞進 features 會 ① 稀釋可讀性 ② 與 `getPrintMethodAdvice()`（報價器已提供）資訊冗餘。
+ *   且這三類的 features 數字與真實 `minQuantity` **本就矛盾**
+ *   （利是封 500vs**100** / 月曆 500vs**1000** / 餐牌 50vs**100**）
+ *   → 直接移除；該資訊改由 FAQ / 長描述 / 報價器承載。
+ */
+const RED_PACKET_SLUGS = [
+  'foil-red-packets',
+  'embossed-red-packets',
+  'custom-red-packets',
+  'cartoon-red-packets',
+  'eco-red-packets',
+  'large-red-packets',
+];
+const CALENDAR_SLUGS = [
+  'wall-calendars',
+  'desk-calendars',
+  'custom-calendars',
+  'mini-calendars',
+  'photo-frame-calendars',
+  'magnetic-calendars',
+];
+const MENU_SLUGS = ['pvc-menus', 'laminated-menus', 'hardcover-menus', 'drink-menus', 'disposable-menus'];
+
+const DELETIONS: { slug: string; line: string; why: string }[] = [
+  ...RED_PACKET_SLUGS.map((slug) => ({
+    slug,
+    line: '【500個起訂】小批量數碼，大批量柯式',
+    why: 'features 柯式經濟量 500 vs minQuantity=100（矛盾）→ 移出 features',
+  })),
+  ...CALENDAR_SLUGS.map((slug) => ({
+    slug,
+    line: '【500本起印】大批量柯式，小批量數碼',
+    why: 'features 柯式經濟量 500 vs minQuantity=1000（矛盾）→ 移出 features',
+  })),
+  ...MENU_SLUGS.map((slug) => ({
+    slug,
+    line: '【50本起訂】小批量數碼，大量柯式',
+    why: 'features 柯式經濟量 50 vs minQuantity=100（矛盾）→ 移出 features',
+  })),
+];
+
 function isProductSlugLine(line: string): string | undefined {
   const m = line.match(/^(\s*)slug:\s*'([^']+)'/);
   if (!m) return undefined;
@@ -201,6 +253,7 @@ const plans: Plan[] = [];
 const problems: string[] = [];
 
 for (const fix of FIXES) {
+  if (DELETIONS_ONLY) break;
   const range = ranges.find((r) => r.slug === fix.slug);
   if (!range) {
     problems.push(`找不到 SKU 區塊 [${fix.slug}]`);
@@ -223,6 +276,30 @@ for (const fix of FIXES) {
   plans.push({ fix, lineNo: firstLine, hitsInBlock, hitsWholeFile });
 }
 
+// ---------- 刪除計畫（features 柯式經濟量）----------
+type DelPlan = { del: (typeof DELETIONS)[number]; lineNo: number; hitsInBlock: number };
+const delPlans: DelPlan[] = [];
+for (const del of DELETIONS) {
+  const range = ranges.find((r) => r.slug === del.slug);
+  if (!range) {
+    problems.push(`找不到 SKU 區塊 [${del.slug}]（刪除項）`);
+    continue;
+  }
+  let hitsInBlock = 0;
+  let firstLine = -1;
+  for (let i = range.start; i <= range.end; i++) {
+    if (lines[i].includes(del.line)) {
+      hitsInBlock++;
+      if (firstLine < 0) firstLine = i + 1;
+    }
+  }
+  if (hitsInBlock === 0) {
+    problems.push(`[${del.slug}] 區塊內找不到待刪行「${del.line.slice(0, 40)}…」`);
+    continue;
+  }
+  delPlans.push({ del, lineNo: firstLine, hitsInBlock });
+}
+
 // ---------- 報告 ----------
 console.log(`MOQ 漂移修正計畫（${APPLY ? 'APPLY' : 'DRY-RUN'}）`);
 console.log(`SKU 區塊 ${ranges.length} ｜ 計畫 ${plans.length} 條 ｜ 問題 ${problems.length} 條\n`);
@@ -242,6 +319,14 @@ for (const p of plans) {
   console.log(`      理由: ${p.fix.why}`);
 }
 console.log(`\n合計取代 ${totalReplacements} 處`);
+
+console.log(`\n-- 待刪除行（features 柯式經濟量，${delPlans.length} 條）--`);
+for (const d of delPlans) {
+  console.log(`  ✂ [${d.del.slug}] L${d.lineNo}（${d.hitsInBlock} 行）`);
+  console.log(`      「${d.del.line}」`);
+  console.log(`      理由: ${d.del.why}`);
+}
+console.log(`\n合計刪除 ${delPlans.reduce((a, d) => a + d.hitsInBlock, 0)} 行`);
 
 if (!APPLY) {
   console.log('\n（dry-run，未寫檔。加 --apply 執行）');
@@ -265,15 +350,69 @@ for (const p of plans) {
   }
 }
 
+// ---------- 套用刪除：整行移除（features 柯式經濟量）----------
+// ⚠️ 修正記錄（2026-09-19）：首版在 for 迴圈內「邊找邊 splice」→ 後續 SKU 的行號全部位移，
+//   導致 wall-calendars 的目標行指到別處（假陽性「找不到 features 起點」）。
+//   改為**兩階段**：① 掃描全部目標行（尚不改動 lines） ② 統一由後往前刪。
+// 安全性：刪除前先以**括號深度**斷言該行確在 features 陣列內，避免誤刪。
+type Pending = { lineIdx: number; slug: string };
+const pending: Pending[] = [];
+
+for (const d of delPlans) {
+  const range = ranges.find((r) => r.slug === d.del.slug)!;
+  for (let i = range.start; i <= range.end; i++) {
+    if (!lines[i].includes(d.del.line)) continue;
+    // 結構斷言：找最近的 `features: [`，累計其間 [ ] 淨深度 > 0 才算在陣列內
+    let fIdx = -1;
+    for (let j = i; j >= range.start; j--) {
+      if (/^\s*features:\s*\[/.test(lines[j])) {
+        fIdx = j;
+        break;
+      }
+    }
+    if (fIdx < 0) {
+      console.error(`🔴 [${d.del.slug}] L${i + 1} 往上找不到 features 陣列起點，拒刪（防誤刪）`);
+      process.exit(1);
+    }
+    let depth = 1; // `features: [` 本身
+    for (let j = fIdx + 1; j < i; j++) {
+      depth += (lines[j].match(/\[/g) || []).length;
+      depth -= (lines[j].match(/\]/g) || []).length;
+    }
+    if (depth <= 0) {
+      console.error(`🔴 [${d.del.slug}] L${i + 1} 不在 features 陣列內（深度已閉合），拒刪（防誤刪）`);
+      process.exit(1);
+    }
+    pending.push({ lineIdx: i, slug: d.del.slug });
+  }
+}
+
+// 統一刪除（由後往前，索引不互相影響）
+const deletedLines: number[] = [];
+for (const p of [...pending].sort((a, b) => b.lineIdx - a.lineIdx)) {
+  deletedLines.push(p.lineIdx + 1);
+  lines.splice(p.lineIdx, 1);
+}
+deletedLines.reverse();
+
 // ---------- 後斷言：所有 from 必須歸零 ----------
 const after = lines.join('\n');
 const leftovers: string[] = [];
 for (const fix of FIXES) {
-  const range = ranges.find((r) => r.slug === fix.slug)!;
-  // 用套用後的行重算區塊（行數不變）
+  // 刪除後行號已位移 → 重新計算區塊
+  const newRanges = skuRanges(lines);
+  const range = newRanges.find((r) => r.slug === fix.slug)!;
   let n = 0;
   for (let i = range.start; i <= range.end; i++) n += lines[i].split(fix.from).length - 1;
   if (n > 0) leftovers.push(`[${fix.slug}] 仍有 ${n} 處「${fix.from.slice(0, 40)}…」`);
+}
+// 後斷言：所有待刪行必須歸零
+for (const d of DELETIONS) {
+  const newRanges = skuRanges(lines);
+  const range = newRanges.find((r) => r.slug === d.slug)!;
+  let n = 0;
+  for (let i = range.start; i <= range.end; i++) if (lines[i].includes(d.line)) n++;
+  if (n > 0) leftovers.push(`[${d.slug}] 待刪行仍剩 ${n} 條「${d.line.slice(0, 36)}…」`);
 }
 if (leftovers.length) {
   console.error('\n🔴 後斷言失敗，未寫入：');
@@ -288,5 +427,5 @@ if (after === original) {
 const backup = `${abs}.bak-moq10-${Date.now()}`;
 fs.copyFileSync(abs, backup);
 fs.writeFileSync(abs, after);
-console.log(`\n✅ 已寫入 ${updated} 處取代`);
+console.log(`\n✅ 已寫入 ${updated} 處取代 + 刪除 ${deletedLines.length} 行 (L${deletedLines.join(', L')})`);
 console.log(`   備份: ${path.basename(backup)}`);

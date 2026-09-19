@@ -2688,7 +2688,9 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    // K3 2026-09-19 裁決: A2 銅版紙海報屬標準數碼印刷, 10 張起技術可行;
+    // 原值 100 與 price-tables 價階（由 10 起）及全站文案「10張起印」矛盾 → 對齊為 10。
+    minQuantity: 10,
     images: ['/images/products/a2-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -3713,7 +3715,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【三色燙金】金／銀／玫瑰金，傳統喜慶',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -3787,7 +3788,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【0.3–0.5mm浮雕】立體觸感，品牌誠意倍增',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -3881,7 +3881,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【完全客製】Logo、品牌色、專屬圖案全可印',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -3975,7 +3974,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【卡通設計】活潑圖案，親子品牌首選',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -4067,7 +4065,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【FSC再生紙／種子紙】可降解或種植，環保承諾',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -4161,7 +4158,6 @@ export const products: Product[] = [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
       '【加大30%–50%】容量更大，適合厚禮金',
-      '【500個起訂】小批量數碼，大批量柯式',
       '【免費刀模】異形或標準長方形可選',
       '【燙金定位】±0.3mm精度，細線清晰',
       '【節慶檔期】農曆新年前3週為高峰期，建議提早下單'
@@ -4258,7 +4254,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【每月一頁】背面可印企業資訊，實用宣傳雙效',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4334,7 +4329,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【三角座架】穩固站立，桌面擺放首選',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4419,7 +4413,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【完全客製】Logo、品牌故事、產品圖片全可印',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4508,7 +4501,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【口袋尺寸】小巧精緻，攜帶方便',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4598,7 +4590,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【硬紙板相架】直立擺放，桌面裝飾首選',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4689,7 +4680,6 @@ export const products: Product[] = [
       '【金屬圈或騎馬釘】翻頁順暢，牢固耐用',
       '【軟磁片背面】吸附冰箱白板，實用性強',
       '【免費排版】每月版面設計與節慶標註',
-      '【500本起印】大批量柯式，小批量數碼',
       '【節慶檔期】Q4為高峰期，建議10月底前確認'
     ],
     specs: {
@@ -4785,7 +4775,6 @@ export const products: Product[] = [
       '【圓角或直角】依品牌風格選擇',
       '【0.5–1.0mm PVC】防水防油，直接擦拭清潔',
       '【免費排版】菜品分類與價格標註',
-      '【50本起訂】小批量數碼，大量柯式',
       '【可更新設計】季節菜單可快速改版'
     ],
     specs: {
@@ -4860,7 +4849,6 @@ export const products: Product[] = [
       '【圓角或直角】依品牌風格選擇',
       '【啞膠／光膠覆膜】防水防油，保護印刷面',
       '【免費排版】菜品分類與價格標註',
-      '【50本起訂】小批量數碼，大量柯式',
       '【可更新設計】季節菜單可快速改版'
     ],
     specs: {
@@ -4956,7 +4944,6 @@ export const products: Product[] = [
       '【圓角或直角】依品牌風格選擇',
       '【硬紙板封面】高檔質感，適合高級餐廳',
       '【免費排版】菜品分類與價格標註',
-      '【50本起訂】小批量數碼，大量柯式',
       '【可更新設計】季節菜單可快速改版'
     ],
     specs: {
@@ -5053,7 +5040,6 @@ export const products: Product[] = [
       '【圓角或直角】依品牌風格選擇',
       '【QR Code連結】線上點餐，減少接觸',
       '【免費排版】菜品分類與價格標註',
-      '【50本起訂】小批量數碼，大量柯式',
       '【可更新設計】季節菜單可快速改版'
     ],
     specs: {
@@ -5147,7 +5133,6 @@ export const products: Product[] = [
       '【圓角或直角】依品牌風格選擇',
       '【100g–120g輕薄紙】成本低廉，適合大量派發',
       '【免費排版】菜品分類與價格標註',
-      '【50本起訂】小批量數碼，大量柯式',
       '【可更新設計】季節菜單可快速改版'
     ],
     specs: {
@@ -7324,7 +7309,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷訂製 卡盒/紙盒訂製 · 100個起印 5-7天交期 · 智印港',
+    name: '白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷訂製 卡盒/紙盒訂製 · 500個起印 5-7天交期 · 智印港',
     description: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。紙盒訂製、白卡彩盒訂製適用：零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     images: ['/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp'],
     imagesByLocale: {
