@@ -413,8 +413,23 @@ function render(rows) {
     const keyOf = x => `${x.locale}|${x.slug}|${x.seg}|${x.status}`;
     const now = rows.filter(x => x.status === 'FAIL').map(keyOf).sort();
     let base = [];
+    let baseLoadError = null;
     if (fs.existsSync(BASELINE_PATH)) {
-      try { base = (JSON.parse(fs.readFileSync(BASELINE_PATH, 'utf8')).fails || []).slice().sort(); } catch (e) { base = []; }
+      try {
+        // ★ 防御 (2026-09-19 实测踩到): PowerShell `Set-Content -Encoding UTF8` 会写 **UTF-8 BOM**,
+        //   JSON.parse 遇 BOM 抛错 ⇒ 若静默吞掉就使「基线 49」变「基线 0」, 49 条存量被当成新增
+        //   ⇒ 假拦死全站。故: ① 剥 BOM ② 解析失败必须显式报警, 不得静默降级。
+        const rawBase = fs.readFileSync(BASELINE_PATH, 'utf8').replace(/^\uFEFF/, '');
+        base = (JSON.parse(rawBase).fails || []).slice().sort();
+      } catch (e) {
+        baseLoadError = e.message;
+        base = [];
+      }
+    }
+    if (baseLoadError) {
+      console.log(`⚠️  [基线读取失败] ${path.relative(process.cwd(), BASELINE_PATH).replace(/\\/g, '/')}: ${baseLoadError}`);
+      console.log('    ⇒ 本轮「基线对账」不可用 (基线按空处理); 请先修复台账再判断新增/存量。');
+      console.log('    ⇒ 重建: node scripts/guards/blog-quality-12-rules-guard.js --stamp-baseline');
     }
     if (stampBaseline) {
       fs.mkdirSync(path.dirname(BASELINE_PATH), { recursive: true });
@@ -437,6 +452,25 @@ function render(rows) {
       baselineViolation = 1;
     } else {
       console.log('✅ [基线对账] 0 条新增段级 FAIL (存量缺陷按批次清, 不阻断本次发布)');
+    }
+    // ★ 自动递减 (K3 2026-09-19 评估 A3 加固): 已修的存量条目从台账移除并落盘。
+    //   口径: 基线必须「只许递减」; 否则 49 条存量会变成永久豁免, 红色不再区分
+    //   「你破坏了它」与「它本来就这样」→ 最终被当噪音忽略 (见 SSoT §7.5)。
+    //   `--no-prune` 仅用于排查, 禁常态使用。
+    if (fixed.length && !argv.includes('--no-prune')) {
+      // 剩余 = 基线 ∩ 现存 (即仍未修的存量)
+      const next = base.filter(k => now.includes(k));
+      fs.writeFileSync(BASELINE_PATH, JSON.stringify({
+        schema: 'blog-12seg-baseline/v1',
+        note: '12 段骨架存量 FAIL 基线 (语义 = 只许递减, --baseline 模式自动递减; --no-prune 可关闭)。刷新: node scripts/guards/blog-quality-12-rules-guard.js --stamp-baseline',
+        updated_at: new Date().toISOString(),
+        fails: next,
+      }, null, 1), 'utf8');
+      console.log(`⬇️  [基线自动递减] 移除已修 ${fixed.length} 条 → 剩余 ${next.length} 条 (台账已更新, 请随同本批 commit 提交)`);
+      for (const f of fixed.slice(0, 20)) console.log(`   - ${f}`);
+      if (fixed.length > 20) console.log(`   ... 另有 ${fixed.length - 20} 条`);
+    } else if (fixed.length) {
+      console.log(`ℹ️  [基线未递减] 检出已修 ${fixed.length} 条, 但本轮带 --no-prune, 台账保持不动`);
     }
   }
 

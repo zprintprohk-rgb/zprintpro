@@ -96,8 +96,32 @@ function main() {
     console.log('   修法: 更新 manifest 的 literals (删掉已不存在的字面), 保持台账=事实。');
   }
   if (uncovered.length) console.log(`\nℹ️ 未纳入台账的 prompt 文件 ${uncovered.length} 个 (等于不豁免, 命中即由主门童拦): ${uncovered.join(', ')}`);
+
+  // ★ 2026-09-19 K3 决策二 附加条件: 豁免「在 review 之前有效」, 不是永久有效。
+  //   到期未 review ⇒ WARN (黄); 到期超 30 天 ⇒ FAIL (红, 拒 push)。
+  //   防「设一次就不管」的僵尸配置 —— 与 ABSOLUTE_BASELINE_GOES_STALE 同族。
+  let reviewOverdue = 0;
+  const rp = manifest.review_policy;
+  if (!rp || !rp.next_review_due) {
+    console.log('\n🟡 [CRON-PROMPTS-EXEMPTION] 台账缺 review_policy.next_review_due (无法判定豁免时效)');
+  } else {
+    const due = Date.parse(rp.next_review_due);
+    const now = Date.now();
+    const days = Math.floor((now - due) / 86400000);
+    if (days > 30) {
+      reviewOverdue = 1;
+      console.log(`\n🔴 [CRON-PROMPTS-EXEMPTION] 豁免台账 review 已过期 ${days} 天 (next_review_due=${rp.next_review_due})`);
+      console.log('   口径: 豁免「在 review 之前有效」; 过期 >30 天 = 僵尸豁免, 拒 push。');
+      console.log('   修法: 逐文件确认 literals 仍属规则书引用 → 刷新 review_policy.last_reviewed / next_review_due');
+    } else if (days > 0) {
+      console.log(`\n🟡 [CRON-PROMPTS-EXEMPTION] 豁免台账 review 已过期 ${days} 天 (≤30 天, 仅告警): next_review_due=${rp.next_review_due}`);
+    } else {
+      console.log(`\n✅ [CRON-PROMPTS-EXEMPTION] 豁免 review 时效正常 (last=${rp.last_reviewed} / next=${rp.next_review_due}, 周期=${rp.cadence || 'n/a'})`);
+    }
+  }
+
   if (!unregistered.length && !unused.length) console.log(`\n✅ [CRON-PROMPTS-EXEMPTION] 0 命中 - ${entries.length} 个文件的「声明集合 = 实际集合」完全对账`);
-  process.exit(unregistered.length ? 1 : 0);
+  process.exit(unregistered.length || reviewOverdue ? 1 : 0);
 }
 
 if (require.main === module) main();

@@ -2,18 +2,40 @@
   "schema": "cron-prompts-exemption-manifest/v1",
   "note": "K3 2026-09-19 决策一(a): .hermes/cron-prompts/ 加入 common.js FULL_EXEMPT_PATHS —— 理由与 AGENTS.md / .hermes/logs 同族: 规则书/指令书**必然引用禁用形态字面**(例如『不要写 FSC-C123456』这句话本身就含 FSC-C123456), 字面扫描 = 必然误报。本 manifest 把『豁免范围』从『整个目录全放行』收紧为『逐条登记的已知字面』, 可审计、可对账。任何新增命中都必须在此登记并附理由, 否则门童 #23 报漂移。",
   "exempt_dir": ".hermes/cron-prompts/",
-  "rule_ids": ["SOP10_CERT_NO", "CRED_FSC_C123456", "CRED_ISO_9001", "CRED_1000_PLUS", "CRED_HEIDELBERG", "CRED_4_PLUS_NUMBER"],
+  "rule_ids": [
+    "SOP10_CERT_NO",
+    "CRED_FSC_C123456",
+    "CRED_ISO_9001",
+    "CRED_1000_PLUS",
+    "CRED_HEIDELBERG",
+    "CRED_4_PLUS_NUMBER"
+  ],
   "entries": [
     {
       "file": ".hermes/cron-prompts/zprintpro-blog-deepfix.md",
-      "literals": ["FSC-C123456", "ISO 9001", "1,000+", "海德堡", "12 大行业", "24h SLA"],
+      "literals": [
+        "FSC-C123456",
+        "ISO 9001",
+        "1,000+",
+        "海德堡",
+        "12 大行业",
+        "24h SLA"
+      ],
       "reason": "历史条款原文: K3 8/19 拍板「12 件事属实」清单与 8/28 重写指令含这些字面; 属『规则书引用』, 非客户可见内容。",
       "registered_at": "2026-09-19",
       "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
     },
     {
       "file": ".hermes/cron-prompts/zprintpro-daily-content-1x7w.md",
-      "literals": ["FSC-C123456", "ISO 9001", "1,000+", "海德堡", "Heidelberg", "12 大行业", "24h SLA"],
+      "literals": [
+        "FSC-C123456",
+        "ISO 9001",
+        "1,000+",
+        "海德堡",
+        "Heidelberg",
+        "12 大行业",
+        "24h SLA"
+      ],
       "reason": "同上; 另含 §0.23 数据诚信示例与 SOP-10 5 问门禁原文。",
       "registered_at": "2026-09-19",
       "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
@@ -39,5 +61,12 @@
       "registered_at": "2026-09-19",
       "registered_by": "deepseek hermes (K3 决策一(a) 落地)"
     }
-  ]
+  ],
+  "review_policy": {
+    "last_reviewed": "2026-09-19",
+    "next_review_due": "2026-12-19",
+    "cadence": "quarterly",
+    "rule": "豁免不是「永久有效」, 而是「在 review 之前有效」: 到期未 review ⇒ 门童 #23 报 WARN (黄), 到期超 30 天 ⇒ 报 FAIL (红, 拒 push)。review 动作 = 逐文件确认 literals 仍属规则书引用 + 刷新 last_reviewed/next_review_due。",
+    "reviewed_by": "deepseek hermes (K3 决策二 确认冻结)"
+  }
 }

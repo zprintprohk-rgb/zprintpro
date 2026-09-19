@@ -68,6 +68,19 @@ function classify(c) {
   return { isBypass, rationale: m ? m[1].trim() : null };
 }
 
+/**
+ * ★ 唯一 bypass 入口 (K3 2026-09-19 评估建议): 环境变量 `ZP_BYPASS_REASON`
+ *
+ * 解决的问题: 若操作者不写 footer, bypass 就**不可追踪** —— 靠"自觉写 footer"不是机制。
+ * 业内思路 = 让 bypass 入口"awkward"(故意不便随手输入), 使设置它需要片刻思考,
+ *   并把理由**自动**落进台账, 不依赖人记得写 footer。
+ * 本仓落地:
+ *   `ZP_BYPASS_REASON="<理由>" git commit --no-verify -F <msgfile>`
+ *   → stamp() 优先读该环境变量; 有值即视为已留痕; 无值且无 footer ⇒ UNATTRIBUTED + WARN。
+ * 判定优先级: ZP_BYPASS_REASON > message footer `Bypass-rationale:` > UNATTRIBUTED
+ */
+const ENV_REASON = (process.env.ZP_BYPASS_REASON || '').trim() || null;
+
 function readLedger() {
   if (!fs.existsSync(LEDGER)) return [];
   return fs.readFileSync(LEDGER, 'utf8').split('\n').filter(Boolean).map(l => { try { return JSON.parse(l); } catch (e) { return null; } }).filter(Boolean);
@@ -79,22 +92,26 @@ function stamp() {
   const { isBypass, rationale } = classify(c);
   const ledger = readLedger();
   if (ledger.some(e => e.sha === c.sha)) { console.log(`✅ [BYPASS-AUDIT] ${c.sha.slice(0, 8)} 已在台账内 (幂等, 跳过)`); return 0; }
-  if (!isBypass) { console.log(`✅ [BYPASS-AUDIT] ${c.sha.slice(0, 8)} 非旁路提交 (无 footer / 无 no-verify 指纹), 不记录`); return 0; }
+  // ★ 环境变量入口优先 (K3 2026-09-19 建议): 有 ZP_BYPASS_REASON ⇒ 即便 message 无 footer 也算留痕
+  const effective = ENV_REASON || rationale;
+  if (!isBypass && !ENV_REASON) { console.log(`✅ [BYPASS-AUDIT] ${c.sha.slice(0, 8)} 非旁路提交 (无 footer / 无 no-verify 指纹), 不记录`); return 0; }
   const files = execSync(`git show --name-only --pretty=format: ${c.sha}`, { encoding: 'utf8', cwd: ROOT }).split('\n').filter(Boolean);
   const ev = {
     ts: new Date().toISOString(),
     sha: c.sha,
     commit_date: c.date,
     subject: c.subject.slice(0, 160),
-    rationale: rationale || 'UNATTRIBUTED',
+    rationale: effective || 'UNATTRIBUTED',
+    rationale_source: ENV_REASON ? 'env:ZP_BYPASS_REASON' : (rationale ? 'message-footer' : 'none'),
     files_touched: files.length,
     files_sample: files.slice(0, 12),
   };
   fs.mkdirSync(path.dirname(LEDGER), { recursive: true });
   fs.appendFileSync(LEDGER, JSON.stringify(ev) + '\n', 'utf8');
-  console.log(`📝 [BYPASS-AUDIT] 记录旁路提交 ${c.sha.slice(0, 8)} | 理由: ${ev.rationale}`);
+  console.log(`📝 [BYPASS-AUDIT] 记录旁路提交 ${c.sha.slice(0, 8)} | 来源=${ev.rationale_source} | 理由: ${ev.rationale}`);
   if (ev.rationale === 'UNATTRIBUTED') {
-    console.log('   ⚠️ 缺 `Bypass-rationale: <理由>` footer —— 下次请补, 否则 push 会被门童 #22 拦。');
+    console.log('   ⚠️ 缺理由 —— 下次改用唯一入口: ZP_BYPASS_REASON="<理由>" git commit --no-verify -F <msgfile>');
+    console.log('      或补 footer `Bypass-rationale: <理由>`; 否则 push 会被门童 #22 拦。');
   }
   return 0;
 }
@@ -107,8 +124,8 @@ function check(since) {
     const { isBypass, rationale } = classify(c);
     const recorded = ledger.find(e => e.sha === c.sha);
     if (isBypass || recorded) {
-      const r = rationale || (recorded && recorded.rationale !== 'UNATTRIBUTED' ? recorded.rationale : null);
-      if (!r) problems.push(`${c.sha.slice(0, 8)} "${c.subject.slice(0, 60)}" —— 旁路提交但无 Bypass-rationale footer`);
+      const r = ENV_REASON || rationale || (recorded && recorded.rationale !== 'UNATTRIBUTED' ? recorded.rationale : null);
+      if (!r) problems.push(`${c.sha.slice(0, 8)} "${c.subject.slice(0, 60)}" —— 旁路提交但无理由 (footer / ZP_BYPASS_REASON 皆缺)`);
     }
   }
   return { commits: commits.length, problems, ledger };
