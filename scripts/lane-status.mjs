@@ -165,19 +165,20 @@ function main() {
     const ranOn = logRunDays(lane);
     const laneRuns = runsReal.filter((r) => r.lane === lane.task);
 
-    // 本 lane 当日报告判定 (K3 口径, 见 cron-lanes.json._report_naming_rule):
-    //   strict = 文件名以「目标日 YYYY-MM-DD」开头 (e.g. 2026-09-19-blog-deepfix.md) -> 当权威证据
-    //   loose  = 以目标日结尾的 '*'-后缀匹配 (e.g. 2026-09-18-daily-content.md) -> 当参考证据
-    //   其余 (无日期 / 日期不在文件名首尾) 一律不认 —— 防 step5-merge-batch-report-<date>.md 这类第三方文件冒充
+    // 本车道当日报告判定 (K3 口径, 见 cron-lanes.json._report_naming_rule):
+    //   strict = 文件名以「目标日 YYYY-MM-DD」开头 且 以车道后缀结尾 (e.g. 2026-09-19-blog-deepfix.md)
+    //   loose  = 文件名含目标日 且 以车道后缀结尾 (e.g. 2026-09-18-daily-content.md)
+    //   其余 (日期不在文件名 / 无车道后缀) 一律不认 —— 防 step5-merge-batch-report-<date>.md
+    //   或 .hermes/logs/2026-09-19-cron-source-of-truth-findings.md 这类第三方文件冒充
     const suffix = lane.reportGlob ? lane.reportGlob.slice(lane.reportGlob.indexOf('*') + 1) : '';
     const mdFiles = allFiles
       .filter((f) => f.name.endsWith('.md'))
       .map((f) => {
         const strict = f.name.match(/^(\d{4}-\d{2}-\d{2})-/);
         const anyDate = f.name.match(DATE_RE);
-        const loose = Boolean(suffix) && f.name.endsWith(suffix);
-        const dateToken = strict ? strict[1] : (loose && anyDate ? anyDate[0] : null);
-        return { ...f, dateToken, strict: Boolean(strict) && f.name.endsWith(suffix) };
+        const endsOk = Boolean(suffix) && f.name.endsWith(suffix);
+        const dateToken = (strict || anyDate) ? (strict ? strict[1] : anyDate[0]) : null;
+        return { ...f, dateToken, strict: Boolean(strict) && endsOk, loose: Boolean(anyDate) && endsOk };
       })
       .filter((f) => f.dateToken)
       .sort((a, b) => Number(b.strict) - Number(a.strict) || b.dateToken.localeCompare(a.dateToken) || b.mtime - a.mtime);
@@ -192,7 +193,10 @@ function main() {
       const graceOver = today.getTime() > fireAt.getTime() + GRACE_MIN * 60000;
 
       const rec = laneRuns.find((r) => (r.fired_at || r.ended_at || '').startsWith(day)) || null;
-      const rep = mdFiles.find((f) => f.dateToken === day) || null;
+      // 报告归属: strict = 文件名以目标日开头 (e.g. 2026-09-19-blog-deepfix.md) -> 当权威证据;
+      // loose = 文件名含目标日 + 车道后缀 (e.g. 2026-09-18-daily-content.md) -> 仅参考证据,
+      //         两个条件必须同时满足, 否则 NONE (防 src/data 无关报告被误当本车道产物)。
+      const rep = mdFiles.find((f) => f.dateToken === day && (f.strict || f.loose)) || null;
       const hasRun = Boolean(rec) || ranOn.has(day);
 
       let status; const notes = [];
