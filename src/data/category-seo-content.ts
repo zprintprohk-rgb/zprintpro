@@ -534,7 +534,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
           heading: '3. High-Precision Output: 1440dpi Detail Without Loss',
           points: [
             'Epson SureColor large-format inkjet printers with up to 1440dpi resolution for rich color and detail.',
-            'Variable size output up to 3.2 meters wide, unlimited length —满足 building hoarding and other large-scale needs.',
+            'Variable size output up to 3.2 meters wide, unlimited length — meeting building hoarding and other large-scale needs.',
             'Free color proofing to ensure batch-to-batch color consistency.',
           ],
         },
@@ -2205,7 +2205,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         { name: '箔押し', description: '伝統工芸で金属光沢が季節感と高級感を演出。時代を超えた定番。' },
         { name: 'エンボス', description: 'インクなしでパターンや文字を立体的に表現。触感の記憶に残ります。' },
         { name: '立体加工', description: '3D立体効果で平面の红包を立体アートに。コレクション価値が極めて高い。' },
-        { name: 'レーザーカット', description: '細かな模様をレーザーで镂空。光が透過して幻想的な効果。高級カスタムに最適。' },
+        { name: 'レーザーカット', description: '細かな模様をレーザーでレーザーカット。光が透過して幻想的な効果。高級カスタムに最適。' },
         { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で、視覚的な層が豊か。' },
         { name: '香り付き印刷', description: '香りインクを使用。红包を開くと微かな花香が広がり、驚きの演出。' },
       ],
@@ -2785,7 +2785,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
           points: [
             '50 pcs minimum (digital printing) — perfect for startup brand prototyping and limited events.',
             'Variable data printing supported — each sticker can feature different serial numbers, barcodes, or names (personalized labels).',
-            'Precision die-cutting with fully customizable shapes: round, irregular,镂空.',
+            'Precision die-cutting with fully customizable shapes: round, irregular, laser-cut openwork.',
           ],
         },
         {
@@ -4603,7 +4603,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
           {
             heading: '3. DHL Global 2-4 Days + 5-Day Free Proofing',
             points: [
-              'Local SF Express 24h HK,離島 1-2 days, free pickup over HKD 500',
+              'Local SF Express 24h HK, outlying islands 1-2 days, free pickup over HKD 500',
               'International DHL 2-4 days to 50+ countries, real-time tracking + customs support',
               '5-day free proofing then formal order; Shenzhen in-house factory since 2008, quality guarantee',
             ],

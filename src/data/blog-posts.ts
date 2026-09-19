@@ -1831,7 +1831,7 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '學校練習簿/作業簿 100 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 认证体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
-    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 认证体系 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
+    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 9001 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
     ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. グローバル顧客. ISO + FSC + FDA + EU REACH.',
   },
   targetKeywords: {
