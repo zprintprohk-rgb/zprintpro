@@ -20,6 +20,7 @@
  */
 
 import type { Locale } from '@/types/locale';
+import { products } from '@/data/products';
 
 /**
  * 統一說明 · 一句話版（各頁通用短句）
@@ -266,6 +267,102 @@ export function isCrossCategoryPage(slugOrText: string): { cross: boolean; note?
   }
   return { cross: false };
 }
+
+/* ============================================================================
+ * D. 品類頁「場景卡片」起印量 SSoT (K3 2026-09-19 線上探針發現)
+ * ============================================================================
+ * 問題: 品類頁的場景卡片把起印量**硬編碼**在文案第三行, 與 `products.ts` 真值漂移:
+ *   · educational `graduation` 卡寫「100 本起」, 真值 50
+ *   · educational `certificates` 卡寫「50 張起」, 真值 100
+ *   (同頁 sku 卡「畢業紀念冊 全彩內頁 · 100 本起」同樣漂移)
+ *
+ * ⇒ 本節提供「由 SKU 真值渲染起印量文案」的唯一入口, 卡片只註冊 slug, 不再寫死數字。
+ * ★ 真值直接讀 `products.ts` 的 `minQuantity`（**不另設平行對照表**, 避免再次漂移）。
+ */
+
+/** 場景卡片 → 其起印量真值所屬的 SKU slug（只有需要顯示起印量的場景才註冊） */
+export const SCENE_MOQ_SOURCE: Record<string, string> = {
+  // educational 品類頁場景卡
+  graduation: 'graduation-yearbook',
+  certificates: 'certificates',
+  // books 品類頁場景卡
+  tutoring_textbook: 'textbooks',
+  // ⚠️ 未註冊者 = 該卡第三行**本來就沒有起印量宣稱**（如 educational `workbook` 是
+  //    「無線膠裝 · 封面燙金」純工藝描述）→ 不可註冊，否則會被改成純起印量而丟失工藝資訊。
+  //    注意 `workbook` 這個 key 在兩個組件中文案不同：CategorySharpHooks 版有「200 本起」
+  //    但那是另一份資料源（待收斂，見 docs 報告「雙資料源」項）。
+  // 其他品類頁若有同類卡片, 在此追加 slug 即可（組件無需改動）
+};
+
+/**
+ * 場景卡片第三行為「工藝 · 起印量 · 交期」複合句時，起印量前後要保留的文字。
+ *
+ * 為什麼需要: 部分卡片第三行是複合句（例 `無線膠裝 · 50 本起 · 7 天交貨`）。
+ *   若整行換成純起印量標籤，會連帶丟掉工藝與交期資訊 → 卡片資訊量下降。
+ * 處理: 有註冊者 → `前綴 · SSoT起印量 · 後綴`；未註冊者 → 整行僅 SSoT 起印量。
+ */
+const SCENE_MOQ_AFFIX: Record<
+  string,
+  { prefix?: { 'zh-hk': string; en: string; ja: string }; suffix?: { 'zh-hk': string; en: string; ja: string } }
+> = {
+  tutoring_textbook: {
+    prefix: { 'zh-hk': '無線膠裝', en: 'Perfect bound', ja: '無線綴じ' },
+    suffix: { 'zh-hk': '7 天交貨', en: '7-day delivery', ja: '7日納品' },
+  },
+  // 畢業紀念冊：原卡片第三行為「全彩內頁 · 100 本起」→ 保留「全彩內頁」
+  graduation: {
+    prefix: { 'zh-hk': '全彩內頁', en: 'Full-color', ja: 'フルカラー' },
+  },
+  // 獎狀證書：原卡片第三行為「A4 尺寸 · 50 張起」→ 保留「A4 尺寸」
+  //   註：起印量單位隨 SSoT SKU 口徑為「本」（證書屬本冊類），與原「張」不同屬**修正**
+  certificates: {
+    prefix: { 'zh-hk': 'A4 尺寸', en: 'A4 size', ja: 'A4サイズ' },
+  },
+};
+
+/**
+ * 由 SKU 真值渲染場景卡片第三行的起印量文案。
+ *
+ * @param sceneKey 場景卡片的 key（如 `graduation`）
+ * @param locale   語系
+ * @returns 起印量文案；該場景未註冊或 SKU 不存在時回傳 null（呼叫端保留原硬編碼文案）
+ *
+ * 單位一律取「張／枚」= sheets, 「本／冊」= books 的既有站上口徑：
+ *   graduation-yearbook / certificates / textbooks 皆為**本冊類**（本／冊／books）
+ */
+export function sceneMoqLabel(sceneKey: string, locale: Locale): string | null {
+  const slug = SCENE_MOQ_SOURCE[sceneKey];
+  if (!slug) return null;
+  const product = products.find((p) => p.slug === slug);
+  if (!product || typeof product.minQuantity !== 'number') return null;
+  const n = product.minQuantity;
+  switch (locale) {
+    case 'en':
+      return `From ${n} copies`;
+    case 'ja':
+      return `${n}冊から`;
+    default:
+      return `${n} 本起`;
+  }
+}
+
+/**
+ * 把場景卡片第三行換成由 SSoT 真值渲染的起印量。
+ * 卡片文案只有 2 行（無起印量宣稱）時**不追加**，維持原樣。
+ * 第三行為複合句（有註冊 affix）時保留工藝與交期，只換起印量。
+ *
+ * 分隔符依語系：zh-hk/ja 站上用「 · 」（全角中點 + 半角空格）為既有慣例。
+ */
+export function withSceneMoq(sceneKey: string, locale: Locale, lines: string[]): string[] {
+  if (lines.length < 3) return lines;
+  const label = sceneMoqLabel(sceneKey, locale);
+  if (!label) return lines;
+  const affix = SCENE_MOQ_AFFIX[sceneKey];
+  if (!affix) return [...lines.slice(0, 2), label];
+  const parts = [affix.prefix?.[locale], label, affix.suffix?.[locale]].filter(Boolean);
+  return [...lines.slice(0, 2), parts.join(' · ')];
+}
+
 
 /**
  * C. 海報按尺寸細分目標。

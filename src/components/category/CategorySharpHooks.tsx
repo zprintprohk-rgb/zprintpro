@@ -16,6 +16,7 @@
  */
 
 import { CATEGORY_INDUSTRIES, Locale } from '@/lib/seo';
+import { withSceneMoq } from '@/data/print-method-policy';
 
 // 与 CategoryIndustries.tsx 保持一致 — 复用同一份 scenario 数据
 // (简化版: 只取每类目前 3 个 Tier A 行业, 不重复维护数据)
@@ -346,7 +347,13 @@ export function CategorySharpHooks({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {top3.map((scenario, idx) => {
             const industryName = industries[idx] || '';
-            const scenarioLines = scenario.scenarios[locale] || scenario.scenarios['zh-hk'];
+            // 起印量一律由 SSoT（products.ts minQuantity）渲染，卡片不再硬編碼
+            // （per print-method-policy §D；修正本檔與 CategoryIndustries 兩份文案漂移）
+            const scenarioLines = withSceneMoq(
+              scenario.key,
+              locale,
+              scenario.scenarios[locale] || scenario.scenarios['zh-hk']
+            );
             return (
               <div
                 key={scenario.key}

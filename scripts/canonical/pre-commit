@@ -107,6 +107,31 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.6 门童 #22 MOQ 口径一致性闸门 (K3 2026-09-19 指令第 5 项: push 前硬闸门)
+# 编号: 现有最大为 #21 (rule-translation-guard), 故新门童取 #22
+# 背景: MOQ 文案散落在 5 个来源层 (products.ts / seo.ts / sku-seo-data.ts /
+#   products-content.ts / category-seo-content.ts), 此前靠人工巡检, 反复出现
+#   「改了 PDP 忘了品類頁」「zh 改了 en/ja 没改」→ 打地鼠。
+# 判据: 真值唯一定义 = src/data/products.ts 的 minQuantity (引擎实际输入);
+#   任何 SKU 上下文中的起印量数字与真值不符即 FAIL。
+# 设计: 已登录的「待 K3 裁决」项不阻挡 (否则 24 条存量会锁死全站 → 闸门必被绕过),
+#   只挡**未登录的新漂移**; 存量项一律在报告中显示为「📋 已登录」而非 ✓。
+# 实测耗时 0.8s, 可无条件执行。
+echo "3️⃣.6  门童 #22 MOQ 口径一致性闸门..."
+if command -v node &> /dev/null; then
+  npx tsx scripts/moq10-books-context-scan.ts --gate
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ 门童 #22 拦截: MOQ 口径漂移 (新漂移未清)"
+    echo ""
+    echo "💡 修法:"
+    echo "  1. 改文案对齐真值, 或改 src/data/products.ts 的 minQuantity (须 K3 裁決)"
+    echo "  2. 确属「待裁決」→ 登记进 scripts/moq10-books-context-scan.ts 的 PENDING_LIST (附理由)"
+    echo "  3. npx tsx scripts/moq10-books-context-scan.ts 复核"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

@@ -19,6 +19,7 @@
 
 import { Locale } from '@/lib/seo';
 import { resolveScenarioHref, getScenarioIndustryName } from '@/data/industry-scenario-links';
+import { withSceneMoq } from '@/data/print-method-policy';
 
 // ============================================================================
 // Industry Scenario Descriptions — 每个行业的典型场景 (per locale)
@@ -675,7 +676,8 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
   const sorted = [...scenarios].sort((a, b) => a.priority - b.priority);
   for (const scenario of sorted) {
     const industryName = getScenarioIndustryName(categorySlug, scenario.key, locale);
-    const scenarioLines = scenario.scenarios[locale] || [];
+    // 起印量一律由 SSoT（products.ts minQuantity）渲染，卡片不再硬編碼（per print-method-policy §D）
+    const scenarioLines = withSceneMoq(scenario.key, locale, scenario.scenarios[locale] || []);
     // 无行业名或无场景文案 → 不渲染 (宁缺毋滥: 不显示半成品卡片)
     if (!industryName || scenarioLines.length === 0) continue;
 
@@ -825,7 +827,8 @@ export function getIndustryCards(categorySlug: string, locale: Locale) {
   const sorted = [...scenarios].sort((a, b) => a.priority - b.priority);
   for (const scenario of sorted) {
     const industryName = getScenarioIndustryName(categorySlug, scenario.key, locale);
-    const scenarioLines = scenario.scenarios[locale] || [];
+    // 起印量一律由 SSoT（products.ts minQuantity）渲染（per print-method-policy §D）
+    const scenarioLines = withSceneMoq(scenario.key, locale, scenario.scenarios[locale] || []);
     if (!industryName || scenarioLines.length === 0) continue;
     cards.push({
       industryName,
