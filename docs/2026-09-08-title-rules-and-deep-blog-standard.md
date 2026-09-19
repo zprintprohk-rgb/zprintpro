@@ -39,12 +39,28 @@
 
 ## 0.3 字数分档（⏳ 待 K3 拍板，不得擅自执行）
 
-| 档 | 对象 | 目标值 | 门禁下限 | 状态 |
+| 档 | 对象 | 目标值 | 门禁下限（当季） | 状态 |
 |----|------|--------|----------|------|
-| Pillar | 5 大 Pillar（packaging-box-pricing-2026 / sticker-material-pvc-vinyl-removable / poster-printing-guide / campus-education-printing-pillar-guide / foil-stamping-3-applications-2026） | §3.1 现写 12,000 字 | **建议 6,000 字** | ⏳ **待拍板** |
+| Pillar | 5 大 Pillar（packaging-box-pricing-2026 / sticker-material-pvc-vinyl-removable / poster-printing-guide / campus-education-printing-pillar-guide / foil-stamping-3-applications-2026） | **12,000 字（长期差异化目标）** | **按季度 floor 执行，见下表 + `pillar-wordcount-targets.json`** | ✅ **已拍板 (K3 2026-09-19 决策一)** |
 | 标准深度篇 | T1/T2 锁词深度篇 | 6,000-9,000 字 | 6,000 字 | ✅ 与 §3.1 末句一致 |
 
-**为什么建议把门禁下限放到 6,000**：2026-09-19 实测 5 大 Pillar × 3 locale 去标签字数**无一 ≥6,100**（zh-hk 3,817 / 3,952 / 4,337 / 6,034 / 5,704）。门禁硬卡 12,000 会**长期报红**，最终被当噪音忽略 —— 正是 `.hermes/regression-guard/error-patterns.md`「接错门童 = 全站停摆」的反面。**未拍板前：门禁 `MIN_PILLAR_CHARS` 不动，本条只登记为待决项，执行层不得自行改门禁。**
+> **⚠️ 口径对齐（2026-09-19，消除 SSoT ↔ 门禁分叉）**：本表**已取代** §3.1 末句的「Pillar ≥12,000 字」硬线表述。
+> **唯一执行口径 = 季度递减目标制**，配置 SSoT = `.hermes/regression-guard/pillar-wordcount-targets.json`（`status: APPROVED`）：
+>
+> | 季度 | 门禁 floor（低于即 🔴 FAIL） | target（低于记 🟠 WARN） |
+> |------|------------------------------|--------------------------|
+> | 2026Q3 | 6,000 | 8,000 |
+> | 2026Q4 | 6,000 | 12,000 |
+> | 2027Q1 | 8,000 | 12,000 |
+> | 2027Q2 | 10,000 | 12,000 |
+> | 2027Q3+ | 12,000 | 12,000 |
+>
+> - 门禁实现 = `scripts/guards/blog-standard-guard.js` 的 `getPillarWordTarget()`；**改季度只改 JSON，不改代码**。
+> - **行业对标（K3 2026-09-19 评估）**：B2B pillar page 典型 2,500-4,000 词（部分指南 2,500-5,000 词）⇒
+>   6,000 字（≈3,000-4,000 词）与行业一致 = **交付底线**；8,000 字（≈4,000-5,000 词）＝有挑战的中间目标；
+>   12,000 字（≈6,000-8,000 词）**高于行业标准 = 差异化长期目标**，不是即时硬线。
+> - 实测现状（2026-09-19）：5 大 Pillar × 3 locale 去标签字数 zh-hk 3,817 / 3,952 / 4,337 / 6,034 / 5,704 —— 全数低于 2026Q3 target 8,000（🟠 WARN），0 条低于 floor 6,000（🔴 0）。
+> - **为什么不做 12,000 即时硬线**：存量全不达标 ⇒ 长期报红 ⇒ 红色被当噪音忽略（正是 §7.5「绝对基线」的同型失败）。
 
 ---
 
@@ -140,7 +156,13 @@
 
 **内联要求（贯穿全篇）**：语义锚点内链 **≥10 条**（Pillar 标准；普通深度篇 ≥7），锚文字 ≥5 字、描述性（禁"点击这里"）；hub-spoke 指向带钱落地页（每篇 ≥3 条指向 G1/G5 承接页）。
 
-**字数**：Pillar ≥12,000 字（门童 #12 `MIN_PILLAR_CHARS`）；标准深度 blog 6,000-9,000 字（6-9 个 H2 段，12 铁律中 Rule 1/2/3/9/10/12 同样适用）。
+**字数**：Pillar 字数**按季度递减目标制执行**（见 §0.3 表 + `.hermes/regression-guard/pillar-wordcount-targets.json`；长期目标 12,000 字，当季 floor 见配置）；标准深度 blog 6,000-9,000 字（6-9 个 H2 段，12 铁律中 Rule 1/2/3/9/10/12 同样适用）。
+
+**段 12（Schema）验收口径更新（2026-09-19 · FAQ 富结果已退役）**：
+- **Google 已退役 FAQ 富媒体结果**（2026 年 5 月起分阶段：可见富结果消失 → Search Console FAQ 报告与 Rich Results Test 支持结束 → API 支持移除；且早在 2023-08 就把 FAQ 富结果限制在政府/健康类权威站点，商业站可见收益三年前已消失）。
+- **但 FAQPage 标记本身完全有效**：仍是 Schema.org 合法类型；Google 明示「未使用/无奖励的结构化数据不会对站点造成问题」。**观众已换成** Bing、PerplexityBot 及各类 RAG 爬虫 —— 它们照常抓取 FAQPage。
+- ⇒ **验收口径**：`curl` 确认生成区含 FAQPage 仍然必要，但它验证的是「**AI 答案引擎可读层是否就绪**」，**不再关联「Google 是否展示富摘要」**（后者已不存在）。验收记录须写明这一行注释，避免后人误判「FAQPage 没带来富摘要 = 没生效」。
+- ⇒ **答案长度改写口径**：实测引用行为显示，**答案在 80-150 词区间**的结构化 FAQ 内容比 30 词级短答案更容易被 ChatGPT / Perplexity 引用。新写/补写 FAQ（B3 foil 批）按 **80-150 词**为目标区间；**存量短文 FAQ 不动**（churn 红线），仅在批次 D 升级时顺带扩写。
 
 ## 3.2 Schema 块（page.tsx SSoT 自动生成，content 内严禁内嵌）
 

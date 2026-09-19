@@ -1403,3 +1403,69 @@ en/ja 键位含中文（252 栏位）、**zh-hk 键位含简体字 90 栏位**�
 **同族规则**: `DOUBLE_METHOD_RECOUNT`（母规则）· `HREFLANG_FALSE_ALARM_MEASUREMENT_BUGS`（同源：探针自身 bug）· `TSC_ERROR_COUNT_DROP_IS_A_RED_FLAG`
 
 **配套**: AGENTS.md §0.23.2 三闸门 + 双方法复算铁律 · 本文件 `DOUBLE_METHOD_RECOUNT`
+
+---
+
+### 规则 SAFECOMMIT_ATOMIC — 非原子提交 = stage 污染 (K3 2026-09-19 评估, 立即生效)
+
+**事故形态（2026-09-19 本会话实测两次）**：多会话并发改同一仓库时，
+`git add` 与 `git commit` 之间的窗口会被别的会话/车道**插入 staged 文件**：
+- 事故 1：本批 commit 带进并发会话的 `scripts/gen-p0-title-batch.mjs`（当作**删除**提交）；
+- 事故 2：本批 commit 带进并发会话 staged 的 `scripts/guards/guard-manifest.json`（同样当作删除）。
+两次都改了别人的产物，只能事后 `git checkout HEAD --` 补回。
+
+**修法（原子提交，不依赖人的纪律）**：
+
+```bash
+# ✅ 正确: add 与 commit 在**同一条命令**内完成 —— 中间没有窗口给并发会话插入
+git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2> ...
+# （tracked-but-gitignored 的台账文件需先 `git add -f <path>`，再走上面的原子形式）
+
+# ❌ 反例: 先 git add a b c，再 git commit -m "..."   ← 两次事故的形态
+# ❌ 反例: git commit -a / git add -A → 必然吞掉并发会话的全部改动
+```
+
+**旁路配对规则（与门童 #22 配套，强制）**：凡不得已使用 `--no-verify`，
+必须**同时**设置唯一入口环境变量（不靠记忆写 footer）：
+
+```bash
+ZP_BYPASS_REASON="<为什么必须绕过>" git commit --no-verify -F <msgfile> -- <paths...>
+node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/regression-guard/bypass-audit.jsonl
+```
+
+**判据（自检三问，提交前必答）**：
+1. 我 `git commit` 带的 pathspec 是否**逐一列明**？（`-a` / `-A` / 无 pathspec 一律否）
+2. `git diff --cached --name-only` 是否**只剩我这批**的文件？（有别人的 ⇒ `git reset -q` 重来）
+3. 若用了 `--no-verify`，`ZP_BYPASS_REASON` 是否已设？（未设 ⇒ 台账记 `UNATTRIBUTED`，pre-push 门童 #22 会拦）
+
+**为什么不能只靠「先 reset 再显式 add」**：那仍是两步、仍有窗口，且**依赖人每次都记得**。
+原子形式把正确做法变成**一条命令**，错误做法才是需要多打字的那个 —— 与「bypass 入口要 awkward」同一设计原则。
+
+**同族规则**: `BYPASS_UNATTRIBUTED`（旁路留痕）· `RULE_TRANSLATION_MISSING`（治理机制失效）
+
+---
+
+### 规则 FAQPAGE_AUDIENCE_SHIFT — FAQPage 的「观众」已换, 验收口径必须更新 (K3 2026-09-19 评估)
+
+**外部事实变化**：Google 于 **2026-05 起分阶段退役 FAQ 富媒体结果**（可见富结果消失 → Search Console FAQ 报告与 Rich Results Test 支持结束 → API 支持移除）；且早在 **2023-08** 就把 FAQ 富结果限制在政府/健康类权威站点 —— **对商业站而言可见 SERP 收益三年前已消失**。
+
+**但标记本身仍然有效**：FAQPage 仍是 Schema.org 合法类型；Google 明示「未使用/无奖励的结构化数据不会对站点造成问题」。
+**观众已换成**：Bing、PerplexityBot 及各类为 AI 系统索引开放网络的 RAG 爬虫。
+
+**修法（口径三条）**：
+1. **验收措辞固定为**：「FAQPage 生成 = **AI 答案引擎可读层就绪**，不再关联 Google 富摘要」——
+   避免后人误判「加了 FAQPage 却没出富摘要 = 没生效」而回滚正确改动。
+2. **答案长度**：实测引用行为显示，答案在 **80-150 词**区间的结构化 FAQ 比 30 词级短答案更易被 ChatGPT / Perplexity 引用 ⇒
+   新写/补写 FAQ 按 80-150 词为目标区间；**存量短文不动**（churn 红线），仅在字数升级批次顺带扩写。
+3. **每页只应有一个 FAQPage**：多个实例 = `Duplicate field FAQPage`；
+   ⚠️ 因 FAQ 报告 2026-06 已结束，**GSC 可能不再报此错 ⇒ 必须自测**：
+   `node .hermes/_probe-pb/measure-live-faqpage.mjs`（按 `blog-content` 容器切分「生成区 / 注入区」分别计数）。
+
+**2026-09-19 实测基线（15 个 Pillar-locale 组合，有效样本 15/15）**：
+`DUPLICATE 12` / `SINGLE_INLINE_ONLY 3`（foil × 3）/ `NONE 0` / `INVALID 0`
+⇒ **重复标记问题在线上已存在**（生成区与内嵌区各 1 个 FAQPage），据此**提高内嵌 strip 优先级**；
+但 **foil × 3 的 FAQPage 只来自内嵌**（strip 会归零）⇒ foil 必须先补正文 FAQ 段（B3）再 strip。
+⇒ 附带确认：**B1 已达成** —— campus × 3 locale 线上生成区已有 FAQPage（各含 Question=5，证据 `.hermes/reports/b1-campus-live-faqpage-2026-09-19.json`）。
+
+**同族规则**: `SEG12_SCHEMA`（内嵌/生成重复）· `SEG9_FAQ_FORMAT`（FAQPage 静默丢失）
+

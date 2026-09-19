@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-09-19T12:21:56.625Z",
+ "slug": "campus-education-printing-pillar-guide",
+ "rows": [
+  {
+   "locale": "zh-hk",
+   "url": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+   "len": 193372,
+   "generated_faqpage": 1,
+   "generated_questions": 5,
+   "inline_faqpage": 1,
+   "verdict": "PASS_WITH_DUPLICATE",
+   "note": "FAQPage 生成 = AI 答案引擎可读层就绪, 不再关联 Google 富摘要"
+  },
+  {
+   "locale": "en",
+   "url": "https://zprintpro.com/en/blog/campus-education-printing-pillar-guide/",
+   "len": 231185,
+   "generated_faqpage": 1,
+   "generated_questions": 5,
+   "inline_faqpage": 1,
+   "verdict": "PASS_WITH_DUPLICATE",
+   "note": "FAQPage 生成 = AI 答案引擎可读层就绪, 不再关联 Google 富摘要"
+  },
+  {
+   "locale": "ja",
+   "url": "https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/",
+   "len": 196085,
+   "generated_faqpage": 1,
+   "generated_questions": 5,
+   "inline_faqpage": 1,
+   "verdict": "PASS_WITH_DUPLICATE",
+   "note": "FAQPage 生成 = AI 答案引擎可读层就绪, 不再关联 Google 富摘要"
+  }
+ ]
+}
