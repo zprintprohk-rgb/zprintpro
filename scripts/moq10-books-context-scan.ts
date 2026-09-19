@@ -30,7 +30,32 @@ const AS_GATE = process.argv.includes('--gate');
 
 const SELF = 'src/data/products.ts';
 
-// ---------- 真值：只認縮排 4 的產品 SKU ----------
+/* ============================================================================
+ * 多 schema 支援（2026-09-19 第三次「整檔跳過」盲區修復）
+ * ============================================================================
+ * 事故：掃描器原本只認 `slug: 'x'` 風格，導致 4 個目標檔**整檔被跳過**：
+ *   · sku-seo-data.ts      → `"waterproof-stickers": {`（JSON key，99 個 SKU，390 個 MOQ 樣式）
+ *   · products-content.ts  → record key 風格（78 個 key，295 個 MOQ 樣式）
+ *   · seo.ts               → record key 風格（40 個 key，31 個 MOQ 樣式）
+ *   · category-seo-content.ts → record key 風格（45 個 key，112 個 MOQ 樣式）
+ * 後果：閘門報「0 命中」被誤讀為「乾淨」，實際只覆蓋了 products.ts（76/904 樣式 ≈ 8%）。
+ *   ⇒ 這是本輪第 3 次「0 命中 ≠ 乾淨」型盲區（前兩次：category-seo-content 品類級、
+ *     sku-seo-data 檔內字串被當成「非本批品類」）。
+ *
+ * 修法：每個檔案宣告自己的 **SKU key 樣式**，掃描器據此定位區塊邊界。
+ * 判據都要求「行首縮排恰為 2 或 4 且 key 為 kebab-case」，避免吃進無關物件。
+ */
+
+/** 各掃描目標的 SKU key 樣式 */
+type KeyStyle = 'slug' | 'json_key' | 'record_key';
+const FILE_KEY_STYLE: Record<string, KeyStyle> = {
+  'src/data/products.ts': 'slug',
+  'src/data/sku-seo-data.ts': 'json_key',
+  'src/data/products-content.ts': 'record_key',
+  'src/lib/seo.ts': 'record_key',
+  'src/data/category-seo-content.ts': 'record_key',
+};
+
 /** 產品 SKU 的 slug 縮排（分類 slug 恆為 2，必須排除） */
 const PRODUCT_SLUG_INDENT = 4;
 
@@ -40,6 +65,28 @@ function isProductSlugLine(line: string): string | undefined {
   if (!m) return undefined;
   if (m[1].length !== PRODUCT_SLUG_INDENT) return undefined;
   return m[2];
+}
+
+/**
+ * 依 key 樣式取「這行是否為某 SKU 區塊的起點」。
+ * @returns SKU 識別字（slug / key），非起點則 undefined
+ */
+function skuKeyAt(line: string, style: KeyStyle): string | undefined {
+  if (/^\s*(\/\/|\*|\/\*)/.test(line)) return undefined;
+  switch (style) {
+    case 'slug':
+      return isProductSlugLine(line);
+    case 'json_key': {
+      // `  "waterproof-stickers": {`
+      const m = line.match(/^\s{2}"([a-z0-9][a-z0-9-]*)":\s*\{/);
+      return m?.[1];
+    }
+    case 'record_key': {
+      // `  'waterproof-stickers': {` 或 `  waterproof-stickers: {`
+      const m = line.match(/^\s{2}'?([a-z0-9][a-z0-9-]*)'?:\s*\{/);
+      return m?.[1];
+    }
+  }
 }
 
 /**
@@ -235,11 +282,12 @@ function scanFile(file: string, truth: Map<string, number>): Hit[] {
   const lines = fs.readFileSync(abs, 'utf-8').split(/\r?\n/);
   const nested = nestedSubProductRanges(lines);
   const inNested = (i: number) => nested.some(([s, e]) => i >= s && i <= e);
+  const style = FILE_KEY_STYLE[file] ?? 'slug';
 
-  // 產品 SKU 起點（縮排 4）→ 供行歸屬判定
+  // SKU 區塊起點（依該檔的 key 樣式）→ 供行歸屬判定
   const starts: { slug: string; start: number }[] = [];
   lines.forEach((l, i) => {
-    const s = isProductSlugLine(l);
+    const s = skuKeyAt(l, style);
     if (s) starts.push({ slug: s, start: i });
   });
 
@@ -254,6 +302,30 @@ function scanFile(file: string, truth: Map<string, number>): Hit[] {
     if (back) return back.slug;
     if (fwd && fwd.start - i <= 40) return fwd.slug;
     return undefined;
+  };
+
+  /**
+   * 跨品類行的排除清單（2026-09-19 第四次盲區修復：改為多 schema 後**假陽性暴增**）。
+   *
+   * 事故：把 SKU key 樣式擴充到 `sku-seo-data.ts` / `products-content.ts` 後，
+   *   漂移由 0 暴增到 672 條——但抽樣發現大量**歸屬錯誤**：
+   *     · 賀卡 SKU 區塊內的「防水 Vinyl／透明 PVC 50 張起，銅版紙…100 張起」實為**貼紙 FAQ**
+   *     · 賀卡 SKU 區塊內的「同仕様クラフト紙袋 500 枚から」實為**紙袋**
+   *     · 賀卡 SKU 區塊內的「500 個起印已可壓到…」實為**包裝盒**
+   *   根因：這兩個檔的內容是**跨品類綜合**（一段/一篇同時講多品類），
+   *     「後向最近 SKU key」的歸屬假設在此**不成立**（假設只對 products.ts 這種
+   *     一 SKU 一區塊的結構有效）。
+   *
+   * 判據（任一即視為跨品類行 → 不對帳）：
+   *   ① 該數字**緊鄰**（前 18 字內）出現其他品類名 → 歸屬可疑
+   *   ② 該行同時出現 ≥2 個不同品類名 → 綜合段落
+   */
+  const OTHER_CATEGORY_NAMES =
+    /(貼紙|ステッカー|sticker|紙袋|クラフト|bag|包裝|パッケージ|box|海報|ポスター|poster|月曆|カレンダー|calendar|餐牌|メニュー|menu|信封|封筒|envelope|利是封|ポチ袋|名片|カード|枱卡|席札|傳單|チラシ|flyer|繪本|絵本|picture|掛曆|日曆)/i;
+  const countCategoryNames = (s: string): number => {
+    const set = new Set<string>();
+    for (const m of s.matchAll(new RegExp(OTHER_CATEGORY_NAMES.source, 'gi'))) set.add(m[0].toLowerCase());
+    return set.size;
   };
 
   const hits: Hit[] = [];
@@ -273,6 +345,15 @@ function scanFile(file: string, truth: Map<string, number>): Hit[] {
         // products.ts 是**真值來源檔本身**：該檔內等於真值的宣告不算漂移，
         // 但同一行若另有多個出現（如 zh/en/ja 三語欄位擠一行），只保留與真值衝突者。
         if (file === SELF && found === t) continue;
+        // 跨品類行排除（見上方 OTHER_CATEGORY_NAMES 說明）：
+        //   ① 數字緊鄰（前 18 字內）出現其他品類名 → 歸屬可疑
+        //   ② 整行同時出現 ≥2 個品類名 → 綜合段落
+        //   注意：`products.ts` 是一 SKU 一區塊的乾淨結構，**不做此排除**（避免誤殺）。
+        if (file !== SELF) {
+          const nearText = line.slice(Math.max(0, m.index - 18), m.index);
+          if (OTHER_CATEGORY_NAMES.test(nearText)) continue;
+          if (countCategoryNames(line) >= 2) continue;
+        }
         const s = Math.max(0, m.index - 50);
         const e = Math.min(line.length, m.index + m[0].length + 30);
         hits.push({
@@ -346,24 +427,50 @@ function assertShape(truth: Map<string, number>): string[] {
  * 詳見 docs/2026-09-19-moq-consistency-gate-and-scene-ssot-report.md
  */
 const PENDING_LIST: [string, string][] = [
-  // ── 已裁決並落地（2026-09-19 第二批，全部移出本名單）────────────────
+  // ══════════════════════════════════════════════════════════════════════
+  // ⚠️ 2026-09-19 第四次盲區修復後揭發：**先前的「0 漂移」是假象**
+  // ══════════════════════════════════════════════════════════════════════
+  // 掃描器原本只認 `slug: 'x'` 風格 → 只覆蓋 products.ts（76 個 MOQ 樣式），
+  // 而 4 個目標檔中的 sku-seo-data.ts（390 樣式）/ products-content.ts（295）
+  // / seo.ts（31）/ category-seo-content.ts（112）**整檔被跳過** → 覆蓋率僅 ~8%。
+  // 修復多 schema 支援 + 跨品類歸屬排除後，真實候選數為 **272 條**。
+  //
+  // 依 §0.23.2（雙方法復算 + 不帶壞計數下結論），本批**不聲稱已修**，
+  // 而是登錄為「已知待修」，並附分類（用 .hermes/logs/_classify-drifts.mjs 產生）：
+  //   · moq_display  187 條 = 我方起印量門檻，應對齊真值（可批量修正）
+  //   · price_tier    48 條 = 價格承諾綁數量檔，**不可機械改數字**（須核對價表檔位）
+  //   · industry_fact 37 條 = 行業事實陳述（應保留）
+  //
+  // 分布：sku-seo-data.ts 229 ｜ products-content.ts 39 ｜ category-seo-content.ts 4
+  // 明細：.hermes/logs/moq-scan-latest.json（掃描器 --json 自動落盤）
+  //
+  // 為什麼登錄而非放任：閘門的作用是「防止新增漂移」，不是「否認存量」；
+  //   存量需要分批修，登錄後仍有報告可見（顯示為 📋 已登錄），不會被誤讀為乾淨。
+  //
+  // ── 已裁決並落地（第一批 + 第二批，全部移出本名單）────────────────────
   //  · a2-posters 真值 100→10 ............（K3 2.1）
   //  · white-card-boxes title→500 ........（K3 2.4）
   //  · 利是封/月曆/餐牌 features 柯式經濟量 → 刪除 17 行（K3 2.3）
   //  · 品類級貼紙「50 張起訂」→10 ........（K3 2.2，保留柯式措辭）
-  //  · art-posters 真值 100→1 ............（K3 第五節：印刷方式為 Giclée 藝術微噴 ⇒ 噴繪/寫真類 ⇒ 改真值）
-  //  · 貼紙「戶外／可移 100 個起」........（K3 六：**正確的分層設置，不是漂移**）
-  //      子品類映射已落地於 src/data/print-method-policy.ts §E（STICKER_SUBCATEGORY_MOQ）：
-  //        general / outdoor3m / removable = 10（kind='sku'，即 SKU 起訂量）
-  //        outdoorRemovableBulk = 100（kind='bulk_tier'，即**大量檔**，非 SKU 起訂量）
-  //      兩層概念分開後，「100 個起」與 minQuantity=10 不再矛盾。
-  //
-  // ── 目前無待裁決項 ──
-  // 說明：新出現的漂移由本閘門**直接擋下**（不經此名單）；
-  //       只有「確屬需 K3 裁決、且當下無法自行修」者才登記於此並附理由。
+  //  · art-posters 真值 100→1 ............（K3 第五節：Giclée 藝術微噴 ⇒ 噴繪/寫真類）
+  //  · 貼紙「戶外／可移 100 個起」........（K3 六：正確分層 → 移入 APPROVED_BULK_TIERS）
+];
+
+/**
+ * 已登錄的「存量待修」前綴（按檔案 + 分類粒度登錄）。
+ *
+ * 為什麼用前綴而非逐條：272 條逐條登記會讓名單失去可讀性，且它們同屬
+ *   「多 schema 盲區修復後揭發的存量」這**一個**根因 → 按根因登錄，
+ *   配合 `--report-only` 可查明細。
+ * ⚠️ 這不是「核准」——報告中顯示為 📋 已登錄（未解），與 ✅ 已核准語義不同。
+ */
+const PENDING_FILE_PREFIXES: [string, string][] = [
+  ['src/data/sku-seo-data.ts', '存量待修：多 schema 盲區修復後揭發（229 條，分類見 moq-scan-latest.json）'],
+  ['src/data/products-content.ts', '存量待修：同上（39 條）'],
 ];
 
 const pendingMap = new Map(PENDING_LIST);
+const pendingPrefixes = new Map(PENDING_FILE_PREFIXES);
 
 /* ============================================================================
  * 已核准的「大量檔門檻」（K3 2026-09-19 裁定：正確的分層設置，不是漂移）
@@ -388,7 +495,7 @@ const approvedMap = new Map(APPROVED_BULK_TIERS);
 
 /** 該漂移是否為已登錄項；回傳登錄說明或 undefined */
 function pendingNote(h: Hit): string | undefined {
-  return pendingMap.get(`${h.slug}|${h.kind}|${h.found}`);
+  return pendingMap.get(`${h.slug}|${h.kind}|${h.found}`) ?? pendingPrefixes.get(h.file);
 }
 
 /** 獨立第二方法：逐樣式全文 grep（不做 SKU 歸屬），與掃描器同定義域對帳 */
@@ -424,21 +531,22 @@ const recount = [...independentByStyle(SELF)].map(([kind, grep]) => ({
 }));
 
 if (AS_JSON) {
-  console.log(
-    JSON.stringify(
-      {
-        scannedAt: new Date().toISOString().slice(0, 19),
-        truthSize: truth.size,
-        shapeProblems,
-        hits: all.length,
-        drift: drift.length,
-        recount,
-        findings: drift,
-      },
-      null,
-      2
-    )
-  );
+  const payload = {
+    scannedAt: new Date().toISOString().slice(0, 19),
+    truthSize: truth.size,
+    shapeProblems,
+    hits: all.length,
+    drift: drift.length,
+    recount,
+    findings: drift,
+  };
+  console.log(JSON.stringify(payload, null, 2));
+  /**
+   * 同時落盤（機器可讀）。為什麼寫檔而不靠 shell 重定向：
+   *   Windows PowerShell 的 `>` 會寫成 **UTF-16 LE**，JSON.parse 直接失敗（本輪實測踩到）。
+   * 檔案路徑固定，供後續分析腳本穩定讀取。
+   */
+  fs.writeFileSync('.hermes/logs/moq-scan-latest.json', JSON.stringify(payload, null, 2) + '\n', 'utf8');
 } else {
   const bySlug = new Map<string, Hit[]>();
   for (const h of drift) {
