@@ -119,16 +119,40 @@ withSceneMoq()     // 替換卡片第三行；2 行文案不追加；複合句�
 
 ---
 
-## 六、待 K3 裁決（33 條，閘門已登錄、不阻擋）
+## 六、待 K3 裁決 → **已獲裁決並執行**（2026-09-19 第二批）
 
-| 類別 | 條數 | 矛盾 | 需裁決 |
-|------|------|------|--------|
-| **海報真值** | 4 | `a2-posters` 真值 100 但文案「10張起印」（`price-tables` 價階由 10 起）；`art-posters` 真值 100 但文案「1張起印」 | 以價格表還是 `minQuantity` 為真值？（A1 已定 1 張） |
-| **品類級段落**（貼紙） | 9 | `category-seo-content.ts` 貼紙品類頁寫「50 個起印 / 50 張起訂 / 100 pcs MOQ」，貼紙真值已 10 | 文案是「50 張起（數碼）+ 1,000 張以上柯式更經濟」的**完整階梯**，改成 10 須同時確認柯式門檻措辭 |
-| **features 口徑** | 6 | 利是封 `【500個起訂】` vs 真值 100 | 「柯式經濟量」是否應寫進 features？ |
-| **features 口徑** | 6 | 月曆 `【500本起印】` vs 真值 1000 | 同上 |
-| **features 口徑** | 5 | 餐牌 `【50本起訂】` vs 真值 100；且文案自相矛盾（「50本起訂」+「小批量數碼」） | 同上 |
-| **title 矛盾** | 1 | `white-card-boxes` title「100個起印」vs 真值 500 | 改 title 還是改真值？ |
+K3 對 33 條出具分析與建議後，本輪逐項落地：
+
+| K3 裁定 | 落地 | 狀態 |
+|---------|------|------|
+| **2.1** `a2-posters` 真值 100→**10**（產品層真值衝突，非文案漂移；A2 銅版紙屬標準數碼，10 張技術可行；屬 A1 獨立時遺漏的 A2 處理） | `minQuantity: 100 → 10` | ✅ |
+| **2.4** `white-card-boxes` title「100個起印」→「**500**個起印」 | title 對齊真值 | ✅ |
+| **2.3** features 的「柯式經濟量」**不寫入**（屬採購決策輔助資訊，非產品特點；與 `getPrintMethodAdvice()` 冗餘） | **刪除 17 行**（利是封 6 / 月曆 6 / 餐牌 5） | ✅ |
+| **2.2** 品類級段落「50 張起訂」→「**10** 張起訂」，**保留柯式措辭**（柯式 1,000 張門檻屬行業慣例，不改） | 6 處（zh/en featuredSnippet + h2 / paragraphs / buyersGuide / FAQ） | ✅ |
+| **四** 5 次指標踩坑固化為規則 | `error-patterns.md` 新增 `METRIC_INTEGRITY_FIVE_TRAPS` | ✅ |
+| **三** 雙資料源收斂 | 等價性驗證後判定**不能直接收斂**（見 §六之二） | ⚠️ 待裁決 |
+
+**漂移數：33 → 6**。剩餘 6 條 = `art-posters` 2 條（真值 100 vs 文案「1張起印」，K3 未裁決）
++ 貼紙「戶外／可移貼紙 **100** 個起」4 條（真值 100 而非 10，與 K3 授權的「50→10」不同性質，待議）。
+
+### 六之二、雙資料源收斂：驗證後發現**不能直接收斂**（K3 第三項）
+
+K3 判此為「比 33 條更嚴重的架構風險」，建議收斂為單一來源。我先做**等價性驗證**：
+`CategorySharpHooks` 用 `CATEGORY_INDUSTRIES[slug][locale][idx]` 取行業名，idx 來自其**自己那份**
+場景資料的順序 → 若直接改成 import 而順序不同，會造成**行業名與文案錯配**（比數字錯更嚴重）。
+
+**驗證結果：6 個可比類別中 4 個不一致**，且分歧不只順序：
+
+| 類別 | SharpHooks | CategoryIndustries | 性質 |
+|------|-----------|-------------------|------|
+| `stickers` | pet_food, beauty, ecommerce | pet_food, **pharma**, beauty | 順序 + tier B 混入 |
+| `posters` | retail, exhibition, **restaurant** | retail, exhibition, **property** | **第 3 條內容不同** |
+| `banners` | exhibition, outdoor, mall | **trade_show, outdoor_ad, auto_showroom** | **key 完全不同** |
+| `envelopes` | corporate, finance, school | **corp_business, finance_mail, school_notice** | key 命名分歧 |
+| `business-cards` | 有（birthday/holiday/thankyou） | **無此類別** | 孤兒資料 |
+
+**結論**：收斂需先裁決「哪份為權威」，且 `banners` / `envelopes` 需先做 key 對齊映射。
+因涉及客戶可見的行業映射，**不擅自裁決**。完整清單與證據：`.hermes/logs/_verify-datasource-equivalence.mjs`。
 
 ### 品類級盲區（本輪最重要的方法論發現）
 
