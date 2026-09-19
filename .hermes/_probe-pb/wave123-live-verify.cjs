@@ -24,15 +24,18 @@ const STAY = {
 };
 
 // 抽样 URL: 覆盖波 1/2/3 改动的重灾文章与页面
+// ⚠️ slug 必须来自**数据实际键名** (不猜): 经 _locate-probe-slugs.cjs 核实
 const URLS = [
   ['en', '/en/blog/hong-kong-printing-guide/'],
   ['en', '/en/blog/candle-soap-label-printing-guide/'],
   ['en', '/en/blog/school-exercise-book-printing-guide/'],
-  ['en', '/en/blog/campus-education-printing-guide/'],
+  ['en', '/en/blog/campus-education-printing-pillar-guide/'],
   ['en', '/en/blog/tea-beverage-gift-box-printing-guide/'],
+  ['en', '/en/blog/restaurant-menu-printing-guide/'],
   ['en', '/en/product/kraft-paper-bags/'],
   ['ja', '/ja/blog/hong-kong-printing-guide/'],
   ['ja', '/ja/blog/candle-soap-label-printing-guide/'],
+  ['ja', '/ja/blog/paper-materials/'],
   ['ja', '/ja/product/kraft-paper-bags/'],
 ];
 
