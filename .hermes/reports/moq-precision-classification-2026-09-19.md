@@ -1,8 +1,8 @@
 # 门童 #24 命中精度分类 (2026-09-19)
 
-校准日期: 2026-09-19 15:49 UTC
+校准日期: 2026-09-19 16:06 UTC
 
-> 输入: `.hermes/logs/moq-scan-latest.json` (数组键 `findings`, 命中 **292** 条)
+> 输入: `.hermes/logs/moq-scan-latest.json` (数组键 `findings`, 命中 **331** 条)
 > 规则: K3 2026-09-19: LOCALE_SPECIFIC_KEEP (同locale≥5一致) / NO_MOQ_HOOK (产品线自证) / TRUE_DRIFT / MANUAL_REVIEW (不猜)
 > **纪律: 无法自动判定一律落 MANUAL_REVIEW, 不猜** (§0.23.2)
 
@@ -10,12 +10,12 @@
 
 | 类别 | 条数 | 门禁行为 |
 |---|---|---|
-| TRUE_DRIFT | 23 | **阻断, 须修** |
-| MANUAL_REVIEW | 6 | 人工过目 (不阻塞其他批次) |
+| TRUE_DRIFT | 24 | **阻断, 须修** |
+| MANUAL_REVIEW | 9 | 人工过目 (不阻塞其他批次) |
 | LOCALE_SPECIFIC_KEEP | 7 | 已核准桶, 不阻断 |
-| NO_MOQ_HOOK | 2 | 已核准桶, 生成器不发 MOQ 钩子 |
+| NO_MOQ_HOOK | 3 | 已核准桶, 生成器不发 MOQ 钩子 |
 
-## TRUE_DRIFT (23)
+## TRUE_DRIFT (24)
 
 | slug | locale | 类别 | 声称 | 真值 | 行 | 理由 |
 |---|---|---|---|---|---|---|
@@ -41,17 +41,21 @@
 | school-flyers | ja | educational | 100 | 10 | 2858 | 声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移 |
 | textbooks | ja | educational | 50 | 100 | 2900 | 声称 50 != 真值 100; 无产品线自证、簇内一致 <4 ⇒ 判漂移 |
 | premium-greeting-cards | zh-hk | greeting-cards | 100 | 10 | 3423 | ★ 4593937c 第一波明列「紙品線 (傳單/貼紙/賀卡) 100→10」⇒ 賀卡真值 10, 标题 100 为残留 |
+| premium-greeting-cards | en | greeting-cards | 100 | 10 | 3430 | ★ 4593937c 第一波明列「紙品線 (傳單/貼紙/賀卡) 100→10」⇒ 賀卡真值 10, 标题 100 为残留 |
 | premium-greeting-cards | ja | greeting-cards | 100 | 10 | 3437 | ★ 4593937c 第一波明列「紙品線 (傳單/貼紙/賀卡) 100→10」⇒ 賀卡真值 10, 标题 100 为残留 |
 
-## MANUAL_REVIEW (6)
+## MANUAL_REVIEW (9)
 
 | slug | locale | 类别 | 声称 | 真值 | 行 | 理由 |
 |---|---|---|---|---|---|---|
 | spot-uv-greeting-cards | zh-hk | greeting-cards | 100 | 10 | 3582 | 同簇 (greeting-cards/zh-hk) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
+| spot-uv-greeting-cards | en | greeting-cards | 100 | 10 | 3589 | 同簇 (greeting-cards/en) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 | spot-uv-greeting-cards | ja | greeting-cards | 100 | 10 | 3596 | 同簇 (greeting-cards/ja) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 | matte-greeting-cards | zh-hk | greeting-cards | 100 | 10 | 3631 | 同簇 (greeting-cards/zh-hk) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
+| matte-greeting-cards | en | greeting-cards | 100 | 10 | 3638 | 同簇 (greeting-cards/en) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 | matte-greeting-cards | ja | greeting-cards | 100 | 10 | 3645 | 同簇 (greeting-cards/ja) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 | rounded-corner-greeting-cards | zh-hk | greeting-cards | 100 | 10 | 3680 | 同簇 (greeting-cards/zh-hk) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
+| rounded-corner-greeting-cards | en | greeting-cards | 100 | 10 | 3687 | 同簇 (greeting-cards/en) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 | rounded-corner-greeting-cards | ja | greeting-cards | 100 | 10 | 3694 | 同簇 (greeting-cards/ja) 4/6 条一致声称 100 (≥4) 但与真值 10 冲突 ⇒ 无法自动判定是簇内固有口径还是历史错值, **须人工过目** |
 
 ## LOCALE_SPECIFIC_KEEP (7)
@@ -66,9 +70,10 @@
 | same-day-flyers | ja | flyers | 100 | 10 | 923 | 同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市场/产品线级约定 |
 | eco-flyers | ja | flyers | 100 | 10 | 965 | 同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市场/产品线级约定 |
 
-## NO_MOQ_HOOK (2)
+## NO_MOQ_HOOK (3)
 
 | slug | locale | 类别 | 声称 | 真值 | 行 | 理由 |
 |---|---|---|---|---|---|---|
 | small-batch-stickers | zh-hk | stickers | 50 | 10 | 168 | 人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU 自身即小批量产品线, 50 为产品线口径而非品类漂移 (与 resolve-moq-conflicts.mjs 的 ATTESTED 同源) |
+| small-batch-stickers | en | stickers | 50 | 10 | 175 | 人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU 自身即小批量产品线, 50 为产品线口径而非品类漂移 (与 resolve-moq-conflicts.mjs 的 ATTESTED 同源) |
 | small-batch-stickers | ja | stickers | 50 | 10 | 184 | 人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ for the small-batch line」⇒ 该 SKU 自身即小批量产品线, 50 为产品线口径而非品类漂移 (与 resolve-moq-conflicts.mjs 的 ATTESTED 同源) |

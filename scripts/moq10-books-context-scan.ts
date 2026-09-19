@@ -155,6 +155,15 @@ const MOQ_PATTERNS: { re: RegExp; kind: string; lang: string }[] = [
   // en 的 MOQ 有多種寫法：`100 MOQ`（數字+空格+MOQ）與 `100 sheets MOQ`（數字+單位詞+MOQ）。
   // 只寫前者會漏掉後者（實測 L8309 `100 sheets MOQ` 即被漏）。
   { re: /(?:^|[^\d,])(\d+)[ \t]+(?:[A-Za-z]{3,12}[ \t]+)?(?:MOQ|Copies|copies)\b/g, kind: 'en_MOQ', lang: 'en' },
+  // ★ 2026-09-19 模式集补漏之二 (K3 决策 4.1「配对 commit」: 模式 + 注册 + 分层, 三者不可拆分)
+  //   缺口: 上一模式要求 MOQ/Copies, 但本站 en 标题大量使用 **`100pcs` / `50 pcs`** 形态
+  //   (例 `Premium Greeting Cards 100pcs Foil & UV`) ⇒ 全部 en 模式零命中
+  //   ⇒ small-batch-stickers + 4 个 greeting-cards 的 **en 行**在门童侧不可见 (两法行键差 5)。
+  //   数字要求 **≥2 位**: 排除套装件数式 «6 Pcs» (单数字必为件数/规格, 非起订量) ——
+  //   与 classify-moq-precision.mjs / resolve-moq-conflicts.mjs 的 en 判据完全一致, 保证两法同源。
+  //   ⚠️ 该模式同时命中非标题语境 (方法档位/产品文案) ⇒ 必须在**同一 commit** 内配套登记,
+  //      否则门童由 PASS 翻 🔴 (2026-09-19 首次试扩即踩, 已回退一次; 本次成对上台)。
+  { re: /(?<![A-Za-z0-9,])(\d{2,})\s*pcs\b/g, kind: 'en_pcs', lang: 'en' },
   // ⚠️ 2026-09-19 **已回退**: 曾加 `en_pcs`（`N pcs`，为关闭两法与 5 行 en 标题差）——
   //   实测该模式把门童的判定面扩进**品类级 FAQ 的方法档位语句**与新产品段，
   //   连续揭发 `catalog-printing products.ts:5754 (100)` / `category-seo-content.ts:2769 (100)×2` /
@@ -484,8 +493,20 @@ const PENDING_LIST: [string, string][] = [
   //  · 品類級貼紙「50 張起訂」→10 ........（K3 2.2，保留柯式措辭）
   //  · art-posters 真值 100→1 ............（K3 第五節：Giclée 藝術微噴 ⇒ 噴繪/寫真類）
   //  · 貼紙「戶外／可移 100 個起」........（K3 六：正確分層 → 移入 APPROVED_BULK_TIERS）
-  //  ⚠️ 2026-09-19: `en_pcs` 模式已回退（見 MOQ_PATTERNS 註解），故隨之的 2 條
-  //     「方法檔位」登記一併移除，避免留下**幽靈登記**（名單有、實際無命中）。
+  //
+  // ── 2026-09-19 配对 commit：`en_pcs` 模式配套登记（模式 + 注册 + 分层, **三者同 commit**）──
+  //  登錄理由同本名單既有口徑：閘門的作用是「防止新增漂移」, 不是「否認存量」;
+  //  登錄後仍以 📋 已登錄 顯示, 不會被誤讀為乾淨。
+  //  三條均**不自行核准**（核准權在 K3）, 故入 PENDING 而非 APPROVED：
+  //   ① catalog-printing（products.ts:5754）「ZprintPro bulk MOQ 100 pcs for catalog book printing」
+  //      真值 10; 含 "bulk" 字樣 ⇒ 疑為大量檔口徑（同 3M 貼紙案）, 待 K3 定是否屬分層。
+  //   ②〔品類級〕stickers:2860「50 pcs (digital printing). 1,000+ pcs recommended for offset」
+  //   ③〔品類級〕stickers:2867「Same-day digital printing (50–500 pcs)」
+  //      ②③ 實為**數碼 vs 柯式的方法門檻/交期說明**（本掃描器既有分類 industry_fact）,
+  //      非 SKU 起訂量 ⇒ 待 K3 確認歸類。
+  [`catalog-printing|en_pcs|100`, '待裁決：含 "bulk" 字樣（products.ts:5754），疑為大量檔口徑而非 SKU 起訂量 → 須 K3 定是否屬分層'],
+  [`〔品類級〕stickers|en_pcs(品類級)|50`, '待裁決：數碼 vs 柯式方法門檻說明（category-seo-content.ts:2860 FAQ），非 SKU 起訂量 → 待 K3 確認歸 industry_fact'],
+  [`〔品類級〕stickers|en_pcs(品類級)|500`, '待裁決：即日數碼 50–500 pcs 交期說明（category-seo-content.ts:2867），同前一條'],
 ];
 
 /**
@@ -521,6 +542,11 @@ const APPROVED_BULK_TIERS: [string, string][] = [
   //   = 大量檔（bulk_tier），非 SKU 起訂量（SKU 皆 10）
   [`〔品類級〕stickers|zh_個起(品類級)|100`, 'K3 裁定：3M 戶外貼／可移貼需更高門檻 → 大量檔 100（非 SKU 起訂量）'],
   [`〔品類級〕stickers|en_MOQ(品類級)|100`, '同上（en：outdoor vinyl / removable stickers 100 pcs MOQ）'],
+  // ★ 2026-09-19 配对 commit: `en_pcs` 模式上线后, **同一句已核准语句**以新 kind 再次命中
+  //   (category-seo-content.ts:2769「outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ」)。
+  //   判据: kind 只是**抽取模式**的标签, 不改变语句语义 ⇒ 同句沿用 K3 原裁定 (3M 戶外貼／可移貼大量檔 100),
+  //   属**已核准分層**, 不是新问题。若不登记, 同一句话会因「换了正则」而被重复计为新漂移。
+  [`〔品類級〕stickers|en_pcs(品類級)|100`, '同 en_MOQ(品類級)|100：同一句「outdoor vinyl / removable stickers 100 pcs MOQ」，沿用 K3「3M 戶外貼／可移貼大量檔 100」裁定'],
 ];
 
 const approvedMap = new Map(APPROVED_BULK_TIERS);
