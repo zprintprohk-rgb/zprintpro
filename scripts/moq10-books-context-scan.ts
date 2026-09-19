@@ -90,15 +90,15 @@ function readTruth(): Map<string, number> {
  *     「0.5-1.0mm PVC (MOQ 100)」的 `1.0` / `2.2起/個` 的 `2` 都會被當成 MOQ。
  */
 const MOQ_PATTERNS: { re: RegExp; kind: string; lang: string }[] = [
-  { re: /(\d+)\s*本\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_本起', lang: 'zh' },
-  { re: /(\d+)\s*張\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_張起', lang: 'zh' },
-  { re: /(\d+)\s*個\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_個起', lang: 'zh' },
-  { re: /(\d+)\s*份\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_份起', lang: 'zh' },
-  { re: /(\d+)\s*枚\s*(?:から|〜|~)/g, kind: 'ja_枚から', lang: 'ja' },
-  { re: /(\d+)\s*冊\s*(?:から|〜|~)/g, kind: 'ja_冊から', lang: 'ja' },
+  { re: /(?:^|[^\d,])(\d+)\s*本\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_本起', lang: 'zh' },
+  { re: /(?:^|[^\d,])(\d+)\s*張\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_張起', lang: 'zh' },
+  { re: /(?:^|[^\d,])(\d+)\s*個\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_個起', lang: 'zh' },
+  { re: /(?:^|[^\d,])(\d+)\s*份\s*起(?:印|訂)?(?!\s*\/)/g, kind: 'zh_份起', lang: 'zh' },
+  { re: /(?:^|[^\d,])(\d+)\s*枚\s*(?:から|〜|~)/g, kind: 'ja_枚から', lang: 'ja' },
+  { re: /(?:^|[^\d,])(\d+)\s*冊\s*(?:から|〜|~)/g, kind: 'ja_冊から', lang: 'ja' },
   // en 的 MOQ 有多種寫法：`100 MOQ`（數字+空格+MOQ）與 `100 sheets MOQ`（數字+單位詞+MOQ）。
   // 只寫前者會漏掉後者（實測 L8309 `100 sheets MOQ` 即被漏）。
-  { re: /(\d+)[ \t]+(?:[A-Za-z]{3,12}[ \t]+)?(?:MOQ|Copies|copies)\b/g, kind: 'en_MOQ', lang: 'en' },
+  { re: /(?:^|[^\d,])(\d+)[ \t]+(?:[A-Za-z]{3,12}[ \t]+)?(?:MOQ|Copies|copies)\b/g, kind: 'en_MOQ', lang: 'en' },
 ];
 
 const TARGETS = [
@@ -120,6 +120,82 @@ type Hit = {
    *  真正的漂移欄位可能在行內 700+ 字元處，只看行首會誤判成「行首欄位漂移」） */
   text: string;
 };
+
+/**
+ * 品類級段落掃描（第二類判定域）。
+ *
+ * ⚠️ 為什麼需要（2026-09-19 發現的**重大盲區**）：
+ *   `category-seo-content.ts` 的品類級文案（h2 / heading / paragraphs / buyersGuide
+ *   / specs / FAQ）**不含任何 SKU slug**，因此 `scanFile()` 的 SKU 歸屬判定會把
+ *   整個檔案跳過 → 該檔永遠報 0 命中。
+ *   實測：貼紙品類段落有 8 處寫「50 張起訂 / 50 個起印」，而貼紙真值已改 **10**，
+ *   掃描器卻完全看不到 → **「0 命中」是假象，不是乾淨**。
+ *
+ * 判據：以「檔案內文出現的品類關鍵詞」推導預期門檻，非以 slug 歸屬。
+ *   只檢查**明確品類**的段落；跨品類綜合段（同時提多品類）留待人工。
+ */
+const CATEGORY_LEVEL_TARGETS: {
+  file: string;
+  /** 該品類段落中出現即算命中的關鍵詞 */
+  keywords: RegExp;
+  /** 該品類的真值門檻（來自 products.ts 該 category 多數 SKU 的 minQuantity） */
+  expected: number;
+  /** 真值依據說明 */
+  basis: string;
+}[] = [
+  {
+    file: 'src/data/category-seo-content.ts',
+    keywords: /貼紙|sticker/i,
+    expected: 10,
+    basis: 'stickers 品類 9 個 SKU 中 8 個 minQuantity=10（small-batch/die-cut/waterproof/transparent/removable/foil/security/fluorescent）',
+  },
+];
+
+/** 品類級漂移命中 */
+function scanCategoryLevel(): Hit[] {
+  /**
+   * 跨品類段落排除清單：`category-seo-content.ts` 有「同人誌 10 本起 / 貼紙 50 張起 /
+   * 海報 10 張起 / 壓克力 5 個起」這類**一行列多品類門檻**的段落，
+   * 行內含「貼紙」但「5 個起」屬壓克力 → 不可歸給貼紙。
+   * 判據：若該數字前 20 字內出現其他品類名，且更靠近該數字，則不算本品類。
+   */
+  const OTHER_CATEGORY = /(壓克力|同人誌|海報|月曆|餐牌|信封|包裝盒|紙袋|賀卡|利是封|枱卡|傳單)/;
+
+  const hits: Hit[] = [];
+  for (const target of CATEGORY_LEVEL_TARGETS) {
+    const abs = path.join(ROOT, target.file);
+    if (!fs.existsSync(abs)) continue;
+    const lines = fs.readFileSync(abs, 'utf-8').split(/\r?\n/);
+    lines.forEach((line, i) => {
+      if (/^\s*(\/\/|\*|\/\*)/.test(line)) return; // forEach 回調內不可用 continue
+      for (const { re, kind } of MOQ_PATTERNS) {
+        const r = new RegExp(re.source, 'g');
+        let m: RegExpExecArray | null;
+        while ((m = r.exec(line))) {
+          const found = Number(m[1]);
+          if (found === target.expected) continue;
+          // 只認「同行也提到該品類」者，避免把別品類的段落誤歸
+          if (!target.keywords.test(line)) continue;
+          // 若緊鄰數字處出現其他品類名 → 該數字屬別品類，不算本品類漂移
+          const near = line.slice(Math.max(0, m.index - 20), m.index);
+          if (OTHER_CATEGORY.test(near)) continue;
+          const s = Math.max(0, m.index - 50);
+          const e = Math.min(line.length, m.index + m[0].length + 30);
+          hits.push({
+            file: target.file,
+            line: i + 1,
+            slug: `〔品類級〕${target.file.includes('seo') ? 'stickers' : '?'}`,
+            kind: `${kind}(品類級)`,
+            found,
+            truth: target.expected,
+            text: `…${line.slice(s, e).trim()}…`,
+          });
+        }
+      }
+    });
+  }
+  return hits;
+}
 
 /**
  * 找出「非產品級」的嵌套子商品區間，避免假陽性。
@@ -298,6 +374,15 @@ const PENDING_LIST: [string, string][] = [
   ),
   // ── 白卡彩盒：title_zh「100個起印」vs minQuantity=500 ──
   ['white-card-boxes|zh_個起|100', 'title_zh 寫「100個起印」但 minQuantity=500 → 待裁決'],
+  // ── 品類級段落（category-seo-content.ts 貼紙品類頁；真值 10，文案寫 50/100）──
+  //   ⚠️ 這批是 2026-09-19 新增「品類級掃描」後才被看見的重大盲區：
+  //      該檔的品類級文案無 SKU slug → 原本被整檔跳過，永遠報 0 命中（假象）。
+  //   裁決點不止「改數字」：文案是「50 張起訂（數碼）+ 1,000 張以上柯式更經濟」的**完整階梯**，
+  //      改成 10 需同時確認柯式門檻措辭，故列待裁決而非逕改。
+  [`〔品類級〕stickers|zh_個起(品類級)|50`, 'featuredSnippet + h2 寫「貼紙印刷 50 個起」但貼紙真值 10'],
+  [`〔品類級〕stickers|zh_個起(品類級)|100`, 'featuredSnippet 寫「戶外/可移貼紙 100 個起」→ 待裁決是否改 10'],
+  [`〔品類級〕stickers|zh_張起(品類級)|50`, 'paragraphs/buyersGuide/FAQ 寫「50 張起（數碼印刷）」→ 待與柯式階梯一併裁決'],
+  [`〔品類級〕stickers|en_MOQ(品類級)|100`, 'en featuredSnippet 寫「outdoor vinyl stickers 100 pcs MOQ」→ 待裁決'],
 ];
 
 const pendingMap = new Map(PENDING_LIST);
@@ -329,6 +414,8 @@ const truth = readTruth();
 const shapeProblems = assertShape(truth);
 const all: Hit[] = [];
 for (const f of TARGETS) all.push(...scanFile(f, truth));
+// 品類級段落（無 SKU slug，scanFile 會整檔跳過 → 另一判定域，必須獨立掃）
+all.push(...scanCategoryLevel());
 
 const drift = all.filter((h) => h.found !== h.truth);
 const recount = [...independentByStyle(SELF)].map(([kind, grep]) => ({

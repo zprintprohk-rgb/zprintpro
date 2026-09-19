@@ -119,15 +119,26 @@ withSceneMoq()     // 替換卡片第三行；2 行文案不追加；複合句�
 
 ---
 
-## 六、待 K3 裁決（24 條，閘門已登錄、不阻擋）
+## 六、待 K3 裁決（33 條，閘門已登錄、不阻擋）
 
-| 類別 | SKU 數 | 矛盾 | 需裁決 |
-|------|--------|------|--------|
-| **海報真值** | 2 | `a2-posters` 真值 100 但文案「10張起印」（`price-tables` 價階由 10 起）；`art-posters` 真值 100 但文案「1張起印」 | 以價格表還是 `minQuantity` 為真值？（A1 已定 1 張） |
+| 類別 | 條數 | 矛盾 | 需裁決 |
+|------|------|------|--------|
+| **海報真值** | 4 | `a2-posters` 真值 100 但文案「10張起印」（`price-tables` 價階由 10 起）；`art-posters` 真值 100 但文案「1張起印」 | 以價格表還是 `minQuantity` 為真值？（A1 已定 1 張） |
+| **品類級段落**（貼紙） | 9 | `category-seo-content.ts` 貼紙品類頁寫「50 個起印 / 50 張起訂 / 100 pcs MOQ」，貼紙真值已 10 | 文案是「50 張起（數碼）+ 1,000 張以上柯式更經濟」的**完整階梯**，改成 10 須同時確認柯式門檻措辭 |
 | **features 口徑** | 6 | 利是封 `【500個起訂】` vs 真值 100 | 「柯式經濟量」是否應寫進 features？ |
 | **features 口徑** | 6 | 月曆 `【500本起印】` vs 真值 1000 | 同上 |
 | **features 口徑** | 5 | 餐牌 `【50本起訂】` vs 真值 100；且文案自相矛盾（「50本起訂」+「小批量數碼」） | 同上 |
 | **title 矛盾** | 1 | `white-card-boxes` title「100個起印」vs 真值 500 | 改 title 還是改真值？ |
+
+### 品類級盲區（本輪最重要的方法論發現）
+
+`category-seo-content.ts` 的**品類級文案**（h2 / heading / paragraphs / buyersGuide / specs / FAQ）
+**不含任何 SKU slug** → 掃描器原有的 SKU 歸屬判定會**整檔跳過** →
+該檔永遠報 **0 命中**。而實測它有 9 處真實漂移。
+
+**這是「0 命中 ≠ 乾淨」的典型案例**：若只信第一次的掃描結果，會誤判該檔沒問題。
+修法：新增 `scanCategoryLevel()` 為**第二判定域**（以品類關鍵詞推導預期門檻，非 slug 歸屬），
+並排除跨品類段落（如「同人誌 10 本起 / 貼紙 50 張起 / 壓克力 5 個起」一行列多品類者）。
 
 ---
 
@@ -139,6 +150,9 @@ withSceneMoq()     // 替換卡片第三行；2 行文案不追加；複合句�
 | `category-conversion-blocks.ts` | 含「MOQ 低至 100 張，部分款式 50 張起」等表述 | 中 |
 | `seo.ts` `CATEGORY_INDUSTRIES` | 品類頁場景資料（非 SKU 縮排結構），需 category-slug 歸屬判定 | 中 |
 | `CategorySharpHooks` 雙資料源 | 與 `CategoryIndustries` 重複維護同一場景資料 | **高**（結構性漂移源） |
+| **品類級段落其餘品類** | `scanCategoryLevel()` 目前只登錄 stickers；其他品類（月曆/餐牌/信封/包裝盒/紙袋）尚未建目標表 | **高** |
+
+> ✅ 已補：`category-seo-content.ts` 品類級段落（本輪新增 `scanCategoryLevel()` 第二判定域）
 
 ---
 
@@ -166,7 +180,7 @@ withSceneMoq()     // 替換卡片第三行；2 行文案不追加；複合句�
 
 | 檢查 | 指令 | 結果 |
 |------|------|------|
-| 來源層掃描 + 閘門 | `npx tsx scripts/moq10-books-context-scan.ts --gate` | ✅ PASS（🆕 0 / 已登錄 24） |
+| 來源層掃描 + 閘門 | `npx tsx scripts/moq10-books-context-scan.ts --gate` | ✅ PASS（🆕 0 / 已登錄 33） |
 | 品類頁渲染層（5 面） | `npx tsx scripts/moq10-category-page-check.ts` | ✅ PASS 32 / FAIL 0 |
 | 場景 SSoT | `npx tsx scripts/moq10-verify-scene-moq.ts` | ✅ PASS 15 / FAIL 0 |
 | 本批殘留 | `npx tsx scripts/moq10-verify-residual-moq.ts` | ✅ 本批範圍無殘留（exit 0） |
