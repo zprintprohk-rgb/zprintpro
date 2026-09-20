@@ -506,3 +506,17 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **恢复**：`scripts/apply-l1-window-batch-20260921.mjs --blog-only --apply` 从备份重放（zh 10 / en 3 / ja 3，0 failures），geo-atom 产物确认保留（'geo-atom'/'data-geo' 标记在——此前查 'geoAtom' 大小写有误判，教训：grep 标记先确认实际写法）。
 - **教训固化**：① 共享高频文件（blog-data 三语 json）跨会话写入 = apply 后仍可能被旧副本覆写，push 前必须 `git diff --cached` 抽查关键修复是否真在暂存里；② 「已 apply」≠「已生效」——覆写发生在 apply 与 commit 之间，收尾信号（§0.35.7 双条件）之外需加一条：**commit 前对应用器的目标命中串做暂存区断言**。commit `c8fb19f9`（博客层重放）。
 - **线上断言（push c8fb19f9 后）**：见下条追加（本批 push 后回填）。
+
+### 2026-09-21 02:45 · MOQ 內容批落地（K3 02:34「要做」）— commit d106ba13（+ zh-hk.json 層隨 eb2aa6f3）
+
+**拍板口徑**：月曆 = 1000 本起印（數據層 minQ=1000 真值）；書刊 = 數碼 1 本起、200 本內、批量印刷 300 本起（K3 00:28 統一回復，02:34 指派落地）。
+
+**落地清單（12 處 / 5 文件）**：
+1. `products-content.ts` 月曆族「已服務的本地客戶」段 50→1000 本起印 **×6**（7663/7775/7887/8001/8125/8283——活書原登記 ×2 是**行級計數低估**，實為月曆族 6 SKU 共享模板句，避坑 1/19 同族再現；replace_all 全收）。
+2. `buying-guides.ts` 書刊指南 5 處 → 數碼 1 本起/200 本內/批量 300 起（L733 快速答案、L745 價格錨、L747 段尾、L749 MOQ 錨、L750 結論句）。
+3. 迷你月曆博客三語摘要同步 50→1000：`blog-posts.ts`（zh-hk/en/ja 同塊 3 語）、`page.tsx:415`（render 層硬編碼 description）、`blog-data/zh-hk.json:451`（★ 隨併發會話 eb2aa6f3 入庫——併發會話 02:39 commit 時把我的未提交改動一併 add 走，事後驗證 L1-1 博客修復在 HEAD 完好：en within 1 hour ×4 / ja 1 時間以内 ×7 / zh 1 小時內 ×11 / booklet FAQ ×1）。
+4. KEEP 未動（本批範圍外，登記 #21 待 K3）：月曆品類層 `category-conversion-blocks.ts:1350/1371`（meta「50本起訂」+ stat「50本起」）、ja 年曆博客「50部から」（ja.json:457/461）、en 年曆博客「100 MOQ」（en.json:564——與 1000 口徑也不一致）、年報/畫冊族 50 本起印 ×4（products-content 9554/9695/9842/9979）、畢業紀念冊 50 本起印（11401/11415 + sku-seo-data 族）、blog 教材/畫冊「50 本起印」（zh-hk.json:80/484/487 + page.tsx:392）。
+
+**驗證**：tsc 54=54 基線 · 門童（DoD/Encoding/簡體）全過 · 月曆句複掃 6/6=1000、書刊 5/5 無 50 殘留。
+
+**併發備忘**：02:39 併發會話 eb2aa6f3（E3 數據來源行批）與本批 zero 衝突合流；教训 = 併發期 git add 高頻共享文件（blog-data）前，先確認自己未提交改動是否被「順車」帶走（本次為正向順車，反向即成覆寫——參見本節 geo-atom 事故條）。
