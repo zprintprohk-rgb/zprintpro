@@ -22,8 +22,14 @@
  *   node scripts/guards/cron-prompts-exemption-guard.js            # 对账 (exit 1 = 有漂移)
  *   node scripts/guards/cron-prompts-exemption-guard.js --verbose  # 打印每个文件的声明/实际集合
  *
- * 配套: scripts/guards/common.js 的 FULL_EXEMPT_PATHS 已加入 `.hermes/cron-prompts/`
- *       (由 scripts/guards/apply-cron-prompts-exemption.mjs 施加, 幂等)。
+ * 配套 (2026-09-19 核实更正): `scripts/guards/common.js` 的 `FULL_EXEMPT_PATHS` 现已加入
+ *       `/\.hermes[\/\\]cron-prompts[\/\\]/` —— 由 commit `cfa4ea44` **直接改 common.js** 落地。
+ *       ⚠️ 本行原写「由 `scripts/guards/apply-cron-prompts-exemption.mjs` 施加, 幂等」,
+ *       但**该脚本从未存在** (实测仓库无此文件) ⇒ 豁免实际从未生效, 本台账形同虚设:
+ *       本门童自身对账 exit 0, 而主门童 (`check-regression-guard.js --commit`) 仍按
+ *       `SOP10_CERT_NO` 硬拦 5 条 live 车道 prompt ⇒ 5 条 prompt **无法提交**。
+ *       教训: 「机制已申请」≠「机制已生效」; 声称已施加者必须给出落地 commit 或文件路径,
+ *       否则应视为未做 (§0.24 笼统批准 ≠ 动作完成 的同族错误)。
  */
 
 const fs = require('fs');
