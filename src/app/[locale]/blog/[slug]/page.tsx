@@ -412,7 +412,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31, calendars × Tier A) — 純文字・無図
     'calendar-printing-guide': {
       title: '月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro',
-      description: '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 50 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
+      description: '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 1000 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
       date: '2026-08-05', category: '印刷工藝',
       content: '',
     },

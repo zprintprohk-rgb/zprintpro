@@ -1473,9 +1473,9 @@ const lpCalendarPrinting: BlogPostMeta = {
     ja: '2027年カレンダー印刷ガイド：壁掛け・卓上サイズ | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 50 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
-    en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 50-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
-    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 50部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+    'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 1000 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
+    en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 1000-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
+    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1000部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
   },
 };
 

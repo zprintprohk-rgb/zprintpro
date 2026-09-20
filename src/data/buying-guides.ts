@@ -730,7 +730,7 @@ export const buyingGuides: BuyingGuide[] = [
       'zh-hk': `<p>書籍印刷是文化傳承的重要載體。無論是公司年報、品牌手冊、教輔材料還是個人出版，選擇合適的裝訂方式、紙張材質和印刷工藝都是關鍵。本文從裝訂方式、紙張選擇、封面工藝、印量價格、設計要點、印刷廠選擇 6 個維度為您系統拆解香港書籍印刷選購全攻略。</p>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>書刊印刷幾錢？</strong>騎馬釘小冊子 HK$14-57/本（500 本），膠裝書 HK$16-80/本；印量愈大單價愈低，2000+ 本低至 HK$15-30/本。</p></div>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>騎馬釘定膠裝？</strong>8-64 頁薄本用騎馬釘最抵，64 頁以上用膠裝書脊更平整；預算充足可揀精裝。</p></div>
-<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>最少訂幾多本？</strong>書刊 50 本起印（數碼印刷），500/1000/5000 本享批量折扣；30 秒 AI 即時報價，DHL 全球 2-4 天。</p></div>
+<div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>最少訂幾多本？</strong>書刊數碼印刷 1 本起、200 本內都得；批量印刷 300 本起，500/1000/5000 本享批量折扣；30 秒 AI 即時報價，DHL 全球 2-4 天。</p></div>
 <p>想知邊種裝訂同紙張最啱您嘅書刊？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a>，30 秒 AI 即時報價！</p>
 <h2>騎馬釘定膠裝？常見裝訂方式對比</h2>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">裝訂方式</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">騎馬釘</td><td class="border p-2">成本最低、平整好翻</td><td class="border p-2">畫冊、雜誌、小冊子 32-64 頁</td></tr><tr><td class="border p-2">膠裝（無線膠裝）</td><td class="border p-2">美觀、容量大</td><td class="border p-2">書刊、教材、論文 60+ 頁</td></tr><tr><td class="border p-2">精裝（硬殼）</td><td class="border p-2">高端、保護強</td><td class="border p-2">精裝書、紀念冊、收藏品</td></tr><tr><td class="border p-2">螺旋裝訂</td><td class="border p-2">可 360 度翻</td><td class="border p-2">筆記本、食譜、便攜手冊</td></tr><tr><td class="border p-2">活頁裝訂</td><td class="border p-2">可拆卸增頁</td><td class="border p-2">教學手冊、工作手冊</td></tr><tr><td class="border p-2">鎖線膠裝</td><td class="border p-2">結實耐用、可平攤</td><td class="border p-2">高檔書刊、字典</td></tr></tbody></table>
@@ -742,12 +742,12 @@ export const buyingGuides: BuyingGuide[] = [
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：基礎保護，最經濟</li><li><strong>UV 局部上光</strong>：突出 Logo 和主視覺</li><li><strong>燙金 / 燙銀</strong>：書名 + Logo 高檔呈現</li><li><strong>擊凸 / 壓凹</strong>：立體觸感，獨特品牌記憶</li><li><strong>燙金 + 擊凸</strong>：極致高檔組合，工藝品級</li><li><strong>布面精裝</strong>：布紋裱殼，古典書籍</li></ol>
 <p>一般品牌手冊用啞膠過膠已夠體面；高檔書籍建議燙金 + 擊凸組合，呈現工藝品級質感。</p>
 <h2>書刊印刷幾錢？印量與價格對應</h2>
-<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊印刷 50 本起印：騎馬釘 8-64 頁、膠裝 64 頁以上；500 本騎馬釘 HK$14-57/本，大批量 2000+ 本低至 HK$15-30/本】</p></div>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊印刷數碼 1 本起印（200 本內）；批量印刷 300 本起：騎馬釘 8-64 頁、膠裝 64 頁以上；500 本騎馬釘 HK$14-57/本，大批量 2000+ 本低至 HK$15-30/本】</p></div>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">印量</th><th class="border p-2 text-left">單本成本</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">50-100 本</td><td class="border p-2">HK$80-150/本</td><td class="border p-2">個人出版、紀念冊</td></tr><tr><td class="border p-2">200-500 本</td><td class="border p-2">HK$40-80/本</td><td class="border p-2">品牌手冊、公司刊物</td></tr><tr><td class="border p-2">500-1000 本</td><td class="border p-2">HK$25-50/本</td><td class="border p-2">教材、行業報告</td></tr><tr><td class="border p-2">2000+ 本</td><td class="border p-2">HK$15-30/本</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
-<p>以上為大批量柯式口徑；小批量可用數碼印刷，50 本起印，詳見<a href="/zh-hk/category/books/">書刊印刷類別</a>。</p>
+<p>以上為大批量柯式口徑；小批量可用數碼印刷，1 本起印、200 本內都得，詳見<a href="/zh-hk/category/books/">書刊印刷類別</a>。</p>
 <h2>最少訂幾多本？</h2>
-<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊 50 本起印：騎馬釘小冊子 50 本起、膠裝書 100 本起、精裝書 50 本起；批量 500/1000/5000 本享折扣】</p></div>
-<p>智印港書刊 50 本起印（數碼印刷），個人出版、活動場刊同市場測試都唔使囤貨；500 本以上轉柯式印刷，單本成本大幅下降。</p>
+<div class="bg-blue-50 rounded-lg p-4 my-4"><p>【書刊數碼印刷 1 本起、200 本內皆可；批量印刷 300 本起享柯式折扣，500/1000/5000 本再享批量價】</p></div>
+<p>智印港書刊數碼印刷 1 本起印、200 本內都得，個人出版、活動場刊同市場測試都唔使囤貨；300 本以上轉柯式批量印刷，單本成本大幅下降。</p>
 <p>想比較騎馬釘、膠裝、精裝同畫冊嘅詳細規格？直接去<a href="/zh-hk/category/books/">書刊印刷類別</a>睇晒所有書刊產品。</p>
 <h2>交期要幾耐？</h2>
 <p>書刊一般 3-5 個工作天出貨（畫冊口徑），確認稿後即可排期印刷；DHL 全球配送 2-4 天，歐美日客戶約一週內收貨。</p>
