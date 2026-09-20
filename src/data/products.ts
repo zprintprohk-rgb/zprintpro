@@ -4858,7 +4858,7 @@ export const products: Product[] = [
     slug: 'laminated-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '過膠餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Laminated Menus | Restaurant Menus & PVC', nameJa: 'ラミネートメニュー | レストランメニュー / 防水', title_zh: '過膠餐牌 · 訂製',
+    name: '過膠餐牌 | 餐牌 / 菜單 / 覆膜', nameEn: 'Laminated Menus | Restaurant Menus & PVC', nameJa: 'ラミネートメニュー | レストランメニュー / 防水', title_zh: '過膠餐牌 · 訂製',
     description: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。', descriptionEn: 'Paper with lamination, waterproof and durable at lower cost.', descriptionJa: 'ラミネート加工紙、防水で耐久性がありコストも低い。', description_zh: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。',
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -4931,7 +4931,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-laminated-menus-zh-hk.webp', en: 'zprintpro-menus-laminated-menus-en.webp', ja: 'zprintpro-menus-laminated-menus-ja.webp' },
     alt: {
-      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
+      'zh-hk': '餐牌印刷 / 覆膜 / 精裝菜單 | 香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
       en: 'Menu Printing / PVC / Waterproof | Laminated Menus | Professional Menus Online',
       ja: 'メニュー印刷 / 防水 / ハードカバー | ラミネートメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
@@ -4954,7 +4954,7 @@ export const products: Product[] = [
     slug: 'hardcover-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '精裝餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌 · 訂製',
+    name: '精裝餐牌 | 餐牌 / 菜單 / 硬殼裝訂', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌 · 訂製',
     description: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。', descriptionEn: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels.', descriptionJa: '上製本裝丁、エレガントで格式高い。高級レストラン、ホテルに最適。', description_zh: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。',
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -5028,7 +5028,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-hardcover-menus-zh-hk.webp', en: 'zprintpro-menus-hardcover-menus-en.webp', ja: 'zprintpro-menus-hardcover-menus-ja.webp' },
     alt: {
-      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
+      'zh-hk': '餐牌印刷 / 硬殼裝訂 / 精裝菜單 | 香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
       en: 'Menu Printing / PVC / Waterproof | Hardcover Menus | Professional Menus Online',
       ja: 'メニュー印刷 / 防水 / ハードカバー | 高級メニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
@@ -5051,7 +5051,7 @@ export const products: Product[] = [
     slug: 'drink-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '酒水牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Drink Menus | Restaurant Menus & PVC', nameJa: 'ドリンクメニュー | レストランメニュー / 防水', title_zh: '酒水牌 · 訂製',
+    name: '酒水牌 | 餐牌 / 菜單 / 覆膜', nameEn: 'Drink Menus | Restaurant Menus & PVC', nameJa: 'ドリンクメニュー | レストランメニュー / 防水', title_zh: '酒水牌 · 訂製',
     description: '專為酒水設計，可立式或手持。酒吧、餐廳必備。', descriptionEn: 'Specially designed for drinks, can be standing or handheld.', descriptionJa: 'ドリンク専用設計、立てかけまたは手持ち可能。', description_zh: '專為酒水設計，可立式或手持。酒吧、餐廳必備。',
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -5122,7 +5122,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-drink-menus-zh-hk.webp', en: 'zprintpro-menus-drink-menus-en.webp', ja: 'zprintpro-menus-drink-menus-ja.webp' },
     alt: {
-      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
+      'zh-hk': '餐牌印刷 / 覆膜 / 精裝菜單 | 香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
       en: 'Menu Printing / PVC / Waterproof | Drink Menus | Professional Menus Online',
       ja: 'メニュー印刷 / 防水 / ハードカバー | ドリンクメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
@@ -5145,7 +5145,7 @@ export const products: Product[] = [
     slug: 'disposable-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '一次性餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Disposable Menus | Restaurant Menus & PVC', nameJa: '使い捨てメニュー | レストランメニュー / 防水', title_zh: '一次性餐牌 · 訂製',
+    name: '一次性餐牌 | 餐牌 / 菜單 / 即棄', nameEn: 'Disposable Menus | Restaurant Menus & PVC', nameJa: '使い捨てメニュー | レストランメニュー / 防水', title_zh: '一次性餐牌 · 訂製',
     description: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。', descriptionEn: 'Economical paper, perfect for fast food and takeaway shops.', descriptionJa: '経済的な紙、ファストフードやテイクアウト店に最適。', description_zh: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。',
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -5216,7 +5216,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-disposable-menus-zh-hk.webp', en: 'zprintpro-menus-disposable-menus-en.webp', ja: 'zprintpro-menus-disposable-menus-ja.webp' },
     alt: {
-      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
+      'zh-hk': '餐牌印刷 / 即棄 / 精裝菜單 | 香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
       en: 'Menu Printing / PVC / Waterproof | Disposable Menus | Professional Menus Online',
       ja: 'メニュー印刷 / 防水 / ハードカバー | 使い捨てメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
