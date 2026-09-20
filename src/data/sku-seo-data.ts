@@ -2871,7 +2871,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | 智印港",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
-      "ja": "学校チラシ / 學校向け | 学校チラシ印刷 両面4色 100枚〜 學校向け | ZprintPro"
+      "ja": "学校チラシ / 学校向け | 学校チラシ印刷 両面4色 100枚〜 | ZprintPro"
     }
   },
   "textbooks": {
