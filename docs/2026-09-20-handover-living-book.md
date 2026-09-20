@@ -520,3 +520,4 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 **驗證**：tsc 54=54 基線 · 門童（DoD/Encoding/簡體）全過 · 月曆句複掃 6/6=1000、書刊 5/5 無 50 殘留。
 
 **併發備忘**：02:39 併發會話 eb2aa6f3（E3 數據來源行批）與本批 zero 衝突合流；教训 = 併發期 git add 高頻共享文件（blog-data）前，先確認自己未提交改動是否被「順車」帶走（本次為正向順車，反向即成覆寫——參見本節 geo-atom 事故條）。
+**線上斷言結果（28deec1a 部署後實測 PASS 7/7）**：小冊子指南 FAQ「印刷小冊子要多少錢」✅ · small-batch desc「10 張起印」✅ · 月曆 SKU「1000 本起印」無 50 殘留 ✅ · 年曆指南博客「迷你月曆 1000 本起印」✅ · en sticker-guide「within 1 hour」✅ · ja sticker-guide「1 時間以内」✅ · 食品包裝指南「1 小時內免費數碼打稿」✅。本批 push：c8fb19f9+d106ba13+28deec1a（eb2aa6f3 由併發會話先行上推）。
