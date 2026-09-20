@@ -366,11 +366,17 @@ export interface AuthorInfo {
   name: string;
   url: string;
   sameAs?: string[];
+  /** 2026-09-20 (K3 授权): E-E-A-T 作者实体维度 —— 当前角色 */
+  jobTitle?: string;
+  /** 2026-09-20 (K3 授权): E-E-A-T 作者实体维度 —— 专业领域（须与作者实际覆盖领域相符，不过度扩张） */
+  knowsAbout?: string[];
 }
 
 export const authorByLocale: Record<Locale, AuthorInfo> = {
   'zh-hk': {
     name: '智印港印刷專家',
+    jobTitle: '印刷包裝行業顧問',
+    knowsAbout: ['包裝材料', '印刷工藝', '出口合規'],
     url: `${SITE_URL}/zh-hk/about/`,
     sameAs: [
       'https://www.linkedin.com/company/zprintpro',
@@ -379,6 +385,8 @@ export const authorByLocale: Record<Locale, AuthorInfo> = {
   },
   en: {
     name: 'ZprintPro Printing Experts',
+    jobTitle: 'Print & Packaging Industry Consultant',
+    knowsAbout: ['Packaging Materials', 'Printing Processes', 'Export Compliance'],
     url: `${SITE_URL}/en/about/`,
     sameAs: [
       'https://www.linkedin.com/company/zprintpro',
@@ -387,6 +395,8 @@ export const authorByLocale: Record<Locale, AuthorInfo> = {
   },
   ja: {
     name: 'ZprintPro印刷専門家',
+    jobTitle: '印刷・パッケージ業界コンサルタント',
+    knowsAbout: ['包装素材', '印刷加工', '輸出コンプライアンス'],
     url: `${SITE_URL}/ja/about/`,
     sameAs: [
       'https://www.linkedin.com/company/zprintpro',
@@ -409,6 +419,10 @@ export interface BlogArticleInput {
   authorName?: string;
   authorUrl?: string;
   authorSameAs?: string[];
+  /** 2026-09-20 (K3 授权): 作者当前角色，用于 Person.jobTitle */
+  authorJobTitle?: string;
+  /** 2026-09-20 (K3 授权): 作者专业领域，用于 Person.knowsAbout */
+  authorKnowsAbout?: string[];
   wordCount?: number;
   inLanguage?: string;
   url: string;
@@ -421,6 +435,16 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
     url: input.authorUrl || authorByLocale[locale].url,
     ...(input.authorSameAs || authorByLocale[locale].sameAs
       ? { sameAs: input.authorSameAs || authorByLocale[locale].sameAs }
+      : {}),
+    // 2026-09-20 (K3 授权): E-E-A-T「作者实体」补强 —— jobTitle + knowsAbout。
+    //   依据: Person schema 最佳实践建议含 jobTitle（当前角色）+ knowsAbout（专业领域，
+    //   须与作者实际覆盖领域相符、不过度扩张 —— Schema.org 定义 =「指示已知主题，暗示可能的专业知识但不暗示具备」）。
+    //   ⚠️ 禁 AI 头像 / 虚构 persona（合成图可检测，属 E-E-A-T 惩罚的欺骗行为）⇒ 本改动**不含 image 字段**。
+    ...(input.authorJobTitle || authorByLocale[locale].jobTitle
+      ? { jobTitle: input.authorJobTitle || authorByLocale[locale].jobTitle }
+      : {}),
+    ...(input.authorKnowsAbout || authorByLocale[locale].knowsAbout
+      ? { knowsAbout: input.authorKnowsAbout || authorByLocale[locale].knowsAbout }
       : {}),
   };
 
