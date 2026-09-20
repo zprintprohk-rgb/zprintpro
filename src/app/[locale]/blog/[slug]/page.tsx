@@ -389,7 +389,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
     'catalog-printing-guide': {
       title: '畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro',
-      description: '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，50 本起印，3-5 個工作天交付。',
+      description: '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，10 本起印，3-5 個工作天交付。',
       date: '2026-08-10', category: '書籍印刷',
       content: '',
     },

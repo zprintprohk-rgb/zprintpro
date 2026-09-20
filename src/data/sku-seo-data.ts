@@ -1756,7 +1756,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
+      "zh-hk": "一般為1000本起訂，大批量訂單價格更優惠。",
       "en": "Custom custom calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "オリジナルカレンダー / 卓上・壁掛け | 香港のオリジナルカレンダー印刷 | ZprintPro"
     }
@@ -1792,7 +1792,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
+      "zh-hk": "一般為1000本起訂，大批量訂單價格更優惠。",
       "en": "Custom mini calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "ミニカレンダー / 卓上・壁掛け | 香港のミニカレンダー印刷 | ZprintPro"
     }
@@ -1828,7 +1828,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
+      "zh-hk": "一般為1000本起訂，大批量訂單價格更優惠。",
       "en": "Custom photo frame calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "フォトフレームカレンダー / 卓上 | 香港のフォトフレームカレンダー印刷 | ZprintPro"
     }
@@ -1864,7 +1864,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
+      "zh-hk": "一般為1000本起訂，大批量訂單價格更優惠。",
       "en": "Custom magnetic calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "マグネットカレンダー / 卓上 | 香港のマグネットカレンダー印刷 | ZprintPro"
     }
