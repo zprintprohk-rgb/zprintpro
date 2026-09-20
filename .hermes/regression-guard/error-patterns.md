@@ -1511,3 +1511,31 @@ node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/
 未导致错误决策 —— 这是侥幸，不是可依赖的模式。
 
 **同族规则**: `DOUBLE_METHOD_RECOUNT` · `LOCATE_BEFORE_PATCH` · `HREFLANG_FALSE_ALARM_MEASUREMENT_BUGS`
+
+---
+
+### 规则 STALE_REMOTE_REF_FALSE_BACKLOG — 未 fetch 的 remote-tracking ref ⇒ 积压计数是假读数 (K3 2026-09-20 指定入档)
+
+**事故形态**: 连续两轮向 K3 报告「**59 / 71 个 commit 未推送**」，并据此提出 push 前的 5 项 verify 与三段验证方案。
+实测：`git fetch` 后 `origin/main...HEAD = 0 0`，且 `origin/main == origin_ssh/main == HEAD == 34a6910e`
+—— **根本没有积压，push 是 no-op**。
+
+**根因**: 用 `@{u}..HEAD` 计数，而 `@{u}` 指向 `origin_ssh/main` —— 该 remote-tracking ref
+**从未被 fetch 过**，git 一直在与一个**过期快照**比较。量具本身未校准，读数却当成了阻塞依据。
+（另: 两个 remote 的 URL **完全相同**（`git@github.com:zprintprohk-rgb/zprintpro.git`），故「推错目标」风险亦不存在。）
+
+**为什么属本族**: 与 `METRIC_INTEGRITY_FIVE_TRAPS` 同源 —— **被测量的不是仓库，而是本地缓存**。
+这是第 6 种系统性陷阱：**远端状态读数陷阱**。
+
+**修法 (三步, 不可省)**:
+1. **任何 push/积压结论前，先 `git fetch <remote> main`**；禁止直接读 `@{u}` 或任何未 fetch 的 ref。
+2. **用 `git rev-list --left-right --count origin/main...HEAD` 复算**，并要求与 `@{u}..HEAD` 交叉一致；
+   两者不一致 ⇒ **先查量具**（哪几个 remote？各自 URL？ref 是否新鲜？）。
+3. **多 remote 时先 `git remote -v` 比对 URL**：URL 相同即同一仓库，不存在「推错目标」；
+   不同才需 K3 裁决生产目标。
+
+**危害边界（诚实记录）**: 本次**未造成损坏** —— 反而因「先修后推」的保守判断而**避免了一次空操作 push**。
+但两轮错误报告**污染了 K3 的决策前提**（整份 push 方案建立在虚构的 59 条积压上），
+代价是 K3 一轮规划成本。属于「量测错误导致的决策污染」，与 §0.23.2 红线同性质。
+
+**同族规则**: `METRIC_INTEGRITY_FIVE_TRAPS`（本族母规则, 本条为第 6 种）· `DOUBLE_METHOD_RECOUNT`（母规则）· `TIME_READING_UNVERIFIED`（同属「读数未复算」）· `HREFLANG_FALSE_ALARM_MEASUREMENT_BUGS`（同源：量具自身 bug）
