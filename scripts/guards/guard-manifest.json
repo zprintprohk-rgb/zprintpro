@@ -1,7 +1,7 @@
 {
   "schema": "guard-manifest/v1",
   "note": "門童編號與規則 ID 是**共享命名空間**：新增前必須先查本清單避免撞號（K3 2026-09-19 建議）。產生器：scripts/gen-guard-manifest.mjs；校驗：node scripts/gen-guard-manifest.mjs（有衝突 exit 1）",
-  "generatedAt": "2026-09-19T12:01:51.006Z",
+  "generatedAt": "2026-09-20T12:06:56.817Z",
   "guardNumbers": {
     "1": [
       "scripts\\guards\\common.js",
@@ -107,15 +107,23 @@
     ],
     "23": [
       "scripts\\guards\\bypass-audit-guard.js",
+      "scripts\\guards\\common.js",
       "scripts\\guards\\cron-prompts-exemption-guard.js"
     ],
     "24": [
       "scripts\\canonical\\pre-commit",
+      "scripts\\classify-moq-precision.mjs",
       "scripts/canonical/pre-commit",
       ".githooks/pre-commit"
+    ],
+    "26": [
+      "scripts\\guards\\hook-sync-guard.js"
     ]
   },
   "ruleIds": {
+    "ABSOLUTE_BASELINE_GOES_STALE": [
+      "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
     "ACCENT_ORANGE": [
       "scripts\\generate-og-image-v2.js"
     ],
@@ -134,8 +142,8 @@
     "ALL_URLS": [
       "scripts\\indexnow-submit.mjs"
     ],
-    "ALREADY_SYNCED": [
-      "scripts\\sync-title-rule-50-58.mjs"
+    "ALREADY_OK": [
+      "scripts\\sync-title-rule-50-57.mjs"
     ],
     "ALT_FIXES": [
       "scripts\\fix-ja-alt-23sku.ts",
@@ -164,6 +172,9 @@
     "BAD_FIELD": [
       "scripts\\guards\\meta-description-guard.js"
     ],
+    "BARE_UNIT": [
+      "scripts\\generate-title-batch.mjs"
+    ],
     "BASELINE_FILE": [
       "scripts\\guards\\ce-truncation-guard.js",
       "scripts\\guards\\meta-description-guard.js"
@@ -177,6 +188,9 @@
     ],
     "BASH_SOURCE": [
       "scripts\\setup-hooks.sh"
+    ],
+    "BATCH_FILTER": [
+      "scripts\\generate-title-batch.mjs"
     ],
     "BATCH_NAME": [
       "scripts\\apply-title-batch.mjs"
@@ -317,6 +331,9 @@
       "scripts\\guards\\brand-guard.js",
       "scripts\\guards\\common.js"
     ],
+    "BUILD_ID": [
+      "scripts\\install-hooks.mjs"
+    ],
     "BUS_UNAVAILABLE": [
       "scripts\\inject-results-bus-contract.mjs"
     ],
@@ -370,6 +387,15 @@
     ],
     "CE_TRUNCATION_CUSTOMER_VISIBLE": [
       "scripts\\guards\\ce-truncation-guard.js"
+    ],
+    "CF_PAGES": [
+      "scripts\\install-hooks.mjs"
+    ],
+    "CHECK_ONLY": [
+      "scripts\\install-hooks.mjs"
+    ],
+    "CJK_CONJ": [
+      "scripts\\generate-title-batch.mjs"
     ],
     "CJK_IDEOGRAPH_RE": [
       "scripts\\guards\\i18n-guard.js"
@@ -481,14 +507,32 @@
       "scripts\\guards\\ce-truncation-guard.js",
       "scripts\\guards\\gsc-leak-guard.js"
     ],
+    "DANGLING_ADJ": [
+      "scripts\\generate-title-batch.mjs"
+    ],
+    "DANGLING_TAIL": [
+      "scripts\\generate-title-batch.mjs"
+    ],
     "DATA_DIR": [
       "scripts\\manual-weekly-recovery-2026-07-06.mjs"
     ],
     "DATA_FILES": [
       "scripts\\guards\\price-band-guard.js"
     ],
+    "DATA_LAYER_LANDED": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "DATA_LAYER_LANDED_COPY_LAYER_NOT": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
     "DECLARATION_RE": [
       "scripts\\check-bc-ban.mjs"
+    ],
+    "DECLARED_APPLIED": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "DECLARED_APPLIED_IS_NOT_EFFECTIVE": [
+      "scripts\\probe-skill-handover.mjs"
     ],
     "DELETIONS_ONLY": [
       "scripts\\moq10-repair-drift.ts"
@@ -515,7 +559,7 @@
       "scripts\\gen-guard-manifest.mjs"
     ],
     "DRY_RUN_OK": [
-      "scripts\\sync-title-rule-50-58.mjs"
+      "scripts\\sync-title-rule-50-57.mjs"
     ],
     "DUPLICATE_IDEMPOTENCY_KEY": [
       "scripts\\lane-status.mjs"
@@ -543,6 +587,9 @@
     ],
     "ENTITY_ZIPCODE": [
       "scripts\\guards\\entity-guard.js"
+    ],
+    "ENV_REASON": [
+      "scripts\\guards\\bypass-audit-guard.js"
     ],
     "EN_100_PERCENT_DOMESTIC": [
       "scripts\\guards\\i18n-guard.js"
@@ -592,6 +639,9 @@
     "EXPECTED_RED": [
       "scripts\\test-i18n-pollution-bidirectional.js"
     ],
+    "EXPECT_TOTAL_KEYS": [
+      "scripts\\assert-sku-seo-keys.mjs"
+    ],
     "FALLBACK_HOOK": [
       "scripts\\setup-hooks.sh"
     ],
@@ -602,11 +652,17 @@
       "scripts\\audit-seo-meta.ts",
       "scripts\\clean-faq-alt.ts"
     ],
+    "FILE_KEY_STYLE": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
     "FILE_LOCALE_ONLY_RE": [
       "scripts\\guards\\i18n-guard.js"
     ],
     "FILE_LOCALE_RE": [
       "scripts\\guards\\common.js"
+    ],
+    "FILLER_RE": [
+      "scripts\\generate-title-batch.mjs"
     ],
     "FIX_MODE": [
       "scripts\\check-encoding.js"
@@ -623,6 +679,9 @@
     "FRESHNESS_GATE_HOURS": [
       "scripts\\guards\\gsc-source-guard.js"
     ],
+    "FROM_PROPOSALS": [
+      "scripts\\apply-title-batch.mjs"
+    ],
     "FROZEN_BLOG": [
       "scripts\\title-audit-v4.mjs"
     ],
@@ -633,7 +692,17 @@
       "scripts\\guards\\common.js",
       "scripts\\guards\\credibility-guard.js",
       "scripts\\guards\\cron-prompts-exemption-guard.js",
-      "scripts\\check-regression-guard.js"
+      "scripts\\check-regression-guard.js",
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "GENERATED_END": [
+      "scripts\\assert-sku-seo-keys.mjs"
+    ],
+    "GENERATED_START": [
+      "scripts\\assert-sku-seo-keys.mjs"
+    ],
+    "GITHUB_ACTIONS": [
+      "scripts\\install-hooks.mjs"
     ],
     "GRACE_MIN": [
       "scripts\\lane-status.mjs"
@@ -678,6 +747,12 @@
     "GUARD_LABELS": [
       "scripts\\check-regression-guard.js"
     ],
+    "HANDMADE_CHARSET": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "HANDMADE_CHARSET_CONTAINS_SHARED_CHARS": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
     "HERO_OUT": [
       "scripts\\batch-process-images.js"
     ],
@@ -690,6 +765,9 @@
     ],
     "HERO_TARGET": [
       "scripts\\batch-process-images.js"
+    ],
+    "HIST_ALLOW": [
+      "scripts\\sync-title-rule-50-57.mjs"
     ],
     "HKD_TO_JPY": [
       "scripts\\gen-price-data.mjs"
@@ -705,6 +783,9 @@
     ],
     "HOOKS_PATH": [
       "scripts\\setup-hooks.sh"
+    ],
+    "HOOK_SSOT_ACTIVE_DIVERGENCE": [
+      "scripts\\guards\\hook-sync-guard.js"
     ],
     "I18N_BASELINE_FILE": [
       "scripts\\guards\\i18n-guard.js"
@@ -830,6 +911,9 @@
     "LABEL_10": [
       "scripts\\moq10-prepend-qty-tiers.mjs"
     ],
+    "LATIN_ALLOW": [
+      "scripts\\generate-title-batch.mjs"
+    ],
     "LEDGER_ESCALATE_AT": [
       "scripts\\sku-title-census.mjs"
     ],
@@ -867,8 +951,27 @@
     "LOCALE_MAP": [
       "scripts\\fix-dual-brand-nontitle-b2.mjs"
     ],
+    "LOCALE_SPECIFIC_KEEP": [
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\classify-moq-precision.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\resolve-moq-conflicts.mjs",
+      "scripts\\unify-moq-classification.mjs"
+    ],
     "LONGDESC_V3": [
       "scripts\\apply-en-longdesc-v3.mjs"
+    ],
+    "MANUAL_END": [
+      "scripts\\assert-sku-seo-keys.mjs"
+    ],
+    "MANUAL_REVIEW": [
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\classify-moq-precision.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\unify-moq-classification.mjs"
+    ],
+    "MANUAL_START": [
+      "scripts\\assert-sku-seo-keys.mjs"
     ],
     "MARKDOWN_LINK_RE": [
       "scripts\\find-markdown-render.js"
@@ -940,7 +1043,7 @@
       "scripts\\optimize-images.js"
     ],
     "MISSING_FILE": [
-      "scripts\\sync-title-rule-50-58.mjs"
+      "scripts\\sync-title-rule-50-57.mjs"
     ],
     "MOJIBAKE_SIGNATURES": [
       "scripts\\guards\\blog-data-integrity-guard.js"
@@ -948,9 +1051,16 @@
     "MONEY_SET": [
       "scripts\\fix-title-batch-T2-1b.mjs"
     ],
+    "MOQ_IN_SEG": [
+      "scripts\\generate-title-batch.mjs"
+    ],
+    "MOQ_MISMATCH": [
+      "scripts\\build-title-input-bank.mjs"
+    ],
     "MOQ_PATTERNS": [
       "scripts\\moq10-books-context-scan.ts",
-      "scripts\\moq10-diag3.ts"
+      "scripts\\moq10-diag3.ts",
+      "scripts\\moq25-anchor-scan.ts"
     ],
     "MOQ_SHAPE": [
       "scripts\\moq10-category-page-check.ts"
@@ -976,6 +1086,12 @@
     ],
     "NESTED_MINQTY_WHITELIST": [
       "scripts\\moq10-books-context-scan.ts"
+    ],
+    "NESTED_STRUCT": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "NESTED_STRUCT_NEEDS_PARSING_NOT_REGEX": [
+      "scripts\\probe-skill-handover.mjs"
     ],
     "NEW_ABOVE_ANCHOR": [
       "scripts\\moq10-audit-ladders.mjs"
@@ -1003,6 +1119,12 @@
     "NON_VISIBLE_KEYS": [
       "scripts\\guards\\gsc-leak-guard.js"
     ],
+    "NOT_UNIFIED": [
+      "scripts\\unify-moq-classification.mjs"
+    ],
+    "NO_CONFLICT": [
+      "scripts\\apply-title-batch.mjs"
+    ],
     "NO_GARBAGE": [
       "scripts\\generate-image-prompts.js"
     ],
@@ -1010,7 +1132,17 @@
       "scripts\\guards\\gsc-source-guard.js"
     ],
     "NO_MATCH": [
-      "scripts\\sync-title-rule-50-58.mjs"
+      "scripts\\sync-title-rule-50-57.mjs"
+    ],
+    "NO_MOQ_HOOK": [
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\classify-moq-precision.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\resolve-moq-conflicts.mjs",
+      "scripts\\unify-moq-classification.mjs"
+    ],
+    "NO_MOQ_HOOK_WHITELIST": [
+      "scripts\\classify-moq-precision.mjs"
     ],
     "NO_SCHED": [
       "scripts\\lane-status.mjs"
@@ -1047,6 +1179,9 @@
       "scripts\\generate-og-image-v4.js"
     ],
     "OTHER_CATEGORY": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
+    "OTHER_CATEGORY_NAMES": [
       "scripts\\moq10-books-context-scan.ts"
     ],
     "OUTLINE_TEMPLATES": [
@@ -1103,8 +1238,15 @@
     "PEER_BRANDS": [
       "scripts\\check-brand-mentions.mjs"
     ],
+    "PENDING_FILE_PREFIXES": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
     "PENDING_GSC": [
       "scripts\\guards\\gsc-source-guard.js"
+    ],
+    "PENDING_K3": [
+      "scripts\\resolve-moq-conflicts.mjs",
+      "scripts\\unify-moq-classification.mjs"
     ],
     "PENDING_LIST": [
       "scripts\\canonical\\pre-commit",
@@ -1315,6 +1457,9 @@
     "RULE_TRANSLATION_MISSING": [
       "scripts\\guards\\rule-translation-guard.js"
     ],
+    "RULING_ATTESTED": [
+      "scripts\\classify-moq-precision.mjs"
+    ],
     "SAMPLE_N": [
       "scripts\\audit-exposure-set.mjs"
     ],
@@ -1332,6 +1477,9 @@
     "SCAN_EXT": [
       "scripts\\find-markdown-render.js",
       "scripts\\find-markdown-residual.js"
+    ],
+    "SCAN_FILES": [
+      "scripts\\moq25-anchor-scan.ts"
     ],
     "SCAN_LOCALES": [
       "scripts\\guards\\entity-guard.js"
@@ -1367,6 +1515,9 @@
     "SELF_DECLARED_RE": [
       "scripts\\guards\\bypass-audit-guard.js"
     ],
+    "SERVICE_RE": [
+      "scripts\\generate-title-batch.mjs"
+    ],
     "SETUP_FEE": [
       "scripts\\gen-posters-json.mjs"
     ],
@@ -1383,6 +1534,12 @@
       "scripts\\moq10-action-list-v3.ts",
       "scripts\\moq10-action-list.ts",
       "scripts\\moq10-price-sync-report-v2.ts"
+    ],
+    "SHARED_TEMPLATE_SENTENCE_RESIDUE": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "SHORT_HOOKS": [
+      "scripts\\generate-title-batch.mjs"
     ],
     "SHOW_CONTEXT": [
       "scripts\\moq10-fix-blog-moq.mjs"
@@ -1413,6 +1570,9 @@
     ],
     "SITE_BASE": [
       "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "SKILL_DIR": [
+      "scripts\\probe-skill-handover.mjs"
     ],
     "SKIPPED_OVERSIZE": [
       "scripts\\guards\\common.js"
@@ -1509,6 +1669,15 @@
       "scripts/canonical/pre-commit",
       ".githooks/pre-commit"
     ],
+    "STALE_NO_MATCH": [
+      "scripts\\sync-title-rule-50-57.mjs"
+    ],
+    "STALE_REMOTE_REF": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
+    "STALE_REMOTE_REF_FALSE_BACKLOG": [
+      "scripts\\probe-skill-handover.mjs"
+    ],
     "STATE_MACHINE": [
       "scripts\\lane-status.mjs"
     ],
@@ -1521,9 +1690,6 @@
     "STD_HOOK": [
       "scripts\\fix-p3-en-cta.ts",
       "scripts\\fix-p3-ja-cta.ts"
-    ],
-    "STICKER_SUBCATEGORY_MOQ": [
-      "scripts\\moq10-books-context-scan.ts"
     ],
     "STRATEGY_JARGON": [
       "scripts\\check-content-guard.js"
@@ -1593,24 +1759,35 @@
       "scripts\\guards\\i18n-guard.js",
       "scripts\\guards\\title-equiv.js",
       "scripts\\apply-title-batch.mjs",
-      "scripts\\gen-p0-title-batch.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\probe-skill-handover.mjs",
       "scripts\\sku-title-census.mjs",
-      "scripts\\sync-title-rule-50-58.mjs"
+      "scripts\\title-audit-v4.mjs"
     ],
     "TITLE_MIN": [
       "scripts\\guards\\blog-standard-guard.js",
       "scripts\\guards\\i18n-guard.js",
       "scripts\\guards\\title-equiv.js",
       "scripts\\apply-title-batch.mjs",
-      "scripts\\gen-p0-title-batch.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\probe-skill-handover.mjs",
       "scripts\\sku-title-census.mjs",
-      "scripts\\sync-title-rule-50-58.mjs"
+      "scripts\\title-audit-v4.mjs"
     ],
     "TOPICS_POOL": [
       "scripts\\blog-content-engine.js"
     ],
     "TOTAL_DROP": [
       "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "TRUE_DRIFT": [
+      "scripts\\apply-title-batch.mjs",
+      "scripts\\classify-moq-precision.mjs",
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\unify-moq-classification.mjs"
+    ],
+    "TRUTH_FILE": [
+      "scripts\\moq25-anchor-scan.ts"
     ],
     "UNIT_PRICE_ANCHORS": [
       "scripts\\gen-price-data.mjs",
@@ -1630,6 +1807,14 @@
     ],
     "URL_LIST": [
       "scripts\\_indexnow-w6w7.js"
+    ],
+    "USE_PRODUCTS_TRUTH": [
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\resolve-moq-conflicts.mjs"
+    ],
+    "USE_RULING_TRUTH": [
+      "scripts\\generate-title-batch.mjs",
+      "scripts\\resolve-moq-conflicts.mjs"
     ],
     "VERDICT_TO_STATE": [
       "scripts\\lane-status.mjs"
@@ -1659,6 +1844,9 @@
     "YELLOW_WARN": [
       "scripts\\sku-title-census.mjs"
     ],
+    "ZP_BYPASS_REASON": [
+      "scripts\\guards\\bypass-audit-guard.js"
+    ],
     "ZP_SITE_BASE": [
       "scripts\\guards\\blog-quality-12-rules-guard.js"
     ],
@@ -1667,5 +1855,5 @@
       ".githooks/pre-push"
     ]
   },
-  "maxGuardNumber": 24
+  "maxGuardNumber": 26
 }

@@ -156,6 +156,28 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.8 門童 #26 門童 hook SSoT/active 同步一致性 (2026-09-20)
+# 背景: 門童 hook 有**兩份檔** —— SSoT = scripts/canonical/pre-commit,
+#   active = core.hooksPath 指向那支 (= .githooks/pre-commit, **git 真正讀的**)。
+#   只更新一份 → git 讀的 active 沒跟上; 而 hook 沒被讀到時 **git 不會報任何錯**
+#   → 門禁靜默失效, 且失效本身無法自證。
+#   實錄兩次同根因事故:
+#     ① 2026-08-26 ~ 09-13 (18 天): 設了 hooksPath 但安裝腳本仍裝 .git/hooks/ → 整條門禁失效
+#     ② 2026-09-20: SSoT 已含門童 #24, active 落後未含 → **#24 從未真的觸發過**
+# 判據: 兩份檔內容 (行尾正規化後) sha256 必須相等。
+#   刻意不比 mtime (per §0.35.4: 禁用 mtime 當存活證據, 9/17 全檔複製曾把 mtime 統一刷新)。
+echo "3️⃣.8  門童 #26 hook SSoT/active 同步一致性..."
+if command -v node &> /dev/null; then
+  node scripts/guards/hook-sync-guard.js
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ 門童 #26 攔截: 門童 hook SSoT 與 active 分叉 (門禁可能靜默失效)"
+    echo ""
+    echo "💡 修法: node scripts/install-hooks.mjs"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

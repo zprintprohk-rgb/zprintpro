@@ -1627,3 +1627,53 @@ node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/
 
 **配套**: 交生活书 `docs/2026-09-20-handover-living-book.md` §7 并发会话安全协议 ·
 技能 `zprintpro-self-evolution-hardening` §五（避坑 20）
+
+---
+
+### 规则 HOOK_SSOT_ACTIVE_DIVERGENCE — 门童 hook「SSoT 有」不等于「git 真的读到」(2026-09-20 固化两次同族事故)
+
+**事故形态**: 门童 hook 存在**两份档**，语义不同但外表相似：
+
+| 角色 | 路径 | 谁在读 |
+|------|------|--------|
+| **SSoT（源头）** | `scripts/canonical/pre-commit` | 没人直接读；安装脚本从这里复制 |
+| **active（生效）** | `core.hooksPath` 指向那支（本仓 = `.githooks/pre-commit`） | **git 真正执行的是这支** |
+| **真兜底** | `<git-dir>/hooks/pre-commit`（不受版控） | 仅当 `core.hooksPath` 被取消时生效 |
+
+**只更新其中一份，另一份不会自动跟上；而 hook 没被读到的时候，git 不会报任何错**
+→ 门禁**静默失效**，且失效本身**无法自证**（提交照常成功，输出里没有任何异常）。
+
+**两次实测事故（同根因）**:
+
+| # | 时间 | 形态 | 后果 |
+|---|------|------|------|
+| 1 | 2026-08-26 ~ 09-13（**18 天**） | 设了 `core.hooksPath=.githooks`，而安装脚本仍往 `.git/hooks/` 装 | **整条 pre-commit 门禁静默失效 18 天** |
+| 2 | 2026-09-20 | SSoT 已含门童 #24（MOQ 口径闸门），**active 落后未含** | **#24 在本 worktree 从未真的触发过**（`git show <sha>:.githooks/pre-commit` 实查确认） |
+
+**判据（机器可检）**: SSoT 与 active 两份档内容（**行尾正规化后**）的 sha256 必须相等。
+- **不比 mtime** —— per AGENTS.md §0.35.4：禁用 mtime 当存活证据（9/17 全档复制曾把 mtime 统一刷成同一秒）。
+- 行尾必须正规化：Git for Windows 可能 checkout 成 CRLF，语义相同不该算分叉。
+
+**修法（固化机制，非文字提醒）**:
+1. **门童 #26** `scripts/guards/hook-sync-guard.js` — 接进 pre-commit §3.8，分叉即 **RED 硬拦**（实测：人工制造分叉 → exit 1）。
+2. **`scripts/install-hooks.mjs`** — Node / 跨平台 / 幂等 / 安装后**逐字验证**（per 本族教训 9：曾发生 `Copy-Item` 静默失败）。
+3. **`package.json` 加 `prepare`** — 新 clone / 新环境自动装 hook，消除「静默失效无法自证」。
+4. **`prepare` 的三条设计红线**（踩过才知道）：
+   - **永不非零退出**：`prepare` 在每次 `npm install` 后跑，含 **Cloudflare Pages build** → 失败会炸 build；
+   - **CI / CF_PAGES / BUILD_ID 环境直接跳过**；
+   - **不覆盖受版控的既有档**：`.githooks/pre-commit` 受版控，若 `prepare` 会写它 →
+     ① 每次 `npm install` 都可能**意外弄脏工作区**，② 会**覆盖他人只改 active、尚未提交的 hook 修改**
+     （**9/20 事故正是这种形态**）→ 受版控且已存在但内容不同时**只警告不写**，要写须 `--force`。
+5. **顺带修掉一个潜在陷阱**：实测本仓 `.git/hooks/pre-commit` 残留旧版（5620 bytes，无 #24/#26）——
+   `core.hooksPath` 一旦被取消，门禁会**静默退回旧状态**。安装器现已同步该兜底副本。
+
+**危害边界（诚实记录）**: 两次都**没有**让错误内容上线 —— 代价是「以为有门禁、实际没有」的**安全假象**，
+以及事故 2 直接导致 `#24` 的交付被高估（交接报告一度声称「门童 #24 PASS」，而它**从未自动跑过**）。
+属**机制失真**：比「数据丢失」更隐蔽，因为它不产生任何报错。
+
+**同族规则**: `SAFECOMMIT_ATOMIC`（同机制：两个本该一致的对象之间出现窗口）·
+`METRIC_INTEGRITY_FIVE_TRAPS`（母族：指标本身错）· `DOUBLE_METHOD_RECOUNT`（同源：单来源未交叉验证）·
+`WORKSPACE_DIRTY_OVERFLOW`（同属「环境状态未盘点的静默风险」）
+
+**配套**: 门童 #26 `scripts/guards/hook-sync-guard.js` · 安装器 `scripts/install-hooks.mjs` ·
+SSoT `scripts/canonical/pre-commit` · `node scripts/install-hooks.mjs --check`（CI / 守门用）
