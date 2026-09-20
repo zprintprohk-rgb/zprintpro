@@ -1,0 +1,2699 @@
+{
+  "scannedAt": "2026-09-20T07:03:58",
+  "skuCount": 94,
+  "skuScanned": 94,
+  "skuNoAnchor": [],
+  "stats": {
+    "files": 5,
+    "segments": 0,
+    "anchorHit": 4015,
+    "moqHit": 498,
+    "pairs": 268,
+    "skuScanned": 94,
+    "skuNoAnchor": 0
+  },
+  "total": 268,
+  "ambiguous": 96,
+  "findings": [
+    {
+      "file": "src/data/products.ts",
+      "line": 1483,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 **適用業界**:アパレルブランド、セレクトショップ"
+    },
+    {
+      "file": "src/data/products.ts",
+      "line": 1771,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "Café",
+      "ambiguous": false,
+      "text": " descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified qua"
+    },
+    {
+      "file": "src/data/products.ts",
+      "line": 1771,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・100枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。 适配行业: ESG、エコ美容、オーガニック、フェアトレード、カフェ、ブティック、アパレル.',"
+    },
+    {
+      "file": "src/data/products.ts",
+      "line": 2666,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 10,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、10枚から、1-2日納期。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。',"
+    },
+    {
+      "file": "src/data/products.ts",
+      "line": 6058,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 10,
+      "anchor": "培訓手冊",
+      "ambiguous": true,
+      "text": " description: '線圈筆記本印刷，企業禮品、補習社教材、培訓手冊、校園紀念本首選。金屬/塑料 YO 圈可拆卸重組，10 本起印。',"
+    },
+    {
+      "file": "src/data/products.ts",
+      "line": 6059,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 10,
+      "anchor": "培訓手冊",
+      "ambiguous": true,
+      "text": " description_zh: '線圈筆記本印刷，企業禮品、補習社教材、培訓手冊、校園紀念本首選。金屬/塑料 YO 圈可拆卸重組，10 本起印。',"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 37,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Waterproof Stickers",
+      "ambiguous": false,
+      "text": " \"description\": \"Waterproof Stickers custom printing, PVC UV-resistant material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery f"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 49,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": false,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 防水ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 81,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"透明貼紙/透明貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 89,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Transparent Stickers",
+      "ambiguous": false,
+      "text": " \"description\": \"Transparent Stickers custom printing, clear PET material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for pro"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 97,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": false,
+      "text": " \"description\": \"透明ステッカーの透明ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 100,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": false,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 透明ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 112,
+      "slug": "removable-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "removable-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"removable-stickers\": { \"name\": { \"zh-hk\": \"可移貼紙(無殘膠)\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 112,
+      "slug": "removable-stickers",
+      "truth": 10,
+      "found": 500,
+      "anchor": "removable-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"removable-stickers\": { \"name\": { \"zh-hk\": \"可移貼紙(無殘膠)\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 143,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム はがせるステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 143,
+      "slug": "removable-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "はがせるステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム はがせるステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 163,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小批量貼紙",
+      "ambiguous": false,
+      "text": " \"ja\": \"小ロットステッカー\" }, \"seo\": { \"zh-hk\": { \"title\": \"小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 168,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小批量貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"小批量貼紙印刷 50 張起印 HK$0.45/張, 無開版費。防水 PVC / 透明 BOPP / 銅版紙 3 大材質, 異形切割 + 燙金 + UV 表面處理。3-5 天交貨, 免費 2 小時數碼打稿, 港九新界 HK$500 免費順豐。30 秒 AI 報價, W"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 41,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小ロットステッカー",
+      "ambiguous": false,
+      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 184,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小ロットステッカー",
+      "ambiguous": false,
+      "text": " \"description\": \"オリジナル小ロットステッカー 50 枚〜 $0.045/枚〜。版代・型代ゼロ、2 時間無料デジタル校正、防水 PVC / BOPP 透明 / コート紙 3 素材、ダイカット + 箔押し + UV 加工。4 日米国配送, 99 ドル以上送料無料。30 秒 AI 見積も"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 187,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 小ロットステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 187,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "小ロットステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 小ロットステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 199,
+      "slug": "die-cut-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "die-cut-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"die-cut-stickers\": { \"name\": { \"zh-hk\": \"異形模切貼紙\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 199,
+      "slug": "die-cut-stickers",
+      "truth": 10,
+      "found": 500,
+      "anchor": "die-cut-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"die-cut-stickers\": { \"name\": { \"zh-hk\": \"異形模切貼紙\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 211,
+      "slug": "die-cut-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "異形模切貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"異形模切貼紙/貼紙印刷 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 230,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 型抜きステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 230,
+      "slug": "die-cut-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "型抜きステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 型抜きステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 242,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "foil-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"foil-stickers\": { \"name\": { \"zh-hk\": \"燙金貼紙\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 242,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 500,
+      "anchor": "foil-stickers",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"foil-stickers\": { \"name\": { \"zh-hk\": \"燙金貼紙\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 254,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "燙金貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"燙金貼紙/燙金貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 261,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Foil stickers with metallic shine. Gold, silver, rose gold, copper, holographic. Hot stamp foil. 100-MOQ | Free Design | 100 MOQ | Fr"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 270,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "箔押しステッカー",
+      "ambiguous": false,
+      "text": " \"description\": \"箔押しステッカーの箔押しステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 273,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 箔押しステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 273,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "箔押しステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 箔押しステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 297,
+      "slug": "security-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "防偽貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"防偽貼紙/防偽貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 304,
+      "slug": "security-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Security Stickers",
+      "ambiguous": true,
+      "text": " \"description\": \"Security Stickers, VOID tamper-evident material. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for asset tracking. | Z"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 313,
+      "slug": "security-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "セキュリティステッカー",
+      "ambiguous": false,
+      "text": " \"description\": \"セキュリティステッカーのセキュリティステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 316,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム セキュリティステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 316,
+      "slug": "security-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "セキュリティステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム セキュリティステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 340,
+      "slug": "fluorescent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "螢光貼紙",
+      "ambiguous": false,
+      "text": " \"description\": \"螢光貼紙/螢光貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 347,
+      "slug": "fluorescent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Fluorescent Stickers",
+      "ambiguous": false,
+      "text": " \"description\": \"Fluorescent Stickers custom printing, UV-reactive neon colors. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery fo"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 356,
+      "slug": "fluorescent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "蛍光ステッカー",
+      "ambiguous": false,
+      "text": " \"description\": \"蛍光ステッカーの蛍光ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 359,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 蛍光ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 359,
+      "slug": "fluorescent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "蛍光ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム 蛍光ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 371,
+      "slug": "kraft-paper-bags",
+      "truth": 100,
+      "found": 500,
+      "anchor": "kraft-paper-bags",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為100張起訂，部分特殊工藝需500張起。\" } }, \"kraft-paper-bags\": { \"name\": { \"zh-hk\": \"牛皮紙袋\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 725,
+      "slug": "a4-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "A4チラシ",
+      "ambiguous": true,
+      "text": " \"ja\": \"A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"a5-flyers\": { \"name\": { \"zh-hk\": \"A5傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 725,
+      "slug": "a5-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "a5-flyers",
+      "ambiguous": true,
+      "text": " \"ja\": \"A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"a5-flyers\": { \"name\": { \"zh-hk\": \"A5傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 772,
+      "slug": "a5-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "A5チラシ",
+      "ambiguous": true,
+      "text": " \"ja\": \"A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"double-sided-flyers\": { \"name\": { \"zh-hk\": \"雙面傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 772,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "double-sided-flyers",
+      "ambiguous": true,
+      "text": " \"ja\": \"A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"double-sided-flyers\": { \"name\": { \"zh-hk\": \"雙面傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 784,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "雙面傳單印刷",
+      "ambiguous": false,
+      "text": " \"description\": \"雙面傳單印刷/傳單印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 41,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "両面チラシ",
+      "ambiguous": false,
+      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 800,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "両面チラシ",
+      "ambiguous": false,
+      "text": " \"description\": \"両面カラー印刷 両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 801,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "両面チラシ",
+      "ambiguous": false,
+      "text": " \"h1\": \"両面カラー印刷 両面チラシ | 100枚〜翌日発送\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 803,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "両面チラシ",
+      "ambiguous": false,
+      "text": " \"偽造防止用紙\"], \"body\": \"カスタム 両面チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 815,
+      "slug": "double-sided-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "両面チラシ",
+      "ambiguous": true,
+      "text": " \"ja\": \"両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"folded-leaflets\": { \"name\": { \"zh-hk\": \"摺疊傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 815,
+      "slug": "folded-leaflets",
+      "truth": 10,
+      "found": 100,
+      "anchor": "folded-leaflets",
+      "ambiguous": true,
+      "text": " \"ja\": \"両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro\" } }, \"folded-leaflets\": { \"name\": { \"zh-hk\": \"摺疊傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 845,
+      "slug": "folded-leaflets",
+      "truth": 10,
+      "found": 100,
+      "anchor": "折りたたみパンフレット",
+      "ambiguous": false,
+      "text": " \"偽造防止用紙\"], \"body\": \"カスタム 折りたたみパンフレット — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 883,
+      "slug": "thick-paper-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "厚紙チラシ",
+      "ambiguous": false,
+      "text": " \"偽造防止用紙\"], \"body\": \"カスタム 厚紙チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 895,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "same-day-flyers",
+      "ambiguous": false,
+      "text": " \"ja\": \"厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro\" } }, \"same-day-flyers\": { \"name\": { \"zh-hk\": \"即日傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 902,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "即日チラシ",
+      "ambiguous": false,
+      "text": " \"ja\": \"即日チラシ\" }, \"seo\": { \"zh-hk\": { \"title\": \"即日印刷 傳單 100張起 HK$0.55起 圓角・覆膜 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 41,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "即日チラシ",
+      "ambiguous": false,
+      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 923,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "即日チラシ",
+      "ambiguous": false,
+      "text": " \"description\": \"即日チラシ印刷 100 枚から、¥125〜。157-300g コート紙、A4/A5/A6/DL 対応、4 色 CMYK フルカラー。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 926,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "即日チラシ",
+      "ambiguous": false,
+      "text": " \"偽造防止用紙\"], \"body\": \"カスタム 即日チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 938,
+      "slug": "eco-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "eco-flyers",
+      "ambiguous": true,
+      "text": " \"ja\": \"即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro\" } }, \"eco-flyers\": { \"name\": { \"zh-hk\": \"環保傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 938,
+      "slug": "same-day-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "即日チラシ",
+      "ambiguous": true,
+      "text": " \"ja\": \"即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro\" } }, \"eco-flyers\": { \"name\": { \"zh-hk\": \"環保傳單印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 950,
+      "slug": "eco-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "環保傳單印刷",
+      "ambiguous": false,
+      "text": " \"description\": \"環保傳單印刷/環保印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 41,
+      "slug": "eco-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "エコチラシ",
+      "ambiguous": false,
+      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 965,
+      "slug": "eco-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "エコチラシ",
+      "ambiguous": false,
+      "text": " \"description\": \"エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 968,
+      "slug": "eco-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "エコチラシ",
+      "ambiguous": false,
+      "text": " \"偽造防止用紙\"], \"body\": \"カスタム エコチラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 992,
+      "slug": "a2-posters",
+      "truth": 10,
+      "found": 1,
+      "anchor": "A2海報印刷",
+      "ambiguous": false,
+      "text": " \"高解析度海報\"], \"body\": \"A2海報印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。1 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，Giclée 級 1200 DPI 印刷（藝術品級），FSC 認證紙張，可持續來源，15+ 年"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 印海報一張室內短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 印海報一張室內短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "a2-posters",
+      "truth": 10,
+      "found": 1,
+      "anchor": "A2 Poster Printing",
+      "ambiguous": false,
+      "text": "**💡 小訂單適用承諾**: 1 張起印, 無最低消費, 即日打稿 2 小時。\\n每日 18:00 前落單即日交貨, 港九新界滿 $500 免費順豐。\\nWhatsApp 5 分鐘報價 → wa.me/8619880851334\" }, \"en\": { \"title\": \"A2 Poster Pr"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1041,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: A1 海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1041,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: A1 海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1080,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 10,
+      "anchor": "戶外海報",
+      "ambiguous": false,
+      "text": " \"description\": \"戶外海報/戶外海報 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1084,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": false,
+      "text": " \"高解析度海報\"], \"body\": \"戶外海報 專為香港中小企、本地餐廳及跨境電商品牌設計。1 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，Giclée 級 1200 DPI 印刷（藝術品級），FSC 認證紙張，可持續來源，15+ 年印刷"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1085,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 戶外海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1085,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 戶外海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "Outdoor Posters",
+      "ambiguous": false,
+      "text": "**💡 小訂單適用承諾**: 1 張起印, 無最低消費, 即日打稿 2 小時。\\n每日 18:00 前落單即日交貨, 港九新界滿 $500 免費順豐。\\nWhatsApp 5 分鐘報價 → wa.me/8619880851334\" }, \"en\": { \"title\": \"Outdoor Post"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1097,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 10,
+      "anchor": "屋外ポスター",
+      "ambiguous": false,
+      "text": " \"description\": \"屋外ポスターの屋外ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1124,
+      "slug": "display-posters",
+      "truth": 100,
+      "found": 10,
+      "anchor": "展架海報",
+      "ambiguous": false,
+      "text": " \"description\": \"展架海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1127,
+      "slug": "display-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "展架海報",
+      "ambiguous": false,
+      "text": " \"高解析度海報\"], \"body\": \"展架海報 專為香港中小企、本地餐廳及跨境電商品牌設計。1 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，Giclée 級 1200 DPI 印刷（藝術品級），FSC 認證紙張，可持續來源，15+ 年印刷"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1128,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 展架海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1128,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 展架海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1128,
+      "slug": "display-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "展架海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 展架海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "display-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "Display Posters",
+      "ambiguous": false,
+      "text": "**💡 小訂單適用承諾**: 1 張起印, 無最低消費, 即日打稿 2 小時。\\n每日 18:00 前落單即日交貨, 港九新界滿 $500 免費順豐。\\nWhatsApp 5 分鐘報價 → wa.me/8619880851334\" }, \"en\": { \"title\": \"Display Post"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1167,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 藝術海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1167,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 藝術海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1170,
+      "slug": "art-posters",
+      "truth": 1,
+      "found": 50,
+      "anchor": "Art Posters",
+      "ambiguous": false,
+      "text": " \"description\": \"Art Posters custom printing, premium matte art paper. Free design mockup, 50 MOQ, Free Shipping $99+. 4-day USA delivery for artists."
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 41,
+      "slug": "art-posters",
+      "truth": 1,
+      "found": 100,
+      "anchor": "アートポスター",
+      "ambiguous": false,
+      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1179,
+      "slug": "art-posters",
+      "truth": 1,
+      "found": 10,
+      "anchor": "アートポスター",
+      "ambiguous": false,
+      "text": " \"description\": \"アートポスターのアートポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1182,
+      "slug": "art-posters",
+      "truth": 1,
+      "found": 100,
+      "anchor": "アートポスター",
+      "ambiguous": false,
+      "text": " \"飲食ポスター印刷\"], \"body\": \"カスタム アートポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1206,
+      "slug": "adhesive-posters",
+      "truth": 100,
+      "found": 10,
+      "anchor": "背膠海報",
+      "ambiguous": false,
+      "text": " \"description\": \"背膠海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1209,
+      "slug": "adhesive-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "背膠海報",
+      "ambiguous": false,
+      "text": " \"高解析度海報\"], \"body\": \"背膠海報 專為香港中小企、本地餐廳及跨境電商品牌設計。1 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，Giclée 級 1200 DPI 印刷（藝術品級），FSC 認證紙張，可持續來源，15+ 年印刷"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1210,
+      "slug": "waterproof-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "PVC 防水",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 背膠海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1210,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 背膠海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1210,
+      "slug": "adhesive-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "背膠海報",
+      "ambiguous": true,
+      "text": "**小訂單選擇指南**: 背膠海報短期推廣選 200g 銅版紙（最平 $4 起）, 高級場景選 250g 啞粉紙, 戶外海報選 PVC 防水。港九新界滿 HK$500 免費順豐, 1 張起印無最低消費。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 993,
+      "slug": "adhesive-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "Adhesive Posters",
+      "ambiguous": false,
+      "text": "**💡 小訂單適用承諾**: 1 張起印, 無最低消費, 即日打稿 2 小時。\\n每日 18:00 前落單即日交貨, 港九新界滿 $500 免費順豐。\\nWhatsApp 5 分鐘報價 → wa.me/8619880851334\" }, \"en\": { \"title\": \"Adhesive Pos"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1222,
+      "slug": "adhesive-posters",
+      "truth": 100,
+      "found": 10,
+      "anchor": "粘着ポスター",
+      "ambiguous": false,
+      "text": " \"description\": \"粘着ポスターの粘着ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1384,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 10,
+      "anchor": "飛機盒",
+      "ambiguous": false,
+      "text": " \"香港本地印刷\"], \"body\": \"快遞盒/飛機盒 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\\n\\"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1510,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom foil red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1552,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom embossed red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1595,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom custom red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Fr"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1607,
+      "slug": "custom-red-packets",
+      "truth": 100,
+      "found": 500,
+      "anchor": "オリジナルポチ袋",
+      "ambiguous": false,
+      "text": "オリジナルポチ袋で、新年のご挨拶を特別なものに。まずは無料のお見積りをどうぞ。日本語対応スタッフがデザインのご相談から納期の調整まで丁寧にサポートします。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，春節旺季建議提前1個月下單。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1633,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom cartoon red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | F"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1645,
+      "slug": "cartoon-red-packets",
+      "truth": 100,
+      "found": 500,
+      "anchor": "キャラクターポチ袋",
+      "ambiguous": false,
+      "text": "かわいいキャラクターポチ袋で、お年玉の時間をもっと楽しく。日本語対応スタッフが無料でお見積りいたします。WhatsAppまたはお問い合わせフォームから、デザインと数量をお送りください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，春節旺季"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1668,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": "環保利是封 100 個起印，價格由 HK$1.90-5.20/個 起，實際收費視乎紙材與印刷方式而定，批量訂購可向智印港查詢專屬報價。\" }, \"en\": { \"title\": \"Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1671,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom eco red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1683,
+      "slug": "eco-red-packets",
+      "truth": 100,
+      "found": 500,
+      "anchor": "エコポチ袋",
+      "ambiguous": false,
+      "text": "エコポチ袋で、環境にやさしい新年のご挨拶を。無料のお見積りは日本語対応スタッフが承ります。WhatsAppまたはお問い合わせフォームからお気軽にご連絡ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，春節旺季建議提前1個月下單。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1706,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": "大號利是封 100 個起印，價格由 HK$2.20-7.50/個 起，實際收費視乎紙材與工藝組合而定，批量訂購可向智印港查詢更優惠的報價。\" }, \"en\": { \"title\": \"Large Red Packets | Gold Foil Print | Free US Ship | Zprin"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1709,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": " \"description\": \"Custom large red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Fre"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1721,
+      "slug": "large-red-packets",
+      "truth": 100,
+      "found": 500,
+      "anchor": "大判ポチ袋",
+      "ambiguous": false,
+      "text": "大きめのお年玉もスマートに包める大判ポチ袋。無料のお見積りは日本語で対応いたします。WhatsAppまたはお問い合わせフォームからお気軽にご連絡ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，春節旺季建議提前1個月下單。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1740,
+      "slug": "wall-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "掛牆年曆",
+      "ambiguous": false,
+      "text": " \"description\": \"掛牆年曆/掛牆年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1756,
+      "slug": "wall-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "壁掛けカレンダー",
+      "ambiguous": false,
+      "text": " \"description\": \"壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1778,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 1000,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " \"ja\": \"卓上カレンダー\" }, \"seo\": { \"zh-hk\": { \"title\": \"座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1783,
+      "slug": "desk-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "座檯年曆",
+      "ambiguous": false,
+      "text": " \"description\": \"座檯年曆/座檯年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1845,
+      "slug": "custom-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "オリジナルカレンダー",
+      "ambiguous": false,
+      "text": "オリジナルカレンダーで2027年のブランド訴求を始めましょう。日本語対応スタッフがお見積もりと納期を丁寧にご案内します。まずはWhatsAppまたはお問い合わせフォームからご相談ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50本起訂，大批量"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1864,
+      "slug": "mini-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "迷你年曆",
+      "ambiguous": false,
+      "text": " \"description\": \"迷你年曆/迷你年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1879,
+      "slug": "mini-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "ミニカレンダー",
+      "ambiguous": false,
+      "text": " \"description\": \"ミニカレンダーのミニカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1883,
+      "slug": "mini-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "ミニカレンダー",
+      "ambiguous": false,
+      "text": "小さくても存在感のあるミニカレンダーで、お客様とのつながりを一年間続けませんか。ZprintProが無料レイアウトから高品質印刷までトータルサポートします。ぜひお気軽にご相談ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50本起訂，大批量訂單"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1902,
+      "slug": "photo-frame-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "相框年曆",
+      "ambiguous": false,
+      "text": " \"description\": \"相框年曆/相框年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1917,
+      "slug": "photo-frame-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "フォトフレームカレンダー",
+      "ambiguous": false,
+      "text": " \"description\": \"フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1921,
+      "slug": "photo-frame-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "フォトフレームカレンダー",
+      "ambiguous": false,
+      "text": "写真とともに一年を彩るフォトフレームカレンダーを、ZprintProで高品質に仕上げませんか。デザイン無料サポート付きで、ギフトにも販促品にも最適です。ぜひお見積もりをご依頼ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50本起訂，大批量訂單"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1935,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 1000,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " \"ja\": \"マグネットカレンダー\" }, \"seo\": { \"zh-hk\": { \"title\": \"磁吸年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1955,
+      "slug": "magnetic-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "マグネットカレンダー",
+      "ambiguous": false,
+      "text": " \"description\": \"マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1959,
+      "slug": "magnetic-calendars",
+      "truth": 1000,
+      "found": 50,
+      "anchor": "マグネットカレンダー",
+      "ambiguous": false,
+      "text": "実用性と宣伝効果を兼ね備えたマグネットカレンダーを、ZprintProの自社工場から高品質・短納期でお届けします。日本語対応スタッフがお見積もりをお手伝いしますので、ぜひご相談ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50本起訂，大批量訂"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1973,
+      "slug": "pvc-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "PVCメニュー",
+      "ambiguous": false,
+      "text": " \"ja\": \"PVCメニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1998,
+      "slug": "pvc-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "PVCメニュー",
+      "ambiguous": false,
+      "text": "**Q1: PVCメニューの最小注文数は？**\\nZprintProのほとんどの商品は50〜100枚からの最小注文です。即日少量の急ぎは10枚から対応。大量注文は段階割引があります。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2016,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "過膠餐牌",
+      "ambiguous": false,
+      "text": " \"ja\": \"ラミネートメニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"過膠餐牌 | 防水 覆膜 50本起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2021,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "過膠餐牌",
+      "ambiguous": false,
+      "text": " \"description\": \"過膠餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2041,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ラミネートメニュー",
+      "ambiguous": false,
+      "text": "**Q1: ラミネートメニューの最小注文数は？**\\n最小注文は100枚から。即日少量の急ぎは10枚から対応し、大量注文は段階割引の対象です。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2059,
+      "slug": "hardcover-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "精裝餐牌",
+      "ambiguous": false,
+      "text": " \"ja\": \"高級メニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"精裝餐牌 | 防水 覆膜 50本起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2064,
+      "slug": "hardcover-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "精裝餐牌",
+      "ambiguous": false,
+      "text": " \"description\": \"精裝餐牌/精裝餐牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2084,
+      "slug": "hardcover-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "高級メニュー",
+      "ambiguous": false,
+      "text": "**Q1: 高級メニューの最小注文数は？**\\nZprintProのほとんどの商品は50〜100冊からの最小注文です。即日少量の急ぎは10部から対応。大量注文は段階割引があります。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2095,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "drink-menus",
+      "ambiguous": true,
+      "text": " \"ja\": \"一般為50個起訂，一次性餐牌可接受10個起。\" } }, \"drink-menus\": { \"name\": { \"zh-hk\": \"酒水牌\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2095,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 50,
+      "anchor": "一次性餐牌",
+      "ambiguous": true,
+      "text": " \"ja\": \"一般為50個起訂，一次性餐牌可接受10個起。\" } }, \"drink-menus\": { \"name\": { \"zh-hk\": \"酒水牌\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2095,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 10,
+      "anchor": "一次性餐牌",
+      "ambiguous": true,
+      "text": " \"ja\": \"一般為50個起訂，一次性餐牌可接受10個起。\" } }, \"drink-menus\": { \"name\": { \"zh-hk\": \"酒水牌\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2102,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ドリンクメニュー",
+      "ambiguous": false,
+      "text": " \"ja\": \"ドリンクメニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"餐廳酒水牌 | 防水 覆膜 圓角 | 100本起 HK$12起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2118,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ドリンクメニュー",
+      "ambiguous": false,
+      "text": "Ready to start? Ask for a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or use the \\\"30-second AI quote\\\" button on this page.\" }, \"ja"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2122,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "ドリンクメニュー",
+      "ambiguous": false,
+      "text": " \"description\": \"ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2126,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ドリンクメニュー",
+      "ambiguous": false,
+      "text": "**Q1: ドリンクメニューの最小注文数は？**\\n最小注文は100枚からご注文いただけます。即日少量の急ぎは10枚から対応。大量注文は段階割引があり、詳細はお問い合わせください。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2126,
+      "slug": "drink-menus",
+      "truth": 10,
+      "found": 50,
+      "anchor": "ドリンクメニュー",
+      "ambiguous": true,
+      "text": "お店の雰囲気に合う、洗練されたドリンクメニューをお求めならZprintProへ。無料レイアウトサービスと日本語サポートで、初めての方でも安心してご注文いただけます。ぜひお問い合わせください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50個起訂，一次"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2126,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 50,
+      "anchor": "一次性餐牌",
+      "ambiguous": true,
+      "text": "お店の雰囲気に合う、洗練されたドリンクメニューをお求めならZprintProへ。無料レイアウトサービスと日本語サポートで、初めての方でも安心してご注文いただけます。ぜひお問い合わせください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50個起訂，一次"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2126,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 10,
+      "anchor": "一次性餐牌",
+      "ambiguous": true,
+      "text": "お店の雰囲気に合う、洗練されたドリンクメニューをお求めならZprintProへ。無料レイアウトサービスと日本語サポートで、初めての方でも安心してご注文いただけます。ぜひお問い合わせください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為50個起訂，一次"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2145,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 50,
+      "anchor": "一次性餐牌",
+      "ambiguous": false,
+      "text": " \"description\": \"一次性餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2160,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 50,
+      "anchor": "使い捨てメニュー",
+      "ambiguous": false,
+      "text": " \"description\": \"使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2164,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 10,
+      "anchor": "使い捨てメニュー",
+      "ambiguous": false,
+      "text": "**Q1: 使い捨てメニューの最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100枚からの最小注文です。即日少量の急ぎは10枚から対応。大量注文は段階割引があり、お気軽にお問い合わせください。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2164,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 50,
+      "anchor": "一次性餐牌",
+      "ambiguous": false,
+      "text": "手軽に使えてコストも抑えられる使い捨てメニューで、お店のメニュー運用をもっとラクにしませんか。ZprintProの日本語サポートで、デザインから納品までスピーディーにご案内します。お気軽にご相談ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為5"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2164,
+      "slug": "disposable-menus",
+      "truth": 100,
+      "found": 10,
+      "anchor": "一次性餐牌",
+      "ambiguous": false,
+      "text": "手軽に使えてコストも抑えられる使い捨てメニューで、お店のメニュー運用をもっとラクにしませんか。ZprintProの日本語サポートで、デザインから納品までスピーディーにご案内します。お気軽にご相談ください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為5"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2269,
+      "slug": "adhesive-banners",
+      "truth": 100,
+      "found": 1,
+      "anchor": "背膠噴繪",
+      "ambiguous": false,
+      "text": " \"description\": \"背膠噴繪/噴繪 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2399,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 100,
+      "anchor": "カタログ印刷",
+      "ambiguous": false,
+      "text": "Ready to turn your artwork into a catalog customers keep? Get a free digital proof within 1 hour — message +86 198 8085 1334 on WhatsApp or click the "
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2418,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 50,
+      "anchor": "カタログ印刷",
+      "ambiguous": true,
+      "text": " \"ja\": \"カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro\" } }, \"saddle-stitch-booklets\": { \"name\": { \"zh-hk\": \"騎馬釘小冊子\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2418,
+      "slug": "saddle-stitch-booklets",
+      "truth": 10,
+      "found": 50,
+      "anchor": "saddle-stitch-booklets",
+      "ambiguous": true,
+      "text": " \"ja\": \"カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro\" } }, \"saddle-stitch-booklets\": { \"name\": { \"zh-hk\": \"騎馬釘小冊子\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2461,
+      "slug": "saddle-stitch-booklets",
+      "truth": 10,
+      "found": 50,
+      "anchor": "中綴じ冊子印刷",
+      "ambiguous": true,
+      "text": " \"ja\": \"中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro\" } }, \"perfect-bound-books\": { \"name\": { \"zh-hk\": \"無線膠裝書籍\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2461,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "perfect-bound-books",
+      "ambiguous": true,
+      "text": " \"ja\": \"中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro\" } }, \"perfect-bound-books\": { \"name\": { \"zh-hk\": \"無線膠裝書籍\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1645,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "無線綴じ書籍",
+      "ambiguous": false,
+      "text": "**Q1: 最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100個/部/枚から注文できます。無線綴じ書籍は100冊から承ります。大量注文は段階割引で対応しています。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2522,
+      "slug": "hardcover-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "ハードカバー書籍",
+      "ambiguous": false,
+      "text": "Start your keepsake today — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \\\"30-second AI quote\\\" but"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2526,
+      "slug": "hardcover-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "ハードカバー書籍",
+      "ambiguous": false,
+      "text": " \"description\": \"ハードカバー書籍のハードカバー書籍は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2530,
+      "slug": "hardcover-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ハードカバー書籍",
+      "ambiguous": false,
+      "text": "**Q1: 最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100個/部/枚からご注文可能です。ハードカバー書籍は100冊から承ります。大量注文には段階割引があります。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2560,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "スパイラルノート",
+      "ambiguous": false,
+      "text": "Put your brand on something people use daily — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \\\"30-se"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2564,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "スパイラルノート",
+      "ambiguous": false,
+      "text": " \"description\": \"スパイラルノートのスパイラルノートは ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2567,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 100,
+      "anchor": "スパイラルノート",
+      "ambiguous": false,
+      "text": " \"spiral notebooks\"], \"body\": \"スパイラルノート印刷は、企業ギフト、研修教材、学校記念品、教材など幅広いシーンで活躍するオリジナルノートです。ZprintPro は金属・プラスチックのYOリング製本で、ページの差し替えもできる実用的なノートを100冊から承ります。\\n\\"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2530,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 100,
+      "anchor": "スパイラルノート",
+      "ambiguous": false,
+      "text": "**Q1: 最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100個/部/枚からご注文可能です。スパイラルノートは100冊から承ります。大量注文は段階割引が適用されます。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2579,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "スパイラルノート",
+      "ambiguous": true,
+      "text": " \"ja\": \"スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro\" } }, \"business-envelopes\": { \"name\": { \"zh-hk\": \"公司信封\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2579,
+      "slug": "business-envelopes",
+      "truth": 100,
+      "found": 50,
+      "anchor": "business-envelopes",
+      "ambiguous": true,
+      "text": " \"ja\": \"スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro\" } }, \"business-envelopes\": { \"name\": { \"zh-hk\": \"公司信封\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2665,
+      "slug": "large-envelopes",
+      "truth": 100,
+      "found": 500,
+      "anchor": "large-envelopes",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為500個起訂，彩色和特殊材質需1000個起。\" } }, \"large-envelopes\": { \"name\": { \"zh-hk\": \"大號信封\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2665,
+      "slug": "large-envelopes",
+      "truth": 100,
+      "found": 1000,
+      "anchor": "large-envelopes",
+      "ambiguous": false,
+      "text": " \"ja\": \"一般為500個起訂，彩色和特殊材質需1000個起。\" } }, \"large-envelopes\": { \"name\": { \"zh-hk\": \"大號信封\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2696,
+      "slug": "large-envelopes",
+      "truth": 100,
+      "found": 500,
+      "anchor": "大判封筒",
+      "ambiguous": false,
+      "text": "大判封筒の品質を確かめるなら、まずは無料見積もり・サンプルをご依頼ください。ZprintProの日本語サポートがスピーディーに対応します。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，彩色和特殊材質需1000個起。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2696,
+      "slug": "large-envelopes",
+      "truth": 100,
+      "found": 1000,
+      "anchor": "大判封筒",
+      "ambiguous": false,
+      "text": "大判封筒の品質を確かめるなら、まずは無料見積もり・サンプルをご依頼ください。ZprintProの日本語サポートがスピーディーに対応します。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為500個起訂，彩色和特殊材質需1000個起。\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2788,
+      "slug": "exercise-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "練習帳印刷",
+      "ambiguous": true,
+      "text": " \"ja\": \"練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro\" } }, \"certificates\": { \"name\": { \"zh-hk\": \"證書印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2788,
+      "slug": "certificates",
+      "truth": 100,
+      "found": 50,
+      "anchor": "certificates",
+      "ambiguous": true,
+      "text": " \"ja\": \"練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro\" } }, \"certificates\": { \"name\": { \"zh-hk\": \"證書印刷\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2820,
+      "slug": "certificates",
+      "truth": 100,
+      "found": 10,
+      "anchor": "証明書印刷",
+      "ambiguous": false,
+      "text": "**FAQ**\\n**Q1: 証明書印刷の最小注文数はいくつですか？**\\nA1: ZprintPro のほとんどの商品は 50〜100 部/枚からの最小注文です。証明書は 100 枚から承り、少量でお急ぎの場合は 10 枚から対応可能です。大量注文は段階割引がありますので、お気軽にお問い合わせくだ"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2831,
+      "slug": "school-flyers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "school-flyers",
+      "ambiguous": false,
+      "text": " \"ja\": \"賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro\" } }, \"school-flyers\": { \"name\": { \"zh-hk\": \"學校單張\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2915,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 50,
+      "anchor": "教科書印刷",
+      "ambiguous": true,
+      "text": " \"ja\": \"教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro\" } }, \"magnetic-closure-gift-box\": { \"name\": { \"zh-hk\": \"磁吸翻蓋禮盒\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2915,
+      "slug": "magnetic-closure-gift-box",
+      "truth": 100,
+      "found": 50,
+      "anchor": "magnetic-closure-gift-box",
+      "ambiguous": true,
+      "text": " \"ja\": \"教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro\" } }, \"magnetic-closure-gift-box\": { \"name\": { \"zh-hk\": \"磁吸翻蓋禮盒\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2973,
+      "slug": "electronics-packaging-box",
+      "truth": 200,
+      "found": 100,
+      "anchor": "電子產品包裝盒定製",
+      "ambiguous": false,
+      "text": " \"香港本地印刷\"], \"body\": \"電子產品包裝盒定製 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2988,
+      "slug": "electronics-packaging-box",
+      "truth": 200,
+      "found": 100,
+      "anchor": "電子機器包裝箱",
+      "ambiguous": false,
+      "text": " \"食品グレード箱\"], \"body\": \"カスタム 電子機器包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3097,
+      "slug": "fruit-food-label-stickers",
+      "truth": 500,
+      "found": 10,
+      "anchor": "水果貼紙食品標籤印刷",
+      "ambiguous": false,
+      "text": " \"高透貼紙\"], \"body\": \"水果貼紙食品標籤印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3112,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "透明ステッカー",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム フルーツ・食品ラベルシール — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3112,
+      "slug": "fruit-food-label-stickers",
+      "truth": 500,
+      "found": 100,
+      "anchor": "フルーツ・食品ラベルシール",
+      "ambiguous": true,
+      "text": " \"高透明ステッカー\"], \"body\": \"カスタム フルーツ・食品ラベルシール — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3192,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 50,
+      "anchor": "Free Design",
+      "ambiguous": false,
+      "text": " \"description\": \"Acrylic Keychain, 2mm/3mm clear acrylic. Free Design, 50 MOQ, Free Shipping $99+. 4-day USA delivery for anime & creator brands. | Zp"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3388,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 50,
+      "anchor": "Free Design",
+      "ambiguous": false,
+      "text": " \"description\": \"Graduation Yearbook, hardcover & softcover binding. Free Design, 50 MOQ, Free Shipping $99+. 4-day USA delivery for schools. | Zprint"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3409,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 100,
+      "anchor": "社團特刊",
+      "ambiguous": false,
+      "text": " \"a\": \"校友會刊 / 社團特刊 100 本起印, 支持班級照片 + 師長題詞 + 學校 logo 全頁\" }, { \"q\": \"膠裝精裝比較\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3418,
+      "slug": "premium-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "高級賀卡",
+      "ambiguous": false,
+      "text": " \"ja\": \"プレミアムグリーティングカード\" }, \"seo\": { \"zh-hk\": { \"title\": \"高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3423,
+      "slug": "wedding-thank-you-cards",
+      "truth": 50,
+      "found": 10,
+      "anchor": "婚禮感謝卡",
+      "ambiguous": true,
+      "text": " \"description\": \"高級賀卡印刷：300g 銅版紙或啞粉藝術紙，啞膠／光膠覆膜、局部UV、燙金、圓角模切多種工藝任選，自訂尺寸與刀模均可。127×178mm 標準，10 張起印 HK$100 起。適用聖誕卡、新年卡、婚禮感謝卡及企業賀卡，可印 LOGO 與品牌配色，免費設計打稿，即日報"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3635,
+      "slug": "matte-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "Matte Greeting Cards",
+      "ambiguous": false,
+      "text": "收費透明：啞膜賀卡售價為 HK$110-190/100張，最低訂量 100 張起，價格以港幣計算，大量訂購另享優惠，歡迎查詢批量報價。\" }, \"en\": { \"title\": \"Matte Greeting Cards 100pcs Soft-Touch | ZprintPro\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3675,
+      "slug": "rounded-corner-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "圓角賀卡",
+      "ambiguous": false,
+      "text": " \"ja\": \"角丸グリーティングカード\" }, \"seo\": { \"zh-hk\": { \"title\": \"圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3691,
+      "slug": "rounded-corner-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "角丸グリーティングカード",
+      "ambiguous": false,
+      "text": "Ready to order your rounded-corner cards? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \\\"30-second AI quote\\\" butt"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3694,
+      "slug": "rounded-corner-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "角丸グリーティングカード",
+      "ambiguous": false,
+      "text": " \"description\": \"角丸グリーティングカード印刷：R3mmのやさしい丸角型抜き、300gコート紙またはアート紙。127×178mm標準、100枚〜HK$100〜。誕生日・クリスマス・感謝・記念カードに最適、サイズ・型抜きもオーダー可能です、オリジナルデザイン対応。無料デザイン校正、即日"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3726,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " \"keywords\": [], \"body\": \"ドリンクの説明やメニュー紹介、Wi-Fi案内、新商品の告知など、テーブルカードは飲食店の接客をスムーズにする小さな看板です。ZprintProのテーブルカードは、カフェやレストラン向けに50〜100枚からご注文いただけます。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3746,
+      "slug": "drink-tokens",
+      "truth": 50,
+      "found": 100,
+      "anchor": "ドリンクトークン",
+      "ambiguous": false,
+      "text": " \"keywords\": [], \"body\": \"グラスにつけるドリンクトークンは、披露宴のドリンクバーやプールパーティー、ホテルやバーのイベントで、お客様のドリンクを正確に識別するのに便利なアイテムです。ZprintProでは50〜100枚からご注文いただけます。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3754,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 50,
+      "anchor": "Gold",
+      "ambiguous": true,
+      "text": "收費方面，座位卡以每張 NT$8-35 計價，50 張起印；批量訂單另議優惠，歡迎向智印港查詢報價。\" }, \"en\": { \"title\": \"Escort Cards 50 Sets Gold Foil Stand-Up | ZprintPro\","
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3756,
+      "slug": "escort-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "エスコートカード",
+      "ambiguous": false,
+      "text": " \"keywords\": [], \"body\": \"披露宴やホテル結婚式で、ゲストの名前とテーブル番号を案内するエスコートカードは、会場の印象を左右する大切な演出アイテムです。ZprintProのエスコートカードは、50〜100枚から、上質な紙と箔押しでお作りします。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3776,
+      "slug": "name-tags-badges",
+      "truth": 50,
+      "found": 100,
+      "anchor": "会議バッジ",
+      "ambiguous": false,
+      "text": " \"keywords\": [], \"body\": \"会議や展示会、研修などの法人イベントで、参加者の名前をスムーズに確認できる名札（ネームバッジ）は、コミュニケーションを円滑にする必需品です。ZprintProの会議バッジは、50〜100枚からご注文いただけます。\\n\\n"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 3816,
+      "slug": "wedding-place-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "ウエディング席札",
+      "ambiguous": false,
+      "text": " \"keywords\": [], \"body\": \"披露宴の各テーブルに置く席札は、ゲストの着席を案内するだけでなく、会場のテーマや新郎新婦のこだわりを伝える大切なアイテムです。ZprintProのウエディング席札は、50〜100枚からお作りします。\\n\\n"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 77,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小批量貼紙",
+      "ambiguous": false,
+      "text": " <h3>常見問題 (FAQ) — 2026-08 更新</h3> <details class=\"my-2\"><summary><strong>小批量貼紙的最低起印量（MOQ）是多少？</strong></summary><p>防水 Vinyl／透明 PVC 50 張起，銅版紙／牛皮紙／雷射／燙金"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 77,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "小批量貼紙",
+      "ambiguous": false,
+      "text": " <h3>常見問題 (FAQ) — 2026-08 更新</h3> <details class=\"my-2\"><summary><strong>小批量貼紙的最低起印量（MOQ）是多少？</strong></summary><p>防水 Vinyl／透明 PVC 50 張起，銅版紙／牛皮紙／雷射／燙金"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 505,
+      "slug": "foil-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "箔押しグリーティングカード",
+      "ambiguous": false,
+      "text": "</details> `, longDescriptionJa: `<h3>グローバルブランド向け 箔押しグリーティングカード</h3> <p>ZprintPro の箔押しグリーティングカードは、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランド"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 976,
+      "slug": "matte-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "マットラミネートグリーティングカード",
+      "ambiguous": false,
+      "text": "</details> `, longDescriptionJa: `<h3>グローバルブランド向け マットラミネートグリーティングカード</h3> <p>ZprintPro のマットラミネートグリーティングカードは、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにく"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1208,
+      "slug": "rounded-corner-greeting-cards",
+      "truth": 10,
+      "found": 100,
+      "anchor": "角丸グリーティングカード",
+      "ambiguous": false,
+      "text": "</details> `, longDescriptionJa: `<h3>モダンブランド向け 角丸グリーティングカード</h3> <p>ZprintPro の角丸グリーティングカードは、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現するグリーティングカード印刷サービスです。ク"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1575,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 50,
+      "anchor": "小ロットステッカー",
+      "ambiguous": false,
+      "text": " <h3>よくある質問 (FAQ) — 2026-08 更新</h3> <details class=\"my-2\"><summary><strong>小ロットステッカーの最小注文数量（MOQ）は？</strong></summary><p>防水 Vinyl／透明 PVC 50 枚〜、アート紙・クラフ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1575,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "小ロットステッカー",
+      "ambiguous": false,
+      "text": " <h3>よくある質問 (FAQ) — 2026-08 更新</h3> <details class=\"my-2\"><summary><strong>小ロットステッカーの最小注文数量（MOQ）は？</strong></summary><p>防水 Vinyl／透明 PVC 50 枚〜、アート紙・クラフ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1658,
+      "slug": "transparent-stickers",
+      "truth": 10,
+      "found": 20,
+      "anchor": "透明ステッカー",
+      "ambiguous": false,
+      "text": "</details>`, longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器裝飾・アーティスト・クリエイター向けに、無地感ラベルやガ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1775,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ラベル印刷",
+      "ambiguous": false,
+      "text": "</details> `, longDescriptionJa: `<h3>グローバルブランド向け 再剥離ステッカー</h3> <p>ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィン"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1449,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "小ロットステッカー",
+      "ambiguous": true,
+      "text": " <table> <thead> <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr> </thead> <tbody> <tr class=\"border-b border-gray-200\"><td>HP Indigo デジタル印刷<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1449,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 1,
+      "anchor": "小ロットステッカー",
+      "ambiguous": true,
+      "text": " <table> <thead> <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr> </thead> <tbody> <tr class=\"border-b border-gray-200\"><td>HP Indigo デジタル印刷<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1449,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 1,
+      "anchor": "大量印刷",
+      "ambiguous": true,
+      "text": " <table> <thead> <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr> </thead> <tbody> <tr class=\"border-b border-gray-200\"><td>HP Indigo デジタル印刷<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 1449,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 1,
+      "anchor": "大量印刷",
+      "ambiguous": true,
+      "text": " <table> <thead> <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr> </thead> <tbody> <tr class=\"border-b border-gray-200\"><td>HP Indigo デジタル印刷<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 2542,
+      "slug": "foil-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "箔押しステッカー",
+      "ambiguous": false,
+      "text": "</details> `, longDescriptionJa: `<h3>グローバルブランド向け 箔押しステッカー</h3> <p>ZprintPro の箔押しステッカーは、ロゴ・パッケージ・シールに金属光沢を加える高級印刷。金箔・銀箔・ローズゴールド箔・銅箔・ホログラム箔・ブラシメタル箔の 6 "
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 2781,
+      "slug": "small-batch-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "ラベル印刷",
+      "ambiguous": true,
+      "text": " `, longDescriptionJa: `<h3>グローバルブランド向け セキュリティステッカー（偽造防止）</h3> <p>ZprintPro のセキュリティステッカー（防偽ステッカー）は、製品の改ざん・偽造・不正アクセスを防ぐための高度なセキュリティ機能を搭載したラベル印刷サービスです。ボ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 2781,
+      "slug": "security-stickers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "セキュリティステッカー",
+      "ambiguous": true,
+      "text": " `, longDescriptionJa: `<h3>グローバルブランド向け セキュリティステッカー（偽造防止）</h3> <p>ZprintPro のセキュリティステッカー（防偽ステッカー）は、製品の改ざん・偽造・不正アクセスを防ぐための高度なセキュリティ機能を搭載したラベル印刷サービスです。ボ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 4795,
+      "slug": "a5-flyers",
+      "truth": 10,
+      "found": 100,
+      "anchor": "A5チラシ",
+      "ambiguous": true,
+      "text": "</details>`, longDescriptionJa: `当サービスではA5チラシ印刷 即日対応にこだわり、128gコート紙または100g上質紙を採用し、4色デジタル印刷で経済性と鮮やかな発色を両立させています。A5サイズ（148×210mm）はA4より約40%のコスト削減となり、飲食店・カ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 4795,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": true,
+      "text": "</details>`, longDescriptionJa: `当サービスではA5チラシ印刷 即日対応にこだわり、128gコート紙または100g上質紙を採用し、4色デジタル印刷で経済性と鮮やかな発色を両立させています。A5サイズ（148×210mm）はA4より約40%のコスト削減となり、飲食店・カ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 6564,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 500,
+      "anchor": "飛機盒",
+      "ambiguous": false,
+      "text": "</details> <h3>智印港 2026-07-18 飛機盒參考價格</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 6564,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 500,
+      "anchor": "飛機盒",
+      "ambiguous": false,
+      "text": "</details> <h3>智印港 2026-07-18 飛機盒參考價格</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "年度報告",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9563,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 100,
+      "anchor": "展覽圖錄",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>時尚品牌</strong> — 季節性產品目錄、品牌作品集、新季 lookbook</li> <li><strong>美妝護膚</strong> — 新品發佈手冊、產品型錄、禮盒說明書</li> <li><strong>藝術展覽</strong> — 展覽圖錄、藝"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9563,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 100,
+      "anchor": "展覽圖錄",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>時尚品牌</strong> — 季節性產品目錄、品牌作品集、新季 lookbook</li> <li><strong>美妝護膚</strong> — 新品發佈手冊、產品型錄、禮盒說明書</li> <li><strong>藝術展覽</strong> — 展覽圖錄、藝"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "年度報告",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9704,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "文學作品集",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>企業文化手冊</strong> — 員工手冊、新人 onboarding、品牌價值觀冊</li> <li><strong>活動場刊</strong> — 演唱會場刊、劇場節目單、展覽指南</li> <li><strong>文學作品集</strong> — 詩集、短"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9704,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "文學作品集",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>企業文化手冊</strong> — 員工手冊、新人 onboarding、品牌價值觀冊</li> <li><strong>活動場刊</strong> — 演唱會場刊、劇場節目單、展覽指南</li> <li><strong>文學作品集</strong> — 詩集、短"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9704,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 10,
+      "anchor": "社團特刊",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>企業文化手冊</strong> — 員工手冊、新人 onboarding、品牌價值觀冊</li> <li><strong>活動場刊</strong> — 演唱會場刊、劇場節目單、展覽指南</li> <li><strong>文學作品集</strong> — 詩集、短"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9704,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 100,
+      "anchor": "社團特刊",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>企業文化手冊</strong> — 員工手冊、新人 onboarding、品牌價值觀冊</li> <li><strong>活動場刊</strong> — 演唱會場刊、劇場節目單、展覽指南</li> <li><strong>文學作品集</strong> — 詩集、短"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9704,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 100,
+      "anchor": "社團特刊",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>企業文化手冊</strong> — 員工手冊、新人 onboarding、品牌價值觀冊</li> <li><strong>活動場刊</strong> — 演唱會場刊、劇場節目單、展覽指南</li> <li><strong>文學作品集</strong> — 詩集、短"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9794,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "文學作品集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>企業文化</strong> — 従業員ハンドブック、新人 onboarding 資料、品牌価値冊子</li> <li><strong>イベント場刊</strong> — コンサート場刊、劇場プログラム、展覧会ガイド</li> <li><strong>文學作品集</"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9794,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "文學作品集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>企業文化</strong> — 従業員ハンドブック、新人 onboarding 資料、品牌価値冊子</li> <li><strong>イベント場刊</strong> — コンサート場刊、劇場プログラム、展覧会ガイド</li> <li><strong>文學作品集</"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "年度報告",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9851,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "學術論文集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>學術論文集</strong> — 大學論文集、研究報告、會議論文集</li> <li><strong>上市公司年報</strong> — 年報、可持續發展報告、投資者關係手冊</li> <li><strong>CSR 社會責任報告</strong> — 企業 ES"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9851,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "學術論文集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>學術論文集</strong> — 大學論文集、研究報告、會議論文集</li> <li><strong>上市公司年報</strong> — 年報、可持續發展報告、投資者關係手冊</li> <li><strong>CSR 社會責任報告</strong> — 企業 ES"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9931,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "學術論文集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>學術論文集</strong> — 大學論文集、研究報告、學術会議プロシーディングス</li> <li><strong>企業年報</strong> — 年次報告書、サステナビリティレポート、IR 手冊</li> <li><strong>CSR / ESG レポート<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9931,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "學術論文集",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>學術論文集</strong> — 大學論文集、研究報告、學術会議プロシーディングス</li> <li><strong>企業年報</strong> — 年次報告書、サステナビリティレポート、IR 手冊</li> <li><strong>CSR / ESG レポート<"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "perfect-bound-books",
+      "truth": 10,
+      "found": 50,
+      "anchor": "年度報告",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 50,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-64 頁 A4/A5/B5，可平攤翻頁 180 度</td"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9988,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 100,
+      "anchor": "攝影集",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>婚慶紀念書</strong> — 婚紗攝影集、結婚紀念冊、周年慶禮物書</li> <li><strong>家族史冊</strong> — 家族族譜、移民史、家族回憶錄</li> <li><strong>校友會刊</strong> — 畢業紀念冊、同學會紀念、校友會"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9988,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 100,
+      "anchor": "攝影集",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>婚慶紀念書</strong> — 婚紗攝影集、結婚紀念冊、周年慶禮物書</li> <li><strong>家族史冊</strong> — 家族族譜、移民史、家族回憶錄</li> <li><strong>校友會刊</strong> — 畢業紀念冊、同學會紀念、校友會"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9988,
+      "slug": "hardcover-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "婚慶紀念書",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>婚慶紀念書</strong> — 婚紗攝影集、結婚紀念冊、周年慶禮物書</li> <li><strong>家族史冊</strong> — 家族族譜、移民史、家族回憶錄</li> <li><strong>校友會刊</strong> — 畢業紀念冊、同學會紀念、校友會"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 9988,
+      "slug": "hardcover-books",
+      "truth": 10,
+      "found": 100,
+      "anchor": "婚慶紀念書",
+      "ambiguous": true,
+      "text": " <ul> <li><strong>婚慶紀念書</strong> — 婚紗攝影集、結婚紀念冊、周年慶禮物書</li> <li><strong>家族史冊</strong> — 家族族譜、移民史、家族回憶錄</li> <li><strong>校友會刊</strong> — 畢業紀念冊、同學會紀念、校友會"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 10068,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 100,
+      "anchor": "卒業記念アルバム",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>結婚記念アルバム</strong> — 結婚寫真集、結婚記念冊、周年記念ギフトブック</li> <li><strong>家族史</strong> — 家系図、移民史、家族回想録</li> <li><strong>同窓会誌</strong> — 卒業記念アルバム、ク"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 200,
+      "anchor": "學年教材",
+      "ambiguous": false,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-32 頁，練習簿、單元測驗卷、操卷用書</td></tr>"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 10557,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 10,
+      "anchor": "學年教材",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>補習社</strong> — DSE 練習冊、補習班專屬教材、TSA 模擬試練習</li> <li><strong>K12 學校</strong> — 小學作業本、中學課堂練習、學年教材</li> <li><strong>國際學校</strong> — IGCSE"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 10643,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 50,
+      "anchor": "學年教材",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>予備校・塾</strong> — 練習帳、塾専用教材、模擬試験対策</li> <li><strong>K12 學校</strong> — 小學校ワークブック、中學校授業練習、學年教材</li> <li><strong>インターナショナルスクール</strong> "
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 200,
+      "anchor": "學年教材",
+      "ambiguous": false,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-32 頁，練習簿、單元測驗卷、操卷用書</td></tr>"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 10700,
+      "slug": "certificates",
+      "truth": 100,
+      "found": 10,
+      "anchor": "畢業證書",
+      "ambiguous": false,
+      "text": " <ul> <li><strong>畢業證書</strong> — 中學 / 大學 / 國際學校畢業證書、學位證書</li> <li><strong>培訓機構</strong> — 課程結業證書、專業資格證書、認證證書</li> <li><strong>校友會</strong> — 傑出校友獎、終身"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 25,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 200,
+      "anchor": "學年教材",
+      "ambiguous": false,
+      "text": " <table> <thead><tr><th>工藝</th><th>效果說明</th></tr></thead> <tbody> <tr class=\"border-b border-gray-200\"><td>騎馬釘</td><td>8-32 頁，練習簿、單元測驗卷、操卷用書</td></tr>"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 11542,
+      "slug": "graduation-yearbook",
+      "truth": 50,
+      "found": 100,
+      "anchor": "卒業記念アルバム",
+      "ambiguous": false,
+      "text": " <h3>一般的特殊加工</h3> <ul> <li>表紙箔押し (金 / 銀 / ピンクゴールド) — 學校紋章、卒業年度、クラス名</li> <li>スポット UV (クラスエンブレム、記念文字、クラス寫真) — 立体感あるコントラスト</li> <li>表紙エンボス / デボス (校訓、記念エ"
+    },
+    {
+      "file": "src/data/products-content.ts",
+      "line": 11857,
+      "slug": "foil-wedding-invitations",
+      "truth": 50,
+      "found": 10,
+      "anchor": "foil-wedding-invitations",
+      "ambiguous": false,
+      "text": "</details> `, }, 'foil-wedding-invitations': { longDescription: `<h3>同人誌印刷 — Comiket / 即售會 / 創作活動特化服務</h3> <p>專為 Comiket、即售會、創作活動優化的同人誌印刷服務。封面彩色 + 內頁單"
+    },
+    {
+      "file": "src/lib/seo.ts",
+      "line": 561,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "過膠餐牌",
+      "ambiguous": false,
+      "text": " }, descriptions: { 'zh-hk': '餐牌印刷 100 張起, 一次性 HK$0.22 起/張, 過膠餐牌 HK$5 起/張, 精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 一次性 4 種材質, 茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時, 標準"
+    },
+    {
+      "file": "src/lib/seo.ts",
+      "line": 596,
+      "slug": "vehicle-wraps",
+      "truth": 100,
+      "found": 1,
+      "anchor": "車身廣告",
+      "ambiguous": false,
+      "text": " }, descriptions: { 'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配"
+    },
+    {
+      "file": "src/lib/seo.ts",
+      "line": 616,
+      "slug": "textbooks",
+      "truth": 100,
+      "found": 50,
+      "anchor": "textbooks",
+      "ambiguous": false,
+      "text": " 'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 160,
+      "slug": "mailer-boxes",
+      "truth": 100,
+      "found": 30,
+      "anchor": "飛機盒",
+      "ambiguous": false,
+      "text": " '盒型按行業揀：電商物流用瓦楞飛機盒（E/F 坑，抗壓耐摔）；美妝護膚用白卡彩盒或磁吸禮盒，開箱有儀式感；婚禮喜糖用天地蓋細盒 30 個起；茶飲食品用摺盒加窗口，睇到內容物先好賣。20 幾款標準盒型之外仲可以全客製。',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 697,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 500,
+      "anchor": "產品型錄",
+      "ambiguous": false,
+      "text": " a: 'はい。まずバナータイプ、サイズ、材質、数量をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが出力サイズに応じて解像度とbleed設定をチェックします。' }, ], }, }; // ======================================"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 804,
+      "slug": "saddle-stitch-booklets",
+      "truth": 10,
+      "found": 500,
+      "anchor": "US$1.84-7.36",
+      "ambiguous": false,
+      "text": " a: '可以。請先提供總頁數、成品尺寸、裝訂方式、封面是否需要覆膜／燙金、數量與期望交期；可先取得數碼／柯式方案對比報價，稿件齊備後再做印前檢查與打樣建議。' }, ], }, en: { // 2026-08-22 v3.13 T16: books 338 imps structure war "
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 811,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 50,
+      "anchor": "Bulk Catalog Printing",
+      "ambiguous": false,
+      "text": " h2: 'Saddle Stitch Booklet / Catalog Printing / China Catalog Printing / Bulk Catalog Printing / Book Printing — From 50 Copies, Instant Quote, 8-64 "
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 911,
+      "slug": "catalog-printing",
+      "truth": 10,
+      "found": 50,
+      "anchor": "カタログ印刷",
+      "ambiguous": false,
+      "text": " h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1004,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "過膠餐牌",
+      "ambiguous": true,
+      "text": " a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタログ 200-1,000 冊のバッチ対応、学校ワークブック 50-200 冊の試印、教会/NGO 刊行物 300-500 "
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1004,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": true,
+      "text": " a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタログ 200-1,000 冊のバッチ対応、学校ワークブック 50-200 冊の試印、教会/NGO 刊行物 300-500 "
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1017,
+      "slug": "laminated-menus",
+      "truth": 10,
+      "found": 100,
+      "anchor": "過膠餐牌",
+      "ambiguous": false,
+      "text": " h2: '餐牌 / 餐牌印刷 / 菜單印刷 / 過膠餐牌 / 膠卡餐牌 / 膠片餐牌 — 防水防油, 100 張起, 即日特急',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1225,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " a: 'Yes. Submit menu size, material, quantity, and single or multi-page for a quote first. After confirmation, upload your AI / PDF file. Our prepres"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1231,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " h2: 'メニュー印刷 / レストランメニュー / 防水メニュー / テーブルカード / カフェメニュー — 100枚から, 即日特急',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1634,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 100,
+      "anchor": "企業禮品",
+      "ambiguous": true,
+      "text": " a: '2026 年の封筒 5 大利用シーン: ① 結婚式招待状 (A7/C6 + 箔押し + 100-500 枚) ② ビジネス封筒 (DL + クラフト + 500-5,000 枚) ③ 祝儀袋スリーブ (C5 + 赤金 + 100-1,000 枚) ④ EC 物流ラベル (DL + 透明窓 "
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1646,
+      "slug": "spiral-notebooks",
+      "truth": 10,
+      "found": 100,
+      "anchor": "企業禮品",
+      "ambiguous": false,
+      "text": " h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, R5 9/15 硬截止前企業禮品旺季採購',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 1858,
+      "slug": "wall-calendars",
+      "truth": 1000,
+      "found": 100,
+      "anchor": "壁掛けカレンダー",
+      "ambiguous": false,
+      "text": " h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 100冊から, 企業ギフト 9-11月繁忙期前夜',"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 3374,
+      "slug": "outdoor-posters",
+      "truth": 100,
+      "found": 1,
+      "anchor": "戶外海報",
+      "ambiguous": false,
+      "text": " '【海報列印 / a3海報 / 戶外海報 — 香港場景攻略】街招、展架、櫥窗、建築圍板係香港最常見嘅海報場景: 街舖櫥窗用 a3海報 (420×297mm) 最實用, 近距離睇 150dpi 就夠; 展覽活動攤位用 A1/A2, 遠距離要 72-100dpi; 戶外長期展示（工地圍板、樓宇外牆）一"
+    },
+    {
+      "file": "src/data/category-seo-content.ts",
+      "line": 3896,
+      "slug": "cafe-table-cards",
+      "truth": 50,
+      "found": 100,
+      "anchor": "カフェ",
+      "ambiguous": false,
+      "text": " paragraphs: [ 'オリジナル紙袋の印刷は「用紙・サイズ・持ち手」の3点を決めれば完了です。100枚からの小ロット対応、無料デザインサポート付き、日本全国へ配送します。ブティック、カフェ、ネットショップなど、用途別の選び方をご紹介します。',"
+    }
+  ]
+}
