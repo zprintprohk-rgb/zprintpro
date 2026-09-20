@@ -588,23 +588,37 @@ const recount = [...independentByStyle(SELF)].map(([kind, grep]) => ({
   scan: all.filter((h) => h.file === SELF && h.kind === kind).length,
 }));
 
+/**
+ * 落盤（機器可讀）——**任何模式都寫**，不只 `--json`。
+ *
+ * ⚠️ 為什麼必須如此（2026-09-19 實測踩到）：
+ *   首版只在 `--json` 模式寫檔，而閘門（pre-commit hook）跑的是 `--gate` → 檔不更新。
+ *   後續分析腳本讀到的是**上一次 `--json` 的舊快照**，且毫無提示：
+ *   實測真值已由 100 改為 10，分析檔仍報 `truth=100` → 整份分析的歸屬判定失真。
+ *   ⇒ **靜默過期比報錯更危險**：報告看起來正常，數字卻是舊的。
+ * 寫檔失敗不阻斷主流程（如目錄不存在），僅警告。
+ */
+function persistScan(payload: unknown): void {
+  try {
+    fs.writeFileSync('.hermes/logs/moq-scan-latest.json', JSON.stringify(payload, null, 2) + '\n', 'utf8');
+  } catch (e) {
+    console.error(`⚠️ 無法寫入 .hermes/logs/moq-scan-latest.json: ${(e as Error).message}`);
+  }
+}
+
+const scanPayload = {
+  scannedAt: new Date().toISOString().slice(0, 19),
+  truthSize: truth.size,
+  shapeProblems,
+  hits: all.length,
+  drift: drift.length,
+  recount,
+  findings: drift,
+};
+persistScan(scanPayload);
+
 if (AS_JSON) {
-  const payload = {
-    scannedAt: new Date().toISOString().slice(0, 19),
-    truthSize: truth.size,
-    shapeProblems,
-    hits: all.length,
-    drift: drift.length,
-    recount,
-    findings: drift,
-  };
-  console.log(JSON.stringify(payload, null, 2));
-  /**
-   * 同時落盤（機器可讀）。為什麼寫檔而不靠 shell 重定向：
-   *   Windows PowerShell 的 `>` 會寫成 **UTF-16 LE**，JSON.parse 直接失敗（本輪實測踩到）。
-   * 檔案路徑固定，供後續分析腳本穩定讀取。
-   */
-  fs.writeFileSync('.hermes/logs/moq-scan-latest.json', JSON.stringify(payload, null, 2) + '\n', 'utf8');
+  console.log(JSON.stringify(scanPayload, null, 2));
 } else {
   const bySlug = new Map<string, Hit[]>();
   for (const h of drift) {

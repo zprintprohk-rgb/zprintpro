@@ -4793,7 +4793,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/pvc-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4867,7 +4867,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/laminated-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4962,7 +4962,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/hardcover-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5058,7 +5058,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 10,
     images: ['/images/products/drink-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
