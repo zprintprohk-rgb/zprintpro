@@ -2102,6 +2102,32 @@ const lpFoldedLeafletGuide: BlogPostMeta = {
   },
 };
 
+const lpRollUpBannerPrintingGuide: BlogPostMeta = {
+  slug: 'roll-up-banner-printing-guide',
+  categoryKey: 'banners',
+  source: 'daily',
+  date: '2026-09-20',
+  title: {
+    'zh-hk': "易拉架印刷完全指南：尺寸・材質・報價 10 個起 | 智印港",
+    en: "Roll-Up Banner Printing: 10 MOQ From HK$85 | ZprintPro",
+    ja: "ロールアップバナー印刷 10セットから 屋外対応 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "易拉架印刷 10 套起印, 每套 HK$85-300, 尺寸 850×2000 至 1200×3000mm, 防水帆布／網孔布／旗幟布, 打孔／穿杆袋, 標準交期 5-7 個工作天, 10 套 65 折, 提交檔案後 1 小時內免費數碼打稿.",
+    en: "Roll-up banner printing from 10 sets at HK$85-300 per set: 850x2000mm to 1200x3000mm, waterproof vinyl or mesh fabric, eyelets and pole pockets, 5-7 day turnaround, free digital proof in 1 hour.",
+    ja: "ロールアップバナー印刷は 10 セットから。1 セット HK$85〜300、850×2000mm〜1200×3000mm、防水ビニール・メッシュ・布、ハトメ・ポールポケット対応、納期 5〜7 営業日、入稿後 1 時間以内に無料校正。",
+  },
+  targetKeywords: {
+    primary: '易拉架印刷',
+    secondary: [
+      '易拉架印刷', '易拉架製作', '易拉寶印刷', '易拉架 價錢', '易拉架 尺寸', '展架印刷',
+      'roll-up banner printing', 'retractable banner printing', 'pull up banner printing',
+      'roll up banner stand', 'banner printing hong kong',
+      'ロールアップバナー印刷', 'バナー印刷 10セット', '展示会用バナー',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2271,6 +2297,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpPhotoBookPrintingGuide,
   lpSelfPublishingGuide,
   lpFoldedLeafletGuide,
+  lpRollUpBannerPrintingGuide,
   ];
 
 // =============================================================================

@@ -757,6 +757,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'textbook-printing-guide', // 2026-09-14 D14: ja 教材・教科書の印刷製本 (G3 簇 textbook binding, K3 9/1 D8-D14 SOP)
   'childrens-picture-book-printing-guide', // 2026-09-18 新需求承接 #2: 童書繪本 (承接 SKU hardcover-books BK-004)
   'folded-leaflet-printing-guide', // 2026-09-19 daily-seo: 摺頁印刷 (GSC 摺頁印刷 51 imp pos 36 / 摺頁傳單 28 imp pos 25)
+  'roll-up-banner-printing-guide', // 2026-09-20 daily-seo: 易拉架印刷 (GSC 易拉架製作 66 imp pos 68.6 / 易拉寶 展架)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
