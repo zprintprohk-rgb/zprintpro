@@ -990,7 +990,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       description: post.description,
       image: postImage ? `${siteConfig.url}${postImage}` : undefined,
       publishedAt: post.date,
-      updatedAt: post.date,
+      // 2026-09-20 E1 補丁: dateModified 改用 lastUpdated（原誤用 post.date ⇒ lastUpdated 更新永不生效,
+      // 線上 dateModified 永遠停在發布日）。fallback 保留 post.date 相容無 lastUpdated 的舊篇目。
+      updatedAt: post.lastUpdated || post.date,
       url: canonical,
     },
     locale
