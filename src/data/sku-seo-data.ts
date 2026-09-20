@@ -2104,7 +2104,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "餐廳酒水牌 | 防水 覆膜 圓角 | 10本起 HK$12起 | 智印港",
+        "title": "餐廳酒水牌 | 防水 覆膜 圓角 | 10份起 HK$12起 | 智印港",
         "description": "酒水牌印刷 10 份起印。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專為酒水設計，可立式或手持。酒吧、餐廳必備。智印港提供專業酒水牌服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["酒水牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
@@ -2119,7 +2119,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "ドリンクメニュー 印刷 | 防水 マット 10枚〜 | ZprintPro",
+        "title": "ドリンクメニュー 印刷 | 防水 マット 10份〜 | ZprintPro",
         "description": "ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["ドリンクメニュー", "ドリンクメニュー 印刷", "drink menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
@@ -2149,7 +2149,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "一次性餐牌採用 100g 至 120g 書紙或再生紙印製，四色數碼印刷，無需覆膜即印即用，係快餐店、外賣店同街頭小食店最經濟嘅餐牌印刷選擇。外賣生意最需要頻繁更換菜單內容，餐牌隨外賣單派發畀客人，用完即棄，唔使回收清潔，轉季轉價錢時整批重印成本都好低，靈活性高。\n\n對於主打外賣同快速翻枱嘅餐廳，一次性菜單印刷可以每季、每個套餐獨立印製，配合 QR Code 電子菜單引導客人落單，仲可以做優惠券或宣傳單張用途。紙張雖然輕身，但排版同相片處理得當一樣可以呈現食物吸引力，係預算有限嘅小店開業試水溫嘅好幫手，亦適合活動臨時餐牌、快閃店等短期場景。\n\n交稿規範：下單後 5-7 個工作天交貨，港九新界免費速遞。設計檔以 A5（148×210mm）或 A4（210×297mm）原大製作，預留出血並將字體外框化，數碼印刷靈活處理少量款式變更，方便你每次更新菜單都直接改稿重印，唔使重新製版。\n\n收費方面，一次性餐牌每張 HK$0.22-1.20，起訂量為 100 份，量大單價更低，外賣店每日更換都可以輕鬆負擔，歡迎 WhatsApp 查詢批量優惠。"
       },
       "en": {
-        "title": "Disposable Menus | Free Shipping $99+ | ZprintPro",
+        "title": "Disposable Menus | Free Shipping $100+ | ZprintPro",
         "description": "Custom disposable menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Disposable Menus 100+ | ZprintPro",
         "keywords": ["disposable menus", "custom disposable menus", "disposable menus printing online", "disposable menus free shipping", "disposable menus USD", "bulk disposable menus", "disposable menus DHL", "bespoke disposable menus", "disposable menus wholesale", "disposable menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "catering menus"],
@@ -2157,7 +2157,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "使い捨てメニュー | 防水 ラミネート | ZprintPro",
+        "title": "使い捨てメニュー 印刷 | 防水 ラミネート | ZprintPro",
         "description": "使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["使い捨てメニュー", "使い捨てメニュー 印刷", "disposable menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],

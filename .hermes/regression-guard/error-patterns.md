@@ -1677,3 +1677,109 @@ node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/
 
 **配套**: 门童 #26 `scripts/guards/hook-sync-guard.js` · 安装器 `scripts/install-hooks.mjs` ·
 SSoT `scripts/canonical/pre-commit` · `node scripts/install-hooks.mjs --check`（CI / 守门用）
+
+---
+
+### 规则 POWERSHELL_OUTPUT_ENCODING — PowerShell 输出重定向写出 UTF-16LE，下游按文本处理即错 (K3 2026-09-20 入档)
+
+**事故形态**: 用 `node scripts/X.cjs 2>&1 | Tee-Object -FilePath out.txt` 落盘证据 dump，
+git 把该文件判为 **`Bin 0 -> N bytes`**（二进制），随后 `check-encoding.js` 报 **CRLF 57 行 / 27 行**。
+若非编码门禁拦截，该「证据」会以二进制形态入库 —— **不可 diff、不可 grep、不可 review**。
+
+**根因**: PowerShell 的 `Tee-Object` / `Out-File` / `>` **默认编码为 UTF-16LE**（含 `FF FE` BOM），
+而本仓工具链（`check-encoding.js` / 文本门禁 / `rg`）**一律假定 UTF-8 LF**。
+叠加第二层：`Out-String` 会把程序输出按 Windows 换行 **`\r\n`** 重建，于是同一个文件**同时**中两个陷阱。
+
+**实测取证（本仓复算）**:
+```
+head bytes: ff fe 3d 0 3d 0        ← UTF-16LE BOM + "=="
+git diff --cached --stat → ...txt | Bin 0 -> 4344 bytes
+node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   exit 1
+```
+
+**为什么属本族**: 与 `METRIC_INTEGRITY_FIVE_TRAPS` 同源 —— **被测量的对象在落盘那一刻已经变性**。
+这是第 7 种系统性陷阱：**取证通道自身的编码陷阱**（前 6 种见各条）。
+「工具输出的是不是文本」这件事**没有被验证过**，却被当成文本继续下游处理。
+
+**修法（固化机制，非文字提醒）**:
+1. **禁止**用 PowerShell 重定向落盘文本证据（`Tee-Object` / `Out-File` / `>`）。
+2. **改用 Node 显式 UTF-8**：`fs.writeFileSync(path, content, 'utf8')`（无 BOM）。
+   若必须留在 PowerShell，须 `[System.IO.File]::WriteAllText($p,$s,(New-Object System.Text.UTF8Encoding($false)))`。
+3. **换行必须正规化**：写前 `.replace(/\r\n/g,'\n')`；否则 `check-encoding.js` 仍会拦。
+4. **落盘后必自检三件**：`head` 前 3 字节无 `ff fe` / `fe ff`、`git diff --cached --stat` 不出现 `Bin`、
+   `node scripts/check-encoding.js` exit 0。
+
+**危害边界（诚实记录）**: 本次**未造成内容损失** —— dump 内容完整，且已被门禁拦下。
+真实代价是**一次返工**（重新生成 + 换行转换 + 重新暂存）。
+但若当时没跑编码门禁，入库的将是**无法 review 的二进制证据**，会把「有证据」变成「有假证据」。
+
+**同族规则**: `METRIC_INTEGRITY_FIVE_TRAPS`（母族，本条为第 7 种）· `DOUBLE_METHOD_RECOUNT`（同源：单来源未交叉验证）· `COMMIT_MSG_OVERCLAIMS_TREE`（同属「记录与实际不一致」）
+
+**配套**: `scripts/check-encoding.js`（机器判据）· AGENTS.md §8 第 7 条（Python 写文件必须 `newline='\n'`，本条为其 PowerShell 侧对应）
+
+---
+
+### 观察记录 COMMIT_TIMESTAMP_ANOMALY — commit 的 `%ad` 与实际调用时刻不一致（待观察，未升级为规则）
+
+> **级别**: 🟡 **观察**（非确定规则）。按 K3 2026-09-20 指示：先记录，若再现同类案例再升级为 `error-patterns` 规则。
+
+**观察对象**: commit `9330f96b`（本会话提交）。
+
+**现象**: 本会话记录「`git commit` 调用后，`git log -1` 首次读到 `%ad = 18:02:28`」，
+而**当时系统时钟读数早于该值**（该次取证 `Get-Date` 为 `18:01` 量级）。
+即：**提交时间戳比读取时刻还晚**，初见像「时间戳在未来」。
+
+**排查结论（排除项）**: ① 无 `amend`；② 无 `reset`（`git reflog` 该 commit 仅一条 `commit:` 记录）；
+③ 无外来作者（`%an` = 与其余 commit 同一身份）；④ `parent` 正确（= `885d03d9`，与预期一致）；
+⑤ 内容正确（9 文件 / 427 insertions，与 `git diff --cached --name-status` 暂存集完全一致）。
+
+**当前判定**: **未解释**。最可能为**取证时序**而非时钟异常（`git commit` 实际完成时刻略晚于该次 `git log` 取证），
+但**未能复现亦未能证伪** → 按「不解释就不下结论」记录。
+
+**为何值得记**: 与 `TIME_READING_UNVERIFIED` 同族 —— **时间读数需双源交叉验证**。
+本条的教训价值在于：**当时间戳与直觉冲突时，先怀疑取证时序，不要直接怀疑仓库被篡改**（后者会导致错误的「历史被改写」告警）。
+
+**升级条件**: 再出现 1 次同类现象（时间戳晚于读取时刻且排除 amend/reset）→ 升级为规则并给出判据。
+
+**同族**: `TIME_READING_UNVERIFIED`（母条）· `STALE_REMOTE_REF_FALSE_BACKLOG`（同属「读数与真值错位」）
+
+**配套**: 本会话取证记录（`.hermes/reports/menus-drift-and-locale-mismatch-2026-09-20.md` §4 数据来源）
+
+---
+
+### 规则 SELF_REPORT_METRIC_DISAGREEMENT — 自报指标与复算不一致时，先查输入通道再怀疑工具 (K3 2026-09-20 入档)
+
+**事故形态**: 复算 `disposable-menus/en` 标题当量时，**手打字符串**经 `equiv()` 得 **46**，
+而 `verify-menus.cjs` 从**文件实测**读同一标题得 **49** —— 差 3，且**三个不同 title 上都稳定差 3**
+（`Disposable Menus | Free Shipping $99+ | ZprintPro` 等）。
+稳定偏移最像**工具 bug**，第一步极易误判为「当量函数处理 `$`/`+` 有缺陷」。
+
+**真相**: **工具没错，是我的输入被 shell 改写了**。
+该字符串经 `node -e "…"`（PowerShell 双引号内传参）时 **`$99` 被 PowerShell 当作变量展开**，
+实际传给 `equiv()` 的不是文件里的字符串。改用**从文件读取**的复算器 `verify-menus-equiv.cjs` 后，
+读数与 `verify-menus.cjs` **逐字一致**（49/46/51/54 全部吻合）。
+
+**判据（关键区分）**: **稳定偏移 ≠ 必然工具 bug**。稳定偏移有两种成因：
+① 工具确定性错误；② **输入通道确定性改写**（shell 展开 / heredoc 展开 / 引号规则 / 编码转换）。
+后者**更常见**，且伪装成前者。
+
+**修法（固化机制，非文字提醒）**:
+1. **凡复算「文件里的值」，必须从文件读** —— 禁止手打目标字符串传给量具。
+   （正式化工具：`scripts/verify-menus-equiv.cjs`，按 `readFileSync` + 切片取值）
+2. **两法不一致时，先 dump 输入而非怀疑量具**：打印 `len` / 非 ASCII 字符及码位，
+   一眼即可看出「我传进去的字符串」与「文件里的字符串」是否同一串。
+3. **PowerShell 传参给 node 时**：`$` 会被展开 → 用**单引号**或 `-e` 内避免 `$`，
+   或直接走文件/`fs` 读取。
+4. **交叉验证对象是「同一个输入」**：若两次复算的输入来源不同（手打 vs 文件），
+   则两者不一致**不能作为工具 bug 的证据**（per `DOUBLE_METHOD_RECOUNT`：双方法必须在**同定义域**）。
+
+**危害边界（诚实记录）**: 本次**未造成错误结论落地** —— 疑点被拦在提交前，最终 4 处修复全部基于文件实测值。
+真实代价是**一次额外排查**（写了一个新复算器）。
+若当时直接信「46」而补 +4，会把标题改成**超出必要长度**的版本（50→53），
+并顺带误记一条「当量工具 bug」的假规则。
+
+**同族规则**: `DOUBLE_METHOD_RECOUNT`（母规则，本条补其隐含前提：**同定义域**）·
+`METRIC_INTEGRITY_FIVE_TRAPS`（同源：指标本身错）· `LOCATE_BEFORE_PATCH`（同源：先取真实文本）·
+`POWERSHELL_OUTPUT_ENCODING`（同属「PowerShell 通道改写数据」）
+
+**配套**: `scripts/verify-menus-equiv.cjs`（从文件读取的复算器）· AGENTS.md §0.23.2 三闸门（第 1 条：匹配口径，先 dump 真实样本）· 技能 `zprintpro-self-evolution-hardening` §五
