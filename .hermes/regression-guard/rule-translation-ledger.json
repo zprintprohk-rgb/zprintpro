@@ -1,13 +1,13 @@
 {
  "schema": "rule-translation-ledger/v1",
  "note": "SSoT 变更必须同步刷新「生成位置」与「门禁位置」；本台账是三者绑定的唯一凭据 (门童 #21)",
- "updated_at": "2026-09-20T09:10:38.928Z",
+ "updated_at": "2026-09-20T13:24:46.682Z",
  "bindings": {
   "blog-12-segment-skeleton": {
    "title": "深度 blog 12 段骨架 (SSoT §3.1 + §5.3)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "4a52002c0492b78c979d1bbf0f4e963cd3f1f62029e3f6235f6c32496c7dcf06"
+    "sha256": "e4cfbd2dafb26aadf184a0fa08b4ac5d244b963825e748c1dedcf3e9811c7576"
    },
    "producers": [
     {
@@ -22,7 +22,7 @@
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "a92dad85dc265501a441b1d2a0bb82aadbec69a4033c593d709cf4dd2a9f33ef"
+     "sha256": "3220425317e4144d616aa026da197d55673e2192cf63c988ee9a9b9638257e09"
     },
     {
      "path": "scripts/guards/internal-links-cta-guard.js",
@@ -45,7 +45,7 @@
    "guards": [
     {
      "path": "scripts/guards/blog-standard-guard.js",
-     "sha256": "bd7328a1274c8b5726b2c2c08e93bbc26533a4317426199d49198e3e8bb1d167"
+     "sha256": "9a202f44b961272871881cee327294c787d46685ff377f2638554c6d9388da78"
     },
     {
      "path": "scripts/guards/meta-description-guard.js",
@@ -57,7 +57,7 @@
    "title": "Schema 单一来源 = page.tsx (content 禁内嵌 JSON-LD)",
    "rule": {
     "path": "docs/2026-09-08-title-rules-and-deep-blog-standard.md",
-    "sha256": "4a52002c0492b78c979d1bbf0f4e963cd3f1f62029e3f6235f6c32496c7dcf06"
+    "sha256": "e4cfbd2dafb26aadf184a0fa08b4ac5d244b963825e748c1dedcf3e9811c7576"
    },
    "producers": [
     {
@@ -68,7 +68,7 @@
    "guards": [
     {
      "path": "scripts/guards/blog-quality-12-rules-guard.js",
-     "sha256": "a92dad85dc265501a441b1d2a0bb82aadbec69a4033c593d709cf4dd2a9f33ef"
+     "sha256": "3220425317e4144d616aa026da197d55673e2192cf63c988ee9a9b9638257e09"
     }
    ]
   }

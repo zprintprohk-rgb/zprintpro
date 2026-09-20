@@ -135,14 +135,17 @@ fi
 # 实测耗时 ~0.8s (全檔) / <0.3s (局部), 可无条件执行。
 echo "3️⃣.6  门童 #24 MOQ 口径一致性闸门 (条件式扫描域)..."
 if command -v node &> /dev/null; then
-  if ! npx tsx scripts/moq10-books-context-scan.ts --gate --staged; then
+  # 2026-09-20 可移植性修正: 原 `npx tsx` 在無 npx 的環境 (實測 Kimi Work 託管 runtime
+  # PATH 無 npx) 會 command not found → 門禁誤攔無關提交. 改為 node 直調 tsx CLI,
+  # 只依賴 node + 本地 node_modules (本 hook 其餘門童同樣依賴 node), 零 PATH 假設.
+  if ! node node_modules/tsx/dist/cli.mjs scripts/moq10-books-context-scan.ts --gate --staged; then
     echo ""
     echo "❌ 门童 #24 拦截: MOQ 口径漂移 (新漂移未清)"
     echo ""
     echo "💡 修法:"
     echo "  1. 改文案对齐真值, 或改 src/data/products.ts 的 minQuantity (须 K3 裁決)"
     echo "  2. 确属「待裁決」→ 登记进 scripts/moq10-books-context-scan.ts 的 PENDING_LIST (附理由)"
-    echo "  3. npx tsx scripts/moq10-books-context-scan.ts 复核"
+    echo "  3. node node_modules/tsx/dist/cli.mjs scripts/moq10-books-context-scan.ts --gate --staged 复核 (有 npx 環境可 npx tsx 同參數)"
     exit 1
   fi
 fi

@@ -121,7 +121,7 @@
 
 | 元素 | 规则 | 机器校验（门童 #12） |
 |------|------|----------------------|
-| title | **50-60 字符**，主关键词前置，品牌后置一次 | `MIN_TITLE_CHARS=50 / MAX=60` |
+| title | ~~50-60 字符~~ **⛔ 已被取代（2026-09-15 統一口徑 → K3 9/13 終裁）：50-57 半角當量**，主关键词前置，品牌后置一次 | `title-equiv.js` `equiv()`：`TITLE_MIN=50 / TITLE_MAX=57`，`band(58)=TRIM`；守衛實現 = `blog-standard-guard.js` 檢查 3（取代舊 `MIN_TITLE_CHARS=50/MAX=60` raw chars 口徑） |
 | meta description | 150-160 字符，含数字 + CTA | 人工抽检 |
 | H1 | 每页唯一，含主关键词；**禁模板字**（"Pillar 開篇"等=红色命中） | guard #12 Rule 3 |
 | date / lastUpdated | 真实日期，**禁 2024-01-01 默认值** | guard #12 Rule 1/8 |

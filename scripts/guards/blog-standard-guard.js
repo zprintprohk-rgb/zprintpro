@@ -3,17 +3,20 @@
  * 反审门童 #12 Blog 标准检查 (K3 9/3 19:29 拍板 v1.5 升级)
  *
  * 检查 Pillar blog 必须符合:
- * 1. date 字段 = 2026-09-03 (Pillar 升级日期, 不允许 2024-01-01 默认值)
- * 2. title 长度 50-60 字 (per AGENTS.md §5 SEO/GEO Title 规则)
+ * 1. date 字段 = 2026-09-03 (仅 9/3 Pillar 升级批 5 篇适用, E0 分層)
+ * 2. title 长度 50-57 半角当量 (per K3 9/13 终裁 + title-equiv.js; 2026-09-15 统一口径)
  * 3. content 第一个 H1/H2 段不含 "Pillar 開篇" / "Pillar 開篇" 等模板字
- * 4. content 5 schema JSON-LD 块 (Article + FAQPage + BreadcrumbList + HowTo + Organization)
- * 5. content 12,000+ 字
+ * 4. content **禁内嵌** JSON-LD (E0 2026-09-20 反向修正: 原「≥5 块」要求与 SSoT §3.2 红线冲突已作废;
+ *    单一块来源 = page.tsx, 齐套性由门童 #14 段 12 线上断言负责)
+ * 5. content 字数 季度递减目标制 (pillar-wordcount-targets.json)
  * 6. content 含校准后 4 词关键词 (大信封/a1a2 海報/small-batch/樣本印刷/燙金 等)
  * 7. content 含 校准后 GSC 实证 4,413 imps/28d (Pillar 1) 或 8/18 baseline pos 2.3 (Pillar 5)
- * 8. lastUpdated 字段 = 2026-09-03
+ * 8. lastUpdated 字段 = 2026-09-03 (仅升级批适用)
  * 9. excerpt 字段非空
  *
- * 触发条件: blog slug 包含 "pillar" OR title 包含 "Pillar"
+ * v1.6 (E0 2026-09-20, K3 拍板): 触发器改清单制 LONGFORM_SLUGS (9 篇) —— 原 /pillar/i 正则
+ * 只命中 campus 一篇, 与「5 大 Pillar」声明分叉; 新增长文 title/字数/excerpt 纳入门禁.
+ * 审计依据: docs/2026-09-20-12seg-compliance-audit-and-plan.md §四 (门禁覆盖缺口)
  */
 
 const fs = require('fs');
@@ -58,18 +61,30 @@ function getPillarWordTarget(now = new Date()) {
   }
 }
 
-const PILLAR_TRIGGERS = [
-  /pillar/i,
-  /Pillar/,
+// E0 2026-09-20: 觸發器改清單制 (K3 拍板, 審計報告 docs/2026-09-20-12seg-compliance-audit-and-plan.md §四).
+// 原 /pillar/i 正則實現只命中 campus 一篇, 與門童頭部「5 大 Pillar」聲明分叉 (避坑 16 活例),
+// 且其餘長文的 title 當量/字數下限長期無門禁 (實測 16/18 標題 OUT 無人攔的後果).
+// 批次語義分層: date/lastUpdated===2026-09-03 是「9/3 Pillar 升級批」專屬檢查,
+// 只適用原 5 篇; 新長文不應被套用該批次日期 (規則聲明與適用範圍分層, 防新株誤傷).
+const PILLAR_UPGRADE_SLUGS = [
+  'packaging-box-pricing-2026',
+  'sticker-material-pvc-vinyl-removable',
+  'poster-printing-guide',
+  'campus-education-printing-pillar-guide',
+  'foil-stamping-3-applications-2026',
+];
+const LONGFORM_SLUGS = [
+  ...PILLAR_UPGRADE_SLUGS,
+  // E0 擴容: 同屬 12 鐵律深度長文, 原在門禁視野外
+  'hong-kong-printing-cost-baseline-2026',
+  'roll-up-banner-printing-guide',
+  'print-specifications-reference-guide-2026',
+  'school-exercise-book-printing-guide',
 ];
 
 function isPillarBlog(value) {
   if (!value || typeof value !== 'object') return false;
-  const slug = value.slug || '';
-  const title = value.title || '';
-  if (PILLAR_TRIGGERS[0].test(slug)) return true;
-  if (PILLAR_TRIGGERS[1].test(title)) return true;
-  return false;
+  return LONGFORM_SLUGS.includes(value.slug || '');
 }
 
 function checkPillar(file, content) {
@@ -90,8 +105,10 @@ function checkPillar(file, content) {
     const lastUpdated = value.lastUpdated || '';
     const excerpt = value.excerpt || '';
 
-    // 检查 1: date 字段 = 2026-09-03
-    if (date !== REQUIRED_DATE) {
+    const isUpgradeBatch = PILLAR_UPGRADE_SLUGS.includes(slug);
+
+    // 检查 1: date 字段 = 2026-09-03 —— 僅 9/3 Pillar 升級批適用 (E0 分層, 防新株誤傷)
+    if (isUpgradeBatch && date !== REQUIRED_DATE) {
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: 0,
@@ -103,8 +120,8 @@ function checkPillar(file, content) {
       });
     }
 
-    // 检查 2: lastUpdated 字段 = 2026-09-03
-    if (lastUpdated !== REQUIRED_DATE) {
+    // 检查 2: lastUpdated 字段 = 2026-09-03 —— 僅 9/3 Pillar 升級批適用 (E0 分層)
+    if (isUpgradeBatch && lastUpdated !== REQUIRED_DATE) {
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: 0,
@@ -183,17 +200,22 @@ function checkPillar(file, content) {
       });
     }
 
-    // 检查 7: content 含 5 schema JSON-LD 块
+    // 检查 7 (E0 2026-09-20 反向修正): content **禁止**內嵌 JSON-LD.
+    // 原 BLOG_SCHEMA_5BLOCKS 要求「content 含 ≥5 個 JSON-LD 塊, fix=加到 content 頂部」——
+    // 與 SSoT §3.2 紅線 (content 內嵌 inline JSON-LD = 重複渲染 = Google 警告; 單一來源 = page.tsx)
+    // 及 B2 批 (已 strip 8+ 篇) 直接衝突, 屬有害 fix 文案 (避坑 16 規則聲明/實現分叉活例).
+    // 反向口徑: ld+json > 0 即 red, fix = strip; schema 齊套性由門童 #14 段 12 **線上 curl 斷言**負責
+    // (SSoT §3.2 2026-09-19 修正: 禁只 JSON.parse content).
     const ldCount = (blogContent.match(/application\/ld\+json/g) || []).length;
-    if (ldCount < REQUIRED_SCHEMAS.length) {
+    if (ldCount > 0) {
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: 0,
-        match: `${slug}: JSON-LD count=${ldCount} < 5 (Article+FAQPage+BreadcrumbList+HowTo+Organization)`,
+        match: `${slug}: content 內嵌 JSON-LD ×${ldCount} (SSoT §3.2 紅線: 重複渲染; 原 ruleId=BLOG_SCHEMA_5BLOCKS 已作廢反向)`,
         severity: 'red',
-        ruleId: 'BLOG_SCHEMA_5BLOCKS',
-        ruleName: 'Pillar blog 5 schema JSON-LD 实际块',
-        fix: `加 5 schema JSON-LD 实际块到 ${slug} content 顶部`,
+        ruleId: 'BLOG_SCHEMA_INLINE_LD',
+        ruleName: '長文 content 禁內嵌 JSON-LD (單一來源 = page.tsx)',
+        fix: `strip ${slug} content 內的 ld+json script 塊 (B2 標準做法); 線上 schema 齊套性跑 node scripts/guards/blog-quality-12-rules-guard.js --online`,
       });
     }
 

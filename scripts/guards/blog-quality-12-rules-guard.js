@@ -48,6 +48,15 @@ const PILLAR_SLUGS = [
   'poster-printing-guide',             // P3 海報
   'campus-education-printing-pillar-guide', // P4 校園
   'foil-stamping-3-applications-2026', // P5 燙金
+  // ---- E0 擴容 (K3 2026-09-20 拍板, 審計報告 docs/2026-09-20-12seg-compliance-audit-and-plan.md §四) ----
+  // 背景: 以下 4 篇同屬 12 鐵律深度長文, 但因 slug 不在清單 = 門禁視野外
+  // (cost-baseline 三語 FAQ=0 + 內嵌 @type=6 門童報「0 命中」= 活案例).
+  // 新 slug 進清單後首次運行會出現存量 FAIL —— 這是「讓門禁看見真問題」的預期行為,
+  // 禁止為消紅而 --stamp-baseline (基線只許遞減, 見 BASELINE_PATH 語義).
+  'hong-kong-printing-cost-baseline-2026', // E0-1 成本基準 (batch C 已備 FAQ 補丁)
+  'roll-up-banner-printing-guide',         // E0-2 易拉架 (2026-09-20 新上)
+  'print-specifications-reference-guide-2026', // E0-3 規格參考 (B3 FAQ 批已落, 門外未檢)
+  'school-exercise-book-printing-guide',   // E0-4 學生簿 (B3 FAQ 批已落, 門外未檢)
 ];
 
 const SITE_BASE = process.env.ZP_SITE_BASE || 'https://zprintpro.com';

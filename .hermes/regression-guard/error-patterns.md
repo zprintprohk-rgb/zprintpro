@@ -1820,3 +1820,50 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 `SAFECOMMIT_ATOMIC`（同机制：以「说的」代替「实际的」）· `METRIC_INTEGRITY_FIVE_TRAPS`（母族）
 
 **配套**: `scripts/audit-workspace-dirty.mjs`（三分分类 + 阈值告警）· AGENTS.md §0.35.7（人手会话并发锁双条件）
+
+### 规则 GATE_COVERAGE_BLIND_SPOT — 门童 slug 清单硬编码 = 新長文在門禁視野外合規與否無人知 (K3 2026-09-20 E0 入檔)
+
+**事故實錄（本條规则的成因，全部實測）**:
+1. 門童 #14 `PILLAR_SLUGS` 硬編碼 5 slug → `hong-kong-printing-cost-baseline-2026` 三語
+   **FAQ=0 + content 內嵌 @type=6**，門童報「0 命中 / 全部符合」——缺陷在場，門禁看不見。
+2. `blog-standard-guard` 觸發器 `/pillar/i` 只命中 campus 一篇，與其頭部「5 大 Pillar」
+   聲明分叉（避坑 16 同族）→ 其餘長文 **title 當量 16/18 OUT** 無人攔。
+3. 該守衛「檢查 7」要求 content **含 ≥5 個內嵌 JSON-LD 塊**，fix 文案「加到 content 頂部」——
+   與 SSoT §3.2 紅線（內嵌=重複渲染，單一來源=page.tsx）及 B2 批（已 strip 8+ 篇）**直接衝突**，
+   照 fix 做 = 製造違規。有害 fix 文案比沒有門禁更危險。
+
+**判據（機器可檢）**:
+- 觸發器不得用「名字像不像」（正則 /pillar/i）代替「清單在不在」——新資產不按命名規律出生。
+- 守衛 fix 文案不得與任何 SSoT 紅線衝突；衝突時以 SSoT 為準反向修正規則（本次 #12 檢查 7 已反向為
+  `BLOG_SCHEMA_INLINE_LD`: ld+json > 0 即 red）。
+- slug 清單擴容後**禁止立刻 --stamp-baseline 消紅**——新 slug 的首批 FAIL 是真問題顯影，基線只許遞減。
+
+**修法**:
+1. #14 `PILLAR_SLUGS` 擴容 +4（E0-1..4，含取證註釋）。
+2. `blog-standard-guard` 觸發器改 `LONGFORM_SLUGS` 清單制（9 篇）；
+   date/lastUpdated===2026-09-03 降級為僅 `PILLAR_UPGRADE_SLUGS`（批次語義分層，防新株誤傷）。
+3. SSoT 第二部分 title 50-60 raw chars 做**取代式標注** → 50-57 半角當量（唯一實現 title-equiv.js）。
+4. 規則變更後 `node scripts/guards/rule-translation-guard.js --stamp`（門童 #21 綁定 sha256）。
+
+**同族規則**: `RULE_DECLARATION_DRIFT_FROM_IMPLEMENTATION`（避坑 16）· `DECLARED_APPLIED_IS_NOT_EFFECTIVE`（避坑 17）·
+`HOOK_SSOT_ACTIVE_DIVERGENCE`（同構：「以為在檢」vs「實際沒檢」）
+
+**配套**: `scripts/guards/blog-quality-12-rules-guard.js` · `scripts/guards/blog-standard-guard.js` ·
+`docs/2026-09-20-12seg-compliance-audit-and-plan.md` §四 · 審計證據 `.hermes/reports/blog-12seg-checklist-2026-09-20-online.json`
+
+### 规则 PORTABILITY_ASSUMPTION_IN_HOOK — hook 假設 PATH 工具存在 = 換環境即門禁誤攔 (K3 2026-09-20 E0 入檔)
+
+**事故實錄**: pre-commit 門童 #24 用 `npx tsx scripts/moq10-books-context-scan.ts` 調 scanner。
+在 Kimi Work 託管 runtime 環境（PATH 無 npx，node 為 Kimi 內建 runtime）實測：
+`npx: command not found` → `if ! cmd` 判失敗 → **門禁誤攔一個與 MOQ 完全無關的提交**。
+其他車道（PATH 有 npx）從未觸發 ⇒ 環境依賴型缺陷的典型特徵：「在我這裡能跑」≠「到處能跑」。
+
+**判據**: hook 內任何外部命令調用不得假設 PATH 工具（npx/npm/paste/tr…）存在；
+只允許依賴 ① `node`（本 hook 其餘門童已統一依賴 node）② 倉內 `node_modules` 實體檔。
+
+**修法**: `npx tsx <script>` → `node node_modules/tsx/dist/cli.mjs <script>`（B 案把範圍判定放 Node 側
+正是同一可移植性邏輯，調用方式這次補齊）。修法提示文案同步更新（雙形態並列）。
+
+**同族規則**: `GATE_COVERAGE_BLIND_SPOT`（同批 E0）· 避坑 12 註釋（Git for Windows sh 外部工具不保證）
+
+**配套**: scripts/canonical/pre-commit (= .githooks/pre-commit, #26 sha256 同步) · 門童 #24
