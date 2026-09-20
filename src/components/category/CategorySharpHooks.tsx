@@ -168,17 +168,24 @@ const categoryIndustryScenarios: Record<string, {
     }},
   ],
   banners: [
-    { key: 'exhibition', scenarios: {
+    // K3 2026-09-20 裁決 2.2：key 對齊 industry-scenario-links.ts 的命名
+    //   exhibition → trade_show ／ outdoor → outdoor_ad ／ mall → mall_promo
+    // ★ 這同時修復一個實際 bug：
+    //   `industry-scenario-links.ts` 的 href 表（L107-111）與 industryName 表（L238-241）
+    //   早已使用 trade_show / outdoor_ad / mall_promo —— 舊 key 在兩張表中**都查不到**，
+    //   導致這三張卡取不到連結與行業名；且 `exhibition` 已被 `posters` 類別佔用（L76/L215），
+    //   屬命名衝突。
+    { key: 'trade_show', scenarios: {
       'zh-hk': ['展會易拉寶 · X 架', '80×200cm · 高清輸出', '1 個起 · 標準尺寸齊全'],
       en: ['Exhibition roll-ups · X-stand', '80×200cm · HD output', 'From 1 · standard sizes'],
       ja: ['展示会ロールアップ・Xスタンド', '80×200cm・高精細出力', '1個から・標準サイズ完備'],
     }},
-    { key: 'outdoor', scenarios: {
+    { key: 'outdoor_ad', scenarios: {
       'zh-hk': ['戶外橫幅 · 防水防 UV', '寬幅 5m+ · 韓國進口墨水', '1 個起 · 抗候 1 年+'],
       en: ['Outdoor banners · waterproof UV-resistant', 'Wide 5m+ · Korea-imported ink', 'From 1 · 1yr+ durability'],
       ja: ['屋外バナー・防水UV耐性', '大判5m+・韓国輸入インク', '1個から・1年+耐久'],
     }},
-    { key: 'mall', scenarios: {
+    { key: 'mall_promo', scenarios: {
       'zh-hk': ['商場促銷橫幅 · 燈箱片', '高亮 PP · 雙面可選', '1 個起 · 商場檔期對接'],
       en: ['Mall promo banners · lightbox film', 'High-brightness PP · duplex option', 'From 1 · mall schedule sync'],
       ja: ['モール販促バナー・灯箱フィルム', '高輝度PP・両面選択可', '1個から・モール時期同期'],
