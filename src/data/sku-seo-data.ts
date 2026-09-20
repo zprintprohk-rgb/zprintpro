@@ -2093,7 +2093,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | 智印港",
       "en": "Custom hardcover menus with laminated durable, premium materials — ZprintPro",
-      "ja": "一般為50個起訂，一次性餐牌可接受10個起。"
+      "ja": "一般為10個起訂，一次性餐牌（大批量柯式）100個起。"
     }
   },
   "drink-menus": {
@@ -2129,7 +2129,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       ],
     "imageAlt": {
-      "zh-hk": "一般為50個起訂，一次性餐牌可接受10個起。",
+      "zh-hk": "一般為10個起訂，一次性餐牌（大批量柯式）100個起。",
       "en": "Custom drink menus with laminated durable, premium materials — ZprintPro",
       "ja": "我們提供PVC和過膠防水餐牌，適合餐飲環境使用。"
     }
@@ -2167,7 +2167,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       ],
     "imageAlt": {
-      "zh-hk": "一般為50個起訂，一次性餐牌可接受10個起。",
+      "zh-hk": "一般為10個起訂，一次性餐牌（大批量柯式）100個起。",
       "en": "Custom disposable menus with laminated durable, premium materials — ZprintPro",
       "ja": "我們提供PVC和過膠防水餐牌，適合餐飲環境使用。"
     }
