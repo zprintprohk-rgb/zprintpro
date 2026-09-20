@@ -5,7 +5,7 @@
 > **用途**: 新执行层 / 下一位接手者 / 并发会话**第一份要读的文件**。
 > **配套技能**: `zprintpro-self-evolution-hardening`（十九类避坑 + 九类能力）、
 > `zprintpro-verification-discipline`（度量工具自身缺陷五类）。
-> **创建**: 2026-09-20 · **最后更新**: 2026-09-20
+> **创建**: 2026-09-20 · **最后更新**: 2026-09-20 19:36（menus 起印量 + 品牌/语种错配清账）
 
 ---
 
@@ -41,13 +41,14 @@
 | 项 | 值 | 取证方式 |
 |---|---|---|
 | 工作目录 | `F:\zprintpro-nextjs`（唯一生产目录, 目录铁律 §3） | — |
-| 分支 / HEAD | `main` / 见 `git log -1` | `git rev-parse --short HEAD` |
+| 分支 / HEAD | `main` / `a2f636e6`（2026-09-20 19:36） | `git log -1` |
 | 远端 | `origin` 与 `origin_ssh` **同一仓库**（`git@github.com:zprintprohk-rgb/zprintpro.git`） | `git remote -v` |
-| 积压 | ⚠️ **必须先 `git fetch` 再读** `origin/main...HEAD`；**禁用未 fetch 的 `@{u}`** | 见避坑 14 |
+| ⚠️ 分支 upstream | `main` 跟踪的是 **`origin_ssh/main` 而不是 `origin/main`**；只 fetch `origin` 会看到**过期的 origin/main** → 会误判「有积压/无积压」 | `git config branch.main.remote` |
+| 积压 | ⚠️ **必须先 fetch 全部 remote 再读**（`origin` 与 `origin_ssh` 都要），**禁用未 fetch 的 `@{u}`** | 见避坑 14 + 20 |
 | 标题当量 SSoT | `scripts/guards/title-equiv.js` → `TITLE_MIN=50 / TITLE_MAX=57`；`band(57)=OK` / `band(58)=TRIM` | `node -e "..."` 实测 |
-| 普查 | `node scripts/sku-title-census.mjs` → byBand `OK 250 / FILL 30 / TRIM 20`（当量==58 **0**） | census 复算 |
-| 收尾信号 | `git status --porcelain -- src/` 无 `MM` **且** staged 删除归零 | 见 §7 |
-| 线上 | 未在本次会话验证（未 push 任何内容；HEAD 与远端一致） | — |
+| 普查 | `node scripts/sku-title-census.mjs` → byBand：无新增 TRIM（menus 6 SKU 均不在 TRIM 榜） | census 复算 |
+| 收尾信号 | `git status --porcelain -- src/` 无 `MM` **且** staged 删除归零 → **2026-09-20 19:36 已满足**（src/ 干净） | 见 §7 |
+| 线上 | 未验证本轮改动（`a2f636e6` **未 push**）；线上最后部署为 `dba48bac` | `git log origin/main -1` |
 
 ---
 
@@ -84,14 +85,17 @@
 
 | # | 事项 | 阻塞 | 备注 |
 |---|---|---|---|
-| 1 | **menus 文案层 7 处 DRIFT** | 🔴 并发会话编辑 `src/` | 真值 10張/10份/10本/10份/100份；`pvc-menus/zh-hk` 66 需删 9；`laminated`/`hardcover` zh-hk 36 需补 14；两 en 62 需删 5；`disposable` en 49 / ja 46 需补 |
-| 2 | **13 处品牌-语种错配** | 🔴 同上 | 8× ja description 挂 `\| 智印港`（→`ZprintPro`）；3× ja imageAlt（含 `large-envelopes` **整条纯中文**）；2× en imageAlt（`厚口 カード` / `箔押し カード`） |
+| 1 | ~~**menus 文案层 DRIFT**~~ | ✅ **2026-09-20 19:36 完成**（`a2f636e6`，10 处标题） | 见 §9 第二段 |
+| 2 | ~~**品牌-语种错配 13 处**~~ | ✅ **2026-09-20 19:36 完成**（8 ja description + 5 imageAlt） | 结构解析口径：`node scripts/audit-sku-locale.cjs` 四项全 0 |
 | 3 | `I18N_POLLUTION` 扩集 | 🔴 需先取日本常用汉字表 | **必须用「常用汉字表补集」驱动**，禁止手工繁体清单（避坑 13） |
 | 4 | 4 条预存跨语言 head | 🟡 需先定对应主词 | `custom-red-packets` zh-hk/ja、`save-the-date-cards` ja、`pvc-menus` ja —— 单变量批次，涉主排名词 |
 | 5 | 剩余人工改写 ~35 条 | 🟡 待验证窗 CTR 报告 | 多为 ≤12 imps |
-| 6 | 跨 SKU 共享模板句残留（避坑 19） | 🟡 数据层 | 5/6 menus SKU `name` 写 `防水PVC` 但 spec 无 PVC；`disposable-menus` feature 与 finishing 自相矛盾 |
+| 6 | 跨 SKU 共享模板句残留（避坑 19） | 🔴 **本轮新增取证** | ① menus 数据层 `description`/`body` 仍写「50 本起 / 100 本起 / 100 張」，与已改标题的「10 張/份/本起」**直接矛盾**（避坑 18：只落一半）；② 5/6 menus SKU 名称写「防水PVC」但 spec 是 200g 銅版紙／啞膠覆膜；③ `disposable-menus` feature 与 finishing 自相矛盾 |
 | 7 | `wedding-menu-cards` 币种 | 🟡 | 价写 **NT$**（本站 zh-hk 应为 HK$）；且缺 `unitLabel` |
 | 8 | GSIM / RFQ Schema | 🔴 无官方信源 | 维持 `PENDING_VERIFICATION`；**不得据营销来源改 Schema** |
+| 9 | **ja `imageAlt` 系统性折行** | 🔴 新发现（量测工具已转正） | **28 处** ja imageAlt 疑装 zh-hk 中文句（本轮只清 menus 3 处 + 登记的 3 处）；量测：`node scripts/audit-ja-imagealt-fold.cjs ja`（🔴 确证 0 处 / 🟠 可疑 28 处 —— **🟠 不得直接当缺陷批量改写，先人读**，避坑 13） |
+| 10 | **`CRED_ISO_9001` 167 处** | 🔴 新发现（取证等级仅门童计数） | pre-commit 门童 `真实计数` 报 167；menus 6 个 SKU 的 description/body 就各写「ISO 9001 certified production」。**须先定「是否存在 ISO 9001 证书」**（§0.23 无来源数字红线），再决定清或补证；本会话**未核实真伪** |
+| 11 | `BRAND_LOCALE_MISMATCH=39` | 🟡 新发现 | 门童口径 39 处；本轮 `audit-sku-locale.cjs`（结构解析）报 0 —— **两个口径不一致本身是待查项**（可能是门童按子串/按行计，避坑 9），落地任何结论前须先 dump 样本（§0.23.2 三闸门） |
 
 ---
 
@@ -166,3 +170,41 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 | 规则同源 | 代码 / `AGENTS.md` / `docs §6-3` / 5 条 prompt / 报告元数据 **五处同源** |
 | 真实品牌-语种错配 | **13 处**（首次用结构解析得出；此前「105」为假阳性） |
 | 本会话自身失误 | **4 次同族**（量测口径），**全部当场拦截未上线**；已入档 |
+
+### 2026-09-20 19:36 · menus 起印量口径对齐 + 品牌/语种错配清账（`a2f636e6`）
+
+**起点状态核对（先证伪三条既有结论）**
+- 「4 条本地 commit 待推」→ ❌ **已不成立**：并发车道 19:08 已把 4 条推进远端（`origin_ssh`），本侧 `origin/main` 也未 fetch 到 → 一度误判「0 积压」。**真因**：`main` 的 upstream 是 `origin_ssh/main`，只 fetch `origin` 会看到过期 ref（新避坑 20）。
+- 「menus 文案层被并发阻塞」→ ❌ **已解除**：`src/` 无 `MM`、staged 删除 0（收尾信号首次满足）。
+- 「`scripts/menus-evidence.cjs` 已被清理删除」→ ❌ **不成立**：该文件在库（`9330f96b` 入库，2539 字节），且 `scripts/verify-menus.cjs` 同样在库。
+
+**已完成（`a2f636e6`，1 文件 / 27 行）**
+
+| 组 | 内容 | 当量 |
+|---|---|---|
+| menus 标题 10 处 | 真值 SSoT = `products.ts`（pvc/laminated/hardcover/drink `minQuantity=10`，disposable=100，wedding=50） | 57/54/57/57/56/55/57/57/53/54 全落 [50,57] |
+| ja description 品牌 8 处 | 尾部 `\| 智印港` → `\| ZprintPro` | — |
+| imageAlt 语种错配 5 处 | `large-envelopes/ja`（整条纯中文）·`exercise-books/ja`·`textbooks/ja`（`學校`→`学校`）·`thick-greeting-cards-400g/en`·`foil-greeting-cards/en` | — |
+| imageAlt 内容错挂 **4 处（本轮新发现）** | `hardcover-menus/ja` 挂 pvc 中文句；`drink-menus/zh-hk`+`ja`、`disposable-menus/ja` 挂别 SKU 中文 FAQ 句 | — |
+
+**可复算净结果**
+| 指标 | 改前 → 改后 | 取证 |
+|---|---|---|
+| ja/en 段「智印港」 | 13（8 desc + 5 alt）→ **0** | `node scripts/audit-sku-locale.cjs` |
+| zh-hk 段 ZprintPro / ja 繁体专用字 / en CJK | 0 → 0 | 同上 |
+| menus 标题越界 | pvc zh-hk 66(超) · lam/hard zh-hk 37(不足) · 两 en 62(超) · pvc/hard ja 声称 100 与真值 10 矛盾 → **全清** | `node scripts/verify-menus.cjs` |
+| tsc | 54 → **54**（持平） | `npx tsc --noEmit` |
+| 探针 | 38 PASS / 0 FAIL | `node scripts/probe-skill-handover.mjs` |
+| 编码门禁 | 0 | `node scripts/check-encoding.js` |
+
+**本轮新增工具 / 避坑**
+- 新增 `scripts/apply-menus-locale-fix.cjs`：**结构定位**落盘器（按 `"slug": {` 段落 + 配平花括号定位 `imageAlt` 块 / `ja.description`；块内旧串必须恰好命中 1 次；新标题当量先断言区间；命中数不符即跳过并报错）。
+- **避坑 20（新）**：`origin` 与 `origin_ssh` 同 URL 但 **ref 各自独立**；`main` 的 upstream 是 `origin_ssh/main` → 只 fetch 一个会读到过期积压状态，与避坑 14（禁用未 fetch 的 `@{u}`）同族但**更隐蔽**（fetch 了、还是错）。判据：先 `git config branch.main.remote` 再 fetch 那个 remote，并同时 fetch 另一个。
+- **避坑 21（新）**：**dry-run 的价值在于抓「候选本身写错」**，不只是防呆。本轮 dry-run 当场拦下：两处 en 新标题当量 60/62 越界（我按直觉估的删减量不够）、一处 imageAlt 目标串按旧笔记假设的位置**根本不存在**（`pvc-menus/ja` 实际是正常日文，真正的错挂在 `hardcover-menus/ja`）。**「交接文档写的清单」是二手证据，落盘前必须用程序核实命中数**。
+
+**本批未做（不得声称已修）**
+1. menus 数据层 `description`/`body` 仍写「50 本起 / 100 本起 / 100 張」+「ISO 9001 certified」→ 与已改标题矛盾（避坑 18「只落一半」正在发生，见 §5 第 6/10 项）。
+2. 约 28 处 ja `imageAlt` 疑仍装 zh-hk 中文句（量测 `node scripts/audit-ja-imagealt-fold.cjs ja`：🔴 0 / 🟠 28，🟠 需人读确认后才可动）。
+3. `a2f636e6` **未 push**：距上一远端 push（并发车道 19:08）不足 30 min 硬下限，按 §0.25.8 **commit 留本地、不做 `Start-Sleep` 阻塞**。
+4. 临时取证脚本（`.hermes/_tmp-dump-alt.cjs` / `_tmp-list-alt.cjs` / `_tmp-dump-locale.cjs` / `_tmp-hkfold.cjs` / `_tmp-commit.ps1`）留在 `.hermes/` 未清理；**有用者已转正** `scripts/audit-ja-imagealt-fold.cjs`（避坑：`_` 前缀会被清理规则命中）。
+
