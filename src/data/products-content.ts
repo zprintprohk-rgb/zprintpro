@@ -5318,8 +5318,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">$1.00</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">$0.70</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">from $0.16</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">10</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">from $0.16</td></tr>
   </tbody>
 </table>
 
