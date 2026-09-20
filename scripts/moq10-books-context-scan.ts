@@ -23,10 +23,45 @@
 
 import fs from 'fs';
 import path from 'path';
+import { execFileSync } from 'child_process';
 
 const ROOT = process.cwd();
 const AS_JSON = process.argv.includes('--json');
 const AS_GATE = process.argv.includes('--gate');
+
+/**
+ * 掃描域參數（K3 2026-09-20 裁決 **B 案：條件式掃描域**）。
+ *
+ * 為什麼是條件式（而非一律 worktree 全檔 / 一律 staged-only）：
+ *   · **一律全檔**（原行為）：掃描域 = worktree 全檔（非 staged-only）→ 併發會話正在編輯
+ *     `seo.ts` / `category-seo-content.ts` 中途留下的漂移，會**誤攔與其無關的提交**。
+ *   · **一律 staged-only**（社群 best practice）：一般 linter 假設「檔案彼此獨立」，
+ *     但本閘門的 5 個目標檔**不獨立** —— 它們有真值依賴。只 stage 真值源 `products.ts` 時，
+ *     其他 4 檔的過期文案**掃不到** → 不一致直接上線。
+ *     這**正是本波 MOQ 事故的根因類型**（改了真值沒同步文案）⇒ 純 staged-only **不安全**。
+ *   ⇒ 條件式：**staged 含真值源 → 全 5 檔掃描（保真值級聯）**；
+ *              **否則只掃 staged ∩ 5 個目標檔（消除併發誤攔）**。
+ *
+ * ⚠️ 為什麼 scope 判定寫在 Node、而不是 hook 的 bash：
+ *   hook 有 `set -e`；且 Git for Windows 的 sh 對外部工具（paste/tr）可用性不保證。
+ *   放進來的好處：可用 `--files` 直接單元測試，**零 shell 可移植性風險**。
+ *
+ * 用法：
+ *   --gate              閘門模式
+ *   --files a,b,c       顯式指定範圍（取與 TARGETS 的交集；供測試/精準複跑）
+ *   --staged            依 `git diff --cached --name-only` 自動判定範圍（hook 用）
+ */
+const argvFiles = (() => {
+  const i = process.argv.indexOf('--files');
+  if (i === -1) return null;
+  const parts = process.argv.slice(i + 1).filter((a) => !a.startsWith('--'));
+  return parts
+    .join(',')
+    .split(',')
+    .map((s) => s.trim().replace(/\\/g, '/'))
+    .filter(Boolean);
+})();
+const AS_STAGED = process.argv.includes('--staged');
 
 const SELF = 'src/data/products.ts';
 
@@ -182,6 +217,35 @@ const TARGETS = [
   'src/lib/seo.ts',
   'src/data/category-seo-content.ts',
 ];
+
+// ---------- 掃描域解析（B 案條件式；必須在 TARGETS 定義後） ----------
+function stagedFiles(): string[] {
+  try {
+    return execFileSync('git', ['diff', '--cached', '--name-only', '--diff-filter=ACMR'], { encoding: 'utf8' })
+      .split(/\r?\n/)
+      .map((s) => s.trim().replace(/\\/g, '/'))
+      .filter(Boolean);
+  } catch {
+    // git 不可用（非 repo / 無 git）→ 回空陣列；此時 scope 會退化成「無目標檔」並顯式跳過，
+    // 不會靜默變成「全檔掃描」而誤攔（fail-safe 方向：寧可少掃，不可假陽性鎖死）
+    return [];
+  }
+}
+const SCOPE = ((): { files: string[]; why: string } => {
+  if (argvFiles) {
+    return { files: TARGETS.filter((f) => argvFiles.includes(f)), why: '--files 指定（取與目標檔的交集）' };
+  }
+  if (!AS_STAGED) return { files: [...TARGETS], why: '未指定範圍 → 全 5 檔' };
+  const staged = stagedFiles();
+  if (staged.includes(SELF)) {
+    return { files: [...TARGETS], why: `真值源已 staged（${SELF}）→ 全 5 檔級聯檢查` };
+  }
+  const hit = TARGETS.filter((f) => staged.includes(f));
+  return {
+    files: hit,
+    why: hit.length ? `真值源未變更 → 只掃 staged ∩ 目標檔（${hit.length}/${TARGETS.length}）` : 'staged 無 MOQ 目標檔',
+  };
+})();
 
 type Hit = {
   file: string;
@@ -577,9 +641,10 @@ function independentByStyle(file: string): Map<string, number> {
 const truth = readTruth();
 const shapeProblems = assertShape(truth);
 const all: Hit[] = [];
-for (const f of TARGETS) all.push(...scanFile(f, truth));
+for (const f of SCOPE.files) all.push(...scanFile(f, truth));
 // 品類級段落（無 SKU slug，scanFile 會整檔跳過 → 另一判定域，必須獨立掃）
-all.push(...scanCategoryLevel());
+// 只有當品類級目標檔在本次範圍內才掃（範圍外掃 = 又製造誤攔）
+if (SCOPE.files.includes('src/data/category-seo-content.ts')) all.push(...scanCategoryLevel());
 
 const drift = all.filter((h) => h.found !== h.truth);
 const recount = [...independentByStyle(SELF)].map(([kind, grep]) => ({
@@ -627,7 +692,15 @@ if (AS_JSON) {
   }
 
   console.log('MOQ 口徑一致性掃描（真值 = src/data/products.ts minQuantity）');
-  console.log(`真值 SKU: ${truth.size} ｜ 掃描檔: ${TARGETS.length} ｜ 命中: ${all.length} ｜ 漂移: ${drift.length}`);
+  // ★ 掃描域必須顯式揭露（per 本專案血淚教訓：「0 命中 ≠ 乾淨」——範圍外沒掃到不是乾淨）
+  console.log(
+    `[SCOPE] ${SCOPE.why} ｜ 實際掃 ${SCOPE.files.length}/${TARGETS.length} 檔` +
+      (SCOPE.files.length ? `: ${SCOPE.files.join(', ')}` : '（無）'),
+  );
+  if (SCOPE.files.length < TARGETS.length) {
+    console.log('        ⚠️ 本次為**局部掃描**，僅涵蓋上述檔案；未掃檔案 ≠ 已檢查通過');
+  }
+  console.log(`真值 SKU: ${truth.size} ｜ 掃描檔: ${SCOPE.files.length} ｜ 命中: ${all.length} ｜ 漂移: ${drift.length}`);
   if (shapeProblems.length) {
     console.log('\n🔴 形狀斷言失敗（指標崩壞，結論作廢）:');
     for (const p of shapeProblems) console.log(`   - ${p}`);
@@ -665,6 +738,13 @@ if (AS_JSON) {
 }
 
 if (AS_GATE) {
+  // 範圍為空（staged 無 MOQ 目標檔）→ 明確 SKIP。
+  // ⚠️ 措辭刻意寫「≠ 已檢查通過」：本專案血淚教訓是「0 命中被讀成乾淨」，
+  //    這裡若只印 PASS，下一位接手者會以為全站被掃過。
+  if (SCOPE.files.length === 0) {
+    console.log(`\n[GATE] SKIP — ${SCOPE.why} → 本次不檢查（≠ 已檢查通過）`);
+    process.exit(0);
+  }
   const fresh = drift.filter((h) => !pendingNote(h) && !approvedMap.has(`${h.slug}|${h.kind}|${h.found}`));
   const fail = fresh.length > 0 || shapeProblems.length > 0 || recount.some((r) => r.scan > r.grep);
   if (fail) {
@@ -685,5 +765,9 @@ if (AS_GATE) {
   const parts: string[] = [];
   if (pending.length) parts.push(`待裁決 ${pending.length}`);
   if (approved.length) parts.push(`已核准分層 ${approved.length}`);
-  console.log(`\n[GATE] PASS — 🆕 新漂移 0 條${parts.length ? `（${parts.join(' / ')}，皆不阻擋）` : ''}`);
+  console.log(
+    `\n[GATE] PASS — 🆕 新漂移 0 條${parts.length ? `（${parts.join(' / ')}，皆不阻擋）` : ''}` +
+      ` ｜ 範圍 ${SCOPE.files.length}/${TARGETS.length}` +
+      (SCOPE.files.length < TARGETS.length ? '（局部，非全站結論）' : '（全檔）'),
+  );
 }

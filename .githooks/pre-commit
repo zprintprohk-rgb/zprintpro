@@ -119,10 +119,23 @@ fi
 # 设计: 已登录的「待 K3 裁决」项不阻挡 (否则存量会锁死全站 → 闸门必被绕过),
 #   只挡**未登录的新漂移**; 存量项一律在报告中显示为「📋 已登录」而非 ✓。
 # 实测耗时 0.8s, 可无条件执行。
-echo "3️⃣.6  门童 #24 MOQ 口径一致性闸门..."
+# 設計 (**2026-09-20 K3 裁決 B 案: 條件式掃描域**):
+#   · 舊行為 = 掃描 worktree 全 5 檔 (非 staged-only) → 併發會話在 seo.ts /
+#     category-seo-content.ts 中途留下的漂移, 會**誤攔與其無關的提交**。
+#   · 純 staged-only (社群 best practice) → **真值級聯會盲掉**: 只 stage 真值源
+#     products.ts 時, 其他 4 檔的過期文案掃不到 → 不一致直接上線 (本波 MOQ 事故根因類型)。
+#   ⇒ 條件式: **staged 含真值源 products.ts → 全 5 檔級聯檢查**;
+#             **否則只掃 staged ∩ 5 個目標檔** (消除誤攔)。
+#   範圍判定寫在 scanner 的 Node 裡 (--staged), 因為本 hook 有 `set -e`,
+#   且 Git for Windows 的 sh 對外部工具 (paste/tr) 可用性不保證。
+# 已登录的「待 K3 裁决」项不阻挡 (否则存量会锁死全站 → 闸门必被绕过),
+#   只挡**未登录的新漂移**; 存量项一律在报告中显示为「📋 已登录」而非 ✓。
+# ⚠️ 本块用 `if ! cmd; then` 而非 `cmd; if [ $? -ne 0 ]` —— 本 hook 第 18 行有 `set -e`,
+#   语句级失败会**立即退出**, 后面的 `if` 永远到不了 ⇒ 修法提示不可达 (2026-09-20 修正)。
+# 实测耗时 ~0.8s (全檔) / <0.3s (局部), 可无条件执行。
+echo "3️⃣.6  门童 #24 MOQ 口径一致性闸门 (条件式扫描域)..."
 if command -v node &> /dev/null; then
-  npx tsx scripts/moq10-books-context-scan.ts --gate
-  if [ $? -ne 0 ]; then
+  if ! npx tsx scripts/moq10-books-context-scan.ts --gate --staged; then
     echo ""
     echo "❌ 门童 #24 拦截: MOQ 口径漂移 (新漂移未清)"
     echo ""
@@ -143,8 +156,8 @@ fi
 echo "3️⃣.7  門童清單編號衝突檢查..."
 if command -v node &> /dev/null; then
   if [ -f scripts/gen-guard-manifest.mjs ]; then
-    node scripts/gen-guard-manifest.mjs
-    if [ $? -ne 0 ]; then
+    # ⚠️ 同上 (`set -e`): 必須用 `if ! cmd`, 否則提示不可達
+    if ! node scripts/gen-guard-manifest.mjs; then
       echo ""
       echo "❌ 門童編號衝突: 同一編號被多個門童聲明"
       echo ""
