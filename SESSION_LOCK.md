@@ -3,6 +3,32 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
+> **状态**: 🟡 **持有中（HELD）** — 2026-09-20 23:5x（batch C：hk-cost-baseline 三語 FAQ 應用 + 攢批 push）
+
+---
+
+## 持有声明（2026-09-20 23:5x · batch C 会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | batch C 会话（本会话，K3 23:46 授权「到點自動幹」） |
+| **意图** | E1：cost-baseline 三語 blog-data 補 FAQ×6（B3 五要件）+ strip 內嵌 JSON-LD + lastUpdated→2026-09-20；應用器 `scripts/apply-cost-baseline-faq.mjs --apply`；門童 #15 複驗；攢批 push 1 次；push 後線上斷言 FAQPage |
+| **写入范围** | `src/data/blog-data/{zh-hk,en,ja}.json`（apply-cost-baseline-faq.mjs 自動備份 `.hermes/_bak-blogdata-*-before-faq-20260920.json`）+ 本文件 |
+| **真值依据** | `docs/2026-09-20-cost-baseline-faq-draft.md`（FAQ 全文 SSoT，草案 verify-faq-draft 已過）+ 審計 `docs/2026-09-20-12seg-compliance-audit-and-plan.md` E0→E7 |
+| **预计时长** | < 15 min |
+| **释放条件** | push 完成 + 線上 FAQPage 斷言通過 |
+
+---
+
+## 释放记录（2026-09-20 ~22:3x · 标题飞轮批次1 会话）
+
+| 项 | 值 |
+|---|---|
+| **释放者** | 标题飞轮批次1 会话 |
+| **交付** | `97ac211c`（已 push GitHub, ls-remote 实证 + 线上标题实测部署）：42 槽标题修复（25 FILL+17 TRIM），全站 300 槽首全达标 50-57；门童 #25 title-band-guard + pre-commit 三份 sha256 同步；素材库 title-hooks.json；验证窗 tracker（至 2026-09-30）+ 闭环报告脚本；飞轮 SSoT `docs/2026-09-20-title-gsc-flywheel.md` |
+| **锁期间写过的文件** | `src/data/sku-seo-data.ts`（42 槽 exact-match, 计数断言, 备份 `.hermes/_bak-title-flywheel-20260920/`）· scripts/ 新增 4 + guards/ 新增 2 · canonical/.githooks/.git/hooks pre-commit · docs/ + .hermes/ tracker |
+| **验证** | census 300 OK/0 FILL/0 TRIM → audit-sku-locale 四项 0 → tsc 54 错全为 quote-engine 存量（未触碰）→ 门童 #25 复扫存量 issue 0 → pre-commit 全门童过 → ls-remote 实证 → 线上 2 页新标题实测 |
+| **遗留报告** | pre-push 门童 #14 曾打印拦截但 ref 已落地（机制待查，入飞轮文档 §6 已知限制）；vehicle-wraps 等高价值槽价格钩待 basePrice 分叉裁决后补 |
 
 ---
 
