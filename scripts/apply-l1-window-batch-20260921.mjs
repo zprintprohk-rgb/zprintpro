@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync, copyFileSync, mkdirSync } from 'fs';
 
 const APPLY = process.argv.includes('--apply');
+const BLOG_ONLY = process.argv.includes('--blog-only'); // v3: sku 层已在 HEAD 时只重放 blog 层 (geo 会话覆盖事故恢复)
 const BAK = '.hermes/_bak-l1-window-20260921';
 mkdirSync(BAK, { recursive: true });
 
@@ -18,8 +19,8 @@ const report = [];
 const SKU = 'src/data/sku-seo-data.ts';
 let sku = readFileSync(SKU, 'utf8');
 
-// 1a. 全局打稿 2h→1h (K3 拍板「1小时为统一值」覆盖全部 SKU)
-const globalOps = [
+// 1a. 全局打稿 2h→1h (K3 拍板「1小时为统一值」覆盖全部 SKU) — blog-only 模式跳过
+const globalOps = BLOG_ONLY ? [] : [
   ['2 小時內免費提供數碼打稿', '1 小時內免費提供數碼打稿', 1],
   ['2 小時內免費數碼打稿', '1 小時內免費數碼打稿', 1],
   ['2 小時數碼打稿', '1 小時數碼打稿', 1],
@@ -41,7 +42,8 @@ for (const [oldS, newS, exp] of globalOps) {
   report.push(`OK   ${SKU} ×${n}: ${oldS.slice(0,36)} → ${newS.slice(0,36)}`);
 }
 
-// 1b. #18 MOQ — 限定 small-batch-stickers 块 (避坑 19: 同句模板被多 SKU 共享)
+// 1b. #18 MOQ — 限定 small-batch-stickers 块 (避坑 19: 同句模板被多 SKU 共享) — blog-only 模式跳过
+if (!BLOG_ONLY) {
 const sbStart = sku.indexOf('"small-batch-stickers": {');
 const sbEnd = sku.indexOf('\n  "', sbStart + 10);
 if (sbStart < 0 || sbEnd < 0) { failures++; report.push('FAIL: small-batch-stickers 块边界找不到'); }
@@ -64,6 +66,7 @@ for (const [oldS, newS, exp] of sbOps) {
   report.push(`OK   sb-block ×${n}: ${oldS.slice(0,40)} → ${newS.slice(0,40)}`);
 }
 sku = sku.slice(0, sbStart) + block + sku.slice(sbEnd);
+}
 
 // ---------- 2. blog-data 三语 JSON ----------
 const KEEP_TOKENS = ['回覆', '返信', 'reply within', 'Quote within', 'precheck', 'プリチェック', 'プレチェック', '預檢', 'FDA', 'Bioterrorism', '取件', '受取', '海運', '空運', '陸運', 'ocean', 'road', 'air ', '快印', '急速印刷', '2小時取', '修正リスト', '点検'];
