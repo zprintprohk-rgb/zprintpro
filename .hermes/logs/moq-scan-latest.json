@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-09-20T07:02:09",
+  "scannedAt": "2026-09-20T07:33:12",
   "truthSize": 94,
   "shapeProblems": [],
   "hits": 589,
-  "drift": 335,
+  "drift": 333,
   "recount": [
     {
       "kind": "zh_本起",
@@ -54,7 +54,7 @@
   "findings": [
     {
       "file": "src/data/products.ts",
-      "line": 5754,
+      "line": 5772,
       "slug": "catalog-printing",
       "kind": "en_pcs",
       "found": 100,
@@ -63,7 +63,7 @@
     },
     {
       "file": "src/data/products.ts",
-      "line": 5754,
+      "line": 5772,
       "slug": "catalog-printing",
       "kind": "en_pcs",
       "found": 100,
@@ -1215,15 +1215,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2096,
-      "slug": "hardcover-menus",
-      "kind": "zh_個起",
-      "found": 50,
-      "truth": 10,
-      "text": "…\"ja\": \"一般為50個起訂，一次性餐牌可接受10個起。\"…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2107,
       "slug": "drink-menus",
       "kind": "zh_本起",
@@ -1287,15 +1278,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2132,
-      "slug": "drink-menus",
-      "kind": "zh_個起",
-      "found": 50,
-      "truth": 10,
-      "text": "…\"zh-hk\": \"一般為50個起訂，一次性餐牌可接受10個起。\",…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2161,
       "slug": "disposable-menus",
       "kind": "ja_冊から",
@@ -1317,9 +1299,9 @@
       "line": 2170,
       "slug": "disposable-menus",
       "kind": "zh_個起",
-      "found": 50,
+      "found": 10,
       "truth": 100,
-      "text": "…\"zh-hk\": \"一般為50個起訂，一次性餐牌可接受10個起。\",…"
+      "text": "…\"zh-hk\": \"一般為10個起訂，一次性餐牌（大批量柯式）100個起。\",…"
     },
     {
       "file": "src/data/sku-seo-data.ts",
