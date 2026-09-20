@@ -146,6 +146,24 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
     comiket: { sku: 'postcard-set' },
     original_ip: { sku: 'eco-tote-bag' },
   },
+
+  /**
+   * `business-cards` ＝ 指向賀卡的**別名 key**（K3 2026-09-20 方案 B 第 3 步新增）。
+   *
+   * ⚠️ 為什麼必須新增：本表與 SCENARIO_INDUSTRY_NAMES 原本**只列 13 個類別**、
+   *   一致地不含 business-cards（屬設計排除）。若不新增，CategoryIndustries /
+   *   CategorySharpHooks 的該區塊渲染時 `resolveScenarioHref()` 會落空 →
+   *   卡片取不到連結（與本輪 banners key 命名不一致造成的失效同型）。
+   * 場景 → 賀卡 SKU（依各場景文案的工藝特徵）：
+   *   birthday「燙金祝福語」→ foil-greeting-cards
+   *   holiday「珠光紙 · 局部 UV」→ premium-greeting-cards
+   *   thankyou「棉紙質感 · 燙金 LOGO」→ premium-greeting-cards
+   */
+  'business-cards': {
+    birthday: { sku: 'foil-greeting-cards' },
+    holiday: { sku: 'premium-greeting-cards' },
+    thankyou: { sku: 'premium-greeting-cards' },
+  },
 };
 
 /**
@@ -268,6 +286,18 @@ export const SCENARIO_INDUSTRY_NAMES: Record<string, Record<string, {
     vtuber:      { 'zh-hk': 'VTuber 推活', en: 'VTuber fan goods', ja: 'VTuber 推し活' },
     comiket:     { 'zh-hk': 'Comiket 委託', en: 'Comiket commissions', ja: 'コミケ委託' },
     original_ip: { 'zh-hk': '原創 IP 周邊', en: 'Original IP merch', ja: 'オリジナルIP' },
+  },
+
+  /**
+   * `business-cards` ＝ 指向賀卡的**別名 key**（K3 2026-09-20 方案 B 第 3 步新增）。
+   * 若不新增，`getScenarioIndustryName()` 對該類別會落空 → 卡片無行業名
+   * （CategorySharpHooks 以 `industries[idx]` 取用，落空即整卡不渲染）。
+   * 名稱依場景定位：生日＝個人化問候；節日／感謝＝企業與品牌批量。
+   */
+  'business-cards': {
+    birthday: { 'zh-hk': '生日問候', en: 'Birthday greetings', ja: 'バースデー挨拶' },
+    holiday:  { 'zh-hk': '節日企業派發', en: 'Corporate holiday mailings', ja: '法人向け季節挨拶' },
+    thankyou: { 'zh-hk': '品牌隨盒卡', en: 'Brand insert cards', ja: 'ブランド同梱カード' },
   },
 };
 

@@ -242,18 +242,41 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['賞状/証明書印刷・A4/A5', 'コート紙/マット紙・スポットUV', '50部から・学校/機関対応'],
     }},
   ],
+  /**
+   * `business-cards` ＝ **指向賀卡的別名 key**（K3 2026-09-20 方案 B 明文化）。
+   *
+   * ══ 為什麼 key 叫名片但內容是賀卡 ══
+   *   v22 (7347c503) 已將 6 個名片 SKU 1:1 改名為賀卡，但此 key 因**全站 8 處 UI 映射**
+   *   （CategoryProductCard / CategorySidebar / ProductTabs / HotProducts / ProductCard ×2 …）
+   *   與 `category-seo-content.ts` 的 `'business-cards': '賀卡印刷'` 別名而**保留未改**。
+   *   改名需動 36 處 / 15+ 檔案，且牽涉 `middleware.ts` 的 301 映射與名片落地頁
+   *   （兩者皆在 AGENTS.md §0.0 禁區）→ K3 裁定**不改名，改以註解明文化**。
+   *   匯總見 docs/2026-09-20-business-cards-key-reference-audit.md。
+   *
+   * ══ 三場景的 MOQ 為何**不是漂移**（K3 2026-09-20 逐條判斷）══
+   *   賀卡 SKU 真值 = 10 屬**個人化定位**；本區三場景屬**企業套組定位**，
+   *   兩者定位不同 → MOQ 不同為合理。逐條語境判定：
+   *     · birthday  「50 張起 · 自訂內頁祝福」   → 個人化（50 張為 MOQ 宣稱）
+   *     · holiday   「100 張起 · 企業批量折扣」  → **企業批量**（數量門檻，非個人 MOQ）
+   *     · thankyou  「100 張起 · DTC 品牌適用」  → **品牌套組**（同上）
+   *   ⇒ 三者與各自定位一致，**無需修改**。此判定已明文化，避免未來掃描器再次誤判為漂移
+   *     （本輪 MOQ 掃描器即曾把這三條列為候選漂移）。
+   */
   'business-cards': [
     // 2026-07-19 user 拍板: 推荐位撤名片 → 贺卡 (greeting cards, 美国站情绪价值品类)
+    // 定位：個人化（自訂內頁祝福）→ 50 張起為 MOQ 宣稱，與個人化定位一致
     { key: 'birthday', scenarios: {
       'zh-hk': ['生日賀卡 · 燙金祝福語', '300g 厚卡 · 信封配套', '50 張起 · 自訂內頁祝福'],
       en: ['Birthday cards · foil greetings', '300gsm thick stock · envelopes included', 'From 50 · custom inside message'],
       ja: ['バースデーカード・箔押しメッセージ', '300g厚紙・封筒セット', '50枚から・内側メッセージ自由'],
     }},
+    // 定位：企業批量（節日檔期派發）→ 100 張起為**數量門檻**，非個人 MOQ
     { key: 'holiday', scenarios: {
       'zh-hk': ['節日賀卡 · 聖誕/新年/感恩節', '珠光紙 · 局部 UV', '100 張起 · 企業批量折扣'],
       en: ['Holiday cards · Christmas/New Year/Thanksgiving', 'Pearlescent stock · spot UV', 'From 100 · corporate bulk discount'],
       ja: ['季節グリーティングカード・クリスマス/新年/感謝祭', 'パール紙・スポットUV', '100枚から・法人割引'],
     }},
+    // 定位：品牌套組（DTC 隨盒卡）→ 100 張起為**數量門檻**
     { key: 'thankyou', scenarios: {
       'zh-hk': ['感謝卡 · 婚禮/品牌隨盒卡', '棉紙質感 · 燙金 LOGO', '100 張起 · DTC 品牌適用'],
       en: ['Thank-you cards · weddings/brand inserts', 'Cotton texture · foil logo', 'From 100 · made for DTC brands'],

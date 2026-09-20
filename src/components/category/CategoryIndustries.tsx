@@ -603,6 +603,51 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
       priority: 4, tier: 'B',
     },
   ],
+
+  /**
+   * `business-cards` ＝ **指向賀卡的別名 key**（K3 2026-09-20 方案 B 第 2 步：補齊雙資料源）。
+   *
+   * 本區塊原本僅存在於 `CategorySharpHooks`（孤兒類別）→ 補齊至此完成雙源一致。
+   * key 保留 `business-cards` 而非改名為 `greeting-cards`，原因（K3 裁定）：
+   *   改名需動 36 處 / 15+ 檔案，且牽涉 `middleware.ts` 301 映射與名片落地頁
+   *   （兩者皆在 AGENTS.md §0.0 禁區）→ 改以註解明文化別名關係。
+   *   完整引用面盤點：docs/2026-09-20-business-cards-key-reference-audit.md
+   *
+   * ★ MOQ 定位（逐條判斷，**非漂移**，勿再"修正"）：
+   *   賀卡 SKU 真值 10 = 個人化定位；本區三場景 = 企業套組定位 → MOQ 不同為合理。
+   *     · birthday  50 張起 · 自訂內頁祝福    → 個人化（50 為 MOQ 宣稱）
+   *     · holiday   100 張起 · 企業批量折扣   → 企業批量（數量門檻）
+   *     · thankyou  100 張起 · DTC 品牌適用   → 品牌套組（數量門檻）
+   */
+  'business-cards': [
+    {
+      key: 'birthday',
+      scenarios: {
+        'zh-hk': ['生日賀卡 · 燙金祝福語', '300g 厚卡 · 信封配套', '50 張起 · 自訂內頁祝福'],
+        en: ['Birthday cards · foil greetings', '300gsm thick stock · envelopes included', 'From 50 · custom inside message'],
+        ja: ['バースデーカード・箔押しメッセージ', '300g厚紙・封筒セット', '50枚から・内側メッセージ自由'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'holiday',
+      scenarios: {
+        'zh-hk': ['節日賀卡 · 聖誕/新年/感恩節', '珠光紙 · 局部 UV', '100 張起 · 企業批量折扣'],
+        en: ['Holiday cards · Christmas/New Year/Thanksgiving', 'Pearlescent stock · spot UV', 'From 100 · corporate bulk discount'],
+        ja: ['季節グリーティングカード・クリスマス/新年/感謝祭', 'パール紙・スポットUV', '100枚から・法人割引'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'thankyou',
+      scenarios: {
+        'zh-hk': ['感謝卡 · 婚禮/品牌隨盒卡', '棉紙質感 · 燙金 LOGO', '100 張起 · DTC 品牌適用'],
+        en: ['Thank-you cards · weddings/brand inserts', 'Cotton texture · foil logo', 'From 100 · made for DTC brands'],
+        ja: ['サンキューカード・ウェディング/同梱カード', 'コットン紙・箔押しロゴ', '100枚から・D2Cブランド向け'],
+      },
+      priority: 2, tier: 'A',
+    },
+  ],
 };
 
 // 2026-09-17 删除 coveredBlogMap:
