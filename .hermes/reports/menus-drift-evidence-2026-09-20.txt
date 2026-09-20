@@ -1,0 +1,57 @@
+=== products.ts 真值 ===
+  pvc-menus            minQuantity=10    unitLabel=張
+  laminated-menus      minQuantity=10    unitLabel=份
+  hardcover-menus      minQuantity=10    unitLabel=本
+  drink-menus          minQuantity=10    unitLabel=份
+  disposable-menus     minQuantity=100   unitLabel=份
+  wedding-menu-cards   minQuantity=50    unitLabel=(无)
+
+=== sku-seo-data.ts 标题现状 (menus) ===
+
+[pvc-menus]  真值 minQuantity=10 unitLabel=張
+   zh-hk   66 当量 🔴超57  声称=50本起
+          PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港
+   en      56 当量 ✅  声称=—
+          PVC Menus | Laminated Durable | Free US Ship | ZprintPro
+   ja      55 当量 ✅  声称=—
+          PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro
+
+[laminated-menus]  真值 minQuantity=10 unitLabel=份
+   zh-hk   37 当量 🟠不足50  声称=10 份起
+          過膠餐牌 | 防水 覆膜 10 份起 | 智印港
+   en      62 当量 🔴超57  声称=—
+          Laminated Menus | Laminated Durable | Free US Ship | ZprintPro
+   ja      45 当量 🟠不足50  声称=—
+          ラミネート menu | 防水 ラミネート | ZprintPro
+
+[hardcover-menus]  真值 minQuantity=10 unitLabel=本
+   zh-hk   37 当量 🟠不足50  声称=10 本起
+          精裝餐牌 | 防水 覆膜 10 本起 | 智印港
+   en      62 当量 🔴超57  声称=—
+          Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro
+   ja      51 当量 ✅  声称=—
+          ハードカバー menu 防水・箔押し・100枚〜 | ZprintPro
+
+[drink-menus]  真值 minQuantity=10 unitLabel=份
+   zh-hk   54 当量 ✅  声称=100本起
+          餐廳酒水牌 | 防水 覆膜 圓角 | 100本起 HK$12起 | 智印港
+   en      51 当量 ✅  声称=—
+          Drink Menus | Waterproof | Free US Ship | ZprintPro
+   ja      50 当量 ✅  声称=—
+          ドリンクメニュー 防水・マット・100枚〜 | ZprintPro
+
+[disposable-menus]  真值 minQuantity=100 unitLabel=份
+   zh-hk   50 当量 ✅  声称=—
+          一次性餐牌 防水・圓角・100起印・HK$0.22起 | 智印港
+   en      49 当量 🟠不足50  声称=—
+          Disposable Menus | Free Shipping $99+ | ZprintPro
+   ja      46 当量 🟠不足50  声称=—
+          使い捨てメニュー | 防水 ラミネート | ZprintPro
+
+[wedding-menu-cards]  真值 minQuantity=50 unitLabel=(无)
+   zh-hk   51 当量 ✅  声称=—
+          婚禮菜單卡印刷 燙金UV 50套起印 A5 即日報價 | 智印港
+   en      52 当量 ✅  声称=—
+          Wedding Menu Cards A5 50 Sets Foil Print | ZprintPro
+   ja      54 当量 ✅  声称=—
+          ウェディングメニュー印刷 50セット〜 箔押し | ZprintPro

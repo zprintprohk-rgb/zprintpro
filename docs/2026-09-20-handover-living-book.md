@@ -9,6 +9,26 @@
 
 ---
 
+## §0 关联产物（唯一发现入口 — 必读，勿跳过）
+
+> **背景**: 2026-09-20 同日有**并发会话**各自产出了交接文档。本活书虽自称「并发会话第一份要读的文件」，
+> 但对方**并未读到**它，因而另建了一份 handoff —— 即**发现机制失效**（第三/第四套产物由此衍生）。
+> 故此处显式登记全部同族产物，并把本文件确立为**唯一入口**。
+
+| 关联产物 | 路径 | 内容 | 状态 |
+|---|---|---|---|
+| **本活书（唯一入口）** | `docs/2026-09-20-handover-living-book.md` | 状态快照 / 规则 SSoT / 未完事项 / 并发协议 | ✅ |
+| 并发会话 handoff | `docs/2026-09-20-handoff-12seg-and-b2b3.md` | 12 段骨架 / 门禁加固 / B2-B3 内容批次 | ✅ 已入库 |
+| 并发会话探针 | `.hermes/_probe-pb/probe-self-evolution-skill.sh` | 自进化技能自检 | ✅ 已入库 |
+| 本活书配套探针 | `scripts/probe-skill-handover.mjs` | 38 断言（技能/活书/SSoT/规则同源/门禁） | ✅ 已入库 |
+| 只读取证（menus） | `.hermes/reports/menus-drift-and-locale-mismatch-2026-09-20.md` | menus 11 处 DRIFT + 13 处品牌错配实证清单 | ✅ |
+| 并发写锁 | `SESSION_LOCK.md`（仓库根） | 人手会话声明式软锁 + 接管区 | ✅ |
+
+> ⚠️ **因并发隔离，正文暂未合并，以本指针为唯一发现入口。**
+> **阶段 2（合并正文: 避坑条并入同一 skill + 两探针互引）留待并发会话静默后的安全窗口执行。**
+
+---
+
 ## §1 一句话现状
 
 **标题规则口径已三源同源（代码 / 书面 / 报告元数据），58 边界清零；当前唯一阻塞 = 并发会话正在编辑
@@ -55,7 +75,8 @@
 | `scripts/apply-title-batch.mjs` | 批次落盘（含 `trim-58` 批次定义；断言「变化行数 == 期望槽数」+ 逐字命中 + 备份） | ✅ |
 | `scripts/title-audit-v4.mjs` | 全站标题审计（**已改读 SSoT 常量**，消灭 50/58/65/54 硬编码） | ✅ |
 | `scripts/sync-title-rule-50-57.mjs` | 规则文本归一化（取代已删除的 `sync-title-rule-50-58.mjs`） | ✅ |
-| `scripts/_menus-evidence.cjs` | menus 簇实证片段清单（临时，供候选取词） | ⏳ 未入库 |
+| `scripts/menus-evidence.cjs` | menus 簇实证片段清单（供候选取词，**只读**） | ✅ 已入库（2026-09-20 去 `_` 前缀正式入库） |
+| `scripts/verify-menus.cjs` | menus 真值（`products.ts`）vs 标题现状 DRIFT 核实（**只读**） | ✅ 已入库（同日去 `_` 前缀） |
 
 ---
 

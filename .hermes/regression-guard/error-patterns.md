@@ -1585,3 +1585,45 @@ node scripts/guards/bypass-audit-guard.js --stamp     # 理由自动落 .hermes/
 **配套**: AGENTS.md §0.23.2 三閘門 + 雙方法復算鐵律 ·
 技能 `docs/skills/multi-layer-moq-consistency-audit.md` ·
 交接書 `docs/2026-09-20-handover-live-doc-moq-consistency.md`
+
+---
+
+### 规则 COMMIT_MSG_OVERCLAIMS_TREE — 提交信息声称包含的文件 ≠ 提交树实际内容 (K3 2026-09-20 入档)
+
+**事故形态**: `885d03d9` 提交信息 §四 写「**附带: `scripts/menus-evidence.cjs`（menus 实证片段清单）**」，
+但该 commit 实际**只含 2 个文件**（`docs/2026-09-20-handover-living-book.md` + `scripts/probe-skill-handover.mjs`），
+**该文件不在树中**。信息与树不一致，且**无人复核即入库**。
+
+**根因（关键：原始归因是错的）**: 当事会话最初归因「并发清理把 `scripts/_*` 扫掉了」。
+实测推翻 —— `git log --all -- scripts/_menus-evidence.cjs` **为空 = 从未被任何 commit 跟踪过**
+（该文件已于本条目落地时去 `_` 前缀改名 `scripts/menus-evidence.cjs`，此处保留历史文件名），
+且该文件**至今仍在磁盘**（2539 bytes，17:04:47）。
+真因是 `git add a b c` 中 **c 不存在 ⇒ pathspec 失败 ⇒ 三个都没 add**（per `SAFECOMMIT_ATOMIC` 的同类机制），
+而错误只在随后的 `git commit` 暴露 → 极易误判「已提交」。
+（**补充实测**: `.gitignore` 仅有 `_analyze*.py`/`_fix-*.cjs` 等**逐条**下划线规则，
+**不存在 `_*` 通配**；故「被 gitignore 忽略」这条也不成立。）
+
+**为什么属本族**: 与 `DOUBLE_METHOD_RECOUNT` / `TIME_READING_UNVERIFIED` 同源 ——
+**「说的」与「实际」是两个可交叉验证的来源，只读了一边**。本条是对象版：
+交叉验证对象 = **提交树**（对照 `git show --stat HEAD`）。
+
+**修法 (三步, 不可省)**:
+1. **`git add` 后、`commit` 前必跑 `git diff --cached --name-status` 复核**；
+   `git add` 遇不存在的 pathspec 会**整体失败**（一个都不 add）。
+2. **提交信息中每声称一个文件，必须能在 `git show --stat HEAD` 中找到**；否则不入库。
+3. **发现信息过载（overclaim）时，不改写历史**（per §0.34.2）——
+   **补一个追加提交**使信息成真，并在该提交信息中说明补全关系。
+
+**附带纠正（同案）**: 「`scripts/_*` 命名会被清理规则命中」**不成立** ——
+该文件从未被清理，因它**从未进入版本控制**（全程 untracked）。
+**`_` 前缀的真实风险不是被清理，而是「交付物游离在版本控制之外」。**
+故本条落地时一并去除 `_` 前缀正式入库（正式脚本不带下划线）。
+
+**危害边界（诚实记录）**: 本次**未造成数据损坏** —— 文件与内容均完好。
+真实代价是**文档可信度**（后续接手者按提交信息找文件会扑空）+ **一次 `git add` 白跑**。
+属「记录失真」而非「数据丢失」，但同样污染交接链。
+
+**同族规则**: `SAFECOMMIT_ATOMIC`（同机制：add 与 commit 之间的窗口）· `METRIC_INTEGRITY_FIVE_TRAPS`（母族）· `DOUBLE_METHOD_RECOUNT`（同源：单来源未交叉验证）· `TIME_READING_UNVERIFIED`（同属「读数未复算」）
+
+**配套**: 交生活书 `docs/2026-09-20-handover-living-book.md` §7 并发会话安全协议 ·
+技能 `zprintpro-self-evolution-hardening` §五（避坑 20）
