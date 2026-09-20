@@ -541,3 +541,4 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - 🟡 ja 紙材指南「特殊紙 50部から對應」：紙材能力宣言非單一 SKU 口徑，無數據真值可對。
 - 🟢 ja 價格基線「婚禮文具 50部から」：**真實分層陳述**（日曆 1000/婚禮 50/同人 4-10），無誤，KEEP。
 - 🟡 offset 500 階層主張（en/ja 日曆博客「offset 500 minimum」「オフセット500部」）：與 minQ=1000 引擎口徑張力，屬價格階層經濟學主張，改需 K3 定價真值。
+**線上復断言補記（03:55）**：zh 畫冊/紙材博客 PASS ✅；ja/en 日曆博客與 custom-calendars 首輪 FAIL 的根因 = **page.tsx render 層硬編碼 meta 覆蓋 json**（zh 塊 02:34 批已修，en:489/ja:675 塊遺漏）+ 產品頁可見 FAQ 實走 `product-faqs.ts`（非 sku-seo-data.faq，該字段僅 schema 層）→ en/ja meta 已修（fc0d2690），「render 層覆蓋 json」入避坑（數據層修復後必查 page.tsx 同 slug 硬編碼塊）。KEEP/FLAG 清單見 03:20 條（畢業冊族 copy=data 待 K3 引擎層拍板 / wedding 混合 minQ / 特殊紙能力宣言 / offset 500 階層 / ja 基線真實分層陳述 KEEP）。
