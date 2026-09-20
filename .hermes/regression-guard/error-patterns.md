@@ -1783,3 +1783,40 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 `POWERSHELL_OUTPUT_ENCODING`（同属「PowerShell 通道改写数据」）
 
 **配套**: `scripts/verify-menus-equiv.cjs`（从文件读取的复算器）· AGENTS.md §0.23.2 三闸门（第 1 条：匹配口径，先 dump 真实样本）· 技能 `zprintpro-self-evolution-hardening` §五
+
+---
+
+### 规则 WORKSPACE_DIRTY_OVERFLOW — 工作区脏文件堆积到「git status 不再是可靠信号」 (2026-09-20 立)
+
+**事故形态**: 2026-09-20 实测 `git status --porcelain` 共 **599 条**（绝大多数是 `.hermes/` 下的
+**未追踪备份目录 + 生成报告**：`_bak-*` / `_archive-*` / `_probe-*` / `reports/*.json`）。
+单条无害，**堆到三位数后性质改变**：
+
+| # | 风险 | 具体后果 |
+|---|------|----------|
+| 1 | **真实改动被淹没** | 599 条里找「我这轮改了哪 3 个档」只能靠 grep 过滤，人眼必漏 |
+| 2 | **掩盖并发会话的改动** | 另一车道的未提交改动混在同一噪声里 → 无法快速察觉 → §0.35.7 撞车的温床 |
+| 3 | **「干净」判据失真** | 收尾信号（无 `MM` 且 staged 删除归零）本就只是**单点快照**；叠加脏噪声后更难分辨「真完成」与「中途暂停」 |
+| 4 | **备份目录被误当资产** | `_bak-*` 与正式产物同前缀，易被误 commit（本仓已发生「`_` 前缀交付物游离在版本控制外」，见 `COMMIT_MSG_OVERCLAIMS_TREE`） |
+| 5 | **push 前盘点失效** | 「可推清单」靠人工核对；脏树越大越容易漏看**不该推的那个档** |
+
+**判据（机器可检，不靠人眼）**:
+- `node scripts/audit-workspace-dirty.mjs` —— 三分分类，**只读，绝不删档**：
+  A 已追踪未提交（**真实改动，最需要看**，含「生成物」子标）／B 未追踪·建议 `.gitignore` 或需人工判断／C 未追踪·疑似可删（备份/坏档/一次性探针）
+- **阈值告警**: `--threshold <N>` → 未追踪条数超阈即 `exit 1`。
+  实测定基线 **599**（2026-09-20），此后**只许递减**。
+
+**修法（顺序不可颠倒：先量 → 再分类 → 最后才动）**:
+1. **先量化并落盘**（脚本产出 `.hermes/reports/workspace-dirty-audit.json`）——不许凭印象说「差不多干净」。
+2. **分类结果交 K3 裁决**：进 `.gitignore` / 正式入库 / 删除，**执行层不擅自删**。
+   （本项目已发生过「一方清理扫掉另一方 staged 变更」，per §0.35.7）
+3. `.hermes/_bak-*` / `_archive-*` 一律进 `.gitignore`（它们是**备份**，不是交付物）。
+4. 正式脚本**不带 `_` 前缀**（见 `COMMIT_MSG_OVERCLAIMS_TREE`「附带纠正」）。
+
+**为什么属本族**: 与 `HOOK_SSOT_ACTIVE_DIVERGENCE` 同源 —— **「以为的状态」与「实际的状态」偏离，
+且偏离本身不产生任何报错**。前者是「以为有门禁」，本条是「以为工作区干净」。
+
+**同族规则**: `HOOK_SSOT_ACTIVE_DIVERGENCE`（同源：静默状态失真）·
+`SAFECOMMIT_ATOMIC`（同机制：以「说的」代替「实际的」）· `METRIC_INTEGRITY_FIVE_TRAPS`（母族）
+
+**配套**: `scripts/audit-workspace-dirty.mjs`（三分分类 + 阈值告警）· AGENTS.md §0.35.7（人手会话并发锁双条件）
