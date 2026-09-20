@@ -1,47 +1,7 @@
 {
- "generated_at": "2026-09-19T12:21:39.877Z",
+ "generated_at": "2026-09-19T17:15:50.313Z",
  "site": "https://zprintpro.com",
  "rows": [
-  {
-   "locale": "zh-hk",
-   "slug": "packaging-box-pricing-2026",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 194145
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 184239
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "poster-printing-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 194262
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 193372
-  },
   {
    "locale": "zh-hk",
    "slug": "foil-stamping-3-applications-2026",
@@ -54,46 +14,6 @@
   },
   {
    "locale": "en",
-   "slug": "packaging-box-pricing-2026",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 215971
-  },
-  {
-   "locale": "en",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 216246
-  },
-  {
-   "locale": "en",
-   "slug": "poster-printing-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 189307
-  },
-  {
-   "locale": "en",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 231185
-  },
-  {
-   "locale": "en",
    "slug": "foil-stamping-3-applications-2026",
    "verdict": "SINGLE_INLINE_ONLY",
    "generated_faq": 0,
@@ -101,46 +21,6 @@
    "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,HowTo,HowToStep",
    "inline_blocks": 11,
    "len": 250564
-  },
-  {
-   "locale": "ja",
-   "slug": "packaging-box-pricing-2026",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 188969
-  },
-  {
-   "locale": "ja",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 181695
-  },
-  {
-   "locale": "ja",
-   "slug": "poster-printing-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 166190
-  },
-  {
-   "locale": "ja",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "DUPLICATE",
-   "generated_faq": 1,
-   "inline_faq": 1,
-   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
-   "inline_blocks": 11,
-   "len": 196085
   },
   {
    "locale": "ja",

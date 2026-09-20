@@ -1,0 +1,1902 @@
+{
+ "schema": "title-proposals-v1",
+ "generatedFor": "2026-09-19",
+ "batch": "P0-A1",
+ "calibration": "2026-09-19 16:11 UTC",
+ "hardGate": "UNIFIED — 生成器可构建",
+ "rule": {
+  "min": 50,
+  "max": 57,
+  "hardMax": 58
+ },
+ "counts": {
+  "slots": 19,
+  "generated": 19,
+  "skipped": 0,
+  "candidates": 38,
+  "allPass": 18
+ },
+ "results": [
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 304,
+   "pos": 9.44,
+   "current": "防水貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.22"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.22起",
+       "src": "products.ts basePrice=0.22"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "防水貼紙 | 10個起 HK$0.22起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.22"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.22起",
+       "src": "products.ts basePrice=0.22"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 184,
+   "pos": 15.78,
+   "current": "透明貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "透明貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.38起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.38"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.38起",
+       "src": "products.ts basePrice=0.38"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "透明貼紙 | 10個起 HK$0.38起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.38"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.38起",
+       "src": "products.ts basePrice=0.38"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "removable-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 126,
+   "pos": 10.7,
+   "current": "可移貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "可移貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.45起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.45"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.45起",
+       "src": "products.ts basePrice=0.45"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "可移貼紙 | 10個起 HK$0.45起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.45"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.45起",
+       "src": "products.ts basePrice=0.45"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 102,
+   "pos": 5.74,
+   "current": "燙金貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "燙金貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.78起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.78"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.78起",
+       "src": "products.ts basePrice=0.78"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "燙金貼紙 | 10個起 HK$0.78起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.78"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.78起",
+       "src": "products.ts basePrice=0.78"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 37,
+   "pos": 6.43,
+   "current": "防偽貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "防偽貼紙 | 防水 PVC 異形切割 | 10個起 HK$1.15起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.15起",
+       "src": "products.ts basePrice=1.15"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "防偽貼紙 | 10個起 HK$1.15起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.15起",
+       "src": "products.ts basePrice=1.15"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 33,
+   "pos": 3.58,
+   "current": "螢光貼紙 | 防水 PVC 異形切割 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "螢光貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.52起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.52"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.52起",
+       "src": "products.ts basePrice=0.52"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "螢光貼紙 | 10個起 HK$0.52起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=0.52"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$0.52起",
+       "src": "products.ts basePrice=0.52"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "kraft-paper-bags",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 130,
+   "pos": 11.17,
+   "current": "牛皮紙袋 | 100%環保 多尺寸 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "牛皮紙袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+     "equiv": 52,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "52 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "牛皮紙袋 | 100個起 HK$8起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "gift-bags",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 31,
+   "pos": 12.74,
+   "current": "禮品紙袋 | 100%環保 多尺寸 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "禮品紙袋 | 100%環保 多尺寸 | 100個起 HK$20起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=20"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$20起",
+       "src": "products.ts basePrice=20"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "禮品紙袋 | 100個起 HK$20起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=20"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$20起",
+       "src": "products.ts basePrice=20"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "handle-bags",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 199,
+   "pos": 15.91,
+   "current": "環保手挽袋 | 100%環保 多尺寸 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "環保手挽袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "環保手挽袋 | 100個起 HK$8起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "large-bags",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 187,
+   "pos": 17.18,
+   "current": "大號紙袋 | 100%環保 多尺寸 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "大號紙袋 | 100%環保 多尺寸 | 100個起 HK$15起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$15起",
+       "src": "products.ts basePrice=15"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "大號紙袋 | 100個起 HK$15起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$15起",
+       "src": "products.ts basePrice=15"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 34,
+   "pos": 4.79,
+   "current": "背膠海報 | 防水材質 即日速遞 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "背膠海報 | 防水材質 即日速遞 | 100個起 HK$13起 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=13"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$13起",
+       "src": "products.ts basePrice=13"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "背膠海報 | 100個起 HK$13起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=13"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$13起",
+       "src": "products.ts basePrice=13"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "mailer-boxes",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 72,
+   "pos": 7.72,
+   "current": "訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港",
+   "currentEquiv": 38,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=3.5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$3.5起",
+       "src": "products.ts basePrice=3.5"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "訂製郵寄盒 | 100個起 HK$3.5起 | 智印港",
+     "equiv": 38,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "38 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=3.5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$3.5起",
+       "src": "products.ts basePrice=3.5"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "rigid-boxes",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 49,
+   "pos": 8.69,
+   "current": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "精裝禮盒 | 燙金 UV 100%訂製 | 100個起 HK$8起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "精裝禮盒 | 100個起 HK$8起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "laminated-menus",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 55,
+   "pos": 7.38,
+   "current": "過膠餐牌 | 防水 覆膜 50本起 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "過膠餐牌 | 100個起 HK$5起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$5起",
+       "src": "products.ts basePrice=5"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "過膠餐牌 | 100個起 HK$5起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$5起",
+       "src": "products.ts basePrice=5"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "catalog-printing",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 98,
+   "pos": 14.5,
+   "current": "畫冊印刷 | 專業印刷 品質保證 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "畫冊印刷 | 專業印刷 品質保證 | 10個起 HK$24起 | 智印港",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=24"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$24起",
+       "src": "products.ts basePrice=24"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "畫冊印刷 | 10個起 HK$24起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=24"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$24起",
+       "src": "products.ts basePrice=24"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "colored-envelopes",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 77,
+   "pos": 5.3,
+   "current": "彩色信封 | 雙面印刷 多規格 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "彩色信封 | 雙面印刷 多規格 | 100個起 HK$0.38起 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.38"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$0.38起",
+       "src": "products.ts basePrice=0.38"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "彩色信封 | 100個起 HK$0.38起 | 智印港",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.38"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$0.38起",
+       "src": "products.ts basePrice=0.38"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "pearl-envelopes",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 96,
+   "pos": 5.27,
+   "current": "珍珠光信封 | 雙面印刷 多規格 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "珍珠光信封 | 雙面印刷 多規格 | 100個起 HK$1.15起 | 智印港",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=1.15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$1.15起",
+       "src": "products.ts basePrice=1.15"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "珍珠光信封 | 100個起 HK$1.15起 | 智印港",
+     "equiv": 39,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "39 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=1.15"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$1.15起",
+       "src": "products.ts basePrice=1.15"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "certificates",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 112,
+   "pos": 10.63,
+   "current": "證書印刷 | 專業印刷 品質保證 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "證書印刷 | 專業印刷 品質保證 | 100個起 HK$8起 | 智印港",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "證書印刷 | 100個起 HK$8起 | 智印港",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "foil-greeting-cards",
+   "locale": "zh-hk",
+   "batch": "P0-A",
+   "imps": 30,
+   "pos": 11.07,
+   "current": "燙金名片印刷 | 金・銀・玫瑰金 | 智印港",
+   "currentEquiv": 38,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "燙金名片印刷 | 金・銀・玫瑰金 | 10個起 HK$1.8起 | 智印港",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.8起",
+       "src": "products.ts basePrice=1.8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "燙金名片印刷 | 10個起 HK$1.8起 | 智印港",
+     "equiv": 39,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "39 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.8起",
+       "src": "products.ts basePrice=1.8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  }
+ ]
+}

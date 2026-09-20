@@ -1,0 +1,132 @@
+{
+ "perLocale": {
+  "zh-hk": {
+   "titles": 100,
+   "seps": {
+    "半角竖线 |": {
+     "titlesWith": 100,
+     "occurrences": 153,
+     "equivEach": 1
+    },
+    "全角竖线 ｜": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 2
+    },
+    "中黑点 ・": {
+     "titlesWith": 28,
+     "occurrences": 70,
+     "equivEach": 2
+    },
+    "间隔号 ·": {
+     "titlesWith": 2,
+     "occurrences": 2,
+     "equivEach": 1
+    },
+    "半角连字符 -": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 3
+    },
+    "空格斜杠 /": {
+     "titlesWith": 2,
+     "occurrences": 5,
+     "equivEach": 3
+    }
+   }
+  },
+  "en": {
+   "titles": 100,
+   "seps": {
+    "半角竖线 |": {
+     "titlesWith": 100,
+     "occurrences": 206,
+     "equivEach": 1
+    },
+    "全角竖线 ｜": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 2
+    },
+    "中黑点 ・": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 2
+    },
+    "间隔号 ·": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 1
+    },
+    "半角连字符 -": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 3
+    },
+    "空格斜杠 /": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 3
+    }
+   }
+  },
+  "ja": {
+   "titles": 100,
+   "seps": {
+    "半角竖线 |": {
+     "titlesWith": 98,
+     "occurrences": 153,
+     "equivEach": 1
+    },
+    "全角竖线 ｜": {
+     "titlesWith": 2,
+     "occurrences": 4,
+     "equivEach": 2
+    },
+    "中黑点 ・": {
+     "titlesWith": 37,
+     "occurrences": 64,
+     "equivEach": 2
+    },
+    "间隔号 ·": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 1
+    },
+    "半角连字符 -": {
+     "titlesWith": 0,
+     "occurrences": 0,
+     "equivEach": 3
+    },
+    "空格斜杠 /": {
+     "titlesWith": 1,
+     "occurrences": 2,
+     "equivEach": 3
+    }
+   }
+  }
+ },
+ "fullWidthPipeTitles": [
+  {
+   "slug": "same-day-flyers",
+   "locale": "ja",
+   "before": 58,
+   "after": 56,
+   "bandBefore": "OK",
+   "bandAfter": "OK"
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "before": 57,
+   "after": 55,
+   "bandBefore": "OK",
+   "bandAfter": "OK"
+  }
+ ],
+ "wouldFlip": [],
+ "brandTail": {
+  "|": 298,
+  "｜": 2
+ }
+}

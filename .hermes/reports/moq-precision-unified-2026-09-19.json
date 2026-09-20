@@ -1,0 +1,48 @@
+{
+ "schema": "moq-precision-unified-v1",
+ "generatedFor": "2026-09-19",
+ "calibration": "2026-09-19 16:07 UTC",
+ "hardGate": "K3 2026-09-19: 两法 SKU 集合与计数一致之前, 生成器不得构建",
+ "methodA": {
+  "script": "classify-moq-precision.mjs",
+  "scope": "title scope (门童 findings)",
+  "rows": 43,
+  "counts": {
+   "NO_MOQ_HOOK": 3,
+   "LOCALE_SPECIFIC_KEEP": 7,
+   "TRUE_DRIFT": 24,
+   "MANUAL_REVIEW": 9
+  }
+ },
+ "methodB": {
+  "script": "resolve-moq-conflicts.mjs",
+  "scope": "全 300 槽直读",
+  "rows": 43,
+  "counts": {
+   "PENDING_K3": 10,
+   "DRIFT": 24,
+   "ALIGNED": 9
+  }
+ },
+ "skuSets": {
+  "a": 27,
+  "b": 27,
+  "both": 27,
+  "onlyA": [],
+  "onlyB": [],
+  "equal": true
+ },
+ "rowKeys": {
+  "a": 43,
+  "b": 43,
+  "both": 43,
+  "onlyA": [],
+  "onlyB": [],
+  "equal": true
+ },
+ "semanticDiff": [],
+ "semanticEqual": true,
+ "unified": true,
+ "verdict": "UNIFIED — 生成器可构建",
+ "blockReason": null
+}

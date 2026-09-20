@@ -1,0 +1,6761 @@
+{
+ "schema": "title-input-bank-v1",
+ "generatedFor": "2026-09-19",
+ "calibration": "2026-09-19 12:06 UTC",
+ "rule": {
+  "min": 50,
+  "max": 57,
+  "hardMax": 58,
+  "sot": "scripts/guards/title-equiv.js"
+ },
+ "sources": {
+  "products": "src/data/products.ts",
+  "gsc": ".hermes/gsc-2026-09-18/extract.json (combo_28d, 窗口 2026-08-19~09-15)",
+  "census": ".hermes/reports/sku-title-census-2026-09-19.json"
+ },
+ "counts": {
+  "violatingSkus": 74,
+  "violatingSlots": 115,
+  "withMoqTruth": 69,
+  "withPriceRange": 69,
+  "withSpecs": 68,
+  "withGscCandidates": 69,
+  "moqMismatch": 19
+ },
+ "moqMismatch": [
+  {
+   "slug": "small-batch-stickers",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P2-修剪",
+   "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港"
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "en",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P2-修剪",
+   "title": "Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro"
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "ja",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P2-修剪",
+   "title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro"
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "ja",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro"
+  },
+  {
+   "slug": "a5-flyers",
+   "locale": "ja",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro"
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "ja",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P2-修剪",
+   "title": "両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro"
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P1",
+   "title": "摺頁單張 | 雙面四色 100張起 | 智印港"
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "zh-hk",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "厚身單張 | 雙面四色 100張起 | 智印港"
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "ja",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro"
+  },
+  {
+   "slug": "eco-flyers",
+   "locale": "ja",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro"
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 100,
+   "batch": "P2-修剪",
+   "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港"
+  },
+  {
+   "slug": "laminated-menus",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 100,
+   "batch": "P0-A",
+   "title": "過膠餐牌 | 防水 覆膜 50本起 | 智印港"
+  },
+  {
+   "slug": "hardcover-menus",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 100,
+   "batch": "P3-低优先",
+   "title": "精裝餐牌 | 防水 覆膜 50本起 | 智印港"
+  },
+  {
+   "slug": "drink-menus",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 100,
+   "batch": "P3-低优先",
+   "title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港"
+  },
+  {
+   "slug": "spiral-notebooks",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港"
+  },
+  {
+   "slug": "exercise-books",
+   "locale": "zh-hk",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P0-B",
+   "title": "作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港"
+  },
+  {
+   "slug": "exercise-books",
+   "locale": "ja",
+   "claimed": 50,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro"
+  },
+  {
+   "slug": "school-flyers",
+   "locale": "zh-hk",
+   "claimed": 100,
+   "truth": 10,
+   "batch": "P3-低优先",
+   "title": "學校單張 | 雙面四色 100張起 | 智印港"
+  },
+  {
+   "slug": "textbooks",
+   "locale": "ja",
+   "claimed": 50,
+   "truth": 100,
+   "batch": "P3-低优先",
+   "title": "教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro"
+  }
+ ],
+ "skus": {
+  "waterproof-stickers": {
+   "slug": "waterproof-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$0.22-1.0/張",
+   "basePrice": {
+    "zh-hk": 0.22,
+    "en": 0.32,
+    "ja": 41
+   },
+   "specs": {
+    "material": "PVC 防水／PP 合成紙；可覆啞膜或光膜",
+    "size": "最小約 10×10mm，最大約 300×400mm（依稿而定）",
+    "printMethod": "四色數碼或柯式（依數量）",
+    "finishing": "模切、覆膜（啞膜／光膜）、局部可選工藝"
+   },
+   "features": [
+    "面材：PVC 防水或 PP 合成紙，戶外短期耐候",
+    "可選啞膜／光膜覆膜，提升耐磨與抗污",
+    "支援異形模切與可變資料（序號／條碼／QR）",
+    "ICC 色彩管理，品牌色還原穩定",
+    "小批量數碼快印，適合試產與活動急件",
+    "可搭配 3M 等強力背膠（視稿與材質）"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "防水貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 304,
+     "pos": 9.44,
+     "ctr": 0.0263,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Custom Waterproof Stickers | Free Shipping $99+ | ZprintPro",
+     "equiv": 59,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 80,
+     "pos": 40.46,
+     "ctr": 0.0125,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "防水ステッカー | 防水 PVC ダイカット | ZprintPro",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P0-B",
+     "imps": 138,
+     "pos": 15.18,
+     "ctr": 0.0072,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "transparent-stickers": {
+   "slug": "transparent-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$0.38-1.50/張",
+   "basePrice": {
+    "zh-hk": 0.38,
+    "en": 0.41,
+    "ja": 51
+   },
+   "specs": {
+    "material": "透明 PET；可選白墨、啞膜／光膜",
+    "size": "客製模切外形，常用寬邊 20–120mm 級距",
+    "printMethod": "CMYK＋可選白墨（依設計）",
+    "finishing": "覆膜（啞膜／光膜）、模切、可選局部 UV"
+   },
+   "features": [
+    "高透明 PET 面材，可選白墨打底",
+    "適合玻璃瓶、化妝品與透明盒貼標",
+    "可覆啞膜／光膜，兼顧質感與耐用",
+    "支援精細模切與品牌輪廓造型",
+    "四色印刷＋專色／白墨方案可諮詢",
+    "符合一般室內陳列與冷鏈外貼需求（依材質組合）"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "透明貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 184,
+     "pos": 15.78,
+     "ctr": 0.027200000000000002,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Custom Transparent Stickers | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 30,
+     "pos": 36.57,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 2,
+     "pos": 8,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "removable-stickers": {
+   "slug": "removable-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$0.45-1.60/張",
+   "basePrice": {
+    "zh-hk": 0.45,
+    "en": 0.37,
+    "ja": 46
+   },
+   "specs": {
+    "material": "PP 合成紙／PET 透明膜；可移膠",
+    "size": "最小約 15×15mm，最大約 250×350mm",
+    "printMethod": "四色數碼或柯式（依數量）",
+    "finishing": "模切、覆膜（啞膜／光膜）"
+   },
+   "features": [
+    "【可移膠】移除不留殘膠，保護車漆與玻璃表面",
+    "【PP/PET 面材】可選合成紙或透明膜，適配不同展示需求",
+    "【3–5 次重貼】24 小時初黏測試，平滑面可反覆調整位置",
+    "【異形模切】支援任意形狀裁切，活動分區管理更方便",
+    "【可變資料】序號／條碼／QR Code，批次追蹤與防偽",
+    "【數碼快印】10 張起印，當日打樣，適合急件與試產"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "可移貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 126,
+     "pos": 10.7,
+     "ctr": 0.023799999999999998,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "small-batch-stickers": {
+   "slug": "small-batch-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$38-120/A4",
+   "basePrice": {
+    "zh-hk": 38,
+    "en": 0.55,
+    "ja": 69
+   },
+   "specs": {
+    "material": "銅版紙／PP 合成紙／透明 PVC／Kraft 牛皮紙",
+    "size": "A4 起印；單張尺寸最小 10×10mm，最大 300×400mm",
+    "printMethod": "四色數碼印刷（HP Indigo）",
+    "finishing": "模切、圓角、局部燙金、覆膜"
+   },
+   "features": [
+    "【A4 起印】無最低數量壓力，適合試產與限量活動",
+    "【多材質】銅版紙／PP／PVC／Kraft，匹配品牌調性",
+    "【Delta E ≤3】ICC 色彩管理，品牌色穩定還原",
+    "【免費刀模】異形模切與圓角設計，印前免費檢查",
+    "【1–2 天交付】數碼快印，適合急單與快速迭代",
+    "【可變資料】限量編號、QR Code，防偽與批次管理"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港",
+     "equiv": 63,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 18,
+     "pos": 6.61,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro",
+     "equiv": 67,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 396,
+     "pos": 17.81,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "ja": {
+     "current_title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro",
+     "equiv": 63,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 26,
+     "pos": 22.88,
+     "ctr": 0.11539999999999999,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    }
+   }
+  },
+  "foil-stickers": {
+   "slug": "foil-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$0.78-2.80/張",
+   "basePrice": {
+    "zh-hk": 0.78,
+    "en": 0.51,
+    "ja": 64
+   },
+   "specs": {
+    "material": "銅版紙／合成紙；可覆啞膜／光膜",
+    "size": "依稿模切；箔面最小字高視稿評估",
+    "printMethod": "四色印刷＋燙金（分版）",
+    "finishing": "燙金／燙銀、模切、可選局部 UV"
+   },
+   "features": [
+    "多色箔可選（金／銀／玫瑰金等）",
+    "適合禮盒、酒標、美妝與 VIP 物料",
+    "可搭配覆膜保護箔面",
+    "燙金＋四色套印工藝可諮詢",
+    "印前對位與可製性檢查",
+    "品牌節慶與限量款首選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "燙金貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 102,
+     "pos": 5.74,
+     "ctr": 0.06860000000000001,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "security-stickers": {
+   "slug": "security-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$1.15-4.00/張",
+   "basePrice": {
+    "zh-hk": 1.15,
+    "en": 0.41,
+    "ja": 51
+   },
+   "specs": {
+    "material": "易碎紙／VOID／合成紙＋全息膜等（依方案）",
+    "size": "依應用模切；小標籤至 A4 拼版皆可",
+    "printMethod": "可變數碼印刷為主；可搭配專色",
+    "finishing": "模切、全息冷燙或燙金（依稿）"
+   },
+   "features": [
+    "易碎／VOID 等防拆材可選",
+    "可變序號、QR、條碼防竄貨",
+    "適用保修、3C、證書與封條",
+    "可搭配雷射全息提升辨識",
+    "印前防偽工藝組合建議",
+    "批次留樣與色差控製"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "防偽貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 37,
+     "pos": 6.43,
+     "ctr": 0.08109999999999999,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "fluorescent-stickers": {
+   "slug": "fluorescent-stickers",
+   "category": "stickers",
+   "moq": 10,
+   "price_range": "HK$0.52-2.00/張",
+   "basePrice": {
+    "zh-hk": 0.52,
+    "en": 0.46,
+    "ja": 60
+   },
+   "specs": {
+    "material": "螢光 PVC 膜／螢光紙；螢光油墨",
+    "size": "最小約 20×20mm，最大約 280×380mm",
+    "printMethod": "四色數碼或柯式（依數量）",
+    "finishing": "模切、反光條紋覆合、覆膜"
+   },
+   "features": [
+    "【螢光油墨】高飽和度，日光下即顯強烈視覺衝擊",
+    "【PVC／螢光紙】可選防水膜或紙質，適配室內外場景",
+    "【SGS 認證】無重金屬遷移，安全用於食品與兒童相關標籤",
+    "【反光組合】可搭配反光條紋，提升夜間可見度達 200%",
+    "【異形模切】任意形狀裁切，安全標識與促銷標籤皆可",
+    "【數碼快印】10 張起印，當日打樣，急單無憂"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "螢光貼紙 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 33,
+     "pos": 3.58,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Custom Fluorescent Stickers | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 71,
+     "pos": 15.37,
+     "ctr": 0.0282,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "蛍光ステッカー | 防水 PVC ダイカット | ZprintPro",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 21,
+     "pos": 14.48,
+     "ctr": 0.047599999999999996,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "kraft-paper-bags": {
+   "slug": "kraft-paper-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$3-8/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "牛皮紙 120–200g 級（依報價）；可配手挽材",
+    "size": "小／中／大袋型或客製展開尺寸",
+    "printMethod": "單色至四色；可數碼打樣",
+    "finishing": "燙金／燙銀、局部 UV、覆膜（視材）"
+   },
+   "features": [
+    "牛皮紙質感，環保形象鮮明",
+    "可選棉繩／紙繩手挽與底部加固",
+    "支援燙金／UV 等品牌工藝",
+    "多尺寸小／中／大袋型可配置",
+    "適合零售購物袋與活動贈袋",
+    "印前展開圖與糊位檢查"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "牛皮紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 130,
+     "pos": 11.17,
+     "ctr": 0.0077,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "white-card-bags": {
+   "slug": "white-card-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$5-12/個",
+   "basePrice": {
+    "zh-hk": 12,
+    "en": 2.76,
+    "ja": 360
+   },
+   "specs": {
+    "material": "白卡紙 200–300g 級（依報價）；可覆膜",
+    "size": "小／中／大或客製展開",
+    "printMethod": "四色＋可選專色／燙金",
+    "finishing": "覆膜、燙金／燙銀、局部 UV、模切糊袋"
+   },
+   "features": [
+    "白卡紙高挺度，色彩還原佳",
+    "可覆啞膠／光膠、燙金、局部 UV",
+    "多款手挽材質可選",
+    "適合百貨專櫃與品牌旗艦",
+    "支援客製袋型與開窗（可諮詢）",
+    "印前色彩與刀模審閱"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "白卡紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 15,
+     "pos": 4.13,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "白カード紙袋 | エコ素材 多サイズ | ZprintPro",
+     "equiv": 44,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 12,
+     "pos": 3.83,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "gift-bags": {
+   "slug": "gift-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$10-20/個",
+   "basePrice": {
+    "zh-hk": 20,
+    "en": 4.6,
+    "ja": 600
+   },
+   "specs": {
+    "material": "白卡／特種紙／珠光紙（依稿）；可覆膜",
+    "size": "禮品常用中／大袋或客製",
+    "printMethod": "四色＋燙金／局部 UV",
+    "finishing": "燙金、局部 UV、緞帶或棉繩手挽"
+   },
+   "features": [
+    "禮贈場景導向，工藝層次豐富",
+    "可搭燙金、局部 UV、緞帶手挽",
+    "袋型可加深底寬容納禮盒",
+    "特種／珠光紙提升質感",
+    "適合節慶與企業批量採購",
+    "印前對色與穿孔加固建議"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "禮品紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 31,
+     "pos": 12.74,
+     "ctr": 0.129,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "eco-paper-bags": {
+   "slug": "eco-paper-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$3-8/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "FSC 牛皮／再生紙（依供應）；大豆油墨",
+    "size": "小／中／大袋或客製",
+    "printMethod": "單色至四色（依設計）",
+    "finishing": "手挽、可選燙金／覆膜（視材）"
+   },
+   "features": [
+    "可選 FSC 認證與再生紙材",
+    "大豆油墨與環保手挽方案",
+    "適合 ESG 與社企品牌形象",
+    "簡潔設計亦具識別度",
+    "可搭配燙金低調金屬點綴",
+    "活動與門市贈袋常用"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "環保紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 86,
+     "pos": 32.45,
+     "ctr": 0.0233,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 20,
+     "pos": 12.25,
+     "ctr": 0.05,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "handle-bags": {
+   "slug": "handle-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$3-8/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "牛皮／白卡；手挽棉繩或扁紙",
+    "size": "中／大袋為主；可客製",
+    "printMethod": "四色印刷為主",
+    "finishing": "穿孔打釘、底卡加固、可覆膜"
+   },
+   "features": [
+    "手挽加固，承重更佳",
+    "適合量販與雙件服飾購物",
+    "可配底卡與側邊結實糊工",
+    "棉繩／扁紙挽可選",
+    "可與品牌四色＋燙金搭配",
+    "印前穿孔位與拉力風險檢查"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "環保手挽袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 199,
+     "pos": 15.91,
+     "ctr": 0.005,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "small-bags": {
+   "slug": "small-bags",
+   "category": null,
+   "moq": null,
+   "price_range": null,
+   "basePrice": {
+    "zh-hk": null,
+    "en": null,
+    "ja": null
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [],
+   "slots": {
+    "zh-hk": {
+     "current_title": "小號紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "小型紙袋 | エコ素材 多サイズ | ZprintPro",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "large-bags": {
+   "slug": "large-bags",
+   "category": "paper-bags",
+   "moq": 100,
+   "price_range": "HK$6-15/個",
+   "basePrice": {
+    "zh-hk": 15,
+    "en": 3.45,
+    "ja": 450
+   },
+   "specs": {
+    "material": "250g 白卡紙／300g 牛皮紙／280g 特種紋理紙",
+    "size": "展開約 320×120×380mm（可客製）",
+    "printMethod": "四色柯式印刷",
+    "finishing": "燙金／燙銀、擊凸、手挽繩、底部加固"
+   },
+   "features": [
+    "【320×120×380mm】加大尺寸，適合外套、鞋盒、大型禮品",
+    "【加固車縫】底部貼底工藝，承重達 8–10 公斤",
+    "【白卡／牛皮／特種紙】250g–300g，觸感與強度兼具",
+    "【四色柯式】色彩飽和，Pantone 對色誤差 ≤2",
+    "【四種手挽】棉繩／紙繩／緞帶／仿皮繩，可對色",
+    "【燙金擊凸】LOGO 金／銀箔或立體擊凸，品牌質感提升"
+   ],
+   "gscCandidates": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 13.83
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "ctr": 0,
+     "pos": 18.63
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 24.64
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "ctr": 0,
+     "pos": 15.52
+    },
+    {
+     "q": "paper bag print file requirements",
+     "clicks": 0,
+     "imps": 54,
+     "ctr": 0,
+     "pos": 13.96
+    },
+    {
+     "q": "印刷袋",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 24.85
+    },
+    {
+     "q": "紙袋 印刷",
+     "clicks": 0,
+     "imps": 11,
+     "ctr": 0,
+     "pos": 48.91
+    },
+    {
+     "q": "custom paper bags",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 65.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "大號紙袋 | 100%環保 多尺寸 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 187,
+     "pos": 17.18,
+     "ctr": 0.021400000000000002,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 8,
+     "pos": 18.12,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "a4-flyers": {
+   "slug": "a4-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.35-0.95/張",
+   "basePrice": {
+    "zh-hk": 0.35,
+    "en": 0.55,
+    "ja": 70
+   },
+   "specs": {
+    "material": "157g銅版紙或128g啞粉紙",
+    "size": "A4（210×297mm）",
+    "printMethod": "四色柯式或數碼印刷",
+    "finishing": "覆膜（啞膜／光膜可選）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【210×297mm】香港最通用規格，派發效果佳",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "A4 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 36,
+     "pos": 13.81,
+     "ctr": 0.0278,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 16,
+     "pos": 7.94,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    }
+   }
+  },
+  "a5-flyers": {
+   "slug": "a5-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.25-0.65/張",
+   "basePrice": {
+    "zh-hk": 0.25,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "128g銅版紙或100g書紙",
+    "size": "A5（148×210mm）",
+    "printMethod": "四色數碼印刷",
+    "finishing": "覆膜（啞膜／光膜可選）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【148×210mm】大量派發成本低40%",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "A5 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 26,
+     "pos": 12.12,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    }
+   }
+  },
+  "double-sided-flyers": {
+   "slug": "double-sided-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.40-0.95/張",
+   "basePrice": {
+    "zh-hk": 0.4,
+    "en": 0.65,
+    "ja": 85
+   },
+   "specs": {
+    "material": "157g銅版紙或128g啞粉紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色雙面柯式印刷",
+    "finishing": "覆膜（啞膜／光膜可選）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【雙面對位±0.5mm】正反圖文精準套印",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro",
+     "equiv": 71,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 65,
+     "pos": 29.68,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    }
+   }
+  },
+  "folded-leaflets": {
+   "slug": "folded-leaflets",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.70-1.95/張",
+   "basePrice": {
+    "zh-hk": 0.7,
+    "en": 0.8,
+    "ja": 110
+   },
+   "specs": {
+    "material": "157g或200g銅版紙",
+    "size": "A4展開（210×297mm）或DL（99×210mm）",
+    "printMethod": "四色柯式或數碼印刷",
+    "finishing": "壓線、覆膜（啞膜／光膜可選）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【對摺／三摺】壓線處理，摺疊平整不反彈",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "摺頁單張 | 雙面四色 100張起 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 113,
+     "pos": 24.25,
+     "ctr": 0.0088,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 6,
+     "pos": 45.17,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "thick-paper-flyers": {
+   "slug": "thick-paper-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.45-1.20/張",
+   "basePrice": {
+    "zh-hk": 0.45,
+    "en": 0.7,
+    "ja": 95
+   },
+   "specs": {
+    "material": "200g或250g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色柯式印刷",
+    "finishing": "覆膜（啞膜／光膜可選）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【200g–250g厚紙】挺度高，質感厚實不捲曲",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "厚身單張 | 雙面四色 100張起 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 26,
+     "pos": 8.19,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    },
+    "ja": {
+     "current_title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+     "equiv": 47,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    }
+   }
+  },
+  "same-day-flyers": {
+   "slug": "same-day-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.55-1.50/張",
+   "basePrice": {
+    "zh-hk": 0.55,
+    "en": 0.95,
+    "ja": 125
+   },
+   "specs": {
+    "material": "157g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色高速數碼印刷",
+    "finishing": "無覆膜或啞膜（加時）"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【4小時出貨】從接稿到出貨，急單品質不打折",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | ZprintPro",
+     "equiv": 67,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 93,
+     "pos": 40.39,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "eco-flyers": {
+   "slug": "eco-flyers",
+   "category": "flyers",
+   "moq": 10,
+   "price_range": "HK$0.38-0.95/張",
+   "basePrice": {
+    "zh-hk": 0.38,
+    "en": 0.6,
+    "ja": 75
+   },
+   "specs": {
+    "material": "FSC認證再生紙；大豆油墨",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色數碼或柯式印刷",
+    "finishing": "無覆膜（環保）或水性光油"
+   },
+   "features": [
+    "【A4／A5標準尺寸】最常見派發規格，兼容性強",
+    "【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排",
+    "【157g–250g紙張】銅版紙或啞粉紙，挺度適中",
+    "【FSC認證再生紙】100%再生纖維，環保形象加分",
+    "【即日可取】數碼印刷急單當天交付",
+    "【免費刀模】異形裁切與圓角可選"
+   ],
+   "gscCandidates": [
+    {
+     "q": "宣傳單張印刷",
+     "clicks": 0,
+     "imps": 127,
+     "ctr": 0,
+     "pos": 32.09
+    },
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "ctr": 0,
+     "pos": 29.09
+    },
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "ctr": 0,
+     "pos": 36.86
+    },
+    {
+     "q": "チラシ 印刷 早い",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 14.2
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "ctr": 0,
+     "pos": 43.2
+    },
+    {
+     "q": "チラシ 印刷 即日",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 30
+    },
+    {
+     "q": "a5 傳單 印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 11
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro",
+     "equiv": 47,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 1,
+     "pos": 4,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    }
+   }
+  },
+  "a1-posters": {
+   "slug": "a1-posters",
+   "category": "posters",
+   "moq": 1,
+   "price_range": "HK$290-7,200 · 噴繪成品 · 不含安裝裱貼",
+   "basePrice": {
+    "zh-hk": 20,
+    "en": 4.6,
+    "ja": 600
+   },
+   "specs": {
+    "material": "157–200g 銅版或相紙",
+    "size": "A1 594×841mm",
+    "printMethod": "柯式為主；急件數碼",
+    "finishing": "PP 護膜、泡沫板裱貼（可選）"
+   },
+   "features": [
+    "A1 遠距離主視覺衝擊",
+    "可單幅或拼貼背板",
+    "厚紙／相紙＋護膜更耐運",
+    "適合展覽、會場、發佈會",
+    "中縫對位與出血標示協助",
+    "可配穿繩或裱板"
+   ],
+   "gscCandidates": [
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 174,
+     "ctr": 0,
+     "pos": 22.57
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 19.74
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 38,
+     "ctr": 0,
+     "pos": 16.42
+    },
+    {
+     "q": "a2 poster",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 25.11
+    },
+    {
+     "q": "a3海報印刷",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 32.47
+    },
+    {
+     "q": "a1 poster print",
+     "clicks": 0,
+     "imps": 17,
+     "ctr": 0,
+     "pos": 64.35
+    },
+    {
+     "q": "a1 poster print cost",
+     "clicks": 0,
+     "imps": 15,
+     "ctr": 0,
+     "pos": 62.2
+    },
+    {
+     "q": "印poster",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 7.15
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "A1 ポスター | 防水 翌日配送 | ZprintPro",
+     "equiv": 39,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 11,
+     "pos": 9.64,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "outdoor-posters": {
+   "slug": "outdoor-posters",
+   "category": "posters",
+   "moq": 100,
+   "price_range": "HK$16-55/張",
+   "basePrice": {
+    "zh-hk": 16,
+    "en": 3.68,
+    "ja": 480
+   },
+   "specs": {
+    "material": "戶外 PVC／PET／合成紙",
+    "size": "依稿面；可對標 A 系列或全幅",
+    "printMethod": "戶外噴繪或 UV",
+    "finishing": "霧面護膜、打扣（可選）"
+   },
+   "features": [
+    "耐候材＋戶外墨水方案",
+    "防水防曬，短中期戶外可用",
+    "霧面降低強光反光",
+    "適合告示欄、圍板、指示牌",
+    "可覆膜或封邊加強壽命",
+    "膠系與底材相容諮詢"
+   ],
+   "gscCandidates": [
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 174,
+     "ctr": 0,
+     "pos": 22.57
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 19.74
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 38,
+     "ctr": 0,
+     "pos": 16.42
+    },
+    {
+     "q": "a2 poster",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 25.11
+    },
+    {
+     "q": "a3海報印刷",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 32.47
+    },
+    {
+     "q": "a1 poster print",
+     "clicks": 0,
+     "imps": 17,
+     "ctr": 0,
+     "pos": 64.35
+    },
+    {
+     "q": "a1 poster print cost",
+     "clicks": 0,
+     "imps": 15,
+     "ctr": 0,
+     "pos": 62.2
+    },
+    {
+     "q": "印poster",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 7.15
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "戶外海報 | 防水材質 即日速遞 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 24,
+     "pos": 7.67,
+     "ctr": 0.0417,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "display-posters": {
+   "slug": "display-posters",
+   "category": "posters",
+   "moq": 100,
+   "price_range": "HK$32-100/套",
+   "basePrice": {
+    "zh-hk": 32,
+    "en": 7.36,
+    "ja": 960
+   },
+   "specs": {
+    "material": "180g–200g PP 合成紙／背膠 PVC；UV 固化油墨",
+    "size": "X 展架 60×160cm／80×180cm；易拉寶 85×200cm（可客製）",
+    "printMethod": "環保溶劑或 UV 大判噴繪",
+    "finishing": "覆膜（啞膜／光膜）、穿繩孔、雙面輸出"
+   },
+   "features": [
+    "【PP／PVC 面材】180g–200g，防水防曬不捲邊",
+    "【X 展架／易拉寶兼容】標準 60×160cm 與 80×180cm 規格",
+    "【解析度優化】60×160cm 用 150dpi，80×180cm 用 100dpi",
+    "【展架出租】框架租賃＋畫面更換，一次性活動省成本",
+    "【UV 固化油墨】戶外耐候 1–2 年，色彩不褪色",
+    "【雙面輸出】可選雙面印刷，通道懸掛最大化曝光"
+   ],
+   "gscCandidates": [
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 174,
+     "ctr": 0,
+     "pos": 22.57
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 19.74
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 38,
+     "ctr": 0,
+     "pos": 16.42
+    },
+    {
+     "q": "a2 poster",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 25.11
+    },
+    {
+     "q": "a3海報印刷",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 32.47
+    },
+    {
+     "q": "a1 poster print",
+     "clicks": 0,
+     "imps": 17,
+     "ctr": 0,
+     "pos": 64.35
+    },
+    {
+     "q": "a1 poster print cost",
+     "clicks": 0,
+     "imps": 15,
+     "ctr": 0,
+     "pos": 62.2
+    },
+    {
+     "q": "印poster",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 7.15
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "展架海報 | 防水材質 即日速遞 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 9,
+     "pos": 6.22,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "art-posters": {
+   "slug": "art-posters",
+   "category": "posters",
+   "moq": 1,
+   "price_range": "HK$26-85/張",
+   "basePrice": {
+    "zh-hk": 26,
+    "en": 5.98,
+    "ja": 780
+   },
+   "specs": {
+    "material": "200g–250g 啞粉藝術紙／260g 純棉無酸紙；12 色顏料墨水",
+    "size": "A4 至 A0（59.4×84.1cm），更大尺寸可拼接",
+    "printMethod": "12 色藝術微噴（Giclée）",
+    "finishing": "啞面／絲絨面／半光面、無框畫裝裱"
+   },
+   "features": [
+    "【200g–250g 藝術紙】高級啞粉或 260g 純棉無酸紙",
+    "【12 色顏料墨水】色域 98% Adobe RGB，Delta E ≤2",
+    "【博物館級標準】無酸紙可保存 100 年以上不褪色",
+    "【三種表面】啞面／絲絨面／半光面，適配不同展示風格",
+    "【無框畫裝裱】提供懸掛系統，即掛即展",
+    "【免費色彩校樣】ICC Profile 匹配，所見即所得"
+   ],
+   "gscCandidates": [
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 174,
+     "ctr": 0,
+     "pos": 22.57
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 19.74
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 38,
+     "ctr": 0,
+     "pos": 16.42
+    },
+    {
+     "q": "a2 poster",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 25.11
+    },
+    {
+     "q": "a3海報印刷",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 32.47
+    },
+    {
+     "q": "a1 poster print",
+     "clicks": 0,
+     "imps": 17,
+     "ctr": 0,
+     "pos": 64.35
+    },
+    {
+     "q": "a1 poster print cost",
+     "clicks": 0,
+     "imps": 15,
+     "ctr": 0,
+     "pos": 62.2
+    },
+    {
+     "q": "印poster",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 7.15
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "藝術海報 | 防水材質 即日速遞 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 28,
+     "pos": 16.46,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "adhesive-posters": {
+   "slug": "adhesive-posters",
+   "category": "posters",
+   "moq": 100,
+   "price_range": "HK$13-42/張",
+   "basePrice": {
+    "zh-hk": 13,
+    "en": 2.99,
+    "ja": 390
+   },
+   "specs": {
+    "material": "150g–180g 背膠 PP／鑄造級 PVC；導氣槽底紙",
+    "size": "A4 至 A0，異形模切依稿件而定",
+    "printMethod": "環保溶劑或 UV 大判噴繪",
+    "finishing": "模切、鏤空、光膜／啞膜覆合"
+   },
+   "features": [
+    "【導氣槽底紙】貼附時輕鬆排氣泡，移除不殘膠",
+    "【PP／PVC 面材】150g–180g，可選室內或戶外耐候型",
+    "【6–12 個月戶外耐候】UV 固化油墨，陽光下不褪色",
+    "【異形模切】任意形狀裁切，配合櫥窗鏤空設計",
+    "【玻璃透光】透明或鏤空區域可配合背光效果",
+    "【當日可取】數碼輸出，100 張起印，急單無憂"
+   ],
+   "gscCandidates": [
+    {
+     "q": "海報印刷",
+     "clicks": 0,
+     "imps": 174,
+     "ctr": 0,
+     "pos": 22.57
+    },
+    {
+     "q": "poster 印刷",
+     "clicks": 0,
+     "imps": 61,
+     "ctr": 0,
+     "pos": 19.74
+    },
+    {
+     "q": "海報與印刷",
+     "clicks": 0,
+     "imps": 38,
+     "ctr": 0,
+     "pos": 16.42
+    },
+    {
+     "q": "a2 poster",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 25.11
+    },
+    {
+     "q": "a3海報印刷",
+     "clicks": 0,
+     "imps": 19,
+     "ctr": 0,
+     "pos": 32.47
+    },
+    {
+     "q": "a1 poster print",
+     "clicks": 0,
+     "imps": 17,
+     "ctr": 0,
+     "pos": 64.35
+    },
+    {
+     "q": "a1 poster print cost",
+     "clicks": 0,
+     "imps": 15,
+     "ctr": 0,
+     "pos": 62.2
+    },
+    {
+     "q": "印poster",
+     "clicks": 0,
+     "imps": 13,
+     "ctr": 0,
+     "pos": 7.15
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "背膠海報 | 防水材質 即日速遞 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 34,
+     "pos": 4.79,
+     "ctr": 0.0588,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "粘着ポスター | 防水 翌日配送 | ZprintPro",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 3,
+     "pos": 36.67,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "cosmetic-boxes": {
+   "slug": "cosmetic-boxes",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$8-65/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "1200-1500g 灰板裱糊 白卡 / 觸感紙 / 珠光紙; 內托 EVA / 紙漿 / PET 吸塑",
+    "size": "依瓶器三維客製; 標準 50×50×30mm 至 250×250×120mm",
+    "printMethod": "四色柯式 + 專色; 可逆向 UV",
+    "finishing": "覆膜 (啞/觸感/光) + 燙金 (金/銀/玫瑰金) + 局部 UV + 擊凸 + 糊盒"
+   },
+   "features": [
+    "【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選",
+    "【內托定製】EVA 挖槽 / 紙漿模塑 / PET 吸塑 3 種材質",
+    "【法規標示】藥機法 / FDA 21 CFR / EU 1223/2013 合規",
+    "【表面工藝】啞膠 / 觸感膜 / 光膠 + 燙金細線 + 局部 UV",
+    "【內襯升級】黑 / 白 / 粉 / 米 EVA 或緞布可選",
+    "【DHL 全球】國際訂單 2-4 個工作天送達"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+     "equiv": 77,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 14,
+     "pos": 6.64,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": true
+    },
+    "ja": {
+     "current_title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
+     "equiv": 87,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 30,
+     "pos": 6.6,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "food-boxes": {
+   "slug": "food-boxes",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$2.5-18/個",
+   "basePrice": {
+    "zh-hk": 2.5,
+    "en": 0.74,
+    "ja": 101
+   },
+   "specs": {
+    "material": "350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層",
+    "size": "完全訂製，常見 15×10×5cm 至 25×20×8cm",
+    "printMethod": "四色柯式或數碼（依數量）",
+    "finishing": "燙金／燙銀、窗口（PET）、局部 UV、覆膜"
+   },
+   "features": [
+    "【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品",
+    "【350g／400g 紙板】高挺度，保護糕點與茶葉不變形",
+    "【PE／PLA 內層】防油防濕，可降解選項滿足環保需求",
+    "【窗口設計】PET 透明片或鏤空，展示內裝產品",
+    "【燙金 LOGO】金／銀箔或局部 UV，提升品牌高級感",
+    "【可變 QR Code】批次追溯與防偽，方便消費者查驗"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro",
+     "equiv": 71,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 49,
+     "pos": 38.63,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro",
+     "equiv": 73,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 43,
+     "pos": 35.93,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "mailer-boxes": {
+   "slug": "mailer-boxes",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$3.5-10/個",
+   "basePrice": {
+    "zh-hk": 3.5,
+    "en": 0.8,
+    "ja": 105
+   },
+   "specs": {
+    "material": "E／B 坑瓦楞或白卡裱瓦（依載重）",
+    "size": "小／中／大或依內裝物客製",
+    "printMethod": "柔性版或柯式（依量與色數）",
+    "finishing": "模切、壓線、自黏封口（可諮詢）"
+   },
+   "features": [
+    "電商出貨耐壓楞型可選",
+    "滿版外印＋內側品牌訊息",
+    "飛機盒快速折合成型",
+    "可預留面單黏貼安全區",
+    "適合訂閱盒與批次發貨",
+    "楞厚與內容物重量匹配建議"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港",
+     "equiv": 38,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 72,
+     "pos": 7.72,
+     "ctr": 0.0278,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "folding-boxes": {
+   "slug": "folding-boxes",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$2.5-15/個",
+   "basePrice": {
+    "zh-hk": 2.5,
+    "en": 0.51,
+    "ja": 69
+   },
+   "specs": {
+    "material": "300g–350g 白卡紙／E 坑瓦楞紙板",
+    "size": "展開平板約 40×30cm 至 60×50cm；成型後約 15×10×5cm 起",
+    "printMethod": "四色柯式或數碼（依數量）",
+    "finishing": "覆膜（啞膜／光膜）、燙金、局部 UV、條碼"
+   },
+   "features": [
+    "【平板出貨】節省倉儲空間 70% 以上，降低庫存成本",
+    "【自動鎖底】插口結構經 80cm 跌落測試，5kg 不開口",
+    "【300g–350g 白卡】高挺度摺疊，成型後棱角分明",
+    "【E 坑瓦楞】可選加固，適合較重電商產品",
+    "【燙金條碼】支援金／銀箔與可變條碼，品牌與物流兼顧",
+    "【免費展開圖】提供組裝指引，確保摺痕角度精準"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 14,
+     "pos": 5.07,
+     "ctr": 0.07139999999999999,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "rigid-boxes": {
+   "slug": "rigid-boxes",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$8-42/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "灰板＋特種裱面紙；可選磁吸五金",
+    "size": "全客製內徑；常用禮品三階尺寸",
+    "printMethod": "柯式面紙印刷＋後工",
+    "finishing": "燙金、壓紋、局部 UV、手工糊盒"
+   },
+   "features": [
+    "灰板裱面，結構挺括",
+    "磁吸、緞帶等開合儀式感配置",
+    "多工藝疊加：燙金、壓紋、局部 UV",
+    "適合限量與高客單價商品",
+    "可內嵌 EVA 或絨布內襯",
+    "刀模會簽控公差"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 49,
+     "pos": 8.69,
+     "ctr": 0.0408,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "foil-red-packets": {
+   "slug": "foil-red-packets",
+   "category": "red-packets",
+   "moq": 100,
+   "price_range": "HK$1.10-4.80/個",
+   "basePrice": {
+    "zh-hk": 1.1,
+    "en": 0.46,
+    "ja": 64
+   },
+   "specs": {
+    "material": "120g紅色紙張；燙金／燙銀",
+    "size": "標準約90×170mm（可客製）",
+    "printMethod": "四色印刷＋燙金",
+    "finishing": "燙金、壓凹、局部UV"
+   },
+   "features": [
+    "【120g–150g紅色紙張】喜慶質感，挺度適中",
+    "【四色印刷】金色文字與圖案鮮豔持久",
+    "【三色燙金】金／銀／玫瑰金，傳統喜慶",
+    "【免費刀模】異形或標準長方形可選",
+    "【燙金定位】±0.3mm精度，細線清晰",
+    "【節慶檔期】農曆新年前3週為高峰期，建議提早下單"
+   ],
+   "gscCandidates": [
+    {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 27.9
+    },
+    {
+     "q": "訂製利是封",
+     "clicks": 0,
+     "imps": 33,
+     "ctr": 0,
+     "pos": 23.61
+    },
+    {
+     "q": "利是封訂製",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 25.65
+    },
+    {
+     "q": "china customized double sided envelope full color oem",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 9
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
+     "equiv": 45,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 4,
+     "pos": 3.5,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "embossed-red-packets": {
+   "slug": "embossed-red-packets",
+   "category": "red-packets",
+   "moq": 100,
+   "price_range": "HK$3.00-9.50/個",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.92,
+    "ja": 129
+   },
+   "specs": {
+    "material": "150g紅色紙張；浮雕＋燙金",
+    "size": "標準約90×170mm（可客製）",
+    "printMethod": "四色印刷＋浮雕",
+    "finishing": "浮雕、燙金、壓凹"
+   },
+   "features": [
+    "【120g–150g紅色紙張】喜慶質感，挺度適中",
+    "【四色印刷】金色文字與圖案鮮豔持久",
+    "【0.3–0.5mm浮雕】立體觸感，品牌誠意倍增",
+    "【免費刀模】異形或標準長方形可選",
+    "【燙金定位】±0.3mm精度，細線清晰",
+    "【節慶檔期】農曆新年前3週為高峰期，建議提早下單"
+   ],
+   "gscCandidates": [
+    {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 27.9
+    },
+    {
+     "q": "訂製利是封",
+     "clicks": 0,
+     "imps": 33,
+     "ctr": 0,
+     "pos": 23.61
+    },
+    {
+     "q": "利是封訂製",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 25.65
+    },
+    {
+     "q": "china customized double sided envelope full color oem",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 9
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "浮雕利是封 | 燙金 UV 壓紋 | 智印港",
+     "equiv": 34,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 5,
+     "pos": 10,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "custom-red-packets": {
+   "slug": "custom-red-packets",
+   "category": "red-packets",
+   "moq": 100,
+   "price_range": "HK$1.90-6.40/個",
+   "basePrice": {
+    "zh-hk": 1.9,
+    "en": 0.74,
+    "ja": 103
+   },
+   "specs": {
+    "material": "120g–150g紅色或特殊色紙張",
+    "size": "完全訂製",
+    "printMethod": "四色印刷＋燙金／UV",
+    "finishing": "燙金、局部UV、壓凹、異形模切"
+   },
+   "features": [
+    "【120g–150g紅色紙張】喜慶質感，挺度適中",
+    "【四色印刷】金色文字與圖案鮮豔持久",
+    "【完全客製】Logo、品牌色、專屬圖案全可印",
+    "【免費刀模】異形或標準長方形可選",
+    "【燙金定位】±0.3mm精度，細線清晰",
+    "【節慶檔期】農曆新年前3週為高峰期，建議提早下單"
+   ],
+   "gscCandidates": [
+    {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 27.9
+    },
+    {
+     "q": "訂製利是封",
+     "clicks": 0,
+     "imps": 33,
+     "ctr": 0,
+     "pos": 23.61
+    },
+    {
+     "q": "利是封訂製",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 25.65
+    },
+    {
+     "q": "china customized double sided envelope full color oem",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 9
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "custom red packets | 燙金 UV 壓紋 | 智印港",
+     "equiv": 42,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 8,
+     "pos": 7,
+     "ctr": 0.125,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "eco-red-packets": {
+   "slug": "eco-red-packets",
+   "category": "red-packets",
+   "moq": 100,
+   "price_range": "HK$1.90-5.20/個",
+   "basePrice": {
+    "zh-hk": 1.9,
+    "en": 0.74,
+    "ja": 103
+   },
+   "specs": {
+    "material": "FSC認證再生紙或種子紙；大豆油墨",
+    "size": "標準約90×170mm",
+    "printMethod": "四色數碼或柯式印刷",
+    "finishing": "無覆膜（環保）"
+   },
+   "features": [
+    "【120g–150g紅色紙張】喜慶質感，挺度適中",
+    "【四色印刷】金色文字與圖案鮮豔持久",
+    "【FSC再生紙／種子紙】可降解或種植，環保承諾",
+    "【免費刀模】異形或標準長方形可選",
+    "【燙金定位】±0.3mm精度，細線清晰",
+    "【節慶檔期】農曆新年前3週為高峰期，建議提早下單"
+   ],
+   "gscCandidates": [
+    {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 27.9
+    },
+    {
+     "q": "訂製利是封",
+     "clicks": 0,
+     "imps": 33,
+     "ctr": 0,
+     "pos": 23.61
+    },
+    {
+     "q": "利是封訂製",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 25.65
+    },
+    {
+     "q": "china customized double sided envelope full color oem",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 9
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 4,
+     "pos": 11.25,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "large-red-packets": {
+   "slug": "large-red-packets",
+   "category": "red-packets",
+   "moq": 100,
+   "price_range": "HK$2.20-7.50/個",
+   "basePrice": {
+    "zh-hk": 2.2,
+    "en": 0.92,
+    "ja": 129
+   },
+   "specs": {
+    "material": "150g–200g紅色紙張",
+    "size": "約110×200mm（較標準大30%–50%）",
+    "printMethod": "四色印刷＋燙金",
+    "finishing": "燙金、浮雕、局部UV"
+   },
+   "features": [
+    "【120g–150g紅色紙張】喜慶質感，挺度適中",
+    "【四色印刷】金色文字與圖案鮮豔持久",
+    "【加大30%–50%】容量更大，適合厚禮金",
+    "【免費刀模】異形或標準長方形可選",
+    "【燙金定位】±0.3mm精度，細線清晰",
+    "【節慶檔期】農曆新年前3週為高峰期，建議提早下單"
+   ],
+   "gscCandidates": [
+    {
+     "q": "利是封印刷",
+     "clicks": 0,
+     "imps": 70,
+     "ctr": 0,
+     "pos": 27.9
+    },
+    {
+     "q": "訂製利是封",
+     "clicks": 0,
+     "imps": 33,
+     "ctr": 0,
+     "pos": 23.61
+    },
+    {
+     "q": "利是封訂製",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 25.65
+    },
+    {
+     "q": "china customized double sided envelope full color oem",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 9
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 1,
+     "pos": 4,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
+     "equiv": 43,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "wall-calendars": {
+   "slug": "wall-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "250g–300g銅版紙或啞粉紙；金屬圈",
+    "size": "A3（297×420mm）或A4（210×297mm）",
+    "printMethod": "四色柯式或數碼印刷",
+    "finishing": "金屬圈裝訂、打掛孔"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【每月一頁】背面可印企業資訊，實用宣傳雙效",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 20,
+     "pos": 44.05,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "desk-calendars": {
+   "slug": "desk-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "200g–250g銅版紙或卡紙；三角座架",
+    "size": "A5（148×210mm）或A4（210×297mm）",
+    "printMethod": "四色數碼或柯式印刷",
+    "finishing": "三角座架、騎馬釘或膠裝"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【三角座架】穩固站立，桌面擺放首選",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "座檯年曆 | 企業禮品 多款式 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 35,
+     "pos": 30.4,
+     "ctr": 0.0286,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 8,
+     "pos": 37.75,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "custom-calendars": {
+   "slug": "custom-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "250g–300g藝術紙或銅版紙",
+    "size": "A3、A4或完全客製",
+    "printMethod": "四色柯式或數碼印刷",
+    "finishing": "燙金、局部UV、金屬圈或騎馬釘"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【完全客製】Logo、品牌故事、產品圖片全可印",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "定制年曆 | 企業禮品 多款式 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 215,
+     "pos": 22.25,
+     "ctr": 0.004699999999999999,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Custom Calendars | Free Shipping $99+ | ZprintPro",
+     "equiv": 49,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 7,
+     "pos": 55.29,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "mini-calendars": {
+   "slug": "mini-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "150g–200g銅版紙或卡紙",
+    "size": "約85×55mm或90×60mm",
+    "printMethod": "四色數碼印刷",
+    "finishing": "騎馬釘或單張裁切"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【口袋尺寸】小巧精緻，攜帶方便",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 9,
+     "pos": 5.56,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "photo-frame-calendars": {
+   "slug": "photo-frame-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "250g–300g銅版紙或相紙；硬紙板相架",
+    "size": "A5（148×210mm）或A4（210×297mm）",
+    "printMethod": "四色數碼或柯式印刷",
+    "finishing": "硬紙板相架底座、騎馬釘"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【硬紙板相架】直立擺放，桌面裝飾首選",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 2,
+     "pos": 3,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "magnetic-calendars": {
+   "slug": "magnetic-calendars",
+   "category": "calendars",
+   "moq": 1000,
+   "price_range": "HK$3-8/本",
+   "basePrice": {
+    "zh-hk": 3,
+    "en": 0.4,
+    "ja": 50
+   },
+   "specs": {
+    "material": "200g–250g銅版紙或合成紙；0.5mm或1mm軟磁片",
+    "size": "A5（148×210mm）或A4（210×297mm）",
+    "printMethod": "四色數碼印刷",
+    "finishing": "軟磁片貼合、圓角裁切"
+   },
+   "features": [
+    "【300g銅版紙或啞粉紙】挺度佳，色彩還原準確",
+    "【四色柯式或數碼】適合照片與插畫印刷",
+    "【金屬圈或騎馬釘】翻頁順暢，牢固耐用",
+    "【軟磁片背面】吸附冰箱白板，實用性強",
+    "【免費排版】每月版面設計與節慶標註",
+    "【節慶檔期】Q4為高峰期，建議10月底前確認"
+   ],
+   "gscCandidates": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "ctr": 0,
+     "pos": 20.33
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "ctr": 0,
+     "pos": 25.09
+    },
+    {
+     "q": "月歷印刷",
+     "clicks": 0,
+     "imps": 64,
+     "ctr": 0,
+     "pos": 17.72
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 24.75
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "磁吸年曆 | 企業禮品 多款式 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 15,
+     "pos": 4.4,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "pvc-menus": {
+   "slug": "pvc-menus",
+   "category": "menus",
+   "moq": 100,
+   "price_range": "HK$8-32/張",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 2.76,
+    "ja": 386
+   },
+   "specs": {
+    "material": "0.5mm–1.0mm透明或白色PVC膠片",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色UV印刷",
+    "finishing": "圓角或直角裁切"
+   },
+   "features": [
+    "【防水防油】覆膜或PVC材質，適合餐飲環境",
+    "【四色印刷】食物圖片鮮豔誘人",
+    "【圓角或直角】依品牌風格選擇",
+    "【0.5–1.0mm PVC】防水防油，直接擦拭清潔",
+    "【免費排版】菜品分類與價格標註",
+    "【可更新設計】季節菜單可快速改版"
+   ],
+   "gscCandidates": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "ctr": 0.0152,
+     "pos": 12.82
+    },
+    {
+     "q": "pvc menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 71.25
+    },
+    {
+     "q": "hard cover menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 74.25
+    },
+    {
+     "q": "hardcover menu printing",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 59.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港",
+     "equiv": 66,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 53,
+     "pos": 9.13,
+     "ctr": 0.0377,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "ja": {
+     "current_title": "PVC menu | 防水 ラミネート | ZprintPro",
+     "equiv": 38,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 5,
+     "pos": 15.2,
+     "ctr": 0.2,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "laminated-menus": {
+   "slug": "laminated-menus",
+   "category": "menus",
+   "moq": 100,
+   "price_range": "HK$5-22/張",
+   "basePrice": {
+    "zh-hk": 5,
+    "en": 1.84,
+    "ja": 258
+   },
+   "specs": {
+    "material": "200g–250g銅版紙或啞粉紙；啞膠或光膠覆膜",
+    "size": "A4（210×297mm）或A3（297×420mm）",
+    "printMethod": "四色印刷",
+    "finishing": "覆膜（啞膠／光膠）、圓角裁切"
+   },
+   "features": [
+    "【防水防油】覆膜或PVC材質，適合餐飲環境",
+    "【四色印刷】食物圖片鮮豔誘人",
+    "【圓角或直角】依品牌風格選擇",
+    "【啞膠／光膠覆膜】防水防油，保護印刷面",
+    "【免費排版】菜品分類與價格標註",
+    "【可更新設計】季節菜單可快速改版"
+   ],
+   "gscCandidates": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "ctr": 0.0152,
+     "pos": 12.82
+    },
+    {
+     "q": "pvc menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 71.25
+    },
+    {
+     "q": "hard cover menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 74.25
+    },
+    {
+     "q": "hardcover menu printing",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 59.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "過膠餐牌 | 防水 覆膜 50本起 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 55,
+     "pos": 7.38,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 9,
+     "pos": 50.33,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "ラミネート menu | 防水 ラミネート | ZprintPro",
+     "equiv": 45,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 5,
+     "pos": 20.4,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "hardcover-menus": {
+   "slug": "hardcover-menus",
+   "category": "menus",
+   "moq": 100,
+   "price_range": "HK$28-120/本",
+   "basePrice": {
+    "zh-hk": 28,
+    "en": 9.2,
+    "ja": 1288
+   },
+   "specs": {
+    "material": "硬紙板封面裱糊銅版紙；內頁200g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色印刷",
+    "finishing": "燙金、壓凹、騎馬釘或膠裝"
+   },
+   "features": [
+    "【防水防油】覆膜或PVC材質，適合餐飲環境",
+    "【四色印刷】食物圖片鮮豔誘人",
+    "【圓角或直角】依品牌風格選擇",
+    "【硬紙板封面】高檔質感，適合高級餐廳",
+    "【免費排版】菜品分類與價格標註",
+    "【可更新設計】季節菜單可快速改版"
+   ],
+   "gscCandidates": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "ctr": 0.0152,
+     "pos": 12.82
+    },
+    {
+     "q": "pvc menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 71.25
+    },
+    {
+     "q": "hard cover menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 74.25
+    },
+    {
+     "q": "hardcover menu printing",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 59.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "精裝餐牌 | 防水 覆膜 50本起 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 10,
+     "pos": 6.9,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 22,
+     "pos": 60.59,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "drink-menus": {
+   "slug": "drink-menus",
+   "category": "menus",
+   "moq": 100,
+   "price_range": "HK$12-48/張",
+   "basePrice": {
+    "zh-hk": 12,
+    "en": 3.68,
+    "ja": 515
+   },
+   "specs": {
+    "material": "200g–250g銅版紙或合成紙；啞膠覆膜",
+    "size": "A5（148×210mm）或A4（210×297mm）",
+    "printMethod": "四色印刷",
+    "finishing": "覆膜（啞膠）、圓角裁切"
+   },
+   "features": [
+    "【防水防油】覆膜或PVC材質，適合餐飲環境",
+    "【四色印刷】食物圖片鮮豔誘人",
+    "【圓角或直角】依品牌風格選擇",
+    "【QR Code連結】線上點餐，減少接觸",
+    "【免費排版】菜品分類與價格標註",
+    "【可更新設計】季節菜單可快速改版"
+   ],
+   "gscCandidates": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "ctr": 0.0152,
+     "pos": 12.82
+    },
+    {
+     "q": "pvc menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 71.25
+    },
+    {
+     "q": "hard cover menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 74.25
+    },
+    {
+     "q": "hardcover menu printing",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 59.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港",
+     "equiv": 38,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 13,
+     "pos": 6.77,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    }
+   }
+  },
+  "disposable-menus": {
+   "slug": "disposable-menus",
+   "category": "menus",
+   "moq": 100,
+   "price_range": "HK$0.22-1.20/張",
+   "basePrice": {
+    "zh-hk": 0.22,
+    "en": 0.14,
+    "ja": 20
+   },
+   "specs": {
+    "material": "100g–120g書紙或再生紙",
+    "size": "A5（148×210mm）或A4（210×297mm）",
+    "printMethod": "四色數碼印刷",
+    "finishing": "無覆膜（即棄）"
+   },
+   "features": [
+    "【防水防油】覆膜或PVC材質，適合餐飲環境",
+    "【四色印刷】食物圖片鮮豔誘人",
+    "【圓角或直角】依品牌風格選擇",
+    "【100g–120g輕薄紙】成本低廉，適合大量派發",
+    "【免費排版】菜品分類與價格標註",
+    "【可更新設計】季節菜單可快速改版"
+   ],
+   "gscCandidates": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "ctr": 0.0152,
+     "pos": 12.82
+    },
+    {
+     "q": "pvc menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 71.25
+    },
+    {
+     "q": "hard cover menu printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 74.25
+    },
+    {
+     "q": "hardcover menu printing",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 59.67
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Disposable Menus | Free Shipping $99+ | ZprintPro",
+     "equiv": 49,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 2,
+     "pos": 43,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "使い捨てメニュー | 防水 ラミネート | ZprintPro",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "outdoor-vinyl-banners": {
+   "slug": "outdoor-vinyl-banners",
+   "category": "banners",
+   "moq": 100,
+   "price_range": "HK$12-55/平方米",
+   "basePrice": {
+    "zh-hk": 12,
+    "en": 2.76,
+    "ja": 360
+   },
+   "specs": {
+    "material": "外光／內光 PVC 燈布（依場景）",
+    "size": "按客製長寬平方米計",
+    "printMethod": "弱溶劑／溶劑／UV 噴繪",
+    "finishing": "打扣、焊邊、筒芯出貨（可選）"
+   },
+   "features": [
+    "大幅面無縫或低縫拼接",
+    "防水、抗 UV 戶外墨水方案",
+    "可配打扣、焊邊、風扣",
+    "適合圍板、外牆、活動背板",
+    "檔案出血與安裝孔位協助",
+    "高風壓場景材質可升級"
+   ],
+   "gscCandidates": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "ctr": 0,
+     "pos": 68.61
+    },
+    {
+     "q": "banner 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 34.25
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 38.29
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 58
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 61.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "戶外橫幅 | 鋁合金支架 高清 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 88,
+     "pos": 52.09,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "roll-up-banners": {
+   "slug": "roll-up-banners",
+   "category": "banners",
+   "moq": 100,
+   "price_range": "HK$85-300/套",
+   "basePrice": {
+    "zh-hk": 85,
+    "en": 46,
+    "ja": 6440
+   },
+   "specs": {
+    "material": "PET／PVC 片或防水合成紙；鋁合金支架",
+    "size": "常見 850×2000mm 至 1200×3000mm 級",
+    "printMethod": "噴繪或 UV 印刷（依材）",
+    "finishing": "加重桿、牛津布袋／硬殼箱（可選）"
+   },
+   "features": [
+    "單人快裝快收，便於攜帶",
+    "多款寬幅與高度可選",
+    "畫面可換芯重複使用支架",
+    "防捲邊與不反光材可選",
+    "適合展會、路演、門市",
+    "印前安全區與出血標示協助"
+   ],
+   "gscCandidates": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "ctr": 0,
+     "pos": 68.61
+    },
+    {
+     "q": "banner 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 34.25
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 38.29
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 58
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 61.67
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+     "equiv": 59,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 13,
+     "pos": 38.15,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "adhesive-banners": {
+   "slug": "adhesive-banners",
+   "category": "banners",
+   "moq": 100,
+   "price_range": "HK$10-45/平方米",
+   "basePrice": {
+    "zh-hk": 10,
+    "en": 2.3,
+    "ja": 300
+   },
+   "specs": {
+    "material": "PVC 車貼／可移膠／透明膜（依場景）",
+    "size": "按客製長寬平方米計",
+    "printMethod": "溶劑／弱溶劑／UV 噴繪",
+    "finishing": "霧面護膜、異形裁切（可選）"
+   },
+   "features": [
+    "多種膠性：永久、可移、透明",
+    "大幅面無縫或低縫拼接",
+    "適合櫥窗、牆面、活動背板",
+    "可霧面抗反光處理",
+    "印前導氣槽與裁切線協助",
+    "短期撤展可移膠方案"
+   ],
+   "gscCandidates": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "ctr": 0,
+     "pos": 68.61
+    },
+    {
+     "q": "banner 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 34.25
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 38.29
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 58
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 61.67
+    }
+   ],
+   "slots": {
+    "en": {
+     "current_title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 46,
+     "pos": 38.54,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "vehicle-wraps": {
+   "slug": "vehicle-wraps",
+   "category": "banners",
+   "moq": 100,
+   "price_range": "HK$28-120/平方米",
+   "basePrice": {
+    "zh-hk": 28,
+    "en": 6.44,
+    "ja": 840
+   },
+   "specs": {
+    "material": "鑄造級 PVC 車貼 80–100 微米；可移膠＋導氣槽",
+    "size": "依車型版型，常見轎車約 15–20 平方米",
+    "printMethod": "UV 固化或環保溶劑大判噴繪",
+    "finishing": "亮面／啞面覆膜、單透孔、3M／Avery 品牌升級"
+   },
+   "features": [
+    "【鑄造級 PVC】80–100 微米，柔韌貼合車身曲面",
+    "【導氣槽底紙】貼附無氣泡，轉角不起翹",
+    "【可移除背膠】移除不殘膠，保護原廠烤漆",
+    "【2–3 年戶外耐候】UV 固化油墨，抗紫外線與酸雨",
+    "【三種方案】整車包膜／局部拉花／後擋單透貼",
+    "【3M／Avery 升級】品牌材質可選，質感與耐久雙提升"
+   ],
+   "gscCandidates": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "ctr": 0,
+     "pos": 68.61
+    },
+    {
+     "q": "banner 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 34.25
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 38.29
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 58
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 61.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "汽車車身貼 | 車身廣告 全車包覆 | 智印港",
+     "equiv": 39,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 112,
+     "pos": 46.44,
+     "ctr": 0.0089,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "mesh-banners": {
+   "slug": "mesh-banners",
+   "category": "banners",
+   "moq": 100,
+   "price_range": "HK$16-75/平方米",
+   "basePrice": {
+    "zh-hk": 16,
+    "en": 3.68,
+    "ja": 480
+   },
+   "specs": {
+    "material": "270g–350g PVC 網格夾網布；UV 固化油墨",
+    "size": "最大寬度 5 米，長度無限；常見 3×6m、4×8m",
+    "printMethod": "UV 大判噴繪",
+    "finishing": "熱封邊、銅扣眼、阻燃處理、雙面縫邊"
+   },
+   "features": [
+    "【270g–350g 網格布】網孔率 30%–40%，透光透風",
+    "【風阻降低 60%】大幅減少桁架負荷，適合高層外牆",
+    "【2–3 年戶外耐候】UV 固化油墨，抗紫外線與酸雨",
+    "【阻燃處理】可選香港消防處標準阻燃，公共場所安心",
+    "【熱封邊緣】銅扣眼與綁繩加固，長期懸掛不撕裂",
+    "【巨幅輸出】最大寬度 5 米，長度無限拼接"
+   ],
+   "gscCandidates": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "ctr": 0,
+     "pos": 68.61
+    },
+    {
+     "q": "banner 印刷",
+     "clicks": 0,
+     "imps": 8,
+     "ctr": 0,
+     "pos": 34.25
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 38.29
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 58
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 61.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港",
+     "equiv": 39,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 15,
+     "pos": 7.4,
+     "ctr": 0.0667,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "catalog-printing": {
+   "slug": "catalog-printing",
+   "category": "books",
+   "moq": 10,
+   "price_range": "HK$2.8-1000/本",
+   "basePrice": {
+    "zh-hk": 24,
+    "en": 4.6,
+    "ja": 644
+   },
+   "specs": {
+    "material": "內頁157g–200g銅版紙；封面200g–250g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色柯式印刷",
+    "finishing": "覆膜（啞膜／光膜）、燙金、騎馬釘或膠裝"
+   },
+   "features": [
+    "【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰",
+    "【四色柯式印刷】色彩飽和，適合照片與插畫",
+    "【多種裝訂】騎馬釘、膠裝、線裝或硬皮",
+    "【封面覆膜或燙金】品牌質感提升",
+    "【免費排版】目錄、頁碼與章節標註",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 110,
+     "ctr": 0,
+     "pos": 16.7
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 60,
+     "ctr": 0,
+     "pos": 17.53
+    },
+    {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 10.04
+    },
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 42,
+     "ctr": 0,
+     "pos": 18.71
+    },
+    {
+     "q": "custom printed exercise books",
+     "clicks": 0,
+     "imps": 34,
+     "ctr": 0,
+     "pos": 37.71
+    },
+    {
+     "q": "wholesale catalog printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 28.61
+    },
+    {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 19.81
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "畫冊印刷 | 專業印刷 品質保證 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 98,
+     "pos": 14.5,
+     "ctr": 0.0204,
+     "issues": [
+      "无效填充词"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 307,
+     "pos": 29.71,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "perfect-bound-books": {
+   "slug": "perfect-bound-books",
+   "category": "books",
+   "moq": 10,
+   "price_range": "HK$16-80/本",
+   "basePrice": {
+    "zh-hk": 16,
+    "en": 4.6,
+    "ja": 644
+   },
+   "specs": {
+    "material": "內頁157g–200g銅版紙；封面200g–250g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色柯式印刷",
+    "finishing": "膠裝、封面覆膜（啞膜／光膜）"
+   },
+   "features": [
+    "【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰",
+    "【四色柯式印刷】色彩飽和，適合照片與插畫",
+    "【多種裝訂】騎馬釘、膠裝、線裝或硬皮",
+    "【膠裝書脊】平整牢固，48頁以上適用",
+    "【免費排版】目錄、頁碼與章節標註",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 110,
+     "ctr": 0,
+     "pos": 16.7
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 60,
+     "ctr": 0,
+     "pos": 17.53
+    },
+    {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 10.04
+    },
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 42,
+     "ctr": 0,
+     "pos": 18.71
+    },
+    {
+     "q": "custom printed exercise books",
+     "clicks": 0,
+     "imps": 34,
+     "ctr": 0,
+     "pos": 37.71
+    },
+    {
+     "q": "wholesale catalog printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 28.61
+    },
+    {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 19.81
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 智印港",
+     "equiv": 49,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 19,
+     "pos": 9.21,
+     "ctr": 0.10529999999999999,
+     "issues": [
+      "日文假名污染"
+     ],
+     "claimedMoq": 10,
+     "moqConsistent": true
+    },
+    "en": {
+     "current_title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 31,
+     "pos": 52.61,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "hardcover-books": {
+   "slug": "hardcover-books",
+   "category": "books",
+   "moq": 10,
+   "price_range": "HK$40-240/本",
+   "basePrice": {
+    "zh-hk": 40,
+    "en": 13.8,
+    "ja": 1932
+   },
+   "specs": {
+    "material": "硬紙板封面裱糊銅版紙；內頁157g–200g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色柯式印刷",
+    "finishing": "膠裝、燙金、壓凹、局部UV、封面覆膜"
+   },
+   "features": [
+    "【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰",
+    "【四色柯式印刷】色彩飽和，適合照片與插畫",
+    "【多種裝訂】騎馬釘、膠裝、線裝或硬皮",
+    "【硬紙板封面】高檔精裝，畫冊年鑑首選",
+    "【免費排版】目錄、頁碼與章節標註",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 110,
+     "ctr": 0,
+     "pos": 16.7
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 60,
+     "ctr": 0,
+     "pos": 17.53
+    },
+    {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 10.04
+    },
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 42,
+     "ctr": 0,
+     "pos": 18.71
+    },
+    {
+     "q": "custom printed exercise books",
+     "clicks": 0,
+     "imps": 34,
+     "ctr": 0,
+     "pos": 37.71
+    },
+    {
+     "q": "wholesale catalog printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 28.61
+    },
+    {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 19.81
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 智印港",
+     "equiv": 49,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 10,
+     "pos": 9.5,
+     "ctr": 0.1,
+     "issues": [
+      "日文假名污染"
+     ],
+     "claimedMoq": 10,
+     "moqConsistent": true
+    }
+   }
+  },
+  "spiral-notebooks": {
+   "slug": "spiral-notebooks",
+   "category": "books",
+   "moq": 10,
+   "price_range": "HK$8-40/本",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 2.76,
+    "ja": 386
+   },
+   "specs": {
+    "material": "內頁80g–100g書紙或道林紙；封面200g銅版紙或PP",
+    "size": "A5（148×210mm）或B5（176×250mm）",
+    "printMethod": "四色數碼印刷",
+    "finishing": "YO圈或螺旋裝訂、封面覆膜"
+   },
+   "features": [
+    "【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰",
+    "【四色柯式印刷】色彩飽和，適合照片與插畫",
+    "【多種裝訂】騎馬釘、膠裝、線裝或硬皮",
+    "【YO圈／螺旋裝訂】180度平攤，書寫順暢",
+    "【免費排版】目錄、頁碼與章節標註",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "china catalog printing",
+     "clicks": 0,
+     "imps": 110,
+     "ctr": 0,
+     "pos": 16.7
+    },
+    {
+     "q": "騎馬釘印刷",
+     "clicks": 0,
+     "imps": 60,
+     "ctr": 0,
+     "pos": 17.53
+    },
+    {
+     "q": "小冊子印刷",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 10.04
+    },
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "catalog printing china",
+     "clicks": 0,
+     "imps": 42,
+     "ctr": 0,
+     "pos": 18.71
+    },
+    {
+     "q": "custom printed exercise books",
+     "clicks": 0,
+     "imps": 34,
+     "ctr": 0,
+     "pos": 37.71
+    },
+    {
+     "q": "wholesale catalog printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 28.61
+    },
+    {
+     "q": "catalogue printing china",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 19.81
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 27,
+     "pos": 7.41,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+     "equiv": 59,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 6,
+     "pos": 24.33,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "colored-envelopes": {
+   "slug": "colored-envelopes",
+   "category": "envelopes",
+   "moq": 100,
+   "price_range": "HK$0.38-2.60/個",
+   "basePrice": {
+    "zh-hk": 0.38,
+    "en": 0.18,
+    "ja": 25
+   },
+   "specs": {
+    "material": "80–120g 書紙／彩色書紙",
+    "size": "DL、C5、C4（變數可選）",
+    "printMethod": "柯式四色＋可選專色",
+    "finishing": "開窗、自黏封口（變數可選）"
+   },
+   "features": [
+    "四色／專色還原插畫與品牌色",
+    "彩色紙或白底滿版皆可",
+    "自黏封口便於大量封裝",
+    "DL／C5／C4 多規格",
+    "適合邀請、賀卡、營銷郵件",
+    "深色稿耐磨與邊緣檢查建議"
+   ],
+   "gscCandidates": [
+    {
+     "q": "信封印刷",
+     "clicks": 1,
+     "imps": 18,
+     "ctr": 0.0556,
+     "pos": 5.33
+    },
+    {
+     "q": "封筒 両面印刷",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 5.57
+    },
+    {
+     "q": "信封訂製",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 7.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "彩色信封 | 雙面印刷 多規格 | 智印港",
+     "equiv": 35,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 77,
+     "pos": 5.3,
+     "ctr": 0.013000000000000001,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "pearl-envelopes": {
+   "slug": "pearl-envelopes",
+   "category": "envelopes",
+   "moq": 100,
+   "price_range": "HK$1.15-5.20/個",
+   "basePrice": {
+    "zh-hk": 1.15,
+    "en": 0.46,
+    "ja": 64
+   },
+   "specs": {
+    "material": "珠光／冰白特種書紙",
+    "size": "DL、C5、C4（變數可選）",
+    "printMethod": "四色／專色＋可選燙金",
+    "finishing": "自黏封口、開窗、擊凸（可選）"
+   },
+   "features": [
+    "珠光質感，禮儀場景吸睛",
+    "適合婚禮與高端活動郵寄",
+    "可搭細線燙金或凹凸",
+    "專色與簡潔線稿更顯層次",
+    "多規格 DL／C5／C4",
+    "實紙打樣確認珠光走向"
+   ],
+   "gscCandidates": [
+    {
+     "q": "信封印刷",
+     "clicks": 1,
+     "imps": 18,
+     "ctr": 0.0556,
+     "pos": 5.33
+    },
+    {
+     "q": "封筒 両面印刷",
+     "clicks": 0,
+     "imps": 7,
+     "ctr": 0,
+     "pos": 5.57
+    },
+    {
+     "q": "信封訂製",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 7.67
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "珍珠光信封 | 雙面印刷 多規格 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 96,
+     "pos": 5.27,
+     "ctr": 0.0417,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 4,
+     "pos": 20.25,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "パール封筒 | 両面印刷 マルチサイズ | ZprintPro",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 22,
+     "pos": 4.18,
+     "ctr": 0.0455,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "exercise-books": {
+   "slug": "exercise-books",
+   "category": "educational",
+   "moq": 10,
+   "price_range": "HK$4-16/本",
+   "basePrice": {
+    "zh-hk": 4,
+    "en": 1.84,
+    "ja": 258
+   },
+   "specs": {
+    "material": "80g–100g書紙或道林紙；封面200g銅版紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "封面四色印刷；內頁單色或雙色",
+    "finishing": "騎馬釘裝訂、封面覆膜（可選）"
+   },
+   "features": [
+    "【80g–100g書紙或道林紙】書寫流暢，不滲墨",
+    "【四色印刷】封面色彩鮮豔，內頁清晰",
+    "【騎馬釘或膠裝】牢固耐用，翻頁順暢",
+    "【橫線／方格／空白】三種內頁可選",
+    "【免費排版】頁碼、章節與習題欄位",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "school exercise book print",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 26.09
+    },
+    {
+     "q": "school printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 10.5
+    },
+    {
+     "q": "教材 テキスト印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29
+    },
+    {
+     "q": "school exercise book printing london",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29.5
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 56.5
+    },
+    {
+     "q": "證書印刷一張",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 8
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港",
+     "equiv": 40,
+     "band": "FILL",
+     "batch": "P0-B",
+     "imps": 159,
+     "pos": 6.65,
+     "ctr": 0.0189,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    },
+    "ja": {
+     "current_title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+     "equiv": 43,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 2,
+     "pos": 25.5,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    }
+   }
+  },
+  "certificates": {
+   "slug": "certificates",
+   "category": "educational",
+   "moq": 100,
+   "price_range": "HK$8-40/張",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 2.76,
+    "ja": 386
+   },
+   "specs": {
+    "material": "200g–250g水印紙或棉質紙",
+    "size": "A4（210×297mm）或A3（297×420mm）",
+    "printMethod": "四色印刷＋燙金",
+    "finishing": "燙金、壓凹、防偽底紋、浮水印"
+   },
+   "features": [
+    "【80g–100g書紙或道林紙】書寫流暢，不滲墨",
+    "【四色印刷】封面色彩鮮豔，內頁清晰",
+    "【騎馬釘或膠裝】牢固耐用，翻頁順暢",
+    "【浮水印紙】防偽性強，官方認證適用",
+    "【免費排版】頁碼、章節與習題欄位",
+    "【100本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "school exercise book print",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 26.09
+    },
+    {
+     "q": "school printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 10.5
+    },
+    {
+     "q": "教材 テキスト印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29
+    },
+    {
+     "q": "school exercise book printing london",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29.5
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 56.5
+    },
+    {
+     "q": "證書印刷一張",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 8
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "證書印刷 | 專業印刷 品質保證 | 智印港",
+     "equiv": 37,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 112,
+     "pos": 10.63,
+     "ctr": 0.035699999999999996,
+     "issues": [
+      "无效填充词"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "school-flyers": {
+   "slug": "school-flyers",
+   "category": "educational",
+   "moq": 10,
+   "price_range": "HK$0.2-0.8/張",
+   "basePrice": {
+    "zh-hk": 0.2,
+    "en": 0.14,
+    "ja": 20
+   },
+   "specs": {
+    "material": "128g–157g銅版紙或書紙",
+    "size": "A4（210×297mm）或A5（148×210mm）",
+    "printMethod": "四色數碼印刷",
+    "finishing": "覆膜（可選）"
+   },
+   "features": [
+    "【80g–100g書紙或道林紙】書寫流暢，不滲墨",
+    "【四色印刷】封面色彩鮮豔，內頁清晰",
+    "【騎馬釘或膠裝】牢固耐用，翻頁順暢",
+    "【QR Code連結】線上報名，減少紙本流程",
+    "【免費排版】頁碼、章節與習題欄位",
+    "【10本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "school exercise book print",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 26.09
+    },
+    {
+     "q": "school printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 10.5
+    },
+    {
+     "q": "教材 テキスト印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29
+    },
+    {
+     "q": "school exercise book printing london",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29.5
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 56.5
+    },
+    {
+     "q": "證書印刷一張",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 8
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "學校單張 | 雙面四色 100張起 | 智印港",
+     "equiv": 36,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 41,
+     "pos": 23.95,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 100,
+     "moqConsistent": false
+    },
+    "en": {
+     "current_title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 1,
+     "pos": 5,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "textbooks": {
+   "slug": "textbooks",
+   "category": "educational",
+   "moq": 100,
+   "price_range": "HK$5-50/本",
+   "basePrice": {
+    "zh-hk": 24,
+    "en": 9.2,
+    "ja": 1288
+   },
+   "specs": {
+    "material": "80g–100g道林紙或書紙；封面200g銅版紙",
+    "size": "A4（210×297mm）或B5（176×250mm）",
+    "printMethod": "封面四色；內頁單色或雙色",
+    "finishing": "膠裝或騎馬釘、封面覆膜（可選）"
+   },
+   "features": [
+    "【80g–100g書紙或道林紙】書寫流暢，不滲墨",
+    "【四色印刷】封面色彩鮮豔，內頁清晰",
+    "【騎馬釘或膠裝】牢固耐用，翻頁順暢",
+    "【輕薄紙張】80g–100g，便於學生攜帶",
+    "【免費排版】頁碼、章節與習題欄位",
+    "【100本起訂】小批量數碼，大量柯式"
+   ],
+   "gscCandidates": [
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "school exercise book print",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 26.09
+    },
+    {
+     "q": "school printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 10.5
+    },
+    {
+     "q": "教材 テキスト印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29
+    },
+    {
+     "q": "school exercise book printing london",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29.5
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 56.5
+    },
+    {
+     "q": "證書印刷一張",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 8
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+     "equiv": 43,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 18,
+     "pos": 47.61,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": false
+    }
+   }
+  },
+  "magnetic-closure-gift-box": {
+   "slug": "magnetic-closure-gift-box",
+   "category": "packaging",
+   "moq": 100,
+   "price_range": "HK$15-80/個",
+   "basePrice": {
+    "zh-hk": 15,
+    "en": 3.45,
+    "ja": 450
+   },
+   "specs": {
+    "material": "灰板裱面＋隱藏磁吸；可觸感膜",
+    "size": "依產品＋內襯厚度全客製",
+    "printMethod": "面紙四色／專色＋後工",
+    "finishing": "燙金、壓紋、局部 UV、手工糊盒"
+   },
+   "features": [
+    "磁吸翻蓋，單手開合體驗佳",
+    "硬盒結構＋觸感覆膜可選",
+    "燙金、壓紋、局部 UV 多工藝",
+    "內襯可 EVA 分格保護電子件",
+    "適合奢侈品與節慶禮盒",
+    "圓角刀模降低運輸磕碰"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P0-B",
+     "imps": 32,
+     "pos": 6.75,
+     "ctr": 0.031200000000000002,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "electronics-packaging-box": {
+   "slug": "electronics-packaging-box",
+   "category": "packaging",
+   "moq": 200,
+   "price_range": "HK$8-50/個",
+   "basePrice": {
+    "zh-hk": 8,
+    "en": 1.84,
+    "ja": 240
+   },
+   "specs": {
+    "material": "1200g 灰板紙裱糊銅版紙；EVA／PET 吸塑／紙漿內托",
+    "size": "完全訂製，常見 10×10×4cm 至 20×15×6cm",
+    "printMethod": "四色柯式印刷",
+    "finishing": "燙金／燙銀、局部 UV、軟觸膜、磁吸扣"
+   },
+   "features": [
+    "【1200g 灰板】高挺度外盒，抗壓耐摔",
+    "【EVA／吸塑／紙漿內托】三種內襯，精準固定 3C 產品",
+    "【防靜電選項】符合電子產品防護標準，避免靜電損傷",
+    "【燙金／局部 UV】LOGO 與產品賣點視覺強化",
+    "【磁吸翻蓋】單手開啟，提升品牌開箱體驗",
+    "【3D 渲染確認】印前結構可視化，尺寸公差 ≤0.5mm"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印港",
+     "equiv": 46,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 253,
+     "pos": 49.51,
+     "ctr": 0.004,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "kraft-paper-packaging-box": {
+   "slug": "kraft-paper-packaging-box",
+   "category": "packaging",
+   "moq": 300,
+   "price_range": "HK$1.5-1000/個",
+   "basePrice": {
+    "zh-hk": 5,
+    "en": 1.15,
+    "ja": 150
+   },
+   "specs": {
+    "material": "300g–350g FSC 牛皮卡紙；水性油墨",
+    "size": "常見 12×8×5cm 至 20×15×8cm（可客製）",
+    "printMethod": "單色／雙色水性印刷或四色柯式",
+    "finishing": "燙黑、壓凹、絲印、手提繩"
+   },
+   "features": [
+    "【300g–350g 牛皮卡】未漂白原漿，纖維粗獷自然",
+    "【FSC 認證】森林可持續來源，品牌環保形象加分",
+    "【完全生物降解】90 天內自然分解，無塑化劑殘留",
+    "【水性油墨】單色／雙色印刷，低 VOC 排放",
+    "【燙黑／壓凹】樸實中帶精緻，適合文創與手作品牌",
+    "【自動鎖底】承重 3–5 公斤，底部穩固不塌"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印港",
+     "equiv": 43,
+     "band": "FILL",
+     "batch": "P1",
+     "imps": 67,
+     "pos": 32.57,
+     "ctr": 0.044800000000000006,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "gang-run-card-boxes": {
+   "slug": "gang-run-card-boxes",
+   "category": "packaging",
+   "moq": 500,
+   "price_range": "HK$129-17,214",
+   "basePrice": {
+    "zh-hk": 129,
+    "en": null,
+    "ja": null
+   },
+   "specs": {
+    "material": "350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡",
+    "size": "60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸, 飛機盒/扣底盒/雙插盒 3 種盒型)",
+    "printMethod": "四色柯式印刷 + 覆光膜/啞膜",
+    "finishing": "燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)"
+   },
+   "features": [
+    "【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%",
+    "【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡",
+    "【3 種盒型】飛機盒 / 普通扣底盒 / 雙插盒, 8 檔標準尺寸(60x40x20 ~ 200x150x80mm)",
+    "【500-10,000 枚】湊版起印, 中小批量最優解",
+    "【8-15 天交期】湊版生產, 不接急件, 如實標註",
+    "【覆膜工藝】啞膜 / 光膜可選;銀卡類含印白墨 + 逆向 UV"
+   ],
+   "gscCandidates": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "ctr": 0,
+     "pos": 36.07
+    },
+    {
+     "q": "紙盒印刷",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 35.02
+    },
+    {
+     "q": "紙盒訂製",
+     "clicks": 0,
+     "imps": 63,
+     "ctr": 0,
+     "pos": 38.75
+    },
+    {
+     "q": "包裝盒訂製",
+     "clicks": 0,
+     "imps": 56,
+     "ctr": 0,
+     "pos": 30.82
+    },
+    {
+     "q": "クラフト紙 パッケージ印刷",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 24.16
+    },
+    {
+     "q": "クラフト紙 パッケージ 印刷",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 25.57
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "ctr": 0,
+     "pos": 39.26
+    },
+    {
+     "q": "禮盒訂做",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 31.82
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+     "equiv": 64,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 16,
+     "pos": 5.69,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
+     "equiv": 90,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 7,
+     "pos": 30.29,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+     "equiv": 73,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 1,
+     "pos": 6,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "fruit-food-label-stickers": {
+   "slug": "fruit-food-label-stickers",
+   "category": "stickers",
+   "moq": 500,
+   "price_range": "HK$0.22-1.20/張",
+   "basePrice": {
+    "zh-hk": 0.22,
+    "en": 0.23,
+    "ja": null
+   },
+   "specs": {
+    "material": "食品級 BOPP／PE／PLA；大豆油墨",
+    "size": "最小約 20×20mm，最大約 200×300mm",
+    "printMethod": "四色數碼或柯式（依數量）",
+    "finishing": "模切、覆膜（啞膜／光膜）、可變條碼"
+   },
+   "features": [
+    "【食品級認證】SGS／FDA 通過，大豆油墨無遷移，可直接接觸食品",
+    "【耐冷耐濕】0–4°C 冷藏環境保持黏性，適合生鮮與冷鏈",
+    "【BOPP／PE／PLA】透明、白色或可降解三種面材選擇",
+    "【可變條碼】每張獨立序號／QR Code，產地追溯與防偽",
+    "【模切精準】異形裁切，適配圓形水果與各類包裝曲面",
+    "【覆膜保護】光膜／啞膜，防水防油延長標籤壽命"
+   ],
+   "gscCandidates": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "ctr": 0,
+     "pos": 27.28
+    },
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "ctr": 0,
+     "pos": 29.82
+    },
+    {
+     "q": "small batch sticker printing",
+     "clicks": 0,
+     "imps": 69,
+     "ctr": 0,
+     "pos": 6.61
+    },
+    {
+     "q": "custom foil stickers",
+     "clicks": 0,
+     "imps": 48,
+     "ctr": 0,
+     "pos": 49.19
+    },
+    {
+     "q": "貼紙訂製",
+     "clicks": 0,
+     "imps": 45,
+     "ctr": 0,
+     "pos": 25.73
+    },
+    {
+     "q": "small batch stickers",
+     "clicks": 0,
+     "imps": 40,
+     "ctr": 0,
+     "pos": 5.53
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "ctr": 0,
+     "pos": 57.74
+    },
+    {
+     "q": "small batch custom stickers",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 10.14
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港",
+     "equiv": 47,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 46,
+     "pos": 40.46,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Custom Food Label Stickers | Free Shipping $99+ | ZprintPro",
+     "equiv": 59,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 8,
+     "pos": 6.62,
+     "ctr": 0.125,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "doujinshi-printing": {
+   "slug": "doujinshi-printing",
+   "category": "japan-doujin",
+   "moq": null,
+   "price_range": null,
+   "basePrice": {
+    "zh-hk": null,
+    "en": null,
+    "ja": null
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [],
+   "slots": {
+    "zh-hk": {
+     "current_title": "同人誌印刷 10本起印 | Comiket前24小時特急対応",
+     "equiv": 45,
+     "band": "FILL",
+     "batch": "P0-B",
+     "imps": 68,
+     "pos": 8.74,
+     "ctr": 0.0294,
+     "issues": [
+      "品牌次数=0",
+      "品牌不在末尾"
+     ],
+     "claimedMoq": 10,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Doujinshi Printing Comiket | Free Shipping $99+ | ZprintPro",
+     "equiv": 59,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 359,
+     "pos": 11.72,
+     "ctr": 0.0139,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "can-badge": {
+   "slug": "can-badge",
+   "category": "japan-doujin",
+   "moq": null,
+   "price_range": null,
+   "basePrice": {
+    "zh-hk": null,
+    "en": null,
+    "ja": null
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [],
+   "slots": {
+    "zh-hk": {
+     "current_title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備",
+     "equiv": 44,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 12,
+     "pos": 9.67,
+     "ctr": 0,
+     "issues": [
+      "品牌次数=0",
+      "品牌不在末尾",
+      "日文假名污染"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "postcard-set": {
+   "slug": "postcard-set",
+   "category": "japan-doujin",
+   "moq": null,
+   "price_range": null,
+   "basePrice": {
+    "zh-hk": null,
+    "en": null,
+    "ja": null
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [],
+   "slots": {
+    "en": {
+     "current_title": "Washi Postcard Sets 4-8 pcs | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 1,
+     "pos": 11,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 8,
+     "moqConsistent": null
+    }
+   }
+  },
+  "eco-tote-bag": {
+   "slug": "eco-tote-bag",
+   "category": "japan-doujin",
+   "moq": null,
+   "price_range": null,
+   "basePrice": {
+    "zh-hk": null,
+    "en": null,
+    "ja": null
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [],
+   "slots": {
+    "zh-hk": {
+     "current_title": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選",
+     "equiv": 48,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 1,
+     "pos": 5,
+     "ctr": 0,
+     "issues": [
+      "品牌次数=0",
+      "品牌不在末尾",
+      "日文假名污染"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "en": {
+     "current_title": "Organic Cotton Eco Tote Bag | Free Shipping $99+ | ZprintPro",
+     "equiv": 60,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "graduation-yearbook": {
+   "slug": "graduation-yearbook",
+   "category": "educational",
+   "moq": 50,
+   "price_range": "HK$45-180/本",
+   "basePrice": {
+    "zh-hk": 45,
+    "en": 10.35,
+    "ja": 1350
+   },
+   "specs": {},
+   "features": [],
+   "gscCandidates": [
+    {
+     "q": "school exercise book printing",
+     "clicks": 0,
+     "imps": 43,
+     "ctr": 0,
+     "pos": 18.3
+    },
+    {
+     "q": "school exercise book print",
+     "clicks": 0,
+     "imps": 22,
+     "ctr": 0,
+     "pos": 26.09
+    },
+    {
+     "q": "school printing",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 10.5
+    },
+    {
+     "q": "教材 テキスト印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29
+    },
+    {
+     "q": "school exercise book printing london",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 29.5
+    },
+    {
+     "q": "教材 印刷製本",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 56.5
+    },
+    {
+     "q": "證書印刷一張",
+     "clicks": 0,
+     "imps": 3,
+     "ctr": 0,
+     "pos": 8
+    }
+   ],
+   "slots": {
+    "ja": {
+     "current_title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+     "equiv": 69,
+     "band": "TRIM",
+     "batch": "P2-修剪",
+     "imps": 22,
+     "pos": 62.82,
+     "ctr": 0,
+     "issues": [],
+     "claimedMoq": 50,
+     "moqConsistent": true
+    }
+   }
+  },
+  "thick-greeting-cards-400g": {
+   "slug": "thick-greeting-cards-400g",
+   "category": "greeting-cards",
+   "moq": 10,
+   "price_range": "HK$120-220/100張",
+   "basePrice": {
+    "zh-hk": 1.2,
+    "en": 0.15,
+    "ja": 23
+   },
+   "specs": {
+    "material": "400g超厚銅版紙；啞膠／光膠覆膜；可選三合一裱貼（700-810g 超厚檔）",
+    "size": "90×54mm（標準名片）；54×54mm 方形可選",
+    "printMethod": "四色柯式印刷",
+    "finishing": "覆膜（啞膠／光膠）、燙金／燙銀、局部UV、擊凸、圓角模切"
+   },
+   "features": [
+    "【90×54mm標準名片尺寸】全球通用規格，兼容名片夾與卡套",
+    "【四色柯式印刷】網點細膩，色彩飽和度≥90%",
+    "【ICC色彩管理】品牌色還原穩定，批量一致",
+    "【400g超厚紙】可升級三合一裱貼 700-810g 超厚檔，手感沉穩尊貴",
+    "【10 張起印】小批量數碼可當日取，大量轉柯式",
+    "【免費刀模檢查】確保圓角與模切精準"
+   ],
+   "gscCandidates": [
+    {
+     "q": "グリーティングカード 印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 26.25
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港",
+     "equiv": 45,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": 4,
+     "pos": 3.25,
+     "ctr": 0,
+     "issues": [
+      "日文假名污染"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    },
+    "ja": {
+     "current_title": "厚口400g名刺印刷 | 箔押し・エンボス | ZprintPro",
+     "equiv": 47,
+     "band": "FILL",
+     "batch": "P3-低优先",
+     "imps": null,
+     "pos": null,
+     "ctr": null,
+     "issues": [],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  },
+  "foil-greeting-cards": {
+   "slug": "foil-greeting-cards",
+   "category": "greeting-cards",
+   "moq": 10,
+   "price_range": "HK$180-320/100張",
+   "basePrice": {
+    "zh-hk": 1.8,
+    "en": 0.23,
+    "ja": 35
+   },
+   "specs": {
+    "material": "300g銅版紙或棉質紙；燙金／燙銀／玫瑰金",
+    "size": "127×178mm（標準）",
+    "printMethod": "四色柯式＋燙金",
+    "finishing": "覆膜（啞膠／光膠）、燙金、圓角模切"
+   },
+   "features": [
+    "【127×178mm標準尺寸】兼容全球卡夾",
+    "【四色柯式印刷】網點細膩，色彩飽和度≥90%",
+    "【ICC色彩管理】品牌色還原穩定，批量一致",
+    "【三色燙金】金／銀／玫瑰金，奢華品牌首選",
+    "【10 張起印】小批量數碼可當日取，大量轉柯式",
+    "【免費刀模檢查】確保圓角與模切精準"
+   ],
+   "gscCandidates": [
+    {
+     "q": "グリーティングカード 印刷",
+     "clicks": 0,
+     "imps": 4,
+     "ctr": 0,
+     "pos": 26.25
+    }
+   ],
+   "slots": {
+    "zh-hk": {
+     "current_title": "燙金名片印刷 | 金・銀・玫瑰金 | 智印港",
+     "equiv": 38,
+     "band": "FILL",
+     "batch": "P0-A",
+     "imps": 30,
+     "pos": 11.07,
+     "ctr": 0,
+     "issues": [
+      "日文假名污染"
+     ],
+     "claimedMoq": null,
+     "moqConsistent": null
+    }
+   }
+  }
+ }
+}

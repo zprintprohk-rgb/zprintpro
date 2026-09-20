@@ -1,0 +1,4494 @@
+{
+  "generatedAt": "2026-09-20T12:24:11.269Z",
+  "total": 638,
+  "tracked": 20,
+  "untracked": 618,
+  "buckets": {
+    "A": {
+      "label": "已追踪·未提交（真实改动，最需要看）",
+      "count": 20
+    },
+    "B": {
+      "label": "未追踪·建议 .gitignore / 需人工判断",
+      "count": 526
+    },
+    "C": {
+      "label": "未追踪·疑似可删（备份/坏档/一次性探针）",
+      "count": 92
+    }
+  },
+  "items": {
+    "A": [
+      {
+        "code": " M",
+        "p": ".githooks/pre-commit",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/logs/moq-scan-latest.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/regression-guard/blog-12seg-baseline.json",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/regression-guard/bypass-audit.jsonl",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/regression-guard/error-patterns.md",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/b1-campus-live-faqpage-2026-09-19.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/blog-12seg-checklist-2026-09-19-online.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/inline-ld-census-2026-09-19.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/live-faqpage-duplicate-count-2026-09-19.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/moq-precision-unified-2026-09-19.md",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/question-consistency-2026-09-19.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/sku-title-census-2026-09-19.md",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/sku-title-ledger-2026-09-19.md",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/sku-title-ledger.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/title-audit-2026-09-09.json",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": " M",
+        "p": ".hermes/reports/title-audit-2026-09-09.md",
+        "bucket": "A",
+        "sub": "已追踪·生成物",
+        "note": "受版控的生成物（已入库 → 需保持更新或考虑改流程）"
+      },
+      {
+        "code": "M ",
+        "p": "docs/2026-09-20-handover-living-book.md",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": "A ",
+        "p": "scripts/audit-sku-orphans.cjs",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": "scripts/canonical/pre-commit",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      },
+      {
+        "code": " M",
+        "p": "scripts/moq10-books-context-scan.ts",
+        "bucket": "A",
+        "sub": "已追踪·真实改动",
+        "note": "⚠️ 这是真实改动，**最需要看的一类**"
+      }
+    ],
+    "B": [
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-a2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-b2-batch1.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-b2-batch2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-b3-foil.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-b3-spec-and-sticker-dump.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-backfill-and-ja.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-bank.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-banner.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-campus-A.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-classify.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-concurrency-pointer-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-g3.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-gate-blindspot.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-gate-hardening2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-gate24.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-gen.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-guard23-doc.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-hardening3.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-ja-alt-and-brand-diag-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-ja-counter-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-ja-seg12-and-b2batch4.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-living-book-2014-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-living-book-round2-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-manual1.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-max57.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-menus-locale-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-menus-material-align-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-menus-qty-align-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-menus-residue-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-moq.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-orphan-audit-20260920.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-p0a1.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-p2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-p2b2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-p2land.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-p3land.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-paired.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-pool.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-poster-and-b2batch3.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-psi-iii-and-sticker.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-rulenorm.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-saddle.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-schoolflyers-ja.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-seg3-revision.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-seg7-fix.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-seo-cat.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-skill-handoff.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-skill-handover.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-subst.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-trim58.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_commit-msg-unify.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_conflict-pre-migrate-20260917/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_g_rt.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_g_smoke.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_guard-after-zine.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_guard-photobook-verify.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_guard_empty.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_legal-before.tsx",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_list_inspect.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-audit.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-audit2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-blog-ctx.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-blog-dryrun.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-blog.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-desc-context.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_moq10-smoke.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_pj.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_add-time-pattern.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_align-wave1-counts.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_blog-data-conventions.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_cf-project.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_char-inventory.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_commitmsg-stepB.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_commitmsg-stepC1.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_commitmsg-stepE.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_commitmsg-wave1.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_commitmsg-wave2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_dbg.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-authority8.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-blindspot.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-blindspot2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-blindspot3.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-conflict.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-gap.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-sku.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_diag-wl.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_dump-names.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_dump-spec-strings-full.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_dump-spec-strings.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_en-content-dump.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_etsy-live-raw.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fifty.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_file-hits.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_final-report.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_find-the-red.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fsc-hyphen-audit.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fsc-only.patch",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fsc-pending-verify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_gen-flat-native-txt.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_i18n-negative-backup.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_inv-raw.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_inv-runs.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_legacy-red-list.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_locate-cred-heidelberg.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_locate-dsh-sessions.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_measure.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_methodA-result.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_methodB-result.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_negative-test.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_num-parity.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_out-ja.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_out-zhhk.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_patch-check.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_patch-check2.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_patch-wave1-counts.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_pb-ja-dump.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_pb-zhhk-dump.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_pre-check-originals.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_resolveOnly.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_sample-triples.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_scan-after.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_selfpub-loc-build.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_simp-diag.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_smoke-spec-i18n.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-numbered.tsv",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-strings-full.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-strings-full.step4-238.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-strings.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-strings.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-tr-1.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-tr-2.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-tr-3.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-tr-4.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_spec-tr-5.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stage-fsc-hunks-only.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-baseline-calc.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-churn-sim.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-cjk-count.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-cjk-count2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-cjk-count3.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-cjk-count4.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-en-cjk-residue.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-en-residue.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-encoding.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-gen-idempotent.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-guard-out.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-guard-out2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-newdef.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-orphan-probe.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-size-inventory.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-size-numbered.tsv",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-size-strings.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5-verify.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_step5a-1b.patch",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB-locate.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB-selfcheck-en-tail.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB-variants.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB2-scope.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB2b-uncovered-hits.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB2c-products-content.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB5b-verify-needles.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB6-scope-internalcopy.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepB7-collect-pricing.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1-context.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1-counts.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1-jsonld.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_verify-cred-scope.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_verify-spec-i18n.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_verify-staged-only-fsc.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1-dryrun.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_xcheck.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/analyze.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/audit-price-i18n.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/build-selfpub.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/cf-deployments.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/cf-find-account.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/cf-probe-compat.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/cf-project-read.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/check-orphan-and-cron.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/check-selfpub.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/classify-en-cjk.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/compare.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/compare.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/decisive-1b-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/decisive-1b-local.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/decisive-numeric-check.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/decisive-step4-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-authority-per8.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-en-residual.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-locale-authority-conflict.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-m1-vs-m2-gap.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-resolveLocale-only.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-sku-ground-truth.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diag-whitelist-and-faq.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diagnose-4flags.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diagnose-residual.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/diagnose-zhhk-simp.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/dump-selfpub.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en-cjk-align.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en-cjk-classify-shared.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en-cjk-inventory.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en-cjk-tokens.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en-only-feasibility.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/en.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/error-patterns-append-20260918.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/error-patterns-append-rules-20260919.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/error-patterns-prepend-20260919.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/etsy-article-write.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/extract-shapes.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/fsc-certified-case-normalize.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/fsc-hyphen-normalize.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/fullscan.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/fullscan.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/gentle-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/gentle-probe.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/independent-review-step2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/independent-verify-selfpub.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/independent-verify-zhja.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/ja.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/local-check.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/make-tsv.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/methodA-en-cjk-classify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/methodB-en-cjk-classify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch-printspecs-faq.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch-printspecs-faq2.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch-printspecs-faq3.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch-printspecs-faq4.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/patch2.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/pinpoint.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/pinpoint.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/postfix-hangzhang.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/postfix-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/qa-casing.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/qa-parity.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/qa-variants.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/recompute-en-cjk-m2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/reconcile.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/reprobe11.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/retry503.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/retry503.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/review-step4.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/review-v3-flat.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/review-v3-flat.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/scan-price-pollution-v2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/scan-price-pollution.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/scope-blogs.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/scope.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/selfpub-fact-sources.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/selfpub-live-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/selfpub-loc-check.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/selfpub-recon.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/setmath.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/shapes.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/simulate.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/simulation.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/size-products-specs.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/split-1b-hunks.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB-blindspot-result.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB-guard-blindspot.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB-guard-injection-replay.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB-guard-replay-result.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB-new-hits-detail.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB1-rewrite-tails.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB5-new-hits-detail.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepB7-desensitize-pricing.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepC-batch1-items.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepC1-baseline-decrease.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepC1-enumerate-batch1.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepC1-execute.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/stepE-glossary-v2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/survey-en-cjk-context.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/survey-en-cjk-shape.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/title-brand-audit.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/unregistered-impact.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-diff-shape.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-footer-and-category.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-footer-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-hangzhang-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-ladder-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-price-determinism.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-price-numeric-parity.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-registration.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-step2-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/verify-step5-live.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave1-collect.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave1-execute.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave1-precise-locate.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave1-verify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave2-collect.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave2-execute.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave2-verify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave3-classification.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave4-inventory.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/wave4-words.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/zh-hk.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_regressed-ts.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_residual.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_rewrite-a5a6/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_t12.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-alt-truth.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-commit.ps1",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-dump-alt.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-dump-locale.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-faqs-struct.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-hkfold.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-ja-counter-evidence.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-list-alt.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-menus-fields.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-menus-h1.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-menus-qty.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-orphan-map.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-prod-shape.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-slug-spelling.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp-smallbags.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp_deferred_push.sh",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_tmp_deferred_push_foldedleaflet.sh",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_valid.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_valid2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/align-category-20260918.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/bc-csv-rename.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/build-d14-content.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/build-d14-en.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/build-d14-zhhk.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/c2-baseprice-survey.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/c2-survey.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/c3-survey.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/classify-dual-brand.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cleanse-blog-final.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cleanse-blog-fingerprints.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cleanse-linkedin.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-0913.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-hangzhang.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-meta-fix.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-report.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-selfpub.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-step2.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-step3.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-step4.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/commit-msg-step5.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/compare-live-vs-ts.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-check-tonight.cmd",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-check-tonight.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-diag.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-recompute.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-run/_etsy-live-verify.ps1",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/cron-run/_stepB-live-verify.ps1",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/d14-content.json.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/descbuild-trace.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/descprefix-trace.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/dual-brand-allowlist.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/dual-brand-nontitle.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/dual-brand-refined.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/dump-allowlist.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f1-outputs/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f1-packets/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f2-consolidate.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f2-deep-survey.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f2-outputs/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f2-packet-gen.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/f2-packets/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/fingerprint-scan.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/ga4-pull.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/graft-bc-entries.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/greeting-proposals.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/gsc-debug.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/gsc-falling-2026-09-14-result.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/gsc-falling-2026-09-14.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/gsc-falling-map-2026-09-14.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/gsc-xlsx-decision.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/guarded-push.ps1",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/insert-selfpub-20260918.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/inventory-dual-brand.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-08-30.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-08-31.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-09-04.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-09-05.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-09-06-specs.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-09-06.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/k3-daily-reviews/review-2026-09-07.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/locate-dual-brand.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-GSC-关键词方案.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-SEO-巡检清单.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-handoff-stepB-v2.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-handoff-stepB.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-竞品监控.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-19-长尾博客-folded-leaflet-printing-guide.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-20-GSC-关键词方案.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-20-SEO-巡检清单.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-20-开发信列表.xlsx",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-20-竞品监控.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/2026-09-20-长尾博客-roll-up-banner-printing-guide.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/make-allowlist.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/make-nontitle-manifest.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/pdp-v9-full.png",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/pdp-v91-full.png",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/plp-v9-full.png",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/plp-v91-full.png",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-blogdata-shape.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-brand-residue.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-calendar-slugs.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-checkruns.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-csv-dual.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-csv-zprintpro.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-live-brand-0913.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-live-linkedin-ctx.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-live-seo-surface.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-pdp-title-source.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-residue-full.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-ts-dup-keys.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-ts-history-card-titles.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-ts-locale-brand.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/probe-ts-structure.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/refine-face.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/regen-snapshot.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/register-selfpub-20260918.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/register-zine-post-20260918.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/report-manifest-matrix.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/blog-12seg-checklist-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/blog-12seg-checklist-2026-09-20-online.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/blog-12seg-checklist-2026-09-20.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/live-faqpage-duplicate-count-2026-09-20.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/moq-conflict-resolution-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/moq-precision-classification-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/moq-precision-unified-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/p0-title-batch-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/sku-title-census-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-batch-a2-moq-align-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-batch-a2-trim-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-batch-manual-1-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-batch-p0-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-input-bank-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-proposals-ALL-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-proposals-ALL-2026-09-19.md",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-proposals-P0-A1-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-proposals-P2-修剪-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-proposals-P3-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/reports/title-separator-analysis-2026-09-19.json",
+        "bucket": "B",
+        "sub": "生成日志/报告",
+        "note": "生成物；若需留证应显式 -f 入库并注明"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/rewrite-d14-en-zhhk.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/seo-meta-trace.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/single-brand-fix.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/sku-faq-empty-census-2026-09-08.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/staging/self-publishing-content.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/staging/self-publishing-content.zhhk-ja.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/title-audit-titles.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/title-dbg.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-bp-collect.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-cat-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-desc-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-git-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-gsc-peek.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-guard-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-hreflang-audit.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-imgprobe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-k3-verify.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-k3-verify2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-live-pdp.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-live-pdp.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-live-plp.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-live-plp.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-meta-len.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-pdp-price.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-pdp-table.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-prod-peek.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-qa-sample.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-qianwen-ux-strategy.docx",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-schema-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-schema-probe2.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-sku-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-title-probe.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-v91-gates.sh",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/tmp-zine-guard-check.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/v18-cleanse.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/v93-legal-textdiff.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/verify-batch-0913.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/verify-live-0913b.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/wait-deploy.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/wait-live-marker.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/write-d14-all.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/write-d14-ja.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".tmp-content-check/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-chain.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-en.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-post.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-post2.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-test-body.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": ".unsub-zh.html",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "2026-09-09-autoclaw-plp-pdp-v91-execution-card.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "2026-09-09-v91-human-execution-handoff.md",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "=0",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "DELIVERY/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_build_en.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_build_ja.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_build_specs_blog.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_check-6c2f4a94-en.json",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_commit_msg.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_push_indexnow_new.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_test_before.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_enja_audit.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_extract_pattern.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_firstP.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_firstP_rewrite.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_git_diff.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_menu_audit.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_menu_sections.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_menu_upgrade.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_pillar_audit.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_pillar_detail.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_round2.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_tmp_schema_template.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_verify_state.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "_write_zh.py",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "design/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "f",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "scripts/apply-menus-locale-fix.cjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "scripts/audit-workspace-dirty.mjs",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "scripts/moq10-diag-brand.js",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "scripts/moq10-scan-books-page-claims.ts",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-json-en.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-json-ja.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-json-zh-hk.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-out-en.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-out-ja.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "tmp-rush-out-zh-hk.txt",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "x",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      },
+      {
+        "code": "??",
+        "p": "重要文件/",
+        "bucket": "B",
+        "sub": "未分类",
+        "note": "需人工判断归属"
+      }
+    ],
+    "C": [
+      {
+        "code": "??",
+        "p": ".hermes/_archive-main-tmp-20260917/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-bk002-price-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-bus-inject-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-calendar-price-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-category-align-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-conv-before-s1.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-csv-menus-faq-20260920.csv",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-daily-seo-20260920/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-folded-leaflet-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-intersect-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-menus-template-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-menus-truth-20260919.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-moq10-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-moq10-b-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-moq10-books-scope-20260919.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-moq10-k3ruling-20260919.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-p0-title-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-photobook-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-picturebook-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-pricedata-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-products-menus-material-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-selfpub-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-sku-seo-before-regen-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-sku-seo-before-scoped.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-sku-seo-menus-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-batch-a2-moq-align-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-batch-a2-trim-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-batch-manual-1-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-batch-p0-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-batch-trim-58-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-rule-50-57/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-title-rule-sync-20260919/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-unitlabel-20260920.ts",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_bak-zine-post-20260918/",
+        "bucket": "C",
+        "sub": "备份目录",
+        "note": "备份，非交付物 → 建议 .gitignore"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_broken-zhhk-lane-20260919.json",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_etsy-article.en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.FloatingQuoteCTA.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.HeroBanner.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.category-seo-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.cover-industries-en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC.products-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.FloatingQuoteCTA.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.HeroBanner.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.category-seo-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.cover-industries-en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fscC2.products-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.CategoryIndustries.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.ProductTabs.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.blog-posts.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.buying-guides.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.category-conversion-blocks.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.category-seo-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.cover-industries-en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.en.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.pillar-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.product-faqs.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.products-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.products.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.seo.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_fschyph.sku-seo-data.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_i18n-pollution-baseline.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_pre-step5-product-specs-i18n.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1.cat.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1.en.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_stepC1.sku.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.bp.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.buy.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.cat.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.catpage.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.en.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.ja.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave1.sku.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave2.ja.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave3.buy.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave3.en.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_app__locale__about_page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_app__locale__blog__slug__page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_app__locale__contact_page.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_components_ProductLongDescription.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_components_layout_Header.tsx.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_data_blog-data_ja.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_data_blog-posts.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_data_buying-guides.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4.src_data_category-seo-content.ts.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4b.ja.json.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/_probe-pb/_wave4c.about.bak",
+        "bucket": "C",
+        "sub": "坏档残留",
+        "note": "事故残留/旧版备份 → 建议 .gitignore 或人工确认后清"
+      },
+      {
+        "code": "??",
+        "p": ".hermes/logs/_test-moq-scope-b.mjs",
+        "bucket": "C",
+        "sub": "一次性探针",
+        "note": "一次性探针/临时讯息档；可复跑者建议转正式 scripts/"
+      }
+    ]
+  }
+}

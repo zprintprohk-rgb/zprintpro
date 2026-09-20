@@ -1,0 +1,36 @@
+{
+ "generated_at": "2026-09-20T06:29:56.787Z",
+ "site": "https://zprintpro.com",
+ "rows": [
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "verdict": "DUPLICATE",
+   "generated_faq": 1,
+   "inline_faq": 1,
+   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
+   "inline_blocks": 11,
+   "len": 193372
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "verdict": "DUPLICATE",
+   "generated_faq": 1,
+   "inline_faq": 1,
+   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
+   "inline_blocks": 11,
+   "len": 231185
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "verdict": "DUPLICATE",
+   "generated_faq": 1,
+   "inline_faq": 1,
+   "generated_types": "WebSite,SearchAction,Article,Person,Organization,ImageObject,WebPage,BreadcrumbList,ListItem,SpeakableSpecification,FAQPage,Question,Answer,HowTo,HowToStep",
+   "inline_blocks": 11,
+   "len": 196085
+  }
+ ]
+}

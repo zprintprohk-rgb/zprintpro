@@ -1,0 +1,114 @@
+{
+ "batch": [
+  {
+   "slug": "business-envelopes",
+   "slots": {
+    "zh-hk": "公司信封 | DL/C5/C4 開窗全封 100個起 HK$0.22起 | 智印港",
+    "ja": "会社封筒 | DL/C5/C4 窓付き・自黏封口 100枚〜 | ZprintPro"
+   },
+   "src": {
+    "zh-hk": 35,
+    "ja": 44,
+    "note": "specs: DL/C5/C4, 開窗貼片, 80–120g 書紙; MOQ 100, HK$0.22 起 (products.ts)"
+   }
+  },
+  {
+   "slug": "large-envelopes",
+   "slots": {
+    "zh-hk": "大號信封 | C4 229×324mm 平放A4 100個起 HK$0.60起 | 智印港",
+    "en": "Large Envelopes C4 | Fits A4 Flat | 100 MOQ | ZprintPro",
+    "ja": "大型封筒 | C4 229×324mm A4対応 100枚〜 | ZprintPro"
+   },
+   "src": {
+    "zh-hk": 35,
+    "en": 48,
+    "ja": 44,
+    "note": "specs: C4 229×324mm, 可平放 A4; MOQ 100, HK$0.60 起 (products.ts)"
+   }
+  }
+ ],
+ "changed": [
+  {
+   "slug": "business-envelopes",
+   "locale": "zh-hk",
+   "oldTitle": "公司信封 | 雙面印刷 多規格 | 智印港",
+   "newTitle": "公司信封 | DL/C5/C4 開窗全封 100個起 HK$0.22起 | 智印港"
+  },
+  {
+   "slug": "business-envelopes",
+   "locale": "ja",
+   "oldTitle": "会社封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "newTitle": "会社封筒 | DL/C5/C4 窓付き・自黏封口 100枚〜 | ZprintPro"
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "zh-hk",
+   "oldTitle": "大號信封 | 雙面印刷 多規格 | 智印港",
+   "newTitle": "大號信封 | C4 229×324mm 平放A4 100個起 HK$0.60起 | 智印港"
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "en",
+   "oldTitle": "Large Envelopes | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Large Envelopes C4 | Fits A4 Flat | 100 MOQ | ZprintPro"
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "ja",
+   "oldTitle": "大型封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "newTitle": "大型封筒 | C4 229×324mm A4対応 100枚〜 | ZprintPro"
+  }
+ ],
+ "rows": [
+  {
+   "slug": "business-envelopes",
+   "locale": "zh-hk",
+   "from": 35,
+   "to": "公司信封 | DL/C5/C4 開窗全封 100個起 HK$0.22起 | 智印港",
+   "equiv": 55,
+   "was": 35,
+   "delta": 20,
+   "ok": true
+  },
+  {
+   "slug": "business-envelopes",
+   "locale": "ja",
+   "from": 44,
+   "to": "会社封筒 | DL/C5/C4 窓付き・自黏封口 100枚〜 | ZprintPro",
+   "equiv": 56,
+   "was": 44,
+   "delta": 12,
+   "ok": true
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "zh-hk",
+   "from": 35,
+   "to": "大號信封 | C4 229×324mm 平放A4 100個起 HK$0.60起 | 智印港",
+   "equiv": 57,
+   "was": 35,
+   "delta": 22,
+   "ok": true
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "en",
+   "from": 48,
+   "to": "Large Envelopes C4 | Fits A4 Flat | 100 MOQ | ZprintPro",
+   "equiv": 55,
+   "was": 48,
+   "delta": 7,
+   "ok": true
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "ja",
+   "from": 44,
+   "to": "大型封筒 | C4 229×324mm A4対応 100枚〜 | ZprintPro",
+   "equiv": 50,
+   "was": 44,
+   "delta": 6,
+   "ok": true
+  }
+ ]
+}

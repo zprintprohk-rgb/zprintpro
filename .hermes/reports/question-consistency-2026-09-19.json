@@ -1,186 +1,30 @@
 {
- "generated_at": "2026-09-19T12:26:55.878Z",
+ "generated_at": "2026-09-19T16:31:12.714Z",
  "site": "https://zprintpro.com",
  "rows": [
   {
    "locale": "zh-hk",
-   "slug": "packaging-box-pricing-2026",
-   "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "包裝盒印刷 500 個同 5000 個,單價差幾多?",
-   "sample_vis": "包裝盒印刷 500 個同 5000 個,單價差幾多?"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "防水貼紙用咩材質最襟？",
-   "sample_vis": "防水貼紙用咩材質最襟？"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "poster-printing-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 5,
-   "visible_questions": 5,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "海報印刷用咩紙最抵?",
-   "sample_vis": "海報印刷用咩紙最抵?"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 5,
-   "visible_questions": 5,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "校園刊物 100 份起印嗎?",
-   "sample_vis": "校園刊物 100 份起印嗎?"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "foil-stamping-3-applications-2026",
-   "verdict": "NO_GENERATED_FAQ",
-   "generated_questions": 0,
-   "visible_questions": 0,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": null,
-   "sample_vis": null
+   "slug": "poster-size-guide",
+   "verdict": "INVALID",
+   "why": "HTTP 503 len 4666"
   },
   {
    "locale": "en",
-   "slug": "packaging-box-pricing-2026",
+   "slug": "poster-size-guide",
    "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
+   "generated_questions": 6,
+   "visible_questions": 6,
    "missing_in_generated": [],
    "missing_in_visible": [],
    "inline_faqpage_remaining": 1,
-   "sample_gen": "How much does packaging box printing cost for 500 vs 5,000 u",
-   "sample_vis": "How much does packaging box printing cost for 500 vs 5,000 u"
-  },
-  {
-   "locale": "en",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "Which waterproof sticker material lasts longest?",
-   "sample_vis": "Which waterproof sticker material lasts longest?"
-  },
-  {
-   "locale": "en",
-   "slug": "poster-printing-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 7,
-   "visible_questions": 7,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "What is the minimum order quantity?",
-   "sample_vis": "What is the minimum order quantity?"
-  },
-  {
-   "locale": "en",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 5,
-   "visible_questions": 5,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "Does campus journal MOQ start from 100 pcs?",
-   "sample_vis": "Does campus journal MOQ start from 100 pcs?"
-  },
-  {
-   "locale": "en",
-   "slug": "foil-stamping-3-applications-2026",
-   "verdict": "NO_GENERATED_FAQ",
-   "generated_questions": 0,
-   "visible_questions": 0,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": null,
-   "sample_vis": null
+   "sample_gen": "What are the exact A2 poster dimensions?",
+   "sample_vis": "What are the exact A2 poster dimensions?"
   },
   {
    "locale": "ja",
-   "slug": "packaging-box-pricing-2026",
-   "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "パッケージボックス印刷 500 個と 5000 個の単価差は?",
-   "sample_vis": "パッケージボックス印刷 500 個と 5000 個の単価差は?"
-  },
-  {
-   "locale": "ja",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "verdict": "CONSISTENT",
-   "generated_questions": 4,
-   "visible_questions": 4,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "防水ステッカーはどの素材が一番長持ち?",
-   "sample_vis": "防水ステッカーはどの素材が一番長持ち?"
-  },
-  {
-   "locale": "ja",
-   "slug": "poster-printing-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 7,
-   "visible_questions": 7,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "最小注文数は？",
-   "sample_vis": "最小注文数は？"
-  },
-  {
-   "locale": "ja",
-   "slug": "campus-education-printing-pillar-guide",
-   "verdict": "CONSISTENT",
-   "generated_questions": 5,
-   "visible_questions": 5,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": "校園刊物は 100 部から印刷できますか?",
-   "sample_vis": "校園刊物は 100 部から印刷できますか?"
-  },
-  {
-   "locale": "ja",
-   "slug": "foil-stamping-3-applications-2026",
-   "verdict": "NO_GENERATED_FAQ",
-   "generated_questions": 0,
-   "visible_questions": 0,
-   "missing_in_generated": [],
-   "missing_in_visible": [],
-   "inline_faqpage_remaining": 1,
-   "sample_gen": null,
-   "sample_vis": null
+   "slug": "poster-size-guide",
+   "verdict": "INVALID",
+   "why": "HTTP 503 len 4666"
   }
  ]
 }

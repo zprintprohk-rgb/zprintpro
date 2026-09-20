@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19T16:12:54.045Z",
+ "generated_at": "2026-09-19T16:24:45.481Z",
  "perLocale": {
   "zh-hk": [
    {
@@ -11,15 +11,7 @@
     "n": 5
    },
    {
-    "slug": "sticker-material-pvc-vinyl-removable",
-    "n": 5
-   },
-   {
     "slug": "foil-stamping-3-applications-2026",
-    "n": 5
-   },
-   {
-    "slug": "campus-education-printing-pillar-guide",
     "n": 5
    },
    {
@@ -41,15 +33,7 @@
     "n": 5
    },
    {
-    "slug": "sticker-material-pvc-vinyl-removable",
-    "n": 5
-   },
-   {
     "slug": "foil-stamping-3-applications-2026",
-    "n": 5
-   },
-   {
-    "slug": "campus-education-printing-pillar-guide",
     "n": 5
    },
    {
@@ -71,15 +55,7 @@
     "n": 5
    },
    {
-    "slug": "sticker-material-pvc-vinyl-removable",
-    "n": 5
-   },
-   {
     "slug": "foil-stamping-3-applications-2026",
-    "n": 5
-   },
-   {
-    "slug": "campus-education-printing-pillar-guide",
     "n": 5
    },
    {
@@ -97,13 +73,11 @@
   ]
  },
  "union": [
-  "campus-education-printing-pillar-guide",
   "foil-stamping-3-applications-2026",
   "hong-kong-printing-cost-baseline-2026",
   "poster-size-guide",
   "print-specifications-reference-guide-2026",
   "restaurant-menu-printing-guide",
-  "school-exercise-book-printing-guide",
-  "sticker-material-pvc-vinyl-removable"
+  "school-exercise-book-printing-guide"
  ]
 }

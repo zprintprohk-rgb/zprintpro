@@ -1,0 +1,353 @@
+{
+ "batch": [
+  {
+   "slug": "white-card-bags",
+   "slots": {
+    "zh-hk": "白卡紙袋 | 100%環保 多尺寸 | 100個起 HK$12起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 35
+   }
+  },
+  {
+   "slug": "eco-paper-bags",
+   "slots": {
+    "ja": "エコ紙袋 | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro"
+   },
+   "src": {
+    "ja": 40
+   }
+  },
+  {
+   "slug": "large-bags",
+   "slots": {
+    "ja": "大型紙袋 | エコ素材 多サイズ | 100枚〜 ¥450〜 | ZprintPro"
+   },
+   "src": {
+    "ja": 40
+   }
+  },
+  {
+   "slug": "a1-posters",
+   "slots": {
+    "ja": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro"
+   },
+   "src": {
+    "ja": 39
+   }
+  },
+  {
+   "slug": "outdoor-posters",
+   "slots": {
+    "zh-hk": "戶外海報 | 防水材質 即日速遞 | 100個起 HK$16起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 37
+   }
+  },
+  {
+   "slug": "display-posters",
+   "slots": {
+    "zh-hk": "展架海報 | 防水材質 即日速遞 | 100個起 HK$32起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 37
+   }
+  },
+  {
+   "slug": "art-posters",
+   "slots": {
+    "zh-hk": "藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 37
+   }
+  },
+  {
+   "slug": "adhesive-posters",
+   "slots": {
+    "ja": "粘着ポスター | 防水 翌日配送 | 100枚〜 ¥390〜 | ZprintPro"
+   },
+   "src": {
+    "ja": 40
+   }
+  },
+  {
+   "slug": "folding-boxes",
+   "slots": {
+    "zh-hk": "折疊禮盒 | 燙金 UV 100%訂製 | 100個起 HK$2.5起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 36
+   }
+  },
+  {
+   "slug": "embossed-red-packets",
+   "slots": {
+    "zh-hk": "浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 34
+   }
+  },
+  {
+   "slug": "desk-calendars",
+   "slots": {
+    "zh-hk": "座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 35
+   }
+  },
+  {
+   "slug": "magnetic-calendars",
+   "slots": {
+    "zh-hk": "磁吸年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 35
+   }
+  },
+  {
+   "slug": "pvc-menus",
+   "slots": {
+    "ja": "PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro"
+   },
+   "src": {
+    "ja": 38
+   }
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "slots": {
+    "zh-hk": "戶外橫幅 | 鋁合金支架 高清 | 100個起 HK$12起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 35
+   }
+  },
+  {
+   "slug": "mesh-banners",
+   "slots": {
+    "zh-hk": "網孔布易拉寶 | 鋁合金支架 高清 | 100個起 HK$16起 | 智印港"
+   },
+   "src": {
+    "zh-hk": 39
+   }
+  }
+ ],
+ "changed": [
+  {
+   "slug": "white-card-bags",
+   "locale": "zh-hk",
+   "oldTitle": "白卡紙袋 | 100%環保 多尺寸 | 智印港",
+   "newTitle": "白卡紙袋 | 100%環保 多尺寸 | 100個起 HK$12起 | 智印港"
+  },
+  {
+   "slug": "eco-paper-bags",
+   "locale": "ja",
+   "oldTitle": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
+   "newTitle": "エコ紙袋 | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro"
+  },
+  {
+   "slug": "large-bags",
+   "locale": "ja",
+   "oldTitle": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
+   "newTitle": "大型紙袋 | エコ素材 多サイズ | 100枚〜 ¥450〜 | ZprintPro"
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "oldTitle": "A1 ポスター | 防水 翌日配送 | ZprintPro",
+   "newTitle": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro"
+  },
+  {
+   "slug": "outdoor-posters",
+   "locale": "zh-hk",
+   "oldTitle": "戶外海報 | 防水材質 即日速遞 | 智印港",
+   "newTitle": "戶外海報 | 防水材質 即日速遞 | 100個起 HK$16起 | 智印港"
+  },
+  {
+   "slug": "display-posters",
+   "locale": "zh-hk",
+   "oldTitle": "展架海報 | 防水材質 即日速遞 | 智印港",
+   "newTitle": "展架海報 | 防水材質 即日速遞 | 100個起 HK$32起 | 智印港"
+  },
+  {
+   "slug": "art-posters",
+   "locale": "zh-hk",
+   "oldTitle": "藝術海報 | 防水材質 即日速遞 | 智印港",
+   "newTitle": "藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港"
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "ja",
+   "oldTitle": "粘着ポスター | 防水 翌日配送 | ZprintPro",
+   "newTitle": "粘着ポスター | 防水 翌日配送 | 100枚〜 ¥390〜 | ZprintPro"
+  },
+  {
+   "slug": "folding-boxes",
+   "locale": "zh-hk",
+   "oldTitle": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港",
+   "newTitle": "折疊禮盒 | 燙金 UV 100%訂製 | 100個起 HK$2.5起 | 智印港"
+  },
+  {
+   "slug": "embossed-red-packets",
+   "locale": "zh-hk",
+   "oldTitle": "浮雕利是封 | 燙金 UV 壓紋 | 智印港",
+   "newTitle": "浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港"
+  },
+  {
+   "slug": "desk-calendars",
+   "locale": "zh-hk",
+   "oldTitle": "座檯年曆 | 企業禮品 多款式 | 智印港",
+   "newTitle": "座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港"
+  },
+  {
+   "slug": "magnetic-calendars",
+   "locale": "zh-hk",
+   "oldTitle": "磁吸年曆 | 企業禮品 多款式 | 智印港",
+   "newTitle": "磁吸年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港"
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "ja",
+   "oldTitle": "PVC menu | 防水 ラミネート | ZprintPro",
+   "newTitle": "PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro"
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "zh-hk",
+   "oldTitle": "戶外橫幅 | 鋁合金支架 高清 | 智印港",
+   "newTitle": "戶外橫幅 | 鋁合金支架 高清 | 100個起 HK$12起 | 智印港"
+  },
+  {
+   "slug": "mesh-banners",
+   "locale": "zh-hk",
+   "oldTitle": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港",
+   "newTitle": "網孔布易拉寶 | 鋁合金支架 高清 | 100個起 HK$16起 | 智印港"
+  }
+ ],
+ "rows": [
+  {
+   "slug": "white-card-bags",
+   "locale": "zh-hk",
+   "was": 35,
+   "to": "白卡紙袋 | 100%環保 多尺寸 | 100個起 HK$12起 | 智印港",
+   "equiv": 53,
+   "ok": true
+  },
+  {
+   "slug": "eco-paper-bags",
+   "locale": "ja",
+   "was": 40,
+   "to": "エコ紙袋 | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro",
+   "equiv": 57,
+   "ok": true
+  },
+  {
+   "slug": "large-bags",
+   "locale": "ja",
+   "was": 40,
+   "to": "大型紙袋 | エコ素材 多サイズ | 100枚〜 ¥450〜 | ZprintPro",
+   "equiv": 57,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "was": 39,
+   "to": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "outdoor-posters",
+   "locale": "zh-hk",
+   "was": 37,
+   "to": "戶外海報 | 防水材質 即日速遞 | 100個起 HK$16起 | 智印港",
+   "equiv": 55,
+   "ok": true
+  },
+  {
+   "slug": "display-posters",
+   "locale": "zh-hk",
+   "was": 37,
+   "to": "展架海報 | 防水材質 即日速遞 | 100個起 HK$32起 | 智印港",
+   "equiv": 55,
+   "ok": true
+  },
+  {
+   "slug": "art-posters",
+   "locale": "zh-hk",
+   "was": 37,
+   "to": "藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港",
+   "equiv": 53,
+   "ok": true
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "ja",
+   "was": 40,
+   "to": "粘着ポスター | 防水 翌日配送 | 100枚〜 ¥390〜 | ZprintPro",
+   "equiv": 57,
+   "ok": true
+  },
+  {
+   "slug": "folding-boxes",
+   "locale": "zh-hk",
+   "was": 36,
+   "to": "折疊禮盒 | 燙金 UV 100%訂製 | 100個起 HK$2.5起 | 智印港",
+   "equiv": 55,
+   "ok": true
+  },
+  {
+   "slug": "embossed-red-packets",
+   "locale": "zh-hk",
+   "was": 34,
+   "to": "浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港",
+   "equiv": 51,
+   "ok": true
+  },
+  {
+   "slug": "desk-calendars",
+   "locale": "zh-hk",
+   "was": 35,
+   "to": "座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港",
+   "equiv": 53,
+   "ok": true
+  },
+  {
+   "slug": "magnetic-calendars",
+   "locale": "zh-hk",
+   "was": 35,
+   "to": "磁吸年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港",
+   "equiv": 53,
+   "ok": true
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "ja",
+   "was": 38,
+   "to": "PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro",
+   "equiv": 55,
+   "ok": true
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "zh-hk",
+   "was": 35,
+   "to": "戶外橫幅 | 鋁合金支架 高清 | 100個起 HK$12起 | 智印港",
+   "equiv": 53,
+   "ok": true
+  },
+  {
+   "slug": "mesh-banners",
+   "locale": "zh-hk",
+   "was": 39,
+   "to": "網孔布易拉寶 | 鋁合金支架 高清 | 100個起 HK$16起 | 智印港",
+   "equiv": 57,
+   "ok": true
+  }
+ ]
+}

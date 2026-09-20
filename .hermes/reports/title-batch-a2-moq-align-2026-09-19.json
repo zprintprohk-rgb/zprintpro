@@ -1,0 +1,48 @@
+{
+ "batch": [
+  {
+   "slug": "a2-posters",
+   "slots": {
+    "zh-hk": "A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨 | 智印港",
+    "ja": "A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro"
+   },
+   "src": {
+    "zh-hk": 54,
+    "ja": 57,
+    "note": "K3 c18107a0: a2-posters minQuantity=10 (真值), 文案须对齐 10; en 标题无 MOQ 钩不受影响"
+   }
+  }
+ ],
+ "changed": [
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "oldTitle": "A2 海報印刷 420×594mm 1張起印 HK$9起 即日交貨 | 智印港",
+   "newTitle": "A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨 | 智印港"
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "oldTitle": "A2 ポスター印刷｜¥300〜・1枚から・無料デザイン｜ZprintPro",
+   "newTitle": "A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro"
+  }
+ ],
+ "rows": [
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "was": 54,
+   "to": "A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨 | 智印港",
+   "equiv": 55,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "was": 57,
+   "to": "A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro",
+   "equiv": 56,
+   "ok": true
+  }
+ ]
+}

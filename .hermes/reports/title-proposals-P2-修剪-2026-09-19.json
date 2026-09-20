@@ -1,0 +1,6659 @@
+{
+ "schema": "title-proposals-v1",
+ "generatedFor": "2026-09-19",
+ "batch": "P2-修剪",
+ "calibration": "2026-09-19 16:58 UTC",
+ "hardGate": "UNIFIED — 生成器可构建",
+ "rule": {
+  "min": 50,
+  "max": 57,
+  "hardMax": 58
+ },
+ "counts": {
+  "slots": 38,
+  "generated": 38,
+  "skipped": 0,
+  "candidates": 166,
+  "allPass": 29
+ },
+ "results": [
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 80,
+   "pos": 40.46,
+   "current": "Custom Waterproof Stickers | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 59,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Custom Waterproof Stickers | Free US Ship | ZprintPro",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Waterproof Stickers | 10 MOQ | $0.32 | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.32",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.32"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.32"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Waterproof Stickers | 10 MOQ | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Waterproof Stickers | $0.32 | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.32 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.32",
+       "src": "products.ts basePrice=0.32"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.32"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Waterproof Stickers | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Waterproof Stickers | Free US Ship | $0.32 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.32",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.32"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.32"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 30,
+   "pos": 36.57,
+   "current": "Custom Transparent Stickers | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Custom Transparent Stickers | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Transparent Stickers | 10 MOQ | $0.41 | ZprintPro",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.41",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.41"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.41"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Transparent Stickers | 10 MOQ | ZprintPro",
+     "equiv": 48,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "48 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Transparent Stickers | $0.41 | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.41 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.41",
+       "src": "products.ts basePrice=0.41"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.41"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Transparent Stickers | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Transparent Stickers | Free US Ship | $0.41 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.41",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.41"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.41"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "zh-hk",
+   "batch": "P2-修剪",
+   "imps": 18,
+   "pos": 6.61,
+   "current": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港",
+   "currentEquiv": 63,
+   "moq": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "candidates": [
+    {
+     "variant": "T6",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水 PVC 異形切割\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T5",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水 PVC 異形切割\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 2h 打稿 | 智印港",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T4",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC | 智印港",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水 PVC\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T3",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 PVC | 智印港",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水 PVC\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T2",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 | 智印港",
+     "equiv": 42,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "42 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T1",
+     "title": "小批量貼紙 50 張起 HK$0.45 | 防水 | 智印港",
+     "equiv": 42,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "42 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 396,
+   "pos": 17.81,
+   "current": "Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro",
+   "currentEquiv": 67,
+   "moq": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
+     "equiv": 51,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "51 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
+     "equiv": 51,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "51 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "Small Batch Stickers 50 pcs from $0.045 | Free 2h Proof | ZprintPro",
+     "equiv": 67,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "67 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 26,
+   "pos": 22.88,
+   "current": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro",
+   "currentEquiv": 63,
+   "moq": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "NO_MOQ_HOOK",
+    "value": null,
+    "src": "人工核定: src/data/sku-seo-data.ts en FAQ Q2 载「…We support 50-sticker MOQ "
+   },
+   "candidates": [
+    {
+     "variant": "T2",
+     "title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水PVC\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T1",
+     "title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"防水PVC\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "小ロットステッカー 50 枚〜 $0.045 | 防水PVC 2h 校正 | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "小ロットステッカー 50 枚〜 $0.045 | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "小ロットステッカー 50 枚〜 $0.045 | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 71,
+   "pos": 15.37,
+   "current": "Custom Fluorescent Stickers | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Custom Fluorescent Stickers | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Fluorescent Stickers | 10 MOQ | $0.46 | ZprintPro",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.46",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.46"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.46"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Fluorescent Stickers | 10 MOQ | ZprintPro",
+     "equiv": 48,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "48 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Fluorescent Stickers | $0.46 | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.46 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.46",
+       "src": "products.ts basePrice=0.46"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.46"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Fluorescent Stickers | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Fluorescent Stickers | Free US Ship | $0.46 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.46",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.46"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.46"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 36,
+   "pos": 13.81,
+   "current": "A4 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "A4 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A4 Flyers for Holiday Cards | 10 MOQ | $0.55 | ZprintPro",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.55",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.55"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.55"
+    },
+    {
+     "variant": "S1_1",
+     "title": "A4 Flyers for Holiday Cards | 10 MOQ | ZprintPro",
+     "equiv": 48,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "48 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "A4 Flyers for Holiday Cards | $0.55 | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.55 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.55",
+       "src": "products.ts basePrice=0.55"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.55"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A4 Flyers for Holiday Cards | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A4 Flyers for Holiday Cards | Free US Ship | $0.55 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.55",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.55"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.55"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "a5-flyers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 26,
+   "pos": 12.12,
+   "current": "A5 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "A5 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A5 Flyers for Holiday Cards | 10 MOQ | $0.4 | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.4",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.4"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.4"
+    },
+    {
+     "variant": "S1_1",
+     "title": "A5 Flyers for Holiday Cards | 10 MOQ | ZprintPro",
+     "equiv": 48,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "48 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "A5 Flyers for Holiday Cards | $0.4 | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.4 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.4",
+       "src": "products.ts basePrice=0.4"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.4"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A5 Flyers for Holiday Cards | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "A5 Flyers for Holiday Cards | Free US Ship | $0.4 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.4",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.4"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.4"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 65,
+   "pos": 29.68,
+   "current": "両面カラー印刷 両面チラシ | 両面フルカラー 100枚〜 翌日発送 | ZprintPro",
+   "currentEquiv": 71,
+   "moq": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "candidates": [
+    {
+     "variant": "S1_2",
+     "title": "両面カラー印刷 両面チラシ | 100枚〜 | ¥85〜 | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / 移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100枚〜 + ¥85〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市) / products.ts basePrice=85"
+      },
+      {
+       "text": "両面フルカラー 100枚〜 翌日発送",
+       "src": "移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 100枚〜+¥85〜"
+    },
+    {
+     "variant": "S1_1",
+     "title": "両面カラー印刷 両面チラシ | 100枚〜 | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / 移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+      },
+      {
+       "text": "両面フルカラー 100枚〜 翌日発送",
+       "src": "移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 100枚〜"
+    },
+    {
+     "variant": "S1_1",
+     "title": "両面カラー印刷 両面チラシ | ¥85〜 | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=85 / 移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "¥85〜",
+       "src": "products.ts basePrice=85"
+      },
+      {
+       "text": "両面フルカラー 100枚〜 翌日発送",
+       "src": "移除超长钩子 (31 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 ¥85〜"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 2,
+   "needsRewrite": null
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 6,
+   "pos": 45.17,
+   "current": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Folded Leaflets | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Folded Leaflets | Tri-Fold Design | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Folded Leaflets | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "same-day-flyers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 93,
+   "pos": 40.39,
+   "current": "Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 67,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Same-Day Flyer Printing from $0.95 | 10 MOQ | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "10 MOQ",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Same-Day Flyer Printing from $0.95 | $0.95 | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.95 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "$0.95",
+       "src": "products.ts basePrice=0.95"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.95"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Same-Day Flyer Printing from $0.95 | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Same-Day Flyer Printing from $0.95 | 10 MOQ | Free US Ship | ZprintPro",
+     "equiv": 70,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "70 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / 线上既有短 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=10 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Same-Day Flyer Printing from $0.95 | 10 MOQ | $0.95 | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / produ / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10 MOQ + $0.95",
+       "src": "products.ts minQuantity=10 / products.ts basePrice=0.95"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 10 MOQ+$0.95"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Same-Day Flyer Printing from $0.95 | Free US Ship | $0.95 | ZprintPro",
+     "equiv": 69,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "69 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.95",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.95"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.95"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "locale": "zh-hk",
+   "batch": "P2-修剪",
+   "imps": 14,
+   "pos": 6.64,
+   "current": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+   "currentEquiv": 77,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+     "equiv": 77,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "77 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+     "equiv": 77,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "77 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 2 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 30,
+   "pos": 6.6,
+   "current": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
+   "currentEquiv": 87,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "化粧品パッケージボックス 4 種類 100 個〜 | ZprintPro",
+     "equiv": 52,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "52 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "化粧品パッケージボックス 4 種類 100 個〜 | ZprintPro",
+     "equiv": 52,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "52 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
+     "equiv": 87,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "87 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T3",
+     "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し | ZprintPro",
+     "equiv": 77,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "77 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"マグネット蓋・引き出し\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T1",
+     "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋 | ZprintPro",
+     "equiv": 67,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "67 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"マグネット蓋\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "food-boxes",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 49,
+   "pos": 38.63,
+   "current": "Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro",
+   "currentEquiv": 71,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro",
+     "equiv": 71,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "71 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Paper Food Packaging Printing 100+ | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Paper Food Packaging Printing 100+ | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T4",
+     "title": "Paper Food Packaging Printing 100+ | Food-Safe Boxes | ZprintPro",
+     "equiv": 64,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "64 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"Food-Safe Boxes\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T3",
+     "title": "Paper Food Packaging Printing 100+ | Food-Safe Boxes | ZprintPro",
+     "equiv": 64,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "64 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"Food-Safe Boxes\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "food-boxes",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 43,
+   "pos": 35.93,
+   "current": "紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro",
+   "currentEquiv": 73,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "T1",
+     "title": "紙製食品パッケージ印刷 100個〜 | 食品用紙箱 | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"食品用紙箱\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro",
+     "equiv": 73,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "73 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "紙製食品パッケージ印刷 100個〜 | ZprintPro",
+     "equiv": 42,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "42 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "紙製食品パッケージ印刷 100個〜 | ZprintPro",
+     "equiv": 42,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "42 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T3",
+     "title": "紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"食品用紙箱・紙袋\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "eco-red-packets",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 4,
+   "pos": 11.25,
+   "current": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Eco Red Packets | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Eco Red Packets | Gold Foil Print | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Eco Red Packets | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "large-red-packets",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 1,
+   "pos": 4,
+   "current": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+   "currentEquiv": 62,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Large Red Packets | ZprintPro",
+     "equiv": 29,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "29 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Large Red Packets | Gold Foil Print | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Large Red Packets | ZprintPro",
+     "equiv": 29,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "29 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "wall-calendars",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 20,
+   "pos": 44.05,
+   "current": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+   "currentEquiv": 61,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Wall Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Wall Calendars | Wire-Bound Spiral | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Wall Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "desk-calendars",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 8,
+   "pos": 37.75,
+   "current": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+   "currentEquiv": 61,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Desk Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Desk Calendars | Wire-Bound Spiral | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Desk Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "mini-calendars",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 9,
+   "pos": 5.56,
+   "current": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+   "currentEquiv": 61,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Mini Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Mini Calendars | Wire-Bound Spiral | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Mini Calendars | ZprintPro",
+     "equiv": 26,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "26 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 2,
+   "pos": 3,
+   "current": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "フォトフレームカレンダー | ZprintPro",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "フォトフレームカレンダー | ZprintPro",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T2",
+     "title": "フォトフレームカレンダー | ノベルティ | ZprintPro",
+     "equiv": 49,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "49 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"ノベルティ\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T1",
+     "title": "フォトフレームカレンダー | ノベルティ | ZprintPro",
+     "equiv": 49,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "49 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"ノベルティ\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 2 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "zh-hk",
+   "batch": "P2-修剪",
+   "imps": 53,
+   "pos": 9.13,
+   "current": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港",
+   "currentEquiv": 66,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, ti)"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, ti)"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 100個起 HK$8起 | 智印港",
+     "equiv": 83,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "83 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, ti)"
+      }
+     ],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 100個起 HK$8起 | 智印港",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, ti)"
+      }
+     ],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 100個起 HK$8起 | 智印港",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ c18107a0 已点名「餐牌【50本起訂】 vs 真值 100」为矛盾 (当次仅移除 features 版, ti)"
+      }
+     ],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 2 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "laminated-menus",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 9,
+   "pos": 50.33,
+   "current": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
+   "currentEquiv": 62,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Laminated Menus | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Laminated Menus | Laminated Durable | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Laminated Menus | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "hardcover-menus",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 22,
+   "pos": 60.59,
+   "current": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
+   "currentEquiv": 62,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Hardcover Menus | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Hardcover Menus | Laminated Durable | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Hardcover Menus | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "roll-up-banners",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 13,
+   "pos": 38.15,
+   "current": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+   "currentEquiv": 59,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+     "equiv": 59,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "59 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Roll-up Banners | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Roll-up Banners | Wind-Resistant | ZprintPro",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Roll-up Banners | ZprintPro",
+     "equiv": 27,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "27 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "adhesive-banners",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 46,
+   "pos": 38.54,
+   "current": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Adhesive Banners | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Adhesive Banners | Wind-Resistant | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Adhesive Banners | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "catalog-printing",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 307,
+   "pos": 29.71,
+   "current": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
+   "currentEquiv": 61,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Catalog Printing | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Catalog Printing | Saddle-Stitched | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Catalog Printing | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "perfect-bound-books",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 31,
+   "pos": 52.61,
+   "current": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+   "currentEquiv": 62,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Perfect Bound Books | ZprintPro",
+     "equiv": 31,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "31 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Perfect Bound Books | Perfect Bound | ZprintPro",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Perfect Bound Books | ZprintPro",
+     "equiv": 31,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "31 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "spiral-notebooks",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 6,
+   "pos": 24.33,
+   "current": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+   "currentEquiv": 59,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+     "equiv": 59,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "59 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "Spiral Notebooks | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Spiral Notebooks | Perfect Bound | ZprintPro",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Spiral Notebooks | ZprintPro",
+     "equiv": 28,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "28 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "school-flyers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 1,
+   "pos": 5,
+   "current": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "School Flyers | ZprintPro",
+     "equiv": 25,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "25 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "School Flyers | Same-Day Printing | ZprintPro",
+     "equiv": 45,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "45 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "School Flyers | ZprintPro",
+     "equiv": 25,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "25 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 3 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "locale": "zh-hk",
+   "batch": "P2-修剪",
+   "imps": 16,
+   "pos": 5.69,
+   "current": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+   "currentEquiv": 64,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+     "equiv": 64,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "64 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "拼版白卡彩盒印刷 (免刀模費) | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 智印港",
+     "equiv": 49,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "49 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "拼版白卡彩盒印刷 (免刀模費) | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 2 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 7,
+   "pos": 30.29,
+   "current": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
+   "currentEquiv": 90,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C2",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "B",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
+     "equiv": 90,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "90 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | ZprintPro",
+     "equiv": 76,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "76 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 1 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T4",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD | ZprintPro",
+     "equiv": 87,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "87 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"From USD\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T3",
+     "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD | ZprintPro",
+     "equiv": 87,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "87 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"From USD\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": null
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 1,
+   "pos": 6,
+   "current": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+   "currentEquiv": 73,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+     "equiv": 73,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "73 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 保留原钩子 (修剪只做减法, 不新增数字)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "¥3,800〜",
+       "src": "保留原钩子 (修剪只做减法, 不新增数字)"
+      }
+     ],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "合版ホワイトカードボックス (型代不要) | ¥3,800〜 | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 保留原钩子 (修剪只做减法, 不新增数字)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "¥3,800〜",
+       "src": "保留原钩子 (修剪只做减法, 不新增数字)"
+      }
+     ],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "合版ホワイトカードボックス (型代不要) | ¥3,800〜 | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 保留原钩子 (修剪只做减法, 不新增数字)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "¥3,800〜",
+       "src": "保留原钩子 (修剪只做减法, 不新增数字)"
+      }
+     ],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 1 个仍无法落入 50-57) ⇒ 需人工改写"
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 8,
+   "pos": 6.62,
+   "current": "Custom Food Label Stickers | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 59,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Custom Food Label Stickers | Free US Ship | ZprintPro",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Food Label Stickers | 500 MOQ | $0.23 | ZprintPro",
+     "equiv": 56,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "56 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=500 / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "500 MOQ + $0.23",
+       "src": "products.ts minQuantity=500 / products.ts basePrice=0.23"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 500 MOQ+$0.23"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Food Label Stickers | 500 MOQ | ZprintPro",
+     "equiv": 48,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "48 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=500 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "500 MOQ",
+       "src": "products.ts minQuantity=500"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 500 MOQ"
+    },
+    {
+     "variant": "S1_1",
+     "title": "Custom Food Label Stickers | $0.23 | ZprintPro",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts basePrice=0.23 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "$0.23",
+       "src": "products.ts basePrice=0.23"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 $0.23"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Food Label Stickers | 500 MOQ | Free US Ship | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=500 / 线上既有 / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "500 MOQ + Free US Ship",
+       "src": "products.ts minQuantity=500 / 线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 500 MOQ+Free US Ship"
+    },
+    {
+     "variant": "S1_2",
+     "title": "Custom Food Label Stickers | Free US Ship | $0.23 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / prod / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "Free US Ship + $0.23",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类) / products.ts basePrice=0.23"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 2,
+     "hasBarePrice": true,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship+$0.23"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 3,
+   "needsRewrite": null
+  },
+  {
+   "slug": "doujinshi-printing",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 359,
+   "pos": 11.72,
+   "current": "Doujinshi Printing Comiket | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 59,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Doujinshi Printing Comiket | Free US Ship | ZprintPro",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 1,
+   "needsRewrite": null
+  },
+  {
+   "slug": "postcard-set",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": 1,
+   "pos": 11,
+   "current": "Washi Postcard Sets 4-8 pcs | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Washi Postcard Sets 4-8 pcs | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 1,
+   "needsRewrite": null
+  },
+  {
+   "slug": "eco-tote-bag",
+   "locale": "en",
+   "batch": "P2-修剪",
+   "imps": null,
+   "pos": null,
+   "current": "Organic Cotton Eco Tote Bag | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 60,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "mode": "subst",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "candidates": [
+    {
+     "variant": "S1_1",
+     "title": "Organic Cotton Eco Tote Bag | Free US Ship | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: 线上既有短钩子 (en, 14 处在用, 服务承诺类) / 移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "Free US Ship",
+       "src": "线上既有短钩子 (en, 14 处在用, 服务承诺类)"
+      },
+      {
+       "text": "Free Shipping $99+",
+       "src": "移除超长钩子 (18 当量 ⇒ 替换为来源可溯短钩子)"
+      }
+     ],
+     "replCount": 1,
+     "hasBarePrice": false,
+     "variantDesc": "丢 1 长钩子 + 替换 Free US Ship"
+    }
+   ],
+   "longtail": null,
+   "longHooks": 1,
+   "replPool": 1,
+   "needsRewrite": null
+  },
+  {
+   "slug": "graduation-yearbook",
+   "locale": "ja",
+   "batch": "P2-修剪",
+   "imps": 22,
+   "pos": 62.82,
+   "current": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+   "currentEquiv": 69,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 50,
+    "src": "products.ts minQuantity=50"
+   },
+   "mode": "trim",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 50,
+    "src": "products.ts minQuantity=50"
+   },
+   "candidates": [
+    {
+     "variant": "B",
+     "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+     "equiv": 69,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "69 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充, 保修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "A",
+     "title": "卒業記念アルバム印刷 50 冊〜 | ZprintPro",
+     "equiv": 40,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "40 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "删填充+修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "C1",
+     "title": "卒業記念アルバム印刷 50 冊〜 | ZprintPro",
+     "equiv": 40,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "40 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "保前 0 修饰",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T6",
+     "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"中綴じ / 無線綴じ\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T5",
+     "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ | ZprintPro",
+     "equiv": 60,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "60 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"中綴じ / 無線綴じ\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T2",
+     "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ | ZprintPro",
+     "equiv": 49,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "49 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"中綴じ\"",
+     "droppedFillers": []
+    },
+    {
+     "variant": "T1",
+     "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ | ZprintPro",
+     "equiv": 49,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "49 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "1 个要素全附来源: 修剪减法, 未新增数字"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [],
+     "variantDesc": "末段截尾 → \"中綴じ\"",
+     "droppedFillers": []
+    }
+   ],
+   "longtail": null,
+   "fillersFound": [],
+   "needsRewrite": "纯删除无法落入 50-57 (段级+子段级均无解) ⇒ 需人工改写某段 (例: 长段换短钩子), 不猜",
+   "substTried": "「替代」亦无解 (超长钩子 0 个 / 替换池 2 个仍无法落入 50-57) ⇒ 需人工改写"
+  }
+ ]
+}

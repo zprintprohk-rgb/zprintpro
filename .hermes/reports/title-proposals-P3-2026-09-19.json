@@ -1,0 +1,4025 @@
+{
+ "schema": "title-proposals-v1",
+ "generatedFor": "2026-09-19",
+ "batch": "P3",
+ "calibration": "2026-09-19 17:21 UTC",
+ "hardGate": "UNIFIED — 生成器可构建",
+ "rule": {
+  "min": 50,
+  "max": 57,
+  "hardMax": 58
+ },
+ "counts": {
+  "slots": 40,
+  "generated": 40,
+  "skipped": 0,
+  "candidates": 80,
+  "allPass": 15
+ },
+ "results": [
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 2,
+   "pos": 8,
+   "current": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "currentEquiv": 48,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "透明ステッカー | 防水 PVC ダイカット | 10枚〜 ¥51〜 | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=51"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "¥51〜",
+       "src": "products.ts basePrice=51"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "透明ステッカー | 10枚〜 ¥51〜 | ZprintPro",
+     "equiv": 41,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "41 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=51"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "¥51〜",
+       "src": "products.ts basePrice=51"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 21,
+   "pos": 14.48,
+   "current": "蛍光ステッカー | 防水 PVC ダイカット | ZprintPro",
+   "currentEquiv": 48,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "蛍光ステッカー | 防水 PVC ダイカット | 10枚〜 ¥60〜 | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=60"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "¥60〜",
+       "src": "products.ts basePrice=60"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "蛍光ステッカー | 10枚〜 ¥60〜 | ZprintPro",
+     "equiv": 41,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "41 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=60"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "¥60〜",
+       "src": "products.ts basePrice=60"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "white-card-bags",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 15,
+   "pos": 4.13,
+   "current": "白卡紙袋 | 100%環保 多尺寸 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "白卡紙袋 | 100%環保 多尺寸 | 100個起 HK$12起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "白卡紙袋 | 100個起 HK$12起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "white-card-bags",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 12,
+   "pos": 3.83,
+   "current": "白カード紙袋 | エコ素材 多サイズ | ZprintPro",
+   "currentEquiv": 44,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "白カード紙袋 | エコ素材 多サイズ | 100枚〜 ¥360〜 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=360"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥360〜",
+       "src": "products.ts basePrice=360"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "白カード紙袋 | 100枚〜 ¥360〜 | ZprintPro",
+     "equiv": 41,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "41 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=360"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥360〜",
+       "src": "products.ts basePrice=360"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "eco-paper-bags",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 20,
+   "pos": 12.25,
+   "current": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
+   "currentEquiv": 40,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "エコ紙袋 | エコ素材 多サイズ | 100枚〜 ¥240〜 | ZprintPro",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=240"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥240〜",
+       "src": "products.ts basePrice=240"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "エコ紙袋 | 100枚〜 ¥240〜 | ZprintPro",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=240"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥240〜",
+       "src": "products.ts basePrice=240"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "large-bags",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 8,
+   "pos": 18.12,
+   "current": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
+   "currentEquiv": 40,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "大型紙袋 | エコ素材 多サイズ | 100枚〜 ¥450〜 | ZprintPro",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=450"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥450〜",
+       "src": "products.ts basePrice=450"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "大型紙袋 | 100枚〜 ¥450〜 | ZprintPro",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=450"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥450〜",
+       "src": "products.ts basePrice=450"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 16,
+   "pos": 7.94,
+   "current": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "currentEquiv": 46,
+   "moq": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "A4 チラシ | 両面フルカラー 100枚〜 | 100枚〜 ¥70〜 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / products.ts basePrice=70"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+      },
+      {
+       "text": "¥70〜",
+       "src": "products.ts basePrice=70"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "A4 チラシ | 100枚〜 ¥70〜 | ZprintPro",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / products.ts basePrice=70"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+      },
+      {
+       "text": "¥70〜",
+       "src": "products.ts basePrice=70"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 26,
+   "pos": 8.19,
+   "current": "厚身單張 | 雙面四色 100張起 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "厚身單張 | 10個起 HK$0.45起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自 / products.ts basePrice=0.45"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$0.45起",
+       "src": "products.ts basePrice=0.45"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "厚身單張 | 10個起 HK$0.45起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自 / products.ts basePrice=0.45"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$0.45起",
+       "src": "products.ts basePrice=0.45"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "eco-flyers",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 1,
+   "pos": 4,
+   "current": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro",
+   "currentEquiv": 47,
+   "moq": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "LOCALE_SPECIFIC_KEEP",
+    "value": 100,
+    "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "エコチラシ | 両面フルカラー 100枚〜 | 100枚〜 ¥75〜 | ZprintPro",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / products.ts basePrice=75"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+      },
+      {
+       "text": "¥75〜",
+       "src": "products.ts basePrice=75"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "エコチラシ | 100枚〜 ¥75〜 | ZprintPro",
+     "equiv": 38,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "38 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: locale-specific 现值=100 (同簇 (flyers / products.ts basePrice=75"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "locale-specific 现值=100 (同簇 (flyers/ja) 7/7 条一致声称 100 (≥5) 且与全局真值 10 不同 ⇒ 市)"
+      },
+      {
+       "text": "¥75〜",
+       "src": "products.ts basePrice=75"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 11,
+   "pos": 9.64,
+   "current": "A1 ポスター | 防水 翌日配送 | ZprintPro",
+   "currentEquiv": 39,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1,
+    "src": "products.ts minQuantity=1"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1,
+    "src": "products.ts minQuantity=1"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro",
+     "equiv": 54,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "54 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1 / products.ts basePrice=600"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "1枚〜",
+       "src": "products.ts minQuantity=1"
+      },
+      {
+       "text": "¥600〜",
+       "src": "products.ts basePrice=600"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "A1 ポスター | 1枚〜 ¥600〜 | ZprintPro",
+     "equiv": 38,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "38 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1 / products.ts basePrice=600"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1枚〜",
+       "src": "products.ts minQuantity=1"
+      },
+      {
+       "text": "¥600〜",
+       "src": "products.ts basePrice=600"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "outdoor-posters",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 24,
+   "pos": 7.67,
+   "current": "戶外海報 | 防水材質 即日速遞 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "戶外海報 | 防水材質 即日速遞 | 100個起 HK$16起 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "戶外海報 | 100個起 HK$16起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "display-posters",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 9,
+   "pos": 6.22,
+   "current": "展架海報 | 防水材質 即日速遞 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "展架海報 | 防水材質 即日速遞 | 100個起 HK$32起 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=32"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$32起",
+       "src": "products.ts basePrice=32"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "展架海報 | 100個起 HK$32起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=32"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$32起",
+       "src": "products.ts basePrice=32"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "art-posters",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 28,
+   "pos": 16.46,
+   "current": "藝術海報 | 防水材質 即日速遞 | 智印港",
+   "currentEquiv": 37,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1,
+    "src": "products.ts minQuantity=1"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1,
+    "src": "products.ts minQuantity=1"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1 / products.ts basePrice=26"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "1個起",
+       "src": "products.ts minQuantity=1"
+      },
+      {
+       "text": "HK$26起",
+       "src": "products.ts basePrice=26"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "藝術海報 | 1個起 HK$26起 | 智印港",
+     "equiv": 33,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "33 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1 / products.ts basePrice=26"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1個起",
+       "src": "products.ts minQuantity=1"
+      },
+      {
+       "text": "HK$26起",
+       "src": "products.ts basePrice=26"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 3,
+   "pos": 36.67,
+   "current": "粘着ポスター | 防水 翌日配送 | ZprintPro",
+   "currentEquiv": 40,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "粘着ポスター | 防水 翌日配送 | 100枚〜 ¥390〜 | ZprintPro",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=390"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥390〜",
+       "src": "products.ts basePrice=390"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "粘着ポスター | 100枚〜 ¥390〜 | ZprintPro",
+     "equiv": 41,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "41 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=390"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥390〜",
+       "src": "products.ts basePrice=390"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "folding-boxes",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 14,
+   "pos": 5.07,
+   "current": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "折疊禮盒 | 燙金 UV 100%訂製 | 100個起 HK$2.5起 | 智印港",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=2.5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$2.5起",
+       "src": "products.ts basePrice=2.5"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "折疊禮盒 | 100個起 HK$2.5起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=2.5"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$2.5起",
+       "src": "products.ts basePrice=2.5"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "foil-red-packets",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 4,
+   "pos": 3.5,
+   "current": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
+   "currentEquiv": 45,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "箔押し年賀状 | 箔押し UV エンボス | 100枚〜 ¥64〜 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=64"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥64〜",
+       "src": "products.ts basePrice=64"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "箔押し年賀状 | 100枚〜 ¥64〜 | ZprintPro",
+     "equiv": 40,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "40 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=64"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥64〜",
+       "src": "products.ts basePrice=64"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "embossed-red-packets",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 5,
+   "pos": 10,
+   "current": "浮雕利是封 | 燙金 UV 壓紋 | 智印港",
+   "currentEquiv": 34,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港",
+     "equiv": 51,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "51 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "浮雕利是封 | 100個起 HK$3起 | 智印港",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "custom-red-packets",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 8,
+   "pos": 7,
+   "current": "custom red packets | 燙金 UV 壓紋 | 智印港",
+   "currentEquiv": 42,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "custom red packets | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=1.9"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": false,
+       "detail": "zh-hk 标题含**英文短语**「custom red packets」⇒ 跨市场语义错配 (非规格/单位/品牌, 应换为同语言钩子)"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$1.9起",
+       "src": "products.ts basePrice=1.9"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "custom red packets | 100個起 HK$1.9起 | 智印港",
+     "equiv": 46,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "46 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=1.9"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": false,
+       "detail": "zh-hk 标题含**英文短语**「custom red packets」⇒ 跨市场语义错配 (非规格/单位/品牌, 应换为同语言钩子)"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$1.9起",
+       "src": "products.ts basePrice=1.9"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "desk-calendars",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 35,
+   "pos": 30.4,
+   "current": "座檯年曆 | 企業禮品 多款式 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "座檯年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "1000個起",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "座檯年曆 | 1000個起 HK$3起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1000個起",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "custom-calendars",
+   "locale": "en",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 7,
+   "pos": 55.29,
+   "current": "Custom Calendars | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 49,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "Custom Calendars | Free Shipping $99+ | 1000 MOQ $0.4 | ZprintPro",
+     "equiv": 65,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "65 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=0.4"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1000 MOQ",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "$0.4",
+       "src": "products.ts basePrice=0.4"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "Custom Calendars | 1000 MOQ $0.4 | ZprintPro",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=0.4"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1000 MOQ",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "$0.4",
+       "src": "products.ts basePrice=0.4"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "magnetic-calendars",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 15,
+   "pos": 4.4,
+   "current": "磁吸年曆 | 企業禮品 多款式 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 1000,
+    "src": "products.ts minQuantity=1000"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "磁吸年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "1000個起",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "磁吸年曆 | 1000個起 HK$3起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=1000 / products.ts basePrice=3"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "1000個起",
+       "src": "products.ts minQuantity=1000"
+      },
+      {
+       "text": "HK$3起",
+       "src": "products.ts basePrice=3"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 5,
+   "pos": 15.2,
+   "current": "PVC menu | 防水 ラミネート | ZprintPro",
+   "currentEquiv": 38,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "PVC menu | 防水 ラミネート | 100枚〜 ¥386〜 | ZprintPro",
+     "equiv": 55,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "55 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=386"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥386〜",
+       "src": "products.ts basePrice=386"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "PVC menu | 100枚〜 ¥386〜 | ZprintPro",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=386"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥386〜",
+       "src": "products.ts basePrice=386"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "laminated-menus",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 5,
+   "pos": 20.4,
+   "current": "ラミネート menu | 防水 ラミネート | ZprintPro",
+   "currentEquiv": 45,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "ラミネート menu | 防水 ラミネート | 100枚〜 ¥258〜 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=258"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥258〜",
+       "src": "products.ts basePrice=258"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "ラミネート menu | 100枚〜 ¥258〜 | ZprintPro",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=258"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥258〜",
+       "src": "products.ts basePrice=258"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "hardcover-menus",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 10,
+   "pos": 6.9,
+   "current": "精裝餐牌 | 防水 覆膜 50本起 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "精裝餐牌 | 100個起 HK$28起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=28"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$28起",
+       "src": "products.ts basePrice=28"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "精裝餐牌 | 100個起 HK$28起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=28"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$28起",
+       "src": "products.ts basePrice=28"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "drink-menus",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 13,
+   "pos": 6.77,
+   "current": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港",
+   "currentEquiv": 38,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "餐廳酒水牌 | 100個起 HK$12起 | 智印港",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "餐廳酒水牌 | 100個起 HK$12起 | 智印港",
+     "equiv": 37,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "37 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值  / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "K3 裁决真值=100 (★ 同上 (c18107a0 餐牌 真值 100))"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "disposable-menus",
+   "locale": "en",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 2,
+   "pos": 43,
+   "current": "Disposable Menus | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 49,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "Disposable Menus | Free Shipping $99+ | 100 MOQ $0.14 | ZprintPro",
+     "equiv": 65,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "65 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.14"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100 MOQ",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "$0.14",
+       "src": "products.ts basePrice=0.14"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "Disposable Menus | 100 MOQ $0.14 | ZprintPro",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.14"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100 MOQ",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "$0.14",
+       "src": "products.ts basePrice=0.14"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 88,
+   "pos": 52.09,
+   "current": "戶外橫幅 | 鋁合金支架 高清 | 智印港",
+   "currentEquiv": 35,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "戶外橫幅 | 鋁合金支架 高清 | 100個起 HK$12起 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "戶外橫幅 | 100個起 HK$12起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=12"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$12起",
+       "src": "products.ts basePrice=12"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "mesh-banners",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 15,
+   "pos": 7.4,
+   "current": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港",
+   "currentEquiv": 39,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "網孔布易拉寶 | 鋁合金支架 高清 | 100個起 HK$16起 | 智印港",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": true,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "網孔布易拉寶 | 100個起 HK$16起 | 智印港",
+     "equiv": 39,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "39 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100個起",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "perfect-bound-books",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 19,
+   "pos": 9.21,
+   "current": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 智印港",
+   "currentEquiv": 49,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 10個起 HK$16起 | 智印港",
+     "equiv": 66,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "66 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 10個起 HK$16起 | 智印港",
+     "equiv": 66,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "66 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=16"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$16起",
+       "src": "products.ts basePrice=16"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "hardcover-books",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 10,
+   "pos": 9.5,
+   "current": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 智印港",
+   "currentEquiv": 49,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 10個起 HK$40起 | 智印港",
+     "equiv": 66,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "66 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=40"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$40起",
+       "src": "products.ts basePrice=40"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 10個起 HK$40起 | 智印港",
+     "equiv": 66,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "66 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=40"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$40起",
+       "src": "products.ts basePrice=40"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "spiral-notebooks",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 27,
+   "pos": 7.41,
+   "current": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港",
+   "currentEquiv": 40,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "線圈筆記本 | 10個起 HK$8起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "線圈筆記本 | 10個起 HK$8起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证 / products.ts basePrice=8"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$8起",
+       "src": "products.ts basePrice=8"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "pearl-envelopes",
+   "locale": "en",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 4,
+   "pos": 20.25,
+   "current": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
+   "currentEquiv": 48,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "Pearl Envelopes | Free Shipping $99+ | 100 MOQ $0.46 | ZprintPro",
+     "equiv": 64,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "64 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.46"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100 MOQ",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "$0.46",
+       "src": "products.ts basePrice=0.46"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "Pearl Envelopes | 100 MOQ $0.46 | ZprintPro",
+     "equiv": 43,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "43 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=0.46"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100 MOQ",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "$0.46",
+       "src": "products.ts basePrice=0.46"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "pearl-envelopes",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 22,
+   "pos": 4.18,
+   "current": "パール封筒 | 両面印刷 マルチサイズ | ZprintPro",
+   "currentEquiv": 46,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 100,
+    "src": "products.ts minQuantity=100"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "パール封筒 | 両面印刷 マルチサイズ | 100枚〜 ¥64〜 | ZprintPro",
+     "equiv": 62,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "62 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=64"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥64〜",
+       "src": "products.ts basePrice=64"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "パール封筒 | 100枚〜 ¥64〜 | ZprintPro",
+     "equiv": 38,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "38 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=100 / products.ts basePrice=64"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "products.ts minQuantity=100"
+      },
+      {
+       "text": "¥64〜",
+       "src": "products.ts basePrice=64"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "exercise-books",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 2,
+   "pos": 25.5,
+   "current": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+   "currentEquiv": 43,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | 10枚〜 ¥258〜 | ZprintPro",
+     "equiv": 59,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "59 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证 / products.ts basePrice=258"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "¥258〜",
+       "src": "products.ts basePrice=258"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "練習帳 | 10枚〜 ¥258〜 | ZprintPro",
+     "equiv": 34,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "34 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证 / products.ts basePrice=258"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10枚〜",
+       "src": "K3 裁决真值=10 (声称 50 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "¥258〜",
+       "src": "products.ts basePrice=258"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "school-flyers",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 41,
+   "pos": 23.95,
+   "current": "學校單張 | 雙面四色 100張起 | 智印港",
+   "currentEquiv": 36,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 10,
+    "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "學校單張 | 10個起 HK$0.2起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自 / products.ts basePrice=0.2"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$0.2起",
+       "src": "products.ts basePrice=0.2"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "學校單張 | 10個起 HK$0.2起 | 智印港",
+     "equiv": 35,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "35 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自 / products.ts basePrice=0.2"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "K3 裁决真值=10 (声称 100 != 真值 10; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "HK$0.2起",
+       "src": "products.ts basePrice=0.2"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "textbooks",
+   "locale": "ja",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 18,
+   "pos": 47.61,
+   "current": "教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+   "currentEquiv": 43,
+   "moq": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (声称 50 != 真值 100; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_RULING_TRUTH",
+    "value": 100,
+    "src": "K3 裁决真值=100 (声称 50 != 真值 100; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "教科書 | 中綴じ/無線綴じ 50冊〜 | 100枚〜 ¥1288〜 | ZprintPro",
+     "equiv": 61,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "61 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (声称 50 != 真值 100; 无产品线 / products.ts basePrice=1288"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "K3 裁决真值=100 (声称 50 != 真值 100; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "¥1288〜",
+       "src": "products.ts basePrice=1288"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "教科書 | 100枚〜 ¥1288〜 | ZprintPro",
+     "equiv": 36,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "36 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: K3 裁决真值=100 (声称 50 != 真值 100; 无产品线 / products.ts basePrice=1288"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "100枚〜",
+       "src": "K3 裁决真值=100 (声称 50 != 真值 100; 无产品线自证、簇内一致 <4 ⇒ 判漂移)"
+      },
+      {
+       "text": "¥1288〜",
+       "src": "products.ts basePrice=1288"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "minimal",
+   "imps": 46,
+   "pos": 40.46,
+   "current": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港",
+   "currentEquiv": 47,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 500,
+    "src": "products.ts minQuantity=500"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 500個起 HK$0.22起 | 智印港",
+     "equiv": 67,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "67 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=500 / products.ts basePrice=0.22"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "500個起",
+       "src": "products.ts minQuantity=500"
+      },
+      {
+       "text": "HK$0.22起",
+       "src": "products.ts basePrice=0.22"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "水果及食品標籤印刷 | 500個起 HK$0.22起 | 智印港",
+     "equiv": 47,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "47 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=500 / products.ts basePrice=0.22"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "500個起",
+       "src": "products.ts minQuantity=500"
+      },
+      {
+       "text": "HK$0.22起",
+       "src": "products.ts basePrice=0.22"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  },
+  {
+   "slug": "can-badge",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 12,
+   "pos": 9.67,
+   "current": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備",
+   "currentEquiv": 44,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 智印港",
+     "equiv": 53,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "53 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "0 个要素全附来源: "
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": false,
+       "detail": "zh-hk 含日文假名"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": []
+    },
+    {
+     "variant": "C",
+     "title": "罐型襟章印刷 57mm 76mm | 智印港",
+     "equiv": 31,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "31 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "0 个要素全附来源: "
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": []
+    }
+   ],
+   "pool": 0,
+   "longtail": null
+  },
+  {
+   "slug": "eco-tote-bag",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 1,
+   "pos": 5,
+   "current": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選",
+   "currentEquiv": 48,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": null,
+    "src": "products.ts minQuantity=null"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選 | 智印港",
+     "equiv": 57,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": true,
+       "detail": "57 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "0 个要素全附来源: "
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": false,
+       "detail": "zh-hk 含日文假名"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": []
+    },
+    {
+     "variant": "C",
+     "title": "環保托特袋 有機棉 100% | 智印港",
+     "equiv": 31,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "31 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "0 个要素全附来源: "
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": []
+    }
+   ],
+   "pool": 0,
+   "longtail": null
+  },
+  {
+   "slug": "thick-greeting-cards-400g",
+   "locale": "zh-hk",
+   "batch": "P3-低优先",
+   "tier": "full",
+   "imps": 4,
+   "pos": 3.25,
+   "current": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港",
+   "currentEquiv": 45,
+   "moq": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "mode": "fill",
+   "ms": {
+    "status": "USE_PRODUCTS_TRUTH",
+    "value": 10,
+    "src": "products.ts minQuantity=10"
+   },
+   "candidates": [
+    {
+     "variant": "A",
+     "title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 10個起 HK$1.2起 | 智印港",
+     "equiv": 63,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "63 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.2"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.2起",
+       "src": "products.ts basePrice=1.2"
+      }
+     ]
+    },
+    {
+     "variant": "C",
+     "title": "400g 超厚名片印刷 | 10個起 HK$1.2起 | 智印港",
+     "equiv": 44,
+     "gates": [
+      {
+       "id": "G1_当量",
+       "pass": false,
+       "detail": "44 当量 (目标 50-58, ≥58 硬拦)"
+      },
+      {
+       "id": "G2_数字来源",
+       "pass": true,
+       "detail": "2 个要素全附来源: products.ts minQuantity=10 / products.ts basePrice=1.2"
+      },
+      {
+       "id": "G3_语言纯净",
+       "pass": true,
+       "detail": "ok"
+      },
+      {
+       "id": "G4_品牌规范",
+       "pass": true,
+       "detail": "品牌 x1, 末尾=true"
+      }
+     ],
+     "allPass": false,
+     "trace": [
+      {
+       "text": "10個起",
+       "src": "products.ts minQuantity=10"
+      },
+      {
+       "text": "HK$1.2起",
+       "src": "products.ts basePrice=1.2"
+      }
+     ]
+    }
+   ],
+   "pool": 2,
+   "longtail": null
+  }
+ ]
+}

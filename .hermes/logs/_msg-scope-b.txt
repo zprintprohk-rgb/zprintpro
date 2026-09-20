@@ -1,0 +1,54 @@
+feat(gate): 門童 #24 條件式掃描域 B 案 (K3 2026-09-20 裁決) + set -e 提示不可達修正
+
+K3 裁決: 掃描域三案選 **B（條件式）**。
+
+問題（兩邊都不是最優）:
+ · 舊行為 = 掃描 worktree 全 5 檔（非 staged-only）→ 併發會話正在編輯 seo.ts /
+   category-seo-content.ts 中途留下的漂移，會**誤攔與其無關的提交**。
+ · 純 staged-only（社群 best practice）→ **真值級聯會盲掉**：一般 linter 假設「檔案彼此獨立」，
+   但本閘門 5 個目標檔**不獨立**（有真值依賴）。只 stage 真值源 products.ts 時，
+   其他 4 檔的過期文案掃不到 → 不一致直接上線（**本波 MOQ 事故的根因類型**）。
+ ⇒ 條件式：staged 含真值源 products.ts → **全 5 檔級聯檢查**；
+           否則只掃 **staged ∩ 5 個目標檔**（消除併發誤攔）。
+
+實作（範圍判定寫在 Node，不寫在 hook 的 bash）:
+ · scripts/moq10-books-context-scan.ts 新增 `--staged`（自動判定）與 `--files <csv>`（顯式，供測試）
+ · 為什麼不放 bash：本 hook 第 18 行有 `set -e`，且 Git for Windows 的 sh 對外部工具
+   （paste/tr）可用性不保證；放 Node 可用 --files 直接單元測試，零可移植性風險。
+ · **掃描域一律顯式揭露**：新增 `[SCOPE]` 行 + 「本次為局部掃描，未掃檔案 ≠ 已檢查通過」提示，
+   並在範圍為空時輸出 `[GATE] SKIP — …（≠ 已檢查通過）` 而非 PASS
+   （per 本專案血淚教訓：「0 命中 ≠ 乾淨」）
+ · 品類級段落掃描只在 category-seo-content.ts 於範圍內時才跑（範圍外掃 = 又製造誤攔）
+
+順帶修正（本輪新發現，實測非推論）:
+ · 本 hook 有 `set -e`，而既有區塊寫 `cmd; if [ $? -ne 0 ]` → 語句級失敗會**立即退出**，
+   後面的 `if` 永遠到不了 ⇒ **修法提示不可達**，只留一個無說明的 exit 1。
+   實測（C:\Program Files\Git\bin\bash.exe）: `set -e; false; if [ $? -ne 0 ]; then echo B; fi; echo C`
+   → 只印 A、exit=1（B/C 都不印）。
+ · 已修正本輪自己新增的 3.6 / 3.7 兩塊（改用 `if ! cmd; then`，exit code 仍為 1）。
+ · **其餘 3 處（L26/L49/L62）刻意未動**：hook 的 exit code 有 lane 映射語義
+   （§0.35.4: `4` = pre-commit guard 拦下 src commit），未經確認就改有破壞映射的風險
+   → 另案處理，不夾在本批。
+
+壓測（.hermes/logs/_test-moq-scope-b.mjs，4/4 通過；exit code 為判據）:
+ 方法：staged 集合用**獨立臨時 index** 偽造（GIT_INDEX_FILE + git update-index --cacheinfo），
+       完全不動真實 index、不動任何檔內容；worktree 漂移則可逆偽造 + finally 還原 + sha256 比對。
+ · ②a staged 含目標檔 + worktree 有未登錄漂移 → FAIL（局部掃描仍攔得住）
+ · ②b staged=[README.md]（不含目標檔）+ 同一漂移 → **SKIP**（★ 舊行為會 FAIL = 誤攔，已消除）
+ · ②c staged 含真值源 → 強制全 5 檔 → FAIL（★ 真值級聯保留）
+ · ②d 真值源 staged + worktree 乾淨 → 全 5 檔 PASS（不製造假紅）
+ · 還原完整性：sha256 31c62e0517298b09 前後位元一致、工作區 0 殘留
+
+本 commit 含 4 檔: scripts/moq10-books-context-scan.ts / .githooks/pre-commit /
+scripts/canonical/pre-commit（兩支保持逐字一致，#26 會驗）/ .hermes/logs/_test-moq-scope-b.mjs
+未觸及 src/ 內容，未動任何 MOQ 文案數字。
+
+訂正記錄（同批內自查發現，誠實留痕）:
+ 首版提交（5a4cfcd3，未 push）誤含 6 檔 —— 併發車道已先把
+ `docs/2026-09-20-handover-living-book.md` 與 `scripts/audit-sku-orphans.cjs` **staged**，
+ 而本批 `git add` 後**仍直接 `git commit`（無 pathspec）** → 把他人 staged 變更**代持入庫**
+ （違反 §0.35.7「禁止代持他人 staged 變更」），且訊息只聲稱 4 檔、與樹不符。
+ 修法: `git reset --soft HEAD~1`（不動 worktree / index 內容）→ 改以
+ **`git commit -F <msg> -- <4 個路徑>`（pathspec 限定）** 重新提交，他車道 2 檔維持 staged 原狀歸還。
+ 教訓: `SAFECOMMIT_ATOMIC` 的「add 後複核」**看到外來 staged 項就必須中止**，
+ 不能「看了一眼仍照推」；只要倉庫存在併發會話，**一律用 pathspec 提交**。

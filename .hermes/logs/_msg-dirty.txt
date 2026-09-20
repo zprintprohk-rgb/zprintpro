@@ -1,0 +1,31 @@
+chore(gate)+docs: WORKSPACE_DIRTY_OVERFLOW 規則 + 髒檔三分類盤點器（只讀）
+
+背景: 本輪我在 error-patterns.md 的同族欄留下一個**懸空引用**（引用了尚未建立的
+ WORKSPACE_DIRTY_OVERFLOW），本 commit 清掉它——DoD 铁律「No fix without a rule」的自我要求。
+
+規則內容（WORKSPACE_DIRTY_OVERFLOW）:
+ · 實測 `git status --porcelain` 638 條（本輪量測；先前記載 599，期間併發車道續增），
+   絕大多數是 .hermes/ 下未追蹤的備份目錄 + 生成報告。
+ · 5 條風險：真實改動被淹沒 / 掩蓋併發會話改動 / 「乾淨」判據失真 / 備份目錄被誤當資產 /
+   push 前盤點失效。
+ · 為什麼屬本族：與 HOOK_SSOT_ACTIVE_DIVERGENCE **同源** —— 「以為的狀態」與「實際的狀態」偏離，
+   且偏離本身不產生任何報錯（前者是「以為有門禁」，本條是「以為工作區乾淨」）。
+ · 修法順序不可顛倒：**先量 → 再分類 → 最後才動**；分類結果交 K3 裁決，
+   執行層**不擅自刪**（本專案已發生過「一方清理掃掉另一方 staged 變更」，per §0.35.7）。
+
+工具（scripts/audit-workspace-dirty.mjs）:
+ · 三分類：A 已追蹤未提交（**真實改動，最需要看**）／B 未追蹤·建議 .gitignore 或需人工判斷／
+   C 未追蹤·疑似可刪（備份 / 壞檔 / 一次性探針）
+ · **只讀**：不刪、不移動、不改 .gitignore、不 git add（鐵律寫在檔頭與輸出）
+ · `--threshold <N>` → 未追蹤條數超閾即 exit 1（WORKSPACE_DIRTY_OVERFLOW 告警機制）
+ · 落盤 .hermes/reports/workspace-dirty-audit.json
+
+實跑（本輪）:
+ · 總 638 = 已追蹤 20 + 未追蹤 618；A 類 20 條中即含**併發車道當下正在改的檔**
+   （docs/2026-09-20-handover-living-book.md / scripts/audit-sku-orphans.cjs 等）
+   → 這正是 §0.35.7「掩蓋併發會話改動」風險的實物證據
+ · 閾值分支實測：`--threshold 1` → 印 WORKSPACE_DIRTY_OVERFLOW 並 exit 1
+
+本 commit 含 2 檔: .hermes/regression-guard/error-patterns.md（+37 行，僅本條）/
+ scripts/audit-workspace-dirty.mjs（新增）
+本輪**未刪除任何檔案**（分類與清理留待 K3 裁決後獨立一輪）。

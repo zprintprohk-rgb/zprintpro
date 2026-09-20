@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-19T18:38:51.863Z",
- "online": true,
+ "generated_at": "2026-09-19T18:39:38.970Z",
+ "online": false,
  "site": "https://zprintpro.com",
  "segments": [
   {
@@ -178,6 +178,15 @@
   },
   {
    "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "en",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -274,6 +283,15 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "en",
@@ -376,6 +394,15 @@
   },
   {
    "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "en",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -475,6 +502,15 @@
   },
   {
    "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "en",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -571,6 +607,15 @@
    "status": "PASS",
    "evidence": "10 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -673,6 +718,15 @@
   },
   {
    "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "ja",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -769,6 +823,15 @@
    "status": "PASS",
    "evidence": "18 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -871,6 +934,15 @@
   },
   {
    "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -970,6 +1042,15 @@
   },
   {
    "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "ja",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1066,6 +1147,15 @@
    "status": "PASS",
    "evidence": "10 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -1168,6 +1258,15 @@
   },
   {
    "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "zh-hk",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1264,6 +1363,15 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -1366,6 +1474,15 @@
   },
   {
    "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+  },
+  {
+   "locale": "zh-hk",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1462,6 +1579,15 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -1564,138 +1690,12 @@
   },
   {
    "locale": "zh-hk",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=194",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=184",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=194",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=193",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "zh-hk",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=216743",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
-  },
-  {
-   "locale": "en",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=215",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "en",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=216",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "en",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[HowTo,Organization,Article,FAQPage,BreadcrumbList] blocks=6+5 len=189",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "en",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=231",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "en",
-   "slug": "foil-stamping-3-applications-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=250564",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
-  },
-  {
-   "locale": "ja",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=188",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "ja",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=181",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "ja",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[HowTo,Organization,Article,FAQPage,BreadcrumbList] blocks=6+5 len=166",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "ja",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "重复渲染: Article,BreadcrumbList,FAQPage,HowTo 同时存在于生成区与 content 注入区 | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=6+5 len=196",
-   "reason": "strip content 内嵌 JSON-LD（先确认生成区 FAQPage 已存在）"
-  },
-  {
-   "locale": "ja",
-   "slug": "foil-stamping-3-applications-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "FAIL",
-   "evidence": "page.tsx 生成块缺 FAQPage | generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,HowTo] 内嵌=[Article,FAQPage,BreadcrumbList,HowTo,Organization] blocks=5+5 len=213977",
-   "reason": "补 FAQPage（FAQPage 缺失多为正文 FAQ 格式不可解析 → 见段 9）"
+   "status": "SKIP",
+   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
+   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   }
  ]
 }

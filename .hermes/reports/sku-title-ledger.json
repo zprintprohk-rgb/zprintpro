@@ -3,15 +3,15 @@
  "updatedAt": "2026-09-19",
  "rule": {
   "min": 50,
-  "max": 58,
+  "max": 57,
   "sov": "scripts/guards/title-equiv.js"
  },
  "gatePhase": "YELLOW_WARN",
  "escalateThreshold": 10,
  "counts": {
-  "open": 115,
-  "fixed": 3,
-  "total": 118
+  "open": 42,
+  "fixed": 84,
+  "total": 126
  },
  "entries": {
   "waterproof-stickers|zh-hk": {
@@ -30,7 +30,8 @@
    "issues": [],
    "gscImps": 304,
    "gscPos": 9.44,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "waterproof-stickers|en": {
    "slug": "waterproof-stickers",
@@ -48,7 +49,8 @@
    "issues": [],
    "gscImps": 80,
    "gscPos": 40.46,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "waterproof-stickers|ja": {
    "slug": "waterproof-stickers",
@@ -66,7 +68,8 @@
    "issues": [],
    "gscImps": 138,
    "gscPos": 15.18,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "transparent-stickers|zh-hk": {
    "slug": "transparent-stickers",
@@ -84,7 +87,8 @@
    "issues": [],
    "gscImps": 184,
    "gscPos": 15.78,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "transparent-stickers|en": {
    "slug": "transparent-stickers",
@@ -102,7 +106,8 @@
    "issues": [],
    "gscImps": 30,
    "gscPos": 36.57,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "transparent-stickers|ja": {
    "slug": "transparent-stickers",
@@ -138,7 +143,8 @@
    "issues": [],
    "gscImps": 126,
    "gscPos": 10.7,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "small-batch-stickers|zh-hk": {
    "slug": "small-batch-stickers",
@@ -156,7 +162,8 @@
    "issues": [],
    "gscImps": 18,
    "gscPos": 6.61,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "small-batch-stickers|en": {
    "slug": "small-batch-stickers",
@@ -174,7 +181,8 @@
    "issues": [],
    "gscImps": 396,
    "gscPos": 17.81,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "small-batch-stickers|ja": {
    "slug": "small-batch-stickers",
@@ -192,7 +200,8 @@
    "issues": [],
    "gscImps": 26,
    "gscPos": 22.88,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "foil-stickers|zh-hk": {
    "slug": "foil-stickers",
@@ -210,7 +219,8 @@
    "issues": [],
    "gscImps": 102,
    "gscPos": 5.74,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "security-stickers|zh-hk": {
    "slug": "security-stickers",
@@ -228,7 +238,8 @@
    "issues": [],
    "gscImps": 37,
    "gscPos": 6.43,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "fluorescent-stickers|zh-hk": {
    "slug": "fluorescent-stickers",
@@ -246,7 +257,8 @@
    "issues": [],
    "gscImps": 33,
    "gscPos": 3.58,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "fluorescent-stickers|en": {
    "slug": "fluorescent-stickers",
@@ -264,7 +276,8 @@
    "issues": [],
    "gscImps": 71,
    "gscPos": 15.37,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "fluorescent-stickers|ja": {
    "slug": "fluorescent-stickers",
@@ -282,7 +295,8 @@
    "issues": [],
    "gscImps": 21,
    "gscPos": 14.48,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "kraft-paper-bags|zh-hk": {
    "slug": "kraft-paper-bags",
@@ -300,7 +314,8 @@
    "issues": [],
    "gscImps": 130,
    "gscPos": 11.17,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "white-card-bags|zh-hk": {
    "slug": "white-card-bags",
@@ -318,7 +333,8 @@
    "issues": [],
    "gscImps": 15,
    "gscPos": 4.13,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "white-card-bags|ja": {
    "slug": "white-card-bags",
@@ -336,7 +352,8 @@
    "issues": [],
    "gscImps": 12,
    "gscPos": 3.83,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "gift-bags|zh-hk": {
    "slug": "gift-bags",
@@ -354,7 +371,8 @@
    "issues": [],
    "gscImps": 31,
    "gscPos": 12.74,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "eco-paper-bags|zh-hk": {
    "slug": "eco-paper-bags",
@@ -390,7 +408,8 @@
    "issues": [],
    "gscImps": 20,
    "gscPos": 12.25,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "handle-bags|zh-hk": {
    "slug": "handle-bags",
@@ -408,7 +427,8 @@
    "issues": [],
    "gscImps": 199,
    "gscPos": 15.91,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "small-bags|zh-hk": {
    "slug": "small-bags",
@@ -462,7 +482,8 @@
    "issues": [],
    "gscImps": 187,
    "gscPos": 17.18,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "large-bags|ja": {
    "slug": "large-bags",
@@ -480,7 +501,8 @@
    "issues": [],
    "gscImps": 8,
    "gscPos": 18.12,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a4-flyers|en": {
    "slug": "a4-flyers",
@@ -498,7 +520,8 @@
    "issues": [],
    "gscImps": 36,
    "gscPos": 13.81,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a4-flyers|ja": {
    "slug": "a4-flyers",
@@ -516,7 +539,8 @@
    "issues": [],
    "gscImps": 16,
    "gscPos": 7.94,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a5-flyers|en": {
    "slug": "a5-flyers",
@@ -534,7 +558,8 @@
    "issues": [],
    "gscImps": 26,
    "gscPos": 12.12,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "a5-flyers|ja": {
    "slug": "a5-flyers",
@@ -570,7 +595,8 @@
    "issues": [],
    "gscImps": 65,
    "gscPos": 29.68,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "folded-leaflets|zh-hk": {
    "slug": "folded-leaflets",
@@ -588,7 +614,8 @@
    "issues": [],
    "gscImps": 113,
    "gscPos": 24.25,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "folded-leaflets|en": {
    "slug": "folded-leaflets",
@@ -624,7 +651,8 @@
    "issues": [],
    "gscImps": 26,
    "gscPos": 8.19,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "thick-paper-flyers|ja": {
    "slug": "thick-paper-flyers",
@@ -660,7 +688,8 @@
    "issues": [],
    "gscImps": 93,
    "gscPos": 40.39,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "eco-flyers|ja": {
    "slug": "eco-flyers",
@@ -674,7 +703,7 @@
    ],
    "lastSeen": "2026-09-19",
    "band": "FILL",
-   "equiv": 47,
+   "equiv": 46,
    "issues": [],
    "gscImps": 1,
    "gscPos": 4,
@@ -755,7 +784,8 @@
    "issues": [],
    "gscImps": 11,
    "gscPos": 9.64,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "outdoor-posters|zh-hk": {
    "slug": "outdoor-posters",
@@ -773,7 +803,8 @@
    "issues": [],
    "gscImps": 24,
    "gscPos": 7.67,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "display-posters|zh-hk": {
    "slug": "display-posters",
@@ -791,7 +822,8 @@
    "issues": [],
    "gscImps": 9,
    "gscPos": 6.22,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "art-posters|zh-hk": {
    "slug": "art-posters",
@@ -809,7 +841,8 @@
    "issues": [],
    "gscImps": 28,
    "gscPos": 16.46,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "adhesive-posters|zh-hk": {
    "slug": "adhesive-posters",
@@ -827,7 +860,8 @@
    "issues": [],
    "gscImps": 34,
    "gscPos": 4.79,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "adhesive-posters|ja": {
    "slug": "adhesive-posters",
@@ -845,7 +879,8 @@
    "issues": [],
    "gscImps": 3,
    "gscPos": 36.67,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "cosmetic-boxes|zh-hk": {
    "slug": "cosmetic-boxes",
@@ -881,7 +916,8 @@
    "issues": [],
    "gscImps": 30,
    "gscPos": 6.6,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "food-boxes|en": {
    "slug": "food-boxes",
@@ -917,7 +953,8 @@
    "issues": [],
    "gscImps": 43,
    "gscPos": 35.93,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "mailer-boxes|zh-hk": {
    "slug": "mailer-boxes",
@@ -935,7 +972,8 @@
    "issues": [],
    "gscImps": 72,
    "gscPos": 7.72,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "folding-boxes|zh-hk": {
    "slug": "folding-boxes",
@@ -953,7 +991,8 @@
    "issues": [],
    "gscImps": 14,
    "gscPos": 5.07,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "rigid-boxes|zh-hk": {
    "slug": "rigid-boxes",
@@ -971,7 +1010,8 @@
    "issues": [],
    "gscImps": 49,
    "gscPos": 8.69,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "foil-red-packets|ja": {
    "slug": "foil-red-packets",
@@ -1007,7 +1047,8 @@
    "issues": [],
    "gscImps": 5,
    "gscPos": 10,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "custom-red-packets|zh-hk": {
    "slug": "custom-red-packets",
@@ -1115,7 +1156,8 @@
    "issues": [],
    "gscImps": 35,
    "gscPos": 30.4,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "desk-calendars|en": {
    "slug": "desk-calendars",
@@ -1223,7 +1265,8 @@
    "issues": [],
    "gscImps": 15,
    "gscPos": 4.4,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "pvc-menus|zh-hk": {
    "slug": "pvc-menus",
@@ -1241,7 +1284,8 @@
    "issues": [],
    "gscImps": 53,
    "gscPos": 9.13,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "pvc-menus|ja": {
    "slug": "pvc-menus",
@@ -1259,7 +1303,8 @@
    "issues": [],
    "gscImps": 5,
    "gscPos": 15.2,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "laminated-menus|zh-hk": {
    "slug": "laminated-menus",
@@ -1277,7 +1322,8 @@
    "issues": [],
    "gscImps": 55,
    "gscPos": 7.38,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "laminated-menus|en": {
    "slug": "laminated-menus",
@@ -1295,7 +1341,8 @@
    "issues": [],
    "gscImps": 9,
    "gscPos": 50.33,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "laminated-menus|ja": {
    "slug": "laminated-menus",
@@ -1313,7 +1360,8 @@
    "issues": [],
    "gscImps": 5,
    "gscPos": 20.4,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "hardcover-menus|zh-hk": {
    "slug": "hardcover-menus",
@@ -1331,7 +1379,8 @@
    "issues": [],
    "gscImps": 10,
    "gscPos": 6.9,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "hardcover-menus|en": {
    "slug": "hardcover-menus",
@@ -1349,7 +1398,8 @@
    "issues": [],
    "gscImps": 22,
    "gscPos": 60.59,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "drink-menus|zh-hk": {
    "slug": "drink-menus",
@@ -1367,7 +1417,8 @@
    "issues": [],
    "gscImps": 13,
    "gscPos": 6.77,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "disposable-menus|en": {
    "slug": "disposable-menus",
@@ -1385,7 +1436,8 @@
    "issues": [],
    "gscImps": 2,
    "gscPos": 43,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "disposable-menus|ja": {
    "slug": "disposable-menus",
@@ -1403,7 +1455,8 @@
    "issues": [],
    "gscImps": null,
    "gscPos": null,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "outdoor-vinyl-banners|zh-hk": {
    "slug": "outdoor-vinyl-banners",
@@ -1421,7 +1474,8 @@
    "issues": [],
    "gscImps": 88,
    "gscPos": 52.09,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "roll-up-banners|en": {
    "slug": "roll-up-banners",
@@ -1493,7 +1547,8 @@
    "issues": [],
    "gscImps": 15,
    "gscPos": 7.4,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "catalog-printing|zh-hk": {
    "slug": "catalog-printing",
@@ -1513,7 +1568,8 @@
    ],
    "gscImps": 98,
    "gscPos": 14.5,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "catalog-printing|en": {
    "slug": "catalog-printing",
@@ -1531,7 +1587,8 @@
    "issues": [],
    "gscImps": 307,
    "gscPos": 29.71,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "perfect-bound-books|zh-hk": {
    "slug": "perfect-bound-books",
@@ -1607,7 +1664,8 @@
    "issues": [],
    "gscImps": 27,
    "gscPos": 7.41,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "spiral-notebooks|en": {
    "slug": "spiral-notebooks",
@@ -1643,7 +1701,8 @@
    "issues": [],
    "gscImps": 77,
    "gscPos": 5.3,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "colored-envelopes|ja": {
    "slug": "colored-envelopes",
@@ -1679,7 +1738,8 @@
    "issues": [],
    "gscImps": 96,
    "gscPos": 5.27,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "pearl-envelopes|en": {
    "slug": "pearl-envelopes",
@@ -1715,7 +1775,8 @@
    "issues": [],
    "gscImps": 22,
    "gscPos": 4.18,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "exercise-books|zh-hk": {
    "slug": "exercise-books",
@@ -1733,7 +1794,8 @@
    "issues": [],
    "gscImps": 159,
    "gscPos": 6.65,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "exercise-books|ja": {
    "slug": "exercise-books",
@@ -1771,7 +1833,8 @@
    ],
    "gscImps": 112,
    "gscPos": 10.63,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "school-flyers|zh-hk": {
    "slug": "school-flyers",
@@ -1789,7 +1852,8 @@
    "issues": [],
    "gscImps": 41,
    "gscPos": 23.95,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "school-flyers|en": {
    "slug": "school-flyers",
@@ -1825,7 +1889,8 @@
    "issues": [],
    "gscImps": 18,
    "gscPos": 47.61,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "magnetic-closure-gift-box|zh-hk": {
    "slug": "magnetic-closure-gift-box",
@@ -1861,7 +1926,8 @@
    "issues": [],
    "gscImps": 253,
    "gscPos": 49.51,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "kraft-paper-packaging-box|zh-hk": {
    "slug": "kraft-paper-packaging-box",
@@ -1879,7 +1945,8 @@
    "issues": [],
    "gscImps": 67,
    "gscPos": 32.57,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "gang-run-card-boxes|zh-hk": {
    "slug": "gang-run-card-boxes",
@@ -1915,7 +1982,8 @@
    "issues": [],
    "gscImps": 7,
    "gscPos": 30.29,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "gang-run-card-boxes|ja": {
    "slug": "gang-run-card-boxes",
@@ -1969,7 +2037,8 @@
    "issues": [],
    "gscImps": 8,
    "gscPos": 6.62,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "doujinshi-printing|zh-hk": {
    "slug": "doujinshi-printing",
@@ -2008,7 +2077,8 @@
    "issues": [],
    "gscImps": 359,
    "gscPos": 11.72,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "can-badge|zh-hk": {
    "slug": "can-badge",
@@ -2048,7 +2118,8 @@
    "issues": [],
    "gscImps": 1,
    "gscPos": 11,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "eco-tote-bag|zh-hk": {
    "slug": "eco-tote-bag",
@@ -2088,7 +2159,8 @@
    "issues": [],
    "gscImps": null,
    "gscPos": null,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   },
   "graduation-yearbook|ja": {
    "slug": "graduation-yearbook",
@@ -2164,7 +2236,162 @@
    ],
    "gscImps": 30,
    "gscPos": 11.07,
-   "status": "OPEN"
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "removable-stickers|en": {
+   "slug": "removable-stickers",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 60,
+   "gscPos": 40.65,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "same-day-flyers|ja": {
+   "slug": "same-day-flyers",
+   "locale": "ja",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [
+    "品牌不在末尾"
+   ],
+   "gscImps": 91,
+   "gscPos": 26.16,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "adhesive-posters|en": {
+   "slug": "adhesive-posters",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 79,
+   "gscPos": 39.76,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "drink-menus|en": {
+   "slug": "drink-menus",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 13,
+   "gscPos": 20,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "hardcover-books|en": {
+   "slug": "hardcover-books",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 13,
+   "gscPos": 46.54,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "magnetic-closure-gift-box|en": {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 34,
+   "gscPos": 33.94,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "electronics-packaging-box|en": {
+   "slug": "electronics-packaging-box",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 41,
+   "gscPos": 21.39,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
+  },
+  "kraft-paper-packaging-box|en": {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "en",
+   "firstSeen": "2026-09-19",
+   "equivHistory": [
+    {
+     "date": "2026-09-19",
+     "equiv": 58
+    }
+   ],
+   "lastSeen": "2026-09-19",
+   "band": "TRIM",
+   "equiv": 58,
+   "issues": [],
+   "gscImps": 50,
+   "gscPos": 32.68,
+   "status": "FIXED",
+   "fixedOn": "2026-09-19"
   }
  }
 }
