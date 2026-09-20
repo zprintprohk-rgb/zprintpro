@@ -403,6 +403,10 @@ function render(rows) {
   console.log(`[口径] FAIL = 段级不合格; WARN = 需人工判定; SKIP = 本模式未测（不算通过）; INVALID = 测量无效（绝不算通过）`);
 }
 
+// 2026-09-20 修复 (自进化探针实测抓到): 原为顶层 IIFE ⇒ **被 require 时会执行 main 并 process.exit**,
+//   使 require 式冒烟测试 / 其他脚本引用本门童时**被静默终止** (其他门童均有 require.main 守卫, 本文件漏了)。
+//   修法: 加 require.main 守卫; 导出不变 (run / checkPillar / PILLAR_SLUGS / SEGMENTS / extractFaq)。
+if (require.main === module) {
 (async function main() {
   const argv = process.argv.slice(2);
   // ZP_SKIP_ONLINE=1 = 仅跳过线上断言 (网络问题时用), 离线段级检查仍执行 —— 但段 12 会退化为 SKIP (不算通过)
@@ -512,5 +516,6 @@ function render(rows) {
   const failed = rows.some(x => x.status === 'FAIL' || (online && x.status === 'INVALID'));
   process.exit(failed ? 1 : 0);
 })();
+}
 
 module.exports = { run, checkPillar: checkSegmentsOffline, PILLAR_SLUGS, SEGMENTS, extractFaq };
