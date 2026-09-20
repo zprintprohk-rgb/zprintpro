@@ -32,6 +32,19 @@ export interface Product {
   isHot: boolean;
   isNew: boolean;
   minQuantity: number;
+  /**
+   * 起訂量顯示單位（K3 2026-09-20 裁決：按品類區分，不統一為「本」）。
+   *
+   * 為什麼需要：起訂量在不同品類的量詞不同——餐牌用「張/份」、精裝用「本」、
+   *   貼紙用「張」。原先展示層一律以「本」組句（見 getDisplayMinOrder*），
+   *   對餐牌/貼紙類不自然。
+   *
+   * 市場依據（K3 提供）：PVC 餐牌 print88king 用「張」、精裝香港印刷中心用「本」、
+   *   紙質餐牌 design-easy/高碧 用「張」、酒水單市場無明確慣例（用「份」較通用）。
+   *
+   * ★ 向後兼容：未設定時**沿用既有「本」**（現行展示層行為），不影響其他品類。
+   */
+  unitLabel?: string;
   turnaround?: string;
   images: string[];
   imagesByLocale?: {
@@ -4794,6 +4807,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
+    unitLabel: '張',
     images: ['/images/products/pvc-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4868,6 +4882,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
+    unitLabel: '份',
     images: ['/images/products/laminated-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4963,6 +4978,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
+    unitLabel: '本',
     images: ['/images/products/hardcover-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5059,6 +5075,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
+    unitLabel: '份',
     images: ['/images/products/drink-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5152,6 +5169,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
+    unitLabel: '份',
     images: ['/images/products/disposable-menus.jpg'],
   imagesByLocale: {
     'zh-hk': [

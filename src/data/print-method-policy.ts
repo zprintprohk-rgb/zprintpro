@@ -168,10 +168,63 @@ export const PAPER_GOODS_MOQ_AEO: Record<Locale, { q: string; a: string }> = {
 };
 
 /**
+ * 起訂量**單位**的語系對照（K3 2026-09-20 裁決：按品類區分，不統一為「本」）。
+ *
+ * 為什麼需要獨立映射：`products.ts` 的 `unitLabel` 存的是**中文量詞**（張／本／份，客戶可見的
+ * 中文口徑），但同一數量的英文/日文量詞不同（張→sheets、本→books、份→sets）。
+ * 若直接拿中文量詞去組英文句會出現「10 張 MOQ」這種混語。
+ *
+ * 市場依據（K3）：PVC 餐牌用「張」、精裝用「本」、紙質餐牌用「張」、酒水單用「份」。
+ */
+const UNIT_LOCALE_MAP: Record<string, { en: string; ja: string }> = {
+  張: { en: 'sheets', ja: '枚' },
+  本: { en: 'books', ja: '冊' },
+  份: { en: 'sets', ja: '部' },
+  個: { en: 'pcs', ja: '個' },
+};
+
+/** 取該 SKU 的顯示單位（中文量詞）；未設定時回傳 undefined（呼叫端沿用既有行為） */
+export function getUnitLabel(slug: string): string | undefined {
+  return products.find((p) => p.slug === slug)?.unitLabel;
+}
+
+/** 依語系取單位詞；未設定或未知量詞時回傳 null（呼叫端沿用既有「本」口徑） */
+export function getUnitLabelFor(locale: Locale, slug: string): string | null {
+  const zh = getUnitLabel(slug);
+  if (!zh) return null;
+  if (locale === 'en' || locale === 'ja') return UNIT_LOCALE_MAP[zh]?.[locale] ?? null;
+  return zh;
+}
+
+/**
+ * 依 SKU 的 `unitLabel` 把「數量」組成帶單位的起訂量文案。
+ * 未設定 unitLabel 的 SKU → 回傳 null（呼叫端沿用既有「本」組句，向後兼容）。
+ *
+ * 例：`composeMoqLabel('zh-hk', 'pvc-menus', 10)` → `「10 張起」`
+ */
+export function composeMoqLabel(locale: Locale, slug: string, minQuantity: number): string | null {
+  const unit = getUnitLabelFor(locale, slug);
+  if (!unit) return null;
+  switch (locale) {
+    case 'en':
+      return `${minQuantity} ${unit}`;
+    case 'ja':
+      return `${minQuantity}${unit}から`;
+    default:
+      return `${minQuantity} ${unit}起`;
+  }
+}
+
+/**
  * 該 SKU 的 PDP／品類頁「起印量」顯示值。
  * 優先序：紙品線小批量（10） > 數碼線書刊（1 本） > 原樣 minQuantity。
+ *
+ * ★ 2026-09-20：若該 SKU 設有 `unitLabel`，改以 `composeMoqLabel()` 組句
+ *   （餐牌用「張/份」、精裝用「本」）；未設定者行為完全不變（向後兼容）。
  */
 export function getDisplayMinOrderV2(locale: Locale, slug: string, minQuantity: number): string {
+  const withUnit = composeMoqLabel(locale, slug, minQuantity);
+  if (withUnit) return withUnit;
   if (isPaperGoodsSmallBatch(slug)) return String(PAPER_GOODS_MOQ);
   return getDisplayMinOrder(locale, slug, minQuantity);
 }
