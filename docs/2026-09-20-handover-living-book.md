@@ -521,3 +521,23 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 
 **併發備忘**：02:39 併發會話 eb2aa6f3（E3 數據來源行批）與本批 zero 衝突合流；教训 = 併發期 git add 高頻共享文件（blog-data）前，先確認自己未提交改動是否被「順車」帶走（本次為正向順車，反向即成覆寫——參見本節 geo-atom 事故條）。
 **線上斷言結果（28deec1a 部署後實測 PASS 7/7）**：小冊子指南 FAQ「印刷小冊子要多少錢」✅ · small-batch desc「10 張起印」✅ · 月曆 SKU「1000 本起印」無 50 殘留 ✅ · 年曆指南博客「迷你月曆 1000 本起印」✅ · en sticker-guide「within 1 hour」✅ · ja sticker-guide「1 時間以内」✅ · 食品包裝指南「1 小時內免費數碼打稿」✅。本批 push：c8fb19f9+d106ba13+28deec1a（eb2aa6f3 由併發會話先行上推）。
+
+### 2026-09-21 03:20 · MOQ 殘留族續清批（K3 02:59「繼續」）— commit 368f0e3d（+ blog-data 層隨併發會話併入）
+
+**落地 47+ 處 / 16 規則（應用器 `scripts/apply-moq-residual-batch-20260921.mjs`，scoped 到 post/句級 + 冪等 + 計數斷言）**：
+- **月曆口徑 1000**：sku-seo-data faq ×4（custom/mini/photo-frame/magnetic calendars——原登記外新發現）+ 品類層 meta「50本起訂→1000」+ socialProof stat「50本起→1000本起」+ 假標籤「數碼小批量都接→批量訂製都接」+ ja 日曆博客 (?<!\d)50部→1000部 ×10 + en 日曆博客 50pc/50-pc/50 pcs 族 ×7（title/快速答案/FAQ/內鏈錨）。
+- **書刊數據真值 10**（catalog/saddle-stitch-booklets/perfect-bound/hardcover minQ=10 實證）：products-content ×4 + zh 畫冊指南博客 ×6 + page.tsx render 層 + zh 紙材指南（教材 50→10 ×4 + MOQ 階梯括注）+ en/ja 紙材指南教材句 + ja 教科書指南小冊子 50冊→10冊 ×2（教科書 100冊=true KEEP）+ zh/en 教科書指南小冊子 + 菜單指南硬皮精裝 50→10（hardcover-menus minQ=10）。
+
+**應用器自身三連坑（已寫進避坑，值得全文記錄）**：
+1. **返回對象缺 `changed` 字段 → 寫入步跳過**（R1/R2/R3/R4/R10 首跑「已寫入」實未寫，grep 復查才發現——「腳本報成功 ≠ 文件已變更」，與 geo-atom 條同族）。
+2. **同文件多規則基於同一舊快照 out 互相覆寫**（R4 把 R3 的 meta 修正蓋回 50）→ 修法 = 每條規則前重讀文件串行執行。
+3. **冪等斷言** = c===expect（首跑）或 c===0（已應用）皆過，只有「命中但數不對」攔截——保護性中止防半批寫入。
+
+**數據真值核查記錄（SOP-10 第 3 款）**：textbooks minQ=100（教科書指南「100 本起」=true KEEP）· exercise-books=10 · catalog=10 · graduation-yearbook=**50（copy=data 真值，未動）**· hardcover-menus=10 · wedding-invitation 族 10/50 混雜。
+
+**KEEP/FLAG 未動（待 K3）**：
+- 🔴 **畢業紀念冊族**（products-content 11401/11415、sku-seo-data 3243/3245/3268/3269、品類 socialProof「50本起/50本開班」）：copy 與數據層 minQ=50 一致——若按「數碼 1 本起」統一口徑，需**改報價引擎數據層**（非內容批權限），請 K3 單獨拍板。
+- 🟡 en 婚礼指南「50pc MOQ」：wedding SKU minQ 10/50 混雜，blanket 50 不準、改 10 也不準，需按 SKU 表逐個對。
+- 🟡 ja 紙材指南「特殊紙 50部から對應」：紙材能力宣言非單一 SKU 口徑，無數據真值可對。
+- 🟢 ja 價格基線「婚禮文具 50部から」：**真實分層陳述**（日曆 1000/婚禮 50/同人 4-10），無誤，KEEP。
+- 🟡 offset 500 階層主張（en/ja 日曆博客「offset 500 minimum」「オフセット500部」）：與 minQ=1000 引擎口徑張力，屬價格階層經濟學主張，改需 K3 定價真值。
