@@ -1,0 +1,200 @@
+{
+ "batch": [
+  {
+   "slug": "same-day-flyers",
+   "slots": {
+    "ja": "即日チラシ印刷｜¥125〜・100枚〜・無料デザイン｜ZprintPro"
+   },
+   "src": {
+    "ja": 58,
+    "note": "products.ts: basePrice_ja 125; 只改「から→〜」措辞, 数字钩子原样保留"
+   }
+  },
+  {
+   "slug": "adhesive-posters",
+   "slots": {
+    "en": "Adhesive Posters Wall Art | Free Ship $99+ | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "措辞缩短; $99+ 为 K3 2026-07-18 拍板真实参数, 数值语义不动"
+   }
+  },
+  {
+   "slug": "removable-stickers",
+   "slots": {
+    "en": "Custom Removable Stickers | Free Ship $99+ | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "同上; 主词 Custom Removable Stickers 一字不改"
+   }
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "slots": {
+    "en": "Kraft Paper Packaging Box | Free Ship $99+ | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "同上; 主词一字不改"
+   }
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "slots": {
+    "en": "Electronics Packaging Box | Free Ship $99+ | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "同上; 主词一字不改"
+   }
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "slots": {
+    "en": "Magnetic Closure Gift Box | Free Ship $99+ | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "同上; 主词一字不改"
+   }
+  },
+  {
+   "slug": "drink-menus",
+   "slots": {
+    "en": "Drink Menus | Waterproof | Free US Ship | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "products.ts name 含 防水PVC + features[0] 防水防油; 与 zh-hk manual-1 口径一致"
+   }
+  },
+  {
+   "slug": "hardcover-books",
+   "slots": {
+    "en": "Hardcover Books | Case Bound | Free US Ship | ZprintPro"
+   },
+   "src": {
+    "en": 58,
+    "note": "specs.material 硬紙板封面裱糊 = casing-in ⇒ Case Bound 为准确工艺名; 原 Perfect Bound 误标"
+   }
+  }
+ ],
+ "changed": [
+  {
+   "slug": "same-day-flyers",
+   "locale": "ja",
+   "oldTitle": "即日チラシ印刷｜¥125〜・100枚から・無料デザイン｜ZprintPro",
+   "newTitle": "即日チラシ印刷｜¥125〜・100枚〜・無料デザイン｜ZprintPro"
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "en",
+   "oldTitle": "Adhesive Posters Wall Art | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Adhesive Posters Wall Art | Free Ship $99+ | ZprintPro"
+  },
+  {
+   "slug": "removable-stickers",
+   "locale": "en",
+   "oldTitle": "Custom Removable Stickers | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Custom Removable Stickers | Free Ship $99+ | ZprintPro"
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "en",
+   "oldTitle": "Kraft Paper Packaging Box | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Kraft Paper Packaging Box | Free Ship $99+ | ZprintPro"
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "locale": "en",
+   "oldTitle": "Electronics Packaging Box | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Electronics Packaging Box | Free Ship $99+ | ZprintPro"
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "en",
+   "oldTitle": "Magnetic Closure Gift Box | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Magnetic Closure Gift Box | Free Ship $99+ | ZprintPro"
+  },
+  {
+   "slug": "drink-menus",
+   "locale": "en",
+   "oldTitle": "Drink Menus | Laminated Durable | Free US Ship | ZprintPro",
+   "newTitle": "Drink Menus | Waterproof | Free US Ship | ZprintPro"
+  },
+  {
+   "slug": "hardcover-books",
+   "locale": "en",
+   "oldTitle": "Hardcover Books | Perfect Bound | Free US Ship | ZprintPro",
+   "newTitle": "Hardcover Books | Case Bound | Free US Ship | ZprintPro"
+  }
+ ],
+ "rows": [
+  {
+   "slug": "same-day-flyers",
+   "locale": "ja",
+   "was": 58,
+   "to": "即日チラシ印刷｜¥125〜・100枚〜・無料デザイン｜ZprintPro",
+   "equiv": 56,
+   "ok": true
+  },
+  {
+   "slug": "adhesive-posters",
+   "locale": "en",
+   "was": 58,
+   "to": "Adhesive Posters Wall Art | Free Ship $99+ | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "removable-stickers",
+   "locale": "en",
+   "was": 58,
+   "to": "Custom Removable Stickers | Free Ship $99+ | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "en",
+   "was": 58,
+   "to": "Kraft Paper Packaging Box | Free Ship $99+ | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "locale": "en",
+   "was": 58,
+   "to": "Electronics Packaging Box | Free Ship $99+ | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "en",
+   "was": 58,
+   "to": "Magnetic Closure Gift Box | Free Ship $99+ | ZprintPro",
+   "equiv": 54,
+   "ok": true
+  },
+  {
+   "slug": "drink-menus",
+   "locale": "en",
+   "was": 58,
+   "to": "Drink Menus | Waterproof | Free US Ship | ZprintPro",
+   "equiv": 51,
+   "ok": true
+  },
+  {
+   "slug": "hardcover-books",
+   "locale": "en",
+   "was": 58,
+   "to": "Hardcover Books | Case Bound | Free US Ship | ZprintPro",
+   "equiv": 55,
+   "ok": true
+  }
+ ]
+}
