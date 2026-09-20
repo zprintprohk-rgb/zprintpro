@@ -12,7 +12,9 @@
         "seo:check": "node scripts/check-category-seo-completeness.js",
         "sku:check": "npx tsx scripts/check-product-sku-completeness.ts",
         "attribution:check": "npx tsx scripts/verify-lead-attribution.ts",
-        "scenario:check": "npx tsx scripts/verify-scenario-links.ts"
+        "scenario:check": "npx tsx scripts/verify-scenario-links.ts",
+        "prepare": "node scripts/install-hooks.mjs",
+        "hooks:check": "node scripts/install-hooks.mjs --check"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.3.4",
