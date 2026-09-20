@@ -500,3 +500,9 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 **并发情况**：batch C 锁 TTL 超时接管（SESSION_LOCK 有声明）；并发 geo-atom 会话 staged 产物（apply-geo-atom-section.cjs + blog-data geo 段）与 blog 同文件，随本批一并提交（攒批，无法也不应拆分——禁代删他人 staged）。
 
 **窗后队列（9/30 验证窗结束执行）**：small-batch-stickers en title「50 pcs」→ 10 pcs（#18 唯一遗留）+ 品类页 title 差异化（paper-bags 等）。
+
+**🔴 geo-atom 并发覆写事故实录（避坑新案例：apply 后被旧副本覆写）**：
+- 02:13:42 本批 `--apply` 完成 blog-data 三语修复 → 02:17:55 **geo-atom 并发会话用其开工前的旧副本覆写了 blog-data 三语 json**（其自身产物为正常 staged 追加，非恶意）→ 04c8539e（02:21 push / CF build success）**博客层 = 旧版**（无 2h→1h 修复、无小冊子 FAQ）。SKU 层（sku-seo-data.ts）不在其覆写范围，幸存上线（HEAD 实证 small-batch desc 已是「10 張起印」）。
+- **恢复**：`scripts/apply-l1-window-batch-20260921.mjs --blog-only --apply` 从备份重放（zh 10 / en 3 / ja 3，0 failures），geo-atom 产物确认保留（'geo-atom'/'data-geo' 标记在——此前查 'geoAtom' 大小写有误判，教训：grep 标记先确认实际写法）。
+- **教训固化**：① 共享高频文件（blog-data 三语 json）跨会话写入 = apply 后仍可能被旧副本覆写，push 前必须 `git diff --cached` 抽查关键修复是否真在暂存里；② 「已 apply」≠「已生效」——覆写发生在 apply 与 commit 之间，收尾信号（§0.35.7 双条件）之外需加一条：**commit 前对应用器的目标命中串做暂存区断言**。commit `c8fb19f9`（博客层重放）。
+- **线上断言（push c8fb19f9 后）**：见下条追加（本批 push 后回填）。
