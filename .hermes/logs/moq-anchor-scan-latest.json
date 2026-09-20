@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-09-20T07:33:14",
+  "scannedAt": "2026-09-20T08:31:41",
   "skuCount": 94,
   "skuScanned": 94,
   "skuNoAnchor": [],
@@ -8,11 +8,11 @@
     "segments": 0,
     "anchorHit": 4015,
     "moqHit": 498,
-    "pairs": 265,
+    "pairs": 244,
     "skuScanned": 94,
     "skuNoAnchor": 0
   },
-  "total": 265,
+  "total": 244,
   "ambiguous": 94,
   "findings": [
     {
@@ -177,16 +177,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 163,
-      "slug": "small-batch-stickers",
-      "truth": 10,
-      "found": 50,
-      "anchor": "小批量貼紙",
-      "ambiguous": false,
-      "text": " \"ja\": \"小ロットステッカー\" }, \"seo\": { \"zh-hk\": { \"title\": \"小批量貼紙 50 張起 HK$0.45 | 防水 PVC 異形切割 | 智印港\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 168,
       "slug": "small-batch-stickers",
       "truth": 10,
@@ -194,16 +184,6 @@
       "anchor": "小批量貼紙",
       "ambiguous": false,
       "text": " \"description\": \"小批量貼紙印刷 50 張起印 HK$0.45/張, 無開版費。防水 PVC / 透明 BOPP / 銅版紙 3 大材質, 異形切割 + 燙金 + UV 表面處理。3-5 天交貨, 免費 2 小時數碼打稿, 港九新界 HK$500 免費順豐。30 秒 AI 報價, W"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 41,
-      "slug": "small-batch-stickers",
-      "truth": 10,
-      "found": 50,
-      "anchor": "小ロットステッカー",
-      "ambiguous": false,
-      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -517,26 +497,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 41,
-      "slug": "double-sided-flyers",
-      "truth": 10,
-      "found": 100,
-      "anchor": "両面チラシ",
-      "ambiguous": false,
-      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 800,
-      "slug": "double-sided-flyers",
-      "truth": 10,
-      "found": 100,
-      "anchor": "両面チラシ",
-      "ambiguous": false,
-      "text": " \"description\": \"両面カラー印刷 両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 801,
       "slug": "double-sided-flyers",
       "truth": 10,
@@ -617,16 +577,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 41,
-      "slug": "same-day-flyers",
-      "truth": 10,
-      "found": 100,
-      "anchor": "即日チラシ",
-      "ambiguous": false,
-      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 923,
       "slug": "same-day-flyers",
       "truth": 10,
@@ -674,16 +624,6 @@
       "anchor": "環保傳單印刷",
       "ambiguous": false,
       "text": " \"description\": \"環保傳單印刷/環保印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 41,
-      "slug": "eco-flyers",
-      "truth": 10,
-      "found": 100,
-      "anchor": "エコチラシ",
-      "ambiguous": false,
-      "text": "Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA p"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1307,16 +1247,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2016,
-      "slug": "laminated-menus",
-      "truth": 10,
-      "found": 50,
-      "anchor": "過膠餐牌",
-      "ambiguous": false,
-      "text": " \"ja\": \"ラミネートメニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"過膠餐牌 | 防水 覆膜 50本起 | 智印港\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2021,
       "slug": "laminated-menus",
       "truth": 10,
@@ -1327,26 +1257,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2041,
-      "slug": "laminated-menus",
-      "truth": 10,
-      "found": 100,
-      "anchor": "ラミネートメニュー",
-      "ambiguous": false,
-      "text": "**Q1: ラミネートメニューの最小注文数は？**\\n最小注文は100枚から。即日少量の急ぎは10枚から対応し、大量注文は段階割引の対象です。\\n\\n"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2059,
-      "slug": "hardcover-menus",
-      "truth": 10,
-      "found": 50,
-      "anchor": "精裝餐牌",
-      "ambiguous": false,
-      "text": " \"ja\": \"高級メニュー\" }, \"seo\": { \"zh-hk\": { \"title\": \"精裝餐牌 | 防水 覆膜 50本起 | 智印港\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2064,
       "slug": "hardcover-menus",
       "truth": 10,
@@ -1354,16 +1264,6 @@
       "anchor": "精裝餐牌",
       "ambiguous": false,
       "text": " \"description\": \"精裝餐牌/精裝餐牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2084,
-      "slug": "hardcover-menus",
-      "truth": 10,
-      "found": 100,
-      "anchor": "高級メニュー",
-      "ambiguous": false,
-      "text": "**Q1: 高級メニューの最小注文数は？**\\nZprintProのほとんどの商品は50〜100冊からの最小注文です。即日少量の急ぎは10部から対応。大量注文は段階割引があります。\\n\\n"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1422,16 +1322,6 @@
       "truth": 10,
       "found": 100,
       "anchor": "ドリンクメニュー",
-      "ambiguous": false,
-      "text": "**Q1: ドリンクメニューの最小注文数は？**\\n最小注文は100枚からご注文いただけます。即日少量の急ぎは10枚から対応。大量注文は段階割引があり、詳細はお問い合わせください。\\n\\n"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2126,
-      "slug": "drink-menus",
-      "truth": 10,
-      "found": 100,
-      "anchor": "ドリンクメニュー",
       "ambiguous": true,
       "text": "お店の雰囲気に合う、洗練されたドリンクメニューをお求めならZprintProへ。無料レイアウトサービスと日本語サポートで、初めての方でも安心してご注文いただけます。ぜひお問い合わせください。\" } }, \"faqs\": [ ], \"imageAlt\": { \"zh-hk\": \"一般為10個起訂，一次"
     },
@@ -1464,16 +1354,6 @@
       "anchor": "使い捨てメニュー",
       "ambiguous": false,
       "text": " \"description\": \"使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2164,
-      "slug": "disposable-menus",
-      "truth": 100,
-      "found": 10,
-      "anchor": "使い捨てメニュー",
-      "ambiguous": false,
-      "text": "**Q1: 使い捨てメニューの最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100枚からの最小注文です。即日少量の急ぎは10枚から対応。大量注文は段階割引があり、お気軽にお問い合わせください。\\n\\n"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1557,16 +1437,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2522,
-      "slug": "hardcover-books",
-      "truth": 10,
-      "found": 50,
-      "anchor": "ハードカバー書籍",
-      "ambiguous": false,
-      "text": "Start your keepsake today — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \\\"30-second AI quote\\\" but"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2526,
       "slug": "hardcover-books",
       "truth": 10,
@@ -1574,26 +1444,6 @@
       "anchor": "ハードカバー書籍",
       "ambiguous": false,
       "text": " \"description\": \"ハードカバー書籍のハードカバー書籍は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2530,
-      "slug": "hardcover-books",
-      "truth": 10,
-      "found": 100,
-      "anchor": "ハードカバー書籍",
-      "ambiguous": false,
-      "text": "**Q1: 最小注文数はいくつですか？**\\nZprintProのほとんどの商品は50〜100個/部/枚からご注文可能です。ハードカバー書籍は100冊から承ります。大量注文には段階割引があります。\\n\\n"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 2560,
-      "slug": "spiral-notebooks",
-      "truth": 10,
-      "found": 50,
-      "anchor": "スパイラルノート",
-      "ambiguous": false,
-      "text": "Put your brand on something people use daily — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \\\"30-se"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1707,16 +1557,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 2820,
-      "slug": "certificates",
-      "truth": 100,
-      "found": 10,
-      "anchor": "証明書印刷",
-      "ambiguous": false,
-      "text": "**FAQ**\\n**Q1: 証明書印刷の最小注文数はいくつですか？**\\nA1: ZprintPro のほとんどの商品は 50〜100 部/枚からの最小注文です。証明書は 100 枚から承り、少量でお急ぎの場合は 10 枚から対応可能です。大量注文は段階割引がありますので、お気軽にお問い合わせくだ"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 2831,
       "slug": "school-flyers",
       "truth": 10,
@@ -1817,16 +1657,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 3409,
-      "slug": "graduation-yearbook",
-      "truth": 50,
-      "found": 100,
-      "anchor": "社團特刊",
-      "ambiguous": false,
-      "text": " \"a\": \"校友會刊 / 社團特刊 100 本起印, 支持班級照片 + 師長題詞 + 學校 logo 全頁\" }, { \"q\": \"膠裝精裝比較\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 3418,
       "slug": "premium-greeting-cards",
       "truth": 10,
@@ -1847,16 +1677,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 3635,
-      "slug": "matte-greeting-cards",
-      "truth": 10,
-      "found": 100,
-      "anchor": "Matte Greeting Cards",
-      "ambiguous": false,
-      "text": "收費透明：啞膜賀卡售價為 HK$110-190/100張，最低訂量 100 張起，價格以港幣計算，大量訂購另享優惠，歡迎查詢批量報價。\" }, \"en\": { \"title\": \"Matte Greeting Cards 100pcs Soft-Touch | ZprintPro\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 3675,
       "slug": "rounded-corner-greeting-cards",
       "truth": 10,
@@ -1864,16 +1684,6 @@
       "anchor": "圓角賀卡",
       "ambiguous": false,
       "text": " \"ja\": \"角丸グリーティングカード\" }, \"seo\": { \"zh-hk\": { \"title\": \"圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港\","
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 3691,
-      "slug": "rounded-corner-greeting-cards",
-      "truth": 10,
-      "found": 100,
-      "anchor": "角丸グリーティングカード",
-      "ambiguous": false,
-      "text": "Ready to order your rounded-corner cards? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \\\"30-second AI quote\\\" butt"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1897,16 +1707,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 3746,
-      "slug": "drink-tokens",
-      "truth": 50,
-      "found": 100,
-      "anchor": "ドリンクトークン",
-      "ambiguous": false,
-      "text": " \"keywords\": [], \"body\": \"グラスにつけるドリンクトークンは、披露宴のドリンクバーやプールパーティー、ホテルやバーのイベントで、お客様のドリンクを正確に識別するのに便利なアイテムです。ZprintProでは50〜100枚からご注文いただけます。\\n\\n"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 3754,
       "slug": "foil-greeting-cards",
       "truth": 10,
@@ -1924,16 +1724,6 @@
       "anchor": "エスコートカード",
       "ambiguous": false,
       "text": " \"keywords\": [], \"body\": \"披露宴やホテル結婚式で、ゲストの名前とテーブル番号を案内するエスコートカードは、会場の印象を左右する大切な演出アイテムです。ZprintProのエスコートカードは、50〜100枚から、上質な紙と箔押しでお作りします。\\n\\n"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 3776,
-      "slug": "name-tags-badges",
-      "truth": 50,
-      "found": 100,
-      "anchor": "会議バッジ",
-      "ambiguous": false,
-      "text": " \"keywords\": [], \"body\": \"会議や展示会、研修などの法人イベントで、参加者の名前をスムーズに確認できる名札（ネームバッジ）は、コミュニケーションを円滑にする必需品です。ZprintProの会議バッジは、50〜100枚からご注文いただけます。\\n\\n"
     },
     {
       "file": "src/data/sku-seo-data.ts",
