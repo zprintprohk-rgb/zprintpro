@@ -259,6 +259,98 @@ const BATCHES = {
       src: { 'zh-hk': 54, ja: 57, note: 'K3 c18107a0: a2-posters minQuantity=10 (真值), 文案须对齐 10; en 标题无 MOQ 钩不受影响' },
     },
   ],
+
+  /* ---------- trim-58: K3 2026-09-19 收窄边界产生的 8 条 =58 槽位 ----------
+   * 起因: TITLE_MAX 58→57 (K3 2026-09-19 裁决, 58 = 硬阻断线) ⇒ 当量恰为 58 的 8 槽
+   *       由 OK 转 TRIM。裁决文档 §6-3 明示「按常规批次流程处理」。
+   *
+   * 修剪原则 (§7 红线 + §0.23 数据诚信):
+   *   ① **主词一字不改** (Adhesive Posters Wall Art / Kraft Paper Packaging Box 等)
+   *   ② **`$99+` / `¥125` 等既有数字钩子原样保留** —— `Free Shipping $99+` 不是文案瑕疵,
+   *      而是 K3 2026-07-18 拍板的**真实经营参数** (src/lib/quote-engine/shipping.ts:75
+   *      north_america: 775 // ≈US$99, 对齐 en 站文案; 原 HK$2000 与文案矛盾)。
+   *      ⇒ 只缩措辞长度, 绝不改数值语义。
+   *   ③ 品牌末尾一次不变; en 段不出现中/日文; ja 段不出现中文 (G3)
+   *   ④ 无新增数字 (§0.23): 本批**零新增**任何数字/承诺
+   *
+   * 验证窗: 8 槽**均未**被任何历史批次改动 (按 changed 数组精确判定, 非文件名子串),
+   *         无 churn 冲突。
+   */
+  'trim-58': [
+    {
+      slug: 'same-day-flyers',
+      slots: {
+        // 58→56: `100枚から`(9) → `100枚〜`(7)。用意: 与同标题内既有 `¥125〜` 写法一致,
+        //   且保留日文全角波浪线 (不做 〜→~ 的半角降级, 避免日文排版观感劣化)。
+        ja: '即日チラシ印刷｜¥125〜・100枚〜・無料デザイン｜ZprintPro',
+      },
+      src: { ja: 58, note: 'products.ts: basePrice_ja 125; 只改「から→〜」措辞, 数字钩子原样保留' },
+    },
+    {
+      slug: 'adhesive-posters',
+      slots: {
+        // 58→54: `Free Shipping`→`Free Ship` (措辞缩短, 保留 Free + Ship 语义与 $99+ 数值)
+        en: 'Adhesive Posters Wall Art | Free Ship $99+ | ZprintPro',
+      },
+      src: { en: 58, note: '措辞缩短; $99+ 为 K3 2026-07-18 拍板真实参数, 数值语义不动' },
+    },
+    {
+      slug: 'removable-stickers',
+      slots: {
+        en: 'Custom Removable Stickers | Free Ship $99+ | ZprintPro',
+      },
+      src: { en: 58, note: '同上; 主词 Custom Removable Stickers 一字不改' },
+    },
+    {
+      slug: 'kraft-paper-packaging-box',
+      slots: {
+        en: 'Kraft Paper Packaging Box | Free Ship $99+ | ZprintPro',
+      },
+      src: { en: 58, note: '同上; 主词一字不改' },
+    },
+    {
+      slug: 'electronics-packaging-box',
+      slots: {
+        en: 'Electronics Packaging Box | Free Ship $99+ | ZprintPro',
+      },
+      src: { en: 58, note: '同上; 主词一字不改' },
+    },
+    {
+      slug: 'magnetic-closure-gift-box',
+      slots: {
+        en: 'Magnetic Closure Gift Box | Free Ship $99+ | ZprintPro',
+      },
+      src: { en: 58, note: '同上; 主词一字不改' },
+    },
+    {
+      slug: 'drink-menus',
+      slots: {
+        // 58→51: `Laminated Durable` → `Waterproof`。
+        //   ✅ 已核证 (products.ts L5038/5041): name = '酒水牌 | 餐牌 / 菜單 / **防水PVC**',
+        //      features[0] = '【**防水防油**】覆膜或PVC材質，適合餐飲環境' ⇒ 防水为官方卖点。
+        //   ✅ 另有同款内部先例: 本 SKU zh-hk 标题 (manual-1 已落) = '餐廳酒水牌 | **防水** 覆膜 圓角 …';
+        //      sibling 亦用: pvc-menus 'PVC 餐牌印刷 · **防水防油**覆膜' / hardcover-menus '精裝餐牌 | **防水** 覆膜'。
+        //   ⇒ 非新引入工艺词, 为站内既有已批口径。
+        en: 'Drink Menus | Waterproof | Free US Ship | ZprintPro',
+      },
+      src: { en: 58, note: 'products.ts name 含 防水PVC + features[0] 防水防油; 与 zh-hk manual-1 口径一致' },
+    },
+    {
+      slug: 'hardcover-books',
+      slots: {
+        // 58→55: `Perfect Bound` → `Case Bound`。
+        //   ✅ 已核证 (products.ts L5976/5979): specs.material = '硬紙板封面**裱糊**銅版紙';
+        //      finishing = '膠裝、燙金…'; description = '2.5mm 灰紙板封面'。
+        //      『裱糊』= casing-in, 即 case binding —— 精裝 = Case Bound。
+        //   ⚠️ 原词 `Perfect Bound` (無線膠裝) 是**平装/软封面**工艺, 出现在精装书标题上属误标,
+        //      且与独立 SKU `perfect-bound-books` 同词 ⇒ 自相蚕食 (§11.8 红线)。
+        //      ⇒ 本槽不只是修剪, 同时修正一处既存错标。
+        //   (不采用「直接删掉该段」: 会掉到 42 当量 < 50, 反成 FILL 违规。)
+        en: 'Hardcover Books | Case Bound | Free US Ship | ZprintPro',
+      },
+      src: { en: 58, note: 'specs.material 硬紙板封面裱糊 = casing-in ⇒ Case Bound 为准确工艺名; 原 Perfect Bound 误标' },
+    },
+  ],
 };
 
 if (!FROM_PROPOSALS) BATCH = BATCHES[BATCH_NAME];
