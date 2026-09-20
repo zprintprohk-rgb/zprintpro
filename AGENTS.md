@@ -103,6 +103,47 @@
 - ✅ **两条实测结论 (2026-09-19)**：① **锁互斥压测通过**——两进程同时 `--acquire`，先到者 `EXIT=0` 持锁、后到者 `EXIT=10 (blocked)` 且**不调用 dsh**；② **legacy 读取路径已切断**——`lane-status.mjs` / `lane-preflight.py` / `cron-watchdog.py` 均只读 `.hermes/cron-lanes.json` + 自有总线，全仓 `jobs.json` 仅剩两处**说明性注释/独立清理脚本**（非读取路径）。
 - ⏳ **待办**：① `ZP-k3-review` 复盘实体**注册**（需管理员 `schtasks /create`；未注册前 `k3-ceo-daily-review.md` 只是 SSoT 文本，**不得声称"已在跑"**）；② autoclaw registry 与 Kimi Work 两层正式废弃（只留历史记录）；③ 集成测试纪律：**禁止在真实生产 wrapper 上跑端到端测试**（2026-09-19 因此误 push 2 次，违反 §0.25 30min 硬下限）；④ `\ZprintPro-CronWatchdog-2125` 删除（**需 K3 管理员**，`scripts/remove-legacy-cron-tasks.ps1`）。
 
+### §0.35.7 人手会话并发锁协议（双条件判定）(K3 2026-09-20 采纳, 跨会话强制级)
+
+> **背景**: 2026-09-20 两套并发人手会话在同一 worktree 产出**两套并行交接产物**
+> （活书 + 另建 handoff），并出现「一方清理扫掉另一方 staged 变更」的撞车形态。
+> 既有 `lane.lock` 只覆盖**定时车道**，**人手会话之间无任何协调机制**。
+
+**1. 两层锁, 语义不同, 不可互相替代**
+
+| 文件 | 层级 | 语义 |
+|---|---|---|
+| `.hermes/locks/lane.lock` | 机器强制 | `lane-preflight.py` 持锁/释放，**定时车道**互斥（§0.35.5） |
+| **`SESSION_LOCK.md`**（仓库根） | 人工声明 | **人手会话**之间协调；无自动回收，靠 TTL + 手工释放 |
+
+> 改 `src/data/blog-data/*.json` 前**仍必须**看 `lane.lock`——`SESSION_LOCK.md` **不替代**它。
+
+**2. ★ 双条件判定（本条核心，取代原「单条件收尾信号」）**
+
+```
+可写 src/  ⟺  ① 收尾信号满足  AND  ② 并发 peer ≥15 min 无任何写入
+```
+
+- **条件 ① 收尾信号** = `git status --porcelain -- src/` 无 `MM` **且** staged 删除归零。
+- **条件 ② 静默窗口** = 对端 ≥15 min 无文件写入（稳定态检测）。
+
+**为什么必须双条件（2026-09-20 实测反例）**：条件 ① 是**单点快照**，无法区分「真正完成」与「中途暂停」。
+实测：`src/` 在 20:12 已 clean（① 满足），但对端**在 20:13:47 仍在写** `.hermes/logs/`，
+且 `git reflog` 显示其**多次 `reset: moving to HEAD`**。
+⇒ **仅凭 ① 判定「可写」会在对方仍在运行时动手**。两个条件联合才能可靠判定。
+
+**3. 释放与接管**
+
+- 持有者在 `SESSION_LOCK.md` 写明：持有者 / 意图 / 写入范围 / 预计时长 / 释放条件。
+- **TTL 30 min**：超时且无新写入 → 视为悲观锁（持有者可能已崩溃），
+  可在「接管声明」区追加一条（理由 + 时间）后继续。
+- **push 不需要锁**：push 是远程操作，与 `src/` 写入无冲突 → **不得为等 push 窗口而占锁**。
+- 禁止代持、代删他人 staged 变更（per 活书 §7）。
+
+**4. 配套**: 活书 `docs/2026-09-20-handover-living-book.md` §7（并发协议）+
+§0（关联产物唯一发现入口）· `SESSION_LOCK.md`（模板 + 接管区）。
+
+
 
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
