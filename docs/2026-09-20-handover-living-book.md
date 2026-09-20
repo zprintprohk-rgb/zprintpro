@@ -41,10 +41,10 @@
 | 项 | 值 | 取证方式 |
 |---|---|---|
 | 工作目录 | `F:\zprintpro-nextjs`（唯一生产目录, 目录铁律 §3） | — |
-| 分支 / HEAD | `main` / `a2f636e6`（2026-09-20 19:36） | `git log -1` |
+| 分支 / HEAD | `main` / `43945538`（2026-09-20 20:14，**未 push**） | `git log -1` |
 | 远端 | `origin` 与 `origin_ssh` **同一仓库**（`git@github.com:zprintprohk-rgb/zprintpro.git`） | `git remote -v` |
 | ⚠️ 分支 upstream | `main` 跟踪的是 **`origin_ssh/main` 而不是 `origin/main`**；只 fetch `origin` 会看到**过期的 origin/main** → 会误判「有积压/无积压」 | `git config branch.main.remote` |
-| 积压 | ⚠️ **必须先 fetch 全部 remote 再读**（`origin` 与 `origin_ssh` 都要），**禁用未 fetch 的 `@{u}`** | 见避坑 14 + 20 |
+| 积压 | **3 条待推**（`deda45f9` / `a7c13edc` / `43945538`）；`origin` 与 `origin_ssh` **两个 remote 均已 fetch，读数一致 a=3 / b=0**（2026-09-20 20:14） | `git rev-list --left-right --count` ×2 |
 | 标题当量 SSoT | `scripts/guards/title-equiv.js` → `TITLE_MIN=50 / TITLE_MAX=57`；`band(57)=OK` / `band(58)=TRIM` | `node -e "..."` 实测 |
 | 普查 | `node scripts/sku-title-census.mjs` → byBand：无新增 TRIM（menus 6 SKU 均不在 TRIM 榜） | census 复算 |
 | 收尾信号 | `git status --porcelain -- src/` 无 `MM` **且** staged 删除归零 → **2026-09-20 19:36 已满足**（src/ 干净） | 见 §7 |
@@ -241,5 +241,71 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 2. `BRAND_LOCALE_MISMATCH` 其余 149 处（`seo-zh-hk-subfield` 58 + 其他 91）未动。
 3. 🟡 4 条 ja imageAlt（`eco-paper-bags`/`small-bags`/`a1-posters`/`display-posters`）需人读；`small-bags` 在 `products.ts` **缺 `nameJa`**，无法走真值来源修。
 4. `CRED_ISO_9001` 167 处真伪未核实。
+
+### 2026-09-20 20:14 · menus 残留 4 处收口 + 自报指标不一致根因（`43945538`）
+
+> **本段由另一并发会话追加**（即 §0 所指的「并发会话」双方之一）。本段**只记事实与取证**，不改写前文（§0.34.2）。
+
+**起点核对（先证伪三条我方旧结论）**
+
+- 「`d45bd4d9`/`a909538f`/`885d03d9` 待推」→ ❌ **已不成立**：`git fetch` 后 `origin/main..HEAD = 0`，
+  三条均已推进远端（我方 `9330f96b` 亦被并发方一并推进）。
+- 「`src/` 被 8 个 `MM` 阻塞」→ ❌ **已解除**：`git status --porcelain -- src/` = 0，staged 删除 = 0。
+- 「`scripts/_menus-evidence.cjs` 被并发清理删掉」→ ❌ **不成立**：`git log --all` 为空 = **从未被跟踪**，
+  文件始终在盘。真因 = `git add` 遇不存在 pathspec **整体失败**（详见 `COMMIT_MSG_OVERCLAIMS_TREE`）。
+
+**已完成（`43945538`，3 文件）**
+
+| # | SKU / locale | 改前 → 改后 | 依据 |
+|---|---|---|---|
+| ① | `drink-menus` / zh-hk | `10本起` → **`10份起`** | 真值 `unitLabel=份`，且**同记录 description/body/FAQ 三方全写「10 份」** → 记录内自相矛盾 |
+| ② | `drink-menus` / ja | `10枚〜` → **`10份〜`** | 同 ①（数字已被并发批对齐，**单位字被漏**） |
+| ③ | `disposable-menus` / en | `$99+` → **`$100+`**（e 49→**50**） | 同记录 description/body 均写 `over $100` → 兼修长度与数值矛盾 |
+| ④ | `disposable-menus` / ja | 补「印刷」(e 46→**51**) | 该 SKU ja keywords 首项；沿用同簇姊妹句式 |
+
+**可复算净结果**
+
+| 指标 | 值 | 取证 |
+|---|---|---|
+| menus 簇标题落带 | **18/18**（6 SKU × 3 locale，0 超格 0 不足） | `node scripts/verify-menus-equiv.cjs` |
+| 品牌-语种错配（4 项） | ja「智印港」**0** / zh-hk「ZprintPro」**0** / ja 繁体专用字 **0** / en CJK **0** | `node scripts/audit-sku-locale.cjs` |
+| tsc | **54 = 基线 54**（`sku-seo-data.ts` 0 error） | `npx tsc --noEmit` |
+| 编码门禁 | **0**（3/3 UTF-8 LF） | `node scripts/check-encoding.js` |
+
+**新增工具**
+- `scripts/verify-menus-equiv.cjs` — **从文件读取**的当量复算器（逐 SKU 切片取 title，输出 equiv/len/带内判定/非 ASCII 码位）。
+  存在理由见下条避坑 23：手打字符串会经 shell 改写，不可信。
+
+**★ 本轮新增避坑 23（自报指标与复算不一致 ⇒ 先查输入通道，勿先怀疑工具）**
+手打 `"…$99+…"` 经 `node -e "…"`（PowerShell 双引号）传入 `equiv()` 得 **46**，文件实测同行得 **49**，**三个 title 上稳定差 3**。
+「稳定偏移」最像工具 bug，极易误判为「当量函数处理 `$`/`+` 有缺陷」。
+**真因**：PowerShell 双引号内 **`$99` 被变量展开**，传进去的根本不是文件里的字符串。
+⇒ 判据：**稳定偏移 ≠ 必然工具 bug**；更常见的是**输入通道确定性改写**（shell 展开 / heredoc / 引号 / 编码）。
+⇒ 修法：**凡复算「文件里的值」必须从文件读**；两法不一致时**先 dump 输入**（len + 码位）而非怀疑量具；
+双方法复算必须在**同定义域**（补 `DOUBLE_METHOD_RECOUNT` 的隐含前提）。已入档 error-patterns。
+
+**★ 本轮新增避坑 24（PowerShell 落盘证据 = UTF-16LE + CRLF 双陷阱）**
+`node x.cjs | Tee-Object -FilePath out.txt` → git 判为 **`Bin`**，`check-encoding.js` 再报 **CRLF 57 行**。
+真因：PowerShell 重定向默认 **UTF-16LE（`FF FE` BOM）**，叠加 `Out-String` 的 `\r\n`。
+⇒ 禁 PowerShell 重定向落盘文本；用 `fs.writeFileSync(p,c,'utf8')` + 正规化 `\r\n`；
+落盘后自检三件（无 BOM / 不出 `Bin` / encoding exit 0）。已入档 `POWERSHELL_OUTPUT_ENCODING`。
+
+**并发协议实测（本段建立的锁首次运行）**
+- 已建 `SESSION_LOCK.md`（仓库根）：声明持有者 / 意图 / 写入范围 / 30 min TTL / 释放条件 + 接管区。
+  **不替代** `.hermes/locks/lane.lock`（机器强制，定时车道）；改 `blog-data/*.json` 前仍必须看 lane.lock。
+- 实测发现：**并发会话全程未读活书**（它另建 `docs/2026-09-20-handoff-12seg-and-b2b3.md`），
+  ⇒ 已修**发现机制**：本活书新增 **§0「关联产物（唯一发现入口）」** 登记全部同族产物，
+  并与对方 handoff 建立**双向指针**（正文合并留待安全窗口，见 §0 阶段 2）。
+- 实测发现：**并发会话在本轮内仍持续写入**（20:13:47 仍在写 `.hermes/logs/moq-scan-latest.json`），
+  且**会 `git reset` 自己的 HEAD**（`reflog` 数次 `reset: moving to HEAD`）→
+  **「收尾信号满足」≠「可以写 `src/`」**。判据应加一条：**需叠加「对方 N 分钟无写入」**。
+
+**本批未做（不得声称已修）**
+1. `43945538` **未 push**：距远端上次 push（20:09:17）不足 **30 min 硬下限**（窗口 20:39:17 开），
+   按 §0.25.8 **commit 留本地、禁止 `Start-Sleep` 阻塞**。
+2. `faqs[].a` 中文值、`BRAND_LOCALE_MISMATCH` 其余 149 处、🟡4 条 ja imageAlt、`CRED_ISO_9001` 167 处 —— **均沿用上一段口径，本批未动**。
+3. menus **数据层** `description`/`body` 的「50 本起 / 100 本起」措辞：本批只改 title，**正文未逐条复核**（避坑 18 风险仍在）。
+4. 仓库 dirty 文件 **619 条**（`??` 占绝大多数）未盘点分类（该入库 / 该 gitignore / 可删）。
+
 
 
