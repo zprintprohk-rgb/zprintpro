@@ -97,6 +97,9 @@
 | 10 | **`CRED_ISO_9001` 167 处** | 🔴 新发现（取证等级仅门童计数） | pre-commit 门童 `真实计数` 报 167；menus 6 个 SKU 的 description/body 就各写「ISO 9001 certified production」。**须先定「是否存在 ISO 9001 证书」**（§0.23 无来源数字红线），再决定清或补证；本会话**未核实真伪** |
 | 11 | **`BRAND_LOCALE_MISMATCH` 188 处（全量真值）** | 🔴 根因已定案，修法待裁 | 门童未截断真值 = **188**（此前只在 staged 里看到 39）。分布：`faqs[].a` **39** · `seo-zh-hk-subfield` 58 · 其他 91 · title 类 **0**。**39 处疑为死数据**（产品页 FAQ 走 `coreProductFAQMap`，全 src 无 `getSkuSeo().faqs` 消费点），且该文件是 CSV 派生（SOP-5 禁手搓）⇒ 候选修法 (a) 回 CSV 源头清 / (b) 确证死数据后**请 K3 拍板**给该族建豁免台账 |
 | 12 | **`small-bags` 缺 `nameJa`** | 🟡 新发现 | `products.ts` 该 SKU 无 `nameJa` ⇒ 其 ja 段 imageAlt 折行无法用「真值来源」修（本批 25 条全部有源，故未受此限） |
+| 13 | **三语标题合规审计 8 项发现** | 🔴/🟠 见 §9 `2026-09-21 00:03` 段 | 全量 300 槽实测（当量/品牌/长尾 3 筛选/GSC 1164 查询实证/量词/CSV↔TS 分叉 219 槽）；**K3 已裁 6 项，余 2 项待执行**（src 修复批 + 生成器 C 方案） |
+| 14 | `企業禮品`/`Comiket/應援` 定性 | 🟡 **K3 未裁** | 3+5 槽，GSC 0 实证：按「长尾词」清出 title 还是按「钩子/语境」豁免——请示中；企業禮品相关年历词 G3 上段，窗内数据可辅助判断 |
+| 15 | L1-1 SERP 实查 7 条零点击好位置词 | 🟡 窗内动作，未执行 | `食品包裝印刷/a6 尺寸/small batch sticker printing/小冊子印刷/大信封/small batch stickers/邊度有紙袋買`（GSC 9/18：pos 4.4–10、0 点击）→ 三选一清单（改标题/改落点/不可抢），是窗后第一批标题动作的输入 |
 
 ---
 
@@ -387,3 +390,41 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 
 
 
+### 2026-09-21 00:03 · 三语标题合规审计（5 规则源对照）+ K3 八项裁决 + 待执行队列
+
+**审计对象**：9/19 批（P0-A1 18 槽 + P2 修剪 11 槽）+ 9/20 批（批次1 真值 3 槽 + 飞轮 42 槽）落地的全站 300 槽。
+**量具**：`.hermes/_audit-dump-titles.cjs` → `.hermes/_audit-titles.json`（复用 census 解析锚，只读）。
+
+**判定总表**
+
+| 维度 | 判定 | 实证 |
+|---|---|---|
+| 当量带 50–57（9/19 裁决 SSoT） | ✅ 300/300 OK | `band()` 全 OK；双方法复算 mismatch=0；v4 口径 75 槽 LEGACY 系规则变更正常影响面 |
+| 品牌 / 四元素 / 冻结 / 验证窗 | ✅ | title 类品牌错配 0；C 表 36 issue 经逐条复核为 `・` 与全角 `｜` 误报（实剩 a2-posters ja 风格 1 槽） |
+| 长尾 3 筛选（v4 §1.3 + 铁律 #12） | ⚠️ 批本身合规（只加钩子不加长尾），存量保留词待裁 | 见发现 ③ |
+| money-map 机会词收割 | ⚠️ SKU 层已接（small batch stickers en），品类层 4 词待 L1-1 | P1 名单 4 词属品类页/AEO 层 |
+| 量词（K3 9/20 贴纸=張） | ⚠️ 贴纸 zh-hk 三口径并存（個6/張2/起印1） | 9/19 批「個」+ 飞轮批 die-cut「10起印」无单位 |
+| 钩库纪律 | ✅ | iso9001/fsc/fda 三个 conditional 未用 |
+
+**8 项发现 × K3 裁决（00:03 会话）**
+
+| # | 发现 | K3 裁决 | 落地动作 |
+|---|---|---|---|
+| 1 🔴 | 贺卡 6 SKU 三语 title 仍是「名片印刷/Business Cards/名刺印刷」（v22 改名未覆盖 title 层，源自 202e7698） | **系 K3 拍板内容，非违规** | 关闭；不动贺卡资产 |
+| 2 🔴 | 打稿承诺 1h（hero）vs 2h（seo body ×44 处）跨层矛盾 | **1 小时为统一值** | body 44 处 2h→1h（src 批，窗内可执行——非 title 字段） |
+| 3 🟡 | `企業禮品`（3 槽年历）/`Comiket/應援`（5 槽）GSC 0 实证 | **未裁**（§5 #14 挂起） | 窗内用 CTR 数据辅助，窗后按裁执行 |
+| 4 🟠 | drink-tokens zh-hk「NT$6起」镜像 products.ts `price_range: 'NT$6-30 / 張'` | **只能是港币** | products.ts price_range → `HK$0.25起 / 張`（basePrice=0.25 真值）；title NT$→HK$ 随批 |
+| 5 🟠 | en 装帧词错配：`spiral-notebooks`「Perfect Bound」（真值 YO圈/螺旋）；`exercise-books` zh-hk「膠裝」+ en「Perfect Bound」（真值騎馬釘） | **判断正确，按推荐执行** | spiral 三语装帧段全改（zh「YO圈/螺旋裝」/en「Spiral Bound」/ja「スパイラル装」）；exercise zh「騎馬釘」/en「Saddle Stitch」；**textbooks en 不改**（finishing 含膠裝，核真值后排除） |
+| 6 🟠 | ja 英文混入：`custom-red-packets` ja 标题=「custom red packets」；`hardcover-menus` ja「ハードカバー menu 印刷」 | **按推荐执行** | ja 槽改纯日文（equiv 须保持 50–57，用 title-equiv.js 验算） |
+| 7 🟡 | `a4-flyers` en「A4 Flyers for Holiday Cards」语义错位 | **按推荐执行** | 改「A4 Flyer Printing | 10 MOQ | Free US Ship」（eq=53 预验） |
+| 8 🟡+⚙️ | a1-posters「HK$45起」vs price_range「HK$290-7,200」口径差异；CSV↔TS 分叉 219/300 | a1：**小数量只能喷绘、批量上印刷机 → title HK$45起 正确，不改**；CSV：**方案 C 按推荐执行** | ① a1 关闭；② 生成器改增量合并（保 ts-only key，断言 key 数不减）+ **CSV title/desc/H1 三语列一次性回灌**（不回灌则 merge 模式会用 CSV 旧值倒退 75 key 的 title——回灌是 C 的必要组成）；`_verify-regen-safety.mjs` 对照 git HEAD 的口径保持 |
+
+**窗内纪律**：以上 title 修复（#4 drink-tokens / #5 / #6 / #7 共约 8 槽）= K3 已裁事实错误批，执行时**重置这些槽位 `.hermes/title-verify-window.json` 的起算日为修复日**（飞轮批其余槽测量不受污染）；未裁的 #3 不动。
+
+**待执行队列（src 静默后按序）**
+1. products.ts：drink-tokens price_range 币种（#4）
+2. sku-seo-data.ts：title ×8 槽（#4/#5/#6/#7，逐槽过 `title-equiv.js` band 断言）
+3. sku-seo-data.ts：body 44 处 2h→1h（#2，前后计数断言 44→0）
+4. `title-verify-window.json`：重置已修槽起算日
+5. 生成器 C 方案 + CSV 回灌脚本（scripts/，dry-run → apply，断言：key 数 100 不减、CSV title 列回灌后与 ts 逐字一致、全量 regen 输出与现行 ts 逐字一致）
+6. 预检 3 步（encoding / tsc / smoke）→ 单 commit → push → CF 三段验证

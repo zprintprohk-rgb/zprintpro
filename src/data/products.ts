@@ -8314,7 +8314,7 @@ export const products: Product[] = [
     description: '酒水牌 / 飲品標記卡 50 張起印,0.5mm 厚 PVC 透明卡 或 300g 銅版紙,防水耐用,模切圓角。順豐本地 + DHL 全球。**適配行業**: 婚宴飲品/泳池派對/酒店/咖啡廳/酒吧.',
     descriptionEn: 'Drink tokens / beverage markers 50 sheets MOQ, 0.5mm thick clear PVC or 300gsm art paper, waterproof durable, die-cut rounded corners. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding beverages / pool parties / hotels / cafés / bars.',
     descriptionJa: 'ドリンクトークン / 飲み物マーカー 50 枚から、0.5mm 厚透明 PVC または 300g コート紙、防水耐久、抜型角丸。DHL 国際 2-4 日配送。**適合業種**: 披露宴ドリンク / プール パーティ / ホテル / カフェ / バー.',
-    price_range: 'NT$6-30 / 張',
+    price_range: 'HK$0.25起 / 張',
     optimizedAt: '2026-08-18',
     optimizationRound: 1,
     specs: { material: '0.5mm 透明 PVC / 300g 銅版紙 / 350g 黑卡紙', size: 'A8 (52×74mm) / A7 (74×105mm) / 自訂圓形', finishing: '模切圓角 / 燙金 / 打孔掛繩', printMethod: '柯式印刷 4C + UV 防水層' },
