@@ -194,6 +194,21 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.9 門童 #25 SKU 標題當量帶閘門 (K3 2026-09-20 標題-GSC-關鍵詞庫增長飛輪指令)
+# 規則: MIN=50 / WARN>57 / HARD>=58 (半角當量, SSoT scripts/guards/title-equiv.js, 58 阻斷線)
+# 判據鐵律 (§0.35.4): 只攔 staged diff 中**新增/修改**的 title; 存量 issue 落審計 JSON 不攔.
+echo "3️⃣.9  門童 #25 標題當量帶閘門 (staged 新增 ≥58 硬攔)..."
+if command -v node &> /dev/null; then
+  node scripts/guards/title-band-guard.js --commit
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ 門童 #25 攔截: staged 新增 title 半角當量 ≥58 (阻斷線, 防 SERP 截斷 + Google 重寫)"
+    echo ""
+    echo "💡 修法: 修剪回 50-57 (scripts/guards/title-equiv.js 口徑), 或 K3 拍板豁免"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

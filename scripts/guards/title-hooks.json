@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "name": "标题素材库 (title material library)",
+    "version": "2026-09-20",
+    "owner": "zprintpro 标题-GSC-关键词库增长飞轮",
+    "ruleSSoT": "docs/2026-09-13-title-batch-T-freeze.md §6-3 (K3 2026-09-19 裁决 50-57, 58 阻断)",
+    "equivSSoT": "scripts/guards/title-equiv.js",
+    "usage": "生成器 scripts/gen-title-flywheel.mjs 只消费 status=approved 的钩子; conditional 禁用于标题直至 K3 裁决; 动态数字钩 (MOQ/价格) 由生成器从 products.ts 现取, 不入本库",
+    "sources": {
+      "站内真值": "src/data/products.ts (minQuantity / basePrice / basePrice_en / basePrice_ja / unitLabel K3 9/20 裁决)",
+      "DELIVERY": "F:/全球印刷资讯/DELIVERY/02-关键词词库.csv (336 词 16 语种, B2B 获客雷达词库 — 对 SKU 标题的直接用途为 en 品类同义词, 见 gscClusters)",
+      "GSC": ".hermes/gsc-2026-09-18/extract.json (28d 页面级 + 查询级, 同簇长尾词唯一合法来源)"
+    }
+  },
+  "hooks": {
+    "proof_1h": {
+      "zh-hk": "1小時免費打稿",
+      "en": "Free 1h Proof",
+      "ja": "1時間無料校正",
+      "source": "线上三站点页面承诺: 提交檔案後 1 小時內免費數碼打稿 (PDP hero, 2026-09-20 实测)",
+      "status": "approved"
+    },
+    "exp_15y": {
+      "zh-hk": "15年+印刷經驗",
+      "en": "15+ Years Printing",
+      "ja": "15年以上の実績",
+      "source": "K3 8/19 拍板真实数据 (Why ZprintPro 区块 15+ Years Experience, live)",
+      "status": "approved"
+    },
+    "dhl_24": {
+      "zh-hk": "DHL 2-4天到貨",
+      "en": "DHL 2-4 Days",
+      "ja": "DHL 2-4日",
+      "source": "线上页面承诺: DHL Express 全球 2-4 天 (PDP 物流槽, 2026-09-20 实测)",
+      "status": "approved"
+    },
+    "us_ship_short": {
+      "zh-hk": null,
+      "en": "Free US Ship",
+      "ja": null,
+      "source": "线上 en 在用的站级短承诺 (P2 修剪批已应用, waterproof/transparent-stickers 等, 2026-09-19 提案)",
+      "status": "approved"
+    },
+    "hk_ship": {
+      "zh-hk": "滿$500包郵",
+      "en": null,
+      "ja": null,
+      "source": "线上 zh-hk PDP: 滿 HK$500 港九新界免運 (順豐)",
+      "status": "approved"
+    },
+    "iso9001": {
+      "zh-hk": "ISO 9001 認證工廠",
+      "en": "ISO 9001 Factory",
+      "ja": "ISO 9001認証工場",
+      "source": "待 K3 拍板 (批次1 待拍板清单 #1: ×167 处去留未定, 无证书号 per SOP-10 第 4 款)",
+      "status": "conditional_forbidden_until_k3"
+    },
+    "fsc": {
+      "zh-hk": "FSC 認證紙材",
+      "en": "FSC-Certified Paper",
+      "ja": "FSC認証紙材",
+      "source": "待 K3 拍板 (批次1 待拍板清单 #2: FSC/FDA 合规口径未定)",
+      "status": "conditional_forbidden_until_k3"
+    },
+    "fda": {
+      "zh-hk": "FDA 合規",
+      "en": "FDA Compliant",
+      "ja": "FDA準拠",
+      "source": "待 K3 拍板 (批次1 待拍板清单 #2); 'full FDA compliance where applicable' 现存 en 文案口径存疑",
+      "status": "conditional_forbidden_until_k3"
+    }
+  },
+  "gscClusters": {
+    "_comment": "第 2 个长尾词仅限 GSC 实证同簇词 (附件 §七); 生成器按 SKU category 取词, 每词注来源查询与 imps",
+    "stickers": { "zh": ["貼紙"], "en": ["sticker printing", "waterproof stickers", "pvc stickers"], "ja": ["ステッカー 印刷"] },
+    "flyers": { "zh": ["傳單", "單張", "即日印刷"], "en": ["flyer printing", "leaflet printing"], "ja": ["チラシ 印刷"] },
+    "posters": { "zh": ["海報", "印海報一張"], "en": ["poster printing"], "ja": ["ポスター 印刷"] },
+    "packaging": { "zh": ["包裝盒", "紙盒", "禮盒"], "en": ["custom boxes", "packaging boxes", "mailer boxes"], "ja": ["箱 印刷"] },
+    "paper-bags": { "zh": ["紙袋"], "en": ["paper bags"], "ja": ["紙袋 印刷"] },
+    "books": { "zh": ["書刊印刷", "同人誌"], "en": ["book printing", "yearbook printing"], "ja": ["同人誌 印刷"] },
+    "calendars": { "zh": ["月曆", "年曆"], "en": ["calendar printing"], "ja": ["カレンダー 印刷"] },
+    "red-packets": { "zh": ["利是封", "燙金"], "en": ["red packets", "envelope printing"], "ja": ["年賀状 印刷"] },
+    "banners": { "zh": ["橫額", "易拉架"], "en": ["banner printing", "roll up banner"], "ja": ["バナー 印刷"] },
+    "labels": { "zh": ["標籤", "食品標籤"], "en": ["labels printing"], "ja": ["ラベル 印刷"] }
+  }
+}

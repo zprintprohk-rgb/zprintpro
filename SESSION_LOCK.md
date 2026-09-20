@@ -3,7 +3,45 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: 🔴 **已释放（RELEASED）** — 2026-09-20 20:15
+
+---
+
+## 持有声明（2026-09-20 21:4x · 标题飞轮批次1 会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | K3「标题-GSC-关键词库增长飞轮」会话（本会话） |
+| **意图** | 批次1 标题修复：42 槽（25 FILL + 17 TRIM）按审阅后提案写入 sku-seo-data.ts；新增门童 #25 title-band-guard + pre-commit 挂载；验证窗 tracker + 闭环模板 + 飞轮文档 |
+| **写入范围** | `src/data/sku-seo-data.ts`（42 槽 exact-match 替换，apply-title-flywheel.mjs 计数断言）· `scripts/guards/title-band-guard.js`（新增）· `scripts/canonical/pre-commit` + `.githooks/pre-commit` + `.git/hooks/pre-commit`（#25 挂载, 三份 sha256 同步）· `scripts/guards/title-hooks.json`（新增）· `scripts/gen-title-flywheel.mjs` + `scripts/apply-title-flywheel.mjs`（新增）· `docs/` + `.hermes/`（报告/tracker/模板） |
+| **真值依据** | products.ts minQuantity/basePrice(_en/_ja)（门童 #24 同源）；现标题既有数字（不发明）；GSC 9.18 imps 排序 |
+| **预计时长** | < 45 min |
+| **释放条件** | commit + push 完成即释放 |
+| **静默窗核验** | 申请前 src/ 15 min 0 写入 ✓（git status src/ 空, 无 lane.lock）✓ |
+
+---
+
+## 释放记录（2026-09-20 ~21:20 · 批次1 会话）
+
+| 项 | 值 |
+|---|---|
+| **释放者** | 批次1「事实错误级修复」会话 |
+| **交付** | `cc28fd6a`（已 push c2be2f2f..cc28fd6a）：en 错误电话+虚构自提 ×36、same-day-flyers 三语真值重排（MOQ 100→10、价格钩对齐页面 hero、ja h1/keywords/faq/imageAlt 清污染）、products-content MOQ 表 100→10；脚本 `scripts/fix-batch1-factual-errors.mjs`（计数断言 exit 2 纪律） |
+| **锁期间写过的文件** | `src/data/sku-seo-data.ts` · `src/data/products-content.ts` · `scripts/fix-batch1-factual-errors.mjs`（+ 备份 `.hermes/_bak-batch1-20260920/`，未入库） |
+| **验证** | dry-run 21 组/92 处 → apply 硬校验 7/7 → census byBand 不变（3 新 title 当量 50/55/54 全 OK）→ audit-sku-locale 四项 0 → tsc 3 错为 quote-engine 存量（本批未触碰）→ pre-commit 全门童过 → push 成功 |
+
+---
+
+## 持有声明（2026-09-20 ~21:00 · 批次1 会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | K3 批次1「事实错误级修复」会话（本会话） |
+| **意图** | P0-2 en 模板错误电话+虚构美国自提 ×36；P0-1 same-day-flyers 三语槽位真值重排（MOQ/价格/h1/faq/keywords/imageAlt）；P0-1b products-content MOQ 表 100→10 |
+| **写入范围** | `src/data/sku-seo-data.ts`（92 处定向替换，脚本计数断言）· `src/data/products-content.ts`（2 行）· `scripts/fix-batch1-factual-errors.mjs`（新增） |
+| **真值依据** | products.ts minQuantity=10 + price-data.generated.ts（zh HK$1.30 / en $0.16 / ja ¥25 起），三线上页面 hero 实测一致 |
+| **预计时长** | < 30 min |
+| **释放条件** | commit 完成即释放；dry-run 已过（21 组 / 92 处，新 title 当量 50/55/54 全 OK） |
+| **静默窗核验** | 申请前 src/ 15 min 0 写入 ✓（双条件判定满足） |
 
 ---
 

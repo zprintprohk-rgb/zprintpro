@@ -94,7 +94,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
+        "title": "透明ステッカー | 防水 PVC | 10枚〜 ¥51〜 | ZprintPro",
         "description": "透明ステッカーの透明ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics",
         "keywords": ["透明ステッカー", "透明ステッカー 印刷", "transparent stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
@@ -519,7 +519,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保紙袋 | 100%環保 多尺寸 | 智印港",
+        "title": "環保紙袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
         "description": "環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。智印港 15+ 年自有品牌。",
         "h1": "FSC認證環保紙張，可持續發展。適合注重環保的品牌。智印港提供專業環保紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["環保紙袋", "紙袋印刷", "紙袋訂製", "手提紙袋", "購物紙袋", "牛皮紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋", "100個起", "100個起印", "2小時取件", "48小時出貨", "50個起", "A4文件袋", "C6紙袋", "C7禮品袋", "HK$1.5起", "HK$2起", "伴手禮紙袋", "保密檔案袋", "免費打樣", "免費設計", "全港順豐直送", "公司抬頭", "印紙袋", "可封口袋", "可水洗手提袋", "品牌周邊", "喜糖紙袋", "喜糖袋印刷", "夜市袋子", "婚禮手提袋", "專業紙袋印刷服務", "小批量紙袋", "市集手提袋", "帆布袋印刷", "平價紙袋印刷", "快速紙袋印刷", "手抽袋印刷", "手挽紙袋", "手提袋定製", "托特包定製", "承重手提袋", "旺角急印", "檔案袋印刷", "深圳聯動生產", "無紡布袋印刷", "燙金LOGO", "燙金紙袋", "燙金絲帶孔", "環保袋定製", "精品店紙袋", "紙袋印製", "紙袋工廠", "紙袋製作", "紙袋訂做", "迷你紙袋", "透明窗手抽袋", "食品級袋子"],
@@ -601,7 +601,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "小號紙袋 | 100%環保 多尺寸 | 智印港",
+        "title": "小號紙袋 | 100%環保 多尺寸 | DHL 2-4天到貨 | 智印港",
         "description": "小號紙袋/小號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "小巧尺寸，適合首飾、化妝品等小件商品。智印港提供專業小號紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["小號紙袋", "紙袋", "紙袋訂製"],
@@ -616,7 +616,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "小型紙袋 | エコ素材 多サイズ | ZprintPro",
+        "title": "小型紙袋 | エコ素材 多サイズ | 1時間無料校正 | ZprintPro",
         "description": "小型紙袋の小型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["小型紙袋", "小型紙袋 印刷", "small bags"],
@@ -750,7 +750,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+        "title": "A5 チラシ | 両面フルカラー 10枚〜 ¥50〜 | ZprintPro",
         "description": "A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "A5 size",
         "keywords": ["A5 チラシ", "A5 チラシ 印刷", "a5 flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
@@ -831,7 +831,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "摺疊傳單印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，全彩 CMYK + 第五色（白墨）可選，FSC 認證紙張，可持續來源，15+ 年印刷經驗。\n\n摺疊傳單印刷 廣泛應用於 餐廳餐牌及外賣推廣、活動單張及演唱會派發、零售新品發佈及開業宣傳 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，摺疊傳單印刷 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 128 克光面銅版紙（標準單張紙）（標準用途，性價比高）、157 克啞粉紙（中檔質感，主流選擇）（中檔質感，主流選擇）、300 克卡紙（高級餐牌 / 厚身單張）（特殊需求或精品用途）。三種材質均通過 全彩 CMYK + 第五色（白墨）可選 及 FSC 認證紙張，可持續來源 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 傳單印刷應該選什麼紙重？**\n128 克是標準單張紙重量，適合大多數推廣用途。157 克啞粉紙是最受歡迎的中檔選擇，質感高級但成本合理。300 克卡紙適合餐牌或精品品牌宣傳。我們亦可為 200 克以上紙張加防水光膠。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費。500 / 1,000 / 5,000 / 10,000 數量設有階梯式折扣。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 2 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物打稿，我們提供 HK$199 付費實物打稿 DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。每日 18:00 前落單可加急即日同區交收（順豐速遞上門），額外 HK$80 起。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+        "title": "Folded Leaflets | Tri-Fold Design | 10 MOQ | ZprintPro",
         "description": "Custom folded leaflets from ZprintPro the US. Tri-Fold Design, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Folded Leaflets 100+ | Tri-Fold Design | ZprintPro",
         "keywords": ["folded leaflets", "custom folded leaflets", "folded leaflets printing online", "folded leaflets free shipping", "folded leaflets USD", "bulk folded leaflets", "folded leaflets DHL", "bespoke folded leaflets", "folded leaflets wholesale", "folded leaflets pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from $0.06", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
@@ -877,7 +877,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+        "title": "厚口チラシ | 両面フルカラー 10枚〜 ¥95〜 | ZprintPro",
         "description": "厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["厚口チラシ", "厚口チラシ 印刷", "thick paper flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
@@ -962,7 +962,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "エコチラシ | 両面フルカラー 10枚〜 | ZprintPro",
+        "title": "エコチラシ | 両面フルカラー 10枚〜 ¥75〜 | ZprintPro",
         "description": "エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["エコチラシ", "エコチラシ 印刷", "eco flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
@@ -1246,7 +1246,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+        "title": "化妝品包裝盒 4 種盒型 100 個起印 | HK$8起 | 智印港",
         "description": "化妝品包裝盒 100 個起印. 4 種盒型 (天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型) + 內托 EVA / 紙漿 / PET 吸塑可定制. 燙金 + 局部 UV + 緞布內襯. 香港 + 跨境美妝電商 + 日本市場. ISO 9001 + FSC 認證, 4 色柯式印刷, 30 秒 AI 即時報價",
 
         "h1": "化妝品包裝盒 — 4 種盒型 · 內托定制",
@@ -1309,7 +1309,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "食品包裝印刷訂製，100 個起印、HK$2.5 起/個，標準 3-5 個工作天交貨。提交檔案 2 小時內免費數碼打稿，30 秒 AI 報價即時出價，WhatsApp 2 小時內回覆。\n\n食品包裝盒專為香港中小企、本地餐廳、茶飲烘焙品牌及跨境食品電商設計。100 個起印，無開版費，港九新界訂單滿 HK$500 免費順豐速遞。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n廣泛應用於糕點烘焙、茶葉禮盒、月餅節日禮盒、保健品、手搖飲品及餐廳外賣場景。選材與法規細節可參考[食品包裝印刷完全指南](/zh-hk/blog/food-packaging-printing-guide/)；嬰幼兒食品品牌請參考[嬰幼兒食品包裝盒印刷指南](/zh-hk/blog/baby-food-packaging-box-printing-guide/)，奶粉、輔食、米糊類包裝有專門的安全材質建議。\n\n材質選擇：350g 食品級白卡／400g 灰底白板（標準盒），PE 淋膜或 PLA 可降解內層防油防濕；B 楞瓦楞紙（運輸箱）；硬身磁石禮盒（高級禮品）。全部材質通過 FSC 認證、採用大豆油墨及 FDA 認可（間接食品接觸）。表面處理可選啞光膠、亮面膠、局部 UV、燙金燙銀，支援 CMYK 全彩印刷。\n\n盒型與結構：插口盒（自動扣／直插／反插）、天地蓋、書型盒、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱及異形切割盒，所有標準款式提供免費刀模線模板下載。可做 PET 透明窗口設計展示內裝產品，亦可印可變 QR Code 做批次追溯與防偽。更多盒型與配套見[包裝盒印刷類目](/zh-hk/category/packaging/)。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，專業設計團隊免費打稿——只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：100 個起印、HK$2.5 起/個（按尺寸、材質、工藝浮動；自訂尺寸或異形切割 500 個起），無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達；加急訂單（24 小時打稿 + 2 天生產）加收 20%。跨境訂單 DHL 全球 2-4 個工作天配送。\n\n食品品牌通常同時需要標籤與外帶配套：[防水貼紙](/zh-hk/product/waterproof-stickers/)適合飲品杯貼與冷藏標籤，[紙袋印刷類目](/zh-hk/category/paper-bags/)可配同款設計一站式交付，省返分開搵供應商嘅時間。\n\n旺季檔期提示：聖誕及 2027 春節禮盒建議提前 3-4 週落單，預留打樣與生產檔期。\n\n準備落單？1 小時免費打稿——WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro",
+        "title": "Food-Safe Packaging Printing | 100 MOQ | ZprintPro",
         "description": "Custom food packaging printing with FDA-safe, FSC-certified materials. 100 MOQ, foil & UV finishes, free 2-hour digital proof, free US shipping $99+. 30-second AI quote. FDA-compliant (FDA 21 CFR 176.170). Mooncake & Dragon Boat Festival gift box, tea gift box, bakery, supplement brand, bubble tea shop all welcome.",
         "h1": "Paper Food Packaging 100+ | Food-Grade Paper Boxes, Bags & Greaseproof Cards",
         "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","food boxes USD","bespoke food packaging","packaging box printing","gift boxes","cosmetic boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC-certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label", "FDA approved food packaging", "FDA food grade packaging", "mooncake packaging", "tea gift box packaging", "bakery packaging", "supplement packaging", "bubble tea packaging", "eco food box", "cross border food packaging", "FSC-certified paper"],
@@ -1515,7 +1515,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
+        "title": "箔押し年賀状 | UV エンボス | 100枚〜 ¥64〜 | ZprintPro",
         "description": "箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Traditional foil stamping",
         "keywords": ["箔押し年賀状", "箔押し年賀状 印刷", "foil red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
@@ -1584,7 +1584,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "custom red packets | 燙金 UV 壓紋 | 智印港",
+        "title": "定制利是封 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
         "description": "custom red packets/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "定制利是封",
@@ -1668,7 +1668,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "環保利是封以可持續發展為理念，採用 FSC 認證再生紙或種子紙，配合大豆油墨印刷，派利是之餘亦傳遞對環境的尊重。新春過後大量利是封被丟棄，選用環保材質可大大減輕浪費，種子紙更可種出植物，令祝福延續下去，特別適合注重環保的企業、社企與 ESG 相關機構。\n\n對重視品牌價值的企業而言，一張印有環保承諾的利是封，本身就是最好的企業社會責任宣傳。環保利是封以四色數碼或柯式印刷呈現設計，紙面不覆膜，觸感自然樸實，配合簡約祝福語與品牌標誌，便可在節日期間傳遞理念；利是封印刷過程加入再生紙與大豆油墨選項，令節日營銷更具內涵。\n\n訂製利是封選用 FSC 認證再生紙或種子紙，標準尺寸約 90×170mm，印刷方式為四色數碼或柯式印刷，紙面不覆膜，保持天然環保質感。落單前交出設計檔案，廠方免費 AI 預檢並與您確認打樣；約 3-5 個工作天完成生產，港九新界免運費直送。\n\n環保利是封 100 個起印，價格由 HK$1.90-5.20/個 起，實際收費視乎紙材與印刷方式而定，批量訂購可向智印港查詢專屬報價。"
       },
       "en": {
-        "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+        "title": "Eco Red Packets | Gold Foil Print | 100 MOQ | ZprintPro",
         "description": "Custom eco red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Eco Red Packets 100+ | Gold Foil Print | ZprintPro",
         "keywords": ["eco red packets", "custom eco red packets", "eco red packets printing online", "eco red packets free shipping", "eco red packets USD", "bulk eco red packets", "eco red packets DHL", "bespoke eco red packets", "eco red packets wholesale", "eco red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from $0.06", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
@@ -1706,7 +1706,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "大號利是封以加大尺寸設計，約 110×200mm，比標準款式大約 30% 至 50%，可以放入更多鈔票、利是錢或禮品卡，實用大氣，送禮更有面子。新春拜年、開年派利是或婚宴回禮時，一封分量十足的利是封，往往令收禮者感受到更濃厚的誠意與喜慶氣氛。\n\n大號利是封特別適合企業開年團拜、客戶禮贈、婚宴喜慶與酒店迎賓等需要大方得體的場合。採用 150g 至 200g 紅色紙張，紙身挺括厚實，配合四色印刷與燙金，並可按設計加上浮雕或局部 UV，令大尺寸設計更具氣派；進行利是封印刷時選擇加大款式，能讓品牌祝福更顯分量。無論是公司開年還是客戶答謝，大號利是封都能同時兼顧體面與實用。\n\n大號利是封選用 150g–200g 紅色紙張，尺寸約 110×200mm，較標準款式大 30%–50%；印刷方式為四色印刷配合燙金，另可選擇浮雕或局部 UV 點綴。設計稿提交後廠方提供免費 AI 預檢與打樣確認，隨即排期生產；標準交期 3-5 個工作天，港九新界免費速遞送抵。\n\n大號利是封 100 個起印，價格由 HK$2.20-7.50/個 起，實際收費視乎紙材與工藝組合而定，批量訂購可向智印港查詢更優惠的報價。"
       },
       "en": {
-        "title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+        "title": "Large Red Packets | Gold Foil | 100 MOQ | ZprintPro",
         "description": "Custom large red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Red Packets 100+ | ZprintPro",
         "keywords": ["large red packets", "custom large red packets", "large red packets printing online", "large red packets free shipping", "large red packets USD", "bulk large red packets", "large red packets DHL", "bespoke large red packets", "large red packets wholesale", "large red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from $0.06", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
@@ -1714,7 +1714,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
+        "title": "大型年賀状 | 箔押し UV エンボス | 100枚〜 | ZprintPro",
         "description": "大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["大型年賀状", "大型年賀状 印刷", "large red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
@@ -1745,7 +1745,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "掛牆年曆向來是家庭與辦公室最實用的年度用品，標準 A3 或 A2 掛牆尺寸配上 13 頁設計（封面加 12 個月），掛在大門、客廳或會議室牆上，每天抬頭可見，讓品牌全年持續曝光。紙材可選 250g 至 300g 銅版紙或啞粉紙，四色柯式或數碼印刷呈現細緻色彩，配合金屬圈裝訂與打掛孔，掛起穩固、翻頁順暢，無論家居自用還是公司展示都恰到好處。\n\n每年踏入 9 月，正是籌備來年月曆訂製的黃金季節，不少公司會趁這段時間把掛牆年曆納入年度月曆印刷計劃，一次過印足全年所需，避免臨近年底才趕工。掛牆年曆亦常見於零售店、診所、美容院等場所，掛在當眼位置就是全年免費廣告位；家庭用戶則可印上家庭照或寵物照，令實用年曆同時成為家居裝飾。一次印齊一年所需，慳時間之餘亦慳成本。\n\n下單後約 7–10 個工作天交付，港九新界一律免費速遞。\n\n收費按 HK$3-8/本 計算，最低起印量 1000 本，量大價優，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+        "title": "Wall Calendars | Wire-Bound | 1000 MOQ | ZprintPro",
         "description": "Custom wall calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Wall Calendars 100+ | ZprintPro",
         "keywords": ["wall calendars", "custom wall calendars", "wall calendars printing online", "wall calendars free shipping", "wall calendars USD", "bulk wall calendars", "wall calendars DHL", "bespoke wall calendars", "wall calendars wholesale", "wall calendars pricing", "calendar printing", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
@@ -1788,7 +1788,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "座檯年曆以三角形座檯設計穩固企立，放在辦公桌、接待處或收銀枱上都不易倒下，配合 A5 或 A4 尺寸佔位恰到好處，讓員工與客戶每日都能看到品牌資訊，是辦公室與店舖最穩定的日常廣告位。紙材選用 200g 至 250g 銅版紙或卡紙，四色數碼或柯式印刷，配三角座架與騎馬釘或膠裝，翻頁順手、耐用一整年。\n\n每年 9 月前後是月曆訂製季節的開端，不少企業會趁這段時間為來年準備座檯月曆印刷，放在每位員工的辦公桌或接待前枱，全年品牌接觸；座檯年曆亦常見於銀行、保險、地產代理等前線行業，作為送客小禮品，日日入眼、印象自然加深，比單次宣傳品更持久。每日一見，品牌自然記入腦海，是性價比極高的常駐廣告。\n\n下單後7-10 個工作天交貨，港九新界免費速遞。\n\n以上收費每本 HK$3-8，最低起印量 1000 本；大批量落單可享更優惠價格，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+        "title": "Desk Calendars | Wire-Bound | 1000 MOQ | ZprintPro",
         "description": "Custom desk calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Desk Calendars 100+ | ZprintPro",
         "keywords": ["desk calendars", "custom desk calendars", "desk calendars printing online", "desk calendars free shipping", "desk calendars USD", "bulk desk calendars", "desk calendars DHL", "bespoke desk calendars", "desk calendars wholesale", "desk calendars pricing", "calendar printing", "wall calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
@@ -1823,14 +1823,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "定制年曆 | 企業禮品 多款式 | 智印港",
+        "title": "定制年曆 | 企業禮品 多款式 | 1000本起 HK$3起 | 智印港",
         "description": "定制年曆/定制年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。智印港提供專業定制年曆服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["定制年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆", "2026年曆印刷", "2026座枱曆", "2小時取", "A5日曆", "ESG年曆", "企業掛曆", "個人日曆定製", "免費設計年曆", "公司掛曆定製", "再生紙年曆", "即日取年曆印刷", "可撕式年曆", "學校年曆", "家庭年曆", "年曆印刷 500個", "座枱曆印刷", "急件掛曆", "批量年曆", "掛曆 HK$8起", "掛曆印刷 多少錢", "新年掛曆", "旺角年曆", "照片日曆", "環保掛曆", "社福掛曆", "節慶年曆", "節日主題掛曆", "簡約年曆", "精裝日曆", "綠色企業掛曆", "聖誕掛曆"],
         "body": "定制年曆主打專屬設計，每頁都可以印上公司的產品、服務或活動資訊，例如產品圖、優惠日程、節慶日期等，十二個月十二個版面，讓客戶每個月都收到不同的品牌訊息；配合 250g 至 300g 藝術紙或銅版紙，四色柯式或數碼印刷，加上燙金、局部 UV、金屬圈或騎馬釘等後加工，質感媲美禮品級數，是企業送客戶的最佳選擇。\n\n臨近 9 月的月曆訂製季節，不少企業會把定制年曆當作年度禮品主力，趁旺季前落實設計與月曆印刷安排，確保年底前能送到客戶手上；尺寸可選 A3、A4 或完全客製，無論是氣勢十足的大版面還是精緻小巧的冊子都做得來，最適合品牌形象鮮明、想與眾不同的公司，把年曆變成流動的企業畫冊。\n\n下單後7-10 個工作天交貨，港九新界免費速遞。\n\n定價每本 HK$3-8，最低起印量 1000 本，具體費用視乎後加工與尺寸而定，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Custom Calendars | Free Shipping $99+ | ZprintPro",
+        "title": "Custom Calendars 2027 | 1000 MOQ | $0.40 | ZprintPro",
         "description": "Custom custom calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Custom Calendars 100+ | ZprintPro",
         "keywords": ["custom calendars", "custom custom calendars", "custom calendars printing online", "custom calendars free shipping", "custom calendars USD", "bulk custom calendars", "custom calendars DHL", "bespoke custom calendars", "custom calendars wholesale", "custom calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
@@ -1868,7 +1868,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "迷你年曆小巧便攜，尺寸約 85×55mm 或 90×60mm，跟信用卡大小相若，可以放入錢包、銀包或衫袋，隨時掏出來查日期，是年輕人喜愛的創意禮品。紙材選用 150g 至 200g 銅版紙或卡紙，四色數碼印刷，配騎馬釘或單張裁切，輕薄之餘色彩依然鮮明，印上品牌 logo 與聯絡資料，就是隨身攜帶的宣傳品。\n\n這類細小年曆特別適合在 9 月起的月曆訂製季節派發，無論是展會、市集、校園活動還是開幕禮，派到手上即時使用、長期保留，宣傳壽命遠比傳單長；亦常見於信用卡公司、電訊商、咖啡店等品牌作為會員小禮物，成本輕、覆蓋廣，令品牌在人群之中低調但持續曝光，尤其適合預算有限又想日日見到品牌的新品牌與小店。\n\n約 7–10 個工作天交貨，並提供港九新界免費速遞服務。\n\n每本收費 HK$3-8，最低起印量 1000 本，量大價優，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+        "title": "Mini Calendars | Wire-Bound | 1000 MOQ | ZprintPro",
         "description": "Custom mini calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mini Calendars 100+ | ZprintPro",
         "keywords": ["mini calendars", "custom mini calendars", "mini calendars printing online", "mini calendars free shipping", "mini calendars USD", "bulk mini calendars", "mini calendars DHL", "bespoke mini calendars", "mini calendars wholesale", "mini calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
@@ -1914,7 +1914,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+        "title": "フォトフレームカレンダー | 1000部〜 ¥50〜 | ZprintPro",
         "description": "フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["フォトフレームカレンダー", "フォトフレームカレンダー 印刷", "photo frame calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
@@ -2231,7 +2231,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "易拉寶是展會、路演最常見的便攜展示工具，鋁合金支架配可反捲畫面，一個人幾分鐘即可裝好，毋須工具或師傅到場，攤位佈置、酒店簽到、商場快閃店都合用。畫面選用 PET／PVC 片或防水合成紙，以噴繪或 UV 印刷輸出，色彩鮮明之餘亦防水耐用，適合室內及半戶外位置。\n\n常見尺寸由 850×2000mm 至 1200×3000mm 級，店內促銷、開業活動、講座登記可按空間揀合適高度；展會人流多或通道有風時，可選加重桿增加穩定性，攜帶及存放則配牛津布袋或硬殼箱保護畫面。用完收返筒內，下場活動再打開即可重複使用，跨境電商品牌、同人攤位等頻繁參展的用家尤其受惠。\n\n與車身廣告的長期戶外流動曝光不同，易拉寶更適合室內及短中期活動，畫面隨時更換，配合不同主題即換即用；下單後 1–3 個工作天交貨，港九新界免費速遞。\n\n交稿規範：易拉寶常見 850×2000mm 至 1200×3000mm 級尺寸，選用 PET／PVC 片或防水合成紙配鋁合金支架；設計檔案建議 300 DPI、CMYK 色彩模式，字體外框化處理，確認稿後按材質以噴繪或 UV 印刷生產，可選加重桿、牛津布袋或硬殼箱。\n\n收費以套計算，每套易拉寶 HK$85-300，100 套起印；批量訂購價格更優惠，歡迎查詢。"
       },
       "en": {
-        "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+        "title": "Roll-up Banners | Wind-Resistant | 100 MOQ | ZprintPro",
         "description": "Custom roll-up banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Roll-up Banners 1+ | Wind-Resistant | ZprintPro",
         "keywords": ["roll-up banners", "custom roll up banners", "roll up banners printing online", "roll-up banners free shipping", "roll-up banners USD", "bulk roll-up banners", "roll-up banners DHL", "bespoke roll-up banners", "custom roll-up banners", "roll up banners wholesale", "banner printing", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
@@ -2273,7 +2273,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "背膠噴繪自帶背膠，撕開底紙即可直接貼上牆面或玻璃，毋須框架或安裝工具，是店鋪裝飾和活動佈置常見的即貼方案。按場景可選 PVC 車貼、可移膠或透明膜，以溶劑、弱溶劑或 UV 噴繪輸出，畫面鮮艷，商場櫥窗、展覽背板、短期活動佈置都合用。\n\n施工前確認底材清潔即可直接上牆，玻璃內外各貼一張可形成雙重視覺效果，霧面護膜則可降低燈光反光；需要特別形狀時可做異形裁切，貼上金屬欄杆或木板都無問題。可移膠版本日後拆除不留殘膠，適合租用場地或短期宣傳，活動完結即可還原牆面，慳返翻新工夫。\n\n與易拉寶需要支架擺放不同，背膠噴繪直接貼上牆身，不佔地面空間，走廊、電梯大堂、活動入口都適用；亦不同於車身廣告的流動曝光，背膠噴繪屬定點即貼即用。下單後 1–3 個工作天交貨，港九新界免費速遞。\n\n交稿規範：背膠噴繪按客製長寬平方米計，選用 PVC 車貼、可移膠或透明膜；檔案以 300 DPI、CMYK 色彩模式為佳，字體外框化，確認稿後以溶劑、弱溶劑或 UV 噴繪生產，可選霧面護膜或異形裁切。\n\n收費按客製面積計算，背膠噴繪每平方米 HK$10-45，100 平方米起印；量大價格更優惠，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+        "title": "Adhesive Banners | Wind-Resistant | 100 MOQ | ZprintPro",
         "description": "Custom adhesive banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Adhesive Banners 1+ | Wind-Resistant | ZprintPro",
         "keywords": ["adhesive banners", "custom adhesive banners", "adhesive banners printing online", "adhesive banners free shipping", "adhesive banners USD", "bulk adhesive banners", "adhesive banners DHL", "bespoke adhesive banners", "adhesive banners wholesale", "adhesive banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
@@ -2304,7 +2304,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "汽車車身貼 | 車身廣告 全車包覆 | 智印港",
+        "title": "汽車車身貼 | 車身廣告 全車包覆 | 100張起印 | 智印港",
         "description": "車身貼/車身貼 1 套起。採用 車身貼 PVC 高品質材質，支援 訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。智印港提供專業車身廣告服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["車身貼", "車身廣告", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "舞台背景", "門型展架", "A0噴繪", "PP紙噴繪", "任何尺寸噴繪", "即日取噴繪", "可拆卸背板", "含安裝", "噴繪廣告", "噴繪按呎計價", "圍板噴繪", "地貼噴繪", "夜間招牌", "婚禮背景板", "室內噴繪", "展會噴繪", "展覽背板噴繪", "店舖開業噴繪", "戶外噴繪", "抗UV噴繪", "按呎計價", "旺角噴繪", "求婚佈置", "燈箱布", "燈箱廣告", "生日噴繪", "經濟噴繪", "背景板噴繪", "透光噴繪", "透明報價", "開業橫額", "防水PVC", "高清防水噴繪"],
@@ -2470,14 +2470,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 智印港",
+        "title": "公司膠裝書 覆膜・騎馬釘・10本起印・HK$16起 | 智印港",
         "description": "膠裝書/膠裝書 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。智印港提供專業無線膠裝書籍服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["膠裝書", "膠裝書印刷", "印刷書籍"],
         "body": "無線膠裝書籍以平整牢固的書脊見稱，適合 48 至 400 頁的中厚型出版物，是學術論文集、年度報告、CSR 社會責任報告與文學作品集的首選。內頁以 157g 至 200g 銅版紙印刷，封面選用 200g 至 250g 銅版紙，四色柯式印刷配合啞膜或光膜覆膜；書脊上更可印上書名、條碼或 ISBN，方便上架與整理。\n\n企業發布年度報告或社會責任報告時，書脊印字能讓書本在書架上清楚易辨，提升專業形象；學術論文集與文學作品集則講求耐翻與整齊。印書選擇裝訂時，頁數是主要考慮：較薄的冊子可用騎馬釘裝訂，經濟而展開平整；中厚型的正式出版物則以膠裝較為穩妥，書脊結實、不易散頁。\n\n交稿規範：內頁 157g–200g 銅版紙，封面 200g–250g 銅版紙，四色柯式印刷，膠裝、封面覆膜（啞膜／光膜）；A4 或 A5 尺寸。檔案以 InDesign／PDF 提交，300dpi、CMYK、預留 3mm 出血位。下單後 5-10 個工作天交貨，港九新界免費速遞。\n\n收費方面，無線膠裝書籍每本約 HK$16 至 HK$80，100 本起印，實際單價視頁數、尺寸與封面加工而定，量大價優，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+        "title": "Perfect Bound Books | 10 MOQ | From $4.60 | ZprintPro",
         "description": "Custom perfect bound books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Perfect Bound Books 100+ | ZprintPro",
         "keywords": ["perfect bound books","custom perfect bound books","perfect bound books printing online","perfect bound books free shipping","perfect bound books USD","bulk perfect bound books","perfect bound books DHL","bespoke perfect bound books","perfect bound books wholesale","perfect bound books pricing"],
@@ -2508,7 +2508,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 智印港",
+        "title": "公司精裝書 燙金・局部UV・10本起印・HK$40起 | 智印港",
         "description": "精裝書/精裝書 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。智印港提供專業精裝書籍服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["精裝書", "印刷書籍"],
@@ -2553,7 +2553,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "線圈筆記本採用金屬或塑料 YO 圈裝訂，可完全翻轉、方便書寫，是企業禮品、補習社教材、培訓手冊與校園紀念本的熱門之選。內頁以 80g 至 100g 書紙或道林紙印刷，輕薄不反光、書寫流暢；封面選用 200g 銅版紙或 PP 材質，配合四色數碼印刷與覆膜，耐用而美觀，更可一次過印製多款封面作系列套裝。\n\n企業送禮或學校訂造教材，最重視實用與可重複使用；YO 圈設計可隨時加頁或拆換內頁，比固定裝訂更靈活。想印書作教材或紀念本時，可按頁數與用途選擇裝訂：內容較薄、以閱讀為主可考慮騎馬釘書刊，以書寫、翻頁方便為主則線圈筆記本更就手，兩者各有用武之地。\n\n交稿規範：內頁 80g–100g 書紙或道林紙，封面 200g 銅版紙或 PP，四色數碼印刷，YO 圈或螺旋裝訂，封面覆膜；A5 或 B5 尺寸。檔案以 InDesign／PDF 提交，300dpi、CMYK、預留 3mm 出血位。下單後 5-10 個工作天交貨，港九新界免費速遞。\n\n收費方面，線圈筆記本每本約 HK$8 至 HK$40，100 本起印，單價因頁數、尺寸與封面材質而異；企業大批採購更可享優惠報價。"
       },
       "en": {
-        "title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+        "title": "Spiral Notebooks | Perfect Bound | $2.76 | ZprintPro",
         "description": "Custom spiral notebooks from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Spiral Notebooks 100+ | Perfect Bound | ZprintPro",
         "keywords": ["spiral notebooks","custom spiral notebooks","spiral notebooks printing online","spiral notebooks free shipping","spiral notebooks USD","bulk spiral notebooks","spiral notebooks DHL","bespoke spiral notebooks","spiral notebooks wholesale","spiral notebooks pricing"],
@@ -2647,7 +2647,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
+        "title": "カラー封筒 | 両面印刷 マルチサイズ | 100枚〜 | ZprintPro",
         "description": "カラー封筒のカラー封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Colorful printing",
         "keywords": ["カラー封筒", "カラー封筒 印刷", "colored envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
@@ -2719,7 +2719,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "婚禮邀請函、品牌週年晚宴、新店開幕酒會——這些場合的邀請，未拆信已是一場視覺鋪排。珠光信封採用珠光或冰白特種書紙，紙面帶含蓄閃耀質感，在燈光下隱隱生輝，正好襯托高端活動的格調，讓賓客由收信一刻已感受到活動的隆重。信封印刷的質感，正是婚禮主題的第一步呈現。\n\n四色或專色印刷之外，更可選燙金、擊凸等後加工，將新人名字或品牌標誌以立體金箔呈現，整封信的質感再上一層。訂製信封用於婚禮邀請與高端活動時，印刷細節往往比內容更早打動人心；同一組設計亦可延伸至感謝卡與回禮，令整個活動的視覺風格一脈相承。紙面光芒在宴會燈光下尤其突出，賓客拍照留念時更顯氣派。\n\n珠光信封 100 個起印，單價由 HK$1.15-5.20/個 起，視乎後加工選項而定，量大可再議優惠。\n\n尺寸可選 DL、C5、C4，配合自黏封口、開窗或擊凸等加工；以四色／專色印刷，可選燙金。下單後3-5 個工作天交貨，港九新界免費速遞。"
       },
       "en": {
-        "title": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
+        "title": "Pearl Envelopes Printing | 100 MOQ | $0.46 | ZprintPro",
         "description": "Custom pearl envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Pearl Envelopes 100+ | ZprintPro",
         "keywords": ["pearl envelopes", "custom pearl envelopes", "pearl envelopes printing online", "pearl envelopes free shipping", "pearl envelopes USD", "bulk pearl envelopes", "pearl envelopes DHL", "bespoke pearl envelopes", "pearl envelopes wholesale", "pearl envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from $0.06", "from $0.10", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
@@ -2770,7 +2770,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+        "title": "練習帳 | 中綴じ 無線綴じ | 10冊〜 ¥258〜 | ZprintPro",
         "description": "練習帳の練習帳は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "School exercise books",
         "keywords": ["練習帳", "練習帳 印刷", "exercise books", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
@@ -2847,7 +2847,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "校園宣傳資訊繁雜，從開學通告、家長會通知，到校園月刊、校史特刊與校友會刊，每一份都需要清晰易讀、派發便捷。學校單張以 A4 或 A5 尺寸最為常見，採用 128g–157g 銅版紙或書紙，四色數碼印刷令相片與圖表色彩準確，可按需要加上覆膜保護，即使經歷雨季在校園內派發亦不易變形，是學校與家長之間最直接的溝通橋樑。\n\n除了日常通告，學校單張亦常見於活動傳單與招生宣傳，補習社課程單張、開放日指南、課外活動報名表均可一併印製。資訊量大的內容可選 A4，輕巧隨身版則選 A5，配合四色數碼印刷的彈性起印量，讓校園宣傳不留死線壓力。若學期內同時準備證書印刷與活動單張，又或規劃月曆訂製等紀念品，把各類校園印刷品集中處理，更易掌握交期與預算。\n\n選用 128g–157g 銅版紙或書紙，A4 或 A5 尺寸，四色數碼印刷，覆膜可選。10 張起印，港九新界免費速遞，順豐速遞上門，48 小時香港本地速遞。\n\n學校單張以每張 HK$0.2–0.8 起計算，10 張起印，適合校刊、通告與活動傳單的小批量印製；批量派發更可享更划算的單張價。"
       },
       "en": {
-        "title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+        "title": "School Flyers | Same-Day Printing | 10 MOQ | ZprintPro",
         "description": "Custom school flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "School Flyers 100+ | Same-Day Printing | ZprintPro",
         "keywords": ["school flyers", "custom school flyers", "school flyers printing online", "school flyers free shipping", "school flyers USD", "bulk school flyers", "school flyers DHL", "bespoke school flyers", "school flyers wholesale", "school flyers pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
@@ -2925,7 +2925,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港",
+        "title": "磁吸翻蓋禮盒印刷 | 高端定製 48小時交貨 | 100個起 | 智印港",
         "description": "磁吸翻蓋禮盒印刷 100 個起, 採用 1200g 高密度灰板外裱特種紙, 磁吸開合儀式感強, 適合高端產品包裝、珠寶、奢侈品、月餅。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 灰板通過 FSC 認證, 免費打樣, 支持燙金、壓凹、局部光油。",
         "h1": "磁吸翻蓋禮盒",
         "keywords": ["磁吸翻蓋禮盒", "禮盒印刷", "高端禮盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -3051,7 +3051,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+        "title": "拼版白卡彩盒印刷 (免刀模費) | 500個起 8-15天交期 | 智印港",
         "description": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型, 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。**拼版白卡彩盒 香港無對手價**: 500 枚飛機盒起 HKD 129, 1000 枚 HKD 171。",
         "h1": "拼版白卡彩盒印刷 (免刀模費)",
         "keywords": ["拼版白卡彩盒", "免刀模費", "白卡彩盒", "拼版彩盒", "標準尺寸彩盒", "飛機盒", "扣底盒", "雙插盒", "跨境電商彩盒", "美妝包裝盒"],
@@ -3065,7 +3065,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "Gang-run white card boxes are the cost-smart way to get premium printed packaging without paying for custom tooling. Because every order shares a fixed die-cut mold, there is no die-cut fee and production cost drops 40-60% compared with fully custom boxes — savings you can reinvest in finishing touches like foil or spot UV.\n\nThe line is a favourite for beauty and skincare labels that need cosmetic packaging low minimums, plus restaurants, retail boutiques and cross-border e-commerce sellers ordering in the 500-10,000 piece bracket. Subscription box operators and brand activation teams get consistent construction across every size, while wedding and event planners use the eight standard sizes for favor packaging without commissioning a dedicated mold.\n\nBecause production is consolidated gang-run with no rush slots, lead times stay honest at 8-15 days — a fair trade for the saving on every unit. For brands testing a new look, the low entry point and four paper stocks make it easy to pilot a design across airplane, lock-bottom and double-tuck styles before scaling up.\n\nChoose from 350g or 400g single-side coated board, 375g silver card or 375g holographic silver, in three box styles and eight standard sizes from 60x40x20mm to 200x150x80mm. A matte or gloss film comes standard; foil stamping, spot UV, and embossing add brand texture, while white ink and reverse UV treatments are built in for the silver-card stocks.\n\nPricing ranges from HK$129 to HK$17,214 with a 500-piece minimum and free shipping on orders over $500. Production runs 8-15 days, DHL Express delivers to the USA in 2-4 days and FedEx Ground in 5-7, backed by an ISO 9001 certified factory in Asia, 15+ years of experience, 15,000+ clients across 100+ countries, free design mockups and free sample approval.\n\n**FAQ**\n\n**Q1: Why are gang-run boxes cheaper?**\nA1: Orders share a fixed die-cut mold, so there is no die-cut fee and production cost drops 40-60% compared with custom tooling.\n\n**Q2: What sizes and styles are available?**\nA2: Eight standard sizes from 60x40x20mm to 200x150x80mm, in airplane, lock-bottom and double-tuck styles with matte or gloss lamination included.\n\n**Q3: Can I add premium finishing?**\nA3: Yes — foil stamping, spot UV, embossing and lamination upgrades are available, with white ink and reverse UV on the silver-card stocks.\n\nReady to order? Get a free digital proof within 1 hour, or request a free quote for cosmetic packaging and other custom runs — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
-        "title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+        "title": "合版カードボックス (型代不要) | 8-15日 | ZprintPro",
         "description": "合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。**香港無競合価格**: 500 個から ¥3,800、全国送料込み、沖縄・北海道も同料金。",
         "h1": "合版ホワイトカードボックス (型代不要) · 8-15日納期",
         "keywords": ["合版ホワイトカードボックス", "型代不要", "ホワイトカード箱", "標準サイズ箱", "飛行機箱", "ロック底箱", "両挿箱", "越境EC包装箱", "小ロット包装箱"],
@@ -3091,7 +3091,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港",
+        "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 500張起 | 智印港",
         "description": "水果及食品標籤印刷 500 張起, 採用防水 PVC 或 PP 合成紙, 通過 SGS 食品接觸安全認證, 適合水果店、有機食品、烘焙店、外賣包裝。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 耐低溫防霧氣設計, 表面防水防油, 支持可變序號、二維碼 | 即時報價",
         "h1": "水果及食品標籤印刷",
         "keywords": ["水果標籤", "食品標籤", "防水標籤", "標籤印刷", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "食品級貼紙", "高透貼紙"],
@@ -3133,7 +3133,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "同人誌印刷 10本起印 | Comiket前24小時特急対応",
+        "title": "同人誌印刷 10本起印 | Comiket前24小時特急對應 | 智印港",
         "description": "同人誌 / Comiket / 即售會專用同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色,10 本起印,Comiket 會期前 24 小時特急対応。自営工場 DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
         "h1": "同人誌印刷 - Comiket / 即售會 / 創作展特化服務",
         "keywords": ["同人誌印刷", "同人誌", "Comiket 印刷", "即售會印刷", "同人活動", "A5 同人誌", "少數量印刷", "同人誌急件"],
@@ -3231,7 +3231,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備",
+        "title": "罐型襟章印刷 57mm 76mm | Comiket 應援必備 | 智印港",
         "description": "罐型襟章(缶バッジ)印刷專家。57mm 標準 + 76mm 大尺寸 + 44mm 迷你,標配安全扣,彩色印刷,10 件起印。Comiket 場售 / 推し活 / 活動物販首選。DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
         "h1": "罐型襟章印刷 57mm 76mm - 推し活 / Comiket 必備周邊",
         "keywords": ["罐型襟章印刷", "缶バッジ", "襟章", "推し活周邊", "Comiket 印刷", "VTuber 周邊", "動漫周邊", "安全扣襟章"],
@@ -3329,7 +3329,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選",
+        "title": "環保托特袋 有機棉 100% | Comiket 場售首選 | 智印港",
         "description": "100% 有機棉托特袋。絲網 / DTG 印刷支援,推し活 / Comiket 物販 / ESG 禮贈品專用。FSC 認證布料,可收納 A4 尺寸,10 件起印。DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
         "h1": "環保托特袋 100% 有機棉 - 推し活 / Comiket / ESG 周邊",
         "keywords": ["環保托特袋", "有機棉托特袋", "FSC 認證布料", "推し活周邊", "Comiket 印刷", "ESG 禮贈品", "企業活動周邊", "托特袋印刷"],
@@ -3392,7 +3392,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "The yearbook is the one print job a school cannot postpone — every graduate expects it at the ceremony. ZprintPro prints graduation yearbooks, school anniversary and alumni publications with three binding options, supporting class photos, faculty messages and school logos throughout, plus a free design mockup before production begins.\n\nHigh school and college yearbook committees collect hundreds of class photos and faculty messages into one volume, and our workflow takes them from layout to print. Saddle stitch suits a compact 32–80 page yearbook at the lowest cost, with spreads running across pages; perfect bound PUR covers 80–200 pages with a printable spine; and hardcover reaches 80–400 pages with grey board, art paper, foil stamping and archival quality for anniversary editions.\n\nAlumni associations and churches commission anniversary publications and reunion keepsakes on a recurring schedule, while training institutes and tutoring centers add year-end memento books alongside their term materials. Committees that already use our school exercise book printing for the classroom find the same calendar discipline here: confirm files before the season's peak so delivery lands before graduation day.\n\nYearbooks print with four-color accuracy on art paper, and the hardcover option builds a premium, archival feel from art paper over grey board. The free design mockup shows how class photos and school logos will sit on the page before you approve the digital proof.\n\nYearbooks start at HK$45 per copy with a 50-copy minimum. After you approve the free design mockup and digital proof, DHL Express delivers from our Asia factory worldwide in 2-4 days — free on US orders over $99.\n\n**FAQ**\n\n**Q1: Which binding should we choose?**\n\nSaddle stitch for 32–80 pages, perfect bound PUR for 80–200, and hardcover for 80–400 pages with archival quality.\n\n**Q2: Do you provide a design mockup?**\n\nYes — yearbook orders include a free design mockup before production begins.\n\n**Q3: Can class photos and faculty messages be included?**\n\nYes — class photos, faculty messages and school logos are all supported in the layout.\n\nMake graduation unforgettable — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
-        "title": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+        "title": "卒業記念アルバム印刷 50冊〜 | 中綴じ/無線綴じ | ZprintPro",
         "description": "卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、50 冊から対応。中綴じ / 無線綴じ / 上製本の 3 方式、クラス写真・先生メッセージ・学校ロゴ全面対応。日本向け DHL Express 2-4 日配送、無料デザインモックアップ。",
         "h1": "卒業記念アルバム印刷 — 50 冊〜 · 3 種類の製本",
         "keywords": ["卒業記念アルバム", "校史特刊", "同窓会誌", "クラブ特刊", "卒業アルバム印刷", "無線綴じ", "中綴じ", "上製本", "FSC 認証", "日本向け"],
@@ -3469,7 +3469,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港",
+        "title": "400g 超厚名片印刷 | 燙金壓紋 | 10張起 HK$1.2起 | 智印港",
         "description": "燙金名片",
         "h1": "新年名片",
         "keywords": [
@@ -3487,7 +3487,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "thick business cards"
       },
       "ja": {
-        "title": "厚口400g名刺印刷 | 箔押し・エンボス | ZprintPro",
+        "title": "厚口400g名刺印刷 | 箔押し・エンボス | 10枚〜 | ZprintPro",
         "description": "商務名片定制",
         "h1": "高級名片印刷",
         "keywords": [
