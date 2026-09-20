@@ -100,6 +100,11 @@
 | 13 | **三语标题合规审计 8 项发现** | 🔴/🟠 见 §9 `2026-09-21 00:03` 段 | 全量 300 槽实测（当量/品牌/长尾 3 筛选/GSC 1164 查询实证/量词/CSV↔TS 分叉 219 槽）；**K3 已裁 6 项，余 2 项待执行**（src 修复批 + 生成器 C 方案） |
 | 14 | `企業禮品`/`Comiket/應援` 定性 | 🟡 **K3 未裁** | 3+5 槽，GSC 0 实证：按「长尾词」清出 title 还是按「钩子/语境」豁免——请示中；企業禮品相关年历词 G3 上段，窗内数据可辅助判断 |
 | 15 | L1-1 SERP 实查 7 条零点击好位置词 | 🟡 窗内动作，未执行 | `食品包裝印刷/a6 尺寸/small batch sticker printing/小冊子印刷/大信封/small batch stickers/邊度有紙袋買`（GSC 9/18：pos 4.4–10、0 点击）→ 三选一清单（改标题/改落点/不可抢），是窗后第一批标题动作的输入 |
+| 16 | **月曆页内 MOQ 自相矛盾 + 全站「50 本起印」旧口径家族** | 🟡 **K3 2026-09-21 00:28 已拍 MOQ 口径**（内容批用），文案改动待内容批 | ① 实证：月曆族 6 SKU minQ=1000（products.ts）+ 线上 hero 一致，但 `products-content.ts:7663/7775`「已服務客戶」段写「50 本起印」→ 页内矛盾 2 处；② 同族残留：buying-guides.ts L733/745/747/749/750「書刊 50 本起印（數碼印刷）」×5、blog-posts.ts:1476「迷你月曆 50 本起印」×1；③ **K3 拍板 SSoT**：「数码一本起，到 200 本可以，批量印刷 300 本起」——内容批按此统一全部 MOQ 文案；④ 待裁挂起：products.ts 数据层 minQuantity 是否跟进该口径（影响报价引擎，未获指令不动） |
+| 17 | **P1 · 2小時打稿残留用户可见层**（sku-seo-data.ts） | 🟡 待内容批（K3「1小时为统一值」拍板已覆盖） | e569c4a5 只扫了 body 主文案；残留：**description 4 处**（small-batch-stickers zh-hk「免費 2 小時數碼打稿」/leaflets「免費 2 小時打稿」/a2-posters「即日打稿 2 小時」/食品包裝「免費 2 時打稿」）+ **body FAQ 9 处**（leaflet/poster 族 Q&A「即日打稿 2 小時」）；keywords 数组另有 ~35 处「2小時取件/2小時快印」（P2，meta keywords 非可见但仍应统一）。同族：避坑 18「数据层与文案层只落一半」——e569c4a5 是本坑新实录 |
+| 18 | **P1 · small-batch-stickers zh-hk MOQ 页内自相矛盾** | 🟡 待内容批 | title「10 張起」vs description「50 張起印」vs body「10 張起印 / 小批量系列可低至 50 張 / 100 張」——同一页 3 种起印量。GSC 主力页（en 396 展示 pos 17.8），页内矛盾伤转化，随 #17 同批清 |
+| 19 | **🟠 · en 页美国定位 vs HK 英文搜索者错配**（SERP 实锤 2026-09-21） | 结构性，待 K3 裁 | gl=hk 下 Google 把 en 页排进「small batch sticker(s) printing」SERP，但 en 页全程美国定位（$0.045、4-day USA delivery、$99 free ship）——HK 搜索者看到无关承诺 = 0 点击结构性原因之一；zh-hk 页已有 HK$ 钩子但吃不到英文词。短期动作 = Offer schema 补价格富媒体（窗内可做）；战略选项（en 页加 geo 提示/hreflang 强化/或建 en-hk 变体）待裁 |
+| 20 | **🟡 · paper-bags 品类页被 Google 改写标题**（SERP 实锤） | 低 | SERP 显示「手挽紙袋 智印港」而非 product-seo.ts 的「環保紙袋 香港 定製 | 牛皮紙袋/禮品紙袋燙金 | ZprintPro」→ Google 判现 title 与「邊度有紙袋買」查询意图不匹配，回退用 H1。品类 title 差异化不足的信号；品类 title 非 SKU title（不受 9/30 窗约束），改时一次到位低 churn |
 
 ---
 
@@ -428,3 +433,70 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 4. `title-verify-window.json`：重置已修槽起算日
 5. 生成器 C 方案 + CSV 回灌脚本（scripts/，dry-run → apply，断言：key 数 100 不减、CSV title 列回灌后与 ts 逐字一致、全量 regen 输出与现行 ts 逐字一致）
 6. 预检 3 步（encoding / tsc / smoke）→ 单 commit → push → CF 三段验证
+### 2026-09-21 00:28 · 月曆 MOQ 矛盾登记 + K3 MOQ 统一口径拍板
+
+**K3 原话**：「月曆 MOQ=1000 已实证（products.ts + 线上 hero 一致）；但同页『已服務客戶』段写『50本起印』——页内文案自相矛盾，登记为新发现，待内容批处理。」
+「统一回复，数码一本起，到200本可以，批量印刷300本起。」
+
+**实证补充**（本会话 grep，比原登记更宽）：
+- 月曆族 6 SKU minQuantity=1000 全核实（wall/desk/custom/mini/photo-frame/magnetic）；矛盾点 = `products-content.ts:7663` 与 `:7775`「已服務客戶」段「50 本起印」×2。
+- 「50 本起印」是**旧数码口径全站家族**：buying-guides.ts L733/745/747/749/750 ×5（書刊类）+ blog-posts.ts:1476 ×1（迷你月曆）。
+- K3 拍板口径 SSoT：**数码 1 本起（≤200 本均可）／批量（柯式）300 本起** → 内容批统一基准，全部上述点位按此改写。
+
+**执行纪律**：
+- 只登记，不动文案（K3 明示「待内容批处理」）。
+- 数据层挂起：products.ts minQuantity（含月曆=1000）**不跟进**该口径——K3 明言月曆 MOQ=1000 已实证；其他 SKU 数据层 MOQ 是否按「数码1/批量300」重排，影响报价引擎，**待 K3 专项拍板**，内容批不得越权代改。
+- 与 §5 #6 同族（避坑 18「只落一半」）：标题层已清，内容层这批是最后残留。
+
+### 2026-09-21 00:50 · L1-1 SERP 实查 7 词判定表（K3 00:29 指令「穷尽100%能力分析研究后按最优执行」）
+
+**数据来源**：GSC 9/18 new 28d（`.hermes/gsc-2026-09-18/`：opps.txt / analysis-pages.md）；SERP 实查 = kimi-webbridge 真实浏览器 google.com.hk gl=hk / google.com gl=us-hk，2026-09-21 00:33–00:37 逐词截图+快照（截图在 `%TEMP%\kimi-webbridge-screenshots\`，会话 `serp-l1-check`）。预期点击 = 带内 CTR 折算，**统计折算非承诺**。
+
+**7 词实查结论**（imp/pos/clk = GSC 9/18）：
+
+| 查询 | GSC | SERP 实锤（2026-09-21） | 判定 | 最优动作 |
+|---|---|---|---|---|
+| 食品包裝印刷 | 145/6.65/0 | 无 AI/本地/购物包，10 蓝链干净；我们 #5 = 知識博客「完全指南」；前 4 全是 HK 包裝服务商 | **改落点+内容层** | 博客首屏加 AEO 价錢速覽答案块 + CTA 链品类页；品类页 title/meta 一次到位（非 SKU title，不受 9/30 窗）；预期 145 imp × CTR 1-2% ≈ 1-3 clk/28d |
+| a6 尺寸 | 96/8.86/0 | 纯信息型：维基/papersizes/纸张站霸屏，无 AI 总览，我们页 2 | **AEO 内容层·低优先** | a5-vs-a6 博客补「10.5×14.8 cm」精确答句+尺寸表+FAQPage schema 争精选摘要；不指望转化，赚品牌曝光；不动 title |
+| small batch sticker printing | 69/6.61/0 | **深圳本地包置顶 + AI Overview（已引用 ZprintPro ✅）**；Print100 HK$0.06 / e-print HK$42 in-stock 富媒体；我们 pos 4 零点击 | **改标题（排窗后）+数据层现在做** | ① 窗内：Offer schema 补 price/currency/availability 争富媒体；② 窗后：title 修复服务本词+下词两词；结构性错配见 §5 #19 |
+| 小冊子印刷 | 48/10.04/0 | 本地包+**AI 概覽全屏（引用 TIPTOP/E-print，不引用我们）**；PAA「印刷小冊子要多少錢」；我们博客 ~7 | **内容层 AEO 进攻** | 騎馬釘小冊子指南补價格表 + FAQPage 直接答 PAA 问句，目标被 AI 概覽引用；booklets 品类现落点待确认（404 史）后定是否改落点 |
+| 大信封 | 45/4.42/0 | 首屏被 AI 概覽解释**粤语 slang「解僱信」**+香港邮政+维基吃掉 | **不可抢·降级放弃** | 信封品类改打「信封印刷」「A4 信封訂製」商业词；此词 45 imp 均无效曝光，不投入 |
+| small batch stickers | 40/5.53/0 | #1 Print100（HK$0.06+store nearby）、**#2 Reddit 大区块**、#3 图片包（首张=我们的图）；自然结果被压折叠线下 | **改标题（排窗后）+数据层** | 与上同落地页一次修复；Reddit 占位 = Google 视为讨论型意图，产品页难超，从图片包+价格富媒体拿曝光 |
+| 邊度有紙袋買 | 36/7.44/0 | 本地包+AI 概覽（答：去 JUSCO/AEON/Carousell 买）+地图包三重挤压 | **不可抢·短期放弃** | 纸袋品类保持占位；长期靠「訂造紙袋」差异词；Google 已改写品类 title 为「手挽紙袋」（§5 #20） |
+
+**横向新发现**（已登记 §5）：#17 2小時残留 desc/body 13 处用户可见层 · #18 small-batch-stickers zh-hk MOQ 页内矛盾 · #19 en 美国定位 vs HK 英文搜索者错配 · #20 paper-bags 品类 title 被 Google 改写。
+
+**AI Overview 引用战况**：sticker 词已引用 ZprintPro（✅ 品牌进 AI 答案）；小冊子/紙袋词引用竞品（内容进攻目标）；大信封词被 slang 解释吸走（无解）。
+
+**窗内现在就能做（不碰任何 SKU title，至 9/30）**：
+1. Offer schema（price/currency/availability）→ small-batch-stickers + leaflet/poster 族，争富媒体价格展示
+2. 食品包裝指南博客 AEO 答案块（價錢速覽 + CTA）
+3. 小冊子指南 FAQPage + 價格表（答 PAA）
+4. a6 尺寸答句 + 表格 + FAQPage
+5. §5 #17/#18 内容批（2小時残留 + MOQ 矛盾）——随内容批一次清
+
+**窗后队列（9/30 验证窗结束）**：small-batch-stickers en title 修复（服务 2 词）+ 品类页 title 差异化（paper-bags 等，非 SKU title 但同主题低 churn 一次到位）。
+
+**执行状态**：本轮只实查+登记，未改 src、未 push（遵守 §0.35.7 双条件；#17-#20 待 K3 一句「执行」即可开内容批）。
+
+### 2026-09-21 02:40 · L1-1 窗内内容批执行完成（K3 01:57「执行」）— commit 见本节末
+
+**执行范围**（5 项计划全部落地，脚本 `scripts/apply-l1-window-batch-20260921.mjs`，dry-run→apply，计数断言 + 备份 `.hermes/_bak-l1-window-20260921/`）：
+
+1. **#17 打稿 2h→1h 三语全量清扫（规模远超原登记）**：SKU 层 89 处（zh-hk 12 / en 40 / ja 37，含 v2 补漏 `校正 2 時間` ja desc ×2）+ blog 层 14 处（zh-hk 8 / en 3 / ja 3）。原登记「desc 4 + body 9」严重低估（避坑 1 行级计数教训：en/ja 层未纳入首扫）。e569c4a5 只扫了 zh-hk body 主文案。
+2. **#18 small-batch-stickers MOQ 统一为数据层真值 10**（products.ts minQuantity=10）：zh-hk desc 50→10 + body 清「低至 50 張」；en desc 50→10 / body 100-piece→10-piece / h1 50+→10+；ja desc 50→10 / body 100枚→10枚 ×3。**en title「50 pcs」受 9/30 窗冻结，已排窗后队列**（唯一遗留，窗后第一优先）。
+3. **小冊子指南 FAQ 价格问答插入**：saddle-stitch-booklet-printing-guide 现有 FAQ 段插入「印刷小冊子要多少錢？」（HK$6-32/本 真值），extractFaqFromHtml 实测 4→5 组；lastUpdated→2026-09-21。目标：被「小冊子印刷」AI 概览引用（现引用 TIPTOP/E-print）。
+4. **食品包裝指南 / a5-vs-a6 指南**：实查发现两者已有结论先行答案块 + 完整 FAQ（a5-vs-a6 已有 8 组 FAQ 含 A6 精确尺寸），**无需新增内容**——清扫 2h 后即达标。
+5. **Offer schema 核查**：Product JSON-LD 已有完整 Offer（price/currency/availability/shippingDetails，v9.2.2 起 unit-price-anchor 真值链）——SERP 未展示富媒体是 Google 侧选择，非数据缺口，**关闭**。
+
+**避坑实录（v2 干跑 exit 2 抓出，已固化）**：
+- **避坑 19 跨 SKU 共享模板句**：`10 張起印，無開版費、無製版費。小批量系列可低至 50 張。` 全文件 8 处（贴纸族多 SKU 共用），`100-piece minimum` 35 处（en 全族共用），`料金透明：100 枚から` 35 处——**必须块级限定**，全局替换会误伤其他 SKU 真值。
+- **漏网写法变体**：en blog 是无 `free` 前缀的 `digital proof within 2 hours`；ja desc 是 `校正 2 時間`（无 無料デジタル 前缀）——首扫按「最常见写法」枚举必然漏，复扫兜底（未分类 2h = 0）是唯一防线。
+
+**KEEP 类（有意保留，已逐条定性）**：WhatsApp/LINE「2 小時內回覆」类（客服回覆≠打稿，K3 拍板只管打稿）；PDF 預檢/precheck 2h（不同工序）；FDA 運輸時效「陸運 2 小時」；keywords 数组「2小時取件/2時間受取/2小時快印」（P2 待 K3 是否统一取件口径）。
+
+**合规核验**：tsc 54=54 基线 · 门童 #25 title-band 存量 issue 0 · check-brand-mentions --strict PASS · 编码 LF UTF-8 ✅ · 未分类 2h 复扫 = 0。
+
+**并发情况**：batch C 锁 TTL 超时接管（SESSION_LOCK 有声明）；并发 geo-atom 会话 staged 产物（apply-geo-atom-section.cjs + blog-data geo 段）与 blog 同文件，随本批一并提交（攒批，无法也不应拆分——禁代删他人 staged）。
+
+**窗后队列（9/30 验证窗结束执行）**：small-batch-stickers en title「50 pcs」→ 10 pcs（#18 唯一遗留）+ 品类页 title 差异化（paper-bags 等）。

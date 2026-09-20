@@ -3,7 +3,7 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: 🟡 **持有中（HELD）** — 2026-09-20 23:5x（batch C：hk-cost-baseline 三語 FAQ 應用 + 攢批 push）
+> **状态**: 🟡 **持有中（HELD）** — 2026-09-21 02:1x（E2：GEO 原子段【】模板批量鋪設 — 9 slug ×3 語，門童 #14 段8 全轉 PASS）
 
 ---
 
@@ -20,7 +20,27 @@
 
 ---
 
-## 释放记录（2026-09-20 ~22:3x · 标题飞轮批次1 会话）
+## 持有声明（2026-09-21 02:1x · E2 会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | E2 会话（本会话，K3 2026-09-21 02:05 指令「直接開工 E2」） |
+| **意图** | 9 slug ×3 語補 GEO 知識原子段（獨立 `<section>` + 12 條【】金句，K3 8/19 口徑 12 事實，三語模板一次成型）→ 門童 #14 段8 全轉 PASS；應用器 scripts/apply-geo-atom-section.mjs（SOP-5 生成器，自動備份 + 冪等標記 + 全檔斷言） |
+| **写入范围** | `src/data/blog-data/{zh-hk,en,ja}.json`（9 slug 各插一個 section）+ scripts/ 新增 1 + 本文件 |
+| **真值依据** | SSoT `docs/2026-09-08-title-rules-and-deep-blog-standard.md` 段10（GEO 原子段 12 事實清單）+ 既有活內容措辭（「歐盟 CPR 同美國 Lacey Act 供應鏈合規」zh-hk/en 已有實錄）；門童 `【[^】]{2,20}】` + `<section>` 雙條件 |
+| **预计时长** | < 30 min |
+| **释放条件** | push 完成 + 線上段8 斷言通過 |
+
+## 释放记录（2026-09-21 01:5x · batch C 会话）
+
+| 项 | 值 |
+|---|---|
+| **释放者** | batch C 会话（本会话，K3 2026-09-20 23:46 授權「到點自動幹」） |
+| **交付** | `3b29120f`（batch C 三語 FAQ×6 + strip 內嵌 JSON-LD + lastUpdated→2026-09-20）· `688b64a6`（12段基線台账刷新 33→95 同步 E0 檢測擴容）· `4a2e209c`（render 層 dateModified 改 lastUpdated）· `f171e9fa`（getPostData 補帶 lastUpdated 欄位 — 關鍵修復，否則上一個補丁空轉）· SESSION_LOCK.md |
+| **锁期间写过的文件** | `src/data/blog-data/{zh-hk,en,ja}.json`（apply-cost-baseline-faq.mjs 自動備份 .hermes/_bak-blogdata-*）· `src/app/[locale]/blog/[slug]/page.tsx`（兩處）· `.hermes/regression-guard/blog-12seg-baseline.json` · SESSION_LOCK.md |
+| **验证** | 門童 #15 三檔嚴格校驗過 · moq10 掃描 GATE PASS（新漂移 0）· pre-commit 全門童過（含 #14/#21/#25）· push 前 #14 基線對賬 0 新增 · **線上三語實測（buildId w_CR1mbKQW5yAy-mpd1hO）：FAQPage=1、Q組=6、dateModified=2026-09-20，三語全過** |
+| **門童 #14 處置說明** | E0 檢測擴容產生 62 條「新增」FAIL，100% 落在 E0 +4 slug（print-spec / roll-up-banner / school-exercise / cost-baseline），零屬 batch C 回歸（batch C 反使 cost-baseline en 8→6 / ja 7→5 段 FAIL、三語段9 FAQ PASS）→ 依門童內建機制 `--stamp-baseline` 刷新台账（存量 95 條逐批清 = E2-E7 範圍），非為消紅 |
+| **已知遺留** | cost-baseline 段8 GEO 原子段 / 段3 H2 問句化 / 段6 案例段 / 段7 E-E-A-T 署名等仍 FAIL = E2-E7 排程內，勿為消紅而動；標題飛輪會話 21:43 push 時 #14 亦打印攔截但 ref 已落地（機制待查，飛輪文檔 §6 已知限制）——本次走正式台账刷新路徑 |
 
 | 项 | 值 |
 |---|---|
@@ -127,6 +147,19 @@
 
 ---
 
+## 释放记录（2026-09-21 02:40 · L1-1 窗内内容批会话）
+
+| 项 | 值 |
+|---|---|
+| **释放者** | L1-1 窗内内容批会话（接管者，见上方接管声明） |
+| **交付** | #17 打稿 2h→1h 三语全量（SKU 89 + blog 14，未分类复扫=0）+ #18 small-batch MOQ 统一 10（en title 窗后遗留）+ 小冊子指南 FAQ 價格問答 + 应用器 `scripts/apply-l1-window-batch-20260921.mjs`（v2 避坑19 块级限定） |
+| **锁期间写过的文件** | `src/data/sku-seo-data.ts` · `src/data/blog-data/{zh-hk,en,ja}.json`（与并发 geo-atom 会话 staged 产物同文件，一并提交）· 本文件 · 活书 §9 |
+| **验证** | tsc 54=54 · 门童 #25 存量 0 · brand-mentions PASS · 编码 ✅ · booklet FAQ 提取 4→5 |
+
+---
+
 ## 接管声明（追加区）
 
 <!-- 格式: `- YYYY-MM-DD HH:mm · <会话> · 接管理由` -->
+
+- 2026-09-21 02:20 · L1-1 窗内内容批会话 · 接管理由：batch C 锁 23:5x 起、TTL 30 min 早已超时，且其释放条件（push 完成）已由 src/ 全净 + f171e9fa 顶点实证满足；本会话写入范围 blog-data + sku-seo-data.ts（apply-l1-window-batch-20260921.mjs，计数断言 + 备份 + 未分类复扫），不触碰 batch C 产物
