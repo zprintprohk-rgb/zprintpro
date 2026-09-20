@@ -839,6 +839,9 @@ function getPostData(locale: Locale, slug: string) {
       title,
       description,
       date,
+      // 2026-09-20 E1 補丁2: getPostData 原本不帶 lastUpdated ⇒ render 層 post.lastUpdated 恆 undefined
+      // (上一層補丁 4a2e209c 因此空轉)。真值源 = blog-data JSON lastUpdated (batch C 已更新 → 2026-09-20)。
+      lastUpdated: jsonEntry?.lastUpdated,
       category,
       content,
       keywords: '',
