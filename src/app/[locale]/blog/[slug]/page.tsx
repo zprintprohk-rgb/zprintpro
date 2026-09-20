@@ -488,7 +488,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-05 v8 daily-content-evolve: 2027 Calendar Printing Guide (GSC 97 imps, calendars × Tier A) — 純文字
     'calendar-printing-guide': {
       title: '2027 Calendar Printing Guide: Wall & Desk Calendar Sizes, Paper & Ordering | ZprintPro',
-      description: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 50-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
+      description: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 1000-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
       date: '2026-08-05', category: 'Printing Techniques',
       content: '',
     },
@@ -674,7 +674,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-05 v8 daily-content-evolve: 2027年カレンダー印刷ガイド (GSC 97 imps) — 純文字・無図
     'calendar-printing-guide': {
       title: '2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro',
-      description: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 50部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+      description: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1000部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
       date: '2026-08-05', category: '印刷技術',
       content: '',
     },
