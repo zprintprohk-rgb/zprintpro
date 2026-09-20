@@ -93,9 +93,10 @@
 | 6 | 跨 SKU 共享模板句残留（避坑 19） | 🔴 **本轮新增取证** | ① menus 数据层 `description`/`body` 仍写「50 本起 / 100 本起 / 100 張」，与已改标题的「10 張/份/本起」**直接矛盾**（避坑 18：只落一半）；② 5/6 menus SKU 名称写「防水PVC」但 spec 是 200g 銅版紙／啞膠覆膜；③ `disposable-menus` feature 与 finishing 自相矛盾 |
 | 7 | `wedding-menu-cards` 币种 | 🟡 | 价写 **NT$**（本站 zh-hk 应为 HK$）；且缺 `unitLabel` |
 | 8 | GSIM / RFQ Schema | 🔴 无官方信源 | 维持 `PENDING_VERIFICATION`；**不得据营销来源改 Schema** |
-| 9 | **ja `imageAlt` 系统性折行** | 🔴 新发现（量测工具已转正） | **28 处** ja imageAlt 疑装 zh-hk 中文句（本轮只清 menus 3 处 + 登记的 3 处）；量测：`node scripts/audit-ja-imagealt-fold.cjs ja`（🔴 确证 0 处 / 🟠 可疑 28 处 —— **🟠 不得直接当缺陷批量改写，先人读**，避坑 13） |
+| 9 | **ja `imageAlt` 系统性折行** | 🟡 **🔴 确证 25 处已清 (`deda45f9`)**；余 🟡 4 处需人读 | 量测：`node scripts/audit-ja-imagealt-fold.cjs ja`（旧口径 🟠 上限）→ **改用三级分类** `node scripts/diag-brand-audit-gap-and-alt.cjs`（🔴确证 0 / 🟡需人读 4 / 🟢假阳性 81）。⚠️ 旧工具 🟠 口径过宽，56/81 是含假名的**合法日文**（假阳性） |
 | 10 | **`CRED_ISO_9001` 167 处** | 🔴 新发现（取证等级仅门童计数） | pre-commit 门童 `真实计数` 报 167；menus 6 个 SKU 的 description/body 就各写「ISO 9001 certified production」。**须先定「是否存在 ISO 9001 证书」**（§0.23 无来源数字红线），再决定清或补证；本会话**未核实真伪** |
-| 11 | `BRAND_LOCALE_MISMATCH=39` | 🟡 新发现 | 门童口径 39 处；本轮 `audit-sku-locale.cjs`（结构解析）报 0 —— **两个口径不一致本身是待查项**（可能是门童按子串/按行计，避坑 9），落地任何结论前须先 dump 样本（§0.23.2 三闸门） |
+| 11 | **`BRAND_LOCALE_MISMATCH` 188 处（全量真值）** | 🔴 根因已定案，修法待裁 | 门童未截断真值 = **188**（此前只在 staged 里看到 39）。分布：`faqs[].a` **39** · `seo-zh-hk-subfield` 58 · 其他 91 · title 类 **0**。**39 处疑为死数据**（产品页 FAQ 走 `coreProductFAQMap`，全 src 无 `getSkuSeo().faqs` 消费点），且该文件是 CSV 派生（SOP-5 禁手搓）⇒ 候选修法 (a) 回 CSV 源头清 / (b) 确证死数据后**请 K3 拍板**给该族建豁免台账 |
+| 12 | **`small-bags` 缺 `nameJa`** | 🟡 新发现 | `products.ts` 该 SKU 无 `nameJa` ⇒ 其 ja 段 imageAlt 折行无法用「真值来源」修（本批 25 条全部有源，故未受此限） |
 
 ---
 
@@ -207,4 +208,38 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 2. 约 28 处 ja `imageAlt` 疑仍装 zh-hk 中文句（量测 `node scripts/audit-ja-imagealt-fold.cjs ja`：🔴 0 / 🟠 28，🟠 需人读确认后才可动）。
 3. `a2f636e6` **未 push**：距上一远端 push（并发车道 19:08）不足 30 min 硬下限，按 §0.25.8 **commit 留本地、不做 `Start-Sleep` 阻塞**。
 4. 临时取证脚本（`.hermes/_tmp-dump-alt.cjs` / `_tmp-list-alt.cjs` / `_tmp-dump-locale.cjs` / `_tmp-hkfold.cjs` / `_tmp-commit.ps1`）留在 `.hermes/` 未清理；**有用者已转正** `scripts/audit-ja-imagealt-fold.cjs`（避坑：`_` 前缀会被清理规则命中）。
+
+### 2026-09-20 20:11 · 起印量数字声称对齐 + ja imageAlt 折行清账 + brand-locale 根因定案
+
+**已完成（3 个 commit）**
+
+| commit | 内容 | 规模 |
+|---|---|---|
+| `b7da6fe5` | menus 起印量「数字声称」全字段对齐 10（zh-hk description / en·ja description / 三语 body / en h1） | 30 行 |
+| `98af3752`+`a2f636e6` | 活书第一轮 + menus 标题/品牌错配（前一段已记） | — |
+| `deda45f9` | ja `imageAlt` 折行 **25 处**清账 + 4 个只读分诊器入库 | 5 文件 |
+
+**关键净结果**
+
+| 指标 | 值 | 取证 |
+|---|---|---|
+| menus 数字声称（含 title/description/body/h1） | 6 SKU × 3 locale 全部对齐 `minQuantity`（10/10/10/10/100/50） | `node scripts/verify-menus.cjs` + 逐条 dump |
+| ja imageAlt 折行 | 🔴 确证 **25 → 0**；余 🟡4（需人读）/ 🟢81（前工具误报） | `node scripts/diag-brand-audit-gap-and-alt.cjs` |
+| `BRAND_LOCALE_MISMATCH` 全量真值 | **188**（此前只见 staged 里 39） | `common.SCAN_STATS` 未截断真值 |
+| 其中 `faqs[].a` | **39**，且疑为**死数据**（产品页 FAQ 走 `coreProductFAQMap`，全 src 无消费点） | `page.tsx` L244-248 + 全仓消费点检索 |
+| 回归 | `tsc` 54=54 · 探针 38 PASS/0 FAIL · 编码 0 · 结构审计四项 0 | 见各 commit |
+
+**★ 本轮新增避坑 22（量测域不同 ≠ 口径冲突）**
+「A 工具报 39、B 工具报 0」时，**第一动作不是判谁错**，而是把**两个工具的字段域并排列出**。
+本轮真因：审计工具 `audit-sku-locale.cjs` 只覆盖 `seo[locale].{title,description,h1}` + `imageAlt[locale]`，
+**整族漏掉 `faqs[]`**（无 locale 结构的共享数组），而 39 处全在 `faqs[].a` ⇒ 两边其实**合账**（39 = 39）。
+⇒ **教训：报「0 命中」的审计工具，必须先声明自己的字段域**；否则 0 无法与任何外部计数对账。
+（同族：避坑 2 单一方法必错、避坑 9 行级计数掩盖同行第二匹配、避坑 14/20 stale ref。）
+
+**本批未做（不得声称已修）**
+1. `faqs[].a` 39 处中文值：**未动**（疑死数据 + CSV 派生禁手搓）⇒ 候选修法 (a) 回 CSV 源头 / (b) 确证死数据后请 K3 拍板设豁免台账。
+2. `BRAND_LOCALE_MISMATCH` 其余 149 处（`seo-zh-hk-subfield` 58 + 其他 91）未动。
+3. 🟡 4 条 ja imageAlt（`eco-paper-bags`/`small-bags`/`a1-posters`/`display-posters`）需人读；`small-bags` 在 `products.ts` **缺 `nameJa`**，无法走真值来源修。
+4. `CRED_ISO_9001` 167 处真伪未核实。
+
 
