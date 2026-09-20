@@ -18,20 +18,20 @@ interface CategoryProductCardProps {
 }
 
 
-const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; iconColor: string }> = {
-  'business-cards': { icon: CreditCard, bgColor: 'bg-blue-50', iconColor: 'text-blue-500' },
-  'stickers': { icon: Tag, bgColor: 'bg-orange-50', iconColor: 'text-orange-500' },
-  'paper-bags': { icon: ShoppingBag, bgColor: 'bg-amber-50', iconColor: 'text-amber-600' },
-  'flyers': { icon: FileText, bgColor: 'bg-cyan-50', iconColor: 'text-cyan-600' },
-  'posters': { icon: ImageIcon, bgColor: 'bg-purple-50', iconColor: 'text-purple-500' },
-  'packaging': { icon: Package, bgColor: 'bg-emerald-50', iconColor: 'text-emerald-600' },
-  'books': { icon: BookOpen, bgColor: 'bg-rose-50', iconColor: 'text-rose-500' },
-  'banners': { icon: Flag, bgColor: 'bg-green-50', iconColor: 'text-green-600' },
-  'menus': { icon: BookOpen, bgColor: 'bg-orange-50', iconColor: 'text-orange-500' },
-  'calendars': { icon: Calendar, bgColor: 'bg-sky-50', iconColor: 'text-sky-600' },
-  'envelopes': { icon: Mail, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' },
-  'red-packets': { icon: Gift, bgColor: 'bg-red-50', iconColor: 'text-red-500' },
-  'educational': { icon: GraduationCap, bgColor: 'bg-violet-50', iconColor: 'text-violet-500' },
+const categoryFallbacks: Record<string, { icon: typeof Box; gradient: string; iconColor: string }> = {
+  'business-cards': { icon: CreditCard, gradient: 'from-blue-500/15 to-indigo-600/15', iconColor: 'text-blue-500' },
+  'stickers': { icon: Tag, gradient: 'from-orange-500/15 to-red-500/15', iconColor: 'text-orange-500' },
+  'paper-bags': { icon: ShoppingBag, gradient: 'from-amber-500/15 to-orange-600/15', iconColor: 'text-amber-600' },
+  'flyers': { icon: FileText, gradient: 'from-cyan-500/15 to-blue-600/15', iconColor: 'text-cyan-600' },
+  'posters': { icon: ImageIcon, gradient: 'from-purple-500/15 to-pink-600/15', iconColor: 'text-purple-500' },
+  'packaging': { icon: Package, gradient: 'from-emerald-500/15 to-teal-600/15', iconColor: 'text-emerald-600' },
+  'books': { icon: BookOpen, gradient: 'from-rose-500/15 to-red-600/15', iconColor: 'text-rose-500' },
+  'banners': { icon: Flag, gradient: 'from-green-500/15 to-emerald-600/15', iconColor: 'text-green-600' },
+  'menus': { icon: BookOpen, gradient: 'from-orange-500/15 to-amber-600/15', iconColor: 'text-orange-500' },
+  'calendars': { icon: Calendar, gradient: 'from-sky-500/15 to-blue-600/15', iconColor: 'text-sky-600' },
+  'envelopes': { icon: Mail, gradient: 'from-gray-500/15 to-slate-600/15', iconColor: 'text-gray-500' },
+  'red-packets': { icon: Gift, gradient: 'from-red-500/15 to-rose-600/15', iconColor: 'text-red-500' },
+  'educational': { icon: GraduationCap, gradient: 'from-violet-500/15 to-purple-600/15', iconColor: 'text-violet-500' },
 };
 
 const translations = {
@@ -50,7 +50,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const localePrefix = `/${locale}`;
   const [imgError, setImgError] = useState(false);
 
-  const fallback = categoryFallbacks[product.category] || { icon: Package, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' };
+  const fallback = categoryFallbacks[product.category] || { icon: Package, gradient: 'from-gray-500/15 to-slate-600/15', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
   const imageSrc = getProductMainImage(product, locale);
   const hasImage = imageSrc && !imgError;
@@ -101,7 +101,9 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className={`absolute inset-0 ${fallback.bgColor} flex items-center justify-center`}>
+          // K3 2026-09-20 裁決 2.1：統一為漸層（與 product/ProductCard.tsx 視覺一致）
+          // 原為素色底 fallback.bgColor，改為 bg-gradient-to-br + fallback.gradient。
+          <div className={`absolute inset-0 bg-gradient-to-br ${fallback.gradient} flex items-center justify-center`}>
             <FallbackIcon className={`w-16 h-16 ${fallback.iconColor}`} strokeWidth={1.5} />
           </div>
         )}
