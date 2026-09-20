@@ -77,7 +77,12 @@ const CHECKS = [
   { name: 'marker A · art-posters（早前改動）', url: 'https://zprintpro.com/zh-hk/product/art-posters/', want: ['1張起印', '1 張起印'], stale: ['100張起印'] },
   { name: 'marker B · pvc-menus 模板句（本輪）', url: 'https://zprintpro.com/zh-hk/product/pvc-menus/', want: ['10 張起印，48 小時快遞'], stale: ['50 張起印，48 小時快遞'] },
   { name: 'menus 首屏 · disposable-menus', url: 'https://zprintpro.com/zh-hk/product/disposable-menus/', want: ['100張起印', '100 張起印'], stale: [] },
-  { name: '貼紙品類頁', url: 'https://zprintpro.com/zh-hk/category/stickers/', want: ['10 個起'], stale: ['50 個起印'] },
+  // 口徑註記 (2026-09-20 複核修正, per §0.23.2 閘門①「先 dump 一條真實樣本再寫比對」):
+  // 原寫 want: ['10 個起'] → 線上實際字面為「10個起印」(無空格), 造成假陰性 ⚠️。
+  // 已 dump 真實樣本確認: 線上可見「…訂製 10個起印 · 5-7天交期…」+「10個起批 · 整批 HK$71」,
+  // 且舊值 '50 個起印' 於線上為 0 命中 → 該頁實為已生效, 非部署延遲。此處比照第 79 行
+  // (disposable-menus: want 同時列有無空格兩態) 寫法, 兩種空格變體皆納入。
+  { name: '貼紙品類頁', url: 'https://zprintpro.com/zh-hk/category/stickers/', want: ['10個起印', '10 個起印'], stale: ['50 個起印'] },
 ];
 let liveOk = 0;
 let liveStale = 0;
