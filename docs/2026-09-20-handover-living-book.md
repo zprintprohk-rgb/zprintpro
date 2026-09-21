@@ -627,3 +627,9 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 **⚠️ 執行阻塞（§0.35.7 雙條件判定不滿足）**：併發 MOQ 車道 11:41 仍在寫 `sku-seo-data.ts`（未提交 M，10:52 posters 批 75dce3f7 已把嵌套 11 SKU 展平為頂層 = 89→100 鍵，本路審計已按新基準重跑）；**同槽雙寫 = 9/19 撞車形態，T1 改寫必須等併發批收尾（src/ 無 MM + 15min 靜默）後再 apply**。
 **T1 優先隊列（按 GSC imps 降序前 10）**：a2-posters(383) / electronics-packaging-box(226) / saddle-stitch-booklets(179) / food-boxes(120) / vehicle-wraps(109) / roll-up-banners(101) / same-day-flyers(93) / outdoor-vinyl-banners(84) / folded-leaflets(80) / a5-flyers(76)。完整清單 `.hermes/reports/sku-quality-audit-2026-09-21-T1.md`（報告不入庫 per 9/20 教訓 #3）。
 **下步**：併發批收尾後 → 重跑審計取穩定基線 → 按公式（主詞｜SKU 專屬工藝差異化｜真值 MOQ+價+交期鉤｜品牌末位）生成三語 title+h1+desc 提案（修飾詞引 SKU 自身 keywords 池防同質化）→ `--check` 全過 `--apply` → 收尾四件套。
+
+### 2026-09-21 12:05 · K3 11:46「开写」— T1 top-30 槽提案库完成（63 字段 7 闸全过，未碰 src）
+- 提案库 `.hermes/title-quality-proposals-20260921.json`（不入库 per 门童 #3 教训）：30 槽 = 25 改写 + 3 KEEP（same-day-flyers 三语已全公式化，問題在排名不在文案）+ 2 僅局部；含 4 條 priceFlags（a2-posters 價分叉 / vehicle-wraps 價分叉 / same-day-flyers en $0.16 校準值 / can-badge ja 無價真值豁免）。
+- 校驗器 `scripts/validate-quality-proposals.mjs`（commit d245315a）：G1 band / G2 品牌尾 / G3 幣種假名 / G4 主詞（拉丁詞幹治單複數 A2 Posters vs Poster Printing）/ G5 MOQ 對真值（**剝價 token 防「HK$8起」誤捕為 MOQ=8**）/ G6 價格鉤 / G7 填充詞。本輪教訓：手算當量不可靠（3 條 TRIM/FILL），一律跑 guard。
+- 提案修復實錄：11 條 TRIM 壓回 50-57（緊湊｜分隔符省當量）；food-boxes/outdoor-vinyl 改以 name 主詞起頭；electronics EVA海棉→海綿錯字；h1 英文口水句三例（food-boxes ja / outdoor-posters ja / a2-posters ja）換日文公式。
+- **待 apply（阻塞中）**：併發 MOQ 車道仍活躍（sku-seo-data.ts 11:41 未提交 M）→ 等 §0.35.7 雙條件滿足 → 重跑 audit-sku-quality 取穩定基線 → 提案 cur 快照刷新 → `apply-quality-proposals.mjs`（下輪寫：JSON.stringify(cur) 全庫唯一性斷言 + 計數斷言 + .hermes 備份）→ 收尾四件套。
