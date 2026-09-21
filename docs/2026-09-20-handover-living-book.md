@@ -642,3 +642,13 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **本批新固化教訓**：① 手算當量不可靠（3 條 TRIM/FILL 全靠 guard 抓回）；② apply 錨定必須 slug 塊→locale 子塊兩級（slug 塊內 3 語共享 `"h1": ""` 與 43 SKU 共用 ja 口水模板句，單級錨定必炸）；③ 驗證腳本落盤跑，勿 cmd -e 轉義。
 - **飛輪窗登記**：本批 63 處進 7-10 天驗證窗（至 ~9/28-30），同槽不得再改；窗滿跑 `title-verify-report.mjs` 對賬 ΔCTR/Δ位置。
 - **下批隊列**：T1 剩 183 槽（213-30）按 imps 降序續批；45 槽補描述 + 181 槽截斷重寫（舊隊列）；apply 器已通用化（提案 JSON 換批即可）。
+
+### 2026-09-21 12:40 · K3 12:12 续批 — T1 31-80 槽落地（apply 105 处已推送，线上断言 3/3 PASS）— commit 6ad6d567
+- 提案库 `.hermes/title-quality-proposals-20260921-b31-80.json`（50 槽，不入库）：40 条新 title（全部跑 guard 调当量，25 条首稿超带压回）+ 33 条 h1/desc 新建或重写。priceFlags 新增 2 条：corrugated-boxes|zh-hk（bp=1517 可疑，只建 h1/desc 无价格句规避）、eco-tote-bag|ja（bpj undefined 仅量钩）。
+- **校验器补丁**（随 commit 入库）：G4 CJK 分支改 name 首段匹配（空格/括号前）——corrugated-boxes name 带「 (坑盒/E坑/F坑)」全串匹配误 FAIL；moqNum 正则加 `冊〜`（desk-calendars/graduation-yearbook ja「1冊〜」逃逸 G5）。
+- **G4 踩坑实录（对 4 槽）**：起草按 slug 推断主词错 4 处——真实 name 是 瓦楞彩盒印刷訂製/型抜きステッカー/A1 Large Posters/Kraft Paper Packaging Box（全词 G4，Paper/Large 漏一个即 FAIL）。教训：**主词一律以 sku-seoData.name 为准，禁按 slug 推断**。
+- apply 105 处 / 0 ABORT / VERIFY_OK；备份 `.hermes/_bak-quality-2026-09-21T04-34-01-828Z/`。收尾四件套全过（census 300 OK / locale 4×0 / tsc 54 / 七闸 0 FAIL）。门童全绿（0 red）。
+- 线上断言：desk-calendars ja「卓上カレンダー｜ノベルティ 定番｜1冊〜¥50〜」/ roll-up-banners en「1 MOQ $46」/ perfect-bound-books zh-hk「無線膠裝書籍印刷…10本起印」3/3 PASS（首查撞上 edge 缓存旧版，cache-bypass + 90s 后 3/3，与 top-30 批同形态）。
+- **窗登记**：本批 105 处进验证窗（至 ~9/28-30）；42 槽窗冻 title 本批无一触碰（T1 已排除）。
+- **本批遗留登记**：① foil-greeting-cards name 层污染（zh「燙金名片印刷」/en「Business Cards」）未动 name 块，title 层仅按 K3 9/20 拍板修质量，待下批或 K3 裁决；② corrugated-boxes bp=1517 真伪未证（价格工作流）；③ ja 价去千分位（¥1,350→¥1350）省当量，页面展示口径无影响。
+- **下批队列**：T1 剩 133 槽（213-80）按 imps 降序续批，apply 器换 JSON 即跑。
