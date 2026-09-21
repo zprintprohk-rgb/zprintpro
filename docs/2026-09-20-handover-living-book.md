@@ -617,3 +617,13 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - 邊度有紙袋買（改落點）：paper-bags quickAnswers 加 AEO 條「現貨去包材店/Carousell；訂製搵智印港 100 個起印」。
 
 **下批隊列**：① 窗後（9/30）small-batch-stickers en title ×2 詞 + posters zh-hk title；② 45 槽補描述 + 181 槽截斷重写；③ 書刊/畫冊族 50/100→1 引擎層批（待 K3 一句話）；④ packaging minQ 商業評估。
+
+### 2026-09-21 11:45 · K3 11:32 飞轮主令：全站三语 SKU title/h1/desc 质量审计定级（T1=213 槽大改授权）— commit 13914c4b（仅审计器）
+**指令**：本路核心 = SKU 标题/描述/meta 检查，启动 SEO+AEO+GEO 飞轮打带钱词首页；「背膠海報·防水材質·香港印刷專家」式无钩标题与口水描述不达标；**无排名或排名 30 名后 = 大改，范围 = 全站三语言 SKU**。
+**量具**：`scripts/audit-sku-quality.mjs`（tsx 直 import，禁正则猜嵌套归属）；GSC 28d 页面级加权位置；窗口集 = title-flywheel-approved-2026-09-20.json。
+**审计结论（300 槽实测）**：T1 大改 **213** / T2 窗冻 8 / T3 保留 79。
+- 高频缺陷：title 无交期钩 242 槽、无价格钩 133、无 MOQ 钩 99；**h1 主词缺失 80 + h1 空 45 + h1 口水/填充 40（K3 亲眼所见的正是这层的「自帶背膠，可直接粘貼…」式 h1）**；desc 主词缺失 73、MOQ 与 title 矛盾 29（如 a2-posters title「10張起印」vs desc「1 張起印」vs 引擎真值 1——併發 10:52 posters 引擎批已改引擎，title 層滯後）；desc 空 45；币种污染 6。
+- 量具自证：抽查 a2-posters / roll-up-banners（h1=「易拉寶」過薄）/ foil-wedding-invitations（h1+desc 全空）三例判定全部屬實。
+**⚠️ 執行阻塞（§0.35.7 雙條件判定不滿足）**：併發 MOQ 車道 11:41 仍在寫 `sku-seo-data.ts`（未提交 M，10:52 posters 批 75dce3f7 已把嵌套 11 SKU 展平為頂層 = 89→100 鍵，本路審計已按新基準重跑）；**同槽雙寫 = 9/19 撞車形態，T1 改寫必須等併發批收尾（src/ 無 MM + 15min 靜默）後再 apply**。
+**T1 優先隊列（按 GSC imps 降序前 10）**：a2-posters(383) / electronics-packaging-box(226) / saddle-stitch-booklets(179) / food-boxes(120) / vehicle-wraps(109) / roll-up-banners(101) / same-day-flyers(93) / outdoor-vinyl-banners(84) / folded-leaflets(80) / a5-flyers(76)。完整清單 `.hermes/reports/sku-quality-audit-2026-09-21-T1.md`（報告不入庫 per 9/20 教訓 #3）。
+**下步**：併發批收尾後 → 重跑審計取穩定基線 → 按公式（主詞｜SKU 專屬工藝差異化｜真值 MOQ+價+交期鉤｜品牌末位）生成三語 title+h1+desc 提案（修飾詞引 SKU 自身 keywords 池防同質化）→ `--check` 全過 `--apply` → 收尾四件套。
