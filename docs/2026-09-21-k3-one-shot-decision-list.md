@@ -18,7 +18,7 @@
 
 | # | 事項 | 現狀 | 建議 |
 |---|---|---|---|
-| B1 | **MOQ 全站統一批** | 本日 08:24 併發批 b9446c95 按「真值=引擎 minQuantity」把 seo.ts 層 banners 寫回 **100**，與 A2 拍板（1 起）直接衝突；products.ts 引擎值現為 banners 100 / calendars 1000 / posters 1/10/100 混雜 | 以 A2 為準改 products.ts 引擎（banners→1、calendars→1 數碼、posters 按 SKU 定 1 或 10）→ MOQ 統一批回刷 seo.ts / sku-seo-data / blog 文案 → 門童 #24 全綠。**需 K3 補一句：posters 6 個 SKU 各自 MOQ（1 還是 10）？calendars 6 個 SKU 全部數碼 1 本起？** |
+| B1 | ~~MOQ 全站統一批~~ → **大部分已消解（10:2x 複核）** | 併發批 668e81ee（K3 08:36「全部按 1 件起」）已把 banners 5 SKU 引擎值改回 1；85c42e5e（K3 09:06「月曆也 1 件起」）已把 calendars 6 SKU 引擎 1000→1 並全站三線統一「數碼 1 本起 / 批量 300 起」。線上 4/4 斷言親測 PASS；llms 層已隨 57326ec9 對齊全口徑（線上 zh/en/ja 各 7 命中）。**殘餘：posters 3 SKU（outdoor/display/adhesive 引擎=100）vs K3 08:21 拍板「1-10 張」** — 待 K3 一句確認「08:36 全部按 1 件起」是否涵蓋這 3 個 SKU（降 1 還是 10） |
 
 ## C. 六項拍板單（承 sibling 報告 §8.4）
 
@@ -44,5 +44,5 @@
 
 ---
 
-數據來源：K3 2026-09-21 08:21 對話拍板原文（A1-A3）· sibling 報告 DELIVERY/zprintpro-seo-aeo-geo-uplift-report-2026-09-21.html §8.4（C1-C7 底稿）· b9446c95 commit 實查（B1）· src/data/products.ts live 值（B1）。
-校准日期：2026-09-21 08:45。
+數據來源：K3 2026-09-21 08:21 對話拍板原文（A1-A3）· sibling 報告 DELIVERY/zprintpro-seo-aeo-geo-uplift-report-2026-09-21.html §8.4（C1-C7 底稿）· b9446c95 commit 實查（B1）· src/data/products.ts live 值（B1）· 併發批 668e81ee / 85c42e5e commit 實查 + 線上 curl 四斷言（B1 消解複核）· llms 線上 grep 三語各 7 命中（57326ec9 部署複驗）。
+校准日期：2026-09-21 08:45（首版）→ 2026-09-21 10:25（B1 消解回填）。
