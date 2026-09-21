@@ -11,7 +11,7 @@
  *   3. 價格標註錯幣別修復 (舊檔把 basePrice 標 CNY, 實為 HKD)
  *   4. llms-zh-hk.txt 虛構香港地址 (新蒲崗) → 深圳實體真址 (per §0.32 強制級)
  *   5. 雙品牌殘留 (智印港/ZprintPro HK) → zh-hk 單品牌 智印港 (per K3 9/1 品牌分層)
- *   6. 成立年份: K3 2026-09-21 08:21 拍板 = 2014年 (解決 2012 vs 2014 衝突)
+ *   6. 成立年份: **2012年**（K3 2026-09-21 10:52 終裁：08:21 拍板 2014 作廢，確認 2012；根 llms.txt 一直為 2012 屬正確）
  *   7. MOQ K3 2026-09-21 08:21 拍板覆寫 (llms 展示層):
  *      banners→1 起 (噴繪一張起印) · posters→1-10 張 · calendars→數碼 1 本起 / 批量 300 起
  *      ⚠️ 僅 llms 語料層; products.ts 全站同步 = MOQ 統一批, 列入 K3 拍板文件排批 (禁只落一半)
@@ -102,7 +102,7 @@ const LOCALES: LocaleCfg[] = [
     companyInfo: `## Company Information
 - Legal name: Shenzhen Cailong Printing & Packaging Co., Ltd.
 - Brand: ZprintPro
-- Founded: 2014
+- Founded: 2012
 - Website: https://zprintpro.com
 - Address: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China
 - Phone: +86 198 8085 1334
@@ -158,7 +158,7 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
     companyInfo: `## 会社情報
 - 事業者名: 深圳市彩龍印刷包裝有限公司
 - ブランド: ジープリント / ZprintPro
-- 設立: 2014年
+- 設立: 2012年
 - Website: https://zprintpro.com
 - 所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
 - 電話: +86 198 8085 1334
@@ -214,7 +214,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
     companyInfo: `## 公司資訊
 - 公司: 深圳市彩龍印刷包裝有限公司
 - 品牌: 智印港
-- 成立: 2014年
+- 成立: 2012年
 - Website: https://zprintpro.com
 - 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室
 - 電話: +86 198 8085 1334

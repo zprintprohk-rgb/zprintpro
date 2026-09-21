@@ -14,7 +14,6 @@ Disallow: /manifest.json
 Disallow: /manifest.webmanifest
 Disallow: /sw.js
 Disallow: /workbox-*.js
-Disallow: /{locale}/
 Disallow: /_next/
 
 Crawl-delay: 1
