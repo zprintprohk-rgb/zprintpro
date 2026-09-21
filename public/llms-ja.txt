@@ -1,200 +1,225 @@
 # ZprintPro (ジープリント) 日本向け — AI検索最適化ページ
-# Last updated: 2026-09-09
+# Last updated: 2026-09-21 (auto-generated from src/data/products.ts — do not hand-edit)
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
 ## 会社情報
-- 事業者名: 深圳市彩龍印刷包装有限公司
+- 事業者名: 深圳市彩龍印刷包裝有限公司
 - ブランド: ジープリント / ZprintPro
 - Website: https://zprintpro.com
 - 所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
 - 電話: +86 198 8085 1334
 - WhatsApp: +86 198 8085 1334
 - メール: zprintpro@outlook.com
-- 設立: 2014年
 - 認証: ISO 9001, FSC
-- 運営責任者: 唐运提 (法定代表人)
 - 配送: DHL/FedEx国際エクスプレス 72時間 · 日本向け3〜5営業日
 
-## 製品カテゴリ (14 total)
+## 製品カテゴリ (16 total)
 
-- 貼紙印刷 / Stickers / ステッカー印刷 -- 9 products
-- 宣傳單張 / Flyers / チラシ印刷 -- 7 products
-- 包裝盒定制 / Packaging / パッケージ印刷 -- 10 products
-- 定制海報 / Posters / ポスター印刷 -- 6 products
-- 紙袋印刷 / Paper Bags / 紙袋印刷 -- 6 products
-- 賀卡印刷 / Greeting Cards / グリーティングカード印刷 -- 6 products
-- 噴繪廣告 / Banners / バナー印刷 -- 5 products
-- 書籍印刷 / Books / 書籍印刷 -- 5 products
-- 餐牌印刷 / Menus / メニュー印刷 -- 5 products
-- 信封印刷 / Envelopes / 封筒印刷 -- 4 products
-- 年曆印刷 / Calendars / カレンダー印刷 -- 6 products
-- 利是封印刷 / Red Packets / ポチ袋印刷 -- 6 products
-- 校園教育印刷 / Educational / 教育印刷 -- 4 products
-- 同人周邊印刷 / Doujinshi & Anime Goods / 同人誌・アニメグッズ -- 5 products
+- ステッカー (stickers) -- 9 products
+- チラシ印刷 (flyers) -- 7 products
+- パッケージ印刷 (packaging) -- 12 products
+- ポスター印刷 (posters) -- 6 products
+- 紙袋印刷 (paper-bags) -- 6 products
+- グリーティングカード・年賀状 (greeting-cards) -- 6 products
+- バナー印刷 (banners) -- 5 products
+- 書籍印刷 (books) -- 5 products
+- メニュー印刷 (menus) -- 5 products
+- 封筒印刷 (envelopes) -- 4 products
+- カレンダー印刷 (calendars) -- 6 products
+- ポチ袋印刷 (red-packets) -- 6 products
+- 教育印刷 (educational) -- 5 products
+- 同人誌・アニメグッズ (japan-doujin) -- 5 products
+- 結婚式招待状 (wedding-invitations) -- 6 products
+- 席札 (place-cards) -- 6 products
 
-## 全製品一覧 (84 SKU)
+## 全製品一覧 (99 SKU)
 
-### 貼紙印刷 / Stickers (9 products)
+### ステッカー (stickers)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 防水貼紙 | waterproof-stickers | Waterproof Stickers | 防水ステッカー | 100 | CNY 0.22 |
-| 透明貼紙 | transparent-stickers | Transparent Stickers | 透明ステッカー | 100 | CNY 0.38 |
-| 可移貼紙(無殘膠) | removable-stickers | Removable Stickers | はがせるステッカー | 100 | CNY 0.45 |
-| 小批量貼紙 | small-batch-stickers | Small Batch Stickers | 小ロットステッカー | 100 | CNY 38 |
-| 異形模切貼紙 | die-cut-stickers | Die-cut Stickers | 型抜きステッカー | 100 | CNY 0.58 |
-| 燙金貼紙 | foil-stickers | Foil Stickers | 箔押しステッカー | 100 | CNY 0.78 |
-| 防偽貼紙 | security-stickers | Security Stickers | セキュリティステッカー | 100 | CNY 1.15 |
-| 螢光貼紙 | fluorescent-stickers | Fluorescent Stickers | 蛍光ステッカー | 100 | CNY 0.52 |
-| 水果貼紙食品標籤印刷 | fruit-food-label-stickers | Fruit & Food Label Stickers | フルーツ・食品ラベルシール | 500 | CNY 0.22 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 防水ステッカー / 屋外ステッカー / 防水ステッカー / ダイカット | waterproof-stickers | 10 | ¥ 41 |
+| 透明ステッカー / 透明 ステッカー / 防水ステッカー / ダイカット | transparent-stickers | 10 | ¥ 51 |
+| はがせるステッカー / 防水ステッカー / ダイカット | removable-stickers | 10 | ¥ 46 |
+| 小ロットステッカー / ラベル印刷 / 防水ステッカー / ダイカット | small-batch-stickers | 10 | ¥ 69 |
+| 型抜きステッカー / 防水ステッカー / ダイカット | die-cut-stickers | 10 | ¥ 60 |
+| 箔押しステッカー / 防水ステッカー / ダイカット | foil-stickers | 10 | ¥ 64 |
+| セキュリティステッカー / 防水ステッカー / ダイカット | security-stickers | 10 | ¥ 51 |
+| 蛍光ステッカー / 防水ステッカー / ダイカット | fluorescent-stickers | 10 | ¥ 60 |
+| フルーツ・食品ラベルシール / 防水ステッカー / ダイカット | fruit-food-label-stickers | 500 | HK$ 0.22 |
 
-### 宣傳單張 / Flyers (7 products)
+### チラシ印刷 (flyers)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| A4宣傳單張 | a4-flyers | A4 Flyers | A4チラシ | 100 | CNY 0.22 |
-| A5宣傳單張 | a5-flyers | A5 Flyers | A5チラシ | 100 | CNY 0.18 |
-| 雙面宣傳單張 | double-sided-flyers | Double-sided Flyers | 両面チラシ | 100 | CNY 0.27 |
-| 摺疊宣傳單張 | folded-leaflets | Folded Leaflets | 折りたたみパンフレット | 100 | CNY 0.55 |
-| 厚紙宣傳單張 | thick-paper-flyers | Thick Paper Flyers | 厚紙チラシ | 100 | CNY 0.35 |
-| 環保宣傳單張 | eco-flyers | Eco Flyers | エコチラシ | 100 | CNY 0.27 |
-| 即日宣傳單張 | same-day-flyers | Same-day Flyers | 即日チラシ | 100 | CNY 0.4 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| A4チラシ / A4/A5 チラシ・フライヤー | a4-flyers | 10 | ¥ 70 |
+| A5チラシ / A4/A5 チラシ・フライヤー | a5-flyers | 10 | ¥ 50 |
+| 両面チラシ / A4/A5 チラシ・フライヤー | double-sided-flyers | 10 | ¥ 85 |
+| 折りたたみパンフレット / A4/A5 チラシ・フライヤー | folded-leaflets | 10 | ¥ 110 |
+| 厚紙チラシ / A4/A5 チラシ・フライヤー | thick-paper-flyers | 10 | ¥ 95 |
+| エコチラシ / A4/A5 チラシ・フライヤー | eco-flyers | 10 | ¥ 75 |
+| 即日チラシ / A4/A5 チラシ・フライヤー | same-day-flyers | 10 | ¥ 125 |
 
-### 包裝盒定制 / Packaging (10 products)
+### パッケージ印刷 (packaging)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 禮品盒定制 | gift-boxes | Gift Boxes | ギフトボックス | 100 | CNY 4 |
-| 化妝品盒 | cosmetic-boxes | Cosmetic Boxes | 化粧品箱 | 100 | CNY 6 |
-| 食品包裝盒 | food-boxes | Food Boxes | 食品包装箱 | 100 | CNY 2.5 |
-| 快遞盒/飛機盒 | mailer-boxes | Mailer Boxes | 発送箱 | 100 | CNY 1.8 |
-| 折疊盒 | folding-boxes | Folding Boxes | 折りたたみ箱 | 100 | CNY 2.5 |
-| 精裝盒 | rigid-boxes | Rigid Boxes | 上製本箱 | 100 | CNY 8 |
-| 磁吸翻蓋禮盒印刷 | magnetic-closure-gift-box | Magnetic Closure Gift Box | マグネット蓋ギフトボックス | 100 | CNY 15 |
-| 電子產品包裝盒定制 | electronics-packaging-box | Electronics Packaging Box | 電子機器包装箱 | 200 | CNY 8 |
-| 牛皮紙盒印刷定制 | kraft-paper-packaging-box | Kraft Paper Packaging Box | クラフト紙箱印刷 | 300 | CNY 5 |
-| 抽屜禮盒滑軌盒印刷 | drawer-slide-gift-box | Drawer Slide Gift Box | 引き出し式ギフトボックス | 200 | CNY 12 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 食品パッケージ / 食品包裝箱 / パッケージボックス・化粧箱 | food-boxes | 100 | ¥ 101 |
+| 化粧品パッケージボックス / パッケージボックス・化粧箱 | cosmetic-boxes | 100 | ¥ 240 |
+| 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 / パッケージボックス・化粧箱 | mailer-boxes | 100 | ¥ 105 |
+| 折りたたみ箱 / パッケージボックス・化粧箱 | folding-boxes | 100 | ¥ 69 |
+| 上製本箱 / 上製本箱 見積もり / パッケージボックス・化粧箱 | rigid-boxes | 100 | ¥ 240 |
+| マグネット蓋ギフトボックス / パッケージボックス・化粧箱 | magnetic-closure-gift-box | 100 | ¥ 450 |
+| 電子機器包裝箱 / パッケージボックス・化粧箱 | electronics-packaging-box | 200 | ¥ 240 |
+| クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 / パッケージボックス・化粧箱 | kraft-paper-packaging-box | 300 | ¥ 150 |
+| 合版ホワイトカードボックス(型代不要) / パッケージボックス・化粧箱 | gang-run-card-boxes | 500 | HK$ 129 |
+| 白カードボックス / パッケージ・ギフトボックス | white-card-boxes | 500 | HK$ 129 |
+| 段ボール箱 (E/Fフルート) / パッケージ・物流 | corrugated-boxes | 500 | HK$ 1517 |
+| 差し込み式ボックス (直挿/飛行機挿) / パッケージ・軽量 | tuck-end-boxes | 500 | HK$ 1538 |
 
-### 定制海報 / Posters (6 products)
+### ポスター印刷 (posters)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| A2海報印刷 | a2-posters | A2 Posters | A2ポスター | 100 | CNY 10 |
-| A1大幅海報 | a1-posters | A1 Large Posters | A1大型ポスター | 100 | CNY 20 |
-| 戶外海報 | outdoor-posters | Outdoor Posters | 屋外ポスター | 100 | CNY 16 |
-| 展架海報 | display-posters | Display Posters | 展示用ポスター | 100 | CNY 32 |
-| 藝術海報 | art-posters | Art Posters | アートポスター | 100 | CNY 26 |
-| 背膠海報 | adhesive-posters | Adhesive Posters | 粘着ポスター | 100 | CNY 13 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| A2ポスター / A1/A2 ポスター / 展示会 | a2-posters | 10 | ¥ 300 |
+| A1大型ポスター / A1/A2 ポスター / 展示会 | a1-posters | 1 | ¥ 600 |
+| 屋外ポスター / A1/A2 ポスター / 展示会 | outdoor-posters | 100 | ¥ 480 |
+| 展示用ポスター / A1/A2 ポスター / 展示会 | display-posters | 100 | ¥ 960 |
+| アートポスター / A1/A2 ポスター / 展示会 | art-posters | 1 | ¥ 780 |
+| 粘着ポスター / A1/A2 ポスター / 展示会 | adhesive-posters | 100 | ¥ 390 |
 
-### 紙袋印刷 / Paper Bags (6 products)
+### 紙袋印刷 (paper-bags)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 牛皮紙袋 | kraft-paper-bags | Kraft Paper Bags | クラフト紙袋 | 100 | CNY 8 |
-| 白卡紙袋 | white-card-bags | White Card Bags | 白カード紙袋 | 100 | CNY 12 |
-| 禮品紙袋 | gift-bags | Gift Bags | ギフト紙袋 | 100 | CNY 20 |
-| 環保紙袋 | eco-paper-bags | Eco Paper Bags | エコ紙袋 | 100 | CNY 8 |
-| 手挽紙袋 | handle-bags | Handle Bags | 手提げ紙袋 | 100 | CNY 8 |
-| 大號紙袋 | large-bags | Large Bags | 大判紙袋 | 100 | CNY 15 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| クラフト紙袋 / 紙袋 / クラフト紙袋 / ハンドル | kraft-paper-bags | 100 | ¥ 240 |
+| 白カード紙袋 / 紙袋 / クラフト紙袋 / ハンドル | white-card-bags | 100 | ¥ 360 |
+| ギフト紙袋 / 紙袋 / クラフト紙袋 / ハンドル | gift-bags | 100 | ¥ 600 |
+| エコ紙袋 / 紙袋 / クラフト紙袋 / ハンドル | eco-paper-bags | 100 | ¥ 240 |
+| 手提げ紙袋 / 紙袋 / クラフト紙袋 / ハンドル | handle-bags | 100 | ¥ 240 |
+| 大判紙袋 / 紙袋 / クラフト紙袋 / ハンドル | large-bags | 100 | ¥ 450 |
 
-### 賀卡印刷 / Greeting Cards (6 products)
+### グリーティングカード・年賀状 (greeting-cards)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 高級賀卡 | premium-greeting-cards | Premium Greeting Cards | プレミアムグリーティングカード | 100 | CNY 1 |
-| 厚身賀卡(400g) | thick-greeting-cards-400g | Thick 400g Greeting Cards | 厚手400gグリーティングカード | 100 | CNY 1.2 |
-| 燙金/燙銀賀卡 | foil-greeting-cards | Foil-Stamped Greeting Cards | 箔押しグリーティングカード | 100 | CNY 1.8 |
-| UV局部光油賀卡 | spot-uv-greeting-cards | Spot UV Greeting Cards | スポットUVグリーティングカード | 100 | CNY 1.4 |
-| 啞膠賀卡 | matte-greeting-cards | Matte Greeting Cards | マットラミネートグリーティングカード | 100 | CNY 1.1 |
-| 圓角賀卡 | rounded-corner-greeting-cards | Rounded Corner Greeting Cards | 角丸グリーティングカード | 100 | CNY 1 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 年賀状印刷 / プレミアムグリーティングカード | premium-greeting-cards | 10 | ¥ 20 |
+| 厚手名刺印刷 (400g〜) | thick-greeting-cards-400g | 10 | ¥ 23 |
+| 年賀状印刷 / 箔押しグリーティングカード / 金箔/銀箔 | foil-greeting-cards | 10 | ¥ 35 |
+| 年賀状印刷 / スポットUVグリーティングカード | spot-uv-greeting-cards | 10 | ¥ 27 |
+| 年賀状印刷 / マットラミネートグリーティングカード | matte-greeting-cards | 10 | ¥ 21 |
+| 年賀状印刷 / 角丸グリーティングカード | rounded-corner-greeting-cards | 10 | ¥ 20 |
 
-### 噴繪廣告 / Banners (5 products)
+### バナー印刷 (banners)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 戶外燈布噴繪 | outdoor-vinyl-banners | Outdoor Vinyl Banners | 屋外バナー | 100 | CNY 12 |
-| 易拉寶 | roll-up-banners | Roll-up Banners | ロールアップバナー | 100 | CNY 85 |
-| 背膠噴繪 | adhesive-banners | Adhesive Banners | 粘着バナー | 100 | CNY 10 |
-| 車身廣告 | vehicle-wraps | Vehicle Wraps | カーラッピング | 100 | CNY 28 |
-| 網格布噴繪 | mesh-banners | Mesh Banners | メッシュバナー | 100 | CNY 16 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 屋外バナー / ロールアップバナー / 屋外バナー | outdoor-vinyl-banners | 100 | ¥ 360 |
+| ロールアップバナー / ロールアップバナー / 屋外バナー | roll-up-banners | 100 | ¥ 6440 |
+| 粘着バナー / ロールアップバナー / 屋外バナー | adhesive-banners | 100 | ¥ 300 |
+| カーラッピング / ロールアップバナー / 屋外バナー | vehicle-wraps | 100 | ¥ 840 |
+| メッシュバナー / ロールアップバナー / 屋外バナー | mesh-banners | 100 | ¥ 480 |
 
-### 書籍印刷 / Books (5 products)
+### 書籍印刷 (books)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 畫冊印刷 | catalog-printing | Catalog Printing | カタログ印刷 | 100 | CNY 24 |
-| 騎馬釘小冊子 | saddle-stitch-booklets | Saddle Stitch Booklets | 中綴じ冊子 | 100 | CNY 6 |
-| 無線膠裝書籍 | perfect-bound-books | Perfect Bound Books | 無線綴じ本 | 100 | CNY 16 |
-| 精裝書籍 | hardcover-books | Hardcover Books | 上製本 | 100 | CNY 40 |
-| 線圈筆記本 | spiral-notebooks | Spiral Notebooks | リングノート | 100 | CNY 8 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| カタログ印刷 / 大量印刷 / 卸売サプライヤー / 寫真集・作品集・プロダクトカタログ | catalog-printing | 10 | ¥ 644 |
+| 中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 10冊から | saddle-stitch-booklets | 10 | ¥ 258 |
+| 無線綴じ書籍 — 學術論文集・年次報告書・CSR レポート・文學作品集 | perfect-bound-books | 10 | ¥ 644 |
+| ハードカバー書籍 — 結婚記念アルバム・家族史・卒業記念アルバム・同窓会誌 | hardcover-books | 10 | ¥ 1932 |
+| スパイラルノート — 企業ギフト・研修教材・スクール記念・リングノート | spiral-notebooks | 10 | ¥ 386 |
 
-### 餐牌印刷 / Menus (5 products)
+### メニュー印刷 (menus)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| PVC餐牌 | pvc-menus | PVC Menus | PVCメニュー | 100 | CNY 8 |
-| 過膠餐牌 | laminated-menus | Laminated Menus | ラミネートメニュー | 100 | CNY 5 |
-| 精裝餐牌 | hardcover-menus | Hardcover Menus | 高級メニュー | 100 | CNY 28 |
-| 酒水牌 | drink-menus | Drink Menus | ドリンクメニュー | 100 | CNY 12 |
-| 一次性餐牌 | disposable-menus | Disposable Menus | 使い捨てメニュー | 100 | CNY 0.22 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| PVCメニュー / レストランメニュー / 防水 | pvc-menus | 10 | ¥ 386 |
+| ラミネートメニュー / レストランメニュー / 防水 | laminated-menus | 10 | ¥ 258 |
+| 高級メニュー / レストランメニュー / 防水 | hardcover-menus | 10 | ¥ 1288 |
+| ドリンクメニュー / レストランメニュー / 防水 | drink-menus | 10 | ¥ 515 |
+| 使い捨てメニュー / レストランメニュー / 防水 | disposable-menus | 100 | ¥ 20 |
 
-### 信封印刷 / Envelopes (4 products)
+### 封筒印刷 (envelopes)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 公司信封 | business-envelopes | Business Envelopes | ビジネス封筒 | 100 | CNY 0.22 |
-| 彩色信封 | colored-envelopes | Colored Envelopes | カラー封筒 | 100 | CNY 0.38 |
-| 大號信封 | large-envelopes | Large Envelopes | 大判封筒 | 100 | CNY 0.6 |
-| 珠光信封 | pearl-envelopes | Pearl Envelopes | パール封筒 | 100 | CNY 1.15 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| ビジネス封筒 / 封筒 / クラフト封筒 / 窓付き | business-envelopes | 100 | ¥ 20 |
+| カラー封筒 / 封筒 / クラフト封筒 / 窓付き | colored-envelopes | 100 | ¥ 25 |
+| 大判封筒 / 封筒 / クラフト封筒 / 窓付き | large-envelopes | 100 | ¥ 39 |
+| パール封筒 / 封筒 / クラフト封筒 / 窓付き | pearl-envelopes | 100 | ¥ 64 |
 
-### 年曆印刷 / Calendars (6 products)
+### カレンダー印刷 (calendars)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 掛牆年曆 | wall-calendars | Wall Calendars | 壁掛けカレンダー | 100 | CNY 12 |
-| 座檯年曆 | desk-calendars | Desk Calendars | 卓上カレンダー | 100 | CNY 16 |
-| 定制年曆 | custom-calendars | Custom Calendars | オリジナルカレンダー | 100 | CNY 20 |
-| 迷你年曆 | mini-calendars | Mini Calendars | ミニカレンダー | 100 | CNY 6 |
-| 相框年曆 | photo-frame-calendars | Photo Frame Calendars | フォトフレームカレンダー | 100 | CNY 24 |
-| 磁石年曆 | magnetic-calendars | Magnetic Calendars | マグネットカレンダー | 100 | CNY 10 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 壁掛けカレンダー / 卓上カレンダー / 壁掛け 2027 | wall-calendars | 1000 | ¥ 50 |
+| 卓上カレンダー / 卓上カレンダー / 壁掛け 2027 | desk-calendars | 1000 | ¥ 50 |
+| オリジナルカレンダー / 卓上カレンダー / 壁掛け 2027 | custom-calendars | 1000 | ¥ 50 |
+| ミニカレンダー / 卓上カレンダー / 壁掛け 2027 | mini-calendars | 1000 | ¥ 50 |
+| フォトフレームカレンダー / 卓上カレンダー / 壁掛け 2027 | photo-frame-calendars | 1000 | ¥ 50 |
+| マグネットカレンダー / 卓上カレンダー / 壁掛け 2027 | magnetic-calendars | 1000 | ¥ 50 |
 
-### 利是封印刷 / Red Packets (6 products)
+### ポチ袋印刷 (red-packets)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 燙金利是封 | foil-red-packets | Foil Red Packets | 箔押しポチ袋 | 100 | CNY 1.1 |
-| 浮雕利是封 | embossed-red-packets | Embossed Red Packets | エンボスポチ袋 | 100 | CNY 3 |
-| 定制利是封 | custom-red-packets | Custom Red Packets | オリジナルポチ袋 | 100 | CNY 1.9 |
-| 卡通利是封 | cartoon-red-packets | Cartoon Red Packets | キャラクターポチ袋 | 100 | CNY 1.1 |
-| 環保利是封 | eco-red-packets | Eco Red Packets | エコポチ袋 | 100 | CNY 1.9 |
-| 大號利是封 | large-red-packets | Large Red Packets | 大判ポチ袋 | 100 | CNY 2.2 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 箔押しポチ袋 / 紅包 / 旧正月 / 箔押し | foil-red-packets | 100 | ¥ 64 |
+| エンボスポチ袋 / 紅包 / 旧正月 / 箔押し | embossed-red-packets | 100 | ¥ 129 |
+| オリジナルポチ袋 / 紅包 / 旧正月 / 箔押し | custom-red-packets | 100 | ¥ 103 |
+| キャラクターポチ袋 / 紅包 / 旧正月 / 箔押し | cartoon-red-packets | 100 | ¥ 64 |
+| エコポチ袋 / 紅包 / 旧正月 / 箔押し | eco-red-packets | 100 | ¥ 103 |
+| 大判ポチ袋 / 紅包 / 旧正月 / 箔押し | large-red-packets | 100 | ¥ 129 |
 
-### 校園教育印刷 / Educational (4 products)
+### 教育印刷 (educational)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 作業簿印刷 | exercise-books | Exercise Books | ワークブック印刷 | 100 | CNY 4 |
-| 證書印刷 | certificates | Certificates | 賞状印刷 | 100 | CNY 8 |
-| 學校單張 | school-flyers | School Flyers | 学校チラシ | 100 | CNY 0.2 |
-| 教科書印刷 | textbooks | Textbooks | 教科書印刷 | 100 | CNY 24 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー | exercise-books | 10 | ¥ 258 |
+| 証明書印刷 — 卒業証書・賞状・同窓会証書・研修証明書 | certificates | 100 | ¥ 386 |
+| 學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌 | school-flyers | 10 | ¥ 20 |
+| 教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル | textbooks | 100 | ¥ 1288 |
+| 卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊 | graduation-yearbook | 50 | ¥ 1350 |
 
-### 同人周邊印刷 / Doujinshi & Anime Goods (5 products)
+### 同人誌・アニメグッズ (japan-doujin)
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 同人誌印刷 | doujinshi-printing | Doujinshi Printing | 同人誌印刷 | 10 | CNY 7500 |
-| 亞克力鑰匙扣 | acrylic-keychain | Acrylic Keychain | アクリルキーホルダー | 10 | CNY 2275 |
-| 罐型襟章印刷 | can-badge | Can Badge Printing | 缶バッジ印刷 | 10 | CNY 1200 |
-| 明信片套裝 | postcard-set | Postcard Set | ポストカードセット | 4 | CNY 750 |
-| 環保托特袋 | eco-tote-bag | Eco Tote Bag | エコトートバッグ | 10 | CNY 9000 |
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
+| アクリルキーホルダー | acrylic-keychain | 10 | HK$ 2275 |
+| 缶バッジ印刷 | can-badge | 10 | HK$ 1200 |
+| ポストカードセット | postcard-set | 4 | HK$ 750 |
+| エコトートバッグ | eco-tote-bag | 10 | HK$ 9000 |
+
+### 結婚式招待状 (wedding-invitations)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 1.2 |
+| Save the Date カード | save-the-date-cards | 50 | HK$ 0.85 |
+| 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 0.65 |
+| 結婚式のしおり | wedding-program-cards | 50 | HK$ 0.95 |
+| ウエディング メニュー | wedding-menu-cards | 50 | HK$ 1.15 |
+| ウエディング フル セット | wedding-suite-bundle | 50 | HK$ 25 |
+
+### 席札 (place-cards)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| ウエディング席札 | wedding-place-cards | 50 | HK$ 0.3 |
+| ドリンクトークン | drink-tokens | 50 | HK$ 0.25 |
+| エスコートカード | escort-cards | 50 | HK$ 0.3 |
+| 名札 / 会議バッジ | name-tags-badges | 50 | HK$ 0.4 |
+| カフェ / レストラン テーブルカード | cafe-table-cards | 50 | HK$ 0.4 |
+| 披露宴座席表 | wedding-seating-charts | 50 | HK$ 4.5 |
 
 ## 価格とご注文
 
-- Currency: HKD, USD, JPY based on customer locale
-- Minimum order: 100 pieces (varies by product)
-- Volume discounts: Available for 500+, 1000+, 5000+ quantities
-- Rush service: 3-hour express available
-- Free design consultation included
+- 通貨: HKD / USD / JPY (お客様の地域に基づく)
+- 最低注文数: 10 個から (製品により異なる — 上表の最低数量を参照)
+- 数量割引: 500+ / 1000+ / 5000+ で対応
+- 特急対応: 即日印刷可 (対象製品)
+- デジタル校正: 無料
 
 ## よくある質問
 
@@ -221,3 +246,6 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。
 - お見積もり: https://zprintpro.com/ja/contact/
 - WhatsApp: https://wa.me/8619880851334
 - メール: zprintpro@outlook.com
+
+---
+Generated by scripts/gen-llms.ts · truth source: src/data/products.ts · 2026-09-21
