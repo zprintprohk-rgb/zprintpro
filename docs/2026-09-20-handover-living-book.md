@@ -542,3 +542,32 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - 🟢 ja 價格基線「婚禮文具 50部から」：**真實分層陳述**（日曆 1000/婚禮 50/同人 4-10），無誤，KEEP。
 - 🟡 offset 500 階層主張（en/ja 日曆博客「offset 500 minimum」「オフセット500部」）：與 minQ=1000 引擎口徑張力，屬價格階層經濟學主張，改需 K3 定價真值。
 **線上復断言補記（03:55）**：zh 畫冊/紙材博客 PASS ✅；ja/en 日曆博客與 custom-calendars 首輪 FAIL 的根因 = **page.tsx render 層硬編碼 meta 覆蓋 json**（zh 塊 02:34 批已修，en:489/ja:675 塊遺漏）+ 產品頁可見 FAQ 實走 `product-faqs.ts`（非 sku-seo-data.faq，該字段僅 schema 層）→ en/ja meta 已修（fc0d2690），「render 層覆蓋 json」入避坑（數據層修復後必查 page.tsx 同 slug 硬編碼塊）。KEEP/FLAG 清單見 03:20 條（畢業冊族 copy=data 待 K3 引擎層拍板 / wedding 混合 minQ / 特殊紙能力宣言 / offset 500 階層 / ja 基線真實分層陳述 KEEP）。
+
+### 2026-09-21 08:50 · 品类层 MOQ 矛盾大扫除（飞轮体检副产物，30 处/7 品类）+ 三层体检结论 + 同行 MOQ 调研
+
+**背景**：K3 08:02 三线指令之③「检查 SKU 标题/描述/meta，开启 SEO+AEO+GEO 飞轮」。本轮对全站 meta 做了三层体检（SKU 标题层 / SKU 描述层 / 品类 meta 层），标题层复扫 300/300 全在 50-57 OK 带；品类层用引擎 minQuantity 真值逐品类核对，抓出 03:20 批漏网的 seo.ts 整层矛盾。
+
+**已修（commit 时附于本批，数据真值 = products.ts minQuantity 实查 99 SKU）**：
+- 🔴 **banners 摺頁/戶外橫額**：声称「1個起/1 MOQ/1枚〜」但引擎 5 SKU 全 100 → 全改 100（title×3 + desc×3）。⚠️ 反向提醒 K3：同行易拉寶普遍 1 件起，banners minQ=100 是**商业决策问题**（非内容问题），建议单独评估是否降 minQ。
+- 🔴 **calendars 月曆**：seo.ts 品类 title/desc 仍写 100（本/部/MOQ），与 1000 口径矛盾 ×6 → 全改 1000。（03:20 批只改了 category-conversion-blocks.ts，seo.ts 是同_slug 第二数据源，漏网。）
+- 🟠 **greeting-cards 賀卡**：写 100，真值 10 ×6 → 全改 10。
+- 🟠 **menus 餐牌**：写 100，真值 10×4+100×1（min=10）×4 → 改 10。
+- 🟠 **educational 校園**：写 100，真值 10/50/100（min=10）×4 → 改 10。
+- 🟠 **books 書刊**：en desc「50 MOQ」與自家 en title「10 MOQ」自相矛盾、ja title「50部〜」→ 統一 10 ×2（zh 已是 10）。
+- 🟡 **wedding-invitations 喜帖**：zh 寫 100，en/ja 已是 50，真值 50 ×2 → zh 改 50。
+- 驗證過**無誤不動**：paper-bags 100✓ / red-packets 100✓ / envelopes 100✓ / packaging 100（混合檔取下限）✓ / posters 1（混合檔真 min=1）✓ / place-cards 50✓ / stickers 10✓ / flyers 10✓ / japan-doujin 10（1 SKU=4，偏差小，僅登記）。
+
+**體檢三層結論（詳細數據 .hermes/reports/sku-desc-moneyterm-2026-09-21.json）**：
+1. **SKU 標題層**：300/300 全 OK（census 重掃）；42 槽驗證窗至 9/30 凍結不動。
+2. **SKU 描述層**：255 有描述槽中 **181（71%）顯示寬度 >155 被 SERP 截斷**（zh-hk/ja 均值 ~220）；**45/300 槽（15 SKU：wedding 族 11 + 紙箱族 3 + drink-tokens/name-tags/cafe-table-cards）無 seo.description**，線上 fallback 到自動生成 meta；0 重複組。
+3. **品類層**：zh-hk 大詞基本覆蓋（宣傳單張印刷/月曆印刷/大信封/餐牌印刷/利是封印刷均在 title）；**posters zh-hk title 開頭「a1a2 海報印刷…MTR 12 sheet 燈箱」質量差**（P2 主戰場 174+143 imp 詞）→ 列隊待 K3 授權改寫（窗律：改 title 需新驗證窗）。
+4. **錢詞零覆蓋（SKU 層精確短語，38 詞抽 13 零命中）**：多數大詞已在品類層承接；真正 SKU 層缺口 = en「small batch sticker printing」（P1 69imp pos6.61，窗後第一優先）、en「book printing hong kong」、ja「教材/卒業アルバム」→ 品類 desc 層可窗內動（不碰 title）。
+
+**同行 MOQ 調研（2026-09-21 實抓，供 K3 拍板「書刊 1 本 vs 10 本」）**：
+- 香港 Print100 / e-print 數碼騎馬釘均「1 本起印」明價掛網（A5 8PP：1 本 HK$64 / 10 本約 HK$5/本）；Mixam「no minimum, as few as one copy」；日本 ラクスル「1部〜500部」、冊子製本キング「1部 332円〜」；歐美柯式檔才 25-250 起。
+- **建議：維持數碼 1 本起口徑，引擎書刊/畫冊類 minQ 從 50 降到 1（或至少 ≤10）**；價格梯度用單價體現（1 本高價覆蓋 Setup），不用數量門檻。月曆 1000 柯式口徑可保留，另加「數碼月曆小批量檔」引流品（e-print 1 本 HK$18 先例）。
+- 數據來源：print100.com / e-print.com.hk / mixam.com / raksul.com / i-booklet.com / printingforless.com / printrunner.com / vistaprint.com（實抓頁面原文，2026-09-21）。
+
+**12 段博客驗證（K3 08:02 指令①）**：本批 MOQ 改過的 6 篇博客逐篇 --slug 檢查，殘留 FAIL 全部為存量（段06 案例/段07 E-E-A-T/段08 GEO 原子全站性缺口 + catalog/paper-materials/restaurant-menu 老文段01-04 結構舊式），**無一是 MOQ 編輯引入**（diff 復核僅數字口徑行）。線上全量複採 324 行 PASS=265/FAIL=59（對比 9/20 基線 128/33/19：行數增多 = 併發會話已把新 slug 納入門禁視野，FAIL 上升是「讓門禁看見真問題」的預期行為）。
+
+**待辦（下批）**：① SERP 實查 7 詞（L1-1）需真實瀏覽器（webbridge）；② 45 槽補描述；③ 181 槽描述截斷重写（按點擊潛力排序）；④ posters zh-hk title 改寫待 K3 授權；⑤ ja 教材/卒業アルバム + en book printing hong kong 品類 desc 窗內補；⑥ banners minQ=100 商业评估。

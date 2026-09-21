@@ -498,9 +498,9 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '月曆印刷 2027 | 100本起印・Q4旺季・60天預訂・燙金精裝・企業LOGO | 智印港',
-      en: 'Calendar Printing 2027 from $5 | 100 MOQ + Q4 Peak + 60-Day Pre-Order + Foil Hardcover + Made for USA | ZprintPro',
-      ja: 'カレンダー印刷 2027 100部〜 · Q4繁忙期 + 60日予約 + 箔押し上製本 + 企業 LOGO + 日本全国 | ZprintPro',
+      'zh-hk': '月曆印刷 2027 | 1000本起印・Q4旺季・60天預訂・燙金精裝・企業LOGO | 智印港',
+      en: 'Calendar Printing 2027 from $5 | 1000 MOQ + Q4 Peak + 60-Day Pre-Order + Foil Hardcover + Made for USA | ZprintPro',
+      ja: 'カレンダー印刷 2027 1000部〜 · Q4繁忙期 + 60日予約 + 箔押し上製本 + 企業 LOGO + 日本全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '月曆印刷,年曆印刷,座檯月曆,掛牆月曆,2027年曆,企業年曆,禮品月曆,定制月曆,燙金月曆,精裝月曆,日曆印刷,教師月曆,辦公文具,Q4旺季,60天預訂',
@@ -508,9 +508,9 @@ const categorySeoData: Record<string, {
       ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー,箔押しカレンダー,上製本カレンダー,学校カレンダー,事務用品,Q4繁忙期,60日予約,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '月曆印刷 2027 100 本起印、HK$10 起/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單,月曆訂製免費設計打稿。港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送,ISO 9001 認證,WhatsApp 30 秒即時報價。',
-      en: 'Custom calendar printing 2027, 100 MOQ. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
-      ja: 'カレンダー印刷 2027 100 部〜。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
+      'zh-hk': '月曆印刷 2027 1000 本起印、HK$10 起/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單,月曆訂製免費設計打稿。港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送,ISO 9001 認證,WhatsApp 30 秒即時報價。',
+      en: 'Custom calendar printing 2027, 1000 MOQ. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
+      ja: 'カレンダー印刷 2027 1000 部〜。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
 'japan-doujin': {
@@ -551,7 +551,7 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 100張起 過膠/PVC防水 膠片餐牌/酒水牌 快至3日 | 智印港',
+      'zh-hk': '餐牌印刷 10張起 過膠/PVC防水 膠片餐牌/酒水牌 快至3日 | 智印港',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -561,9 +561,9 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 張起, 一次性 HK$0.22 起/張, 過膠餐牌 HK$5 起/張, 精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 一次性 4 種材質, 茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時, 標準 3-5 天交貨, 趕單 WhatsApp 加急, ISO 9001 + FSC 認證。',
-      en: 'Menu printing from $0.14, 100 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
-      ja: 'メニュー印刷 100 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '餐牌印刷 10 張起, 一次性 HK$0.22 起/張, 過膠餐牌 HK$5 起/張, 精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 一次性 4 種材質, 茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時, 標準 3-5 天交貨, 趕單 WhatsApp 加急, ISO 9001 + FSC 認證。',
+      en: 'Menu printing from $0.14, 10 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'メニュー印刷 10 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'red-packets': {
@@ -586,9 +586,9 @@ const categorySeoData: Record<string, {
   },
   'banners': {
     titles: {
-      'zh-hk': '摺頁印刷 1個起 | 防水防UV + 易拉寶 + X架 | 智印港',
-      'en': 'Outdoor Banner Printing from $12 | 1 MOQ + Waterproof UV | ZprintPro',
-      'ja': '屋外バナー印刷｜1枚〜・防水UV・ロールアップ｜ZprintPro',
+      'zh-hk': '摺頁印刷 100個起 | 防水防UV + 易拉寶 + X架 | 智印港',
+      'en': 'Outdoor Banner Printing from $12 | 100 MOQ + Waterproof UV | ZprintPro',
+      'ja': '屋外バナー印刷｜100枚〜・防水UV・ロールアップ｜ZprintPro',
     },
     keywords: {
       'zh-hk': '戶外橫額,易拉寶,X架,展覽橫額,車身廣告,防水橫額,防UV橫額,展架,燈箱廣告,噴繪廣告,商場橫額,活動橫額,工地橫額,外賣檔橫額',
@@ -596,16 +596,16 @@ const categorySeoData: Record<string, {
       'ja': '屋外バナー印刷,カスタム屋外バナー,ロールアップバナー,X スタンドバナー,展示バナー,車両広告,防水バナー,UV耐性バナー,イベントバナー,現場バナー,商店街バナー',
     },
     descriptions: {
-      'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',
-      'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 certified.',
-      'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '戶外橫額印刷 100 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      'en': 'Custom outdoor banner printing from $12, 100 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 certified.',
+      'ja': '屋外バナー印刷 100 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'books': {
     titles: {
       'zh-hk': '騎馬釘小冊子印刷 10本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
       'en': 'Catalog & Booklet Printing from $1.20 | 10 MOQ + Saddle Stitch | ZprintPro',
-      'ja': '冊子印刷｜50部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
+      'ja': '冊子印刷｜10部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
       'zh-hk': '樣本印刷,樣品印刷,免費樣本,印刷樣本,書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
@@ -614,15 +614,15 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '書刊印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Custom booklet printing from $1.20, 50 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
+      'en': 'Custom booklet printing from $1.20, 10 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
       'ja': '冊子印刷 50 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'educational': {
     titles: {
       'zh-hk': '校園教育印刷 · 證書/作業簿/教材 學校批量優惠 FSC認證 30秒報價 | 智印港',
-      en: 'Education Printing 100 MOQ | Certificates / Workbooks / Textbooks Bulk Discount | ZprintPro',
-      ja: '教育印刷 100部〜 | 証明書・ワークブック・教科書 学校一括割引 FSC認証 | ZprintPro',
+      en: 'Education Printing 10 MOQ | Certificates / Workbooks / Textbooks Bulk Discount | ZprintPro',
+      ja: '教育印刷 10部〜 | 証明書・ワークブック・教科書 学校一括割引 FSC認証 | ZprintPro',
     },
     keywords: {
       'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',
@@ -631,17 +631,17 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '校園教育印刷. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
+      en: 'Custom education printing 10 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
+      ja: '教育印刷 10 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'greeting-cards': {
     // 2026-08-17 K3 §11 业务子类目豁免: 咭片/名片 归并到 greeting-cards
     // 全球市场 $20B+ (Grand View/Ken Research 2025), US 70B 张/年, 90% 家庭买
     titles: {
-      'zh-hk': '燙金賀卡印刷 · 100 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費',
-      en: 'Greeting Card Printing from $0.50 | 3D Pop-up Available | 100 MOQ + Free Proof | ZprintPro',
-      ja: 'グリーティングカード印刷 · 100枚から · 立体 3D 対応 | ZprintPro',
+      'zh-hk': '燙金賀卡印刷 · 10 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費',
+      en: 'Greeting Card Printing from $0.50 | 3D Pop-up Available | 10 MOQ + Free Proof | ZprintPro',
+      ja: 'グリーティングカード印刷 · 10枚から · 立体 3D 対応 | ZprintPro',
     },
     keywords: {
       'zh-hk': '賀卡印刷,生日卡印刷,節日賀卡,感謝卡印刷,邀請卡印刷,商業賀卡,立體賀卡,3D 賀卡,客製化賀卡,訂製賀卡,聖誕卡,情人節卡,母親節卡,父親節卡',
@@ -649,16 +649,16 @@ const categorySeoData: Record<string, {
       ja: 'グリーティングカード印刷,オーダー カード,誕生日カード印刷,サンキュカード,ホリデーカード,立体 3D カード,カスタム カード,箔押しカード,FSC 認証カード,オリジナル カード,イベント招待状,法人向け グリーティングカード',
     },
     descriptions: {
-      'zh-hk': '賀卡印刷 100 張起印. 節日 / 生日 / 感謝 / 邀請 / 商業 / 立體 3D 賀卡 + 燙金 / UV / 模切 工藝. 順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙 + 30 秒 AI 即時報價.',
-      en: 'Greeting card printing from $0.50 / 100 MOQ. Holiday / birthday / thank you / invitation / corporate / 3D pop-up cards + foil stamping / UV / die-cut finishes. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee.',
-      ja: 'グリーティングカード印刷 100枚から. 节日・誕生日・サンキュ・招待状・法人向け・立体 3D カード + 箔押し・UV・拔型加工. DHL 国際配送 2-4 日 + FSC 認証 + 30 秒 AI 見積.',
+      'zh-hk': '賀卡印刷 10 張起印. 節日 / 生日 / 感謝 / 邀請 / 商業 / 立體 3D 賀卡 + 燙金 / UV / 模切 工藝. 順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙 + 30 秒 AI 即時報價.',
+      en: 'Greeting card printing from $0.50 / 10 MOQ. Holiday / birthday / thank you / invitation / corporate / 3D pop-up cards + foil stamping / UV / die-cut finishes. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee.',
+      ja: 'グリーティングカード印刷 10枚から. 节日・誕生日・サンキュ・招待状・法人向け・立体 3D カード + 箔押し・UV・拔型加工. DHL 国際配送 2-4 日 + FSC 認証 + 30 秒 AI 見積.',
     },
   },
   'wedding-invitations': {
     // 2026-08-17 K3 §11 业务子类目豁免: 喜帖 归并到 wedding-invitations
     // 全球婚礼印刷市场 $13B+ (Bonafide 2025), 喜帖 $4.29B CAGR 6.3%
     titles: {
-      'zh-hk': '燙金喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 100 套起印',
+      'zh-hk': '燙金喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 50 套起印',
       en: 'Foil Wedding Invitation Printing from $1.20 | Foil/UV Finish | 50 Sets MOQ | ZprintPro',
       ja: '結婚式招待状 箔押し印刷 · 50セットから · 箔押し/UV 仕上げ | ZprintPro',
     },
@@ -668,7 +668,7 @@ const categorySeoData: Record<string, {
       ja: '結婚式招待状印刷,オーダー 招待状,箔押し招待状,Save the Date,サンキュカード,結婚式のしおり,ウエディング メニュー,結婚 セット,オリジナル 招待状,オリジナル ウエディング',
     },
     descriptions: {
-      'zh-hk': '喜帖印刷 100 套起印. 燙金 / UV / 雕凹 / 模切 工艺 + Save the Date + 答謝卡 + 婚慶節目單 + 婚慶菜單 + 整套配套. 順豐本地 + DHL 全球 + FSC 認證 + 30 秒 AI 即時報價.',
+      'zh-hk': '喜帖印刷 50 套起印. 燙金 / UV / 雕凹 / 模切 工艺 + Save the Date + 答謝卡 + 婚慶節目單 + 婚慶菜單 + 整套配套. 順豐本地 + DHL 全球 + FSC 認證 + 30 秒 AI 即時報價.',
       en: 'Wedding invitation printing from $1.20 / 50 sets MOQ. Foil / UV / letterpress / die-cut finishes + Save the Date + thank you cards + programs + menus + full suite. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global.',
       ja: '結婚式招待状印刷 50セットから. 箔押し・UV・活版・拔型仕上げ + Save the Date + サンキュカード + 結婚式のしおり + ウエディング メニュー + フル セット. DHL 国際配送 + FSC 認証 + 30 秒 AI 見積.',
     },

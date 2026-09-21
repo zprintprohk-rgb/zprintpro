@@ -1,0 +1,666 @@
+{
+  "generatedFor": "2026-09-21",
+  "slots": 255,
+  "descWidth": {
+    "avg": 198,
+    "min": 8,
+    "max": 435,
+    "over155": 181,
+    "under70": 6
+  },
+  "buckets": {
+    "<70": 6,
+    "70-120": 0,
+    "120-155": 68,
+    ">155显示截断": 181
+  },
+  "over155List": [
+    "waterproof-stickers [zh-hk] w=232",
+    "waterproof-stickers [en] w=159",
+    "waterproof-stickers [ja] w=220",
+    "transparent-stickers [zh-hk] w=232",
+    "transparent-stickers [en] w=157",
+    "transparent-stickers [ja] w=220",
+    "removable-stickers [zh-hk] w=234",
+    "removable-stickers [ja] w=224",
+    "small-batch-stickers [zh-hk] w=233",
+    "small-batch-stickers [en] w=246",
+    "small-batch-stickers [ja] w=232",
+    "die-cut-stickers [zh-hk] w=236",
+    "die-cut-stickers [en] w=158",
+    "die-cut-stickers [ja] w=232",
+    "foil-stickers [zh-hk] w=232",
+    "foil-stickers [ja] w=224",
+    "security-stickers [zh-hk] w=232",
+    "security-stickers [ja] w=236",
+    "fluorescent-stickers [zh-hk] w=232",
+    "fluorescent-stickers [ja] w=220",
+    "kraft-paper-bags [zh-hk] w=213",
+    "kraft-paper-bags [ja] w=220",
+    "white-card-bags [zh-hk] w=224",
+    "white-card-bags [ja] w=220",
+    "gift-bags [zh-hk] w=208",
+    "gift-bags [ja] w=220",
+    "eco-paper-bags [zh-hk] w=208",
+    "eco-paper-bags [ja] w=212",
+    "handle-bags [zh-hk] w=218",
+    "handle-bags [ja] w=224",
+    "small-bags [zh-hk] w=224",
+    "small-bags [ja] w=212",
+    "large-bags [zh-hk] w=224",
+    "large-bags [ja] w=212",
+    "a4-flyers [zh-hk] w=194",
+    "a4-flyers [en] w=159",
+    "a4-flyers [ja] w=210",
+    "a5-flyers [zh-hk] w=191",
+    "a5-flyers [ja] w=210",
+    "double-sided-flyers [zh-hk] w=234"
+  ],
+  "dupGroups": 0,
+  "dupList": [],
+  "coverageZero": [
+    {
+      "term": "a6 尺寸",
+      "loc": "zh-hk",
+      "src": "P1 97imp pos8.86",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "小冊子印刷",
+      "loc": "zh-hk",
+      "src": "P1 48imp pos10.04",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "大信封",
+      "loc": "zh-hk",
+      "src": "P1 45imp pos4.42",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "邊度有紙袋買",
+      "loc": "zh-hk",
+      "src": "P1 36imp pos7.44",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "月曆印刷",
+      "loc": "zh-hk",
+      "src": "P2 126imp pos20.3",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "印海報",
+      "loc": "zh-hk",
+      "src": "P2 143imp pos23.7",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "宣傳單張印刷",
+      "loc": "zh-hk",
+      "src": "P2 127imp pos32.1",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "騎馬釘印刷",
+      "loc": "zh-hk",
+      "src": "map G4 64imp",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "利是封印刷",
+      "loc": "zh-hk",
+      "src": "map G4 57imp",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "small batch sticker printing",
+      "loc": "en",
+      "src": "P1 69imp pos6.61",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "book printing hong kong",
+      "loc": "en",
+      "src": "map 8imp G4",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "教材",
+      "loc": "ja",
+      "src": "map 76imp G5",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "卒業アルバム",
+      "loc": "ja",
+      "src": "map 5imp G5",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    }
+  ],
+  "coverageTitleOnly": [
+    {
+      "term": "即日印刷",
+      "loc": "zh-hk",
+      "src": "map G2 35imp",
+      "titleHits": 1,
+      "descHits": 0,
+      "titleSlugs": [
+        "same-day-flyers"
+      ],
+      "descSlugs": []
+    }
+  ],
+  "coverageFull": 21,
+  "coverageTotal": 38,
+  "coverage": [
+    {
+      "term": "食品包裝印刷",
+      "loc": "zh-hk",
+      "src": "P1 145imp pos6.65",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "food-boxes"
+      ],
+      "descSlugs": [
+        "food-boxes"
+      ]
+    },
+    {
+      "term": "a6 尺寸",
+      "loc": "zh-hk",
+      "src": "P1 97imp pos8.86",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "小冊子印刷",
+      "loc": "zh-hk",
+      "src": "P1 48imp pos10.04",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "大信封",
+      "loc": "zh-hk",
+      "src": "P1 45imp pos4.42",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "邊度有紙袋買",
+      "loc": "zh-hk",
+      "src": "P1 36imp pos7.44",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "月曆印刷",
+      "loc": "zh-hk",
+      "src": "P2 126imp pos20.3",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "海報印刷",
+      "loc": "zh-hk",
+      "src": "P2 174imp pos22.6",
+      "titleHits": 1,
+      "descHits": 5,
+      "titleSlugs": [
+        "a2-posters"
+      ],
+      "descSlugs": [
+        "a2-posters",
+        "a1-posters",
+        "display-posters",
+        "art-posters"
+      ]
+    },
+    {
+      "term": "貼紙印刷",
+      "loc": "zh-hk",
+      "src": "P2 165imp pos27.3",
+      "titleHits": 0,
+      "descHits": 2,
+      "titleSlugs": [],
+      "descSlugs": [
+        "small-batch-stickers",
+        "die-cut-stickers"
+      ]
+    },
+    {
+      "term": "印海報",
+      "loc": "zh-hk",
+      "src": "P2 143imp pos23.7",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "宣傳單張印刷",
+      "loc": "zh-hk",
+      "src": "P2 127imp pos32.1",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "包裝盒印刷",
+      "loc": "zh-hk",
+      "src": "P2 69imp pos36.8",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "electronics-packaging-box"
+      ],
+      "descSlugs": [
+        "electronics-packaging-box"
+      ]
+    },
+    {
+      "term": "紙袋印刷",
+      "loc": "zh-hk",
+      "src": "map G3 67imp",
+      "titleHits": 0,
+      "descHits": 3,
+      "titleSlugs": [],
+      "descSlugs": [
+        "kraft-paper-bags",
+        "gift-bags",
+        "eco-paper-bags"
+      ]
+    },
+    {
+      "term": "餐牌印刷",
+      "loc": "zh-hk",
+      "src": "map G3 66imp",
+      "titleHits": 2,
+      "descHits": 4,
+      "titleSlugs": [
+        "laminated-menus",
+        "hardcover-menus"
+      ],
+      "descSlugs": [
+        "pvc-menus",
+        "laminated-menus",
+        "hardcover-menus",
+        "disposable-menus"
+      ]
+    },
+    {
+      "term": "騎馬釘印刷",
+      "loc": "zh-hk",
+      "src": "map G4 64imp",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "利是封印刷",
+      "loc": "zh-hk",
+      "src": "map G4 57imp",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "證書印刷",
+      "loc": "zh-hk",
+      "src": "map G3 18imp",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "certificates"
+      ],
+      "descSlugs": [
+        "certificates"
+      ]
+    },
+    {
+      "term": "畢業紀念冊",
+      "loc": "zh-hk",
+      "src": "map G2 7imp",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "graduation-yearbook"
+      ],
+      "descSlugs": [
+        "graduation-yearbook"
+      ]
+    },
+    {
+      "term": "即日印刷",
+      "loc": "zh-hk",
+      "src": "map G2 35imp",
+      "titleHits": 1,
+      "descHits": 0,
+      "titleSlugs": [
+        "same-day-flyers"
+      ],
+      "descSlugs": []
+    },
+    {
+      "term": "信封印刷",
+      "loc": "zh-hk",
+      "src": "map G2 7imp",
+      "titleHits": 0,
+      "descHits": 1,
+      "titleSlugs": [],
+      "descSlugs": [
+        "pearl-envelopes"
+      ]
+    },
+    {
+      "term": "small batch sticker printing",
+      "loc": "en",
+      "src": "P1 69imp pos6.61",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "small batch stickers",
+      "loc": "en",
+      "src": "P1 40imp pos5.53",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "small-batch-stickers"
+      ],
+      "descSlugs": [
+        "small-batch-stickers"
+      ]
+    },
+    {
+      "term": "catalog printing",
+      "loc": "en",
+      "src": "map 33imp G4",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "catalog-printing"
+      ],
+      "descSlugs": [
+        "catalog-printing"
+      ]
+    },
+    {
+      "term": "exercise book",
+      "loc": "en",
+      "src": "map 64imp G4",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "exercise-books"
+      ],
+      "descSlugs": [
+        "exercise-books"
+      ]
+    },
+    {
+      "term": "saddle stitch booklet",
+      "loc": "en",
+      "src": "map 50-63imp G5",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "saddle-stitch-booklets"
+      ],
+      "descSlugs": [
+        "saddle-stitch-booklets"
+      ]
+    },
+    {
+      "term": "book printing hong kong",
+      "loc": "en",
+      "src": "map 8imp G4",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "flyer printing",
+      "loc": "en",
+      "src": "map G2 2点击",
+      "titleHits": 2,
+      "descHits": 2,
+      "titleSlugs": [
+        "a4-flyers",
+        "same-day-flyers"
+      ],
+      "descSlugs": [
+        "a4-flyers",
+        "same-day-flyers"
+      ]
+    },
+    {
+      "term": "hardcover menu",
+      "loc": "en",
+      "src": "map G5",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "hardcover-menus"
+      ],
+      "descSlugs": [
+        "hardcover-menus"
+      ]
+    },
+    {
+      "term": "calendar",
+      "loc": "en",
+      "src": "map AEO 22imp",
+      "titleHits": 6,
+      "descHits": 6,
+      "titleSlugs": [
+        "wall-calendars",
+        "desk-calendars",
+        "custom-calendars",
+        "mini-calendars"
+      ],
+      "descSlugs": [
+        "wall-calendars",
+        "desk-calendars",
+        "custom-calendars",
+        "mini-calendars"
+      ]
+    },
+    {
+      "term": "両面カラー印刷",
+      "loc": "ja",
+      "src": "map 65imp G4",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "double-sided-flyers"
+      ],
+      "descSlugs": [
+        "double-sided-flyers"
+      ]
+    },
+    {
+      "term": "クラフト紙",
+      "loc": "ja",
+      "src": "map 63imp G4",
+      "titleHits": 2,
+      "descHits": 2,
+      "titleSlugs": [
+        "kraft-paper-bags",
+        "kraft-paper-packaging-box"
+      ],
+      "descSlugs": [
+        "kraft-paper-bags",
+        "kraft-paper-packaging-box"
+      ]
+    },
+    {
+      "term": "教科書",
+      "loc": "ja",
+      "src": "map 27imp G5",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "textbooks"
+      ],
+      "descSlugs": [
+        "textbooks"
+      ]
+    },
+    {
+      "term": "カタログ印刷",
+      "loc": "ja",
+      "src": "map 20imp G5",
+      "titleHits": 1,
+      "descHits": 1,
+      "titleSlugs": [
+        "catalog-printing"
+      ],
+      "descSlugs": [
+        "catalog-printing"
+      ]
+    },
+    {
+      "term": "教材",
+      "loc": "ja",
+      "src": "map 76imp G5",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "小ロット",
+      "loc": "ja",
+      "src": "map 小ロット词族",
+      "titleHits": 1,
+      "descHits": 2,
+      "titleSlugs": [
+        "small-batch-stickers"
+      ],
+      "descSlugs": [
+        "small-batch-stickers",
+        "food-boxes"
+      ]
+    },
+    {
+      "term": "同人",
+      "loc": "ja",
+      "src": "map 同人词族",
+      "titleHits": 1,
+      "descHits": 3,
+      "titleSlugs": [
+        "doujinshi-printing"
+      ],
+      "descSlugs": [
+        "doujinshi-printing",
+        "acrylic-keychain",
+        "can-badge"
+      ]
+    },
+    {
+      "term": "卒業アルバム",
+      "loc": "ja",
+      "src": "map 5imp G5",
+      "titleHits": 0,
+      "descHits": 0,
+      "titleSlugs": [],
+      "descSlugs": []
+    },
+    {
+      "term": "紙袋",
+      "loc": "ja",
+      "src": "map 6imp G5",
+      "titleHits": 5,
+      "descHits": 5,
+      "titleSlugs": [
+        "kraft-paper-bags",
+        "white-card-bags",
+        "eco-paper-bags",
+        "small-bags"
+      ],
+      "descSlugs": [
+        "kraft-paper-bags",
+        "white-card-bags",
+        "eco-paper-bags",
+        "small-bags"
+      ]
+    },
+    {
+      "term": "ポスター",
+      "loc": "ja",
+      "src": "map a2 ポスター词族",
+      "titleHits": 6,
+      "descHits": 6,
+      "titleSlugs": [
+        "a2-posters",
+        "a1-posters",
+        "outdoor-posters",
+        "display-posters"
+      ],
+      "descSlugs": [
+        "a2-posters",
+        "a1-posters",
+        "outdoor-posters",
+        "display-posters"
+      ]
+    }
+  ]
+}
