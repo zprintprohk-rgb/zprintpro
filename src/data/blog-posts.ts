@@ -512,8 +512,8 @@ const lpPosterPrintingGuide: BlogPostMeta = {
   date: '2026-07-02',
   title: {
     'zh-hk': '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港',
-    en: 'Custom Poster Printing Guide for US Events & Retail',
-    ja: 'オリジナルポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro',
+    en: 'Poster Printing Size Guide: Paper & Finishes | ZprintPro',
+    ja: 'ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '從A3到A0，從銅版紙到PP膠片，從海報筒包裝到批量交貨，智印港為您拆解香港海報印刷的尺寸選擇、紙質對比、工藝選項與設計要點。',
@@ -612,8 +612,8 @@ const lpCosmeticsPackagingBox: BlogPostMeta = {
   date: '2026-07-07',
   title: {
     'zh-hk': '化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港',
-    en: 'Custom Cosmetics Packaging Box Guide: Materials, Structure &',
-    ja: '化粧品パッケージ箱カスタムガイド：素材・構造・ブ | ZprintPro',
+    en: 'Cosmetics Packaging Guide: Materials & Sizes | ZprintPro',
+    ja: '化粧品パッケージ印刷ガイド：素材・構造 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港美妝護膚品牌、面膜、精華液、香水老闆必睇。一個結構精良、印刷精美的化妝品包裝盒決定貨架上的 3 秒購買決定。智印港為香港及跨境美妝品牌提供天地盒、書型盒、磁吸盒全系列定制,50-10,000 個小至大批量,5-10 個工作天交付。',
@@ -1626,9 +1626,9 @@ const lpStickerMaterialPvcVinylRemovable: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-29',
   title: {
-    'zh-hk': '防水貼紙材質完全指南: PVC / 透明 / 可移 / 燙金 4 大 | 智印港',
-    en: 'Waterproof Sticker Material Guide: PVC / Clear / Removable /',
-    ja: '防水ステッカー材質完全ガイド: PVC / 透明 / 再剥 | ZprintPro',
+    'zh-hk': '防水貼紙材質指南: PVC / 透明 / 可移 / 燙金 | 智印港',
+    en: 'Sticker Material: PVC, Clear, Removable, Foil | ZprintPro',
+    ja: '防水ステッカー材質ガイド: PVC / 透明 / 箔押し | ZprintPro',
   },
   excerpt: {
     'zh-hk': '防水貼紙材質點揀? 4 大材質對比 (PVC 防水 3 年耐候 / 透明防水 90% 透光 / 可移不殘膠 / 燙金工藝) + 100 張起印 HK$0.35/張 + 5 個行業場景 (餐飲外賣 / 物流倉儲 / 戶外設備 / 化妝品 / 活動門票) + 4 條 FAQ + 5 條內部連結 + 12 大行業底色, 30 秒 WhatsApp 報價.',
@@ -1675,8 +1675,8 @@ const lpFoilStamping3Applications2026: BlogPostMeta = {
   date: '2026-09-03',
   title: {
     'zh-hk': '燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片全對比 | 智印港',
-    en: 'Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards | ZprintPro',
-    ja: '箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード | ZprintPro ZprintPro',
+    en: 'Foil Stamping Guide: Stickers & Invitations | ZprintPro',
+    ja: '箔押し印刷ガイド 2026: ステッカー / 招待状 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '燙金點揀? 3 大應用 (貼紙 / 喜帖 Q4 旺季 / 禮盒卡片 R5 聖誕新年) + 4 種箔 (金/銀/玫瑰金/鐳射) + 5 種材質相容性 + 100 個起印 HK$0.80/個起 + 智印港 2026 H1 訂單實證 + 9 段 + 4 FAQ + 5 內部連結 + 30 秒 WhatsApp 報價.',
@@ -1697,9 +1697,9 @@ const lpCampusEducationPrintingPillarGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-03',
   title: {
-    'zh-hk': '校園教育印刷 9 月開學季 5 大印刷品 × 5 大材質 × 12 場景 | 智印港',
-    en: 'Campus Education Printing Sept: 5 Products × 5 Materials × 12 Apps | ZprintPro',
-    ja: 'キャンパス教育印刷 9 月新学期 5 大印刷品 × 5 大素材 × 12 シーン | ZprintPro',
+    'zh-hk': '校園教育印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港',
+    en: 'Campus Education Printing: 5 Products 12 Uses | ZprintPro',
+    ja: 'キャンパス教育印刷: 5 用品 × 12 シーン | ZprintPro',
   },
   excerpt: {
     'zh-hk': '9 月開學季校園印刷點揀? 5 大印刷品 (校刊/學生手冊/校園橫幅/畢業冊/證書) × 5 大材質 × 12 個應用場景 (4 大市場), 6 步印刷流程 + 30 秒 AI 報價, 18 SKU 校園聯動 + 12 個內鏈, 100 本起印, 3-5 個工作天交付.',
@@ -1742,9 +1742,9 @@ const hongKongPrintingCostBaseline2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-05',
   title: {
-    'zh-hk': '2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港',
-    en: '2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Stickers, Flyers, Books, Packaging & 12 More Categories',
-    ja: '2026年香港印刷コスト ベースラインレポート: ステッカー・チラシ・冊子・パッケージ他 16 カテゴリ 99 SKU 価格データ | ZprintPro',
+    'zh-hk': '2026 香港印刷成本基準: 16 品類 99 SKU 價格數據 | 智印港',
+    en: 'Hong Kong Printing Cost Report 2026: 99 SKU | ZprintPro',
+    ja: '香港印刷コスト 2026: 99 SKU 価格データ | ZprintPro',
   },
   excerpt: {
     'zh-hk': '16 品類 99 SKU 香港印刷價格基準：貼紙 HK$0.22 起、傳單 HK$0.18 起、冊子每本 HK$2.8 起，附起訂量分佈、裝訂選擇指南與 FSC 溢價實測。',
