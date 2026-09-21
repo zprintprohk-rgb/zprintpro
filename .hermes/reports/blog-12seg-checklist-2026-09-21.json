@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20T19:36:08.072Z",
+ "generated_at": "2026-09-21T06:44:41.925Z",
  "online": false,
  "site": "https://zprintpro.com",
  "segments": [
@@ -208,9 +208,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 6/15 (H2 11 + H3 4)，非问句 9（例: PVC, Clear, Removable, Hot F / QUV 1000h Accelerated Aging ）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 11 + H3 4 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -1180,9 +1180,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 7/15 (H2 12 + H3 3)，非问句 8（例: PVC、透明、再剥離、箔押し 4 種防水ステッカー素材  / QUV 1000 時間加速老化テスト 4 種素材比較）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2152,9 +2152,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 7/15 (H2 12 + H3 3)，非问句 8（例: PVC、透明、可移、燙金 4 種材質防水貼紙 5 維度比 / QUV 1000 小時加速老化測試 4 種材質對比）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",

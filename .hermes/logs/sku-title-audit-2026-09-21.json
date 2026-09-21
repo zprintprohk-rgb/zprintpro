@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-21",
+  "guard": "#25 title-band-guard",
+  "rule": "MIN=50 WARN>57 HARD>=58 (半角当量, SSoT title-equiv.js)",
+  "slotCount": 300,
+  "existingIssues": []
+}

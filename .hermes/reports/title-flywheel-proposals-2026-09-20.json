@@ -1,0 +1,1476 @@
+{
+  "generatedFor": "2026-09-20",
+  "rule": "MIN=50 MAX=57 (58 阻断)",
+  "slotCount": 42,
+  "passedCount": 15,
+  "manualCount": 2,
+  "proposals": [
+    {
+      "slug": "custom-calendars",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 35,
+      "curTitle": "定制年曆 | 企業禮品 多款式 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 184,
+        "ctr": 0,
+        "pos": 24.78
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "定制年曆 | 企業禮品 多款式 | 1000個起 HK$3起 | 智印港",
+          "e": 53,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "vehicle-wraps",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 39,
+      "curTitle": "汽車車身貼 | 車身廣告 全車包覆 | 智印港",
+      "gsc": {
+        "clicks": 1,
+        "imps": 109,
+        "ctr": 0.0092,
+        "pos": 47.18
+      },
+      "truth": {
+        "category_slug": "banners",
+        "minQuantity": 100,
+        "basePrice": 28,
+        "basePrice_en": 6.44,
+        "basePrice_ja": 840,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "汽車車身貼 | 車身廣告 全車包覆 | 100個起 HK$28起 | 智印港",
+          "e": 57,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "eco-paper-bags",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 35,
+      "curTitle": "環保紙袋 | 100%環保 多尺寸 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 68,
+        "ctr": 0,
+        "pos": 40.13
+      },
+      "truth": {
+        "category_slug": "paper-bags",
+        "minQuantity": 100,
+        "basePrice": 8,
+        "basePrice_en": 1.84,
+        "basePrice_ja": 240,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "環保紙袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+          "e": 52,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "adhesive-banners",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 60,
+      "curTitle": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 34,
+        "ctr": 0,
+        "pos": 46.65
+      },
+      "truth": {
+        "category_slug": "banners",
+        "minQuantity": 100,
+        "basePrice": 10,
+        "basePrice_en": 2.3,
+        "basePrice_ja": 300,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Adhesive Banners | Wind-Resistant | ZprintPro",
+          "e": 45,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "fruit-food-label-stickers",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 47,
+      "curTitle": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 27,
+        "ctr": 0,
+        "pos": 65.56
+      },
+      "truth": {
+        "category_slug": "stickers",
+        "minQuantity": 500,
+        "basePrice": 0.22,
+        "basePrice_en": 0.23,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 500個起 HK$0.22起 | 智印港",
+          "e": 67,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 500個起 | 智印港",
+          "e": 57,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "graduation-yearbook",
+      "locale": "ja",
+      "band": "TRIM",
+      "curEquiv": 69,
+      "curTitle": "卒業記念アルバム印刷 50 冊〜 | 中綴じ / 無線綴じ / 上製本 | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 20,
+        "ctr": 0,
+        "pos": 68.5
+      },
+      "truth": {
+        "category_slug": "educational",
+        "minQuantity": 50,
+        "basePrice": 45,
+        "basePrice_en": 10.35,
+        "basePrice_ja": 1350,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "卒業記念アルバム印刷 50 冊〜 | ZprintPro",
+          "e": 40,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "locale": "zh-hk",
+      "band": "TRIM",
+      "curEquiv": 64,
+      "curTitle": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 16,
+        "ctr": 0,
+        "pos": 5.69
+      },
+      "truth": {
+        "category_slug": "packaging",
+        "minQuantity": 500,
+        "basePrice": 129,
+        "basePrice_en": null,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 智印港",
+          "e": 49,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "food-boxes",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 71,
+      "curTitle": "Paper Food Packaging Printing 100+ | Food-Safe Boxes & Bags | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 11,
+        "ctr": 0,
+        "pos": 14.27
+      },
+      "truth": {
+        "category_slug": "packaging",
+        "minQuantity": 100,
+        "basePrice": 2.5,
+        "basePrice_en": 0.74,
+        "basePrice_ja": 101,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Paper Food Packaging Printing 100+ | ZprintPro",
+          "e": 46,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "hardcover-books",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 49,
+      "curTitle": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 智印港",
+      "gsc": {
+        "clicks": 1,
+        "imps": 10,
+        "ctr": 0.1,
+        "pos": 9.5
+      },
+      "truth": {
+        "category_slug": "books",
+        "minQuantity": 10,
+        "basePrice": 40,
+        "basePrice_en": 13.8,
+        "basePrice_ja": 1932,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 10個起 HK$40起 | 智印港",
+          "e": 66,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "公司精裝書 燙金・局部UV・10起印・HK$40起 | 10個起 | 智印港",
+          "e": 58,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "custom-red-packets",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 42,
+      "curTitle": "custom red packets | 燙金 UV 壓紋 | 智印港",
+      "gsc": {
+        "clicks": 1,
+        "imps": 8,
+        "ctr": 0.125,
+        "pos": 7
+      },
+      "truth": {
+        "category_slug": "red-packets",
+        "minQuantity": 100,
+        "basePrice": 1.9,
+        "basePrice_en": 0.74,
+        "basePrice_ja": 103,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "custom red packets | 燙金 UV 壓紋 | 100個起 HK$1.90起 | 智印港",
+          "e": 62,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "custom red packets | 燙金 UV 壓紋 | 100個起 | 智印港",
+          "e": 52,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "desk-calendars",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 61,
+      "curTitle": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 8,
+        "ctr": 0,
+        "pos": 37.75
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Desk Calendars | Wire-Bound Spiral | ZprintPro",
+          "e": 46,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "perfect-bound-books",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 62,
+      "curTitle": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 7,
+        "ctr": 0,
+        "pos": 70
+      },
+      "truth": {
+        "category_slug": "books",
+        "minQuantity": 10,
+        "basePrice": 16,
+        "basePrice_en": 4.6,
+        "basePrice_ja": 644,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Perfect Bound Books | Perfect Bound | ZprintPro",
+          "e": 47,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "spiral-notebooks",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 59,
+      "curTitle": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 6,
+        "ctr": 0,
+        "pos": 24.33
+      },
+      "truth": {
+        "category_slug": "books",
+        "minQuantity": 10,
+        "basePrice": 8,
+        "basePrice_en": 2.76,
+        "basePrice_ja": 386,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Spiral Notebooks | Perfect Bound | ZprintPro",
+          "e": 44,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "wall-calendars",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 61,
+      "curTitle": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 5,
+        "ctr": 0,
+        "pos": 66
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Wall Calendars | Wire-Bound Spiral | ZprintPro",
+          "e": 46,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "roll-up-banners",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 59,
+      "curTitle": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 5,
+        "ctr": 0,
+        "pos": 60.2
+      },
+      "truth": {
+        "category_slug": "banners",
+        "minQuantity": 100,
+        "basePrice": 85,
+        "basePrice_en": 46,
+        "basePrice_ja": 6440,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Roll-up Banners | Wind-Resistant | ZprintPro",
+          "e": 44,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "foil-red-packets",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 45,
+      "curTitle": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 4,
+        "ctr": 0,
+        "pos": 3.5
+      },
+      "truth": {
+        "category_slug": "red-packets",
+        "minQuantity": 100,
+        "basePrice": 1.1,
+        "basePrice_en": 0.46,
+        "basePrice_ja": 64,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "箔押し年賀状 | 箔押し UV エンボス | 100枚〜 ¥64〜 | ZprintPro",
+          "e": 61,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "箔押し年賀状 | 箔押し UV エンボス | 100枚〜 | ZprintPro",
+          "e": 55,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "eco-red-packets",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 60,
+      "curTitle": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 4,
+        "ctr": 0,
+        "pos": 11.25
+      },
+      "truth": {
+        "category_slug": "red-packets",
+        "minQuantity": 100,
+        "basePrice": 1.9,
+        "basePrice_en": 0.74,
+        "basePrice_ja": 103,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Eco Red Packets | Gold Foil Print | ZprintPro",
+          "e": 45,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "pearl-envelopes",
+      "locale": "en",
+      "band": "FILL",
+      "curEquiv": 48,
+      "curTitle": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 4,
+        "ctr": 0,
+        "pos": 20.25
+      },
+      "truth": {
+        "category_slug": "envelopes",
+        "minQuantity": 100,
+        "basePrice": 1.15,
+        "basePrice_en": 0.46,
+        "basePrice_ja": 64,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "Pearl Envelopes | Free Shipping $99+ | 100 MOQ | $0.46 | ZprintPro",
+          "e": 66,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "Pearl Envelopes | Free Shipping $99+ | 100 MOQ | ZprintPro",
+          "e": 58,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 45,
+      "curTitle": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 4,
+        "ctr": 0,
+        "pos": 3.25
+      },
+      "truth": {
+        "category_slug": "greeting-cards",
+        "minQuantity": 10,
+        "basePrice": 1.2,
+        "basePrice_en": 0.15,
+        "basePrice_ja": 23,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 10個起 HK$1.20起 | 智印港",
+          "e": 64,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "400g 超厚名片印刷 | 厚卡・燙金・壓紋 | 10個起 | 智印港",
+          "e": 54,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "transparent-stickers",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 48,
+      "curTitle": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 8
+      },
+      "truth": {
+        "category_slug": "stickers",
+        "minQuantity": 10,
+        "basePrice": 0.38,
+        "basePrice_en": 0.41,
+        "basePrice_ja": 51,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "透明ステッカー | 防水 PVC ダイカット | 10枚〜 ¥51〜 | ZprintPro",
+          "e": 63,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "透明ステッカー | 防水 PVC ダイカット | 10枚〜 | ZprintPro",
+          "e": 57,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "photo-frame-calendars",
+      "locale": "ja",
+      "band": "TRIM",
+      "curEquiv": 60,
+      "curTitle": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 3
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "フォトフレームカレンダー | ZprintPro",
+          "e": 36,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "perfect-bound-books",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 49,
+      "curTitle": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 33
+      },
+      "truth": {
+        "category_slug": "books",
+        "minQuantity": 10,
+        "basePrice": 16,
+        "basePrice_en": 4.6,
+        "basePrice_ja": 644,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 10個起 HK$16起 | 智印港",
+          "e": 66,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "公司膠裝書 覆膜・騎馬釘・10起印・HK$16起 | 10個起 | 智印港",
+          "e": 58,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "exercise-books",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 43,
+      "curTitle": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 25.5
+      },
+      "truth": {
+        "category_slug": "educational",
+        "minQuantity": 10,
+        "basePrice": 4,
+        "basePrice_en": 1.84,
+        "basePrice_ja": 258,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "練習帳 | 中綴じ/無線綴じ 50冊〜 | 10枚〜 ¥258〜 | ZprintPro",
+          "e": 59,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "練習帳 | 中綴じ/無線綴じ 50冊〜 | 10枚〜 | ZprintPro",
+          "e": 52,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "magnetic-closure-gift-box",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 48,
+      "curTitle": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港",
+      "gsc": {
+        "clicks": 1,
+        "imps": 2,
+        "ctr": 0.5,
+        "pos": 2.5
+      },
+      "truth": {
+        "category_slug": "packaging",
+        "minQuantity": 100,
+        "basePrice": 15,
+        "basePrice_en": 3.45,
+        "basePrice_ja": 450,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 100個起 HK$15起 | 智印港",
+          "e": 66,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 100個起 | 智印港",
+          "e": 58,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "doujinshi-printing",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 45,
+      "curTitle": "同人誌印刷 10本起印 | Comiket前24小時特急対応",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 4.5
+      },
+      "truth": {
+        "category_slug": "japan-doujin",
+        "minQuantity": 10,
+        "basePrice": 7500,
+        "basePrice_en": 1245,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "同人誌印刷 10本起印 | Comiket前24小時特急対応 | 10個起 HK$7500起 | 智印港",
+          "e": 73,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "同人誌印刷 10本起印 | Comiket前24小時特急対応 | 10個起 | 智印港",
+          "e": 63,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "can-badge",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 44,
+      "curTitle": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備",
+      "gsc": {
+        "clicks": 0,
+        "imps": 2,
+        "ctr": 0,
+        "pos": 17
+      },
+      "truth": {
+        "category_slug": "japan-doujin",
+        "minQuantity": 10,
+        "basePrice": 1200,
+        "basePrice_en": 199.2,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 10個起 HK$1200起 | 智印港",
+          "e": 72,
+          "pass": false,
+          "gates": [
+            "G1_当量",
+            "G3_跨语言"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "罐型襟章印刷 57mm 76mm | 推し活 Comiket 必備 | 10個起 | 智印港",
+          "e": 62,
+          "pass": false,
+          "gates": [
+            "G1_当量",
+            "G3_跨语言"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "folded-leaflets",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 60,
+      "curTitle": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 43
+      },
+      "truth": {
+        "category_slug": "flyers",
+        "minQuantity": 10,
+        "basePrice": 0.7,
+        "basePrice_en": 0.8,
+        "basePrice_ja": 110,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Folded Leaflets | Tri-Fold Design | ZprintPro",
+          "e": 45,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eco-flyers",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 46,
+      "curTitle": "エコチラシ | 両面フルカラー 10枚〜 | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 4
+      },
+      "truth": {
+        "category_slug": "flyers",
+        "minQuantity": 10,
+        "basePrice": 0.38,
+        "basePrice_en": 0.6,
+        "basePrice_ja": 75,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "エコチラシ | 両面フルカラー 10枚〜 | 10枚〜 ¥75〜 | ZprintPro",
+          "e": 61,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "エコチラシ | 両面フルカラー 10枚〜 | 10枚〜 | ZprintPro",
+          "e": 55,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "cosmetic-boxes",
+      "locale": "zh-hk",
+      "band": "TRIM",
+      "curEquiv": 77,
+      "curTitle": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 9
+      },
+      "truth": {
+        "category_slug": "packaging",
+        "minQuantity": 100,
+        "basePrice": 8,
+        "basePrice_en": 1.84,
+        "basePrice_ja": 240,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
+          "e": 77,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "large-red-packets",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 62,
+      "curTitle": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 4
+      },
+      "truth": {
+        "category_slug": "red-packets",
+        "minQuantity": 100,
+        "basePrice": 2.2,
+        "basePrice_en": 0.92,
+        "basePrice_ja": 129,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Large Red Packets | Gold Foil Print | ZprintPro",
+          "e": 47,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "custom-calendars",
+      "locale": "en",
+      "band": "FILL",
+      "curEquiv": 49,
+      "curTitle": "Custom Calendars | Free Shipping $99+ | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 11
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "Custom Calendars | Free Shipping $99+ | 1000 MOQ | $0.40 | ZprintPro",
+          "e": 68,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "Custom Calendars | Free Shipping $99+ | 1000 MOQ | ZprintPro",
+          "e": 60,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mini-calendars",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 61,
+      "curTitle": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 12
+      },
+      "truth": {
+        "category_slug": "calendars",
+        "minQuantity": 1000,
+        "basePrice": 3,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "Mini Calendars | Wire-Bound Spiral | ZprintPro",
+          "e": 46,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "school-flyers",
+      "locale": "en",
+      "band": "TRIM",
+      "curEquiv": 60,
+      "curTitle": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 5
+      },
+      "truth": {
+        "category_slug": "educational",
+        "minQuantity": 10,
+        "basePrice": 0.2,
+        "basePrice_en": 0.14,
+        "basePrice_ja": 20,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "School Flyers | Same-Day Printing | ZprintPro",
+          "e": 45,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "locale": "ja",
+      "band": "TRIM",
+      "curEquiv": 73,
+      "curTitle": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 6
+      },
+      "truth": {
+        "category_slug": "packaging",
+        "minQuantity": 500,
+        "basePrice": 129,
+        "basePrice_en": null,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A_丢段",
+          "cand": "合版ホワイトカードボックス (型代不要) | ZprintPro",
+          "e": 49,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "eco-tote-bag",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 48,
+      "curTitle": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選",
+      "gsc": {
+        "clicks": 0,
+        "imps": 1,
+        "ctr": 0,
+        "pos": 5
+      },
+      "truth": {
+        "category_slug": "japan-doujin",
+        "minQuantity": 10,
+        "basePrice": 9000,
+        "basePrice_en": 1494,
+        "basePrice_ja": null,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選 | 10個起 HK$9000起 | 智印港",
+          "e": 76,
+          "pass": false,
+          "gates": [
+            "G1_当量",
+            "G3_跨语言"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "環保托特袋 有機棉 100% | 推し活 Comiket 場售首選 | 10個起 | 智印港",
+          "e": 66,
+          "pass": false,
+          "gates": [
+            "G1_当量",
+            "G3_跨语言"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "small-bags",
+      "locale": "zh-hk",
+      "band": "FILL",
+      "curEquiv": 35,
+      "curTitle": "小號紙袋 | 100%環保 多尺寸 | 智印港",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": null,
+      "candidates": [
+        {
+          "mode": "MANUAL_REVIEW",
+          "reason": "缺真值 (minQuantity/price 不全)"
+        }
+      ]
+    },
+    {
+      "slug": "small-bags",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 40,
+      "curTitle": "小型紙袋 | エコ素材 多サイズ | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": null,
+      "candidates": [
+        {
+          "mode": "MANUAL_REVIEW",
+          "reason": "缺真值 (minQuantity/price 不全)"
+        }
+      ]
+    },
+    {
+      "slug": "a5-flyers",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 46,
+      "curTitle": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": {
+        "category_slug": "flyers",
+        "minQuantity": 10,
+        "basePrice": 0.25,
+        "basePrice_en": 0.4,
+        "basePrice_ja": 50,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "A5 チラシ | 両面フルカラー 100枚〜 | 10枚〜 ¥50〜 | ZprintPro",
+          "e": 61,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "A5 チラシ | 両面フルカラー 100枚〜 | 10枚〜 | ZprintPro",
+          "e": 55,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "thick-paper-flyers",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 47,
+      "curTitle": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": {
+        "category_slug": "flyers",
+        "minQuantity": 10,
+        "basePrice": 0.45,
+        "basePrice_en": 0.7,
+        "basePrice_ja": 95,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "厚口チラシ | 両面フルカラー 100枚〜 | 10枚〜 ¥95〜 | ZprintPro",
+          "e": 62,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "厚口チラシ | 両面フルカラー 100枚〜 | 10枚〜 | ZprintPro",
+          "e": 56,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "large-red-packets",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 43,
+      "curTitle": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": {
+        "category_slug": "red-packets",
+        "minQuantity": 100,
+        "basePrice": 2.2,
+        "basePrice_en": 0.92,
+        "basePrice_ja": 129,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "大型年賀状 | 箔押し UV エンボス | 100枚〜 ¥129〜 | ZprintPro",
+          "e": 60,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "大型年賀状 | 箔押し UV エンボス | 100枚〜 | ZprintPro",
+          "e": 53,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "colored-envelopes",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 46,
+      "curTitle": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": {
+        "category_slug": "envelopes",
+        "minQuantity": 100,
+        "basePrice": 0.38,
+        "basePrice_en": 0.18,
+        "basePrice_ja": 25,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "カラー封筒 | 両面印刷 マルチサイズ | 100枚〜 ¥25〜 | ZprintPro",
+          "e": 62,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "カラー封筒 | 両面印刷 マルチサイズ | 100枚〜 | ZprintPro",
+          "e": 56,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "ja",
+      "band": "FILL",
+      "curEquiv": 47,
+      "curTitle": "厚口400g名刺印刷 | 箔押し・エンボス | ZprintPro",
+      "gsc": {
+        "imps": 0,
+        "clicks": 0,
+        "pos": null
+      },
+      "truth": {
+        "category_slug": "greeting-cards",
+        "minQuantity": 10,
+        "basePrice": 1.2,
+        "basePrice_en": 0.15,
+        "basePrice_ja": 23,
+        "unitLabel": null
+      },
+      "candidates": [
+        {
+          "variant": "A",
+          "cand": "厚口400g名刺印刷 | 箔押し・エンボス | 10枚〜 ¥23〜 | ZprintPro",
+          "e": 62,
+          "pass": false,
+          "gates": [
+            "G1_当量"
+          ]
+        },
+        {
+          "variant": "B_仅MOQ",
+          "cand": "厚口400g名刺印刷 | 箔押し・エンボス | 10枚〜 | ZprintPro",
+          "e": 56,
+          "pass": true,
+          "gates": []
+        }
+      ]
+    }
+  ]
+}

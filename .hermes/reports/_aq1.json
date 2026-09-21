@@ -1,0 +1,36 @@
+{
+  "generatedFor": "2026-09-21",
+  "skuCount": 89,
+  "slotCount": 267,
+  "TITLE_MIN": 50,
+  "TITLE_MAX": 57,
+  "tierCount": {
+    "T3_KEEP": 69,
+    "T1_REWRITE": 192,
+    "T2_WINDOW_KEEP": 6
+  },
+  "issueCount": {
+    "P2|title|no_turnaround_hook": 242,
+    "P1|title|no_price_hook": 133,
+    "P1|title|no_moq_hook": 99,
+    "P0|h1|main_kw_missing": 80,
+    "P2|desc|no_turnaround": 74,
+    "P1|desc|main_kw_missing": 73,
+    "P2|keywords|main_kw_not_first": 56,
+    "P0|h1|missing": 45,
+    "P0|desc|missing": 45,
+    "P1|h1|fluff_words": 40,
+    "P0|desc|moq_conflict_title": 29,
+    "P1|h1|too_thin": 23,
+    "P0|desc|too_short": 6,
+    "P0|desc|currency_pollution": 6,
+    "P1|title|fluff_words": 2
+  },
+  "t1ByLocale": {
+    "x": 75,
+    "en": 70,
+    "ja": 74,
+    "zh-hk": 48
+  },
+  "t1Slots": 192
+}

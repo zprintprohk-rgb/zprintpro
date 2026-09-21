@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-20T19:36:08.072Z",
- "online": false,
+ "generated_at": "2026-09-21T13:13:25.911Z",
+ "online": true,
  "site": "https://zprintpro.com",
  "segments": [
   {
@@ -178,15 +178,6 @@
   },
   {
    "locale": "en",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "en",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -208,9 +199,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 6/15 (H2 11 + H3 4)，非问句 9（例: PVC, Clear, Removable, Hot F / QUV 1000h Accelerated Aging ）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 11 + H3 4 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -283,15 +274,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "en",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "en",
@@ -394,15 +376,6 @@
   },
   {
    "locale": "en",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "en",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -499,15 +472,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "en",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "en",
@@ -610,15 +574,6 @@
   },
   {
    "locale": "en",
-   "slug": "foil-stamping-3-applications-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "en",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -715,15 +670,6 @@
    "status": "PASS",
    "evidence": "24 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "en",
-   "slug": "hong-kong-printing-cost-baseline-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "en",
@@ -826,15 +772,6 @@
   },
   {
    "locale": "en",
-   "slug": "roll-up-banner-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "en",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -934,15 +871,6 @@
   },
   {
    "locale": "en",
-   "slug": "print-specifications-reference-guide-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "en",
    "slug": "school-exercise-book-printing-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1039,15 +967,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "en",
-   "slug": "school-exercise-book-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -1150,15 +1069,6 @@
   },
   {
    "locale": "ja",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "ja",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1180,9 +1090,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 7/15 (H2 12 + H3 3)，非问句 8（例: PVC、透明、再剥離、箔押し 4 種防水ステッカー素材  / QUV 1000 時間加速老化テスト 4 種素材比較）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1255,15 +1165,6 @@
    "status": "PASS",
    "evidence": "18 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "ja",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -1366,15 +1267,6 @@
   },
   {
    "locale": "ja",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1471,15 +1363,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "ja",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -1582,15 +1465,6 @@
   },
   {
    "locale": "ja",
-   "slug": "foil-stamping-3-applications-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "ja",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1687,15 +1561,6 @@
    "status": "PASS",
    "evidence": "24 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "ja",
-   "slug": "hong-kong-printing-cost-baseline-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "ja",
@@ -1798,15 +1663,6 @@
   },
   {
    "locale": "ja",
-   "slug": "roll-up-banner-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "ja",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -1906,15 +1762,6 @@
   },
   {
    "locale": "ja",
-   "slug": "print-specifications-reference-guide-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -2011,15 +1858,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "ja",
-   "slug": "school-exercise-book-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -2122,15 +1960,6 @@
   },
   {
    "locale": "zh-hk",
-   "slug": "packaging-box-pricing-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "zh-hk",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -2152,9 +1981,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 7/15 (H2 12 + H3 3)，非问句 8（例: PVC、透明、可移、燙金 4 種材質防水貼紙 5 維度比 / QUV 1000 小時加速老化測試 4 種材質對比）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2227,15 +2056,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "sticker-material-pvc-vinyl-removable",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -2338,15 +2158,6 @@
   },
   {
    "locale": "zh-hk",
-   "slug": "poster-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "zh-hk",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -2443,15 +2254,6 @@
    "status": "PASS",
    "evidence": "11 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "campus-education-printing-pillar-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -2554,15 +2356,6 @@
   },
   {
    "locale": "zh-hk",
-   "slug": "foil-stamping-3-applications-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "zh-hk",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -2659,15 +2452,6 @@
    "status": "PASS",
    "evidence": "24 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "hong-kong-printing-cost-baseline-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -2770,15 +2554,6 @@
   },
   {
    "locale": "zh-hk",
-   "slug": "roll-up-banner-printing-guide",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
-  },
-  {
-   "locale": "zh-hk",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 1,
    "name": "倒金字塔首段",
@@ -2875,15 +2650,6 @@
    "status": "PASS",
    "evidence": "14 条达标内链",
    "reason": ""
-  },
-  {
-   "locale": "zh-hk",
-   "slug": "print-specifications-reference-guide-2026",
-   "seg": 12,
-   "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
   },
   {
    "locale": "zh-hk",
@@ -2986,12 +2752,246 @@
   },
   {
    "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189601",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=178610",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188319",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188132",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=215679",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=181009",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=165900",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192506",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
    "slug": "school-exercise-book-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "SKIP",
-   "evidence": "content 无内嵌 JSON-LD；线上齐套性待 --online 判定",
-   "reason": "运行 node scripts/guards/blog-quality-12-rules-guard.js --online"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=158430",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=209853",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=208813",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=186457",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=224385",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=252225",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=216655",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195246",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=225121",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=170503",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183713",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180721",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=163348",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=190441",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=213076",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183530",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167129",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193905",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=151738",
+   "reason": ""
   }
  ]
 }
