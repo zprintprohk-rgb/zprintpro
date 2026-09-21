@@ -216,7 +216,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
 - 品牌: 智印港
 - 成立: 2014年
 - Website: https://zprintpro.com
-- 地址: 廣東省深圳市龍崗區平湖街道嘉城路1號（518111）
+- 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室
 - 電話: +86 198 8085 1334
 - WhatsApp: +86 198 8085 1334
 - 電郵: zprintpro@outlook.com
