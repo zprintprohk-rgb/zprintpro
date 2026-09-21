@@ -586,9 +586,9 @@ const categorySeoData: Record<string, {
   },
   'banners': {
     titles: {
-      'zh-hk': '摺頁印刷 100個起 | 防水防UV + 易拉寶 + X架 | 智印港',
-      'en': 'Outdoor Banner Printing from $12 | 100 MOQ + Waterproof UV | ZprintPro',
-      'ja': '屋外バナー印刷｜100枚〜・防水UV・ロールアップ｜ZprintPro',
+      'zh-hk': '摺頁印刷 1個起 | 防水防UV + 易拉寶 + X架 | 智印港',
+      'en': 'Outdoor Banner Printing from $12 | 1 MOQ + Waterproof UV | ZprintPro',
+      'ja': '屋外バナー印刷｜1枚〜・防水UV・ロールアップ｜ZprintPro',
     },
     keywords: {
       'zh-hk': '戶外橫額,易拉寶,X架,展覽橫額,車身廣告,防水橫額,防UV橫額,展架,燈箱廣告,噴繪廣告,商場橫額,活動橫額,工地橫額,外賣檔橫額',
@@ -596,9 +596,9 @@ const categorySeoData: Record<string, {
       'ja': '屋外バナー印刷,カスタム屋外バナー,ロールアップバナー,X スタンドバナー,展示バナー,車両広告,防水バナー,UV耐性バナー,イベントバナー,現場バナー,商店街バナー',
     },
     descriptions: {
-      'zh-hk': '戶外橫額印刷 100 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',
-      'en': 'Custom outdoor banner printing from $12, 100 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 certified.',
-      'ja': '屋外バナー印刷 100 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 certified.',
+      'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'books': {

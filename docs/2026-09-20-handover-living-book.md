@@ -571,3 +571,27 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 **12 段博客驗證（K3 08:02 指令①）**：本批 MOQ 改過的 6 篇博客逐篇 --slug 檢查，殘留 FAIL 全部為存量（段06 案例/段07 E-E-A-T/段08 GEO 原子全站性缺口 + catalog/paper-materials/restaurant-menu 老文段01-04 結構舊式），**無一是 MOQ 編輯引入**（diff 復核僅數字口徑行）。線上全量複採 324 行 PASS=265/FAIL=59（對比 9/20 基線 128/33/19：行數增多 = 併發會話已把新 slug 納入門禁視野，FAIL 上升是「讓門禁看見真問題」的預期行為）。
 
 **待辦（下批）**：① SERP 實查 7 詞（L1-1）需真實瀏覽器（webbridge）；② 45 槽補描述；③ 181 槽描述截斷重写（按點擊潛力排序）；④ posters zh-hk title 改寫待 K3 授權；⑤ ja 教材/卒業アルバム + en book printing hong kong 品類 desc 窗內補；⑥ banners minQ=100 商业评估。
+
+### 2026-09-21 09:50 · K3 08:36「全部按1件起」落地批（commit 9d1cc363 已推 + 线上断言 6/6 PASS）+ L1-1 SERP 实查判定表（webbridge 真浏览器）
+
+**A. MOQ=1 批（K3 08:36 拍板）— 已上线**：
+- 引擎 `products.ts`：banners 5 SKU minQ 100→1（outdoor-vinyl/roll-up/adhesive/vehicle-wraps/mesh）+ graduation-yearbook 50→1。
+- 文案全層：畢業冊三语 title/desc/h1/body/FAQ 50→1 ×14（sku-seo-data）+ products-content ×2 + educational 品类 meta/stat/label/价格表 ×4 + products.ts en/ja 描述 ×2 + **seo.ts banners 品类 meta 回改 1**（昨 100 修正為中間態；引擎=1 後原「1 個起」聲稱恢復為真）。應用器 `scripts/apply-moq1-universal-batch-20260921.mjs`（34 規則，exact+計數斷言+冪等；**坑：裸 `"slug: '"` 會撞上 `category_slug: '"` —— 窗口邊界須用 `\n    slug: '"`**）。
+- 線上斷言 6/6 PASS（banners 三语品类页 + yearbook 三语产品页）。
+- **未動（登記）**：月曆族 1000 口徑 vs 08:36「全部按1件起」**拍板衝突升級中**（K3 00:28「1000 實證」與 08:36「全部按1件起」矛盾，衝突未裁前不動 conversion-blocks 月曆族 50 本起 ×4）；wedding/place-cards minQ=50（未點名，copy=data 一致）；educational 通用「10 MOQ」（exercise-books 引擎=10；若教育品类也 1 件起需引擎層 10→1 一併改）；educational 價格表「練習簿 100 本起」vs 引擎 10（疑似高估，登記）；educational 家族 faqSchema「perfect bound 100 / hardcover 50 / saddle 250」存量陳舊（真值 10/10/10），schema 層待清。
+
+**B. L1-1 SERP 實查判定表（9/18 分析「查一次就能定性」7 詞，google.com.hk 真瀏覽器 2026-09-21 10:00，證據 `.hermes/reports/l1-1-serp-check-2026-09-21.json`）**：
+
+**總判定：7/7 無 AI Overview（AI 吸收假設排除）；6/7 頂部有廣告；3/7 有購物單元；0/7 本地包獨占（食品包裝印刷/邊度有紙袋買有地圖塊但非獨占）。零點擊主因 = ①標題/摘要弱 ②intent 錯配 ③廣告+購物部分吸收。**
+
+| 詞 | imp/pos | SERP 實況（前位） | 判定 |
+|---|---|---|---|
+| 食品包裝印刷 | 145/6.65 | PackLab(JoinPrint)/ProductsPack/Bynock 佔 1-3 + 地圖塊；無 AI | **改標題**：品類 title 加「低 MOQ/即日」鉤（PackLab 用「低MOQ 起訂」打我們 100個起）＋落點已在品类頁 ✓ |
+| a6 尺寸 | 97/8.86 | 純資訊（尺寸表/維基）+購物單元；**zprintpro 完全缺席前 10** | **改落點**：資訊 intent，承接頁 = a5-vs-a6 博客（L1-2 對象），SKU 層不可搶；博客 title/meta 強化 + 答案塊前置 |
+| small batch sticker printing | 69/6.61 | Sponsored Shops + Sticker Mule 系 + Reddit + 地圖塊 | **改標題（窗後第一優先，已排隊）** + Sponsored Shops 吸收部分點擊不可搶；4-6 位可爭 |
+| 小冊子印刷 | 48/10.04 | 全是港同業（e-print 打稿收費表 #9）+購物單元 | **改標題**：books 品類 title 加「急印/少量」鉤（對手 #1 用「急印\|少量」）；pos 10→4-10 帶內 CTR 1.48% 可收割 |
+| 大信封 | 45/4.42 | 香港郵政 #1 + 字典 + 零售現貨（WAH CHIT）混合 intent | **基本不可搶**（郵政/零售 intent 段），印刷 intent 段我方 title 已強（急件即日 ✓）；低優先，僅 desc 加「印刷訂製≠零售現貨」區分 |
+| small batch stickers | 40/5.53 | 純商業（Sticker Mule/Reddit/定制店），無廣告無地圖 | **改標題**（同 #3 槽位，窗後執行）；無廣告=有機會窗大 |
+| 邊度有紙袋買 | 36/7.44 | 零售現貨（Artpack/雞皮紙袋/Carousell）+地圖塊；**零售現購 intent** | **改落點（低優先）**：paper-bags 頁加 AEO 答案塊「現貨手挽紙袋+訂製」承接；印刷頁難直接收 |
+
+**執行隊列（依判定）**：窗內可動 = 食品包裝印刷/小冊子印刷品類 desc 層 + a6 博客 meta + paper-bags AEO 塊（均不碰窗內 42 槽 title）；窗後（9/30 後）= small-batch-stickers en title ×2 詞、posters zh-hk title。

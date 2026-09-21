@@ -5264,7 +5264,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/outdoor-vinyl-banners.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5338,7 +5338,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/roll-up-banners.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5432,7 +5432,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/adhesive-banners.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5527,7 +5527,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/vehicle-wraps.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -5621,7 +5621,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/mesh-banners.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -6922,7 +6922,7 @@ export const products: Product[] = [
     category: 'educational',
     category_slug: 'educational',
     name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
-    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 50 MOQ, DHL Express global 2-4 day delivery from Asia factory. 适配行业: High school yearbook, College yearbook, Alumni, Training, School events, Church, Tutoring.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、50冊〜、アジア自社工場からDHL国際速達2-4日。 适配行业: 高校卒業アルバム、大学卒業アルバム、同窓会、研修、学校活動、教会、塾.', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 1 MOQ, DHL Express global 2-4 day delivery from Asia factory. 适配行业: High school yearbook, College yearbook, Alumni, Training, School events, Church, Tutoring.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、1冊〜、アジア自社工場からDHL国際速達2-4日。 适配行业: 高校卒業アルバム、大学卒業アルバム、同窓会、研修、学校活動、教会、塾.', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.',
     price_range: 'HK$45-180/本',
     basePrice: 45,
     basePrice_en: 10.35,
@@ -6930,7 +6930,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: true,
     isNew: true,
-    minQuantity: 50,
+    minQuantity: 1,
     images: ['/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp'],
   imagesByLocale: {
       'zh-hk': [
