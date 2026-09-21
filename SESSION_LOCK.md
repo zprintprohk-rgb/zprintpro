@@ -280,3 +280,14 @@
 | **验证** | 当量 52/53 ✅ · census 300 OK / 0 FILL / 0 TRIM ✅ · 编码 ✅ · tsc 报错全为 quote-engine 存量基线（本批未触碰）✅ |
 | **遗留登记** | ① P0-A 数字钩规则冲突 8 槽（K3 裁决维持现状）② AEO desc 层普查 + GEO schema 层（ProcureAction/sourcingIntentKeywords）未开垦，为飞轮下一杠杆 ③ 关键词词库仅 en/category 47 条适用标题，zh-hk/ja 无行 ④ 验证窗 2 槽至 ~2026-09-28/10-01 |
 | **未提交声明** | 锁外既有脏文件（moq-scan/blog-12seg/bypass-audit 等 .hermes 改动）非本批产物，按纪律不代持不代提交，留原状 |
+
+## 持有声明（2026-09-21 21:2x · GEO-G1 会话 · 执行中）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | GEO-G1 会话（K3 21:20「直接开工出缺口清单和实施方案」→ 21:23「开工 G1」；FOB 按执行层推荐=不写，写 DHL 事实层） |
+| **意图** | G1 批：`generateProductJsonLd` 加 ProcureAction（target=/quote/）+ sourcingIntentKeywords（三语模板, 全段可指回活文案）+ Offer.eligibleQuantity（minQuantity 99/99, unitCode H87 + category→unitText 映射）+ businessFunction=GR Sell |
+| **写入范围** | `src/lib/seo.ts`（1 函数）· `src/app/[locale]/product/[slug]/page.tsx`（1 处传参）· 本文件 · 缺口文档回填 |
+| **双条件核验** | ① src/ 无 MM（R2 批已 push 收尾）② 对端 ≥15min 静默（21:0x 后无写入）✓ |
+| **预计时长** | < 30 min |
+| **释放条件** | 四件套 + commit + push + 线上 ProcureAction/eligibleQuantity 断言通过 |

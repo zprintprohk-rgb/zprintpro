@@ -240,7 +240,9 @@ export default function ProductPage({
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
     undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳過 aggregateRating (K3 v2 §3.3 約束 4)
     locale,
-    offerData
+    offerData,
+    // G1 (2026-09-21): GSIM 采购意图层真值 (minQuantity 99/99 覆盖实测; products.ts 为唯一数字来源)
+    { minQuantity: product.minQuantity ?? null, categorySlug: product.category_slug ?? null }
   );
   // ImageObject Schema（獨立節點，不影響 Product ranking）
   const productImageJsonLd = generateProductImageJsonLd(

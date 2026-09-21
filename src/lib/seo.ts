@@ -1195,8 +1195,29 @@ export function generateProductJsonLd(
   rating?: ProductRatingInput,
   locale: string = 'zh-hk',
   // v9.2.2 裁决3.3 (P1, 随 C2): 有价格表 SKU 传真实 Offer {price,currency}, 无表 SKU 传 null → 只挂 Product 不挂 Offer
-  offerData?: { price: string; currency: string } | null
+  offerData?: { price: string; currency: string } | null,
+  // 2026-09-21 G1 批 (K3 拍板《GEO schema 层缺口清单》docs/2026-09-21-geo-schema-gap-and-plan.md):
+  // GSIM 采购意图层 — ProcureAction + sourcingIntentKeywords + eligibleQuantity + businessFunction。
+  // 真值铁律: minQuantity 引 products.ts (覆盖率 99/99 实测); unitText 按 category 映射 (unitCode=H87 中性件);
+  // 「FOB」不写 (K3 21:23 开工确认按执行层推荐) — 贸易条款承诺无活文案支撑, 改写 DHL 事实层。
+  procurement?: { minQuantity: number | null; categorySlug?: string | null } | null
 ) {
+  // category → unitText 映射 (与现标题数字钩口径一致; unitCode H87 = UN/CEFACT piece, 中性不编造)
+  const cat = procurement?.categorySlug || '';
+  const unitText = (() => {
+    const zhUnit = /books|calendars|educational|japan-doujin/.test(cat) ? '本' : /flyers|posters|stickers|menus/.test(cat) ? '張' : /banners/.test(cat) ? '件' : '個';
+    const jaUnit = /books|calendars|educational|japan-doujin/.test(cat) ? '冊' : /flyers|posters|stickers|menus|banners/.test(cat) ? '枚' : '個';
+    return locale === 'zh-hk' ? zhUnit : locale === 'ja' ? jaUnit : 'pcs';
+  })();
+  const mq = procurement?.minQuantity ?? null;
+  const quoteUrl = `${siteConfig.url}/${locale}/quote/`;
+  const sourcingKeywords = mq
+    ? locale === 'zh-hk'
+      ? `MOQ ${mq}${unitText}起, 免費數碼打稿, 1小時打樣, 跨境DHL全球派送`
+      : locale === 'ja'
+        ? `最小ロット${mq}${unitText}, 無料デジタル校正, 1時間校正対応, DHL国際配送`
+        : `MOQ ${mq} pcs, free digital proof, 1-hour proofing, ships worldwide via DHL`
+    : null;
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -1212,6 +1233,15 @@ export function generateProductJsonLd(
       url: siteConfig.url,
       logo: siteConfig.logo,
     },
+    // G1: ProcureAction — GSIM 采购动作标记 (全站此前 0 处, 唯一 potentialAction 是 WebSite/SearchAction)
+    potentialAction: {
+      '@type': 'ProcureAction',
+      name: locale === 'zh-hk' ? '即時報價' : locale === 'ja' ? '見積もり依頼' : 'Request a quote',
+      target: quoteUrl,
+      seller: { '@type': 'Organization', name: siteConfig.name },
+    },
+    // G1: sourcingIntentKeywords — 采购意图字段 (指令明确要求; 每段均可指回活文案真值)
+    ...(sourcingKeywords ? { sourcingIntentKeywords: sourcingKeywords } : {}),
     ...(offerData === null
       ? {}
       : {
@@ -1228,6 +1258,19 @@ export function generateProductJsonLd(
       sku: slug,
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
+      // G1 (2026-09-21): MOQ 机器可读 — eligibleQuantity (schema.org 合法承载位, 真值 products.ts minQuantity)
+      ...(mq
+        ? {
+            eligibleQuantity: {
+              '@type': 'QuantitativeValue' as const,
+              minValue: mq,
+              unitCode: 'H87',
+              unitText,
+            },
+          }
+        : {}),
+      // G1: businessFunction (GoodRelations Sell)
+      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
       areaServed: locale === 'zh-hk' 
         ? { '@type': 'Place' as const, name: 'Hong Kong' }
         : locale === 'ja'
