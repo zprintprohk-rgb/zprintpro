@@ -652,3 +652,12 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **窗登记**：本批 105 处进验证窗（至 ~9/28-30）；42 槽窗冻 title 本批无一触碰（T1 已排除）。
 - **本批遗留登记**：① foil-greeting-cards name 层污染（zh「燙金名片印刷」/en「Business Cards」）未动 name 块，title 层仅按 K3 9/20 拍板修质量，待下批或 K3 裁决；② corrugated-boxes bp=1517 真伪未证（价格工作流）；③ ja 价去千分位（¥1,350→¥1350）省当量，页面展示口径无影响。
 - **下批队列**：T1 剩 133 槽（213-80）按 imps 降序续批，apply 器换 JSON 即跑。
+
+### 2026-09-21 13:05 · K3 12:12 续批 — T1 81-130 槽落地（apply 123 处已推送，线上断言 3/3 PASS）— commit 77fac4ff（本活书条目 commit 攒入 131-213 批 push，§0.25 30min 硬下限）
+- 提案库 `.hermes/title-quality-proposals-20260921-b81-130.json`（50 槽 123 字段，不入库）：ja 口水 h1+desc 模板重寫 18 槽 / zh-hk 品質保證填充 h1 重寫 8 槽 / en 殘缺 desc 重寫補交期 15 槽；MOQ 對齊真值 9 族。七闸 0 FAIL（band 全部帶內）。
+- apply 123 處 / 0 ABORT / VERIFY_OK；備份 `.hermes/_bak-quality-2026-09-21T04-52-50-252Z/`。收尾四件套全過（census 300 OK / locale 4×0 / tsc 54=基線 / 七闸 0 FAIL）。
+- **⚠️ push 誤記更正**：12:53 commit 時記「已推」實為未推（`main...origin_ssh/main [ahead 3]` 被壓縮摘要當成已推），13:00 覈實後攢批 3 commit（6ad6d567+d665d8d0+77fac4ff）一次推成功（rev-parse 雙端一致 77fac4ff）。**push 後必 `git rev-parse main origin/main` 雙端對賬，「Everything up-to-date」輸出不可信**。
+- 線上斷言 3/3 PASS：ja mailer-boxes「発送箱 メーラーボックス｜100個〜 ¥105〜」/ en rigid-boxes「Rigid Boxes | 100 MOQ $1.84 | Free Ship」/ zh-hk large-red-packets「大號利是封印刷 | 燙金 局部UV | 100個起 HK$2.20起」（sleep 130s 後首查即新，無 edge 緩存撞車）。
+- **本批固化教訓**：① name 與頁面用詞分叉再抓 6 槽（small-bags ja=小判紙袋 / large-bags ja=大判紙袋 / outdoor-vinyl-banners ja=屋外バナー / mailer-boxes ja=発送箱 / rigid-boxes ja=上製本箱 / hardcover-menus ja=高級メニュー）——G4 主詞一律 name 首段，slug 推斷必錯；② ja 純漢字 h1 無假名 G3 必 FAIL（「発送箱 | 宅配 梱包対応」→補「ダンボール」、「上製本箱 | 磁石蓋」→補「レザー調張り」），**ja 全字段含 h1 必須有假名**；③ zh 全層錯字「大利是封」→「大號利是封」（利是封族）；④ ja 長名槽當量調優三板斧：緊湊全角分隔符 `｜`（省當量）/ 價格去千分位（¥1,350→¥1350）/ FILL 補差異詞 TRIM 砍冗詞；⑤ priceFlags 累積 9 條（在 b81-130 meta，續批複製）：a2-posters|zh-hk、vehicle-wraps|zh-hk、same-day-flyers|en、can-badge|ja、corrugated-boxes|zh-hk、eco-tote-bag|ja、small-bags 三語（products.ts 無真值，G5/G6 豁免）。
+- **窗登記**：本批 123 處進驗證窗（至 ~9/28-30）；T1 三批累計 291 處（63+105+123）在窗，同槽不得再改；42 槽窗凍 title 三批均無觸碰。窗滿跑 `title-verify-report.mjs` 對賬。
+- **下批隊列**：T1 剩 83 槽（131-213）按 imps 降序續批——`.hermes/_extract-131-213.cjs`（slice(130,213)，複刻 _extract-81-130.cjs 已修 seo 嵌套版）→ 起草 → guard → 七闸 → 雙條件 → apply → 四件套 → push → 線上斷言 → 本活書。T1 即清零。
