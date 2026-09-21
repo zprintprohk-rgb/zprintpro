@@ -35,7 +35,7 @@ const moqNum = (s) => {
   const stripped = String(s)
     .replace(/(HK\$|US\$|\$|¥)\s*\d+(\.\d+)?\s*(起|〜|起\/張|起\/個|起\/本)?/g, '')
     .replace(/\d+(\.\d+)?\s*(起\/張|起\/個|起\/本|起\/套)/g, '');
-  const m = stripped.match(/(\d+)\s*(起印|個起|个起|本起|張起|张起|件起|枚起|套起|MOQ|枚〜|個〜|pcs|pieces|\+)/i);
+  const m = stripped.match(/(\d+)\s*(起印|個起|个起|本起|冊起|張起|张起|件起|枚起|套起|MOQ|枚〜|個〜|冊〜|pcs|pieces|\+)/i);
   return m ? +m[1] : null;
 };
 
@@ -77,7 +77,9 @@ for (const p of prop.proposals) {
         if (!norm.includes(stem)) { fails.push(`${tag} G4_主词缺失(${name})`); break; }
       }
     } else {
-      const mainKw = name.replace(/\s/g, '').toLowerCase();
+      // CJK 分支：name 可能带空格/括号注释（如「瓦楞紙盒 (坑盒/E坑/F坑)」），主词只取首段
+      const firstSeg = name.split(/[\s(（]/)[0];
+      const mainKw = firstSeg.replace(/\s/g, '').toLowerCase();
       if (!norm.includes(mainKw)) fails.push(`${tag} G4_主词缺失(${mainKw})`);
     }
     // G7 填充词
