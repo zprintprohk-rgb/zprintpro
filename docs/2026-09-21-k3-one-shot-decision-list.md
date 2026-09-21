@@ -36,7 +36,7 @@
 
 | # | 事項 | 最優推薦與執行 |
 |---|---|---|
-| D1 | 根 llms.txt 滯後 | 年份部分消解（2012 本就一直正確，A1 終裁後無衝突）。16 類/99 SKU 補表仍滯後（根文件含 GEO 戰略段需手工併）→ 登記下批，與 E7 獨立輪同批處理 |
+| D1 | 根 llms.txt 滯後 | ✅ **全消解**（本 commit）。年份早已 2012；16 類/99 SKU 三語總表已補進根文件 — 新增 `scripts/gen-llms-root.ts`（SOP-5 生成器）：策劃序言真值 = `scripts/llms-root-header.md` + 三語表零重建直接抽取 llms-{en,ja,zh-hk}.txt（單一數據 SSoT 零分叉），斷言 3 語 ×99 SKU ×16 類 + founded 2012 + 無名片拒絕口徑 + 無滯後階梯 MOQ。同批修復：序言「50/100/500/1000 阶梯 MOQ」→ 1 件起主流口徑（對齊 MOQ 統一批）、刪「名片禁区/不提供」行（違 §0.0 解禁，改為可接單口徑）、5 大品類→16 類、無源「15,000+ 客户」撤下（§0.23） |
 | D2 | robots.txt `/{locale}/` 模板行 | ✅ 最優=**刪除**（a4e93b10）。middleware L192 對字面 `/{locale}/` 路徑 301→/en，Disallow 反而擋住爬蟲發現 301；刪除讓歸一生效。嵌入生成物 sitemap-content.ts 已同步，tsc 54=基線 |
 | D3 | llms 舊檔欄位保留（營業時間/運營責任者） | ✅ 最優=**不保留**。舊欄位無拍板來源（運營責任者為未核實數據），§0.23 無源不編；新檔精簡口徑維持 |
 | D4 | brand-guard 多語生成器誤報治本 | ✅ 最優=**守衛豁免**（db7a6983）：common.js 加 `isGeneratorScript()`，brand-guard 的 BRAND_LOCALE_MISMATCH 與 i18n-guard 的 locale 作用域類規則（I18N_CURRENCY/I18N_POLLUTION*）對 `scripts/` 生成器豁免；產出檔（public/ src/data/）照常掃描。實測 gen-llms 誤報 0、其餘規則照掃（JA_ALTERNATE 仍報） |
