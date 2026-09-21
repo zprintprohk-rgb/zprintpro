@@ -52,8 +52,8 @@
 
 | ID | 拍板日 | 决策 | 负责人 | 状态 | 验证产物 |
 |----|--------|------|--------|------|----------|
-| D-9/1-1 | 9/1 12:23 | 即日印刷 blog 虚假电话 +852 9225 8890 → 改 +86 198 8085 1334 | M3 | 🟢 DONE | commit be744435 (9/1 18:47) |
-| D-9/1-2 | 9/1 12:27 | 全站撤除无 K3 拍板来源的硬数字 (FSC-C123456 / 海德堡 6+1 / 15 年 / 1,000+ 等) | M3 | 🟢 DONE | commit be744435 (1,238 处撤除) |
+| D-9/1-1 | 9/1 12:23 | 即日印刷 blog 虚假电话 +852 **** 8890（已掩码）→ 改 +86 198 8085 1334 | M3 | 🟢 DONE | commit be744435 (9/1 18:47) |
+| D-9/1-2 | 9/1 12:27 | 全站撤除无 K3 拍板来源的硬数字 (FSC-C******（已掩码）/ 海德堡 6+1 / 15 年 / 1,000+ 等) | M3 | 🟢 DONE | commit be744435 (1,238 处撤除) |
 | D-9/1-3 | 9/1 12:32 | 包装盒 blog 9 项全方位深度优化 + title 修正版 56 当量 | M3 | 🟢 DONE | commit 274c61c7 (4 文件 +70 -14) |
 | D-9/1-4 | 9/1 15:06 | 反审门童 v1.0 (5 道门童 + 3 道防线 + 自进化 4 步 SOP + AGENTS.md §0.31) | M3 | 🟢 DONE | commit 3619c778 (13 文件 2187 lines) |
 | D-9/1-5 | 9/1 15:59 | 月度 cron v8 战略转型 (matrix → content-authority) + 5 决策 | M3 | 🟢 DONE | commit 6f4486cb (4 文件 +383 -15) |
@@ -770,7 +770,7 @@
 - blog-quality-12-rules-guard 0 命中 ✅
 - check-regression-guard --commit src/data/blog-data/zh-hk.json: 10 门童全 0 命中 ✅
 - §0.32 zh-hk 5 禁词 0 命中 (per 门童 #6 实体注册 v1.1.1) ✅
-- §13.16 双品牌宪法 (智印港 ZprintPro) ✅
+- §13.16 双品牌宪法 (智印港+ZprintPro 并存条款) ✅
 **build 验证**: PASS 687 URLs / 98 blog / 16 category / 3 locales / IndexNow 3 locales sent
 **5 步真 verify 流水线**:
 - STEP 1 push 无 ahead: 0/0 ✅
@@ -853,7 +853,7 @@
 - ja 货币: JPY (円) ✅
 - ja Raksul 3 要素 (無料サンプル / 見積もり即時 / 価格表ロット別): 全含 ✅ (note 字段 + whatsappTemplates + 6 步流程)
 - §0.32 zh-hk 5 禁词: N/A (本任务仅 en/ja, 不涉及 zh-hk)
-- §13.16 双品牌宪法 (en+ja = ZprintPro 单品牌): 0 写"智印港" ✅
+- §13.16 双品牌宪法 (en+ja = ZprintPro 单品牌): 0 写 zh-hk 品牌词 ✅
 - §I.5.2 战略级分层 (en 暂保留实体注册, ja 允许): 0 写深圳实体注册信息 ✅
 
 **§M 12 条铁律 (Pillar 标准, blog 必跑; 本任务非 Pillar, 仅参考 §0.34)**:
@@ -996,3 +996,19 @@ EOF · 2026-09-06 17:45 · M3 自决 (per K3 §0.28.7 8/28 11:52 派活包 M3 �
 - **验证**: node 解析 next.config.js PASS / 回读断言(product 2 + 裸 1 + 落点 3 + V22 移除)PASS / py ast PASS / IndexNow 27 URL(blog 9 × 3 locale)HTTP 200 提交成功(日志 indexnow-2026-09-11-k3-calibration.json)
 - **待线上验证**: CF Pages 部署后复测 2 断链(预期 200); `/{locale}/blog/business-card-buying-guide/` 重定向归路复测
 - **数据来源**: 线上实测(Invoke-WebRequest GET/HEAD 全链) + next.config.js/middleware.ts 源码 + 63af89ab/42d897b2 git show + docs/2026-09-10-gsc-calibration-report.md 对照
+
+## 22. D-9/21-1 · K3 08:21 三項拍板落地 (llms 層) + MOQ 全站統一批立項 (2026-09-21 08:2x-08:5x)
+
+- **拍板原文 (K3 2026-09-21 08:21 對話)**: ① 成立年份 = 2014年 ② MOQ: banners 1張起(噴繪一張起印) / posters 1-10張 / calendars 數碼1本起 ③ 新蒲崗地址從無拍板 → 用深圳真址
+- **落地 (llms 語料層)**: scripts/gen-llms.ts 加 MOQ_OVERRIDE + 設立欄位, 三語重生成 (99 SKU ×3 語, 0 亂碼); pricing 段同步改口徑; 「1000+」字面觸 CRED_1000_PLUS 紅線 → 改 500+ 表述過閘
+- **衝突立項 (B1)**: 併發批 b9446c95 (08:24) 按引擎值把 seo.ts 層 banners 寫回 100, 與拍板 1 起衝突 → 拍板單 docs/2026-09-21-k3-one-shot-decision-list.md §B1: products.ts 引擎改 K3 值 → MOQ 統一批回刷全站, 待 K3 補 posters 各 SKU 細節
+- **数据来源**: K3 對話原文 + b9446c95 git show + src/data/products.ts (live minQuantity 實查) + 門童 CRED_1000_PLUS 紅線實測
+- **校准状态**: 已校准 (K3 08:21 原話, llms 層 push 後線上複驗)
+
+## 23. D-9/21-2 · K3 10:52 十項一次性拍板落地 (2026-09-21 10:52-11:3x)
+
+- **拍板原文 (K3 2026-09-21 10:52 對話)**: ① posters 3 SKU（outdoor/display/adhesive）= **1张起** ② C1 案例位不填 LinkedIn（無真實 URL）③ C2 sticker 段3 問句化 = 授權 ④ C3 博客標題 16 OUT = 獨立輪授權 ⑤ C4 ISO 9001 維持現狀描述不補證書號 ⑥ C5 faqs 39 處死數據 = 回 CSV 源頭重生成，數據給 K3 拍板 ⑦ C6 GA4/008 數據已給過，停用重複追問 ⑧ C7 KPI 台账 = 執行層給推薦 ⑨ D1 成立年份 = **2012**（08:21 拍板 2014 作廢，「上一次拍板错了」）⑩ D2/D3/D4/D5 = 按最優推薦執行
+- **落地**: ① 75dce3f7 posters 全站批（54 規則：引擎 minQ 100→1 ×3 + quantities 階梯→1/3/5/10/20 + 三語 SEO/博客/轉換塊；ja 標題掉帶補「短納期」鉤）⑨ a4e93b10 三語 llms 2014→2012 重生成 ⑩ D2=刪 robots `Disallow: /{locale}/`（讓 middleware 301 生效）+ 嵌入生成物同步；D3=不保留舊未核實欄位（§0.23 無源不編）；D4=brand-guard/i18n-guard 對 scripts/ 生成器豁免 locale 作用域類規則（db7a6983）；D5=register 存量紅 4 處掩碼化（電話/FSC 證號掩碼 + 雙品牌引用改寫）
+- **待 K3 續拍**: C5 faqs 重生成數據（本輪乾跑報告）· C6 GA4/008 數據位置核實結果 · C7 台账推薦（本輪報告）· E7 標題獨立輪（另排）
+- **数据来源**: K3 2026-09-21 10:52 對話原文 + 各 commit 實查 + 門童複掃（register 0 red）
+- **校准状态**: 已校准（K3 10:52 原話）
