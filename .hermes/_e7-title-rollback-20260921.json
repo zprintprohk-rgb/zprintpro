@@ -1,0 +1,134 @@
+{
+ "date": "2026-09-21",
+ "batch": "E7",
+ "ledger": [
+  {
+   "loc": "zh-hk",
+   "slug": "poster-printing-guide",
+   "old": "香港海報印刷完全指南：尺寸、紙質、工藝與設計要點",
+   "new": "香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港",
+   "oldEquiv": 48,
+   "newEquiv": 57
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "old": "防水貼紙材質完全指南: PVC / 透明 / 可移 / 燙金 4 大材質 1 篇搞掂 | 智印港",
+   "new": "防水貼紙材質指南: PVC / 透明 / 可移 / 燙金 | 智印港",
+   "oldEquiv": 73,
+   "newEquiv": 51
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "old": "校園教育印刷 9 月開學季 5 大印刷品 × 5 大材質 × 12 場景 完全指南 | 智印港",
+   "new": "校園教育印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港",
+   "oldEquiv": 73,
+   "newEquiv": 54
+  },
+  {
+   "loc": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "old": "2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港",
+   "new": "2026 香港印刷成本基準: 16 品類 99 SKU 價格數據 | 智印港",
+   "oldEquiv": 84,
+   "newEquiv": 55
+  },
+  {
+   "loc": "en",
+   "slug": "poster-printing-guide",
+   "old": "Custom Poster Printing Guide for US Events & Retail: Sizes, Paper, Finishes | Free Shipping",
+   "new": "Poster Printing Size Guide: Paper & Finishes | ZprintPro",
+   "oldEquiv": 91,
+   "newEquiv": 56
+  },
+  {
+   "loc": "en",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "old": "Custom Cosmetics Packaging Box Guide: Materials, Structure & Branding | ZprintPro",
+   "new": "Cosmetics Packaging Guide: Materials & Sizes | ZprintPro",
+   "oldEquiv": 81,
+   "newEquiv": 56
+  },
+  {
+   "loc": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "old": "Waterproof Sticker Material Guide: PVC / Clear / Removable / Hot Foil 4 Stocks in 1 Read | ZprintPro",
+   "new": "Sticker Material: PVC, Clear, Removable, Foil | ZprintPro",
+   "oldEquiv": 100,
+   "newEquiv": 57
+  },
+  {
+   "loc": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "old": "Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards | ZprintPro",
+   "new": "Foil Stamping Guide: Stickers & Invitations | ZprintPro",
+   "oldEquiv": 99,
+   "newEquiv": 55
+  },
+  {
+   "loc": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "old": "Campus Education 5 Products 5 Materials 12 Apps | ZprintPro",
+   "new": "Campus Education Printing: 5 Products 12 Uses | ZprintPro",
+   "oldEquiv": 59,
+   "newEquiv": 57
+  },
+  {
+   "loc": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "old": "2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Stickers, Flyers, Books, Packaging & 12 More Categories",
+   "new": "Hong Kong Printing Cost Report 2026: 99 SKU | ZprintPro",
+   "oldEquiv": 123,
+   "newEquiv": 55
+  },
+  {
+   "loc": "ja",
+   "slug": "poster-printing-guide",
+   "old": "オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応",
+   "new": "ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro",
+   "oldEquiv": 71,
+   "newEquiv": 50
+  },
+  {
+   "loc": "ja",
+   "slug": "cosmetics-packaging-box-printing-guide",
+   "old": "化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro",
+   "new": "化粧品パッケージ印刷ガイド：素材・構造 | ZprintPro",
+   "oldEquiv": 72,
+   "newEquiv": 50
+  },
+  {
+   "loc": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "old": "防水ステッカー材質完全ガイド: PVC / 透明 / 再剥離 / 箔押し 4 大材質 1 冊で理解 | ZprintPro",
+   "new": "防水ステッカー材質ガイド: PVC / 透明 / 箔押し | ZprintPro",
+   "oldEquiv": 90,
+   "newEquiv": 57
+  },
+  {
+   "loc": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "old": "箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード | ZprintPro",
+   "new": "箔押し印刷ガイド 2026: ステッカー / 招待状 | ZprintPro",
+   "oldEquiv": 73,
+   "newEquiv": 54
+  },
+  {
+   "loc": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "old": "キャンパス教育印刷 9 月新学期 5 大印刷品 × 5 大素材 × 12 シーン | ZprintPro",
+   "new": "キャンパス教育印刷: 5 用品 × 12 シーン | ZprintPro",
+   "oldEquiv": 75,
+   "newEquiv": 50
+  },
+  {
+   "loc": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "old": "2026年香港印刷コスト ベースラインレポート: ステッカー・チラシ・冊子・パッケージ他 16 カテゴリ 99 SKU 価格データ | ZprintPro",
+   "new": "香港印刷コスト 2026: 99 SKU 価格データ | ZprintPro",
+   "oldEquiv": 123,
+   "newEquiv": 50
+  }
+ ]
+}

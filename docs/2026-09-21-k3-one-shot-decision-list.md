@@ -26,7 +26,7 @@
 |---|---|---|---|
 | C1 | E5 案例位 / E-E-A-T 信源 | 「不清楚说的是什么，真实 LinkedIn URL没有，不填」 | ✅ 不填。段6/段7 存量 FAIL 維持，待 K3 日後給 008 案例庫（現 008 台账只有計數/來源/品類分佈，無行業+用量+結果一手案例）或批批量標「待校准」 |
 | C2 | E6 sticker 段3 問句化 | 「授权」 | ✅ 81e6bdc5：sticker-material-pvc-vinyl-removable ×3 語 7 條段錨問句化，段3 FAIL→PASS（60%/60%/60%，含邊際餘量） |
-| C3 | E7 博客標題 16 OUT | 「独立轮授权」 | ⏳ 授權收到，獨立輪執行（另排，不佔本批） |
+| C3 | E7 博客標題 16 OUT | 「独立轮授权」→ K3 13:46「开工E7」 | ✅ **獨立輪已落地（本 commit）**：6 篇 12 段長文 ×3 語 16 OUT 全 TRIM/FILL 進 50-57 半角當量（SSoT title-equiv.js 實算，非手填）；應用器 `scripts/apply-e7-blog-titles.mjs`（全檔唯一錨定 + band 斷言 + rollback 賬本 `.hermes/_e7-title-rollback-20260921.json` + `*.bak-e7` 備份）；改後 18/18 全帶內、tsc 54=基線、12 段守衛無 title 新增命中、integrity guard 全過。**範圍外發現**：其餘 ~186 篇常規 blog 標題亦 OUT（最大 ja kraft-paper-box 142 當量）— 屬 blog 飛輪 T 系列量級，未動，登記下批 |
 | C4 | ISO 9001 真偽與處置 | 「就这样描述，不补证书号，谁拿证书号放网上」 | ✅ 維持現狀描述，不補證書號。守衛 CRED_ISO_9001 維持 shadow 觀察 |
 | C5 | faqs[].a 39 處疑似死數據 | 「回 CSV 源頭重生成，给到我数据我拍板」→ K3 11:33 回「1」= 選項 1 清空 | ✅ **選項 1 已落地（本 commit）**：100 塊 faqs 全清為 `"faqs": []`（括號掃描法，非正則 — 正則版兩次踩「單行 entry 塊閉合不換行」陷阱誤吞 11 SKU，已從備份重建）。殘留 `"q":`=0、tsc 54=基線、csv-to-sku-seo dry-run 五斷言全 PASS（faqs 屬 ts 例外域 regen 不復活）、消費者=0 線上無可見變化。備份 `.hermes/_bak-sku-seo-data-before-faq-clear-20260921.ts` |
 | C6 | GA4 / 008 讀數開放 | 「这些是有给到的，怎么反复这个问题，没能力做就不要做」 | ✅ 不再問。已核實：K3 2026-09-08 拍板 #5-B 人工台账停用，**询盘单源走 GA4（G-248QMCT2S3，已接线）**；sibling KPI 基线台账 DELIVERY/zprintpro-kpi-baseline-ledger-2026-09-21.csv（S-01~S-05 至 09-18）已存在 → R-06 回填直接用，不重新要權限 |
