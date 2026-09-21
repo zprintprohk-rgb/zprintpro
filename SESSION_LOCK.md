@@ -240,3 +240,21 @@
 | **释放** | E7 會話正式释放 |
 | **落地結果** | 兩層全落: blog-data JSON 16 條（14d032b0）+ blog-posts.ts meta 15 處（ecd92a3d, 含 4 處截斷殘句 + 1 處雙品牌修復）· 18/18 兩層同步全帶內 · tsc 54=基線 · 線上斷言 4/4 PASS |
 | **遗留** | Article JSON-LD headline 仍舊長標題（Schema 第二層, 登記下批）；其餘 ~186 篇常規 blog 標題 OUT 屬 blog 飛輪量級, 登記下批 |
+
+## 持有声明（2026-09-21 15:5x · T4 渲染层收口会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | T4 渲染层收口会话（K3 14:39 拍板链，质疑 T1 成品真实性） |
+| **意图** | PDP H1 SSoT 切换（sku h1 优先 + 36 冻结避让）+ custom-calendars 槽简体/MOQ 修复 + 活书 T4 条 |
+| **写入范围** | `src/app/[locale]/product/[slug]/page.tsx` · `src/data/title-window-freeze.ts`（新增）· `src/data/sku-seo-data.ts`（custom-calendars zh-hk 槽）· 活书 §5/§9 · 本文件 |
+| **双条件核验** | ① src/ 无 MM（E7 14:2x 已释放）② 对端 ≥15min 静默 |
+| **释放条件** | commit + push + 线上断言 3 页 |
+
+## 释放记录（2026-09-21 16:0x · T4 渲染层收口会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | T4 会话正式释放 |
+| **交付** | commit 本条：PDP H1 SSoT=sku h1（295 槽生效 / 36 冻结避让 / 5 空槽回落）+ 月曆族简体×7 + MOQ 50→1 + h1 口水句改主词式；活书 §5 #21-26 + §9 T4 条 |
+| **验证** | tsc 54=基线 0 增量 · 编码 ✅ · 月曆族可见层简体 0 · 线上断言见 push 后（3 页清单已写活书） |

@@ -17,6 +17,7 @@ import {
 // 2026-08-22 b81463a 后续修复: longDescription 三字段已搬移至 products-content.ts, 此处合并回 product
 import { productsContent } from '@/data/products-content';
 import { buildProductH1ZhHk, buildProductH1En, buildProductH1Ja } from '@/lib/h1-builder';
+import { TITLE_WINDOW_FROZEN } from '@/data/title-window-freeze';
 import { 
   generateProductMetadata, 
   generateProductJsonLd,
@@ -165,6 +166,17 @@ export default function ProductPage({
   const productTitle = getProductTitle(product, locale);
   const productDescription = getProductDescription(product, locale);
   const skuSeo = getSkuSeo(slug);
+
+  // 2026-09-21 T4 渲染层收口 (K3 14:39 拍板): PDP H1 SSoT = sku-seo-data h1（T1 已修 295/300 槽）
+  //   旧渲染分叉: zh-hk 恒走 h1-builder（「香港xx專家」旧式）, en/ja 恒用 V6 短名 —— T1 的 h1 修复被完全旁路
+  //   冻结 slug（2026-09-20 批次1 验证窗至 ~10/4）与 h1 空槽维持旧渲染, 不污染 CTR 验证窗
+  const skuH1Raw = skuSeo?.seo?.[locale]?.h1?.trim();
+  const productH1 =
+    skuH1Raw && !TITLE_WINDOW_FROZEN.has(slug)
+      ? skuH1Raw
+      : locale === 'zh-hk'
+        ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug)
+        : productTitle;
   
   // 面包屑数据
   const breadcrumbItems = [
@@ -412,7 +424,7 @@ export default function ProductPage({
           productTitle={productTitle}
           productDescription={productDescription}
           categoryName={categoryName}
-          h1={locale === 'zh-hk' ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug) : productTitle}
+          h1={productH1}
           faqItems={faqItems ?? []}
           longDesc={longDesc ?? ''}
           skuBody={skuSeo?.seo?.[locale]?.body ?? ''}
@@ -519,11 +531,7 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {locale === 'zh-hk'
-                  ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug)
-                  : locale === 'en'
-                  ? buildProductH1En(productTitle, product.category_slug)
-                  : buildProductH1Ja(productTitle, product.category_slug)}
+                {productH1}
               </h1>
               
               {['flyers', 'posters', 'stickers', 'stickers', 'books', 'banners'].includes(product.category_slug) && (

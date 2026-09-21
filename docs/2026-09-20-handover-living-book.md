@@ -105,6 +105,12 @@
 | 18 | **P1 · small-batch-stickers zh-hk MOQ 页内自相矛盾** | 🟡 待内容批 | title「10 張起」vs description「50 張起印」vs body「10 張起印 / 小批量系列可低至 50 張 / 100 張」——同一页 3 种起印量。GSC 主力页（en 396 展示 pos 17.8），页内矛盾伤转化，随 #17 同批清 |
 | 19 | **🟠 · en 页美国定位 vs HK 英文搜索者错配**（SERP 实锤 2026-09-21） | 结构性，待 K3 裁 | gl=hk 下 Google 把 en 页排进「small batch sticker(s) printing」SERP，但 en 页全程美国定位（$0.045、4-day USA delivery、$99 free ship）——HK 搜索者看到无关承诺 = 0 点击结构性原因之一；zh-hk 页已有 HK$ 钩子但吃不到英文词。短期动作 = Offer schema 补价格富媒体（窗内可做）；战略选项（en 页加 geo 提示/hreflang 强化/或建 en-hk 变体）待裁 |
 | 20 | **🟡 · paper-bags 品类页被 Google 改写标题**（SERP 实锤） | 低 | SERP 显示「手挽紙袋 智印港」而非 product-seo.ts 的「環保紙袋 香港 定製 | 牛皮紙袋/禮品紙袋燙金 | ZprintPro」→ Google 判现 title 与「邊度有紙袋買」查询意图不匹配，回退用 H1。品类 title 差异化不足的信号；品类 title 非 SKU title（不受 9/30 窗约束），改时一次到位低 churn |
+| 21 | **seo.ts 品类层旧格式大改** | 🟡 待批处理窗口 | 实证 wedding-invitations 线上 title「燙金喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 50 套起印」（无品牌尾 + 简体「工艺/套」+ · 分隔）；calendars 品类已是新格式。全品类扫描后一次批处理（品类 title 不受 9/30 SKU 窗约束） |
+| 22 | h1-builder「專家」后缀处置 | 🔴 待 K3 一句话 | PDP H1 已旁路 builder（见 §9 15:5x T4 条），builder 现仅服务面包屑等 display 场景——改生成器 or 保留 display 用途 |
+| 23 | T3_KEEP 79 槽 GSC 位置复核 | 🟡 待窗后（~9/30） | 30+ 位 / 零点击槽升级大改，输入 = 9/18 GSC 位置带 |
+| 24 | 全站简体 T5 批（keywords 层） | 🟡 排队 | keywords 数组大量「定制貼紙/不干膠」等简体残留（本轮只清了月曆族可见层，keywords 全族未碰） |
+| 25 | 5 个空 h1 槽补齐 | 🟡 排队 | corrugated-boxes\|ja、name-tags-badges\|zh-hk、wedding-seating-charts\|zh-hk、wedding-suite-bundle\|zh-hk、white-card-boxes\|zh-hk（T4 切换后这 5 槽回落旧渲染） |
+| 26 | custom-calendars en desc 实体错位 | 🟡 下批修 | 「Custom custom calendars from ZprintPro **the US**」——ZprintPro 无美国工厂，事实错误级（另：重复词 Custom custom 同句） |
 
 ---
 
@@ -671,3 +677,13 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **priceFlags 本批新增 29 條**（提案庫 meta）：盒族/婚禮族 en/ja 無單位價真值（bp null 或非單位價）、postcard-set 三語 bp 異常、eco-tote 雙語、acrylic 雙語、fruit ja。續批（T2）直接複用。
 - **窗登記（T1 收官）**：三批累計 63+105+123+225=**516 處**進 7-10 天驗證窗（至 ~9/28-30），同槽不得再改；42 槽窗凍 title 全程未碰。窗滿跑 `title-verify-report.mjs` 對賬 ΔCTR/Δ位置，成功模式沉澱標題模板庫。
 - **T1 後隊列**：① T2 窗凍 8 槽 + 42 槽窗 title 至 9/30 後收割；② 45 槽補描述 + 181 槽截斷重寫（舊隊列）；③ 書刊/畫冊族引擎 minQ 50→1 批（待 K3）；④ packaging minQ 商業評估；⑤ save-the-date ja/en name 層帶拉丁「Save the Date」（G4 被迫寫進 ja/zh 標題，name 層待淨化）；⑥ quote-engine __tests__ tsc 存量 57 行漂移（非本路，登記給引擎車道）。
+
+### 2026-09-21 15:5x · K3 14:39/15:51 质疑应对 — T4「渲染层收口」批：PDP H1 SSoT 切换（295 槽 T1 h1 真上线）+ 月曆族简体/MOQ 修复 — commit 本条（攒批待 push，窗满线上断言）
+- **根因（K3 在线上亲眼看到 `定製年曆 · 桌曆 · 香港月曆印刷專家 · 智印港` 旧式 h1，质疑 T1 成品真实性）**：T1 数据层 516 处真实落地（sku-seo-data 已推、线上 title 断言 12/12），**但 PDP H1 渲染层完全旁路**——page.tsx 里 zh-hk 恒走 `buildProductH1ZhHk`（h1-builder.ts，「香港xx專家」旧式），en/ja 恒用 V6 短名 `productTitle`；T1 修的 295/300 个 sku h1 一个都没渲染。**教训入档：数据层「已施加」≠渲染层「已生效」（避坑 18 同族）。**
+- **落地 1 · `src/data/title-window-freeze.ts`（新增）**：36 冻结 slug 集合（2026-09-20 批次1 验证窗至 ~10/4），由 `.hermes/_gen-freeze.cjs` 从 `title-flywheel-approved-2026-09-20.json` 全量生成（SOP-5 禁手搓；重生成 `node .hermes/_gen-freeze.cjs`，内部写死输出路径）。
+- **落地 2 · `src/app/[locale]/product/[slug]/page.tsx`（3 处）**：import 冻结集 → L174 `productH1` = sku h1 非空且 slug 非冻结 → 用之；否则旧逻辑回落（zh-hk builder / en·ja 短名）。v9 与非 v9 两条渲染路径同步改。**效果：295 个 T1 h1 立即上 PDP；36 冻结 slug 与 5 空槽维持旧渲染，不污染 CTR 验证窗。** ⚠️ 此改动改变全部 en/ja PDP h1 线上渲染 → push 后必线上断言。
+- **落地 3 · custom-calendars zh-hk 槽（K3 点名页）**：name/title/desc/body 简体「定制」×7 处→「定製」；desc「50 本起」→「1 本起」（与 title 1本起、body 最低起印量 1 本对齐，消除页内自相矛盾）；h1 口水句（K3 15:51 原话引用对象）→ 主词式「定製年曆 | 專屬設計 · 企業禮品首選 | 智印港」。⚠️ 该 slug 在冻结集 → title 只动简体、页面 h1 仍显示 builder 输出至窗满，数据层修好窗满即用。
+- **验证**：tsc 54=基线（本路 0 增量）/ 编码门禁 ✅ / 月曆族 5 SKU 可见层（name/title/desc/h1）简体扫描 0 命中（keywords 层本轮不碰，归 T5）。
+- **新发现登记**：custom-calendars en desc「Custom custom calendars from ZprintPro **the US**」— 实体错位（ZprintPro 无美国工厂），事实错误级，待下批修。
+- **push 后线上断言清单（3 页）**：① 非冻结 T1 槽（如 /en/product/mesh-banners/）h1 = sku h1 新值（旧为 V6 短名「Mesh Banners」→ 新「Mesh Banners 1+ | Wind-Resistant | ZprintPro」）；② 冻结槽（/zh-hk/product/custom-calendars/）h1 仍 builder 输出（预期不变，验证避让逻辑）；③ 同页 `<title>` 已含「定製」（简体修复生效）。
+- **T4 剩余队列（下批/待 K3）**：① `src/lib/seo.ts` 品类层旧格式大改（wedding-invitations 线上 title 实证：无品牌尾+简体「工艺/套」+· 分隔；calendars 品类已是新格式）→ 全品类扫描后批处理；② h1-builder「專家」后缀处置（改生成器 or PDP 旁路后仅保留 display 用途 —— 待 K3 一句话）；③ T3_KEEP 79 槽按 9/18 GSC 位置复核（30+/零点击升级大改）；④ 全站简体 T5 批（keywords 数组大量「定制貼紙/不干膠」等）；⑤ 5 个空 h1 槽补齐（corrugated-boxes|ja、name-tags-badges|zh-hk、wedding-seating-charts|zh-hk、wedding-suite-bundle|zh-hk、white-card-boxes|zh-hk）；⑥ custom-calendars en「the US」实体错位修复。
