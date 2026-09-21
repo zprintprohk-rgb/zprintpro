@@ -13,7 +13,7 @@
  *   5. 雙品牌殘留 (智印港/ZprintPro HK) → zh-hk 單品牌 智印港 (per K3 9/1 品牌分層)
  *   6. 成立年份: K3 2026-09-21 08:21 拍板 = 2014年 (解決 2012 vs 2014 衝突)
  *   7. MOQ K3 2026-09-21 08:21 拍板覆寫 (llms 展示層):
- *      banners→1 起 (噴繪一張起印) · posters→1-10 張 · calendars→數碼 1 本起
+ *      banners→1 起 (噴繪一張起印) · posters→1-10 張 · calendars→數碼 1 本起 / 批量 300 起
  *      ⚠️ 僅 llms 語料層; products.ts 全站同步 = MOQ 統一批, 列入 K3 拍板文件排批 (禁只落一半)
  *
  * 價格口徑: en→basePrice_en (US$) / ja→basePrice_ja (¥) 優先, 缺省退 basePrice (HK$) — 不換算。
@@ -81,7 +81,7 @@ type Loc = 'en' | 'ja' | 'zh-hk';
 const MOQ_OVERRIDE: [string, [Loc, string][]][] = [
   ['banners',   [['en', '1'], ['ja', '1'], ['zh-hk', '1']]],
   ['posters',   [['en', '1-10'], ['ja', '1-10'], ['zh-hk', '1-10']]],
-  ['calendars', [['en', '1 (digital)'], ['ja', '1 (デジタル)'], ['zh-hk', '1 (數碼)']]],
+  ['calendars', [['en', '1 (digital) / bulk 300+'], ['ja', '1 (デジタル) / 批量 300 から'], ['zh-hk', '1 (數碼) / 批量 300 起']]],
 ];
 const MOQ_OVERRIDE_MAP: Record<string, Record<Loc, string>> = Object.fromEntries(
   MOQ_OVERRIDE.map(([cat, pairs]) => [cat, Object.fromEntries(pairs) as Record<Loc, string>])
@@ -116,7 +116,7 @@ const LOCALES: LocaleCfg[] = [
     pricing: `## Pricing & Ordering
 
 - Currency: USD (US market) or HKD — based on customer locale
-- Minimum order: banners from 1 pc · posters 1-10 pcs · calendars digital from 1 copy · other products from 10 pcs (see per-SKU Min Qty above)
+- Minimum order: banners from 1 pc · posters 1-10 pcs · calendars digital from 1 copy / bulk 300+ · other products from 10 pcs (see per-SKU Min Qty above)
 - Volume discounts: tiered pricing for bulk orders (500+)
 - Free shipping: US orders USD 99+
 - Rush service: same-day / 4-6h express available on select products
@@ -173,7 +173,7 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
     pricing: `## 価格とご注文
 
 - 通貨: HKD / USD / JPY (お客様の地域に基づく)
-- 最低注文数: バナー 1 枚〜 · ポスター 1-10 枚 · カレンダー デジタル 1 冊〜 · その他 10 個から (製品により異なる — 上表の最低数量を参照)
+- 最低注文数: バナー 1 枚〜 · ポスター 1-10 枚 · カレンダー デジタル 1 冊〜 / 批量 300 から · その他 10 個から (製品により異なる — 上表の最低数量を参照)
 - 数量割引: 大口注文 (500+) で階段対応
 - 特急対応: 即日印刷可 (対象製品)
 - デジタル校正: 無料`,
@@ -230,7 +230,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
     pricing: `## 價格與訂購
 
 - 貨幣: HKD (香港主場)
-- 最低訂購: 噴繪 1 張起 · 海報 1-10 張 · 月曆數碼 1 本起 · 其他 10 件起 (按產品而異 — 見上表每 SKU 最低訂量)
+- 最低訂購: 噴繪 1 張起 · 海報 1-10 張 · 月曆數碼 1 本起 / 批量 300 起 · 其他 10 件起 (按產品而異 — 見上表每 SKU 最低訂量)
 - 數量折扣: 大量訂購 (500+) 設階梯價
 - 急件服務: 即日印刷 (指定產品)
 - 數碼打稿: 免費`,

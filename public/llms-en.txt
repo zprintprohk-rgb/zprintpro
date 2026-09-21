@@ -153,12 +153,12 @@
 
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
-| Wall Calendars / Wall & Desk Calendars 2027 | wall-calendars | 1 (digital) | US$ 0.4 |
-| Desk Calendars / Wall & Desk Calendars 2027 | desk-calendars | 1 (digital) | US$ 0.4 |
-| Custom Calendars / Wall & Desk Calendars 2027 | custom-calendars | 1 (digital) | US$ 0.4 |
-| Mini Calendars / Wall & Desk Calendars 2027 | mini-calendars | 1 (digital) | US$ 0.4 |
-| Photo Frame Calendars / Wall & Desk Calendars 2027 | photo-frame-calendars | 1 (digital) | US$ 0.4 |
-| Magnetic Calendars / Wall & Desk Calendars 2027 | magnetic-calendars | 1 (digital) | US$ 0.4 |
+| Wall Calendars / Wall & Desk Calendars 2027 | wall-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Desk Calendars / Wall & Desk Calendars 2027 | desk-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Custom Calendars / Wall & Desk Calendars 2027 | custom-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Mini Calendars / Wall & Desk Calendars 2027 | mini-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Photo Frame Calendars / Wall & Desk Calendars 2027 | photo-frame-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Magnetic Calendars / Wall & Desk Calendars 2027 | magnetic-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
 
 ### Red Packets (red-packets)
 
@@ -179,7 +179,7 @@
 | Certificate Printing for Diplomas, Awards & Training Programs | certificates | 100 | US$ 2.76 |
 | School Flyers for Newsletters, Announcements & Alumni Publications | school-flyers | 10 | US$ 0.14 |
 | Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals | textbooks | 100 | US$ 9.2 |
-| Graduation Yearbooks, School Anniversary & Alumni Publications | graduation-yearbook | 50 | US$ 10.35 |
+| Graduation Yearbooks, School Anniversary & Alumni Publications | graduation-yearbook | 1 | US$ 10.35 |
 
 ### Doujinshi & Anime Goods (japan-doujin)
 
@@ -216,7 +216,7 @@
 ## Pricing & Ordering
 
 - Currency: USD (US market) or HKD — based on customer locale
-- Minimum order: banners from 1 pc · posters 1-10 pcs · calendars digital from 1 copy · other products from 10 pcs (see per-SKU Min Qty above)
+- Minimum order: banners from 1 pc · posters 1-10 pcs · calendars digital from 1 copy / bulk 300+ · other products from 10 pcs (see per-SKU Min Qty above)
 - Volume discounts: tiered pricing for bulk orders (500+)
 - Free shipping: US orders USD 99+
 - Rush service: same-day / 4-6h express available on select products
