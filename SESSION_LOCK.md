@@ -179,3 +179,6 @@
 | **真值依据** | `git show a1a7e569^:src/lib/seo.ts` 乾淨原文（已核）；sibling 審計 `zprintpro-audit-20260921/audit-notes.md` 發現#1（高） |
 | **预计时长** | < 10 min |
 | **释放条件** | push 完成 + 線上 ja 首頁 U+FFFD=0 |
+
+- 2026-09-21 03:4x 释放记录：276eb44a 已 push（origin + origin_ssh 均同步）；CF 部署後線上複驗 ja 首頁 U+FFFD 60→0，meta description 為恢復後乾淨文本。E5/E6/E7 經 DELIVERY 目錄核實仍全部待 K3 拍板（sibling 報告 §8.4 同款口徑），本輪未動。
+- 2026-09-21 08:00 释放记录：MOQ 残留批全部收尾（d473a911 已推、CF success、en/ja 日历页 50 族线上清零）；src/ 无本会话未提交改动；KEEP/FLAG 清单（畢業冊族/wedding混合minQ/特殊紙能力宣言/ja基線真實分層）已在活书 §9 03:20 条，待 K3 拍板。
