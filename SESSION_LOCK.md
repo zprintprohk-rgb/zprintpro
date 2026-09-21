@@ -258,3 +258,25 @@
 | **释放** | T4 会话正式释放 |
 | **交付** | commit 本条：PDP H1 SSoT=sku h1（295 槽生效 / 36 冻结避让 / 5 空槽回落）+ 月曆族简体×7 + MOQ 50→1 + h1 口水句改主词式；活书 §5 #21-26 + §9 T4 条 |
 | **验证** | tsc 54=基线 0 增量 · 编码 ✅ · 月曆族可见层简体 0 · 线上断言见 push 后（3 页清单已写活书） |
+
+## 持有声明（2026-09-21 16:4x · R2 带钱词飞轮会话 · 执行中）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | R2 飞轮会话（K3 16:16《全站三语言SKU标题SEO+AEO+GEO飞轮提升指令》+「没进前10主词全部不冻结」拍板 +「src/data 今天最新文件是 K2.8 产物」） |
+| **意图** | 冻结重划（核心主词 GSC≤10 → 23 冻/77 解）→ R2 候选生成（七闸+G7）→ 人工过目 → **K3 拍板后** apply 批准槽 → 四件套 → commit |
+| **写入范围** | `src/data/title-window-freeze.ts`（已写，生成器 `.hermes/_gen-freeze.cjs` 重生成）· 拍板后 `src/data/sku-seo-data.ts`（仅批准槽 title 字段）· scripts/ + docs/ + .hermes/ 资产 |
+| **双条件核验** | ① src/ 无 MM（T4 16:0x 已释放）② 对端 ≥15min 静默（16:0x→16:4x 无写入）✓ |
+| **预计时长** | 待 K3 拍板；apply+四件套 <20 min |
+| **释放条件** | commit + push 完成，或 K3 裁决「不动」即释放 |
+
+## 释放记录（2026-09-21 21:1x · R2 带钱词飞轮会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | R2 会话正式释放 |
+| **交付** | 冻结重划 23/77（核心主词口径, 修正 exercise-books/a2-posters 漏冻）· R2 生成器（七闸+G7+双轨）· 9 候选人工过目（拒 5 / K3 拍板 A=單張印刷 B=留 category C=维持现状）· **落地 2 槽**：a5-flyers / double-sided-flyers zh-hk title 圓角覆膜→單張印刷（e=52/53）· 审阅报告 `docs/2026-09-21-r2-title-review.md` |
+| **锁期间写过的文件** | `src/data/title-window-freeze.ts` · `src/data/sku-seo-data.ts`（仅 2 条 title）· `scripts/gen-title-flywheel-r2.mjs` · `.hermes/_gen-freeze.cjs` · `.hermes/reports/{freeze-repartition,title-flywheel-r2-proposals}-2026-09-21.*` · `.hermes/keyword-lib/02-关键词词库.csv`（副本）· docs/ 审阅报告 · 本文件 |
+| **验证** | 当量 52/53 ✅ · census 300 OK / 0 FILL / 0 TRIM ✅ · 编码 ✅ · tsc 报错全为 quote-engine 存量基线（本批未触碰）✅ |
+| **遗留登记** | ① P0-A 数字钩规则冲突 8 槽（K3 裁决维持现状）② AEO desc 层普查 + GEO schema 层（ProcureAction/sourcingIntentKeywords）未开垦，为飞轮下一杠杆 ③ 关键词词库仅 en/category 47 条适用标题，zh-hk/ja 无行 ④ 验证窗 2 槽至 ~2026-09-28/10-01 |
+| **未提交声明** | 锁外既有脏文件（moq-scan/blog-12seg/bypass-audit 等 .hermes 改动）非本批产物，按纪律不代持不代提交，留原状 |

@@ -1,0 +1,2918 @@
+{
+ "generatedFor": "2026-09-21",
+ "round": "r2 带钱词优化 (K3 2026-09-21 指令 + 解冻拍板)",
+ "rule": "equiv 50-57; 冻结避让 21 slug; 主词不改; 中段仅换 GSC 实证同簇查询",
+ "frozenSlugs": [
+  "waterproof-stickers",
+  "transparent-stickers",
+  "die-cut-stickers",
+  "a2-posters",
+  "mini-calendars",
+  "business-envelopes",
+  "colored-envelopes",
+  "textbooks",
+  "eco-paper-bags",
+  "foil-stickers",
+  "exercise-books",
+  "fluorescent-stickers",
+  "roll-up-banners",
+  "mesh-banners",
+  "catalog-printing",
+  "security-stickers",
+  "kraft-paper-bags",
+  "magnetic-calendars",
+  "electronics-packaging-box",
+  "pvc-menus",
+  "certificates",
+  "spiral-notebooks",
+  "eco-flyers"
+ ],
+ "slotCount": 231,
+ "proposedSlots": 58,
+ "passSlots": 9,
+ "proposals": [
+  {
+   "slug": "small-batch-stickers",
+   "locale": "en",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 396,
+    "pos": 17.81
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Small Batch Stickers 50 pcs from $0.045 | Pet food label printing service | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 85,
+     "pass": false,
+     "gates": [
+      "G1_当量85"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "same-day-flyers",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 15,
+    "imps": 279,
+    "pos": 16.05
+   },
+   "cluster": [
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜 | 特急快印 | 智印港",
+     "swap": "+ 特急快印",
+     "sizeFlag": false,
+     "e": 61,
+     "pass": false,
+     "gates": [
+      "G1_当量61"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "handle-bags",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "環保手挽袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 1,
+    "imps": 199,
+    "pos": 15.91
+   },
+   "cluster": [
+    {
+     "q": "紙袋印刷",
+     "clicks": 0,
+     "imps": 70,
+     "pos": 13.83,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂做紙袋",
+     "clicks": 0,
+     "imps": 67,
+     "pos": 18.63,
+     "_rel": "keyword"
+    },
+    {
+     "q": "紙袋訂製",
+     "clicks": 0,
+     "imps": 61,
+     "pos": 24.64,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印刷紙袋",
+     "clicks": 0,
+     "imps": 58,
+     "pos": 15.52,
+     "_rel": "keyword"
+    },
+    {
+     "q": "紙袋",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 27,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "環保手挽袋 | 紙袋印刷 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+     "swap": "+ 紙袋印刷",
+     "sizeFlag": false,
+     "e": 65,
+     "pass": false,
+     "gates": [
+      "G1_当量65"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "mailer-boxes",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "訂製郵寄盒 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 2,
+    "imps": 72,
+    "pos": 7.72
+   },
+   "cluster": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 36.07,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "訂製郵寄盒 | 包裝盒印刷 | 燙金 UV 100%訂製 | 100個起 HK$3.5起 | 智印港",
+     "swap": "+ 包裝盒印刷",
+     "sizeFlag": false,
+     "e": 70,
+     "pass": false,
+     "gates": [
+      "G1_当量70"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "rigid-boxes",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "精裝禮盒 | 燙金 UV 100%訂製 | 100個起 HK$8起 | 智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 2,
+    "imps": 49,
+    "pos": 8.69
+   },
+   "cluster": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 36.07,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "精裝禮盒 | 包裝盒印刷 | 燙金 UV 100%訂製 | 100個起 HK$8起 | 智印港",
+     "swap": "+ 包裝盒印刷",
+     "sizeFlag": false,
+     "e": 66,
+     "pass": false,
+     "gates": [
+      "G1_当量66"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 4,
+    "imps": 32,
+    "pos": 10.06
+   },
+   "cluster": [
+    {
+     "q": "香港印刷公司",
+     "clicks": 0,
+     "imps": 33,
+     "pos": 20.85,
+     "_rel": "keyword"
+    },
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印刷公司",
+     "clicks": 3,
+     "imps": 13,
+     "pos": 40.69,
+     "_rel": "keyword"
+    },
+    {
+     "q": "單張印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 27,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起 | 香港印刷公司 | 智印港",
+     "swap": "+ 香港印刷公司",
+     "sizeFlag": false,
+     "e": 65,
+     "pass": false,
+     "gates": [
+      "G1_当量65",
+      "G6_空洞修饰词"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "磁吸翻蓋禮盒印刷 | 高端定製 48小時交貨 | 100個起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 1,
+    "imps": 32,
+    "pos": 6.75
+   },
+   "cluster": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 36.07,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "磁吸翻蓋禮盒印刷 | 包裝盒印刷 | 高端定製 48小時交貨 | 100個起 | 智印港",
+     "swap": "+ 包裝盒印刷",
+     "sizeFlag": false,
+     "e": 70,
+     "pass": false,
+     "gates": [
+      "G1_当量70"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "gift-bags",
+   "locale": "zh-hk",
+   "tier": "P0-A",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "禮品紙袋 | 100%環保 多尺寸 | 100個起 HK$20起 | 智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 4,
+    "imps": 31,
+    "pos": 12.74
+   },
+   "cluster": [
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 39.26,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "禮品紙袋 | 禮盒訂製 | 100%環保 多尺寸 | 100個起 HK$20起 | 智印港",
+     "swap": "+ 禮盒訂製",
+     "sizeFlag": false,
+     "e": 64,
+     "pass": false,
+     "gates": [
+      "G1_当量64"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "custom-calendars",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "定製年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 1,
+    "imps": 215,
+    "pos": 22.25
+   },
+   "cluster": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "pos": 20.33,
+     "_rel": "keyword"
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 25.09,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂制月曆",
+     "clicks": 0,
+     "imps": 50,
+     "pos": 25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "座檯月曆",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 37.24,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印月曆",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 15,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "定製年曆 | 月曆印刷 | 1本起 HK$3起 | 智印港",
+     "swap": "企業禮品 多款式 → 月曆印刷",
+     "sizeFlag": false,
+     "e": 43,
+     "pass": false,
+     "gates": [
+      "G1_当量43"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "定製年曆 | 月曆印刷 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
+     "swap": "+ 月曆印刷",
+     "sizeFlag": false,
+     "e": 61,
+     "pass": false,
+     "gates": [
+      "G1_当量61"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "a5-flyers",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "A5 傳單印刷 | 圓角 覆膜 | 10張起印 HK$0.25起 | 智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 2,
+    "imps": 170,
+    "pos": 30.56
+   },
+   "cluster": [
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    },
+    {
+     "q": "單張印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 27,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "A5 傳單印刷 | 特急快印 | 10張起印 HK$0.25起 | 智印港",
+     "swap": "圓角 覆膜 → 特急快印",
+     "sizeFlag": false,
+     "e": 52,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "A5 傳單印刷 | 特急快印 | 圓角 覆膜 | 10張起印 HK$0.25起 | 智印港",
+     "swap": "+ 特急快印",
+     "sizeFlag": false,
+     "e": 64,
+     "pass": false,
+     "gates": [
+      "G1_当量64"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "摺頁單張 | A4/A5 雙面四色 | 10張起 HK$0.7起 | 智印港",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 1,
+    "imps": 113,
+    "pos": 24.25
+   },
+   "cluster": [
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 14.2,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "摺頁單張 | 特急快印 | A4/A5 雙面四色 | 10張起 HK$0.7起 | 智印港",
+     "swap": "+ 特急快印",
+     "sizeFlag": false,
+     "e": 63,
+     "pass": false,
+     "gates": [
+      "G1_当量63"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "戶外燈布噴繪｜防水防曬 PVC高清｜1件起 HK$12起｜智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 88,
+    "pos": 52.09
+   },
+   "cluster": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "pos": 68.61,
+     "_rel": "keyword"
+    },
+    {
+     "q": "車身貼紙價錢",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 39.75,
+     "_rel": "keyword"
+    },
+    {
+     "q": "觀塘易拉架",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 60.12,
+     "_rel": "keyword"
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 58,
+     "_rel": "keyword"
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 61.67,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "戶外燈布噴繪 | 易拉架製作 | 1件起 HK$12起 | 智印港",
+     "swap": "防水防曬 PVC高清 → 易拉架製作",
+     "sizeFlag": false,
+     "e": 50,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "戶外燈布噴繪 | 易拉架製作 | 防水防曬 PVC高清 | 1件起 HK$12起 | 智印港",
+     "swap": "+ 易拉架製作",
+     "sizeFlag": false,
+     "e": 69,
+     "pass": false,
+     "gates": [
+      "G1_当量69"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "removable-stickers",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Removable Stickers | No Residue | 10pcs $0.37 | ZprintPro",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 60,
+    "pos": 40.65
+   },
+   "cluster": [
+    {
+     "q": "small batch label printing",
+     "clicks": 0,
+     "imps": 76,
+     "pos": 29.82,
+     "_rel": "keyword"
+    },
+    {
+     "q": "small quantity label printing",
+     "clicks": 0,
+     "imps": 31,
+     "pos": 57.74,
+     "_rel": "keyword"
+    },
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Removable Stickers | Small batch label printing | 10pcs $0.37 | ZprintPro",
+     "swap": "No Residue → Small batch label printing",
+     "sizeFlag": false,
+     "e": 73,
+     "pass": false,
+     "gates": [
+      "G1_当量73"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Removable Stickers | Small batch label printing | No Residue | 10pcs $0.37 | ZprintPro",
+     "swap": "+ Small batch label printing",
+     "sizeFlag": false,
+     "e": 86,
+     "pass": false,
+     "gates": [
+      "G1_当量86"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "can-badge",
+   "locale": "ja",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "缶バッジ印刷 57/76mm | 推し活 コミケ | 10個〜 | ZprintPro",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 54,
+    "pos": 33.41
+   },
+   "cluster": [
+    {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 94,
+     "pos": 29.61,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "缶バッジ印刷 57/76mm | コミケ 印刷 | 10個〜 | ZprintPro",
+     "swap": "推し活 コミケ → コミケ 印刷",
+     "sizeFlag": false,
+     "e": 55,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "缶バッジ印刷 57/76mm | コミケ 印刷 | 推し活 コミケ | 10個〜 | ZprintPro",
+     "swap": "+ コミケ 印刷",
+     "sizeFlag": false,
+     "e": 71,
+     "pass": false,
+     "gates": [
+      "G1_当量71",
+      "G7_与保留段重复"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Kraft Paper Packaging Box | 300 MOQ $1.15 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 50,
+    "pos": 32.68
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    },
+    {
+     "q": "cosmetic boxes printing",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 74.14,
+     "_rel": "keyword"
+    },
+    {
+     "q": "custom food boxes",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 31.75,
+     "_rel": "keyword"
+    },
+    {
+     "q": "printed food boxes",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 62.25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "custom food boxes with logo",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 92.5,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Kraft Paper Packaging Box | Pet food label printing service | 300 MOQ $1.15 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 87,
+     "pass": false,
+     "gates": [
+      "G1_当量87"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "food-boxes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Food-Safe Packaging Printing | 100 MOQ | ZprintPro",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 0,
+    "imps": 49,
+    "pos": 38.63
+   },
+   "cluster": [
+    {
+     "q": "custom mailer boxes",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 62.67,
+     "_rel": "keyword"
+    },
+    {
+     "q": "custom cosmetic boxes",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 90,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Food-Safe Packaging Printing | Custom mailer boxes | 100 MOQ | ZprintPro",
+     "swap": "+ Custom mailer boxes",
+     "sizeFlag": false,
+     "e": 72,
+     "pass": false,
+     "gates": [
+      "G1_当量72"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "水果及食品標籤印刷｜防水防油｜500張起 HK$0.22起｜智印港",
+   "curEquiv": 55,
+   "page": {
+    "clicks": 0,
+    "imps": 46,
+    "pos": 40.46
+   },
+   "cluster": [
+    {
+     "q": "貼紙印刷",
+     "clicks": 0,
+     "imps": 165,
+     "pos": 27.28,
+     "_rel": "keyword"
+    },
+    {
+     "q": "防水貼紙",
+     "clicks": 0,
+     "imps": 42,
+     "pos": 15.74,
+     "_rel": "keyword"
+    },
+    {
+     "q": "透明貼紙",
+     "clicks": 0,
+     "imps": 28,
+     "pos": 24.68,
+     "_rel": "keyword"
+    },
+    {
+     "q": "香港貼紙印刷",
+     "clicks": 0,
+     "imps": 11,
+     "pos": 26.36,
+     "_rel": "keyword"
+    },
+    {
+     "q": "防水貼紙印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 11,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "水果及食品標籤印刷 | 貼紙印刷 | 500張起 HK$0.22起 | 智印港",
+     "swap": "防水防油 → 貼紙印刷",
+     "sizeFlag": false,
+     "e": 58,
+     "pass": false,
+     "gates": [
+      "G1_当量58"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "水果及食品標籤印刷 | 貼紙印刷 | 防水防油 | 500張起 HK$0.22起 | 智印港",
+     "swap": "+ 貼紙印刷",
+     "sizeFlag": false,
+     "e": 69,
+     "pass": false,
+     "gates": [
+      "G1_当量69"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "school-flyers",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "學校單張 | 雙面四色 80g書紙 | 10張起 HK$0.2起 | 智印港",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 41,
+    "pos": 23.95
+   },
+   "cluster": [
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 14.2,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "學校單張 | 傳單印刷 | 雙面四色 80g書紙 | 10張起 HK$0.2起 | 智印港",
+     "swap": "+ 傳單印刷",
+     "sizeFlag": false,
+     "e": 65,
+     "pass": false,
+     "gates": [
+      "G1_当量65"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Custom Double-Sided Flyers | 10 MOQ $0.65 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 39,
+    "pos": 30.72
+   },
+   "cluster": [
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Custom Double-Sided Flyers | Poster print same day | 10 MOQ $0.65 | ZprintPro",
+     "swap": "+ Poster print same day",
+     "sizeFlag": false,
+     "e": 77,
+     "pass": false,
+     "gates": [
+      "G1_当量77"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Cosmetic Packaging Boxes | 100 MOQ $1.84 | ZprintPro",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 0,
+    "imps": 37,
+    "pos": 65.03
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Cosmetic Packaging Boxes | Pet food label printing service | 100 MOQ $1.84 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 86,
+     "pass": false,
+     "gates": [
+      "G1_当量86"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "desk-calendars",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "座檯年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 1,
+    "imps": 35,
+    "pos": 30.4
+   },
+   "cluster": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "pos": 20.33,
+     "_rel": "keyword"
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 25.09,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂制月曆",
+     "clicks": 0,
+     "imps": 50,
+     "pos": 25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印月曆",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 15,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂製月曆",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 24.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "座檯年曆 | 月曆印刷 | 1本起 HK$3起 | 智印港",
+     "swap": "企業禮品 多款式 → 月曆印刷",
+     "sizeFlag": false,
+     "e": 43,
+     "pass": false,
+     "gates": [
+      "G1_当量43"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "座檯年曆 | 月曆印刷 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
+     "swap": "+ 月曆印刷",
+     "sizeFlag": false,
+     "e": 61,
+     "pass": false,
+     "gates": [
+      "G1_当量61"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Magnetic Closure Gift Box | 100 MOQ $3.45 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 1,
+    "imps": 34,
+    "pos": 33.94
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    },
+    {
+     "q": "cosmetic boxes printing",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 74.14,
+     "_rel": "keyword"
+    },
+    {
+     "q": "custom food boxes",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 31.75,
+     "_rel": "keyword"
+    },
+    {
+     "q": "printed food boxes",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 62.25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "custom food boxes with logo",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 92.5,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Magnetic Closure Gift Box | Pet food label printing service | 100 MOQ $3.45 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 87,
+     "pass": false,
+     "gates": [
+      "G1_当量87"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "a5-flyers",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "A5 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 26,
+    "pos": 12.12
+   },
+   "cluster": [
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "A5 Flyers for Holiday Cards | Poster print same day | ZprintPro",
+     "swap": "Free US Ship → Poster print same day",
+     "sizeFlag": false,
+     "e": 63,
+     "pass": false,
+     "gates": [
+      "G1_当量63"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "A5 Flyers for Holiday Cards | Poster print same day | Free US Ship | ZprintPro",
+     "swap": "+ Poster print same day",
+     "sizeFlag": false,
+     "e": 78,
+     "pass": false,
+     "gates": [
+      "G1_当量78"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "厚身單張 | A4/A5 雙面四色 | 10張起 HK$0.45起 | 智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 26,
+    "pos": 8.19
+   },
+   "cluster": [
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    },
+    {
+     "q": "傳單印刷",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 14.2,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "厚身單張 | 特急快印 | A4/A5 雙面四色 | 10張起 HK$0.45起 | 智印港",
+     "swap": "+ 特急快印",
+     "sizeFlag": false,
+     "e": 64,
+     "pass": false,
+     "gates": [
+      "G1_当量64"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "mailer-boxes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Custom Kraft Mailer Boxes | 100 MOQ $0.80 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 26,
+    "pos": 34.12
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Custom Kraft Mailer Boxes | Pet food label printing service | 100 MOQ $0.80 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 87,
+     "pass": false,
+     "gates": [
+      "G1_当量87"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "folding-boxes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Folding Boxes | Auto-Lock | 100 MOQ $0.51 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 22,
+    "pos": 33.36
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Folding Boxes | Pet food label printing service | 100 MOQ $0.51 | ZprintPro",
+     "swap": "Auto-Lock → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 75,
+     "pass": false,
+     "gates": [
+      "G1_当量75"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Folding Boxes | Pet food label printing service | Auto-Lock | 100 MOQ $0.51 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 87,
+     "pass": false,
+     "gates": [
+      "G1_当量87"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "graduation-yearbook",
+   "locale": "ja",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "卒業記念アルバム印刷｜1冊〜¥1350〜｜中綴じ｜ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 22,
+    "pos": 62.82
+   },
+   "cluster": [
+    {
+     "q": "四六判 中綴じ",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 50,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "卒業記念アルバム印刷 | 四六判 中綴じ | 1冊〜¥1350〜 | 中綴じ | ZprintPro",
+     "swap": "+ 四六判 中綴じ",
+     "sizeFlag": false,
+     "e": 72,
+     "pass": false,
+     "gates": [
+      "G1_当量72",
+      "G7_与保留段重复"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "large-envelopes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Large Envelopes | 100 MOQ $0.28 | C4 A4 Flat | ZprintPro",
+   "curEquiv": 56,
+   "page": {
+    "clicks": 0,
+    "imps": 19,
+    "pos": 12.68
+   },
+   "cluster": [
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 43.2,
+     "_rel": "keyword"
+    },
+    {
+     "q": "same day flyer delivery",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 44.67,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Large Envelopes | Poster print same day | 100 MOQ $0.28 | C4 A4 Flat | ZprintPro",
+     "swap": "+ Poster print same day",
+     "sizeFlag": false,
+     "e": 80,
+     "pass": false,
+     "gates": [
+      "G1_当量80"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "rigid-boxes",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Rigid Boxes | 100 MOQ $1.84 | Free Ship | ZprintPro",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 18,
+    "pos": 41.28
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Rigid Boxes | 100 MOQ $1.84 | Pet food label printing service | ZprintPro",
+     "swap": "Free Ship → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 73,
+     "pass": false,
+     "gates": [
+      "G1_当量73"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Rigid Boxes | Pet food label printing service | 100 MOQ $1.84 | Free Ship | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 85,
+     "pass": false,
+     "gates": [
+      "G1_当量85"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "white-card-bags",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "White Card Bags | Art Card | 100 MOQ $2.76 | ZprintPro",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 15,
+    "pos": 7.33
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "White Card Bags | Pet food label printing service | 100 MOQ $2.76 | ZprintPro",
+     "swap": "Art Card → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 77,
+     "pass": false,
+     "gates": [
+      "G1_当量77"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "White Card Bags | Pet food label printing service | Art Card | 100 MOQ $2.76 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 88,
+     "pass": false,
+     "gates": [
+      "G1_当量88"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "folding-boxes",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "折疊盒印刷訂製 | 燙金 UV | 100個起 HK$2.5起 | 智印港",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 1,
+    "imps": 14,
+    "pos": 5.07
+   },
+   "cluster": [
+    {
+     "q": "包裝盒印刷",
+     "clicks": 0,
+     "imps": 71,
+     "pos": 36.07,
+     "_rel": "keyword"
+    },
+    {
+     "q": "禮盒訂製",
+     "clicks": 0,
+     "imps": 27,
+     "pos": 39.26,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "折疊盒印刷訂製 | 包裝盒印刷 | 100個起 HK$2.5起 | 智印港",
+     "swap": "燙金 UV → 包裝盒印刷",
+     "sizeFlag": false,
+     "e": 55,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "折疊盒印刷訂製 | 包裝盒印刷 | 燙金 UV | 100個起 HK$2.5起 | 智印港",
+     "swap": "+ 包裝盒印刷",
+     "sizeFlag": false,
+     "e": 65,
+     "pass": false,
+     "gates": [
+      "G1_当量65"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "gift-bags",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Gift Paper Bags | Ribbon | 100 MOQ $4.60 | ZprintPro",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 0,
+    "imps": 13,
+    "pos": 25.69
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Gift Paper Bags | Pet food label printing service | 100 MOQ $4.60 | ZprintPro",
+     "swap": "Ribbon → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 77,
+     "pass": false,
+     "gates": [
+      "G1_当量77"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Gift Paper Bags | Pet food label printing service | Ribbon | 100 MOQ $4.60 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 86,
+     "pass": false,
+     "gates": [
+      "G1_当量86"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "handle-bags",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Handle Paper Bags | Rope | 100 MOQ $1.84 | ZprintPro",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 0,
+    "imps": 13,
+    "pos": 66.54
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Handle Paper Bags | Pet food label printing service | 100 MOQ $1.84 | ZprintPro",
+     "swap": "Rope → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 79,
+     "pass": false,
+     "gates": [
+      "G1_当量79"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Handle Paper Bags | Pet food label printing service | Rope | 100 MOQ $1.84 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 86,
+     "pass": false,
+     "gates": [
+      "G1_当量86"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "handle-bags",
+   "locale": "ja",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "手提げ紙袋｜マルチサイズ｜100枚〜¥240〜｜ZprintPro",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 0,
+    "imps": 13,
+    "pos": 10.08
+   },
+   "cluster": [
+    {
+     "q": "オーガニックコットンエコバッグ",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 62.33,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "手提げ紙袋 | オーガニックコットンエコバッグ | 100枚〜¥240〜 | ZprintPro",
+     "swap": "マルチサイズ → オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 71,
+     "pass": false,
+     "gates": [
+      "G1_当量71",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "手提げ紙袋 | オーガニックコットンエコバッグ | マルチサイズ | 100枚〜¥240〜 | ZprintPro",
+     "swap": "+ オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 86,
+     "pass": false,
+     "gates": [
+      "G1_当量86",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "drink-menus",
+   "locale": "zh-hk",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "餐廳酒水牌 | 防水 覆膜 圓角 | 10份起 HK$12起 | 智印港",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 13,
+    "pos": 6.77
+   },
+   "cluster": [
+    {
+     "q": "餐牌印刷",
+     "clicks": 1,
+     "imps": 66,
+     "pos": 12.82,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "餐廳酒水牌 | 餐牌印刷 | 10份起 HK$12起 | 智印港",
+     "swap": "防水 覆膜 圓角 → 餐牌印刷",
+     "sizeFlag": false,
+     "e": 47,
+     "pass": false,
+     "gates": [
+      "G1_当量47"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "餐廳酒水牌 | 餐牌印刷 | 防水 覆膜 圓角 | 10份起 HK$12起 | 智印港",
+     "swap": "+ 餐牌印刷",
+     "sizeFlag": false,
+     "e": 64,
+     "pass": false,
+     "gates": [
+      "G1_当量64"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "vehicle-wraps",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
+   "curEquiv": 56,
+   "page": {
+    "clicks": 0,
+    "imps": 13,
+    "pos": 18.23
+   },
+   "cluster": [
+    {
+     "q": "adhesive banners",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 30.69,
+     "_rel": "keyword"
+    },
+    {
+     "q": "adhesive banner printing",
+     "clicks": 0,
+     "imps": 7,
+     "pos": 38.29,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Vehicle Wraps | 3M Vinyl Wrap | Adhesive banners | ZprintPro",
+     "swap": "Free US Ship → Adhesive banners",
+     "sizeFlag": false,
+     "e": 60,
+     "pass": false,
+     "gates": [
+      "G1_当量60"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Vehicle Wraps | Adhesive banners | 3M Vinyl Wrap | Free US Ship | ZprintPro",
+     "swap": "+ Adhesive banners",
+     "sizeFlag": false,
+     "e": 75,
+     "pass": false,
+     "gates": [
+      "G1_当量75"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "white-card-bags",
+   "locale": "ja",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "白カード紙袋 | エコ素材 | 100枚〜 ¥360〜 | ZprintPro",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 0,
+    "imps": 12,
+    "pos": 3.83
+   },
+   "cluster": [
+    {
+     "q": "オーガニックコットンエコバッグ",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 62.33,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "白カード紙袋 | オーガニックコットンエコバッグ | 100枚〜 ¥360〜 | ZprintPro",
+     "swap": "エコ素材 → オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 74,
+     "pass": false,
+     "gates": [
+      "G1_当量74",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "白カード紙袋 | オーガニックコットンエコバッグ | エコ素材 | 100枚〜 ¥360〜 | ZprintPro",
+     "swap": "+ オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 85,
+     "pass": false,
+     "gates": [
+      "G1_当量85",
+      "G3_跨语言(ja禁份/繁)",
+      "G7_与保留段重复"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "graduation-yearbook",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Graduation Yearbook | 1 MOQ | Free US Ship | ZprintPro",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 12,
+    "pos": 8
+   },
+   "cluster": [
+    {
+     "q": "saddle stitch booklet",
+     "clicks": 0,
+     "imps": 34,
+     "pos": 83.56,
+     "_rel": "keyword"
+    },
+    {
+     "q": "saddle stitch booklets",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 85.38,
+     "_rel": "keyword"
+    },
+    {
+     "q": "saddle stitch books",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 80.5,
+     "_rel": "keyword"
+    },
+    {
+     "q": "wholesale saddle stitch booklet printing",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 51.6,
+     "_rel": "keyword"
+    },
+    {
+     "q": "saddle stitch booklet printing",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 23,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Graduation Yearbook | 1 MOQ | Saddle stitch booklet | ZprintPro",
+     "swap": "Free US Ship → Saddle stitch booklet",
+     "sizeFlag": false,
+     "e": 63,
+     "pass": false,
+     "gates": [
+      "G1_当量63"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Graduation Yearbook | Saddle stitch booklet | 1 MOQ | Free US Ship | ZprintPro",
+     "swap": "+ Saddle stitch booklet",
+     "sizeFlag": false,
+     "e": 78,
+     "pass": false,
+     "gates": [
+      "G1_当量78"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "large-bags",
+   "locale": "en",
+   "tier": "P0-B",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Custom Large Paper Bags | 100 MOQ $3.45 | ZprintPro",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 10,
+    "pos": 16.9
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Custom Large Paper Bags | Pet food label printing service | 100 MOQ $3.45 | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 85,
+     "pass": false,
+     "gates": [
+      "G1_当量85"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "雙面傳單印刷 | 圓角 覆膜 | 10張起印 HK$0.40起 | 智印港",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 9,
+    "pos": 8.89
+   },
+   "cluster": [
+    {
+     "q": "特急快印",
+     "clicks": 0,
+     "imps": 29,
+     "pos": 33.17,
+     "_rel": "keyword"
+    },
+    {
+     "q": "單張印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 27,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "雙面傳單印刷 | 特急快印 | 10張起印 HK$0.40起 | 智印港",
+     "swap": "圓角 覆膜 → 特急快印",
+     "sizeFlag": false,
+     "e": 53,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "雙面傳單印刷 | 特急快印 | 圓角 覆膜 | 10張起印 HK$0.40起 | 智印港",
+     "swap": "+ 特急快印",
+     "sizeFlag": false,
+     "e": 65,
+     "pass": false,
+     "gates": [
+      "G1_当量65"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "en",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Thick Paper Flyers | Free Shipping $99+ | ZprintPro",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 9,
+    "pos": 15.67
+   },
+   "cluster": [
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "Thick Paper Flyers | Poster print same day | Free Shipping $99+ | ZprintPro",
+     "swap": "+ Poster print same day",
+     "sizeFlag": false,
+     "e": 75,
+     "pass": false,
+     "gates": [
+      "G1_当量75"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "foil-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "燙金利是封印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 9,
+    "pos": 8.22
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "燙金利是封印刷 | 喜帖印刷 | 100個起 HK$1.10起 | 智印港",
+     "swap": "燙金 局部UV → 喜帖印刷",
+     "sizeFlag": false,
+     "e": 54,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "燙金利是封印刷 | 喜帖印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 68,
+     "pass": false,
+     "gates": [
+      "G1_当量68"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "large-bags",
+   "locale": "ja",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "大判紙袋｜100枚〜 ¥450〜｜エコ素材 多サイズ｜ZprintPro",
+   "curEquiv": 54,
+   "page": {
+    "clicks": 0,
+    "imps": 8,
+    "pos": 18.12
+   },
+   "cluster": [
+    {
+     "q": "オーガニックコットンエコバッグ",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 62.33,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "大判紙袋 | 100枚〜 ¥450〜 | オーガニックコットンエコバッグ | ZprintPro",
+     "swap": "エコ素材 多サイズ → オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 70,
+     "pass": false,
+     "gates": [
+      "G1_当量70",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "大判紙袋 | オーガニックコットンエコバッグ | 100枚〜 ¥450〜 | エコ素材 多サイズ | ZprintPro",
+     "swap": "+ オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 90,
+     "pass": false,
+     "gates": [
+      "G1_当量90",
+      "G3_跨语言(ja禁份/繁)",
+      "G7_与保留段重复"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "custom-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "定制利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 1,
+    "imps": 8,
+    "pos": 7
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "定制利是封印刷 | 喜帖印刷 | 100個起 HK$1.9起 | 智印港",
+     "swap": "燙金 UV 壓紋 → 喜帖印刷",
+     "sizeFlag": false,
+     "e": 53,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "定制利是封印刷 | 喜帖印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 68,
+     "pass": false,
+     "gates": [
+      "G1_当量68"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "large-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "大號利是封印刷 | 燙金 局部UV | 100個起 HK$2.20起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 8,
+    "pos": 4.5
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "大號利是封印刷 | 喜帖印刷 | 100個起 HK$2.20起 | 智印港",
+     "swap": "燙金 局部UV → 喜帖印刷",
+     "sizeFlag": false,
+     "e": 54,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "大號利是封印刷 | 喜帖印刷 | 燙金 局部UV | 100個起 HK$2.20起 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 68,
+     "pass": false,
+     "gates": [
+      "G1_当量68"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "adhesive-banners",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "背膠噴繪 透明・10起印・HK$10起・4小時打稿 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "clicks": 1,
+    "imps": 8,
+    "pos": 19.88
+   },
+   "cluster": [
+    {
+     "q": "易拉架製作",
+     "clicks": 0,
+     "imps": 66,
+     "pos": 68.61,
+     "_rel": "keyword"
+    },
+    {
+     "q": "車身貼紙價錢",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 39.75,
+     "_rel": "keyword"
+    },
+    {
+     "q": "觀塘易拉架",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 60.12,
+     "_rel": "keyword"
+    },
+    {
+     "q": "易拉架訂製",
+     "clicks": 0,
+     "imps": 4,
+     "pos": 58,
+     "_rel": "keyword"
+    },
+    {
+     "q": "易拉架印刷",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 61.67,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "背膠噴繪 透明・10起印・HK$10起・4小時打稿 | 易拉架製作 | 智印港",
+     "swap": "+ 易拉架製作",
+     "sizeFlag": false,
+     "e": 63,
+     "pass": false,
+     "gates": [
+      "G1_当量63"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Folded Leaflets | Tri-Fold | 10 MOQ $0.80 | ZprintPro",
+   "curEquiv": 53,
+   "page": {
+    "clicks": 0,
+    "imps": 6,
+    "pos": 45.17
+   },
+   "cluster": [
+    {
+     "q": "double sided flyer printing",
+     "clicks": 0,
+     "imps": 14,
+     "pos": 36.86,
+     "_rel": "keyword"
+    },
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 43.2,
+     "_rel": "keyword"
+    },
+    {
+     "q": "same day flyer delivery",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 44.67,
+     "_rel": "keyword"
+    },
+    {
+     "q": "overnight flyer printing",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 46,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Folded Leaflets | Double sided flyer printing | 10 MOQ $0.80 | ZprintPro",
+     "swap": "Tri-Fold → Double sided flyer printing",
+     "sizeFlag": false,
+     "e": 72,
+     "pass": false,
+     "gates": [
+      "G1_当量72"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Folded Leaflets | Double sided flyer printing | Tri-Fold | 10 MOQ $0.80 | ZprintPro",
+     "swap": "+ Double sided flyer printing",
+     "sizeFlag": false,
+     "e": 83,
+     "pass": false,
+     "gates": [
+      "G1_当量83"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "wall-calendars",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "掛牆年曆 騎馬釘・1本起印・HK$3起・4小時打稿 | 智印港",
+   "curEquiv": 52,
+   "page": {
+    "clicks": 0,
+    "imps": 6,
+    "pos": 9.83
+   },
+   "cluster": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "pos": 20.33,
+     "_rel": "keyword"
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 25.09,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂制月曆",
+     "clicks": 0,
+     "imps": 50,
+     "pos": 25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "座檯月曆",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 37.24,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印月曆",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 15,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "掛牆年曆 騎馬釘・1本起印・HK$3起・4小時打稿 | 月曆印刷 | 智印港",
+     "swap": "+ 月曆印刷",
+     "sizeFlag": false,
+     "e": 63,
+     "pass": false,
+     "gates": [
+      "G1_当量63"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "gift-bags",
+   "locale": "ja",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "ギフト紙袋 | 箔押し リボン | 100枚〜 ¥600〜 | ZprintPro",
+   "curEquiv": 55,
+   "page": {
+    "clicks": 0,
+    "imps": 5,
+    "pos": 22.2
+   },
+   "cluster": [
+    {
+     "q": "オーガニックコットンエコバッグ",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 62.33,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "ギフト紙袋 | オーガニックコットンエコバッグ | 100枚〜 ¥600〜 | ZprintPro",
+     "swap": "箔押し リボン → オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 72,
+     "pass": false,
+     "gates": [
+      "G1_当量72",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "ギフト紙袋 | オーガニックコットンエコバッグ | 箔押し リボン | 100枚〜 ¥600〜 | ZprintPro",
+     "swap": "+ オーガニックコットンエコバッグ",
+     "sizeFlag": false,
+     "e": 88,
+     "pass": false,
+     "gates": [
+      "G1_当量88",
+      "G3_跨语言(ja禁份/繁)"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "embossed-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "浮雕利是封 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 5,
+    "pos": 10
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "浮雕利是封 | 喜帖印刷 | 100個起 HK$3起 | 智印港",
+     "swap": "燙金 UV 壓紋 → 喜帖印刷",
+     "sizeFlag": false,
+     "e": 47,
+     "pass": false,
+     "gates": [
+      "G1_当量47"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "浮雕利是封 | 喜帖印刷 | 燙金 UV 壓紋 | 100個起 HK$3起 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 62,
+     "pass": false,
+     "gates": [
+      "G1_当量62"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "折りたたみパンフレット｜三つ折り｜10枚〜 ¥110｜ZprintPro",
+   "curEquiv": 56,
+   "page": {
+    "clicks": 0,
+    "imps": 4,
+    "pos": 3
+   },
+   "cluster": [
+    {
+     "q": "チラシ印刷 早い",
+     "clicks": 0,
+     "imps": 23,
+     "pos": 29.09,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "折りたたみパンフレット | チラシ印刷 早い | 10枚〜 ¥110 | ZprintPro",
+     "swap": "三つ折り → チラシ印刷 早い",
+     "sizeFlag": false,
+     "e": 66,
+     "pass": false,
+     "gates": [
+      "G1_当量66"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "折りたたみパンフレット | チラシ印刷 早い | 三つ折り | 10枚〜 ¥110 | ZprintPro",
+     "swap": "+ チラシ印刷 早い",
+     "sizeFlag": false,
+     "e": 77,
+     "pass": false,
+     "gates": [
+      "G1_当量77"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cartoon-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "卡通利是封印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 4,
+    "pos": 5.25
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "卡通利是封印刷 | 喜帖印刷 | 100個起 HK$1.10起 | 智印港",
+     "swap": "燙金 局部UV → 喜帖印刷",
+     "sizeFlag": false,
+     "e": 54,
+     "pass": true,
+     "gates": []
+    },
+    {
+     "variant": "B_插入",
+     "cand": "卡通利是封印刷 | 喜帖印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 68,
+     "pass": false,
+     "gates": [
+      "G1_当量68"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "pearl-envelopes",
+   "locale": "en",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Pearl Envelopes | 100 MOQ $0.46 | Free Ship | ZprintPro",
+   "curEquiv": 55,
+   "page": {
+    "clicks": 0,
+    "imps": 4,
+    "pos": 20.25
+   },
+   "cluster": [
+    {
+     "q": "poster print same day",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 54.3,
+     "_rel": "keyword"
+    },
+    {
+     "q": "print flyers same day",
+     "clicks": 0,
+     "imps": 5,
+     "pos": 43.2,
+     "_rel": "keyword"
+    },
+    {
+     "q": "same day flyer delivery",
+     "clicks": 0,
+     "imps": 3,
+     "pos": 44.67,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Pearl Envelopes | 100 MOQ $0.46 | Poster print same day | ZprintPro",
+     "swap": "Free Ship → Poster print same day",
+     "sizeFlag": false,
+     "e": 67,
+     "pass": false,
+     "gates": [
+      "G1_当量67"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Pearl Envelopes | Poster print same day | 100 MOQ $0.46 | Free Ship | ZprintPro",
+     "swap": "+ Poster print same day",
+     "sizeFlag": false,
+     "e": 79,
+     "pass": false,
+     "gates": [
+      "G1_当量79"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "eco-tote-bag",
+   "locale": "ja",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "エコトートバッグ｜オーガニックコットン｜10個〜｜ZprintPro",
+   "curEquiv": 57,
+   "page": {
+    "clicks": 0,
+    "imps": 4,
+    "pos": 47.25
+   },
+   "cluster": [
+    {
+     "q": "コミケ 印刷",
+     "clicks": 0,
+     "imps": 94,
+     "pos": 29.61,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "エコトートバッグ | コミケ 印刷 | オーガニックコットン | 10個〜 | ZprintPro",
+     "swap": "+ コミケ 印刷",
+     "sizeFlag": false,
+     "e": 74,
+     "pass": false,
+     "gates": [
+      "G1_当量74"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "相框年曆 | 騎馬釘 1本起印 HK$3起 4小時打稿 | 智印港",
+   "curEquiv": 51,
+   "page": {
+    "clicks": 0,
+    "imps": 3,
+    "pos": 31
+   },
+   "cluster": [
+    {
+     "q": "月曆印刷",
+     "clicks": 0,
+     "imps": 126,
+     "pos": 20.33,
+     "_rel": "keyword"
+    },
+    {
+     "q": "月曆訂製",
+     "clicks": 0,
+     "imps": 65,
+     "pos": 25.09,
+     "_rel": "keyword"
+    },
+    {
+     "q": "訂制月曆",
+     "clicks": 0,
+     "imps": 50,
+     "pos": 25,
+     "_rel": "keyword"
+    },
+    {
+     "q": "座檯月曆",
+     "clicks": 0,
+     "imps": 25,
+     "pos": 37.24,
+     "_rel": "keyword"
+    },
+    {
+     "q": "印月曆",
+     "clicks": 0,
+     "imps": 15,
+     "pos": 15,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "相框年曆 | 月曆印刷 | 騎馬釘 1本起印 HK$3起 4小時打稿 | 智印港",
+     "swap": "+ 月曆印刷",
+     "sizeFlag": false,
+     "e": 62,
+     "pass": false,
+     "gates": [
+      "G1_当量62"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "small-bags",
+   "locale": "en",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "Custom Small Paper Bags | 100 MOQ | Free Ship | ZprintPro",
+   "curEquiv": 57,
+   "page": {
+    "imps": 0,
+    "pos": null,
+    "clicks": 0
+   },
+   "cluster": [
+    {
+     "q": "pet food label printing service",
+     "clicks": 0,
+     "imps": 10,
+     "pos": 29.8,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "Custom Small Paper Bags | 100 MOQ | Pet food label printing service | ZprintPro",
+     "swap": "Free Ship → Pet food label printing service",
+     "sizeFlag": false,
+     "e": 79,
+     "pass": false,
+     "gates": [
+      "G1_当量79"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "Custom Small Paper Bags | Pet food label printing service | 100 MOQ | Free Ship | ZprintPro",
+     "swap": "+ Pet food label printing service",
+     "sizeFlag": false,
+     "e": 91,
+     "pass": false,
+     "gates": [
+      "G1_当量91"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "eco-red-packets",
+   "locale": "zh-hk",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "環保利是封 燙金・覆膜・100起印・HK$1.90起 | 智印港",
+   "curEquiv": 50,
+   "page": {
+    "imps": 0,
+    "pos": null,
+    "clicks": 0
+   },
+   "cluster": [
+    {
+     "q": "喜帖印刷",
+     "clicks": 0,
+     "imps": 16,
+     "pos": 40.75,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "B_插入",
+     "cand": "環保利是封 燙金・覆膜・100起印・HK$1.90起 | 喜帖印刷 | 智印港",
+     "swap": "+ 喜帖印刷",
+     "sizeFlag": false,
+     "e": 61,
+     "pass": false,
+     "gates": [
+      "G1_当量61"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "locale": "ja",
+   "tier": "P1",
+   "relation": "keyword",
+   "needsHuman": true,
+   "curTitle": "フルーツ・食品ラベル印刷｜防水 耐油｜500枚〜｜ZprintPro",
+   "curEquiv": 55,
+   "page": {
+    "imps": 0,
+    "pos": null,
+    "clicks": 0
+   },
+   "cluster": [
+    {
+     "q": "ステッカー印刷 小ロット",
+     "clicks": 0,
+     "imps": 8,
+     "pos": 48.88,
+     "_rel": "keyword"
+    }
+   ],
+   "candidates": [
+    {
+     "variant": "A_换中段",
+     "cand": "フルーツ・食品ラベル印刷 | ステッカー印刷 小ロット | 500枚〜 | ZprintPro",
+     "swap": "防水 耐油 → ステッカー印刷 小ロット",
+     "sizeFlag": false,
+     "e": 72,
+     "pass": false,
+     "gates": [
+      "G1_当量72"
+     ]
+    },
+    {
+     "variant": "B_插入",
+     "cand": "フルーツ・食品ラベル印刷 | ステッカー印刷 小ロット | 防水 耐油 | 500枚〜 | ZprintPro",
+     "swap": "+ ステッカー印刷 小ロット",
+     "sizeFlag": false,
+     "e": 84,
+     "pass": false,
+     "gates": [
+      "G1_当量84"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+﻿lang,term,type,cat
+en,book printing,category,books
+en,book printer,category,books
+en,book manufacturer,category,books
+en,textbook printing,category,school
+en,hardcover books,category,books
+en,paperback books,category,books
+en,bookbinding,category,books
+en,children's books,category,books
+en,coloring books,category,books
+en,yearbook printing,category,books
+en,packaging boxes,category,packaging
+en,custom boxes,category,packaging
+en,folding cartons,category,packaging
+en,corrugated boxes,category,packaging
+en,gift boxes,category,packaging
+en,cosmetic packaging,category,packaging
+en,mailer boxes,category,packaging
+en,printed boxes,category,packaging
+en,food packaging,category,packaging
+en,paper bags,category,packaging
+en,labels printing,category,packaging
+en,exercise books,category,exercise_books
+en,notebooks,category,exercise_books
+en,copybooks,category,exercise_books
+en,notepads,category,exercise_books
+en,stationery,category,school
+en,school books,category,school
+en,workbooks,category,school
+en,exam papers,category,school
+en,educational books,category,school
+en,offset printing,category,general
+en,digital printing,category,general
+en,printing services,category,general
+en,printing company,category,general
+en,print supplier,category,general
+en,commercial printing,category,general
+en,looking for,intent,general
+en,supplier wanted,intent,general
+en,request for quotation,intent,general
+en,need printing,intent,general
+en,seek supplier,intent,general
+en,quotation request,intent,general
+en,procurement of,intent,general
+en,supply of,intent,general
+en,we require,intent,general
+en,tender for,intent,general
+en,tender,tender,general
+en,bid,tender,general
+en,rfq,tender,general
+en,rfp,tender,general
+en,expression of interest,tender,general
+en,sealed bid,tender,general
+en,contract notice,tender,general
+en,framework agreement,tender,general
+en,invitation to tender,tender,general
+en,submission deadline,tender,general
+en,jobs,exclude,general
+en,hiring,exclude,general
+en,salary,exclude,general
+en,recruitment,exclude,general
+en,tutorial,exclude,general
+en,course,exclude,general
+en,second hand,exclude,general
+en,free download,exclude,general
+en,mockup,exclude,general
+en,template,exclude,general
+en,clipart,exclude,general
+en,freelance job,exclude,general
+es,imprenta,category,general
+es,impresión de libros,category,books
+es,libros de texto,category,school
+es,cuadernos,category,exercise_books
+es,libretas,category,exercise_books
+es,papelería,category,school
+es,cajas de cartón,category,packaging
+es,cajas personalizadas,category,packaging
+es,empaques,category,packaging
+es,embalaje,category,packaging
+es,etiquetas,category,packaging
+es,licitación,tender,general
+es,cotización,intent,general
+es,concurso público,tender,general
+es,proveedor,intent,general
+es,suministro de,intent,general
+es,se solicita,intent,general
+es,presupuesto,intent,general
+es,empleo,exclude,general
+fr,imprimerie,category,general
+fr,impression de livres,category,books
+fr,manuels scolaires,category,school
+fr,livres scolaires,category,school
+fr,cahiers,category,exercise_books
+fr,papeterie,category,school
+fr,boîtes en carton,category,packaging
+fr,emballage,category,packaging
+fr,étiquettes,category,packaging
+fr,appel d'offres,tender,general
+fr,marché public,tender,general
+fr,devis,intent,general
+fr,fournisseur,intent,general
+fr,fourniture de,intent,general
+fr,recrutement,exclude,general
+de,druckerei,category,general
+de,buchdruck,category,books
+de,schulbücher,category,school
+de,hefte,category,exercise_books
+de,schreibwaren,category,school
+de,kartons,category,packaging
+de,verpackung,category,packaging
+de,etiketten,category,packaging
+de,ausschreibung,tender,general
+de,angebot,intent,general
+de,lieferung von,intent,general
+ar,مطبعة,category,general
+ar,طباعة الكتب,category,books
+ar,كتب مدرسية,category,school
+ar,دفاتر,category,exercise_books
+ar,قرطاسية,category,school
+ar,علب كرتون,category,packaging
+ar,تغليف,category,packaging
+ar,ملصقات,category,packaging
+ar,مناقصة,tender,general
+ar,عرض سعر,intent,general
+ar,توريد,intent,general
+ar,وظائف,exclude,general
+ru,типография,category,general
+ru,печать книг,category,books
+ru,учебники,category,school
+ru,тетради,category,exercise_books
+ru,канцтовары,category,school
+ru,картонные коробки,category,packaging
+ru,упаковка,category,packaging
+ru,этикетки,category,packaging
+ru,тендер,tender,general
+ru,закупка,tender,general
+ru,коммерческое предложение,intent,general
+ru,поставка,intent,general
+ru,вакансия,exclude,general
+pt,gráfica,category,general
+pt,impressão de livros,category,books
+pt,livros didáticos,category,school
+pt,cadernos,category,exercise_books
+pt,papelaria,category,school
+pt,caixas de papelão,category,packaging
+pt,embalagens,category,packaging
+pt,etiquetas,category,packaging
+pt,licitação,tender,general
+pt,pregão,tender,general
+pt,orçamento,intent,general
+pt,fornecedor,intent,general
+id,percetakan,category,general
+id,cetak buku,category,books
+id,buku sekolah,category,school
+id,buku tulis,category,exercise_books
+id,kotak karton,category,packaging
+id,kemasan,category,packaging
+id,tender,tender,general
+id,penawaran,intent,general
+id,pengadaan,intent,general
+id,lowongan,exclude,general
+tr,matbaa,category,general
+tr,kitap baskısı,category,books
+tr,ders kitapları,category,school
+tr,defter,category,exercise_books
+tr,karton kutu,category,packaging
+tr,ambalaj,category,packaging
+tr,ihale,tender,general
+tr,teklif,intent,general
+tr,tedarik,intent,general
+vi,nhà in,category,general
+vi,in sách,category,books
+vi,sách giáo khoa,category,school
+vi,vở,category,exercise_books
+vi,hộp giấy,category,packaging
+vi,bao bì,category,packaging
+vi,đấu thầu,tender,general
+vi,báo giá,intent,general
+vi,tuyển dụng,exclude,general
+en,prosecute,exclude,general
+en,prosecution,exclude,general
+en,indicted,exclude,general
+en,fraud,exclude,general
+en,corruption,exclude,general
+en,bribery,exclude,general
+en,scandal,exclude,general
+en,lawsuit,exclude,general
+vi,truy tố,exclude,general
+vi,khởi tố,exclude,general
+vi,bị bắt,exclude,general
+vi,vụ án,exclude,general
+vi,hối lộ,exclude,general
+es,corrupción,exclude,general
+fr,corruption,exclude,general
+ru,коррупция,exclude,general
+ar,فساد,exclude,general
+en,scam,exclude,general
+en,we manufacture,exclude,general
+en,we supply,exclude,general
+en,we are manufacturers,exclude,general
+en,our factory,exclude,general
+en,printing tender,intent,general
+en,printing contract,intent,general
+en,print procurement,intent,general
+en,supply and delivery,tender,general
+en,request for proposal,tender,general
+en,supply of books,intent,books
+en,supply of textbooks,intent,school
+en,supply of exercise books,intent,exercise_books
+en,book supplier,intent,books
+en,box manufacturer,category,packaging
+en,packaging supplier,category,packaging
+en,carton printing,category,packaging
+en,printed materials,category,general
+en,publication printing,category,books
+en,brochure printing,category,general
+en,poster printing,category,general
+en,calendar printing,category,general
+en,envelope printing,category,general
+en,diary printing,category,general
+en,self-publishing,category,books
+en,GCC,geo,general
+en,MENA,geo,general
+en,LATAM,geo,general
+en,East Africa,geo,general
+en,Southeast Asia,geo,general
+es,impresión offset,category,general
+es,impresión digital,category,general
+es,trabajos de impresión,intent,general
+es,suministro de libros,intent,books
+es,material didáctico,category,school
+es,útiles escolares,category,school
+es,papelería escolar,category,school
+es,proveedores de imprenta,intent,general
+es,solicitud de cotización,tender,general
+es,caja de cartón corrugado,category,packaging
+es,bolsas de papel,category,packaging
+es,catálogo impreso,category,general
+fr,imprimeur,category,general
+fr,impression numérique,category,general
+fr,travaux d'impression,intent,general
+fr,fournitures scolaires,category,school
+fr,manuel scolaire,category,school
+fr,commande d'impression,intent,general
+fr,demande de devis,tender,general
+fr,boîtes en carton ondulé,category,packaging
+fr,sacs en papier,category,packaging
+fr,brochure,category,general
+fr,affiches,category,general
+de,druckauftrag,intent,general
+de,angebot einholen,intent,general
+de,schulhefte,category,exercise_books
+de,bücher drucken,category,books
+de,broschüren,category,general
+de,kalender,category,general
+de,verpackungen,category,packaging
+de,kartons,category,packaging
+de,lieferung von druckerzeugnissen,intent,general
+ar,طباعة,category,general
+ar,طلب عرض سعر,intent,general
+ar,توريد كتب,intent,books
+ar,توريد دفاتر,intent,exercise_books
+ar,مطبعة كتب,category,books
+ar,علب تغليف,category,packaging
+ar,كتب دراسية,category,school
+ar,دفتر مدرسي,category,exercise_books
+ru,заказ на печать,intent,general
+ru,поставка учебников,intent,school
+ru,печать бланков,category,general
+ru,блокноты,category,exercise_books
+ru,упаковочные материалы,category,packaging
+ru,каталог,category,general
+pt,impressão offset,category,general
+pt,material escolar,category,school
+pt,fornecimento de livros,intent,books
+pt,cotação impressão,intent,general
+pt,editora,category,books
+pt,caixa de papelão ondulado,category,packaging
+id,buku pelajaran,category,school
+id,jasa cetak,category,general
+id,permintaan penawaran,intent,general
+id,pengadaan buku,intent,books
+id,kardus,category,packaging
+id,label produk,category,packaging
+tr,baskı hizmeti,category,general
+tr,fiyat teklifi,intent,general
+tr,okul defteri,category,exercise_books
+tr,kağıt kutu,category,packaging
+tr,kitap ihalesi,tender,books
+vi,in ấn,category,general
+vi,vở học sinh,category,exercise_books
+vi,hộp carton,category,packaging
+vi,nhãn mác,category,packaging
+vi,dịch vụ in,category,general
+vi,đặt in,intent,general
+en,used books,exclude,general
+en,ebook,exclude,general
+en,e-book,exclude,general
+en,kindle,exclude,general
+en,audiobook,exclude,general
+es,descargar gratis,exclude,general
+fr,téléchargement,exclude,general
+ru,скачать,exclude,general
+en,tender offer,exclude,general
+sw,uchapishaji,category,general
+sw,vitabu,category,books
+sw,kitabu,category,books
+sw,daftari,category,exercise_books
+sw,zabuni,tender,general
+sw,karatasi,category,general
+bn,মুদ্রণ,category,general
+bn,ছাপাখানা,category,general
+bn,বই,category,books
+bn,পাঠ্যবই,category,school
+bn,খাতা,category,exercise_books
+bn,দরপত্র,tender,general
+bn,টেন্ডার,tender,general
+ur,طباعت,category,general
+ur,چھاپہ خانہ,category,general
+ur,کتاب,category,books
+ur,کاپی,category,exercise_books
+ur,ٹینڈر,tender,general
+uz,bosmaxona,category,general
+uz,kitob,category,books
+uz,chop etish,category,general
+uz,daftar,category,exercise_books
+uz,qog'oz,category,general
+uz,tender,tender,general
+ne,छापाखाना,category,general
+ne,मुद्रण,category,general
+ne,पुस्तक,category,books
+ne,कापी,category,exercise_books
+ne,बोलपत्र,tender,general
+am,ህትመት,category,general
+am,መጽሐፍ,category,books
+am,ደብተር,category,exercise_books
+am,ጨረታ,tender,general
