@@ -191,3 +191,13 @@
 | **意图** | 清空 sku-seo-data.ts 100 塊 faqs（括號掃描法）+ 鏡像 KPI 台账入 docs/ops/ |
 | **写入范围** | `src/data/sku-seo-data.ts`（備份 `.hermes/_bak-sku-seo-data-before-faq-clear-20260921.ts`）+ `docs/ops/kpi-baseline-ledger.csv` + 拍板文件回填 |
 | **释放条件** | commit + push 完成 ✅ 已释放（11:5x） |
+
+## 持有声明（2026-09-21 12:53 · T1 飞轮标题会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | T1 飞轮标题会话（K3 12:12 续批授权链） |
+| **意图** | apply 81-130 批提案（123 字段，七闸 0 FAIL）到 sku-seo-data.ts |
+| **写入范围** | `src/data/sku-seo-data.ts`（apply 器自动备份 .hermes/_bak-*） |
+| **预计时长** | < 10 min |
+| **释放条件** | 收尾四件套过 + commit push 完成 |
