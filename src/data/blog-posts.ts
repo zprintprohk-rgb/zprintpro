@@ -987,9 +987,9 @@ const lpMarathonEventPoster: BlogPostMeta = {
     ja: 'マラソン大会ポスター印刷ガイド：防水 A1/A2 レー | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。100 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
-    en: 'US race directors, running clubs, charity foundations: 100 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
-    ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。100 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
+    'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。1 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    en: 'US race directors, running clubs, charity foundations: 1 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
+    ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。1 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
   },
 };
 

@@ -2895,7 +2895,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/outdoor-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -2927,9 +2927,11 @@ export const products: Product[] = [
         { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
       ],
       quantities: [
-        { value: 100, label: '100張', discount: 1 },
-        { value: 500, label: '500張', discount: 0.85 },
-        { value: 1000, label: '1000張', discount: 0.7 },
+        { value: 1, label: '1張', discount: 1 },
+        { value: 3, label: '3張', discount: 0.86 },
+        { value: 5, label: '5張', discount: 0.77 },
+        { value: 10, label: '10張', discount: 0.64 },
+        { value: 20, label: '20張', discount: 0.55 },
       ],
     },
   seoImages: {
@@ -2982,7 +2984,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/display-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -3021,9 +3023,11 @@ export const products: Product[] = [
         { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
       ],
       quantities: [
-        { value: 100, label: '100張', discount: 1 },
-        { value: 500, label: '500張', discount: 0.85 },
-        { value: 1000, label: '1000張', discount: 0.7 },
+        { value: 1, label: '1張', discount: 1 },
+        { value: 3, label: '3張', discount: 0.86 },
+        { value: 5, label: '5張', discount: 0.77 },
+        { value: 10, label: '10張', discount: 0.64 },
+        { value: 20, label: '20張', discount: 0.55 },
       ],
     },
   seoImages: {
@@ -3157,7 +3161,7 @@ export const products: Product[] = [
       '【6–12 個月戶外耐候】UV 固化油墨，陽光下不褪色',
       '【異形模切】任意形狀裁切，配合櫥窗鏤空設計',
       '【玻璃透光】透明或鏤空區域可配合背光效果',
-      '【當日可取】數碼輸出，100 張起印，急單無憂',
+      '【當日可取】數碼輸出，1 張起印，急單無憂',
       '【3mm 出血建議】印前免費檢查，避免文字貼邊',
     ],
     specs: {
@@ -3173,7 +3177,7 @@ export const products: Product[] = [
     weight_score: 82,
     isHot: false,
     isNew: false,
-    minQuantity: 100,
+    minQuantity: 1,
     images: ['/images/products/adhesive-posters.jpg'],
   imagesByLocale: {
     'zh-hk': [
