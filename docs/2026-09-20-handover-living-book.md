@@ -633,3 +633,12 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - 校驗器 `scripts/validate-quality-proposals.mjs`（commit d245315a）：G1 band / G2 品牌尾 / G3 幣種假名 / G4 主詞（拉丁詞幹治單複數 A2 Posters vs Poster Printing）/ G5 MOQ 對真值（**剝價 token 防「HK$8起」誤捕為 MOQ=8**）/ G6 價格鉤 / G7 填充詞。本輪教訓：手算當量不可靠（3 條 TRIM/FILL），一律跑 guard。
 - 提案修復實錄：11 條 TRIM 壓回 50-57（緊湊｜分隔符省當量）；food-boxes/outdoor-vinyl 改以 name 主詞起頭；electronics EVA海棉→海綿錯字；h1 英文口水句三例（food-boxes ja / outdoor-posters ja / a2-posters ja）換日文公式。
 - **待 apply（阻塞中）**：併發 MOQ 車道仍活躍（sku-seo-data.ts 11:41 未提交 M）→ 等 §0.35.7 雙條件滿足 → 重跑 audit-sku-quality 取穩定基線 → 提案 cur 快照刷新 → `apply-quality-proposals.mjs`（下輪寫：JSON.stringify(cur) 全庫唯一性斷言 + 計數斷言 + .hermes 備份）→ 收尾四件套。
+
+### 2026-09-21 12:15 · K3 11:46 提案库全链落地（apply 63 處已推送，線上斷言 3/3 PASS）— commit ce8e0e45
+- **阻塞解除實錄**：併發 MOQ 車道 11:41 未提交 M 於 12:00 前消失（src/ 全淨 + ≥15min 靜默，§0.35.7 雙條件滿足）→ 立即重跑審計確認基線未漂移（100鍵/300槽/T1=213 不變）→ 進入 apply。
+- `scripts/apply-quality-proposals.mjs`（兩級錨定：slug 塊 brace 平衡 + locale 子塊 + `"field": cur` 全庫唯一，共用模板句/空值不再跨塊誤中；自後向前寫盤逐步重驗；子進程複驗）：**63 處替換 / 0 ABORT / VERIFY_OK 63**；備份 `.hermes/_bak-quality-2026-09-21T04-05-56-851Z/`。
+- 收尾四件套：census 300 槽全 OK 帶 / audit-sku-locale 4×0 / tsc 54=基線 / validator 新基線 0 FAIL。
+- push ce8e0e45（攢批 5 commit 一次）。線上斷言：a2-posters zh / food-boxes ja / adhesive-banners en（前兩頁即時，第三頁邊緣緩存 ~1min 後生效，已複查確認）。
+- **本批新固化教訓**：① 手算當量不可靠（3 條 TRIM/FILL 全靠 guard 抓回）；② apply 錨定必須 slug 塊→locale 子塊兩級（slug 塊內 3 語共享 `"h1": ""` 與 43 SKU 共用 ja 口水模板句，單級錨定必炸）；③ 驗證腳本落盤跑，勿 cmd -e 轉義。
+- **飛輪窗登記**：本批 63 處進 7-10 天驗證窗（至 ~9/28-30），同槽不得再改；窗滿跑 `title-verify-report.mjs` 對賬 ΔCTR/Δ位置。
+- **下批隊列**：T1 剩 183 槽（213-30）按 imps 降序續批；45 槽補描述 + 181 槽截斷重寫（舊隊列）；apply 器已通用化（提案 JSON 換批即可）。
