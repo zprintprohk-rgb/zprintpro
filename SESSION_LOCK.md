@@ -201,3 +201,14 @@
 | **写入范围** | `src/data/sku-seo-data.ts`（apply 器自动备份 .hermes/_bak-*） |
 | **预计时长** | < 10 min |
 | **释放条件** | 收尾四件套过 + commit push 完成 |
+
+## 持有声明（2026-09-21 13:34 · T1 131-213 批会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | 本路会话（K3 12:12 续批指令链，T1 飞轮车道） |
+| **意图** | apply `.hermes/title-quality-proposals-20260921-b131-213.json`（83 槽 225 字段三语 title/h1/desc 重写）→ 收尾四件套 → commit+push → 线上断言 |
+| **写入范围** | 仅 `src/data/sku-seo-data.ts`（apply 器块级锚定） |
+| **预计时长** | ~20 min（13:34-13:55） |
+| **释放条件** | apply 完成 + 四件套全过 + commit 后 |
+| **双条件核验** | ① src/ 无 MM、无 staged 删除 ② 对端 ≥15min 静默（find -16min 仅本路文件，13:33 实测） |
