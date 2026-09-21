@@ -182,3 +182,12 @@
 
 - 2026-09-21 03:4x 释放记录：276eb44a 已 push（origin + origin_ssh 均同步）；CF 部署後線上複驗 ja 首頁 U+FFFD 60→0，meta description 為恢復後乾淨文本。E5/E6/E7 經 DELIVERY 目錄核實仍全部待 K3 拍板（sibling 報告 §8.4 同款口徑），本輪未動。
 - 2026-09-21 08:00 释放记录：MOQ 残留批全部收尾（d473a911 已推、CF success、en/ja 日历页 50 族线上清零）；src/ 无本会话未提交改动；KEEP/FLAG 清单（畢業冊族/wedding混合minQ/特殊紙能力宣言/ja基線真實分層）已在活书 §9 03:20 条，待 K3 拍板。
+
+## 持有声明（2026-09-21 11:4x · C5/C7 会话 · 已收尾释放）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | C5/C7 会话（K3 11:33 回「1」拍板：C5 選項 1 清空 + C7 台账鏡像） |
+| **意图** | 清空 sku-seo-data.ts 100 塊 faqs（括號掃描法）+ 鏡像 KPI 台账入 docs/ops/ |
+| **写入范围** | `src/data/sku-seo-data.ts`（備份 `.hermes/_bak-sku-seo-data-before-faq-clear-20260921.ts`）+ `docs/ops/kpi-baseline-ledger.csv` + 拍板文件回填 |
+| **释放条件** | commit + push 完成 ✅ 已释放（11:5x） |
