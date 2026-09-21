@@ -4285,7 +4285,7 @@ export const products: Product[] = [
     weight_score: 95,
     isHot: true,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/wall-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4360,7 +4360,7 @@ export const products: Product[] = [
     weight_score: 92,
     isHot: true,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/desk-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4444,7 +4444,7 @@ export const products: Product[] = [
     weight_score: 90,
     isHot: true,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/custom-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4532,7 +4532,7 @@ export const products: Product[] = [
     weight_score: 88,
     isHot: false,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/mini-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4621,7 +4621,7 @@ export const products: Product[] = [
     weight_score: 85,
     isHot: false,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/photo-frame-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [
@@ -4711,7 +4711,7 @@ export const products: Product[] = [
     weight_score: 82,
     isHot: false,
     isNew: false,
-    minQuantity: 1000,
+    minQuantity: 1,
     images: ['/images/products/magnetic-calendars.jpg'],
   imagesByLocale: {
     'zh-hk': [

@@ -1473,9 +1473,9 @@ const lpCalendarPrinting: BlogPostMeta = {
     ja: '2027年カレンダー印刷ガイド：壁掛け・卓上サイズ | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 1000 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
-    en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 1000-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
-    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1000部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+    'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 1 本起印（批量 300 本起），銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
+    en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 1-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
+    ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 1部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
   },
 };
 
@@ -1583,9 +1583,9 @@ const lpMonthlyCalendarPrinting2027: BlogPostMeta = {
     ja: '2027 年カレンダー印刷攻略：いつ注文？最小ロット | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '2027 月曆印刷 9 月開學季企業起量。4 種月曆類型 (掛曆 / 座曆 / 月記事簿 / 檯曆) + 4 大紙材 (銅版紙 / 雙銅紙 / 雅粉紙 / 牛油紙) + 起印量 100 本起 + 7 個常見問題, 9 月中前必印。',
-    en: '2027 calendar printing 9-month back-to-school corporate ramp. 4 types (wall / desk / monthly planner / pad calendar) + 4 stocks (coated / dual-coated / offset / kraft) + 100 MOQ + 7 FAQs, before mid-Sep.',
-    ja: '2027 年カレンダー印刷 9 月から新学期シーズン法人大量注文。4 種類（壁掛け / 卓上 / マンスリープランナー / パッド）+ 4 種用紙（コート紙 / 両面コート / オフセット / クラフト）+ 100 冊〜 + 7 FAQ、9月中旬までに注文推奨。',
+    'zh-hk': '2027 月曆印刷 9 月開學季企業起量。4 種月曆類型 (掛曆 / 座曆 / 月記事簿 / 檯曆) + 4 大紙材 (銅版紙 / 雙銅紙 / 雅粉紙 / 牛油紙) + 起印量 1 本起 + 7 個常見問題, 9 月中前必印。',
+    en: '2027 calendar printing 9-month back-to-school corporate ramp. 4 types (wall / desk / monthly planner / pad calendar) + 4 stocks (coated / dual-coated / offset / kraft) + 1 MOQ + 7 FAQs, before mid-Sep.',
+    ja: '2027 年カレンダー印刷 9 月から新学期シーズン法人大量注文。4 種類（壁掛け / 卓上 / マンスリープランナー / パッド）+ 4 種用紙（コート紙 / 両面コート / オフセット / クラフト）+ 1 冊〜 + 7 FAQ、9月中旬までに注文推奨。',
   },
   targetKeywords: {
     primary: '2027 月曆印刷',

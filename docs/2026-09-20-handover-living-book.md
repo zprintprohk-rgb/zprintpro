@@ -595,3 +595,25 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 | 邊度有紙袋買 | 36/7.44 | 零售現貨（Artpack/雞皮紙袋/Carousell）+地圖塊；**零售現購 intent** | **改落點（低優先）**：paper-bags 頁加 AEO 答案塊「現貨手挽紙袋+訂製」承接；印刷頁難直接收 |
 
 **執行隊列（依判定）**：窗內可動 = 食品包裝印刷/小冊子印刷品類 desc 層 + a6 博客 meta + paper-bags AEO 塊（均不碰窗內 42 槽 title）；窗後（9/30 後）= small-batch-stickers en title ×2 詞、posters zh-hk title。
+
+### 2026-09-21 10:30 · K3 09:06 三线合一落地：月曆族「數碼 1 本起・批量 300 起」全层统一（72 规则）+ L1-1 窗内判定执行
+
+**拍板链**：K3 00:28「月曆 1000 實證」→ 08:36「全部按1件起」→ 09:06「月曆也 1 件起，數碼 1 件起，批量印刷 300 起」+ L1-1 判定表「按你的建議全權修復」+ 窗內批（食品包裝/小冊子品類 desc 鉤、a6 博客 meta、paper-bags AEO）→ **最終口徑：月曆數碼 1 本起印，批量 300 本起上印刷機（柯式）；折扣階梯數字（500/1000/10000 本、500 張等）保留不動**。
+
+**A. 月曆批（`scripts/apply-calendar-moq1-batch-20260921.mjs`，72 規則 exact/段錨定 + 計數斷言 + 冪等，dry-run 64→68→72 三輪補漏全 PASS）**：
+- 引擎 `products.ts` 6 SKU minQ 1000→1（slug 錨定）。
+- `seo.ts` calendars 品類 title×3 + desc×3（1000→1 + 300 階梯句；03:20/08:50 兩批寫的 100/1000 全部終結）。
+- `sku-seo-data.ts` 6 SKU 三語：zh title×6 / en title×4+1 / ja title×1 / zh body「最低起印量」×6 / zh desc「50 本起」×3 / en desc 模板×6（**SKU 段錨定——`100-MOQ.`/`| 100 MOQ` 全庫 36/64 處被非日曆 SKU 共用，裸 replaceAll 會誤傷 30+ SKU**）/ ja desc×6 / imageAlt×4 / ja body offset 500→300 ×8+3+1 / en body 1,000-unit×6 / en h1「100+」×6→「1+」。
+- `products-content.ts` 月曆 social-proof ×6；`category-conversion-blocks.ts` 月曆塊 metaDescription + FAQ×2 + 對比表×3。
+- blog-data 三語兩篇日曆博客（**段錨定**：zh-hk CG「數碼 50 本起/柯式 500 本起」→1/300、迷你月曆 desc 1000→1；MC「100 本起印」floor→1 折扣階梯保留；en `1000-pc/1,000 pcs`×5→1 + offset threshold 500→300；ja `デジタル1000部/オフセット500部`×9→1/300）+ `blog-posts.ts` excerpt×6 + `page.tsx` category en 硬編碼 1000 MOQ→1 MOQ Bulk 300+。
+- **band 陷阱實錄**：1000→1 後 en 標題當量 50→47/49（FILL），補「Bulk 300+」鉤回 57/52（50-57 帶內）——**改 title 數字後必跑 `scripts/guards/title-equiv.js` band()**。
+- 殘留掃描 `.hermes/_cal-residual-check.mjs` 全 ✅（JSON 三語 parse OK；tsc 54=基線無新增）。
+- 未動（登記）：書刊/畫冊族 50/100 本起印（09:50 條已錄）、zh-hk L505 catalog 博客「100 本起 (數碼印刷)」（books 引擎=10，族級待批）、llms-*.txt（併發會話工作區）、wedding/place-cards minQ=50。
+
+**B. L1-1 窗內判定執行（不碰 42 槽驗證窗 title）**：
+- 小冊子印刷（書刊）：`seo.ts` books zh title 加「急印少量可」鉤；en desc 加「Rush 24-48h」；ja desc「50 部から」→「10 部から」（與 title/引擎統一）+ 特急句。
+- 食品包裝印刷（packaging）：三語 desc 加「小批量 100 個可接，急單優先排產」（100 個起是引擎真值不謊稱低 MOQ）；**packaging minQ=100 是否下調 = K3 商業項**。
+- a6 尺寸（改落點）：zh-hk 博客 + `page.tsx` 三語硬編碼 title 前置「A6 尺寸」/ desc 首句直答「A6 = 105 × 148 mm（A5 一半）」；L1-2 驗收 = 28d 點擊 ≥5（登記）。
+- 邊度有紙袋買（改落點）：paper-bags quickAnswers 加 AEO 條「現貨去包材店/Carousell；訂製搵智印港 100 個起印」。
+
+**下批隊列**：① 窗後（9/30）small-batch-stickers en title ×2 詞 + posters zh-hk title；② 45 槽補描述 + 181 槽截斷重写；③ 書刊/畫冊族 50/100→1 引擎層批（待 K3 一句話）；④ packaging minQ 商業評估。

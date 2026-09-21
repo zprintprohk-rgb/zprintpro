@@ -382,8 +382,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 'a5-vs-a6-flyer-size': {
-      title: 'A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro',
-      description: 'A5（148×210mm）定 A6（105×148mm）傳單點揀？本文整理尺寸對照表（mm/cm/吋）、餐飲外賣・零售・展會派發場景建議、印刷成本差距同摺疊方案，附 4 條 FAQ，協助 50-10,000 張精準落單，3-5 個工作天交付。',
+      title: 'A6 尺寸：A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro',
+      description: 'A6 = 105 × 148 mm（A5 一半、A4 四分一）。A5（148×210mm）定 A6（105×148mm）傳單點揀？本文整理尺寸對照表（mm/cm/吋）、餐飲外賣・零售・展會派發場景建議、印刷成本差距同摺疊方案，附 4 條 FAQ，協助 50-10,000 張精準落單，3-5 個工作天交付。',
       date: '2026-08-06', category: '傳單印刷',
       content: '',
     },
@@ -459,7 +459,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
 'a5-vs-a6-flyer-size': {
       title: 'A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro',
-      description: 'A5 vs A6 flyer size: exact dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
+      description: 'A6 = 105 x 148 mm (exactly half of A5). A5 vs A6 flyer size: dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
       date: '2026-08-06', category: 'Flyer Printing',
       content: '',
     },
@@ -694,7 +694,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
 'a5-vs-a6-flyer-size': {
       title: 'A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro',
-      description: 'A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
+      description: 'A6 = 105 × 148 mm（A5 のちょうど半分）。A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
       date: '2026-08-06', category: 'チラシ印刷',
       content: '',
     },

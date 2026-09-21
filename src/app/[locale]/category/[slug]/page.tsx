@@ -203,7 +203,7 @@ export default function CategoryPage({
     'calendars': {
       // 2026-08-30 K3 12:00 拍板窗 #3 + K3 12:51 暗示 "早执行 早收益": 加 9月最後黃金窗季节军令状 + 燙金精裝 T1 词
       'zh-hk': '香港月曆印刷定製 2027 9月最後黃金窗 — 座檯月曆 / 掛牆月曆 / 企業LOGO / 燙金精裝',
-      'en': 'Custom Calendars 2027 late-September window · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
+      'en': 'Custom Calendars 2027 late-September window · 1 MOQ Bulk 300+ Desk Wall Hardcover Foil · USA Corporate Gifts',
       'ja': 'カレンダー印刷 2027 9月最後黃金窗 — デスク / 壁掛け / 2027年 / 箔押し上製本',
     },
     'greeting-cards': {

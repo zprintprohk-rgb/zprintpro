@@ -451,9 +451,9 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '紙質食品包裝訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。WhatsApp 30 秒即時報價。',
-      en: 'Paper food packaging from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA.',
-      ja: '紙製食品パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり。',
+      'zh-hk': '紙質食品包裝訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
+      en: 'Paper food packaging from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA. Small batch 100 units accepted, rush orders prioritized.',
+      ja: '紙製食品パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。小ロット 100 個から対応、特急注文優先。30 秒 AI 無料見積もり。',
     },
   },
 'posters': {
@@ -498,9 +498,9 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '月曆印刷 2027 | 1000本起印・Q4旺季・60天預訂・燙金精裝・企業LOGO | 智印港',
-      en: 'Calendar Printing 2027 from $5 | 1000 MOQ + Q4 Peak + 60-Day Pre-Order + Foil Hardcover + Made for USA | ZprintPro',
-      ja: 'カレンダー印刷 2027 1000部〜 · Q4繁忙期 + 60日予約 + 箔押し上製本 + 企業 LOGO + 日本全国 | ZprintPro',
+      'zh-hk': '月曆印刷 2027 | 1本起印・批量300本起・Q4旺季・60天預訂・燙金精裝 | 智印港',
+      en: 'Calendar Printing 2027 from $5 | 1 MOQ + Bulk 300+ + Q4 Peak + 60-Day Pre-Order + Foil Hardcover | ZprintPro',
+      ja: 'カレンダー印刷 2027 1部〜・300部からオフセット · Q4繁忙期 + 60日予約 + 箔押し上製本 | ZprintPro',
     },
     keywords: {
       'zh-hk': '月曆印刷,年曆印刷,座檯月曆,掛牆月曆,2027年曆,企業年曆,禮品月曆,定制月曆,燙金月曆,精裝月曆,日曆印刷,教師月曆,辦公文具,Q4旺季,60天預訂',
@@ -508,9 +508,9 @@ const categorySeoData: Record<string, {
       ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー,箔押しカレンダー,上製本カレンダー,学校カレンダー,事務用品,Q4繁忙期,60日予約,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '月曆印刷 2027 1000 本起印、HK$10 起/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單,月曆訂製免費設計打稿。港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送,ISO 9001 認證,WhatsApp 30 秒即時報價。',
-      en: 'Custom calendar printing 2027, 1000 MOQ. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
-      ja: 'カレンダー印刷 2027 1000 部〜。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
+      'zh-hk': '月曆印刷 2027 1 本起印（批量 300 本起上印刷機更抵）、HK$10 起/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單,月曆訂製免費設計打稿。港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送,ISO 9001 認證,WhatsApp 30 秒即時報價。',
+      en: 'Custom calendar printing 2027, 1 MOQ, bulk offset from 300. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
+      ja: 'カレンダー印刷 2027 1 部〜、300 部からオフセット大量対応。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
 'japan-doujin': {
@@ -603,7 +603,7 @@ const categorySeoData: Record<string, {
   },
   'books': {
     titles: {
-      'zh-hk': '騎馬釘小冊子印刷 10本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
+      'zh-hk': '騎馬釘小冊子印刷 10本起・急印少量可 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
       'en': 'Catalog & Booklet Printing from $1.20 | 10 MOQ + Saddle Stitch | ZprintPro',
       'ja': '冊子印刷｜10部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
@@ -614,8 +614,8 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '書刊印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Custom booklet printing from $1.20, 10 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
-      'ja': '冊子印刷 50 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'en': 'Custom booklet printing from $1.20, 10 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. Rush 24-48h for urgent small runs. 30-second AI quote. ISO 9001 + FSC-certified.',
+      'ja': '冊子印刷 10 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
     },
   },
   'educational': {
