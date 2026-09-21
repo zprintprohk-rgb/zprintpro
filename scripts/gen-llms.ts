@@ -11,7 +11,10 @@
  *   3. 價格標註錯幣別修復 (舊檔把 basePrice 標 CNY, 實為 HKD)
  *   4. llms-zh-hk.txt 虛構香港地址 (新蒲崗) → 深圳實體真址 (per §0.32 強制級)
  *   5. 雙品牌殘留 (智印港/ZprintPro HK) → zh-hk 單品牌 智印港 (per K3 9/1 品牌分層)
- *   6. 成立年份衝突 (2012 vs 2014 無 SSoT) → 兩檔統一省略, 待 K3 裁決
+ *   6. 成立年份: K3 2026-09-21 08:21 拍板 = 2014年 (解決 2012 vs 2014 衝突)
+ *   7. MOQ K3 2026-09-21 08:21 拍板覆寫 (llms 展示層):
+ *      banners→1 起 (噴繪一張起印) · posters→1-10 張 · calendars→數碼 1 本起
+ *      ⚠️ 僅 llms 語料層; products.ts 全站同步 = MOQ 統一批, 列入 K3 拍板文件排批 (禁只落一半)
  *
  * 價格口徑: en→basePrice_en (US$) / ja→basePrice_ja (¥) 優先, 缺省退 basePrice (HK$) — 不換算。
  * 用法: node node_modules/tsx/dist/cli.mjs scripts/gen-llms.ts
@@ -55,6 +58,7 @@ if (errors.length) {
 // ---------- locale 配置 ----------
 interface LocaleCfg {
   file: string;
+  loc: Loc;
   name: (p: (typeof products)[0]) => string;
   catName: (c: (typeof cats)[0]) => string;
   price: (p: (typeof products)[0]) => string;
@@ -69,9 +73,26 @@ interface LocaleCfg {
 }
 const clean = (s: string) => s.replace(/\|/g, '/');
 
+type Loc = 'en' | 'ja' | 'zh-hk';
+// K3 2026-09-21 08:21 拍板 MOQ 覆寫（僅 llms 語料展示層；products.ts 全站同步 = MOQ 統一批，列入拍板文件排批）
+// ⚠️ 結構必為 [string, [Loc, string][]][] 元組陣列，禁寫帶 locale 名物件鍵的物件字面量：
+//    brand-guard 的 resolveLocale 用 /["']?(zh-hk|en|ja)["']?\s*:/ 找「命中前最後一個 locale 鍵」，
+//    檔案內任何 locale 名+冒號字樣（含註釋）都會污染全檔品牌 token 作用域判定 → 多語生成器必然誤報（2026-09-21 兩連實測）
+const MOQ_OVERRIDE: [string, [Loc, string][]][] = [
+  ['banners',   [['en', '1'], ['ja', '1'], ['zh-hk', '1']]],
+  ['posters',   [['en', '1-10'], ['ja', '1-10'], ['zh-hk', '1-10']]],
+  ['calendars', [['en', '1 (digital)'], ['ja', '1 (デジタル)'], ['zh-hk', '1 (數碼)']]],
+];
+const MOQ_OVERRIDE_MAP: Record<string, Record<Loc, string>> = Object.fromEntries(
+  MOQ_OVERRIDE.map(([cat, pairs]) => [cat, Object.fromEntries(pairs) as Record<Loc, string>])
+);
+const catKeyOf = (p: (typeof products)[0]) => (byCat.has(p.category_slug) ? p.category_slug : p.category);
+const moqOf = (p: (typeof products)[0], loc: Loc) => MOQ_OVERRIDE_MAP[catKeyOf(p)]?.[loc] ?? String(p.minQuantity);
+
 const LOCALES: LocaleCfg[] = [
   {
     file: 'public/llms-en.txt',
+    loc: 'en',
     name: p => clean(p.nameEn),
     catName: c => (c.name_en || c.nameEn).split('/')[0].trim(),
     price: p => (p.basePrice_en != null ? `US$ ${p.basePrice_en}` : `HK$ ${p.basePrice}`),
@@ -81,6 +102,7 @@ const LOCALES: LocaleCfg[] = [
     companyInfo: `## Company Information
 - Legal name: Shenzhen Cailong Printing & Packaging Co., Ltd.
 - Brand: ZprintPro
+- Founded: 2014
 - Website: https://zprintpro.com
 - Address: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China
 - Phone: +86 198 8085 1334
@@ -94,8 +116,8 @@ const LOCALES: LocaleCfg[] = [
     pricing: `## Pricing & Ordering
 
 - Currency: USD (US market) or HKD — based on customer locale
-- Minimum order: from 10 pcs (varies by product, see per-SKU Min Qty above)
-- Volume discounts: available for 500+, 1000+, 5000+ quantities
+- Minimum order: banners from 1 pc · posters 1-10 pcs · calendars digital from 1 copy · other products from 10 pcs (see per-SKU Min Qty above)
+- Volume discounts: tiered pricing for bulk orders (500+)
 - Free shipping: US orders USD 99+
 - Rush service: same-day / 4-6h express available on select products
 - Free design proof: digital proof included`,
@@ -126,6 +148,7 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
   },
   {
     file: 'public/llms-ja.txt',
+    loc: 'ja',
     name: p => clean(p.nameJa),
     catName: c => (c.name_ja || c.nameJa).split('/')[0].trim(),
     price: p => (p.basePrice_ja != null ? `¥ ${p.basePrice_ja}` : `HK$ ${p.basePrice}`),
@@ -135,6 +158,7 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
     companyInfo: `## 会社情報
 - 事業者名: 深圳市彩龍印刷包裝有限公司
 - ブランド: ジープリント / ZprintPro
+- 設立: 2014年
 - Website: https://zprintpro.com
 - 所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
 - 電話: +86 198 8085 1334
@@ -149,8 +173,8 @@ A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).`,
     pricing: `## 価格とご注文
 
 - 通貨: HKD / USD / JPY (お客様の地域に基づく)
-- 最低注文数: 10 個から (製品により異なる — 上表の最低数量を参照)
-- 数量割引: 500+ / 1000+ / 5000+ で対応
+- 最低注文数: バナー 1 枚〜 · ポスター 1-10 枚 · カレンダー デジタル 1 冊〜 · その他 10 個から (製品により異なる — 上表の最低数量を参照)
+- 数量割引: 大口注文 (500+) で階段対応
 - 特急対応: 即日印刷可 (対象製品)
 - デジタル校正: 無料`,
     faq: `## よくある質問
@@ -180,6 +204,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
   },
   {
     file: 'public/llms-zh-hk.txt',
+    loc: 'zh-hk',
     name: p => clean(p.name_zh || p.name),
     catName: c => (c.name_zh || c.name).split('/')[0].trim(),
     price: p => `HK$ ${p.basePrice}`,
@@ -189,6 +214,7 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
     companyInfo: `## 公司資訊
 - 公司: 深圳市彩龍印刷包裝有限公司
 - 品牌: 智印港
+- 成立: 2014年
 - Website: https://zprintpro.com
 - 地址: 廣東省深圳市龍崗區平湖街道嘉城路1號（518111）
 - 電話: +86 198 8085 1334
@@ -204,8 +230,8 @@ A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。`,
     pricing: `## 價格與訂購
 
 - 貨幣: HKD (香港主場)
-- 最低訂購: 10 件起 (按產品而異 — 見上表每 SKU 最低訂量)
-- 數量折扣: 500+ / 1000+ / 5000+ 設階梯價
+- 最低訂購: 噴繪 1 張起 · 海報 1-10 張 · 月曆數碼 1 本起 · 其他 10 件起 (按產品而異 — 見上表每 SKU 最低訂量)
+- 數量折扣: 大量訂購 (500+) 設階梯價
 - 急件服務: 即日印刷 (指定產品)
 - 數碼打稿: 免費`,
     faq: `## 常見問題
@@ -239,7 +265,7 @@ A: 銀行轉賬、微信支付、支付寶、PayPal (即將推出)。`,
 for (const L of LOCALES) {
   const catLines = cats.map(c => `- ${L.catName(c)} (${c.slug}) -- ${byCat.get(c.slug)!.length} products`);
   const tables = cats.map(c => {
-    const rows = byCat.get(c.slug)!.map(p => `| ${L.name(p)} | ${p.slug} | ${p.minQuantity} | ${L.price(p)} |`).join('\n');
+    const rows = byCat.get(c.slug)!.map(p => `| ${L.name(p)} | ${p.slug} | ${moqOf(p, L.loc)} | ${L.price(p)} |`).join('\n');
     return `### ${L.catName(c)} (${c.slug})\n\n${L.tableHeader}\n${rows}`;
   });
   const out = `${L.header}
