@@ -291,3 +291,12 @@
 | **双条件核验** | ① src/ 无 MM（R2 批已 push 收尾）② 对端 ≥15min 静默（21:0x 后无写入）✓ |
 | **预计时长** | < 30 min |
 | **释放条件** | 四件套 + commit + push + 线上 ProcureAction/eligibleQuantity 断言通过 |
+
+## 释放记录（2026-09-21 21:4x · GEO-G1 会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | GEO-G1 会话正式释放 |
+| **交付** | `bf4cedec`：Product.potentialAction=ProcureAction（target=/{locale}/quote/）+ sourcingIntentKeywords 三语模板（无 FOB，DHL 事实层，K3 21:23 开工确认按推荐）+ Offer.eligibleQuantity（minQuantity 99/99 覆盖，unitCode H87 + category→unitText 映射）+ businessFunction=GR Sell |
+| **验证** | tsc 54=54 存量 0 增量 ✅ · 编码 ✅ · pre-commit 门童全过 ✅ · 双 remote ls-remote 一致 ✅ · **线上断言 3/3 PASS**（a5-flyers zh-hk / waterproof-stickers en / mini-calendars ja：ProcureAction+minValue 真值+unitText 張/pcs/冊+DHL 句+GR Sell 全中，FOB 0 命中）· 探针 `scripts/g1-geo-live-probe-20260921.mjs` |
+| **遗留** | G2 批（Rich Results/validator 6 页验证 + GSIM 观察基线登记）未排期；AEO desc 层普查仍未开工 |
