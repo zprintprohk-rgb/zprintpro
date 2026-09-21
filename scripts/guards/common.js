@@ -84,6 +84,14 @@ const FILE_LOCALE_RE = /(?:^|[\/\\])(?:blog-data[\/\\])?(zh-hk|en|ja)(?:\.json|[
 // 行内三元: locale === 'zh-hk' ? A : B  -> A 属该 locale, B 属「非该 locale」(记为 other)
 const TERNARY_RE = /locale\s*===?\s*['"](zh-hk|en|ja)['"]\s*\?/;
 
+/** 2026-09-21 K3 D4 治本拍板: scripts/ 下的多語生成器/應用器為「locale 作用域掃描」豁免路徑。
+ *  理由: resolveLocale 的「最近左側 locale 鍵」判定對生成器結構（元組陣列/多語模板同檔）必然整檔污染誤報
+ *  （2026-09-21 兩連實測）；生成器產出的客戶可見檔（public/ src/data/）仍被正常掃描，風險不漏。
+ *  僅豁免 locale 作用域類規則（BRAND_LOCALE_MISMATCH / I18N_CURRENCY / I18N_POLLUTION*），其餘規則照掃。 */
+function isGeneratorScript(file) {
+  return /(^|\/)scripts\//.test(file.replace(/\\/g, '/'));
+}
+
 /** 求某命中位置所属 locale。
  *  优先级: 文件名 (blog-data/<loc>.json) > 行内 locale 三元 > 最近左侧 locale 键 > null (判不出)
  *  返回值: 'zh-hk' | 'en' | 'ja' | 'other' (明确「非某 locale」) | null
@@ -411,6 +419,7 @@ module.exports = {
   scanRule,
   isCommentLine,
   resolveLocale,
+  isGeneratorScript,
   isInTitleField,
   isLegitMixToken,
   QUOTE_RULES,

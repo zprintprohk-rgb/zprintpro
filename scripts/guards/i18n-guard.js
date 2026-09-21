@@ -239,6 +239,8 @@ function checkTitleLength(content, file) {
 //  - I18N_POLLUTION*: 见 scanBidirectional (2026-09-19 双向化)
 function scanLocaleScoped(content, file, rule, onlyLocales) {
   const hits = [];
+  // 2026-09-21 K3 D4 治本: scripts/ 生成器豁免 locale 作用域類規則 (同 brand-guard BRAND_LOCALE_MISMATCH 理由)
+  if (common.isGeneratorScript(file)) return hits;
   const re = new RegExp(rule.pattern.source, rule.pattern.flags.includes('g') ? rule.pattern.flags : rule.pattern.flags + 'g');
   let m, count = 0;
   // ★ 2026-09-19 K3 Step 3.5: 原在 count>=MAX 處 break ⇒ 超出部分從未被計數, 顯示值為飽和偽值。

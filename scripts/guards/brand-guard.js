@@ -121,8 +121,9 @@ async function scan(files) {
 
     for (const rule of RULES) {
       // BRAND_LOCALE_MISMATCH 走 locale 作用域自定义检查 (逐字面扫描在多语言文件上必然误报)
+      // 2026-09-21 K3 D4 治本: scripts/ 生成器豁免本規則 (元組結構必誤報; 產出檔照常掃描)
       if (rule.id === 'BRAND_LOCALE_MISMATCH') {
-        allHits.push(...scanLocaleMismatch(scanContent, file, rule));
+        if (!common.isGeneratorScript(file)) allHits.push(...scanLocaleMismatch(scanContent, file, rule));
         continue;
       }
       const hits = common.scanRule(scanContent, file, rule);
