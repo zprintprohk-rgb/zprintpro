@@ -30,7 +30,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港",
+        "title": "防水貼紙 可移貼紙 戶外抗UV 10個起 HK$0.22起 | 智印港",
         "description": "防水貼紙印刷 10 張起印、HK$0.22 起/張，3-5 個工作天交貨，港九新界滿 HK$500 免費速遞。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "防水貼紙 | PVC/PP合成紙 異形切割",
         "keywords": ["防水貼紙","防水 貼紙 印刷","防水 pvc 貼紙","貼紙印刷","不干膠印刷","透明貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
@@ -66,14 +66,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "透明貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.38起 | 智印港",
+        "title": "透明貼紙 PVC貼紙 防水 異形切割 10個起 HK$0.38起 | 智印港",
         "description": "透明貼紙/透明貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "透明貼紙",
         "keywords": ["透明貼紙","透明貼","貼紙印刷","不干膠印刷","防水貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
         "body": "透明貼紙 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\n\n透明貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼紙及設備貼紙、零售品牌精品包裝貼紙 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，透明貼紙 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 PVC 防水貼紙（3.4 mil，防 UV 油墨）（標準用途，性價比高）、BOPP 透明防水貼紙（2.6 mil，高透明）（中檔質感，主流選擇）、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 防水貼紙戶外可維持多久？**\nPVC 防水貼紙配合啞光表面處理，戶外可使用 3-5 年；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費、無製版費。小批量系列可低至 50 張。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物樣本，我們提供付費樣本套裝（HK$199）包含不同材質及表面處理的樣本，DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。HK$500 以下順豐到付。順豐速遞同價。加急即日交收（順豐速遞上門）額外 HK$50 起。澳門 / 台灣 / 海外送遞另議。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Transparent Stickers | Free US Ship | ZprintPro",
+        "title": "Transparent Stickers | Die-Cut PVC | 10 MOQ | ZprintPro",
         "description": "Transparent Stickers custom printing, clear PET material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for product labels. | ZprintPro",
         "h1": "Transparent Stickers 100+ | ZprintPro",
         "keywords": ["transparent stickers","custom transparent stickers","transparent stickers printing online","transparent stickers free shipping","transparent stickers USD","bulk transparent stickers","transparent stickers DHL","bespoke transparent stickers","transparent stickers wholesale","transparent stickers pricing","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -102,7 +102,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "可移貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.45起 | 智印港",
+        "title": "可移貼紙 戶外貼紙 無殘膠 10個起 HK$0.45起 | 智印港",
         "description": "可移貼紙/不殘膠貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。智印港提供專業可移貼紙(無殘膠)服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["可移貼紙","不殘膠貼紙","貼紙印刷","不干膠印刷","防水貼紙","透明貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
@@ -145,7 +145,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "小批量貼紙 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\n\n小批量貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼紙及設備貼紙、零售品牌精品包裝貼紙 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，小批量貼紙 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 PVC 防水貼紙（3.4 mil，防 UV 油墨）（標準用途，性價比高）、BOPP 透明防水貼紙（2.6 mil，高透明）（中檔質感，主流選擇）、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 防水貼紙戶外可維持多久？**\nPVC 防水貼紙配合啞光表面處理，戶外可使用 3-5 年；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物樣本，我們提供付費樣本套裝（HK$199）包含不同材質及表面處理的樣本，DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。HK$500 以下順豐到付。順豐速遞同價。加急即日交收（順豐速遞上門）額外 HK$50 起。澳門 / 台灣 / 海外送遞另議。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
+        "title": "Small Batch Custom Stickers 50pcs from $0.045 | ZprintPro",
         "description": "Custom small batch stickers from 10 pcs at $0.045/pc. No setup fees, free 1-hour digital proof, 4-day USA delivery. Waterproof PVC / BOPP / coated paper, die-cut any shape, foil + UV finish. Free US shipping $99+. 30s AI quote, WhatsApp 2h reply.",
         "h1": "Small Batch Stickers 10+ | No Setup | ZprintPro",
         "keywords": ["small batch stickers","custom stickers small quantity","50 stickers minimum","startup stickers","indie brand stickers","creator stickers","holographic stickers","foil stickers small","stickers free shipping","bulk custom stickers","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","transparent stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -174,14 +174,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "異形模切貼紙 透明・模切・10起印・HK$0.58起 | 智印港",
+        "title": "異形模切貼紙 貼紙訂製 防水圓角 10起印 HK$0.58起 | 智印港",
         "description": "異形模切貼紙 10 張起印、HK$0.58 起/張，3-5 個工作天交貨，任意形狀切割、免刀模費。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。智印港提供專業異形模切貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["異形模切貼紙","貼紙印刷","貼紙訂製","異形貼紙","不干膠印刷","防水貼紙","透明貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
         "body": "異形模切貼紙 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\n\n異形模切貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼紙及設備貼紙、零售品牌精品包裝貼紙 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，異形模切貼紙 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 PVC 防水貼紙（3.4 mil，防 UV 油墨）（標準用途，性價比高）、BOPP 透明防水貼紙（2.6 mil，高透明）（中檔質感，主流選擇）、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 防水貼紙戶外可維持多久？**\nPVC 防水貼紙配合啞光表面處理，戶外可使用 3-5 年；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費、無製版費。小批量系列可低至 50 張。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物樣本，我們提供付費樣本套裝（HK$199）包含不同材質及表面處理的樣本，DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。HK$500 以下順豐到付。順豐速遞同價。加急即日交收（順豐速遞上門）額外 HK$50 起。澳門 / 台灣 / 海外送遞另議。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Die-Cut Stickers | Free Shipping $99+ | ZprintPro",
+        "title": "Die-Cut Stickers | Custom Shapes | 10 MOQ | ZprintPro",
         "description": "Die-Cut Stickers custom printing, any shape cutting. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery for creative brands. | ZprintPro",
         "h1": "Die-Cut Stickers 100+ | Custom Shape | ZprintPro",
         "keywords": ["die cut stickers","custom shape stickers","die cut vinyl stickers","kiss cut stickers","logo stickers custom","holographic die cut","foil die cut stickers","stickers free shipping","bulk die cut stickers","bespoke sticker shapes","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","transparent stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -246,14 +246,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "防偽貼紙 | 防水 PVC 異形切割 | 10個起 HK$1.15起 | 智印港",
+        "title": "防偽貼紙 標籤貼紙 防水圓角 10個起 HK$1.15起 | 智印港",
         "description": "防偽貼紙/防偽貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。智印港提供專業防偽貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["防偽貼紙","貼紙印刷","不干膠印刷","防水貼紙","透明貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
         "body": "防偽貼紙 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\n\n防偽貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼紙及設備貼紙、零售品牌精品包裝貼紙 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，防偽貼紙 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 PVC 防水貼紙（3.4 mil，防 UV 油墨）（標準用途，性價比高）、BOPP 透明防水貼紙（2.6 mil，高透明）（中檔質感，主流選擇）、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 防水貼紙戶外可維持多久？**\nPVC 防水貼紙配合啞光表面處理，戶外可使用 3-5 年；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費、無製版費。小批量系列可低至 50 張。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物樣本，我們提供付費樣本套裝（HK$199）包含不同材質及表面處理的樣本，DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。HK$500 以下順豐到付。順豐速遞同價。加急即日交收（順豐速遞上門）額外 HK$50 起。澳門 / 台灣 / 海外送遞另議。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Security Stickers | Free Shipping $99+ | ZprintPro",
+        "title": "Security Stickers | Tamper-Proof | 10 MOQ | ZprintPro",
         "description": "Security Stickers, VOID tamper-evident material. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for asset tracking. | ZprintPro",
         "h1": "Security Stickers | Anti-Counterfeit | ZprintPro",
         "keywords": ["security stickers","tamper evident stickers","void release labels","anti counterfeit stickers","security seals","QR code security","pharma security labels","electronics warranty seals","stickers free shipping","bulk security stickers","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","transparent stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -282,14 +282,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "螢光貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.52起 | 智印港",
+        "title": "螢光貼紙 貼紙印刷 防水圓角 10個起 HK$0.52起 | 智印港",
         "description": "螢光貼紙/螢光貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。智印港提供專業螢光貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["螢光貼紙","貼紙印刷","不干膠印刷","防水貼紙","透明貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠","卷筒標籤","1000張貼紙","100張貼紙","A4貼紙","Etsy貼紙","FDA貼紙","QR Code 貼紙","expiry date 貼紙","不殘膠","不留膠","可掃描貼紙","可移除貼紙","圓形貼紙","婚禮貼紙","學生貼紙","客製貼紙","成分標示","成分標示貼紙","標籤貼紙印刷","活動互動","物流追蹤","玻璃貼紙","生日貼紙","經濟貼紙","迎賓牌貼紙","透明貼紙印刷","防水標籤","食品級貼紙","高透貼紙"],
         "body": "螢光貼紙 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，15+ 年印刷經驗。\n\n螢光貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼紙及設備貼紙、零售品牌精品包裝貼紙 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，螢光貼紙 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 PVC 防水貼紙（3.4 mil，防 UV 油墨）（標準用途，性價比高）、BOPP 透明防水貼紙（2.6 mil，高透明）（中檔質感，主流選擇）、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 防水貼紙戶外可維持多久？**\nPVC 防水貼紙配合啞光表面處理，戶外可使用 3-5 年；室內則可達 5-7 年。BOPP 透明防水貼紙同樣耐用，特別適合玻璃及瓶身標籤。所有防水材質均使用防 UV 油墨，避免日曬褪色。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費、無製版費。小批量系列可低至 50 張。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物樣本，我們提供付費樣本套裝（HK$199）包含不同材質及表面處理的樣本，DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。HK$500 以下順豐到付。順豐速遞同價。加急即日交收（順豐速遞上門）額外 HK$50 起。澳門 / 台灣 / 海外送遞另議。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Fluorescent Stickers | Free US Ship | ZprintPro",
+        "title": "Fluorescent Stickers | Custom Print | 10 MOQ | ZprintPro",
         "description": "Fluorescent Stickers custom printing, UV-reactive neon colors. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for events. | ZprintPro",
         "h1": "Fluorescent Stickers 100+ | Neon UV | ZprintPro",
         "keywords": ["fluorescent stickers","neon stickers","UV glow stickers","blacklight stickers","fluorescent pink stickers","safety stickers neon","event stickers neon","club stickers UV","stickers free shipping","bulk fluorescent stickers","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","transparent stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -325,7 +325,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "牛皮紙袋 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，FSC 認證紙張，100% 可回收，加強扭紙繩或棉繩手挽，15+ 年印刷經驗。\n\n牛皮紙袋 廣泛應用於 零售購物袋及精品店包裝、禮品袋及活動贈品、餐廳外賣及食品外送袋 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，牛皮紙袋 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 150 克牛皮紙（環保標準）（標準用途，性價比高）、210 克白卡紙（高級零售）（中檔質感，主流選擇）、170 克銅版紙配啞光膠（精品禮品）（特殊需求或精品用途）。三種材質均通過 FSC 認證紙張，100% 可回收 及 加強扭紙繩或棉繩手挽 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 紙袋有哪些尺寸及手挽款式可選？**\n標準尺寸：細碼（8\"x10\"）、中碼（12\"x14\"）、大碼（16\"x18\"）、自訂（最大 24\"x24\"）。手挽款式：扭紙繩（環保）、棉繩（高級感）、絲帶（精品）、平面織帶（重型載重耐用）。\n\n**Q2: 最低起印量是多少？**\n100 個起印。標準生產 5-7 個工作天，港九新界順豐速遞 1-2 個工作天送達。500 / 1,000 / 5,000 數量設有階梯式折扣。\n\n**Q3: 落單前可以先看 3D 模擬圖嗎？**\n可以 — 提交檔案後 4 小時內提供免費 3D 渲染圖。如需實物樣本，我們提供 HK$199 付費樣本套裝，含不同材質及手挽的樣本，DHL 速遞送達。\n\n**Q4: 紙袋適合食品接觸嗎？**\n我們的牛皮紙袋使用食品級油墨，適用於間接食品接觸（麵包、外賣、乾零食）。如需盛載熱食、油脂、液體，我們提供 PE 或 PLA 生物內襯，加收 15-20%。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Kraft Paper Bags | Free Shipping $99+ | ZprintPro",
+        "title": "Kraft Paper Bags | Eco-Friendly | 100 MOQ | ZprintPro",
         "description": "Custom kraft paper bags for retail and gift shops. 120-300g kraft with cotton rope handles. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Kraft Paper Bags 100+ | Eco-Friendly | ZprintPro",
         "keywords": ["kraft paper bags","custom kraft paper bags","kraft paper bags printing","eco friendly kraft bags","kraft bags with handles","brown paper bags wholesale","kraft paper bags free shipping","bulk kraft bags","kraft bags USD","bespoke paper bags","paper bag printing","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
@@ -570,7 +570,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起 | 智印港",
+        "title": "A4 傳單印刷 宣傳單張 圓角覆膜 10起印 HK$0.35起 | 智印港",
         "description": "A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。10 張起印, 順豐本地速遞, 立即 WhatsApp 報價。智印港 15+ 年自有品牌。",
         "h1": "A4傳單印刷",
         "keywords": ["A4 傳單印刷","傳單印刷","傳單印刷印刷","印刷公司","單張印刷","彩頁印刷","折頁印刷","A4單張","A5單張","DM單","三折頁","宣傳單設計","彩色單張","24小時快印","2小時快印","CSV快印","HK$0.5起","HK$199起","HK$1起","一對一名單","上門快印","上門收件","企業快印","個性化印刷","傳單印刷","免費排版","功課印刷","即日出貨","即日取件","即日快印","即日設計","可變數據印刷","學生快印","專屬客服","快印","快印多少錢","批量合併列印","批量文件","文件快印","旺角快印","易拉架快印","月結印刷","標籤快印","活動印刷","活動名卡","燙金證書","物流標籤快印","獎狀印刷","畢業證打印","當日出貨","發票印刷","裝訂服務","論文打印","證書快印","跨境包裝","邀請卡印刷","銅鑼灣快印","防偽紙","電商快印","香港快印"],
@@ -613,7 +613,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A5傳單印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。10 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。ISO 9001 認證工廠，全彩 CMYK + 第五色（白墨）可選，FSC 認證紙張，可持續來源，15+ 年印刷經驗。\n\nA5傳單印刷 廣泛應用於 餐廳餐牌及外賣推廣、活動單張及演唱會派發、零售新品發佈及開業宣傳 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，A5傳單印刷 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 128 克光面銅版紙（標準單張紙）（標準用途，性價比高）、157 克啞粉紙（中檔質感，主流選擇）（中檔質感，主流選擇）、300 克卡紙（高級餐牌 / 厚身單張）（特殊需求或精品用途）。三種材質均通過 全彩 CMYK + 第五色（白墨）可選 及 FSC 認證紙張，可持續來源 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 傳單印刷應該選什麼紙重？**\n128 克是標準單張紙重量，適合大多數推廣用途。157 克啞粉紙是最受歡迎的中檔選擇，質感高級但成本合理。300 克卡紙適合餐牌或精品品牌宣傳。我們亦可為 200 克以上紙張加防水光膠。\n\n**Q2: 最低起印量是多少？**\n10 張起印，無開版費。500 / 1,000 / 5,000 / 10,000 數量設有階梯式折扣。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看打稿嗎？**\n可以 — 提交檔案後 1 小時內提供免費數碼打稿，最多可免費修改 2 次。如需實物打稿，我們提供 HK$199 付費實物打稿 DHL 速遞送達。\n\n**Q4: 香港本地交收需時幾耐？**\n港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。每日 18:00 前落單可加急即日同區交收（順豐速遞上門），額外 HK$80 起。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "A5 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+        "title": "A5 Flyers | Full Color | 10 MOQ | Free Ship | ZprintPro",
         "description": "A5 flyer printing from $0.40/pc, 10 MOQ, same-day rush available, 4-color CMYK both sides. Free US shipping over $99. Free 1-hour digital proof.",
         "h1": "A5 Flyers 100+ | Same-Day Printing | ZprintPro",
         "keywords": ["a5 flyers","custom a5 flyers","a5 flyers printing online","a5 flyers free shipping","a5 flyers USD","bulk a5 flyers","a5 flyers DHL","bespoke a5 flyers","a5 flyers wholesale","a5 flyers pricing","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from $0.06","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
@@ -642,7 +642,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "雙面傳單印刷 | 單張印刷 | 10張起印 HK$0.40起 | 智印港",
+        "title": "雙面傳單印刷 摺頁傳單 四色 10張起印 HK$0.40起 | 智印港",
         "description": "雙面傳單印刷 10 張起印、HK$0.40 起/張。157g-300g 銅版紙，A4/A5/A6/DL 尺寸，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，即日-2 天交貨，滿 HK$500 免費順豐，30 秒 AI 報價。",
         "h1": "雙面傳單印刷",
         "keywords": ["雙面傳單印刷","傳單印刷","傳單印刷印刷","單張印刷","彩頁印刷","折頁印刷","A4單張","A5單張","DM單","三折頁","宣傳單設計","彩色單張","24小時快印","2小時快印","CSV快印","HK$0.5起","HK$199起","HK$1起","一對一名單","上門快印","上門收件","企業快印","個性化印刷","傳單印刷","免費排版","功課印刷","即日出貨","即日取件","即日快印","即日設計","可變數據印刷","學生快印","專屬客服","快印","快印多少錢","批量合併列印","批量文件","文件快印","旺角快印","易拉架快印","月結印刷","標籤快印","活動印刷","活動名卡","燙金證書","物流標籤快印","獎狀印刷","畢業證打印","當日出貨","發票印刷","裝訂服務","論文打印","證書快印","跨境包裝","邀請卡印刷","銅鑼灣快印","防偽紙","電商快印","香港快印"],
@@ -678,7 +678,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "摺頁單張 | A4/A5 雙面四色 | 10張起 HK$0.7起 | 智印港",
+        "title": "摺頁單張 摺頁印刷 雙面四色 10張起 HK$0.7起 | 智印港",
         "description": "摺疊傳單印刷訂製（雙摺/三摺），10 張起印，HK$0.70 起/張。157g-250g 銅版紙，免費摺頁設計排版。適合企業簡介、產品目錄、活動宣傳，3-5 天交貨，全港送貨。30 秒 AI 報價。",
         "h1": "摺疊傳單印刷 | 雙摺三摺 免費排版",
         "keywords": ["摺頁單張","傳單印刷","摺頁","傳單印刷印刷","單張印刷","彩頁印刷","折頁印刷","A4單張","A5單張","DM單","三折頁","宣傳單設計","彩色單張","24小時快印","2小時快印","CSV快印","HK$0.5起","HK$199起","HK$1起","一對一名單","上門快印","上門收件","企業快印","個性化印刷","傳單印刷","免費排版","功課印刷","即日出貨","即日取件","即日快印","即日設計","可變數據印刷","學生快印","專屬客服","快印","快印多少錢","批量合併列印","批量文件","文件快印","旺角快印","易拉架快印","月結印刷","標籤快印","活動印刷","活動名卡","燙金證書","物流標籤快印","獎狀印刷","畢業證打印","當日出貨","發票印刷","裝訂服務","論文打印","證書快印","跨境包裝","邀請卡印刷","銅鑼灣快印","防偽紙","電商快印","香港快印"],
@@ -750,7 +750,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜 | 智印港",
+        "title": "即日印刷 傳單 即日急件 覆膜 10張起 HK$1.30起 | 智印港",
         "description": "即日傳單印刷 10 張起、HK$1.30 起/張，每日 18:00 前落單即日交貨。157-300g 銅版紙全尺寸 A4/A5/A6/DL，雙面四色。免費 1 小時打稿，滿 HK$500 免費順豐。30 秒 AI 報價。",
         "h1": "即日傳單印刷",
         "keywords": ["即日單張","即日印刷","傳單印刷","即日速遞","傳單印刷印刷","單張印刷","彩頁印刷","折頁印刷","A4單張","A5單張","DM單","三折頁","宣傳單設計","彩色單張","24小時快印","2小時快印","CSV快印","HK$0.5起","HK$199起","HK$1起","一對一名單","上門快印","上門收件","企業快印","個性化印刷","傳單印刷","免費排版","功課印刷","即日出貨","即日取件","即日快印","即日設計","可變數據印刷","學生快印","專屬客服","快印","快印多少錢","批量合併列印","批量文件","文件快印","旺角快印","易拉架快印","月結印刷","標籤快印","活動印刷","活動名卡","燙金證書","物流標籤快印","獎狀印刷","畢業證打印","當日出貨","發票印刷","裝訂服務","論文打印","證書快印","跨境包裝","邀請卡印刷","銅鑼灣快印","防偽紙","電商快印","香港快印"],
@@ -1290,7 +1290,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "定制利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+        "title": "訂製利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
         "description": "定制利是封印刷 100 個起印、HK$1.9 起/個。157g 紅金紙/銅版紙，標準/訂製規格，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，5-7 天交貨，滿 HK$500 免費順豐，30 秒 AI 報價。",
         "h1": "定制利是封印刷 | 企業 Logo 專屬訂製",
         "keywords": ["custom red packets","利是封","利是封印刷","訂製利是封","春聯","中秋賀卡","聖誕卡","婚禮請柬","嬰兒滿月卡","感謝卡","燙金紅包","卡通紅包","新年賀卡","100個起","24小時出貨","2小時取件","300g紙","30個起","50個起","80個起","AI檔 印刷","HK$0.4起","HK$0.5起","HK$0.6起","PSD轉印刷","UV喜帖","免設計費 利是封","免費打樣","免費設計","全套婚禮印刷","公司利是封印刷","利是封印刷 自備設計","利是封多少錢","利是封定製","利是封製作","即日出稿","即日出貨","喜帖 實體打樣","喜帖印刷","喜帖設計印刷","囍帖印刷","婚禮印刷 套餐","婚禮囍帖設計","婚禮套組 多少錢","婚禮座位卡","學校利是封活動","學生利是封","小批量利是封印刷","感謝卡印刷","手工利是封","燙金利是封","燙金囍帖","特種紙 囍帖","班級利是封","環保利是封","環保紙 利是封","當日印刷","節日紅包袋","節日賀卡印刷","紅包袋印刷","絲帶孔信封","聖誕賀卡印刷","農曆新年利是封","迎賓牌 印刷","高端喜帖印刷"],
@@ -1304,7 +1304,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "ZprintPro custom red packets turn a simple envelope into a branded touchpoint. Your logo, brand colors, and exclusive artwork print on every piece, so clients and employees feel the brand the moment they receive a gift. Production is ISO 9001 certified with FSC-conscious materials, and files are confirmed for print the same day.\n\nCompanies hand out branded red packets to clients and staff during Spring Festival, and financial and real-estate teams use them as relationship gifts that carry the firm's identity home. Hotels add them to welcome gifts during the New Year season, while retailers tuck them into loyalty kits and premium orders. Because every element is customizable — logo, brand palette, exclusive patterns — the packet doubles as a compact piece of brand packaging.\n\nFor e-commerce and direct-to-consumer brands, a custom red packet inside a New Year parcel strengthens brand impression at the moment of unboxing. Wholesale buyers order them for resale or for corporate programs, and event planners print them in matching designs for company annual dinners and client appreciation events, where a consistent look across the table matters.\n\nPrinted on 120g–150g red or special-color paper with four-color print plus foil or UV, custom red packets can add debossing and shaped die-cut finishing to match the brand style. The size is fully customizable to your brief, and the free die template covers shaped or standard rectangle formats. Foil positioning holds ±0.3mm precision so fine lines stay crisp.\n\nPricing runs HK$1.90–6.40 per piece with a minimum order of 100 pieces; digital handles small batches and offset takes over for large volumes. Order early, since the three weeks before Lunar New Year are the peak season. DHL Express or FedEx delivers in 3–5 days to the USA and 2–4 days to Japan, with free US shipping over $100 and worldwide delivery to more than 50 countries.\n\n**FAQ**\n\n**Q1: Can I print my company logo?**\nYes — your logo, brand colors, and greetings can all be printed, with foil, UV, debossing, or shaped die-cut to match your brand style.\n\n**Q2: Is the size fully customizable?**\nYes — custom red packets are made fully to your specification rather than a fixed format.\n\n**Q3: Do you provide a proof before printing?**\nEvery order includes a free digital proof, and files are confirmed for print the same day.\n\nGive your clients a gift they will remember — start with the 30-second AI quote, or WhatsApp +86 198 8085 1334 to request a free digital proof within 1 hour."
       },
       "ja": {
-        "title": "オリジナル年賀状印刷 | 箔押し UV エンボス | ZprintPro",
+        "title": "オリジナルポチ袋印刷 | 箔押し UV エンボス | ZprintPro",
         "description": "custom red packetsのcustom red packetsは ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Exclusive design with company logo and greetings. Strengthens brand impression. ZprintPro offers professional Custom Red Packets services worldwide. High quality",
         "keywords": ["custom red packets","custom red packets 印刷","紅包印刷","旧正月","結婚式招待状","クリスマスカード","年賀状","箔押し紅包","オリジナル紅包","キャラクター紅包","中華風招待状","挨拶状","100個〜","24時間出荷","2時間受取","50個〜","HK$0.5〜","UV 招待状","無料校正","無料デザイン","当日出荷","招待状デザイン印刷","ウェディング招待状デザイン","サンキューカード印刷","箔押し招待状","当日印刷","リボン穴封筒"],
@@ -1621,7 +1621,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "磁石年曆背面貼合軟磁片，可直接吸附於雪櫃、鐵櫃、白板等金屬表面，位置當眼、每日多次接觸，品牌曝光率遠高於一般年曆。紙材選用 200g 至 250g 銅版紙或合成紙，配 0.5mm 或 1mm 軟磁片與四色數碼印刷，圓角裁切不刮手，A5 或 A4 尺寸貼在廚房或辦公室隨手可及，日日查日期日日見品牌。\n\n雪櫃是家庭使用率最高的地方，磁石年曆因此成為 9 月月曆訂製季節中特別受歡迎的禮品選擇，地產代理、裝修公司、寵物店等行業尤其愛用，派給客戶貼在雪櫃門上，整年都不會被丟掉；企業亦可印上服務熱線或二維碼，把雪櫃變成自家廣告牌，小投資換來全年持續的提醒，是最慳位的常駐廣告。\n\n標準訂單 7–10 個工作天完成，港九新界免費速遞送達。\n\n每本 HK$3-8 起，最低起印量 1 本，量大可享更優惠單價，歡迎查詢批量報價。"
       },
       "en": {
-        "title": "Magnetic Calendars | Free Shipping $99+ | ZprintPro",
+        "title": "Magnetic Calendars | Custom | 1 MOQ $0.40 | ZprintPro",
         "description": "Custom magnetic calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 1 MOQ",
         "h1": "Magnetic Calendars 1+ | ZprintPro",
         "keywords": ["magnetic calendars","custom magnetic calendars","magnetic calendars printing online","magnetic calendars free shipping","magnetic calendars USD","bulk magnetic calendars","magnetic calendars DHL","bespoke magnetic calendars","magnetic calendars wholesale","magnetic calendars pricing","calendar printing","wall calendars","desk calendars","2027 calendars","custom calendars","corporate calendars","mini calendars","photo calendars","eco calendars","flip calendars","2026 desktop calendar","A5 daily calendar","corporate wall calendar custom","desktop calendar printing","eco wall calendar","festive calendar"],
@@ -1657,7 +1657,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "PVC 餐牌以 0.5mm 至 1.0mm 透明或白色 PVC 膠片印製，成塊膠片本身就防水防油，四色 UV 印刷令色彩鮮明唔易褪色，圓角或直角裁切方便處理。膠片表面直接用濕布一抹就乾淨，湯汁、油漬、火鍋醬料都唔怕，係餐廳、咖啡店、茶餐廳同火鍋店高翻枱率場景嘅首選，長期使用都保持嶄新。\n\n對酒吧、居酒屋呢類飲品種類多嘅店，PVC 菜單印刷可以隨時改版重印新酒單；火鍋店成日有醬料飛濺，膠片餐牌抹兩下就清潔乾淨，減少員工清潔時間。透明膠片仲可以做特別視覺效果，白色膠片適合相片較多嘅菜單，兩種都支援圓角處理，避免角位傷手，亦更耐用，係香港餐牌印刷中耐用度最高嘅一款。\n\n交稿規範：下單後 5-7 個工作天交貨，港九新界免費速遞。設計檔以 A4（210×297mm）或 A5（148×210mm）原大製作，UV 印刷建議色彩模式用 CMYK，預留出血並將字體外框化，透明底設計要留意留白位置，白色膠片相片位就按普通菜單排版處理。\n\n收費方面，PVC 餐牌每張 HK$8-32，起訂量為 10 張，價錢視乎膠片厚度、尺寸同數量而定，批量訂購更划算，歡迎 WhatsApp 查詢報價。"
       },
       "en": {
-        "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
+        "title": "PVC Menus | Laminated Durable | 10 MOQ | ZprintPro",
         "description": "PVC menus from $2.76/pc, 10 MOQ, laminated waterproof for restaurants and bars. 5-7 business days plus free US shipping over $99. Free 1-hour digital proof.",
         "h1": "PVC Menus 10+ | Laminated Durable | ZprintPro",
         "keywords": ["pvc menus","custom pvc menus","pvc menus printing online","pvc menus free shipping","pvc menus USD","bulk pvc menus","pvc menus DHL","bespoke pvc menus","pvc menus wholesale","pvc menus pricing","menu printing","restaurant menus","waterproof menus","PVC menus","custom menus","takeout menus","drink menus","laminated menus","disposable menus","catering menus"],
@@ -1952,7 +1952,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A well-made catalog does more than list products — it carries your brand story from the shelf to the client handshake. ZprintPro prints catalogs, photo books and exhibition lookbooks for retailers, e-commerce brands, agencies and small businesses across the US and global markets, with 95%+ color accuracy on every sheet. Whether you need an art exhibition lookbook, a brand portfolio, a photography book, an annual report or a keepsake album, a 30-second AI quote and a free design mockup get you started before you commit a single dollar.\n\nFor retail and wholesale buyers, china catalog printing at a reliable Asia factory keeps unit costs low while color stays consistent from one reorder to the next. E-commerce brands refresh seasonal lookbooks through the same workflow, and agencies keep a saddle stitch booklet format handy for quick client proofs at trade shows. Because Q4 is our peak season, customers who confirm artwork early avoid the holiday rush.\n\nEvent teams and corporate gifting programs rely on catalogs that feel substantial — a laminated cover, a clean table of contents, and chapter markers that let buyers jump straight to the right category. Our free layout support adds page numbers, tables of contents and chapter labels to your PDF or AI files, so even a rough draft can become press-ready.\n\nInside pages print on 157–200g coated art paper for stiffness and crisp reproduction, with a 200–250g coated cover; standard sizes are A4 (210×297mm) or A5 (148×210mm). Four-color offset delivers saturated color suited to photos and illustrations, finished with matte or glossy lamination, optional foil stamping, and saddle stitch or perfect binding depending on your page count.\n\nA 100-copy minimum keeps your first order manageable, and pricing starts at HK$2.8 per book — digital for small batches, offset for volume. After you approve a free digital proof within 4 hours, DHL Express delivers in 2-4 days to the US and worldwide, with free shipping on US orders over $99.\n\n**FAQ**\n\n**Q1: Do you offer free layout help?**\n\nYes — free layout support covers tables of contents, page numbers and chapter markers on your PDF or AI artwork.\n\n**Q2: What if I need to see a proof before the run?**\n\nYou receive a free digital proof within 4 hours, and nothing goes to press until you approve it.\n\n**Q3: Can small orders really be printed?**\n\nSmall batches print digitally with the same color quality, then scale to offset as your volume grows.\n\nReady to turn your artwork into a catalog customers keep? Get a free digital proof within 1 hour — message +86 198 8085 1334 on WhatsApp or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
-        "title": "カタログ印刷｜箔押し ラミネート｜10枚〜¥644〜｜ZprintPro",
+        "title": "カタログ印刷 箔押し ラミネート 10冊〜 ¥644〜 | ZprintPro",
         "description": "カタログ印刷 10冊〜 ¥644〜、3-5営業日、DHL で日本へ 2-4 日配送。157g コート紙、標準/カスタム対応、4色 CMYK 高発色印刷。10枚〜、3-5営業日、DHL で日本へ 2-4 日配送。無料デザイン校正 1 時間、30 秒 AI 見積もり。",
         "h1": "カタログ印刷 | 157gコート紙 高発色",
         "keywords": ["カタログ印刷","カタログ印刷 印刷","catalog printing"],
@@ -2024,7 +2024,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A perfect-bound book is the workhorse of serious publishing: thick enough for long documents, flat enough to stand on a shelf, and strong enough for heavy use. ZprintPro prints perfect-bound books for academic papers, annual reports, CSR reports and literary collections, with a sturdy spine that can carry the title, barcode or ISBN for archival-quality library runs.\n\nFinance and communications teams order annual reports on the same cycle every year, and the 48–400 page range covers everything from a slim results brochure to a full sustainability document. Publishing houses and self-publishers use the same line for literary collections that need a clean professional spine rather than staples. When the project is thinner, a saddle stitch booklet may fit better — our team can advise on the right binding for your page count and budget.\n\nFor teams that also produce product ranges, china catalog printing follows the same color discipline, so a brand's annual report, CSR report and catalog stay visually consistent across the year. Free layout support adds page numbers, chapter markers and tables of contents, and because Q4 is our peak season, early file confirmation protects your delivery window.\n\nInner pages are 157–200g coated art paper for stiffness and crisp reproduction, with a 200–250g coated cover; sizes are A4 (210×297mm) or A5 (148×210mm). Four-color offset gives saturated color for photos and illustration, and the perfect-bound spine lies flat and sturdy for volumes over 48 pages, finished with matte or glossy cover lamination.\n\nVolume-friendly pricing starts at HK$16 per book with a 100-copy minimum. Approve the free digital proof within 4 hours and DHL Express delivers worldwide in 2-4 days; US orders over $99 ship free.\n\n**FAQ**\n\n**Q1: How many pages can be perfect bound?**\n\nThe line covers 48 to 400 pages, with a sturdy flat spine suited to longer volumes.\n\n**Q2: Can you print an ISBN or barcode on the spine?**\n\nYes — titles, barcodes and ISBNs can be printed for archival-quality library copies.\n\n**Q3: Is typesetting included?**\n\nFree layout support covers page numbers, chapter markers and tables of contents.\n\nReady to put your work between real covers? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
-        "title": "無線綴じ本｜中綴じ ラミネート｜10冊〜 ¥644〜｜ZprintPro",
+        "title": "無線綴じ本 小ロット ラミネート 10冊〜 ¥644〜 | ZprintPro",
         "description": "無線綴じ本のオーダー印刷、本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタムサイズ対応。4色 CMYK 印刷、デザイン自由、10冊〜小ロット対応。無料デジタル校正1時間、5-10営業日納品、DHL日本直送2-4日。30秒無料見積もり、自社工場直結。| ZprintPro",
         "h1": "無線綴じ本 | 中綴じ ラミネート対応",
         "keywords": ["無線綴じ冊子","無線綴じ冊子 印刷","perfect bound books"],
@@ -2269,7 +2269,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "開學前後是作業簿需求最旺的時節，補習社教材、K12 練習簿、學年作業本與校園訂製練習簿，都要趕在學期開始前送到學生手上。作業簿採用 80g–100g 書紙或道林紙，紙身輕薄不反光，書寫時不刺眼、不滲墨；內頁可加方格、橫線或空白版面，配合封面四色印刷與 200g 銅版紙，讓練習簿既耐用又美觀，由幼稚園塗鴉本到中學堂課練習都能應付。\n\n對補習社而言，練習簿更常以校本形式訂製——封面印上機構名稱與班別，內頁按科目分格，讓教材更見專業；封面可選覆膜保護，騎馬釘裝訂確保翻頁耐用、不易散頁。若學校同時需要作業簿與證書印刷配合學期頒獎，或想為師生準備月曆訂製等紀念品，把同批校園印刷品一併規劃，可減少反覆溝通的時間成本。\n\n選用 80g–100g 書紙或道林紙、封面 200g 銅版紙，A4 或 A5 尺寸，封面四色印刷、內頁單色或雙色，騎馬釘裝訂、封面覆膜可選。標準交期約 5–10 個工作天，交貨後港九新界免運費送上門。\n\n作業簿印刷以每本 HK$4–16 起計算，100 本起印，適合班級與補習社規模的批量訂購；數量越多，每本單價越見實惠。"
       },
       "en": {
-        "title": "Saddle-Stitched Exercise Books | Free US Ship | ZprintPro",
+        "title": "Exercise Books | Saddle-Stitched | 10 MOQ | ZprintPro",
         "description": "Custom exercise books from $1.84/book, 10 MOQ, saddle-stitched 4-color printing. 5-10 business days plus free US shipping over $99. Free 1-hour digital proof, DHL 2-4 day delivery.",
         "h1": "Exercise Books 100+ | Perfect Bound | ZprintPro",
         "keywords": ["exercise books","custom exercise books","exercise books printing online","exercise books free shipping","exercise books USD","bulk exercise books","exercise books DHL","bespoke exercise books","exercise books wholesale","exercise books pricing","homework bag printing","student handbook printing","teacher self-made materials","award certificate printing","class name bag","graduation yearbook","graduation certificate printing","subject file folder","perfect bound notes","saddle-stitch materials"],
@@ -2377,7 +2377,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "教科書與學年教材對紙張、印刷與裝訂的要求向來嚴格。K12 教科書、補習社教材、培訓手冊與練習題庫，長時間翻閱必須護眼耐用——80g–100g 道林紙或書紙質地柔韌、反光低，長時間閱讀不易疲勞；封面採用 200g 銅版紙，內頁單色或雙色印刷，既能控制成本又不失清晰，配合膠裝或騎馬釘裝訂，讓厚身教材也能平整翻閱、不易掉頁。\n\n國際學校與雙語課程常需中英文對照教材，教科書可加印 ISBN 國際標準書號與條碼，方便入庫管理；A4 或 B5 尺寸配合內容長短自由編排，封面覆膜可選以延長使用壽命。若校方同時規劃證書印刷以配合學期結業頒獎，或透過月曆訂製為教學團隊準備年度紀念品，將校園印刷項目集中統籌，更易把握整個學期的物料節奏。\n\n選用 80g–100g 道林紙或書紙、封面 200g 銅版紙，A4 或 B5 尺寸，封面四色、內頁單色或雙色，膠裝或騎馬釘、封面覆膜可選。正常生產 5–10 個工作天，並安排港九新界免費速遞交付。\n\n教科書印刷以每本 HK$5–50 起計算，100 本起印，配合學期批量訂購與優先排期，讓教材能在開學前準時到位。"
       },
       "en": {
-        "title": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
+        "title": "Textbook Printing | Perfect Bound | 100 MOQ | ZprintPro",
         "description": "Custom textbook printing from $9.20/book, 100 MOQ, perfect bound or saddle stitch. 5-7 business days plus free US shipping over $99. Free 1-hour digital proof, DHL 2-4 day delivery.",
         "h1": "Textbooks 100+ | Perfect Bound | ZprintPro",
         "keywords": ["textbooks","custom textbooks","textbooks printing online","textbooks free shipping","textbooks USD","bulk textbooks","textbooks DHL","bespoke textbooks","textbooks wholesale","textbooks pricing","homework bag printing","student handbook printing","teacher self-made materials","award certificate printing","class name bag","graduation yearbook","graduation certificate printing","subject file folder","perfect bound notes","saddle-stitch materials"],
@@ -2497,7 +2497,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "クラフト紙包装箱 エコ・300枚〜・最安値 | ZprintPro",
+        "title": "クラフト紙包装箱 特注 エコ 300個〜 ¥240〜 | ZprintPro",
         "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
@@ -2601,14 +2601,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "同人誌是同人印刷中最具分量的作品，一本內容紮實的刊物，既是創作者心血的結晶，也是コミケ等即售會攤位上的主角。這套同人誌印刷服務專為即售會與創作活動優化，標準配置為封面彩色、內頁單色，亦可升級至封面內頁全彩色，滿足不同預算與內容需求。10 本起印的低起訂量，讓個人社團以至新手作者都能輕鬆下單，先做少量測試反應，再決定會場完售後是否補印。\n\n尺寸提供 A5（148×210mm）與 B5（182×257mm）兩種主流規格，A4 亦可選配；內頁採用 FSC 認證道林紙 90g，封面為銅版紙 90g，觸感與翻頁手感都經過考量。封面以柯式四色印刷呈現插圖細節，內頁則按頁數與預算選用數碼或柯式印刷。裝訂可選膠裝或騎馬釘（8-64 頁），需要書脊封面時亦有對應處理，讓刊物放在書架上更顯完整。接近コミケ會期前 24 小時的特急対応，完售補印或臨時追加都來得及。\n\n交稿時請提供完整頁面順序的檔案，CMYK 色彩模式並預留出血位；封面與內頁需分別提供高解像度檔案，跨頁設計請特別標示中線位置。請註明尺寸、頁數、裝訂方式（膠裝或騎馬釘）以及印刷版本（內頁單色或全彩），我們會據此安排製程並進行對稿，確認版面無誤後才開始印刷。\n\n最低起印量為 10 本，適合個人社團小量試印或會場首發。單價由 ¥7,500 起／部，頁數、尺寸、裝訂與彩色範圍都會影響最終報價，批量訂購歡迎查詢報價。"
       },
       "en": {
-        "title": "Doujinshi Printing Comiket | Free US Ship | ZprintPro",
+        "title": "Doujinshi Printing Comiket | 10 MOQ | USA | ZprintPro",
         "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket | Free Design | 100 MOQ",
         "h1": "Doujinshi Printing for Comiket & Doujin Events",
         "keywords": ["doujinshi printing", "comiket", "doujinshi", "doujin event", "self publishing", "A5 booklet", "low MOQ printing", "rush printing"],
         "body": "Doujinshi printing is built around the needs of creators heading to Comiket, doujin events, and creative exhibitions — dependable quality, honest lead times, and a low barrier to entry. A standard run pairs a full-color cover with a monochrome interior, and a premium upgrade switches the interior to full color as well.\n\nFor individual circles and first-time authors, the 10-book minimum makes your first print run low-risk. Plan a standard A5 or B5 book, or choose A4 as an option, and keep the cover offset 4-color for rich, consistent color while the interior prints on-demand or offset depending on volume and schedule.\n\nTiming is everything at a doujin event, so this doujinshi printing service includes 24-hour rush production before Comiket for last-minute corrections, reprints, or completely new books. The same flexibility serves global fan communities beyond Japan, letting creators sell at overseas conventions and through online storefronts without holding a large inventory.\n\nBooks use FSC-certified fine paper at 90g or coated paper at 90g for the cover. Standard sizes are A5 (148×210mm) and B5 (182×257mm), with A4 optional, finished with perfect binding or saddle stitching for 8-64 pages, plus a spine cover.\n\nBooks start at ¥7,500 each with a minimum order of 10 books. Production at our Asia factory ships via DHL Express to Japan in 2-4 business days, and 24-hour rush service is available before Comiket for late reprints. Every order includes a free digital proof, no setup fees, and a 30-second AI quote, with FSC-certified paper and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: Which sizes can I choose?** A5 (148×210mm) and B5 (182×257mm) are standard, with A4 available as an option.\n\n**Q2: What binding options exist?** Perfect binding or saddle stitching for 8-64 pages, with a spine cover.\n\n**Q3: Can beginners really order just 10 books?** Yes, the minimum order is 10 books, which suits individual circles and first runs.\n\nReady to print your book? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
-        "title": "同人誌印刷 コミケ対応印刷 10枚〜・最安 | ZprintPro",
+        "title": "同人誌印刷 コミケ対応 10冊〜 小ロット 短納期 | ZprintPro",
         "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
