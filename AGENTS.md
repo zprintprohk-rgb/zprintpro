@@ -681,7 +681,7 @@ F:\zprintpro-nextjs\
 
 ## 5. SEO/GEO 关键约定
 
-- **Title**: **K3 2026-09-19 裁决 目标区 50-57 半角当量**（取代 v4 的 50-54 与 9/13 的 50-58；**58 为阻断线**）: 主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次, **>57 满格禁加**, <50 按序补; 当量口径 = `scripts/guards/title-equiv.js`; 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（`docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」**已失效**）; 普查工具 = `node scripts/sku-title-census.mjs`
+- **Title**: **K3 2026-09-19 裁决 目标区 50-57 半角当量**（取代 v4 的 50-54 与 9/13 的 50-58；**58 为阻断线**）: 主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次, **>57 满格禁加**, <50 按序补; 当量口径 = `scripts/guards/title-equiv.js`; 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（`docs/2026-09-09-k3-title-rule-v4-write-full.md` §1.2 的「50-54 / ≥55 禁加」**已失效**）; 普查工具 = `node scripts/sku-title-census.mjs`; **v5 规则 SSoT = `docs/zprintpro-sku-title-rule-v5-2026-09-23.md`（五段式 + 长尾来源阶梯 L0 DELIVERY>L1 GSC>L2 联网>L3 宁缺毋编 + 记录义务）**; **★ 生成/修改标题必过 门童 #27 `node scripts/guards/title-v5-guard.js`（K3 2026-09-23 指令「生成好的标题一定要有门童去审查机制」）**: 机检 当量带/品牌/空洞词/翻译层(简中·kana·ja 禁「份」)/无钩子/价格·MOQ 真值对照 products.ts/长尾来源 WARN, pre-commit 已接 (staged title 变更硬拦, 存量入审计不拦, 冻结槽降 WARN)
 - **Meta description**: 150-160 字符,含数字 + CTA
 - **H1**: 每页唯一,含主关键词
 - **Schema**: Organization / BreadcrumbList / Product / FAQPage

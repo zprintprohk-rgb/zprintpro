@@ -209,6 +209,22 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.10 門童 #27 SKU 標題 v5 全面審查 (K3 2026-09-23 指令「生成好的標題一定要有門童去審查機制」)
+# 規則 SSoT: docs/zprintpro-sku-title-rule-v5-2026-09-23.md (五段式 + 當量 50-57 + 長尾來源階梯 + 記錄義務)
+# 機檢: 當量 / 品牌 / 空洞詞 / 翻譯層(簡體·kana·「份」) / 無鉤子 / 價格·MOQ 真值對照 products.ts / 長尾來源 WARN
+# 判據鐵律 (§0.35.4): 只攔 staged diff 中新增/修改 title; 存量 issue 落審計 JSON 不攔; 凍結槽降 WARN.
+echo "3️⃣.10  門童 #27 標題 v5 全面審查 (staged title 變更硬攔)..."
+if command -v node &> /dev/null; then
+  node scripts/guards/title-v5-guard.js --commit
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ 門童 #27 攔截: staged title 違反 v5 規則 (空洞/無源詞 / 價格·MOQ 失實 / 品牌 / 翻譯層 / 無鉤子)"
+    echo ""
+    echo "💡 修法: 數字鉤子從 products.ts 真值現取; 空洞/條件承諾詞禁於標題; 詳見 docs/zprintpro-sku-title-rule-v5-2026-09-23.md"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

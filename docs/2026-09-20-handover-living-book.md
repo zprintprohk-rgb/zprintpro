@@ -701,3 +701,14 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **门禁**：census 276 OK / tsc 54=基线 0 增量 / brand-mentions A 0 / gsc-leak 0 / encoding ✓。
 - **上报 K3**：① greeting-cards 名片词（沿用 K3 批 A/B/C 推荐 B，未拍板不动）；② **small-batch-stickers en title「50pcs」失实**（minQ=10，desc 已对齐 10 pcs；K3 批 02:42 刚触碰该槽，本批不动，推荐 title 50pcs→10pcs）；③ premium-greeting-cards「100pcs」= products.ts 层漂移（非 title 错误）。
 - **报告**：`docs/2026-09-23-title-v5-review-and-fix.md`（含长尾/数字来源行、当量 3 行、重复扫描、幂等三问）。
+
+### 2026-09-23 04:2x · 门童 #27 标题 v5 审查机制落地（K3 指令「生成好的标题一定要有门童去审查机制」）— commit 本批
+
+**K3 指令**：生成好的标题一定要有门童去审查机制 → 新增 **门童 #27 `scripts/guards/title-v5-guard.js`** 并接入 pre-commit（canonical §3.10 三方同步）+ guard-manifest 注册（max→27）+ AGENTS.md §5。
+
+- **机检维度**（HARD=硬拦 / WARN=复核）：当量带(50-57, 58 阻断) · 品牌 · 空洞词(zh 品質保證/專業印刷/超值/免費送貨 · en Free US Ship/Free Shipping $99+ · ja 安い/最安/高画質) · 翻译层(zh-hk 简体+kana(除「・」) · en CJK · ja 简体专属表+「份」) · 无数字钩子 · **价格真值 vs basePrice(locale)** · **MOQ 失实(<minQuantity)** · 长尾来源 WARN · 冻结槽降 WARN。
+- **判据铁律**：--commit 只拦 staged title 变更；存量入审计不拦；--strict 存量也拦。审计落 `.hermes/logs/sku-title-v5-audit-<date>.json`。
+- **回归证明 3/3**：kraft ¥240 误植→PRICE_MISMATCH / MOQ 100<300→MOQ_BELOW_MIN / Free Ship $99+→FILLER_WORD 全硬拦。
+- **当场清出并修 2 个真实残留违规**：outdoor-vinyl-banners ja 高画質→「屋外バナー印刷 | PVC 耐候 | 1個〜 ¥360〜」(52)；electronics-packaging-box en Free Ship→「Electronics Packaging Box | From $1.84」(50, bpe 1.84)。且门童自纠了「1 MOQ」候选失实草稿（minQ=200）。
+- **存量 HARD=8**（全为既有：7 价格来源项 same-day 急件价/small-batch 阶梯价/poster 阶梯价 + white-card 免費送貨）→ **上报 K3 业务裁决**（标题价用急件/阶梯价 or 统一 basePrice；white-card 条件承诺钩去留）。
+- **冻结槽**（certificates/foil-stickers）降 WARN：certificates「專業印刷 品質保證」只读不动作（待 K3 解锁）。

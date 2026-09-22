@@ -99,3 +99,18 @@
 - 窗口登记: `.hermes/title-verify-window-v5-20260923.json`
 - 冻结重划: `.hermes/reports/freeze-repartition-2026-09-23.json`（frozenCount=2）+ `src/data/title-window-freeze.ts`（重生成，仅 certificates/foil-stickers）
 - 交付 commit 与 d3f165fc 攒批 1 次 push（§0.25.9 攒批优先；距上次 push ≥30min 已满足）
+
+## 十二、门童 #27 标题审查机制落地（K3 2026-09-23 指令「生成好的标题一定要有门童去审查机制」）
+
+- **新增 门童 #27 `scripts/guards/title-v5-guard.js`**（规则 SSoT `docs/zprintpro-sku-title-rule-v5-2026-09-23.md`；当量口径复用 `title-equiv.js`）：
+  - **[HARD 硬拦]** 当量 >57（TRIM 阻断线）· 品牌规则（zh-hk 智印港×1 无 ZprintPro / en·ja ZprintPro×1 无 智印港 / ジープリント 不与 ZprintPro 同现 / 双品牌）· 空洞词禁令（zh 品質保證·專業印刷·超值·免費送貨 / en Free US Ship·Free Shipping $99+·Free Ship $ / ja 安い·最安·激安·高画質·高品質）· 翻译层（zh-hk 简体(scan-simplified 表)·kana(除「・」) / en CJK / ja 简体(专属表)·「份」）· 无数字钩子 · **价格真值（标题价 == basePrice(locale)，数字钩子从 products.ts 现取，SSoT title-hooks.json）** · **MOQ 失实（标题 MOQ < minQuantity = 承诺低于起订量；N件齊全/N Pcs Set/N枚組 合成语境剔除）**
+  - **[WARN 复核]** 当量<50 · MOQ 漂移 · 价格无 basePrice 可对照 · 长尾无 GSC/DELIVERY 实证（L0-L3 阶梯）· 冻结槽违规降 WARN
+  - **判据铁律**（§0.35.4）：`--commit` 只拦 staged 新增/修改 title；存量 issue 落审计 JSON（`.hermes/logs/sku-title-v5-audit-<date>.json`）不拦；`--strict` 存量也拦。
+  - **冻结豁免**：`title-window-freeze.ts` 内槽（certificates/foil-stickers）HARD 全降 WARN（只读不可改）。
+- **接入**: canonical pre-commit §3.10（.githooks + .git/hooks 三方同步，hook-sync #26 通过）+ guard-manifest 注册 #27（max 26→27）+ AGENTS.md §5 条款。
+- **回归证明 3/3**（`.hermes/_guard-regression-test.cjs`）：① kraft ja ¥240 误植 → PRICE_MISMATCH 硬拦 ② kraft MOQ 100<300 失实 → MOQ_BELOW_MIN 硬拦 ③ Free Ship $99+ 空洞词重入 → FILLER_WORD 硬拦。
+- **全量审计**（276 槽）：HARD=8 **全部为存量既有项**（7 价格来源 + white-card 免費送貨），非阻断；staged 变更 0 HARD。
+- **门童当场清出并修复 2 个真实残留违规**（本批一并落地）：
+  - outdoor-vinyl-banners|ja「高画質」空洞 →「屋外バナー印刷 | PVC 耐候 | 1個〜 ¥360〜 | ZprintPro」(52)
+  - electronics-packaging-box|en「Free Ship $99+」条件承诺 →「Electronics Packaging Box | From $1.84 | ZprintPro」(50, bpe 1.84 真值)
+- **门童自纠 1 处候选草稿**：electronics en 曾拟「1 MOQ」= 失实（minQ=200），被门童 MOQ 检查拦下 → 改纯价格钩子（端到端验证门童有效）。

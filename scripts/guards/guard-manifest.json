@@ -1,7 +1,7 @@
 {
   "schema": "guard-manifest/v1",
   "note": "門童編號與規則 ID 是**共享命名空間**：新增前必須先查本清單避免撞號（K3 2026-09-19 建議）。產生器：scripts/gen-guard-manifest.mjs；校驗：node scripts/gen-guard-manifest.mjs（有衝突 exit 1）",
-  "generatedAt": "2026-09-20T12:06:56.817Z",
+  "generatedAt": "2026-09-22T19:26:00.744Z",
   "guardNumbers": {
     "1": [
       "scripts\\guards\\common.js",
@@ -60,6 +60,7 @@
     ],
     "14": [
       "scripts\\guards\\blog-quality-12-rules-guard.js",
+      "scripts\\guards\\blog-standard-guard.js",
       "scripts\\gen-guard-manifest.mjs",
       ".githooks/pre-push"
     ],
@@ -116,8 +117,14 @@
       "scripts/canonical/pre-commit",
       ".githooks/pre-commit"
     ],
+    "25": [
+      "scripts\\guards\\title-band-guard.js"
+    ],
     "26": [
       "scripts\\guards\\hook-sync-guard.js"
+    ],
+    "27": [
+      "scripts\\guards\\title-v5-guard.js"
     ]
   },
   "ruleIds": {
@@ -161,6 +168,9 @@
     "ARK_API_KEY": [
       "scripts\\guards\\sop10-guard.js"
     ],
+    "AS_STAGED": [
+      "scripts\\moq10-books-context-scan.ts"
+    ],
     "A_FIELDS": [
       "scripts\\check-brand-mentions.mjs"
     ],
@@ -171,6 +181,12 @@
     ],
     "BAD_FIELD": [
       "scripts\\guards\\meta-description-guard.js"
+    ],
+    "BAND_FILL": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
+    "BAND_TRIM": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "BARE_UNIT": [
       "scripts\\generate-title-batch.mjs"
@@ -254,6 +270,9 @@
     "BLOG_LENGTH_INSUFFICIENT": [
       "scripts\\guards\\blog-standard-guard.js"
     ],
+    "BLOG_ONLY": [
+      "scripts\\apply-l1-window-batch-20260921.mjs"
+    ],
     "BLOG_OUT": [
       "scripts\\batch-process-images.js"
     ],
@@ -269,6 +288,9 @@
       "scripts\\guards\\blog-standard-guard.js"
     ],
     "BLOG_SCHEMA_5BLOCKS": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "BLOG_SCHEMA_INLINE_LD": [
       "scripts\\guards\\blog-standard-guard.js"
     ],
     "BLOG_TARGET": [
@@ -291,6 +313,9 @@
       "scripts\\generate-og-image-v4.js",
       "scripts\\generate-og-image-v5.js"
     ],
+    "BODY_FIXES": [
+      "scripts\\apply-k3-ruling-fixes-20260921.mjs"
+    ],
     "BOOK_HINT": [
       "scripts\\moq10-check-books-claims.mjs",
       "scripts\\moq10-scan-books-page-claims.ts"
@@ -307,19 +332,25 @@
     "BRAND_DOUBLE": [
       "scripts\\guards\\brand-guard.js",
       "scripts\\guards\\common.js",
+      "scripts\\guards\\title-v5-guard.js",
       "scripts\\check-brand-baseline.mjs"
     ],
     "BRAND_JA_ALTERNATE": [
       "scripts\\guards\\brand-guard.js",
-      "scripts\\guards\\common.js"
+      "scripts\\guards\\common.js",
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "BRAND_LOCALE_MISMATCH": [
       "scripts\\guards\\brand-guard.js",
       "scripts\\guards\\common.js",
+      "scripts\\guards\\i18n-guard.js",
       "scripts\\check-brand-baseline.mjs",
       "scripts\\check-regression-guard-clean.mjs",
       "scripts\\moq10-action-list-v3.ts",
       "scripts\\moq10-diag-brand.js"
+    ],
+    "BRAND_MISSING": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "BRAND_OK": [
       "scripts\\sku-title-census.mjs"
@@ -329,7 +360,11 @@
     ],
     "BRAND_TYPO": [
       "scripts\\guards\\brand-guard.js",
-      "scripts\\guards\\common.js"
+      "scripts\\guards\\common.js",
+      "scripts\\aeo-desc-census-20260922.mjs"
+    ],
+    "BRAND_WRONG_LOCALE": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "BUILD_ID": [
       "scripts\\install-hooks.mjs"
@@ -351,6 +386,9 @@
     ],
     "CALIBRATION_KEYWORDS": [
       "scripts\\guards\\count-guard.js"
+    ],
+    "CAL_SLUGS": [
+      "scripts\\apply-calendar-moq1-batch-20260921.mjs"
     ],
     "CANONICAL_HOOK": [
       "scripts\\setup-hooks.sh"
@@ -392,6 +430,7 @@
       "scripts\\install-hooks.mjs"
     ],
     "CHECK_ONLY": [
+      "scripts\\apply-sku-compress-20260922.mjs",
       "scripts\\install-hooks.mjs"
     ],
     "CJK_CONJ": [
@@ -401,10 +440,15 @@
       "scripts\\guards\\i18n-guard.js"
     ],
     "COMMIT_MODE": [
+      "scripts\\guards\\title-band-guard.js",
+      "scripts\\guards\\title-v5-guard.js",
       "scripts\\check-regression-guard.js"
     ],
     "COMMIT_MSG_TMP": [
       "scripts\\commit-isolated.mjs"
+    ],
+    "COMPOSITION_AFTER": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "CONDITION_MARKERS": [
       "scripts\\guards\\institutional-promise-guard.js"
@@ -487,11 +531,16 @@
       "scripts\\moq10-action-list-v3.ts"
     ],
     "CSV_PATH": [
+      "scripts\\csv-to-sku-seo.mjs",
       "scripts\\fix-missing-seo-images.js",
-      "scripts\\integrate-seo-images.js"
+      "scripts\\integrate-seo-images.js",
+      "scripts\\sync-ts-to-csv.mjs"
     ],
     "CSV_TITLE_COL": [
       "scripts\\check-sku-csv-sync.mjs"
+    ],
+    "CTA_ANCHOR": [
+      "scripts\\apply-cost-baseline-faq.mjs"
     ],
     "CTA_TRIGGERS": [
       "scripts\\fix-p3-en-cta.ts",
@@ -546,6 +595,9 @@
     "DEPRECATED_MARKER": [
       "scripts\\check-bc-ban.mjs"
     ],
+    "DESC_OPS": [
+      "scripts\\apply-kw-flywheel-w1-20260922.mjs"
+    ],
     "DIGITAL_LINE_BOOK_SLUGS": [
       "scripts\\moq10-books-minquantity-10.mjs"
     ],
@@ -572,6 +624,9 @@
     ],
     "ECO_TARGET": [
       "scripts\\batch-process-images.js"
+    ],
+    "EMPTY_MOD": [
+      "scripts\\gen-title-flywheel-r2.mjs"
     ],
     "ENTITY_ADDRESS_EN": [
       "scripts\\guards\\entity-guard.js"
@@ -606,6 +661,12 @@
     "EN_FORBIDDEN_RULES": [
       "scripts\\guards\\i18n-guard.js"
     ],
+    "EN_H1_FROM": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
+    ],
+    "EN_H1_TO": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
+    ],
     "EN_MADE_IN_USA": [
       "scripts\\guards\\i18n-guard.js"
     ],
@@ -636,6 +697,9 @@
       "scripts/canonical/pre-commit",
       ".githooks/pre-commit"
     ],
+    "EXPECTED_ERR": [
+      "scripts\\g2-geo-validation-20260922.mjs"
+    ],
     "EXPECTED_RED": [
       "scripts\\test-i18n-pollution-bidirectional.js"
     ],
@@ -645,12 +709,21 @@
     "FALLBACK_HOOK": [
       "scripts\\setup-hooks.sh"
     ],
+    "FAQ_INSERT_NEW": [
+      "scripts\\apply-l1-window-batch-20260921.mjs"
+    ],
+    "FAQ_INSERT_OLD": [
+      "scripts\\apply-l1-window-batch-20260921.mjs"
+    ],
     "FAQ_TRIGGERS_BY_LOCALE": [
       "scripts\\audit-seo-meta.ts"
     ],
     "FAQ_TRIGGERS_ZHHK": [
       "scripts\\audit-seo-meta.ts",
       "scripts\\clean-faq-alt.ts"
+    ],
+    "FETCH_ERR": [
+      "scripts\\g2-geo-validation-20260922.mjs"
     ],
     "FILE_KEY_STYLE": [
       "scripts\\moq10-books-context-scan.ts"
@@ -661,8 +734,14 @@
     "FILE_LOCALE_RE": [
       "scripts\\guards\\common.js"
     ],
+    "FILE_OPS": [
+      "scripts\\fix-sticker-guide-moq-20260922.mjs"
+    ],
     "FILLER_RE": [
       "scripts\\generate-title-batch.mjs"
+    ],
+    "FILLER_WORD": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "FIX_MODE": [
       "scripts\\check-encoding.js"
@@ -688,6 +767,9 @@
     "FROZEN_SKU": [
       "scripts\\title-audit-v4.mjs"
     ],
+    "FROZEN_SLOTS": [
+      "scripts\\gen-title-flywheel.mjs"
+    ],
     "FULL_EXEMPT_PATHS": [
       "scripts\\guards\\common.js",
       "scripts\\guards\\credibility-guard.js",
@@ -701,6 +783,9 @@
     "GENERATED_START": [
       "scripts\\assert-sku-seo-keys.mjs"
     ],
+    "GENERIC_KW": [
+      "scripts\\gen-title-flywheel-r2.mjs"
+    ],
     "GITHUB_ACTIONS": [
       "scripts\\install-hooks.mjs"
     ],
@@ -712,6 +797,12 @@
     ],
     "GSC_DATA_DIR": [
       "scripts\\sku-keyword-gsc-map.mjs"
+    ],
+    "GSC_FILE": [
+      "scripts\\title-verify-report.mjs"
+    ],
+    "GSC_GROUP": [
+      "scripts\\audit-sku-quality.mjs"
     ],
     "GSC_INDEX_PATH": [
       "scripts\\guards\\gsc-source-guard.js"
@@ -790,6 +881,9 @@
     "I18N_BASELINE_FILE": [
       "scripts\\guards\\i18n-guard.js"
     ],
+    "I18N_CJK_IN_EN": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
     "I18N_CURRENCY": [
       "scripts\\guards\\common.js",
       "scripts\\guards\\i18n-guard.js",
@@ -800,6 +894,9 @@
     ],
     "I18N_FULL_WIDTH": [
       "scripts\\guards\\i18n-guard.js"
+    ],
+    "I18N_KANA_IN_ZHHK": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "I18N_META_LENGTH": [
       "scripts\\guards\\i18n-guard.js"
@@ -817,6 +914,12 @@
     "I18N_POLLUTION_JA": [
       "scripts\\guards\\i18n-guard.js",
       "scripts\\test-i18n-pollution-bidirectional.js"
+    ],
+    "I18N_SIMP_IN_JA": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
+    "I18N_SIMP_IN_ZHHK": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "I18N_SINK": [
       "scripts\\gen-price-data.mjs"
@@ -847,6 +950,18 @@
     "INTERESTING_FIELDS": [
       "scripts\\audit-nap.ts"
     ],
+    "INVALID_ITEMTYPE": [
+      "scripts\\g2-geo-validation-20260922.mjs",
+      "scripts\\g2-validator-merge-20260922.mjs"
+    ],
+    "INVALID_OBJECT": [
+      "scripts\\g2-geo-validation-20260922.mjs",
+      "scripts\\g2-validator-merge-20260922.mjs"
+    ],
+    "INVALID_PREDICATE": [
+      "scripts\\g2-geo-validation-20260922.mjs",
+      "scripts\\g2-validator-merge-20260922.mjs"
+    ],
     "IN_PROGRESS": [
       "scripts\\guards\\register-guard.js"
     ],
@@ -861,6 +976,9 @@
     ],
     "JA_EXCLUDE": [
       "scripts\\guards\\i18n-guard.js"
+    ],
+    "JA_FORBIDDEN_FEN": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "JA_FORBIDDEN_RULES": [
       "scripts\\guards\\i18n-guard.js"
@@ -880,6 +998,12 @@
     "JA_SHINJITAI_CLEAN": [
       "scripts\\guards\\i18n-guard.js"
     ],
+    "JA_TITLE_FROM": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
+    ],
+    "JA_TITLE_TO": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
+    ],
     "JSON_ONLY": [
       "scripts\\lane-status.mjs"
     ],
@@ -889,6 +1013,9 @@
     ],
     "JSON_PARSE": [
       "scripts\\guards\\blog-quality-12-rules-guard.js"
+    ],
+    "KEEP_TOKENS": [
+      "scripts\\apply-l1-window-batch-20260921.mjs"
     ],
     "KEY_COUNT": [
       "scripts\\lib\\price-label-i18n.mjs"
@@ -958,8 +1085,20 @@
       "scripts\\resolve-moq-conflicts.mjs",
       "scripts\\unify-moq-classification.mjs"
     ],
+    "LOCATE_BEFORE_PATCH": [
+      "scripts\\apply-cost-baseline-faq.mjs"
+    ],
     "LONGDESC_V3": [
       "scripts\\apply-en-longdesc-v3.mjs"
+    ],
+    "LONGFORM_HINTS": [
+      "scripts\\blog-title-census-e7.mjs"
+    ],
+    "LONGFORM_SLUGS": [
+      "scripts\\guards\\blog-standard-guard.js"
+    ],
+    "LONGTAIL_SOURCE": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "MANUAL_END": [
       "scripts\\assert-sku-seo-keys.mjs"
@@ -967,6 +1106,7 @@
     "MANUAL_REVIEW": [
       "scripts\\apply-title-batch.mjs",
       "scripts\\classify-moq-precision.mjs",
+      "scripts\\gen-title-flywheel.mjs",
       "scripts\\generate-title-batch.mjs",
       "scripts\\unify-moq-classification.mjs"
     ],
@@ -1051,11 +1191,23 @@
     "MONEY_SET": [
       "scripts\\fix-title-batch-T2-1b.mjs"
     ],
+    "MOQ_BELOW_MIN": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
+    "MOQ_DRIFT": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
     "MOQ_IN_SEG": [
       "scripts\\generate-title-batch.mjs"
     ],
     "MOQ_MISMATCH": [
       "scripts\\build-title-input-bank.mjs"
+    ],
+    "MOQ_OVERRIDE": [
+      "scripts\\gen-llms.ts"
+    ],
+    "MOQ_OVERRIDE_MAP": [
+      "scripts\\gen-llms.ts"
     ],
     "MOQ_PATTERNS": [
       "scripts\\moq10-books-context-scan.ts",
@@ -1064,6 +1216,9 @@
     ],
     "MOQ_SHAPE": [
       "scripts\\moq10-category-page-check.ts"
+    ],
+    "MOQ_UNVERIFIABLE": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "MUST_NOT_IN_SIMP_ZH": [
       "scripts\\guards\\i18n-guard.js"
@@ -1099,6 +1254,9 @@
     "NEW_BAD_TOTAL": [
       "scripts\\moq10-audit-ladders.mjs"
     ],
+    "NEW_DATE": [
+      "scripts\\apply-cost-baseline-faq.mjs"
+    ],
     "NEW_NO_CALIB": [
       "scripts\\moq10-audit-ladders.mjs"
     ],
@@ -1107,6 +1265,9 @@
     ],
     "NEW_QUANTITIES": [
       "scripts\\moq10-set-a1-moq.mjs"
+    ],
+    "NEW_TIERS": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
     ],
     "NODE_VERSION": [
       "scripts\\pre-deploy-check.sh"
@@ -1168,6 +1329,9 @@
     "OFFSET_SIMPLEX": [
       "scripts\\gen-posters-json.mjs"
     ],
+    "OLD_TIERS": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
+    ],
     "OPERATIONAL_WHITELIST": [
       "scripts\\guards\\common.js"
     ],
@@ -1177,6 +1341,9 @@
     ],
     "ORANGE_SOFT": [
       "scripts\\generate-og-image-v4.js"
+    ],
+    "OTHER_BRAND": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "OTHER_CATEGORY": [
       "scripts\\moq10-books-context-scan.ts"
@@ -1204,6 +1371,7 @@
       "scripts\\generate-sitemap-content.mjs"
     ],
     "OUT_JSON": [
+      "scripts\\audit-workspace-dirty.mjs",
       "scripts\\lane-status.mjs",
       "scripts\\moq10-price-sync-report.ts"
     ],
@@ -1294,9 +1462,11 @@
       "scripts\\guards\\blog-quality-12-rules-guard.js"
     ],
     "PILLAR_TRIGGERS": [
-      "scripts\\guards\\blog-standard-guard.js",
       "scripts\\guards\\internal-links-cta-guard.js",
       "scripts\\guards\\pillar-guard.js"
+    ],
+    "PILLAR_UPGRADE_SLUGS": [
+      "scripts\\guards\\blog-standard-guard.js"
     ],
     "PILLAR_URLS": [
       "scripts\\indexnow-submit.mjs"
@@ -1313,6 +1483,16 @@
     "POSTS_FILE": [
       "scripts\\guards\\meta-description-guard.js"
     ],
+    "PRICE_MISMATCH": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
+    "PRICE_RANGE_RE": [
+      "scripts\\aeo-desc-census-20260922.mjs"
+    ],
+    "PRICE_RE": [
+      "scripts\\guards\\title-v5-guard.js",
+      "scripts\\aeo-desc-census-20260922.mjs"
+    ],
     "PRICE_TABLE_DIR": [
       "scripts\\gen-price-data.mjs",
       "scripts\\lib\\price-label-i18n.mjs"
@@ -1327,6 +1507,9 @@
     ],
     "PRICE_TIER_TERMS": [
       "scripts\\moq10-fix-blog-moq.mjs"
+    ],
+    "PRICE_UNVERIFIABLE": [
+      "scripts\\guards\\title-v5-guard.js"
     ],
     "PRIMARY_BLUE": [
       "scripts\\generate-og-image-v2.js"
@@ -1389,6 +1572,9 @@
     "QUOTE_RULES": [
       "scripts\\guards\\common.js",
       "scripts\\check-regression-guard.js"
+    ],
+    "R2_FROZEN": [
+      "scripts\\aeo-desc-census-20260922.mjs"
     ],
     "RATIONALE_RE": [
       "scripts\\guards\\bypass-audit-guard.js"
@@ -1545,12 +1731,19 @@
       "scripts\\moq10-fix-blog-moq.mjs"
     ],
     "SIMPLIFIED_CHARS": [
+      "scripts\\guards\\title-v5-guard.js",
       "scripts\\audit-h1-all-sku.mjs",
       "scripts\\audit-seo-meta.ts",
       "scripts\\scan-simplified.mjs"
     ],
+    "SIMPLIFIED_CHARS_JA": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
     "SIMPLIFIED_CHINESE": [
       "scripts\\check-content-guard.js"
+    ],
+    "SIMPL_SET": [
+      "scripts\\aeo-desc-census-20260922.mjs"
     ],
     "SIMP_ONLY": [
       "scripts\\gen-price-data.mjs",
@@ -1585,6 +1778,9 @@
     "SKIP_FILES": [
       "scripts\\find-markdown-render.js"
     ],
+    "SKU_CUT_301": [
+      "scripts\\apply-sku-compress-20260922.mjs"
+    ],
     "SKU_DATA_PATH": [
       "scripts\\clean-faq-alt.ts",
       "scripts\\enrich-body-p4.ts",
@@ -1608,6 +1804,12 @@
     ],
     "SKU_MAP_PATH": [
       "scripts\\update-products-images.js"
+    ],
+    "SKU_SEGS": [
+      "scripts\\apply-calendar-moq1-batch-20260921.mjs"
+    ],
+    "SKU_SEG_END": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
     ],
     "SKU_THEMES": [
       "scripts\\enrich-en-themes.ts"
@@ -1678,6 +1880,9 @@
     "STALE_REMOTE_REF_FALSE_BACKLOG": [
       "scripts\\probe-skill-handover.mjs"
     ],
+    "START_RE": [
+      "scripts\\apply-sku-compress-20260922.mjs"
+    ],
     "STATE_MACHINE": [
       "scripts\\lane-status.mjs"
     ],
@@ -1697,8 +1902,19 @@
     "STRICT_ALL": [
       "scripts\\check-regression-guard.js"
     ],
+    "STRICT_MODE": [
+      "scripts\\guards\\title-v5-guard.js"
+    ],
     "STYLE_RULES": [
       "scripts\\seedream-prompt-router.js"
+    ],
+    "T1_REWRITE": [
+      "scripts\\audit-sku-quality.mjs",
+      "scripts\\_tmp-draft-ctx.mjs",
+      "scripts\\_tmp-draft2.mjs"
+    ],
+    "T2_WINDOW_KEEP": [
+      "scripts\\audit-sku-quality.mjs"
     ],
     "TABLE_SLUGS": [
       "scripts\\moq10-smoke-test.ts"
@@ -1748,6 +1964,7 @@
       "scripts\\guards\\common.js"
     ],
     "TITLE_FIXES": [
+      "scripts\\apply-k3-ruling-fixes-20260921.mjs",
       "scripts\\fix-en-overlong.ts",
       "scripts\\fix-p3-en-error.ts"
     ],
@@ -1757,8 +1974,17 @@
     "TITLE_MAX": [
       "scripts\\guards\\blog-standard-guard.js",
       "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\title-band-guard.js",
       "scripts\\guards\\title-equiv.js",
+      "scripts\\guards\\title-v5-guard.js",
       "scripts\\apply-title-batch.mjs",
+      "scripts\\apply-title-flywheel.mjs",
+      "scripts\\apply-v5-title-batch-20260923.mjs",
+      "scripts\\apply-v5-title-batch2-20260923.mjs",
+      "scripts\\audit-sku-quality.mjs",
+      "scripts\\blog-title-census-e7.mjs",
+      "scripts\\gen-title-flywheel-r2.mjs",
+      "scripts\\gen-title-flywheel.mjs",
       "scripts\\generate-title-batch.mjs",
       "scripts\\probe-skill-handover.mjs",
       "scripts\\sku-title-census.mjs",
@@ -1767,18 +1993,37 @@
     "TITLE_MIN": [
       "scripts\\guards\\blog-standard-guard.js",
       "scripts\\guards\\i18n-guard.js",
+      "scripts\\guards\\title-band-guard.js",
       "scripts\\guards\\title-equiv.js",
+      "scripts\\guards\\title-v5-guard.js",
       "scripts\\apply-title-batch.mjs",
+      "scripts\\apply-title-flywheel.mjs",
+      "scripts\\apply-v5-title-batch-20260923.mjs",
+      "scripts\\apply-v5-title-batch2-20260923.mjs",
+      "scripts\\audit-sku-quality.mjs",
+      "scripts\\blog-title-census-e7.mjs",
+      "scripts\\gen-title-flywheel-r2.mjs",
+      "scripts\\gen-title-flywheel.mjs",
       "scripts\\generate-title-batch.mjs",
       "scripts\\probe-skill-handover.mjs",
       "scripts\\sku-title-census.mjs",
       "scripts\\title-audit-v4.mjs"
+    ],
+    "TITLE_OPS": [
+      "scripts\\apply-kw-flywheel-w1-20260922.mjs"
+    ],
+    "TITLE_WINDOW_FROZEN": [
+      "scripts\\apply-sku-title-v5-20260923.mjs",
+      "scripts\\gen-title-flywheel-r2.mjs"
     ],
     "TOPICS_POOL": [
       "scripts\\blog-content-engine.js"
     ],
     "TOTAL_DROP": [
       "scripts\\moq10-audit-ladders.mjs"
+    ],
+    "TRAD_SET": [
+      "scripts\\aeo-desc-census-20260922.mjs"
     ],
     "TRUE_DRIFT": [
       "scripts\\apply-title-batch.mjs",
@@ -1788,6 +2033,9 @@
     ],
     "TRUTH_FILE": [
       "scripts\\moq25-anchor-scan.ts"
+    ],
+    "TYPO_BRAND": [
+      "scripts\\aeo-desc-census-20260922.mjs"
     ],
     "UNIT_PRICE_ANCHORS": [
       "scripts\\gen-price-data.mjs",
@@ -1822,6 +2070,15 @@
     "VERIFICATION_PATTERNS": [
       "scripts\\guards\\register-guard.js"
     ],
+    "VERIFY_FAIL": [
+      "scripts\\apply-quality-proposals.mjs"
+    ],
+    "VERIFY_FAIL_TOTAL": [
+      "scripts\\apply-quality-proposals.mjs"
+    ],
+    "VERIFY_OK": [
+      "scripts\\apply-quality-proposals.mjs"
+    ],
     "VISIBLE_FIELDS": [
       "scripts\\guards\\gsc-leak-guard.js"
     ],
@@ -1841,8 +2098,14 @@
     "WORD_LEVEL_EVIDENCE": [
       "scripts\\guards\\gsc-source-guard.js"
     ],
+    "WORKSPACE_DIRTY_OVERFLOW": [
+      "scripts\\audit-workspace-dirty.mjs"
+    ],
     "YELLOW_WARN": [
       "scripts\\sku-title-census.mjs"
+    ],
+    "ZH_PRICE": [
+      "scripts\\apply-posters-moq1-batch-20260921.mjs"
     ],
     "ZP_BYPASS_REASON": [
       "scripts\\guards\\bypass-audit-guard.js"
@@ -1855,5 +2118,5 @@
       ".githooks/pre-push"
     ]
   },
-  "maxGuardNumber": 26
+  "maxGuardNumber": 27
 }
