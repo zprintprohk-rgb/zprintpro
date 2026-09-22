@@ -142,9 +142,9 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
   // ── 日本同人 ──────────────────────────────────────────
   'japan-doujin': {
     doujinshi: { sku: 'doujinshi-printing' },
-    // 2026-09-22 SKU 压缩: acrylic-keychain 下架 → can-badge 承接 (同人周邊代表品)
-    anime_goods: { sku: 'can-badge' },
-    vtuber: { sku: 'can-badge' },
+    // 2026-09-23 SKU 压缩: can-badge 下架 (非业务范围) → doujinshi-printing 承接 (同人周邊主线)
+    anime_goods: { sku: 'doujinshi-printing' },
+    vtuber: { sku: 'doujinshi-printing' },
     comiket: { sku: 'postcard-set' },
     original_ip: { sku: 'eco-tote-bag' },
   },

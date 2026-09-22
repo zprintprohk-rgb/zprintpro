@@ -2622,42 +2622,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": "同人誌印刷-コミケ対応-A5-B5サイズ"
     }
   },
-  "can-badge": {
-    "name": {
-      "zh-hk": "罐型襟章印刷",
-      "en": "Can Badge Printing",
-      "ja": "缶バッジ印刷"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "罐型襟章印刷 57mm 76mm | Comiket 應援必備 | 智印港",
-        "description": "罐型襟章(缶バッジ)印刷專家。57mm 標準 + 76mm 大尺寸 + 44mm 迷你,標配安全扣,彩色印刷,10 件起印。Comiket 場售 / 推し活 / 活動物販首選。DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
-        "h1": "罐型襟章印刷 57mm 76mm - 推し活 / Comiket 必備周邊",
-        "keywords": ["罐型襟章印刷", "缶バッジ", "襟章", "推し活周邊", "Comiket 印刷", "VTuber 周邊", "動漫周邊", "安全扣襟章"],
-        "body": "罐型襟章是推し活與攤位應援的必備週邊，別在衣服或背包上，一眼就能表明自己的推，也是コミケ等即售會上最容易售出的實惠單品。這款罐型襟章提供 57mm 標準、76mm 大尺寸與 44mm 迷你三種規格，無論做應援襟章、角色立繪還是簡單的社團 logo，都能找到合適的大小。對同人創作者而言，襟章成本低、易流通，是經營同人印刷產品線時很好的入門週邊。\n\n印刷面以柯式或數碼四色（CMYK）呈現，金屬底座配上紙／PET 印刷面，彩色印刷能忠實還原插圖與 logo 的細節，細線與漸層都有不錯的表現。安全扣標準配備，扣合穩固，別在衣物或包包上都方便；需要更精緻的陳列方式，亦可選擇 OPP 袋獨立包裝。接近コミケ會期時，臨時追加訂單亦能迅速處理，方便社團隨時補貨應急。\n\n交稿時請提供 CMYK 色彩模式的印刷檔案，並預留出血位；因襟章尺寸較小，插圖建議以高解像度輸出，避免縮印後文字或細節模糊。每種尺寸請分開提供檔案，並註明所需數量與是否選用 OPP 袋獨立包裝，方便我們安排柯式或數碼製程及後續加工。\n\n最低起印量為 10 件，個人社團、活動物販或攤位贈品都能小量起訂。單價由 ¥1,200 起／個，尺寸與數量會影響最終價格，大量訂購歡迎查詢報價。"
-      },
-      "en": {
-        "title": "Can Badges 57mm & 76mm | Free Shipping $99+ | ZprintPro",
-        "description": "Custom can badge printing. 57mm standard, 76mm large, 44mm mini. Safety pin included, full-color printing, MOQ 10 pcs | Free Design | 100 MOQ",
-        "h1": "Can Badge Printing 57mm & 76mm | Comiket Ready",
-        "keywords": ["can badge printing", "pin badge", "anime badge", "oshi-katsu", "comiket badge", "VTuber goods", "anime merchandise", "safety pin badge"],
-        "body": "Can badges are one of the most dependable merchandise staples for Comiket, oshi-katsu, and VTuber goods — small, colorful, and easy to wear on a bag, lanyard, or jacket. Full-color printing preserves the detail of illustrations and logos, and the built-in safety pin makes attachment effortless.\n\nDoujin circles commonly pair a doujinshi printing run with a badge lineup: three sizes give you a mini, a standard, and a large version of the same artwork, so fans can choose their favorite scale or collect all three. Corporate events and merchandise sales use the same approach for giveaways and event exclusives, while retail, cross-border e-commerce, beauty, education, wedding, and brand-activation projects all fit the small-batch model.\n\nFor oshi-katsu supporters, a pin badge is the most direct way to show favorite-character love at live events, meet-ups, and conventions — the same fan economy that drives doujinshi printing orders worldwide. Because the print surface is smooth and durable, bright character art and fine logo details stay sharp even after weeks of daily wear.\n\nEach badge combines a metal base with a paper or PET print surface and a standard safety pin. Choose 57mm standard, 76mm large, or 44mm mini, printed in offset or digital 4-color CMYK, with individual OPP bag packaging available on request.\n\nBadges start at ¥1,200 each with a minimum order of 10 pieces. Our Asia factory ships via DHL Express to Japan in 2-4 business days, and the 24-hour rush service before Comiket covers last-minute extras. You also get a free digital proof, no setup fees, and a 30-second AI quote, with FSC-certified materials and ISO 12647 color management from ISO 9001 certified production.\n\n**FAQ**\n\n**Q1: Which sizes are available?** Three sizes: 57mm standard, 76mm large, and 44mm mini.\n\n**Q2: Will fine illustration details reproduce well?** Yes — full-color offset or digital CMYK printing keeps linework and logos crisp.\n\n**Q3: Is the safety pin included?** Yes, a safety pin is standard on every badge, with optional OPP bag packaging.\n\nReady to order your badges? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
-      },
-      "ja": {
-        "title": "缶バッジ印刷 57/76mm | 推し活 コミケ | 10個〜 | ZprintPro",
-        "description": "缶バッジ印刷サービス。高品質アルミ素材、57mm 標準 + 76mm 大判 + 44mm ミニ対応、安全ピン付き、フルカラー印刷。同人・アニメ・推し活・物販ブランド向け、10個〜対応、DHL で日本へ 2-4 日配送。無料デザイン校正 1 時間、30 秒 AI 見積もり。",
-        "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
-        "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
-        "body": "推し活やコミケ物販に必須の缶バッジ 印刷。57mm の標準サイズ、76mm の大判、44mm のミニの 3 サイズを展開し、フルカラー印刷でイラストやロゴをそのまま再現します。安全ピンが標準装備されているので、衣服やカバンに簡単に装着でき、同人イベントや企業イベントの物販ブースで大活躍します。\n\nコミケ直前の 24 時間特急対応も可能で、イベントのスケジュールに合わせて制作を進められます。10 個から対応の少部数印刷なので、個人サークルや VTuber グッズの初回生産にも最適です。バッジ 印刷の定番アイテムとして、推し活のうちわやフラワースタンドに添えるミニバッジから、配布用ノベルティまで幅広く活用されています。\n\n企業イベントやブランドキャンペーンでは、ロゴやキャッチコピーを入れたプロモーションバッジを数量まとめて発注するケースも増えています。フルカラーならではの細かなデザイン再現で、ブランドの世界観をそのまま伝えられます。\n\n材質は金属ベース + 紙 / PET 印刷面 + 安全ピン。サイズは 57mm（標準）/ 76mm（大判）/ 44mm（ミニ）の 3 種から選択できます。印刷方式はオフセット / デジタル 4色（CMYK）。OPP 袋での個別包装オプションもあり、販売用にそのまま陳列できます。FSC 認証の紙材と ISO 12647 の色管理のもと、出荷前に検品します。\n\n価格は ¥1,200〜/個 から、最小注文は 10 個。大量注文は段階割引が適用されます。標準納期 3〜5 営業日、急ぎは 24〜48 時間以内で対応します。納品は DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\n缶バッジは 10 個からご注文いただけます。ZprintPro の商品の多くは 50〜100 個/部/枚からの最小注文です。大量注文は段階割引があります。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内で対応可能です。イベント開催前に納品できるよう、正午までのデータ確定を推奨しています。DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n**Q3: 日本への配送サービスはありますか？**\nはい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。\n\n同人イベントや企業ノベルティの制作は、まず WhatsApp でご相談ください。30 秒の AI 即時見積もりから、入稿・確認・製造・検品・配送まで日本語でサポートします。ZprintPro で缶バッジを制作し、あなたの推し活や販促を盛り上げましょう。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": "罐型襟章印刷-57mm-76mm-安全扣",
-      "en": "can-badge-printing-57mm-76mm-safety-pin",
-      "ja": "缶バッジ印刷-57mm-76mm-安全ピン"
-    }
-  },
   "postcard-set": {
     "name": {
       "zh-hk": "明信片套裝",

@@ -575,7 +575,7 @@ function buildGuideRedirects() {
     ['/product/gift-boxes', '/product/rigid-boxes/'],
     ['/product/drawer-slide-gift-box', '/product/rigid-boxes/'],
     ['/product/doujin-booklets', '/product/doujinshi-printing/'],
-    ['/product/doujin-badges', '/product/can-badge/'],
+    ['/product/doujin-badges', '/category/japan-doujin/'],
     ['/product/doujin-postcards', '/product/postcard-set/'],
     ['/product/edu-textbook', '/product/textbooks/'],
     ['/product/luxury-menus', '/product/hardcover-menus/'],
@@ -643,6 +643,7 @@ function buildGuideRedirects() {
     ['name-tags-badges', '/category/place-cards/'],
     ['disposable-menus', '/product/laminated-menus/'],
     ['mesh-banners', '/product/outdoor-vinyl-banners/'],
+    ['can-badge', '/category/japan-doujin/'],
   ];
   for (const locale of LOCALES) {
     for (const [dead, target] of SKU_CUT_301) {

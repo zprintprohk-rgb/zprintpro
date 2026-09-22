@@ -1,5 +1,5 @@
 /**
- * DoujinSKU — 日本动漫风 5 SKU 网格
+ * DoujinSKU — 日本动漫风 3 SKU 网格
  * 风格：粉色-紫色渐变（区别于常规蓝白商务风）
  * 标签：コミケ必須 / 推し活応援 / VTuber向け / 少部数OK
  * 图：seedream 生成 → scripts/convert-doujin-to-webp.mjs 转 webp
@@ -37,7 +37,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: '同人誌印刷', price: 'HK$500~/部起', spec: 'A5/B5対応・表紙フルカラー', tag: 'comiket' },
-      { slug: 'can-badge', name: '缶バッジ印刷', price: 'HK$80~/個起', spec: '57mm/76mm・安全扣', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'ポストカード套装', price: 'HK$50~/枚起', spec: '和紙風・4-8枚套', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'エコトートバッグ', price: 'HK$600~/個起', spec: 'オーガニックコットン・シルク印刷', tag: 'small' },
     ],
@@ -54,7 +53,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: 'Doujinshi Printing', price: 'From $65/book', spec: 'A5/B5 · Full-color cover', tag: 'comiket' },
-      { slug: 'can-badge', name: 'Can Badge', price: 'From $10/pc', spec: '57mm/76mm · Safety pin', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'Postcard Set', price: 'From $6.5/pc', spec: 'Washi-style · 4-8 pcs/set', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'Eco Tote Bag', price: 'From $78/pc', spec: 'Organic cotton · Silk print', tag: 'small' },
     ],
@@ -71,7 +69,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: '同人誌印刷', price: '¥7500〜/部〜', spec: 'A5/B5対応・表紙フルカラー', tag: 'comiket' },
-      { slug: 'can-badge', name: '缶バッジ印刷', price: '¥1200〜/個〜', spec: '57mm/76mm・安全ピン付き', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'ポストカードセット', price: '¥750〜/枚〜', spec: '和紙風・4-8枚セット', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'エコトートバッグ', price: '¥9000〜/個〜', spec: 'オーガニックコットン・シルク印刷', tag: 'small' },
     ],
@@ -104,7 +101,7 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
         </div>
 
         {/* 5 SKU 网格 */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6">
           {t.items.map((item) => {
             return (
               <Link

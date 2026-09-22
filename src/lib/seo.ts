@@ -515,19 +515,19 @@ const categorySeoData: Record<string, {
   },
 'japan-doujin': {
     titles: {
-      'zh-hk': '同人周邊印刷 10本起 · 同人誌/亞克力/缶バッヂ/明信片 Comiket 24h特急 | 智印港',
-      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Acrylic/Can Badge/Postcard | ZprintPro',
-      ja: '同人誌印刷 10部〜 USA コミッション · アクリル/缶バッジ/ポストカード コミケ24時間特急 | ZprintPro',
+      'zh-hk': '同人周邊印刷 10本起 · 同人誌/明信片/托特袋 Comiket 24h特急 | 智印港',
+      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Booklets/Postcards/Totes | ZprintPro',
+      ja: '同人誌印刷 10部〜 USA コミッション · ポストカード/エコトート コミケ24時間特急 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '同人誌印刷,同人周邊,亞克力鑰匙扣,亞克力立牌,全息貼紙,和紙膠帶,罐型襟章,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
-      en: 'doujinshi printing,japan doujin,acrylic keychain custom,acrylic stand,can badge printing,postcard set,washi tape custom,eco tote bag print,hologram sticker,comiket printing,VTuber merch,anime goods custom,japan merchandise,oshi-katsu goods,free shipping doujinshi,USA doujinshi,small batch manga',
-      ja: '同人誌印刷,コミケ印刷,即売会,A5同人誌,B5同人誌,アクリルキーホルダー,アクリルスタンド,缶バッジ,ポストカード,和紙テープ,エコトートバッグ,ホログラムステッカー,VTuber グッズ,推し活グッズ',
+      'zh-hk': '同人誌印刷,同人周邊,亞克力立牌,全息貼紙,和紙膠帶,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
+      en: 'doujinshi printing,japan doujin,acrylic stand,postcard set,washi tape custom,eco tote bag print,hologram sticker,comiket printing,VTuber merch,anime goods custom,japan merchandise,oshi-katsu goods,free shipping doujinshi,USA doujinshi,small batch manga',
+      ja: '同人誌印刷,コミケ印刷,即売会,A5同人誌,B5同人誌,アクリルスタンド,ポストカード,和紙テープ,エコトートバッグ,ホログラムステッカー,VTuber グッズ,推し活グッズ',
     },
     descriptions: {
-      'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
-      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, ISO 9001 certified. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
+      'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
+      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, postcard sets and eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, ISO 9001 certified. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
+      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
     },
   },
   'envelopes': {
