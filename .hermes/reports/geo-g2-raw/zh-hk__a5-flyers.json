@@ -1,0 +1,93 @@
+{
+ "url": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+ "isRendered": true,
+ "numObjects": 11,
+ "totalNumErrors": 5,
+ "totalNumWarnings": 0,
+ "errors": [
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_ITEMTYPE",
+   "args": [
+    "ProcureAction"
+   ],
+   "begin": 22815,
+   "end": 22961,
+   "isSevere": true,
+   "errorID": 0,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_OBJECT",
+   "args": [
+    "potentialAction",
+    "ProcureAction",
+    "Action,http://schema.org/Role"
+   ],
+   "begin": 22815,
+   "end": 22961,
+   "isSevere": true,
+   "errorID": 1,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_PREDICATE",
+   "args": [
+    "sourcingIntentKeywords",
+    "Product"
+   ],
+   "begin": 22987,
+   "end": 23059,
+   "isSevere": true,
+   "errorID": 2,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-title"
+   ],
+   "begin": 37009,
+   "end": 37025,
+   "isSevere": true,
+   "errorID": 3,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-description"
+   ],
+   "begin": 37026,
+   "end": 37048,
+   "isSevere": true,
+   "errorID": 4,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  }
+ ],
+ "_note": "validator.schema.org raw response, html/tripleGroups echo stripped (门童品牌分层合规 + 体积); 全量原始抓取 2026-09-22"
+}

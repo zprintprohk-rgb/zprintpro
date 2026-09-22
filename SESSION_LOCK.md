@@ -3,7 +3,22 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: 🔴 **已释放（RELEASED）** — 2026-09-21 03:2x（E4 CTA+內鏈交付完成：dc79fb45 已隨 5b0cb0a1 push，線上 7 頁指紋終驗全過）
+> **状态**: 🟢 **持有中（HELD）** — 2026-09-22 04:5x（kw-flywheel 飞轮执行会话，见下方持有声明）
+
+---
+
+## 持有声明（2026-09-22 04:5x · kw-flywheel 飞轮执行会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | kw-flywheel 飞轮执行会话（K3 指令：读 DELIVERY/kw-flywheel 报告后执行全站 SKU+blog SEO+AEO+GEO 增强，目标带钱词进首页） |
+| **意图** | ① 4 槽合法 title 重写（saddle-stitch-booklets zh-hk / food-boxes zh-hk+ja / double-sided-flyers ja，冻结 23 slug 避让、批次1/R2 验证窗避让、当量 50-57 全过）② AEO desc 首句直答化 ~18 槽（MOQ 冲突 + 重复 artifact + 模板残缺修复）③ GEO：产品页 FAQPage 接通 SKU 级带钱问答（product-faqs.ts 新增 skuMoneyFAQs 映射 + page.tsx 合并）④ sticker-guide blog MOQ 100→10 真值修复 |
+| **写入范围** | `src/data/sku-seo-data.ts`（apply 脚本块级锚定 + 自动备份）· `src/data/product-faqs.ts` · `src/app/[locale]/product/[slug]/page.tsx`（FAQ 合并一处）· `src/data/blog-data/{zh-hk,en,ja}.json`（sticker-guide MOQ 真值）· scripts/ 新增 apply 脚本 · 本文件 |
+| **真值依据** | `DELIVERY/kw-flywheel/page_action_plan.csv`（48 行施工图）· products.ts minQuantity/basePrice · `scripts/guards/title-equiv.js` 50-57 · GSC `.hermes/gsc-2026-09-18/extract.json` |
+| **冻结避让** | title-window-freeze 23 slug 全避让；批次1 42 槽 + R2 2 槽 + T1 516 字段验证窗（至 ~9/28-30）全避让；same-day-flyers zh-hk（9/20 事实修复窗）避让 |
+| **预计时长** | < 90 min |
+| **释放条件** | 四件套（census/audit-sku-locale/tsc 增量 0/门童 #25）+ commit 完成 |
+| **双条件核验** | ① src/ 无 MM、无 staged 删除（04:45 git status 实证）② 对端 ≥15min 静默（GEO-G1 释放 9/21 21:4x 起 ~7h 无写入；lane.lock 不存在；今日无定时车道运行窗）✓ |
 
 ---
 
@@ -300,3 +315,13 @@
 | **交付** | `bf4cedec`：Product.potentialAction=ProcureAction（target=/{locale}/quote/）+ sourcingIntentKeywords 三语模板（无 FOB，DHL 事实层，K3 21:23 开工确认按推荐）+ Offer.eligibleQuantity（minQuantity 99/99 覆盖，unitCode H87 + category→unitText 映射）+ businessFunction=GR Sell |
 | **验证** | tsc 54=54 存量 0 增量 ✅ · 编码 ✅ · pre-commit 门童全过 ✅ · 双 remote ls-remote 一致 ✅ · **线上断言 3/3 PASS**（a5-flyers zh-hk / waterproof-stickers en / mini-calendars ja：ProcureAction+minValue 真值+unitText 張/pcs/冊+DHL 句+GR Sell 全中，FOB 0 命中）· 探针 `scripts/g1-geo-live-probe-20260921.mjs` |
 | **遗留** | G2 批（Rich Results/validator 6 页验证 + GSIM 观察基线登记）未排期；AEO desc 层普查仍未开工 |
+
+## 释放记录（2026-09-22 09:5x · GEO-G2 + AEO-desc-census 会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | GEO-G2 验证批 + AEO desc 层普查批 正式释放（只读审计批，**src/ 零改动**） |
+| **交付** | `docs/2026-09-22-geo-g2-validation.md`（6 页验收单）· `.hermes/reports/geo-g2-validation-2026-09-22-evidence.json`（66 断言全 PASS）+ `geo-g2-raw/`（6 页 validator 原始响应）· `.hermes/reports/gsim-baseline-2026-09-22.json` + llms.txt/robots.txt 存档（40,131/1,193 bytes）· `.hermes/reports/aeo-desc-census-2026-09-22.{json,md}`（300 槽三态：合规 8 / 缺要素 122 / 无答案句 170；🔴 MOQ 漂移 14 槽；只出清单不改 src）· 探针 5 枚（g2-geo-validation / g2-validator-merge / gsim-baseline / aeo-desc-census / aeo-census-report，均 `scripts/*-20260922.mjs`） |
+| **验证** | Task A：6/6 页 11 断言 PASS（eligibleQuantity.minValue == products.ts minQuantity 逐页对；validator.schema.org 每页仅 3 条预期「未知字段」提示，INVALID_ITEMTYPE(ProcureAction)/INVALID_OBJECT(potentialAction)/INVALID_PREDICATE(sourcingIntentKeywords) 全部命中预判定，G1 未引入新增错误；遗留 NO_MATCHES_FOUND×2 + UNKNOWN_FIELD priceRange×1 均 git 溯源 pre-G1）· §0.23.2 双方法复算 3 轮（污染字符集/价格区间正则/交期正则 3 处口径错已修，人工抽样 12 槽一致，300 自洽） |
+| **并发声明** | 本批启动时 src/ 已被 kw-flywheel 飞轮会话（04:5x 持有声明）改动且未释放；本批**不抢锁、不碰 src、不提交对方文件**（git add 仅限本批清单）；对端静默 4h+（TTL 30min 已过）。顶部 HELD 状态由 kw-flywheel 持有者自行释放，本记录不改顶行。⚠️ 赠予对端：工作区 tsc 55 = 基线 54 + `page.tsx` 1 条新增（quote-engine 无责），对端释放门「tsc 增量 0」会拦，先自查 |
+| **遗留** | ① GSC post-G1 产品摘要对比无新窗口数据（基线 9/18：hk 8,188/jp 714/us 1,885 imps），周三 gsc lane pull 后复核 ② Speakable cssSelector NO_MATCHES_FOUND + Organization priceRange UNKNOWN_FIELD（均 pre-G1）③ desc 落地批待 K3 批（P0+MOQ 交集 10 槽优先）④ census 测量口径 = 工作区 9/22 版（含 kw-flywheel 未提交 desc 修复），push 后基线以新 pull 重测 |

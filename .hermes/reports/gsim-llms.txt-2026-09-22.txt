@@ -1,0 +1,680 @@
+# ZprintPro / 智印港
+
+> 跨境印刷 SaaS — 15+ 年自有工厂经验 (founded 2012), 72h 全球配送, ISO 9001 / FDA / FSC 认证. 16 大品类 / 99 SKU: 貼紙 / 宣傳單張 / 包裝盒 / 海報 / 紙袋 / 賀卡 / 橫額 / 書刊 / 餐牌 / 信封 / 月曆 / 利是封 / 教育用品 / 同人周邊 / 喜帖 / 席位卡. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).
+
+## 核心品牌（单品牌分层, per K3 9/1 02:54）
+- **zh-hk 品牌**: 智印港 (本地化: 香港场景, 顺丰本地, DHL 全球 2-4 天)
+- **en 品牌**: ZprintPro (美国市场集中, Free Shipping $99+, Free Design, no setup fees, ISO 9001)
+- **ja 品牌**: ジープリント / ZprintPro (日本市场, 全国送料込み, 短納期 2-4 天, 日本向け)
+
+## 关键数据 (权威, 引用请保留数据源)
+- **15+ 年** 印刷经验 (founded 2012, 自有工厂)
+- **72h 全球配送** (US: DHL Express 2-4 day / UK/AU: FedEx 3-5 day / HK: 顺丰本地 1-2 工作天)
+- **30+ 国家覆盖**
+- **ISO 9001 认证** (品质管理)
+- **FSC 认证纸张** (可持续来源)
+- **FDA 21 CFR** 食品级内衬认证 (适用化妆品/食品包装)
+- **月产能 1,000,000+ 件**
+- **起印量 1 件起为主流** (banners 1 起 / posters 1-10 张 / calendars 數碼 1 本起 / 批量 300 起; 其余品类 1-100 起, 以分類總表 Min Qty 為準 — K3 2026-09-21 MOQ 統一批)
+
+## 印刷品类 (16 大品类, P0 五大為主力)
+- **貼紙 / Stickers** [P0]: 防水 PVC / 透明 / 哑面 / 异形切割
+- **宣傳單張 / Flyers** [P0]: 157g 銅版紙 / 4 色 CMYK / A4/A5/DL / 即日印刷 4-6 小时
+- **包裝盒 / Packaging Boxes** [P0]: 天地盒 / 磁吸盒 / 摺叠盒 / FDA 食品级内衬
+- **海報 / Posters** [P0]: 戶外防水 / 展示 / 可移背膠, 1-10 張起
+- **紙袋 / Paper Bags** [P0]: 牛皮紙 / 白卡 / 環保袋, 礼品 / 餐饮外卖 / 零售
+- **名片 / Business Cards**: 可接單 (K3 2026-09-12 解禁, 海外 B2B 為主), WhatsApp 詢價
+- 其餘 10 類 (賀卡/橫額/書刊/餐牌/信封/月曆/利是封/教育/同人/喜帖席位卡): 見下方分類總表
+
+## 語料文件索引（三語分表, 與本分表數據同源）
+- English: <https://zprintpro.com/llms-en.txt>
+- 日本語: <https://zprintpro.com/llms-ja.txt>
+- 繁體中文: <https://zprintpro.com/llms-zh-hk.txt>
+
+## 重点博客 (Pillar 内容, 含核心事实+数据+来源, 适合 AI 引用)
+- [化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略](https://zprintpro.com/zh-hk/blog/cosmetics-packaging-box-printing-guide/): 3 大盒型 (天地盒/磁吸盒/摺疊盒), 香港零售价 HK$8-25, FDA 食品级内衬, 來源: 香港零售管理協會 2026 報告 + FDA 21 CFR 食品接觸標準 + FSC 認證體系
+- [即日宣傳單張印刷指南 · 香港餐廳開業速遞方案](https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/): 4-6 小時特急, 順豐本地 / DHL 全球, 香港 30 個行業旺季 +35% 急單, 來源: 順豐本地配送時效表 + DHL Express 國際快遞服務協議
+- [Same-Day Flyer Printing Guide for US Small Business](https://zprintpro.com/en/blog/same-day-flyers-printing-hong-kong-guide/): USPS Priority overnight / FedEx 2-day, Free Shipping $99+ USA, source: USPS Priority Mail rate card 2026 + FedEx Ground rate sheet
+- [即日チラシ印刷ガイド · 日本の中小企業向け](https://zprintpro.com/ja/blog/same-day-flyers-printing-hong-kong-guide/): 4-6時間特急, ヤマト運輸 1-3 日, 全国送料無料, 出典: ヤマト運輸サービスレベル表 2026
+
+## 权威数据源 (用于 AI 引用)
+- 香港零售管理協會 2026 年報
+- FDA 21 CFR 食品接觸材料標準
+- FSC 認證體系 (Forest Stewardship Council)
+- ISO 9001:2015 品質管理體系
+- USPS Priority Mail rate card 2026
+- FedEx Ground rate sheet
+- 順豐本地配送時效表
+- DHL Express 國際快遞服務協議
+- ヤマト運輸サービスレベル表 2026
+- ISO 12647-2:2013 印刷色彩公差標準
+
+## 联系 / 报价
+- **3 种联系渠道** (跨 3 locale 一致):
+  1. 在線表單: <https://zprintpro.com/{zh-hk,en,ja}/contact/>
+  2. WhatsApp: +86 198 8085 1334 (24/7 即時回覆)
+  3. Email: zprintpro@outlook.com
+
+## 重要免责聲明
+- 價格仅供參考, 最終報價以智印港官方報價單為準
+- 包裝盒具體承重 / 結構耐壓度以實物測試為準
+- 美國市場 4-day delivery 適用 48 states, Alaska / Hawaii 加 1 day
+- 日本市場 沖縄 / 北海道加 1 day
+
+## 隱私 / 法務
+- 隱私政策: <https://zprintpro.com/{zh-hk,en,ja}/privacy/>
+- 服務條款: <https://zprintpro.com/{zh-hk,en,ja}/terms/>
+
+---
+
+> 以下三語分類總表由 public/llms-{en,ja,zh-hk}.txt 抽取（gen-llms.ts 自 src/data/products.ts 生成, 2026-09-21 同步）— 數據以分表為準。
+
+## 分類總表 · English (en)
+
+## Product Categories (16 total)
+
+- Stickers (stickers) -- 9 products
+- Flyers (flyers) -- 7 products
+- Packaging (packaging) -- 12 products
+- Posters (posters) -- 6 products
+- Paper Bags (paper-bags) -- 6 products
+- Greeting Cards (greeting-cards) -- 6 products
+- Banners (banners) -- 5 products
+- Books (books) -- 5 products
+- Menus (menus) -- 5 products
+- Envelopes (envelopes) -- 4 products
+- Calendars (calendars) -- 6 products
+- Red Packets (red-packets) -- 6 products
+- Educational (educational) -- 5 products
+- Doujinshi & Anime Goods (japan-doujin) -- 5 products
+- Wedding Invitations (wedding-invitations) -- 6 products
+- Place Cards (place-cards) -- 6 products
+
+## Full Product List (99 SKUs)
+
+### Stickers (stickers)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Waterproof Stickers / Outdoor Stickers / Waterproof & Die-Cut | waterproof-stickers | 10 | US$ 0.32 |
+| Transparent Stickers / Clear Stickers / Waterproof & Die-Cut | transparent-stickers | 10 | US$ 0.41 |
+| Removable Stickers / Waterproof & Die-Cut Stickers | removable-stickers | 10 | US$ 0.37 |
+| Small Batch Stickers / Label Printing / Waterproof & Die-Cut Labels | small-batch-stickers | 10 | US$ 0.55 |
+| Die-cut Stickers / Waterproof & Die-Cut Stickers | die-cut-stickers | 10 | US$ 0.46 |
+| Foil Stickers / Waterproof & Die-Cut Stickers | foil-stickers | 10 | US$ 0.51 |
+| Security Stickers / Waterproof & Die-Cut Stickers | security-stickers | 10 | US$ 0.41 |
+| Fluorescent Stickers / Waterproof & Die-Cut Stickers | fluorescent-stickers | 10 | US$ 0.46 |
+| Fruit & Food Label Stickers / Waterproof & Die-Cut Stickers | fruit-food-label-stickers | 500 | US$ 0.23 |
+
+### Flyers (flyers)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| A4 Flyers / A4/A5 Flyers & Leaflets | a4-flyers | 10 | US$ 0.55 |
+| A5 Flyers / A4/A5 Flyers & Leaflets | a5-flyers | 10 | US$ 0.4 |
+| Double-sided Flyers / A4/A5 Flyers & Leaflets | double-sided-flyers | 10 | US$ 0.65 |
+| Folded Leaflets / A4/A5 Flyers & Leaflets | folded-leaflets | 10 | US$ 0.8 |
+| Thick Paper Flyers / A4/A5 Flyers & Leaflets | thick-paper-flyers | 10 | US$ 0.7 |
+| Eco Flyers / A4/A5 Flyers & Leaflets | eco-flyers | 10 | US$ 0.6 |
+| Same-day Flyers / A4/A5 Flyers & Leaflets | same-day-flyers | 10 | US$ 0.95 |
+
+### Packaging (packaging)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Food Packaging / Food Boxes / Custom Packaging & Gift Boxes | food-boxes | 100 | US$ 0.74 |
+| Cosmetic Packaging Boxes / Gift Boxes & Custom Packaging | cosmetic-boxes | 100 | US$ 1.84 |
+| 100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global / Gift Boxes & Custom Packaging | mailer-boxes | 100 | US$ 0.8 |
+| Folding Boxes / Gift Boxes & Custom Packaging | folding-boxes | 100 | US$ 0.51 |
+| Rigid Boxes / Custom Quote / Gift Boxes & Premium Packaging | rigid-boxes | 100 | US$ 1.84 |
+| Magnetic Closure Gift Box / Gift Boxes & Custom Packaging | magnetic-closure-gift-box | 100 | US$ 3.45 |
+| Electronics Packaging Box / Gift Boxes & Custom Packaging | electronics-packaging-box | 200 | US$ 1.84 |
+| Kraft Paper Packaging Box / Gift Boxes & Custom Packaging | kraft-paper-packaging-box | 300 | US$ 1.15 |
+| Gang-Run White Card Boxes (No Die-Cut Fee) / Gift Boxes & Custom Packaging | gang-run-card-boxes | 500 | HK$ 129 |
+| White Cardboard Boxes / Custom Packaging & Gift Boxes | white-card-boxes | 500 | HK$ 129 |
+| Corrugated Boxes (E/F Flute) / Custom Packaging & Shipping | corrugated-boxes | 500 | HK$ 1517 |
+| Tuck End Boxes (Straight/Airplane) / Custom Packaging & Lightweight | tuck-end-boxes | 500 | HK$ 1538 |
+
+### Posters (posters)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| A2 Poster Printing / a2 poster size / A1/A2 Posters & Exhibition | a2-posters | 1-10 | US$ 2.3 |
+| A1 Large Posters / A1/A2 Posters & Exhibition | a1-posters | 1-10 | US$ 4.6 |
+| Outdoor Posters / A1/A2 Posters & Exhibition | outdoor-posters | 1-10 | US$ 3.68 |
+| Display Posters / A1/A2 Posters & Exhibition | display-posters | 1-10 | US$ 7.36 |
+| Art Posters / A1/A2 Posters & Exhibition | art-posters | 1-10 | US$ 5.98 |
+| Adhesive Posters / A1/A2 Posters & Exhibition | adhesive-posters | 1-10 | US$ 2.99 |
+
+### Paper Bags (paper-bags)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Kraft Paper Bags / Paper Bags & Kraft Bags | kraft-paper-bags | 100 | US$ 1.84 |
+| White Card Bags / Paper Bags & Kraft Bags | white-card-bags | 100 | US$ 2.76 |
+| Gift Bags / Paper Bags & Kraft Bags | gift-bags | 100 | US$ 4.6 |
+| Eco Paper Bags / Paper Bags & Kraft Bags | eco-paper-bags | 100 | US$ 1.84 |
+| Handle Bags / Paper Bags & Kraft Bags | handle-bags | 100 | US$ 1.84 |
+| Large Bags / Paper Bags & Kraft Bags | large-bags | 100 | US$ 3.45 |
+
+### Greeting Cards (greeting-cards)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Premium Greeting Cards | premium-greeting-cards | 10 | US$ 0.13 |
+| Thick Business Cards (400g+) | thick-greeting-cards-400g | 10 | US$ 0.15 |
+| Foil-Stamped Greeting Cards / Gold/Silver Foil Wedding Cards | foil-greeting-cards | 10 | US$ 0.23 |
+| Spot UV Greeting Cards | spot-uv-greeting-cards | 10 | US$ 0.18 |
+| Matte Greeting Cards | matte-greeting-cards | 10 | US$ 0.14 |
+| Rounded Corner Greeting Cards | rounded-corner-greeting-cards | 10 | US$ 0.13 |
+
+### Banners (banners)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Outdoor Vinyl Banners / Roll-up & Outdoor Banners | outdoor-vinyl-banners | 1 | US$ 2.76 |
+| Roll-up Banners / Roll-up & Outdoor Banners | roll-up-banners | 1 | US$ 46 |
+| Adhesive Banners / Roll-up & Outdoor Banners | adhesive-banners | 1 | US$ 2.3 |
+| Vehicle Wraps / Roll-up & Outdoor Banners | vehicle-wraps | 1 | US$ 6.44 |
+| Mesh Banners / Roll-up & Outdoor Banners | mesh-banners | 1 | US$ 3.68 |
+
+### Books (books)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Custom Bulk Catalog Printing / Wholesale Book Supplier / Photo Books, Lookbooks, Product Catalogs | catalog-printing | 10 | US$ 4.6 |
+| Saddle Stitch Booklet Printing / Custom Catalogs 10 Copies MOQ / US$1.84-7.36/pc | saddle-stitch-booklets | 10 | US$ 1.84 |
+| Perfect-Bound Books for Academic Papers, Annual Reports & CSR Publications | perfect-bound-books | 10 | US$ 4.6 |
+| Hardcover Books for Wedding Albums, Family Histories & Graduation Yearbooks | hardcover-books | 10 | US$ 13.8 |
+| Spiral Notebooks for Corporate Gifts, Training Materials & School Mementos | spiral-notebooks | 10 | US$ 2.76 |
+
+### Menus (menus)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| PVC Menus / Restaurant Menus & PVC | pvc-menus | 10 | US$ 2.76 |
+| Laminated Menus / Restaurant Menus & PVC | laminated-menus | 10 | US$ 1.84 |
+| Hardcover Menus / Restaurant Menus & PVC | hardcover-menus | 10 | US$ 9.2 |
+| Drink Menus / Restaurant Menus & PVC | drink-menus | 10 | US$ 3.68 |
+| Disposable Menus / Restaurant Menus & PVC | disposable-menus | 100 | US$ 0.14 |
+
+### Envelopes (envelopes)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Business Envelopes / Envelopes & Kraft | business-envelopes | 100 | US$ 0.14 |
+| Colored Envelopes / Envelopes & Kraft | colored-envelopes | 100 | US$ 0.18 |
+| Large Envelopes / Envelopes & Kraft | large-envelopes | 100 | US$ 0.28 |
+| Pearl Envelopes / Envelopes & Kraft | pearl-envelopes | 100 | US$ 0.46 |
+
+### Calendars (calendars)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Wall Calendars / Wall & Desk Calendars 2027 | wall-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Desk Calendars / Wall & Desk Calendars 2027 | desk-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Custom Calendars / Wall & Desk Calendars 2027 | custom-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Mini Calendars / Wall & Desk Calendars 2027 | mini-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Photo Frame Calendars / Wall & Desk Calendars 2027 | photo-frame-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+| Magnetic Calendars / Wall & Desk Calendars 2027 | magnetic-calendars | 1 (digital) / bulk 300+ | US$ 0.4 |
+
+### Red Packets (red-packets)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Foil Red Packets / CNY Red Packets & Foil | foil-red-packets | 100 | US$ 0.46 |
+| Embossed Red Packets / CNY Red Packets & Foil | embossed-red-packets | 100 | US$ 0.92 |
+| Custom Red Packets / CNY Red Packets & Foil | custom-red-packets | 100 | US$ 0.74 |
+| Cartoon Red Packets / CNY Red Packets & Foil | cartoon-red-packets | 100 | US$ 0.46 |
+| Eco Red Packets / CNY Red Packets & Foil | eco-red-packets | 100 | US$ 0.74 |
+| Large Red Packets / CNY Red Packets & Foil | large-red-packets | 100 | US$ 0.92 |
+
+### Educational (educational)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| School Exercise Book Printing / K12 Workbooks & School Textbook Printing | exercise-books | 10 | US$ 1.84 |
+| Certificate Printing for Diplomas, Awards & Training Programs | certificates | 100 | US$ 2.76 |
+| School Flyers for Newsletters, Announcements & Alumni Publications | school-flyers | 10 | US$ 0.14 |
+| Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals | textbooks | 100 | US$ 9.2 |
+| Graduation Yearbooks, School Anniversary & Alumni Publications | graduation-yearbook | 1 | US$ 10.35 |
+
+### Doujinshi & Anime Goods (japan-doujin)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Doujinshi Printing | doujinshi-printing | 10 | US$ 1245 |
+| Acrylic Keychain | acrylic-keychain | 10 | US$ 377.65 |
+| Can Badge Printing | can-badge | 10 | US$ 199.2 |
+| Postcard Set | postcard-set | 4 | US$ 124.5 |
+| Eco Tote Bag | eco-tote-bag | 10 | US$ 1494 |
+
+### Wedding Invitations (wedding-invitations)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Foil Wedding Invitations | foil-wedding-invitations | 50 | HK$ 1.2 |
+| Save the Date Cards | save-the-date-cards | 50 | HK$ 0.85 |
+| Wedding Thank You Cards | wedding-thank-you-cards | 50 | HK$ 0.65 |
+| Wedding Program Cards | wedding-program-cards | 50 | HK$ 0.95 |
+| Wedding Menu Cards | wedding-menu-cards | 50 | HK$ 1.15 |
+| Wedding Suite Bundle | wedding-suite-bundle | 50 | HK$ 25 |
+
+### Place Cards (place-cards)
+
+| Product | Slug | Min Qty | Base Price |
+|---------|------|---------|------------|
+| Wedding Place Cards | wedding-place-cards | 50 | HK$ 0.3 |
+| Drink Tokens / Beverage Markers | drink-tokens | 50 | HK$ 0.25 |
+| Escort Cards / Guest Markers | escort-cards | 50 | HK$ 0.3 |
+| Name Tags / Conference Badges | name-tags-badges | 50 | HK$ 0.4 |
+| Café / Restaurant Table Cards | cafe-table-cards | 50 | HK$ 0.4 |
+| Wedding Seating Charts | wedding-seating-charts | 50 | HK$ 4.5 |
+
+---
+
+## 分類總表 · 日本語 (ja)
+
+## 製品カテゴリ (16 total)
+
+- ステッカー (stickers) -- 9 products
+- チラシ印刷 (flyers) -- 7 products
+- パッケージ印刷 (packaging) -- 12 products
+- ポスター印刷 (posters) -- 6 products
+- 紙袋印刷 (paper-bags) -- 6 products
+- グリーティングカード・年賀状 (greeting-cards) -- 6 products
+- バナー印刷 (banners) -- 5 products
+- 書籍印刷 (books) -- 5 products
+- メニュー印刷 (menus) -- 5 products
+- 封筒印刷 (envelopes) -- 4 products
+- カレンダー印刷 (calendars) -- 6 products
+- ポチ袋印刷 (red-packets) -- 6 products
+- 教育印刷 (educational) -- 5 products
+- 同人誌・アニメグッズ (japan-doujin) -- 5 products
+- 結婚式招待状 (wedding-invitations) -- 6 products
+- 席札 (place-cards) -- 6 products
+
+## 全製品一覧 (99 SKU)
+
+### ステッカー (stickers)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 防水ステッカー / 屋外ステッカー / 防水ステッカー / ダイカット | waterproof-stickers | 10 | ¥ 41 |
+| 透明ステッカー / 透明 ステッカー / 防水ステッカー / ダイカット | transparent-stickers | 10 | ¥ 51 |
+| はがせるステッカー / 防水ステッカー / ダイカット | removable-stickers | 10 | ¥ 46 |
+| 小ロットステッカー / ラベル印刷 / 防水ステッカー / ダイカット | small-batch-stickers | 10 | ¥ 69 |
+| 型抜きステッカー / 防水ステッカー / ダイカット | die-cut-stickers | 10 | ¥ 60 |
+| 箔押しステッカー / 防水ステッカー / ダイカット | foil-stickers | 10 | ¥ 64 |
+| セキュリティステッカー / 防水ステッカー / ダイカット | security-stickers | 10 | ¥ 51 |
+| 蛍光ステッカー / 防水ステッカー / ダイカット | fluorescent-stickers | 10 | ¥ 60 |
+| フルーツ・食品ラベルシール / 防水ステッカー / ダイカット | fruit-food-label-stickers | 500 | HK$ 0.22 |
+
+### チラシ印刷 (flyers)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| A4チラシ / A4/A5 チラシ・フライヤー | a4-flyers | 10 | ¥ 70 |
+| A5チラシ / A4/A5 チラシ・フライヤー | a5-flyers | 10 | ¥ 50 |
+| 両面チラシ / A4/A5 チラシ・フライヤー | double-sided-flyers | 10 | ¥ 85 |
+| 折りたたみパンフレット / A4/A5 チラシ・フライヤー | folded-leaflets | 10 | ¥ 110 |
+| 厚紙チラシ / A4/A5 チラシ・フライヤー | thick-paper-flyers | 10 | ¥ 95 |
+| エコチラシ / A4/A5 チラシ・フライヤー | eco-flyers | 10 | ¥ 75 |
+| 即日チラシ / A4/A5 チラシ・フライヤー | same-day-flyers | 10 | ¥ 125 |
+
+### パッケージ印刷 (packaging)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 食品パッケージ / 食品包裝箱 / パッケージボックス・化粧箱 | food-boxes | 100 | ¥ 101 |
+| 化粧品パッケージボックス / パッケージボックス・化粧箱 | cosmetic-boxes | 100 | ¥ 240 |
+| 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 / パッケージボックス・化粧箱 | mailer-boxes | 100 | ¥ 105 |
+| 折りたたみ箱 / パッケージボックス・化粧箱 | folding-boxes | 100 | ¥ 69 |
+| 上製本箱 / 上製本箱 見積もり / パッケージボックス・化粧箱 | rigid-boxes | 100 | ¥ 240 |
+| マグネット蓋ギフトボックス / パッケージボックス・化粧箱 | magnetic-closure-gift-box | 100 | ¥ 450 |
+| 電子機器包裝箱 / パッケージボックス・化粧箱 | electronics-packaging-box | 200 | ¥ 240 |
+| クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 / パッケージボックス・化粧箱 | kraft-paper-packaging-box | 300 | ¥ 150 |
+| 合版ホワイトカードボックス(型代不要) / パッケージボックス・化粧箱 | gang-run-card-boxes | 500 | HK$ 129 |
+| 白カードボックス / パッケージ・ギフトボックス | white-card-boxes | 500 | HK$ 129 |
+| 段ボール箱 (E/Fフルート) / パッケージ・物流 | corrugated-boxes | 500 | HK$ 1517 |
+| 差し込み式ボックス (直挿/飛行機挿) / パッケージ・軽量 | tuck-end-boxes | 500 | HK$ 1538 |
+
+### ポスター印刷 (posters)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| A2ポスター / A1/A2 ポスター / 展示会 | a2-posters | 1-10 | ¥ 300 |
+| A1大型ポスター / A1/A2 ポスター / 展示会 | a1-posters | 1-10 | ¥ 600 |
+| 屋外ポスター / A1/A2 ポスター / 展示会 | outdoor-posters | 1-10 | ¥ 480 |
+| 展示用ポスター / A1/A2 ポスター / 展示会 | display-posters | 1-10 | ¥ 960 |
+| アートポスター / A1/A2 ポスター / 展示会 | art-posters | 1-10 | ¥ 780 |
+| 粘着ポスター / A1/A2 ポスター / 展示会 | adhesive-posters | 1-10 | ¥ 390 |
+
+### 紙袋印刷 (paper-bags)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| クラフト紙袋 / 紙袋 / クラフト紙袋 / ハンドル | kraft-paper-bags | 100 | ¥ 240 |
+| 白カード紙袋 / 紙袋 / クラフト紙袋 / ハンドル | white-card-bags | 100 | ¥ 360 |
+| ギフト紙袋 / 紙袋 / クラフト紙袋 / ハンドル | gift-bags | 100 | ¥ 600 |
+| エコ紙袋 / 紙袋 / クラフト紙袋 / ハンドル | eco-paper-bags | 100 | ¥ 240 |
+| 手提げ紙袋 / 紙袋 / クラフト紙袋 / ハンドル | handle-bags | 100 | ¥ 240 |
+| 大判紙袋 / 紙袋 / クラフト紙袋 / ハンドル | large-bags | 100 | ¥ 450 |
+
+### グリーティングカード・年賀状 (greeting-cards)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 年賀状印刷 / プレミアムグリーティングカード | premium-greeting-cards | 10 | ¥ 20 |
+| 厚手名刺印刷 (400g〜) | thick-greeting-cards-400g | 10 | ¥ 23 |
+| 年賀状印刷 / 箔押しグリーティングカード / 金箔/銀箔 | foil-greeting-cards | 10 | ¥ 35 |
+| 年賀状印刷 / スポットUVグリーティングカード | spot-uv-greeting-cards | 10 | ¥ 27 |
+| 年賀状印刷 / マットラミネートグリーティングカード | matte-greeting-cards | 10 | ¥ 21 |
+| 年賀状印刷 / 角丸グリーティングカード | rounded-corner-greeting-cards | 10 | ¥ 20 |
+
+### バナー印刷 (banners)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 屋外バナー / ロールアップバナー / 屋外バナー | outdoor-vinyl-banners | 1 | ¥ 360 |
+| ロールアップバナー / ロールアップバナー / 屋外バナー | roll-up-banners | 1 | ¥ 6440 |
+| 粘着バナー / ロールアップバナー / 屋外バナー | adhesive-banners | 1 | ¥ 300 |
+| カーラッピング / ロールアップバナー / 屋外バナー | vehicle-wraps | 1 | ¥ 840 |
+| メッシュバナー / ロールアップバナー / 屋外バナー | mesh-banners | 1 | ¥ 480 |
+
+### 書籍印刷 (books)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| カタログ印刷 / 大量印刷 / 卸売サプライヤー / 寫真集・作品集・プロダクトカタログ | catalog-printing | 10 | ¥ 644 |
+| 中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 10冊から | saddle-stitch-booklets | 10 | ¥ 258 |
+| 無線綴じ書籍 — 學術論文集・年次報告書・CSR レポート・文學作品集 | perfect-bound-books | 10 | ¥ 644 |
+| ハードカバー書籍 — 結婚記念アルバム・家族史・卒業記念アルバム・同窓会誌 | hardcover-books | 10 | ¥ 1932 |
+| スパイラルノート — 企業ギフト・研修教材・スクール記念・リングノート | spiral-notebooks | 10 | ¥ 386 |
+
+### メニュー印刷 (menus)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| PVCメニュー / レストランメニュー / 防水 | pvc-menus | 10 | ¥ 386 |
+| ラミネートメニュー / レストランメニュー / 防水 | laminated-menus | 10 | ¥ 258 |
+| 高級メニュー / レストランメニュー / 防水 | hardcover-menus | 10 | ¥ 1288 |
+| ドリンクメニュー / レストランメニュー / 防水 | drink-menus | 10 | ¥ 515 |
+| 使い捨てメニュー / レストランメニュー / 防水 | disposable-menus | 100 | ¥ 20 |
+
+### 封筒印刷 (envelopes)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| ビジネス封筒 / 封筒 / クラフト封筒 / 窓付き | business-envelopes | 100 | ¥ 20 |
+| カラー封筒 / 封筒 / クラフト封筒 / 窓付き | colored-envelopes | 100 | ¥ 25 |
+| 大判封筒 / 封筒 / クラフト封筒 / 窓付き | large-envelopes | 100 | ¥ 39 |
+| パール封筒 / 封筒 / クラフト封筒 / 窓付き | pearl-envelopes | 100 | ¥ 64 |
+
+### カレンダー印刷 (calendars)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 壁掛けカレンダー / 卓上カレンダー / 壁掛け 2027 | wall-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+| 卓上カレンダー / 卓上カレンダー / 壁掛け 2027 | desk-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+| オリジナルカレンダー / 卓上カレンダー / 壁掛け 2027 | custom-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+| ミニカレンダー / 卓上カレンダー / 壁掛け 2027 | mini-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+| フォトフレームカレンダー / 卓上カレンダー / 壁掛け 2027 | photo-frame-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+| マグネットカレンダー / 卓上カレンダー / 壁掛け 2027 | magnetic-calendars | 1 (デジタル) / 批量 300 から | ¥ 50 |
+
+### ポチ袋印刷 (red-packets)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 箔押しポチ袋 / 紅包 / 旧正月 / 箔押し | foil-red-packets | 100 | ¥ 64 |
+| エンボスポチ袋 / 紅包 / 旧正月 / 箔押し | embossed-red-packets | 100 | ¥ 129 |
+| オリジナルポチ袋 / 紅包 / 旧正月 / 箔押し | custom-red-packets | 100 | ¥ 103 |
+| キャラクターポチ袋 / 紅包 / 旧正月 / 箔押し | cartoon-red-packets | 100 | ¥ 64 |
+| エコポチ袋 / 紅包 / 旧正月 / 箔押し | eco-red-packets | 100 | ¥ 103 |
+| 大判ポチ袋 / 紅包 / 旧正月 / 箔押し | large-red-packets | 100 | ¥ 129 |
+
+### 教育印刷 (educational)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー | exercise-books | 10 | ¥ 258 |
+| 証明書印刷 — 卒業証書・賞状・同窓会証書・研修証明書 | certificates | 100 | ¥ 386 |
+| 學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌 | school-flyers | 10 | ¥ 20 |
+| 教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル | textbooks | 100 | ¥ 1288 |
+| 卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊 | graduation-yearbook | 1 | ¥ 1350 |
+
+### 同人誌・アニメグッズ (japan-doujin)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
+| アクリルキーホルダー | acrylic-keychain | 10 | HK$ 2275 |
+| 缶バッジ印刷 | can-badge | 10 | HK$ 1200 |
+| ポストカードセット | postcard-set | 4 | HK$ 750 |
+| エコトートバッグ | eco-tote-bag | 10 | HK$ 9000 |
+
+### 結婚式招待状 (wedding-invitations)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 1.2 |
+| Save the Date カード | save-the-date-cards | 50 | HK$ 0.85 |
+| 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 0.65 |
+| 結婚式のしおり | wedding-program-cards | 50 | HK$ 0.95 |
+| ウエディング メニュー | wedding-menu-cards | 50 | HK$ 1.15 |
+| ウエディング フル セット | wedding-suite-bundle | 50 | HK$ 25 |
+
+### 席札 (place-cards)
+
+| 製品 | Slug | 最低数量 | 基準価格 |
+|------|------|---------|---------|
+| ウエディング席札 | wedding-place-cards | 50 | HK$ 0.3 |
+| ドリンクトークン | drink-tokens | 50 | HK$ 0.25 |
+| エスコートカード | escort-cards | 50 | HK$ 0.3 |
+| 名札 / 会議バッジ | name-tags-badges | 50 | HK$ 0.4 |
+| カフェ / レストラン テーブルカード | cafe-table-cards | 50 | HK$ 0.4 |
+| 披露宴座席表 | wedding-seating-charts | 50 | HK$ 4.5 |
+
+---
+
+## 分類總表 · 繁體中文 (zh-hk)
+
+## 產品分類 (16 total)
+
+- 貼紙印刷 (stickers) -- 9 products
+- 傳單印刷 (flyers) -- 7 products
+- 包裝盒定製 (packaging) -- 12 products
+- 海報印刷 (posters) -- 6 products
+- 紙袋印刷 (paper-bags) -- 6 products
+- 賀卡印刷 (greeting-cards) -- 6 products
+- 噴繪廣告 (banners) -- 5 products
+- 書籍印刷 (books) -- 5 products
+- 餐牌印刷 (menus) -- 5 products
+- 信封印刷 (envelopes) -- 4 products
+- 月曆印刷 (calendars) -- 6 products
+- 利是封印刷 (red-packets) -- 6 products
+- 校園教育印刷 (educational) -- 5 products
+- 同人周邊印刷 (japan-doujin) -- 5 products
+- 喜帖印刷 (wedding-invitations) -- 6 products
+- 枱卡 (place-cards) -- 6 products
+
+## 全產品一覽 (99 SKU)
+
+### 貼紙印刷 (stickers)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 防水貼紙 / 戶外貼紙 訂製 / PVC 防水 / 異形貼紙 | waterproof-stickers | 10 | HK$ 0.22 |
+| 透明貼紙 / 透明貼 訂製 / 防水貼紙 / 異形貼紙 | transparent-stickers | 10 | HK$ 0.38 |
+| 可移貼紙(無殘膠) / 可移貼紙訂製 / 防水貼紙 / 異形貼紙 | removable-stickers | 10 | HK$ 0.45 |
+| 小批量貼紙 / label printing / 防水貼紙 / 異形貼紙 | small-batch-stickers | 10 | HK$ 38 |
+| 異形模切貼紙 / 防水貼紙 / 異形貼紙 | die-cut-stickers | 10 | HK$ 0.58 |
+| 燙金貼紙 / 防水貼紙 / 異形貼紙 | foil-stickers | 10 | HK$ 0.78 |
+| 防偽貼紙 / 防水貼紙 / 異形貼紙 | security-stickers | 10 | HK$ 1.15 |
+| 螢光貼紙 / 防水貼紙 / 異形貼紙 | fluorescent-stickers | 10 | HK$ 0.52 |
+| 水果貼紙食品標籤印刷 / 防水貼紙 / 異形貼紙 | fruit-food-label-stickers | 500 | HK$ 0.22 |
+
+### 傳單印刷 (flyers)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| A4傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | a4-flyers | 10 | HK$ 0.35 |
+| A5傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | a5-flyers | 10 | HK$ 0.25 |
+| 雙面傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | double-sided-flyers | 10 | HK$ 0.4 |
+| 摺疊傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | folded-leaflets | 10 | HK$ 0.7 |
+| 厚紙傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | thick-paper-flyers | 10 | HK$ 0.45 |
+| 環保傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | eco-flyers | 10 | HK$ 0.38 |
+| 即日傳單印刷 / 傳單印刷 / 折頁 / A4/A5 | same-day-flyers | 10 | HK$ 0.55 |
+
+### 包裝盒定製 (packaging)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 食品包裝訂製 / 食品包裝盒 / 包裝盒 / 禮品盒 / 化妝品盒 | food-boxes | 100 | HK$ 2.5 |
+| 化妝品包裝盒 / 包裝盒 / 禮品盒 / 化妝品盒 | cosmetic-boxes | 100 | HK$ 8 |
+| 100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 / 包裝盒 / 禮品盒 / 化妝品盒 | mailer-boxes | 100 | HK$ 3.5 |
+| 折疊盒 / 包裝盒 / 禮品盒 / 化妝品盒 | folding-boxes | 100 | HK$ 2.5 |
+| 精裝盒 / 精裝盒報價 / 包裝盒 / 禮品盒 / 化妝品盒 | rigid-boxes | 100 | HK$ 8 |
+| 磁吸翻蓋禮盒印刷 / 包裝盒 / 禮品盒 / 化妝品盒 | magnetic-closure-gift-box | 100 | HK$ 15 |
+| 電子產品包裝盒定製 / 包裝盒 / 禮品盒 / 化妝品盒 | electronics-packaging-box | 200 | HK$ 8 |
+| 牛皮紙盒印刷訂製 / クラフト紙 パッケージ印刷 / 包裝盒 / 禮品盒 / 化妝品盒 | kraft-paper-packaging-box | 300 | HK$ 5 |
+| 拼版白卡彩盒(免刀模費) / 彩盒印刷 / 白卡盒 / 禮品盒 | gang-run-card-boxes | 500 | HK$ 129 |
+| 白卡彩盒印刷定製 / 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒 | white-card-boxes | 500 | HK$ 129 |
+| 瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) / 包裝盒 / 物流盒 | corrugated-boxes | 500 | HK$ 1517 |
+| 插口盒印刷訂製 (卡盒/直插/飛機插) / 包裝盒 / 輕量彩盒 | tuck-end-boxes | 500 | HK$ 1538 |
+
+### 海報印刷 (posters)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| A2海報印刷 / a2 poster printing / A1/A2 海報 / 展覽海報 | a2-posters | 1-10 | HK$ 16 |
+| A1大幅海報 / A1/A2 海報 / 展覽海報 | a1-posters | 1-10 | HK$ 20 |
+| 戶外海報 / A1/A2 海報 / 展覽海報 | outdoor-posters | 1-10 | HK$ 16 |
+| 展架海報 / A1/A2 海報 / 展覽海報 | display-posters | 1-10 | HK$ 32 |
+| 藝術海報 / A1/A2 海報 / 展覽海報 | art-posters | 1-10 | HK$ 26 |
+| 背膠海報 / A1/A2 海報 / 展覽海報 | adhesive-posters | 1-10 | HK$ 13 |
+
+### 紙袋印刷 (paper-bags)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 牛皮紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | kraft-paper-bags | 100 | HK$ 8 |
+| 白卡紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | white-card-bags | 100 | HK$ 12 |
+| 禮品紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | gift-bags | 100 | HK$ 20 |
+| 環保紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | eco-paper-bags | 100 | HK$ 8 |
+| 手挽紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | handle-bags | 100 | HK$ 8 |
+| 大號紙袋 / 紙袋 / 牛皮紙袋 / 手提袋 | large-bags | 100 | HK$ 15 |
+
+### 賀卡印刷 (greeting-cards)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 高級賀卡 | premium-greeting-cards | 10 | HK$ 1 |
+| 厚卡名片 (400g 起) | thick-greeting-cards-400g | 10 | HK$ 1.2 |
+| 燙金/燙銀賀卡 / 賀卡 / 燙銀工藝 / 婚禮卡 | foil-greeting-cards | 10 | HK$ 1.8 |
+| UV局部光油賀卡 | spot-uv-greeting-cards | 10 | HK$ 1.4 |
+| 啞膠賀卡 | matte-greeting-cards | 10 | HK$ 1.1 |
+| 圓角賀卡 | rounded-corner-greeting-cards | 10 | HK$ 1 |
+
+### 噴繪廣告 (banners)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 戶外燈布噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | outdoor-vinyl-banners | 1 | HK$ 12 |
+| 易拉寶 / 易拉寶 / 戶外橫幅 / 噴繪 | roll-up-banners | 1 | HK$ 85 |
+| 背膠噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | adhesive-banners | 1 | HK$ 10 |
+| 車身廣告 / 易拉寶 / 戶外橫幅 / 噴繪 | vehicle-wraps | 1 | HK$ 28 |
+| 網格布噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | mesh-banners | 1 | HK$ 16 |
+
+### 書籍印刷 (books)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 香港畫冊印刷 / Bulk Catalog Printing / Wholesale Book Supplier — 攝影集 / 展覽圖錄 / 產品型錄 | catalog-printing | 10 | HK$ 24 |
+| 香港騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 10 本起 | saddle-stitch-booklets | 10 | HK$ 6 |
+| 香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文學作品集 | perfect-bound-books | 10 | HK$ 16 |
+| 香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊 | hardcover-books | 10 | HK$ 40 |
+| 香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本 | spiral-notebooks | 10 | HK$ 8 |
+
+### 餐牌印刷 (menus)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| PVC餐牌 / 餐牌 / 菜單 / 防水PVC | pvc-menus | 10 | HK$ 8 |
+| 過膠餐牌 / 餐牌 / 菜單 / 覆膜 | laminated-menus | 10 | HK$ 5 |
+| 精裝餐牌 / 餐牌 / 菜單 / 硬殼裝訂 | hardcover-menus | 10 | HK$ 28 |
+| 酒水牌 / 餐牌 / 菜單 / 覆膜 | drink-menus | 10 | HK$ 12 |
+| 一次性餐牌 / 餐牌 / 菜單 / 即棄 | disposable-menus | 100 | HK$ 0.22 |
+
+### 信封印刷 (envelopes)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 公司信封 / 信封 / 牛皮信封 / 開窗 | business-envelopes | 100 | HK$ 0.22 |
+| 彩色信封 / 信封 / 牛皮信封 / 開窗 | colored-envelopes | 100 | HK$ 0.38 |
+| 大號信封 / 信封 / 牛皮信封 / 開窗 | large-envelopes | 100 | HK$ 0.6 |
+| 珠光信封 / 信封 / 牛皮信封 / 開窗 | pearl-envelopes | 100 | HK$ 1.15 |
+
+### 月曆印刷 (calendars)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 掛牆年曆 / 桌曆 / 掛曆 / 2027年曆 | wall-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+| 座檯年曆 / 桌曆 / 掛曆 / 2027年曆 | desk-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+| 定製年曆 / 桌曆 / 掛曆 / 2027年曆 | custom-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+| 迷你年曆 / 桌曆 / 掛曆 / 2027年曆 | mini-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+| 相框年曆 / 桌曆 / 掛曆 / 2027年曆 | photo-frame-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+| 磁石年曆 / 桌曆 / 掛曆 / 2027年曆 | magnetic-calendars | 1 (數碼) / 批量 300 起 | HK$ 3 |
+
+### 利是封印刷 (red-packets)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 燙金利是封 / 利是封 / 春聯 / 燙金 | foil-red-packets | 100 | HK$ 1.1 |
+| 浮雕利是封 / 利是封 / 春聯 / 燙金 | embossed-red-packets | 100 | HK$ 3 |
+| 定製利是封 / 利是封 / 春聯 / 燙金 | custom-red-packets | 100 | HK$ 1.9 |
+| 卡通利是封 / 利是封 / 春聯 / 燙金 | cartoon-red-packets | 100 | HK$ 1.1 |
+| 環保利是封 / 利是封 / 春聯 / 燙金 | eco-red-packets | 100 | HK$ 1.9 |
+| 大號利是封 / 利是封 / 春聯 / 燙金 | large-red-packets | 100 | HK$ 2.2 |
+
+### 校園教育印刷 (educational)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| Exercise Book Printing School Programs / K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs | exercise-books | 10 | HK$ 4 |
+| 香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書 | certificates | 100 | HK$ 8 |
+| 香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊 | school-flyers | 10 | HK$ 0.2 |
+| 香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊 | textbooks | 100 | HK$ 24 |
+| 香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊 | graduation-yearbook | 1 | HK$ 45 |
+
+### 同人周邊印刷 (japan-doujin)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
+| 亞克力鑰匙扣 | acrylic-keychain | 10 | HK$ 2275 |
+| 罐型襟章印刷 | can-badge | 10 | HK$ 1200 |
+| 明信片套裝 | postcard-set | 4 | HK$ 750 |
+| 環保托特袋 | eco-tote-bag | 10 | HK$ 9000 |
+
+### 喜帖印刷 (wedding-invitations)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 燙金喜帖 | foil-wedding-invitations | 50 | HK$ 1.2 |
+| Save the Date 卡片 | save-the-date-cards | 50 | HK$ 0.85 |
+| 婚禮感謝卡 | wedding-thank-you-cards | 50 | HK$ 0.65 |
+| 婚禮節目單 | wedding-program-cards | 50 | HK$ 0.95 |
+| 婚禮菜單卡 | wedding-menu-cards | 50 | HK$ 1.15 |
+| 婚慶整套配套 | wedding-suite-bundle | 50 | HK$ 25 |
+
+### 枱卡 (place-cards)
+
+| 產品 | Slug | 最低訂量 | 基準價格 |
+|------|------|---------|---------|
+| 婚宴枱卡 | wedding-place-cards | 50 | HK$ 0.3 |
+| 酒水牌 / 飲品標記 | drink-tokens | 50 | HK$ 0.25 |
+| 座位卡 / 賓客標記 | escort-cards | 50 | HK$ 0.3 |
+| 名牌卡 / 會議名牌 | name-tags-badges | 50 | HK$ 0.4 |
+| 餐廳 / 咖啡廳枱卡 | cafe-table-cards | 50 | HK$ 0.4 |
+| 婚宴席位圖 | wedding-seating-charts | 50 | HK$ 4.5 |

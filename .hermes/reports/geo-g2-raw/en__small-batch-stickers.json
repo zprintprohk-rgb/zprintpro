@@ -1,0 +1,110 @@
+{
+ "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+ "isRendered": true,
+ "numObjects": 11,
+ "totalNumErrors": 5,
+ "totalNumWarnings": 1,
+ "errors": [
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_OBJECT",
+   "args": [
+    "potentialAction",
+    "ProcureAction",
+    "Action,http://schema.org/Role"
+   ],
+   "begin": 22387,
+   "end": 22533,
+   "isSevere": true,
+   "errorID": 0,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_ITEMTYPE",
+   "args": [
+    "ProcureAction"
+   ],
+   "begin": 22387,
+   "end": 22533,
+   "isSevere": true,
+   "errorID": 1,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_PREDICATE",
+   "args": [
+    "sourcingIntentKeywords",
+    "Product"
+   ],
+   "begin": 22559,
+   "end": 22633,
+   "isSevere": true,
+   "errorID": 2,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "UNKNOWN_FIELD",
+   "args": [
+    "priceRange",
+    "Organization"
+   ],
+   "begin": 32525,
+   "end": 32530,
+   "isSevere": false,
+   "errorID": 3,
+   "ownerToSeverity": {
+    "SPORE": "WARNING"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-title"
+   ],
+   "begin": 38183,
+   "end": 38199,
+   "isSevere": true,
+   "errorID": 4,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-description"
+   ],
+   "begin": 38200,
+   "end": 38222,
+   "isSevere": true,
+   "errorID": 5,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  }
+ ],
+ "_note": "validator.schema.org raw response, html/tripleGroups echo stripped (门童品牌分层合规 + 体积); 全量原始抓取 2026-09-22"
+}

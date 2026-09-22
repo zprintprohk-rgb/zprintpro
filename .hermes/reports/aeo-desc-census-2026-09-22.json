@@ -1,0 +1,7078 @@
+{
+  "generated": "2026-09-22",
+  "rule": "首段40-60字直接答案句=价格区间+MOQ+交期 (K3 9/21)",
+  "sources": [
+    "src/data/sku-seo-data.ts (description 字段)",
+    "src/data/products.ts (minQuantity/basePrice*/price_range)",
+    ".hermes/gsc-2026-09-18/extract.json (new.*_28d 网页.展示)"
+  ],
+  "total": 300,
+  "count": {
+    "合规": 8,
+    "缺要素": 122,
+    "无答案句": 170
+  },
+  "byTier": {
+    "P0": {
+      "合规": 8,
+      "缺要素": 84,
+      "无答案句": 76
+    },
+    "P1": {
+      "合规": 0,
+      "缺要素": 25,
+      "无答案句": 44
+    },
+    "P2": {
+      "合规": 0,
+      "缺要素": 13,
+      "无答案句": 50
+    }
+  },
+  "flagCount": {
+    "价格非区间": 74,
+    "无来源数字待核": 129,
+    "简体残留": 2
+  },
+  "slots": [
+    {
+      "slug": "waterproof-stickers",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "防水貼紙印刷 10 張起印、HK$0.22 起/張，3-5 個工作天交貨，港九新界滿 HK$500 免費速遞。",
+      "lenFirst": 49,
+      "words": 6,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 304,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 172
+    },
+    {
+      "slug": "waterproof-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Waterproof stickers custom printing, UV-resistant outdoor PVC.",
+      "lenFirst": 56,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 304,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 167
+    },
+    {
+      "slug": "waterproof-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 28 非40-60"
+      ],
+      "first": "防水ステッカー 10枚〜 ¥41〜、3-5営業日で全国配送。",
+      "lenFirst": 28,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 304,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "transparent-stickers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "透明貼紙/透明貼紙 100 張起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 10
+      },
+      "flags": [],
+      "gscImps": 184,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "transparent-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Transparent Stickers custom printing, clear PET material.",
+      "lenFirst": 51,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 184,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 157
+    },
+    {
+      "slug": "transparent-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 18 非40-60"
+      ],
+      "first": "透明ステッカー 10 枚から、¥51〜。",
+      "lenFirst": 18,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 184,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 112
+    },
+    {
+      "slug": "removable-stickers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "可移貼紙/不殘膠貼紙 100 張起。",
+      "lenFirst": 16,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 10
+      },
+      "flags": [],
+      "gscImps": 126,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 135
+    },
+    {
+      "slug": "removable-stickers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Removable stickers that peel off cleanly.",
+      "lenFirst": 36,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 126,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 187
+    },
+    {
+      "slug": "removable-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 20 非40-60"
+      ],
+      "first": "はがせるステッカー 10 枚から、¥46〜。",
+      "lenFirst": 20,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 126,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 111
+    },
+    {
+      "slug": "small-batch-stickers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 27 非40-60"
+      ],
+      "first": "小批量貼紙印刷 10 張起印 HK$0.45/張, 無開版費。",
+      "lenFirst": 27,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.45,86"
+      ],
+      "gscImps": 396,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 167
+    },
+    {
+      "slug": "small-batch-stickers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom small batch stickers from 10 pcs at $0.045/pc.",
+      "lenFirst": 45,
+      "words": 11,
+      "elements": {
+        "price": true,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.045"
+      ],
+      "gscImps": 396,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 246
+    },
+    {
+      "slug": "small-batch-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 25 非40-60"
+      ],
+      "first": "オリジナル小ロットステッカー 10 枚から、¥69〜。",
+      "lenFirst": 25,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 396,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 129
+    },
+    {
+      "slug": "die-cut-stickers",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "異形模切貼紙 10 張起印、HK$0.58 起/張，3-5 個工作天交貨，任意形狀切割、免刀模費。",
+      "lenFirst": 45,
+      "words": 5,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 166
+    },
+    {
+      "slug": "die-cut-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Die-Cut Stickers custom printing, any shape cutting.",
+      "lenFirst": 46,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 158
+    },
+    {
+      "slug": "die-cut-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 19 非40-60"
+      ],
+      "first": "型抜きステッカー 10 枚から、¥60〜。",
+      "lenFirst": 19,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 110
+    },
+    {
+      "slug": "foil-stickers",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "燙金貼紙印刷 10 個起印、HK$0.78 起/張，3-5 個工作天交貨，金/銀/玫瑰金多色可選。",
+      "lenFirst": 45,
+      "words": 5,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 136,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 166
+    },
+    {
+      "slug": "foil-stickers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Foil stickers with metallic shine: gold, silver, rose gold, copper, holographic.",
+      "lenFirst": 70,
+      "words": 11,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 136,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 202
+    },
+    {
+      "slug": "foil-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 19 非40-60"
+      ],
+      "first": "箔押しステッカー 10 枚から、¥64〜。",
+      "lenFirst": 19,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 136,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 103
+    },
+    {
+      "slug": "security-stickers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "防偽貼紙/防偽貼紙 100 張起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 10
+      },
+      "flags": [],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "security-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Security Stickers, VOID tamper-evident material.",
+      "lenFirst": 44,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "security-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 22 非40-60"
+      ],
+      "first": "セキュリティステッカー 10 枚から、¥51〜。",
+      "lenFirst": 22,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "fluorescent-stickers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "螢光貼紙/螢光貼紙 100 張起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 10
+      },
+      "flags": [],
+      "gscImps": 71,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "fluorescent-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Fluorescent Stickers custom printing, UV-reactive neon colors.",
+      "lenFirst": 56,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 71,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "fluorescent-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 18 非40-60"
+      ],
+      "first": "蛍光ステッカー 10 枚から、¥60〜。",
+      "lenFirst": 18,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 71,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 93
+    },
+    {
+      "slug": "kraft-paper-bags",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 26 非40-60"
+      ],
+      "first": "牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。",
+      "lenFirst": 26,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 1.8"
+      ],
+      "gscImps": 130,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "kraft-paper-bags",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom kraft paper bags for retail and gift shops.",
+      "lenFirst": 42,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 120"
+      ],
+      "gscImps": 130,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 123
+    },
+    {
+      "slug": "kraft-paper-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "クラフト紙袋のクラフト紙袋は ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 130,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "white-card-bags",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "白卡紙袋/白卡紙袋 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "white-card-bags",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom white card bags from ZprintPro the US.",
+      "lenFirst": 38,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 148
+    },
+    {
+      "slug": "white-card-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "白カード紙袋の白カード紙袋は ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "gift-bags",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 25 非40-60"
+      ],
+      "first": "禮品紙袋印刷訂製，100 個起印，HK$20 起/個。",
+      "lenFirst": 25,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 93
+    },
+    {
+      "slug": "gift-bags",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Premium gift paper bags for boutiques and brands.",
+      "lenFirst": 42,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 210"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "gift-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ギフトバッグのギフトバッグは ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "eco-paper-bags",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 24 非40-60"
+      ],
+      "first": "環保紙袋印刷訂製，100 個起印，HK$8 起/個。",
+      "lenFirst": 24,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 86,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 92
+    },
+    {
+      "slug": "eco-paper-bags",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Eco paper bags for sustainable brands, 100 MOQ from $1.84.",
+      "lenFirst": 49,
+      "words": 11,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 86,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 169
+    },
+    {
+      "slug": "eco-paper-bags",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 27 非40-60"
+      ],
+      "first": "エコ紙袋 100枚〜 ¥240〜、5-7営業日で全国配送。",
+      "lenFirst": 27,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 86,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "handle-bags",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "手挽袋/紙袋 100 個起。",
+      "lenFirst": 12,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 199,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 124
+    },
+    {
+      "slug": "handle-bags",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom handle paper bags for retail, 100 MOQ from $1.84.",
+      "lenFirst": 47,
+      "words": 11,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 120,200"
+      ],
+      "gscImps": 199,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 162
+    },
+    {
+      "slug": "handle-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ハンドルバッグのハンドルバッグは ZprintPro にお任せ。",
+      "lenFirst": 30,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 199,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 128
+    },
+    {
+      "slug": "small-bags",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "小號紙袋/小號紙袋 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "small-bags",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom small paper bags for jewelry and cosmetics, 100 MOQ.",
+      "lenFirst": 50,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 207
+    },
+    {
+      "slug": "small-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "小判紙袋は ZprintPro の紙袋印刷。",
+      "lenFirst": 20,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 103
+    },
+    {
+      "slug": "large-bags",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "大號紙袋/大號紙袋 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 187,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "large-bags",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom large paper bags for apparel and gifts, 100 MOQ from $3.45.",
+      "lenFirst": 55,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 200"
+      ],
+      "gscImps": 187,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 197
+    },
+    {
+      "slug": "large-bags",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "大判紙袋は ZprintPro の紙袋印刷。",
+      "lenFirst": 20,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 187,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 109
+    },
+    {
+      "slug": "a4-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 25 非40-60"
+      ],
+      "first": "A4傳單印刷訂製，10 張起印，HK$0.3起/張。",
+      "lenFirst": 25,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.3,157"
+      ],
+      "gscImps": 36,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 117
+    },
+    {
+      "slug": "a4-flyers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "A4 flyer printing for events.",
+      "lenFirst": 25,
+      "words": 5,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 128"
+      ],
+      "gscImps": 36,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 159
+    },
+    {
+      "slug": "a4-flyers",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "A4 チラシは ZprintPro にお任せ。",
+      "lenFirst": 20,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 36,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "a5-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 26 非40-60"
+      ],
+      "first": "A5 傳單印刷訂製，10 張起印，HK$0.25 起/張。",
+      "lenFirst": 26,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 170,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 86
+    },
+    {
+      "slug": "a5-flyers",
+      "locale": "en",
+      "state": "合规",
+      "reasons": [],
+      "first": "A5 flyer printing from $0.40/pc, 10 MOQ, same-day rush available, 4-color CMYK both sides.",
+      "lenFirst": 77,
+      "words": 18,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.40"
+      ],
+      "gscImps": 170,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 144
+    },
+    {
+      "slug": "a5-flyers",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "A5 チラシは ZprintPro にお任せ。",
+      "lenFirst": 20,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 170,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 134
+    },
+    {
+      "slug": "double-sided-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "雙面傳單印刷 10 張起印、HK$0.40 起/張。",
+      "lenFirst": 23,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 121
+    },
+    {
+      "slug": "double-sided-flyers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom double-sided flyers from $0.65, 10 MOQ.",
+      "lenFirst": 40,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 168
+    },
+    {
+      "slug": "double-sided-flyers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 29 非40-60"
+      ],
+      "first": "両面チラシ印刷 10枚〜 ¥85〜、翌日-2営業日で全国配送。",
+      "lenFirst": 29,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": true,
+      "descLen": 133
+    },
+    {
+      "slug": "folded-leaflets",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 33 非40-60"
+      ],
+      "first": "摺疊傳單印刷訂製（雙摺/三摺），10 張起印，HK$0.70 起/張。",
+      "lenFirst": 33,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 113,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "folded-leaflets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 36 非40-60(en放寬至120)"
+      ],
+      "first": "Custom folded leaflets from $0.80, 10 MOQ.",
+      "lenFirst": 36,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.80,157"
+      ],
+      "gscImps": 113,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 159
+    },
+    {
+      "slug": "folded-leaflets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "折りたたみパンフレットは ZprintPro にお任せ。",
+      "lenFirst": 26,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 113,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "thick-paper-flyers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "厚身單張/傳單印刷 100 張起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 10
+      },
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 139
+    },
+    {
+      "slug": "thick-paper-flyers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom thick paper flyers from ZprintPro the US.",
+      "lenFirst": 41,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "thick-paper-flyers",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "厚紙チラシは ZprintPro にお任せ。",
+      "lenFirst": 20,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 135
+    },
+    {
+      "slug": "same-day-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 37 非40-60"
+      ],
+      "first": "即日傳單印刷 10 張起、HK$1.30 起/張，每日 18:00 前落單即日交貨。",
+      "lenFirst": 37,
+      "words": 5,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 1.30,18,00,157"
+      ],
+      "gscImps": 279,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 110
+    },
+    {
+      "slug": "same-day-flyers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 37 非40-60(en放寬至120)"
+      ],
+      "first": "Same-day flyer printing from $0.16, 10 MOQ.",
+      "lenFirst": 37,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.16,157"
+      ],
+      "gscImps": 279,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 196
+    },
+    {
+      "slug": "same-day-flyers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 18 非40-60"
+      ],
+      "first": "即日チラシ印刷 10 枚から、¥25〜。",
+      "lenFirst": 18,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 279,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "eco-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "環保傳單印刷 10 張起印、HK$0.38 起/張。",
+      "lenFirst": 23,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "eco-flyers",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom eco flyers from ZprintPro the US.",
+      "lenFirst": 34,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "eco-flyers",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "エコチラシは ZprintPro にお任せ。",
+      "lenFirst": 20,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "a2-posters",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "A2 海報印刷 10 張起印、HK$9 起/張，200g 銅版紙 / PP 防水合成紙，Giclée 級 1200 DPI。",
+      "lenFirst": 51,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 9,200,1200"
+      ],
+      "gscImps": 980,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 114
+    },
+    {
+      "slug": "a2-posters",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 32 非40-60(en放寬至120)"
+      ],
+      "first": "A2 poster printing from $2.30, 10 MOQ.",
+      "lenFirst": 32,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 2.30,200,1200"
+      ],
+      "gscImps": 980,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 168
+    },
+    {
+      "slug": "a2-posters",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 20 非40-60"
+      ],
+      "first": "A2 ポスター印刷 10 枚から、¥300〜。",
+      "lenFirst": 20,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 200,1200"
+      ],
+      "gscImps": 980,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 114
+    },
+    {
+      "slug": "a1-posters",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "A1 大幅海報/海報印刷 1 張起。",
+      "lenFirst": 15,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 74,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 148
+    },
+    {
+      "slug": "a1-posters",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "A1 large poster printing (594×841mm) from $4.60, 1 MOQ no minimum.",
+      "lenFirst": 56,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 594,841,4.60"
+      ],
+      "gscImps": 74,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 181
+    },
+    {
+      "slug": "a1-posters",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "A1 ポスターのA1 ポスターは ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 10,
+        "truth": 1
+      },
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 74,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 142
+    },
+    {
+      "slug": "outdoor-posters",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "戶外海報/戶外海報 10 張起。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 10,
+        "truth": 1
+      },
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "outdoor-posters",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Outdoor posters for storefronts and events.",
+      "lenFirst": 38,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 137
+    },
+    {
+      "slug": "outdoor-posters",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "屋外ポスターの屋外ポスターは ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 139
+    },
+    {
+      "slug": "display-posters",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 20 非40-60"
+      ],
+      "first": "展架海報印刷 1 張起印、HK$32 起/張。",
+      "lenFirst": 20,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "display-posters",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Display posters on foam board or gator board for trade shows.",
+      "lenFirst": 51,
+      "words": 11,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "display-posters",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "展示用ポスターは ZprintPro にお任せ。",
+      "lenFirst": 22,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 135
+    },
+    {
+      "slug": "art-posters",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "藝術海報印刷訂製，1 張起印，HK$26 起/張。",
+      "lenFirst": 23,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 200"
+      ],
+      "gscImps": 28,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 94
+    },
+    {
+      "slug": "art-posters",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Art posters on premium matte art paper, archival pigment inks.",
+      "lenFirst": 53,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 28,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 149
+    },
+    {
+      "slug": "art-posters",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "アートポスターは ZprintPro にお任せ。",
+      "lenFirst": 22,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 200"
+      ],
+      "gscImps": 28,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "adhesive-posters",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 20 非40-60"
+      ],
+      "first": "背膠海報印刷 1 張起印、HK$13 起/張。",
+      "lenFirst": 20,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 79,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "adhesive-posters",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Peel-and-stick adhesive posters for windows, walls, vehicles.",
+      "lenFirst": 55,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 79,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 144
+    },
+    {
+      "slug": "adhesive-posters",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "粘着ポスターの粘着ポスターは ZprintPro にお任せ。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 79,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 139
+    },
+    {
+      "slug": "cosmetic-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "化妝品包裝盒 100 個起印.",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "简体残留: 制"
+      ],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 152
+    },
+    {
+      "slug": "cosmetic-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom cosmetic packaging boxes from $1.84, 100 MOQ.",
+      "lenFirst": 45,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 169
+    },
+    {
+      "slug": "cosmetic-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "化粧品パッケージボックス 100 個から対応.",
+      "lenFirst": 21,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 37,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 151
+    },
+    {
+      "slug": "food-boxes",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "食品包裝印刷訂製：FDA 認可食品級材質 + FSC 認證紙，100 個起印、HK$2.5 起/個，燙金 UV 全工藝支援。",
+      "lenFirst": 54,
+      "words": 6,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 145,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 196
+    },
+    {
+      "slug": "food-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom food packaging printing with FDA-safe, FSC-certified materials.",
+      "lenFirst": 63,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 145,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 316
+    },
+    {
+      "slug": "food-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "食品パッケージ印刷を100個から小ロット対応。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 145,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 162
+    },
+    {
+      "slug": "mailer-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "郵寄盒/郵寄盒 100 個起。",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "mailer-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom mailer boxes for e-commerce, 100 MOQ from $0.80.",
+      "lenFirst": 47,
+      "words": 11,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.80"
+      ],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 190
+    },
+    {
+      "slug": "mailer-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "発送箱は ZprintPro の梱包資材。",
+      "lenFirst": 19,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 72,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "folding-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "折疊禮盒/折疊盒 100 個起。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "folding-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Folding Boxes custom printing, eco-friendly kraft paper.",
+      "lenFirst": 50,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 158
+    },
+    {
+      "slug": "folding-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "折りたたみ箱は ZprintPro の梱包資材。",
+      "lenFirst": 22,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 124
+    },
+    {
+      "slug": "rigid-boxes",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "精品盒訂製印刷，100個起印，HK$8起/個。",
+      "lenFirst": 23,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 49,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 119
+    },
+    {
+      "slug": "rigid-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom rigid boxes with magnetic closure, 100 MOQ from $1.84.",
+      "lenFirst": 52,
+      "words": 11,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 800,1500"
+      ],
+      "gscImps": 49,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 189
+    },
+    {
+      "slug": "rigid-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "上製本箱は ZprintPro の高級包装。",
+      "lenFirst": 20,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 800,1500"
+      ],
+      "gscImps": 49,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "foil-red-packets",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "燙金利是封/利是封 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "foil-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom foil red packets with gold foil stamping, 100 MOQ from $0.46.",
+      "lenFirst": 57,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 188
+    },
+    {
+      "slug": "foil-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "箔押しポチ袋は ZprintPro の和紙雑貨。",
+      "lenFirst": 22,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "embossed-red-packets",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "浮雕利是封/利是封 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "embossed-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom embossed red packets with 3D relief texture, 100 MOQ from $0.92.",
+      "lenFirst": 60,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 196
+    },
+    {
+      "slug": "embossed-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "エンボスポチ袋は ZprintPro の和紙雑貨。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "custom-red-packets",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 24 非40-60"
+      ],
+      "first": "定制利是封印刷 100 個起印、HK$1.9 起/個。",
+      "lenFirst": 24,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "简体残留: 制",
+        "无来源数字待核: 1.9,157"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 113
+    },
+    {
+      "slug": "custom-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom red packets for Lunar New Year, 100 MOQ from $0.74.",
+      "lenFirst": 48,
+      "words": 12,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 188
+    },
+    {
+      "slug": "custom-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "custom red packetsのcustom red packetsは ZprintPro にお任せ。",
+      "lenFirst": 48,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 150
+    },
+    {
+      "slug": "cartoon-red-packets",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "卡通利是封/卡通利是封 100 個起。",
+      "lenFirst": 17,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 133
+    },
+    {
+      "slug": "cartoon-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom cartoon red packets with cute illustrations, 100 MOQ from $0.46.",
+      "lenFirst": 61,
+      "words": 12,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 188
+    },
+    {
+      "slug": "cartoon-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "キャラクターポチ袋は ZprintPro の和紙雑貨。",
+      "lenFirst": 25,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 128
+    },
+    {
+      "slug": "eco-red-packets",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "環保利是封/利是封 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "eco-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom eco red packets on recycled paper, 100 MOQ from $0.74.",
+      "lenFirst": 51,
+      "words": 12,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 177
+    },
+    {
+      "slug": "eco-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "エコポチ袋は ZprintPro の和紙雑貨。",
+      "lenFirst": 21,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "large-red-packets",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 25 非40-60"
+      ],
+      "first": "大號利是封印刷 100 個起印、HK$2.20 起/個。",
+      "lenFirst": 25,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 8,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 114
+    },
+    {
+      "slug": "large-red-packets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom large red packets with oversized format, 100 MOQ from $0.92.",
+      "lenFirst": 57,
+      "words": 12,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 8,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 197
+    },
+    {
+      "slug": "large-red-packets",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "大判ポチ袋は ZprintPro の和紙雑貨。",
+      "lenFirst": 21,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 8,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 121
+    },
+    {
+      "slug": "wall-calendars",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "掛牆年曆/掛牆年曆 1 本起。",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 20,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "wall-calendars",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wall calendars from ZprintPro the US.",
+      "lenFirst": 38,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 20,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "wall-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "壁掛けカレンダーは ZprintPro のカレンダー印刷。",
+      "lenFirst": 27,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 20,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 124
+    },
+    {
+      "slug": "desk-calendars",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "座檯年曆/座檯年曆 1 本起。",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 35,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "desk-calendars",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom desk calendars from $0.40, 1 MOQ, bulk 300+ for best price.",
+      "lenFirst": 55,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 35,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 179
+    },
+    {
+      "slug": "desk-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "デスクカレンダーのデスクカレンダーは ZprintPro にお任せ。",
+      "lenFirst": 32,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 35,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "custom-calendars",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "定製年曆/定製年曆 1 本起。",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 215,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "custom-calendars",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom custom calendars from ZprintPro the US.",
+      "lenFirst": 40,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 215,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 148
+    },
+    {
+      "slug": "custom-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "カスタムカレンダーのカスタムカレンダーは ZprintPro にお任せ。",
+      "lenFirst": 34,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 215,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "mini-calendars",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "迷你年曆/迷你年曆 50 本起。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 50,
+        "truth": 1
+      },
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 19,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 133
+    },
+    {
+      "slug": "mini-calendars",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom mini calendars from ZprintPro the US.",
+      "lenFirst": 38,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 19,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "mini-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ミニカレンダーのミニカレンダーは ZprintPro にお任せ。",
+      "lenFirst": 30,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 19,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 130
+    },
+    {
+      "slug": "photo-frame-calendars",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 19 非40-60"
+      ],
+      "first": "相框年曆印刷 1 本起印、HK$3 起/本。",
+      "lenFirst": 19,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 111
+    },
+    {
+      "slug": "photo-frame-calendars",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom photo frame calendars from $0.40, 1 MOQ.",
+      "lenFirst": 40,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 188
+    },
+    {
+      "slug": "photo-frame-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "フォトフレームカレンダーは ZprintPro のカレンダー印刷。",
+      "lenFirst": 31,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 130
+    },
+    {
+      "slug": "magnetic-calendars",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "磁吸年曆/磁吸年曆 1 本起。",
+      "lenFirst": 13,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "magnetic-calendars",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom magnetic calendars from ZprintPro the US.",
+      "lenFirst": 42,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 150
+    },
+    {
+      "slug": "magnetic-calendars",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "マグネットカレンダーは ZprintPro のカレンダー印刷。",
+      "lenFirst": 29,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "pvc-menus",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "PVC 餐牌印刷 10 張起印。",
+      "lenFirst": 13,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 94,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 137
+    },
+    {
+      "slug": "pvc-menus",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "PVC menus from $2.76/pc, 10 MOQ, laminated waterproof for restaurants and bars.",
+      "lenFirst": 68,
+      "words": 14,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 94,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 156
+    },
+    {
+      "slug": "pvc-menus",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 29 非40-60"
+      ],
+      "first": "PVCメニュー 10枚〜 ¥386〜、5-7営業日で全国配送。",
+      "lenFirst": 29,
+      "words": 5,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 94,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 133
+    },
+    {
+      "slug": "laminated-menus",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "過膠餐牌印刷 10 份起印。",
+      "lenFirst": 12,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 200,250"
+      ],
+      "gscImps": 55,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 140
+    },
+    {
+      "slug": "laminated-menus",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom laminated menus from ZprintPro the US.",
+      "lenFirst": 39,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 55,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 149
+    },
+    {
+      "slug": "laminated-menus",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ラミネート menuのラミネート menuは ZprintPro にお任せ。",
+      "lenFirst": 34,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 55,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 140
+    },
+    {
+      "slug": "hardcover-menus",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "精裝餐牌印刷 10 本起印。",
+      "lenFirst": 12,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 200"
+      ],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "hardcover-menus",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 36 非40-60(en放寬至120)"
+      ],
+      "first": "Custom hardcover menus from $9.20, 10 MOQ.",
+      "lenFirst": 36,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 9.20"
+      ],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 157
+    },
+    {
+      "slug": "hardcover-menus",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "高級メニューは ZprintPro のメニュー印刷。",
+      "lenFirst": 24,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "drink-menus",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "酒水牌印刷 10 份起印。",
+      "lenFirst": 11,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 200,250"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 140
+    },
+    {
+      "slug": "drink-menus",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom drink menus for bars and restaurants, 10 MOQ from $3.68.",
+      "lenFirst": 53,
+      "words": 12,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 189
+    },
+    {
+      "slug": "drink-menus",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ドリンクメニューは ZprintPro のメニュー印刷。",
+      "lenFirst": 26,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "disposable-menus",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "一次性餐牌印刷 100 份起印。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 120"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 143
+    },
+    {
+      "slug": "disposable-menus",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom disposable menus for fast food and takeout, 100 MOQ from $0.14.",
+      "lenFirst": 59,
+      "words": 13,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 188
+    },
+    {
+      "slug": "disposable-menus",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "使い捨てメニューは ZprintPro のメニュー印刷。",
+      "lenFirst": 26,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 250"
+      ],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "outdoor-vinyl-banners",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 18 非40-60"
+      ],
+      "first": "戶外燈布噴繪 1 件起印，HK$12 起。",
+      "lenFirst": 18,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 88,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "outdoor-vinyl-banners",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom outdoor vinyl banners from ZprintPro the US.",
+      "lenFirst": 44,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 88,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 152
+    },
+    {
+      "slug": "outdoor-vinyl-banners",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "屋外バナーは ZprintPro の大判印刷。",
+      "lenFirst": 21,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 88,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "roll-up-banners",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "易拉寶/易拉架 1 個起。",
+      "lenFirst": 11,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 121,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 128
+    },
+    {
+      "slug": "roll-up-banners",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom roll-up banners from ZprintPro the US.",
+      "lenFirst": 39,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 121,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "roll-up-banners",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ロールアップバナーのロールアップバナーは ZprintPro にお任せ。",
+      "lenFirst": 34,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 121,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 129
+    },
+    {
+      "slug": "adhesive-banners",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "背膠噴繪 1 件起印、HK$10 起/件，1-3 個工作天交貨，透明/PP/PVC 防水材質可選。",
+      "lenFirst": 44,
+      "words": 6,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 164
+    },
+    {
+      "slug": "adhesive-banners",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 36 非40-60(en放寬至120)"
+      ],
+      "first": "Custom adhesive banners from $2.30, 1 MOQ.",
+      "lenFirst": 36,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 2.30"
+      ],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 159
+    },
+    {
+      "slug": "adhesive-banners",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "粘着バナーのオーダー印刷、透明・半透明 PP 合成紙、PVC 防水対応、80×200cm 各種サイズ。",
+      "lenFirst": 47,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 143
+    },
+    {
+      "slug": "vehicle-wraps",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "車身廣告（汽車車身貼）1 套起印，HK$28 起。",
+      "lenFirst": 23,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 28,
+        "truth": 1
+      },
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 108
+    },
+    {
+      "slug": "vehicle-wraps",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom vehicle wraps from ZprintPro the US.",
+      "lenFirst": 37,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 145
+    },
+    {
+      "slug": "vehicle-wraps",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "カーラッピングのオーダー制作、車体フルラップ・部分ラッピング対応、PVC 高品質メディア、カスタムデザイン自由。",
+      "lenFirst": 55,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 137
+    },
+    {
+      "slug": "mesh-banners",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "網孔布易拉寶/易拉架 1 個起。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "mesh-banners",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom mesh banners, wind-resistant perforated PVC for outdoor use.",
+      "lenFirst": 59,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 230
+    },
+    {
+      "slug": "mesh-banners",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "メッシュバナーのメッシュバナーは ZprintPro にお任せ。",
+      "lenFirst": 30,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 80,200"
+      ],
+      "gscImps": 25,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "catalog-printing",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 21 非40-60"
+      ],
+      "first": "畫冊印刷訂製 10 本起印、HK$24 起/本。",
+      "lenFirst": 21,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 307,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 102
+    },
+    {
+      "slug": "catalog-printing",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 37 非40-60(en放寬至120)"
+      ],
+      "first": "Custom catalog printing from $4.60, 10 MOQ.",
+      "lenFirst": 37,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 4.60,157"
+      ],
+      "gscImps": 307,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 196
+    },
+    {
+      "slug": "catalog-printing",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 37 非40-60"
+      ],
+      "first": "カタログ印刷 10冊〜 ¥644〜、3-5営業日、DHL で日本へ 2-4 日配送。",
+      "lenFirst": 37,
+      "words": 7,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 307,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 22 非40-60"
+      ],
+      "first": "騎馬釘小冊子印刷 10 本起印、HK$6 起/本。",
+      "lenFirst": 22,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 256,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 121
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom saddle stitch booklets from $1.84, 10 MOQ.",
+      "lenFirst": 42,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 256,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 164
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 28 非40-60"
+      ],
+      "first": "中綴じ冊子 10冊〜 ¥258〜、5-10営業日で全国配送。",
+      "lenFirst": 28,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 256,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 136
+    },
+    {
+      "slug": "perfect-bound-books",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "無線膠裝書籍印刷 10 本起印、HK$16 起/本。",
+      "lenFirst": 23,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "perfect-bound-books",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 39 非40-60(en放寬至120)"
+      ],
+      "first": "Custom perfect bound books from $4.60, 10 MOQ.",
+      "lenFirst": 39,
+      "words": 9,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 4.60"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "perfect-bound-books",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "無線綴じ本のオーダー印刷、本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタムサイズ対応。",
+      "lenFirst": 51,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 31,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 146
+    },
+    {
+      "slug": "hardcover-books",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 61 非40-60"
+      ],
+      "first": "精裝書籍印刷，硬殼精裝高檔耐用，內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製規格，燙金、局部 UV 可選。",
+      "lenFirst": 61,
+      "words": 5,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 147
+    },
+    {
+      "slug": "hardcover-books",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom hardcover books, case bound with durable rigid covers.",
+      "lenFirst": 53,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 13.80"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 227
+    },
+    {
+      "slug": "hardcover-books",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "上製本のオーダー印刷、ハードカバー高級装丁、本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタムサイズ。",
+      "lenFirst": 58,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 13,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 139
+    },
+    {
+      "slug": "spiral-notebooks",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "線圈筆記本/線圈筆記本 50 本起。",
+      "lenFirst": 16,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 50,
+        "truth": 10
+      },
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 27,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 143
+    },
+    {
+      "slug": "spiral-notebooks",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom spiral notebooks, double-wire spiral bound for lay-flat use.",
+      "lenFirst": 59,
+      "words": 11,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 27,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 232
+    },
+    {
+      "slug": "spiral-notebooks",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "リングノートのオーダー印刷、本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタムサイズ対応。",
+      "lenFirst": 52,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 27,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 148
+    },
+    {
+      "slug": "business-envelopes",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "公司信封印刷 100 個起印、HK$0.22 起/個，3-5 個工作天交貨，DL/C5/C4 開窗全封可選。",
+      "lenFirst": 49,
+      "words": 8,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 299,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 171
+    },
+    {
+      "slug": "business-envelopes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom business envelopes DL/C5/C4 from $0.14/pc, 100 MOQ, window or full-cover options.",
+      "lenFirst": 77,
+      "words": 17,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 299,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 187
+    },
+    {
+      "slug": "business-envelopes",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 26 非40-60"
+      ],
+      "first": "ビジネス封筒（会社封筒）印刷 100 枚から、¥20〜。",
+      "lenFirst": 26,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 299,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 114
+    },
+    {
+      "slug": "colored-envelopes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "彩色信封/彩色信封 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "colored-envelopes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom colored envelopes in vivid stocks with foil-lined options.",
+      "lenFirst": 57,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 230
+    },
+    {
+      "slug": "colored-envelopes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "カラー封筒のオーダー印刷、100g 筆記用紙/白クラフト高品質用紙、DL/C5/C4 各種サイズ対応。",
+      "lenFirst": 49,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "large-envelopes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "大號信封/大號信封 100 個起。",
+      "lenFirst": 15,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 203,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "large-envelopes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom large envelopes, C4 size fits A4 flat without folding.",
+      "lenFirst": 52,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 203,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 226
+    },
+    {
+      "slug": "large-envelopes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "大型封筒の大型封筒は ZprintPro にお任せ。",
+      "lenFirst": 24,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 203,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 126
+    },
+    {
+      "slug": "pearl-envelopes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "珍珠光信封/信封 印刷 100 個起。",
+      "lenFirst": 16,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 96,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 136
+    },
+    {
+      "slug": "pearl-envelopes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom pearl envelopes with iridescent pearl paper finish.",
+      "lenFirst": 51,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 96,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 223
+    },
+    {
+      "slug": "pearl-envelopes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "パール封筒のオーダー印刷、100g 筆記用紙/白クラフト高品質用紙、DL/C5/C4 各種サイズ対応。",
+      "lenFirst": 49,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 96,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 132
+    },
+    {
+      "slug": "exercise-books",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "作業簿印刷 10 本起印、HK$4 起/本，5-10 個工作天交貨，四色印刷騎馬釘裝訂。",
+      "lenFirst": 40,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 289,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 169
+    },
+    {
+      "slug": "exercise-books",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom exercise books from $1.84/book, 10 MOQ, saddle-stitched 4-color printing.",
+      "lenFirst": 71,
+      "words": 14,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 289,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 180
+    },
+    {
+      "slug": "exercise-books",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ワークブック印刷のオーダー、学校・塾・企業研修用ワークブック、本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタムサイズ。",
+      "lenFirst": 67,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 289,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 151
+    },
+    {
+      "slug": "certificates",
+      "locale": "zh-hk",
+      "state": "合规",
+      "reasons": [],
+      "first": "證書印刷 100 個起印、HK$8 起/個，3-5 個工作天交貨，燙金/壓紋/局部UV 工藝可選。",
+      "lenFirst": 44,
+      "words": 5,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 159
+    },
+    {
+      "slug": "certificates",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom certificates with embossed seal and premium paper stocks.",
+      "lenFirst": 56,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 227
+    },
+    {
+      "slug": "certificates",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "賞状印刷サービス、高品質紙に金箔・銀箔オプション。",
+      "lenFirst": 25,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 112,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 106
+    },
+    {
+      "slug": "school-flyers",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "學校單張印刷 10 張起印、HK$0.20 起/張。",
+      "lenFirst": 23,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 0.20,80"
+      ],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 106
+    },
+    {
+      "slug": "school-flyers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Custom school flyers for events, admissions and announcements.",
+      "lenFirst": 55,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 209
+    },
+    {
+      "slug": "school-flyers",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "学校チラシのオーダー印刷、157g-300g コート紙、A4/A5/A6/DL 各種サイズ対応。",
+      "lenFirst": 46,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157"
+      ],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 142
+    },
+    {
+      "slug": "textbooks",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "教科書印刷，專業排版覆膜騎馬釘裝訂，內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製規格。",
+      "lenFirst": 53,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 138
+    },
+    {
+      "slug": "textbooks",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom textbook printing from $9.20/book, 100 MOQ, perfect bound or saddle stitch.",
+      "lenFirst": 71,
+      "words": 14,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 9.20"
+      ],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 181
+    },
+    {
+      "slug": "textbooks",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句長度 38 非40-60"
+      ],
+      "first": "教科書印刷 100冊〜 ¥1288〜、5-7営業日、DHL で日本へ 2-4 日配送。",
+      "lenFirst": 38,
+      "words": 7,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 157,250"
+      ],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 145
+    },
+    {
+      "slug": "magnetic-closure-gift-box",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "磁吸翻蓋禮盒印刷 100 個起, 採用 1200g 高密度灰板外裱特種紙, 磁吸開合儀式感強, 適合高端產品包裝、珠寶、奢侈品、月餅。",
+      "lenFirst": 60,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 1200"
+      ],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 144
+    },
+    {
+      "slug": "magnetic-closure-gift-box",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Magnetic Closure Gift Box with premium rigid board and magnetic snap shut.",
+      "lenFirst": 63,
+      "words": 12,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 242
+    },
+    {
+      "slug": "magnetic-closure-gift-box",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。",
+      "lenFirst": 47,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 121
+    },
+    {
+      "slug": "electronics-packaging-box",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 23 非40-60"
+      ],
+      "first": "電子產品包裝盒印刷 200 個起，HK$8 起/個。",
+      "lenFirst": 23,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 253,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 122
+    },
+    {
+      "slug": "electronics-packaging-box",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom electronics packaging box from ZprintPro the US.",
+      "lenFirst": 48,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 253,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 149
+    },
+    {
+      "slug": "electronics-packaging-box",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 30 非40-60"
+      ],
+      "first": "電子製品包装箱のオーダー印刷、静電気防止加工オプション対応。",
+      "lenFirst": 30,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 253,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "kraft-paper-packaging-box",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 22 非40-60"
+      ],
+      "first": "牛皮紙包裝印刷盒 300 個起，HK$5 起/個。",
+      "lenFirst": 22,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 250,350"
+      ],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 113
+    },
+    {
+      "slug": "kraft-paper-packaging-box",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期"
+      ],
+      "first": "Custom kraft paper packaging boxes from $1.15, 300 MOQ.",
+      "lenFirst": 47,
+      "words": 10,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 250,350"
+      ],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 182
+    },
+    {
+      "slug": "kraft-paper-packaging-box",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。",
+      "lenFirst": 46,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 100,
+        "truth": 300
+      },
+      "flags": [],
+      "gscImps": 77,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 119
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "拼版白卡彩盒印刷，固定刀模共用，免刀模費 + 免排版費，成本直降 40-60%。",
+      "lenFirst": 37,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 350,400,375"
+      ],
+      "gscImps": 16,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 136
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Gang-Run White Card Boxes with shared die-cut molds — no die-cut fee, no setup fee, 40-60% lower cost than custom.",
+      "lenFirst": 95,
+      "words": 23,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 16,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 231
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、カスタム比 40-60% コスト削減。",
+      "lenFirst": 48,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 350,400,375,10000,3800"
+      ],
+      "gscImps": 16,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 199
+    },
+    {
+      "slug": "fruit-food-label-stickers",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "水果及食品標籤印刷 500 張起, 採用防水 PVC 或 PP 合成紙, 通過 SGS 食品接觸安全認證, 適合水果店、有機食品、烘焙店、外賣包裝。",
+      "lenFirst": 63,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "fruit-food-label-stickers",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Fruit & Food Label Stickers on FDA-compliant, waterproof and oil-resistant stock for produce and food brands.",
+      "lenFirst": 94,
+      "words": 17,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 228
+    },
+    {
+      "slug": "fruit-food-label-stickers",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 38 非40-60"
+      ],
+      "first": "フルーツ・食品ラベル印刷、食品FDA認証素材採用で果物・食品ブランドに最適。",
+      "lenFirst": 38,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 46,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "doujinshi-printing",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间"
+      ],
+      "first": "同人誌印刷 10 本起印，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天。",
+      "lenFirst": 45,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": true
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 359,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 156
+    },
+    {
+      "slug": "doujinshi-printing",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Comiket-ready doujinshi printing service.",
+      "lenFirst": 38,
+      "words": 5,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 359,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 158
+    },
+    {
+      "slug": "doujinshi-printing",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。",
+      "lenFirst": 27,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 50,
+        "truth": 10
+      },
+      "flags": [],
+      "gscImps": 359,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 133
+    },
+    {
+      "slug": "acrylic-keychain",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "VTuber / 推し活 / 動漫角色專用亞克力鑰匙扣。",
+      "lenFirst": 24,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 63,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 135
+    },
+    {
+      "slug": "acrylic-keychain",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Acrylic keychain, 2mm/3mm clear acrylic with fully custom shapes for anime, VTuber and creator brands.",
+      "lenFirst": 88,
+      "words": 16,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 63,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 244
+    },
+    {
+      "slug": "acrylic-keychain",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "アクリルキーホルダー印刷、高透明2mm/3mmアクリル採用で完全カスタム形状対応。",
+      "lenFirst": 41,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 63,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 134
+    },
+    {
+      "slug": "can-badge",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "罐型襟章(缶バッジ)印刷專家。",
+      "lenFirst": 15,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 57,76,44"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 136
+    },
+    {
+      "slug": "can-badge",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom can badge printing.",
+      "lenFirst": 23,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 57,76,44"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 141
+    },
+    {
+      "slug": "can-badge",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "缶バッジ印刷サービス。",
+      "lenFirst": 11,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 57,76,44"
+      ],
+      "gscImps": 65,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 136
+    },
+    {
+      "slug": "postcard-set",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "明信片套裝印刷，和紙風藝術紙 4-8 張入，動漫角色 / 插畫收藏 / 簽名會周邊適用。",
+      "lenFirst": 38,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 8,
+        "truth": 4
+      },
+      "flags": [
+        "无来源数字待核: 148"
+      ],
+      "gscImps": 12,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 139
+    },
+    {
+      "slug": "postcard-set",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Washi-style postcard sets in 4-8 piece collections for character goods, illustration and signature events.",
+      "lenFirst": 93,
+      "words": 16,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 148"
+      ],
+      "gscImps": 12,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 241
+    },
+    {
+      "slug": "postcard-set",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ポストカードセットのオーダー印刷、和紙風アート紙 4-8 枚入。",
+      "lenFirst": 30,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 148"
+      ],
+      "gscImps": 12,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 148
+    },
+    {
+      "slug": "eco-tote-bag",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "環保托特袋印刷，100% 有機棉布料，絲網 / DTG 印刷支援，企業活動、展會、ESG 禮贈品專用。",
+      "lenFirst": 46,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 123
+    },
+    {
+      "slug": "eco-tote-bag",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Organic cotton eco tote bags with silk/DTG printing for corporate events, trade shows and ESG merchandise.",
+      "lenFirst": 91,
+      "words": 17,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 225
+    },
+    {
+      "slug": "eco-tote-bag",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "オーガニックコットン 100% トートバッグ。",
+      "lenFirst": 21,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 125
+    },
+    {
+      "slug": "graduation-yearbook",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "香港畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊定製，騎馬釘 / 膠裝 / 精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。",
+      "lenFirst": 60,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 128
+    },
+    {
+      "slug": "graduation-yearbook",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Graduation Yearbook, hardcover & softcover binding.",
+      "lenFirst": 46,
+      "words": 5,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 135
+    },
+    {
+      "slug": "graduation-yearbook",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、1 冊から対応。",
+      "lenFirst": 34,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 38,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 119
+    },
+    {
+      "slug": "premium-greeting-cards",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "高級賀卡印刷：300g 銅版紙或啞粉藝術紙，啞膠／光膠覆膜、局部UV、燙金、圓角模切多種工藝任選，自訂尺寸與刀模均可。",
+      "lenFirst": 58,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "premium-greeting-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Premium greeting cards: foil, spot UV & matte lamination, 300gsm.",
+      "lenFirst": 56,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 159
+    },
+    {
+      "slug": "premium-greeting-cards",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 73 非40-60"
+      ],
+      "first": "プレミアムグリーティングカード印刷：300gコート紙、マット／グロスラミネート、箔押し、部分UV、角丸加工に対応し、サイズ・型抜きもオーダー可能。",
+      "lenFirst": 73,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 26,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 162
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 36 非40-60"
+      ],
+      "first": "超厚名片 400g 厚卡印刷，燙金、壓紋工藝，10 張起印 HK$1.2 起/張。",
+      "lenFirst": 36,
+      "words": 4,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 400"
+      ],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 109
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Thick 400g business cards with foil stamping and emboss finishing.",
+      "lenFirst": 57,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 400"
+      ],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 213
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 35 非40-60"
+      ],
+      "first": "厚口名刺（400g）印刷、箔押し・エンボス加工対応、10枚〜 ¥23〜。",
+      "lenFirst": 35,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 400"
+      ],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 105
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "玫瑰金名片",
+      "lenFirst": 5,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 5
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Foil-stamped business cards with metallic gold and silver finish.",
+      "lenFirst": 57,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 185
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 34 非40-60"
+      ],
+      "first": "箔押し名刺印刷、金・銀・ローズゴールドの箔色対応、10枚〜 ¥35〜。",
+      "lenFirst": 34,
+      "words": 2,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "价格非区间"
+      ],
+      "gscImps": 30,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 104
+    },
+    {
+      "slug": "spot-uv-greeting-cards",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 36 非40-60"
+      ],
+      "first": "局部UV賀卡印刷：啞面底紙配高光 UV 圖案，強烈層次與立體對比，觸感細緻。",
+      "lenFirst": 36,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "spot-uv-greeting-cards",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Spot UV greeting cards: glossy highlights on matte base, 300gsm.",
+      "lenFirst": 55,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 217
+    },
+    {
+      "slug": "spot-uv-greeting-cards",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "部分UVグリーティングカード印刷：マット下地に光沢UVのコントラスト、300gコート紙または合成紙。",
+      "lenFirst": 50,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 147
+    },
+    {
+      "slug": "matte-greeting-cards",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 32 非40-60"
+      ],
+      "first": "啞膜賀卡印刷：柔順啞面、防指紋、低調高級質感，長久保存不易顯舊。",
+      "lenFirst": 32,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 149
+    },
+    {
+      "slug": "matte-greeting-cards",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Matte greeting cards: soft-touch, fingerprint-resistant, 300gsm art or eco paper.",
+      "lenFirst": 72,
+      "words": 12,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 207
+    },
+    {
+      "slug": "matte-greeting-cards",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "マットグリーティングカード印刷：なめらかなマット加工、指紋防止仕上げ、300gマット紙またはエコ紙。",
+      "lenFirst": 50,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 11,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 147
+    },
+    {
+      "slug": "rounded-corner-greeting-cards",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期",
+        "首句長度 29 非40-60"
+      ],
+      "first": "圓角賀卡印刷：R3mm 圓角模切，柔和觸感不翹角，輕巧可愛。",
+      "lenFirst": 29,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 10,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 150
+    },
+    {
+      "slug": "rounded-corner-greeting-cards",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Rounded-corner greeting cards: soft R3mm die-cut corners, 300gsm.",
+      "lenFirst": 58,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 10,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 196
+    },
+    {
+      "slug": "rounded-corner-greeting-cards",
+      "locale": "ja",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "角丸グリーティングカード印刷：R3mmのやさしい丸角型抜き、300gコート紙またはアート紙。",
+      "lenFirst": 46,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 10,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 154
+    },
+    {
+      "slug": "cafe-table-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "餐廳 / 咖啡廳枱卡印刷，PVC 防水材質、站立式設計，50 張起印。",
+      "lenFirst": 31,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 120
+    },
+    {
+      "slug": "cafe-table-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom café table cards for restaurants, cafes and events.",
+      "lenFirst": 50,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 244
+    },
+    {
+      "slug": "cafe-table-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "カフェ / レストラン テーブルカードのオーダー印刷、50セット〜。",
+      "lenFirst": 31,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 3,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 112
+    },
+    {
+      "slug": "corrugated-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "瓦楞彩盒印刷訂製 500 個起。",
+      "lenFirst": 14,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 98
+    },
+    {
+      "slug": "corrugated-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Corrugated Boxes in E-flute and F-flute for shipping and retail packaging.",
+      "lenFirst": 64,
+      "words": 13,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 229
+    },
+    {
+      "slug": "corrugated-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "",
+      "lenFirst": 0,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 41,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 0
+    },
+    {
+      "slug": "drink-tokens",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "酒水牌 / 飲品標記印刷，PVC 防水材質、圓角模切，50 張起印。",
+      "lenFirst": 30,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 121
+    },
+    {
+      "slug": "drink-tokens",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom drink tokens for bars, parties and event beverage tracking.",
+      "lenFirst": 57,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 250
+    },
+    {
+      "slug": "drink-tokens",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ドリンクトークンのオーダー印刷、50セット〜。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 100
+    },
+    {
+      "slug": "escort-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "座位卡 / 賓客標記印刷，燙金、局部 UV 工藝、站立式設計，50 張起印。",
+      "lenFirst": 33,
+      "words": 2,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 124
+    },
+    {
+      "slug": "escort-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom escort cards for weddings and banquet seating.",
+      "lenFirst": 46,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 234
+    },
+    {
+      "slug": "escort-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "エスコートカードのオーダー印刷、50セット〜。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "foil-wedding-invitations",
+      "locale": "zh-hk",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 交期",
+        "首句長度 26 非40-60"
+      ],
+      "first": "燙金喜帖印刷訂製，50 套起印，HK$1.20 起/套。",
+      "lenFirst": 26,
+      "words": 3,
+      "elements": {
+        "price": true,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": {
+        "desc": 20,
+        "truth": 50
+      },
+      "flags": [
+        "价格非区间",
+        "无来源数字待核: 1.20"
+      ],
+      "gscImps": 42,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 105
+    },
+    {
+      "slug": "foil-wedding-invitations",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom foil wedding invitations for wedding invitations.",
+      "lenFirst": 50,
+      "words": 7,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 42,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 238
+    },
+    {
+      "slug": "foil-wedding-invitations",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "箔押し結婚式招待状のオーダー印刷、50セット〜。",
+      "lenFirst": 24,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 42,
+      "tier": "P0",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "name-tags-badges",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "",
+      "lenFirst": 0,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 0
+    },
+    {
+      "slug": "name-tags-badges",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom name tags for conferences, exhibitions and events.",
+      "lenFirst": 50,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 238
+    },
+    {
+      "slug": "name-tags-badges",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "名札 / 会議バッジのオーダー印刷、50セット〜。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 15,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 99
+    },
+    {
+      "slug": "save-the-date-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Save the Date 結婚通知卡印刷，A6 尺寸、燙金、局部 UV 工藝，50 套起印。",
+      "lenFirst": 40,
+      "words": 6,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 131
+    },
+    {
+      "slug": "save-the-date-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom save the date cards for wedding announcements.",
+      "lenFirst": 46,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 233
+    },
+    {
+      "slug": "save-the-date-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Save the Date カード印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 31,
+      "words": 4,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 7,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 115
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "插口盒印刷訂製，直插/飛機插兩種盒型，輕量彩盒適合化妝品、食品、電子周邊包裝。",
+      "lenFirst": 39,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 350,400"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 120
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "Tuck End Boxes in straight tuck and airplane tuck styles for lightweight retail packaging.",
+      "lenFirst": 77,
+      "words": 14,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 350,400"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 239
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "差し込み式ボックスのオーダー印刷、直挿し・飛行機挿しの2種箱型、化粧品・食品・電子周辺の軽量パッケージに。",
+      "lenFirst": 53,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [
+        "无来源数字待核: 350,400"
+      ],
+      "gscImps": 9,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 127
+    },
+    {
+      "slug": "wedding-menu-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "婚禮菜單卡印刷，A5 尺寸、燙金、局部 UV、雙面印刷，50 套起印。",
+      "lenFirst": 32,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 1,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 119
+    },
+    {
+      "slug": "wedding-menu-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding menu cards for wedding receptions and banquets.",
+      "lenFirst": 54,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 1,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 247
+    },
+    {
+      "slug": "wedding-menu-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ウエディング メニュー印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 27,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 1,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 109
+    },
+    {
+      "slug": "wedding-place-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "婚宴枱卡印刷，燙金、壓紋工藝、站立式設計，50 張起印。",
+      "lenFirst": 27,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 6,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 111
+    },
+    {
+      "slug": "wedding-place-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding place cards for wedding reception seating.",
+      "lenFirst": 50,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 6,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 238
+    },
+    {
+      "slug": "wedding-place-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ウエディング席札印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 25,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 6,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 101
+    },
+    {
+      "slug": "wedding-program-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "婚禮節目單印刷，A5 對摺、雙面印刷、燙金 UV，50 套起印。",
+      "lenFirst": 29,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 116
+    },
+    {
+      "slug": "wedding-program-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding program cards for wedding ceremonies and programs.",
+      "lenFirst": 57,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 249
+    },
+    {
+      "slug": "wedding-program-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "結婚式のしおり印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 24,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 0,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 107
+    },
+    {
+      "slug": "wedding-seating-charts",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "",
+      "lenFirst": 0,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 0
+    },
+    {
+      "slug": "wedding-seating-charts",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding seating charts for wedding reception seating plans.",
+      "lenFirst": 58,
+      "words": 9,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 243
+    },
+    {
+      "slug": "wedding-seating-charts",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "披露宴座席表印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 23,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 5,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 104
+    },
+    {
+      "slug": "wedding-suite-bundle",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "",
+      "lenFirst": 0,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 0
+    },
+    {
+      "slug": "wedding-suite-bundle",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding suite bundle for complete wedding stationery.",
+      "lenFirst": 53,
+      "words": 8,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 248
+    },
+    {
+      "slug": "wedding-suite-bundle",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "ウエディング フル セット印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 28,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 4,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 110
+    },
+    {
+      "slug": "wedding-thank-you-cards",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "婚禮感謝卡印刷，A6 尺寸、燙金、局部 UV 工藝，50 套起印。",
+      "lenFirst": 29,
+      "words": 3,
+      "elements": {
+        "price": false,
+        "moq": true,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 2,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 117
+    },
+    {
+      "slug": "wedding-thank-you-cards",
+      "locale": "en",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "Custom wedding thank you cards for wedding thank-you notes.",
+      "lenFirst": 51,
+      "words": 10,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 2,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 244
+    },
+    {
+      "slug": "wedding-thank-you-cards",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "結婚式サンキュカード印刷のオーダー印刷、50セット〜。",
+      "lenFirst": 27,
+      "words": 1,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 2,
+      "tier": "P2",
+      "r2Frozen": false,
+      "descLen": 108
+    },
+    {
+      "slug": "white-card-boxes",
+      "locale": "zh-hk",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "",
+      "lenFirst": 0,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 0
+    },
+    {
+      "slug": "white-card-boxes",
+      "locale": "en",
+      "state": "缺要素",
+      "reasons": [
+        "首句缺: 价格区间+MOQ+交期"
+      ],
+      "first": "White Cardboard Boxes for gift and retail packaging, clean white card surface for full-color print.",
+      "lenFirst": 85,
+      "words": 16,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 228
+    },
+    {
+      "slug": "white-card-boxes",
+      "locale": "ja",
+      "state": "无答案句",
+      "reasons": [
+        "首两句不含价格/MOQ/交期组合"
+      ],
+      "first": "白カードボックスのオーダー印刷、化粧品・ギフト・零售パッケージ向け、白いカード表面にフルカラー再現。",
+      "lenFirst": 50,
+      "words": 0,
+      "elements": {
+        "price": false,
+        "moq": false,
+        "delivery": false
+      },
+      "moqMismatch": null,
+      "flags": [],
+      "gscImps": 22,
+      "tier": "P1",
+      "r2Frozen": false,
+      "descLen": 110
+    }
+  ]
+}

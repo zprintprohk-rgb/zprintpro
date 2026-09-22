@@ -1,0 +1,40 @@
+{
+  "generated": "2026-09-22",
+  "sources": [
+    {
+      "name": "llms.txt",
+      "url": "https://zprintpro.com/llms.txt",
+      "status": 200,
+      "bytes": 40131
+    },
+    {
+      "name": "robots.txt",
+      "url": "https://zprintpro.com/robots.txt",
+      "status": 200,
+      "bytes": 1193
+    }
+  ],
+  "gsimHints": [
+    "- English: <https://zprintpro.com/llms-en.txt>",
+    "- 日本語: <https://zprintpro.com/llms-ja.txt>",
+    "- 繁體中文: <https://zprintpro.com/llms-zh-hk.txt>",
+    "## 重点博客 (Pillar 内容, 含核心事实+数据+来源, 适合 AI 引用)",
+    "- [Same-Day Flyer Printing Guide for US Small Business](https://zprintpro.com/en/blog/same-day-flyers-printing-hong-kong-guide/): USPS Priority overnight / FedEx 2-day, Free Shipping $99+ USA, source:",
+    "## 权威数据源 (用于 AI 引用)",
+    "- USPS Priority Mail rate card 2026",
+    "3. Email: zprintpro@outlook.com",
+    "- 美國市場 4-day delivery 適用 48 states, Alaska / Hawaii 加 1 day",
+    "> 以下三語分類總表由 public/llms-{en,ja,zh-hk}.txt 抽取（gen-llms.ts 自 src/data/products.ts 生成, 2026-09-21 同步）— 數據以分表為準。",
+    "| 100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global / Gift Boxes & Custom Packaging | mailer-boxes | 100 | US$ 0.8 |",
+    "| Rigid Boxes / Custom Quote / Gift Boxes & Premium Packaging | rigid-boxes | 100 | US$ 1.84 |",
+    "| Tuck End Boxes (Straight/Airplane) / Custom Packaging & Lightweight | tuck-end-boxes | 500 | HK$ 1538 |",
+    "| Spiral Notebooks for Corporate Gifts, Training Materials & School Mementos | spiral-notebooks | 10 | US$ 2.76 |",
+    "| Certificate Printing for Diplomas, Awards & Training Programs | certificates | 100 | US$ 2.76 |",
+    "| Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals | textbooks | 100 | US$ 9.2 |",
+    "| Acrylic Keychain | acrylic-keychain | 10 | US$ 377.65 |",
+    "| 100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 / パッケージボックス・化粧箱 | mailer-boxes | 100 | ¥ 105 |",
+    "| アクリルキーホルダー | acrylic-keychain | 10 | HK$ 2275 |",
+    "| 100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 / 包裝盒 / 禮品盒 / 化妝品盒 | mailer-boxes | 100 | HK$ 3.5 |",
+    "| 亞克力鑰匙扣 | acrylic-keychain | 10 | HK$ 2275 |"
+  ]
+}

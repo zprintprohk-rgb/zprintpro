@@ -1,0 +1,110 @@
+{
+ "url": "https://zprintpro.com/ja/product/double-sided-flyers/",
+ "isRendered": true,
+ "numObjects": 9,
+ "totalNumErrors": 5,
+ "totalNumWarnings": 1,
+ "errors": [
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_ITEMTYPE",
+   "args": [
+    "ProcureAction"
+   ],
+   "begin": 22624,
+   "end": 22773,
+   "isSevere": true,
+   "errorID": 0,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_OBJECT",
+   "args": [
+    "potentialAction",
+    "ProcureAction",
+    "Action,http://schema.org/Role"
+   ],
+   "begin": 22624,
+   "end": 22773,
+   "isSevere": true,
+   "errorID": 1,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_PREDICATE",
+   "args": [
+    "sourcingIntentKeywords",
+    "Product"
+   ],
+   "begin": 22799,
+   "end": 22885,
+   "isSevere": true,
+   "errorID": 2,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "UNKNOWN_FIELD",
+   "args": [
+    "priceRange",
+    "Organization"
+   ],
+   "begin": 27905,
+   "end": 27910,
+   "isSevere": false,
+   "errorID": 3,
+   "ownerToSeverity": {
+    "SPORE": "WARNING"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-title"
+   ],
+   "begin": 33472,
+   "end": 33488,
+   "isSevere": true,
+   "errorID": 4,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-description"
+   ],
+   "begin": 33489,
+   "end": 33511,
+   "isSevere": true,
+   "errorID": 5,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  }
+ ],
+ "_note": "validator.schema.org raw response, html/tripleGroups echo stripped (门童品牌分层合规 + 体积); 全量原始抓取 2026-09-22"
+}

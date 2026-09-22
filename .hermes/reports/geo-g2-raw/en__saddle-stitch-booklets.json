@@ -1,0 +1,110 @@
+{
+ "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+ "isRendered": true,
+ "numObjects": 11,
+ "totalNumErrors": 5,
+ "totalNumWarnings": 1,
+ "errors": [
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_OBJECT",
+   "args": [
+    "potentialAction",
+    "ProcureAction",
+    "Action,http://schema.org/Role"
+   ],
+   "begin": 21849,
+   "end": 21995,
+   "isSevere": true,
+   "errorID": 0,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_ITEMTYPE",
+   "args": [
+    "ProcureAction"
+   ],
+   "begin": 21849,
+   "end": 21995,
+   "isSevere": true,
+   "errorID": 1,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "INVALID_PREDICATE",
+   "args": [
+    "sourcingIntentKeywords",
+    "Product"
+   ],
+   "begin": 22021,
+   "end": 22095,
+   "isSevere": true,
+   "errorID": 2,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "UNKNOWN_FIELD",
+   "args": [
+    "priceRange",
+    "Organization"
+   ],
+   "begin": 31861,
+   "end": 31866,
+   "isSevere": false,
+   "errorID": 3,
+   "ownerToSeverity": {
+    "SPORE": "WARNING"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-title"
+   ],
+   "begin": 37177,
+   "end": 37193,
+   "isSevere": true,
+   "errorID": 4,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  },
+  {
+   "ownerSet": {
+    "SPORE": true
+   },
+   "errorType": "NO_MATCHES_FOUND",
+   "args": [
+    "product-description"
+   ],
+   "begin": 37194,
+   "end": 37216,
+   "isSevere": true,
+   "errorID": 5,
+   "ownerToSeverity": {
+    "SPORE": "ERROR"
+   }
+  }
+ ],
+ "_note": "validator.schema.org raw response, html/tripleGroups echo stripped (门童品牌分层合规 + 体积); 全量原始抓取 2026-09-22"
+}

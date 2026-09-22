@@ -1,0 +1,929 @@
+{
+  "generated": "2026-09-22",
+  "base": "https://zprintpro.com",
+  "pages": [
+    {
+      "slug": "a5-flyers",
+      "locale": "zh-hk",
+      "note": "R2 验证窗槽 (只读观测, 不动 title)",
+      "url": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+      "truth": {
+        "minQuantity": 10,
+        "basePrice": "0.25",
+        "basePrice_en": "0.4",
+        "basePrice_ja": "50",
+        "price_range": "HK$0.25-0.65/張",
+        "turnaround": "",
+        "unitLabel": "",
+        "category": "flyers"
+      },
+      "live": {
+        "status": 200,
+        "length": 214296,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "A5傳單印刷",
+          "image": "/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-1.webp",
+          "offers": {
+            "price": "0.14",
+            "priceCurrency": "HKD",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 10,
+              "unitCode": "H87",
+              "unitText": "張"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "即時報價",
+            "target": "https://zprintpro.com/zh-hk/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "MOQ 10張起, 免費數碼打稿, 1小時打樣, 跨境DHL全球派送"
+        }
+      },
+      "validator": {
+        "numObjects": 11,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 0,
+        "expectedErrors": [
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=214296"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/zh-hk/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=10 products.ts=10"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=MOQ 10張起, 免費數碼打稿, 1小時打樣, 跨境DHL全球派送"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=0.14 HKD"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=11 errors=5"
+        }
+      ]
+    },
+    {
+      "slug": "waterproof-stickers",
+      "locale": "en",
+      "note": "G1 探针页",
+      "url": "https://zprintpro.com/en/product/waterproof-stickers/",
+      "truth": {
+        "minQuantity": 10,
+        "basePrice": "0.22",
+        "basePrice_en": "0.32",
+        "basePrice_ja": "41",
+        "price_range": "HK$0.22-1.0/張",
+        "turnaround": "",
+        "unitLabel": "",
+        "category": "stickers"
+      },
+      "live": {
+        "status": 200,
+        "length": 246690,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "Waterproof Stickers / Outdoor Stickers",
+          "image": "/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en.webp",
+          "offers": {
+            "price": "0.05",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 10,
+              "unitCode": "H87",
+              "unitText": "pcs"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "Request a quote",
+            "target": "https://zprintpro.com/en/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "MOQ 10 pcs, free digital proof, 1-hour proofing, ships worldwide via DHL"
+        }
+      },
+      "validator": {
+        "numObjects": 12,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 1,
+        "expectedErrors": [
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "UNKNOWN_FIELD",
+            "args": [
+              "priceRange",
+              "Organization"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=246690"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/en/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=10 products.ts=10"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=MOQ 10 pcs, free digital proof, 1-hour proofing, ships world"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=0.05 USD"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=12 errors=5"
+        }
+      ]
+    },
+    {
+      "slug": "mini-calendars",
+      "locale": "ja",
+      "note": "G1 探针页",
+      "url": "https://zprintpro.com/ja/product/mini-calendars/",
+      "truth": {
+        "minQuantity": 1,
+        "basePrice": "3",
+        "basePrice_en": "0.40",
+        "basePrice_ja": "50",
+        "price_range": "HK$3-8/本",
+        "turnaround": "",
+        "unitLabel": "張",
+        "category": "calendars"
+      },
+      "live": {
+        "status": 200,
+        "length": 156679,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "ミニカレンダー",
+          "image": "/images/products/seedream-webp/zprintpro-calendars-mini-calendars-ja.webp",
+          "offers": {
+            "price": "50",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "unitCode": "H87",
+              "unitText": "冊"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "見積もり依頼",
+            "target": "https://zprintpro.com/ja/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "最小ロット1冊, 無料デジタル校正, 1時間校正対応, DHL国際配送"
+        }
+      },
+      "validator": {
+        "numObjects": 11,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 1,
+        "expectedErrors": [
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "UNKNOWN_FIELD",
+            "args": [
+              "priceRange",
+              "Organization"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=156679"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/ja/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=1 products.ts=1"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=最小ロット1冊, 無料デジタル校正, 1時間校正対応, DHL国際配送"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=50 JPY"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=11 errors=5"
+        }
+      ]
+    },
+    {
+      "slug": "small-batch-stickers",
+      "locale": "en",
+      "note": "自选, GSC en imps 246 (P0)",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "truth": {
+        "minQuantity": 10,
+        "basePrice": "38",
+        "basePrice_en": "0.55",
+        "basePrice_ja": "69",
+        "price_range": "HK$38-120/A4",
+        "turnaround": "",
+        "unitLabel": "",
+        "category": "stickers"
+      },
+      "live": {
+        "status": 200,
+        "length": 237473,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "Small Batch Stickers / Label Printing",
+          "image": "/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-1.webp",
+          "offers": {
+            "price": "0.55",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 10,
+              "unitCode": "H87",
+              "unitText": "pcs"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "Request a quote",
+            "target": "https://zprintpro.com/en/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "MOQ 10 pcs, free digital proof, 1-hour proofing, ships worldwide via DHL"
+        }
+      },
+      "validator": {
+        "numObjects": 11,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 1,
+        "expectedErrors": [
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "UNKNOWN_FIELD",
+            "args": [
+              "priceRange",
+              "Organization"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=237473"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/en/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=10 products.ts=10"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=MOQ 10 pcs, free digital proof, 1-hour proofing, ships world"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=0.55 USD"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=11 errors=5"
+        }
+      ]
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "locale": "en",
+      "note": "自选, GSC en imps 181 (P0)",
+      "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+      "truth": {
+        "minQuantity": 10,
+        "basePrice": "6",
+        "basePrice_en": "1.84",
+        "basePrice_ja": "258",
+        "price_range": "HK$6-32/本",
+        "turnaround": "",
+        "unitLabel": "",
+        "category": "books"
+      },
+      "live": {
+        "status": 200,
+        "length": 241597,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "Saddle Stitch Booklet Printing",
+          "image": "/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en.webp",
+          "offers": {
+            "price": "0.15",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 10,
+              "unitCode": "H87",
+              "unitText": "pcs"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "Request a quote",
+            "target": "https://zprintpro.com/en/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "MOQ 10 pcs, free digital proof, 1-hour proofing, ships worldwide via DHL"
+        }
+      },
+      "validator": {
+        "numObjects": 11,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 1,
+        "expectedErrors": [
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "UNKNOWN_FIELD",
+            "args": [
+              "priceRange",
+              "Organization"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=241597"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/en/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=10 products.ts=10"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=MOQ 10 pcs, free digital proof, 1-hour proofing, ships world"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=0.15 USD"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=11 errors=5"
+        }
+      ]
+    },
+    {
+      "slug": "double-sided-flyers",
+      "locale": "ja",
+      "note": "自选, GSC ja imps 48; R2 验证窗槽 (只读观测)",
+      "url": "https://zprintpro.com/ja/product/double-sided-flyers/",
+      "truth": {
+        "minQuantity": 10,
+        "basePrice": "0.40",
+        "basePrice_en": "0.65",
+        "basePrice_ja": "85",
+        "price_range": "HK$0.40-0.95/張",
+        "turnaround": "",
+        "unitLabel": "",
+        "category": "flyers"
+      },
+      "live": {
+        "status": 200,
+        "length": 172762,
+        "numJsonLd": 8,
+        "numProduct": 1,
+        "productSample": {
+          "name": "両面チラシ",
+          "image": "/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-1.webp",
+          "offers": {
+            "price": "85",
+            "priceCurrency": "JPY",
+            "availability": "https://schema.org/InStock",
+            "eligibleQuantity": {
+              "@type": "QuantitativeValue",
+              "minValue": 10,
+              "unitCode": "H87",
+              "unitText": "枚"
+            },
+            "businessFunction": "http://purl.org/goodrelations/v1#Sell"
+          },
+          "potentialAction": {
+            "@type": "ProcureAction",
+            "name": "見積もり依頼",
+            "target": "https://zprintpro.com/ja/quote/",
+            "seller": {
+              "@type": "Organization",
+              "name": "<brand:zh-hk-redacted-per-brand-guard>"
+            }
+          },
+          "sourcingIntentKeywords": "最小ロット10枚, 無料デジタル校正, 1時間校正対応, DHL国際配送"
+        }
+      },
+      "validator": {
+        "numObjects": 9,
+        "totalNumErrors": 5,
+        "totalNumWarnings": 1,
+        "expectedErrors": [
+          {
+            "type": "INVALID_ITEMTYPE",
+            "args": [
+              "ProcureAction"
+            ]
+          },
+          {
+            "type": "INVALID_OBJECT",
+            "args": [
+              "potentialAction",
+              "ProcureAction",
+              "Action,http://schema.org/Role"
+            ]
+          },
+          {
+            "type": "INVALID_PREDICATE",
+            "args": [
+              "sourcingIntentKeywords",
+              "Product"
+            ]
+          }
+        ],
+        "unexpectedErrors": [
+          {
+            "type": "UNKNOWN_FIELD",
+            "args": [
+              "priceRange",
+              "Organization"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-title"
+            ]
+          },
+          {
+            "type": "NO_MATCHES_FOUND",
+            "args": [
+              "product-description"
+            ]
+          }
+        ],
+        "warnings": []
+      },
+      "assertions": [
+        {
+          "k": "page_valid",
+          "ok": true,
+          "info": "status=200 len=172762"
+        },
+        {
+          "k": "fob_absent",
+          "ok": true,
+          "info": "FOB=0"
+        },
+        {
+          "k": "procure_action",
+          "ok": true,
+          "info": "potentialAction.@type=ProcureAction"
+        },
+        {
+          "k": "procure_target",
+          "ok": true,
+          "info": "target=\"https://zprintpro.com/ja/quote/\""
+        },
+        {
+          "k": "eligibleQuantity_minValue",
+          "ok": true,
+          "info": "schema=10 products.ts=10"
+        },
+        {
+          "k": "eligibleQuantity_unitCode",
+          "ok": true,
+          "info": "unitCode=H87"
+        },
+        {
+          "k": "businessFunction",
+          "ok": true,
+          "info": "bf=http://purl.org/goodrelations/v1#Sell"
+        },
+        {
+          "k": "sourcingIntentKeywords_present",
+          "ok": true,
+          "info": "sik=最小ロット10枚, 無料デジタル校正, 1時間校正対応, DHL国際配送"
+        },
+        {
+          "k": "offer_price_currency",
+          "ok": true,
+          "info": "price=85 JPY"
+        },
+        {
+          "k": "offer_availability",
+          "ok": true,
+          "info": "availability=https://schema.org/InStock"
+        },
+        {
+          "k": "validator_parse",
+          "ok": true,
+          "info": "objects=9 errors=5"
+        }
+      ]
+    }
+  ]
+}
