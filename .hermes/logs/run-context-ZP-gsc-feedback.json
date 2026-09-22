@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-09-21 22:43:11",
+  "generated_at": "2026-09-22 22:43:03",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "13e54fea16452cb6",
-    "day": "2026-09-21",
+    "this_run_key": "0d2e0bc1f28cc606",
+    "day": "2026-09-22",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -24,13 +24,13 @@
       },
       {
         "name": "prev_run_known",
-        "ok": false,
-        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+        "ok": true,
+        "detail": "总线最近记录 verdict=OK @ 2026-09-21 22:43:54"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=2"
+        "detail": "verdict=ATTENTION problems=4"
       },
       {
         "name": "lock_acquired",
@@ -41,17 +41,44 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 21304,
-    "acquired_at": "2026-09-21 22:43:11",
-    "acquired_ts": 1790001791.8210437,
+    "pid": 21036,
+    "acquired_at": "2026-09-22 22:43:03",
+    "acquired_ts": 1790088183.7750466,
     "host": "JEROME"
   },
   "previous_run": {
-    "bus_record": null,
+    "bus_record": {
+      "run_id": "ZP-gsc-feedback-20260921T224354",
+      "lane": "ZP-gsc-feedback",
+      "trigger": "schtasks",
+      "fired_at": "2026-09-21 22:43:54",
+      "ended_at": "2026-09-21 22:43:54",
+      "idempotency_key": "1ba5887ae9df4112",
+      "dsh_exit": null,
+      "wrapper_exit": 0,
+      "verdict": "OK",
+      "state": "completed",
+      "blocked_reason": "",
+      "guard": {
+        "ok": true
+      },
+      "report": "NONE",
+      "files": [],
+      "pushed": true,
+      "head": "8cc2910f",
+      "source": "lane-git-commit.py"
+    },
     "latest_report": ".hermes/logs/2026-09-18-gsc-feedback.md",
     "delivered_files_from_report": []
   },
-  "sibling_lanes": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-daily-content",
+      "status": "PENDING",
+      "report": null,
+      "start": "21:17"
+    }
+  ],
   "retry_queue": [
     {
       "kind": "UNRESOLVED_DAY",
@@ -59,6 +86,14 @@
       "status": "STALE",
       "notes": [
         "ran but no report file dated 2026-09-17"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-09-21",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-09-21"
       ]
     }
   ],
