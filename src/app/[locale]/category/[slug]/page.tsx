@@ -181,11 +181,12 @@ export default function CategoryPage({
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
     // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.
-    // 加 NAP-脱钩 sharp hook: 10本起 / A5+B5 / Comiket 24h特急 / 5 周邊類型
+    // 加 NAP-脱钩 sharp hook: 10本起 / A5+B5 / Comiket 24h特急 / 3 周邊類型
+    // 2026-09-23 SKU 压缩: can-badge 下架 (非业务范围) → H1 去 亞克力/缶バッジ/Can Badge
     'japan-doujin': {
-      'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 亞克力 / 缶バッジ / 明信片 Comiket 24h 特急',
-      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Acrylic Can Badge Postcard · USA Anime Fans',
-      ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
+      'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 明信片套裝 / 環保托特袋 Comiket 24h 特急',
+      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Booklets Postcards Tote Bags · USA Anime Fans',
+      ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / ポストカード / エコトート コミケ 24時間特急',
     },
     'wedding-invitations': {
       'zh-hk': '香港燙金喜帖印刷定製 — 中式龍鳳 / 西式燙金 / Save the Date / 教堂婚禮',

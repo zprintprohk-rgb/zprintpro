@@ -22,18 +22,18 @@
 - ポスター印刷 (posters) -- 6 products
 - 紙袋印刷 (paper-bags) -- 6 products
 - グリーティングカード・年賀状 (greeting-cards) -- 6 products
-- バナー印刷 (banners) -- 5 products
+- バナー印刷 (banners) -- 4 products
 - 書籍印刷 (books) -- 5 products
-- メニュー印刷 (menus) -- 5 products
+- メニュー印刷 (menus) -- 4 products
 - 封筒印刷 (envelopes) -- 4 products
 - カレンダー印刷 (calendars) -- 6 products
 - ポチ袋印刷 (red-packets) -- 6 products
 - 教育印刷 (educational) -- 5 products
-- 同人誌・アニメグッズ (japan-doujin) -- 5 products
-- 結婚式招待状 (wedding-invitations) -- 6 products
-- 席札 (place-cards) -- 6 products
+- 同人誌・アニメグッズ (japan-doujin) -- 3 products
+- 結婚式招待状 (wedding-invitations) -- 4 products
+- 席札 (place-cards) -- 4 products
 
-## 全製品一覧 (99 SKU)
+## 全製品一覧 (91 SKU)
 
 ### ステッカー (stickers)
 
@@ -119,7 +119,6 @@
 | ロールアップバナー / ロールアップバナー / 屋外バナー | roll-up-banners | 1 | ¥ 6440 |
 | 粘着バナー / ロールアップバナー / 屋外バナー | adhesive-banners | 1 | ¥ 300 |
 | カーラッピング / ロールアップバナー / 屋外バナー | vehicle-wraps | 1 | ¥ 840 |
-| メッシュバナー / ロールアップバナー / 屋外バナー | mesh-banners | 1 | ¥ 480 |
 
 ### 書籍印刷 (books)
 
@@ -139,7 +138,6 @@
 | ラミネートメニュー / レストランメニュー / 防水 | laminated-menus | 10 | ¥ 258 |
 | 高級メニュー / レストランメニュー / 防水 | hardcover-menus | 10 | ¥ 1288 |
 | ドリンクメニュー / レストランメニュー / 防水 | drink-menus | 10 | ¥ 515 |
-| 使い捨てメニュー / レストランメニュー / 防水 | disposable-menus | 100 | ¥ 20 |
 
 ### 封筒印刷 (envelopes)
 
@@ -187,8 +185,6 @@
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
 | 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| アクリルキーホルダー | acrylic-keychain | 10 | HK$ 2275 |
-| 缶バッジ印刷 | can-badge | 10 | HK$ 1200 |
 | ポストカードセット | postcard-set | 4 | HK$ 750 |
 | エコトートバッグ | eco-tote-bag | 10 | HK$ 9000 |
 
@@ -199,8 +195,6 @@
 | 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date カード | save-the-date-cards | 50 | HK$ 0.85 |
 | 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| 結婚式のしおり | wedding-program-cards | 50 | HK$ 0.95 |
-| ウエディング メニュー | wedding-menu-cards | 50 | HK$ 1.15 |
 | ウエディング フル セット | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### 席札 (place-cards)
@@ -209,8 +203,6 @@
 |------|------|---------|---------|
 | ウエディング席札 | wedding-place-cards | 50 | HK$ 0.3 |
 | ドリンクトークン | drink-tokens | 50 | HK$ 0.25 |
-| エスコートカード | escort-cards | 50 | HK$ 0.3 |
-| 名札 / 会議バッジ | name-tags-badges | 50 | HK$ 0.4 |
 | カフェ / レストラン テーブルカード | cafe-table-cards | 50 | HK$ 0.4 |
 | 披露宴座席表 | wedding-seating-charts | 50 | HK$ 4.5 |
 

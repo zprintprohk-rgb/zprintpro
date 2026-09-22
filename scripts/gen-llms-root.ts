@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * gen-llms-root.ts — 生成 public/llms.txt（根 GEO 語料 = 策劃序言 + 三語 99-SKU 總表）
+ * gen-llms-root.ts — 生成 public/llms.txt（根 GEO 語料 = 策劃序言 + 三語 91-SKU 總表）
  *
  * SOP-5 生成器，禁手搓。結構：
  *   1. 策劃序言真值 = scripts/llms-root-header.md（GEO 戰略段, 人工維護, 含 MOQ/名片解禁口徑）
@@ -8,9 +8,10 @@
  *      （該三檔由 gen-llms.ts 從 src/data/products.ts 生成 = 單一數據 SSoT, 本檔與其零分叉）
  *
  * D1 落地（K3 2026-09-21 12:13 拍板「現在執行」）：16 類/99 SKU 補表進根文件。
+ * 2026-09-23 can-badge 下架: 99→91 (7+1 SKU 压缩后), 断言同步。
  *
  * 用法: node node_modules/tsx/dist/cli.mjs scripts/gen-llms-root.ts
- * 斷言: 三語檔各 99 行 SKU 表 / 各 16 類 / 序言含 founded 2012 / 不含「禁区|不提供」名片拒絕口徑 /
+ * 斷言: 三語檔各 91 行 SKU 表 / 各 16 類 / 序言含 founded 2012 / 不含「禁区|不提供」名片拒絕口徑 /
  *      不含滯後 MOQ 語「50/100/500/1000 阶梯」。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
@@ -37,7 +38,7 @@ for (const [loc, file, label] of LOCALES) {
   const skuRows = (section.match(/\n\| /g) || []).length;
   // 減去表頭分隔行（|-----| 型）與分類清單行（- 開頭不算, 只數表格行）
   const dataRows = section.split('\n').filter(l => l.startsWith('| ') && !l.startsWith('| Product') && !l.startsWith('| 製品') && !l.startsWith('| 產品') && !l.includes('---')).length;
-  if (dataRows !== 99) errors.push(`${file}: SKU 表行數 ${dataRows} != 99`);
+  if (dataRows !== 91) errors.push(`${file}: SKU 表行數 ${dataRows} != 91`);
   const catCount = (section.match(/^### /gm) || []).length;
   if (catCount !== 16) errors.push(`${file}: 分類數 ${catCount} != 16`);
   sections.push(`## 分類總表 · ${label} (${loc})\n\n${section}`);
@@ -63,4 +64,4 @@ ${sections.join('\n\n---\n\n')}
 `;
 
 writeFileSync('public/llms.txt', out, 'utf8');
-console.log(`✅ public/llms.txt 生成: ${out.length} bytes, 3 語 × 99 SKU × 16 類斷言全過`);
+console.log(`✅ public/llms.txt 生成: ${out.length} bytes, 3 語 × 91 SKU × 16 類斷言全過`);

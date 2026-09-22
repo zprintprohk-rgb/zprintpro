@@ -23,18 +23,18 @@
 - 海報印刷 (posters) -- 6 products
 - 紙袋印刷 (paper-bags) -- 6 products
 - 賀卡印刷 (greeting-cards) -- 6 products
-- 噴繪廣告 (banners) -- 5 products
+- 噴繪廣告 (banners) -- 4 products
 - 書籍印刷 (books) -- 5 products
-- 餐牌印刷 (menus) -- 5 products
+- 餐牌印刷 (menus) -- 4 products
 - 信封印刷 (envelopes) -- 4 products
 - 月曆印刷 (calendars) -- 6 products
 - 利是封印刷 (red-packets) -- 6 products
 - 校園教育印刷 (educational) -- 5 products
-- 同人周邊印刷 (japan-doujin) -- 5 products
-- 喜帖印刷 (wedding-invitations) -- 6 products
-- 枱卡 (place-cards) -- 6 products
+- 同人周邊印刷 (japan-doujin) -- 3 products
+- 喜帖印刷 (wedding-invitations) -- 4 products
+- 枱卡 (place-cards) -- 4 products
 
-## 全產品一覽 (99 SKU)
+## 全產品一覽 (91 SKU)
 
 ### 貼紙印刷 (stickers)
 
@@ -120,7 +120,6 @@
 | 易拉寶 / 易拉寶 / 戶外橫幅 / 噴繪 | roll-up-banners | 1 | HK$ 85 |
 | 背膠噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | adhesive-banners | 1 | HK$ 10 |
 | 車身廣告 / 易拉寶 / 戶外橫幅 / 噴繪 | vehicle-wraps | 1 | HK$ 28 |
-| 網格布噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | mesh-banners | 1 | HK$ 16 |
 
 ### 書籍印刷 (books)
 
@@ -140,7 +139,6 @@
 | 過膠餐牌 / 餐牌 / 菜單 / 覆膜 | laminated-menus | 10 | HK$ 5 |
 | 精裝餐牌 / 餐牌 / 菜單 / 硬殼裝訂 | hardcover-menus | 10 | HK$ 28 |
 | 酒水牌 / 餐牌 / 菜單 / 覆膜 | drink-menus | 10 | HK$ 12 |
-| 一次性餐牌 / 餐牌 / 菜單 / 即棄 | disposable-menus | 100 | HK$ 0.22 |
 
 ### 信封印刷 (envelopes)
 
@@ -188,8 +186,6 @@
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
 | 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| 亞克力鑰匙扣 | acrylic-keychain | 10 | HK$ 2275 |
-| 罐型襟章印刷 | can-badge | 10 | HK$ 1200 |
 | 明信片套裝 | postcard-set | 4 | HK$ 750 |
 | 環保托特袋 | eco-tote-bag | 10 | HK$ 9000 |
 
@@ -200,8 +196,6 @@
 | 燙金喜帖 | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date 卡片 | save-the-date-cards | 50 | HK$ 0.85 |
 | 婚禮感謝卡 | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| 婚禮節目單 | wedding-program-cards | 50 | HK$ 0.95 |
-| 婚禮菜單卡 | wedding-menu-cards | 50 | HK$ 1.15 |
 | 婚慶整套配套 | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### 枱卡 (place-cards)
@@ -210,8 +204,6 @@
 |------|------|---------|---------|
 | 婚宴枱卡 | wedding-place-cards | 50 | HK$ 0.3 |
 | 酒水牌 / 飲品標記 | drink-tokens | 50 | HK$ 0.25 |
-| 座位卡 / 賓客標記 | escort-cards | 50 | HK$ 0.3 |
-| 名牌卡 / 會議名牌 | name-tags-badges | 50 | HK$ 0.4 |
 | 餐廳 / 咖啡廳枱卡 | cafe-table-cards | 50 | HK$ 0.4 |
 | 婚宴席位圖 | wedding-seating-charts | 50 | HK$ 4.5 |
 

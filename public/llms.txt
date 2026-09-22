@@ -1,6 +1,6 @@
 # ZprintPro / 智印港
 
-> 跨境印刷 SaaS — 15+ 年自有工厂经验 (founded 2012), 72h 全球配送, ISO 9001 / FDA / FSC 认证. 16 大品类 / 99 SKU: 貼紙 / 宣傳單張 / 包裝盒 / 海報 / 紙袋 / 賀卡 / 橫額 / 書刊 / 餐牌 / 信封 / 月曆 / 利是封 / 教育用品 / 同人周邊 / 喜帖 / 席位卡. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).
+> 跨境印刷 SaaS — 15+ 年自有工厂经验 (founded 2012), 72h 全球配送, ISO 9001 / FDA / FSC 认证. 16 大品类 / 91 SKU: 貼紙 / 宣傳單張 / 包裝盒 / 海報 / 紙袋 / 賀卡 / 橫額 / 書刊 / 餐牌 / 信封 / 月曆 / 利是封 / 教育用品 / 同人周邊 / 喜帖 / 席位卡. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).
 
 ## 核心品牌（单品牌分层, per K3 9/1 02:54）
 - **zh-hk 品牌**: 智印港 (本地化: 香港场景, 顺丰本地, DHL 全球 2-4 天)
@@ -79,18 +79,18 @@
 - Posters (posters) -- 6 products
 - Paper Bags (paper-bags) -- 6 products
 - Greeting Cards (greeting-cards) -- 6 products
-- Banners (banners) -- 5 products
+- Banners (banners) -- 4 products
 - Books (books) -- 5 products
-- Menus (menus) -- 5 products
+- Menus (menus) -- 4 products
 - Envelopes (envelopes) -- 4 products
 - Calendars (calendars) -- 6 products
 - Red Packets (red-packets) -- 6 products
 - Educational (educational) -- 5 products
-- Doujinshi & Anime Goods (japan-doujin) -- 5 products
-- Wedding Invitations (wedding-invitations) -- 6 products
-- Place Cards (place-cards) -- 6 products
+- Doujinshi & Anime Goods (japan-doujin) -- 3 products
+- Wedding Invitations (wedding-invitations) -- 4 products
+- Place Cards (place-cards) -- 4 products
 
-## Full Product List (99 SKUs)
+## Full Product List (91 SKUs)
 
 ### Stickers (stickers)
 
@@ -176,7 +176,6 @@
 | Roll-up Banners / Roll-up & Outdoor Banners | roll-up-banners | 1 | US$ 46 |
 | Adhesive Banners / Roll-up & Outdoor Banners | adhesive-banners | 1 | US$ 2.3 |
 | Vehicle Wraps / Roll-up & Outdoor Banners | vehicle-wraps | 1 | US$ 6.44 |
-| Mesh Banners / Roll-up & Outdoor Banners | mesh-banners | 1 | US$ 3.68 |
 
 ### Books (books)
 
@@ -196,7 +195,6 @@
 | Laminated Menus / Restaurant Menus & PVC | laminated-menus | 10 | US$ 1.84 |
 | Hardcover Menus / Restaurant Menus & PVC | hardcover-menus | 10 | US$ 9.2 |
 | Drink Menus / Restaurant Menus & PVC | drink-menus | 10 | US$ 3.68 |
-| Disposable Menus / Restaurant Menus & PVC | disposable-menus | 100 | US$ 0.14 |
 
 ### Envelopes (envelopes)
 
@@ -244,8 +242,6 @@
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
 | Doujinshi Printing | doujinshi-printing | 10 | US$ 1245 |
-| Acrylic Keychain | acrylic-keychain | 10 | US$ 377.65 |
-| Can Badge Printing | can-badge | 10 | US$ 199.2 |
 | Postcard Set | postcard-set | 4 | US$ 124.5 |
 | Eco Tote Bag | eco-tote-bag | 10 | US$ 1494 |
 
@@ -256,8 +252,6 @@
 | Foil Wedding Invitations | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date Cards | save-the-date-cards | 50 | HK$ 0.85 |
 | Wedding Thank You Cards | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| Wedding Program Cards | wedding-program-cards | 50 | HK$ 0.95 |
-| Wedding Menu Cards | wedding-menu-cards | 50 | HK$ 1.15 |
 | Wedding Suite Bundle | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### Place Cards (place-cards)
@@ -266,8 +260,6 @@
 |---------|------|---------|------------|
 | Wedding Place Cards | wedding-place-cards | 50 | HK$ 0.3 |
 | Drink Tokens / Beverage Markers | drink-tokens | 50 | HK$ 0.25 |
-| Escort Cards / Guest Markers | escort-cards | 50 | HK$ 0.3 |
-| Name Tags / Conference Badges | name-tags-badges | 50 | HK$ 0.4 |
 | Café / Restaurant Table Cards | cafe-table-cards | 50 | HK$ 0.4 |
 | Wedding Seating Charts | wedding-seating-charts | 50 | HK$ 4.5 |
 
@@ -283,18 +275,18 @@
 - ポスター印刷 (posters) -- 6 products
 - 紙袋印刷 (paper-bags) -- 6 products
 - グリーティングカード・年賀状 (greeting-cards) -- 6 products
-- バナー印刷 (banners) -- 5 products
+- バナー印刷 (banners) -- 4 products
 - 書籍印刷 (books) -- 5 products
-- メニュー印刷 (menus) -- 5 products
+- メニュー印刷 (menus) -- 4 products
 - 封筒印刷 (envelopes) -- 4 products
 - カレンダー印刷 (calendars) -- 6 products
 - ポチ袋印刷 (red-packets) -- 6 products
 - 教育印刷 (educational) -- 5 products
-- 同人誌・アニメグッズ (japan-doujin) -- 5 products
-- 結婚式招待状 (wedding-invitations) -- 6 products
-- 席札 (place-cards) -- 6 products
+- 同人誌・アニメグッズ (japan-doujin) -- 3 products
+- 結婚式招待状 (wedding-invitations) -- 4 products
+- 席札 (place-cards) -- 4 products
 
-## 全製品一覧 (99 SKU)
+## 全製品一覧 (91 SKU)
 
 ### ステッカー (stickers)
 
@@ -380,7 +372,6 @@
 | ロールアップバナー / ロールアップバナー / 屋外バナー | roll-up-banners | 1 | ¥ 6440 |
 | 粘着バナー / ロールアップバナー / 屋外バナー | adhesive-banners | 1 | ¥ 300 |
 | カーラッピング / ロールアップバナー / 屋外バナー | vehicle-wraps | 1 | ¥ 840 |
-| メッシュバナー / ロールアップバナー / 屋外バナー | mesh-banners | 1 | ¥ 480 |
 
 ### 書籍印刷 (books)
 
@@ -400,7 +391,6 @@
 | ラミネートメニュー / レストランメニュー / 防水 | laminated-menus | 10 | ¥ 258 |
 | 高級メニュー / レストランメニュー / 防水 | hardcover-menus | 10 | ¥ 1288 |
 | ドリンクメニュー / レストランメニュー / 防水 | drink-menus | 10 | ¥ 515 |
-| 使い捨てメニュー / レストランメニュー / 防水 | disposable-menus | 100 | ¥ 20 |
 
 ### 封筒印刷 (envelopes)
 
@@ -448,8 +438,6 @@
 | 製品 | Slug | 最低数量 | 基準価格 |
 |------|------|---------|---------|
 | 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| アクリルキーホルダー | acrylic-keychain | 10 | HK$ 2275 |
-| 缶バッジ印刷 | can-badge | 10 | HK$ 1200 |
 | ポストカードセット | postcard-set | 4 | HK$ 750 |
 | エコトートバッグ | eco-tote-bag | 10 | HK$ 9000 |
 
@@ -460,8 +448,6 @@
 | 箔押し結婚式招待状 | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date カード | save-the-date-cards | 50 | HK$ 0.85 |
 | 結婚式サンキュカード | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| 結婚式のしおり | wedding-program-cards | 50 | HK$ 0.95 |
-| ウエディング メニュー | wedding-menu-cards | 50 | HK$ 1.15 |
 | ウエディング フル セット | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### 席札 (place-cards)
@@ -470,8 +456,6 @@
 |------|------|---------|---------|
 | ウエディング席札 | wedding-place-cards | 50 | HK$ 0.3 |
 | ドリンクトークン | drink-tokens | 50 | HK$ 0.25 |
-| エスコートカード | escort-cards | 50 | HK$ 0.3 |
-| 名札 / 会議バッジ | name-tags-badges | 50 | HK$ 0.4 |
 | カフェ / レストラン テーブルカード | cafe-table-cards | 50 | HK$ 0.4 |
 | 披露宴座席表 | wedding-seating-charts | 50 | HK$ 4.5 |
 
@@ -487,18 +471,18 @@
 - 海報印刷 (posters) -- 6 products
 - 紙袋印刷 (paper-bags) -- 6 products
 - 賀卡印刷 (greeting-cards) -- 6 products
-- 噴繪廣告 (banners) -- 5 products
+- 噴繪廣告 (banners) -- 4 products
 - 書籍印刷 (books) -- 5 products
-- 餐牌印刷 (menus) -- 5 products
+- 餐牌印刷 (menus) -- 4 products
 - 信封印刷 (envelopes) -- 4 products
 - 月曆印刷 (calendars) -- 6 products
 - 利是封印刷 (red-packets) -- 6 products
 - 校園教育印刷 (educational) -- 5 products
-- 同人周邊印刷 (japan-doujin) -- 5 products
-- 喜帖印刷 (wedding-invitations) -- 6 products
-- 枱卡 (place-cards) -- 6 products
+- 同人周邊印刷 (japan-doujin) -- 3 products
+- 喜帖印刷 (wedding-invitations) -- 4 products
+- 枱卡 (place-cards) -- 4 products
 
-## 全產品一覽 (99 SKU)
+## 全產品一覽 (91 SKU)
 
 ### 貼紙印刷 (stickers)
 
@@ -584,7 +568,6 @@
 | 易拉寶 / 易拉寶 / 戶外橫幅 / 噴繪 | roll-up-banners | 1 | HK$ 85 |
 | 背膠噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | adhesive-banners | 1 | HK$ 10 |
 | 車身廣告 / 易拉寶 / 戶外橫幅 / 噴繪 | vehicle-wraps | 1 | HK$ 28 |
-| 網格布噴繪 / 易拉寶 / 戶外橫幅 / 噴繪 | mesh-banners | 1 | HK$ 16 |
 
 ### 書籍印刷 (books)
 
@@ -604,7 +587,6 @@
 | 過膠餐牌 / 餐牌 / 菜單 / 覆膜 | laminated-menus | 10 | HK$ 5 |
 | 精裝餐牌 / 餐牌 / 菜單 / 硬殼裝訂 | hardcover-menus | 10 | HK$ 28 |
 | 酒水牌 / 餐牌 / 菜單 / 覆膜 | drink-menus | 10 | HK$ 12 |
-| 一次性餐牌 / 餐牌 / 菜單 / 即棄 | disposable-menus | 100 | HK$ 0.22 |
 
 ### 信封印刷 (envelopes)
 
@@ -652,8 +634,6 @@
 | 產品 | Slug | 最低訂量 | 基準價格 |
 |------|------|---------|---------|
 | 同人誌印刷 | doujinshi-printing | 10 | HK$ 7500 |
-| 亞克力鑰匙扣 | acrylic-keychain | 10 | HK$ 2275 |
-| 罐型襟章印刷 | can-badge | 10 | HK$ 1200 |
 | 明信片套裝 | postcard-set | 4 | HK$ 750 |
 | 環保托特袋 | eco-tote-bag | 10 | HK$ 9000 |
 
@@ -664,8 +644,6 @@
 | 燙金喜帖 | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date 卡片 | save-the-date-cards | 50 | HK$ 0.85 |
 | 婚禮感謝卡 | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| 婚禮節目單 | wedding-program-cards | 50 | HK$ 0.95 |
-| 婚禮菜單卡 | wedding-menu-cards | 50 | HK$ 1.15 |
 | 婚慶整套配套 | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### 枱卡 (place-cards)
@@ -674,7 +652,5 @@
 |------|------|---------|---------|
 | 婚宴枱卡 | wedding-place-cards | 50 | HK$ 0.3 |
 | 酒水牌 / 飲品標記 | drink-tokens | 50 | HK$ 0.25 |
-| 座位卡 / 賓客標記 | escort-cards | 50 | HK$ 0.3 |
-| 名牌卡 / 會議名牌 | name-tags-badges | 50 | HK$ 0.4 |
 | 餐廳 / 咖啡廳枱卡 | cafe-table-cards | 50 | HK$ 0.4 |
 | 婚宴席位圖 | wedding-seating-charts | 50 | HK$ 4.5 |

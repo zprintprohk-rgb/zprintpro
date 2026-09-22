@@ -21,18 +21,18 @@
 - Posters (posters) -- 6 products
 - Paper Bags (paper-bags) -- 6 products
 - Greeting Cards (greeting-cards) -- 6 products
-- Banners (banners) -- 5 products
+- Banners (banners) -- 4 products
 - Books (books) -- 5 products
-- Menus (menus) -- 5 products
+- Menus (menus) -- 4 products
 - Envelopes (envelopes) -- 4 products
 - Calendars (calendars) -- 6 products
 - Red Packets (red-packets) -- 6 products
 - Educational (educational) -- 5 products
-- Doujinshi & Anime Goods (japan-doujin) -- 5 products
-- Wedding Invitations (wedding-invitations) -- 6 products
-- Place Cards (place-cards) -- 6 products
+- Doujinshi & Anime Goods (japan-doujin) -- 3 products
+- Wedding Invitations (wedding-invitations) -- 4 products
+- Place Cards (place-cards) -- 4 products
 
-## Full Product List (99 SKUs)
+## Full Product List (91 SKUs)
 
 ### Stickers (stickers)
 
@@ -118,7 +118,6 @@
 | Roll-up Banners / Roll-up & Outdoor Banners | roll-up-banners | 1 | US$ 46 |
 | Adhesive Banners / Roll-up & Outdoor Banners | adhesive-banners | 1 | US$ 2.3 |
 | Vehicle Wraps / Roll-up & Outdoor Banners | vehicle-wraps | 1 | US$ 6.44 |
-| Mesh Banners / Roll-up & Outdoor Banners | mesh-banners | 1 | US$ 3.68 |
 
 ### Books (books)
 
@@ -138,7 +137,6 @@
 | Laminated Menus / Restaurant Menus & PVC | laminated-menus | 10 | US$ 1.84 |
 | Hardcover Menus / Restaurant Menus & PVC | hardcover-menus | 10 | US$ 9.2 |
 | Drink Menus / Restaurant Menus & PVC | drink-menus | 10 | US$ 3.68 |
-| Disposable Menus / Restaurant Menus & PVC | disposable-menus | 100 | US$ 0.14 |
 
 ### Envelopes (envelopes)
 
@@ -186,8 +184,6 @@
 | Product | Slug | Min Qty | Base Price |
 |---------|------|---------|------------|
 | Doujinshi Printing | doujinshi-printing | 10 | US$ 1245 |
-| Acrylic Keychain | acrylic-keychain | 10 | US$ 377.65 |
-| Can Badge Printing | can-badge | 10 | US$ 199.2 |
 | Postcard Set | postcard-set | 4 | US$ 124.5 |
 | Eco Tote Bag | eco-tote-bag | 10 | US$ 1494 |
 
@@ -198,8 +194,6 @@
 | Foil Wedding Invitations | foil-wedding-invitations | 50 | HK$ 1.2 |
 | Save the Date Cards | save-the-date-cards | 50 | HK$ 0.85 |
 | Wedding Thank You Cards | wedding-thank-you-cards | 50 | HK$ 0.65 |
-| Wedding Program Cards | wedding-program-cards | 50 | HK$ 0.95 |
-| Wedding Menu Cards | wedding-menu-cards | 50 | HK$ 1.15 |
 | Wedding Suite Bundle | wedding-suite-bundle | 50 | HK$ 25 |
 
 ### Place Cards (place-cards)
@@ -208,8 +202,6 @@
 |---------|------|---------|------------|
 | Wedding Place Cards | wedding-place-cards | 50 | HK$ 0.3 |
 | Drink Tokens / Beverage Markers | drink-tokens | 50 | HK$ 0.25 |
-| Escort Cards / Guest Markers | escort-cards | 50 | HK$ 0.3 |
-| Name Tags / Conference Badges | name-tags-badges | 50 | HK$ 0.4 |
 | Café / Restaurant Table Cards | cafe-table-cards | 50 | HK$ 0.4 |
 | Wedding Seating Charts | wedding-seating-charts | 50 | HK$ 4.5 |
 

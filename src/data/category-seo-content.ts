@@ -4118,9 +4118,10 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-24 v3.17 T44 B2 完整 3 词: can badge 注入 japanDoujin ja 块, ジープリント 埋点 2-3 次
-    h2: '同人誌・アニメグッズ・缶バッジ 印刷 | A5/B5 / ステッカー / 缶バッジ サイズ 32-76mm | ZprintPro',
-    featuredSnippet: '缶バッジ 印刷 50枚から HK$5／枚 | 缶バッジ サイズ 32-76mm 7 サイズ対応 | 24h出荷 DHL 2-4日 | ジープリント. 缶バッジ/サイズ/オリジナル/同人/サークル 4 種対応, ピンバッジ 安全ピン + マグネット + クリップ 3 タイプ, ジープリント 工場直送価格. 9/4 ja CTR ≥2% 目標.',
-    lastUpdated: '2026-08-24',
+    // 2026-09-23 SKU 压缩: can-badge 下架 (非业务范围) → h2/featuredSnippet 去缶バッジ, 同步清 GSC 泄漏变体
+    h2: '同人誌・アニメグッズ印刷 | A5/B5 同人誌 / ステッカー / ポスター / アクリルスタンド | ZprintPro',
+    featuredSnippet: '同人誌・アニメグッズ印刷 小ロット対応。A5/B5 同人誌 10部から、ステッカー 50枚から、ポスター A3/A2 PPラミネート、アクリルスタンド 5mm。24h出荷 DHL 2-4日 | ジープリント. 同人誌/ステッカー/ポスター/アクリルスタンド 4 種対応, 工場直送価格.',
+    lastUpdated: '2026-09-23',
     coreAdvantages: {
       title: 'ZprintPro 同人グッズの強み',
       items: [
