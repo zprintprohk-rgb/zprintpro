@@ -1,0 +1,3431 @@
+{
+ "rule": "K3 2026-09-23: slug 任一 locale 主词在 GSC 28d 查询表存在「完整包含主词」且 排名<=10 且 点击>0 → 冻结; 其余全部解冻",
+ "source": ".hermes/gsc-2026-09-18/extract.json new.combo_28d 查询数 (1000 行, 品牌词排除)",
+ "generatedAt": "2026-09-23",
+ "frozenCount": 2,
+ "unfrozenCount": 90,
+ "frozenSlugs": [
+  "certificates",
+  "foil-stickers"
+ ],
+ "unfrozenSlugs": [
+  "a1-posters",
+  "a2-posters",
+  "a4-flyers",
+  "a5-flyers",
+  "adhesive-banners",
+  "adhesive-posters",
+  "art-posters",
+  "business-envelopes",
+  "cafe-table-cards",
+  "cartoon-red-packets",
+  "catalog-printing",
+  "colored-envelopes",
+  "corrugated-boxes",
+  "cosmetic-boxes",
+  "custom-calendars",
+  "custom-red-packets",
+  "desk-calendars",
+  "die-cut-stickers",
+  "display-posters",
+  "double-sided-flyers",
+  "doujinshi-printing",
+  "drink-menus",
+  "drink-tokens",
+  "eco-flyers",
+  "eco-paper-bags",
+  "eco-red-packets",
+  "eco-tote-bag",
+  "electronics-packaging-box",
+  "embossed-red-packets",
+  "exercise-books",
+  "fluorescent-stickers",
+  "foil-greeting-cards",
+  "foil-red-packets",
+  "foil-wedding-invitations",
+  "folded-leaflets",
+  "folding-boxes",
+  "food-boxes",
+  "fruit-food-label-stickers",
+  "gang-run-card-boxes",
+  "gift-bags",
+  "graduation-yearbook",
+  "handle-bags",
+  "hardcover-books",
+  "hardcover-menus",
+  "kraft-paper-bags",
+  "kraft-paper-packaging-box",
+  "laminated-menus",
+  "large-bags",
+  "large-envelopes",
+  "large-red-packets",
+  "magnetic-calendars",
+  "magnetic-closure-gift-box",
+  "mailer-boxes",
+  "matte-greeting-cards",
+  "mini-calendars",
+  "outdoor-posters",
+  "outdoor-vinyl-banners",
+  "pearl-envelopes",
+  "perfect-bound-books",
+  "photo-frame-calendars",
+  "postcard-set",
+  "premium-greeting-cards",
+  "pvc-menus",
+  "removable-stickers",
+  "rigid-boxes",
+  "roll-up-banners",
+  "rounded-corner-greeting-cards",
+  "saddle-stitch-booklets",
+  "same-day-flyers",
+  "save-the-date-cards",
+  "school-flyers",
+  "security-stickers",
+  "small-bags",
+  "small-batch-stickers",
+  "spiral-notebooks",
+  "spot-uv-greeting-cards",
+  "textbooks",
+  "thick-greeting-cards-400g",
+  "thick-paper-flyers",
+  "transparent-stickers",
+  "tuck-end-boxes",
+  "vehicle-wraps",
+  "wall-calendars",
+  "waterproof-stickers",
+  "wedding-place-cards",
+  "wedding-seating-charts",
+  "wedding-suite-bundle",
+  "wedding-thank-you-cards",
+  "white-card-bags",
+  "white-card-boxes"
+ ],
+ "detail": [
+  {
+   "slug": "waterproof-stickers",
+   "slugBest": 1,
+   "slugHit": "pvc防水貼紙",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "防水貼紙",
+     "core": "防水貼紙",
+     "best": 1,
+     "hit": "pvc防水貼紙",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Waterproof Stickers",
+     "core": "waterproof stickers",
+     "best": 30,
+     "hit": "waterproof stickers manufacturer usa",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "防水ステッカー",
+     "core": "防水ステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "transparent-stickers",
+   "slugBest": 1,
+   "slugHit": "半透明貼紙",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "透明貼紙",
+     "core": "透明貼紙",
+     "best": 1,
+     "hit": "半透明貼紙",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Transparent Stickers",
+     "core": "transparent stickers",
+     "best": 13.17,
+     "hit": "transparent stickers",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "透明ステッカー",
+     "core": "透明ステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "removable-stickers",
+   "slugBest": 15.47,
+   "slugHit": "可移貼紙",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "可移貼紙",
+     "core": "可移貼紙",
+     "best": 15.47,
+     "hit": "可移貼紙",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Removable Stickers",
+     "core": "removable stickers",
+     "best": 27,
+     "hit": "removable stickers",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "はがせるステッカー",
+     "core": "はがせるステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "small-batch-stickers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "小批量貼紙 10 張起 HK$0.45",
+     "core": "小批量貼紙 10 張起 hk$0.45",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Small Batch Stickers 50 pcs from $0.045",
+     "core": "small batch stickers 50 pcs from $0.045",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "小ロットステッカー",
+     "core": "小ロットステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "die-cut-stickers",
+   "slugBest": 1,
+   "slugHit": "die-cut stickers",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "異形模切貼紙 透明・模切・10起印・HK$0.58起",
+     "core": "異形模切貼紙 透明・模切・10起印・hk$0.58起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Die-Cut Stickers",
+     "core": "die-cut stickers",
+     "best": 1,
+     "hit": "die-cut stickers",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "型抜きステッカー",
+     "core": "型抜きステッカー",
+     "best": 9,
+     "hit": "型抜きステッカー",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "foil-stickers",
+   "slugBest": 2.75,
+   "slugHit": "透明燙金貼紙",
+   "slugClicks": 0,
+   "frozen": true,
+   "per": {
+    "zh-hk": {
+     "main": "燙金貼紙",
+     "core": "燙金貼紙",
+     "best": 2.75,
+     "hit": "透明燙金貼紙",
+     "clicks": 0,
+     "top10Click": true,
+     "qualifiers": [
+      {
+       "query": "燙金貼紙",
+       "pos": 7.5,
+       "clicks": 1,
+       "imps": 12
+      }
+     ]
+    },
+    "en": {
+     "main": "Foil Stickers",
+     "core": "foil stickers",
+     "best": 6,
+     "hit": "are foil stickers waterproof",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "箔押しステッカー",
+     "core": "箔押しステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "security-stickers",
+   "slugBest": 4.25,
+   "slugHit": "防偽貼紙",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "防偽貼紙",
+     "core": "防偽貼紙",
+     "best": 4.25,
+     "hit": "防偽貼紙",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Security Stickers",
+     "core": "security stickers",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "セキュリティステッカー",
+     "core": "セキュリティステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "slugBest": 3.08,
+   "slugHit": "螢光貼紙",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "螢光貼紙",
+     "core": "螢光貼紙",
+     "best": 3.08,
+     "hit": "螢光貼紙",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Fluorescent Stickers",
+     "core": "fluorescent stickers",
+     "best": 10.95,
+     "hit": "fluorescent stickers",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "蛍光ステッカー",
+     "core": "蛍光ステッカー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "kraft-paper-bags",
+   "slugBest": 5.75,
+   "slugHit": "牛皮紙袋",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "牛皮紙袋",
+     "core": "牛皮紙袋",
+     "best": 5.75,
+     "hit": "牛皮紙袋",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Kraft Paper Bags",
+     "core": "kraft paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "クラフト紙袋",
+     "core": "クラフト紙袋",
+     "best": 32,
+     "hit": "クラフト紙袋 印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "white-card-bags",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "白卡紙袋",
+     "core": "白卡紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "White Card Bags",
+     "core": "white card bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "白カード紙袋",
+     "core": "白カード紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "gift-bags",
+   "slugBest": 11,
+   "slugHit": "禮品紙袋",
+   "slugClicks": 1,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "禮品紙袋",
+     "core": "禮品紙袋",
+     "best": 11,
+     "hit": "禮品紙袋",
+     "clicks": 1,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Gift Paper Bags",
+     "core": "gift paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ギフト紙袋",
+     "core": "ギフト紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "eco-paper-bags",
+   "slugBest": 1.25,
+   "slugHit": "環保紙袋",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "環保紙袋",
+     "core": "環保紙袋",
+     "best": 1.25,
+     "hit": "環保紙袋",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Eco Paper Bags",
+     "core": "eco paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "エコ紙袋",
+     "core": "エコ紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "handle-bags",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "環保手挽袋",
+     "core": "環保手挽袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Handle Paper Bags",
+     "core": "handle paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "手提げ紙袋",
+     "core": "手提げ紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "small-bags",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "小號紙袋印刷",
+     "core": "小號紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Small Paper Bags",
+     "core": "small paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "小判紙袋",
+     "core": "小判紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "large-bags",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "大號紙袋",
+     "core": "大號紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Large Paper Bags",
+     "core": "large paper bags",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "大判紙袋",
+     "core": "大判紙袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "a4-flyers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起",
+     "core": "a4 傳單 圓角・覆膜・10起印・hk$0.35起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "A4 Flyer Printing",
+     "core": "a4 flyer",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "A4 チラシ",
+     "core": "a4 チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "a5-flyers",
+   "slugBest": 11,
+   "slugHit": "a5 傳單 印刷",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "A5 傳單印刷",
+     "core": "a5 傳單",
+     "best": 11,
+     "hit": "a5 傳單 印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "A5 Flyers for Holiday Cards",
+     "core": "a5 flyers for holiday cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "A5 チラシ",
+     "core": "a5 チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "double-sided-flyers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "雙面傳單印刷",
+     "core": "雙面傳單",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Double-Sided Flyers",
+     "core": "double-sided flyers",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "両面チラシ印刷 フルカラー 安い 10枚〜 ¥85〜",
+     "core": "両面チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "folded-leaflets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "摺頁單張",
+     "core": "摺頁單張",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Folded Leaflets",
+     "core": "folded leaflets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "折りたたみパンフレット",
+     "core": "折りたたみパンフレット",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "厚身單張",
+     "core": "厚身單張",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Thick Paper Flyers",
+     "core": "thick paper flyers",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "厚紙チラシ",
+     "core": "厚紙チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "same-day-flyers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜",
+     "core": "即日 傳單 10張起 hk$1.30起 圓角・覆膜",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Same-Day Flyer Printing from $0.16",
+     "core": "same-day flyer from $0.16",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "即日チラシ印刷",
+     "core": "即日チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "eco-flyers",
+   "slugBest": 10,
+   "slugHit": "eco flyers",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "環保傳單印刷",
+     "core": "環保傳單",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Eco Flyers",
+     "core": "eco flyers",
+     "best": 10,
+     "hit": "eco flyers",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "エコチラシ",
+     "core": "エコチラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "a2-posters",
+   "slugBest": 1,
+   "slugHit": "a2 poster price",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "A2 海報印刷 420×594mm 10張起印 HK$9起 即日交貨",
+     "core": "a2 海報 420×594mm 10張起印 hk$9起 即日交貨",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "A2 Poster Printing",
+     "core": "a2 poster",
+     "best": 1,
+     "hit": "a2 poster price",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "A2 ポスター印刷",
+     "core": "a2 ポスター",
+     "best": 35.5,
+     "hit": "a2 ポスター",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "a1-posters",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "A1 大幅海報 厚紙",
+     "core": "a1 大幅海報 厚紙",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "A1 Large Posters",
+     "core": "a1 large posters",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "A1 ポスター",
+     "core": "a1 ポスター",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "outdoor-posters",
+   "slugBest": 22.69,
+   "slugHit": "戶外海報",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "戶外海報",
+     "core": "戶外海報",
+     "best": 22.69,
+     "hit": "戶外海報",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Outdoor Posters",
+     "core": "outdoor posters",
+     "best": 48,
+     "hit": "print outdoor posters",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "屋外ポスター 防水・ラミネート 1枚〜 短納期",
+     "core": "屋外ポスター 防水・ラミネート 1枚〜 短納期",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "display-posters",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "展架海報",
+     "core": "展架海報",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Display Posters",
+     "core": "display posters",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "展示用ポスター",
+     "core": "展示用ポスター",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "art-posters",
+   "slugBest": 21,
+   "slugHit": "藝術海報",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "藝術海報",
+     "core": "藝術海報",
+     "best": 21,
+     "hit": "藝術海報",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Art Posters",
+     "core": "art posters",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "アートポスター",
+     "core": "アートポスター",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "adhesive-posters",
+   "slugBest": 25,
+   "slugHit": "self adhesive posters",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "背膠海報",
+     "core": "背膠海報",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Adhesive Posters",
+     "core": "adhesive posters",
+     "best": 25,
+     "hit": "self adhesive posters",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "粘着ポスター",
+     "core": "粘着ポスター",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "cosmetic-boxes",
+   "slugBest": 97,
+   "slugHit": "custom cosmetic packaging boxes",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "化妝品包裝盒 4 種盒型 100 個起印",
+     "core": "化妝品包裝盒 4 種盒型 100 個起印",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Cosmetic Packaging Boxes",
+     "core": "cosmetic packaging boxes",
+     "best": 97,
+     "hit": "custom cosmetic packaging boxes",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "化粧品パッケージボックス 4 種類 100 個〜",
+     "core": "化粧品パッケージボックス 4 種類 100 個〜",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "food-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡",
+     "core": "食品包裝盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Food-Safe Packaging Printing",
+     "core": "food-safe packaging",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "食品包装箱印刷 小ロット 防油 100個〜 ¥101〜",
+     "core": "食品包装箱",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "mailer-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "訂製郵寄盒",
+     "core": "郵寄盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Kraft Mailer Boxes",
+     "core": "kraft mailer boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "発送箱 メーラーボックス",
+     "core": "発送箱 メーラーボックス",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "folding-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "折疊盒印刷訂製",
+     "core": "折疊盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Folding Boxes",
+     "core": "folding boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "折りたたみ箱",
+     "core": "折りたたみ箱",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "rigid-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "精裝禮盒",
+     "core": "精裝禮盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Rigid Boxes",
+     "core": "rigid boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "上製本箱（リジッドボックス）",
+     "core": "上製本箱（リジッドボックス）",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "foil-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "燙金利是封印刷",
+     "core": "燙金利是封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Foil Red Packets",
+     "core": "foil red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "箔押しポチ袋",
+     "core": "箔押しポチ袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "embossed-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "浮雕利是封",
+     "core": "浮雕利是封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "3D Embossed Red Packets",
+     "core": "3d embossed red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "エンボスポチ袋",
+     "core": "エンボスポチ袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "custom-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "定制利是封印刷",
+     "core": "定制利是封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Red Packets",
+     "core": "red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "オリジナル年賀状印刷",
+     "core": "オリジナル年賀状",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "cartoon-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "卡通利是封印刷",
+     "core": "卡通利是封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Cartoon Red Packets",
+     "core": "cartoon red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "キャラクターポチ袋",
+     "core": "キャラクターポチ袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "eco-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "環保利是封 燙金・覆膜・100起印・HK$1.90起",
+     "core": "環保利是封 燙金・覆膜・100起印・hk$1.90起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Eco Red Packets",
+     "core": "eco red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "エコポチ袋",
+     "core": "エコポチ袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "large-red-packets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "大號利是封印刷",
+     "core": "大號利是封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Large Red Packets",
+     "core": "large red packets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "大判ポチ袋",
+     "core": "大判ポチ袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "wall-calendars",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "掛牆年曆 騎馬釘・1本起印・HK$3起・4小時打稿",
+     "core": "掛牆年曆 騎馬釘・1本起印・hk$3起・4小時打稿",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Wall Calendars",
+     "core": "wall calendars",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "壁掛けカレンダー",
+     "core": "壁掛けカレンダー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "desk-calendars",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "座檯年曆",
+     "core": "座檯年曆",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Desk Calendars",
+     "core": "desk calendars",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "卓上カレンダー",
+     "core": "卓上カレンダー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "custom-calendars",
+   "slugBest": 27,
+   "slugHit": "カスタムカレンダー",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "定製年曆",
+     "core": "定製年曆",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Calendars 2027",
+     "core": "calendars 2027",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "カスタムカレンダー",
+     "core": "カスタムカレンダー",
+     "best": 27,
+     "hit": "カスタムカレンダー",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "mini-calendars",
+   "slugBest": 1,
+   "slugHit": "ミニカレンダー",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "迷你年曆 騎馬釘・1本起印・HK$3起・4小時打稿",
+     "core": "迷你年曆 騎馬釘・1本起印・hk$3起・4小時打稿",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Mini Calendars",
+     "core": "mini calendars",
+     "best": 12,
+     "hit": "mini calendars",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ミニカレンダー",
+     "core": "ミニカレンダー",
+     "best": 1,
+     "hit": "ミニカレンダー",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "photo-frame-calendars",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "相框年曆",
+     "core": "相框年曆",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Photo Frame Calendars",
+     "core": "photo frame calendars",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "フォトフレームカレンダー",
+     "core": "フォトフレームカレンダー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "magnetic-calendars",
+   "slugBest": 6,
+   "slugHit": "magnetic calendars",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "磁吸年曆",
+     "core": "磁吸年曆",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Magnetic Calendars",
+     "core": "magnetic calendars",
+     "best": 6,
+     "hit": "magnetic calendars",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "マグネットカレンダー",
+     "core": "マグネットカレンダー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "pvc-menus",
+   "slugBest": 6.57,
+   "slugHit": "pvc menus",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "PVC 餐牌 · 防水防油覆膜 10張起印",
+     "core": "pvc 餐牌 · 防水防油覆膜 10張起印",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "PVC Menus",
+     "core": "pvc menus",
+     "best": 6.57,
+     "hit": "pvc menus",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "PVC menu",
+     "core": "pvc menu",
+     "best": 6.57,
+     "hit": "pvc menus",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "laminated-menus",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "過膠餐牌印刷 · 防水覆膜 10份起",
+     "core": "過膠餐牌 · 防水覆膜 10份起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Laminated Menus",
+     "core": "laminated menus",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ラミネート menu 印刷",
+     "core": "ラミネート menu",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "hardcover-menus",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "精裝餐牌印刷 · 硬殼裝訂 10本起",
+     "core": "精裝餐牌 · 硬殼裝訂 10本起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Hardcover Menus",
+     "core": "hardcover menus",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "高級メニュー",
+     "core": "高級メニュー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "drink-menus",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "餐廳酒水牌",
+     "core": "餐廳酒水牌",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Drink Menus",
+     "core": "drink menus",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ドリンクメニュー",
+     "core": "ドリンクメニュー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "slugBest": 30,
+   "slugHit": "outdoor vinyl banners",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "戶外燈布噴繪",
+     "core": "戶外燈布噴繪",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Outdoor Vinyl Banners",
+     "core": "outdoor vinyl banners",
+     "best": 30,
+     "hit": "outdoor vinyl banners",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "屋外バナー",
+     "core": "屋外バナー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "roll-up-banners",
+   "slugBest": 3.5,
+   "slugHit": "ロールアップバナー",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "展示易拉寶 防水",
+     "core": "展示易拉寶 防水",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Roll-up Banners",
+     "core": "roll-up banners",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ロールアップバナー",
+     "core": "ロールアップバナー",
+     "best": 3.5,
+     "hit": "ロールアップバナー",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "adhesive-banners",
+   "slugBest": 30.69,
+   "slugHit": "adhesive banners",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "背膠噴繪 透明・10起印・HK$10起・4小時打稿",
+     "core": "背膠噴繪 透明・10起印・hk$10起・4小時打稿",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Adhesive Banners",
+     "core": "adhesive banners",
+     "best": 30.69,
+     "hit": "adhesive banners",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "粘着バナー",
+     "core": "粘着バナー",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "vehicle-wraps",
+   "slugBest": 32,
+   "slugHit": "vehicle wraps",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "汽車車身貼",
+     "core": "汽車車身貼",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Vehicle Wraps",
+     "core": "vehicle wraps",
+     "best": 32,
+     "hit": "vehicle wraps",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "カーラッピング",
+     "core": "カーラッピング",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "catalog-printing",
+   "slugBest": 4,
+   "slugHit": "畫冊印刷",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "畫冊印刷",
+     "core": "畫冊",
+     "best": 4,
+     "hit": "畫冊印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Catalog Printing",
+     "core": "catalog",
+     "best": 10.73,
+     "hit": "product catalogue printing in the us with no minimums",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "カタログ印刷",
+     "core": "カタログ",
+     "best": 39.11,
+     "hit": "カタログ 印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "saddle-stitch-booklets",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "騎馬釘書刊 小冊子印刷 覆膜 10本起印 HK$6起",
+     "core": "騎馬釘小冊子",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Saddle Stitch Booklets A4/A5",
+     "core": "saddle stitch booklets a4/a5",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "中綴じ冊子 ラミネート・中綴じ・10冊〜 ¥258〜",
+     "core": "中綴じ冊子 ラミネート・中綴じ・100枚〜",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "perfect-bound-books",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "無線膠裝書籍印刷",
+     "core": "無線膠裝書籍",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Perfect Bound Books",
+     "core": "perfect bound books",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "無線綴じ本",
+     "core": "無線綴じ本",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "hardcover-books",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "精裝書籍印刷",
+     "core": "精裝書籍",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Hardcover Books",
+     "core": "hardcover books",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "上製本",
+     "core": "上製本",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "spiral-notebooks",
+   "slugBest": 9,
+   "slugHit": "線圈筆記本",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "線圈筆記本",
+     "core": "線圈筆記本",
+     "best": 9,
+     "hit": "線圈筆記本",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Spiral Notebooks",
+     "core": "spiral notebooks",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "リングノート",
+     "core": "リングノート",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "business-envelopes",
+   "slugBest": 1,
+   "slugHit": "公司信封",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "公司信封",
+     "core": "公司信封",
+     "best": 1,
+     "hit": "公司信封",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Business Envelopes",
+     "core": "business envelopes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ビジネス封筒",
+     "core": "ビジネス封筒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "colored-envelopes",
+   "slugBest": 1,
+   "slugHit": "彩色信封",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "彩色信封",
+     "core": "彩色信封",
+     "best": 1,
+     "hit": "彩色信封",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Colored Envelopes",
+     "core": "colored envelopes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "カラー封筒",
+     "core": "カラー封筒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "large-envelopes",
+   "slugBest": 30,
+   "slugHit": "large envelopes",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "大號信封",
+     "core": "大號信封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Large Envelopes",
+     "core": "large envelopes",
+     "best": 30,
+     "hit": "large envelopes",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "大型封筒",
+     "core": "大型封筒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "pearl-envelopes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "珍珠光信封",
+     "core": "珍珠光信封",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Pearl Envelopes",
+     "core": "pearl envelopes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "パール封筒",
+     "core": "パール封筒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "exercise-books",
+   "slugBest": 2.75,
+   "slugHit": "作業簿",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "作業簿印刷",
+     "core": "作業簿",
+     "best": 2.75,
+     "hit": "作業簿",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Saddle-Stitched Exercise Books",
+     "core": "saddle-stitched exercise books",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ワークブック印刷",
+     "core": "ワークブック",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "certificates",
+   "slugBest": 8,
+   "slugHit": "證書印刷一張",
+   "slugClicks": 0,
+   "frozen": true,
+   "per": {
+    "zh-hk": {
+     "main": "證書印刷",
+     "core": "證書",
+     "best": 8,
+     "hit": "證書印刷一張",
+     "clicks": 0,
+     "top10Click": true,
+     "qualifiers": [
+      {
+       "query": "證書紙材質",
+       "pos": 8.71,
+       "clicks": 1,
+       "imps": 7
+      }
+     ]
+    },
+    "en": {
+     "main": "Certificates",
+     "core": "certificates",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "賞状印刷",
+     "core": "賞状",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "school-flyers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "學校單張",
+     "core": "學校單張",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "School Flyers",
+     "core": "school flyers",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "学校チラシ",
+     "core": "学校チラシ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "textbooks",
+   "slugBest": 1,
+   "slugHit": "printing textbooks",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "教科書印刷",
+     "core": "教科書",
+     "best": 51.2,
+     "hit": "教科書 印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Textbooks",
+     "core": "textbooks",
+     "best": 1,
+     "hit": "printing textbooks",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "教科書印刷",
+     "core": "教科書",
+     "best": 51.2,
+     "hit": "教科書 印刷",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "magnetic-closure-gift-box",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "磁吸翻蓋禮盒印刷",
+     "core": "磁吸翻蓋禮盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Magnetic Closure Gift Box",
+     "core": "magnetic closure gift box",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "マグネット式ギフトボックス",
+     "core": "マグネット式ギフトボックス",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "electronics-packaging-box",
+   "slugBest": 6,
+   "slugHit": "electronics packaging boxes",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "電子產品包裝盒",
+     "core": "電子產品包裝盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Electronics Packaging Box",
+     "core": "electronics packaging box",
+     "best": 6,
+     "hit": "electronics packaging boxes",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "電子製品包装箱",
+     "core": "電子製品包装箱",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "slugBest": 19,
+   "slugHit": "kraft paper packaging box",
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "牛皮紙包裝印刷盒",
+     "core": "牛皮紙包裝 盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Kraft Paper Packaging Box",
+     "core": "kraft paper packaging box",
+     "best": 19,
+     "hit": "kraft paper packaging box",
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "クラフト紙包装箱 エコ・300枚〜・最安値",
+     "core": "クラフト紙包装箱 エコ・300枚〜・最安値",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "gang-run-card-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "拼版白卡彩盒印刷 (免刀模費)",
+     "core": "拼版白卡彩盒 (免刀模費)",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Gang-Run Card Boxes",
+     "core": "gang-run card boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "合版ホワイトカードボックス",
+     "core": "合版ホワイトカードボックス",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "fruit-food-label-stickers",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "水果及食品標籤印刷",
+     "core": "水果及食品標籤",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Fruit & Food Label Stickers",
+     "core": "fruit & food label stickers",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "フルーツ・食品ラベル印刷",
+     "core": "フルーツ・食品ラベル",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "doujinshi-printing",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "同人誌印刷 10本起印",
+     "core": "同人誌 10本起印",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Doujinshi Printing Comiket",
+     "core": "doujinshi comiket",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "同人誌印刷 コミケ対応印刷 10枚〜・最安",
+     "core": "同人誌 コミケ対応 10枚〜・最安",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "postcard-set",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "明信片套裝",
+     "core": "明信片套裝",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Washi Postcard Sets",
+     "core": "washi postcard sets",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ポストカードセット",
+     "core": "ポストカードセット",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "eco-tote-bag",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "環保托特袋",
+     "core": "環保托特袋",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Eco Tote Bag",
+     "core": "eco tote bag",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "エコトートバッグ",
+     "core": "エコトートバッグ",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "graduation-yearbook",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "香港畢業紀念冊 — 騎馬釘 / 膠裝 / 精裝 1 本起",
+     "core": "香港畢業紀念冊 — 騎馬釘 / 膠裝 / 精裝 1 本起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Graduation Yearbook",
+     "core": "graduation yearbook",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "卒業記念アルバム印刷",
+     "core": "卒業記念アルバム",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "premium-greeting-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "高級賀卡印刷 燙金・局部UV 100張起 HK$100起",
+     "core": "高級賀卡 燙金・局部uv 100張起 hk$100起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Premium Greeting Cards 100pcs Foil & UV",
+     "core": "premium greeting cards 100pcs foil & uv",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "プレミアムグリーティングカード",
+     "core": "プレミアムグリーティングカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "thick-greeting-cards-400g",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "超厚名片印刷 (400g)",
+     "core": "超厚名片 (400g)",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Thick 400g Business Cards",
+     "core": "thick 400g business cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "厚口名刺",
+     "core": "厚口名刺",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "foil-greeting-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "燙金名片印刷",
+     "core": "燙金名片",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Foil-Stamped Business Cards",
+     "core": "foil-stamped business cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "箔押し名刺",
+     "core": "箔押し名刺",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "spot-uv-greeting-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "局部UV賀卡印刷",
+     "core": "局部uv賀卡",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Spot UV Greeting Cards",
+     "core": "spot uv greeting cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "部分UVグリーティングカード",
+     "core": "部分uvグリーティングカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "matte-greeting-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "啞膜賀卡印刷 防指紋・柔順 100張起 HK$110起",
+     "core": "啞膜賀卡 防指紋・柔順 100張起 hk$110起",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Matte Greeting Cards",
+     "core": "matte greeting cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "マットグリーティングカード",
+     "core": "マットグリーティングカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "rounded-corner-greeting-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日",
+     "core": "圓角賀卡 r3mm模切 100張起 hk$100起 即日",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Rounded Corner Greeting Cards",
+     "core": "rounded corner greeting cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "角丸グリーティングカード",
+     "core": "角丸グリーティングカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "cafe-table-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "餐廳枱卡印刷",
+     "core": "餐廳枱卡",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Café Table Cards",
+     "core": "café table cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "カフェテーブルカード",
+     "core": "カフェテーブルカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "corrugated-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "瓦楞紙盒印刷訂製 坑盒E/F坑 500個起 跨境抗壓",
+     "core": "瓦楞紙盒 坑盒e/f坑 500個起 跨境抗壓",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Corrugated Boxes E/F Flute",
+     "core": "corrugated boxes e/f flute",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "段ボール箱印刷 E/Fフルート 500個〜 耐圧",
+     "core": "段ボール箱 e/fフルート 500個〜 耐圧",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "drink-tokens",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "酒水牌印刷 PVC防水 50張起 HK$0.25起 圓角模切",
+     "core": "酒水牌 pvc防水 50張起 hk$0.25起 圓角模切",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Drink Tokens",
+     "core": "drink tokens",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ドリンクトークン",
+     "core": "ドリンクトークン",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "foil-wedding-invitations",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "燙金喜帖印刷 金銀玫瑰金 50套起印 即日報價",
+     "core": "燙金喜帖 金銀玫瑰金 50套起印 即日報價",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Foil Wedding Invites",
+     "core": "foil wedding invites",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "箔押し結婚式招待状",
+     "core": "箔押し結婚式招待状",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "save-the-date-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "Save the Date 卡片",
+     "core": "save the date 卡片",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Save the Date Cards",
+     "core": "save the date cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "Save the Date カード",
+     "core": "save the date カード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "tuck-end-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "插口盒印刷訂製",
+     "core": "插口盒",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Custom Tuck End Boxes",
+     "core": "tuck end boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "差し込み式ボックス",
+     "core": "差し込み式ボックス",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "wedding-place-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "婚宴枱卡印刷",
+     "core": "婚宴枱卡",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Wedding Place Cards",
+     "core": "wedding place cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ウエディング席札",
+     "core": "ウエディング席札",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "wedding-seating-charts",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "婚宴席位圖印刷 A1/A2 50張起 燙金UV 即日報價",
+     "core": "婚宴席位圖 a1/a2 50張起 燙金uv 即日報價",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Wedding Seating Charts",
+     "core": "wedding seating charts",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "披露宴座席表",
+     "core": "披露宴座席表",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "wedding-suite-bundle",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "婚慶套裝印刷 請帖+回禮卡 50套起印 6件齊全",
+     "core": "婚慶套裝 請帖+回禮卡 50套起印 6件齊全",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Wedding Suite Bundle",
+     "core": "wedding suite bundle",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "ウエディング フル セット",
+     "core": "ウエディング フル セット",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "wedding-thank-you-cards",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "婚禮感謝卡印刷",
+     "core": "婚禮感謝卡",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "Wedding Thank You Cards",
+     "core": "wedding thank you cards",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "結婚式サンキュカード",
+     "core": "結婚式サンキュカード",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  },
+  {
+   "slug": "white-card-boxes",
+   "slugBest": null,
+   "slugHit": null,
+   "slugClicks": 0,
+   "frozen": false,
+   "per": {
+    "zh-hk": {
+     "main": "白卡彩盒印刷訂製 化妝品盒 500個起 免費送貨",
+     "core": "白卡彩盒 化妝品盒 500個起 免費送貨",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "en": {
+     "main": "White Cardboard Boxes",
+     "core": "white cardboard boxes",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    },
+    "ja": {
+     "main": "白カードボックス",
+     "core": "白カードボックス",
+     "best": null,
+     "hit": null,
+     "clicks": 0,
+     "top10Click": false,
+     "qualifiers": []
+    }
+   }
+  }
+ ]
+}

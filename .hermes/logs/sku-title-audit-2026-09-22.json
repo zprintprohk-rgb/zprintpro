@@ -2,6 +2,6 @@
   "date": "2026-09-22",
   "guard": "#25 title-band-guard",
   "rule": "MIN=50 WARN>57 HARD>=58 (半角当量, SSoT title-equiv.js)",
-  "slotCount": 279,
+  "slotCount": 276,
   "existingIssues": []
 }

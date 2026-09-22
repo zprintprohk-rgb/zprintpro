@@ -1,0 +1,428 @@
+{
+ "batch": "title-v5-2026-09-23 (K3 d3f165fc 28槽 + 本会话 12槽)",
+ "appliedDate": "2026-09-23",
+ "windowDays": 10,
+ "windowEnd": "2026-10-03",
+ "baselineDate": "2026-09-18",
+ "rule": "v5 规则 docs/zprintpro-sku-title-rule-v5-2026-09-23.md；窗内只读，同簇不得再改 (churn 是排名杀手)；起算日=修复日 2026-09-23",
+ "slots": [
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "防水貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.22起 | 智印港",
+   "newTitle": "防水貼紙 可移貼紙 戶外抗UV 10個起 HK$0.22起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "透明貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.38起 | 智印港",
+   "newTitle": "透明貼紙 PVC貼紙 防水 異形切割 10個起 HK$0.38起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "oldTitle": "Custom Transparent Stickers | Free US Ship | ZprintPro",
+   "newTitle": "Transparent Stickers | Die-Cut PVC | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "removable-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "可移貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.45起 | 智印港",
+   "newTitle": "可移貼紙 戶外貼紙 無殘膠 10個起 HK$0.45起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "small-batch-stickers",
+   "locale": "en",
+   "oldTitle": "Small Batch Stickers 50 pcs from $0.045 | ZprintPro",
+   "newTitle": "Small Batch Custom Stickers 50pcs from $0.045 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "die-cut-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "異形模切貼紙 透明・模切・10起印・HK$0.58起 | 智印港",
+   "newTitle": "異形模切貼紙 貼紙訂製 防水圓角 10起印 HK$0.58起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "die-cut-stickers",
+   "locale": "en",
+   "oldTitle": "Custom Die-Cut Stickers | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Die-Cut Stickers | Custom Shapes | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "防偽貼紙 | 防水 PVC 異形切割 | 10個起 HK$1.15起 | 智印港",
+   "newTitle": "防偽貼紙 標籤貼紙 防水圓角 10個起 HK$1.15起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "oldTitle": "Custom Security Stickers | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Security Stickers | Tamper-Proof | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "locale": "zh-hk",
+   "oldTitle": "螢光貼紙 | 防水 PVC 異形切割 | 10個起 HK$0.52起 | 智印港",
+   "newTitle": "螢光貼紙 貼紙印刷 防水圓角 10個起 HK$0.52起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "fluorescent-stickers",
+   "locale": "en",
+   "oldTitle": "Custom Fluorescent Stickers | Free US Ship | ZprintPro",
+   "newTitle": "Fluorescent Stickers | Custom Print | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "kraft-paper-bags",
+   "locale": "en",
+   "oldTitle": "Custom Kraft Paper Bags | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Kraft Paper Bags | Eco-Friendly | 100 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "zh-hk",
+   "oldTitle": "A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起 | 智印港",
+   "newTitle": "A4 傳單印刷 宣傳單張 圓角覆膜 10起印 HK$0.35起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "a5-flyers",
+   "locale": "en",
+   "oldTitle": "A5 Flyers for Holiday Cards | Free US Ship | ZprintPro",
+   "newTitle": "A5 Flyers | Full Color | 10 MOQ | Free Ship | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "zh-hk",
+   "oldTitle": "雙面傳單印刷 | 單張印刷 | 10張起印 HK$0.40起 | 智印港",
+   "newTitle": "雙面傳單印刷 摺頁傳單 四色 10張起印 HK$0.40起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "oldTitle": "摺頁單張 | A4/A5 雙面四色 | 10張起 HK$0.7起 | 智印港",
+   "newTitle": "摺頁單張 摺頁印刷 雙面四色 10張起 HK$0.7起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "same-day-flyers",
+   "locale": "zh-hk",
+   "oldTitle": "即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜 | 智印港",
+   "newTitle": "即日印刷 傳單 即日急件 覆膜 10張起 HK$1.30起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "custom-red-packets",
+   "locale": "zh-hk",
+   "oldTitle": "定制利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+   "newTitle": "訂製利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "magnetic-calendars",
+   "locale": "en",
+   "oldTitle": "Magnetic Calendars | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Magnetic Calendars | Custom | 1 MOQ $0.40 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "pvc-menus",
+   "locale": "en",
+   "oldTitle": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
+   "newTitle": "PVC Menus | Laminated Durable | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "catalog-printing",
+   "locale": "ja",
+   "oldTitle": "カタログ印刷｜箔押し ラミネート｜10枚〜¥644〜｜ZprintPro",
+   "newTitle": "カタログ印刷 箔押し ラミネート 10冊〜 ¥644〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "perfect-bound-books",
+   "locale": "ja",
+   "oldTitle": "無線綴じ本｜中綴じ ラミネート｜10冊〜 ¥644〜｜ZprintPro",
+   "newTitle": "無線綴じ本 小ロット ラミネート 10冊〜 ¥644〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "exercise-books",
+   "locale": "en",
+   "oldTitle": "Saddle-Stitched Exercise Books | Free US Ship | ZprintPro",
+   "newTitle": "Exercise Books | Saddle-Stitched | 10 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "textbooks",
+   "locale": "en",
+   "oldTitle": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
+   "newTitle": "Textbook Printing | Perfect Bound | 100 MOQ | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "doujinshi-printing",
+   "locale": "en",
+   "oldTitle": "Doujinshi Printing Comiket | Free US Ship | ZprintPro",
+   "newTitle": "Doujinshi Printing Comiket | 10 MOQ | USA | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "doujinshi-printing",
+   "locale": "ja",
+   "oldTitle": "同人誌印刷 コミケ対応印刷 10枚〜・最安 | ZprintPro",
+   "newTitle": "同人誌印刷 コミケ対応 10冊〜 小ロット 短納期 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "a4-flyers",
+   "locale": "en",
+   "oldTitle": "A4 Flyer Printing | 10 MOQ | Free US Ship | ZprintPro",
+   "newTitle": "A4 Flyer Printing | 10 MOQ | From $0.55 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "double-sided-flyers",
+   "locale": "ja",
+   "oldTitle": "両面チラシ印刷 フルカラー 安い 10枚〜 ¥85〜 | ZprintPro",
+   "newTitle": "両面チラシ印刷 | フルカラー 10枚〜 | ¥85〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "thick-paper-flyers",
+   "locale": "en",
+   "oldTitle": "Thick Paper Flyers | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Thick Paper Flyers | 10 MOQ | From $0.70 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "eco-flyers",
+   "locale": "en",
+   "oldTitle": "Eco Flyers | Same-Day Printing | Free US Ship | ZprintPro",
+   "newTitle": "Eco Flyers | Recycled Paper | 10 MOQ $0.60 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "custom-red-packets",
+   "locale": "ja",
+   "oldTitle": "オリジナル年賀状印刷 | 箔押し UV エンボス | ZprintPro",
+   "newTitle": "オリジナルポチ袋印刷 箔押し UV 100枚〜 ¥103〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "custom-calendars",
+   "locale": "ja",
+   "oldTitle": "カスタムカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "newTitle": "オリジナルカレンダー | 業務用 | 1冊〜 ¥50〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "mini-calendars",
+   "locale": "ja",
+   "oldTitle": "ミニカレンダー | ノベルティ 各種サイズ | ZprintPro",
+   "newTitle": "ミニカレンダー 2027 ノベルティ 1冊〜 ¥50〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "outdoor-vinyl-banners",
+   "locale": "en",
+   "oldTitle": "Outdoor Vinyl Banners | Free Shipping $99+ | ZprintPro",
+   "newTitle": "Outdoor Vinyl Banners | 1 MOQ | From $2.76 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "roll-up-banners",
+   "locale": "ja",
+   "oldTitle": "ロールアップバナー | アルミスタンド 高画質 | ZprintPro",
+   "newTitle": "ロールアップバナー | アルミスタンド | 1個〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "vehicle-wraps",
+   "locale": "en",
+   "oldTitle": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
+   "newTitle": "Vehicle Wraps | 3M Vinyl | 1 MOQ From $6.44 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "kraft-paper-packaging-box",
+   "locale": "ja",
+   "oldTitle": "クラフト紙包装箱 エコ・300枚〜・最安値 | ZprintPro",
+   "newTitle": "クラフト紙包装箱 特注 エコ 300個〜 ¥150〜 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  },
+  {
+   "slug": "graduation-yearbook",
+   "locale": "en",
+   "oldTitle": "Graduation Yearbook | 1 MOQ | Free US Ship | ZprintPro",
+   "newTitle": "Graduation Yearbook | 1 MOQ | From $10.35 | ZprintPro",
+   "gscBaseline": {
+    "imps": 0,
+    "clicks": 0,
+    "pos": null
+   }
+  }
+ ]
+}

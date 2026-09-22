@@ -687,3 +687,17 @@ git commit -F .hermes/_commit-msg-<batch>.txt -- <path1> <path2>
 - **新发现登记**：custom-calendars en desc「Custom custom calendars from ZprintPro **the US**」— 实体错位（ZprintPro 无美国工厂），事实错误级，待下批修。
 - **push 后线上断言清单（3 页）**：① 非冻结 T1 槽（如 /en/product/mesh-banners/）h1 = sku h1 新值（旧为 V6 短名「Mesh Banners」→ 新「Mesh Banners 1+ | Wind-Resistant | ZprintPro」）；② 冻结槽（/zh-hk/product/custom-calendars/）h1 仍 builder 输出（预期不变，验证避让逻辑）；③ 同页 `<title>` 已含「定製」（简体修复生效）。
 - **T4 剩余队列（下批/待 K3）**：① `src/lib/seo.ts` 品类层旧格式大改（wedding-invitations 线上 title 实证：无品牌尾+简体「工艺/套」+· 分隔；calendars 品类已是新格式）→ 全品类扫描后批处理；② h1-builder「專家」后缀处置（改生成器 or PDP 旁路后仅保留 display 用途 —— 待 K3 一句话）；③ T3_KEEP 79 槽按 9/18 GSC 位置复核（30+/零点击升级大改）；④ 全站简体 T5 批（keywords 数组大量「定制貼紙/不干膠」等）；⑤ 5 个空 h1 槽补齐（corrugated-boxes|ja、name-tags-badges|zh-hk、wedding-seating-charts|zh-hk、wedding-suite-bundle|zh-hk、white-card-boxes|zh-hk）；⑥ custom-calendars en「the US」实体错位修复。
+
+### 2026-09-23 03:2x · SKU 标题 v5 审查修复批（K3 2026-09-23 指令；K3 侧并发批 d3f165fc + 本会话补批 12 槽）— commit 本批（与 d3f165fc 攒批 1 次 push）
+
+**指令**：K3 2026-09-23 拍板 v5 规则（`docs/zprintpro-sku-title-rule-v5-2026-09-23.md`，五段式 + 当量 50-57 + 长尾 L0 DELIVERY→L1 GSC→L2 联网→L3 宁缺毋编）+ 冻结新口径「排名前10且有点击才冻结」。
+
+- **冻结重划**：23 → 2 slug（certificates / foil-stickers），`src/data/title-window-freeze.ts` 由 `.hermes/_gen-freeze.cjs` 重生成（SOP-5），明细 `.hermes/reports/freeze-repartition-2026-09-23.json`。
+- **并发发现**：K3 侧会话 02:39-02:42 并行实施了同任务（commit `d3f165fc`「SKU 标题 v5 长尾补源修复 28 槽/23 SKU」，unpushed，报告 `.hermes/reports/sku-title-v5-2026-09-23.md`）→ 本会话改为补修其遗漏 12 槽 + 复审计。
+- **本批 12 槽**（应用器 `scripts/apply-v5-title-batch2-20260923.mjs`，当量全 50-57）：ja custom-red-packets 补钩子（100枚〜 ¥103〜）、custom-calendars 主词 G4 对齐 オリジナル + 业务用 1冊〜 ¥50〜、mini-calendars 2027 ノベルティ 1冊〜 ¥50〜、double-sided-flyers 去 安い（T1 已审提案落盘）、roll-up-banners 去 高画質 + 1個〜；en a4-flyers/thick-paper-flyers/outdoor-vinyl-banners/eco-flyers/vehicle-wraps/graduation-yearbook 去 Free US Ship/Free Shipping 空洞 + 真值价格钩子。
+- **K3 批数据纠错 1 处**：kraft-paper-packaging-box ja「¥240〜」无来源（= cosmetic-boxes bpj=240 误植；真值 bpj=150 双方法复核）→ ¥150〜。
+- **复审计结论**：276 槽 band 0 issue；残留 5 项全为误报/冻结（laminated-menus「10份起」= unitLabel 份 真值、eco-tote「10件起」、premium「100pcs」= desc 口径、certificates 冻结、white-card 免費送貨=真承诺）。
+- **验证窗登记**：`.hermes/title-verify-window-v5-20260923.json`（38 槽 = K3 28 + 本批 12，windowEnd 2026-10-03，起算日=修复日 9/23）。
+- **门禁**：census 276 OK / tsc 54=基线 0 增量 / brand-mentions A 0 / gsc-leak 0 / encoding ✓。
+- **上报 K3**：① greeting-cards 名片词（沿用 K3 批 A/B/C 推荐 B，未拍板不动）；② **small-batch-stickers en title「50pcs」失实**（minQ=10，desc 已对齐 10 pcs；K3 批 02:42 刚触碰该槽，本批不动，推荐 title 50pcs→10pcs）；③ premium-greeting-cards「100pcs」= products.ts 层漂移（非 title 错误）。
+- **报告**：`docs/2026-09-23-title-v5-review-and-fix.md`（含长尾/数字来源行、当量 3 行、重复扫描、幂等三问）。

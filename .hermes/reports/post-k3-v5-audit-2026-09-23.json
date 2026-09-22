@@ -1,0 +1,57 @@
+[
+ {
+  "slug": "laminated-menus",
+  "locale": "zh-hk",
+  "title": "過膠餐牌印刷 · 防水覆膜 10份起 | 餐廳/咖啡店菜單 | 智印港",
+  "equiv": 57,
+  "band": "OK",
+  "problems": [
+   "无钩子"
+  ],
+  "name": "過膠餐牌"
+ },
+ {
+  "slug": "certificates",
+  "locale": "zh-hk",
+  "title": "證書印刷 | 專業印刷 品質保證 | 100個起 HK$8起 | 智印港",
+  "equiv": 54,
+  "band": "OK",
+  "problems": [
+   "空洞词"
+  ],
+  "name": "證書印刷"
+ },
+ {
+  "slug": "eco-tote-bag",
+  "locale": "zh-hk",
+  "title": "環保托特袋 | 100%有機棉 | 10件起 ESG禮贈品 | 智印港",
+  "equiv": 51,
+  "band": "OK",
+  "problems": [
+   "无钩子"
+  ],
+  "name": "環保托特袋"
+ },
+ {
+  "slug": "premium-greeting-cards",
+  "locale": "en",
+  "title": "Premium Greeting Cards 100pcs Foil & UV | ZprintPro",
+  "equiv": 51,
+  "band": "OK",
+  "problems": [
+   "无钩子"
+  ],
+  "name": ""
+ },
+ {
+  "slug": "white-card-boxes",
+  "locale": "zh-hk",
+  "title": "白卡彩盒印刷訂製 化妝品盒 500個起 免費送貨 | 智印港",
+  "equiv": 51,
+  "band": "OK",
+  "problems": [
+   "空洞词"
+  ],
+  "name": "白卡彩盒印刷定製"
+ }
+]

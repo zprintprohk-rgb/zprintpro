@@ -325,3 +325,20 @@
 | **验证** | Task A：6/6 页 11 断言 PASS（eligibleQuantity.minValue == products.ts minQuantity 逐页对；validator.schema.org 每页仅 3 条预期「未知字段」提示，INVALID_ITEMTYPE(ProcureAction)/INVALID_OBJECT(potentialAction)/INVALID_PREDICATE(sourcingIntentKeywords) 全部命中预判定，G1 未引入新增错误；遗留 NO_MATCHES_FOUND×2 + UNKNOWN_FIELD priceRange×1 均 git 溯源 pre-G1）· §0.23.2 双方法复算 3 轮（污染字符集/价格区间正则/交期正则 3 处口径错已修，人工抽样 12 槽一致，300 自洽） |
 | **并发声明** | 本批启动时 src/ 已被 kw-flywheel 飞轮会话（04:5x 持有声明）改动且未释放；本批**不抢锁、不碰 src、不提交对方文件**（git add 仅限本批清单）；对端静默 4h+（TTL 30min 已过）。顶部 HELD 状态由 kw-flywheel 持有者自行释放，本记录不改顶行。⚠️ 赠予对端：工作区 tsc 55 = 基线 54 + `page.tsx` 1 条新增（quote-engine 无责），对端释放门「tsc 增量 0」会拦，先自查 |
 | **遗留** | ① GSC post-G1 产品摘要对比无新窗口数据（基线 9/18：hk 8,188/jp 714/us 1,885 imps），周三 gsc lane pull 后复核 ② Speakable cssSelector NO_MATCHES_FOUND + Organization priceRange UNKNOWN_FIELD（均 pre-G1）③ desc 落地批待 K3 批（P0+MOQ 交集 10 槽优先）④ census 测量口径 = 工作区 9/22 版（含 kw-flywheel 未提交 desc 修复），push 后基线以新 pull 重测 |
+
+---
+
+## 持有声明（2026-09-23 03:0x · v5 标题审查修复会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | v5 标题审查修复会话（本会话；K3 2026-09-23 指令：读 `docs/zprintpro-sku-title-rule-v5-2026-09-23.md` 后执行三语言标题审查与修复；冻结新口径「排名前10且有点击才冻结」） |
+| **意图** | ① 冻结集按 K3 新口径重划（23 → 2 slug：certificates / foil-stickers）② v5 全量审计 276 槽（五段式/当量 50-57/长尾来源 L0-DELIVERY→L1-GSC→L2-联网/数字钩子真值）③ 修复 19 槽 title（11 无钩子 + 2 审计漏网无钩子 + 2 Free US Ship→价格 + 2 最安空洞 + 1 MOQ 失实 50→10 + 1 枚→個 量词），全部不进冻结集 |
+| **写入范围** | `src/data/sku-seo-data.ts`（19 槽 title，应用器自动备份 + 回滚映射）· `src/data/title-window-freeze.ts`（由 `.hermes/_gen-freeze.cjs` 重生成）· `SESSION_LOCK.md` · `.hermes/title-verify-window-v5-20260923.json`（新验证窗登记）· `docs/2026-09-23-title-v5-review-and-fix.md`（报告）· 活书 §9 |
+| **真值依据** | `docs/zprintpro-sku-title-rule-v5-2026-09-23.md`（K3 拍板）· GSC `.hermes/gsc-2026-09-18/extract.json`（28d 查询表 + 页面级）· `products.ts` minQuantity/basePrice(_en/_ja)/unitLabel/turnaround/price_range · DELIVERY 词库 `02-关键词词库.csv`（en 品类词）· K3 2026-09-23 冻结新口径原话 |
+| **冻结避让** | certificates / foil-stickers（新口径前10+有点击）title 全避让；batch1 42 槽验证窗（9/30 到期）不触碰；本批 19 槽全部非冻结、非 batch1 窗，改动后各自重置起算日进新验证窗 |
+| **预计时长** | < 120 min |
+| **释放条件** | 门童全绿（census 276 槽 OK / tsc 54 基线 / title-band 0 / brand-mentions / gsc-leak / encoding）+ commit + push（≥30min 窗口满足）完成 |
+| **双条件核验** | ① src/ 无 MM、无 staged 删除（02:4x git status 实证，仅本会话 title-window-freeze.ts 改动）② 对端 ≥15min 静默（上一 commit 8267e8bf 01:56 起无 src 写入；lane.lock 不存在）✓ |
+
+> **增补（03:1x）**: 本会话执行中发现 **K3 侧并发会话于 02:39-02:42 并行实施了同任务**：commit `d3f165fc`（"SKU 标题 v5 长尾补源修复 28 槽/23 SKU"，unpushed）已含 v5 修复 28 槽。已读其报告 `.hermes/reports/sku-title-v5-2026-09-23.md` + 应用器 `scripts/apply-sku-title-v5-20260923.mjs`。对端 02:42:24 后停写（静默已过 15min，lane.lock 无）→ 双条件复核通过。本会话范围调整为 **仅补修 K3 批遗漏的 12 槽**（5 ja + 6 en + 1 ja 数据纠错 ¥240→¥150），并复审计 K3 批（发现 kraft ja ¥240 = cosmetic-boxes bpj=240 误植，真值 bpj=150，本批纠正）。push 时与 d3f165fc 攒批 1 次。
