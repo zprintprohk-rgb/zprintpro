@@ -3,7 +3,7 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-22 07:1x 由持有者主动释放：commit `2e46b1f1` 已 push 生产（e69abd88..2e46b1f1），CF Pages build success，线上 5 组探针全过（分类页静态化 200 / mesh-banners 308→outdoor-vinyl-banners / sitemap 无下架 SKU / a2 FAQ 带钱问答 + FAQPage schema 可见 / sticker-guide MOQ 10 張起），src/ 全部门童绿（census 279/279 · tsc 54=54 · title-band 0 · brand-mentions 0 · gsc-leak 0 · blog-data-integrity 3/3）。后续会话可自由接管。
+> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-23 04:0x 由 v5 标题补批会话释放：commit `9d3bf5ec` 已 push 生产（d3f165fc..9d3bf5ec，与 K3 侧 v5 批 d3f165fc 攒批衔接），线上断言 6/6 PASS（roll-up-banners ja / kraft ja ¥150 纠错 / custom-red-packets ja / vehicle-wraps en / eco-flyers en / graduation-yearbook en 新 title 全生效），门童全绿（census 276 band 0 · tsc 54 基线 · brand A 0 · gsc-leak 0 · encoding ✓）。后续会话可自由接管。
 
 ---
 
@@ -342,3 +342,13 @@
 | **双条件核验** | ① src/ 无 MM、无 staged 删除（02:4x git status 实证，仅本会话 title-window-freeze.ts 改动）② 对端 ≥15min 静默（上一 commit 8267e8bf 01:56 起无 src 写入；lane.lock 不存在）✓ |
 
 > **增补（03:1x）**: 本会话执行中发现 **K3 侧并发会话于 02:39-02:42 并行实施了同任务**：commit `d3f165fc`（"SKU 标题 v5 长尾补源修复 28 槽/23 SKU"，unpushed）已含 v5 修复 28 槽。已读其报告 `.hermes/reports/sku-title-v5-2026-09-23.md` + 应用器 `scripts/apply-sku-title-v5-20260923.mjs`。对端 02:42:24 后停写（静默已过 15min，lane.lock 无）→ 双条件复核通过。本会话范围调整为 **仅补修 K3 批遗漏的 12 槽**（5 ja + 6 en + 1 ja 数据纠错 ¥240→¥150），并复审计 K3 批（发现 kraft ja ¥240 = cosmetic-boxes bpj=240 误植，真值 bpj=150，本批纠正）。push 时与 d3f165fc 攒批 1 次。
+
+## 释放记录（2026-09-23 04:0x · v5 标题补批会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | v5 标题审查修复会话正式释放（本会话） |
+| **交付** | ① 冻结重划 23→2（certificates/foil-stickers，title-window-freeze.ts 重生成，SOP-5）② v5 全量审计 276 槽 ③ 补批 12 槽（K3 侧 d3f165fc 已修 28 槽后遗漏：ja custom-red-packets/custom-calendars/mini-calendars/double-sided-flyers/roll-up-banners 补钩子去空洞 + en a4-flyers/thick-paper-flyers/outdoor-vinyl-banners/eco-flyers/vehicle-wraps/graduation-yearbook 去 Free US Ship + 真值价钩 + **kraft ja 数据纠错 ¥240→¥150**）④ 验证窗登记 `.hermes/title-verify-window-v5-20260923.json`（38 槽，windowEnd 2026-10-03）⑤ 报告 `docs/2026-09-23-title-v5-review-and-fix.md` ⑥ 活书 §9 条目 |
+| **验证** | census 276 band 0 / tsc 54=基线 0 增量 / brand-mentions A 0 / gsc-leak 0 / encoding ✓ / **线上断言 6/6 PASS**（roll-up ja、kraft ja ¥150、custom-red ja、vehicle-wraps en、eco-flyers en、graduation-yearbook en） |
+| **并发说明** | 开工时发现 K3 侧会话已并发实施同任务（d3f165fc 02:42 commit / 02:49 push，28 槽）；本会话改补其遗漏 + 复审计（发现并纠正 kraft ¥240 误植） |
+| **遗留（上报 K3）** | ① small-batch-stickers en title「50pcs」失实（minQ=10，desc 已对齐 10 pcs；K3 批刚触碰，推荐 title 50pcs→10pcs）② greeting-cards 名片词沿用 K3 批 A/B/C（推荐 B）③ premium-greeting-cards en「100pcs」= products.ts 层漂移（非 title 错误）④ 白卡/托特袋等 4 项审计误报已复核为合规 |
