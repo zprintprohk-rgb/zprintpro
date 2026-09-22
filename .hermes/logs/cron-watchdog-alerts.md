@@ -15,3 +15,8 @@
 
 - **车道结果异常**: ZP-blog-deepfix 2026-09-19 -> STALE -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
 - **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=267011 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-09-22 06:43:04 车道对账告警
+
+- **车道结果异常**: ZP-daily-content scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-gsc-feedback scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细

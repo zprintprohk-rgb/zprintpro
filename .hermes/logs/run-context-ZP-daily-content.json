@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-09-21 21:17:02",
+  "generated_at": "2026-09-22 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "3c2c3a2f7bc06ab4",
-    "day": "2026-09-21",
+    "this_run_key": "bab2394ad7758d79",
+    "day": "2026-09-22",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -25,12 +25,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-09-20 21:17:55"
+        "detail": "总线最近记录 verdict=OK @ 2026-09-21 21:18:12"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=2"
+        "detail": "verdict=ATTENTION problems=4"
       },
       {
         "name": "lock_acquired",
@@ -41,19 +41,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 35872,
-    "acquired_at": "2026-09-21 21:17:02",
-    "acquired_ts": 1789996622.7429168,
+    "pid": 39352,
+    "acquired_at": "2026-09-22 21:17:02",
+    "acquired_ts": 1790083022.8501356,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20260920T211755",
+      "run_id": "ZP-daily-content-20260921T211812",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-09-20 21:17:55",
-      "ended_at": "2026-09-20 21:17:55",
-      "idempotency_key": "d43b0eb2cd9cea85",
+      "fired_at": "2026-09-21 21:18:12",
+      "ended_at": "2026-09-21 21:18:12",
+      "idempotency_key": "315efd55a8454b97",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -62,16 +62,23 @@
       "guard": {
         "ok": true
       },
-      "report": "docs/2026-09-20-handover-living-book.md",
+      "report": "NONE",
       "files": [],
       "pushed": false,
-      "head": "05fc1838",
+      "head": "0a2f2099",
       "source": "lane-git-commit.py"
     },
     "latest_report": ".hermes/logs/2026-09-18-daily-content.md",
     "delivered_files_from_report": []
   },
-  "sibling_lanes": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "PENDING",
+      "report": null,
+      "start": "22:43"
+    }
+  ],
   "retry_queue": [
     {
       "kind": "UNRESOLVED_DAY",
@@ -87,6 +94,22 @@
       "status": "STALE",
       "notes": [
         "ran but no report file dated 2026-09-17"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-09-20",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-09-20"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-09-21",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-09-21"
       ]
     }
   ],

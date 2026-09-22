@@ -1,0 +1,12 @@
+﻿{"t":"2026-09-22 21:18","type":"probe","errors":9,"avgMs":828,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/category/packaging/","status":200,"ms":6969,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-22 21:18","url":"/en/category/packaging/","status":503,"ms":174,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/ja/category/packaging/","status":503,"ms":153,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/category/menus/","status":503,"ms":152,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/category/japan-doujin/","status":503,"ms":148,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/category/banners/","status":503,"ms":161,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/contact/","status":503,"ms":151,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/product/a2-posters/","status":503,"ms":160,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/zh-hk/","status":503,"ms":151,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/api/search?q=sticker","status":0,"ms":138,"bytes":0,"cf":"","ok":false,"err":"308-follow failed: 远程服务器返回错误: (503) 服务器不可用。"}
+{"t":"2026-09-22 21:18","url":"/sitemap.xml","status":200,"ms":746,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}

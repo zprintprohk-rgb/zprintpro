@@ -1,6 +1,6 @@
 {
-  "scannedAt": "2026-09-21T13:32:34",
-  "truthSize": 94,
+  "scannedAt": "2026-09-22T13:07:07",
+  "truthSize": 88,
   "shapeProblems": [],
   "hits": 0,
   "drift": 0,
@@ -12,7 +12,7 @@
     },
     {
       "kind": "zh_張起",
-      "grep": 35,
+      "grep": 31,
       "scan": 0
     },
     {
@@ -32,7 +32,7 @@
     },
     {
       "kind": "ja_枚から",
-      "grep": 16,
+      "grep": 14,
       "scan": 0
     },
     {
@@ -42,12 +42,12 @@
     },
     {
       "kind": "en_MOQ",
-      "grep": 30,
+      "grep": 26,
       "scan": 0
     },
     {
       "kind": "en_pcs",
-      "grep": 7,
+      "grep": 6,
       "scan": 0
     }
   ],
