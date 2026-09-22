@@ -193,6 +193,12 @@ const translations = {
 
 const trustIcons = [Palette, Zap, Shield, Truck];
 
+// 2026-09-22 Cloudflare Workers CPU 修复: 补静态参数 (此前无 generateStaticParams → 3 个联系页
+// URL 走动态 SSR 烧 Worker CPU; 本页无 searchParams/cookies/headers, 静态化安全)
+export function generateStaticParams() {
+  return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
+}
+
 export async function generateMetadata({ params }: ContactPageProps): Promise<Metadata> {
   const t = translations[params.locale as keyof typeof translations];
   return {

@@ -29,9 +29,7 @@ import {
 import Image from 'next/image';
 import { JsonLd } from '@/components/JsonLd';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
-import { CategoryProductCard } from '@/components/category/CategoryProductCard';
-import { CategorySortSelect } from '@/components/category/CategorySortSelect';
-import { Pagination } from '@/components/Pagination';
+import { CategoryProductsPanel } from '@/components/category/CategoryProductsPanel';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { CategoryConversionBlocks } from '@/components/category/CategoryConversionBlocks';
 import { getConversionBlocks, getConversionFaqs } from '@/data/category-conversion-blocks';
@@ -74,12 +72,14 @@ export async function generateMetadata({
 }
 
 // 分类页组件
+// 2026-09-22 Cloudflare Workers CPU 修复: 不再服务端读 searchParams (排序/分页下沉客户端
+// CategoryProductsPanel)。此前因 searchParams 本页被强制动态 SSR, 39 个类目页每次请求烧
+// Worker CPU (免费版 10ms/请求, 24h 超限 100+ 次)。改为纯静态 SSG 后初始 HTML 与改造前
+// 默认视图一致 (全部产品卡 +  popularity 顺序), SEO 无损。
 export default function CategoryPage({
   params,
-  searchParams,
 }: {
   params: { locale: Locale; slug: string };
-  searchParams: { page?: string; sort?: string };
 }) {
   const { locale, slug } = params;
   const category = getCategoryBySlug(slug);
@@ -99,40 +99,7 @@ export default function CategoryPage({
       ? (category.nameEn || category.name)
       : (category.nameJa || category.name);
 
-  // 排序 — 2026-07-13 真正接上 sort 功能 (URL ?sort=price-asc/price-desc/popularity)
-  // popularity = 默认, 按 products 数组原顺序 (跟 server-side default 一致)
-  // price-asc / price-desc: parse price_range 字符串取起始价数字, 转 Number 排序
-  const sortKey = (searchParams.sort || 'popularity').toLowerCase();
-
-  // 提取 price_range 起价作为排序 key (e.g. "HK$0.38-0.80/張" -> 0.38)
-  // 处理 "HK$"、"US$"、"¥"、逗号分隔符 (100,000 等)
-  const parseMinPrice = (priceRange: string): number => {
-    const match = priceRange.match(/[\d,.]+/);
-    if (!match) return 0;
-    const numStr = match[0].replace(/,/g, '');
-    const num = parseFloat(numStr);
-    return isNaN(num) ? 0 : num;
-  };
-
-  const sortedProducts = [...categoryProducts].sort((a, b) => {
-    if (sortKey === 'price-asc') {
-      return parseMinPrice(a.price_range) - parseMinPrice(b.price_range);
-    }
-    if (sortKey === 'price-desc') {
-      return parseMinPrice(b.price_range) - parseMinPrice(a.price_range);
-    }
-    // popularity / default: 保留 server 返回的原始顺序
-    return 0;
-  });
-
-  // 分页 - 每页最多6个SKU（引流分类不赚钱，不展示太多）
-  const currentPage = parseInt(searchParams.page || '1', 10);
-  const productsPerPage = 12;
-  const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
-  const paginatedProducts = sortedProducts.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
-  );
+  // 排序/分页已下沉客户端 CategoryProductsPanel (2026-09-22 CPU 修复), 服务端仅按 popularity 原序输出
 
   // 获取分类名称
   const categoryName = getCategoryName(category, locale);
@@ -420,7 +387,7 @@ export default function CategoryPage({
           categoryName={categoryName}
           categoryNameEn={category.nameEn ?? category.name}
           pageH1={pageH1}
-          products={sortedProducts}
+          products={categoryProducts}
         />
       ) : (
       <main className="min-h-screen bg-gray-50">
@@ -481,60 +448,14 @@ export default function CategoryPage({
 
             {/* 右侧产品列表 */}
             <div className="flex-1">
-              {/* 排序栏 — 浅灰条（產品數 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-18: 蓝条改 gray-100, 与首页 HowItWorks 底部灰条同款) */}
-              <div className="flex items-stretch mb-4 gap-0 rounded-t-lg overflow-hidden">
-                <div className="bg-gray-100 text-slate-700 px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
-                  <div className="w-1 h-5 bg-gray-300 rounded-full flex-shrink-0" />
-                  <span className="font-semibold text-base whitespace-nowrap">
-                    {t.productsCount}
-                  </span>
-                  <div className="ml-auto flex items-center gap-2 min-w-0">
-                    <span className="text-slate-500 text-sm whitespace-nowrap hidden sm:inline">{t.sortBy}:</span>
-                    <CategorySortSelect
-                      defaultValue={sortKey}
-                      options={sortOptions}
-                      className="bg-white hover:bg-gray-50 text-slate-700 text-sm font-medium border border-gray-300 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-[#2873F5]/40 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right disabled:opacity-60"
-                    />
-                  </div>
-                </div>
-                <a
-                  href={`/${locale}/quote/`}
-                  className="bg-[#F87314] hover:bg-[#E06613] text-white font-bold px-5 py-3 flex items-center gap-1.5 whitespace-nowrap transition-colors flex-shrink-0 text-[22px] leading-none"
-                >
-                  {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
-                  <span aria-hidden="true">→</span>
-                </a>
-              </div>
-
-              {/* 产品网格 - 3列，最多12条单页显示 */}
-              {paginatedProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                  {paginatedProducts.map((product, index) => (
-                    <CategoryProductCard
-                      key={product.sku_code}
-                      product={product}
-                      locale={locale}
-                      index={index}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-16 bg-white rounded-lg border border-gray-200">
-                  <p className="text-gray-500">{t.noProducts}</p>
-                </div>
-              )}
-
-              {/* 分页 — 仅当超过12条时显示 */}
-              {totalPages > 1 && (
-                <div className="mt-8">
-                  <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    locale={locale}
-                    baseUrl={`/${locale}/category/${slug}/`}
-                  />
-                </div>
-              )}
+              {/* 排序栏 + 产品网格 + 分页 — 2026-09-22 起整体为客户端面板 (CPU 修复: 页面静态化, 初始 HTML 不变) */}
+              <CategoryProductsPanel
+                products={categoryProducts}
+                locale={locale}
+                slug={slug}
+                t={{ productsCount: t.productsCount, sortBy: t.sortBy, noProducts: t.noProducts }}
+                sortOptions={sortOptions}
+              />
             </div>
           </div>
         </div>

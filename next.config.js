@@ -632,6 +632,25 @@ function buildGuideRedirects() {
     }
   }
 
+
+  // 2026-09-22 SKU 压缩 (K3 指令, CF Workers CPU 治理 + 违禁词清理):
+  // 7 SKU 下架 99→92; 301 收拢权重到承接页 (类目页或最近兄弟 SKU, 全部线上实证存在)
+  const SKU_CUT_301 = [
+    ['acrylic-keychain', '/category/japan-doujin/'],
+    ['wedding-program-cards', '/product/wedding-suite-bundle/'],
+    ['wedding-menu-cards', '/product/wedding-suite-bundle/'],
+    ['escort-cards', '/product/wedding-place-cards/'],
+    ['name-tags-badges', '/category/place-cards/'],
+    ['disposable-menus', '/product/laminated-menus/'],
+    ['mesh-banners', '/product/outdoor-vinyl-banners/'],
+  ];
+  for (const locale of LOCALES) {
+    for (const [dead, target] of SKU_CUT_301) {
+      rules.push({ source: `/${locale}/product/${dead}`, destination: `/${locale}${target}`, permanent: true });
+      rules.push({ source: `/${locale}/product/${dead}/`, destination: `/${locale}${target}`, permanent: true });
+    }
+  }
+
   return rules;
 }
 

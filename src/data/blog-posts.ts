@@ -262,7 +262,7 @@ const lpStickerGuide: BlogPostMeta = {
   title: {
     'zh-hk': '香港貼紙印刷完全指南：材質、工藝與應用場景詳解 | 智印港',
     en: 'Complete Sticker Printing Guide | HK Print Guide | ZprintPro',
-    ja: '香港ステッカー印刷完全ガイド：材質、加工、応用シ | ZprintPro',
+    ja: '香港ステッカー印刷完全ガイド：材質、加工、応用シーン | ZprintPro',
   },
   excerpt: {
     'zh-hk': '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印港專家為您詳解防水、透明、燙金等熱門選項。',

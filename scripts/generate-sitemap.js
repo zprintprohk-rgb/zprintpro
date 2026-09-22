@@ -45,7 +45,10 @@ const productSlugs = (() => {
     for (let j = 1; j <= 25 && i + j < lines.length; j++) {
       const l = lines[i + j];
       if (/^\s*\}/.test(l)) break;  // 对象结束
-      if (/^\s*category:\s*['"]/.test(l)) { set.add(slug); break; }
+      // 2026-09-22 修: category 可能接在別的字段後面同一行 (e.g. "optimizationRound: 3,    category: 'paper-bags',")
+      // 原 /^\s*category:/ 錯過此形態 → kraft-paper-bags / folding-boxes 漏出 sitemap (6 URL)。
+      // [^_\w] 排除 category_slug: (下劃線不匹配)。
+      if (/[^_\w]category:\s*['"]/.test(l)) { set.add(slug); break; }
     }
   }
   return [...set];

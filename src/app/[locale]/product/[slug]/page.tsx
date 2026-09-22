@@ -45,7 +45,7 @@ import { ProductFaq } from '@/components/ProductFaq';
 import { getProductSeo } from '@/data/product-seo';
 import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
-import { coreProductFAQMap } from '@/data/product-faqs';
+import { coreProductFAQMap, skuMoneyFAQs } from '@/data/product-faqs';
 // 2026-09-19 K3 裁决 1: 1-B 展示層改接 v9/ProductPageV9.tsx (線上實際渲染路徑);
 //   本檔原 import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook }
 //   已隨死代碼一併移除 (本檔非 PDP 正文渲染組件, 保留只會形成兩處並存的維護困惑)
@@ -255,11 +255,14 @@ export default function ProductPage({
 
   // FAQPage Schema — 优先使用新集中式FAQ数据（按分类映射）
   // 兜底：所有 category 已在 product-faqs.ts 注册 generalProductFAQs 通用集
+  // 2026-09-22 kw-flywheel W1 (GEO/AEO): SKU 级带钱问答优先于类目 FAQ —— 可见 FAQ 与 schema 同源合并
   const coreFaqs = coreProductFAQMap[product.category_slug] || coreProductFAQMap['educational'];
-  const faqItems = coreFaqs
-    ? coreFaqs.map((faq: { question: Record<Locale, string>; answer: Record<Locale, string> }) => ({ q: faq.question[locale], a: faq.answer[locale] }))
+  const moneyFaqs = skuMoneyFAQs[product.slug];
+  const allFaqs = moneyFaqs ? [...moneyFaqs, ...(coreFaqs ?? [])] : coreFaqs;
+  const faqItems = allFaqs
+    ? allFaqs.map((faq: { question: Record<Locale, string>; answer: Record<Locale, string> }) => ({ q: faq.question[locale], a: faq.answer[locale] }))
     : undefined;
-  const faqJsonLd = coreFaqs ? generateFAQSchema(coreFaqs, locale) : null;
+  const faqJsonLd = allFaqs ? generateFAQSchema(allFaqs, locale) : null;
 
   // 2026-06-10 Phase B 修复 P0-3：HowTo + Speakable 注入
   // 仅对 4 个主钻品类（packaging / paper-bags / books / calendars）的产品页注入 HowTo。

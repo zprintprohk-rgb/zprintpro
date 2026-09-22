@@ -88,7 +88,8 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'business-envelopes': '/product/business-envelopes/',
   'colored-envelopes': '/product/colored-envelopes/',
   'large-envelopes': '/product/large-envelopes/',
-  'mesh-banners': '/product/mesh-banners/',
+  // 2026-09-22 SKU 压缩: mesh-banners 下架, 收拢到 outdoor-vinyl-banners (K3 指令)
+  'mesh-banners': '/product/outdoor-vinyl-banners/',
   'outdoor-vinyl-banners': '/product/outdoor-vinyl-banners/',
   'roll-up-banners': '/product/roll-up-banners/',
   'paper-bags': '/product/paper-bags/',
@@ -129,7 +130,8 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'laminated-menus': '/product/laminated-menus/',
   'hardcover-menus': '/product/hardcover-menus/',
   'drink-menus': '/product/drink-menus/',
-  'disposable-menus': '/product/disposable-menus/',
+  // 2026-09-22 SKU 压缩: disposable-menus 下架, 收拢到 laminated-menus (K3 指令)
+  'disposable-menus': '/product/laminated-menus/',
   // === Additional Banners ===
   'adhesive-banners': '/product/adhesive-banners/',
   'vehicle-wraps': '/product/vehicle-wraps/',

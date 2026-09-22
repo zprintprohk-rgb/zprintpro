@@ -742,3 +742,327 @@ export const coreProductFAQMap: Record<string, FAQItem[]> = {
   // 原回退到通用 FAQ → PDP 取错类目; 改指专属集 (含任务 K 新增「做唔做膠袋」真实回答)
   packaging: packagingBoxesFAQs,
 };
+
+/**
+ * skuMoneyFAQs — SKU 级带钱问答 (kw-flywheel W1, 2026-09-22)
+ *
+ * 数据源: DELIVERY/kw-flywheel/page_action_plan.csv faq_inject 列 + aeo_question_bank.csv (571 问句)
+ * 数字真值: products.ts minQuantity / basePrice(_en/_ja) + 页面价格锚点; 交期沿用各 SKU body 现行口径
+ * 挂载: src/app/[locale]/product/[slug]/page.tsx — SKU 级优先, 类目 coreProductFAQMap 随后;
+ *       可见 FAQ 手风琴与 FAQPage JSON-LD 同源 (Google FAQPage 指南: schema 内容须页面可见)
+ * AEO 口径: 首句直答 (价格+MOQ+交期), 次句补规格/工艺, 不堆砌
+ */
+export const skuMoneyFAQs: Record<string, FAQItem[]> = {
+  'a2-posters': [
+    {
+      question: {
+        'zh-hk': 'A2 海報幾多錢一張？',
+        en: 'How much does an A2 poster cost?',
+        ja: 'A2ポスターの印刷料金は？',
+      },
+      answer: {
+        'zh-hk': 'A2 海報 10 張起印，HK$9 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
+        en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper). 200gsm and PP synthetic upgrades available, 1-2 business day production with same-day rush option.',
+        ja: 'A2ポスターは10枚〜¥300〜（157gコート紙）。200g・PP合成紙も対応、1-2営業日生産、特急当日仕上げ可。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A2 海報幾大張？可以即日取貨嗎？',
+        en: 'What size is an A2 poster and can I get it same-day?',
+        ja: 'A2ポスターのサイズは？即日仕上げは可能？',
+      },
+      answer: {
+        'zh-hk': 'A2 尺寸為 420×594mm。上午確認稿件最快即日交收，常規 1-2 個工作天，全港送貨。',
+        en: 'A2 measures 420×594mm (16.5×23.4 in). Artwork confirmed in the morning can go into same-day production; standard turnaround is 1-2 business days.',
+        ja: 'A2は420×594mmです。午前中のデータ確定で即日生産可能、標準1-2営業日。',
+      },
+    },
+  ],
+  'same-day-flyers': [
+    {
+      question: {
+        'zh-hk': '即日印刷幾耐可以攞？',
+        en: 'How fast is same-day flyer printing?',
+        ja: '即日チラシ印刷はどのくらい早い？',
+      },
+      answer: {
+        'zh-hk': '即日傳單 10 張起印、HK$1.30 起/張。上午 12 時前確認稿件，最快即日交收或港九送貨；常規 1-2 個工作天。',
+        en: 'Same-day flyers from $0.16/pc at 10 MOQ. Confirm artwork before noon for same-day production; standard turnaround 1-2 business days, DHL 2-4 days to the US.',
+        ja: '即日チラシは10枚〜¥25〜。正午までにデータ確定で当日生産、標準1-2営業日、DHLで日本へ2-4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '即日印刷有咩尺寸同紙質？',
+        en: 'What sizes and paper do same-day flyers support?',
+        ja: '即日チラシのサイズと用紙は？',
+      },
+      answer: {
+        'zh-hk': 'A4/A5/A6/DL 尺寸齊全，157g 銅版紙為主，可加覆膜或圓角。提交檔案後 1 小時內免費數碼打稿。',
+        en: 'A4/A5/A6/DL sizes on 157gsm gloss with optional lamination and rounded corners. Free digital proof within 1 hour of file submission.',
+        ja: 'A4/A5/A6/DL対応、157gコート紙、ラミネート・角丸加工可。入稿後1時間以内に無料デジタル校正。',
+      },
+    },
+  ],
+  'saddle-stitch-booklets': [
+    {
+      question: {
+        'zh-hk': '騎馬釘書刊幾多頁先裝到？',
+        en: 'How many pages can you saddle stitch?',
+        ja: '中綴じ冊子は何ページまで対応？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘裝訂適合 8-64 頁小冊子（頁數需為 4 的倍數）。10 本起印、HK$6 起/本，5-10 個工作天交貨；超過 64 頁建議轉膠裝。',
+        en: 'Saddle stitch suits 8-64 page booklets (page count must be a multiple of 4). From $1.84/book at 10 MOQ, 5-10 business days; choose perfect binding beyond 64 pages.',
+        ja: '中綴じは8〜64ページ（4の倍数）に対応。10冊〜¥258〜、5-10営業日。64ページ超は無線綴じがおすすめ。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '騎馬釘小冊子印刷幾多錢一本？',
+        en: 'How much does a saddle stitch booklet cost?',
+        ja: '中綴じ冊子の印刷料金は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘小冊子 10 本起印，HK$6 起/本（A5、16 頁、157g 銅版紙計）。頁數越多單價越高，提交檔案後 1 小時內免費數碼打稿。',
+        en: 'From $1.84/book at 10 MOQ (A5, 16 pages, 157gsm). Price scales with page count; free digital proof within 1 hour of file submission.',
+        ja: '10冊〜¥258〜（A5・16ページ・157gコート紙）。ページ数で変動、入稿後1時間以内に無料デジタル校正。',
+      },
+    },
+  ],
+  'pvc-menus': [
+    {
+      question: {
+        'zh-hk': '餐牌印刷幾錢一張？',
+        en: 'How much do PVC menus cost?',
+        ja: 'PVCメニューの料金は？',
+      },
+      answer: {
+        'zh-hk': 'PVC 餐牌 10 張起印、HK$8 起/張，防水防油覆膜，可直接抹洗。5-7 個工作天交貨，餐廳/酒吧/咖啡店適用。',
+        en: 'PVC menus from $2.76/pc at 10 MOQ, laminated waterproof and wipe-clean for restaurants, bars and cafes. 5-7 business days plus free US shipping over $99.',
+        ja: 'PVCメニューは10枚〜¥386〜、防水ラミネートで水洗い可。5-7営業日、飲食店・バー・カフェ向け。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'PVC 餐牌防水嗎？可以抹嗎？',
+        en: 'Are PVC menus waterproof?',
+        ja: 'PVCメニューは防水ですか？',
+      },
+      answer: {
+        'zh-hk': '可以。PVC 材質加啞/光覆膜，防水防油，濕布直接抹洗唔會爛，適合日日用的餐飲場景。',
+        en: 'Yes. PVC stock with matte or gloss lamination is fully waterproof and grease-resistant — wipe clean daily without damage, ideal for busy F&B service.',
+        ja: 'はい。PVC素材にマット/グロスラミネート、防水・防油で水拭き可能。毎日使う飲食店に最適。',
+      },
+    },
+  ],
+  'food-boxes': [
+    {
+      question: {
+        'zh-hk': '食品包裝印刷流程係點？',
+        en: 'What is the process for custom food packaging?',
+        ja: '食品パッケージ印刷の流れは？',
+      },
+      answer: {
+        'zh-hk': '食品包裝盒 100 個起印、HK$2.5 起/個。流程：提交檔案 → 1 小時免費數碼打稿 → 確認 → 10-15 個工作天生產交貨。FDA 認可食品級材質，免費刀模線模板。',
+        en: 'Food boxes from $0.74/pc at 100 MOQ. Process: submit files, free digital proof in 1 hour, approve, then 10-15 business day production. FDA-safe food-grade boards with free dieline templates.',
+        ja: '食品包装箱は100個〜¥101〜。入稿→1時間無料デジタル校正→確認→10-15営業日生産。FDA適合の食品グレード素材、型紙無料。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '食品包裝盒用咩紙？防油嗎？',
+        en: 'Are your food boxes grease-resistant and food-safe?',
+        ja: '食品包装箱の素材は食品に安全？',
+      },
+      answer: {
+        'zh-hk': '採用 FDA 認可食品級白卡/牛皮紙，可選防油淋膜，通過 SGS 遷移測試，間接接觸食品級別安全。',
+        en: 'FDA-compliant food-grade white card and kraft boards with optional grease-resistant coating, SGS migration tested for indirect food contact.',
+        ja: 'FDA適合の食品グレード白卡/クラフト紙、防油コーティング可、SGS移行テスト済み（間接接触級）。',
+      },
+    },
+  ],
+  'catalog-printing': [
+    {
+      question: {
+        'zh-hk': '畫冊印刷幾多本起？幾錢一本？',
+        en: 'How much does catalog printing cost?',
+        ja: 'カタログ印刷は何冊から？料金は？',
+      },
+      answer: {
+        'zh-hk': '畫冊 10 本起印、HK$24 起/本（A4、騎馬釘計）。膠裝/精裝另計，3-5 個工作天交貨，提交檔案後 1 小時免費打稿。',
+        en: 'Catalog printing from $4.60/book at 10 MOQ (A4 saddle stitch), factory-direct from our Shenzhen plant. Perfect bound and hardcover options, 3-5 business days plus DHL 2-4 day US delivery.',
+        ja: '10冊〜¥644〜（A4中綴じ）。無線綴じ・上製本も対応、3-5営業日＋DHLで日本へ2-4日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '中國印畫冊有咩著數？',
+        en: 'Why print catalogs in China?',
+        ja: '中国印刷のメリットは？',
+      },
+      answer: {
+        'zh-hk': '深圳自營工場直印，無中間商：同等 157g 銅版紙四色印刷，價格約為香港本地一半，10 本起印、DHL 全球 2-4 天直送。',
+        en: 'Factory-direct from our own Shenzhen plant — no middlemen. Same 157gsm 4-color specs at roughly half typical local prices, 10 MOQ, DHL worldwide in 2-4 days.',
+        ja: '深圳自社工場直結で中間マージンなし。157gコート紙4色印刷で相場の約半値、10冊から、DHLで2-4日。',
+      },
+    },
+  ],
+  'waterproof-stickers': [
+    {
+      question: {
+        'zh-hk': '防水貼紙邊間買？幾多張起印？',
+        en: 'Where can I print waterproof stickers in small batches?',
+        ja: '防水ステッカーは何枚から？料金は？',
+      },
+      answer: {
+        'zh-hk': '智印港防水貼紙 10 張起印、HK$0.22 起/張，PVC 防水材質，3-5 個工作天交貨，港九新界滿 HK$500 免費速遞。',
+        en: 'ZprintPro prints waterproof PVC stickers from $0.32/pc at 10 MOQ, 3-5 business days plus free US shipping over $99. UV-resistant outdoor ink rated 3-5 years.',
+        ja: '10枚〜¥41〜、PVC防水素材、3-5営業日で全国配送。UV耐性インクで屋外3-5年。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '防水貼紙可以貼戶外幾耐？',
+        en: 'How long do waterproof stickers last outdoors?',
+        ja: '防水ステッカーの屋外耐久年数は？',
+      },
+      answer: {
+        'zh-hk': 'PVC 防水貼紙配防 UV 油墨，戶外可用 3-5 年；室內 5-7 年。可加啞/光覆膜進一步防刮。',
+        en: 'PVC waterproof stickers with UV-resistant ink last 3-5 years outdoors and 5-7 years indoors; add matte or gloss lamination for extra scratch resistance.',
+        ja: 'PVC防水ステッカーはUV耐性インクで屋外3-5年、屋内5-7年。マット/グロスラミネートで耐擦性向上。',
+      },
+    },
+  ],
+  'small-batch-stickers': [
+    {
+      question: {
+        'zh-hk': '小批量貼紙最少印幾多張？',
+        en: 'What is the minimum order for custom stickers?',
+        ja: 'ステッカー印刷の最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 張起印（打樣性質，單價較高）；100 張以上進入量產檔位，單價明顯下降，HK$0.45 起/張，3-5 個工作天交貨。',
+        en: '10 pieces. A 10-pc run is proofing grade with a higher unit price; from 100 pcs the unit price drops clearly — from $0.55/pc on the small-batch line, 3-5 business days.',
+        ja: '10枚から。10枚はサンプル的な数量で単価高め、100枚以上で単価が明確に下がります（¥69〜）、3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '小批量貼紙幾錢一張？',
+        en: 'How much do small batch stickers cost?',
+        ja: '小ロットステッカーの料金は？',
+      },
+      answer: {
+        'zh-hk': '防水 PVC 小批量 HK$0.45 起/張（10-50 張檔位）；100/500/1000 張階梯遞減。1 小時免費打稿，滿 HK$500 免費速遞。',
+        en: 'From $0.55/pc at 10-50 pcs on waterproof PVC; volume tiers at 100/500/1000 pcs lower the unit price. Free digital proof in 1 hour, free US shipping over $99.',
+        ja: '防水PVCで10-50枚は¥69〜/枚、100/500/1000枚の段階割引あり。1時間無料校正、全国配送。',
+      },
+    },
+  ],
+  'die-cut-stickers': [
+    {
+      question: {
+        'zh-hk': '異形貼紙幾多錢？可以切咩形狀？',
+        en: 'How are die cut stickers made and priced?',
+        ja: '型抜きステッカーの料金と形状は？',
+      },
+      answer: {
+        'zh-hk': '異形模切貼紙 10 張起印、HK$0.58 起/張，任意形狀按刀線切割，免刀模費。3-5 個工作天交貨。',
+        en: 'Die-cut stickers from $0.46/pc at 10 MOQ — any custom shape cut to your vector dieline, no die fee. 3-5 business days plus free US shipping over $99.',
+        ja: '10枚〜¥60〜、ベクター型データで任意形状にカット、型代無料。3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明異形貼紙有冇？',
+        en: 'Do you offer clear die-cut stickers?',
+        ja: '透明の型抜きステッカーはありますか？',
+      },
+      answer: {
+        'zh-hk': '有。透明 BOPP 材質可異形切割，「無標籤」效果，適合玻璃瓶/化妝品包裝，同樣 10 張起印。',
+        en: 'Yes — transparent BOPP die-cut to any shape for a no-label look on glass bottles and cosmetic packaging, also from 10 MOQ.',
+        ja: 'はい。透明BOPP素材を任意形状にカット、「ラベルなし」仕上がり。玻璃瓶・化粧品包装に、10枚から。',
+      },
+    },
+  ],
+  certificates: [
+    {
+      question: {
+        'zh-hk': '證書印刷幾多錢？幾耐交貨？',
+        en: 'How much does certificate printing cost and how long?',
+        ja: '賞状印刷の料金と納期は？',
+      },
+      answer: {
+        'zh-hk': '證書 100 個起印、HK$8 起/個，3-5 個工作天交貨。燙金/壓紋/局部UV 工藝可選，可加序號印刷，提交檔案後 1 小時免費打稿。',
+        en: 'Certificates from $2.76/pc at 100 MOQ, 3-5 business days. Foil stamping, embossing, spot UV and serial numbering available, free digital proof in 1 hour.',
+        ja: '100枚〜¥386〜、3-5営業日。金箔押し・エンボス・部分UV・通し番号対応、1時間無料校正。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '證書可以燙金同加序號嗎？',
+        en: 'Can certificates be foil-stamped and serial-numbered?',
+        ja: '賞状に箔押しと通し番号はできますか？',
+      },
+      answer: {
+        'zh-hk': '可以。金/銀/玫瑰金燙金、壓紋、局部UV 都做得到，序號/姓名可變數據印刷，畢業證書/獎狀/會員證都接。',
+        en: 'Yes — gold/silver/rose-gold foil, embossing, spot UV, plus variable-data serial numbers and names for diplomas, award certificates and membership cards.',
+        ja: 'はい。金/銀/ローズゴールド箔押し、エンボス、部分UV、バリアブル通し番号・名前入れ対応。卒業証書・表彰状・会員証に。',
+      },
+    },
+  ],
+  'doujinshi-printing': [
+    {
+      question: {
+        'zh-hk': '同人誌印刷香港邊間好？',
+        en: 'Where can I print doujinshi for Comiket?',
+        ja: '同人誌印刷はどこがいい？コミケに間に合う？',
+      },
+      answer: {
+        'zh-hk': '智印港同人誌 10 本起印，A5/B5 標準尺寸，封面彩色、內頁單色，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天，繁中/日文客服雙語支援。',
+        en: 'ZprintPro prints doujinshi from 10 copies — A5/B5, color cover with monochrome interior, 24-hour rush support before Comiket, DHL to Japan in 2-4 business days with Chinese/Japanese support.',
+        ja: 'ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前24時間特急対応、DHLで2-4日。日本語サポートあり。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '同人誌印刷幾多頁？裝訂有咩揀？',
+        en: 'What page counts and binding do doujinshi support?',
+        ja: '同人誌のページ数と製本は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘 8-64 頁、無線膠裝 64 頁以上，A5/B5/A4 尺寸。10 本起印，RGB 檔案可直收（免轉 CMYK），新手友善。',
+        en: 'Saddle stitch for 8-64 pages, perfect bound beyond 64, in A5/B5/A4. From 10 copies; RGB files accepted directly — no CMYK conversion needed, beginner-friendly.',
+        ja: '中綴じ8〜64ページ、64ページ超は無線綴じ、A5/B5/A4。10冊から、RGB入稿OK（CMYK変換不要）で初心者にも安心。',
+      },
+    },
+  ],
+  textbooks: [
+    {
+      question: {
+        'zh-hk': '教科書印刷幾多錢一本？',
+        en: 'How much does textbook printing cost?',
+        ja: '教科書印刷 いくら？',
+      },
+      answer: {
+        'zh-hk': '教科書 100 本起印、HK$24 起/本，5-7 個工作天交貨。覆膜騎馬釘/膠裝可選，內頁 157g 銅版紙、封面 250g，1 小時免費打稿。',
+        en: 'Textbooks from $9.20/book at 100 MOQ (157gsm interior, 250gsm cover), 5-7 business days plus DHL 2-4 day delivery. Free digital proof in 1 hour.',
+        ja: '教科書印刷は100冊〜¥1288〜（本文157gコート紙・表紙250g）。5-7営業日＋DHLで日本へ2-4日、1時間無料デジタル校正。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '教科書可以點樣裝訂？',
+        en: 'What binding options do textbooks have?',
+        ja: '教科書・教材の製本方法は？',
+      },
+      answer: {
+        'zh-hk': '騎馬釘（8-64 頁）或無線膠裝（64 頁以上），A4/A5/B5 尺寸，100 本起印，教材/練習冊小批量都接。',
+        en: 'Saddle stitch (8-64 pages) or perfect bound (64+ pages) in A4/A5/B5, 100 MOQ — short-run courseware and workbooks welcome.',
+        ja: '中綴じ（8〜64ページ）・無線綴じ（64ページ超）対応、A4/A5/B5。100冊から、教材・テキスト・問題集の小ロットも相談可。',
+      },
+    },
+  ],
+};

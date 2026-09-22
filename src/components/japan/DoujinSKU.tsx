@@ -37,7 +37,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: '同人誌印刷', price: 'HK$500~/部起', spec: 'A5/B5対応・表紙フルカラー', tag: 'comiket' },
-      { slug: 'acrylic-keychain', name: '亞克力鑰匙扣', price: 'HK$150~/個起', spec: '透明・2mm/3mm・角色造型', tag: 'oshi' },
       { slug: 'can-badge', name: '缶バッジ印刷', price: 'HK$80~/個起', spec: '57mm/76mm・安全扣', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'ポストカード套装', price: 'HK$50~/枚起', spec: '和紙風・4-8枚套', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'エコトートバッグ', price: 'HK$600~/個起', spec: 'オーガニックコットン・シルク印刷', tag: 'small' },
@@ -55,7 +54,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: 'Doujinshi Printing', price: 'From $65/book', spec: 'A5/B5 · Full-color cover', tag: 'comiket' },
-      { slug: 'acrylic-keychain', name: 'Acrylic Keychain', price: 'From $20/pc', spec: '2mm/3mm · Custom shape', tag: 'oshi' },
       { slug: 'can-badge', name: 'Can Badge', price: 'From $10/pc', spec: '57mm/76mm · Safety pin', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'Postcard Set', price: 'From $6.5/pc', spec: 'Washi-style · 4-8 pcs/set', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'Eco Tote Bag', price: 'From $78/pc', spec: 'Organic cotton · Silk print', tag: 'small' },
@@ -73,7 +71,6 @@ const I18N: Record<Locale, {
     },
     items: [
       { slug: 'doujinshi-printing', name: '同人誌印刷', price: '¥7500〜/部〜', spec: 'A5/B5対応・表紙フルカラー', tag: 'comiket' },
-      { slug: 'acrylic-keychain', name: 'アクリルキーホルダー', price: '¥2275〜/個〜', spec: '透明・2mm/3mm・キャラ形状', tag: 'oshi' },
       { slug: 'can-badge', name: '缶バッジ印刷', price: '¥1200〜/個〜', spec: '57mm/76mm・安全ピン付き', tag: 'vTuber' },
       { slug: 'postcard-set', name: 'ポストカードセット', price: '¥750〜/枚〜', spec: '和紙風・4-8枚セット', tag: 'oshi' },
       { slug: 'eco-tote-bag', name: 'エコトートバッグ', price: '¥9000〜/個〜', spec: 'オーガニックコットン・シルク印刷', tag: 'small' },

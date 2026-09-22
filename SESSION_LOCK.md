@@ -12,12 +12,12 @@
 | 项 | 值 |
 |---|---|
 | **持有者** | kw-flywheel 飞轮执行会话（K3 指令：读 DELIVERY/kw-flywheel 报告后执行全站 SKU+blog SEO+AEO+GEO 增强，目标带钱词进首页） |
-| **意图** | ① 4 槽合法 title 重写（saddle-stitch-booklets zh-hk / food-boxes zh-hk+ja / double-sided-flyers ja，冻结 23 slug 避让、批次1/R2 验证窗避让、当量 50-57 全过）② AEO desc 首句直答化 ~18 槽（MOQ 冲突 + 重复 artifact + 模板残缺修复）③ GEO：产品页 FAQPage 接通 SKU 级带钱问答（product-faqs.ts 新增 skuMoneyFAQs 映射 + page.tsx 合并）④ sticker-guide blog MOQ 100→10 真值修复 |
-| **写入范围** | `src/data/sku-seo-data.ts`（apply 脚本块级锚定 + 自动备份）· `src/data/product-faqs.ts` · `src/app/[locale]/product/[slug]/page.tsx`（FAQ 合并一处）· `src/data/blog-data/{zh-hk,en,ja}.json`（sticker-guide MOQ 真值）· scripts/ 新增 apply 脚本 · 本文件 |
-| **真值依据** | `DELIVERY/kw-flywheel/page_action_plan.csv`（48 行施工图）· products.ts minQuantity/basePrice · `scripts/guards/title-equiv.js` 50-57 · GSC `.hermes/gsc-2026-09-18/extract.json` |
-| **冻结避让** | title-window-freeze 23 slug 全避让；批次1 42 槽 + R2 2 槽 + T1 516 字段验证窗（至 ~9/28-30）全避让；same-day-flyers zh-hk（9/20 事实修复窗）避让 |
-| **预计时长** | < 90 min |
-| **释放条件** | 四件套（census/audit-sku-locale/tsc 增量 0/门童 #25）+ commit 完成 |
+| **意图** | **第一批（已落地）**: ① 5 槽 title（4 计划重写 + saddle-stitch ja MOQ 事实修，当量全过）② 20 槽 AEO desc ③ GEO skuMoneyFAQs 12 SKU×2 问答×3 语 + page.tsx 合并接线。**第二批（K3 追加指令，进行中）**: ④ SKU 压缩 99→92（五类切 7 条 + 42 条 301 + middleware/QuoteRedirect/场景表/博客内链/图库/sitemap 全链清理）⑤ Cloudflare Workers CPU 超限治理（CF 告警 24h 100+ 次）：分类页去 searchParams 静态化（排序/分页下沉 CategoryProductsPanel 客户端组件）、CategorySortSelect 受控模式、contact 补 generateStaticParams |
+| **写入范围** | `src/data/sku-seo-data.ts` · `src/data/products.ts` · `src/data/product-faqs.ts` · `src/app/[locale]/product/[slug]/page.tsx` · `src/app/[locale]/category/[slug]/page.tsx` · `src/components/category/CategoryProductsPanel.tsx`（新增）· `CategorySortSelect.tsx` · `src/app/[locale]/contact/page.tsx` · `src/middleware.ts` · `src/components/quote/QuoteRedirect.tsx` · `src/components/japan/DoujinSKU.tsx` · `src/data/industry-scenario-links.ts` · `src/data/blog-data/{zh-hk,en,ja}.json`（99→92 口径 + 死链解除）· `public/sitemap*.xml` + `src/generated/sitemap-content.ts`（重生成）· `public/images`（39 张孤儿图 git rm）· `next.config.js`（301）· scripts/ 新增 apply 脚本 · 本文件 |
+| **真值依据** | `DELIVERY/kw-flywheel/page_action_plan.csv`（48 行施工图）· products.ts minQuantity/basePrice · `scripts/guards/title-equiv.js` 50-57 · GSC `.hermes/gsc-2026-09-18/extract.json` · K3 2026-09-22 SKU 压缩原话（两条含违禁「專家」词标题 SKU 下架 + 喜帖/枱卡/餐牌减至 4 条）· CF Workers CPU 告警邮件 |
+| **冻结避让** | title-window-freeze 中 mesh-banners 按 K3 最新指令下架（冻结保 title，K3 删 SKU 拍板优先级更高）；批次1/R2/T1 验证窗其余槽位全避让；same-day-flyers zh-hk（9/20 事实修复窗）避让 |
+| **预计时长** | < 150 min（两批合计） |
+| **释放条件** | 门童全绿（census 279 槽 OK / tsc 54 基线 / brand-mentions / encoding / gsc-leak / bc-ban 报告）+ commit + push（≥30min 窗口满足）完成 |
 | **双条件核验** | ① src/ 无 MM、无 staged 删除（04:45 git status 实证）② 对端 ≥15min 静默（GEO-G1 释放 9/21 21:4x 起 ~7h 无写入；lane.lock 不存在；今日无定时车道运行窗）✓ |
 
 ---

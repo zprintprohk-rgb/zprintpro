@@ -108,7 +108,8 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
     outdoor_ad: { sku: 'outdoor-vinyl-banners' },
     auto_showroom: { sku: 'vehicle-wraps' },
     mall_promo: { sku: 'roll-up-banners' },
-    school_event: { sku: 'mesh-banners' },
+    // 2026-09-22 SKU 压缩: mesh-banners 下架 → outdoor-vinyl-banners 承接
+    school_event: { sku: 'outdoor-vinyl-banners' },
   },
 
   // ── 書刊畫冊 ──────────────────────────────────────────
@@ -141,7 +142,8 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
   // ── 日本同人 ──────────────────────────────────────────
   'japan-doujin': {
     doujinshi: { sku: 'doujinshi-printing' },
-    anime_goods: { sku: 'acrylic-keychain' },
+    // 2026-09-22 SKU 压缩: acrylic-keychain 下架 → can-badge 承接 (同人周邊代表品)
+    anime_goods: { sku: 'can-badge' },
     vtuber: { sku: 'can-badge' },
     comiket: { sku: 'postcard-set' },
     original_ip: { sku: 'eco-tote-bag' },

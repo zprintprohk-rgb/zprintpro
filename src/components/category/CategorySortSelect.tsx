@@ -18,9 +18,38 @@ interface CategorySortSelectProps {
   defaultValue: string;
   options: { value: string; label: string }[];
   className?: string;
+  /**
+   * 2026-09-22 Cloudflare Workers CPU 修复: 受控模式。
+   * 传入 onChange 时组件不调用 useRouter/useSearchParams（避免 Suspense 兜底导致页面动态化），
+   * 排序变更仅回调父组件（客户端排序）。未传入时保持原 URL ?sort= 行为不变。
+   */
+  onChange?: (value: string) => void;
 }
 
-export function CategorySortSelect({ defaultValue, options, className }: CategorySortSelectProps) {
+function ControlledSortSelect({ defaultValue, options, className, onChange }: CategorySortSelectProps) {
+  return (
+    <select
+      className={className}
+      defaultValue={defaultValue}
+      onChange={(e) => onChange?.(e.target.value)}
+    >
+      {options.map((opt) => (
+        <option key={opt.value} value={opt.value} className="text-gray-900 bg-white">
+          {opt.label}
+        </option>
+      ))}
+    </select>
+  );
+}
+
+export function CategorySortSelect(props: CategorySortSelectProps) {
+  if (props.onChange) {
+    return <ControlledSortSelect {...props} />;
+  }
+  return <UrlSortSelect {...props} />;
+}
+
+function UrlSortSelect({ defaultValue, options, className }: CategorySortSelectProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
