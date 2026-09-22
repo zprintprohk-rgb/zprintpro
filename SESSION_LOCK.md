@@ -3,7 +3,7 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: 🟢 **持有中（HELD）** — 2026-09-22 04:5x（kw-flywheel 飞轮执行会话，见下方持有声明）
+> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-22 07:1x 由持有者主动释放：commit `2e46b1f1` 已 push 生产（e69abd88..2e46b1f1），CF Pages build success，线上 5 组探针全过（分类页静态化 200 / mesh-banners 308→outdoor-vinyl-banners / sitemap 无下架 SKU / a2 FAQ 带钱问答 + FAQPage schema 可见 / sticker-guide MOQ 10 張起），src/ 全部门童绿（census 279/279 · tsc 54=54 · title-band 0 · brand-mentions 0 · gsc-leak 0 · blog-data-integrity 3/3）。后续会话可自由接管。
 
 ---
 
