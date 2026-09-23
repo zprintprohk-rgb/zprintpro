@@ -24,12 +24,13 @@ import { getPriceTableForSlug } from '@/lib/price-injector';
 import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversion-blocks';
 import { formatPriceForLocale, getIndependentPrice, convertToFromPrice } from '@/lib/pricing';
 import { GalleryV9 } from './GalleryV9';
+import { MoqQaBlock } from './MoqQaBlock';
 import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlock';
 // Step 4 (方案 (a)): 規格值三語化 — products.ts 規格三欄 (material/printMethod/finishing) 原文 -> 本地化值;
 // 查不到 -> fallback 中文原文 (不報錯/不留空); zh-hk 值 = 原文逐字 ⇒ zh-hk 渲染輸出零改動
 import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n';
 // 2026-09-19 K3 裁决 1: v10.1 决策 1-B 展示层 MOQ 口径 (数码线书刊/本册类 5 SKU = 1 本起印)
-import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isPaperGoodsSmallBatch, PAPER_GOODS_MOQ, PAPER_GOODS_MOQ_AEO, PAPER_GOODS_MOQ_NOTE } from '@/data/print-method-policy';
+import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isPaperGoodsSmallBatch, PAPER_GOODS_MOQ } from '@/data/print-method-policy';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -481,16 +482,9 @@ export function ProductPageV9({
           )}
 
           {/* 2026-09-19 全站起訂量修正: 紙品線 (傳單/貼紙/賀卡) 10 張起印 AEO 塊
-              口徑與 price-table 小批量檔同源 (開機費 + 隨量遞減單張價), 不含任何競品 MOQ 數字 */}
-          {isPaperGoods && (
-            <div className="mt-4 bg-emerald-50 border-l-4 border-emerald-400 rounded-r-lg p-4">
-              <p className="text-[13.5px] text-emerald-900 leading-relaxed">
-                <span className="font-semibold">⚡ {PAPER_GOODS_MOQ_AEO[locale].q}</span>{' '}
-                {PAPER_GOODS_MOQ_AEO[locale].a}
-              </p>
-              <p className="text-xs text-emerald-800/90 leading-relaxed mt-2">{PAPER_GOODS_MOQ_NOTE[locale]}</p>
-            </div>
-          )}
+              口徑與 price-table 小批量檔同源 (開機費 + 隨量遞減單張價), 不含任何競品 MOQ 數字
+              2026-09-23 Q-1 (交付物4): 手工注入路線废止 → 模板化派生组件 MoqQaBlock
+              (价格阶梯之后渲染, 见下方); 此处块移除, 原硬编码内容不渲染 */}
 
           {/* CTA 行 */}
           <div className="mt-5 grid grid-cols-2 gap-3">
@@ -581,6 +575,11 @@ export function ProductPageV9({
           </div>
         </div>
       </section>
+      )}
+
+      {/* ═══ Q-1 (交付物4) MOQ 問答塊: 价格阶梯之后、产品详情之前 (模板化派生, 100% products.ts/price-table) ═══ */}
+      {isPaperGoods && (
+        <MoqQaBlock locale={locale} slug={product.slug} minQuantity={product.minQuantity} />
       )}
 
       {/* ═══ 服務承諾一體色塊（修訂輪8 #5: 三塊合併為一條皇家藏青大色塊，內含三部分內容；即日急件橙色塊整體可點，鏈接即日印刷服務） ═══ */}

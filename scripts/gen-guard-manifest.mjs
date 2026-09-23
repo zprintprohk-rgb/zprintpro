@@ -71,7 +71,7 @@ function collect() {
       if (e.isDirectory()) {
         if (e.name === 'node_modules') continue;
         walk(p);
-      } else if (/\.(js|mjs|ts|sh)$/.test(e.name)) {
+      } else if (/\.(js|mjs|cjs|ts|sh)$/.test(e.name)) {
         // pre-commit 之類無副檔名者另行處理
         scanFile(p);
       } else if (e.name === 'pre-commit' || e.name === 'pre-push') {
