@@ -1,6 +1,6 @@
 # SKU 标题违规全景清单 (2026-09-19)
 
-校准日期: 2026-09-19 13:09 UTC
+校准日期: 2026-09-19 01:38 UTC
 
 > 口径: `scripts/guards/title-equiv.js` (半角当量, 目标 50-57) · 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3
 > **开放违规 0 条** / 300 槽 (0.0%) · 门禁阶段 READY_TO_ESCALATE_RED (存量 ≤10 升 red)
@@ -19,7 +19,5 @@
 
 | locale | 共享修饰段 | SKU 数 | 当量 |
 |---|---|---|---|
-| zh-hk | 智印港 | 21 | 51/50/55/52/53/54 |
-| en | Free Shipping $99+ | ZprintPro | 7 | 56/57/51/54/55 |
-| ja | ZprintPro | 6 | 54/52/50/51 |
-| en | Free US Ship | ZprintPro | 5 | 54/57/53 |
+| zh-hk | 智印港 | 27 | 52/56/50/51/54/53/55 |
+| ja | ZprintPro | 11 | 54/52/55/57/56/53/51 |

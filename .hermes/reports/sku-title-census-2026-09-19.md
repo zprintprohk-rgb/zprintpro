@@ -4,7 +4,7 @@
 > 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3 (K3 2026-09-19 裁决 目标区 **50-57 半角当量**, 58 为阻断线; 取代 v4 的 50-54 与 9/13 的 50-58)
 
 ## 数据来源 (§0.23)
-校准日期: 2026-09-19 13:09 UTC
+校准日期: 2026-09-19 01:38 UTC
 - `src/data/sku-seo-data.ts` — 活 title 主源 (SKU × 3 locale)
 - `src/data/products.ts` — slug → category_slug
 - `.hermes/gsc-2026-09-18/extract.json` — GSC 28d 页面级 (窗口 2026-08-19~09-15, FRESH)
@@ -18,21 +18,21 @@
  "equivSSoT": "scripts/guards/title-equiv.js",
  "TITLE_MIN": 50,
  "TITLE_MAX": 57,
- "skuCount": 100,
- "slotCount": 300,
- "slotsPresent": 300,
+ "skuCount": 92,
+ "slotCount": 276,
+ "slotsPresent": 276,
  "slotsMissing": 0,
  "byBand": {
-  "OK": 300
+  "OK": 276
  },
  "byBandV4": {
-  "LEGACY": 121,
-  "OK": 179
+  "OK": 164,
+  "LEGACY": 112
  },
  "recountMismatch": 0,
- "ruleDeltaOkOnlyUnderNewRule": 121,
- "withGscRows": 260,
- "issueSlots": 91
+ "ruleDeltaOkOnlyUnderNewRule": 112,
+ "withGscRows": 247,
+ "issueSlots": 76
 }
 ```
 
@@ -51,7 +51,6 @@
 | SKU slug | locale | 当量 | 问题 | title |
 |---|---|---|---|---|
 | removable-stickers | ja | 50 | 品牌不在末尾 | はがせるステッカー｜再剥離｜10枚〜¥46〜｜ZprintPro |
-| die-cut-stickers | zh-hk | 51 | 日文假名污染 | 異形模切貼紙 透明・模切・10起印・HK$0.58起 | 智印港 |
 | die-cut-stickers | ja | 54 | 品牌不在末尾 | 型抜きステッカー｜防水PVC 丸角｜10枚〜¥60〜｜ZprintPro |
 | security-stickers | ja | 56 | 品牌不在末尾 | セキュリティステッカー｜防水 PVC｜10枚〜¥51〜｜ZprintPro |
 | kraft-paper-bags | ja | 57 | 品牌不在末尾 | クラフト紙袋｜箔押し ラミネート｜100枚〜¥240〜｜ZprintPro |
@@ -59,12 +58,10 @@
 | small-bags | zh-hk | 56 | 品牌不在末尾 | 小號紙袋印刷｜多尺寸 白卡牛皮｜100個起 DHL 2-4天｜智印港 |
 | small-bags | ja | 56 | 品牌不在末尾 | 小判紙袋｜100個〜 即日発送｜白カード 多サイズ｜ZprintPro |
 | large-bags | ja | 54 | 品牌不在末尾 | 大判紙袋｜100枚〜 ¥450〜｜エコ素材 多サイズ｜ZprintPro |
-| a4-flyers | zh-hk | 50 | 日文假名污染 | A4 傳單印刷 圓角・覆膜・10起印・HK$0.35起 | 智印港 |
 | a4-flyers | ja | 50 | 品牌不在末尾 | A4 チラシ｜両面フルカラー｜10枚〜 ¥70〜｜ZprintPro |
 | a5-flyers | ja | 50 | 品牌不在末尾 | A5 チラシ｜両面フルカラー｜10枚〜 ¥50〜｜ZprintPro |
 | folded-leaflets | ja | 56 | 品牌不在末尾 | 折りたたみパンフレット｜三つ折り｜10枚〜 ¥110｜ZprintPro |
 | thick-paper-flyers | ja | 51 | 品牌不在末尾 | 厚紙チラシ｜両面フルカラー｜10枚〜 ¥95〜｜ZprintPro |
-| same-day-flyers | zh-hk | 50 | 日文假名污染 | 即日印刷 傳單 10張起 HK$1.30起 圓角・覆膜 | 智印港 |
 | same-day-flyers | ja | 54 | 品牌不在末尾 | 即日チラシ印刷｜¥25〜・10枚〜・無料デザイン｜ZprintPro |
 | eco-flyers | ja | 54 | 品牌不在末尾 | エコチラシ｜再生紙 フルカラー｜10枚〜 ¥75〜｜ZprintPro |
 | a2-posters | ja | 56 | 品牌不在末尾 | A2 ポスター印刷｜¥300〜・10枚〜・無料デザイン｜ZprintPro |
@@ -87,16 +84,10 @@
 | magnetic-calendars | ja | 56 | 品牌不在末尾 | マグネットカレンダー｜ノベルティ｜1冊〜 ¥50〜｜ZprintPro |
 | hardcover-menus | ja | 54 | 品牌不在末尾 | 高級メニュー｜上製本 箔押し｜10冊〜 ¥1288〜｜ZprintPro |
 | drink-menus | ja | 55 | 品牌不在末尾 | ドリンクメニュー｜10枚〜 ¥515〜｜防水 マット｜ZprintPro |
-| disposable-menus | ja | 55 | 品牌不在末尾 | 使い捨てメニュー｜100枚〜 ¥20〜｜防水 マット｜ZprintPro |
 | outdoor-vinyl-banners | zh-hk | 53 | 品牌不在末尾 | 戶外燈布噴繪｜防水防曬 PVC高清｜1件起 HK$12起｜智印港 |
-| outdoor-vinyl-banners | ja | 52 | 品牌不在末尾; 简体污染 | 屋外バナー｜高画質 PVC 耐候｜1個〜 ¥360〜｜ZprintPro |
-| roll-up-banners | ja | 54 | 简体污染 | ロールアップバナー | アルミスタンド 高画質 | ZprintPro |
 | adhesive-banners | zh-hk | 50 | 日文假名污染 | 背膠噴繪 透明・10起印・HK$10起・4小時打稿 | 智印港 |
 | adhesive-banners | ja | 53 | 品牌不在末尾 | 粘着バナー｜透明 PP 防水加工｜1枚〜 ¥300〜｜ZprintPro |
 | vehicle-wraps | ja | 55 | 品牌不在末尾 | カーラッピング｜フルラップ対応｜1台〜 ¥840〜｜ZprintPro |
-| mesh-banners | ja | 50 | 简体污染 | メッシュバナー | アルミスタンド 高画質 | ZprintPro |
-| catalog-printing | ja | 56 | 品牌不在末尾 | カタログ印刷｜箔押し ラミネート｜10枚〜¥644〜｜ZprintPro |
-| perfect-bound-books | ja | 55 | 品牌不在末尾 | 無線綴じ本｜中綴じ ラミネート｜10冊〜 ¥644〜｜ZprintPro |
 | hardcover-books | ja | 52 | 品牌不在末尾 | 上製本｜箔押し 見返し付き｜10冊〜 ¥1932〜｜ZprintPro |
 | spiral-notebooks | ja | 57 | 品牌不在末尾 | リングノート｜YO綴じ スパイラル｜10冊〜 ¥386〜｜ZprintPro |
 | business-envelopes | ja | 54 | 品牌不在末尾 | ビジネス封筒｜DL/C5/C4 窓付き｜100枚〜¥20〜｜ZprintPro |
@@ -113,8 +104,6 @@
 | gang-run-card-boxes | ja | 56 | 品牌不在末尾 | 合版ホワイトカードボックス｜型代不要｜500個〜｜ZprintPro |
 | fruit-food-label-stickers | zh-hk | 55 | 品牌不在末尾 | 水果及食品標籤印刷｜防水防油｜500張起 HK$0.22起｜智印港 |
 | fruit-food-label-stickers | ja | 55 | 品牌不在末尾 | フルーツ・食品ラベル印刷｜防水 耐油｜500枚〜｜ZprintPro |
-| acrylic-keychain | zh-hk | 52 | 日文假名污染 | 亞克力鑰匙扣 角色造型訂製 10起印・HK$2275起 | 智印港 |
-| acrylic-keychain | ja | 56 | 品牌不在末尾 | アクリルキーホルダー｜推し活 キャラ型｜10個〜｜ZprintPro |
 | postcard-set | ja | 54 | 品牌不在末尾 | ポストカードセット｜和紙風 4-8枚｜4セット〜｜ZprintPro |
 | eco-tote-bag | ja | 57 | 品牌不在末尾 | エコトートバッグ｜オーガニックコットン｜10個〜｜ZprintPro |
 | graduation-yearbook | ja | 53 | 品牌不在末尾 | 卒業記念アルバム印刷｜1冊〜¥1350〜｜中綴じ｜ZprintPro |
@@ -129,14 +118,10 @@
 | rounded-corner-greeting-cards | ja | 57 | 品牌不在末尾 | 角丸グリーティングカード｜R3mm丸角｜10枚〜 ¥20｜ZprintPro |
 | cafe-table-cards | ja | 57 | 品牌不在末尾 | カフェテーブルカード｜PVC防水 スタンド｜50枚〜｜ZprintPro |
 | drink-tokens | ja | 53 | 品牌不在末尾 | ドリンクトークン｜PVC防水 丸角仕様｜50枚〜｜ZprintPro |
-| escort-cards | ja | 52 | 品牌不在末尾 | エスコートカード｜箔押し スタンド｜50枚〜｜ZprintPro |
 | foil-wedding-invitations | ja | 51 | 品牌不在末尾 | 箔押し結婚式招待状｜金銀対応｜50セット〜｜ZprintPro |
-| name-tags-badges | ja | 50 | 品牌不在末尾 | 名札｜会議・イベント用 磁石対応｜50枚〜｜ZprintPro |
 | save-the-date-cards | ja | 56 | 品牌不在末尾 | Save the Date カード｜A6 箔押しUV｜50セット〜｜ZprintPro |
 | tuck-end-boxes | ja | 57 | 品牌不在末尾 | 差し込み式ボックス｜直挿し 飛行機挿し｜500個〜｜ZprintPro |
-| wedding-menu-cards | ja | 55 | 品牌不在末尾 | ウエディング メニュー｜A5 箔押し｜50セット〜｜ZprintPro |
 | wedding-place-cards | ja | 52 | 品牌不在末尾 | ウエディング席札｜箔押し スタンド｜50枚〜｜ZprintPro |
-| wedding-program-cards | ja | 50 | 品牌不在末尾 | 結婚式のしおり｜A5 折り加工｜50セット〜｜ZprintPro |
 | wedding-seating-charts | ja | 51 | 品牌不在末尾 | 披露宴座席表｜A1/A2サイズ 箔押し｜50枚〜｜ZprintPro |
 | wedding-suite-bundle | ja | 54 | 品牌不在末尾 | ウエディング フル セット｜6枚組｜50セット〜｜ZprintPro |
 | wedding-thank-you-cards | ja | 56 | 品牌不在末尾 | 結婚式サンキュカード｜A6 箔押しUV｜50セット〜｜ZprintPro |
@@ -145,13 +130,13 @@
 ## D. 复算结果 (§0.23.2 双方法)
 
 - methodA vs methodB 不一致: **0** 条 ✅ 两法一致
-- 槽位总数 300 / 有 title 300 / 缺 title 0
+- 槽位总数 276 / 有 title 276 / 缺 title 0
 
 ## E. 规则口径影响面 (v4 50-54 vs 现行 50-57)
 
-- v4 旧口径分布: {"LEGACY":121,"OK":179}
-- 现行口径分布: {"OK":300}
-- **仅因新口径 (50-57) 才判达标**的槽位: 121 条 (旧口径下属 55-57 由「满格禁加」变为「合规」; ≥58 仍为阻断线)
+- v4 旧口径分布: {"OK":164,"LEGACY":112}
+- 现行口径分布: {"OK":276}
+- **仅因新口径 (50-57) 才判达标**的槽位: 112 条 (旧口径下属 55-57 由「满格禁加」变为「合规」; ≥58 仍为阻断线)
 
 ## F. 优先级分层 (真实数据实测)
 
@@ -169,9 +154,9 @@
 
 | band | 当量 | locale | SKU | 展示28d | 位置 |
 |---|---|---|---|---|---|
-| OK | 51 | en | small-batch-stickers | 396 | 17.81 |
+| OK | 57 | en | small-batch-stickers | 396 | 17.81 |
 | OK | 55 | en | catalog-printing | 307 | 29.71 |
-| OK | 57 | en | exercise-books | 289 | 23.26 |
+| OK | 53 | en | exercise-books | 289 | 23.26 |
 | OK | 55 | en | saddle-stitch-booklets | 225 | 67.00 |
 | OK | 57 | en | foil-stickers | 136 | 39.51 |
 
@@ -179,10 +164,8 @@
 
 | locale | 共享修饰段 | SKU 数 | 当量 | 涉及 SKU |
 |---|---|---|---|---|
-| zh-hk | 智印港 | 21 | 51/50/55/52/53/54 | die-cut-stickers, a4-flyers, same-day-flyers, a2-posters, eco-red-packets, wall-calendars, mini-calendars, adhesive-banners, acrylic-keychain, graduation-yearbook, premium-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, corrugated-boxes, drink-tokens, escort-cards, foil-wedding-invitations, name-tags-badges, wedding-seating-charts, wedding-suite-bundle, white-card-boxes |
-| en | Free Shipping $99+ | ZprintPro | 7 | 56/57/51/54/55 | die-cut-stickers, security-stickers, kraft-paper-bags, thick-paper-flyers, magnetic-calendars, outdoor-vinyl-banners, can-badge |
-| ja | ZprintPro | 6 | 54/52/50/51 | outdoor-posters, cosmetic-boxes, saddle-stitch-booklets, kraft-paper-packaging-box, doujinshi-printing, corrugated-boxes |
-| en | Free US Ship | ZprintPro | 5 | 54/57/53 | transparent-stickers, fluorescent-stickers, a5-flyers, exercise-books, doujinshi-printing |
+| zh-hk | 智印港 | 27 | 52/56/50/51/54/53/55 | waterproof-stickers, transparent-stickers, removable-stickers, die-cut-stickers, security-stickers, fluorescent-stickers, a4-flyers, double-sided-flyers, folded-leaflets, same-day-flyers, a2-posters, food-boxes, eco-red-packets, wall-calendars, mini-calendars, adhesive-banners, saddle-stitch-booklets, graduation-yearbook, premium-greeting-cards, matte-greeting-cards, rounded-corner-greeting-cards, corrugated-boxes, drink-tokens, foil-wedding-invitations, wedding-seating-charts, wedding-suite-bundle, white-card-boxes |
+| ja | ZprintPro | 11 | 54/52/55/57/56/53/51 | outdoor-posters, cosmetic-boxes, food-boxes, custom-red-packets, mini-calendars, catalog-printing, saddle-stitch-booklets, perfect-bound-books, kraft-paper-packaging-box, doujinshi-printing, corrugated-boxes |
 
 ## H. 违规清单 ledger (黄灯期跟踪 · K3 2026-09-19 指令)
 

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21T22:43:04.490Z",
-  "generated_local": "2026-09-22 06:43",
+  "generated_at": "2026-09-22T22:43:14.248Z",
+  "generated_local": "2026-09-23 06:43",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
   "bus_file": ".hermes/logs/lane-runs.jsonl",
-  "bus_records": 4,
+  "bus_records": 6,
   "bus_records_test_excluded": 0,
   "window_days": 8,
   "state_machine": {
@@ -69,9 +69,9 @@
       "scheduler": {
         "Name": "ZP-daily-content",
         "State": "Ready",
-        "Last": "2026-09-21 21:17:01",
+        "Last": "2026-09-22 21:17:01",
         "Result": 1,
-        "Next": "2026-09-22 21:17:00"
+        "Next": "2026-09-23 21:17:00"
       },
       "lastReportFile": {
         "file": "2026-09-18-daily-content.md",
@@ -79,22 +79,22 @@
         "mtime": "2026-09-18T13:23:48.945Z"
       },
       "lastWrapperRun": {
-        "start": "2026-09-21 21:17:02",
+        "start": "2026-09-22 21:17:02",
         "end": "1",
         "dshExit": 1,
         "wrapperExit": 1,
         "guardBlocked": false,
         "commitOnly": true,
-        "runsTotal": 8,
+        "runsTotal": 9,
         "logFile": ".hermes/logs/cron-ZP-daily-content.log"
       },
       "lastRunRecord": {
-        "run_id": "ZP-daily-content-20260921T211812",
+        "run_id": "ZP-daily-content-20260922T212033",
         "lane": "ZP-daily-content",
         "trigger": "schtasks",
-        "fired_at": "2026-09-21 21:18:12",
-        "ended_at": "2026-09-21 21:18:12",
-        "idempotency_key": "315efd55a8454b97",
+        "fired_at": "2026-09-22 21:20:33",
+        "ended_at": "2026-09-22 21:20:33",
+        "idempotency_key": "7175eec9332268c7",
         "dsh_exit": null,
         "wrapper_exit": 0,
         "verdict": "OK",
@@ -106,29 +106,10 @@
         "report": "NONE",
         "files": [],
         "pushed": false,
-        "head": "0a2f2099",
+        "head": "20f99823",
         "source": "lane-git-commit.py"
       },
       "days": [
-        {
-          "day": "2026-09-15",
-          "expected": "21:17",
-          "status": "STALE",
-          "state": "quarantined",
-          "recovery_plan": {
-            "action": "retry",
-            "reason": "跑过但无当日报告 (空转/零产出)",
-            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
-            "retry_after_days": 0
-          },
-          "notes": [
-            "ran but no report file dated 2026-09-15"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
         {
           "day": "2026-09-16",
           "expected": "21:17",
@@ -246,6 +227,27 @@
         {
           "day": "2026-09-22",
           "expected": "21:17",
+          "status": "STALE",
+          "state": "quarantined",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "跑过但无当日报告 (空转/零产出)",
+            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "ran but no report file dated 2026-09-22"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": [
+            "7175eec9332268c7"
+          ]
+        },
+        {
+          "day": "2026-09-23",
+          "expected": "21:17",
           "status": "PENDING",
           "state": "pending",
           "recovery_plan": {
@@ -279,9 +281,9 @@
       "scheduler": {
         "Name": "ZP-gsc-feedback",
         "State": "Ready",
-        "Last": "2026-09-21 22:43:01",
+        "Last": "2026-09-22 22:43:01",
         "Result": 1,
-        "Next": "2026-09-22 22:43:00"
+        "Next": "2026-09-23 22:43:00"
       },
       "lastReportFile": {
         "file": "2026-09-18-gsc-feedback.md",
@@ -289,22 +291,22 @@
         "mtime": "2026-09-18T14:48:17.519Z"
       },
       "lastWrapperRun": {
-        "start": "2026-09-21 22:43:11",
+        "start": "2026-09-22 22:43:02",
         "end": "1",
         "dshExit": 1,
         "wrapperExit": 1,
         "guardBlocked": false,
         "commitOnly": false,
-        "runsTotal": 10,
+        "runsTotal": 11,
         "logFile": ".hermes/logs/cron-ZP-gsc-feedback.log"
       },
       "lastRunRecord": {
-        "run_id": "ZP-gsc-feedback-20260921T224354",
+        "run_id": "ZP-gsc-feedback-20260922T224500",
         "lane": "ZP-gsc-feedback",
         "trigger": "schtasks",
-        "fired_at": "2026-09-21 22:43:54",
-        "ended_at": "2026-09-21 22:43:54",
-        "idempotency_key": "1ba5887ae9df4112",
+        "fired_at": "2026-09-22 22:45:00",
+        "ended_at": "2026-09-22 22:45:00",
+        "idempotency_key": "953671dd8224d707",
         "dsh_exit": null,
         "wrapper_exit": 0,
         "verdict": "OK",
@@ -316,27 +318,10 @@
         "report": "NONE",
         "files": [],
         "pushed": true,
-        "head": "8cc2910f",
+        "head": "2fd51c98",
         "source": "lane-git-commit.py"
       },
       "days": [
-        {
-          "day": "2026-09-15",
-          "expected": "22:43",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-09-15-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": []
-        },
         {
           "day": "2026-09-16",
           "expected": "22:43",
@@ -451,6 +436,27 @@
         },
         {
           "day": "2026-09-22",
+          "expected": "22:43",
+          "status": "STALE",
+          "state": "quarantined",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "跑过但无当日报告 (空转/零产出)",
+            "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "ran but no report file dated 2026-09-22"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": [
+            "953671dd8224d707"
+          ]
+        },
+        {
+          "day": "2026-09-23",
           "expected": "22:43",
           "status": "PENDING",
           "state": "pending",
@@ -649,9 +655,9 @@
     "scheduler": {
       "Name": "ZP-cron-watchdog",
       "State": "Running",
-      "Last": "2026-09-22 06:43:01",
+      "Last": "2026-09-23 06:43:01",
       "Result": 267009,
-      "Next": "2026-09-23 06:43:00"
+      "Next": "2026-09-24 06:43:00"
     }
   },
   "legacy_tasks_pending_removal": [

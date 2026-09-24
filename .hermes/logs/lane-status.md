@@ -1,14 +1,14 @@
 # 定时任务状态 (lane-status)
 
-> 生成: 2026-09-22 06:43 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
-> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (4 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
+> 生成: 2026-09-23 06:43 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
+> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (6 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
 > SSoT: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`
 > **verdict: ATTENTION** — ZP-daily-content scheduler LastTaskResult=1 ; ZP-gsc-feedback scheduler LastTaskResult=1 ; ZP-blog-deepfix 2026-09-19 -> STALE ; ZP-monthly-matrix scheduler LastTaskResult=267011
 
 | lane | 触发 | 近 8 天逐日 verdict | state | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |
 |------|------|----------------------|-------|----------|-------------------------------|----------|
-| ZP-daily-content | DAILY 21:17 | 09-15:STALE 09-16:OK 09-17:STALE 09-18:OK 09-19:MISSING 09-20:STALE 09-21:STALE 09-22:PENDING | pending | `2026-09-18-daily-content.md` (2026-09-18) | 2026-09-21 21:17:01 / 1 / 2026-09-22 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
-| ZP-gsc-feedback | DAILY 22:43 | 09-15:OK 09-16:OK 09-17:STALE 09-18:OK 09-19:MISSING 09-20:MISSING 09-21:STALE 09-22:PENDING | pending | `2026-09-18-gsc-feedback.md` (2026-09-18) | 2026-09-21 22:43:01 / 1 / 2026-09-22 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
+| ZP-daily-content | DAILY 21:17 | 09-16:OK 09-17:STALE 09-18:OK 09-19:MISSING 09-20:STALE 09-21:STALE 09-22:STALE 09-23:PENDING | pending | `2026-09-18-daily-content.md` (2026-09-18) | 2026-09-22 21:17:01 / 1 / 2026-09-23 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
+| ZP-gsc-feedback | DAILY 22:43 | 09-16:OK 09-17:STALE 09-18:OK 09-19:MISSING 09-20:MISSING 09-21:STALE 09-22:STALE 09-23:PENDING | pending | `2026-09-18-gsc-feedback.md` (2026-09-18) | 2026-09-22 22:43:01 / 1 / 2026-09-23 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
 | ZP-weekly-meta | WEEKLY FRI 23:07 | 09-18:OK | completed | `2026-09-18-weekly-meta.md` (2026-09-18) | 2026-09-18 23:07:00 / 0 / 2026-09-25 23:07:00 | `.hermes/logs/cron-ZP-weekly-meta.log` |
 | ZP-blog-deepfix | WEEKLY SAT 05:37 | 09-19:STALE | quarantined | `2026-09-19-blog-deepfix.md` (2026-09-19) | 2026-09-19 05:37:00 / 0 / 2026-09-26 05:37:00 | `.hermes/logs/cron-ZP-blog-deepfix.log` |
 | ZP-monthly-matrix | MONTHLY 1 06:13 | — | pending | — | 1999-11-30 00:00:00 / 267011 / 2026-10-01 06:13:00 | `—` |
@@ -24,21 +24,21 @@
 
 ## 逐 lane 明细 (最近一次应触发日)
 
-### ZP-daily-content — 2026-09-22 `PENDING`
+### ZP-daily-content — 2026-09-23 `PENDING`
 
 - 期望触发: 21:17
-- run 记录: {"run_id":"ZP-daily-content-20260921T211812","lane":"ZP-daily-content","trigger":"schtasks","fired_at":"2026-09-21 21:18:12","ended_at":"2026-09-21 21:18:12","idempotency_key":"315efd55a8454b97","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":"NONE","files":[],"pushed":false,"head":"0a2f2099","source":"lane-git-commit.py"}
-- wrapper 最近一次: start=2026-09-21 21:17:02 end=1 dsh_exit=1 guardBlocked=false runsTotal=8
+- run 记录: {"run_id":"ZP-daily-content-20260922T212033","lane":"ZP-daily-content","trigger":"schtasks","fired_at":"2026-09-22 21:20:33","ended_at":"2026-09-22 21:20:33","idempotency_key":"7175eec9332268c7","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":"NONE","files":[],"pushed":false,"head":"20f99823","source":"lane-git-commit.py"}
+- wrapper 最近一次: start=2026-09-22 21:17:02 end=1 dsh_exit=1 guardBlocked=false runsTotal=9
 - 当天报告: **缺失**（空转/零产出的判据）
-- 调度器: LastRun=2026-09-21 21:17:01 Result=1 State=Ready
+- 调度器: LastRun=2026-09-22 21:17:01 Result=1 State=Ready
 
-### ZP-gsc-feedback — 2026-09-22 `PENDING`
+### ZP-gsc-feedback — 2026-09-23 `PENDING`
 
 - 期望触发: 22:43
-- run 记录: {"run_id":"ZP-gsc-feedback-20260921T224354","lane":"ZP-gsc-feedback","trigger":"schtasks","fired_at":"2026-09-21 22:43:54","ended_at":"2026-09-21 22:43:54","idempotency_key":"1ba5887ae9df4112","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":"NONE","files":[],"pushed":true,"head":"8cc2910f","source":"lane-git-commit.py"}
-- wrapper 最近一次: start=2026-09-21 22:43:11 end=1 dsh_exit=1 guardBlocked=false runsTotal=10
+- run 记录: {"run_id":"ZP-gsc-feedback-20260922T224500","lane":"ZP-gsc-feedback","trigger":"schtasks","fired_at":"2026-09-22 22:45:00","ended_at":"2026-09-22 22:45:00","idempotency_key":"953671dd8224d707","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":"NONE","files":[],"pushed":true,"head":"2fd51c98","source":"lane-git-commit.py"}
+- wrapper 最近一次: start=2026-09-22 22:43:02 end=1 dsh_exit=1 guardBlocked=false runsTotal=11
 - 当天报告: **缺失**（空转/零产出的判据）
-- 调度器: LastRun=2026-09-21 22:43:01 Result=1 State=Ready
+- 调度器: LastRun=2026-09-22 22:43:01 Result=1 State=Ready
 
 ### ZP-weekly-meta — 2026-09-18 `OK`
 

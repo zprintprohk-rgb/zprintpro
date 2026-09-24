@@ -1,12 +1,132 @@
-﻿{"t":"2026-09-22 21:18","type":"probe","errors":9,"avgMs":828,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/category/packaging/","status":200,"ms":6969,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
-{"t":"2026-09-22 21:18","url":"/en/category/packaging/","status":503,"ms":174,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/ja/category/packaging/","status":503,"ms":153,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/category/menus/","status":503,"ms":152,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/category/japan-doujin/","status":503,"ms":148,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/category/banners/","status":503,"ms":161,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/contact/","status":503,"ms":151,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/product/a2-posters/","status":503,"ms":160,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/zh-hk/","status":503,"ms":151,"bytes":0,"cf":"","ok":false,"err":"远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/api/search?q=sticker","status":0,"ms":138,"bytes":0,"cf":"","ok":false,"err":"308-follow failed: 远程服务器返回错误: (503) 服务器不可用。"}
-{"t":"2026-09-22 21:18","url":"/sitemap.xml","status":200,"ms":746,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}
+﻿{"t":"2026-09-23 01:28","type":"probe","errors":0,"avgMs":489,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 01:28","url":"/zh-hk/category/packaging/","status":200,"ms":1434,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/en/category/packaging/","status":200,"ms":500,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/ja/category/packaging/","status":200,"ms":571,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/category/menus/","status":200,"ms":441,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/category/japan-doujin/","status":200,"ms":395,"bytes":286270,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/category/banners/","status":200,"ms":357,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/contact/","status":200,"ms":292,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/product/a2-posters/","status":200,"ms":430,"bytes":237977,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/zh-hk/","status":200,"ms":339,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/api/search?q=sticker","status":200,"ms":165,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:28","url":"/sitemap.xml","status":200,"ms":457,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","type":"probe","errors":0,"avgMs":453,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/packaging/","status":200,"ms":1416,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/en/category/packaging/","status":200,"ms":410,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/ja/category/packaging/","status":200,"ms":489,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/menus/","status":200,"ms":388,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/japan-doujin/","status":200,"ms":385,"bytes":286270,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/banners/","status":200,"ms":345,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/contact/","status":200,"ms":248,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/product/a2-posters/","status":200,"ms":395,"bytes":237977,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/","status":200,"ms":333,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/api/search?q=sticker","status":200,"ms":148,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/sitemap.xml","status":200,"ms":427,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","type":"probe","errors":0,"avgMs":605,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/packaging/","status":200,"ms":2087,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/en/category/packaging/","status":200,"ms":480,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/ja/category/packaging/","status":200,"ms":556,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/menus/","status":200,"ms":404,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/japan-doujin/","status":200,"ms":514,"bytes":286270,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/category/banners/","status":200,"ms":562,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/contact/","status":200,"ms":414,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/product/a2-posters/","status":200,"ms":505,"bytes":237977,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/zh-hk/","status":200,"ms":426,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/api/search?q=sticker","status":200,"ms":157,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:29","url":"/sitemap.xml","status":200,"ms":555,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","type":"probe","errors":0,"avgMs":552,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 01:31","url":"/zh-hk/category/packaging/","status":200,"ms":1827,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/en/category/packaging/","status":200,"ms":550,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/ja/category/packaging/","status":200,"ms":561,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/category/menus/","status":200,"ms":456,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/category/japan-doujin/","status":200,"ms":516,"bytes":286270,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/category/banners/","status":200,"ms":332,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/contact/","status":200,"ms":376,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/product/a2-posters/","status":200,"ms":475,"bytes":237977,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/zh-hk/","status":200,"ms":378,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/api/search?q=sticker","status":200,"ms":146,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 01:31","url":"/sitemap.xml","status":200,"ms":457,"bytes":475224,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","type":"probe","errors":0,"avgMs":1000,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 03:29","url":"/zh-hk/category/packaging/","status":200,"ms":7039,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/en/category/packaging/","status":200,"ms":456,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/ja/category/packaging/","status":200,"ms":474,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/category/menus/","status":200,"ms":570,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/category/japan-doujin/","status":200,"ms":363,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/category/banners/","status":200,"ms":376,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/contact/","status":200,"ms":284,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/product/a2-posters/","status":200,"ms":440,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/zh-hk/","status":200,"ms":361,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/api/search?q=sticker","status":200,"ms":154,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 03:29","url":"/sitemap.xml","status":200,"ms":481,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","type":"probe","errors":0,"avgMs":999,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 05:29","url":"/zh-hk/category/packaging/","status":200,"ms":7065,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/en/category/packaging/","status":200,"ms":506,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/ja/category/packaging/","status":200,"ms":496,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/category/menus/","status":200,"ms":409,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/category/japan-doujin/","status":200,"ms":369,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/category/banners/","status":200,"ms":381,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/contact/","status":200,"ms":315,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/product/a2-posters/","status":200,"ms":415,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/zh-hk/","status":200,"ms":393,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/api/search?q=sticker","status":200,"ms":150,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 05:29","url":"/sitemap.xml","status":200,"ms":488,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","type":"probe","errors":0,"avgMs":993,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 07:30","url":"/zh-hk/category/packaging/","status":200,"ms":6937,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/en/category/packaging/","status":200,"ms":484,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/ja/category/packaging/","status":200,"ms":489,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/category/menus/","status":200,"ms":434,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/category/japan-doujin/","status":200,"ms":399,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/category/banners/","status":200,"ms":388,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/contact/","status":200,"ms":308,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/product/a2-posters/","status":200,"ms":392,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/zh-hk/","status":200,"ms":421,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/api/search?q=sticker","status":200,"ms":181,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 07:30","url":"/sitemap.xml","status":200,"ms":491,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","type":"probe","errors":0,"avgMs":1031,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 09:31","url":"/zh-hk/category/packaging/","status":200,"ms":7295,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/en/category/packaging/","status":200,"ms":480,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/ja/category/packaging/","status":200,"ms":498,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/category/menus/","status":200,"ms":394,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/category/japan-doujin/","status":200,"ms":388,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/category/banners/","status":200,"ms":376,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/contact/","status":200,"ms":342,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/product/a2-posters/","status":200,"ms":442,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/zh-hk/","status":200,"ms":400,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/api/search?q=sticker","status":200,"ms":148,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 09:31","url":"/sitemap.xml","status":200,"ms":578,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","type":"probe","errors":0,"avgMs":987,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 11:31","url":"/zh-hk/category/packaging/","status":200,"ms":7022,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/en/category/packaging/","status":200,"ms":475,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/ja/category/packaging/","status":200,"ms":473,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/category/menus/","status":200,"ms":386,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/category/japan-doujin/","status":200,"ms":418,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/category/banners/","status":200,"ms":396,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/contact/","status":200,"ms":328,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/product/a2-posters/","status":200,"ms":381,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/zh-hk/","status":200,"ms":356,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/api/search?q=sticker","status":200,"ms":153,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 11:31","url":"/sitemap.xml","status":200,"ms":464,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","type":"probe","errors":0,"avgMs":579,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 13:32","url":"/zh-hk/category/packaging/","status":200,"ms":2378,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/en/category/packaging/","status":200,"ms":458,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/ja/category/packaging/","status":200,"ms":545,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/category/menus/","status":200,"ms":416,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/category/japan-doujin/","status":200,"ms":416,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/category/banners/","status":200,"ms":334,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/contact/","status":200,"ms":289,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/product/a2-posters/","status":200,"ms":390,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/zh-hk/","status":200,"ms":410,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/api/search?q=sticker","status":200,"ms":138,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 13:32","url":"/sitemap.xml","status":200,"ms":591,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","type":"probe","errors":0,"avgMs":1033,"cacheHitPct":0,"cf110x":0,"note":"cf110x=Workers resource-limit error count. avgMs/errors=primary signal. cacheHitPct stays 0 under next-on-pages (all HTML served by Pages worker as DYNAMIC) - informational only, not a failure signal. Authoritative abatement check = CF daily email to Zprintprohk@gmail.com"}
+{"t":"2026-09-23 15:32","url":"/zh-hk/category/packaging/","status":200,"ms":7212,"bytes":416806,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/en/category/packaging/","status":200,"ms":535,"bytes":397448,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/ja/category/packaging/","status":200,"ms":489,"bytes":417696,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/category/menus/","status":200,"ms":456,"bytes":288121,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/category/japan-doujin/","status":200,"ms":397,"bytes":272282,"cf":"DYNAMIC","ok":false,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/category/banners/","status":200,"ms":401,"bytes":248153,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/contact/","status":200,"ms":297,"bytes":105082,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/product/a2-posters/","status":200,"ms":460,"bytes":237949,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/zh-hk/","status":200,"ms":435,"bytes":229704,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/api/search?q=sticker","status":200,"ms":155,"bytes":4067,"cf":"DYNAMIC","ok":true,"err":""}
+{"t":"2026-09-23 15:32","url":"/sitemap.xml","status":200,"ms":527,"bytes":473424,"cf":"DYNAMIC","ok":true,"err":""}
