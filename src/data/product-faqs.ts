@@ -799,9 +799,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '即日チラシのサイズと用紙は？',
       },
       answer: {
-        'zh-hk': 'A4/A5/A6/DL 尺寸齊全，157g 銅版紙為主，可加覆膜或圓角。提交檔案後 1 小時內免費數碼打稿。',
-        en: 'A4/A5/A6/DL sizes on 157gsm gloss with optional lamination and rounded corners. Free digital proof within 1 hour of file submission.',
-        ja: 'A4/A5/A6/DL対応、157gコート紙、ラミネート・角丸加工可。入稿後1時間以内に無料デジタル校正。',
+        'zh-hk': 'A4/A5/A6/DL 尺寸齊全，157g 銅版紙為主，可加覆膜（啞膜／光膜）。提交檔案後 1 小時內免費數碼打稿。',
+        en: 'A4/A5/A6/DL sizes on 157gsm gloss with optional matte or gloss lamination. Free digital proof within 1 hour of file submission.',
+        ja: 'A4/A5/A6/DL対応、157gコート紙、ラミネート加工可。入稿後1時間以内に無料デジタル校正。',
       },
     },
   ],
