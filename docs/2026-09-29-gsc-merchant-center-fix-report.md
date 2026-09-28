@@ -119,8 +119,11 @@ Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 
 - 本次改动满足 §0.25.9 攒批阈值（≥1 src 行为修复）；上次 push = 2026-09-28 07:16（c5cfdf9b），
   30 min 硬下限早已满足。
-- **commit 1cd7b221（已 push 生产 c5cfdf9b..1cd7b221）**：真实评价机制 + schema/feed 修复 + 假评价死代码清除。
-- **commit d6826168（本地，待 30min 窗口推）**：feed channel title/description 品牌按 locale。
+- **commit 1cd7b221（已 push 生产 c5cfdf9b..1cd7b221，线上验证全过）**：
+  真实评价机制 + schema/feed 修复 + 假评价死代码清除。
+- **commit 批（d6826168 + 6c7be1dc + bad3d3e0，本地攒批待推）**：
+  feed channel title/description 品牌按 locale · 报告补录 · middleware rewrite 回退
+  （CF 线上实证无效，见 §1.4）。
 - 仓库另有**非本会话**的既有脏文件（sitemap*.xml / AGENTS.md / .hermes 日志 /
   zprintpro-en-us-images 删除项），按纪律不代持不代提交，本次只提交上述 6 个文件。
 
