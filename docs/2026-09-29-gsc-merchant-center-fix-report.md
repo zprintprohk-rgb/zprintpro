@@ -87,7 +87,7 @@ Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 | `src/data/product-reviews.ts` | **新增**：真实评价唯一数据源（当前 0 条，含接入规则与格式示例）；`getProductReviews` / `getProductAggregateRating`（按 locale 独立聚合） |
 | `src/lib/seo.ts` | `generateProductJsonLd`：① image 绝对 URL ② brand/seller 按 locale（getBrandName）③ review/aggregateRating 改为真实数据驱动（`reviews` 参数，无则零输出）④ 删除硬编码 Sarah L./David W. 假评价块 ⑤ **删除 `generateProductReviewsJsonLd` 假数据死代码** |
 | `src/app/[locale]/product/[slug]/page.tsx` | 移除假函数导入；接线 `getProductReviews`/`getProductAggregateRating` → 传入 `rating` + `reviews`（当前无真实评价 → 输出与修复前逐字节一致，零回归） |
-| `src/app/api/merchant-feed/[locale]/route.ts` | brand 按 locale；`identifier_exists=false`；真实评价存在时输出 `aggregate_rating`/`review_count`/`rating_range`（当前 0 条 → 不输出）；doc 注释更新 |
+| `src/app/api/merchant-feed/[locale]/route.ts` | brand 按 locale；`identifier_exists=false`；真实评价存在时输出 `aggregate_rating`/`review_count`/`rating_range`（当前 0 条 → 不输出）；channel title/description 品牌按 locale（消除同一 XML 内品牌词与异区品牌同现）；doc 注释更新 |
 | `src/middleware.ts` | `/api/merchant-feed/*` 无尾斜杠内部 rewrite（消除 308），matcher 增补 |
 
 **验证**：tsc 54=54 基线（0 新增）· encoding 5/5 UTF-8 LF · brand-mentions A 类 0 · gsc-leak 0 · next build PASS。
@@ -116,8 +116,10 @@ Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 
 - 本次改动满足 §0.25.9 攒批阈值（≥1 src 行为修复）；上次 push = 2026-09-28 07:16（c5cfdf9b），
   30 min 硬下限早已满足。
+- **commit 1cd7b221（已 push 生产 c5cfdf9b..1cd7b221）**：真实评价机制 + schema/feed 修复 + 假评价死代码清除。
+- **commit d6826168（本地，待 30min 窗口推）**：feed channel title/description 品牌按 locale。
 - 仓库另有**非本会话**的既有脏文件（sitemap*.xml / AGENTS.md / .hermes 日志 /
-  zprintpro-en-us-images 删除项），按纪律不代持不代提交，本次只提交上述 5 个文件。
+  zprintpro-en-us-images 删除项），按纪律不代持不代提交，本次只提交上述 6 个文件。
 
 ---
 
