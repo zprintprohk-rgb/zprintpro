@@ -24,8 +24,6 @@ import {
   generateProductImageJsonLd,
   generateBreadcrumbJsonLd,
   generateBusinessJsonLd,
-
-  generateProductReviewsJsonLd,
   Locale 
 } from '@/lib/seo';
 import {
@@ -46,6 +44,10 @@ import { getProductSeo } from '@/data/product-seo';
 import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap, skuMoneyFAQs } from '@/data/product-faqs';
+// 2026-09-29 GSC Rich Results「未填写 aggregateRating/review」449 项修复:
+// 真实评价唯一来源 (K3 8/4 P0-2 裁决禁编造) — 当前 0 条 → rating/reviews 为 undefined,
+// generateProductJsonLd 自动跳过 aggregateRating/review (输出与修复前一致, 零回归)。
+import { getProductAggregateRating, getProductReviews } from '@/data/product-reviews';
 // 2026-09-19 K3 裁决 1: 1-B 展示層改接 v9/ProductPageV9.tsx (線上實際渲染路徑);
 //   本檔原 import { getDisplayMinOrder, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isDigitalLineBook }
 //   已隨死代碼一併移除 (本檔非 PDP 正文渲染組件, 保留只會形成兩處並存的維護困惑)
@@ -192,6 +194,8 @@ export default function ProductPage({
   // 2026-07-28 P1 v2.1: 删 productRating 假数据 (K3 v2 §3.3 约束 4: 无真实评价数据, 删 aggregateRating 禁止编造)
   // productRating 之前由 weight_score 算伪随机 ratingValue (4.2-4.9) + reviewCount (15-64), 违反 v2 §3.3
   // generateProductJsonLd 在 rating 未传时会自动跳过 aggregateRating 字段, 符合 Schema.org 真实数据原则
+  // 2026-09-29 GSC「未填写 aggregateRating/review」修复: 接入 src/data/product-reviews.ts 真实评价模块,
+  //   有真实评价即自动输出 aggregateRating + review (含 merchant-feed 同步), 无评价维持现状不编造。
   // 2026-06-08 修复: og:image fallback chain — 优先用 locale 专属图, 再用通用图, 最后才 placeholder
   // 之前: 直接 fallback 到 placeholder.jpg (0 字节, GSC 显示通用图标)
   const ogImage = getProductMainImage(product, locale);
@@ -231,6 +235,11 @@ export default function ProductPage({
   } else {
     offerData = null;
   }
+  // 2026-09-29 GSC「未填写 aggregateRating/review」449 项修复: 真实评价模块接线 —
+  // 当前 0 条真实评价 → productRating=null, productReviews=[] → schema 维持不输出 (零回归)。
+  // K3 提供 WhatsApp/邮件真实反馈或接入 Google Customer Reviews 后自动生效。
+  const productRating = getProductAggregateRating(product.slug, locale as 'zh-hk' | 'en' | 'ja');
+  const productReviews = getProductReviews(product.slug, locale as 'zh-hk' | 'en' | 'ja');
   const productJsonLd = generateProductJsonLd(
     productTitle,
     productDescription,
@@ -238,11 +247,12 @@ export default function ProductPage({
     product.slug,
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
-    undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳過 aggregateRating (K3 v2 §3.3 約束 4)
+    productRating ?? undefined, // 2026-07-28 P1 v2.1: 无真实评价不传 rating → 跳過 aggregateRating (K3 v2 §3.3 約束 4)
     locale,
     offerData,
     // G1 (2026-09-21): GSIM 采购意图层真值 (minQuantity 99/99 覆盖实测; products.ts 为唯一数字来源)
-    { minQuantity: product.minQuantity ?? null, categorySlug: product.category_slug ?? null }
+    { minQuantity: product.minQuantity ?? null, categorySlug: product.category_slug ?? null },
+    productReviews.length > 0 ? productReviews : undefined
   );
   // ImageObject Schema（獨立節點，不影響 Product ranking）
   const productImageJsonLd = generateProductImageJsonLd(
@@ -420,7 +430,7 @@ export default function ProductPage({
       {/* 2026-07-28 P1 v2.1 fix: 删 reviews schema (K3 v2 §3.3 约束 4)
           之前 generateProductReviewsJsonLd 含假 aggregateRating + 假 review (Sarah L./David W. 编造姓名 + 假 review body),
           违反 v2 §3.3 "无真实评价数据, 不可编造" 铁律。
-          generateProductReviewsJsonLd 函数保留, 后续如有真实评价数据 (Trustpilot/Google Reviews API 接入) 再启用。 */}
+          generateProductReviewsJsonLd 函数已删除 (2026-09-29); 真实评价唯一入口 = src/data/product-reviews.ts, 经 generateProductJsonLd(reviews) 自动输出。 */}
       
       {isV9Pdp(locale) ? (
         <ProductPageV9

@@ -1185,6 +1185,15 @@ export interface ProductRatingInput {
   reviewCount?: number;
 }
 
+/** 真实客户评价 (仅来自 src/data/product-reviews.ts, 禁止编造, 见 §0.23) */
+export interface ProductReviewInput {
+  author: string;
+  date: string; // ISO yyyy-mm-dd
+  rating: number; // 1-5
+  title?: string;
+  body: string;
+}
+
 export function generateProductJsonLd(
   name: string,
   description: string,
@@ -1200,8 +1209,18 @@ export function generateProductJsonLd(
   // GSIM 采购意图层 — ProcureAction + sourcingIntentKeywords + eligibleQuantity + businessFunction。
   // 真值铁律: minQuantity 引 products.ts (覆盖率 99/99 实测); unitText 按 category 映射 (unitCode=H87 中性件);
   // 「FOB」不写 (K3 21:23 开工确认按执行层推荐) — 贸易条款承诺无活文案支撑, 改写 DHL 事实层。
-  procurement?: { minQuantity: number | null; categorySlug?: string | null } | null
+  procurement?: { minQuantity: number | null; categorySlug?: string | null } | null,
+  // 2026-09-29 GSC Rich Results「未填写 aggregateRating/review」449 项修复:
+  // review/aggregateRating 唯一合法来源 = src/data/product-reviews.ts 真实评价 (K3 8/4 P0-2 裁决禁编造)。
+  // 无真实评价时调用方传 undefined → 不输出 review/aggregateRating (与修复前逐字节一致, 零回归)。
+  reviews?: ProductReviewInput[]
 ) {
+  // 2026-09-29 修复: Product.image 必须是绝对 URL (GSC Rich Results 对相对路径容忍但校验不完整;
+  //   ogImage 来自 getProductMainImage 为站内相对路径, 这里统一补全)
+  const absImage = image.startsWith('http') ? image : `${siteConfig.url}${image}`;
+  // 2026-09-29 修复: schema brand/seller 按 locale 取品牌 (单品牌分层 K3 9/1 02:54) —
+  // 修复前 en/ja 页误挂 siteConfig.name 默认品牌词, 现统一走 getBrandName(locale)
+  const brandName = getBrandName(locale as Locale);
   // category → unitText 映射 (与现标题数字钩口径一致; unitCode H87 = UN/CEFACT piece, 中性不编造)
   const cat = procurement?.categorySlug || '';
   const unitText = (() => {
@@ -1223,13 +1242,13 @@ export function generateProductJsonLd(
     '@type': 'Product',
     name,
     description,
-    image,
+    image: absImage,
     // 2026-09-15 GMC「缺少颜色」修复: 定制印刷商品统一声明全彩定制印刷 (GMC 对定制商品接受 color 声明)
     color: locale === 'zh-hk' ? '全彩定制印刷 (CMYK)' : locale === 'ja' ? 'フルカラーカスタム印刷 (CMYK)' : 'Custom full-color printing (CMYK)',
     url: `${siteConfig.url}/${locale}/product/${slug}/`,
     brand: {
       '@type': 'Brand',
-      name: siteConfig.name,
+      name: brandName,
       url: siteConfig.url,
       logo: siteConfig.logo,
     },
@@ -1238,7 +1257,7 @@ export function generateProductJsonLd(
       '@type': 'ProcureAction',
       name: locale === 'zh-hk' ? '即時報價' : locale === 'ja' ? '見積もり依頼' : 'Request a quote',
       target: quoteUrl,
-      seller: { '@type': 'Organization', name: siteConfig.name },
+      seller: { '@type': 'Organization', name: brandName },
     },
     // G1: sourcingIntentKeywords — 采购意图字段 (指令明确要求; 每段均可指回活文案真值)
     ...(sourcingKeywords ? { sourcingIntentKeywords: sourcingKeywords } : {}),
@@ -1285,7 +1304,7 @@ export function generateProductJsonLd(
           ],
       seller: {
         '@type': 'Organization',
-        name: siteConfig.name,
+        name: brandName,
       },
       shippingDetails: locale === 'zh-hk'
         ? {
@@ -1371,28 +1390,17 @@ export function generateProductJsonLd(
       worstRating: '1',
     };
 
-    // Add review array (reviewCount must be >= review array length)
-    const reviewCount = rating.reviewCount ?? 0;
-    if (reviewCount >= 2) {
-      const reviewsZh = [
-        { author: 'Sarah L.', date: '2026-04-15', body: '磁吸翻蓋禮盒品質極佳，燙金工藝精準，交貨迅速。', rating: '5' },
-        { author: 'David W.', date: '2026-03-22', body: '電子產品包裝的專業解決方案，硬盒結構在國際運輸中完美保護產品。', rating: '5' },
-      ];
-      const reviewsEn = [
-        { author: 'Sarah L.', date: '2026-04-15', body: 'Excellent quality magnetic closure boxes for our luxury skincare line. Fast turnaround and precise gold foil stamping.', rating: '5' },
-        { author: 'David W.', date: '2026-03-22', body: 'Professional packaging solution for electronics. The rigid box structure perfectly protects our products during international shipping.', rating: '5' },
-      ];
-      const reviewsJa = [
-        { author: 'Sarah L.', date: '2026-04-15', body: 'マグネット蓋付きギフトボックスの品質が素晴らしく、金箔押しが正確で納品も迅速です。', rating: '5' },
-        { author: 'David W.', date: '2026-03-22', body: '電子機器の梱包に最適なソリューションです。硬質ボックス構造が国際輸送中も製品を完璧に保護します。', rating: '5' },
-      ];
-      const reviews = locale === 'zh-hk' ? reviewsZh : locale === 'ja' ? reviewsJa : reviewsEn;
-      schema.review = reviews.map((r) => ({
+    // 2026-09-29 GSC「未填写 review」449 项修复: review 数组只来自真实评价数据
+    // (src/data/product-reviews.ts)。删除原硬编码假评价 (Sarah L. / David W. 编造姓名 + 假 body,
+    // 违反 K3 8/4 P0-2 裁决 §0.23 数据诚信)。无真实评价 → 不输出 review, 与修复前输出一致。
+    if (reviews && reviews.length > 0) {
+      schema.review = reviews.slice(0, 10).map((r) => ({
         '@type': 'Review',
         author: { '@type': 'Person', name: r.author },
         datePublished: r.date,
+        ...(r.title ? { name: r.title } : {}),
         reviewBody: r.body,
-        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: '5' },
+        reviewRating: { '@type': 'Rating', ratingValue: String(r.rating), bestRating: '5' },
       }));
     }
   }
@@ -1537,92 +1545,9 @@ export function generateProductImageJsonLd(
   } as unknown as SchemaOrgData;
 }
 
-// 2026-08-04 K3 P0-2: @deprecated - 假数据 aggregateRating/review 默认值违反 v2 §3.3 约束 4
-// 8/4 14:30 删 schema-extensions.ts 假 aggregateRating 块 + case-studies 假 Review 块
-// 真实 Trustpilot/Google Reviews API 接入前不要调用此函数
-// 当前所有 .tsx 调用方已停用 (K3 v2.1 7/28 拍板)
-export function generateProductReviewsJsonLd(
-  productName: string,
-  slug: string,
-  locale: Locale,
-  rating: number = 4.8,
-  reviewCount: number = 27
-) {
-  const authors: Record<Locale, string[]> = {
-    'zh-hk': ['張先生', '李小姐', '陳先生', '王女士', '劉小姐', '黃先生', '趙小姐', '周先生'],
-    'en': ['Mr. Cheung', 'Ms. Lee', 'Mr. Chan', 'Ms. Wong', 'Ms. Lau', 'Mr. Wong', 'Ms. Chiu', 'Mr. Chow'],
-    'ja': ['張さん', '李さん', '陳さん', '王さん', '劉さん', '黄さん', '趙さん', '周さん'],
-  };
-  
-  const contents: Record<Locale, string[]> = {
-    'zh-hk': [
-      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印港！`,
-      `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
-      `我們公司已經第三次在智印港訂購${productName}了，每次都很滿意，價格也很合理。`,
-      `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
-    ],
-    'en': [
-      `Very satisfied with the quality of ${productName}. Clear printing and on-time delivery. Highly recommend ZprintPro!`,
-      `Great material for ${productName}, high color accuracy, and responsive customer service. Will order again.`,
-      `This is our third time ordering ${productName} from ZprintPro. Always satisfied with reasonable prices.`,
-      `Excellent craftsmanship on ${productName}. Secure packaging, no damage. Fast shipping too.`,
-    ],
-    'ja': [
-      `${productName}の品質に大満足です。印刷が鮮明で、納期も守られています。ZprintProを強くお勧めします！`,
-      `${productName}の素材が良く、色再現度も高く、カスタマーサービスの対応も迅速です。また注文したいです。`,
-      `弊社はZprintProで${productName}を3回目の注文です。毎回満足しており、価格も合理的です。`,
-      `${productName}の仕上がりが丁寧で、梱包もしっかりしていて破損なし。物流も速いです。`,
-    ],
-  };
-  
-  const names = authors[locale];
-  const texts = contents[locale];
-  
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: productName,
-    url: `${siteConfig.url}/${locale}/product/${slug}/`,
-    // 2026-06-24 修复: reviewCount 必须是 Integer, 不能 .toString() (同上 generateProductJsonLd 的 bug)
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: rating.toString(),
-      reviewCount: reviewCount,
-      bestRating: '5',
-      worstRating: '1',
-    },
-    review: [
-      {
-        '@type': 'Review',
-        author: {
-          '@type': 'Person',
-          name: names[0],
-        },
-        datePublished: '2026-04-15',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5',
-          bestRating: '5',
-        },
-        reviewBody: texts[0],
-      },
-      {
-        '@type': 'Review',
-        author: {
-          '@type': 'Person',
-          name: names[1],
-        },
-        datePublished: '2026-03-22',
-        reviewRating: {
-          '@type': 'Rating',
-          ratingValue: '5',
-          bestRating: '5',
-        },
-        reviewBody: texts[1],
-      },
-    ],
-  };
-}
+// 2026-09-29 GSC Rich Results 修复批: generateProductReviewsJsonLd 已删除 —
+// 原函数含编造 aggregateRating/review (默认 4.8/27 + 張先生/李小姐 等假作者), 违反 K3 8/4 P0-2 裁决
+// (§0.23 数据诚信红线)。真实评价唯一来源 = src/data/product-reviews.ts, 经 generateProductJsonLd 输出。
 
 // 生成 BreadcrumbList 結構化數據
 export function generateBreadcrumbJsonLd(items: { name: string; url: string }[]) {

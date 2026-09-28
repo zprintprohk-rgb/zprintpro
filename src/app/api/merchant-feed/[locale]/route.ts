@@ -2,15 +2,17 @@
  * Google Merchant Center 商品 Feed API
  * 生成 Google Shopping XML feed，供 Merchant Center 定时抓取
  *
- * 端点: GET /api/merchant-feed/[locale]
+ * 端点: GET /api/merchant-feed/[locale]  (带尾斜杠与不带尾斜杠均可 —
+ *       2026-09-29 起 middleware 对无尾斜杠请求做内部 rewrite, 直接返回 200, 不再 308)
  * locale: zh-hk | en | ja
  *
  * 用法: 在 Google Merchant Center → Feed → Scheduled fetch
- *       设置 URL 为 https://zprintpro.com/api/merchant-feed/en
+ *       设置 URL 为 https://zprintpro.com/api/merchant-feed/en/
  *       (根据 target country 选择对应 locale)
  */
 
 import { products } from '@/data/products';
+import { getProductAggregateRating } from '@/data/product-reviews';
 import { NextRequest } from 'next/server';
 
 export const runtime = 'edge';
@@ -22,6 +24,14 @@ const localeConfig = {
   en: { currency: 'USD', country: 'US', lang: 'en_US' },
   ja: { currency: 'JPY', country: 'JP', lang: 'ja_JP' },
 } as const;
+
+// 2026-09-29: feed brand 按 locale 取品牌 (单品牌分层 K3 9/1 02:54) —
+// 修复前 3 locale 统一一个品牌词, 与页面 schema 品牌不一致
+const brandByLocale: Record<keyof typeof localeConfig, string> = {
+  'zh-hk': '智印港',
+  en: 'ZprintPro',
+  ja: 'ジープリント',
+};
 
 type Locale = keyof typeof localeConfig;
 
@@ -91,9 +101,11 @@ function buildFeed(locale: Locale): string {
       <g:price>${Number(product.basePrice).toFixed(2)} ${currency}</g:price>
       <g:sale_price>${Number(product.basePrice).toFixed(2)} ${currency}</g:sale_price>
       <g:availability>in_stock</g:availability>
-      <g:brand>ZprintPro</g:brand>
+      <g:brand>${xmlEscape(brandByLocale[locale])}</g:brand>
       <g:condition>new</g:condition>
       <g:mpn>${xmlEscape(product.sku_code)}</g:mpn>
+      <!-- 2026-09-29: 定制印刷商品无 GTIN → identifier_exists=false (避免 GMC「缺少 GTIN」警告) -->
+      <g:identifier_exists>false</g:identifier_exists>
       <g:google_product_category>3370</g:google_product_category>
       <g:product_type>${xmlEscape(product.category)}</g:product_type>
       <g:shipping>
@@ -106,6 +118,16 @@ function buildFeed(locale: Locale): string {
 
       if (color) {
         item += `\n      <g:color>${xmlEscape(color)}</g:color>`;
+      }
+
+      // 2026-09-29 GSC「未填写 aggregateRating/review」449 项修复 (feed 层):
+      // 与 PDP JSON-LD 同源 (src/data/product-reviews.ts 真实评价)。当前 0 条 → 不输出,
+      // 填入真实评价后 feed 自动携带评分属性 (Merchant Center product ratings 规范)。
+      const agg = getProductAggregateRating(product.slug, locale);
+      if (agg) {
+        item += `\n      <g:aggregate_rating>${agg.ratingValue}</g:aggregate_rating>`;
+        item += `\n      <g:review_count>${agg.reviewCount}</g:review_count>`;
+        item += `\n      <g:rating_range>1-5</g:rating_range>`;
       }
 
       item += `\n    </item>`;
