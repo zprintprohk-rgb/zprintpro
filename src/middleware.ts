@@ -167,16 +167,6 @@ export async function middleware(request: NextRequest) {
   const { pathname } = url;
   const isFile = /\.\w+$/.test(pathname);
 
-  // 优先级 2.4：merchant-feed 无尾斜杠 → 内部 rewrite（不 308）
-  // 2026-09-29 GSC/Merchant Center 修复: trailingSlash:true 会让
-  // /api/merchant-feed/en → 308 /api/merchant-feed/en/, 为避免 Google 定时抓取
-  // 在重定向上出任何不确定性, 直接内部 rewrite 到带斜杠路由 (响应 200, URL 不变)。
-  // 带斜杠请求正常放行; 非 feed 的 /api 路径仍走下方 skip。
-  if (pathname.startsWith('/api/merchant-feed') && !pathname.endsWith('/')) {
-    url.pathname += '/';
-    return NextResponse.rewrite(url);
-  }
-
   // 跳过静态文件/API路径的尾部斜杠处理
   if (
     pathname.startsWith('/_next') ||
@@ -293,7 +283,5 @@ async function thisResponseWithAbHeaders(request: NextRequest) {
 export const config = {
   matcher: [
     '/((?!_next|api|images|favicon.ico|robots.txt|sitemap|manifest.json).*)',
-    // 2026-09-29: merchant-feed 无尾斜杠请求需进 middleware 做内部 rewrite (消除 308)
-    '/api/merchant-feed/:path*',
   ],
 };

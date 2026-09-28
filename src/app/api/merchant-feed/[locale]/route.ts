@@ -2,8 +2,9 @@
  * Google Merchant Center 商品 Feed API
  * 生成 Google Shopping XML feed，供 Merchant Center 定时抓取
  *
- * 端点: GET /api/merchant-feed/[locale]  (带尾斜杠与不带尾斜杠均可 —
- *       2026-09-29 起 middleware 对无尾斜杠请求做内部 rewrite, 直接返回 200, 不再 308)
+ * 端点: GET /api/merchant-feed/[locale]/  (必带尾斜杠)
+ *   ⚠️ 无尾斜杠版本 (trailingSlash:true + next-on-pages 适配层) 会 308 到带斜杠版本 —
+ *      Google 定时抓取会跟随 308, 但建议在 Merchant Center 配置带尾斜杠的 URL 以直达 200。
  * locale: zh-hk | en | ja
  *
  * 用法: 在 Google Merchant Center → Feed → Scheduled fetch

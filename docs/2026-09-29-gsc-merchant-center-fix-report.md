@@ -13,7 +13,7 @@
 | 2 | 未填写字段 "aggregateRating" | GSC Rich Results 增强区 | 449 | ⚠️ Enhancement 提示（非错误） |
 | 3 | 未填写字段 "review" | GSC Rich Results 增强区 | 449 | ⚠️ Enhancement 提示（非错误） |
 | 4 | Merchant Center 未获批准商品 ×4 | Merchant Center 商品列表 | 4 | 🔴 已下架 SKU 的残留条目 |
-| 5 | （附带发现）Merchant Center 定时抓取 URL 无尾斜杠 → 308 | 线上探针 | — | 🔴 潜在抓取不确定性 |
+| 5 | （附带发现）Merchant Center 定时抓取 URL 无尾斜杠 → 308 | 线上探针 | — | ⚠️ 适配层行为, 需在 MC 配置带尾斜杠 URL |
 
 ---
 
@@ -62,12 +62,15 @@ Merchant Center feed 双通道自动消费——**填入真实评价后自动输
 **结论**：这 4 条不是「待批准的新品」，而是已下架商品的过期条目。**正确解法 = 让 feed 抓取成功，
 Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 
-### 1.4 问题 5（feed 308）— 抓取链路的隐藏风险
+### 1.4 问题 5（feed 无尾斜杠 308）— 适配层行为，MC 配置带尾斜杠 URL 即可
 
-线上实测 `https://zprintpro.com/api/merchant-feed/en`（无尾斜杠，route 文件注释里写的正是这个 URL）
-返回 **308 → /api/merchant-feed/en/**。虽然 Google 定时抓取通常能跟随重定向，但 308 引入了不确定性；
-且该 route 是 `trailingSlash: true` 全局规范化产物。**已修复**：middleware 对
-`/api/merchant-feed/*` 无尾斜杠请求做**内部 rewrite**（响应 200、URL 不变），带尾斜杠 URL 行为不变。
+线上实测 `https://zprintpro.com/api/merchant-feed/en`（无尾斜杠，route 文件注释旧版写的正是这个 URL）
+返回 **308 → /api/merchant-feed/en/**。带尾斜杠版本直接 200（XML，91 items）。
+曾尝试 middleware 内部 rewrite 消除 308：本地 `next start` 验证有效（200），但**线上 next-on-pages
+适配层在 middleware 之前完成尾斜杠规范化**（实证：线上 middleware 已运行——响应含 x-zp-ab-variant
+标记，但无尾斜杠请求仍在 middleware 之前被 308），故 rewrite 方案在 CF Pages 无效，已回退。
+**结论**：Google 定时抓取能跟随 308（HTTP 标准行为），但为消除一切不确定性，MC 抓取 URL 应使用
+**带尾斜杠版本**（直达 200）。
 
 ### 1.5 附带修复（schema 质量）
 
@@ -88,7 +91,7 @@ Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 | `src/lib/seo.ts` | `generateProductJsonLd`：① image 绝对 URL ② brand/seller 按 locale（getBrandName）③ review/aggregateRating 改为真实数据驱动（`reviews` 参数，无则零输出）④ 删除硬编码 Sarah L./David W. 假评价块 ⑤ **删除 `generateProductReviewsJsonLd` 假数据死代码** |
 | `src/app/[locale]/product/[slug]/page.tsx` | 移除假函数导入；接线 `getProductReviews`/`getProductAggregateRating` → 传入 `rating` + `reviews`（当前无真实评价 → 输出与修复前逐字节一致，零回归） |
 | `src/app/api/merchant-feed/[locale]/route.ts` | brand 按 locale；`identifier_exists=false`；真实评价存在时输出 `aggregate_rating`/`review_count`/`rating_range`（当前 0 条 → 不输出）；channel title/description 品牌按 locale（消除同一 XML 内品牌词与异区品牌同现）；doc 注释更新 |
-| `src/middleware.ts` | `/api/merchant-feed/*` 无尾斜杠内部 rewrite（消除 308），matcher 增补 |
+| `src/middleware.ts` | ~~无尾斜杠内部 rewrite~~ **已回退**（2026-09-29 线上实证：next-on-pages 适配层在 middleware 之前完成尾斜杠 308，rewrite 方案在 CF 无效；MC 改用带尾斜杠 URL 直达 200） |
 
 **验证**：tsc 54=54 基线（0 新增）· encoding 5/5 UTF-8 LF · brand-mentions A 类 0 · gsc-leak 0 · next build PASS。
 
@@ -98,9 +101,9 @@ Google 自动移除；不应重新上架**（违反 K3 下架裁决）。
 
 ### 3.1 Merchant Center 后台（需要 K3 或管理员操作一次）
 
-1. **核对 feed 抓取配置**：Scheduled fetch URL 建议用带尾斜杠版本
-   `https://zprintpro.com/api/merchant-feed/en/`（不带尾斜杠现在也直接 200，两者均可）；
-   抓取频率若为「月」，建议提到「周」。
+1. **核对 feed 抓取配置**：Scheduled fetch URL 用**带尾斜杠**版本
+   `https://zprintpro.com/api/merchant-feed/en/`（无尾斜杠版本 308 → 带尾斜杠，Google 虽会跟随，
+   但直接配带斜杠版本最稳）；抓取频率若为「月」，建议提到「周」。
 2. **触发一次手动抓取**（或等下一次定时抓取）→ 4 条已下架商品残留条目会被 Google 自动移除。
    若 1-2 个抓取周期后仍残留，在 MC 商品列表手动删除这 4 条（它们是已下架商品，无需保留）。
 3. **449 项 aggregateRating/review 警告**（Enhancement，不影响现有商品摘要展示）：
