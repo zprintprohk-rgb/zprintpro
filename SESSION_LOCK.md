@@ -3,7 +3,25 @@
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-23 04:0x 由 v5 标题补批会话释放：commit `9d3bf5ec` 已 push 生产（d3f165fc..9d3bf5ec，与 K3 侧 v5 批 d3f165fc 攒批衔接），线上断言 6/6 PASS（roll-up-banners ja / kraft ja ¥150 纠错 / custom-red-packets ja / vehicle-wraps en / eco-flyers en / graduation-yearbook en 新 title 全生效），门童全绿（census 276 band 0 · tsc 54 基线 · brand A 0 · gsc-leak 0 · encoding ✓）。后续会话可自由接管。
+> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-29 02:2x 由 GSC/Merchant Center 修复会话释放：
+> commit `1cd7b221`（已推） + 攒批 `e0b5ab39`（含 d6826168/6c7be1dc/bad3d3e0，已推）均上线；
+> 改动 = 真实评价机制（src/data/product-reviews.ts）+ schema 品牌/image 修复 + merchant-feed 加固 +
+> 假评价死代码清除 + middleware rewrite 尝试后回退（CF 实证无效）。详见
+> `docs/2026-09-29-gsc-merchant-center-fix-report.md`。后续会话可自由接管。
+
+---
+
+## 持有声明（2026-09-29 01:4x · GSC/Merchant Center 修复会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | deepseek hermes 会话（K3 指令：深度分析 GSC Rich Results + Merchant Center 问题并解决） |
+| **意图** | ① GSC Rich Results 449 项 missing aggregateRating/review：新增真实评价机制（当前 0 条不编造）+ 删除假评价死代码 ② Merchant Center 4 条未获批准（acrylic-keychain/can-badge 已下架残留）确认 feed 已排除 ③ feed 加固（locale 品牌 / identifier_exists / 条件性评分属性）④ schema 质量（绝对 image URL / locale brand）⑤ feed 无尾斜杠 308 探因（middleware rewrite CF 实证无效后回退） |
+| **写入范围** | `src/data/product-reviews.ts`（新增）· `src/lib/seo.ts` · `src/app/[locale]/product/[slug]/page.tsx` · `src/app/api/merchant-feed/[locale]/route.ts` · `src/middleware.ts`（已回退至原状）· `docs/2026-09-29-gsc-merchant-center-fix-report.md`（新增）· 本文件 |
+| **真值依据** | K3 提供的 GSC 截图（2026-09-29）· 线上探针（feed/PDP/308）· git log（2e46b1f1 下架 acrylic-keychain / 3606d042 下架 can-badge）· K3 8/4 P0-2 裁决（禁编造评价）· AGENTS.md §0.23 |
+| **验证** | tsc 54=54 基线 0 新增 · encoding ✓ · brand-mentions A 0 · gsc-leak 0 · 门童全绿（0 red）· next build PASS（723 URL）· 线上断言（feed XML 有效 91×3 + locale 品牌 + identifier_exists + PDP brand/image 修复） |
+| **并发说明** | 开工时 SESSION_LOCK 状态 RELEASED（9/23 释放后无持有者）；src/ 无 MM；lane.lock 不存在；未触碰 blog-data |
+| **释放条件** | ✅ 满足：commit `1cd7b221` + 攒批 `e0b5ab39` 均 push 生产（c5cfdf9b..e0b5ab39） |
 
 ---
 
