@@ -138,9 +138,9 @@ function buildFeed(locale: Locale): string {
   const feed = `<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
   <channel>
-    <title>ZprintPro ${config.country} Product Feed</title>
+    <title>${brandByLocale[locale]} ${config.country} Product Feed</title>
     <link>${SITE_URL}/${locale}</link>
-    <description>ZprintPro printing service products for ${config.country} market. Feed updated automatically.</description>
+    <description>${brandByLocale[locale]} printing service products for ${config.country} market. Feed updated automatically.</description>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${items}
   </channel>
