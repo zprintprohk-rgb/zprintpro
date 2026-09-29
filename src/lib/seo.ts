@@ -344,7 +344,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/`,
         'en-US': `${siteConfig.url}/en/`,
         'en-GB': `${siteConfig.url}/en/`,
         'en-AU': `${siteConfig.url}/en/`,
@@ -866,7 +866,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
     alternates: {
       canonical: `${siteConfig.url}/${locale}/category/${slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
         'en-US': `${siteConfig.url}/en/category/${slug}/`,
         'en-GB': `${siteConfig.url}/en/category/${slug}/`,
         'en-AU': `${siteConfig.url}/en/category/${slug}/`,
@@ -959,7 +959,7 @@ export function generateProductMetadata(
     alternates: {
       canonical: `${siteConfig.url}/${locale}/product/${slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
         'en-US': `${siteConfig.url}/en/product/${slug}/`,
         'en-GB': `${siteConfig.url}/en/product/${slug}/`,
         'en-AU': `${siteConfig.url}/en/product/${slug}/`,
@@ -1686,7 +1686,7 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/quote/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/quote/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote/`,
         'en-US': `${siteConfig.url}/en/quote/`,
         'en-GB': `${siteConfig.url}/en/quote/`,
         'en-AU': `${siteConfig.url}/en/quote/`,

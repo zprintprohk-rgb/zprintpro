@@ -19,7 +19,7 @@ export function createMetadata(seo: SEOMetadata, locale: Locale): Metadata {
     alternates: {
       canonical: seo.canonical,
       languages: {
-        'zh-HK': `${BASE_URL}/zh-hk`,
+        'zh-Hant-HK': `${BASE_URL}/zh-hk`,
         'en-US': `${BASE_URL}/en`,
         'en-GB': `${BASE_URL}/en`,
         'en-AU': `${BASE_URL}/en`,
