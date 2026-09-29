@@ -22,6 +22,10 @@
 
 ## 追加批（2026-09-30 02:1x · sitemap BC_BAN 窄豁免 + description 对齐）
 
+- ✅ commit `0311b2de` push 成功（间隔 31min 合规），门童 0 red
+- ✅ 线上验证全绿：12/12 title/H1 新值上线 · 新页 3 语 200（76-81KB）· sitemap-zh-hk 243 URLs 含 business-cards-printing · IndexNow 已 ping
+- ✅ 本会话全部工作完成，锁最终释放（探针脚本留存 `.hermes/verify-abd.ps1|json / poll-deploy.ps1 / poll-sitemap.ps1` 可复跑）
+
 ---
 
 ## 持有声明（2026-09-30 01:2x · GSC 复盘后 A/B/D 全批执行会话）

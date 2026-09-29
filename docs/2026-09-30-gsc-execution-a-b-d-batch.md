@@ -62,6 +62,33 @@
 | tsc --noEmit | ✅ 54 = 基线持平 |
 | next build + sitemap 重生成 | 见构建结果（build 输出附后） |
 
+## 追加批（2026-09-30 02:4x · 分类名对齐 + P0/P1 锚与 AEO 词面）
+
+### K3 改名战略裁决（数据支撑）
+- **slug 一律不动**（URL 稳定 > 一切；en/ja 共用语义），**显示名对齐 GSC 头部词**（breadcrumb/nav/feed 展示层）：
+  - flyers `傳單印刷 → 宣傳單張印刷`（GSC：宣傳單張 417 + 宣傳單張印刷 405，傳單印刷无独立量）
+  - packaging `包裝盒定製 → 包裝盒訂製` + en `Packaging → Packaging Boxes`（GSC 用字是「訂製」192 vs 定製无量）
+  - books `書籍印刷 → 騎馬釘書刊印刷`（GSC 头部=騎馬釘系 373，書籍印刷零量）
+  - educational `→ 證書・校園教育印刷`（随 A3 头词迁移）/ japan-doujin `→ 同人誌印刷・周邊`
+- 16 分类审计结论：stickers/posters/paper-bags/menus/calendars/red-packets/envelopes/greeting-cards/wedding/place-cards 显示名已对齐，不动
+
+### P0 锚文本注入（category-seo-content.ts，7 处）
+- 修复双印 bug：menus 页 `傳單印刷印刷 → 宣傳單張印刷`（精确 money 锚）+ `開業傳單印刷印刷 → 開業宣傳單張印刷指南`
+- 新增入站锚：menus→海報印刷、calendars→利是封印刷+宣傳單張印刷（CNY 組合）、posters→宣傳單張印刷（展覽組合）、greeting-cards→包裝盒訂製（禮盒組合）、packaging→貼紙印刷（標籤組合，原「貼紙訂製」升級）
+- 紙袋/貼紙頁原有精確錨（包裝盒訂製/貼紙印刷）保留
+
+### P1 AEO quickAnswers 增强（category-conversion-blocks.ts，6 处）
+- **真值修復**：stickers:zh-hk 转化块 title `100 張起印 → 10 張起印`（与 metaDescription/quickAnswer MOQ=10 对齐，products.ts 真值）
+- stickers +2：可移貼紙（132 imps 臨門詞）、透明貼（169 imps 無展示詞）
+- packaging +1：食品包裝印刷認證答案（368 imps 波動詞固化）
+- books +1：印書裝訂選型答案（印書 182/膠裝書 81 深水詞）
+- calendars:en +1：尺寸 AEO 表（calendar size 61.2/calendar sizes 47.0 en 弱點）
+- japan-doujin:ja +1：コミケ印刷注文時期（24h 最熱詞 8 imps，P0-6）
+
+### 边界说明
+- blog 正文 hub-spoke 锚（海報印刷×3 等）落 blog-data JSON 锁区 → 移交 blog-deepfix 车道（周六 05:37）按 lane.lock 协议执行，本批不碰
+- en price guide a1 poster prices H2 同移交 blog 车道
+
 ## 待 K3 后续动作
 1. D1 页上线后观察 GSC「咭片 / 咭片印刷 / 印咭片」28 天窗口是否有新展示（预计 2-4 周见数）
 2. 名片页若两周内询盘增长，可再评估是否升级为 (b) 独立品类页+SKU（§0.0 仍需 K3 二次拍板）

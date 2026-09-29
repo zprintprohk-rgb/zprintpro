@@ -71,7 +71,7 @@ export const categoryConversionBlocks: Record<string, CategoryConversionContent>
 categoryConversionBlocks['stickers:zh-hk'] = {
   "category": "stickers",
   "locale": "zh-hk",
-  "title": "貼紙印刷｜香港最快 2 日起貨｜小批量 100 張起印｜ZprintPro",
+  "title": "貼紙印刷｜香港最快 2 日起貨｜小批量 10 張起印｜ZprintPro",
   "metaDescription": "香港貼紙印刷專家，PVC/透明/啞銀/光粉多款材質，10 張起印，2-3 日出貨。立即 WhatsApp 報價：+86 198 8085 1334。",
   "quickAnswers": [
     {
@@ -85,6 +85,14 @@ categoryConversionBlocks['stickers:zh-hk'] = {
     {
       "q": "香港最受歡迎貼紙尺寸係邊啲？",
       "a": "Top5 熱門尺寸：50×50mm、40×60mm、30×30mm、圓形 38mm、70×25mm。"
+    },
+    {
+      "q": "可移貼紙同永久貼紙有咩分別？",
+      "a": "可移貼紙用可移除背膠，撕落唔留殘膠，最啱促銷價錢牌、期間限定活動同櫥窗佈置；永久膠貼實咗就難撕，適合長期產品標籤。兩款都係 10 張起印，2-3 日出貨。"
+    },
+    {
+      "q": "透明貼印刷係咩效果？",
+      "a": "透明 PVC 貼紙背景完全透明，只有圖案同文字顯示，貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級；10 張起印，可配燙金或白墨打底。"
     }
   ],
   "socialProof": [
@@ -509,6 +517,10 @@ categoryConversionBlocks['packaging:zh-hk'] = {
     {
       "q": "由報價到交貨大概要幾耐？",
       "a": "30秒AI即時報價，8-15天生產，香港本地1-2個工作天順豐直送，DHL全球2-4日送到。"
+    },
+    {
+      "q": "食品包裝印刷有咩認證要求？",
+      "a": "必須用食品級紙材加無毒大豆油墨，FDA認可（間接食品接觸）加FSC認證紙，可出SGS檢測文件；烘焙、茶葉、保健品盒100個起印，防潮處理同QR碼溯源都可以安排。"
     }
   ],
   "socialProof": [
@@ -2195,6 +2207,10 @@ categoryConversionBlocks['calendars:en'] = {
     {
       "q": "What types of custom calendars can I print?",
       "a": "Desk calendars (easel), wall calendars in A3/A2, postcard-size calendar cards, planner calendars, and magnetic fridge calendars. Standard sizes run from 150×180mm desk formats up to 420×594mm A2 wall versions - all fully customizable in paper, binding, and finish."
+    },
+    {
+      "q": "What sizes do custom calendars come in?",
+      "a": "Desk calendars come in 150×180mm and 200×230mm, wall calendars in A3 (297×420mm) and A2 (420×594mm), and calendar cards in 100×150mm. Every size is fully customizable with your branding, and digital runs start at just 50 pcs with 3-5 day turnaround."
     }
   ],
   "socialProof": [
@@ -3158,6 +3174,10 @@ categoryConversionBlocks['japan-doujin:ja'] = {
     {
       "q": "ポストカードセットとエコトートバッグはどんな仕様を選べますか？",
       "a": "ポストカードセットは和紙風アート紙・両面印刷・OPPスリーブ封入、エコトートバッグはオーガニックコットン帆布＋シルク印刷が標準です。"
+    },
+    {
+      "q": "コミケ向けの印刷はどのくらい前に注文すべきですか？",
+      "a": "標準は3-7営業日で製造します。コミケ前の24時間特急製造（同人誌）にも対応していますが、繁忙期は特急枠が埋まりやすいため、1ヶ月前のご注文が最も安心です。DHL Expressで日本全国2-4営業日でお届けします。"
     }
   ],
   "socialProof": [
@@ -3583,6 +3603,10 @@ categoryConversionBlocks['books:zh-hk'] = {
     {
       "q": "騎馬釘、膠裝定精裝點揀？",
       "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。"
+    },
+    {
+      "q": "印書邊款裝訂最抵？有冇批量價？",
+      "a": "8-64 頁揀騎馬釘書刊最抵（HK$6-32/本），可 180° 平攤；64-200 頁揀無線膠裝書（HK$16-80/本）；畫冊年鑑揀精裝書（HK$40-240/本）。五款書刊全部 10 本起印，100 本以上有階梯折扣。"
     }
   ],
   "socialProof": [

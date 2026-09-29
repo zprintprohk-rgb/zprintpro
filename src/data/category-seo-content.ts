@@ -172,7 +172,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         { label: '包裝盒訂製指南', href: '/zh-hk/blog/packaging-box-custom-guide/' },
         { label: '食品包裝印刷指南', href: '/zh-hk/blog/food-packaging-printing-guide/' },
         { label: '紙袋訂製', href: '/zh-hk/category/paper-bags/' },
-        { label: '貼紙訂製', href: '/zh-hk/category/stickers/' },
+        { label: '貼紙印刷', href: '/zh-hk/category/stickers/' },
       ],
     },
     faq: [
@@ -1102,9 +1102,10 @@ const menusContent: Record<string, CategoryLocaleContent> = {
       ],
       links: [
         { label: '餐牌印刷指南', href: '/zh-hk/blog/restaurant-menu-printing-guide/' },
-        { label: '開業傳單印刷印刷', href: '/zh-hk/blog/restaurant-opening-flyer-printing-guide/' },
-        { label: '傳單印刷印刷', href: '/zh-hk/category/flyers/' },
+        { label: '開業宣傳單張印刷指南', href: '/zh-hk/blog/restaurant-opening-flyer-printing-guide/' },
+        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
         { label: '利是封印刷', href: '/zh-hk/category/red-packets/' },
+        { label: '海報印刷', href: '/zh-hk/category/posters/' },
       ],
     },
     faq: [
@@ -1728,6 +1729,8 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       links: [
         { label: '2027 月曆印刷一條龍攻略', href: '/zh-hk/blog/2027-monthly-calendar-printing-timetable/' },
         { label: '月曆材質全對比 (銅版紙/啞粉紙/咭紙)', href: '/zh-hk/blog/calendar-printing-guide/' },
+        { label: '利是封印刷', href: '/zh-hk/category/red-packets/' },
+        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
       ],
     },
     faq: [
@@ -3379,6 +3382,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: 'MTR 燈箱海報規格 + 印刷文件要求指南', href: '/zh-hk/blog/mtr-advertising-specs/' },
         { label: '海報材質全對比 (銅版紙/PP/PVC)', href: '/zh-hk/blog/poster-printing-guide/' },
         { label: '海報印刷 3 大常見坑 + 點避', href: '/zh-hk/blog/poster-printing-guide/' },
+        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
       ],
     },
     faq: [
@@ -4293,6 +4297,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       links: [
         { label: '貼紙印刷', href: '/zh-hk/category/stickers/' },
         { label: '喜帖印刷', href: '/zh-hk/category/wedding-invitations/' },
+        { label: '包裝盒訂製', href: '/zh-hk/category/packaging/' },
       ],
     },
     faq: [
