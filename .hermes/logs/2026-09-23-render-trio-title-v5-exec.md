@@ -17,6 +17,8 @@
 | 交付物 3 C-1 | 全槽 title 五段式普查（只读清单） | `.hermes/logs/2026-09-23-title-v5-census.md`（untracked，276 槽 / 五段齐全 217 / 缺钩子 0 / 出带 0） | ✅ |
 | 交付物 4 Q-1 | MOQ 问答块模板化组件（100% products.ts/price-table 派生，替换手工注入块） | `src/app/[locale]/product/[slug]/v9/MoqQaBlock.tsx`（新建）· `src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx`（接入，价格阶梯之后渲染） | ✅ |
 | 数据诚信修复（用户「圓角」指令） | flyer 家族假「圓角」根因清除 | `src/data/products.ts`（7 处【免費刀模】異形裁切與圓角可選 → 標準尺寸刀模模板；eco-flyers 假「覆膜」胶囊 → 【環保工藝】無覆膜（環保）或水性光油）· `src/data/sku-seo-data.ts`（a4-flyers / eco-flyers zh-hk title 去「圓角覆膜」、a5-flyers H1） | ✅ |
+| **追加（用户拍板「改为按品类展示工艺」）** | flyer 家族通用 FAQ 按品类定制 | `src/data/products-content.ts`：8 个 flyer 条目 longDescription 内通用 FAQ zh-hk(8)/en(7)/ja(8) 共 23 处，去「圓角模切/rounded corners/丸角」+ 非传单工艺（燙金/騎馬釘/膠裝/箔押し等），列传单真实工艺（四色柯式/數碼印刷、對摺/三摺摺頁、局部 UV、標準刀模裁切）· commit `ff2ee768`（2026-09-28 07:09 push，线上验证见 ③ 4e） | ✅ |
+| **追加 2（线上探针 v3 发现）** | same-day-flyers 专属 FAQ 假「圓角」清除 | `src/data/product-faqs.ts` L802-804：即日印刷 FAQ「可加覆膜或圓角」→「可加覆膜（啞膜／光膜）」（en/ja 同步去 rounded corners/角丸；覆膜为真实工艺 per products.ts features）· commit `c5cfdf9b`（本地已落，push 待 30min 窗口） | ✅ 修复 |
 
 ## ② 变更依据（提示词编号）
 
@@ -36,6 +38,7 @@
 | 4b. 新门童全站违规模板源 = 0 | ✅ 本地 `node scripts/audit-sku-locale.cjs` = **0 处**（sku-seo-data 92 SKU + blog-posts 624 条 + blog-data 3 语系 + seo.ts 模板层断言） |
 | 4c. a4-flyers / waterproof-stickers 线上 MOQ 块 = products.ts | ✅ 线上实测（8f10f55d）：zh-hk 含「10 張起印。10 與 24 張都接…25 張以上單張明顯較平」、en 含「From 10 pcs」、ja 含「量産档（25枚〜）」；waterproof-stickers zh-hk 同（minQ=10 nextTier=25 = price-data.generated.ts 真值） |
 | 4d. 五段式普查已落 `.hermes/` | ✅ `.hermes/logs/2026-09-23-title-v5-census.md`（只读，无文案改动） |
+| 4e. flyer FAQ 按品类线上断言（ff2ee768 + c5cfdf9b） | ✅ 最终线上全量复扫（c5cfdf9b 部署后 2026-09-28 07:44）：**8 个 flyer SKU × 3 locale = 24 页全部 0 圆角残留**（圓角/rounded corners/丸角/角丸）。排查链条：通用 FAQ（products-content 23 处）→ 探针 v3 补漏 same-day 专属 FAQ（product-faqs「可加覆膜或圓角」）→ 修复 + 复扫归零 |
 | 5. 当量体检 | ✅ title-v5-guard 全量审计 276 槽：a4-flyers zh-hk equiv=51（圆角修复 55→51）、eco-flyers zh-hk equiv=51，全部在带 50-57；**Q-1/MOQ 批不改任何 title → 当量零变化**；FILL=0 / TRIM=0 |
 | 6. 数据来源行 + 报告七段 + 挂账清单 | ✅ 本报告（数据来源行见 ⑤；挂账见 ⑥） |
 
@@ -43,8 +46,10 @@
 
 - 上次 push: `0151726b` 2026-09-23 03:31:13 +0800（门童 #27 接入 pre-commit）
 - 本次 push: `8f10f55d` 2026-09-23 09:52:13 +0800 → 09:52 推送 origin/main（`0151726b..8f10f55d`）；间隔 **6h21m** ≥ 30min 硬下限 ✅；攒批阈值 ✅（≥1 src 行为修复：圆角胶囊修复 + Q-1 组件 + 门童 #28）
+- 追加 push: `ff2ee768` 2026-09-28 07:09:36 +0800（flyer FAQ 按品类定制，用户拍板）→ `72678f16..ff2ee768`；距 cron 车道上次 push（2026-09-24 21:18）远超 30min ✅
+- 追加 push 2: `c5cfdf9b` 2026-09-28 07:40 +0800（same-day FAQ 假圆角修复）→ `ff2ee768..c5cfdf9b`；间隔 31min ≥ 30min 硬下限 ✅（后台异步等窗口，§0.25.8）
 - pre-push 门童: 基线对账 56=56（0 新增段级 FAIL）、#21 规则翻译层 0 命中 ✅
-- check-runs: CF Pages build 已部署（2026-09-23 10:03 +08:00 线上指纹「10 與 24 張都接」+「無圓角 title」确认 8f10f55d 生效；部署耗时约 10 分钟）
+- check-runs: CF Pages build 已部署（2026-09-23 10:03 +08:00 线上指纹「10 與 24 張都接」+「無圓角 title」确认 8f10f55d 生效；部署耗时约 10 分钟）；ff2ee768 部署后探针 v3 确认（见 ③ 4e）
 
 ## ⑤ 数据来源行
 
@@ -53,6 +58,7 @@
 - **MOQ 块派生**: minQty = `src/data/products.ts` minQuantity（a4-flyers=10, waterproof-stickers=10）；nextTier = `src/lib/price-data.generated.ts` PRICE_TABLE_MAP（a4-flyers tiers=[10,25,50,75,99,100,300…] → nextTier=25；waterproof tiers=[10,25,50,100…] → 25）；ja counter 按附录 A §7.1 量词配置表（纸品线=枚）
 - **品牌·语种**: BRAND 映射 `src/lib/seo.ts` L24-26 getBrandName（zh-hk=智印港, en/ja=ZprintPro）+ 附录 B B-3 铁律；模板层 L826/L903 均走 getBrandName(locale)
 - **五段式普查**: `scripts/guards/title-equiv.js`（当量口径 SSoT）+ `src/data/sku-seo-data.ts`
+- **FAQ 按品类定制**: `src/data/products-content.ts` 8 个 flyer 条目 longDescription 内通用 FAQ（zh-hk「智印港支援哪些材質和工藝？」L321 同源 ×8、en「What materials and finishes do you offer?」×7、ja「対応素材と加工は？」×8）；替换为 flyer 工艺清单（四色柯式/數碼印刷、對摺/三摺摺頁、局部 UV、標準刀模裁切），非 flyer 64 产品保留原清单不动
 
 ## ⑥ 遗留挂账（Q-2 窗批输入）
 
@@ -62,7 +68,7 @@
 4. **en a4-flyers 三 MOQ 口径** —— 挂账 Q-2。
 5. **五段式缺口清单**（62 槽，多为 en/ja「工艺/尺寸」词未入正则的指示性缺口；缺钩子 0）→ 指针 `.hermes/logs/2026-09-23-title-v5-census.md`。
 6. **K3 既定 title HARD=8 存量**（PRICE_MISMATCH 7 + white-card-boxes FILLER_WORD 1）—— 属 K3 判定项，本任务不自动修。
-7. **⚠️ flyer 页残留「圓角」= 通用能力 FAQ**（Q-2 首要输入）: `src/data/products-content.ts` L321（+ 全站 ~50 处 per-product 复制）「智印港支援哪些材質和工藝？」回答「工藝包括…圓角模切…」。这是**全站通用工艺能力清单**（圓角模切确为贺卡/餐牌/贴纸真实工艺），**非 flyer 专属伪造**——flyer 自身 title/规格/features/胶囊已全部清除圓角（线上验证）。按执行提示词红线「不顺手改其他区块文案（FAQ归并 = C-5 后续提示词）」，本任务**未擅自修改**。建议 Q-2/FAQ归并: 该通用 FAQ 改为按品类展示工艺（flyer 不列圓角模切），或拍板从共享能力清单移除。**用户若要求立即处理，需确认越权**（涉 ~50 处复制块）。
+7. ~~**flyer 页残留「圓角」= 通用能力 FAQ**~~ **已解决（ff2ee768, 用户拍板「改为按品类展示工艺」）**: `src/data/products-content.ts` 8 个 flyer 条目的通用 FAQ zh-hk/en/ja 共 23 处已按品类定制（去圓角模切/rounded corners/丸角，列传单真实工艺）；线上验证 3 语 flyer 页 0 圆角残留（③ 4e）。非 flyer 64 产品的圆角模切（贺卡/餐牌/贴纸真实工艺）保留。**后续 FAQ归并（C-5）建议**: 其余品类（日历/证书/练习本等）的通用 FAQ 工艺清单亦可按品类细化。
 
 ## ⑦ 异常与事故
 
