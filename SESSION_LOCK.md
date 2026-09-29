@@ -11,6 +11,19 @@
 
 ---
 
+## 持有声明（2026-09-30 01:2x · GSC 复盘后 A/B/D 全批执行会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | deepseek hermes 会话（K3 2026-09-29 深夜指令：A1-A4/B1-B4/D-GEO 全部按优化级连续执行 + D1 拍板选项 (c) + D2 通用头部词收复 + D3 同人季承接） |
+| **意图** | ① seo.ts 6 类目 title 重写（stickers/packaging/posters/educational × 3 locale 共 9 条）② page.tsx customH1Map 6 条 H1 ③ category-conversion-blocks.ts 7 块 AEO 增补（价格快速答案/製本对比/コミケ）④ 新增 `services/business-cards-printing` 落地页（D1 选项 c，不触碰贺卡资产/middleware 301）+ sitemap 登记 ⑤ stickers 存量 MOQ 口径 100→10 一致性修正 |
+| **写入范围** | `src/lib/seo.ts` · `src/app/[locale]/category/[slug]/page.tsx` · `src/data/category-conversion-blocks.ts` · `src/app/[locale]/services/business-cards-printing/page.tsx`（新增）· `scripts/generate-sitemap.js` · `src/app/[locale]/services/page.tsx`（如登记）· 本文件 |
+| **真值依据** | GSC 2026-09-29 三窗口分析（docs/2026-09-29-gsc-seo-geo-quarter-review.md）· A3 线上诊断实证（educational 索引/canonical/hreflang 全绿）· products.ts minQuantity 真值 · §0.0 解禁块 (c) K3 本次拍板 |
+| **并发说明** | 开工时 SESSION_LOCK=RELEASED（上批已释放）；lane.lock 不存在；不触碰 blog-data/*.json 与 frozen 名单（Rush*/greeting-cards 资产/middleware 301） |
+| **释放条件** | commit + push 生产 + 线上 title/H1 探针验证后释放 |
+
+---
+
 ## 持有声明（2026-09-29 01:4x · GSC/Merchant Center 修复会话）
 
 | 项 | 值 |

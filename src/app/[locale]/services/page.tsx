@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const meta: Record<string, { title: string; description: string }> = {
     'zh-hk': {
-      title: '印刷服務 | 貼紙・傳單印刷・包裝盒・紙袋訂製 | 智印港 ZprintPro',
+      title: '印刷服務 | 貼紙・傳單印刷・包裝盒・紙袋・名片訂製 | 智印港',
       description:
         '智印港提供香港一站式印刷服務：貼紙、傳單印刷、包裝盒、紙袋、海報、利是封等。30秒AI報價，免費設計，100起訂，72小時出貨，順豐直送港九新界。立即WhatsApp報價！',
     },
@@ -95,6 +95,17 @@ const serviceCards: ServiceCard[] = [
       ja: 'クラフト紙袋、白カード紙袋、ギフトバッグ。店舗・イベント・ノベルティに。',
     },
     meta: { 'zh-hk': '100 個起訂 · 72h 出貨', en: 'From 100 pcs · 72h turnaround', ja: '100個〜 · 72時間出荷' },
+  },
+  {
+    // 2026-09-30 D1 批: 名片·咭片承接落地页 (K3 §0.0 解禁块 选项 (c) 拍板)
+    href: (l) => `/${l}/services/business-cards-printing/`,
+    name: { 'zh-hk': '名片・咭片印刷', en: 'Business Card Printing', ja: '名刺印刷' },
+    desc: {
+      'zh-hk': '燙金、局部 UV、圓角、雙面名片，10 張起印，專業服務行業首選。',
+      en: 'Foil, spot UV, rounded corner & double-sided name cards from 10 pcs for professionals.',
+      ja: '箔押し・スポットUV・角丸・両面名刺、10枚〜。士業・専門サービス向け。',
+    },
+    meta: { 'zh-hk': '10 張起訂 · 免費設計', en: 'From 10 pcs · Free design', ja: '10枚〜 · 無料デザイン' },
   },
   {
     href: (l) => `/${l}/services/rush-printing-delivery/`,

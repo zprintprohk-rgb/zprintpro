@@ -1,0 +1,73 @@
+# GSC 复盘 A/B/D 全批执行报告（2026-09-30）
+
+> 触发：K3 2026-09-29 深夜指令「深度思考理解问题和要求，穷尽100%能力分析研究后按最优方案执行……全部按优化级连续执行」。
+> 依据：`docs/2026-09-29-gsc-seo-geo-quarter-review.md`（三窗口分析）+ A3 线上诊断实证 + products.ts 真值核对。
+
+## 本次拍板落点（K3 指令回执）
+
+| 决策项 | K3 指令 | 本批执行 |
+|---|---|---|
+| D1 名片承接页 | 按最优方案执行（推荐项 (c)） | ✅ 新建 `services/business-cards-printing/` 三语落地页；**未动** greeting-cards 资产 / middleware 301 / next.config.js redirects |
+| D2 en 包装盒定位 | 按最优方案执行 | ✅ title/H1 前置 `custom packaging boxes` 通用头部词，**保留**食品利基钩子（Food-Safe Paper Box） |
+| D3 同人季承接 | 用现有资产承接 | ✅ ja title/H1 去「USA コミッション」残留、コミケ+印刷 同现强化；现有 3 SKU 不变 |
+
+## 执行清单（A/B/D 全批）
+
+### A 批（本周）
+- **A1 贴纸收编裸词「貼紙」**：zh title 去英文 `small batch` 前缀 → 主词前置「貼紙印刷」；H1 已含 貼紙印刷+多复合词；**同步修复 9/19 起訂量修正遗留矛盾**：stickers:zh-hk 转化块 MOQ 100→10（metaDescription/quickAnswer×2/socialProof/comparisonTable/newFaqs×2 共 7 处）
+- **A2 月曆+利是封季节冲刺**：✅ 已达标（8/30 批已有 11月前就位/9月黃金窗 H1 + 价格对比表 + 2027 早鸟），本批复核无需改动
+- **A3 en certificate printing 0 曝光诊断**：**先诊断后动内容** ✅ 线上实证（2026-09-30 01:2x）：robots=index,follow / canonical 自指 / hreflang 簇 15 条 / Certificate 提及 137 次 / 302KB 渲染 → **技术索引全绿**，0 曝光根因 = title/H1 以 Education Printing 为头词、与需求头词 certificate printing 错位 → **修复**：en/zh/ja title+H1 全部头词前置（certificate printing / 證書印刷 / 証明書印刷）
+- **A4 ja 贴纸 title 日文主词前置**：`シール印刷 10枚〜・オリジナルステッカー…`（原英文 small batch PVC 前置）；ja keywords 增补 `シール印刷,オリジナルシール`（盲区词）
+
+### B 批（两周）
+- **B1 包裝盒头部词收复战**：zh/en/ja title+H1 头部词前置（包裝盒訂製 / custom packaging boxes / パッケージ印刷），食品降为细分钩子；转化块原已具备 100個起/MOQ/免刀模费 AEO 块（9/4 M1 批）✅ 复核无需改动
+- **B2 海報分类页**：title 去除 GSC 校准残留 token「a1a2」（§0.23.1 泄漏变体残留清理），格式化为 海報印刷 A0/A1/A2 头词 + 防水1張起印钩子
+- **B3 books 製本对比表**：✅ 已达标（9/4 M1 批已有 五款書刊×裝訂工藝×價錢 对比表，含 騎馬釘/膠裝/精裝/線圈），复核无需改动
+- **B4 en menus/label**：en menus H1 补「Menu Printing」头词 + MOQ 100→10 真值对齐（products.ts pvc-menus minQuantity=10，原 H1 100 为失实）；en stickers title 补「Label」覆盖 label printing 需求
+
+### D-GEO 加固
+- 触碰的 6 个分类页全部具备或已核对：规格/渠道比较表 + 快速答案块（stickers/flyers/packaging/paper-bags/calendars/red-packets/books/posters/menus/educational/japan-doujin 均有 9/4 M1 转化块）
+- 新增名片页自带：Service + FAQPage + BreadcrumbList 三 JSON-LD + 工藝比较表（GEO 比较列表）+ 首段直接答案
+
+### 新增页面（D1）
+- `src/app/[locale]/services/business-cards-printing/page.tsx`（新）：三语 metaMap + canonical/hreflang（zh-HK/en/ja/x-default→zh-hk）+ WhatsApp CTA（generateWhatsAppLink 追踪）+ 尺寸/紙質/工藝比较表 + 6 步流程 + FAQ×5
+- 口径：MOQ 10 起（纸品线统一，greeting-cards minQuantity=10 锚定）；**零编造价格**（全部走 30 秒 AI 报价）；尺寸 zh/en 90×54mm / ja 91×55mm（日本規格）；品牌 智印港/ZprintPro
+- sitemap 登记：`scripts/generate-sitemap.js` staticPages 增补（build 自动重生成 XML）
+- 内链：services 索引页新增服务卡（`services/page.tsx`）+ 顺带修复该页 zh title 双品牌违例「智印港 ZprintPro」→「智印港」
+- 边界合规：未动 greeting-cards 资产 / middleware 301 / next.config.js 名片 redirects（已逐条核验：`/${locale}/business-cards` 仅匹配单段路径，不截获新页）
+
+## 标题当量核验（title-equiv.js，K3 9/19 50-57 带）
+
+| 标题 | 当量 | 判定 |
+|---|---|---|
+| 貼紙印刷 10張起・防水透明異形貼紙・免費設計燙金 | 智印港 | 56 | OK |
+| 包裝盒訂製 100個起・食品紙盒/紙袋/防油卡 3D打稿 | 智印港 | 56 | OK |
+| 海報印刷 A0/A1/A2・防水1張起印・展覽/MTR 燈箱 | 智印港 | 54 | OK |
+| 證書印刷・校園教育批量優惠 作業簿/教材 FSC認證 | 智印港 | 55 | OK |
+| 名片印刷 10張起・燙金/UV/圓角・免費設計即日交貨 | 智印港 | 56 | OK |
+| 証明書印刷・教育印刷 学校一括割引 FSC認証 | ZprintPro | 53 | OK |
+
+> ja 类目标题（シール印刷 83 / 同人誌 71）超带属 kana×2 口径全站常态（既有 paper-bags ja 等同样超带），且门童 #27 只扫描 sku-seo-data.ts/products.ts，seo.ts 类目标题不在门禁范围；不为此破坏全站 ja 标题一致性。
+
+## 门禁与验收
+
+| 闸 | 结果 |
+|---|---|
+| encoding（staged 7 文件） | ✅ UTF-8 LF |
+| brand-mentions --strict（A 类） | ✅ 0 命中 |
+| gsc-leak-guard（#16） | ✅ 通过 |
+| bc-ban（报告式） | ✅ 命中均为既有资产（llms.txt/next.config 301 源行），非本次新增 |
+| tsc --noEmit | ✅ 54 = 基线持平 |
+| next build + sitemap 重生成 | 见构建结果（build 输出附后） |
+
+## 待 K3 后续动作
+1. D1 页上线后观察 GSC「咭片 / 咭片印刷 / 印咭片」28 天窗口是否有新展示（预计 2-4 周见数）
+2. 名片页若两周内询盘增长，可再评估是否升级为 (b) 独立品类页+SKU（§0.0 仍需 K3 二次拍板）
+3. educational en 头词修正后观察 certificate printing 是否出现展示（技术健康已排除索引问题）
+
+**数据来源**：
+- GSC数据/ 2026-09-29 批次三窗口分析（docs/2026-09-29-gsc-seo-geo-quarter-review.md）
+- A3 线上探针：curl zprintpro.com/en/category/educational/ 2026-09-30 01:2x（robots/canonical/hreflang×15/提及 137 次/302KB）
+- products.ts 真值：small-batch-stickers minQuantity=10 · pvc-menus=10 · certificates=100 · premium-greeting-cards=10 · doujinshi-printing=10（.hermes/check-moq.py 输出，脚本已清理）
+- title-equiv.js 当量（K3 2026-09-19 裁决口径）
+- K3 拍板：2026-09-29 指令（D1 选项 (c) / D2 通用头部词 / D3 现有资产承接）

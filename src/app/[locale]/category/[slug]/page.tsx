@@ -110,9 +110,10 @@ export default function CategoryPage({
   // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
-      'zh-hk': '香港紙質食品包裝訂製 — 食品紙盒 / 食品紙袋 / 防油紙卡 / 禮盒 / 彩盒',
-      'en': 'Paper Food Packaging Made for USA · Food-Safe Paper Boxes / Bags / Greaseproof Cards',
-      'ja': '紙製食品パッケージ印刷 — 食品用紙箱 / 紙袋 / 耐油紙カード / ギフト箱',
+      // 2026-09-30 B1/D2 批: H1 头部词前置 (包裝盒訂製/custom packaging boxes/パッケージ印刷)
+      'zh-hk': '香港包裝盒訂製 — 食品紙盒 / 食品紙袋 / 防油紙卡 / 禮盒 / 彩盒',
+      'en': 'Custom Packaging Boxes Made for USA · Food-Safe Paper Boxes / Bags / Greaseproof Cards',
+      'ja': 'パッケージ印刷 カスタム — 食品用紙箱 / 紙袋 / 耐油カード / ギフト箱',
     },
     'paper-bags': {
       'zh-hk': '香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
@@ -128,7 +129,8 @@ export default function CategoryPage({
     },
     'menus': {
       'zh-hk': '香港菜單印刷 — PVC菜單 / 紙質菜單 / 精裝菜單 / 一次性菜單',
-      'en': 'Custom Menus Free Shipping · 100 MOQ Waterproof PVC + Hardcover · Made for USA Restaurants',
+      // 2026-09-30 B4 批: en H1 补「Menu Printing」头词 + MOQ 100→10 对齐 products.ts (pvc-menus minQuantity=10)
+      'en': 'Menu Printing Free Shipping · 10 MOQ Waterproof PVC + Hardcover · Made for USA Restaurants',
       'ja': 'メニュー印刷 カスタム — PVC / 紙 / ハードカバー / 使い捨て',
     },
     'red-packets': {
@@ -158,9 +160,10 @@ export default function CategoryPage({
       'ja': '冊子印刷 カスタム — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
     },
     'educational': {
-      'zh-hk': '香港校園教育印刷 — 證書 / 作業簿 / 教材 / 學業簿',
-      'en': 'Custom Education Printing Free Shipping · 100 MOQ Certificates/Workbooks · USA Schools',
-      ja: '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
+      // 2026-09-30 A3 批: H1 主词前置 證書印刷/certificate printing/証明書印刷; en 去 MOQ 单数谎言 (证书100/作业簿10)
+      'zh-hk': '香港證書印刷 — 校園教育 / 作業簿 / 教材 / 學業簿',
+      'en': 'Certificate Printing Free Shipping · Certificates / Workbooks / Textbooks Bulk · USA Schools',
+      ja: '証明書印刷 カスタム — 教育印刷 / ワークブック / 教科書 / 学用品',
     },
     'envelopes': {
       'zh-hk': '香港信封印刷定製 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
@@ -186,7 +189,8 @@ export default function CategoryPage({
     'japan-doujin': {
       'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 明信片套裝 / 環保托特袋 Comiket 24h 特急',
       en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Booklets Postcards Tote Bags · USA Anime Fans',
-      ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / ポストカード / エコトート コミケ 24時間特急',
+      // 2026-09-30 D3 批: ja H1 去「USA コミッション」残留, コミケ+印刷 同现强化
+      ja: '同人誌印刷 10部〜 コミケ 24時間特急 · A5/B5 / ポストカード / エコトート',
     },
     'wedding-invitations': {
       'zh-hk': '香港燙金喜帖印刷定製 — 中式龍鳳 / 西式燙金 / Save the Date / 教堂婚禮',

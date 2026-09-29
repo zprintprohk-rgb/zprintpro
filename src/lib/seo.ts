@@ -396,15 +396,16 @@ const categorySeoData: Record<string, {
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
       // 2026-09-19 全站起訂量修正: 1張起印 (與 minQuantity 100 不符) → 10張起印 (真實口徑)
-      'zh-hk': 'small batch 貼紙印刷 防水抗UV・10張起印・異形裁切・燙金 | 智印港',
-      en: 'Small Batch Sticker Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping $99+ | ZprintPro',
-      ja: 'small batch PVC シール 防水印刷 10枚〜・短納期2-4日・DHL全国 | ZprintPro',
+      // 2026-09-30 A1/A4/B4 批: zh 去英文前缀主词前置「貼紙印刷」; ja 日文主词前置「シール印刷」; en 补 Label
+      'zh-hk': '貼紙印刷 10張起・防水透明異形貼紙・免費設計燙金 | 智印港',
+      en: 'Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro',
+      ja: 'シール印刷 10枚〜・オリジナルステッカー 防水/透明/ダイカット・2-4日発送 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
       // 加長尾: free shipping / no minimum / made in USA / free proof / small business / bulk discount
       'en': 'sticker printing,custom stickers,waterproof stickers,clear stickers,gold foil stickers,die cut stickers,small batch stickers,logo stickers,label printing,UV stickers,matte stickers,glossy stickers,packaging stickers,restaurant stickers,free shipping stickers,USA sticker printing',
-      'ja': 'ステッカー印刷,オリジナルステッカー,防水ステッカー,透明ステッカー,金箔ステッカー,ダイカットステッカー,小ロットステッカー,ロゴステッカー,ラベル印刷,UVステッカー,マットステッカー,光沢ステッカー',
+      'ja': 'シール印刷,ステッカー印刷,オリジナルシール,オリジナルステッカー,防水ステッカー,透明ステッカー,金箔ステッカー,ダイカットステッカー,小ロットステッカー,ロゴステッカー,ラベル印刷,UVステッカー,マットステッカー,光沢ステッカー',
     },
     descriptions: {
       'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
@@ -440,9 +441,10 @@ const categorySeoData: Record<string, {
   'packaging': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
-      'zh-hk': '紙質食品包裝盒印刷 100個起 | 食品紙盒/紙袋 | 智印港',
-      en: 'Paper Food Packaging Boxes from $0.85 | Food-Safe Box/Bag, Made for USA | ZprintPro',
-      ja: '紙製食品パッケージ印刷 100個〜 | 食品用紙箱・紙袋・耐油カード | ZprintPro',
+      // 2026-09-30 B1/D2 批: 头部词前置 (包裝盒訂製/custom packaging boxes/パッケージ印刷), 食品为细分钩子
+      'zh-hk': '包裝盒訂製 100個起・食品紙盒/紙袋/防油卡 3D打稿 | 智印港',
+      en: 'Custom Packaging Boxes from $0.85 | Food-Safe Paper Box/Bag Printing, Made for USA | ZprintPro',
+      ja: 'パッケージ印刷 100個〜・食品用紙箱/紙袋 クラフト対応 | ZprintPro',
     },
     keywords: {
       'zh-hk': '包裝盒訂製,紙盒訂製,彩盒訂製,禮盒訂製,結構設計,燙金包裝,小批量包裝,定制包裝,品牌包裝,電商包裝,化妝品包裝,食品包裝,茶葉包裝,電子產品包裝,食品包裝盒,食品包裝印刷,化妝品包裝盒,DHL全球',
@@ -459,7 +461,8 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': 'a1a2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+      // 2026-09-30 B2 批: 去除 GSC 校准残留 token「a1a2」, 主词前置 海報印刷
+      'zh-hk': '海報印刷 A0/A1/A2・防水1張起印・展覽/MTR 燈箱 | 智印港',
       'en': '2 Meter Poster Printing A0-A2 UV Rush | ZprintPro',
       'ja': '2メートル ポスター印刷 A0/A1/A2 防水UV 短納期 | ZprintPro',
     },
@@ -517,7 +520,8 @@ const categorySeoData: Record<string, {
     titles: {
       'zh-hk': '同人周邊印刷 10本起 · 同人誌/明信片/托特袋 Comiket 24h特急 | 智印港',
       en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Booklets/Postcards/Totes | ZprintPro',
-      ja: '同人誌印刷 10部〜 USA コミッション · ポストカード/エコトート コミケ24時間特急 | ZprintPro',
+      // 2026-09-30 D3 批: 去「USA コミッション」生硬残留, コミケ 头词与 印刷 同现强化
+      ja: '同人誌印刷 コミケ24時間特急・ポストカード/エコトート 10部〜 | ZprintPro',
     },
     keywords: {
       'zh-hk': '同人誌印刷,同人周邊,亞克力立牌,全息貼紙,和紙膠帶,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
@@ -620,9 +624,10 @@ const categorySeoData: Record<string, {
   },
   'educational': {
     titles: {
-      'zh-hk': '校園教育印刷 · 證書/作業簿/教材 學校批量優惠 FSC認證 30秒報價 | 智印港',
-      en: 'Education Printing 10 MOQ | Certificates / Workbooks / Textbooks Bulk Discount | ZprintPro',
-      ja: '教育印刷 10部〜 | 証明書・ワークブック・教科書 学校一括割引 FSC認証 | ZprintPro',
+      // 2026-09-30 A3 批: 主词前置需求头部词 (證書印刷/certificate printing/証明書印刷); MOQ 证书100/作业簿10 并存不写单数
+      'zh-hk': '證書印刷・校園教育批量優惠 作業簿/教材 FSC認證 | 智印港',
+      en: 'Certificate Printing | Certificates / Workbooks / Textbooks Bulk for USA Schools | ZprintPro',
+      ja: '証明書印刷・教育印刷 学校一括割引 FSC認証 | ZprintPro',
     },
     keywords: {
       'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',

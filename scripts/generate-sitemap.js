@@ -76,7 +76,7 @@ for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePi
 const clusterBlogSlugs = clusterSlugs.filter(s => !pillarSlugs.has(s));
 const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs, ...buyingGuideSlugs])];
 
-const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','institutional-printing/','trade-program/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
+const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','services/business-cards-printing/','insights/hk-print-inquiry-index/','institutional-printing/','trade-program/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
 function getPriority(u) {
   if(u==='')return'1.0';
