@@ -228,7 +228,7 @@ export async function generateMetadata({ params }: LegalPageProps): Promise<Meta
     alternates: {
       canonical: `${siteConfig.url}/${locale}/legal/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/legal/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/legal/`,
         en: `${siteConfig.url}/en/legal/`,
         'ja-JP': `${siteConfig.url}/ja/legal/`,
         'x-default': `${siteConfig.url}/en/legal/`,

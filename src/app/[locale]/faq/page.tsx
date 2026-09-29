@@ -14,7 +14,7 @@ const FAQ_DATA_MAP: Record<string, { metadata: any; categories: any[] }> = {
 };
 
 const LANGUAGE_MAP: Record<string, string> = {
-  'zh-hk': 'zh-HK',
+  'zh-hk': 'zh-Hant-HK',
   'en': 'en',
   'ja': 'ja-JP',
 };
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
     alternates: {
       canonical: `https://zprintpro.com/${params.locale}/faq/`,
       languages: {
-        'zh-HK': 'https://zprintpro.com/zh-hk/faq/',
+        'zh-Hant-HK': 'https://zprintpro.com/zh-hk/faq/',
         'en': 'https://zprintpro.com/en/faq/',
         'ja-JP': 'https://zprintpro.com/ja/faq/',
       },

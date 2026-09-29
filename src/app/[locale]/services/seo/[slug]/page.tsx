@@ -71,7 +71,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
     alternates: {
       canonical: `${siteConfig.url}/${locale}/services/seo/${data.slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/services/seo/${data.slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/services/seo/${data.slug}/`,
         'en': `${siteConfig.url}/en/services/seo/${data.slug}/`,
         'ja': `${siteConfig.url}/ja/services/seo/${data.slug}/`,
         'x-default': `${siteConfig.url}/zh-hk/services/seo/${data.slug}/`,

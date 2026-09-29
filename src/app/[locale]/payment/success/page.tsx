@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: SuccessPageProps): Promise<Me
     alternates: {
       canonical: `https://zprintpro.com/${locale}/payment/success/`,
       languages: {
-        'zh-HK': 'https://zprintpro.com/payment/success/',
+        'zh-Hant-HK': 'https://zprintpro.com/payment/success/',
         'en': 'https://zprintpro.com/en/payment/success/',
         'ja': 'https://zprintpro.com/ja/payment/success/',
         'x-default': 'https://zprintpro.com/en/payment/success/',

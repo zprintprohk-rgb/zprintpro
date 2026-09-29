@@ -129,7 +129,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/business-card-printing/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/business-card-printing/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/business-card-printing/`,
         en: `${siteConfig.url}/en/business-card-printing/`,
         ja: `${siteConfig.url}/ja/business-card-printing/`,
         'x-default': `${siteConfig.url}/zh-hk/business-card-printing/`,

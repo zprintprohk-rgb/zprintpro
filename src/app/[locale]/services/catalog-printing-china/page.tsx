@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://zprintpro.com/${locale}/services/catalog-printing-china/`,
       languages: {
-        'zh-HK': 'https://zprintpro.com/zh-hk/services/catalog-printing-china/',
+        'zh-Hant-HK': 'https://zprintpro.com/zh-hk/services/catalog-printing-china/',
         'en': 'https://zprintpro.com/en/services/catalog-printing-china/',
         'ja': 'https://zprintpro.com/ja/services/catalog-printing-china/',
         'x-default': 'https://zprintpro.com/zh-hk/services/catalog-printing-china/',

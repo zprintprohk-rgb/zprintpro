@@ -126,8 +126,8 @@ export async function generateMetadata({ params }: { params: { locale: string } 
         'en-AU': '/en',
         'en-CA': '/en',
         'ja-JP': '/ja',
-        'zh-HK': '/zh-hk',
-        'x-default': '/',
+        'zh-Hant-HK': '/zh-hk',
+        'x-default': '/zh-hk',
       },
     },
     icons: {

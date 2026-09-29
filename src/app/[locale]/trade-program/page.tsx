@@ -255,7 +255,7 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
     alternates: {
       canonical: `https://zprintpro.com/${params.locale}/trade-program/`,
       languages: {
-        'zh-HK': `https://zprintpro.com/zh-hk/trade-program/`,
+        'zh-Hant-HK': `https://zprintpro.com/zh-hk/trade-program/`,
         'en': `https://zprintpro.com/en/trade-program/`,
         'ja': `https://zprintpro.com/ja/trade-program/`,
       },

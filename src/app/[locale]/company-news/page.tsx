@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: CompanyNewsPageProps): Promis
     alternates: {
       canonical: `${siteConfig.url}/${locale}/company-news/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/company-news/`,
+        'zh-Hant-HK': `${siteConfig.url}/company-news/`,
         'en': `${siteConfig.url}/en/company-news/`,
         'ja': `${siteConfig.url}/ja/company-news/`,
         'x-default': `${siteConfig.url}/zh-hk/company-news/`,

@@ -7483,6 +7483,51 @@ export const products: Product[] = [
         ],
       },
     
+    longDescription: `<h3>裝訂方式點樣揀：膠裝 vs 騎馬釘</h3>
+<table>
+  <thead><tr><th>裝訂</th><th>頁數範圍</th><th>適用場景</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>騎馬釘</td><td>8-64 頁</td><td>薄本漫畫、今撮本、場刊；可完全攤平，翻閱方便</td></tr>
+    <tr><td>膠裝（Perfect Binding）</td><td>65 頁以上</td><td>厚本畫集、合同本；有書脊，方便書架陳列同系列收藏</td></tr>
+  </tbody>
+</table>
+<h3>內頁紙材點揀</h3>
+<p>標準配置係 FSC 認證道林紙 90g 內頁 + 銅版紙 90g 封面（封面彩色、內頁單色）。內頁文字為主揀 90g 已足夠；滿版插畫想提升質感可升級進階選項。尺寸支援 A5（148×210mm）/ B5（182×257mm）/ A4 自訂。</p>
+<h3>出血同安全區（入稿前必讀）</h3>
+<p>跨頁插畫記得預留 3mm 出血，重要線稿、對白同簽名放喺安全區（裁切線內 5mm）以內。騎馬釘裝訂要留意釘位預留：跨頁位預留 5mm 裝訂邊，避免重要畫面被釘書釘遮擋。PDF 入稿前將所有字體轉外框（Outline），色彩模式用 CMYK。</p>
+<h3>交期點計</h3>
+<p>標準交期 5-7 個工作天，深圳自營工廠 + DHL Express 直送日本 2-4 個工作天。Comiket 前提供 24 小時特急對應，夏天（6-7 月）同冬天（12 月）落單高峰建議提早 10-15 個工作天落單。</p>
+`,
+    longDescriptionEn: `<h3>Binding Options: Perfect Binding vs Saddle Stitch</h3>
+<table>
+  <thead><tr><th>Binding</th><th>Page Range</th><th>Best For</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Saddle Stitch</td><td>8-64 pages</td><td>Thin manga, event booklets; lays fully flat for reading</td></tr>
+    <tr><td>Perfect Binding</td><td>65+ pages</td><td>Thick art books, anthologies; printable spine for shelf display</td></tr>
+  </tbody>
+</table>
+<h3>Interior Paper Selection</h3>
+<p>Standard spec: FSC-certified uncoated 90gsm interior + 90gsm coated cover (full-color cover, mono interior). Text-heavy pages work well on 90gsm; upgrade to the premium option for full-bleed illustration work. Sizes: A5 (148×210mm), B5 (182×257mm), custom A4.</p>
+<h3>Bleed and Safe Zone (Read Before Uploading)</h3>
+<p>Keep 3mm bleed on all full-bleed artwork; place key linework, dialogue and signatures inside the 5mm safe zone from trim. For saddle stitch, reserve a 5mm binding margin at the spine side of spreads so staples never cover key art. Convert all fonts to outlines and submit in CMYK PDF.</p>
+<h3>Turnaround</h3>
+<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. A 24-hour rush is available before Comiket; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
+`,
+    longDescriptionJa: `<h3>製本の選び方：無線綴じ vs 中綴じ</h3>
+<table>
+  <thead><tr><th>製本</th><th>ページ数</th><th>おすすめの用途</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>中綴じ（騎馬釘）</td><td>8-64 ページ</td><td>薄めの漫画・イベント本。完全に開き、閲覧しやすい</td></tr>
+    <tr><td>無線綴じ（膠裝）</td><td>65 ページ以上</td><td>厚めの画集・合同誌。背表紙あり、棚に並べて保管しやすい</td></tr>
+  </tbody>
+</table>
+<h3>本文用紙の選び方</h3>
+<p>標準仕様：FSC 認証上質紙 90g（本文）+ コート紙 90g（表紙）。表紙フルカラー・本文モノクロ。文字主体なら 90g で十分、塗り絵・イラスト主体ならプレミアム選択肢へ。サイズは A5（148×210mm）/ B5（182×257mm）/ A4 カスタム対応。</p>
+<h3>塗り足しとセーフゾーン（入稿前の必読）</h3>
+<p>見開きイラストは 3mm の塗り足し（ドブ）を確保し、重要な線画・セリフ・サインは断裁線から 5mm 内側のセーフゾーンへ。中綴じはノド側に 5mm のマージンを取り、ホチキス針が重要な絵を隠さないように。フォントはアウトライン化、カラーモードは CMYK の PDF でご入稿ください。</p>
+<h3>納期の目安</h3>
+<p>標準納期 5-7 営業日、深圳自社工場から DHL Express で日本へ 2-4 営業日。コミケ前は 24 時間特急対応可。夏（6-7 月）・冬（12 月）の繁忙期は 10-15 営業日の余裕を持ってご発注ください。</p>
+`,
     // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
     seoDescription: {"zh-hk": "", "en": "", "ja": ""},

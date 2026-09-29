@@ -207,7 +207,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
     alternates: {
       canonical: `${siteConfig.url}/${params.locale}/contact/`,
       languages: {
-        "zh-HK": `${siteConfig.url}/zh-hk/contact/`,
+        "zh-Hant-HK": `${siteConfig.url}/zh-hk/contact/`,
         "en": `${siteConfig.url}/en/contact/`,
         "ja": `${siteConfig.url}/ja/contact/`,
         "x-default": `${siteConfig.url}/zh-hk/contact/`,

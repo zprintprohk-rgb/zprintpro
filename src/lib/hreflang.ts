@@ -69,7 +69,7 @@ export function generateHreflangTags(currentLocale: Locale, path: string = ''): 
   tags.push({
     rel: 'alternate',
     hrefLang: 'x-default',
-    href: `${BASE_URL}/en${normalizedPath}`,
+    href: `${BASE_URL}/zh-hk${normalizedPath}`,
   });
 
   return tags;

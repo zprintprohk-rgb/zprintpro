@@ -1946,6 +1946,19 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+
+<h3>小批量單價梯度（A4 版面起，真實報價引擎口徑）</h3>
+<p>下表按本頁報價引擎真實參數推導：A4 版面基價 HK$38 起，含常用尺寸與數量折扣；PVC 防水為基準材質，PP 合成紙 +HK$10、PET 透明 +HK$15，異形模切 +HK$30。實際結算以即時報價為準。</p>
+<table>
+  <thead><tr><th>數量</th><th>小尺寸 (≤50mm)</th><th>中尺寸 (51-100mm)</th><th>大尺寸 (&gt;100mm)</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>10 張（起訂）</td><td>HK$89/張</td><td>HK$134/張</td><td>HK$196/張</td></tr>
+    <tr class="border-b border-gray-200"><td>100 張</td><td>HK$38/張</td><td>HK$57/張</td><td>HK$84/張</td></tr>
+    <tr class="border-b border-gray-200"><td>500 張</td><td>HK$29/張</td><td>HK$43/張</td><td>HK$63/張</td></tr>
+    <tr><td>1000 張</td><td>HK$29/張以下</td><td>報價為準</td><td>報價為準</td></tr>
+  </tbody>
+</table>
+<p>口徑說明：10 張檔為起訂價（HK$38 × 2.35 起訂係數，小尺寸）；100 張檔為基準價 × 尺寸倍率（小 ×1 / 中 ×1.5 / 大 ×2.2）；500 張檔已計 15% 批量折扣。選用 PP / PET 材質或異形模切按上方加價另計。</p>
 `,
     longDescriptionEn: `<h3>Small Batch Stickers for Global Brands</h3>
 <p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order as few as 50 stickers with no setup fees, and we'll cut, print, and ship within 3-5 days. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
@@ -2039,6 +2052,19 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>Can I get a sample before ordering?</strong></summary><p>Yes. We offer digital color proofing free. Physical samples ship via DHL Express for $25 (refunded on full order placement).</p></details>
 <details class="my-2"><summary><strong>Are the stickers waterproof?</strong></summary><p>Vinyl stickers with our lamination are fully waterproof. Paper and kraft stickers are water-resistant (brief splash only). For outdoor or wet use, choose vinyl.</p></details>
 
+
+<h3>Small-Batch Sticker Unit Price Gradient (Real Quote-Engine Rates)</h3>
+<p>Derived from this page's live pricing engine: A4-sheet base price from HK$38 (≈US$5) with size multipliers and a 10-sheet minimum. PVC waterproof stock is the baseline; PP synthetic paper +HK$10, clear PET +HK$15, custom die-cut +HK$30. Final checkout quote governs.</p>
+<table>
+  <thead><tr><th>Quantity</th><th>Small (≤50mm)</th><th>Medium (51-100mm)</th><th>Large (&gt;100mm)</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>10 sheets (MOQ)</td><td>HK$89/sheet</td><td>HK$134/sheet</td><td>HK$196/sheet</td></tr>
+    <tr class="border-b border-gray-200"><td>100 sheets</td><td>HK$38/sheet</td><td>HK$57/sheet</td><td>HK$84/sheet</td></tr>
+    <tr class="border-b border-gray-200"><td>500 sheets</td><td>HK$29/sheet</td><td>HK$43/sheet</td><td>HK$63/sheet</td></tr>
+    <tr><td>1000 sheets</td><td>below HK$29/sheet</td><td>by quote</td><td>by quote</td></tr>
+  </tbody>
+</table>
+<p>How to read it: the 10-sheet tier applies the MOQ factor (HK$38 × 2.35, small size); the 100-sheet tier is the base price × size multiplier (×1 / ×1.5 / ×2.2); the 500-sheet tier includes the 15% bulk discount. Add-ons price separately per the table above. MOQ is 10 sheets per A4 layout — the lowest barrier for a test run in Asia manufacturing.</p>
 `,
     longDescriptionJa: `
 <h3>素材材質対比</h3>
@@ -2184,6 +2210,19 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+
+<h3>小ロット単価表（A4 版基準・実報価エンジン準拠）</h3>
+<p>本ページの見積もりエンジン実パラメータから算出：A4 版基本価格 HK$38（約 700 円）〜、最小ロット 10 枚。PVC 防水が基準材質で、PP 合成紙 +HK$10、PET 透明 +HK$15、型抜き +HK$30。最終価格は見積もりでご確認ください。</p>
+<table>
+  <thead><tr><th>枚数</th><th>小サイズ (≤50mm)</th><th>中サイズ (51-100mm)</th><th>大サイズ (&gt;100mm)</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>10 枚（最小ロット）</td><td>HK$89/枚</td><td>HK$134/枚</td><td>HK$196/枚</td></tr>
+    <tr class="border-b border-gray-200"><td>100 枚</td><td>HK$38/枚</td><td>HK$57/枚</td><td>HK$84/枚</td></tr>
+    <tr class="border-b border-gray-200"><td>500 枚</td><td>HK$29/枚</td><td>HK$43/枚</td><td>HK$63/枚</td></tr>
+    <tr><td>1000 枚</td><td>HK$29/枚以下</td><td>要見積もり</td><td>要見積もり</td></tr>
+  </tbody>
+</table>
+<p>読み方：10 枚帯は最小ロット係数（HK$38 × 2.35、小サイズ）適用。100 枚帯は基準価格 × サイズ倍率（×1 / ×1.5 / ×2.2）。500 枚帯は 15% の数量割引込み。10 枚から対応する小ロット対応は、テスト印刷やイベント限定グッズに最適です。</p>
 `,
   },
   'die-cut-stickers': {

@@ -173,7 +173,10 @@ export function getSiteNAP(locale: Locale): SiteNAP {
       legalEntityName: '深圳市彩龙印刷包装有限公司',
       // Backlinks / citation profiles (zh-hk market)
       sameAs: [
-        // HK business directories (to be created)
+                // 2026-09-30 W2 Phase 1.2: 真实可核验自有锚点 (GitHub 组织+仓库, HTTP 200 已验)
+        'https://github.com/zprintprohk-rgb',
+        'https://github.com/zprintprohk-rgb/zprintpro',
+// HK business directories (to be created)
         // 'https://www.google.com/maps/place/ZprintPro',
         // 'https://www.yellowpages.com.hk/',
         // 'https://hk.asiaxpat.com/',
@@ -199,7 +202,10 @@ export function getSiteNAP(locale: Locale): SiteNAP {
       areaServed: ['Japan', 'China', 'Asia'],
       // Backlinks / citation profiles (ja market - 严格合规)
       sameAs: [
-        // Japan business directories (to be created)
+                // 2026-09-30 W2 Phase 1.2: 真实可核验自有锚点 (GitHub 组织+仓库, HTTP 200 已验)
+        'https://github.com/zprintprohk-rgb',
+        'https://github.com/zprintprohk-rgb/zprintpro',
+// Japan business directories (to be created)
         // 'https://www.google.com/maps/place/ZprintPro',
         // 'https://itp.ne.jp/',
         // 'https://www.ekiten.jp/',
@@ -227,7 +233,10 @@ export function getSiteNAP(locale: Locale): SiteNAP {
     areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
       // Backlinks / citation profiles (en/global market)
       sameAs: [
-        // Global business directories (to be created)
+                // 2026-09-30 W2 Phase 1.2: 真实可核验自有锚点 (GitHub 组织+仓库, HTTP 200 已验)
+        'https://github.com/zprintprohk-rgb',
+        'https://github.com/zprintprohk-rgb/zprintpro',
+// Global business directories (to be created)
         // 'https://www.google.com/maps/place/ZprintPro',
         // 'https://clutch.co/',
         // 'https://www.trustpilot.com/',
@@ -1245,6 +1254,8 @@ export function generateProductJsonLd(
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
+    // 2026-09-30 W2: 实体对齐锚点 — 三语种同 sku, @id 为 per-locale 页面节点（跨语对齐靠 sku+brand+hreflang）
+    '@id': `${siteConfig.url}/${locale}/product/${slug}/#product`,
     name,
     description,
     image: absImage,
@@ -1768,7 +1779,9 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
       postalCode: nap.address.postalCode,
     },
     // G1 (v9.2.3): 真实社媒 sameAs (X + LinkedIn, §13.16.1 目录 campaign 同源; 禁假链接)
-    sameAs: ['https://twitter.com/zprintpro', 'https://linkedin.com/company/zprintpro'],
+    sameAs: ['https://twitter.com/zprintpro', 'https://linkedin.com/company/zprintpro',
+      // 2026-09-30 W2 Phase 1.2: GitHub 真实锚点 (HTTP 200 已验)
+      'https://github.com/zprintprohk-rgb', 'https://github.com/zprintprohk-rgb/zprintpro'],
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
     contactPoint: {
       '@type': 'ContactPoint',

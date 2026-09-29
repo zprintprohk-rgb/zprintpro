@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: HelpCenterPageProps): Promise
     alternates: {
       canonical: `${siteConfig.url}/${locale}/help-center/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/help-center/`,
+        'zh-Hant-HK': `${siteConfig.url}/help-center/`,
         'en': `${siteConfig.url}/en/help-center/`,
         'ja': `${siteConfig.url}/ja/help-center/`,
         'x-default': `${siteConfig.url}/zh-hk/help-center/`,

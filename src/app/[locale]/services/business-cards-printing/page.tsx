@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://zprintpro.com/${locale}/services/business-cards-printing/`,
       languages: {
-        'zh-HK': 'https://zprintpro.com/zh-hk/services/business-cards-printing/',
+        'zh-Hant-HK': 'https://zprintpro.com/zh-hk/services/business-cards-printing/',
         'en': 'https://zprintpro.com/en/services/business-cards-printing/',
         'ja': 'https://zprintpro.com/ja/services/business-cards-printing/',
         'x-default': 'https://zprintpro.com/zh-hk/services/business-cards-printing/',
