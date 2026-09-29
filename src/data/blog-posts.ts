@@ -2128,6 +2128,33 @@ const lpRollUpBannerPrintingGuide: BlogPostMeta = {
   },
 };
 
+// 2026-09-29 ZP-daily-content: コミケ印刷 (GSC 9/18 28d: コミケ 印刷 93 imps pos 29.8; 承接 SKU doujinshi-printing DJ-001 Comiket 專用)
+// 3 快速答案 + 3 表格 + 6 FAQ + 3 wa.me CTA + 11 唯一内链 + 3 locale native; 价格/起印/交期全部 products.ts 派生
+const lpComiketPrintingPrepGuide: BlogPostMeta = {
+  slug: 'comiket-printing-prep-guide',
+  categoryKey: 'japan-doujin',
+  source: 'daily',
+  date: '2026-09-29',
+  title: {
+    'zh-hk': "Comiket 同人誌印刷備戰指南：10 本起・24 小時特急 | 智印港",
+    en: "Comiket Doujinshi Printing: 10 MOQ, 24h Rush | ZprintPro",
+    ja: "コミケ 同人誌印刷 10冊から 24時間特急対応 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "Comiket 109（2026 年 12 月 29-31 日）同人誌印刷備戰指南：10 本起印、A5／B5、表紙全彩＋內頁單色、Comiket 前 24 小時特急、標準 5-7 個工作天；週邊貼紙 10 張起印，時間線、價格表同交稿規格一次過睇清。",
+    en: "Comiket 109 (Dec 29-31, 2026) doujinshi printing prep: 10-copy MOQ, A5/B5, color cover + mono interior, 24-hour rush before the event, 5-7 working day standard production; sticker goods from 10 pcs, with timeline, prices and artwork specs.",
+    ja: "コミケ 109（2026 年 12 月 29-31 日）出展向け同人誌印刷ガイド：10 冊から、A5／B5、表紙フルカラー＋本文モノクロ、コミケ前 24 時間特急、標準納期 5〜7 営業日、ステッカーグッズは 10 枚から、スケジュール・価格・入稿仕様を解説。",
+  },
+  targetKeywords: {
+    primary: 'コミケ 印刷',
+    secondary: [
+      'コミケ 印刷', '同人誌 印刷 コミケ', 'コミケ 準備', '同人誌 即日 印刷',
+      'Comiket printing', 'doujinshi printing', 'comiket prep guide',
+      '同人誌印刷 小ロット', 'コミケ グッズ 印刷', 'Comiket 109',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2298,6 +2325,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpSelfPublishingGuide,
   lpFoldedLeafletGuide,
   lpRollUpBannerPrintingGuide,
+  // 2026-09-29 ZP-daily-content: コミケ 109 印刷備戰 (GSC コミケ 印刷 93 imps pos 29.8, 9/18 28d)
+  lpComiketPrintingPrepGuide,
   ];
 
 // =============================================================================
