@@ -2262,7 +2262,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const educationalContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港校園教育印刷 — 作業簿／教科書／證書，專業教育印刷服務',
+    h2: '香港學校印刷 — 作業簿／教科書／證書，專業學校印刷服務',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -2270,7 +2270,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 教育印刷專家：作業簿到教科書一站式',
           points: [
             '提供作業簿、練習簿、教科書、教師手冊、成績表、證書、獎狀、畢業紀念冊等全系列教育印刷',
-            '滿足「教育印刷 香港」、「作業簿印刷」、「教科書印刷」、「證書印刷」等高搜索量關鍵詞',
+            '滿足「學校印刷 香港」、「作業簿印刷」、「教科書印刷」、「證書印刷」等高搜索量關鍵詞',
             '服務對象覆蓋幼稚園、小學、中學、大學、補習社、教育機構等全教育階段',
           ],
         },
@@ -2356,7 +2356,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Educational Printing — Exercise Books / Textbooks / Certificates, Professional Education Printing Services',
+    h2: 'School Printing — Exercise Books / Textbooks / Certificates, Professional School Printing Services',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Educational Printing?',
       items: [
@@ -2364,7 +2364,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Education Printing Specialists: Exercise Books to Textbooks in One Place',
           points: [
             'Full range: exercise books, workbooks, textbooks, teacher manuals, report cards, certificates, awards, and graduation yearbooks.',
-            'Covers high-search keywords: "educational printing", "exercise book printing", "textbook printing", "certificate printing".',
+            'Covers high-search keywords: "school printing", "exercise book printing", "textbook printing", "certificate printing".',
             'Serving kindergartens, primary schools, secondary schools, universities, tutoring centers, and all educational institutions.',
           ],
         },
@@ -2436,7 +2436,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'What is the minimum order for educational printing?', a: '50 pcs (digital printing). 500+ pcs recommended for offset. Educational institutions enjoy exclusive discounts.' },
+      { q: 'What is the minimum order for educational printing?', a: 'Exercise books from 10 pcs; certificates from 100 pcs (digital printing). 500+ pcs recommended for offset. Educational institutions enjoy exclusive discounts.' },
       { q: 'Can you print exercise books and textbooks?', a: 'Yes. Full range: exercise books, workbooks, textbooks, teacher manuals, and more.' },
       { q: 'Do you use eco-friendly materials?', a: 'Yes. FSC-certified eco paper and soy-based inks — non-toxic, meeting children\'s product safety standards.' },
       { q: 'Can you print certificates and awards?', a: 'Yes. Foil-stamped certificates, anti-fraud watermark certificates, and awards available.' },
@@ -2552,7 +2552,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     packaging: { 'zh-hk': '包裝盒印刷', en: 'Packaging', ja: 'パッケージ印刷' },
     'business-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード印刷' },
     stickers: { 'zh-hk': '貼紙印刷', en: 'Sticker Printing', ja: 'シール印刷' },
-    flyers: { 'zh-hk': '傳單印刷印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
+    flyers: { 'zh-hk': '宣傳單張印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
     posters: { 'zh-hk': '海報印刷', en: 'Poster Printing', ja: 'ポスター印刷' },
     'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bag Printing', ja: '紙袋印刷' },
     banners: { 'zh-hk': '噴繪廣告印刷', en: 'Banner Printing', ja: 'バナー印刷' },
@@ -2561,7 +2561,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     envelopes: { 'zh-hk': '信封印刷', en: 'Envelope Printing', ja: '封筒印刷' },
     calendars: { 'zh-hk': '月曆印刷', en: 'Calendar Printing', ja: 'カレンダー印刷' },
     'red-packets': { 'zh-hk': '利是封印刷', en: 'Red Packet Printing', ja: 'ポチ袋印刷' },
-    educational: { 'zh-hk': '校園教育印刷', en: 'Educational Printing', ja: '教育印刷' },
+    educational: { 'zh-hk': '學校印刷・證書', en: 'School Printing', ja: '教科書印刷・証明書' },
   };
   
   const name = nameMap[categorySlug]?.[locale as 'zh-hk' | 'en' | 'ja'] || categorySlug;

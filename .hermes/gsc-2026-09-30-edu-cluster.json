@@ -1,0 +1,755 @@
+{
+ "24h": {
+  "total_queries": 143,
+  "edu_queries": 3,
+  "edu_imps": 3,
+  "queries": {
+   "certification workbook printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "證書印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 49.0
+   }
+  }
+ },
+ "7d": {
+  "total_queries": 604,
+  "edu_queries": 15,
+  "edu_imps": 40,
+  "queries": {
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 37.38
+   },
+   "教科書 印刷": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 12.83
+   },
+   "school exercise book printing": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 17.17
+   },
+   "證書紙材質": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 3.0
+   },
+   "school exercise book print": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 10.33
+   },
+   "textbook printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 9.5
+   },
+   "證書印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 41.0
+   },
+   "教科書印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "印刷 教科書": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 4.0
+   },
+   "print certificates": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "school exercise book printing london": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 19.0
+   },
+   "school exercise books manufacturers": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 25.0
+   },
+   "certificate printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   },
+   "course workbook printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 75.0
+   }
+  }
+ },
+ "28d": {
+  "total_queries": 1000,
+  "edu_queries": 23,
+  "edu_imps": 139,
+  "queries": {
+   "school exercise book printing": {
+    "clicks": 0,
+    "imps": 33,
+    "ctr": 0.0,
+    "pos": 16.7
+   },
+   "卒業アルバム 印刷": {
+    "clicks": 0,
+    "imps": 18,
+    "ctr": 0.0,
+    "pos": 66.44
+   },
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "pos": 40.29
+   },
+   "school exercise book print": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 16.22
+   },
+   "教科書 印刷": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 25.89
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 48.44
+   },
+   "證書紙材質": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 5.43
+   },
+   "證書 影印": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 25.33
+   },
+   "school exercise book printing london": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 27.4
+   },
+   "textbook printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 9.25
+   },
+   "school printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 10.5
+   },
+   "school print": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "校簿": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 10.33
+   },
+   "證書印刷": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 16.33
+   },
+   "print certificates": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "workbook printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 22.5
+   },
+   "証書": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 85.5
+   },
+   "printing textbooks": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "print textbooks": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "教科書印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "印刷 教科書": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 4.0
+   },
+   "卒業アルバム 販売": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   "證書印刷一張": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 5.0
+   }
+  }
+ },
+ "3mo": {
+  "total_queries": 1000,
+  "edu_queries": 21,
+  "edu_imps": 483,
+  "queries": {
+   "school exercise book printing": {
+    "clicks": 0,
+    "imps": 95,
+    "ctr": 0.0,
+    "pos": 22.61
+   },
+   "教科書 印刷": {
+    "clicks": 0,
+    "imps": 76,
+    "ctr": 0.0,
+    "pos": 39.83
+   },
+   "school exercise book print": {
+    "clicks": 0,
+    "imps": 75,
+    "ctr": 0.0,
+    "pos": 26.43
+   },
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 43,
+    "ctr": 0.0,
+    "pos": 41.53
+   },
+   "證書印刷": {
+    "clicks": 5,
+    "imps": 27,
+    "ctr": 0.1852,
+    "pos": 13.15
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 27,
+    "ctr": 0.0,
+    "pos": 45.93
+   },
+   "教科書 印刷会社": {
+    "clicks": 0,
+    "imps": 27,
+    "ctr": 0.0,
+    "pos": 62.44
+   },
+   "證書 影印": {
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "pos": 23.86
+   },
+   "卒業アルバム 印刷": {
+    "clicks": 0,
+    "imps": 21,
+    "ctr": 0.0,
+    "pos": 67.71
+   },
+   "證書紙材質": {
+    "clicks": 1,
+    "imps": 15,
+    "ctr": 0.0667,
+    "pos": 6.67
+   },
+   "教科書 印刷 会社": {
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "pos": 63.47
+   },
+   "印證書": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 15.57
+   },
+   "school exercise book printing london": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 30.71
+   },
+   "textbook printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 9.25
+   },
+   "school printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 10.5
+   },
+   "校簿": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 20.0
+   },
+   "educational workbook printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 60.75
+   },
+   "證書印刷一張": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "school print": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "print textbooks": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 2.5
+   },
+   "print certificates": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 12.0
+   }
+  }
+ },
+ "hk-7d": {
+  "total_queries": 270,
+  "edu_queries": 5,
+  "edu_imps": 17,
+  "queries": {
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 37.38
+   },
+   "證書紙材質": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 3.0
+   },
+   "證書印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 41.0
+   },
+   "certificate printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   }
+  }
+ },
+ "hk-28d": {
+  "total_queries": 589,
+  "edu_queries": 12,
+  "edu_imps": 54,
+  "queries": {
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "pos": 40.29
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 48.44
+   },
+   "證書紙材質": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 5.43
+   },
+   "證書 影印": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 25.33
+   },
+   "school printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 10.5
+   },
+   "school print": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "校簿": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 10.33
+   },
+   "證書印刷": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 16.33
+   },
+   "証書": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 85.5
+   },
+   "證書印刷一張": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   "印證書": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 17.0
+   },
+   "certificate printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   }
+  }
+ },
+ "hk-3mo": {
+  "total_queries": 884,
+  "edu_queries": 16,
+  "edu_imps": 162,
+  "queries": {
+   "學校印刷": {
+    "clicks": 0,
+    "imps": 43,
+    "ctr": 0.0,
+    "pos": 41.53
+   },
+   "證書印刷": {
+    "clicks": 5,
+    "imps": 27,
+    "ctr": 0.1852,
+    "pos": 13.15
+   },
+   "學校 印刷": {
+    "clicks": 0,
+    "imps": 27,
+    "ctr": 0.0,
+    "pos": 45.93
+   },
+   "證書 影印": {
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "pos": 23.86
+   },
+   "證書紙材質": {
+    "clicks": 1,
+    "imps": 15,
+    "ctr": 0.0667,
+    "pos": 6.67
+   },
+   "印證書": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 15.57
+   },
+   "school printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 10.5
+   },
+   "校簿": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 20.0
+   },
+   "證書印刷一張": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "school print": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "証書": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 85.5
+   },
+   "教科書 印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   "證書列印": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 19.0
+   },
+   "certificate printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   },
+   "証書 紙": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 44.0
+   },
+   "school printer": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 57.0
+   }
+  }
+ },
+ "us-3mo": {
+  "total_queries": 849,
+  "edu_queries": 13,
+  "edu_imps": 30,
+  "queries": {
+   "school exercise book printing": {
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "pos": 7.33
+   },
+   "educational workbook printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 60.75
+   },
+   "print textbooks": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 2.5
+   },
+   "print certificates": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "workbook printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 22.5
+   },
+   "printing textbooks": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "educational book printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 20.0
+   },
+   "school book printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 32.0
+   },
+   "school exercise book sizes": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 36.0
+   },
+   "k12 textbook pre-press production": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 50.0
+   },
+   "course workbook printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 75.0
+   },
+   "custom printed magnetic calendars for schools wholesale": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 85.0
+   },
+   "custom workbook printing in tajik": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 90.0
+   }
+  }
+ },
+ "jp-3mo": {
+  "total_queries": 273,
+  "edu_queries": 7,
+  "edu_imps": 141,
+  "queries": {
+   "教科書 印刷": {
+    "clicks": 0,
+    "imps": 75,
+    "ctr": 0.0,
+    "pos": 40.17
+   },
+   "教科書 印刷会社": {
+    "clicks": 0,
+    "imps": 27,
+    "ctr": 0.0,
+    "pos": 62.44
+   },
+   "卒業アルバム 印刷": {
+    "clicks": 0,
+    "imps": 21,
+    "ctr": 0.0,
+    "pos": 67.71
+   },
+   "教科書 印刷 会社": {
+    "clicks": 0,
+    "imps": 15,
+    "ctr": 0.0,
+    "pos": 63.47
+   },
+   "教科書印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "卒業アルバム 販売": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   "証書 印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 26.0
+   }
+  }
+ }
+}

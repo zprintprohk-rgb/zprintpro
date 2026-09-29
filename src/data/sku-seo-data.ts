@@ -2285,7 +2285,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | 智印港",
+      "zh-hk": "香港練習簿印刷 / 學校印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | 智印港",
       "en": "Custom exercise books with perfect bound, premium materials — ZprintPro",
       "ja": "練習帳 / 学校向け | 練習帳印刷 中綴じ・無線綴じ 50冊〜 学校向け | ZprintPro"
     }
@@ -2321,7 +2321,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | 智印港",
+      "zh-hk": "香港證書印刷 / 學校印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | 智印港",
       "en": "Custom certificates with embossed seal, premium materials — ZprintPro",
       "ja": "賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro"
     }
@@ -2357,7 +2357,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | 智印港",
+      "zh-hk": "香港學校單張 / 學校印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | 智印港",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
       "ja": "学校チラシ / 学校向け | 学校チラシ印刷 両面4色 100枚〜 | ZprintPro"
     }
@@ -2393,7 +2393,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | 智印港",
+      "zh-hk": "香港教科書印刷 / 學校印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | 智印港",
       "en": "Custom textbooks with perfect bound, premium materials — ZprintPro",
       "ja": "教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 学校向け | ZprintPro"
     }
@@ -2724,9 +2724,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     },
     "imageAlt": {
-      "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | 智印港",
+      "zh-hk": "香港畢業紀念冊 / 學校印刷 | 香港畢業紀念冊印刷 環保紙 | 智印港",
       "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
-      "ja": "卒業記念アルバム / 校園印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro"
+      "ja": "卒業記念アルバム / 学校印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro"
     },
     "faqs": [],
   },

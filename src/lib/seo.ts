@@ -634,19 +634,20 @@ const categorySeoData: Record<string, {
   'educational': {
     titles: {
       // 2026-09-30 A3 批: 主词前置需求头部词 (證書印刷/certificate printing/証明書印刷); MOQ 证书100/作业簿10 并存不写单数
-      'zh-hk': '證書印刷・校園教育批量優惠 作業簿/教材 FSC認證 | 智印港',
-      en: 'Certificate Printing | Certificates / Workbooks / Textbooks Bulk for USA Schools | ZprintPro',
-      ja: '証明書印刷・教育印刷 学校一括割引 FSC認証 | ZprintPro',
+      // 2026-09-30 A3.2 批 (K3 指令深析): 四窗口 GSC 实证 zh 需求头=學校印刷(70 imps) / en=school exercise book+textbook printing(页1-2) / ja=教科書印刷(118 imps); 校園教育印刷/教育印刷/Educational Printing 零展示弃用
+      'zh-hk': '學校印刷・證書印刷 作業簿/教材 批量優惠 FSC認證 | 智印港',
+      en: 'School Exercise Book & Textbook Printing | Bulk for USA Schools | ZprintPro',
+      ja: '教科書印刷・証明書印刷 学校一括割引・FSC認証 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',
-      en: 'education printing,school printing,certificate printing,workbook printing,textbook printing,diploma printing,award certificates,student handbooks,school stationery,academic printing,teacher handbook,kindergarten materials,free shipping education printing,USA school printing',
-      ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
+      'zh-hk': '學校印刷,學校 印刷,證書印刷,作業簿,校簿,教材印刷,學業簿,畢業證書,獎狀印刷,學生手冊,導師手冊,學位證書,幼稚園教材',
+      en: 'school printing,school exercise book printing,textbook printing,certificate printing,workbook printing,diploma printing,award certificates,student handbooks,school stationery,academic printing,teacher handbook,kindergarten materials,free shipping school printing,USA school printing',
+      ja: '教科書印刷,教科書 印刷,証明書印刷,学校印刷,ワークブック,教材印刷,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
     },
     descriptions: {
-      'zh-hk': '證書印刷．校園教育印刷：作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Certificate printing for USA schools & institutions. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 5-7 day door-to-door delivery to USA.',
-      ja: '証明書印刷．教育印刷：ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
+      'zh-hk': '學校印刷．證書印刷：作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'School printing for USA schools & institutions: exercise books / workbooks / textbooks / student handbooks / certificates + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 5-7 day door-to-door delivery to USA.',
+      ja: '教科書印刷．証明書印刷：ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'greeting-cards': {

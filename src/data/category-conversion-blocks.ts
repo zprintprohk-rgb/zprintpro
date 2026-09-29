@@ -2614,7 +2614,7 @@ categoryConversionBlocks['menus:zh-hk'] = {
 categoryConversionBlocks['educational:zh-hk'] = {
   "category": "educational",
   "locale": "zh-hk",
-  "title": "香港證書印刷・校簿印刷・畢業紀念冊訂製 — 教育印刷服務｜智印港",
+  "title": "香港學校印刷：證書・校簿・教科書・畢業紀念冊 訂製｜智印港",
   "metaDescription": "香港證書印刷 HK$8-40/張，200g-250g 水印紙或棉質紙，燙金壓凹防偽底紋都做到；校簿印刷 HK$4-16/本，A4/A5 內頁橫線方格空白任揀；畢業紀念冊 HK$45-180/本，騎馬釘膠裝精裝三種裝訂，1 本起訂。證書 100 張起，WhatsApp 想訂幾多張都傾得掂，即刻報價。",
   "quickAnswers": [
     {
@@ -2627,7 +2627,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
     },
     {
       "q": "校簿印刷起訂量要幾多本？",
-      "a": "練習簿 100 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。"
+      "a": "練習簿 10 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。"
     }
   ],
   "socialProof": [
@@ -2649,7 +2649,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
     }
   ],
   "comparisonTable": {
-    "title": "香港教育印刷：證書 × 校簿 × 紀念冊 × 教科書 比較",
+    "title": "香港學校印刷：證書 × 校簿 × 紀念冊 × 教科書 比較",
     "columns": [
       "產品",
       "常用工藝",
@@ -2667,7 +2667,7 @@ categoryConversionBlocks['educational:zh-hk'] = {
         "校簿／練習簿（A4/A5）",
         "封面四色＋內頁單色或雙色，騎馬釘，封面覆膜可選",
         "K12 練習簿、補習社教材、學年作業本",
-        "100 本起"
+        "10 本起"
       ],
       [
         "畢業紀念冊",
@@ -2679,13 +2679,13 @@ categoryConversionBlocks['educational:zh-hk'] = {
         "教科書／年級教材",
         "免費排版（頁碼、章節、習題欄），騎馬釘或膠裝",
         "學校自編教科書、年級作業本、導師講義",
-        "100 本起"
+        "10 本起"
       ]
     ],
     "note": "紙材、釘裝同工藝可以自由搭配，最終價錢交期以 WhatsApp 報價為準。"
   },
   "orderFlow": {
-    "title": "6 步教育印刷流程",
+    "title": "6 步學校印刷流程",
     "steps": [
       {
         "title": "WhatsApp 諮詢",
@@ -2754,7 +2754,7 @@ categoryConversionBlocks['educational:en'] = {
   "category": "educational",
   "locale": "en",
   "title": "Exercise Book Printing & Custom School Workbooks｜ZprintPro",
-  "metaDescription": "Custom printed exercise books & educational workbook printing from US$1.84. 100-book MOQ, free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
+  "metaDescription": "Custom printed exercise books & school workbook printing from US$1.84. 10-book MOQ for exercise books; certificates from 100 pcs. Free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
   "quickAnswers": [
     {
       "q": "How much does school exercise book printing cost?",
@@ -2762,7 +2762,7 @@ categoryConversionBlocks['educational:en'] = {
     },
     {
       "q": "What is the MOQ for custom printed exercise books?",
-      "a": "100 books for exercise books and perfect-bound textbooks, 50 for hardcover textbooks and yearbooks, and 250 for saddle-stitch booklets. Small runs print digitally, while offset presses handle larger volume orders."
+      "a": "Exercise books and textbooks from 10 books; yearbooks from 1 copy; certificates from 100 pcs. Small runs print digitally, while offset presses handle larger volume orders."
     },
     {
       "q": "How long does a school printing order take from quote to delivery?",
@@ -2771,7 +2771,7 @@ categoryConversionBlocks['educational:en'] = {
   ],
   "socialProof": [
     {
-      "stat": "100 books",
+      "stat": "10 books",
       "label": "Exercise book MOQ, vs 500+ minimums common on trade platforms"
     },
     {
@@ -2788,7 +2788,7 @@ categoryConversionBlocks['educational:en'] = {
     }
   ],
   "comparisonTable": {
-    "title": "Educational Printing Product Comparison",
+    "title": "School Printing Product Comparison",
     "columns": [
       "Product",
       "Finishing & Binding",
@@ -2800,7 +2800,7 @@ categoryConversionBlocks['educational:en'] = {
         "Exercise Books",
         "Saddle stitch or perfect bound; 80-100g woodfree interior; lined, grid or blank pages",
         "K12 workbooks, term exercise books, tutoring-center materials",
-        "100 books"
+        "10 books"
       ],
       [
         "Certificates",
@@ -2812,13 +2812,13 @@ categoryConversionBlocks['educational:en'] = {
         "Textbooks",
         "Perfect bound or saddle stitch; A4 or B5; ISBN and barcode support",
         "Grade-level curricula, training manuals, question banks",
-        "100 perfect bound / 50 hardcover"
+        "10 books"
       ],
       [
         "Yearbooks",
         "Saddle stitch, perfect bound or hardcover; foil-stamped crest, ribbon bookmark, dust jacket",
         "Graduation yearbooks, school anniversary and alumni publications",
-        "50 copies"
+        "1 copy"
       ]
     ],
     "note": "Paper and finishing options vary by product. Pricing is quote-based on page count, paper, size and quantity."
@@ -2889,12 +2889,12 @@ categoryConversionBlocks['educational:en'] = {
 categoryConversionBlocks['educational:ja'] = {
   "category": "educational",
   "locale": "ja",
-  "title": "教材 印刷製本｜教科書印刷・教材テキスト印刷・問題集を小ロット100部から製本対応｜ZprintPro",
-  "metaDescription": "教材 印刷製本なら小ロット100部から対応。教科書印刷は1冊￥1,288〜、問題集・練習帳は1冊￥258〜。中綴じ・無線綴じ・上製本から選択でき、ISBN・バーコードにも対応します。AI即時見積もり30秒、DHL Expressで日本全国へ2-4日配送。卒業アルバムの上製本や学年内教材もお見積もり制。",
+  "title": "教材 印刷製本｜教科書印刷・教材テキスト印刷・問題集を小ロット10部から製本対応｜ZprintPro",
+  "metaDescription": "教材 印刷製本なら小ロット10部から対応。教科書印刷は1冊￥1,288〜、問題集・練習帳は1冊￥258〜。中綴じ・無線綴じ・上製本から選択でき、ISBN・バーコードにも対応します。AI即時見積もり30秒、DHL Expressで日本全国へ2-4日配送。卒業アルバムの上製本や学年内教材もお見積もり制。",
   "quickAnswers": [
     {
       "q": "教材 印刷の最小ロットは何部からですか？",
-      "a": "教科書・テキスト・問題集はすべて100部から承ります。最終価格はお見積もり制です。"
+      "a": "教科書・テキスト・問題集はすべて10部から承ります。最終価格はお見積もり制です。"
     },
     {
       "q": "教科書 印刷のサイズと仕様はどう選べばいいですか？",
@@ -2907,7 +2907,7 @@ categoryConversionBlocks['educational:ja'] = {
   ],
   "socialProof": [
     {
-      "stat": "100部〜",
+      "stat": "10部〜",
       "label": "教科書・テキスト・問題集の小ロット製本対応"
     },
     {
@@ -2936,19 +2936,19 @@ categoryConversionBlocks['educational:ja'] = {
         "教科書（A4／B5）",
         "無線綴じ・中綴じ＋表紙ラミネート（オプション）",
         "K12教科書・補習校教材・学年内教材（ISBN・バーコード対応）",
-        "100部〜"
+        "10部〜"
       ],
       [
         "研修テキスト・マニュアル",
         "無線綴じ（内文モノクロ／2色）",
         "企業研修・教室テキスト・教材 テキスト印刷",
-        "100部〜"
+        "10部〜"
       ],
       [
         "問題集・練習帳（A4／A5）",
         "中綴じ＋罫線（マス・横罫・無地）から選択",
         "塾・予備校のドリル・家庭学習用問題集",
-        "100部〜"
+        "10部〜"
       ],
       [
         "卒業アルバム",

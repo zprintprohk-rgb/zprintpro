@@ -1697,17 +1697,18 @@ const lpCampusEducationPrintingPillarGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-09-03',
   title: {
-    'zh-hk': '校園教育印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港',
-    en: 'Campus Education Printing: 5 Products 12 Uses | ZprintPro',
-    ja: 'キャンパス教育印刷: 5 用品 × 12 シーン | ZprintPro',
+    // 2026-09-30 A3.2 批: 头词再校准 (K3 指令) — 校園教育印刷/キャンパス教育印刷 四窗口 GSC 零展示弃用, 换真需求头 學校印刷/school printing/教科書印刷 (blog-data JSON H1 对齐交 blog-deepfix lane)
+    'zh-hk': '學校印刷指南: 開學季 5 大印刷品 × 12 場景 | 智印港',
+    en: 'School Printing Guide: 5 Products 12 Uses | ZprintPro',
+    ja: '教科書印刷ガイド: 5 用品 × 12 シーン | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '9 月開學季校園印刷點揀? 5 大印刷品 (校刊/學生手冊/校園橫幅/畢業冊/證書) × 5 大材質 × 12 個應用場景 (4 大市場), 6 步印刷流程 + 30 秒 AI 報價, 18 SKU 校園聯動 + 12 個內鏈, 100 本起印, 3-5 個工作天交付.',
-    en: 'Back-to-school campus printing guide: 5 print products (yearbooks / student handbooks / campus banners / graduation albums / certificates) × 5 materials × 12 applications across 4 markets, 6-step flow + 30s AI quote, 18 SKU campus linkage, 100-copy MOQ, 3-5 day turnaround.',
-    ja: '9 月新学期キャンパス印刷ガイド：5 大印刷品（学園年刊 / 学生ハンドブック / キャンパス横断幕 / 卒業アルバム / 賞状）× 5 大素材 × 12 応用シーン（4 大市場）、6 ステップ工程 + 30 秒 AI 見積もり、18 SKU キャンパス連動、100 冊〜、3-5 営業日納品。',
+    'zh-hk': '9 月開學季學校印刷點揀? 5 大印刷品 (校刊/學生手冊/校園橫幅/畢業冊/證書) × 5 大材質 × 12 個應用場景 (4 大市場), 6 步印刷流程 + 30 秒 AI 報價, 18 SKU 校園聯動 + 12 個內鏈, 10 本起印, 3-5 個工作天交付.',
+    en: 'Back-to-school school printing guide: 5 print products (yearbooks / student handbooks / campus banners / graduation albums / certificates) × 5 materials × 12 applications across 4 markets, 6-step flow + 30s AI quote, 18 SKU campus linkage, 10-copy MOQ, 3-5 day turnaround.',
+    ja: '9 月新学期教科書印刷ガイド：5 大印刷品（学園年刊 / 学生ハンドブック / キャンパス横断幕 / 卒業アルバム / 賞状）× 5 大素材 × 12 応用シーン（4 大市場）、6 ステップ工程 + 30 秒 AI 見積もり、18 SKU キャンパス連動、10 冊〜、3-5 営業日納品。',
   },
   targetKeywords: {
-    primary: '校園教育印刷',
+    primary: '學校印刷',
     secondary: ['校刊印刷', '學生手冊', '校園橫幅', '畢業冊', '證書印刷', 'school printing', 'campus printing', 'yearbook printing', '学園印刷', '卒業アルバム'],
   },
 };

@@ -134,7 +134,7 @@ export const categories: Category[] = [
   { slug: 'envelopes', name: '信封印刷', nameEn: 'Envelopes', nameJa: '封筒印刷', name_zh: '信封印刷', name_en: 'Envelopes', name_ja: '封筒印刷', sort_order: 10 },
   { slug: 'calendars', name: '月曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '月曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
   { slug: 'red-packets', name: '利是封印刷', nameEn: 'Red Packets', nameJa: 'ポチ袋印刷', name_zh: '利是封印刷', name_en: 'Red Packets', name_ja: 'ポチ袋印刷', sort_order: 12 },
-  { slug: 'educational', name: '證書・校園教育印刷', nameEn: 'Certificates & Education', nameJa: '証明書・教育印刷', name_zh: '證書・校園教育印刷', name_en: 'Certificates & Education', name_ja: '証明書・教育印刷', sort_order: 13 },
+  { slug: 'educational', name: '學校印刷・證書', nameEn: 'School Printing', nameJa: '教科書印刷・証明書', name_zh: '學校印刷・證書', name_en: 'School Printing', name_ja: '教科書印刷・証明書', sort_order: 13 },
   { slug: 'japan-doujin', name: '同人誌印刷・周邊', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人誌印刷・周邊', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },
   // 2026-08-17 K3 §11 业务子类目豁免 Step 2 (3 新类目)
   { slug: 'wedding-invitations', name: '喜帖印刷', nameEn: 'Wedding Invitations', nameJa: '結婚式招待状', name_zh: '喜帖印刷', name_en: 'Wedding Invitations', name_ja: '結婚式招待状', sort_order: 15 },
@@ -6354,7 +6354,7 @@ export const products: Product[] = [
     slug: 'exercise-books',
     category: 'educational',
     category_slug: 'educational',
-    name: 'Exercise Book Printing School Programs | K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs', nameEn: 'School Exercise Book Printing | K12 Workbooks & School Textbook Printing', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 / School Exercise Book Printing — MOQ 50 30秒AI報價 DHL 2-4天',
+    name: 'Exercise Book Printing School Programs | K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs', nameEn: 'School Exercise Book Printing | K12 Workbooks & School Textbook Printing', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 / School Exercise Book Printing — MOQ 10 30秒AI報價 DHL 2-4天',
     description: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。適用行業：教育培訓、校園、補習社、K12 學校、海外教育部門、職業培訓。', descriptionEn: 'School exercise book printing service — 10 book MOQ (vs Alibaba yellow pages 500+ MOQ), 30-second AI quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). Africa/Middle East/Southeast Asia education ministries, tutoring centers, K12 schools. Custom school textbook printing, grade-level workbooks. Ideal for education & training, K12 schools, tutoring centers, ministries of education, and vocational training.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。教育・研修、K12 学校、学習塾、教育省、職業訓練業界に最適。', description_zh: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。適用行業：教育培訓、校園、補習社、K12 學校、海外教育部門、職業培訓。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',

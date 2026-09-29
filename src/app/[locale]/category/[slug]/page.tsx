@@ -161,9 +161,10 @@ export default function CategoryPage({
     },
     'educational': {
       // 2026-09-30 A3 批: H1 主词前置 證書印刷/certificate printing/証明書印刷; en 去 MOQ 单数谎言 (证书100/作业簿10)
-      'zh-hk': '香港證書印刷 — 校園教育 / 作業簿 / 教材 / 學業簿',
-      'en': 'Certificate Printing Free Shipping · Certificates / Workbooks / Textbooks Bulk · USA Schools',
-      ja: '証明書印刷 カスタム — 教育印刷 / ワークブック / 教科書 / 学用品',
+      // 2026-09-30 A3.2 批: 四窗口 GSC 实证 zh 需求头=學校印刷(70 imps)/en=school printing(作业簿教科書页1-2)/ja=教科書印刷(118 imps) → H1 换头词, 证书系降为品类词
+      'zh-hk': '香港學校印刷 — 證書 / 作業簿 / 教材 / 學業簿',
+      'en': 'School Printing Free Shipping · Exercise Books / Textbooks / Certificates Bulk · USA Schools',
+      ja: '教科書印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
     },
     'envelopes': {
       'zh-hk': '香港信封印刷定製 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
