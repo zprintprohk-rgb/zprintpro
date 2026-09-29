@@ -27,3 +27,4 @@
 | 2026-09-22 22:45:00 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
 | 2026-09-23 06:43:14 | ZP-cron-watchdog | ⚠️ 4 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | OK ZP-weekly-meta | STALE ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | — |
 | 2026-09-24 21:19:05 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-09-23-title-v5-census.md` | NONE | ✅ push |
+| 2026-09-29 21:55:59 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-09-29-ZP-daily-content.md` | src/app/[locale]/blog/[slug]/page.tsx, src/data/blog-data/en.json, src/data/blog-data/ja.json, src/data/blog-data/zh-hk.json, src/data/blog-posts.ts | ✅ push |

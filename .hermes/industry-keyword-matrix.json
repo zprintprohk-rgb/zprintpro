@@ -2222,8 +2222,8 @@
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-09-18",
-    "last_updated_event": "gsc-feedback-loop 2026-09-18 (v9.4 rearm 持续轮; ★ GSC 数据换代 9/10 档 → 9/18 档, STALE 解除); 新增 gsc_feedback_2026_09_18 block (全站 28d 356 clicks/20,833 imps/1.71%/pos 18.7 + 质量三件套 v9.4 判定 (striking ≥8 ✅ / pos1-20 占比 38.66% ✅ / 有点击词无法证实) + M1 线 1: 9/9-9/15 合计 101 clicks ≥25 ✅ + 8 T1 锁词周环比 (貼紙印刷 +3.90 连续正向, 即日印刷唯一破零) + title v4 线上 6 页复验 4/6 OK + 锚文本审计 8/8 (多词超额) + 智印港 64.71% CTR 维持 + ジープリント 0 命中 + 301×11 PASS + T43 观察 + S2 命中 2 处存量死 slug); priority_boost: 2 UPDATE (Q-P1-01 slug 修复 + tier/boost T2/2→T3/1 保守归位 / Q-P1-03 slug 修复) + 2 holds (Q-P1-02 / Q-P2-03); P0 coverage 95.45% 维持 (本轮无立项/结项)。",
+    "last_updated": "2026-09-29",
+    "last_updated_event": "gsc-feedback-loop 2026-09-29 (v9.4 rearm 持续轮; ★ GSC 数据换代 9/18 档 → 9/29 档, 16 件 xlsx 首含 3 个月窗; RETRY_OF 9/17+9/21+9/22 三个 STALE 日处置=本 run 覆盖); 新增 gsc_feedback_2026_09_29 block (8 T1 锁词三窗跟踪: 即日印刷 hk 3mo 127 imps/pos 11.81/4 clicks CTR 3.15% 唯一持续破零 + risers 40 词 (食品包裝印刷 7d pos 9.5 进首页带) + fallers 3 + submerged 60 + zero_click 40 + blindspot 59 词 (en 9 词 3mo 0 imp 盲区确认) + 锚文本审计 8/8 双方法复算通过 + 301×4 + 线上 title ×4 复验 (books/stickers 标题被兄弟车道改动, 当量 ~76/~64 超 57 目标区, 只报不改上报 K3) + 咭片 3mo 161 imps 观察); priority_boost: 0 UPDATE / 0 hold-change (窗口径变更 保守不动); P0 coverage 95.45% 维持 (本轮无立项/结项)。",
     "tier_b_coverage": "2/9 (22%) — 8 月待补",
     "pending_in_queue": 22,
     "p2_total": 3,
@@ -9937,7 +9937,7 @@
     "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
   },
-  "last_gsc_feedback_update": "2026-09-18 (v9.4 rearm 持续轮; 新增 gsc_feedback_2026_09_18 block: GSC 数据换代 9/10→9/18 档 + STALE 解除 + 质量三件套判定 + M1 线1 7d 101 clicks + 8 T1 词周环比 + title v4 6 页复验 + 锚文本 8/8 + 301×11 PASS + S2 存量死 slug 2 处上报)",
+  "last_gsc_feedback_update": "2026-09-29 (v9.4 rearm 持续轮; 新增 gsc_feedback_2026_09_29 block: ★ GSC 数据换代 9/18 档 → 9/29 档 (16 件 xlsx, 首含 3 个月窗) + RETRY_OF 9/17/9/21/9/22 三个 STALE 日 + 8 T1 词三窗跟踪 (3mo/7d/28d) + risers/fallers/submerged/zero_click 全清单 + blindspot 带钱词地图 59 词 + 锚文本审计 8/8 (双方法复算) + 301×4 PASS + 线上 4 页 title 实测 (2 页被兄弟车道改动超 57 当量, 只报不改) + priority_boost 0 UPDATE 0 hold-change (数据窗口径变更, 保守不动)); 质量三件套/品牌词明细/图表口径 PENDING 全量解析",
   "gsc_feedback_2026_09_10": {
     "version": "gsc-feedback-v7-2026-09-10",
     "run_at": "2026-09-11T03:15:00+08:00",
