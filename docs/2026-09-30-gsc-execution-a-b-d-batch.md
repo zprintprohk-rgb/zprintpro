@@ -33,6 +33,8 @@
 - `src/app/[locale]/services/business-cards-printing/page.tsx`（新）：三语 metaMap + canonical/hreflang（zh-HK/en/ja/x-default→zh-hk）+ WhatsApp CTA（generateWhatsAppLink 追踪）+ 尺寸/紙質/工藝比较表 + 6 步流程 + FAQ×5
 - 口径：MOQ 10 起（纸品线统一，greeting-cards minQuantity=10 锚定）；**零编造价格**（全部走 30 秒 AI 报价）；尺寸 zh/en 90×54mm / ja 91×55mm（日本規格）；品牌 智印港/ZprintPro
 - sitemap 登记：`scripts/generate-sitemap.js` staticPages 增补（build 自动重生成 XML）
+- **⚠️ BC-BAN 窄豁免（第二批 2026-09-30 02:1x）**：首推后线上 sitemap 实测不含新页 → 根因 = generate-sitemap.js `BC_BAN = !/business-?card/i` 终裁时代过滤器把名片 URL 全量剥除（含新页）。按 §0.34.2（K3 最新拍板 > 旧条款）对**唯一已批准路径** `services/business-cards-printing/` 做窄豁免，其余 business-card URL（301 源行等）维持排除；本地重生成验证 243 URLs 含新页
+- **description 层头词对齐（第二批）**：packaging zh/en/ja + educational en/zh/ja 的 meta description 由食品/教育开头改为头词开头（包裝盒訂製 / custom packaging boxes / パッケージ印刷 / 證書印刷 / certificate printing / 証明書印刷）；educational 不写单数 MOQ（证书 100 / 作业簿教材 10 并存）
 - 内链：services 索引页新增服务卡（`services/page.tsx`）+ 顺带修复该页 zh title 双品牌违例「智印港 ZprintPro」→「智印港」
 - 边界合规：未动 greeting-cards 资产 / middleware 301 / next.config.js 名片 redirects（已逐条核验：`/${locale}/business-cards` 仅匹配单段路径，不截获新页）
 

@@ -11,6 +11,19 @@
 
 ---
 
+## 释放记录（2026-09-30 01:5x · A/B/D 全批）
+
+- ✅ 已 commit + push：`83ef099a`（8 文件：6 类目 title/H1 + 名片承接页 + MOQ 真值对齐 + sitemap 登记 + services 索引卡）
+- ✅ build PASS（729 URLs / Static 21 / Products 91 不变 / IndexNow 3 locale 已 ping）
+- ✅ 门禁：encoding / brand A类 0 / gsc-leak / tsc 54=54 持平
+- ✅ 线上探针：12/12 内容修复上线正确（`.hermes/verify-abd.ps1` + 人工 curl 复核 title/H1）
+- ⚠️ 追加批（02:1x）：BC_BAN 窄豁免（sitemap 新页入列）+ description 头词对齐 → commit `#2`（见下）
+- 本锁释放，后续会话可正常写入
+
+## 追加批（2026-09-30 02:1x · sitemap BC_BAN 窄豁免 + description 对齐）
+
+---
+
 ## 持有声明（2026-09-30 01:2x · GSC 复盘后 A/B/D 全批执行会话）
 
 | 项 | 值 |

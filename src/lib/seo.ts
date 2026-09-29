@@ -453,9 +453,9 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '紙質食品包裝訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
-      en: 'Paper food packaging from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA. Small batch 100 units accepted, rush orders prioritized.',
-      ja: '紙製食品パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。小ロット 100 個から対応、特急注文優先。30 秒 AI 無料見積もり。',
+      'zh-hk': '包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
+      en: 'Custom packaging boxes from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA. Small batch 100 units accepted, rush orders prioritized.',
+      ja: 'パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。小ロット 100 個から対応、特急注文優先。30 秒 AI 無料見積もり。',
     },
   },
 'posters': {
@@ -635,9 +635,9 @@ const categorySeoData: Record<string, {
       ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
     },
     descriptions: {
-      'zh-hk': '校園教育印刷. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom education printing 10 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '教育印刷 10 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
+      'zh-hk': '證書印刷．校園教育印刷：作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Certificate printing for USA schools & institutions. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC-certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 5-7 day door-to-door delivery to USA.',
+      ja: '証明書印刷．教育印刷：ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'greeting-cards': {

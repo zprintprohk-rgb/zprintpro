@@ -31,7 +31,9 @@ const categorySlugs = (() => {
 })();
 
 // BC-BAN (AGENTS.md §0.0 禁做名片): any business-card URL/image is excluded from sitemaps
-const BC_BAN = (s) => !/business-?card/i.test(s);
+// 2026-09-30 K3 拍板执行 §0.0 解禁块 选项 (c): 新增「名片·咭片印刷」承接落地页 services/business-cards-printing
+// → 对该唯一已批准路径做窄豁免, 其余 business-card URL (redirect 源等) 维持排除。
+const BC_BAN = (s) => !/business-?card/i.test(s) || /services\/business-cards-printing\//i.test(s);
 
 const productSlugs = (() => {
   const content = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf-8');
