@@ -124,7 +124,7 @@ export default function CategoryPage({
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
       // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
       'zh-hk': '香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
-      en: 'China Catalog Printing Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground · Catalog Printing China',
+      en: 'China Catalog Printing Free Shipping over $99 · 10 MOQ A4/A5 Digital + FedEx Ground · Catalog Printing China',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
     'menus': {
@@ -141,7 +141,7 @@ export default function CategoryPage({
     },
     'stickers': {
       'zh-hk': '香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
-      'en': 'Small Batch Sticker Printing Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
+      'en': 'Small Batch Sticker Printing Free Shipping · 10 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
       'ja': 'ダイカットステッカー 防水印刷 — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     'posters': {
