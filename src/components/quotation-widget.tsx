@@ -29,7 +29,7 @@ const productTypeLabels: Record<Locale, Record<ProductType, string>> = {
   'zh-hk': {
     'business-card': '賀卡', // BC-BAN §0.0: legacy product-type key relabeled
     'sticker': '貼紙',
-    'flyer': '傳單印刷',
+    'flyer': '宣傳單張',
     'paper-bag': '紙袋',
     'box': '包裝盒',
     'poster': '海報',

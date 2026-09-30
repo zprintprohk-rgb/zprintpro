@@ -81,7 +81,7 @@ export default function PillarPage({
         { text: '燙金區域應控制在傳單面積的 15% 以內，超過 20% 會導致視覺過度浮誇。200g 以上厚紙配合玫瑰金或香檳金箔的客戶滿意度達 92%。', source: '香港印刷業商會技術指引' },
         { text: '中環與金鐘的週一至週五 17:30-19:00 時段，每小時人流量達 12,000-15,000 人次。', source: '香港運輸署 2024 人流統計' },
         { text: '高對比度配色能將傳單閱讀率提升 40%；無襯線黑體標題的遠距離辨識度比襯線字體高出 25%。', source: '香港城市大學市場營銷研究 2024' },
-        { text: '157g 銅版紙是香港傳單印刷的標準選擇，佔總訂單的 71%；200g 以上厚紙訂單佔 18%。', source: 'ZprintPro 2024 材料使用報告' },
+        { text: '157g 銅版紙是香港宣傳單張印刷的標準選擇，佔總訂單的 71%；200g 以上厚紙訂單佔 18%。', source: 'ZprintPro 2024 材料使用報告' },
       ],
       'en': [
         { text: 'A6 flyers cost approximately 55-60% of A5 per piece. A6 acceptance rates on Mong Kok streets are 35% higher than A5.', source: 'ZprintPro 2024 Distribution Analysis' },

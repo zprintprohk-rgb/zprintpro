@@ -101,7 +101,7 @@ export async function generateMetadata({
   const rushDescriptions: Record<string, Record<string, string>> = {
     'zh-hk': {
       // 2026-09-19 全站起訂量修正: 傳單/貼紙 100 → 10 張 (紙品線)
-      'flyers': '傳單印刷印刷，A4/A5/A6尺寸、157g銅版紙，10張起訂。滿$500包郵，標準交期。',
+      'flyers': '宣傳單張印刷，A4/A5/A6尺寸、157g銅版紙，10張起訂。滿$500包郵，標準交期。',
       'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。',
       'stickers': '貼紙印刷，防水/PVC/透明材質，10張起訂，支持異形切割。滿$500包郵，標準交期。',
       'books': '畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。滿$500包郵，標準交期。',

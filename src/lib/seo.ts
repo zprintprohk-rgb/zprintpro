@@ -616,18 +616,18 @@ const categorySeoData: Record<string, {
   },
   'books': {
     titles: {
-      'zh-hk': '騎馬釘小冊子印刷 10本起・急印少量可 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
-      'en': 'Catalog & Booklet Printing from $1.20 | 10 MOQ + Saddle Stitch | ZprintPro',
+      'zh-hk': '小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | 智印港',
+      'en': 'Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro',
       'ja': '冊子印刷｜10部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '樣本印刷,樣品印刷,免費樣本,印刷樣本,書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
-      'en': 'booklet printing,saddle stitch booklet,saddle stitch booklets,custom booklets,perfect bound books,hardcover books,children books,textbook printing,school exercise book print,school exercise book printing,small batch booklets,catalog printing,annual report,product catalog,USA book printing,booklet catalog china,company profile booklet',
+      'zh-hk': '小冊子印刷,小冊子 印刷,小冊子,冊子印刷,樣本印刷,樣品印刷,免費樣本,印刷樣本,書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
+      'en': 'booklet printing,saddle stitch booklet printing,saddle stitch booklet,saddle stitch booklets,custom booklets,perfect bound books,hardcover books,children books,textbook printing,school exercise book print,school exercise book printing,small batch booklets,catalog printing,annual report,product catalog,USA book printing,booklet catalog china,company profile booklet',
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
     descriptions: {
-      'zh-hk': '書刊印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
-      'en': 'Custom booklet printing from $1.20, 10 MOQ. Saddle stitch / perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. Rush 24-48h for urgent small runs. 30-second AI quote. ISO 9001 + FSC-certified.',
+      'zh-hk': '小冊子印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'en': 'Custom saddle stitch booklet printing from $1.20, 10 MOQ. Also perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. Rush 24-48h for urgent small runs. 30-second AI quote. ISO 9001 + FSC-certified.',
       'ja': '冊子印刷 10 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
     },
   },

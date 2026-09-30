@@ -155,7 +155,7 @@ export default function CategoryPage({
       'ja': 'バナー印刷 カスタム — ロールアップ / 屋外 / 展示 / 車両広告',
     },
     'books': {
-      'zh-hk': '香港騎馬釘小冊子印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
+      'zh-hk': '香港小冊子印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
       'en': 'Custom Book Printing Free Shipping · 50 MOQ Saddle Hardcover Perfect Bound · USA Authors',
       'ja': '冊子印刷 カスタム — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
     },

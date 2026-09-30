@@ -47,11 +47,11 @@ const translations = {
         title: '產品中心',
         links: [
           { label: '紙袋印刷', href: '/category/paper-bags/' },
-          { label: '傳單印刷', href: '/category/flyers/' },
+          { label: '宣傳單張', href: '/category/flyers/' },
           { label: '貼紙印刷', href: '/category/stickers/' },
-          { label: '包裝盒印刷', href: '/category/packaging/' },
+          { label: '包裝盒訂製', href: '/category/packaging/' },
           { label: '海報印刷', href: '/category/posters/' },
-          { label: '校園印刷', href: '/category/educational/' },
+          { label: '學校印刷', href: '/category/educational/' },
         ],
       },
       {

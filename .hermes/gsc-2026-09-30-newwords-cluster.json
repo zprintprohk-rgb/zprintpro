@@ -1,0 +1,887 @@
+{
+ "24h": {
+  "total_queries": 143,
+  "new_q": 3,
+  "new_imps": 3,
+  "queries": {
+   "中 綴じ 冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "\"photo booklet printing\",\"us, en\",\"5,400\",\"6.40\",\"high\"": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 81.0
+   }
+  }
+ },
+ "7d": {
+  "total_queries": 604,
+  "new_q": 21,
+  "new_imps": 138,
+  "queries": {
+   "saddle stitch booklet printing": {
+    "clicks": 1,
+    "imps": 70,
+    "ctr": 0.0143,
+    "pos": 3.64
+   },
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "pos": 10.38
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 10.44
+   },
+   "saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 19.75
+   },
+   "saddle stitch booklet maker": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 7.4
+   },
+   "saddle stitch booklets": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 45.6
+   },
+   "cheap saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 6.25
+   },
+   "saddle stitched booklets": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "中 綴じ 冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "saddle stitch booklets printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "wholesale saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 13.5
+   },
+   "saddle stitched booklet": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 16.5
+   },
+   "saddle-stitch booklets": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 44.0
+   },
+   "saddle stitch booklet printing fedex": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 78.5
+   },
+   "\"photo booklet printing\",\"us, en\",\"5,400\",\"6.40\",\"high\"": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 88.0
+   },
+   "saddle stiched booklet": {
+    "clicks": 1,
+    "imps": 1,
+    "ctr": 1.0,
+    "pos": 9.0
+   },
+   "product pamphlet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 格安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "冊子 印刷 10 部": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "printing saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 85.0
+   }
+  }
+ },
+ "28d": {
+  "total_queries": 1000,
+  "new_q": 26,
+  "new_imps": 287,
+  "queries": {
+   "saddle stitch booklet printing": {
+    "clicks": 2,
+    "imps": 93,
+    "ctr": 0.0215,
+    "pos": 3.37
+   },
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 57,
+    "ctr": 0.0,
+    "pos": 10.07
+   },
+   "saddle stitch booklets": {
+    "clicks": 0,
+    "imps": 25,
+    "ctr": 0.0,
+    "pos": 71.52
+   },
+   "saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "pos": 43.59
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "pos": 10.25
+   },
+   "saddle stitch booklet maker": {
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "pos": 8.8
+   },
+   "saddle stitched booklets": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 35.33
+   },
+   "wholesale saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 40.0
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 76.86
+   },
+   "cheap saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 14.67
+   },
+   "saddle stitched booklet": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 45.0
+   },
+   "saddle stapled booklet": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 11.5
+   },
+   "saddle-stitch booklets": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 46.0
+   },
+   "saddle stitch booklets printing": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 9.0
+   },
+   "saddlestitch booklets": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 80.0
+   },
+   "saddle stiched booklet": {
+    "clicks": 1,
+    "imps": 2,
+    "ctr": 0.5,
+    "pos": 9.5
+   },
+   "中 綴じ 冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "saddle stich booklet": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 10.5
+   },
+   "saddle stitch booklet printing fedex": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 78.5
+   },
+   "\"photo booklet printing\",\"us, en\",\"5,400\",\"6.40\",\"high\"": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 88.0
+   },
+   "product pamphlet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 格安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "a4 pamphlet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "冊子 印刷 10 部": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "printing saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   }
+  }
+ },
+ "3mo": {
+  "total_queries": 1000,
+  "new_q": 22,
+  "new_imps": 576,
+  "queries": {
+   "saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 167,
+    "ctr": 0.0,
+    "pos": 75.93
+   },
+   "saddle stitch booklet printing": {
+    "clicks": 2,
+    "imps": 97,
+    "ctr": 0.0206,
+    "pos": 4.71
+   },
+   "saddle stitch booklets": {
+    "clicks": 0,
+    "imps": 91,
+    "ctr": 0.0,
+    "pos": 82.78
+   },
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 69,
+    "ctr": 0.0,
+    "pos": 10.16
+   },
+   "saddle stitched booklets": {
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "pos": 66.45
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "pos": 10.24
+   },
+   "wholesale saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "pos": 51.21
+   },
+   "saddle stitched booklet": {
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "pos": 72.38
+   },
+   "saddlestitch booklets": {
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "pos": 85.85
+   },
+   "saddle-stitch booklets": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 72.18
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 76.45
+   },
+   "saddle stitch booklet maker": {
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "pos": 8.8
+   },
+   "cheap saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 23.29
+   },
+   "china saddle stitch booklet printing manufacturer": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 74.67
+   },
+   "saddle stitch booklet printing vancouver": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 77.67
+   },
+   "saddle stapled booklet": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 11.5
+   },
+   "saddle stitch booklets printing": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 21.5
+   },
+   "saddlestitch booklet": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 74.5
+   },
+   "中 綴じ 冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "saddle stich booklet": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 35.33
+   },
+   "saddle stiched booklet": {
+    "clicks": 1,
+    "imps": 2,
+    "ctr": 0.5,
+    "pos": 9.5
+   },
+   "印刷小冊子": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 13.0
+   }
+  }
+ },
+ "hk-7d": {
+  "total_queries": 270,
+  "new_q": 3,
+  "new_imps": 21,
+  "queries": {
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 10.64
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 10.44
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 85.0
+   }
+  }
+ },
+ "hk-28d": {
+  "total_queries": 589,
+  "new_q": 4,
+  "new_imps": 77,
+  "queries": {
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 53,
+    "ctr": 0.0,
+    "pos": 10.15
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "pos": 10.25
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 76.86
+   },
+   "印小冊子": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 25.0
+   }
+  }
+ },
+ "hk-3mo": {
+  "total_queries": 884,
+  "new_q": 5,
+  "new_imps": 92,
+  "queries": {
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 61,
+    "ctr": 0.0,
+    "pos": 10.26
+   },
+   "小冊子 印刷": {
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "pos": 10.24
+   },
+   "冊子印刷": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 76.45
+   },
+   "印刷小冊子": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "印小冊子": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 25.0
+   }
+  }
+ },
+ "us-3mo": {
+  "total_queries": 849,
+  "new_q": 48,
+  "new_imps": 426,
+  "queries": {
+   "saddle stitch booklet printing": {
+    "clicks": 2,
+    "imps": 95,
+    "ctr": 0.021099999999999997,
+    "pos": 3.43
+   },
+   "saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 95,
+    "ctr": 0.0,
+    "pos": 69.52
+   },
+   "saddle stitch booklets": {
+    "clicks": 0,
+    "imps": 89,
+    "ctr": 0.0,
+    "pos": 83.64
+   },
+   "saddle stitched booklets": {
+    "clicks": 0,
+    "imps": 20,
+    "ctr": 0.0,
+    "pos": 64.6
+   },
+   "wholesale saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 14,
+    "ctr": 0.0,
+    "pos": 51.21
+   },
+   "saddle stitched booklet": {
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "pos": 72.38
+   },
+   "saddlestitch booklets": {
+    "clicks": 0,
+    "imps": 13,
+    "ctr": 0.0,
+    "pos": 85.85
+   },
+   "saddle-stitch booklets": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 72.18
+   },
+   "saddle stitch booklet maker": {
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "pos": 8.8
+   },
+   "cheap saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 17.17
+   },
+   "china saddle stitch booklet printing manufacturer": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 74.67
+   },
+   "saddle stapled booklet": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 11.5
+   },
+   "saddlestitch booklet": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 74.5
+   },
+   "saddle stitch booklets printing": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 9.0
+   },
+   "saddle stich booklet": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 35.33
+   },
+   "saddle stiched booklet": {
+    "clicks": 1,
+    "imps": 2,
+    "ctr": 0.5,
+    "pos": 9.5
+   },
+   "stitch booklet": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 77.5
+   },
+   "cheap price saddle stitch booklet printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 80.5
+   },
+   "saddle stich booklets": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 87.5
+   },
+   "\"photo booklet printing\",\"us, en\",\"5,400\",\"6.40\",\"high\"": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 88.0
+   },
+   "print booklet online in tajik": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 93.0
+   },
+   "saddle stitched booklet printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 95.0
+   },
+   "a4 pamphlet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "小冊子印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 9.0
+   },
+   "printing saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "china cheap saddle stitch booklet printing wholesaler": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 39.0
+   },
+   "cheap saddle stitch booklet printing in kyrgyz": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 52.0
+   },
+   "cheap saddle stitch booklet printing in tajik": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 62.0
+   },
+   "full color booklet printing in tajik": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 64.0
+   },
+   "cheap saddle stitch booklet printing in china": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 67.0
+   },
+   "saddle-stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 69.0
+   },
+   "china custom booklet printing no minimum wholesale": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 70.0
+   },
+   "china cheap saddle stitch booklet printing manufacturer": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 71.0
+   },
+   "china saddle stitch booklet printing factory": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 73.0
+   },
+   "custom saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 76.0
+   },
+   "saddle stitch booklet printing in kyrgyz": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 76.0
+   },
+   "saddle stitching booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 78.0
+   },
+   "saddle stitch booklet printing in norwegian": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 81.0
+   },
+   "a4 saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 85.0
+   },
+   "cheap saddle stitch booklet printing in estonian": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 86.0
+   },
+   "saddle stitch booklet printing in swedish": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 86.0
+   },
+   "cheap saddle stitch booklet printing in norwegian": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 87.0
+   },
+   "saddle-stitched booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 88.0
+   },
+   "saddle-stitched booklets": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 88.0
+   },
+   "cheap saddle stitch booklet printing factory": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 90.0
+   },
+   "stitched booklets": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 91.0
+   },
+   "cheap saddle stitch booklet printing in swedish": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 97.0
+   },
+   "print saddle stitch booklet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 97.0
+   }
+  }
+ },
+ "jp-3mo": {
+  "total_queries": 273,
+  "new_q": 5,
+  "new_imps": 7,
+  "queries": {
+   "中 綴じ 冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "product pamphlet": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 格安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "小冊子 印刷 激安": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 2.0
+   },
+   "冊子 印刷 10 部": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   }
+  }
+ }
+}

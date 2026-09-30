@@ -58,7 +58,7 @@ const translations: Record<string, {
       { key: 'buying-guide', label: '選購指南' },
       // 2026-08-04 K3 拍板: 加 12 新产品类目 tabs (25 blog 全部归类)
       { key: 'paper-bags', label: '紙袋印刷' },
-      { key: 'flyers', label: '傳單印刷' },
+      { key: 'flyers', label: '宣傳單張' },
       { key: 'posters', label: '海報印刷' },
       { key: 'creator-ip', label: '文創IP' },
       { key: 'wedding-envelope', label: '婚慶信封' },

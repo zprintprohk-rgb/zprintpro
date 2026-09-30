@@ -93,6 +93,14 @@ categoryConversionBlocks['stickers:zh-hk'] = {
     {
       "q": "透明貼印刷係咩效果？",
       "a": "透明 PVC 貼紙背景完全透明，只有圖案同文字顯示，貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級；10 張起印，可配燙金或白墨打底。"
+    },
+    {
+      "q": "可變數據貼紙 / 流水碼貼紙係咩？點訂？",
+      "a": "可變數據印刷令每張貼紙印唔同序號、流水碼、QR Code 或條碼，產品追溯、抽獎券、會員標籤都用到；10 張起印，Excel/CSV 入稿即可，免費數據檢查。"
+    },
+    {
+      "q": "透明貼紙白墨打底係咩？一定要加？",
+      "a": "白墨係透明或深色材質嘅打底墨層，冇白墨圖案會透底發灰；透明貼可選全白墨 / 局部白墨 / 無白墨三種效果，10 張起印，WhatsApp 免費打稿睇效果。"
     }
   ],
   "socialProof": [
@@ -224,11 +232,11 @@ categoryConversionBlocks['stickers:en'] = {
   "category": "stickers",
   "locale": "en",
   "title": "Small Batch Label Printing & Custom Stickers HK | ZprintPro",
-  "metaDescription": "Small batch label printing & custom stickers in Hong Kong. MOQ from 100 pcs, 2-3 day turnaround. WhatsApp us for a free quote today.",
+  "metaDescription": "Small batch label printing & custom stickers in Hong Kong. MOQ from 10 pcs, 2-3 day turnaround. WhatsApp us for a free quote today.",
   "quickAnswers": [
     {
       "q": "What's the minimum order for custom stickers in Hong Kong?",
-      "a": "Our MOQ starts at just 100 pcs (some materials from 50 pcs) — perfect for small batch label printing."
+      "a": "Our MOQ starts at just 10 pcs — perfect for small batch label printing."
     },
     {
       "q": "How fast is small batch label printing turnaround?",
@@ -237,6 +245,14 @@ categoryConversionBlocks['stickers:en'] = {
     {
       "q": "How much do 1000 custom stickers cost in Hong Kong?",
       "a": "1000 pcs of 50×50mm gloss stickers cost roughly HK$200–350 — get an exact quote via WhatsApp in minutes."
+    },
+    {
+      "q": "Can I print different serial numbers or QR codes on each sticker?",
+      "a": "Yes — variable data printing puts a unique serial number, running code, QR code or barcode on every sticker for product tracking, coupons and member labels. 10 pcs MOQ; just send an Excel/CSV file and we run a free data check."
+    },
+    {
+      "q": "What is white ink backing for clear stickers?",
+      "a": "White ink is an underbase layer beneath CMYK on clear or dark materials; without it colors print grey and translucent. Choose full white ink, partial white ink or no white ink on clear stickers — 10 pcs MOQ with a free proof."
     }
   ],
   "socialProof": [
@@ -249,8 +265,8 @@ categoryConversionBlocks['stickers:en'] = {
       "label": "Avg. sticker shipping"
     },
     {
-      "stat": "100 pcs",
-      "label": "MOQ from (some 50)"
+      "stat": "10 pcs",
+      "label": "MOQ from 10 pcs"
     },
     {
       "stat": "2–3 days",
@@ -268,7 +284,7 @@ categoryConversionBlocks['stickers:en'] = {
     "rows": [
       [
         "ZprintPro (WhatsApp direct)",
-        "100 pcs (some 50)",
+        "10 pcs",
         "2–3 working days",
         "Startups, e-commerce sellers & small brands needing fast small batch label printing with human support"
       ],
@@ -338,12 +354,12 @@ categoryConversionBlocks['stickers:en'] = {
   ],
   "newFaqs": [
     {
-      "q": "Can I order just 100 custom stickers for my startup?",
-      "a": "Absolutely. Our MOQ starts at 100 pcs for most custom stickers and small batch label printing jobs — ideal for startups and e-commerce sellers testing designs."
+      "q": "Can I order just 10 custom stickers for my startup?",
+      "a": "Absolutely. Our MOQ starts at 10 pcs for most custom stickers and small batch label printing jobs — ideal for startups and e-commerce sellers testing designs."
     },
     {
       "q": "What sticker materials are available for small batch orders?",
-      "a": "We offer PVC, transparent, matte silver, gloss, matte, waterproof, removable, foil-stamped, and spot-UV finishes — all available from 100 pcs with 2–3 day turnaround."
+      "a": "We offer PVC, transparent, matte silver, gloss, matte, waterproof, removable, foil-stamped, and spot-UV finishes — all available from 10 pcs with 2–3 day turnaround."
     },
     {
       "q": "How long does small batch label printing take in Hong Kong?",
@@ -359,8 +375,8 @@ categoryConversionBlocks['stickers:en'] = {
 categoryConversionBlocks['stickers:ja'] = {
   "category": "stickers",
   "locale": "ja",
-  "title": "オリジナルステッカー印刷｜香港発・小ロット100枚から・2〜3日出荷｜ZprintPro",
-  "metaDescription": "香港発のオリジナルステッカー印刷。PVC・透明・マット銀・光沢など9種以上、100枚から対応、2〜3日出荷。WhatsAppで今すぐお見積もり—ZprintPro",
+  "title": "オリジナルステッカー印刷｜香港発・小ロット10枚から・2〜3日出荷｜ZprintPro",
+  "metaDescription": "香港発のオリジナルステッカー印刷。PVC・透明・マット銀・光沢など9種以上、10枚から対応、2〜3日出荷。WhatsAppで今すぐお見積もり—ZprintPro",
   "quickAnswers": [
     {
       "q": "ステッカー印刷 1000枚の値段は？",
@@ -373,6 +389,14 @@ categoryConversionBlocks['stickers:ja'] = {
     {
       "q": "人気のステッカーサイズは？",
       "a": "香港で人気Top5：50×50mm、40×60mm、30×30mm、円形38mm、70×25mm。"
+    },
+    {
+      "q": "可変データシール・連番シールは印刷できますか？",
+      "a": "はい。可変データ印刷で1枚ごとに異なるシリアル番号・連番・QRコード・バーコードが印字可能です。製品追跡、抽選券、会員ラベルに最適。10枚から、Excel/CSV入稿で対応、データチェック無料。"
+    },
+    {
+      "q": "透明ステッカーの白インキは必要ですか？",
+      "a": "白インキは透明・濃色素材の下地墨で、無いと色が透けてグレーに発色します。全面白インキ・部分白インキ・無白インキの3択が選べます。10枚から、無料デザイン校正付き。"
     }
   ],
   "socialProof": [
@@ -385,7 +409,7 @@ categoryConversionBlocks['stickers:ja'] = {
       "label": "ステッカー平均出荷スピード"
     },
     {
-      "stat": "100枚〜",
+      "stat": "10枚〜",
       "label": "低MOQ 小ロット対応"
     },
     {
@@ -406,7 +430,7 @@ categoryConversionBlocks['stickers:ja'] = {
         "最低ロット",
         "500〜1000枚〜",
         "1000枚以上が多い",
-        "100枚〜（一部50枚〜）"
+        "10枚〜"
       ],
       [
         "納期",
@@ -479,11 +503,11 @@ categoryConversionBlocks['stickers:ja'] = {
     }
   ],
   "newFaqs": [
-    { "q": "ステッカー印刷 1000枚の値段は？", "a": "50×50mm 光沢パウダーステッカー 1000枚 約HK$200-350。MOQ100枚〜、2〜3日で出荷、WhatsAppで即見積もり。" },
-    { "q": "人気のステッカーサイズは？", "a": "香港で人気Top5：50×50mm、40×60mm、30×30mm、円形38mm、70×25mm。いずれも100枚から印刷可能。" },
+    { "q": "ステッカー印刷 1000枚の値段は？", "a": "50×50mm 光沢パウダーステッカー 1000枚 約HK$200-350。MOQ10枚〜、2〜3日で出荷、WhatsAppで即見積もり。" },
+    { "q": "人気のステッカーサイズは？", "a": "香港で人気Top5：50×50mm、40×60mm、30×30mm、円形38mm、70×25mm。いずれも10枚から印刷可能。" },
     {
       "q": "ステッカー印刷のMOQは何枚からですか？",
-      "a": "MOQは100枚から、一部の素材では50枚からでも承ります。新ブランドのテストや小規模イベントに最適です。"
+      "a": "MOQは10枚から。新ブランドのテストや小規模イベントに最適です。"
     },
     {
       "q": "どんな素材や加工に対応していますか？",
@@ -2523,25 +2547,25 @@ categoryConversionBlocks['menus:zh-hk'] = {
         "PVC膠片餐牌（防水款）",
         "0.5–1.0mm 透明或白色 PVC，四色UV印刷，圓角或直角裁切",
         "茶餐廳、火鍋店、酒吧、居酒屋",
-        "100 張起"
+        "10 張起"
       ],
       [
         "過膠餐牌（經濟款）",
         "200–250g 銅版紙或啞粉紙，啞膠/光膠覆膜",
         "咖啡店、甜品店、西餐廳",
-        "100 張起"
+        "10 張起"
       ],
       [
         "精裝餐牌（高級款）",
         "硬紙板封面裱糊銅版紙，內頁 200g 銅版紙",
         "酒樓、高級餐廳、酒店宴會",
-        "100 本起"
+        "10 本起"
       ],
       [
         "一次性餐牌（外賣款）",
         "100–120g 書紙或再生紙",
         "外賣店、優惠宣傳、季節限定菜單",
-        "100 張起"
+        "10 張起"
       ]
     ],
     "note": "仲有酒水牌（HK$12 起/張，銅版紙或合成紙過啞膠）可以加配；燙金、打洞穿繩、QR Code 電子菜單等加工都做得，價錢同交期以 WhatsApp 報價為準。"
@@ -3615,7 +3639,7 @@ categoryConversionBlocks['books:zh-hk'] = {
       "label": "畫冊/型錄印刷低至 HK$2.8/本，印書入門冇難度"
     },
     {
-      "stat": "100 本起印",
+      "stat": "10 本起印",
       "label": "五款書刊劃一 10 本起訂，校簿教材小批量都接得"
     },
     {
@@ -3640,31 +3664,31 @@ categoryConversionBlocks['books:zh-hk'] = {
         "騎馬釘小冊子（場刊/校簿/練習冊）",
         "128g–157g 銅版紙或書紙，四色數碼或柯式，8-64 頁平攤 180° 翻閱",
         "企業手冊、活動場刊、學校練習冊（校簿）、雜誌同產品目錄",
-        "100 本起、HK$6-32/本"
+        "10 本起、HK$6-32/本"
       ],
       [
         "無線膠裝書籍",
         "內頁 157g–200g 銅版紙/啞粉紙，書脊平整牢固，可印書名/條碼/ISBN，48-400 頁",
         "學術論文集、年度報告、CSR 社會責任報告、文學作品集",
-        "100 本起、HK$16-80/本"
+        "10 本起、HK$16-80/本"
       ],
       [
         "精裝書籍",
         "2.5mm 灰紙板封面，可加燙金書名、絲帶書籤",
         "畢業紀念冊、婚慶紀念書、家族史冊、校友會刊",
-        "100 本起、HK$40-240/本"
+        "10 本起、HK$40-240/本"
       ],
       [
         "線圈筆記本",
         "內頁 80g–100g 書紙或道林紙，YO 圈/螺旋裝訂可拆卸重組，180° 平攤",
         "企業禮品、補習社教材、培訓手冊、校園紀念本",
-        "100 本起、HK$8-40/本"
+        "10 本起、HK$8-40/本"
       ],
       [
         "畫冊/產品型錄",
         "內頁 157g–200g 銅版紙，封面覆膜（啞膜/光膜）或燙金，騎馬釘或膠裝",
         "攝影集、展覽圖錄、產品型錄、公司年報",
-        "100 本起、HK$2.8-1000/本"
+        "10 本起、HK$2.8-1000/本"
       ]
     ],
     "note": "以騎馬釘小冊子計價階梯為準：100 本有 85 折、500 本 7 折；小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。Q4 係印刷高峰期，建議提早落單；實際價錢視乎頁數、紙張同數量，以 WhatsApp 報價為準。"
@@ -3713,8 +3737,8 @@ categoryConversionBlocks['books:zh-hk'] = {
     }
   ],
   "newFaqs": [
-    { "q": "騎馬釘小冊子印刷幾多錢一本？", "a": "騎馬釘小冊子印刷 HK$6-32/本，100 本起印；8-64 頁小冊子可以平攤 180° 翻閱，最啱活動場刊、校簿練習冊、產品目錄同宣傳冊子。實價視乎頁數、紙張（128g–157g 銅版紙或書紙）同數量，WhatsApp 30 秒即時報價。" },
-    { "q": "印書最少要印幾多本？有冇批量優惠？", "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 100 本起印；以騎馬釘小冊子為例，100 本有 85 折、500 本 7 折。學校教材、補習社練習冊批量單，WhatsApp 攞分層報價。" },
+    { "q": "騎馬釘小冊子印刷幾多錢一本？", "a": "騎馬釘小冊子印刷 HK$6-32/本，10 本起印；8-64 頁小冊子可以平攤 180° 翻閱，最啱活動場刊、校簿練習冊、產品目錄同宣傳冊子。實價視乎頁數、紙張（128g–157g 銅版紙或書紙）同數量，WhatsApp 30 秒即時報價。" },
+    { "q": "印書最少要印幾多本？有冇批量優惠？", "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 10 本起印；以騎馬釘小冊子為例，100 本有 85 折、500 本 7 折。學校教材、補習社練習冊批量單，WhatsApp 攞分層報價。" },
     { "q": "騎馬釘、膠裝定精裝點揀？", "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；48-400 頁用無線膠裝，書脊平整牢固，可以印書名、條碼同 ISBN；畢業紀念冊、婚慶紀念書等珍藏版揀精裝，2.5mm 灰紙板封面可加燙金書名。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。" },
     {
       "q": "騎馬釘書刊係咩？邊啲書刊適合用騎馬釘？",
@@ -3738,16 +3762,16 @@ categoryConversionBlocks['books:zh-hk'] = {
 categoryConversionBlocks['books:en'] = {
   "category": "books",
   "locale": "en",
-  "title": "Catalog & Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro",
-  "metaDescription": "Custom book printing from $1.20 with a 50-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC-certified.",
+  "title": "Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro",
+  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC-certified.",
   "quickAnswers": [
     {
       "q": "How much does booklet printing cost?",
-      "a": "Saddle stitch booklets run US$1.84-7.36 per copy with a 50-copy MOQ (8-64 pages). Perfect bound books and catalog book printing start at US$4.6 per copy from 100 copies — WhatsApp for a 30-second AI quote."
+      "a": "Saddle stitch booklets run US$1.84-7.36 per copy with a 10-copy MOQ (8-64 pages). Perfect bound books and catalog book printing start at US$4.6 per copy from 10 copies — WhatsApp for a 30-second AI quote."
     },
     {
       "q": "Where can I get book printing in Hong Kong with a low MOQ?",
-      "a": "ZprintPro prints saddle stitch booklets from 50 copies, plus perfect bound, spiral and hardcover books from 100 copies — with volume discounts at 500 / 1,000 / 5,000 copies and DHL 2-4 day global delivery."
+      "a": "ZprintPro prints saddle stitch booklets from 10 copies, plus perfect bound, spiral and hardcover books from 10 copies — with volume discounts at 500 / 1,000 / 5,000 copies and DHL 2-4 day global delivery."
     },
     {
       "q": "How fast can you print and ship custom books?",
@@ -3758,12 +3782,12 @@ categoryConversionBlocks['books:en'] = {
     {
       "stat": "US$1.84",
       "label": "Saddle stitch booklet printing, per copy",
-      "desc": "50-copy MOQ, 8-64 pages; volume discounts at 500 / 1,000 / 5,000 copies."
+      "desc": "10-copy MOQ, 8-64 pages; volume discounts at 500 / 1,000 / 5,000 copies."
     },
     {
-      "stat": "50 copies",
+      "stat": "10 copies",
       "label": "Lowest book MOQ — saddle stitch",
-      "desc": "Perfect bound, spiral and hardcover books start at 100 copies."
+      "desc": "Perfect bound, spiral and hardcover books start at 10 copies."
     },
     {
       "stat": "4,820+",
@@ -3790,28 +3814,28 @@ categoryConversionBlocks['books:en'] = {
         "Saddle stitch booklets",
         "8-64 pages",
         "US$1.84-7.36",
-        "50 copies",
+        "10 copies",
         "Event programs, exercise books, company profile booklets, zines"
       ],
       [
         "Perfect bound books",
         "48-400 pages",
         "From US$4.6",
-        "100 copies",
+        "10 copies",
         "Annual reports, CSR reports, product catalogs, literary collections"
       ],
       [
         "Spiral notebooks & manuals",
         "Lay-flat, fully removable pages",
         "From US$2.76",
-        "100 copies",
+        "10 copies",
         "Training handbooks, workbooks, corporate gifts"
       ],
       [
         "Hardcover books",
         "2.5mm grayboard case",
         "From US$13.8",
-        "100 copies",
+        "10 copies",
         "Yearbooks, photo books, premium keepsakes"
       ]
     ],
@@ -3867,11 +3891,11 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "How much does saddle stitch booklet printing cost?",
-      "a": "US$1.84-7.36 per copy with a 50-copy MOQ, depending on page count, size and paper stock. Catalog book printing and perfect bound books start at US$4.6 per copy from 100 copies."
+      "a": "US$1.84-7.36 per copy with a 10-copy MOQ, depending on page count, size and paper stock. Catalog book printing and perfect bound books start at US$4.6 per copy from 10 copies."
     },
     {
       "q": "Can you print exercise books and workbooks for schools?",
-      "a": "Yes — exercise books, workbooks and training handbooks are popular saddle stitch and spiral orders, starting from 50-100 copies with volume discounts at 500 / 1,000 / 5,000 copies. Every order includes a free design proof within 4 hours."
+      "a": "Yes — exercise books, workbooks and training handbooks are popular saddle stitch and spiral orders, starting from 10 copies with volume discounts at 500 / 1,000 / 5,000 copies. Every order includes a free design proof within 4 hours."
     },
     {
       "q": "Do you ship book printing orders to the USA?",
@@ -3883,8 +3907,8 @@ categoryConversionBlocks['books:en'] = {
 categoryConversionBlocks['books:ja'] = {
   "category": "books",
   "locale": "ja",
-  "title": "教材・テキスト印刷｜中綴じ・無線綴じ・上製本 小ロット100冊〜｜ZprintPro",
-  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも100冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。ISO 9001認証工場。",
+  "title": "冊子印刷｜中綴じ・無線綴じ・上製本 小ロット10冊〜｜ZprintPro",
+  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも10冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。ISO 9001認証工場。",
   "quickAnswers": [
     {
       "q": "教材やテキストの印刷はいくらから依頼できますか？",
@@ -3892,16 +3916,16 @@ categoryConversionBlocks['books:ja'] = {
     },
     {
       "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？",
-      "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも100冊から製造します。"
+      "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。"
     },
     {
       "q": "無線綴じの小ロット製本には対応していますか？",
-      "a": "対応しています。中綴じ・無線綴じ・上製本すべて100冊からのご注文で、教材やテキストの小ロット製本にも対応します。"
+      "a": "対応しています。中綴じ・無線綴じ・上製本すべて10冊からのご注文で、教材やテキストの小ロット製本にも対応します。"
     }
   ],
   "socialProof": [
     {
-      "stat": "100冊〜",
+      "stat": "10冊〜",
       "label": "中綴じ・無線綴じ・上製本すべて小ロット発注に対応"
     },
     {
@@ -3930,31 +3954,31 @@ categoryConversionBlocks['books:ja'] = {
         "中綴じ冊子（8-64ページ）",
         "128g-157gコート紙または書籍用紙・四色印刷・180°フラット開き",
         "テキスト・ワークブック・プログラム・カタログ",
-        "100冊〜／1冊￥258〜"
+        "10冊〜／1冊￥258〜"
       ],
       [
         "無線綴じ書籍（48-400ページ）",
         "157g-200gコート紙・平らで丈夫な背・書名・バーコード・ISBN印刷可",
         "論文集・年次報告書・CSRレポート・配布資料",
-        "100冊〜／1冊￥644〜"
+        "10冊〜／1冊￥644〜"
       ],
       [
         "上製本（ハードカバー）",
         "2.5mm厚のボード表紙・箔押しタイトル・リボン栞対応",
         "卒業記念アルバム・記念誌・保存版テキスト",
-        "100冊〜／1冊￥1,932〜"
+        "10冊〜／1冊￥1,932〜"
       ],
       [
         "カタログ・図録",
         "157g-200gコート紙またはマット紙・表紙はマット／光沢フィルム、箔押しも可",
         "作品集・展覧会図録・製品カタログ",
-        "100冊〜／1冊￥644〜"
+        "10冊〜／1冊￥644〜"
       ],
       [
         "スパイラルノート（リング綴じ）",
         "80g-100g上質紙・YOリング／スパイラル綴じ・180°平開き",
         "研修教材・企業ノート・学校記念品",
-        "100冊〜／1冊￥386〜"
+        "10冊〜／1冊￥386〜"
       ]
     ],
     "note": "目安価格は中綴じ冊子1冊￥258〜／無線綴じ書籍1冊￥644〜／上製本1冊￥1,932〜／スパイラルノート1冊￥386〜。最終価格・納期はページ数・紙質・部数により変わるため、お見積もり制です。"
@@ -3964,7 +3988,7 @@ categoryConversionBlocks['books:ja'] = {
     "steps": [
       {
         "title": "お見積もり",
-        "desc": "WhatsAppでページ数・部数・製本方法をご相談ください。100冊からの小ロットに対応し、30秒AI見積もりで概算価格と納期をご提示します"
+        "desc": "WhatsAppでページ数・部数・製本方法をご相談ください。10冊からの小ロットに対応し、30秒AI見積もりで概算価格と納期をご提示します"
       },
       {
         "title": "データ入稿",
@@ -3995,7 +4019,7 @@ categoryConversionBlocks['books:ja'] = {
     },
     {
       "label": "製本仕様相談",
-      "message": "【卒業記念アルバム】の製本仕様を相談したいです。部数【100冊】、ページ数【64ページ】を想定しています。無線綴じと上製本（ハードカバー）それぞれの価格とおすすめ仕様を教えてください。"
+      "message": "【卒業記念アルバム】の製本仕様を相談したいです。部数【10冊】、ページ数【64ページ】を想定しています。無線綴じと上製本（ハードカバー）それぞれの価格とおすすめ仕様を教えてください。"
     },
     {
       "label": "小ロット急ぎ相談",
@@ -4003,12 +4027,12 @@ categoryConversionBlocks['books:ja'] = {
     }
   ],
   "newFaqs": [
-    { "q": "教材やテキストの印刷はいくらから依頼できますか？", "a": "教材・テキストでよく使われる中綴じ冊子は1冊￥258〜、ページ数の多いカタログ・図録は1冊￥644〜で、いずれも100冊から承ります。ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。" },
-    { "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？", "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも100冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。" },
-    { "q": "無線綴じの小ロット製本には対応していますか？", "a": "対応しています。中綴じ・無線綴じ・上製本すべて100冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで概算価格と納期をご提示し、大口部数は段階的に単価が下がります。" },
+    { "q": "教材やテキストの印刷はいくらから依頼できますか？", "a": "教材・テキストでよく使われる中綴じ冊子は1冊￥258〜、ページ数の多いカタログ・図録は1冊￥644〜で、いずれも10冊から承ります。ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。" },
+    { "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？", "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。" },
+    { "q": "無線綴じの小ロット製本には対応していますか？", "a": "対応しています。中綴じ・無線綴じ・上製本すべて10冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで概算価格と納期をご提示し、大口部数は段階的に単価が下がります。" },
     {
       "q": "教材・テキスト印刷の最小部数と目安価格を教えてください",
-      "a": "中綴じ冊子・無線綴じ書籍・上製本はいずれも100冊から承ります。目安価格は中綴じ冊子1冊￥258〜、無線綴じ1冊￥644〜、上製本1冊￥1,932〜です。ページ数・紙質・部数により単価が変わり、大口ほど単価が下がります。最終価格はお見積もり制となります。"
+      "a": "中綴じ冊子・無線綴じ書籍・上製本はいずれも10冊から承ります。目安価格は中綴じ冊子1冊￥258〜、無線綴じ1冊￥644〜、上製本1冊￥1,932〜です。ページ数・紙質・部数により単価が変わり、大口ほど単価が下がります。最終価格はお見積もり制となります。"
     },
     {
       "q": "無線綴じと中綴じはどう使い分ければよいですか？",
@@ -4016,11 +4040,11 @@ categoryConversionBlocks['books:ja'] = {
     },
     {
       "q": "上製本にはどんな加工を選べますか？",
-      "a": "2.5mm厚のボード表紙にクロスまたは紙を装丁し、箔押しタイトルやリボン栞を追加できます。卒業記念アルバム・記念誌・保存版テキストに人気の仕様です。上製本は100冊から、1冊￥1,932〜で製造します。"
+      "a": "2.5mm厚のボード表紙にクロスまたは紙を装丁し、箔押しタイトルやリボン栞を追加できます。卒業記念アルバム・記念誌・保存版テキストに人気の仕様です。上製本は10冊から、1冊￥1,932〜で製造します。"
     },
     {
       "q": "学校や塾の発注でも小ロットから注文できますか？",
-      "a": "はい。中綴じ・無線綴じ・上製本とも100冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
+      "a": "はい。中綴じ・無線綴じ・上製本とも10冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
     }
   ]
 };

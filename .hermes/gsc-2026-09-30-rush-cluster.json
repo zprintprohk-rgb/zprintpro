@@ -1,0 +1,1187 @@
+{
+ "24h": {
+  "total_queries": 143,
+  "rush_q": 7,
+  "rush_imps": 11,
+  "queries": {
+   "即日急件": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 10.0
+   },
+   "a2 印刷 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 6.5
+   },
+   "next day delivery flyers": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 16.5
+   },
+   "急件印刷": {
+    "clicks": 1,
+    "imps": 1,
+    "ctr": 1.0,
+    "pos": 6.0
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 9.0
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 10.0
+   },
+   "即日印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 10.0
+   }
+  }
+ },
+ "7d": {
+  "total_queries": 604,
+  "rush_q": 21,
+  "rush_imps": 68,
+  "queries": {
+   "即日印刷": {
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "pos": 9.67
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 37.5
+   },
+   "特急印刷 激安": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 15.29
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 6.2
+   },
+   "a2 印刷 即日": {
+    "clicks": 2,
+    "imps": 4,
+    "ctr": 0.5,
+    "pos": 2.25
+   },
+   "print flyers same day": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 12.25
+   },
+   "dhl 当日集荷 何時まで": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "バナースタンド 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 5.5
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   "印刷即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "急件服務": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "24 hour flyer printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "where can i get flyers printed same day": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "即日印貼紙": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   "next day delivery leaflets": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   },
+   "チラシ印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 43.0
+   },
+   "易拉架 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 44.0
+   }
+  }
+ },
+ "28d": {
+  "total_queries": 1000,
+  "rush_q": 31,
+  "rush_imps": 263,
+  "queries": {
+   "即日印刷": {
+    "clicks": 2,
+    "imps": 55,
+    "ctr": 0.0364,
+    "pos": 8.73
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 42,
+    "ctr": 0.0,
+    "pos": 15.12
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 35,
+    "ctr": 0.0,
+    "pos": 31.8
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 22,
+    "ctr": 0.0,
+    "pos": 7.05
+   },
+   "a2 印刷 即日": {
+    "clicks": 3,
+    "imps": 10,
+    "ctr": 0.3,
+    "pos": 2.9
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 35.67
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 53.22
+   },
+   "急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 8.75
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 26.38
+   },
+   "特急印刷 激安": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 15.29
+   },
+   "print flyers same day": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 21.57
+   },
+   "next day delivery leaflets": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 27.67
+   },
+   "overnight flyer printing": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 38.4
+   },
+   "貼紙印刷 急件": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 6.75
+   },
+   "即日 印刷": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 25.25
+   },
+   "印刷即日": {
+    "clicks": 1,
+    "imps": 3,
+    "ctr": 0.3333,
+    "pos": 1.33
+   },
+   "dhl 当日集荷 何時まで": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 12.67
+   },
+   "チラシ 印刷 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 30.33
+   },
+   "海報印刷即日": {
+    "clicks": 1,
+    "imps": 2,
+    "ctr": 0.5,
+    "pos": 14.5
+   },
+   "バナースタンド 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 5.5
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "順豐急件": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "チラシ 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 25.0
+   },
+   "printing 24 hr": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 39.5
+   },
+   "same day flyer delivery": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 43.5
+   },
+   "overnight flyers": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 74.5
+   },
+   "急件服務": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "即印": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "印刷急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "a0 印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   }
+  }
+ },
+ "3mo": {
+  "total_queries": 1000,
+  "rush_q": 29,
+  "rush_imps": 472,
+  "queries": {
+   "即日印刷": {
+    "clicks": 4,
+    "imps": 131,
+    "ctr": 0.0305,
+    "pos": 11.63
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 76,
+    "ctr": 0.0,
+    "pos": 16.93
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "pos": 31.28
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 29,
+    "ctr": 0.0,
+    "pos": 7.55
+   },
+   "a2 印刷 即日": {
+    "clicks": 5,
+    "imps": 24,
+    "ctr": 0.20829999999999999,
+    "pos": 4.5
+   },
+   "特急印刷 激安": {
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "pos": 17.63
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "pos": 53.68
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 17,
+    "ctr": 0.0,
+    "pos": 27.06
+   },
+   "即日 印刷": {
+    "clicks": 0,
+    "imps": 16,
+    "ctr": 0.0,
+    "pos": 28.19
+   },
+   "printing 24 hr": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 43.27
+   },
+   "海報印刷即日": {
+    "clicks": 1,
+    "imps": 10,
+    "ctr": 0.1,
+    "pos": 14.2
+   },
+   "print flyers same day": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 29.44
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 35.67
+   },
+   "急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 8.75
+   },
+   "順豐急件": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 10.57
+   },
+   "next day delivery leaflets": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 27.67
+   },
+   "overnight flyer printing": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 38.4
+   },
+   "貼紙印刷 急件": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 6.75
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 12.25
+   },
+   "チラシ 印刷 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 30.0
+   },
+   "プリント 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 31.0
+   },
+   "same day flyer delivery": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 44.75
+   },
+   "印刷即日": {
+    "clicks": 1,
+    "imps": 3,
+    "ctr": 0.3333,
+    "pos": 1.33
+   },
+   "バナースタンド 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   "dhl 当日集荷 何時まで": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 14.33
+   },
+   "samedayflyers": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 22.67
+   },
+   "flyers next day": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 51.0
+   },
+   "即印": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 6.5
+   }
+  }
+ },
+ "hk-7d": {
+  "total_queries": 270,
+  "rush_q": 13,
+  "rush_imps": 44,
+  "queries": {
+   "即日印刷": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 9.73
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 37.5
+   },
+   "a2 印刷 即日": {
+    "clicks": 2,
+    "imps": 4,
+    "ctr": 0.5,
+    "pos": 2.25
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 5.67
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   "印刷即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 1.0
+   },
+   "急件服務": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "即日印貼紙": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 43.0
+   },
+   "易拉架 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 44.0
+   }
+  }
+ },
+ "hk-28d": {
+  "total_queries": 589,
+  "rush_q": 26,
+  "rush_imps": 212,
+  "queries": {
+   "即日印刷": {
+    "clicks": 2,
+    "imps": 51,
+    "ctr": 0.0392,
+    "pos": 8.94
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 39,
+    "ctr": 0.0,
+    "pos": 15.51
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 35,
+    "ctr": 0.0,
+    "pos": 31.8
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 20,
+    "ctr": 0.0,
+    "pos": 7.05
+   },
+   "a2 印刷 即日": {
+    "clicks": 3,
+    "imps": 10,
+    "ctr": 0.3,
+    "pos": 2.9
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 35.67
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 53.22
+   },
+   "急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 8.75
+   },
+   "貼紙印刷 急件": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 6.75
+   },
+   "印刷即日": {
+    "clicks": 1,
+    "imps": 3,
+    "ctr": 0.3333,
+    "pos": 1.33
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 12.67
+   },
+   "海報印刷即日": {
+    "clicks": 1,
+    "imps": 2,
+    "ctr": 0.5,
+    "pos": 14.5
+   },
+   "順豐急件": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 11.0
+   },
+   "即日 印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   "printing 24 hr": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 39.5
+   },
+   "急件服務": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "即印": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "印刷急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "a0 印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 12.0
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "順豐 急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   "即日印貼紙": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   "海報 印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 17.0
+   },
+   "易拉架 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 44.0
+   },
+   "urgent printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 61.0
+   }
+  }
+ },
+ "hk-3mo": {
+  "total_queries": 884,
+  "rush_q": 29,
+  "rush_imps": 386,
+  "queries": {
+   "即日印刷": {
+    "clicks": 4,
+    "imps": 127,
+    "ctr": 0.0315,
+    "pos": 11.81
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 73,
+    "ctr": 0.0,
+    "pos": 17.22
+   },
+   "特急快印": {
+    "clicks": 0,
+    "imps": 36,
+    "ctr": 0.0,
+    "pos": 31.28
+   },
+   "a1 印刷 即日": {
+    "clicks": 0,
+    "imps": 26,
+    "ctr": 0.0,
+    "pos": 7.65
+   },
+   "a2 印刷 即日": {
+    "clicks": 4,
+    "imps": 22,
+    "ctr": 0.1818,
+    "pos": 4.5
+   },
+   "poster print same day": {
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "pos": 53.68
+   },
+   "printing 24 hr": {
+    "clicks": 0,
+    "imps": 11,
+    "ctr": 0.0,
+    "pos": 43.27
+   },
+   "海報印刷即日": {
+    "clicks": 1,
+    "imps": 10,
+    "ctr": 0.1,
+    "pos": 14.2
+   },
+   "易拉架即日": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 35.67
+   },
+   "急件": {
+    "clicks": 0,
+    "imps": 8,
+    "ctr": 0.0,
+    "pos": 8.75
+   },
+   "順豐急件": {
+    "clicks": 0,
+    "imps": 7,
+    "ctr": 0.0,
+    "pos": 10.57
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 8.8
+   },
+   "貼紙印刷 急件": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 6.75
+   },
+   "banner 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 12.25
+   },
+   "即日 印刷": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 22.25
+   },
+   "印刷即日": {
+    "clicks": 1,
+    "imps": 3,
+    "ctr": 0.3333,
+    "pos": 1.33
+   },
+   "即印": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 6.5
+   },
+   "即日印刷旺角": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 17.0
+   },
+   "a0 印刷 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   "觀塘印刷即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 50.5
+   },
+   "urgent printing": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 57.5
+   },
+   "急件服務": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 6.0
+   },
+   "印刷急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 8.0
+   },
+   "順豐 急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   "即日印貼紙": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   "海報 印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 17.0
+   },
+   "即印香港有限公司": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 20.0
+   },
+   "速印": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 38.0
+   },
+   "易拉架 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 44.0
+   }
+  }
+ },
+ "us-3mo": {
+  "total_queries": 849,
+  "rush_q": 19,
+  "rush_imps": 43,
+  "queries": {
+   "print flyers same day": {
+    "clicks": 0,
+    "imps": 9,
+    "ctr": 0.0,
+    "pos": 29.44
+   },
+   "next day delivery leaflets": {
+    "clicks": 0,
+    "imps": 6,
+    "ctr": 0.0,
+    "pos": 27.67
+   },
+   "overnight flyer printing": {
+    "clicks": 0,
+    "imps": 5,
+    "ctr": 0.0,
+    "pos": 38.4
+   },
+   "same day flyer delivery": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 44.75
+   },
+   "flyers next day": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 51.0
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 10.0
+   },
+   "overnight flyers": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 74.5
+   },
+   "即日印刷": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 4.0
+   },
+   "即日急件": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 7.0
+   },
+   "24 hour flyer printing": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "flyer printing next day delivery": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "where can i get flyers printed same day": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   "flyers next day delivery": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   "samedayflyers": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   },
+   "24 hour flyers": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 34.0
+   },
+   "same day flyers": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 42.0
+   },
+   "same day print flyers": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 45.0
+   },
+   "same day flyer": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 46.0
+   },
+   "flyer printing same day": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 48.0
+   }
+  }
+ },
+ "jp-3mo": {
+  "total_queries": 273,
+  "rush_q": 12,
+  "rush_imps": 62,
+  "queries": {
+   "特急印刷 激安": {
+    "clicks": 0,
+    "imps": 19,
+    "ctr": 0.0,
+    "pos": 17.63
+   },
+   "即日 印刷": {
+    "clicks": 0,
+    "imps": 12,
+    "ctr": 0.0,
+    "pos": 30.17
+   },
+   "印刷 即日": {
+    "clicks": 0,
+    "imps": 10,
+    "ctr": 0.0,
+    "pos": 39.6
+   },
+   "チラシ 印刷 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 30.0
+   },
+   "プリント 即日": {
+    "clicks": 0,
+    "imps": 4,
+    "ctr": 0.0,
+    "pos": 31.0
+   },
+   "バナースタンド 即日": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   "dhl 当日集荷 何時まで": {
+    "clicks": 0,
+    "imps": 3,
+    "ctr": 0.0,
+    "pos": 8.33
+   },
+   "チラシ 即日": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 25.0
+   },
+   "当日 印刷": {
+    "clicks": 0,
+    "imps": 2,
+    "ctr": 0.0,
+    "pos": 37.0
+   },
+   "a2 印刷 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 4.0
+   },
+   "即日印刷 チラシ": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 26.0
+   },
+   "ロール アップ バナー 即日": {
+    "clicks": 0,
+    "imps": 1,
+    "ctr": 0.0,
+    "pos": 28.0
+   }
+  }
+ }
+}

@@ -2556,7 +2556,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     posters: { 'zh-hk': '海報印刷', en: 'Poster Printing', ja: 'ポスター印刷' },
     'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bag Printing', ja: '紙袋印刷' },
     banners: { 'zh-hk': '噴繪廣告印刷', en: 'Banner Printing', ja: 'バナー印刷' },
-    books: { 'zh-hk': '書籍印刷', en: 'Book Printing', ja: '書籍印刷' },
+    books: { 'zh-hk': '小冊子・書刊印刷', en: 'Booklet Printing', ja: '冊子印刷' },
     menus: { 'zh-hk': '餐牌印刷', en: 'Menu Printing', ja: 'メニュー印刷' },
     envelopes: { 'zh-hk': '信封印刷', en: 'Envelope Printing', ja: '封筒印刷' },
     calendars: { 'zh-hk': '月曆印刷', en: 'Calendar Printing', ja: 'カレンダー印刷' },

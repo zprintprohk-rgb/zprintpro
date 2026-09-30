@@ -40,7 +40,7 @@ const commonSegments: Record<string, Record<Locale, string>> = {
   'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bags', ja: '紙袋印刷' },
   'greeting-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード・年賀状' },
   banners: { 'zh-hk': '噴繪廣告', en: 'Banners', ja: 'バナー印刷' },
-  books: { 'zh-hk': '騎馬釘書刊印刷', en: 'Books', ja: '書籍印刷' },
+  books: { 'zh-hk': '小冊子・書刊印刷', en: 'Booklets', ja: '冊子印刷' },
   menus: { 'zh-hk': '餐牌印刷', en: 'Menus', ja: 'メニュー印刷' },
   envelopes: { 'zh-hk': '信封印刷', en: 'Envelopes', ja: '封筒印刷' },
   calendars: { 'zh-hk': '月曆印刷', en: 'Calendars', ja: 'カレンダー印刷' },
@@ -61,7 +61,7 @@ const pillarNames: Record<string, Record<Locale, string>> = {
     ja: 'シール印刷完全ガイド',
   },
   'flyer-guide': {
-    'zh-hk': '傳單印刷印刷攻略',
+    'zh-hk': '傳單印刷攻略',
     en: 'Flyer Printing Masterclass',
     ja: 'チラシ印刷マスターガイド',
   },

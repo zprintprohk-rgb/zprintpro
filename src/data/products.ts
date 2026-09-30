@@ -129,7 +129,7 @@ export const categories: Category[] = [
   { slug: 'greeting-cards', name: '賀卡印刷', nameEn: 'Greeting Cards', nameJa: 'グリーティングカード・年賀状', name_zh: '賀卡印刷', name_en: 'Greeting Cards', name_ja: 'グリーティングカード・年賀状', sort_order: 6 },
   // 次要分类
   { slug: 'banners', name: '噴繪廣告', nameEn: 'Banners', nameJa: 'バナー印刷', name_zh: '噴繪廣告', name_en: 'Banners', name_ja: 'バナー印刷', sort_order: 7 },
-  { slug: 'books', name: '騎馬釘書刊印刷', nameEn: 'Books', nameJa: '書籍印刷', name_zh: '騎馬釘書刊印刷', name_en: 'Books', name_ja: '書籍印刷', sort_order: 8 },
+  { slug: 'books', name: '小冊子・書刊印刷', nameEn: 'Booklet Printing', nameJa: '冊子印刷・書籍', name_zh: '小冊子・書刊印刷', name_en: 'Booklet Printing', name_ja: '冊子印刷・書籍', sort_order: 8 },
   { slug: 'menus', name: '餐牌印刷', nameEn: 'Menus', nameJa: 'メニュー印刷', name_zh: '餐牌印刷', name_en: 'Menus', name_ja: 'メニュー印刷', sort_order: 9 },
   { slug: 'envelopes', name: '信封印刷', nameEn: 'Envelopes', nameJa: '封筒印刷', name_zh: '信封印刷', name_en: 'Envelopes', name_ja: '封筒印刷', sort_order: 10 },
   { slug: 'calendars', name: '月曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '月曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
