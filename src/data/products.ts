@@ -6591,7 +6591,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-school-flyers-zh-hk-1.webp', en: 'zprintpro-educational-school-flyers-en-1.webp', ja: 'zprintpro-educational-school-flyers-ja-1.webp' },
     alt: {
-      'zh-hk': '香港校園傳單印刷 157g銅版紙 雙面彩色',
+      'zh-hk': '香港學校單張印刷 157g銅版紙 雙面彩色',
       en: 'School Flyers Printing 157g Glossy Paper Double-sided Color',
       ja: '學校チラシ | 學校向け・大量印刷対応 | ZprintPro'
     },

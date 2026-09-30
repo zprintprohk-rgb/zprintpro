@@ -901,7 +901,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk book orders can be arranged for school or warehouse delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit binding method, page count, book size, paper type, cover finish, and quantity for a quote first. After confirmation, upload your InDesign / PDF file. Our prepress team will check text outlining and bleed.' },
       // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en
-      { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/order, cross-border DHL 2-4 day), 200-1,000 copy batches for cross-border brand catalogs, 50-200 copy test prints for school workbooks, and 300-500 copy regular orders for church/NGO publications. Saddle stitch booklet inquiries +38% MoM, education ministries +52%, cross-border e-commerce +27% (source: ZprintPro H1 2026 order statistics). Three key trends: small-batch flexibility (50-copy MOQ + 30-second AI quote), eco material penetration +47% (FSC paper + soy ink), and cross-border e-commerce driving premium small-batch demand (200-1,000 copy catalogs as the main driver).' },
+      { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/order, cross-border DHL 2-4 day), 200-1,000 copy batches for cross-border brand catalogs, 50-200 copy test prints for school workbooks, and 300-500 copy regular orders for church/NGO publications. Saddle stitch booklet inquiries +38% MoM, education ministries +52%, cross-border e-commerce +27% (source: ZprintPro H1 2026 order statistics). Three key trends: small-batch flexibility (10-copy MOQ + 30-second AI quote), eco material penetration +47% (FSC paper + soy ink), and cross-border e-commerce driving premium small-batch demand (200-1,000 copy catalogs as the main driver).' },
     ],
   },
   ja: {
@@ -909,7 +909,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送) + bulk/wholesale 段 + ジープリント 埋点 1 次
     featuredSnippet: '中綴じ冊子印刷 10冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 10冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ZprintPro.',
     lastUpdated: '2026-08-24',
-    h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',
+    h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 10冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
       title: 'ZprintPro 書籍印刷の強み',
       items: [
@@ -1660,7 +1660,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 小批量靈活起訂，節日促銷不錯過',
           points: [
-            '50 本起訂（數碼印刷），適合中小企業和初創公司製作節日禮品',
+            '1 本起訂（數碼印刷），適合中小企業和初創公司製作節日禮品',
             '500 本以上柯式印刷更經濟，適合大型企業年終贈禮和品牌推廣',
             '支持可變數據印刷，每本年曆可以印不同員工姓名或不同分店信息（個性化贈禮）',
           ],
@@ -1702,7 +1702,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       title: '技術參數詳解',
       items: [
         { label: '標準尺寸', value: '座枱曆：150×180mm、200×230mm；掛牆曆：A3(297×420mm)、A2(420×594mm)；月曆卡：100×150mm；支持完全訂製' },
-        { label: '起訂量', value: '50 本起訂（數碼印刷），500 本以上柯式印刷更經濟' },
+        { label: '起訂量', value: '1 本起訂（數碼印刷），500 本以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF / InDesign，300dpi，CMYK，預留 3mm 出血位，每月獨立頁面設計' },
         { label: '紙張選擇', value: '200g–300g 銅版紙／哑粉紙；底板：1–2mm 灰板或硬卡紙' },
@@ -1734,7 +1734,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '月曆印刷最低多少本起？', a: '50 本起訂（數碼印刷）。500 本以上柯式印刷更經濟。' },
+      { q: '月曆印刷最低多少本起？', a: '1 本起訂（數碼印刷）。500 本以上柯式印刷更經濟。' },
       { q: '年曆有哪些類型？', a: '座枱曆（三角架）、掛牆曆、月曆卡、記事簿月曆、磁石冰箱貼月曆。' },
       { q: '可以定制企業年曆嗎？', a: '可以。專業設計師為企業定制品牌年曆，融入產品、文化、價值觀等元素。' },
       { q: '月曆印刷需要多久？', a: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天。' },
@@ -1874,7 +1874,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 小ロット対応、季節プロモーションを逃さない',
           points: [
-            '50冊から（デジタル印刷）。中小企業やスタートアップの季節ギフト作成に最適。',
+            '1冊から（デジタル印刷）。中小企業やスタートアップの季節ギフト作成に最適。',
             '500冊以上はオフセット印刷がお得。大企業の年末ギフトやブランドキャンペーンに最適。',
             '可変データ印刷に対応。1冊ずつ異なる従業員名や店舗情報が可能（パーソナライズギフト）。',
           ],
@@ -1916,7 +1916,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: '標準サイズ', value: '卓上：150×180mm、200×230mm。壁掛け：A3(297×420mm)、A2(420×594mm)。カード：100×150mm。完全カスタマイズ対応。' },
-        { label: '最小発注数', value: '50冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
+        { label: '最小発注数', value: '1冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
         { label: '納期', value: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日（デジタル）。' },
         { label: 'ファイル要件', value: 'AI／PDF／InDesign、300dpi、CMYK、3mmのbleed。各月を独立ページでデザイン。' },
         { label: '紙の選択', value: '200g–300gコート紙／マット紙。台座：1–2mmグレイボードまたはカード紙。' },
@@ -1940,7 +1940,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'カレンダー印刷の最小発注数は？', a: '50冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
+      { q: 'カレンダー印刷の最小発注数は？', a: '1冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
       { q: 'どんなタイプのカレンダーがありますか？', a: '卓上カレンダー（イーゼル）、壁掛けカレンダー、カレンダーカード、手帳カレンダー、磁石冷蔵庫カレンダー。' },
       { q: '企業カレンダーのカスタマイズは可能？', a: 'はい。プロデザイナーがブランドカレンダーを作成。製品、文化、価値観などを統合します。' },
       { q: 'カレンダー印刷にどのくらいかかりますか？', a: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日。' },
@@ -2285,7 +2285,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '3. 小批量彈性起訂，學校預算友好',
           points: [
-            '50 本起訂（數碼印刷），適合小型補習社和專題教材',
+            '練習簿 10 本起訂（數碼印刷），適合小型補習社和專題教材；教科書 100 本起',
             '500 本以上柯式印刷更經濟，適合全校統一教材和大型教育機構',
             '教育機構專屬折扣，長期合作客戶享受額外優惠和優先排期',
           ],
@@ -2319,7 +2319,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       title: '技術參數詳解',
       items: [
         { label: '標準尺寸', value: '作業簿：A4(210×297mm)、A5(148×210mm)、B5(176×250mm)；證書：A4、A3；支持完全訂製' },
-        { label: '起訂量', value: '50 本起訂（數碼印刷），500 本以上柯式印刷更經濟' },
+        { label: '起訂量', value: '練習簿 10 本起訂（數碼印刷），教科書/證書 100 起，500 本以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF / Word，300dpi，CMYK，預留 3mm 出血位' },
         { label: '環保認證', value: 'FSC 認證環保紙張、大豆油墨、無毒無害，符合教育產品安全標準' },
@@ -2343,7 +2343,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '教育印刷最低多少本起？', a: '50 本起訂（數碼印刷）。500 本以上柯式印刷更經濟。教育機構享受專屬折扣。' },
+      { q: '教育印刷最低多少本起？', a: '練習簿 10 本起訂（數碼印刷）；教科書、證書 100 起；畢業紀念冊 1 本起。500 本以上柯式印刷更經濟。教育機構享受專屬折扣。' },
       { q: '可以印刷作業簿和教科書嗎？', a: '可以。提供作業簿、練習簿、教科書、教師手冊等全系列教育印刷。' },
       { q: '教育印刷使用環保材料嗎？', a: '使用 FSC 認證環保紙張和大豆油墨，無毒無害，符合教育產品安全標準。' },
       { q: '可以印刷證書和獎狀嗎？', a: '可以。提供燙金證書、防偽水印證書、獎狀等多種形式。' },
@@ -2475,7 +2475,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '3. 小ロット対応、学校予算に優しい',
           points: [
-            '50冊から（デジタル印刷）。小規模な塾や特別教材に最適。',
+            '10冊から（デジタル印刷）。小規模な塾や特別教材に最適。',
             '500冊以上はオフセット印刷がお得。全校統一教材や大規模教育機関に最適。',
             '教育機関専用割引。長期協力クライアントは追加割引と優先スケジュールを享受。',
           ],
@@ -2509,7 +2509,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: '標準サイズ', value: 'ノート：A4(210×297mm)、A5(148×210mm)、B5(176×250mm)。証書：A4、A3。完全カスタマイズ対応。' },
-        { label: '最小発注数', value: '50冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
+        { label: '最小発注数', value: '10冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
         { label: '納期', value: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日（デジタル）。' },
         { label: 'ファイル要件', value: 'AI／PDF／Word、300dpi、CMYK、3mmのbleed。' },
         { label: 'エコ認証', value: 'FSC認証エコ紙、大豆インク、無毒無害。教育製品安全基準に準拠。' },
@@ -2532,7 +2532,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '教育印刷の最小発注数は？', a: '50冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。教育機関は専用割引を享受。' },
+      { q: '教育印刷の最小発注数は？', a: '10冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。教育機関は専用割引を享受。' },
       { q: 'ノートと教科書の印刷は可能？', a: 'はい。ノート、ワークブック、教科書、教師用マニュアルなど教育印刷の全系列を提供します。' },
       { q: 'エコ素材を使用していますか？', a: 'はい。FSC認証エコ紙と大豆インクを使用。無毒無害で、子供用品安全基準に準拠しています。' },
       { q: '証書と表彰状の印刷は可能？', a: 'はい。箔押し証書、偽造防止透かし証書、表彰状など多様な形式を提供します。' },

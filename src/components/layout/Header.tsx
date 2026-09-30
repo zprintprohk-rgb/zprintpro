@@ -194,7 +194,7 @@ const featuredDescs: Record<string, Record<string, string>> = {
     'kraft-paper-packaging-box': '環保牛皮，自然質感', 'gang-run-card-boxes': '免刀模費，標準尺寸',
     'a2-posters': '大圖輸出，色彩鮮豔', 'a1-posters': '展覽專用，視覺震撼', 'outdoor-posters': '防水防曬，戶外耐用',
     'display-posters': '展示專用，吸引眼球', 'art-posters': '藝術級印刷，色彩細膩', 'adhesive-posters': '背膠設計，即貼即用',
-    'exercise-books': '教育專用，品質保證', 'certificates': '正式場合，尊貴體驗', 'school-flyers': '校園宣傳，信息傳遞', 'textbooks': '教學必備，知識傳承',
+    'exercise-books': '教育專用，品質保證', 'certificates': '正式場合，尊貴體驗', 'school-flyers': '學校宣傳，信息傳遞', 'textbooks': '教學必備，知識傳承',
   },
   'en': {
     'kraft-paper-bags': 'Eco-friendly, min 100', 'white-card-bags': 'Premium, brand choice', 'gift-bags': 'Elegant, perfect gift',
