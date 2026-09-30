@@ -2156,6 +2156,34 @@ const lpComiketPrintingPrepGuide: BlogPostMeta = {
   },
 };
 
+// 2026-09-30 ZP-daily-content: 利是封印刷 2027 農曆新年 (B7 queue 規則 4: W7 利是封 R5 季節 9/30 8:00 错峰必发, CNY 2027=2/6)
+// GSC 9/18 28d: 利是封印刷 70 imps pos 27.90 0 clicks; 簇 利是封/賀卡 #q=13 / 151 imps
+// 3 快速答案 + 3 表格 + 6 FAQ + 3 wa.me CTA; 價格/起印/尺寸全部 products.ts RP-001~RP-006 派生
+const lpCny2027RedPacketPrintingGuide: BlogPostMeta = {
+  slug: 'cny-2027-red-packet-printing-guide',
+  categoryKey: 'red-packets',
+  source: 'daily',
+  date: '2026-09-30',
+  title: {
+    'zh-hk': "利是封印刷 2027：企業燙金訂製 100 個起 HK$1.1 起 | 智印港",
+    en: "2027 CNY Red Packet Printing: 100 MOQ Foil | ZprintPro",
+    ja: "2027年 ポチ袋印刷：箔押し 100 枚から HK$1.1 起 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "2027 農曆新年（2 月 6 日）企業利是封訂製指南：燙金利是封 100 個起印 HK$1.10-4.80/個，浮雕／定製／卡通／環保／大號 6 款 SKU 價格對比，三色燙金、90×170mm 標準尺寸、免費刀模，標準 5-7 個工作天交貨，落單時間線同 6 條 FAQ 一次過睇清。",
+    en: "Corporate red packet printing guide for CNY 2027 (Feb 6): foil red packets from 100 MOQ at HK$1.10-4.80/pc, 6-SKU price comparison (foil, embossed, custom, cartoon, eco, large), gold/silver/rose-gold foil, standard 90x170mm size, free die cutting, 5-7 working day production, ordering timeline and 6 FAQs.",
+    ja: "2027 年旧正月（2 月 6 日）に向けた法人向けポチ袋（紅包）オーダーガイド。箔押しポチ袋 100 枚から HK$1.10-4.80/枚、エンボス／オリジナル／キャラクター／エコ／大判の 6 SKU 価格比較、金・銀・ローズゴールドの 3 色箔押し、標準サイズ 90×170mm、無料抜型、標準納期 5〜7 営業日、スケジュール表と 6 つのよくあるご質問を解説。",
+  },
+  targetKeywords: {
+    primary: '利是封印刷',
+    secondary: [
+      '利是封 印刷', '利是封 訂製', '燙金利是封', '紅包 印刷', '2027 利是封',
+      'red packet printing', 'CNY red packets', 'custom red packets', 'lai see printing',
+      'ポチ袋 印刷', '紅包 印刷 2027', '箔押し ポチ袋',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2328,6 +2356,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpRollUpBannerPrintingGuide,
   // 2026-09-29 ZP-daily-content: コミケ 109 印刷備戰 (GSC コミケ 印刷 93 imps pos 29.8, 9/18 28d)
   lpComiketPrintingPrepGuide,
+  // 2026-09-30 ZP-daily-content: 利是封印刷 2027 (B7 错峰 9/30 必发, CNY 2027=2/6; GSC 利是封印刷 70 imps pos 27.9)
+  lpCny2027RedPacketPrintingGuide,
   ];
 
 // =============================================================================

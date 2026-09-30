@@ -20,19 +20,19 @@ type Props = {
 
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
-    title: 'China Catalog Printing | 50 MOQ + Shenzhen Factory + DHL 2-4 Days | 智印港 ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified.',
+    title: 'China Catalog Printing | 10 MOQ + Shenzhen Factory + DHL 2-4 Days | 智印港 ZprintPro',
+    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china',
   },
   'en': {
-    title: 'China Catalog Printing | 50 MOQ + Shenzhen Factory + DHL 2-4 Days | ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 50 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
+    title: 'China Catalog Printing | 10 MOQ + Shenzhen Factory + DHL 2-4 Days | ZprintPro',
+    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china,magazine printing china,brochure printing china,lookbook printing china',
   },
   'ja': {
-    title: '中国カタログ印刷｜50部から・深セン工場・DHL 2-4日｜ZprintPro',
-    desc: '中国深セン工場からのカタログ印刷、50部から対応、無料ファイルチェック、2時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',
-    keywords: '中国カタログ印刷,中国印刷工場,深セン印刷工場,大量カタログ印刷,卸売カタログ印刷,安いカタログ印刷,小ロットカタログ印刷,カタログ印刷 50部,即納カタログ印刷,カタログ印刷 アメリカ,カタログ印刷 ヨーロッパ,カスタムカタログ印刷,冊子印刷 中国',
+    title: '中国カタログ印刷｜10部から・深セン工場・DHL 2-4日｜ZprintPro',
+    desc: '中国深セン工場からのカタログ印刷、10部から対応、無料ファイルチェック、2時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',
+    keywords: '中国カタログ印刷,中国印刷工場,深セン印刷工場,大量カタログ印刷,卸売カタログ印刷,安いカタログ印刷,小ロットカタログ印刷,カタログ印刷 10部,即納カタログ印刷,カタログ印刷 アメリカ,カタログ印刷 ヨーロッパ,カスタムカタログ印刷,冊子印刷 中国',
   },
 };
 
@@ -111,18 +111,18 @@ const T: Record<string, {
   qa_intro: string;
 }> = {
   'zh-hk': {
-    heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 50 MOQ, DHL 2-4 Days',
-    heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 50 本起印, 30 秒 AI 即時報價, ISO 9001 + FSC 認證. 對比歐美印刷廠慳 30-40%.',
+    heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 10 MOQ, DHL 2-4 Days',
+    heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 10 本起印, 30 秒 AI 即時報價, ISO 9001 + FSC 認證. 對比歐美印刷廠慳 30-40%.',
     ctaPrimary: 'WhatsApp 19880851334 即時報價',
     ctaSecondary: '查看材料樣本',
-    h2_advantage: '三錘碾壓：30 秒 AI 報價 / MOQ 50 / DHL 2-4 天',
+    h2_advantage: '三錘碾壓：30 秒 AI 報價 / MOQ 10 / DHL 2-4 天',
     advantageIntro: '對標 QinPrinting 上海 (Trustpilot 4.9/327 條), 我方三錘碾壓歐美傳統印刷廠:',
     hammerA_title: '錘 1 · 30 秒 AI 即時報價',
     hammerA_desc: '傳統工廠 24 小時人工報價, 旺季延遲 3-5 天. 我方 30 秒 AI 報價, 365×24 即時.',
     hammerA_items: ['30 秒即時報價 (vs 24 小時人工)', '365×24 不打烊 (vs 工作日 9-6)', '報價含運費稅費 (vs 後加隱藏費用)'],
-    hammerB_title: '錘 2 · MOQ 50 + 免費打樣',
-    hammerB_desc: 'QinPrinting MOQ 100, 歐美工廠 MOQ 500-1000. 我方 MOQ 50 + 免費 file check, 新品試產零門檻.',
-    hammerB_items: ['MOQ 50 本 (vs 100 本)', '免費 file check (vs 收費 $50/次)', '5 天數碼打樣 (vs 7-10 天)'],
+    hammerB_title: '錘 2 · MOQ 10 + 免費打樣',
+    hammerB_desc: 'QinPrinting MOQ 100, 歐美工廠 MOQ 500-1000. 我方 MOQ 10 + 免費 file check, 新品試產零門檻.',
+    hammerB_items: ['MOQ 10 本 (vs 100 本)', '免費 file check (vs 收費 $50/次)', '5 天數碼打樣 (vs 7-10 天)'],
     hammerC_title: '錘 3 · DHL 2-4 天全球直送',
     hammerC_desc: '深圳直飛香港 24 小時, DHL 2-4 天到美國/英國/澳洲. 歐美傳統工廠 3-10 天.',
     hammerC_items: ['DHL Express 2-4 天 (vs 3-10 天)', 'DDP 完稅到門 (vs 收件人自付稅)', '深圳直發 (vs 中轉倉延遲)'],
@@ -155,7 +155,7 @@ const T: Record<string, {
     compareHeaders: ['指標', 'ZprintPro (深圳)', '歐美本地工廠'],
     compareRows: [
       { feature: '報價速度', us: '30 秒 AI 報價', qin: '24-72 小時人工', usBetter: true },
-      { feature: '最低起印量 (MOQ)', us: '50 本', qin: '500-1000 本', usBetter: true },
+      { feature: '最低起印量 (MOQ)', us: '10 本', qin: '500-1000 本', usBetter: true },
       { feature: '單本成本 (100 本)', us: 'HK$ 18 / 本 (US$2.30)', qin: 'US$5-8 / 本', usBetter: true },
       { feature: '全球配送', us: 'DHL 2-4 天 DDP', qin: '本地配送 5-10 天', usBetter: true },
       { feature: '樣書打樣', us: '免費 5 天', qin: '收費 $50-200 / 次', usBetter: true },
@@ -163,7 +163,7 @@ const T: Record<string, {
     h2_faq: '常見問題 (FAQ)',
     faqs: [
       { q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },
-      { q: 'MOQ 真係 50 本？', a: '係, 50 本起印, 採用柯式數碼混合印刷. 1000 本以上純柯式印刷, 單價更低. 樣書打樣可低至 1 本 (按成本收費).' },
+      { q: 'MOQ 真係 10 本？', a: '係, 10 本起印, 採用柯式數碼混合印刷. 1000 本以上純柯式印刷, 單價更低. 樣書打樣可低至 1 本 (按成本收費).' },
       { q: '從深圳運去美國要幾耐？要交稅嗎？', a: 'DHL Express 2-4 個工作天到達美國 / 英國 / 澳洲. DDP (Delivered Duty Paid) 完稅到門, 收件人零稅務負擔, 唔需要額外付關稅或 VAT.' },
       { q: '可以先打樣確認再批量生產嗎？', a: '可以, 5 天數碼打樣 (1-3 本), 確認滿意後批量生產可全額抵扣. 樣書費用透明, 比歐美便宜 80%.' },
     ],
@@ -192,18 +192,18 @@ const T: Record<string, {
     qa_intro: '以下是我們客戶最常問的問題, 希望幫你快速做決定. WhatsApp 19880851334 即時查詢.',
   },
   'en': {
-    heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 50 MOQ, DHL 2-4 Days',
-    heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 50 MOQ, 30-second AI quote, ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
+    heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 10 MOQ, DHL 2-4 Days',
+    heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 10 MOQ, 30-second AI quote, ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
     ctaPrimary: 'WhatsApp 19880851334 for instant quote',
     ctaSecondary: 'Request material samples',
-    h2_advantage: 'Three Hammers: 30s AI Quote / 50 MOQ / DHL 2-4 Days',
+    h2_advantage: 'Three Hammers: 30s AI Quote / 10 MOQ / DHL 2-4 Days',
     advantageIntro: 'Benchmarked against QinPrinting Shanghai (Trustpilot 4.9/327 reviews), our three hammers crush Western printers:',
     hammerA_title: 'Hammer 1 · 30-Second AI Instant Quote',
     hammerA_desc: 'Traditional factories quote in 24 hours (3-5 days in peak season). Our 30-second AI quote is always on, 365×24.',
     hammerA_items: ['30-second quote (vs 24-hour manual)', '365×24 always-on (vs 9-6 weekdays)', 'Quote includes shipping + duty (vs hidden fees)'],
-    hammerB_title: 'Hammer 2 · 50 MOQ + Free File Check',
-    hammerB_desc: 'QinPrinting MOQ 100, Western factories MOQ 500-1000. We offer 50 MOQ + free file check — zero barrier for new product testing.',
-    hammerB_items: ['50 pcs MOQ (vs 100 pcs)', 'Free file check (vs $50/charge)', '5-day digital proof (vs 7-10 days)'],
+    hammerB_title: 'Hammer 2 · 10 MOQ + Free File Check',
+    hammerB_desc: 'QinPrinting MOQ 100, Western factories MOQ 500-1000. We offer 10 MOQ + free file check — zero barrier for new product testing.',
+    hammerB_items: ['10 pcs MOQ (vs 100 pcs)', 'Free file check (vs $50/charge)', '5-day digital proof (vs 7-10 days)'],
     hammerC_title: 'Hammer 3 · DHL 2-4 Days Global Delivery',
     hammerC_desc: 'Shenzhen direct to Hong Kong 24 hours, DHL 2-4 days to US/UK/AU. Western printers need 3-10 days.',
     hammerC_items: ['DHL Express 2-4 days (vs 3-10 days)', 'DDP duty pre-paid (vs recipient pays)', 'Shenzhen direct (vs transit warehouse)'],
@@ -236,7 +236,7 @@ const T: Record<string, {
     compareHeaders: ['Indicator', 'ZprintPro (Shenzhen)', 'Western Local Factory'],
     compareRows: [
       { feature: 'Quote Speed', us: '30s AI quote', qin: '24-72h manual', usBetter: true },
-      { feature: 'Minimum Order (MOQ)', us: '50 pcs', qin: '500-1000 pcs', usBetter: true },
+      { feature: 'Minimum Order (MOQ)', us: '10 pcs', qin: '500-1000 pcs', usBetter: true },
       { feature: 'Per-Unit Cost (100 pcs)', us: 'US$ 2.30 / pc', qin: 'US$ 5-8 / pc', usBetter: true },
       { feature: 'Global Delivery', us: 'DHL 2-4 days DDP', qin: 'Local 5-10 days', usBetter: true },
       { feature: 'Sample Proofing', us: 'Free 5 days', qin: 'Paid $50-200 / time', usBetter: true },
@@ -244,7 +244,7 @@ const T: Record<string, {
     h2_faq: 'Frequently Asked Questions',
     faqs: [
       { q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before each shipment, damage rate < 0.5%. Shipping video available on request.' },
-      { q: 'Is the MOQ really 50 pcs?', a: 'Yes, 50 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },
+      { q: 'Is the MOQ really 10 pcs?', a: 'Yes, 10 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },
       { q: 'How long does shipping from Shenzhen to USA take? Any duty?', a: 'DHL Express 2-4 business days to US / UK / AU. DDP (Delivered Duty Paid) means recipient pays zero tax — no separate customs or VAT charges.' },
       { q: 'Can I get a sample proof before bulk production?', a: 'Yes, 5-day digital proofing (1-3 pcs), and the sample cost is fully deductible from bulk production. Sample cost is 80% cheaper than Western printers.' },
     ],
@@ -273,18 +273,18 @@ const T: Record<string, {
     qa_intro: 'Below are the questions our customers ask most. We hope this helps you decide quickly. WhatsApp 19880851334 for instant inquiry.',
   },
   'ja': {
-    heroTitle: '中国カタログ印刷｜深セン工場直送・50部から・DHL 2-4日',
-    heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 50部から対応, 30秒AI無料見積もり, ISO 9001 + FSC認証. 欧米印刷工場より30-40%安い.',
+    heroTitle: '中国カタログ印刷｜深セン工場直送・10部から・DHL 2-4日',
+    heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 10部から対応, 30秒AI無料見積もり, ISO 9001 + FSC認証. 欧米印刷工場より30-40%安い.',
     ctaPrimary: 'WhatsApp 19880851334 で即時見積',
     ctaSecondary: '素材サンプル請求',
-    h2_advantage: '三つの強み：30秒AI見積もり・50部から・DHL 2-4日',
+    h2_advantage: '三つの強み：30秒AI見積もり・10部から・DHL 2-4日',
     advantageIntro: 'QinPrinting上海（Trustpilot 4.9/327件）をベンチマークに, 当社の三つの強みが欧米印刷工場を圧倒:',
     hammerA_title: '強み1・30秒AI即時見積もり',
     hammerA_desc: '従来工場は24時間手動見積もり, 繁忙期は3-5日遅延. 当社30秒AI見積もりは365×24対応.',
     hammerA_items: ['30秒即時見積もり（vs 24時間手動）', '365×24無休（vs 平日9-18）', '見積もりは配送料+税込み（vs 隠れた追加料金）'],
-    hammerB_title: '強み2・50部から+無料ファイルチェック',
-    hammerB_desc: 'QinPrinting MOQ 100, 欧米工場 MOQ 500-1000. 当社 50部から+無料ファイルチェック, 新商品テストのハードルがゼロ.',
-    hammerB_items: ['50部から（vs 100部）', '無料ファイルチェック（vs 有料$50/回）', '5日間デジタル校正（vs 7-10日）'],
+    hammerB_title: '強み2・10部から+無料ファイルチェック',
+    hammerB_desc: 'QinPrinting MOQ 100, 欧米工場 MOQ 500-1000. 当社 10部から+無料ファイルチェック, 新商品テストのハードルがゼロ.',
+    hammerB_items: ['10部から（vs 100部）', '無料ファイルチェック（vs 有料$50/回）', '5日間デジタル校正（vs 7-10日）'],
     hammerC_title: '強み3・DHL 2-4日全世界直送',
     hammerC_desc: '深センから香港へ24時間, DHL 2-4日で米国/英国/オーストラリアへ. 欧米従来工場は3-10日.',
     hammerC_items: ['DHL Express 2-4日（vs 3-10日）', 'DDP関税込み（vs 受取人払い）', '深セン直送（vs 経由倉庫）'],
@@ -317,7 +317,7 @@ const T: Record<string, {
     compareHeaders: ['指標', 'ZprintPro（深セン）', '欧米ローカル工場'],
     compareRows: [
       { feature: '見積もり速度', us: '30秒AI見積もり', qin: '24-72時間手動', usBetter: true },
-      { feature: '最低発注量 (MOQ)', us: '50部', qin: '500-1000部', usBetter: true },
+      { feature: '最低発注量 (MOQ)', us: '10部', qin: '500-1000部', usBetter: true },
       { feature: '単価 (100部)', us: 'HK$ 18 / 部', qin: 'HK$ 38-62 / 部', usBetter: true },
       { feature: '全世界配送', us: 'DHL 2-4日 DDP', qin: 'ローカル 5-10日', usBetter: true },
       { feature: 'サンプル校正', us: '無料5日', qin: '有料$50-200 / 回', usBetter: true },
@@ -325,7 +325,7 @@ const T: Record<string, {
     h2_faq: 'よくある質問 (FAQ)',
     faqs: [
       { q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },
-      { q: '本当にMOQ 50部からですか？', a: 'はい, 50部から対応, オフセット+デジタルハイブリッド印刷. 1000部以上は純粋オフセット印刷で単価さらに低下. サンプル校正は1部から（実費）対応可能.' },
+      { q: '本当にMOQ 10部からですか？', a: 'はい, 10部から対応, オフセット+デジタルハイブリッド印刷. 1000部以上は純粋オフセット印刷で単価さらに低下. サンプル校正は1部から（実費）対応可能.' },
       { q: '深センから米国への配送時間は？関税はかかりますか？', a: 'DHL Express 2-4営業日で米国/英国/オーストラリアへ. DDP（Delivered Duty Paid）関税込みで受取人税負担ゼロ, 別途関税やVATの支払い不要.' },
       { q: '量産前にサンプル校正は可能ですか？', a: 'はい, 5日間デジタル校正（1-3部）, サンプル費用は量産費から全額控除可能. サンプル費用は欧米より80%安い.' },
     ],
@@ -656,11 +656,11 @@ export default function CatalogPrintingChinaPage({ params }: Props) {
               {/* Catalog 类目页 + Books 类目页 + Packaging 类目页 */}
               <Link href={`${localePrefix}/category/books/`} className="block bg-blue-50 hover:bg-blue-100 rounded-2xl p-6 border-2 border-blue-200 transition-colors">
                 <h3 className="text-lg font-bold text-blue-900 mb-2">📚 {locale === 'en' ? 'Books & Catalog Category' : locale === 'ja' ? 'カタログ・書籍カテゴリ' : '書冊 / Catalog 印刷類目'}</h3>
-                <p className="text-sm text-blue-700">{locale === 'en' ? 'Saddle stitch / perfect bound / wire-O / hardcover — 50 MOQ' : locale === 'ja' ? '中綴じ・無線綴じ・Wire-O・上製本 — 50部から' : '騎馬釘 / 膠裝 / Wire-O / 精裝 — 50 本起'}</p>
+                <p className="text-sm text-blue-700">{locale === 'en' ? 'Saddle stitch / perfect bound / wire-O / hardcover — 10 MOQ' : locale === 'ja' ? '中綴じ・無線綴じ・Wire-O・上製本 — 10部から' : '騎馬釘 / 膠裝 / Wire-O / 精裝 — 10 本起'}</p>
               </Link>
               <Link href={`${localePrefix}/category/packaging/`} className="block bg-orange-50 hover:bg-orange-100 rounded-2xl p-6 border-2 border-orange-200 transition-colors">
                 <h3 className="text-lg font-bold text-orange-900 mb-2">📦 {locale === 'en' ? 'Packaging Boxes' : locale === 'ja' ? 'パッケージ箱' : '包裝盒'}</h3>
-                <p className="text-sm text-orange-700">{locale === 'en' ? 'Custom mailer boxes + gift boxes — 50 MOQ' : locale === 'ja' ? 'カスタムメーラーボックス+ギフトボックス — 50部から' : '訂製郵寄盒 + 禮品盒 — 50 個起'}</p>
+                <p className="text-sm text-orange-700">{locale === 'en' ? 'Custom mailer boxes + gift boxes — 100 MOQ' : locale === 'ja' ? 'カスタムメーラーボックス+ギフトボックス — 100個から' : '訂製郵寄盒 + 禮品盒 — 100 個起'}</p>
               </Link>
               <Link href={`${localePrefix}/category/flyers/`} className="block bg-green-50 hover:bg-green-100 rounded-2xl p-6 border-2 border-green-200 transition-colors">
                 <h3 className="text-lg font-bold text-green-900 mb-2">📄 {locale === 'en' ? 'Flyers & Brochures' : locale === 'ja' ? 'チラシ・パンフレット' : '傳單 / Brochure'}</h3>

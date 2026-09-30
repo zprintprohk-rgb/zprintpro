@@ -759,6 +759,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'folded-leaflet-printing-guide', // 2026-09-19 daily-seo: 摺頁印刷 (GSC 摺頁印刷 51 imp pos 36 / 摺頁傳單 28 imp pos 25)
   'roll-up-banner-printing-guide', // 2026-09-20 daily-seo: 易拉架印刷 (GSC 易拉架製作 66 imp pos 68.6 / 易拉寶 展架)
   'comiket-printing-prep-guide', // 2026-09-29 ZP-daily-content: コミケ印刷 (GSC コミケ 印刷 93 imp pos 29.8, 9/18 28d)
+  'cny-2027-red-packet-printing-guide', // 2026-09-30 ZP-daily-content: 利是封印刷 2027 (B7 错峰 9/30 必发, CNY 2027=2/6; GSC 利是封印刷 70 imp pos 27.9)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

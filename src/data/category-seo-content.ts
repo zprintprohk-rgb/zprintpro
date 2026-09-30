@@ -1013,9 +1013,9 @@ const menusContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-19 R3 餐牌印刷 5 件套
     // 2026-08-22 v3.13 T19: 餐牌 Pillar 加厚
-    featuredSnippet: '餐牌印刷訂製 100 張起：A3/A4 過膠餐牌/枱卡/牆掛菜單, 防水防油, 3 個工作天. 餐廳/カフェ/外賣適用. HK$15/張起.',
+    featuredSnippet: '餐牌印刷訂製 10 張起：A3/A4 過膠餐牌/枱卡/牆掛菜單, 防水防油, 3 個工作天. 餐廳/カフェ/外賣適用. HK$15/張起.',
     lastUpdated: '2026-09-14',
-    h2: '餐牌 / 餐牌印刷 / 菜單印刷 / 過膠餐牌 / 膠卡餐牌 / 膠片餐牌 — 防水防油, 100 張起, 即日特急',
+    h2: '餐牌 / 餐牌印刷 / 菜單印刷 / 過膠餐牌 / 膠卡餐牌 / 膠片餐牌 — 防水防油, 10 張起, 即日特急',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -1228,9 +1228,9 @@ const menusContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.13 T19: メニュー Pillar
-    featuredSnippet: 'メニュー印刷 100枚から：A3/A4 防水・耐油 メニュー/テーブルカード/壁掛けメニュー, 3営業日納期. レストラン/カフェ/テイクアウト対応.',
+    featuredSnippet: 'メニュー印刷 10枚から：A3/A4 防水・耐油 メニュー/テーブルカード/壁掛けメニュー, 3営業日納期. レストラン/カフェ/テイクアウト対応.',
     lastUpdated: '2026-08-22',
-    h2: 'メニュー印刷 / レストランメニュー / 防水メニュー / テーブルカード / カフェメニュー — 100枚から, 即日特急',
+    h2: 'メニュー印刷 / レストランメニュー / 防水メニュー / テーブルカード / カフェメニュー — 10枚から, 即日特急',
     coreAdvantages: {
       title: 'ZprintPro メニューの強み',
       items: [
@@ -2985,9 +2985,9 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
 const flyersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T15: 宣傳單張 Pillar 首建 (5 词对齐 + 5 FAQ)
-    featuredSnippet: '宣傳單張印刷 100 張起印, A5 單面 128g 銅版紙 HK$0.35/張起, 雙面 HK$0.45/張起 (雙面 +HK$0.10/張), 3 個工作天交期, 即日特急可選 (+50% 費用). 6 種尺寸 (A6 105×148 / A5 148×210 / A4 210×297 / A3 297×420 / DL 99×210 / 三摺 折頁), 3 種紙材 (128g 銅版/200g 啞粉/250g 卡紙), 4 種工藝 (光膜/啞膜/局部 UV/燙金), 免費設計模板, DHL 全球 2-4 天. 適用餐廳外賣/零售精品/地產/教育培訓/婚慶/品牌活動.',
+    featuredSnippet: '宣傳單張印刷 10 張起印, A5 單面 128g 銅版紙 HK$0.35/張起, 雙面 HK$0.45/張起 (雙面 +HK$0.10/張), 3 個工作天交期, 即日特急可選 (+50% 費用). 6 種尺寸 (A6 105×148 / A5 148×210 / A4 210×297 / A3 297×420 / DL 99×210 / 三摺 折頁), 3 種紙材 (128g 銅版/200g 啞粉/250g 卡紙), 4 種工藝 (光膜/啞膜/局部 UV/燙金), 免費設計模板, DHL 全球 2-4 天. 適用餐廳外賣/零售精品/地產/教育培訓/婚慶/品牌活動.',
     lastUpdated: '2026-08-22',
-    h2: '宣傳單張 / 宣傳單張印刷 / 傳單印刷 / 彩色單張 — A3-A6 全尺寸 100 張起印, 即日特急可選',
+    h2: '宣傳單張 / 宣傳單張印刷 / 傳單印刷 / 彩色單張 — A3-A6 全尺寸 10 張起印, 即日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3000,9 +3000,9 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '2. 小批量高性價比，100 張起訂',
+          heading: '2. 小批量高性價比，10 張起訂',
           points: [
-            '100 張起訂（數碼印刷），適合小規模試推和精準派發',
+            '10 張起訂（數碼印刷），適合小規模試推和精準派發',
             '1,000 張以上柯式印刷，單價低至 HK$0.25/張，適合大規模派發',
             '支持雙面印刷、多頁摺疊（對摺、三摺、Z 摺），一張傳單傳遞更多資訊',
           ],
@@ -3044,7 +3044,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       title: '技術參數詳解',
       items: [
         { label: '標準尺寸', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)，支持完全訂製' },
-        { label: '起訂量', value: '100 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
+        { label: '起訂量', value: '10 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
         { label: '交期', value: '即日交貨（數碼，100–500 張）；標準 2–3 天（柯式）；打樣當日' },
         { label: '檔案要求', value: 'AI / PDF / InDesign，300dpi，CMYK，預留 3mm 出血位' },
         { label: '紙張選擇', value: '128g–200g 銅版紙／白卡紙；環保再生紙；覆膜（啞膜／光膜）' },
@@ -3068,7 +3068,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '單張印刷最低多少張起？', a: '100 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟，單價低至 HK$0.25/張。' },
+      { q: '單張印刷最低多少張起？', a: '10 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟，單價低至 HK$0.25/張。' },
       { q: '單張有哪些尺寸？', a: 'A6、A5、A4、A3、DL，以及完全訂製尺寸。' },
       { q: '可以雙面印刷嗎？', a: '可以。雙面印刷充分利用紙張兩面，資訊量增加一倍。' },
       { q: '可以摺疊嗎？', a: '可以。對摺、三摺、Z 摺、開門摺等多種摺疊方式可選。' },
@@ -3183,9 +3183,9 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.13 T15: チラシ Pillar 首建
-    featuredSnippet: 'チラシ印刷 100枚から, A5 片面 128g コート紙 1枚 ¥6 から, 両面 ¥8 から (両面 +¥1.5/枚), 3営業日納期, 即日特急対応 (+50% 料金). 6 種類サイズ (A6 105×148 / A5 148×210 / A4 210×297 / A3 297×420 / DL 99×210 / 三つ折り), 3 種類用紙 (128g コート/200g マット/250g カード), 4 種類加工 (光沢/マット ラミネート/スポット UV/箔押し), 無料デザインテンプレート, DHL グローバル 2-4日. 飲食 (50-200枚/単) + イベント (500-1,000枚) + 教育繁忙期 (1,000-5,000枚). 2026 H1 チラシ問合せ +22%.',
+    featuredSnippet: 'チラシ印刷 10枚から, A5 片面 128g コート紙 1枚 ¥6 から, 両面 ¥8 から (両面 +¥1.5/枚), 3営業日納期, 即日特急対応 (+50% 料金). 6 種類サイズ (A6 105×148 / A5 148×210 / A4 210×297 / A3 297×420 / DL 99×210 / 三つ折り), 3 種類用紙 (128g コート/200g マット/250g カード), 4 種類加工 (光沢/マット ラミネート/スポット UV/箔押し), 無料デザインテンプレート, DHL グローバル 2-4日. 飲食 (50-200枚/単) + イベント (500-1,000枚) + 教育繁忙期 (1,000-5,000枚). 2026 H1 チラシ問合せ +22%.',
     lastUpdated: '2026-08-22',
-    h2: 'チラシ 印刷 / チラシ 作成 / フライヤー 印刷 / 両面カラーチラシ — A6-A3 100枚から, 即日特急対応',
+    h2: 'チラシ 印刷 / チラシ 作成 / フライヤー 印刷 / 両面カラーチラシ — A6-A3 10枚から, 即日特急対応',
     coreAdvantages: {
       title: 'ZprintPro チラシ印刷の強み',
       items: [
@@ -3198,9 +3198,9 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '2. 小ロット高コスパ、100枚から',
+          heading: '2. 小ロット高コスパ、10枚から',
           points: [
-            '100枚から（デジタル印刷）。小規模な試行配布やターゲット配布に最適。',
+            '10枚から（デジタル印刷）。小規模な試行配布やターゲット配布に最適。',
             '1,000枚以上はオフセット印刷で、単価HK$0.25／枚までお得。大規模配布に最適。',
             '両面印刷や多ページ折り（対折、三つ折り、Z折り）に対応。1枚でより多くの情報を伝達。',
           ],
@@ -3242,7 +3242,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: '標準サイズ', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)。完全カスタマイズ対応。' },
-        { label: '最小発注数', value: '100枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得。' },
+        { label: '最小発注数', value: '10枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得。' },
         { label: '納期', value: '即日（デジタル、100–500枚）。標準2–3日（オフセット）。サンプル当日。' },
         { label: 'ファイル要件', value: 'AI／PDF／InDesign、300dpi、CMYK、3mmのbleed。' },
         { label: '紙の選択', value: '128g–200gコート紙／白カード紙。エコ再生紙。ラミネート（マット／グロス）。' },
@@ -3266,7 +3266,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'チラシ印刷の最小発注数は？', a: '100枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得で、単価HK$0.25／枚まで。' },
+      { q: 'チラシ印刷の最小発注数は？', a: '10枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得で、単価HK$0.25／枚まで。' },
       { q: 'どんなサイズがありますか？', a: 'A6、A5、A4、A3、DL、および完全カスタマイズサイズ。' },
       { q: '両面印刷は可能ですか？', a: 'はい。両面印刷で紙の両面をフル活用し、情報量を2倍にします。' },
       { q: '折り加工は可能ですか？', a: 'はい。対折、三つ折り、Z折り、開門折りなど、多様な折り加工オプションがあります。' },
@@ -3287,9 +3287,9 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '海報印刷 A2 100 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
+    featuredSnippet: '海報印刷 A2 1 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
     lastUpdated: '2026-09-14',
-    h2: '印海報 / 海報印刷 / MTR 12-sheet 燈箱海報 — A0-A3 全尺寸 100 張起印, 防水 PP/PVC, 同日特急可選',
+    h2: '印海報 / 海報印刷 / MTR 12-sheet 燈箱海報 — A0-A3 全尺寸 1 張起印, 防水 PP/PVC, 同日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -4220,7 +4220,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
 
 const greetingCardsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '賀卡印刷 · 100 張起印 · 3D 立體爆款 · 順豐本地 + DHL 全球配送',
+    h2: '賀卡印刷 · 10 張起印 · 3D 立體爆款 · 順豐本地 + DHL 全球配送',
     coreAdvantages: {
       title: '為何選擇智印港的賀卡印刷?',
       items: [
@@ -4269,7 +4269,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: '技術參數詳解',
       items: [
         { label: '標準尺寸', value: 'A6 (105×148mm) / A5 (148×210mm) / A4 (210×297mm) / 自訂' },
-        { label: '起訂量', value: '100 張起印,500 張享批量折扣,50 張可議 (小批量試產)' },
+        { label: '起訂量', value: '10 張起印，100 張享批量折扣，50 張可急件 (小批量試產)' },
         { label: '打樣時間', value: '數碼打樣 24 小時 / 4 小時免費打樣 (含實物寄送)' },
         { label: '量產交期', value: '常規 3-5 工作天,加急 24-48 小時可議' },
         { label: '檔案要求', value: 'AI / PSD / PDF / CDR, 300dpi, CMYK, 出血 3mm, 文字轉外框' },
@@ -4301,7 +4301,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '賀卡印刷最少印幾多張?', a: '100 張起印。50 張小批量可議,適合設計確認或首批客戶。' },
+      { q: '賀卡印刷最少印幾多張?', a: '10 張起印。50 張急件可，100 張享批量折扣，適合設計確認或首批客戶。' },
       { q: '立體 3D 賀卡最快幾時出貨?', a: '數碼打樣 24 小時,批量 3-5 工作天,加急 24-48 小時可議。' },
       { q: '可以印定制圖案嗎?', a: '可以。支援 AI / PSD / PDF / CDR 檔,300dpi CMYK 色域,設計免費預檢。' },
       { q: '環保材質有咩選擇?', a: 'FSC 認證紙 + 大豆油墨 + 種子紙 (用完可種植薄荷或苜蓿),符合歐美環保標準。' },
@@ -4357,7 +4357,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: 'Technical Specifications',
       items: [
         { label: 'Standard Sizes', value: 'A6 (4.1"×5.8") / A5 (5.8"×8.3") / A4 (8.3"×11.7") / Custom' },
-        { label: 'MOQ', value: '100 sheets minimum, 500+ bulk discount, 50 negotiable (small batch trial)' },
+        { label: 'MOQ', value: '10 sheets minimum, 100+ bulk discount, rush available on 50' },
         { label: 'Proof Time', value: 'Digital proof 24h / 4h free proof (with physical sample shipping)' },
         { label: 'Production Lead Time', value: 'Standard 3-5 business days, rush 24-48h available' },
         { label: 'File Requirements', value: 'AI / PSD / PDF / CDR, 300dpi, CMYK, 3mm bleed, outlined text' },
@@ -4388,14 +4388,16 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'What is the minimum order for greeting card printing?', a: '100 sheets minimum. 50-sheet small batches available for design confirmation or first-time clients.' },
+      { q: 'What is the minimum order for greeting card printing?', a: '10 sheets minimum. 50-sheet rush available; 100+ unlocks bulk discount — ideal for design confirmation or first-time clients.' },
+      { q: 'When should businesses order corporate holiday cards?', a: 'Order by mid-November for guaranteed pre-Christmas delivery. Bulk corporate holiday cards (100-5,000 pcs) ship DHL 2-4 days worldwide; foil-stamped company cards need 3-5 business days production.' },
+      { q: 'Do you offer company Christmas cards with our logo?', a: 'Yes — upload your logo and we foil-stamp / spot-UV it on 300-350gsm card stock. 10 MOQ, free 4-hour proof, free shipping over $99 to all 50 US states.' },
       { q: 'How fast can I get 3D pop-up cards?', a: 'Digital proof 24h, bulk 3-5 business days, rush 24-48h available on request.' },
       { q: 'Can I print custom designs?', a: 'Yes. AI / PSD / PDF / CDR files supported, 300dpi CMYK. Free prepress check.' },
       { q: 'What eco-friendly options are available?', a: 'FSC-certified paper + soy ink + plantable seed paper (mint or alfalfa). EU/US compliance.' },
     ],
   },
   ja: {
-    h2: 'グリーティングカード印刷 | 100枚から | 立体 3D ヒット商品 | DHL 2-4日配送',
+    h2: '年賀状印刷・グリーティングカード印刷 | 10枚から | 箔押し対応 | DHL 2-4日配送',
     coreAdvantages: {
       title: 'ZprintPro のグリーティングカード印刷を選ぶ理由?',
       items: [
@@ -4444,7 +4446,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様詳細',
       items: [
         { label: '標準サイズ', value: 'A6 (105×148mm) / A5 (148×210mm) / A4 (210×297mm) / カスタム' },
-        { label: '最小数量', value: '100 枚から、500 枚以上で数量割引、50 枚対応可 (小ロット試作)' },
+        { label: '最小数量', value: '10 枚から、100 枚以上で数量割引、緊急 50 枚対応可 (小ロット試作)' },
         { label: 'サンプル時間', value: 'デジタルサンプル 24 時間 / 4 時間無料サンプル (実物配送込み)' },
         { label: '量産納期', value: '通常 3-5 営業日、緊急 24-48 時間対応可' },
         { label: 'ファイル要件', value: 'AI / PSD / PDF / CDR、300dpi、CMYK、塗りたし 3mm、文字アウトライン' },
@@ -4475,7 +4477,9 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'グリーティングカード印刷の最小注文数は?', a: '100 枚から。50 枚の小ロットもデザイン確認や初回クライアント様に可能。' },
+      { q: '年賀状印刷はいつから注文できますか?', a: '10月から受付開始、12月中旬までに到着する配送プランあり。2027年賀状は10月中のご注文で早割対象。年末繁忙期は4週間前発注推奨。' },
+      { q: '喪中の場合はどうすればいいですか?', a: '喪中はがきに対応可。年賀状の代わりに喪中見舞いを10枚から印刷、郵送年賀状より早い12月上旬発送プランも選択可能。' },
+      { q: 'グリーティングカード印刷の最小注文数は?', a: '10 枚から。50 枚の小ロットもデザイン確認や初回クライアント様に可能。' },
       { q: '立体 3D カードの納期は?', a: 'デジタルサンプル 24 時間、量産 3-5 営業日、緊急 24-48 時間対応可。' },
       { q: 'オリジナルデザインに対応?', a: '対応可。AI / PSD / PDF / CDR ファイル対応、300dpi CMYK、無料でプリプレスチェック。' },
       { q: 'エコな素材は?', a: 'FSC 認証紙 + 大豆インク + 種紙 (植付後ミントやアルファルファ栽培可能)。EU / US 基準準拠。' },

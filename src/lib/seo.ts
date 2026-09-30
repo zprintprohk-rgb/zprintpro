@@ -655,18 +655,18 @@ const categorySeoData: Record<string, {
     // 全球市场 $20B+ (Grand View/Ken Research 2025), US 70B 张/年, 90% 家庭买
     titles: {
       'zh-hk': '燙金賀卡印刷 · 10 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費',
-      en: 'Greeting Card Printing from $0.50 | 3D Pop-up Available | 10 MOQ + Free Proof | ZprintPro',
-      ja: 'グリーティングカード印刷 · 10枚から · 立体 3D 対応 | ZprintPro',
+      en: 'Business & Holiday Card Printing from $0.50 | Corporate Christmas 10 MOQ | ZprintPro',
+      ja: '年賀状印刷 2027・10枚から・箔押し対応 DHL全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '賀卡印刷,生日卡印刷,節日賀卡,感謝卡印刷,邀請卡印刷,商業賀卡,立體賀卡,3D 賀卡,客製化賀卡,訂製賀卡,聖誕卡,情人節卡,母親節卡,父親節卡',
-      en: 'greeting card printing,custom greeting cards,birthday card printing,thank you cards,holiday cards,3D pop up card,custom card printing,FSC-certified card stock,foil stamped greeting cards,event invitation cards,corporate greeting cards,print on demand cards,USA small business cards',
-      ja: 'グリーティングカード印刷,オーダー カード,誕生日カード印刷,サンキュカード,ホリデーカード,立体 3D カード,カスタム カード,箔押しカード,FSC 認証カード,オリジナル カード,イベント招待状,法人向け グリーティングカード',
+      en: 'greeting card printing,corporate holiday cards,business holiday cards,bulk holiday cards,company christmas cards,custom holiday cards,greeting cards wholesale,birthday card printing,thank you cards,3D pop up card,FSC-certified card stock,foil stamped greeting cards,event invitation cards,corporate greeting cards,print on demand cards,USA small business cards',
+      ja: 'グリーティングカード印刷,年賀状印刷,2027年賀状,年賀はがき,お年賀カード,法人向け年賀状,オーダー カード,誕生日カード印刷,サンキュカード,ホリデーカード,立体 3D カード,カスタム カード,箔押しカード,FSC 認証カード,オリジナル カード,イベント招待状,法人向け グリーティングカード',
     },
     descriptions: {
       'zh-hk': '賀卡印刷 10 張起印. 節日 / 生日 / 感謝 / 邀請 / 商業 / 立體 3D 賀卡 + 燙金 / UV / 模切 工藝. 順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙 + 30 秒 AI 即時報價.',
-      en: 'Greeting card printing from $0.50 / 10 MOQ. Holiday / birthday / thank you / invitation / corporate / 3D pop-up cards + foil stamping / UV / die-cut finishes. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee.',
-      ja: 'グリーティングカード印刷 10枚から. 节日・誕生日・サンキュ・招待状・法人向け・立体 3D カード + 箔押し・UV・拔型加工. DHL 国際配送 2-4 日 + FSC 認証 + 30 秒 AI 見積.',
+      en: 'Business & holiday card printing from $0.50 / 10 MOQ. Corporate holiday cards, company Christmas cards, bulk business greetings + foil stamping / UV / die-cut / 3D pop-up. November cut-off for pre-holiday delivery. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + free 4-hour proof.',
+      ja: '年賀状印刷 2027 対応・10枚から・12月中旬到着プランあり. グリーティングカード印刷 节日・誕生日・サンキュ・招待状・法人向け・立体 3D カード + 箔押し・UV・拔型加工. DHL 国際配送 2-4 日 + FSC 認証 + 30 秒 AI 見積.',
     },
   },
   'wedding-invitations': {
