@@ -1,0 +1,12 @@
+{
+  "urls": [
+    { "name": "T1-ja-title", "url": "https://zprintpro.com/ja/category/greeting-cards/", "must": ["年賀状印刷 2027"], "not": ["グリーティングカード印刷 · 10枚から"] },
+    { "name": "T2-en-title", "url": "https://zprintpro.com/en/category/greeting-cards/", "must": ["Business & Holiday Card Printing", "10 MOQ"], "not": ["Greeting Card Printing from $0.50 | 3D"] },
+    { "name": "T3-china-title", "url": "https://zprintpro.com/en/services/catalog-printing-china/", "must": ["10 MOQ + Shenzhen Factory"], "not": ["50 MOQ + Shenzhen Factory"] },
+    { "name": "T3-blog-link", "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/", "must": ["/en/services/catalog-printing-china/"], "not": [] },
+    { "name": "T5b-a6-zh", "url": "https://zprintpro.com/zh-hk/blog/poster-size-guide/", "must": ["A6 = 105×148"], "not": [] },
+    { "name": "T4-doujin-ja", "url": "https://zprintpro.com/ja/blog/comiket-printing-prep-guide/", "must": ["/ja/category/japan-doujin/", "コミケ 印刷"], "not": [] },
+    { "name": "flyers-zh-moq", "url": "https://zprintpro.com/zh-hk/category/flyers/", "must": ["宣傳單張印刷 10 張起印"], "not": ["宣傳單張印刷 100 張起印"] },
+    { "name": "greeting-zh-moq", "url": "https://zprintpro.com/zh-hk/category/greeting-cards/", "must": ["10 張起印"], "not": ["100 張起印"] }
+  ]
+}
