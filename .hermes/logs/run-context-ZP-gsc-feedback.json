@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-09-29 22:43:02",
+  "generated_at": "2026-09-30 22:43:11",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "1005d9bcc32b79b9",
-    "day": "2026-09-29",
+    "this_run_key": "4fdbaf58ec3a7f42",
+    "day": "2026-09-30",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -41,9 +41,9 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 35264,
-    "acquired_at": "2026-09-29 22:43:02",
-    "acquired_ts": 1790692982.5617383,
+    "pid": 24232,
+    "acquired_at": "2026-09-30 22:43:11",
+    "acquired_ts": 1790779391.9357803,
     "host": "JEROME"
   },
   "previous_run": {
