@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-02 21:17:04",
+  "generated_at": "2026-10-03 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "25f5078c74788819",
-    "day": "2026-10-02",
+    "this_run_key": "24c6b451e64a4a1b",
+    "day": "2026-10-03",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -25,7 +25,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-09-30 21:50:03"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-02 21:29:55"
       },
       {
         "name": "lane_status_available",
@@ -41,19 +41,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 24844,
-    "acquired_at": "2026-10-02 21:17:04",
-    "acquired_ts": 1790947025.068228,
+    "pid": 436,
+    "acquired_at": "2026-10-03 21:17:02",
+    "acquired_ts": 1791033422.9825773,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20260930T215003",
+      "run_id": "ZP-daily-content-20261002T212955",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-09-30 21:50:03",
-      "ended_at": "2026-09-30 21:50:03",
-      "idempotency_key": "5a7741f7031fa4ea",
+      "fired_at": "2026-10-02 21:29:55",
+      "ended_at": "2026-10-02 21:29:55",
+      "idempotency_key": "35fab1d59ddf2eec",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -62,10 +62,10 @@
       "guard": {
         "ok": true
       },
-      "report": "docs/2026-09-30-next-batch-money-words-plan.md",
+      "report": "NONE",
       "files": [],
-      "pushed": false,
-      "head": "1e6fb23d",
+      "pushed": true,
+      "head": "fe8224d6",
       "source": "lane-git-commit.py"
     },
     "latest_report": ".hermes/logs/2026-09-29-ZP-daily-content.md",
