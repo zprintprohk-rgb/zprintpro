@@ -176,6 +176,8 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '可移貼紙同戶外貼紙有咩分別？', a: '可移貼紙（再剥離）撕走不留痕，適合玻璃櫥窗同短期推廣；戶外貼紙用防水防 UV 材質，耐候 3-5 年，適合車身同外牆。兩款都 10 張起印。' },
+      { q: '透明貼紙同環保材質貼紙有冇得印？', a: '有。透明貼紙可選白墨打底（全面/局部/無三種效果）；環保材質有種子紙同 FSC 認證紙，適合永續品牌。10 張起印，免費數據檢查。' },
       { q: '包裝盒訂製嘅刀模費幾錢？', a: '常規盒型（白卡彩盒／坑盒／卡盒）e-print / hk-printing 等同業照收刀模費 HK$300-800 一套。我哋嘅拼版免刀模費方案（PKG-016）固定刀模共用，500 枚起印即享免刀模費 + 免排版費，新品牌首批 1,000 枚計算可慳 HK$300-800 直接變淨利。包裝盒訂製客戶可揀拼版彩盒壓低成本。' },
       { q: '包裝盒印刷起印量最低幾多？', a: '白卡彩盒 100 個起，婚禮喜糖盒 30 個起，常規工業款 100–200 個起。拼版白卡彩盒 500 個起即享免刀模費。遠低於傳統工廠的 500–1,000 個標準。' },
       { q: '紙盒訂製材質點揀：白卡 vs 坑紙 vs 銅版紙？', a: '白卡 300-350g 挺度極佳、色彩鮮豔，係彩盒主流（美妝、輕奢飾品、文創IP周邊首選）；坑盒（瓦楞）抗壓 80-200kg，跨境電商 + 重物首選；銅版紙 250-300g 成本低、輕量商品適用。三種都支援 FSC 環保認證 + 食品級 SGS 認證。' },
@@ -1621,6 +1623,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: 'クラフト紙のパッケージ印刷はできますか？', a: 'はい、クラフト紙（牛皮紙）100個から印刷可能。無漂白・リサイクル対応の環境配慮型で、EC梱包・ギフト用に最適。箔押し・エンボス加工も追加でき、FSC認証紙対応。3-5営業日納期、DHL 2-4日配送。' },
       { q: '封筒印刷の最小発注数は？', a: '500枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得で、単価HK$0.15／枚まで。' },
       { q: 'どんなサイズの封筒がありますか？', a: 'DL、C5、C4、中式5号／7号／9号。完全カスタマイズサイズも対応。' },
       { q: '窓付き封筒は印刷できますか？', a: 'はい。標準窓40×90mm。位置とサイズは完全カスタマイズ対応。' },
@@ -1734,6 +1737,8 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '座檯月曆同掛牆月曆尺寸點揀？', a: '座檯月曆（150×180mm / 200×230mm）適合收銀位同寫字樓桌面；掛牆月曆 A3（297×420mm）適合廚房同貨倉。1 本起訂，3-5 個工作天交貨。' },
+      { q: '訂製月曆幾多本起印？可以放公司名同 logo？', a: '1 本起訂。公司名月曆客戶送禮常用 50-200 本批量，500/1,000 本有再折扣。免費 4 小時數碼打稿，滿 HK$500 順豐免運。' },
       { q: '月曆印刷最低多少本起？', a: '1 本起訂（數碼印刷）。500 本以上柯式印刷更經濟。' },
       { q: '年曆有哪些類型？', a: '座枱曆（三角架）、掛牆曆、月曆卡、記事簿月曆、磁石冰箱貼月曆。' },
       { q: '可以定制企業年曆嗎？', a: '可以。專業設計師為企業定制品牌年曆，融入產品、文化、價值觀等元素。' },
@@ -1841,6 +1846,9 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: 'What size is a standard wall calendar?', a: 'A standard wall calendar is 297×420mm (A3) when closed — the most common size for offices and retail. Desk calendars are 150×180mm or 200×230mm. All sizes print from 1 copy with 3-5 day turnaround.' },
+      { q: 'How much does a calendar weigh?', a: 'A standard A3 wire-bound wall calendar (250gsm cover + 128gsm inner pages) weighs about 180-220g — light enough for regular postage in a C4 envelope. We ship single calendars DHL 2-4 days worldwide.' },
+      { q: 'Can I order 2027 custom calendars in small batches?', a: 'Yes — 2027 custom calendars print from 1 copy. Company-name calendars for client gifting typically run 50-200 copies with bulk tiers at 500/1,000. Free digital proof in 4 hours, DHL 2-4 day global delivery.' },
       { q: 'What is the minimum order for calendars?', a: '50 pcs (digital printing). 500+ pcs recommended for offset printing.' },
       { q: 'What calendar types are available?', a: 'Desk calendars (easel), wall calendars, calendar cards, planner calendars, magnetic fridge calendars.' },
       { q: 'Can you customize corporate calendars?', a: 'Yes. Professional designers create branded calendars integrating products, culture, and values.' },
@@ -1940,6 +1948,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '社名入りカレンダーは少量注文できますか？', a: 'はい、1部から対応可能です。法人ギフト用は50-200部が標準、500/1,000部で数量割引。名入れ・ロゴ印刷対応、デジタル校正4時間、DHL国際配送2-4日。' },
       { q: 'カレンダー印刷の最小発注数は？', a: '1冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
       { q: 'どんなタイプのカレンダーがありますか？', a: '卓上カレンダー（イーゼル）、壁掛けカレンダー、カレンダーカード、手帳カレンダー、磁石冷蔵庫カレンダー。' },
       { q: '企業カレンダーのカスタマイズは可能？', a: 'はい。プロデザイナーがブランドカレンダーを作成。製品、文化、価値観などを統合します。' },
@@ -2045,6 +2054,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '利是封訂製幾多個起？燙金要唔要加錢？', a: '100 個起訂。燙金、擊凸、UV、鏤空全部工藝可選，11 月前落單保證農曆新年前到貨，免費 4 小時打稿，3-5 個工作天交貨。' },
       { q: '利是封印刷最低多少個起？', a: '500 個起訂（數碼印刷）。5,000 個以上柯式印刷更經濟，單價低至 HK$0.8/個。' },
       { q: '利是封有哪些紙張選擇？', a: '128g 銅版紙、200g 白卡紙、珠光紙、紋理紙、環保再生紙。' },
       { q: '可以燙金或浮雕嗎？', a: '可以。燙金、燙銀、浮雕擊凸、立體工藝、雷射切割、局部 UV 等多種工藝均可選擇。' },
@@ -3386,6 +3396,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '車身廣告貼紙價錢幾多？自己貼得唔得？', a: '車身廣告用戶外級防水貼紙，按車型尺寸即時報價，10 張起印。DIY 貼裝可以，提供定位紙同刮板教學；複雜曲面建議專業安裝。耐候 3-5 年，撕走唔留痕。' },
       { q: '海報印刷最低多少張起？', a: '1 張起訂（大圖輸出）。10 張以上享受批量優惠。' },
       { q: 'MTR 燈箱海報 12-sheet 出邊度要幾耐？', a: '12-sheet 3048×1524mm 大圖輸出 3-5 個工作天, 急件可加 30% 費用趕 24-48 小時, 印前必須確認 PDF/X-1a + 150dpi CMYK + 30mm 出血。' },
       { q: '海報印刷用邊款材質最抵?', a: '室內 3-6 個月短期: 128g 銅版紙 HK$6-9/張最抵; 室內長期 1-2 年: 200g PP 合成紙 HK$12-18/張; 戶外 2-3 年: 440g PVC 硬片 HK$20-35/張, 防水抗 UV 必備。' },
@@ -3694,6 +3705,8 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '膠裝書印刷價格點計？', a: '膠裝書（無線綴じ）10 本起印，32-200 頁常見規格，100 本以上享批量折扣。免費 4 小時打稿，3-5 個工作天交貨。確實價格用 30 秒 AI 報價按頁數同紙質即時計算。' },
+      { q: '書刊印刷同印書有咩分別？', a: '書刊印刷泛指期刊、雜誌、公司刊物的定期印製；印書通常指單本或少量書籍（個人作品集、教材、紀念冊）。兩者都 10 本起印，騎馬釘適合 8-64 頁，膠裝/精裝適合 64 頁以上。' },
       { q: '紙袋印刷最低多少個起？', a: '100 個起訂（數碼印刷）。1,000 個以上柯式印刷更經濟，單價低至 HK$1.5/個。' },
       { q: '紙袋有哪些材質？', a: '白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 選擇。' },
       { q: '紙袋可以承重多少？', a: '標準紙袋承重 3–5kg；加厚版可達 8–10kg。' },
@@ -3804,6 +3817,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: 'Do you also print product catalogs?', a: 'Yes — catalog printing covers 8-64 page saddle-stitch and perfect-bound catalogs from 10 copies, same saddle stitch pricing from $1.20. For factory-direct bulk orders see our China catalog printing service page (10 MOQ, DHL 2-4 days).' },
       { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.19/pc.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, black card, pearl paper, textured paper, eco recycled paper — 20+ options.' },
       { q: 'How much weight can paper bags hold?', a: 'Standard bags: 3–5kg; Reinforced version: 8–10kg.' },
@@ -4206,6 +4220,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: 'コミケの印刷品は何部から注文できますか？', a: '同人誌は10部から、ポスター・カード類は1部から注文可能。コミケ直前の特急対応も承ります（要相談）。新刊の本文は中綴じ・無線綴じ・上製本から選択、表紙は箔押しや局部UVで差別化できます。' },
       { q: '同人誌印刷の最小発注数は？', a: '10部から（デジタル印刷）。50部以上はオフセット印刷推奨 — 単価が安く、色彩も安定。' },
       { q: 'コミケ前特急対応できますか？', a: 'はい。同人誌5部特急3日、10部特急2日出荷。コミケ前2週間発注でバッファ確保推奨。' },
       { q: 'イラストの色彩は色褪せしますか？', a: 'ICCプロファイルカラーマネジメント（GRACoL／Fogra39）＋ハイデルベルグオフセット印刷機。原画RGBを自動CMYK変換、色再現度95%以上。事前サンプル校正可能。' },

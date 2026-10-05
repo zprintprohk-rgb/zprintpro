@@ -1,0 +1,2983 @@
+{
+ "windows": {
+  "7d-sum": {
+   "total_q": 592,
+   "top": {
+    "海報印刷": {
+     "clicks": 0,
+     "imps": 58,
+     "pos": 13.33
+    },
+    "月曆印刷": {
+     "clicks": 0,
+     "imps": 34,
+     "pos": 6.53
+    },
+    "印海報": {
+     "clicks": 0,
+     "imps": 33,
+     "pos": 9.15
+    },
+    "コミケ 印刷": {
+     "clicks": 0,
+     "imps": 32,
+     "pos": 13.28
+    },
+    "宣傳單張印刷": {
+     "clicks": 0,
+     "imps": 27,
+     "pos": 11.67
+    },
+    "small batch label printing": {
+     "clicks": 0,
+     "imps": 26,
+     "pos": 14.77
+    },
+    "貼紙印刷": {
+     "clicks": 0,
+     "imps": 26,
+     "pos": 29.04
+    },
+    "宣傳單張": {
+     "clicks": 0,
+     "imps": 25,
+     "pos": 15.56
+    },
+    "戶外貼紙": {
+     "clicks": 0,
+     "imps": 23,
+     "pos": 6.35
+    },
+    "利是封印刷": {
+     "clicks": 0,
+     "imps": 23,
+     "pos": 11.43
+    },
+    "紙袋訂製": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 2.74
+    },
+    "印刷紙袋": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 4.42
+    },
+    "喜帖印刷": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 8.58
+    },
+    "紙袋印刷": {
+     "clicks": 0,
+     "imps": 18,
+     "pos": 4.44
+    },
+    "china catalog printing": {
+     "clicks": 0,
+     "imps": 18,
+     "pos": 17.44
+    },
+    "訂做紙袋": {
+     "clicks": 0,
+     "imps": 17,
+     "pos": 6.59
+    },
+    "餐牌印刷": {
+     "clicks": 0,
+     "imps": 16,
+     "pos": 2.88
+    },
+    "small batch sticker printing": {
+     "clicks": 0,
+     "imps": 16,
+     "pos": 5.25
+    },
+    "a5 flyer size": {
+     "clicks": 0,
+     "imps": 16,
+     "pos": 8.56
+    },
+    "即日印刷": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 6.4
+    },
+    "印月曆": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 9.0
+    },
+    "large envelopes": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 14.0
+    },
+    "large envelope": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 3.14
+    },
+    "月歷印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 3.93
+    },
+    "騎馬釘印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 7.21
+    },
+    "小冊子印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 9.29
+    },
+    "海報與印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 13.71
+    },
+    "a2 poster": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 32.14
+    },
+    "大信封": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 3.0
+    },
+    "small batch stickers": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 4.92
+    },
+    "騎馬釘書刊": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 22.85
+    },
+    "包裝盒訂製": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 27.15
+    },
+    "食品包裝印刷": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 14.75
+    },
+    "poster 印刷": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 16.67
+    },
+    "可移貼紙": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 18.92
+    },
+    "包裝食品 裡印": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 7.27
+    },
+    "即日急件": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 19.91
+    },
+    "印刷公司": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 36.36
+    },
+    "doujinshi printing": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 10.7
+    },
+    "校 簿 印刷": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 20.2
+    },
+    "車身廣告": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 35.9
+    },
+    "zprint": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 7.78
+    },
+    "訂製利是封": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 10.0
+    },
+    "saddle stitch booklet printing": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 12.0
+    },
+    "食品印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 14.56
+    },
+    "訂 做 紙袋": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 17.22
+    },
+    "膠裝書印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 21.11
+    },
+    "貼紙設計": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 21.56
+    },
+    "訂製紙袋": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 22.0
+    },
+    "食品包裝訂製": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 22.89
+    },
+    "包裝盒印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 30.78
+    },
+    "紙盒訂製": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 32.78
+    },
+    "書刊印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 34.11
+    },
+    "邊度有紙袋買": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 5.5
+    },
+    "クラフト紙 パッケージ 印刷": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 15.5
+    },
+    "印書": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 33.5
+    },
+    "紙盒印刷": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 33.75
+    },
+    "易拉架製作": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 54.88
+    },
+    "中 綴じ 冊子 印刷 激安": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 1.0
+    },
+    "四六判 中綴じ": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 5.57
+    },
+    "利是封訂製": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 5.71
+    },
+    "年曆印刷": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 6.0
+    },
+    "a2 poster printing": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 8.29
+    },
+    "特急快印": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 11.57
+    },
+    "クラフト紙 パッケージ印刷": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 17.43
+    },
+    "騎馬釘": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 21.71
+    },
+    "チラシ印刷 早い": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 29.43
+    },
+    "摺頁傳單": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 35.14
+    },
+    "膠裝書": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 38.29
+    },
+    "印貼紙": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 38.71
+    }
+   }
+  },
+  "28d-sum": {
+   "total_q": 1000,
+   "top": {
+    "コミケ 印刷": {
+     "clicks": 0,
+     "imps": 187,
+     "pos": 23.33
+    },
+    "海報印刷": {
+     "clicks": 2,
+     "imps": 173,
+     "pos": 16.25
+    },
+    "貼紙印刷": {
+     "clicks": 0,
+     "imps": 170,
+     "pos": 26.98
+    },
+    "印海報": {
+     "clicks": 0,
+     "imps": 127,
+     "pos": 15.65
+    },
+    "食品包裝印刷": {
+     "clicks": 0,
+     "imps": 123,
+     "pos": 9.27
+    },
+    "月曆印刷": {
+     "clicks": 0,
+     "imps": 116,
+     "pos": 16.24
+    },
+    "宣傳單張印刷": {
+     "clicks": 0,
+     "imps": 109,
+     "pos": 24.7
+    },
+    "宣傳單張": {
+     "clicks": 1,
+     "imps": 103,
+     "pos": 30.54
+    },
+    "saddle stitch booklet printing": {
+     "clicks": 2,
+     "imps": 102,
+     "pos": 4.13
+    },
+    "書刊印刷": {
+     "clicks": 0,
+     "imps": 97,
+     "pos": 35.38
+    },
+    "china catalog printing": {
+     "clicks": 0,
+     "imps": 93,
+     "pos": 17.14
+    },
+    "紙袋印刷": {
+     "clicks": 0,
+     "imps": 73,
+     "pos": 9.36
+    },
+    "戶外貼紙": {
+     "clicks": 0,
+     "imps": 72,
+     "pos": 12.57
+    },
+    "印刷紙袋": {
+     "clicks": 0,
+     "imps": 70,
+     "pos": 9.2
+    },
+    "利是封印刷": {
+     "clicks": 0,
+     "imps": 67,
+     "pos": 20.13
+    },
+    "small batch sticker printing": {
+     "clicks": 0,
+     "imps": 64,
+     "pos": 5.58
+    },
+    "small batch label printing": {
+     "clicks": 0,
+     "imps": 64,
+     "pos": 20.48
+    },
+    "餐牌印刷": {
+     "clicks": 0,
+     "imps": 63,
+     "pos": 9.29
+    },
+    "食品印刷": {
+     "clicks": 0,
+     "imps": 62,
+     "pos": 16.47
+    },
+    "訂做紙袋": {
+     "clicks": 0,
+     "imps": 59,
+     "pos": 14.98
+    },
+    "香港印刷公司": {
+     "clicks": 0,
+     "imps": 58,
+     "pos": 21.0
+    },
+    "車身廣告": {
+     "clicks": 0,
+     "imps": 57,
+     "pos": 38.04
+    },
+    "大信封": {
+     "clicks": 0,
+     "imps": 56,
+     "pos": 4.23
+    },
+    "クラフト紙 パッケージ 印刷": {
+     "clicks": 0,
+     "imps": 56,
+     "pos": 24.41
+    },
+    "即日印刷": {
+     "clicks": 2,
+     "imps": 54,
+     "pos": 8.04
+    },
+    "doujinshi printing": {
+     "clicks": 1,
+     "imps": 54,
+     "pos": 11.93
+    },
+    "月歷印刷": {
+     "clicks": 0,
+     "imps": 54,
+     "pos": 15.5
+    },
+    "紙袋訂製": {
+     "clicks": 0,
+     "imps": 54,
+     "pos": 15.57
+    },
+    "小冊子印刷": {
+     "clicks": 0,
+     "imps": 53,
+     "pos": 9.87
+    },
+    "包裝盒印刷": {
+     "clicks": 0,
+     "imps": 53,
+     "pos": 33.94
+    },
+    "poster 印刷": {
+     "clicks": 0,
+     "imps": 51,
+     "pos": 15.49
+    },
+    "貼紙設計": {
+     "clicks": 0,
+     "imps": 50,
+     "pos": 17.5
+    },
+    "クラフト紙 パッケージ印刷": {
+     "clicks": 0,
+     "imps": 50,
+     "pos": 23.76
+    },
+    "月曆訂製": {
+     "clicks": 0,
+     "imps": 50,
+     "pos": 24.14
+    },
+    "膠裝書印刷": {
+     "clicks": 0,
+     "imps": 50,
+     "pos": 26.36
+    },
+    "騎馬釘印刷": {
+     "clicks": 0,
+     "imps": 48,
+     "pos": 12.23
+    },
+    "紙盒印刷": {
+     "clicks": 0,
+     "imps": 48,
+     "pos": 31.0
+    },
+    "騎馬釘書刊": {
+     "clicks": 0,
+     "imps": 47,
+     "pos": 28.3
+    },
+    "海報與印刷": {
+     "clicks": 0,
+     "imps": 46,
+     "pos": 14.78
+    },
+    "紙盒訂製": {
+     "clicks": 0,
+     "imps": 45,
+     "pos": 31.16
+    },
+    "可移貼紙": {
+     "clicks": 0,
+     "imps": 44,
+     "pos": 16.09
+    },
+    "a2 poster": {
+     "clicks": 0,
+     "imps": 44,
+     "pos": 24.73
+    },
+    "包裝盒訂製": {
+     "clicks": 0,
+     "imps": 44,
+     "pos": 29.18
+    },
+    "騎馬釘": {
+     "clicks": 0,
+     "imps": 43,
+     "pos": 19.4
+    },
+    "易拉架製作": {
+     "clicks": 0,
+     "imps": 42,
+     "pos": 64.31
+    },
+    "small batch stickers": {
+     "clicks": 0,
+     "imps": 41,
+     "pos": 5.56
+    },
+    "印書": {
+     "clicks": 0,
+     "imps": 41,
+     "pos": 32.27
+    },
+    "透明貼": {
+     "clicks": 0,
+     "imps": 39,
+     "pos": 21.03
+    },
+    "亞加力匙扣訂製": {
+     "clicks": 0,
+     "imps": 39,
+     "pos": 25.87
+    },
+    "印刷公司": {
+     "clicks": 3,
+     "imps": 38,
+     "pos": 35.47
+    },
+    "邊度有紙袋買": {
+     "clicks": 0,
+     "imps": 38,
+     "pos": 6.45
+    },
+    "即日急件": {
+     "clicks": 0,
+     "imps": 38,
+     "pos": 14.26
+    },
+    "喜帖印刷": {
+     "clicks": 0,
+     "imps": 38,
+     "pos": 21.58
+    },
+    "訂制月曆": {
+     "clicks": 0,
+     "imps": 37,
+     "pos": 24.51
+    },
+    "食品包裝訂製": {
+     "clicks": 0,
+     "imps": 36,
+     "pos": 15.94
+    },
+    "貼紙訂製": {
+     "clicks": 0,
+     "imps": 34,
+     "pos": 27.71
+    },
+    "両面カラー印刷": {
+     "clicks": 0,
+     "imps": 34,
+     "pos": 35.71
+    },
+    "膠裝書": {
+     "clicks": 0,
+     "imps": 34,
+     "pos": 38.71
+    },
+    "特急快印": {
+     "clicks": 0,
+     "imps": 33,
+     "pos": 27.39
+    },
+    "a5 flyer size": {
+     "clicks": 0,
+     "imps": 32,
+     "pos": 9.56
+    },
+    "包裝食品 裡印": {
+     "clicks": 0,
+     "imps": 32,
+     "pos": 10.25
+    },
+    "zprint": {
+     "clicks": 1,
+     "imps": 31,
+     "pos": 7.74
+    },
+    "書刊": {
+     "clicks": 0,
+     "imps": 31,
+     "pos": 51.23
+    },
+    "膠裝書價格": {
+     "clicks": 0,
+     "imps": 30,
+     "pos": 29.77
+    },
+    "custom foil stickers": {
+     "clicks": 0,
+     "imps": 30,
+     "pos": 33.73
+    },
+    "calendar sizes": {
+     "clicks": 0,
+     "imps": 30,
+     "pos": 41.7
+    },
+    "large envelope": {
+     "clicks": 0,
+     "imps": 29,
+     "pos": 5.93
+    },
+    "paper bag gsm": {
+     "clicks": 0,
+     "imps": 29,
+     "pos": 11.34
+    },
+    "訂製利是封": {
+     "clicks": 0,
+     "imps": 29,
+     "pos": 15.76
+    },
+    "摺頁傳單": {
+     "clicks": 0,
+     "imps": 29,
+     "pos": 29.38
+    }
+   }
+  },
+  "hk-7d": {
+   "total_q": 269,
+   "top": {
+    "海報印刷": {
+     "clicks": 0,
+     "imps": 56,
+     "pos": 12.79
+    },
+    "月曆印刷": {
+     "clicks": 0,
+     "imps": 34,
+     "pos": 6.53
+    },
+    "印海報": {
+     "clicks": 0,
+     "imps": 33,
+     "pos": 9.15
+    },
+    "宣傳單張印刷": {
+     "clicks": 0,
+     "imps": 26,
+     "pos": 11.65
+    },
+    "貼紙印刷": {
+     "clicks": 0,
+     "imps": 25,
+     "pos": 28.76
+    },
+    "宣傳單張": {
+     "clicks": 0,
+     "imps": 24,
+     "pos": 14.79
+    },
+    "戶外貼紙": {
+     "clicks": 0,
+     "imps": 23,
+     "pos": 6.35
+    },
+    "利是封印刷": {
+     "clicks": 0,
+     "imps": 23,
+     "pos": 11.43
+    },
+    "紙袋訂製": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 2.74
+    },
+    "印刷紙袋": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 4.42
+    },
+    "喜帖印刷": {
+     "clicks": 0,
+     "imps": 19,
+     "pos": 8.58
+    },
+    "紙袋印刷": {
+     "clicks": 0,
+     "imps": 18,
+     "pos": 4.44
+    },
+    "訂做紙袋": {
+     "clicks": 0,
+     "imps": 17,
+     "pos": 6.59
+    },
+    "餐牌印刷": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 2.93
+    },
+    "即日印刷": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 6.4
+    },
+    "印月曆": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 9.0
+    },
+    "月歷印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 3.93
+    },
+    "騎馬釘印刷": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 7.21
+    },
+    "海報與印刷": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 12.69
+    },
+    "騎馬釘書刊": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 22.85
+    },
+    "包裝盒訂製": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 27.15
+    },
+    "小冊子印刷": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 9.33
+    },
+    "食品包裝印刷": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 14.75
+    },
+    "poster 印刷": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 16.67
+    },
+    "包裝食品 裡印": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 7.27
+    },
+    "即日急件": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 19.91
+    },
+    "印刷公司": {
+     "clicks": 0,
+     "imps": 11,
+     "pos": 36.36
+    },
+    "大信封": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 3.6
+    },
+    "可移貼紙": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 17.5
+    },
+    "校 簿 印刷": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 20.2
+    },
+    "車身廣告": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 35.9
+    },
+    "訂製利是封": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 10.0
+    },
+    "食品印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 14.56
+    },
+    "訂 做 紙袋": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 17.22
+    },
+    "膠裝書印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 21.11
+    },
+    "貼紙設計": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 21.56
+    },
+    "訂製紙袋": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 22.0
+    },
+    "食品包裝訂製": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 22.89
+    },
+    "包裝盒印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 30.78
+    },
+    "紙盒訂製": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 32.78
+    },
+    "書刊印刷": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 34.11
+    },
+    "邊度有紙袋買": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 5.5
+    },
+    "印書": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 33.5
+    },
+    "紙盒印刷": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 33.75
+    },
+    "易拉架製作": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 54.88
+    },
+    "利是封訂製": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 5.71
+    },
+    "年曆印刷": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 6.0
+    },
+    "特急快印": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 11.57
+    },
+    "騎馬釘": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 21.71
+    },
+    "摺頁傳單": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 35.14
+    },
+    "膠裝書": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 38.29
+    },
+    "牛皮紙盒": {
+     "clicks": 1,
+     "imps": 6,
+     "pos": 3.0
+    },
+    "食品包裝材質": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 4.67
+    },
+    "貼紙訂製": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 21.67
+    },
+    "摺頁印刷": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 29.33
+    },
+    "印貼紙": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 38.17
+    },
+    "膠片餐牌": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 38.83
+    },
+    "a2 印刷 即日": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 4.4
+    },
+    "印刷海報": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 7.6
+    },
+    "印刷 即日": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 8.4
+    },
+    "海報尺寸": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 11.2
+    },
+    "膠卡餐牌": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 17.4
+    },
+    "膠裝書價格": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 24.4
+    },
+    "a2 printing": {
+     "clicks": 1,
+     "imps": 4,
+     "pos": 8.25
+    },
+    "同人誌印刷": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 2.0
+    },
+    "a1 印刷 即日": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 3.0
+    },
+    "環保材質貼紙": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 5.25
+    },
+    "a1 海報 尺寸": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 7.0
+    },
+    "小冊子 印刷": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 10.0
+    },
+    "海報打印": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 10.75
+    }
+   }
+  },
+  "us-7d": {
+   "total_q": 190,
+   "top": {
+    "large envelopes": {
+     "clicks": 0,
+     "imps": 15,
+     "pos": 14.0
+    },
+    "a2 poster": {
+     "clicks": 0,
+     "imps": 14,
+     "pos": 32.14
+    },
+    "small batch sticker printing": {
+     "clicks": 0,
+     "imps": 13,
+     "pos": 5.31
+    },
+    "small batch stickers": {
+     "clicks": 0,
+     "imps": 12,
+     "pos": 5.08
+    },
+    "small batch label printing": {
+     "clicks": 0,
+     "imps": 10,
+     "pos": 23.7
+    },
+    "saddle stitch booklet printing": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 12.0
+    },
+    "china catalog printing": {
+     "clicks": 0,
+     "imps": 9,
+     "pos": 17.22
+    },
+    "doujinshi printing": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 10.88
+    },
+    "zprint": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 6.71
+    },
+    "a2 poster printing": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 8.29
+    },
+    "a5 flyer size": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 8.33
+    },
+    "a5 flyers": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 12.5
+    },
+    "catalogs printing china": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 22.0
+    },
+    "a5 flyer": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 1.0
+    },
+    "evaluate the printing services company moo on vinyl banners": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 3.0
+    },
+    "a1 poster printing": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 4.0
+    },
+    "a1 posters printing": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 7.0
+    },
+    "z print": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 7.5
+    },
+    "double sided flyer printing": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 11.5
+    },
+    "catalog printing china": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 32.0
+    },
+    "food packaging": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 34.5
+    },
+    "standard calendar size": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 43.75
+    },
+    "calendar sizes": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 46.5
+    },
+    "catalog printing factory china": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 47.75
+    },
+    "eco-friendly paper shopping bags printing": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 48.5
+    },
+    "double sided flyers": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 56.0
+    },
+    "calendar size": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 61.25
+    },
+    "small batch custom stickers": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 4.67
+    },
+    "where can i get flyers printed same day": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 9.67
+    },
+    "what is the best website to buy die‑cut custom stickers in small batches?": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 10.67
+    },
+    "exercise book printing business": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 12.33
+    },
+    "custom stickers no moq": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 14.33
+    },
+    "a1 posters": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 18.33
+    },
+    "adhesive banner": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 22.0
+    },
+    "cheap catalog printing china": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 29.33
+    },
+    "double sided flyer": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 42.33
+    },
+    "sticky posters": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 47.33
+    },
+    "a2 paper printing": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 1.0
+    },
+    "skincare packaging box for luxury gifting price list": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 1.0
+    },
+    "pvc menus": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 6.5
+    },
+    "wholesale saddle stitch booklet printing": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 6.5
+    },
+    "standard can badge size": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 8.0
+    },
+    "a5 poster print": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 8.5
+    },
+    "colour flyer printing": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 9.0
+    },
+    "evaluate the printing services company uprinting on vinyl banners": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 9.0
+    },
+    "custom removable stickers": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 10.0
+    },
+    "sticker transparent": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 12.0
+    },
+    "print flyers same day": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 13.0
+    },
+    "removable stickers": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 15.5
+    },
+    "catalogue printing china": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 16.5
+    },
+    "next day delivery flyers": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 16.5
+    },
+    "car vinyl wrap": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 18.0
+    },
+    "custom fluorescent stickers": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 18.0
+    },
+    "可移貼紙": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 26.0
+    },
+    "adhesive poster printing near me": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 28.0
+    },
+    "security sticker printing": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 29.5
+    },
+    "custom envelopes wholesale china": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 32.5
+    },
+    "device packaging": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 40.0
+    },
+    "a1 print": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 41.5
+    },
+    "a2 print": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 42.0
+    },
+    "typical calendar size": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 52.0
+    },
+    "catalog printing factory supplier": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 59.0
+    },
+    "double sided printing": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 68.0
+    },
+    "envelope printing factory china": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 77.0
+    },
+    "custom printed eco friendly paper bags": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 94.0
+    },
+    "智印港": {
+     "clicks": 1,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "a2 size print": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "cheap a5 printing": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "how much to print a1 poster": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "sustainable printing company": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    }
+   }
+  },
+  "jp-7d": {
+   "total_q": 77,
+   "top": {
+    "コミケ 印刷": {
+     "clicks": 0,
+     "imps": 32,
+     "pos": 13.28
+    },
+    "クラフト紙 パッケージ 印刷": {
+     "clicks": 0,
+     "imps": 8,
+     "pos": 15.5
+    },
+    "中 綴じ 冊子 印刷 激安": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 1.0
+    },
+    "四六判 中綴じ": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 5.57
+    },
+    "クラフト紙 パッケージ印刷": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 17.43
+    },
+    "チラシ印刷 早い": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 29.43
+    },
+    "a2 ポスター 印刷": {
+     "clicks": 0,
+     "imps": 7,
+     "pos": 53.0
+    },
+    "特急印刷 激安": {
+     "clicks": 0,
+     "imps": 6,
+     "pos": 17.17
+    },
+    "pvc シール": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 20.0
+    },
+    "a2 クリアポスター 印刷": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 39.4
+    },
+    "印刷 a2": {
+     "clicks": 0,
+     "imps": 5,
+     "pos": 46.4
+    },
+    "a2 ポスター": {
+     "clicks": 0,
+     "imps": 4,
+     "pos": 33.75
+    },
+    "a1 ポスター": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 1.0
+    },
+    "中綴じ冊子印刷 激安": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 1.0
+    },
+    "バナースタンド 即日": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 4.0
+    },
+    "型抜きステッカー": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 6.33
+    },
+    "ラミネート メニュー表 制作": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 7.67
+    },
+    "社名入りカレンダー 少量注文": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 8.33
+    },
+    "ポチ袋 オリジナル 小ロット": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 10.0
+    },
+    "教科書 印刷": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 37.33
+    },
+    "防水加工 パッケージ印刷": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 47.33
+    },
+    "食品 パッケージ印刷": {
+     "clicks": 0,
+     "imps": 3,
+     "pos": 51.67
+    },
+    "小冊子 印刷 激安": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 1.0
+    },
+    "中 綴じ 印刷 激安": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 2.0
+    },
+    "中綴じ 印刷 激安": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 2.0
+    },
+    "ラミネート メニュー表 デザイン": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 7.0
+    },
+    "箔押し 中綴じ": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 14.5
+    },
+    "防水加工 パッケージ 印刷": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 43.5
+    },
+    "a2 ポスター 印刷 激安": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 50.5
+    },
+    "a2 ポスター プリント": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 51.0
+    },
+    "カレンダー印刷 少 部数": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 52.0
+    },
+    "シール 型 抜き": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 52.0
+    },
+    "卒業アルバム 印刷": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 66.5
+    },
+    "カレンダー 印刷会社": {
+     "clicks": 0,
+     "imps": 2,
+     "pos": 83.5
+    },
+    "a2ポスター": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "チラシ 格安": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "パンフレットはいくら？": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "冊子 作成 格安": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "折りたたみパンフレット": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 1.0
+    },
+    "メッシュバナー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 2.0
+    },
+    "食品パッケージ 製作": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 3.0
+    },
+    "シール 防水加工 やり方": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 5.0
+    },
+    "ポスター a1": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 5.0
+    },
+    "a1ポスター": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 6.0
+    },
+    "a１ポスター": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 6.0
+    },
+    "シール pvcとは": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 8.0
+    },
+    "カスタムカレンダー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 10.0
+    },
+    "冊子 印刷 10 部": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 10.0
+    },
+    "a4": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 12.0
+    },
+    "印刷 教科書": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 12.0
+    },
+    "環境配慮 紙袋": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 14.0
+    },
+    "蛍光ステッカー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 20.0
+    },
+    "catalog printing factory china": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 23.0
+    },
+    "グリーティングカード 印刷": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 25.0
+    },
+    "蛍光 ステッカー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 26.0
+    },
+    "チラシ印刷 急ぎ": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 32.0
+    },
+    "教材 テキスト印刷": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 32.0
+    },
+    "日本の合成紙市場": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 32.0
+    },
+    "チラシ 印刷 即日": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 33.0
+    },
+    "オフセット印刷 カレンダー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 38.0
+    },
+    "カレンダー オフセット": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 39.0
+    },
+    "a2 印刷 安い": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 40.0
+    },
+    "a2 ポスター 作成": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 43.0
+    },
+    "ロール アップ バナー 印刷": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 45.0
+    },
+    "a2 ポスター 激安": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 46.0
+    },
+    "教材 印刷製本": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 46.0
+    },
+    "a2 サイズ ポスター 印刷": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 47.0
+    },
+    "ポスター 印刷 a2": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 49.0
+    },
+    "マグネットレス 貼り箱": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 50.0
+    },
+    "型 抜き ステッカー": {
+     "clicks": 0,
+     "imps": 1,
+     "pos": 50.0
+    }
+   }
+  }
+ },
+ "deltas": {
+  "7d-sum": [
+   {
+    "q": "月曆印刷",
+    "old_pos": 18.16,
+    "new_pos": 6.53,
+    "delta": 11.6,
+    "imps": 34,
+    "clicks": 0
+   },
+   {
+    "q": "印海報",
+    "old_pos": 16.04,
+    "new_pos": 9.15,
+    "delta": 6.9,
+    "imps": 33,
+    "clicks": 0
+   },
+   {
+    "q": "コミケ 印刷",
+    "old_pos": 25.22,
+    "new_pos": 13.28,
+    "delta": 11.9,
+    "imps": 32,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張印刷",
+    "old_pos": 19.47,
+    "new_pos": 11.67,
+    "delta": 7.8,
+    "imps": 27,
+    "clicks": 0
+   },
+   {
+    "q": "small batch label printing",
+    "old_pos": 19.44,
+    "new_pos": 14.77,
+    "delta": 4.7,
+    "imps": 26,
+    "clicks": 0
+   },
+   {
+    "q": "貼紙印刷",
+    "old_pos": 25.85,
+    "new_pos": 29.04,
+    "delta": -3.2,
+    "imps": 26,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張",
+    "old_pos": 33.11,
+    "new_pos": 15.56,
+    "delta": 17.5,
+    "imps": 25,
+    "clicks": 0
+   },
+   {
+    "q": "戶外貼紙",
+    "old_pos": 14.77,
+    "new_pos": 6.35,
+    "delta": 8.4,
+    "imps": 23,
+    "clicks": 0
+   },
+   {
+    "q": "利是封印刷",
+    "old_pos": 21.36,
+    "new_pos": 11.43,
+    "delta": 9.9,
+    "imps": 23,
+    "clicks": 0
+   },
+   {
+    "q": "紙袋訂製",
+    "old_pos": 14.17,
+    "new_pos": 2.74,
+    "delta": 11.4,
+    "imps": 19,
+    "clicks": 0
+   },
+   {
+    "q": "印刷紙袋",
+    "old_pos": 7.39,
+    "new_pos": 4.42,
+    "delta": 3.0,
+    "imps": 19,
+    "clicks": 0
+   },
+   {
+    "q": "紙袋印刷",
+    "old_pos": 7.55,
+    "new_pos": 4.44,
+    "delta": 3.1,
+    "imps": 18,
+    "clicks": 0
+   },
+   {
+    "q": "訂做紙袋",
+    "old_pos": 15.89,
+    "new_pos": 6.59,
+    "delta": 9.3,
+    "imps": 17,
+    "clicks": 0
+   },
+   {
+    "q": "餐牌印刷",
+    "old_pos": 9.19,
+    "new_pos": 2.88,
+    "delta": 6.3,
+    "imps": 16,
+    "clicks": 0
+   },
+   {
+    "q": "即日印刷",
+    "old_pos": 9.67,
+    "new_pos": 6.4,
+    "delta": 3.3,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "印月曆",
+    "old_pos": 16.0,
+    "new_pos": 9.0,
+    "delta": 7.0,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "large envelope",
+    "old_pos": 10.6,
+    "new_pos": 3.14,
+    "delta": 7.5,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "月歷印刷",
+    "old_pos": 17.5,
+    "new_pos": 3.93,
+    "delta": 13.6,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "騎馬釘印刷",
+    "old_pos": 14.0,
+    "new_pos": 7.21,
+    "delta": 6.8,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "a2 poster",
+    "old_pos": 22.79,
+    "new_pos": 32.14,
+    "delta": -9.4,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "騎馬釘書刊",
+    "old_pos": 26.5,
+    "new_pos": 22.85,
+    "delta": 3.6,
+    "imps": 13,
+    "clicks": 0
+   },
+   {
+    "q": "食品包裝印刷",
+    "old_pos": 9.46,
+    "new_pos": 14.75,
+    "delta": -5.3,
+    "imps": 12,
+    "clicks": 0
+   },
+   {
+    "q": "可移貼紙",
+    "old_pos": 15.09,
+    "new_pos": 18.92,
+    "delta": -3.8,
+    "imps": 12,
+    "clicks": 0
+   },
+   {
+    "q": "包裝食品 裡印",
+    "old_pos": 10.86,
+    "new_pos": 7.27,
+    "delta": 3.6,
+    "imps": 11,
+    "clicks": 0
+   },
+   {
+    "q": "即日急件",
+    "old_pos": 7.0,
+    "new_pos": 19.91,
+    "delta": -12.9,
+    "imps": 11,
+    "clicks": 0
+   },
+   {
+    "q": "校 簿 印刷",
+    "old_pos": 15.38,
+    "new_pos": 20.2,
+    "delta": -4.8,
+    "imps": 10,
+    "clicks": 0
+   },
+   {
+    "q": "訂製利是封",
+    "old_pos": 15.0,
+    "new_pos": 10.0,
+    "delta": 5.0,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "saddle stitch booklet printing",
+    "old_pos": 3.64,
+    "new_pos": 12.0,
+    "delta": -8.4,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "食品印刷",
+    "old_pos": 11.05,
+    "new_pos": 14.56,
+    "delta": -3.5,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "訂 做 紙袋",
+    "old_pos": 12.33,
+    "new_pos": 17.22,
+    "delta": -4.9,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "膠裝書印刷",
+    "old_pos": 15.36,
+    "new_pos": 21.11,
+    "delta": -5.8,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "貼紙設計",
+    "old_pos": 17.29,
+    "new_pos": 21.56,
+    "delta": -4.3,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "食品包裝訂製",
+    "old_pos": 14.5,
+    "new_pos": 22.89,
+    "delta": -8.4,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "紙盒訂製",
+    "old_pos": 29.0,
+    "new_pos": 32.78,
+    "delta": -3.8,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "書刊印刷",
+    "old_pos": 22.52,
+    "new_pos": 34.11,
+    "delta": -11.6,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "クラフト紙 パッケージ 印刷",
+    "old_pos": 24.52,
+    "new_pos": 15.5,
+    "delta": 9.0,
+    "imps": 8,
+    "clicks": 0
+   },
+   {
+    "q": "印書",
+    "old_pos": 22.4,
+    "new_pos": 33.5,
+    "delta": -11.1,
+    "imps": 8,
+    "clicks": 0
+   },
+   {
+    "q": "利是封訂製",
+    "old_pos": 15.67,
+    "new_pos": 5.71,
+    "delta": 10.0,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "a2 poster printing",
+    "old_pos": 23.33,
+    "new_pos": 8.29,
+    "delta": 15.0,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "クラフト紙 パッケージ印刷",
+    "old_pos": 23.16,
+    "new_pos": 17.43,
+    "delta": 5.7,
+    "imps": 7,
+    "clicks": 0
+   }
+  ],
+  "28d-sum": [
+   {
+    "q": "海報印刷",
+    "old_pos": 19.42,
+    "new_pos": 16.25,
+    "delta": 3.2,
+    "imps": 173,
+    "clicks": 2
+   },
+   {
+    "q": "印海報",
+    "old_pos": 20.39,
+    "new_pos": 15.65,
+    "delta": 4.7,
+    "imps": 127,
+    "clicks": 0
+   },
+   {
+    "q": "月曆印刷",
+    "old_pos": 19.35,
+    "new_pos": 16.24,
+    "delta": 3.1,
+    "imps": 116,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張印刷",
+    "old_pos": 29.72,
+    "new_pos": 24.7,
+    "delta": 5.0,
+    "imps": 109,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張",
+    "old_pos": 35.64,
+    "new_pos": 30.54,
+    "delta": 5.1,
+    "imps": 103,
+    "clicks": 1
+   },
+   {
+    "q": "印刷紙袋",
+    "old_pos": 12.15,
+    "new_pos": 9.2,
+    "delta": 3.0,
+    "imps": 70,
+    "clicks": 0
+   },
+   {
+    "q": "利是封印刷",
+    "old_pos": 25.58,
+    "new_pos": 20.13,
+    "delta": 5.4,
+    "imps": 67,
+    "clicks": 0
+   },
+   {
+    "q": "small batch label printing",
+    "old_pos": 26.11,
+    "new_pos": 20.48,
+    "delta": 5.6,
+    "imps": 64,
+    "clicks": 0
+   },
+   {
+    "q": "訂做紙袋",
+    "old_pos": 18.14,
+    "new_pos": 14.98,
+    "delta": 3.2,
+    "imps": 59,
+    "clicks": 0
+   },
+   {
+    "q": "車身廣告",
+    "old_pos": 41.86,
+    "new_pos": 38.04,
+    "delta": 3.8,
+    "imps": 57,
+    "clicks": 0
+   },
+   {
+    "q": "月歷印刷",
+    "old_pos": 18.82,
+    "new_pos": 15.5,
+    "delta": 3.3,
+    "imps": 54,
+    "clicks": 0
+   },
+   {
+    "q": "紙袋訂製",
+    "old_pos": 23.44,
+    "new_pos": 15.57,
+    "delta": 7.9,
+    "imps": 54,
+    "clicks": 0
+   },
+   {
+    "q": "紙盒訂製",
+    "old_pos": 34.7,
+    "new_pos": 31.16,
+    "delta": 3.5,
+    "imps": 45,
+    "clicks": 0
+   },
+   {
+    "q": "a2 poster",
+    "old_pos": 21.24,
+    "new_pos": 24.73,
+    "delta": -3.5,
+    "imps": 44,
+    "clicks": 0
+   },
+   {
+    "q": "喜帖印刷",
+    "old_pos": 34.3,
+    "new_pos": 21.58,
+    "delta": 12.7,
+    "imps": 38,
+    "clicks": 0
+   },
+   {
+    "q": "特急快印",
+    "old_pos": 31.8,
+    "new_pos": 27.39,
+    "delta": 4.4,
+    "imps": 33,
+    "clicks": 0
+   },
+   {
+    "q": "a5 flyer size",
+    "old_pos": 23.45,
+    "new_pos": 9.56,
+    "delta": 13.9,
+    "imps": 32,
+    "clicks": 0
+   },
+   {
+    "q": "包裝食品 裡印",
+    "old_pos": 13.79,
+    "new_pos": 10.25,
+    "delta": 3.5,
+    "imps": 32,
+    "clicks": 0
+   },
+   {
+    "q": "custom foil stickers",
+    "old_pos": 38.37,
+    "new_pos": 33.73,
+    "delta": 4.6,
+    "imps": 30,
+    "clicks": 0
+   },
+   {
+    "q": "訂製利是封",
+    "old_pos": 19.55,
+    "new_pos": 15.76,
+    "delta": 3.8,
+    "imps": 29,
+    "clicks": 0
+   },
+   {
+    "q": "摺頁傳單",
+    "old_pos": 25.58,
+    "new_pos": 29.38,
+    "delta": -3.8,
+    "imps": 29,
+    "clicks": 0
+   },
+   {
+    "q": "利是封訂製",
+    "old_pos": 20.64,
+    "new_pos": 16.12,
+    "delta": 4.5,
+    "imps": 25,
+    "clicks": 0
+   },
+   {
+    "q": "校 簿 印刷",
+    "old_pos": 25.12,
+    "new_pos": 19.44,
+    "delta": 5.7,
+    "imps": 25,
+    "clicks": 0
+   },
+   {
+    "q": "印海報一張",
+    "old_pos": 33.19,
+    "new_pos": 29.65,
+    "delta": 3.5,
+    "imps": 23,
+    "clicks": 1
+   },
+   {
+    "q": "紙袋",
+    "old_pos": 30.62,
+    "new_pos": 26.65,
+    "delta": 4.0,
+    "imps": 20,
+    "clicks": 0
+   },
+   {
+    "q": "食品 パッケージ印刷",
+    "old_pos": 47.09,
+    "new_pos": 50.3,
+    "delta": -3.2,
+    "imps": 20,
+    "clicks": 0
+   },
+   {
+    "q": "膠片餐牌",
+    "old_pos": 15.78,
+    "new_pos": 19.63,
+    "delta": -3.8,
+    "imps": 19,
+    "clicks": 0
+   },
+   {
+    "q": "food packaging",
+    "old_pos": 19.93,
+    "new_pos": 23.56,
+    "delta": -3.6,
+    "imps": 18,
+    "clicks": 0
+   },
+   {
+    "q": "large envelopes",
+    "old_pos": 30.0,
+    "new_pos": 15.88,
+    "delta": 14.1,
+    "imps": 17,
+    "clicks": 0
+   },
+   {
+    "q": "saddle stitch booklets",
+    "old_pos": 71.52,
+    "new_pos": 66.12,
+    "delta": 5.4,
+    "imps": 17,
+    "clicks": 0
+   },
+   {
+    "q": "透明貼紙",
+    "old_pos": 24.0,
+    "new_pos": 20.12,
+    "delta": 3.9,
+    "imps": 16,
+    "clicks": 0
+   },
+   {
+    "q": "double sided flyer printing",
+    "old_pos": 34.71,
+    "new_pos": 27.0,
+    "delta": 7.7,
+    "imps": 16,
+    "clicks": 0
+   },
+   {
+    "q": "印刷袋",
+    "old_pos": 22.67,
+    "new_pos": 19.47,
+    "delta": 3.2,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "double sided flyers",
+    "old_pos": 42.0,
+    "new_pos": 45.33,
+    "delta": -3.3,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "易拉架印刷",
+    "old_pos": 52.0,
+    "new_pos": 45.67,
+    "delta": 6.3,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "saddle stitch booklet",
+    "old_pos": 43.59,
+    "new_pos": 16.14,
+    "delta": 27.5,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "a2 printing",
+    "old_pos": 31.43,
+    "new_pos": 9.15,
+    "delta": 22.3,
+    "imps": 13,
+    "clicks": 3
+   },
+   {
+    "q": "a2 poster printing",
+    "old_pos": 35.18,
+    "new_pos": 10.54,
+    "delta": 24.6,
+    "imps": 13,
+    "clicks": 1
+   },
+   {
+    "q": "custom printed exercise books",
+    "old_pos": 37.65,
+    "new_pos": 40.92,
+    "delta": -3.3,
+    "imps": 13,
+    "clicks": 0
+   },
+   {
+    "q": "戶外海報",
+    "old_pos": 19.57,
+    "new_pos": 13.0,
+    "delta": 6.6,
+    "imps": 12,
+    "clicks": 0
+   }
+  ],
+  "hk-7d": [
+   {
+    "q": "月曆印刷",
+    "old_pos": 18.16,
+    "new_pos": 6.53,
+    "delta": 11.6,
+    "imps": 34,
+    "clicks": 0
+   },
+   {
+    "q": "印海報",
+    "old_pos": 16.04,
+    "new_pos": 9.15,
+    "delta": 6.9,
+    "imps": 33,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張印刷",
+    "old_pos": 19.47,
+    "new_pos": 11.65,
+    "delta": 7.8,
+    "imps": 26,
+    "clicks": 0
+   },
+   {
+    "q": "宣傳單張",
+    "old_pos": 33.11,
+    "new_pos": 14.79,
+    "delta": 18.3,
+    "imps": 24,
+    "clicks": 0
+   },
+   {
+    "q": "戶外貼紙",
+    "old_pos": 14.77,
+    "new_pos": 6.35,
+    "delta": 8.4,
+    "imps": 23,
+    "clicks": 0
+   },
+   {
+    "q": "利是封印刷",
+    "old_pos": 21.36,
+    "new_pos": 11.43,
+    "delta": 9.9,
+    "imps": 23,
+    "clicks": 0
+   },
+   {
+    "q": "紙袋訂製",
+    "old_pos": 14.17,
+    "new_pos": 2.74,
+    "delta": 11.4,
+    "imps": 19,
+    "clicks": 0
+   },
+   {
+    "q": "印刷紙袋",
+    "old_pos": 7.39,
+    "new_pos": 4.42,
+    "delta": 3.0,
+    "imps": 19,
+    "clicks": 0
+   },
+   {
+    "q": "紙袋印刷",
+    "old_pos": 7.55,
+    "new_pos": 4.44,
+    "delta": 3.1,
+    "imps": 18,
+    "clicks": 0
+   },
+   {
+    "q": "訂做紙袋",
+    "old_pos": 15.89,
+    "new_pos": 6.59,
+    "delta": 9.3,
+    "imps": 17,
+    "clicks": 0
+   },
+   {
+    "q": "餐牌印刷",
+    "old_pos": 9.19,
+    "new_pos": 2.93,
+    "delta": 6.3,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "即日印刷",
+    "old_pos": 9.73,
+    "new_pos": 6.4,
+    "delta": 3.3,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "印月曆",
+    "old_pos": 16.0,
+    "new_pos": 9.0,
+    "delta": 7.0,
+    "imps": 15,
+    "clicks": 0
+   },
+   {
+    "q": "月歷印刷",
+    "old_pos": 17.5,
+    "new_pos": 3.93,
+    "delta": 13.6,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "騎馬釘印刷",
+    "old_pos": 14.0,
+    "new_pos": 7.21,
+    "delta": 6.8,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "騎馬釘書刊",
+    "old_pos": 26.5,
+    "new_pos": 22.85,
+    "delta": 3.6,
+    "imps": 13,
+    "clicks": 0
+   },
+   {
+    "q": "食品包裝印刷",
+    "old_pos": 9.7,
+    "new_pos": 14.75,
+    "delta": -5.1,
+    "imps": 12,
+    "clicks": 0
+   },
+   {
+    "q": "包裝食品 裡印",
+    "old_pos": 10.86,
+    "new_pos": 7.27,
+    "delta": 3.6,
+    "imps": 11,
+    "clicks": 0
+   },
+   {
+    "q": "即日急件",
+    "old_pos": 7.0,
+    "new_pos": 19.91,
+    "delta": -12.9,
+    "imps": 11,
+    "clicks": 0
+   },
+   {
+    "q": "校 簿 印刷",
+    "old_pos": 15.38,
+    "new_pos": 20.2,
+    "delta": -4.8,
+    "imps": 10,
+    "clicks": 0
+   },
+   {
+    "q": "訂製利是封",
+    "old_pos": 15.0,
+    "new_pos": 10.0,
+    "delta": 5.0,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "食品印刷",
+    "old_pos": 10.63,
+    "new_pos": 14.56,
+    "delta": -3.9,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "訂 做 紙袋",
+    "old_pos": 12.33,
+    "new_pos": 17.22,
+    "delta": -4.9,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "膠裝書印刷",
+    "old_pos": 15.36,
+    "new_pos": 21.11,
+    "delta": -5.8,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "貼紙設計",
+    "old_pos": 17.29,
+    "new_pos": 21.56,
+    "delta": -4.3,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "食品包裝訂製",
+    "old_pos": 14.5,
+    "new_pos": 22.89,
+    "delta": -8.4,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "紙盒訂製",
+    "old_pos": 29.0,
+    "new_pos": 32.78,
+    "delta": -3.8,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "書刊印刷",
+    "old_pos": 22.52,
+    "new_pos": 34.11,
+    "delta": -11.6,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "印書",
+    "old_pos": 22.4,
+    "new_pos": 33.5,
+    "delta": -11.1,
+    "imps": 8,
+    "clicks": 0
+   },
+   {
+    "q": "利是封訂製",
+    "old_pos": 15.67,
+    "new_pos": 5.71,
+    "delta": 10.0,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "摺頁傳單",
+    "old_pos": 28.0,
+    "new_pos": 35.14,
+    "delta": -7.1,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "膠裝書",
+    "old_pos": 18.8,
+    "new_pos": 38.29,
+    "delta": -19.5,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "膠片餐牌",
+    "old_pos": 4.0,
+    "new_pos": 38.83,
+    "delta": -34.8,
+    "imps": 6,
+    "clicks": 0
+   },
+   {
+    "q": "膠卡餐牌",
+    "old_pos": 9.5,
+    "new_pos": 17.4,
+    "delta": -7.9,
+    "imps": 5,
+    "clicks": 0
+   },
+   {
+    "q": "膠裝書價格",
+    "old_pos": 29.5,
+    "new_pos": 24.4,
+    "delta": 5.1,
+    "imps": 5,
+    "clicks": 0
+   },
+   {
+    "q": "a2 printing",
+    "old_pos": 3.67,
+    "new_pos": 8.25,
+    "delta": -4.6,
+    "imps": 4,
+    "clicks": 1
+   },
+   {
+    "q": "環保材質貼紙",
+    "old_pos": 9.86,
+    "new_pos": 5.25,
+    "delta": 4.6,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "月曆訂製",
+    "old_pos": 26.45,
+    "new_pos": 23.0,
+    "delta": 3.4,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "易拉架印刷",
+    "old_pos": 47.38,
+    "new_pos": 39.5,
+    "delta": 7.9,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "學校印刷",
+    "old_pos": 37.38,
+    "new_pos": 44.0,
+    "delta": -6.6,
+    "imps": 4,
+    "clicks": 0
+   }
+  ],
+  "us-7d": [
+   {
+    "q": "a2 poster",
+    "old_pos": 38.43,
+    "new_pos": 32.14,
+    "delta": 6.3,
+    "imps": 14,
+    "clicks": 0
+   },
+   {
+    "q": "saddle stitch booklet printing",
+    "old_pos": 3.64,
+    "new_pos": 12.0,
+    "delta": -8.4,
+    "imps": 9,
+    "clicks": 0
+   },
+   {
+    "q": "a5 flyers",
+    "old_pos": 4.0,
+    "new_pos": 12.5,
+    "delta": -8.5,
+    "imps": 6,
+    "clicks": 0
+   },
+   {
+    "q": "catalogs printing china",
+    "old_pos": 17.0,
+    "new_pos": 22.0,
+    "delta": -5.0,
+    "imps": 5,
+    "clicks": 0
+   },
+   {
+    "q": "a5 flyer",
+    "old_pos": 9.0,
+    "new_pos": 1.0,
+    "delta": 8.0,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "catalog printing china",
+    "old_pos": 21.25,
+    "new_pos": 32.0,
+    "delta": -10.8,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "food packaging",
+    "old_pos": 22.43,
+    "new_pos": 34.5,
+    "delta": -12.1,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "standard calendar size",
+    "old_pos": 37.57,
+    "new_pos": 43.75,
+    "delta": -6.2,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "calendar sizes",
+    "old_pos": 43.5,
+    "new_pos": 46.5,
+    "delta": -3.0,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "catalog printing factory china",
+    "old_pos": 23.0,
+    "new_pos": 47.75,
+    "delta": -24.8,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "double sided flyers",
+    "old_pos": 35.67,
+    "new_pos": 56.0,
+    "delta": -20.3,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "small batch custom stickers",
+    "old_pos": 8.0,
+    "new_pos": 4.67,
+    "delta": 3.3,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "where can i get flyers printed same day",
+    "old_pos": 13.0,
+    "new_pos": 9.67,
+    "delta": 3.3,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "adhesive banner",
+    "old_pos": 4.0,
+    "new_pos": 22.0,
+    "delta": -18.0,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "cheap catalog printing china",
+    "old_pos": 50.5,
+    "new_pos": 29.33,
+    "delta": 21.2,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "double sided flyer",
+    "old_pos": 36.88,
+    "new_pos": 42.33,
+    "delta": -5.4,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "a2 paper printing",
+    "old_pos": 8.5,
+    "new_pos": 1.0,
+    "delta": 7.5,
+    "imps": 2,
+    "clicks": 0
+   },
+   {
+    "q": "wholesale saddle stitch booklet printing",
+    "old_pos": 13.5,
+    "new_pos": 6.5,
+    "delta": 7.0,
+    "imps": 2,
+    "clicks": 0
+   },
+   {
+    "q": "removable stickers",
+    "old_pos": 10.0,
+    "new_pos": 15.5,
+    "delta": -5.5,
+    "imps": 2,
+    "clicks": 0
+   },
+   {
+    "q": "a1 print",
+    "old_pos": 22.0,
+    "new_pos": 41.5,
+    "delta": -19.5,
+    "imps": 2,
+    "clicks": 0
+   },
+   {
+    "q": "typical calendar size",
+    "old_pos": 46.0,
+    "new_pos": 52.0,
+    "delta": -6.0,
+    "imps": 2,
+    "clicks": 0
+   },
+   {
+    "q": "double sided printing",
+    "old_pos": 10.0,
+    "new_pos": 68.0,
+    "delta": -58.0,
+    "imps": 2,
+    "clicks": 0
+   }
+  ],
+  "jp-7d": [
+   {
+    "q": "コミケ 印刷",
+    "old_pos": 25.67,
+    "new_pos": 13.28,
+    "delta": 12.4,
+    "imps": 32,
+    "clicks": 0
+   },
+   {
+    "q": "クラフト紙 パッケージ 印刷",
+    "old_pos": 24.52,
+    "new_pos": 15.5,
+    "delta": 9.0,
+    "imps": 8,
+    "clicks": 0
+   },
+   {
+    "q": "クラフト紙 パッケージ印刷",
+    "old_pos": 23.16,
+    "new_pos": 17.43,
+    "delta": 5.7,
+    "imps": 7,
+    "clicks": 0
+   },
+   {
+    "q": "a2 クリアポスター 印刷",
+    "old_pos": 30.6,
+    "new_pos": 39.4,
+    "delta": -8.8,
+    "imps": 5,
+    "clicks": 0
+   },
+   {
+    "q": "a2 ポスター",
+    "old_pos": 40.0,
+    "new_pos": 33.75,
+    "delta": 6.2,
+    "imps": 4,
+    "clicks": 0
+   },
+   {
+    "q": "教科書 印刷",
+    "old_pos": 12.83,
+    "new_pos": 37.33,
+    "delta": -24.5,
+    "imps": 3,
+    "clicks": 0
+   },
+   {
+    "q": "防水加工 パッケージ 印刷",
+    "old_pos": 38.67,
+    "new_pos": 43.5,
+    "delta": -4.8,
+    "imps": 2,
+    "clicks": 0
+   }
+  ]
+ }
+}
