@@ -1,0 +1,897 @@
+{
+ "7d-sum": [
+  {
+   "q": "海報印刷",
+   "imps": 58,
+   "clicks": 0,
+   "pos": 13.33,
+   "old_pos": 14.42
+  },
+  {
+   "q": "印海報",
+   "imps": 33,
+   "clicks": 0,
+   "pos": 9.15,
+   "old_pos": 16.04
+  },
+  {
+   "q": "食品包裝印刷",
+   "imps": 12,
+   "clicks": 0,
+   "pos": 14.75,
+   "old_pos": 9.46
+  },
+  {
+   "q": "即日急件",
+   "imps": 11,
+   "clicks": 0,
+   "pos": 19.91,
+   "old_pos": 7.0
+  },
+  {
+   "q": "印刷公司",
+   "imps": 11,
+   "clicks": 0,
+   "pos": 36.36,
+   "old_pos": 33.88
+  },
+  {
+   "q": "校 簿 印刷",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 20.2,
+   "old_pos": 15.38
+  },
+  {
+   "q": "車身廣告",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 35.9,
+   "old_pos": 34.95
+  },
+  {
+   "q": "食品包裝訂製",
+   "imps": 9,
+   "clicks": 0,
+   "pos": 22.89,
+   "old_pos": 14.5
+  },
+  {
+   "q": "書刊印刷",
+   "imps": 9,
+   "clicks": 0,
+   "pos": 34.11,
+   "old_pos": 22.52
+  },
+  {
+   "q": "印書",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 33.5,
+   "old_pos": 22.4
+  },
+  {
+   "q": "易拉架製作",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 54.88,
+   "old_pos": 57.25
+  },
+  {
+   "q": "摺頁傳單",
+   "imps": 7,
+   "clicks": 0,
+   "pos": 35.14,
+   "old_pos": 28.0
+  },
+  {
+   "q": "食品包裝材質",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 4.67,
+   "old_pos": null
+  },
+  {
+   "q": "貼紙訂製",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 21.67,
+   "old_pos": 23.62
+  },
+  {
+   "q": "摺頁印刷",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 29.33,
+   "old_pos": 32.17
+  },
+  {
+   "q": "a2 印刷 即日",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 4.4,
+   "old_pos": 2.25
+  },
+  {
+   "q": "印刷 即日",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 8.4,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架印刷",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 33.0,
+   "old_pos": 47.38
+  },
+  {
+   "q": "a1 印刷 即日",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 3.0,
+   "old_pos": 6.2
+  },
+  {
+   "q": "香港印刷公司",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 22.0,
+   "old_pos": 26.05
+  },
+  {
+   "q": "澳門a3海報印刷",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 36.0,
+   "old_pos": null
+  },
+  {
+   "q": "學校印刷",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 44.0,
+   "old_pos": 37.38
+  },
+  {
+   "q": "易拉架尺寸",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 32.33,
+   "old_pos": 41.4
+  },
+  {
+   "q": "急件印刷",
+   "imps": 2,
+   "clicks": 1,
+   "pos": 7.0,
+   "old_pos": null
+  },
+  {
+   "q": "a3海報印刷",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 9.0,
+   "old_pos": 33.25
+  },
+  {
+   "q": "海報印刷一張",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 16.0,
+   "old_pos": null
+  },
+  {
+   "q": "eprint易拉架",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 69.5,
+   "old_pos": 48.0
+  },
+  {
+   "q": "印海報一張",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 8.0,
+   "old_pos": 38.8
+  },
+  {
+   "q": "建興書簿印刷",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 8.0,
+   "old_pos": null
+  },
+  {
+   "q": "a2 印刷",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 10.0,
+   "old_pos": 4.0
+  },
+  {
+   "q": "印海報店",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 11.0,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架價錢",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 28.0,
+   "old_pos": 28.67
+  },
+  {
+   "q": "澳門易拉架尺寸",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 32.0,
+   "old_pos": 26.5
+  },
+  {
+   "q": "チラシ 印刷 即日",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 33.0,
+   "old_pos": null
+  },
+  {
+   "q": "澳門易拉架size",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 33.0,
+   "old_pos": 32.0
+  },
+  {
+   "q": "易拉架即日",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 38.0,
+   "old_pos": 37.5
+  },
+  {
+   "q": "a2 印刷 安い",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 40.0,
+   "old_pos": null
+  },
+  {
+   "q": "座枱易拉架",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 45.0,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 53.0,
+   "old_pos": 2.67
+  }
+ ],
+ "hk-7d": [
+  {
+   "q": "海報印刷",
+   "imps": 56,
+   "clicks": 0,
+   "pos": 12.79,
+   "old_pos": 14.47
+  },
+  {
+   "q": "印海報",
+   "imps": 33,
+   "clicks": 0,
+   "pos": 9.15,
+   "old_pos": 16.04
+  },
+  {
+   "q": "食品包裝印刷",
+   "imps": 12,
+   "clicks": 0,
+   "pos": 14.75,
+   "old_pos": 9.7
+  },
+  {
+   "q": "即日急件",
+   "imps": 11,
+   "clicks": 0,
+   "pos": 19.91,
+   "old_pos": 7.0
+  },
+  {
+   "q": "印刷公司",
+   "imps": 11,
+   "clicks": 0,
+   "pos": 36.36,
+   "old_pos": 33.88
+  },
+  {
+   "q": "校 簿 印刷",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 20.2,
+   "old_pos": 15.38
+  },
+  {
+   "q": "車身廣告",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 35.9,
+   "old_pos": 34.43
+  },
+  {
+   "q": "食品包裝訂製",
+   "imps": 9,
+   "clicks": 0,
+   "pos": 22.89,
+   "old_pos": 14.5
+  },
+  {
+   "q": "書刊印刷",
+   "imps": 9,
+   "clicks": 0,
+   "pos": 34.11,
+   "old_pos": 22.52
+  },
+  {
+   "q": "印書",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 33.5,
+   "old_pos": 22.4
+  },
+  {
+   "q": "易拉架製作",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 54.88,
+   "old_pos": 57.25
+  },
+  {
+   "q": "摺頁傳單",
+   "imps": 7,
+   "clicks": 0,
+   "pos": 35.14,
+   "old_pos": 28.0
+  },
+  {
+   "q": "食品包裝材質",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 4.67,
+   "old_pos": null
+  },
+  {
+   "q": "貼紙訂製",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 21.67,
+   "old_pos": 23.62
+  },
+  {
+   "q": "摺頁印刷",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 29.33,
+   "old_pos": 32.17
+  },
+  {
+   "q": "a2 印刷 即日",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 4.4,
+   "old_pos": 2.25
+  },
+  {
+   "q": "印刷 即日",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 8.4,
+   "old_pos": null
+  },
+  {
+   "q": "a1 印刷 即日",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 3.0,
+   "old_pos": 5.67
+  },
+  {
+   "q": "易拉架印刷",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 39.5,
+   "old_pos": 47.38
+  },
+  {
+   "q": "學校印刷",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 44.0,
+   "old_pos": 37.38
+  },
+  {
+   "q": "易拉架尺寸",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 32.33,
+   "old_pos": 41.25
+  },
+  {
+   "q": "澳門a3海報印刷",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 36.33,
+   "old_pos": null
+  },
+  {
+   "q": "急件印刷",
+   "imps": 2,
+   "clicks": 1,
+   "pos": 7.0,
+   "old_pos": null
+  },
+  {
+   "q": "a3海報印刷",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 9.0,
+   "old_pos": 33.25
+  },
+  {
+   "q": "海報印刷一張",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 16.0,
+   "old_pos": null
+  },
+  {
+   "q": "香港印刷公司",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 24.5,
+   "old_pos": 27.56
+  },
+  {
+   "q": "eprint易拉架",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 69.5,
+   "old_pos": 48.0
+  },
+  {
+   "q": "印海報一張",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 8.0,
+   "old_pos": 38.8
+  },
+  {
+   "q": "建興書簿印刷",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 8.0,
+   "old_pos": null
+  },
+  {
+   "q": "a2 印刷",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 10.0,
+   "old_pos": 4.0
+  },
+  {
+   "q": "印海報店",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 11.0,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架價錢",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 28.0,
+   "old_pos": 28.67
+  },
+  {
+   "q": "澳門易拉架size",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 33.0,
+   "old_pos": 32.0
+  },
+  {
+   "q": "易拉架即日",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 38.0,
+   "old_pos": 37.5
+  },
+  {
+   "q": "座枱易拉架",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 45.0,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 53.0,
+   "old_pos": 2.67
+  }
+ ],
+ "28d-sum": [
+  {
+   "q": "海報印刷",
+   "imps": 173,
+   "clicks": 2,
+   "pos": 16.25,
+   "old_pos": 19.42
+  },
+  {
+   "q": "印海報",
+   "imps": 127,
+   "clicks": 0,
+   "pos": 15.65,
+   "old_pos": 20.39
+  },
+  {
+   "q": "食品包裝印刷",
+   "imps": 123,
+   "clicks": 0,
+   "pos": 9.27,
+   "old_pos": 7.66
+  },
+  {
+   "q": "書刊印刷",
+   "imps": 97,
+   "clicks": 0,
+   "pos": 35.38,
+   "old_pos": 35.51
+  },
+  {
+   "q": "香港印刷公司",
+   "imps": 58,
+   "clicks": 0,
+   "pos": 21.0,
+   "old_pos": 21.08
+  },
+  {
+   "q": "車身廣告",
+   "imps": 57,
+   "clicks": 0,
+   "pos": 38.04,
+   "old_pos": 41.86
+  },
+  {
+   "q": "易拉架製作",
+   "imps": 42,
+   "clicks": 0,
+   "pos": 64.31,
+   "old_pos": 67.04
+  },
+  {
+   "q": "印書",
+   "imps": 41,
+   "clicks": 0,
+   "pos": 32.27,
+   "old_pos": 30.88
+  },
+  {
+   "q": "印刷公司",
+   "imps": 38,
+   "clicks": 3,
+   "pos": 35.47,
+   "old_pos": 35.16
+  },
+  {
+   "q": "即日急件",
+   "imps": 38,
+   "clicks": 0,
+   "pos": 14.26,
+   "old_pos": 15.12
+  },
+  {
+   "q": "食品包裝訂製",
+   "imps": 36,
+   "clicks": 0,
+   "pos": 15.94,
+   "old_pos": 13.86
+  },
+  {
+   "q": "貼紙訂製",
+   "imps": 34,
+   "clicks": 0,
+   "pos": 27.71,
+   "old_pos": 25.95
+  },
+  {
+   "q": "摺頁傳單",
+   "imps": 29,
+   "clicks": 0,
+   "pos": 29.38,
+   "old_pos": 25.58
+  },
+  {
+   "q": "摺頁印刷",
+   "imps": 27,
+   "clicks": 0,
+   "pos": 33.37,
+   "old_pos": 34.28
+  },
+  {
+   "q": "校 簿 印刷",
+   "imps": 25,
+   "clicks": 0,
+   "pos": 19.44,
+   "old_pos": 25.12
+  },
+  {
+   "q": "印海報一張",
+   "imps": 23,
+   "clicks": 1,
+   "pos": 29.65,
+   "old_pos": 33.19
+  },
+  {
+   "q": "a1 印刷 即日",
+   "imps": 17,
+   "clicks": 0,
+   "pos": 6.0,
+   "old_pos": 7.05
+  },
+  {
+   "q": "學校印刷",
+   "imps": 16,
+   "clicks": 0,
+   "pos": 41.12,
+   "old_pos": 40.29
+  },
+  {
+   "q": "易拉架印刷",
+   "imps": 15,
+   "clicks": 0,
+   "pos": 45.67,
+   "old_pos": 52.0
+  },
+  {
+   "q": "a2 印刷 即日",
+   "imps": 14,
+   "clicks": 3,
+   "pos": 3.07,
+   "old_pos": 2.9
+  },
+  {
+   "q": "a2 印刷",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 6.4,
+   "old_pos": 5.73
+  },
+  {
+   "q": "易拉架即日",
+   "imps": 10,
+   "clicks": 0,
+   "pos": 35.9,
+   "old_pos": 35.67
+  },
+  {
+   "q": "a3海報印刷",
+   "imps": 9,
+   "clicks": 0,
+   "pos": 25.0,
+   "old_pos": 33.29
+  },
+  {
+   "q": "印刷 即日",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 7.88,
+   "old_pos": 26.38
+  },
+  {
+   "q": "易拉架尺寸",
+   "imps": 8,
+   "clicks": 0,
+   "pos": 38.0,
+   "old_pos": 41.4
+  },
+  {
+   "q": "食品包裝材質",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 4.67,
+   "old_pos": null
+  },
+  {
+   "q": "海報印刷一張",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 9.67,
+   "old_pos": 10.29
+  },
+  {
+   "q": "車身廣告貼紙",
+   "imps": 6,
+   "clicks": 0,
+   "pos": 26.33,
+   "old_pos": 30.6
+  },
+  {
+   "q": "車身廣告設計",
+   "imps": 5,
+   "clicks": 0,
+   "pos": 38.0,
+   "old_pos": 38.0
+  },
+  {
+   "q": "易拉架",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 15.25,
+   "old_pos": 2.67
+  },
+  {
+   "q": "易拉架價錢",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 28.5,
+   "old_pos": 28.67
+  },
+  {
+   "q": "澳門a3海報印刷",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 36.0,
+   "old_pos": null
+  },
+  {
+   "q": "觀塘易拉架",
+   "imps": 4,
+   "clicks": 0,
+   "pos": 56.5,
+   "old_pos": 56.5
+  },
+  {
+   "q": "校簿",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 10.33,
+   "old_pos": 10.33
+  },
+  {
+   "q": "澳門易拉架尺寸",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 28.33,
+   "old_pos": 26.5
+  },
+  {
+   "q": "eprint易拉架",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 62.33,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架訂製",
+   "imps": 3,
+   "clicks": 0,
+   "pos": 65.0,
+   "old_pos": 63.5
+  },
+  {
+   "q": "印海報價錢",
+   "imps": 2,
+   "clicks": 1,
+   "pos": 7.0,
+   "old_pos": 7.0
+  },
+  {
+   "q": "急件印刷",
+   "imps": 2,
+   "clicks": 1,
+   "pos": 7.0,
+   "old_pos": null
+  },
+  {
+   "q": "a2海報印刷",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 11.5,
+   "old_pos": 9.0
+  },
+  {
+   "q": "建興書簿印刷",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 13.5,
+   "old_pos": null
+  },
+  {
+   "q": "チラシ 印刷 即日",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 32.5,
+   "old_pos": 30.33
+  },
+  {
+   "q": "澳門易拉架size",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 32.5,
+   "old_pos": null
+  },
+  {
+   "q": "易拉架size",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 46.0,
+   "old_pos": 46.0
+  },
+  {
+   "q": "roll up banner printing near me",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 51.0,
+   "old_pos": 51.0
+  },
+  {
+   "q": "座枱易拉架",
+   "imps": 2,
+   "clicks": 0,
+   "pos": 57.5,
+   "old_pos": 67.0
+  },
+  {
+   "q": "a2海報印刷價格",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 1.0,
+   "old_pos": 1.0
+  },
+  {
+   "q": "印刷公司推薦",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 3.0,
+   "old_pos": 3.0
+  },
+  {
+   "q": "大型海報印刷",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 9.0,
+   "old_pos": 9.0
+  },
+  {
+   "q": "易拉架 size",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 10.0,
+   "old_pos": 10.0
+  },
+  {
+   "q": "印海報店",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 11.0,
+   "old_pos": null
+  },
+  {
+   "q": "a0 印刷 即日",
+   "imps": 1,
+   "clicks": 0,
+   "pos": 12.0,
+   "old_pos": 12.0
+  }
+ ]
+}

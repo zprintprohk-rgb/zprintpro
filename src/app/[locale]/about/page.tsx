@@ -33,7 +33,7 @@ export async function generateMetadata({
 
 const translations = {
   'zh-hk': {
-    metaTitle: '關於智印港 | 香港專業印刷服務 | 15年經驗服務1000+企業',
+    metaTitle: '關於智印港 | 香港印刷公司推薦 | 深圳工廠直送 · 15年經驗',
     metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',
     h1: '關於智印港 ZprintPro',
     subtitle: '扎根香港超過15年，專注高品質印刷服務',
