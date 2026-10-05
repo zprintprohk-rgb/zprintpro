@@ -1,0 +1,10 @@
+{
+  "urls": [
+    { "name": "cal-en-aeo", "url": "https://zprintpro.com/en/category/calendars/", "must": ["standard wall calendar", "2027 custom calendars"], "not": [] },
+    { "name": "cal-zh-aeo", "url": "https://zprintpro.com/zh-hk/category/calendars/", "must": ["座檯月曆", "訂製月曆幾多本起印"], "not": [] },
+    { "name": "doujin-ja-aeo", "url": "https://zprintpro.com/ja/category/japan-doujin/", "must": ["コミケの印刷品は何部から"], "not": [] },
+    { "name": "pack-ja-aeo", "url": "https://zprintpro.com/ja/category/packaging/", "must": ["クラフト紙のパッケージ印刷"], "not": [] },
+    { "name": "books-zh-aeo", "url": "https://zprintpro.com/zh-hk/category/books/", "must": ["膠裝書印刷價格", "書刊印刷同印書"], "not": [] },
+    { "name": "rp-zh-aeo", "url": "https://zprintpro.com/zh-hk/category/red-packets/", "must": ["利是封訂製幾多個起"], "not": [] }
+  ]
+}
