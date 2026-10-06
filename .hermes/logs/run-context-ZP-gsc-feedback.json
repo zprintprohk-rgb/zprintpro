@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-09-30 22:43:11",
+  "generated_at": "2026-10-06 22:43:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "4fdbaf58ec3a7f42",
-    "day": "2026-09-30",
+    "this_run_key": "7f425401b05a5b1b",
+    "day": "2026-10-06",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -25,7 +25,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-09-22 22:45:00"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-01 13:57:18"
       },
       {
         "name": "lane_status_available",
@@ -41,19 +41,19 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 24232,
-    "acquired_at": "2026-09-30 22:43:11",
-    "acquired_ts": 1790779391.9357803,
+    "pid": 30992,
+    "acquired_at": "2026-10-06 22:43:02",
+    "acquired_ts": 1791297782.9107344,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-gsc-feedback-20260922T224500",
+      "run_id": "ZP-gsc-feedback-20261001T135718",
       "lane": "ZP-gsc-feedback",
       "trigger": "schtasks",
-      "fired_at": "2026-09-22 22:45:00",
-      "ended_at": "2026-09-22 22:45:00",
-      "idempotency_key": "953671dd8224d707",
+      "fired_at": "2026-10-01 13:57:18",
+      "ended_at": "2026-10-01 13:57:18",
+      "idempotency_key": "ca0331a1e1a33e04",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -62,42 +62,24 @@
       "guard": {
         "ok": true
       },
-      "report": "NONE",
-      "files": [],
+      "report": ".hermes/logs/2026-09-30-gsc-feedback.md",
+      "files": [
+        ".hermes/industry-keyword-matrix.json"
+      ],
       "pushed": true,
-      "head": "2fd51c98",
+      "head": "72962519",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-09-18-gsc-feedback.md",
-    "delivered_files_from_report": []
+    "latest_report": ".hermes/logs/2026-09-30-gsc-feedback.md",
+    "delivered_files_from_report": [
+      ".hermes/logs/2026-09-30-gsc-feedback.md",
+      ".hermes/logs/2026-09-30-gsc-suggested-src-fixes.md",
+      ".hermes/industry-keyword-matrix.json (新增 gsc_feedback_2026_09_30 block + 3 处 last_updated 元数据)",
+      "GSC数据/index.json (9/18+9/29 档登记 + 诚实 STALE 状态)"
+    ]
   },
   "sibling_lanes": [],
-  "retry_queue": [
-    {
-      "kind": "UNRESOLVED_DAY",
-      "day": "2026-09-17",
-      "status": "STALE",
-      "notes": [
-        "ran but no report file dated 2026-09-17"
-      ]
-    },
-    {
-      "kind": "UNRESOLVED_DAY",
-      "day": "2026-09-21",
-      "status": "STALE",
-      "notes": [
-        "ran but no report file dated 2026-09-21"
-      ]
-    },
-    {
-      "kind": "UNRESOLVED_DAY",
-      "day": "2026-09-22",
-      "status": "STALE",
-      "notes": [
-        "ran but no report file dated 2026-09-22"
-      ]
-    }
-  ],
+  "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
