@@ -100,6 +100,39 @@ const tsData = loadTsFromText(tsText);
 const tsKeys = Object.keys(tsData);
 console.log(`[gen] ts 现 key 数: ${tsKeys.length}`);
 
+/* ---------- 漂移闸 (B1.5 教训 2026-10-06): CSV title 列 vs ts 现值 强制同步检查 ----------
+ * 事故苗头: CSV title 列 9/21 后未同步 ts 手改优质版, 直接 --apply 会把 71 块 title
+ * 回退成劣质模板 (MOQ 篡改 / 品类错位). 门童 #27 拦截救场.
+ * 规则: 每次运行强制检查; drift>0 时 --apply 拒绝 (exit 4) 除非显式 --allow-drift.
+ */
+const ALLOW_DRIFT = process.argv.includes('--allow-drift');
+function tsBlockTitles(slug) {
+  const i = tsText.indexOf(`"${slug}": {`);
+  if (i < 0) return null;
+  const j = tsText.indexOf('\n  "', i + 4);
+  const seg = tsText.slice(i, j > 0 ? j : tsText.length);
+  return [...seg.matchAll(/"title":\s*"((?:[^"\\]|\\.)*)"/g)].map((m) => m[1]).slice(0, 3);
+}
+const drifts = [];
+for (const slug of Object.keys(csvEntries)) {
+  const t = tsBlockTitles(slug);
+  if (!t || t.length !== 3) continue;
+  const c = csvEntries[slug];
+  const csvT = [c.seo['zh-hk'].title, c.seo.en.title, c.seo.ja.title];
+  if (csvT[0] !== t[0] || csvT[1] !== t[1] || csvT[2] !== t[2]) {
+    drifts.push({ slug, csv: csvT, ts: t });
+  }
+}
+if (drifts.length) {
+  console.error(`[gen] ⚠️ 漂移 WARN: ${drifts.length} 行 CSV title 列 ≠ ts 现值 (回退事故风险)`);
+  for (const d of drifts.slice(0, 8)) console.error(`[gen]   - ${d.slug}: CSV="${d.csv[0].slice(0,40)}" ts="${d.ts[0].slice(0,40)}"`);
+  console.error('[gen] 修法: python -X utf8 .hermes/b15-title-writeback.py 回写后重跑');
+  if (APPLY && !ALLOW_DRIFT) { console.error('[gen] 断言 FAIL: --apply 遇 title 漂移, 拒绝 (或显式 --allow-drift 确认)'); process.exit(4); }
+} else {
+  console.log('[gen] 漂移检查: CSV title 与 ts 现值一致 (0 漂移)');
+}
+/* ---------- 漂移闸 end ---------- */
+
 /* ---------- 合并模型: 覆盖域取 CSV, body/faqs 取 ts, ts-only 整体保留 ---------- */
 const merged = {};
 for (const slug of tsKeys) {

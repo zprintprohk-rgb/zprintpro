@@ -1,0 +1,9 @@
+{
+  "urls": [
+    { "name": "sku-waterproof-zh", "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/", "must": ["防水貼紙 可移貼紙 戶外抗UV 10個起 HK$0.22起"], "not": [] },
+    { "name": "sku-foil-rp-ja", "url": "https://zprintpro.com/ja/product/foil-red-packets/", "must": ["箔押しポチ袋"], "not": ["年賀状"] },
+    { "name": "sku-wall-cal-en", "url": "https://zprintpro.com/en/product/wall-calendars/", "must": ["1 MOQ $0.40 Bulk 300+"], "not": ["1000"] },
+    { "name": "sku-doujin-ja", "url": "https://zprintpro.com/ja/product/doujinshi-printing/", "must": ["コミケ対応 10冊〜"], "not": [] },
+    { "name": "sku-yearbook-en", "url": "https://zprintpro.com/en/product/graduation-yearbook/", "must": ["1 MOQ", "$10.35"], "not": [] }
+  ]
+}
