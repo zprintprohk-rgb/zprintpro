@@ -33,3 +33,5 @@
 | 2026-10-02 21:29:55 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
 | 2026-10-03 21:19:08 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
 | 2026-10-04 21:18:31 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
+| 2026-10-06 22:55:14 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-06-gsc-feedback.md` | .hermes/industry-keyword-matrix.json | ✅ push |
+| 2026-10-07 06:43:12 | ZP-cron-watchdog | ⚠️ 7 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | MISSING ZP-weekly-meta | MISSING ZP-blog-deepfix | MISSING ZP-monthly-matrix | — |
