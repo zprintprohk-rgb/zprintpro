@@ -156,7 +156,11 @@ for (const slug of tsKeys) {
 
 /* ---------- 外科式块替换 ---------- */
 const keyRe = /^(?: {2})?"([a-z0-9-]+)": \{/gm;
-const anchors = [...tsText.matchAll(keyRe)].map((m) => ({ slug: m[1], idx: m.index, indent: m[0].match(/^ */)[0].length }));
+// 锚点必须是 ts 顶层 key (SKU slug); 块内嵌套键如 "name": {/"seo": {/"zh-hk": { 缩进恰为 2 空格时
+// 会被 keyRe 误捕, 导致 splice end 缩短到块内 → 二次运行双块/语法崩 (2026-10-07 a2 批实爆).
+const anchors = [...tsText.matchAll(keyRe)]
+  .map((m) => ({ slug: m[1], idx: m.index, indent: m[0].match(/^ */)[0].length }))
+  .filter((a) => tsKeys.includes(a.slug));
 anchors.push({ slug: '__END__', idx: tsText.indexOf('\n};') });
 let newText = tsText;
 let replaced = 0, byteChanged = 0;

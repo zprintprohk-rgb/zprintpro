@@ -27,7 +27,7 @@ const metaMap: Record<string, { title: string; desc: string; keywords: string }>
   'en': {
     title: 'China Catalog Printing | 10 MOQ + Shenzhen Factory + DHL 2-4 Days | ZprintPro',
     desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
-    keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china,magazine printing china,brochure printing china,lookbook printing china',
+    keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china,magazine printing china,brochure printing china,lookbook printing china,zine printing,short run zine printing,zine printing no minimum',
   },
   'ja': {
     title: '中国カタログ印刷｜10部から・深セン工場・DHL 2-4日｜ZprintPro',
