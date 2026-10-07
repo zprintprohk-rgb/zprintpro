@@ -2597,29 +2597,29 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "同人誌印刷 10本起印 | Comiket前24小時特急對應 | 智印港",
         "description": "同人誌印刷 10 本起印，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天。A5/B5 標準尺寸,封面彩色、內頁單色,10 本起印,Comiket 會期前 24 小時特急對應。自營工場 DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
         "h1": "同人誌印刷 - Comiket / 即售會 / 創作展特化服務",
-        "keywords": ["同人誌印刷", "同人誌", "Comiket 印刷", "即售會印刷", "同人活動", "A5 同人誌", "少數量印刷", "同人誌急件"],
+        "keywords": ["同人誌印刷","同人誌","Comiket 印刷","即售會印刷","同人活動","A5 同人誌","少數量印刷","同人誌急件","同人誌 印刷","同人誌製作","同人本印刷","漫畫印刷","小批量同人誌","中綴じ同人誌","自費出版","10本起印","即日同人誌","騎馬釘同人誌"],
         "body": "同人誌是同人印刷中最具分量的作品，一本內容紮實的刊物，既是創作者心血的結晶，也是コミケ等即售會攤位上的主角。這套同人誌印刷服務專為即售會與創作活動優化，標準配置為封面彩色、內頁單色，亦可升級至封面內頁全彩色，滿足不同預算與內容需求。10 本起印的低起訂量，讓個人社團以至新手作者都能輕鬆下單，先做少量測試反應，再決定會場完售後是否補印。\n\n尺寸提供 A5（148×210mm）與 B5（182×257mm）兩種主流規格，A4 亦可選配；內頁採用 FSC 認證道林紙 90g，封面為銅版紙 90g，觸感與翻頁手感都經過考量。封面以柯式四色印刷呈現插圖細節，內頁則按頁數與預算選用數碼或柯式印刷。裝訂可選膠裝或騎馬釘（8-64 頁），需要書脊封面時亦有對應處理，讓刊物放在書架上更顯完整。接近コミケ會期前 24 小時的特急対応，完售補印或臨時追加都來得及。\n\n交稿時請提供完整頁面順序的檔案，CMYK 色彩模式並預留出血位；封面與內頁需分別提供高解像度檔案，跨頁設計請特別標示中線位置。請註明尺寸、頁數、裝訂方式（膠裝或騎馬釘）以及印刷版本（內頁單色或全彩），我們會據此安排製程並進行對稿，確認版面無誤後才開始印刷。\n\n最低起印量為 10 本，適合個人社團小量試印或會場首發。單價由 ¥7,500 起／部，頁數、尺寸、裝訂與彩色範圍都會影響最終報價，批量訂購歡迎查詢報價。"
       },
       "en": {
         "title": "Doujinshi Printing Comiket | 10 MOQ | USA | ZprintPro",
         "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket | Free Design | 100 MOQ",
         "h1": "Doujinshi Printing for Comiket & Doujin Events",
-        "keywords": ["doujinshi printing", "comiket", "doujinshi", "doujin event", "self publishing", "A5 booklet", "low MOQ printing", "rush printing"],
+        "keywords": ["doujinshi printing","comiket","doujinshi","doujin event","self publishing","A5 booklet","low MOQ printing","rush printing","doujin printing","comiket printing","fanzine printing","artist alley printing","self publish manga","small batch doujinshi","saddle stitch booklet","comic market printing","doujinshi USA","10 MOQ"],
         "body": "Doujinshi printing is built around the needs of creators heading to Comiket, doujin events, and creative exhibitions — dependable quality, honest lead times, and a low barrier to entry. A standard run pairs a full-color cover with a monochrome interior, and a premium upgrade switches the interior to full color as well.\n\nFor individual circles and first-time authors, the 10-book minimum makes your first print run low-risk. Plan a standard A5 or B5 book, or choose A4 as an option, and keep the cover offset 4-color for rich, consistent color while the interior prints on-demand or offset depending on volume and schedule.\n\nTiming is everything at a doujin event, so this doujinshi printing service includes 24-hour rush production before Comiket for last-minute corrections, reprints, or completely new books. The same flexibility serves global fan communities beyond Japan, letting creators sell at overseas conventions and through online storefronts without holding a large inventory.\n\nBooks use FSC-certified fine paper at 90g or coated paper at 90g for the cover. Standard sizes are A5 (148×210mm) and B5 (182×257mm), with A4 optional, finished with perfect binding or saddle stitching for 8-64 pages, plus a spine cover.\n\nBooks start at ¥7,500 each with a minimum order of 10 books. Production at our Asia factory ships via DHL Express to Japan in 2-4 business days, and 24-hour rush service is available before Comiket for late reprints. Every order includes a free digital proof, no setup fees, and a 30-second AI quote, with FSC-certified paper and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: Which sizes can I choose?** A5 (148×210mm) and B5 (182×257mm) are standard, with A4 available as an option.\n\n**Q2: What binding options exist?** Perfect binding or saddle stitching for 8-64 pages, with a spine cover.\n\n**Q3: Can beginners really order just 10 books?** Yes, the minimum order is 10 books, which suits individual circles and first runs.\n\nReady to print your book? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 10冊〜 小ロット 短納期 | ZprintPro",
         "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro",
         "h1": "同人誌印刷 コミケ・即売会対応",
-        "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
+        "keywords": ["同人誌印刷","コミケ","同人誌","即売会","印刷","A5同人誌","少部数印刷","コミケ前特急","即売会印刷","同人誌 印刷","コミケ 印刷","コミケ 準備","同人誌 作成","中綴じ 印刷","小ロット 同人誌","短納期 同人誌","10冊から","即日 同人誌"],
         "body": "コミケ・即売会・創作イベントに最適化された同人誌印刷サービス。表紙フルカラー + 本文モノクロの標準構成から、表紙・本文ともにフルカラーのプレミアム構成まで対応します。本文 10 部からの少部数対応で、個人サークルや初心者作家でも気軽に発注できます。\n\nコミケ 印刷のピーク時期には 24 時間特急対応も可能で、在庫切れによる追加印刷も迅速に対応します。即売会の直前に「部数が足りない」と気づいても、短納期での再印刷を依頼できるので安心です。A5（148×210mm）と B5（182×257mm）の標準サイズに加え、A4 サイズもオプションで選択できます。\n\n表紙のクオリティは作品の第一印象を左右します。オフセット 4色印刷による表紙フルカラーで、表紙イラストの発色を忠実に再現します。本文はオンデマンドまたはオフセット印刷に対応し、モノクロページの量に応じて最適な製法を選べます。アジアの自社工場から DHL Express で日本へ直送するため、品質と納期の両面で安心です。\n\n表紙には FSC 認証の上質紙 90g またはコート紙 90g を使用。加工は無線綴じ、中綴じ（8〜64 ページ）、背表紙付きなどに対応します。FSC 認証の紙材と ISO 12647 の色管理のもと、出荷前に 1 冊ずつ検品を行います。\n\n価格は ¥7,500〜/部 から、最小注文は 10 部。大量注文は段階割引をご利用いただけます。製造は標準で 3〜5 営業日、急ぎは 24〜48 時間以内に対応します。完成品は DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\n同人誌は 10 部からご注文いただけます。ZprintPro の一般的な最小注文は 50〜100 個/部/枚です。部数が多くなるほど割引が大きくなります。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n製造は標準 3〜5 営業日、急ぎは 24〜48 時間以内で対応可能です。コミケや即売会の直前でも、追加印刷のご相談に柔軟に対応します。完成品は DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n**Q3: 入稿データの仕様を教えてください。**\n印刷データは AI / PDF / EPS 形式に対応。300DPI 以上、3mm の塗り足しを推奨し、フルカラーは CMYK カラーモード、フォントはアウトライン化してください。\n\n新刊の入稿はお早めにご相談ください。WhatsApp でのお問い合わせから 30 秒の AI 即時見積もり、データ入稿、最終確認、製造・品質検査、DHL 配送まで、日本語対応スタッフがワンストップでサポートします。ZprintPro で、あなたの作品を最高の状態で届けましょう。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "同人誌印刷-Comiket対応-A5-B5尺寸",
-      "en": "doujinshi-printing-comiket-a5-b5-format",
-      "ja": "同人誌印刷-コミケ対応-A5-B5サイズ"
+      "zh-hk": "同人誌印刷 10本起印 | 香港同人誌印刷 中綴じ 騎馬釘 | 智印港",
+      "en": "Doujinshi Printing 10 MOQ | Saddle Stitch Comic Book | ZprintPro",
+      "ja": "同人誌印刷 10冊〜 | 中綴じ コミケ対応 | ZprintPro"
     }
   },
   "postcard-set": {
@@ -2633,29 +2633,29 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "明信片套裝 | 和紙風藝術紙 | 4套起 4小時打稿 | 智印港",
         "description": "明信片套裝印刷，和紙風藝術紙 4-8 張入，動漫角色 / 插畫收藏 / 簽名會周邊適用。105×148mm 標準尺寸，雙面印刷，OPP 封套個別保護。4 套起印，免費 4 小時打稿，3-5 個工作天完成，DHL Express 直送日本 2-4 個工作天，30 秒 AI 報價。",
         "h1": "明信片套裝 | 和紙風藝術紙 簽名會周邊",
-        "keywords": ["明信片套裝", "和紙風明信片", "ポストカード", "推し活周邊", "VTuber 周邊", "插畫周邊", "同人周邊", "簽名會周邊"],
+        "keywords": ["明信片套裝","和紙風明信片","ポストカード","推し活周邊","VTuber 周邊","插畫周邊","同人周邊","簽名會周邊","明信片印刷","明信片訂製","和紙明信片","藝術明信片","風景明信片","文創明信片","套裝明信片","4套起印","郵寄明信片"],
         "body": "同人創作者準備コミケ等即售會時，明信片套裝往往是攤位上最先完售的週邊之一。這套以和紙風藝術紙製作的明信片套裝，專為推し角色、VTuber 插畫及簽名會周邊而設，和風、古風以至 ACG 風格的作品都適合。對於經營同人印刷的個人社團，四件起印的門檻十分親民，可以在有限的攤位空間內展示多款插圖，讓讀者一眼就記住作品的畫風與特色。\n\n明信片採用標準 A6 尺寸 105×148mm，正面印上主插圖，背面自由設計文字、作者簽名或社交媒體帳號，雙面印刷讓一張卡片同時擔起宣傳與收藏兩種功能。和紙風藝術紙 180g 配合雙面霧面 PP 貼膜，手感細緻之餘亦不易刮花，適合印製簽名會場派發的紀念卡或收藏用限定贈品。每張均以 OPP 獨立袋包裝，再集合成 OPP 袋，防塵防污，即使長時間陳列於攤位亦能保持乾淨整潔。\n\n交稿時請提供 CMYK 色彩模式的印刷檔案，並於四邊預留出血位，插圖建議以高解像度輸出，重要文字與圖案與邊緣保持足夠距離，避免裁切誤差。我們接受數碼或柯式四色印刷，可按張數多寡選擇合適製程；雙面印刷需分別提供正面與背面檔案，並註明每款的張數與包裝方式，方便我們直接安排 OPP 個別包裝及集合包裝。\n\n本產品以 4 件為最低起印量，適合個人社團小量試水或為會場預備補貨。單價由 ¥750 起／枚，訂量增加價格會更優惠，有意批量訂製收藏用明信片套裝的話，歡迎向我們查詢報價。"
       },
       "en": {
         "title": "Washi Postcard Sets | 4 MOQ | Free Ship | ZprintPro",
         "description": "Washi-style postcard sets in 4-8 piece collections for character goods, illustration and signature events. 105×148mm, double-sided print with OPP sleeves. 4 MOQ, free design support, 3-5 day production, free US shipping over $99. | ZprintPro",
         "h1": "Washi-style Postcard Sets | 4-8 Piece Collections",
-        "keywords": ["postcard set", "postcards", "character postcards", "oshi-katsu", "VTuber", "illustration goods", "doujin merchandise", "signature event"],
+        "keywords": ["postcard set","postcards","character postcards","oshi-katsu","VTuber","illustration goods","doujin merchandise","signature event","postcard printing","custom postcards","washi postcards","art postcards","postcard sets","travel postcards","photo postcards bulk","4 MOQ","marketing postcards"],
         "body": "Postcard sets are the collectible heart of many doujin tables: a 4-8 piece collection of the same character, series, or illustration style gives fans a reason to buy more than one. Printed on washi-style art paper, these cards carry a Japanese aesthetic that suits traditional and hand-drawn artwork beautifully, whether they accompany a doujinshi printing project or stand alone.\n\nDoujin circles sell postcard sets alongside their doujinshi printing run as an entry-price item for fans, and signature-event giveaways turn them into keepsakes when artists sign the back. Because printing is double-sided, the front carries the illustration while the back is free for text, a signature, or a small logo — a detail collectors notice.\n\nVTuber and illustration-focused creators use the same sets for online storefronts, convention exclusives, and bonus items inside merchandise orders. Retail, cross-border e-commerce, beauty, education, wedding, and brand-activation projects also use postcard sets for mailers, inserts, and thank-you notes.\n\nEach card uses washi-style art paper at 180g with double-sided matte PP lamination, in the 105×148mm A6 standard postcard size. Printing is on-demand or offset 4-color CMYK, so soft watercolor art and bold graphic designs both reproduce faithfully, with individual OPP sleeve packaging plus a collection OPP bag.\n\nCards start at ¥750 each with a minimum order of 4 sets. Our Asia factory produces and ships via DHL Express to Japan in 2-4 business days, and the 24-hour rush service before Comiket covers last-minute quantities. You get a free digital proof, a free design mockup, and a 30-second AI quote with no setup fees, from ISO 9001 certified production with FSC-certified paper and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: How many cards are in a set?** Each set contains 4-8 cards, chosen to fit your collection format.\n\n**Q2: Can the back of the card carry text or a signature?** Yes — double-sided printing leaves the back free for text, signatures, or a logo.\n\n**Q3: How are the cards packed?** Each card comes in an OPP sleeve, with a collection OPP bag for the full set.\n\nReady to order your postcard sets? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
         "title": "ポストカードセット｜和紙風 4-8枚｜4セット〜｜ZprintPro",
         "description": "ポストカードセットのオーダー印刷、和紙風アート紙 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。4セット〜、無料デザインサポート、3-5 営業日納品、DHL Express 日本直送 2-4 日。| ZprintPro",
         "h1": "ポストカードセット 4-8 枚 和紙風",
-        "keywords": ["ポストカードセット", "ポストカード", "絵葉書", "推し活", "VTuber", "イラスト グッズ", "同人グッズ", "サイン会"],
+        "keywords": ["ポストカードセット","ポストカード","絵葉書","推し活","VTuber","イラスト グッズ","同人グッズ","サイン会","ポストカード 印刷","ポストカード 作成","和紙 ポストカード","アート ポストカード","絵葉書 印刷","観光 ポストカード","4セットから","オリジナル ポストカード"],
         "body": "推しキャラ・VTuber のイラストや、サイン会での配布用に最適なポストカードセット。4〜8 枚のセット販売に対応し、コレクション性の高いアイテムとして人気です。和紙風アート紙を採用しているので、和風・古風テイストの作品にも自然にマッチします。\n\n両面印刷に対応しており、表面にイラスト、裏面にテキストやサインを自由にデザインできます。同人誌の特典として付ける場合や、イベントでの配布物としてまとめて発注する場合にも、同人グッズ 印刷のラインナップとして気軽にご利用いただけます。コミケなどの即売会では、価格が手頃で手に取りやすい定番グッズです。\n\nOPP スリーブでの個別包装に対応しており、傷や汚れからイラストを保護。そのまま販売用に陳列できるので、イベント当日の作業もスムーズです。全点を集合 OPP 袋にまとめることも可能で、発送時の管理も簡単になります。\n\n材質は和紙風アート紙 180g で、両面マット PP ラミネート加工を施し、手触りと耐久性を両立。サイズは 105×148mm の A6 標準ポストカード。印刷方式はオンデマンド / オフセット 4色（CMYK）で、イラストの細かな色味まで忠実に再現します。\n\n価格は ¥750〜/枚 から、最小注文は 4 枚。数量割引にも対応しています。納期は標準 3〜5 営業日、急ぎの場合は 24〜48 時間以内です。仕上がり後、DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\nポストカードは 4 枚からご注文いただけます。ZprintPro の商品の最小注文は、多くの場合 50〜100 個/部/枚です。まとめての発注は段階割引の対象です。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n標準納期 3〜5 営業日、急ぎの場合は 24〜48 時間以内で対応可能です。イベント配布に間に合わせたい場合は、お早めにご相談ください。DHL・FedEx で日本全国へ 2〜4 日でお届けいたします。\n**Q3: 入稿データの仕様を教えてください。**\nデータは AI / PDF / EPS 形式、300DPI 以上、3mm の塗り足しを推奨します。カラー印刷は CMYK、フォントはアウトライン化してください。\n\nイラストをポストカードにして、ファンに届けませんか。WhatsApp でのお問い合わせから 30 秒の AI 即時見積もり、データ入稿、内容確認、製造・検品、DHL 配送まで、日本語対応スタッフがワンストップでサポートします。ZprintPro で、あなたの作品を美しいカードに仕上げましょう。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "明信片套裝-和紙風-105x148mm | 香港印刷 | 智印港",
-      "en": "postcard-set-washi-style-105x148mm",
-      "ja": "ポストカードセット-和紙風-105x148mm"
+      "zh-hk": "明信片套裝 和紙風 300g | 香港明信片印刷 4套起 | 智印港",
+      "en": "Washi Postcard Sets 4 MOQ | Custom Art Postcards | ZprintPro",
+      "ja": "ポストカードセット 和紙風 300g | 4セットから | ZprintPro"
     }
   },
   "eco-tote-bag": {
@@ -2669,35 +2669,35 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "環保托特袋 | 100%有機棉 | 10件起 ESG禮贈品 | 智印港",
         "description": "環保托特袋印刷，100% 有機棉布料，絲網 / DTG 印刷支援，企業活動、展會、ESG 禮贈品專用。FSC 認證布料，可收納 A4 尺寸。10 件起印，免費 1 小時打稿，5-7 個工作天交貨，滿 HK$500 免費順豐，30 秒 AI 報價。",
         "h1": "環保托特袋 | 100%有機棉 企業活動周邊",
-        "keywords": ["環保托特袋", "有機棉托特袋", "FSC 認證布料", "推し活周邊", "Comiket 印刷", "ESG 禮贈品", "企業活動周邊", "托特袋印刷"],
+        "keywords": ["環保托特袋","有機棉托特袋","FSC 認證布料","推し活周邊","Comiket 印刷","ESG 禮贈品","企業活動周邊","托特袋印刷","帆布袋印刷","有機棉袋","托特袋訂製","環保袋印刷","ESG 禮品","文創布袋","活動赠品袋","10件起印","棉布袋訂做"],
         "body": "同人創作者參與コミケ或其他即售會物販時，除了紙本週邊，托特袋往往是吸引人流、延續品牌記憶的實用選擇。這款環保托特袋採用 100% 有機棉帆布，屬 FSC 認證布料，正好配合現時重視 ESG 與永續發展的消費趨勢。對於經營同人印刷的小型社團，可把它當作攤位上的主打商品，亦適合企業活動或禮贈品現場派發。\n\n袋身尺寸 38×42cm，側寬 10cm，足以收納 A4 文件與同人誌，讀者購入後日常購物、上學通勤都合用，實用性高自然更樂意帶着出門。印刷提供絲網印刷（1-3 色）與 DTG 全彩印刷兩種選擇：前者線條利落，能清晰呈現 logo 與簡單插圖；後者支援漸層及相片效果，適合複雜的全彩繪圖。加工可選內袋、底板加強或繡名字，讓袋身更耐用，同時提升贈品質感。\n\n交稿時請提供 CMYK 色彩模式的印刷檔案，絲網印刷每種顏色需獨立分色，並於稿面註明色號；DTG 全彩印刷則建議以高解像度的插圖或相片檔案入稿，以忠實還原漸層與光影細節。印刷位置與尺寸請清晰標示，如需繡名字或加內袋、底板等加工，請於下單時一併註明，方便我們安排對應工序。\n\n本產品最低起印量為 10 件，小批量需求同樣可以處理，適合個人社團試單或企業先行少量測試。單價由 ¥9,000 起／個，批量訂購或長期復購可獲更佳價格，歡迎查詢報價。"
       },
       "en": {
         "title": "Eco Tote Bag | 10 MOQ | Organic Cotton | ZprintPro",
         "description": "Organic cotton eco tote bags with silk/DTG printing for corporate events, trade shows and ESG merchandise. FSC-certified fabric, fits A4. 10 MOQ, free design support, 5-7 day production, free US shipping over $99. | ZprintPro",
         "h1": "Eco Tote Bag Organic Cotton | Oshi-katsu & Comiket",
-        "keywords": ["eco tote bag", "tote bag", "organic cotton", "oshi-katsu", "comiket", "ESG merchandise", "corporate gift", "FSC-certified"],
+        "keywords": ["eco tote bag","tote bag","organic cotton","oshi-katsu","comiket","ESG merchandise","corporate gift","FSC-certified","custom tote bags","organic cotton tote","canvas bag printing","eco friendly bags","ESG corporate gifts","tote bags bulk","custom printed tote","10 MOQ","reusable cotton bag"],
         "body": "Eco tote bags in 100% organic cotton give your brand a useful, everyday canvas — ideal for oshi-katsu outings, Comiket merchandise tables, and corporate gifting. The FSC-certified fabric supports the ESG and sustainability story brands want to tell, without compromising on strength or print quality.\n\nAt a doujin event, tote bags are the practical merch fans actually use: they carry their new doujinshi printing purchases, art prints, and badges home, and every bag in the crowd doubles as free advertising. Corporate teams order the same bags for gifting programs, staff kits, and event swag, while retail, cross-border e-commerce, beauty, education, wedding, and brand-activation campaigns use them as reusable takeaway packaging.\n\nThe print method follows the artwork. Silk screen printing in 1-3 colors delivers crisp logos and bold illustration, while DTG full-color printing handles gradients and photographic art with smooth tonal transitions. For oshi-katsu supporters, a printed favorite-character bag is a wearable statement that works at conventions, live events, and daily life alike — the same doujinshi printing community that shows up table after table.\n\nEach bag is made from 100% organic cotton or 12oz heavy canvas, sized 38×42×10cm with a 10cm gusset so it holds A4 documents and merchandise. Optional extras include an inner pocket, a reinforced base, and embroidered names.\n\nBags start at ¥9,000 each with a minimum order of 10 pieces. Our Asia factory ships via DHL Express to Japan in 2-4 business days, with 24-hour rush handling before Comiket. Orders include a free digital proof and a 30-second AI quote with no setup fees, and production is ISO 9001 certified using FSC-certified fabric and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: Which print method fits my artwork?** Silk screen (1-3 colors) is best for crisp logos, while DTG full-color suits gradients and photos.\n\n**Q2: Will an A4 folder fit inside?** Yes, the 38×42×10cm size with a 10cm gusset fits A4 items comfortably.\n\n**Q3: Can I order a small quantity?** Yes, the minimum order is 10 bags.\n\nReady to order your tote bags? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
       },
       "ja": {
         "title": "エコトートバッグ｜オーガニックコットン｜10個〜｜ZprintPro",
         "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "エコトートバッグ オーガニックコットン 推し活・コミケ",
-        "keywords": ["エコトートバッグ", "トートバッグ", "オーガニックコットン", "推し活", "コミケ", "ESG ノベルティ", "企業物販", "FSC 認証"],
+        "keywords": ["エコトートバッグ","トートバッグ","オーガニックコットン","推し活","コミケ","ESG ノベルティ","企業物販","FSC 認証","トートバッグ 印刷","エコバッグ オリジナル","トートバッグ 作成","SDGs グッズ","綿バッグ 印刷","10個から","コットンバッグ","イベント バッグ"],
         "body": "推し活・コミケ物販・企業ノベルティに最適なオーガニックコットン 100% のエコトートバッグ。FSC 認証のオーガニックコットン素材を使用し、ESG やサステナブルな取り組みを意識する企業にもおすすめです。シルクスクリーン印刷でロゴやイラストを鮮明に再現し、DTG フルカラー印刷ならグラデーションや写真データにも対応します。\n\n同人イベントでの物販グッズとしてはもちろん、展示会やポップアップストアでのノベルティ配布にも人気です。A4 サイズをそのまま収納できる実用的なサイズなので、お客様に日常使いしてもらえるアイテムとして、ブランドの露出を高められます。同人グッズ 印刷のラインナップとして、画集やバッジと合わせたセット販売にも対応します。\n\n印刷方法は用途に合わせて選択できます。1〜3 色のシルクスクリーン印刷はロゴ主体のデザインに最適で、大量生産でも安定した発色を実現します。DTG フルカラー印刷は、写真やグラデーションをそのままトートバッグに再現したい場合におすすめです。内ポケットや底板補強、名入れ刺繍などのオプション加工にも対応します。\n\n材質はオーガニックコットン 100% / 12oz の厚手キャンバス。サイズは 38×42×10cm（A4 収納可）で、マチが 10cm あるので収納力も十分です。印刷はシルクスクリーン印刷（1〜3 色）または DTG フルカラー印刷。FSC 認証の素材と ISO 12647 の色管理のもと、出荷前に品質検査を実施します。\n\n価格は ¥9,000〜/個 から、最小注文は 10 個。まとめ発注は段階割引の対象です。標準納期 3〜5 営業日、急ぎの場合は 24〜48 時間以内で対応します。お届けは DHL・FedEx で日本全国へ 2〜4 日です。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\nトートバッグは 10 個からご注文いただけます。ZprintPro のほかの商品は 50〜100 個/部/枚からの最小注文が目安です。大量注文は段階割引をご用意しています。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n納期は標準で 3〜5 営業日、急ぎは 24〜48 時間以内に対応可能です。イベントやキャンペーンに合わせた納品スケジュールにも対応します。お届けは DHL・FedEx で日本全国へ 2〜4 日です。\n**Q3: 入稿データの仕様を教えてください。**\n入稿データは AI / PDF / EPS 形式、300DPI 以上、3mm の塗り足しを推奨します。フルカラー印刷は CMYK カラーモードに統一し、フォントはアウトライン化してください。\n\nノベルティや物販グッズの制作は、まず WhatsApp でご相談ください。30 秒の AI 即時見積もりから、データ入稿・最終確認・製造・検品・配送まで、日本語対応のスタッフが丁寧にサポートします。ZprintPro で、環境にもおしゃれにも優しいオリジナルトートを作りましょう。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "環保托特袋-有機棉-12oz-帆布 | 香港印刷 | 智印港",
-      "en": "eco-tote-bag-organic-cotton-12oz-canvas",
-      "ja": "エコトートバッグ-オーガニックコットン-12oz"
+      "zh-hk": "環保托特袋 有機棉 12oz | 香港環保袋印刷 ESG 禮品 | 智印港",
+      "en": "Eco Tote Bag Organic Cotton 12oz | Custom Printed Cotton Bags | ZprintPro",
+      "ja": "エコトートバッグ オーガニックコットン 12oz | 綿バッグ印刷 | ZprintPro"
     }
   },
   "graduation-yearbook": {
     "name": {
-      "zh-hk": "香港畢業紀念冊",
-      "en": "Graduation Yearbooks",
+      "zh-hk": "畢業紀念冊",
+      "en": "Graduation Yearbook",
       "ja": "卒業記念アルバム"
     },
     "seo": {
@@ -2705,32 +2705,31 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "香港畢業紀念冊 — 騎馬釘 / 膠裝 / 精裝 1 本起 | 智印港",
         "description": "香港畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊定製，騎馬釘 / 膠裝 / 精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。智印港 15+ 年自有品牌。| 立即 WhatsApp 報價",
         "h1": "香港畢業紀念冊 — 1 本起印 騎馬釘 / 膠裝 / 精裝",
-        "keywords": ["畢業紀念冊", "校史特刊", "校友會刊", "社團特刊", "畢業紀念冊印刷", "膠裝精裝", "騎馬釘", "香港印刷", "DHL 全球配送", "FSC 認證"],
+        "keywords": ["畢業紀念冊","校史特刊","校友會刊","社團特刊","畢業紀念冊印刷","膠裝精裝","騎馬釘","香港印刷","DHL 全球配送","FSC 認證","畢業冊","校刊印刷","紀念冊訂製","畢業相冊","1本起印","精裝畢業冊"],
         "body": "每年畢業季，幼稚園至大學的畢業典禮都少不了一本能承載回憶的畢業紀念冊。畢業紀念冊按頁數與預算可選三種裝訂：騎馬釘適合跨頁照片居多的輕量冊，成本最為相宜；無線膠裝 PUR 適合較厚內容，書脊更可印上學校名稱；精裝則以灰板裱特種紙配燙金，帶收藏級的質感。無論是班級照片、師長題詞還是學校 logo 全頁，都能細緻呈現。\n\n除了畢業紀念冊，校史特刊、校友會刊與社團特刊同樣適合以冊頁形式製作，培訓機構、教會團契與補習社亦常以此記錄年度活動。一本精心設計的紀念冊既是校園回憶的載體，也是學校品牌形象的延伸；若校方同時需要證書印刷配合畢業頒獎禮，或想以月曆訂製向師生送上年度紀念品，把這些校園印刷項目一併規劃，畢業季的準備自然更從容。\n\n畢業紀念冊支援騎馬釘、無線膠裝 PUR 與精裝三種裝訂方式，支援班級照片、師長題詞與學校 logo 全頁排版。香港本地 48 小時交付，DHL 全球 2–4 天配送。\n\n畢業紀念冊以每本 HK$45–180 起計算，1 本起印，適合班級、年級或校友會規模的訂製；批量訂購可享更實惠的每本價格。"
       },
       "en": {
         "title": "Graduation Yearbook | 1 MOQ | From $10.35 | ZprintPro",
         "description": "Graduation Yearbook, hardcover & softcover binding. Free Design, 1 MOQ, Free Shipping $99+. 4-day USA delivery for schools. | ZprintPro",
         "h1": "Graduation Yearbook Printing — 1 MOQ · 3 Binding Options",
-        "keywords": ["graduation yearbook printing", "school anniversary publication", "alumni magazine", "yearbook binding", "perfect bound yearbook", "hardcover yearbook", "saddle stitch book", "FSC-certified", "Free Design Mockup", "Free Shipping"],
+        "keywords": ["graduation yearbook printing","school anniversary publication","alumni magazine","yearbook binding","perfect bound yearbook","hardcover yearbook","saddle stitch book","FSC-certified","Free Design Mockup","Free Shipping","custom yearbooks","school yearbook","alumni magazine printing","class reunion book","memory book printing","1 MOQ","leavers book"],
         "body": "The yearbook is the one print job a school cannot postpone — every graduate expects it at the ceremony. ZprintPro prints graduation yearbooks, school anniversary and alumni publications with three binding options, supporting class photos, faculty messages and school logos throughout, plus a free design mockup before production begins.\n\nHigh school and college yearbook committees collect hundreds of class photos and faculty messages into one volume, and our workflow takes them from layout to print. Saddle stitch suits a compact 32–80 page yearbook at the lowest cost, with spreads running across pages; perfect bound PUR covers 80–200 pages with a printable spine; and hardcover reaches 80–400 pages with grey board, art paper, foil stamping and archival quality for anniversary editions.\n\nAlumni associations and churches commission anniversary publications and reunion keepsakes on a recurring schedule, while training institutes and tutoring centers add year-end memento books alongside their term materials. Committees that already use our school exercise book printing for the classroom find the same calendar discipline here: confirm files before the season's peak so delivery lands before graduation day.\n\nYearbooks print with four-color accuracy on art paper, and the hardcover option builds a premium, archival feel from art paper over grey board. The free design mockup shows how class photos and school logos will sit on the page before you approve the digital proof.\n\nYearbooks start at HK$45 per copy with a 1-copy minimum. After you approve the free design mockup and digital proof, DHL Express delivers from our Asia factory worldwide in 2-4 days — free on US orders over $99.\n\n**FAQ**\n\n**Q1: Which binding should we choose?**\n\nSaddle stitch for 32–80 pages, perfect bound PUR for 80–200, and hardcover for 80–400 pages with archival quality.\n\n**Q2: Do you provide a design mockup?**\n\nYes — yearbook orders include a free design mockup before production begins.\n\n**Q3: Can class photos and faculty messages be included?**\n\nYes — class photos, faculty messages and school logos are all supported in the layout.\n\nMake graduation unforgettable — get a free digital proof within 1 hour by messaging +86 198 8085 1334 on WhatsApp, or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
         "title": "卒業記念アルバム印刷｜1冊〜¥1350〜｜中綴じ｜ZprintPro",
         "description": "卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、1 冊から対応。中綴じ / 無線綴じ / 上製本の 3 方式、クラス写真・先生メッセージ・学校ロゴ全面対応。日本向け DHL Express 2-4 日配送、無料デザインモックアップ。",
         "h1": "卒業記念アルバム印刷 | 1冊〜 3種類の製本",
-        "keywords": ["卒業記念アルバム", "校史特刊", "同窓会誌", "クラブ特刊", "卒業アルバム印刷", "無線綴じ", "中綴じ", "上製本", "FSC 認証", "日本向け"],
+        "keywords": ["卒業記念アルバム","校史特刊","同窓会誌","クラブ特刊","卒業アルバム印刷","無線綴じ","中綴じ","上製本","FSC 認証","日本向け","卒業アルバム 印刷","卒業アルバム 1冊から","同窓会 記念誌","校史 特刊","クラブ 特刊","卒業アルバム 激安","卒アル 作成","卒業アルバム 注文"],
         "body": "卒業という特別な節目を、写真とメッセージで形に残す卒業記念アルバム。ZprintPro では、高校・大学の卒業アルバムをはじめ、校史特刊、同窓会誌、クラブ特刊など、「卒業アルバム 印刷」をお考えの学校・団体の皆様に、思い出を美しく編む一冊をお届けします。クラス写真・先生のメッセージ・学校ロゴまで、レイアウトから製本までワンストップで対応します。\n\n高校・大学の卒業アルバムは、クラス写真や部活動の記録、先生からのメッセージページなど、ページ数も内容も多岐にわたります。卒業式に合わせた納品スケジュールは学校行事の要。「卒業アルバム 印刷」の実績ある体制で、ページ数と予算に合わせて製本方式を選びながら、思い出のクオリティを高めます。\n\n同窓会誌やクラブ特刊は、卒業後のつながりを育てる大切な記録です。研修・学校活動・教会・塾など、写真と文章で活動を振り返る冊子をまとめて制作するケースも増えています。無料デザインモックアップで完成イメージを確認しながら、先生や幹事の皆様の手間を最小限に抑えて進められます。\n\n製本は用途に合わせて 3 方式から選択できます。ページ数を抑えてコストを最優先するなら中綴じ（32〜80 ページ、見開き写真に最適）、ボリュームたっぷりの記録には無線綴じ PUR（80〜200 ページ、背表紙への印刷も可能）、特別な一冊には上製本（80〜400 ページ、厚紙に特殊紙を貼り箔押し加工を施した収蔵級の仕上がり）がおすすめです。\n\n価格はページ数・製本方式・装丁により 1 冊あたり HK$45〜180、最小注文数は 1 冊から承ります。標準納期は 3〜5 営業日、急ぎの場合は 24〜48 時間以内の対応も可能です。アジアの自社工場から DHL 国際速達で日本全国へ 2〜4 日でお届けし、量産前にはサンプルで色・紙質・製本の仕上がりをご確認いただけます。大量注文は段階割引がございますので、お気軽にご相談ください。\n\n原稿仕様：入稿データは AI／PDF／EPS 形式、解像度 300DPI 以上、フルカラー印刷のため CMYK カラーモード、3mm の塗り足し、フォントのアウトライン化を推奨します。箔押し・スポット UV・エンボスなどの加工位置は K100 黒版でご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 卒業アルバムの最小注文数はいくつですか？**\nA1: 最小注文は 1 冊からです。大量注文は段階割引がございます。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\nA2: 標準納期は 3〜5 営業日、急ぎの場合は 24〜48 時間以内に対応します。正午までのデータ確定で即日生産も可能です。完成後は DHL・FedEx で日本全国へ 2〜4 日でお届けしますので、卒業式などの行事日程に合わせたご計画が立てられます。\n**Q3: 日本への配送サービスはありますか？**\nA3: はい。ZprintPro は DHL／FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。\n\n卒業アルバムは制作期間を要する印刷物です。余裕をもったご相談で、卒業式に間に合うスケジュールをご提案します。ZprintPro の日本語サポートスタッフが、ページ構成から製本方式の選び方まで丁寧にご案内します。まずは WhatsApp でお気軽にご相談ください。30 秒の AI 即時見積もりで概算価格と納期をすぐにご確認いただけます。"
       }
     },
-    "imageAlt": {
-      "zh-hk": "香港畢業紀念冊 / 學校印刷 | 香港畢業紀念冊印刷 環保紙 | 智印港",
-      "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
-      "ja": "卒業記念アルバム / 学校印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro"
-    },
     "faqs": [],
+    "imageAlt": {
+      "zh-hk": "畢業紀念冊印刷 1本起 | 香港畢業紀念冊 騎馬釘 精裝 | 智印港",
+      "en": "Graduation Yearbook 1 MOQ | Custom School Yearbooks Hardcover | ZprintPro",
+      "ja": "卒業記念アルバム 1冊から | 中綴じ 上製本 対応 | ZprintPro"
+    }
   },
-
   "premium-greeting-cards": {
     "name": {
       "zh-hk": "高級賀卡",
