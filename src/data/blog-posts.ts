@@ -2184,6 +2184,34 @@ const lpCny2027RedPacketPrintingGuide: BlogPostMeta = {
   },
 };
 
+// 2026-10-07 ZP-daily-content: 卡片印刷 0.5mm 厚度 + 燙金 + 局部 UV (B7 queue W7 第 1 篇, W7 窗口 10/7-10/13 內交付)
+// 承接 SKU BC-001~BC-006 (greeting-cards 類目 6 款, 全部 10 張起印); 價格/規格全部 products.ts 派生
+// 3 快速答案 + 4 表格 + 6 FAQ + 3 wa.me CTA; 克重×厚度換算口徑 (400g≈0.4-0.5mm, 三合一裱貼 700-810g≈0.8-1.0mm)
+const lpThickCardPrintingGuide: BlogPostMeta = {
+  slug: 'thick-card-printing-guide',
+  categoryKey: 'card',
+  source: 'daily',
+  date: '2026-10-07',
+  title: {
+    'zh-hk': "厚卡印刷指南：0.5mm 加厚 10 張起 燙金＋局部 UV | 智印港",
+    en: "Thick Card Printing: 0.5mm 10 MOQ Foil+Spot UV | ZprintPro",
+    ja: "厚紙カード印刷 0.5mm 10枚から 箔押し+UV | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "厚卡印刷指南：0.5mm（400g 超厚）卡片 10 張起印，燙金／燙銀／玫瑰金、局部 UV、三合一裱貼 700-810g 規格價格全對比，127×178mm 標準尺寸，免費打稿，5-7 個工作天交貨，DHL 全球 2-4 天配送，附 6 條 FAQ。",
+    en: "Thick card printing guide: 0.5mm (400gsm) cards from 10 MOQ, gold/silver/rose-gold foil and spot UV options, tri-layer 700-810gsm lamination, 127x178mm standard size, 6-SKU price comparison, free proofing, 5-7 day production, DHL 2-4 day global delivery, 6 FAQs.",
+    ja: "厚紙カード印刷ガイド：0.5mm（400g 超厚）カード 10 枚から、金・銀・ローズゴールド箔押し＋スポットUV、三合一貼り合わせ 700-810g、127×178mm 標準サイズ、6 SKU 価格比較、無料校正、納期 5-7 営業日、DHL 国際 2-4 日、FAQ 6 問。",
+  },
+  targetKeywords: {
+    primary: '卡片印刷',
+    secondary: [
+      '厚卡印刷', '卡片印刷', '燙金卡片', '局部 UV 卡片', '卡片 10 張起',
+      'thick card printing', 'thick cardstock cards', 'foil stamped cards', 'spot UV cards',
+      '厚紙カード印刷', '箔押しカード', 'スポットUV カード',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2358,6 +2386,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpComiketPrintingPrepGuide,
   // 2026-09-30 ZP-daily-content: 利是封印刷 2027 (B7 错峰 9/30 必发, CNY 2027=2/6; GSC 利是封印刷 70 imps pos 27.9)
   lpCny2027RedPacketPrintingGuide,
+  // 2026-10-07 ZP-daily-content: 卡片印刷 0.5mm 厚度 + 燙金 + 局部 UV (B7 queue W7, 承接 greeting-cards BC-001~006)
+  lpThickCardPrintingGuide,
   ];
 
 // =============================================================================
