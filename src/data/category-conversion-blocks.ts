@@ -236,7 +236,7 @@ categoryConversionBlocks['stickers:en'] = {
   "quickAnswers": [
     {
       "q": "What's the minimum order for custom stickers in Hong Kong?",
-      "a": "Our MOQ starts at just 10 pcs — perfect for small batch label printing."
+      "a": "Our MOQ starts at just 10 pcs — perfect for small batch label printing — with prices from US$0.55 per sticker and 1-2 day digital turnaround, so startups can trial a design with no inventory pressure."
     },
     {
       "q": "How fast is small batch label printing turnaround?",
@@ -2375,6 +2375,10 @@ categoryConversionBlocks['flyers:ja'] = {
     {
       "q": "チラシはどのくらい早く受け取れますか？",
       "a": "デジタル印刷は100〜500枚で即日納品が可能です。オフセット印刷は標準2-3営業日で仕上がります。"
+    },
+    {
+      "q": "特急・即日チラシ印刷の料金はいくら？",
+      "a": "A5片面1枚¥6〜の通常価格に対し、即日納品は条件付き対応、特急便は+50%料金です。100〜500枚のデジタル印刷なら最短即日、オフセットのお急ぎ便もご相談ください。納期と料金はAI見積もり30秒で確認できます。"
     }
   ],
   "socialProof": [
@@ -2493,6 +2497,10 @@ categoryConversionBlocks['flyers:ja'] = {
     {
       "q": "東京や大阪など日本全国への配送はできますか？",
       "a": "はい。DHL／FedExで日本全国へ2-4日でお届けします。大口注文は倉庫やオフィスへの直接納品も調整可能です。まずはお見積もりをご依頼ください。"
+    },
+    {
+      "q": "特急印刷・即日チラシの料金はいくらですか？",
+      "a": "通常価格（A5片面1枚¥6〜）に対し、100〜500枚のデジタル印刷は最短即日納品が可能で、特急便は+50%料金です。オフセット印刷のお急ぎ便や、当日出荷が必要な締切直前のご依頼も、まずはAI見積もりまたはWhatsAppで納期と料金をご確認ください。"
     }
   ]
 };
@@ -3453,6 +3461,258 @@ categoryConversionBlocks['envelopes:zh-hk'] = {
       "q": "公文信封可以印公司 logo 同地址嗎？",
       "a": "可以。公司信封就係公文信封標準款：logo、地址、合規字樣一體排版，仲會預留郵資區同條碼位，單色至四色都做得，同信紙卡片對齊色系；HK$0.22-1.80/個，100 個起印。"
     }
+  ]
+};
+categoryConversionBlocks['envelopes:en'] = {
+  "category": "envelopes",
+  "locale": "en",
+  "title": "Custom Envelope Printing | Business, Colored, Large C4 & Pearl from $0.14 | ZprintPro",
+  "metaDescription": "Custom envelope printing from 100 pcs: business envelopes from US$0.14/pc, colored from US$0.18, large C4 from US$0.28, pearl from US$0.46. Window, self-seal and logo printing available. Standard 3-5 business days, free US shipping over $99, 30-second AI quote.",
+  "quickAnswers": [
+    {
+      "q": "How much does custom envelope printing cost?",
+      "a": "Business envelopes start at US$0.14/pc, colored at US$0.18/pc, large C4 at US$0.28/pc, and pearl at US$0.46/pc — all from 100 pcs. Final pricing is quote-based and varies with size, paper, window, and sealing options."
+    },
+    {
+      "q": "What is the minimum order for custom envelopes?",
+      "a": "All four envelope types start at 100 pcs with digital printing, so small businesses and startups can trial a design without inventory pressure."
+    },
+    {
+      "q": "Can large envelopes fit A4 documents flat?",
+      "a": "Yes. Large envelopes in C4 (229×324mm) hold a full A4 sheet flat with no folding, on 100-120g paper that carries multi-page contracts. From US$0.28/pc, 100 pcs minimum."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "US$0.14",
+      "label": "Starting unit price for business envelopes — painless for bulk statement mailing"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "One MOQ across all four envelope types, easy trial runs for startups"
+    },
+    {
+      "stat": "3-5 days",
+      "label": "Standard turnaround, free US shipping on orders over $99"
+    },
+    {
+      "stat": "30s quote",
+      "label": "AI instant estimate once you share size, paper, and quantity"
+    }
+  ],
+  "comparisonTable": {
+    "title": "4 Custom Envelope Types × Material & Craft × Use Case × Pricing",
+    "columns": [
+      "Envelope Type",
+      "Material / Craft",
+      "Typical Use Case",
+      "MOQ / Price"
+    ],
+    "rows": [
+      [
+        "Business Envelopes",
+        "80-120g offset / woodfree paper, 1-4 color offset or digital, self-seal and window options",
+        "Statements, invoices, official correspondence, machine-stuffed bulk mailing",
+        "100 pcs · from US$0.14/pc"
+      ],
+      [
+        "Colored Envelopes",
+        "80-120g offset / colored stock, CMYK + optional spot color, window and self-seal options",
+        "Invitations, greeting cards, marketing mailers, color-matched with card sets",
+        "100 pcs · from US$0.18/pc"
+      ],
+      [
+        "Large Envelopes (C4)",
+        "100-120g offset paper, C4 (229×324mm), A4 fits flat with no creasing",
+        "Contracts, tenders, multi-page documents that should not be folded",
+        "100 pcs · from US$0.28/pc"
+      ],
+      [
+        "Pearl Envelopes",
+        "Pearl / ice-white specialty stock, CMYK / spot color + optional foil and embossing",
+        "Wedding invitations, premium event card sleeves, color-matched with invites",
+        "100 pcs · from US$0.46/pc"
+      ]
+    ],
+    "note": "Kraft paper texture, window films, postage zones, and barcode areas can all be arranged at order time. Final pricing is quote-based by specification and quantity."
+  },
+  "orderFlow": {
+    "title": "6-Step Custom Envelope Process",
+    "steps": [
+      {
+        "title": "Inquiry",
+        "desc": "Tell us envelope type, quantity, and size (DL / C5 / C4) via WhatsApp, with or without artwork"
+      },
+      {
+        "title": "30-Second Quote",
+        "desc": "Unit price, MOQ, and turnaround listed clearly — mention deadlines for rush orders"
+      },
+      {
+        "title": "Design & Typesetting",
+        "desc": "Send your logo and address details — free layout with postage zone and barcode areas reserved"
+      },
+      {
+        "title": "Proofing",
+        "desc": "Physical proof confirms color, seal position, and pearl direction before printing starts"
+      },
+      {
+        "title": "Order & Payment",
+        "desc": "Pay by PayPal or bank transfer — production is scheduled right after confirmation"
+      },
+      {
+        "title": "Delivery",
+        "desc": "Standard 3-5 business days, free US shipping on orders over $99 via DHL Express"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Quote Request",
+      "message": "Hi, I'd like to print business envelopes, size DL, quantity 500, with our company logo and address, 1 or 4 colors both fine. Please quote price and turnaround. Thanks!"
+    },
+    {
+      "label": "Window Envelope Inquiry",
+      "message": "Hi, I need window envelopes for monthly statements — the window must align with the recipient address, quantity 1000. Please advise price and MOQ. Thanks!"
+    },
+    {
+      "label": "Rush C4 Order",
+      "message": "Hi, we need C4 large envelopes that fit A4 flat for contract documents, quantity 200, needed by next week. What's the fastest turnaround and price? Thanks!"
+    }
+  ],
+  "newFaqs": [
+    { "q": "How much does custom envelope printing cost?", "a": "Business envelopes from US$0.14/pc, colored from US$0.18/pc, large C4 from US$0.28/pc, pearl from US$0.46/pc — all 100 pcs minimum. Final pricing varies with size, paper, window, and sealing options; a 30-second AI quote or WhatsApp message gives exact numbers." },
+    { "q": "Which envelope types can carry my company logo?", "a": "Business envelopes are the standard corporate format: logo, address, and compliance text in one layout, with postage zone and barcode areas reserved. 80-120g paper in DL / C5 / C4, window optional. From US$0.14/pc, 100 pcs minimum." },
+    { "q": "Can large envelopes hold A4 documents?", "a": "Yes. C4 large envelopes (229×324mm) hold a full A4 sheet flat, reducing creases. 100-120g paper carries multi-page contracts and tenders reliably. From US$0.28/pc, 100 pcs minimum." },
+    { "q": "How do I choose a large envelope size for A4 documents?", "a": "Pick C4 (229×324mm) for flat A4 sheets without folding; C5 works if the content can be folded in half. Large envelopes use 100-120g paper for multi-page strength. From US$0.28/pc, 100 pcs minimum." },
+    { "q": "What is a window envelope and why use one?", "a": "A window envelope has a transparent film on the face — the recipient address printed on the inner page shows through, so you skip handwriting or address labels entirely. Window option available on business and colored envelopes from US$0.14/pc, 100 pcs minimum." },
+    { "q": "Can pearl envelopes be used for wedding invitation sleeves?", "a": "Very much so. Pearl / ice-white specialty stock has a subtle shimmer that pairs elegantly with wedding invitations and dinner cards, and can be upgraded with fine-line foil or embossing. DL / C5 / C4 available, from US$0.46/pc, 100 pcs minimum. A physical proof is recommended to check the pearl direction." },
+    { "q": "Can business envelopes print my company logo and address?", "a": "Yes. Business envelopes are the standard corporate format: logo, address, and compliance text in one layout, with postage zone and barcode areas reserved, in 1-4 colors matched to your letterhead. From US$0.14/pc, 100 pcs minimum." }
+  ]
+};
+categoryConversionBlocks['envelopes:ja'] = {
+  "category": "envelopes",
+  "locale": "ja",
+  "title": "封筒印刷 | ビジネス・カラー・大判C4・パール 100枚から ¥20〜｜ZprintPro",
+  "metaDescription": "封筒印刷は100枚からの小ロット対応。ビジネス封筒¥20〜、カラー封筒¥25〜、大判C4封筒¥39〜、パール封筒¥64〜。窓付き・シール留め・ロゴ印刷対応。標準3-5営業日、日本全国DHL 2-4日配送、30秒AI見積もり。",
+  "quickAnswers": [
+    {
+      "q": "封筒印刷の料金はいくらからですか？",
+      "a": "ビジネス封筒は1枚¥20〜、カラー封筒は¥25〜、大判C4封筒は¥39〜、パール封筒は¥64〜。すべて100枚から承ります。最終価格はサイズ・紙質・窓付き・留め具の組み合わせにより変わるため、まずはお見積もりをどうぞ。"
+    },
+    {
+      "q": "封筒の最小発注数は何枚からですか？",
+      "a": "4種類すべて100枚から、デジタル印刷で対応。少ロットでも在庫リスクなく試作いただけます。"
+    },
+    {
+      "q": "大判封筒はA4を折らずに入れられますか？",
+      "a": "はい。大判封筒のC4（229×324mm）ならA4を折らずに平らに入れられ、100-120gの紙質が複数ページの書類にも対応します。1枚¥39〜、100枚から。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "¥20〜",
+      "label": "ビジネス封筒の1枚あたり目安価格"
+    },
+    {
+      "stat": "100枚〜",
+      "label": "4種類共通の最小ロット。少ロットでも在庫リスクなし"
+    },
+    {
+      "stat": "3-5営業日",
+      "label": "標準納期、DHLで日本全国へ2-4日配送"
+    },
+    {
+      "stat": "30秒見積もり",
+      "label": "AI即時見積もりで概算価格と納期を確認"
+    }
+  ],
+  "comparisonTable": {
+    "title": "封筒4種類 × 材質・工法 × 用途 × 価格比較",
+    "columns": [
+      "封筒タイプ",
+      "材質・工法",
+      "おすすめ用途",
+      "最小ロット／価格"
+    ],
+    "rows": [
+      [
+        "ビジネス封筒",
+        "80-120g書き紙／上質紙、1色〜4色オフセットまたはデジタル、シール留め・窓付き対応",
+        "請求書・納品書・公式文書の機械封入大量郵送",
+        "100枚〜・1枚¥20〜"
+      ],
+      [
+        "カラー封筒",
+        "80-120g書き紙／色上質紙、CMYK＋特色対応、窓付き・シール留め可",
+        "招待状・グリーティングカード・ダイレクトメール",
+        "100枚〜・1枚¥25〜"
+      ],
+      [
+        "大判封筒（C4）",
+        "100-120g書き紙、C4（229×324mm）、A4を折らずに平置き可能",
+        "契約書・入札書類・複数ページの公文書",
+        "100枚〜・1枚¥39〜"
+      ],
+      [
+        "パール封筒",
+        "パール／アイスホワイト特殊紙、CMYK／特色＋箔押し・エンボス対応",
+        "結婚式招待状・高級イベントのカード入れ",
+        "100枚〜・1枚¥64〜"
+      ]
+    ],
+    "note": "クラフト紙質感、窓フィルム、郵便番号エリアやバーコードエリアの指定は発注時にご相談ください。最終価格は仕様と数量によりお見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "封筒印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで封筒タイプ・数量・サイズ（DL／C5／C4）をお知らせください。データの有無も併せてどうぞ"
+      },
+      {
+        "title": "30秒見積もり",
+        "desc": "単価・最小ロット・納期を明確に提示。お急ぎの場合は締切をお知らせください"
+      },
+      {
+        "title": "デザイン・入稿",
+        "desc": "ロゴと宛名情報をお送りいただければ無料で排版。郵便番号エリアやバーコード位置も併せて設定"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "実物サンプルで色・留め具位置・パールの流れを確認してから印刷開始"
+      },
+      {
+        "title": "発注・決済",
+        "desc": "PayPal／銀行振込で決済、確認後すぐに製造スケジュールに入ります"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "標準3-5営業日、DHL Expressで日本全国へ2-4日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "ビジネス封筒の見積もりをお願いします。サイズ【DL】／数量【500枚】／会社ロゴと住所入り／1色または4色。単価と納期を教えてください。"
+    },
+    {
+      "label": "窓付き封筒相談",
+      "message": "月々の請求書用に窓付き封筒を検討しています。窓位置は【宛名欄】に合わせて、数量【1,000枚】。価格と最小ロットを教えてください。"
+    },
+    {
+      "label": "大判封筒・お急ぎ",
+      "message": "契約書の送付用に、A4を折らずに入るC4大判封筒が必要です。数量【200枚】、【来週中】の納品希望です。最短納期と料金をご相談ください。"
+    }
+  ],
+  "newFaqs": [
+    { "q": "封筒印刷の料金はいくらからですか？", "a": "ビジネス封筒は1枚¥20〜、カラー封筒¥25〜、大判C4封筒¥39〜、パール封筒¥64〜。すべて100枚から承ります。サイズ・紙質・窓付き・留め具により最終価格は変わるため、30秒AI見積もりまたはWhatsAppで正確な金額をご確認ください。" },
+    { "q": "どの封筒に会社ロゴを印刷できますか？", "a": "ビジネス封筒が標準的な公文書フォーマットです。ロゴ・住所・コンプラインス表記を一体排版し、郵便番号エリアやバーコード位置も確保します。80-120gのDL／C5／C4サイズに窓付きも対応。1枚¥20〜、100枚から。" },
+    { "q": "大判封筒はA4書類を入れられますか？", "a": "はい。大判封筒のC4（229×324mm）はA4を折らずに平らに収納でき、折りジワを防ぎます。100-120gの紙質で複数ページの契約書や入札書類も安定して運べます。1枚¥39〜、100枚から。" },
+    { "q": "大判封筒のサイズはどう選べば？A4書類にはどの規格？", "a": "A4書類はC4（229×324mm）を選べば折らずに平置きできます。ページ数が少なければC5に折りたたんで入れる選択肢もあります。100-120gの紙質で複数ページも対応。1枚¥39〜、100枚から。" },
+    { "q": "窓付き封筒とは？なぜ使うのですか？", "a": "窓付き封筒は表面に透明フィルム窓があり、内側のページに印刷した宛名がそのまま見える仕組みです。宛名の手書きやラベル貼りが不要になり、機械封入の大量郵送で大幅な工数削減が可能です。ビジネス封筒とカラー封筒に対応。1枚¥20〜、100枚から。" },
+    { "q": "パール封筒は結婚式招待状の入れ物に使えますか？", "a": "とても適しています。パール／アイスホワイト特殊紙の繊細な輝きは、結婚式招待状や披露宴のカード入れに格調を添え、細線の箔押しやエンボス加工でさらに上質感を高められます。DL／C5／C4の規格があり、1枚¥64〜、100枚から。パールの流れを確認するため実物サンプルをおすすめします。" },
+    { "q": "公文封筒に会社ロゴと住所は印刷できますか？", "a": "はい。ビジネス封筒が公文封筒の標準フォーマットで、ロゴ・住所・コンプラインス表記を一体排版し、郵便番号エリアやバーコード位置を確保。1色〜4色でレターヘッドやカードと色合わせも可能です。1枚¥20〜、100枚から。" }
   ]
 };
 categoryConversionBlocks['red-packets:zh-hk'] = {

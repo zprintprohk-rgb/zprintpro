@@ -78,6 +78,9 @@ const T: Record<string, {
   h2_pricing: string;
   pricingIntro: string;
   pricing_table: Array<{ qty: string; price: string; perUnit: string; turnaround: string }>;
+  h2_cost: string;
+  costIntro: string;
+  cost_table: Array<{ factor: string; impact: string; tip: string }>;
   h2_trust: string;
   trustItems: Array<{ title: string; desc: string }>;
   h2_compare: string;
@@ -142,6 +145,14 @@ const T: Record<string, {
       { qty: '100 本', price: 'HK$ 1,800', perUnit: 'HK$ 18 / 本', turnaround: '5 天' },
       { qty: '300 本', price: 'HK$ 3,900', perUnit: 'HK$ 13 / 本', turnaround: '7 天' },
       { qty: '1000 本', price: 'HK$ 11,000', perUnit: 'HK$ 11 / 本', turnaround: '10 天' },
+    ],
+    h2_cost: '印刷成本拆解：4 個影響報價的因素',
+    costIntro: '想再慳啲？落單前了解成本結構，先識得點揀：',
+    cost_table: [
+      { factor: '數量', impact: '單價隨數量級下降 — 50 本 HK$25/本，去到 1000 本 HK$11/本，慳約 56%', tip: '預算允許就合併訂單一次過印' },
+      { factor: '頁數', impact: '頁數愈多，紙張同裝訂成本愈高', tip: '精簡內容至 32-48 頁甜蜜點' },
+      { factor: '紙張', impact: '128g 銅版紙最經濟，過厚或特種紙加價', tip: '內頁用 128g，淨係封面升級' },
+      { factor: '裝訂', impact: '騎馬釘最平，膠裝中等，精裝最貴', tip: '預算有限選騎馬釘' },
     ],
     h2_trust: '信任錘：深圳工廠實拍 + 質量保證',
     trustItems: [
@@ -224,6 +235,14 @@ const T: Record<string, {
       { qty: '300 pcs', price: 'US$ 500', perUnit: 'US$ 1.67 / pc', turnaround: '7 days' },
       { qty: '1000 pcs', price: 'US$ 1,410', perUnit: 'US$ 1.41 / pc', turnaround: '10 days' },
     ],
+    h2_cost: 'Catalog Printing Cost Breakdown: 4 Price Drivers',
+    costIntro: 'Want to cut cost further? Understand the pricing structure before you order:',
+    cost_table: [
+      { factor: 'Quantity', impact: 'Unit price falls with volume — US$3.20/pc at 50 pcs drops to US$1.41/pc at 1,000 pcs, saving ~56%', tip: 'Consolidate orders into one larger run when budget allows' },
+      { factor: 'Page Count', impact: 'More pages = more paper + binding cost', tip: 'Trim content to the 32-48 page sweet spot' },
+      { factor: 'Paper', impact: '128g coated art paper is the most economical; heavy or specialty stock adds cost', tip: 'Use 128g for interior pages, upgrade only the cover' },
+      { factor: 'Binding', impact: 'Saddle stitch is cheapest, perfect bound mid, hardcover premium', tip: 'Choose saddle stitch on a tight budget' },
+    ],
     h2_trust: 'Trust Hammer: Shenzhen Factory + Quality Guarantee',
     trustItems: [
       { title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },
@@ -305,6 +324,14 @@ const T: Record<string, {
       { qty: '100部', price: 'HK$ 1,800', perUnit: 'HK$ 18 / 部', turnaround: '5日' },
       { qty: '300部', price: 'HK$ 3,900', perUnit: 'HK$ 13 / 部', turnaround: '7日' },
       { qty: '1000部', price: 'HK$ 11,000', perUnit: 'HK$ 11 / 部', turnaround: '10日' },
+    ],
+    h2_cost: 'カタログ印刷のコスト内訳：価格を左右する4要素',
+    costIntro: 'さらにコストを抑えたい方へ — 発注前に価格の仕組みを把握しましょう：',
+    cost_table: [
+      { factor: '部数', impact: '単価は部数とともに低下 — 50部HK$25/部が1,000部でHK$11/部まで下がり、約56%お得に', tip: '予算が許せば注文をまとめて大口に' },
+      { factor: 'ページ数', impact: 'ページ増＝紙代＋製本費の増加', tip: '32-48ページのスポットに内容を調整' },
+      { factor: '紙質', impact: '128gコート紙が最も経済的、厚口や特殊紙は割増', tip: '本文は128g、表紙だけグレードアップ' },
+      { factor: '製本', impact: '中綴じが最安、無線綴じが中級、上製本が最上位', tip: '予算優先なら中綴じ' },
     ],
     h2_trust: '信頼の証：深セン工場実写+品質保証',
     trustItems: [
@@ -557,6 +584,37 @@ export default function CatalogPrintingChinaPage({ params }: Props) {
                       <td className="px-4 py-3 text-base font-bold text-right text-orange-600">{row.price}</td>
                       <td className="px-4 py-3 text-sm text-right text-gray-700">{row.perUnit}</td>
                       <td className="px-4 py-3 text-sm text-right text-gray-700">{row.turnaround}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        {/* 成本拆解表 (L1-2: cheap/low cost 构式 AEO 答案, 数字与本页实价表同源可复算) */}
+        <section className="py-12 md:py-16 bg-orange-50/40">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-3">
+              {t.h2_cost}
+            </h2>
+            <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">{t.costIntro}</p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white rounded-2xl shadow-md overflow-hidden">
+                <thead className="bg-gradient-to-r from-orange-500 to-red-500 text-white">
+                  <tr>
+                    <th className="px-4 py-3 text-left text-sm font-semibold">{locale === 'en' ? 'Factor' : locale === 'ja' ? '要素' : '因素'}</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold">{locale === 'en' ? 'How It Moves Price' : locale === 'ja' ? '価格への影響' : '點樣影響報價'}</th>
+                    <th className="px-4 py-3 text-left text-sm font-semibold">{locale === 'en' ? 'Money-Saving Move' : locale === 'ja' ? '節約テクニック' : '慳錢技巧'}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {t.cost_table.map((row, i) => (
+                    <tr key={i} className="border-b border-gray-100 last:border-0 hover:bg-orange-50">
+                      <td className="px-4 py-3 text-base font-bold text-gray-900 whitespace-nowrap">{row.factor}</td>
+                      <td className="px-4 py-3 text-sm text-gray-700">{row.impact}</td>
+                      <td className="px-4 py-3 text-sm text-gray-700">{row.tip}</td>
                     </tr>
                   ))}
                 </tbody>

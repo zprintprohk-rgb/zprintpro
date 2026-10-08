@@ -1,13 +1,14 @@
 {
   "schema": "gsc-data-index-v1",
-  "lastBuild": "2026-09-11T03:20:00+08:00",
+  "lastBuild": "2026-10-06T22:43:00+08:00",
   "host": "zprintpro.com",
   "freshnessGateHours": 72,
-  "totalFiles": 123,
+  "totalFiles": 151,
   "skippedFiles": 0,
-  "latestFreshData": "2026-09-10",
-  "stalenessDays": 0,
+  "latestFreshData": "2026-10-05",
+  "stalenessDays": 1,
   "freshnessStatus": "FRESH",
+  "stalenessNote": "10/5 档导出 (报告前 1 日), 数据日约 2026-10-02~03 (GSC 滞后 2-3 天正常) — 上轮 9/29 档边界 STALE 正式解除; 本档同样无 gsc-fresh-YYYY-MM-DD.json 机器格式, 已由人手/他会话解析为 .hermes/gsc-2026-10-05-week-delta.json + .hermes/gsc-2026-10-05-k3-bigwords.json, 10/6 lane 已直接消费并回灌 matrix gsc_feedback_2026_10_06 block; 本档无 3mo 窗 (仅 24h/7d/28d ×12), 品牌长窗对照待下档; 下一窗 10/12 前后拉新",
   "filesByDate": {
     "2026-07-08": 7,
     "2026-07-09": 7,
@@ -20,7 +21,10 @@
     "2026-08-13": 28,
     "2026-08-17": 28,
     "extracted-0809": 7,
-    "2026-09-10": 12
+    "2026-09-10": 12,
+    "2026-09-18": 12,
+    "2026-09-29": 16,
+    "2026-10-05": 12
   },
   "freshnessRule": ">72h = STALE, 禁止输出带数字结论, 触发刷新, 9/3 15:00 GSC 校准窗口",
   "dataDimensions": [
@@ -660,6 +664,35 @@
         ".hermes/hk28d-queries.json",
         ".hermes/enja28d-queries.json"
       ]
+    },
+    "2026-09-18": {
+      "files": 12,
+      "source": "xlsx (24h/7d/28d × 三站点+hk+jp+us)",
+      "parsed": [
+        ".hermes/gsc-2026-09-18/extract.json + raw-summary.txt / trend.txt / analysis-queries.md / analysis-pages.md / opps.txt"
+      ]
+    },
+    "2026-09-29": {
+      "files": 16,
+      "source": "xlsx (24h/7d/28d/3mo × 三站点+hk+jp+us, 首含 3 个月窗)",
+      "parsed": [
+        ".hermes/gsc-2026-09-29-analysis.json",
+        ".hermes/gsc-2026-09-29-blindspot.json",
+        ".hermes/gsc-2026-09-30-money-words.json",
+        ".hermes/gsc-2026-09-30-rush-cluster.json",
+        ".hermes/gsc-2026-09-30-edu-cluster.json",
+        ".hermes/gsc-2026-09-30-newwords-cluster.json"
+      ],
+      "note": "本档无 gsc-fresh-*.json 机器格式 — 已由人手/他会话解析为上述 json; lane 直接消费"
+    },
+    "2026-10-05": {
+      "files": 12,
+      "source": "xlsx (24h/7d/28d × 三站点汇总+hk+jp+us; 本档无 3mo 窗)",
+      "parsed": [
+        ".hermes/gsc-2026-10-05-week-delta.json (7d-sum/28d-sum top 词 + old→new 位置 delta)",
+        ".hermes/gsc-2026-10-05-k3-bigwords.json (hk/us/jp × 7d/28d 大词)"
+      ],
+      "note": "本档无 gsc-fresh-*.json 机器格式 — 已由人手/他会话解析为上述 json; 10/6 gsc-feedback lane 已消费并回灌 matrix gsc_feedback_2026_10_06 block; 上轮 9/29 档 STALE 状态解除"
     }
   }
 }
