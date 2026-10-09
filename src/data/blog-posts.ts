@@ -2212,6 +2212,34 @@ const lpThickCardPrintingGuide: BlogPostMeta = {
   },
 };
 
+// 2026-10-09 K3 拍板提前： 聖誕卡印刷 2026 (B7 queue W9, R5 軍令 10/14 前發佈 → 10/09 交付)
+// 承接 SKU BC-001~BC-006 (greeting-cards 類目 6 款, 10 張起印); 價格/規格全部 products.ts 派生
+// ja 雙目標: 年賀状印刷承接段 (早割 10/31 + 喪中はがき) = 紅旗 1 blog 層承接; 3 快速答案 + SKU 對比表 + 發注時間線 + 6 FAQ
+const lpChristmasCardPrinting2026: BlogPostMeta = {
+  slug: 'christmas-card-printing-2026',
+  categoryKey: 'card',
+  source: 'daily',
+  date: '2026-10-09',
+  title: {
+    'zh-hk': "聖誕卡印刷 2026：6 款賀卡 10 張起 燙金價格全對比 | 智印港",
+    en: "Christmas Card Printing 2026: 6 Greeting Cards 10 MOQ Foil Prices | ZprintPro",
+    ja: "クリスマスカード印刷 2026：6 SKU 10枚から 箔押し価格比較 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "聖誕卡印刷 2026 落單指南：6 款賀卡 SKU 全部 10 張起印——高級賀卡 HK$1.0-1.8/張、400g 厚卡 HK$1.2-2.2/張、燙金款 HK$1.8-3.2/張、局部 UV 款 HK$1.4-2.6/張，127×178mm 標準尺寸，免費打稿 4 小時，標準 5-7 個工作天，DHL 全球 2-4 天。11 月中前落單保證聖誕前到貨，附時間線同 6 條 FAQ。",
+    en: "Christmas card printing 2026 ordering guide: all 6 greeting card SKUs from 10 MOQ — premium US$0.13-0.23/pc, thick 400gsm US$0.15-0.27/pc, foil-stamped US$0.23-0.41/pc, spot UV US$0.18-0.33/pc, 127x178mm standard size, free proofing in 4 hours, 5-7 day production, DHL 2-4 days worldwide. Order by mid-November for pre-Christmas delivery, with timeline and 6 FAQs.",
+    ja: "クリスマスカード印刷 2026 発注ガイド：6 SKU すべて 10 枚から——高級 ¥20-36/枚、厚紙400g ¥23-43/枚、箔押し ¥35-64/枚、スポットUV ¥27-52/枚、127×178mm 標準サイズ、無料サンプル 4 時間、納期 5-7 営業日、DHL 国際 2-4 日。11 月中旬までの発注でクリスマス前到着。年賀状まとめ発注で早割 10/31 まで。FAQ 6 問。",
+  },
+  targetKeywords: {
+    primary: '聖誕卡印刷',
+    secondary: [
+      '聖誕卡印刷', '聖誕卡 訂製', '燙金聖誕卡', '賀卡印刷 10 張起',
+      'christmas card printing', 'custom christmas cards', 'corporate holiday cards', 'foil stamped christmas cards',
+      'クリスマスカード印刷', '年賀状印刷', 'オリジナル クリスマスカード', '箔押し クリスマスカード',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2388,6 +2416,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpCny2027RedPacketPrintingGuide,
   // 2026-10-07 ZP-daily-content: 卡片印刷 0.5mm 厚度 + 燙金 + 局部 UV (B7 queue W7, 承接 greeting-cards BC-001~006)
   lpThickCardPrintingGuide,
+  // 2026-10-09 K3 拍板提前: 聖誕卡印刷 2026 (B7 queue W9, R5 軍令 10/14 前 → 10/09 交付; ja 雙目標年賀状印刷, 紅旗1 blog 層承接)
+  lpChristmasCardPrinting2026,
   ];
 
 // =============================================================================

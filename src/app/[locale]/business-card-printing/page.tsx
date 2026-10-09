@@ -127,12 +127,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t.title,
     description: t.description,
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/business-card-printing/`,
+      // 2026-10-09 K3 (c) 拍板執行: 軟合併到 sitemap 登記的 services 承接頁 (9/30 版為 SSoT),
+      // 本頁保留作直接訪客/老連結承接, canonical 上交權重, 消兩頁 cannibalization
+      canonical: `${siteConfig.url}/${locale}/services/business-cards-printing/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/business-card-printing/`,
-        en: `${siteConfig.url}/en/business-card-printing/`,
-        ja: `${siteConfig.url}/ja/business-card-printing/`,
-        'x-default': `${siteConfig.url}/zh-hk/business-card-printing/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/services/business-cards-printing/`,
+        en: `${siteConfig.url}/en/services/business-cards-printing/`,
+        ja: `${siteConfig.url}/ja/services/business-cards-printing/`,
+        'x-default': `${siteConfig.url}/zh-hk/services/business-cards-printing/`,
       },
     },
   };

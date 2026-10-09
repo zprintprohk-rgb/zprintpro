@@ -81,6 +81,12 @@ export default function BusinessCardsPage({ params }: Props) {
       ],
       sizeTitle: '標準尺寸與紙質',
       sizeBody: '標準名片尺寸 90×54mm（亦可做 85.5×54mm 或自訂尺寸）。紙質常見 300g 銅版紙、400g 厚卡、啞粉紙、棉紙及 PVC 膠卡，全部可按報價自選。',
+      skuTitle: '兩款名片規格 · 直接落單',
+      skuBody: '以下兩款現成規格即名片常用配置（90×54mm 標準名片尺寸），10 張起印、免費打樣，揀好規格 WhatsApp 直接報價：',
+      skus: [
+        ['厚卡名片 (400g 起)', `/${locale}/product/thick-greeting-cards-400g/`],
+        ['燙金名片 (燙金/燙銀)', `/${locale}/product/foil-greeting-cards/`],
+      ],
       flowTitle: '名片印刷 6 步流程',
       flow: [
         ['WhatsApp 查詢', '講清楚尺寸、數量、工藝同用途'],
@@ -121,6 +127,12 @@ export default function BusinessCardsPage({ params }: Props) {
       ],
       sizeTitle: 'Standard Size & Paper',
       sizeBody: 'Standard business card size 90×54mm (85.5×54mm or custom sizes available). Common papers: 300gsm art paper, 400gsm thick card, matte art paper, cotton paper and PVC cards — all quoted per your choice.',
+      skuTitle: 'Two Card Stocks · Order Direct',
+      skuBody: 'These two in-stock specs double as our business card configurations (90×54mm standard card size) — 10 MOQ, free proof. Pick a spec and quote instantly:',
+      skus: [
+        ['Thick Business Cards (400g+)', `/${locale}/product/thick-greeting-cards-400g/`],
+        ['Foil-Stamped Business Cards', `/${locale}/product/foil-greeting-cards/`],
+      ],
       flowTitle: 'Business Card Printing in 6 Steps',
       flow: [
         ['WhatsApp Inquiry', 'Tell us size, quantity, finish and use case'],
@@ -161,6 +173,12 @@ export default function BusinessCardsPage({ params }: Props) {
       ],
       sizeTitle: '標準サイズと用紙',
       sizeBody: '標準名刺サイズ 91×55mm（日本規格）。用紙は 300g アート紙、400g 厚口、マットコート紙、コットン紙、PVC カードから選択可能。価格はお見積もり制です。',
+      skuTitle: '名刺仕様 2 種 · そのまま発注',
+      skuBody: '以下の 2 仕様は名刺としてそのまま使える定番構成（90×54mm 標準カードサイズ）。10 枚から、無料サンプルあり。仕様を選んでそのままお見積もり：',
+      skus: [
+        ['厚手名刺 (400g〜)', `/${locale}/product/thick-greeting-cards-400g/`],
+        ['箔押し名刺', `/${locale}/product/foil-greeting-cards/`],
+      ],
       flowTitle: '名刺印刷 6ステップ',
       flow: [
         ['WhatsApp で問い合わせ', 'サイズ・数量・加工・用途をお伝えください'],
@@ -267,6 +285,21 @@ export default function BusinessCardsPage({ params }: Props) {
         <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
           <h2 className="text-xl font-bold text-gray-900">{t.sizeTitle}</h2>
           <p className="mt-3 leading-relaxed text-gray-600">{t.sizeBody}</p>
+        </div>
+      </section>
+
+      {/* 兩款名片規格直達 (2026-10-09 K3 拍板: 用賀卡類目兩條名片 SKU 承接, 不另建 SKU/不優化) */}
+      <section className="mx-auto max-w-5xl px-4 py-2">
+        <div className="rounded-2xl border border-[#2873F5]/30 bg-[#F5F8FF] p-6 md:p-8">
+          <h2 className="text-xl font-bold text-gray-900">{t.skuTitle}</h2>
+          <p className="mt-3 leading-relaxed text-gray-600">{t.skuBody}</p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            {t.skus.map(([name, href]) => (
+              <a key={href} href={href} className="rounded-xl border border-[#2873F5]/40 bg-white px-5 py-3 text-sm font-semibold text-[#2873F5] transition hover:bg-[#2873F5] hover:text-white">
+                {name} →
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 

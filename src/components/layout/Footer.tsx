@@ -27,8 +27,8 @@ const translations = {
     serviceArea: '全球跨境印刷服務',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
-    // 2026-07-08: zh-hk 显示 HK 虚拟办公地址（合规: 跨境展示不暴露深圳实体地址）
-    address: '香港九龍新蒲崗大有街3號萬廣大廈15樓C室',
+    // 2026-10-09 K3 拍板 (FIX-3): 雙段式 NAP — 主實體恒為深圳自有工廠 + 香港服務節點 (schema NAP 自 6/18 已是深圳實體, 可見層對齊)
+    address: '深圳自有工廠：廣東省深圳市龍崗區平湖街道嘉城路1號（518111）｜香港服務節點：九龍新蒲崗',
     legalLabel: '經營者資訊披露',
     privacyLabel: '隱私政策',
     termsLabel: '使用條款',
@@ -89,7 +89,7 @@ const translations = {
     serviceArea: 'Global cross-border printing services',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
-    address: 'No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China',
+    address: 'Factory: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China · HK Service Point: San Po Kong, Kowloon',
     legalLabel: 'Legal Disclosure',
     privacyLabel: 'Privacy Policy',
     termsLabel: 'Terms of Service',
@@ -150,7 +150,7 @@ const translations = {
     serviceArea: 'グローバル越境印刷サービス',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
-    address: '広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）',
+    address: '自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗',
     legalLabel: '特定商取引法に基づく表記',
     privacyLabel: 'プライバシーポリシー',
     termsLabel: '利用規約',
