@@ -1,0 +1,67 @@
+{
+  "lane": "ZP-k3-review",
+  "generated_at": "2026-10-10 00:21:33",
+  "repo": "F:\\zprintpro-nextjs",
+  "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+  "idempotency": {
+    "this_run_key": "1b26fad049ad4773",
+    "day": "2026-10-10",
+    "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
+  },
+  "preflight": {
+    "verdict": "ok",
+    "blocked_reason": "",
+    "checks": [
+      {
+        "name": "repo_worktree_branch",
+        "ok": true,
+        "detail": "repo OK, branch=main"
+      },
+      {
+        "name": "deps_tree_integrity",
+        "ok": true,
+        "detail": "依赖树 OK (149 个包)"
+      },
+      {
+        "name": "lock_free",
+        "ok": true,
+        "detail": "无锁"
+      },
+      {
+        "name": "prev_run_known",
+        "ok": false,
+        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+      },
+      {
+        "name": "lane_status_available",
+        "ok": true,
+        "detail": "verdict=ATTENTION problems=10"
+      },
+      {
+        "name": "lock_acquired",
+        "ok": true,
+        "detail": "F:\\zprintpro-nextjs\\.hermes\\locks\\lane.lock"
+      }
+    ]
+  },
+  "lock": {
+    "lane": "ZP-k3-review",
+    "pid": 12364,
+    "acquired_at": "2026-10-10 00:21:33",
+    "acquired_ts": 1791562893.6898036,
+    "host": "JEROME"
+  },
+  "previous_run": {
+    "bus_record": null,
+    "latest_report": null,
+    "delivered_files_from_report": []
+  },
+  "sibling_lanes": [],
+  "retry_queue": [],
+  "instructions_to_lane": [
+    "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
+    "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+    "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
+    "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行"
+  ]
+}
