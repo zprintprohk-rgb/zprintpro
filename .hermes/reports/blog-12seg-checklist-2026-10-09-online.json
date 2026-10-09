@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T15:49:39.285Z",
+ "generated_at": "2026-10-09T16:09:57.144Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2954,7 +2954,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=213128",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=197559",
    "reason": ""
   },
   {
@@ -2962,18 +2962,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183402",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/hong-kong-printing-cost-baseline-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "roll-up-banner-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167097",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
