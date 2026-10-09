@@ -1,8 +1,13 @@
 {
   "lane": "ZP-blog-deepfix",
-  "generated_at": "2026-09-19 08:19:02",
+  "generated_at": "2026-10-10 00:10:56",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+  "idempotency": {
+    "this_run_key": "37eaab37ee14ebaf",
+    "day": "2026-10-10",
+    "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
+  },
   "preflight": {
     "verdict": "ok",
     "blocked_reason": "",
@@ -13,19 +18,24 @@
         "detail": "repo OK, branch=main"
       },
       {
+        "name": "deps_tree_integrity",
+        "ok": true,
+        "detail": "依赖树 OK (149 个包)"
+      },
+      {
         "name": "lock_free",
         "ok": true,
         "detail": "无锁"
       },
       {
         "name": "prev_run_known",
-        "ok": false,
-        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+        "ok": true,
+        "detail": "总线最近记录 verdict=OK @ 2026-09-19 08:19:11"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=2"
+        "detail": "verdict=ATTENTION problems=10"
       },
       {
         "name": "lock_acquired",
@@ -36,40 +46,38 @@
   },
   "lock": {
     "lane": "ZP-blog-deepfix",
-    "pid": 32060,
-    "acquired_at": "2026-09-19 08:19:02",
-    "acquired_ts": 1789777142.691906,
+    "pid": 21040,
+    "acquired_at": "2026-10-10 00:10:56",
+    "acquired_ts": 1791562257.0054991,
     "host": "JEROME"
   },
   "previous_run": {
-    "bus_record": null,
+    "bus_record": {
+      "run_id": "ZP-blog-deepfix-20260919T081911",
+      "lane": "ZP-blog-deepfix",
+      "trigger": "schtasks",
+      "ended_at": "2026-09-19 08:19:11",
+      "dsh_exit": null,
+      "wrapper_exit": 0,
+      "verdict": "OK",
+      "blocked_reason": "",
+      "guard": {
+        "ok": true
+      },
+      "report": ".hermes/logs/cron-watchdog-alerts.md",
+      "files": [],
+      "pushed": true,
+      "head": "f5bb90b6",
+      "source": "lane-git-commit.py",
+      "idempotency_key": "152fae94b2081d68",
+      "state": "completed",
+      "backfilled": "idempotency_key/state added 2026-09-19 after P3-10 landed"
+    },
     "latest_report": ".hermes/logs/2026-09-19-blog-deepfix.md",
     "delivered_files_from_report": []
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-daily-content",
-      "status": "PENDING",
-      "report": null,
-      "start": "21:17"
-    },
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "22:43"
-    }
-  ],
-  "retry_queue": [
-    {
-      "kind": "UNRESOLVED_DAY",
-      "day": "2026-09-19",
-      "status": "STALE",
-      "notes": [
-        "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
-      ]
-    }
-  ],
+  "sibling_lanes": [],
+  "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
