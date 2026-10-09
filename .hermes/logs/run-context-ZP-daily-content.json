@@ -1,6 +1,6 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-09 23:48:43",
+  "generated_at": "2026-10-09 23:54:50",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
@@ -30,12 +30,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-07 23:40:51"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-09 23:49:41"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=4"
+        "detail": "verdict=ATTENTION problems=10"
       },
       {
         "name": "lock_acquired",
@@ -46,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 22132,
-    "acquired_at": "2026-10-09 23:48:43",
-    "acquired_ts": 1791560923.8026564,
+    "pid": 19652,
+    "acquired_at": "2026-10-09 23:54:50",
+    "acquired_ts": 1791561290.9132242,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261007T234051",
+      "run_id": "ZP-daily-content-20261009T234941",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-07 23:40:51",
-      "ended_at": "2026-10-07 23:40:51",
-      "idempotency_key": "b9cef1f798f74fe9",
+      "fired_at": "2026-10-09 23:49:41",
+      "ended_at": "2026-10-09 23:49:41",
+      "idempotency_key": "6dd8f2cb44bec527",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -67,16 +67,10 @@
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-10-07-ZP-daily-content.md",
-      "files": [
-        "src/app/[locale]/blog/[slug]/page.tsx",
-        "src/data/blog-data/en.json",
-        "src/data/blog-data/ja.json",
-        "src/data/blog-data/zh-hk.json",
-        "src/data/blog-posts.ts"
-      ],
+      "report": "docs/2026-10-08-en-ja-page-one-execution-plan.md",
+      "files": [],
       "pushed": true,
-      "head": "e42e6634",
+      "head": "1c77f648",
       "source": "lane-git-commit.py"
     },
     "latest_report": ".hermes/logs/2026-10-07-ZP-daily-content.md",
@@ -90,8 +84,60 @@
       "public/sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml (各 1 URL)"
     ]
   },
-  "sibling_lanes": [],
-  "retry_queue": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "MISSING",
+      "report": null,
+      "start": "22:43"
+    },
+    {
+      "lane": "ZP-weekly-meta",
+      "status": "PENDING",
+      "report": null,
+      "start": "23:07"
+    },
+    {
+      "lane": "ZP-k3-review",
+      "status": "MISSING",
+      "report": null,
+      "start": "07:10"
+    }
+  ],
+  "retry_queue": [
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-02",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-10-02"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-03",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-10-03"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-04",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-10-04"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-09",
+      "status": "STALE",
+      "notes": [
+        "ran but no report file dated 2026-10-09"
+      ]
+    }
+  ],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",

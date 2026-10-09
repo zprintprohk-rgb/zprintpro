@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T12:11:39.517Z",
+ "generated_at": "2026-10-09T15:49:39.285Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2980,18 +2980,18 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193957",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/print-specifications-reference-guide-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=151790",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/school-exercise-book-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   }
  ]
 }
