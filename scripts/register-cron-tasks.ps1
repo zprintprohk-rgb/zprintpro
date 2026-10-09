@@ -77,6 +77,11 @@ if (-not $Python) { throw 'no working python.exe found (all candidates failed th
 $Dsh = (Get-Command dsh.cmd -ErrorAction SilentlyContinue).Source
 if (-not $Dsh) { $Dsh = 'C:\Users\Administrator\AppData\Roaming\DSH Desktop\host-commands\desktop\bin\dsh.cmd' }
 if (-not (Test-Path $Dsh)) { throw "dsh CLI not found: $Dsh" }
+# 2026-10-09 incident: the shim silently pointed at a deleted D: install after the app
+# moved to Local\Programs (new CLI entry: resources\app.asar\dsh\...\dsh-desktop-host\lib\cli.js).
+# Test-Path is not enough -- smoke-test by execution, same discipline as python above.
+& $Dsh --version 2>$null | Out-Null
+if ($LASTEXITCODE -ne 0) { throw "dsh CLI failed exec smoke test: $Dsh (shim may point at a stale install)" }
 
 Write-Host "hermes : $Hermes (legacy; billing-exhausted, kept for reference)"
 Write-Host "dsh    : $Dsh (lane executor, funded harness route)"
