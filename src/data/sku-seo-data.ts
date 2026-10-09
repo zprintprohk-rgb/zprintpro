@@ -2767,21 +2767,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "超厚名片印刷 (400g) | 燙金壓紋 | 10張起 HK$1.2起 | 智印港",
-        "description": "燙金名片",
+        "description": "超厚 400g 賀卡印刷：高克重卡紙手感厚實、儀式感強。127×178mm 標準，10 張起印 HK$1.2 起。可配燙金、局部 UV、壓紋工藝，適合新年賀卡、聖誕卡、婚禮邀請及企業里程碑祝賀，免費設計打稿、即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "新年名片",
         "keywords": ["400g名片"],
         "body": "厚紙名片"
       },
       "en": {
         "title": "Thick 400g Business Cards | 10 MOQ $0.15 | ZprintPro",
-        "description": "Embossed Business Cards",
+        "description": "Thick 400g greeting cards: heavyweight, rigid cardstock with a premium hand-feel. 127×178mm, 10-card MOQ, from HK$1.2 per card. Add foil stamping, spot UV or embossing. Ideal for New Year cards, Christmas cards, wedding invitations and corporate milestones. Free proof, quick quote.",
         "h1": "Wedding Business Cards",
         "keywords": ["400g名片"],
         "body": "thick business cards"
       },
       "ja": {
         "title": "厚口名刺｜400g 箔押し・エンボス｜10枚〜¥23〜｜ZprintPro",
-        "description": "商務名片定制",
+        "description": "厚口400gグリーティングカード印刷：厚手のカード紙による重厚な手触り。127×178mm標準、10枚から、1枚¥23〜。箔押し・部分UV・エンボス加工に対応し、年賀状、クリスマスカード、結婚式の招待状、企業記念カードに最適。無料デザイン校正、即日見積もり、大量注文は割引対応。",
         "h1": "高級名片印刷",
         "keywords": ["400g名片"],
         "body": "400gsm business cards"
@@ -2803,21 +2803,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "燙金名片印刷 | 金・銀・玫瑰金 | 10個起 HK$1.8起 | 智印港",
-        "description": "玫瑰金名片",
+        "description": "燙金賀卡印刷：300g 銅版紙配金、銀、玫瑰金金屬燙金層，光線下呈現細緻光澤。127×178mm 標準，10 張起印 HK$1.8 起。適合新年賀卡、聖誕卡、婚禮邀請與感謝卡，可配局部 UV、壓紋升級，免費設計打稿、即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "感謝卡定制",
         "keywords": ["燙金名片"],
         "body": "箔燙名片"
       },
       "en": {
         "title": "Foil-Stamped Business Cards | 10 MOQ $0.23 | ZprintPro",
-        "description": "Wedding Business Cards",
+        "description": "Foil-stamped greeting cards: 300gsm coated stock with gold, silver or rose-gold metallic foil for a luminous finish. 127×178mm, 10-card MOQ, from HK$1.8 each. Ideal for New Year cards, Christmas cards, wedding invitations and thank-you cards. Free proof, quick quote.",
         "h1": "Metallic Finish Business Cards",
         "keywords": ["燙金名片"],
         "body": "foil stamped business cards"
       },
       "ja": {
         "title": "箔押し名刺｜金銀 ローズゴールド｜10枚〜¥35〜｜ZprintPro",
-        "description": "聖誕燙金卡",
+        "description": "箔押しグリーティングカード印刷：300gコート紙に金・銀・ローズゴールドの箔を施し、光を受けて美しく輝く仕上がり。127×178mm標準、10枚から、1枚¥35〜。年賀状、クリスマスカード、結婚式の招待状、サンキューカードに最適。無料デザイン校正、即日見積もり、大量注文は割引対応。",
         "h1": "高級燙金印刷",
         "keywords": ["燙金名片"],
         "body": "gold foil corporate business cards"
@@ -2839,21 +2839,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "局部UV賀卡印刷 | 啞面高光對比 | 10張起 HK$1.4起 | 智印港",
-        "description": "局部UV賀卡印刷：啞面底紙配高光 UV 圖案，強烈層次與立體對比，觸感細緻。300g 銅版紙或合成紙，127×178mm 標準，10 張起印 HK$140 起。適用生日卡、聖誕卡、產品宣傳卡及品牌賀卡，可印 LOGO 與品牌配色，亦可選燙金升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
+        "description": "局部UV賀卡印刷：啞面底紙配高光 UV 圖案，強烈層次與立體對比，觸感細緻。300g 銅版紙或合成紙，127×178mm 標準，10 張起印 HK$140 起。適用生日卡、聖誕卡、新年卡、產品宣傳卡及品牌賀卡，可印 LOGO 與品牌配色，亦可選燙金升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "局部UV賀卡定制 | 啞面與高光層次對比",
         "keywords": ["局部UV賀卡","UV賀卡","啞面UV賀卡","高光賀卡","聖誕卡UV","Logo UV賀卡","感謝卡印刷","質感賀卡","局部上光賀卡","高級賀卡定制"],
         "body": "局部 UV 賀卡在 300g 銅版紙或合成紙上先以啞面覆膜打底，再於 Logo、圖案或文字處局部上光，形成啞與亮的強烈觸覺與視覺對比，讓重點資訊瞬間跳脫出來。聖誕卡、新年卡與感謝卡想做出與眾不同的視覺衝擊力，局部 UV 是性價比極高的高級賀卡印刷工藝。\n\n品牌賀卡常以局部 UV 突出標誌與主題字樣，啞面底材襯托亮面細節，觸感層次豐富，收到卡片的人一眼就能感受到設計用心；四色柯式印刷配合局部 UV 光油，讓色彩與光影互相配合。標準尺寸 127×178mm，可加圓角模切完善輪廓，適合零售精品、美妝品牌與活動邀請場景批量訂製，免費設計確認與樣品比對，確認 UV 位置與啞亮對比效果無誤後先正式開印。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化；局部 UV 位置請另外提供獨立黑稿（K100）標示。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：局部 UV 賀卡定價 HK$140-260/100張，最低訂量 100 張，價格以港幣為準，量大從優，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Spot UV Greeting Cards | 10 MOQ $0.18 | Gift | ZprintPro",
-        "description": "Spot UV greeting cards: glossy highlights on matte base, 300gsm. 127×178mm, from 100 pcs HK$140. Birthday, Christmas & brand. Free proof, quick quote.",
+        "description": "Spot UV greeting cards: glossy highlights on matte base, 300gsm. 127×178mm, from 100 pcs HK$140. Birthday, Christmas, New Year & brand. Free proof, quick quote.",
         "h1": "Spot UV Greeting Cards | Matte Base with Glossy Highlights",
         "keywords": ["spot uv greeting cards","spot uv christmas cards","matte gloss cards","glossy logo cards","uv coated greeting cards","raised uv cards","modern holiday cards","thank you cards spot uv","bulk spot uv cards","premium uv cards"],
         "body": "Spot UV greeting cards use 300gsm coated stock with a matte lamination base, then add a glossy UV coating to selected areas — a logo, a pattern, or a greeting — creating a matte-versus-gloss contrast that makes key elements pop. The eye goes straight to the raised, shiny detail.\n\nChristmas, New Year, and thank-you cards become more expressive when a snowflake, a name, or a heart is lifted in gloss against a soft matte field. Branded corporate cards use the same trick to make logos feel dimensional and expensive, turning an ordinary mailer into a piece worth keeping.\n\nThe contrast technique also flatters photography and line art: light catching the coated areas adds depth that flat printing cannot deliver. It is an ideal middle ground for brands that want something more tactile than plain matte but more restrained than full metallic foil.\n\nCards are printed on 300g coated or synthetic paper with 4-color offset plus spot UV, applying a 20-30 micron dimensional gloss to the highlighted areas. ICC color management keeps brand colors stable across the batch, and a matte or gloss film finish plus optional rounded-corner die-cutting round it out, with a free die-cut check before production.\n\nPricing is HK$140-260 per 100 cards, with a 100-card minimum order. Your order includes a free design check and free sample; paper is FSC-certified and production follows ISO 9001 quality control. Cards ship direct from our Asia factory via DHL Express in 2-4 days worldwide to 50+ countries, and a 30-second AI quote with no setup fees gets you started.\n\n**FAQ**\n\n**Q1: How does spot UV change the look?** Glossy UV coating is applied to selected areas, creating a striking contrast against the matte base.\n\n**Q2: Which parts of the design get the UV coating?** Whatever you choose — logos, patterns, or greeting text are the most common choices.\n\n**Q3: Can I request a sample first?** Yes, a free sample and design check are included with your order.\n\nReady to make it pop? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
       },
       "ja": {
         "title": "部分UVグリーティングカード｜光沢｜10枚〜¥27〜｜ZprintPro",
-        "description": "部分UVグリーティングカード印刷：マット下地に光沢UVのコントラスト、300gコート紙または合成紙。127×178mm標準、100枚〜HK$140〜。誕生日・クリスマス・ブランドカードに最適、サイズ・型抜きもオーダー可能。無料デザイン校正、即日見積もり、特急対応可能、大量注文は割引対応、納期相談可。",
+        "description": "部分UVグリーティングカード印刷：マット下地に光沢UVのコントラスト、300gコート紙または合成紙。127×178mm標準、100枚〜HK$140〜。誕生日・クリスマス・年賀状・ブランドカードに最適、サイズ・型抜きもオーダー可能。無料デザイン校正、即日見積もり、特急対応可能、大量注文は割引対応、納期相談可。",
         "h1": "部分UVグリーティングカード | マット下地と光沢のコントラスト",
         "keywords": ["部分UV カード","スポットUV カード","マット UV カード","光沢 カード","クリスマス UVカード","ロゴ UV カード","サンキューカード 印刷","高級 カード","部分ニス カード","挨拶状 UV"],
         "body": "ZprintPro のスポット UV グリーティングカードは、300g コート紙にマットラミネートを施した上で、ロゴや柄、メッセージなどポイント部分だけに光沢のある UV コーティングを重ねる加工です。マットと光沢のコントラストが、伝えたい要素をくっきりと浮かび上がらせます。\n\nクリスマスカードや年賀状では、タイトル文字やイラストの一部に光を当てることで視覚的なインパクトを演出。サンキューカードや企業のブランドカードでは、ロゴだけを光らせる「控えめながら強い」表現が好まれます。20〜30 ミクロンの立体光沢が、指先で触れたときの質感の違いまで楽しませてくれます。\n\nグリーティングカード 印刷の仕上がりにひと工夫欲しい方に、スポット UV は最も効果的な選択肢の一つです。フラットな印刷では出せない立体感が、受け取った人の手に残る印象を大きく変えます。\n\n標準サイズは 127×178mm。四色オフセット印刷＋部分 UV で、網点の細かさと ICC カラーマネジメントによる色の安定を両立。用紙は 300g コート紙のほか合成紙にも対応し、マット／グロスラミネートと角丸型抜きも選択できます。生産前に無料の型抜きチェックを行います。\n\n料金は 100 枚あたり HK$140〜260、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセット印刷に切り替えます。FSC 認証紙を使用し、ISO 9001 品質管理の下で生産。アジアの自社工場から DHL Express の国際配送で 2〜4 日、お手元に届きます。\n\n原稿仕様：解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。スポット UV をかける位置は K100 の黒版で別途ご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: スポット UV とはどのような加工ですか？** ロゴや柄など一部だけに光沢のあるコーティングを重ねる加工で、マットな下地とのコントラストで立体感を演出します。\n\n**Q2: UV の位置は自分で指定できますか？** はい、K100 の黒版で UV をかける位置をご指定いただけます。\n\n**Q3: 最小注文数はどのくらいですか？** 100 枚からご注文いただけます。大量注文は段階割引がありますので、お気軽にお問い合わせください。\n\n光とマットのコントラストを実際に見てみたい方は、無料サンプルをお取り寄せください。ZprintPro が日本語対応で、デザインのご相談にも乗ります。"
@@ -2911,21 +2911,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港",
-        "description": "圓角賀卡印刷：R3mm 圓角模切，柔和觸感不翹角，輕巧可愛。300g 銅版紙或藝術紙，127×178mm 標準，10 張起印 HK$100 起。適用生日卡、聖誕卡、感謝卡及品牌宣傳卡，可印 LOGO 與品牌配色，亦可選燙金或 UV 升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
+        "description": "圓角賀卡印刷：R3mm 圓角模切，柔和觸感不翹角，輕巧可愛。300g 銅版紙或藝術紙，127×178mm 標準，10 張起印 HK$100 起。適用生日卡、聖誕卡、新年卡、感謝卡及品牌宣傳卡，可印 LOGO 與品牌配色，亦可選燙金或 UV 升級，免費設計打稿，即日報價，量大優惠歡迎 WhatsApp 查詢。",
         "h1": "圓角賀卡定制 | R3mm 圓角模切・不翹角",
         "keywords": ["圓角賀卡","圓角卡片","R3圓角","模切賀卡","可愛賀卡","生日卡定制","聖誕卡圓角","感謝卡印刷","圓角模切","造型賀卡"],
         "body": "圓角賀卡以 300g 銅版紙或藝術紙印刷，再經 R3mm 圓角模切，四角圓潤流暢，握在手中觸感柔和，長期存放或頻繁翻閱，邊角也不易翹起或刮手，特別適合可愛、親切風格的聖誕卡、生日卡與感謝卡。溫潤的輪廓讓心意更顯真摯，是個人送禮與小店品牌最常用的賀卡印刷款式，節日檔期尤其受歡迎。\n\n無論是聖誕祝福、生日派對邀請，還是向客戶與同事表達謝意，圓角賀卡都能以柔和線條襯托情感。表面可選啞膠或光膠覆膜保護，亦可疊加燙金、局部 UV 等工藝點綴細節，四色柯式印刷將圖案與文字呈現得乾淨細緻。標準尺寸 127×178mm 配合圓角輪廓，放入信封與卡套都順暢不卡角，適合零售精品、文創小店及節日禮品場景批量訂製，開印前可免費確認設計並安排樣品，確認無誤先投產，成品更符合期望。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化，圓角模切位置請預留刀模線。提交檔案後 1 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：圓角賀卡按 HK$100-170/100張 報價，單款最低訂量 100 張，以港幣結算；數量愈大價格愈優惠，歡迎隨時查詢批量報價。"
       },
       "en": {
         "title": "Rounded Corner Greeting Cards | 10 MOQ $0.13 | ZprintPro",
-        "description": "Rounded-corner greeting cards: soft R3mm die-cut, 300gsm. 127×178mm, from 100 pcs HK$100. Birthday, Christmas & thank-you cards. Free proof, quick quote.",
+        "description": "Rounded-corner greeting cards: soft R3mm die-cut, 300gsm. 127×178mm, from 100 pcs HK$100. Birthday, Christmas, New Year & thank-you cards. Free proof, quick quote.",
         "h1": "Rounded Corner Greeting Cards | Soft R3mm Die-Cut Corners",
         "keywords": ["rounded corner greeting cards","rounded corner cards","die cut greeting cards","cute christmas cards","birthday cards bulk","rounded thank you cards","soft corner cards","r3mm cards","custom shaped cards","bulk rounded cards"],
         "body": "Rounded corner greeting cards begin as 300gsm coated stock, die-cut with smooth R3mm rounded corners for a soft, friendly feel in the hand. The gentle curve also prevents corner lift and wear, so the card keeps its clean silhouette even after months in a drawer or bag.\n\nCute and approachable designs are the natural fit — cheerful Christmas cards, birthday cards, and thank-you cards with rounded edges feel warmer and less formal than sharp-cornered alternatives. Kids' birthday invitations and family-friendly mailings especially benefit from edges that are pleasant to touch and hard to damage.\n\nThe same tactile advantage works for boutique brands whose packaging mirrors the card: a rounded-corner insert inside a product box echoes the softness of the brand. Because the 127×178mm size remains standard, you keep full compatibility with global card sleeves while gaining a friendlier profile.\n\nEach card is printed on 300g coated or art paper with 4-color offset printing and an ICC-managed color workflow for consistent brand colors. The R3mm rounded-corner die-cut is the signature detail; optional finishing such as matte or gloss film lamination, foil stamping, spot UV, or extra die-cutting is proofed free before production.\n\nPricing is HK$100-170 per 100 cards with a 100-card minimum order. A free design check and free sample are included, paper is FSC-certified, and production follows ISO 9001 quality control. Cards ship direct from our Asia factory via DHL Express in 2-4 days worldwide, with free shipping on US orders over $99, and a 30-second AI quote with no setup fees makes ordering simple.\n\n**FAQ**\n\n**Q1: What radius are the corners?** R3mm, which feels soft in the hand and resists corner lift and wear.\n\n**Q2: Can rounded corners be combined with other finishing?** Yes, lamination, foil stamping, and spot UV all work with the die-cut.\n\n**Q3: Is the size still standard?** Yes, 127×178mm, so the cards fit regular sleeves and holders.\n\nReady to order your rounded-corner cards? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
       },
       "ja": {
         "title": "角丸グリーティングカード｜R3mm丸角｜10枚〜 ¥20｜ZprintPro",
-        "description": "角丸グリーティングカード印刷：R3mmのやさしい丸角型抜き、300gコート紙またはアート紙。127×178mm標準、100枚〜HK$100〜。誕生日・クリスマス・感謝・記念カードに最適、サイズ・型抜きもオーダー可能です、オリジナルデザイン対応。無料デザイン校正、即日見積もり、特急対応可能、大量注文は割引対応。",
+        "description": "角丸グリーティングカード印刷：R3mmのやさしい丸角型抜き、300gコート紙またはアート紙。127×178mm標準、100枚〜HK$100〜。誕生日・クリスマス・年賀状・感謝・記念カードに最適、サイズ・型抜きもオーダー可能です、オリジナルデザイン対応。無料デザイン校正、即日見積もり、特急対応可能、大量注文は割引対応。",
         "h1": "角丸グリーティングカード | R3mm やさしい丸角加工",
         "keywords": ["角丸 カード","角丸加工 カード","型抜き カード","かわいい カード","誕生日 カード","クリスマス 角丸","サンキューカード 印刷","丸角 カード","ダイカット カード","グリーティングカード 角丸"],
         "body": "ZprintPro の角丸グリーティングカードは、300g コート紙に印刷した後、四隅を R3mm の丸角に型抜きした、手に優しいカードです。角が引っかかったり反り返ったりしにくく、長く使っても美しさが続きます。\n\nかわいらしく親しみやすい雰囲気が特長で、クリスマスカード、誕生日カード、サンキューカードなどに特に人気です。丸みのあるフォルムはお子様のイベントや、写真をメインにしたデザインとも相性が良く、ポケットやバッグに入れて持ち歩いても角が折れにくい安心感があります。\n\nグリーティングカード 印刷で「やわらかい印象」を演出したい方に、角丸は手軽で確実な方法です。スクエアなカードとの差別化にもなるため、同じジャンルのブランドカードと並べても個性が伝わります。\n\n標準サイズは 127×178mm、四隅は R3mm の丸角型抜き。四色オフセット印刷による細かな網点と ICC カラーマネジメントで色を安定させます。マット／グロスラミネートに加え、箔押しや部分 UV も組み合わせ可能。生産前に無料の型抜きチェックを行います。\n\n料金は 100 枚あたり HK$100〜170、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセット印刷に切り替えます。紙は FSC 認証を取得したものを使用し、ISO 9001 品質管理のもとで生産。アジアの自社工場から DHL Express で 2〜4 日でお届けします。\n\n原稿仕様：解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。角丸の型抜き位置は、入稿データ上で余白を確保した状態でご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 角丸のメリットは何ですか？** 角が引っかからず、手触りが柔らかいのが特長です。角が折れにくいので、ポケットやバッグに入れて持ち歩くカードにも適しています。\n\n**Q2: 最低注文数量を教えてください。** こちらの商品は 100 枚が最低注文数です。大量にご注文の場合は段階割引をご用意しています。\n\n**Q3: サンプルはもらえますか？** はい、無料サンプルをご用意しています。実際の角丸の質感をご確認いただけます。\n\nやさしい印象のカードをお探しなら、無料サンプルで角丸の手触りをご体感ください。ZprintPro が日本語対応でスムーズにご案内します。"
