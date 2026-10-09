@@ -1,0 +1,53 @@
+{
+  "batch": "K3 2026-10-09 §A 表 B1 — zero-click 池 meta description 价格钩子批",
+  "planned_lane": "ZP-weekly-meta (周五 23:07), K3 §F-3",
+  "prepared_at": "2026-10-09 (manual session)",
+  "scope": "仅 metaDescription 字段; 零 title 改动 (K3 §F-3 明确 meta 不受 title 冻结令约束)",
+  "truth_source": "src/data/products.ts (minQuantity + basePrice/basePrice_en)",
+  "candidates": [
+    {
+      "word": "貼紙印刷",
+      "landing": "/zh-hk/category/stickers/",
+      "field": "categoryConversionBlocks['stickers:zh-hk'].metaDescription",
+      "old": "香港貼紙印刷專家，PVC/透明/啞銀/光粉多款材質，10 張起印，2-3 日出貨。立即 WhatsApp 報價：+86 198 8085 1334。",
+      "new": "貼紙印刷 HK$0.22 起/張（防水 PVC），10 張起印、2-3 日出貨。PVC／透明／啞銀／光粉多款材質，異形切割、燙金、局部 UV 都做。滿 HK$500 免費順豐，WhatsApp 30 秒報價 8619880851334。",
+      "price_truth": { "sku": "waterproof-stickers", "unit": "HK$0.22/張", "minQuantity": 10, "field": "basePrice" },
+      "rationale": "原 meta 无价格钩；对照 20 天对比结论（排名层已赢/CTR 层主战场）"
+    },
+    {
+      "word": "宣傳單張印刷",
+      "landing": "/zh-hk/category/flyers/",
+      "field": "categoryConversionBlocks['flyers:zh-hk'].metaDescription",
+      "old": "香港宣傳單張印刷，A4/A5/A6/DL 單張、對折三折都有，銅版紙啞膠光膠任揀。MOQ 低至 100 張，2-3 日交貨。WhatsApp 即時報價：8619880851334",
+      "new": "宣傳單張印刷 A5 單面 HK$0.25 起/張、A4 HK$0.35 起/張，10 張起印免開版費。A4/A5/A6/DL＋對摺三摺，銅版紙／啞膠／光膠任揀，3 個工作天交貨，即日特急可選。WhatsApp 30 秒報價 8619880851334。",
+      "price_truth": { "sku": "a5-flyers", "unit": "HK$0.25/張", "minQuantity": 10, "field": "basePrice" },
+      "price_truth_2": { "sku": "a4-flyers", "unit": "HK$0.35/張", "minQuantity": 10, "field": "basePrice" },
+      "rationale": "原 meta 无单价且 MOQ 数字 stale（见 moq_drift）",
+      "fixes": "MOQ 100 → 10 (products.ts 真值)"
+    },
+    {
+      "word": "small batch sticker printing",
+      "landing": "/en/category/stickers/",
+      "field": "categoryConversionBlocks['stickers:en'].metaDescription",
+      "old": "Small batch label printing & custom stickers in Hong Kong. MOQ from 10 pcs, 2-3 day turnaround. WhatsApp us for a free quote today.",
+      "new": "Small batch sticker printing from US$0.32/pc (waterproof PVC), 10 pcs MOQ, 2-3 day turnaround. Custom labels, transparent, foil, die-cut & removable stickers. Free 1-hour digital proof, DHL 2-4 day US delivery, 30-second AI quote.",
+      "price_truth": { "sku": "waterproof-stickers", "unit": "US$0.32/pc", "minQuantity": 10, "field": "basePrice_en" },
+      "note": "类目页最低入门价 = waterproof-stickers US$0.32; small-batch-stickers SKU 线 = US$0.55 (E3 已在该块 quickAnswer 写 10 pcs / US$0.55)",
+      "rationale": "原 meta 无价格钩；E3 已把 $0.55 写进 quickAnswer，meta 层仍缺"
+    }
+  ],
+  "already_hooked_no_action": [
+    { "word": "月曆印刷", "landing": "/zh-hk/category/calendars/", "evidence": "meta 已含掛曆HK$18起／檯曆HK$9起／年曆卡HK$3起" },
+    { "word": "書刊印刷", "landing": "/zh-hk/category/books/", "evidence": "meta 已含騎馬釘 HK$6-32/本、膠裝 HK$16-80/本 等" }
+  ],
+  "findings": {
+    "moq_drift": [
+      { "location": "categoryConversionBlocks['flyers:zh-hk'].metaDescription", "says": "MOQ 低至 100 張", "truth": "10 (products.ts, 7/7 flyers SKU 全为 10)", "severity": "中 — 客户可见字段与真值不符; 候选 #2 已一并修正" },
+      { "location": "categoryConversionBlocks['flyers:ja'].metaDescription", "says": "デジタル印刷は100枚から", "truth": "10", "severity": "中 — 同源 stale; 本批未动 ja (K3 B1 清单未列), 建议并入下一批" },
+      { "location": "categoryConversionBlocks['flyers:ja'].quickAnswers[1]", "says": "デジタル印刷は100枚から承ります", "truth": "10", "severity": "中" }
+    ],
+    "note": "门童 #24 (MOQ 口径) 在 staged 无 MOQ 目标档时 SKIP, 故该类漂移此前未被拦下; 建议把 category-conversion-blocks 的 metaDescription/quickAnswers 纳入 #24 扫描域"
+  },
+  "guard_expectation": "meta-description-guard (语言错配/首词前缀重复/空) + price-band-guard + gsc-leak-guard; 全部为 description 层, 不触碰 title-v5 域",
+  "apply_instructions": "改 categoryConversionBlocks[<cat>:<loc>].metaDescription 三处 → node scripts/check-encoding.js --fix → node scripts/guards/meta-description-guard.js && node scripts/guards/price-band-guard.js → commit (docs+src 同批)"
+}
