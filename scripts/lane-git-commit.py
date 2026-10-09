@@ -162,6 +162,13 @@ def main():
         if r.returncode != 0 and "nothing to commit" not in r.stdout + r.stderr:
             print(f"[lane-git] src commit 被拦: {r.stdout}\n{r.stderr}", file=sys.stderr)
             print(f"[lane-git] 提示: 生产文件未过 guard, 需人工处理 (不自动 --no-verify)", file=sys.stderr)
+            # 2026-10-10 修复 (门童被自己人绕过): 被拦下的 src 文件必须先从 index 撤出。
+            #   原实现只 print 后即调用 _commit_reports(), 而那里用 `git commit --no-verify`,
+            #   会把仍 staged 的生产文件一并带走 -> 门童的拦截被收尾步骤半路作废。
+            #   实测 797c84e3: 门童 #16 硬拦的 5 个生产文件被「lane 报告」commit 带走,
+            #   并随 00:46 push 上了 origin/main (线上红线 §0.23.1 泄漏), 由 ff08997d 补救。
+            #   撤出 index 只影响暂存区; 工作区改动原样保留, 交人工处理 (与 164 行语义一致)。
+            run([GIT, "reset", "--"] + src_files, cwd=repo, check=False)
             # 2026-09-19 修复: 原实现在此 return 4 -> 跳过报告提交与执行报告写入 ->
             # 9/19 blog-deepfix lane 整批成功却在 cron-execution-report.md 里没有任何记录
             # (成功且无记录 = 主程序无从判断)。改为: 先落报告 + 写执行报告行, 再返回 4。
@@ -215,7 +222,10 @@ def _commit_reports(repo, args, report_files, date):
     """
     msg = f"cron({args.lane}): lane 报告 {date}"
     run([GIT, "add", "--"] + report_files, cwd=repo)
-    r = run([GIT, "commit", "--no-verify", "-m", msg], cwd=repo, check=False)
+    # 2026-10-10 修复: 用 pathspec 限定提交范围。`git commit --no-verify -m msg` 会把
+    #   **任何**已 staged 的内容一起提交 (不只本次 add 的报告文件) —— 人手会话 staged 的改动、
+    #   或上面被门童拦下尚未撤出的生产文件, 都会被顺带带上线。限定 pathspec 后二者都不可能。
+    r = run([GIT, "commit", "--no-verify", "-m", msg, "--"] + report_files, cwd=repo, check=False)
     if r.returncode != 0 and "nothing to commit" not in r.stdout + r.stderr:
         print(f"[lane-git] report commit 失败: {r.stdout}\n{r.stderr}", file=sys.stderr)
         return 4
