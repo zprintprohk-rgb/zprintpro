@@ -2240,6 +2240,35 @@ const lpChristmasCardPrinting2026: BlogPostMeta = {
   },
 };
 
+// 2026-10-09 ZP-daily-content: 年賀状印刷ガイド 2027 (B7 queue W8 季节窗授权提前交付, ja 主写三语)
+// 早割 10/31 倒计时 (10月末までが目安, 复核日 2026-11-01) + 承接 SKU BC-001~006 (greeting-cards 6 款, 10 枚/張起印)
+// 价格/规格/交期全部 products.ts 派生; 3 快速答案 + 3 表格 + 6 FAQ + 3 wa.me CTA + 内链 13
+const lpNewYearCardPrinting2027Guide: BlogPostMeta = {
+  slug: 'new-year-card-printing-2027-guide',
+  categoryKey: 'card',
+  source: 'daily',
+  date: '2026-10-09',
+  title: {
+    'zh-hk': "賀卡印刷 2027：10 張起 燙金 年賀狀 早鳥優惠 | 智印港",
+    en: "New Year Card Printing 2027: 10 MOQ, US$0.13 | ZprintPro",
+    ja: "年賀状印刷 2027：1枚¥20〜 箔押し 早割10月末 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "2027 年賀狀／新年賀卡印刷指南：6 款賀卡全部 10 張起印，高級賀卡 HK$1.0-1.8/張、400g 厚卡 HK$1.2-2.2/張、燙金款 HK$1.8-3.2/張，127×178mm 標準尺寸，3-5 個工作天交貨、DHL 全球 2-4 天，10 月底前落單享早鳥優惠，附交稿規格同 6 條 FAQ。即用 30 秒 AI 即時報價。",
+    en: "New Year card printing 2027: 10 MOQ, from US$0.13/card, 3-5 day production, DHL 2-4 days. Compare 6 card SKUs, foil and spot UV. Get a 30-second AI quote.",
+    ja: "2027年向け年賀状印刷ガイド。6 SKUすべて10枚から、1枚¥20〜（箔押し¥35-64）。127×178mm、納期3〜5営業日、DHL2〜4日。無料入稿チェック付き。早割は10月末までが目安。30秒AI見積りで今すぐ確認。",
+  },
+  targetKeywords: {
+    primary: '年賀状印刷',
+    secondary: [
+      '年賀状印刷', '年賀状 2027', 'オリジナル年賀状', '箔押し 年賀状', '年賀状 早割', '年賀状 10枚から',
+      '新年賀卡印刷', '賀卡印刷 10 張起', '賀年卡訂製',
+      'new year card printing', 'nengajo printing', 'custom new year cards', 'corporate holiday cards',
+      '箔押し グリーティングカード', 'クリスマスカード印刷',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2418,6 +2447,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpThickCardPrintingGuide,
   // 2026-10-09 K3 拍板提前: 聖誕卡印刷 2026 (B7 queue W9, R5 軍令 10/14 前 → 10/09 交付; ja 雙目標年賀状印刷, 紅旗1 blog 層承接)
   lpChristmasCardPrinting2026,
+  // 2026-10-09 ZP-daily-content: 年賀状印刷ガイド 2027 (B7 queue W8 季节窗授权提前交付, ja 主写三语; 早割 10/31, greeting-cards BC-001~006 承接)
+  lpNewYearCardPrinting2027Guide,
   ];
 
 // =============================================================================
