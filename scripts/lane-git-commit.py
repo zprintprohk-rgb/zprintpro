@@ -242,6 +242,29 @@ def idempotency_key(lane, intent, target, day=None):
     return hashlib.sha256(f"{lane}|{intent}|{target}|{day}".encode("utf-8")).hexdigest()[:16]
 
 
+def resolve_idempotency_key(lane, repo):
+    """幂等键的**单一来源** = 本轮 preflight 写入的 run-context (2026-10-10 修复, §6-A)。
+
+    缺陷: 两侧各自重组键 —— preflight 用 ("run", "lane-default"), 本脚本收尾用
+    ("deliver", <报告路径 或 "lane-default">) -> 同一 lane 同一天必然产出**两个**键,
+    契约 §二.2「命中相同 key 即跳过」永远无法命中, 机器判重退化为人工比报告。
+    实测 2026-10-10 blog-deepfix: run-context `37eaab37ee14ebaf` vs lane-runs `e5038594dc97fb9f`。
+
+    改为**读取** preflight 已落盘的 this_run_key: 单一权威、两侧恒等, 并顺带消除
+    「23:5x 起跑跨午夜 00:0x 收尾」时 day 归属不同导致的第三类分歧。
+    读不到 (缺文件/旧格式/取值异常) 时回退到与 preflight 完全相同的调用口径。
+    """
+    ctx = os.path.join(repo, ".hermes", "logs", f"run-context-{lane}.json")
+    try:
+        with open(ctx, "r", encoding="utf-8") as fh:
+            key = (json.load(fh).get("idempotency") or {}).get("this_run_key")
+        if isinstance(key, str) and len(key) == 16:
+            return key
+    except (OSError, ValueError):
+        pass
+    return idempotency_key(lane, "run", "lane-default")
+
+
 def pick_lane_report(lane, allowed):
     """从本次白名单改动里挑出**本车道自己的报告文件**。
 
@@ -338,7 +361,7 @@ def write_exec_report(lane, repo, allowed, pushed, date,
         "trigger": "schtasks",
         "fired_at": fired_at,
         "ended_at": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
-        "idempotency_key": idempotency_key(lane, "deliver", report if report and report != "NONE" else "lane-default"),
+        "idempotency_key": resolve_idempotency_key(lane, repo),
         "dsh_exit": None,           # wrapper 侧已知; 本脚本无法读取, 由 lane-status.mjs 从 wrapper 日志补齐
         "wrapper_exit": exit_code,
         "verdict": "OK" if exit_code == 0 else ("BLOCKED" if blocked_reason else "FAILED"),
