@@ -46,6 +46,15 @@
       "timeoutSeconds": 3600,
       "prompt": "zprintpro-monthly-matrix-audit.md",
       "reportGlob": "*-monthly-matrix-audit.md"
+    },
+    {
+      "task": "ZP-k3-review",
+      "schedule": { "kind": "DAILY" },
+      "start": "07:10",
+      "timeoutSeconds": 1800,
+      "prompt": "k3-ceo-daily-review.md",
+      "reportGlob": "*-k3-daily-review.md",
+      "_note": "2026-10-09 K3 brain directive Part F-6: 7th entity, registration method A per k3-ceo-daily-review.md; fires after watchdog 06:43; settings patched (RestartCount=2/5m, MultipleInstances=IgnoreNew) by register-cron-tasks.ps1 Step 3b"
     }
   ],
   "watchdog": {

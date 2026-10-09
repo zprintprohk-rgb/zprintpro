@@ -10,6 +10,12 @@
 #   - tasks run at HIGHEST so they fire even with no interactive session
 # Usage: powershell -ExecutionPolicy Bypass -File scripts\register-cron-tasks.ps1
 #         (add -ArtifactsOnly to regenerate wrapper .cmd/.ps1 without touching Task Scheduler)
+# 2026-10-09 (K3 brain directive, docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md Part F-6):
+#   (a) new 7th entity ZP-k3-review (daily 07:10, after watchdog 06:43; prompt = k3-ceo-daily-review.md)
+#   (b) post-registration settings patch on every entity: RestartCount=2 / RestartInterval=5m
+#       (absorbs the 0x80070020 sharing-violation launch failures measured 2026-10-07/08)
+#       + MultipleInstances=IgnoreNew (a lane never overlaps itself)
+#   (c) legacy task ZprintPro-CronWatchdog-2125 deleted inline (was writing false PASS/FAIL daily)
 param([switch]$ArtifactsOnly)
 $ErrorActionPreference = 'Stop'
 $Repo   = 'F:\zprintpro-nextjs'
@@ -33,8 +39,15 @@ $Hermes = @(
 if (-not $Hermes) { $Hermes = (Get-Command hermes.exe -ErrorAction SilentlyContinue).Source }
 if (-not $Hermes) { throw 'hermes CLI not found' }
 
-$Python = (Get-Command python.exe -ErrorAction SilentlyContinue).Source
-if (-not $Python) { throw 'python.exe not found in PATH' }
+# Python: pin the interpreter the lanes were originally registered with (hermes venv).
+# Reason (2026-10-09): Get-Command python.exe resolves differently per session (kimi-desktop
+# venv vs admin shell PATH), and a silently different python in the regenerated .cmd changes
+# lane behavior without re-registration. PATH is only a fallback.
+$Python = @(
+  'C:\Users\Administrator\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe'
+) | Where-Object { Test-Path $_ } | Select-Object -First 1
+if (-not $Python) { $Python = (Get-Command python.exe -ErrorAction SilentlyContinue).Source }
+if (-not $Python) { throw 'python.exe not found (hermes venv missing AND nothing in PATH)' }
 
 # Lane executor: the DeepSeek Harness headless CLI (dsh --profile headless), NOT the
 # standalone hermes agent CLI. Reason (2026-09-14 03:4x, verified in the test fire):
@@ -59,7 +72,10 @@ $Lanes = @(
   @{ Name='ZP-gsc-feedback';   Sch=@('/sc','DAILY');             St='22:43'; Timeout=3600; Prompt='zprintpro-gsc-feedback-loop.md'    },
   @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='23:07'; Timeout=1800; Prompt='zprintpro-weekly-meta-refresh.md' },
   @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='05:37'; Timeout=3600; Prompt='zprintpro-blog-deepfix.md'       },
-  @{ Name='ZP-monthly-matrix'; Sch=@('/sc','MONTHLY','/d','1');  St='06:13'; Timeout=3600; Prompt='zprintpro-monthly-matrix-audit.md' }
+  @{ Name='ZP-monthly-matrix'; Sch=@('/sc','MONTHLY','/d','1');  St='06:13'; Timeout=3600; Prompt='zprintpro-monthly-matrix-audit.md' },
+  # 2026-10-09: 7th entity = K3 daily review (SSoT .hermes/cron-prompts/k3-ceo-daily-review.md, registration
+  # method A). Report naming <YYYY-MM-DD>-k3-daily-review.md (reportGlob in .hermes/cron-lanes.json).
+  @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='07:10'; Timeout=1800; Prompt='k3-ceo-daily-review.md'          }
 )
 
 function Write-Wrapper {
@@ -211,6 +227,40 @@ $tr = 'cmd.exe /c "' + $wdCmd + '"'
 $out = & schtasks.exe @('/create', '/tn', 'ZP-cron-watchdog', '/tr', $tr, '/sc', 'DAILY', '/st', '06:43', '/rl', 'HIGHEST', '/f') 2>&1
 Write-Host ("[{0,-18}] start=06:43 rl=HIGHEST -> {1} {2}" -f 'ZP-cron-watchdog', $(if ($LASTEXITCODE -eq 0) { 'OK' } else { 'FAIL' }), ($out -join ' '))
 $created += 'ZP-cron-watchdog'
+
+# -----------------------------------------------------------------------------------
+# Step 3b (2026-10-09): patch runtime settings on every created entity.
+#   RestartCount=2 / RestartInterval=5m  -> absorbs transient launch failures such as
+#     0x80070020 (ERROR_SHARING_VIOLATION, measured on 4 lanes 2026-10-07/08: task never
+#     started because a file was locked at trigger time).
+#   MultipleInstances=IgnoreNew (2)      -> a lane never overlaps its own previous run.
+# -----------------------------------------------------------------------------------
+foreach ($n in $created) {
+  try {
+    $t = Get-ScheduledTask -TaskName $n -ErrorAction Stop
+    $s = $t.Settings
+    $s.RestartCount = 2
+    $s.RestartInterval = 'PT5M'
+    $s.MultipleInstances = 2
+    Set-ScheduledTask -TaskName $n -Settings $s | Out-Null
+    Write-Host ("[{0,-18}] settings patched: RestartCount=2 RestartInterval=PT5M MultipleInstances=IgnoreNew" -f $n)
+  } catch {
+    Write-Host ("[{0,-18}] SETTINGS PATCH FAILED: {1}" -f $n, $_.Exception.Message)
+  }
+}
+
+# -----------------------------------------------------------------------------------
+# Step 3c (2026-10-09): remove the legacy false-reporting task inline
+# (supersedes scripts/remove-legacy-cron-tasks.ps1 for this one target).
+# -----------------------------------------------------------------------------------
+$legacy = 'ZprintPro-CronWatchdog-2125'
+& schtasks.exe /query /tn $legacy 2>&1 | Out-Null
+if ($LASTEXITCODE -eq 0) {
+  & schtasks.exe /delete /tn $legacy /f 2>&1 | Out-Null
+  Write-Host ("legacy {0}: delete exit={1} (0=removed)" -f $legacy, $LASTEXITCODE)
+} else {
+  Write-Host ("legacy {0}: not present, skip" -f $legacy)
+}
 
 Write-Host "`n== schtasks /query /v /fo LIST evidence =="
 foreach ($n in $created) {
