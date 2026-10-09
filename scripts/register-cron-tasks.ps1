@@ -39,15 +39,33 @@ $Hermes = @(
 if (-not $Hermes) { $Hermes = (Get-Command hermes.exe -ErrorAction SilentlyContinue).Source }
 if (-not $Hermes) { throw 'hermes CLI not found' }
 
-# Python: pin the interpreter the lanes were originally registered with (hermes venv).
-# Reason (2026-10-09): Get-Command python.exe resolves differently per session (kimi-desktop
-# venv vs admin shell PATH), and a silently different python in the regenerated .cmd changes
-# lane behavior without re-registration. PATH is only a fallback.
-$Python = @(
+# Python: pick the first candidate that not only exists but actually RUNS.
+# Reason (2026-10-09 incident): the hermes venv python.exe is a uv trampoline whose real
+# interpreter vanished -- Test-Path passes, but executing it fails with
+# "uv trampoline failed to spawn Python child process / os error 2". That broke the 21:17
+# daily-content lane (preflight could not even start; dsh NOT called). So candidates are
+# verified with an execution smoke test, not Test-Path. Order: real Python312 install first,
+# kimi-desktop runtime venv as backup, hermes venv last (dead trampoline), PATH fallback.
+$PythonCandidates = @(
+  'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe',
+  'C:\Users\Administrator\AppData\Roaming\kimi-desktop\daimon-share\daimon\runtime\python\.venv\Scripts\python.exe',
   'C:\Users\Administrator\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe'
-) | Where-Object { Test-Path $_ } | Select-Object -First 1
-if (-not $Python) { $Python = (Get-Command python.exe -ErrorAction SilentlyContinue).Source }
-if (-not $Python) { throw 'python.exe not found (hermes venv missing AND nothing in PATH)' }
+)
+$Python = $null
+foreach ($cand in $PythonCandidates) {
+  if (-not (Test-Path $cand)) { continue }
+  & $cand -c "pass" 2>$null | Out-Null
+  if ($LASTEXITCODE -eq 0) { $Python = $cand; break }
+  Write-Host "python candidate failed smoke test, skipping: $cand"
+}
+if (-not $Python) {
+  $pathPy = (Get-Command python.exe -ErrorAction SilentlyContinue).Source
+  if ($pathPy) {
+    & $pathPy -c "pass" 2>$null | Out-Null
+    if ($LASTEXITCODE -eq 0) { $Python = $pathPy }
+  }
+}
+if (-not $Python) { throw 'no working python.exe found (all candidates failed the exec smoke test)' }
 
 # Lane executor: the DeepSeek Harness headless CLI (dsh --profile headless), NOT the
 # standalone hermes agent CLI. Reason (2026-09-14 03:4x, verified in the test fire):

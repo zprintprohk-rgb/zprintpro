@@ -5,7 +5,7 @@ set PYTHONIOENCODING=utf-8
 set PYTHONUTF8=1
 cd /d "F:\zprintpro-nextjs"
 echo ===== watchdog run start %DATE% %TIME% ===== >> "F:\zprintpro-nextjs\.hermes\logs\cron-ZP-cron-watchdog.log"
-"C:\Users\Administrator\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe" "F:\zprintpro-nextjs\scripts\cron-watchdog.py" >> "F:\zprintpro-nextjs\.hermes\logs\cron-ZP-cron-watchdog.log" 2>&1
+"C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe" "F:\zprintpro-nextjs\scripts\cron-watchdog.py" >> "F:\zprintpro-nextjs\.hermes\logs\cron-ZP-cron-watchdog.log" 2>&1
 set RC=%ERRORLEVEL%
 echo ===== watchdog run end   %DATE% %TIME% exit=%RC% ===== >> "F:\zprintpro-nextjs\.hermes\logs\cron-ZP-cron-watchdog.log"
 exit /b %RC%
