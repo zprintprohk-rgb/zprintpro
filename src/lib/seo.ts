@@ -441,10 +441,10 @@ const categorySeoData: Record<string, {
       'ja': 'チラシ印刷,オリジナルチラシ,両面チラシ,A4 チラシ,A5 チラシ,折込チラシ,急ピッチチラシ,飲食店チラシ,イベントチラシ,店舗チラシ,開業チラシ',
     },
     descriptions: {
-      'zh-hk': '傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'zh-hk': '宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
       'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. ISO 9001 + FSC-certified.',
-      'ja': 'チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
+      'ja': '特急印刷・チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証品質。',
     },
   },
   'packaging': {
@@ -462,7 +462,7 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
+      'zh-hk': '食品包裝印刷 / 包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
       en: 'Custom packaging boxes from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA. Small batch 100 units accepted, rush orders prioritized.',
       ja: 'パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。小ロット 100 個から対応、特急注文優先。30 秒 AI 無料見積もり。',
     },
@@ -502,7 +502,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       // 2026-08-26 K3 §6 轨 1 CTR 修复: 起价前置 + 美妝護膚/餐廳外賣机会词 + DHL 全球 + 5 sharp hook (Free Shipping / Free Design / 100 MOQ / Made for USA / Free Proof)
-      'zh-hk': '紙袋印刷 / 訂做紙袋 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證。',
+      'zh-hk': '紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證。',
       en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft & white card bags with free design. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA.',
       ja: '紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
@@ -626,7 +626,7 @@ const categorySeoData: Record<string, {
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
     descriptions: {
-      'zh-hk': '小冊子印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
+      'zh-hk': '書刊印刷 / 小冊子印刷 10 本起印，HK$2.5 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄，學校、出版、品牌、電商通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，ISO 9001 + FSC 認證。',
       'en': 'Custom saddle stitch booklet printing from $1.20, 10 MOQ. Also perfect bound / hardcover / children books / textbooks / annual reports / catalogs for schools, publishers, brands, e-commerce. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. Rush 24-48h for urgent small runs. 30-second AI quote. ISO 9001 + FSC-certified.',
       'ja': '冊子印刷 10 部から、¥180〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
     },
