@@ -55,6 +55,10 @@ export interface CategoryConversionContent {
   category: string;
   locale: 'zh-hk' | 'en' | 'ja';
   title?: string;
+  // ⚠️ 2026-10-09 实测证伪：本字段**无任何消费者**（全站 grep `\.metaDescription` = 0 命中）。
+  // 类目页 live <meta name="description"> 由 `src/lib/seo.ts` 的 categorySeoData[slug].descriptions[locale]
+  // （+ CATEGORY_INDUSTRIES 后缀）生成。**改 CTR meta 必改 seo.ts，不要改这里。**
+  // 本字段保留仅为历史数据 + 内部一致性；若某块与真值（products.ts MOQ/价格）冲突，仍应修正以免误导。
   metaDescription?: string;
   quickAnswers: QuickAnswer[];
   socialProof: SocialProof[];

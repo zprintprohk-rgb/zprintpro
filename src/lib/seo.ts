@@ -557,7 +557,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '大信封印刷 HK$0.60 起/個,一般信封 HK$0.22 起,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 訂製,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,ISO 9001 認證紙材,DHL 全球 2-4 天速遞。',
-      en: 'Custom envelope printing 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
+      en: 'Custom envelope printing from US$0.14/pc (business) or US$0.28/pc (C4 large), 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
       ja: '封筒印刷 100 個から対応. C4・C5・DL・クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 日本全国 + 沖縄・北海道対応.',
     },
   },
