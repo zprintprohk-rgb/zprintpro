@@ -120,6 +120,41 @@ def last_run_record(repo, lane):
     return last
 
 
+def check_deps(repo):
+    """依赖树完整性 (2026-10-09 加, 源于 10/09 全局 commit 阻断事故).
+
+    事故形态: `node_modules` 被清空 (0 条目) 后, pre-commit 的门童 #24
+    (`node node_modules/tsx/dist/cli.mjs scripts/moq10-books-context-scan.ts`)
+    以 MODULE_NOT_FOUND 失败 -> hook 默认 hard-block -> **任何 commit 都被拦**,
+    但报错文案是「MOQ 口径漂移 (新漂移未清)」-> **把环境缺失伪装成内容违规**,
+    执行层据此去改文案 = 南辕北辙 (违反 §0.23.2 匹配口径).
+
+    判据分层:
+      - HARD (阻塞): node_modules 缺失/空 或 tsx CLI 缺失 —— 门童无法运行, 必拦
+      - WARN (不阻塞): typescript 缺失 —— tsc 门禁不可实测, 记入 checks 供报告引用
+    返回 (ok, msg) 与 check_repo 同形; 另返回 warn 文本列表。
+    """
+    nm = os.path.join(repo, "node_modules")
+    if not os.path.isdir(nm):
+        return False, "node_modules 目录缺失 (依赖未安装) -> 门童/tsc/构建全部不可实测"
+    try:
+        entries = os.listdir(nm)
+    except OSError as e:  # noqa: BLE001
+        return False, f"node_modules 不可读: {e}"
+    real = [e for e in entries if not e.startswith(".")]
+    if len(real) == 0:
+        return False, ("node_modules 为空 (0 条目) -> 门童 #24 会以 MODULE_NOT_FOUND 伪装成"
+                       "「MOQ 漂移」阻断全部 commit; 修: npm install --legacy-peer-deps")
+    warns = []
+    tsx_cli = os.path.join(nm, "tsx", "dist", "cli.mjs")
+    if not os.path.isfile(tsx_cli):
+        return False, ("node_modules/tsx/dist/cli.mjs 缺失 -> 门童 #24 无法运行会误报内容违规; "
+                       "修: 声明 tsx 到 devDependencies 或 npm i -D tsx")
+    if not os.path.isfile(os.path.join(nm, "typescript", "bin", "tsc")):
+        warns.append("typescript 缺失 -> tsc 门禁不可实测 (报告须写 UNVERIFIABLE, 禁写 PASS)")
+    return True, (f"依赖树 OK ({len(real)} 个包)" + ("; WARN: " + "; ".join(warns) if warns else ""))
+
+
 def check_repo(repo):
     """① 目录存在 ② 是 git worktree ③ 分支 = main"""
     if not os.path.isdir(repo):
@@ -175,7 +210,12 @@ def main():
 
     ok, msg = check_repo(repo)
     checks.append({"name": "repo_worktree_branch", "ok": ok, "detail": msg})
-    blocked = None if ok else msg
+
+    # 依赖树完整性 (2026-10-09 加: 防 node_modules 缺失被门童报成「内容违规」)
+    deps_ok, deps_msg = check_deps(repo)
+    checks.append({"name": "deps_tree_integrity", "ok": deps_ok, "detail": deps_msg})
+
+    blocked = None if ok and deps_ok else (msg if not ok else deps_msg)
 
     # 锁检查 (陈旧可夺)
     lock_holder = None
