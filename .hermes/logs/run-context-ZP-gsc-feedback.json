@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-10-06 22:43:02",
+  "generated_at": "2026-10-10 00:01:38",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "7f425401b05a5b1b",
-    "day": "2026-10-06",
+    "this_run_key": "66816bffcba590d2",
+    "day": "2026-10-10",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -18,6 +18,11 @@
         "detail": "repo OK, branch=main"
       },
       {
+        "name": "deps_tree_integrity",
+        "ok": true,
+        "detail": "依赖树 OK (149 个包)"
+      },
+      {
         "name": "lock_free",
         "ok": true,
         "detail": "无锁"
@@ -25,12 +30,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-01 13:57:18"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-06 22:55:14"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=4"
+        "detail": "verdict=ATTENTION problems=10"
       },
       {
         "name": "lock_acquired",
@@ -41,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 30992,
-    "acquired_at": "2026-10-06 22:43:02",
-    "acquired_ts": 1791297782.9107344,
+    "pid": 21544,
+    "acquired_at": "2026-10-10 00:01:38",
+    "acquired_ts": 1791561698.6578846,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-gsc-feedback-20261001T135718",
+      "run_id": "ZP-gsc-feedback-20261006T225514",
       "lane": "ZP-gsc-feedback",
       "trigger": "schtasks",
-      "fired_at": "2026-10-01 13:57:18",
-      "ended_at": "2026-10-01 13:57:18",
-      "idempotency_key": "ca0331a1e1a33e04",
+      "fired_at": "2026-10-06 22:55:14",
+      "ended_at": "2026-10-06 22:55:14",
+      "idempotency_key": "6c8cff7c452774a2",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -62,20 +67,20 @@
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-09-30-gsc-feedback.md",
+      "report": ".hermes/logs/2026-10-06-gsc-feedback.md",
       "files": [
         ".hermes/industry-keyword-matrix.json"
       ],
       "pushed": true,
-      "head": "72962519",
+      "head": "791a654d",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-09-30-gsc-feedback.md",
+    "latest_report": ".hermes/logs/2026-10-06-gsc-feedback.md",
     "delivered_files_from_report": [
-      ".hermes/logs/2026-09-30-gsc-feedback.md",
-      ".hermes/logs/2026-09-30-gsc-suggested-src-fixes.md",
-      ".hermes/industry-keyword-matrix.json (新增 gsc_feedback_2026_09_30 block + 3 处 last_updated 元数据)",
-      "GSC数据/index.json (9/18+9/29 档登记 + 诚实 STALE 状态)"
+      ".hermes/logs/2026-10-06-gsc-feedback.md",
+      ".hermes/logs/2026-10-06-gsc-suggested-src-fixes.md",
+      ".hermes/industry-keyword-matrix.json (新增 gsc_feedback_2026_10_06 block + last_updated / last_updated_event / last_gsc_feedback_update 3 处元数据)",
+      "GSC数据/index.json (10/5 档登记 + freshnessStatus STALE→FRESH + 151 files)"
     ]
   },
   "sibling_lanes": [],
