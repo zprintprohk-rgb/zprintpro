@@ -1,57 +1,80 @@
 # 定时任务状态 (lane-status)
 
-> 生成: 2026-10-07 15:28 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
-> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (14 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
+> 生成: 2026-10-09 23:48 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
+> 结构记录来源: `.hermes/logs/lane-runs.jsonl` (15 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
 > SSoT: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`
-> **verdict: ATTENTION** — ZP-daily-content scheduler LastTaskResult=2147946720 ; ZP-weekly-meta scheduler LastTaskResult=2147946720 ; ZP-blog-deepfix scheduler LastTaskResult=2147946720 ; ZP-monthly-matrix scheduler LastTaskResult=2147946720
+> **verdict: ATTENTION** — ZP-daily-content 2026-10-09 -> STALE ; ZP-daily-content scheduler LastTaskResult=267009 ; ZP-gsc-feedback 2026-10-09 -> MISSING ; ZP-gsc-feedback scheduler LastTaskResult=2147946720 ; ZP-weekly-meta scheduler LastTaskResult=2147946720 ; ZP-blog-deepfix 2026-10-03 -> MISSING ; ZP-blog-deepfix scheduler LastTaskResult=2147946720 ; ZP-monthly-matrix scheduler LastTaskResult=2147946720 ; ZP-k3-review 2026-10-09 -> MISSING ; ZP-k3-review scheduler LastTaskResult=267011
 
-| lane | 触发 | 近 2 天逐日 verdict | state | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |
+| lane | 触发 | 近 8 天逐日 verdict | state | 最近报告 | 调度器 LastRun / Result / Next | 证据日志 |
 |------|------|----------------------|-------|----------|-------------------------------|----------|
-| ZP-daily-content | DAILY 21:17 | 10-06:MISSING 10-07:PENDING | pending | `2026-09-29-ZP-daily-content.md` (2026-09-29) | 2026-10-06 21:47:30 / 2147946720 / 2026-10-07 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
-| ZP-gsc-feedback | DAILY 22:43 | 10-06:OK 10-07:PENDING | pending | `2026-10-06-gsc-feedback.md` (2026-10-06) | 2026-10-06 22:43:01 / 0 / 2026-10-07 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
-| ZP-weekly-meta | WEEKLY FRI 23:07 | — | pending | `2026-09-18-weekly-meta.md` (2026-09-18) | 2026-10-03 14:06:40 / 2147946720 / 2026-10-09 23:07:00 | `.hermes/logs/cron-ZP-weekly-meta.log` |
-| ZP-blog-deepfix | WEEKLY SAT 05:37 | — | pending | `2026-09-19-blog-deepfix.md` (2026-09-19) | 2026-10-03 14:06:40 / 2147946720 / 2026-10-10 05:37:00 | `.hermes/logs/cron-ZP-blog-deepfix.log` |
+| ZP-daily-content | DAILY 21:17 | 10-02:STALE 10-03:STALE 10-04:STALE 10-05:MISSING 10-06:MISSING 10-07:OK 10-08:MISSING 10-09:STALE | quarantined | `2026-10-07-ZP-daily-content.md` (2026-10-07) | 2026-10-09 23:48:43 / 267009 / 2026-10-10 21:17:00 | `.hermes/logs/cron-ZP-daily-content.log` |
+| ZP-gsc-feedback | DAILY 22:43 | 10-02:MISSING 10-03:MISSING 10-04:MISSING 10-05:MISSING 10-06:OK 10-07:MISSING 10-08:MISSING 10-09:MISSING | blocked | `2026-10-06-gsc-feedback.md` (2026-10-06) | 2026-10-09 23:30:35 / 2147946720 / 2026-10-10 22:43:00 | `.hermes/logs/cron-ZP-gsc-feedback.log` |
+| ZP-weekly-meta | WEEKLY FRI 23:07 | 10-02:MISSING 10-09:PENDING | pending | `2026-09-18-weekly-meta.md` (2026-09-18) | 2026-10-09 23:30:35 / 2147946720 / 2026-10-16 23:07:00 | `.hermes/logs/cron-ZP-weekly-meta.log` |
+| ZP-blog-deepfix | WEEKLY SAT 05:37 | 10-03:MISSING | blocked | `2026-09-19-blog-deepfix.md` (2026-09-19) | 2026-10-03 14:06:40 / 2147946720 / 2026-10-10 05:37:00 | `.hermes/logs/cron-ZP-blog-deepfix.log` |
 | ZP-monthly-matrix | MONTHLY 1 06:13 | — | pending | — | 2026-10-01 14:01:01 / 2147946720 / 2026-11-01 06:13:00 | `—` |
+| ZP-k3-review | DAILY 07:10 | 10-02:MISSING 10-03:MISSING 10-04:MISSING 10-05:MISSING 10-06:MISSING 10-07:MISSING 10-08:MISSING 10-09:MISSING | blocked | — | 1999-11-30 00:00:00 / 267011 / 2026-10-10 07:10:00 | `—` |
 
 ## 恢复分类 (recovery_plan — 下一步该干什么)
 
 | lane | state | 动作 | 原因 | 证据/命令 | 建议重试 |
 |------|-------|------|------|-----------|----------|
-| ZP-weekly-meta | pending | `request_human` | 窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过) | `Get-ScheduledTaskInfo -TaskName ZP-weekly-meta` | 需人处理 |
-| ZP-blog-deepfix | pending | `request_human` | 窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过) | `Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix` | 需人处理 |
+| ZP-daily-content | quarantined | `retry` | 跑过但无当日报告 (空转/零产出) | `.hermes/logs/cron-ZP-daily-content.log` | 下轮自然重跑 |
+| ZP-gsc-feedback | blocked | `request_human` | 触发点已过但无任何 run 记录 (调度器/执行器未装载) | `Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo` | 需人处理 |
+| ZP-blog-deepfix | blocked | `request_human` | 触发点已过但无任何 run 记录 (调度器/执行器未装载) | `Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo` | 需人处理 |
 | ZP-monthly-matrix | pending | `request_human` | 窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过) | `Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix` | 需人处理 |
+| ZP-k3-review | blocked | `request_human` | 触发点已过但无任何 run 记录 (调度器/执行器未装载) | `Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo` | 需人处理 |
 
 > 动作含义: `retry`=瞬时/外部原因下轮重跑 ; `modify_payload`=先改入参/prompt 再跑 ; `request_human`=需 K3 动作(附一条可粘贴命令) ; `abort`=设计缺陷/红线, 停手撞墙。
 
 ## 逐 lane 明细 (最近一次应触发日)
 
-### ZP-daily-content — 2026-10-07 `PENDING`
+### ZP-daily-content — 2026-10-09 `STALE`
 
 - 期望触发: 21:17
-- run 记录: {"run_id":"ZP-daily-content-20261004T211831","lane":"ZP-daily-content","trigger":"schtasks","fired_at":"2026-10-04 21:18:31","ended_at":"2026-10-04 21:18:31","idempotency_key":"d67a2dec5f5298a8","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":"NONE","files":[],"pushed":true,"head":"c035f169","source":"lane-git-commit.py"}
-- wrapper 最近一次: start=2026-10-04 21:17:02 end=1 dsh_exit=1 guardBlocked=false runsTotal=15
+- run 记录: {"run_id":"ZP-daily-content-20261007T234051","lane":"ZP-daily-content","trigger":"schtasks","fired_at":"2026-10-07 23:40:51","ended_at":"2026-10-07 23:40:51","idempotency_key":"b9cef1f798f74fe9","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":".hermes/logs/2026-10-07-ZP-daily-content.md","files":["src/app/[locale]/blog/[slug]/page.tsx","src/data/blog-data/en.json","src/data/blog-data/ja.json","src/data/blog-data/zh-hk.json","src/data/blog-posts.ts"],"pushed":true,"head":"e42e6634","source":"lane-git-commit.py"}
+- wrapper 最近一次: start=2026-10-09 23:48:43 end=- dsh_exit=null guardBlocked=false runsTotal=18
 - 当天报告: **缺失**（空转/零产出的判据）
-- 调度器: LastRun=2026-10-06 21:47:30 Result=2147946720 State=Ready
+- 调度器: LastRun=2026-10-09 23:48:43 Result=267009 State=Running
+- notes: ran but no report file dated 2026-10-09
 
-### ZP-gsc-feedback — 2026-10-07 `PENDING`
+### ZP-gsc-feedback — 2026-10-09 `MISSING`
 
 - 期望触发: 22:43
 - run 记录: {"run_id":"ZP-gsc-feedback-20261006T225514","lane":"ZP-gsc-feedback","trigger":"schtasks","fired_at":"2026-10-06 22:55:14","ended_at":"2026-10-06 22:55:14","idempotency_key":"6c8cff7c452774a2","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","state":"completed","blocked_reason":"","guard":{"ok":true},"report":".hermes/logs/2026-10-06-gsc-feedback.md","files":[".hermes/industry-keyword-matrix.json"],"pushed":true,"head":"791a654d","source":"lane-git-commit.py"}
 - wrapper 最近一次: start=2026-10-06 22:43:02 end=0 dsh_exit=0 guardBlocked=false runsTotal=14
 - 当天报告: **缺失**（空转/零产出的判据）
-- 调度器: LastRun=2026-10-06 22:43:01 Result=0 State=Ready
+- 调度器: LastRun=2026-10-09 23:30:35 Result=2147946720 State=Ready
+- notes: no wrapper log run-start and no bus record for this trigger
 
-### ZP-weekly-meta
+### ZP-weekly-meta — 2026-10-09 `PENDING`
 
-近窗口内无应触发日。
+- 期望触发: 23:07
+- run 记录: （总线尚无记录，证据来自 wrapper 日志）
+- wrapper 最近一次: start=2026-09-18 23:07:00 end=0 dsh_exit=0 guardBlocked=false runsTotal=1
+- 当天报告: **缺失**（空转/零产出的判据）
+- 调度器: LastRun=2026-10-09 23:30:35 Result=2147946720 State=Ready
 
-### ZP-blog-deepfix
+### ZP-blog-deepfix — 2026-10-03 `MISSING`
 
-近窗口内无应触发日。
+- 期望触发: 05:37
+- run 记录: {"run_id":"ZP-blog-deepfix-20260919T081911","lane":"ZP-blog-deepfix","trigger":"schtasks","ended_at":"2026-09-19 08:19:11","dsh_exit":null,"wrapper_exit":0,"verdict":"OK","blocked_reason":"","guard":{"ok":true},"report":".hermes/logs/cron-watchdog-alerts.md","files":[],"pushed":true,"head":"f5bb90b6","source":"lane-git-commit.py","idempotency_key":"152fae94b2081d68","state":"completed","backfilled":"idempotency_key/state added 2026-09-19 after P3-10 landed"}
+- wrapper 最近一次: start=2026-09-19 05:37:09 end=0 dsh_exit=0 guardBlocked=true runsTotal=1
+- 当天报告: **缺失**（空转/零产出的判据）
+- 调度器: LastRun=2026-10-03 14:06:40 Result=2147946720 State=Ready
+- notes: no wrapper log run-start and no bus record for this trigger
 
 ### ZP-monthly-matrix
 
 近窗口内无应触发日。
+
+### ZP-k3-review — 2026-10-09 `MISSING`
+
+- 期望触发: 07:10
+- run 记录: （总线尚无记录，证据来自 wrapper 日志）
+- wrapper 最近一次: 无日志
+- 当天报告: **缺失**（空转/零产出的判据）
+- 调度器: LastRun=1999-11-30 00:00:00 Result=267011 State=Ready
+- notes: no wrapper log run-start and no bus record for this trigger
 
 ## 待 K3 管理员清理的遗留任务
 

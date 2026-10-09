@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-07 21:17:02",
+  "generated_at": "2026-10-09 23:48:43",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "39057d9c98a6e5b0",
-    "day": "2026-10-07",
+    "this_run_key": "f5d6936cc3a8b656",
+    "day": "2026-10-09",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -18,6 +18,11 @@
         "detail": "repo OK, branch=main"
       },
       {
+        "name": "deps_tree_integrity",
+        "ok": true,
+        "detail": "依赖树 OK (149 个包)"
+      },
+      {
         "name": "lock_free",
         "ok": true,
         "detail": "无锁"
@@ -25,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-04 21:18:31"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-07 23:40:51"
       },
       {
         "name": "lane_status_available",
@@ -41,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 31680,
-    "acquired_at": "2026-10-07 21:17:02",
-    "acquired_ts": 1791379022.2815516,
+    "pid": 22132,
+    "acquired_at": "2026-10-09 23:48:43",
+    "acquired_ts": 1791560923.8026564,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261004T211831",
+      "run_id": "ZP-daily-content-20261007T234051",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-04 21:18:31",
-      "ended_at": "2026-10-04 21:18:31",
-      "idempotency_key": "d67a2dec5f5298a8",
+      "fired_at": "2026-10-07 23:40:51",
+      "ended_at": "2026-10-07 23:40:51",
+      "idempotency_key": "b9cef1f798f74fe9",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -62,25 +67,30 @@
       "guard": {
         "ok": true
       },
-      "report": "NONE",
-      "files": [],
+      "report": ".hermes/logs/2026-10-07-ZP-daily-content.md",
+      "files": [
+        "src/app/[locale]/blog/[slug]/page.tsx",
+        "src/data/blog-data/en.json",
+        "src/data/blog-data/ja.json",
+        "src/data/blog-data/zh-hk.json",
+        "src/data/blog-posts.ts"
+      ],
       "pushed": true,
-      "head": "c035f169",
+      "head": "e42e6634",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-09-29-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-07-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "1 篇三语博客 comiket-printing-prep-guide (コミケ 109 同人誌印刷備戰指南) × zh-hk/en/ja 全文 + blog-posts.ts 注册 + page.tsx articleSlugs + 4 个 sitemap (unified/zh-hk/en/ja) 各 3 条新 URL"
+      "src/data/blog-data/zh-hk.json",
+      "src/data/blog-data/en.json",
+      "src/data/blog-data/ja.json (thick-card-printing-guide 三语全文)",
+      "src/data/blog-posts.ts (const + 注册)",
+      "src/app/[locale]/blog/[slug]/page.tsx (articleSlugs)",
+      "public/sitemap.xml (3 URL)",
+      "public/sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml (各 1 URL)"
     ]
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "22:43"
-    }
-  ],
+  "sibling_lanes": [],
   "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",

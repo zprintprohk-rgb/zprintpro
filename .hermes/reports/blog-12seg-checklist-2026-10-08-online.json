@@ -1,0 +1,2997 @@
+{
+ "generated_at": "2026-10-08T18:42:56.092Z",
+ "online": true,
+ "site": "https://zprintpro.com",
+ "segments": [
+  {
+   "n": 1,
+   "key": "inverted_pyramid",
+   "name": "倒金字塔首段",
+   "spec": "首段 <=200 字且直接回答主词问题（多少钱/多久/起订量）"
+  },
+  {
+   "n": 2,
+   "key": "quick_answer",
+   "name": "快速答案块",
+   "spec": "bg-*-50 块 >=3，每块 40-60 字直答一个子问题"
+  },
+  {
+   "n": 3,
+   "key": "h2_question",
+   "name": "H2 问句段群",
+   "spec": "H2 >=6 且 >50% 为真实搜索问句；每段正文 <=3 行"
+  },
+  {
+   "n": 4,
+   "key": "comparison_table",
+   "name": "比较表格",
+   "spec": ">=2 个真 <table>（材质×维度 + 价格/工艺/时效）"
+  },
+  {
+   "n": 5,
+   "key": "original_data",
+   "name": "原创数据段",
+   "spec": ">=10 个具体数字，每个标数据来源"
+  },
+  {
+   "n": 6,
+   "key": "customer_case",
+   "name": "客户案例",
+   "spec": ">=1 个一手案例（行业+用量+结果）；无案例须显式标「待校准」，禁编造"
+  },
+  {
+   "n": 7,
+   "key": "eeat",
+   "name": "E-E-A-T 署名段",
+   "spec": "Person + 作者资历 + LinkedIn + FDA + EU REACH"
+  },
+  {
+   "n": 8,
+   "key": "geo_atom",
+   "name": "GEO 知识原子段",
+   "spec": "独立 <section> + 可被 AI 直引的定义/结论块【】"
+  },
+  {
+   "n": 9,
+   "key": "faq",
+   "name": "FAQ 段",
+   "spec": "4-8 组，正文 <p><strong>Q[0-9]*[:：]…</strong><br/>A[:：]…</p> 可被 extractFaqFromHtml 解析"
+  },
+  {
+   "n": 10,
+   "key": "cta",
+   "name": "CTA",
+   "spec": "wa.me CTA 恰好 2 处（顶部 1 + 底部 1），>3 = 意图疲劳"
+  },
+  {
+   "n": 11,
+   "key": "internal_link",
+   "name": "语义锚点内链",
+   "spec": "内链 >=10（Pillar），锚文字 >=5 字且描述性"
+  },
+  {
+   "n": 12,
+   "key": "schema",
+   "name": "Schema 块",
+   "spec": "Article + FAQPage + BreadcrumbList + HowTo + Organization 全齐，且由 page.tsx 生成（content 内嵌 = 重复渲染）"
+  }
+ ],
+ "rows": [
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 14 字 | \"⚡ Quick Answer…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "11 个块，长度 393/194/293/242/…",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 9 = 9 个，问句 7 个（78%）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "182 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"How much does packaging box printing cos\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "10 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 31 字 | \"⚡ Quick Answer (40-second read)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "13 个块，长度 418/402/257/214/…",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 11 + H3 4 = 15 个，问句 9 个（60%）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "195 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"Which waterproof sticker material lasts \"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 153 字 | \"US poster sizes at a glance: A3 (11x17) tabletop, A2 window/…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "3 个块，长度 230/227/214",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 4 + H3 2 = 6 个，问句 4 个（67%）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "86 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 poster-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "7 组可解析 Q&A | 首组 Q=\"What is the minimum order quantity?\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 122 字 | \"Campus education printing MOQ 100 HK$8-300/copy, 5-7 working…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "3 个块，长度 74/70/65",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 11 + H3 3 = 14 个，问句 11 个（79%）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "534 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 campus-education-printing-pillar-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "24 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"Does campus journal MOQ start from 100 p\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 31 字 | \"⚡ Quick Answer (40-second read)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "19 个块，长度 497/229/270/275/…",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 15 = 15 个，问句 13 个（87%）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "8 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "496 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"What is the minimum order quantity for f\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "10 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "FAIL",
+   "evidence": "首段 230 字 > 200 字",
+   "reason": "改 hong-kong-printing-cost-baseline-2026 首段到 100-200 字内直接回答核心问题"
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 0 个合规快速答案块（长度分布 ∅）",
+   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/10 (H2 10)，非问句 10（例: The Key Numbers at a Glance / Methodology: How This Baseli）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "220 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"Why does the online reference price diff\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "23 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "FAIL",
+   "evidence": "首段 487 字 > 200 字",
+   "reason": "改 roll-up-banner-printing-guide 首段到 100-200 字内直接回答核心问题"
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "3 个块，长度 341/373/472",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 3/8 (H2 8)，非问句 5（例: Sizes and price tiers / Artwork specs and safe areas）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "3 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "99 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"How much is one roll-up banner set?\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "13 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 14 字 | \"⚡ Quick Answer…\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "16 个块，长度 415/362/274/364/…",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 Standard Paper Size / 2. CMYK vs RGB vs Pantone: 3）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "411 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"What is the size difference between A5 a\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "14 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "FAIL",
+   "evidence": "首段 211 字 > 200 字",
+   "reason": "改 school-exercise-book-printing-guide 首段到 100-200 字内直接回答核心问题"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 0 个合规快速答案块（长度分布 ∅）",
+   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/7 (H2 7)，非问句 7（例: Back-to-School 2026 Market / 4 Paper Stocks）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "FAIL",
+   "evidence": "仅 0 个 <table>（需 >=2）",
+   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "101 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"100 MOQ accepted?\"",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 8 字 | \"⚡ クイックアンサー…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "10 个块，长度 213/473/392/94/…",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 9 = 9 个，问句 7 个（78%）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "165 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"パッケージボックス印刷 500 個と 5000 個の単価差は?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "10 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 14 字 | \"⚡ クイックアンサー (40 秒で読める)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "17 个块，长度 244/473/358/178/…",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "207 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"防水ステッカーはどの素材が一番長持ち?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "18 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 49 字 | \"ポスターサイズ早わかり： A3（11x17）卓上、A2 窓・イベント、A1 店内メイン壁、A0 大型・屋外。1枚〜 HK…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "4 个块，长度 116/97/106/473",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 5 + H3 2 = 7 个，问句 5 个（71%）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "99 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 poster-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "7 组可解析 Q&A | 首组 Q=\"最小注文数は？\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 36 字 | \"キャンパス教育印刷 100 部〜 HK$8-300/部, 5-7 営業日, ZprintPro 4 大市場 5 大印刷品…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "4 个块，长度 61/59/46/473",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 11 + H3 3 = 14 个，问句 11 个（79%）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "543 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 campus-education-printing-pillar-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "20 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"校園刊物は 100 部から印刷できますか?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 11 字 | \"⚡ クイック答え (40 秒で読了)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "18 个块，长度 328/162/164/189/…",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 14 = 14 个，问句 12 个（86%）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "7 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "493 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"箔押しの最小注文数はいくつですか?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "10 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 85 字 | \"本レポートのすべての価格は ZprintPro 受注システムの実見積もりです。16 製品カテゴリ・91 の実 SKU そ…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 1 个合规快速答案块（长度分布 473）",
+   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/10 (H2 10)，非问句 10（例: 主要数字一覧 / 算出方法: このベースラインの作り方）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "222 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"ネットの参考価格と正式見積もりが違うのはなぜ？\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "23 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 157 字 | \"ロールアップバナーの印刷で最初に決まるのは、 最低セット数・1 セットの価格・納期 の 3 つです。ZprintPro …\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "4 个块，长度 181/186/200/473",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/8 (H2 8)，非问句 8（例: サイズと価格ラダー / 生地：屋内・屋外・半屋外の選び分け）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "3 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "98 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"ロールアップバナー 1 セットの価格は？\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "13 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 133 字 | \"印刷スペック 3 次元対照: サイズ (A1-A6 標準 + 業務汎用) + 色 (CMYK 印刷 / RGB モニター…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "17 个块，长度 282/224/199/273/…",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 標準紙サイズ: 印刷スペック第 1 歩 / 2. CMYK vs RGB vs Pantone: 印）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "392 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "18 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"A5 と A6 のサイズ差は?どちらが大きい?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "14 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 51 字 | \"学校練習帳 3 大課題: 最低数量高すぎ (5,000〜), 用紙薄すぎ (60gsm 裏写り), 納期長すぎ. Zpr…\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 1 个合规快速答案块（长度分布 473）",
+   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/6 (H2 6)，非问句 6（例: 4 用紙 / 3 製本 + 4 規格）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "FAIL",
+   "evidence": "仅 0 个 <table>（需 >=2）",
+   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "83 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"100 部から可?\"",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 8 字 | \"⚡ 快速答案 (40 秒讀完)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "14 个块，长度 205/466/339/121/…",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 10 = 10 个，问句 8 个（80%）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "226 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记 + 结果数字",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"包裝盒印刷 500 個同 5000 個,單價差幾多?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 8 字 | \"⚡ 快速答案 (40 秒讀完)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "15 个块，长度 211/466/295/148/…",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 12 + H3 3 = 15 个，问句 9 个（60%）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "203 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记 + 结果数字",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"防水貼紙用咩材質最襟？\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 29 字 | \"落單前想睇實價同交期，直接到 海報印刷 類目頁，30 秒 AI 報價即時計數。…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "11 个块，长度 144/143/157/156/…",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 9 + H3 3 = 12 个，问句 9 个（75%）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "306 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 poster-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"海報印刷用咩紙最抵?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "12 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 37 字 | \"校園教育印刷 100 份起印 HK$8-300/份, 5-7 個工作天, 智印港 4 大市場 5 大印刷品 × 5 大材…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "4 个块，长度 58/59/52/466",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 11 + H3 3 = 14 个，问句 11 个（79%）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "542 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 campus-education-printing-pillar-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "18 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"校園刊物 100 份起印嗎?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 8 字 | \"⚡ 快速答案 (40 秒讀完)…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "20 个块，长度 302/105/110/151/…",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "PASS",
+   "evidence": "H2 15 = 15 个，问句 13 个（87%）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "8 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "511 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记 + 结果数字",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"燙金印刷最低起印量是幾多?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "10 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 48 字 | \"本報告所有價格均來自 智印港 訂單系統的實際報價——16 個品類、91 個在售 SKU，每個都有港幣固定牌價與最低起訂量…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 1 个合规快速答案块（长度分布 466）",
+   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 1/10 (H2 10)，非问句 9（例: 關鍵數字一覽 / 品類價格基準表（16 品類・91 SKU））",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "221 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"網上參考價同正式報價點解會有出入？\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "23 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 116 字 | \"易拉架（易拉寶）印刷要先答三條問題： 最少印幾多套、每套幾錢、幾時交貨 。智印港易拉架最低 10 套 起印，套價 HK$…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "4 个块，长度 154/145/165/466",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 3/8 (H2 8)，非问句 5（例: 尺寸與套價階梯 / 交稿規格與出血安全區）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "3 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "100 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "FAIL",
+   "evidence": "无客户案例段，也无「待校准」标注",
+   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "6 组可解析 Q&A | 首组 Q=\"易拉架印刷一套幾錢？\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 3 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 65 字 | \"印刷規格 3 維度對照: 尺寸 (A1-A6 標準 + 業務常見) + 色彩 (CMYK 印刷 / RGB 螢幕 / P…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "PASS",
+   "evidence": "17 个块，长度 234/199/183/243/…",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 標準紙張尺寸: 印刷規格第一步 / 2. CMYK vs RGB vs Pantone: 印）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "PASS",
+   "evidence": "4 个 <table>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "395 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记 + 结果数字",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "20 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "5 组可解析 Q&A | 首组 Q=\"A5 同 A6 差幾多?邊個更大?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "14 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 1,
+   "name": "倒金字塔首段",
+   "status": "PASS",
+   "evidence": "首段 67 字 | \"學校訂練習簿最怕踩 3 個坑: 起印量太高 (5,000 本起), 紙材太薄 (60gsm 透底), 交期太久 (4 週…\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 2,
+   "name": "快速答案块",
+   "status": "FAIL",
+   "evidence": "仅 1 个合规快速答案块（长度分布 466）",
+   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 3,
+   "name": "H2 问句段群",
+   "status": "FAIL",
+   "evidence": "问句 0/8 (H2 8)，非问句 8（例: 2026 Q3-Q4 開學季市場概況 / 4 種紙材點揀）",
+   "reason": "把陈述式标题改为用户真实搜索问句"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 4,
+   "name": "比较表格",
+   "status": "FAIL",
+   "evidence": "仅 0 个 <table>（需 >=2）",
+   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 5,
+   "name": "原创数据段",
+   "status": "PASS",
+   "evidence": "136 个数字 + 检出资料来源标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 6,
+   "name": "客户案例",
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 7,
+   "name": "E-E-A-T 署名段",
+   "status": "FAIL",
+   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
+   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 8,
+   "name": "GEO 知识原子段",
+   "status": "PASS",
+   "evidence": "12 个【】原子 + 1 个 <section>",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 9,
+   "name": "FAQ 段",
+   "status": "PASS",
+   "evidence": "4 组可解析 Q&A | 首组 Q=\"學校練習簿 100 本起印嗎?\"",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 10,
+   "name": "CTA",
+   "status": "PASS",
+   "evidence": "CTA 2 处",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 11,
+   "name": "语义锚点内链",
+   "status": "PASS",
+   "evidence": "11 条达标内链",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189611",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=178620",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188608",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=187790",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=215689",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180837",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=165814",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192516",
+   "reason": ""
+  },
+  {
+   "locale": "zh-hk",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=158483",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=209871",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=208831",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=186475",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=224355",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=252243",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=216465",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195240",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=225139",
+   "reason": ""
+  },
+  {
+   "locale": "en",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=170521",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "packaging-box-pricing-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183725",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "sticker-material-pvc-vinyl-removable",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180733",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "poster-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=163360",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "campus-education-printing-pillar-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189995",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "foil-stamping-3-applications-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=213088",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "hong-kong-printing-cost-baseline-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183362",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "roll-up-banner-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167057",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "print-specifications-reference-guide-2026",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193917",
+   "reason": ""
+  },
+  {
+   "locale": "ja",
+   "slug": "school-exercise-book-printing-guide",
+   "seg": 12,
+   "name": "Schema 块",
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=151750",
+   "reason": ""
+  }
+ ]
+}
