@@ -4398,6 +4398,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: 'Greeting Card Printing Buying Guide',
       paragraphs: [
         'First, define the use case: holiday gifts choose 3D pop-up (cross-border hero), correspondence cards choose foil 300gsm Conqueror, thank you cards choose cotton + spot UV. Clear use case cuts material and finish budget in half.',
+        'For corporate buyers, holiday cards are a deadline business: order corporate holiday cards by mid-November for guaranteed pre-Christmas delivery. We print company Christmas cards and bulk business holiday cards from 10 MOQ — typical corporate runs are 100-5,000 pcs with foil-stamped logos on 300-350gsm card stock, 3-5 business days production, plus DHL 2-4 day delivery worldwide. Free 4-hour proof before bulk production.',
         'Holiday card key is design consistency: Christmas / New Year / Valentine cards use unified visual language, customer repurchase rate +30%. Recommend 3-5 templates per season to reduce design cost.',
         'Cross-border hero 3D pop-up cards: 7-day 780K RMB GMV (TikTok Paper Love case), $14.99 retail, ¥7-12 wholesale = 15x margin. 3D pop-up is the cross-border core moat.',
         'FSC-certified + soy ink + seed paper (plantable) — three eco selling points. EU / US customers willing to pay 20% premium, matching ESG procurement trends.',
@@ -4487,6 +4488,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: 'グリーティングカード印刷購入ガイド',
       paragraphs: [
         'まず用途を決める:祝日ギフトは立体 3D (越境ヒット)、法人カードは箔押し 300g コンカラー、サンキュカードはコットン + スポット UV。明確な用途で素材と工法の予算が半分に。',
+        '年賀状印刷は10月が注文の勝負所です。当店は10月から受付開始、10月末までのご注文で早割対象(早割期限 2026-10-31、年度末 2027-10 に再確認)。11月に注文が集中する前に発注すれば、デザイン確認と繁忙期スケジュールの両立がしやすくなります。10枚から・箔押し・スポットUV対応、12月中旬到着の配送プランと喪中はがきの代替プランもあり、年末の挨拶回りを1回の発注で完結できます。',
         '祝日カードの鍵はデザイン一貫性:クリスマス / 新年 / バレンタインカードを統一視覚言語で、リピート率 +30%。季節ごとに 3-5 テンプレート準備でデザインコスト削減推奨。',
         '越境ヒット立体 3D カード:7 日 78 万元 RMB GMV (TikTok Paper Love ケース)、小売 $14.99、卸値 ¥7-12 = 15 倍マージン。立体 3D は越境コアモート。',
         'FSC 認証 + 大豆インク + 種紙 (植付可能) の 3 大エコ売りポイント。EU / US 顧客は 20% プレミアム払い、ESG 調達トレンド適合。',

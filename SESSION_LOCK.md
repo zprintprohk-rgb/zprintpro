@@ -1,9 +1,17 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+> **当前持有声明（2026-10-09 10:4x）**
+> - **持有者**: K3 会话（首席 SEO/AEO/GEO 参谋 · 红旗 1 P1 修复）
+> - **意图**: R1-1/R1-2/R1-3 —— greeting-cards 类目 en/ja buyingGuide 主题段 + 6 条精确锚内链（年賀状印刷 / corporate holiday cards），零 title 改动
+> - **写入范围**: `src/data/category-seo-content.ts`、`src/data/blog-data/ja.json`、`src/data/blog-data/en.json`
+> - **预计时长**: ≤60 min（单次攒批）
+> - **释放条件**: 门检全过 + 攒批 commit/push 完成即释放
+> - **lane.lock 复查**: `.hermes/locks/` 空目录，无定时车道持锁
+
 > **性质**: 声明式软锁 + 审计链。**非强制互斥**（HTTP/Git 无强制锁），作用是
 > 「先声明、后写入」；不遵循本协议的会话不影响其写入能力，但本文件为**冲突追溯提供证据链**。
 > **建立**: 2026-09-20 17:2x（K3 2026-09-20 指示：方案1 只读准备 + 看门狗锁协议）
-> **状态**: ⚪ **已释放（RELEASED）** — 2026-09-29 02:2x 由 GSC/Merchant Center 修复会话释放：
+> **状态**: 🔒 **持有中（10-09 红旗 1 P1 修复会话）** — 上一释放记录见下：
 > commit `1cd7b221`（已推） + 攒批 `e0b5ab39`（含 d6826168/6c7be1dc/bad3d3e0，已推）均上线；
 > 改动 = 真实评价机制（src/data/product-reviews.ts）+ schema 品牌/image 修复 + merchant-feed 加固 +
 > 假评价死代码清除 + middleware rewrite 尝试后回退（CF 实证无效）。详见
