@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-09 23:54:50",
+  "generated_at": "2026-10-10 00:28:04",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "f5d6936cc3a8b656",
-    "day": "2026-10-09",
+    "this_run_key": "edf51b4a70d4770c",
+    "day": "2026-10-10",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-09 23:49:41"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-10 00:01:37"
       },
       {
         "name": "lane_status_available",
@@ -46,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 19652,
-    "acquired_at": "2026-10-09 23:54:50",
-    "acquired_ts": 1791561290.9132242,
+    "pid": 8028,
+    "acquired_at": "2026-10-10 00:28:04",
+    "acquired_ts": 1791563284.315354,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261009T234941",
+      "run_id": "ZP-daily-content-20261010T000137",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-09 23:49:41",
-      "ended_at": "2026-10-09 23:49:41",
-      "idempotency_key": "6dd8f2cb44bec527",
+      "fired_at": "2026-10-10 00:01:37",
+      "ended_at": "2026-10-10 00:01:37",
+      "idempotency_key": "de00e828df5527a7",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -67,43 +67,26 @@
       "guard": {
         "ok": true
       },
-      "report": "docs/2026-10-08-en-ja-page-one-execution-plan.md",
-      "files": [],
-      "pushed": true,
-      "head": "1c77f648",
+      "report": ".hermes/logs/2026-10-09-ZP-daily-content.md",
+      "files": [
+        "src/app/[locale]/blog/[slug]/page.tsx",
+        "src/data/blog-data/en.json",
+        "src/data/blog-data/ja.json",
+        "src/data/blog-data/zh-hk.json",
+        "src/data/blog-posts.ts"
+      ],
+      "pushed": false,
+      "head": "3dcd5524",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-07-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-09-ZP-daily-content.md",
     "delivered_files_from_report": [
       "src/data/blog-data/zh-hk.json",
       "src/data/blog-data/en.json",
-      "src/data/blog-data/ja.json (thick-card-printing-guide 三语全文)",
-      "src/data/blog-posts.ts (const + 注册)",
-      "src/app/[locale]/blog/[slug]/page.tsx (articleSlugs)",
-      "public/sitemap.xml (3 URL)",
-      "public/sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml (各 1 URL)"
+      "src/data/blog-data/ja.json（new-year-card-printing-2027-guide 三语全文）; src/data/blog-posts.ts（const lpNewYearCardPrinting2027Guide L2246 + blogPosts 注册 L2451）; src/app/[locale]/blog/[slug]/page.tsx（articleSlugs +1）; public/sitemap.xml（+3 URL，738→741）; public/sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml（各 +1 URL，hreflang×4）"
     ]
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "MISSING",
-      "report": null,
-      "start": "22:43"
-    },
-    {
-      "lane": "ZP-weekly-meta",
-      "status": "PENDING",
-      "report": null,
-      "start": "23:07"
-    },
-    {
-      "lane": "ZP-k3-review",
-      "status": "MISSING",
-      "report": null,
-      "start": "07:10"
-    }
-  ],
+  "sibling_lanes": [],
   "retry_queue": [
     {
       "kind": "UNRESOLVED_DAY",

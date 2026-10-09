@@ -2269,6 +2269,34 @@ const lpNewYearCardPrinting2027Guide: BlogPostMeta = {
   },
 };
 
+// 2026-10-10 ZP-daily-content: 企業向けホリデーカード / corporate holiday cards (紅旗 1 en 側 0 展示 → body 内容層承接; 10-09 大脳選題取詞優先表 #2; 未批篇的 en 另一半)
+// 承接 SKU BC-001~BC-006 (greeting-cards 類目 6 款, 10 張/枚起印); 價格/規格/交期全部 products.ts 派生
+// 3 快速答案 + 3 表格 + 6 FAQ + 3 wa.me CTA + 內鏈 11 (category + 6 SKU + envelopes + 3 同簇 blog)
+const lpCorporateHolidayCardsPrintingGuide: BlogPostMeta = {
+  slug: 'corporate-holiday-cards-printing-guide',
+  categoryKey: 'card',
+  source: 'daily',
+  date: '2026-10-10',
+  title: {
+    'zh-hk': "企業聖誕卡訂製：10 張起 燙金 公司賀卡 HK$1 起 | 智印港",
+    en: "Corporate Holiday Cards 2026: 10 MOQ, US$0.13 | ZprintPro",
+    ja: "法人ホリデーカード 10枚¥20〜 箔押し 大量発注 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "企業聖誕卡／公司賀卡訂製指南：賀卡類目 6 款全部 10 張起印，高級賀卡 HK$1.0-1.8/張、400g 厚卡 HK$1.2-2.2/張、燙金款 HK$1.8-3.2/張，標準尺寸 127×178mm，3-5 個工作天生產、DHL 全球 2-4 天。客戶與員工名單分層、公司 Logo 同個人化問候語、大量採購階梯同 11 月中落單時間表一次講清，附 6 條 FAQ。",
+    en: "Corporate holiday cards for US businesses: all 6 greeting card SKUs from a 10-card minimum, premium 300gsm from US$0.13/card, foil-stamped from US$0.23, 127x178mm, 3-5 business day production and DHL 2-4 day delivery. Covers client and employee tiers, logo printing, volume planning and the mid-November order deadline, with 6 FAQs.",
+    ja: "法人・企業向けホリデーカードの発注ガイド。6 SKUすべて10枚から、1枚¥20〜（箔押しは¥35〜）、127×178mm、納期3〜5営業日、DHL国際配送2〜4日。取引先と従業員のリスト分け、社名・ロゴと個別名入れ、ロット別の考え方、11月中旬までの発注スケジュールを6つのFAQとともに解説します。",
+  },
+  targetKeywords: {
+    primary: 'corporate holiday cards',
+    secondary: [
+      'corporate holiday cards', 'business holiday cards', 'custom holiday cards for business', 'company christmas cards', 'bulk holiday cards',
+      '企業聖誕卡', '公司賀卡訂製', '企業賀卡 10 張起', '客戶員工聖誕卡',
+      '法人ホリデーカード', '企業向けカード印刷', '社名入りカード 10枚から', '取引先 挨拶状 印刷',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2449,6 +2477,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpChristmasCardPrinting2026,
   // 2026-10-09 ZP-daily-content: 年賀状印刷ガイド 2027 (B7 queue W8 季节窗授权提前交付, ja 主写三语; 早割 10/31, greeting-cards BC-001~006 承接)
   lpNewYearCardPrinting2027Guide,
+  // 2026-10-10 ZP-daily-content: 企業ホリデーカード / corporate holiday cards (紅旗 1 en 側 0 展示 body 内容層承接; 10-09 大脳取詞表 #2; W10「年賀状 en 篇」的 en 另一半)
+  lpCorporateHolidayCardsPrintingGuide,
   ];
 
 // =============================================================================

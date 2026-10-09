@@ -763,6 +763,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'thick-card-printing-guide', // 2026-10-07 ZP-daily-content: 卡片印刷 0.5mm 厚卡 + 燙金 + 局部 UV (B7 queue W7, greeting-cards BC-001~006 承接)
   'christmas-card-printing-2026', // 2026-10-09 K3 拍板提前: 聖誕卡印刷 2026 (B7 queue W9 R5 軍令 10/14 前發佈; ja 雙目標年賀状印刷, 紅旗1 blog 層承接)
   'new-year-card-printing-2027-guide', // 2026-10-09 ZP-daily-content: 年賀状印刷ガイド 2027 (B7 W8 季节窗授权提前交付, ja 主写三语; 早割 10/31 倒计时 + greeting-cards BC-001~006 承接)
+  'corporate-holiday-cards-printing-guide', // 2026-10-10 ZP-daily-content: 企業ホリデーカード / corporate holiday cards (紅旗 1 en 側 0 展示 body 内容層承接; 10-09 大脳取詞表 #2 + W10 en 篇)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
