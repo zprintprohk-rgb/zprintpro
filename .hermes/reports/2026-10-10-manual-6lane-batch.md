@@ -86,6 +86,41 @@ Node.js v24.18.1
 | 6 条车道 `pushed` | **全 False** — `lane-git-commit.py` 的 §0.25 30 min 硬下限拦下（距 00:09 不足 30 min） |
 | 处置 | 按 **§0.25.8**：**不阻塞等待**（禁 `Start-Sleep` 凑窗口），commit 留本地，push 交下一个周期（周六 05:37 `ZP-blog-deepfix` 自然档位 → gap 已 >30 min，或主会话攒批 push） |
 
+## 3.5 追加：调度器补跑批（00:28–00:47）与两个根因级发现
+
+用户追加指令「补执行 ZP-daily-content + ZP-gsc-feedback」「也补跑 ZP-blog-deepfix」→ 全部走**真实调度器**（`schtasks /Run`，非手动 wrapper）。
+
+| 车道 | 触发 | 结果 | 判定 |
+|---|---|---|---|
+| ZP-daily-content | `schtasks /Run` 00:28:03 → `SUCCESS` / `State=Running` | dsh exit=0，真交付 `corporate-holiday-cards-printing-guide` 三语 + `blog-posts.ts` + `page.tsx` + sitemap（741→744） | 车道自报 **OK**；**host 侧 commit 被门童硬拦**（见下） |
+| ZP-gsc-feedback | `schtasks /Run` 00:35:35 → `SUCCESS` | **dsh exit=1，零交付** | ❌ 死于 **`dsh: QUOTA: Insufficient Balance`** |
+| ZP-blog-deepfix | `schtasks /Run` 00:43:02 → `SUCCESS` | 幂等命中（`IDEMPOTENT_SKIP`，同一 `this_run_key 37eaab37ee14ebaf` 已由 00:17 档交付），零 src 改动 | **OK / skipped**，含 4 项 handoff |
+
+**结论 1（好消息）**：`0x800710E0` 启动拒绝**未复现** —— 三条补跑全部 `SUCCESS` 拉起，说明 §1 的启动器修复 + 另一会话的 `RestartCount` 补丁已让**真实调度链路恢复**（这也回答了上一轮留的悬案）。
+
+**结论 2（坏消息 A · 余额）**：`ZP-gsc-feedback` 补跑死于 **DeepSeek 官方 key 余额耗尽**（`dsh: QUOTA: Insufficient Balance`）。AGENTS.md §0.35.2 早已记录 `hermes.exe` 因 402 停用；现在 **headless 车道用的 dsh 路线也开始 402**。表现为**间歇**（同批 daily-content / blog-deepfix 却跑完），故不能以"本轮跑通"推断"路线健康"。**需 K3/管理员充值或换 key**，否则夜间车道会随机半途死亡且**表现为"零交付"**，与"没事可做"无法区分。
+
+**结论 3（坏消息 B · 门童被自己人绕过，已修）**：
+- 00:35 档 `ZP-daily-content` 的新正文在 `src/data/blog-data/zh-hk.json:825` 写了 `<strong>待校準</strong>`（GSC 后台口径词）→ 门童 **#16 §0.23.1 硬拦（🔴 1）**，`lane-git-commit.py` 正确 `return 4`、并打印"需人工处理"。
+- **但**该分支随后调用 `_commit_reports()`，其中 `git commit --no-verify` 会把**仍然 staged 的生产文件一并提交**（src commit 失败时从未 `git reset` 撤出 index）→ 红线内容被塞进名为「lane 报告」的 commit **`797c84e3`**，并随 00:46 的 push **上了 origin/main**。
+- 即：**门童的拦截被收尾步骤半路作废**；这是对全部 5 条车道生效的通用绕过路径，不只是本次事故。
+- **处置**：`ff08997d`（清 `待校準`，走真门童复验 🔴 0 放行）+ `8e0c53d3`（`lane-git-commit.py` 双修：拦下后先 `git reset` 撤出 index；报告 commit 改 **pathspec 限定**，防顺带提交任何他人 staged 改动）。隔离 repo 实测：staged 双文件 → 报告 commit 只含报告文件，生产文件留 staged 且工作区保留。
+
+**push**：最后一次 push `ab851992` @ 00:46:53 → 我方两修（`ff08997d` / `8e0c53d3`）**留本地**，按 §0.25 30min 硬下限 + §0.25.8「不阻塞、后台异步」交由后台任务在 **01:16:53 窗口**推送，并 push 后轮询线上页面确认 `待校準` 已消失（.hermes/logs/_deferred-push-20261010.log）。
+
+## 3.6 续办批（01:0x）：已修 3 项 + 已验 2 项 + 1 项刻意未动
+
+| 项 | 动作 | 证据 |
+|---|---|---|
+| 🔴 线上 §0.23.1 泄漏（zh-hk:825 `待校準`） | **已修** `ff08997d` | 走真门童复验 🔴 0 放行 |
+| 🔴 门童被收尾步骤绕过 | **已修** `8e0c53d3` | 隔离 repo 实测：staged 双文件 → 报告 commit 只含报告文件 |
+| 🟠 幂等键双口径（§6-A，机器判重失效） | **已修** `8e626dee` | `.hermes/_verify-idempotency-key.py` 四断言全过：两侧算法一致；**旧口径精确复算出真实 lane-runs 值 `e5038594dc97fb9f`**，preflight 值 `37eaab37ee14ebaf` ⇒ 同日两键确证；新逻辑读 run-context 单一来源，缺文件回退同口径，并消除跨午夜 day 分歧 |
+| 🟠 挂账 #11「daily-content 遗留 5 个脏生产文件」 | **结案** | 5 文件已随 `797c84e3` 入库（即绕过路径），红线标记由 `ff08997d` 清除；`git status -- src/` 空、门童 🔴 0 ⇒ 不再有"脏/被拦"残留 |
+| 🟡 挂账 #12「线上 FAQPage JSON-LD 未验」+ daily-content NEXT③「三语 200」 | **已验** | 线上实测（`.hermes/_live-newarticle-probe.mjs`）：zh-hk/en/ja 三语 **status=200**，**FAQPage=1**，title 正常（zh-hk「企業聖誕卡訂製：10 張起 燙金 公司賀卡 HK$1 起」） |
+| 🔴 MOQ 漂移（§4 envelopes / §5 greeting-cards） | **刻意未改** | 客户可见商务数字，§0.22 SOP-10 第 3 款「不推断数字」+ §5 自陈「改前须 K3/产品一句确认」⇒ 需一句口径确认。**真值证据已备齐**：greeting-cards 簇 6/6 SKU `products.ts minQuantity=10`、报价引擎按 10 计算、该簇新支柱文章**线上 title 亦写「10 張起 / 10 MOQ / 10枚」** ⇒ 4 个 SKU 文案的「100」为 v22 名片改贺卡期残留漂移 |
+
+**线上现状（01:05 实测）**：zh-hk 页 **仍含 2 处 `待校準`**（RSC 载荷 + 正文各 1），en/ja = 0 —— 因 `ff08997d` 尚未 push。窗口 01:16:53 到点由后台任务推送并轮询确认归零。
+
 ## 4. 交给下一步的 handoff（各车道报告 NEXT 摘录）
 
 1. **ZP-monthly-matrix 查出根因级缺陷（建议尽快归档）**：历史月度报告命名为 `YYYY-MM-monthly-matrix-audit.md`（8/9/10 月三份），**不符合** §0.35.3.6 强制的 `<YYYY-MM-DD>-<lane>.md` → `lane-status.mjs` / `lane-preflight.py` 对本车道判 `lastReportFile=null` / `previous_run=null`，**幂等账本与数据继承已断链 3 个月**。本报告起改用合口径命名。
