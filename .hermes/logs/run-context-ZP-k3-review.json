@@ -1,6 +1,6 @@
 {
   "lane": "ZP-k3-review",
-  "generated_at": "2026-10-10 00:21:33",
+  "generated_at": "2026-10-10 07:10:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
@@ -29,13 +29,13 @@
       },
       {
         "name": "prev_run_known",
-        "ok": false,
-        "detail": "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准"
+        "ok": true,
+        "detail": "总线最近记录 verdict=OK @ 2026-10-10 00:23:56"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=10"
+        "detail": "verdict=ATTENTION problems=6"
       },
       {
         "name": "lock_acquired",
@@ -46,17 +46,58 @@
   },
   "lock": {
     "lane": "ZP-k3-review",
-    "pid": 12364,
-    "acquired_at": "2026-10-10 00:21:33",
-    "acquired_ts": 1791562893.6898036,
+    "pid": 27200,
+    "acquired_at": "2026-10-10 07:10:02",
+    "acquired_ts": 1791587402.0639696,
     "host": "JEROME"
   },
   "previous_run": {
-    "bus_record": null,
-    "latest_report": null,
-    "delivered_files_from_report": []
+    "bus_record": {
+      "run_id": "ZP-k3-review-20261010T002356",
+      "lane": "ZP-k3-review",
+      "trigger": "schtasks",
+      "fired_at": "2026-10-10 00:23:56",
+      "ended_at": "2026-10-10 00:23:56",
+      "idempotency_key": "416be6a67096c2f9",
+      "dsh_exit": null,
+      "wrapper_exit": 0,
+      "verdict": "OK",
+      "state": "completed",
+      "blocked_reason": "",
+      "guard": {
+        "ok": true
+      },
+      "report": ".hermes/logs/2026-10-10-ZP-k3-review.md",
+      "files": [],
+      "pushed": false,
+      "head": "8e8d617e",
+      "source": "lane-git-commit.py"
+    },
+    "latest_report": ".hermes/logs/2026-10-10-ZP-k3-review.md",
+    "delivered_files_from_report": [
+      ".hermes/logs/2026-10-10-ZP-k3-review.md（本报告 = 本轮唯一产物；零 src 改动、零 .hermes 第三方文件改写）"
+    ]
   },
-  "sibling_lanes": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-daily-content",
+      "status": "STALE",
+      "report": "2026-10-10-ZP-daily-content.md",
+      "start": "21:17"
+    },
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "OK",
+      "report": "2026-10-10-ZP-gsc-feedback.md",
+      "start": "22:43"
+    },
+    {
+      "lane": "ZP-blog-deepfix",
+      "status": "OK",
+      "report": "2026-10-10-ZP-blog-deepfix.md",
+      "start": "05:37"
+    }
+  ],
   "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
