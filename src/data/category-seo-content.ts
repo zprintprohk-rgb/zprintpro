@@ -4398,6 +4398,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: 'Greeting Card Printing Buying Guide',
       paragraphs: [
         'First, define the use case: holiday gifts choose 3D pop-up (cross-border hero), correspondence cards choose foil 300gsm Conqueror, thank you cards choose cotton + spot UV. Clear use case cuts material and finish budget in half.',
+        'Custom holiday cards start at US$0.13 per card with a 10-card minimum order and 3-5 business day production, so US teams can still hit the December mailing season. Six finishes cover every budget: premium 300g (US$0.13), matte (US$0.14), thick 400g (US$0.15), spot UV (US$0.18), and three-color foil (US$0.23). DHL Express delivers to the US in 2-4 days; a 30-second AI quote fixes your exact price before you commit.',
         'For corporate buyers, holiday cards are a deadline business: order corporate holiday cards by mid-November for guaranteed pre-Christmas delivery. We print company Christmas cards and bulk business holiday cards from 10 MOQ — typical corporate runs are 100-5,000 pcs with foil-stamped logos on 300-350gsm card stock, 3-5 business days production, plus DHL 2-4 day delivery worldwide. Free 4-hour proof before bulk production.',
         'Holiday card key is design consistency: Christmas / New Year / Valentine cards use unified visual language, customer repurchase rate +30%. Recommend 3-5 templates per season to reduce design cost.',
         'Cross-border hero 3D pop-up cards: 7-day 780K RMB GMV (TikTok Paper Love case), $14.99 retail, ¥7-12 wholesale = 15x margin. 3D pop-up is the cross-border core moat.',
@@ -4412,6 +4413,8 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: 'What is the minimum order for greeting card printing?', a: '10 sheets minimum. 50-sheet rush available; 100+ unlocks bulk discount — ideal for design confirmation or first-time clients.' },
       { q: 'When should businesses order corporate holiday cards?', a: 'Order by mid-November for guaranteed pre-Christmas delivery. Bulk corporate holiday cards (100-5,000 pcs) ship DHL 2-4 days worldwide; foil-stamped company cards need 3-5 business days production.' },
+      { q: 'How much do custom corporate holiday cards cost?', a: 'From US$0.13 per card (premium 300g) to US$0.23 per card (foil), all at a 10-card minimum. Final pricing depends on size, stock, and finish — the AI quote confirms it in 30 seconds.' },
+      { q: 'Can you print our logo and pre-printed signatures?', a: 'Yes. Send your logo and signature artwork; free prepress file check is included, and digital proofing is available before the full run.' },
       { q: 'Do you offer company Christmas cards with our logo?', a: 'Yes — upload your logo and we foil-stamp / spot-UV it on 300-350gsm card stock. 10 MOQ, free 4-hour proof, free shipping over $99 to all 50 US states.' },
       { q: 'How fast can I get 3D pop-up cards?', a: 'Digital proof 24h, bulk 3-5 business days, rush 24-48h available on request.' },
       { q: 'Can I print custom designs?', a: 'Yes. AI / PSD / PDF / CDR files supported, 300dpi CMYK. Free prepress check.' },
@@ -4488,6 +4491,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
       title: 'グリーティングカード印刷購入ガイド',
       paragraphs: [
         'まず用途を決める:祝日ギフトは立体 3D (越境ヒット)、法人カードは箔押し 300g コンカラー、サンキュカードはコットン + スポット UV。明確な用途で素材と工法の予算が半分に。',
+        'オリジナル年賀状印刷は1枚¥20から・10枚の小ロットで注文できます。印刷は3〜5営業日、DHLで日本全国へ2〜4日でお届けします。仕上がりは6種類——プレミアム300g（¥20）、マット（¥21）、極厚400g（¥23）、部分UV（¥27）、三色箔押し（¥35）。年賀状の早割は10月末までが目安で、11月以降は印刷が混み合い納期が伸びます。30秒AI見積もりで、枚数・紙質・加工込みの正確な金額をすぐ確認できます。',
         '年賀状印刷は10月が注文の勝負所です。当店は10月から受付開始、10月末までのご注文で早割対象(早割期限 2026-10-31、年度末 2027-10 に再確認)。11月に注文が集中する前に発注すれば、デザイン確認と繁忙期スケジュールの両立がしやすくなります。10枚から・箔押し・スポットUV対応、12月中旬到着の配送プランと喪中はがきの代替プランもあり、年末の挨拶回りを1回の発注で完結できます。',
         '祝日カードの鍵はデザイン一貫性:クリスマス / 新年 / バレンタインカードを統一視覚言語で、リピート率 +30%。季節ごとに 3-5 テンプレート準備でデザインコスト削減推奨。',
         '越境ヒット立体 3D カード:7 日 78 万元 RMB GMV (TikTok Paper Love ケース)、小売 $14.99、卸値 ¥7-12 = 15 倍マージン。立体 3D は越境コアモート。',
@@ -4501,6 +4505,8 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: '年賀状印刷はいつから注文できますか?', a: '10月から受付開始、12月中旬までに到着する配送プランあり。2027年賀状は10月中のご注文で早割対象。年末繁忙期は4週間前発注推奨。' },
+      { q: '年賀状印刷の料金はいくらからですか？', a: '1枚¥20から（プレミアム300g）、箔押しでも1枚¥35から。10枚の最小ロットで全仕様注文可能です。枚数が増えるほど単価は下がります。' },
+      { q: '社名入り・ロゴ入りの年賀状は作れますか？', a: 'はい。社名・ロゴ・挨拶文のデータをお送りいただければ、無料の入稿前データチェック付きで印刷します。デジタル校正も可能です。' },
       { q: '喪中の場合はどうすればいいですか?', a: '喪中はがきに対応可。年賀状の代わりに喪中見舞いを10枚から印刷、郵送年賀状より早い12月上旬発送プランも選択可能。' },
       { q: 'グリーティングカード印刷の最小注文数は?', a: '10 枚から。50 枚の小ロットもデザイン確認や初回クライアント様に可能。' },
       { q: '立体 3D カードの納期は?', a: 'デジタルサンプル 24 時間、量産 3-5 営業日、緊急 24-48 時間対応可。' },
