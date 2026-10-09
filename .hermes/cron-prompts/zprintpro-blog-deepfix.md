@@ -12,6 +12,18 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
+> # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
+> 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
+>
+> **本车道（blog-deepfix 周六 05:37）指令**：
+> 1. **10/11 当周主题：greeting-cards 簇深修**——6 SKU 描述补 holiday/年賀状场景句（各 ≤1 句，零 title 改动；数据源改动走 CSV 源头 + 生成器，SOP-5 禁手搓派生）。红旗 1 承接段已上线（841a7260），本批是密度补强不是重建。
+> 2. **新块 FAQ regex 格式扫描**：envelopes:en / envelopes:ja / flyers:ja（e6254bab 新增块）过 extractFaqFromHtml 可解析性（`<p><strong>Qn: 问?</strong><br/>A: 答</p>` 格式），线上 curl 验证 FAQPage JSON-LD 收录资格。
+> 3. **千问 P0 技术底座复核（只读）**：hreflang 三向对称（en↔ja↔zh-HK，语言码 zh-HK 非 zh-TW、jp→ja）+ Organization schema sameAs ×3 locale + 独立 canonical——缺陷入报告挂账，不擅自修。
+> 4. 后续周六簇轮换：books/catalog 簇 → packaging 簇 → posters 簇。
+<!-- K3-BRAIN-INJECT-2026-10-09 END -->
+
+
 > **[v9.3 指令区 · 2026-09-12 K3 拍板 · 必读第 -3 优先级]** 来源 `docs/2026-09-12-k3-directive-v93-home-fix-money-words.md`（执行层评估 A 93/100 后新增标准 + 8 锁词 + 3 件终裁）
 >
 > **S1 答案块字数断言（新门禁 · 2026-09-12 生效）**：凡涉答案块/FAQ/答案卡（quickAnswers / AEO 3 直接答案卡 / FAQPage）的批次，**验收必跑字数断言** —— zh-hk 答案规格区 **40-60 全角字，硬上限 ≤60**；超出部分移到 FAQ 详情，不得留在答案卡。无字数断言的批次视为未验收。（教训：B1 已有 3 品类超标 red-packets 116 / educational 254 / japan-doujin 128 未被发现）

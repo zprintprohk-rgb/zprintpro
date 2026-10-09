@@ -12,6 +12,18 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
+> # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
+> 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
+>
+> **本车道（daily-content 21:17）指令**：
+> 1. **B7 选题库刷新（季节窗授权，K3 10/9 拍板）**：聖誕卡印刷 2026（三语）已由 10/9 人手会话提前交付——**开工幂等三问先查** blog-data 是否已有 christmas-2026 类 slug，存在即登记不重复。**W8（10/14-10/20）= 年賀状印刷ガイド（ja 主写三语）**：早割窗 10/31 倒计时，引用口径「早割は10月末までが目安」（到期复核日 2026-11-01）+ 1枚¥20から・10枚・3-5営業日・DHL 2-4日（products.ts BC-001~006 真值）。W9（10/21-27）顺延原 W10 项；W10（10/28-11/3）= 年賀状 en 篇 + 月曆 2027 篇。
+> 2. **选题取词优先表（10-09 验证锚点）**：年賀状印刷 / corporate holiday cards / 聖誕卡印刷 / doujinshi printing / wholesale saddle stitch booklet / 月曆 2027——每篇 targetKeywords 优先从此表取。
+> 3. **红旗 1 已修复**（commit 841a7260：ja/en greeting-cards 承接段 + 6 精确锚 + IndexNow）——不重复做；本车道只写新 blog。
+> 4. 12 段骨架 + 门童六命令 + 攒批 push 纪律不变。
+<!-- K3-BRAIN-INJECT-2026-10-09 END -->
+
+
 > **[v9.3 指令区 · 2026-09-12 K3 拍板 · 必读第 -3 优先级]** 来源 `docs/2026-09-12-k3-directive-v93-home-fix-money-words.md`（执行层评估 A 93/100 后新增标准 + 8 锁词 + 3 件终裁）
 >
 > **S1 答案块字数断言（新门禁 · 2026-09-12 生效）**：凡涉答案块/FAQ/答案卡（quickAnswers / AEO 3 直接答案卡 / FAQPage）的批次，**验收必跑字数断言** —— zh-hk 答案规格区 **40-60 全角字，硬上限 ≤60**；超出部分移到 FAQ 详情，不得留在答案卡。无字数断言的批次视为未验收。（教训：B1 已有 3 品类超标 red-packets 116 / educational 254 / japan-doujin 128 未被发现）

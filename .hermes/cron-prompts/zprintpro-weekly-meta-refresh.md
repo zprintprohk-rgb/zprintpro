@@ -12,6 +12,18 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
+> # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
+> 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
+>
+> **本车道（weekly-meta 周五 23:07）指令**：
+> 1. **每周固定追加动作：zero-click 池 meta description 价格钩子批**——对象 = gsc-feedback 输出的 CTR 修复候选池（≥50im & c0）。**只动 meta description / quickAnswers，禁碰 title**（title 冻结纪律至 10/19）。
+> 2. **10/10 首批清单**：貼紙印刷（156im c0）/ 月曆印刷（118im c0）/ 宣傳單張印刷（105im c0）/ small batch sticker printing（99im c0）/ 書刊印刷（94im c0）——价格/MOQ 全走 products.ts 真值，禁编造。
+> 3. **10/16 起并入 title 批预备**：W2.1 wholesale saddle stitch（57 当量）/ W2.3 same day flyers（55）/ E2 transparent-stickers 价格钩子 / 存量 TRIM 收编（catalog-china 77→56、rush en 66→55、rush ja 59）——候选已备于 `DELIVERY/2026-10-12-money-kw-package.md`，**10/19 解冻前一律 DRAFT 不落 src**。
+> 4. 验收：改动前后跑当量脚本存档；门童六命令全 PASS；报告含 CTR 池对照表（改前 baseline）。
+<!-- K3-BRAIN-INJECT-2026-10-09 END -->
+
+
 > **[v9.3 指令区 · 2026-09-12 K3 拍板 · 必读第 -3 优先级]** 来源 `docs/2026-09-12-k3-directive-v93-home-fix-money-words.md`（执行层评估 A 93/100 后新增标准 + 8 锁词 + 3 件终裁）
 >
 > **S1 答案块字数断言（新门禁 · 2026-09-12 生效）**：凡涉答案块/FAQ/答案卡（quickAnswers / AEO 3 直接答案卡 / FAQPage）的批次，**验收必跑字数断言** —— zh-hk 答案规格区 **40-60 全角字，硬上限 ≤60**；超出部分移到 FAQ 详情，不得留在答案卡。无字数断言的批次视为未验收。（教训：B1 已有 3 品类超标 red-packets 116 / educational 254 / japan-doujin 128 未被发现）

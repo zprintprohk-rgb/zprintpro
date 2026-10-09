@@ -12,6 +12,18 @@
 > **红线**: ① 报告名强制 `<YYYY-MM-DD>-<本车道名>.md` 落 `.hermes/logs/`; ② 失败也写报告, 空转必须显式写 `VERDICT: FAILED` + 原因; ③ `run-context` 的 `preflight` 段为 `blocked` 时立即停手写 `VERDICT: BLOCKED`, 不做任何写操作; ④ 两个文件都读不到时报告写一行 `BUS_UNAVAILABLE` 后按正常流程执行, 禁止编造"上次已做过"。
 <!-- RESULTS-BUS-CONTRACT v1-end (2026-09-19) -->
 
+<!-- K3-BRAIN-INJECT-2026-10-09 BEGIN -->
+> # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
+> 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
+>
+> **本车道（monthly-matrix 每月 1 号 06:13）指令（11/1 跑批定义）**：
+> 1. **并入千问 v2.0 P0-P3 检查表**：hreflang 双向对称 / Organization sameAs 补全 / SKU 标题合规（50-57 当量带普查）/ GEO 事实面板覆盖（en FSC-ISO-产能 · ja 納期-最小ロット-実績 · zh 本地地址-物流承诺）/ AI Overview 引用率基线记录（首测存档）。
+> 2. **关键词矩阵审计**：money-kw-mine 复跑（`.hermes/money-kw-mine.py`）+ 与 20261005 JSON 反连接出新晋词 + **35 词触顶页置换算法执行**（waterproof/transparent/small-batch/die-cut-stickers[ja]、a2/a1/outdoor-posters[ja]、cartoon/eco/large-red-packets[en]——清退 pos 最差/imp 最低 1-2 词，补新晋带钱词；清单见 `DELIVERY/2026-10-12-money-kw-package.md` §3）。
+> 3. **品牌监测加季节段**：年賀状 / ホリデーカード / corporate holiday cards / 聖誕卡 渗透进度专段（0→展示→位次三档记录）。
+> 4. 输出：matrix 回灌 + 11 月词盘建议（交大脑月度复盘裁决，不擅自执行战略层变更）。
+<!-- K3-BRAIN-INJECT-2026-10-09 END -->
+
+
 > **[v9.3 指令区 · 2026-09-12 K3 拍板 · 必读第 -3 优先级]** 来源 `docs/2026-09-12-k3-directive-v93-home-fix-money-words.md`（执行层评估 A 93/100 后新增标准 + 8 锁词 + 3 件终裁）
 >
 > **S1 答案块字数断言（新门禁 · 2026-09-12 生效）**：凡涉答案块/FAQ/答案卡（quickAnswers / AEO 3 直接答案卡 / FAQPage）的批次，**验收必跑字数断言** —— zh-hk 答案规格区 **40-60 全角字，硬上限 ≤60**；超出部分移到 FAQ 详情，不得留在答案卡。无字数断言的批次视为未验收。（教训：B1 已有 3 品类超标 red-packets 116 / educational 254 / japan-doujin 128 未被发现）
