@@ -1,6 +1,9 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-09 12:0x K3 四拍板 P1 批会话释放：
+> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-11 02:5x hero 闸口复核会话释放：
+> 未动 src/（零站点改动，无需 push 烧构建）。已落地：① 闸1 修复 = v28.5 48 张 EXIF+sidecar 真值重写（像素 sha256 前后一致）；② 闸2 决策 = **阻断 swap**（v28.5 全 48 张烧错误 MOQ，比现网违规面更大，违 10-11 新红线；无 inpaint 不可修）；③ v28.6 正道 = 无角标重生成批，样品 2 张已出（`zprintpro-en-us-images/v28_6_no_badge_samples/`）**待 K3 定艺术方向**；④ 决策记录 = docs/2026-10-11 文档 §3.1-ter（commit `311296e4` 本地，随 v28.6 批一起 push）。工艺坑：agent-gw 生图带「AI生成」水印需裁剪+补洞；样张水印已无痕去除。
+
+> **上一释放记录** — 2026-10-09 12:0x K3 四拍板 P1 批会话：
 > commit `748e628d`（名片 (c) services 页两 SKU 承接段 + 旧页 canonical 收编 / footer+contact 双段式 6 处 / W9 聖誕卡 blog 三语提前交付 ja 雙目標 / FIX-1/2 锚文回补，零 title 改动）+ `981025df`（sitemap 738 URLs，IndexNow 3 locale 已 ping）。
 > 门检：tsc 54=54 持平 / encoding PASS / brand A 类 0 / 反审门童 red=0（en/ja category 语言污染已修）。queue 已标 ✅ 10/09 提前發佈，今晚 21:17 daily-content 车道不会撞 W9。后续会话可自由接管。
 
