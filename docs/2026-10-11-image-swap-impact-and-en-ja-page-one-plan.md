@@ -129,6 +129,34 @@
 
 **E. 执行序（推荐）**：① 按类目真值重写 48 张 alt/EXIF/XMP（闸 1）→ ② 落实"不烧价格"规范或建 OCR 审计（闸 2）→ ③ 36 张同名换字节（零 churn）→ ④ 4 新类目建图位后上线 → ⑤ 图片 sitemap 补 48 条 + IndexNow → ⑥ 线上探针（hero 200 / 尺寸 / 体积 / alt）
 
+### 3.1-ter 闸口独立复核 + 执行决策（2026-10-11 02:5x，执行层深检后更新）
+
+> 本节为对 §3.1-bis 两道真值闸的**逐项独立复核**（复算 products.ts + 逐张读 EXIF + 新旧像素目视对照）与**执行决策**，取代 E 序的默认推进。
+
+**闸 1 复核（EXIF alt MOQ）——比原报告更严重：冲突 = 12/16 类目（原报 11/16）**
+
+| 类目 | EXIF 声明 | products.ts 真值（entry-level） | 冲突 |
+|---|---|---|---|
+| banners / posters / calendars / educational | 100 | **1** | ✗ |
+| flyers / stickers / books / menus / greeting-cards | 100 | **10** | ✗ |
+| place-cards / wedding-invitations | 100 | **50** | ✗ |
+| japan-doujin | 100（原报"无声明"，实测 EXIF 有） | **4**（明信片套裝）/ 10（同人誌・托特袋） | ✗ |
+| paper-bags / packaging / envelopes / red-packets | 100 | 100 | ✓ |
+
+**处置（已执行 ✅）**：48 张全部重写 EXIF ImageDescription（RIFF 字节级换 EXIF chunk，**不重编码像素，前后像素 sha256 一致已验证**），sidecar meta.json 同步真值化。新 alt 口径 = `类目名 | 真值 MOQ | 品牌`（zh-hk=智印港 / en·ja=ZprintPro），**不含价格**（守新红线）。脚本：`.hermes/tmp/hero-exif-truth.py`。
+
+**闸 2 复核（烧图价格/MOQ）——swap 今日阻断，依据如下**
+
+1. **v28.5 全部 48 张烧错误 MOQ**（圆标/星爆「100個起印」「50本起印」等，抽验 flyer-en / sticker-ja / calendars-zh-hk / red-packets-zh-hk 4 张证实为设计系统性元素）；zh-hk/en 部分另烧错误价格（HK$0.2/0.5 起，真值 1.10 起）。
+2. **现网 36 张只烧错误价格**（右上角小角标 HK$0.3 起，抽验 red-packets / sticker-ja 证实），**不烧 MOQ**。
+3. ⇒ 同名换字节不是"违规持平"而是**扩大违规面**（MOQ 从 0 张 → 48 张 prominent 错误），与 K3 10-11 新红线（图片资产不得烧入价格/MOQ）直接冲突——**③ swap 不执行**。
+4. **不可程序化修复**：角标全部压在摄影背景/产品上（星爆压窗帘花束、圆标压桌面），无 cv2/skimage、无 inpaint 工具，PIL 涂抹 = 生产级 artifact；`v28_5_patched/` 实为**提示词补丁**（非图像补丁），此路不通。
+
+**正道（已起跑 ✅）：无角标重生成批（v28.6）**——用 v28.5 提示词剔除价格/MOQ 角标条款重生成 48 张（1328×528 → 裁 1320×525），同名换字节上线吃满 LCP + 图片收录收益。**2 张样品已产出**（`zprintpro-en-us-images/v28_6_no_badge_samples/`，red-packets-zh-hk 124KB / flyer-en 77KB，无价格无 MOQ 无水印，EXIF 已嵌真值）**待 K3 定艺术方向**：批准后全量 48 张 → 换字节 → 图片 sitemap 48 条 + IndexNow → 探针，一次 push。
+**已知工艺坑**：agent-gw 生图自带「AI生成」左下角水印 → 批处理必须统一裁剪+翻转补洞（样品已验证可无痕去除）；CJK 需逐张目检（防乱码）。
+
+**资产现状**：v28.5 48 张闸 1 已合规（EXIF 真值），但因闸 2 **不上线**；现网 36 张维持原状（违规面不扩大）。sitemap 不补录 hero（不把错价图推进图片搜索），待 v28.6 批一并 +48 条。
+
 ### 3.2 必配同步（缺一即埋雷）
 
 1. **图片 sitemap 重生成**（`scripts/generate-image-sitemap.js`）+ **IndexNow ping 三语**
