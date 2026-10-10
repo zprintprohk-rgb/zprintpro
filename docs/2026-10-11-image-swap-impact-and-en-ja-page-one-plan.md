@@ -14,6 +14,7 @@
    - **17 个 SKU 现网完全无图**，且**与 en/ja 首页目标簇高度重合**（6 张贺卡 SKU = 年賀状/聖誕卡/holiday cards + 名片(c) 承接页的 2 个 SKU；4 个同人 SKU = コミケ 印刷 ja 全站第一词；4 席位卡 + 4 婚礼邀请 = 婚庆簇）。
    - **21 个 SKU 存在「某语言 < 4 张」**，其中 en/ja 缺语言的正是页一/页二目标：**flyers 全簇 7 款、posters-a2（三语全缺）、packaging rigid/tuck-end/gang-run（缺 en+ja）、stickers removable（缺 ja+zh-hk）**。
 3. **图片对首页目标的权重定性**：图片是**资格层 + 呈现层**变量（Product rich result 资格、GMC feed 合规、图片搜索入口、本地化一致性），**不是排名层主变量**。所以它**不能单独把词推上首页**，但**缺图会封住页一目标簇的上限**（尤其 Q4 贺卡簇与同人簇）。
+4. **hero 例外：hero 可以「全量替换」，且推荐**（详见 **§3.1-bis**）。与产品图不同，hero 是**演示层 + LCP 元素**：① 命名 36/36 同名 + 同宽 1320 → **同 URL 换字节，零索引扰动**；② `<Image fill object-cover>` → 高度 400→525 **不致畸变/CLS**；③ 体积 **−23.0%**（max 162→109KB，全部 <120KB）→ 对**被预加载的 LCP 元素**是真实增益；④ hero **当前 0 条进 image sitemap** → 可顺手补 48 条。**但必过两道真值闸**：内嵌 alt 的 MOQ 在 **11/16 类目**与 `products.ts` 冲突（写 100，真值 1/10/50）；烧图价格两版都错（red-packets 现网 HK$0.3 / v28.5 HK$0.2 vs 真值 **HK$1.10 起**）→ **建议 hero 改版为「不烧价格」**。
 4. **en/ja 页一的真正瓶颈仍是 CTR 层**（10-10 已证：live meta 早已带价格钩；CTR 断裂不是 meta 问题）→ 页一方案 = 图片资格补齐（P0）× title 解冻批（10/19）× 深水内链/答案卡。
 
 ---
@@ -85,8 +86,48 @@
 | **P0 补缺**（最高优先） | 为 **17 个无图 SKU** 新增 v28.5 图（**en/ja 优先**，每 SKU 4 视图 × 1–3 语言） | 新增 ≤204 张 | **纯新增**（无改写） | 直接给 Q4 簇（贺卡/同人/婚庆）+ 名片承接页补上资格层 |
 | **P1 补齐** | 21 个薄覆盖 SKU 的**缺语言**补到 4 视图（沿用现网数字命名，接续现有编号） | 新增约 60–80 张 | 纯新增 | 服务 en/ja 页一/页二目标（flyers 全簇 / a2-posters / packaging 三款） |
 | **P2 原地换字节**（可选、低优先） | 存量 964 张**同文件名**覆盖为 v28.5 对应视图字节 | 964 张（可只做 LCP 首图） | **零** | 收益仅体积/alt 内嵌；建议**只对每页首图（hero）做**，全量做风险/收益比不划算 |
-| **hero 专项** | 16 类目 hero：**12 类目同 URL 换字节**；**4 类目（greeting-card / japan-doujin / place-cards / wedding-invitations）站内暂无图位 → 先建图位再上** | 12 换 + 4 建位 | 12 零影响 / 4 新增 | 这 4 个恰是 Q4/婚庆/同人簇首页 hero |
+| **hero 专项（✅ 可全量替换）** | 16 类目 hero：**36 张同 URL 换字节（推荐）+ 4 类目建图位后新增** | 36 换 + 12 新增 | 36 张零 URL 影响 / 12 张新增 | **hero 是本方案里最安全的替换**（同名同宽、`fill+object-cover` 无 CLS、体积 −23%、LCP 正向）→ 但**必过两道真值闸**（alt MOQ 11/16 类目错 + 烧图价格错），见 **§3.1-bis** |
 | **清理** | 孤儿死图 2 键 32 张 + `products.ts` 遗留扁平 `.jpg` 引用校正 | 32 删 + 若干改 | 删死图零影响 | 消 404 风险与目录噪声 |
+
+### 3.1-bis Hero 专项（K3 追问：hero 能否**全部**替换？）
+
+**结论：能 —— 这是本方案最安全的一次替换（保 URL 同名换字节）；但必须先过两道「真值闸」。**
+
+**A. 技术可行性（全部实测）**
+
+| 检查项 | 实测 | 结论 |
+|---|---|---|
+| 命名对应 | 现网 36 张 webp ↔ v28.5 **36/36 一一同名** | **同 URL 换字节**：零 URL churn、零 sitemap 重写 |
+| 宽度/比例 | 现网 **1320×400** vs v28.5 **1320×525**（同宽，高 +125px，面积 +31%） | 同宽 → 无横向重采样 |
+| 渲染接线 | 类目页 `<Image fill className="object-cover object-center" unoptimized>`；首页 `heroPreloadMap` **预加载** | `fill+object-cover` → 高度变化**不畸变、不 CLS**；首页 hero 被显式预加载 = **LCP 元素** |
+| 体积 | 现网 4.34MB（min 73.7 / 中位 127.9 / **max 162KB**）→ v28.5 3.34MB（min 58.3 / 中位 93.8 / **max 119.4KB**） | 同名 36 对中 **32 对更小**，合计 **−23.0%**；最差件 162→109KB（**−33%**） |
+| 覆盖 | v28.5 = 48 张（16 类目 × 3 语言）；现网 = 12 类目 | **+4 类目 × 3 语言 = 12 张纯新增**（greeting-card / japan-doujin / place-cards / wedding-invitations）→ 需先建图位 |
+| 图片 sitemap | `/images/hero/` 命中 **0 次**（974 条 `<image:loc>` 全为产品图） | hero **当前完全未被收录** → 替换可顺手**新增 48 条**图片搜索入口 |
+
+**B. 两道真值闸（不通过则不可替换）**
+
+| 闸 | 问题 | 证据 | 处置 |
+|---|---|---|---|
+| **闸 1：内嵌 alt 的 MOQ** | v28.5 hero 的 alt（EXIF ImageDescription + XMP dc:description）在 **11/16 类目**写「100個起印／100個〜」，与 `products.ts` 真值冲突 | **冲突 11 类目**：flyers(真值10)/stickers(10)/posters(**1**)/books(10)/menus(10)/calendars(**1**)/educational(**1**)/banners(**1**)/greeting-cards(10)/place-cards(**50**)/wedding-invitations(**50**)；**一致 5 个**：paper-bags/packaging/envelopes/red-packets(均100) + japan-doujin(alt 无声明) | **上线前按类目真值重写 alt**（alt 是**可索引文本**，比烧图更危险） |
+| **闸 2：烧图价格** | 同一张 `hero-red-packets-zh-hk`：现网烧 `HK$0.3起`、v28.5 烧 `HK$0.2/個起`，而真值 = **HK$1.10 起**（区间 1.10–3.00，6 SKU 实测） | 视觉实证（两版均已读图）+ products.ts 真值；台账 `q`/`alt` 列**不含价格（0/48）→ 烧图价格无法程序化审计** | 建议 **hero 资产规范改为「不烧价格/MOQ」**（价格交由页面文案与 meta 承载 → 可被门童扫、可修正）。若坚持保留角标，须建 **OCR 审计环节**并纳入上线前门禁 |
+
+**C. 视觉实证（回应「现在的图片更好」）** — 样本 `hero-red-packets-zh-hk`：
+- **现网**：摄影实拍风（红包实物 + 年花 + 摊位背景），品牌质感更强，角标小（`HK$0.3起`）
+- **v28.5**：设计横版 banner（大标题「利是封印刷」+ 4 个卖点圆标 + 价格/MOQ 角标），信息更直白
+- **判断**：**CTR/转化层 v28.5 更强**（价格/MOQ/卖点一眼可见）；**品牌质感层现网更佳**（真实场景）。两版**都带错误价格** → 真正的决策变量不是"哪版好看"，而是**要不要把价格烧进 hero（建议：不烧）**
+
+**D. Hero 层 SEO/AEO/GEO 影响量化**
+
+| 机制 | 量级 | 依据 |
+|---|---|---|
+| **LCP / CWV** | **真实正向** | hero 被 `heroPreloadMap` 预加载（LCP 元素）；−23% 体积、max 162→109KB、全部 <120KB |
+| CLS | **零风险** | `fill + object-cover` + 同宽 |
+| **图片搜索入口** | **+48 条** | 当前 hero 收录 0 条 |
+| Product 富结果 | **无影响** | hero 非 Product schema image |
+| **AEO/GEO** | **中**（修正 alt 后转正） | alt 是索引文本；现状 11/16 类目 MOQ 错误 |
+| 排名层 | 间接 | CWV 为 tiebreaker；CTR/engagement 经视觉呈现 |
+
+**E. 执行序（推荐）**：① 按类目真值重写 48 张 alt/EXIF/XMP（闸 1）→ ② 落实"不烧价格"规范或建 OCR 审计（闸 2）→ ③ 36 张同名换字节（零 churn）→ ④ 4 新类目建图位后上线 → ⑤ 图片 sitemap 补 48 条 + IndexNow → ⑥ 线上探针（hero 200 / 尺寸 / 体积 / alt）
 
 ### 3.2 必配同步（缺一即埋雷）
 
@@ -155,6 +196,7 @@
 **红线**
 - 零 title 改动（churn 冻结至 10/19）；图片投放严格按 locale（错语言文字 = 本地化红线）
 - 不做图片改名式全量替换（无 301）
+- **图片资产不得烧入价格/MOQ 等真值声明**（门童无法扫描像素 → 必然漂移）；确需角标时须建 OCR 审计并纳入上线前门禁；内嵌 alt/EXIF/XMP 的 MOQ/价格**必须等于 `products.ts` 真值**
 - GSC 后台黑话不入客户可见内容（§0.23.1）；图片 alt 不得含 GSC 语境
 - 价格/MOQ 一律 `products.ts` 真值；本方案未新增任何未经核实的数字
 
@@ -170,4 +212,7 @@
 - K3 10-09 指令包 docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md
 - 10-10 B1 实测更正 DELIVERY/2026-10-10-ctr-meta-price-hook-batch.md §五
 - 缺口量化脚本 .hermes/tmp/image-gap-20261011.cjs
+- hero 层实测（本轮新增）：.hermes/tmp/hero-measure-20261011.cjs（WebP 头解析尺寸）· hero-size-fix-20261011.cjs（体积逐张对比）· hero-wiring-20261011.cjs（渲染接线/sitemap 收录）· hero-ledger-audit-20261011.cjs（48 行台账 alt/文字审计）· hero-moq-truth-20261011.cjs（类目真值 vs alt 声明对照）
+- hero 视觉实证：read_image 对比 public/images/hero/hero-red-packets-zh-hk.webp(1320×400, 162KB) vs v28_5_webp/hero/hero-red-packets-zh-hk.webp(1320×525, 109KB)
+- 渲染代码：src/app/[locale]/category/[slug]/page.tsx L336/L406-411（fill+object-cover）、src/app/[locale]/page.tsx L50-54（heroPreloadMap）、CategoryPageV9.tsx L396-400（V9_HERO_BASE）
 ```
