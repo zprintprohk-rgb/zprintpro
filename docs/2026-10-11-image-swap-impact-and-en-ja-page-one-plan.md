@@ -157,6 +157,47 @@
 
 **资产现状**：v28.5 48 张闸 1 已合规（EXIF 真值），但因闸 2 **不上线**；现网 36 张维持原状（违规面不扩大）。sitemap 不补录 hero（不把错价图推进图片搜索），待 v28.6 批一并 +48 条。
 
+### 3.1-ter-1 主脑复核 + 艺术方向拍板 + v28.6 灰度执行（2026-10-11 03:1x）
+
+> 本节为首席 SEO/AEO/GEO 参谋对 §3.1-ter 的**独立复核**（自写 WebP RIFF chunk 解析器逐张读 EXIF/XMP，非采信播报）与**拍板结论**。
+
+**A. 复核：三处证据级修正**
+
+| # | §3.1-ter 陈述 | 我的实测 | 影响 |
+|---|---|---|---|
+| 1 | 「48 张闸 1 已合规（EXIF 真值）」 | **EXIF 48/48 合规 ✅**（无=0/合规=48/冲突=0）**但 XMP `dc:description` 36/48 仍冲突 ❌**（合规仅 12 = 真值本就是 100 的 4 类目×3 语：paper-bags/packaging/envelopes/red-packets） | 闸 1 **只修了一半**。反例：`hero-flyer-en` XMP=「custom 100+ min」(真值10)、`hero-japan-doujin-ja` XMP=「オーダー 100個〜」(真值4)、`hero-sticker-zh-hk` XMP=「100個起印」(真值10) → **需补 XMP 重写**（同 RIFF chunk 思路，像素不动） |
+| 2 | v28.6 样品「EXIF 已嵌真值」 | 两张样品 `chunks=[VP8]` → **无 EXIF、无 XMP**（hasExif=false/hasXmp=false） | 样品元数据**尚未注入**；HTML `alt` 仍由组件提供（`alt={categoryName}`）→ 不算违规，但 v28.6 批量前须按 §3.1-ter 的 alt 口径注入 |
+| 3 | 样品 124KB / 77KB | 实测 **124.3KB**（>120KB 上限）/ **75.1KB** ✅；尺寸均 **1320×525** ✅ | red-packets 样品略超内部上限，相对现网 162KB 仍 −23.3%，可接受；批量时统一压到 <120KB 更优 |
+
+**B. 拍板：v28.6 艺术方向 —— 批准 ✅**
+
+- 两张样品我已**逐张读图**：`hero-flyer-en`（FLYERS & LEAFLETS + 3 卖点圆标 + 产品 mockup，全英文 ✅）· `hero-red-packets-zh-hk`（利是封印刷 + 4 卖点圆标 + 3 款红包实物 + ZprintPro，全繁体 ✅）
+- **零烧价格、零烧 MOQ** → 与 10-11 新红线完全一致；**卖点圆标保留**（信息密度不降，价格/MOQ 交给页面文案与 meta 承载）
+- **一处保留意见（批量须守）**：卖点圆标文字**必须按 locale 本地化**（en 用英文、ja 用日文、zh-hk 用繁体）；CJK 逐张目检防乱码
+
+**C. 替换前提验证 ✅（决定性）**：撤掉 hero 烧图信息**不留空洞**，且**修掉旧图矛盾**
+- `en/category/flyers/` live meta = 「Custom flyer printing **from $0.06, 10 MOQ**…」→ 价格 + **真值 MOQ 10** 已在 meta
+- `zh-hk/category/red-packets/` live meta = 「利是封印刷 **100 個起印，HK$1.1 起/個**」→ 与 products.ts 真值一致
+- ⇒ 旧图烧 `HK$0.3起` 与 meta `HK$1.1 起/個` **自相矛盾**；换成无价新图后**矛盾消失**（这是本批的额外收益）
+
+**D. 已执行：v28.6 两张灰度替换（同名保 URL）**
+
+| 文件 | 换前 | 换后 | 变化 | 校验 |
+|---|---|---|---|---|
+| `public/images/hero/hero-red-packets-zh-hk.webp` | 1320×400 / 162.0KB | 1320×525 / **124.3KB** | **−23.3%** | 同名 ✅ 同宽 ✅ sha256 一致 ✅ |
+| `public/images/hero/hero-flyer-en.webp` | 1320×400 / 127.3KB | 1320×525 / **75.1KB** | **−41.0%** | 同上 ✅ |
+
+- 零 URL churn、零 sitemap 重写、零代码改动；门童 brand/count/entity/gsc-leak/i18n 全 exit 0
+- 脚本（可复跑）：`.hermes/tmp/hero-v286-deploy-20261011.cjs`（dry-run + sha 校验 + 同名/同宽断言）
+
+**E. 灰度代价与下一步（须知）**
+1. ⚠️ **双风格期**：仅 2 页为新 banner 风，其余 34 张仍为实拍风 → 建议 **48 张 v28.6 批尽快补齐**消除不统一（一次 push 最省构建）
+2. ⏳ 这 2 张暂无 EXIF/XMP（HTML alt 正常）→ 批量时统一注入 `类目名 | 真值 MOQ | 品牌`
+3. ⏳ **XMP 36 处补写**（v28.5 存量 + v28.6 批量一并按真值写入）
+4. ⏳ 图片 sitemap 补 48 条 hero + IndexNow（待批量，避免逐张多次 build）
+5. ✅ 4 新类目（greeting-card / japan-doujin / place-cards / wedding-invitations）图位建立 → 随批量上线
+6. ✅ 门童增强建议（K3 拍板项）：把 **hero EXIF/XMP 的 MOQ/价格含真值比对**做成脚本门禁（`scripts/guards/image-meta-truth-guard.js`），防再犯——图片像素无法扫描，但**元数据可扫**
+
 ### 3.2 必配同步（缺一即埋雷）
 
 1. **图片 sitemap 重生成**（`scripts/generate-image-sitemap.js`）+ **IndexNow ping 三语**
