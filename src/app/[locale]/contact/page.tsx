@@ -38,7 +38,8 @@ const translations = {
     email: "電郵",
     website: "官網",
     addressLabel: "辦公室地址",
-    addressValue: '深圳自有工廠：廣東省深圳市龍崗區平湖街道嘉城路1號（518111）｜香港服務節點：九龍新蒲崗',
+    // 2026-10-10 K3 修正: zh-hk 站沿用原來的香港顯示地址（en/ja 維持雙段式 NAP）
+    addressValue: '香港九龍新蒲崗大有街3號萬廣大廈15樓C室',
     cta: "立即 WhatsApp 查詢",
     emailCta: "電郵查詢",
     qrCaption: "掃碼即聊",
