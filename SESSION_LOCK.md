@@ -1,6 +1,8 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-11 09:2x v28.6 全量批会话释放：
+> **当前状态**: 🔒 **持有中（10-11 K3 16:48 拍板：类目 hero 去遮罩 + 文字塊上移圖上方）** — 写入范围：仅 `src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx` hero 區塊（16 類目共用）。預計 ≤1h。peer 請勿動該組件。
+
+> **上一释放记录** — 2026-10-11 09:2x v28.6 全量批会话释放：
 > commit `39f3d8d3`（已推，CF 构建 ~4min 完成）= 48 张无角标 hero（36 同名换字节 + 12 新增 4 类目）+ V9_HERO_BASE 12→16 + 图 sitemap +48（1077 图）。探针全绿：48/48 线上字节一致、12/12 新类目页渲染正确 hero、36/36 旧页正常、EXIF 真值线上抽查 ✅、IndexNow 48 URL 200。QA 48/48 目检零重生成。门检 tsc 54=54 / encoding / brand 0 / GMC PASS / 门童 0 red。挂账：image-meta-truth-guard 门童未建（待 K3 派活）；车道遗留 sitemap/csv 未提交件留车道。docs §3.1-ter-2 执行记录 = 本地 commit 随下攒批推。
 
 > **上一释放记录** — 2026-10-11 02:5x hero 闸口复核会话释放：
