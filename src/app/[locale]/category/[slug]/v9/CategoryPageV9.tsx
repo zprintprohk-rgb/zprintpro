@@ -443,10 +443,10 @@ export function CategoryPageV9({
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
-      {/* ═══ Banner — 同導航欄寬 1320px 居中 + 與首頁輪播圖同高 (h-300/md-400); H1 真實疊圖（遮罩保對比度, 非 CSS 隱藏） ═══ */}
+      {/* ═══ Banner — 同導航欄寬 1320px 居中；v28.6 hero 原生 1320×525：lg 起按原生比例（零裁剪零 CLS），md 及以下維持 h-300/400 裁剪；H1 真實疊圖（遮罩保對比度, 非 CSS 隱藏） ═══ */}
       <section className="max-w-[1320px] mx-auto">
         <div
-          className="relative overflow-hidden h-[300px] md:h-[400px] text-white"
+          className="relative overflow-hidden h-[300px] md:h-[400px] lg:h-auto lg:aspect-[1320/525] text-white"
           style={{ backgroundImage: 'var(--color-orange-grad)' }}
         >
           {bannerImage && (

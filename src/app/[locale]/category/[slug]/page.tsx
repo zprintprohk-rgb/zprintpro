@@ -315,10 +315,12 @@ export default function CategoryPage({
   ];
 
   // 分类 Banner 背景图映射（按 locale 动态匹配 hero webp）
+  // ⚠️ 2026-10-11 修复：基名必须等于实际文件名（v28.6 集为单数 hero-sticker / hero-greeting-card）；
+  //    本表须与 CategoryPageV9.V9_HERO_BASE + scripts/generate-image-sitemap.js 的 HERO_BASE 三处同源，改图位必须同步改。
   const categoryBannerMap: Record<string, string> = {
     'paper-bags': 'hero-kraft-bag',
     'flyers': 'hero-flyer',
-    'stickers': 'hero-stickers',
+    'stickers': 'hero-sticker',
     'packaging': 'hero-gift-box',
     'posters': 'hero-poster',
     'banners': 'hero-banners',
@@ -328,9 +330,10 @@ export default function CategoryPage({
     'calendars': 'hero-calendars',
     'red-packets': 'hero-red-packets',
     'educational': 'hero-educational',
-    'greeting-cards': 'hero-greeting-cards',
+    'greeting-cards': 'hero-greeting-card',
     'wedding-invitations': 'hero-wedding-invitations',
     'place-cards': 'hero-place-cards',
+    'japan-doujin': 'hero-japan-doujin',
   };
   const bannerBase = categoryBannerMap[slug];
   const bannerImage = bannerBase ? `/images/hero/${bannerBase}-${locale}.webp` : undefined;
@@ -397,9 +400,9 @@ export default function CategoryPage({
         />
       ) : (
       <main className="min-h-screen bg-gray-50">
-        {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
+        {/* Banner 区域 - v28.6 hero 原生 1320×525；lg 起按原生比例渲染（零裁剪、零 CLS），小屏维持 400 裁剪 */}
         <div className="max-w-[1320px] mx-auto">
-          <div className="relative w-full h-[400px] overflow-hidden">
+          <div className="relative w-full h-[400px] lg:h-auto lg:aspect-[1320/525] overflow-hidden">
             {/* 背景图或渐变 */}
             {hasBannerImage ? (
               <>
