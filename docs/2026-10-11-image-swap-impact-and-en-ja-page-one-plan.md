@@ -198,6 +198,23 @@
 5. ✅ 4 新类目（greeting-card / japan-doujin / place-cards / wedding-invitations）图位建立 → 随批量上线
 6. ✅ 门童增强建议（K3 拍板项）：把 **hero EXIF/XMP 的 MOQ/价格含真值比对**做成脚本门禁（`scripts/guards/image-meta-truth-guard.js`），防再犯——图片像素无法扫描，但**元数据可扫**
 
+### 3.1-ter-2 v28.6 全量 48 张执行结果（2026-10-11 09:0x，K3 08:47「直接按样品风格开跑全量 48 张」）
+
+> 状态：**已上线**（commit `39f3d8d3`，已 push，CF 构建 ~4min 完成）。
+
+**执行**：48 张（16 类目×3 语）无角标重生成 → 批后处理（水印补洞 y486-518 + 裁 1320×525 + webp q88 + EXIF 真值 + sidecar）→ 目检 48/48 ✅（零重生成；零价格/数字/MOQ 角标、零乱码、卖点圆标三语全部本地化）→ 同名换字节 36 + 新增 12。
+
+| 闸门 | 结果 |
+|---|---|
+| sidecar 机器校验（MOQ 真值表+品牌分层） | 48 文件×3 语 = 144 条 alt 全过，0 bad（zh-hk=智印港 / en,ja=ZprintPro） |
+| 图位 | `CategoryPageV9` V9_HERO_BASE 12→16（接线前 12/12 新类目页线上 200 已验证；legacy page.tsx 映射为死回滚分支未动） |
+| 图片 sitemap | +48 hero 条（页=类目页 URL，title=sidecar 真值 alt），总数 1077（1029 产品 + 48 hero）；robots.txt 已引用 |
+| 门检 | tsc 54=54 持平 · encoding 52 文件 PASS · brand A 类 0 · 反审门童 0 red（仅存量 shadow）· GMC 图检 PASS · 门童 #25/27 title 0 变更 |
+| 线上探针 | 48/48 hero 字节与本地逐一相等；4 新类目页 12/12 渲染正确 hero；旧 12 类目页 36/36 hero 渲染正常；EXIF 线上抽查「利是封印刷 \| 100件起印 \| 智印港」「同人誌印刷 \| 最小ロット4 \| ZprintPro」✅；sitemap-image.xml 200 含 48 条；IndexNow 48 URL 提交 200 |
+| 体积 | 61–114KB/张（中位 ~80KB），vs 旧 ~127KB 中位 → LCP 预期收益 +；顺带消除旧图 HK$0.3起 与 meta HK$1.1起 的活矛盾 |
+
+**遗留挂账**：① v28.5 48 张 XMP `dc:description` 36/48 错误（§3.1-ter-1 A-1）随本批 v28.6 全部替换而失去线上影响，源资产仍在 `zprintpro-en-us-images/v28_5_webp/hero/` 备用；② `scripts/guards/image-meta-truth-guard.js` 门童建议（§3.1-ter-1 E-6）未建，待 K3 派活；③ 车道遗留未提交件（10-10 blog sitemap 4 文件 + sku-seo csv 8 行）不属本批，留车道/看门狗处理。
+
 ### 3.2 必配同步（缺一即埋雷）
 
 1. **图片 sitemap 重生成**（`scripts/generate-image-sitemap.js`）+ **IndexNow ping 三语**

@@ -1,6 +1,7 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: 🔒 **持有中（10-11 v28.6 全量 48 张部署会话，K3 08:47 拍板）** — 写入范围：`public/images/hero/`（48 webp+48 sidecar 覆盖/新增）、`src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx`（V9_HERO_BASE +4 图位）、`scripts/generate-image-sitemap.js` 产物。预计时长 ≤2h。48 张 QA 已 48/48 目检通过（零重生成），sidecar 机器校验 0 bad。peer 请勿动 src/data/blog-data/ 与 category v9 组件。
+> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-11 09:2x v28.6 全量批会话释放：
+> commit `39f3d8d3`（已推，CF 构建 ~4min 完成）= 48 张无角标 hero（36 同名换字节 + 12 新增 4 类目）+ V9_HERO_BASE 12→16 + 图 sitemap +48（1077 图）。探针全绿：48/48 线上字节一致、12/12 新类目页渲染正确 hero、36/36 旧页正常、EXIF 真值线上抽查 ✅、IndexNow 48 URL 200。QA 48/48 目检零重生成。门检 tsc 54=54 / encoding / brand 0 / GMC PASS / 门童 0 red。挂账：image-meta-truth-guard 门童未建（待 K3 派活）；车道遗留 sitemap/csv 未提交件留车道。docs §3.1-ter-2 执行记录 = 本地 commit 随下攒批推。
 
 > **上一释放记录** — 2026-10-11 02:5x hero 闸口复核会话释放：
 > 未动 src/（零站点改动，无需 push 烧构建）。已落地：① 闸1 修复 = v28.5 48 张 EXIF+sidecar 真值重写（像素 sha256 前后一致）；② 闸2 决策 = **阻断 swap**（v28.5 全 48 张烧错误 MOQ，比现网违规面更大，违 10-11 新红线；无 inpaint 不可修）；③ v28.6 正道 = 无角标重生成批，样品 2 张已出（`zprintpro-en-us-images/v28_6_no_badge_samples/`）**待 K3 定艺术方向**；④ 决策记录 = docs/2026-10-11 文档 §3.1-ter（commit `311296e4` 本地，随 v28.6 批一起 push）。工艺坑：agent-gw 生图带「AI生成」水印需裁剪+补洞；样张水印已无痕去除。
