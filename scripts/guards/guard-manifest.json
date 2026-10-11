@@ -1,7 +1,7 @@
 {
   "schema": "guard-manifest/v1",
   "note": "門童編號與規則 ID 是**共享命名空間**：新增前必須先查本清單避免撞號（K3 2026-09-19 建議）。產生器：scripts/gen-guard-manifest.mjs；校驗：node scripts/gen-guard-manifest.mjs（有衝突 exit 1）",
-  "generatedAt": "2026-09-23T01:36:59.793Z",
+  "generatedAt": "2026-10-11T23:03:39.213Z",
   "guardNumbers": {
     "1": [
       "scripts\\guards\\common.js",
@@ -118,16 +118,22 @@
       ".githooks/pre-commit"
     ],
     "25": [
-      "scripts\\guards\\title-band-guard.js"
+      "scripts\\guards\\title-band-guard.js",
+      "scripts\\inject-recovery-mode-20261012.mjs"
     ],
     "26": [
       "scripts\\guards\\hook-sync-guard.js"
     ],
     "27": [
-      "scripts\\guards\\title-v5-guard.js"
+      "scripts\\guards\\title-v5-guard.js",
+      "scripts\\csv-to-sku-seo.mjs"
     ],
     "28": [
       "scripts\\audit-sku-locale.cjs"
+    ],
+    "29": [
+      "scripts\\guards\\keywords-detox-guard.js",
+      "scripts\\inject-recovery-mode-20261012.mjs"
     ]
   },
   "ruleIds": {
@@ -151,6 +157,9 @@
     ],
     "ALLOWLIST_KEYWORDS": [
       "scripts\\check-content-guard.js"
+    ],
+    "ALLOW_DRIFT": [
+      "scripts\\csv-to-sku-seo.mjs"
     ],
     "ALL_URLS": [
       "scripts\\indexnow-submit.mjs"
@@ -452,6 +461,7 @@
       "scripts\\audit-ja-cn-word-pollution.cjs"
     ],
     "COMMIT_MODE": [
+      "scripts\\guards\\keywords-detox-guard.js",
       "scripts\\guards\\title-band-guard.js",
       "scripts\\guards\\title-v5-guard.js",
       "scripts\\check-regression-guard.js"
@@ -538,6 +548,9 @@
     "CRED_X_INDUSTRIES": [
       "scripts\\guards\\common.js",
       "scripts\\guards\\credibility-guard.js"
+    ],
+    "CRITICAL_CLIFF": [
+      "scripts\\inject-recovery-mode-20261012.mjs"
     ],
     "CROSS_CATEGORY_PAGES": [
       "scripts\\moq10-action-list-v3.ts"
@@ -856,6 +869,9 @@
     "HANDMADE_CHARSET_CONTAINS_SHARED_CHARS": [
       "scripts\\probe-skill-handover.mjs"
     ],
+    "HERO_BASE": [
+      "scripts\\generate-image-sitemap.js"
+    ],
     "HERO_OUT": [
       "scripts\\batch-process-images.js"
     ],
@@ -1053,6 +1069,9 @@
     "LABEL_10": [
       "scripts\\moq10-prepend-qty-tiers.mjs"
     ],
+    "LANE_BLOCKS": [
+      "scripts\\inject-recovery-mode-20261012.mjs"
+    ],
     "LATIN_ALLOW": [
       "scripts\\generate-title-batch.mjs"
     ],
@@ -1130,6 +1149,12 @@
     ],
     "MARKDOWN_LINK_RE": [
       "scripts\\find-markdown-render.js"
+    ],
+    "MARK_BEGIN": [
+      "scripts\\inject-recovery-mode-20261012.mjs"
+    ],
+    "MARK_END": [
+      "scripts\\inject-recovery-mode-20261012.mjs"
     ],
     "MATCH_MOD": [
       "scripts\\probe-live-titles.mjs"
@@ -1235,6 +1260,9 @@
     ],
     "MOQ_UNVERIFIABLE": [
       "scripts\\guards\\title-v5-guard.js"
+    ],
+    "MUST_NOT": [
+      "scripts\\b1a-live-probe-20261012.mjs"
     ],
     "MUST_NOT_IN_SIMP_ZH": [
       "scripts\\guards\\i18n-guard.js"
@@ -1606,8 +1634,14 @@
       "scripts\\guards\\common.js",
       "scripts\\check-regression-guard.js"
     ],
+    "R2_BLACKLIST": [
+      "scripts\\guards\\keywords-detox-guard.js"
+    ],
     "R2_FROZEN": [
       "scripts\\aeo-desc-census-20260922.mjs"
+    ],
+    "R3_MORPHEME": [
+      "scripts\\guards\\keywords-detox-guard.js"
     ],
     "RATIONALE_RE": [
       "scripts\\guards\\bypass-audit-guard.js"
@@ -1798,6 +1832,9 @@
     "SITE_BASE": [
       "scripts\\guards\\blog-quality-12-rules-guard.js"
     ],
+    "SITE_IMG": [
+      "scripts\\probe-gmc-images-2026-10-06.mjs"
+    ],
     "SKILL_DIR": [
       "scripts\\probe-skill-handover.mjs"
     ],
@@ -1930,6 +1967,9 @@
     "STD_HOOK": [
       "scripts\\fix-p3-en-cta.ts",
       "scripts\\fix-p3-ja-cta.ts"
+    ],
+    "STILL_PRESENT": [
+      "scripts\\b1a-live-probe-20261012.mjs"
     ],
     "STRATEGY_JARGON": [
       "scripts\\check-content-guard.js"
@@ -2116,6 +2156,9 @@
       "scripts\\generate-title-batch.mjs",
       "scripts\\resolve-moq-conflicts.mjs"
     ],
+    "V9_HERO_BASE": [
+      "scripts\\generate-image-sitemap.js"
+    ],
     "VERDICT_TO_STATE": [
       "scripts\\lane-status.mjs"
     ],
@@ -2139,6 +2182,9 @@
     ],
     "WARN_OVERSIZE": [
       "scripts\\optimize-images.js"
+    ],
+    "WARN_STALE": [
+      "scripts\\inject-recovery-mode-20261012.mjs"
     ],
     "WEBP_DIR": [
       "scripts\\inject-images-by-locale.js",
@@ -2170,5 +2216,5 @@
       ".githooks/pre-push"
     ]
   },
-  "maxGuardNumber": 28
+  "maxGuardNumber": 29
 }

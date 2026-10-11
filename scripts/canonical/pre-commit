@@ -239,6 +239,22 @@ if command -v node &> /dev/null; then
   fi
 fi
 
+# 3.12 門童 #29 SKU keywords 去毒閘門 (spam 恢復防護, K3 2026-10-12)
+# 背景: 2026-09 spam 更新命中實錘 = meta keywords stuffing (96 模板詞跨 8+ SKU + pet 詞污染); B1b 已清洗 5,564 詞例
+# 規則: R1 數組 ≤10 詞 / R2 黑名單 65 詞例+pet 正則禁回流 / R3 每組 ≥1 品類語素詞 (數據源 scripts/guards/data/keywords-detox-blacklist.json)
+# 判據鐵律 (§0.35.4): 僅在 keywords 數據文件 staged 時全量硬攔; v22 改名殘留 6 槽顯式豁免落審計 JSON (待 K3 §0.0 裁決)
+echo "3️⃣.12  門童 #29 keywords 去毒閘門 (防 9/6 清洗後 regen 回流重演)..."
+if command -v node &> /dev/null; then
+  node scripts/guards/keywords-detox-guard.js --commit
+  if [ $? -ne 0 ]; then
+    echo ""
+    echo "❌ 門童 #29 攔截: keywords 違反去毒規則 (>10 詞 / 黑名單或 pet 詞回流 / 無品類語素錨)"
+    echo ""
+    echo "💡 修法: 走 CSV→regen 管線 (SOP-5 派生文件禁手搓); 黑名單 SSoT = scripts/guards/data/keywords-detox-blacklist.json"
+    exit 1
+  fi
+fi
+
 # 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
 echo "4️⃣  DoD 铁律 (No fix without a rule)..."
 if command -v node &> /dev/null; then

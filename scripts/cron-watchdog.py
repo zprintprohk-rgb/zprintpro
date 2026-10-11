@@ -99,6 +99,45 @@ def check_stale_lock():
     return None
 
 
+def check_live_seo_assertions():
+    """线上 SEO 断言 (spam 恢复防护, K3 2026-10-12):
+    B1a 已删全站 <meta name="keywords"> 渲染 — 若线上重新出现 = 回流事故 (9/6 清洗后 regen 回流的教训)。
+    网络异常只 print 不告警 (防误报); 确定性违规才进 alerts。"""
+    import re
+    import urllib.request
+    pages = [
+        "/zh-hk/product/waterproof-stickers/",
+        "/en/product/folding-boxes/",
+        "/ja/product/a5-flyers/",
+        "/zh-hk/",
+    ]
+    kw_re = re.compile(r'<meta\s+name="keywords"', re.I)
+    title_re = re.compile(r"<title>([\s\S]*?)</title>")
+    alerts = []
+    for p in pages:
+        url = "https://zprintpro.com" + p
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "ZP-watchdog/1.0"})
+            with urllib.request.urlopen(req, timeout=20) as resp:
+                html = resp.read().decode("utf-8", errors="replace")
+                status = resp.status
+        except Exception as e:  # 网络/5xx 不确定 -> 不告警
+            print(f"[watchdog] 线上断言 {p}: 探测失败 ({e}), 跳过 (不作判据)")
+            continue
+        if status != 200:
+            alerts.append(f"- **线上断言失败**: `{p}` HTTP {status} (期望 200)")
+            continue
+        if kw_re.search(html):
+            alerts.append(f"- **keywords meta 回流**: `{p}` 线上重新渲染 <meta name=\"keywords\"> "
+                          f"(B1a 已删, 回流 = 部署回滚或渲染层被改回, 立刻查最近 deploy)")
+        m = title_re.search(html)
+        if not m or len(m.group(1).strip()) < 10:
+            alerts.append(f"- **线上断言失败**: `{p}` <title> 缺失或过短 (渲染层异常)")
+    if not alerts:
+        print(f"[watchdog] 线上 SEO 断言 {len(pages)} URL 全过 (keywords meta=0 / 200 / title 在位)")
+    return alerts
+
+
 def write_exec_line(status_txt, detail):
     rep = os.path.join(LOGS, "cron-execution-report.md")
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -160,6 +199,8 @@ def main():
     if lock_alert:
         alerts.append(lock_alert)
         print(lock_alert)
+
+    alerts.extend(check_live_seo_assertions())
 
     status_txt = "✅ 通过" if not alerts else f"⚠️ {len(alerts)} 条告警"
     write_exec_line(status_txt, detail)

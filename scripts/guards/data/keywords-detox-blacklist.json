@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "guard": "#29 keywords-detox-guard",
+    "source": ".hermes/reports/b1b-keywords-detox-20261012.json (B1b 去毒 kill 列表, K3 2026-10-12 拍板)",
+    "created": "2026-10-12",
+    "rules": {
+      "cap": "每个 keywords 数组 <= 10 词 (B1b CAP=10)",
+      "blacklist": "命中 kill 列表精确词 或 pet 正则 -> 违规",
+      "morpheme": "每个数组至少 1 词含品类语素 (白名单保命条的镜像约束)"
+    },
+    "pet_regex": "\\b(pets?|dogs?|cats?|kittens?|puppies|puppy|paws?)\\b (case-insensitive)"
+  },
+  "kill": {
+    "zh-hk": [
+      "100個起",
+      "100個起印",
+      "2小時取",
+      "2小時取件",
+      "2小時快印",
+      "50個起",
+      "HK$0.5起",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "免費打樣",
+      "免費排版",
+      "免費設計",
+      "即日出貨",
+      "即日設計",
+      "燙金LOGO",
+      "當日出貨",
+      "銅鑼灣快印"
+    ],
+    "en": [
+      "100pcs MOQ",
+      "2h express print",
+      "2h pickup",
+      "50pcs MOQ",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "foil logo",
+      "free design",
+      "free layout",
+      "free proof",
+      "from $0.06",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "same day",
+      "same day design",
+      "same day shipping"
+    ],
+    "ja": [
+      "100個〜",
+      "2時間急速印刷",
+      "50個〜",
+      "FSC 認証",
+      "HK$0.5〜",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "当日デザイン",
+      "当日出荷",
+      "無料デザイン",
+      "無料レイアウト",
+      "無料校正",
+      "箔押しロゴ"
+    ]
+  },
+  "category_morphemes": {
+    "_note": "2026-10-12 扩展: 在 B1b 清洗器原表基础上补家族品类锚词 (red-packets=packet/紅包, 书籍=書/書籍/ノート, 同人, 目录=catalog/カタログ, 婚礼=invitation/招待状/ウェディング, 明信片=明信/postcard), 已经 276 槽全扫验证",
+    "zh-hk": ["貼紙", "標籤", "不干膠", "盒", "袋", "單張", "傳單", "海報", "冊", "月曆", "日曆", "年曆", "信封", "利是封", "卡", "餐牌", "證書", "獎狀", "喜帖", "包裝", "橫額", "易拉寶", "書", "筆記", "同人", "明信"],
+    "en": ["sticker", "label", "box", "bag", "flyer", "leaflet", "poster", "book", "calendar", "envelope", "card", "menu", "banner", "certificate", "yearbook", "packet", "catalog", "notebook", "invitation", "postcard"],
+    "ja": ["ステッカー", "シール", "ラベル", "箱", "袋", "バッグ", "チラシ", "ポスター", "冊子", "カレンダー", "封筒", "カード", "メニュー", "バナー", "賞状", "アルバム", "紅包", "招待状", "ウェディング", "書籍", "ノート", "同人", "カタログ"]
+  },
+  "known_exemptions": {
+    "_note": "显式豁免 (进审计 JSON, 不暗放行): v22 名片→贺卡 1:1 改名残留行 (CSV 68-69 行, slug=贺卡 但 title/H1/正文/keywords 仍为名片/名刺/Business Cards 半成品), 属 §0.0 解禁块未拍板区 (a)/(b)/(c), 任何方向改写都抢跑 K3 裁决。待 K3 裁决后统一处理并移出豁免。",
+    "created": "2026-10-12",
+    "slots": [
+      { "slug": "thick-greeting-cards-400g", "locale": "zh-hk", "reason": "v22 改名残留: keywords=[400g名片], 待 K3 §0.0 (a)/(b)/(c) 裁决" },
+      { "slug": "thick-greeting-cards-400g", "locale": "en", "reason": "同上 + en 数组含繁中 (跨语言污染), 随裁决一并修" },
+      { "slug": "thick-greeting-cards-400g", "locale": "ja", "reason": "同上 + ja 数组含繁中 (跨语言污染), 随裁决一并修" },
+      { "slug": "foil-greeting-cards", "locale": "zh-hk", "reason": "v22 改名残留: keywords=[燙金名片], 待 K3 §0.0 (a)/(b)/(c) 裁决" },
+      { "slug": "foil-greeting-cards", "locale": "en", "reason": "同上 + en 数组含繁中 (跨语言污染), 随裁决一并修" },
+      { "slug": "foil-greeting-cards", "locale": "ja", "reason": "同上 + ja 数组含繁中 + ja 正文「名刺、名刺、」重复 bug, 随裁决一并修" }
+    ]
+  }
+}

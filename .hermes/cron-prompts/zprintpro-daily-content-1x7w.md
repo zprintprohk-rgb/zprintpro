@@ -1,3 +1,25 @@
+<!-- RECOVERY-MODE-2026-10-12 BEGIN -->
+> # 🚨 【恢复模式 · 限定凌驾级】spam 命中恢复期 (K3 2026-10-12 拍板 · SSoT: `docs/2026-10-12-recovery-lane-defense-plan.md`)
+>
+> **事实**: 2026-09 spam 更新 10/8 完成推送后整站命中 (scaled content abuse 画像, 诊断 v2 = `docs/2026-10-11-gsc-cliff-diagnosis.md` 系列); 实时 24h 恢复系数仅 **7.5%** (展示 44/天 vs 断崖前日均 ~585)。B1a+B1b 去毒已上线 (f9d9b1b7)。
+>
+> **优先级**: 结果总线契约 (-1) > **本恢复模式** > 大脑区 (10-09) 增产类指令。大脑区的 CTR c 值判据 / 盲开词纪律 / churn 盯梢**继续有效, 不被本块覆盖**。恢复期内的「增产」「铺量」「新词开拓」类指令一律降级: 先保恢复, 再谈增长。
+>
+> **全车道通用红线 (恢复期)**:
+> ① 任何内容批次**先过门童 #29** (keywords 去毒) 与既有 #25/#27/#28, 被拦不得绕过;
+> ② 报告首段 VERDICT 行后必须加一行 `RECOVERY: <实时恢复系数>%` (数据来自 `python scripts/gsc-cliff-detector.py` 产出的 `.hermes/logs/gsc-cliff-<当日>.json`);
+> ③ 禁止制造新的近重复正文 (8-gram Jaccard vs 同 locale 任一现存 SKU 正文 >60% 即停手, 报告写 BLOCKED + 证据);
+> ④ 数字钩子只能来自 products.ts / K3 拍板 (§0.23), 恢复期造假 = 直接扼杀恢复;
+> ⑤ 名片解禁仅限接单层: 不动贺卡资产 / 不动 middleware 301 / 不建名片页 (§0.0 解禁块 (a)/(b)/(c) 未裁决)。
+>
+
+> **本车道 (daily-content 21:17) 恢复期任务定义**:
+> 1. **首务 = B1c 差异化重写队列消费**, 每日 1 页 (三语同步), 队列顺序 (按 B1 审计实锤近重复簇 + Q4 商机): `stickers 5 兄弟 (waterproof/transparent/foil/fluorescent/security, 互扫 96%)` → `red-packets 族 (CNY Q4 在即)` → `a4↔a5 flyers (98%)` → `food↔folding boxes (98%)` → `kraft↔eco bags (98%)` → `a1↔a2 posters (98%)` → calendars → 其余。簇内**主推页保留**, 兄弟页正文改写 30-40% (差异化 = 材质/工艺/场景/最小起订真实差异, 数字从 products.ts 现取)。
+> 2. 队列消费进度登记: `.hermes/logs/b1c-queue-progress.json` (每日追加 {date, slug, locales, similarity_before_after}), 供下一棒幂等。
+> 3. 原「每日新内容」指令恢复期降级为次务: 当日 B1c 完成且时间富余才做; 新内容同样受通用红线 ③ 约束。
+> 4. 开工先跑 `python scripts/gsc-cliff-detector.py`: 若报 CRITICAL_CLIFF (新断崖), 当日只写诊断报告, 不做内容动作。
+<!-- RECOVERY-MODE-2026-10-12 END -->
+
 <!-- RESULTS-BUS-CONTRACT v1 (2026-09-19) -->
 > # ⛔ 【第 -1 优先级 · 结果总线消费契约】先读结果, 再干活 (K3 2026-09-19 指令)
 >
