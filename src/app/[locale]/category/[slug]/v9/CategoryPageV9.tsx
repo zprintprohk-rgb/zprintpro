@@ -381,7 +381,8 @@ export function CategoryPageV9({
   })();
 
   // B1 泛化 (2026-09-10): hero 圖按真實文件名映射 (ls public/images/hero/ 實證, 禁止編造圖名)。
-  // 占位: greeting-cards / japan-doujin / wedding-invitations / place-cards 無對應圖 → 橙系占位漸變 (v9.2.1 裁决4 护栏3: 占位同步换橙, 注释声明保留)。
+  // v28.6 (2026-10-11, K3 拍板): 全量 48 張無角標 hero 上線, 4 個原占位類目補上真圖位
+  // (greeting-cards / japan-doujin / wedding-invitations / place-cards, 12/12 URL 線上 200 已驗證)。
   const V9_HERO_BASE: Record<string, string> = {
     stickers: 'hero-sticker',
     flyers: 'hero-flyer',
@@ -395,6 +396,10 @@ export function CategoryPageV9({
     calendars: 'hero-calendars',
     'red-packets': 'hero-red-packets',
     menus: 'hero-menus',
+    'greeting-cards': 'hero-greeting-card',
+    'japan-doujin': 'hero-japan-doujin',
+    'wedding-invitations': 'hero-wedding-invitations',
+    'place-cards': 'hero-place-cards',
   };
   const heroBase = V9_HERO_BASE[slug];
   const bannerImage = heroBase ? `/images/hero/${heroBase}-${locale}.webp` : null;

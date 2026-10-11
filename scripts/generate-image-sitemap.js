@@ -128,6 +128,50 @@ for (const { slug, name, imagesByLocale } of products) {
   }
 }
 
+// v28.6 (2026-10-11): 48 张类目 hero 入图 sitemap — page=类目页, loc=hero webp, title=sidecar alt 真值。
+// slug→hero 基名与 CategoryPageV9 V9_HERO_BASE 保持同源 (改图位必须同步改这里)。
+const HERO_BASE = {
+  stickers: 'hero-sticker',
+  flyers: 'hero-flyer',
+  packaging: 'hero-gift-box',
+  'paper-bags': 'hero-kraft-bag',
+  posters: 'hero-poster',
+  banners: 'hero-banners',
+  books: 'hero-books',
+  educational: 'hero-educational',
+  envelopes: 'hero-envelopes',
+  calendars: 'hero-calendars',
+  'red-packets': 'hero-red-packets',
+  menus: 'hero-menus',
+  'greeting-cards': 'hero-greeting-card',
+  'japan-doujin': 'hero-japan-doujin',
+  'wedding-invitations': 'hero-wedding-invitations',
+  'place-cards': 'hero-place-cards',
+};
+for (const [catSlug, base] of Object.entries(HERO_BASE)) {
+  for (const locale of ['zh-hk', 'en', 'ja']) {
+    const metaPath = path.join(__dirname, `../public/images/hero/${base}-${locale}.meta.json`);
+    let title = catSlug;
+    try {
+      const meta = JSON.parse(fs.readFileSync(metaPath, 'utf-8'));
+      if (meta && meta.title && meta.title[locale]) title = meta.title[locale];
+    } catch (e) {
+      console.warn(`  hero meta missing, fallback to slug: ${base}-${locale}`);
+    }
+    xml += `  <url>
+    <loc>${BASE_URL}/${locale}/category/${catSlug}/</loc>
+    <lastmod>${TODAY}</lastmod>
+    <image:image>
+      <image:loc>${BASE_URL}/images/hero/${base}-${locale}.webp</image:loc>
+      <image:title>${escapeXml(title)}</image:title>
+    </image:image>
+`;
+    totalImages++;
+    xml += `  </url>
+`;
+  }
+}
+
 xml += `</urlset>
 `;
 
