@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-11",
+  "guard": "#29 keywords-detox-guard",
+  "slotCount": 276,
+  "issues": [],
+  "exemptedIssues": [
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "zh-hk",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "en",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    },
+    {
+      "slug": "thick-greeting-cards-400g",
+      "locale": "ja",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "zh-hk",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "en",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    },
+    {
+      "slug": "foil-greeting-cards",
+      "locale": "ja",
+      "violations": [
+        {
+          "rule": "R3_MORPHEME",
+          "detail": "数组 0 个品类语素词"
+        }
+      ]
+    }
+  ]
+}

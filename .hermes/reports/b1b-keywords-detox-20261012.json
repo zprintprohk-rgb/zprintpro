@@ -1,0 +1,104 @@
+{
+  "kill": {
+    "zh-hk": [
+      "100個起",
+      "100個起印",
+      "2小時取",
+      "2小時取件",
+      "2小時快印",
+      "50個起",
+      "HK$0.5起",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "免費打樣",
+      "免費排版",
+      "免費設計",
+      "即日出貨",
+      "即日設計",
+      "燙金LOGO",
+      "當日出貨",
+      "銅鑼灣快印"
+    ],
+    "en": [
+      "100pcs MOQ",
+      "2h express print",
+      "2h pickup",
+      "50pcs MOQ",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "foil logo",
+      "free design",
+      "free layout",
+      "free proof",
+      "from $0.06",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "same day",
+      "same day design",
+      "same day shipping"
+    ],
+    "ja": [
+      "100個〜",
+      "2時間急速印刷",
+      "50個〜",
+      "FSC 認証",
+      "HK$0.5〜",
+      "cat dad gift",
+      "custom pet label",
+      "dog mom gift",
+      "pet brand label",
+      "pet food label",
+      "pet lover gift",
+      "pet memorial",
+      "pet portrait",
+      "pet treat label",
+      "当日デザイン",
+      "当日出荷",
+      "無料デザイン",
+      "無料レイアウト",
+      "無料校正",
+      "箔押しロゴ"
+    ]
+  },
+  "stats": {
+    "zh-hk": {
+      "killed_tokens": 24,
+      "removed_refs": 2536,
+      "capped": 69
+    },
+    "en": {
+      "killed_tokens": 21,
+      "removed_refs": 1899,
+      "capped": 70
+    },
+    "ja": {
+      "killed_tokens": 20,
+      "removed_refs": 1129,
+      "capped": 69
+    }
+  },
+  "pet_hits": [
+    "cat dad gift",
+    "custom pet label",
+    "dog mom gift",
+    "pet brand label",
+    "pet food label",
+    "pet lover gift",
+    "pet memorial",
+    "pet portrait",
+    "pet treat label"
+  ],
+  "csv_changed_rows": 70
+}
