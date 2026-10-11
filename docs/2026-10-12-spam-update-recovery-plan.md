@@ -18,7 +18,7 @@
 
 | # | 动作 | 产出 |
 |---|---|---|
-| B1 | **SKU 模板相似度审计** | 对 91 SKU 页做 body/FAQ/SEO 块两两相似度扫描，输出 Top-N 最高相似对清单 + 建议（合并/noindex/人工差异化）。预期一批「同一模板换产品名」页是主要指纹 |
+| B1 | **SKU 模板相似度审计** | ✅ 已出报告 `2026-10-12-b1-sku-template-audit.md`：150/108/115 对近重复正文 + meta keywords stuffing 实锤；整改项 B1a（删 keywords 渲染）/B1b（清洗词数组）/B1c（簇内正文差异化重写）/B1d（薄页合并 noindex）待 K3 拍板 |
 | B2 | **薄内容页清理** | cart/press-kit/company-news 等低价值可索引页评估 noindex（`/en/cart/` 在 10/09 窗口仍 pos6 被展示 = 索引膨胀信号）；筛选「展示≈0 且点击=0 连续 90 天」的博客/产品页，建议 301 或 noindex |
 | B3 | **关键词密度回检** | 抽查注入批次页面（30a60554 等）正文中 exact-match 词频，超阈值段落列清单，人工改写成自然语言（不是删关键词，是去机器味） |
 | B4 | **锚文组合审计** | 全站 internal anchor 分布：exact-match 占比 >30% 的页面列清单，改 branded/natural 锚文（含 841a7260 已落的 6 条 greeting-cards exact 锚） |
