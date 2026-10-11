@@ -118,7 +118,7 @@ export async function generateMetadata({
       ...metadata,
       title: skuSeo.seo[locale].title || metadata.title,
       description: skuSeo.seo[locale].description || metadata.description,
-      keywords: skuSeo.seo[locale].keywords,
+      // 2026-10-12 B1a: meta keywords 渲染全站移除 (spam 指纹去毒)
     };
   }
 
@@ -129,7 +129,7 @@ export async function generateMetadata({
       ...metadata,
       title: coreSeo[locale].title || metadata.title,
       description: coreSeo[locale].description || metadata.description,
-      keywords: coreSeo[locale].keywords,
+      // 2026-10-12 B1a: meta keywords 渲染全站移除 (spam 指纹去毒)
     };
   }
 

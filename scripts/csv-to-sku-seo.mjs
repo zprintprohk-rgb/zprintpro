@@ -213,7 +213,8 @@ console.log(`[gen] 断言 PASS: A 锚位 / B key 数守恒 / C ts-only 逐字 / 
 const newHeader = `/**
  * 【混合档 · 增量合并生成】CSV 权威域: name/seo.title/seo.description/seo.h1/seo.keywords/imageAlt
  * ts 权威例外域: seo.body(含换行不适合行式CSV) / faqs(无消费点疑死数据)
- * 100 key = CSV 74 + ts-only 26; gift-boxes 死行排除 (K3 7/22 并入 rigid-boxes)
+ * 92 key = CSV 91 + ts-only 1 (small-bags); gift-boxes 死行排除 (K3 7/22 并入 rigid-boxes)
+ * 2026-10-12 B1b: keywords 三语去毒 (spam-recovery, scripts/apply-b1b-keywords-detox-20261012.py)
  * 更新: 改 CSV → node scripts/csv-to-sku-seo.mjs --apply (dry-run 先行)
  * SOP-5 例外与事故: docs/2026-09-20-sku-seo-data-regen-hazard-and-sop5-exception.md
  */`;

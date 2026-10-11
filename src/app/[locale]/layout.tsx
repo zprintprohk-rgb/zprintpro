@@ -79,7 +79,7 @@ export async function generateMetadata({ params }: { params: { locale: string } 
       template: '%s',
     },
     description: b.ogDesc,
-    keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'red packet printing', 'custom posters', 'same day printing', 'global printing service'],
+    // 2026-10-12 B1a: layout 级 meta keywords 移除 (spam 指纹去毒)
     authors: [{ name: b.authorName }],
     creator: b.authorName,
     publisher: b.authorName,

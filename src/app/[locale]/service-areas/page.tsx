@@ -27,11 +27,7 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   return {
     title: titles[locale],
     description: descriptions[locale],
-    keywords: locale === 'zh-hk'
-      ? ['香港印刷送貨','全港送貨','香港島印刷','九龍印刷','新界印刷','即日印刷速遞','跨境印刷','深圳工場直送']
-      : locale === 'en'
-        ? ['hong kong printing delivery','island wide delivery','cross border printing','shenzhen factory direct','DHL express printing','international printing service','us uk au printing']
-        : ['香港印刷配送','全港配送','越境印刷','深圳工場直送','DHL Express 印刷','国際印刷サービス','日本同人誌印刷'],
+    // 2026-10-12 B1a: meta keywords 渲染全站移除
   };
 }
 

@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: m.title,
     description: m.desc,
-    keywords: m.keywords,
+    // 2026-10-12 B1a: meta keywords 渲染全站移除
     alternates: {
       canonical: `https://zprintpro.com/${locale}/services/business-cards-printing/`,
       languages: {

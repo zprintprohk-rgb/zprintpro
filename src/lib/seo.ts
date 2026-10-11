@@ -340,7 +340,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
   return {
     title: meta.title,
     description: meta.description,
-    keywords: meta.keywords,
+    // 2026-10-12 B1a: meta keywords 渲染全站移除 (homeMetadata.keywords 数据保留不渲染)
     alternates: {
       canonical: `${siteConfig.url}/${locale}/`,
       languages: {
@@ -830,7 +830,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
             a === b || a.startsWith(b) || b.startsWith(a) ? (a.length >= b.length ? a : b) : m
         );
   const baseDescription = collapseLeadingNameDup(seoData.descriptions[locale]);
-  const keywords = seoData.keywords[locale];
+  // 2026-10-12 B1a: 类目页 meta keywords 渲染移除 (seo-keywords.ts 数据保留不渲染)
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
 
   // 分类标题按市场区分
@@ -863,7 +863,6 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   return {
     title: categoryTitle,
     description,
-    keywords: keywords.split(','),
     alternates: {
       canonical: `${siteConfig.url}/${locale}/category/${slug}/`,
       languages: {

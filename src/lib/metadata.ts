@@ -15,7 +15,7 @@ export function createMetadata(seo: SEOMetadata, locale: Locale): Metadata {
   return {
     title: seo.title,
     description: seo.description,
-    keywords: seo.keywords?.join(', '),
+    // 2026-10-12 spam-recovery B1a (K3 拍板): 全站移除 <meta name="keywords"> 渲染 — 现代 SEO 零收益、纯 spam 指纹
     alternates: {
       canonical: seo.canonical,
       languages: {

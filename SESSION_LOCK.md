@@ -1,6 +1,21 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-11 17:0x K3 拍板改版会话释放：
+> **当前状态**: 🔒 **持有中（2026-10-12 03:5x · spam-recovery B1a/B1b 去毒会话）**
+
+| 项 | 值 |
+|---|---|
+| **持有者** | spam-recovery B1a/B1b 会话（K3 2026-10-12 拍板：「B1a/B1b 按你建议」= 删全站 `<meta name="keywords">` 渲染 + 清洗 keywords 数组；旧域名已续费只待确认转发；灾难判定随批交付） |
+| **意图** | ① B1a：删 9 文件 11 处 meta keywords 渲染点（metadata.ts / seo.ts ×3 / product page ×2 / blog page / layout / service-areas / services ×3）② B1b：CSV 关键词列清洗（>8-SKU 模板词 + 宠物污染词 + ≤10 cap）→ 官方 regen 管线 `csv-to-sku-seo.mjs --apply` 落 ts + small-bags（ts-only）迷你应用器 |
+| **写入范围** | `src/lib/metadata.ts` · `src/lib/seo.ts` · `src/app/[locale]/{product/[slug],blog/[slug],service-areas,services/*}/page.tsx` · `src/app/[locale]/layout.tsx` · `zprintpro-sku-seo-data.csv`（仅 3 关键词列）· `src/data/sku-seo-data.ts`（regen + small-bags）· scripts/ 新增清洗器 · docs/ 判定报告 · 本文件 |
+| **真值依据** | `docs/2026-10-12-b1-sku-template-audit.md`（K2.8 审计）· 词频实测（本会话重算，快照 `.hermes/tmp/kw-snapshot-20261012.json`）· CSV↔ts 平价校验 0 漂移（`.hermes/tmp/_parity-check.py`） |
+| **双条件核验** | ① src/ 无 MM（03:5x git status 实证）② 对端 ≥15min 静默（K2.8 末次写入 03:25 commit 4d7def3b，已 ~30min；lane.lock 不存在）✓ |
+| **预计时长** | < 40 min |
+| **释放条件** | 四件套（encoding / tsc 54 基线 0 增量 / brand-mentions strict / pre-commit 门童）+ commit + push（窗口早开：上次 10-11 16:51）+ 线上 meta keywords=0 断言后释放 |
+| **冻避让** | 不碰贺卡资产正文/301 映射；不碰 body 正文（B1c 待 K3 拍板策略）；CSV 工作区既有 4 行贺卡 desc 回灌属平价镜像（已验证与 ts 逐字一致），随批入库 |
+
+---
+
+> **上一状态**: ⚪ **已释放（RELEASED）** — 2026-10-11 17:0x K3 拍板改版会话释放：
 > commit `1ad5abd5`（已推，CF 构建完成）= 类目 hero **去對比度遮罩** + 文字塊（麵包屑+H1+副標+4 賣點膠囊）**上移置圖上方**（淺底深字，膠囊 #FFF4EC/#FFD9BD + 品牌橙勾）。16 類目共用一個組件全量生效。探針：tsc 54=54、三語 HTML 順序 bc→h1→img ✅、無遮罩 ✅、Edge 無頭截圖 zh-hk+en 目檢通過（截圖存 `.hermes/tmp/shot-place-cards.png` / `shot-flyers-en.png`）。鎖釋放記錄 commit 隨下攢批推。
 
 > **上一释放记录** — 2026-10-11 09:2x v28.6 全量批会话释放：

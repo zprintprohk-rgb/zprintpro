@@ -916,7 +916,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   return {
     title: post?.title || 'Blog Post',
     description: post?.description || '',
-    keywords: post?.keywords,
+    // 2026-10-12 B1a: meta keywords 渲染全站移除 (og article:tag 保留, 属合法 OG 非 keywords 标签)
     openGraph: {
       title: post?.title || 'Blog Post',
       description: post?.description || '',
