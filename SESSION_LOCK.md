@@ -1,6 +1,20 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放（RELEASED）** — 2026-10-12 04:4x spam-recovery B1a/B1b 会话释放：
+> **当前状态**: 🟡 **挂起待 K3（图片阻塞）** — 2026-10-12 13:0x 人手会话（deepseek hermes）：
+> **已完成**: 荧光→卷裝替换 + Tier1 八 SKU 退役 **全部代码/SEO/价格/站点图/重定向手术完成**（tsc 54 基线、门童 title/gsc-leak/brand 全绿、regen 幂等、相似度 max 0.104）
+> **唯一阻塞**: 火山引擎 Ark 账户欠费（AccountOverdueError），seedream 11 张图无法生成
+> **待 K3 二选一**: ① 充值火山引擎 → 我重跑 `.hermes/_roll_images.py`；② 任意途径供 11 张源图丢 `.hermes/_roll_raw/`（命名 roll_{zh-hk|en|ja}_{1..4}.png）→ 我跑 `.hermes/_roll_convert.py` 一键落盘
+> **图齐后动作**: 复跑 sitemap 图链 → commit + push（§0.25 窗口）→ IndexNow/GSC 索引 → 探针 → 释放锁
+> **写入范围**: （同下手术清单，已全部落盘未 push）
+>
+> ---
+>
+> **上一状态**: ⚪ 已释放 — 2026-10-12 09:2x B1c 簇 1（stickers 5 兄弟）重写会话释放：
+> commit `46e729ba` + `7ef95fae`（双端已推，ls-remote 对账一致）= B1c 簇 1 全量落地：5 SKU × 3 语 body 差异化重写（waterproof 主推锚页）+ CSV 15 槽 title 量词（個→張）/desc/h1/ja-H1/imageAlt 修复（走 CSV→csv-to-sku-seo regen，断言 A-E 全过、幂等 0 漂移）+ products.ts 5 槽 faqSchema 拆同源指纹 + transparent en/ja 简体「适配行业」清毒 2 处。**验收：簇内 8-gram Jaccard 0.955-0.98 → ≤0.221**（zh 0.217/en 0.221/ja 0.183，红线 <60%）；门检 tsc 54=54 / title-v5 15 槽 0 HARD / detox 0 / gsc-leak 0 / brand A 类 0；sitemap lastmod 实更 ×6 + IndexNow 15 URL 200；线上 5 页探针新标记全阳、旧标记（pet alt / 100 MOQ / 張冠李戴 FAQ）全清。SSoT `docs/2026-10-12-b1c-cluster1-stickers-rewrite-checklist.md`（标 DONE）+ 进度 `.hermes/logs/b1c-queue-progress.json`（DONE，车道见即跳簇 2）。挂账（wave 2+）：① products.ts「适配行业」简体污染全站 20 处（removable/small-batch/die-cut/bags/boxes/flyers/posters 等，本批只清 transparent）；② die-cut/removable/small-batch/fruit-food 4 贴纸 SKU 同模板第 2 梯队；③ imageAlt「pet food and brand labels」其余 SKU 残留。
+>
+> ---
+>
+> **上一状态**: ⚪ 已释放 — 2026-10-12 04:4x spam-recovery B1a/B1b 会话释放：
 > commit `f9d9b1b7`（双端已推，ls-remote 对账一致）= B1a 全站 meta keywords 渲染移除（9 文件 12 处）+ B1b keywords 三语去毒 5,564 词例（pet 9 词 / >8-SKU 无品类语素模板词 65 词 / ≤10 cap；品类语素白名单保留「貼紙印刷」等 49 词）走 CSV + 官方 regen 管线（断言 A-E 全过、title 漂移 0、ts-only small-bags 逐字保留）+ 判定报告 docs/2026-10-12-b1a-b1b-detox-and-disaster-verdict.md。门检：tsc 54=54（须用 `node node_modules/typescript/bin/tsc`，.bin shim 缺 node.exe）/ encoding 13 文件 ✅ / brand A 类 0 / pre-commit 0 red。**线上断言 8/8 PASS**（PDP×3 + 首页 + 类目 + service-areas + services×2：keywords meta=0、title/description 完整，探针 `scripts/b1a-live-probe-20261012.mjs`）。随批携带：K2.8 诊断 3 commit（149bf8ad/fcdd5b57/4d7def3b）+ CSV 工作区既有 4 行贺卡 desc 回灌（已验证与 ts 逐字一致，纯镜像入库）。挂账：① body/imageAlt 中 pet 应用场景句属 B1c 范畴待拍板；② regen 管线当前健康（fruit 块 0 缩进已被 keyRe 兼容）。
 
 ---

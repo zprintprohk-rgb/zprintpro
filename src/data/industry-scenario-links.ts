@@ -145,8 +145,9 @@ export const SCENARIO_LINKS: Record<string, Record<string, ScenarioLink>> = {
     // 2026-09-23 SKU 压缩: can-badge 下架 (非业务范围) → doujinshi-printing 承接 (同人周邊主线)
     anime_goods: { sku: 'doujinshi-printing' },
     vtuber: { sku: 'doujinshi-printing' },
-    comiket: { sku: 'postcard-set' },
-    original_ip: { sku: 'eco-tote-bag' },
+    // 2026-10-12 Tier1 退役: postcard-set/eco-tote-bag 收拢 → doujinshi-printing 承接
+    comiket: { sku: 'doujinshi-printing' },
+    original_ip: { sku: 'doujinshi-printing' },
   },
 
   /**

@@ -1403,74 +1403,76 @@ export const products: Product[] = [
     authorBio: {"name": "", "role": "", "bio": ""},
 },
   {
-    id: 'ST-008',
-    sku_code: 'ST-008',
-    slug: 'fluorescent-stickers',
-    optimizedAt: '2026-08-01',
+    id: 'ST-010',
+    sku_code: 'ST-010',
+    slug: 'roll-stickers',
+    optimizedAt: '2026-10-12',
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '螢光貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Fluorescent Stickers | Waterproof & Die-Cut Stickers', nameJa: '蛍光ステッカー | 防水ステッカー / ダイカット', title_zh: '螢光貼紙',
-    description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント裝飾に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
+    name: '卷裝貼紙 | 卷裝標籤 / 貼標機適用', nameEn: 'Roll Labels | Custom Roll Stickers for Label Applicators', nameJa: 'ロールラベル | ラベラー対応 ロールシール', title_zh: '卷裝貼紙',
+    description: '卷裝貼紙出貨即成卷，上貼標機即用：卷芯直徑 4cm、出標方向可選、每卷 1,000 張，銅板紙熱熔膠格仔底，食品飲料、美妝、日化生產線適用。10 張起印，3,000 張低至 HK$0.20/張。', descriptionEn: 'Roll labels shipped wound on 4cm cores, unwind direction options, 1,000 labels per roll - applicator-ready for food, beverage, beauty and FMCG lines. From 10 pcs, as low as $0.03 per label at 3,000 pcs.', descriptionJa: 'ロールラベルは巻芯径4cm・繰り出し方向指定可・1巻1,000枚で出荷、食品・飲料・化粧品・日用品のラベラーラインにそのまま対応。10枚から、3,000枚で1枚¥4.1〜。', description_zh: '卷裝貼紙出貨即成卷，上貼標機即用：卷芯直徑 4cm、出標方向可選、每卷 1,000 張，銅板紙熱熔膠格仔底。',
     features: [
-      '【螢光油墨】高飽和度，日光下即顯強烈視覺衝擊',
-      '【PVC／螢光紙】可選防水膜或紙質，適配室內外場景',
-      '【SGS 認證】無重金屬遷移，安全用於食品與兒童相關標籤',
-      '【反光組合】可搭配反光條紋，提升夜間可見度達 200%',
-      '【異形模切】任意形狀裁切，安全標識與促銷標籤皆可',
-      '【數碼快印】10 張起印，當日打樣，急單無憂',
-      '【高對比建議】印前免費配色建議，確保 6pt 以上文字清晰',
+      '【貼標機適用】卷芯直徑 4cm、出標方向可選（如橫版左出標）、每卷 1,000 張，上機即用',
+      '【熱熔膠銅板】格仔底紙 + 熱熔膠，貼附牢、出標順，通用食品飲料與日化瓶罐',
+      '【小批量起印】10 張起印數碼快印，試產與大貨同線，3,000 張低至 HK$0.20/張',
+      '【異形模切】任意形狀啤切，品牌輪廓標籤亦可上機',
+      '【可變資料】序號／QR／條碼逐張可變，批次管理與防竄貨',
+      '【SGS 遷移測試】油墨無重金屬遷移，間接食品接觸適用',
+      '【1 小時打稿】免費數碼打稿 + 2 次免費修改，5-7 個工作天交貨',
     ],
     specs: {
-      material: '螢光 PVC 膜／螢光紙；螢光油墨',
-      size: '最小約 20×20mm，最大約 280×380mm',
-      printMethod: '四色數碼或柯式（依數量）',
-      finishing: '模切、反光條紋覆合、覆膜',
+      material: '銅板紙（熱熔膠）＋格仔底紙',
+      size: '常用 150×100mm 級距，任意尺寸可報',
+      printMethod: 'HP Indigo 數碼／柯式（依數量）',
+      finishing: '卷裝復卷（卷芯 4cm・出標方向可選・每卷 1,000 張）、異形模切(啤)',
     },
-    price_range: 'HK$0.52-2.00/張',
-    basePrice: 0.52,
-    basePrice_en: 0.46,
-    basePrice_ja: 60,
+    price_range: 'HK$0.20-5.50/張',
+    basePrice: 0.20,
+    basePrice_en: 0.03,
+    basePrice_ja: 4,
     weight_score: 80,
     isHot: false,
-    isNew: false,
+    isNew: true,
     minQuantity: 10,
-    images: ['/images/products/fluorescent-stickers.jpg'],
+    images: ['/images/products/roll-stickers.jpg'],
   imagesByLocale: {
     'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-3.webp',
     ],
     'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-en-4.webp',
     ],
     'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-ja-4.webp',
     ],
   },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-stickers-fluorescent-stickers-zh-hk.webp', en: 'zprintpro-stickers-fluorescent-stickers-en.webp', ja: 'zprintpro-stickers-fluorescent-stickers-ja.webp' },
+    filename: { 'zh-hk': 'zprintpro-stickers-roll-stickers-zh-hk.webp', en: 'zprintpro-stickers-roll-stickers-en.webp', ja: 'zprintpro-stickers-roll-stickers-ja.webp' },
     alt: {
-      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 模切',
-      en: 'Waterproof Stickers & Custom Vinyl | Fluorescent Stickers | Professional Stickers Online',
-      ja: '防水ステッカー / ダイカットステッカー | 蛍光ステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '卷裝貼紙 / 卷裝標籤 | 香港卷裝標籤印刷 卷芯4cm 貼標機適用 | 智印港',
+      en: 'Custom Roll Labels on 4cm cores for label applicators | ZprintPro',
+      ja: 'ロールラベル 印刷 | 巻芯径4cm・ラベラー対応 | ZprintPro'
     },
   },
-  
-    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
+
+    // === 2026-10-12 新建: 卷裝貼紙 (K3 拍板荧光→卷裝), 價格真值 = price-data.generated.ts roll 檔 ===
     variables: {
       quantities: [
-        { value: 10, label: '10', discount: 2.35 },
-        { value: 100, label: '100張', discount: 1 },
-        { value: 500, label: '500張', discount: 0.85 },
-        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 10, label: '10', discount: 7.75 },
+        { value: 25, label: '25', discount: 3.24 },
+        { value: 50, label: '50張', discount: 1.72 },
+        { value: 75, label: '75張', discount: 1.23 },
+        { value: 99, label: '99張', discount: 1 },
+        { value: 3000, label: '3000張', discount: 0.29 },
       ],
     },
     seoTitle: {"zh-hk": "", "en": "", "ja": ""},
@@ -1478,7 +1480,7 @@ export const products: Product[] = [
     metaTitle: "",
     aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
     knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
-    faqSchema: [{"question": "What is the difference between fluorescent and reflective stickers?", "answer": "Fluorescent stands out in daylight or lamplight; reflective bounces light back in the dark when hit by headlights. They can be combined for day-and-night visibility."}, {"question": "Are fluorescent stickers safe for food or children related labels?", "answer": "Yes. The inks are SGS certified with no heavy-metal migration, suitable for food-related and children-related labeling."}, {"question": "Are fluorescent stickers suitable for outdoor use?", "answer": "Fluorescent PVC film is waterproof and weather-resistant for outdoor use; fluorescent paper suits indoor or short-term use. Lamination extends outdoor life."}, {"question": "Which fluorescent colors are available?", "answer": "Fluorescent yellow, orange, pink and green are standard. Free prepress color advice confirms high-contrast pairings."}],
+    faqSchema: [{"question": "What core size and unwind direction do your roll labels come in?", "answer": "Standard core diameter is 4cm with unwind direction options such as landscape left unwind. Labels are wound 1,000 per roll - tell us your applicator model and we will match the winding spec."}, {"question": "What is the minimum order for roll labels?", "answer": "10 labels with no setup fees. Volume tiers go up to 3,000 pcs at HK$0.20 per label."}, {"question": "Which adhesive do the roll labels use?", "answer": "Art paper with hot-melt adhesive on grid backing as standard - strong tack for bottles, jars and cartons. Other adhesives quoted on request."}, {"question": "Can roll labels include variable data such as serials or QR codes?", "answer": "Yes. Digital printing supports a different serial number, QR code or barcode on every label for batch tracking and anti-diversion."}],
     relatedEntities: {"sameAs": [], "mentions": []},
     expertReview: {"reviewer": "", "credentials": "", "review": ""},
     authorBio: {"name": "", "role": "", "bio": ""},
@@ -7539,240 +7541,6 @@ export const products: Product[] = [
     expertReview: {"reviewer": "", "credentials": "", "review": ""},
     authorBio: {"name": "", "role": "", "bio": ""},
 },
-    {
-      id: 'DJ-004',
-      sku_code: 'DJ-004',
-      slug: 'postcard-set',
-      optimizedAt: '2026-08-07',
-      optimizationRound: 1,
-      category: 'japan-doujin',
-      category_slug: 'japan-doujin',
-      name: '明信片套裝',
-      nameEn: 'Postcard Set',
-      nameJa: 'ポストカードセット',
-      title_zh: '明信片套裝 | 和紙風藝術紙 | 智印港',
-      description: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
-      descriptionEn: 'Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided printing, OPP sleeve packaging. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
-      descriptionJa: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
-      description_zh: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。',
-  longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & VTuber Goods</h3>
-<p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design. OPP sleeve packaging protects from scratches and dust.</p>
-
-<h3>Specifications</h3>
-<table>
-  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
-  <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>Washi-style art paper 180g / double-sided matte PP laminate</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>105×148mm (A6 standard postcard)</td></tr>
-    <tr><td>Print Method</td><td>On-demand / offset 4-color (CMYK)</td></tr>
-  </tbody>
-</table>
-
-<h3>Quick Production for Events & Giveaways</h3>
-<p>ZprintPro offers fast production for postcard set reorders and event merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
-
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>4 sets minimum. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for postcard sets (rush fee applies). Contact us via WhatsApp for details.</p></details>
-<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
-<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
-<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
-
-<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
-        price_range: '¥750〜/枚〜',
-      basePrice: 750,
-    basePrice_en: 124.5,
-      weight_score: 0.3,
-      isHot: true,
-      isNew: true,
-      minQuantity: 4,
-      turnaround: '3-5 営業日',
-      images: [
-        '/images/japan/postcard-set.webp',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-1.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-2.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-3.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-4.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-5.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-6.jpg'
-      ],
-      imagesByLocale: {
-        'zh-hk': [
-          '/images/japan/postcard-set.webp',
-        ],
-        en: [
-          '/images/japan/postcard-set.webp',
-        ],
-        ja: [
-          '/images/japan/postcard-set.webp',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-1.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-2.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-3.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-4.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-5.jpg',
-      '/images/japan/zprintpro-doujinshi-postcard-set-ja-6.jpg'
-        ],
-      },
-      seoImages: {
-        filename: {
-          'zh-hk': 'postcard-set.webp',
-          en: 'postcard-set.webp',
-          ja: 'postcard-set.webp',
-        },
-        alt: {
-          'zh-hk': '明信片套裝-和紙風-105x148mm',
-          en: 'postcard-set-washi-style-105x148mm',
-          ja: 'ポストカードセット-和紙風-105x148mm',
-        },
-      },
-      features: [
-        'Comiket 前 24 小時特急対応可',
-        '4 套起印,少量対応',
-        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
-        'FSC 認證紙材 / ISO 12647 色彩管理',
-        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
-        '105×148mm (A6 標準明信片) 尺寸'
-      ],
-      specs: {
-        material: '和紙風藝術紙 180g / 雙面霧面 PP 貼膜',
-        size: '105×148mm (A6 標準明信片)',
-        printMethod: '數碼 / 柯式四色 (CMYK)',
-        finishing: 'OPP 獨立袋包裝 + 集合 OPP 袋',
-      },
-      options: {
-        material: [
-          { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: '進階', priceAdjustment: 1500 },
-        ],
-        size: [
-          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
-        ],
-      },
-      variables: {
-        quantities: [
-          { value: 4, label: '4 套起', discount: 0 },
-          { value: 50, label: '50 件', discount: 0.05 },
-          { value: 100, label: '100 件', discount: 0.10 },
-          { value: 500, label: '500 件', discount: 0.15 },
-        ],
-      },
-    
-    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
-    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
-    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
-    metaTitle: "",
-    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
-    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
-    faqSchema: [{"question": "What is doujinshi printing?", "answer": "Doujinshi (同人誌) is self-published Japanese fan works or original manga, traditionally printed for Comic Market (コミケ) and other doujin conventions. ZprintPro specializes in short-run doujinshi with 4C+0 offset print and fast turnaround."}, {"question": "What sizes are standard for doujinshi?", "answer": "Standard doujinshi sizes: A5 (148x210mm), B5 (182x257mm), and A4 (210x297mm). B5 is most popular for manga. Saddle stitch binding for 8-64 pages, perfect bound for 65+."}, {"question": "Can I print doujin merchandise alongside my booklets?", "answer": "Yes — we offer postcard sets and eco tote bags popular for doujin circle merchandise, with small-batch MOQ and full-color printing."}, {"question": "What is the lead time for Comiket doujinshi?", "answer": "Pre-Comiket season (June/July for summer, December for winter) we offer 10-15 business day lead time. Rush service 5-7 days available. Plan ahead during peak season (July, December)."}],
-    relatedEntities: {"sameAs": [], "mentions": []},
-    expertReview: {"reviewer": "", "credentials": "", "review": ""},
-    authorBio: {"name": "", "role": "", "bio": ""},
-},
-    {
-      id: 'DJ-005',
-      sku_code: 'DJ-005',
-      slug: 'eco-tote-bag',
-      optimizedAt: '2026-08-07',
-      optimizationRound: 1,
-      category: 'japan-doujin',
-      category_slug: 'japan-doujin',
-      name: '環保托特袋',
-      nameEn: 'Eco Tote Bag',
-      nameJa: 'エコトートバッグ',
-      title_zh: '環保托特袋 | 100% 有機棉 | 智印港',
-      description: '100% 純棉有機托特袋,絲網印刷 / DTG 全彩印刷。Comiket / 企業活動周邊首選,10 件起印,FSC 認證布料。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
-      descriptionEn: '100% organic cotton tote bags with silk printing. Ideal for oshi-katsu, Comiket, corporate merchandise. MOQ 10 pcs, FSC-certified fabric. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
-      descriptionJa: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
-      description_zh: '100% 純棉有機托特袋,絲網印刷 / DTG 全彩印刷。Comiket / 企業活動周邊首選,10 件起印,FSC 認證布料。',
-            price_range: '¥9,000〜/個〜',
-      basePrice: 9000,
-    basePrice_en: 1494.0,
-      weight_score: 0.6,
-      isHot: true,
-      isNew: true,
-      minQuantity: 10,
-      turnaround: '5-7 営業日',
-      images: [
-        '/images/japan/eco-tote-bag.webp',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-1.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-2.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-3.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-4.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-5.jpg'
-      ],
-      imagesByLocale: {
-        'zh-hk': [
-          '/images/japan/eco-tote-bag.webp',
-        ],
-        en: [
-          '/images/japan/eco-tote-bag.webp',
-        ],
-        ja: [
-          '/images/japan/eco-tote-bag.webp',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-1.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-2.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-3.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-4.jpg',
-      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-5.jpg'
-        ],
-      },
-      seoImages: {
-        filename: {
-          'zh-hk': 'eco-tote-bag.webp',
-          en: 'eco-tote-bag.webp',
-          ja: 'eco-tote-bag.webp',
-        },
-        alt: {
-          'zh-hk': '環保托特袋-有機棉-12oz',
-          en: 'eco-tote-bag-organic-cotton-12oz-canvas',
-          ja: 'エコトートバッグ-オーガニックコットン-12oz',
-        },
-      },
-      features: [
-        'Comiket 前 24 小時特急対応可',
-        '10 件起印,少量対応',
-        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
-        'FSC 認證紙材 / ISO 12647 色彩管理',
-        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
-        '38×42×10cm (可收納 A4) / 側寬 10cm 尺寸'
-      ],
-      specs: {
-        material: '100% 有機棉 / 12oz 厚實帆布',
-        size: '38×42×10cm (可收納 A4) / 側寬 10cm',
-        printMethod: '絲網印刷 (1-3 色) / DTG 全彩印刷',
-        finishing: '內袋 / 底板加強 / 繡名字 (可選)',
-      },
-      options: {
-        material: [
-          { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: '進階', priceAdjustment: 1500 },
-        ],
-        size: [
-          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
-        ],
-      },
-      variables: {
-        quantities: [
-          { value: 10, label: '10 件起', discount: 0 },
-          { value: 50, label: '50 件', discount: 0.05 },
-          { value: 100, label: '100 件', discount: 0.10 },
-          { value: 500, label: '500 件', discount: 0.15 },
-        ],
-      },
-    
-    // === V18 CLEARED 2026-09-12: 编造内容清毒 (品牌关联/假评审/假数字), zero consumers, v92 接线时按真实实体 + 拍板口径重填 ===
-    seoTitle: {"zh-hk": "", "en": "", "ja": ""},
-    seoDescription: {"zh-hk": "", "en": "", "ja": ""},
-    metaTitle: "",
-    aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
-    knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
-    faqSchema: [{"question": "What is doujinshi printing?", "answer": "Doujinshi (同人誌) is self-published Japanese fan works or original manga, traditionally printed for Comic Market (コミケ) and other doujin conventions. ZprintPro specializes in short-run doujinshi with 4C+0 offset print and fast turnaround."}, {"question": "What sizes are standard for doujinshi?", "answer": "Standard doujinshi sizes: A5 (148x210mm), B5 (182x257mm), and A4 (210x297mm). B5 is most popular for manga. Saddle stitch binding for 8-64 pages, perfect bound for 65+."}, {"question": "Can I print doujin merchandise alongside my booklets?", "answer": "Yes — we offer postcard sets and eco tote bags popular for doujin circle merchandise, with small-batch MOQ and full-color printing."}, {"question": "What is the lead time for Comiket doujinshi?", "answer": "Pre-Comiket season (June/July for summer, December for winter) we offer 10-15 business day lead time. Rush service 5-7 days available. Plan ahead during peak season (July, December)."}],
-    relatedEntities: {"sameAs": [], "mentions": []},
-    expertReview: {"reviewer": "", "credentials": "", "review": ""},
-    authorBio: {"name": "", "role": "", "bio": ""},
-},
 
 
   // === 喜帖印刷 (6 SKU, K3 8/17 拍板 Step 2) ===
@@ -7801,30 +7569,6 @@ export const products: Product[] = [
     specs: { material: '300g 棉紙 / 350g 剛古紙 / 300g 銅版紙', size: '130×190mm 標準請帖 / 190×260mm 對摺請帖', finishing: '燙金 (金/銀/玫瑰金/香檳金) + UV 局部 + 模切異形', printMethod: '柯式印刷 4C + 燙金' },
   },
   {
-    id: 'WI-002',
-    sku_code: 'WI-002',
-    slug: 'save-the-date-cards',
-
-    title_zh: 'Save the Date 卡片',
-    description_zh: 'Save the Date 預告卡 50 套起印,300g 銅版紙 / 棉紙 / 剛古紙 可選,附郵寄信封。順豐本地 + DHL 全球。**適配行業**: 婚慶...',
-    basePrice: 0.85,
-    weight_score: 50,
-    images: ['/images/products/save-the-date-cards-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'wedding-invitations',
-    category_slug: 'wedding-invitations',
-    name: 'Save the Date 卡片', nameEn: 'Save the Date Cards', nameJa: 'Save the Date カード',
-    description: 'Save the Date 預告卡 50 套起印,300g 銅版紙 / 棉紙 / 剛古紙 可選,附郵寄信封。順豐本地 + DHL 全球。**適配行業**: 婚慶預告/教堂/Save the Date/感謝卡/教堂紀念.',
-    descriptionEn: 'Save the Date announcement cards 50 sets MOQ, 300gsm art / cotton / Conqueror paper options with mailing envelopes included. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding previews / chapels / Save the Date / thank you cards / church memorials.',
-    descriptionJa: 'Save the Date 予告カード 50 セットから、300g コート / コットン / コンカラー紙選択可、封筒付き。DHL 国際 2-4 日配送。**適合業種**: 結婚式予告 / チャペル / Save the Date / サンキュカード / 教会記念.',
-    price_range: 'NT$18-65 / 套',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '300g 銅版紙 / 棉紙 / 剛古紙', size: 'A6 (105×148mm) / 自訂', finishing: '光膠 / 啞膠 / 燙金 / UV 局部', printMethod: '柯式印刷 4C' },
-  },
-  {
     id: 'WI-003',
     sku_code: 'WI-003',
     slug: 'wedding-thank-you-cards',
@@ -7848,128 +7592,8 @@ export const products: Product[] = [
     optimizationRound: 1,
     specs: { material: '300g 棉紙 / 銅版紙 / 剛古紙', size: 'A6 (105×148mm) / 對摺 A5', finishing: '燙金 / UV / 模切 / 折卡', printMethod: '柯式印刷 4C + 折卡' },
   },
-  {
-    id: 'WI-006',
-    sku_code: 'WI-006',
-    slug: 'wedding-suite-bundle',
-
-    title_zh: '婚慶整套配套',
-    description_zh: '婚慶整套 6 大件配套 (喜帖 + Save the Date + 感謝卡 + 節目單 + 菜單 + 席位圖),100 套起印。享 85 折優惠 + 免費寄樣。...',
-    basePrice: 25.0,
-    weight_score: 50,
-    images: ['/images/products/wedding-suite-bundle-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'wedding-invitations',
-    category_slug: 'wedding-invitations',
-    name: '婚慶整套配套', nameEn: 'Wedding Suite Bundle', nameJa: 'ウエディング フル セット',
-    description: '婚慶整套 6 大件配套 (喜帖 + Save the Date + 感謝卡 + 節目單 + 菜單 + 席位圖),100 套起印。享 85 折優惠 + 免費寄樣。順豐本地 + DHL 全球。**適配行業**: 婚慶全套/海外婚禮/教堂/酒店婚禮/米其林宴席.',
-    descriptionEn: 'Wedding full suite 6-piece bundle (invitation + Save the Date + thank you + program + menu + seating chart), 50 sets MOQ. 15% off bundle pricing + free sample. Free shipping over $99 + DHL 2-4 day global. **Best for**: full wedding / destination weddings / chapels / hotel weddings / Michelin dinners.',
-    descriptionJa: 'ウエディング フル セット 6 点 (招待状 + Save the Date + サンキュー + のしおり + メニュー + 座席表)、100 セットから。セット 15%OFF + 無料サンプル。DHL 国際 2-4 日配送。**適合業種**: 結婚フルセット /  destination wedding / チャペル / ホテル結婚式 / ミシュラン ディナー.',
-    price_range: 'NT$120-450 / 套 (整套 6 件)',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '300g 棉紙 (主) + 350g 剛古紙 (請帖)', size: '6 件不同尺寸 (請帖 130×190mm 等)', finishing: '燙金 (玫瑰金) + UV 局部 + 模切 + 折卡', printMethod: '柯式印刷 4C 雙面 + 燙金' },
-  },
 
   // === 枱卡 / 酒水牌 / 座位卡 (6 SKU, K3 8/17 拍板 Step 2) ===
-  {
-    id: 'PC-001',
-    sku_code: 'PC-001',
-    slug: 'wedding-place-cards',
-
-    title_zh: '婚宴枱卡',
-    description_zh: '婚宴枱卡 / 餐桌卡 50 張起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / 壓紋 / 模切,配折卡或站立式。順豐本地 + DHL 全球。**適配...',
-    basePrice: 0.3,
-    weight_score: 50,
-    images: ['/images/products/wedding-place-cards-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'place-cards',
-    category_slug: 'place-cards',
-    name: '婚宴枱卡', nameEn: 'Wedding Place Cards', nameJa: 'ウエディング席札',
-    description: '婚宴枱卡 / 餐桌卡 50 張起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / 壓紋 / 模切,配折卡或站立式。順豐本地 + DHL 全球。**適配行業**: 婚宴餐桌/酒店婚禮/海外婚禮/教堂/宴會餐桌.',
-    descriptionEn: 'Wedding place cards / table cards 50 sheets MOQ, 300gsm cotton / art / Conqueror paper + foil / embossing / die-cut, folded or standing. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding tables / hotel weddings / destination weddings / chapels / banquet tables.',
-    descriptionJa: 'ウエディング席札 / テーブルカード 50 枚から、300g コットン / コート / コンカラー紙 + 箔押し / エンボス / 抜型、折カードまたはスタンド式。DHL 国際 2-4 日配送。**適合業種**: 披露宴テーブル / ホテル結婚式 /  destination wedding / チャペル / 宴会テーブル.',
-    price_range: 'NT$8-35 / 張',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '300g 棉紙 / 銅版紙 / 剛古紙', size: 'A6 (105×148mm) / A5 對摺 / 自訂站立式', finishing: '燙金 / 壓紋 / 模切 / 折卡 / 站立', printMethod: '柯式印刷 4C 雙面' },
-  },
-  {
-    id: 'PC-002',
-    sku_code: 'PC-002',
-    slug: 'drink-tokens',
-
-    title_zh: '酒水牌 / 飲品標記',
-    description_zh: '酒水牌 / 飲品標記卡 50 張起印,0.5mm 厚 PVC 透明卡 或 300g 銅版紙,防水耐用,模切圓角。順豐本地 + DHL 全球。**適配行業**:...',
-    basePrice: 0.25,
-    weight_score: 50,
-    images: ['/images/products/drink-tokens-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'place-cards',
-    category_slug: 'place-cards',
-    name: '酒水牌 / 飲品標記', nameEn: 'Drink Tokens / Beverage Markers', nameJa: 'ドリンクトークン',
-    description: '酒水牌 / 飲品標記卡 50 張起印,0.5mm 厚 PVC 透明卡 或 300g 銅版紙,防水耐用,模切圓角。順豐本地 + DHL 全球。**適配行業**: 婚宴飲品/泳池派對/酒店/咖啡廳/酒吧.',
-    descriptionEn: 'Drink tokens / beverage markers 50 sheets MOQ, 0.5mm thick clear PVC or 300gsm art paper, waterproof durable, die-cut rounded corners. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding beverages / pool parties / hotels / cafés / bars.',
-    descriptionJa: 'ドリンクトークン / 飲み物マーカー 50 枚から、0.5mm 厚透明 PVC または 300g コート紙、防水耐久、抜型角丸。DHL 国際 2-4 日配送。**適合業種**: 披露宴ドリンク / プール パーティ / ホテル / カフェ / バー.',
-    price_range: 'HK$0.25起 / 張',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '0.5mm 透明 PVC / 300g 銅版紙 / 350g 黑卡紙', size: 'A8 (52×74mm) / A7 (74×105mm) / 自訂圓形', finishing: '模切圓角 / 燙金 / 打孔掛繩', printMethod: '柯式印刷 4C + UV 防水層' },
-  },
-  {
-    id: 'PC-005',
-    sku_code: 'PC-005',
-    slug: 'cafe-table-cards',
-
-    title_zh: '餐廳 / 咖啡廳枱卡',
-    description_zh: '餐廳 / 咖啡廳枱卡 50 張起印,300g 銅版紙 / 防水 PVC,UV 防水層,折卡站立式。順豐本地 + DHL 全球。**適配行業**: 餐廳/咖啡廳...',
-    basePrice: 0.4,
-    weight_score: 50,
-    images: ['/images/products/cafe-table-cards-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'place-cards',
-    category_slug: 'place-cards',
-    name: '餐廳 / 咖啡廳枱卡', nameEn: 'Café / Restaurant Table Cards', nameJa: 'カフェ / レストラン テーブルカード',
-    description: '餐廳 / 咖啡廳枱卡 50 張起印,300g 銅版紙 / 防水 PVC,UV 防水層,折卡站立式。順豐本地 + DHL 全球。**適配行業**: 餐廳/咖啡廳/酒吧/茶餐廳/酒店早餐.',
-    descriptionEn: 'Café / restaurant table cards 50 sheets MOQ, 300gsm art paper / waterproof PVC, UV waterproof layer, folded standing. Free shipping over $99 + DHL 2-4 day global. **Best for**: restaurants / cafés / bars / tea houses / hotel breakfast.',
-    descriptionJa: 'カフェ / レストラン テーブルカード 50 枚から、300g コート紙 / 防水 PVC、UV 防水層、折カード スタンド式。DHL 国際 2-4 日配送。**適合業種**: レストラン / カフェ / バー / 茶餐廳 / ホテル朝食.',
-    price_range: 'NT$10-45 / 張',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '300g 銅版紙 / 0.5mm 防水 PVC', size: 'A6 (105×148mm) / A5 對摺 / 自訂站立', finishing: 'UV 防水 / 燙金 / 模切 / 折卡 / 站立', printMethod: '柯式印刷 4C + UV 防水層' },
-  },
-  {
-    id: 'PC-006',
-    sku_code: 'PC-006',
-    slug: 'wedding-seating-charts',
-
-    title_zh: '婚宴席位圖',
-    description_zh: '婚宴席位圖 / 大型座位圖 50 張起印,A1 / A2 大尺寸 300g 銅版紙 + 燙金 + 模切,單面或雙面印刷。順豐本地 + DHL 全球。**適配行業...',
-    basePrice: 4.5,
-    weight_score: 50,
-    images: ['/images/products/wedding-seating-charts-1.jpg'],
-    isHot: false,
-    isNew: true,
-    minQuantity: 50,
-        category: 'place-cards',
-    category_slug: 'place-cards',
-    name: '婚宴席位圖', nameEn: 'Wedding Seating Charts', nameJa: '披露宴座席表',
-    description: '婚宴席位圖 / 大型座位圖 50 張起印,A1 / A2 大尺寸 300g 銅版紙 + 燙金 + 模切,單面或雙面印刷。順豐本地 + DHL 全球。**適配行業**: 婚宴/酒店婚禮/海外婚禮/教堂/大型宴會.',
-    descriptionEn: 'Wedding seating charts / large seat maps 50 sheets MOQ, A1 / A2 large format 300gsm art paper + foil + die-cut, single or duplex print. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding banquets / hotel weddings / destination weddings / chapels / large banquets.',
-    descriptionJa: '披露宴座席表 / 大型席図 50 枚から、A1 / A2 大判 300g コート紙 + 箔押し + 抜型、片面または両面印刷。DHL 国際 2-4 日配送。**適合業種**: 披露宴 / ホテル結婚式 /  destination wedding / チャペル / 大型宴会.',
-    price_range: 'NT$120-450 / 張',
-    optimizedAt: '2026-08-18',
-    optimizationRound: 1,
-    specs: { material: '300g 銅版紙 / 350g 剛古紙 (大尺寸加厚)', size: 'A1 (594×841mm) / A2 (420×594mm) / 自訂', finishing: '燙金 / UV / 模切 / 摺疊', printMethod: '柯式印刷 4C 單面或雙面' },
-  },
 ];
 
 // 获取所有产品

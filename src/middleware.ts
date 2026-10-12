@@ -67,7 +67,8 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'transparent-stickers': '/product/transparent-stickers/',
   'small-batch-stickers': '/product/small-batch-stickers/',
   'foil-stickers': '/product/foil-stickers/',
-  'fluorescent-stickers': '/product/fluorescent-stickers/',
+  'roll-stickers': '/product/roll-stickers/', // 2026-10-12 新建
+  'fluorescent-stickers': '/product/roll-stickers/', // 2026-10-12 退役 301 收拢 (K3 拍板)
   'display-posters': '/product/display-posters/',
   'outdoor-posters': '/product/outdoor-posters/',
   'a2-posters': '/product/a2-posters/',
@@ -147,6 +148,19 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'textbooks': '/product/textbooks/',
 };
 
+// 2026-10-12 K3 拍板 SKU 压缩: 退役 PDP 直接 URL 301 收拢 (不影响 QUOTE_PRODUCT_MAP 既有映射)
+const RETIRED_PRODUCT_REDIRECTS: Record<string, string> = {
+  'fluorescent-stickers': '/product/roll-stickers/',
+  'drink-tokens': '/product/place-cards/',
+  'cafe-table-cards': '/product/place-cards/',
+  'wedding-place-cards': '/product/place-cards/',
+  'save-the-date-cards': '/product/wedding-invitations/',
+  'wedding-seating-charts': '/product/wedding-invitations/',
+  'wedding-suite-bundle': '/product/wedding-invitations/',
+  'eco-tote-bag': '/product/paper-bags/',
+  'postcard-set': '/product/greeting-cards/',
+};
+
 export async function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
@@ -199,6 +213,16 @@ export async function middleware(request: NextRequest) {
       url.pathname += '/';
     }
     return NextResponse.redirect(url, 301);
+  }
+
+  // 优先级2.65：退役 PDP slug → 301 收拢 (K3 2026-10-12 拍板: 荧光→卷裝 + Tier1 八收拢)
+  const retiredMatch = pathname.match(/^\/(zh-hk|en|ja)\/product\/([a-z0-9-]+)\/?$/);
+  if (retiredMatch) {
+    const target = RETIRED_PRODUCT_REDIRECTS[retiredMatch[2]];
+    if (target) {
+      url.pathname = `/${retiredMatch[1]}${target}`;
+      return NextResponse.redirect(url, 301);
+    }
   }
 
   // 优先级3：locale 大小写归一化 — zh-HK/zh-hk/ 等统一为小写

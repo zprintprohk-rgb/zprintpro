@@ -121,7 +121,7 @@ export const PAPER_GOODS_SMALL_BATCH_SLUGS: readonly string[] = [
   'die-cut-stickers',
   'foil-stickers',
   'security-stickers',
-  'fluorescent-stickers',
+  'roll-stickers', // 2026-10-12 荧光退役→卷裝 (K3 拍板)
   // 賀卡線
   'premium-greeting-cards',
   'thick-greeting-cards-400g',
@@ -277,7 +277,7 @@ export const PRODUCT_TARGETS: Record<string, { target: number; unit: string; lab
   'die-cut-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
   'foil-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
   'security-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
-  'fluorescent-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
+  'roll-stickers': { target: 10, unit: '張', label: '貼紙/標籤' },
   // 賀卡線
   'premium-greeting-cards': { target: 10, unit: '張', label: '賀卡' },
   'thick-greeting-cards-400g': { target: 10, unit: '張', label: '賀卡' },

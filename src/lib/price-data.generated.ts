@@ -2911,6 +2911,300 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     }
   ]
 },
+  'roll-stickers': {
+  "source": "digital-stickers-cost.json",
+  "productName": {
+    "zh-hk": "數碼貼紙(專版)",
+    "en": "Digital Stickers (Custom)",
+    "ja": "デジタルステッカー(専版)"
+  },
+  "defaultConfigIndex": 4,
+  "configs": [
+    {
+      "label": {
+        "zh-hk": "HP indigo 6K數碼標籤-格仔底紙/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Grid backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-グリッド台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.23
+        },
+        {
+          "qty": 50,
+          "priceHKD": 73,
+          "priceUSD": 9,
+          "priceJPY": 1460,
+          "weightKg": 0.46
+        },
+        {
+          "qty": 100,
+          "priceHKD": 71,
+          "priceUSD": 9,
+          "priceJPY": 1420,
+          "weightKg": 0.61
+        },
+        {
+          "qty": 200,
+          "priceHKD": 108,
+          "priceUSD": 14,
+          "priceJPY": 2160,
+          "weightKg": 0.91
+        },
+        {
+          "qty": 500,
+          "priceHKD": 226,
+          "priceUSD": 29,
+          "priceJPY": 4520,
+          "weightKg": 1.87
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 419,
+          "priceUSD": 54,
+          "priceJPY": 8380,
+          "weightKg": 3.42
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "HP indigo 6K數碼標籤-厚白底/銅板（熱熔膠）-105X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Thick white backing/Art paper（Hot-melt adhesive）-105X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-厚白台紙/アート紙（ホットメルト）-105X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 118,
+          "priceUSD": 15,
+          "priceJPY": 2360,
+          "weightKg": 0.09
+        },
+        {
+          "qty": 25,
+          "priceHKD": 141,
+          "priceUSD": 18,
+          "priceJPY": 2820,
+          "weightKg": 0.23
+        },
+        {
+          "qty": 50,
+          "priceHKD": 144,
+          "priceUSD": 18,
+          "priceJPY": 2880,
+          "weightKg": 0.46
+        },
+        {
+          "qty": 100,
+          "priceHKD": 154,
+          "priceUSD": 20,
+          "priceJPY": 3080,
+          "weightKg": 0.62
+        },
+        {
+          "qty": 200,
+          "priceHKD": 174,
+          "priceUSD": 22,
+          "priceJPY": 3480,
+          "weightKg": 0.96
+        },
+        {
+          "qty": 500,
+          "priceHKD": 219,
+          "priceUSD": 28,
+          "priceJPY": 4380,
+          "weightKg": 1.86
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 398,
+          "priceUSD": 51,
+          "priceJPY": 7960,
+          "weightKg": 3.42
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X148-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X148-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X148-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 123,
+          "priceUSD": 16,
+          "priceJPY": 2460,
+          "weightKg": 0.12
+        },
+        {
+          "qty": 25,
+          "priceHKD": 151,
+          "priceUSD": 19,
+          "priceJPY": 3020,
+          "weightKg": 0.3
+        },
+        {
+          "qty": 50,
+          "priceHKD": 155,
+          "priceUSD": 20,
+          "priceJPY": 3100,
+          "weightKg": 0.6
+        },
+        {
+          "qty": 100,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
+          "weightKg": 0.89
+        },
+        {
+          "qty": 100,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
+          "weightKg": 0.89
+        },
+        {
+          "qty": 100,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
+          "weightKg": 0.89
+        },
+        {
+          "qty": 100,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
+          "weightKg": 0.89
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "HP indigo 6K數碼標籤-黃底/銅板（熱熔膠）-210X297-單面-數碼模切[異形],片裝,覆膜[覆光膜],本廠材料",
+        "en": "HP indigo 6K Digital label-Yellow backing/Art paper（Hot-melt adhesive）-210X297-Single-sided-Digital die-cut [custom shape],Sheet,Lamination [Gloss lamination],In-house material",
+        "ja": "HP indigo 6Kデジタルラベル-黄台紙/アート紙（ホットメルト）-210X297-片面-デジタル型抜き[異形],シート,ラミネート[光沢ラミネート],自社材料"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 132,
+          "priceUSD": 17,
+          "priceJPY": 2640,
+          "weightKg": 0.18
+        },
+        {
+          "qty": 25,
+          "priceHKD": 169,
+          "priceUSD": 22,
+          "priceJPY": 3380,
+          "weightKg": 0.45
+        },
+        {
+          "qty": 50,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
+          "weightKg": 0.89
+        },
+        {
+          "qty": 100,
+          "priceHKD": 211,
+          "priceUSD": 27,
+          "priceJPY": 4220,
+          "weightKg": 1.48
+        },
+        {
+          "qty": 200,
+          "priceHKD": 347,
+          "priceUSD": 44,
+          "priceJPY": 6940,
+          "weightKg": 2.71
+        },
+        {
+          "qty": 500,
+          "priceHKD": 812,
+          "priceUSD": 104,
+          "priceJPY": 16240,
+          "weightKg": 6.44
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1556,
+          "priceUSD": 199,
+          "priceJPY": 31120,
+          "weightKg": 12.67
+        }
+      ]
+    },
+    {
+      "label": {
+        "zh-hk": "卷裝/平裝標籤-格仔底紙/銅板（熱熔膠）-150X100-單面-模切(啤)[異形],卷裝[卷芯直徑4cm][出標方向橫版左出標][每卷張數1000],不覆膜",
+        "en": "Roll/Sheet label-Grid backing/Art paper（Hot-melt adhesive）-150X100-Single-sided-Die-cut [custom shape],Roll [Core diameter 4cm][Unwind direction landscape left unwind][Labels per roll 1000],No lamination",
+        "ja": "ロール/シートラベル-グリッド台紙/アート紙（ホットメルト）-150X100-片面-型抜き[異形],ロール[巻芯径4cm][繰り出し方向横位置左出し][巻あたり枚数1000],ラミネートなし"
+      },
+      "tiers": [
+        {
+          "qty": 10,
+          "priceHKD": 55,
+          "priceUSD": 7,
+          "priceJPY": 1100,
+          "weightKg": 0.03
+        },
+        {
+          "qty": 25,
+          "priceHKD": 58,
+          "priceUSD": 7,
+          "priceJPY": 1160,
+          "weightKg": 0.08
+        },
+        {
+          "qty": 50,
+          "priceHKD": 61,
+          "priceUSD": 8,
+          "priceJPY": 1220,
+          "weightKg": 0.16
+        },
+        {
+          "qty": 75,
+          "priceHKD": 66,
+          "priceUSD": 8,
+          "priceJPY": 1320,
+          "weightKg": 0.24
+        },
+        {
+          "qty": 99,
+          "priceHKD": 70,
+          "priceUSD": 9,
+          "priceJPY": 1400,
+          "weightKg": 0.32
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 610,
+          "priceUSD": 78,
+          "priceJPY": 12200,
+          "weightKg": 9.75
+        }
+      ]
+    }
+  ]
+},
   'a5-flyers': {
   "source": "flyers.json (eprint ×0.95)",
   "productName": {
@@ -7234,6 +7528,11 @@ export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: s
     'zh-hk': { priceDisplay: '0.42', qty: 10, batchPrice: 71, unitLabel: '每個' },
     en: { priceDisplay: '0.05', qty: 10, batchPrice: 9, unitLabel: 'per pc' },
     ja: { priceDisplay: '8.4', qty: 10, batchPrice: 1420, unitLabel: '1個' },
+  },
+  'roll-stickers': {
+    'zh-hk': { priceDisplay: '0.20', qty: 10, batchPrice: 55, unitLabel: '每張' },
+    en: { priceDisplay: '0.03', qty: 10, batchPrice: 7, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '4.1', qty: 10, batchPrice: 1100, unitLabel: '1枚' },
   },
   'a5-flyers': {
     'zh-hk': { priceDisplay: '0.14', qty: 10, batchPrice: 80, unitLabel: '每張' },

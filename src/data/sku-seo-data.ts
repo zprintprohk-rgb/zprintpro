@@ -23,6 +23,42 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
 
 
 
+  "roll-stickers": {
+    "name": {
+      "zh-hk": "卷裝貼紙",
+      "en": "Roll Labels",
+      "ja": "ロールラベル"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "卷裝貼紙 卷裝標籤 貼標機適用 10張起 HK$0.20起 | 智印港",
+        "description": "卷裝貼紙 10 張起印，HK$0.20 起/張，3,000 張整批 HK$610。卷芯 4cm、出標方向可選、每卷 1,000 張，銅板熱熔膠格仔底，貼標機上機即用。免費打稿，5-7 個工作天交貨。立即報價。",
+        "h1": "卷裝貼紙 | 卷芯4cm 貼標機適用 每卷1,000張",
+        "keywords": ["卷裝貼紙","卷裝標籤","標籤貼紙","貼標機標籤","roll labels","不干膠標籤","定制標籤","食品標籤","瓶貼標籤","小批量標籤"],
+        "body": "卷裝貼紙（Roll Labels）是產線貼標的標準形態：出貨已按貼標機規格復卷，拆箱上機即用。標配卷芯直徑 4cm，出標方向可選（如橫版左出標），每卷 1,000 張；面材為銅板紙配熱熔膠、格仔底紙，貼附牢、出標順，專為食品飲料、美妝護膚、日化用品的瓶罐產線而設。10 張起印、無開版費；3,000 張低至 HK$0.20/張。試產與量產同一條數碼線，打樣色即量產色。\n\n卷裝與片裝怎麼選：\n· 上貼標機量產 → 卷裝：貼標速度由機台決定，人手只補料不剝離\n· 手貼／零售小包裝 → 片裝：逐張取用方便\n· 試產 10-99 張 → 卷裝小批量檔同樣 10 張起，規格與大貨一致\n材質對照可參閱[食品標籤貼紙](/zh-hk/product/fruit-food-label-stickers/)與[防水貼紙](/zh-hk/product/waterproof-stickers/)兩頁。\n\n規格真值（報價引擎直出）：常用 150×100mm 級距，任意尺寸可報；異形模切（啤）任意形狀，品牌輪廓標籤亦可上機；熱熔膠初粘強，貼 PET／PP／玻璃瓶罐不易翹邊。卷裝標配為銅板紙不覆膜，需要防水或覆膜卷裝請 WhatsApp 查詢。可變資料支援序號、QR Code、條碼逐張不同，適合食品批次管理、防竄貨與會員碼。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿，最多免費修改 2 次。量產前建議先跑 10-99 張試產檔，驗證貼標機走位、出標方向與剝離角度。\n\n收費透明：10 張 HK$55、25 張 HK$57.5、50 張 HK$61、75 張 HK$65.5、99 張 HK$70、3,000 張 HK$610（合 HK$0.20/張）。無開版費、無製版費。標準生產 5-7 個工作天；港九新界 HK$500 以上免費順豐速遞。\n\n**常見問題**\n\n**Q1: 卷芯直徑和出標方向可以指定嗎？**\n可以。標配卷芯直徑 4cm，出標方向可選（如橫版左出標）；下單時告知貼標機型號，我們按機台規格復卷對位。\n\n**Q2: 最小起訂量是多少？**\n10 張起印，無開版費。10-99 張為小批量試產檔，規格與大貨一致；量產檔至 3,000 張。\n\n**Q3: 卷裝標籤可以印序號或 QR Code 嗎？**\n可以。數碼可變資料支援每張不同的序號、QR Code 或條碼，適合批次管理與防竄貨。\n\n**Q4: 可以啤異形（任意形狀）嗎？**\n可以。任意形狀模切，品牌輪廓標籤亦可上機貼標；複雜形狀建議先打樣驗證剝離角度。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
+      },
+      "en": {
+        "title": "Roll Labels | Applicator-Ready | 10 MOQ $0.03 | ZprintPro",
+        "description": "Custom roll labels from 10 pcs, $0.03 per label at 3,000 pcs ($78 per batch). 4cm cores, unwind direction options, 1,000 per roll, hot-melt art paper on grid backing - applicator-ready. Free proof, 5-7 business days. Get a quote.",
+        "h1": "Roll Labels | 4cm Cores for Label Applicators | ZprintPro",
+        "keywords": ["roll labels","custom roll labels","roll stickers","label rolls","product labels","bottle labels","food labels","custom labels","stickers on a roll","label printing"],
+        "body": "Roll labels are the standard format for production-line labeling: shipped pre-wound to applicator spec, ready to mount out of the box. Standard core diameter 4cm, unwind direction options (e.g. landscape left unwind), 1,000 labels per roll; art paper with hot-melt adhesive on grid backing - strong tack, smooth dispensing - built for food, beverage, beauty and FMCG bottle-and-jar lines. 10 pcs MOQ, no plate fees; from HK$0.20 per label at 3,000 pcs. Pilot runs and mass production share the same digital line, so the proof color is the production color.\n\nRoll vs sheet - how to choose:\n- Machine-applied production → rolls: labeling speed is set by your machine, staff only reload\n- Hand application / retail packs → sheets: easy peel one by one\n- Pilot run 10-99 pcs → the roll small-batch tier starts at 10 with full production specs\nFor material comparisons see [food label stickers](/en/product/fruit-food-label-stickers/) and [waterproof stickers](/en/product/waterproof-stickers/).\n\nSpec sheet (straight from the quote engine): common 150x100mm class, any size quotable; die-cut to any shape including brand silhouettes; hot-melt adhesive sticks firmly to PET, PP, glass bottles and jars. Standard roll stock is unlaminated art paper - waterproof or laminated rolls available via WhatsApp. Variable data supported: a different serial, QR code or barcode on every label for batch tracking, anti-diversion and membership codes.\n\nFile requirements: 300 DPI, CMYK, 3mm bleed, outlined fonts. Free digital proof within 1 hour of file submission, up to 2 free revisions. Before mass production, we recommend a 10-99 pc pilot run to verify applicator tracking, unwind direction and peel angle.\n\nTransparent pricing: 10 pcs HK$55, 25 pcs HK$57.5, 50 pcs HK$61, 75 pcs HK$65.5, 99 pcs HK$70, 3,000 pcs HK$610 (HK$0.20/pc). No setup or plate fees. Standard production 5-7 business days.\n\n**FAQ**\n\n**Q1: Can I specify core size and unwind direction?**\nYes. 4cm core diameter is standard and unwind direction is optional (e.g. landscape left unwind); send us your applicator model and we will match the winding spec.\n\n**Q2: What is the minimum order?**\n10 pcs with no plate fees. The 10-99 pc small-batch tier shares full production specs; volume tiers go up to 3,000 pcs.\n\n**Q3: Can roll labels carry serials or QR codes?**\nYes. Digital variable-data printing gives every label a unique serial, QR code or barcode for batch tracking and anti-diversion.\n\n**Q4: Can shapes be die-cut?**\nYes - any shape, including brand silhouettes, is die-cuttable and machine-applicable; complex shapes benefit from a proof run first.\n\nReady to order? Free 1-hour proofing - WhatsApp +86 198 8085 1334 or hit the 30-second AI quote button."
+      },
+      "ja": {
+        "title": "ロールラベル | 巻芯4cm 食品対応 | 10枚〜¥4〜 | ZprintPro",
+        "description": "ロールラベル 10枚〜¥4〜、3,000枚の場合¥12,200（3巻分）。巻芯径4cm・繰り出し方向指定可・1巻1,000枚、ホットメルトアート紙でラベラーにそのまま対応。無料校正、5-7営業日発送。今すぐ見積。",
+        "h1": "ロールラベル｜巻芯4cm・ラベラー対応｜ZprintPro",
+        "keywords": ["ロールラベル","ロールシール","ラベル印刷","シール印刷","巻きラベル","ラベラー","食品ラベル","ボトルラベル","オリジナルシール","ステッカー印刷"],
+        "body": "ロールラベルはライン貼付の標準形態です。出荷時点でラベラー仕様に巻き取り済み、箱から出してセットするだけ。標準の巻芯径は4cm、繰り出し方向は指定可能（横左繰り出しなど）、1巻1,000枚。アート紙（ホットメルト）+グリッド台紙で、食品・飲料・化粧品・日用品のボトル・ジャーラインに強く貼り付き、滑らかに繰り出せます。10枚から、版代なし。3,000枚で1枚¥4.1〜。試作と量産が同じデジタルラインのため、校正色＝量産色です。\n\nロールとシートの選び方：\n· ラベラー量産 → ロール：貼付速度は機械次第。人手は補給だけ\n· 手貼り／小売パック → シート：1枚ずつ剥がしやすい\n· 10-99枚の試作 → ロール小ロットも10枚から、量産と同仕様\n素材対照は[食品ラベルステッカー](/ja/product/fruit-food-label-stickers/)と[防水ステッカー](/ja/product/waterproof-stickers/)もご覧ください。\n\n仕様の真値（見積エンジン直出し）：標準は150×100mm級、任意サイズ見積可能。型抜き（ダイカット）で任意形状対応、ブランドシルエットラベルもラベラーで貼付可能。ホットメルトはPET・PP・ガラス瓶に対して初期粘着が強く、端のめくれにくい仕様です。標準はラミなしアート紙。防水・ラミ仕様のロールはLINEでご相談ください。可変データ対応：連番・QR・バーコードを1枚ごとに可変印刷。ロット管理・転売防止・会員コードに。\n\n入稿仕様：300 DPI、CMYKモード、3mm塗り足し、フォントはアウトライン化。データ提出から1時間以内に無料デジタル校正、無料修正は2回まで。量産前に10-99枚の試作ロットで、ラベラーの走行・繰り出し方向・剥離角度を確認するのがおすすめです。\n\n料金は透明：10枚HK$55、25枚HK$57.5、50枚HK$61、75枚HK$65.5、99枚HK$70、3,000枚HK$610（1枚HK$0.20）。版代・型代ゼロ。標準納期5-7営業日。\n\n**よくある質問**\n\n**Q1: 巻芯径と繰り出し方向は指定できますか？**\nはい。標準は巻芯径4cm、繰り出し方向は指定可能（横左繰り出しなど）。ご注文時にラベラー機種をお知らせいただければ、機械仕様に合わせて巻き取ります。\n\n**Q2: 最小注文数は？**\n10枚から、版代なし。10-99枚は小ロット試作枠で量産と同仕様、量産枠は3,000枚まで。\n\n**Q3: 連番やQRコードは対応ですか？**\n対応しています。デジタル可変印刷で1枚ごとに異なる連番・QR・バーコードを印刷可能。ロット管理や転売防止に。\n\n**Q4: 型抜き（任意形状）はできますか？**\nはい。任意形状のダイカットに対応し、ブランドシルエットラベルも機械貼付可能です。複雑な形状は事前の校正をおすすめします。\n\nご注文はこちら — 1時間で無料デジタル校正、LINEお問い合わせ または商品ページの「30秒AI見積もり」ボタンから。"
+      }
+    },
+    "faqs": [],
+    "imageAlt": {
+      "zh-hk": "卷裝貼紙 / 卷裝標籤 | 香港卷裝標籤印刷 卷芯4cm 貼標機適用 每卷1,000張 | 智印港",
+      "en": "Custom Roll Labels on 4cm cores, 1,000 per roll for label applicators | ZprintPro",
+      "ja": "ロールラベル 印刷 | 巻芯径4cm・1巻1,000枚・ラベラー対応 | ZprintPro"
+    }
+  },
   "waterproof-stickers": {
     "name": {
       "zh-hk": "防水貼紙",
@@ -273,42 +309,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | 智印港",
       "en": "Custom Security Stickers for warranty seals and asset tracking — ZprintPro",
       "ja": "セキュリティステッカー / 防水 | セキュリティステッカー印刷 防水PVC | ZprintPro"
-    }
-  },
-  "fluorescent-stickers": {
-    "name": {
-      "zh-hk": "螢光貼紙",
-      "en": "Fluorescent Stickers",
-      "ja": "蛍光ステッカー"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "螢光貼紙 貼紙印刷 防水圓角 10張起 HK$0.52起 | 智印港",
-        "description": "螢光貼紙 10 張起印，HK$0.52 起/張。螢光油墨高飽和醒目，SGS 無重金屬遷移認證，可配反光條紋提升夜間可見度。促銷標籤、安全標識、活動佈置首選。5-7 個工作天交貨，港九新界 HK$500 免費順豐速遞。",
-        "h1": "螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。智印港提供專業螢光貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["螢光貼紙","貼紙印刷","不干膠印刷","防水貼紙","透明貼紙","異形貼紙","標籤貼紙","定制貼紙","小批量貼紙","防水不干膠"],
-        "body": "螢光貼紙以高飽和螢光油墨製造強烈視覺衝擊，日光下已極醒目；配反光條紋後，夜間車燈照射下更可大幅提升可見度。SGS 無重金屬遷移認證，安全用於食品相關與兒童場景標籤。10 張起印，港九新界 HK$500 以上免費順豐速遞。ISO 9001 認證工廠，15+ 年印刷經驗。\n\n螢光貼紙的兩大主場：促銷與安全。超級市場與便利店的限時特價標、餐飲外賣的促銷貼、演唱會與夜市的活動佈置；另一方面，倉庫地面的分區標識、設備的安全警示、單車與頭盔的醒目貼，都靠螢光與反光組合提升辨識。\n\n選項與組合：\n· 面材：螢光 PVC 膜（防水耐用）／螢光紙（經濟之選）\n· 油墨：高飽和螢光油墨，日光下即顯強烈對比\n· 反光條紋覆合：夜間可見度大增，安全標識首選組合\n· 印前免費配色建議，確保 6pt 以上文字清晰\n· 異形模切任意形狀\n規格約 20×20mm 至 280×380mm，數碼快印 10 張起，當日打樣。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 1 小時內提供免費數碼打稿，最多免費修改 2 次。未有設計檔案？透過 WhatsApp 提供品牌顏色與參考圖片，設計團隊免費打稿。標準尺寸提供免費刀模線模板下載。\n\n收費透明：10 張起印，無開版費。標準生產 5-7 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。數量折扣：500 張 85 折、1,000 張 75 折（AI 報價自動計算）。港九新界 HK$500 以上免費順豐速遞，1-2 個工作天送達。即時網上報價 30 秒完成。\n\n**常見問題**\n\n**Q1: 螢光貼紙和反光貼紙有什麼分別？**\n螢光在日光或燈光下醒目；反光在黑暗中被車燈照射時反射強光。兩者可組合：白天靠螢光、夜間靠反光。\n\n**Q2: 螢光貼紙適合戶外嗎？**\n螢光 PVC 膜版本防水防曬，適合戶外；螢光紙建議室內或短期使用。長期戶外建議覆膜。\n\n**Q3: 會有安全或重金屬問題嗎？**\n通過 SGS 無重金屬遷移測試，可用於食品相關及兒童相關標籤，安心使用。\n\n**Q4: 有什麼顏色可選？**\n螢光黃、橙、粉紅、綠為常備色；高對比配色會由印前免費建議確認。\n\n準備落單？1 小時免費打稿 — WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
-      },
-      "en": {
-        "title": "Fluorescent Stickers | Custom Print | 10 MOQ | ZprintPro",
-        "description": "Fluorescent stickers, 10 pcs MOQ from $0.46. High-saturation fluorescent inks, SGS certified no heavy-metal migration, optional reflective strips for night visibility. Promo labels, safety signs, events. 5-7 day production, free US shipping $99+. | ZprintPro",
-        "h1": "Fluorescent Stickers 100+ | Neon UV | ZprintPro",
-        "keywords": ["fluorescent stickers","neon stickers","UV glow stickers","blacklight stickers","fluorescent pink stickers","safety stickers neon","event stickers neon","club stickers UV","stickers free shipping","bulk fluorescent stickers"],
-        "body": "Custom fluorescent stickers with high-saturation fluorescent inks for maximum daytime visibility; add reflective strips and they bounce light back at night. SGS certified with no heavy-metal migration, safe for food-related and children-related labels. 10 pcs MOQ, free US shipping over $99. ISO 9001 certified production, 15+ years of print experience.\n\nTwo main arenas for fluorescent stickers: promotion and safety. Limited-time offer tags in supermarkets and convenience stores, promo stickers for F&B delivery, event decor for concerts and night markets; on the safety side, warehouse floor zoning marks, equipment warning labels, and high-visibility stickers for bikes and helmets.\n\nOptions and combinations:\n- Stock: fluorescent PVC film (waterproof, durable) / fluorescent paper (budget option)\n- Ink: high-saturation fluorescent ink with strong daylight contrast\n- Reflective strip lamination: big night-visibility gain, the standard pairing for safety marks\n- Free prepress color advice to keep text 6pt and above crisp\n- Die-cut to any shape\nSizes from approx. 20x20mm to 280x380mm; digital printing from 10 pcs with same-day proofing.\n\nFile requirements: 300 DPI, CMYK, 3mm bleed, outlined fonts. Free digital proof within 1 hour of file submission, up to 2 free revisions. No design files yet? Send brand colors and references via WhatsApp - free design mockup. Free dieline templates for standard sizes.\n\nPricing is transparent: 10 pcs MOQ, no setup fees. Standard production 5-7 business days; rush orders +20%. Volume tiers: 500 pcs at 15% off, 1,000 pcs at 25% off, calculated automatically in the AI quote. Free shipping to the lower 48 states on orders over $99 with 4-day delivery. Instant online quote in 30 seconds.\n\n**FAQ**\n\n**Q1: Fluorescent or reflective - what is the difference?**\nFluorescent glows vividly in daylight or lamplight; reflective bounces strong light back when headlights hit it in the dark. Combine both: fluorescent by day, reflective by night.\n\n**Q2: Are they suitable for outdoor use?**\nFluorescent PVC film is waterproof and UV-tolerant for outdoor use; fluorescent paper is best indoors or short-term. Lamination extends outdoor life.\n\n**Q3: Any safety or heavy-metal concerns?**\nSGS tested with no heavy-metal migration, suitable for food-related and children-related labeling.\n\n**Q4: Which colors are available?**\nFluorescent yellow, orange, pink and green are standard; our free prepress advice confirms high-contrast pairings.\n\nReady to order? Free 1-hour proofing - WhatsApp +86 198 8085 1334 or hit the 30-second AI quote button."
-      },
-      "ja": {
-        "title": "蛍光ステッカー | PVC ダイカット | 10枚〜¥60〜 | ZprintPro",
-        "description": "蛍光ステッカー 10枚〜¥60〜。高飽和蛍光インク、SGS無重金屬移行認証。反射ストライプ組合せで夜間視認性アップ。セールラベル、安全標識、イベント装飾に。5-7営業日発送、全国送料無料。",
-        "h1": "蛍光ステッカー｜高飽和蛍光インク・SGS認証｜ZprintPro",
-        "keywords": ["蛍光ステッカー","蛍光ステッカー 印刷","fluorescent stickers","ステッカー印刷","防水ステッカー","オリジナルステッカー","小ロットステッカー","ダイカットステッカー","透明ステッカー","商品ラベル"],
-        "body": "高飽和の蛍光インクで強烈な視覚インパクトを生む蛍光ステッカー。昼間の光の下で非常に目立ち、反射ストライプを組み合わせれば夜間の視認性が大幅アップ。SGS無重金屬移行認証で、食品関連・児童関連のラベルにも安心。10枚から、日本全国送料無料。ISO 9001認証工場、15年以上の印刷実績。\n\n蛍光ステッカーの2大用途：プロモーションと安全。スーパーやコンビニの期間限定値札シール、デリバリーの促進シール、コンサートやナイトマーケットのイベント装飾。一方、倉庫の床ゾーニング表示、設備の安全警告、自転車やヘルメットの高視認シールにも、蛍光＋反射の組合せが威力を発揮します。\n\n選項と組合せ：\n· 面材：蛍光PVCフィルム（防水・耐久）／蛍光紙（経済的）\n· インク：高飽和蛍光インク、昼間のコントラストが強い\n· 反射ストライプ覆合：夜間視認性が大きく向上。安全標識の標準組合せ\n· 印前の無料配色アドバイスで6pt以上の文字を鮮明に\n· 任意形状に型抜き\nサイズは約20×20mm〜280×380mm。デジタル印刷で10枚から、当日校正。\n\n入稿仕様：300 DPI、CMYKモード、3mm塗り足し、フォントはアウトライン化。データ提出から1時間以内に無料デジタル校正、無料修正2回まで。デザインファイルがない場合はブランドカラーと参考画像をLINEで。無料制作サポート。標準サイズに無料型紙テンプレートあり。\n\n料金は透明：10枚から、版代なし。標準納期5-7営業日、お急ぎ便+20%。数量割引：500枚15%OFF、1,000枚25%OFF（AI見積もりが自動計算）。日本全国送料無料、DHLで2-4日納品。30秒AI見積もりで即時お見積もり。\n\n**よくある質問**\n\n**Q1: 蛍光と反射の違いは？**\n蛍光は昼間や灯光の下で目立ちます。反射は暗所でヘッドライト等の光を強く反射します。両者の組合せで「昼は蛍光・夜は反射」を実現できます。\n\n**Q2: 屋外でも使えますか？**\n蛍光PVCフィルムは防水・耐候で屋外対応。蛍光紙は屋内または短期向き。長期屋外はラミ加工をおすすめします。\n\n**Q3: 安全性や重金属は心配ありませんか？**\nSGSの無重金属移行テスト済み。食品関連・児童関連のラベルにもご利用いただけます。\n\n**Q4: どの色がありますか？**\n蛍光イエロー・オレンジ・ピンク・グリーンを常備。高コントラストの配色は印前の無料アドバイスで確認します。\n\nご注文はこちら — 1時間で無料デジタル校正、LINEお問い合わせ または商品ページの「30秒AI見積もり」ボタンから。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | 智印港",
-      "en": "Custom Fluorescent Stickers for safety signs and promotions — ZprintPro",
-      "ja": "蛍光ステッカー / 防水 | 香港の蛍光ステッカー印刷 | ZprintPro"
     }
   },
   "kraft-paper-bags": {
@@ -2615,78 +2615,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": "同人誌印刷 10冊〜 | 中綴じ コミケ対応 | ZprintPro"
     }
   },
-  "postcard-set": {
-    "name": {
-      "zh-hk": "明信片套裝",
-      "en": "Postcard Set",
-      "ja": "ポストカードセット"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "明信片套裝 | 和紙風藝術紙 | 4套起 4小時打稿 | 智印港",
-        "description": "明信片套裝印刷，和紙風藝術紙 4-8 張入，動漫角色 / 插畫收藏 / 簽名會周邊適用。105×148mm 標準尺寸，雙面印刷，OPP 封套個別保護。4 套起印，免費 4 小時打稿，3-5 個工作天完成，DHL Express 直送日本 2-4 個工作天，30 秒 AI 報價。",
-        "h1": "明信片套裝 | 和紙風藝術紙 簽名會周邊",
-        "keywords": ["明信片套裝","和紙風明信片","ポストカード","推し活周邊","VTuber 周邊","插畫周邊","同人周邊","簽名會周邊","明信片印刷","明信片訂製"],
-        "body": "同人創作者準備コミケ等即售會時，明信片套裝往往是攤位上最先完售的週邊之一。這套以和紙風藝術紙製作的明信片套裝，專為推し角色、VTuber 插畫及簽名會周邊而設，和風、古風以至 ACG 風格的作品都適合。對於經營同人印刷的個人社團，四件起印的門檻十分親民，可以在有限的攤位空間內展示多款插圖，讓讀者一眼就記住作品的畫風與特色。\n\n明信片採用標準 A6 尺寸 105×148mm，正面印上主插圖，背面自由設計文字、作者簽名或社交媒體帳號，雙面印刷讓一張卡片同時擔起宣傳與收藏兩種功能。和紙風藝術紙 180g 配合雙面霧面 PP 貼膜，手感細緻之餘亦不易刮花，適合印製簽名會場派發的紀念卡或收藏用限定贈品。每張均以 OPP 獨立袋包裝，再集合成 OPP 袋，防塵防污，即使長時間陳列於攤位亦能保持乾淨整潔。\n\n交稿時請提供 CMYK 色彩模式的印刷檔案，並於四邊預留出血位，插圖建議以高解像度輸出，重要文字與圖案與邊緣保持足夠距離，避免裁切誤差。我們接受數碼或柯式四色印刷，可按張數多寡選擇合適製程；雙面印刷需分別提供正面與背面檔案，並註明每款的張數與包裝方式，方便我們直接安排 OPP 個別包裝及集合包裝。\n\n本產品以 4 件為最低起印量，適合個人社團小量試水或為會場預備補貨。單價由 ¥750 起／枚，訂量增加價格會更優惠，有意批量訂製收藏用明信片套裝的話，歡迎向我們查詢報價。"
-      },
-      "en": {
-        "title": "Washi Postcard Sets | 4 MOQ | Free Ship | ZprintPro",
-        "description": "Washi-style postcard sets in 4-8 piece collections for character goods, illustration and signature events. 105×148mm, double-sided print with OPP sleeves. 4 MOQ, free design support, 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Washi-style Postcard Sets | 4-8 Piece Collections",
-        "keywords": ["postcard set","postcards","character postcards","oshi-katsu","VTuber","illustration goods","doujin merchandise","signature event","postcard printing","custom postcards"],
-        "body": "Postcard sets are the collectible heart of many doujin tables: a 4-8 piece collection of the same character, series, or illustration style gives fans a reason to buy more than one. Printed on washi-style art paper, these cards carry a Japanese aesthetic that suits traditional and hand-drawn artwork beautifully, whether they accompany a doujinshi printing project or stand alone.\n\nDoujin circles sell postcard sets alongside their doujinshi printing run as an entry-price item for fans, and signature-event giveaways turn them into keepsakes when artists sign the back. Because printing is double-sided, the front carries the illustration while the back is free for text, a signature, or a small logo — a detail collectors notice.\n\nVTuber and illustration-focused creators use the same sets for online storefronts, convention exclusives, and bonus items inside merchandise orders. Retail, cross-border e-commerce, beauty, education, wedding, and brand-activation projects also use postcard sets for mailers, inserts, and thank-you notes.\n\nEach card uses washi-style art paper at 180g with double-sided matte PP lamination, in the 105×148mm A6 standard postcard size. Printing is on-demand or offset 4-color CMYK, so soft watercolor art and bold graphic designs both reproduce faithfully, with individual OPP sleeve packaging plus a collection OPP bag.\n\nCards start at ¥750 each with a minimum order of 4 sets. Our Asia factory produces and ships via DHL Express to Japan in 2-4 business days, and the 24-hour rush service before Comiket covers last-minute quantities. You get a free digital proof, a free design mockup, and a 30-second AI quote with no setup fees, from ISO 9001 certified production with FSC-certified paper and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: How many cards are in a set?** Each set contains 4-8 cards, chosen to fit your collection format.\n\n**Q2: Can the back of the card carry text or a signature?** Yes — double-sided printing leaves the back free for text, signatures, or a logo.\n\n**Q3: How are the cards packed?** Each card comes in an OPP sleeve, with a collection OPP bag for the full set.\n\nReady to order your postcard sets? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
-      },
-      "ja": {
-        "title": "ポストカードセット｜和紙風 4-8枚｜4セット〜｜ZprintPro",
-        "description": "ポストカードセットのオーダー印刷、和紙風アート紙 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。4セット〜、無料デザインサポート、3-5 営業日納品、DHL Express 日本直送 2-4 日。| ZprintPro",
-        "h1": "ポストカードセット 4-8 枚 和紙風",
-        "keywords": ["ポストカードセット","ポストカード","絵葉書","推し活","VTuber","イラスト グッズ","同人グッズ","サイン会","ポストカード 印刷","ポストカード 作成"],
-        "body": "推しキャラ・VTuber のイラストや、サイン会での配布用に最適なポストカードセット。4〜8 枚のセット販売に対応し、コレクション性の高いアイテムとして人気です。和紙風アート紙を採用しているので、和風・古風テイストの作品にも自然にマッチします。\n\n両面印刷に対応しており、表面にイラスト、裏面にテキストやサインを自由にデザインできます。同人誌の特典として付ける場合や、イベントでの配布物としてまとめて発注する場合にも、同人グッズ 印刷のラインナップとして気軽にご利用いただけます。コミケなどの即売会では、価格が手頃で手に取りやすい定番グッズです。\n\nOPP スリーブでの個別包装に対応しており、傷や汚れからイラストを保護。そのまま販売用に陳列できるので、イベント当日の作業もスムーズです。全点を集合 OPP 袋にまとめることも可能で、発送時の管理も簡単になります。\n\n材質は和紙風アート紙 180g で、両面マット PP ラミネート加工を施し、手触りと耐久性を両立。サイズは 105×148mm の A6 標準ポストカード。印刷方式はオンデマンド / オフセット 4色（CMYK）で、イラストの細かな色味まで忠実に再現します。\n\n価格は ¥750〜/枚 から、最小注文は 4 枚。数量割引にも対応しています。納期は標準 3〜5 営業日、急ぎの場合は 24〜48 時間以内です。仕上がり後、DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\nポストカードは 4 枚からご注文いただけます。ZprintPro の商品の最小注文は、多くの場合 50〜100 個/部/枚です。まとめての発注は段階割引の対象です。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n標準納期 3〜5 営業日、急ぎの場合は 24〜48 時間以内で対応可能です。イベント配布に間に合わせたい場合は、お早めにご相談ください。DHL・FedEx で日本全国へ 2〜4 日でお届けいたします。\n**Q3: 入稿データの仕様を教えてください。**\nデータは AI / PDF / EPS 形式、300DPI 以上、3mm の塗り足しを推奨します。カラー印刷は CMYK、フォントはアウトライン化してください。\n\nイラストをポストカードにして、ファンに届けませんか。WhatsApp でのお問い合わせから 30 秒の AI 即時見積もり、データ入稿、内容確認、製造・検品、DHL 配送まで、日本語対応スタッフがワンストップでサポートします。ZprintPro で、あなたの作品を美しいカードに仕上げましょう。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": "明信片套裝 和紙風 300g | 香港明信片印刷 4套起 | 智印港",
-      "en": "Washi Postcard Sets 4 MOQ | Custom Art Postcards | ZprintPro",
-      "ja": "ポストカードセット 和紙風 300g | 4セットから | ZprintPro"
-    }
-  },
-  "eco-tote-bag": {
-    "name": {
-      "zh-hk": "環保托特袋",
-      "en": "Eco Tote Bag",
-      "ja": "エコトートバッグ"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "環保托特袋 | 100%有機棉 | 10件起 ESG禮贈品 | 智印港",
-        "description": "環保托特袋印刷，100% 有機棉布料，絲網 / DTG 印刷支援，企業活動、展會、ESG 禮贈品專用。FSC 認證布料，可收納 A4 尺寸。10 件起印，免費 1 小時打稿，5-7 個工作天交貨，滿 HK$500 免費順豐，30 秒 AI 報價。",
-        "h1": "環保托特袋 | 100%有機棉 企業活動周邊",
-        "keywords": ["環保托特袋","有機棉托特袋","FSC 認證布料","推し活周邊","Comiket 印刷","ESG 禮贈品","企業活動周邊","托特袋印刷","帆布袋印刷","有機棉袋"],
-        "body": "同人創作者參與コミケ或其他即售會物販時，除了紙本週邊，托特袋往往是吸引人流、延續品牌記憶的實用選擇。這款環保托特袋採用 100% 有機棉帆布，屬 FSC 認證布料，正好配合現時重視 ESG 與永續發展的消費趨勢。對於經營同人印刷的小型社團，可把它當作攤位上的主打商品，亦適合企業活動或禮贈品現場派發。\n\n袋身尺寸 38×42cm，側寬 10cm，足以收納 A4 文件與同人誌，讀者購入後日常購物、上學通勤都合用，實用性高自然更樂意帶着出門。印刷提供絲網印刷（1-3 色）與 DTG 全彩印刷兩種選擇：前者線條利落，能清晰呈現 logo 與簡單插圖；後者支援漸層及相片效果，適合複雜的全彩繪圖。加工可選內袋、底板加強或繡名字，讓袋身更耐用，同時提升贈品質感。\n\n交稿時請提供 CMYK 色彩模式的印刷檔案，絲網印刷每種顏色需獨立分色，並於稿面註明色號；DTG 全彩印刷則建議以高解像度的插圖或相片檔案入稿，以忠實還原漸層與光影細節。印刷位置與尺寸請清晰標示，如需繡名字或加內袋、底板等加工，請於下單時一併註明，方便我們安排對應工序。\n\n本產品最低起印量為 10 件，小批量需求同樣可以處理，適合個人社團試單或企業先行少量測試。單價由 ¥9,000 起／個，批量訂購或長期復購可獲更佳價格，歡迎查詢報價。"
-      },
-      "en": {
-        "title": "Eco Tote Bag | 10 MOQ | Organic Cotton | ZprintPro",
-        "description": "Organic cotton eco tote bags with silk/DTG printing for corporate events, trade shows and ESG merchandise. FSC-certified fabric, fits A4. 10 MOQ, free design support, 5-7 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Eco Tote Bag Organic Cotton | Oshi-katsu & Comiket",
-        "keywords": ["eco tote bag","tote bag","organic cotton","oshi-katsu","comiket","ESG merchandise","corporate gift","FSC-certified","custom tote bags","organic cotton tote"],
-        "body": "Eco tote bags in 100% organic cotton give your brand a useful, everyday canvas — ideal for oshi-katsu outings, Comiket merchandise tables, and corporate gifting. The FSC-certified fabric supports the ESG and sustainability story brands want to tell, without compromising on strength or print quality.\n\nAt a doujin event, tote bags are the practical merch fans actually use: they carry their new doujinshi printing purchases, art prints, and badges home, and every bag in the crowd doubles as free advertising. Corporate teams order the same bags for gifting programs, staff kits, and event swag, while retail, cross-border e-commerce, beauty, education, wedding, and brand-activation campaigns use them as reusable takeaway packaging.\n\nThe print method follows the artwork. Silk screen printing in 1-3 colors delivers crisp logos and bold illustration, while DTG full-color printing handles gradients and photographic art with smooth tonal transitions. For oshi-katsu supporters, a printed favorite-character bag is a wearable statement that works at conventions, live events, and daily life alike — the same doujinshi printing community that shows up table after table.\n\nEach bag is made from 100% organic cotton or 12oz heavy canvas, sized 38×42×10cm with a 10cm gusset so it holds A4 documents and merchandise. Optional extras include an inner pocket, a reinforced base, and embroidered names.\n\nBags start at ¥9,000 each with a minimum order of 10 pieces. Our Asia factory ships via DHL Express to Japan in 2-4 business days, with 24-hour rush handling before Comiket. Orders include a free digital proof and a 30-second AI quote with no setup fees, and production is ISO 9001 certified using FSC-certified fabric and ISO 12647 color management.\n\n**FAQ**\n\n**Q1: Which print method fits my artwork?** Silk screen (1-3 colors) is best for crisp logos, while DTG full-color suits gradients and photos.\n\n**Q2: Will an A4 folder fit inside?** Yes, the 38×42×10cm size with a 10cm gusset fits A4 items comfortably.\n\n**Q3: Can I order a small quantity?** Yes, the minimum order is 10 bags.\n\nReady to order your tote bags? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on the page."
-      },
-      "ja": {
-        "title": "エコトートバッグ｜オーガニックコットン｜10個〜｜ZprintPro",
-        "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
-        "h1": "エコトートバッグ オーガニックコットン 推し活・コミケ",
-        "keywords": ["エコトートバッグ","トートバッグ","オーガニックコットン","推し活","コミケ","ESG ノベルティ","企業物販","トートバッグ 印刷","エコバッグ オリジナル","トートバッグ 作成"],
-        "body": "推し活・コミケ物販・企業ノベルティに最適なオーガニックコットン 100% のエコトートバッグ。FSC 認証のオーガニックコットン素材を使用し、ESG やサステナブルな取り組みを意識する企業にもおすすめです。シルクスクリーン印刷でロゴやイラストを鮮明に再現し、DTG フルカラー印刷ならグラデーションや写真データにも対応します。\n\n同人イベントでの物販グッズとしてはもちろん、展示会やポップアップストアでのノベルティ配布にも人気です。A4 サイズをそのまま収納できる実用的なサイズなので、お客様に日常使いしてもらえるアイテムとして、ブランドの露出を高められます。同人グッズ 印刷のラインナップとして、画集やバッジと合わせたセット販売にも対応します。\n\n印刷方法は用途に合わせて選択できます。1〜3 色のシルクスクリーン印刷はロゴ主体のデザインに最適で、大量生産でも安定した発色を実現します。DTG フルカラー印刷は、写真やグラデーションをそのままトートバッグに再現したい場合におすすめです。内ポケットや底板補強、名入れ刺繍などのオプション加工にも対応します。\n\n材質はオーガニックコットン 100% / 12oz の厚手キャンバス。サイズは 38×42×10cm（A4 収納可）で、マチが 10cm あるので収納力も十分です。印刷はシルクスクリーン印刷（1〜3 色）または DTG フルカラー印刷。FSC 認証の素材と ISO 12647 の色管理のもと、出荷前に品質検査を実施します。\n\n価格は ¥9,000〜/個 から、最小注文は 10 個。まとめ発注は段階割引の対象です。標準納期 3〜5 営業日、急ぎの場合は 24〜48 時間以内で対応します。お届けは DHL・FedEx で日本全国へ 2〜4 日です。\n\n原稿仕様：印刷データは AI / PDF / EPS 形式、解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 最小注文数はいくつですか？**\nトートバッグは 10 個からご注文いただけます。ZprintPro のほかの商品は 50〜100 個/部/枚からの最小注文が目安です。大量注文は段階割引をご用意しています。お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\n納期は標準で 3〜5 営業日、急ぎは 24〜48 時間以内に対応可能です。イベントやキャンペーンに合わせた納品スケジュールにも対応します。お届けは DHL・FedEx で日本全国へ 2〜4 日です。\n**Q3: 入稿データの仕様を教えてください。**\n入稿データは AI / PDF / EPS 形式、300DPI 以上、3mm の塗り足しを推奨します。フルカラー印刷は CMYK カラーモードに統一し、フォントはアウトライン化してください。\n\nノベルティや物販グッズの制作は、まず WhatsApp でご相談ください。30 秒の AI 即時見積もりから、データ入稿・最終確認・製造・検品・配送まで、日本語対応のスタッフが丁寧にサポートします。ZprintPro で、環境にもおしゃれにも優しいオリジナルトートを作りましょう。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": "環保托特袋 有機棉 12oz | 香港環保袋印刷 ESG 禮品 | 智印港",
-      "en": "Eco Tote Bag Organic Cotton 12oz | Custom Printed Cotton Bags | ZprintPro",
-      "ja": "エコトートバッグ オーガニックコットン 12oz | 綿バッグ印刷 | ZprintPro"
-    }
-  },
   "graduation-yearbook": {
     "name": {
       "zh-hk": "畢業紀念冊",
@@ -2939,42 +2867,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": "R3mm角丸に型抜きしたグリーティングカード、300gコート紙 | ZprintPro"
     }
   },
-  "cafe-table-cards": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "餐廳枱卡印刷 | PVC防水 站立式 | 50張起 HK$0.4起 | 智印港",
-        "description": "餐廳 / 咖啡廳枱卡印刷，PVC 防水材質、站立式設計，50 張起印。300g 特種紙，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，3-5 個工作天交貨，港九新界免費速遞。餐廳、咖啡廳點餐展示首選，30 秒 AI 報價。",
-        "h1": "餐廳 / 咖啡廳枱卡 | PVC防水 站立式",
-        "keywords": ["餐牌印刷","枱卡訂製","酒吧用品印刷","飲品牌","食品標籤","防水標籤貼紙"],
-        "body": "餐廳與咖啡廳的枱卡是每日營業的門面之一：餐牌推介、季節限定、QR 碼點餐提示、枱號標示，一張站立式枱卡就能全部擔起。選用 300g 銅版紙色彩鮮豔，配合 UV 防水層，即使擺在杯碟之間、沾到咖啡或醬汁，用布一抹即恢復乾淨；若是戶外座位或酒吧，0.5mm 防水 PVC 更耐用，風吹日曬也不易褪色，長放桌面依然亮麗。\n\n枱卡的設計要醒目而不搶眼。A6 大小適合放在桌面中央，A5 對摺空間更大，可列出更多推介菜式；自訂站立式則能配合不同枱面與擺位。餐廳常同時印製酒水牌標記飲品，並與枱卡、座位卡整套規劃，令品牌視覺由菜單到桌面保持一致。換季或新菜上架時，只需更新版面再印，便能快速更換推廣主題，節省重新設計的成本。\n\n交稿規範：請提供 AI / PSD / PDF 向量檔案，解像度 300dpi，色彩模式 CMYK，四周預留 3mm 出血，文字轉為外框；如選用防水 PVC，請標明須印白墨與透明區域，確認後以柯式印刷 4C 加 UV 防水層生產，常規 3-5 工作天交貨。\n\n收費方面，餐廳枱卡每張 NT$10-45，50 張起印，量大另有優惠，歡迎查詢批量報價。"
-      },
-      "en": {
-        "title": "Café Table Cards | 50 MOQ | Waterproof Stand | ZprintPro",
-        "description": "Custom café table cards for restaurants, cafes and events. 50 MOQ, Waterproof PVC, stand-up design. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Café / Restaurant Table Cards | Waterproof Stand",
-        "keywords": ["table cards printing","menu cards custom","bar drink tokens","food label stickers","waterproof labels","50 MOQ"],
-        "body": "A table card is a silent staff member that never takes a day off. Café and restaurant table cards put specials, QR links, dessert menus, and house rules exactly where customers are looking, printed on 300gsm art paper or waterproof PVC with a UV protective layer and a folded standing design that stays upright through service. For restaurants, cafés, bars, tea houses, and hotel breakfast rooms, ZprintPro table cards turn every tabletop into a selling point.\n\nF&B operators rotate specials weekly, and a durable standing card makes the swap painless — print once, stand it on every table, and let the QR code drive customers to the live menu or loyalty sign-up. Bars use them for happy-hour boards and cocktail features, while tea houses and cafés place them at the counter for add-on desserts, beans, and merchandise that staff are often too busy to mention.\n\nHotel breakfast rooms rely on table cards to explain buffet flow, allergen notices, and kitchen hours without adding signage clutter. Because the UV waterproof layer shrugs off coffee rings, juice spills, and daily wipedown, the same card survives weeks of service — which is why venues order in sets and reprint only when the offer actually changes.\n\nCards print as A6 (105×148mm) or A5 folded, plus custom standing formats, on 300g art paper or 0.5mm waterproof PVC using offset 4-color with a UV waterproof layer. Finishing options include foil, die-cutting, folding, and standing constructions, so the card can echo your brand's typography and palette.\n\nPricing starts at NT$10–45 per card with a 50-piece minimum, and orders over $99 ship free via DHL 2–4 day global delivery — 3–5 days to the USA and 2–4 days to Japan on the express network, worldwide to 50+ countries. ISO 9001 certified production and a free digital proof keep the loop tight.\n\n**FAQ**\n\n**Q1: Will the cards survive spills and wiping?**\nA: The UV waterproof layer protects against coffee rings and juice spills, and the waterproof PVC option is built for heavy daily use.\n\n**Q2: Can I print a QR code for menus or loyalty?**\nA: Yes — full four-color printing captures QR codes and menu links crisply, and the finish keeps them scannable for weeks.\n\n**Q3: Which sizes work best?**\nA: A6 (105×148mm) and A5 folded are standard, with custom standing formats for signature displays.\n\nReady to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page. You get a free design mockup, zero setup fees, and certified production from our Asia factory."
-      },
-      "ja": {
-        "title": "カフェテーブルカード｜PVC防水 スタンド｜50枚〜｜ZprintPro",
-        "description": "カフェ / レストラン テーブルカードのオーダー印刷、50セット〜。PVC防水、スタンド式、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "カフェ / レストラン テーブルカード | PVC防水 スタンド式",
-        "keywords": ["テーブルカード 印刷","メニュー カード","ドリンク トークン","食品 ラベル","防水 ラベル","50枚〜"],
-        "body": "ドリンクの説明やメニュー紹介、Wi-Fi案内、新商品の告知など、テーブルカードは飲食店の接客をスムーズにする小さな看板です。ZprintProのテーブルカードは、カフェやレストラン向けに50〜100枚からご注文いただけます。\n\nレストランのテーブルでは、A6サイズのカードに本日のスープやドリンクを掲示することで、スタッフの説明時間を減らし回転率アップにつなげられます。コート紙にUV防水層を施せば、飲み物の水滴や手あかにも強い仕上がりです。\n\nバーやホテルの朝食会場では、0.5mmの防水PVC製なら水に濡れても安心。折りカードやスタンド式なら卓上に自立し、A5対折やオリジナル形状の立ち型にも対応します。複数店舗を展開するカフェや茶餐廳では、ブランドカラーを揃えたカードで統一感を演出できます。\n\n用紙は300gのコート紙または0.5mmの防水PVCから選択可能です。サイズはA6（105×148mm）、A5対折、オーダーメイドのスタンド式に対応し、オフセット印刷4CにUV防水層を追加します。箔押しや型抜きなどのオプション加工も承ります。\n\n価格はNT$10-45/張（サイズ・数量による）。最小注文は50枚から。標準納期は3〜5営業日、DHL・FedExで日本全国に2〜4日でお届けします。大量注文は段階割引もございます。\n\n原稿仕様：入稿は解像度300DPI以上、CMYKモードでお願いします。塗り足し3mmを確保し、フォントはアウトライン化してください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 水や油に強い素材はありますか？**\nA: 0.5mmの防水PVCや、コート紙にUV防水層を施した仕様がおすすめです。飲み物の水滴がついてもにじみにくい仕上がりです。\n\n**Q2: 少量の注文はできますか？**\nA: 最小注文は50枚からです。テスト導入や1店舗分の少量でもご対応いたします。大量注文は段階割引があります。\n\nメニューやプロモーション用のテーブルカードをお考えなら、まずは無料見積もりをお試しください。ZprintProが日本語でスピーディーに対応します。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " PVC 防水站立式，餐廳咖啡廳耐 | 香港印刷 | 智印港",
-      "en": " waterproof PVC freestand | Professional  | ZprintPro",
-      "ja": " PVC防水・スタンド式、カフェ向け耐久仕 |  | ZprintPro"
-    }
-  },
   "corrugated-boxes": {
     "name": {
       "zh-hk": "瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流",
@@ -3009,42 +2901,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": "瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流盒 E坑/F坑瓦楞結構，跨境物流抗壓 | 香港瓦楞彩盒印刷訂製印刷 | 智印港",
       "en": "Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping E/F-flute corrugated str | Professional Corrugated Boxes (E/ | ZprintPro",
       "ja": "段ボール箱 (E/Fフルート) | パッケージ・物流 E/Fフルート段ボール構造、配送耐圧設計 | 段ボール箱 (E/Fフルート) | パッケージ・ | ZprintPro"
-    }
-  },
-  "drink-tokens": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "酒水牌印刷 PVC防水 50張起 HK$0.25起 圓角模切 | 智印港",
-        "description": "酒水牌 / 飲品標記印刷，PVC 防水材質、圓角模切，50 張起印。300g 特種紙，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，3-5 個工作天交貨，港九新界免費速遞。酒吧、派對、活動飲品管理首選，30 秒 AI 報價。",
-        "h1": "酒水牌 / 飲品標記 | PVC防水 圓角模切",
-        "keywords": ["餐牌印刷","枱卡訂製","酒吧用品印刷","飲品牌","食品標籤","防水標籤貼紙"],
-        "body": "婚宴與派對上，賓客的酒杯往往大同小異，一不留神就會拿錯。一張小小的酒水牌能徹底解決這個困擾：印上名字或專屬圖案，套在杯腳或掛在杯柄，人人都能認出自己的那杯。選用 0.5mm 厚的透明 PVC 卡防水耐用，遇上戶外婚宴、泳池派對或雞尾酒會，即使杯身凝露、桌面沾水也不怕字樣脫落；配模切圓角手感順滑，不割手，300g 銅版紙則色彩鮮明，適合預算更靈活的方案。\n\n在酒店自助早餐、咖啡廳與酒吧，酒水牌亦常用來標記飲品種類與所屬座位。A8 尺寸精緻小巧，最適合套杯；A7 稍大，可容納更多資訊；自訂圓形則帶活潑的派對感。想更醒目可加燙金，亦可打孔穿掛繩掛在杯柄與酒杯架。這類酒水牌與常見的枱卡、座位卡同屬宴會小物，卻能令入座與取杯流程順暢不少，避免賓客混淆。\n\n交稿規範：請提供 AI / PSD / PDF 向量檔案，解像度 300dpi，色彩模式 CMYK，四周預留 3mm 出血，文字轉為外框；如選用透明 PVC，請標明須印白墨與留白區域，確認後以柯式印刷 4C 加 UV 防水層生產，常規 3-5 工作天交貨。\n\n收費方面，酒水牌每張 NT$6-30，50 張起印，量大另有優惠，歡迎查詢批量報價。"
-      },
-      "en": {
-        "title": "Drink Tokens | 50 MOQ | PVC Waterproof | ZprintPro",
-        "description": "Custom drink tokens for bars, parties and event beverage tracking. 50 MOQ, Waterproof PVC, round die-cut. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Drink Tokens / Beverage Markers | PVC Waterproof",
-        "keywords": ["table cards printing","menu cards custom","bar drink tokens","food label stickers","waterproof labels","50 MOQ"],
-        "body": "Drink tokens keep the party moving without awkward conversations at the bar. Die-cut with rounded corners from 0.5mm clear PVC, 300gsm art paper, or 350g black card, each token tells a guest this round is covered — for wedding beverage counters, pool parties, hotels, cafés, and bars. ZprintPro drink tokens are printed waterproof and durable, so they survive splash zones, ice buckets, and a full evening in somebody's pocket.\n\nWeddings use drink tokens at the bar counter so couples can offer a covered tab per guest without opening the whole bar — hand one per person at arrival, and the bartender collects each token with every pour. Pool parties and resort events rely on the waterproof build, since tokens inevitably end up near water, while hotels print them for welcome-drink coupons and event wristband tie-ins.\n\nCafés and bars use tokens for loyalty rounds, punch-card coffee deals, and festival drink offers, where a physical marker outlasts a soggy receipt. Hole-punch and cord options turn them into wearable passes, and custom round shapes keep the design unmistakably yours. Because they are printed four-color with a UV waterproof layer, logos and artwork stay bright through repeated handling.\n\nAvailable in A8 (52×74mm), A7 (74×105mm), or custom round formats, on 0.5mm clear PVC for see-through elegance, 300g art paper for a matte feel, or 350g black card for high-contrast foil work. Finishing includes die-cut rounded corners, foil stamping, and hole punching for cords, all printed offset 4-color with a UV waterproof layer.\n\nPricing starts at NT$6–30 per token with a 50-piece minimum, and orders over $99 ship free via DHL 2–4 day global delivery — 3–5 days to the USA and 2–4 days to Japan, worldwide to 50+ countries. ISO 9001 certified production and a free digital proof are part of the flow.\n\n**FAQ**\n\n**Q1: Are the tokens really waterproof?**\nA: Yes — the UV waterproof layer protects the print, and 0.5mm clear PVC is the toughest choice for wet events and pool parties.\n\n**Q2: Can guests wear them?**\nA: Yes — hole-punch and cord options turn tokens into wearable passes for festivals and events.\n\n**Q3: What shapes and sizes are available?**\nA: A8 (52×74mm), A7 (74×105mm), and custom round shapes are all possible.\n\nReady to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page. Setup is free of charges, a design mockup is included at no cost, and production runs at our certified Asia factory."
-      },
-      "ja": {
-        "title": "ドリンクトークン｜PVC防水 丸角仕様｜50枚〜｜ZprintPro",
-        "description": "ドリンクトークンのオーダー印刷、50セット〜。PVC防水、丸角仕様、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "ドリンクトークン | PVC防水 丸角仕様",
-        "keywords": ["テーブルカード 印刷","メニュー カード","ドリンク トークン","食品 ラベル","防水 ラベル","50枚〜"],
-        "body": "グラスにつけるドリンクトークンは、披露宴のドリンクバーやプールパーティー、ホテルやバーのイベントで、お客様のドリンクを正確に識別するのに便利なアイテムです。ZprintProでは50枚からご注文いただけます。\n\n披露宴のドリンクサービスでは、ゲストごとの注文内容をトークンで管理すれば、スタッフの取り違えを防ぎスムーズな提供が可能に。透明PVCならドリンクの色を邪魔せず、模様やロゴが引き立ちます。\n\nプールパーティーやビアガーデンなど水滴の多い場所では、防水性の高いPVC素材が重宝します。角丸の型抜きで安全な仕上がり、打ち抜き穴にストラップを通せばグラスの脚や首に取り付けられます。350gの黒色紙を使えば高級感のあるマーカーにもなります。\n\n素材は0.5mmの透明PVC、300gのコート紙、350gの黒色紙から選択可能です。サイズはA8（52×74mm）、A7（74×105mm）、オーダーメイドの円形に対応し、オフセット印刷4CにUV防水層を追加します。角丸型抜き、箔押し、穴あけ・ひも通しもオプションです。\n\n価格はNT$6-30/張（サイズ・数量による）。最小注文は50枚から。標準納期は3〜5営業日、日本全国へはDHL・FedExで2〜4日で到着します。数が多い場合は段階割引をご相談ください。\n\n原稿仕様：データは解像度300DPI以上、CMYKカラーモードでご入稿ください。塗り足し3mm、フォントのアウトライン化をお願いします。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 水に濡れても大丈夫な素材は？**\nA: 0.5mmの透明PVCやUV防水層付きのコート紙なら、飲み物の水滴や結露がついてもにじみにくいです。屋外のプールイベントにもおすすめです。\n\n**Q2: 納期はどのくらいですか？**\nA: 標準で3〜5営業日、急ぎは24〜48時間以内にも対応可能です。正午までのデータ確定で即日生産できる規格もあります。\n\nドリンクトークンのサイズや素材で迷われたら、ぜひ一度ご相談ください。ZprintProが最適な仕様をご提案し、無料見積もりをご案内します。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " PVC 防水圓角模切，酒吧活動飲 | 香港印刷 | 智印港",
-      "en": " waterproof PVC rounded c | Professional  | ZprintPro",
-      "ja": " PVC防水・丸角仕様、バー・イベント用 |  | ZprintPro"
     }
   },
   "foil-wedding-invitations": {
@@ -3083,42 +2939,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": " 金・銀・ローズゴールド箔押し、300g特 |  | ZprintPro"
     }
   },
-  "save-the-date-cards": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "Save the Date 卡片|A6 燙金UV|50套起 HK$0.85起|智印港",
-        "description": "Save the Date 結婚通知卡印刷，A6 尺寸、燙金、局部 UV 工藝，50 套起印。300g 特種紙，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，3-5 個工作天交貨，港九新界免費速遞。婚禮通知、喜帖預告首選，30 秒 AI 報價。",
-        "h1": "Save the Date 結婚通知卡 | A6 燙金UV",
-        "keywords": ["喜帖印刷","婚禮印刷","結婚請帖","婚宴用品","囍帖訂製","燙金請帖","婚禮套餐印刷","50套起印"],
-        "body": "距離婚禮還有數月的時候，一張設計精美的 Save the Date 預告卡，是向親友預告大喜日子的最佳方式。它能讓賓客提早留起檔期，尤其適合需要賓客跨區、甚至跨國安排行程的海外婚禮與教堂證婚。卡片以 300g 銅版紙、棉紙或剛古紙印製，尺寸選用標準 A6，亦可按設計自訂，光膠、啞膠、燙金與 UV 局部四種加工自由搭配，輕鬆打造屬於新人的預告風格。對於正在籌備結婚請柬的新人而言，先發預告卡、後發喜帖印刷，是最穩妥又不失體面的節奏。\n\n每套 Save the Date 卡片均附郵寄信封，方便直接寄出，省卻另購信封的煩惱。設計上既可延續婚禮主題色，也可獨立採用簡約手繪或幾何元素，與日後派發的結婚請柬互相呼應，讓整個婚慶印刷系列更具整體感。無論是在港宴客還是邀請外地親友，這款預告卡都能提早把喜訊送到，配合順豐本地派送及 DHL 全球寄送，賓客無論身在何處都能準時收到。\n\n交稿規範：請按 A6（105×148mm）或自訂尺寸製作檔案，採柯式印刷 4C 全彩入稿；如需燙金或 UV 局部，請另設專色及 UV 圖層並標明位置；光膠或啞膠覆膜會影響整體色感，建議在交稿前與客服確認效果。\n\n收費方面，Save the Date 卡片以每套計價，價格範圍為 NT$18-65 / 套，最低起印量為 50 套。數量越多，平均成本越低，歡迎提供稿件後查詢實際報價。"
-      },
-      "en": {
-        "title": "Save the Date Cards | 50 MOQ | A6 Foil & UV | ZprintPro",
-        "description": "Custom save the date cards for wedding announcements. 50 MOQ, A6 size, foil and spot UV. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Save the Date Cards | A6 Foil & UV",
-        "keywords": ["wedding printing","wedding stationery","bridal invitations","wedding cards bulk","foil wedding cards","50 MOQ"],
-        "body": "A save the date card gives guests the news early and the date in writing — no group chat can be trusted like a printed announcement. ZprintPro save the date cards come in A6 with mailing envelopes included, so the set is ready to address and post the day it arrives.\n\nChapel weddings, church memorials, and wedding previews all benefit from a warm, tactile pre-announcement. The 300gsm art, cotton, or Conqueror paper has a weighty feel in hand, and gloss or matte lamination protects the print through the postal journey.\n\nFor destination weddings, guests need the date, city, and a travel hint long before the formal invitation. A spot-UV or foil accent ties the save the date to the invitation that follows, and because envelopes are included, US and UK couples can mail the whole batch without extra shopping.\n\nCards are printed offset 4C on 300g coated, cotton, or Conqueror paper in A6 (105×148mm) or a custom size, with finishing options of gloss or matte lamination, foil stamping, and spot UV. Free typesetting and a free digital proof come with every order.\n\nFrom NT$18–65 per set with a 50-set minimum. Free shipping over $99, DHL Express global delivery in 2–4 days. ISO 9001 certified production and a free digital proof are included.\n\n**FAQ**\n\n**Q1: Are envelopes included?** Yes — mailing envelopes come with each set.\n\n**Q2: Can the size be customized?** A6 is standard, and custom sizes are available.\n\n**Q3: Can we match the save the date to the invitation?** Yes — the same paper and finishing options can be carried across your stationery suite.\n\nReady to order? Claim a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
-      },
-      "ja": {
-        "title": "Save the Date カード｜A6 箔押しUV｜50セット〜｜ZprintPro",
-        "description": "Save the Date カード印刷のオーダー印刷、50セット〜。A6サイズ、箔押し・UV対応、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "Save the Date カード印刷 | A6 箔押しUV",
-        "keywords": ["結婚式 印刷","招待状 印刷","ウェディング 印刷","結婚式 準備","ウェディング グッズ","50セット〜"],
-        "body": "ZprintPro の Save the Date カードは、結婚式の日程をゲストに最初に伝える「予告カード」。300g のコート紙・コットン紙・コンカラー紙から選べ、光沢／マットラミネート、箔押し、部分 UV で仕上げをカスタマイズできます。\n\n招待状を送る数か月前に日程だけを先にお知らせすることで、ゲストは遠方からの移動や宿泊の計画を立てやすくなります。リゾートや海外でのデスティネーションウェディング、チャペル挙式では特に重宝されるアイテムです。\n\nふたりの写真や挙式予定地の風景をデザインに取り入れれば、その場にいたくなるワクワク感を演出できます。教会記念のカードやサンキュカードとデザインを揃えれば、式までのペーパーアイテムに一貫性が生まれます。\n\n標準サイズは A6（105×148mm）で、オリジナルサイズにも対応。四色オフセット印刷で写真やイラストを美しく再現し、封筒付きでお届けします。用紙は 300g 銅版紙、棉紙、剛古紙から選択可能です。\n\n料金は 1 セットあたり NT$18〜65、最小注文は 50 セットからです。FSC 認証紙を使用し、ISO 9001 品質管理の下で生産。アジアの自社工場から DHL Express で 2〜4 日でお届けします。\n\n原稿仕様：解像度 300DPI 以上、CMYK カラーモード、塗り足し 3mm、フォントはアウトライン化してご入稿ください。箔押しや部分 UV の位置は K100 の黒版でご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 封筒は付属しますか？** はい、封筒付きでお届けします。\n\n**Q2: サイズはどのくらいですか？** 標準は A6（105×148mm）で、オリジナルサイズにも対応します。\n\n**Q3: 注文の最低数量は？** 50 セットからご注文いただけます。まとまった数量のご注文には段階割引を適用します。\n\nゲストに「行きたい」と思ってもらえる一枚を、無料サンプルでイメージしてみませんか。ZprintPro が日本語対応でご相談をお待ちしています。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " A6 尺寸燙金局部 UV，300 | 香港印刷 | 智印港",
-      "en": " A6 with gold foil and sp | Professional  | ZprintPro",
-      "ja": " A6サイズ・箔押し・局部UV、300g特 |  | ZprintPro"
-    }
-  },
   "tuck-end-boxes": {
     "name": {
       "zh-hk": "插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量",
@@ -3153,114 +2973,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": "插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒 直插/飛機插兩種盒型，化妝品食品 | 香港插口盒印刷訂製 印刷 | 智印港",
       "en": "Tuck End Boxes (Straight/Airplane) | Custom Packaging & Lightweight straight and airplane tu | Professional Tuck End Boxes (Stra | ZprintPro",
       "ja": "插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒 直挿し・飛行機挿し2箱型、化粧品・食品向 | 插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝 | ZprintPro"
-    }
-  },
-  "wedding-place-cards": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "婚宴枱卡印刷 | 燙金壓紋 站立式 | 50張起 HK$0.3起 | 智印港",
-        "description": "婚宴枱卡印刷，燙金、壓紋工藝、站立式設計，50 張起印。300g 特種紙，4 色 CMYK 全彩，logo 自由設計。免費 1 小時打稿，3-5 個工作天交貨，港九新界免費速遞。婚宴賓客席位標示首選，30 秒 AI 報價。",
-        "h1": "婚宴枱卡 | 燙金壓紋 站立式",
-        "keywords": ["喜帖印刷","婚禮印刷","結婚請帖","婚宴用品","囍帖訂製","燙金請帖","婚禮套餐印刷","50套起印"],
-        "body": "婚宴是人生大事，餐桌上的每一張枱卡都是賓客對場地的第一印象。無論是酒店宴會廳的長枱布置，還是教堂婚禮後的親友聚餐，一張印上新人名字與桌號的婚宴枱卡，能讓賓客入座時倍感被細心招待。選用 300g 棉紙配燙金，紙面帶自然紋理，金色字樣在燈光下微微閃爍，與宴會廳佈置互相呼應；想走含蓄路線則可改用銅版紙或剛古紙，配合壓紋與模切，做出別具一格的輪廓。\n\n枱卡的尺寸與形式同樣講究。A6 大小適合放在桌面細讀，A5 對摺可自行站立，遠一點的賓客也能一眼認出位置；若宴會採取自助餐或雞尾酒形式，自訂站立式枱卡更能配合不同桌面布局。婚宴枱卡亦可與座位卡、席位圖成套印製，由迎賓區到主家席統一視覺風格，營造隆重而一致的氛圍。\n\n交稿規範：請提供 AI / PSD / PDF 向量檔案，解像度 300dpi，色彩模式 CMYK，四周預留 3mm 出血，文字轉為外框，並附設計示意圖以確認折卡方向與站立方式；確認後進入柯式印刷 4C 雙面生產，常規 3-5 工作天交貨。\n\n收費方面，婚宴枱卡每張 NT$8-35、50 張起印，量大價更優惠，歡迎查詢批量報價。"
-      },
-      "en": {
-        "title": "Wedding Place Cards | 50 MOQ | Foil Stand | ZprintPro",
-        "description": "Custom wedding place cards for wedding reception seating. 50 MOQ, Gold foil, stand-up design. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Wedding Place Cards | Foil Stand",
-        "keywords": ["wedding printing","wedding stationery","bridal invitations","wedding cards bulk","foil wedding cards","50 MOQ"],
-        "body": "Place cards are the quiet detail that makes a wedding table feel intentional. Printed on 300gsm cotton, art, or Conqueror paper with foil, embossing, and die-cut finishing, wedding place cards can fold neatly or stand upright beside each plate. For wedding tables, hotel weddings, destination weddings, chapels, and banquet tables, ZprintPro place cards anchor the seating plan guests have already been promised.\n\nCouples match place cards to the invitation suite — the same paper family, the same foil, the same monogram — so the design language carries from mailbox to tabletop. A standing card at each setting helps guests find their seat at a glance during the dinner rush, while a folded card can hide a menu or a small thank-you note inside.\n\nPlanners use place cards to handle the practical side of seating: dietary icons, table names, and guest counts all fit on the surface, and because they are printed in sets, last-minute name changes are simply a reprint away. Hotel and destination wedding teams order them with escort cards and menus so every printed piece at the reception belongs to one cohesive stationery family.\n\nCards print on 300g cotton, art, or Conqueror paper in A6 (105×148mm) or A5 folded formats, plus custom standing styles. Offset 4-color printing runs double-sided, with foil, embossing, die-cutting, folding, and standing finishes available to match any wedding aesthetic.\n\nPricing is NT$8–35 per card at a 50-piece minimum, with free shipping on orders over $99 and DHL 2–4 day global delivery — 3–5 days to the USA and 2–4 days to Japan, worldwide to 50+ countries. A free digital proof and ISO 9001 certified production are part of the standard flow.\n\n**FAQ**\n\n**Q1: Should the cards stand or fold?**\nA: Standing cards are easiest to spot at a glance; folded cards offer a discreet space for a menu or a note inside.\n\n**Q2: Can the set match my invitation suite?**\nA: Yes — the same paper family, foil, and monogram can carry your invitation design to the tabletop.\n\n**Q3: How many should I order?**\nA: Order one per seated guest plus a small buffer for last-minute changes — the 50-piece minimum covers most table plans.\n\nReady to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page. There are no setup fees, the design mockup costs nothing, and your order is produced at our certified Asia factory."
-      },
-      "ja": {
-        "title": "ウエディング席札｜箔押し スタンド｜50枚〜｜ZprintPro",
-        "description": "ウエディング席札印刷のオーダー印刷、50セット〜。箔押し・スタンド式、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "ウエディング席札印刷 | 箔押し スタンド",
-        "keywords": ["結婚式 印刷","招待状 印刷","ウェディング 印刷","結婚式 準備","ウェディング グッズ","50セット〜"],
-        "body": "披露宴の各テーブルに置く席札は、ゲストの着席を案内するだけでなく、会場のテーマや新郎新婦のこだわりを伝える大切なアイテムです。ZprintProのウエディング席札は、50〜100枚からお作りします。\n\n披露宴のテーブルカードとして、ゲストのお名前とテーブル番号を上品にレイアウト。300gのコットン紙や剛古紙に箔押しを合わせれば、ホテル結婚式やチャペルの格式ある雰囲気に調和します。\n\nデスティネーションウェディングや宴会テーブルでは、A6サイズのスタンド式席札が存在感を発揮します。A5対折ならメッセージカードを添えることもでき、エンボスや型抜きで立体感を加えれば、ゲストの記憶に残る仕上がりになります。\n\n素材は300gのコットン紙、コート紙、コンカラー紙から選択できます。サイズはA6（105×148mm）、A5対折、オーダーメイドのスタンド式に対応し、オフセット印刷4Cの両面印刷が可能です。箔押し、エンボス、型抜き、折り加工などの仕上げもオプションで承ります。\n\n価格はNT$8-35/張（サイズ・数量による）。最小注文は50枚から。標準納期は3〜5営業日、DHL・FedExで日本全国へ2〜4日でお届けします。まとめ注文には段階割引を適用します。\n\n原稿仕様：入稿は解像度300DPI以上、CMYKモードでお願いします。塗り足し3mm、フォントのアウトライン化を推奨します。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 席札のデザインは無料でお願いできますか？**\nA: デザインデータがなくても、無料レイアウトサービスでゲスト名やテーブル番号を整えてご提案します。新郎新婦のテーマカラーにも合わせられます。\n\n**Q2: 納期が気になります。いつまでに注文すればよいですか？**\nA: 標準で3〜5営業日の納期です。挙式日程に余裕を持ってご注文いただくことをおすすめします。急ぎのご相談も承ります。\n\n挙式のテーマに合わせた席札をお考えなら、ぜひZprintProにご相談ください。サンプルと無料見積もりで、理想の仕上がりを一緒に作りましょう。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " 站立式設計燙金壓紋，300g 特 | 香港印刷 | 智印港",
-      "en": " freestanding foil-emboss | Professional  | ZprintPro",
-      "ja": " スタンド式・箔押しエンボス、300g特殊 |  | ZprintPro"
-    }
-  },
-  "wedding-seating-charts": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "婚宴席位圖印刷 A1/A2 50張起 燙金UV 即日報價 | 智印港",
-        "description": "婚宴席位圖印刷 A1/A2 50張起 燙金UV 即日報價 | 智印港",
-        "h1": "婚宴席位圖印刷 A1/A2 50張起 燙金UV 即日報價",
-        "keywords": ["喜帖印刷","婚禮印刷","結婚請帖","婚宴用品","囍帖訂製","燙金請帖","婚禮套餐印刷","50套起印"],
-        "body": "大型婚宴動輒十數圍枱，賓客入場最需要的是一張一目了然的席位圖。婚宴席位圖以大尺寸 A1 或 A2 印製，掛在迎賓區或入口當眼位置，清楚列出各枱號與賓客分布，賓客按圖即知自己座位所在，毋須逐枱尋找，令整個入席流程流暢有序。選用 300g 銅版紙承托大面積印刷，色彩飽和，以燙金點綴枱號與新人名字，低調而隆重；350g 剛古紙更厚實，適合大型宴會反覆使用。\n\n席位圖的設計要清晰易讀：字級要夠大，枱號與座位分區要分明，最好與婚宴枱卡、座位卡一併設計，讓賓客由迎賓區的席位圖到桌面上的座位卡都能對應得上。模切可做出獨特外形，摺疊設計方便攜帶與存放；酒店婚禮、教堂儀式後的宴會、海外婚禮等場合均適用，內容繁多時可選雙面印刷，單面印刷則更簡潔俐落。\n\n交稿規範：請提供 AI / PSD / PDF 向量檔案，解像度 300dpi，色彩模式 CMYK，四周預留 3mm 出血，文字轉為外框；大尺寸檔案請確認內容排版比例，如需摺疊請標明摺線位置，確認後以柯式印刷 4C 單面或雙面生產，常規 3-5 工作天交貨。\n\n收費方面，婚宴席位圖每張 NT$120-450，50 張起印，量大另有優惠，歡迎查詢批量報價。"
-      },
-      "en": {
-        "title": "Wedding Seating Charts | 50 MOQ | A1/A2 Foil | ZprintPro",
-        "description": "Custom wedding seating charts for wedding reception seating plans. 50 MOQ, A1/A2 size, foil print. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Wedding Seating Charts | A1/A2 Foil",
-        "keywords": ["wedding printing","wedding stationery","bridal invitations","wedding cards bulk","foil wedding cards","50 MOQ"],
-        "body": "A seating chart is the map that saves a wedding reception from chaos. Wedding seating charts print at A1 (594×841mm) or A2 (420×594mm) on 300gsm art paper — or 350g Conqueror for extra thickness at large sizes — with foil, UV, die-cutting, and folding finishing. For wedding banquets, hotel weddings, destination weddings, chapels, and large banquets, ZprintPro seating charts turn a long guest list into a design guests actually enjoy reading.\n\nGuests arrive, glance at the chart, and know exactly where they are going, which keeps cocktail hour flowing and the dining room calm. Couples use the large canvas for more than names: a table map, seating blocks by party, and subtle brand details that echo the invitation suite all live on one printed sheet that guests can study without crowding.\n\nHotel and banquet teams print seating charts in single or duplex versions, so a matching copy can stand at the entrance while the original travels to the head table. Because the chart is the first thing guests touch, foil accents and a well-considered layout read as a welcome rather than an instruction list, and the sturdy large-format stock stays flat against easels and frames.\n\nPrinted on 300g art paper or 350g Conqueror stock, thickened for large dimensions, in A1, A2, or custom sizes, using offset 4-color in single or double-sided mode. Finishing includes foil stamping, UV, die-cutting, and folding, so the chart can ship flat or fold to fit the venue kit.\n\nPricing is NT$120–450 per sheet from a 50-piece minimum, with free shipping over $99 and DHL 2–4 day global delivery — 3–5 days to the USA and 2–4 days to Japan, worldwide to 50+ countries. ISO 9001 certified production and a free digital proof keep wedding timelines intact.\n\n**FAQ**\n\n**Q1: Which sizes are available?**\nA: A1 (594×841mm) and A2 (420×594mm) are standard, with custom dimensions on request.\n\n**Q2: Can I print on one or both sides?**\nA: Both — single-sided for a clean display and duplex when you want a matching copy for the entrance or head table.\n\n**Q3: Will it ship flat or folded?**\nA: Both options exist — flat for framing and display, or folded to fit neatly into the venue kit.\n\nReady to order? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page. Free design mockup, no setup fees, and certified production from our Asia factory — start with a proof today."
-      },
-      "ja": {
-        "title": "披露宴座席表｜A1/A2サイズ 箔押し｜50枚〜｜ZprintPro",
-        "description": "披露宴座席表印刷のオーダー印刷、50セット〜。A1/A2サイズ、箔押し対応、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "披露宴座席表印刷 | A1/A2 箔押し",
-        "keywords": ["結婚式 印刷","招待状 印刷","ウェディング 印刷","結婚式 準備","ウェディング グッズ","50セット〜"],
-        "body": "披露宴の入口に掲げる大きな座席表は、ゲストが一目で自分の席を探せるように案内する、会場の顔ともいえるアイテムです。ZprintProの披露宴座席表は、A1・A2の大判サイズで50枚からご注文いただけます。\n\n100名を超える披露宴では、テーブル番号とゲスト名を見やすく配置した大型席図が欠かせません。A1（594×841mm）の大判なら文字も大きく読みやすく、ホテル結婚式のロビーやチャペル前にも存在感のある演出を添えます。\n\nデスティネーションウェディングや大型宴会では、300gのコート紙に箔押しを施した座席表が式場の格調を高めます。片面・両面どちらでも印刷可能で、350gの剛古紙など加厚の用紙も選択でき、持ち運びや展示に適した仕上がりです。\n\n用紙は300gのコート紙、350gの剛古紙（大判用加厚）から選択できます。サイズはA1（594×841mm）、A2（420×594mm）、オーダーメイドに対応し、オフセット印刷4Cの片面・両面印刷が可能です。箔押し、UV、型抜き、折り加工などの仕上げも承ります。\n\n価格はNT$120-450/張（サイズ・数量による）。最小注文は50枚から。標準納期は3〜5営業日、日本全国へのお届けはDHL・FedExで2〜4日です。枚数が増えるほど段階割引がご利用いただけます。\n\n原稿仕様：データは解像度300DPI以上、CMYKカラーモードでご入稿ください。塗り足しは3mm、フォントはアウトライン化してください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 大判の座席表でも鮮明に印刷できますか？**\nA: はい。解像度300DPI以上のデータで、A1・A2の大判でも文字や表組みを鮮明に印刷します。印刷前のデータ確認も承ります。\n\n**Q2: 送料はどのように決まりますか？**\nA: 送料は数量と配送先に応じてお見積もりします。DHL・FedExで日本全国へ2〜4日でお届けします。\n\n披露宴の準備は時間との勝負。座席表のデータ作成も、ZprintProの無料レイアウトサービスでお任せください。まずは無料見積もりをご利用ください。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " A1/A2 大幅面燙金 UV | 香港印刷 | 智印港",
-      "en": " large-format A1/A2 with  | Professional  | ZprintPro",
-      "ja": " A1/A2大型サイズ・箔押しUV対応 |  | ZprintPro"
-    }
-  },
-  "wedding-suite-bundle": {
-    "name": {
-      "zh-hk": "",
-      "en": "",
-      "ja": ""
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "婚慶套裝印刷 請帖+回禮卡 50套起印 6件齊全 | 智印港",
-        "description": "婚慶套裝印刷 請帖+回禮卡 50套起印 6件齊全 | 智印港",
-        "h1": "婚慶套裝印刷 請帖+回禮卡 50套起印 6件齊全",
-        "keywords": ["喜帖印刷","婚禮印刷","結婚請帖","婚宴用品","囍帖訂製","燙金請帖","婚禮套餐印刷","50套起印"],
-        "body": "籌辦婚禮最花心神的部分，莫過於統籌各式各樣的紙品。婚慶整套配套一次備齊 6 大件：喜帖、Save the Date、感謝卡、節目單、菜單與席位圖，從邀請、預告、流程、菜式到座位安排一應俱全，讓新人毋須逐項比價，輕鬆打造風格一致的婚慶印刷系列。整套以 300g 棉紙為主，請帖部分選用 350g 剛古紙，配合玫瑰金燙金、UV 局部、模切與折卡等工藝，質感統一而講究，無論是教堂婚禮還是酒店婚宴都派得上用場。\n\n整套配套的六件紙品採不同尺寸設計，例如請帖採用 130×190mm 標準尺寸，其餘按功能區分，方便分類寄送與現場佈置。對於時間有限的新人，整套訂製能把結婚請柬與其餘紙品一次過安排妥當，喜帖印刷以至宴席佈置毋須再逐項跟進，並享 85 折優惠及免費寄樣，先確認實物質感再大批生產，減少來回溝通的成本。配合順豐本地派送與 DHL 全球寄送，無論在港宴客或舉辦海外婚禮，都能準時收到整套婚禮紙品。\n\n交稿規範：整套 6 件請按各件指定尺寸製作檔案，採柯式印刷 4C 雙面入稿；玫瑰金燙金請另設專色圖層並標明位置，UV 局部與模切、折卡需分別提供對應圖層與刀模線，確保六件成品工藝一致。\n\n收費方面，婚慶整套配套以整套 6 件計算，價格範圍為 NT$120-450 / 套，最低起印量為 50 套。整套訂製比逐項分開製作更划算，並已包含 85 折優惠，歡迎查詢詳細報價。"
-      },
-      "en": {
-        "title": "Wedding Suite Bundle | 50 MOQ | 6 Pcs Set | ZprintPro",
-        "description": "Custom wedding suite bundle for complete wedding stationery. 50 MOQ, 6-piece matching invitation suite. 4-color CMYK on 300gsm specialty paper, free design support and 1-hour digital proof. 3-5 day production, free US shipping over $99. | ZprintPro",
-        "h1": "Wedding Suite Bundle | 6 Pcs Set",
-        "keywords": ["wedding printing","wedding stationery","bridal invitations","wedding cards bulk","foil wedding cards","50 MOQ"],
-        "body": "Coordinating six printed pieces across your wedding is the fastest way to a cohesive look — and the easiest way to overspend if each is ordered separately. The ZprintPro wedding suite bundle brings the invitation, save the date, thank you, program, menu, and seating chart together in one 6-piece set at 15% off bundle pricing, with a free sample to check before you commit.\n\nFull weddings, hotel weddings, and chapels benefit from one design language running from the save the date to the seating chart. The bundle pairs 300g cotton for the main pieces with 350g Conqueror for the invitation, so the whole suite carries the same tactile quality.\n\nDestination weddings and Michelin dinners need stationery that travels and photographs well. Rose gold foil, spot UV, die-cut shaping, and folded-card construction give every piece the same finishing signature, and ordering as a bundle means every element arrives together — no mismatched reprints.\n\nThe six pieces print in different sizes — the invitation at 130×190mm and the rest to suit — by duplex 4C offset with rose gold foil stamping, spot UV, die-cut, and folded-card finishing. Free typesetting and a free digital proof cover the whole set.\n\nBundle pricing runs NT$120–450 per set (all six pieces) with a 50-set minimum. Free shipping over $99, DHL Express 2–4 day global delivery, ISO 9001 certified production, and a free digital proof.\n\n**FAQ**\n\n**Q1: What is included in the bundle?** Six pieces: invitation, save the date, thank you card, program, menu, and seating chart.\n\n**Q2: Can I order a sample first?** Yes — a free sample is available so you can feel the paper and foil before placing the full order.\n\n**Q3: Do all six pieces match?** Yes — they are produced as one coordinated suite with the same paper and foil finishes.\n\nReady to order? Ask for a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page."
-      },
-      "ja": {
-        "title": "ウエディング フル セット｜6枚組｜50セット〜｜ZprintPro",
-        "description": "ウエディング フル セット印刷のオーダー印刷、50セット〜。6枚組の揃いの招待状セット、300g特種紙、4色CMYK、デザイン自由。無料デジタル校正1時間、3-5営業日納品、DHL日本直送2-4日。| ZprintPro",
-        "h1": "ウエディング フル セット印刷 | 6枚組",
-        "keywords": ["結婚式 印刷","招待状 印刷","ウェディング 印刷","結婚式 準備","ウェディング グッズ","50セット〜"],
-        "body": "ZprintPro のウエディングフルセットは、招待状、Save the Date、サンキューカード、結婚式のしおり、メニューカード、座席表の 6 点を一式でまとめたプランです。セットでのご注文は 15% オフとなり、無料サンプルもご用意しています。\n\n会場のテーマやカラースキームに合わせて全アイテムのデザインを統一できるため、式全体の印象がぐっと引き締まります。ホテル結婚式、チャペル、デスティネーションウェディング、ミシュランディナーなど、格式の高いおふたりに最適です。\n\nアイテムごとに別々に発注すると、デザインのズレや納期の管理が煩雑になりがち。フルセットなら 6 点を一括で制作するので、トーン＆マナーが揃い、スケジュール管理も一か所で完結します。\n\nメインのペーパーは 300g コットン紙、請帖は 350g 剛古紙を使用し、請帖は 130×190mm などアイテムごとに最適なサイズで制作します。四色オフセット印刷の両面＋箔押し（ローズゴールド）に、部分 UV、型抜き、折り加工を組み合わせた上質な仕上がりです。\n\n料金は 6 点セットで NT$120〜450、最小注文は 50 セットからです。FSC 認証紙を使用し、ISO 9001 品質管理の下で生産。アジアの自社工場から DHL Express で 2〜4 日でお届けします。\n\n原稿仕様：入稿データは 300DPI 以上の解像度、CMYK カラーモード、3mm の塗り足し、フォントのアウトライン化でご用意ください。箔押しや型抜きの位置は、K100 の黒版で別途指定していただきます。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: セットに何が含まれますか？** 招待状、Save the Date、サンキューカード、結婚式のしおり、メニューカード、座席表の 6 点です。\n\n**Q2: セット割引はありますか？** セットでのご注文は 15% オフになります。\n\n**Q3: 最低何セットから注文できますか？** 50 セットから承っています。数量が多いほどお得になる段階割引もございます。\n\n式のペーパーアイテムをすべて揃えたい方は、まず 6 点セットの無料サンプルをお取り寄せください。ZprintPro が日本語対応で、一式のデザインから納品までサポートします。"
-      }
-    },
-    "faqs": [],
-    "imageAlt": {
-      "zh-hk": " 請帖+感謝卡+枱卡 6 件一套齊 | 香港印刷 | 智印港",
-      "en": " complete 6-piece set: in | Professional  | ZprintPro",
-      "ja": " 招待状・サンキュカード・席札の6点セット |  | ZprintPro"
     }
   },
   "wedding-thank-you-cards": {

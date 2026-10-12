@@ -101,6 +101,7 @@ const dsName = normName(ds.name);
 const dsConfigs = ds.configs.map(c => ({ label: L(c.config), tiers: normTiers(c.tiers) }));
 map['waterproof-stickers'] = { source: 'digital-stickers-cost.json', productName: dsName, defaultConfigIndex: 0, configs: dsConfigs };
 map['digital-stickers'] = { source: 'digital-stickers-cost.json', productName: dsName, defaultConfigIndex: 0, configs: dsConfigs };
+map['roll-stickers'] = { source: 'digital-stickers-cost.json', productName: dsName, defaultConfigIndex: 4, configs: dsConfigs }; // 2026-10-12 K3 拍板: 卷裝貼紙新建 (卷裝檔=cfg[4])
 
 // 5. flyers.json (eprint)
 const f = loadJSON('flyers.json');
@@ -176,12 +177,13 @@ function ser(obj, indent = 2) {
 
 function serUnitAnchors(map) {
   const lines = [];
-  const sheets = ['a2-posters','a1-posters','a4-flyers','a5-flyers','folded-leaflets','same-day-flyers','eco-flyers'];
+  const sheets = ['a2-posters','a1-posters','a4-flyers','a5-flyers','folded-leaflets','same-day-flyers','eco-flyers','roll-stickers'];
   const books = ['saddle-stitch-booklets','perfect-bound-books','hardcover-books','exercise-books','catalog-printing','spiral-notebooks'];
   for (const [slug, data] of Object.entries(map)) {
     if (!data.configs?.length) continue;
     // Take first config's tiers as default
-    const cfg = data.configs[0];
+    // 2026-10-12: 尊重 defaultConfigIndex (roll-stickers 卷裝檔=cfg[4], 非 cfg[0] 片裝檔)
+    const cfg = data.configs[data.defaultConfigIndex ?? 0];
     if (!cfg.tiers?.length) continue;
     let bestHKD = { ppu: Infinity, qty: 0, batch: 0 };
     let bestUSD = { ppu: Infinity, qty: 0, batch: 0 };
@@ -261,8 +263,9 @@ const KANA_RE = /[\u3040-\u30ff]/;
 /*
  * 計數斷言 (改動時必須同步, 否則寫盤前即攔下 — 2026-09-19 已實測攔截 A1 新增)
  *   2026-09-19: slug 18 → 19 (+a1-posters, K3 路線圖 P0-2)、label 114 → 116 (+2 個 A1 config)
+ *   2026-10-12: slug 19 → 20、label 116 → 121 (+roll-stickers 复用 digital-stickers-cost 5 配置, K3 拍板荧光→卷裝)
  */
-const EXPECT = { slugs: 19, nameBlocks: 19, labelBlocks: 116 };
+const EXPECT = { slugs: 20, nameBlocks: 20, labelBlocks: 121 };
 
 function assertLocalized() {
   const bad = [];

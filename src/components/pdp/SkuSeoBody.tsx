@@ -11,20 +11,30 @@
  *   3. 其余行 → <p> 段落
  *
  * 试点范围: 全部 PDP 通用 (渲染层改造, 输出内容与原文本一字不差)。
+ *
+ * 2026-10-12 增补 (SOP-10 第 5 款): body 含 [text](url) Markdown 内链
+ *   (如 roll-stickers 页 → fruit-food-label-stickers) — renderLine 先切 **bold**
+ *   段, 再逐段过 parseInlineLinks() 解析内链; 不再用 dangerouslySetInnerHTML。
  */
+
+import { Fragment, type ReactNode } from 'react';
+import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 interface SkuSeoBodyProps {
   body: string;
   locale: string;
 }
 
-/** 把 **bold** 标记转为 <strong>, 其余 HTML 转义 */
-function renderInline(line: string): string {
-  const esc = line
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-  return esc.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+/** 把 **bold** 段切出, 其余段过 parseInlineLinks 解析 [text](url) 内链 */
+function renderLine(line: string): ReactNode {
+  return line
+    .split(/(\*\*.+?\*\*)/g)
+    .filter(Boolean)
+    .map((seg, i) => {
+      const bold = /^\*\*(.+?)\*\*$/.exec(seg);
+      if (bold) return <strong key={i}>{parseInlineLinks(bold[1])}</strong>;
+      return <Fragment key={i}>{parseInlineLinks(seg)}</Fragment>;
+    });
 }
 
 export function SkuSeoBody({ body, locale }: SkuSeoBodyProps) {
@@ -77,7 +87,7 @@ export function SkuSeoBody({ body, locale }: SkuSeoBodyProps) {
     <div>
       {normalLines.map((line, i) => (
         <p key={i} className="text-gray-600 leading-relaxed text-[15px] mb-3">
-          <span dangerouslySetInnerHTML={{ __html: renderInline(line) }} />
+          {renderLine(line)}
         </p>
       ))}
 
@@ -92,7 +102,7 @@ export function SkuSeoBody({ body, locale }: SkuSeoBodyProps) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="px-5 pb-4 text-sm text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: renderInline(f.a) }} />
+              <p className="px-5 pb-4 text-sm text-gray-600 leading-relaxed">{renderLine(f.a)}</p>
             </details>
           ))}
         </div>

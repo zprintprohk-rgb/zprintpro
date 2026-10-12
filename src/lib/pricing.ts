@@ -364,9 +364,9 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
     'en': { min: 0.41, max: 0.78, unit: 'pc' },
     'ja': { min: 51, max: 97, unit: '枚' },
   },
-  'fluorescent-stickers': {
-    'en': { min: 0.46, max: 0.92, unit: 'pc' },
-    'ja': { min: 60, max: 115, unit: '枚' },
+  'roll-stickers': {
+    'en': { min: 0.03, max: 0.71, unit: 'pc' },
+    'ja': { min: 4, max: 110, unit: '枚' },
   },
   'fruit-food-label-stickers': {
     'en': { min: 0.23, max: 0.51, unit: 'pc' },
@@ -898,8 +898,7 @@ const DISPLAY_ANCHOR_OVERRIDES: Record<string, { low: number; high: number; unit
   'doujinshi-printing':  { low: 5.00, high: 10.00, unit: '部' }, // 同人本
   'acrylic-keychain':    { low: 3.00, high: 10.00, unit: '個' },
   'can-badge':           { low: 1.00, high: 5.00,  unit: '個' },
-  'postcard-set':        { low: 1.00, high: 5.00,  unit: '枚' },
-  'eco-tote-bag':        { low: 5.00, high: 10.00, unit: '個' },
+  // 2026-10-12 Tier1 退役: postcard-set/eco-tote-bag 锚已删 (K3 拍板 301 收拢)
   /*
    * A1 海報 — 2026-09-19 K3 路線圖 P0-2「A1 獨立 minQuantity=1 + 獨立價階」
    *   原值 { 29, 29 } 註明「待 user 拍板」: 29 其實係 **200 張檔** 的單張價,

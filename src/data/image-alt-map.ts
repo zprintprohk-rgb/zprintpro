@@ -93,16 +93,6 @@ export const altTagMap: Record<string, Record<string, string>> = {
     en: 'can-badge-printing-57mm-76mm-safety-pin',
     ja: '缶バッジ印刷-57mm-76mm-安全ピン',
   },
-  'postcard-set': {
-    'zh-hk': 'ポストカードセット-和紙風-105x148mm',
-    en: 'postcard-set-washi-style-105x148mm',
-    ja: 'ポストカードセット-和紙風-105x148mm',
-  },
-  'eco-tote-bag': {
-    'zh-hk': 'エコトートバッグ-オーガニックコットン-12oz',
-    en: 'eco-tote-bag-organic-cotton-12oz-canvas',
-    ja: 'エコトートバッグ-オーガニックコットン-12oz',
-  },
 
 };
 

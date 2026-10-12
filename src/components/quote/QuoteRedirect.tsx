@@ -35,7 +35,8 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'transparent-stickers': '/product/transparent-stickers/',
   'small-batch-stickers': '/product/small-batch-stickers/',
   'foil-stickers': '/product/foil-stickers/',
-  'fluorescent-stickers': '/product/fluorescent-stickers/',
+  'roll-stickers': '/product/roll-stickers/', // 2026-10-12 新建
+  'fluorescent-stickers': '/product/roll-stickers/', // 2026-10-12 退役 301 收拢 (K3 拍板)
   // === Posters ===
   'display-posters': '/product/display-posters/',
   'outdoor-posters': '/product/outdoor-posters/',
