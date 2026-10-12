@@ -1,9 +1,15 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ✅ **已释放** — 2026-10-12 16:1x 人手会话（deepseek hermes）：
-> **释放条件全满足**: 门童全绿（tsc 54 基线 / title-v5 HARD 仅存量 / gsc-leak / brand / encoding）+ push（`5cc341b4`）+ 线上探针 16/16 PASS（roll 三语 200、荧光 301→roll ×3、Tier1 八 301 目标全对、webp 200）
-> **K3 待办（真人动作）**: ① GSC 手动索引请求 roll-stickers 三语 URL；② incognito 三词验证（roll labels / 卷裝貼紙 / ロールラベル）；③ 旧域名服务器侧 301 移交中
-> **生图费用决算**: 1.20 元（10 张 × 0.12，doubao-seedream-5-0-flash-260915），额度 2.88 内余 1.56 元
+> **当前状态**: ⚪ **已释放** — 2026-10-13 07:5x Batch B 会话（deepseek hermes）释放：
+
+> **上一批（刚释放）**: Batch B ✅ 已上线 `4c4cacbb`（探针 **22/22 PASS** 含终态验证）：
+> K3 指令「v28_5_webp 图库 → 补齐三语无图 SKU + blog 缺图补 SKU 首图」+ Tier1 301 止血拍板①。
+> 交付 = ① 36 图入库（WI-001/WI-003/PC-001 → seedream-webp）② 两零图婚礼条目补 imagesByLocale+seoImages（per-locale alt GEO 公式）+ 11 条悬空 -5 死引用摘除 + roll legacy 修指 ③ premium 误伤数组还原（当日手术误靶已修复，六兄弟断言无损）④ blog 21 篇补最近 SKU per-locale 首图 + getBlogImage 统一口 + 6 消费点改造 ⑤ **og:image 修复**（原 /images/articles/{slug}.jpg ~95% 404 → 与 hero 同源 1200×1200）⑥ **Tier1 八链 301 改指真 PDP**（7 条曾坠 404：卡类→premium-greeting-cards / 婚宴→foil-wedding-invitations，K3 17:5x 拍板方案①）⑦ blog 计数 83→82（价格报告博文 ×3 语）。门检 tsc 54=54 / brand A 0 / gsc-leak 0 / encoding ✓ / image sitemap 82 产品 1066 图。
+> SSoT `docs/2026-10-12-batch-b-sku-image-completion-and-tier1-301-hotfix.md`。探针 `.hermes/_batchb_probes.py`（**带终态验证**，修复昨日探针只验 301 状态的设计缺口）。
+> Wave-2 挂账：① 母页 SKU 三件套（place-cards/wedding-invitations/greeting-cards）是否新建待 K3 再议（PC-001 12 图已备）② wedding-invitations 分类页仍挂贺卡图 ③ blog 列表卡片缩略图 UI 未动。
+> **本锁释放，后续会话可自由接管。**
+>
+> **Batch B 持有声明（历史）**: 2026-10-12 16:3x 起持有，写入范围 public/images + blog-data×3 + sitemap + docs；未 commit v28_5 本体；release 条件 = push + 探针（已满足）。
 >
 > ---
 >
