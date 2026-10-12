@@ -138,6 +138,45 @@ def check_live_seo_assertions():
     return alerts
 
 
+def check_stuck_lane_tasks():
+    """车道任务卡死检测 (K3 2026-10-13 查案):
+    ZP-* 任务 MultipleInstancesPolicy=IgnoreNew — 残留 Running 实例会让后续每次触发
+    在调度层直接被拒 (LastTaskResult=0x800710E0, wrapper 连 run start 都不写)。
+    2026-10-10~10-12 daily-content/gsc-feedback/weekly-meta/monthly-matrix 全中此形态。
+    本看门狗每天 06:43 以最高权限运行 -> 发现 Running 即 schtasks /end 处置 + 告警。
+    豁免自身 (ZP-cron-watchdog 运行时 State 必然是 Running)。"""
+    import subprocess
+    try:
+        out = subprocess.run(
+            ["powershell", "-NoProfile", "-Command",
+             "Get-ScheduledTask | Where-Object {$_.TaskName -like 'ZP-*'} | "
+             "Select-Object TaskName, State | ConvertTo-Json"],
+            capture_output=True, text=True, timeout=90)
+        tasks = json.loads(out.stdout) if out.stdout.strip() else []
+        if isinstance(tasks, dict):
+            tasks = [tasks]
+    except Exception as e:
+        print(f"[watchdog] 卡死检测不可用 ({e}), 跳过 (不作判据)")
+        return []
+    alerts = []
+    for t in tasks:
+        name = t.get("TaskName", "")
+        state = t.get("State")  # JSON 枚举: 3=Ready, 4=Running (部分环境回字符串)
+        running = state == 4 or str(state).lower() == "running"
+        if not running or name == "ZP-cron-watchdog":
+            continue
+        end = subprocess.run(["schtasks", "/end", "/tn", f"\\{name}"],
+                             capture_output=True, text=True, timeout=60)
+        ok = end.returncode == 0
+        alerts.append(
+            f"- **车道任务卡死已处置**: `{name}` 残留 Running 实例 (IgnoreNew 策略下后续触发全部被拒, "
+            f"0x800710E0, 10-10~10-12 四条车道断跑根因) -> schtasks /end {'✅ 成功' if ok else '❌ 失败(需管理员)'}; "
+            f"根因排查: `.hermes/logs/cron-{name}.log` 尾部 + 残留 node/dsh 进程树")
+    if not alerts:
+        print("[watchdog] 车道任务实例状态: 全部 Ready (无卡死)")
+    return alerts
+
+
 def write_exec_line(status_txt, detail):
     rep = os.path.join(LOGS, "cron-execution-report.md")
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
@@ -201,6 +240,7 @@ def main():
         print(lock_alert)
 
     alerts.extend(check_live_seo_assertions())
+    alerts.extend(check_stuck_lane_tasks())
 
     status_txt = "✅ 通过" if not alerts else f"⚠️ {len(alerts)} 条告警"
     write_exec_line(status_txt, detail)
