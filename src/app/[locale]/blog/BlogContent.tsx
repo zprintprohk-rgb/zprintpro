@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Locale } from '@/lib/seo';
 import { blogPosts } from '@/data/blog-posts';
+import { getBlogImage } from '@/data/blog-m3-images';
 import { MessageCircle, Clock, Calendar } from 'lucide-react';
 import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
 
@@ -19,8 +20,6 @@ interface BlogContentProps {
   locale: Locale;
   /** D: 服务器端从真实正文算出的阅读分钟数 (blog/page.tsx) */
   readTimes: Record<string, number>;
-  /** 2026-09-11 老板指令: 每篇 blog 的 SKU 真实图 (blog/page.tsx 服务器端算好) */
-  blogImages: Record<string, string>;
 }
 
 const translations: Record<string, {
@@ -186,7 +185,7 @@ function CardCover({
 
 const FEATURED_COUNT = 3; // 头条 1 + 次条 2
 
-export default function BlogContent({ locale, readTimes, blogImages }: BlogContentProps) {
+export default function BlogContent({ locale, readTimes }: BlogContentProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -203,11 +202,11 @@ export default function BlogContent({ locale, readTimes, blogImages }: BlogConte
           ? t.buyingGuideTag
           : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
       excerpt: post.excerpt[locale],
-      image: blogImages[post.slug] || post.cover?.[locale] || post.cover?.['zh-hk'] || '',
+      image: getBlogImage(post.slug, locale) || post.cover?.[locale] || post.cover?.['zh-hk'] || '',
       readMin: readTimes[post.slug] || 3,
     }))
     .sort((a, b) => (b.date || '').localeCompare(a.date || '')),
-    [locale, t, readTimes, blogImages]
+    [locale, t, readTimes]
   );
 
   const filteredPosts = useMemo(() => {

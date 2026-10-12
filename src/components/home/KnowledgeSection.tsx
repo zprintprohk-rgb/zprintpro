@@ -5,7 +5,7 @@ import { PictureImage } from '@/components/picture-image';
 import Link from 'next/link';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { blogM3Images } from '@/data/blog-m3-images';
+import { getBlogImage } from '@/data/blog-m3-images';
 import { blogPosts } from '@/data/blog-posts';
 
 /**
@@ -13,9 +13,9 @@ import { blogPosts } from '@/data/blog-posts';
  * 直接复用 blog 同一张 M3 模型生成图 (blogM3Images 以 blog slug 为键;
  * href 形如 /blog/{slug}/), 三语同图; 无映射时回落既有 /images/articles 封面。
  */
-function m3ImageForHref(href: string): string {
+function m3ImageForHref(href: string, locale: string): string {
   const slug = href.split('/').filter(Boolean).pop() || '';
-  return blogM3Images[slug] || '';
+  return getBlogImage(slug, locale) || '';
 }
 
 interface KnowledgeSectionProps {
@@ -168,7 +168,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
       const style = t.articles[index] || t.articles[0];
       return {
         slug: post.slug,
-        image: blogM3Images[post.slug] || post.cover?.[locale] || style.image,
+        image: getBlogImage(post.slug, locale) || post.cover?.[locale] || style.image,
         tag: style.tag,
         tagColor: style.tagColor,
         date: post.date,
@@ -207,7 +207,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
               {/* Image — 1:1 统一视觉 */}
               <div className="aspect-square relative overflow-hidden">
                 <PictureImage
-                  src={m3ImageForHref(article.href) || article.image}
+                  src={m3ImageForHref(article.href, locale) || article.image}
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -216,7 +216,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
                   /* 2026-09-12 修复"烂图": PictureImage 默认会把 x.webp 推断出 x.avif 并作为首个 <source>,
                      而 M3 目录只有 .webp (无 .avif 配套) → 浏览器优先取 .avif 命中 404 破图。
                      故当使用 M3 图时显式传 sources=[] 关闭格式推断 (回落旧图时仍保留推断)。 */
-                  sources={m3ImageForHref(article.href) ? [] : undefined}
+                  sources={m3ImageForHref(article.href, locale) ? [] : undefined}
                 />
               </div>
 

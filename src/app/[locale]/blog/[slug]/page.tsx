@@ -14,7 +14,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
-import { blogM3Images } from '@/data/blog-m3-images';
+import { getBlogImage } from '@/data/blog-m3-images';
 import { products, getProductTitle, getProductDescription, getProductDisplayTitle, getProductBySlug } from '@/data/products';
 import { getTopSkuByCategory, getRelatedByCategory, inferBlogCategory } from '@/lib/popularity';
 import { convertPriceRangeString } from '@/lib/pricing';
@@ -929,14 +929,21 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       section: post?.category,
       authors: [`https://zprintpro.com/${locale}/about/`],
       tags: post?.keywords ? post.keywords.split(',') : undefined,
-      images: [
-        {
-          url: `${siteConfig.url}/images/articles/${params.slug}.jpg`,
-          width: 1200,
-          height: 630,
-          alt: post?.title || 'Blog Post',
-        },
-      ],
+      // 2026-10-12 Batch B 修复: 原写死 /images/articles/{slug}.jpg —— 该目录仅 12 文件,
+      // ~95% 博文 og:image 404 (实测)。现与正文 hero 同源 getBlogImage||getBlogCover;
+      // webp 方图按 1200×1200 申报 (Discover 合规), 无图时省略 images (不发射假 og)。
+      images: (() => {
+        const img = getBlogImage(params.slug, locale) || getBlogCover(params.slug, locale);
+        if (!img) return undefined;
+        return [
+          {
+            url: `${siteConfig.url}${img}`,
+            width: 1200,
+            height: 1200,
+            alt: post?.title || 'Blog Post',
+          },
+        ];
+      })(),
     },
     alternates: {
       canonical,
@@ -988,7 +995,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
   // 2026-09-11 老板指令: blog 照片用 M3 模型生成图 (三语同图), 无 M3 图才走既有 cover
-  const postImage = blogM3Images[params.slug] || getBlogCover(params.slug, locale);
+  // 2026-10-12 Batch B: 统一走 getBlogImage (per-locale SKU 首图, 经 K3 拍板)
+  const postImage = getBlogImage(params.slug, locale) || getBlogCover(params.slug, locale);
 
   // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
   // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。

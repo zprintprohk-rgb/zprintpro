@@ -149,16 +149,18 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
 };
 
 // 2026-10-12 K3 拍板 SKU 压缩: 退役 PDP 直接 URL 301 收拢 (不影响 QUOTE_PRODUCT_MAP 既有映射)
+// 2026-10-12 17:5x K3 拍板①改指真 PDP: 原 place-cards/wedding-invitations/greeting-cards
+//   均非产品 SKU (仅分类页, 链终态 404 实锤 _chain_probe.py) → 改指现存最强相关真 PDP
 const RETIRED_PRODUCT_REDIRECTS: Record<string, string> = {
   'fluorescent-stickers': '/product/roll-stickers/',
-  'drink-tokens': '/product/place-cards/',
-  'cafe-table-cards': '/product/place-cards/',
-  'wedding-place-cards': '/product/place-cards/',
-  'save-the-date-cards': '/product/wedding-invitations/',
-  'wedding-seating-charts': '/product/wedding-invitations/',
-  'wedding-suite-bundle': '/product/wedding-invitations/',
+  'drink-tokens': '/product/premium-greeting-cards/',
+  'cafe-table-cards': '/product/premium-greeting-cards/',
+  'wedding-place-cards': '/product/premium-greeting-cards/',
+  'save-the-date-cards': '/product/foil-wedding-invitations/',
+  'wedding-seating-charts': '/product/foil-wedding-invitations/',
+  'wedding-suite-bundle': '/product/foil-wedding-invitations/',
   'eco-tote-bag': '/product/paper-bags/',
-  'postcard-set': '/product/greeting-cards/',
+  'postcard-set': '/product/premium-greeting-cards/',
 };
 
 export async function middleware(request: NextRequest) {

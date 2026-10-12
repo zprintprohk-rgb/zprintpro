@@ -179,20 +179,19 @@ export const products: Product[] = [
     minQuantity: 10,
     images: ['/images/v26/greeting-cards/premium/zh-hk/hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
+            'zh-hk': [
       '/images/v26/greeting-cards/premium/zh-hk/hero.webp',
       '/images/v26/greeting-cards/premium/zh-hk/detail.webp',
       '/images/v26/greeting-cards/premium/zh-hk/multi-angle.webp',
       '/images/v26/greeting-cards/premium/zh-hk/variety.webp',
     ],
-    'en': [
+            'en': [
       '/images/v26/greeting-cards/premium/en/hero.webp',
       '/images/v26/greeting-cards/premium/en/detail.webp',
       '/images/v26/greeting-cards/premium/en/multi-angle.webp',
       '/images/v26/greeting-cards/premium/en/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-premium-stickers-en-5.webp',
     ],
-    'ja': [
+            'ja': [
       '/images/v26/greeting-cards/premium/ja/hero.webp',
       '/images/v26/greeting-cards/premium/ja/detail.webp',
       '/images/v26/greeting-cards/premium/ja/multi-angle.webp',
@@ -281,21 +280,18 @@ export const products: Product[] = [
       '/images/v26/greeting-cards/thick-400g/zh-hk/detail.webp',
       '/images/v26/greeting-cards/thick-400g/zh-hk/multi-angle.webp',
       '/images/v26/greeting-cards/thick-400g/zh-hk/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-zh-hk-5.webp',
     ],
     'en': [
       '/images/v26/greeting-cards/thick-400g/en/hero.webp',
       '/images/v26/greeting-cards/thick-400g/en/detail.webp',
       '/images/v26/greeting-cards/thick-400g/en/multi-angle.webp',
       '/images/v26/greeting-cards/thick-400g/en/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-en-5.webp',
     ],
     'ja': [
       '/images/v26/greeting-cards/thick-400g/ja/hero.webp',
       '/images/v26/greeting-cards/thick-400g/ja/detail.webp',
       '/images/v26/greeting-cards/thick-400g/ja/multi-angle.webp',
       '/images/v26/greeting-cards/thick-400g/ja/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-thick-stickers-400g-ja-5.webp',
     ],
   },
     variables: {
@@ -380,7 +376,6 @@ export const products: Product[] = [
       '/images/v26/greeting-cards/foil/zh-hk/detail.webp',
       '/images/v26/greeting-cards/foil/zh-hk/multi-angle.webp',
       '/images/v26/greeting-cards/foil/zh-hk/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-5.webp',
     ],
     'en': [
       '/images/v26/greeting-cards/foil/en/hero.webp',
@@ -393,7 +388,6 @@ export const products: Product[] = [
       '/images/v26/greeting-cards/foil/ja/detail.webp',
       '/images/v26/greeting-cards/foil/ja/multi-angle.webp',
       '/images/v26/greeting-cards/foil/ja/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-5.webp',
     ],
   },
     variables: {
@@ -580,14 +574,12 @@ export const products: Product[] = [
       '/images/v26/greeting-cards/matte/en/detail.webp',
       '/images/v26/greeting-cards/matte/en/multi-angle.webp',
       '/images/v26/greeting-cards/matte/en/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-matte-stickers-en-5.webp',
     ],
     'ja': [
       '/images/v26/greeting-cards/matte/ja/hero.webp',
       '/images/v26/greeting-cards/matte/ja/detail.webp',
       '/images/v26/greeting-cards/matte/ja/multi-angle.webp',
       '/images/v26/greeting-cards/matte/ja/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-matte-stickers-ja-5.webp',
     ],
   },
     variables: {
@@ -672,21 +664,18 @@ export const products: Product[] = [
       '/images/v26/greeting-cards/rounded-corner/zh-hk/detail.webp',
       '/images/v26/greeting-cards/rounded-corner/zh-hk/multi-angle.webp',
       '/images/v26/greeting-cards/rounded-corner/zh-hk/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-zh-hk-5.webp',
     ],
     'en': [
       '/images/v26/greeting-cards/rounded-corner/en/hero.webp',
       '/images/v26/greeting-cards/rounded-corner/en/detail.webp',
       '/images/v26/greeting-cards/rounded-corner/en/multi-angle.webp',
       '/images/v26/greeting-cards/rounded-corner/en/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-en-5.webp',
     ],
     'ja': [
       '/images/v26/greeting-cards/rounded-corner/ja/hero.webp',
       '/images/v26/greeting-cards/rounded-corner/ja/detail.webp',
       '/images/v26/greeting-cards/rounded-corner/ja/multi-angle.webp',
       '/images/v26/greeting-cards/rounded-corner/ja/variety.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-rounded-corner-cards-ja-5.webp',
     ],
   },
   seoImages: {
@@ -1435,7 +1424,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: true,
     minQuantity: 10,
-    images: ['/images/products/roll-stickers.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-1.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-stickers-roll-stickers-zh-hk-1.webp',
@@ -7553,7 +7542,35 @@ export const products: Product[] = [
     description_zh: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。**適配行業**: 婚...',
     basePrice: 1.2,
     weight_score: 50,
-    images: ['/images/products/foil-wedding-invitations-1.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-variety.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-en-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-en-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-en-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-en-variety.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-ja-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-ja-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-ja-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-ja-variety.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp', en: 'zprintpro-wedding-invitations-foil-wedding-invitations-en-hero.webp', ja: 'zprintpro-wedding-invitations-foil-wedding-invitations-ja-hero.webp' },
+    alt: {
+      'zh-hk': '燙金結婚請帖 香港婚禮請柬印刷 厚卡燙金浮雕定制 | 智印港',
+      en: 'Foil Wedding Invitations Gold Stamping Thick Cardstock Hong Kong | ZprintPro',
+      ja: '箔押し結婚式招待状 厚紙カード 香港印刷 カスタム | ZprintPro',
+    },
+  },
     isHot: false,
     isNew: true,
     minQuantity: 50,
@@ -7577,7 +7594,35 @@ export const products: Product[] = [
     description_zh: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。**適配行業**: 婚慶答...',
     basePrice: 0.65,
     weight_score: 50,
-    images: ['/images/products/wedding-thank-you-cards-1.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-variety.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-en-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-en-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-en-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-en-variety.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-ja-hero.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-ja-detail.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-ja-multi-angle.webp',
+      '/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-ja-variety.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp', en: 'zprintpro-wedding-invitations-wedding-thank-you-cards-en-hero.webp', ja: 'zprintpro-wedding-invitations-wedding-thank-you-cards-ja-hero.webp' },
+    alt: {
+      'zh-hk': '婚禮感謝卡 香港結婚回謝卡印刷 厚卡定制 | 智印港',
+      en: 'Wedding Thank You Cards Custom Printing Hong Kong | ZprintPro',
+      ja: '結婚式サンキューカード 香港印刷 オーダーメイド | ZprintPro',
+    },
+  },
     isHot: false,
     isNew: true,
     minQuantity: 50,

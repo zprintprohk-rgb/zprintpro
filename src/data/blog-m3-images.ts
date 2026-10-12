@@ -2,7 +2,7 @@
  * 体积两档规则: <115KB 直接选用; ≥115KB 压缩至 <100KB 后使用
  * 选图: hero 优先 > variety > multi-angle > spread > detail > 其他; 文件名关键词语义匹配; 全局唯一; 三语同图
  * 消费点: /blog/ 列表卡 + /blog/[slug] 详情 hero + 首页「印刷知識」栏 + 导航「印刷知識」下拉 (四处同一张图) */
-export const blogM3Images: Record<string, string> = {
+export const blogM3Images: Record<string, string | Record<string, string>> = {
   'sticker-buying-guide': '/images/blog-m3/sticker-buying-guide.webp',
   'flyer-buying-guide': '/images/blog-m3/flyer-buying-guide.webp',
   'packaging-buying-guide': '/images/blog-m3/packaging-buying-guide.webp',
@@ -92,4 +92,38 @@ export const blogM3Images: Record<string, string> = {
   'kraft-paper-box-types-comparison-2026': '/images/blog-m3/kraft-paper-box-types-comparison-2026.webp',
   'hong-kong-printing-cost-baseline-2026': '/images/blog-m3/hong-kong-printing-cost-baseline-2026.webp',
   'print-specifications-reference-guide-2026': '/images/blog-m3/print-specifications-reference-guide-2026.webp',
+  'rush-printing-delivery-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-1.webp', en: '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-1.webp', ja: '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-1.webp' },
+  'etsy-seller-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en.webp', ja: '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja.webp' },
+
+  // 2026-10-12 Batch B: 19 篇无 M3 图 blog → 最近 SKU per-locale 首图 (K3 拍板; 消费点经 getBlogImage 按 locale 解析)
+  '2027-calendar-printing-complete-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en.webp', ja: '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja.webp' },
+  'apparel-clothing-tag-printing-guide': { 'zh-hk': '/images/v26/greeting-cards/premium/zh-hk/hero.webp', en: '/images/v26/greeting-cards/premium/en/hero.webp', ja: '/images/v26/greeting-cards/premium/ja/hero.webp' },
+  'certificate-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-1.webp', en: '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-1.webp', ja: '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-1.webp' },
+  'childrens-picture-book-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-hardcover-books-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja.webp' },
+  'christmas-card-printing-2026': { 'zh-hk': '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-hero.webp', en: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-hero.webp', ja: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-hero.webp' },
+  'cny-2027-red-packet-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-en.webp', ja: '/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-ja.webp' },
+  'comiket-printing-prep-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp', en: '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-1.webp', ja: '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-1.webp' },
+  'corporate-holiday-cards-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-hero.webp', en: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-hero.webp', ja: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-hero.webp' },
+  'folded-leaflet-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-1.webp', en: '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-en-1.webp', ja: '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-1.webp' },
+  'new-year-card-printing-2027-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-zh-hk-hero.webp', en: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-en-hero.webp', ja: '/images/products/seedream-webp/zprintpro-place-cards-wedding-place-cards-ja-hero.webp' },
+  'packaging-box-price-2026': { 'zh-hk': '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-en.webp', ja: '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-ja.webp' },
+  'photo-book-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-hardcover-books-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja.webp' },
+  'roll-up-banner-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-en.webp', ja: '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-ja.webp' },
+  'school-exercise-book-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja.webp' },
+  'self-publishing-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja.webp' },
+  'textbook-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja.webp' },
+  'thick-card-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-1.webp', en: '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-1.webp', ja: '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-1.webp' },
+  'zine-small-batch-booklet-printing-guide': { 'zh-hk': '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-zh-hk.webp', en: '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en.webp', ja: '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja.webp' },
 };
+
+/**
+ * 2026-10-12 Batch B: 统一解析 (K3「最接近 SKU 首图」拍板落地)
+ * 值 = string → 三语同图 (M3 旧 89 条); 值 = Record<locale,string> → 按 locale 取 SKU 首图, 缺省回落 zh-hk。
+ * 全部 6 消费点 (Header 下拉 / blog 列表 / 详情 hero / 首页印刷知識 / nav / JSON-LD / og) 必经此口。
+ */
+export function getBlogImage(slug: string, locale: string): string {
+  const v = blogM3Images[slug];
+  if (!v) return '';
+  if (typeof v === 'string') return v;
+  return v[locale] || v['zh-hk'] || '';
+}

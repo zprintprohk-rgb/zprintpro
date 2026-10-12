@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { blogM3Images } from '@/data/blog-m3-images';
+import { getBlogImage } from '@/data/blog-m3-images';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, Mail, ShoppingCart, ChevronDown } from 'lucide-react';
@@ -463,7 +463,7 @@ export function Header({ locale }: HeaderProps) {
                             {/* 2026-09-12: 图片框尺寸对齐「热门产品」分类下拉 (同用 flex-1 自适应高度, 去掉固定 h-[120px]);
                                 文字区 h-[60px] 与分类下拉一致, 保证两个下拉图片尺寸逐像素相同 */}
                             <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                              <Image src={blogM3Images[slug] || `/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
+                              <Image src={getBlogImage(slug, locale) || `/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
                             </div>
                             <div className="pt-2 h-[60px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>

@@ -5,8 +5,8 @@ import BlogContent from './BlogContent';
 import blogContentsZhHk from '@/data/blog-data/zh-hk.json';
 import blogContentsEn from '@/data/blog-data/en.json';
 import blogContentsJa from '@/data/blog-data/ja.json';
-// 2026-09-11 老板指令: blog 照片全用 M3 模型生成图 (src/data/blog-m3-images.ts, 由 build-blog-m3-images.ts 生成, 三语同图)
-import { blogM3Images } from '@/data/blog-m3-images';
+// 2026-09-11 老板指令: blog 照片全用 M3 模型生成图 (src/data/blog-m3-images.ts, 由 build-blog-m3-images.ts 生成)
+// 2026-10-12 Batch B: 图片解析内聚到 BlogContent (getBlogImage, per-locale SKU 首图), 本层不再透传
 
 interface BlogPageProps {
   params: { locale: string };
@@ -89,7 +89,6 @@ export default function BlogPage({ params }: BlogPageProps) {
   for (const slug of Object.keys(contents)) {
     readTimes[slug] = computeReadMinutes(locale, contents[slug]?.content || '');
   }
-  // 2026-09-11 老板指令: 每篇 blog 的 M3 图 (静态映射, 三语共用同一张物理图)
-  const blogImages: Record<string, string> = blogM3Images;
-  return <BlogContent locale={locale} readTimes={readTimes} blogImages={blogImages} />;
+  // 2026-10-12 Batch B: 图片解析内聚至 BlogContent.getBlogImage(per-locale)
+  return <BlogContent locale={locale} readTimes={readTimes} />;
 }
