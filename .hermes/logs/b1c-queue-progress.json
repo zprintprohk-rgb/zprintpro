@@ -1,0 +1,29 @@
+{
+  "schema": "b1c-queue-progress/v1",
+  "updated_at": "2026-10-12T09:05:00+08:00",
+  "updated_by": "human-session (K3 2026-10-12 拍板「做」)",
+  "clusters": [
+    {
+      "order": 1,
+      "cluster": "stickers-5-siblings",
+      "slugs": ["waterproof-stickers", "transparent-stickers", "foil-stickers", "security-stickers", "fluorescent-stickers"],
+      "status": "DONE",
+      "claimed_by": "human-session",
+      "claimed_at": "2026-10-12T08:30:00+08:00",
+      "completed_at": "2026-10-12T09:05:00+08:00",
+      "ssot": "docs/2026-10-12-b1c-cluster1-stickers-rewrite-checklist.md",
+      "verdict": {
+        "slots_rewritten": "15 (5 slug × 3 locale: body 全量 + desc/h1/alt/title量词)",
+        "products_faqSchema": "5 槽差异化 (9 槽同源指纹拆弹本簇部分)",
+        "transparent_desc_fix": "en/ja 简体『适配行业』清毒 2 处",
+        "similarity_before": "zh-hk 0.955-0.959 / en 0.98 (transparent↔foil) / ja 0.957+",
+        "similarity_after": {"zh-hk_max": 0.217, "en_max": 0.221, "ja_max": 0.183},
+        "similarity_gate": "PASS (红线 <60%, 目标 ≤55%, 实测 ≤0.221)",
+        "guards": "tsc 54=54 / title-v5 15槽 0 HARD / detox 0 / gsc-leak 0 / brand A类 0 / encoding PASS",
+        "crawl_stimulus": "sitemap lastmod 实更 ×6 + IndexNow 15 URL 200",
+        "evidence": ".hermes/analysis/b1c-cluster1-similarity-2026-10-12.json"
+      },
+      "note": "车道读到本记录即跳过簇 1，直接消费簇 2 (red-packets)"
+    }
+  ]
+}
