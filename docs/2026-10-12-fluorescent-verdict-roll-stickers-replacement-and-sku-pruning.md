@@ -1,6 +1,6 @@
 # 荧光贴纸裁决 · 卷裝貼紙新建 · 全局无用 SKU 处置方案
 
-> **状态**: 研究完毕，待 K3 拍板执行（4 项决策见文末）
+> **状态**: ✅ 手术完成（commit `f9935e4b` 本地待 push）· ⛔ 唯一阻塞 = seedream 11 图（Ark 账户欠费）
 > **日期**: 2026-10-12 · 执行层: deepseek hermes 人手会话
 > **触发**: K3 指令「把荧光贴纸替换成卷裝貼紙……深度思考理解问题，荧光贴纸是没有看到一个实际搜索依据，穷尽100%能力分析研究后给到解决方案，同时也一并全局思考现有SKU明显无用的SKU处置方案」
 
@@ -134,12 +134,37 @@ GSC 28d 网页曝光（`.hermes/analysis/gsc-product-page-imps-28d.json`）：
 
 ---
 
-## 四、待 K3 拍板（4 项）
+## 四、执行结果（2026-10-12 13:02 commit f9935e4b，25 文件）
 
-1. **roll-stickers basePrice 展示锚**：`HK$0.20起/張`（3000 档单价，同 waterproof 惯例）还是 `HK$5.50/張`（10 档实价）？——建议前者（惯例+低钩子），标题另一处写 10 張起。
-2. **图片**：K3 供厂拍 vs seedream AI 生（阻塞 PDP 上线）。
-3. **Tier 1 退役名单**（8 项 301 收拢）批准？
-4. **荧光 301 → roll-stickers**（而非 410）确认？
+K3 四项拍板全批（HK$0.20 起 / seedream AI 生图 / Tier1 全名单 / 301→roll-stickers）。已落地：
+
+| 系统 | 动作 | 验证 |
+|---|---|---|
+| gen-price-data.mjs | +`map['roll-stickers']`（defaultConfigIndex=4，锚定尊重修正 + sheets 单位） | 20 slug 断言过，anchor HK$0.20/10張整批 HK$55 ✓ |
+| pricing.ts | 荧光键→roll-stickers（en 0.03-0.71 / ja 4-110）；postcard-set/eco-tote-bag 锚删 | — |
+| products.ts | 删 9 条目 + 新建 ST-010 roll-stickers（全真值字段 + variables 六档） | tsc 54 基线 ✓ |
+| CSV + regen | 删 9 行 + roll 行 31 列；regen --apply 五断言 PASS、二次跑完全幂等 | 0 漂移 ✓ |
+| sku-seo-data.ts | roll 块 body ×3 直写（卷裝決策頁 + fruit-food/waterproof 內鏈）；删 9 块 | — |
+| title 门童 | 初版 en 70 / ja 62 当量超阻断 → 修正 en 57 / ja 56 / zh 54 | HARD 11→8（余 8 全存量）✓ |
+| middleware.ts | QUOTE 映射重指 + 新增 RETIRED_PRODUCT_REDIRECTS 九键 + 处理器（优先级 2.65） | 直接 /product/ 旧 URL 301 ✓ |
+| QuoteRedirect.tsx | 荧光键重指 roll-stickers | — |
+| products-content / policy / image-alt-map / scenario-links / DoujinSKU | 荧光块删；policy 键 swap；2 块删；2 场景改指 doujinshi-printing；6 卡删 | — |
+| SkuSeoBody.tsx | renderLine 改 parseInlineLinks 組件化（SOP-10 #5），废 dangerouslySetInnerHTML | **bold** 行为保留 ✓ |
+| blog-data ×3 | 91→83 计数修正（8/7/7 处） | — |
+| sitemap ×4 + image + content | 全量 regen；IndexNow 3 locale 随脚本已 ping | roll 在列、9 退役 0 残留 ✓ |
+| 相似度 | roll body vs 8 贴纸兄弟 8-gram Jaccard | max 0.104（簇1 门槛 0.35）✓ |
+| gsc-leak / brand / encoding 门童 | 全绿 | ✓ |
+
+### 遗留（图齐后 5 分钟收口）
+1. seedream 11 张图：`zprintpro-stickers-roll-stickers-{zh-hk,en,ja}-{1..4}.webp`（zh 3 张）
+2. 图齐 → 复跑 image-sitemap → commit → push（§0.25 窗口）→ curl 探针（roll 200 / fluorescent 301 → roll / Tier1 301）→ GSC 手动索引 roll 三语
+3. 探针验收后释放 SESSION_LOCK
+
+### 阻塞说明（§0.24 分级：⏳ 已排期，待 K3 真人动作）
+- **Ark API 实测 403 `AccountOverdueError`（火山引擎账户欠费）** — 生图 key 本身有效，账户层面的账单问题需 K3 处理
+- **K3 二选一**：① 火山引擎充值 → 我重跑 `.hermes/_roll_images.py`（约 5 分钟出 11 张）；② 任意途径（seedream 网页版/厂拍/供应商图）供 11 张源图丢 `.hermes/_roll_raw/`（命名 `roll_zh-hk_1.png` 等）→ 我跑 `.hermes/_roll_convert.py` 一键转码落盘
+
+## 五、原研究正文（拍板依据存档）
 
 ### 数据来源
 - GSC 28d 三站点 xlsx（2026-10-09 档）网页/查询 sheet → `.hermes/analysis/gsc-product-page-imps-28d.json`、`sticker-family-gsc-28d.txt`、`sticker-terms-gsc-28d.txt`

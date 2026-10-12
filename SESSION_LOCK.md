@@ -1,11 +1,11 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: 🟡 **挂起待 K3（图片阻塞）** — 2026-10-12 13:0x 人手会话（deepseek hermes）：
-> **已完成**: 荧光→卷裝替换 + Tier1 八 SKU 退役 **全部代码/SEO/价格/站点图/重定向手术完成**（tsc 54 基线、门童 title/gsc-leak/brand 全绿、regen 幂等、相似度 max 0.104）
-> **唯一阻塞**: 火山引擎 Ark 账户欠费（AccountOverdueError），seedream 11 张图无法生成
-> **待 K3 二选一**: ① 充值火山引擎 → 我重跑 `.hermes/_roll_images.py`；② 任意途径供 11 张源图丢 `.hermes/_roll_raw/`（命名 roll_{zh-hk|en|ja}_{1..4}.png）→ 我跑 `.hermes/_roll_convert.py` 一键落盘
-> **图齐后动作**: 复跑 sitemap 图链 → commit + push（§0.25 窗口）→ IndexNow/GSC 索引 → 探针 → 释放锁
-> **写入范围**: （同下手术清单，已全部落盘未 push）
+> **当前状态**: 🔴 **撞墙（K3 真人动作）** — 2026-10-12 15:2x 人手会话（deepseek hermes）：
+> **已完成**: 荧光→卷裝替换 + Tier1 八 SKU 退役 **全部代码/SEO/价格/站点图/重定向手术完成并已本地 commit f9935e4b**（tsc 54 基线、门童全绿、regen 幂等、相似度 max 0.104、sitemap+IndexNow 已发）
+> **阻塞证据链**（Ark API 实测）：新 key ark-18a3e74b（账户 2122227803，充 2.88 元）认证分钟级 200/401 抖动 → 13:4x 起**连续 90 分钟全 401**（免费坏模型探针每 20s 一测零窗口，猎窗任务 pwsh-214 日志为证）；旧 key（账户 2130891174）持久 AccountOverdueError。两账户均不可用。
+> **诊断消耗 0.60 元**（5 张试验图 200 时段扣费），额度余 2.28 元。
+> **待 K3 三选一**: ① 控制台**新建 key**（创建后勿再编辑）→ 我改一行脚本 5 分钟出 11 张；② 查 ark-18a3e74b 是否被禁用/账户风控提工单；③ 网页版供图丢 `.hermes/_roll_raw/` → `_roll_convert.py` 一键落盘
+> **图齐后动作**: push（§0.25 窗口）→ 探针（roll 200 / 9×301）→ GSC 索引 → 释锁
 >
 > ---
 >
