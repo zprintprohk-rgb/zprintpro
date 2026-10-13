@@ -17,6 +17,7 @@ import {
   getProductDisplayTitle,
   getProductsByCategory,
   getCategoryName,
+  getProductImageAlt,
 } from '@/data/products';
 import { getProductImages, getProductMainImage } from '@/lib/product-image';
 import { getDisplayAnchor, getPriceUnitWord } from '@/lib/pricing';
@@ -416,7 +417,9 @@ export function ProductPageV9({
 
       {/* ═══ 藍本 .hero 首屏: 左相冊 + 右決策區 ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 pt-2 pb-12 grid gap-11 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
-        <GalleryV9 images={galleryImages} alt={productTitle} />
+        {/* 2026-10-13 利是封批修复: v9 线上渲染路径原来 alt=productTitle (短名), 绕过 getProductImageAlt
+            全链 GEO alt (CSV→sku-seo-data→isValidImageAlt)。改接真链, productTitle 仅作兜底。 */}
+        <GalleryV9 images={galleryImages} alt={getProductImageAlt(product, locale) || productTitle} />
 
         <div>
           {/* 即日徽章（沿用現有 RushDeliveryBadge 文案） */}
