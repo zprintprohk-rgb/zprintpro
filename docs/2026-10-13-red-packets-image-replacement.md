@@ -19,4 +19,4 @@
 tsc 54=基线 / brand A 类 0 / EXIF 字节级 72/72 + 独立抽验 16/16 / 毒串 0（ja 零紅包）/ sitemap 1066→1068 图。
 
 ## 挂账
-- CSV 图片Alt 列利是封族污染（en/ja V22 疤痕 + ZH 500 MOQ 假值 4 条）——若未来 regen 管线回写 CSV→ts 会把好 alt 覆盖回污染值，建议 Wave-2 清 CSV（走源头修正再 regen，per SOP-5）。
+- ~~CSV 图片Alt 列利是封族污染~~ ✅ **当批已清**：CSV 6 行 × 3 列按 GEO 公式修正 → 官方 regen（csv-to-sku-seo.mjs --apply，断言 A-E 全过、0 漂移）→ sku-seo-data.ts imageAlt 落地 → PDP 主图 alt 全链路生效。三源对齐：CSV = ts 渲染 = products.ts seoImages.alt = EXIF。

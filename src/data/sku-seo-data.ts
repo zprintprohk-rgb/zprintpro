@@ -1242,9 +1242,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | 智印港",
-      "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro",
-      "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro"
+      "zh-hk": "利是封印刷 / 燙金 / 春節紅包 | 香港燙金利是封印刷 120g紅色紙張 燙金 100個起印 | 智印港",
+      "en": "Red Packet Printing / Gold Foil / Lunar New Year | Foil Red Packets 120gsm, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / 箔押し | 箔押しポチ袋 120g・100枚から | ZprintPro"
     }
   },
   "embossed-red-packets": {
@@ -1278,9 +1278,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | 智印港",
-      "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro",
-      "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro"
+      "zh-hk": "利是封印刷 / 浮雕 / 春節紅包 | 香港浮雕利是封印刷 150g紅色紙張 浮雕 100個起印 | 智印港",
+      "en": "Red Packet Printing / Embossed / Lunar New Year | Embossed Red Packets 150gsm, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / エンボス | エンボスポチ袋 150g・100枚から | ZprintPro"
     }
   },
   "custom-red-packets": {
@@ -1314,9 +1314,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom Red Packets for holiday cards, wedding invitations — ZprintPro",
-      "ja": "オリジナルポチ袋 / 箔押し | 香港のオリジナルポチ袋印刷 | ZprintPro"
+      "zh-hk": "利是封印刷 / 定製 / 春節紅包 | 香港定製利是封印刷 120g–150g紅色紙張 100個起印 | 智印港",
+      "en": "Red Packet Printing / Custom / Lunar New Year | Custom Red Packets 120–150gsm, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / オリジナル | オリジナルポチ袋 120g–150g・100枚から | ZprintPro"
     }
   },
   "cartoon-red-packets": {
@@ -1350,9 +1350,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom cartoon red packets with gold foil print, premium materials — ZprintPro",
-      "ja": "キャラクターポチ袋 / 箔押し | 香港のキャラクターポチ袋印刷 | ZprintPro"
+      "zh-hk": "利是封印刷 / 卡通 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 彩色 100個起印 | 智印港",
+      "en": "Red Packet Printing / Cartoon / Lunar New Year | Cartoon Red Packets 120gsm Art Paper, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / キャラクター | キャラクターポチ袋 120gコート紙・100枚から | ZprintPro"
     }
   },
   "eco-red-packets": {
@@ -1386,9 +1386,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom eco red packets with gold foil print, premium materials — ZprintPro",
-      "ja": "エコポチ袋 / 箔押し | 香港のエコポチ袋印刷 | ZprintPro"
+      "zh-hk": "利是封印刷 / 環保 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜 100個起印 | 智印港",
+      "en": "Red Packet Printing / Eco / Lunar New Year | Eco Red Packets FSC Recycled Paper Unlaminated, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / エコ | エコポチ袋 FSC再生紙 無PP加工・100枚から | ZprintPro"
     }
   },
   "large-red-packets": {
@@ -1422,9 +1422,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom large red packets with gold foil print, premium materials — ZprintPro",
-      "ja": "大判ポチ袋 / 箔押し | 香港の大判ポチ袋印刷 | ZprintPro"
+      "zh-hk": "利是封印刷 / 大號 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 100個起印 | 智印港",
+      "en": "Red Packet Printing / Large Size / Lunar New Year | Large Red Packets 150–200gsm, 100 pcs MOQ | ZprintPro",
+      "ja": "ポチ袋印刷 / 旧正月 / 大判 | 大判ポチ袋 150g–200g・100枚から | ZprintPro"
     }
   },
   "wall-calendars": {

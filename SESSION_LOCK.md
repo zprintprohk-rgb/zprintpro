@@ -5,7 +5,7 @@
 > **本批（刚释放）**: 利是封 6 SKU 换血 ✅ commit 随本批 push（探针见下）：
 > K3 指令「利是封分类 SKU 图片用新的替换，文件名/alt 符合 SEO+AEO+GEO 最优」。72 文件 v28_5 换血 + EXIF alt 重注（与 products.ts seoAlt 逐字一致）+ 18 alt 升级 GEO 公式（品牌补齐/ja 紅包→ポチ袋/MOQ 100 真值）+ cartoon ja 补 2 视图 + legacy 修指 ×6。
 > SSoT `docs/2026-10-13-red-packets-image-replacement.md`。验证：EXIF 字节级 72/72 + 独立抽验 16/16 + 毒串 0 + tsc 54=54 + brand A 0 + sitemap 1068。
-> Wave-2 挂账：CSV 图片Alt 列利是封族污染（V22 疤痕 + 500 MOQ 假值）待源头清理。
+> Wave-2 挂账：CSV 图片Alt 列利是封族污染 ✅ 当批已清（CSV 源头修正 + 官方 regen，三源对齐：CSV=ts 渲染=seoImages.alt=EXIF）。
 > **本锁释放，后续会话可自由接管。**
 >
 > **上一批（已上线）**: Batch B ✅ `4c4cacbb`（探针 **22/22 PASS** 含终态验证）：
