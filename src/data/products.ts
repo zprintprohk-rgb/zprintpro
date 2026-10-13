@@ -3744,7 +3744,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/foil-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-foil-red-packets-zh-hk.webp',
@@ -3768,9 +3768,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-foil-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-foil-red-packets-en.webp', ja: 'zprintpro-red-packets-foil-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港燙金利是封印刷 120g紅色紙張 燙金',
-      en: 'Red Packet Printing / Foil / CNY | Foil Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | 箔押しポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港燙金利是封印刷 120g紅色紙張 燙金 100個起印 | 智印港',
+      en: 'Red Packet Printing / Gold Foil / Lunar New Year | Foil Red Packets 120gsm, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / 箔押し | 箔押しポチ袋 120g・100枚から | ZprintPro'
     },
   },
   
@@ -3817,7 +3817,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/embossed-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-embossed-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-embossed-red-packets-zh-hk.webp',
@@ -3863,9 +3863,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-embossed-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-embossed-red-packets-en.webp', ja: 'zprintpro-red-packets-embossed-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港浮雕利是封印刷 150g紅色紙張 浮雕',
-      en: 'Red Packet Printing / Foil / CNY | Embossed Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | エンボスポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 浮雕 / 春節紅包 | 香港浮雕利是封印刷 150g紅色紙張 浮雕 100個起印 | 智印港',
+      en: 'Red Packet Printing / Embossed / Lunar New Year | Embossed Red Packets 150gsm, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / エンボス | エンボスポチ袋 150g・100枚から | ZprintPro'
     },
   },
   
@@ -3910,7 +3910,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/custom-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-custom-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-custom-red-packets-zh-hk.webp',
@@ -3956,9 +3956,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-custom-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-custom-red-packets-en.webp', ja: 'zprintpro-red-packets-custom-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港定製利是封印刷 120g–150g紅色 燙金',
-      en: 'Red Packet Printing / Foil / CNY | Custom Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | オリジナルポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 定製 / 春節紅包 | 香港定製利是封印刷 120g–150g紅色紙張 100個起印 | 智印港',
+      en: 'Red Packet Printing / Custom / Lunar New Year | Custom Red Packets 120–150gsm, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / オリジナル | オリジナルポチ袋 120g–150g・100枚から | ZprintPro'
     },
   },
   
@@ -4003,7 +4003,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/cartoon-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-zh-hk.webp',
@@ -4020,6 +4020,8 @@ export const products: Product[] = [
     'ja': [
       '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja.webp',
       '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-red-packets-cartoon-red-packets-ja-4.webp',
     ],
   },
     variables: {
@@ -4047,9 +4049,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-cartoon-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-cartoon-red-packets-en.webp', ja: 'zprintpro-red-packets-cartoon-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 燙金',
-      en: 'Red Packet Printing / Foil / CNY | Cartoon Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | キャラクターポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 卡通 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 彩色 100個起印 | 智印港',
+      en: 'Red Packet Printing / Cartoon / Lunar New Year | Cartoon Red Packets 120gsm Art Paper, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / キャラクター | キャラクターポチ袋 120gコート紙・100枚から | ZprintPro'
     },
   },
   
@@ -4094,7 +4096,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/eco-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-eco-red-packets-zh-hk.webp',
@@ -4140,9 +4142,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-eco-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-eco-red-packets-en.webp', ja: 'zprintpro-red-packets-eco-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜（環保）',
-      en: 'Red Packet Printing / Foil / CNY | Eco Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | エコポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 環保 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜 100個起印 | 智印港',
+      en: 'Red Packet Printing / Eco / Lunar New Year | Eco Red Packets FSC Recycled Paper Unlaminated, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / エコ | エコポチ袋 FSC再生紙 無PP加工・100枚から | ZprintPro'
     },
   },
   
@@ -4187,7 +4189,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/large-red-packets.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk.webp'],
   imagesByLocale: {
     'zh-hk': [
       '/images/products/seedream-webp/zprintpro-red-packets-large-red-packets-zh-hk.webp',
@@ -4233,9 +4235,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-large-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-large-red-packets-en.webp', ja: 'zprintpro-red-packets-large-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 燙金',
-      en: 'Red Packet Printing / Foil / CNY | Large Red Packets | Professional Red Packets Online',
-      ja: '紅包印刷 / 旧正月 / 箔押し | 大判ポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 大號 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 100個起印 | 智印港',
+      en: 'Red Packet Printing / Large Size / Lunar New Year | Large Red Packets 150–200gsm, 100 pcs MOQ | ZprintPro',
+      ja: 'ポチ袋印刷 / 旧正月 / 大判 | 大判ポチ袋 150g–200g・100枚から | ZprintPro'
     },
   },
   

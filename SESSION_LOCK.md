@@ -1,8 +1,14 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放** — 2026-10-13 07:5x Batch B 会话（deepseek hermes）释放：
+> **当前状态**: ⚪ **已释放** — 2026-10-13 17:1x 利是封换血会话（deepseek hermes）释放：
 
-> **上一批（刚释放）**: Batch B ✅ 已上线 `4c4cacbb`（探针 **22/22 PASS** 含终态验证）：
+> **本批（刚释放）**: 利是封 6 SKU 换血 ✅ commit 随本批 push（探针见下）：
+> K3 指令「利是封分类 SKU 图片用新的替换，文件名/alt 符合 SEO+AEO+GEO 最优」。72 文件 v28_5 换血 + EXIF alt 重注（与 products.ts seoAlt 逐字一致）+ 18 alt 升级 GEO 公式（品牌补齐/ja 紅包→ポチ袋/MOQ 100 真值）+ cartoon ja 补 2 视图 + legacy 修指 ×6。
+> SSoT `docs/2026-10-13-red-packets-image-replacement.md`。验证：EXIF 字节级 72/72 + 独立抽验 16/16 + 毒串 0 + tsc 54=54 + brand A 0 + sitemap 1068。
+> Wave-2 挂账：CSV 图片Alt 列利是封族污染（V22 疤痕 + 500 MOQ 假值）待源头清理。
+> **本锁释放，后续会话可自由接管。**
+>
+> **上一批（已上线）**: Batch B ✅ `4c4cacbb`（探针 **22/22 PASS** 含终态验证）：
 > K3 指令「v28_5_webp 图库 → 补齐三语无图 SKU + blog 缺图补 SKU 首图」+ Tier1 301 止血拍板①。
 > 交付 = ① 36 图入库（WI-001/WI-003/PC-001 → seedream-webp）② 两零图婚礼条目补 imagesByLocale+seoImages（per-locale alt GEO 公式）+ 11 条悬空 -5 死引用摘除 + roll legacy 修指 ③ premium 误伤数组还原（当日手术误靶已修复，六兄弟断言无损）④ blog 21 篇补最近 SKU per-locale 首图 + getBlogImage 统一口 + 6 消费点改造 ⑤ **og:image 修复**（原 /images/articles/{slug}.jpg ~95% 404 → 与 hero 同源 1200×1200）⑥ **Tier1 八链 301 改指真 PDP**（7 条曾坠 404：卡类→premium-greeting-cards / 婚宴→foil-wedding-invitations，K3 17:5x 拍板方案①）⑦ blog 计数 83→82（价格报告博文 ×3 语）。门检 tsc 54=54 / brand A 0 / gsc-leak 0 / encoding ✓ / image sitemap 82 产品 1066 图。
 > SSoT `docs/2026-10-12-batch-b-sku-image-completion-and-tier1-301-hotfix.md`。探针 `.hermes/_batchb_probes.py`（**带终态验证**，修复昨日探针只验 301 状态的设计缺口）。
