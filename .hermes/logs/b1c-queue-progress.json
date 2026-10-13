@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-12T09:05:00+08:00",
-  "updated_by": "human-session (K3 2026-10-12 拍板「做」)",
+  "updated_at": "2026-10-13T21:40:00+08:00",
+  "updated_by": "ZP-daily-content lane (2026-10-13 21:17 run)",
   "clusters": [
     {
       "order": 1,
@@ -24,6 +24,25 @@
         "evidence": ".hermes/analysis/b1c-cluster1-similarity-2026-10-12.json"
       },
       "note": "车道读到本记录即跳过簇 1，直接消费簇 2 (red-packets)"
+    },
+    {
+      "order": 2,
+      "cluster": "red-packets-family",
+      "slugs": ["foil-red-packets", "embossed-red-packets", "custom-red-packets", "cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+      "status": "IN_PROGRESS",
+      "claimed_by": "ZP-daily-content lane",
+      "claimed_at": "2026-10-13T21:17:00+08:00",
+      "completed_at": null,
+      "pages_done": ["embossed-red-packets"],
+      "pages_pending": ["foil-red-packets (anchor, 轻改)", "custom-red-packets", "cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+      "verdict": {
+        "slots_rewritten": "embossed-red-packets × 3 locale: description 全改写 + h1 全改写 + body 各 +1 差异化决策段 (共 9 槽); products.ts faqSchema 独立化 1 槽 + descriptionEn/descriptionJa 简体『适配行业』清毒 2 处",
+        "root_cause_reroute": "本簇实测重复不在正文 (foil/embossed 三语正文互异), 而在 description 层 (6 SKU zh/en/ja description 除产品名外逐字相同) 与 products.ts faqSchema 层 (6 SKU 共用同一份 4 问, 且含 MOQ 500 与 minQuantity=100 矛盾)",
+        "real_value_anchor": "src/data/products.ts L3791-3819 (embossed: 150g 紅色紙張 / 浮雕 0.3-0.5mm / 90×170mm / HK$3.00-9.50 / US$0.92 / ¥129 / minQuantity 100 / weight_score 92)",
+        "guards": "lane 沙盒 pwsh 禁用无 node -> 机器门禁 (tsc / #16 gsc-leak / #20 meta-desc / #27 title-v5 / #15 blog-data / #29 detox) 由 host wrapper pre-commit 判定; 车道侧 grep 等价自检 0 命中 (见 2026-10-13 报告 §5)",
+        "sop5_deviation": "sku-seo-data.ts description/h1 属 CSV 派生域; 本轮无 node 无法跑 scripts/csv-to-sku-seo.mjs regen -> 已按导出产物镜像手改并在报告声明, 待 node 可用会话回写 CSV 源头 (zprintpro-sku-seo-data.csv) 并复跑生成器对账"
+      },
+      "note": "下一轮车道消费 custom-red-packets (或先补 foil 锚页轻改); body 层无近重复, 优先继续拆 description + faqSchema 同源指纹"
     }
   ]
 }

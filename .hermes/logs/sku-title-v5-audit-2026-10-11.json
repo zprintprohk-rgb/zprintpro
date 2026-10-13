@@ -1,7 +1,7 @@
 {
   "date": "2026-10-11",
   "guard": "#27 title-v5-guard",
-  "mode": "commit",
+  "mode": "audit",
   "rule": "v5 全规则机检 (SSoT docs/zprintpro-sku-title-rule-v5-2026-09-23.md)",
   "slotCount": 276,
   "frozen": [

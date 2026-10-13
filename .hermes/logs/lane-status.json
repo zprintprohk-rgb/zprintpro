@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-11T22:43:03.640Z",
-  "generated_local": "2026-10-12 06:43",
+  "generated_at": "2026-10-12T19:14:05.040Z",
+  "generated_local": "2026-10-13 03:14",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
   "bus_file": ".hermes/logs/lane-runs.jsonl",
-  "bus_records": 27,
+  "bus_records": 28,
   "bus_records_test_excluded": 0,
-  "window_days": 8,
+  "window_days": 3,
   "state_machine": {
     "pending": [
       "running",
@@ -51,19 +51,11 @@
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
-      "problem": "ZP-weekly-meta 2026-10-09 -> MISSING",
-      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
-    },
-    {
       "problem": "ZP-weekly-meta scheduler LastTaskResult=2147946720",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
       "problem": "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
-    },
-    {
-      "problem": "ZP-k3-review scheduler LastTaskResult=2147946720",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     }
   ],
@@ -77,9 +69,9 @@
       "scheduler": {
         "Name": "ZP-daily-content",
         "State": "Ready",
-        "Last": "2026-10-11 23:41:38",
+        "Last": "2026-10-12 23:48:09",
         "Result": 2147946720,
-        "Next": "2026-10-12 21:17:00"
+        "Next": "2026-10-13 21:17:00"
       },
       "lastReportFile": {
         "file": "2026-10-10-ZP-daily-content.md",
@@ -125,123 +117,6 @@
       },
       "days": [
         {
-          "day": "2026-10-05",
-          "expected": "21:17",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-06",
-          "expected": "21:17",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-07",
-          "expected": "21:17",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-07-ZP-daily-content.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "b9cef1f798f74fe9"
-          ]
-        },
-        {
-          "day": "2026-10-08",
-          "expected": "21:17",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-09",
-          "expected": "21:17",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-09-ZP-daily-content.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "6dd8f2cb44bec527"
-          ]
-        },
-        {
-          "day": "2026-10-10",
-          "expected": "21:17",
-          "status": "STALE",
-          "state": "quarantined",
-          "recovery_plan": {
-            "action": "modify_payload",
-            "reason": "pre-commit guard 拦下 src commit -> 必须先让改动过对应断言",
-            "evidence": "node scripts/guards/sop10-guard.js",
-            "retry_after_days": null
-          },
-          "notes": [
-            "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
-          ],
-          "exit": null,
-          "report": "2026-10-10-ZP-daily-content.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "de00e828df5527a7",
-            "63da4450194bcf23"
-          ]
-        },
-        {
           "day": "2026-10-11",
           "expected": "21:17",
           "status": "MISSING",
@@ -262,6 +137,25 @@
         },
         {
           "day": "2026-10-12",
+          "expected": "21:17",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-13",
           "expected": "21:17",
           "status": "PENDING",
           "state": "pending",
@@ -296,9 +190,9 @@
       "scheduler": {
         "Name": "ZP-gsc-feedback",
         "State": "Ready",
-        "Last": "2026-10-11 23:41:38",
+        "Last": "2026-10-12 23:48:09",
         "Result": 2147946720,
-        "Next": "2026-10-12 22:43:00"
+        "Next": "2026-10-13 22:43:00"
       },
       "lastReportFile": {
         "file": "2026-10-10-ZP-gsc-feedback.md",
@@ -338,121 +232,6 @@
       },
       "days": [
         {
-          "day": "2026-10-05",
-          "expected": "22:43",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-06",
-          "expected": "22:43",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-06-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "6c8cff7c452774a2"
-          ]
-        },
-        {
-          "day": "2026-10-07",
-          "expected": "22:43",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-08",
-          "expected": "22:43",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-09",
-          "expected": "22:43",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-10",
-          "expected": "22:43",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-10-ZP-gsc-feedback.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "0cac684f36cffeff",
-            "89e1031bbefdc16d"
-          ]
-        },
-        {
           "day": "2026-10-11",
           "expected": "22:43",
           "status": "MISSING",
@@ -473,6 +252,25 @@
         },
         {
           "day": "2026-10-12",
+          "expected": "22:43",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-13",
           "expected": "22:43",
           "status": "PENDING",
           "state": "pending",
@@ -550,33 +348,13 @@
         "head": "c32931c8",
         "source": "lane-git-commit.py"
       },
-      "days": [
-        {
-          "day": "2026-10-09",
-          "expected": "23:07",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        }
-      ],
-      "verdict": "MISSING",
-      "state": "blocked",
+      "days": [],
+      "verdict": "UNKNOWN",
+      "state": "pending",
       "recovery_plan": {
         "action": "request_human",
-        "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-        "evidence": "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
+        "reason": "窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
+        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta",
         "retry_after_days": null
       }
     },
@@ -630,34 +408,12 @@
         "head": "7f9b92a9",
         "source": "lane-git-commit.py"
       },
-      "days": [
-        {
-          "day": "2026-10-10",
-          "expected": "05:37",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-10-ZP-blog-deepfix.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "e5038594dc97fb9f",
-            "e5038594dc97fb9f",
-            "37eaab37ee14ebaf"
-          ]
-        }
-      ],
-      "verdict": "OK",
-      "state": "completed",
+      "days": [],
+      "verdict": "UNKNOWN",
+      "state": "pending",
       "recovery_plan": {
         "action": "none",
-        "reason": "无异常",
+        "reason": "窗口内无应触发日",
         "evidence": null,
         "retry_after_days": null
       }
@@ -722,32 +478,32 @@
       "scheduler": {
         "Name": "ZP-k3-review",
         "State": "Ready",
-        "Last": "2026-10-11 08:39:10",
-        "Result": 2147946720,
-        "Next": "2026-10-12 07:10:00"
+        "Last": "2026-10-12 07:10:01",
+        "Result": 0,
+        "Next": "2026-10-13 07:10:00"
       },
       "lastReportFile": {
-        "file": "2026-10-10-ZP-k3-review.md",
-        "dateToken": "2026-10-10",
-        "mtime": "2026-10-09T23:13:10.678Z"
+        "file": "2026-10-12-ZP-k3-review.md",
+        "dateToken": "2026-10-12",
+        "mtime": "2026-10-11T23:13:30.457Z"
       },
       "lastWrapperRun": {
-        "start": "2026-10-10 07:10:01",
+        "start": "2026-10-12 07:10:01",
         "end": "0",
         "dshExit": 0,
         "wrapperExit": 0,
         "guardBlocked": false,
-        "commitOnly": false,
-        "runsTotal": 1,
+        "commitOnly": true,
+        "runsTotal": 2,
         "logFile": ".hermes/logs/cron-ZP-k3-review.log"
       },
       "lastRunRecord": {
-        "run_id": "ZP-k3-review-20261010T071345",
+        "run_id": "ZP-k3-review-20261012T071337",
         "lane": "ZP-k3-review",
         "trigger": "schtasks",
-        "fired_at": "2026-10-10 07:13:45",
-        "ended_at": "2026-10-10 07:13:45",
-        "idempotency_key": "1b26fad049ad4773",
+        "fired_at": "2026-10-12 07:13:37",
+        "ended_at": "2026-10-12 07:13:37",
+        "idempotency_key": "a0009387542c0500",
         "dsh_exit": null,
         "wrapper_exit": 0,
         "verdict": "OK",
@@ -756,128 +512,13 @@
         "guard": {
           "ok": true
         },
-        "report": ".hermes/logs/2026-10-10-ZP-k3-review.md",
+        "report": ".hermes/logs/2026-10-12-ZP-k3-review.md",
         "files": [],
-        "pushed": true,
-        "head": "fa567ad9",
+        "pushed": false,
+        "head": "3b60c845",
         "source": "lane-git-commit.py"
       },
       "days": [
-        {
-          "day": "2026-10-05",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-06",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-07",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-08",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-09",
-          "expected": "07:10",
-          "status": "MISSING",
-          "state": "blocked",
-          "recovery_plan": {
-            "action": "request_human",
-            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
-            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
-            "retry_after_days": null
-          },
-          "notes": [
-            "no wrapper log run-start and no bus record for this trigger"
-          ],
-          "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
-        },
-        {
-          "day": "2026-10-10",
-          "expected": "07:10",
-          "status": "OK",
-          "state": "completed",
-          "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
-            "retry_after_days": null
-          },
-          "notes": [],
-          "exit": null,
-          "report": "2026-10-10-ZP-k3-review.md",
-          "reportStrict": true,
-          "idempotency_keys": [
-            "416be6a67096c2f9",
-            "1b26fad049ad4773"
-          ]
-        },
         {
           "day": "2026-10-11",
           "expected": "07:10",
@@ -899,6 +540,25 @@
         },
         {
           "day": "2026-10-12",
+          "expected": "07:10",
+          "status": "OK",
+          "state": "completed",
+          "recovery_plan": {
+            "action": "none",
+            "reason": "无异常",
+            "evidence": null,
+            "retry_after_days": null
+          },
+          "notes": [],
+          "exit": null,
+          "report": "2026-10-12-ZP-k3-review.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "a0009387542c0500"
+          ]
+        },
+        {
+          "day": "2026-10-13",
           "expected": "07:10",
           "status": "PENDING",
           "state": "pending",
@@ -929,9 +589,9 @@
     "task": "ZP-cron-watchdog",
     "scheduler": {
       "Name": "ZP-cron-watchdog",
-      "State": "Running",
+      "State": "Ready",
       "Last": "2026-10-12 06:43:01",
-      "Result": 267009,
+      "Result": 1,
       "Next": "2026-10-13 06:43:00"
     }
   },
@@ -945,10 +605,8 @@
   "problems": [
     "ZP-daily-content scheduler LastTaskResult=2147946720",
     "ZP-gsc-feedback scheduler LastTaskResult=2147946720",
-    "ZP-weekly-meta 2026-10-09 -> MISSING",
     "ZP-weekly-meta scheduler LastTaskResult=2147946720",
-    "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-    "ZP-k3-review scheduler LastTaskResult=2147946720"
+    "ZP-monthly-matrix scheduler LastTaskResult=2147946720"
   ],
   "warnings": [
     "DUPLICATE_IDEMPOTENCY_KEY e5038594dc97fb9f: ZP-blog-deepfix-20261010T001710 与 ZP-blog-deepfix-20261010T004733 同日同目标重复处理"
