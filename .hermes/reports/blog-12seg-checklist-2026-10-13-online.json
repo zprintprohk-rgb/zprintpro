@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-13T10:17:48.550Z",
+ "generated_at": "2026-10-13T13:27:05.571Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2755,9 +2755,9 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189965",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/packaging-box-pricing-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",

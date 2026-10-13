@@ -52,3 +52,4 @@
 | 2026-10-10 07:13:45 | ZP-k3-review | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-10-ZP-k3-review.md` | NONE | ✅ push |
 | 2026-10-12 06:43:03 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | MISSING ZP-weekly-meta | OK ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | PENDING ZP-k3-review | — |
 | 2026-10-12 07:13:37 | ZP-k3-review | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-12-ZP-k3-review.md` | NONE | ⏳ commit(未 push) |
+| 2026-10-13 21:27:07 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-13-ZP-daily-content.md` | src/data/blog-data/zh-hk.json, src/data/products.ts, src/data/sku-seo-data.ts | ✅ push |
