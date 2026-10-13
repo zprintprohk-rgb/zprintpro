@@ -19,4 +19,10 @@
 tsc 54=基线 / brand A 类 0 / EXIF 字节级 72/72 + 独立抽验 16/16 / 毒串 0（ja 零紅包）/ sitemap 1066→1068 图。
 
 ## 挂账
-- ~~CSV 图片Alt 列利是封族污染~~ ✅ **当批已清**：CSV 6 行 × 3 列按 GEO 公式修正 → 官方 regen（csv-to-sku-seo.mjs --apply，断言 A-E 全过、0 漂移）→ sku-seo-data.ts imageAlt 落地 → PDP 主图 alt 全链路生效。三源对齐：CSV = ts 渲染 = products.ts seoImages.alt = EXIF。
+- ~~CSV 图片Alt 列利是封族污染~~ ✅ **当批已清**：CSV 6 行 × 3 列按 GEO 公式修正 → 官方 regen（csv-to-sku-seo.mjs --apply，断言 A-E 全过、0 漂移）→ sku-seo-data.ts imageAlt 落地。三源对齐：CSV = ts 渲染 = products.ts seoImages.alt = EXIF。
+
+## 重大根因追加（18:0x 实锤）
+- **PDP v9 线上渲染路径绕过 getProductImageAlt**：K3 2026-09-19 裁决后 v9 模板覆盖三语全 SKU，v9 的 `GalleryV9 alt={productTitle}`（短名）使 sku-seo imageAlt 全链长期不渲染（旧 ProductGallery 路径成死代码）。
+- 修复：`ProductPageV9.tsx` L420 改接 `getProductImageAlt(product, locale) || productTitle`（commit `607591dc`）。
+- 影响面 = **全站 PDP**：凡 sku-seo imageAlt 非空且过 isValidImageAlt 的 SKU（roll-stickers 等 Batch A 资产同批生效，已实测渲染 GEO 串），兜底链不变。
+- 教训固化：「数据已修正但页面不生效」排查必须先到**线上实际渲染组件**（v9 门控），不能只验数据层。本轮三连踩坑同源：audit11 假开口 → place-cards 错靶 → v9 旁路，均为「看的不是线上真路径」。
