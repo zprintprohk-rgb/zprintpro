@@ -452,8 +452,8 @@ const categorySeoData: Record<string, {
       // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
       // 2026-09-30 B1/D2 批: 头部词前置 (包裝盒訂製/custom packaging boxes/パッケージ印刷), 食品为细分钩子
       'zh-hk': '包裝盒訂製 100個起・食品紙盒/紙袋/防油卡 3D打稿 | 智印港',
-      en: 'Custom Packaging Boxes from $0.85 | Food-Safe Paper Box/Bag Printing, Made for USA | ZprintPro',
-      ja: 'パッケージ印刷 100個〜・食品用紙箱/紙袋 クラフト対応 | ZprintPro',
+      en: 'Packaging Boxes 100 MOQ $0.51 | Food-Safe | ZprintPro',
+      ja: 'パッケージ印刷 100個〜 ¥69〜 | 食品紙箱/紙袋 | ZprintPro',
     },
     keywords: {
       'zh-hk': '包裝盒訂製,紙盒訂製,彩盒訂製,禮盒訂製,結構設計,燙金包裝,小批量包裝,定制包裝,品牌包裝,電商包裝,化妝品包裝,食品包裝,茶葉包裝,電子產品包裝,食品包裝盒,食品包裝印刷,化妝品包裝盒,DHL全球',
@@ -462,9 +462,9 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '食品包裝印刷 / 包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認證紙，唔做膠袋）；亦可做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。小批量 100 個可接，急單優先排產。WhatsApp 30 秒即時報價。',
-      en: 'Custom packaging boxes from $0.85, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC, no plastic bags). Free 3D proof, DHL 2-4 day USA. Small batch 100 units accepted, rush orders prioritized.',
-      ja: 'パッケージ印刷 100 個から、¥120〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。小ロット 100 個から対応、特急注文優先。30 秒 AI 無料見積もり。',
+      'zh-hk': '食品包裝印刷 / 包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認証紙，唔做膠袋）；亦做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。WhatsApp 30 秒報價，ISO 9001。',
+      en: 'Custom packaging boxes from $0.51, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC). Free 3D proof in 6h, DHL 2-4 day global delivery.',
+      ja: 'パッケージ印刷 100 個から、¥69〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。',
     },
   },
 'posters': {
@@ -491,9 +491,9 @@ const categorySeoData: Record<string, {
       // 2026-08-26 §6 轨 1 + 智印港 40% CTR 公式 + 撞墙 = M3 自主立即做
       // 9 月中前纸袋衝首页 (GSC 8/24 紙袋印刷 pos 12.23/14.77 距首页 2-5 位)
       // 2026-08-26 K3 批 1: 注入「急單 18:00 截單」+ パール/珠光
-      'zh-hk': '牛皮紙袋訂製 100個起 + 牛皮/白卡 + 急單 18:00 截單 | HK$8起・免費設計 | 智印港',
-      en: 'Paper Bag Printing 100 MOQ + Kraft/White Card/Pearl + Rush 6PM Cut-off | from $1.84 + Free Design + Made for USA | ZprintPro',
-      ja: '紙袋印刷 100個〜 + クラフト/白カード/パール + 短納期 18:00 締切 | ¥240〜・無料デザイン・日本全国 | ZprintPro',
+      'zh-hk': '紙袋印刷 100個起 HK$3-8/個 | 牛皮白卡環保袋 | 智印港',
+      en: 'Paper Bags 100 MOQ $1.84 | Kraft & White Card | ZprintPro',
+      ja: '紙袋印刷 100個〜 ¥240〜 | クラフト/白カード | ZprintPro',
     },
     keywords: {
       'zh-hk': '紙袋印刷,紙袋訂製,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽,美妝護膚紙袋,婚慶紙袋,烘焙紙袋,DHL全球紙袋',
@@ -502,8 +502,8 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       // 2026-08-26 K3 §6 轨 1 CTR 修复: 起价前置 + 美妝護膚/餐廳外賣机会词 + DHL 全球 + 5 sharp hook (Free Shipping / Free Design / 100 MOQ / Made for USA / Free Proof)
-      'zh-hk': '紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$8 起/個,100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋,免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用,港九新界滿 HK$500 免費順豐速遞,DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價,ISO 9001 認證。',
-      en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft & white card bags with free design. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA.',
+      'zh-hk': '紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$3-8/個，100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天。WhatsApp 30 秒即時報價，ISO 9001。',
+      en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft, white card & gift bags. Free proof in 4h, free shipping $99+, DHL 2-4 day USA.',
       ja: '紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、ISO 9001 認証。',
     },
   },
@@ -564,9 +564,9 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 10張起 過膠/PVC防水 膠片餐牌/酒水牌 快至3日 | 智印港',
-      en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
-      ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
+      'zh-hk': '餐牌印刷 10張起 HK$5起 | 過膠PVC防水 精裝餐牌 | 智印港',
+      en: 'Menu Printing 10 MOQ $1.84 | PVC & Hardcover | ZprintPro',
+      ja: 'メニュー印刷 10枚〜 ¥258〜 | PVC/ラミネート | ZprintPro',
     },
     keywords: {
       'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,膠片餐牌,防水餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌,甜品餐牌,咖啡店餐牌,酒店菜單',
@@ -574,9 +574,9 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 10 張起, 一次性 HK$0.22 起/張, 過膠餐牌 HK$5 起/張, 精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 一次性 4 種材質, 茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時, 標準 3-5 天交貨, 趕單 WhatsApp 加急, ISO 9001 + FSC 認證。',
-      en: 'Menu printing from $0.14, 10 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
-      ja: 'メニュー印刷 10 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '餐牌印刷 10 張起，過膠餐牌 HK$5 起/張、PVC 防水 HK$8 起、精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 過膠 4 種材質，茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時，標準 3-5 天交貨，趕單 WhatsApp 加急，ISO 9001 + FSC 認證。',
+      en: 'Menu printing from $1.84, 10 MOQ. Waterproof PVC, laminated & hardcover menus for restaurants, cafes, bars. Free proof in 4h, DHL 2-4 day USA delivery.',
+      ja: 'メニュー印刷 10 部から、¥258〜。防水 PVC・ラミネート・ハードカバー、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'red-packets': {

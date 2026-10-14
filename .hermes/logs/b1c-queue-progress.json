@@ -1,12 +1,18 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-13T21:40:00+08:00",
-  "updated_by": "ZP-daily-content lane (2026-10-13 21:17 run)",
+  "updated_at": "2026-10-15T01:55:00+08:00",
+  "updated_by": "manual session (deepseek hermes, W1 CTR batch night)",
   "clusters": [
     {
       "order": 1,
       "cluster": "stickers-5-siblings",
-      "slugs": ["waterproof-stickers", "transparent-stickers", "foil-stickers", "security-stickers", "fluorescent-stickers"],
+      "slugs": [
+        "waterproof-stickers",
+        "transparent-stickers",
+        "foil-stickers",
+        "security-stickers",
+        "fluorescent-stickers"
+      ],
       "status": "DONE",
       "claimed_by": "human-session",
       "claimed_at": "2026-10-12T08:30:00+08:00",
@@ -17,7 +23,11 @@
         "products_faqSchema": "5 槽差异化 (9 槽同源指纹拆弹本簇部分)",
         "transparent_desc_fix": "en/ja 简体『适配行业』清毒 2 处",
         "similarity_before": "zh-hk 0.955-0.959 / en 0.98 (transparent↔foil) / ja 0.957+",
-        "similarity_after": {"zh-hk_max": 0.217, "en_max": 0.221, "ja_max": 0.183},
+        "similarity_after": {
+          "zh-hk_max": 0.217,
+          "en_max": 0.221,
+          "ja_max": 0.183
+        },
         "similarity_gate": "PASS (红线 <60%, 目标 ≤55%, 实测 ≤0.221)",
         "guards": "tsc 54=54 / title-v5 15槽 0 HARD / detox 0 / gsc-leak 0 / brand A类 0 / encoding PASS",
         "crawl_stimulus": "sitemap lastmod 实更 ×6 + IndexNow 15 URL 200",
@@ -28,13 +38,29 @@
     {
       "order": 2,
       "cluster": "red-packets-family",
-      "slugs": ["foil-red-packets", "embossed-red-packets", "custom-red-packets", "cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+      "slugs": [
+        "foil-red-packets",
+        "embossed-red-packets",
+        "custom-red-packets",
+        "cartoon-red-packets",
+        "eco-red-packets",
+        "large-red-packets"
+      ],
       "status": "IN_PROGRESS",
       "claimed_by": "ZP-daily-content lane",
       "claimed_at": "2026-10-13T21:17:00+08:00",
       "completed_at": null,
-      "pages_done": ["embossed-red-packets"],
-      "pages_pending": ["foil-red-packets (anchor, 轻改)", "custom-red-packets", "cartoon-red-packets", "eco-red-packets", "large-red-packets"],
+      "pages_done": [
+        "embossed-red-packets (lane 10-13)",
+        "foil-red-packets (manual 10-14)",
+        "custom-red-packets (manual 10-14)",
+        "red-packets hub category block (manual 10-14)"
+      ],
+      "pages_pending": [
+        "cartoon-red-packets",
+        "eco-red-packets",
+        "large-red-packets"
+      ],
       "verdict": {
         "slots_rewritten": "embossed-red-packets × 3 locale: description 全改写 + h1 全改写 + body 各 +1 差异化决策段 (共 9 槽); products.ts faqSchema 独立化 1 槽 + descriptionEn/descriptionJa 简体『适配行业』清毒 2 处",
         "root_cause_reroute": "本簇实测重复不在正文 (foil/embossed 三语正文互异), 而在 description 层 (6 SKU zh/en/ja description 除产品名外逐字相同) 与 products.ts faqSchema 层 (6 SKU 共用同一份 4 问, 且含 MOQ 500 与 minQuantity=100 矛盾)",
@@ -42,7 +68,50 @@
         "guards": "lane 沙盒 pwsh 禁用无 node -> 机器门禁 (tsc / #16 gsc-leak / #20 meta-desc / #27 title-v5 / #15 blog-data / #29 detox) 由 host wrapper pre-commit 判定; 车道侧 grep 等价自检 0 命中 (见 2026-10-13 报告 §5)",
         "sop5_deviation": "sku-seo-data.ts description/h1 属 CSV 派生域; 本轮无 node 无法跑 scripts/csv-to-sku-seo.mjs regen -> 已按导出产物镜像手改并在报告声明, 待 node 可用会话回写 CSV 源头 (zprintpro-sku-seo-data.csv) 并复跑生成器对账"
       },
-      "note": "下一轮车道消费 custom-red-packets (或先补 foil 锚页轻改); body 层无近重复, 优先继续拆 description + faqSchema 同源指纹"
+      "note": "车道 10-13 完成 embossed; 人手 10-14 完成 hub 类目块整换 + foil/custom 双 PDP (commit ea8ed3c1, 探针 9/9)。余 3 SKU 长尾。"
+    },
+    {
+      "order": 3,
+      "cluster": "flyers-posters-leaflet (千问 B1c 簇3 指令)",
+      "slugs": [
+        "category:flyers",
+        "category:posters",
+        "folded-leaflets"
+      ],
+      "status": "DONE",
+      "claimed_by": "manual session (deepseek hermes)",
+      "claimed_at": "2026-10-14T00:10:00+08:00",
+      "completed_at": "2026-10-14T12:25:00+08:00",
+      "ssot": "docs/2026-10-14-b1c-cluster3-flyers-posters-leaflets.md",
+      "verdict": {
+        "scope": "flyers/posters 类目块整换 ×3语 + folded-leaflets PDP body×3 + faqSchema×4 + title/desc/h1/keywords 3槽",
+        "similarity": "worst 0.418 (ja) < 0.55 红线, 5-gram max 0.030",
+        "guards": "tsc 54=54 / title-v5 3槽 hard=0 / brand A0 / gsc-leak 0 / audit-sku-locale 0 / landmine 83×4×3 0 不一致",
+        "bonus_fix": "folded-leaflets imageAlt 三层嵌套历史伤 + MOQ100 假 alt 修复; eco-flyers 同款 (962e28e9)",
+        "evidence": "commit 54eee706, probes 9/9"
+      },
+      "note": "千问3.8max B1c 簇3 指令直接委派; 派发场景 vs 展示环境 vs 摺疊結構三分工"
+    },
+    {
+      "order": 4,
+      "cluster": "w1-ctr-batch (战略 W1.2 四词承接页)",
+      "slugs": [
+        "category:paper-bags",
+        "category:menus",
+        "category:packaging"
+      ],
+      "status": "DONE",
+      "claimed_by": "manual session (deepseek hermes)",
+      "claimed_at": "2026-10-15T01:40:00+08:00",
+      "completed_at": "2026-10-15T01:55:00+08:00",
+      "ssot": "docs/2026-10-15-w1-ctr-batch-paper-bags-menus-packaging.md",
+      "verdict": {
+        "root_cause": "0点击根因重定位: 非钩子缺失而是 title 超长截断 (paper-bags 78/124/108 当量, 价格钩+品牌被截掉) + menus/packaging 价格假值 (HK$0.22/$0.14/¥20/$0.85 无 SKU 支撑)",
+        "slots": "8 titles 全进 50-57 当量带 (52-57) + 8 descs 真值化+截断合规 (138-163 字符)",
+        "guards": "tsc 54=54 / brand A0 / 编造 lint 0",
+        "evidence": ".hermes/_w1_ctr_final_equiv2.mjs 文件级回读 9/9 BAND-OK"
+      },
+      "note": "战略 §3 W1.2 CTR 歼灭批; 验证窗 7-10 天后用 GSC 28d 档对账 CTR"
     }
   ]
 }
