@@ -296,6 +296,7 @@ for (const file of files) {
         // Rule 5 RAW_MARKDOWN_LINK 二次过滤: 排除图片 ![alt](url) + 排除 parseInlineLinks.tsx 工具
         if (ruleKey === 'RAW_MARKDOWN_LINK') {
           if (file.endsWith('parseInlineLinks.tsx')) continue;
+          if (isCommentLine(content, match.index)) continue;  // 注释行描述语法本身, 非渲染输出 (2026-10-14)
           const before = content[match.index - 1];
           if (before === '!') continue;  // 排除 ![alt](url) 图片
           // 排除代码块 (4 空格 or 制表符开头)
@@ -303,7 +304,10 @@ for (const file of files) {
           const linePrefix = content.slice(lineStart, match.index);
           if (linePrefix.startsWith('    ') || linePrefix.startsWith('\t')) continue;
           // 排除 dangerouslySetInnerHTML 字符串 (那是合法 HTML 渲染)
-          if (/dangerouslySetInnerHTML/i.test(lineContent)) continue;
+          // fix(TDZ): lineContent 在 line331 才声明, 此处提前用局部变量 (2026-10-14)
+          const curLineEnd = content.indexOf('\n', match.index);
+          const curLine = content.slice(lineStart, curLineEnd > 0 ? curLineEnd : undefined);
+          if (/dangerouslySetInnerHTML/i.test(curLine)) continue;
         }
 
         // v3 误报优化: STRATEGY_JARGON (yellow) 排除变量名 + 注释 + ISO 8601 时间格式
