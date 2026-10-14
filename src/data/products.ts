@@ -2397,7 +2397,24 @@ export const products: Product[] = [
     metaTitle: "",
     aiSearchSummary: {"en": "", "zh-hk": "", "ja": ""},
     knowledgePanelData: {"brand": "", "foundingDate": "", "parentOrg": "", "products": [], "industries": []},
-    faqSchema: [{"question": "What is the difference between A4 and A5 flyers?", "answer": "A4 (210x297mm) is the standard letter size, suitable for detailed event information. A5 (148x210mm) is half-size, ideal for handouts and direct mail. Both available in single or double-sided printing."}, {"question": "What paper weight is best for flyers?", "answer": "157gsm silk/satin is the standard flyer weight with vibrant color reproduction. 200gsm provides premium hand-feel for luxury brand flyers. 250gsm is our thick-paper option for high-impact marketing."}, {"question": "Can I get folded flyers (brochures)?", "answer": "Yes, we offer bi-fold, tri-fold, and Z-fold brochures. Standard sizes A4 folded to A5, A3 folded to A4. Custom folds and gate folds available for orders above 1000 pieces."}, {"question": "What is the lead time for flyer printing?", "answer": "Same-day rush available for orders placed before 10am. Standard lead time is 2-3 business days. Bulk orders (5000+) get 4-5 days with volume discount."}],
+    faqSchema: [
+    {
+      "question": "What is the minimum order for folded leaflets?",
+      "answer": "10 pcs. Orders of 500+ switch from digital to offset printing with automated folding, bringing the unit cost down significantly. A free physical fold proof is provided before mass production."
+    },
+    {
+      "question": "Should I choose a C-fold or a Z-fold?",
+      "answer": "C-fold suits \"problem then reveal\" narratives — the cover stays whole and branding is strong. Z-fold opens fully at once like an accordion, ideal for timelines, step diagrams, maps and side-by-side comparison. Choose suspense or full overview."
+    },
+    {
+      "question": "What paper weight works for a tri-fold leaflet?",
+      "answer": "157gsm folds smoothly up to a tri-fold. 200gsm must be creased. 250gsm needs creasing plus lamination and handles a bi-fold at most. 300gsm and above should not be folded — use a saddle-stitched booklet instead."
+    },
+    {
+      "question": "Should spot UV or foil stamping be applied before or after folding?",
+      "answer": "Always finish before folding (print → finish → fold). Applying finishing after folding cracks the coating at the fold lines. Creasing is mandatory for 200gsm+ stocks."
+    }
+  ],
     relatedEntities: {"sameAs": [], "mentions": []},
     expertReview: {"reviewer": "", "credentials": "", "review": ""},
     authorBio: {"name": "", "role": "", "bio": ""},
