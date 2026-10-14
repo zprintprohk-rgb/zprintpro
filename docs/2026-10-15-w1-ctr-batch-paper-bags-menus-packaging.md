@@ -60,3 +60,19 @@
 - 簇 2 余 3 SKU（cartoon/eco/large red-packets）长尾，待后续车道或人手批
 - en 站首页词（saddle stitch / small batch stickers）守成类无改动
 - packaging zh title 无价格钩（56 当量已满，3D打稿钩在位），如需加 HK$1.5 起需取舍 3D 钩——留验证窗后按 CTR 数据定
+
+---
+
+## 六、补遗（同日 01:5x）： menus 价格真值三层翻转案 — §0.23.2 双方法教科书
+
+W1 批把 menus meta 价「HK$0.22/$0.14/¥20」判为假价并「修正」为 HK$5/$1.84/¥258。探针复查引出三层反转：
+
+1. **初判（假价）**：menus 类目仅 4 SKU（pvc/laminated/hardcover/drink），最廉 = 過膠 HK$5 —— meta 的 0.22 无支撑 → **正确**。
+2. **反转（误判）**：grep `HK$0.22` 命中 products.ts L7352 有 basePrice 0.22 的 SKU → 以为错杀真价。实际该命中是 **fruit-food-label-stickers（stickers 类目水果标签）**，与餐牌无关 —— 未读上下文即翻案，**错误**。
+3. **终判（实锤）**：L7320-7359 通读确认 0.22 属水果贴纸；live products.ts menus 类目确无一次性餐牌 SKU（该产品仅存于 `.bak_gc_content` 旧备份 = 已下架产品的价格幽灵）。**初判成立**。
+
+**幽灵价格实害发现**：`category-conversion-blocks.ts` 的 `menus:zh-hk` 块（客户可见 + FAQPage schema 源）整体建立在已下架 SKU 上：hero 统计「HK$0.22起 一次性餐牌」、对比表整行「一次性餐牌（外賣款）」、FAQ 分档首条、metaDescription 五類/100張起訂、title 100張起 —— 全部与 live products.ts（4 SKU / 10 張起 / 最廉過膠 HK$5）矛盾。**已同步修复 6 处**（四類/10張起/HK$5起分档/删除幽灵行）。
+
+**另澄清**：packaging 页探针报「STALE HK$0.22」实为 `gang-run-card-boxes`（拼版白卡彩盒 500 起）的生成单价锚 `UNIT_PRICE_ANCHORS=0.22/個` —— **真值**，不动。
+
+**教训固化**：grep 命中 ≠ 证据；价格真值判定必须 (a) 限定 category_slug 全量枚举 (b) 读上下文确认归属 (c) 区分 live 与 .bak。本案已记入 error-patterns 类案。
