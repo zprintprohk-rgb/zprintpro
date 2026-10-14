@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-13 21:17:02",
+  "generated_at": "2026-10-14 21:17:03",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "1b3f62dbf307c41e",
-    "day": "2026-10-13",
+    "this_run_key": "da275fd992b71884",
+    "day": "2026-10-14",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=BLOCKED @ 2026-10-10 00:35:33"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-13 21:27:07"
       },
       {
         "name": "lane_status_available",
@@ -46,74 +46,46 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 18700,
-    "acquired_at": "2026-10-13 21:17:02",
-    "acquired_ts": 1791897422.1784182,
+    "pid": 31348,
+    "acquired_at": "2026-10-14 21:17:03",
+    "acquired_ts": 1791983823.1705139,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261010T003533",
+      "run_id": "ZP-daily-content-20261013T212707",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-10 00:35:33",
-      "ended_at": "2026-10-10 00:35:33",
-      "idempotency_key": "63da4450194bcf23",
+      "fired_at": "2026-10-13 21:27:07",
+      "ended_at": "2026-10-13 21:27:07",
+      "idempotency_key": "1b3f62dbf307c41e",
       "dsh_exit": null,
-      "wrapper_exit": 4,
-      "verdict": "BLOCKED",
-      "state": "blocked",
-      "blocked_reason": "pre-commit guard 拒绝 5 个生产文件",
+      "wrapper_exit": 0,
+      "verdict": "OK",
+      "state": "completed",
+      "blocked_reason": "",
       "guard": {
-        "ok": false
+        "ok": true
       },
-      "report": ".hermes/logs/2026-10-10-ZP-daily-content.md",
+      "report": ".hermes/logs/2026-10-13-ZP-daily-content.md",
       "files": [
-        "src/app/[locale]/blog/[slug]/page.tsx",
-        "src/data/blog-data/en.json",
-        "src/data/blog-data/ja.json",
         "src/data/blog-data/zh-hk.json",
-        "src/data/blog-posts.ts"
+        "src/data/products.ts",
+        "src/data/sku-seo-data.ts"
       ],
-      "pushed": false,
-      "head": "797c84e3",
+      "pushed": true,
+      "head": "8f598443",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-10-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-13-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "src/data/blog-data/zh-hk.json",
-      "src/data/blog-data/en.json",
-      "src/data/blog-data/ja.json（corporate-holiday-cards-printing-guide 三语全文，各 +1 键）; src/data/blog-posts.ts（const lpCorporateHolidayCardsPrintingGuide L2275 + blogPosts 注册 L2481）; src/app/[locale]/blog/[slug]/page.tsx（articleSlugs +1）; public/sitemap.xml（+3 URL，741→744）; public/sitemap-zh-hk.xml / sitemap-en.xml / sitemap-ja.xml（各 +1 URL，247→248，hreflang×4）"
+      "src/data/blog-data/zh-hk.json（门童 #16 存量命中 TOP3 清除",
+      "L620 H1）; src/data/sku-seo-data.ts（embossed-red-packets 三语 description + h1 全改写 + body 各 +1 差异化决策段 = 9 槽）; src/data/products.ts（embossed-red-packets faqSchema 独立化 1 槽 + descriptionEn/descriptionJa 简体「适配行业」清毒 2 处）; public/sitemap.xml + public/sitemap-zh-hk.xml + public/sitemap-en.xml + public/sitemap-ja.xml（embossed-red-packets 三语 lastmod 2026-10-12 → 2026-10-13 = 重爬刺激）; .hermes/logs/b1c-queue-progress.json（簇 2 = IN_PROGRESS",
+      "1/6 页）"
     ]
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "22:43"
-    },
-    {
-      "lane": "ZP-k3-review",
-      "status": "PENDING",
-      "report": null,
-      "start": "07:10"
-    }
-  ],
-  "retry_queue": [
-    {
-      "kind": "RETRY_OF",
-      "run_id": "ZP-daily-content-20261010T003533",
-      "reason": "pre-commit guard 拒绝 5 个生产文件",
-      "candidate_files": [
-        "src/app/[locale]/blog/[slug]/page.tsx",
-        "src/data/blog-data/en.json",
-        "src/data/blog-data/ja.json",
-        "src/data/blog-data/zh-hk.json",
-        "src/data/blog-posts.ts"
-      ]
-    }
-  ],
+  "sibling_lanes": [],
+  "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",

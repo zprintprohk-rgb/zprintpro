@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-10-13T13:26:20",
+  "scannedAt": "2026-10-14T13:21:42",
   "truthSize": 82,
   "shapeProblems": [],
-  "hits": 618,
-  "drift": 204,
+  "hits": 539,
+  "drift": 152,
   "recount": [
     {
       "kind": "zh_本起",
@@ -47,29 +47,11 @@
     },
     {
       "kind": "en_pcs",
-      "grep": 11,
-      "scan": 2
+      "grep": 12,
+      "scan": 0
     }
   ],
   "findings": [
-    {
-      "file": "src/data/products.ts",
-      "line": 5581,
-      "slug": "catalog-printing",
-      "kind": "en_pcs",
-      "found": 100,
-      "truth": 10,
-      "text": "…s with 15-30% volume discount. ZprintPro bulk MOQ 100 pcs for catalog book printing / c…"
-    },
-    {
-      "file": "src/data/products.ts",
-      "line": 5581,
-      "slug": "catalog-printing",
-      "kind": "en_pcs",
-      "found": 100,
-      "truth": 10,
-      "text": "…h (custom 8-64 pages). All 4 sizes available from 100 pcs, bulk wholesale tier at 500+.…"
-    },
     {
       "file": "src/data/sku-seo-data.ts",
       "line": 150,
@@ -162,33 +144,6 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 690,
-      "slug": "folded-leaflets",
-      "kind": "en_MOQ",
-      "found": 100,
-      "truth": 10,
-      "text": "…US shipping over $100, DHL Express | Free Design | 100 MOQ\",…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 697,
-      "slug": "folded-leaflets",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 705,
-      "slug": "folded-leaflets",
-      "kind": "zh_張起",
-      "found": 100,
-      "truth": 10,
-      "text": "…\"zh-hk\": \"一般為100張起訂，數碼印刷可接受50張小量。\",…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 726,
       "slug": "thick-paper-flyers",
       "kind": "en_MOQ",
@@ -222,15 +177,6 @@
       "found": 100,
       "truth": 10,
       "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 813,
-      "slug": "eco-flyers",
-      "kind": "zh_張起",
-      "found": 100,
-      "truth": 10,
-      "text": "…\"zh-hk\": \"一般為100張起訂，數碼印刷可接受50張小量。\",…"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -396,30 +342,12 @@
     },
     {
       "file": "src/data/sku-seo-data.ts",
-      "line": 1240,
-      "slug": "foil-red-packets",
-      "kind": "ja_枚から",
-      "found": 10,
-      "truth": 100,
-      "text": "…ほとんどの商品は50〜100個/部/枚からご注文いただけます。本商品は100個から対応し、少量の急ぎは10枚から承ります。大量注文は段階割引があります。\\n\\n**Q2:…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
       "line": 1276,
       "slug": "embossed-red-packets",
       "kind": "ja_枚から",
       "found": 10,
       "truth": 100,
       "text": "…のほとんどの商品は50〜100個/部/枚からの注文です。当商品は100個から承ります。即日少量の急ぎは10枚から、大量注文は段階割引で対応しています。\\n\\n**Q2: 印…"
-    },
-    {
-      "file": "src/data/sku-seo-data.ts",
-      "line": 1312,
-      "slug": "custom-red-packets",
-      "kind": "ja_枚から",
-      "found": 10,
-      "truth": 100,
-      "text": "…tProの多くの商品は50〜100個/部/枚から注文可能です。本商品は100個から対応し、少量の急ぎは10枚からご依頼いただけます。ロットが大きくなるほど段階割引が適用され…"
     },
     {
       "file": "src/data/sku-seo-data.ts",
@@ -1491,402 +1419,6 @@
       "found": 100,
       "truth": 10,
       "text": "…に無料の型抜きチェックを行います。\\n\\n料金は 100 枚あたり HK$100〜170、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセッ…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 63,
-      "slug": "premium-greeting-cards",
-      "kind": "zh_個起",
-      "found": 500,
-      "truth": 10,
-      "text": "…<p>智印港 500 個起印已可壓到 市場零售 零售天花板 24% 以下。批量越大,單個…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 80,
-      "slug": "premium-greeting-cards",
-      "kind": "zh_張起",
-      "found": 50,
-      "truth": 10,
-      "text": "…低起印量（MOQ）是多少？</strong></summary><p>防水 Vinyl／透明 PVC 50 張起，銅版紙／牛皮紙／雷射／燙金 100 張起。<strong>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 80,
-      "slug": "premium-greeting-cards",
-      "kind": "zh_張起",
-      "found": 100,
-      "truth": 10,
-      "text": "…g></summary><p>防水 Vinyl／透明 PVC 50 張起，銅版紙／牛皮紙／雷射／燙金 100 張起。<strong>10 張樣品檔 HK$48</strong…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 509,
-      "slug": "foil-greeting-cards",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。<…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 746,
-      "slug": "spot-uv-greeting-cards",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…ク企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 980,
-      "slug": "matte-greeting-cards",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1212,
-      "slug": "rounded-corner-greeting-cards",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1659,
-      "slug": "transparent-stickers",
-      "kind": "ja_枚から",
-      "found": 20,
-      "truth": 10,
-      "text": "…器裝飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗裝飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量製作から、法人商品ラベルの10,…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1961,
-      "slug": "small-batch-stickers",
-      "kind": "zh_起印(無單位)",
-      "found": 35,
-      "truth": 10,
-      "text": "…<p>口徑說明：10 張檔為起訂價（HK$38 × 2.35 起訂係數，小尺寸）；100 張檔為基準價 × 尺寸倍率（小 ×1…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1978,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 50,
-      "truth": 10,
-      "text": "…dium\">White Vinyl</td><td class=\"p-2 text-center\">50 pcs</td><td class=\"p-2 text-cente…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1979,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 50,
-      "truth": 10,
-      "text": "…dium\">Clear Vinyl</td><td class=\"p-2 text-center\">50 pcs</td><td class=\"p-2 text-cente…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1980,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 50,
-      "truth": 10,
-      "text": "…Holographic Vinyl</td><td class=\"p-2 text-center\">50 pcs</td><td class=\"p-2 text-cente…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1981,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 100,
-      "truth": 10,
-      "text": "…dium\">Kraft Paper</td><td class=\"p-2 text-center\">100 pcs</td><td class=\"p-2 text-cente…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1982,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 100,
-      "truth": 10,
-      "text": "…um\">Metallic Foil</td><td class=\"p-2 text-center\">100 pcs</td><td class=\"p-2 text-cente…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1997,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 180,
-      "truth": 10,
-      "text": "…2\">25mm / 38mm</td><td class=\"p-2 text-center\">70-180 pcs</td><td class=\"p-2\">Candles,…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1998,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 40,
-      "truth": 10,
-      "text": "…ass=\"p-2\">50×30mm</td><td class=\"p-2 text-center\">40 pcs</td><td class=\"p-2\">Logo stic…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 1999,
-      "slug": "small-batch-stickers",
-      "kind": "en_pcs",
-      "found": 21,
-      "truth": 10,
-      "text": "…ass=\"p-2\">60×60mm</td><td class=\"p-2 text-center\">21 pcs</td><td class=\"p-2\">Bottle la…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 2091,
-      "slug": "small-batch-stickers",
-      "kind": "ja_枚から",
-      "found": 1,
-      "truth": 10,
-      "text": "…er-b border-gray-200\"><td>HP Indigo デジタル印刷</td><td>1 枚から対応、可変データ</td><td>個人利用・サンプル</td…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 2100,
-      "slug": "small-batch-stickers",
-      "kind": "ja_枚から",
-      "found": 1,
-      "truth": 10,
-      "text": "…<li><strong>HP Indigo デジタル印刷</strong>：A4 サイズで 1 枚から対応、Delta E≤3 の高精度色再現</li>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 2133,
-      "slug": "small-batch-stickers",
-      "kind": "ja_枚から",
-      "found": 1,
-      "truth": 10,
-      "text": "…<li><strong>1〜99 枚</strong>：特急料金（デジタル印刷 1 枚から対応）</li>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 2823,
-      "slug": "security-stickers",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…Part 11 準拠、ISO 12931 偽造防止規格対応、産業グレードのサプライチェーン監査対応。100 枚からご注文可能、5-7 営業日で製作、可変データ印刷オプション対…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 4590,
-      "slug": "a5-flyers",
-      "kind": "ja_枚から",
-      "found": 100,
-      "truth": 10,
-      "text": "…A5 チラシ 印刷 激安をお求めの方へ。コストパフォーマンスに優れた価格設定で、100枚からご注文可能、1,000枚以上で30%以上OFF、5,000枚…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 5173,
-      "slug": "a2-posters",
-      "kind": "zh_張起",
-      "found": 1,
-      "truth": 10,
-      "text": "…<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。1 張起印，48 小時快遞，深圳自設廠房直送，DHL Express…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 6358,
-      "slug": "mailer-boxes",
-      "kind": "zh_個起",
-      "found": 500,
-      "truth": 100,
-      "text": "…售 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 6358,
-      "slug": "mailer-boxes",
-      "kind": "zh_個起",
-      "found": 500,
-      "truth": 100,
-      "text": "…飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已可壓到 市場零售 零售天花板 <strong>76-87%…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 10340,
-      "slug": "exercise-books",
-      "kind": "zh_本起",
-      "found": 200,
-      "truth": 10,
-      "text": "…教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 10483,
-      "slug": "certificates",
-      "kind": "zh_本起",
-      "found": 200,
-      "truth": 100,
-      "text": "…教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 10626,
-      "slug": "school-flyers",
-      "kind": "zh_本起",
-      "found": 200,
-      "truth": 10,
-      "text": "…教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 10964,
-      "slug": "textbooks",
-      "kind": "en_MOQ",
-      "found": 500,
-      "truth": 100,
-      "text": "…ood-free, perfect binding, foil-stamped cover, 200–500 copies</li>…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11207,
-      "slug": "graduation-yearbook",
-      "kind": "zh_本起",
-      "found": 100,
-      "truth": 1,
-      "text": "…畢業紀念冊的最低起印量是多少？</strong></summary><p>畢業紀念冊 1 本起印, 100 本起印享階段折扣。每頁 1-2 張照片為最佳密度, 200 頁以內…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11298,
-      "slug": "magnetic-closure-gift-box",
-      "kind": "en_MOQ",
-      "found": 50,
-      "truth": 100,
-      "text": "…stralia, Hong Kong, Taiwan, and Singapore. Minimum 50 copies, fast 7-10 working day turnar…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11311,
-      "slug": "magnetic-closure-gift-box",
-      "kind": "en_MOQ",
-      "found": 50,
-      "truth": 100,
-      "text": "…summary><p>ZprintPro graduation yearbooks start at 50 copies. Saddle-stitch and perfect-bo…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11405,
-      "slug": "electronics-packaging-box",
-      "kind": "zh_個起",
-      "found": 100,
-      "truth": 200,
-      "text": "…>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11511,
-      "slug": "kraft-paper-packaging-box",
-      "kind": "zh_個起",
-      "found": 100,
-      "truth": 300,
-      "text": "…>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11654,
-      "slug": "foil-wedding-invitations",
-      "kind": "zh_本起",
-      "found": 10,
-      "truth": 50,
-      "text": "…即售會、創作活動優化的同人誌印刷服務。封面彩色 + 內頁單色標準配置起,另有封面內頁全彩色升級版可選。10 本起印的低起訂量,個人社團 / 新手作者也能輕鬆下單。Comike…"
-    },
-    {
-      "file": "src/data/products-content.ts",
-      "line": 11670,
-      "slug": "foil-wedding-invitations",
-      "kind": "zh_本起",
-      "found": 10,
-      "truth": 50,
-      "text": "…2\"><summary><strong>最低可以印多少本？</strong></summary><p>10 本起印。個人社團及獨立作者都歡迎下單。</p></details>…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2680,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…eaturedSnippet: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2680,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…t: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…of matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs M…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…oor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL glob…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…f matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 p…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…or vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2877,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 50,
-      "truth": 10,
-      "text": "…q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pc…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2884,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 500,
-      "truth": 10,
-      "text": "…for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.'…"
     }
   ]
 }

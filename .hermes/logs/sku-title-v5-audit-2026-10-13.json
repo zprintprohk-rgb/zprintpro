@@ -556,7 +556,7 @@
     {
       "slug": "folded-leaflets",
       "locale": "zh-hk",
-      "title": "摺頁單張 摺頁印刷 雙面四色 10張起 HK$0.7起 | 智印港",
+      "title": "摺頁印刷 | 二摺三摺風琴摺 10份起 HK$0.70起 | 智印港",
       "equiv": 51,
       "frozen": false,
       "hard": [],
@@ -565,8 +565,8 @@
     {
       "slug": "folded-leaflets",
       "locale": "en",
-      "title": "Folded Leaflets | Tri-Fold | 10 MOQ $0.80 | ZprintPro",
-      "equiv": 53,
+      "title": "Folded Leaflets | Tri-Fold 10 MOQ $0.80 | ZprintPro",
+      "equiv": 51,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -574,8 +574,8 @@
     {
       "slug": "folded-leaflets",
       "locale": "ja",
-      "title": "折りたたみパンフレット｜三つ折り｜10枚〜 ¥110｜ZprintPro",
-      "equiv": 56,
+      "title": "リーフレット印刷 | 三つ折り 10枚から ¥110〜 | ZprintPro",
+      "equiv": 55,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -991,8 +991,8 @@
     {
       "slug": "foil-red-packets",
       "locale": "zh-hk",
-      "title": "燙金利是封印刷 | 燙金 局部UV | 100個起 HK$1.10起 | 智印港",
-      "equiv": 57,
+      "title": "燙金利是封印刷 | 金箔銀箔12色 100個起 HK$1.10起 | 智印港",
+      "equiv": 56,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -1000,8 +1000,8 @@
     {
       "slug": "foil-red-packets",
       "locale": "en",
-      "title": "Foil Red Packets | Gold Foil | 100 MOQ $0.46 | ZprintPro",
-      "equiv": 56,
+      "title": "Foil Stamp Red Packets | 12 Colors from $0.46 | ZprintPro",
+      "equiv": 57,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -1009,8 +1009,8 @@
     {
       "slug": "foil-red-packets",
       "locale": "ja",
-      "title": "箔押しポチ袋｜金箔 UV エンボス｜100枚〜 ¥64〜｜ZprintPro",
-      "equiv": 56,
+      "title": "箔押しポチ袋印刷 | 12色 100個から HK$1.10起 | ZprintPro",
+      "equiv": 55,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -1045,8 +1045,8 @@
     {
       "slug": "custom-red-packets",
       "locale": "zh-hk",
-      "title": "訂製利是封印刷 | 燙金 UV 壓紋 | 100個起 HK$1.9起 | 智印港",
-      "equiv": 57,
+      "title": "企業利是封定製 | 品牌Logo 100個起 HK$1.90起 | 智印港",
+      "equiv": 52,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -1054,7 +1054,7 @@
     {
       "slug": "custom-red-packets",
       "locale": "en",
-      "title": "Custom Red Packets | 100 MOQ $0.74 | 4-Day | ZprintPro",
+      "title": "Corporate Red Packets | Logo 100 MOQ $0.74 | ZprintPro",
       "equiv": 54,
       "frozen": false,
       "hard": [],
@@ -1063,7 +1063,7 @@
     {
       "slug": "custom-red-packets",
       "locale": "ja",
-      "title": "オリジナルポチ袋印刷 箔押し UV 100枚〜 ¥103〜 | ZprintPro",
+      "title": "企業向けポチ袋 | ロゴ入り 100個から HK$1.90起 | ZprintPro",
       "equiv": 57,
       "frozen": false,
       "hard": [],
