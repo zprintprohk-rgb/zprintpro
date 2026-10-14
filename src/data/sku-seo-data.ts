@@ -810,9 +810,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為100張起訂，數碼印刷可接受50張小量。",
-      "en": "Custom eco flyers with same-day printing, premium materials — ZprintPro",
-      "ja": "エコチラシ / A4・A5 両面 | 香港のエコチラシ印刷 | ZprintPro"
+      "zh-hk": "環保傳單印刷 10張起 HK$0.38起 | 再生紙雙面四色印製 | 智印港",
+      "en": "Eco Flyer Printing 10 MOQ from $0.60 | Recycled Stock Double-Sided | ZprintPro",
+      "ja": "エコチラシ印刷 10枚から ¥75〜 | 再生紙両面フルカラー | ZprintPro"
     }
   },
   "a2-posters": {
