@@ -1,8 +1,55 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放** — 2026-10-13 17:1x 利是封换血会话（deepseek hermes）释放：
+> **当前状态**: ⚪ **已释放** — 2026-10-14 12:5x Kimi Work 会话（最终 commit+push 窗口）：
+> ① 本批 4 文件 commit：route.ts（询盘双收）+ HeroBanner.tsx（Hero 改版）+ SESSION_LOCK.md + `docs/2026-10-14-quote-email-and-hero-fix.md`。
+> ② 前次 commit `62cef6be`（12:23）被簇3 会话 reset 回收其提交时带走（其锁记录已如实记载），本次为其释放后重建。
+> ③ **push 携带 `962e28e9`（eco-flyers alt 修复，门童已过）一并上线**——其原拟攒批随下窗口，K3「一次 push 上线」指令优先，1 build 覆盖两 commit，特此透明记录。
+> ④ K3 待办不变：CF 补 `RESEND_API_KEY` + redeploy + DNS 补 SPF/DMARC（详见报告 §三）。
+> 双条件核验：对端 12:31:56 后静默 ≥16min（其锁已释放）✓ src/ 无 MM ✓。**本锁释放，后续会话可自由接管。**
 
-> **本批（刚释放）**: 利是封 6 SKU 换血 ✅ commit 随本批 push（探针见下）：
+---
+
+> **上一批**: ⚪ 已释放 — 2026-10-14 13:0x B1c 簇3 会话（deepseek hermes）释放：
+
+> **本批（刚释放）**: ① B1c 簇3 傳單/海報/摺頁三页 ×3语 ✅ `54eee706` 已 push（探针 9/9）：flyers/posters 类目块整换 + folded-leaflets PDP 三语 + faqSchema×4；千问稿编造量全清洗；3 槽 title-v5 入带；folded-leaflets imageAlt 三层嵌套 + MOQ100 陈旧 alt 修复；相似度 worst 0.418<0.55；tsc 54=54；全雷审计 0；IndexNow 9×200。SSoT `docs/2026-10-14-b1c-cluster3-flyers-posters-leaflets.md`。
+> ② Kimi Work 挂账处置 ✅ `962e28e9` **本地未推**（攒批，随下窗口）：eco-flyers imageAlt MOQ100 假值 → 真值 GEO alt ×3语（CSV 源头 + regen，audit #28 仍 0）。
+> ⚠️ 并发记录： commit 期间对方会话暂存文件两次扫入均已剥离（reset+restore-staged）；**route.ts/HeroBanner.tsx 等对方成果仍在工作区未提交未推送，归其车道处置**（其锁记录称已 commit 4 文件，但本分支 log 未见——以 git log 为准）。
+
+> **上一批**: ⚪ 2026-10-14 12:4x Kimi Work 会话（K3 12:13 拍板方案② 执行完毕）：
+> **交付** = ① 报价邮件通道修复（route.ts 收件人 RESEND_NOTIFY_TO 可配置，默认 Outlook+Gmail 双收；根因=线上 RESEND_API_KEY 未配置，**K3 待办：CF 补 key + redeploy + DNS 补 SPF/DMARC**）② HeroBanner 525px/去橙遮罩/置顶 frosted 条避让烘焙文案/slide h1→h2 ③ folded-leaflets imageAlt 门童 #28 解锁——对端簇3 CSV 本已是正解，regen 未落地；`csv-to-sku-seo.mjs --apply` 断言 A-E PASS、变化块唯一，产物并入簇3 批次（re-staged）。
+> **本批 commit 仅 4 文件**（route.ts / HeroBanner.tsx / SESSION_LOCK.md / 报告 doc），对端簇3 staged 变更未混入；备份 `.hermes/_cluster3-staged-backup-20261014.patch` + 文档副本留兜底（未动用，簇3 现场原样保留）。
+> **挂账**：eco-flyers imageAlt zh-hk 同款 MOQ 坏 alt（非 #28 违例，ts=CSV 一致），建议簇3/簇4 车道修 CSV 源头 + regen。
+> 门检：tsc 54=基线增量 0 / encoding ✓。SSoT `docs/2026-10-14-quote-email-and-hero-fix.md` §七。**本锁释放，后续会话可自由接管（簇3 批次待其车道验收 commit）。**
+
+---
+
+> **历史（已作废的释放记录，commit 未成立）**: ⚪ 2026-10-14 04:5x Kimi Work 会话：报价邮件通道修复 + 首页 Hero 改版：
+> ① route.ts 收件人 RESEND_NOTIFY_TO 可配置，默认 Outlook+Gmail 双收 ② HeroBanner 525px/去橙遮罩/置顶 frosted 条避让烘焙文案/slide h1→h2 ③ 根因=线上 RESEND_API_KEY 未配置（实测 skipped），K3 待办：CF 补 key + DNS 补 SPF/DMARC，SSoT `docs/2026-10-14-quote-email-and-hero-fix.md`。
+> 门检 tsc 54=基线增量 0 / encoding ✓。
+
+---
+
+> **历史（持有）**: 🔒 2026-10-14 04:2x Kimi Work 会话（K3 三合一指令：报价邮件通道修复 + 首页 Hero 改版 + 回信垃圾箱诊断）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 人手会话（本会话） |
+| **意图** | ① quote-notify 路由收件人可配置化 + Gmail 双收（线上实测 RESEND_API_KEY 未配置 = 断流根因）② HeroBanner 改版（525px / 去橙遮罩 / 文字置顶避让图内文案 / slide h1→h2 单 H1 净化）③ 邮件送达率诊断（SPF/DMARC 缺失） |
+| **写入范围** | `src/app/api/quote-notify/route.ts` · `src/components/home/HeroBanner.tsx` · `SESSION_LOCK.md` · `docs/2026-10-14-quote-email-and-hero-fix.md`（报告） |
+| **避让** | 不触碰对端 B1c 簇3 已 staged 的 products.ts / sku-seo-data.ts / category-seo-content.ts / CSV / cluster3 文档（git add 仅限本批清单） |
+| **双条件核验** | ① src/ 无 MM、staged 删除 0（04:11 git status 实证）② 对端静默 ≥47min（最后写入 03:26，04:13 核验）✓ |
+| **预计时长** | < 60 min |
+| **释放条件** | tsc 增量 0 + encoding ✓ + commit + push + 报告落盘 |
+
+---
+
+> **上一状态（历史）**: ⚪ **已释放** — 2026-10-14 02:5x B1c 簇2 会话（deepseek hermes）释放：
+
+> **本批（刚释放）**: B1c 簇2 利是封三页 ×3语 内容飞轮 ✅ `ea8ed3c1` 已 push（探针 9/9）：
+> K3 指令「千问3.8max B1c 簇2 按三站点实况最优执行， 簇内相似度 <55%」。hub=category/red-packets 专属块整换（清 v3.13 遗留 e-print 竞品名+假价）+ foil 工艺深度 + custom B2B 重定位；6 槽 title-v5 入带（en 价钩改 basePrice_en 美元真值）；faqSchema 4+4；相似度 worst 0.498<0.55；tsc 54=54；brand A 0；gsc-leak 0；sitemap lastmod；IndexNow 9 URL 200。
+> SSoT `docs/2026-10-14-b1c-cluster2-red-packets-content.md`。事故修复留档：b15 回写方向陷阱 + name 块 locale 键误配（读写必锚 "seo": 后）+ embossed 误伤恢复 + 全雷审计 0 不一致。
+
+> **上一批**: 利是封 6 SKU 换血 ✅ commit 随本批 push（探针见下）：
 > K3 指令「利是封分类 SKU 图片用新的替换，文件名/alt 符合 SEO+AEO+GEO 最优」。72 文件 v28_5 换血 + EXIF alt 重注（与 products.ts seoAlt 逐字一致）+ 18 alt 升级 GEO 公式（品牌补齐/ja 紅包→ポチ袋/MOQ 100 真值）+ cartoon ja 补 2 视图 + legacy 修指 ×6。
 > SSoT `docs/2026-10-13-red-packets-image-replacement.md`。验证：EXIF 字节级 72/72 + 独立抽验 16/16 + 毒串 0 + tsc 54=54 + brand A 0 + sitemap 1068。
 > Wave-2 挂账：CSV 图片Alt 列利是封族污染 ✅ 当批已清（CSV 源头修正 + 官方 regen，三源对齐：CSV=ts 渲染=seoImages.alt=EXIF）。

@@ -15,6 +15,11 @@ export const runtime = 'edge';
  *   - 软频率限 (5 req/IP/5min, 进程内 token bucket)
  *   - Content-Length 8KB 硬限
  *   - Honeypot 反机器人
+ *
+ * 2026-10-14 修复 (K3 拍板):
+ *   - 线上实测 RESEND_API_KEY 未配置导致 9/16 后询盘邮件全断流 (返回 ok+skipped, 前端无感知)
+ *   - 收件人改环境变量 RESEND_NOTIFY_TO (逗号分隔), 默认 Outlook + Gmail 双收冗余,
+ *     单邮箱故障/进垃圾箱不再丢询盘; K3 可在 CF dashboard 改收件人无需改代码
  */
 export async function POST(req: NextRequest) {
   // 共享安全守卫 (origin + 限流 + body 上限 + honeypot)
@@ -36,6 +41,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ ok: false, error: 'phone/email required' }, { status: 400 });
   }
 
+  // 2026-10-14: 收件人可配置 (CF 环境变量 RESEND_NOTIFY_TO, 逗号分隔),
+  // 默认 Outlook + Gmail 双收冗余 — 任一邮箱故障/垃圾箱不再丢询盘
+  const notifyTo = (process.env.RESEND_NOTIFY_TO || 'zprintpro@outlook.com,zprintprohk@gmail.com')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+
   const html = `
     <h2>新詢盤 [${ref || ''}] ${product || ''}</h2>
     <table border="1" cellpadding="6" cellspacing="0" style="border-collapse:collapse;font-family:sans-serif;font-size:14px">
@@ -56,7 +68,7 @@ export async function POST(req: NextRequest) {
     headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       from: 'ZprintPro 詢盤 <quotes@zprintpro.com>',
-      to: ['zprintpro@outlook.com'],
+      to: notifyTo,
       reply_to: email,
       subject: `[ZprintPro 詢盤 ${ref || ''}] ${product || ''} — ${phone}`,
       html,

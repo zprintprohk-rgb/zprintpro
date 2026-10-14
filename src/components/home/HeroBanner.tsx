@@ -18,16 +18,8 @@ interface HeroBannerProps {
   locale: Locale;
 }
 
-// v9.2.1 裁决5 (K3 9/10 15:19 拍板): 首页轮播与分类 Banner 同族换橙渐变 (裁决4 同一令牌), 禁止引入新色。
-// 6 张轮播统一橙族遮罩 (深 #C2410C → 中 #EA580C → 透明), 取代原 6 色相遮罩; 遮罩仅控制文字对比, 不承载品牌色。
-const slideStyles = [
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-  { overlay: 'bg-gradient-to-r from-[#C2410C]/45 via-[#EA580C]/25 to-transparent' },
-];
+// 2026-10-14 K3 拍板: 撤掉 9/10 裁决5 的橙族渐变遮罩 — 遮罩压暗了轮播图内烘焙文案 (紙袋印刷/專業訂製 等),
+// 且文字层改置顶 frosted 条后不再需要遮罩保对比。轮播图 1320×525 原生高度全量展示, 不再裁切。
 
 const translations = {
   'zh-hk': {
@@ -102,16 +94,14 @@ export function HeroBanner({ locale }: HeroBannerProps) {
     setCurrentSlide((prev) => (prev + 1) % t.slides.length);
   };
 
-  const currentStyle = slideStyles[currentSlide];
-
   return (
     <section>
-      {/* P1.1 增强：SEO H1 顶层元素（按 variant 切换），slide 内的 H1 保留为视觉标题 */}
+      {/* P1.1 增强：SEO H1 顶层元素（按 variant 切换），slide 内的视觉标题为 h2（单 H1 净化, 2026-10-14） */}
       <h1 className="sr-only">{HERO_H1_VARIANTS[abVariant][locale]}</h1>
       <div className="max-w-[1320px] mx-auto">
-        {/* Banner Slider - full width, no gap, no rounded corners */}
+        {/* Banner Slider - full width, no gap, no rounded corners; 桌面端 525px = 轮播图原生高度, 零裁切 */}
         <div className="relative overflow-hidden bg-white">
-          <div className="relative h-[300px] md:h-[400px]">
+          <div className="relative h-[300px] md:h-[525px]">
             {t.slides.map((slide, index) => (
               <div
                 key={index}
@@ -127,51 +117,39 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   loading={index === 0 ? undefined : 'lazy'}
                   decoding="async"
                 />
-                {/* 每张图使用不同的品牌色渐变遮罩 */}
-                <div className={`absolute inset-0 ${slideStyles[index].overlay}`} />
-                {/* PC端文字内容 - 三行主视觉+描述作为整体下移 + dots在最底部 */}
-                <div className="hidden md:flex absolute inset-0 flex-col justify-between px-8 md:px-12 py-6 md:py-8 z-10">
-                  {/* === 上半区：空白占位，将内容推下（增加两个描述文字高度） === */}
-                  <div className="flex-1" />
-                  <div className="h-[50px] md:h-[58px]" />
-
-                  {/* === 中间区：三行主视觉 + 描述文字（整体下移到红线位置） === */}
-                  <div className="mb-6">
-                    {/* 第1行：低至标签（蓝色底色，白色文字，圆角胶囊） */}
-                    <span className="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-md w-fit">
+                {/* PC端文字内容 - 顶部居中 frosted 条 (避开图内左侧烘焙文案与右侧产品主体) + dots 右下角 */}
+                <div className="hidden md:block absolute inset-0 z-10 pointer-events-none">
+                  {/* === 顶部信息条：价格胶囊 + 标题 + 描述 + CTA，单行紧凑，不遮图内文案 === */}
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3 max-w-[92%] bg-white/85 backdrop-blur-md rounded-2xl shadow-lg px-4 py-2.5 pointer-events-auto">
+                    <span className="inline-block bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap flex-shrink-0">
                       {t.fromPrice} {slide.price}
                     </span>
-                    
-                    {/* 第2行：大标题 + 获取报价按钮（同一行，按钮在标题右侧） */}
-                    <div className="flex items-center gap-4 mb-3">
-                      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
-                        {slide.title}
-                      </h1>
-                      <Link
-                        href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                        onClick={() => {
-                          trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide });
-                          // 2026-08-29 K3 拍板: Supabase tracking_events 009 (0 PII, sendBeacon)
-                          trackCtaClick(`hero-${currentSlide}`, undefined);
-                        }}
-                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg whitespace-nowrap flex-shrink-0"
-                      >
-                        {CTA_VARIANTS[abVariant][locale]} <ArrowRight className="h-4 w-4" />
-                      </Link>
-                    </div>
-
-                    {/* 第3行：描述文字（标题下方） */}
-                    <p className="text-sm md:text-base text-white/90 max-w-xl drop-shadow-md leading-relaxed">
+                    <h2 className="text-base lg:text-lg font-bold text-slate-800 leading-snug whitespace-nowrap overflow-hidden text-ellipsis min-w-0 flex-shrink">
+                      {slide.title}
+                    </h2>
+                    <p className="hidden xl:block text-sm text-slate-600 border-l border-slate-300 pl-3 max-w-sm truncate flex-shrink">
                       {slide.subtitle}
                     </p>
+                    <Link
+                      href={`${localePrefix}${getQuoteHref(slide.href)}`}
+                      onClick={() => {
+                        trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide });
+                        // 2026-08-29 K3 拍板: Supabase tracking_events 009 (0 PII, sendBeacon)
+                        trackCtaClick(`hero-${currentSlide}`, undefined);
+                      }}
+                      className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors shadow-md whitespace-nowrap flex-shrink-0"
+                    >
+                      {CTA_VARIANTS[abVariant][locale]} <ArrowRight className="h-4 w-4" />
+                    </Link>
                   </div>
 
-                  {/* === 底部：dots 指示器（最底部，与描述文字有足够间距） === */}
-                  <div className="flex justify-center gap-2 pb-2">
+                  {/* === dots 指示器：右下角 frosted 胶囊，避开图内底部图标排 === */}
+                  <div className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/25 backdrop-blur-sm rounded-full px-3 py-2 pointer-events-auto">
                     {t.slides.map((_, idx) => (
                       <button
                         key={idx}
                         onClick={() => setCurrentSlide(idx)}
+                        aria-label={`Slide ${idx + 1}`}
                         className={`h-2 w-2 rounded-full transition-colors ${idx === currentSlide ? 'bg-white' : 'bg-white/40'}`}
                       />
                     ))}
