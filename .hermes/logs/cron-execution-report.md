@@ -55,3 +55,5 @@
 | 2026-10-13 21:27:07 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-13-ZP-daily-content.md` | src/data/blog-data/zh-hk.json, src/data/products.ts, src/data/sku-seo-data.ts | ✅ push |
 | 2026-10-13 22:49:21 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-13-ZP-gsc-feedback.md` | .hermes/industry-keyword-matrix.json | ✅ push |
 | 2026-10-14 21:22:28 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | src/data/sku-seo-data.ts | ✅ push |
+| 2026-10-14 22:43:45 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
+| 2026-10-15 06:43:12 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | MISSING ZP-weekly-meta | OK ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | PENDING ZP-k3-review | — |
