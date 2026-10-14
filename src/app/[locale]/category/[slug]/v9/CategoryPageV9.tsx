@@ -443,20 +443,20 @@ export function CategoryPageV9({
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
-      {/* ═══ Banner — 同導航欄寬 1320px 居中；v28.6 hero 原生 1320×525：lg 起按原生比例（零裁剪零 CLS），md 及以下維持 h-300/400 裁剪；2026-10-11 K3 拍板: 去對比度遮罩, 文字塊（麵包屑+H1+副標+賣點膠囊）上移置圖上方白底深字, hero 零遮擋 ═══ */}
+      {/* ═══ Banner — 同導航欄寬 1320px 居中；v28.6 hero 原生 1320×525：lg 起按原生比例（零裁剪零 CLS），md 及以下維持裁剪；2026-10-11 K3 拍板: 去對比度遮罩, 文字塊上移置圖上方白底深字; 2026-10-15 K3 拍板: 首屏壓縮（文字塊間距/H1 字級/膠囊尺寸全鏈路縮減 + 移動端 banner 300→240），文案逐字不動護 GSC 排名 ═══ */}
       <section className="max-w-[1320px] mx-auto">
-        {/* 文字塊 — 圖上方, 淺底深字 (v28.6 hero 自帶左側標題, 不再疊字遮圖) */}
-        <div className="px-6 md:px-10 pt-8 md:pt-10 pb-6">
-          <nav aria-label="breadcrumb" className="text-[13px] text-[#6B7280] mb-4">
+        {/* 文字塊 — 圖上方, 淺底深字 (v28.6 hero 自帶左側標題, 不再疊字遮圖)；10-15 壓縮版：頁眉空位與首屏佔用收緊 */}
+        <div className="px-6 md:px-10 pt-4 md:pt-5 pb-4">
+          <nav aria-label="breadcrumb" className="text-[13px] text-[#6B7280] mb-2">
             <a href={`${localePrefix}/`} className="hover:text-[#F87314] transition-colors underline decoration-[#D1D5DB] underline-offset-4">{t9.home}</a>
             <span className="mx-2 text-[#9CA3AF]">/</span>
             <span className="text-[#374151]">{categoryName}</span>
           </nav>
-          <h1 className="text-[clamp(24px,2.5vw,34px)] font-extrabold tracking-[-0.01em] leading-[1.3] max-w-[820px] text-[#1F2937]">{pageH1}</h1>
-          <p className="mt-2.5 text-[16.5px] text-[#6B7280]">{t9.bannerSubtitle}</p>
-          <div className="mt-5 flex flex-wrap gap-2.5">
+          <h1 className="text-[clamp(20px,2vw,28px)] font-extrabold tracking-[-0.01em] leading-[1.25] max-w-[1100px] text-[#1F2937]">{pageH1}</h1>
+          <p className="mt-1.5 text-[15px] text-[#6B7280]">{t9.bannerSubtitle}</p>
+          <div className="mt-3 flex flex-wrap gap-2">
             {bannerCaps.map((cap) => (
-              <span key={cap} className="inline-flex items-center gap-[7px] bg-[#FFF4EC] border border-[#FFD9BD] px-[15px] py-2 rounded-full text-[14px] font-semibold text-[#1F2937]">
+              <span key={cap} className="inline-flex items-center gap-[6px] bg-[#FFF4EC] border border-[#FFD9BD] px-3 py-1.5 rounded-full text-[13px] font-semibold text-[#1F2937]">
                 <svg viewBox="0 0 24 24" fill="none" className="w-3.5 h-3.5" stroke="#F87314" strokeWidth="2" aria-hidden="true"><path d="M20 7L9 18l-5-5" /></svg>
                 {cap}
               </span>
@@ -464,7 +464,7 @@ export function CategoryPageV9({
           </div>
         </div>
         <div
-          className="relative overflow-hidden h-[300px] md:h-[400px] lg:h-auto lg:aspect-[1320/525]"
+          className="relative overflow-hidden h-[240px] md:h-[360px] lg:h-auto lg:aspect-[1320/525]"
           style={{ backgroundImage: 'var(--color-orange-grad)' }}
         >
           {bannerImage && (

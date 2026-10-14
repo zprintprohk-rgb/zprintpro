@@ -1,6 +1,12 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放** — 2026-10-14 12:5x Kimi Work 会话（最终 commit+push 窗口）：
+> **当前状态**: ⚪ **已释放** — 2026-10-15 01:4x Kimi Work 会话（K3 01:14 指令执行完毕，commit 见 git log）：
+> ① HeroBanner 信息条 顶部→底部左锚（K3：顶部与导航蓝条撞色），dots 移右上角，移动端不变 ② PLP v9 首屏压缩（页眉 pt/breadcrumb/H1 字级/副标/胶囊/banner 移动高全链路缩 ≈ 桌面 -160px 移动 -130px），**文案逐字零改动护 GSC**。
+> 门检 tsc 54=基线增量 0 / encoding ✓。SSoT `docs/2026-10-15-hero-bar-bottom-and-plp-head-compress.md`。**本锁释放，后续会话可自由接管。**
+
+---
+
+> **上一状态**: ⚪ **已释放** — 2026-10-14 12:5x Kimi Work 会话（最终 commit+push 窗口）：
 > ① 本批 4 文件 commit：route.ts（询盘双收）+ HeroBanner.tsx（Hero 改版）+ SESSION_LOCK.md + `docs/2026-10-14-quote-email-and-hero-fix.md`。
 > ② 前次 commit `62cef6be`（12:23）被簇3 会话 reset 回收其提交时带走（其锁记录已如实记载），本次为其释放后重建。
 > ③ **push 携带 `962e28e9`（eco-flyers alt 修复，门童已过）一并上线**——其原拟攒批随下窗口，K3「一次 push 上线」指令优先，1 build 覆盖两 commit，特此透明记录。
@@ -12,7 +18,7 @@
 > **上一批**: ⚪ 已释放 — 2026-10-14 13:0x B1c 簇3 会话（deepseek hermes）释放：
 
 > **本批（刚释放）**: ① B1c 簇3 傳單/海報/摺頁三页 ×3语 ✅ `54eee706` 已 push（探针 9/9）：flyers/posters 类目块整换 + folded-leaflets PDP 三语 + faqSchema×4；千问稿编造量全清洗；3 槽 title-v5 入带；folded-leaflets imageAlt 三层嵌套 + MOQ100 陈旧 alt 修复；相似度 worst 0.418<0.55；tsc 54=54；全雷审计 0；IndexNow 9×200。SSoT `docs/2026-10-14-b1c-cluster3-flyers-posters-leaflets.md`。
-> ② Kimi Work 挂账处置 ✅ `962e28e9` **本地未推**（攒批，随下窗口）：eco-flyers imageAlt MOQ100 假值 → 真值 GEO alt ×3语（CSV 源头 + regen，audit #28 仍 0）。
+> ② Kimi Work 挂账处置 ✅ `962e28e9` ~~本地未推~~ **已于 12:5x 随 Kimi Work push 上线，18:2x 线上探针 3/3 绿（新真值 alt 在位、旧 MOQ100 绝迹）**：eco-flyers imageAlt MOQ100 假值 → 真值 GEO alt ×3语（CSV 源头 + regen，audit #28 仍 0）。
 > ⚠️ 并发记录： commit 期间对方会话暂存文件两次扫入均已剥离（reset+restore-staged）；**route.ts/HeroBanner.tsx 等对方成果仍在工作区未提交未推送，归其车道处置**（其锁记录称已 commit 4 文件，但本分支 log 未见——以 git log 为准）。
 
 > **上一批**: ⚪ 2026-10-14 12:4x Kimi Work 会话（K3 12:13 拍板方案② 执行完毕）：

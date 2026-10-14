@@ -117,17 +117,17 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   loading={index === 0 ? undefined : 'lazy'}
                   decoding="async"
                 />
-                {/* PC端文字内容 - 顶部居中 frosted 条 (避开图内左侧烘焙文案与右侧产品主体) + dots 右下角 */}
+                {/* PC端文字内容 - 底部左侧 frosted 条 (K3 2026-10-15: 顶部与导航蓝条撞色, 移底部; 锚左下=全5图烘焙文案/图标排下方净区) + dots 右上角 */}
                 <div className="hidden md:block absolute inset-0 z-10 pointer-events-none">
-                  {/* === 顶部信息条：价格胶囊 + 标题 + 描述 + CTA，单行紧凑，不遮图内文案 === */}
-                  <div className="absolute top-4 left-1/2 -translate-x-1/2 flex items-center gap-3 max-w-[92%] bg-white/85 backdrop-blur-md rounded-2xl shadow-lg px-4 py-2.5 pointer-events-auto">
+                  {/* === 底部信息条：价格胶囊 + 标题 + 描述 + CTA，单行紧凑，避开图内左侧烘焙文案与图标排 === */}
+                  <div className="absolute bottom-3 left-4 lg:left-8 flex items-center gap-3 max-w-[70%] bg-white/85 backdrop-blur-md rounded-2xl shadow-lg px-4 py-2 pointer-events-auto">
                     <span className="inline-block bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full shadow-md whitespace-nowrap flex-shrink-0">
                       {t.fromPrice} {slide.price}
                     </span>
                     <h2 className="text-base lg:text-lg font-bold text-slate-800 leading-snug whitespace-nowrap overflow-hidden text-ellipsis min-w-0 flex-shrink">
                       {slide.title}
                     </h2>
-                    <p className="hidden xl:block text-sm text-slate-600 border-l border-slate-300 pl-3 max-w-sm truncate flex-shrink">
+                    <p className="hidden xl:block text-sm text-slate-600 border-l border-slate-300 pl-3 max-w-[200px] truncate flex-shrink-0">
                       {slide.subtitle}
                     </p>
                     <Link
@@ -143,8 +143,8 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                     </Link>
                   </div>
 
-                  {/* === dots 指示器：右下角 frosted 胶囊，避开图内底部图标排 === */}
-                  <div className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/25 backdrop-blur-sm rounded-full px-3 py-2 pointer-events-auto">
+                  {/* === dots 指示器：右上角 frosted 胶囊（底部让位信息条） === */}
+                  <div className="absolute top-3 right-4 flex items-center gap-2 bg-black/25 backdrop-blur-sm rounded-full px-3 py-2 pointer-events-auto">
                     {t.slides.map((_, idx) => (
                       <button
                         key={idx}
