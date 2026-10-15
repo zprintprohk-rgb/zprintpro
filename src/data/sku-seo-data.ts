@@ -1436,23 +1436,23 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "掛牆年曆 騎馬釘・1本起印・HK$3起・4小時打稿 | 智印港",
-        "description": "掛牆年曆/掛牆年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "掛牆年曆",
-        "keywords": ["掛牆年曆","年曆","相框年曆","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆"],
+        "description": "智印港掛牆年曆印刷：標準 A3/A2 大版面 13 頁設計（封面+12 個月），1 本起印，300g 銅版紙或啞粉紙，金屬圈或騎馬釘裝訂，每月背面可印企業資訊。企業送禮、門店與辦公室牆面首選，免費排版與節慶標註，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "掛牆年曆印刷 — A3/A2 十三頁 金屬圈裝訂，1 本起印",
+        "keywords": ["掛牆年曆","掛牆月曆","掛曆印刷","年曆訂製","A3年曆","A2年曆","企業年曆","牆上月曆","2027年曆","年曆印刷"],
         "body": "掛牆年曆向來是家庭與辦公室最實用的年度用品，標準 A3 或 A2 掛牆尺寸配上 13 頁設計（封面加 12 個月），掛在大門、客廳或會議室牆上，每天抬頭可見，讓品牌全年持續曝光。紙材可選 250g 至 300g 銅版紙或啞粉紙，四色柯式或數碼印刷呈現細緻色彩，配合金屬圈裝訂與打掛孔，掛起穩固、翻頁順暢，無論家居自用還是公司展示都恰到好處。\n\n每年踏入 9 月，正是籌備來年月曆訂製的黃金季節，不少公司會趁這段時間把掛牆年曆納入年度月曆印刷計劃，一次過印足全年所需，避免臨近年底才趕工。掛牆年曆亦常見於零售店、診所、美容院等場所，掛在當眼位置就是全年免費廣告位；家庭用戶則可印上家庭照或寵物照，令實用年曆同時成為家居裝飾。一次印齊一年所需，慳時間之餘亦慳成本。\n\n下單後約 7–10 個工作天交付，港九新界一律免費速遞。\n\n收費按 HK$3-8/本 計算，最低起印量 1 本，量大價優，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Wall Calendars | 1 MOQ $0.40 Bulk 300+ | ZprintPro",
-        "description": "Custom wall calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Wall Calendars 100+ | ZprintPro",
+        "description": "Wall calendars in standard A3/A2 with a 13-page design (cover + 12 months), single-copy MOQ on 300g coated or matte stock, wire-o or saddle-stitch binding; the back of each month carries your company info. Free layout and holiday marking, DHL global 2-4 days, 30-second AI quote.",
+        "h1": "Wall Calendars from 1 | A3/A2 13-Page | ZprintPro",
         "keywords": ["wall calendars","custom wall calendars","wall calendars printing online","wall calendars free shipping","bulk wall calendars","wall calendars DHL","bespoke wall calendars","wall calendars wholesale","wall calendars pricing","calendar printing"],
         "body": "A wall calendar is the most traditional — and still one of the most effective — ways to keep a brand in a home or office for 365 days. The standard A3 or A2 wall calendar with a 13-page layout hangs on a single hook, and its large format makes dates, imagery and messaging readable from across the room.\n\nFor distributors, hardware stores and service companies, wall calendars are a classic dealer give-away: each one hangs in a customer's home or workshop all year, carrying your logo past every seasonal event. Schools and offices order them for shared planning spaces where the big print is genuinely useful, and event organizers use them as practical branded keepsakes.\n\nWhen you plan your run, wall calendar sizes matter more than for any other format: A3 (297x420mm) and A4 (210x297mm) are the standard sizes, and the one-page-per-month layout with a 13th page keeps the design balanced. The free layout service marks holidays and designs each month for you, and the back of each page can carry company information — doubling as a practical promotion sheet.\n\nPrinted in four-color offset or digital on 250-300g coated paper or matte paper, the pages hold bold color without glare under office lighting. Metal ring binding lets pages turn smoothly all year, and a hanging hole on the top page keeps installation simple — one nail or hook and the calendar is ready.\n\nPricing is HK$3-8 per book at a 1-unit minimum (bulk 300+ offset), with free US shipping on orders over $100. Digital production completes in 3-5 days and offset in 5-7, then DHL or FedEx delivers worldwide in 2-4 business days. Q4 is the peak season, so confirm your files before the end of October.\n\n**FAQ**\n\n**Q1: What sizes are available for wall calendars?**\nA1: A3 (297x420mm) and A4 (210x297mm), matching the wall calendar sizes most homes and offices expect.\n\n**Q2: How many pages does the calendar include?**\nA2: The standard design is a 13-page layout — one page per month plus a cover — with a hanging hole for easy installation.\n\n**Q3: Can I print information on the back of pages?**\nA3: Yes — the back of each page can carry company information, turning the calendar into a practical dual-purpose promotion.\n\nReady to order your wall run? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page, and lock early-bird pricing before the Q4 peak."
       },
       "ja": {
         "title": "壁掛けカレンダー｜ノベルティ｜1冊〜 ¥50〜｜ZprintPro",
-        "description": "壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "Standard A3 or A2 wall calendars",
-        "keywords": ["壁掛けカレンダー","壁掛けカレンダー 印刷","wall calendars","カレンダー印刷","卓上カレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","ミニカレンダー","写真カレンダー"],
+        "description": "壁掛けカレンダーは標準A3/A2の13ページ設計（表紙+12ヶ月）、1部から。300gコート紙またはマット紙、金属リングまたは中綴じ製本、毎月裏面に会社情報を印刷可能。企業ギフト・店舗・オフィスの壁面に最適。無料レイアウトと祝日マーク付き、30秒AI見積り。",
+        "h1": "壁掛けカレンダー 1部〜：A3/A2 13ページ・リング綴じ",
+        "keywords": ["壁掛けカレンダー","壁掛けカレンダー 印刷","カレンダー印刷","企業カレンダー","2027年カレンダー","A3カレンダー","A2カレンダー","リング綴じ","ギフトカレンダー","wall calendars"],
         "body": "家庭やオフィスの壁に一年間飾られる壁掛けカレンダーは、毎日必ず目にする定番の販促媒体です。ZprintProの壁掛けカレンダーは、標準A3・A2サイズの13ページ構成で、見やすさと美しさを両立しました。カレンダー印刷ならではの耐久性と発色の良さで、一年中快適にお使いいただけます。\n\n取引先・得意先への年始挨拶として最も定番のアイテムです。月ごとのページ裏面には企業情報やサービス案内を印刷でき、広告としての効果も高まります。工場や事務所、学校、飲食店など、多くの人が出入りする場所に掛けることで、自然な形でブランドをアピールできます。\n\n用紙は250g〜300gのコート紙またはマット紙を使用し、金属リング装丁でなめらかにページをめくれます。サイズはA3（297×420mm）またはA4（210×297mm）、印刷は四色オフセットまたはデジタル、吊り下げ用の穴あけ加工付きです。\n\n価格は1部HK$3〜8（数量により変動）。オフセット印刷は300部から、デジタル印刷は小ロットに対応します。標準納期は5〜7営業日、航空便にて日本へ約3〜5日でお届けします。年末の繁忙期に備えて10月末までのご発注をおすすめします。\n\n原稿仕様：解像度300DPI以上・CMYKカラーモード・塗り足し3mm・フォントアウトライン化を満たすデータでご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 壁掛けカレンダーは1部いくらですか？**\n2027年の壁掛けカレンダーは1部HK$3〜8（2026-09更新、A3/A4サイズ・250〜300g紙・数量により変動）。月面レイアウトと祝日マーク制作は無料です。\n\n**Q2: 最小ロットはいくつですか？**\nオフセット印刷は300部から受注し、デジタル印刷はより小ロットにも対応しています。最終ロットと段階価格は製品ページのお見積もりをご確認ください。\n\n**Q3: ページ裏面への企業情報印刷は可能ですか？**\n可能です。各月ページの裏面に会社情報（連絡先・サービス・クーポン）を印刷し、表紙にはロゴとブランドカラーを反映。表紙＋12ヶ月の13ページ構成をフルカスタムできます。\n\n一年間じっくり見てもらえる壁掛けカレンダーで、ブランド認知を着実に積み上げましょう。ZprintProの自社工場が高品質印刷を短納期で実現します。まずは日本語対応のお見積もりをご依頼ください。"
       }
     },
@@ -1460,7 +1460,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | 智印港",
       "en": "Custom wall calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "壁掛けカレンダー / 高品質 | 壁掛けカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
+      "ja": "壁掛けカレンダー / 企業ギフト | 壁掛けカレンダー印刷 A3/A2 13ページ リング綴じ | ZprintPro"
     }
   },
   "desk-calendars": {
@@ -1472,23 +1472,23 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "座檯年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
-        "description": "座檯年曆/座檯年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "座檯年曆",
-        "keywords": ["座檯年曆","年曆","calendar","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆"],
-        "body": "座檯年曆以三角形座檯設計穩固企立，放在辦公桌、接待處或收銀枱上都不易倒下，配合 A5 或 A4 尺寸佔位恰到好處，讓員工與客戶每日都能看到品牌資訊，是辦公室與店舖最穩定的日常廣告位。紙材選用 200g 至 250g 銅版紙或卡紙，四色數碼或柯式印刷，配三角座架與騎馬釘或膠裝，翻頁順手、耐用一整年。\n\n每年 9 月前後是月曆訂製季節的開端，不少企業會趁這段時間為來年準備座檯月曆印刷，放在每位員工的辦公桌或接待前枱，全年品牌接觸；座檯年曆亦常見於銀行、保險、地產代理等前線行業，作為送客小禮品，日日入眼、印象自然加深，比單次宣傳品更持久。每日一見，品牌自然記入腦海，是性價比極高的常駐廣告。\n\n下單後7-10 個工作天交貨，港九新界免費速遞。\n\n以上收費每本 HK$3-8，最低起印量 1 本；大批量落單可享更優惠價格，歡迎查詢批量報價。"
+        "description": "智印港座檯年曆印刷：三角座架穩固企立，A5/A4 桌面尺寸，1 本起印，200-250g 銅版紙或卡紙配 1-2mm 灰板底座，騎馬釘或膠裝。收銀位、接待處與辦公桌日常廣告位首選，免費排版與節慶標註，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "座檯年曆印刷 — 三角座架 灰板底座，1 本起印",
+        "keywords": ["座檯年曆","桌曆印刷","座檯月曆","三角座架年曆","辦公室年曆","收銀位月曆","企業年曆","2027年曆","年曆訂製","桌曆訂造"],
+        "body": "座檯年曆以三角形座檯設計穩固企立，放在辦公桌、接待處或收銀枱上都不易倒下，配合 A5 或 A4 尺寸佔位恰到好處，讓員工與客戶每日都能看到品牌資訊，是辦公室與店舖最穩定的日常廣告位。紙材選用 200g 至 250g 銅版紙或卡紙，四色數碼或柯式印刷，配三角座架與騎馬釘或膠裝，翻頁順手、耐用一整年。\n\n每年 9 月前後是月曆訂製季節的開端，不少企業會趁這段時間為來年準備座檯月曆印刷，放在每位員工的辦公桌或接待前枱，全年品牌接觸；座檯年曆亦常見於銀行、保險、地產代理等前線行業，作為送客小禮品，日日入眼、印象自然加深，比單次宣傳品更持久。每日一見，品牌自然記入腦海，是性價比極高的常駐廣告。\n\n數碼 3-5 個工作天、柯式 5-7 天交貨，港九新界免費速遞。\n\n以上收費每本 HK$3-8，最低起印量 1 本；大批量落單可享更優惠價格，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Desk Calendars | 1 MOQ $0.40 Bulk 300+ | ZprintPro",
-        "description": "Custom desk calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Desk Calendars 100+ | ZprintPro",
+        "description": "Desk calendars on a sturdy triangular easel base, A5/A4 footprints with 1-2mm greyboard, single-copy MOQ on 200-250g coated or card stock, saddle-stitch or perfect bound. The steady everyday ad slot for counters, receptions and desks. Free layout, DHL global 2-4 days, 30-second AI quote.",
+        "h1": "Desk Calendars from 1 | Triangular Easel | ZprintPro",
         "keywords": ["desk calendars","custom desk calendars","desk calendars printing online","desk calendars free shipping","bulk desk calendars","desk calendars DHL","bespoke desk calendars","desk calendars wholesale","desk calendars pricing","calendar printing"],
         "body": "Desk calendars sit where decisions happen — next to the monitor, on the reception counter, in the meeting room. The triangular desk design stands stable without a bulky base, so it looks clean in an office landscape while keeping twelve months of dates, deadlines and brand messages within arm's reach.\n\nFor corporate gifting and events, a desk calendar is the giveaway that keeps working all year: a client sees your logo on every business day, not just once at the trade show. Small businesses and retail stores print their own promotions, contact details and seasonal offers on the monthly pages, turning a practical item into standing advertising at every desk it lands on.\n\nAvailable in A5 (148x210mm) and A4 (210x297mm), desk calendars fit neatly into the standard calendar sizes buyers expect, and the free layout service marks holidays and designs each month for you. If you are comparing typical calendar sizes across suppliers, the stable triangle base and smooth page turning are what set this format apart.\n\nPrinted four-color in digital or offset on 200-250g coated paper or card, the pages keep ink sharp and colors accurate through a full year of handling. Finishing is saddle stitch or glue binding, mounted on a triangular stand base that keeps the calendar stable and beautiful on any desk surface.\n\nOrders price from HK$3-8 per book at a 1-unit minimum (bulk 300+ offset), with free US shipping on orders over $100. Digital runs finish in 3-5 days and offset in 5-7, followed by 2-4 business days of worldwide DHL or FedEx delivery. Because Q4 is the peak season, confirm your artwork before the end of October.\n\n**FAQ**\n\n**Q1: What sizes are available for desk calendars?**\nA1: A5 (148x210mm) and A4 (210x297mm), both within the standard calendar sizes for easy planning.\n\n**Q2: Will the calendar stand on its own?**\nA2: Yes — the triangular stand base keeps it stable and upright, making it perfect for office desk display.\n\n**Q3: Can I customize the monthly pages?**\nA3: Yes — the free layout service designs each month with holiday markings, and your logo and promotions print on the pages.\n\nReady to order your desk run? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page, and confirm your artwork before the end of October to beat the peak."
       },
       "ja": {
         "title": "卓上カレンダー｜ノベルティ 定番｜1冊〜¥50〜｜ZprintPro",
-        "description": "デスクカレンダーのデスクカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "Triangular desk design",
-        "keywords": ["デスクカレンダー","デスクカレンダー 印刷","desk calendars","カレンダー印刷","卓上カレンダー","壁掛けカレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","ミニカレンダー"],
+        "description": "卓上カレンダーは三角スタンドで安定設置、A5/A4サイズ、1部から。200-250gコート紙またはカートン+1-2mm灰板台座、中綴じまたは無線綴じ。レジ横・受付・オフィスデスクの定番広告枠。無料レイアウトと祝日マーク付き、30秒AI見積り。",
+        "h1": "卓上カレンダー 1部〜：三角スタンド・灰板台座",
+        "keywords": ["卓上カレンダー","卓上カレンダー 印刷","デスクカレンダー","カレンダー印刷","三角スタンド","企業カレンダー","2027年カレンダー","レジ周り販促","デスク販促","desk calendars"],
         "body": "オフィスのデスクに毎日置かれる卓上カレンダーは、企業ブランドをさりげなくアピールする理想的なアイテムです。ZprintProの卓上カレンダーは、三角形のスタンドデザインで安定して美しく、デスクまわりをすっきりと整えます。カレンダー印刷の品質管理と納期厳守で、安心してご利用いただけます。\n\n受付や応接室に置けば来客の目に留まりやすく、クライアントへのノベルティとして年間通じて使ってもらえるため、長期間の露出効果が期待できます。社内用として部署ごとにデザインを変えれば、スケジュール管理と社内コミュニケーションの両方に活用できます。\n\n用紙は200g〜250gのコート紙またはカード紙を使用し、三角形の座架でしっかりと自立します。サイズはA5（148×210mm）またはA4（210×297mm）。印刷は四色デジタルまたはオフセット、仕上げは三角座架・中綴じ・無線綴じから選択可能です。\n\n1部あたりHK$3〜8（数量により変動）でご注文いただけます。オフセットは300部から、デジタルは小ロットにも対応。標準納期は5〜7営業日で、航空便なら日本へ約3〜5日でお届けします。年末の駆け込み需要を避けるため、10月末までのご発注がおすすめです。\n\n原稿仕様：データは解像度300DPI以上、CMYKカラーモード、塗り足し3mm、フォントのアウトライン化を推奨します。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: 卓上カレンダーの価格はいくらですか？**\n卓上カレンダーの価格は1部HK$3〜8（2026-09更新、A3/A4サイズ・250〜300g紙・数量により変動）です。月面レイアウトと祝日マーク制作は無料で承ります。\n\n**Q2: カレンダーの最小ロットは？**\n最小ロットは製法で異なり、オフセット印刷は300部から、デジタル印刷ではより小ロットにも対応します。最終ロットと段階価格は、製品ページのお見積もりでご確認ください。\n\n**Q3: 9月にカレンダーを発注して間に合いますか？**\nQ4はピークシーズンのため、製造枠は発注確定順に埋まります。10月末までのご発注を推奨しており、特急の日程はWhatsAppでご相談ください。\n\n毎日の目に触れる卓上カレンダーで、貴社ブランドの存在感を高めませんか。ZprintProが日本語サポートで、デザインから納品までワンストップ対応します。お気軽にお見積もりをご依頼ください。"
       }
     },
@@ -1496,7 +1496,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | 智印港",
       "en": "Custom desk calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "デスクカレンダー / 高品質 | デスクカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
+      "ja": "卓上カレンダー / 企業ギフト | 卓上カレンダー印刷 三角スタンド A5・A4 | ZprintPro"
     }
   },
   "custom-calendars": {
@@ -1508,31 +1508,31 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "定製年曆 | 企業禮品 多款式 | 1本起 HK$3起 | 智印港",
-        "description": "定制年曆/定制年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。智印港提供專業定制年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["定制年曆","年曆","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆","2027年曆"],
-        "body": "定製年曆主打專屬設計，每頁都可以印上公司的產品、服務或活動資訊，例如產品圖、優惠日程、節慶日期等，十二個月十二個版面，讓客戶每個月都收到不同的品牌訊息；配合 250g 至 300g 藝術紙或銅版紙，四色柯式或數碼印刷，加上燙金、局部 UV、金屬圈或騎馬釘等後加工，質感媲美禮品級數，是企業送客戶的最佳選擇。\n\n臨近 9 月的月曆訂製季節，不少企業會把定製年曆當作年度禮品主力，趁旺季前落實設計與月曆印刷安排，確保年底前能送到客戶手上；尺寸可選 A3、A4 或完全客製，無論是氣勢十足的大版面還是精緻小巧的冊子都做得來，最適合品牌形象鮮明、想與眾不同的公司，把年曆變成流動的企業畫冊。\n\n下單後7-10 個工作天交貨，港九新界免費速遞。\n\n定價每本 HK$3-8，最低起印量 1 本，具體費用視乎後加工與尺寸而定，歡迎查詢批量報價。"
+        "description": "智印港訂製年曆：十二個月十二個版面，產品圖、優惠日程與品牌故事逐月刊出，1 本起印，250-300g 藝術紙或銅版紙，燙金、局部 UV 與金屬圈後加工可選，支援可變數據（每頁不同分店或員工資訊）。企業禮品深度定制首選，免費排版，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "訂製年曆印刷 — 十二版面 企業LOGO 燙金可選，1 本起印",
+        "keywords": ["訂製年曆","訂造年曆","企業年曆訂製","LOGO年曆","公司年曆","禮品年曆","2027年曆","品牌月曆","燙金年曆","年曆設計"],
+        "body": "定製年曆主打專屬設計，每頁都可以印上公司的產品、服務或活動資訊，例如產品圖、優惠日程、節慶日期等，十二個月十二個版面，讓客戶每個月都收到不同的品牌訊息；配合 250g 至 300g 藝術紙或銅版紙，四色柯式或數碼印刷，加上燙金、局部 UV、金屬圈或騎馬釘等後加工，質感媲美禮品級數，是企業送客戶的最佳選擇。\n\n臨近 9 月的月曆訂製季節，不少企業會把定製年曆當作年度禮品主力，趁旺季前落實設計與月曆印刷安排，確保年底前能送到客戶手上；尺寸可選 A3、A4 或完全客製，無論是氣勢十足的大版面還是精緻小巧的冊子都做得來，最適合品牌形象鮮明、想與眾不同的公司，把年曆變成流動的企業畫冊。\n\n數碼 3-5 個工作天、柯式 5-7 天交貨，港九新界免費速遞。\n\n定價每本 HK$3-8，最低起印量 1 本，具體費用視乎後加工與尺寸而定，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Custom Calendars 2027 | 1 MOQ + $0.40/pc | ZprintPro",
-        "description": "Custom custom calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Custom Calendars 100+ | ZprintPro",
-        "keywords": ["custom calendars","custom custom calendars","custom calendars printing online","custom calendars free shipping","bulk custom calendars","custom calendars DHL","bespoke custom calendars","custom calendars wholesale","custom calendars pricing","calendar printing"],
+        "description": "Fully custom calendars: twelve months, twelve layouts - product shots, promo dates and brand story page by page, single-copy MOQ on 250-300g art or coated stock with optional foil, spot UV and wire-o; variable data prints different branch or staff info per page. Free layout, DHL global 2-4 days, 30-second AI quote.",
+        "h1": "Custom Calendars from 1 | 12 Branded Layouts | ZprintPro",
+        "keywords": ["custom calendars","personalised calendars","custom calendar printing","logo calendars","company calendars","corporate gift calendars","branded calendars 2027","calendar design","bulk custom calendars","custom calendars printing online"],
         "body": "A custom calendar is one of the few printed items people keep in front of them for a full year — which is why it earns its place in retail, e-commerce and corporate gifting programs. ZprintPro builds them wire-bound with four-color CMYK and premium materials, so every page doubles as a branded display rather than a passive date grid.\n\nBecause each page can feature company products or services, a custom calendar becomes a rolling twelve-month campaign. A skincare brand can walk customers through its routine month by month, a real estate team can showcase listings, and a restaurant can highlight seasonal menus — all while the logo stays in view all year. Corporate gifting programs and events use the same pages to thank clients and partners at scale.\n\nWhen you plan your run, calendar sizes matter: A3 and A4 are the most common formats, and fully custom dimensions are available for unusual layouts. Buyers comparing calendar dimensions before ordering can start from the free twelve-month templates with holiday markings, and the layout service includes monthly page design at no extra charge.\n\nPrinted on 250-300g art paper or coated paper — with 300g options for extra rigidity and accurate color — the pages reproduce photography and illustration cleanly in four-color offset or digital. Metal ring or saddle-stitch binding keeps page turning smooth and the calendar durable across the year, while premium accents such as foil stamping and spot UV can be added, and fully custom printing puts your logo, brand story and product images on every page.\n\nPricing is HK$3-8 per book with a 1-unit minimum (bulk 300+ offset) order, and free US shipping applies on orders over $100. Digital production runs 3-5 days and offset 5-7, then DHL or FedEx delivers worldwide in 2-4 business days. With Q4 as the peak season, confirming your files before the end of October keeps delivery comfortable.\n\n**FAQ**\n\n**Q1: What calendar sizes can I order?**\nA1: Standard calendar sizes include A3 and A4, and fully custom dimensions are available to match your layout.\n\n**Q2: Can I feature my own products on the pages?**\nA2: Yes — every page can feature company products or services, and the free layout service designs each month with holiday markings.\n\n**Q3: How long does production take?**\nA3: Digital runs complete in 3-5 days and offset in 5-7, followed by 2-4 business days of worldwide shipping via DHL or FedEx.\n\nReady to start your 2027 run? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page to lock early-bird pricing before the Q4 rush."
       },
       "ja": {
         "title": "オリジナルカレンダー | 業務用 | 1冊〜 ¥50〜 | ZprintPro",
-        "description": "カスタムカレンダーのカスタムカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
-        "keywords": ["カスタムカレンダー","カスタムカレンダー 印刷","custom calendars","カレンダー印刷","卓上カレンダー","壁掛けカレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","ミニカレンダー"],
+        "description": "オリジナルカレンダーは12ヶ月12レイアウト: 製品写真、キャンペーン日程、ブランドストーリーを月ごとに掲載、1部から。250-300gアート紙またはコート紙に箔押し・局部UV・リング綴じも選択可。可変データで支店・従業員情報をページ別に印刷可能。無料レイアウト、30秒AI見積り。",
+        "h1": "オリジナルカレンダー 1部〜：月別ブランドレイアウト・箔押し対応",
+        "keywords": ["オリジナルカレンダー","オリジナルカレンダー 印刷","カレンダー オーダーメイド","企業カレンダー","2027年カレンダー","ロゴ入りカレンダー","ノベルティカレンダー","箔押しカレンダー","カレンダー製作","custom calendars"],
         "body": "2027年カレンダーをお考えなら、ZprintProのオリジナルカレンダー印刷をご検討ください。各ページに貴社の製品やサービスを掲載できる完全オーダーメイドのカレンダーで、ブランドの存在感を毎日届けます。\n\n年始の挨拶や販促品として、取引先や得意先へ配るのに最適です。毎日目にするカレンダーは、企業ロゴを自然に記憶に残す長期広告媒体。月替わりで新商品やキャンペーン情報を掲載すれば、年間を通して継続的なアプローチが可能になります。\n\n表紙にロゴとブランドカラーを反映し、各月ページの裏面には連絡先やサービス案内、クーポンを印刷。月面レイアウトと祝日マークの制作は無料でご提供し、表紙と12ヶ月の13ページ構成をフルカスタムできます。\n\n用紙は250g〜300gのアート紙またはコート紙を採用。300g銅版紙・マット紙ならではの高い紙厚で、写真やイラストの色再現が正確です。サイズはA3・A4から完全オーダーメイドまで対応。印刷は四色オフセットまたはデジタル、仕上げは箔押し・スポットUV・金属リング・中綴じからお選びいただけます。\n\n価格は1部HK$3〜8（A3/A4・250〜300g紙・数量により変動）。オフセット印刷は300部から、デジタル印刷はより小ロットに対応します。標準納期は5〜7営業日で、航空便なら日本へ約3〜5日でお届けします。Q4はピークシーズンのため、10月末までのご発注を推奨します。\n\n原稿仕様：ご入稿データは解像度300DPI以上、カラーモードCMYK、塗り足し3mmでご用意ください。フォントはアウトライン化してください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: カレンダー印刷は1部いくらですか？**\n2027年の壁掛け・卓上カレンダーは1部HK$3〜8（2026-09更新、A3/A4サイズ・250〜300g紙・数量により変動）。月面レイアウトと祝日マーク制作は無料。WhatsAppでスピード見積もりをご依頼ください。\n\n**Q2: カレンダーの最小ロットは？**\nロットは製法により異なります。オフセット印刷は300部から、デジタル印刷はより小ロットに対応。最終ロットと段階価格は製品ページの見積もりをご確認ください。\n\n**Q3: カレンダーに会社情報や顧客名を入れられますか？**\n可能です。各月ページの裏面に会社情報（連絡先・サービス・クーポン）を印刷し、表紙にロゴとブランドカラーを反映。表紙＋12ヶ月の13ページ構成をフルカスタムできます。\n\nオリジナルカレンダーで2027年のブランド訴求を始めましょう。日本語対応スタッフがお見積もりと納期を丁寧にご案内します。まずはWhatsAppまたはお問い合わせフォームからご相談ください。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
-      "en": "Custom custom calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "オリジナルカレンダー / 卓上・壁掛け | 香港のオリジナルカレンダー印刷 | ZprintPro"
+      "zh-hk": "訂製年曆 / 企業禮品 | 香港訂製年曆印刷 十二版面 企業LOGO 燙金可選 | 智印港",
+      "en": "Custom calendars / corporate gifting | 12 branded layouts, foil optional | ZprintPro",
+      "ja": "オリジナルカレンダー / 企業ギフト | オリジナルカレンダー印刷 12レイアウト 箔押し対応 | ZprintPro"
     }
   },
   "mini-calendars": {
@@ -1544,31 +1544,31 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "迷你年曆 騎馬釘・1本起印・HK$3起・4小時打稿 | 智印港",
-        "description": "迷你年曆/迷你年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。智印港提供專業迷你年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["迷你年曆","年曆","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆","2027年曆"],
+        "description": "智印港迷你年曆印刷：信用卡大小的 85×55mm 口袋尺寸，1 本起印，150-200g 銅版紙或卡紙，四色數碼輕印，騎馬釘或單張裁切，放錢包衫袋隨手可查。大量派發、夾寄與活動手信首選，免費排版，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "迷你年曆印刷 — 85×55mm 口袋尺寸 大量派發，1 本起印",
+        "keywords": ["迷你年曆","口袋年曆","迷你月曆","信用卡年曆卡","年曆卡印刷","大量派發年曆","年曆卡訂製","2027年曆","迷你曆","隨身年曆"],
         "body": "迷你年曆小巧便攜，尺寸約 85×55mm 或 90×60mm，跟信用卡大小相若，可以放入錢包、銀包或衫袋，隨時掏出來查日期，是年輕人喜愛的創意禮品。紙材選用 150g 至 200g 銅版紙或卡紙，四色數碼印刷，配騎馬釘或單張裁切，輕薄之餘色彩依然鮮明，印上品牌 logo 與聯絡資料，就是隨身攜帶的宣傳品。\n\n這類細小年曆特別適合在 9 月起的月曆訂製季節派發，無論是展會、市集、校園活動還是開幕禮，派到手上即時使用、長期保留，宣傳壽命遠比傳單長；亦常見於信用卡公司、電訊商、咖啡店等品牌作為會員小禮物，成本輕、覆蓋廣，令品牌在人群之中低調但持續曝光，尤其適合預算有限又想日日見到品牌的新品牌與小店。\n\n約 7–10 個工作天交貨，並提供港九新界免費速遞服務。\n\n每本收費 HK$3-8，最低起印量 1 本，量大價優，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Mini Calendars | Wire-Bound | 1 MOQ Bulk 300+ | ZprintPro",
-        "description": "Custom mini calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Mini Calendars 100+ | ZprintPro",
+        "description": "Mini calendars at credit-card size (85x55mm), single-copy MOQ on 150-200g coated or card stock, full-colour digital with saddle-stitch or flat cut - slips into wallets and pockets for date checks anywhere. Built for mass handouts, mail inserts and event giveaways. Free layout, 30-second AI quote.",
+        "h1": "Mini Calendars from 1 | Credit-Card Size | ZprintPro",
         "keywords": ["mini calendars","custom mini calendars","mini calendars printing online","mini calendars free shipping","bulk mini calendars","mini calendars DHL","bespoke mini calendars","mini calendars wholesale","mini calendars pricing","calendar printing"],
         "body": "Mini calendars are the pocket-sized workhorse of promotional printing — small enough to fit in a wallet or pocket, and useful enough that people actually carry them. At around 85x55mm or 90x60mm, they slip into wallet slots, cash tills and giveaway bags without a second thought.\n\nRetailers and banks slip mini calendars into every transaction — a checkout-counter giveaway that keeps the brand in the customer's pocket through the year. Salons, gyms and cafés use them as loyalty-sized reminders, and event organizers hand them out at booths where visitors will not carry anything bulky back to the office.\n\nWhile most calendar sizes are designed for walls or desks, the mini format keeps the same readable month grid as a standard calendar size layout in a package small enough to live in a pocket. The free layout service designs each month with holiday markings, so the small canvas stays complete and easy to read.\n\nPrinted in four-color digital on 150-200g coated paper or card, the pages stay crisp and durable despite the small format. Finishing is saddle stitch for a booklet feel, or single-sheet cutting when you want individual month pages — a flexible choice for giveaway runs and seasonal mailers.\n\nPricing runs HK$3-8 per book at a 1-unit minimum (bulk 300+ offset), and free US shipping applies on orders over $100. Digital production wraps in 3-5 days, then DHL or FedEx delivers worldwide in 2-4 business days. Q4 is the peak season, so confirm your artwork before the end of October to secure your slot.\n\n**FAQ**\n\n**Q1: How small are mini calendars?**\nA1: They measure about 85x55mm or 90x60mm — small enough to fit in a wallet or pocket.\n\n**Q2: Can I still print a full twelve-month layout?**\nA2: Yes — the compact format keeps a complete month-by-month grid, with the free layout service adding holiday markings.\n\n**Q3: What is the minimum order?**\nA3: Orders start at 1,000 units, with digital printing well suited to typical giveaway quantities.\n\nReady to order your pocket-sized run? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page, and secure early-bird pricing before the Q4 rush."
       },
       "ja": {
         "title": "ミニカレンダー 2027 ノベルティ 1冊〜 ¥50〜 | ZprintPro",
-        "description": "ミニカレンダーのミニカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
-        "keywords": ["ミニカレンダー","ミニカレンダー 印刷","mini calendars","カレンダー印刷","卓上カレンダー","壁掛けカレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","写真カレンダー"],
+        "description": "ミニカレンダーはクレジットカードサイズ 85×55mm、1部から。150-200gコート紙またはカートン、デジタル4色印刷、中綴じまたはカット仕上げ。財布やポケットに収まり、どこでも日付確認。大量配布・DM同封・イベント配布に最適。無料レイアウト、30秒AI見積り。",
+        "h1": "ミニカレンダー 1部〜：カードサイズ・大量配布向け",
+        "keywords": ["ミニカレンダー","ミニカレンダー 印刷","カードサイズカレンダー","ミニ月めくり","カレンダー印刷","2027年カレンダー","大量配布","DM同封","ノベルティ","mini calendars"],
         "body": "財布やポケットにすっぽり収まるミニカレンダーは、配布してもすぐに処分されず、長く手元に置いてもらえる小型の販促アイテムです。ZprintProのミニカレンダーは、コンパクトで持ち運びやすく、毎日使ってもらえる便利さが特長です。カレンダー印刷の小さな一枚が、大きな存在感を生みます。\n\n美容室やネイルサロン、整体・マッサージ店など、リピート来店を促したいお店との相性抜群。予約カード感覚で配れば、次回来店のきっかけになります。展示会やイベントのノベルティとしても好評で、かさばらず持ち帰りやすいため配布率が高く、限定版として毎年集めてもらえる楽しみも生まれます。\n\n用紙は150g〜200gのコート紙またはカード紙を使用し、約85×55mmまたは90×60mmのポケットサイズで製作します。印刷は四色デジタル、仕上げは中綴じまたは単票カットから選択可能です。\n\n価格は1部HK$3〜8（数量により変動）です。オフセットは300部から、デジタル印刷ならより小ロットでも製作できます。納期は標準で5〜7営業日、航空便で日本へ約3〜5日でお届けします。年末需要が集中する前のご発注がおすすめです。\n\n原稿仕様：解像度300DPI以上、CMYKカラーモード、塗り足し3mm、フォントはアウトライン化の上ご入稿ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: ミニカレンダーは1部いくらですか？**\n2027年のカレンダーは1部HK$3〜8（2026-09更新、サイズ・紙・数量により変動）。月面レイアウトと祝日マーク制作は無料、WhatsAppでスピード見積もりを受け付けています。\n\n**Q2: 最小ロットはどのくらいですか？**\nオフセットなら300部から、デジタル印刷ならより小ロットから製作できます。最終ロットと段階価格は、製品ページの見積もり機能をご利用ください。\n\n**Q3: カレンダーに店舗情報やロゴを入れられますか？**\n可能です。各月ページの裏面に連絡先やサービス、クーポンなどを印刷し、表紙にロゴとブランドカラーを反映できます。表紙＋12ヶ月の13ページ構成をフルカスタム可能です。\n\n小さくても存在感のあるミニカレンダーで、お客様とのつながりを一年間続けませんか。ZprintProが無料レイアウトから高品質印刷までトータルサポートします。ぜひお気軽にご相談ください。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
-      "en": "Custom mini calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "ミニカレンダー / 卓上・壁掛け | 香港のミニカレンダー印刷 | ZprintPro"
+      "zh-hk": "迷你年曆 / 大量派發 | 香港迷你年曆印刷 85×55mm 口袋尺寸 數碼輕印 | 智印港",
+      "en": "Mini calendars / mass handouts | credit-card size 85x55mm digital | ZprintPro",
+      "ja": "ミニカレンダー / 大量配布 | ミニカレンダー印刷 カードサイズ 85×55mm | ZprintPro"
     }
   },
   "photo-frame-calendars": {
@@ -1580,31 +1580,31 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "相框年曆 | 騎馬釘 1本起印 HK$3起 4小時打稿 | 智印港",
-        "description": "相框年曆/相框年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "結合相框功能，可替換照片。實用美觀，家庭必備。智印港提供專業相框年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["相框年曆","年曆","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆","2027年曆"],
+        "description": "智印港相框年曆印刷：相框與年曆二合一，硬紙板相架直立擺放，1 本起印，250-300g 銅版紙或相紙，A5/A4 擺書櫃電視櫃床頭，照片可隨時替換。家品禮品與溫馨手信首選，免費排版與節慶標註，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "相框年曆印刷 — 硬紙板相架 可換照片，1 本起印",
+        "keywords": ["相框年曆","相架年曆","照片年曆","相框月曆","家居年曆","禮品年曆","2027年曆","可換相年曆","桌面年曆","年曆相框"],
         "body": "相框年曆結合相框與年曆兩種功能，照片可隨時替換，實用又美觀，是家庭必備的年度擺設。紙材選用 250g 至 300g 銅版紙或相紙，色彩還原細緻，配合硬紙板相架底座與騎馬釘，A5 或 A4 尺寸擺在書櫃、電視櫃或床頭，日日見到家人合照之餘，日期一目了然，溫馨與實用兼得。\n\n在 9 月起的月曆印刷季節，不少家庭會趁年尾為來年製作一本屬於全家人的相框年曆，放結婚照、BB 成長照或旅行回憶，當作家居裝飾之餘亦是一份心意禮物；企業亦可用產品照或團隊合照製作，送給客戶更具人情味，比起普通年曆多一分溫度，特別受注重情感的市場歡迎，亦適合作為長輩壽宴、週年紀念的回禮小禮品。\n\n生產連送貨約 7–10 個工作天，港九新界免運費速遞。\n\n收費每本 HK$3-8，最低起印量 1 本；如需大量送禮，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Custom Photo Frame Calendars | 1 MOQ $0.40 | ZprintPro",
-        "description": "Custom photo frame calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Photo Frame Calendars 100+ | ZprintPro",
+        "description": "Photo-frame calendars combine a swap-in photo frame with the yearly grid: hardboard easel stands upright on shelves and bedside tables, single-copy MOQ on 250-300g coated or photo stock, A5/A4. A homeware gift line that keeps family photos and dates in one glance. Free layout, DHL global 2-4 days, 30-second AI quote.",
+        "h1": "Photo Frame Calendars from 1 | Swappable Photos | ZprintPro",
         "keywords": ["photo frame calendars","custom photo frame calendars","photo frame calendars printing online","photo frame calendars free shipping","bulk photo frame calendars","photo frame calendars DHL","bespoke photo frame calendars","photo frame calendars wholesale","photo frame calendars pricing","calendar printing"],
         "body": "Photo frame calendars combine a working date grid with a real photo frame — the cover holds a favorite picture, and the photo can be replaced whenever you want. Built on a cardboard frame base, they stand upright like a desk ornament instead of lying flat like a leaflet.\n\nThis makes them one of the most personal corporate gifts available: a real estate firm can frame a family home photo, a school can feature student artwork, and a family-run business can print a founder's portrait on the cover. Wedding and event planners order them as keepsake favors, and retail stores stock them as gifts customers buy for parents and grandparents.\n\nAvailable in A5 (148x210mm) and A4 (210x297mm), they follow the standard calendar sizes buyers expect for desk display, and the free layout service designs each month with holiday markings. If you are checking typical calendar sizes before ordering, the photo frame format adds no extra desktop footprint — the frame is the calendar.\n\nPrinted four-color in digital or offset on 250-300g coated paper or photo paper, the images reproduce with the depth photo paper is known for. Pages are saddle-stitched, and the cardboard frame base holds everything upright. Because the photo is replaceable, the calendar stays current long after the year ends — swap in a new picture and the frame keeps working.\n\nOrders price from HK$3-8 per book with a 1-unit minimum (bulk 300+ offset), and free US shipping applies over $100. Digital runs take 3-5 days and offset 5-7, then DHL or FedEx delivers worldwide in 2-4 business days. To beat the Q4 peak, confirm your artwork before the end of October.\n\n**FAQ**\n\n**Q1: Can I change the photo in the calendar?**\nA1: Yes — the combined photo frame function lets you replace the picture whenever you like, so the frame can be reused after the year.\n\n**Q2: What materials are used?**\nA2: 250-300g coated paper or photo paper with a cardboard frame base, finished with saddle stitching.\n\n**Q3: What sizes are available?**\nA3: A5 (148x210mm) and A4 (210x297mm), following the standard calendar sizes for desk display.\n\nReady to order a gift that keeps giving? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page to start your photo frame calendar project."
       },
       "ja": {
         "title": "フォトフレームカレンダー｜置き型｜1冊〜 ¥50〜｜ZprintPro",
-        "description": "フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
-        "keywords": ["フォトフレームカレンダー","フォトフレームカレンダー 印刷","photo frame calendars","カレンダー印刷","卓上カレンダー","壁掛けカレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","ミニカレンダー"],
+        "description": "フォトフレームカレンダーは写真立てとカレンダーの二合一: 硬紙板スタンドで棚や枕元に直立、1部から。250-300gコート紙または写真用紙、A5/A4。写真は差し替え可能で、家族の写真と日付を一枚で。ギフト・ホーム装飾に最適。無料レイアウト、30秒AI見積り。",
+        "h1": "フォトフレームカレンダー 1部〜：写真差替式・硬紙板スタンド",
+        "keywords": ["フォトフレームカレンダー","フォトフレームカレンダー 印刷","写真カレンダー","フォトカレンダー","カレンダー印刷","2027年カレンダー","ギフトカレンダー","写真立て","卓上フォト","photo frame calendars"],
         "body": "お気に入りの写真を飾れるフォトフレームカレンダーは、卓上を彩るインテリア性と実用性を兼ね備えたギフトとして人気です。ZprintProのカレンダー印刷では、硬質紙板製のフォトフレーム台座付きカレンダーを製作し、写真を交換しながら長く愛用いただけます。\n\n新築・引っ越し祝いや内祝いのギフトに最適です。家族写真を入れて贈れば、受け取った方のデスクや棚に必ず飾ってもらえる、心に残る贈り物になります。写真スタジオやフォトウェディングの記念品、保育園・幼稚園の記念品としても活用され、月替わりの写真で季節の変化を楽しめます。\n\n用紙は250g〜300gのコート紙または写真用紙を使用し、硬質紙板のフォトフレーム台座で自立します。サイズはA5（148×210mm）またはA4（210×297mm）、印刷は四色デジタルまたはオフセット、仕上げは中綴じです。\n\n1部HK$3〜8（数量により変動）が目安価格です。オフセット印刷は300部から、デジタル印刷は小ロットにも対応します。標準納期は5〜7営業日、航空便で日本へ約3〜5日でお届けいたします。年末の混雑期を避けて早めのご発注を推奨します。\n\n原稿仕様：印刷用データは解像度300DPI以上、CMYKカラーモード、塗り足し3mmで作成してください。フォントはアウトライン化が必要です。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: フォトフレームカレンダーの価格はいくらですか？**\nフォトフレームカレンダーは1部HK$3〜8（2026-09更新、A3/A4サイズ・250〜300g紙・数量により変動）。月面レイアウトと祝日マーク制作は無料です。\n\n**Q2: 最小ロットを教えてください。**\n印刷方式により異なり、オフセットは300部から、デジタルはより小ロットに対応します。最終ロットと段階価格は製品ページの見積もりをご確認ください。\n\n**Q3: 9月に発注すれば間に合いますか？**\nQ4はピークシーズンで製造枠が確定順に埋まるため、10月末までのご発注をおすすめします。お急ぎの日程はWhatsAppでご相談ください。\n\n写真とともに一年を彩るフォトフレームカレンダーを、ZprintProで高品質に仕上げませんか。デザイン無料サポート付きで、ギフトにも販促品にも最適です。ぜひお見積もりをご依頼ください。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
-      "en": "Custom photo frame calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "フォトフレームカレンダー / 卓上 | 香港のフォトフレームカレンダー印刷 | ZprintPro"
+      "zh-hk": "相框年曆 / 家居禮品 | 香港相框年曆印刷 硬紙板相架 可換照片 | 智印港",
+      "en": "Photo frame calendars / home gifts | swappable photos, hardboard easel | ZprintPro",
+      "ja": "フォトフレームカレンダー / ギフト | フォトフレームカレンダー印刷 写真差替式 卓上スタンド | ZprintPro"
     }
   },
   "magnetic-calendars": {
@@ -1616,31 +1616,31 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "seo": {
       "zh-hk": {
         "title": "磁吸年曆 | 企業禮品 多款式 | 1個起 HK$3起 | 智印港",
-        "description": "磁吸年曆/磁吸年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。智印港提供專業磁石年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["磁吸年曆","年曆","桌曆","掛曆","月曆","企業年曆","迷你口袋曆","環保再生曆","定製節日曆","2027年曆"],
+        "description": "智印港磁石年曆印刷：背面貼合 0.5/1mm 軟磁片，直貼雪櫃、鐵櫃與白板，1 本起印，200-250g 銅版紙或合成紙，四色數碼，圓角裁切不刮手。廚房與辦公金屬面的高頻曝光位首選，社區派發與家電品牌聯乘常用，免費排版，港九新界免費速遞，30 秒 AI 報價。",
+        "h1": "磁石年曆印刷 — 軟磁片 雪櫃高頻曝光，1 本起印",
+        "keywords": ["磁石年曆","磁吸年曆","雪櫃年曆","磁石月曆","冰箱貼年曆","磁體年曆卡","2027年曆","高頻曝光月曆","軟磁年曆","白板年曆"],
         "body": "磁石年曆背面貼合軟磁片，可直接吸附於雪櫃、鐵櫃、白板等金屬表面，位置當眼、每日多次接觸，品牌曝光率遠高於一般年曆。紙材選用 200g 至 250g 銅版紙或合成紙，配 0.5mm 或 1mm 軟磁片與四色數碼印刷，圓角裁切不刮手，A5 或 A4 尺寸貼在廚房或辦公室隨手可及，日日查日期日日見品牌。\n\n雪櫃是家庭使用率最高的地方，磁石年曆因此成為 9 月月曆訂製季節中特別受歡迎的禮品選擇，地產代理、裝修公司、寵物店等行業尤其愛用，派給客戶貼在雪櫃門上，整年都不會被丟掉；企業亦可印上服務熱線或二維碼，把雪櫃變成自家廣告牌，小投資換來全年持續的提醒，是最慳位的常駐廣告。\n\n標準訂單 7–10 個工作天完成，港九新界免費速遞送達。\n\n每本 HK$3-8 起，最低起印量 1 本，量大可享更優惠單價，歡迎查詢批量報價。"
       },
       "en": {
         "title": "Magnetic Calendars | Custom | 1 MOQ $0.40 | ZprintPro",
-        "description": "Custom magnetic calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Magnetic Calendars 100+ | ZprintPro",
+        "description": "Magnetic calendars back a 0.5/1mm flexible magnet sheet: straight onto fridges, steel cabinets and whiteboards, single-copy MOQ on 200-250g coated or synthetic stock, full-colour digital with rounded corners. The highest-frequency impression spot in kitchen or office - a staple for community drops and appliance-brand co-packs. Free layout, 30-second AI quote.",
+        "h1": "Magnetic Calendars from 1 | Fridge-Ready | ZprintPro",
         "keywords": ["magnetic calendars","custom magnetic calendars","magnetic calendars printing online","magnetic calendars free shipping","bulk magnetic calendars","magnetic calendars DHL","bespoke magnetic calendars","magnetic calendars wholesale","magnetic calendars pricing","calendar printing"],
         "body": "Magnetic calendars turn the most-used surface in a home or office — the refrigerator, the filing cabinet, the whiteboard — into a year-long advertising position. A soft magnet sheet on the back lets the calendar stick to any metal surface, so it is seen dozens of times a day without taking up a single inch of wall space.\n\nReal estate agents, HVAC and plumbing companies and local service businesses love this format because the client keeps the calendar right where the whole family passes daily, months after the job is done. Retail stores and restaurants add them to shopping bags or counters; each one is a reminder that keeps a phone number visible in the kitchen all year.\n\nOffered in A5 (148x210mm) or A4 (210x297mm), they fall inside the standard calendar sizes consumers expect, and the free layout service designs each month with holiday markings so you can add offers per season. When buyers research average calendar sizes, the magnet-backed format stands out for visibility per square inch.\n\nPrinted in four-color digital on 200-250g coated paper or synthetic paper — the synthetic stock resists kitchen moisture — and laminated to a 0.5mm or 1mm soft magnet sheet. Rounded corner cutting keeps the edges neat and safe, and the slim profile lets the calendar hug the fridge without sticking out like a bulky frame.\n\nUnit pricing sits at HK$3-8 per book with a 1-unit minimum (bulk 300+ offset), and free US shipping applies over $100. Digital production completes in 3-5 days, then DHL or FedEx gets the order worldwide in 2-4 business days. To avoid the Q4 peak, confirm your artwork before the end of October.\n\n**FAQ**\n\n**Q1: What surfaces can magnetic calendars stick to?**\nA1: Any flat metal surface — refrigerators, whiteboards, filing cabinets and metal doors.\n\n**Q2: What sizes are available?**\nA2: A5 (148x210mm) and A4 (210x297mm), within the standard calendar sizes most households expect.\n\n**Q3: Is the magnet strong enough for daily use?**\nA3: The soft magnet sheet is available in 0.5mm or 1mm thickness, selected to hold the calendar firmly on metal surfaces.\n\nReady to put your brand on every fridge? Get a free digital proof within 1 hour — WhatsApp +86 198 8085 1334 or click the \"30-second AI quote\" button on this page to start your magnetic calendar order."
       },
       "ja": {
         "title": "マグネットカレンダー｜ノベルティ｜1冊〜 ¥50〜｜ZprintPro",
-        "description": "マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
-        "keywords": ["マグネットカレンダー","マグネットカレンダー 印刷","magnetic calendars","カレンダー印刷","卓上カレンダー","壁掛けカレンダー","2027年カレンダー","企業カレンダー","オリジナルカレンダー","ミニカレンダー"],
+        "description": "マグネットカレンダーは裏面に0.5/1mmソフト磁石シート: 冷蔵庫・スチール棚・ホワイトボードに直接貼付、1部から。200-250gコート紙または合成紙、デジタル4色、丸角カットで安全。キッチン・オフィスの金属面で最も接点回数の多い広告枠、地域配布や家電ブランドのコラボにも定番。無料レイアウト、30秒AI見積り。",
+        "h1": "マグネットカレンダー 1部〜：ソフト磁石・冷蔵庫対応",
+        "keywords": ["マグネットカレンダー","マグネットカレンダー 印刷","冷蔵庫カレンダー","マグネットシート","カレンダー印刷","2027年カレンダー","丸角カット","家電販促","地域配布","magnetic calendars"],
         "body": "冷蔵庫やホワイトボードなど金属面に貼って使えるマグネットカレンダーは、家庭でもオフィスでも毎日目にする実用性の高い販促グッズです。ZprintProのカレンダー印刷では、裏面に軟質磁石シートを貼り合わせたマグネットカレンダーを製作します。\n\n不動産・リフォーム・家電販売など、家族向けのサービスとの相性が抜群です。配布先の冷蔵庫に貼ってもらえるため、一度の配布で年間を通じた露出を獲得できます。学校や保育園の連絡用としても人気で、保護者の目に触れる機会が多いアイテムとして定着しています。\n\n用紙は200g〜250gのコート紙または合成紙を使用し、裏面に0.5mmまたは1mmの軟質磁石シートを貼り合わせます。サイズはA5（148×210mm）またはA4（210×297mm）、四色デジタル印刷、角丸カット仕上げで安全にご使用いただけます。\n\nお見積りは1部HK$3〜8（数量により変動）。オフセット印刷は300部から、デジタル印刷は小ロットにも対応します。納期は標準で5〜7営業日、航空便で日本へ約3〜5日です。年末のピーク前に余裕を持ってご発注ください。\n\n原稿仕様：入稿データは解像度300DPI以上・CMYKカラーモード・塗り足し3mm・フォントアウトライン化を推奨します。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n\n**Q1: マグネットカレンダーの価格は？**\nマグネットカレンダーを含む2027年のカレンダーは1部HK$3〜8（2026-09更新、A3/A4サイズ・250〜300g紙・数量により変動）。月面レイアウトと祝日マーク制作は無料です。\n\n**Q2: カレンダーの最小ロットは？**\n製法によって異なり、オフセット印刷は300部から、デジタル印刷はより少ない数量にも対応可能です。最終ロットや段階価格は製品ページの見積もりをご確認ください。\n\n**Q3: 9月の発注で2027年のカレンダーは間に合いますか？**\nQ4は繁忙期で製造枠が埋まりやすいため、10月末までにご発注いただくのが安心です。特急の対応可否はWhatsAppでご確認ください。\n\n実用性と宣伝効果を兼ね備えたマグネットカレンダーを、ZprintProの自社工場から高品質・短納期でお届けします。日本語対応スタッフがお見積もりをお手伝いしますので、ぜひご相談ください。"
       }
     },
     "faqs": [],
     "imageAlt": {
-      "zh-hk": "一般為50本起訂，大批量訂單價格更優惠。",
-      "en": "Custom magnetic calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "マグネットカレンダー / 卓上 | 香港のマグネットカレンダー印刷 | ZprintPro"
+      "zh-hk": "磁石年曆 / 高頻曝光 | 香港磁石年曆印刷 軟磁片 雪櫃白板直貼 | 智印港",
+      "en": "Magnetic calendars / fridge visibility | 0.5-1mm magnet sheet, rounded corners | ZprintPro",
+      "ja": "マグネットカレンダー / 冷蔵庫 | マグネットカレンダー印刷 ソフト磁石 丸角カット | ZprintPro"
     }
   },
   "pvc-menus": {

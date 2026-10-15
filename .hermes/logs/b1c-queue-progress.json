@@ -205,6 +205,32 @@
         "evidence": ".hermes/_b1c6b_apply_20261016.py + .hermes/_bak-b1c6b-20261016/ + .hermes/analysis/b1c6b-similarity-2026-10-16.json"
       },
       "note": "同批携带: 日历价格内战修正 (category-seo-content.ts calendars 三语 19 行: hub 假价 HK$28/US$3.60/HK$18/HK$9 -> SKU 真值 minQ1/HK$3-8/本/basePrice_en 0.40, 附清軍令狀黑话 + 无据 9 折/10% off + 过期 9/15 死线, 块级形状断言全过) + 盲区2 补丁 (lane-git-commit.py 报告缺席自动兑底) + recovery_chain_status.json + resend_status.json + §0.0 裁决材料. 车道读到本记录: 簇6b 已 DONE, 下簇按总账顺序消费"
+    },
+    {
+      "order": 9,
+      "cluster": "b1c-cluster7 calendars 六 SKU (v2 方案 §3 10/16 档)",
+      "slugs": [
+        "wall-calendars",
+        "desk-calendars",
+        "custom-calendars",
+        "mini-calendars",
+        "photo-frame-calendars",
+        "magnetic-calendars"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (v2 方案 10/16)",
+      "claimed_at": "2026-10-16T04:25:00+08:00",
+      "completed_at": "2026-10-16T05:0x:00+08:00",
+      "verdict": {
+        "price_audit": "价格口径逐 SKU 核对 (方案要求): 6/6 SKU products.ts 一手 = HK$3-8/本 basePrice3/$0.40/¥50 minQ1 全家一致 ✓",
+        "disease": "desc 三语全家克隆 0.87-0.96 (90 对中 pre-batch >0.5 者众) + 假 MOQ 三杀 (50 本/50冊/100-MOQ vs minQ1) + 假交期 7-10 天 + 4 SKU altZH FAQ 串优 + altEN 全家 wire-bound 错材质 + kwZH 交叉污染 (wall 含相框年曆) + kwJA 全家尾模板 + custom custom 结巴 + CSV zh FAQ 列惰性三病 (假MOQ/定制简体/假交期)",
+        "slots": "CSV 89 格 (desc/h1 x18 + alt x16 + kw x13 + FAQ 列 x24 + 订制字形) 六锚分工: wall=A3/A2 13頁金屬圈 / desk=三角座架灰板底座 / custom=十二版面燙金可變數據 / mini=85×55mm 口袋大量派發 / photo=硬紙板相架可換照片 / magnetic=軟磁片雪櫃高頻曝光; faqSchema ×6 原位替换既有共享模板 (4 Q 真值: minQ1/HK$3/Q4 檔期); body 2 句假交期 7-10 天修正 (desk/custom), body 其余已是前会话差异化好内容不动 (最小 churn)",
+        "similarity": "双方法 90 对全 PASS: word-Jaccard worst 0.400 / 8-gram worst 0.172 (红线 <0.60 目标 <=0.55), 证据 .hermes/analysis/b1c7-similarity-2026-10-16.json",
+        "guards": "tsc 54=54 / regen 断言 A-E PASS (字节级变化恰 6 块=本批) / 门童全套 commit 时过 / body 7-10 残留复扫 0",
+        "residual": "① kwEN 除 custom 外仍为模板尾 (bulk/free shipping 族, 未交叉污染, 低优先) ② CSV FAQ 列已清毒但仍为惰性数据 (ts faqs 空, 映射链待簇 8 核实) ③ lesson 固化: faqSchema 块边界判定必须用 next-slug-line 而非括号配对 (本批两次被咬, §0.23.2 复发登记)",
+        "evidence": ".hermes/_b1c7_apply_20261016.py + .hermes/_bak-b1c7-20261016/ + .hermes/analysis/b1c7-similarity-2026-10-16.json"
+      },
+      "note": "车道读到本记录: 簇 7 DONE, 下一棒 = 簇 8 残留清单 (packaging faqSchema ×10 / mailer 正文 / 口径核对) + 10/19 title 解冻批 (日历 title/meta 层 HK$10 假地板)"
     }
   ]
 }

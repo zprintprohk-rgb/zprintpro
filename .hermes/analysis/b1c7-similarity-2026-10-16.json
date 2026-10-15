@@ -1,0 +1,734 @@
+{
+ "generated_at": "2026-10-15T20:37:22.981Z",
+ "gate": "红线 <0.60 目标 <=0.55",
+ "pairs": [
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0.258,
+   "gram8": 0.12,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0.25,
+   "gram8": 0.05,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0.219,
+   "gram8": 0.054,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.321,
+   "gram8": 0.128,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0.206,
+   "gram8": 0.051,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0.219,
+   "gram8": 0.051,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0.226,
+   "gram8": 0.066,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.124,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0.29,
+   "gram8": 0.111,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0.258,
+   "gram8": 0.087,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.321,
+   "gram8": 0.088,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0.242,
+   "gram8": 0.073,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.241,
+   "gram8": 0.067,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0.25,
+   "gram8": 0.078,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "description",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0.226,
+   "gram8": 0.053,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0.273,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0.273,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0.273,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0.3,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "zh-hk",
+   "field": "h1",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0.32,
+   "gram8": 0.129,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0.272,
+   "gram8": 0.1,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0.212,
+   "gram8": 0.087,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.312,
+   "gram8": 0.112,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0.221,
+   "gram8": 0.06,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0.235,
+   "gram8": 0.117,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0.27,
+   "gram8": 0.115,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.342,
+   "gram8": 0.124,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0.259,
+   "gram8": 0.093,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0.167,
+   "gram8": 0.059,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.275,
+   "gram8": 0.131,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0.178,
+   "gram8": 0.054,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.2,
+   "gram8": 0.067,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0.25,
+   "gram8": 0.12,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "description",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0.224,
+   "gram8": 0.062,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.183,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.175,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.203,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.167,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.18,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.167,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.175,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.159,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0.4,
+   "gram8": 0.172,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.167,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.169,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.164,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.333,
+   "gram8": 0.159,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.172,
+   "pass": true
+  },
+  {
+   "locale": "en",
+   "field": "h1",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0.364,
+   "gram8": 0.157,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0.2,
+   "gram8": 0.098,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0.125,
+   "gram8": 0.016,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0.111,
+   "gram8": 0.042,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.118,
+   "gram8": 0.047,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0.111,
+   "gram8": 0.023,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0.111,
+   "gram8": 0.016,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0.1,
+   "gram8": 0.044,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.105,
+   "gram8": 0.026,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0.158,
+   "gram8": 0.073,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0.158,
+   "gram8": 0.045,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.235,
+   "gram8": 0.076,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0.158,
+   "gram8": 0.04,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0.15,
+   "gram8": 0.074,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0.143,
+   "gram8": 0.05,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "description",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0.15,
+   "gram8": 0.05,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "wall-calendars<->desk-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.059,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "wall-calendars<->custom-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.047,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "wall-calendars<->mini-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.056,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "wall-calendars<->photo-frame-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.049,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "wall-calendars<->magnetic-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.054,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "desk-calendars<->custom-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.054,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "desk-calendars<->mini-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.067,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "desk-calendars<->photo-frame-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.057,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "desk-calendars<->magnetic-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.065,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "custom-calendars<->mini-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.051,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "custom-calendars<->photo-frame-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.045,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "custom-calendars<->magnetic-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.05,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "mini-calendars<->photo-frame-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.054,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "mini-calendars<->magnetic-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.061,
+   "pass": true
+  },
+  {
+   "locale": "ja",
+   "field": "h1",
+   "pair": "photo-frame-calendars<->magnetic-calendars",
+   "wordJaccard": 0,
+   "gram8": 0.053,
+   "pass": true
+  }
+ ],
+ "worst": {
+  "locale": "en",
+  "field": "h1",
+  "pair": "desk-calendars<->magnetic-calendars",
+  "wordJaccard": 0.4,
+  "gram8": 0.172,
+  "pass": true
+ }
+}

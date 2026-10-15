@@ -2,7 +2,20 @@
 
 > **⚠️ 撞车记录 #2（§0.25.2 如实上报，2026-10-16 00:1x）**: push d0a1e033 @00:08:51 距上次 push 30691f04 @23:41:36 = **27m15s < 30min 硬下限**。根因 = 时钟闸只打印时间戳未做计算判定（两次撞车同根因：人眼估读）。**纠正**：新增机器闸 scripts/push-gate-check.mjs（读远端最后 push 时间，<30min exit 1）——此后一切 push 前必须先过该闸，车道 wrapper 与人手会话同规。本修正 commit 留本地，随下窗口推送。
 
-> **当前状态**: 🔓 **已释放** — 2026-10-16 03:5x AutoClaw 会话（战略方案 P0/P1/P2 执行轮, K3 「深度思考…按建议执行」）
+> **当前状态**: 🔓 **已释放** — 2026-10-16 05:0x AutoClaw 会话（v2 方案 §3 10/16 档：簇 7 calendars 六 SKU）
+>
+> | 项 | 值 |
+> |---|---|
+> | **释放结果** | ✅ CSV 89 格（desc/h1/alt/kw/FAQ 列，六锚分工）+ faqSchema ×6 原位替换 + body 假交期 ×2 句修正；价格口径逐 SKU 核对 6/6 ✓；相似度双方法 90 对全 PASS（worst 0.400）；regen 断言 A-E 字节级恰 6 块；tsc 54=54；sitemap + IndexNow；title 六槽零改动。SSoT `docs/2026-10-16-b1c-cluster7-calendars.md`。**本锁释放，后续会话可自由接管。** |
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（首席 SEO/AEO/GEO 数据战略分析师执行，v2 方案 10/16 档） |
+> | **意图** | B1c 簇 7：wall/desk/custom/mini/photo-frame/magnetic-calendars 六 SKU ×3语差异化重写（N-corner 扫描 → 锚位分工 → CSV desc/h1/alt + ts body + faqSchema 处置）+ 全 SKU 价格口径核对（全家真值 HK$3-8/本 minQ1 已验）+ 七条 SOP 全套门禁 |
+> | **写入范围** | `zprintpro-sku-seo-data.csv`（rows 39-44）· `src/data/sku-seo-data.ts`（6 块）· `src/data/products.ts`（如 faqSchema 需处置）· `public/sitemap*.xml`（regen）· `.hermes/logs/b1c-queue-progress.json` · `SESSION_LOCK.md` · `.hermes/analysis/` · docs 报告；**不碰 title 六槽（冻结域）** |
+> | **双条件核验** | ① `git status --porcelain -- src/` = 0（04:25 实测）② 对端静默: 最后 src 写入 = 03:07（本会话上批），现 04:25 静默 >1h ✓；04:02 K3 侧 docs-only commit 不触碰 src ✓；lane.lock 不存在 ✓；上次 push 04:02:43，30min 机器闸至 04:32 |
+> | **预计时长** | < 120 min |
+> | **释放条件** | regen 断言 A-E + 门童全绿（#27 存量口径 / #29 / #16 / brand / encoding）+ 相似度双方法 ≤0.55 + tsc 54=54 + commit + push（过机器闸）+ 探针 + 账本登记 |
 >
 > | 项 | 值 |
 > |---|---|
