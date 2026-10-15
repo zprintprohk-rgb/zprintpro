@@ -1,0 +1,30 @@
+{
+  "schema": "geo-citation-baseline/v1",
+  "date": "2026-10-15",
+  "executor": "AutoClaw manual session (首席 SEO/AEO/GEO 数据战略分析师)",
+  "status": "PENDING_ACCESS — 三引擎本轮均 UNREADABLE（如实记录，不虚报基线读数）",
+  "methodology": {
+    "probe_type": "manual browser probe, per §0.36.4 (手动探针为准, 不冒充已在跑)",
+    "per_engine_words": 5,
+    "recording": "每词记录: zprintpro 域被引位置 (第几来源/是否出现) + 被引竞品榜 Top5 + 引用形态 (链接/品牌提及/无)",
+    "cadence": "周度复测 (W4 起每周五), 每次落 geo_citation_baseline-<date>.json",
+    "query_format": "商业意图问句 (例: 'Where can I print custom doujinshi in small quantities for Comiket?' 而非裸关键词)"
+  },
+  "word_manifest": {
+    "en": ["doujinshi printing", "small batch sticker printing", "saddle stitch booklet printing", "china catalog printing", "custom folding boxes"],
+    "ja": ["コミケ 印刷", "同人誌 印刷", "年賀状 印刷", "特急印刷", "ポチ袋 オリジナル"],
+    "zh-hk": ["利是封印刷", "紙袋印刷", "海報印刷", "餐牌印刷", "月曆印刷"]
+  },
+  "engine_status": [
+    {"engine": "Perplexity", "status": "UNREADABLE", "detail": "Cloudflare challenge 页通过后 SPA 无头渲染 3 次均为空 (documentVersion 3-4, text/elements 空) — 需登录态会话或 API key", "attempts": 3},
+    {"engine": "Bing Copilot", "status": "UNREADABLE", "detail": "bing.com showconv=1 → 302 copilot.com → ERR_ABORTED 登录/地区重定向流", "attempts": 1},
+    {"engine": "ChatGPT", "status": "NOT_ATTEMPTED", "detail": "预期登录墙 (chatgpt.com 匿名流不稳), 留待登录态"}
+  ],
+  "paths_to_unblock": [
+    "① K3 人工逐词探针 (15 词 × 3 引擎, 截图记录, 每词 2 分钟) — 最快, 本周可出真基线",
+    "② Perplexity API key (Pro 账户) — 可脚本化周度自动跑, 需 K3 开通",
+    "③ 登录态浏览器会话 (browser agent 挂 K3 账号) — 中期方案"
+  ],
+  "competitor_watchlist": ["Vistaprint", "Jukebox Print", "Printful", "Sticker Mule", "印刷会社.net 系聚合", "Vogue 別册/トミウラ系印刷指南站"],
+  "next_action": "K3 选 ①/②/③ 其一后, 首轮真基线 30 分钟内可产出"
+}

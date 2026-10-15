@@ -46,13 +46,17 @@ display-posters / art-posters / adhesive-posters 三兄弟（en/ja 互扫 0.95-0
 | 词簇 | 承接页 | FAQ/schema | 内链 | 状态 |
 |---|---|---|---|---|
 | 利是封（zh） | 簇 2 全套 ✅ | faqSchema 6 SKU 独立 ✅ | 簇内互链 ✅ | ✅ 四件套齐 |
-| 日历（三语） | 月曆印刷 pos 16.1 承接页 | — | — | ⬜ 簇 7（calendars 族）随 W4 |
-| 年賀状（ja） | **未建**（W2 遗留） | — | — | ⏳ **卡 K3 早鸟报价真值**，10/31 截倒计时 16 天 |
-| holiday/christmas cards（en） | greeting-cards 资产在位（§0.0 冻结面） | — | — | ⬜ 随 §0.0 (a)/(b)/(c) 裁决 |
+| 年賀状（ja） | **并发会话 23:48 已预埋全套**（ea2f4ccc：/nengajo-2027/ 三语页 + NENGAJO_LIVE=false 构建期 404 门禁 + 6 SKU 三币真值 + JsonLd Service/FAQPage + runbook 40 分钟上线包；blog 三语 10-09 已在线 10528 字符） | ✅ 预埋内 | 补链=合入日步骤 | ✅ **承接完成（门控态）**：K3 三真值（死线 10/21）→ 当日上线；本会话零重复（幂等对账） |
+| 日历（三语） | zh-hk hub 四件套齐（featuredSnippet/FAQ q-a/2027×30/内链 2 blog）✅；**en/ja = 系统性发现**（见下） | zh ✅ | zh ✅ | ✅ zh 齐 + 系统层升级登记 |
+| holiday/christmas（en） | greetingCardsContent 亦仅 zh-hk（含 11× 聖誕） | — | — | ⬜ 同系统层 |
 
-## 四、W3.4 GEO 周度盲测（方法论登记，基线待跑）
+**系统性升级发现（§0.23.2 行锚定扫描定案）**：`category-seo-content.ts` **全部 16 个类目 Record 均仅 zh-hk**（en/ja 顶层键全文件为 0）；V9 渲染解析 `categorySeoContent[slug]?.[locale] ?? getDefaultCategoryContent(slug, locale)` → **en/ja 类目页跑在通用默认层**（非中文污染，但内容深度不对称：zh 22.5K 富 hub vs en/ja 默认模板）。这是 16 类目 × 2 语的专项工程（en/ja page-one 战略主杠杆），登记为独立 workstream，不在 W3.3 单族补丁范围。
 
-按 §0.36.4 口径：手动探针为准、不冒充已在跑。**本轮未产出基线读数**（需浏览器逐引擎提问，本会话预算已尽），方法论已固化：每引擎 5 商业词（en: doujinshi printing / small batch sticker printing / saddle stitch booklet printing / china catalog printing / custom folding boxes；ja: コミケ 印刷 / 同人誌 印刷 / 年賀状 印刷 / 特急印刷 / ポチ袋 オリジナル；zh-hk: 利是封印刷 / 紙袋印刷 / 海報印刷 / 餐牌印刷 / 月曆印刷），记录 zprintpro 域被引位置与竞品榜，落 `.hermes/geo/geo_citation_baseline-*.json`。**建议下一会话或 W4 首日执行。**
+另登记：日历族价格内战（hub 快照「100 本起 HK$28」vs wall-calendars SKU 真值 minQ 1 / basePrice 3 / HK$3-8）——并入 K3 价格 SSoT 裁定清单一并处理。
+
+## 四、W3.4 GEO 周度盲测（引擎可达性实测完成，真基线待通道）
+
+按 §0.36.4 口径执行：15 词清单 + 方法学已固化为机器可读清单 `.hermes/geo/geo_citation_baseline-2026-10-15.json`（status=PENDING_ACCESS，**不虚报读数**）。本轮引擎实测：Perplexity = CF 挑战通过后 SPA 无头渲染 3 次空（UNREADABLE）；Bing → Copilot 登录重定向中止（UNREADABLE）；ChatGPT 预期登录墙未尝试。三条解封路径已列（K3 人工逐词约 30 分钟出真基线 / Perplexity API key 脚本化 / 登录态会话），**K3 选其一后首轮真基线当轮可产**。
 
 ## 五、门童与纪律
 
