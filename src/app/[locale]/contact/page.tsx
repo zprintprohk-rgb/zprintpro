@@ -196,6 +196,10 @@ const trustIcons = [Palette, Zap, Shield, Truck];
 
 // 2026-09-22 Cloudflare Workers CPU 修复: 补静态参数 (此前无 generateStaticParams → 3 个联系页
 // URL 走动态 SSR 烧 Worker CPU; 本页无 searchParams/cookies/headers, 静态化安全)
+// 2026-10-15 A2 CPU 治理: 本页参数全部构建期确定, 未知参数一律静态 404 (dynamicParams=false),
+// 消除 Node fallback 函数 (next-on-pages 要求动态路由全 edge, 带 fallback 即构建失败)
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }

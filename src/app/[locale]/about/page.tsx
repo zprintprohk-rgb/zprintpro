@@ -7,6 +7,10 @@ import { WhatsAppCtaButton } from '@/components/WhatsAppCtaButton';
 import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 
+// 2026-10-15 A2 CPU 治理: 本页参数全部构建期确定, 未知参数一律静态 404 (dynamicParams=false),
+// 消除 Node fallback 函数 (next-on-pages 要求动态路由全 edge, 带 fallback 即构建失败)
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }

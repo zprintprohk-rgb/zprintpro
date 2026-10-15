@@ -13,6 +13,10 @@ import { OrganizationSchema } from '@/components/insights/HKPrintInquiryIndex/Or
 import { jaSummary } from '@/data/insights/hk-print-inquiry-index-vol1';
 
 // 静态参数 - 3 locale (与全站 [locale] 路由一致)
+// 2026-10-15 A2 CPU 治理: 本页参数全部构建期确定, 未知参数一律静态 404 (dynamicParams=false),
+// 消除 Node fallback 函数 (next-on-pages 要求动态路由全 edge, 带 fallback 即构建失败)
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }
