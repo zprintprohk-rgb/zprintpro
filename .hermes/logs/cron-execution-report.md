@@ -58,3 +58,4 @@
 | 2026-10-14 22:43:45 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
 | 2026-10-15 06:43:12 | ZP-cron-watchdog | ⚠️ 6 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | MISSING ZP-weekly-meta | OK ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | PENDING ZP-k3-review | — |
 | 2026-10-15 07:10:34 | ZP-k3-review | ✅ 完成 (exit=0) | `docs/2026-10-15-b1c-three-cluster-flywheel-and-defense-full-analysis.md` | NONE | ✅ push |
+| 2026-10-15 21:28:25 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-14-ZP-daily-content.md` | src/data/products.ts, src/data/sku-seo-data.ts | ✅ push |
