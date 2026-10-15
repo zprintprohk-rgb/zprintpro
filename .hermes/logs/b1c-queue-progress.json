@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T09:20:00+08:00",
-  "updated_by": "autoclaw manual session (B1c cluster2 finish)",
+  "updated_at": "2026-10-15T13:50:00+08:00",
+  "updated_by": "autoclaw manual session (W2 cluster4)",
   "clusters": [
     {
       "order": 1,
@@ -114,6 +114,28 @@
         "evidence": ".hermes/_w1_ctr_final_equiv2.mjs 文件级回读 9/9 BAND-OK"
       },
       "note": "战略 §3 W1.2 CTR 歼灭批; 验证窗 7-10 天后用 GSC 28d 档对账 CTR"
+    },
+    {
+      "order": 5,
+      "cluster": "w2-cluster4 food-folding-boxes (战略 W2.1)",
+      "slugs": [
+        "food-boxes",
+        "folding-boxes"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session",
+      "claimed_at": "2026-10-15T12:50:00+08:00",
+      "completed_at": "2026-10-15T13:50:00+08:00",
+      "ssot": "docs/2026-10-15-b1c-cluster4-food-folding-boxes.md",
+      "verdict": {
+        "disease": "en body 0.98 / ja body 0.94 (packaging generic template) + folding zh body = mailer template (tri-pair 扫描发现 0.933) + folding 三语 desc/H1 病 + food ja H1 通用 + 6 imageAlt 坏 (MOQ备注/pet/香港の) + faqSchema packaging 模板 12 SKU 共用 (本簇拆 2)",
+        "slots": "CSV 18格 + 1 (folding zh body 补刀) = 19格: folding desc/h1/kw x3 + food h1-ja/kw zh-ja + 6 alt GEO 化; ts body x5 (food en/ja + folding zh/en/ja 全重写, 姐妹互链+FAQ+真值); products.ts faqSchema x2",
+        "similarity": "双方法 tri-pair (food/folding/mailer x3语 x body/desc) WORST 0.134 <=0.55 (前: en 0.98 / ja 0.94 / folding-mailer-zh 0.933)",
+        "guards": "tsc 54=54 / #27 0 HARD 本批 / #29 0 / #16 0 / #20 0 / brand A0 / regen 断言 A-E 0漂移 字节级变化=2块",
+        "residual": "packaging faqSchema 模板其余 10 SKU + mailer-boxes en/zh body 模板 + food-boxes desc 内部交期 3-5 vs FAQ 5-7 混用 -> 簇8 队列",
+        "evidence": ".hermes/_b1c4_*.py + .hermes/_bak-b1c4-20261015/"
+      },
+      "note": "车道读到本记录即跳过簇 4, 下簇 = 簇5 (kraft<->eco bags) / 簇6 (a1<->a2 posters)"
     }
   ]
 }
