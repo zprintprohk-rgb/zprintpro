@@ -51,6 +51,7 @@
   - tsc **54=54** 基线持稳；门童 #29 违规 0 / #16 0 / brand A 类 0 / #27 hard 8 为 10-15 已登记存量（本批 title 零改动不触发 staged 硬拦）
   - sitemap 再生 714 URLs lastmod 刷新 + 3 locale IndexNow ping（生成器内置）
 - **残留登记**（→ K3/下批 docket）：① outdoor-posters faqSchema 仍共享模板（余 1 份）② posters 族 desc 50-MOQ/100-MOQ 病灶残留本批外行 ③ textbook ja featuredSnippet HK$28/本 vs SKU title HK$24（未核实不动）④ menus/envelopes/stickers 类目 hub MOQ 口径待逐一核对 ⑤ a2 descJA「规格」简体字形。
+- **线上探针新增发现（10-16 03:5x 实测，登记不修 —— title 层属冻结域）**：日历战争实际有三层，本批修的是 category-seo-content.ts 层；另两层： ⑥ **title/meta 层**：/zh-hk/category/calendars/ title「月曆印刷 2027 | 1本起印・批量300本起…」MOQ 正确，但 meta desc「HK$10 起/本」与 SKU 真值 HK$3-8/本 冲突（假地板高报）→ 改 title 属 churn 冻结域，归 10/19 title 解冻批 ⑦ **conversion/FAQ 层**：页面 conversion-block 子弹点「100 本起 · 座檯/掛牆可選」与 FAQ 答案「燙金工藝 100 本起」仍与 minQ=1 冲突（源头非 category-seo-content.ts，疑为 category-conversion-blocks.ts / product-faqs.ts）→ 下一批按同款三件套修正
 
 ### 2.5 盲区2 补丁 — 车道报告缺席自动兜底 ✅（防护机制补盲）
 - `scripts/lane-git-commit.py`：车道收尾若 `pick_lane_report() == "NONE"` 且有白名单产物 → 自动生成诚实兜底报告 `<date>-<lane>.md`（VERDICT: AUTO-FILLED + 产物清单，不虚构内容）并入报告桶；总线记录新增 `report_auto_generated` 字段。根因 = 10-14 daily-content/gsc-feedback 有产物提交但零报告，总线却照写 verdict OK。
