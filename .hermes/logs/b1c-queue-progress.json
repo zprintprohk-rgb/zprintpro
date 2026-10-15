@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T21:17:00+08:00",
-  "updated_by": "autoclaw manual session (W2 cluster4)",
+  "updated_at": "2026-10-15T23:35:00+08:00",
+  "updated_by": "autoclaw manual session (W3 cluster6a)",
   "clusters": [
     {
       "order": 1,
@@ -160,6 +160,29 @@
         "wallclock_note": "墙钟未单独核验 (lane 内无 shell), 本记录时间取 run-context 生成时点"
       },
       "note": "车道读到本记录即跳过簇 5, 下簇 = 簇6 (a1<->a2 posters)"
+    },
+    {
+      "order": 7,
+      "cluster": "w3-cluster6a a1-a2-posters (战略 W3.1) + lane SOP-5 debt repayment (kraft/eco CSV mirror)",
+      "slugs": [
+        "a1-posters",
+        "a2-posters"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (W3)",
+      "claimed_at": "2026-10-15T23:18:00+08:00",
+      "completed_at": "2026-10-15T23:35:00+08:00",
+      "ssot": "docs/2026-10-15-w3-cluster6a-and-comiket.md",
+      "verdict": {
+        "debt_repaid": "lane 21:17 簇5 SOP-5 债务: kraft/eco desc/h1/alt x3 共18格 ts->CSV 镜像回写 + regen 断言 A-E 零漂移 (imageAlt 为 seo 兄弟节点, 初版正则误取空串被断言闸拦截后修正)",
+        "disease": "N-corner 扫描: posters 族 5 SKU en 全对 0.95-0.98 / ja 0.88-0.96 / zh a1-a2 0.712; 另发现 MOQ 假值 (a2 en desc 50 MOQ vs minQ 10; ja 1枚/1枚から) + ja H1 英文句 (Standard A2 size / A1 large size) + FAQ 答案当 alt + 价格三方内战 (CSV 9/45 vs products title_zh 12.9 vs basePrice 16/20 vs hub 6-9)",
+        "scope": "a1+a2 全套: 14 CSV 格 (desc/h1/alt x3 + ja kw x2, 无绝对价格按 §0.23) + 6 body 重写 (a2=零售标准规格页 / a1=大幅展示页) + faqSchema x2 拆 5 SKU 共用模板; title 零改动",
+        "similarity": "en a1-a2 0.982->0.139 / ja 0.958->0.140 / 全部新内容交叉对 <=0.14",
+        "guards": "tsc 54=54 / #27 / #29 / #16 / brand A0 / regen 断言 A-E 字节级恰 2 块",
+        "residual": "簇6b (display/art/adhesive en/ja body 模板 0.95-0.98 + zh 对 0.54-0.58) -> 今晚车道或下会话; 价格内战 (4源) -> K3",
+        "evidence": ".hermes/_b1c6*.py + .hermes/_bak-b1c6a-20261015/"
+      },
+      "note": "车道读到本记录: 簇6b (display/art/adhesive posters) = 下一棒首务"
     }
   ]
 }
