@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T13:50:00+08:00",
+  "updated_at": "2026-10-15T12:55:00+08:00",
   "updated_by": "autoclaw manual session (W2 cluster4)",
   "clusters": [
     {
@@ -124,8 +124,8 @@
       ],
       "status": "DONE",
       "claimed_by": "autoclaw manual session",
-      "claimed_at": "2026-10-15T12:50:00+08:00",
-      "completed_at": "2026-10-15T13:50:00+08:00",
+      "claimed_at": "2026-10-15T12:35:00+08:00",
+      "completed_at": "2026-10-15T12:43:00+08:00",
       "ssot": "docs/2026-10-15-b1c-cluster4-food-folding-boxes.md",
       "verdict": {
         "disease": "en body 0.98 / ja body 0.94 (packaging generic template) + folding zh body = mailer template (tri-pair 扫描发现 0.933) + folding 三语 desc/H1 病 + food ja H1 通用 + 6 imageAlt 坏 (MOQ备注/pet/香港の) + faqSchema packaging 模板 12 SKU 共用 (本簇拆 2)",
@@ -133,7 +133,8 @@
         "similarity": "双方法 tri-pair (food/folding/mailer x3语 x body/desc) WORST 0.134 <=0.55 (前: en 0.98 / ja 0.94 / folding-mailer-zh 0.933)",
         "guards": "tsc 54=54 / #27 0 HARD 本批 / #29 0 / #16 0 / #20 0 / brand A0 / regen 断言 A-E 0漂移 字节级变化=2块",
         "residual": "packaging faqSchema 模板其余 10 SKU + mailer-boxes en/zh body 模板 + food-boxes desc 内部交期 3-5 vs FAQ 5-7 混用 -> 簇8 队列",
-        "evidence": ".hermes/_b1c4_*.py + .hermes/_bak-b1c4-20261015/"
+        "evidence": ".hermes/_b1c4_*.py + .hermes/_bak-b1c4-20261015/",
+        "collision_note": "push 2fe29a40 @12:43:07 距上次 push e41458fe @12:28:26 仅14m41s, 违反 §0.25.1 30min 硬下限 (时钟未单独核验, 凭回合长度误估墙钟) — 已按 §0.25.2 如实上报 K3, 时间戳修正 commit 留本地, 下次 push >=13:13"
       },
       "note": "车道读到本记录即跳过簇 4, 下簇 = 簇5 (kraft<->eco bags) / 簇6 (a1<->a2 posters)"
     }

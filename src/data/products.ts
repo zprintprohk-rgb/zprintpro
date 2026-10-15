@@ -3236,7 +3236,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝訂製 / 食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Packaging / Food Boxes | Custom Packaging & Gift Boxes', nameJa: '食品パッケージ / 食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝訂製 100個起印 HK$4起/個 FDA級 | 智印港 · 食品級茶飲烘焙定製',
+    name: '食品包裝訂製 / 食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Packaging / Food Boxes | Custom Packaging & Gift Boxes', nameJa: '食品パッケージ / 食品包装箱 | パッケージボックス・化粧箱', title_zh: '食品包裝訂製 100個起印 HK$4起/個 FDA級 | 智印港 · 食品級茶飲烘焙定製',
     description: '食品包裝盒印刷訂製，100個起印，HK$2.5起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。 2026 旺季: 春節年糕禮盒、端午粽、夏日冰品配送、中秋月餅聖誕禮籃。',
     features: [
       '【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品',
@@ -3314,7 +3314,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
       en: 'Custom Packaging Boxes & Gift Boxes | Food Boxes | Professional Packaging Online',
-      ja: 'パッケージボックス / ギフトボックス | 食品包裝箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      ja: 'パッケージボックス / ギフトボックス | 食品包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   

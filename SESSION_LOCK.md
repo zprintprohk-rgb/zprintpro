@@ -1,8 +1,8 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
-> **当前状态**: ⚪ **已释放** — 2026-10-15 13:5x AutoClaw 会话（W2 簇4 完成）
+> **当前状态**: ⚪ **已释放** — 2026-10-15 12:5x AutoClaw 会话（W2 簇4 完成；⚠️ push 撞车记录见下）
 >
-> **本批交付**: B1c 簇4 food↔folding boxes ×3语 ✅：CSV 19格（folding desc/h1/kw×3 + food h1-ja/kw + 6 alt GEO 化）+ ts body ×5 全重写（food en/ja + folding zh/en/ja，含补刀 folding-zh mailer 模板克隆 0.933）+ faqSchema ×2 拆 12 SKU 共用模板。tri-pair 双方法 WORST 0.134≤0.55（前 0.98/0.94/0.933）；门童 #27/#29/#16/#20/brand/tsc 54=54 全绿；regen 断言 A-E 零误伤；title 六槽零改动。簇4 2/2 页 DONE。SSoT `docs/2026-10-15-b1c-cluster4-food-folding-boxes.md`。**本锁释放，后续会话可自由接管。**
+> **本批交付**: B1c 簇4 food↔folding boxes ×3语 ✅：CSV 19格（folding desc/h1/kw×3 + food h1-ja/kw + 6 alt GEO 化）+ ts body ×5 全重写（food en/ja + folding zh/en/ja，含补刀 folding-zh mailer 模板克隆 0.933）+ faqSchema ×2 拆 12 SKU 共用模板。tri-pair 双方法 WORST 0.134≤0.55（前 0.98/0.94/0.933）；门童 #27/#29/#16/#20/brand/tsc 54=54 全绿；regen 断言 A-E 零误伤；title 六槽零改动。簇4 2/2 页 DONE。⚠️ **撞车记录（§0.25.2 如实上报）**: push 2fe29a40 @12:43:07 距上次 push e41458fe @12:28:26 仅 14m41s <30min——push 前未单独核验时钟，凭回合长度误估墙钟；内容门禁全绿（非质量事件），下次 push 窗口 ≥13:13。SSoT `docs/2026-10-15-b1c-cluster4-food-folding-boxes.md`。**本锁释放，后续会话可自由接管。**
 
 ---
 
