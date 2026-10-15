@@ -1,0 +1,378 @@
+{
+ "body": {
+  "zh-hk": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.217,
+    "gram8": 0.001
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.162,
+    "gram8": 0.024
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.102,
+    "gram8": 0.04
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.043,
+    "gram8": 0.037
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.062,
+    "gram8": 0.043
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.08,
+    "gram8": 0.0
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.095,
+    "gram8": 0.013
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.057,
+    "gram8": 0.016
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.061,
+    "gram8": 0.02
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.074,
+    "gram8": 0.023
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.079,
+    "gram8": 0.028
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.088,
+    "gram8": 0.019
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.044,
+    "gram8": 0.062
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.038,
+    "gram8": 0.076
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.154,
+    "gram8": 0.062
+   }
+  },
+  "en": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.0,
+    "gram8": 0.017
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.0,
+    "gram8": 0.03
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.012
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.015
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.014
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.0,
+    "gram8": 0.019
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.1
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.106
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.119
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.011
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.016
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.013
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.118
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.125
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.133
+   }
+  },
+  "ja": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.239,
+    "gram8": 0.003
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.202,
+    "gram8": 0.032
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.196,
+    "gram8": 0.025
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.184,
+    "gram8": 0.025
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.192,
+    "gram8": 0.028
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.211,
+    "gram8": 0.002
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.24,
+    "gram8": 0.078
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.235,
+    "gram8": 0.087
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.287,
+    "gram8": 0.133
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.216,
+    "gram8": 0.018
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.203,
+    "gram8": 0.02
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.191,
+    "gram8": 0.015
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.275,
+    "gram8": 0.117
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.249,
+    "gram8": 0.123
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.261,
+    "gram8": 0.15
+   }
+  }
+ },
+ "desc": {
+  "zh-hk": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.2,
+    "gram8": 0.006
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.24,
+    "gram8": 0.008
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.28,
+    "gram8": 0.034
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.538,
+    "gram8": 0.014
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.5,
+    "gram8": 0.02
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.16,
+    "gram8": 0.0
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.154,
+    "gram8": 0.033
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.2,
+    "gram8": 0.028
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.188,
+    "gram8": 0.005
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.194,
+    "gram8": 0.007
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.24,
+    "gram8": 0.028
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.231,
+    "gram8": 0.0
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.28,
+    "gram8": 0.071
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.269,
+    "gram8": 0.05
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.5,
+    "gram8": 0.052
+   }
+  },
+  "en": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.0,
+    "gram8": 0.008
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.0,
+    "gram8": 0.073
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.072
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.085
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.091
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.0,
+    "gram8": 0.005
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.156
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.022
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.023
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.0,
+    "gram8": 0.022
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.066
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.068
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.0,
+    "gram8": 0.08
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.053
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.0,
+    "gram8": 0.118
+   }
+  },
+  "ja": {
+   "foil-red-packets|embossed-red-packets": {
+    "word": 0.242,
+    "gram8": 0.0
+   },
+   "foil-red-packets|custom-red-packets": {
+    "word": 0.119,
+    "gram8": 0.035
+   },
+   "foil-red-packets|cartoon-red-packets": {
+    "word": 0.18,
+    "gram8": 0.005
+   },
+   "foil-red-packets|eco-red-packets": {
+    "word": 0.17,
+    "gram8": 0.006
+   },
+   "foil-red-packets|large-red-packets": {
+    "word": 0.216,
+    "gram8": 0.006
+   },
+   "embossed-red-packets|custom-red-packets": {
+    "word": 0.138,
+    "gram8": 0.0
+   },
+   "embossed-red-packets|cartoon-red-packets": {
+    "word": 0.241,
+    "gram8": 0.033
+   },
+   "embossed-red-packets|eco-red-packets": {
+    "word": 0.279,
+    "gram8": 0.081
+   },
+   "embossed-red-packets|large-red-packets": {
+    "word": 0.319,
+    "gram8": 0.078
+   },
+   "custom-red-packets|cartoon-red-packets": {
+    "word": 0.12,
+    "gram8": 0.0
+   },
+   "custom-red-packets|eco-red-packets": {
+    "word": 0.114,
+    "gram8": 0.0
+   },
+   "custom-red-packets|large-red-packets": {
+    "word": 0.122,
+    "gram8": 0.0
+   },
+   "cartoon-red-packets|eco-red-packets": {
+    "word": 0.25,
+    "gram8": 0.077
+   },
+   "cartoon-red-packets|large-red-packets": {
+    "word": 0.3,
+    "gram8": 0.062
+   },
+   "eco-red-packets|large-red-packets": {
+    "word": 0.522,
+    "gram8": 0.126
+   }
+  }
+ }
+}

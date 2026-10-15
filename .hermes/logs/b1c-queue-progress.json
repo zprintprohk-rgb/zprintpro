@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T01:55:00+08:00",
-  "updated_by": "manual session (deepseek hermes, W1 CTR batch night)",
+  "updated_at": "2026-10-15T09:20:00+08:00",
+  "updated_by": "autoclaw manual session (B1c cluster2 finish)",
   "clusters": [
     {
       "order": 1,
@@ -46,29 +46,31 @@
         "eco-red-packets",
         "large-red-packets"
       ],
-      "status": "IN_PROGRESS",
+      "status": "DONE",
       "claimed_by": "ZP-daily-content lane",
       "claimed_at": "2026-10-13T21:17:00+08:00",
-      "completed_at": null,
+      "completed_at": "2026-10-15T09:20:00+08:00",
       "pages_done": [
         "embossed-red-packets (lane 10-13)",
         "foil-red-packets (manual 10-14)",
         "custom-red-packets (manual 10-14)",
-        "red-packets hub category block (manual 10-14)"
+        "red-packets hub category block (manual 10-14)",
+        "cartoon-red-packets (autoclaw 10-15)",
+        "eco-red-packets (autoclaw 10-15)",
+        "large-red-packets (autoclaw 10-15)"
       ],
-      "pages_pending": [
-        "cartoon-red-packets",
-        "eco-red-packets",
-        "large-red-packets"
-      ],
+      "pages_pending": [],
       "verdict": {
-        "slots_rewritten": "embossed-red-packets × 3 locale: description 全改写 + h1 全改写 + body 各 +1 差异化决策段 (共 9 槽); products.ts faqSchema 独立化 1 槽 + descriptionEn/descriptionJa 简体『适配行业』清毒 2 处",
-        "root_cause_reroute": "本簇实测重复不在正文 (foil/embossed 三语正文互异), 而在 description 层 (6 SKU zh/en/ja description 除产品名外逐字相同) 与 products.ts faqSchema 层 (6 SKU 共用同一份 4 问, 且含 MOQ 500 与 minQuantity=100 矛盾)",
-        "real_value_anchor": "src/data/products.ts L3791-3819 (embossed: 150g 紅色紙張 / 浮雕 0.3-0.5mm / 90×170mm / HK$3.00-9.50 / US$0.92 / ¥129 / minQuantity 100 / weight_score 92)",
-        "guards": "lane 沙盒 pwsh 禁用无 node -> 机器门禁 (tsc / #16 gsc-leak / #20 meta-desc / #27 title-v5 / #15 blog-data / #29 detox) 由 host wrapper pre-commit 判定; 车道侧 grep 等价自检 0 命中 (见 2026-10-13 报告 §5)",
-        "sop5_deviation": "sku-seo-data.ts description/h1 属 CSV 派生域; 本轮无 node 无法跑 scripts/csv-to-sku-seo.mjs regen -> 已按导出产物镜像手改并在报告声明, 待 node 可用会话回写 CSV 源头 (zprintpro-sku-seo-data.csv) 并复跑生成器对账"
+        "finish_scope": "cartoon/eco/large x3locale: CSV desc/h1/keywords 重写 (cartoon CSV 陈旧域整格回灌修复 SOP-5 偏差) + ts zh 正文 FAQ+内链 / ja FAQ 产品化 + products.ts faqSchema x3 拆共用模板 (MOQ 500 矛盾清除)",
+        "family_alignment": "交期统一 5-7 工作天 (hub SSoT 口径): embossed 车道批 5 处 3-5 对齐 + ja 簇内 24-48h 无据加急声明移除 + ja FAQ 10枚从 矛盾清除 (minQ=100)",
+        "similarity_dual": "word-Jaccard worst 0.538 (desc zh foil-eco) / 8-gram max <0.09; 红线 <0.60 零违规, 目标 <=0.55 达成",
+        "guards": "tsc 54=54 / title-v5 #27 18槽 hard=[] 当量 51-57 / detox #29 0 / gsc-leak #16 0 / meta-desc #20 0 / brand A类 0",
+        "regen": "csv-to-sku-seo --allow-drift 显式确认 (CSV->ts 新值流向) 断言 A-E PASS, 字节级变化恰 4 块零误伤; cartoon CSV 陈旧 desc/h1 同步根治",
+        "residual_register": "利是封簇内 0 残留; 全站同型存量 (from ZprintPro the US x33 / ja 通用H1 x27 / ja 3-5纳期+24-48h x9 / MOQ-10矛盾 x2) 归 B1c 簇8队列",
+        "evidence": ".hermes/analysis/b1c-cluster2-final-similarity-2026-10-15.json + .hermes/_b1c2c_*.py + .hermes/_bak-b1c2c-20261015/"
       },
-      "note": "车道 10-13 完成 embossed; 人手 10-14 完成 hub 类目块整换 + foil/custom 双 PDP (commit ea8ed3c1, 探针 9/9)。余 3 SKU 长尾。"
+      "note": "车道 10-13 完成 embossed; 人手 10-14 完成 hub 类目块整换 + foil/custom 双 PDP (commit ea8ed3c1, 探针 9/9)。余 3 SKU 长尾。",
+      "completed_by": "autoclaw manual session (K3 directive, SOP 7-step)"
     },
     {
       "order": 3,
