@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T23:35:00+08:00",
-  "updated_by": "autoclaw manual session (W3 cluster6a)",
+  "updated_at": "2026-10-16T03:35:00+08:00",
+  "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
   "clusters": [
     {
       "order": 1,
@@ -183,6 +183,28 @@
         "evidence": ".hermes/_b1c6*.py + .hermes/_bak-b1c6a-20261015/"
       },
       "note": "车道读到本记录: 簇6b (display/art/adhesive posters) = 下一棒首务"
+    },
+    {
+      "order": 8,
+      "cluster": "b1c-cluster6b display/art/adhesive-posters (战略 2.1) + 日历价格内战修正 (战略 3.2)",
+      "slugs": [
+        "display-posters",
+        "art-posters",
+        "adhesive-posters"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (W4)",
+      "claimed_at": "2026-10-16T03:00:00+08:00",
+      "completed_at": "2026-10-16T03:40:00+08:00",
+      "verdict": {
+        "truth": "products.ts 一手: display HK$32-100/套 basePrice32/$7.36/¥960 minQ1 · art HK$26-85/張 26/$5.98/¥780 minQ1 · adhesive HK$13-42/張 13/$2.99/¥390 minQ1",
+        "slots": "CSV 20格 (desc zh/en/ja + h1 zh/en/ja ×3 SKU + display alt zh/ja) + ts body ×9 全重写 (三 SKU 三锚: 展架裝置 60×160/80×180cm 100-150dpi / Giclée 12色 260g無酸紙 百年 / 導氣槽自粘 6-12個月戶外 異形模切 當日可取) + faqSchema ×3 原位替换既有共享模板 (非新增, tsc 抓重复属性后改替换)",
+        "similarity": "双方法 27 对全 PASS: word-Jaccard worst 0.333 / 8-gram worst 0.141 (红线 <0.60 目标 <=0.55), 证据 .hermes/analysis/b1c6b-similarity-2026-10-16.json",
+        "guards": "tsc 54=54 / regen 断言 A-E PASS (字节级恰 4 块: 本批 3 + doujinshi 纯缩进规范化零内容变化) / #29 违规 0 / #16 0 / brand A0 / 门童 #27 hard 8 为 10-15 已登记存量 (本批 title 零改动)",
+        "residual": "① outdoor-posters faqSchema 仍共享 posters 模板 (余 1 份) ② posters 族 desc 50-MOQ/100-MOQ 病灶残留于本批外行 (outdoor 等) ③ 教科書 ja featuredSnippet HK$28/本 vs 教科書 title HK$24 (2462 行, 未核实不动) ④ menus/envelopes/stickers 类目 hub MOQ 口径待逐一 SKU 真值核对 -> 全部登记 K3/下批 docket",
+        "evidence": ".hermes/_b1c6b_apply_20261016.py + .hermes/_bak-b1c6b-20261016/ + .hermes/analysis/b1c6b-similarity-2026-10-16.json"
+      },
+      "note": "同批携带: 日历价格内战修正 (category-seo-content.ts calendars 三语 19 行: hub 假价 HK$28/US$3.60/HK$18/HK$9 -> SKU 真值 minQ1/HK$3-8/本/basePrice_en 0.40, 附清軍令狀黑话 + 无据 9 折/10% off + 过期 9/15 死线, 块级形状断言全过) + 盲区2 补丁 (lane-git-commit.py 报告缺席自动兑底) + recovery_chain_status.json + resend_status.json + §0.0 裁决材料. 车道读到本记录: 簇6b 已 DONE, 下簇按总账顺序消费"
     }
   ]
 }

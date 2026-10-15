@@ -1,0 +1,27 @@
+{
+  "schema": "resend-status/v1",
+  "updated_at": "2026-10-16T02:50:00+08:00",
+  "updated_by": "autoclaw manual session (strategy plan P0-1.3 verification)",
+  "channel": "/api/quote-notify (Resend API, from quotes@zprintpro.com)",
+  "probe": {
+    "time": "2026-10-16T02:47:00+08:00",
+    "method": "POST https://zprintpro.com/api/quote-notify (Origin: https://zprintpro.com, 308→trailing-slash followed)",
+    "payload_marker": "ref=TEST-PROBE-20261016",
+    "response": {"ok": true},
+    "http": 200,
+    "interpretation": "route.ts 逻辑: key 缺失时返回 {ok:true, skipped:'RESEND_API_KEY not configured'}; 本次返回纯 {ok:true} = Resend API 实际受理发信 ⇒ RESEND_API_KEY 已在 CF Pages 配置且有效"
+  },
+  "verdict": "WORKING (P0-1.3 已被 K3 侧解决 — 2026-10-14 报告的『线上未配置』状态已解除)",
+  "residual_k3_actions": [
+    "① 收件确认: zprintpro@outlook.com + zprintprohk@gmail.com 两个收件箱应各收到 1 封 [TEST] 标记测试信 (ref TEST-PROBE-20261016) — 若只在垃圾箱找到 = SPF/DMARC 待补",
+    "② DNS: 补 SPF + DMARC 记录 (2026-10-14 报告 §三 待办, 影响送达率不影响 API 受理)",
+    "③ (可选) CF 环境变量 RESEND_NOTIFY_TO 确认收件人列表 (默认 Outlook+Gmail 双收冗余已生效)"
+  ],
+  "history": [
+    "2026-09-16 后: 询盘邮件断流 (key 未配置, 前端无感知, ok+skipped)",
+    "2026-10-14: Kimi Work 会话实测确认 key 缺失, route.ts 收件人可配置化修复 (commit 62cef6be 族)",
+    "2026-10-16 02:47: 本 probe 实测 {ok:true} HTTP 200 = 通道恢复"
+  ],
+  "data_source": "src/app/api/quote-notify/route.ts + 线上 POST 探针一手实测 (2026-10-16)",
+  "calibration": "已校准 (2026-10-16 02:47 探针)"
+}

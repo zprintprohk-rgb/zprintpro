@@ -1649,9 +1649,9 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-21 v3.13 T14: 月曆 5 词对齐 + 2027 时效 + 5 FAQ (季节窗最急)
-    featuredSnippet: '月曆印刷 9-11 月旺季軍令狀 | 100 本起 HK$28 起 | 24h 出貨 順豐本地 | 智印港. 掛曆 HK$18 / 檯曆 HK$9 / 年曆卡 HK$3, 2027 早鳥 9 折 + 免費設計 + 燙金, 企業禮品旺季採購 8-10 月落單 → 9-12 月交貨.',
+    featuredSnippet: '月曆印刷 9-11 月旺季供應 | 1 本起 HK$3-8/本 | 順豐本地配送 | 智印港. 掛曆 / 檯曆 / 年曆卡 HK$3-8/本, 2027 年曆早鳥預訂 + 免費設計 + 燙金, 企業禮品旺季採購 8-10 月落單 → 9-12 月交貨.',
     lastUpdated: '2026-08-26',
-    h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, R5 9/15 硬截止前企業禮品旺季採購',
+    h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 1 本起訂, 企業禮品旺季採購 8-10 月落單',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -1752,23 +1752,23 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '建議什麼時候開始印年曆？', a: '建議提前 2–3 個月準備，避開 11–12 月的印刷高峰期。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。座枱曆／掛曆可按箱規安排順豐或貨車；跨區派發企業禮品可先集中送到總部再分發。旺季建議鎖定檔期與數量。' },
       // 2026-08-22 v3.14 T25: calendars Pillar 去模板化 (防 scaled content abuse, 加 2027 旺季時間線 + 4 大趨勢)
-      { q: '2027 月曆市場 8-10 月旺季前夜的關鍵節點？', a: '2027 年曆採購黃金窗口 8-10 月落單 → 9-12 月交貨. 企業禮品 (銀行/保險/地產) 500-5,000 本/批, 學校+教會+NGO 100-500 本. 全年月曆詢盤 9-11 月佔全年 60% (旺季), 11 月起轉淡. 8 月已過 2026 = 9 月全面轉 2027 = 早鳥 9 折窗口. 趨勢 4 大方向: ① 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入) ② 環保材質 +47% (FSC 紙 + 大豆油墨) ③ 數碼印刷小批量 (50-100 本試印友好) ④ 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題佔 +28%).' },
+      { q: '2027 月曆市場 8-10 月旺季前夜的關鍵節點？', a: '2027 年曆採購黃金窗口 8-10 月落單 → 9-12 月交貨. 企業禮品 (銀行/保險/地產) 500-5,000 本/批, 學校+教會+NGO 100-500 本. 全年月曆詢盤 9-11 月佔全年 60% (旺季), 11 月起轉淡. 8 月已過 2026 = 9 月全面轉 2027 = 2027 年曆早鳥預訂窗口. 趨勢 4 大方向: ① 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入) ② 環保材質 +47% (FSC 紙 + 大豆油墨) ③ 數碼印刷小批量 (50-100 本試印友好) ④ 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題佔 +28%).' },
       { q: '可以先報價再給設計檔嗎？', a: '可以。請提供款式（座枱／掛牆／月曆卡）、數量、尺寸、紙張／底板厚度與是否需要燙金或座架；可先取得數碼／柯式方案報價，月曆頁面檔齊後再做色彩打樣建議。' },
       // 2026-08-21 v3.13 T14: 5 主题 5 FAQ 补全 (价格 + 燙金)
-      { q: '2027 月曆印刷價格幾多？', a: '掛曆 HK$18/本、檯曆 HK$9/本、年曆卡 HK$3/張。100 本起訂製, 500 本柯式更平。2027 年曆 9 月早鳥可享 9 折 + 免費設計。' },
-      { q: '月曆封面可以加燙金嗎？', a: '可以。封面 / 內頁 / 座架都可加燙金 (金/銀/玫瑰金), 另加 HK$0.5-1.5/本, 起印量 100 本, 2-3 天加急。' },
+      { q: '2027 月曆印刷價格幾多？', a: '掛曆 / 檯曆 / 年曆卡 HK$3-8/本（按尺寸、紙張與工藝浮動），1 本起訂，500 本柯式更平。2027 年曆早鳥預訂 + 免費設計。' },
+      { q: '月曆封面可以加燙金嗎？', a: '可以。封面 / 內頁 / 座架都可加燙金 (金/銀/玫瑰金), 另加 HK$0.5-1.5/本, 2-3 天加急。' },
       // 2026-08-26 B3 R5 9/15 硬截止 + 季节军令状 (T42 月曆每拖 1 天, 旺季收成少 1 天)
-      { q: '2027 月曆旺季幾時落單最抵？', a: '旺季時間線: 8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。8 月底前落單享 9 折早鳥 + 免費設計; 11 月起轉淡, 12 月起恢復常規價。旺季落單越早, 交期與紙價越穩。' },
-      { q: '企業禮品月曆 500 本幾錢? 銀行/保險/地產旺季怎搶?', a: '500 本柯式月曆 HK$10-15/本 (視乎尺寸/紙張/工藝), 加燙金 LOGO +$3-5/本, 雙面四色 + 封面咭紙. 旺季搶單 3 步: (1) 7-8 月設計定稿 (2) 8-9 月落單享早鳥 9 折 (3) 9-10 月柯式交貨 + 企業分發. 銀行/保險/地產 3 大場景 Q4 旺季採購, 500-5,000 本/批, 港島金融業/九龍商業區/新界住宅社區分區派發.' },
-      { q: '月曆印刷點解要避開 11-12 月高峰期?', a: '11-12 月是印刷業全年最旺季, 紙張/工廠/物流全部緊張: 紙張加價 15-20%, 工廠排期 7-10 天 (常規 3-5 天), DHL 跨境延誤 3-5 天. 提前 9/15 前落單享 3 重優勢: (a) 紙張原價 (b) 工廠 3-5 天交期 (c) DHL 正常 2-4 天. 旺季高峰落單 = 漲價 + 延期 + 旺季交貨延誤 3 重打擊.' },
-      { q: '2027 月曆 4 大趨勢: 客製化/環保/小批量/主題多元', a: '趨勢 1 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入, 每頁可印不同員工/分店). 趨勢 2 環保材質 +47% (FSC 認證紙 + 大豆油墨 + 可回收包裝). 趨勢 3 數碼印刷小批量 (50-100 本試印, 啟動成本 HK$500-1,500). 趨勢 4 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題 +28% 增長, ZprintPro 提供 20+ 主題模板). 8/26 起 2027 早鳥 9 折, 把握 Q4 旺季採購.' },
-      { q: '月曆 100 本起訂 + 9/15 硬截止前落單: 一條龍流程點走?', a: '8 步一條龍: (1) 選類型 (座枱/掛牆/月曆卡/記事簿) (2) 確認尺寸 (150×180 / A3 / A2) (3) 紙張+底板 (200-300g 銅版+1-2mm 灰板) (4) 工藝 (燙金/UV/圓環/打孔) (5) 設計 (12 個月模板 + 企業 LOGO + 品牌色) (6) 9/15 前落單享 9 折早鳥 (7) 3-7 天交期 (8) 順豐本地 + DHL 全球. 詳見 [2027 月曆印刷一條龍攻略](/zh-hk/blog/2027-monthly-calendar-printing-timetable/).' },
+      { q: '2027 月曆旺季幾時落單最抵？', a: '旺季時間線: 8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。8-9 月落單鎖定旺季檔期 + 免費設計; 11 月起轉淡, 12 月起恢復常規價。旺季落單越早, 交期與紙價越穩。' },
+      { q: '企業禮品月曆 500 本幾錢? 銀行/保險/地產旺季怎搶?', a: '500 本柯式月曆按 HK$3-8/本帶內報價 (視乎尺寸/紙張/工藝), 加燙金 LOGO 按工藝另計, 雙面四色 + 封面咭紙. 旺季搶單 3 步: (1) 7-8 月設計定稿 (2) 8-9 月落單鎖定產能與紙價 (3) 9-10 月柯式交貨 + 企業分發. 銀行/保險/地產 3 大場景 Q4 旺季採購, 500-5,000 本/批, 港島金融業/九龍商業區/新界住宅社區分區派發.' },
+      { q: '月曆印刷點解要避開 11-12 月高峰期?', a: '11-12 月是印刷業全年最旺季, 紙張/工廠/物流全部緊張: 紙張加價 15-20%, 工廠排期 7-10 天 (常規 3-5 天), DHL 跨境延誤 3-5 天. 旺季前 2-3 個月落單享 3 重優勢: (a) 紙張原價 (b) 工廠 3-5 天交期 (c) DHL 正常 2-4 天. 旺季高峰落單 = 漲價 + 延期 + 旺季交貨延誤 3 重打擊.' },
+      { q: '2027 月曆 4 大趨勢: 客製化/環保/小批量/主題多元', a: '趨勢 1 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入, 每頁可印不同員工/分店). 趨勢 2 環保材質 +47% (FSC 認證紙 + 大豆油墨 + 可回收包裝). 趨勢 3 數碼印刷小批量 (1 本起印, 50-100 本試印友好). 趨勢 4 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題 +28% 增長, ZprintPro 提供 20+ 主題模板). 2027 年曆早鳥預訂已開放, 把握 Q4 旺季採購.' },
+      { q: '月曆 1 本起訂 + 旺季檔期落單: 一條龍流程點走?', a: '8 步一條龍: (1) 選類型 (座枱/掛牆/月曆卡/記事簿) (2) 確認尺寸 (150×180 / A3 / A2) (3) 紙張+底板 (200-300g 銅版+1-2mm 灰板) (4) 工藝 (燙金/UV/圓環/打孔) (5) 設計 (12 個月模板 + 企業 LOGO + 品牌色) (6) 早鳥預訂鎖定產能與紙價 (7) 3-7 天交期 (8) 順豐本地 + DHL 全球. 詳見 [2027 月曆印刷一條龍攻略](/zh-hk/blog/2027-monthly-calendar-printing-timetable/).' },
     ],
   },
   en: {
-    featuredSnippet: 'Calendar printing 9-11 month peak season | 100 copies from US$3.60/pc | 24h global delivery | ZprintPro Asia factory. Wall / desk / card 8 sizes, custom foil + free design, 2027 pre-order 10% off. DHL 2-4 day global, factory-direct.',
+    featuredSnippet: 'Calendar printing 9-11 month peak season | From 1 pc at US$0.40/pc | ZprintPro Asia factory. Wall / desk / card calendars, custom foil + free design, 2027 pre-order open. DHL 2-4 day global, factory-direct.',
     lastUpdated: '2026-08-21',
-    h2: 'Calendar Printing / Custom Calendars / Print Calendars / 2027 Calendars / Wall Calendars — Desk/Wall/Card From 100 pcs, Corporate Gifting Sep 9-11 Peak Season',
+    h2: 'Calendar Printing / Custom Calendars / Print Calendars / 2027 Calendars / Wall Calendars — Desk/Wall/Card From 1 pc, Corporate Gifting Aug-Oct Peak Season',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Calendars?',
       items: [
@@ -1783,7 +1783,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. Low MOQ for Seasonal Promotions',
           points: [
-            '50 pcs minimum (digital printing) — ideal for SMEs and startups creating holiday gifts.',
+            'From 1 pc (digital printing) — ideal for SMEs and startups creating holiday gifts.',
             '500+ pcs offset printing for better economy — suited for large corporate year-end gifts and brand campaigns.',
             'Variable data printing supported — each calendar can feature different employee names or branch information (personalized gifting).',
           ],
@@ -1825,7 +1825,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       title: 'Technical Specifications',
       items: [
         { label: 'Standard Sizes', value: 'Desk: 150×180mm, 200×230mm; Wall: A3(297×420mm), A2(420×594mm); Card: 100×150mm. Fully customizable.' },
-        { label: 'Minimum Order', value: '50 pcs (digital printing). 500+ recommended for offset (more economical).' },
+        { label: 'Minimum Order', value: 'From 1 pc (digital printing). 500+ pcs recommended for offset (more economical).' },
         { label: 'Turnaround', value: 'Standard 3–5 days (digital); 5–7 days (offset); Rush 2–3 days (digital).' },
         { label: 'File Requirements', value: 'AI / PDF / InDesign, 300dpi, CMYK, 3mm bleed, each month as separate page design.' },
         { label: 'Paper Options', value: '200g–300gsm art / matte paper. Base: 1–2mm greyboard or card.' },
@@ -1852,7 +1852,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'What size is a standard wall calendar?', a: 'A standard wall calendar is 297×420mm (A3) when closed — the most common size for offices and retail. Desk calendars are 150×180mm or 200×230mm. All sizes print from 1 copy with 3-5 day turnaround.' },
       { q: 'How much does a calendar weigh?', a: 'A standard A3 wire-bound wall calendar (250gsm cover + 128gsm inner pages) weighs about 180-220g — light enough for regular postage in a C4 envelope. We ship single calendars DHL 2-4 days worldwide.' },
       { q: 'Can I order 2027 custom calendars in small batches?', a: 'Yes — 2027 custom calendars print from 1 copy. Company-name calendars for client gifting typically run 50-200 copies with bulk tiers at 500/1,000. Free digital proof in 4 hours, DHL 2-4 day global delivery.' },
-      { q: 'What is the minimum order for calendars?', a: '50 pcs (digital printing). 500+ pcs recommended for offset printing.' },
+      { q: 'What is the minimum order for calendars?', a: 'From 1 pc (digital printing). 500+ pcs recommended for offset printing.' },
       { q: 'What calendar types are available?', a: 'Desk calendars (easel), wall calendars, calendar cards, planner calendars, magnetic fridge calendars.' },
       { q: 'Can you customize corporate calendars?', a: 'Yes. Professional designers create branded calendars integrating products, culture, and values.' },
       { q: 'How long does calendar printing take?', a: 'Standard 3–5 days (digital); 5–7 days (offset); Rush 2–3 days (digital).' },
@@ -1863,14 +1863,14 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk calendar orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit calendar type, size, paper type, quantity, and cover finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check each month page design and bleed.' },
       // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en
-      { q: 'What are the key 2027 calendar market timing signals in Aug-Oct peak pre-season?', a: '2027 calendar procurement gold window: order Aug-Oct, deliver Sep-Dec. Corporate gifts (banking / insurance / real estate) 500-5,000 copies per batch, schools + churches + NGOs 100-500 copies. Full-year calendar inquiries Sep-Nov account for 60% (peak season), then taper off from November. After Aug 2026, September shifts fully to 2027 — early-bird 10% discount window opens. Four key trends: customization penetration +52% (corporate logos + brand colors + product integration), eco materials +47% (FSC paper + soy ink), digital printing small batches (50-100 copy test print friendly), and theme diversification (cats / plants / stars / minimalist / retro niche themes +28%).' },
+      { q: 'What are the key 2027 calendar market timing signals in Aug-Oct peak pre-season?', a: '2027 calendar procurement gold window: order Aug-Oct, deliver Sep-Dec. Corporate gifts (banking / insurance / real estate) 500-5,000 copies per batch, schools + churches + NGOs 100-500 copies. Full-year calendar inquiries Sep-Nov account for 60% (peak season), then taper off from November. After Aug 2026, September shifts fully to 2027 — 2027 pre-order window opens. Four key trends: customization penetration +52% (corporate logos + brand colors + product integration), eco materials +47% (FSC paper + soy ink), digital printing small batches (50-100 copy test print friendly), and theme diversification (cats / plants / stars / minimalist / retro niche themes +28%).' },
     ],
   },
   ja: {
     // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
-    featuredSnippet: 'カレンダー印刷 9-11月繁忙期軍令状 | 100冊から HK$28／冊 | 24h出荷 工場直送 | ZprintPro. 卓上 HK$9 / 壁掛け HK$18 / カード HK$3, 2027 早期予約 9 割引 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
+    featuredSnippet: 'カレンダー印刷 9-11月繁忙期 | 1冊から HK$3-8／冊 | 工場直送 | ZprintPro. 卓上 / 壁掛け / カード HK$3-8／冊, 2027 早期予約 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
     lastUpdated: '2026-08-19',
-    h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 100冊から, 企業ギフト 9-11月繁忙期前夜',
+    h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 1冊から, 企業ギフト 9-11月繁忙期前夜',
     coreAdvantages: {
       title: 'ZprintPro カレンダーの強み',
       items: [
@@ -1963,7 +1963,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。カレンダーの大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずカレンダータイプ、サイズ、紙タイプ、数量、表紙加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが各月ページのデザイン、bleedをチェックします。' },
       // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → ja
-      { q: '2027 年カレンダー市場 8-10 月繁忙期前夜の重要なタイミングは?', a: '2027 年カレンダー調達の黄金期間: 8-10 月発注 → 9-12 月納品。企業ギフト (銀行 / 保険 / 不動産) 500-5,000 部/バッチ、学校+教会+NGO 100-500 部。年間カレンダー問い合わせの 60% が 9-11 月 (繁忙期)、11 月以降は減少。2026 年 8 月が過ぎた後、9 月から 2027 年仕様に完全移行 — アーリーバード 10% 割引期間開始。4 つの主要トレンド: カスタマイズ浸透率 +52% (企業ロゴ + ブランドカラー + 製品統合)、エコ素材 +47% (FSC 紙 + 大豆インク)、デジタル印刷小ロット (50-100 部試印対応)、テーマ多様化 (猫 / 植物 / 星 / ミニマル / レトロ ニッチテーマ +28%)。' },
+      { q: '2027 年カレンダー市場 8-10 月繁忙期前夜の重要なタイミングは?', a: '2027 年カレンダー調達の黄金期間: 8-10 月発注 → 9-12 月納品。企業ギフト (銀行 / 保険 / 不動産) 500-5,000 部/バッチ、学校+教会+NGO 100-500 部。年間カレンダー問い合わせの 60% が 9-11 月 (繁忙期)、11 月以降は減少。2026 年 8 月が過ぎた後、9 月から 2027 年仕様に完全移行 — 2027 年カレンダー早期予約受付開始。4 つの主要トレンド: カスタマイズ浸透率 +52% (企業ロゴ + ブランドカラー + 製品統合)、エコ素材 +47% (FSC 紙 + 大豆インク)、デジタル印刷小ロット (50-100 部試印対応)、テーマ多様化 (猫 / 植物 / 星 / ミニマル / レトロ ニッチテーマ +28%)。' },
     ],
   },
 };

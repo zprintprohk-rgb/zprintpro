@@ -153,6 +153,33 @@ def main():
     report_files = [p for p in allowed if p.startswith(".hermes/logs/") or p.startswith(".hermes/reports/")
                     or (args.include_matrix and p == ".hermes/industry-keyword-matrix.json")]
 
+    # 2026-10-16 修复 (盲区2): 车道跑过但未落当日报告 -> 总线 report=NONE 且 verdict 照写 OK
+    #   (10-14 ZP-daily-content / ZP-gsc-feedback 实测)。此处自动生成诚实兑底报告并入报告桶,
+    #   保证总线 report 字段不再出现 NONE; 生成器不虚构 lane 内容, 只记骨架与产物清单。
+    fallback_created = False
+    if allowed and pick_lane_report(args.lane, report_files) == "NONE":
+        fallback_rel = os.path.join(".hermes", "logs", f"{time.strftime('%Y-%m-%d')}-{args.lane}.md")
+        fallback_abs = os.path.join(repo, fallback_rel)
+        try:
+            if not os.path.exists(fallback_abs):
+                stub = (
+                    f"# {args.lane} 车道报告 (AUTO-FILL)\n\n"
+                    f"> 本报告由 scripts/lane-git-commit.py 自动生成: 车道结束时未按要求落当日报告\n"
+                    f"> (契约强制 <YYYY-MM-DD>-<lane>.md), 兑底保证结果总线 report 字段不再出现 NONE。\n"
+                    f"> 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                    f"VERDICT: AUTO-FILLED (车道报告缺席, 需车道 prompt 自检报告落盘步骤)\n"
+                    f"CONSUMED: .hermes/logs/run-context-{args.lane}.json + lane-status.json\n"
+                    f"DELIVERED: {', '.join(src_files) if src_files else '(无 src 产物, 仅报告/数据)'}\n"
+                    f"NEXT: 对照 .hermes/cron-prompts/lane-results-bus-contract.md 报告命名条款整改\n"
+                )
+                with open(fallback_abs, "w", encoding="utf-8", newline="\n") as fh:
+                    fh.write(stub)
+                print(f"[lane-git] 兑底报告已生成: {fallback_rel}")
+            report_files = report_files + [fallback_rel.replace(os.sep, "/")]
+            fallback_created = True
+        except OSError as e:
+            print(f"[lane-git] 兑底报告生成失败: {e}", file=sys.stderr)
+
     date = time.strftime("%Y-%m-%d %H:%M")
 
     if src_files:
@@ -178,7 +205,8 @@ def main():
                               exit_code=4,
                               verdict="FAILED(guard 拦下 src commit)",
                               blocked_reason=f"pre-commit guard 拒绝 {len(src_files)} 个生产文件",
-                              report_files=report_files)
+                              report_files=report_files,
+                              report_auto=fallback_created)
             return 4
         print(f"[lane-git] src commit 完成: {msg} ({len(src_files)} 文件)")
 
@@ -210,7 +238,7 @@ def main():
 
     # 6) 统一执行报告 (K3 2026-09-15 拍板: 定时任务完成后要有可查看的执行报告与结果)
     #    每次 lane 收尾追加一条记录到 .hermes/logs/cron-execution-report.md
-    write_exec_report(args.lane, args.repo, allowed, pushed, date)
+    write_exec_report(args.lane, args.repo, allowed, pushed, date, report_auto=fallback_created)
     return 0
 
 
@@ -308,7 +336,7 @@ def write_lane_run(record):
 
 def write_exec_report(lane, repo, allowed, pushed, date,
                       exit_code=0, verdict="✅ 完成", blocked_reason="", report_files=None,
-                      fired_at=None):
+                      fired_at=None, report_auto=False):
     """追加 lane 执行报告到统一总览文件 cron-execution-report.md (K3 要求可见).
 
     2026-09-19 升级 (K3 指令「定时任务要有报告, 且报告要能作为判断依据」):
@@ -369,6 +397,7 @@ def write_exec_report(lane, repo, allowed, pushed, date,
         "blocked_reason": blocked_reason,
         "guard": {"ok": exit_code != 4},
         "report": report,
+        "report_auto_generated": bool(report_auto),
         "files": files,
         "pushed": bool(pushed),
         "head": head,

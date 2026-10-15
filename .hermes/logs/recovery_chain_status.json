@@ -1,0 +1,47 @@
+{
+  "schema": "recovery-chain-status/v1",
+  "updated_at": "2026-10-16T02:35:00+08:00",
+  "updated_by": "autoclaw manual session (strategy plan P0-1.1 handover)",
+  "source_of_truth_chain": [
+    "docs/2026-10-15-w1-verdict-recovery-chain-fix-and-w2-kickoff.md §一/§二 (判定链修复 + 解除条件)",
+    ".hermes/logs/gsc-cliff-2026-10-15.json (修复后首读)",
+    ".hermes/logs/gsc-cliff-2026-10-13.json (固定基线来源)",
+    "scripts/gsc-cliff-detector.py (检测器, 24h glob 已兼容新旧命名)"
+  ],
+  "fixed_baseline_combined": 585.2,
+  "release_conditions": {
+    "c1_recovery_ratio": "恢复系数连续 3 日 ≥60% (vs 固定基线 585.2, 逐日判定)",
+    "c2_28d_daily_avg": "28d 日均展示 ≥500 (三站合计)",
+    "c3_ga4_verification": "K3 GA4 实时核验 (人肉)"
+  },
+  "current_status": {
+    "c1": {
+      "state": "IN_PROGRESS",
+      "count": "1/3 日",
+      "daily_readings": [
+        { "window": "2026-10-11T22:00 ~ 10-12 21:00", "ratio": 1.276, "counted": false, "reason": "窗口 80% 落在 B1a/B1b 去毒部署前, 不计入 (10-15 verdict doc §一)" },
+        { "window": "2026-10-14T01:00 ~ 10-15 00:00", "ratio": 0.972, "counted": true, "reason": "新链第 1 日 (gsc-cliff-2026-10-15.json)" }
+      ],
+      "gap_note": "10-13 全天窗口无 24h 实时档 (K3 10-14 未导出), 无法回填 — 逐日序列按现有窗口从 10-15 起算 1/3"
+    },
+    "c2": {
+      "state": "MET",
+      "value": 581.7,
+      "detail": "hk 384.0 + jp 71.6 + us 126.1 (10-15 档 28d, 含断崖日 = 含伤达标)"
+    },
+    "c3": { "state": "PENDING_K3", "owner": "K3", "note": "GA4 实时核验 (恢复链判定 ③, 也是 10-14 计划项 2.2 的 GA4 部分)" }
+  },
+  "verdict_now": "维持观察级 (橙) — 恢复模式车道块继续生效",
+  "unblock_path": "K3 每日导 1 份「24小时三站点汇总」档 (10-16/10-17 两日恢复系数仍 ≥60%) + GA4 核验 → 三条件全满足即可宣布解除、增产接棒",
+  "plan_correction_log": {
+    "p0_1_1_claim": "2026-10-15/16 战略方案称『最后一发 cliff JSON=10-13, 断档, 需手动触发补发 10-14/10-15』",
+    "verified_fact": "① 判定链已由 2026-10-15 12:3x 会话修复 (glob 命名漂移 + 固定基线), gsc-cliff-2026-10-15.json 已存在; ② 路径勘误: cliff JSON 实际位于 .hermes/logs/ (非 .hermes/cliff/); ③ 10-14 窗口源数据 (K3 未导出 24h 档) 客观不存在, 不可补发 — GSC realtime 导出无回溯能力; ④ 恢复序列以 10-15 窗 97.2% 为第 1/3 日继续累积, 无需重置",
+    "residual_actions": [
+      "K3: 每日导 24h 三站点汇总档 (10-16 / 10-17)",
+      "K3: GA4 实时核验",
+      "执行层: 10-16/10-17 各跑一次 scripts/gsc-cliff-detector.py 追加 gsc-cliff-2026-10-16/17.json (车道或人手均可)"
+    ]
+  },
+  "data_source": ".hermes/logs/gsc-cliff-2026-10-{12,13,15}.json + docs/2026-10-15-w1-verdict-recovery-chain-fix-and-w2-kickoff.md + GSC数据/index.json (10-15 档)",
+  "calibration": "已校准 (2026-10-16 02:3x, 本 run 一手回读 cliff JSON 三份 + verdict doc)"
+}

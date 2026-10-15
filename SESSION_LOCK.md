@@ -2,6 +2,21 @@
 
 > **⚠️ 撞车记录 #2（§0.25.2 如实上报，2026-10-16 00:1x）**: push d0a1e033 @00:08:51 距上次 push 30691f04 @23:41:36 = **27m15s < 30min 硬下限**。根因 = 时钟闸只打印时间戳未做计算判定（两次撞车同根因：人眼估读）。**纠正**：新增机器闸 scripts/push-gate-check.mjs（读远端最后 push 时间，<30min exit 1）——此后一切 push 前必须先过该闸，车道 wrapper 与人手会话同规。本修正 commit 留本地，随下窗口推送。
 
+> **当前状态**: 🔓 **已释放** — 2026-10-16 03:5x AutoClaw 会话（战略方案 P0/P1/P2 执行轮, K3 「深度思考…按建议执行」）
+>
+> | 项 | 值 |
+> |---|---|
+> | **释放结果** | ✅ ① 恢复链留痕 + RESEND 实测恢复（ok:true HTTP 200）② 日历价格内战 19 行三语修正（真值 minQ1/HK$3-8，断言全过）③ B1c 簇6b DONE：CSV 20格 + ts body ×9 + faqSchema ×3 原位替换，相似度 27 对全 PASS（worst 0.333），regen 断言 A-E，tsc 54=54，sitemap 714 URLs + IndexNow ④ 盲区2 补丁 lane-git-commit.py ⑤ §0.0 裁决材料 ⑥ 账本+报告+锁登记。SSoT `docs/2026-10-16-strategy-execution-p0p1-p2-and-cluster6b.md`。**本锁释放，后续会话可自由接管。** |
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（战略方案 P0/P1 执行轮） |
+> | **意图** | ① 恢复系数判定链接力留痕（recovery_chain_status.json，10-15 修复后状态固化）② RESEND_API_KEY 线上探针 + resend_status.json ③ §0.0 (a)/(b)/(c) 裁决材料 ④ 盲区2 修复：lane-git-commit.py 报告缺席自动兜底 ⑤ 日历价格内战按 SKU 真值修正 hub 快照 ⑥ B1c 簇6b（display/art/adhesive posters ×3语，总账「下一棒首务」）|
+> | **写入范围** | `src/data/category-seo-content.ts`（日历 featuredSnippet zh/ja 真值化）· `src/data/sku-seo-data.ts` + `zprintpro-sku-seo-data.csv` + `src/data/products.ts`（仅簇6b 三 SKU 槽位）· `scripts/lane-git-commit.py`（盲区2 补丁）· `.hermes/logs/*` + `.hermes/infra/` + `.hermes/decisions/`（新目录）· `public/sitemap*.xml`（如 regen）· `SESSION_LOCK.md` · docs 报告 |
+> | **双条件核验** | ① `git status --porcelain -- src/` = 0（02:22 实测）② 对端静默: 最后 src 写入 = 23:48（ea2f4ccc），现 02:2x 静默 >2.5h ✓；lane.lock 不存在 ✓；上次 push 00:10:33，30min 机器闸窗口已开 |
+> | **预计时长** | < 150 min |
+> | **释放条件** | 门禁全绿（tsc 54=54 / 门童 #27 #29 #16 brand / encoding / 相似度闸门）+ commit + push（过 scripts/push-gate-check.mjs）+ verify-deploy + 账本登记 |
+
 
 > **当前状态**: 🔓 **已释放** — 2026-10-15 23:5x AutoClaw 会话（年賀状页预埋批次, K3 「直接开工」指令）
 >
