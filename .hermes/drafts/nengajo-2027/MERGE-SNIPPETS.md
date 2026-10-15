@@ -1,10 +1,6 @@
-# MERGE-SNIPPETS — 年賀状 2027 早鸟页（10/21-22 合入用，逐字复制）
+# MERGE-SNIPPETS — 年賀状 2027 早鸟页（预埋版: 页面已入 src/, 本文件仅余 sitemap + blog 补链 + 标题核验）
 
-> 前置: K3 待办 1（早鸟割引报价真值：价格/割引幅度/截单日）到位后，本页 3 个 `ZP-K3-SLOT-*` 全部替换为真值，然后执行本文件步骤。SSoT: `docs/2026-10-15-nengajo-2027-earlybird-page-skeleton.md`。
-
-## 1) 页面文件合入
-- 复制 `page-nengajo-2027.tsx` → `src/app/[locale]/nengajo-2027/page.tsx`（UTF-8 无 BOM，LF）
-- 全文搜索 `ZP-K3-SLOT` = 0 命中（3 个槽全部已填真值）才允许进入门禁
+> 页面已预埋 `src/app/[locale]/nengajo-2027/page.tsx`（NENGAJO_LIVE=false 门禁）; 上线时只需填 3 真值 + 翻开关 + 以下两步。原「拷文件」步骤已删除。
 
 ## 2) sitemap 登记聚合页
 `scripts/generate-sitemap.js` L81 `staticPages` 数组追加一项（保持字母序不强制）：
