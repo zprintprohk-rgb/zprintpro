@@ -19,10 +19,12 @@ import { htmlLangMap } from '@/types/locale';
 import { generateWebsiteJsonLd } from '@/lib/seo';
 import { getGaScript } from '@/lib/analytics';
 
-// 2026-10-15 A2 CPU 治理 (K3 指令): 移除 runtime="edge" — [locale] 子树按各页 gSP 真正构建期预渲染 (SSG)。
-// 此前全站每请求全量 SSR (15-60ms CPU), 免费层 10ms/请求必超限 (CF 邮件 24h ≥1000 次);
-// 预渲染后单请求为静态资产级, TTFB 1.0-1.5s → 亚秒。
-// search/unsubscribe 两页保留自身 runtime="edge" (服务端读 searchParams, 保持动态)。
+// 2026-10-15 A2 CPU 治理: 预渲染化实验已回退 —— 本地 vercel build 实证：dynamicParams=false 的实现是把
+// 路由 .func 符号链接到 _not-found.func (Node 运行时)，next-on-pages@1.13.16 对任何 Node 函数硬拒绝
+// (两次 CF 构建失败同因)。该适配器已官方 deprecate，SSG 预渲染移交 @opennextjs/cloudflare 迁移立项。
+// 本行恢复 edge（与历次成功部署形态一致）；dynamicParams=false 保留 —— edge 下未知 locale/slug
+// 直接静态 404，不再执行页面组件（修复 /wp-login.php 类垃圾路径 500）。
+export const runtime = "edge";
 export const dynamicParams = false;
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });

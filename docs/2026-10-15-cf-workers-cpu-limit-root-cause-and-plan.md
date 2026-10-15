@@ -153,3 +153,10 @@
 - 本地 `build:cf` 转换层因 shellac Windows spawn 缺陷无法本地复跑（`npm --version` 空输出，与本批代码无关；CF Pages Linux 构建不受影响）→ **转换与 _routes.json/_headers 合并在 CF 构建做最终闸**：失败则不部署、旧版续跑（无线上风险敞口）。
 - 已知残余：① CF Pages build 20 分钟上限（686 页 SSG，本地 next build <10min，CI 需盯）② next-on-pages 已被官方 deprecate（Child A）→ 中期迁移 `@opennextjs/cloudflare` 另立项评估 ③ Workers Paid（A1）仍待 K3 拍板付款。
 - 数据来源：本节数字全部来自 `.hermes/tmp/next-build-a2.log`、`.next/prerender-manifest.json`（2026-10-15 本地构建实测）与 5 份子任务报告（`.hermes/logs/2026-10-15-a2-child-*.md`）；基线探针 37 URL（`.hermes/logs/2026-10-15-a2-baseline-probes.json`）。
+
+### 9.4 两次 CF 构建失败与回退决策（同日实测，双方法闭环）
+- **Build #1（d7e4847a）**：27 条非 slug 路由被拒（Node fallback 函数）。假设「页面级 dynamicParams=false 可消除 fallback」→ **Build #2（dfcab926）同名单被拒 → 假设证伪**。
+- **机制实锤**（本地 `vercel build`，`.hermes/tmp/vercel-build-a2.log`）：`dynamicParams=false` 的构建期实现 = 把路由 .func **符号链接到 `_not-found.func`**（EPERM 报错露馅），而 _not-found.func 是 Node 运行时 → next-on-pages@1.13.16 对任何 Node 函数硬拒绝。**结论：该已弃用适配器下 SSG 预渲染被架构性堵死**（除非整树全 edge = 放弃预渲染）。
+- **决策（Build #3）**：layout 回退 `runtime="edge"`（恢复历次成功部署形态：5/5 静态 + 34 页全 edge ƒ，本地 BUILD_EXIT=0、tsc 54=54）；**保留全部安全战果**：① `_routes.json` 资产/扫描噪声旁路（最大 invocation 乘数）② `public/_headers` ③ middleware A/B 摘除（HTML 不再 Set-Cookie，为 Cache Rules 铺路）④ 32 页 dynamicParams=false（edge 下未知 locale/slug 直接静态 404，修复 /wp-login.php 类 500）。
+- **修正式 A2 预期**：HTML 页面本身仍 edge SSR → **1102 的最终止血 = A1 Workers Paid（K3 付款）+ A2-5 Cache Rules（K3 dashboard）**；真预渲染（TTFB 亚秒级收益）= **@opennextjs/cloudflare 迁移立项**（适配器已 deprecate，迁移后 run_worker_first=false 原生支持静态优先）。
+- 新增数据来源：`.hermes/tmp/vercel-build-a2.log`、`.hermes/tmp/next-build-a2b.log`、`.hermes/tmp/next-build-a2c.log`、CF 部署日志（ba2f1197 与第二次失败部署，2026-10-15 API 实测）。
