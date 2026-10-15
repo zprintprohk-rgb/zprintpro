@@ -1,0 +1,443 @@
+[
+  {
+    "url": "https://zprintpro.com/zh-hk/",
+    "expect": 200,
+    "headers": [
+      {
+        "name": "set-cookie",
+        "absent": "zp_ab_bucket"
+      },
+      {
+        "name": "x-zp-ab-variant",
+        "absent": ""
+      }
+    ],
+    "bodyContains": [
+      "香港本地印刷"
+    ],
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 1.599,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/en/",
+    "expect": 200,
+    "headers": [
+      {
+        "name": "set-cookie",
+        "absent": "zp_ab_bucket"
+      }
+    ],
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.408,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/ja/",
+    "expect": 200,
+    "headers": [
+      {
+        "name": "set-cookie",
+        "absent": "zp_ab_bucket"
+      }
+    ],
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.398,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "expect": 200,
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.652,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+    "expect": 200,
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.587,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/blog/",
+    "expect": 200,
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.812,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/quote/",
+    "expect": 200,
+    "maxTtfb": 2.5,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.932,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/cart/",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.361,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/quote-desk/",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.519,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/help-center/",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.569,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/",
+    "expect": 301,
+    "location": "https://zprintpro.com/zh-hk",
+    "status": 301,
+    "ttfb": 0.236,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/about/",
+    "expect": 301,
+    "location": "https://zprintpro.com/zh-hk/about/",
+    "status": 301,
+    "ttfb": 0.258,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-HK/",
+    "expect": 301,
+    "location": "https://zprintpro.com/zh-hk/",
+    "status": 301,
+    "ttfb": 0.259,
+    "verdict": "FAIL",
+    "fails": [
+      "location https://zprintpro.com/zh-hk/ != https://zprintpro.com/zh-hk"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/quote",
+    "expect": 301,
+    "location": "/quote/",
+    "status": 308,
+    "ttfb": 0.233,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /quote/ != https://zprintpro.com/quote/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/quote?product=foil-stickers",
+    "expect": 301,
+    "location": "/zh-hk/quote/?product=foil-stickers",
+    "status": 308,
+    "ttfb": 0.254,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/quote/?product=foil-stickers != https://zprintpro.com/zh-hk/product/foil-stickers/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/drink-tokens/",
+    "expect": 301,
+    "location": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/",
+    "status": 301,
+    "ttfb": 0.269,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/premium-business-cards/",
+    "expect": 301,
+    "location": "/zh-hk/product/premium-greeting-cards",
+    "status": 308,
+    "ttfb": 0.26,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/product/premium-greeting-cards != https://zprintpro.com/zh-hk/product/premium-greeting-cards/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/business-cards/",
+    "expect": 301,
+    "location": "/zh-hk/category/greeting-cards/",
+    "status": 308,
+    "ttfb": 0.231,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/category/greeting-cards/ != https://zprintpro.com/zh-hk/category/greeting-cards/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/category/business-cards/",
+    "expect": 301,
+    "location": "/zh-hk/category/greeting-cards",
+    "status": 308,
+    "ttfb": 0.227,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/category/greeting-cards != https://zprintpro.com/zh-hk/category/greeting-cards/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/en/guide/packaging-guide/",
+    "expect": 301,
+    "location": "/en/blog/packaging-box-custom-guide/",
+    "status": 308,
+    "ttfb": 0.239,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /en/blog/packaging-box-custom-guide/ != https://zprintpro.com/en/blog/packaging-box-custom-guide/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/returns/",
+    "expect": 301,
+    "location": "/zh-hk/help-center/",
+    "status": 308,
+    "ttfb": 0.231,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/help-center/ != https://zprintpro.com/zh-hk/help-center/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/gift-boxes/",
+    "expect": 301,
+    "location": "/zh-hk/product/rigid-boxes",
+    "status": 308,
+    "ttfb": 0.225,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/product/rigid-boxes != https://zprintpro.com/zh-hk/product/rigid-boxes/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/ja/services/same-day-printing-delivery/",
+    "expect": 301,
+    "location": "/ja/services/rush-printing-delivery/",
+    "status": 308,
+    "ttfb": 0.236,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /ja/services/rush-printing-delivery/ != https://zprintpro.com/ja/services/rush-printing-delivery/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/servis/rush-printing-delivery/",
+    "expect": 301,
+    "location": "/zh-hk/services/rush-printing-delivery/",
+    "status": 308,
+    "ttfb": 0.224,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/services/rush-printing-delivery/ != https://zprintpro.com/zh-hk/services/rush-printing-delivery/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/en/catalogs/",
+    "expect": 301,
+    "location": "/en/category/books/",
+    "status": 308,
+    "ttfb": 0.233,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /en/category/books/ != https://zprintpro.com/en/category/books/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/mesh-banners/",
+    "expect": 301,
+    "location": "/zh-hk/product/outdoor-vinyl-banners/",
+    "status": 308,
+    "ttfb": 0.232,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 301",
+      "location /zh-hk/product/outdoor-vinyl-banners/ != https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/fluorescent-stickers/",
+    "expect": 301,
+    "location": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+    "status": 301,
+    "ttfb": 0.242,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/images/articles/brand-story.webp",
+    "expect": 200,
+    "headers": [
+      {
+        "name": "x-matched-path",
+        "absent": ""
+      },
+      {
+        "name": "cache-control",
+        "contains": "max-age=14400"
+      }
+    ],
+    "status": 200,
+    "location": null,
+    "ttfb": 1.52,
+    "verdict": "FAIL",
+    "fails": [
+      "header x-matched-path should not contain \"\" (got \"/images/articles/brand-story.webp\")",
+      "header x-matched-path should be absent (got value)"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/robots.txt",
+    "expect": 200,
+    "headers": [
+      {
+        "name": "x-matched-path",
+        "absent": ""
+      }
+    ],
+    "status": 200,
+    "location": null,
+    "ttfb": 0.209,
+    "verdict": "FAIL",
+    "fails": [
+      "header x-matched-path should not contain \"\" (got \"/robots.txt\")",
+      "header x-matched-path should be absent (got value)"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/sitemap.xml",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.35,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/sitemap-image.xml",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.307,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/manifest.zh-hk.json",
+    "expect": 200,
+    "status": 200,
+    "location": null,
+    "ttfb": 0.233,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/api/search?q=sticker&locale=zh-hk",
+    "expect": 200,
+    "status": 308,
+    "location": "/api/search/?q=sticker&locale=zh-hk",
+    "ttfb": 0.22,
+    "verdict": "FAIL",
+    "fails": [
+      "status 308 != 200"
+    ]
+  },
+  {
+    "url": "https://zprintpro.com/wp-login.php",
+    "expect": 404,
+    "notStatus": [
+      500,
+      502,
+      503
+    ],
+    "status": 404,
+    "location": null,
+    "ttfb": 0.386,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/.env",
+    "expect": 404,
+    "notStatus": [
+      500,
+      502,
+      503
+    ],
+    "status": 404,
+    "location": null,
+    "ttfb": 0.817,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/wp-admin/",
+    "notStatus": [
+      500,
+      502,
+      503
+    ],
+    "status": 404,
+    "location": null,
+    "ttfb": 0.455,
+    "verdict": "PASS",
+    "fails": []
+  },
+  {
+    "url": "https://zprintpro.com/zh-hk/product/nonexistent-probe-a2/",
+    "expect": 404,
+    "status": 404,
+    "location": null,
+    "ttfb": 0.302,
+    "verdict": "PASS",
+    "fails": []
+  }
+]

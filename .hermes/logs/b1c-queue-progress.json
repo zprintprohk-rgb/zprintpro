@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-15T12:55:00+08:00",
+  "updated_at": "2026-10-15T21:17:00+08:00",
   "updated_by": "autoclaw manual session (W2 cluster4)",
   "clusters": [
     {
@@ -137,6 +137,29 @@
         "collision_note": "push 2fe29a40 @12:43:07 距上次 push e41458fe @12:28:26 仅14m41s, 违反 §0.25.1 30min 硬下限 (时钟未单独核验, 凭回合长度误估墙钟) — 已按 §0.25.2 如实上报 K3, 时间戳修正 commit 留本地, 下次 push >=13:13"
       },
       "note": "车道读到本记录即跳过簇 4, 下簇 = 簇5 (kraft<->eco bags) / 簇6 (a1<->a2 posters)"
+    },
+    {
+      "order": 6,
+      "cluster": "paper-bags kraft<->eco (B1c 簇5)",
+      "slugs": [
+        "kraft-paper-bags",
+        "eco-paper-bags"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane",
+      "claimed_at": "2026-10-15T21:17:00+08:00",
+      "completed_at": "2026-10-15T21:17:00+08:00",
+      "verdict": {
+        "scope": "兄弟页 eco-paper-bags 三语深改: zh body 全段+FAQ 重写 / en body P1-P4 重写 / ja body 全段含 FAQ 重写 + 三语 desc/h1 全改写 + imageAlt 三语垃圾值修复(原为 FAQ 答案/简体). 主推页 kraft-paper-bags 轻改: 三语 desc/h1 真值化 + imageAlt + ja 禁词『業界最安』清除",
+        "anchor": "产品线分工: kraft = 120-200g 天然质感 / 棉绳纸绳手挽 / 承重零售购物袋; eco = FSC 认证或再生纸 / 大豆油墨 / 认证标示位置 / ESG 减塑徵费合规",
+        "faq_schema": "products.ts kraft faqSchema 独立化 (删 PB-004 eco 交叉引用错误) + eco faqSchema 独立化 (共 2 槽)",
+        "cross_lang_fix": "products.ts eco descriptionEn/descriptionJa 简体『适配行业』清毒 2 处 (N15 类)",
+        "similarity": "车道无 node → 未复算 8-gram Jaccard (不虚报); 结构性改动: zh body ~100% 重写, en body P1-P4 (~70%) 重写, ja body ~100% 重写; 共享保留段 = en P5+FAQ 模板",
+        "guards": "lane 侧 grep 自检: 门童 #16 GSC 黑话 0 / #20 meta-desc 形态通过 / #4 zh 简体 0 (新增文本) / en CJK 0 / ja 简体 0 / 名片词 0 / #1 新增无证书号类数字; 机器门禁 (tsc 54=54 / title-v5 / #16 / #29) 由 host wrapper 兜底, 车道不虚报 PASS",
+        "sop5_debt": "sku-seo-data.ts 的 desc/h1 属 CSV 派生域; 车道无 node 且 lane 白名单不含 zprintpro-sku-seo-data.csv → 回写源头 + regen 已登记报告 need_human (附命令)",
+        "wallclock_note": "墙钟未单独核验 (lane 内无 shell), 本记录时间取 run-context 生成时点"
+      },
+      "note": "车道读到本记录即跳过簇 5, 下簇 = 簇6 (a1<->a2 posters)"
     }
   ]
 }

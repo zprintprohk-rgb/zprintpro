@@ -1,0 +1,1082 @@
+[
+  {
+    "url": "/",
+    "request_url": "https://zprintpro.com/",
+    "category": "core",
+    "status": 301,
+    "redirect_url": "https://zprintpro.com/zh-hk",
+    "time_total": 1.5583,
+    "size_download": 0,
+    "note": "NON-DETERMINISTIC(3x); terminal=200 @ /zh-hk/",
+    "repeats": [
+      {
+        "status": 503,
+        "redirect_url": null,
+        "time_total": 0.621486
+      },
+      {
+        "status": 503,
+        "redirect_url": null,
+        "time_total": 0.666118
+      }
+    ],
+    "head_status": 301,
+    "head_location": "https://zprintpro.com/zh-hk",
+    "chain": [
+      {
+        "url": "/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk"
+      },
+      {
+        "url": "/zh-hk",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/"
+      },
+      {
+        "url": "/zh-hk/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/"
+    }
+  },
+  {
+    "url": "/zh-hk/",
+    "request_url": "https://zprintpro.com/zh-hk/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 2.58201,
+    "size_download": 230282,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/en/",
+    "request_url": "https://zprintpro.com/en/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 3.414865,
+    "size_download": 227140,
+    "note": "",
+    "head_status": 503,
+    "head_location": null
+  },
+  {
+    "url": "/ja/",
+    "request_url": "https://zprintpro.com/ja/",
+    "category": "core",
+    "status": 503,
+    "redirect_url": null,
+    "time_total": 0.616608,
+    "size_download": 17,
+    "note": "NON-DETERMINISTIC(3x); followup-GET-ok(bytes=235091)",
+    "repeats": [
+      {
+        "status": 200,
+        "redirect_url": null,
+        "time_total": 2.023885
+      },
+      {
+        "status": 200,
+        "redirect_url": null,
+        "time_total": 2.212077
+      }
+    ],
+    "head_status": 200,
+    "head_location": null,
+    "followup": {
+      "note": "followup-GET after run: bytes=235091, sample=\"<!DOCTYPE html><html lang=\\\"ja-JP\\\" data-l\""
+    }
+  },
+  {
+    "url": "/zh-hk/category/stickers/",
+    "request_url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 2.251721,
+    "size_download": 365010,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/zh-hk/product/roll-up-banners/",
+    "request_url": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 2.10508,
+    "size_download": 191744,
+    "note": "",
+    "head_status": 503,
+    "head_location": null
+  },
+  {
+    "url": "/zh-hk/blog/",
+    "request_url": "https://zprintpro.com/zh-hk/blog/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 2.03992,
+    "size_download": 322536,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/zh-hk/quote/",
+    "request_url": "https://zprintpro.com/zh-hk/quote/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.807717,
+    "size_download": 53237,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/zh-hk/cart/",
+    "request_url": "https://zprintpro.com/zh-hk/cart/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.444253,
+    "size_download": 54217,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/quote-desk/",
+    "request_url": "https://zprintpro.com/quote-desk/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.090371,
+    "size_download": 4736,
+    "note": "",
+    "head_status": 200,
+    "head_location": null,
+    "quote_desk_body": {
+      "bytes": 4730,
+      "title": "Quote Desk — Internal Tool",
+      "markers": {}
+    }
+  },
+  {
+    "url": "/zh-hk/help-center/",
+    "request_url": "https://zprintpro.com/zh-hk/help-center/",
+    "category": "core",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.31164,
+    "size_download": 87968,
+    "note": "",
+    "head_status": 200,
+    "head_location": null
+  },
+  {
+    "url": "/about/",
+    "request_url": "https://zprintpro.com/about/",
+    "category": "middleware",
+    "status": 301,
+    "redirect_url": "https://zprintpro.com/zh-hk/about/",
+    "time_total": 0.661362,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/about/",
+    "repeats": [
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/about/",
+        "time_total": 0.615565
+      },
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/about/",
+        "time_total": 0.624398
+      }
+    ],
+    "head_status": 301,
+    "head_location": "https://zprintpro.com/zh-hk/about/",
+    "chain": [
+      {
+        "url": "/about/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/about/"
+      },
+      {
+        "url": "/zh-hk/about/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/about/"
+    }
+  },
+  {
+    "url": "/zh-HK/",
+    "request_url": "https://zprintpro.com/zh-HK/",
+    "category": "middleware",
+    "status": 301,
+    "redirect_url": "https://zprintpro.com/zh-hk/",
+    "time_total": 0.841088,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/",
+    "repeats": [
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/",
+        "time_total": 0.568794
+      },
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/",
+        "time_total": 0.623436
+      }
+    ],
+    "head_status": 301,
+    "head_location": "https://zprintpro.com/zh-hk/",
+    "chain": [
+      {
+        "url": "/zh-HK/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/"
+      },
+      {
+        "url": "/zh-hk/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/"
+    }
+  },
+  {
+    "url": "/quote",
+    "request_url": "https://zprintpro.com/quote",
+    "category": "middleware",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/quote/",
+    "time_total": 0.650721,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/quote/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/quote/",
+        "time_total": 0.847168
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/quote/",
+        "time_total": 0.623369
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/quote/",
+    "chain": [
+      {
+        "url": "/quote",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/quote/"
+      },
+      {
+        "url": "/quote/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/quote/"
+      },
+      {
+        "url": "/zh-hk/quote/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/quote/"
+    }
+  },
+  {
+    "url": "/zh-hk/quote?product=foil-stickers",
+    "request_url": "https://zprintpro.com/zh-hk/quote?product=foil-stickers",
+    "category": "middleware",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/quote/?product=foil-stickers",
+    "time_total": 0.617689,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/product/foil-stickers/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/quote/?product=foil-stickers",
+        "time_total": 2.480394
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/quote/?product=foil-stickers",
+        "time_total": 0.858035
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/quote/?product=foil-stickers",
+    "chain": [
+      {
+        "url": "/zh-hk/quote?product=foil-stickers",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/quote/?product=foil-stickers"
+      },
+      {
+        "url": "/zh-hk/quote/?product=foil-stickers",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/foil-stickers/"
+      },
+      {
+        "url": "/zh-hk/product/foil-stickers/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/foil-stickers/"
+    }
+  },
+  {
+    "url": "/zh-hk/product/drink-tokens/",
+    "request_url": "https://zprintpro.com/zh-hk/product/drink-tokens/",
+    "category": "middleware",
+    "status": 301,
+    "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/",
+    "time_total": 0.68237,
+    "size_download": 0,
+    "note": "NON-DETERMINISTIC(3x); terminal=200 @ /zh-hk/product/premium-greeting-cards/",
+    "repeats": [
+      {
+        "status": 503,
+        "redirect_url": null,
+        "time_total": 0.645966
+      },
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/",
+        "time_total": 0.836703
+      }
+    ],
+    "head_status": 301,
+    "head_location": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/",
+    "chain": [
+      {
+        "url": "/zh-hk/product/drink-tokens/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/"
+      },
+      {
+        "url": "/zh-hk/product/premium-greeting-cards/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/premium-greeting-cards/"
+    }
+  },
+  {
+    "url": "/{locale}/product/stickers",
+    "request_url": "https://zprintpro.com/{locale}/product/stickers",
+    "category": "middleware",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/locale/product/stickers/",
+    "time_total": 0.613745,
+    "size_download": 0,
+    "note": "literal-placeholder-probe; deterministic(3x); terminal=404 @ /zh-hk/locale/product/stickers/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/locale/product/stickers/",
+        "time_total": 0.61476
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/locale/product/stickers/",
+        "time_total": 0.608145
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/locale/product/stickers/",
+    "chain": [
+      {
+        "url": "/{locale}/product/stickers",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/locale/product/stickers/"
+      },
+      {
+        "url": "/locale/product/stickers/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/locale/product/stickers/"
+      },
+      {
+        "url": "/zh-hk/locale/product/stickers/",
+        "status": 404,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 404,
+      "url": "/zh-hk/locale/product/stickers/"
+    }
+  },
+  {
+    "url": "/個から",
+    "request_url": "https://zprintpro.com/%E5%80%8B%E3%81%8B%E3%82%89",
+    "category": "middleware",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/%E5%80%8B%E3%81%8B%E3%82%89/",
+    "time_total": 0.784187,
+    "size_download": 0,
+    "note": "sent-percent-encoded; deterministic(3x); terminal=404 @ /zh-hk/%E5%80%8B%E3%81%8B%E3%82%89/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/%E5%80%8B%E3%81%8B%E3%82%89/",
+        "time_total": 0.600853
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/%E5%80%8B%E3%81%8B%E3%82%89/",
+        "time_total": 0.588952
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/%E5%80%8B%E3%81%8B%E3%82%89/",
+    "chain": [
+      {
+        "url": "/個から",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/%E5%80%8B%E3%81%8B%E3%82%89/"
+      },
+      {
+        "url": "/%E5%80%8B%E3%81%8B%E3%82%89/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/%E5%80%8B%E3%81%8B%E3%82%89/"
+      },
+      {
+        "url": "/zh-hk/%E5%80%8B%E3%81%8B%E3%82%89/",
+        "status": 404,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 404,
+      "url": "/zh-hk/%E5%80%8B%E3%81%8B%E3%82%89/"
+    }
+  },
+  {
+    "url": "/wp-login.php",
+    "request_url": "https://zprintpro.com/wp-login.php",
+    "category": "middleware",
+    "status": 500,
+    "redirect_url": null,
+    "time_total": 1.225149,
+    "size_download": 11212,
+    "note": "deterministic(3x)",
+    "repeats": [
+      {
+        "status": 500,
+        "redirect_url": null,
+        "time_total": 0.815536
+      },
+      {
+        "status": 500,
+        "redirect_url": null,
+        "time_total": 0.675741
+      }
+    ]
+  },
+  {
+    "url": "/zh-hk/product/nonexistent-probe-a2/",
+    "request_url": "https://zprintpro.com/zh-hk/product/nonexistent-probe-a2/",
+    "category": "middleware",
+    "status": 503,
+    "redirect_url": null,
+    "time_total": 0.675323,
+    "size_download": 17,
+    "note": "NON-DETERMINISTIC(3x)",
+    "repeats": [
+      {
+        "status": 404,
+        "redirect_url": null,
+        "time_total": 0.676869
+      },
+      {
+        "status": 404,
+        "redirect_url": null,
+        "time_total": 0.606203
+      }
+    ]
+  },
+  {
+    "url": "/zh-hk/product/premium-business-cards/",
+    "request_url": "https://zprintpro.com/zh-hk/product/premium-business-cards/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards",
+    "time_total": 0.654935,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/product/premium-greeting-cards/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards",
+        "time_total": 0.855828
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards",
+        "time_total": 0.635442
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/product/premium-greeting-cards",
+    "chain": [
+      {
+        "url": "/zh-hk/product/premium-business-cards/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards"
+      },
+      {
+        "url": "/zh-hk/product/premium-greeting-cards",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/"
+      },
+      {
+        "url": "/zh-hk/product/premium-greeting-cards/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/premium-greeting-cards/"
+    }
+  },
+  {
+    "url": "/zh-hk/product/business-cards/",
+    "request_url": "https://zprintpro.com/zh-hk/product/business-cards/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards/",
+    "time_total": 0.609469,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/category/greeting-cards/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards/",
+        "time_total": 0.611313
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards/",
+        "time_total": 0.59623
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/category/greeting-cards/",
+    "chain": [
+      {
+        "url": "/zh-hk/product/business-cards/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards/"
+      },
+      {
+        "url": "/zh-hk/category/greeting-cards/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/category/greeting-cards/"
+    }
+  },
+  {
+    "url": "/zh-hk/category/business-cards/",
+    "request_url": "https://zprintpro.com/zh-hk/category/business-cards/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards",
+    "time_total": 0.629812,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=503 @ /zh-hk/category/greeting-cards/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards",
+        "time_total": 0.844371
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards",
+        "time_total": 0.636162
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/category/greeting-cards",
+    "chain": [
+      {
+        "url": "/zh-hk/category/business-cards/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards"
+      },
+      {
+        "url": "/zh-hk/category/greeting-cards",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/category/greeting-cards/"
+      },
+      {
+        "url": "/zh-hk/category/greeting-cards/",
+        "status": 503,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 503,
+      "url": "/zh-hk/category/greeting-cards/"
+    }
+  },
+  {
+    "url": "/en/guide/packaging-guide/",
+    "request_url": "https://zprintpro.com/en/guide/packaging-guide/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/en/blog/packaging-box-custom-guide/",
+    "time_total": 1.367946,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /en/blog/packaging-box-custom-guide/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/blog/packaging-box-custom-guide/",
+        "time_total": 1.183096
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/blog/packaging-box-custom-guide/",
+        "time_total": 1.346462
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/en/blog/packaging-box-custom-guide/",
+    "chain": [
+      {
+        "url": "/en/guide/packaging-guide/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/blog/packaging-box-custom-guide/"
+      },
+      {
+        "url": "/en/blog/packaging-box-custom-guide/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/en/blog/packaging-box-custom-guide/"
+    }
+  },
+  {
+    "url": "/zh-hk/returns/",
+    "request_url": "https://zprintpro.com/zh-hk/returns/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/help-center/",
+    "time_total": 0.62479,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=503 @ /zh-hk/help-center/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/help-center/",
+        "time_total": 0.603518
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/help-center/",
+        "time_total": 1.309152
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/help-center/",
+    "chain": [
+      {
+        "url": "/zh-hk/returns/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/help-center/"
+      },
+      {
+        "url": "/zh-hk/help-center/",
+        "status": 503,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 503,
+      "url": "/zh-hk/help-center/"
+    }
+  },
+  {
+    "url": "/zh-hk/product/gift-boxes/",
+    "request_url": "https://zprintpro.com/zh-hk/product/gift-boxes/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/product/rigid-boxes",
+    "time_total": 0.822677,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/product/rigid-boxes/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/rigid-boxes",
+        "time_total": 0.67976
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/rigid-boxes",
+        "time_total": 0.810704
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/product/rigid-boxes",
+    "chain": [
+      {
+        "url": "/zh-hk/product/gift-boxes/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/rigid-boxes"
+      },
+      {
+        "url": "/zh-hk/product/rigid-boxes",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/rigid-boxes/"
+      },
+      {
+        "url": "/zh-hk/product/rigid-boxes/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/rigid-boxes/"
+    }
+  },
+  {
+    "url": "/ja/services/same-day-printing-delivery/",
+    "request_url": "https://zprintpro.com/ja/services/same-day-printing-delivery/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/ja/services/rush-printing-delivery/",
+    "time_total": 0.671121,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /ja/services/rush-printing-delivery/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/ja/services/rush-printing-delivery/",
+        "time_total": 0.590106
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/ja/services/rush-printing-delivery/",
+        "time_total": 0.59617
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/ja/services/rush-printing-delivery/",
+    "chain": [
+      {
+        "url": "/ja/services/same-day-printing-delivery/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/ja/services/rush-printing-delivery/"
+      },
+      {
+        "url": "/ja/services/rush-printing-delivery/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/ja/services/rush-printing-delivery/"
+    }
+  },
+  {
+    "url": "/zh-hk/servis/rush-printing-delivery/",
+    "request_url": "https://zprintpro.com/zh-hk/servis/rush-printing-delivery/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "time_total": 0.639736,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/services/rush-printing-delivery/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+        "time_total": 1.620994
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+        "time_total": 0.652393
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/services/rush-printing-delivery/",
+    "chain": [
+      {
+        "url": "/zh-hk/servis/rush-printing-delivery/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/"
+      },
+      {
+        "url": "/zh-hk/services/rush-printing-delivery/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/services/rush-printing-delivery/"
+    }
+  },
+  {
+    "url": "/en/catalogs/",
+    "request_url": "https://zprintpro.com/en/catalogs/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/en/category/books/",
+    "time_total": 0.599959,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /en/category/books/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/category/books/",
+        "time_total": 0.592728
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/category/books/",
+        "time_total": 0.641136
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/en/category/books/",
+    "chain": [
+      {
+        "url": "/en/catalogs/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/en/category/books/"
+      },
+      {
+        "url": "/en/category/books/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/en/category/books/"
+    }
+  },
+  {
+    "url": "/zh-hk/product/mesh-banners/",
+    "request_url": "https://zprintpro.com/zh-hk/product/mesh-banners/",
+    "category": "next-config-301",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/",
+    "time_total": 1.210538,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/product/outdoor-vinyl-banners/",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/",
+        "time_total": 1.346239
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/",
+        "time_total": 0.639985
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/zh-hk/product/outdoor-vinyl-banners/",
+    "chain": [
+      {
+        "url": "/zh-hk/product/mesh-banners/",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/"
+      },
+      {
+        "url": "/zh-hk/product/outdoor-vinyl-banners/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/outdoor-vinyl-banners/"
+    }
+  },
+  {
+    "url": "/zh-hk/product/fluorescent-stickers/",
+    "request_url": "https://zprintpro.com/zh-hk/product/fluorescent-stickers/",
+    "category": "next-config-301",
+    "status": 301,
+    "redirect_url": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+    "time_total": 0.63615,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /zh-hk/product/roll-stickers/",
+    "repeats": [
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+        "time_total": 0.604315
+      },
+      {
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+        "time_total": 0.589847
+      }
+    ],
+    "head_status": 301,
+    "head_location": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+    "chain": [
+      {
+        "url": "/zh-hk/product/fluorescent-stickers/",
+        "status": 301,
+        "redirect_url": "https://zprintpro.com/zh-hk/product/roll-stickers/"
+      },
+      {
+        "url": "/zh-hk/product/roll-stickers/",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/zh-hk/product/roll-stickers/"
+    }
+  },
+  {
+    "url": "/robots.txt",
+    "request_url": "https://zprintpro.com/robots.txt",
+    "category": "infra",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 0.67181,
+    "size_download": 1193,
+    "note": ""
+  },
+  {
+    "url": "/sitemap.xml",
+    "request_url": "https://zprintpro.com/sitemap.xml",
+    "category": "infra",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.768671,
+    "size_download": 468507,
+    "note": ""
+  },
+  {
+    "url": "/sitemap-image.xml",
+    "request_url": "https://zprintpro.com/sitemap-image.xml",
+    "category": "infra",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.568188,
+    "size_download": 251422,
+    "note": ""
+  },
+  {
+    "url": "/manifest.zh-hk.json",
+    "request_url": "https://zprintpro.com/manifest.zh-hk.json",
+    "category": "infra",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 0.613319,
+    "size_download": 2238,
+    "note": ""
+  },
+  {
+    "url": "/images/articles/brand-story.webp",
+    "request_url": "https://zprintpro.com/images/articles/brand-story.webp",
+    "category": "infra",
+    "status": 200,
+    "redirect_url": null,
+    "time_total": 1.886714,
+    "size_download": 158082,
+    "note": ""
+  },
+  {
+    "url": "/api/search?q=sticker&locale=zh-hk",
+    "request_url": "https://zprintpro.com/api/search?q=sticker&locale=zh-hk",
+    "category": "infra",
+    "status": 308,
+    "redirect_url": "https://zprintpro.com/api/search/?q=sticker&locale=zh-hk",
+    "time_total": 0.600864,
+    "size_download": 0,
+    "note": "deterministic(3x); terminal=200 @ /api/search/?q=sticker&locale=zh-hk; body-captured-from-terminal(followup)",
+    "repeats": [
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/api/search/?q=sticker&locale=zh-hk",
+        "time_total": 2.236939
+      },
+      {
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/api/search/?q=sticker&locale=zh-hk",
+        "time_total": 1.340531
+      }
+    ],
+    "head_status": 308,
+    "head_location": "/api/search/?q=sticker&locale=zh-hk",
+    "chain": [
+      {
+        "url": "/api/search?q=sticker&locale=zh-hk",
+        "status": 308,
+        "redirect_url": "https://zprintpro.com/api/search/?q=sticker&locale=zh-hk"
+      },
+      {
+        "url": "/api/search/?q=sticker&locale=zh-hk",
+        "status": 200,
+        "redirect_url": null
+      }
+    ],
+    "terminal": {
+      "status": 200,
+      "url": "/api/search/?q=sticker&locale=zh-hk"
+    },
+    "api_body": {
+      "bytes": 4099,
+      "json": true,
+      "shape": "object(query,locale,results,categories,total)",
+      "captured_from": "terminal /api/search/?q=sticker&locale=zh-hk (followup)"
+    }
+  }
+]
