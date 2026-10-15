@@ -17,11 +17,13 @@
 校准状态: 已校准（2026-10-15 19:3x，本会话一手直读；草稿未入 src/，合入时按 LAUNCH-CHECKLIST 重跑门禁）
 ```
 
-## §1 交付物清单
+## §1 交付物清单（10/15 23:4x 更新：预埋版已入 src/）
+
+> **执行层拍板（K3 「直接开工」指令，预埋理由）**: 骨架直接入 `src/app/[locale]/nengajo-2027/page.tsx`，用 `NENGAJO_LIVE=false` 构建期 404 门禁 —— 客户/Google 不可见、sitemap 未登记、可见文案全为诚实基线（無空槽字面，误开也零虚假信息）；上线 = 填三真值 + 翻开关 + sitemap 一行 + blog x3 补链 = **单次小 diff 当日上线**，且 TS/import/构建风险已提前在本批消化（发现并修复 3 处对象键未引号致 tsc 早停 54→9）。commit ea2f4ccc（push 23:49）。
 
 | # | 文件 | 说明 |
 |---|---|---|
-| 1 | `.hermes/drafts/nengajo-2027/page-nengajo-2027.tsx` | 页面骨架全文（3 locale：ja 主场 / zh-hk 賀年卡早鳥 / en Nengajo）；6 SKU 牌价表（products.ts 真值）+ 早割列；發注時間線；宛名オプション槽；FAQ 4（同步 FAQPage schema）；JsonLd 3 块；内链 8（全部已核实在册 slug）；**ZP-K3-SLOT ×30 全部显式可 grep** |
+| 1 | `src/app/[locale]/nengajo-2027/page.tsx`（预埋, NENGAJO_LIVE=false） | 页面全文（3 locale：ja 主场 / zh-hk 賀年卡早鳥 / en Nengajo）；6 SKU 三币牌价真值表 + 早割列（「確定後に掲載」）；發注時間線；宛名槽；FAQ 4（同步 FAQPage schema）；JsonLd 3 块；内链 8（全部 200 实测）；K3 三填值位以代码注释标注 |
 | 2 | `.hermes/drafts/nengajo-2027/MERGE-SNIPPETS.md` | 合入片段：src 路径 / sitemap staticPages / blog ×3 承接补链（各 1 段逐字 HTML）/ 标题当量核验脚本 / S2 slug 已核清单 |
 | 3 | `.hermes/drafts/nengajo-2027/LAUNCH-CHECKLIST.md` | 上线 runbook（真值→合入→门禁→push→verify→IndexNow→GSC 请求索引，~40 分钟）+ 红线 |
 | 4 | 本文档 | SSoT 与对账 |
