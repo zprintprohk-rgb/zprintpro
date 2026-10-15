@@ -2297,6 +2297,62 @@ const lpCorporateHolidayCardsPrintingGuide: BlogPostMeta = {
   },
 };
 
+
+// 2026-10-16 v2 方案 §4: B5 企業月曆訂製速查 (zh-lead, 月曆印刷 102 展承接) + B6 calendar sizes fact-table (en AEO 摘要目标)
+const dcCorporateCalendar2027: BlogPostMeta = {
+  slug: 'corporate-calendar-customization-2027',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-10-16',
+  title: {
+    'zh-hk': "月曆印刷訂製：尺寸×掛裝×紙材速查 1 本起 HK$3-8 | 智印港",
+    en: "Custom Calendars 2027: Sizes, Binding, Papers | ZprintPro",
+    ja: "企業カレンダー印刷 2027：サイズ・製本 1部〜 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "企業月曆訂製指南：六款類型（座檯/掛牆/訂製/迷你/相框/磁石）規格×紙材×檔期一次講清，1 本起印 HK$3-8/本，Q4 旺季 10 月底前確認，附 6 條 FAQ。",
+    en: "A practical guide to corporate calendar printing for 2027: six calendar types compared, paper and binding choices, single-copy MOQ from US$0.40, volume tips and the Q4 production window.",
+    ja: "企業カレンダー印刷の発注ガイド。6 タイプの規格比較、用紙と製本の選び方、1部からの小ロット、Q4 繁忙期のスケジュールまで、6 つの FAQ とともに解説します。",
+  },
+  targetKeywords: {
+  'primary': 'custom calendar printing',
+  'secondary': [
+    '月曆訂製',
+    '企業年曆印刷',
+    'corporate calendar printing 2027',
+    'desk calendar printing',
+    'wall calendar printing'
+  ]
+},
+};
+
+const dcCalendarSizesReference: BlogPostMeta = {
+  slug: 'calendar-sizes-print-reference',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-10-16',
+  title: {
+    'zh-hk': "月曆尺寸大全 2027：座檯/掛牆/磁石尺寸表 1 本起 | 智印港",
+    en: "Calendar Sizes 2027: Complete Print Reference | ZprintPro",
+    ja: "カレンダーサイズ一覧 2027：卓上・壁掛け・磁石 | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "月曆尺寸速查：座檯/掛牆/年曆卡/迷你/磁石五類規格表、紙重與裝訂對照、價格帶同落單檔期，1 本起印，AEO 速查設計。",
+    en: "The complete 2027 calendar size reference: exact dimensions for desk, wall, card, mini and magnetic calendars, paper weights, binding options, pricing floor and production windows.",
+    ja: "カレンダーサイズの完全リファレンス。卓上・壁掛け・カード・ミニ・マグネットの寸法、用紙と製本、価格帯と発注タイミングを一覧表で整理しました。",
+  },
+  targetKeywords: {
+  'primary': 'calendar sizes',
+  'secondary': [
+    'calendar size guide',
+    'a3 calendar size',
+    'desk calendar size',
+    'wall calendar dimensions',
+    'magnetic calendar size'
+  ]
+},
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -2479,6 +2535,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpNewYearCardPrinting2027Guide,
   // 2026-10-10 ZP-daily-content: 企業ホリデーカード / corporate holiday cards (紅旗 1 en 側 0 展示 body 内容層承接; 10-09 大脳取詞表 #2; W10「年賀状 en 篇」的 en 另一半)
   lpCorporateHolidayCardsPrintingGuide,
+  dcCorporateCalendar2027,
+  dcCalendarSizesReference,
   ];
 
 // =============================================================================

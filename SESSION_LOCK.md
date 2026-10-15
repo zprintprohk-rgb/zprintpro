@@ -2,7 +2,16 @@
 
 > **⚠️ 撞车记录 #2（§0.25.2 如实上报，2026-10-16 00:1x）**: push d0a1e033 @00:08:51 距上次 push 30691f04 @23:41:36 = **27m15s < 30min 硬下限**。根因 = 时钟闸只打印时间戳未做计算判定（两次撞车同根因：人眼估读）。**纠正**：新增机器闸 scripts/push-gate-check.mjs（读远端最后 push 时间，<30min exit 1）——此后一切 push 前必须先过该闸，车道 wrapper 与人手会话同规。本修正 commit 留本地，随下窗口推送。
 
-> **当前状态**: 🔓 **已释放** — 2026-10-16 05:0x AutoClaw 会话（v2 方案 §3 10/16 档：簇 7 calendars 六 SKU）
+> **当前状态**: 🔓 **已释放** — 2026-10-16 05:3x AutoClaw 会话（v2 方案 10/17-19 梯次提前执行）
+>
+> | 项 | 值 |
+> |---|---|
+> | **释放结果** | ✅ 日历战争层 2/3 清零（seo.ts 假地板 + en title 51 当量 + conversion-blocks/Industries 19 处）✅ B5/B6 深度 blog 三语上线（sitemap 240/语）✅ 解除判定快照（条件①仍 1/3，球在 K3）。SSoT `docs/2026-10-16-v2-d1-b5b6-and-calendar-l23.md`。**本锁释放。下一棒：簇 8（packaging faqSchema ×10 等）+ 10/22 年賀状翻开关。** |
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+> | **意图** | ① P0-4 层3：conversion-block「100 本起」+ 燙金 FAQ 假 MOQ 源头修正 ② P0-4 层2：日历 title/meta「HK$10 假地板」真值化（title 若零改动则无 churn）③ B5（zh 企業月曆訂製速查）+ B6（en calendar sizes fact-table）深度 blog ×2 ④ 簇7 线上复核全量 ⑤ 簇8 如余量 |
 >
 > | 项 | 值 |
 > |---|---|

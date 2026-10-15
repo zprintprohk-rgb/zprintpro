@@ -325,9 +325,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'corporate_gift',
       scenarios: {
-        'zh-hk': ['企業年曆 · 品牌定制', '公司 LOGO + 燙金年份', '100 本起 · 座檯/掛牆可選'],
-        en: ['Corporate calendar · branded', 'Company logo + foil-stamped year', 'From 100 · desk or wall mount'],
-        ja: ['企業カレンダー・ブランド入り', '社名ロゴ + 年号箔押し', '100部から・卓上/壁掛け選択可'],
+        'zh-hk': ['企業年曆 · 品牌定制', '公司 LOGO + 燙金年份', '1 本起 · 座檯/掛牆可選'],
+        en: ['Corporate calendar · branded', 'Company logo + foil-stamped year', 'From 1 · desk or wall mount'],
+        ja: ['企業カレンダー・ブランド入り', '社名ロゴ + 年号箔押し', '1部から・卓上/壁掛け選択可'],
       },
       priority: 0, tier: 'A',
     },
