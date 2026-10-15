@@ -34,6 +34,22 @@ CLIFF_RATIO = 0.30
 DEPRESSED_RATIO = 0.50
 STALE_DAYS = 5
 SITES = {'香港': 'hk', '日本': 'jp', '美国': 'us'}
+# 24h 实时档命名兼容: 旧导出 = 实时24小时*; K3 10-15 起新导出 = 24小时三站点汇总*
+REALTIME_PATTERNS = ('实时24小时*', '24小时三站点汇总*')
+# 断崖前基线 (K3 10-13 拍板口径, 固定常量): gsc-cliff-2026-10-13.json 三站 mean28 之和
+# (hk 377.2 + jp 72.2 + us 135.8 = 585.2/日, 28d 档止于 10-05 = 命中前窗口).
+# 固定分母保证逐日恢复系数可比 ("连续 3 日 >=60%" 判定的前提); 动态 mean28 比值保留为次要参考.
+PRECLIFF_BASELINE_COMBINED = 585.2
+PRECLIFF_BASELINE_SOURCE = 'gsc-cliff-2026-10-13.json sites.{hk,jp,us}.mean28_imps (28d 档止 10-05)'
+
+
+def latest_file_any(patterns):
+    cands = []
+    for pat in patterns:
+        cands.extend(glob.glob(str(GSC_DIR / pat)))
+    if not cands:
+        return None
+    return Path(sorted(cands, key=lambda p: _file_date(p), reverse=True)[0])
 
 
 def latest_file(pattern):
@@ -111,7 +127,7 @@ def main():
             report['alerts'].append({'level': 'WARN_DEPRESSED', 'site': code,
                                      'detail': f'近3日均 {trail3_mean:.0f} = 28天日均 {mean28:.0f} 的 {trail3_mean / mean28 * 100:.0f}% (持续低位)'})
 
-    rt = latest_file('实时24小时*.xlsx')
+    rt = latest_file_any(REALTIME_PATTERNS)
     if rt:
         hours = read_hourly(rt)
         if hours:
@@ -121,8 +137,11 @@ def main():
                 'file': rt.name, 'hours': len(hours),
                 'window': f'{hours[0]["hour"]} ~ {hours[-1]["hour"]}',
                 'imps': rt_imps, 'clicks': sum(h['clicks'] for h in hours),
-                # 恢复曲线主指标: 实时 24h 展示 / 断崖前日均 (28d 档止于 10-05 = 命中前窗口, 可作基线)
-                'recovery_ratio_vs_precliff': round(rt_imps / combined_mean, 3) if combined_mean else None,
+                # 主指标: 固定断崖前基线分母 (逐日可比, "连续 3 日" 判定依据)
+                'recovery_ratio_vs_precliff': round(rt_imps / PRECLIFF_BASELINE_COMBINED, 3) if PRECLIFF_BASELINE_COMBINED else None,
+                # 次要参考: 动态 28d mean28 分母 (窗口随导出滑动, 日间不可比)
+                'recovery_ratio_vs_mean28_dynamic': round(rt_imps / combined_mean, 3) if combined_mean else None,
+                'baseline': {'combined_mean28': PRECLIFF_BASELINE_COMBINED, 'source': PRECLIFF_BASELINE_SOURCE},
             }
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)
