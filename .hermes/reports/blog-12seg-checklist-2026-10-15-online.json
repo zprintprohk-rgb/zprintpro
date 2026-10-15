@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T13:28:22.899Z",
+ "generated_at": "2026-10-15T21:16:09.214Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2755,9 +2755,9 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189965",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/packaging-box-pricing-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
@@ -2765,7 +2765,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=178974",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=179078",
    "reason": ""
   },
   {
@@ -2774,7 +2774,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191081",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191185",
    "reason": ""
   },
   {
@@ -2783,7 +2783,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188242",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188346",
    "reason": ""
   },
   {
@@ -2792,7 +2792,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=216041",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=216145",
    "reason": ""
   },
   {
@@ -2801,7 +2801,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=181191",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=181295",
    "reason": ""
   },
   {
@@ -2810,7 +2810,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167166",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167270",
    "reason": ""
   },
   {
@@ -2819,7 +2819,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192870",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192974",
    "reason": ""
   },
   {
@@ -2828,7 +2828,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=159914",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=160018",
    "reason": ""
   },
   {
@@ -2918,7 +2918,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=137441",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183843",
    "reason": ""
   },
   {
@@ -2926,72 +2926,72 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180851",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/poster-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=163478",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=190113",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/foil-stamping-3-applications-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=213206",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/hong-kong-printing-cost-baseline-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183480",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "roll-up-banner-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=168164",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/print-specifications-reference-guide-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194035",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/school-exercise-book-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=152941",
+   "reason": ""
   }
  ]
 }

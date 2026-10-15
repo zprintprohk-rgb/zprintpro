@@ -48,3 +48,7 @@
 ## 2026-10-12 06:43:03 车道对账告警
 
 - **车道结果异常**: ZP-k3-review scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-10-16 06:43:12 车道对账告警
+
+- **车道结果异常**: ZP-k3-review scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
