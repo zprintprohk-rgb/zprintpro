@@ -28,19 +28,10 @@ const LOCALES = ['/zh-hk/', '/en/', '/ja/'];
 // 默认 locale（香港繁中）
 const DEFAULT_LOCALE = '/zh-hk/';
 
-// ============ A/B Test（静态 fallback）============
-// 文案集中在 lib/analytics.ts 的 HERO_H1_VARIANTS / CTA_VARIANTS
-// 部署在 Cloudflare Pages，cookie 分组由 middleware 注入
-type AbVariant = 'A' | 'B';
-
-function pickVariant(req: NextRequest): AbVariant {
-  // 已分组则稳定返回
-  const existing = req.cookies.get('zp_ab_bucket')?.value;
-  if (existing === 'A' || existing === 'B') return existing;
-  // 否则 50/50 随机
-  return Math.random() < 0.5 ? 'A' : 'B';
-}
-
+// A/B 测试（2026-10-15 A2 CPU 治理起全客户端化）: 文案变体常量在 lib/analytics.ts,
+// 分组由客户端（HeroBanner useEffect 内）自持 cookie, SSR 恒渲染 A 变体;
+// middleware 不再注入 A/B cookie 与响应头（此前每个响应 Set-Cookie 导致 CF 边缘无法缓存 HTML）。
+// 详情见 docs/2026-10-15-cf-workers-cpu-limit-root-cause-and-plan.md
 /**
  * quote?product=xxx → /product/xxx/ 产品 slug 映射表
  * 所有通过 /quote?product=xxx 被错误索引的页面，301 跳转到正确的产品详情页
@@ -294,15 +285,7 @@ async function thisResponseWithAbHeaders(request: NextRequest) {
     "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://*.supabase.co https://plausible.io; frame-src 'self';"
   );
 
-  // A/B 分组：Edge Config 优先，未配置时由 client getAbVariant 走 cookie
-  const variant = pickVariant(request);
-  response.cookies.set('zp_ab_bucket', variant, {
-    path: '/',
-    maxAge: 60 * 60 * 24 * 30, // 30 天
-    sameSite: 'lax',
-  });
-  response.headers.set('x-zp-ab-variant', variant);
-
+  // 2026-10-15 A2: A/B cookie/header 注入已移除（全客户端化, 见文件头注释）; 安全头保留
   return response;
 }
 

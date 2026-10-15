@@ -1,0 +1,31 @@
+# A2 CPU governance 2026-10-15: paths excluded in _routes.json are served by the
+# CF Pages static layer directly; this file keeps their cache headers on par with
+# what the Function used to return (per Cloudflare docs, _headers applies to
+# static asset responses only, which is exactly the excluded set).
+/images/*
+  Cache-Control: public, max-age=14400, must-revalidate
+  Access-Control-Allow-Origin: *
+/icon-*
+  Cache-Control: public, max-age=604800, must-revalidate
+/manifest*.json
+  Cache-Control: public, max-age=3600, must-revalidate
+/robots.txt
+  Cache-Control: public, max-age=3600, must-revalidate
+/sitemap.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+/sitemap-index.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+/sitemap-zh-hk.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+/sitemap-en.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+/sitemap-ja.xml
+  Cache-Control: public, max-age=3600, must-revalidate
+/llms*.txt
+  Cache-Control: public, max-age=86400, must-revalidate
+/og-image.jpg
+  Cache-Control: public, max-age=604800, must-revalidate
+/screenshot-*.png
+  Cache-Control: public, max-age=604800, must-revalidate
+/whatsapp-qr.jpg
+  Cache-Control: public, max-age=604800, must-revalidate

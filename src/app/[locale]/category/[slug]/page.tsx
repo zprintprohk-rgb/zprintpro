@@ -40,6 +40,10 @@ import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/
 import { CategoryPageV9 } from './v9/CategoryPageV9';
 
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
+// 2026-10-15 A2 CPU 治理: 未知 slug 一律静态 404 (dynamicParams=false),
+// 不再为扫描器/猜测 URL 做动态渲染 (此前免费层 10ms CPU 下致 1102/500)
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
 

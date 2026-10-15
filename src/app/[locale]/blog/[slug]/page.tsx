@@ -897,6 +897,10 @@ function extractFaqFromHtml(html: string): { question: string; answer: string }[
   return faqs.length > 0 ? faqs : null;
 }
 
+// 2026-10-15 A2 CPU 治理: 未知 slug 一律静态 404 (dynamicParams=false),
+// 不再为扫描器/猜测 URL 做动态渲染 (此前免费层 10ms CPU 下致 1102/500)
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
   ['zh-hk', 'en', 'ja'].forEach((locale) => {

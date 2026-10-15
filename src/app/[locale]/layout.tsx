@@ -19,7 +19,11 @@ import { htmlLangMap } from '@/types/locale';
 import { generateWebsiteJsonLd } from '@/lib/seo';
 import { getGaScript } from '@/lib/analytics';
 
-export const runtime = "edge";
+// 2026-10-15 A2 CPU 治理 (K3 指令): 移除 runtime="edge" — [locale] 子树按各页 gSP 真正构建期预渲染 (SSG)。
+// 此前全站每请求全量 SSR (15-60ms CPU), 免费层 10ms/请求必超限 (CF 邮件 24h ≥1000 次);
+// 预渲染后单请求为静态资产级, TTFB 1.0-1.5s → 亚秒。
+// search/unsubscribe 两页保留自身 runtime="edge" (服务端读 searchParams, 保持动态)。
+export const dynamicParams = false;
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
 

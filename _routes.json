@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "description": "A2 CPU governance 2026-10-15: static assets and scanner noise bypass Function (free static layer)",
+  "include": ["/*"],
+  "exclude": [
+    "/images/*",
+    "/icon-*",
+    "/favicon.ico",
+    "/manifest*.json",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/sitemap-index.xml",
+    "/sitemap-zh-hk.xml",
+    "/sitemap-en.xml",
+    "/sitemap-ja.xml",
+    "/llms*.txt",
+    "/og-image.jpg",
+    "/screenshot-*.png",
+    "/whatsapp-qr.jpg",
+    "/*.php",
+    "/*.asp",
+    "/*.aspx",
+    "/*.jsp",
+    "/.env*",
+    "/wp-*",
+    "/phpmyadmin*"
+  ]
+}

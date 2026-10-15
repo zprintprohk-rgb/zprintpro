@@ -57,6 +57,10 @@ const I18N_CTA: Record<Locale, { cta: string; faqTitle: string; ctaTitle: string
   },
 };
 
+// 2026-10-15 A2 CPU 治理: 未知 slug 一律静态 404 (dynamicParams=false),
+// 不再为扫描器/猜测 URL 做动态渲染 (此前免费层 10ms CPU 下致 1102/500)
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return SEO_KEYWORDS.map((k) => ({ slug: k.slug }));
 }

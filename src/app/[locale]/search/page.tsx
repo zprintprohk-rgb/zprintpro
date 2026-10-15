@@ -52,6 +52,9 @@ export async function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }
 
+// 2026-10-15 A2: 本页服务端读 searchParams (?q=) 保持动态渲染, 必须声明 edge runtime (next-on-pages 要求动态路由全 edge)
+export const runtime = "edge";
+
 export async function generateMetadata({ params, searchParams }: SearchPageProps): Promise<Metadata> {
   const locale = params.locale as Locale;
   const t = translations[locale];
