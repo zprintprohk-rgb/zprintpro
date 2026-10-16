@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-16T12:25:00+08:00",
+  "updated_at": "2026-10-16T14:3x:00+08:00",
   "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
   "clusters": [
     {
@@ -261,6 +261,30 @@
         "evidence": ".hermes/_b1c8_apply_20261016.py + .hermes/_bak-b1c8-20261016/ + 千问评分卡三处事实校正: 簇6b 实为 DONE (order-8 非待确认) / cliff 断档实为 10-14 不可回填+10-16/17 待 K3 导 (非4天全断) / 千问十 SKU 名单命名全错 (实为上列10个)"
       },
       "note": "车道读到本记录: B1c 队列 9/10 DONE, 仅剩 greeting-cards ×6 FAQ (挂 §0.0 裁决后) + wedding 2 SKU 无 faqSchema (docket) + 簇9 全站 body 清扫 (清单已量化). CSV zh FAQ 列映射链已核实 = 死数据 (regen L10 注释 + L149 不消费), 已清毒为 inert-clean 补充 (c9eb5347): outdoor H1 三格在 CSV 覆盖域, 首次 push 后 live probe 抓到 ts h1 被 regen 回灌 (cluster-7 教训复发) — 已改 CSV 三格 + regen 同步 + 重推, 终验 NEW=1/OLD=0。铁律重申: desc/h1/alt 属 CSV 覆盖域, 一切修正必须落 CSV 再 regen, 禁止直改 ts。"
+    },
+    {
+      "order": 11,
+      "cluster": "b1c-cluster9 全站 body 清扫 (千问方案 P0-①+P1-①)",
+      "slugs": [
+        "全站 85 块 (61 SKU 含 FIX)"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (千问方案 P0-②先行)",
+      "claimed_at": "2026-10-16T13:5x:00+08:00",
+      "completed_at": "2026-10-16T14:3x:00+08:00",
+      "verdict": {
+        "recovery": "10-16 窗恢复系数 120.6% (706/24) — 条件① 2/3 日, gsc-cliff-2026-10-16.json 已落盘",
+        "phase1": "85 块 ×9 模式 → KEEP 77 / FIX 224, 幻影 seo 块破案 = fruit-food-label-stickers 缩进异常 (minQ 500)",
+        "phase2": "批次A ts 243 + CSV 23 (ISO 9001 全变体 + 15+ 年/years 全清) + 批次B 13 (100/200/300 個 + 500 張 逐SKU真值)",
+        "finals": "ISO 9001=0 / 15+ 年=0 / 15+ years=0 / 10 張起印=34 (KEEP 精确保护)",
+        "guards": "tsc 54=54 / #29 0 / brand A0 / meta-desc 过 / regen A-E",
+        "docket_new": [
+          "SGS 遷移測試 (stickers body, 待 K3 确认)",
+          "15,000+ clients across 100+ countries (fruit-food en body, CRED 应撤)"
+        ],
+        "evidence": ".hermes/_b1c9_plan.json + .hermes/_bak-b1c9-20261016/"
+      },
+      "note": "B1c 主簇 9/9 全部 DONE. 剩余: greeting-cards ×6 FAQ (挂 §0.0) + wedding 2 SKU + docket 项. 下一棒: 10/22 年賀状翻开关 (K3 真值 10/21) + CTR 首判 (K3 导档)"
     }
   ]
 }

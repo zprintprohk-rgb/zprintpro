@@ -45,13 +45,13 @@
     }
   },
   "realtime_24h": {
-    "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+    "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-16.xlsx",
     "hours": 24,
-    "window": "2026-10-14T01:00:00 ~ 2026-10-15T00:00:00",
-    "imps": 569.0,
-    "clicks": 19.0,
-    "recovery_ratio_vs_precliff": 0.972,
-    "recovery_ratio_vs_mean28_dynamic": 0.978,
+    "window": "2026-10-15T08:00:00 ~ 2026-10-16T07:00:00",
+    "imps": 706.0,
+    "clicks": 24.0,
+    "recovery_ratio_vs_precliff": 1.206,
+    "recovery_ratio_vs_mean28_dynamic": 1.214,
     "baseline": {
       "combined_mean28": 585.2,
       "source": "gsc-cliff-2026-10-13.json sites.{hk,jp,us}.mean28_imps (28d 档止 10-05)"

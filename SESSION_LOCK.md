@@ -4,7 +4,22 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
-> **当前状态**: 🔓 **已释放** — 2026-10-16 13:5x AutoClaw 会话（v28_5 图库换图 D0 预检，K3 指令「按 2026-10-16-image-swap-risk-and-one-week-plan.md 执行」）
+> **当前状态**: 🔓 **已释放** — 2026-10-16 14:3x AutoClaw 会话（簇9 全站清扫 DONE + 恢复系数 120.6% 落盘）
+>
+> | 项 | 值 |
+> |---|---|
+> | **释放结果** | ✅ 恢复系数 10-16 窗 120.6%（条件① 2/3 日，10-17 窗 + GA4 即可判定）✅ 簇9 全站 body 清扫：批次A ts 243 + CSV 23（ISO 9001 全变体 + 15+ 年全清）+ 批次B 13（逐 SKU minQ 真值）+ KEEP 34 精确保护；B1c 主簇 9/9 DONE；簇9 docket 新增 SGS/15000+。SSoT `docs/2026-10-16-b1c-cluster9-body-sweep.md`。**本锁释放。下一棒：10/22 年賀状翻开关（K3 真值 10/21）+ CTR 首判（K3 导档）。** |
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+> | **意图** | ① 10-16 cliff 读数 120.6% 落盘 (条件① 2/3日) ② 簇9 Phase 1: 全站病灶逐 SKU 对照 minQ 分类 (KEEP/FIX) → _b1c9_plan.json ③ 簇9 Phase 2: 批次A (ISO 9001 + 15+年 低风险口径替换) + 批次B (FIX 项真值化) ④ commit + push (机器闸独立调用) |
+> | **写入范围** | `src/data/sku-seo-data.ts` + `zprintpro-sku-seo-data.csv` (仅 FIX 项) · `.hermes/logs/recovery_chain_status.json` · `.hermes/_b1c9_plan.json` · 账本 · SESSION_LOCK · docs 报告；**不碰 products.ts 价格字段；不碰 v28_5 图库域** |
+> | **双条件核验** | ① `git status --porcelain -- src/` = 0 (13:54 实测) ② 对端静默: v28_5 会话 13:25 释放锁 (零 src 写入) + 13:51 push (images/docs 域)，我开工 13:5x ✓；lane.lock 不存在 ✓；上次 push 13:51:54，机器闸至 14:21 |
+> | **预计时长** | < 120 min |
+> | **释放条件** | 簇9 全套门禁 (tsc 54=54 / 门童 / regen) + push (过闸) + 账本 + 报告 |
+
+> **⚠️ 前序会话记录（v28_5 换图 D0，已释放）**: 🔓 已释放 — 2026-10-16 13:5x AutoClaw 会话（v28_5 图库换图 D0 预检，K3 指令「按 2026-10-16-image-swap-risk-and-one-week-plan.md 执行」）
 >
 > | 项 | 值 |
 > |---|---|
