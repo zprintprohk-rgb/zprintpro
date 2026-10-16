@@ -103,6 +103,19 @@ export const stickersFAQs: FAQItem[] = [
       'ja': 'AI、PDF、EPS形式、300dpi以上、3mmの塗り足しを推奨します。フルカラーシールはCMYKカラーモードで作成してください。箔押しや局部UVが必要な場合は、加工位置を示す別の黒版（K100）をご提供ください。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部貼紙訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-ST 歸檔，可追溯到機台同班次。',
+      en: 'Every sticker order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-ST, traceable to press and shift.',
+      ja: 'すべてのステッカー注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-ST として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 export const flyersFAQs: FAQItem[] = [
@@ -202,6 +215,19 @@ export const flyersFAQs: FAQItem[] = [
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量のチラシ注文にも対応可能です。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部單張訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-FL 歸檔，可追溯到機台同班次。',
+      en: 'Every flyer order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-FL, traceable to press and shift.',
+      ja: 'すべてのチラシ注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-FL として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 export const packagingBoxesFAQs: FAQItem[] = [
@@ -314,6 +340,19 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部包裝盒訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PBX 歸檔，可追溯到機台同班次。',
+      en: 'Every packaging box order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PBX, traceable to press and shift.',
+      ja: 'すべてのパッケージ注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PBX として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 export const postersFAQs: FAQItem[] = [
@@ -413,6 +452,19 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。バックドロップなどの大きな商品にも対応可能です。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部海報訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PO 歸檔，可追溯到機台同班次。',
+      en: 'Every poster order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PO, traceable to press and shift.',
+      ja: 'すべてのポスター注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PO として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 export const paperBagsFAQs: FAQItem[] = [
@@ -512,6 +564,19 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'はい。ZprintProは日本全国へDHL・FedExで配送しています（通常2〜4日でお届け）。大量注文にも対応可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部紙袋訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-PB 歸檔，可追溯到機台同班次。',
+      en: 'Every paper bag order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-PB, traceable to press and shift.',
+      ja: 'すべての紙袋注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-PB として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 // 2026-09-08 K3 v4.0 指令 A6/SKU-2: envelopes 品类专属 FAQ（替代通用兜底）
@@ -566,6 +631,19 @@ export const envelopesFAQs: FAQItem[] = [
       'ja': '対応しています。DHL の国際配送で 2-4 営業日でお届け。海外拠点や越境チームに人気です。大量注文は分割出貨もご相談ください。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部信封訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-ENV 歸檔，可追溯到機台同班次。',
+      en: 'Every envelope order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-ENV, traceable to press and shift.',
+      ja: 'すべての封筒注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-ENV として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 // 2026-09-08 K3 v4.0 指令 A7: calendars 品类专属 FAQ（替代通用兜底，9/15 季节死线）
@@ -619,6 +697,19 @@ export const calendarsFAQs: FAQItem[] = [
       'ja': '可能です。各月ページの裏面に会社情報（連絡先・サービス・クーポン）を印刷し、表紙にロゴとブランドカラーを反映。表紙＋12 ヶ月の 13 ページ構成をフルカスタムできます。',
     },
   },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部月曆訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-CAL 歸檔，可追溯到機台同班次。',
+      en: 'Every calendar order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-CAL, traceable to press and shift.',
+      ja: 'すべてのカレンダー注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-CAL として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
 ];
 
 // 通用 FAQ — 適用所有未自定義的 category（greeting-cards / books /
@@ -830,6 +921,19 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '10冊〜¥258〜（A5・16ページ・157gコート紙）。ページ数で変動、入稿後1時間以内に無料デジタル校正。',
       },
     },
+  {
+    question: {
+      'zh-hk': '你哋嘅廠喺邊？係咪自己印？',
+      en: 'Where is your factory? Do you print in-house?',
+      ja: '工場はどこですか？自社印刷ですか？',
+    },
+    answer: {
+      'zh-hk': '全部騎馬釘書刊訂單喺深圳龍崗平湖嘉城路1號自有廠房印刷、後加工同質檢，絕不外發轉手。每批留樣以 ZPQC-2610-SSB 歸檔，可追溯到機台同班次。',
+      en: 'Every booklet order is printed, finished, and QC-checked at our own factory at No.1 Jiacheng Road, Pinghu Street, Longgang, Shenzhen — never brokered out. Retention samples are archived under ZPQC-2610-SSB, traceable to press and shift.',
+      ja: 'すべての中綴じ冊子注文は深圳・龍崗区平湖街道嘉城路1号の自社工場で印刷・加工・検品。外注への丸投げは一切ありません。ロットサンプルは ZPQC-2610-SSB として保管・記録され、機台・班次まで追跡可能です。',
+    },
+  },
+
   ],
   'pvc-menus': [
     {

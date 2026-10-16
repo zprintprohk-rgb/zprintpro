@@ -14,7 +14,10 @@ hkprint58.com（鑫印吧）整站仿制本站：品类结构（包装盒/书刊
 | 位置 | 内容 | 档号 |
 |---|---|---|
 | 页脚（3 语，全站每页） | 可见原创声明 + 档号（zh-hk 智印港 / en-ja ZprintPro，单品牌不并现） | `ZP-OC-2610` |
-| `products.ts` 8 SKU faqSchema 第 5 条 QA | 「Where is my order actually printed?」真实平湖嘉城路工厂事实 + 每 SKU 唯一留样档号 | `ZPQC-2610-{WS,KB,A4F,A2P,MB,FRP,WC,SSB}` |
+| **`product-faqs.ts` 活 FAQ ×8 处**（7 类目数组 + skuMoneyFAQs[saddle-stitch-booklets]，三语） | 「你哋嘅廠喺邊？係咪自己印？」真实平湖嘉城路工厂事实 + 唯一留样档号，产品页可见 FAQ + FAQPage JSON-LD 同源渲染 | `ZPQC-2610-{ST,FL,PBX,PO,PB,CAL,ENV,SSB}` |
+| `products.ts` 8 SKU faqSchema 第 5 条 QA（英文） | 同口径英文 QA | `ZPQC-2610-{WS,KB,A4F,A2P,MB,FRP,WC,SSB}` |
+
+> **执行修正记录**：首注后发现 `products.ts faqSchema` 全站无消费点（死数据，仅类型声明处引用），活 FAQ 数据源为 `src/data/product-faqs.ts`（`coreProductFAQMap` 类目级 + `skuMoneyFAQs` SKU 级，page.tsx 挂载）。已补注活数据源 8 处；死数据中的 8 条英文 QA 保留（内容真实、零渲染风险，未来若接线即自带指纹）。注入脚本：`.hermes/_inject-live-faq-fingerprint.py`（活）+ `.hermes/_inject-faq-fingerprint.py`（死），均幂等。
 
 - 8 SKU = waterproof-stickers / kraft-paper-bags / a4-flyers / a2-posters / mailer-boxes / foil-red-packets / wall-calendars / saddle-stitch-booklets（对方抄袭最重的 8 个品类各 1 个）。
 - 注入脚本：`.hermes/_inject-faq-fingerprint.py`（幂等，块内含 `ZPQC-` 即跳过）。
@@ -43,8 +46,9 @@ hkprint58.com（鑫印吧）整站仿制本站：品类结构（包装盒/书刊
 
 ## 验证
 
-- `npx tsc --noEmit`、门童、push-gate：见本批 commit 前输出（会话记录）。
-- 上线后探针（push 后执行）：任一页脚含 `ZP-OC-2610`；`/zh-hk/product/waterproof-stickers/` HTML 含 `ZPQC-2610-WS`；任一产品图可见对角水印。
+- 第一批 push `cce4bf23`（12:46）：CF deploy PASS；线上探针：首页/en 页脚 `ZP-OC-2610` ✓。
+- 第二批（活 FAQ 修正）：`npx tsc --noEmit` 54 = 基线 0 增量 ✓；brand-lint A 类 0 命中 ✓；push-gate 机器闸（15m 拦截后窗口重开再过）。
+- 上线后探针（第二批 push 后）：`/zh-hk/product/waterproof-stickers/` HTML 含 `ZPQC-2610-ST`；任一产品图可见对角水印。
 
 ## 遗留（上报 K3）
 
