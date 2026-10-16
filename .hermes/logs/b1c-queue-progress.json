@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-16T03:35:00+08:00",
+  "updated_at": "2026-10-16T12:25:00+08:00",
   "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
   "clusters": [
     {
@@ -236,8 +236,17 @@
       "order": 10,
       "cluster": "b1c-cluster8 packaging faqSchema ×10 拆模板 + outdoor-posters 余1收口 + outdoor/mailbox 假MOQ清除 (千问评分卡 P0-③+P1-①)",
       "slugs": [
-        "cosmetic-boxes", "mailer-boxes", "rigid-boxes", "magnetic-closure-gift-box", "electronics-packaging-box",
-        "kraft-paper-packaging-box", "gang-run-card-boxes", "white-card-boxes", "corrugated-boxes", "tuck-end-boxes", "outdoor-posters"
+        "cosmetic-boxes",
+        "mailer-boxes",
+        "rigid-boxes",
+        "magnetic-closure-gift-box",
+        "electronics-packaging-box",
+        "kraft-paper-packaging-box",
+        "gang-run-card-boxes",
+        "white-card-boxes",
+        "corrugated-boxes",
+        "tuck-end-boxes",
+        "outdoor-posters"
       ],
       "status": "DONE",
       "claimed_by": "autoclaw manual session (千问评分卡后执行)",
@@ -251,7 +260,7 @@
         "k3_docket_new": "products.ts 内部价格矛盾 (不动, 待 K3 价格 SSoT 裁定): white-card-boxes basePrice 129 vs band HK$0.50-3.00/個; gang-run HK$129-17,214 / corrugated HK$1,517-7,278 / tuck-end HK$1,538-7,478 三条疑似批量总价混入单价带; kraft HK$1.5-1000/個 带宽 667×; 4 SKU 缺 basePrice_en/ja (en/ja PDP 价显示层待核)",
         "evidence": ".hermes/_b1c8_apply_20261016.py + .hermes/_bak-b1c8-20261016/ + 千问评分卡三处事实校正: 簇6b 实为 DONE (order-8 非待确认) / cliff 断档实为 10-14 不可回填+10-16/17 待 K3 导 (非4天全断) / 千问十 SKU 名单命名全错 (实为上列10个)"
       },
-      "note": "车道读到本记录: B1c 队列 9/10 DONE, 仅剩 greeting-cards ×6 FAQ (挂 §0.0 裁决后) + wedding 2 SKU 无 faqSchema (docket) + 簇9 全站 body 清扫 (清单已量化). CSV zh FAQ 列映射链已核实 = 死数据 (regen L10 注释 + L149 不消费), 已清毒为 inert-clean"
+      "note": "车道读到本记录: B1c 队列 9/10 DONE, 仅剩 greeting-cards ×6 FAQ (挂 §0.0 裁决后) + wedding 2 SKU 无 faqSchema (docket) + 簇9 全站 body 清扫 (清单已量化). CSV zh FAQ 列映射链已核实 = 死数据 (regen L10 注释 + L149 不消费), 已清毒为 inert-clean 补充 (c9eb5347): outdoor H1 三格在 CSV 覆盖域, 首次 push 后 live probe 抓到 ts h1 被 regen 回灌 (cluster-7 教训复发) — 已改 CSV 三格 + regen 同步 + 重推, 终验 NEW=1/OLD=0。铁律重申: desc/h1/alt 属 CSV 覆盖域, 一切修正必须落 CSV 再 regen, 禁止直改 ts。"
     }
   ]
 }
