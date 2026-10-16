@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-16T14:3x:00+08:00",
+  "updated_at": "2026-10-16T16:1x:00+08:00",
   "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
   "clusters": [
     {
@@ -287,6 +287,25 @@
         "cluster95_registered": "全站 CRED 残余清扫面已计量并落盘 .hermes/logs/b1c-cluster95-surface-2026-10-16.json: ISO 9001 x568 / Heidelberg+海德堡 x354 / SGS x91(+12 zh) / 15+ 年 x8 + 15+ years x9 / 15,000+ clients x2 ≈ 1,030+ 处 (about/catalog-printing-china/blog-data 3 JSONs/category-seo-content/conversion-blocks/products-content/buying-guides/tsx 组件/全站 HowTo schema) — 下一会话首批, 逐文件断言 + CSV 覆盖域守规"
       },
       "note": "B1c 主簇 9/9 全部 DONE. 剩余: greeting-cards ×6 FAQ (挂 §0.0) + wedding 2 SKU + docket 项. 下一棒: 10/22 年賀状翻开关 (K3 真值 10/21) + CTR 首判 (K3 导档)"
+    },
+    {
+      "order": 12,
+      "cluster": "b1c-cluster9.5 全站 CRED 残余清扫 (千问方案 4.3① 9.5-A+D)",
+      "slugs": [
+        "~22 文件 (products-content/blog-data 3语/seo.ts/about/catalog/组件层/schema-extensions/quote-engine/pillar/blog-posts)"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (千问 S+ 109/110 评分卡后 按优先级执行)",
+      "claimed_at": "2026-10-16T15:0x:00+08:00",
+      "completed_at": "2026-10-16T16:1x:00+08:00",
+      "verdict": {
+        "fixed": "~660 处: ISO 9001 全变体 x576 + 15+年族 x17 + 15,000+ 族 x6 + 100+国家/12 industries/16 years 连坐 + 自設廠房→平湖廠房 x256 (既定修法) + FSC C123456 假号→文件備索 + 99.2% 達成率→準時交付紀錄 + Cailong Co Ltd→Cai Long Printing + ja 简体 胶装/规格→上製本/規格 (CSV 源头修)",
+        "infra": "千问扣分项闭环 (本批 0 次 --no-verify): CRED 存量基线 (record-cred-baseline.mjs, HEAD 978 hits, 只许递减) + 4_PLUS 上下文白名单 + Heidelberg 品牌白名单 (K3 9/19 选 A 落实) + i18n-guard §0.0 六槽豁免对齐 detox",
+        "preserved": "Heidelberg 独立行 x235 + SGS x91 (9.5-B/C K3 球) + about K3 历史注释 x3 + 2 篇 ja 巨型博客字节级还原 (9.5 残余: 8,000+件実測/15 年/Heidelberg K3 知识原子冲突区) + 1,000+/12-industries 孤立行 (9.5-E) + ISO 12647 docket",
+        "live": "线上探针 a4-zh ISO=0 (原 2 HowTo schema 闭环) + about-zh ISO=0 (原 20); verify API 422=lane 并发竞态 (SHA 0647d7fb), 以页面探针为验收真值",
+        "guards": "tsc 54=54 / hook 默认 RED=0 干净通过 / CRED --strict exit 0 / encoding 30 LF / brand A0 / B-3 0 / #29 0"
+      },
+      "note": "千问评分卡执行: P0 ①(10-17 档=K3 球) ②解除判定模板待 10-17 数据 ③年賀状催促附兜底; P1 ①簇9.5-A+D 本批 DONE + 扣分项闭环; 下一棒: 解除判定 (10-17 数据+GA4) → 年賀状翻开关 10/22 → CTR 首判 → C107"
     }
   ]
 }
