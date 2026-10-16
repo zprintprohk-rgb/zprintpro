@@ -2,3 +2,40 @@
 ERR|1|try1|https://zprintpro.com/zh-hk/|远程服务器返回错误: (429) Too Many Requests。
 OK|1|https://zprintpro.com/zh-hk/|HTTP 200|final https://web.archive.org/web/20261016100704/https://zprintpro.com/zh-hk/
 ERR|2|try1|https://zprintpro.com/en/|远程服务器返回错误: (429) Too Many Requests。
+ERR|2|try2|https://zprintpro.com/en/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|2|https://zprintpro.com/en/
+ERR|3|try1|https://zprintpro.com/en/product/waterproof-stickers/|远程服务器返回错误: (429) Too Many Requests。
+ERR|3|try2|https://zprintpro.com/en/product/waterproof-stickers/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|3|https://zprintpro.com/en/product/waterproof-stickers/
+ERR|4|try1|https://zprintpro.com/en/product/a4-flyers/|远程服务器返回错误: (429) Too Many Requests。
+ERR|4|try2|https://zprintpro.com/en/product/a4-flyers/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|4|https://zprintpro.com/en/product/a4-flyers/
+ERR|5|try1|https://zprintpro.com/en/product/mailer-boxes/|远程服务器返回错误: (429) Too Many Requests。
+ERR|5|try2|https://zprintpro.com/en/product/mailer-boxes/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|5|https://zprintpro.com/en/product/mailer-boxes/
+ERR|6|try1|https://zprintpro.com/en/product/saddle-stitch-booklets/|远程服务器返回错误: (429) Too Many Requests。
+ERR|6|try2|https://zprintpro.com/en/product/saddle-stitch-booklets/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|6|https://zprintpro.com/en/product/saddle-stitch-booklets/
+OK|7|https://zprintpro.com/en/category/stickers/|HTTP 200|final https://web.archive.org/web/20261016103400/https://zprintpro.com/en/category/stickers/
+ERR|8|try1|https://zprintpro.com/zh-hk/category/packaging/|远程服务器返回错误: (429) Too Many Requests。
+ERR|8|try2|https://zprintpro.com/zh-hk/category/packaging/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|8|https://zprintpro.com/zh-hk/category/packaging/
+OK|9|https://zprintpro.com/zh-hk/faq/|HTTP 200|final https://web.archive.org/web/20261016103724/https://zprintpro.com/zh-hk/faq/
+ERR|10|try1|https://z-printpro.com/|请求被中止: 连接被意外关闭。
+FAIL|10|https://z-printpro.com/
+ERR|11|try1|https://hkprint58.com/|远程服务器返回错误: (429) Too Many Requests。
+ERR|11|try2|https://hkprint58.com/|远程服务器返回错误: (429) Too Many Requests。
+FAIL|11|https://hkprint58.com/
+ERR|12|try1|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|12|try2|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|远程服务器返回错误: (429) Too Many Requests。
+FAIL|12|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html
+ERR|13|try1|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|13|try2|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|远程服务器返回错误: (429) Too Many Requests。
+FAIL|13|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html
+ERR|14|try1|https://hkprint58.com/faq/faq-bd8520663ab2.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|14|try2|https://hkprint58.com/faq/faq-bd8520663ab2.html|远程服务器返回错误: (429) Too Many Requests。
+FAIL|14|https://hkprint58.com/faq/faq-bd8520663ab2.html
+ERR|15|try1|https://hkprint58.com/case/skincare-brand-packaging-case.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|15|try2|https://hkprint58.com/case/skincare-brand-packaging-case.html|远程服务器返回错误: (429) Too Many Requests。
+FAIL|15|https://hkprint58.com/case/skincare-brand-packaging-case.html
+SPN RUN END 2026-10-16 18:55:02
