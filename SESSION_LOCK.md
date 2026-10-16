@@ -629,3 +629,13 @@
 | **双条件核验** | ① `git status --porcelain -- src/` = 0（12:20 实测）② 对端静默：顶部锁 05:3x 已释放，最后 commit 07:15（cron 报告，docs-only），现 12:2x 静默 >5h ✓；lane.lock 不存在 ✓ |
 | **预计时长** | < 90 min |
 | **释放条件** | regen 断言 + tsc 54 基线 0 增量 + 门童全绿（#27/#29/#16/brand/encoding/bc-ban 报告式）+ push-gate 机器闸（独立调用）+ 攒批 1 push |
+
+## 释放记录（2026-10-16 13:4x · Kimi 反爬反制会话）
+
+| 项 | 值 |
+|---|---|
+| **释放** | Kimi Work 反爬会话正式释放 |
+| **交付** | ① 页脚原创指纹 `ZP-OC-2610`（3 语，全站）② 活 FAQ 指纹 ×8（`product-faqs.ts` 7 类目数组 + skuMoneyFAQs[saddle-stitch-booklets]，档号 `ZPQC-2610-{ST,FL,PBX,PO,PB,CAL,ENV,SSB}`）③ 1812 张图片对角域名水印（0 fail，标记 `.hermes/logs/watermark-done.json`）④ `rotate-copy-fingerprint.mjs` 月轮换器 ⑤ `cf-bot-hardening.sh`（zone token 待 K3）⑥ SSoT `docs/2026-10-16-anti-scrape-hardening.md` |
+| **验证** | tsc 54=基线 ✓ brand-lint A类0 ✓ 门童全绿（#4 ja 简体字形已修）✓ push-gate 两过（第二次被拦 15min 等待后过）✓ CF deploy PASS ×2 ✓ 线上探针：页脚 `ZP-OC-2610` ✓ / zh-hk waterproof-stickers `ZPQC-2610-ST` ✓ / en kraft-paper-bags `ZPQC-2610-PB` ✓ / ja saddle-stitch-booklets `ZPQC-2610-SSB` ✓ |
+| **push** | `cce4bf23`（12:46）+ `ffe0cf6e`（13:2x），两次均过机器闸 |
+| **遗留** | ① CF zone token 需 K3 生成（或手动开 Bot Fight Mode）② 轮换器接 monthly-matrix 待拍板 ③ hero 图未水印（保转化）④ `products.ts faqSchema` 确认为死数据，8 条英文指纹 QA 留存备未来接线 |
