@@ -1,0 +1,26 @@
+﻿RUN START 2026-10-16 18:09:19
+OK|home|https://hkprint58.com/|HTTP 200|final https://hkprint58.com/|367497 bytes -> docs\evidence\2026-10-16-hkprint58\target\html\home.html
+OK|en-waterproof-stickers|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|HTTP 200|final https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|259403 bytes -> docs\evidence\2026-10-16-hkprint58\target\html\en-waterproof-stickers.html
+OK|zhiyingang-brand-story|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|HTTP 200|final https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|177046 bytes -> docs\evidence\2026-10-16-hkprint58\target\html\zhiyingang-brand-story.html
+OK|faq-bd8520663ab2|https://hkprint58.com/faq/faq-bd8520663ab2.html|HTTP 200|final https://hkprint58.com/faq/faq-bd8520663ab2.html|169491 bytes -> docs\evidence\2026-10-16-hkprint58\target\html\faq-bd8520663ab2.html
+OK|case-skincare-brand|https://hkprint58.com/case/skincare-brand-packaging-case.html|HTTP 200|final https://hkprint58.com/case/skincare-brand-packaging-case.html|169477 bytes -> docs\evidence\2026-10-16-hkprint58\target\html\case-skincare-brand.html
+OK|zh-hk-home|https://zprintpro.com/zh-hk/|HTTP 200|final https://zprintpro.com/zh-hk/|231740 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\zh-hk-home.html
+OK|en-home|https://zprintpro.com/en/|HTTP 200|final https://zprintpro.com/en/|228864 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-home.html
+OK|en-waterproof-stickers|https://zprintpro.com/en/product/waterproof-stickers/|HTTP 200|final https://zprintpro.com/en/product/waterproof-stickers/|253301 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-waterproof-stickers.html
+OK|en-a4-flyers|https://zprintpro.com/en/product/a4-flyers/|HTTP 200|final https://zprintpro.com/en/product/a4-flyers/|244463 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-a4-flyers.html
+OK|en-mailer-boxes|https://zprintpro.com/en/product/mailer-boxes/|HTTP 200|final https://zprintpro.com/en/product/mailer-boxes/|234841 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-mailer-boxes.html
+OK|en-saddle-stitch-booklets|https://zprintpro.com/en/product/saddle-stitch-booklets/|HTTP 200|final https://zprintpro.com/en/product/saddle-stitch-booklets/|251652 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-saddle-stitch-booklets.html
+OK|en-category-stickers|https://zprintpro.com/en/category/stickers/|HTTP 200|final https://zprintpro.com/en/category/stickers/|356494 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\en-category-stickers.html
+OK|zh-hk-category-packaging|https://zprintpro.com/zh-hk/category/packaging/|HTTP 200|final https://zprintpro.com/zh-hk/category/packaging/|423906 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\zh-hk-category-packaging.html
+OK|zh-hk-faq|https://zprintpro.com/zh-hk/faq/|HTTP 200|final https://zprintpro.com/zh-hk/faq/|77726 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\zh-hk-faq.html
+OK|old-site-z-printpro|https://z-printpro.com/|HTTP 200|final https://zprintpro.com/zh-hk/|231740 bytes -> docs\evidence\2026-10-16-hkprint58\ours\html\old-site-z-printpro.html
+PNGFAIL|target/home|https://hkprint58.com/|no file
+PNGFAIL|target/en-waterproof-stickers|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|no file
+PNGFAIL|target/zhiyingang-brand-story|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|no file
+PNGFAIL|target/faq-bd8520663ab2|https://hkprint58.com/faq/faq-bd8520663ab2.html|no file
+PNGFAIL|target/case-skincare-brand|https://hkprint58.com/case/skincare-brand-packaging-case.html|no file
+PNGFAIL|ours/zh-hk-home|https://zprintpro.com/zh-hk/|no file
+PNGFAIL|ours/en-waterproof-stickers|https://zprintpro.com/en/product/waterproof-stickers/|no file
+PNGFAIL|ours/en-category-stickers|https://zprintpro.com/en/category/stickers/|no file
+PNGFAIL|ours/zh-hk-category-packaging|https://zprintpro.com/zh-hk/category/packaging/|no file
+RUN END 2026-10-16 18:11:30

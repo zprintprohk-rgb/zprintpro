@@ -1,0 +1,4 @@
+﻿SPN RUN START 2026-10-16 18:20:20
+ERR|1|try1|https://zprintpro.com/zh-hk/|远程服务器返回错误: (429) Too Many Requests。
+OK|1|https://zprintpro.com/zh-hk/|HTTP 200|final https://web.archive.org/web/20261016100704/https://zprintpro.com/zh-hk/
+ERR|2|try1|https://zprintpro.com/en/|远程服务器返回错误: (429) Too Many Requests。

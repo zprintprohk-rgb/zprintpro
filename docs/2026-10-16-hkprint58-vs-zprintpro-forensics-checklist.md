@@ -69,6 +69,8 @@
 
 **⚠️ 缺口（今日实测）**：zprintpro.com 与 z-printpro.com 在 Wayback Machine 均 **0 快照**（archive.org availability API 返回空）——我方目前没有第三方时间戳。**今天就补**（Save Page Now 免费，1 分钟一个）。
 
+> **✅ 补录执行（2026-10-16 18:2x，K3 全权委托）**：本地证据库已建 `docs/evidence/2026-10-16-hkprint58/`——双方 15 页 HTML 原件 + 9 张整页截图 + SHA256SUMS + 操作日志（入库 commit 即时间戳）。`/zh-hk/faq/` 路由确认存在（`src/app/[locale]/faq/page.tsx`），已照存；旧站 z-printpro.com 实测已 301 → 新站（日志有最终 URL，本身即迁移证据）。Wayback SPN 匿名接口触发 429 限流，15 URL 队列后台退避重试中（`logs/spn-log.txt`），CDX 终验随队列完成后回填。
+
 **待存档的 10 个我方 URL**（web.archive.org/save 逐个提交）：
 1. `https://zprintpro.com/zh-hk/`
 2. `https://zprintpro.com/en/`
@@ -183,12 +185,13 @@
 ## §7 今天 30 分钟行动包（K3 或下一会话执行，checkbox）
 
 1. ☐ **CF token Roll**：CF 后台 → My Profile → API Tokens → `cf-bot-hardening-zprintpro` → Roll（一键，旧值立即作废；已核对本仓无 cron/自动化依赖该 token，Roll 无副作用——它只被一次性脚本 `scripts/cf-bot-hardening.sh` 引用，三条规则已生效）
-2. ☐ 我方 10 URL Save Page Now（§3 清单）
-3. ☐ 对方 5 关键 URL Save Page Now（§3 清单）
-4. ☐ 对方首页 + `/en/tiezhiyinshua/waterproof-stickers.html` + `/gongsixinwen/zhiyingang-brand-story.html` 全页截图（带系统时间）
+2. 🔄 我方 10 URL Save Page Now（§3 清单）——SPN 匿名 429 限流，后台队列退避重试中（evidence/logs/spn-log.txt）
+3. 🔄 对方 5 关键 URL Save Page Now——同上队列，完成后 CDX 终验
+4. ✅ 已完成（2026-10-16 18:1x）：对方 5 页 + 我方 4 页整页截图 + 双方 15 页 HTML 原件入 `docs/evidence/2026-10-16-hkprint58/`
 5. ☐ GSC 导出我站核心页首次收录日期（Search Console → 效果/索引，存 `GSC数据/`）
 6. ☐ 本报告附录基线 diff 一次（确认 2026-10-16 后对方无新增）——首检从下周一起每周一跑
 7. ☐ （可选）把轮换器接入 monthly-matrix 车道拍板（遗留项，见反爬报告）
+8. ⚠️ **K3 必读——CF 限速规则有真人误伤面（2026-10-16 18:19 实测，需拍板）**：取证截图时 `/product/`、`/category/` 页一次加载并发拉数十张 `/images/`，触发 20 次/10 秒阈值 → Cloudflare Error 1015（已截获 Ray ID ab6521e1ab543df9）。真人快速连点 2-3 页即可能命中。建议拆分规则：HTML 路径（/category/、/product/）维持 20/10s；`/images/` 单独放宽至 ≥60/10s 或移出限速（批量爬图仍有 BFM + scraper UA 拦截兜底）。需 CF 后台改规则，或 Roll 新 token 后交执行层调 API。
 
 ---
 
