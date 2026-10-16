@@ -38,11 +38,15 @@ hkprint58.com（鑫印吧）整站仿制本站：品类结构（包装盒/书刊
 - 回滚：`git checkout -- public/images/` 即可全量还原（全部在 git 内）。
 - 执行结果：1812 ok / 0 fail（首轮 300s 超时杀了 887/1812 处，按 mtime 重建标记后续跑完成，无双重水印）。
 
-### 4. Cloudflare 拦截（**待 K3 一次性操作**）
+### 4. Cloudflare 拦截（✅ 2026-10-16 17:0x 已执行并线上验证）
 
-- 本环境无 zone 级 `CLOUDFLARE_API_TOKEN`（仓库与 env 已查，均无），Bot Fight Mode / WAF 属 zone 级开关，无法代执行。
-- 交付 `scripts/cf-bot-hardening.sh`：K3 在 CF 后台生成 token 后 `export CLOUDFLARE_API_TOKEN=... CF_ZONE_ID=... && bash scripts/cf-bot-hardening.sh` 一次即可，含 ① Bot Fight Mode ② scraper UA 拦截规则 ③ /images//category//product/ 路径 120rpm/IP 限速 challenge。
-- **或纯手动**：CF Dashboard → Security → Bots 开 Bot Fight Mode（免费），30 秒搞定，效果覆盖第①条。
+- K3 提供 zone 定向 token（`cf-bot-hardening-zprintpro`）+ Zone ID，本会话直接调 CF API 落地，三条全部生效：
+  1. **Bot Fight Mode = on** + **AI Bots Protection = block**（顺手把 AI 爬虫也挡了，`ai_bots_protection` 原 disabled）
+  2. **WAF 自定义规则**（ruleset `f85114d671d14a6d85eb1ebee4cfd807`）：拦截空 UA / python-requests / Scrapy / curl / Wget / Go-http-client / HeadlessChrome / HTTrack
+  3. **限速规则**（ruleset `810c7bc28077408faa807966cc03def6`）：`/images/ /category/ /product/` 路径单 IP 20 次/10 秒超限即 block（免费版约束：窗口只能 10s、动作只能 block、timeout 只能 10s；等效 120 次/分钟）
+- **线上验证**：curl UA 访问产品页 → **403 拦截 ✓**；浏览器 UA → **200 正常 ✓**（无误伤真实访客）。
+- 执行口径差异记录：entrypoint 端点对该 token 报 10405，改用 `POST /zones/{id}/rulesets` 直建成功；`scripts/cf-bot-hardening.sh` 为初版设计稿，实际参数以本节为准。
+- ⚠️ 该 token 已出现在对话记录中，建议 K3 在 CF 后台 Roll 轮换一次（My Profile → API Tokens → Roll）。
 
 ## 验证
 
