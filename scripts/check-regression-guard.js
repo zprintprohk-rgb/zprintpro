@@ -130,6 +130,33 @@ async function main() {
     return true;
   };
 
+  // ★ 2026-10-16 簇9.5: CRED 存量基线 (方案 C 同款扩展到数据诚信规则, 只许递减)
+  //   背景: 守卫按整文件扫 staged 文件 → 触碰 blog-data/products-content 等大内容文件
+  //   必撞存量病灶 (4_PLUS 价格表 / ISO 注释) → 结构性无法 commit。
+  //   基线 = HEAD 逐文件逐规则计数 (scripts/record-cred-baseline.mjs 录制);
+  //   新状态计数 ≤ 基线 → 存量命中豁免; 超基线的新增违规照常硬拦。
+  let credBaseline = null;
+  try {
+    const cp = path.join(__dirname, '..', '.hermes', 'cred-baseline.json');
+    if (fs.existsSync(cp)) {
+      credBaseline = JSON.parse(fs.readFileSync(cp, 'utf8'));
+      const t = Object.values(credBaseline.perFile || {}).reduce((a, m) => a + Object.values(m).reduce((x, y) => x + y, 0), 0);
+      console.log(`📉 CRED 存量基线: head=${credBaseline.headSha} hits=${t} files=${Object.keys(credBaseline.perFile || {}).length} (基线内命中不拦, 只拦新增)`);
+      console.log('');
+    }
+  } catch (e) { console.log('⚠️ CRED 基线读取失败, 退化为不扣减:', e.message); }
+  const credLeft = credBaseline ? {} : null;
+  const withinCredBaseline = (hit) => {
+    if (!credLeft) return false;
+    if (!hit.ruleId || !hit.ruleId.startsWith('CRED_')) return false;
+    const key = hit.file.replace(/^\/+/, '');
+    const ruleLeft = credLeft[key] || (credLeft[key] = { ...(credBaseline.perFile[key] || {}) });
+    const left = ruleLeft[hit.ruleId] || 0;
+    if (left <= 0) return false;
+    ruleLeft[hit.ruleId] = left - 1;
+    return true;
+  };
+
   // 5 道门童依次跑
   const allHits = [];
   let baselineSkipped = 0;
@@ -138,6 +165,7 @@ async function main() {
     const hitsAll = await guard.scan(files);
     const hits = hitsAll.filter(h => {
       if (withinBaseline(h)) { baselineSkipped++; return false; }
+      if (withinCredBaseline(h)) { baselineSkipped++; return false; }
       return true;
     });
     if (hitsAll.length > 0 && hits.length !== hitsAll.length) {

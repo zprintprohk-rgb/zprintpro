@@ -311,7 +311,7 @@ export function ProductPageV9({
      修訂輪4 渲染層定向 transform（數據層凍結不動, 僅 v9 門控頁生效, 唐總指令）:
      ① 剔除重複的品牌介紹尾段（段內 DHL 句自我重複, 且與頁尾信任模塊重複）
      ② 已服務本地客戶: 客戶類型增補「政府部門及學校」 */
-  const V9_STRIP_PARA = '<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>';
+  const V9_STRIP_PARA = '<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>';
   const V9_CLEAN_DESC = (longDesc ?? '')
     .split(V9_STRIP_PARA).join('')
     .split('咖啡店提供貼紙印製服務').join('咖啡店、政府部門及學校提供貼紙印製服務');

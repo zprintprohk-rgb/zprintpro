@@ -433,6 +433,29 @@ function scanBidirectional(content, file) {
       if (!r || r.type !== 'string') continue;               // 只扫「值」(字符串字面量)
       const loc = attrLocale(ctx, m.index);
       if (!loc || !rule.locales.includes(loc)) continue;     // 无 locale 归属 -> 不报
+      // ★ 2026-10-16 §0.0 挂起槽豁免对齐 (与 keywords-detox-guard known_exemptions 同源):
+      //   v22 名片→贺卡 1:1 改名残留行 (thick-400g/foil-greeting-cards ×3 locale) 属 §0.0 解禁块
+      //   未拍板区 (a)/(b)/(c), 任何方向改写都抢跑 K3 裁决 (per §0.0.3 未拍板禁令)。
+      //   detox 守卫已显式豁免这些槽; i18n 守卫对同内容重复硬拦 = 规则缺口, 此处对齐。
+      if (/sku-seo-data/.test(file) && rule.id.startsWith('I18N_POLLUTION') && !scanBidirectional._exemptSlots) {
+        try {
+          const bl = JSON.parse(require('fs').readFileSync(path.join(__dirname, 'data', 'keywords-detox-blacklist.json'), 'utf-8'));
+          scanBidirectional._exemptSlots = new Set((bl.known_exemptions && bl.known_exemptions.slots || []).map(s => `${s.slug}|${s.locale}`));
+        } catch (e) { scanBidirectional._exemptSlots = new Set(); }
+      }
+      if (scanBidirectional._exemptSlots && scanBidirectional._exemptSlots.size && /sku-seo-data/.test(file)) {
+        if (!scanBidirectional._blockSlugs || scanBidirectional._blockSlugs.file !== file) {
+          const re = /^  "([a-z0-9-]+)": \{/gm;
+          const arr = [];
+          let sm;
+          while ((sm = re.exec(content)) !== null) arr.push({ off: sm.index, slug: sm[1] });
+          scanBidirectional._blockSlugs = { file, arr };
+        }
+        const arr = scanBidirectional._blockSlugs.arr;
+        let lo = 0, hi = arr.length - 1, slug = '';
+        while (lo <= hi) { const mid = (lo + hi) >> 1; if (arr[mid].off <= m.index) { slug = arr[mid].slug; lo = mid + 1; } else hi = mid - 1; }
+        if (slug && scanBidirectional._exemptSlots.has(`${slug}|${loc}`)) continue;
+      }
       hits.push({
         file: path.relative(process.cwd(), file).replace(/\\/g, '/'),
         line: common.findLineNumber(content, m.index),

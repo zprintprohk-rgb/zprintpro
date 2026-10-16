@@ -3,25 +3,25 @@ import type { Locale } from '@/lib/seo';
 /**
  * 实力工厂实拍区 (2026-07-18 v3)
  * 单图策略: 柯式印刷机实拍 (桌面横版全景 1380x345 / 移动竖版 414x736, <picture> 艺术方向切换)
- * §13.10: supplier origin 允许在正文层佐证品质 (亚洲工厂/深圳自設廠房)
+ * §13.10: supplier origin 允许在正文层佐证品质 (亚洲工厂/深圳平湖廠房)
  */
 
 const TEXTS = {
   'zh-hk': {
     title: '實力工廠 · 自家廠房實拍',
-    subtitle: '柯式印刷機 × 商標輪轉機 · ISO 9001 品質管理 · 15+ 年印刷經驗',
+    subtitle: '柯式印刷機 × 商標輪轉機 · 國際認證體系品質管理 · 多年印刷經驗',
     caption1: '柯式印刷機組 — 宣傳單張 / 包裝盒 / 畫冊專色量產',
     alt1: '智印港工廠柯式印刷機實拍',
   },
   en: {
     title: 'Real Factory · Our Own Production Facility',
-    subtitle: 'Offset press line × Label rotary press · ISO 9001 quality management · 15+ years in printing',
+    subtitle: 'Offset press line × Label rotary press · International quality management · Over a decade in printing',
     caption1: 'Offset press line — spot-color flyers, packaging & booklets at scale',
     alt1: 'ZprintPro factory offset press line',
   },
   ja: {
     title: '自社工場 · 生産設備の実写',
-    subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',
+    subtitle: 'オフセット印刷機 × ラベル輪転機 · 国際認証品質管理 · 長年にわたる印刷実績',
     caption1: 'オフセット印刷機ライン — チラシ・パッケージ・冊子の特色量産',
     alt1: 'ZprintPro 自社工場オフセット印刷機',
   },

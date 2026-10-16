@@ -38,7 +38,7 @@ export async function generateMetadata({
 const translations = {
   'zh-hk': {
     metaTitle: '關於智印港 | 香港印刷公司推薦 | 深圳工廠直送 · 15年經驗',
-    metaDesc: '智印港 ZprintPro 扎根香港超過15年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',
+    metaDesc: '智印港 ZprintPro 扎根香港多年，專注為本地及全球企業提供高品質印刷服務。國際認證體系、FSC環保認證，累計服務全球客戶。',
     h1: '關於智印港 ZprintPro',
     subtitle: '扎根香港超過15年，專注高品質印刷服務',
     storyTitle: '品牌故事',
@@ -47,7 +47,7 @@ const translations = {
 以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,
     advantageTitle: '核心優勢',
     advantages: [
-      { title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },
+      { title: '品質保證', desc: '國際認證體系 + FSC 認證 · 進口四色柯式 + 數碼印刷 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },
       { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/) · [查看服務承諾 SLA 適用條款](/zh-hk/faq/)' },
       { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
     ],
@@ -59,7 +59,7 @@ const translations = {
     ],
     certTitle: '資質認證',
     certs: [
-      { name: 'ISO 9001', desc: '質量管理體系認證，確保每個生產環節標準化' },
+      { name: '國際認證體系', desc: '質量管理體系認證，確保每個生產環節標準化' },
       { name: 'FSC 認證', desc: '森林管理委員會認證，環保紙張可追溯來源' },
       { name: '大豆油墨', desc: '採用環保大豆油墨，VOC排放低於行業標準50%' },
     ],
@@ -70,18 +70,18 @@ const translations = {
 
     // 2026-08-19 P0-A: 公司资质块 (证书编号 + 认证机构 + 有效期, K3 拍板新增)
     // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板)
-    // 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 "通過 ISO 9001 品質管理體系認證" + "FSC 森林認證" 文字 + 撤 certNo + validUntil 字段
+    // 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 "通過國際品質管理體系認證" + "FSC 森林認證" 文字 + 撤 certNo + validUntil 字段
     // 2026-08-24 F1-batch-3 立即执行 (K3 8/24 18:42 拍板): certNo 字段全撤 (不展示证书号), 客服查询可联系
     // 2026-08-24 F1-batch-4 立即执行 (K3 8/24 19:03 拍板): certNo + validUntil 字段全清空 (不留联系方式, 不展示认证细节), 只保留认证描述 (ISO 9001 / FSC / SGS)
     credTitle: '公司資質 · 可查證書',
-    credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 · 可選 FSC 森林認證紙張 · 定期續審',
+    credSubtitle: '第三方認證 · 通過國際品質管理體系認證 · 可選 FSC 森林認證紙張 · 定期續審',
     // 2026-08-24 F1-batch-6 数据层重构 (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
     // object {name, issuer, certNo, validUntil, scope} → array of {name, items: [{label, value}]}
     // 通用结构: 未来加新认证 (FDA/CE/UL) 不用改 UI 代码
     // SOP-10 第 6 款: UI 层 filter 空/'—'/占位符字段不展示
     credentials: [
       {
-        name: 'ISO 9001 品質管理體系',
+        name: '國際品質管理認證',
         items: [
           { label: '認證範圍', value: '印刷品質管理體系認證' },
         ],
@@ -141,7 +141,7 @@ const translations = {
 
     // 2026-08-16 K3 拍板: 關於我們板塊嵌入工廠實拍圖 (F:\工厂图片 47 张处理产出)
     factorySectionTitle: '廠房與設備 · 實拍',
-    factorySectionSubtitle: '自設廠房 · 海德堡柯式 + HP Indigo 數碼 · 6 大工序實拍 (色彩管理 → 柯式 → 數碼 → 後道裝訂 → 禮盒工藝 → 成品) · [查看 22 figure 工序流 ↓](#factory)',
+    factorySectionSubtitle: '平湖廠房 · 海德堡柯式 + HP Indigo 數碼 · 6 大工序實拍 (色彩管理 → 柯式 → 數碼 → 後道裝訂 → 禮盒工藝 → 成品) · [查看 22 figure 工序流 ↓](#factory)',
     altFloorPano: 'ZprintPro 印刷車間全景 — 摺紙機和後道加工線一覽',
     altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備',
     altHeidelberg61: '海德堡 6+1 色組柯式印刷機實拍',
@@ -194,16 +194,16 @@ const translations = {
 
   en: {
     metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
-    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
+    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. internationally certified + FSC certified, over a decade experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
     h1: 'About ZprintPro',
     subtitle: 'Premium printing service shipping to 50+ countries from Hong Kong since 2012',
     storyTitle: 'Our Story',
-    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by ISO 9001 + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
+    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by internationally certified + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
 
 Our vision is "Smarter Printing, Brighter Future." Through intelligent production workflows, fully personalized customization, and eco-friendly materials, we help every brand stand out with distinctive, high-quality print that lifts recognition and competitiveness. Every order — whether 100 stickers for a DTC startup, 5,000 flyers for a community event, or 50,000 retail-ready packaging units — gets the same dedication to color accuracy, fast turnaround, and worldwide delivery to your door.`,
     advantageTitle: 'Core Advantages',
     advantages: [
-      { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by 1,000+ global brands.' },
+      { title: 'Quality Assurance', desc: 'internationally certified + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by 1,000+ global brands.' },
       { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/) · [View SLA Terms](/en/faq/)' },
       { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
@@ -215,7 +215,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     ],
     certTitle: 'Certifications',
     certs: [
-      { name: 'ISO 9001', desc: 'Quality management system certification ensuring standardized production' },
+      { name: 'Quality Certification', desc: 'Quality management system certification ensuring standardized production' },
       { name: 'FSC Certified', desc: 'Forest Stewardship Council certified, eco paper with traceable sources' },
       { name: 'Soy-based Inks', desc: 'Environmentally friendly soy inks with 50% lower VOC emissions' },
     ],
@@ -227,12 +227,12 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-19 P0-A: Company credentials block (cert number + issuer + validity)
     credTitle: 'Company Credentials · Verifiable',
-    credSubtitle: 'Third-party certification · ISO 9001 quality management certified · FSC forest certified paper available · Periodic renewal',
+    credSubtitle: 'Third-party certification · internationally certified quality management · FSC forest certified paper available · Periodic renewal',
     // 2026-08-24 F1-batch-6 data layer refactor (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
     // object → array of {name, items: [{label, value}]} for generic UI filter
     credentials: [
       {
-        name: 'ISO 9001 Quality Management',
+        name: 'Quality Certification',
         items: [
           { label: 'Scope', value: 'Printing quality management system certified' },
         ],
@@ -345,7 +345,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
   ja: {
     metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',
-    metaDesc: '智印港 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
+    metaDesc: '智印港 ZprintProは香港で長年の実績を持ち、高品質な印刷サービスを提供しています。国際認証、FSC認証、幅広いお客様にサービスを提供。',
     h1: 'ZprintProについて',
     subtitle: '香港で15年以上、高品質印刷に専念',
     storyTitle: 'ブランドストーリー',
@@ -354,7 +354,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 「智印未来」（より賢いな印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
-      { title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
+      { title: '品質保証', desc: '国際認証 + FSC 認証 · 輸入四色オフセット + デジタル印刷 + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
       { title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · [SLA適用条件を見る](/ja/faq/)' },
       { title: '専門的なサービス', desc: '無料デザイン相談、無料型抜き設計、無料カラープルーフ。専任のアカウントマネージャーが見積もりから納品までワンストップでサポートします。' },
     ],
@@ -366,7 +366,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     ],
     certTitle: '認証資格',
     certs: [
-      { name: 'ISO 9001', desc: '品質管理システム認証。各生産工程の標準化を保証。' },
+      { name: '国際認証', desc: '品質管理システム認証。各生産工程の標準化を保証。' },
       { name: 'FSC 認証', desc: '森林管理協議会認証。環境配慮型紙の溯源が可能。' },
       { name: '大豆インク', desc: '環境配慮型大豆インクを採用。VOC排出量は業界標準の50%以下。' },
     ],
@@ -378,12 +378,12 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-19 P0-A: 会社資格ブロック (証明書番号 + 発行機関 + 有効期限)
     credTitle: '会社資格 · 検証可能',
-    credSubtitle: '第三者認証 · ISO 9001 品質マネジメントシステム認証 · FSC 森林認証紙対応 · 定期更新',
+    credSubtitle: '第三者認証 · 国際品質マネジメント認証 · FSC 森林認証紙対応 · 定期更新',
     // 2026-08-24 F1-batch-6 データ層リファクタ (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
     // object → array of {name, items: [{label, value}]} 汎用UIフィルター
     credentials: [
       {
-        name: 'ISO 9001 品質マネジメント',
+        name: '国際品質マネジメント認証',
         items: [
           { label: '認証範囲', value: '印刷品質マネジメントシステム認証' },
         ],
@@ -702,7 +702,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                 <svg className="w-6 h-6 text-[#7EB3FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485" /></svg>
                 <p className="text-white/70 text-sm leading-relaxed">{t.colorStory}</p>
                 <div className="flex flex-wrap gap-1.5">
-                  <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">ISO 9001</span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">Quality Certified</span>
                   <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">FSC</span>
                   <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">ICC</span>
                 </div>
@@ -942,7 +942,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                 </div>
               ))}
             </div>
-            <p className="text-center text-gray-400 text-xs mt-8">累計 1,000+ 企業客戶 · 50+ 國家 · 15+ 年印刷經驗</p>
+            <p className="text-center text-gray-400 text-xs mt-8">累計 1,000+ 企業客戶 · 50+ 國家 · 多年印刷經驗</p>
           </div>
         </section>
         {/* 2026-08-19 P0-A: 公司資質塊 (证书编号 + 认证机构 + 有效期, K3 拍板新增) */}

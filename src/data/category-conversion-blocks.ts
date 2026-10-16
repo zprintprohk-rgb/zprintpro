@@ -3734,7 +3734,7 @@ categoryConversionBlocks['red-packets:zh-hk'] = {
   ],
   "socialProof": [
     {
-      "stat": "ISO 9001",
+      "stat": "國際認證",
       "label": "認證印刷廠直出・免費設計排版有據可依"
     },
     {
@@ -3872,7 +3872,7 @@ categoryConversionBlocks['books:zh-hk'] = {
   "category": "books",
   "locale": "zh-hk",
   "title": "騎馬釘小冊子印刷 10本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
-  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，ISO 9001 認證，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
+  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，國際認證體系，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
   "quickAnswers": [
     {
       "q": "騎馬釘小冊子印刷幾多錢一本？",
@@ -3901,7 +3901,7 @@ categoryConversionBlocks['books:zh-hk'] = {
       "label": "五款書刊劃一 10 本起訂，校簿教材小批量都接得"
     },
     {
-      "stat": "ISO 9001 + FSC",
+      "stat": "國際認證 + FSC",
       "label": "認證印刷廠直出，品質同環保雙重認證"
     },
     {
@@ -4021,7 +4021,7 @@ categoryConversionBlocks['books:en'] = {
   "category": "books",
   "locale": "en",
   "title": "Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro",
-  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC-certified.",
+  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. internationally certified + FSC-certified.",
   "quickAnswers": [
     {
       "q": "How much does booklet printing cost?",
@@ -4033,7 +4033,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "How fast can you print and ship custom books?",
-      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is ISO 9001 + FSC-certified."
+      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is internationally certified + FSC-certified."
     }
   ],
   "socialProof": [
@@ -4053,7 +4053,7 @@ categoryConversionBlocks['books:en'] = {
       "desc": "From exercise books and workbooks to annual reports and product catalogs."
     },
     {
-      "stat": "ISO 9001 + FSC",
+      "stat": "Quality Certified + FSC",
       "label": "Certified printing quality & responsible paper",
       "desc": "Four-color printing with 95%+ color accuracy for catalogs and photo books."
     }
@@ -4157,7 +4157,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "Do you ship book printing orders to the USA?",
-      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is ISO 9001 + FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
+      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is internationally certified + FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
     }
   ]
 };
@@ -4166,7 +4166,7 @@ categoryConversionBlocks['books:ja'] = {
   "category": "books",
   "locale": "ja",
   "title": "冊子印刷｜中綴じ・無線綴じ・上製本 小ロット10冊〜｜ZprintPro",
-  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも10冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。ISO 9001認証工場。",
+  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも10冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。国際認証工場。",
   "quickAnswers": [
     {
       "q": "教材やテキストの印刷はいくらから依頼できますか？",
@@ -4191,7 +4191,7 @@ categoryConversionBlocks['books:ja'] = {
       "label": "中綴じ冊子の1冊あたり目安価格"
     },
     {
-      "stat": "ISO 9001",
+      "stat": "国際認証",
       "label": "認証工場の品質管理のもと、教材・製本を一貫製造"
     },
     {
@@ -4258,7 +4258,7 @@ categoryConversionBlocks['books:ja'] = {
       },
       {
         "title": "印刷",
-        "desc": "FSC認証紙とISO 9001品質管理のもとで四色印刷。本文・表紙の仕上がりを検品してから製本工程へ進みます"
+        "desc": "FSC認証紙と国際品質管理のもとで四色印刷。本文・表紙の仕上がりを検品してから製本工程へ進みます"
       },
       {
         "title": "製本（無線綴じ／上製本）",
@@ -4286,7 +4286,7 @@ categoryConversionBlocks['books:ja'] = {
   ],
   "newFaqs": [
     { "q": "教材やテキストの印刷はいくらから依頼できますか？", "a": "教材・テキストでよく使われる中綴じ冊子は1冊￥258〜、ページ数の多いカタログ・図録は1冊￥644〜で、いずれも10冊から承ります。ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。" },
-    { "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？", "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。" },
+    { "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？", "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも10冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。国際認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。" },
     { "q": "無線綴じの小ロット製本には対応していますか？", "a": "対応しています。中綴じ・無線綴じ・上製本すべて10冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで概算価格と納期をご提示し、大口部数は段階的に単価が下がります。" },
     {
       "q": "教材・テキスト印刷の最小部数と目安価格を教えてください",
@@ -4302,7 +4302,7 @@ categoryConversionBlocks['books:ja'] = {
     },
     {
       "q": "学校や塾の発注でも小ロットから注文できますか？",
-      "a": "はい。中綴じ・無線綴じ・上製本とも10冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
+      "a": "はい。中綴じ・無線綴じ・上製本とも10冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。国際認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
     }
   ]
 };

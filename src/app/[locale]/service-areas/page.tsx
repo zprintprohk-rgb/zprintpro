@@ -147,7 +147,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
           title: 'Other Regions',
           districts: 'Canada · Singapore · Europe (DE / FR / NL / IT / ES) · Middle East · Southeast Asia',
           delivery: 'Standard 7-14 business days. Express options available.',
-          note: 'Contact us for a custom quote to your country. ISO9001 + FSC certified prints.',
+          note: 'Contact us for a custom quote to your country. internationally certified + FSC-certified prints.',
         },
       ],
       cta: 'Get a Free Quote',
@@ -155,7 +155,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
     },
     ja: {
       h1: '日本向け越境印刷サービス | 深圳工場から発送',
-      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。順丰翌日配送、ISO9001認証、DHL国際配送。',
+      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。順丰翌日配送、国際認証、DHL国際配送。',
       areas: [
         {
           title: '東京・関東エリア',

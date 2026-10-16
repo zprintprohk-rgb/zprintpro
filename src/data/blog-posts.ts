@@ -372,7 +372,7 @@ const lpHKPrintingGuide: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '深入比較香港港島、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
-    en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, ISO 9001 certified factory-direct pricing.',
+    en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, internationally certified factory-direct pricing.',
     ja: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。',
   },
   // 2026-08-16 K3 拍板: 3 locale 全部用同一张海德堡图 (113.7KB webp, <120KB 硬约束)
@@ -1655,9 +1655,9 @@ const lpInstantPrinting30sAiQuoteFlow: BlogPostMeta = {
     ja: '即日印刷 30秒AI見積もりフロー: 正午までに確認 午 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '急件 1,200+ 客戶最常問 3 條: 即日印刷邊度最快? 幾錢? 幾點截單? 智印港 30 秒 AI 報價 6 步流程, 中午前確認下午起貨, 18:00 截單翌日 12:00 順豐送達, 跨境 DHL 2-4 天直送 50+ 國家. 5 大即日印刷品類 (防水貼紙 / 公司信封 / 賀卡 / A4 單張 / 卡片紙) 100 個起印 HK$0.25/個起, 4,200 張急件實證 + 99.2% 達成率 + ISO 9001 + FSC 認證, 服務 100+ 國家 15,000+ 客戶, 30 秒 WhatsApp 即時報價.',
-    en: 'Rush order FAQ answered: fastest delivery, exact price, cutoff time. ZprintPro 30-second AI quote in 6 steps, confirm by noon ship same afternoon, 18:00 cutoff next-day 12:00 SF Express, DHL 2-4 day cross-border to 50+ countries. 5 instant categories (waterproof stickers / business envelopes / greeting cards / A4 flyers / thank-you cards) 100 MOQ from HK$0.25/pc, 4,200+ rush orders 99.2% on-time, ISO 9001 + FSC-certified, 100+ countries 15,000+ clients, 30s WhatsApp quote.',
-    ja: '急ぎオーダーFAQ: 最速納期、正確な単価、明確な締切。ZprintPro 30秒AI見積もり6ステップ、正午までに確認午後に出荷、18:00締切翌日12時SF Express、DHL国際2-4日で50ヶ国以上。5大即日カテゴリー（防水ステッカー/社用封筒/グリーティングカード/A4チラシ/カード）100枚からHK$0.25、4,200件以上99.2%達成率、ISO 9001 + FSC認証、100ヶ国以上15,000社以上、30秒WhatsApp見積。',
+    'zh-hk': '急件 1,200+ 客戶最常問 3 條: 即日印刷邊度最快? 幾錢? 幾點截單? 智印港 30 秒 AI 報價 6 步流程, 中午前確認下午起貨, 18:00 截單翌日 12:00 順豐送達, 跨境 DHL 2-4 天直送 50+ 國家. 5 大即日印刷品類 (防水貼紙 / 公司信封 / 賀卡 / A4 單張 / 卡片紙) 100 個起印 HK$0.25/個起, 急件交付實證 + 準時交付紀錄 + 國際認證體系 + FSC 認證, 服務全球多國客戶, 30 秒 WhatsApp 即時報價.',
+    en: 'Rush order FAQ answered: fastest delivery, exact price, cutoff time. ZprintPro 30-second AI quote in 6 steps, confirm by noon ship same afternoon, 18:00 cutoff next-day 12:00 SF Express, DHL 2-4 day cross-border to 50+ countries. 5 instant categories (waterproof stickers / business envelopes / greeting cards / A4 flyers / thank-you cards) 100 MOQ from HK$0.25/pc, 4,200+ rush orders 99.2% on-time, internationally certified + FSC-certified, global multi-country clients, 30s WhatsApp quote.',
+    ja: '急ぎオーダーFAQ: 最速納期、正確な単価、明確な締切。ZprintPro 30秒AI見積もり6ステップ、正午までに確認午後に出荷、18:00締切翌日12時SF Express、DHL国際2-4日で50ヶ国以上。5大即日カテゴリー（防水ステッカー/社用封筒/グリーティングカード/A4チラシ/カード）100枚からHK$0.25、急件実績豊富、国際認証 + FSC認証、多国展開、30秒WhatsApp見積。',
   },
   targetKeywords: {
     primary: '即日印刷',
@@ -1832,7 +1832,7 @@ const lpSchoolExerciseBookPrintingGuide: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '學校練習簿/作業簿 10 本起印, 4 種紙材 (道林紙/書紙/米黃道林/再生紙) + 3 種裝訂 (騎馬釘/膠裝/線圈裝) + 4 種工藝 (單色/雙色/四色/UV) + Q4 開學季, 智印港 全球客戶, ISO 認証体系 + FSC 認證, 跨境 DHL 2-4 天, 30 秒 WhatsApp 報價.',
-    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, ISO 9001 + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
+    en: 'School exercise book printing 100 MOQ, 4 paper stocks + 3 bindings + 4 print modes ZprintPro global clients, International quality certification + FSC + FDA + EU REACH certified, DHL 2-4 day cross-border, 30s WhatsApp quote.',
     ja: '練習帳 100 部から. 4 用紙 + 3 製本 + 4 印刷. グローバル顧客. ISO + FSC + FDA + EU REACH.',
   },
   targetKeywords: {

@@ -263,7 +263,7 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮，色彩更鮮豔，適合產品推廣</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，適合高檔品牌、餐廳菜單</li><li><strong>UV 局部上光</strong>：突出 Logo 或圖片</li><li><strong>燙金 / 燙銀</strong>：高階品牌傳單首選</li><li><strong>打孔 / 摺線</strong>：便於撕取、折疊</li></ul>
 <h2>常見問題 FAQ</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單印刷幾錢一張？</strong><br/>A：A5 單面 128g 銅版紙 100 張起印、HK$0.25 起/張；A4 單面 HK$0.35 起/張；A3 約 HK$0.63 起/張。印量愈大折扣愈多，5,000 張約半價。</p><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：A4、A5、A3 點揀？</strong><br/>A：街派同優惠券揀 A5；資訊多、要留畀客慢慢睇揀 A4；櫥窗同大型活動先考慮 A3。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印港提供 100+ 款免費模板。</p></div>
-<p><strong>本文作者與品質來源：</strong>由智印港印刷工程團隊撰寫，團隊成員為 15 年膠印工程師，長期操作海德堡 Speedmaster 6+1 印刷機，服務 12 大行業、1,000+ 客戶；廠房通過 ISO 9001 與 FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印港印刷工程團隊）。文中價格來源：智印港 A4/A5 傳單產品頁價格口徑（2026-09 更新）。</p>
+<p><strong>本文作者與品質來源：</strong>由智印港印刷工程團隊撰寫，團隊成員為 15 年膠印工程師，長期操作進口六色膠印機，服務多個行業、全球客戶；廠房通過國際認證體系與 FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印港印刷工程團隊）。文中價格來源：智印港 A4/A5 傳單產品頁價格口徑（2026-09 更新）。</p>
 <p>想了解更多傳單印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
   en: `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
 <p class="my-4">👉 Need the best price right now? <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> — tell us your size, paper, and quantity for an instant quote.</p>
@@ -300,7 +300,7 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Bright surface, vibrant colors, ideal for product promo</li><li><strong>Matte Lamination</strong>: Soft texture, ideal for premium brands and menus</li><li><strong>Spot UV</strong>: Highlight logo or image</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Premium brand flyers favorite</li><li><strong>Perforation / Score Lines</strong>: Easy tear, fold</li></ul>
 <h2>Frequently Asked Questions</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How much does flyer printing cost per piece?</strong><br/>A：A5 single-sided 128gsm art paper from US$0.40/pc at a 100-pc MOQ; A4 from US$0.55/pc; A3 approx. US$1.00/pc. Volume discounts up to 50% at 5,000 pcs.</p><p><strong>Q：What is the MOQ for flyers?</strong><br/>A：100 pieces minimum; discounts over 500.</p><p><strong>Q：Which size — A4, A5, or A3?</strong><br/>A：A5 (148×210mm) for street handouts and coupons; A4 (210×297mm) when you need more detail; A3 for window displays and large campaigns.</p><p><strong>Q：Delivery time?</strong><br/>A：Standard 3-5 working days; rush 24 hours available.</p><p><strong>Q：Will double-sided show through?</strong><br/>A：157g+ art paper generally no. Choose 200g for dark designs.</p><p><strong>Q：Any design templates?</strong><br/>A：ZprintPro offers 100+ free templates.</p></div>
-<p><strong>Author &amp; quality sources:</strong> This guide was written by the ZprintPro printing engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving 1,000+ customers across 12 industries. The plant is ISO 9001 and FSC certified; printed products comply with FDA 21 CFR and EU REACH, with a 24-hour rush SLA and DHL/FedEx global 2-4 day delivery (LinkedIn: ZprintPro Printing Engineering Team). Prices cited from ZprintPro A4/A5 flyer product pages (updated 2026-09).</p>
+<p><strong>Author &amp; quality sources:</strong> This guide was written by the ZprintPro printing engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving global customers across key industries. The plant is internationally certified and FSC certified; printed products comply with FDA 21 CFR and EU REACH, with a 24-hour rush SLA and DHL/FedEx global 2-4 day delivery (LinkedIn: ZprintPro Printing Engineering Team). Prices cited from ZprintPro A4/A5 flyer product pages (updated 2026-09).</p>
 <p>Want more on flyer printing? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
   ja: `<p>チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。</p>
 <p class="my-4">👉 最安値を見積もりたい方は <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a>、サイズ・用紙・数量を送れば即時回答。</p>
@@ -337,7 +337,7 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：明るい表面、色彩鮮やか、產品プロモに最適</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級ブランド・メニューに最適</li><li><strong>スポット UV</strong>：ロゴや画像を強調</li><li><strong>箔押し（金 / 銀）</strong>：高級ブランドチラシ定番</li><li><strong>ミシン目 / 罫線</strong>：切り取り、折り畳み便利</li></ul>
 <h2>よくある質問 FAQ</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：チラシ印刷はいくら？</strong><br/>A：A5 片面 128g コート紙 100 枚から ¥50/枚〜、A4 片面 ¥70/枚〜、A3 約 ¥126/枚〜。5,000 枚で約半額。</p><p><strong>Q：最小注文数量は？</strong><br/>A：100 枚から、500 枚以上で割引。</p><p><strong>Q：A4・A5・A3 の選び方は？</strong><br/>A：街頭配布・クーポンは A5、情報量重視は A4、ショーウィンドウや大規模イベントは A3。</p><p><strong>Q：納期は？</strong><br/>A：標準 3〜5 営業日、特急 24 時間対応可。</p><p><strong>Q：両面は透けますか？</strong><br/>A：157g 以上のコート紙なら通常透けません。濃い色は 200g を選択。</p><p><strong>Q：デザインテンプレートは？</strong><br/>A：ZprintPro は 100 種類以上の無料テンプレートをご提供。</p></div>
-<p><strong>本記事の著者と品質情報：</strong>ZprintPro 印刷エンジニアチームが執筆。15 年のオフセット印刷エンジニアがハイデルベルグ Speedmaster 6+1 を運用し、12 業界・1,000+ 顧客に対応。工場は ISO 9001・FSC 認証を取得し、FDA 21 CFR・EU REACH に準拠、24 時間特急 SLA・DHL/FedEx グローバル 2〜4 日配送に対応（LinkedIn：ZprintPro Printing Engineering Team）。価格は ZprintPro A4/A5 チラシ製品ページ（2026-09 更新）より。</p>
+<p><strong>本記事の著者と品質情報：</strong>ZprintPro 印刷エンジニアチームが執筆。長年のオフセット印刷実績を持つエンジニアが輸入六色オフセット機を運用し、複数業界・世界中の顧客に対応。工場は国際認証・FSC 認証を取得し、FDA 21 CFR・EU REACH に準拠、24 時間特急 SLA・DHL/FedEx グローバル 2〜4 日配送に対応（LinkedIn：ZprintPro Printing Engineering Team）。価格は ZprintPro A4/A5 チラシ製品ページ（2026-09 更新）より。</p>
 <p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 見積もり！</p>`,
 },
 
@@ -405,7 +405,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp 聯絡智印港</strong></a>，攞 30 秒 AI 即時報價，順豐本地免運費、DHL 全球 2-4 天送貨。</p>
 <div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
 <p class="text-base text-[#333333] font-semibold mb-2">關於智印港</p>
-<p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。ISO 9001 品質管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
+<p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。國際質量管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
 <p class="mb-0"><strong>資料來源：</strong>智印港 2026 內部報價資料庫（products.ts 2026-09 價目）；ISO 12647-2:2013 色彩管理標準；FSC 2025 永續印刷報告。</p>
 </div>
 <p class="text-sm text-[#444444] mt-4"><strong>本文作者：</strong>智印港印刷工程團隊 — 15 年膠印工程師，專注包裝盒／彩盒／精裝盒工藝。<strong>最後更新：2026-09-16。</strong></p>
@@ -450,7 +450,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI quote — free shipping in Hong Kong, DHL global 2-4 day delivery.</p>
 <div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
 <p class="text-base text-[#333333] font-semibold mb-2">About ZprintPro</p>
-<p class="text-sm text-[#444444] leading-relaxed">ZprintPro serves US, UK, AU, and global clients with 30-second AI instant print quotes, DHL global 2-4 day delivery. ISO 9001 quality management, FSC-certified paper supply. Custom packaging from 100 pcs covering cosmetics, jewelry, food, and electronics.</p>
+<p class="text-sm text-[#444444] leading-relaxed">ZprintPro serves US, UK, AU, and global clients with 30-second AI instant print quotes, DHL global 2-4 day delivery. International quality management, FSC-certified paper supply. Custom packaging from 100 pcs covering cosmetics, jewelry, food, and electronics.</p>
 <p class="mb-0"><strong>Sources:</strong> ZprintPro 2026 internal pricing database (products.ts 2026-09 pricing); ISO 12647-2:2013 color management standard; FSC 2025 sustainable printing report.</p>
 </div>
 <p class="text-sm text-[#444444] mt-4"><strong>About the author:</strong> ZprintPro Print Engineering Team — 15 years of offset press engineering specializing in packaging, cartons, and rigid boxes. <strong>Last updated: 2026-09-16.</strong></p>
@@ -495,7 +495,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI 見積もり、全国送料込み、DHL 国際 2-4 日配送。</p>
 <div class="mt-12 p-6 bg-[#F5F8FF] rounded-lg border border-[#2873F5]/20">
 <p class="text-base text-[#333333] font-semibold mb-2">ZprintPro について</p>
-<p class="text-sm text-[#444444] leading-relaxed">ZprintPro は米国・英国・豪州・グローバル顧客に 30 秒 AI リアルタイム印刷見積もり、DHL 国際 2-4 日配送を提供。ISO 9001 品質マネジメント、FSC 認証用紙供給。パッケージカスタム 100 個から、化粧品・宝石・食品・電子機器の全シーンをカバー。</p>
+<p class="text-sm text-[#444444] leading-relaxed">ZprintPro は米国・英国・豪州・グローバル顧客に 30 秒 AI リアルタイム印刷見積もり、DHL 国際 2-4 日配送を提供。国際品質マネジメント、FSC 認証用紙供給。パッケージカスタム 100 個から、化粧品・宝石・食品・電子機器の全シーンをカバー。</p>
 <p class="mb-0"><strong>出典：</strong>ZprintPro 2026 内部見積もりデータベース（products.ts 2026-09 価格）；ISO 12647-2:2013 カラー管理標準；FSC 2025 持続可能印刷レポート。</p>
 </div>
 <p class="text-sm text-[#444444] mt-4"><strong>本文執筆：</strong>ZprintPro 印刷エンジニアリングチーム — 15 年のオフセット印刷エンジニアがパッケージ・カートン・化粧箱の工程を担当。<strong>最終更新：2026-09-16。</strong></p>

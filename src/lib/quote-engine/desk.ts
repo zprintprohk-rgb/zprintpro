@@ -508,7 +508,7 @@ export function buildCopy(input: {
       `貨品價: ${currency} ${price.toLocaleString()}`,
       `運費: ${shipping.line}`,
       `交期: ${shipping.leadDays}`,
-      `✅ 免費設計稿 · 15+ 年印刷經驗`,
+      `✅ 免費設計稿 · 多年印刷經驗`,
       ``,
       brand,
     ].join('\n');
@@ -523,7 +523,7 @@ export function buildCopy(input: {
       `商品代金: ${currency} ${price.toLocaleString()}`,
       `送料: ${shipping.line}`,
       `納期: ${shipping.leadDays}`,
-      `✅ 無料デザイン · 15+ 年の印刷実績`,
+      `✅ 無料デザイン · 長年の印刷実績`,
       ``,
       brand,
     ].join('\n');
@@ -538,7 +538,7 @@ export function buildCopy(input: {
     `Price: ${currency} ${price.toLocaleString()}`,
     `Shipping: ${shipping.line}`,
     `Lead time: ${shipping.leadDays}`,
-    `✅ Free design mockup · 15+ years printing experience`,
+    `✅ Free design mockup · over a decade printing experience`,
     ``,
     brand,
   ].join('\n');

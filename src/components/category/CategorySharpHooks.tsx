@@ -307,19 +307,19 @@ const labels: Record<string, Record<string, string>> = {
     title: '快速選擇您的場景',
     subtitle: '從 3 個最常見的行業開始，了解這個品類適合印什麼。',
     moreLink: '查看完整行業方案 →',
-    fallbackHook: '專業印刷服務, 100 個起印, ISO 9001 認證, 30 秒 AI 即時報價',
+    fallbackHook: '專業印刷服務, 100 個起印, 國際認證體系, 30 秒 AI 即時報價',
   },
   en: {
     title: 'Quickly Find Your Use Case',
     subtitle: 'Start with 3 of the most common industries to see what you can print in this category.',
     moreLink: 'View All Industry Solutions →',
-    fallbackHook: 'Professional printing service, 100 MOQ, ISO 9001 certified, 30-second AI instant quote',
+    fallbackHook: 'Professional printing service, 100 MOQ, internationally certified, 30-second AI instant quote',
   },
   ja: {
     title: 'あなたの用途を素早く見つける',
     subtitle: '3つの主要業界から、このカテゴリーで印刷可能なものを確認できます。',
     moreLink: 'すべての業界ソリューションを見る →',
-    fallbackHook: 'プロ印刷サービス、100個から対応、ISO 9001認証、30秒AI即時見積',
+    fallbackHook: 'プロ印刷サービス、100個から対応、国際認証、30秒AI即時見積',
   },
 };
 

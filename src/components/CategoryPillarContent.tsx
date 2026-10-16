@@ -164,7 +164,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                   <circle cx="8" cy="8" r="6.5" stroke="#fff" strokeWidth="1.5" fill="none"/>
                 </svg>
               </span>
-              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工廠・FSC 認證紙' : 'ISO 9001 factory · FSC-certified paper') : (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工場・FSC認証紙' : 'ISO 9001 factory · FSC-certified paper')} />
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '國際認證工廠・FSC 認證紙' : isJa ? '國際認證工廠・FSC 認證紙' : 'certified factory · FSC-certified paper') : (isZh ? '國際認證工廠・FSC 認證紙' : isJa ? '国際認証工場・FSC認証紙' : 'certified factory · FSC-certified paper')} />
             </div>
           </div>
 

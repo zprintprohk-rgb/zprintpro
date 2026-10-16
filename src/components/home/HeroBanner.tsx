@@ -29,7 +29,7 @@ const translations = {
     // zh-hk 定位: 香港本地印刷服務 · 即日急件 · 港九新界速遞 · WhatsApp 中文客服
     slides: [
       { title: '即日印刷・即日急件 — 今晚 6 點前落單，聽日中午 12 點前到', subtitle: '傳單 / 海報 / 貼紙 10 張起印 · 順豐翌日中午前送達 · WhatsApp 30 秒報價', price: '18:00 截單', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
-      { title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
+      { title: '國際認證體系 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
       { title: 'A4 宣傳單張 · 即日可取', subtitle: '128-200g 銅版紙 · 雙面 CMYK · 10 張起印 · 上門收送稿服務', price: 'HK$0.3 起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
       { title: '防水貼紙 · 適用任何表面', subtitle: 'UV 防水材質 · 任意形狀模切 · 戶外耐候 3-5 年 · 全港配送上門', price: 'HK$0.5 起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
       { title: '精裝盒定製 · 提升品牌', subtitle: '燙金 · UV · 擊凸 · 100 個起訂 · 免費排版設計', price: 'HK$8 起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/rigid-boxes/' },
@@ -61,7 +61,7 @@ const translations = {
       { title: 'A4 チラシ印刷 · 当日受取', subtitle: '128-200g コート紙 · 両面 CMYK · 試し刷りサービス · 少ロット 500 枚〜', price: '¥6〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
       { title: '防水ステッカー · 屋外耐候', subtitle: 'UV 耐性ビニール · ダイカット自由形状 · 屋外 3-5 年耐久性 · 和紙素材対応', price: '¥10〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
       { title: 'ギフトボックス · 箔押し UV 加工', subtitle: '高級貼箱 · 箔押し · スポット UV · エンボス · 100 個〜対応 · 無料設計', price: '¥120〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/rigid-boxes/' },
-      { title: '大判ポスター印刷 · 高品質', subtitle: 'Heidelberg 4 色オフセット · 200-300g アート紙 · 鮮やかな発色 · 日本品質基準対応', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
+      { title: '大判ポスター印刷 · 高品質', subtitle: '輸入4色オフセット · 200-300g アート紙 · 鮮やかな発色 · 日本品質基準対応', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
     ],
   },
 };

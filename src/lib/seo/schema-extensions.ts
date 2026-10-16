@@ -83,11 +83,11 @@ export function getCategoryHowToSteps(
   const genericPrintingProcess: Record<Locale, { name: string; description: string; steps: { name: string; text: string }[] }> = {
     'zh-hk': {
       name: brand + '印刷工藝流程',
-      description: '了解' + brand + '從設計到交付的完整印刷流程。ISO 9001 認證深圳工廠，專業設備，品質保證。',
+      description: '了解' + brand + '從設計到交付的完整印刷流程。國際認證體系深圳工廠，專業設備，品質保證。',
       steps: [
         { name: '設計準備', text: '準備 CMYK 300dpi 設計稿，預留 3mm 出血位。' + brand + '免費模板可加速設計。' },
         { name: '材質選擇', text: '根據產品需求選擇合適紙質/材質，' + brand + '團隊提供專業建議。' },
-        { name: '印刷生產', text: '使用 Heidelberg 四色印刷機在 ISO 9001 認證的深圳工廠進行專業印刷。' },
+        { name: '印刷生產', text: '使用 Heidelberg 四色印刷機在 國際認證體系的深圳工廠進行專業印刷。' },
         { name: '後加工處理', text: '根據訂單需求進行裁切、覆膜、燙金、UV、擊凸等後加工工藝。' },
         { name: '質檢包裝', text: '每批次產品經專業質檢員檢查色彩、裁切、材質，合格後防水包裝出廠。' },
         { name: '跨境配送', text: 'DHL/FedEx 國際快遞，72 小時全球送達。香港地區跨境專線直達。' },
@@ -95,11 +95,11 @@ export function getCategoryHowToSteps(
     },
     en: {
       name: brand + ' Printing Process',
-      description: 'Complete printing workflow from design to delivery. ISO 9001 certified Asia factory, professional equipment, quality guaranteed.',
+      description: 'Complete printing workflow from design to delivery. internationally certified Asia factory, professional equipment, quality guaranteed.',
       steps: [
         { name: 'Design Preparation', text: 'Prepare CMYK 300dpi artwork with 3mm bleed. Free ' + brand + ' templates available.' },
         { name: 'Material Selection', text: 'Choose the right paper/material. ' + brand + ' team provides expert recommendations.' },
-        { name: 'Printing Production', text: 'Heidelberg 4-color presses at our ISO 9001 certified Asia factory.' },
+        { name: 'Printing Production', text: '4-color presses at our internationally certified Asia factory.' },
         { name: 'Finishing', text: 'Cutting, lamination, foil stamping, spot UV, embossing as required.' },
         { name: 'Quality Control', text: 'QC specialists check color accuracy, cutting precision, and material quality.' },
         { name: 'Global Shipping', text: 'DHL/FedEx express, 72-hour delivery. Cross-border express to HK.' },
@@ -107,11 +107,11 @@ export function getCategoryHowToSteps(
     },
     ja: {
       name: brand + '印刷プロセス',
-      description: 'デザインから納品までの完全な印刷ワークフロー。ISO 9001認証アジア自社工場、専門設備、品質保証。',
+      description: 'デザインから納品までの完全な印刷ワークフロー。国際認証アジア自社工場、専門設備、品質保証。',
       steps: [
         { name: 'デザイン準備', text: 'CMYK 300dpi、3mm塗り足し付き。' + brand + '無料テンプレート利用可能。' },
         { name: '素材選択', text: '用途に応じた最適な紙質/素材。' + brand + 'チームが専門アドバイス。' },
-        { name: '印刷生産', text: 'ISO 9001認証アジア自社工場でHeidelberg 4色印刷機によるプロ印刷。' },
+        { name: '印刷生産', text: '国際認証アジア自社工場で輸入4色印刷機によるプロ印刷。' },
         { name: '後加工', text: '断裁、ラミネート、箔押し、UV、エンボスなど。' },
         { name: '品質検査', text: '専門検査員が各ロットの色精度、断裁、素材をチェック。' },
         { name: '国際配送', text: 'DHL/FedEx、72時間。日本全国へ国際速達直送。' },

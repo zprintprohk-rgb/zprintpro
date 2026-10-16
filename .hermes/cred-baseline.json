@@ -1,0 +1,126 @@
+{
+ "recordedAt": "2026-10-16T10:11:50.917Z",
+ "headSha": "5a68071d",
+ "note": "CRED 存量基线 (方案 C 同款, 只许递减) — 逐文件逐规则 HEAD 计数; 新增违规 (count > baseline) 照常硬拦",
+ "perFile": {
+  "src/app/[locale]/about/page.tsx": {
+   "CRED_ISO_9001": 17,
+   "CRED_1000_PLUS": 15,
+   "CRED_4_PLUS_NUMBER": 16,
+   "CRED_INTL_TOP": 1,
+   "CRED_15_YEARS": 1,
+   "CRED_SELF_FACTORY": 1
+  },
+  "src/app/[locale]/blog/[slug]/page.tsx": {
+   "CRED_ISO_9001": 4,
+   "CRED_4_PLUS_NUMBER": 17
+  },
+  "src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx": {
+   "CRED_ISO_9001": 3,
+   "CRED_4_PLUS_NUMBER": 3
+  },
+  "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx": {
+   "CRED_ISO_9001": 1,
+   "CRED_4_PLUS_NUMBER": 1
+  },
+  "src/app/[locale]/contact/page.tsx": {
+   "CRED_ISO_9001": 3,
+   "CRED_4_PLUS_NUMBER": 4
+  },
+  "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx": {
+   "CRED_ISO_9001": 1,
+   "CRED_4_PLUS_NUMBER": 5,
+   "CRED_SELF_FACTORY": 1
+  },
+  "src/app/[locale]/service-areas/page.tsx": {
+   "CRED_ISO_9001": 2
+  },
+  "src/app/[locale]/services/business-cards-printing/page.tsx": {
+   "CRED_ISO_9001": 3
+  },
+  "src/app/[locale]/services/catalog-printing-china/page.tsx": {
+   "CRED_ISO_9001": 21,
+   "CRED_1000_PLUS": 2,
+   "CRED_4_PLUS_NUMBER": 1
+  },
+  "src/components/CategoryPillarContent.tsx": {
+   "CRED_ISO_9001": 6
+  },
+  "src/components/TrustBadges.tsx": {
+   "CRED_ISO_9001": 6
+  },
+  "src/components/category/CategorySharpHooks.tsx": {
+   "CRED_ISO_9001": 3
+  },
+  "src/components/home/FactoryTrust.tsx": {
+   "CRED_ISO_9001": 3
+  },
+  "src/components/home/HeroBanner.tsx": {
+   "CRED_ISO_9001": 1
+  },
+  "src/components/home/HowItWorks.tsx": {
+   "CRED_ISO_9001": 3,
+   "CRED_4_PLUS_NUMBER": 3
+  },
+  "src/components/layout/FloatingQuoteCTA.tsx": {
+   "CRED_ISO_9001": 3
+  },
+  "src/data/blog-data/en.json": {
+   "CRED_ISO_9001": 50,
+   "CRED_FSC_C123456": 4,
+   "CRED_1000_PLUS": 30,
+   "CRED_4_PLUS_NUMBER": 50
+  },
+  "src/data/blog-data/ja.json": {
+   "CRED_ISO_9001": 47,
+   "CRED_FSC_C123456": 4,
+   "CRED_1000_PLUS": 19,
+   "CRED_4_PLUS_NUMBER": 50
+  },
+  "src/data/blog-data/zh-hk.json": {
+   "CRED_ISO_9001": 50,
+   "CRED_FSC_C123456": 5,
+   "CRED_1000_PLUS": 26,
+   "CRED_4_PLUS_NUMBER": 50,
+   "CRED_SELF_FACTORY": 1
+  },
+  "src/data/blog-posts.ts": {
+   "CRED_ISO_9001": 5,
+   "CRED_4_PLUS_NUMBER": 33
+  },
+  "src/data/buying-guides.ts": {
+   "CRED_ISO_9001": 6,
+   "CRED_1000_PLUS": 11,
+   "CRED_4_PLUS_NUMBER": 11
+  },
+  "src/data/category-conversion-blocks.ts": {
+   "CRED_ISO_9001": 12,
+   "CRED_1000_PLUS": 8,
+   "CRED_4_PLUS_NUMBER": 14
+  },
+  "src/data/category-seo-content.ts": {
+   "CRED_ISO_9001": 19,
+   "CRED_1000_PLUS": 9,
+   "CRED_4_PLUS_NUMBER": 29
+  },
+  "src/data/pillar-content.ts": {
+   "CRED_1000_PLUS": 1,
+   "CRED_4_PLUS_NUMBER": 12
+  },
+  "src/data/products-content.ts": {
+   "CRED_ISO_9001": 50,
+   "CRED_1000_PLUS": 35,
+   "CRED_4_PLUS_NUMBER": 50,
+   "CRED_SELF_FACTORY": 50
+  },
+  "src/data/sku-seo-data.ts": {
+   "CRED_4_PLUS_NUMBER": 50
+  },
+  "src/lib/seo.ts": {
+   "CRED_ISO_9001": 30
+  },
+  "src/lib/seo/schema-extensions.ts": {
+   "CRED_ISO_9001": 6
+  }
+ }
+}

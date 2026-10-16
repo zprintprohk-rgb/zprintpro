@@ -302,9 +302,38 @@ function isNonExemptRule(ruleId) {
 }
 
 // 检查是否在经营参数白名单内
-function isOperationalWhitelist(match, ruleId) {
+function isOperationalWhitelist(match, ruleId, content, index) {
   // 仅对数据诚信类规则生效 (其他门童不豁免)
   if (!ruleId || !ruleId.startsWith('CRED_')) return false;
+
+  // ★ 2026-10-16 簇9.5 修复 (千问扣分项闭环: 裸数字命中永远无法命中货币/数量白名单):
+  //   CRED_4_PLUS_NUMBER 的 match 是裸数字 (如 "1,000"), 而 businessParams 白名单模式都是
+  //   带货币/单位上下文的 (HK$.../100 個起印) ⇒ 结构性永不匹配 ⇒ 任何触碰含价格表内容文件的
+  //   commit 都被合法经营参数阻塞 (实证: 3,624 处全为价格/数量表)。
+  //   修法: 对 4_PLUS 规则启用 ±40 字符上下文窗判定 (货币前缀/数量单位/円/区间/表格),
+  //   与 §0.31.1.1 经营参数白名单意图 (价格/交期/起印量) 对齐。
+  if (ruleId === 'CRED_4_PLUS_NUMBER' && typeof content === 'string' && typeof index === 'number') {
+    const from = Math.max(0, index - 40);
+    const ctx = content.slice(from, index + match.length + 40);
+    const ctxPatterns = [
+      /(HK\$|US\$|USD|RM|CNY|JPY|¥|￥)/,                        // 货币前缀
+      /\d{1,3},\d{3}\s*(個|枚|本|張|张|件|部|副|ページ|页|pcs|sets?)/i, // 数量单位后缀
+      /\d{1,3},\d{3}\s*円/,                                     // 日元价
+      /\d{1,3},\d{3}\s*[-〜~～]/,                                // 价格/数量区间
+      /\d{1,3},\d{3}\s*(以上|以下|から|〜)/,                      // 日文量界
+    ];
+    for (const p of ctxPatterns) {
+      if (p.test(ctx)) return { whitelisted: true, category: 'businessParamsCtx' };
+    }
+  }
+
+  // ★ 2026-10-16 落实 K3 2026-09-19 拍板「选 A 允许」(见 credibility-guard.js scan() 内注释):
+  //   设备品牌名 (Heidelberg / 海德堡 / HP Indigo) 属行业标准识认, 批为白名单。
+  //   原实现仅对 FULL_EXEMPT_PATHS 尊重, 上线面仍逐字拦截 ⇒ 与拍板不一致。
+  //   此处按拍板本意补 per-hit 白名单 (仅此一规则; 其余上线面扫描不变)。
+  if (ruleId === 'CRED_HEIDELBERG' && /(Heidelberg|海德堡|HP\s*Indigo)/i.test(match)) {
+    return { whitelisted: true, category: 'equipmentBrands' };
+  }
 
   for (const [category, patterns] of Object.entries(OPERATIONAL_WHITELIST)) {
     for (const pattern of patterns) {
@@ -348,8 +377,8 @@ function scanRule(content, file, rule) {
   while ((match = re.exec(content)) !== null) {
     if (match.index === re.lastIndex) re.lastIndex++;
 
-    // 經營參數白名單檢查
-    const wl = isOperationalWhitelist(match[0], rule.id);
+    // 經營參數白名單檢查 (传入 content+index 供上下文窗判定)
+    const wl = isOperationalWhitelist(match[0], rule.id, content, match.index);
     if (wl.whitelisted) continue;
 
     // 註解行排除

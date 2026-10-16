@@ -25,17 +25,17 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: 'China Catalog Printing | 10 MOQ + Shenzhen Factory + DHL 2-4 Days | 智印港 ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified.',
+    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. internationally certified + FSC certified.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china',
   },
   'en': {
     title: 'China Catalog Printing | 10 MOQ + Shenzhen Factory + DHL 2-4 Days | ZprintPro',
-    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
+    desc: 'China catalog printing from Shenzhen factory, 10 MOQ, free file check, 2h quote, DHL 2-4 day global delivery. Catalog, brochure, magazine, lookbook, wholesale bulk pricing. 30-second AI quote. internationally certified + FSC certified. Save 30-40% vs Western printers.',
     keywords: 'china catalog printing,china printing factory,print catalog china,bulk catalog printing,wholesale catalog printing,cheap catalog printing,shenzhen printing factory,asia printing factory,low moq catalog printing,catalog printing 100,fast catalog printing,catalog printing usa,catalog printing europe,catalog printing uk,custom catalog printing,booklet printing china,magazine printing china,brochure printing china,lookbook printing china,zine printing,short run zine printing,zine printing no minimum',
   },
   'ja': {
     title: '中国カタログ印刷｜10部から・深セン工場・DHL 2-4日｜ZprintPro',
-    desc: '中国深セン工場からのカタログ印刷、10部から対応、無料ファイルチェック、2時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。ISO 9001 + FSC認証。',
+    desc: '中国深セン工場からのカタログ印刷、10部から対応、無料ファイルチェック、2時間見積もり、DHL国際配送2-4日。カタログ・パンフレット・雑誌・ルックブック・大量卸価格。30秒AI無料見積もり。国際認証 + FSC認証。',
     keywords: '中国カタログ印刷,中国印刷工場,深セン印刷工場,大量カタログ印刷,卸売カタログ印刷,安いカタログ印刷,小ロットカタログ印刷,カタログ印刷 10部,即納カタログ印刷,カタログ印刷 アメリカ,カタログ印刷 ヨーロッパ,カスタムカタログ印刷,冊子印刷 中国',
   },
 };
@@ -119,7 +119,7 @@ const T: Record<string, {
 }> = {
   'zh-hk': {
     heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 10 MOQ, DHL 2-4 Days',
-    heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 10 本起印, 30 秒 AI 即時報價, ISO 9001 + FSC 認證. 對比歐美印刷廠慳 30-40%.',
+    heroSubtitle: '從深圳工廠直送全球嘅 catalog / brochure / magazine / lookbook 印刷, 10 本起印, 30 秒 AI 即時報價, 國際認證體系 + FSC 認證. 對比歐美印刷廠慳 30-40%.',
     ctaPrimary: 'WhatsApp 19880851334 即時報價',
     ctaSecondary: '查看材料樣本',
     h2_advantage: '三錘碾壓：30 秒 AI 報價 / MOQ 10 / DHL 2-4 天',
@@ -160,7 +160,7 @@ const T: Record<string, {
     ],
     h2_trust: '信任錘：深圳工廠實拍 + 質量保證',
     trustItems: [
-      { title: 'ISO 9001 認證', desc: '深圳工廠通過 ISO 9001:2015 質量管理體系認證, 16 年印刷經驗' },
+      { title: '國際認證體系', desc: '深圳工廠通過國際質量管理體系認證, 多年印刷經驗' },
       { title: 'FSC 認證紙張', desc: '所有紙張 FSC 認證, 可持續森林採購, 歐美品牌首選' },
       { title: 'FDA 食品級油墨', desc: '大豆油墨 + 食品級油墨可選, 化妝品 / 食品 catalog 適用' },
       { title: 'DDP 完稅到門', desc: '深圳直發 DHL Express 2-4 天, 收件人零稅務負擔 (DDP 預付)' },
@@ -177,7 +177,7 @@ const T: Record<string, {
     ],
     h2_faq: '常見問題 (FAQ)',
     faqs: [
-      { q: '深圳工廠品質點樣保證？', a: '深圳工廠 16 年印刷經驗, ISO 9001:2015 認證, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },
+      { q: '深圳工廠品質點樣保證？', a: '深圳工廠多年印刷經驗, 國際認證體系, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },
       { q: 'MOQ 真係 10 本？', a: '係, 10 本起印, 採用柯式數碼混合印刷. 1000 本以上純柯式印刷, 單價更低. 樣書打樣可低至 1 本 (按成本收費).' },
       { q: '從深圳運去美國要幾耐？要交稅嗎？', a: 'DHL Express 2-4 個工作天到達美國 / 英國 / 澳洲. DDP (Delivered Duty Paid) 完稅到門, 收件人零稅務負擔, 唔需要額外付關稅或 VAT.' },
       { q: '可以先打樣確認再批量生產嗎？', a: '可以, 5 天數碼打樣 (1-3 本), 確認滿意後批量生產可全額抵扣. 樣書費用透明, 比歐美便宜 80%.' },
@@ -187,11 +187,11 @@ const T: Record<string, {
     ctaDesc: '提交尺寸 + 頁數 + 數量 → 30 秒 AI 即時報價 + 5 天打樣確認 + DHL 2-4 天全球直送',
     ctaButton: 'WhatsApp 19880851334 即時報價',
     altBanner: 'China Catalog Printing — Shenzhen Factory Direct Banner | ZprintPro',
-    altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',
+    altFactory: 'Shenzhen Certified Printing Factory Workshop | ZprintPro',
     altCatalog1: 'A4 Saddle Stitch Catalog 100pcs Glossy Art Paper | ZprintPro China Printing',
     altCatalog2: 'Square 210x210mm Lookbook Perfect Bound 50pcs Premium | ZprintPro China Catalog',
     altCatalog3: 'A5 Brochure 300pcs Bulk Wholesale | ZprintPro China Printing Factory',
-    trustBadge1: 'ISO 9001 認證',
+    trustBadge1: '國際認證體系',
     trustBadge2: 'FSC 紙張',
     trustBadge3: 'DDP 完稅',
     trustBadge4: 'DHL 2-4 天',
@@ -208,7 +208,7 @@ const T: Record<string, {
   },
   'en': {
     heroTitle: 'China Catalog Printing — Shenzhen Factory Direct, 10 MOQ, DHL 2-4 Days',
-    heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 10 MOQ, 30-second AI quote, ISO 9001 + FSC certified. Save 30-40% vs Western printers.',
+    heroSubtitle: 'Catalog / brochure / magazine / lookbook printing from our Shenzhen factory, 10 MOQ, 30-second AI quote, internationally certified + FSC certified. Save 30-40% vs Western printers.',
     ctaPrimary: 'WhatsApp 19880851334 for instant quote',
     ctaSecondary: 'Request material samples',
     h2_advantage: 'Three Hammers: 30s AI Quote / 10 MOQ / DHL 2-4 Days',
@@ -249,7 +249,7 @@ const T: Record<string, {
     ],
     h2_trust: 'Trust Hammer: Shenzhen Factory + Quality Guarantee',
     trustItems: [
-      { title: 'ISO 9001 Certified', desc: 'Shenzhen factory certified ISO 9001:2015, 16 years of printing experience, 100% QC sampling before shipment.' },
+      { title: 'Certified Factory', desc: 'Shenzhen factory internationally certified, over a decade of printing experience, 100% QC sampling before shipment.' },
       { title: 'FSC Certified Paper', desc: 'All paper FSC certified, sustainable forestry, top choice for European and US brands.' },
       { title: 'FDA Food-Grade Ink', desc: 'Soy-based ink + food-grade ink options available for cosmetics / food catalog.' },
       { title: 'DDP Duty Pre-Paid', desc: 'Shenzhen direct DHL Express 2-4 days, recipient zero tax burden (DDP pre-paid).' },
@@ -266,7 +266,7 @@ const T: Record<string, {
     ],
     h2_faq: 'Frequently Asked Questions',
     faqs: [
-      { q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has 16 years of printing experience, ISO 9001:2015 certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before each shipment, damage rate < 0.5%. Shipping video available on request.' },
+      { q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has over a decade of printing experience, internationally certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before each shipment, damage rate < 0.5%. Shipping video available on request.' },
       { q: 'Is the MOQ really 10 pcs?', a: 'Yes, 10 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },
       { q: 'How long does shipping from Shenzhen to USA take? Any duty?', a: 'DHL Express 2-4 business days to US / UK / AU. DDP (Delivered Duty Paid) means recipient pays zero tax — no separate customs or VAT charges.' },
       { q: 'Can I get a sample proof before bulk production?', a: 'Yes, 5-day digital proofing (1-3 pcs), and the sample cost is fully deductible from bulk production. Sample cost is 80% cheaper than Western printers.' },
@@ -277,11 +277,11 @@ const T: Record<string, {
     ctaDesc: 'Submit dimensions + page count + quantity → 30-second AI instant quote + 5-day sample proof + DHL 2-4 day global delivery',
     ctaButton: 'WhatsApp 19880851334 for instant quote',
     altBanner: 'China Catalog Printing — Shenzhen Factory Direct Banner | ZprintPro',
-    altFactory: 'Shenzhen Printing Factory 16 Year ISO 9001 Workshop | ZprintPro',
+    altFactory: 'Shenzhen Certified Printing Factory Workshop | ZprintPro',
     altCatalog1: 'A4 Saddle Stitch Catalog 100pcs Glossy Art Paper | ZprintPro China Printing',
     altCatalog2: 'Square 210x210mm Lookbook Perfect Bound 50pcs Premium | ZprintPro China Catalog',
     altCatalog3: 'A5 Brochure 300pcs Bulk Wholesale | ZprintPro China Printing Factory',
-    trustBadge1: 'ISO 9001',
+    trustBadge1: 'Certified Factory',
     trustBadge2: 'FSC Paper',
     trustBadge3: 'DDP Duty',
     trustBadge4: 'DHL 2-4d',
@@ -298,7 +298,7 @@ const T: Record<string, {
   },
   'ja': {
     heroTitle: '中国カタログ印刷｜深セン工場直送・10部から・DHL 2-4日',
-    heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 10部から対応, 30秒AI無料見積もり, ISO 9001 + FSC認証. 欧米印刷工場より30-40%安い.',
+    heroSubtitle: '深セン工場から直接お届けするカタログ・パンフレット・雑誌・ルックブック印刷, 10部から対応, 30秒AI無料見積もり, 国際認証 + FSC認証. 欧米印刷工場より30-40%安い.',
     ctaPrimary: 'WhatsApp 19880851334 で即時見積',
     ctaSecondary: '素材サンプル請求',
     h2_advantage: '三つの強み：30秒AI見積もり・10部から・DHL 2-4日',
@@ -339,7 +339,7 @@ const T: Record<string, {
     ],
     h2_trust: '信頼の証：深セン工場実写+品質保証',
     trustItems: [
-      { title: 'ISO 9001認証', desc: '深セン工場は ISO 9001:2015 認証, 16年の印刷経験, 出荷前 100% QC サンプリング.' },
+      { title: '国際認証', desc: '深セン工場は国際認証取得, 長年の印刷経験, 出荷前 100% QC サンプリング.' },
       { title: 'FSC認証紙', desc: '全紙FSC認証, 持続可能な森林調達, 欧米ブランド第一選択.' },
       { title: 'FDA食品グレードインク', desc: '大豆インク+食品グレードインクオプション, 化粧品/食品カタログ対応.' },
       { title: 'DDP関税込み', desc: '深セン直送DHL Express 2-4日, 受取人税負担ゼロ（DDP前払い）.' },
@@ -356,7 +356,7 @@ const T: Record<string, {
     ],
     h2_faq: 'よくある質問 (FAQ)',
     faqs: [
-      { q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は16年の印刷経験, ISO 9001:2015認証, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },
+      { q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は長年の印刷経験, 国際認証取得, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },
       { q: '本当にMOQ 10部からですか？', a: 'はい, 10部から対応, オフセット+デジタルハイブリッド印刷. 1000部以上は純粋オフセット印刷で単価さらに低下. サンプル校正は1部から（実費）対応可能.' },
       { q: '深センから米国への配送時間は？関税はかかりますか？', a: 'DHL Express 2-4営業日で米国/英国/オーストラリアへ. DDP（Delivered Duty Paid）関税込みで受取人税負担ゼロ, 別途関税やVATの支払い不要.' },
       { q: '量産前にサンプル校正は可能ですか？', a: 'はい, 5日間デジタル校正（1-3部）, サンプル費用は量産費から全額控除可能. サンプル費用は欧米より80%安い.' },
@@ -367,11 +367,11 @@ const T: Record<string, {
     ctaDesc: 'サイズ+ページ数+数量を送信 → 30秒AI即時見積もり + 5日サンプル校正 + DHL 2-4日全世界直送',
     ctaButton: 'WhatsApp 19880851334 で即時見積',
     altBanner: '中国カタログ印刷 — 深セン工場直送バナー | ZprintPro',
-    altFactory: '深セン印刷工場16年ISO 9001ワークショップ | ZprintPro',
+    altFactory: '深セン印刷工場認証ワークショップ | ZprintPro',
     altCatalog1: 'A4中綴じカタログ100部光沢アート紙 | ZprintPro中国印刷',
     altCatalog2: '正方形210x210mmルックブック無線綴じ50部プレミアム | ZprintPro中国カタログ',
     altCatalog3: 'A5パンフレット300部大量卸売 | ZprintPro中国印刷工場',
-    trustBadge1: 'ISO 9001',
+    trustBadge1: 'Certified Factory',
     trustBadge2: 'FSC紙',
     trustBadge3: 'DDP関税込み',
     trustBadge4: 'DHL 2-4日',

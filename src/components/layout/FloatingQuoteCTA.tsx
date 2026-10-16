@@ -36,7 +36,7 @@ const TEXTS = {
     success: '✓ Opening your email client — please click Send to deliver.',
     errorEmpty: 'Please fill in your name and email.',
     altContactLabel: 'Or chat with us on WhatsApp:',
-    trustLine: 'ISO 9001 · FSC Certified · DHL 2-4 days to US/UK/AU',
+    trustLine: 'Quality Certified · FSC Certified · DHL 2-4 days to US/UK/AU',
     emailBtn: 'Email Quote',
   },
   'ja': {
@@ -51,14 +51,14 @@ const TEXTS = {
     success: '✓ メールクライアントが開きました — 送信ボタンを押してください。',
     errorEmpty: 'お名前とメールアドレスをご入力ください。',
     altContactLabel: 'または WhatsApp で直接お問合せ:',
-    trustLine: 'ISO 9001 · FSC認証 · DHL 2-4日で日本全国',
+    trustLine: '国際認証 · FSC認証 · DHL 2-4日で日本全国',
     emailBtn: 'メールで見積もり',
   },
   'zh-hk': {
     btnLabel: 'WhatsApp 立即查詢',
     microCopy: '2 小時內回覆 · 全港順豐本地倉',
     whatsappMsg: '你好！我想查詢印刷服務：',
-    trustLine: 'ISO 9001 · FSC 認證 · 順豐本地倉 1 日到貨',
+    trustLine: '國際認證體系 · FSC 認證 · 順豐本地倉 1 日到貨',
     emailBtn: '電郵查詢',
   },
 };

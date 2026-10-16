@@ -67,7 +67,7 @@ function renderTitle(title: string) {
 
 const BADGES: Record<Locale, Badge[]> = {
   en: [
-    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 Certified', subtitle: 'Global quality standard' },
+    { icon: 'award', color: 'blue', title: 'Quality Certified', subtitle: 'International quality standard' },
     { icon: 'building', color: 'orange', title: '15+ Years in Business', subtitle: 'Since 2012, 5000+ orders delivered' },
     { icon: 'globe', color: 'green', title: 'Ships to 100+ Countries', subtitle: 'DHL Express · FedEx · USPS' },
     { icon: 'truck', color: 'green', title: 'Free US Shipping $99+', subtitle: '5-7 day door-to-door to USA' },
@@ -77,8 +77,8 @@ const BADGES: Record<Locale, Badge[]> = {
     { icon: 'star', color: 'purple', title: 'Trusted by Global SMBs', subtitle: 'Brands from USA, UK, EU, AU, JP' },
   ],
   'zh-hk': [
-    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },
-    { icon: 'building', color: 'orange', title: '15+ 年印刷經驗', subtitle: '2012 年起, 5000+ 訂單完成' },
+    { icon: 'award', color: 'blue', title: '國際認證體系', subtitle: '國際品質管理標準' },
+    { icon: 'building', color: 'orange', title: '多年印刷經驗', subtitle: '2012 年起, 5000+ 訂單完成' },
     { icon: 'globe', color: 'green', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · 順豐' },
     { icon: 'truck', color: 'green', title: '港九新界免費速遞', subtitle: '$500+ 免費 / 順豐本地' },
     { icon: 'clock', color: 'orange', title: '4 小時免費打稿', subtitle: '人工審稿, 不限修改' },
@@ -87,8 +87,8 @@ const BADGES: Record<Locale, Badge[]> = {
     { icon: 'star', color: 'purple', title: '全球 SMB 信賴', subtitle: '美 / 英 / 歐 / 澳 / 日客戶' },
   ],
   ja: [
-    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },
-    { icon: 'building', color: 'orange', title: '15+ 年の実績', subtitle: '2012 年創業, 5000+ 注文完了' },
+    { icon: 'award', color: 'blue', title: '国際認証', subtitle: '国際品質マネジメント規格' },
+    { icon: 'building', color: 'orange', title: '長年の実績', subtitle: '2012 年創業, 5000+ 注文完了' },
     { icon: 'globe', color: 'green', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ヤマト運輸' },
     { icon: 'truck', color: 'green', title: '日本全国送料無料', subtitle: '沖縄・北海道も同料金' },
     { icon: 'clock', color: 'orange', title: '4 時間無料校正', subtitle: '人による校正, 無制限' },
@@ -105,9 +105,9 @@ const HEADING: Record<Locale, string> = {
 };
 
 const SUBHEADING: Record<Locale, string> = {
-  en: '15+ years serving global SMBs. ISO 9001:2015 certified. Real-time tracking. 100% satisfaction.',
-  'zh-hk': '15+ 年服務全球中小企 · ISO 9001:2015 認證 · 即時物流追蹤 · 100% 滿意保證',
-  ja: '15+ 年グローバル SMB 支援 · ISO 9001:2015 認証 · リアルタイム追跡 · 100% 満足保証',
+  en: 'over a decade serving global SMBs. internationally certified. Real-time tracking. 100% satisfaction.',
+  'zh-hk': '多年服務全球中小企 · 國際認證體系 · 即時物流追蹤 · 滿意保證',
+  ja: '多年グローバル SMB 支援 · 国際認証 · リアルタイム追跡 · 満足保証',
 };
 
 export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {
