@@ -47,6 +47,7 @@ hkprint58.com（鑫印吧）整站仿制本站：品类结构（包装盒/书刊
 - **线上验证**：curl UA 访问产品页 → **403 拦截 ✓**；浏览器 UA → **200 正常 ✓**（无误伤真实访客）。
 - 执行口径差异记录：entrypoint 端点对该 token 报 10405，改用 `POST /zones/{id}/rulesets` 直建成功；`scripts/cf-bot-hardening.sh` 为初版设计稿，实际参数以本节为准。
 - ⚠️ 该 token 已出现在对话记录中，建议 K3 在 CF 后台 Roll 轮换一次（My Profile → API Tokens → Roll）。
+- **✅ v2 拆分修正（2026-10-16 18:4x，K3 拍板「按建议改」+ 新 token + Zone ID）**：限速规则实测会误伤真人（打开 1 页并发拉数十张 /images/ 即触发 20/10s → Error 1015，取证截图时实锤）。新 token 执行拆分：**免费版限速规则配额 = 1 条**（API 报 "2 out of 1"），故按 K3 预批备选方案落地为**单规则 v2：表达式仅 /category/ + /product/，20 次/10s block**；**/images/ 完全移出限速**（批量爬图仍有 BFM + scraper UA 拦截 + 1812 张水印兜底）。线上双探针验证：/images/ 连发 40 次 = 40×200 零拦截（旧规则会在第 21 次拦）；/en/category/stickers/ 连发 25 次 = 恰好 20 次 200 + 第 21 次起拦，15 秒后自动解封。ruleset `810c7bc28077408faa807966cc03def6` → version 2。**新 token 已入对话记录，用完请一并 Roll**。
 
 ## 验证
 
