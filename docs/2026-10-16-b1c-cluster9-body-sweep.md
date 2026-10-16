@@ -36,6 +36,12 @@
 - 「15,000+ clients across 100+ countries」（fruit-food en body）——无源 4 位数，CRED 口径应撤除（本批 scope 未含，登记）
 - 「15+ years」en 其余形态已本批清零
 
-## 六、B1c 队列终态
+## 六、products.ts 层 + 簇 9.5 登记面（补录）
+
+- **products.ts 层已清**：`ISO 9001:2015 certified quality management system` ×9（全部 descriptionEn）→ internationally certified；「10 張起印」×19 与「100 MOQ」×8 逐块审计**全部落在 minQ=10/100 真值块 → KEEP 零改动**（products.ts 层无假起印）。
+- **新发现 docket**：SGS ×3（roll-stickers / food-boxes / fruit-food products.ts 块）；zh description 简体「适配行业」残留（gift-bags/a4-flyers 等，B1 期既病，下一批随 §13.16.1 繁体自检清）。
+- **簇 9.5 全站 CRED 残余面**（本批扫出，SSoT = `.hermes/logs/b1c-cluster95-surface-2026-10-16.json`）：**ISO 9001 ×568 / Heidelberg+海德堡 ×354（含全站 HowTo schema "Heidelberg 四色印刷機在 ISO 9001 認證的深圳工廠"）/ SGS ×91+12 / 15+ 年 ×8 + 15+ years ×9 / 15,000+ clients ×2 ≈ 1,030+ 处**，分布 about / catalog-printing-china / blog-data 三语 JSON / category-seo-content / conversion-blocks / products-content / buying-guides / tsx 组件。**下一会话首批**，逐文件计数断言 + CSV 覆盖域守规 + 语言区分同法。
+
+## 七、B1c 队列终态
 
 **簇 1-9 全部 DONE（去指纹 9/9 主簇 + 全站 body 清扫）**。剩余登记项：greeting-cards ×6 FAQ（挂 §0.0 裁决）、wedding 2 SKU 无 faqSchema、簇 9 docket（SGS/15000+）、products.ts 价格 SSoT 5 项（K3 裁定）。
