@@ -4,6 +4,16 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
+> **当前状态**: 🔓 **已释放** — 2026-10-16 13:5x AutoClaw 会话（v28_5 图库换图 D0 预检，K3 指令「按 2026-10-16-image-swap-risk-and-one-week-plan.md 执行」）
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（v28_5 换图车道 D0） |
+> | **意图** | D0 三项：① 存活白名单∩映射（91 目录→83 存活 slug；退役排除 9 + Batch B 已部署建议排除 2）② 部署脚本双件落库（manifest builder + deploy/probe/indexnow，10 波 dry-run 全绿）③ EXIF alt 声明普查登记（ISO9001/MOQ100 ×91/91，不采纳进渲染层）+ GSC 三单站口径分层（计划 top10 10/10 复现）+ 逐词基线提取（zh553/en525/ja166） |
+> | **写入范围** | `scripts/v28_5-build-manifest.mjs`（新）· `scripts/v28_5-image-deploy.mjs`（新）· `docs/2026-10-16-v28_5-image-swap-d0-precheck.md`（新）· `SESSION_LOCK.md` · `.hermes/geo/v28_5-*.json` + `_d0_*` 分析脚本（不入库）；**零 src/ 写入** |
+> | **双条件核验** | ① 开工时 src/ 无 MM 无 staged 删除（11:41 实测 0）；执行期间并发簇 8 会话（11:4x-12:1x）写 products.ts/CSV/sku-seo-data + 后续会话 Footer/copy-fingerprints——本会话全程只读 src/，真部署由脚本内置 git 闸机器判定 ② 本会话无 src 写入，静默窗不适用 |
+> | **释放结果** | ✅ D0 三项完成：91 目录→80 可部署（10 波：CL6/W1·5/W2·33/W3·4/W4·1/W5·2/W6·6+12门控/W7·4/C107·1/BC·6）/9 退役/2 建议排除；manifest 可确定性重建；偏差 #1-#3 与 K1-K7 拍板项 SSoT = `docs/2026-10-16-v28_5-image-swap-d0-precheck.md`。下一棒：10/17 W1（5 SKU）+ CL（6 SKU 随簇 7）波次执行。 |
+
 > **当前状态**: 🔓 **已释放** — 2026-10-16 05:3x AutoClaw 会话（v2 方案 10/17-19 梯次提前执行）
 >
 > | 项 | 值 |
