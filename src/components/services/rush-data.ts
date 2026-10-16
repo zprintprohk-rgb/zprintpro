@@ -19,7 +19,7 @@ export const RUSH = {
     { title: "貼紙急單", desc: "防水 / PVC / 透明貼紙，任意形狀模切，包裝標籤趕工首選。", icon: "sticker" },
   ],
   metrics: [
-    { num: "15 年", label: "本地印刷經驗" },
+    { num: "多年", label: "本地印刷經驗" },
     { num: "200+", label: "款產品即日可印" },
     { num: "18:00", label: "每日截單・通宵排產" },
   ],

@@ -37,23 +37,23 @@ export async function generateMetadata({
 
 const translations = {
   'zh-hk': {
-    metaTitle: '關於智印港 | 香港印刷公司推薦 | 深圳工廠直送 · 15年經驗',
+    metaTitle: '關於智印港 | 香港印刷公司推薦 | 深圳工廠直送 · 多年經驗',
     metaDesc: '智印港 ZprintPro 扎根香港多年，專注為本地及全球企業提供高品質印刷服務。國際認證體系、FSC環保認證，累計服務全球客戶。',
     h1: '關於智印港 ZprintPro',
-    subtitle: '扎根香港超過15年，專注高品質印刷服務',
+    subtitle: '扎根香港超過多年，專注高品質印刷服務',
     storyTitle: '品牌故事',
     story: `智印港 為香港領先的綜合性印刷服務提供商，專注於為企業、教育機構及個人提供高品質、定制化的印刷解決方案。我們憑藉先進工藝、多元材質與智能技術，覆蓋商務、宣傳、包裝、教育等全場景需求，助力客戶高效傳遞品牌價值，提升市場競爭力。
 
 以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,
     advantageTitle: '核心優勢',
     advantages: [
-      { title: '品質保證', desc: '國際認證體系 + FSC 認證 · 進口四色柯式 + 數碼印刷 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },
+      { title: '品質保證', desc: '國際認證體系 + FSC 認證 · 進口四色柯式 + 數碼印刷 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 全球企業客戶信賴。' },
       { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/) · [查看服務承諾 SLA 適用條款](/zh-hk/faq/)' },
       { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
     ],
     teamTitle: '專業團隊',
     teams: [
-      { title: '創始人', desc: '擁有15年印刷行業經驗，曾服務於國際頂級印刷集團，精通色彩管理與印前工藝。' },
+      { title: '創始人', desc: '擁有多年印刷行業經驗，曾服務於大型印刷集團，精通色彩管理與印前工藝。' },
       { title: '印前工程師', desc: '平均8年經驗，專注於AI／PDF文件檢查、刀模設計、ICC色彩配置與數碼打樣。' },
       { title: '客戶服務團隊', desc: '流利粵 / 普 / 英 / 日 四語 · 2 小時內回覆承諾 · 專屬 WhatsApp 支援 +86 198 8085 1334 · 從報價到售後全程跟進 · [聯絡我們](/contact/)' },
     ],
@@ -118,7 +118,7 @@ const translations = {
 
     testimonialTitle: '客戶評價',
 
-    testimonialSubtitle: '我們服務的 12 大行業 · 累計 1,000+ 企業客戶信賴',
+    testimonialSubtitle: '我們服務的 多個行業 · 累計 全球企業客戶信賴',
 
     industries: [
       { iconKey: 'fnb', name: '餐飲外賣', desc: '餐廳及外賣平台 · [菜單印刷](/category/flyers/) · [外賣標籤](/category/labels/) · [打包盒](/category/packaging/)' },
@@ -194,22 +194,22 @@ const translations = {
 
   en: {
     metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
-    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. internationally certified + FSC certified, over a decade experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
+    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. internationally certified + FSC certified, over a decade experience, global clients. 72-hour worldwide delivery from our Hong Kong factory.',
     h1: 'About ZprintPro',
     subtitle: 'Premium printing service shipping to 50+ countries from Hong Kong since 2012',
     storyTitle: 'Our Story',
-    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by internationally certified + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
+    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by global businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by internationally certified + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
 
 Our vision is "Smarter Printing, Brighter Future." Through intelligent production workflows, fully personalized customization, and eco-friendly materials, we help every brand stand out with distinctive, high-quality print that lifts recognition and competitiveness. Every order — whether 100 stickers for a DTC startup, 5,000 flyers for a community event, or 50,000 retail-ready packaging units — gets the same dedication to color accuracy, fast turnaround, and worldwide delivery to your door.`,
     advantageTitle: 'Core Advantages',
     advantages: [
-      { title: 'Quality Assurance', desc: 'internationally certified + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by 1,000+ global brands.' },
-      { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/) · [View SLA Terms](/en/faq/)' },
+      { title: 'Quality Assurance', desc: 'internationally certified + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by global global brands.' },
+      { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. global order fulfilment. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/) · [View SLA Terms](/en/faq/)' },
       { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
     teamTitle: 'Our Team',
     teams: [
-      { title: 'Founder', desc: '15 years of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
+      { title: 'Founder', desc: 'over a decade of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
       { title: 'Prepress Engineers', desc: 'Average 8 years experience, specializing in AI/PDF file checking, die-cut design, ICC color profiling, and digital proofing.' },
       { title: 'Customer Service', desc: 'Fluent English / Mandarin / Cantonese / Japanese, 2-hour response. Dedicated WhatsApp support at +86 198 8085 1334. [Contact us](/contact/) · [WhatsApp 📲](https://wa.me/8619880851334)' },
     ],
@@ -269,7 +269,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     testimonialTitle: 'Client Testimonials',
 
-    testimonialSubtitle: '12 industry segments served · 1,000+ business clients trusted us',
+    testimonialSubtitle: '12 industry segments served · global business clients trusted us',
 
     industries: [
       { iconKey: 'fnb', name: 'Food & Beverage', desc: 'Restaurants & delivery platforms · [Menus](/category/flyers/) · [Takeout labels](/category/labels/) · [Packaging](/category/packaging/)' },
@@ -344,14 +344,14 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
   },
 
   ja: {
-    metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',
+    metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 多年の実績',
     metaDesc: '智印港 ZprintProは香港で長年の実績を持ち、高品質な印刷サービスを提供しています。国際認証、FSC認証、幅広いお客様にサービスを提供。',
     h1: 'ZprintProについて',
-    subtitle: '香港で15年以上、高品質印刷に専念',
+    subtitle: '香港で多年以上、高品質印刷に専念',
     storyTitle: 'ブランドストーリー',
     story: `智印港 は、香港を起点にグローバル展開する総合印刷サービスプロバイダーです。企業、教育機関、クリエイターの皆様に、高品質でカスタマイズ可能な印刷ソリューションを提供しており、ビジネス、プロモーション、パッケージ、教育まで幅広いシーンをカバー。先進的な工芸、多様な素材、智能的なテクノロジーを活かし、お客様のブランド価値伝達と市場競争力向上を支援しています。
 
-「智印未来」（より賢いな印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
+「智印未来」（より賢いな印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から多年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
       { title: '品質保証', desc: '国際認証 + FSC 認証 · 輸入四色オフセット + デジタル印刷 + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
@@ -360,7 +360,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     ],
     teamTitle: '専門チーム',
     teams: [
-      { title: '創業者', desc: '印刷業界15年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },
+      { title: '創業者', desc: '印刷業界多年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },
       { title: '印前エンジニア', desc: '平均8年の経験。AI／PDFファイルチェック、型抜き設計、ICCカラープロファイリング、デジタル校正を専門としています。' },
       { title: 'カスタマーサービス', desc: '粵 / 普 / 英 / 日 四言語対応 · 2 時間以内返信 · WhatsApp サポート +86 198 8085 1334 · [お問合せ](/contact/) · [WhatsApp 📲](https://wa.me/8619880851334)' },
     ],
@@ -942,7 +942,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                 </div>
               ))}
             </div>
-            <p className="text-center text-gray-400 text-xs mt-8">累計 1,000+ 企業客戶 · 50+ 國家 · 多年印刷經驗</p>
+            <p className="text-center text-gray-400 text-xs mt-8">累計 全球企業客戶 · 50+ 國家 · 多年印刷經驗</p>
           </div>
         </section>
         {/* 2026-08-19 P0-A: 公司資質塊 (证书编号 + 认证机构 + 有效期, K3 拍板新增) */}

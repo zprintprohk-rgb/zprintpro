@@ -62,7 +62,7 @@ const I18N: Record<Locale, { title: string; caption: string; dimensions: string;
     best: '最佳用途',
     paragraph: {
       title: '如何選擇適合的印刷材質？',
-      p1: '根據 ZPrintPro 15年印刷經驗，選擇材質需要考慮使用環境、預算和環保需求。',
+      p1: '根據 ZPrintPro 多年印刷經驗，選擇材質需要考慮使用環境、預算和環保需求。',
       p2: '如果您需要戶外長期使用的標籤，PVC防水貼紙是最佳選擇，能承受日曬雨淋1-2年。',
       p3: '對於食品包裝或化妝品標籤，PP合成紙兼顧防水與成本，是性價比最高的選擇。',
     },
@@ -77,7 +77,7 @@ const I18N: Record<Locale, { title: string; caption: string; dimensions: string;
     best: 'Best Use',
     paragraph: {
       title: 'How to choose the right printing material?',
-      p1: 'Based on ZPrintPro\u2019s 15 years of printing experience, material selection depends on the usage environment, budget, and eco requirements.',
+      p1: 'Based on ZPrintPro\u2019s over a decade of printing experience, material selection depends on the usage environment, budget, and eco requirements.',
       p2: 'For long-term outdoor use, PVC waterproof stickers are the best choice, withstanding sun and rain for 1-2 years.',
       p3: 'For food packaging or cosmetic labels, PP synthetic paper balances water resistance and cost — the best value choice.',
     },
@@ -92,7 +92,7 @@ const I18N: Record<Locale, { title: string; caption: string; dimensions: string;
     best: '最適な用途',
     paragraph: {
       title: '印刷素材の選び方',
-      p1: 'ZPrintPro の15年の印刷経験に基づき、素材は使用環境、予算、環境要件で選びます。',
+      p1: 'ZPrintPro の多年の印刷経験に基づき、素材は使用環境、予算、環境要件で選びます。',
       p2: '長期屋外使用には PVC防水ステッカーが最適で、日光と雨に1-2年耐えます。',
       p3: '食品包装や化粧品ラベルには PP合成紙が防水とコストのバランスに優れています。',
     },

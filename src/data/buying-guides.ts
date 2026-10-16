@@ -138,7 +138,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p>仲想知更多選購細節？由零開始睇<a href="/zh-hk/blog/sticker-guide/">貼紙印刷完全指南</a>。</p>
 <h2>常見問題</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：貼紙印刷幾錢？</strong><br/>A：銅版紙約 HK$0.5-1.5/張起，防水合成紙 HK$1.2-3/張起，防水啞光 HK$0.45/張起；數量愈多單價愈平，實際以報價為準。</p><p><strong>Q：最少訂幾多張？</strong><br/>A：貼紙 50 個起印；標準 100 張起，燙金／防偽等特殊工藝 500 張起。</p><p><strong>Q：防水貼紙真係防水嗎？</strong><br/>A：係，防水合成紙可承受短時間浸泡；長期浸泡或戶外長期使用需額外覆膜。</p><p><strong>Q：可移貼紙同永久貼紙點揀？</strong><br/>A：可移貼紙撕走不殘膠，適合櫥窗、活動臨時貼；永久貼紙黏力強，適合長期標識同產品標籤。</p><p><strong>Q：交貨時間幾耐？</strong><br/>A：標準 3-5 個工作日，急件即日可取。</p><p><strong>Q：需要咩檔案格式？</strong><br/>A：AI／PDF／EPS 矢量檔 + 300dpi + CMYK，文字轉曲線。</p></div>
-<p>本文由<b>智印港印刷工程團隊</b>撰寫，團隊成員具 15 年膠印（柯式）印刷經驗，負責全站貼紙、包裝及傳單規格把關；文中數據以智印港現行報價與生產實務為準。最後更新：2026-09-16。</p>
+<p>本文由<b>智印港印刷工程團隊</b>撰寫，團隊成員具 多年膠印（柯式）印刷經驗，負責全站貼紙、包裝及傳單規格把關；文中數據以智印港現行報價與生產實務為準。最後更新：2026-09-16。</p>
 <p>無論您需要哪種貼紙，立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取專業建議！</p>`, en: `<p>Sticker printing is one of the highest-ROI brand investments. Whether product labels, promo giveaways, or personalized decoration, ZprintPro delivers professional solutions. This article systematically breaks down sticker selection across 6 dimensions: materials, finishes, die-cut shapes, applications, printing processes, and decision framework.</p>
 <p>Need an instant quote? <a href="https://wa.me/8619880851334" target="_blank">Contact ZprintPro via WhatsApp</a> - 30-second AI quote, confirm today and we'll schedule production today.</p>
 <h2>How much does sticker printing cost?</h2>
@@ -170,7 +170,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p>New to sticker printing? Read the <a href="/en/blog/sticker-guide/">complete sticker printing guide</a> first.</p>
 <h2>FAQ</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How much does sticker printing cost?</strong><br/>A：Art paper from US$0.06/pc, waterproof synthetic US$0.15-0.40/pc; volume discounts apply - final quote is confirmation-based.</p><p><strong>Q：What is the minimum order?</strong><br/>A：Stickers start at 50 pcs; standard orders 100 pcs, specialty finishes (foil/security) 500 pcs.</p><p><strong>Q：Are waterproof stickers really waterproof?</strong><br/>A：Yes - waterproof synthetic stock withstands brief submersion; long-term immersion or outdoor exposure needs extra lamination.</p><p><strong>Q：Removable or permanent adhesive?</strong><br/>A：Removable stickers peel off residue-free - ideal for windows and event signage; permanent adhesive suits long-term labeling and product labels.</p><p><strong>Q：How long does production take?</strong><br/>A：Standard 3-5 working days; rush same-day available.</p><p><strong>Q：What file format do you need?</strong><br/>A：AI / PDF / EPS vector + 300dpi + CMYK, outlined fonts.</p></div>
-<p>Written by the <b>ZprintPro Print Engineering Team</b> - 15 years of offset press experience, responsible for material and spec checks across stickers, packaging and flyers; figures reflect ZprintPro's current pricing and production practice. Last updated: 2026-09-16.</p>
+<p>Written by the <b>ZprintPro Print Engineering Team</b> - over a decade of offset press experience, responsible for material and spec checks across stickers, packaging and flyers; figures reflect ZprintPro's current pricing and production practice. Last updated: 2026-09-16.</p>
 <p>For any sticker need, contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for professional advice!</p>`, 'ja': `<p>ステッカー印刷はブランド投資の中でも ROI が高い分野です。商品ラベル、プロモーション、個性を問わず、ZprintProはプロフェッショナルなソリューションをご提供。本記事は材質、表面加工、ダイカット形状、応用、印刷工程、選定意思決定の 6 つの側面からステッカー選定を体系的に整理します。</p>
 <p>すぐに見積りが欲しい方は <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> — 30 秒 AI 見積もり、本日中に確認いただければ本日中に手配します。</p>
 <h2>ステッカー印刷はいくら？</h2>
@@ -202,7 +202,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p>基本から学びたい方は<a href="/ja/blog/sticker-guide/">ステッカー印刷完全ガイド</a>からどうぞ。</p>
 <h2>よくある質問</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：ステッカー印刷はいくら？</strong><br/>A：アート紙 HK$0.5-1.5/枚〜、防水合成紙 HK$1.2-3/枚〜、防水マット HK$0.45/枚〜。数量が多いほど単価は下がり、最終はお見積りで確定します。</p><p><strong>Q：最小注文数は？</strong><br/>A：ステッカーは50枚から。標準は100枚から、箔押し・偽造防止などの特殊加工は500枚から。</p><p><strong>Q：防水ステッカーは本当に防水？</strong><br/>A：はい。防水合成紙は短時間の浸水に耐えます。長期浸水や屋外長期使用には追加ラミネートが必要です。</p><p><strong>Q：再剥離と永久接着はどっち？</strong><br/>A：再剥離ステッカーは糊残りせず剥がせて、窓やイベントの仮貼りに最適。永久接着は長期表示・製品ラベルに向きます。</p><p><strong>Q：納期は？</strong><br/>A：標準3-5営業日、特急当日可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS ベクター + 300dpi + CMYK、文字アウトライン化。</p></div>
-<p>本記事は<b>ZprintPro印刷工程チーム</b>が執筆。チームは15年のオフセット印刷経験を持ち、ステッカー・パッケージ・チラシの材質・仕様チェックを担当。掲載データはZprintProの現行価格・生産実務に基づきます。最終更新：2026-09-16。</p>
+<p>本記事は<b>ZprintPro印刷工程チーム</b>が執筆。チームは多年のオフセット印刷経験を持ち、ステッカー・パッケージ・チラシの材質・仕様チェックを担当。掲載データはZprintProの現行価格・生産実務に基づきます。最終更新：2026-09-16。</p>
 <p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 専門アドバイス！</p>`, },
   },
   // ========== FLYERS ==========
@@ -263,7 +263,7 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮，色彩更鮮豔，適合產品推廣</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，適合高檔品牌、餐廳菜單</li><li><strong>UV 局部上光</strong>：突出 Logo 或圖片</li><li><strong>燙金 / 燙銀</strong>：高階品牌傳單首選</li><li><strong>打孔 / 摺線</strong>：便於撕取、折疊</li></ul>
 <h2>常見問題 FAQ</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單印刷幾錢一張？</strong><br/>A：A5 單面 128g 銅版紙 100 張起印、HK$0.25 起/張；A4 單面 HK$0.35 起/張；A3 約 HK$0.63 起/張。印量愈大折扣愈多，5,000 張約半價。</p><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：A4、A5、A3 點揀？</strong><br/>A：街派同優惠券揀 A5；資訊多、要留畀客慢慢睇揀 A4；櫥窗同大型活動先考慮 A3。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印港提供 100+ 款免費模板。</p></div>
-<p><strong>本文作者與品質來源：</strong>由智印港印刷工程團隊撰寫，團隊成員為 15 年膠印工程師，長期操作進口六色膠印機，服務多個行業、全球客戶；廠房通過國際認證體系與 FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印港印刷工程團隊）。文中價格來源：智印港 A4/A5 傳單產品頁價格口徑（2026-09 更新）。</p>
+<p><strong>本文作者與品質來源：</strong>由智印港印刷工程團隊撰寫，團隊成員為 多年膠印工程師，長期操作進口六色膠印機，服務多個行業、全球客戶；廠房通過國際認證體系與 FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印港印刷工程團隊）。文中價格來源：智印港 A4/A5 傳單產品頁價格口徑（2026-09 更新）。</p>
 <p>想了解更多傳單印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
   en: `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
 <p class="my-4">👉 Need the best price right now? <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> — tell us your size, paper, and quantity for an instant quote.</p>
@@ -408,7 +408,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="text-sm text-[#444444] leading-relaxed">智印港 為香港、澳門、台灣及全球華人圈客戶提供 30 秒 AI 即時印刷報價，順豐本地，DHL 全球 2-4 天配送。國際質量管理體系，FSC 認證紙張供應。專業包裝盒訂製 100 個起，化妝品、珠寶、食品、電子產品全場景覆蓋。</p>
 <p class="mb-0"><strong>資料來源：</strong>智印港 2026 內部報價資料庫（products.ts 2026-09 價目）；ISO 12647-2:2013 色彩管理標準；FSC 2025 永續印刷報告。</p>
 </div>
-<p class="text-sm text-[#444444] mt-4"><strong>本文作者：</strong>智印港印刷工程團隊 — 15 年膠印工程師，專注包裝盒／彩盒／精裝盒工藝。<strong>最後更新：2026-09-16。</strong></p>
+<p class="text-sm text-[#444444] mt-4"><strong>本文作者：</strong>智印港印刷工程團隊 — 多年膠印工程師，專注包裝盒／彩盒／精裝盒工藝。<strong>最後更新：2026-09-16。</strong></p>
 `,
       'en': `<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>Key takeaway:</strong> Custom packaging boxes print from <strong>100 pcs</strong>, with rigid boxes from <strong>US$1.84/pc</strong>, folding boxes US$0.51/pc, and white-card boxes from US$0.10-0.60/pc, delivered in 3-7 days. This guide covers 6 box styles, material × finish combos, real 2026 pricing tiers, and a buying checklist to avoid hidden costs. Full <a href="/en/category/packaging/" class="text-[#1A56DB] underline">packaging printing</a> services are on the packaging category page.</p>
 <p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>Contact ZprintPro via WhatsApp</strong></a> for a 30-second AI instant quote, or jump to the <a href="/en/product/rigid-boxes/" class="text-[#1A56DB] underline">rigid box product page</a>.</p>
@@ -453,7 +453,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="text-sm text-[#444444] leading-relaxed">ZprintPro serves US, UK, AU, and global clients with 30-second AI instant print quotes, DHL global 2-4 day delivery. International quality management, FSC-certified paper supply. Custom packaging from 100 pcs covering cosmetics, jewelry, food, and electronics.</p>
 <p class="mb-0"><strong>Sources:</strong> ZprintPro 2026 internal pricing database (products.ts 2026-09 pricing); ISO 12647-2:2013 color management standard; FSC 2025 sustainable printing report.</p>
 </div>
-<p class="text-sm text-[#444444] mt-4"><strong>About the author:</strong> ZprintPro Print Engineering Team — 15 years of offset press engineering specializing in packaging, cartons, and rigid boxes. <strong>Last updated: 2026-09-16.</strong></p>
+<p class="text-sm text-[#444444] mt-4"><strong>About the author:</strong> ZprintPro Print Engineering Team — over a decade of offset press engineering specializing in packaging, cartons, and rigid boxes. <strong>Last updated: 2026-09-16.</strong></p>
 `,
       'ja': `<p class="text-base text-[#1A56DB] font-medium mb-4"><strong>要点：</strong>パッケージボックスカスタムは 100 個から対応、化粧箱（リジッド）¥240/個〜、折り箱 ¥69/個〜、白カード箱 ¥10-60/個〜、3-7 日納品。本記事は 6 つの箱型、材質×加工の組み合わせ、2026 実価格ステップ、選定時の失敗回避チェックリストを解説。パッケージ印刷全般は<a href="/ja/category/packaging/" class="text-[#1A56DB] underline">パッケージカテゴリ</a>へ。</p>
 <p class="my-4">👉 <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a> — 30 秒 AI リアルタイム見積もり。化粧箱は<a href="/ja/product/rigid-boxes/" class="text-[#1A56DB] underline">化粧箱製品ページ</a>から。</p>
@@ -498,7 +498,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p class="text-sm text-[#444444] leading-relaxed">ZprintPro は米国・英国・豪州・グローバル顧客に 30 秒 AI リアルタイム印刷見積もり、DHL 国際 2-4 日配送を提供。国際品質マネジメント、FSC 認証用紙供給。パッケージカスタム 100 個から、化粧品・宝石・食品・電子機器の全シーンをカバー。</p>
 <p class="mb-0"><strong>出典：</strong>ZprintPro 2026 内部見積もりデータベース（products.ts 2026-09 価格）；ISO 12647-2:2013 カラー管理標準；FSC 2025 持続可能印刷レポート。</p>
 </div>
-<p class="text-sm text-[#444444] mt-4"><strong>本文執筆：</strong>ZprintPro 印刷エンジニアリングチーム — 15 年のオフセット印刷エンジニアがパッケージ・カートン・化粧箱の工程を担当。<strong>最終更新：2026-09-16。</strong></p>
+<p class="text-sm text-[#444444] mt-4"><strong>本文執筆：</strong>ZprintPro 印刷エンジニアリングチーム — 多年のオフセット印刷エンジニアがパッケージ・カートン・化粧箱の工程を担当。<strong>最終更新：2026-09-16。</strong></p>
 `,
   }  },
   // ========== POSTERS ==========
@@ -760,7 +760,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p>更詳細嘅頁數計算同出血設定，可參閱<a href="/zh-hk/blog/saddle-stitch-booklet-printing-guide/">騎馬釘小冊子印刷指南</a>嘅設計篇。</p>
 <h2>常見問題</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小批量 50 本可以印嗎？</strong><br/>A：可以，數碼印刷可少量。但每本單價較高。</p><p><strong>Q：騎馬釘 vs 膠裝？</strong><br/>A：騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。</p><p><strong>Q：精裝書最貴多少？</strong><br/>A：視乎尺寸 + 工藝，HK$200-500/本起。</p><p><strong>Q：書刊印刷交期要幾耐？</strong><br/>A：一般 3-5 個工作天出貨，DHL 全球配送 2-4 天；批量或精裝另議。</p><p><strong>Q：書刊印刷流程係點？</strong><br/>A：上傳 PDF → 30 秒 AI 即時報價 → 免費排版確認 → 印刷裝訂 → QC 出貨；詳見<a href="/zh-hk/blog/catalog-printing-guide/">畫冊印刷選購指南</a>。</p></div>
-<p>本文由<b>智印港印刷工程團隊</b>編寫（15 年膠印工程師），最後更新 2026-09-16。</p>
+<p>本文由<b>智印港印刷工程團隊</b>編寫（多年膠印工程師），最後更新 2026-09-16。</p>
 <p>想了解更多書籍印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取報價！</p>`,
       'en': `<p>Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.</p>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>How much does book printing cost?</strong> Saddle-stitch booklets run US$1.84-7.36/copy at 500 copies; small 50-100 copy runs cost US$10-20/copy; 2,000+ copies drop to US$2-4/copy.</p></div>
@@ -830,7 +830,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p>ページ数計算とブリード設定の詳細は<a href="/ja/blog/saddle-stitch-booklet-printing-guide/">中綴じ冊子印刷完全ガイド</a>のデザイン編をご覧ください。</p>
 <h2>よくある質問</h2>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小ロット 50 部でも頼めますか？</strong><br/>A：可能。デジタル印刷が小ロット対応。ただし単価高め。</p><p><strong>Q：中綴じ vs 無線綴じ？</strong><br/>A：中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。</p><p><strong>Q：上製本の最高額は？</strong><br/>A：サイズ + 加工次第、HK$200-500/部 から。</p><p><strong>Q：納期はどのくらい？</strong><br/>A：校了後 3-5 営業日で出荷、DHL グローバル 2-4 日配送。</p><p><strong>Q：書籍印刷の流れは？</strong><br/>A：PDF アップロード → 30 秒 AI 即時見積 → 無料レイアウト確認 → 印刷製本 → QC 出荷。詳細は<a href="/ja/blog/catalog-printing-guide/">カタログ・写真集印刷ガイド</a>を参照。</p></div>
-<p>本記事は<b>ZprintPro印刷工程チーム</b>（15 年オフセット印刷エンジニア）が執筆、最終更新：2026年9月16日。</p>
+<p>本記事は<b>ZprintPro印刷工程チーム</b>（多年オフセット印刷エンジニア）が執筆、最終更新：2026年9月16日。</p>
 <p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8619880851334" target="_blank">WhatsApp でZprintProに連絡</a> 見積もり！</p>`,
   },
   },

@@ -1631,8 +1631,8 @@ const lpStickerMaterialPvcVinylRemovable: BlogPostMeta = {
     ja: '防水ステッカー材質ガイド: PVC / 透明 / 箔押し | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '防水貼紙材質點揀? 4 大材質對比 (PVC 防水 3 年耐候 / 透明防水 90% 透光 / 可移不殘膠 / 燙金工藝) + 100 張起印 HK$0.35/張 + 5 個行業場景 (餐飲外賣 / 物流倉儲 / 戶外設備 / 化妝品 / 活動門票) + 4 條 FAQ + 5 條內部連結 + 12 大行業底色, 30 秒 WhatsApp 報價.',
-    en: 'Which waterproof sticker material? 4 stocks compared (PVC 3-yr outdoor / clear 90% transparency / removable no residue / foil finishing) + 100 MOQ from $0.045 USD/pc + 5 use cases (food delivery / logistics / outdoor gear / cosmetics / event tickets) + 4 FAQs + 5 internal links + 12 industries, 30s WhatsApp quote.',
+    'zh-hk': '防水貼紙材質點揀? 4 大材質對比 (PVC 防水 3 年耐候 / 透明防水 90% 透光 / 可移不殘膠 / 燙金工藝) + 100 張起印 HK$0.35/張 + 5 個行業場景 (餐飲外賣 / 物流倉儲 / 戶外設備 / 化妝品 / 活動門票) + 4 條 FAQ + 5 條內部連結 + 多個行業底色, 30 秒 WhatsApp 報價.',
+    en: 'Which waterproof sticker material? 4 stocks compared (PVC 3-yr outdoor / clear 90% transparency / removable no residue / foil finishing) + 100 MOQ from $0.045 USD/pc + 5 use cases (food delivery / logistics / outdoor gear / cosmetics / event tickets) + 4 FAQs + 5 internal links + key industries, 30s WhatsApp quote.',
     ja: '防水ステッカー材質選び方? 4 大材質比較 (PVC 3 年耐候 / 透明 90% 透光 / 再剥離糊残らず / 箔押し加工) + 100 枚〜 \$0.045/枚〜 + 5 場面 (飲食デリバリー / 物流倉庫 / アウトドア / コスメ / イベントチケット) + 4 FAQ + 5 内部リンク + 12 業界対応, 30 秒 WhatsApp 見積.',
   },
   targetKeywords: {
@@ -1666,7 +1666,7 @@ const lpInstantPrinting30sAiQuoteFlow: BlogPostMeta = {
 };
 
 // 2026-09-03 K3 拍板 v3 long-form-blog-3w2r 周四 10:00 第 2 篇: 燙金印刷 3 大應用攻略 (W5 #3 B7 派发, M4 燙金 4 词一次攻, 燙金貼紙 pos 2.3 衝首頁 TOP3)
-// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 12 大行業 + R5 9-12 月旺季
+// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 多個行業 + R5 9-12 月旺季
 // 4 词攻堅: 燙金貼紙 pos 2.3 4 imps 衝首頁 + 燙金印刷 root + 燙金喜帖 Q4 旺季 + 燙金卡片 R5 聖誕新年
 const lpFoilStamping3Applications2026: BlogPostMeta = {
   slug: 'foil-stamping-3-applications-2026',
@@ -1772,9 +1772,9 @@ const printSpecificationsReferenceGuide2026: BlogPostMeta = {
     ja: '印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': 'A1-A6 尺寸 + CMYK vs RGB vs Pantone 色彩 + 6 大印刷模式 (數碼/柯式/絲網/燙金/UV/擊凸) 一文睇晒。智印港 15 年膠印工程師張志明編寫, FDA 21 CFR + EU REACH + FSC 認證, 香港工廠直印, 30 秒 AI 報價。',
+    'zh-hk': 'A1-A6 尺寸 + CMYK vs RGB vs Pantone 色彩 + 6 大印刷模式 (數碼/柯式/絲網/燙金/UV/擊凸) 一文睇晒。智印港 多年膠印工程師張志明編寫, FDA 21 CFR + EU REACH + FSC 認證, 香港工廠直印, 30 秒 AI 報價。',
     en: 'A1-A6 sizes + CMYK vs RGB vs Pantone color modes + 6 print modes (digital/offset/screen/foil/UV/emboss) in one reference table. Authored by 15-year ZprintPro offset engineer. FDA 21 CFR + EU REACH + FSC-certified. Hong Kong factory-direct, 30-second AI quote.',
-    ja: 'A1-A6 サイズ + CMYK vs RGB vs Pantone 色モード + 6 大印刷モード (デジタル/オフセット/シルク/箔/UV/エンボス) 一表対照。ZprintPro 15 年オフセットエンジニア執筆。FDA 21 CFR + EU REACH + FSC 認証、即時見積もり無料。',
+    ja: 'A1-A6 サイズ + CMYK vs RGB vs Pantone 色モード + 6 大印刷モード (デジタル/オフセット/シルク/箔/UV/エンボス) 一表対照。ZprintPro 多年オフセットエンジニア執筆。FDA 21 CFR + EU REACH + FSC 認証、即時見積もり無料。',
   },
   targetKeywords: {
     primary: '印刷規格 印刷仕様 print specifications',
@@ -2494,7 +2494,7 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-09-01 K3 拍板 v3 long-form-blog-3w2r 周二 10:00 第 1 篇: 即日印刷 30 秒 AI 報價流程 (W5 B7 派发, M1 即日急件 10 询盘, 跟 rush-printing-hk-guide 主题集群, GSC 即日印刷 pos 8.7 6 imps 攻堅首頁)
   lpInstantPrinting30sAiQuoteFlow,
   // 2026-09-03 K3 拍板 v3 long-form-blog-3w2r 周四 10:00 第 2 篇: 燙金印刷 3 大應用攻略 (W5 #3 B7 派发, M4 燙金 4 词一次攻, 燙金貼紙 pos 2.3 衝首頁 TOP3)
-  // 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 12 大行業 + R5 9-12 月旺季
+  // 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 多個行業 + R5 9-12 月旺季
   // 4 词攻堅: 燙金貼紙 pos 2.3 4 imps 衝首頁 + 燙金印刷 root + 燙金喜帖 Q4 旺季 + 燙金卡片 R5 聖誕新年
   lpFoilStamping3Applications2026,
   // 2026-09-04 v3.3 校园 Pillar go 接线修复: 校園教育印刷 9 月開學季 (此前未接入列表 → 页面 404, 现修复)

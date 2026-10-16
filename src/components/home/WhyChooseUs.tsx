@@ -13,7 +13,7 @@ const translations = {
     eyebrow: '為何選擇智印港',
     titleLead: '15,000+ 客戶的',
     titleEm: '信賴之選',
-    subtitle: '15 年本地印刷經驗，從落單到收貨，每一步都有專人把關。',
+    subtitle: '多年本地印刷經驗，從落單到收貨，每一步都有專人把關。',
     momentEyebrow: '即日急件時刻',
     momentSegs: [
       { text: '18:00', bold: true },
@@ -36,7 +36,7 @@ const translations = {
     eyebrow: 'Why Choose ZprintPro',
     titleLead: 'Trusted by ',
     titleEm: '15,000+ Customers',
-    subtitle: '15 years of local printing experience, with dedicated care at every step from order to delivery.',
+    subtitle: 'over a decade of local printing experience, with dedicated care at every step from order to delivery.',
     momentEyebrow: 'Same-Day Rush Deadline',
     momentSegs: [
       { text: 'Order by ', bold: false },
@@ -60,7 +60,7 @@ const translations = {
     eyebrow: 'ZprintProを選ぶ理由',
     titleLead: '15,000人以上のお客様に',
     titleEm: '信頼されています',
-    subtitle: '15年の現地印刷経験。発注から納品まで、各ステップで専任スタッフがしっかりサポートします。',
+    subtitle: '多年の現地印刷経験。発注から納品まで、各ステップで専任スタッフがしっかりサポートします。',
     momentEyebrow: '即日印刷の締切',
     momentSegs: [
       { text: '18:00', bold: true },
