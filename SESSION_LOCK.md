@@ -617,3 +617,15 @@
 | **验证** | census 276 band 0 / tsc 54=基线 0 增量 / brand-mentions A 0 / gsc-leak 0 / encoding ✓ / **线上断言 6/6 PASS**（roll-up ja、kraft ja ¥150、custom-red ja、vehicle-wraps en、eco-flyers en、graduation-yearbook en） |
 | **并发说明** | 开工时发现 K3 侧会话已并发实施同任务（d3f165fc 02:42 commit / 02:49 push，28 槽）；本会话改补其遗漏 + 复审计（发现并纠正 kraft ¥240 误植） |
 | **遗留（上报 K3）** | ① small-batch-stickers en title「50pcs」失实（minQ=10，desc 已对齐 10 pcs；K3 批刚触碰，推荐 title 50pcs→10pcs）② greeting-cards 名片词沿用 K3 批 A/B/C（推荐 B）③ premium-greeting-cards en「100pcs」= products.ts 层漂移（非 title 错误）④ 白卡/托特袋等 4 项审计误报已复核为合规 |
+
+## 持有声明（2026-10-16 12:2x · Kimi 反爬反制会话）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 会话（K3 2026-10-16 12:19 指令：全权执行「技术层反爬」四项——CF 拦截/文案埋指纹/图片水印/文案轮换，针对 hkprint58.com 鑫印吧仿站） |
+| **意图** | ① 文案指纹埋入（CSV FAQ + 正文，三语，避冻结 title 六槽与贺卡资产）② `src/data/copy-fingerprints.ts` 指纹 SSoT + `scripts/rotate-copy-fingerprint.mjs` 轮换器 ③ `scripts/watermark-images.py` 批量水印（products/products-localized/factory/samples/categories/blog/articles/japan/v26，跳过 hero/brand/payment/backup/icon/svg）④ CF Bot/WAF 落地脚本（zone 级 token 缺失则交付可执行脚本+文档） |
+| **写入范围** | `zprintpro-sku-seo-data.csv`（8 SKU FAQ/正文槽）· `src/data/sku-seo-data.ts`（regen）· `src/data/copy-fingerprints.ts`（新）· `scripts/rotate-copy-fingerprint.mjs`（新）· `scripts/watermark-images.py`（新）· `scripts/cf-bot-hardening.sh`（新）· `public/images/**`（水印原位）· `docs/2026-10-16-anti-scrape-hardening.md` · `SESSION_LOCK.md` |
+| **冻结避让** | 不碰 title 六槽（50-57 冻结域）；不碰 greeting-cards 6 SKU 资产与 middleware 301；不碰 certificates/foil-stickers 冻结槽 |
+| **双条件核验** | ① `git status --porcelain -- src/` = 0（12:20 实测）② 对端静默：顶部锁 05:3x 已释放，最后 commit 07:15（cron 报告，docs-only），现 12:2x 静默 >5h ✓；lane.lock 不存在 ✓ |
+| **预计时长** | < 90 min |
+| **释放条件** | regen 断言 + tsc 54 基线 0 增量 + 门童全绿（#27/#29/#16/brand/encoding/bc-ban 报告式）+ push-gate 机器闸（独立调用）+ 攒批 1 push |

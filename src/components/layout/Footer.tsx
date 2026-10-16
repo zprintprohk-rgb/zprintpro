@@ -8,6 +8,7 @@ import { Locale, getWebLogoUrl, getWebLogoAlt } from '@/lib/seo';
 import { GeoFooterText } from '@/components/seo/GeoFooterText';
 import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
 import { trackPhoneClick, trackCtaClick } from '@/lib/tracking';
+import { COPY_FINGERPRINT_NOTICE } from '@/data/copy-fingerprints';
 
 function getLocalizedHref(href: string, locale: Locale): string {
   if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
@@ -472,7 +473,11 @@ export function Footer({ locale }: FooterProps) {
                 </span>
               </div>
             </div>
-            <p className="text-white/70 text-sm">{t.copyright}</p>
+            <div>
+              <p className="text-white/70 text-sm">{t.copyright}</p>
+              {/* 2026-10-16 反爬指纹（K3 全权拍板）：可见原创声明+档号，抄站者整页复制即留证；档号每月轮换，SSoT src/data/copy-fingerprints.ts */}
+              <p className="text-white/50 text-xs mt-1" data-copy-fingerprint>{COPY_FINGERPRINT_NOTICE[locale]}</p>
+            </div>
           </div>
         </div>
 
