@@ -231,6 +231,27 @@
         "evidence": ".hermes/_b1c7_apply_20261016.py + .hermes/_bak-b1c7-20261016/ + .hermes/analysis/b1c7-similarity-2026-10-16.json"
       },
       "note": "车道读到本记录: 簇 7 DONE, 下一棒 = 簇 8 残留清单 (packaging faqSchema ×10 / mailer 正文 / 口径核对) + 10/19 title 解冻批 (日历 title/meta 层 HK$10 假地板)"
+    },
+    {
+      "order": 10,
+      "cluster": "b1c-cluster8 packaging faqSchema ×10 拆模板 + outdoor-posters 余1收口 + outdoor/mailbox 假MOQ清除 (千问评分卡 P0-③+P1-①)",
+      "slugs": [
+        "cosmetic-boxes", "mailer-boxes", "rigid-boxes", "magnetic-closure-gift-box", "electronics-packaging-box",
+        "kraft-paper-packaging-box", "gang-run-card-boxes", "white-card-boxes", "corrugated-boxes", "tuck-end-boxes", "outdoor-posters"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (千问评分卡后执行)",
+      "claimed_at": "2026-10-16T11:4x:00+08:00",
+      "completed_at": "2026-10-16T12:1x:00+08:00",
+      "verdict": {
+        "price_audit": "packaging 十一 SKU 真值一手: cosmetic 100/HK$8-65 · mailer 100/3.5-10 · rigid 100/8-42 · magnetic 100/15-80 · electronics 200/8-50 · kraft 300 (带内疵 1.5-1000) · gang-run/white-card/corrugated/tuck-end 500 (三条带疑似批量总价混入单价带) · outdoor 1/16-55",
+        "slots": "faqSchema ×11 原位替换 (4Q 真值: MOQ=minQuantity 字段直引; 7 SKU 引价带, 4 SKU 带内疵只引 MOQ) + outdoor CSV row24 descEN + ts desc/h1/body 假MOQ (50+/50-MOQ/|100MOQ) 清 + mailer body 事实修正 (10 張起印×2→100 個 + ISO 9001×3 口径 + 15+年×2)",
+        "guards": "tsc 54=54 / regen 断言 A-E 字节级恰 1 块 (outdoor) / 块级形状断言全过 (outdoor+mailer 零残留)",
+        "residual_cluster9": "全站 body 清扫清单 (量化 pre→post): 10 張起印，無開版費 49→47 / ISO 9001 認證工廠 28→27 / ISO 9001 認証工場 23→22 / ISO 9001 certified 46→45 / 15+ 年 60→58 / 15+ 年の 23→22 / 50-MOQ 2→1 / | 100 MOQ 53→52 —— 需逐 SKU 对照 minQuantity 后清 (10 張起印 对 minQ=10 SKU 是真值, 不可盲改)",
+        "k3_docket_new": "products.ts 内部价格矛盾 (不动, 待 K3 价格 SSoT 裁定): white-card-boxes basePrice 129 vs band HK$0.50-3.00/個; gang-run HK$129-17,214 / corrugated HK$1,517-7,278 / tuck-end HK$1,538-7,478 三条疑似批量总价混入单价带; kraft HK$1.5-1000/個 带宽 667×; 4 SKU 缺 basePrice_en/ja (en/ja PDP 价显示层待核)",
+        "evidence": ".hermes/_b1c8_apply_20261016.py + .hermes/_bak-b1c8-20261016/ + 千问评分卡三处事实校正: 簇6b 实为 DONE (order-8 非待确认) / cliff 断档实为 10-14 不可回填+10-16/17 待 K3 导 (非4天全断) / 千问十 SKU 名单命名全错 (实为上列10个)"
+      },
+      "note": "车道读到本记录: B1c 队列 9/10 DONE, 仅剩 greeting-cards ×6 FAQ (挂 §0.0 裁决后) + wedding 2 SKU 无 faqSchema (docket) + 簇9 全站 body 清扫 (清单已量化). CSV zh FAQ 列映射链已核实 = 死数据 (regen L10 注释 + L149 不消费), 已清毒为 inert-clean"
     }
   ]
 }
