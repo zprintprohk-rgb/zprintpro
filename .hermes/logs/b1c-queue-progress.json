@@ -271,7 +271,7 @@
       "status": "DONE",
       "claimed_by": "autoclaw manual session (千问方案 P0-②先行)",
       "claimed_at": "2026-10-16T13:5x:00+08:00",
-      "completed_at": "2026-10-16T14:3x:00+08:00",
+      "completed_at": "2026-10-16T15:1x:00+08:00",
       "verdict": {
         "recovery": "10-16 窗恢复系数 120.6% (706/24) — 条件① 2/3 日, gsc-cliff-2026-10-16.json 已落盘",
         "phase1": "85 块 ×9 模式 → KEEP 77 / FIX 224, 幻影 seo 块破案 = fruit-food-label-stickers 缩进异常 (minQ 500)",
@@ -282,7 +282,9 @@
           "SGS 遷移測試 (stickers body, 待 K3 确认)",
           "15,000+ clients across 100+ countries (fruit-food en body, CRED 应撤)"
         ],
-        "evidence": ".hermes/_b1c9_plan.json + .hermes/_bak-b1c9-20261016/"
+        "evidence": ".hermes/_b1c9_plan.json + .hermes/_bak-b1c9-20261016/",
+        "products_layer": "products.ts ISO 9001:2015 x9 (all descriptionEn) -> internationally certified; 10 張起印 x19 + 100 MOQ x8 全落 minQ=10/100 真值块 -> KEEP 零改动; SGS x3 + zh desc 简体 适配行业 残留登记 docket",
+        "cluster95_registered": "全站 CRED 残余清扫面已计量并落盘 .hermes/logs/b1c-cluster95-surface-2026-10-16.json: ISO 9001 x568 / Heidelberg+海德堡 x354 / SGS x91(+12 zh) / 15+ 年 x8 + 15+ years x9 / 15,000+ clients x2 ≈ 1,030+ 处 (about/catalog-printing-china/blog-data 3 JSONs/category-seo-content/conversion-blocks/products-content/buying-guides/tsx 组件/全站 HowTo schema) — 下一会话首批, 逐文件断言 + CSV 覆盖域守规"
       },
       "note": "B1c 主簇 9/9 全部 DONE. 剩余: greeting-cards ×6 FAQ (挂 §0.0) + wedding 2 SKU + docket 项. 下一棒: 10/22 年賀状翻开关 (K3 真值 10/21) + CTR 首判 (K3 导档)"
     }

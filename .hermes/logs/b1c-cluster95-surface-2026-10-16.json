@@ -1,0 +1,149 @@
+{
+ "scanned_at": "2026-10-16T15:0x:00+08:00",
+ "scope": "git ls-files src/data src/lib src/app (ts/tsx/json)",
+ "patterns": [
+  "ISO 9001",
+  "Heidelberg",
+  "海德堡",
+  "15+ 年",
+  "15+ years",
+  "SGS",
+  "SGS 遷移",
+  "15,000+ clients"
+ ],
+ "files": {
+  "src/app/[locale]/about/page.tsx": {
+   "ISO 9001": 20,
+   "Heidelberg": 36,
+   "海德堡": 10,
+   "15+ 年": 1,
+   "15+ years": 1,
+   "SGS": 1
+  },
+  "src/app/[locale]/blog/[slug]/page.tsx": {
+   "ISO 9001": 4,
+   "Heidelberg": 1,
+   "海德堡": 2
+  },
+  "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx": {
+   "ISO 9001": 1,
+   "海德堡": 1
+  },
+  "src/app/[locale]/company-news/page.tsx": {
+   "Heidelberg": 1,
+   "海德堡": 1
+  },
+  "src/app/[locale]/contact/page.tsx": {
+   "ISO 9001": 3,
+   "15+ 年": 1,
+   "15+ years": 1
+  },
+  "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx": {
+   "ISO 9001": 1,
+   "Heidelberg": 1,
+   "海德堡": 1
+  },
+  "src/app/[locale]/services/business-cards-printing/page.tsx": {
+   "ISO 9001": 3
+  },
+  "src/app/[locale]/services/catalog-printing-china/page.tsx": {
+   "ISO 9001": 21
+  },
+  "src/data/blog-data/en.json": {
+   "ISO 9001": 57,
+   "Heidelberg": 77,
+   "15+ years": 2,
+   "SGS": 4
+  },
+  "src/data/blog-data/ja.json": {
+   "ISO 9001": 47,
+   "Heidelberg": 10,
+   "SGS": 4
+  },
+  "src/data/blog-data/zh-hk.json": {
+   "ISO 9001": 54,
+   "Heidelberg": 3,
+   "海德堡": 37,
+   "SGS": 5
+  },
+  "src/data/blog-posts.ts": {
+   "ISO 9001": 5,
+   "Heidelberg": 3,
+   "海德堡": 5,
+   "15,000+ clients": 1
+  },
+  "src/data/buying-guides.ts": {
+   "ISO 9001": 6,
+   "Heidelberg": 1,
+   "海德堡": 1
+  },
+  "src/data/category-conversion-blocks.ts": {
+   "ISO 9001": 12,
+   "SGS": 5
+  },
+  "src/data/category-seo-content.ts": {
+   "ISO 9001": 19,
+   "Heidelberg": 4,
+   "海德堡": 4,
+   "SGS": 7
+  },
+  "src/data/pillar-content.ts": {
+   "15+ years": 3
+  },
+  "src/data/product-faqs.ts": {
+   "SGS": 3,
+   "SGS 遷移": 1
+  },
+  "src/data/product-specs-i18n.ts": {
+   "Heidelberg": 1,
+   "海德堡": 2
+  },
+  "src/data/products-content.ts": {
+   "ISO 9001": 281,
+   "Heidelberg": 60,
+   "海德堡": 83,
+   "15+ 年": 4,
+   "15+ years": 1,
+   "SGS": 31
+  },
+  "src/data/products.ts": {
+   "海德堡": 1,
+   "SGS": 3,
+   "SGS 遷移": 1
+  },
+  "src/data/sku-seo-data.ts": {
+   "SGS": 28,
+   "SGS 遷移": 10,
+   "15,000+ clients": 1
+  },
+  "src/lib/quote-engine/core.ts": {
+   "Heidelberg": 1,
+   "海德堡": 3
+  },
+  "src/lib/quote-engine/desk.ts": {
+   "15+ 年": 2,
+   "15+ years": 1
+  },
+  "src/lib/quote-engine/formulas/business-cards.ts": {
+   "Heidelberg": 1
+  },
+  "src/lib/seo.ts": {
+   "ISO 9001": 28
+  },
+  "src/lib/seo/schema-extensions.ts": {
+   "ISO 9001": 6,
+   "Heidelberg": 3
+  }
+ },
+ "totals": {
+  "ISO 9001": 568,
+  "Heidelberg": 203,
+  "海德堡": 151,
+  "15+ 年": 8,
+  "15+ years": 9,
+  "SGS": 91,
+  "15,000+ clients": 2,
+  "SGS 遷移": 12
+ },
+ "note": "簇9.5 全站 CRED 残余清扫面 — 本会话已清 sku-seo.ts+CSV+products.ts 三层; 此面为下一会话首批"
+}
