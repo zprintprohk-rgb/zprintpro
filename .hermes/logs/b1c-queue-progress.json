@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-16T16:1x:00+08:00",
+  "updated_at": "2026-10-16T16:4x:00+08:00",
   "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
   "clusters": [
     {
@@ -306,6 +306,26 @@
         "guards": "tsc 54=54 / hook 默认 RED=0 干净通过 / CRED --strict exit 0 / encoding 30 LF / brand A0 / B-3 0 / #29 0"
       },
       "note": "千问评分卡执行: P0 ①(10-17 档=K3 球) ②解除判定模板待 10-17 数据 ③年賀状催促附兜底; P1 ①簇9.5-A+D 本批 DONE + 扣分项闭环; 下一棒: 解除判定 (10-17 数据+GA4) → 年賀状翻开关 10/22 → CTR 首判 → C107"
+    },
+    {
+      "order": 13,
+      "cluster": "b1c-cluster9.5-E 主张族清扫 + 9.5-B/C 分类清单 (千问方案 4.3②)",
+      "slugs": [
+        "about/case-studies/catalog/blog-data 3语/buying-guides/blog-posts/WhyChooseUs/CompareTable/rush-data"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (千问 SS 110/110 评分卡后按优先级执行)",
+      "claimed_at": "2026-10-16T16:2x:00+08:00",
+      "completed_at": "2026-10-16T16:4x:00+08:00",
+      "verdict": {
+        "three_way": "三分类处置: 数量/价格阈值 ~90 KEEP (经营参数白名单) / 客户数行業数年资宣称 ~299 修正 / FSC C123456 假证号 x9 撤除 (K3 8/24 已裁) / geo-atom 知识原子区 ~85 字节保留 (K3 冲突区) / 2015年 数字守卫",
+        "special": "15 years since 2011 -> since 2012 (legal year fix per §13.14); 國際頂級印刷集團 -> 大型印刷集團 (CRED_INTL_TOP 修法)",
+        "bc_classify": "9.5-B/C 分类清单落盘 (cluster95bc-classified json): SGS x91 = test-claim 44 + cert-claim 38 + general 9; Heidelberg x238 = general 196 + cert-claim 39 + test-claim 3 — K3 两分钟裁决弹药就绪",
+        "net_decrease": "CRED 基线净递减: 4_PLUS 1127->828 / 1000_PLUS 139->64 / C123456 9->0 / SELF_FACTORY 255->0 / X_INDUSTRIES->0 / INTL_TOP 1->0",
+        "live": "CF PASS + about-zh 探针 1000+=0 / 12 大行業=0 (原 14/1)",
+        "guards": "tsc 54=54 / hook RED=0 (连续第三次干净) / encoding LF / brand A0 / B-3 0 / #29 0"
+      },
+      "note": "千问方案 4.3② 落地. 下一棒: 解除判定 (K3 10-17 导档+GA4) → 年賀状 10/22 → CTR 首判 → C107; SGS/Heidelberg 措辞批待 K3"
     }
   ]
 }
