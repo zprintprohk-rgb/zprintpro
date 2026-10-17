@@ -4291,30 +4291,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/wall-calendars.jpg'],
+    images: ['/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-wall-calendars-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-hero.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-detail.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-variety.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-hero.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-detail.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-variety.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-hero.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-detail.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-variety.webp', '/images/products/v28_5/wall-calendars/zprintpro-calendars-wall-calendars-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-wall-calendars-zh-hk.webp', en: 'zprintpro-calendars-wall-calendars-en.webp', ja: 'zprintpro-calendars-wall-calendars-ja.webp' },
@@ -4366,22 +4347,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/desk-calendars.jpg'],
+    images: ['/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-desk-calendars-en-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-hero.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-detail.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-variety.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-hero.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-detail.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-variety.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-hero.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-detail.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-variety.webp', '/images/products/v28_5/desk-calendars/zprintpro-calendars-desk-calendars-ja-multi-angle.webp']
   },
     variables: {
       materials: [
@@ -4450,26 +4420,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/custom-calendars.jpg'],
+    images: ['/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-ja.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-custom-calendars-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-hero.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-detail.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-variety.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-hero.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-detail.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-variety.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-hero.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-detail.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-variety.webp', '/images/products/v28_5/custom-calendars/zprintpro-calendars-custom-calendars-ja-multi-angle.webp']
   },
     variables: {
       materials: [
@@ -4538,27 +4493,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/mini-calendars.jpg'],
+    images: ['/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-ja.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-mini-calendars-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-hero.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-detail.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-variety.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-hero.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-detail.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-variety.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-hero.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-detail.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-variety.webp', '/images/products/v28_5/mini-calendars/zprintpro-calendars-mini-calendars-ja-multi-angle.webp']
   },
     variables: {
       materials: [
@@ -4627,28 +4566,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/photo-frame-calendars.jpg'],
+    images: ['/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-ja.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-photo-frame-calendars-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-hero.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-detail.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-variety.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-hero.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-detail.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-variety.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-hero.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-detail.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-variety.webp', '/images/products/v28_5/photo-frame-calendars/zprintpro-calendars-photo-frame-calendars-ja-multi-angle.webp']
   },
     variables: {
       materials: [
@@ -4717,30 +4639,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/magnetic-calendars.jpg'],
+    images: ['/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-en.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-ja.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-calendars-magnetic-calendars-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-hero.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-detail.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-variety.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-hero.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-detail.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-variety.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-hero.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-detail.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-variety.webp', '/images/products/v28_5/magnetic-calendars/zprintpro-calendars-magnetic-calendars-ja-multi-angle.webp']
   },
     variables: {
       materials: [

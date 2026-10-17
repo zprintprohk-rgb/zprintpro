@@ -260,13 +260,18 @@ if (cmd === 'probe') {
   const entries = waveEntries(m, wave);
   const sleep = (ms) => new Promise(r => setTimeout(r, ms));
   const results = []; let bad = 0;
+  const fetchRetry = async (url, opts) => {
+    for (let a = 0; a < 2; a++) {
+      try { return await fetch(url, opts); } catch (e) { if (a === 1) throw e; await new Promise(r => setTimeout(r, 600)); }
+    }
+  };
   for (const e of entries) {
     const { paths, files } = libPaths(e.slug, e.dir);
     for (const l of LOCALES) {
       await sleep(250);
       let html = '';
       try {
-        const r = await fetch(`${base}/${l}/product/${e.slug}/`, { headers: { 'user-agent': 'v28_5-probe/1.0' } });
+        const r = await fetchRetry(`${base}/${l}/product/${e.slug}/`, { headers: { 'user-agent': 'v28_5-probe/1.0' } });
         html = r.status === 200 ? await r.text() : '';
         const okPdp = r.status === 200 && html.includes(`${URL_ROOT}/${e.slug}/`);
         if (!okPdp) { bad++; results.push({ slug: e.slug, locale: l, check: 'pdp-src', ok: false, status: r.status }); } else results.push({ slug: e.slug, locale: l, check: 'pdp-src', ok: true });
@@ -275,7 +280,7 @@ if (cmd === 'probe') {
         await sleep(200);
         const url = `${base}${paths[l][VIEWS.indexOf(v) >= 0 ? VIEWS.indexOf(v) : 0]}`;
         try {
-          const r = await fetch(url, { method: 'GET', headers: { 'user-agent': 'v28_5-probe/1.0' } });
+          const r = await fetchRetry(url, { method: 'GET', headers: { 'user-agent': 'v28_5-probe/1.0' } });
           const localSize = fs.statSync(path.join('public', paths[l][VIEWS.indexOf(v)])).size;
           const len = Number(r.headers.get('content-length') || -1);
           const ok = r.status === 200 && (len === localSize || len === -1);
