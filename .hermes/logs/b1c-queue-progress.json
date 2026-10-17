@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-16T16:4x:00+08:00",
-  "updated_by": "autoclaw manual session (strategy plan P0/P1/P2 execution, cluster6b)",
+  "updated_at": "2026-10-17T21:17:00+08:00",
+  "updated_by": "ZP-daily-content lane (B1c residual: outdoor-posters 三语 body 差异化)",
   "clusters": [
     {
       "order": 1,
@@ -326,6 +326,93 @@
         "guards": "tsc 54=54 / hook RED=0 (连续第三次干净) / encoding LF / brand A0 / B-3 0 / #29 0"
       },
       "note": "千问方案 4.3② 落地. 下一棒: 解除判定 (K3 10-17 导档+GA4) → 年賀状 10/22 → CTR 首判 → C107; SGS/Heidelberg 措辞批待 K3"
+    },
+    {
+      "order": 14,
+      "cluster": "16x2 工程撤回 + category-seo en/ja 真值审计 (千问执行方案动作 3 重定向)",
+      "slugs": [
+        "category-seo-content.ts 全部 16 类目"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (继续指令)",
+      "claimed_at": "2026-10-17T15:45:00+08:00",
+      "completed_at": "2026-10-17T16:35:00+08:00",
+      "verdict": {
+        "retraction": "撤回「16 类目全部仅 zh-hk」系统性发现 (原登记于周报与 10-16 会话): 单方法 regex 只匹配带引号键 'en': 漏检无引号键 en: —— §0.23.2 教训复发。真事实: 16 类目全部已有 en/ja 块 (en 6.5-11.3K 字符 ×16 + ja 4.2-6.0K ×16) 且 V9 线上渲染 (curl 双方法确证: en 页命中 Free Die-Cut Design/Complete Material, ja 页命中 ¥101)。",
+        "insert_reverted": "本会话为 packaging 新写 10.5K 真值锚 en/ja 块曾插入 (verify 全绿), 因与既有无引号键同名冲突 (tsc 1117×2 + faq 键名 12 错) 且替换未拍板, 已 git checkout 撤回; 块存 .hermes/_catslice_apply.py 备选 (方案 C)",
+        "integrity_findings": "既有 en/ja 块诚信扫描: SGS 7 处三语在展 (K3 #7 未核) / 無毒大豆油墨 38 处多品类 (品类级不可验证, food-boxes 先例已改诚实请求式) / h2 3-Day Delivery+3日納品 vs 真值 3-5 天 / 10 professional series vs 实 6 SKU / ja MOQ 30/50 無 SKU 支撐 (全族 100; white-card 500)",
+        "new_k3_docket": "rigid-boxes title_zh HK$4.5 vs basePrice 8 (价格内战第 7 例; ja ¥240≈HK$8 与 basePrice 一致) + SGS 线上在展紧急化",
+        "guard_note": "category-seo-content.ts 写入被凭据判据拦截: 命中全为产品名 Drink Token (place-cards 文案 9 处), 零真实凭据, K3 会话内已授权; 建议守卫加产品词白名单",
+        "guards": "src/ 0 改动回净 / tsc 54=54 / 全部发现为既有内容未动 (K3 A/B/C 拍板后才改)",
+        "evidence": "docs/2026-10-17-category-seo-enja-truth-audit.md + .hermes/_locale_matrix.txt + .hermes/_integrity_scan.txt + .hermes/_pkg_truths.txt"
+      },
+      "note": "16×2 工程从队列整体撤下 (32 片全已存在)。K3 拍板 A(定点清毒)/B(仅SGS)/C(真值替换) 后执行内容动作; 下一步不受阻项 = B 系 blog→PDP 内链包 + hub 聚合 FAQ 8Q"
+    },
+    {
+      "order": 15,
+      "cluster": "B 系 blog→PDP 内链包 (千问 §4.2 动作 2)",
+      "slugs": [
+        "packaging-box-pricing-2026",
+        "packaging-box-price-2026",
+        "packaging-trends"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (千问对账后执行)",
+      "claimed_at": "2026-10-17T18:45:00+08:00",
+      "completed_at": "2026-10-17T19:25:00+08:00",
+      "verdict": {
+        "slots": "9 条 food-boxes PDP 入站锚 (2 价格博客 + trends × 三语; 锚文本: zh 食品包裝訂製/食品包裝/食品級材質, en custom food packaging boxes/food packaging, ja 食品パッケージのオーダーメイド/食品グレード素材) + 1 条 ja 错链修复 (/ja/blog/ 裸索引 → /ja/blog/food-packaging-printing-guide/)",
+        "method": "结构化 JSON 编辑 (load→per-post 修改→dump; round-trip+newline 字节等价门 + 仅计划 slug 变更断言 + food-boxes 链接 delta 3/3/3) — 替代裸文本 replace 的转义坑 (首版 JSON breakage 根因 = 文件内 \" 转义形态)",
+        "exclusions": "守位区零触碰 (kraft-paper-box-types-comparison 牛皮紙盒 2.5 / ja 化粧品指南 化粧品の箱 1.0)",
+        "v5_note": "新链接无内联亮蓝类 (§13.4.1 v5); 存量博客内链硬编码 text-[#2873F5] 违 v5 默认色 = 登记 docket (全文件迁移另批)",
+        "guards": "tsc 54=54 / brand A0 / gate 278min OK",
+        "push": "17cc6c8d @19:13:23, deploy PASS + 探针 5/5 (三语锚点 True×3 + ja 修链 True + 速赢包仍在线 True, runs/117382917787)",
+        "evidence": ".hermes/_bloglink_apply2.py + .hermes/_bak-bloglink-20261017/ + .zwork/background/...7k9sik.log(报废)→前台复跑探针"
+      },
+      "note": "千问 slug food-packaging-box 不存在已拦 (真 slug food-boxes, 照抄 = 9 条 404); 千问 FAQ 直答驳回 (food-boxes faqSchema 4Q 已覆盖, L3318); 衍生 docket: PDP faqSchema 全站 en-only (zh/ja AEO 空转)"
+    },
+    {
+      "order": 16,
+      "cluster": "诚信清毒 A' (剥 SGS) + 千问两份对账 + 一周深度总结 (P0-1)",
+      "slugs": [
+        "category-seo-content.ts 全类目"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (K3 指令: 按最优方案和优先级执行)",
+      "claimed_at": "2026-10-17T20:10:00+08:00",
+      "completed_at": "2026-10-17T20:45:00+08:00",
+      "verdict": {
+        "rules": "21 处: 無毒大豆油墨×2 + 無毒の大豆インク/無毒大豆油インク×2 + non-toxic soy×2 + 3-Day Delivery/3日納品/3日生産×3 + 10 series→12×2 (§0.23.2 复算: packaging 实为 12 SKU, 千问 10 与初报 6 均错, rg count) + ja MOQ 30/50→100×4 + 教育块 無毒無害×6 (同批扩面: 化学安全绝对主张, soy/FSC 事实保留为选项式)",
+        "invariant": "SGS 7→7 冻结不变 (K3 #7 未核不动); eco 语境 soy 11 处保留 (真值)",
+        "guards": "tsc 54=54 / brand A0 / gate 88min OK",
+        "push": "fb92ee3f @20:41:40 (17cc6c8d..fb92ee3f), 含两份 docs (weekly deep summary + qianwen adjudication + next-week plan; truth audit 修正 6→12)",
+        "probe": "build in_progress 时探针打到旧版不可判 → 后台等窗复验 (A_PRIME_PROBE_DONE)",
+        "adjudication": "千问两份: 采纳 CF curl 实测 (200×25 零 429, P0 降级) / 裡印+直答段+hub 链 = 已超前完成 (fea00143) / A' 剥 SGS 后采纳 / hub v2 价格表需真值重导 (P2) / guard 修复定位错误 (平台层非仓库脚本, 驳回) / slug food-packaging-box 与 products-content.ts 为幻觉 (驳回)",
+        "evidence": "docs/2026-10-17-weekly-deep-summary-qianwen-adjudication-and-next-week-plan.md + .hermes/_integrity_a_20261017.py + .hermes/_bak-integrity-a-20261017.ts.bak"
+      },
+      "note": "P0 剩余: folding→food-boxes 交叉链 ×3 (下一批) + K3 CF 显式豁免/GSC 导档。P1: 10/19 title 解冻批 + CTR 首判 + faqSchema 三语化拍板"
+    },
+    {
+      "order": 17,
+      "cluster": "b1c-residual posters 族收口: outdoor-posters body 三语差异化 + 事实/禁词修正",
+      "slugs": [
+        "outdoor-posters"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane",
+      "claimed_at": "2026-10-17T21:17:00+08:00",
+      "completed_at": "2026-10-17T21:17:00+08:00",
+      "verdict": {
+        "why": "posters 族 6 SKU 中 5 个已于簇6a/6b 重写; outdoor-posters 仍为 20+ SKU 共用模板 (body 首 3 段与 stickers/flyers/bags 逐字同源), 且带 3 类硬伤",
+        "scope": "仅 body (ts-only 域, 不触 CSV 覆盖域): 三语首 3 段 100% 重写 (各约 1,000-1,400 字元) + 交稿/收費 2 段本地化 + 6 处事实修正 + 每语 4-5 条内链",
+        "fixes": "① 户外页却把 200g 光面銅版紙写成核心材质 (标注『标准室内海报』) -> 改为 PVC/PET/合成紙 为户外主材, 銅版紙降级为半室外 1-3 个月选项; ② 正文『最平 $4 起』与 basePrice 16 冲突 -> 删除; ③ Q6『每日 18:00 前落單即日交貨』与标准 3-5 工作天冲突 -> 改 24h 打稿 + 2 天生产加价 20%; ④ 借用的『Giclée 級 1200 DPI』(art-posters 口径) 与户外噴繪/UV 工艺不符 -> 删除; ⑤ ja『業界最安水準』禁词 -> 删 (本页); ⑥ 材质表 $8-12/$10-15/$15-20 低于 SKU 价格带 HK$16-55 -> 改『HK$16-55 帶內｜按尺寸』",
+        "links": "zh 5 (adhesive / display / a1 / a2 / category:posters) · en 5 · ja 5, 均指向现存 slug",
+        "similarity": "车道无 node -> 未复算 8-gram Jaccard (不虚报). 结构事实: 三语正文首 3 段全量替换; 尾段 (交稿/收費/FAQ 列) 仍为家族模板 -> 登记相似度未闭环",
+        "guards": "车道侧 grep 自检: 業界最安 本页 0 (文件级余 16 见 docket) / Giclée 級 0 (文件级) / 最平 $4 起 0 / 名片词 0 / en CJK 0 / ja 简中 0; 本页交期句未清零 = Q6 已改但 body 另一段仍留『每日 18:00 前落單即日交貨』(长行不可见, 不盲改, 入 docket); tsc 与门童由 host wrapper 兜底, 车道不虚报 PASS",
+        "residual_csv_debt": "desc/h1/title/alt 属 CSV 覆盖域且车道无 node 不能 regen -> 不直改 ts (cluster-7/8 回灌教训). 待 node 会话: ① zh desc『10 張起』-> 1 張,『即日-3 個工作天』-> 3-5 ② zh title 量词『1個起』->『1張起』(cluster1 口径) ③ en imageAlt『wall art for home decor』垃圾值 -> 户外真值 alt ④ ja desc『10枚〜 / 翌日-3営業日』与 minQ1 / 3-5 天对齐",
+        "evidence": ".hermes/logs/2026-10-17-ZP-daily-content.md"
+      },
+      "note": "车道读到本记录: posters 族 (6 SKU) 正文差异化收口. 下一棒: outdoor CSV 四格债务 (需 node) + 全站 ja『業界最安水準』x16 清扫 + folding→food-boxes 交叉链 x3"
     }
   ]
 }

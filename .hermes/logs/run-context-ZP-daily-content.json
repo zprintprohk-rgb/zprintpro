@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-15 21:17:02",
+  "generated_at": "2026-10-17 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "923062e926117178",
-    "day": "2026-10-15",
+    "this_run_key": "725bd6d6cafb22b4",
+    "day": "2026-10-17",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,12 +30,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-14 21:22:28"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-15 21:28:25"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=6"
+        "detail": "verdict=ATTENTION problems=3"
       },
       {
         "name": "lock_acquired",
@@ -46,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 7972,
-    "acquired_at": "2026-10-15 21:17:02",
-    "acquired_ts": 1792070223.0305047,
+    "pid": 19980,
+    "acquired_at": "2026-10-17 21:17:02",
+    "acquired_ts": 1792243023.102638,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261014T212228",
+      "run_id": "ZP-daily-content-20261015T212825",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-14 21:22:28",
-      "ended_at": "2026-10-14 21:22:28",
-      "idempotency_key": "da275fd992b71884",
+      "fired_at": "2026-10-15 21:28:25",
+      "ended_at": "2026-10-15 21:28:25",
+      "idempotency_key": "923062e926117178",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -67,45 +67,22 @@
       "guard": {
         "ok": true
       },
-      "report": "NONE",
+      "report": ".hermes/logs/2026-10-14-ZP-daily-content.md",
       "files": [
+        "src/data/products.ts",
         "src/data/sku-seo-data.ts"
       ],
       "pushed": true,
-      "head": "3f264243",
+      "head": "73199aad",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-13-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-15-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "src/data/blog-data/zh-hk.json（门童 #16 存量命中 TOP3 清除",
-      "L620 H1）; src/data/sku-seo-data.ts（embossed-red-packets 三语 description + h1 全改写 + body 各 +1 差异化决策段 = 9 槽）; src/data/products.ts（embossed-red-packets faqSchema 独立化 1 槽 + descriptionEn/descriptionJa 简体「适配行业」清毒 2 处）; public/sitemap.xml + public/sitemap-zh-hk.xml + public/sitemap-en.xml + public/sitemap-ja.xml（embossed-red-packets 三语 lastmod 2026-10-12 → 2026-10-13 = 重爬刺激）; .hermes/logs/b1c-queue-progress.json（簇 2 = IN_PROGRESS",
-      "1/6 页）"
+      "src/data/sku-seo-data.ts（eco-paper-bags 兄弟页三语深改: zh body 全段+FAQ 重写 / en body P1-P4 重写 / ja body 全段含 FAQ 重写 + 三语 description/h1 全改写 ×6 槽 + imageAlt 三语垃圾值修复 ×3; kraft-paper-bags 主推页轻改: 三语 description/h1 ×6 槽 + imageAlt ×3; 纸袋族 ja 禁词『業界最安』清除）; src/data/products.ts（eco descriptionEn/descriptionJa 简体「适配行业」清毒 2 处 + eco description/description_zh 繁体化 + kraft/eco `description` 价格钩真值化（HK$1.8 / HK$2.2 → HK$8）+ kraft & eco faqSchema 各 4 问独立化 = 8 槽）; .hermes/logs/b1c-queue-progress.json（追加 order 6 = 簇5 kraft<->eco DONE）; .hermes/logs/2026-10-14-ZP-daily-content.md（10-14 STALE 重构补记）; .hermes/logs/2026-10-15-ZP-daily-content.md（本报告）"
     ]
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "22:43"
-    },
-    {
-      "lane": "ZP-k3-review",
-      "status": "PENDING",
-      "report": null,
-      "start": "07:10"
-    }
-  ],
-  "retry_queue": [
-    {
-      "kind": "UNRESOLVED_DAY",
-      "day": "2026-10-14",
-      "status": "STALE",
-      "notes": [
-        "ran but no report file dated 2026-10-14"
-      ]
-    }
-  ],
+  "sibling_lanes": [],
+  "retry_queue": [],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",

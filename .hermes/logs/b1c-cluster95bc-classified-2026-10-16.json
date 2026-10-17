@@ -1,0 +1,1652 @@
+{
+ "scanned": "2026-10-16T11:16:08.960Z",
+ "sgs": [
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "cert-claim",
+   "ctx": "lidUntil 字段全清空 (不留联系方式, 不展示认证细节), 只保留认证描述 (ISO 9001 / FSC / SGS) credTitle: '公司資質 · 可查證書', credSubtitle: '第三方認"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "test-claim",
+   "ctx": "tion period ends 2026-07-20; reusable items 2027-07-20 (per SGS 2026-04 report)</li><li><strong>GB 4806.8-2022"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "Federation Food Contact Materials Safety White Paper 2026 / SGS / REACH24H industry analysis. Last updated 202"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "test-claim",
+   "ctx": "100% recycled kraft (80% of orders)</strong>: FSC-certified，SGS heavy-metal tested, available in 100g / 120g /"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "test-claim",
+   "ctx": " bank VIP client gifting</li>\\n</ul>\\n<p>All materials pass SGS heavy-metal tests and meet the ESG procurement"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "test-claim",
+   "ctx": "接触材料で禁止。単回使用食品接触物品の経過措置は 2026-07-20 まで、再利用物品は 2027-07-20 まで（SGS 2026-04 レポート）</li><li><strong>GB 4806.8-2022（中"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "general",
+   "ctx": "PA Research 2026 / Da Shan 2026 / 中国包装連合会『食品接触材料安全白書 2026』/ SGS / REACH24H 業界分析。最終更新 2026-08-29。</p>\" }, \"pape"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "test-claim",
+   "ctx": "ce-y-1\\\">\\n<li><strong>FSC 認証 100% 再生クラフト（注文の 80%）</strong>：SGS 重金属試験クリア、100g / 120g / 150g / 200g 対応、多個で 1 個 "
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "test-claim",
+   "ctx": "石クロージャー仕様のギフトバッグ、プライベートバンク VIP 顧客向け</li>\\n</ul>\\n<p>すべての素材は SGS 重金属試験をクリアし、日本の主要銀行・証券会社の ESG 調達基準を満たします。</p>\\n"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "test-claim",
+   "ctx": "品接觸場景油墨對照 FDA 21 CFR 175.300,出口歐盟紙材與油墨對照 EU REACH 1907/2006,SGS 重金屬測試報告可索取。</p>\\n<p>落單前想睇實價同交期，直接到<a href=\\\"/z"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "strong>歐盟出口海報</strong>:EU REACH 1907/2006 化學品標準,所有油墨 + 紙質都要 SGS 重金屬測試。智印港提供 REACH 證書。</li>\\n</ul>\\n\\n<div clas"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "rong>厚卡紙，局部 UV</strong>配磁石扣禮盒袋,適合私人銀行 VIP 客戶禮品。所有紙材均通過香港環保署 SGS 重金屬測試。</p>\\n\\n<h3>3. 金融峰會常見禮品袋應用</h3>\\n<ul>\\n<"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "test-claim",
+   "ctx": "積極推動綠色採購,符合 ESG 嘅禮品袋係投標加分項。智印港提供 FSC 認證，100% 再生紙，環保油墨選項,並提供 SGS 重金屬測試報告,符合聯合國可持續發展目標 SDG 12 負責任消費同生產。</p>\\n<p>"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "ng>Q: 香港金融峰會最常用嘅禮品袋材質係咩?</strong><br/>A: 100% 再生牛皮紙 (FSC 認證，SGS 重金屬測試) 係香港業界標準。智印港亦提供白卡紙袋 (中環 IFC / ICC 高端寫字樓金"
+  },
+  {
+   "f": "src/data/category-conversion-blocks.ts",
+   "cls": "cert-claim",
+   "ctx": "咩認證要求？\", \"a\": \"必須用食品級紙材加無毒大豆油墨，FDA認可（間接食品接觸）加FSC認證紙，可出SGS檢測文件；烘焙、茶葉、保健品盒100個起印，防潮處理同QR碼溯源都可以安排。\" } ], \"soc"
+  },
+  {
+   "f": "src/data/category-conversion-blocks.ts",
+   "cls": "cert-claim",
+   "ctx": "on\": \"オリジナルパッケージ印刷は小ロット30個〜に対応。クラフト紙やFSC認証エコ紙、食品グレード紙＋大豆インク（SGS検査済み）から選べ、箔押し・UV加工にも対応。価格はお見積り制で、通常3日出荷・急行2日。30"
+  },
+  {
+   "f": "src/data/category-conversion-blocks.ts",
+   "cls": "general",
+   "ctx": "\"q\": \"食品用パッケージは安全ですか？\", \"a\": \"はい。食品グレード紙と無毒の大豆インクを使用し、SGS検査済み、日本の食品衛生基準に準拠しています。\" } ], \"socialProof\": [ "
+  },
+  {
+   "f": "src/data/category-conversion-blocks.ts",
+   "cls": "general",
+   "ctx": " { \"q\": \"食品用パッケージは安全ですか？\", \"a\": \"はい。食品グレード紙と無毒の大豆インクを使用し、SGS検査済み、日本の食品衛生基準に準拠しています。ベーカリーや健康食品、茶葉用の箱には防湿加工やQRコー"
+  },
+  {
+   "f": "src/data/category-conversion-blocks.ts",
+   "cls": "general",
+   "ctx": "防湿加工やQRコードには対応していますか？\", \"a\": \"はい。食品グレード紙と無毒の大豆インクを使用し、SGS検査済み。ベーカリーや茶葉、サプリメント用の箱には防湿加工を推奨しており、QRコードによるロット追跡も追加"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "cert-claim",
+   "ctx": " FSC 認證環保紙，清關文件齊全。', '食品包裝訂製有硬規矩：必須用食品級紙材同無毒大豆油墨，通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "cert-claim",
+   "ctx": "kg，跨境電商 + 重物首選；銅版紙 250-300g 成本低、輕量商品適用。三種都支援 FSC 環保認證 + 食品級 SGS 認證。' }, { q: '包裝盒印刷交期幾耐？', a: '常規訂單 3 天出貨；快印服務"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "cert-claim",
+   "ctx": "美市場。' }, { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和無毒大豆油墨，通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' }, { q: '包裝盒印刷需要多久？', a: '常"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "test-claim",
+   "ctx": "Food-grade paper and non-toxic soy inks are non-negotiable, SGS-tested as standard; bakeries, tea, and supplem"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "cert-claim",
+   "ctx": "food-grade paper and non-toxic soy-based inks, certified by SGS and compliant with international food safety a"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "ズにします。', '食品パッケージには厳格なルールがあります。食品グレード紙と無毒の大豆インクは必須で、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "cert-claim",
+   "ctx": " }, { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' }, { q: 'パッケージ印刷にどのくらいかかりますか？"
+  },
+  {
+   "f": "src/data/product-faqs.ts",
+   "cls": "test-claim",
+   "ctx": " answer: { 'zh-hk': '採用 FDA 認可食品級白卡/牛皮紙，可選防油淋膜，通過 SGS 遷移測試，間接接觸食品級別安全。', en: 'FDA-compliant food-grade"
+  },
+  {
+   "f": "src/data/product-faqs.ts",
+   "cls": "test-claim",
+   "ctx": "rd and kraft boards with optional grease-resistant coating, SGS migration tested for indirect food contact.', "
+  },
+  {
+   "f": "src/data/product-faqs.ts",
+   "cls": "test-claim",
+   "ctx": "food contact.', ja: 'FDA適合の食品グレード白卡/クラフト紙、防油コーティング可、SGS移行テスト済み（間接接触級）。', }, }, ], 'catalog-printin"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "test-claim",
+   "ctx": "ZprintPro?</h3> <ul> <li><strong>Certified Safe:</strong> SGS migration tested, heavy-metal-free inks, suitabl"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li> <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li> </ul> <h3>已服務的本地客戶</h3> <p>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "test-claim",
+   "ctx": "A biodegradable inner lining. Our boxes pass FDA, LFGB, and SGS food-contact migration testing, ensuring safet"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "test-claim",
+   "ctx": "strong>Certified Food Safety:</strong> FDA (US), LFGB (EU), SGS migration tested, heavy-metal-free inks.</li> "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "test-claim",
+   "ctx": "s. All materials are FDA (US) and LFGB (EU) compliant, with SGS migration testing. Inks are heavy-metal-free a"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "1 間餐廳、14 間攝影師提供年度月曆禮品印製服務。1 本起印（批量 300 本起上印刷機），48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p> <h3>可選加值服務</h3> <p>可加燙金、UV 局部工"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "> <ul> <li>A4 / A5 是香港餐廳最常用規格，三折設計適合酒水單</li> <li>PVC 通過 SGS 食品接觸安全認證，不含鄰苯二甲酸鹽</li> <li>可印 QR Code 連結線上點餐系統、會員 "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。10 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p> <h3>可選加值服務</h3> <p>可加燙金 Logo、QR "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "> <ul> <li>A4 / A5 是香港餐廳最常用規格，三折設計適合酒水單</li> <li>PVC 通過 SGS 食品接觸安全認證，不含鄰苯二甲酸鹽</li> <li>可印 QR Code 連結線上點餐系統、會員 "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。10 份起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p> <h3>可選加值服務</h3> <p>可加燙金 Logo、QR "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "> <ul> <li>A4 / A5 是香港餐廳最常用規格，三折設計適合酒水單</li> <li>PVC 通過 SGS 食品接觸安全認證，不含鄰苯二甲酸鹽</li> <li>可印 QR Code 連結線上點餐系統、會員 "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。10 本起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p> <h3>可選加值服務</h3> <p>可加燙金 Logo、QR "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "> <ul> <li>A4 / A5 是香港餐廳最常用規格，三折設計適合酒水單</li> <li>PVC 通過 SGS 食品接觸安全認證，不含鄰苯二甲酸鹽</li> <li>可印 QR Code 連結線上點餐系統、會員 "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": " 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。10 份起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p> <h3>可選加值服務</h3> <p>可加燙金 Logo、QR "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "> <ul> <li>A4 / A5 是香港餐廳最常用規格，三折設計適合酒水單</li> <li>PVC 通過 SGS 食品接觸安全認證，不含鄰苯二甲酸鹽</li> <li>可印 QR Code 連結線上點餐系統、會員 "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。100 份起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p> <h3>可選加值服務</h3> <p>可加燙金 Logo、QR "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p> <h3>可選加值服務</h3> <p>可異形模切、鏤空設計，貼於金屬欄或"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p> <h3>可選加值服務</h3> <p>可異形模切、鏤空設計，貼於金屬欄或"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p> <h3>可選加值服務</h3> <p>可異形模切、鏤空設計，貼於金屬欄或"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p> <h3>可選加值服務</h3> <p>可異形模切、鏤空設計，貼於金屬欄或"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p> <h3>可選加值服務</h3> <p>可異形模切、鏤空設計，貼於金屬欄或"
+  },
+  {
+   "f": "src/data/products.ts",
+   "cls": "test-claim",
+   "ctx": "切，品牌輪廓標籤亦可上機', '【可變資料】序號／QR／條碼逐張可變，批次管理與防竄貨', '【SGS 遷移測試】油墨無重金屬遷移，間接食品接觸適用', '【1 小時打稿】免費數碼打稿 + 2 次免費修改"
+  },
+  {
+   "f": "src/data/products.ts",
+   "cls": "cert-claim",
+   "ctx": "春節年糕禮盒、端午粽、夏日冰品配送、中秋月餅聖誕禮籃。', features: [ '【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品', '【350g／400g 紙板】高挺度，保護糕點與茶葉不變形'"
+  },
+  {
+   "f": "src/data/products.ts",
+   "cls": "test-claim",
+   "ctx": "零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', features: [ '【食品級認證】SGS／FDA 通過，大豆油墨無遷移，可直接接觸食品', '【耐冷耐濕】0–4°C 冷藏環境保持黏性，適合生"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": " 張起印，無開版費，港九新界 HK$500 以上免費順豐速遞。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n戶外場景是防水貼紙的主場：餐飲外賣的冰桶與保溫袋、設備機身上"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "oduction, FDA-compliant adhesive for indirect food contact, SGS migration tested, over a decade of print exper"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "3年・屋内5年を実現。10枚から、版代なし、日本全国送料無料。国際認証体系の工場、FDA認可接着剤（間接食品接触対応）、SGS移行テスト済み、15年以上の印刷実績。\\n\\n防水ステッカーの主戦場は屋外です：飲食店の氷バケ"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "實淨。10 張起印，港九新界 HK$500 以上免費順豐速遞。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n最適合透明貼紙的載體：香水與精華液玻璃瓶、手工飲品與果酒瓶、"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "oduction, FDA-compliant adhesive for indirect food contact, SGS migration tested, over a decade of print exper"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "下地オプションで色彩をより実に。10枚から、日本全国送料無料。国際認証体系の工場、FDA認可接着剤（間接食品接触対応）、SGS移行テスト済み、15年以上の印刷実績。\\n\\n透明ステッカーが映える素材：香水や美容液のガラス"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n可移貼紙(無殘膠) 廣泛應用於 食品標籤及 FDA 包裝、戶"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "FDA-compliant adhesive (safe for indirect food contact) and SGS migration tested, so you can ship into the US "
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "がせるステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。国際認証体系の工場、DHL 国際配送で 2-4"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "0lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホ"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n小批量貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水貼"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "FDA-compliant adhesive (safe for indirect food contact) and SGS migration tested, so you can ship into the US "
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "小ロットステッカー — 日本市場向け高品質短納期印刷サービス。10 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。国際認証体系の工場、DHL 国際配送で 2-4"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "0lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホ"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n異形模切貼紙 廣泛應用於 食品標籤及 FDA 包裝、戶外防水"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "FDA-compliant adhesive (safe for indirect food contact) and SGS migration tested, so you can ship into the US "
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "型抜きステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。国際認証体系の工場、DHL 国際配送で 2-4"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "0lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホ"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "cert-claim",
+   "ctx": " \"description\": \"水果及食品標籤印刷 500 張起, 採用防水 PVC 或 PP 合成紙, 通過 SGS 食品接觸安全認證, 適合水果店、有機食品、烘焙店、外賣包裝。48 小時快遞 (順豐香港本地派送)。"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "general",
+   "ctx": ", 表面防水防油, 支持可變序號、二維碼 | 即時報價\", \"h1\": \"水果及食品標籤印刷 | 防水防油 SGS 食品接觸安全\", \"keywords\": [\"水果標籤\",\"食品標籤\",\"防水標籤\",\"標籤印刷\","
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "版費，港九新界 $500 以上免費順豐本地速遞，順豐速遞上門。国際認証体系工廠，FDA 認可膠水（適用於間接食品接觸），SGS 遷移測試，多年印刷經驗。\\n\\n水果貼紙食品標籤印刷 廣泛應用於 食品標籤及 FDA 包裝、"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "、銅版紙貼紙（70 磅，短期推廣用）（特殊需求或精品用途）。三種材質均通過 FDA 認可膠水（適用於間接食品接觸） 及 SGS 遷移測試 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "FDA-compliant adhesive (safe for indirect food contact) and SGS migration tested, so you can ship into the US "
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "食品ラベルシール — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。国際認証体系の工場、DHL 国際配送で 2-4"
+  },
+  {
+   "f": "src/data/sku-seo-data.ts",
+   "cls": "test-claim",
+   "ctx": "0lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホ"
+  }
+ ],
+ "heidelberg": [
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " altFloorPano: 'ZprintPro 印刷車間全景 — 摺紙機和後道加工線一覽', altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備', altHeidelberg"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "', altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備', altHeidelberg61: '海德堡 6+1 色組柯式印刷機實拍', altLabelPress: '商標輪轉機"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "刷機 — 小批量快速交付', capFloorPano: '車間全景 · 摺紙機與後道加工線', capHeidelberg: '海德堡 Speedmaster · 高端禮盒量產中', capHeidelberg61"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "工線', capHeidelberg: '海德堡 Speedmaster · 高端禮盒量產中', capHeidelberg61: '海德堡 6+1 色機組', capLabelPress: '商標輪轉機 · 標籤貼"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "cert-claim",
+   "ctx": "surance', desc: 'internationally certified + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "page-end CTA { step: '4', title: 'Production', desc: 'Heidelberg 4-color offset + HP Indigo digital · 6 produc"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " factorySectionSubtitle: 'In-house production facility · Heidelberg 4-color offset + HP Indigo digital + 6-col"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "amic view with folding machines and finishing line', altHeidelberg: 'Heidelberg Speedmaster 4-color offset pre"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "h folding machines and finishing line', altHeidelberg: 'Heidelberg Speedmaster 4-color offset press producing "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " 4-color offset press producing premium gift boxes', altHeidelberg61: 'Heidelberg 6+1 color offset press at ou"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " press producing premium gift boxes', altHeidelberg61: 'Heidelberg 6+1 color offset press at our facility', al"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "ano: 'Production floor · folding & finishing lines', capHeidelberg: 'Heidelberg Speedmaster · premium gift box"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "ion floor · folding & finishing lines', capHeidelberg: 'Heidelberg Speedmaster · premium gift boxes in product"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "erg Speedmaster · premium gift boxes in production', capHeidelberg61: 'Heidelberg 6+1 color unit', capLabelPre"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " · premium gift boxes in production', capHeidelberg61: 'Heidelberg 6+1 color unit', capLabelPress: 'Label rota"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "E ≤3 and color-consistent across batches.', altBanner: 'Heidelberg Speedmaster offset press full line at Zprin"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "fset press full line at ZprintPro factory', capBanner: 'Heidelberg Speedmaster full line · our own factory', a"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "nTitle: '工場・設備の実写', factorySectionSubtitle: '自社一貫生産工場 · Heidelberg 4色オフセット + HP Indigo デジタル · 6 工程 22 枚実写 ([工程"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " altFloorPano: 'ZprintPro 印刷工場のパノラマビュー — 折機と後加工ライン', altHeidelberg: 'Heidelberg Speedmaster 4色オフセット印刷機が高級ギフトボッ"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": ": 'ZprintPro 印刷工場のパノラマビュー — 折機と後加工ライン', altHeidelberg: 'Heidelberg Speedmaster 4色オフセット印刷機が高級ギフトボックスを印刷中', altH"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": ": 'Heidelberg Speedmaster 4色オフセット印刷機が高級ギフトボックスを印刷中', altHeidelberg61: 'Heidelberg 6+1色オフセット印刷機の実写', altLabelPr"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "peedmaster 4色オフセット印刷機が高級ギフトボックスを印刷中', altHeidelberg61: 'Heidelberg 6+1色オフセット印刷機の実写', altLabelPress: 'ラベル輪転機 — "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " 小ロット短納期対応', capFloorPano: '工場パノラマ · 折機と後加工ライン', capHeidelberg: 'Heidelberg Speedmaster · 高級ギフトボックス製造中', cap"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " capFloorPano: '工場パノラマ · 折機と後加工ライン', capHeidelberg: 'Heidelberg Speedmaster · 高級ギフトボックス製造中', capHeidelberg61:"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "Heidelberg: 'Heidelberg Speedmaster · 高級ギフトボックス製造中', capHeidelberg61: 'Heidelberg 6+1色機', capLabelPress: 'ラベル輪"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "idelberg Speedmaster · 高級ギフトボックス製造中', capHeidelberg61: 'Heidelberg 6+1色機', capLabelPress: 'ラベル輪転機 · ステッカー・ラベル'"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "ry: '全ロットを測色器で校正、Delta E ≤3 でロット間の一貫性を保証。', altBanner: 'Heidelberg Speedmaster オフセット印刷全ライン — ZprintPro 自社工場', "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " Speedmaster オフセット印刷全ライン — ZprintPro 自社工場', capBanner: 'Heidelberg Speedmaster 全ライン · 自社工場実写', altFoldingLine:"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": ".461a1 1 0 00.951-.69l1.07-3.292z\" /></svg> Heidelberg Speedmaster </span> <"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "y/factory-heidelberg-speedmaster-with-boxes.webp\" alt={t.altHeidelberg} loading=\"lazy\" className=\"absolute ins"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "61a1 1 0 00.951-.69l1.07-3.292z\" /></svg> Heidelberg Speedmaster </span> "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "om-4 left-4 right-4 text-white text-sm font-semibold\">{t.capHeidelberg}</figcaption> </figure> "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "=\"/images/factory/factory-heidelberg-6plus1.webp\" alt={t.altHeidelberg61} loading=\"lazy\" className=\"absolute i"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "om-3 left-3 right-3 text-white text-xs font-semibold\">{t.capHeidelberg61}</figcaption> </figure> "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "tems-center justify-center gap-2.5 mt-10\"> {['Heidelberg Speedmaster', 'Heidelberg 6+1', 'Label Rotary', '"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": " gap-2.5 mt-10\"> {['Heidelberg Speedmaster', 'Heidelberg 6+1', 'Label Rotary', 'Offset Line', 'HP Indigo']"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "销堆叠移至 page-end CTA { step: '4', title: '印刷生產', desc: '海德堡柯式 + HP Indigo 數碼 · 6 道工序實拍 · 詳見下方工廠區' }, { step: '"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "ionTitle: '廠房與設備 · 實拍', factorySectionSubtitle: '平湖廠房 · 海德堡柯式 + HP Indigo 數碼 · 6 大工序實拍 (色彩管理 → 柯式 → 數碼 → 後道裝訂 "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "Pano: 'ZprintPro 印刷車間全景 — 摺紙機和後道加工線一覽', altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備', altHeidelberg61: '海德堡 6+"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "lberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備', altHeidelberg61: '海德堡 6+1 色組柯式印刷機實拍', altLabelPress: '商標輪轉機 — 標籤貼紙量產設備',"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": ", capFloorPano: '車間全景 · 摺紙機與後道加工線', capHeidelberg: '海德堡 Speedmaster · 高端禮盒量產中', capHeidelberg61: '海德堡 6+1 色機"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "delberg: '海德堡 Speedmaster · 高端禮盒量產中', capHeidelberg61: '海德堡 6+1 色機組', capLabelPress: '商標輪轉機 · 標籤貼紙', capOffs"
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "lorStory: '每批印件以測色儀校準，Delta E ≤3，批次間色彩一致。', altBanner: '海德堡 Speedmaster 柯式印刷全線實拍 — 自家廠房核心設備', capBanner: '海德堡 "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "ner: '海德堡 Speedmaster 柯式印刷全線實拍 — 自家廠房核心設備', capBanner: '海德堡 Speedmaster 全線 · 自家廠房實拍', altFoldingLine: '摺紙機線 — "
+  },
+  {
+   "f": "src/app/[locale]/about/page.tsx",
+   "cls": "general",
+   "ctx": "tionSubtitle}</p> </div> {/* 顶部整图: 海德堡全线横幅 (K3 8/16 指定第一张, 整图, 调亮) */} <figure clas"
+  },
+  {
+   "f": "src/app/[locale]/blog/[slug]/page.tsx",
+   "cls": "general",
+   "ctx": " title: '智印港印刷公司簡介：專業設備與一站式印刷服務', description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區"
+  },
+  {
+   "f": "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx",
+   "cls": "general",
+   "ctx": "印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，提交檔案後 1 小時內免費數碼打稿"
+  },
+  {
+   "f": "src/app/[locale]/company-news/page.tsx",
+   "cls": "general",
+   "ctx": " date: '2024-06-01', excerpt: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Ma"
+  },
+  {
+   "f": "src/app/[locale]/company-news/page.tsx",
+   "cls": "general",
+   "ctx": "設備與一站式印刷服務', date: '2024-06-01', excerpt: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。', im"
+  },
+  {
+   "f": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+   "cls": "general",
+   "ctx": " shipping'], ], factoryMain: { tag: 'Offset', cap: 'Heidelberg offset press line' }, factoryDigi: { tag: 'Di"
+  },
+  {
+   "f": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx",
+   "cls": "general",
+   "ctx": "', '滿$500包郵'], ], factoryMain: { tag: '柯式印刷', cap: '海德堡柯式印刷機組' }, factoryDigi: { tag: '數碼印刷', cap: 'HP Indig"
+  },
+  {
+   "f": "src/components/home/HeroBanner.tsx",
+   "cls": "general",
+   "ctx": "igid-boxes/' }, { title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$"
+  },
+  {
+   "f": "src/components/home/HeroBanner.tsx",
+   "cls": "general",
+   "ctx": " { title: 'A2 Posters · Free Design Proof', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivi"
+  },
+  {
+   "f": "src/components/services/RushCapacity.tsx",
+   "cls": "general",
+   "ctx": "idelberg} loading=\"lazy\" /> <figcaption>智印港自營工廠・Heidelberg 印刷機實拍</figcaption> </figure> "
+  },
+  {
+   "f": "src/components/services/rush-data.ts",
+   "cls": "general",
+   "ctx": "認最終版本。\" }, ], }; export const ALT = { hero: \"即日印刷-智印港工廠Heidelberg印刷機-智印港\", heidelberg: \"即日印刷-智印港工廠Heidelberg印刷"
+  },
+  {
+   "f": "src/components/services/rush-data.ts",
+   "cls": "general",
+   "ctx": "ro: \"即日印刷-智印港工廠Heidelberg印刷機-智印港\", heidelberg: \"即日印刷-智印港工廠Heidelberg印刷機-智印港\", hpindigo: \"即日印刷-智印港HP Indigo數碼印刷"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "y-3 space-y-1\\\"><li><strong>Equipment</strong>: Do they use Heidelberg presses, Komori, or other international"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "h3>\\n<ul class=\\\"list-disc pl-5 my-3 space-y-1\\\"><li>German Heidelberg presses for precise color reproduction<"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "e if a printer is reliable?</strong><br/>A：Check equipment (Heidelberg presses/Komori), proofing service, clie"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "; EU exports comply with REACH. Printing precision ±0.05mm (Heidelberg SM102-5+L 5-color offset press); 100% i"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ntPro provides ISO Coated v2 / GRACoL ICC profile embedding，Heidelberg presses，X-Rite eXact spectrophotometer "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "le difference</li><li><strong>ZprintPro Equipment</strong>: Heidelberg presses，X-Rite eXact spectrophotometer,"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "scenarios), <strong>Traditional proof US$65/sheet</strong> (Heidelberg presses proof, suits brand color / food"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "Pantone spot color printing / ΔE color difference control / Heidelberg presses，X-Rite eXact spectrophotometer."
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "test-claim",
+   "ctx": " (4) ZprintPro 2026-07-14 Print Quality ΔE Sampling Report (Heidelberg presses，X-Rite eXact spectrophotometer,"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving global"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "er a decade of food-grade packaging expertise</strong>, 6+1 Heidelberg presses, FDA / EU / GB triple-certified"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "3>\\n<ul class=\\\"list-disc pl-5 my-3 space-y-1\\\"><li><strong>Heidelberg presses 6+1 Press</strong>: German-engi"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ered precision, superior color reproduction</li><li><strong>Heidelberg presses Digital Press</strong>: Variabl"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ong>: Automated binding for books, catalogs</li><li><strong>Heidelberg presses Folding Line</strong>: Multiple"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "ernationally certified quality management</li>\\n<li><strong>Heidelberg 6+1 press</strong>: real-time ΔE monito"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "test-claim",
+   "ctx": "ay buffer for FDA testing. ZprintPro provides DDP quotation，Heidelberg 6+1 press proofing，ISO 12647-2 calibrat"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "e contact / FSC-certified paper / over a decade / clients / Heidelberg 6+1 press / key industries / rush order"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " 2026/10/1); EU requires EN 646，ResAP(2002)1; ZprintPro DDP，Heidelberg presses proofing，ISO 12647-2 calibratio"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "antone spot color for school colors. ZprintPro uses US-spec Heidelberg presses Speedmaster 8-color with GRACoL"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "rff Jones Inspiration Avenue work directly with ZprintPro's Heidelberg presses Speedmaster and zOffset presses"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "SC chain-of-custody certification，internationally certified，Heidelberg 6+1 presses, serving corporate customer"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ing, and letterpress. ZprintPro runs all six in-house, with Heidelberg 6+1 presses for offset，specialty produc"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ntries · ZprintPro's Brand Strength</h2>\\n<p>ZprintPro runs Heidelberg presses 6+1 offset presses, Heidelberg "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": ">\\n<p>ZprintPro runs Heidelberg presses 6+1 offset presses, Heidelberg presses digital presses, and Martini pe"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "cade of printing experience; more than 1,000 brand clients; Heidelberg press equipment; 24-hour customer servi"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "ng before press. ZprintPro prints catalogs and art books on Heidelberg presses 6+1 color presses with ISO-cert"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "l-ready</strong> +$0.13-0.40/pc. ZprintPro 30 samples free, Heidelberg presses 6+1, internationally certified "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "nzhen Cailong factory (Longgang Pinghu Street) runs <strong>Heidelberg 6+1 press</strong>, Heidelberg presses,"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " Pinghu Street) runs <strong>Heidelberg 6+1 press</strong>, Heidelberg presses, Martini binder. <strong>intern"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "strong>50% Deposit + Production</strong>:5-7 business days, Heidelberg press.</li>\\n<li><strong>Shipping + Aft"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "quote (per ZprintPro many rush H1 2026 internal benchmark). Heidelberg 6+1 press quality, international top-ti"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": " printing · internationally certified，FSC-certified paper · Heidelberg 6+1 press · over a decade offset expert"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": ", over a decade offset expertise, internationally certified，Heidelberg 6+1 press quality, Shenzhen Cailong Pri"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": " printing · internationally certified，FSC-certified paper · Heidelberg 6+1 press · over a decade offset expert"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "strong>50% Deposit + Production</strong>:5-7 business days, Heidelberg press.</li>\\n<li><strong>Shipping + Aft"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "red by ZprintPro Editorial (over a decade print experience, Heidelberg 6+1 press, clients, key industries). Fo"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "er Colorspace，internationally certified，FSC-certified paper，Heidelberg 6+1 press Certification, making it one "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "g Co., Ltd.), internationally certified，FSC-certified paper，Heidelberg 6+1 press, quality consistent with Hong"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "rong>Equipment Certification</strong>: Does the printer use Heidelberg presses/Komori/Heidelberg presses inter"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "on</strong>: Does the printer use Heidelberg presses/Komori/Heidelberg presses international brand presses? He"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "sses/Komori/Heidelberg presses international brand presses? Heidelberg presses 6+1 is the high-end print press"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "able data printing，database management). ZprintPro upgraded Heidelberg presses digital press in August 2026, p"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "d Shenzhen Pinghu. over a decade print experience, clients, Heidelberg 6+1 press, FSC-certified paper, interna"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ards (300gsm matte) HK$0.65/pc at 100, HK$0.55/pc at 1,000. Heidelberg presses 6+1 and Heidelberg presses run "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "/pc at 100, HK$0.55/pc at 1,000. Heidelberg presses 6+1 and Heidelberg presses run dual-line production.</p>\\n"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "Pro Print Engineering Team (ZprintPro 15-Year Foil Master / Heidelberg Foil Master Certified) ・ Last updated: "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "5.300 food grade, F&B + baby safe.</li>\\n<li><strong>German Heidelberg 5-Color Press + Foil Press</strong> - P"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "0% Deposit + Production</strong>: 5-7 business days, German Heidelberg foil press + 4 foils + 5 materials.</li"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "ntPro 15-Year Foil Master ZprintPro Print Engineering Team (Heidelberg Foil Master Certified), last updated Se"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "Pro Print Engineering Team (ZprintPro 15-Year Foil Master / Heidelberg Foil Master Certified) ・ : <a href=\\\"ht"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "/ soy ink (FDA food-grade certified, student-safe) / German Heidelberg 5-color press (print quality +/- 0.1mm,"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "\\n<li><strong>5-7 Working Days Production</strong> - German Heidelberg 5-color press + soy ink + FSC-certified"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "trong>50% deposit + production</strong>: 5-7 business days, Heidelberg 5-color press + soy ink + FSC-certified"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": ">500+ offset includes CTP plate $40-100 USD/plate</li>\\n<li>Heidelberg Speedmaster 6+1 print, 5,000 sheets/hou"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ook) / CMYK (HK$0.50/book) / Spot UV + CMYK (HK$0.80/book). Heidelberg 5-color + soy ink, FDA + EU REACH. 100 "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " with its <strong>own factory in Shenzhen</strong>, running Heidelberg offset presses and an HP Indigo 15K B2 "
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "cert-claim",
+   "ctx": "l.</p>\\n\\n<p>Transparent factory: our own Shenzhen factory, Heidelberg offset and HP Indigo lines, FSC-certifi"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "eering team, over a decade in cross-border book printing on Heidelberg offset and HP Indigo lines.</p><p class"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "e product pages name an HP Indigo 15K B2 digital line and a Heidelberg offset press line. Offset needs plates,"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": "ng Kong, Europe, US and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color o"
+  },
+  {
+   "f": "src/data/blog-data/en.json",
+   "cls": "general",
+   "ctx": " and Japan.</p>\\n <p class=\\\"text-sm\\\">【Heidelberg Presses】Heidelberg Speedmaster 5-color offset, tolerance ±0"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "general",
+   "ctx": " 個無料実物サンプル。</li>\\n<li><strong>50% 前払い + 生産</strong>:5-7 営業日、Heidelberg 印刷機。</li>\\n<li><strong>出荷 + アフターサービス</s"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": "ray-600\\\">著者: ZprintPro 印刷エンジニアリングチーム (ZprintPro 長年箔押し工藝師 / Heidelberg Foil Master 認証) ・ 最終更新: 2026 年 9 月 4 日 "
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "general",
+   "ctx": "FDA 21 CFR 175.300 食品グレード、飲食 + ベビー安全.</li>\\n<li><strong>ドイツ Heidelberg 5 色印刷機 + 箔押し機</strong> - 印刷品質 ±0.1mm、箔押"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "general",
+   "ctx": " 防水テスト.</li>\\n<li><strong>50% 内金 + 生産</strong>: 5-7 営業日、ドイツ Heidelberg 箔押し機 + 4 種箔 + 5 種素材.</li>\\n<li><strong>"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": "600 mt-10\\\">本文は ZprintPro 長年箔押し工藝師 ZprintPro 印刷エンジニアリングチーム (Heidelberg Foil Master 認証) 執筆、最終更新 2026 年 9 月 4 日."
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": "00 mt-2\\\">著者: ZprintPro 印刷エンジニアリングチーム (ZprintPro 長年箔押し工藝師 / Heidelberg Foil Master 認証) ・ : <a href=\\\"https://w"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": "認証上質 / コート紙, ESG 学校第一選択) / 大豆インク (FDA 食品グレード認証, 學生安全) / ドイツ Heidelberg 5 色印刷機 (印刷精度 ±0.1mm, 色彩再現 98%) / 18:00 "
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": "済方法, 50% 前金で生産確定</li>\\n<li><strong>5-7 営業日生産</strong> - ドイツ Heidelberg 5 色印刷機 + 大豆インク + FSC 認証紙, 18:00 締切翌日生産,"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "cert-claim",
+   "ctx": " + 加工効果確認.</li>\\n<li><strong>50% 内金 + 生産</strong>: 5-7 営業日, Heidelberg 5 色印刷機 + 大豆インク + FSC 認証紙.</li>\\n<li><st"
+  },
+  {
+   "f": "src/data/blog-data/ja.json",
+   "cls": "general",
+   "ctx": "材質確定</li>\\n<li>500+ オフセットは CTP 版作成 HK$300-800/版含む</li>\\n<li>Heidelberg Speedmaster 6+1 印刷、5,000 枚/時、見当 ±0.05mm"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "lass=\\\"text-sm text-gray-600\\\">作者: 智印港印刷工程團隊 (智印港 多年燙金工藝師 / Heidelberg Foil Master 認證) ・ 最後更新: 2026 年 9 月 4 日 "
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "s=\\\"text-sm text-gray-600 mt-10\\\">本文由智印港 多年燙金工藝師 智印港印刷工程團隊 (Heidelberg Foil Master 認證) 撰寫, 最後更新 2026 年 9 月 4 日"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "\\\"text-sm text-gray-600 mt-2\\\">作者: 智印港印刷工程團隊 (智印港 多年燙金工藝師 / Heidelberg Foil Master 認證) ・ : <a href=\\\"https://w"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "通過 FDA 21 CFR 175.300 間接食品接觸測試，出口歐盟符合 REACH 法規。印刷精度 ±0.05mm（海德堡 SM102-5+L 五色膠印機），出貨前全檢色差 ΔE ≤ 2。</p>\\n<p>客戶案例："
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "</p>\\n<p>【智印港月曆服務事實卡】主體：智印港（彩龍印刷旗下品牌）；多年印刷經驗；累計 1,000+ 品牌客戶；海德堡印刷設備；24 小時客服 SLA；服務 多個行業；FSC 認證紙＋國際質量認證；歐盟 CPR "
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "ng> - 100% 大豆基環保油墨,FDA 食品級認證,學生 + 兒童安全。</li>\\n<li><strong>德國海德堡 5 色印刷機</strong> - 印刷品質 ±0.1mm,色彩還原 98%。</li>\\n"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 觸感 + 防水。</li>\\n<li><strong>50% 訂金 + 生產</strong>:5-7 個工作天,德國海德堡印刷機 + 9 大材質。</li>\\n<li><strong>出貨 + 售後</strong>"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "試黏力 + 防水。</li>\\n<li><strong>50% 訂金 + 生產</strong>:5-7 個工作天,德國海德堡印刷機。</li>\\n<li><strong>出貨 + 售後</strong>:100% QC"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "墨, FDA 21 CFR 175.300 食品級, 茶飲食品 + 母嬰安全.</li>\\n<li><strong>德國海德堡 5 色印刷機 + 燙金機</strong> - 印刷品質 ±0.1mm, 燙金定位精度 ±0"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "感 + 防水.</li>\\n<li><strong>50% 訂金 + 生產</strong>: 5-7 個工作天, 德國海德堡燙金機 + 4 種箔 + 5 種材質.</li>\\n<li><strong>出貨 + 售後</"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "100% FSC 認證書紙 / 銅版紙, ESG 學校首選) / 大豆油墨 (FDA 食品級認證, 學生安全) / 德國海德堡 5 色印刷機 (印刷品質 ±0.1mm, 色彩還原 98%) / 18:00 截單翌日生產 "
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "種付款方式, 50% 訂金確認生產</li>\\n<li><strong>5-7 個工作天生產</strong> - 德國海德堡 5 色印刷機 + 大豆油墨 + FSC 認證紙, 18:00 截單翌日生產, 急件 3 個工"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "cert-claim",
+   "ctx": "+ 工藝效果.</li>\\n<li><strong>50% 訂金 + 生產</strong>: 5-7 個工作天, 德國海德堡 5 色印刷機 + 大豆油墨 + FSC 認證紙.</li>\\n<li><strong>5 大"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "色彩/尺寸/材質</li>\\n<li>500+ 柯式印刷含 CTP 製版 HK$300-800/版</li>\\n<li>海德堡 Speedmaster 6+1 印刷, 5,000 張/小時, 對位 ±0.05mm</li"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "0/本, 圖文並茂國際教材) / 局部 UV + 四色 (HK$0.80/本, 封面 logo 強調). 智印港採用德國海德堡 5 色印刷機 + 大豆油墨, 100% 通過 FDA 21 CFR 175.300 + EU"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "印刷（HP Indigo 線）</th><th class=\\\"border p-2 text-left\\\">柯式印刷（海德堡機）</th></tr></thead><tbody><tr><td class=\\\"bord"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "作者團隊：</strong>智印港印刷工程團隊，多年跨境書刊印刷經驗，處理精裝、無線膠裝、騎馬釘同線圈裝等裝訂工藝，熟悉海德堡柯式線同 HP Indigo 數碼線嘅規格落差。</p><p class=\\\"mt-3\\\">數"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "印刷</a>每本 HK$2.8-1000。</p>\\n\\n<p>產品頁寫明用 HP Indigo 15K B2 數碼線同海德堡柯式印刷線。柯式要開版，印前準備屬固定成本，要印量夠大才攤得薄。交期：數碼 2-3 天、柯式 "
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": " 1,000+ 品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <"
+  },
+  {
+   "f": "src/data/blog-data/zh-hk.json",
+   "cls": "general",
+   "ctx": "品牌客戶】跨境訂單覆蓋香港、歐美及日本市場。</p>\\n <p class=\\\"text-sm\\\">【海德堡印刷設備】海德堡 Speedmaster 五色膠印機，印刷精度 ±0.05mm。</p>\\n <p class="
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。', en: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, "
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": " 风格, 跟 \"印刷公司\"主题不符) // 替换后: 3 locale 都用海德堡图 (factory floor + Heidelberg logo), 强化 \"印刷实力\" 主题 const lpHKPrintingG"
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "test-claim",
+   "ctx": " (HP Indigo, no plate fee, shortest lead time) with offset (Heidelberg, more economical above 100 copies, high"
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "ンストップ印刷サ | ZprintPro', }, excerpt: { 'zh-hk': '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。', en: "
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "-08-16 K3 09:00 拍板: hong-kong-printing-guide 3 locale 全部用新拍的海德堡 Speedmaster 印刷机图 // (public/images/factory/fac"
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "ebp 是 77.5KB 散点贴图 (V19 风格, 跟 \"印刷公司\"主题不符) // 替换后: 3 locale 都用海德堡图 (factory floor + Heidelberg logo), 强化 \"印刷实力\" "
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "ブランド・同人サークル向け。', }, // 2026-08-16 K3 拍板: 3 locale 全部用同一张海德堡图 (113.7KB webp, <120KB 硬约束) cover: { 'zh-hk': '/im"
+  },
+  {
+   "f": "src/data/blog-posts.ts",
+   "cls": "general",
+   "ctx": "低起訂量。本文拆解單價由頁數、開本、內頁紙同裝訂四項驅動的計法，對比數碼（HP Indigo，免開版費、交期短）同柯式（海德堡，100 本以上更經濟、色彩準確度高）兩種方式，並附裝訂、開本與紙材對比表、婚禮攝影師與畢業相"
+  },
+  {
+   "f": "src/data/buying-guides.ts",
+   "cls": "general",
+   "ctx": "engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving global"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "' : isEn ? 'Modern production base at our Asia factory with Heidelberg presses' : 'アジアにある自社工場。ハイデルベルグ印刷機稼働中' }"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "+ ICC Profile Management', points: [ 'Heidelberg offset printing + professional color separation +"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": " 'Color Management', value: 'ICC profile (GRACoL / Fogra) + Heidelberg color separation, 95%+ color accuracy.'"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "ft?', a: 'ICC profile color management (GRACoL / Fogra39) + Heidelberg offset press. Original RGB auto-convert"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "on Facility' : '自社工場 (アジア)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base at our A"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "+ ICC profile 管理，插畫色彩不偏色', points: [ '海德堡柯式印刷機 + 專業分色 + ICC profile 色彩管理', '原畫 RGB / s"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": " { label: '色彩管理', value: 'ICC profile (GRACoL / Fogra) + 海德堡分色，插畫色彩精準還原' }, { label: '跨境配送', value: 'DHL Expr"
+  },
+  {
+   "f": "src/data/category-seo-content.ts",
+   "cls": "general",
+   "ctx": "q: '插畫色彩會不會偏色？', a: '採用 ICC profile 色彩管理（GRACoL / Fogra39）+ 海德堡柯式機，原畫 RGB 自動轉 CMYK 校色，色彩還原度達 95%+。可先打樣確認。' }, "
+  },
+  {
+   "f": "src/data/product-specs-i18n.ts",
+   "cls": "general",
+   "ctx": "）\": { 'zh-hk': \"四色柯式印刷（海德堡）\", en: \"4-color offset printing (Heidelberg)\", ja: \"4色オフセット印刷（ハイデルベルク）\" }, \"覆膜（啞膠／光"
+  },
+  {
+   "f": "src/data/product-specs-i18n.ts",
+   "cls": "general",
+   "ctx": "on\", ja: \"300gコート紙または250gマットアート紙；マット／グロスラミネート\" }, \"四色柯式印刷（海德堡）\": { 'zh-hk': \"四色柯式印刷（海德堡）\", en: \"4-color offset"
+  },
+  {
+   "f": "src/data/product-specs-i18n.ts",
+   "cls": "general",
+   "ctx": "ットアート紙；マット／グロスラミネート\" }, \"四色柯式印刷（海德堡）\": { 'zh-hk': \"四色柯式印刷（海德堡）\", en: \"4-color offset printing (Heidelberg)\", j"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "or coated paper with foil stamping, spot UV, and embossing. Heidelberg 4-color offset printing delivers 90%+ c"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "that need an instant impression of substance and authority. Heidelberg 4-color offset printing delivers crisp "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "r, and holographic foil on 350-600g matte or uncoated card. Heidelberg 4-color offset + hot stamp foil deliver"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "d artwork before production. Delta E ≤2 color management on Heidelberg digital press.</li> </ul> <p><strong>Ce"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " paper with 4-color CMYK printing on one or both sides. Our Heidelberg offset presses deliver saturated color "
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "inting to ensure high-quality, vibrant images and text. Our Heidelberg presses guarantee front-to-back registr"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "g gloss or matte art paper with full 4-color CMYK printing. Heidelberg offset presses deliver sharp text and s"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "E. Free US shipping on orders over $100.</li> <li><strong>Heidelberg Offset Quality:</strong> Premium offset p"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "200-300g premium art paper or 250g+ for framed art quality. Heidelberg offset printing with optional laminatio"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "r $100.</li> <li><strong>Premium Offset Quality:</strong> Heidelberg offset with 90%+ color saturation, perfec"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " 1,000+.</li> <li><strong>Premium Print Quality:</strong> Heidelberg offset and large-format digital for crisp"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "e from matte cotton, satin photo, or premium art paper with Heidelberg offset precision or large-format giclée"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "en offset and giclée printing?</strong></summary><p>Offset (Heidelberg) is best for high-volume editions of 50"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "ollouts, and seasonal gifting campaigns.</li> <li><strong>Heidelberg 6-color offset + Pantone matching</strong"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "t enhances the visual appeal of the packets. ZprintPro uses Heidelberg 4-color offset printing for vibrant col"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "inting techniques to bring your custom designs to life. Our Heidelberg 4-color offset printing ensures vibrant"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "to ensure the highest quality eco-friendly red packets. Our Heidelberg 4-color offset printing ensures vibrant"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " <h3>Printing & Finishing Processes</h3> <p>ZprintPro uses Heidelberg 4-color offset printing to ensure vibran"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "sure high-quality, consistent results. Our state-of-the-art Heidelberg presses deliver exceptional color satur"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " technology to ensure high-quality, consistent results. Our Heidelberg presses deliver sharp images and accura"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "shing Processes</h3> <p>ZprintPro utilizes state-of-the-art Heidelberg offset printing technology to deliver v"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "es</h3> <p>Our envelopes are printed using state-of-the-art Heidelberg offset presses, ensuring 90%+ color sat"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "ts photos, gradients, precise brand color reproduction with Heidelberg 4-color offset press</li> <li><strong>I"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "zhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper sup"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "cert-claim",
+   "ctx": "ity issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and p"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "h3>印刷工藝と高精度型抜き</h3> <ul> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・寫真も精確再現</li> <li><stron"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "e> <h3>印刷工藝説明</h3> <ul> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色オフセット機で 90% 以上の色飽和、寫真・グラデーション・ブランド色も精確に再現</li>"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " <h3>印刷工藝と表面加工</h3> <ul> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、寫真・グラデーションも精確再現</li> <li><stron"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "e> <h3>印刷工藝説明</h3> <ul> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で高精細、グラデーション・寫真も精確に再現</li> <li><strong>両面印刷</"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " 幅までの長尺ポスター対応、継ぎ目なし</li> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・寫真も精確再現</li> <li><stron"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": "ルー・パープル・グリーン・オレンジ対応</li> <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、寫真・グラデーションも精確再現</li> <li><stron"
+  },
+  {
+   "f": "src/data/products-content.ts",
+   "cls": "general",
+   "ctx": " <ul> <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原，海德堡四色柯式機網點細膩。智印港 採用 ISO 12647 色彩管理標準</li> <li><stron"
+  },
+  {
+   "f": "src/data/products.ts",
+   "cls": "general",
+   "ctx": " size: '127×178mm（標準）；R3mm圓角可選', printMethod: '四色柯式印刷（海德堡）', finishing: '覆膜（啞膠／光膠）、局部UV、燙金、圓角模切', }, "
+  },
+  {
+   "f": "src/lib/quote-engine/core.ts",
+   "cls": "general",
+   "ctx": "ffset_4color: { setupPerSheet: 300, label: '4-Color Offset (Heidelberg SM74)' }, /** 5 色柯式 + UV - 含 UV 工艺 */ o"
+  },
+  {
+   "f": "src/lib/quote-engine/core.ts",
+   "cls": "general",
+   "ctx": "3' | 'B4' | 'B5' | 'large-format'; /** 标准印刷大版尺寸 (mm) — 来自海德堡/小森行业惯例 */ export const SHEET_SIZES: Record<SheetS"
+  },
+  {
+   "f": "src/lib/quote-engine/core.ts",
+   "cls": "general",
+   "ctx": "nings, suggestions, }; } /** * 启动成本 (HKD/版) — 海德堡/小森 4 色开机基准 * 不同印刷机类型 + 数量级有不同档位 */ export const PRE"
+  },
+  {
+   "f": "src/lib/quote-engine/core.ts",
+   "cls": "general",
+   "ctx": "t: 0, label: 'Digital (HP Indigo / Xerox)' }, /** 4 色柯式 (海德堡 SM74/小森) - 中小批量标准 */ offset_4color: { setupPerShe"
+  },
+  {
+   "f": "src/lib/quote-engine/formulas/business-cards.ts",
+   "cls": "general",
+   "ctx": "ness Cards', description: 'Premium 400gsm business cards. Heidelberg 4-color offset + HP Indigo. Printed in 24"
+  },
+  {
+   "f": "src/lib/seo/schema-extensions.ts",
+   "cls": "cert-claim",
+   "ctx": " + brand + '團隊提供專業建議。' }, { name: '印刷生產', text: '使用 Heidelberg 四色印刷機在 國際認證體系的深圳工廠進行專業印刷。' }, { name: '後加"
+  }
+ ]
+}

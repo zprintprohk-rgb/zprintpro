@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-17",
+  "sites": {
+    "hk": {
+      "file": "香港站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+      "days": 28,
+      "latest_date": "2026-10-12",
+      "data_age_days": 5,
+      "latest_imps": 504.0,
+      "prior7d_mean_imps": 429.3,
+      "trailing3d_mean_imps": 427.3,
+      "mean28_imps": 384.0,
+      "total28_imps": 10753.0,
+      "total28_clicks": 310.0,
+      "cliff_ratio": 1.174,
+      "depression_ratio": 1.113
+    },
+    "jp": {
+      "file": "日本站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+      "days": 28,
+      "latest_date": "2026-10-12",
+      "data_age_days": 5,
+      "latest_imps": 74.0,
+      "prior7d_mean_imps": 73.1,
+      "trailing3d_mean_imps": 62.3,
+      "mean28_imps": 71.6,
+      "total28_imps": 2004.0,
+      "total28_clicks": 28.0,
+      "cliff_ratio": 1.012,
+      "depression_ratio": 0.871
+    },
+    "us": {
+      "file": "美国站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx",
+      "days": 28,
+      "latest_date": "2026-10-12",
+      "data_age_days": 5,
+      "latest_imps": 98.0,
+      "prior7d_mean_imps": 102.4,
+      "trailing3d_mean_imps": 90.7,
+      "mean28_imps": 126.1,
+      "total28_imps": 3531.0,
+      "total28_clicks": 35.0,
+      "cliff_ratio": 0.957,
+      "depression_ratio": 0.719
+    }
+  },
+  "realtime_24h": {
+    "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-16.xlsx",
+    "hours": 24,
+    "window": "2026-10-15T08:00:00 ~ 2026-10-16T07:00:00",
+    "imps": 706.0,
+    "clicks": 24.0,
+    "recovery_ratio_vs_precliff": 1.206,
+    "recovery_ratio_vs_mean28_dynamic": 1.214,
+    "baseline": {
+      "combined_mean28": 585.2,
+      "source": "gsc-cliff-2026-10-13.json sites.{hk,jp,us}.mean28_imps (28d 档止 10-05)"
+    }
+  },
+  "alerts": []
+}

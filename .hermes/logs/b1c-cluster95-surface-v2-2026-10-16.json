@@ -1,0 +1,139 @@
+{
+ "scanned_at": "2026-10-16T09:49:22.002Z",
+ "fix_scope": [
+  "ISO 9001",
+  "ISO9001",
+  "15+ 年",
+  "15+ years",
+  "15,000+ clients",
+  "1,000+",
+  "1000+",
+  "16 years",
+  "16 Year",
+  "16 年",
+  "12 industries"
+ ],
+ "report_only": [
+  "Heidelberg",
+  "海德堡",
+  "SGS"
+ ],
+ "files": {
+  "src/app/[locale]/about/page.tsx": {
+   "ISO 9001": 2,
+   "1,000+": 10,
+   "1000+": 4,
+   "Heidelberg": 36,
+   "海德堡": 9,
+   "SGS": 1
+  },
+  "src/app/[locale]/blog/[slug]/page.tsx": {
+   "海德堡": 1
+  },
+  "src/app/[locale]/case-studies/page.tsx": {
+   "1000+": 1
+  },
+  "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx": {
+   "海德堡": 1
+  },
+  "src/app/[locale]/company-news/page.tsx": {
+   "Heidelberg": 1,
+   "海德堡": 1
+  },
+  "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx": {
+   "Heidelberg": 1,
+   "海德堡": 1
+  },
+  "src/app/[locale]/services/catalog-printing-china/page.tsx": {
+   "1,000+": 1,
+   "1000+": 1
+  },
+  "src/data/blog-data/en.json": {
+   "1,000+": 18,
+   "1000+": 2,
+   "12 industries": 30,
+   "Heidelberg": 77,
+   "SGS": 4
+  },
+  "src/data/blog-data/ja.json": {
+   "1,000+": 16,
+   "1000+": 2,
+   "Heidelberg": 10,
+   "SGS": 4
+  },
+  "src/data/blog-data/zh-hk.json": {
+   "1,000+": 21,
+   "1000+": 3,
+   "Heidelberg": 3,
+   "海德堡": 33,
+   "SGS": 5
+  },
+  "src/data/blog-posts.ts": {
+   "12 industries": 1,
+   "Heidelberg": 3,
+   "海德堡": 5
+  },
+  "src/data/buying-guides.ts": {
+   "1,000+": 2,
+   "1000+": 6,
+   "Heidelberg": 1
+  },
+  "src/data/category-conversion-blocks.ts": {
+   "1,000+": 8,
+   "SGS": 5
+  },
+  "src/data/category-seo-content.ts": {
+   "1,000+": 9,
+   "Heidelberg": 4,
+   "海德堡": 4,
+   "SGS": 7
+  },
+  "src/data/pillar-content.ts": {
+   "1,000+": 1
+  },
+  "src/data/product-faqs.ts": {
+   "SGS": 3
+  },
+  "src/data/product-specs-i18n.ts": {
+   "Heidelberg": 1,
+   "海德堡": 2
+  },
+  "src/data/products-content.ts": {
+   "1,000+": 35,
+   "Heidelberg": 25,
+   "海德堡": 7,
+   "SGS": 31
+  },
+  "src/data/products.ts": {
+   "1000+": 1,
+   "海德堡": 1,
+   "SGS": 3
+  },
+  "src/data/sku-seo-data.ts": {
+   "SGS": 28
+  },
+  "src/lib/quote-engine/core.ts": {
+   "Heidelberg": 1,
+   "海德堡": 3
+  },
+  "src/lib/quote-engine/formulas/business-cards.ts": {
+   "Heidelberg": 1
+  },
+  "src/lib/quote-engine/fx.ts": {
+   "1000+": 1
+  },
+  "src/lib/seo/schema-extensions.ts": {
+   "ISO 9001": 6,
+   "Heidelberg": 3
+  }
+ },
+ "totals": {
+  "ISO 9001": 8,
+  "1,000+": 121,
+  "1000+": 21,
+  "Heidelberg": 167,
+  "海德堡": 68,
+  "SGS": 91,
+  "12 industries": 31
+ }
+}

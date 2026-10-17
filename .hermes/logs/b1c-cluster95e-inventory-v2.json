@@ -1,0 +1,98 @@
+{
+ "scanned": "2026-10-16T11:04:14.158Z",
+ "files": {
+  "src/app/[locale]/about/page.tsx": {
+   "國際頂級": 1,
+   "1,000+": 10,
+   "1000+": 4,
+   "12 大行業": 1,
+   "15 years": 1
+  },
+  "src/app/[locale]/case-studies/page.tsx": {
+   "1000+": 1
+  },
+  "src/app/[locale]/services/catalog-printing-china/page.tsx": {
+   "1,000+": 1,
+   "1000+": 1
+  },
+  "src/components/CategoryFilter.tsx": {
+   "1000+": 1
+  },
+  "src/components/geo/CompareTable.tsx": {
+   "15 years": 1
+  },
+  "src/components/home/WhyChooseUs.tsx": {
+   "15 年": 1,
+   "15 years": 1
+  },
+  "src/components/services/rush-data.ts": {
+   "15 年": 1
+  },
+  "src/data/blog-data/en.json": {
+   "FSC C123456": 4,
+   "C123456": 4,
+   "1,000+": 18,
+   "1000+": 2,
+   "12 industries": 30,
+   "15 years": 48
+  },
+  "src/data/blog-data/ja.json": {
+   "FSC C123456": 3,
+   "C123456": 3,
+   "1,000+": 16,
+   "1000+": 2,
+   "15 年": 64
+  },
+  "src/data/blog-data/zh-hk.json": {
+   "FSC C123456": 2,
+   "C123456": 2,
+   "1,000+": 21,
+   "1000+": 3,
+   "12 大行業": 52,
+   "15 年": 82
+  },
+  "src/data/blog-posts.ts": {
+   "12 industries": 1,
+   "12 大行業": 3,
+   "15 年": 2
+  },
+  "src/data/buying-guides.ts": {
+   "1,000+": 2,
+   "1000+": 6,
+   "15 年": 6,
+   "15 years": 2
+  },
+  "src/data/case-studies/cover-industries-zh-hk.json": {
+   "12 大行業": 1
+  },
+  "src/data/category-conversion-blocks.ts": {
+   "1,000+": 8
+  },
+  "src/data/category-seo-content.ts": {
+   "1,000+": 9
+  },
+  "src/data/pillar-content.ts": {
+   "1,000+": 1
+  },
+  "src/data/products-content.ts": {
+   "1,000+": 35
+  },
+  "src/data/products.ts": {
+   "1000+": 1
+  },
+  "src/lib/quote-engine/fx.ts": {
+   "1000+": 1
+  }
+ },
+ "totals": {
+  "國際頂級": 1,
+  "1,000+": 121,
+  "1000+": 22,
+  "12 大行業": 57,
+  "15 years": 53,
+  "15 年": 156,
+  "FSC C123456": 9,
+  "C123456": 9,
+  "12 industries": 31
+ }
+}
