@@ -187,7 +187,9 @@ if (cmd === 'deploy') {
     if (!ibl) fail(`${p.e.slug}: imagesByLocale block not found`);
     const ind = block.slice(ibl.lineStart, ibl.start).match(/\s*$/)?.[0]?.match(/^\n?(\s*)/)?.[1] ?? '';
     const arr = (a) => `[${a.map(x => `'${x}'`).join(', ')}]`;
-    const iblNew = `imagesByLocale: {\n${ind}  'zh-hk': ${arr(p.paths['zh-hk'])},\n${ind}  en: ${arr(p.paths.en)},\n${ind}  ja: ${arr(p.paths.ja)}\n${ind}}`;
+    // NOTE: en/ja keys QUOTED on purpose — generate-image-sitemap.js only parses quoted locale keys (['"]loc['"]),
+    // bare en:/ja: IBL arrays were never indexed in sitemap-image.xml (pre-existing limitation, registered in D0 report §9/§4).
+    const iblNew = `imagesByLocale: {\n${ind}  'zh-hk': ${arr(p.paths['zh-hk'])},\n${ind}  'en': ${arr(p.paths.en)},\n${ind}  'ja': ${arr(p.paths.ja)}\n${ind}}`;
     block = block.slice(0, ibl.start) + iblNew + block.slice(ibl.close + 1);
 
     const leg = extractLegacyImages(block);
@@ -219,16 +221,18 @@ if (cmd === 'deploy') {
   if (!check.includes('智印港')) { fs.writeFileSync(PRODUCTS, ts0, 'utf8'); fail('utf8 sanity check failed — reverted'); }
   console.log(`backup -> ${bakDir}`);
 
-  // -- sitemap regen + assertion (wave URLs must be present; pre-existing non-wave URLs must not regress)
-  const beforeXml = fs.existsSync(SITEMAP) ? fs.readFileSync(SITEMAP, 'utf8') : '';
-  const beforeSet = new Set([...beforeXml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(x => x[1]));
+  // -- sitemap: FRESH pre-patch baseline (run generator on current products.ts BEFORE patch), then post-patch regen.
+  // (The committed sitemap is often stale vs products.ts due to cluster batches; comparing against it would misattribute cleanup as regression.)
+  const gen0 = spawnSync('node', ['scripts/generate-image-sitemap.js'], { encoding: 'utf8', shell: true });
+  if (gen0.status !== 0) fail(`baseline sitemap generator exit=${gen0.status}: ${(gen0.stderr || '').slice(0, 400)}`);
+  const baselineSet = new Set([...fs.readFileSync(SITEMAP, 'utf8').matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(x => x[1]));
   const waveSlugs = plan.map(p => p.e.slug);
   const gen = spawnSync('node', ['scripts/generate-image-sitemap.js'], { encoding: 'utf8', shell: true });
   if (gen.status !== 0) fail(`sitemap generator exit=${gen.status}: ${(gen.stderr || '').slice(0, 400)}`);
   const xml = fs.readFileSync(SITEMAP, 'utf8');
   const afterSet = new Set([...xml.matchAll(/<image:loc>([^<]+)<\/image:loc>/g)].map(x => x[1]));
-  const lost = [...beforeSet].filter(u => !afterSet.has(u) && !waveSlugs.some(s => u.includes(s)));
-  if (lost.length) fail(`sitemap regressed: ${lost.length} pre-existing non-wave image URLs dropped (e.g. ${lost.slice(0, 3).join(' | ')})`);
+  const lost = [...baselineSet].filter(u => !afterSet.has(u) && !waveSlugs.some(s => u.includes(s)));
+  if (lost.length) fail(`sitemap regressed vs fresh baseline: ${lost.length} non-wave URLs dropped by patch (e.g. ${lost.slice(0, 3).join(' | ')})`);
   const missing = [];
   for (const p of plan) {
     for (const l of LOCALES) {
@@ -238,7 +242,7 @@ if (cmd === 'deploy') {
     for (const img of Object.values(p.paths).flat()) if (!xml.includes(img)) missing.push('img:' + img);
   }
   if (missing.length) fail(`sitemap missing ${missing.length} wave URLs (e.g. ${missing.slice(0, 5).join(' | ')}) — check generator page/image URL format`);
-  console.log(`sitemap regen OK: image:loc ${beforeSet.size} -> ${afterSet.size}, wave URLs all present, 0 non-wave regression`);
+  console.log(`sitemap regen OK: image:loc ${baselineSet.size} -> ${afterSet.size}, wave URLs all present, 0 non-wave regression vs fresh baseline`);
 
   console.log('\nDONE. Next steps (manual, per §0.25/§12):');
   console.log('  1) node scripts/check-encoding.js && npx tsc --noEmit (增量 0)');

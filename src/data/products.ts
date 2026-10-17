@@ -2452,20 +2452,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/thick-paper-flyers.jpg'],
+    images: ['/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-2.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-2.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-2.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-hero.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-detail.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-variety.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-hero.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-detail.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-variety.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-hero.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-detail.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-variety.webp', '/images/products/v28_5/thick-paper-flyers/zprintpro-flyers-thick-paper-flyers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -5924,30 +5915,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/spiral-notebooks.jpg'],
+    images: ['/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-en.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-ja.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-spiral-notebooks-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-hero.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-detail.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-variety.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-hero.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-detail.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-variety.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-hero.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-detail.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-variety.webp', '/images/products/v28_5/spiral-notebooks/zprintpro-books-spiral-notebooks-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -6829,29 +6801,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 100,
-    images: ['/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp'],
+    images: ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-magnetic-closure-gift-box-en-1.webp', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp' },
@@ -7107,24 +7061,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 500,
-    images: ['/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp'],
+    images: ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp'],
     imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-3.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp',
-      ],
+      'zh-hk': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-multi-angle.webp'],
+      'en': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-multi-angle.webp'],
+      'ja': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-multi-angle.webp']
     },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja.webp' },
@@ -7277,24 +7218,11 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒', nameEn: 'Tuck End Boxes (Straight/Airplane) | Custom Packaging & Lightweight', nameJa: '差し込み式ボックス (直挿/飛行機挿) | パッケージ・軽量', title_zh: '卡盒/插口盒印刷訂製 免刀模 · 餐飲外賣零售快消首選 · 智印港',
     description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。插口盒訂製、免刀模費適用：餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲。',
-    images: ['/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp'],
+    images: ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp'],
     imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-4.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-5.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-3.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-3.webp',
-      ],
+      'zh-hk': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-multi-angle.webp'],
+      'en': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-multi-angle.webp'],
+      'ja': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-multi-angle.webp']
     },
     price_range: 'HK$1,538-7,478',
     basePrice: 1538,

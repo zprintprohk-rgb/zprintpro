@@ -4,6 +4,16 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
+> **当前状态**: 🔓 **已释放** — 2026-10-17 12:5x AutoClaw 会话（v28_5 换图 W1 执行，千问裁定「立即执行不再等待」+ K3 转达）
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（v28_5 换图车道 W1） |
+> | **意图** | W1 五 SKU 换图部署（spiral-notebooks / thick-paper-flyers / magnetic-closure-gift-box / tuck-end-boxes / gang-run-card-boxes）：60 webp 入库 + products.ts IBL(3×4 全引号键)+legacy 补丁 + sitemap 重生成 + 探针 + IndexNow；随后 CL-1017 六月历同日第二波 |
+> | **写入范围** | `public/images/products/v28_5/<5 slug>/`（新增 60）· `src/data/products.ts`（仅 5 块 IBL+legacy）· `public/sitemap-image.xml`（regen）· `scripts/v28_5-image-deploy.mjs`（断言基线修正 + 引号键）· `SESSION_LOCK.md` · `docs/2026-10-16-v28_5-image-swap-d0-precheck.md`（§9.6）· `.hermes/logs/`；不碰 title/minQuantity/seoImages/imageAlt |
+> | **双条件核验** | ① src/ 无 MM 无 staged 删除（12:48 实测 0）② 对端静默：最后 commit 19:23（昨），晨间无写入 ✓；push 闸距上次 17.6h ✓ |
+> | **释放结果** | 首跑被 sitemap 断言正确拦截 → 归因 108 陈旧 + 12 良性（§0.23.2 双方法）→ 断言基线改「补丁前新鲜重生成」后全绿：60/60 波次 URL 入图站图、非波次零回归、tsc 54=54、禁改字段零触碰；详见 `docs/2026-10-16-v28_5-image-swap-d0-precheck.md` §9.6 |
+
 > **当前状态**: 🔓 **已释放** — 2026-10-16 14:3x AutoClaw 会话（簇9 全站清扫 DONE + 簇9.5 全站 CRED 清扫 DONE + 千问扣分项闭环）
 >
 > | 项 | 值 |
