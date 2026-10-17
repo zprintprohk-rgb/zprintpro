@@ -22,41 +22,37 @@ function escapeXml(s) {
     .replace(/'/g, '&apos;');
 }
 
-// Strategy: find every "  slug: 'xxx'" at 2-space indent (product property),
-// then walk back to find the nearest enclosing "  {" object start,
-// then extract name + images + imagesByLocale from that block.
-const slugRe = /^\s{4}slug:\s*['"]([^'"]+)['"]/gm;
-const products = [];
+// Strategy (2026-10-17 fix): blocks are sliced by SLUG ORDER, not by brace hunting —
+// products.ts has mixed indentation (most blocks 2-space objects/4-space fields, doujinshi 0-space object/6-space fields).
+// Slug lines are line-anchored at any indent; each block = [slug_i, slug_{i+1}) which always contains name/imagesByLocale/images.
+// Locale keys in imagesByLocale may be quoted ('zh-hk', 'en') or bare (en:, ja:) — both accepted.
+const slugRe = /^[ \t]*slug:\s*['"]([^'"]+)['"]/gm;
+const slugHits = [];
 let m;
 while ((m = slugRe.exec(productsTs)) !== null) {
-  const slug = m[1];
-  const slugIndex = m.index;
-  // Find block start: previous "\n  {" (2-space-indented object start in array)
-  let startPos = productsTs.slice(0, slugIndex).lastIndexOf('\n  {');
-  if (startPos === -1) continue;
-  // Find block end: next "\n  {" (next product start) OR "\n];" (array end) OR "\n  }" (array-of-object close)
-  let endPos = productsTs.indexOf('\n  {', slugIndex);
-  if (endPos === -1) {
-    endPos = productsTs.indexOf('\n];', slugIndex);
+  slugHits.push({ slug: m[1], index: m.index });
+}
+const products = [];
+for (let si = 0; si < slugHits.length; si++) {
+  const { slug, index: slugIndex } = slugHits[si];
+  let endPos = si + 1 < slugHits.length ? slugHits[si + 1].index : productsTs.length;
+  if (si + 1 === slugHits.length) {
+    const arrEnd = productsTs.indexOf('\n];', slugIndex);
+    if (arrEnd !== -1) endPos = arrEnd;
   }
-  if (endPos === -1) endPos = productsTs.length;
-  const block = productsTs.slice(startPos, endPos);
+  const block = productsTs.slice(slugIndex, endPos);
 
-  // Extract name. Try simple string form first (products.ts uses this),
-  // then fallback to object form { 'zh-hk': '...', en: '...', ja: '...' }.
-  // NOTE: there's also seoImages.filename.name, so we anchor on the FIRST occurrence.
-  const nameSimpleMatch = block.match(/^\s{4}name:\s*['"]([^'"]+)['"]/m);
-  const productName = nameSimpleMatch
-    ? nameSimpleMatch[1]
-    : slug;
+  // Extract name (first `name:` at any indent; nameEn/nameJa do not match `name:`)
+  const nameSimpleMatch = block.match(/^[ \t]+name:\s*['"]([^'"]+)['"]/m);
+  const productName = nameSimpleMatch ? nameSimpleMatch[1] : slug;
 
-  // Extract imagesByLocale (inner block is 4-space indented)
+  // Extract imagesByLocale (closing brace at any indent >= 4; locale keys quoted OR bare)
   const imagesByLocale = { 'zh-hk': [], en: [], ja: [] };
-  const iblMatch = block.match(/imagesByLocale:\s*\{([\s\S]*?)\n\s{4}\}/);
+  const iblMatch = block.match(/imagesByLocale:\s*\{([\s\S]*?)\n\s{4,}\}/);
   if (iblMatch) {
     const inner = iblMatch[1];
     for (const loc of ['zh-hk', 'en', 'ja']) {
-      const locMatch = inner.match(new RegExp(`['"]${loc}['"]:\\s*\\[([^\\]]*?)\\]`));
+      const locMatch = inner.match(new RegExp(`(?:['"]${loc}['"]|\\b${loc})\\s*:\\s*\\[([^\\]]*?)\\]`));
       if (locMatch) {
         const arr = locMatch[1];
         const urls = [];

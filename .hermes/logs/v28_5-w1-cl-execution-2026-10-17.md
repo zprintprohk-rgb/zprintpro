@@ -31,11 +31,31 @@
 | 断言 | validation PASS / copy 72 / patch 6 / sitemap 全绿 / tsc 54=54 |
 | 待办 | push（后台到点执行）→ verify-deploy → probe → IndexNow |
 
-## 生成器三发现（本批 regen 实证，登记待修）
+## 生成器三发现（本批 regen 实证，登记待修 → **已于 2026-10-17 修完，W2 前置清零**）
 
-1. `generate-image-sitemap.js` 的 locale 正则 `['"]loc['"]` **只认带引号的键**——站内 IBL 的 `en:` / `ja:` 为裸键，**en/ja 图历史上从未被图站图收录**。本批 5+6 块改写为全引号键后 en/ja 首次正确入图。
-2. slug 行正则 `^\s{4}slug:` 只认 4 空格缩进——`doujinshi-printing`（6 空格块）整页缺席图站图（建议 `\s{4,}`）。
-3. 站点图存在系统性陈旧（HEAD 981 条 → regen 1030 条；108 条陈旧清理）——本次 regen 使图站图与 products.ts 真值对齐，属正向卫生。
+### 修复记录（commit 见 git log；千问 P0×2 + P1×1 全部关闭）
+
+| # | 缺陷 | 修法 | 验证 |
+|---|---|---|---|
+| P0-1 | locale 键正则 `['"]loc['"]` 只认引号键 → en/ja 裸键 IBL 从未入图站图 | 改为 `(?:['"]loc['"]|\b loc)` 兼容裸键（**修消费端不改数据**，W1/CL 的引号键写法仍兼容）| en/ja 全部按 IBL 真实数组收录 |
+| P0-2 | slug 行正则 `^\s{4}slug:` 只认 4 空格 + 括号式切块（doujinshi 0 缩进对象/6 缩进字段被漏）| 改为 **slug 顺序切块**（block = [slug_i, slug_{i+1})，无括号依赖）+ slug `^[ \t]*slug:` 任意缩进 + name `^[ \t]+name:` | doujinshi 入图（zh1/en1/ja5 = 其真实 IBL）|
+| P1-3 | 图站图系统性陈旧导致断言误报 | 部署脚本断言基线 = 补丁前新鲜重生成（已在 W1 首跑事件中落地）| 已生效 |
+
+### 修复后全量核验（双方法）
+
+- **83/83 产品全解析**（修复前 75）、**249 产品页 = 83×3**、**0 个 slug 缺 locale**；页 loc 239→297（含 48 hero）
+- 图 loc 1077（distinct 1075；唯一重复 = `doujinshi-printing.webp` 在 zh/en/ja 三个页面复用，合法）
+- **BC 六兄弟恢复**（此前整版缺席）：premium/foil 等各 4/4/4（v26 路径）
+- **婚礼两页恢复**：foil-wedding-invitations / wedding-thank-you-cards 各 4/4/4（seedream 路径）
+- v28_5 = 132（11 slug × 12）保持不变；locale 图数分布 1-8 与各 SKU 真实 IBL 一致（无捏造）
+- 本修复为**纯消费端改动**（生成器），products.ts 零改动
+
+## 7 天监控协议（千问 §7 采纳，K3/人工执行）
+
+- 每日 2 分钟：GSC 效果→页面→筛 5 个 W1 PDP：展示/点击波动 ≤±20%；GSC 网页索引无新增排除；线上抽查 1 PDP 图片正常
+- 第 3 天：PageSpeed Insights 对比 1 个 W1 PDP 的 LCP（应改善或持平）；GSC 图片搜索仍为 0
+- 第 7 天（W1 归因窗关闭）：28d 对比 5 PDP 展示/点击/排名；无异常 → W2 归因窗开启
+- 阈值触发→暂停后续波次并复盘
 
 ## 与计划的对照
 
