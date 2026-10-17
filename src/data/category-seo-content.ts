@@ -169,6 +169,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '【點解拼版彩盒平 40-60%：免刀模費 vs 同業 HK$300-800 刀模費】e-print / hk-printing 等香港同業常規盒型照收刀模費（行業慣例 HK$300-800 一套）；我哋嘅 [拼版白卡彩盒（PKG-016）](/zh-hk/product/gang-run-card-boxes/) 採用固定刀模共用設計，500 枚起印即享免刀模費 + 免排版費，新品牌首批 1,000 枚計算可慳 HK$300-800 直接變淨利。紙盒印刷 + 紙盒訂製客戶可選拼版方案壓低成本，彩盒 50-10,000 枚都受惠。',
       ],
       links: [
+        { label: '食品包裝訂製 — FDA 食品級紙盒', href: '/zh-hk/product/food-boxes/' },
         { label: '包裝盒訂製指南', href: '/zh-hk/blog/packaging-box-custom-guide/' },
         { label: '食品包裝印刷指南', href: '/zh-hk/blog/food-packaging-printing-guide/' },
         { label: '紙袋訂製', href: '/zh-hk/category/paper-bags/' },
