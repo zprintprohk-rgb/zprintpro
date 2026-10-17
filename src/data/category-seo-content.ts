@@ -160,7 +160,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '包裝盒訂製第一句結論：先定用途（運輸防撞定開箱體驗）、再揀盒型、最後先睇工藝。彩盒 50 個起、常規款 100 個起，3 天出貨，免費刀模設計。用途定得清，紙材同預算即刻收窄一半。',
         '盒型按行業揀：電商物流用瓦楞飛機盒（E/F 坑，抗壓耐摔）；美妝護膚用白卡彩盒或磁吸禮盒，開箱有儀式感；婚禮喜糖用天地蓋細盒 30 個起；茶飲食品用摺盒加窗口，睇到內容物先好賣。20 幾款標準盒型之外仲可以全客製。',
         '紙盒訂製嘅紙材決定檔次：300–350g 白卡挺括顯色靚，係彩盒主流；牛皮紙環保自然，有機品牌最愛；瓦楞紙按坑紋分 E 坑（薄身彩箱）同 F 坑（細盒緩衝）；出口歐美建議用 FSC 認證環保紙，清關文件齊全。',
-        '食品包裝訂製有硬規矩：必須用食品級紙材同無毒大豆油墨，通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件，慳返自己搵檢測嘅時間。',
+        '食品包裝訂製有硬規矩：必須用食品級紙材同環保油墨選項（落單時註明），通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件，慳返自己搵檢測嘅時間。',
         '工藝係包裝盒印刷嘅加分位：燙金燙銀令 LOGO 有金屬光澤，局部 UV 凸出重點，擊凸做立體手感，開窗加 PVC 片展示產品。建議新品牌先做 1–2 款工藝打樣上手，睇到實物先決定量產，我哋打樣當日完成。',
         '數量同價錢嘅甜蜜點：數碼印刷 50–500 個免製版、試產最靈活；1,000 個以上柯式印刷單價可低至 HK$0.8/個；5,000 個以上約 5–7 天交，再有階梯折扣。旺季（中秋、聖誕、農曆新年）請提早 3 星期落單。',
         '好多客戶搜「包裝盒訂製」時最驚兩件事：刀模出錯同大貨色差。我哋嘅做法係免費刀模設計加數碼打樣，你確認結構同顏色先開印，印前團隊逐個檔案檢查出血、刀線同色彩模式，將出錯風險壓到最低。',
@@ -187,7 +187,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: '包裝盒最低多少個起訂？', a: '婚禮喜糖盒 30 個起，彩盒 50 個起，常規工業款 100–200 個起。遠低於傳統工廠的 500–1,000 個標準。' },
       { q: '包裝盒有哪些盒型可選？', a: '天地蓋盒、書型盒、抽屜盒、折疊盒、飛機盒、磁吸盒等 20 餘種標準盒型，亦支持完全訂製設計。' },
       { q: '可以用環保紙張嗎？', a: '可以。所有盒型均可選 FSC 認證環保紙張，符合國際環保標準，適合出口歐美市場。' },
-      { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和無毒大豆油墨，通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' },
+      { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和環保油墨選項（落單時註明），通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' },
       { q: '包裝盒印刷需要多久？', a: '常規訂單 3 天出貨；快印服務 2 天交付；打樣當日完成。大批量訂單（5,000 個以上）約 5–7 天。' },
       { q: '可以自己設計刀模線嗎？', a: '可以。我們接受 AI / PDF 格式的刀模線文件（CMYK，300dpi）。如果不熟悉刀模設計，我們提供免費刀模設計服務。' },
       { q: '瓦楞紙箱能做抗壓測試嗎？', a: '可以。我們可根據 ISTA 標準進行抗壓和跌落測試，確保物流運輸安全。測試報告可作為出口通關文件。' },
@@ -198,14 +198,14 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Custom Packaging Box Printing — From 100 Units, Free Die-Cut Design, 3-Day Delivery',
+    h2: 'Custom Packaging Box Printing — From 100 Units, Free Die-Cut Design, 3-5 Day Production',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Packaging?',
       items: [
         {
           heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
           points: [
-            'We offer 10 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs.',
+            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs.',
             'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
             'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
           ],
@@ -275,7 +275,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         'Custom packaging boxes start with one decision: is this box for shipping protection or unboxing experience? That answer picks the style, and everything else follows. Color boxes start at 50 units, standard styles at 100, with free dieline design and 3-day production.',
         'Match box style to product. Corrugated mailer boxes (E/F flute) survive e-commerce shipping; white card folding cartons and magnetic rigid boxes give beauty brands a premium unboxing moment; small two-piece favor boxes start at just 30 units for weddings; window boxes let food products sell themselves on the shelf. Over 20 standard styles, plus fully custom structures.',
         'Paper stock sets the grade: 300–350gsm white card is the crisp, color-accurate standard for retail boxes; kraft reads eco and organic; E-flute corrugated handles thin retail cartons while F-flute cushions smaller boxes. Exporting to the US or EU? FSC-certified paper keeps customs paperwork simple.',
-        'Food packaging has hard rules. Food-grade paper and non-toxic soy inks are non-negotiable, SGS-tested as standard; bakeries, tea, and supplement brands should add moisture-resistant coatings, and QR codes enable batch traceability. We handle compliance documentation so you do not have to chase labs yourself.',
+        'Food packaging has hard rules. Food-grade paper and eco-friendly ink options are available, SGS-tested as standard; bakeries, tea, and supplement brands should add moisture-resistant coatings, and QR codes enable batch traceability. We handle compliance documentation so you do not have to chase labs yourself.',
         'Finishes are where custom boxes outshine stock packaging: gold or silver foil makes logos gleam, spot UV highlights key art, embossing adds touch, and PVC windows show the product inside. Start with one or two finishes on a free same-day sample before committing to volume.',
         'Pricing rewards scale: digital printing covers 50–500 units with no plate fees; offset from 1,000 units drops unit costs to as low as cents per box; 5,000+ runs take 5–7 days with tiered discounts. Order 3 weeks ahead of peak seasons like Christmas.',
         'From quote to doorstep: submit style, dimensions, quantity, stock, and finishes for a 30-second AI quote, approve free dielines and samples, and we ship in 3 days. Free shipping over $99, DHL express in 2–4 days worldwide, plus ISTA compression-test reports for export orders.',
@@ -291,7 +291,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: 'What is the minimum order for packaging boxes?', a: 'Wedding favor boxes from 30 units, color boxes from 50 units, standard industrial from 100–200 units. Far below traditional factory minimums of 500–1,000.' },
       { q: 'What box styles are available?', a: 'Over 20 standard styles including rigid boxes, book-style boxes, drawer boxes, folding cartons, mailer boxes, and magnetic boxes. Fully custom designs also supported.' },
       { q: 'Can I use eco-friendly paper?', a: 'Yes. All box types are available with FSC-certified eco paper, meeting international environmental standards for export to Europe and America.' },
-      { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and non-toxic soy-based inks, certified by SGS and compliant with international food safety authorities food safety requirements.' },
+      { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and eco-friendly ink options (specify at order), certified by SGS and compliant with international food safety authorities food safety requirements.' },
       { q: 'How long does packaging printing take?', a: 'Standard orders: 3 days. Rush service: 2 days. Prototyping: same day. Large orders (5,000+ units): approximately 5–7 days.' },
       { q: 'Can I design my own die-cut lines?', a: 'Yes. We accept AI / PDF die-cut files (CMYK, 300dpi). If you are unfamiliar with die-cut design, we provide free die-cut design services.' },
       { q: 'Can corrugated boxes pass compression testing?', a: 'Yes. We perform compression and drop testing per ISTA standards to ensure logistics safety. Test reports can serve as export customs documents.' },
@@ -302,14 +302,14 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: 'パッケージ印刷・箱製作 — 100個から、無料型設計、3日納品',
+    h2: 'パッケージ印刷・箱製作 — 100個から、無料型設計、3-5日納品',
     coreAdvantages: {
       title: 'ZprintPro パッケージの強み',
       items: [
         {
           heading: '1. 全素材・全シーン対応：ECカラーボックスから医薬品規格箱まで',
           points: [
-            'カスタムカラーボックス、段ボール箱、磁石式化粧品箱、FSC認証エコ箱、ギフト箱、ウエディングボックスなど10大シリーズを提供。',
+            'カスタムカラーボックス、段ボール箱、磁石式化粧品箱、FSC認証エコ箱、ギフト箱、ウエディングボックスなど12大シリーズを提供。',
             '食品グレード紙材、日本の食品衛生基準対応、輸出規格、QR追跡コード、防湿加工 — 法規制と越境要件を満たします。',
             'EC物流、美容ブランド、食品ギフト、医薬品・健康食品、結婚式引き出物、企業ギフトなど多様なシーンに対応。',
           ],
@@ -317,7 +317,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 小ロット対応＋迅速納品、在庫リスクを削減',
           points: [
-            '最小30–50個から（ウエディング／カラーボックス）、通常100個から — スタートアップブランドの試作に最適。',
+            '全箱型100個から — スタートアップブランドの試作に最適。',
             '通常3日出荷、急行2日対応。アジア自社工場直送｜日本全国SFエクスプレス配送 — 海運待ち不要。',
             '単価HK$0.8～、大量在庫不要で経済的。',
           ],
@@ -359,7 +359,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: 'サイズ範囲', value: '完全カスタマイズ。一般的なサイズ：10×10×5cm（カラーボックス）、30×20×15cm（段ボール）。' },
-        { label: '最小発注数', value: '30個から（ウエディングボックス）、50個から（カラーボックス）、100–200個から（標準／工業用）。' },
+        { label: '最小発注数', value: '100個から（全箱型共通、カスタム型抜きは500個から）。' },
         { label: '納期', value: '通常3日出荷。急行2日。サンプル：当日完成。' },
         { label: 'ファイル要件', value: 'AI／PDF（CMYK、300dpi、型抜き線含む）。無料型設計サービスあり。' },
         { label: '構造テスト', value: '段ボール箱はISTA基準の圧縮／落下テストを実施し、物流安全を確保。' },
@@ -376,10 +376,10 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'パッケージ選び方ガイド',
       paragraphs: [
-        'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。カラーボックスは50個から、標準タイプは100個からの小ロット対応。無料の抜き型設計付き、3日生産の短納期です。',
+        'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。全箱型100個からの小ロット対応。無料の抜き型設計付き、デジタル3-5日・オフセット5-7日の短納期です。',
         '箱型は商品に合わせて。段ボールのメーラーボックス（E/Fフルート）はEC発送に強く、白カードの組み箱やマグネット式化粧箱はコスメブランドの開封体験を演出。キャラメル型や窓付き箱は食品の店頭訴求に。20種以上の定型＋完全カスタムに対応します。',
         '用紙は300–350g白カードが発色・強度の標準。クラフト紙はエコ・オーガニックな印象、Eフルートは薄手の化粧箱、Fフルートは小箱の緩衝に。欧米輸出にはFSC認証紙が通関手続きをスムーズにします。',
-        '食品パッケージには厳格なルールがあります。食品グレード紙と無毒の大豆インクは必須で、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
+        '食品パッケージには厳格なルールがあります。食品グレード紙と環境配慮インク（ご注文時に指定）も選択でき、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
         '加工は差別化の鍵。金銀箔でロゴに輝き、スポットUVでポイント強調、エンボスで立体感、PVC窓で中身をアピール。無料の当日サンプルで1–2種の加工を実物確認してから量産を決めるのが安心です。',
         '価格は数量でお得に。デジタル印刷は50–500個で製版代不要、オフセットは1,000個から単価大幅ダウン、5,000個以上は5–7日＋段階割引。クリスマスや歳末などの繁忙期は3週間前のご注文が安心です。',
         'ご注文の流れ：箱型・展開寸法・数量・用紙・加工を入力し30秒AI見積もり。無料の抜き型設計とサンプル確認後、3日で出荷。日本全国へ配送、輸出向けISTA圧縮テストレポートにも対応します。',
@@ -393,10 +393,10 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: 'パッケージ印刷の料金はいくらから？', a: '《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／上製本箱100個¥240〜／マグネット蓋ギフトボックス100個¥450〜／電子機器箱200個¥240〜／クラフト紙箱300個¥150〜。箱型・数量・紙材を30秒AI見積もりで入力すれば、配送・税込みの正確な金額を即座に確認できます。' },
-      { q: 'パッケージの最小発注数は？', a: 'ウエディングボックス30個から、カラーボックス50個から、標準工業用100–200個から。従来の工場基準500–1,000個を大きく下回ります。' },
+      { q: 'パッケージの最小発注数は？', a: '全箱型100個から（カスタム型抜きは500個から）。従来の工場基準500–1,000個を大きく下回ります。' },
       { q: '対応している箱型は？', a: '化粧箱、ブック型箱、引き出し箱、組み立て箱、ダンボール箱、磁石式箱など20種類以上の標準箱型。完全カスタムデザインも対応。' },
       { q: 'エコ紙は使えますか？', a: 'はい。全箱型でFSC認証エコ紙を選択可能。欧米輸出に対応した国際環境基準を満たします。' },
-      { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
+      { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
       { q: 'パッケージ印刷にどのくらいかかりますか？', a: '通常注文3日、急行サービス2日、サンプル当日。大量注文（5,000個以上）は約5–7日。' },
       { q: '型抜き線を自分で設計できますか？', a: 'はい。AI／PDF形式の型抜き線データ（CMYK、300dpi）を受け付けます。型抜き設計に不慣れな場合は無料型設計サービスをご利用ください。' },
       { q: '段ボール箱は圧縮テストを通りますか？', a: 'はい。ISTA基準の圧縮・落下テストを実施し、物流安全を確保。テストレポートは輸出通関書類として利用可能です。' },
@@ -2285,7 +2285,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 環保安全，符合教育標準',
           points: [
-            '使用大豆油墨和 FSC 認證環保紙張，無毒無害，符合兒童產品安全標準',
+            '可選大豆油墨和 FSC 認證環保紙張（環保選項，落單時註明）',
             '紙張選擇豐富：書寫紙、道林紙、銅版紙、啞粉紙，適合不同學科需求',
             '裝訂方式安全：騎馬釘圓角處理、膠裝無銳邊、線裝牢固不散頁，保護學生安全',
           ],
@@ -2330,7 +2330,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         { label: '起訂量', value: '練習簿 10 本起訂（數碼印刷），教科書/證書 100 起，500 本以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF / Word，300dpi，CMYK，預留 3mm 出血位' },
-        { label: '環保認證', value: 'FSC 認證環保紙張、大豆油墨、無毒無害，符合教育產品安全標準' },
+        { label: '環保認證', value: 'FSC 認證環保紙張、大豆油墨選項（落單時註明）' },
       ],
     },
     serviceNodes: {
@@ -2354,7 +2354,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       { q: '校簿印刷係咪即係練習簿？幾多本起印？', a: '係，校簿即學校練習簿（作業簿）。10 本起印，封面可燙金校名同校徽，內頁 80-100gsm 書紙，學校同補習社批量訂購有折扣。免費打稿，3-5 個工作天交貨。' },
       { q: '教育印刷最低多少本起？', a: '練習簿 10 本起訂（數碼印刷）；教科書、證書 100 起；畢業紀念冊 1 本起。500 本以上柯式印刷更經濟。教育機構享受專屬折扣。' },
       { q: '可以印刷作業簿和教科書嗎？', a: '可以。提供作業簿、練習簿、教科書、教師手冊等全系列教育印刷。' },
-      { q: '教育印刷使用環保材料嗎？', a: '使用 FSC 認證環保紙張和大豆油墨，無毒無害，符合教育產品安全標準。' },
+      { q: '教育印刷使用環保材料嗎？', a: '可選 FSC 認證環保紙張和大豆油墨（環保選項，落單時註明）。' },
       { q: '可以印刷證書和獎狀嗎？', a: '可以。提供燙金證書、防偽水印證書、獎狀等多種形式。' },
       { q: '教育印刷需要多久？', a: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天。' },
       { q: '可以幫忙設計教材嗎？', a: '可以。專業設計師提供教材排版服務，確保內容清晰易讀，符合教育標準。' },
@@ -2476,7 +2476,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. エコ＆安全、教育基準に準拠',
           points: [
-            '大豆インクとFSC認証エコ紙を使用。無毒無害で、子供用品安全基準に準拠。',
+            '大豆インクとFSC認証エコ紙のオプションあり（ご注文時に指定）。',
             '豊富な紙選択：書籍紙、オフセット紙、コート紙、マット紙。異なる学科のニーズに対応。',
             '安全な製本：中綴じ丸角処理、無線綴じ鋭利な辺なし、糸かがり綴じで散りにくい。生徒の安全を保護。',
           ],
@@ -2521,7 +2521,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         { label: '最小発注数', value: '10冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。' },
         { label: '納期', value: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日（デジタル）。' },
         { label: 'ファイル要件', value: 'AI／PDF／Word、300dpi、CMYK、3mmのbleed。' },
-        { label: 'エコ認証', value: 'FSC認証エコ紙、大豆インク、無毒無害。教育製品安全基準に準拠。' },
+        { label: 'エコ認証', value: 'FSC認証エコ紙、大豆インクのオプション（ご注文時に指定）。' },
       ],
     },
     serviceNodes: {
@@ -2543,7 +2543,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: '教育印刷の最小発注数は？', a: '10冊から（デジタル印刷）。500冊以上はオフセット印刷がお得。教育機関は専用割引を享受。' },
       { q: 'ノートと教科書の印刷は可能？', a: 'はい。ノート、ワークブック、教科書、教師用マニュアルなど教育印刷の全系列を提供します。' },
-      { q: 'エコ素材を使用していますか？', a: 'はい。FSC認証エコ紙と大豆インクを使用。無毒無害で、子供用品安全基準に準拠しています。' },
+      { q: 'エコ素材を使用していますか？', a: 'はい。FSC認証エコ紙と大豆インクのオプションがあります（ご注文時に指定）。' },
       { q: '証書と表彰状の印刷は可能？', a: 'はい。箔押し証書、偽造防止透かし証書、表彰状など多様な形式を提供します。' },
       { q: '教育印刷にどのくらいかかりますか？', a: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日。' },
       { q: '教材のデザインも依頼できますか？', a: 'はい。プロデザイナーが教材の組版サービスを提供。内容の明確さと教育基準への準拠を確保します。' },
