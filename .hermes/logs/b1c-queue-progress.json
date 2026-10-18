@@ -394,6 +394,33 @@
     },
     {
       "order": 17,
+      "cluster": "诚信清毒 A'' (渲染源层) + 千问终版对账 + 10/18 执行日",
+      "slugs": [
+        "category-conversion-blocks.ts",
+        "products-content.ts",
+        "product-faqs.ts"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (K3 10/18 指令: 按最优方案和优先级执行)",
+      "claimed_at": "2026-10-18T17:15:00+08:00",
+      "completed_at": "2026-10-18T18:00:00+08:00",
+      "verdict": {
+        "root_cause": "A' 后线上探针 7/9: zh/ja 页面 無毒 残留 —— 同页多数据源: category 页渲染 conversion-blocks/products-content, 不止 category-seo-content.ts。探针驱动溯源 (rg 全 src/data) 后 A'' 补刀",
+        "slots": "19 处: conversion-blocks 5 (食品類目 conversion FAQ, SGS/FDA/FSC 共现语全保留) + products-content 12 (ja eco 段 無毒無臭 x10 + zh 教育局規範 x1 + ja 指導要項 x1, 机构不可验证主张同批拆) + product-faqs 2 (無毒無味/無毒無臭)",
+        "invariants": "SGS 5/31/3 全不变; soy 事实保留为选项式 (eco SKU 真值); 無毒 全三源 rg=0",
+        "folding_links": "folding→food-boxes ×3 已被簇 4 姐妹互链覆盖 (sku-seo-data L1154/1161/1168 三语 body) — P0-2 零工作, 验证即收口; kraft→food-boxes 维持驳回 (守位)",
+        "a_prime_final": "fb92ee3f deploy PASS (runs/117399389516, 昨晚后台 verify 已确认)",
+        "qianwen_final": "千问 10/18 终版收悉 (周度评分 98.2 S+): faqSchema 三语化 = 全站批量 SEO 改动, 按 §0.25.10.5 需 K3 拍板 + 预览流程, 未擅动; 观察期纪律采纳 (食品包裝訂製 10/19-20 不新增改动); hub v2 真值重导版 P2 (10/23-25)",
+        "remote_note": "e6649e65 为今日非本会话远端活动 (lane/另一会话), e9b3af70 干净叠加",
+        "guards": "tsc 54=54 / brand A0 / gate 1270min OK",
+        "push": "e9b3af70 @17:53:15 (e6649e65..e9b3af70), probe: 后台等窗 (A2_PROBE_DONE)",
+        "lessons": "§0.26.9 扩展: .ps1 无 BOM UTF-8 在 PS5.1 同样 GBK 解析 (探针脚本改 .mjs 原生 fetch); python check() 参数序 bug ×3 同日 (dedupe: 统一 check(cond, msg) 签名纪律)",
+        "evidence": ".hermes/_integrity_aa_20261018.py + _probe_aprime.mjs + _bak-integrity-aa-20261018/ + 昨晚 yguagn.log"
+      },
+      "note": "诚信层剩: blog-data zh/ja 無毒 命中 (blog 层, 低优先 docket) + textbooks.html 模板 (疑似 legacy) + SGS 7+conversion 5 处待 K3 #7。P1: faqSchema 三语化 (等 K3) + 10/19 title 解冻批"
+    },
+    {
+      "order": 17,
       "cluster": "b1c-residual posters 族收口: outdoor-posters body 三语差异化 + 事实/禁词修正",
       "slugs": [
         "outdoor-posters"

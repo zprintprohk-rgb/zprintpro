@@ -84,3 +84,16 @@
 
 ## 五、红线自查（每批执行前过一遍）
 title/H1 零改动（除 10/19 解冻批 v5 口径）· 守位词区零触碰 · KEEP 断言（10 張起印=34）· CRED 基线只递减 · 不引入不可验证主张 · CSV 覆盖域改源再生 · gate 先于 push · 30min 硬下限。
+
+---
+
+## 六、10/18 附言：千问终版对账 + A'' 执行记录
+
+数据来源: 千问 10/18 终版附件 + A' 线上探针 7/9（fb92ee3f deploy PASS, runs/117399389516）+ rg 全 src/data 溯源 + e9b3af70 push @17:53 — 校准 2026-10-18 18:00
+
+1. **A' 探针 7/9 → 溯源 → A''**：类目页同页渲染 conversion-blocks/products-content，不止 category-seo-content.ts。A'' 补刀 19 处（含教育局規範/指導要項两个机构不可验证主张），SGS/FDA/FSC 共现语全保留（不变量 5/31/3）。
+2. **folding→food-boxes ×3 已被簇 4 姐妹互链覆盖**（sku-seo-data L1154/1161/1168）——千问 1.4 与我方 P0-2 均已满足，验证即收口。
+3. **faqSchema 三语化**：千问定为 P1 新杠杆；属全站批量 SEO 改动（§0.25.10.5）+ 千问自标 K3 拍板依赖 → **未擅动，等 K3**。建议方案：新增 faqSchemaZh/faqSchemaJa 可选字段 + 按 locale 渲染（seo.ts/schema-extensions.ts/page.tsx 三处同步 per §0.20.5），首批 3 PDP 试点（food-boxes/wall-calendars/a5-flyers）而非 10，探针后再扩。
+4. **观察期纪律采纳**：食品包裝訂製 10/19-20 不新增改动，信号沉淀；10/21-23 首次排名检查。
+5. **评分勘误**：千问周度评分 98.2 S+ 收悉；其自评 7.5/10 与「4 处致命错误」如实——对账机制有效性的双向确认。
+6. 教训扩展：§0.26.9 新增——.ps1 无 BOM UTF-8 在 PS5.1 同样 GBK 解析（探针一律 .mjs 原生 fetch）；check(cond, msg) 签名统一纪律（同日 3 次参数序 bug）。
