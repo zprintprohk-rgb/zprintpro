@@ -783,9 +783,9 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '紙素材に環境認証はありますか？',
     },
     answer: {
-      'zh-hk': '智印港所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨，可完全降解，無毒無味。適合注重 ESG 形象的企業、社會企業及 NGO。',
+      'zh-hk': '智印港所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨（環保選項，落單時註明），可完全降解。適合注重 ESG 形象的企業、社會企業及 NGO。',
       'en': 'All ZprintPro paper is FSC (Forest Stewardship Council) certified for sustainable sourcing. Our eco line additionally uses recycled paper and soy-based inks—fully biodegradable and non-toxic. Ideal for ESG-focused corporates, social enterprises, and NGOs.',
-      'ja': 'ZprintPro の紙材は全て FSC（森林管理協議会）認証を取得。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭。ESG 重視の企業・社会企業・NGO に最適。',
+      'ja': 'ZprintPro の紙材は全て FSC（森林管理協議会）認証を取得。エコシリーズは再生紙・大豆インクを採用、完全生分解性の環境配慮仕様。ESG 重視の企業・社会企業・NGO に最適。',
     },
   },
   {
