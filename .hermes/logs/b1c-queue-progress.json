@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-17T21:17:00+08:00",
+  "updated_at": "2026-10-18T18:20:00+08:00",
   "updated_by": "ZP-daily-content lane (B1c residual: outdoor-posters 三语 body 差异化)",
   "clusters": [
     {
@@ -413,7 +413,7 @@
         "qianwen_final": "千问 10/18 终版收悉 (周度评分 98.2 S+): faqSchema 三语化 = 全站批量 SEO 改动, 按 §0.25.10.5 需 K3 拍板 + 预览流程, 未擅动; 观察期纪律采纳 (食品包裝訂製 10/19-20 不新增改动); hub v2 真值重导版 P2 (10/23-25)",
         "remote_note": "e6649e65 为今日非本会话远端活动 (lane/另一会话), e9b3af70 干净叠加",
         "guards": "tsc 54=54 / brand A0 / gate 1270min OK",
-        "push": "e9b3af70 @17:53:15 (e6649e65..e9b3af70), probe: 后台等窗 (A2_PROBE_DONE)",
+        "push": "e9b3af70 @17:53:15 (e6649e65..e9b3af70), probe: 9/9 PASS (三语 無毒=0 / SGS 保留 / 12 series / 3-5日 / MOQ100; 無毒探针 .hermes/_probe_aprime.mjs, yguagn...kta4if.log); 49deb70 docs-only build 独立确认中",
         "lessons": "§0.26.9 扩展: .ps1 无 BOM UTF-8 在 PS5.1 同样 GBK 解析 (探针脚本改 .mjs 原生 fetch); python check() 参数序 bug ×3 同日 (dedupe: 统一 check(cond, msg) 签名纪律)",
         "evidence": ".hermes/_integrity_aa_20261018.py + _probe_aprime.mjs + _bak-integrity-aa-20261018/ + 昨晚 yguagn.log"
       },
@@ -440,6 +440,26 @@
         "evidence": ".hermes/logs/2026-10-17-ZP-daily-content.md"
       },
       "note": "车道读到本记录: posters 族 (6 SKU) 正文差异化收口. 下一棒: outdoor CSV 四格债务 (需 node) + 全站 ja『業界最安水準』x16 清扫 + folding→food-boxes 交叉链 x3"
+    },
+    {
+      "order": 18,
+      "cluster": "IndexNow 欠账清偿 + blog 补链第二批 (观察窗外簇) + eco en/ja docket",
+      "slugs": [
+        "eco-printing",
+        "restaurant-menu-printing-guide"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (继续指令)",
+      "claimed_at": "2026-10-18T18:05:00+08:00",
+      "completed_at": "2026-10-18T18:20:00+08:00",
+      "verdict": {
+        "indexnow": "scripts/indexnow-submit.mjs 跑通: 33 SKU PDP + 9 关键文档 = 42 URL, HTTP 200 (本周 4 push 变更 URL 爬取刺激欠账清偿)",
+        "batch2": "zh eco-printing 桥接句 (表后自然锚, 食品包裝訂製) + zh restaurant-menu 外卖包裝 cross-sell (快速答案收尾位) = 2 条; 结构化 JSON 编辑 (round-trip 门 + 仅计划 slug 断言)",
+        "deferred": "en/ja eco 无自然锚 (品牌例证区), 硬塞违反 §13.6 自然链接纪律 → docket: 母语润色批补链; 观察期纪律: 食品包裝訂製簇 10/19-20 零改动, 本批仅触碰窗外簇",
+        "gate_note": "push-gate 18min 拦截 → §0.25.8 本地 commit (d74374a0) + 后台异步等窗推送 (_batch2_push.ps1, 非 Start-Sleep 阻塞)",
+        "guards": "tsc 54=54 / brand A0"
+      },
+      "note": "后台推送链含 verify-deploy + 双 URL 探针 (BATCH2_PUSH_DONE); 千问 faqSchema 三语化仍在 K3 门; 10/19 title 解冻批待 GSC 新档"
     }
   ]
 }
