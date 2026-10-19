@@ -303,7 +303,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p><strong>Author &amp; quality sources:</strong> This guide was written by the ZprintPro printing engineering team — 15-year offset press engineers operating Heidelberg Speedmaster 6+1 presses, serving global customers across key industries. The plant is internationally certified and FSC certified; printed products comply with FDA 21 CFR and EU REACH, with a 24-hour rush SLA and DHL/FedEx global 2-4 day delivery (LinkedIn: ZprintPro Printing Engineering Team). Prices cited from ZprintPro A4/A5 flyer product pages (updated 2026-09).</p>
 <p>Want more on flyer printing? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
   ja: `<p>チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。</p>
-<p class="my-4">👉 最安値を見積もりたい方は <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a>、サイズ・用紙・数量を送れば即時回答。</p>
+<p class="my-4">👉 価格を見積もりたい方は <a href="https://wa.me/8619880851334" target="_blank" rel="noopener"><strong>WhatsApp でZprintProに連絡</strong></a>、サイズ・用紙・数量を送れば即時回答。</p>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：チラシ印刷はいくら？</strong><br/>A5 片面 128g コート紙 100 枚から ¥50/枚〜、A4 片面 ¥70/枚〜。枚数が多いほど安くなり、5,000 枚で約半額。</p></div>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：A4・A5・A3 はどれ？</strong><br/>A5（148×210mm）は街頭配布・クーポン向け、A4（210×297mm）は情報量重視、A3（297×420mm）はショーウィンドウや大規模イベント向け。</p></div>
 <div class="bg-amber-50 rounded-lg p-4 my-4"><p><strong>クイック答え：納期はどのくらい？</strong><br/>標準 3〜5 営業日、特急は最短 24 時間。データは 300dpi CMYK・塗りたし 3mm で入稿してください。</p></div>
