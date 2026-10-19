@@ -62,3 +62,4 @@
 | 2026-10-15 22:51:01 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-14-ZP-gsc-feedback.md` | .hermes/industry-keyword-matrix.json | ✅ push |
 | 2026-10-16 06:43:12 | ZP-cron-watchdog | ⚠️ 3 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | PENDING ZP-weekly-meta | OK ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | PENDING ZP-k3-review | — |
 | 2026-10-16 07:15:32 | ZP-k3-review | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-15-ZP-k3-review.md` | NONE | ✅ push |
+| 2026-10-17 21:22:40 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-17-ZP-daily-content.md` | src/data/sku-seo-data.ts | ✅ push |

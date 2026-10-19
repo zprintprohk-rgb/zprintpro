@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-18T18:20:00+08:00",
-  "updated_by": "ZP-daily-content lane (B1c residual: outdoor-posters 三语 body 差异化)",
+  "updated_at": "2026-10-19T21:17:00+08:00",
+  "updated_by": "ZP-daily-content lane (B1c docket P0: ja 绝对化价格主张清扫 + 生成器源头修正)",
   "clusters": [
     {
       "order": 1,
@@ -460,6 +460,29 @@
         "guards": "tsc 54=54 / brand A0"
       },
       "note": "后台推送链含 verify-deploy + 双 URL 探针 (BATCH2_PUSH_DONE); 千问 faqSchema 三语化仍在 K3 门; 10/19 title 解冻批待 GSC 新档"
+    },
+    {
+      "order": 19,
+      "cluster": "b1c-docket P0: ja 绝对化价格主张清扫 (i18n-guard #4 JA 族) + 生成器源头修正",
+      "slugs": [
+        "sku-seo-data.ts 16 个 ja body",
+        "products-content.ts 3 段 (a5-flyers / easy-up-banner / comiket-doujinshi)",
+        "buying-guides.ts ja 传单指南"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane",
+      "claimed_at": "2026-10-19T21:17:00+08:00",
+      "completed_at": "2026-10-19 (lane run; 墙钟未单独核验)",
+      "verdict": {
+        "why": "B1c 主簇 9/9 已 DONE (order 1-18); 10-17 报告 NEXT 指定首务 = 全站 ja『業界最安水準』×16 清扫。该短语命中 i18n-guard JA_業界最安 (日本景表法 不当表示), 属可无风险删除的绝对化主张, 不需要业务真值",
+        "slots": "sku-seo-data 16 处『[catSlug] 業界最安水準。』->『[catSlug] は低価格帯でご提供。』; products-content 3 段『激安』标题 ->『低コストでご検討』+『業界最安値に挑戦する』/『業界最安値レベルに挑戦し』删除; buying-guides ja 1 处『最安値を見積もりたい方は』->『価格を見積もりたい方は』; 生成器 scripts/enrich-body-p4.ts 模板同步 (防再生成)",
+        "counts": "業界最安 16->0 (sku-seo-data); 激安 3->0 / 業界最安値 3->0 (products-content); 最安値 ts 1->0 (buying-guides); src/data *.ts 全量复扫 = 0",
+        "residual": "① blog-data/ja.json 行级『最安値』×4 (blog 层, 需母语润色, 未动) ② 裸『日本全国送料無料』sku-seo-data 30 行 (同一 body 的 Q2/Q4 另有重复; 运费真值待 K3 拍板, 未改) ③ outdoor-posters zh body 第二处『每日 18:00 前落單即日交貨』(长行不可见, 未盲改) ④ outdoor CSV 四格债务需 node regen",
+        "guards": "车道侧仅 grep 自检 (无 pwsh/node): ts 层 JA 族禁词 0; tsc / 门童 #4 / #27 / #29 / regen 未跑, 由 host wrapper 兜底, 不虚报 PASS",
+        "similarity": "不适用 (仅删除/替换禁词短语, 无新增段落, 未复算 8-gram)",
+        "evidence": ".hermes/logs/2026-10-19-ZP-daily-content.md"
+      },
+      "note": "车道读到本记录: ja 绝对化价格主张 ts 层已清; 下一棒 = 裸送料無料真值 (需 K3 运费口径) + blog-data ja『最安値』×4 + outdoor CSV 四格 (node) + 10/22 年賀状开关"
     }
   ]
 }
