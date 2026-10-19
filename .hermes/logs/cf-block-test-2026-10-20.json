@@ -1,0 +1,90 @@
+{
+ "tested": "2026-10-19T17:39:41.648Z",
+ "results": [
+  {
+   "name": "homepage",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 220179
+  },
+  {
+   "name": "product-food-boxes",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  },
+  {
+   "name": "category-packaging",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 373038
+  },
+  {
+   "name": "blog (非规则路径)",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 298055
+  },
+  {
+   "name": "product-burst-1",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  },
+  {
+   "name": "product-burst-2",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  },
+  {
+   "name": "product-burst-3",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  },
+  {
+   "name": "product-burst-4",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  },
+  {
+   "name": "product-burst-5",
+   "status": 200,
+   "blocked": false,
+   "hasContent": true,
+   "len": 199429
+  }
+ ],
+ "ua_differential": {
+  "tested_at": "2026-10-19T17:49:17.440Z",
+  "method": "same URL /zh-hk/product/food-boxes/ 同刻双发",
+  "curl_ua": {
+   "via": "curl.exe default UA",
+   "status": 403,
+   "blocked": true,
+   "len": 5512
+  },
+  "fetch_curl_ua": {
+   "via": "fetch UA curl/8.0",
+   "status": 403,
+   "blocked": true,
+   "len": 5512
+  },
+  "fetch_browser_ua": {
+   "via": "fetch browser UA (burst x5 + singles)",
+   "status": 200,
+   "blocked": false
+  }
+ },
+ "conclusion": "CF 对非浏览器 UA (/product/ 路径) 返回 403 Attention Required；浏览器 UA 同刻 200。sprint P0#1 从未验证风险升级 UA 差分实锤。Googlebot 影响未直接证明 (IP/UA 均不同)，但 K3 加 and not (cf.client.bot) 为零成本保险，今日必做。"
+}
