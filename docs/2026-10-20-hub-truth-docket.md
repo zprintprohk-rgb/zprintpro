@@ -56,3 +56,10 @@
 | 8 | zh packaging featuredSnippet | 「100-10,000 本彈性 MOQ」 | 计量单位错（盒应用「個」） | **已修** → 「100-10,000 個彈性 MOQ」 |
 
 另：packaging featuredSnippet 其余数字（100 個起印 / 8 檔標準尺寸 / DHL 2-4 天 / 1-2 個工作天順豐）与真值一致。
+## 6. 运维缺陷登记：push-gate 时间源滞后
+
+**现象**：
+ode scripts/push-gate-check.mjs 报「last push 103m ago」，而 .git/logs/refs/remotes/origin/main 显示真实推送时间 1792497503（= 2026-10-20 19:57:43，22 分钟前）。
+**风险**：gate 会放行 < 30 min 的撞车窗口；当前只能以 reflog 时间自行判定。
+**证据**：reflog 末两行 1792492667（d576349c 18:37 推）→ 1792497503（840036dd 19:57 推）；gate 读到的值对应 commit 时间而非推送时间。
+**建议**：gate 改为读 .git/logs/refs/remotes/origin/main 最后一行的 epoch。
