@@ -399,7 +399,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                     </span>
                   </summary>
                   <div className="px-4 pb-4 text-gray-600 text-sm md:text-base leading-relaxed">
-                    {item.a}
+                    {parseInlineLinks(item.a)}
                   </div>
                 </details>
               ))}
