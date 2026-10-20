@@ -1,6 +1,6 @@
 # SKU 标题违规全景清单 (2026-09-19)
 
-校准日期: 2026-09-19 11:54 UTC
+校准日期: 2026-09-19 12:25 UTC
 
 > 口径: `scripts/guards/title-equiv.js` (半角当量, 目标 50-57) · 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3
 > **开放违规 0 条** / 300 槽 (0.0%) · 门禁阶段 READY_TO_ESCALATE_RED (存量 ≤10 升 red)

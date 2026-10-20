@@ -1,5 +1,5 @@
 {
-  "scannedAt": "2026-10-19T12:08:55",
+  "scannedAt": "2026-10-20T13:21:11",
   "truthSize": 82,
   "shapeProblems": [],
   "hits": 0,
@@ -42,12 +42,12 @@
     },
     {
       "kind": "en_MOQ",
-      "grep": 26,
+      "grep": 25,
       "scan": 0
     },
     {
       "kind": "en_pcs",
-      "grep": 12,
+      "grep": 8,
       "scan": 0
     }
   ],

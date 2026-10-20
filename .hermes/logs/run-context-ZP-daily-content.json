@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-19 21:17:02",
+  "generated_at": "2026-10-20 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "d03f5245529f66d7",
-    "day": "2026-10-19",
+    "this_run_key": "3a0a2957a6b0f82d",
+    "day": "2026-10-20",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-17 21:22:40"
+        "detail": "总线最近记录 verdict=BLOCKED @ 2026-10-19 21:20:38"
       },
       {
         "name": "lane_status_available",
@@ -46,43 +46,54 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 12728,
-    "acquired_at": "2026-10-19 21:17:02",
-    "acquired_ts": 1792415822.9965878,
+    "pid": 19760,
+    "acquired_at": "2026-10-20 21:17:02",
+    "acquired_ts": 1792502223.0009654,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261017T212240",
+      "run_id": "ZP-daily-content-20261019T212038",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-17 21:22:40",
-      "ended_at": "2026-10-17 21:22:40",
-      "idempotency_key": "725bd6d6cafb22b4",
+      "fired_at": "2026-10-19 21:20:38",
+      "ended_at": "2026-10-19 21:20:38",
+      "idempotency_key": "d03f5245529f66d7",
       "dsh_exit": null,
-      "wrapper_exit": 0,
-      "verdict": "OK",
-      "state": "completed",
-      "blocked_reason": "",
+      "wrapper_exit": 4,
+      "verdict": "BLOCKED",
+      "state": "blocked",
+      "blocked_reason": "pre-commit guard 拒绝 3 个生产文件",
       "guard": {
-        "ok": true
+        "ok": false
       },
-      "report": ".hermes/logs/2026-10-17-ZP-daily-content.md",
+      "report": ".hermes/logs/2026-10-19-ZP-daily-content.md",
       "report_auto_generated": false,
       "files": [
+        "src/data/products.ts",
         "src/data/sku-seo-data.ts"
       ],
-      "pushed": true,
-      "head": "e6649e65",
+      "pushed": false,
+      "head": "d342102e",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-17-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-19-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "src/data/sku-seo-data.ts（outdoor-posters 三语 body 差异化重写 + 6 处事实/禁词修正 + 每语 4-5 条内链）; .hermes/logs/b1c-queue-progress.json（order 17 登记 + 残差 docket）"
+      "src/data/sku-seo-data.ts（16 处 ja「業界最安水準」清除 → 「は低価格帯でご提供」）; src/data/products-content.ts（3 段 ja「激安」×3 + 「業界最安値」×3 清扫）; src/data/buying-guides.ts（ja「最安値」1 处 → 「価格」）; scripts/enrich-body-p4.ts（生成器 ja 模板同步，防再生）; .hermes/logs/b1c-queue-progress.json（order 19 登记 + 残差 docket）"
     ]
   },
   "sibling_lanes": [],
-  "retry_queue": [],
+  "retry_queue": [
+    {
+      "kind": "RETRY_OF",
+      "run_id": "ZP-daily-content-20261019T212038",
+      "reason": "pre-commit guard 拒绝 3 个生产文件",
+      "candidate_files": [
+        "src/data/products.ts",
+        "src/data/sku-seo-data.ts"
+      ]
+    }
+  ],
   "instructions_to_lane": [
     "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
     "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",

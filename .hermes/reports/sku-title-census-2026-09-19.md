@@ -4,7 +4,7 @@
 > 规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3 (K3 2026-09-19 裁决 目标区 **50-57 半角当量**, 58 为阻断线; 取代 v4 的 50-54 与 9/13 的 50-58)
 
 ## 数据来源 (§0.23)
-校准日期: 2026-09-19 11:54 UTC
+校准日期: 2026-09-19 12:25 UTC
 - `src/data/sku-seo-data.ts` — 活 title 主源 (SKU × 3 locale)
 - `src/data/products.ts` — slug → category_slug
 - `.hermes/gsc-2026-09-18/extract.json` — GSC 28d 页面级 (窗口 2026-08-19~09-15, FRESH)

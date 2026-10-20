@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-19T21:17:00+08:00",
-  "updated_by": "ZP-daily-content lane (B1c docket P0: ja 绝对化价格主张清扫 + 生成器源头修正)",
+  "updated_at": "2026-10-20T21:17:00+08:00",
+  "updated_by": "ZP-daily-content lane (RETRY_OF 10-19 guard 阻塞闭环 + 生成器真值卫生 + blog ja 首处禁词清除)",
   "clusters": [
     {
       "order": 1,
@@ -483,6 +483,30 @@
         "evidence": ".hermes/logs/2026-10-19-ZP-daily-content.md"
       },
       "note": "车道读到本记录: ja 绝对化价格主张 ts 层已清; 下一棒 = 裸送料無料真值 (需 K3 运费口径) + blog-data ja『最安値』×4 + outdoor CSV 四格 (node) + 10/22 年賀状开关"
+    },
+    {
+      "order": 20,
+      "cluster": "RETRY_OF ZP-daily-content-20261019T212038 (pre-commit red 阻塞闭环) + 生成器真值卫生 + blog ja 首处『最安値』清除",
+      "slugs": [
+        "scripts/enrich-body-p4.ts",
+        "src/data/blog-data/ja.json (flyers guide L96)"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane",
+      "claimed_at": "2026-10-20T21:17:00+08:00",
+      "completed_at": "2026-10-20 (lane run; 墙钟未单独核验)",
+      "verdict": {
+        "why": "run-context.retry_queue 唯一项 = 2026-10-19 BLOCKED (wrapper_exit=4, pre-commit guard 拒绝 3 个生产文件)。10-19 的三处 src/data ja 清扫已落盘但整批未提交; 本轮按契约优先闭环, 不让同一阻塞第三次复发。",
+        "root_cause": "10-19 wrapper 日志: 🔴 HARD [red] scripts/enrich-body-p4.ts:370 · 规则 PHONE_HK_BLACKLIST (+852 港号黑名单) · 修法提示改 +86 198 8085 1334 (§13.10 phase-out 181)。汇总 = 1 red / 26 orange / 155 yellow; red 单点即整批 exit。",
+        "retry_fix": "生成器模板三语 CTA 层清障: en 假美国号 +1 982 808 5133 -> 唯一白名单 +86 198 8085 1334 (wa.me/8619880851334); 同批移除生成器内 ISO 9001 x2 + 15+ 年 x2 (CRED 族, 10-16~18 已从活数据清除, 源头未同步会再生)。当前文件复查: +852=0 / 982808=0 / ISO 9001=0 / 15+=0 / JA 族禁词=0。",
+        "retry_content_verified": "10-19 内容层仍在档且未回滚: sku-seo-data.ts『は低価格帯でご提供』=16 处; products-content.ts『低コストでご検討』=3 段; buying-guides.ts ja『最安値』=0; src/data 全量 +852|wa.me/852 = 0。",
+        "blog_ja": "src/data/blog-data/ja.json L96 (チラシ guide): 『👉 最安値を見積もりたい方は』->『👉 価格を見積もりたい方は』(同 10-19 buying-guides 口径, 仅纯文本替换, JSON 转义未动)。src/data JA 族命中 5->4。",
+        "residual": "余 4 处 blog ja『最安値』(L208/320/590/614) 仍在: 均位于 JSON 单行 2000 字符读取上限之外, 无法安全定位上下文; blog 层为 9/19 撞车事故同型高发域, 按纪律不盲改, 留母语润色批。裸『日本全国送料無料』与 outdoor CSV 四格维持 10-19 处置 (需 K3 运费口径 / 需 node regen)。",
+        "guards": "车道无 pwsh/node: 仅 grep 自检 (上述 0/4/16/3), tsc / 门童 #4 #27 #29 / regen / 8-gram 未跑, 由 host wrapper 兜底, 不虚报 PASS",
+        "similarity": "不适用 (删除/替换禁词与不实宣称, 无新增段落)",
+        "evidence": ".hermes/logs/2026-10-20-ZP-daily-content.md"
+      },
+      "note": "车道读到本记录: 10-19 阻塞点已清, 下一棒 = K3 给日本线运费口径 (裸送料無料 30 行) + node 会话跑 outdoor CSV 四格 regen + blog ja 余 4 处母语润色 + 10/22 年賀状开关"
     }
   ]
 }
