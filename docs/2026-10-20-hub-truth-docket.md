@@ -82,3 +82,21 @@ ode scripts/push-gate-check.mjs 报「last push 103m ago」，而 .git/logs/refs
 
 「8-15 天交期」**不是错数**：真值源 = products.ts gang-run-card-boxes「【8-15 天交期】湊版生產, 不接急件, 如實標註」，sku-seo 同口径（500 個起、8-15 天）。
 Hub featuredSnippet 缺「拼版」限定，与标准盒型 3-5 個工作天并列时会被读成矛盾 → **已加限定词**：「拼版 8-15 天交期」。
+## 9. products-content.ts 长描述 MOQ 系统性不一致（45/77 SKU 块，待裁）
+
+**扫描口径**：按 'slug': { 切块，取块内「N 個/張/枚/本/冊起」最小声称，与 products.ts.minQuantity 比对（脚本 .hermes/_audit_pc_moq2.cjs）。
+
+**结果**：77 块可比对，**45 块最小声称 ≠ 真值**，四种模式：
+
+| 模式 | 例 | 观察 |
+|---|---|---|
+| 块内既有 10 又有 100 | food-boxes / folding / mailer / kraft / white-card / gift / eco / handle / large bags | 疑「10 個起」为小批量档或遗留句，与 100 主口径并存 → 同页自相矛盾 |
+| 声称高于真值 | waterproof-stickers 500 vs 10；premium-greeting-cards 50 vs 10 | 保守口径，非误导但压制转化 |
+| 声称低于真值 | posters 系 10 vs 1 | 「10 張起」可能是批量档而非 MOQ |
+| 完全一致 | 其余 32 块 | — |
+
+**建议（K3 裁决二选一）**：
+- A：把 longDescription 的 MOQ 表述统一改为「主口径 + 档位说明」（如「100 個起，10 個起小批量檔另議」）→ 需逐块改写 45 处；
+- B：仅把 price-truth-guard 扩到 products-content（WARN 报告级），先观察哪些是真档位、哪些是遗留，再批量处理。
+
+**本轮不做**：45 处属内容级重写，风险大于收益，留作独立批次（避免与本次渲染层修复混窗）。
