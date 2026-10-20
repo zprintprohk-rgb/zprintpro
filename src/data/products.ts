@@ -42,7 +42,7 @@ export interface Product {
    * 市場依據（K3 提供）：PVC 餐牌 print88king 用「張」、精裝香港印刷中心用「本」、
    *   紙質餐牌 design-easy/高碧 用「張」、酒水單市場無明確慣例（用「份」較通用）。
    *
-   * ★ 向後兼容：未設定時**沿用既有「本」**（現行展示層行為），不影響其他品類。
+   * ★ 向後兼容：未設定時沿用既有「本」（現行展示層行為），不影響其他品類。
    */
   unitLabel?: string;
   turnaround?: string;
@@ -152,7 +152,7 @@ export const products: Product[] = [
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
     name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: '年賀状印刷 | プレミアムグリーティングカード', title_zh: '高級賀卡',
-    description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory. **Best for**: weddings / Christmas / New Year / holiday gifts / brand events / hotel welcome / corporate customization.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。 **適合業種**: 婚礼 / クリスマス / 新年 / 节日ギフト / ブランドイベント / ホテル歓迎 / 企業カスタム.', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.',
+    description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 適配行業: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory. Best for: weddings / Christmas / New Year / holiday gifts / brand events / hotel welcome / corporate customization.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。 適合業種: 婚礼 / クリスマス / 新年 / 节日ギフト / ブランドイベント / ホテル歓迎 / 企業カスタム.', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 適配行業: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.',
     features: [
       '【127×178mm標準尺寸】兼容全球卡夾',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -247,7 +247,7 @@ export const products: Product[] = [
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
     name: '厚卡名片 (400g 起)', nameEn: 'Thick Business Cards (400g+)', nameJa: '厚手名刺印刷 (400g〜)', title_zh: '厚卡名片｜400g 超厚 · 三合一裱貼 · 90×54mm',
-    description: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.', descriptionEn: 'Thick 400g+ business cards with a substantial premium hand-feel - the standard choice for estate agents, law firms, accountants, design studios and corporate identity. 90x54mm standard business card size, optional triple-layer lamination (700-810g ultra-thick), foil stamping, spot UV, embossing and rounded corners. MOQ 10 pcs, free sample, DHL Express 2-4 day global delivery. **Best for**: real estate / law & accounting / finance & insurance / design & creative / startups / hospitality / retail / e-commerce.', descriptionJa: '400g 超厚名刺、剛性と重厚感が高く、不動産・法律事務所・会計士・デザイン事務所・企業イメージ名刺に最適。90x54mm 標準名刺サイズ、三層貼り合わせ (700-810g 超厚)・箔押し・スポットUV・エンボス・角丸選択可。10枚から、無料サンプル、DHL Express 国際 2-4 日納品。 **適合業種**: 不動産 / 法律・会計 / 金融保険 / デザイン / スタートアップ / ホテル飲食 / 小売 / 越境EC.', description_zh: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.',
+    description: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 適配行業: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.', descriptionEn: 'Thick 400g+ business cards with a substantial premium hand-feel - the standard choice for estate agents, law firms, accountants, design studios and corporate identity. 90x54mm standard business card size, optional triple-layer lamination (700-810g ultra-thick), foil stamping, spot UV, embossing and rounded corners. MOQ 10 pcs, free sample, DHL Express 2-4 day global delivery. Best for: real estate / law & accounting / finance & insurance / design & creative / startups / hospitality / retail / e-commerce.', descriptionJa: '400g 超厚名刺、剛性と重厚感が高く、不動産・法律事務所・会計士・デザイン事務所・企業イメージ名刺に最適。90x54mm 標準名刺サイズ、三層貼り合わせ (700-810g 超厚)・箔押し・スポットUV・エンボス・角丸選択可。10枚から、無料サンプル、DHL Express 国際 2-4 日納品。 適合業種: 不動産 / 法律・会計 / 金融保険 / デザイン / スタートアップ / ホテル飲食 / 小売 / 越境EC.', description_zh: '400g 超厚名片,挺度極佳手感沈穩,地產代理／律師／會計／設計師事務所及企業形象名片首選。90×54mm 標準名片尺寸,可選三合一裱貼 (700-810g 超厚檔)、燙金／燙銀、局部UV、擊凸、圓角,10 張起印,免費打樣,DHL 全球 2-4 天配送。 適配行業: 房地產/律師會計/金融保險/設計創意/初創企業/酒店餐飲/零售精品/跨境電商.',
     features: [
       '【90×54mm標準名片尺寸】全球通用規格，兼容名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -809,7 +809,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '透明貼紙 / 透明貼 訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers / Clear Stickers | Waterproof & Die-Cut', nameJa: '透明ステッカー / 透明 ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼 / 透明貼紙 訂製 · 10 張起印',
-    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. **Best for**: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス装飾に最適。 **適合業種**: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
+    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. Best for: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス装飾に最適。 適合業種: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     features: [
       '高透明 PET 面材，可選白墨打底',
       '適合玻璃瓶、化妝品與透明盒貼標',
@@ -906,7 +906,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '可移貼紙(無殘膠) / 可移貼紙訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移貼紙訂製 玻璃不留膠 10張起印 · 智印港',
-    description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 **適用業界**:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
+    description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 适配行业:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. Best for:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 適用業界:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     features: [
       '【可移膠】移除不留殘膠，保護車漆與玻璃表面',
       '【PP/PET 面材】可選合成紙或透明膜，適配不同展示需求',
@@ -1096,7 +1096,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印港',
-    description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 10 MOQ · Custom shapes for product labels, packaging, and promotional use. 适配行业: Indie IP, Brand mascots, Event giveaways, Retail, Cross-border e-commerce, E-commerce sellers, Pet food.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・10枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。 适配行业: インディーIP、ブランドマスコット、イベント景品、小売、越境EC、EC seller、ペットフード。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.',
+    description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。適配行業: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. Best for: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 10 MOQ · Custom shapes for product labels, packaging, and promotional use. 适配行业: Indie IP, Brand mascots, Event giveaways, Retail, Cross-border e-commerce, E-commerce sellers, Pet food.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。適用業界: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・10枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。 适配行业: インディーIP、ブランドマスコット、イベント景品、小売、越境EC、EC seller、ペットフード。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。適配行業: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.',
     features: [
       '任意外形模切，強化品牌造型記憶',
       '可選 PVC／PP／PET 面材與覆膜',
@@ -1194,7 +1194,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙 · 訂製',
-    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 10 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. **Best for**: beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', descriptionJa: '箔押し加工でステッカーに高級感。ラグジュアリー商品ラベル、ギフトパッケージ、VIPバッジに最適。ゴールド/シルバーホイル・10枚から・無料デザイン確認・4日仕上げ。 beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.',
+    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. 適配行業: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 10 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. Best for: beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', descriptionJa: '箔押し加工でステッカーに高級感。ラグジュアリー商品ラベル、ギフトパッケージ、VIPバッジに最適。ゴールド/シルバーホイル・10枚から・無料デザイン確認・4日仕上げ。 beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. 適配行業: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.',
     features: [
       '多色箔可選（金／銀／玫瑰金等）',
       '適合禮盒、酒標、美妝與 VIP 物料',
@@ -1290,7 +1290,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '防偽貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Security Stickers | Waterproof & Die-Cut Stickers', nameJa: 'セキュリティステッカー | 防水ステッカー / ダイカット', title_zh: '防偽貼紙',
-    description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
+    description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
     features: [
       '易碎／VOID 等防拆材可選',
       '可變序號、QR、條碼防竄貨',
@@ -1469,7 +1469,7 @@ export const products: Product[] = [
     optimizationRound: 3,    category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印港',
-    description: '牛皮紙袋印刷訂製 100 個起，HK$8 起/個。牛皮紙 120–200g 級，多尺寸多規格，免費刀模設計，支援燙金／局部 UV。標準生產 3-5 個工作天，港九新界滿 $500 順豐免運，零售餐飲活動品牌推廣。 **適配行業**:服裝品牌、買手店、餐廳外賣、咖啡店、手搖飲品、婚慶喜帖、跨境電商 Etsy、禮品店', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., internationally certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands. **Best for**:apparel brands, boutique stores, restaurant takeout, cafe & bubble tea, wedding favors, cross-border Etsy, gift shops, eco-conscious DTC brands', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 **適用業界**:アパレルブランド、セレクトショップ、飲食テイクアウト、カフェ・タピオカ、ブライダル、越境EC Etsy、ギフトショップ、エコDTCブランド', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。 2026 旺季: ESG 環保品牌、有機食品品牌、文創市集限定、減塑徵費合規。',
+    description: '牛皮紙袋印刷訂製 100 個起，HK$8 起/個。牛皮紙 120–200g 級，多尺寸多規格，免費刀模設計，支援燙金／局部 UV。標準生產 3-5 個工作天，港九新界滿 $500 順豐免運，零售餐飲活動品牌推廣。 適配行業:服裝品牌、買手店、餐廳外賣、咖啡店、手搖飲品、婚慶喜帖、跨境電商 Etsy、禮品店', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., internationally certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands. Best for:apparel brands, boutique stores, restaurant takeout, cafe & bubble tea, wedding favors, cross-border Etsy, gift shops, eco-conscious DTC brands', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 適用業界:アパレルブランド、セレクトショップ、飲食テイクアウト、カフェ・タピオカ、ブライダル、越境EC Etsy、ギフトショップ、エコDTCブランド', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。 2026 旺季: ESG 環保品牌、有機食品品牌、文創市集限定、減塑徵費合規。',
     features: [
       '牛皮紙質感，環保形象鮮明',
       '可選棉繩／紙繩手挽與底部加固',
@@ -1659,7 +1659,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印港',
-    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., internationally certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality. **Best for**: weddings / jewelry & watches / tea & F&B / apparel / gift shops / brand events / hotel welcome.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル. **適合業種**: 婚礼 / 宝飾時計 / お茶飲食 / アパレル / ギフトショップ / ブランドイベント / ホテル歓迎.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. 適配行業: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., internationally certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality. Best for: weddings / jewelry & watches / tea & F&B / apparel / gift shops / brand events / hotel welcome.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル. 適合業種: 婚礼 / 宝飾時計 / お茶飲食 / アパレル / ギフトショップ / ブランドイベント / ホテル歓迎.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. 適配行業: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.',
     features: [
       '禮贈場景導向，工藝層次豐富',
       '可搭燙金、局部 UV、緞帶手挽',
@@ -1947,7 +1947,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '大號紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Large Bags | Paper Bags & Kraft Bags', nameJa: '大判紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '大號紙袋',
-    description: '加大尺寸，適合服裝、鞋類等大件商品。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., internationally certified quality management system **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: '加大尺寸，適合服裝、鞋類等大件商品。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., internationally certified quality management system Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【320×120×380mm】加大尺寸，適合外套、鞋盒、大型禮品',
       '【加固車縫】底部貼底工藝，承重達 8–10 公斤',
@@ -2021,7 +2021,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 10 張起印 HK$0.3/張 雙面彩印 | 智印港',
-    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., internationally certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    description: 'A4傳單印刷訂製，10 張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., internationally certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2111,7 +2111,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 10 張起印 雙面四色 免費設計 | 智印港',
-    description: 'A5傳單印刷訂製，10 張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: 'A5傳單印刷訂製，10 張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2296,7 +2296,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: '摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港',
-    description: '三摺雙摺宣傳單印刷訂製，10 張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
+    description: '三摺雙摺宣傳單印刷訂製，10 張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 适配行业:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. Best for:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 適用業界:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2386,7 +2386,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: '厚紙傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Thick Paper Flyers | A4/A5 Flyers & Leaflets', nameJa: '厚紙チラシ | A4/A5 チラシ・フライヤー', title_zh: '厚紙傳單印刷',
-    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 10 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。10枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
+    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 10 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。10枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2468,7 +2468,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: '環保傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Eco Flyers | A4/A5 Flyers & Leaflets', nameJa: 'エコチラシ | A4/A5 チラシ・フライヤー', title_zh: '環保傳單印刷',
-    description: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 10 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands. **Best for**: eco campaigns / ESG reports / social enterprises / organic brands / school promotion / restaurant menus / coffee roasters.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・10枚から・全国送料込み。サステナブルブランド向けエコマーケティング。 **適合業種**: エコキャンペーン / ESGレポート / 社会企業 / オーガニックブランド / 学校推广 / レストランメニュー / コーヒー焙煎.', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.',
+    description: '環保紙張印刷，展現企業責任。適合環保主題活動。 適配行業: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 10 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands. Best for: eco campaigns / ESG reports / social enterprises / organic brands / school promotion / restaurant menus / coffee roasters.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・10枚から・全国送料込み。サステナブルブランド向けエコマーケティング。 適合業種: エコキャンペーン / ESGレポート / 社会企業 / オーガニックブランド / 学校推广 / レストランメニュー / コーヒー焙煎.', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。 適配行業: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2561,7 +2561,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: '即日傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Same-day Flyers | A4/A5 Flyers & Leaflets', nameJa: '即日チラシ | A4/A5 チラシ・フライヤー', title_zh: '即日傳單印刷',
-    description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
+    description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -2630,7 +2630,7 @@ export const products: Product[] = [
     category: 'posters',
     category_slug: 'posters',
     name: 'A2海報印刷 / a2 poster printing | A1/A2 海報 / 展覽海報', nameEn: 'A2 Poster Printing / a2 poster size | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 a2 poster printing 10張起印 HK$12.9/張 | 智印港',
-    description: 'A2海報印刷訂製，10張起印，HK$12.9起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，1-2天交貨，全港送貨。**適配行業**:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, 10-sheet minimum, 1-2 day turnaround. **Best for**: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、10枚から、1-2日納期。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，10張起訂。',
+    description: 'A2海報印刷訂製，10張起印，HK$12.9起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，1-2天交貨，全港送貨。適配行業:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, 10-sheet minimum, 1-2 day turnaround. Best for: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、10枚から、1-2日納期。適用業界:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，10張起訂。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
     features: [
@@ -3031,7 +3031,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     // K3 2026-09-19 裁決: 依印刷方式判定 —— 本品為「12 色藝術微噴（Giclée）」+ 200g 美術紙/RC 相紙,
-    // 屬**噴繪/寫真類**（同 a1-posters 的 1 張起印線）, 非柯式銅版紙海報。
+    // 屬噴繪/寫真類（同 a1-posters 的 1 張起印線）, 非柯式銅版紙海報。
     // 故真值改 1（與全站文案「1張起印」一致）; 原值 100 屬誤植。
     minQuantity: 1,
     images: ['/images/products/art-posters.jpg'],
@@ -3277,7 +3277,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港',
-    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。 **适配行业**:美妝護膚品牌、面膜品牌、精華液品牌、口紅彩妝、香水品牌、手作護膚品、跨境電商', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready. **Best for**:skincare brands, sheet mask brands, serum brands, lipstick & makeup, perfume brands, hand-made skincare, cross-border e-commerce', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。 **適用業界**:スキンケアブランド、シートマスクブランド、美容液ブランド、口紅・メイク、香水ブランド、手作りスキンケア、越境EC', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
+    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。 适配行业:美妝護膚品牌、面膜品牌、精華液品牌、口紅彩妝、香水品牌、手作護膚品、跨境電商', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready. Best for:skincare brands, sheet mask brands, serum brands, lipstick & makeup, perfume brands, hand-made skincare, cross-border e-commerce', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。 適用業界:スキンケアブランド、シートマスクブランド、美容液ブランド、口紅・メイク、香水ブランド、手作りスキンケア、越境EC', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
     features: [
       '【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選',
       '【內托定製】EVA 挖槽 / 紙漿模塑 / PET 吸塑 3 種材質',
@@ -3575,7 +3575,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes / Custom Quote | Gift Boxes & Premium Packaging', nameJa: '上製本箱 / 上製本箱 見積もり | パッケージボックス・化粧箱', title_zh: '精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港',
-    description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 **适配行业**:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. **Best for**:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 **適用業界**:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
+    description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 适配行业:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. Best for:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 適用業界:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
     features: [
       '灰板裱面，結構挺括',
       '磁吸、緞帶等開合儀式感配置',
@@ -3671,7 +3671,7 @@ export const products: Product[] = [
     category: 'red-packets',
     category_slug: 'red-packets',
     name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港',
-    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。',
+    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。適配行業:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. Best for: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。適用業界:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
     features: [
@@ -4622,7 +4622,7 @@ export const products: Product[] = [
     category: 'menus',
     category_slug: 'menus',
     name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 · 訂製',
-    description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。**適配行業**:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. **Best for**: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。**適用業界**:レストラン、カフェ、バー、茶餐廳 (中華風食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
+    description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。適配行業:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. Best for: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。適用業界:レストラン、カフェ、バー、茶餐廳 (中華風食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
     features: [
@@ -6648,7 +6648,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '電子產品包裝盒定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Electronics Packaging Box | Gift Boxes & Custom Packaging', nameJa: '電子機器包裝箱 | パッケージボックス・化粧箱', title_zh: '電子產品包裝盒定製',
-    description: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Packaging boxes for phones, earphones, chargers. EVA foam, blister, paper tray inserts. Eco-friendly options. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: 'スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内裝。環境配慮素材対応。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。',
+    description: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Packaging boxes for phones, earphones, chargers. EVA foam, blister, paper tray inserts. Eco-friendly options. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: 'スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内裝。環境配慮素材対応。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。',
     features: [
       '【1200g 灰板】高挺度外盒，抗壓耐摔',
       '【EVA／吸塑／紙漿內托】三種內襯，精準固定 3C 產品',
@@ -6849,7 +6849,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '拼版白卡彩盒(免刀模費) | 彩盒印刷 / 白卡盒 / 禮品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 彩盒印刷 500個起印 · 香港無對手價 · 智印港',
-    description: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '合版ホワイトカードボックス 1個 ¥4.4 から、固定型代不要、40-60% コスト削減、500個最低ロット、8-12 日納期、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
+    description: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '合版ホワイトカードボックス 1個 ¥4.4 から、固定型代不要、40-60% コスト削減、500個最低ロット、8-12 日納期、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
     features: [
       '【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%',
       '【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡',
@@ -6907,7 +6907,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷訂製 卡盒/紙盒訂製 · 500個起印 5-7天交期 · 智印港',
-    description: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。紙盒訂製、白卡彩盒訂製適用：零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。紙盒訂製、白卡彩盒訂製適用：零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     images: ['/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp'],
     imagesByLocale: {
       'zh-hk': [
@@ -6965,7 +6965,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 跨境電商物流抗壓首選 · 智印港',
-    description: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。瓦楞紙盒訂製、紙盒印刷適用：跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。瓦楞紙盒訂製、紙盒印刷適用：跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     images: ['/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp'],
     imagesByLocale: {
       'zh-hk': [
@@ -7024,7 +7024,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒', nameEn: 'Tuck End Boxes (Straight/Airplane) | Custom Packaging & Lightweight', nameJa: '差し込み式ボックス (直挿/飛行機挿) | パッケージ・軽量', title_zh: '卡盒/插口盒印刷訂製 免刀模 · 餐飲外賣零售快消首選 · 智印港',
-    description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。插口盒訂製、免刀模費適用：餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲。',
+    description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。插口盒訂製、免刀模費適用：餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲。',
     images: ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp'],
     imagesByLocale: {
       'zh-hk': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-multi-angle.webp'],
@@ -7067,7 +7067,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港',
-    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
+    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。適配行業: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. Best for: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。適用業界: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。適配行業: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     features: [
       '【食品級認證】SGS／FDA 通過，大豆油墨無遷移，可直接接觸食品',
       '【耐冷耐濕】0–4°C 冷藏環境保持黏性，適合生鮮與冷鏈',
@@ -7147,9 +7147,9 @@ export const products: Product[] = [
       nameEn: 'Doujinshi Printing',
       nameJa: '同人誌印刷',
       title_zh: '同人誌印刷 | Comiket 對應 | 智印港',
-      description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
-      descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
-      descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
+      description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
+      descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
+      descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
       description_zh: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。',
             price_range: '¥7,500〜/部〜',
       basePrice: 7500,
@@ -7290,7 +7290,7 @@ export const products: Product[] = [
     slug: 'foil-wedding-invitations',
 
     title_zh: '燙金喜帖',
-    description_zh: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。**適配行業**: 婚...',
+    description_zh: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。適配行業: 婚...',
     basePrice: 1.2,
     weight_score: 50,
     images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-foil-wedding-invitations-zh-hk-hero.webp'],
@@ -7328,9 +7328,9 @@ export const products: Product[] = [
         category: 'wedding-invitations',
     category_slug: 'wedding-invitations',
     name: '燙金喜帖', nameEn: 'Foil Wedding Invitations', nameJa: '箔押し結婚式招待状',
-    description: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。**適配行業**: 婚慶/酒店/教堂/海外婚禮/Save the Date/感謝卡.',
-    descriptionEn: '300gsm cotton foil wedding invitations in rose gold / champagne / silver finishes, 50 sets MOQ. Free shipping over $99 to USA + DHL Express 2-4 day global. **Best for**: weddings / hotels / chapels / destination weddings / Save the Date / thank you cards.',
-    descriptionJa: '300g コットン箔押し結婚式招待状、ローズゴールド/シャンパンゴールド/銀仕上げ、50 セットから。DHL 国際 2-4 日配送。**適合業種**: 結婚式 / ホテル / チャペル /  destination wedding / Save the Date / サンキュカード.',
+    description: '300g 棉紙燙金喜帖,玫瑰金 / 香檳金 / 銀色燙金工藝,50 套起印。順豐本地滿 HK$500 免費 + DHL 全球 2-4 天。適配行業: 婚慶/酒店/教堂/海外婚禮/Save the Date/感謝卡.',
+    descriptionEn: '300gsm cotton foil wedding invitations in rose gold / champagne / silver finishes, 50 sets MOQ. Free shipping over $99 to USA + DHL Express 2-4 day global. Best for: weddings / hotels / chapels / destination weddings / Save the Date / thank you cards.',
+    descriptionJa: '300g コットン箔押し結婚式招待状、ローズゴールド/シャンパンゴールド/銀仕上げ、50 セットから。DHL 国際 2-4 日配送。適合業種: 結婚式 / ホテル / チャペル /  destination wedding / Save the Date / サンキュカード.',
     price_range: 'NT$25-95 / 套',
     optimizedAt: '2026-08-18',
     optimizationRound: 1,
@@ -7342,7 +7342,7 @@ export const products: Product[] = [
     slug: 'wedding-thank-you-cards',
 
     title_zh: '婚禮感謝卡',
-    description_zh: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。**適配行業**: 婚慶答...',
+    description_zh: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。適配行業: 婚慶答...',
     basePrice: 0.65,
     weight_score: 50,
     images: ['/images/products/seedream-webp/zprintpro-wedding-invitations-wedding-thank-you-cards-zh-hk-hero.webp'],
@@ -7380,9 +7380,9 @@ export const products: Product[] = [
         category: 'wedding-invitations',
     category_slug: 'wedding-invitations',
     name: '婚禮感謝卡', nameEn: 'Wedding Thank You Cards', nameJa: '結婚式サンキュカード',
-    description: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。**適配行業**: 婚慶答謝/教堂/海外婚禮/教堂紀念/感謝卡.',
-    descriptionEn: 'Wedding thank you cards 50 sets MOQ, 300gsm cotton / art / Conqueror paper + foil / UV / die-cut, envelopes included. Free shipping over $99 + DHL 2-4 day global. **Best for**: wedding thank-yous / chapels / destination weddings / church memorials / thank you cards.',
-    descriptionJa: '結婚式サンキュカード 100 セットから、300g コットン / コート / コンカラー紙 + 箔押し / UV / 抜型、封筒付き。DHL 国際 2-4 日配送。**適合業種**: 結婚式サンキュー / チャペル /  destination wedding / 教会記念 / サンキュカード.',
+    description: '婚禮感謝卡 100 套起印,300g 棉紙 / 銅版紙 / 剛古紙 + 燙金 / UV / 模切,配信封。順豐本地 + DHL 全球。適配行業: 婚慶答謝/教堂/海外婚禮/教堂紀念/感謝卡.',
+    descriptionEn: 'Wedding thank you cards 50 sets MOQ, 300gsm cotton / art / Conqueror paper + foil / UV / die-cut, envelopes included. Free shipping over $99 + DHL 2-4 day global. Best for: wedding thank-yous / chapels / destination weddings / church memorials / thank you cards.',
+    descriptionJa: '結婚式サンキュカード 100 セットから、300g コットン / コート / コンカラー紙 + 箔押し / UV / 抜型、封筒付き。DHL 国際 2-4 日配送。適合業種: 結婚式サンキュー / チャペル /  destination wedding / 教会記念 / サンキュカード.',
     price_range: 'NT$15-55 / 套',
     optimizedAt: '2026-08-18',
     optimizationRound: 1,
