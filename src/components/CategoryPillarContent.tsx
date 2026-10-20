@@ -222,7 +222,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             </h3>
             </div>
             {data.materialTable.subtitle && (
-              <p className="text-gray-500 mb-4 text-sm md:text-base pl-5">{data.materialTable.subtitle}</p>
+              <p className="text-gray-500 mb-4 text-sm md:text-base pl-5">{parseInlineLinks(data.materialTable.subtitle)}</p>
             )}
             <div className="overflow-x-auto rounded-xl border border-gray-200 -mx-1 sm:mx-0">
               <table className="w-full min-w-[520px] sm:min-w-0 text-xs sm:text-sm md:text-base">
@@ -353,7 +353,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             </div>
             <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-gray-600 space-y-3 sm:space-y-4">
               {data.buyingGuide.paragraphs.map((p, idx) => (
-                <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
+                <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{parseInlineLinks(p)}</p>
               ))}
             </div>
             {data.buyingGuide.links && data.buyingGuide.links.filter((l) => guideLinkExists(l.href)).length > 0 && (
