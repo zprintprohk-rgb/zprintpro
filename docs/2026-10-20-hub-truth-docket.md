@@ -63,3 +63,18 @@ ode scripts/push-gate-check.mjs 报「last push 103m ago」，而 .git/logs/refs
 **风险**：gate 会放行 < 30 min 的撞车窗口；当前只能以 reflog 时间自行判定。
 **证据**：reflog 末两行 1792492667（d576349c 18:37 推）→ 1792497503（840036dd 19:57 推）；gate 读到的值对应 commit 时间而非推送时间。
 **建议**：gate 改为读 .git/logs/refs/remotes/origin/main 最后一行的 epoch。
+## 7. MOQ 欠承诺：zh 已对齐 3 项，en/ja 待裁 4 项（20:2x 更新）
+
+**三方对照证据**（PDP 线上文案 / products.ts / sku-seo 各语种段）：
+
+| SKU | products.ts | desc（zh） | body/FAQ（zh） | 处理 |
+|---|---|---|---|---|
+| certificates | 100 | 100 起 ✓ | 原「10 張起印」 | **已改 100 張起印** |
+| electronics-packaging-box | 200 | 200 個起 ✓ | 原「100 張／100 個起印」 | **已改 200** |
+| kraft-paper-packaging-box | 300 | 300 個起 ✓ | 原「100 張／100 個起印」 | **已改 300** |
+| textbooks | 100 | **50 本起** ✗ | 100 本起 ✓ | **矛盾未清，待 K3**（desc 50 vs 真值 100） |
+
+**剩余待裁（en/ja 段）**：
+- certificates ja：title/description「50枚〜」（真值 100 枚）→ 需 K3 定 50 是否小批量档
+- textbooks ja：FAQ「お急ぎの少量注文は 10 枚からご相談ください」→ 属"少量可洽"软口径，非硬 MOQ 声称，建议守卫豁免
+- electronics / kraft：en/ja 段仍有 100 口径残留，随 zh 对齐同批处理
