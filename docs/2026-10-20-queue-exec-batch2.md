@@ -130,3 +130,31 @@
 ### E. 幂等复核（未做，因已完成）
 
 - 内链批 3（pricing / kraft 稿 → 深度指南）：**三语已存在该链接**（hasGuideLink=true × 6），不重复添加
+---
+
+## 附：批 2.2（同窗口续跑）
+
+### F. 博客正文 markdown 裸渲染修复（新缺陷面，线上实测）
+
+两篇博客正文以 markdown 书写但渲染层是 HTML，线上直接显示标记字面：
+
+| 缺陷 | 实例数（三语合计） | 处理 |
+|---|---|---|
+| [label](/path) 裸链接 | 21（flyer-opening 6 + pet-food 1，×3 语） | 转 <a href> |
+| **bold** 裸粗体 | 158 + 补 4（en 长 FAQ 粗体 >60 字符） | 转 <strong> |
+| ## 标题 裸标题 | 31/语 ×3 = 93 | 转 <h2>/<h3> |
+| - 列表 裸列表 | 22/语 ×3 = 66 | 转 <ul><li> |
+
+断言：转换后 **/](/^##/^-  残留全 0；结构体检（zh flyer：h2=21 / ul=4 / li=22 / emptyLi=0）。**说明**：<pre>/<code> 内 markdown 保留原样（示例代码）。
+
+### G. 类目页/博客裸 markdown 基线（部署前，可见文本口径）
+
+- 类目页：**10 处 / 4 页**（packaging 5 · red-packets 3 · menus 1 · calendars 1）
+- 博客页：flyer-opening（zh 4 + en 4 + ja 5）· pet-food（zh 1 + ja 1）
+- 部署后验收：
+ode .hermes/_probe_batch21.mjs（类目页 0）+ _probe_blog_md.mjs（博客页 0）
+
+### H. MOQ 欠承诺：zh 侧 3 项已对齐
+
+certificates 10→100、electronics 100→200、kraft 100→300（body + FAQ Q2；desc 与 products.ts 双证一致才动）。
+textbooks（desc 50 vs 真值 100）与 en/ja 残余口径 → K3 台账，见 hub 真值 docket §7。
