@@ -502,7 +502,7 @@ export function CategoryPageV9({
                     <span className="font-mono text-[12px] font-bold text-white bg-[#2873F5] rounded-[5px] px-1.5 py-0.5 shrink-0 -translate-y-px">Q</span>
                     {a.q}
                   </h3>
-                  <p className="text-[15px] text-[#6B7280] leading-[1.7]">{a.a}</p>
+                  <p className="text-[15px] text-[#6B7280] leading-[1.7]">{parseInlineLinks(a.a)}</p>
                 </div>
               ))}
             </div>
@@ -553,7 +553,7 @@ export function CategoryPageV9({
           <section className="mb-16 bg-[#F2F6FF] rounded-[22px] p-7 sm:p-8 lg:p-9">
             <Eyebrow>Materials</Eyebrow>
             <SectionTitle>{materialTable?.title ?? t9.fallbackMaterial}</SectionTitle>
-            {materialTable?.subtitle && <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">{materialTable.subtitle}</p>}
+            {materialTable?.subtitle && <p className="text-[#6B7280] text-[16px] mt-2 max-w-[680px]">{parseInlineLinks(materialTable.subtitle)}</p>}
             {materialTable && (
               <div className="overflow-hidden rounded-[14px] shadow-[0_1px_3px_rgba(16,24,40,0.07)] border border-[#E5E7EB] mt-5">
                 <table className="w-full border-collapse text-[15.5px] bg-white [&_tbody_tr:nth-child(even)]:bg-[#F8FAFD]">
@@ -586,7 +586,7 @@ export function CategoryPageV9({
               {specialOptions.map((o) => (
                 <div key={o.name} className="bg-white border border-[#E5E7EB] rounded-[14px] p-[18px] shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
                   <h4 className="text-[17px] font-extrabold mb-[7px]">{o.name}</h4>
-                  <p className="text-[15px] text-[#6B7280] leading-[1.65]">{o.description}</p>
+                  <p className="text-[15px] text-[#6B7280] leading-[1.65]">{parseInlineLinks(o.description)}</p>
                 </div>
               ))}
             </div>
@@ -621,7 +621,7 @@ export function CategoryPageV9({
                     </svg>
                   </div>
                   <h4 className="text-[17px] font-extrabold mb-[7px]">{n.title}</h4>
-                  <p className="text-[15px] text-[#6B7280] leading-[1.65]">{n.description}</p>
+                  <p className="text-[15px] text-[#6B7280] leading-[1.65]">{parseInlineLinks(n.description)}</p>
                 </div>
               ))}
             </div>
@@ -690,7 +690,7 @@ export function CategoryPageV9({
                   </p>
                 )}
                 {guideBody.map((p) => (
-                  <p key={p.slice(0, 24)} className="mb-5 text-[17px] text-[#3A4250] leading-[1.9] text-justify">{p}</p>
+                  <p key={p.slice(0, 24)} className="mb-5 text-[17px] text-[#3A4250] leading-[1.9] text-justify">{parseInlineLinks(p)}</p>
                 ))}
                 {guideKey && (
                   <p className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 text-[#1F2937] font-semibold text-[17px] leading-[1.9]">{guideKey}</p>
@@ -742,7 +742,7 @@ export function CategoryPageV9({
                       {i + 1}
                     </div>
                     <b className="block text-[15.5px] mb-1.5">{s.title}</b>
-                    <p className="text-[14px] text-[#6B7280] leading-[1.6]">{s.desc}</p>
+                    <p className="text-[14px] text-[#6B7280] leading-[1.6]">{parseInlineLinks(s.desc)}</p>
                   </div>
                 ))}
               </div>
@@ -776,7 +776,7 @@ export function CategoryPageV9({
                   </table>
                 </div>
               </div>
-              {compare.note && <p className="text-[12.5px] text-[#6B7280] mt-2.5">{compare.note}</p>}
+              {compare.note && <p className="text-[12.5px] text-[#6B7280] mt-2.5">{parseInlineLinks(compare.note)}</p>}
             </section>
           )}
 
