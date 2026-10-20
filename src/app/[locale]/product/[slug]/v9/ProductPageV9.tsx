@@ -383,6 +383,14 @@ export function ProductPageV9({
       (PROC_MAIN[product.category_slug] ? HKD_MACHINE : ['/images/factory/factory-hpindigo.webp', (t.factoryDigi as { tag: string; cap: string }).tag, (t.factoryDigi as { tag: string; cap: string }).cap]),
   ];
 
+  const renderRich = (s: string, key: string) =>
+    s.split(/(\*\*.+?\*\*)/g).filter(Boolean).map((seg, i) => {
+      const b = /^\*\*(.+?)\*\*$/.exec(seg);
+      return b
+        ? <strong key={`${key}-b${i}`}>{parseInlineLinks(b[1])}</strong>
+        : <span key={`${key}-t${i}`}>{parseInlineLinks(seg)}</span>;
+    });
+
   const renderBodyPara = (p: string, key: string) => {
     if (p === '**常見問題**' || p === '**FAQ**' || p === '**FAQs**') {
       return <p key={key} className="font-bold text-[#1F2937] mt-7 mb-3 text-[17px]">{t.faqHeading}</p>;
@@ -395,14 +403,14 @@ export function ProductPageV9({
       return (
         <div key={key} className="mt-4">
           <p className="font-bold text-[#1F2937] text-[16.5px] mb-1.5">{q}</p>
-          {a && <p className="text-[#3A4250] text-[16px] leading-[1.85] mb-3">{a}</p>}
+          {a && <p className="text-[#3A4250] text-[16px] leading-[1.85] mb-3">{renderRich(a, key + "-a")}</p>}
         </div>
       );
     }
     if (p.startsWith('準備落單') || p.startsWith('Ready to order') || p.startsWith('ご注文はお気軽に') || p.startsWith('ご注文のご相談')) {
       return <p key={key} className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 font-semibold text-[#1F2937] text-[16.5px] leading-[1.85]">{parseInlineLinks(p)}</p>;
     }
-    return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{parseInlineLinks(p)}</p>;
+    return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{renderRich(p, key)}</p>;
   };
 
   return (
