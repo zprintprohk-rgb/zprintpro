@@ -158,3 +158,28 @@ ode .hermes/_probe_batch21.mjs（类目页 0）+ _probe_blog_md.mjs（博客页 
 
 certificates 10→100、electronics 100→200、kraft 100→300（body + FAQ Q2；desc 与 products.ts 双证一致才动）。
 textbooks（desc 50 vs 真值 100）与 en/ja 残余口径 → K3 台账，见 hub 真值 docket §7。
+---
+
+## 交接（下一会话直接续跑）
+
+### 已完成并上线（截至本次推送前）
+- 里印 ×3 PDP、内链批 2（6 条）、hub FAQ zh 修 2 + 三语平价、深度指南 12 段升级、CRED en/ja 54 处、博客 markdown 338 处、products.ts 卡片 bold 113 处
+- 守卫：price-truth-guard.js（MOQ/价格/hub 标题价/products-content 四种模式）
+
+### 本次推送包含（未部署前状态）
+| 修复 | 部署后验收 |
+|---|---|
+| V9 类目页 points 走 parseInlineLinks | _probe_final.mjs 类目页 md=0 |
+| V9 PDP body 段落走 parseInlineLinks | PDP md=0（现 2 处 roll-stickers） |
+| products-content 通用句去「100 個起印」 | electronics/kraft 页无该句 |
+| products.ts 卡片 bold 剥离 | 博客/类目页 ** = 0 |
+
+### 待 K3 裁决（4 件）
+1. 价格/MOQ 台账：hub 标题价 HK.03/個（低于目录地板）+ certificates/textbooks/electronics/kraft en/ja 残余口径
+2. products-content 45/77 MOQ 不一致：A 逐块改写 / B 仅守卫观察
+3. §0.0 名片展示层 (a)/(b)/(c)
+4. CF 规则加 bot 豁免（UA 差分 403 实锤）
+
+### 已知工具账
+- push-gate-check.mjs 时间源滞后（读 commit 时间），需改读 reflog epoch
+- Start-Sleep 等推送窗口属 §0.25.8 禁止项；正确做法=本地提交、下窗口再推
