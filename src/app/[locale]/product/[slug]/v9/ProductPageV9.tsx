@@ -392,7 +392,7 @@ export function ProductPageV9({
     });
 
   const renderBodyPara = (p: string, key: string) => {
-    if (p === '**常見問題**' || p === '**FAQ**' || p === '**FAQs**') {
+    if (/^\*\*(常見問題|FAQ|FAQs|よくある質問|常见问题)\*\*$/.test(p)) {
       return <p key={key} className="font-bold text-[#1F2937] mt-7 mb-3 text-[17px]">{t.faqHeading}</p>;
     }
     if (p.startsWith('**Q')) {
