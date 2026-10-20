@@ -156,8 +156,25 @@ if (fs.existsSync(HUB)) {
   }
 }
 
+// ---- products-content longDescription MOQ WARN (report-only, 2026-10-20) ----
+const PC = path.join(REPO, 'src', 'data', 'products-content.ts');
+let pcWarn = [];
+if (fs.existsSync(PC) && process.argv.includes('--products-content')) {
+  const pc = fs.readFileSync(PC, 'utf8');
+  const pcBlocks = [...pc.matchAll(/^  '([a-z0-9-]+)': \{/gm)].map(mm => ({ slug: mm[1], off: mm.index }));
+  for (let i = 0; i < pcBlocks.length; i++) {
+    const seg = pc.slice(pcBlocks[i].off, i + 1 < pcBlocks.length ? pcBlocks[i + 1].off : pc.length);
+    const nums = [...seg.matchAll(/(\d{1,6})\s*(?:個|張|枚|本|冊)\s*起(?:印)?/g)].map(x => +x[1]).filter(n => n >= 10);
+    const tr = truth[pcBlocks[i].slug];
+    if (!tr || !nums.length) continue;
+    const min = Math.min(...nums);
+    if (min !== tr.minQ) pcWarn.push({ slug: pcBlocks[i].slug, min, truth: tr.minQ });
+  }
+}
+
 console.log(`[price-truth] blocks=${blocks.length} checked=${checkedBlocks} noTruth=${skippedNoTruth.length}${skippedNoTruth.length ? ' (' + skippedNoTruth.slice(0, 8).join(',') + ')' : ''}`);
-console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}  HUB WARN=${hubWarn.length}`);
+console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}  HUB WARN=${hubWarn.length}  P-CONTENT WARN=${pcWarn.length}`);
+pcWarn.slice(0, 15).forEach(w => console.log(`  PC ${w.slug}: 最小声称 ${w.min} vs 真值 ${w.truth}`));
 hard.slice(0, 40).forEach(h => console.log(`  HARD ${h.slug}: 最小声称 ${h.got} < 真值 ${h.want}  声称集[${h.all}]`));
 warnU.slice(0, 40).forEach(w => console.log(`  WARN ${w.slug}: ${w.got}${w.kind === 'price' ? ' 越出 ' + w.band : ' > 真值 ' + w.want + ' 声称集[' + w.all + ']'}`));
 hubWarn.forEach(h => console.log(`  HUB ${h.loc}: ${h.got} < 类目地板 ${h.floor}`));
