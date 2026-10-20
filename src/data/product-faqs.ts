@@ -335,7 +335,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '食品用のビニール袋・真空パックは作れますか？',
     },
     answer: {
-      'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，100 個起印、免費 2 小時打稿、WhatsApp 即時報價。',
+      'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，起印量按盒型而定、免費 2 小時打稿、WhatsApp 即時報價。',
       'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC-certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
       'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
     },
