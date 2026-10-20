@@ -227,3 +227,24 @@ ode .hermes/_probe_cat_all3.mjs（三语 42 页）、_probe_final.mjs（类目+�
 - product-faqs.ts：包装通用 FAQ「100 個起印」→「起印量按盒型而定」
 - category-conversion-blocks.ts：交期 →「標準盒型3-5個工作天、拼版8-15天生產」
 - products.ts：卡片描述 113 处 **bold** 标记剥离
+### 2026-10-21 02:3x 网络中断交接（待推 8 commit）
+
+**现象**：git push 报 Please make sure you have the correct access rights；实测 ssh -T git@github.com 与 ssh -p 443 git@ssh.github.com 均 exit 255（连接超时）；etch https://github.com 亦失败；DNS 可解析（20.205.243.166）、无本地代理端口。⇒ 网络层封禁，非凭证问题。
+
+**待推队列**（按序，全部本地已提交、tsc 54=54、门童 0 red）：
+1. 53c5f829 docs 终验（10 PASS/0 FAIL）
+2. 572b75b 直答 5 PDP（rigid/cosmetic/mailer/white-card/kraft）+ 盒数量词 張→個
+3. dfae8c19 纸袋/精装盒量词 5 处
+4. 36c14523 守卫新增 UNIT 规则 + magnetic-closure 量词
+5. 39c517c8 16 SKU 首段补价格带
+6.  9deff3a 30 SKU 直答 clause（日历/餐牌/书刊/信封/利是封/摺页）
+7. 904aaa1e docket（price_range 异常 + 覆盖率）
+8. 本条
+
+**推送后必做**：
+- 
+ode scripts/verify-deploy.mjs → 探针 _probe_spaced_final2.mjs
+- 新增探针：rigid/cosmetic/mailer/white-card/kraft 五 PDP 首段含「直答：」+ 对应价格带；wall-calendars / pvc-menus / business-envelopes 三样例
+- 
+ode scripts/guards/price-truth-guard.js 期望 UNIT WARN=0（本地已 0）
+- 首页/类目页抽查「直答：」不出现裸 markdown（首段为纯文本，无链接）
