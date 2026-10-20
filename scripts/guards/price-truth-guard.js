@@ -172,8 +172,22 @@ if (fs.existsSync(PC) && process.argv.includes('--products-content')) {
   }
 }
 
+// ---- 量词错配 (盒/袋 用「張」) WARN: 2026-10-21 新增, 源于 5 处手工修正 ----
+let unitWarn = [];
+for (const b of blocks) {
+  if (!/(box|bag)/.test(b.slug)) continue;
+  const blk = seo.slice(b.off, b.end);
+  for (const mm of blk.matchAll(/(\d{1,5})\s*張\s*起(?:印)?/g)) {
+    const ctx = blk.slice(Math.max(0, mm.index - 60), mm.index + 20);
+    // 句内明确指贴纸/信封/海报/传单等张计量品类时豁免
+    if (/貼紙|贴纸|信封|海報|海报|傳單|传单|sticker|envelope|poster|flyer/i.test(ctx)) continue;
+    unitWarn.push({ slug: b.slug, claim: mm[0] });
+  }
+}
+
 console.log(`[price-truth] blocks=${blocks.length} checked=${checkedBlocks} noTruth=${skippedNoTruth.length}${skippedNoTruth.length ? ' (' + skippedNoTruth.slice(0, 8).join(',') + ')' : ''}`);
-console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}  HUB WARN=${hubWarn.length}  P-CONTENT WARN=${pcWarn.length}`);
+console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}  HUB WARN=${hubWarn.length}  P-CONTENT WARN=${pcWarn.length}  UNIT WARN=${unitWarn.length}`);
+unitWarn.slice(0, 15).forEach(w => console.log(`  UNIT ${w.slug}: ${w.claim}（盒/袋应用「個」）`));
 pcWarn.slice(0, 15).forEach(w => console.log(`  PC ${w.slug}: 最小声称 ${w.min} vs 真值 ${w.truth}`));
 hard.slice(0, 40).forEach(h => console.log(`  HARD ${h.slug}: 最小声称 ${h.got} < 真值 ${h.want}  声称集[${h.all}]`));
 warnU.slice(0, 40).forEach(w => console.log(`  WARN ${w.slug}: ${w.got}${w.kind === 'price' ? ' 越出 ' + w.band : ' > 真值 ' + w.want + ' 声称集[' + w.all + ']'}`));
