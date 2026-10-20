@@ -96,3 +96,37 @@
 2. price-truth-guard 尚未接入 pre-commit（现为按需运行，建议先观察 1-2 周 WARN 噪音再定）
 3. 包装簇下一个深度资产：hub v2 真值版（价格带从 products.ts 派生）+ 内链批 3
 4. §0.35.7 双条件：本批写入前 lane.lock 不存在、SESSION_LOCK 已释放、src 无 MM；写入后待推送
+
+---
+
+## 附：批 2.1（同窗口续跑，2026-10-20 20:0x）
+
+### A. hub 簇双向内链（三语）
+
+| locale | 新增 | 链路 |
+|---|---|---|
+| zh-hk | 5 条 | 食品包裝印刷完全指南 / 牛皮紙盒 8 大盒型對比 / 包裝盒印刷價格 2026 / 食品包裝盒 PDP / 磁吸禮盒 PDP |
+| en | 5 条 | 同构（/en/ 前缀） |
+| ja | 3 条 | 食品包装印刷ガイド / クラフト紙箱と段ボールの比較 / 2026 年パッケージ価格 |
+
+合计 13 条，全部有效路由（探针 200）。
+
+### B. 渲染层缺陷修复（§0.22 第 5 款）
+
+线上实测：**4/14 类目页共 11 处裸 markdown**（packaging 5 / red-packets 4 / menus 1 / calendars 1），用户直接看到 ` [產品鏈接](/zh-hk/product/...) ` 字面文本。
+修复：CategoryPillarContent.tsx 四处纯文本渲染改走 parseInlineLinks（points / item.description / spec.value / node.description）+ 引入 import。tsc 54=54。验收标准：部署后全 14 类目页裸 markdown = 0。
+
+### C. CRED 清理 en/ja blog-data
+
+- en 12 Industries 族 → Multi-Industry / multi-industry：22 处（15 篇）
+- ja 12 業界 → 多業界：32 处（12 篇）；国際トップ → 大型
+- 残留 0（脚本内断言）；diff = 27/27 行（一篇一行，无格式 churn）
+
+### D. hub FAQ 三语平价
+
+- en +2 Q（价格计算 / 內側印刷）、ja +1 Q（内側印刷）→ 三语均含价格 + 內側印刷
+- 复检：三语貼紙类 Q = 0；ja 早前「20 问」为边界误判（越界到 bannersContent），实际 12 Q 干净
+
+### E. 幂等复核（未做，因已完成）
+
+- 内链批 3（pricing / kraft 稿 → 深度指南）：**三语已存在该链接**（hasGuideLink=true × 6），不重复添加
