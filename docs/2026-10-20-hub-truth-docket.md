@@ -47,3 +47,12 @@
 ## 4. 机检联动
 
 `scripts/guards/price-truth-guard.js` 已加 **hub 标题价检查**：`featuredSnippet` 的每件价若低于包装类目每件地板价 → WARN（不阻断）。首跑即命中 #1（HK$0.03/個起）。
+
+## 5. 追加登记（20:0x 复检）
+
+| # | 位置 | 原文 | 问题 | 建议 |
+|---|---|---|---|---|
+| 7 | zh packaging featuredSnippet | 「8-15 天交期」 | 与全站标准「3-5 個工作天（檔案確認後）」口径不一 | K3 确认 8-15 是否指拼版/大货档；否则改 3-5 工作天 |
+| 8 | zh packaging featuredSnippet | 「100-10,000 本彈性 MOQ」 | 计量单位错（盒应用「個」） | **已修** → 「100-10,000 個彈性 MOQ」 |
+
+另：packaging featuredSnippet 其余数字（100 個起印 / 8 檔標準尺寸 / DHL 2-4 天 / 1-2 個工作天順豐）与真值一致。
