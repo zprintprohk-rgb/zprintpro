@@ -32,6 +32,7 @@ import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlo
 import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n';
 // 2026-09-19 K3 裁决 1: v10.1 决策 1-B 展示层 MOQ 口径 (数码线书刊/本册类 5 SKU = 1 本起印)
 import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isPaperGoodsSmallBatch, PAPER_GOODS_MOQ } from '@/data/print-method-policy';
+import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -399,9 +400,9 @@ export function ProductPageV9({
       );
     }
     if (p.startsWith('準備落單') || p.startsWith('Ready to order') || p.startsWith('ご注文はお気軽に') || p.startsWith('ご注文のご相談')) {
-      return <p key={key} className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 font-semibold text-[#1F2937] text-[16.5px] leading-[1.85]">{p}</p>;
+      return <p key={key} className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 font-semibold text-[#1F2937] text-[16.5px] leading-[1.85]">{parseInlineLinks(p)}</p>;
     }
-    return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{p}</p>;
+    return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{parseInlineLinks(p)}</p>;
   };
 
   return (
@@ -709,7 +710,7 @@ export function ProductPageV9({
         <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">{t.ufsTitle}</h2>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
           <div>
-            <p className="text-[19px] text-[#1F2937] font-semibold leading-[1.85] mb-5 pb-5 border-b-2 border-[#1F2937]">{bodyLead}</p>
+            <p className="text-[19px] text-[#1F2937] font-semibold leading-[1.85] mb-5 pb-5 border-b-2 border-[#1F2937]">{parseInlineLinks(bodyLead)}</p>
             {bodyMain.map((p, i) => renderBodyPara(p, `p-${i}`))}
           </div>
           <aside className="self-start lg:sticky lg:top-[88px]">
