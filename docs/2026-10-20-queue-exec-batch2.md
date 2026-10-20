@@ -183,3 +183,20 @@ textbooks（desc 50 vs 真值 100）与 en/ja 残余口径 → K3 台账，见 h
 ### 已知工具账
 - push-gate-check.mjs 时间源滞后（读 commit 时间），需改读 reflog epoch
 - Start-Sleep 等推送窗口属 §0.25.8 禁止项；正确做法=本地提交、下窗口再推
+---
+
+## 教训：渲染层修复必须「按线上 class 反查真实组件与行号」
+
+**本次踩坑**：类目页裸 markdown 修了 CategoryPillarContent（points/FAQ/techSpecs），部署后线上仍有 10 处 —— 因为同一份 category-seo-content 数据在 **CategoryPageV9** 还有 3 条渲染路径：
+1. dvantages[].points（L541，{pt}）
+2. 買家指南段落（L693，className="mb-5 text-[17px] ... text-justify">{p}）
+3. FAQ 答案 / 材質副標題 / 加工描述 / 難度 / 對比 note（6 处 {x.y}</p>）
+
+**方法（可复用）**：
+1. 线上 curl 取原始 HTML（非 strip 版），定位可疑文本所在的**完整标签 class**
+2. g -l '<该 class 串>' src/ → 唯一定位真实组件文件
+3. 再按行号改，不允许凭「数据来自哪个文件」推断渲染组件（V9 与 Pillar 双组件并存）
+4. 部署后连抓 3 次验证（CF 边缘会出现 503/新旧混存，单次计数不可信）
+
+**校验脚本**：
+ode .hermes/_probe_cat_all3.mjs（三语 42 页）、_probe_final.mjs（类目+博客+PDP+FAQ+MOQ 一站验收）
