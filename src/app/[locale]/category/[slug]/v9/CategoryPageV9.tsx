@@ -32,6 +32,7 @@ import { getProductMainImage } from '@/lib/product-image';
 import { localizeSpecValue } from '@/data/product-specs-i18n';
 import { SpecFinderV9, SpecFinderOptions } from './SpecFinderV9';
 import { TrustBadgeBlock } from './TrustBadgeBlock';
+import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -538,7 +539,7 @@ export function CategoryPageV9({
                     <ul>
                       {adv.points.map((pt) => (
                         <li key={pt} className="text-[16px] text-[#444444] pl-[18px] relative mb-1.5 before:content-[''] before:absolute before:left-0 before:top-[0.62em] before:w-2 before:h-2 before:rounded-[2px] before:bg-[#2873F5]">
-                          {pt}
+                          {parseInlineLinks(pt)}
                         </li>
                       ))}
                     </ul>
