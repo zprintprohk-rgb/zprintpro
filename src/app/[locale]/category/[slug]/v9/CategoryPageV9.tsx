@@ -720,7 +720,7 @@ export function CategoryPageV9({
                       {f.q}
                       <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
                     </summary>
-                    <div className="px-[22px] pb-5 text-[15.5px] text-[#444444] leading-[1.85]">{f.a}</div>
+                    <div className="px-[22px] pb-5 text-[15.5px] text-[#444444] leading-[1.85]">{parseInlineLinks(f.a)}</div>
                   </details>
                 ))}
               </div>
