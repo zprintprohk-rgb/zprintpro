@@ -315,7 +315,7 @@ const CATEGORY_TEMPLATES: Record<string, CategoryTemplate> = {
 // ===== Body templates (3 locale) =====
 
 function buildEnBody(short: string, catSlug: string, t: CategoryTemplate['en']): string {
-  return `Custom ${short.toLowerCase()} designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over \$99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.
+  return `Custom ${short.toLowerCase()} designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over \$99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. Production follows documented QC checks, and FDA-compliant materials are available where specified.
 
 ${short} are widely used across ${t.industry1}, ${t.industry2}, and ${t.industry3} — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The ${catSlug.replace(/-/g, ' ')} market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our ${short.toLowerCase()} service is built for.
 
@@ -339,11 +339,11 @@ ${t.faq3a}
 **Q4: ${t.faq4}**
 ${t.faq4a}
 
-Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities.`;
+Ready to print? Get a free digital proof in 2 hours — WhatsApp us at +86 198 8085 1334 (wa.me/8619880851334) or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities.`;
 }
 
 function buildZhBody(short: string, catSlug: string, t: CategoryTemplate['zh']): string {
-  return `${short} 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 \$500 以上免費順豐本地速遞，辨公室 / 港鐵站交收。ISO 9001 認證工廠，${t.usp1}，${t.usp2}，15+ 年印刷經驗。
+  return `${short} 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 \$500 以上免費順豐本地速遞，辨公室 / 港鐵站交收。正規印刷廠房，${t.usp1}，${t.usp2}，港深兩地印前品檢。
 
 ${short} 廣泛應用於 ${t.industry1}、${t.industry2}、${t.industry3} 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，${short} 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。
 
@@ -371,7 +371,7 @@ ${t.faq4a}
 }
 
 function buildJaBody(short: string, catSlug: string, t: CategoryTemplate['ja']): string {
-  return `カスタム ${short.toLowerCase()} — 日本市場向け高品質短納期印刷サービス。100 枚から対応、${t.usp1}、${t.usp2}。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。
+  return `カスタム ${short.toLowerCase()} — 日本市場向け高品質短納期印刷サービス。100 枚から対応、${t.usp1}、${t.usp2}。沖縄県・北海道も追加料金なし。DHL 国際配送で 2-4 日納品、国内検品のうえ発送。
 
 ${short} は ${t.industry1}、${t.industry2}、${t.industry3} の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。${catSlug.replace(/-/g, ' ')} 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに ${short.toLowerCase()} サービスの設計思想です。
 
