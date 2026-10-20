@@ -78,3 +78,7 @@ ode scripts/push-gate-check.mjs 报「last push 103m ago」，而 .git/logs/refs
 - certificates ja：title/description「50枚〜」（真值 100 枚）→ 需 K3 定 50 是否小批量档
 - textbooks ja：FAQ「お急ぎの少量注文は 10 枚からご相談ください」→ 属"少量可洽"软口径，非硬 MOQ 声称，建议守卫豁免
 - electronics / kraft：en/ja 段仍有 100 口径残留，随 zh 对齐同批处理
+## 8. 交期口径澄清（替代 §5 #7）
+
+「8-15 天交期」**不是错数**：真值源 = products.ts gang-run-card-boxes「【8-15 天交期】湊版生產, 不接急件, 如實標註」，sku-seo 同口径（500 個起、8-15 天）。
+Hub featuredSnippet 缺「拼版」限定，与标准盒型 3-5 個工作天并列时会被读成矛盾 → **已加限定词**：「拼版 8-15 天交期」。
