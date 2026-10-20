@@ -1,0 +1,49 @@
+# hub 价格真值 docket（包装类目页 · 2026-10-20）
+
+**性质**：价格/MOQ SSoT 属 K3（AGENTS.md 既有口径），执行层只登记不改数。
+**数据来源**：`src/data/category-seo-content.ts`（packagingContent 三语块，偏移 zh=1663 / en=8974 / ja=19335）· `src/data/products.ts`（minQuantity/basePrice/price_range，读取 2026-10-20 20:0x）· `scripts/guards/price-truth-guard.js` 输出
+
+---
+
+## 1. 包装 SKU 真值（products.ts）
+
+| slug | MOQ | basePrice | price_range |
+|---|---|---|---|
+| food-boxes | 100 | 2.5 | HK$2.5-18/個 |
+| folding-boxes | 100 | 2.5 | HK$2.5-15/個 |
+| mailer-boxes | 100 | 3.5 | HK$3.5-10/個 |
+| cosmetic-boxes | 100 | 8 | HK$8-65/個 |
+| rigid-boxes | 100 | 8 | HK$8-42/個 |
+| magnetic-closure-gift-box | 100 | 15 | HK$15-80/個 |
+| white-card-bags | 100 | 12 | HK$5-12/個 |
+| kraft-paper-bags | 100 | 8 | HK$3-8/個 |
+| gift-bags | 100 | 20 | HK$10-20/個 |
+| electronics-packaging-box | 200 | 8 | HK$8-50/個 |
+| kraft-paper-packaging-box | 300 | 5 | HK$1.5-1000/個 |
+| gang-run-card-boxes | 500 | 129 | HK$129-17,214（订单总额） |
+| white-card-boxes | 500 | 129 | HK$0.50-3.00/個 |
+| corrugated-boxes | 500 | 1517 | HK$1,517-7,278（订单总额） |
+| tuck-end-boxes | 500 | 1538 | HK$1,538-7,478（订单总额） |
+
+**每件下限**（排除订单总额型）= **HK$0.50**（white-card-boxes 拼版）；常规彩盒下限 = **HK$2.5**。
+
+## 2. 需 K3 裁决的声称（3 类 6 处）
+
+| # | 位置 | 原文 | 与真值关系 | 建议 |
+|---|---|---|---|---|
+| 1 | zh featuredSnippet（块内 @53） | 「包裝盒訂製 100 個起印, **白卡彩盒 HK$0.03/個起**」 | 低于拼版盒每件下限 0.50，更低于常规彩盒 2.5 | A 改引真值带（如「拼版盒 HK$0.50/個起 · 常規彩盒 HK$2.5/個起」）／B K3 确认 0.03 成立并补入 products.ts |
+| 2 | zh 盒型列表（@4391） | 「拼版免刀模費彩盒（gang-run-card-boxes）… **HK$0.03/個起印**」 | 同上（该 SKU truth 为订单总额 HK$129-17,214） | 同上 |
+| 3 | zh 工艺段（@3758） | 「1,000 個以上柯式印刷單價可低至 **HK$0.8/個**」 | 批量档位声称，低于常规彩盒 base 2.5，但属 1,000+ 档 | K3 确认档位价后保留；否则改「按量報價」 |
+| 4 | zh 优势卡（@984） | 「單價低至 **HK$0.8 起**，經濟實惠」 | 同上，且未注批次条件 | 补「1,000 個以上」条件 |
+| 5 | en 优势卡（@1436） | 「Unit price from **US$0.10**」 | 与 #4 同源（HK$0.8 ≈ US$0.10） | 同 #4 |
+| 6 | ja 优势卡（@656） | 「単価 **HK$0.8～**、大量在庫不要」 | 同 #4 | 同 #4 |
+
+## 3. 已确认可保留
+
+- 「HK$300-800 刀模費行業慣例」= 竞品对比口径，非自报价
+- 「HK$2.5-15/個、HK$8-42/個」= 本轮新 FAQ 引用真值带（folding / rigid）
+- en/ja `US$0.10` 与 zh `HK$0.8` 同源，随 #4 一并处理
+
+## 4. 机检联动
+
+`scripts/guards/price-truth-guard.js` 已加 **hub 标题价检查**：`featuredSnippet` 的每件价若低于包装类目每件地板价 → WARN（不阻断）。首跑即命中 #1（HK$0.03/個起）。

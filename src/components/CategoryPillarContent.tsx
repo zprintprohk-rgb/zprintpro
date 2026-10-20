@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { categorySeoContent, getDefaultCategoryContent } from '@/data/category-seo-content';
 import { categories as allCategoryDefs } from '@/data/products';
 import { getAllBlogPostSlugs } from '@/data/blog-posts';
+import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 // 2026-09-11 G2.3/§13.6: 指南内链存在性过滤 — 数据 links 含已下线 blog slug (6 处死链),
 // 渲染前剔除, 保证线上 0 个 404 内链。
@@ -201,7 +202,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                     {item.points.map((point, pidx) => (
                       <li key={pidx} className="flex items-start gap-2 text-gray-600 text-sm md:text-base leading-relaxed">
                         <span className="text-[#F87314] mt-1 flex-shrink-0">●</span>
-                        <span>{point}</span>
+                        <span>{parseInlineLinks(point)}</span>
                       </li>
                     ))}
                   </ul>
@@ -284,7 +285,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                   <h4 className={`font-semibold mb-2 ${idx === 0 ? 'text-[#2873F5]' : 'text-gray-900'} ${idx < 2 ? 'mt-1' : ''}`}>
                     {item.name}
                   </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{parseInlineLinks(item.description)}</p>
                   {/* Scene relevance hint for top 2 */}
                   {idx < 2 && (
                     <p className="mt-3 text-[11px] text-gray-400 italic">
@@ -314,7 +315,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
               {data.techSpecs.items.map((spec, idx) => (
                 <div key={idx} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
                   <span className="font-semibold text-gray-900 sm:w-28 flex-shrink-0">{spec.label}</span>
-                  <span className="text-gray-600 text-sm md:text-base">{spec.value}</span>
+                  <span className="text-gray-600 text-sm md:text-base">{parseInlineLinks(spec.value)}</span>
                 </div>
               ))}
             </div>
@@ -334,7 +335,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
               {data.serviceNodes.items.map((node, idx) => (
                 <div key={idx} className="bg-white rounded-2xl border border-[#E5E7EB] border-t-[3px] border-t-[#F87314] p-5 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
                   <h4 className="font-semibold text-[#2873F5] mb-2">{node.title}</h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">{node.description}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{parseInlineLinks(node.description)}</p>
                 </div>
               ))}
             </div>

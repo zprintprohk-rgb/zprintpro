@@ -165,7 +165,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '數量同價錢嘅甜蜜點：數碼印刷 50–500 個免製版、試產最靈活；1,000 個以上柯式印刷單價可低至 HK$0.8/個；5,000 個以上約 5–7 天交，再有階梯折扣。旺季（中秋、聖誕、農曆新年）請提早 3 星期落單。',
         '好多客戶搜「包裝盒訂製」時最驚兩件事：刀模出錯同大貨色差。我哋嘅做法係免費刀模設計加數碼打樣，你確認結構同顏色先開印，印前團隊逐個檔案檢查出血、刀線同色彩模式，將出錯風險壓到最低。',
         '由報價到收貨嘅流程：提交盒型、展開尺寸、數量、紙材同工藝 → 30 秒 AI 報價 → 免費刀模同打樣 → 3 天出貨。全港順豐或專車配送，大批量可直送倉庫；跨境客戶支援出口包裝標準同 ISTA 抗壓測試報告。',
-        '【包裝盒印刷 8 大盒型全表】對標 e-print 10 個盒型獨立頁：① 白卡彩盒（[產品鏈接](/zh-hk/product/white-card-boxes/)）— 350g 雙面白卡，挺度極佳，4C+0 印刷，500 枚起印；② 坑盒 / 瓦楞紙盒（[產品鏈接](/zh-hk/product/corrugated-boxes/)）— E/F 坑 3-5 層，抗壓 80-200kg，跨境電商首選；③ 卡盒 / 插口盒（[產品鏈接](/zh-hk/product/tuck-end-boxes/)）— 直插/反插/飛機插 3 結構，5 秒無膠水組裝；④ 拼版免刀模費彩盒（[產品鏈接](/zh-hk/product/gang-run-card-boxes/)）— 固定刀模共用，HK$0.03/個起印；⑤ 天地蓋盒 — 高端禮盒首選，2 片紙板結構；⑥ 飛機盒 — 跨境運輸抗摔；⑦ 抽屜盒 — 開合儀式感強；⑧ 磁吸禮盒 — 香水護膚品重複使用。包裝盒訂製客戶可按行業/場景任揀 8 種盒型。',
+        '【包裝盒印刷 8 大盒型全表】對標 e-print 10 個盒型獨立頁：① 白卡彩盒（[產品鏈接](/zh-hk/product/white-card-boxes/)）— 350g 雙面白卡，挺度極佳，4C+0 印刷，500 枚起印；② 坑盒 / 瓦楞紙盒（[產品鏈接](/zh-hk/product/corrugated-boxes/)）— E/F 坑 3-5 層，抗壓 80-200kg，跨境電商首選；③ 卡盒 / 插口盒（[產品鏈接](/zh-hk/product/tuck-end-boxes/)）— 直插/反插/飛機插 3 結構，5 秒無膠水組裝；④ 拼版免刀模費彩盒（[產品鏈接](/zh-hk/product/gang-run-card-boxes/)）— 固定刀模共用，HK$0.03/個起印；⑤ 天地蓋盒 — 高端禮盒首選，2 片紙板結構；⑥ 飛機盒 — 跨境運輸抗摔；⑦ 抽屜盒 — 開合儀式感強；⑧ 磁吸禮盒 — 香水護膚品重複使用。想深入比較，可睇[食品包裝印刷完全指南](/zh-hk/blog/food-packaging-printing-guide/)、[牛皮紙盒 vs 坑盒 8 大盒型對比](/zh-hk/blog/kraft-paper-box-types-comparison-2026/) 同[包裝盒印刷價格 2026](/zh-hk/blog/packaging-box-pricing-2026/)；規格可先睇[食品包裝盒](/zh-hk/product/food-boxes/)同[磁吸禮盒](/zh-hk/product/magnetic-closure-gift-box/)。包裝盒訂製客戶可按行業/場景任揀 8 種盒型。',
         '【點解拼版彩盒平 40-60%：免刀模費 vs 同業 HK$300-800 刀模費】e-print / hk-printing 等香港同業常規盒型照收刀模費（行業慣例 HK$300-800 一套）；我哋嘅 [拼版白卡彩盒（PKG-016）](/zh-hk/product/gang-run-card-boxes/) 採用固定刀模共用設計，500 枚起印即享免刀模費 + 免排版費，新品牌首批 1,000 枚計算可慳 HK$300-800 直接變淨利。紙盒印刷 + 紙盒訂製客戶可選拼版方案壓低成本，彩盒 50-10,000 枚都受惠。',
       ],
       links: [
@@ -205,7 +205,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
           points: [
-            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs.',
+            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs. For deeper detail, read the [food packaging printing guide](/en/blog/food-packaging-printing-guide/), the [kraft vs corrugated box comparison](/en/blog/kraft-paper-box-types-comparison-2026/) and [2026 packaging box pricing](/en/blog/packaging-box-pricing-2026/); specs are on the [food packaging boxes](/en/product/food-boxes/) and [magnetic gift boxes](/en/product/magnetic-closure-gift-box/) pages.',
             'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
             'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
           ],
@@ -377,7 +377,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: 'パッケージ選び方ガイド',
       paragraphs: [
         'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。全箱型100個からの小ロット対応。無料の抜き型設計付き、デジタル3-5日・オフセット5-7日の短納期です。',
-        '箱型は商品に合わせて。段ボールのメーラーボックス（E/Fフルート）はEC発送に強く、白カードの組み箱やマグネット式化粧箱はコスメブランドの開封体験を演出。キャラメル型や窓付き箱は食品の店頭訴求に。20種以上の定型＋完全カスタムに対応します。',
+        '箱型は商品に合わせて。段ボールのメーラーボックス（E/Fフルート）はEC発送に強く、白カードの組み箱やマグネット式化粧箱はコスメブランドの開封体験を演出。キャラメル型や窓付き箱は食品の店頭訴求に。20種以上の定型＋完全カスタムに対応します。詳しくは[食品包装印刷ガイド](/ja/blog/food-packaging-printing-guide/)、[クラフト紙箱と段ボールの比較](/ja/blog/kraft-paper-box-types-comparison-2026/)、[2026 年パッケージ価格](/ja/blog/packaging-box-pricing-2026/)をご覧ください。',
         '用紙は300–350g白カードが発色・強度の標準。クラフト紙はエコ・オーガニックな印象、Eフルートは薄手の化粧箱、Fフルートは小箱の緩衝に。欧米輸出にはFSC認証紙が通関手続きをスムーズにします。',
         '食品パッケージには厳格なルールがあります。食品グレード紙と環境配慮インク（ご注文時に指定）も選択でき、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
         '加工は差別化の鍵。金銀箔でロゴに輝き、スポットUVでポイント強調、エンボスで立体感、PVC窓で中身をアピール。無料の当日サンプルで1–2種の加工を実物確認してから量産を決めるのが安心です。',

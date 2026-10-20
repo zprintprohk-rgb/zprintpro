@@ -121,10 +121,46 @@ for (const b of blocks) {
 const seen = new Set();
 const warnU = warn.filter(w => { const k = w.slug + '|' + w.got + '|' + (w.kind || 'moq'); if (seen.has(k)) return false; seen.add(k); return true; });
 
+// ---- hub 标题价检查: featuredSnippet 每件价 < 包装类目每件地板价 → WARN ----
+const HUB = path.join(REPO, 'src', 'data', 'category-seo-content.ts');
+let hubWarn = [];
+if (fs.existsSync(HUB)) {
+  const hub = fs.readFileSync(HUB, 'utf8');
+  const pc = hub.indexOf('packagingContent');
+  const zh = hub.indexOf("'zh-hk': {", pc);
+  const mEn = hub.slice(zh).match(/\n\s{2}(?:'en'|en):\s*\{/);
+  const enB = mEn ? zh + mEn.index : hub.length;
+  const mJa = hub.slice(enB).match(/\n\s{2}(?:'ja'|ja):\s*\{/);
+  const jaB = mJa ? enB + mJa.index : hub.length;
+  const blocks = [hub.slice(zh, enB), hub.slice(enB, jaB)];
+  // 包装类目每件地板价 = min(所有 /個 结尾区间的下限)
+  let floor = Infinity;
+  Object.values(truth).forEach(t => {
+    if (!t.range) return;
+    const rm = t.range.match(/HK\$([\d.]+)-([\d.]+)\/(?:個|張)$/);
+    if (rm) floor = Math.min(floor, +rm[1]);
+  });
+  if (isFinite(floor)) {
+    blocks.forEach((b, bi) => {
+      const fs_ = b.indexOf('featuredSnippet');
+      if (fs_ < 0) return;
+      const seg = b.slice(fs_, fs_ + 700);
+      const re = /(HK\$|US\$)([\d.]+)\s*\/\s*(?:個|pc|piece|枚)(?:起)?/g;
+      let mm;
+      while ((mm = re.exec(seg)) !== null) {
+        let v = parseFloat(mm[2]);
+        if (mm[1] === 'US$') v = v * 7.8; // 粗换算仅用于地板比对
+        if (v < floor) hubWarn.push({ loc: bi ? 'en' : 'zh-hk', got: mm[0], floor: 'HK$' + floor });
+      }
+    });
+  }
+}
+
 console.log(`[price-truth] blocks=${blocks.length} checked=${checkedBlocks} noTruth=${skippedNoTruth.length}${skippedNoTruth.length ? ' (' + skippedNoTruth.slice(0, 8).join(',') + ')' : ''}`);
-console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}`);
+console.log(`[price-truth] MOQ HARD(欠承诺)=${hard.length}  WARN(保守/单价)=${warnU.length}  HUB WARN=${hubWarn.length}`);
 hard.slice(0, 40).forEach(h => console.log(`  HARD ${h.slug}: 最小声称 ${h.got} < 真值 ${h.want}  声称集[${h.all}]`));
 warnU.slice(0, 40).forEach(w => console.log(`  WARN ${w.slug}: ${w.got}${w.kind === 'price' ? ' 越出 ' + w.band : ' > 真值 ' + w.want + ' 声称集[' + w.all + ']'}`));
+hubWarn.forEach(h => console.log(`  HUB ${h.loc}: ${h.got} < 类目地板 ${h.floor}`));
 
-const fail = hard.length > 0 || (STRICT && warnU.length > 0);
+const fail = hard.length > 0 || (STRICT && (warnU.length > 0 || hubWarn.length > 0));
 process.exit(fail ? 1 : 0);
