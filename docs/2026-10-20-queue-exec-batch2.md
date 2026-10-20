@@ -200,3 +200,30 @@ textbooks（desc 50 vs 真值 100）与 en/ja 残余口径 → K3 台账，见 h
 
 **校验脚本**：
 ode .hermes/_probe_cat_all3.mjs（三语 42 页）、_probe_final.mjs（类目+博客+PDP+FAQ+MOQ 一站验收）
+---
+
+## 终验（部署 e0802ee4，间隔探针 5s，三语）
+
+| 指标 | 部署前基线 | 部署后 | 判据 |
+|---|---|---|---|
+| 类目页可见裸 md（zh 14 页） | 15（packaging 10 · red-packets 3 · menus 1 · calendars 1） | **0** | _probe_spaced.mjs 两轮稳定 |
+| 类目页可见裸 md（en/ja 抽样） | en 6 / ja 6 | **0** | _probe_cat_all3.mjs |
+| 博客可见裸 md / 裸 ** | 21 链接 / 158+4 粗体 | **0 / 0** | _probe_blog_md.mjs |
+| PDP 可见裸 md / 裸 ** | 11 / 2（ja よくある質問） | **0 / 0** | _probe_star_live.mjs |
+| certificates「10 張起印」 | 存在 | **0** | — |
+| electronics / kraft「100 個起印」 | 存在 | **0** | — |
+| hub 交期口径 | 「8-15天生產」（歧义） | 「標準盒型3-5個工作天、拼版8-15天生產」 | — |
+| hub FAQ（zh 价格/裡印、en 价格、ja 内側印刷） | 部分缺失 | 全在 | — |
+
+**终验结果：10 PASS / 0 FAIL**（_probe_spaced_final2.mjs）
+
+**渲染路径清单（本次共修 9 处）**：
+1. CategoryPillarContent：points / item.description / spec.value / node.description / FAQ a / materialTable.subtitle / buyingGuide 段落
+2. CategoryPageV9：advantages points / L693 買家指南段落 / FAQ a / material.description / 難度 description / 對比 note / f.a
+3. ProductPageV9：body 段落（lead + main）/ FAQ 答案 .a / **bold** 切分 / FAQ 标题变体（含 ja よくある質問）
+
+**文案真值修正**：
+- products-content.ts：通用句「100 個起印」×7 → 「小批量起印（按盒型而定）」
+- product-faqs.ts：包装通用 FAQ「100 個起印」→「起印量按盒型而定」
+- category-conversion-blocks.ts：交期 →「標準盒型3-5個工作天、拼版8-15天生產」
+- products.ts：卡片描述 113 处 **bold** 标记剥离
