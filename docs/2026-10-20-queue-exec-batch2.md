@@ -248,3 +248,28 @@ ode scripts/verify-deploy.mjs → 探针 _probe_spaced_final2.mjs
 - 
 ode scripts/guards/price-truth-guard.js 期望 UNIT WARN=0（本地已 0）
 - 首页/类目页抽查「直答：」不出现裸 markdown（首段为纯文本，无链接）
+---
+
+## 2026-10-21 上线验收（部署 023de4b0）
+
+| 探针 | 结果 |
+|---|---|
+| _probe_direct_answers.mjs（zh 直答 8 例：rigid/cosmetic/mailer/white-card/kraft + wall-calendars/pvc-menus/business-envelopes） | **8 PASS / 0 FAIL** |
+| _probe_enja_qa.mjs（en/ja Quick answer 4 例） | **4 PASS / 0 FAIL** |
+| _probe_spaced_final2.mjs（昨日 10 项回归：类目裸 md / hub FAQ / 交期口径 / MOQ） | **10 PASS / 0 FAIL** |
+
+AEO 覆盖率（首段含 MOQ + 每件价格带）：**15/85（18%）→ 60/85（71%）**；en/ja 首批 5 个包装 SKU 同步具备 Quick answer / クイック回答。
+
+## 运维：github.com IP 级封锁的绕行（2026-10-21 01:30–04:00 实测）
+
+**现象**：zprintpro.com / aidu.com / pi.github.com 全部 200，但 github.com（DNS → 20.205.243.166）22 与 443 均不可达；ssh -p 443 git@ssh.github.com 亦超时。
+
+**可用通道（实测）**：GitHub 其他边缘 IP 正常 —— 140.82.112.35:443、140.82.112.3:22、140.82.113.3:22 均为 True。
+
+**推送命令（9 commit 实测成功）**：
+`powershell
+='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i C:/Users/Administrator/.ssh/id_ed25519 -o IdentitiesOnly=yes'
+git push ssh://git@140.82.112.3:22/zprintprohk-rgb/zprintpro.git main
+git update-ref refs/remotes/origin/main <new_sha>   # 推送后同步跟踪引用
+`
+**注意**：① 走 URL 推送不自动更新 origin/main 跟踪引用，需 update-ref；② erify-deploy.mjs 走 pi.github.com，不受此封锁影响。
