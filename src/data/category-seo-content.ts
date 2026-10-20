@@ -288,6 +288,8 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: 'How much does packaging box printing cost?', a: 'Packaging boxes start from 100 pcs. Price depends on box style, size, material and finishing; standard sizes share fixed dies (no die fee), and gang-run layouts reduce unit cost. Reference bands: folding boxes HK$2.5-15/pc, rigid boxes HK$8-42/pc. Get an instant quote in 30 seconds.' },
+      { q: 'Can you print on the inside of the box (reverse printing)?', a: 'Yes. Inside printing adds brand colour, messages or serials. For direct food contact we use food-grade ink with a PE lining over the printed surface; outer printing plus an inner PE lining also meets indirect-contact requirements. Mention it on your order and both options are confirmed in the same free proof.' },
       { q: 'What is the minimum order for packaging boxes?', a: 'Wedding favor boxes from 30 units, color boxes from 50 units, standard industrial from 100–200 units. Far below traditional factory minimums of 500–1,000.' },
       { q: 'What box styles are available?', a: 'Over 20 standard styles including rigid boxes, book-style boxes, drawer boxes, folding cartons, mailer boxes, and magnetic boxes. Fully custom designs also supported.' },
       { q: 'Can I use eco-friendly paper?', a: 'Yes. All box types are available with FSC-certified eco paper, meeting international environmental standards for export to Europe and America.' },
@@ -392,6 +394,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
+      { q: '箱の内側（裏印刷）はできますか？', a: 'できます。内側印刷でブランドカラーやメッセージ、シリアルを入れられます。食品に直接触れる面は食品グレードのインキ＋PE ラミネートで保護し、外側印刷＋内側 PE ラミネートでも間接接触の要件を満たします。ご注文時に「内側印刷あり」とご指定ください。無料校正で両案を確認できます。' },
       { q: 'パッケージ印刷の料金はいくらから？', a: '《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／上製本箱100個¥240〜／マグネット蓋ギフトボックス100個¥450〜／電子機器箱200個¥240〜／クラフト紙箱300個¥150〜。箱型・数量・紙材を30秒AI見積もりで入力すれば、配送・税込みの正確な金額を即座に確認できます。' },
       { q: 'パッケージの最小発注数は？', a: '全箱型100個から（カスタム型抜きは500個から）。従来の工場基準500–1,000個を大きく下回ります。' },
       { q: '対応している箱型は？', a: '化粧箱、ブック型箱、引き出し箱、組み立て箱、ダンボール箱、磁石式箱など20種類以上の標準箱型。完全カスタムデザインも対応。' },
