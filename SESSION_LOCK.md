@@ -4,6 +4,16 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
+> **当前状态**: 🔓 **已释放** — 2026-10-21 10:xx AutoClaw 会话（v28_5 换图补课：W2+W3+W4+W5 四波本地落地 + 推送列车已启动）
+>
+> | 项 | 值 |
+> |---|---|
+> | **持有者** | AutoClaw 主会话（v28_5 换图车道补课） |
+> | **意图** | 补课 W2(10/18)/W3(10/19)/W4(10/20) + 执行当日 W5(10/21)：40 SKU / 480 图；补缴 10-17 被跳过的 CL 探针+IndexNow |
+> | **写入范围** | `public/images/products/v28_5/<40 slug>/`（新增 480）· `src/data/products.ts`（40 块 IBL+legacy）· `public/sitemap-image.xml`（四次 regen）· `.hermes/logs/` · `SESSION_LOCK.md`；不碰 title/minQuantity/basePrice/seoImages/imageAlt |
+> | **双条件核验** | ① src/ 开工干净（实测 0）② 对端静默：远端 02:34 / 本地 02:49（他会话 docs），10-18~10-20 无换图写入；lane.lock 无；push 闸距上次 8h+ |
+> | **释放结果** | ✅ 四波全链断言全绿：products.ts v28_5=**663**（精确）、sitemap v28_5=**612**（精确）、磁盘 612、禁改字段全 0（40 hunks / 163 行新增全为图像结构行）、tsc **54=54**；commit：W2 `cc9493b2` / W3 `c919f547` / W4 `fc1e9bd9` / W5 `a1723751`。✅ 10-17 欠账补齐：CL 探针 18/18 + IndexNow 200×18。📤 推送列车后台运行：Push A = W2（立即，携带 docs 5e080d7b）→ probe W2 → IndexNow；+30min 闸 → Push B = W3/W4/W5 → probe ×3 → IndexNow ×3；日志 `.hermes/logs/v28_5-catchup-train-2026-10-21.log`。SSoT `docs`→`.hermes/logs/v28_5-catchup-w2-w5-2026-10-21.md` |
+
 > **当前状态**: 🔓 **已释放** — 2026-10-17 12:5x AutoClaw 会话（v28_5 换图 W1 执行，千问裁定「立即执行不再等待」+ K3 转达）
 >
 > | 项 | 值 |
