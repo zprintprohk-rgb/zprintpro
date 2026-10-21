@@ -2488,23 +2488,11 @@ export const products: Product[] = [
     // K3 2026-09-19 裁決: A2 銅版紙海報屬標準數碼印刷, 10 張起技術可行;
     // 原值 100 與 price-tables 價階（由 10 起）及全站文案「10張起印」矛盾 → 對齊為 10。
     minQuantity: 10,
-    images: ['/images/products/a2-posters.jpg'],
+    images: ['/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-3.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-3.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-3.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-hero.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-detail.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-variety.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-hero.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-detail.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-variety.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-hero.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-detail.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-variety.webp', '/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-a2-posters-zh-hk.webp', en: 'zprintpro-posters-a2-posters-en.webp', ja: 'zprintpro-posters-a2-posters-ja.webp' },
@@ -2583,26 +2571,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/a1-posters.jpg'],
+    images: ['/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-hero.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-detail.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-variety.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-hero.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-detail.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-variety.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-hero.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-detail.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-variety.webp', '/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
