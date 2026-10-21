@@ -74,9 +74,21 @@
 
 ---
 
-## §5 下一步（按 ROI）
+## §5 第二次推进（同 session 续做，gate 等待窗口内）
 
-1. **推 `77e88deb` + 本文档**（gate 放行后，单独调用 gate）。
+| # | 交付 | 说明 |
+|---|---|---|
+| 12 | **C109 特设页 `/[locale]/comiket-c109/`**（三语） | 締切逆算表（12/7・12/14・12/23）· 可订品项 · 入稿检查清单 · 搬入/收货 · 当日风險 · 4 问 FAQ × 3 语 · FAQPage + BreadcrumbList JSON-LD · hreflang 三语 + x-default |
+| 13 | **sitemap 登记** | `generate-sitemap.js` staticPages 加 `comiket-c109/`（与 nengajo 同批机制，防 regenerate 覆盖） |
+| 14 | **防孤儿页内链** | ja/en comiket 博客各加 1 条指向特设页（共 2 条，锚文本语义化） |
+| 15 | **hub v2 食品包裝专节** | packaging zh `buyingGuide` 追加食品专节（食品级纸材 / PE 淋膜 / 防潮 / 合规文件）+ 4 条内链，**链接全部机器校验 0 broken**（对照 blog-data 键 + products slug） |
+
+**验证**：`tsc` 54=54（新增页先触发 55 → `generateWhatsAppLink` 签名不匹配 → 修正后回 54）；内链校验 4/4 有效；提交后 hook 简体字检查通过。
+**新探针（待部署后跑）**：`.hermes/_probe_c109_hub.mjs` —— 三语 C109 页 200 + 逆算表 + JSON-LD、ja/en 反链、hub 食品专节与内链，共 9 条断言。
+
+
+
+## §6 下一步（按 ROI）
 2. **包装簇 FAQ 扩编**（P1，方案 2.2）：12 SKU × 4 问 × 3 语，答案锚 products.ts 真值。
 3. **C109 专题页**（ja 先，en 后）：締切倒计时直答块 + 套装规格 + 搬入信息，登记 sitemap。
 4. **hub v2 食品包裝专节**（zh）：把 9 条 blog 内链收成 hub-spoke。
