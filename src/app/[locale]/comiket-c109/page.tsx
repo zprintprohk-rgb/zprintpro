@@ -59,7 +59,7 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
       {
         h: '品目と価格の考え方',
         p: ['同人誌は表紙フルカラー＋本文モノクロが標準構成で、単価は ¥7,500 から（製品ページ価格表どおり）。実際の単価はページ数・部数・用紙・製本で変動するため、見積りで確定します。'],
-        ul: ['同人誌：10 冊から／A5・B5（A4 も相談可）', 'ステッカー：10 枚から', 'ポスター・カード類：1 部から', 'まとめ発注なら校正も一括で回せます'],
+        ul: ['同人誌：10 冊から／A5・B5（A4 も相談可）', 'ステッカー：10 枚から', 'ポスター・カード類：1 部から（A2 オフセットは 10 枚から）', 'まとめ発注なら校正も一括で回せます'],
       },
       {
         h: '入稿前チェックリスト',
@@ -107,7 +107,7 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
       {
         h: 'What you can order',
         p: ['Doujinshi standard build is a full-colour cover with monochrome text pages. Because the unit price moves with page count, quantity, paper and binding, the quote sets the final number — submit your spec and we price it precisely.'],
-        ul: ['Doujinshi: from 10 copies, A5 / B5 (A4 on request)', 'Stickers: from 10 pieces', 'Posters and cards: from 1 piece', 'Combined orders share one proof round'],
+        ul: ['Doujinshi: from 10 copies, A5 / B5 (A4 on request)', 'Stickers: from 10 pieces', 'Posters and cards: from 1 sheet (A2 offset runs start at 10)', 'Combined orders share one proof round'],
       },
       {
         h: 'Artwork checklist',
@@ -149,7 +149,7 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
       {
         h: '可以訂什麼',
         p: ['同人誌標準配置為封面全彩＋內頁單色。單價按頁數、部數、紙材同裝訂計算，所以由報價確定最終數字——提交規格即出精準報價。'],
-        ul: ['同人誌：10 本起印，A5／B5（A4 可商議）', '貼紙：10 張起印', '海報、卡片：1 張起印', '同一批落單可共用一次打稿'],
+        ul: ['同人誌：10 本起印，A5／B5（A4 可商議）', '貼紙：10 張起印', '海報、卡片：1 張起印（A2 柯式為 10 張起）', '同一批落單可共用一次打稿'],
       },
       {
         h: '交稿檢查清單',
