@@ -2183,20 +2183,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/folded-leaflets.jpg'],
+    images: ['/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-2.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-en-2.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-2.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-hero.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-detail.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-variety.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-hero.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-detail.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-variety.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-hero.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-detail.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-variety.webp', '/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
