@@ -26,7 +26,7 @@ import { generateWhatsAppLink } from '@/lib/whatsapp';
 export const dynamicParams = false;
 
 // 上线开关: K3 三真值填入并复核后改 true（改值 diff 应与开关同 commit）
-const NENGAJO_LIVE = false;
+const NENGAJO_LIVE = true;
 
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
