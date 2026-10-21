@@ -733,29 +733,12 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/waterproof-stickers.jpg'],
+    images: ['/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-5.webp',
-    ],
-    },
+    'zh-hk': ['/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-hero.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-detail.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-variety.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-hero.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-detail.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-variety.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-hero.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-detail.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-variety.webp', '/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-multi-angle.webp']
+  },
     optimizedAt: '2026-07-14',
     optimizationRound: 1,
   seoImages: {
@@ -833,27 +816,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp'],
+    images: ['/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-hero.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-detail.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-variety.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-hero.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-detail.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-variety.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-hero.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-detail.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-variety.webp', '/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -1174,26 +1141,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/foil-stickers.jpg'],
+    images: ['/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-hero.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-detail.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-variety.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-hero.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-detail.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-variety.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-hero.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-detail.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-variety.webp', '/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -1270,26 +1222,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/security-stickers.jpg'],
+    images: ['/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-hero.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-detail.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-variety.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-hero.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-detail.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-variety.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-hero.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-detail.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-variety.webp', '/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
