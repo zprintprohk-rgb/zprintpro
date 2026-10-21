@@ -5980,7 +5980,7 @@ export const products: Product[] = [
     slug: 'textbooks',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
+    name: '香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・学年別教材・研修マニュアル', title_zh: '香港教科書印刷 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
     description: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。適用行業：教育培訓、校園、補習社、出版社、企業培訓、政企機構。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available. Ideal for education & training, K12 schools, tutoring centers, publishers, corporate training, and government organizations.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。教育・研修、K12 学校、学習塾、出版社、企業研修、官公庁・団体に最適。', description_zh: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。適用行業：教育培訓、校園、補習社、出版社、企業培訓、政企機構。',
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
