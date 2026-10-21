@@ -20,7 +20,13 @@
 - 根因：gate 已 BLOCKED，但命令用 `;` 串联 → 退出码未阻断。已写入报告 §3；后续 push 一律单独调用 gate。
 
 ## 待办（下一窗口）
-1. gate 放行后推 `77e88deb` + docs（单独调用 `node scripts/push-gate-check.mjs`，非 0 即终止）
-2. C109 同人誌专题页（ja → en）
-3. hub v2「食品包裝」专节
+1. gate 放行后推积压 commit（单独调用 `node scripts/push-gate-check.mjs`，非 0 即终止）
+2. ~~C109 同人誌专题页~~ → **已建**（`src/app/[locale]/comiket-c109/page.tsx`，三语）
+3. ~~hub v2「食品包裝」专节~~ → **已加**（packaging zh buyingGuide，4 链接校验 0 broken）
 4. 28d GSC 到位 → CTR 四词首判
+
+## 第二次推进（wave3，本地待推）
+- `88765a96` C109 特设页三语 + sitemap staticPages 登记
+- `86b62300` hub v2 食品包裝专节（4 条内链，机器校验 0 broken）
+- c109 backlinks：ja/en comiket 博客各 1 条（防孤儿页）
+- `tsc` 54=54；新页 6 个内链目标线上均 200；页头注释已核（「份」/GSC/C107 仅出现在禁令说明注释，非客户可见）
