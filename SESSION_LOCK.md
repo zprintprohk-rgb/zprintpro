@@ -4,6 +4,14 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
+> **⚠️ 撞车记录 #4（§0.25.2 如实上报，2026-10-21 19:44）**: **Push B（a1723751）@19:44:42 距 Push A（cc9493b2）@19:30:49 = 13m53s < 30min 硬下限**。
+>
+> **根因（机器闸时间源错误，非人为绕过）**: `push-gate-check.mjs` v1 读的是 `git log <remote>/main -1 --format=%ci` = **commit 的 committer 时间**，不是 push 时间。历史上「提交后秒推」使 commit≈push（假性正确）；今日补课批次 commit 于 18:17-18:2x、19:30/19:44 才推，v1 上一轮就报「87m ago」放行。链式根因 = 规则把「闸门 exit 0」当作唯一机器判据（§0.25.1 本来就如此要求），而闸门的时间源错误 = 单点失效。
+>
+> **止损与修复**: ① 列车已完成全部 push，余下仅只读的探针/IndexNow（无后续 push）；② **闸门已升级 v2**：改用 `git ls-remote` 取真实远端 head + **Cloudflare Pages check-run 的 created_at = 真实 push 时间**（CF 每次 main 推送必建 build），无 check-run 时保守拦截（commit <30m 一律 BLOCK），并启用审计日志 `.hermes/logs/push-gate.log`；③ 实测新闸已正确拦截本次 13m 间隔（“last push a1723751 was 0m ago (cf-check-run; commit 87m)”）。
+>
+> **影响评估**: 两批 push 内容均为已验证图片波次（W2 探针 396/396 BAD=0；W3-W5 探针随后自动跑），无重叠 SKU；30min 间隔的实质目的（归因混淆 / CF build 排队）未造成实际损失。**待 K3 拍板确认（§0.25.2 要求 K3 必拍 1 次回复）。此后一切 push 一律过 v2 闸。**
+
 > **当前状态**: 🔓 **已释放** — 2026-10-21 10:xx AutoClaw 会话（v28_5 换图补课：W2+W3+W4+W5 四波本地落地 + 推送列车已启动）
 >
 > | 项 | 值 |
