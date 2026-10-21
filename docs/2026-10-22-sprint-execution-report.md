@@ -84,6 +84,8 @@
 | 15 | **hub v2 食品包裝专节** | packaging zh `buyingGuide` 追加食品专节（食品级纸材 / PE 淋膜 / 防潮 / 合规文件）+ 4 条内链，**链接全部机器校验 0 broken**（对照 blog-data 键 + products slug） |
 
 **验证**：`tsc` 54=54（新增页先触发 55 → `generateWhatsAppLink` 签名不匹配 → 修正后回 54）；内链校验 4/4 有效；提交后 hook 简体字检查通过。
+**真值复核（B8 新段价格带 vs products.ts）**：kraft-paper-bags HK$3-8 ✓・white-card-bags HK$5-12 ✓・gift-bags HK$10-20 ✓・eco-paper-bags HK$3-8 ✓・（large-bags HK$6-15、handle-bags HK$3-8 未引）——均值同区间，无虚构。
+**门童基线**：`check-regression-guard.js src/` → 🔴 0（橙 169 / 黄 1271，与既有白名单一致，无新增红）。
 **新探针（待部署后跑）**：`.hermes/_probe_c109_hub.mjs` —— 三语 C109 页 200 + 逆算表 + JSON-LD、ja/en 反链、hub 食品专节与内链，共 9 条断言。
 
 
