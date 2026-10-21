@@ -930,24 +930,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/removable-stickers.jpg'],
+    images: ['/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-3.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-3.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-hero.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-detail.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-variety.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-hero.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-detail.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-variety.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-hero.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-detail.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-variety.webp', '/images/products/v28_5/removable-stickers/zprintpro-stickers-removable-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -1024,25 +1011,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/small-batch-stickers.jpg'],
+    images: ['/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-3.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-hero.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-detail.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-variety.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-hero.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-detail.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-variety.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-hero.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-detail.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-variety.webp', '/images/products/v28_5/small-batch-stickers/zprintpro-stickers-small-batch-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -1120,28 +1093,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/die-cut-stickers.jpg'],
+    images: ['/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-hero.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-detail.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-variety.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-hero.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-detail.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-variety.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-hero.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-detail.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-variety.webp', '/images/products/v28_5/die-cut-stickers/zprintpro-stickers-die-cut-stickers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -2045,20 +2001,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/a4-flyers.jpg'],
+    images: ['/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-zh-hk-2.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-en-2.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-ja-2.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-hero.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-detail.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-variety.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-hero.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-detail.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-variety.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-hero.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-detail.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-variety.webp', '/images/products/v28_5/a4-flyers/zprintpro-flyers-a4-flyers-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-a4-flyers-zh-hk.webp', en: 'zprintpro-flyers-a4-flyers-en.webp', ja: 'zprintpro-flyers-a4-flyers-ja.webp' },
@@ -2135,21 +2082,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/a5-flyers.jpg'],
+    images: ['/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-en-1.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-ja-2.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-hero.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-detail.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-variety.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-hero.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-detail.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-variety.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-hero.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-detail.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-variety.webp', '/images/products/v28_5/a5-flyers/zprintpro-flyers-a5-flyers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -2227,22 +2164,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/double-sided-flyers.jpg'],
+    images: ['/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-en-2.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-2.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-hero.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-detail.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-variety.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-hero.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-detail.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-variety.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-hero.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-detail.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-variety.webp', '/images/products/v28_5/double-sided-flyers/zprintpro-flyers-double-sided-flyers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -2492,23 +2418,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/eco-flyers.jpg'],
+    images: ['/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-3.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-3.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-3.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-hero.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-detail.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-variety.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-hero.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-detail.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-variety.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-hero.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-detail.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-variety.webp', '/images/products/v28_5/eco-flyers/zprintpro-flyers-eco-flyers-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -2585,23 +2499,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/same-day-flyers.jpg'],
+    images: ['/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-3.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-3.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-3.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-hero.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-detail.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-variety.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-hero.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-detail.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-variety.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-hero.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-detail.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-variety.webp', '/images/products/v28_5/same-day-flyers/zprintpro-flyers-same-day-flyers-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-same-day-flyers-zh-hk.webp', en: 'zprintpro-flyers-same-day-flyers-en.webp', ja: 'zprintpro-flyers-same-day-flyers-ja.webp' },
@@ -3301,31 +3203,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/cosmetic-boxes.jpg'],
+    images: ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-6.webp',
-    ],
-    en: [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-5.webp',
-    ],
-    ja: [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -3403,29 +3285,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/mailer-boxes.jpg'],
+    images: ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -3599,25 +3463,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/rigid-boxes.jpg'],
+    images: ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-3.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-multi-angle.webp']
   },
     optimizedAt: '2026-07-22',
     optimizationRound: 2,
@@ -5007,28 +4857,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/outdoor-vinyl-banners.jpg'],
+    images: ['/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-en.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-ja.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-banners-outdoor-vinyl-banners-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-hero.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-detail.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-variety.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-hero.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-detail.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-variety.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-hero.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-detail.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-variety.webp', '/images/products/v28_5/outdoor-vinyl-banners/zprintpro-banners-outdoor-vinyl-banners-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-outdoor-vinyl-banners-zh-hk.webp', en: 'zprintpro-banners-outdoor-vinyl-banners-en.webp', ja: 'zprintpro-banners-outdoor-vinyl-banners-ja.webp' },
@@ -5080,26 +4913,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/roll-up-banners.jpg'],
+    images: ['/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-en.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-ja.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-roll-up-banners-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-hero.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-detail.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-variety.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-hero.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-detail.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-variety.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-hero.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-detail.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-variety.webp', '/images/products/v28_5/roll-up-banners/zprintpro-banners-roll-up-banners-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -5173,27 +4991,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/adhesive-banners.jpg'],
+    images: ['/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-en.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-ja.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-adhesive-banners-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-hero.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-detail.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-variety.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-hero.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-detail.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-variety.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-hero.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-detail.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-variety.webp', '/images/products/v28_5/adhesive-banners/zprintpro-banners-adhesive-banners-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -5267,26 +5069,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 1,
-    images: ['/images/products/vehicle-wraps.jpg'],
+    images: ['/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-en.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-ja.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-banners-vehicle-wraps-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-hero.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-detail.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-variety.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-hero.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-detail.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-variety.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-hero.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-detail.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-variety.webp', '/images/products/v28_5/vehicle-wraps/zprintpro-banners-vehicle-wraps-ja-multi-angle.webp']
   },
     variables: {
       sizes: [
@@ -5361,31 +5148,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/catalog-printing.jpg'],
+    images: ['/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en-5.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-ja.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-catalog-printing-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-hero.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-detail.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-variety.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-hero.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-detail.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-variety.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-hero.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-detail.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-variety.webp', '/images/products/v28_5/catalog-printing/zprintpro-books-catalog-printing-ja-multi-angle.webp']
   },
     optimizedAt: '2026-09-14',
     optimizationRound: 1,
@@ -5448,27 +5215,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/saddle-stitch-booklets.jpg'],
+    images: ['/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-books-saddle-stitch-booklets-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-hero.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-detail.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-variety.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-hero.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-detail.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-variety.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-hero.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-detail.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-variety.webp', '/images/products/v28_5/saddle-stitch-booklets/zprintpro-books-saddle-stitch-booklets-ja-multi-angle.webp']
   },
     optimizedAt: '2026-09-14',
     optimizationRound: 1,
@@ -5545,30 +5296,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/perfect-bound-books.jpg'],
+    images: ['/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en-5.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-books-perfect-bound-books-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-hero.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-detail.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-variety.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-hero.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-detail.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-variety.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-hero.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-detail.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-variety.webp', '/images/products/v28_5/perfect-bound-books/zprintpro-books-perfect-bound-books-ja-multi-angle.webp']
   },
     optimizedAt: '2026-09-14',
     optimizationRound: 1,
@@ -5647,24 +5379,12 @@ export const products: Product[] = [
     minQuantity: 10,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
-    images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp'],
+    images: ['/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-hero.webp'],
   imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-3.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-3.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-3.webp',
-      ],
-    },
+    'zh-hk': ['/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-hero.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-detail.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-variety.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-hero.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-detail.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-variety.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-hero.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-detail.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-variety.webp', '/images/products/v28_5/hardcover-books/zprintpro-books-hardcover-books-ja-multi-angle.webp']
+  },
     variables: {
       sizes: [
         { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
@@ -5818,28 +5538,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-envelopes.jpg'],
+    images: ['/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en-5.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-ja.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-business-envelopes-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-hero.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-detail.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-variety.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-hero.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-detail.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-variety.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-hero.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-detail.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-variety.webp', '/images/products/v28_5/business-envelopes/zprintpro-envelopes-business-envelopes-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-business-envelopes-zh-hk.webp', en: 'zprintpro-envelopes-business-envelopes-en.webp', ja: 'zprintpro-envelopes-business-envelopes-ja.webp' },
@@ -5891,29 +5594,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/colored-envelopes.jpg'],
+    images: ['/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-hero.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-detail.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-variety.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-hero.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-detail.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-variety.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-hero.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-detail.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-variety.webp', '/images/products/v28_5/colored-envelopes/zprintpro-envelopes-colored-envelopes-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-colored-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-colored-envelopes-en-1.webp', ja: 'zprintpro-envelopes-colored-envelopes-ja-1.webp' },
@@ -5987,29 +5672,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/large-envelopes.jpg'],
+    images: ['/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-hero.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-detail.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-variety.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-hero.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-detail.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-variety.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-hero.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-detail.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-variety.webp', '/images/products/v28_5/large-envelopes/zprintpro-envelopes-large-envelopes-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-large-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-large-envelopes-en-1.webp', ja: 'zprintpro-envelopes-large-envelopes-ja-1.webp' },
@@ -6083,28 +5750,11 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/pearl-envelopes.jpg'],
+    images: ['/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-4.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-hero.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-detail.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-variety.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-hero.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-detail.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-variety.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-hero.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-detail.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-variety.webp', '/images/products/v28_5/pearl-envelopes/zprintpro-envelopes-pearl-envelopes-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-pearl-envelopes-en-1.webp', ja: 'zprintpro-envelopes-pearl-envelopes-ja-1.webp' },
@@ -6181,29 +5831,11 @@ export const products: Product[] = [
     minQuantity: 10,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
-    images: ['/images/products/exercise-books.jpg'],
+    images: ['/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-hero.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-detail.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-variety.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-hero.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-detail.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-variety.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-hero.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-detail.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-variety.webp', '/images/products/v28_5/exercise-books/zprintpro-educational-exercise-books-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-exercise-books-zh-hk-1.webp', en: 'zprintpro-educational-exercise-books-en-1.webp', ja: 'zprintpro-educational-exercise-books-ja-1.webp' },
@@ -6263,31 +5895,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/certificates.jpg'],
+    images: ['/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-educational-certificates-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja5.webp',
-      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-hero.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-detail.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-variety.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/certificates/zprintpro-educational-certificates-en-hero.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-en-detail.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-en-variety.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-hero.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-detail.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-variety.webp', '/images/products/v28_5/certificates/zprintpro-educational-certificates-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-certificates-zh-hk-1.webp', en: 'zprintpro-educational-certificates-en-1.webp', ja: 'zprintpro-educational-certificates-ja-1.webp' },
@@ -6361,30 +5973,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 10,
-    images: ['/images/products/school-flyers.jpg'],
+    images: ['/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-hero.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-detail.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-variety.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-hero.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-detail.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-variety.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-hero.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-detail.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-variety.webp', '/images/products/v28_5/school-flyers/zprintpro-educational-school-flyers-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-school-flyers-zh-hk-1.webp', en: 'zprintpro-educational-school-flyers-en-1.webp', ja: 'zprintpro-educational-school-flyers-ja-1.webp' },
@@ -6461,27 +6054,11 @@ export const products: Product[] = [
     minQuantity: 100,
     optimizedAt: '2026-09-16',
     optimizationRound: 1,
-    images: ['/images/products/textbooks.jpg'],
+    images: ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-hero.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-detail.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-variety.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-hero.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-detail.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-variety.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-hero.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-detail.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-variety.webp', '/images/products/v28_5/textbooks/zprintpro-educational-textbooks-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-textbooks-zh-hk-1.webp', en: 'zprintpro-educational-textbooks-en-1.webp', ja: 'zprintpro-educational-textbooks-ja-1.webp' },
@@ -6543,24 +6120,12 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 1,
-    images: ['/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp'],
+    images: ['/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-hero.webp'],
   imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-3.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-3.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-3.webp',
-      ],
-    },
+    'zh-hk': ['/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-hero.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-detail.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-variety.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-hero.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-detail.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-variety.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-hero.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-detail.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-variety.webp', '/images/products/v28_5/graduation-yearbook/zprintpro-educational-graduation-yearbook-ja-multi-angle.webp']
+  },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-educational-graduation-yearbook-zh-hk.webp', en: 'zprintpro-educational-graduation-yearbook-en.webp', ja: 'zprintpro-educational-graduation-yearbook-ja.webp' },
     alt: {
@@ -6672,31 +6237,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 200,
-    images: ['/images/products/cosmetic-boxes.jpg'],
+    images: ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-5.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-electronics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-electronics-packaging-box-ja-1.webp' },
@@ -6773,30 +6318,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 300,
-    images: ['/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp'],
+    images: ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-6.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-kraft-paper-packaging-box-en-1.webp', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp' },
@@ -6908,27 +6434,11 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷訂製 卡盒/紙盒訂製 · 500個起印 5-7天交期 · 智印港',
     description: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。紙盒訂製、白卡彩盒訂製適用：零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    images: ['/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp'],
+    images: ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp'],
     imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-4.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-5.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-4.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-4.webp',
-      ],
+      'zh-hk': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-multi-angle.webp'],
+      'en': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-multi-angle.webp'],
+      'ja': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-multi-angle.webp']
     },
     price_range: 'HK$0.50-3.00/個',
     basePrice: 129,
@@ -6966,28 +6476,11 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 跨境電商物流抗壓首選 · 智印港',
     description: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。瓦楞紙盒訂製、紙盒印刷適用：跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    images: ['/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp'],
+    images: ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp'],
     imagesByLocale: {
-      'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-4.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-5.webp',
-      ],
-      'en': [
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-4.webp',
-      ],
-      'ja': [
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-1.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-2.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-3.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-4.webp',
-        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp',
-      ],
+      'zh-hk': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-multi-angle.webp'],
+      'en': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-multi-angle.webp'],
+      'ja': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-multi-angle.webp']
     },
     price_range: 'HK$1,517-7,278',
     basePrice: 1517,
@@ -7090,31 +6583,11 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 500,
-    images: ['/images/products/transparent-stickers.jpg'],
+    images: ['/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-hero.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-5.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-6.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-5.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-6.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-5.webp',
-    ],
+    'zh-hk': ['/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-hero.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-detail.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-variety.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-zh-hk-multi-angle.webp'],
+    'en': ['/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-hero.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-detail.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-variety.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-en-multi-angle.webp'],
+    'ja': ['/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-hero.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-detail.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-variety.webp', '/images/products/v28_5/fruit-food-label-stickers/zprintpro-stickers-fruit-food-label-stickers-ja-multi-angle.webp']
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp', en: 'zprintpro-stickers-fruit-food-label-stickers-en-1.webp', ja: 'zprintpro-stickers-fruit-food-label-stickers-ja-1.webp' },
