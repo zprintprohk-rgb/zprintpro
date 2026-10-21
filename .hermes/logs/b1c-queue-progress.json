@@ -1,6 +1,6 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-20T21:17:00+08:00",
+  "updated_at": "2026-10-22T01:00:00+08:00",
   "updated_by": "ZP-daily-content lane (RETRY_OF 10-19 guard 阻塞闭环 + 生成器真值卫生 + blog ja 首处禁词清除)",
   "clusters": [
     {
@@ -507,6 +507,27 @@
         "evidence": ".hermes/logs/2026-10-20-ZP-daily-content.md"
       },
       "note": "车道读到本记录: 10-19 阻塞点已清, 下一棒 = K3 给日本线运费口径 (裸送料無料 30 行) + node 会话跑 outdoor CSV 四格 regen + blog ja 余 4 处母语润色 + 10/22 年賀状开关"
+    },
+    {
+      "order": 19,
+      "cluster": "10/19-10/22 补记: 24h 基线首读 + 年賀状上线(兜底路径) + 三日记事",
+      "slugs": [
+        "nengajo-2027",
+        "white-card-boxes"
+      ],
+      "status": "DONE",
+      "claimed_by": "autoclaw manual session (10/22 继续)",
+      "claimed_at": "2026-10-22T00:30:00+08:00",
+      "completed_at": "2026-10-22T01:00:00+08:00",
+      "verdict": {
+        "baseline_24h": "K3 10-19 24h 三站点档解析 (_gsc24h_parse.py): 食品包裝訂製 pos 6.5 (2 imps; 10-15 28d 为 16.08) / 食品包裝印刷 7.5 (4 imps; 前 9.81) / 紙盒訂製 26 / 包裝盒訂製 28 / 包裝盒 29 / 紙盒印刷 29 / 包裝盒印刷 36.5 / ja クラフト紙 34.5+40.5 / ja 食品パッケージ 49; 全部 0 点击。§0.23.2 标注: 1-4 imps/24h 高方差, 需 28d 档确认, 不作定论",
+        "nengajo": "3eed6277 上线: NENGAJO_LIVE true + sitemap x4 (3 locale + master, hreflang 组, lastmod 10-22, priority 0.8); 真值沿用待校准默认值 (页内 確認後更新 标记保留), K3 三真值 10/21 死线已过 → 按已批方案兜底路径执行; 门童 #7 shadow 提示页缺数据来源行 → K3 真值落位时同批补",
+        "wc_closure": "10-19 white-card CSV row81 修复事后确认 live: FILLER_GONE=true / 5-7天交貨=true (探针 10-22)",
+        "other_session": "同期他人会话: v28_5 图片波 W2-W5 (33+4+1 集群) 已部署, 但 K3 判 packaging 图不达标 → ca322679 rollback 10 SKU + 12 全 hold; AEO 直答波 18%→71% (39 个 SKU), ja 单位 100枚→個 11 处; push-gate v2 修 (真 push 时间口径, collision #4 根因)",
+        "lane_health": "lane-runs: 10-19 daily BLOCKED (pre-commit guard 拒 3 生产文件, 车道侧问题) / 10-20 OK (ja.json); lane-status verdict=ATTENTION problems=6 (3 UNKNOWN 车道)",
+        "guards": "tsc 54=54 / 全 pre-commit 门禁链绿 (#1#2#3 0 / #24 SKIP无目标 / #25 #27 0 HARD staged / #28 全链 0 / #29 豁免 6 已知)"
+      },
+      "note": "待 K3: 28d 档 (确认 6.5/7.5 是否真实) + 年賀状三真值 (10/21 已逾期, 页面默认值待校准) + packaging 图重做方案 + faqSchema 三语化拍板 + SGS #7 + 价格 SSoT 7 例"
     }
   ]
 }
