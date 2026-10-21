@@ -3104,11 +3104,31 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/cosmetic-boxes.jpg'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-hero.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-detail.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-variety.webp', '/images/products/v28_5/cosmetic-boxes/zprintpro-packaging-cosmetic-boxes-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-6.webp',
+    ],
+    en: [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-5.webp',
+    ],
+    ja: [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-6.webp',
+    ],
   },
     variables: {
       sizes: [
@@ -3186,11 +3206,29 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/mailer-boxes.jpg'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-hero.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-detail.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-variety.webp', '/images/products/v28_5/mailer-boxes/zprintpro-packaging-mailer-boxes-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-ja-5.webp',
+    ],
   },
     variables: {
       sizes: [
@@ -3364,11 +3402,25 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/rigid-boxes.jpg'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-hero.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-detail.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-variety.webp', '/images/products/v28_5/rigid-boxes/zprintpro-packaging-rigid-boxes-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-en-3.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp',
+    ],
   },
     optimizedAt: '2026-07-22',
     optimizationRound: 2,
@@ -6080,11 +6132,29 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 100,
-    images: ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-hero.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-detail.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-variety.webp', '/images/products/v28_5/magnetic-closure-gift-box/zprintpro-packaging-magnetic-closure-gift-box-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-4.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-6.webp',
+    ],
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-magnetic-closure-gift-box-en-1.webp', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp' },
@@ -6138,11 +6208,31 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 200,
-    images: ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp'],
+    images: ['/images/products/cosmetic-boxes.jpg'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-hero.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-detail.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-variety.webp', '/images/products/v28_5/electronics-packaging-box/zprintpro-packaging-electronics-packaging-box-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-6.webp',
+    ],
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-electronics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-electronics-packaging-box-ja-1.webp' },
@@ -6219,11 +6309,30 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 300,
-    images: ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp'],
   imagesByLocale: {
-    'zh-hk': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-multi-angle.webp'],
-    'en': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-en-multi-angle.webp'],
-    'ja': ['/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-hero.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-detail.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-variety.webp', '/images/products/v28_5/kraft-paper-packaging-box/zprintpro-packaging-kraft-paper-packaging-box-ja-multi-angle.webp']
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-6.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-6.webp',
+    ],
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-kraft-paper-packaging-box-en-1.webp', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp' },
@@ -6298,11 +6407,24 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 500,
-    images: ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp'],
     imagesByLocale: {
-      'zh-hk': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-zh-hk-multi-angle.webp'],
-      'en': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-en-multi-angle.webp'],
-      'ja': ['/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-hero.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-detail.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-variety.webp', '/images/products/v28_5/gang-run-card-boxes/zprintpro-packaging-gang-run-card-boxes-ja-multi-angle.webp']
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp',
+      ],
     },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja.webp' },
@@ -6335,11 +6457,27 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 卡盒 / 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷訂製 卡盒/紙盒訂製 · 500個起印 5-7天交期 · 智印港',
     description: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。紙盒訂製、白卡彩盒訂製適用：零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒（卡盒），挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    images: ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp'],
     imagesByLocale: {
-      'zh-hk': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-zh-hk-multi-angle.webp'],
-      'en': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-en-multi-angle.webp'],
-      'ja': ['/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-hero.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-detail.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-variety.webp', '/images/products/v28_5/white-card-boxes/zprintpro-packaging-white-card-boxes-ja-multi-angle.webp']
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-4.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-4.webp',
+      ],
     },
     price_range: 'HK$0.50-3.00/個',
     basePrice: 129,
@@ -6377,11 +6515,28 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷訂製 (坑盒/E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷訂製 坑盒/紙盒印刷 · 跨境電商物流抗壓首選 · 智印港',
     description: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。瓦楞紙盒訂製、紙盒印刷適用：跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'E坑/F坑 瓦楞彩印盒（坑盒），3 層 / 5 層結構可選，抗壓、防震、跨境運輸。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    images: ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp'],
     imagesByLocale: {
-      'zh-hk': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-zh-hk-multi-angle.webp'],
-      'en': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-en-multi-angle.webp'],
-      'ja': ['/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-hero.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-detail.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-variety.webp', '/images/products/v28_5/corrugated-boxes/zprintpro-packaging-corrugated-boxes-ja-multi-angle.webp']
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-4.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp',
+      ],
     },
     price_range: 'HK$1,517-7,278',
     basePrice: 1517,
@@ -6419,11 +6574,24 @@ export const products: Product[] = [
     category_slug: 'packaging',
     name: '插口盒印刷訂製 (卡盒/直插/飛機插) | 包裝盒 / 輕量彩盒', nameEn: 'Tuck End Boxes (Straight/Airplane) | Custom Packaging & Lightweight', nameJa: '差し込み式ボックス (直挿/飛行機挿) | パッケージ・軽量', title_zh: '卡盒/插口盒印刷訂製 免刀模 · 餐飲外賣零售快消首選 · 智印港',
     description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。插口盒訂製、免刀模費適用：餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡（卡盒結構），平面運輸節省 70% 倉儲。',
-    images: ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp'],
     imagesByLocale: {
-      'zh-hk': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-zh-hk-multi-angle.webp'],
-      'en': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-en-multi-angle.webp'],
-      'ja': ['/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-hero.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-detail.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-variety.webp', '/images/products/v28_5/tuck-end-boxes/zprintpro-packaging-tuck-end-boxes-ja-multi-angle.webp']
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-3.webp',
+      ],
     },
     price_range: 'HK$1,538-7,478',
     basePrice: 1538,

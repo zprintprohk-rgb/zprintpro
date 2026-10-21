@@ -4,6 +4,15 @@
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
 
+> **当前状态**: 🔓 **已释放** — 2026-10-21 19:5x AutoClaw 会话（K3 指令：包装盒订制类目图片撤回）
+>
+> | 项 | 值 |
+> |---|---|
+> | **意图** | K3「包装盒订制分类类目下的 SKU 图片不达标」→ packaging 类目 12 SKU 处理：10 个已换图 SKU **逐 SKU 撤回**（图字段恢复 + 删 120 图），2 个未部署（food/folding）**HOLD** 防 W6 误推 |
+> | **写入范围** | `src/data/products.ts`（10 块**仅图片字段**，取自 62c9b070 前交换态）· `public/images/products/v28_5/`（删 10 目录/120 文件）· `public/sitemap-image.xml`（regen）· `scripts/v28_5-image-rollback.mjs`（新工具）· `scripts/v28_5-build-manifest.mjs`（HOLD 表）· `.hermes/logs/` · SESSION_LOCK；文案/AEO/单位/价格/FAQ/seoImages/imageAlt 全部保留 |
+> | **双条件核验** | ① 开工时 src/ 干净 ② 对端静默：仅本会话写入；lane.lock 无 |
+> | **释放结果** | ✅ 回滚完成且双方法审计全绿：非目标块字节等价、目标块仅图片 span 变化、独立审计 lostNonTarget=0、旧 URL 138/138 回位、v28_5=492/533 精确、目录 41、禁改字段 0、tsc 54=54；HOLD=12 已入 builder（W1 5→2 / W2 33→26 / W6g 12→10，明日 W6=PB6+MN4+RP6）；线上验证由后台脚本在推送窗口后自动执行。SSoT `.hermes/logs/v28_5-pkg-rollback-2026-10-21.md` |
+
 > **⚠️ 撞车记录 #4（§0.25.2 如实上报，2026-10-21 19:44）**: **Push B（a1723751）@19:44:42 距 Push A（cc9493b2）@19:30:49 = 13m53s < 30min 硬下限**。
 >
 > **根因（机器闸时间源错误，非人为绕过）**: `push-gate-check.mjs` v1 读的是 `git log <remote>/main -1 --format=%ci` = **commit 的 committer 时间**，不是 push 时间。历史上「提交后秒推」使 commit≈push（假性正确）；今日补课批次 commit 于 18:17-18:2x、19:30/19:44 才推，v1 上一轮就报「87m ago」放行。链式根因 = 规则把「闸门 exit 0」当作唯一机器判据（§0.25.1 本来就如此要求），而闸门的时间源错误 = 单点失效。

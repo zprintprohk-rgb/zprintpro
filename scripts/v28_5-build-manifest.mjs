@@ -88,6 +88,21 @@ const CLUSTERS = {
   'large-red-packets': { c: 'c2-red-packets', done: '2026-10-15T09:20+08:00' }
 };
 const CTR_FROZEN = new Set(['kraft-paper-bags', 'white-card-bags', 'gift-bags', 'eco-paper-bags', 'handle-bags', 'large-bags', 'pvc-menus', 'laminated-menus', 'hardcover-menus', 'drink-menus', 'food-boxes', 'folding-boxes']);
+// K3 2026-10-21: packaging (包裝盒訂製) category images judged substandard → roll back deployed + hold ALL packaging SKUs
+const HOLD = {
+  'corrugated-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'cosmetic-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'electronics-packaging-box': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'folding-boxes': 'K3 2026-10-21 packaging images substandard — held (never deployed)',
+  'food-boxes': 'K3 2026-10-21 packaging images substandard — held (never deployed)',
+  'gang-run-card-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'kraft-paper-packaging-box': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'magnetic-closure-gift-box': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'mailer-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'rigid-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'tuck-end-boxes': 'K3 2026-10-21 packaging images substandard — rolled back',
+  'white-card-boxes': 'K3 2026-10-21 packaging images substandard — rolled back'
+};
 const RETIRED_SLUGS = ['drink-tokens', 'cafe-table-cards', 'wedding-place-cards', 'save-the-date-cards', 'wedding-seating-charts', 'wedding-suite-bundle', 'eco-tote-bag', 'postcard-set', 'fluorescent-stickers'];
 const CALENDARS = new Set(['wall-calendars', 'desk-calendars', 'custom-calendars', 'mini-calendars', 'photo-frame-calendars', 'magnetic-calendars']);
 
@@ -171,6 +186,7 @@ for (const d of dirCodes) {
   e.current_served = { image_refs: sp.length, library_named: baseHits, byte_identical: byteHits };
   // verdict & wave
   if (d.startsWith('BC-')) { e.verdict = 'defer-bc-ruling'; e.wave = 'BC-1027'; e.flags.push('seoImages.filename en/ja stickers 残留 bug ×6 随本批修'); }
+  else if (HOLD[slug]) { e.verdict = 'hold-images-rejected'; e.wave = null; e.flags.push(HOLD[slug]); }
   else if (CALENDARS.has(slug)) { e.verdict = 'deploy'; e.wave = 'CL-1017-with-cluster7'; e.flags.push('图随文: 簇7 内容 10-16 05:0x 已上线'); }
   else if (slug === 'doujinshi-printing') { e.verdict = 'deploy'; e.wave = 'C107-1024-with-content'; e.flags.push('图随文原则: C107 专题 10/24-25 同批; 现役图为 /images/japan/ jpg 旧族, 收益大'); }
   else if (slug === 'foil-wedding-invitations' || slug === 'wedding-thank-you-cards') { e.verdict = 'recommend-exclude'; e.wave = null; e.flags.push('Batch B 10-12 已以同名 seedream-webp 入库上线 (byte_identical=' + byteHits + '/' + baseHits + '); 与 roll-stickers 同理, 新路径重部署增益≈0; 如 K3 要路径统一可在 W7 重估'); }
