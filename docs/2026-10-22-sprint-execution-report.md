@@ -97,7 +97,14 @@
 2. ❌ 待重写：全文仍是美国市场口径——「**30 部 MOQ**」（站内真值 10 冊から）・US$ 单价表（US$1.20-3.50/部、+US$120 三日特急）・美式活动名（Comic-Con / Flame Con）为主，与 ja 站内 `doujinshi-printing`（10 冊から・¥7,500 起）不一致；且 6 个段首均为纯文本「1. / 2. …」而非 `<h2>`，IA 上无小节。
 3. 建议：按 12 段骨架重写（对标 B2 comiket 稿），价格改日元口径或不写价，MOQ 统一 10 冊。
 
-## §7 下一步（按 ROI）
+## §7 上线结果（2026-10-22 02:35 本地 / deploy `d440d74d`）
+
+- **推送**：11 个 commit 一次推全（`e318eaaf..d440d74d`），gate 判 30m 窗口开放后单独执行，未串联命令。
+- **部署**：`verify-deploy.mjs` → CF Pages **success**（run 119407977461）。
+- **C109 页 + hub 专节探针**：`.hermes/_probe_c109_hub.mjs` → **10 PASS / 0 FAIL**（三语页 200 + 逆算表 + JSON-LD；ja/en 反链；hub 食品专节 + 内链）。
+- **八篇 blog 线上终态**：`_probe_8blogs_status.mjs` → **8/8 页 200 且 h2=12**（B5/B6/B7/B8 从 7/8/8/5 升到 12 已生效）。
+
+## §8 下一步（按 ROI）
 2. **包装簇 FAQ 扩编**（P1，方案 2.2）：12 SKU × 4 问 × 3 语，答案锚 products.ts 真值。
 3. **C109 专题页**（ja 先，en 后）：締切倒计时直答块 + 套装规格 + 搬入信息，登记 sitemap。
 4. **hub v2 食品包裝专节**（zh）：把 9 条 blog 内链收成 hub-spoke。
