@@ -858,7 +858,15 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
         ? ` Industries: ${industriesForCategory.slice(0, 5).join(', ')}.`
         : ` 業界: ${industriesForCategory.slice(0, 5).join('・')}。`)
     : '';
-  const description = baseDescription + industriesSuffix;
+  // 2026-10-23: meta desc 长度闸 — SERP 约 150-160 字符，超长将优先丢弃 industries 后缀（CTA 钩子保留）。
+  // 线上实测: en packaging 367c / zh stickers 204c → 会被截断。
+  const META_DESC_MAX = 158;
+  const composedDesc = baseDescription + industriesSuffix;
+  const description = composedDesc.length <= META_DESC_MAX
+    ? composedDesc
+    : (baseDescription.length <= META_DESC_MAX
+        ? baseDescription
+        : baseDescription.slice(0, META_DESC_MAX - 1).trimEnd() + '…');
 
   return {
     title: categoryTitle,
