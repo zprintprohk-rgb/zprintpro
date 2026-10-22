@@ -104,7 +104,36 @@
 - **C109 页 + hub 专节探针**：`.hermes/_probe_c109_hub.mjs` → **10 PASS / 0 FAIL**（三语页 200 + 逆算表 + JSON-LD；ja/en 反链；hub 食品专节 + 内链）。
 - **八篇 blog 线上终态**：`_probe_8blogs_status.mjs` → **8/8 页 200 且 h2=12**（B5/B6/B7/B8 从 7/8/8/5 升到 12 已生效）。
 
-## §8 下一步（按 ROI）
+## §9 第三次推进（按 10-22 新战略报告 Top 5）
+
+### 9.1 已闭合：同人誌指南三语重写（报告未列，但属最大真值缺口）
+
+| 语言 | 旧状 | 新状 |
+|---|---|---|
+| ja | 5,200 字 · 0 h2 · **30 部 MOQ** · US$ ×17 · 美国活动为主 | **2,710 字（去标签）/ 12 h2 / 9 内链** · 10 冊から |
+| en | 8,530 字 · 0 h2 · **30-copy MOQ** · US$ ×19 | **5,697 字 / 12 h2 / 8 内链** · 10 copies |
+| zh-hk | 4,788 字 · 0 h2 · **30 本起印** · 美国活动 ×5 | **2,622 字 / 12 h2 / 9 内链** · 10 本起印 |
+
+- 三层同步：blog-data JSON content + description ×3、blog-posts.ts excerpt ×3（30 错值全部改正）
+- 12 段骨架：基本スペック / 価格 / 製本 / 紙 / 表紙加工 / 部数 / 納期 / 入稿 / 年間イベント / 配送 / FAQ / CTA
+- 线上验收：`_probe_wave4b.mjs` → **15 PASS / 0 FAIL**（三语 h2=12、10 起印、无 30 MOQ、正文无 US$、有价格锚）
+
+### 9.2 已闭合：food-boxes 三语 SEO 描述（报告 Top 5 #3）
+
+| 语言 | 旧 | 新 | 修复点 |
+|---|---|---|---|
+| zh-hk | 196 字（超长） | **114 字** | 简体「月饼」→ 月餅；「免費 2 小時打稿」→ **1 小時**；FDA 认证主张 → **「FDA 標準紙可選」**（待 K3）；加运费/CTA |
+| en | 316 字 | **168 字** | 同上；FDA-compliant → FDA-standard optional |
+| ja | 162 字 | **99 字** | 無料2時間 → **1時間**；FDA適合 → FDA基準紙は選択可 |
+
+**走 CSV 正规链路（SOP-5）**：改 `zprintpro-sku-seo-data.csv` 第 29 行 11/12/13 列 → `csv-to-sku-seo.mjs` dry-run（A-E 断言 PASS）→ `--apply`。
+**发现并修复派生文件漂移**：regen 首次 dry-run 显示 5 块变化（非 1），查出 4 处为历史「直接在 TS 改」的真值修正（mailer 7-10→3-5、kraft ja 100枚→個、gift/rigid 100張→個），已按 **SOP-5 回写 CSV 源头** 后重跑，变化收敛为 1 块（仅 food-boxes）。
+
+### 9.3 新报告口径对账（防重复做）
+- 报告 Top 5 #2「faqSchema 82 处待删」：**已为 0**（`products.ts` 实测 0 命中，前期批次已完成），无需再跑删除器。
+- 报告 Top 5 #4「包装簇 FAQ 扩编」：**9/9 包装 SKU 已在 `skuMoneyFAQs`**（food/folding/rigid/cosmetic/mailer/white-card/kraft/eco/gift），当前覆盖 18/83；扩到 25/83 需新增 7 个非包装 SKU（下一批）。
+
+## §10 下一步（按 ROI）
 2. **包装簇 FAQ 扩编**（P1，方案 2.2）：12 SKU × 4 问 × 3 语，答案锚 products.ts 真值。
 3. **C109 专题页**（ja 先，en 后）：締切倒计时直答块 + 套装规格 + 搬入信息，登记 sitemap。
 4. **hub v2 食品包裝专节**（zh）：把 9 条 blog 内链收成 hub-spoke。
