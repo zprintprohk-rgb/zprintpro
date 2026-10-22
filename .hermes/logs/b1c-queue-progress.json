@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-23T01:20:00+08:00",
-  "updated_by": "ZP-daily-content lane (RETRY_OF 10-19 guard 阻塞闭环 + 生成器真值卫生 + blog ja 首处禁词清除)",
+  "updated_at": "2026-10-23T01:50:00+08:00",
+  "updated_by": "deepseek hermes manual session (10-23 docket closure: 10-17 报告 NEXT 残差核验收口 + blog-ja 最安値 ×1)",
   "clusters": [
     {
       "order": 1,
@@ -549,6 +549,28 @@
         "evidence": ".hermes/_probe_det.mjs + _probe_where.mjs + _probe_catdesc.mjs + _catmeta_push.ps1"
       },
       "note": "周历 10-24 项 (product-faqs 包装簇扩编 6 SKU) 已被 10-22 会话超额完成 (9/9 包装 SKU + 29/83)；10-26-27 en/ja 比较表已在 5915cf9d 上线；10-25 年賀状三真值仍待 K3"
+    },
+    {
+      "order": 21,
+      "cluster": "10-17 报告 NEXT 残差 docket 核验收口 (①②③已毕补登记 + ④title 解冻评估 + blog-ja 最安値)",
+      "slugs": [
+        "blog-data/ja.json (ecommerce-shipping-bag-printing-guide)"
+      ],
+      "status": "DONE",
+      "claimed_by": "deepseek hermes manual session (K3 指令「执行」)",
+      "claimed_at": "2026-10-23T01:37:00+08:00",
+      "completed_at": "2026-10-23T01:52:00+08:00",
+      "verdict": {
+        "docket_1_ja_sweep": "已毕 (order 19) — 本轮双方法复算 (§0.23.2): 業界最安 sku/pc/bg = 0/0/0, 激安 0/0, 最安値 0/0, 低価格帯でご提供 = 16 (替换落位实证). 车道见即跳过",
+        "docket_2_outdoor_csv": "已毕但漏登记 — 10-20 人手会话修复 (证据 .hermes/_bak-csv-outdoor-posters-20261020.csv.bak): zh title『1個起』→『1張起』/ zh desc『10張起』→『1張起』+『即日-3天』→『標準3-5個工作天』/ ja desc『10枚〜翌日-3』→『1枚〜標準3-5営業日』/ en alt 垃圾值→真值 GEO alt; body 第二处『即日交貨』亦已清 (0 命中). 本轮 regen dry-run 实证: 0 漂移 / 0 字节变化 / 断言 A-E PASS (CSV↔ts 全镜像健康)",
+        "docket_3_folding_links": "已毕 (簇4姐妹链, order 17 验证) — 本轮复数: folding-boxes 块内 food-boxes 链 = 3 条在位",
+        "docket_4_title_freeze": "评估完成, 执行阻塞: v5 冻结档 (2026-09-23) 全站仅 certificates / foil-stickers 2 槽冻结; 解冻判定 + CTR 首判需 GSC 28d 档 (排名+点击), 最新档 = 10-19 24h (order 20 已登记 28d blocked) → request_human: K3 导 GSC 28d 档后一次做解冻判定+ΔCTR",
+        "new_fix": "blog-ja 最安値 3 处语境处置 (node 全可见, 替代 10-20『长行不可见』限制): [1] restaurant-menu『9 を超えると最安値選択』= Hick-Hyman 心理描述 KEEP / [2] shipping-bag FAQ 标题『最安値は?』→『価格は?』(order-20 L96 同口径, 本次唯一改动) / [3] certificate『東南アジア印刷：最安値（香港より50-70%安）』= 区域比较事实描述 KEEP; 最安値 3→2, 余 2 处为 KEEP 非漏网",
+        "guards": "tsc 54=54 / brand-mentions A 类 0 / gsc-leak exit 0 / regen dry-run 断言 A-E PASS 0 漂移 / check-i18n.js = 文档示例命令非真实脚本 (AGENTS.md §6), 不适用",
+        "concurrency": "对端 01:15 会话 (category-meta hoist 修复) 3 commit 本地未推 + 后台 _catmeta_push.ps1 等闸链; 本会话不抢推, 单 commit 过 push-gate v2 后推送 (攒批携带如实披露)",
+        "evidence": ".hermes/logs/2026-10-23-manual-docket-closure.md + .hermes/_docket_verify_20261023.cjs + _blogja_saiteki_ctx.cjs + _blogja_saiteki_fix.cjs"
+      },
+      "note": "车道读到本记录: 10-17 NEXT 四件全清 (①③验证即跳 / ②补登记 / ④评估+blocked 理由). 下一棒 = K3 导 GSC 28d 档 (解冻判定+CTR 首判+速赢达标) + blog-ja 余 2 处最安値 KEEP 备案 + 年賀状三真值 + 裸送料無料运费口径"
     }
   ]
 }

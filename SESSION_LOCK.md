@@ -1,5 +1,19 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 持有声明 — 2026-10-23 01:4x deepseek hermes 会话（K3 指令「执行」= 执行 10-17 报告 NEXT 残差 docket）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | deepseek hermes 会话（本会话） |
+| **意图** | 残差 docket 核验与收口：① ja 禁词双方法复算 ② outdoor CSV 四格债务核实（发现 10-20 已被他会话修复，本轮补登记）③ folding→food-boxes 链路验证 ④ blog-ja 最安値 ×3 语境处置 ⑤ title 解冻批评估 ⑥ 账本+报告登记 |
+| **写入范围** | `src/data/blog-data/ja.json`（1 处 FAQ 标题措辞）· `.hermes/logs/b1c-queue-progress.json`（order 21）· `.hermes/logs/2026-10-23-manual-docket-closure.md`（报告）· SESSION_LOCK.md；**不碰** title 冻结域 / 贺卡资产 / products.ts / sku-seo-data.ts（outdoor 已修毕且 CSV=ts 同步） |
+| **双条件核验** | ① `git status --porcelain -- src/` = 0（01:37 实测，无 MM 无 staged 删除）② 对端静默：对端最后 src commit 01:15:40（category-meta 批），现 01:4x 已 >25min；其后台 `_catmeta_push.ps1` 为只读远端推送链，与本会话 src 写入无冲突 ✓ lane.lock 不存在 ✓ |
+| **并发说明** | 对端 3 commit（fa01cf58/b9b740de/fdee6b09）本地未推，其后台脚本 ~01:44 过闸自推；本会话**不抢推**，全部改动本地单 commit，过 push-gate v2 后推（≥30min 硬下限） |
+| **预计时长** | < 60 min |
+| **释放条件** | 门童全绿 + tsc 54=54 + 账本/报告落盘 + commit + push（过闸） |
+
+---
+
 > **⚠️ 撞车记录 #2（§0.25.2 如实上报，2026-10-16 00:1x）**: push d0a1e033 @00:08:51 距上次 push 30691f04 @23:41:36 = **27m15s < 30min 硬下限**。根因 = 时钟闸只打印时间戳未做计算判定（两次撞车同根因：人眼估读）。**纠正**：新增机器闸 scripts/push-gate-check.mjs（读远端最后 push 时间，<30min exit 1）——此后一切 push 前必须先过该闸，车道 wrapper 与人手会话同规。本修正 commit 留本地，随下窗口推送。
 
 > **⚠️ 撞车记录 #3（§0.25.2 如实上报，2026-10-16 05:1x）**: **双向违规**。① 并发会话（换图策略文档）push e7d4d1eb @05:03:34，距本会话上批 push 62d68a5f @04:39:00 = **24m34s < 30min**；② 本会话 push 8e805a17 @05:15:22 距 e7d4d1eb = **11m48s < 30min**——机器闸当时已 BLOCKED 并打印拦截，但本会话用 `;` 链接 gate+push 命令，闸门 exit 1 未阻断后续命令 = **闸门被命令组合方式绕过**（根因与撞车 #2 同族：机器闸存在但调用侧未强制短路）。**纠正**：后续一切 push 必须 gate 与 push 分两次工具调用，gate 非 0 即终止本轮（绝不用 `;`/顺序链）；并发会话同样适用。两笔 push 均已上线（CF success，内容无冲突：对方 docs-only，本方 src+docs）。**待 K3 拍板确认。**
