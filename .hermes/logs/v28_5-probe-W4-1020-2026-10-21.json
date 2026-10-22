@@ -1,0 +1,147 @@
+{
+ "wave": "W4-1020",
+ "base": "https://zprintpro.com",
+ "bad": 0,
+ "sitemapHits": 12,
+ "totalImg": 12,
+ "results": [
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-hero.webp",
+   "status": 200,
+   "len": 121318,
+   "localSize": 121318,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-detail.webp",
+   "status": 200,
+   "len": 121888,
+   "localSize": 121888,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-variety.webp",
+   "status": 200,
+   "len": 115702,
+   "localSize": 115702,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 81208,
+   "localSize": 81208,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-hero.webp",
+   "status": 200,
+   "len": 114318,
+   "localSize": 114318,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-detail.webp",
+   "status": 200,
+   "len": 90790,
+   "localSize": 90790,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-variety.webp",
+   "status": 200,
+   "len": 111238,
+   "localSize": 111238,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-en-multi-angle.webp",
+   "status": 200,
+   "len": 60346,
+   "localSize": 60346,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-hero.webp",
+   "status": 200,
+   "len": 98412,
+   "localSize": 98412,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-detail.webp",
+   "status": 200,
+   "len": 117032,
+   "localSize": 117032,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-variety.webp",
+   "status": 200,
+   "len": 121720,
+   "localSize": 121720,
+   "ok": true
+  },
+  {
+   "slug": "folded-leaflets",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/folded-leaflets/zprintpro-flyers-folded-leaflets-ja-multi-angle.webp",
+   "status": 200,
+   "len": 47640,
+   "localSize": 47640,
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,561 @@
+{
+ "wave": "W3-1019",
+ "base": "https://zprintpro.com",
+ "bad": 0,
+ "sitemapHits": 48,
+ "totalImg": 48,
+ "results": [
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-hero.webp",
+   "status": 200,
+   "len": 122264,
+   "localSize": 122264,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-detail.webp",
+   "status": 200,
+   "len": 121554,
+   "localSize": 121554,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-variety.webp",
+   "status": 200,
+   "len": 119378,
+   "localSize": 119378,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 121154,
+   "localSize": 121154,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-hero.webp",
+   "status": 200,
+   "len": 119834,
+   "localSize": 119834,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-detail.webp",
+   "status": 200,
+   "len": 122306,
+   "localSize": 122306,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-variety.webp",
+   "status": 200,
+   "len": 117390,
+   "localSize": 117390,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-en-multi-angle.webp",
+   "status": 200,
+   "len": 120966,
+   "localSize": 120966,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-hero.webp",
+   "status": 200,
+   "len": 120382,
+   "localSize": 120382,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-detail.webp",
+   "status": 200,
+   "len": 120010,
+   "localSize": 120010,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-variety.webp",
+   "status": 200,
+   "len": 121968,
+   "localSize": 121968,
+   "ok": true
+  },
+  {
+   "slug": "waterproof-stickers",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/waterproof-stickers/zprintpro-stickers-waterproof-stickers-ja-multi-angle.webp",
+   "status": 200,
+   "len": 116678,
+   "localSize": 116678,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-hero.webp",
+   "status": 200,
+   "len": 120774,
+   "localSize": 120774,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-detail.webp",
+   "status": 200,
+   "len": 122328,
+   "localSize": 122328,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-variety.webp",
+   "status": 200,
+   "len": 119672,
+   "localSize": 119672,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 120832,
+   "localSize": 120832,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-hero.webp",
+   "status": 200,
+   "len": 118772,
+   "localSize": 118772,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-detail.webp",
+   "status": 200,
+   "len": 120702,
+   "localSize": 120702,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-variety.webp",
+   "status": 200,
+   "len": 118878,
+   "localSize": 118878,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-en-multi-angle.webp",
+   "status": 200,
+   "len": 118512,
+   "localSize": 118512,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-hero.webp",
+   "status": 200,
+   "len": 119642,
+   "localSize": 119642,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-detail.webp",
+   "status": 200,
+   "len": 122496,
+   "localSize": 122496,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-variety.webp",
+   "status": 200,
+   "len": 122672,
+   "localSize": 122672,
+   "ok": true
+  },
+  {
+   "slug": "transparent-stickers",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/transparent-stickers/zprintpro-stickers-transparent-stickers-ja-multi-angle.webp",
+   "status": 200,
+   "len": 120730,
+   "localSize": 120730,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-hero.webp",
+   "status": 200,
+   "len": 117128,
+   "localSize": 117128,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-detail.webp",
+   "status": 200,
+   "len": 121552,
+   "localSize": 121552,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-variety.webp",
+   "status": 200,
+   "len": 119616,
+   "localSize": 119616,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 111324,
+   "localSize": 111324,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-hero.webp",
+   "status": 200,
+   "len": 102350,
+   "localSize": 102350,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-detail.webp",
+   "status": 200,
+   "len": 120534,
+   "localSize": 120534,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-variety.webp",
+   "status": 200,
+   "len": 89602,
+   "localSize": 89602,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-en-multi-angle.webp",
+   "status": 200,
+   "len": 118640,
+   "localSize": 118640,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-hero.webp",
+   "status": 200,
+   "len": 115594,
+   "localSize": 115594,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-detail.webp",
+   "status": 200,
+   "len": 119558,
+   "localSize": 119558,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-variety.webp",
+   "status": 200,
+   "len": 119484,
+   "localSize": 119484,
+   "ok": true
+  },
+  {
+   "slug": "foil-stickers",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/foil-stickers/zprintpro-stickers-foil-stickers-ja-multi-angle.webp",
+   "status": 200,
+   "len": 110478,
+   "localSize": 110478,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-hero.webp",
+   "status": 200,
+   "len": 120732,
+   "localSize": 120732,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-detail.webp",
+   "status": 200,
+   "len": 113974,
+   "localSize": 113974,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-variety.webp",
+   "status": 200,
+   "len": 120904,
+   "localSize": 120904,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 81728,
+   "localSize": 81728,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-hero.webp",
+   "status": 200,
+   "len": 117860,
+   "localSize": 117860,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-detail.webp",
+   "status": 200,
+   "len": 117688,
+   "localSize": 117688,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-variety.webp",
+   "status": 200,
+   "len": 122230,
+   "localSize": 122230,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-en-multi-angle.webp",
+   "status": 200,
+   "len": 76402,
+   "localSize": 76402,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-hero.webp",
+   "status": 200,
+   "len": 93960,
+   "localSize": 93960,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-detail.webp",
+   "status": 200,
+   "len": 114322,
+   "localSize": 114322,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-variety.webp",
+   "status": 200,
+   "len": 85590,
+   "localSize": 85590,
+   "ok": true
+  },
+  {
+   "slug": "security-stickers",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/security-stickers/zprintpro-stickers-security-stickers-ja-multi-angle.webp",
+   "status": 200,
+   "len": 75462,
+   "localSize": 75462,
+   "ok": true
+  }
+ ]
+}

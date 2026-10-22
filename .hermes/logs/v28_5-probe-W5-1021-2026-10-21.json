@@ -1,0 +1,285 @@
+{
+ "wave": "W5-1021",
+ "base": "https://zprintpro.com",
+ "bad": 0,
+ "sitemapHits": 24,
+ "totalImg": 24,
+ "results": [
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-hero.webp",
+   "status": 200,
+   "len": 93746,
+   "localSize": 93746,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-detail.webp",
+   "status": 200,
+   "len": 113806,
+   "localSize": 113806,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-variety.webp",
+   "status": 200,
+   "len": 114360,
+   "localSize": 114360,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 96302,
+   "localSize": 96302,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-hero.webp",
+   "status": 200,
+   "len": 80202,
+   "localSize": 80202,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-detail.webp",
+   "status": 200,
+   "len": 57520,
+   "localSize": 57520,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-variety.webp",
+   "status": 200,
+   "len": 73046,
+   "localSize": 73046,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-en-multi-angle.webp",
+   "status": 200,
+   "len": 100670,
+   "localSize": 100670,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-hero.webp",
+   "status": 200,
+   "len": 46498,
+   "localSize": 46498,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-detail.webp",
+   "status": 200,
+   "len": 58272,
+   "localSize": 58272,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-variety.webp",
+   "status": 200,
+   "len": 66164,
+   "localSize": 66164,
+   "ok": true
+  },
+  {
+   "slug": "a2-posters",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a2-posters/zprintpro-posters-a2-posters-ja-multi-angle.webp",
+   "status": 200,
+   "len": 92354,
+   "localSize": 92354,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "zh-hk",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "zh-hk",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-hero.webp",
+   "status": 200,
+   "len": 98476,
+   "localSize": 98476,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "zh-hk",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-detail.webp",
+   "status": 200,
+   "len": 108218,
+   "localSize": 108218,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "zh-hk",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-variety.webp",
+   "status": 200,
+   "len": 116612,
+   "localSize": 116612,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "zh-hk",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-zh-hk-multi-angle.webp",
+   "status": 200,
+   "len": 53454,
+   "localSize": 53454,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "en",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "en",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-hero.webp",
+   "status": 200,
+   "len": 81622,
+   "localSize": 81622,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "en",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-detail.webp",
+   "status": 200,
+   "len": 58138,
+   "localSize": 58138,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "en",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-variety.webp",
+   "status": 200,
+   "len": 75138,
+   "localSize": 75138,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "en",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-en-multi-angle.webp",
+   "status": 200,
+   "len": 61384,
+   "localSize": 61384,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "check": "pdp-src",
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "view": "hero",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-hero.webp",
+   "status": 200,
+   "len": 112456,
+   "localSize": 112456,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "view": "detail",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-detail.webp",
+   "status": 200,
+   "len": 118992,
+   "localSize": 118992,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "view": "variety",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-variety.webp",
+   "status": 200,
+   "len": 60104,
+   "localSize": 60104,
+   "ok": true
+  },
+  {
+   "slug": "a1-posters",
+   "locale": "ja",
+   "view": "multi-angle",
+   "url": "https://zprintpro.com/images/products/v28_5/a1-posters/zprintpro-posters-a1-posters-ja-multi-angle.webp",
+   "status": 200,
+   "len": 75362,
+   "localSize": 75362,
+   "ok": true
+  }
+ ]
+}

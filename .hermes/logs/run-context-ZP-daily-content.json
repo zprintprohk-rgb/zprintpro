@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-20 21:17:02",
+  "generated_at": "2026-10-22 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "3a0a2957a6b0f82d",
-    "day": "2026-10-20",
+    "this_run_key": "6f474eddab9a22d2",
+    "day": "2026-10-22",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,12 +30,12 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=BLOCKED @ 2026-10-19 21:20:38"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-20 21:21:13"
       },
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=3"
+        "detail": "verdict=ATTENTION problems=6"
       },
       {
         "name": "lock_acquired",
@@ -46,51 +46,71 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 19760,
-    "acquired_at": "2026-10-20 21:17:02",
-    "acquired_ts": 1792502223.0009654,
+    "pid": 19464,
+    "acquired_at": "2026-10-22 21:17:02",
+    "acquired_ts": 1792675023.006706,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261019T212038",
+      "run_id": "ZP-daily-content-20261020T212113",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-19 21:20:38",
-      "ended_at": "2026-10-19 21:20:38",
-      "idempotency_key": "d03f5245529f66d7",
+      "fired_at": "2026-10-20 21:21:13",
+      "ended_at": "2026-10-20 21:21:13",
+      "idempotency_key": "3a0a2957a6b0f82d",
       "dsh_exit": null,
-      "wrapper_exit": 4,
-      "verdict": "BLOCKED",
-      "state": "blocked",
-      "blocked_reason": "pre-commit guard 拒绝 3 个生产文件",
+      "wrapper_exit": 0,
+      "verdict": "OK",
+      "state": "completed",
+      "blocked_reason": "",
       "guard": {
-        "ok": false
+        "ok": true
       },
-      "report": ".hermes/logs/2026-10-19-ZP-daily-content.md",
+      "report": ".hermes/logs/2026-10-20-ZP-daily-content.md",
       "report_auto_generated": false,
       "files": [
-        "src/data/products.ts",
-        "src/data/sku-seo-data.ts"
+        "src/data/blog-data/ja.json"
       ],
       "pushed": false,
-      "head": "d342102e",
+      "head": "58d976d4",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-19-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-20-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "src/data/sku-seo-data.ts（16 处 ja「業界最安水準」清除 → 「は低価格帯でご提供」）; src/data/products-content.ts（3 段 ja「激安」×3 + 「業界最安値」×3 清扫）; src/data/buying-guides.ts（ja「最安値」1 处 → 「価格」）; scripts/enrich-body-p4.ts（生成器 ja 模板同步，防再生）; .hermes/logs/b1c-queue-progress.json（order 19 登记 + 残差 docket）"
+      "scripts/enrich-body-p4.ts（三语模板 4 句：en 假美国号 +1 982 808 5133 → 唯一白名单 +86 198 8085 1334；zh/ja 模板 ISO 9001 ×2 + 15+ 年 ×2 移除）；src/data/blog-data/ja.json（L96 チラシ guide「最安値を見積もりたい」→「価格を見積もりたい」，1 处）；.hermes/logs/b1c-queue-progress.json（order 20 登记）；另复核 10-19 内容层未回滚（sku-seo-data.ts「は低価格帯でご提供」=16 处 · products-content.ts「低コストでご検討」=3 段 · buying-guides.ts ja 最安値=0）"
     ]
   },
-  "sibling_lanes": [],
+  "sibling_lanes": [
+    {
+      "lane": "ZP-gsc-feedback",
+      "status": "PENDING",
+      "report": null,
+      "start": "22:43"
+    },
+    {
+      "lane": "ZP-k3-review",
+      "status": "PENDING",
+      "report": null,
+      "start": "07:10"
+    }
+  ],
   "retry_queue": [
     {
-      "kind": "RETRY_OF",
-      "run_id": "ZP-daily-content-20261019T212038",
-      "reason": "pre-commit guard 拒绝 3 个生产文件",
-      "candidate_files": [
-        "src/data/products.ts",
-        "src/data/sku-seo-data.ts"
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-19",
+      "status": "BLOCKED",
+      "notes": [
+        "pre-commit guard 拒绝 3 个生产文件",
+        "guard blocked src commit"
+      ]
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-10-20",
+      "status": "STALE",
+      "notes": [
+        "guard-blocked message seen in console log (suspected: log may also carry human-session output)"
       ]
     }
   ],
