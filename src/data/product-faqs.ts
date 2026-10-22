@@ -1569,4 +1569,354 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
     },
   ],
+  'transparent-stickers': [
+    {
+      question: {
+        'zh-hk': '透明貼紙最少印幾多？價錢點計？',
+        en: 'What is the minimum order and price for transparent stickers?',
+        ja: '透明ステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.38-1.50/張（按尺寸與數量）。檔案確認後標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.38-1.50 each depending on size and quantity; 3-5 business days after artwork approval.',
+        ja: '10枚から、HK$0.38-1.50/枚（サイズ・数量による）。データ確定後、標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明貼紙用咩材質？貼上後會唔會擋住產品？',
+        en: 'What material is used, and will it hide the product underneath?',
+        ja: '素材は何ですか。貼っても下の商品は見えますか。',
+      },
+      answer: {
+        'zh-hk': '透明 PET 材質，貼合後近乎無感，LOGO 與圖案直接呈現，不會遮住瓶身或包裝本身的顏色。',
+        en: 'Clear PET film reads almost invisible once applied, so logos show without blocking the bottle or pack colour.',
+        ja: '透明PET素材で、貼った後はほぼ見えず、ロゴや図柄だけが浮かびます。ボトルやパッケージの色を隠しません。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '透明貼紙適合咩產品？',
+        en: 'Which products suit transparent stickers?',
+        ja: '透明ステッカーはどんな商品に向いていますか。',
+      },
+      answer: {
+        'zh-hk': '化妝品、食品與酒類、飲品瓶身、香水、玻璃容器，以及不想加標籤感的高端包裝。',
+        en: 'Cosmetics, food and beverage bottles, perfume, glass containers, and premium packs where a label edge would look wrong.',
+        ja: '化粧品、食品・酒類、飲料ボトル、香水、ガラス容器、ラベル感を出したくない高級パッケージ。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期幾耐？可以打稿先睇效果嗎？',
+        en: 'How long is production, and can I see a proof first?',
+        ja: '納期はどのくらいですか。校正はできますか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；1 小時內免費數碼打稿，透明材質的實際透度以打稿為準。',
+        en: 'Standard 3-5 business days; a free digital proof within 1 hour shows how the clear film reads on your artwork.',
+        ja: '標準3〜5営業日。1時間以内に無料デジタル校正をお出しし、透明感は校正で確認できます。',
+      },
+    },
+  ],
+  'removable-stickers': [
+    {
+      question: {
+        'zh-hk': '可移貼紙最少印幾多？價錢點計？',
+        en: 'Minimum order and price for removable stickers?',
+        ja: '再剥離ステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.45-1.60/張（按尺寸與數量）。標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.45-1.60 each by size and quantity; 3-5 business days standard.',
+        ja: '10枚から、HK$0.45-1.60/枚（サイズ・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '移除之後會唔會留膠？',
+        en: 'Will it leave residue when removed?',
+        ja: '剥がした後に糊が残りませんか。',
+      },
+      answer: {
+        'zh-hk': '特殊背膠設計，正常貼附與移除後不留殘膠，適合玻璃、車窗等光滑表面。',
+        en: 'The adhesive is built to release cleanly from smooth surfaces such as glass and car windows.',
+        ja: '特殊粘着設計で、ガラスや車窓などの平滑面からは糊残りなく剥がせます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可移貼紙適合咩場景？',
+        en: 'Where are removable stickers normally used?',
+        ja: '再剥離ステッカーの主な用途は？',
+      },
+      answer: {
+        'zh-hk': '季節性推廣、短期展覽、試用品包裝、櫥窗裝飾、學校活動、餐廳當日告示、零售促銷。',
+        en: 'Seasonal promotions, short exhibitions, sample packs, window dressing, school events, daily restaurant notices and retail promos.',
+        ja: '季節キャンペーン、短期展示、サンプル包装、ショーウィンドウ装飾、学校イベント、店頭の当日案内、小売プロモーション。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '大量採購交期會唔會更長？',
+        en: 'Does a large order take longer?',
+        ja: '大量発注だと納期は延びますか。',
+      },
+      answer: {
+        'zh-hk': '常規 3-5 個工作天；數量特別大或需要多款分袋時，落單前先確認檔期比較穩。',
+        en: 'Normally 3-5 business days; for very large runs or multi-design packing, confirm the slot before ordering.',
+        ja: '通常3〜5営業日。極端に多い部数や複数デザインの分封が必要な場合は、発注前に枠を確認してください。',
+      },
+    },
+  ],
+  'foil-stickers': [
+    {
+      question: {
+        'zh-hk': '燙金貼紙最少印幾多？價錢點計？',
+        en: 'Minimum order and price for foil stickers?',
+        ja: '箔押しステッカーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.78-2.80/張（按尺寸、箔色與數量）。標準 3-5 個工作天。',
+        en: 'From 10 pieces at HK$0.78-2.80 each by size, foil colour and quantity; 3-5 business days.',
+        ja: '10枚から、HK$0.78-2.80/枚（サイズ・箔色・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩箔色可以揀？',
+        en: 'Which foil colours are available?',
+        ja: '箔の色は選べますか。',
+      },
+      answer: {
+        'zh-hk': '金、銀為常規色；其他金屬色與特殊箔按批次查詢，落單時註明即可。',
+        en: 'Gold and silver are standard; other metallic and speciality foils are quoted per run — just note the colour on the order.',
+        ja: '金・銀が標準です。その他のメタリック箔・特殊箔はロットごとにご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '燙金貼紙適合貼在邊度？',
+        en: 'Where do foil stickers work best?',
+        ja: '箔押しステッカーはどこに使えますか。',
+      },
+      answer: {
+        'zh-hk': '高端產品標籤、禮品包裝封口、VIP 標識、酒類與美妝瓶身，需要金屬光澤的位置。',
+        en: 'Premium product labels, gift-box seals, VIP marks, wine and beauty bottles — anywhere a metallic highlight helps.',
+        ja: '高級品ラベル、ギフト包装の封緘、VIP表示、酒類・化粧品ボトルなど、金属の輝きが効く場所。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '燙金效果同屏幕色一樣嗎？',
+        en: 'Will the foil match what I see on screen?',
+        ja: '箔の色は画面と同じですか。',
+      },
+      answer: {
+        'zh-hk': '不完全一樣——同一款箔壓在不同紙材上會有色差，所以以打稿實樣為準，不要只看屏幕。',
+        en: 'Not exactly: the same foil shifts on different stocks, so judge from the physical proof rather than the screen.',
+        ja: '画面と完全には一致しません。同じ箔でも紙によって色味が変わるため、校正の実物でご確認ください。',
+      },
+    },
+  ],
+  'security-stickers': [
+    {
+      question: {
+        'zh-hk': '防偽貼紙最少印幾多？價錢點解偏高？',
+        en: 'Minimum order and why is the unit price higher?',
+        ja: '偽造防止ステッカーの最小ロットと価格が高めな理由は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$1.15-4.00/張。單價較高是因為防偽工藝（雷射、易碎紙等）本身有材料與工序成本。',
+        en: 'From 10 pieces at HK$1.15-4.00 each — the higher unit price reflects the security material and process (laser, fragile paper).',
+        ja: '10枚から、HK$1.15-4.00/枚。価格が高めなのは、レーザーや脆弱紙など偽造防止の素材と工程にコストがかかるためです。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有邊幾種防偽工藝？',
+        en: 'Which security features are available?',
+        ja: 'どんな偽造防止加工がありますか。',
+      },
+      answer: {
+        'zh-hk': '雷射標籤（光變圖案）、易碎紙（撕即破、無法完整轉移）等，可按品牌需要組合。',
+        en: 'Laser labels with optical patterns and fragile paper that tears instead of peeling cleanly — combined to suit the brand.',
+        ja: '光学的なパターンのレーザーラベル、剥がすと破れる脆弱紙などを組み合わせられます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '咩行業最常用防偽貼紙？',
+        en: 'Which industries use security stickers most?',
+        ja: 'どの業種で多く使われますか。',
+      },
+      answer: {
+        'zh-hk': '美妝護膚、食品酒類、電子配件、藥品與保健品，以及需要封口證明的跨境電商。',
+        en: 'Beauty, food and beverage, electronics accessories, health products, and cross-border sellers who need a tamper seal.',
+        ja: '化粧品、食品・酒類、電子アクセサリー、健康食品、封緘証明が必要な越境EC。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期同普通貼紙一樣嗎？',
+        en: 'Is lead time the same as standard stickers?',
+        ja: '納期は通常のステッカーと同じですか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；特殊防偽材料需先確認庫存，落單前問一句最穩。',
+        en: '3-5 business days standard; speciality security stock should be confirmed before ordering.',
+        ja: '標準3〜5営業日。特殊な偽造防止素材は在庫確認を先に行うと確実です。',
+      },
+    },
+  ],
+  'a4-flyers': [
+    {
+      question: {
+        'zh-hk': 'A4 傳單最少印幾多？價錢點計？',
+        en: 'Minimum order and price for A4 flyers?',
+        ja: 'A4チラシの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.35-0.95/張（按紙材、數量與加工）。標準 3-5 個工作天。',
+        en: 'From 10 sheets at HK$0.35-0.95 each by stock, quantity and finishing; 3-5 business days.',
+        ja: '10枚から、HK$0.35-0.95/枚（用紙・数量・加工による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '用咩紙？可唔可以雙面印？',
+        en: 'What paper, and can it print double-sided?',
+        ja: '用紙と両面印刷は？',
+      },
+      answer: {
+        'zh-hk': '157g 銅版紙雙面四色為標準配置，手感挺括、色彩還原好；需要更厚或啞面可另行查詢。',
+        en: '157g art paper with four-colour both sides is the standard build: firm in hand and colour-accurate. Thicker or matte stocks on request.',
+        ja: '157gコート紙の両面4色が標準。手触りがしっかりして発色も良好です。厚手やマット紙はご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '設計稿要唔要自己準備？',
+        en: 'Do I need to supply finished artwork?',
+        ja: 'デザインデータは必要ですか。',
+      },
+      answer: {
+        'zh-hk': '可以自備 AI／PDF 稿；如果只有文字與圖片，也可以走免費設計排版，打稿確認後才開印。',
+        en: 'Supply AI or PDF if you have it; if not, free layout service is available and print starts only after you approve the proof.',
+        ja: 'AI／PDFがあればそのまま入稿できます。無い場合は無料レイアウトも可能で、校正承認後に印刷します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '急件可以幾快？',
+        en: 'How fast can a rush job run?',
+        ja: '急ぎの場合はどれくらいで出来ますか。',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；檔期許可下可安排急件，請先提供數量與交稿日，我們回覆實際可行時間。',
+        en: '3-5 business days standard; where the schedule allows we take rush jobs — send quantity and artwork date and we confirm the real turnaround.',
+        ja: '標準3〜5営業日。枠が空いていれば特急も可能です。部数と入稿日をお知らせいただければ実際の納期をお答えします。',
+      },
+    },
+  ],
+  'a5-flyers': [
+    {
+      question: {
+        'zh-hk': 'A5 傳單最少印幾多？價錢點計？',
+        en: 'Minimum order and price for A5 flyers?',
+        ja: 'A5チラシの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '10 張起印，HK$0.25-0.65/張（按紙材、數量與加工）。標準 3-5 個工作天。',
+        en: 'From 10 sheets at HK$0.25-0.65 each by stock, quantity and finishing; 3-5 business days.',
+        ja: '10枚から、HK$0.25-0.65/枚（用紙・数量・加工による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A5 同 A4 有咩分別？點揀？',
+        en: 'A5 or A4 — how do I choose?',
+        ja: 'A5とA4はどう選びますか。',
+      },
+      answer: {
+        'zh-hk': 'A5 面積是 A4 一半，適合街頭派發與隨手翻閱；A4 版面大、資訊多，適合店內張貼或夾報。',
+        en: 'A5 is half the area of A4: better for hand-outs and quick reading. A4 carries more information, better for in-store posting or inserts.',
+        ja: 'A5はA4の半分の面積で、手渡しやさっと読む用途に向きます。A4は情報量が多く、店頭掲示や折込に向きます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '紙材同印刷規格係點？',
+        en: 'What are the paper and print specs?',
+        ja: '用紙と印刷仕様は？',
+      },
+      answer: {
+        'zh-hk': '157g 銅版紙、雙面四色為標準；需要單面、啞膜或摺頁加工可另議。',
+        en: '157g art paper with four-colour both sides as standard; single-sided, matte lamination or folding available on request.',
+        ja: '157gコート紙・両面4色が標準。片面、マット加工、折り加工もご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期幾耐？可以打稿嗎？',
+        en: 'Lead time and proofing?',
+        ja: '納期と校正は？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天，1 小時內免費數碼打稿；確認後才開印，避免整批重做。',
+        en: '3-5 business days standard with a free digital proof within 1 hour, so the run starts only after you approve.',
+        ja: '標準3〜5営業日、1時間以内に無料デジタル校正。承認後に印刷を開始します。',
+      },
+    },
+  ],
+  'wall-calendars': [
+    {
+      question: {
+        'zh-hk': '掛曆最少印幾多？價錢點計？',
+        en: 'Minimum order and price for wall calendars?',
+        ja: '壁掛けカレンダーの最小ロットと価格は？',
+      },
+      answer: {
+        'zh-hk': '1 本起印，HK$3-8/本（按尺寸、頁數、紙材與數量）。標準 3-5 個工作天。',
+        en: 'From 1 copy at HK$3-8 each by size, page count, stock and quantity; 3-5 business days.',
+        ja: '1部から、HK$3-8/部（サイズ・ページ数・用紙・数量による）。標準3〜5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩尺寸同頁數？',
+        en: 'Which sizes and page counts?',
+        ja: 'サイズとページ数は？',
+      },
+      answer: {
+        'zh-hk': '標準 A3 或 A2 掛牆，13 頁設計（封面＋12 個月）；需要 A4 或自訂尺寸可查詢。',
+        en: 'A3 or A2 wall format with 13 pages (cover plus 12 months); A4 and custom sizes on request.',
+        ja: 'A3またはA2の壁掛け、13ページ構成（表紙＋12か月）。A4や特殊サイズもご相談ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '適合咩用途？',
+        en: 'What are wall calendars used for?',
+        ja: 'どんな用途に向いていますか。',
+      },
+      answer: {
+        'zh-hk': '家庭與辦公室自用、企業年終送客戶、店舖全年品牌曝光；企業版可加 12 個月獨立宣傳版面。',
+        en: 'Home and office use, year-end client gifting and year-round brand presence in shops; corporate versions can carry a different message on each month.',
+        ja: '家庭・オフィス用途、年末の法人ギフト、店舖での通年ブランド露出。法人版は月ごとに訴求を変えられます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '旺季幾時要落單？',
+        en: 'When should I order for the peak season?',
+        ja: '繁忙期はいつ発注すべきですか。',
+      },
+      answer: {
+        'zh-hk': '年曆旺季集中在第四季，建議 11 月前定稿、11 月中前落單，避開 12 月排隊。',
+        en: 'Calendar demand peaks in Q4: approve artwork before November and order by mid-November to avoid the December queue.',
+        ja: 'カレンダー需要は第4四半期に集中します。11月前に校了、11月中までに発注すると12月の混雑を避けられます。',
+      },
+    },
+  ],
 };
