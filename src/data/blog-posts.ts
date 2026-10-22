@@ -933,9 +933,9 @@ const lpDoujinCircle: BlogPostMeta = {
     ja: '同人誌印刷ガイド：小ロット・少部数・高品質対応 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印港為香港同人市場提供 30 本起印 + 5 大裝訂 + 燙金封面 + 5-7 個工作天交付,DHL 全球 2-4 天配送至 Comiket、Anime Expo 等國際活動會場。',
-    en: 'Indie comic creators, zine makers, Comic-Con Artist Alley exhibitors, indie game studios — premium small-batch doujin booklet printing with 30-copy MOQ, 5-7 business day production, free design mockup, and DHL Express global shipping.',
-    ja: '同人作家・zine 作家・Comic-Con Artist Alley 出展者・インディーゲームスタジオ向け。プレミアム同人誌印刷 30 部 MOQ・5-7 営業日生産・無料デザインモックアップ・DHL Express 国際配送対応。',
+    'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印港同人誌印刷 10 本起印，A5／B5，封面全彩＋內頁單色，標準 5-7 個工作天，活動前 24 小時特急，DHL 2-4 天；裝訂、紙材、封面工藝一次講清。',
+    en: 'Indie comic creators, zine makers, Comic-Con Artist Alley exhibitors, indie game studios — doujinshi printing from 10 copies, A5/B5, colour cover with mono text, 5-7 business day production, 24-hour pre-event rush, and DHL 2-4 day delivery.',
+    ja: '同人作家・zine 作家・Comic-Con Artist Alley 出展者・インディーゲームスタジオ向け。同人誌印刷は 10 冊から・A5/B5・表紙フルカラー＋本文モノクロ・標準 5-7 営業日・24 時間特急・DHL 2-4 日・無料デジタル校正。',
   },
 };
 
