@@ -462,9 +462,9 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ箱印刷,オリジナルパッケージ,紙箱印刷,化粧箱,ギフトボックス,構造設計,箔押しパッケージ,小ロットパッケージ,ブランドパッケージ,EC パッケージ,化粧品パッケージ,食品パッケージ,食品対応パッケージ,日本全国,短納期',
     },
     descriptions: {
-      'zh-hk': '食品包裝印刷 / 包裝盒訂製 100 個起印，HK$1.5 起/個。食品紙盒 / 食品紙袋 / 防油紙卡（FDA 食品級 + FSC 認証紙，唔做膠袋）；亦做化妝品 / 茶葉 / 電子產品包裝。免費 3D 打稿 6 小時，DHL 全球 2-4 天，滿 HK$500 順豐免運。WhatsApp 30 秒報價，國際認證體系。',
-      en: 'Custom packaging boxes from $0.51, 100 MOQ — food-safe paper boxes, bags & greaseproof cards (FDA + FSC). Free 3D proof in 6h, DHL 2-4 day global delivery.',
-      ja: 'パッケージ印刷 100 個から、¥69〜。食品用紙箱・紙袋・耐油紙カード（FDA 適合 + FSC 認証紙、ビニール袋は非対応）。無料 3D 校正 6 時間、日本全国 DHL 2-4 日配送、沖縄・北海道対応。',
+      'zh-hk': '包裝盒印刷訂製 100 個起，HK$2.5 起/個 ✓ 食品級紙盒/紙袋/防油紙卡（FDA 標準紙可選、FSC 認証紙）✓ 免費 1 小時打稿 ✓ 3-5 天出貨 ✓ 滿 HK$500 順豐免運。',
+      en: 'Custom packaging boxes from HK$2.50, 100 MOQ ✓ food-grade boxes, bags & greaseproof cards (FDA-standard paper optional, FSC) ✓ free 1-hour proof ✓ 3-5 day production ✓ free HK shipping over HK$500.',
+      ja: 'パッケージ印刷 100 個から HK$2.5〜 ✓ 食品用紙箱・紙袋・耐油紙カード（FDA 基準紙は選択可、FSC 認証紙）✓ 無料 1 時間校正 ✓ 3-5 営業日で出荷 ✓ 香港 HK$500 以上送料無料。',
     },
   },
 'posters': {

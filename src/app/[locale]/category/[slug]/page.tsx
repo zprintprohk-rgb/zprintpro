@@ -343,8 +343,16 @@ export default function CategoryPage({
   const bannerImage = bannerBase ? `/images/hero/${bannerBase}-${locale}.webp` : undefined;
   const hasBannerImage = !!bannerImage;
 
+  // 2026-10-23 类目页 meta description hoist 修复: Next 15 streaming metadata 在本适配器下未将
+  // generateCategoryMetadata 的 description 落进 <head> (线上 3×3 确定性实测: 类目页无 name=description 标签,
+  // 其余页型正常)。React 19 支持组件树内 <meta> 自动 hoist → 此处显式渲染兼底 (值与 metadata 同源)。
+  const categoryMeta = generateCategoryMetadata(locale, category.slug, category.name, category.nameEn, category.nameJa);
+  const categoryDesc = typeof categoryMeta.description === 'string' ? categoryMeta.description : '';
+
   return (
     <>
+      {categoryDesc ? <meta name="description" content={categoryDesc} /> : null}
+      {categoryDesc ? <meta property="og:description" content={categoryDesc} /> : null}
       {/* 2026-08-29 K3 拍板: 类目页 → category-view 事件 → tracking_events (009) */}
       <CategoryViewTracker category={localizedCategoryName} productSlug={slug} />
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage + HowTo + Speakable */}
