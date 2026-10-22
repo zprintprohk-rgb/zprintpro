@@ -279,6 +279,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         'Finishes are where custom boxes outshine stock packaging: gold or silver foil makes logos gleam, spot UV highlights key art, embossing adds touch, and PVC windows show the product inside. Start with one or two finishes on a free same-day sample before committing to volume.',
         'Pricing rewards scale: digital printing covers 50–500 units with no plate fees; offset from 1,000 units drops unit costs to as low as cents per box; 5,000+ runs take 5–7 days with tiered discounts. Order 3 weeks ahead of peak seasons like Christmas.',
         'From quote to doorstep: submit style, dimensions, quantity, stock, and finishes for a 30-second AI quote, approve free dielines and samples, and we ship in 3 days. Free shipping over $99, DHL express in 2–4 days worldwide, plus ISTA compression-test reports for export orders.',
+        'Minimum order and price bands at a glance: food boxes 100 pcs (HK$2.5-18), folding cartons 100 pcs (HK$2.5-15), mailer boxes 100 pcs (HK$3.5-10), cosmetic boxes 100 pcs (HK$8-65), rigid boxes 100 pcs (HK$8-42), kraft paper bags 100 pcs (HK$3-8), white card bags 100 pcs (HK$5-12), gift bags 100 pcs (HK$10-20). Unit price moves with size, stock and finishing; standard sizes share common dies, so no die fee applies.',
       ],
       links: [
         { label: 'Custom Packaging Box Guide', href: '/en/blog/packaging-buying-guide/' },
@@ -385,6 +386,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '加工は差別化の鍵。金銀箔でロゴに輝き、スポットUVでポイント強調、エンボスで立体感、PVC窓で中身をアピール。無料の当日サンプルで1–2種の加工を実物確認してから量産を決めるのが安心です。',
         '価格は数量でお得に。デジタル印刷は50–500個で製版代不要、オフセットは1,000個から単価大幅ダウン、5,000個以上は5–7日＋段階割引。クリスマスや歳末などの繁忙期は3週間前のご注文が安心です。',
         'ご注文の流れ：箱型・展開寸法・数量・用紙・加工を入力し30秒AI見積もり。無料の抜き型設計とサンプル確認後、3日で出荷。日本全国へ配送、輸出向けISTA圧縮テストレポートにも対応します。',
+        '最小ロットと価格帯の目安：食品箱 100個〜（HK$2.5-18）、折り箱 100個〜（HK$2.5-15）、メーラーボックス 100個〜（HK$3.5-10）、化粧品箱 100個〜（HK$8-65）、上製箱 100個〜（HK$8-42）、クラフト紙袋 100個〜（HK$3-8）、白カード紙袋 100個〜（HK$5-12）、ギフト紙袋 100個〜（HK$10-20）。単価はサイズ・用紙・加工で変動し、標準サイズは共通ダイのため型代はかかりません。',
       ],
       links: [
         { label: 'パッケージ箱オーダーガイド', href: '/ja/blog/packaging-box-custom-guide/' },
