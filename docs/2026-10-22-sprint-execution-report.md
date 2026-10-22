@@ -133,7 +133,23 @@
 - 报告 Top 5 #2「faqSchema 82 处待删」：**已为 0**（`products.ts` 实测 0 命中，前期批次已完成），无需再跑删除器。
 - 报告 Top 5 #4「包装簇 FAQ 扩编」：**9/9 包装 SKU 已在 `skuMoneyFAQs`**（food/folding/rigid/cosmetic/mailer/white-card/kraft/eco/gift），当前覆盖 18/83；扩到 25/83 需新增 7 个非包装 SKU（下一批）。
 
-## §10 下一步（按 ROI）
+## §11 第四批（AEO 覆盖 + 包装簇结构化）
+
+| # | 交付 | 量化 | 状态 |
+|---|---|---|---|
+| 16 | **skuMoneyFAQs 扩编第一批（7 SKU）** | transparent / removable / foil / security stickers · a4 / a5 flyers · wall-calendars，各 4 问 × 3 语 | **已上线**（`6cd78bab`，deploy 119846299275） |
+| 17 | **`skuMoneyFAQs` 覆盖** | 18/83 → **25/83**；随后 +4 利是封 → **29/83**（`4f6915f6` 待推） | 一半已上线 |
+| 18 | **包装类目 en/ja 结构化对照段** | 8 SKU × MOQ × 价格带（food 2.5-18 / folding 2.5-15 / mailer 3.5-10 / cosmetic 8-65 / rigid 8-42 / kraft 3-8 / white-card 5-12 / gift 10-20）+ 免刀模费说明 | `5915cf9` 待推 |
+| 19 | **CNY 2027 簇 FAQ** | foil / custom / embossed / large 利是封 各 4 问 × 3 语，含旺季 3-4 周提前量 | `4f6915f6` 待推 |
+
+**线上验收**：`_probe_faq7.mjs` → **28 PASS / 0 FAIL**（7 SKU 页 200 + 可见 FAQ + 价格真值 + FAQPage JSON-LD）。
+**真值纪律**：全部 MOQ 取 `products.ts` `minQuantity`（贴纸/传单 10、利是封/包装 100、挂历 1），价格取 `price_range` 原文；ja 全部禁「份」通过断言。
+
+**新报告口径对账（再次更新）**：
+- 「包装簇 FAQ 只覆盖 12 SKU」→ 实际包装 9 SKU 早已覆盖，本轮扩的是贴纸/传单/历/利是封。
+- 「en 缺结构化比较表」→ en packaging 已有 13 条 FAQ + 7 段 buyingGuide，本轮补的是**全 SKU MOQ×价格带单行对照**（报告要求的「比较表」以可扫读段落形式落地，不动 schema）。
+
+## §12 待推与下一步
 2. **包装簇 FAQ 扩编**（P1，方案 2.2）：12 SKU × 4 问 × 3 语，答案锚 products.ts 真值。
 3. **C109 专题页**（ja 先，en 后）：締切倒计时直答块 + 套装规格 + 搬入信息，登记 sitemap。
 4. **hub v2 食品包裝专节**（zh）：把 9 条 blog 内链收成 hub-spoke。
