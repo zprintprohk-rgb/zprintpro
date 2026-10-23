@@ -58,7 +58,7 @@
 ### §0.34.3 当前战略指令 SSoT
 - 最新主报告: `docs/2026-09-08-v4-full-alignment-master-report.md`（原子指令 A1-A12 + 问 K3 八件）。
 - 最新拍板增补: **标题规则 SSoT = `docs/2026-09-13-title-batch-T-freeze.md` §6-3（**K3 2026-09-19 裁决 目标区 50-57，58 为阻断线**；取代 v4 的 50-54 与 9/13 的 50-58）**；`docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：v4 写满原则 50-54 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）—— **其 §1.2 区间表已被 9/13 取代，仅 §二 幂等铁律与 §四 闭环机制继续有效**。
-- 定时任务（**2026-09-19 修正**：调度 SSoT 见 §0.35；本节原写"autoclaw Blueprint Automation"的表述已作废——autoclaw 侧 5 实体**从未创建**（`cron-check-tonight.md` 9/13–9/17 每日实测 `0/5`），真身在 Windows Task Scheduler）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13 + watchdog 每天 06:43（Asia/Shanghai）。
+- 定时任务（**2026-09-19 修正**：调度 SSoT 见 §0.35；本节原写"autoclaw Blueprint Automation"的表述已作废——autoclaw 侧 5 实体**从未创建**（`cron-check-tonight.md` 9/13–9/17 每日实测 `0/5`），真身在 Windows Task Scheduler）: daily-content 21:17 / gsc-feedback 20:13 / weekly-meta 周五 20:52 / blog-deepfix 周六 23:47 / monthly-matrix 每月 1 号 12:13 + watchdog 每天 06:43（Asia/Shanghai）。
 
 ## §0.35 定时任务 SSoT 与结果总线 (K3 2026-09-19 查案定稿, 跨项目 P0 强制级)
 

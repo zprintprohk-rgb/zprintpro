@@ -26,10 +26,10 @@ if (-not (Test-Path $RunDir)) { Say "FATAL: run dir missing (run register-cron-t
 
 $Lanes = @(
   @{ Name='ZP-daily-content';  Guard='ZP-daily-content.ps1';  Sch=@('/sc','DAILY');              St='21:17' },
-  @{ Name='ZP-gsc-feedback';   Guard='ZP-gsc-feedback.ps1';   Sch=@('/sc','DAILY');              St='22:43' },
-  @{ Name='ZP-weekly-meta';    Guard='ZP-weekly-meta.ps1';    Sch=@('/sc','WEEKLY','/d','FRI');  St='23:07' },
-  @{ Name='ZP-blog-deepfix';   Guard='ZP-blog-deepfix.ps1';   Sch=@('/sc','WEEKLY','/d','SAT');  St='05:37' },
-  @{ Name='ZP-monthly-matrix'; Guard='ZP-monthly-matrix.ps1'; Sch=@('/sc','MONTHLY','/d','1');   St='06:13' }
+  @{ Name='ZP-gsc-feedback';   Guard='ZP-gsc-feedback.ps1';   Sch=@('/sc','DAILY');              St='20:13' },
+  @{ Name='ZP-weekly-meta';    Guard='ZP-weekly-meta.ps1';    Sch=@('/sc','WEEKLY','/d','FRI');  St='20:52' },
+  @{ Name='ZP-blog-deepfix';   Guard='ZP-blog-deepfix.ps1';   Sch=@('/sc','WEEKLY','/d','SAT');  St='23:47' },
+  @{ Name='ZP-monthly-matrix'; Guard='ZP-monthly-matrix.ps1'; Sch=@('/sc','MONTHLY','/d','1');   St='12:13' }
 )
 
 $created = @()

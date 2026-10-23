@@ -17,32 +17,35 @@
     {
       "task": "ZP-gsc-feedback",
       "schedule": { "kind": "DAILY" },
-      "start": "22:43",
+      "start": "20:13",
       "timeoutSeconds": 3600,
       "prompt": "zprintpro-gsc-feedback-loop.md",
       "includeMatrix": true,
-      "reportGlob": "*-gsc-feedback.md"
+      "reportGlob": "*-gsc-feedback.md",
+      "_note": "2026-10-24 K3 reschedule 22:43 -> 20:13 (GUI directive; same prompt + same report name kept; fires before daily-content 21:17 so the content lane consumes same-day GSC backfill)"
     },
     {
       "task": "ZP-weekly-meta",
       "schedule": { "kind": "WEEKLY", "day": "FRI" },
-      "start": "23:07",
+      "start": "20:52",
       "timeoutSeconds": 1800,
       "prompt": "zprintpro-weekly-meta-refresh.md",
-      "reportGlob": "*-weekly-meta.md"
+      "reportGlob": "*-weekly-meta.md",
+      "_note": "2026-10-24 K3 reschedule 23:07 -> 20:52 (GUI directive; Track B slot + meta refresh; same prompt + same report name kept). OVERLAP WATCH: ZP-gsc-feedback now fires 20:13 (cap 3600s) before this lane on Fridays; lane.lock serializes, so if gsc-feedback still runs at 20:52 this lane gets BLOCKED (preflight exit 11, dsh NOT called)."
     },
     {
       "task": "ZP-blog-deepfix",
       "schedule": { "kind": "WEEKLY", "day": "SAT" },
-      "start": "05:37",
+      "start": "23:47",
       "timeoutSeconds": 3600,
       "prompt": "zprintpro-blog-deepfix.md",
-      "reportGlob": "*-blog-deepfix.md"
+      "reportGlob": "*-blog-deepfix.md",
+      "_note": "2026-10-24 K3 reschedule 05:37 -> 23:47 (GUI directive asked Sat 21:17; 23:47 approved in-session instead: 21:17 collides same-minute with ZP-daily-content, lane.lock has no queue and BLOCKS one lane). 23:47 = first Saturday slot clear of daily-content 21:17 (+3600s cap ends 22:17) and gsc-feedback daily 20:13 (+3600s cap ends 21:13). Lane fires tonight 2026-10-24 23:47."
     },
     {
       "task": "ZP-monthly-matrix",
       "schedule": { "kind": "MONTHLY", "day": 1 },
-      "start": "06:13",
+      "start": "12:13",
       "timeoutSeconds": 3600,
       "prompt": "zprintpro-monthly-matrix-audit.md",
       "reportGlob": "*-monthly-matrix-audit.md"

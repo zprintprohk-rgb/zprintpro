@@ -4,7 +4,17 @@
 # K3 v9.4 arm script (2026-09-13): register 5 lanes + 1 watchdog into Windows Task Scheduler.
 # OS-level trigger: depends on NO agent session being alive (kills the 9/7-9/13 silence class).
 # Source of truth: docs/2026-09-13-k3-directive-v94-cron-rearm-deepseek.md
-#   - 5 lanes keep the v7-payload firing times (21:17 / 22:43 / Fri 23:07 / Sat 05:37 / 1st 06:13)
+#   - 5 lanes keep the v7-payload firing times (21:17 / 20:13 / Fri 20:52 / Sat 23:47 / 1st 12:13)
+#   - 2026-10-24: ZP-blog-deepfix rescheduled Sat 05:37 -> 23:47 (K3 GUI directive asked Sat 21:17;
+#     23:47 approved in-session instead: 21:17 collides same-minute with ZP-daily-content, lane.lock
+#     has no queue and would BLOCK one lane every Saturday). 23:47 = first Saturday slot clear of
+#     daily-content 21:17 (+3600s cap ends 22:17) and gsc-feedback 20:13 (+3600s cap ends 21:13).
+#   - 2026-10-24: ZP-weekly-meta rescheduled Fri 23:07 -> 20:52 (K3 GUI directive; Track B slot
+#     + meta refresh). Watch Friday overlap vs ZP-gsc-feedback 20:13 (cap 3600s): lane.lock may
+#     BLOCK weekly-meta if gsc-feedback still holds the lock at 20:52.
+#   - 2026-10-24: ZP-gsc-feedback rescheduled 22:43 -> 20:13 (K3 GUI directive); it now fires
+#     before ZP-daily-content 21:17 so the content lane consumes same-day GSC backfill
+#   - 2026-10-24: ZP-monthly-matrix rescheduled 1st 06:13 -> 12:13 (K3 GUI directive)
 #   - 6th entity ZP-cron-watchdog at 06:43 (idle-window rule 19:00-07:00, K3 19:43)
 #   - every entity gets PYTHONIOENCODING=utf-8 (kills the GBK false-failure class)
 #   - tasks run at HIGHEST so they fire even with no interactive session
@@ -92,10 +102,10 @@ Write-Host "repo   : $Repo`n"
 # Caps mirror the v7 payload timeoutSeconds (1800 light lanes, 3600 heavy lanes).
 $Lanes = @(
   @{ Name='ZP-daily-content';  Sch=@('/sc','DAILY');             St='21:17'; Timeout=3600; Prompt='zprintpro-daily-content-1x7w.md'   },
-  @{ Name='ZP-gsc-feedback';   Sch=@('/sc','DAILY');             St='22:43'; Timeout=3600; Prompt='zprintpro-gsc-feedback-loop.md'    },
-  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='23:07'; Timeout=1800; Prompt='zprintpro-weekly-meta-refresh.md' },
-  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='05:37'; Timeout=3600; Prompt='zprintpro-blog-deepfix.md'       },
-  @{ Name='ZP-monthly-matrix'; Sch=@('/sc','MONTHLY','/d','1');  St='06:13'; Timeout=3600; Prompt='zprintpro-monthly-matrix-audit.md' },
+  @{ Name='ZP-gsc-feedback';   Sch=@('/sc','DAILY');             St='20:13'; Timeout=3600; Prompt='zprintpro-gsc-feedback-loop.md'    },
+  @{ Name='ZP-weekly-meta';    Sch=@('/sc','WEEKLY','/d','FRI'); St='20:52'; Timeout=1800; Prompt='zprintpro-weekly-meta-refresh.md' },
+  @{ Name='ZP-blog-deepfix';   Sch=@('/sc','WEEKLY','/d','SAT'); St='23:47'; Timeout=3600; Prompt='zprintpro-blog-deepfix.md'       },
+  @{ Name='ZP-monthly-matrix'; Sch=@('/sc','MONTHLY','/d','1');  St='12:13'; Timeout=3600; Prompt='zprintpro-monthly-matrix-audit.md' },
   # 2026-10-09: 7th entity = K3 daily review (SSoT .hermes/cron-prompts/k3-ceo-daily-review.md, registration
   # method A). Report naming <YYYY-MM-DD>-k3-daily-review.md (reportGlob in .hermes/cron-lanes.json).
   @{ Name='ZP-k3-review';      Sch=@('/sc','DAILY');             St='07:10'; Timeout=1800; Prompt='k3-ceo-daily-review.md'          }
