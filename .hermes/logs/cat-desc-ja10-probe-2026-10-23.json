@@ -1,0 +1,212 @@
+﻿[
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "banners",
+        "status":  200,
+        "desc_len":  152
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "books",
+        "status":  200,
+        "desc_len":  131
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "calendars",
+        "status":  200,
+        "desc_len":  138
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "educational",
+        "status":  200,
+        "desc_len":  134
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "envelopes",
+        "status":  200,
+        "desc_len":  133
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "flyers",
+        "status":  200,
+        "desc_len":  138
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "greeting-cards",
+        "status":  200,
+        "desc_len":  130
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "japan-doujin",
+        "status":  200,
+        "desc_len":  145
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "menus",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  1,
+        "loc":  "ja",
+        "slug":  "packaging",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "banners",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "books",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "calendars",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "educational",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "envelopes",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "flyers",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "greeting-cards",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "japan-doujin",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "menus",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  2,
+        "loc":  "ja",
+        "slug":  "packaging",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "banners",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "books",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "calendars",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "educational",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "envelopes",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "flyers",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "greeting-cards",
+        "status":  200,
+        "desc_len":  130
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "japan-doujin",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "menus",
+        "status":  503,
+        "desc_len":  -1
+    },
+    {
+        "round":  3,
+        "loc":  "ja",
+        "slug":  "packaging",
+        "status":  503,
+        "desc_len":  -1
+    }
+]
