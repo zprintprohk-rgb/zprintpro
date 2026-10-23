@@ -52,7 +52,7 @@ ${MARK_END}
 
 `,
   'zprintpro-gsc-feedback-loop.md': `${HEAD}
-> **本车道 (gsc-feedback 22:43) 恢复期任务定义**:
+> **本车道 (gsc-feedback 20:13) 恢复期任务定义**:
 > 1. **STEP 0.5 (新, 先于一切)**: 跑 \`python scripts/gsc-cliff-detector.py\` 并读 \`.hermes/logs/gsc-cliff-<当日>.json\`:
 >    - \`CRITICAL_CLIFF\` → 当日报告只写断崖证据 + 升级 K3, 不做词表动作;
 >    - \`WARN_STALE\` → 报告标注「数据龄 >5 天, 需 K3 导出新档」, 后续判读降置信;
@@ -63,7 +63,7 @@ ${MARK_END}
 
 `,
   'zprintpro-weekly-meta-refresh.md': `${HEAD}
-> **本车道 (weekly-meta 周五 23:07) 恢复期任务定义**:
+> **本车道 (weekly-meta 周五 20:52) 恢复期任务定义**:
 > 1. 周报告**改组为 SEO 健康周报**, 固定四节: ① 恢复系数周曲线 (gsc-cliff-detector 逐日 JSON 汇总) ② 门童 #25/#27/#28/#29 本周审计 JSON 摘要 (存量 issue 增减, 只准减不准增) ③ 本周新上线内容的相似度抽检 (8-gram Jaccard, >50% 列出) ④ 下周 B1c 队列建议 (与 daily-content 进度对账 \`.hermes/logs/b1c-queue-progress.json\`)。
 > 2. meta 刷新动作本身恢复期**限缩**: 只刷「已恢复展示但 CTR 低于 c 值判据」的页; 对仍被 spam 压制的页不改 meta (改了也测不出效果, 还会污染验证窗)。
 > 3. 发现任何 keywords meta 回流 / 标题带外溢 / 品牌语种错配的新发例 → 当周报告标红置顶, 不进「下周再说」。

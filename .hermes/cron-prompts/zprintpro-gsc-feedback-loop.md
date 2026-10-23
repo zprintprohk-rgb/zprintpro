@@ -13,7 +13,7 @@
 > ⑤ 名片解禁仅限接单层: 不动贺卡资产 / 不动 middleware 301 / 不建名片页 (§0.0 解禁块 (a)/(b)/(c) 未裁决)。
 >
 
-> **本车道 (gsc-feedback 22:43) 恢复期任务定义**:
+> **本车道 (gsc-feedback 20:13) 恢复期任务定义**:
 > 1. **STEP 0.5 (新, 先于一切)**: 跑 `python scripts/gsc-cliff-detector.py` 并读 `.hermes/logs/gsc-cliff-<当日>.json`:
 >    - `CRITICAL_CLIFF` → 当日报告只写断崖证据 + 升级 K3, 不做词表动作;
 >    - `WARN_STALE` → 报告标注「数据龄 >5 天, 需 K3 导出新档」, 后续判读降置信;
@@ -40,7 +40,7 @@
 > # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
 > 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
 >
-> **本车道（gsc-feedback 22:43）指令**：
+> **本车道（gsc-feedback 20:13）指令**：
 > 1. **追踪锚点表切换为 10-09 验证矩阵**（详见 SSoT §二）：en 8 锚（doujinshi printing 11.2 / china catalog printing 17.7 / large envelopes 13.8 / saddle stitch booklet 4.2 / small batch sticker 5.6 c0 / small batch label 29.0 / calendar sizes 44 / holiday cards 簇 0 展示）+ ja 9 锚（コミケ 20.8 / クラフト紙 24 / 年賀状 簇 0 展示 / 卒アル 66 / 教科書 34.6 churn / 特急激安 16.1 / 社名入りカレンダー 8.7 / a2 クリアポスター 37.5 / 両面カラー 35.4）+ zh 16 词沿用任务 J + 10-09 档实测。
 > 2. **CTR c 值升为一等判据**：页一/页二词 c=0 连续两档 → 输出「CTR 修复候选池」供 weekly-meta 周五档消费（落 .hermes/logs/ 当日报告专段）。
 > 3. **盲开词纪律**：年賀状印刷 / 2027年賀状 / corporate holiday cards / business holiday cards 每轮必查——**0→有展示即报胜**，不看位次；10/16 仍 0 → 触发 Plan B（site: 收录诊断 + sitemap 条目核对，报告写明）。
