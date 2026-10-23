@@ -2250,4 +2250,305 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
     },
   ],
 
+
+  'desk-calendars': [
+    {
+      question: {
+        'zh-hk': '座檯年曆幾多錢一本？',
+        en: 'How much do desk calendars cost?',
+        ja: '卓上カレンダーの価格は？',
+      },
+      answer: {
+        'zh-hk': '座檯年曆 1 本起印，HK$3-8/本（視頁數與紙材）。標準 3-5 個工作天出貨，港九新界送貨到門。',
+        en: 'Desk calendars start from HK$3-8 each at 1-piece MOQ, depending on pages and stock. Standard 3-5 business days production, delivery across Hong Kong.',
+        ja: '卓上カレンダーは1冊から、HK$3-8/冊（ページ数・用紙による）。標準3-5営業日で出荷、香港全域配送。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '座檯年曆最低訂幾多本？',
+        en: 'What is the minimum order for desk calendars?',
+        ja: '卓上カレンダーの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '1 本起印，無開版費；批量 100 本以上單價明顯下降，適合企業送禮。',
+        en: 'From 1 piece with no plate fee; unit price drops sharply from 100 pieces, ideal for corporate gifting.',
+        ja: '1冊から・版代なし。100冊以上で単価が大きく下がり、企業ギフトに適します。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '座檯年曆有咩款式同尺寸？',
+        en: 'What styles and sizes are available?',
+        ja: '卓上カレンダーの仕様・サイズは？',
+      },
+      answer: {
+        'zh-hk': '三角座架配灰板底座，另備相架式與磁貼式；常用 A5/A6 版面，2027 年月曆版面可自訂。',
+        en: 'Triangle stand with greyboard base, plus photo-frame and magnetic variants; A5/A6 layouts standard, 2027 grids fully customisable.',
+        ja: '三角スタンド＋グレーボード台座、ほかにフォトフレーム式・マグネット式。A5/A6が標準、2027年の月割りは自由に設計可能。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '聖誕旺季幾時要落單？',
+        en: 'When should I order for the Christmas peak?',
+        ja: '年末繁忙期はいつ注文すべき？',
+      },
+      answer: {
+        'zh-hk': '建議 11 月中前落單（提前 2-4 週），避開 12 月排期；急件另議加急。',
+        en: 'Order by mid-November (2-4 weeks ahead) to avoid December queues; rush slots available on request.',
+        ja: '11月中旬までのご注文（2-4週間前）を推奨。12月の混雑を避けられます。急ぎは別途ご相談。',
+      },
+    },
+  ],
+  'custom-calendars': [
+    {
+      question: {
+        'zh-hk': '定製年曆幾多錢？',
+        en: 'How much is a custom calendar?',
+        ja: 'オリジナルカレンダーの価格は？',
+      },
+      answer: {
+        'zh-hk': '定製年曆 1 本起印，HK$3-8/本；標準 7-10 個工作天（十二版面或燙金可變數據另計）。',
+        en: 'Custom calendars start at HK$3-8 each from 1 piece; standard 7-10 business days, with 12-panel or variable-data foil options.',
+        ja: 'オリジナルカレンダーは1冊から、HK$3-8/冊。標準7-10営業日（12面・可変データ箔押しは別途）。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '定製年曆最低幾多本？',
+        en: 'What is the MOQ for custom calendars?',
+        ja: 'オリジナルカレンダーの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '1 本起印，適合小批量試單與企業樣品；100 本以上批量單價更優。',
+        en: '1 piece minimum — practical for test runs and corporate samples; 100+ unlocks bulk pricing.',
+        ja: '1冊から。小ロット試作や企業サンプルに最適。100冊以上で量産価格。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以做到十二版面同燙金嗎？',
+        en: 'Can you do 12 panels and foil stamping?',
+        ja: '12面構成や箔押しは可能？',
+      },
+      answer: {
+        'zh-hk': '可以。十二版面（每月一版）、燙金／局部 UV／可變數據（每本印不同名或編號）均可安排，落單時註明。',
+        en: 'Yes — 12 monthly panels, foil stamping, spot UV and variable data (per-copy names or numbering) are all available; specify at order.',
+        ja: '可能です。12面（月ごと1面）、箔押し・部分UV・可変データ（1冊ごとの名前・番号）に対応。ご注文時にご指定ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '定製年曆幾耐交貨？',
+        en: 'What is the lead time for custom calendars?',
+        ja: 'オリジナルカレンダーの納期は？',
+      },
+      answer: {
+        'zh-hk': '標準 7-10 個工作天；Q4 旺季建議提前 3-4 週落單，急件可加急處理。',
+        en: 'Standard 7-10 business days; order 3-4 weeks ahead in the Q4 peak, with rush handling available.',
+        ja: '標準7-10営業日。Q4繁忙期は3-4週間前のご注文を推奨、特急対応も可能です。',
+      },
+    },
+  ],
+  'mini-calendars': [
+    {
+      question: {
+        'zh-hk': '迷你年曆幾多錢？',
+        en: 'How much do mini calendars cost?',
+        ja: 'ミニカレンダーの価格は？',
+      },
+      answer: {
+        'zh-hk': '迷你年曆 1 本起印，HK$3-8/本；標準 7-10 個工作天。',
+        en: 'Mini calendars start at HK$3-8 each from 1 piece; standard 7-10 business days.',
+        ja: 'ミニカレンダーは1冊から、HK$3-8/冊。標準7-10営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '迷你年曆尺寸幾大？',
+        en: 'What size are mini calendars?',
+        ja: 'ミニカレンダーのサイズは？',
+      },
+      answer: {
+        'zh-hk': '常用 85×55mm 口袋尺寸，可放卡片套或隨禮品派發；版面與紙材可按需調整。',
+        en: 'Standard 85×55mm pocket size, fits card holders or gift inserts; layout and stock adjustable.',
+        ja: '標準85×55mmのポケットサイズ。カードケースやギフト同梱に最適。版面・用紙は調整可能。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '迷你年曆最低訂幾多？',
+        en: 'What is the MOQ for mini calendars?',
+        ja: 'ミニカレンダーの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '1 本起印；大量派發（過千本）單價按批量階梯下調。',
+        en: 'From 1 piece; for mass distribution (over 1k) unit price steps down with volume.',
+        ja: '1冊から。大量配布（千冊以上）は数量段階で単価が下がります。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '迷你年曆適合咩用途？',
+        en: 'What are mini calendars best for?',
+        ja: 'ミニカレンダーの用途は？',
+      },
+      answer: {
+        'zh-hk': '銀行、保險、地產與零售店的年末派發品；亦可作展會小禮物，配合企業 LOGO 印刷。',
+        en: 'Year-end giveaways for banks, insurance, property and retail; also trade-show gifts with company logo.',
+        ja: '銀行・保険・不動産・小売の年末配布物。展示会ノベルティとしても人気、社名ロゴ印刷対応。',
+      },
+    },
+  ],
+  'hardcover-books': [
+    {
+      question: {
+        'zh-hk': '精裝書印刷幾多錢？',
+        en: 'How much does hardcover book printing cost?',
+        ja: '上製本の印刷価格は？',
+      },
+      answer: {
+        'zh-hk': '精裝書 10 本起印，HK$40-240/本（視頁數、尺寸與封面工藝）；標準 5-10 個工作天。',
+        en: 'Hardcover books start at 10 copies, HK$40-240 each depending on pages, size and cover finishing; standard 5-10 business days.',
+        ja: '上製本は10冊から、HK$40-240/冊（ページ数・サイズ・表紙加工による）。標準5-10営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝書最低訂幾多本？',
+        en: 'What is the MOQ for hardcover books?',
+        ja: '上製本の最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 本起印，適合作品集、紀念冊與企業年報；50 本以上單價明顯下降。',
+        en: '10 copies minimum — suited to portfolios, commemorative albums and annual reports; 50+ lowers unit cost.',
+        ja: '10冊から。作品集・記念アルバム・年次報告書に最適。50冊以上で単価が下がります。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝書用咩裝訂同封面？',
+        en: 'What binding and cover options are there?',
+        ja: '上製本の製本・表紙の仕様は？',
+      },
+      answer: {
+        'zh-hk': '硬皮精裝（灰板裱紙）配鎖線膠裝內頁；封面可燙金、壓凹或貼裱布面，內頁 157g 銅版紙或啞粉紙。',
+        en: 'Hard cover (greyboard wrapped) with sewn-and-glued text block; foil, deboss or cloth-wrap covers, 157gsm art or matte inner pages.',
+        ja: 'ハードカバー（グレーボード貼り）＋かがり綴じ。表紙は箔押し・空押し・布貼り、本文は157gコート紙またはマット紙。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '精裝書頁數有限制嗎？',
+        en: 'Is there a page-count limit?',
+        ja: 'ページ数に制限はありますか？',
+      },
+      answer: {
+        'zh-hk': '常見 32-256 頁；頁數越多單價越高，可先以 30 秒 AI 報價試算再決定規格。',
+        en: 'Typically 32-256 pages; price scales with page count — use the 30-second AI quote to compare specs before committing.',
+        ja: '通常32-256ページ。ページ数に応じて単価が変動します。30秒AI見積もりで仕様比較が可能です。',
+      },
+    },
+  ],
+  'outdoor-vinyl-banners': [
+    {
+      question: {
+        'zh-hk': '戶外噴繪幾多錢？',
+        en: 'How much is outdoor vinyl banner printing?',
+        ja: '屋外バナーの価格は？',
+      },
+      answer: {
+        'zh-hk': '戶外噴繪 1 平方米起，HK$12-55/平方米（視材質與後加工）；標準 1-3 個工作天。',
+        en: 'Outdoor vinyl banners start from 1 sqm at HK$12-55 per sqm depending on material and finishing; standard 1-3 business days.',
+        ja: '屋外バナーは1平米から、HK$12-55/平米（素材・後加工による）。標準1-3営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '最低訂幾多？按平方米點計？',
+        en: 'What is the MOQ and how is it priced?',
+        ja: '最小ロットと価格の計算方法は？',
+      },
+      answer: {
+        'zh-hk': '1 平方米起，按實際面積計價；同一圖稿多幅可合併排版，減少損耗。',
+        en: 'From 1 sqm, priced by actual area; multiple pieces of the same artwork can be nested to cut waste.',
+        ja: '1平米から、実面積で計算。同一デザインの複数枚は面付けで無駄を削減できます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '可以戶外用幾耐？防水嗎？',
+        en: 'How long does it last outdoors? Is it waterproof?',
+        ja: '屋外での耐久性・防水性は？',
+      },
+      answer: {
+        'zh-hk': '標準 PVC 材質防水抗 UV，戶外用 6-12 個月；長期展示可升級加厚材質或加光油。',
+        en: 'Standard PVC is waterproof and UV-resistant for 6-12 months outdoors; heavier stock or clear coat for long-term display.',
+        ja: '標準PVCは防水・UV対応で屋外6-12か月。長期展示には厚手素材やクリアコートをご選択ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '包唔包安裝或者龍門架？',
+        en: 'Do you supply frames or installation?',
+        ja: 'フレームや取り付けは対応？',
+      },
+      answer: {
+        'zh-hk': '可另配鋁合金龍門架、四角打孔或繩邊；安裝由客戶自行或另行安排，落單時註明尺寸與固定方式。',
+        en: 'Aluminium frames, eyelets or rope edges available as add-ons; installation by customer or arranged separately — specify size and fixing method at order.',
+        ja: 'アルミフレーム・ハトメ・ロープ縁のオプションあり。取り付けはお客様側または別途手配、サイズと固定方法をご指定ください。',
+      },
+    },
+  ],
+  'drink-menus': [
+    {
+      question: {
+        'zh-hk': '飲品餐牌印刷幾多錢？',
+        en: 'How much does drink menu printing cost?',
+        ja: 'ドリンクメニュー印刷の価格は？',
+      },
+      answer: {
+        'zh-hk': '飲品餐牌 10 張起印，HK$12-48/張（視材質與加工）；標準 5-7 個工作天。',
+        en: 'Drink menus start at 10 pieces, HK$12-48 each depending on material and finishing; standard 5-7 business days.',
+        ja: 'ドリンクメニューは10枚から、HK$12-48/枚（素材・加工による）。標準5-7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '最低訂幾多張？',
+        en: 'What is the MOQ for drink menus?',
+        ja: 'ドリンクメニューの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 張起印；連鎖店多店分發可按店數分開包裝。',
+        en: '10 pieces minimum; for chains, packs can be split per store.',
+        ja: '10枚から。チェーン店の複数店舗分は店舗別に梱包可能。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '茶飲店用咩材質最耐用？',
+        en: 'Which material is most durable for bubble-tea shops?',
+        ja: 'タピオカ店に最適な耐久素材は？',
+      },
+      answer: {
+        'zh-hk': 'PVC 過膠或 PP 材質防水防油、可濕布擦拭，適合高翻枱率門店；紙質加啞膜成本較低但不耐長期擦拭。',
+        en: 'PVC-laminated or PP is waterproof, oil-resistant and wipeable — best for high-turnover shops; paper with matte lamination costs less but does not survive repeated wiping.',
+        ja: 'PVCラミネートまたはPPは防水・耐油で拭き取り可能、回転率の高い店舗に最適。紙＋マットラミネートは安価ですが繰り返しの拭き取りに弱いです。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '更換頻率同尺寸建議？',
+        en: 'How often should menus be replaced, and what size?',
+        ja: '更新頻度とサイズの目安は？',
+      },
+      answer: {
+        'zh-hk': '常用 A4／A5 或 210×285mm；旺季改版建議每次印 2-3 個月用量，避免臨時加急成本。',
+        en: 'A4/A5 or 210×285mm are standard; print 2-3 months of stock per revision to avoid rush costs.',
+        ja: 'A4／A5または210×285mmが標準。改版時は2-3か月分をまとめて印刷すると特急費用を避けられます。',
+      },
+    },
+  ],
 };
