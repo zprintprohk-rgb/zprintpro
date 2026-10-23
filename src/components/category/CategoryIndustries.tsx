@@ -139,9 +139,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'beauty',
       scenarios: {
-        'zh-hk': ['磁吸翻蓋化妝品盒 · 4 種盒型', '燙金 LOGO + 內托定制', '30 個起印 · FDA 級安全'],
-        en: ['Magnetic flip cosmetic box · 4 styles', 'Foil logo + custom insert tray', 'From 30 units · FDA-grade'],
-        ja: ['磁石式化粧品箱・4種の箱型', '箔押しロゴ + 内トレイカスタム', '30個から・FDA基準'],
+        'zh-hk': ['磁吸翻蓋化妝品盒 · 4 種盒型', '燙金 LOGO + 內托定制', '100 個起印 · FDA 標準紙可選'],
+        en: ['Magnetic flip cosmetic box · 4 styles', 'Foil logo + custom insert tray', 'From 100 units · FDA-standard paper optional'],
+        ja: ['磁石式化粧品箱・4種の箱型', '箔押しロゴ + 内トレイカスタム', '100個から・FDA基準紙は選択可'],
       },
       priority: 0, tier: 'A',
     },
@@ -157,9 +157,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'tea_beverage',
       scenarios: {
-        'zh-hk': ['茶飲品牌禮盒 · 天地蓋+抽屜式', 'FSC 環保紙 + 食品級內襯', '節日限定款 50 個起'],
-        en: ['Tea brand gift box · rigid + drawer style', 'FSC eco paper + food-grade liner', 'Seasonal edition from 50'],
-        ja: ['茶ブランドギフト箱・天地蓋+引出式', 'FSCエコ紙 + 食品グレード内装', '季節限定50個から'],
+        'zh-hk': ['茶飲品牌禮盒 · 天地蓋+抽屜式', 'FSC 環保紙 + 食品級內襯', '節日限定款 100 個起'],
+        en: ['Tea brand gift box · rigid + drawer style', 'FSC eco paper + food-grade liner', 'Seasonal edition from 100'],
+        ja: ['茶ブランドギフト箱・天地蓋+引出式', 'FSCエコ紙 + 食品グレード内装', '季節限定100個から'],
       },
       priority: 2, tier: 'A',
     },
@@ -419,9 +419,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'tutoring_textbook',
       scenarios: {
-        'zh-hk': ['補習社皇牌教材印刷', '道林紙 80g · 閱讀舒適', '無線膠裝 · 50 本起 · 7 天交貨'],
-        en: ['Tutoring textbook printing', 'Woodfree 80gsm · eye-comfort', 'Perfect bound · from 50 · 7-day'],
-        ja: ['塾教材印刷', '上質紙80g・読みやすい', '無線綴じ・50冊から・7日納品'],
+        'zh-hk': ['補習社皇牌教材印刷', '道林紙 80g · 閱讀舒適', '無線膠裝 · 100 本起 · 7 天交貨'],
+        en: ['Tutoring textbook printing', 'Woodfree 80gsm · eye-comfort', 'Perfect bound · from 100 · 7-day'],
+        ja: ['塾教材印刷', '上質紙80g・読みやすい', '無線綴じ・100冊から・7日納品'],
       },
       priority: 0, tier: 'A',
     },
@@ -549,9 +549,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'certificates',
       scenarios: {
-        'zh-hk': ['獎狀/證書印刷', '燙金校名 + 防偽水印', 'A4 尺寸 · 50 張起'],
-        en: ['Award certificate printing', 'Foil school name + anti-fraud watermark', 'A4 size · from 50'],
-        ja: ['賞状/証明書印刷', '校名箔押し + 偽造防止透かし', 'A4サイズ・50枚から'],
+        'zh-hk': ['獎狀/證書印刷', '燙金校名 + 防偽水印', 'A4 尺寸 · 100 張起'],
+        en: ['Award certificate printing', 'Foil school name + anti-fraud watermark', 'A4 size · from 100'],
+        ja: ['賞状/証明書印刷', '校名箔押し + 偽造防止透かし', 'A4サイズ・100枚から'],
       },
       priority: 4, tier: 'B',
     },

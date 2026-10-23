@@ -65,9 +65,9 @@ const categoryIndustryScenarios: Record<string, {
   packaging: [
     // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Free 3D Mockup + USA DTC brands
     { key: 'beauty', scenarios: {
-      'zh-hk': ['化妝品盒 4 種盒型 · 天地蓋/磁吸', '燙金 LOGO · 啞面 PP 覆膜', '100 個起 · FDA 級安全'],
+      'zh-hk': ['化妝品盒 4 種盒型 · 天地蓋/磁吸', '燙金 LOGO · 啞面 PP 覆膜', '100 個起 · FDA 標準紙可選'],
       en: ['4 cosmetic box styles · lift-off/magnetic', 'Foil logo · matte PP lamination', 'From 100 · USA DTC beauty brands'],
-      ja: ['化粧品箱4種・天地蓋/マグネット', '箔押しロゴ・マットPPラミ', '100個から・FDA対応'],
+      ja: ['化粧品箱4種・天地蓋/マグネット', '箔押しロゴ・マットPPラミ', '100個から・FDA基準紙は選択可'],
     }},
     { key: 'ecommerce', scenarios: {
       'zh-hk': ['跨境電商快遞盒 · 雙層瓦楞', 'SKU 條碼 + GS1 合規印刷', '500 個起 · 全球 DHL 配送'],
