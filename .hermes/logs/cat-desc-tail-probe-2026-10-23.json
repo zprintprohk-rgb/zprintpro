@@ -1,0 +1,121 @@
+﻿[
+    {
+        "loc":  "en",
+        "cat":  "packaging",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  162
+    },
+    {
+        "loc":  "en",
+        "cat":  "paper-bags",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  142
+    },
+    {
+        "loc":  "en",
+        "cat":  "place-cards",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  158
+    },
+    {
+        "loc":  "en",
+        "cat":  "posters",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  158
+    },
+    {
+        "loc":  "en",
+        "cat":  "red-packets",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  161
+    },
+    {
+        "loc":  "en",
+        "cat":  "stickers",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  162
+    },
+    {
+        "loc":  "en",
+        "cat":  "wedding-invitations",
+        "s":  "200/200/200",
+        "desc":  3,
+        "len":  157
+    },
+    {
+        "loc":  "ja",
+        "cat":  "banners",
+        "s":  "200/200/503",
+        "desc":  1,
+        "len":  152
+    },
+    {
+        "loc":  "ja",
+        "cat":  "books",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "calendars",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "educational",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "envelopes",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "flyers",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "greeting-cards",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "japan-doujin",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "menus",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    },
+    {
+        "loc":  "ja",
+        "cat":  "packaging",
+        "s":  "503/503/503",
+        "desc":  0,
+        "len":  -1
+    }
+]

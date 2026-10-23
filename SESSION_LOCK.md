@@ -1,5 +1,15 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-10-23 13:5x deepseek hermes 会话（K3 再指令：优先级执行 → B 层）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | deepseek hermes 会话（本会话） |
+| **意图** | B 层执行：B5 C109 索引推送 · B1 非包装 7 SKU money-FAQ（29/83→36/83，锚 product-faqs.ts）· B6 GEO 引用基线 · B7 恢复 ledger 更新。双条件已核：src clean / lane.lock 无 / 对端静默 >15min |
+| **写入范围** | `src/data/product-faqs.ts`（B1）· `.hermes/`（日志/探针/证据）· SESSION_LOCK.md；**不碰** category-seo-content.ts en/ja 内容层（K3 A/B/C 未拍板）/ title 冻结域 / products.ts 价格 / sku-seo-data.ts（CSV 域） |
+| **预计时长** | < 90 min |
+| **释放条件** | 本批 commit+push 落盘 + 交接报告登记 |
+
 ## ✅ 已释放 — 2026-10-23 13:0x deepseek hermes 会话（A 层批次 1 执行完毕：A1+A2 上线验证 4/4 PASS；commit 3572081e + 3c1094e9 已推送 origin/main @ 3c1094e9；交接报告 .hermes/logs/2026-10-23-a1-a2-execution-report.md）
 
 | 项 | 值 |
