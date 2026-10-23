@@ -13,7 +13,7 @@
 > ⑤ 名片解禁仅限接单层: 不动贺卡资产 / 不动 middleware 301 / 不建名片页 (§0.0 解禁块 (a)/(b)/(c) 未裁决)。
 >
 
-> **本车道 (weekly-meta 周五 23:07) 恢复期任务定义**:
+> **本车道 (weekly-meta 周五 20:52) 恢复期任务定义**:
 > 1. 周报告**改组为 SEO 健康周报**, 固定四节: ① 恢复系数周曲线 (gsc-cliff-detector 逐日 JSON 汇总) ② 门童 #25/#27/#28/#29 本周审计 JSON 摘要 (存量 issue 增减, 只准减不准增) ③ 本周新上线内容的相似度抽检 (8-gram Jaccard, >50% 列出) ④ 下周 B1c 队列建议 (与 daily-content 进度对账 `.hermes/logs/b1c-queue-progress.json`)。
 > 2. meta 刷新动作本身恢复期**限缩**: 只刷「已恢复展示但 CTR 低于 c 值判据」的页; 对仍被 spam 压制的页不改 meta (改了也测不出效果, 还会污染验证窗)。
 > 3. 发现任何 keywords meta 回流 / 标题带外溢 / 品牌语种错配的新发例 → 当周报告标红置顶, 不进「下周再说」。
@@ -37,7 +37,7 @@
 > # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
 > 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
 >
-> **本车道（weekly-meta 周五 23:07）指令**：
+> **本车道（weekly-meta 周五 20:52）指令**：
 > 1. **每周固定追加动作：zero-click 池 meta description 价格钩子批**——对象 = gsc-feedback 输出的 CTR 修复候选池（≥50im & c0）。**只动 meta description / quickAnswers，禁碰 title**（title 冻结纪律至 10/19）。
 > 2. **10/10 首批清单**：貼紙印刷（156im c0）/ 月曆印刷（118im c0）/ 宣傳單張印刷（105im c0）/ small batch sticker printing（99im c0）/ 書刊印刷（94im c0）——价格/MOQ 全走 products.ts 真值，禁编造。
 > 3. **10/16 起并入 title 批预备**：W2.1 wholesale saddle stitch（57 当量）/ W2.3 same day flyers（55）/ E2 transparent-stickers 价格钩子 / 存量 TRIM 收编（catalog-china 77→56、rush en 66→55、rush ja 59）——候选已备于 `DELIVERY/2026-10-12-money-kw-package.md`，**10/19 解冻前一律 DRAFT 不落 src**。

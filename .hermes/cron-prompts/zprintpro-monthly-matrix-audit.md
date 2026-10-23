@@ -13,7 +13,7 @@
 > ⑤ 名片解禁仅限接单层: 不动贺卡资产 / 不动 middleware 301 / 不建名片页 (§0.0 解禁块 (a)/(b)/(c) 未裁决)。
 >
 
-> **本车道 (monthly-matrix 每月 1 号 06:13) 恢复期任务定义**:
+> **本车道 (monthly-matrix 每月 1 号 12:13) 恢复期任务定义**:
 > 1. 月度审计**首节固定为 spam 恢复月度复扫**: ① 门童 #29 全扫 (keywords 回流 0 容忍) ② 全站 SKU 正文 8-gram Jaccard 矩阵复扫 (对照 B1 审计基线 150/108/115 对, 只准减) ③ meta keywords 渲染复探 (`node scripts/b1a-live-probe-20261012.mjs`, 必须 8/8 PASS) ④ B1d 薄页清单更新 (字数 <阈值 且无 FAQ 无 schema 的页, 出 noindex 候选清单给 K3 拍板)。
 > 2. 月度报告必须含「恢复总账」: 恢复系数月度曲线 / B1c 队列完成度 / 索引覆盖 / 距下次 Google 更新窗口的倒计时准备度清单。
 > 3. 其他 matrix 审计维度照旧, 但任何「扩张/新增」类建议恢复期一律标注「恢复后执行」并入挂账区, 不当月动手。
@@ -37,7 +37,7 @@
 > # 🧠 【第 -2 优先级 · 2026-10-09 大脑指令区】周执行清单 + 车道重定制（K3 大脑 2026-10-09 拍板 · SSoT: `docs/2026-10-09-k3-brain-week-plan-and-lane-recustomization.md`）
 > 数据基座：GSC 2026-10-09 档 vs 10-05 vs 09-29（`docs/2026-10-09-gsc-deep-audit-and-strategy.md`）。本区与 v9.3 指令区（第 -3 优先级）叠加生效，冲突时报大脑裁决。
 >
-> **本车道（monthly-matrix 每月 1 号 06:13）指令（11/1 跑批定义）**：
+> **本车道（monthly-matrix 每月 1 号 12:13）指令（11/1 跑批定义）**：
 > 1. **并入千问 v2.0 P0-P3 检查表**：hreflang 双向对称 / Organization sameAs 补全 / SKU 标题合规（50-57 当量带普查）/ GEO 事实面板覆盖（en FSC-ISO-产能 · ja 納期-最小ロット-実績 · zh 本地地址-物流承诺）/ AI Overview 引用率基线记录（首测存档）。
 > 2. **关键词矩阵审计**：money-kw-mine 复跑（`.hermes/money-kw-mine.py`）+ 与 20261005 JSON 反连接出新晋词 + **35 词触顶页置换算法执行**（waterproof/transparent/small-batch/die-cut-stickers[ja]、a2/a1/outdoor-posters[ja]、cartoon/eco/large-red-packets[en]——清退 pos 最差/imp 最低 1-2 词，补新晋带钱词；清单见 `DELIVERY/2026-10-12-money-kw-package.md` §3）。
 > 3. **品牌监测加季节段**：年賀状 / ホリデーカード / corporate holiday cards / 聖誕卡 渗透进度专段（0→展示→位次三档记录）。
