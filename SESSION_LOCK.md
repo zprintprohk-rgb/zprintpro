@@ -1,5 +1,12 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-10-23 14:2x deepseek hermes 会话（B 层批次 1 完成并全链路验证：commit 6fbbaaaa 已推送 origin/main；5/5 新 money-FAQ 部署后渲染 PASS；交接报告 .hermes/logs/2026-10-23-b-layer-execution-report.md）
+
+| 项 | 值 |
+|---|---|
+| **释放原因** | B1+B5+B6+B7 全部 commit+push 落盘，后台部署后验证 5/5 PASS，无未决写入 |
+| **遗留事项** | ① b1c-queue-progress.json（order 23）留本地未提交——CRED 门童扫 staged JSON 会被历史 ISO 9001 文本拦（车道 wrapper 自有通道可提交，人手勿手 commit ledger）② ja 余 10 页类目 desc 低峰慢速复测 |
+
 ## 🔒 持有中 — 2026-10-23 13:5x deepseek hermes 会话（K3 再指令：优先级执行 → B 层）
 
 | 项 | 值 |
