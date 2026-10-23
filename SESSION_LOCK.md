@@ -1,5 +1,15 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## 🔒 持有中 — 2026-10-23 12:3x deepseek hermes 会话（K3 指令：优先级执行 A 层）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | deepseek hermes 会话（本会话） |
+| **意图** | A 层执行：A2 = ja.json 業界最安水準 ×2 清除 + ISO 9001 ×20 清除（既有 CRED 裁决执行，车道核检假阴性纠正）；随后 A1 calendars 三层残留。双条件已核：src clean / 对端静默 >8.5h / lane.lock 无 |
+| **写入范围** | `src/data/blog-data/ja.json`（A2 已完成：業界最安水準 2→0 / ISO 9001 20→0，pinpoint + 备份 `.hermes/_bak-blogdata-ja-before-a2-20261023.json`）；A1 追加：`src/app/[locale]/category/[slug]/page.tsx` calendars H1 ×3（过期季节+ja繁中）· `src/lib/seo.ts` L513 zh title（批量300本起→300本起上機）· `src/data/category-conversion-blocks.ts` calendars:en ×3（US$3.60 假价内战 + from 50 pcs）；`.hermes/logs/` · SESSION_LOCK.md；**不碰** 其他 title 冻结域 / 贺卡资产 / products.ts / sku-seo-data.ts |
+| **预计时长** | < 60 min |
+| **释放条件** | 本批 commit 落盘 + 交接报告登记 |
+
 ## ✅ 已释放 — 2026-10-23 02:0x deepseek hermes 会话（K3 指令「执行」= 执行 10-17 报告 NEXT 残差 docket）
 
 | 项 | 值 |

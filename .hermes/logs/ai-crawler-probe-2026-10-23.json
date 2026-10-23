@@ -1,0 +1,21 @@
+﻿{
+    "tested_at":  "2026-10-23T12:3x+08:00",
+    "method":  "Invoke-WebRequest single-shot per UA, 800ms interval, path /en/product/wall-calendars/ (batch1) + /en/category/calendars/ + /zh-hk/category/packaging/ (batch1)",
+    "verdict":  "All answer-engine crawlers REACHABLE (200): OAI-SearchBot, Claude-SearchBot, Claude-User, PerplexityBot, Google-Extended, Applebot, Bingbot, Googlebot. Blocked (403): GPTBot, ClaudeBot, Claude-Web, curl-default = training/non-browser UA class. GEO citation surface INTACT; only training-inclusion policy question remains (robots.txt allows GPTBot/ClaudeBot, CF WAF blocks - inconsistent, K3 to decide alignment direction)",
+    "reachable_200":  [
+                          "OAI-SearchBot",
+                          "Claude-SearchBot",
+                          "Claude-User",
+                          "PerplexityBot",
+                          "Google-Extended",
+                          "Applebot",
+                          "Bingbot",
+                          "Googlebot"
+                      ],
+    "blocked_403":  [
+                        "GPTBot",
+                        "ClaudeBot",
+                        "Claude-Web",
+                        "curl-default"
+                    ]
+}

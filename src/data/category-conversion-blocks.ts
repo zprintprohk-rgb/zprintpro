@@ -2221,12 +2221,12 @@ categoryConversionBlocks['flyers:en'] = {
 categoryConversionBlocks['calendars:en'] = {
   "category": "calendars",
   "locale": "en",
-  "title": "Custom Calendar Printing | 2027 Wall & Desk Calendars from 50 pcs｜ZprintPro",
-  "metaDescription": "Custom calendar printing from 50 pcs: desk, wall, card & planner formats, foil stamping, 3-5 day digital turnaround, DHL worldwide. 2027 pre-orders open.",
+  "title": "Custom Calendar Printing | 2027 Wall & Desk Calendars 1 MOQ｜ZprintPro",
+  "metaDescription": "Custom calendar printing from 1 copy (digital): desk, wall, card & planner formats, foil stamping, 3-5 day turnaround, DHL worldwide. 2027 pre-orders open.",
   "quickAnswers": [
     {
       "q": "How much does custom calendar printing cost?",
-      "a": "Desk, wall, and card calendars start at US$3.60 per piece for 100-copy orders, and 500+ offset runs bring the unit price down further. Final pricing is quote-based - it varies with size, paper, and finishing such as foil stamping - and a free quote is one WhatsApp message away."
+      "a": "Desk, wall, and card calendars start from $0.40 per piece for single digital copies (HK$3-8 band for standard sizes), and 300+ offset runs bring the unit price down further. Final pricing is quote-based - it varies with size, paper, and finishing such as foil stamping - and a free quote is one WhatsApp message away."
     },
     {
       "q": "How long does calendar printing take, and when should I order 2027 calendars?",

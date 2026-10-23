@@ -510,7 +510,7 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '月曆印刷 2027 | 1本起印・批量300本起・Q4旺季・60天預訂・燙金精裝 | 智印港',
+      'zh-hk': '月曆印刷 2027 | 1本起印・300本起上機・Q4旺季・60天預訂・免費設計・燙金精裝 | 智印港',
       en: 'Calendar Printing 2027 from $0.40 | 1 MOQ | ZprintPro',
       ja: 'カレンダー印刷 2027 1部〜・300部からオフセット · Q4繁忙期 + 60日予約 + 箔押し上製本 | ZprintPro',
     },
