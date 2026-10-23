@@ -2551,4 +2551,305 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
       },
     },
   ],
+
+  'magnetic-calendars': [
+    {
+      question: {
+        'zh-hk': '磁石年曆幾多錢？',
+        en: 'How much do magnetic calendars cost?',
+        ja: 'マグネットカレンダーの価格は？',
+      },
+      answer: {
+        'zh-hk': '磁石年曆 1 本起印，HK$3-8/本（視尺寸與磁石厚度）；標準 5-7 個工作天。',
+        en: 'Magnetic calendars start at HK$3-8 each from 1 piece, depending on size and magnet thickness; standard 5-7 business days.',
+        ja: 'マグネットカレンダーは1枚から、HK$3-8/枚（サイズ・磁石厚みによる）。標準5-7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '磁石年曆用咩材質？貼得穩嗎？',
+        en: 'What material is used — will it stay on?',
+        ja: '素材は？しっかり貼れますか？',
+      },
+      answer: {
+        'zh-hk': '軟磁片材質，可穩貼雪櫃、辦公室白板與金屬門面；表面過膠防刮，全年高頻曝光。',
+        en: 'Flexible magnetic sheet holds firmly on fridges, office whiteboards and metal surfaces; laminated face resists scratches for year-round exposure.',
+        ja: '柔軟マグネット素材で冷蔵庫・ホワイトボード・金属面にしっかり貼付。表面ラミネートで傷に強く、年間を通して露出できます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '磁石年曆最低訂幾多？',
+        en: 'What is the MOQ for magnetic calendars?',
+        ja: 'マグネットカレンダーの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '1 本起印；派發量大的企業禮品可按量階梯報價。',
+        en: 'From 1 piece; volume tiers available for large corporate giveaways.',
+        ja: '1枚から。大量の企業ノベルティは数量段階でお見積もりします。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '尺寸同版面可以自訂嗎？',
+        en: 'Can size and layout be customised?',
+        ja: 'サイズやレイアウトはカスタマイズ可能？',
+      },
+      answer: {
+        'zh-hk': '可以。尺寸、月曆版式（年曆/月曆格）與企業 LOGO 均可自訂，落單時提供 AI/PDF 稿。',
+        en: 'Yes — size, calendar grid (year or monthly) and company logo are fully customisable; submit AI/PDF artwork at order.',
+        ja: '可能です。サイズ、暦グリッド（年間・月間）、社名ロゴとも自由に設計可。AI/PDFデータをご入稿ください。',
+      },
+    },
+  ],
+  'photo-frame-calendars': [
+    {
+      question: {
+        'zh-hk': '相框年曆幾多錢？',
+        en: 'How much do photo-frame calendars cost?',
+        ja: 'フォトフレームカレンダーの価格は？',
+      },
+      answer: {
+        'zh-hk': '相框年曆 1 本起印，HK$3-8/本；標準 7-10 個工作天。',
+        en: 'Photo-frame calendars start at HK$3-8 each from 1 piece; standard 7-10 business days.',
+        ja: 'フォトフレームカレンダーは1個から、HK$3-8/個。標準7-10営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '相框年曆特別在邊度？',
+        en: 'What makes photo-frame calendars special?',
+        ja: 'フォトフレームカレンダーの特長は？',
+      },
+      answer: {
+        'zh-hk': '硬紙板相架結構，年曆與相框二合一——照片區可換自家產品圖或客戶照，桌面長期展示。',
+        en: 'Greyboard easel frame combines calendar and photo frame in one — swap in your product or client photos for lasting desk presence.',
+        ja: 'グレーボードイーゼル構造でカレンダーとフォトフレームを兼用。商品写真やお客様写真に差し替え可能、机の上に長期展示。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '照片可以自己換嗎？',
+        en: 'Can the photo be replaced by the user?',
+        ja: '写真は差し替えできますか？',
+      },
+      answer: {
+        'zh-hk': '可以。相框開口位按標準相片比例預留，客戶可自行替換照片或卡片。',
+        en: 'Yes — the frame opening follows standard photo ratios, so users can swap photos or cards themselves.',
+        ja: 'はい。フレーム開口は標準写真比率で、お客様ご自身で写真やカードを差し替えられます。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '適合咩場合送？',
+        en: 'What occasions suit photo-frame calendars?',
+        ja: 'どんな贈り物に向いていますか？',
+      },
+      answer: {
+        'zh-hk': '企業年末答謝、婚攝與攝影工作室客戶禮、母親節/聖誕個人禮品；建議 Q4 提前 3-4 週落單。',
+        en: 'Corporate year-end thank-yous, wedding/photography studio client gifts, Mother’s Day and Christmas keepsakes; order 3-4 weeks ahead in Q4.',
+        ja: '企業の年末挨拶、婚約・撮影スタジオの顧客ギフト、母の日・クリスマス記念品に最適。Q4は3-4週間前のご注文を。',
+      },
+    },
+  ],
+  'laminated-menus': [
+    {
+      question: {
+        'zh-hk': '過膠餐牌幾多錢？',
+        en: 'How much do laminated menus cost?',
+        ja: 'ラミネートメニューの価格は？',
+      },
+      answer: {
+        'zh-hk': '過膠餐牌 10 張起印，HK$5-22/張（視尺寸與膠膜厚度）；標準 5-7 個工作天。',
+        en: 'Laminated menus start at 10 pieces, HK$5-22 each depending on size and lamination thickness; standard 5-7 business days.',
+        ja: 'ラミネートメニューは10枚から、HK$5-22/枚（サイズ・ラミネート厚みによる）。標準5-7営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '過膠同 PVC 餐牌點揀？',
+        en: 'Laminated or PVC menus — which to choose?',
+        ja: 'ラミネートとPVCメニューの違いは？',
+      },
+      answer: {
+        'zh-hk': '過膠紙質成本較低、適合每季改版；PVC 全防水可濕擦，適合高翻枱率或戶外座位。預算與更換頻率決定選型。',
+        en: 'Laminated paper costs less and suits seasonal menu changes; PVC is fully waterproof and wipeable for high-turnover or outdoor seating. Budget and replacement frequency decide.',
+        ja: 'ラミネート紙は安価で季節改版向け。PVCは完全防水・拭き取り可能で、回転率の高い店や屋外席向け。予算と更新頻度で選択を。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '最低訂幾多張？',
+        en: 'What is the MOQ for laminated menus?',
+        ja: 'ラミネートメニューの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 張起印；多店分發可按店數分開包裝。',
+        en: '10 pieces minimum; multi-store chains can have packs split per location.',
+        ja: '10枚から。チェーン店の複数店舗分は店舗別梱包も可能。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '防水防油效果點？',
+        en: 'How water and oil resistant is it?',
+        ja: '防水・耐油性能は？',
+      },
+      answer: {
+        'zh-hk': '過膠層防水防油，濕布可直接擦拭；邊位全封邊工藝更耐洗碗水氣，落單時註明。',
+        en: 'The lamination layer is water and oil resistant, wipeable with a damp cloth; sealed-edge finishing adds dishwasher-steam durability — specify at order.',
+        ja: 'ラミネート層は防水・耐油で湿布で拭き取れます。全縁シール加工で蒸気にも強くなります。ご注文時にご指定ください。',
+      },
+    },
+  ],
+  'spiral-notebooks': [
+    {
+      question: {
+        'zh-hk': '線圈筆記本幾多錢？',
+        en: 'How much do spiral notebooks cost?',
+        ja: 'スパイラルノートの価格は？',
+      },
+      answer: {
+        'zh-hk': '線圈筆記本 10 本起印，HK$8-40/本（視頁數、尺寸與封面）；標準 5-10 個工作天。',
+        en: 'Spiral notebooks start at 10 pieces, HK$8-40 each depending on pages, size and cover; standard 5-10 business days.',
+        ja: 'スパイラルノートは10冊から、HK$8-40/冊（ページ数・サイズ・表紙による）。標準5-10営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '線圈筆記本有咩特點？',
+        en: 'What are the features of spiral binding?',
+        ja: 'スパイラル製本の特長は？',
+      },
+      answer: {
+        'zh-hk': '金屬或塑膠 YO 環圈裝訂，可 360 度攤平、頁面可整頁撕除或更換；企業內訓與課堂筆記常用。',
+        en: 'Metal or plastic YO-ring binding lays flat 360° and allows full-page tear-out or replacement — common for corporate training and classroom notes.',
+        ja: '金属またはプラスチックのYOリングで360度開き、ページの全抜き・差し替えが可能。社内研修や授業ノートに人気。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '最低訂幾多本？',
+        en: 'What is the MOQ for spiral notebooks?',
+        ja: 'スパイラルノートの最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '10 本起印；封面可印企業 LOGO，適合採用活動與展會禮品。',
+        en: '10 pieces minimum; covers can carry your company logo — popular for onboarding kits and trade-show gifts.',
+        ja: '10冊から。表紙に社名ロゴ印刷可能。採用キットや展示会ノベルティに人気です。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '封面同紙材有咩選擇？',
+        en: 'What cover and paper options exist?',
+        ja: '表紙・用紙の選択肢は？',
+      },
+      answer: {
+        'zh-hk': '封面 250g 銅版紙過膠或灰板裱紙；內頁 80-120g 道林紙/銅版紙，頁數 40-120 頁可選。',
+        en: 'Covers: 250gsm art board laminated or greyboard wrapped; inner pages 80-120gsm woodfree or art paper, 40-120 pages.',
+        ja: '表紙は250gコート紙ラミネートまたはグレーボード貼り。本文は80-120gの上質紙・コート紙、40-120ページから選択。',
+      },
+    },
+  ],
+  'colored-envelopes': [
+    {
+      question: {
+        'zh-hk': '彩色信封幾多錢？',
+        en: 'How much do colored envelopes cost?',
+        ja: 'カラーナーブ封筒の価格は？',
+      },
+      answer: {
+        'zh-hk': '彩色信封 100 個起印，HK$0.38-2.60/個（視尺寸、紙材與印刷）；標準 3-5 個工作天。',
+        en: 'Colored envelopes start at 100 pieces, HK$0.38-2.60 each depending on size, stock and printing; standard 3-5 business days.',
+        ja: 'カラーナーブ封筒は100枚から、HK$0.38-2.60/枚（サイズ・用紙・印刷による）。標準3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '彩色信封最低訂幾多個？',
+        en: 'What is the MOQ for colored envelopes?',
+        ja: 'カラーナーブ封筒の最小ロットは？',
+      },
+      answer: {
+        'zh-hk': '100 個起印；特殊顏色或材質批量要求較高，落單前先確認。',
+        en: '100 pieces minimum; special colors or stocks require larger runs — confirm before ordering.',
+        ja: '100枚から。特殊色・特殊用紙はより大きいロットが必要な場合があります。ご注文前にご確認ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '有咩顏色同紙材？',
+        en: 'What colors and stocks are available?',
+        ja: '色・用紙の選択肢は？',
+      },
+      answer: {
+        'zh-hk': '多款彩色紙材（粉彩/深色系）與牛皮紙可選；可單色 LOGO 或全彩印刷，配搭請柬與卡片套裝。',
+        en: 'Multiple colored stocks (pastel and deep tones) plus kraft; single-color logo or full-color print, pairs with invitation and card sets.',
+        ja: 'パステル・濃色系などのカラーやクラフト紙を複数ご用意。単色ロゴからフルカラー印刷まで、招待状やカードとのセットにも。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '交期幾耐？',
+        en: 'What is the lead time?',
+        ja: '納期はどのくらい？',
+      },
+      answer: {
+        'zh-hk': '標準 3-5 個工作天；節日檔期（聖誕/新年卡套）建議提前 2-3 週落單。',
+        en: 'Standard 3-5 business days; for holiday seasons (Christmas/New Year card sets) order 2-3 weeks ahead.',
+        ja: '標準3-5営業日。ホリデーシーズン（クリスマス・年賀セット）は2-3週間前のご注文を推奨。',
+      },
+    },
+  ],
+  'vehicle-wraps': [
+    {
+      question: {
+        'zh-hk': '車身貼印刷幾多錢？',
+        en: 'How much does vehicle wrap printing cost?',
+        ja: '車両ラッピングの価格は？',
+      },
+      answer: {
+        'zh-hk': '車身貼 1 平方米起，HK$28-120/平方米（視材質與覆膜）；標準 3-5 個工作天。',
+        en: 'Vehicle wraps start from 1 sqm at HK$28-120 per sqm depending on material and lamination; standard 3-5 business days.',
+        ja: '車両ラッピングは1平米から、HK$28-120/平米（素材・ラミネートによる）。標準3-5営業日。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '車貼材質防水耐曬嗎？',
+        en: 'Is the wrap material waterproof and UV-safe?',
+        ja: '素材は防水・耐UVですか？',
+      },
+      answer: {
+        'zh-hk': '車貼專用膜防水抗 UV，戶外日曬雨淋不褪色翹邊；長期車隊可選鑄造級膜。',
+        en: 'Dedicated wrap film is waterproof and UV-stable — no fading or lifting under daily weather; cast-grade film for long-term fleets.',
+        ja: '専用ラッピングフィルムは防水・UV対応で、日常の天候でも色褪せや浮きが起きにくい。長期フリートにはキャストフィルムをご選択ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '最低訂幾多？按乜計價？',
+        en: 'What is the MOQ and pricing basis?',
+        ja: '最小ロットと価格計算は？',
+      },
+      answer: {
+        'zh-hk': '1 平方米起，按實際貼膜面積計價；車身丈量圖確認後落單。',
+        en: 'From 1 sqm, priced by actual wrapped area; order after confirming the vehicle measurement template.',
+        ja: '1平米から、実際の貼付面積で計算。車両採寸テンプレート確認後にご発注ください。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': '包唔包安裝？',
+        en: 'Is installation included?',
+        ja: '施工は含まれますか？',
+      },
+      answer: {
+        'zh-hk': '印刷與出貨含；貼膜施工由客戶自行或指定車坊處理，可提供施工指引文件。',
+        en: 'Printing and shipping are included; wrapping is done by the customer or an appointed workshop — installation guidance documents available.',
+        ja: '印刷・出荷までを含みます。貼付施工はお客様側または指定業者で実施。施工ガイド資料をご提供できます。',
+      },
+    },
+  ],
 };
