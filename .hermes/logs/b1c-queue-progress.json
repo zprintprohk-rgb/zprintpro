@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-24T03:42:00+08:00",
-  "updated_by": "deepseek hermes manual session (B-layer batch 2)",
+  "updated_at": "2026-10-24T21:22:56+08:00",
+  "updated_by": "ZP-daily-content lane (DSH Harness first run 18:17)",
   "clusters": [
     {
       "order": 1,
@@ -743,6 +743,32 @@
         "push": "4d7650b7 与 f86668fd 同批 (03:46 窗口)"
       },
       "note": "同类缺陷 (同页多处 MOQ 不一致) 只靠人工普查发现; 建议做成常驻检查: 每类目块内 MOQ 数字集合 vs products.ts minQuantity"
+    },
+    {
+      "order": 26,
+      "cluster": "paper-bags 6-SKU on-page 收口 (truth/currency/pollution/scenario)",
+      "slugs": [
+        "kraft-paper-bags",
+        "white-card-bags",
+        "gift-bags",
+        "eco-paper-bags",
+        "handle-bags",
+        "large-bags"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane (DSH Harness)",
+      "claimed_at": "2026-10-24T18:17:00+08:00",
+      "completed_at": "2026-10-24T21:22:56+08:00",
+      "verdict": {
+        "fix_count": "17 处替换 / 6 SKU × 3 locale (zh 6 + ja 6 + en 5)",
+        "zh": "无名认证声明『国際認証体系工廠』清除(5 处, 繁中/日混写污染); 5 SKU 场景句差异化重写 (原『推廣單張/指示牌』单页/海报错场景 → 各 SKU 真实场景, 近重复指纹下降); white-card \\n 双转义修复 1 处",
+        "ja": "『国際認証体系の工場』清除(6 处); kraft/white-card QA 币种 HK$ → ¥ (¥240〜/¥360〜, products.ts basePrice_ja 真值)",
+        "en": "『internationally certified production with full FDA compliance』无源声明清除(5 处); kraft/white-card QA 币种 HK$ → US$ (US$1.84/US$2.76, products.ts basePrice_en 真值)",
+        "truth_source": "products.ts 6 SKU basePrice_en/basePrice_ja/price_range 真值对照; FSC 白名单保留",
+        "guards": "encoding PASS / tsc 54=54 零新增 / brand A类 0 / gsc-leak 0 / i18n 0 / content-guard 0 / bc 盘点 0 阻断",
+        "push": "与 lane 报告同批 1 push (2026-10-24 夜窗)"
+      },
+      "note": "全站同类残留 (文件级计数): 国際認証体系工廠 27→(纸袋段清零, 其他簇仍有) / ja 国際認証体系の工場 26→ / en FDA 20→ / 推廣單張错场景 21→ — 登记为 order 27 全站同类清理"
     }
   ]
 }
