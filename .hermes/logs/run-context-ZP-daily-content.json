@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-22 21:17:02",
+  "generated_at": "2026-10-24 21:17:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "6f474eddab9a22d2",
-    "day": "2026-10-22",
+    "this_run_key": "db194f29ca1f621e",
+    "day": "2026-10-24",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-20 21:21:13"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-22 21:18:07"
       },
       {
         "name": "lane_status_available",
@@ -46,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 19464,
-    "acquired_at": "2026-10-22 21:17:02",
-    "acquired_ts": 1792675023.006706,
+    "pid": 40260,
+    "acquired_at": "2026-10-24 21:17:02",
+    "acquired_ts": 1792847822.2566004,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261020T212113",
+      "run_id": "ZP-daily-content-20261022T211807",
       "lane": "ZP-daily-content",
       "trigger": "schtasks",
-      "fired_at": "2026-10-20 21:21:13",
-      "ended_at": "2026-10-20 21:21:13",
-      "idempotency_key": "3a0a2957a6b0f82d",
+      "fired_at": "2026-10-22 21:18:07",
+      "ended_at": "2026-10-22 21:18:07",
+      "idempotency_key": "6f474eddab9a22d2",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -67,34 +67,19 @@
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-10-20-ZP-daily-content.md",
-      "report_auto_generated": false,
-      "files": [
-        "src/data/blog-data/ja.json"
-      ],
+      "report": "NONE",
+      "report_auto_generated": true,
+      "files": [],
       "pushed": false,
-      "head": "58d976d4",
+      "head": "e79db4ef",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-20-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-23-ZP-daily-content.md",
     "delivered_files_from_report": [
-      "scripts/enrich-body-p4.ts（三语模板 4 句：en 假美国号 +1 982 808 5133 → 唯一白名单 +86 198 8085 1334；zh/ja 模板 ISO 9001 ×2 + 15+ 年 ×2 移除）；src/data/blog-data/ja.json（L96 チラシ guide「最安値を見積もりたい」→「価格を見積もりたい」，1 处）；.hermes/logs/b1c-queue-progress.json（order 20 登记）；另复核 10-19 内容层未回滚（sku-seo-data.ts「は低価格帯でご提供」=16 处 · products-content.ts「低コストでご検討」=3 段 · buying-guides.ts ja 最安値=0）"
+      ".hermes/logs/b1c-queue-progress.json（order 22 登记 + 时间戳）; src/data 零写入（§0.35.7 并发避让，如实披露）; 新发现 P0 = ja.json L590 packaging-box-price-2026 深行 業界最安水準 ×1（双方法锁定，order 21 会话与 10-19 报告均未覆盖）; 10-19/10-20 阻塞项验证闭环证据（grep 计数见 §2）"
     ]
   },
-  "sibling_lanes": [
-    {
-      "lane": "ZP-gsc-feedback",
-      "status": "PENDING",
-      "report": null,
-      "start": "22:43"
-    },
-    {
-      "lane": "ZP-k3-review",
-      "status": "PENDING",
-      "report": null,
-      "start": "07:10"
-    }
-  ],
+  "sibling_lanes": [],
   "retry_queue": [
     {
       "kind": "UNRESOLVED_DAY",
