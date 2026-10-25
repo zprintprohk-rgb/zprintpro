@@ -882,22 +882,28 @@ export interface DisplayAnchor {
   sub: string;       // 小字: "10,000個起批 · 整批 HK$2,198" 或 "實價按規格報價"
 }
 
-/** B 类/特殊规则区间锚 (HKD 基准, en/ja 自动换算) */
+/**
+ * B 类/特殊规则区间锚 (HKD 基准, en/ja 自动换算)
+ * 2026-10-26 全量核对修正 (P0): 原表 12 个活动锚中 9 个与 products.ts price_range
+ * 差 2-9 倍 (hardcover 5-10 vs 40-240 等) — 7/26 拍板锚未随产品校准更新。
+ * 按 K3 2026-09-23 title-v5 指令「价格·MOQ 真值对照 products.ts」口径,
+ * 全部对齐 products.ts price_range 带; doujinshi OVERRIDE 删除 (price_range 为
+ * ¥7,500〜 无 HKD 带, 回退 convertToFromPrice 原样显示最诚实, 不写换算假值)。
+ */
 const DISPLAY_ANCHOR_OVERRIDES: Record<string, { low: number; high: number; unit: '個' | '張' | '本' | '部' | '枚' }> = {
-  'white-card-boxes':    { low: 0.50, high: 3.00,  unit: '個' }, // 专版白卡彩盒(非拼版)
-  'rigid-boxes':         { low: 2.00, high: 10.00, unit: '個' }, // 精装盒
-  'hardcover-books':     { low: 5.00, high: 10.00, unit: '本' }, // 精装书
-  'graduation-yearbook': { low: 5.00, high: 10.00, unit: '本' }, // 毕业纪念册(精装)
-  'textbooks':           { low: 1.00, high: 5.00,  unit: '本' }, // 教科书/校园
-  'desk-calendars':      { low: 3.00, high: 8.00,  unit: '本' }, // 台历(1000本起批口径)
-  'white-card-bags':     { low: 0.70, high: 3.50,  unit: '個' }, // 白卡手提袋(减半)
-  'gift-bags':           { low: 5.00, high: 10.00, unit: '個' }, // 礼品袋(减半)
-  'eco-paper-bags':      { low: 1.50, high: 4.00,  unit: '個' },
-  'handle-bags':         { low: 1.50, high: 4.00,  unit: '個' },
-  'large-bags':          { low: 3.00, high: 7.50,  unit: '個' }, // 减半
-  'doujinshi-printing':  { low: 5.00, high: 10.00, unit: '部' }, // 同人本
-  'acrylic-keychain':    { low: 3.00, high: 10.00, unit: '個' },
-  'can-badge':           { low: 1.00, high: 5.00,  unit: '個' },
+  'white-card-boxes':    { low: 0.50, high: 3.00,  unit: '個' }, // 专版白卡彩盒(非拼版) ✓ price_range 0.5-3
+  'rigid-boxes':         { low: 8.00, high: 42.00, unit: '個' }, // 精装盒 (price_range HK$8-42/個)
+  'hardcover-books':     { low: 40.00, high: 240.00, unit: '本' }, // 精装书 (price_range HK$40-240/本)
+  'graduation-yearbook': { low: 45.00, high: 180.00, unit: '本' }, // 毕业纪念册(精装) (price_range HK$45-180/本)
+  'textbooks':           { low: 5.00, high: 50.00,  unit: '本' }, // 教科书/校园 (price_range HK$5-50/本)
+  'desk-calendars':      { low: 3.00, high: 8.00,  unit: '本' }, // 台历(1000本起批口径) ✓ price_range 3-8
+  'white-card-bags':     { low: 5.00, high: 12.00,  unit: '個' }, // 白卡手提袋 (price_range HK$5-12/個)
+  'gift-bags':           { low: 10.00, high: 20.00, unit: '個' }, // 礼品袋 (price_range HK$10-20/個)
+  'eco-paper-bags':      { low: 3.00, high: 8.00,  unit: '個' }, // (price_range HK$3-8/個)
+  'handle-bags':         { low: 3.00, high: 8.00,  unit: '個' }, // (price_range HK$3-8/個)
+  'large-bags':          { low: 6.00, high: 15.00,  unit: '個' }, // (price_range HK$6-15/個)
+  'acrylic-keychain':    { low: 3.00, high: 10.00, unit: '個' }, // 2026-09-23 下架死锚 (无 PDP, 永不触发)
+  'can-badge':           { low: 1.00, high: 5.00,  unit: '個' }, // 2026-09-23 下架死锚 (无 PDP, 永不触发)
   // 2026-10-12 Tier1 退役: postcard-set/eco-tote-bag 锚已删 (K3 拍板 301 收拢)
   /*
    * A1 海報 — 2026-09-19 K3 路線圖 P0-2「A1 獨立 minQuantity=1 + 獨立價階」

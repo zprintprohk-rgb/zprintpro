@@ -200,6 +200,13 @@ function serUnitAnchors(map) {
      *   的 sub = `${qty}張起批 · 整批 ${batch}`), 原文誤取「最低單價檔」的 qty。
      *   加入 10 張小批量檔後會產生自相矛盾: 「HK$0.14/張起 · 10張起批 · 整批 HK$686」
      *   (10 張的整批價實為 HK$80) ⇒ 改為一律取「最低數量檔」, 與起批量語意一致。
+     *
+     * 2026-10-26 复核 (勿改): priceDisplay = 全档最低 ppu (deep-bulk 地板价) 是
+     *   行业标准「起价」语义 (Vistaprint 式 from $X bulk), qty/batchPrice = 起批档,
+     *   两值同屏 = 双价显示 (地板吸引 + 起批量锚定), 均真实; 9/19 只修 batchPrice 正确。
+     *   flyers/stickers/books 的 min-qty 档是 modeled-small-batch 待校準模型值 (如
+     *   A5 传单 qty10 79.5 = 7.95/張, 与校准大档 0.347/張 差 20x) — 若改 priceDisplay
+     *   为 min-qty 档会把 hero 从真实地板价恶化成模型假价。勿动。
      */
     const minQty = Math.min(...cfg.tiers.map(t => t.qty));
     const atMin = (k) => cfg.tiers.find(t => t.qty === minQty)?.[k] ?? 0;
