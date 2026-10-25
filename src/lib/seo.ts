@@ -481,9 +481,9 @@ const categorySeoData: Record<string, {
       'ja': 'ポスター印刷,オリジナルポスター,A0 ポスター,A1 ポスター,A2 ポスター,a1 poster size,防水ポスター,写真ポスター,展示ポスター,イベントポスター,映画ポスター,コンサートポスター,大判ポスター',
     },
     descriptions: {
-      'zh-hk': '海報印刷 1 張起印，HK$10 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系。',
-      'en': 'Custom poster printing from $3.50, 1 MOQ. A0 / A1 / A2 + waterproof + matte/glossy + mounting for exhibitions, events, retail, restaurants, movies, concerts. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified.',
-      'ja': 'ポスター印刷 1 枚から、¥500〜。A0・A1・A2 + 防水 + マット/光沢 + パネル加工、展示・イベント・店舗・飲食・映画・コンサート向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '海報印刷 1 張起印，A2 HK$9 起/張、A1 HK$45 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
+      'en': 'Poster printing from $2.30 (A2 157g), 1 MOQ; A1 from $4.60. Waterproof + mounting for exhibitions & events. DHL 2-4 day USA delivery, free shipping $99+.',
+      'ja': 'ポスター印刷 1 枚から、A2 ¥300〜、A1 ¥600〜。A0・A1・A2 + 防水 + マット/光沢 + パネル加工、展示・イベント・店舗・飲食・映画・コンサート向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'paper-bags': {
