@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-24 21:17:02",
+  "generated_at": "2026-10-26 06:25:23",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "db194f29ca1f621e",
-    "day": "2026-10-24",
+    "this_run_key": "ee569c1ccb7f1494",
+    "day": "2026-10-26",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-22 21:18:07"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-24T21:22:56+08:00"
       },
       {
         "name": "lane_status_available",
@@ -46,37 +46,42 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 40260,
-    "acquired_at": "2026-10-24 21:17:02",
-    "acquired_ts": 1792847822.2566004,
+    "pid": 4032,
+    "acquired_at": "2026-10-26 06:25:23",
+    "acquired_ts": 1792967123.6087651,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-daily-content-20261022T211807",
+      "run_id": "ZP-daily-content-20261024T181700-harness",
       "lane": "ZP-daily-content",
-      "trigger": "schtasks",
-      "fired_at": "2026-10-22 21:18:07",
-      "ended_at": "2026-10-22 21:18:07",
-      "idempotency_key": "6f474eddab9a22d2",
-      "dsh_exit": null,
-      "wrapper_exit": 0,
+      "trigger": "dsh-harness",
+      "fired_at": "2026-10-24 18:17:00",
+      "ended_at": "2026-10-24T21:22:56+08:00",
+      "idempotency_key": "harness-20261024-paperbags",
+      "dsh_exit": 0,
+      "wrapper_exit": null,
       "verdict": "OK",
       "state": "completed",
       "blocked_reason": "",
       "guard": {
         "ok": true
       },
-      "report": "NONE",
-      "report_auto_generated": true,
-      "files": [],
-      "pushed": false,
-      "head": "e79db4ef",
-      "source": "lane-git-commit.py"
+      "report": ".hermes/logs/2026-10-24-daily-content.md",
+      "report_auto_generated": false,
+      "files": [
+        "src/data/sku-seo-data.ts",
+        ".hermes/logs/2026-10-24-daily-content.md",
+        ".hermes/logs/b1c-queue-progress.json",
+        ".hermes/_bak-sku-seo-before-pb-20261024.ts"
+      ],
+      "pushed": true,
+      "head": "5b29f1ef",
+      "source": "harness-lane"
     },
-    "latest_report": ".hermes/logs/2026-10-23-ZP-daily-content.md",
+    "latest_report": ".hermes/logs/2026-10-24-daily-content.md",
     "delivered_files_from_report": [
-      ".hermes/logs/b1c-queue-progress.json（order 22 登记 + 时间戳）; src/data 零写入（§0.35.7 并发避让，如实披露）; 新发现 P0 = ja.json L590 packaging-box-price-2026 深行 業界最安水準 ×1（双方法锁定，order 21 会话与 10-19 报告均未覆盖）; 10-19/10-20 阻塞项验证闭环证据（grep 计数见 §2）"
+      "src/data/sku-seo-data.ts 纸袋簇 6 SKU × 3 locale on-page 收口（17 处替换：无名认证声明/币种真值/错场景/转义 bug，详见 §3）| .hermes/logs/b1c-queue-progress.json（order 26 登记）| .hermes/logs/lane-runs.jsonl（harness 首跑总线记录）| 本报告 | 备份 .hermes/_bak-sku-seo-before-pb-20261024.ts"
     ]
   },
   "sibling_lanes": [],

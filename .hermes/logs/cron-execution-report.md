@@ -67,3 +67,5 @@
 | 2026-10-20 21:21:13 | ZP-daily-content | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-20-ZP-daily-content.md` | src/data/blog-data/ja.json | ⏳ commit(未 push) |
 | 2026-10-22 21:18:07 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | NONE | ⏳ commit(未 push) |
 | 2026-10-24 20:13:43 | ZP-gsc-feedback | ✅ 完成 (exit=0) | `.hermes/logs/2026-10-23-ZP-k3-review.md` | NONE | ✅ push |
+| 2026-10-24 21:17:49 | ZP-daily-content | ✅ 完成 (exit=0) | `NONE` | NONE | ✅ push |
+| 2026-10-26 06:43:10 | ZP-cron-watchdog | ⚠️ 8 条告警 | `cron-watchdog-alerts.md` (告警时才写) | PENDING ZP-daily-content | PENDING ZP-gsc-feedback | MISSING ZP-weekly-meta | MISSING ZP-blog-deepfix | UNKNOWN ZP-monthly-matrix | PENDING ZP-k3-review | — |

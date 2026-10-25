@@ -52,3 +52,8 @@
 ## 2026-10-16 06:43:12 车道对账告警
 
 - **车道结果异常**: ZP-k3-review scheduler LastTaskResult=1 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-10-26 06:43:10 车道对账告警
+
+- **车道结果异常**: ZP-weekly-meta 2026-10-23 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix 2026-10-24 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
