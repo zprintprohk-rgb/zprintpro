@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-24T21:22:56+08:00",
-  "updated_by": "ZP-daily-content lane (DSH Harness first run 18:17)",
+  "updated_at": "2026-10-26T06:35:46+08:00",
+  "updated_by": "ZP-daily-content lane (DSH Harness 10-25 槽)",
   "clusters": [
     {
       "order": 1,
@@ -769,6 +769,33 @@
         "push": "与 lane 报告同批 1 push (2026-10-24 夜窗)"
       },
       "note": "全站同类残留 (文件级计数): 国際認証体系工廠 27→(纸袋段清零, 其他簇仍有) / ja 国際認証体系の工場 26→ / en FDA 20→ / 推廣單張错场景 21→ — 登记为 order 27 全站同类清理"
+    },
+    {
+      "order": 27,
+      "cluster": "books 族 8 SKU en/ja 币种真值 + MOQ 三语对齐 (saddle-stitch/booklet desc 收口)",
+      "slugs": [
+        "catalog-printing",
+        "saddle-stitch-booklets",
+        "perfect-bound-books",
+        "hardcover-books",
+        "spiral-notebooks",
+        "exercise-books",
+        "textbooks",
+        "graduation-yearbook"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content lane (DSH Harness)",
+      "claimed_at": "2026-10-25T18:17:00+08:00",
+      "completed_at": "2026-10-26T06:35:46+08:00",
+      "verdict": {
+        "fix_count": "16 body 行 / 26 组替换 (en 币种 8 + ja 币种 8 + en MOQ 6 + ja MOQ 7 句 + exercise FAQ 撤括注 1)",
+        "en": "定价句 HK$→US$ (basePrice_en 4.6/1.84/4.6/13.8/2.76/1.84/9.2/10.35); 6 SKU 50/100-copy→10-copy (minQ=10); textbooks 100/yearbook 1 保持",
+        "ja": "定价句 HK$→¥ (basePrice_ja 644/258/644/1932/386/258/1288/1350); 6 SKU 100冊→10冊 ×7 句; textbooks/yearbook 保持",
+        "truth_source": "products.ts basePrice_en/basePrice_ja/minQuantity 真值对照 (双方法: 提取→真值→修复后独立重算)",
+        "guards": "encoding PASS / tsc 54=54 零新增 / brand A类 0 / gsc-leak 0 / content-guard 0 / i18n 0 / MOQ #24 新漂移 0",
+        "push": "dd2b537f (src) + .hermes 批, 与同侪 10-25 price-truth 6 commits 同批推 (超 60min 兜底)"
+      },
+      "note": "幂等: B1c 队列 order 1-26 全 DONE; 年賀状/corporate-holiday-cards/月曆 已上线不重做。挂账: ja 系统性模板 50〜100個/部/枚 + products.ts 简中『适配行业』 → order 28+"
     }
   ]
 }
