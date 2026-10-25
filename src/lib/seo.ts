@@ -419,7 +419,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
       'en': 'Small batch sticker printing from $0.05, 10 MOQ — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
-      'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
+      'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
     },
   },
   'flyers': {
@@ -444,7 +444,7 @@ const categorySeoData: Record<string, {
       'zh-hk': '宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
       'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified + FSC-certified.',
-      'ja': '特急印刷・チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
+      'ja': '特急印刷・チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
     },
   },
   'packaging': {
@@ -481,9 +481,9 @@ const categorySeoData: Record<string, {
       'ja': 'ポスター印刷,オリジナルポスター,A0 ポスター,A1 ポスター,A2 ポスター,a1 poster size,防水ポスター,写真ポスター,展示ポスター,イベントポスター,映画ポスター,コンサートポスター,大判ポスター',
     },
     descriptions: {
-      'zh-hk': '海報印刷 1 張起印，A2 HK$9 起/張、A1 HK$45 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
-      'en': 'Poster printing from $2.30 (A2 157g), 1 MOQ; A1 from $4.60. Waterproof + mounting for exhibitions & events. DHL 2-4 day USA delivery, free shipping $99+.',
-      'ja': 'ポスター印刷 1 枚から、A2 ¥300〜、A1 ¥600〜。A0・A1・A2 + 防水 + マット/光沢 + パネル加工、展示・イベント・店舗・飲食・映画・コンサート向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'zh-hk': '海報印刷 A2 10 張起印 HK$9 起/張、A1 1 張起印 HK$45 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
+      'en': 'Poster printing: A2 157g from $2.30 (10 MOQ), A1 PP from $4.60 (1 MOQ). Waterproof + mounting for events. DHL 2-4 day USA delivery, free shipping $99+.',
+      'ja': 'ポスター印刷 A2 10 枚〜 ¥300〜、A1 1 枚〜 ¥600〜。A0・A1・A2 + 防水 + マット/光沢 + パネル加工、展示・イベント・店舗・飲食・映画・コンサート向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'paper-bags': {
@@ -576,7 +576,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '餐牌印刷 10 張起，過膠餐牌 HK$5 起/張、PVC 防水 HK$8 起、精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 過膠 4 種材質，茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時，標準 3-5 天交貨，趕單 WhatsApp 加急，國際認證體系 + FSC 認證。',
       en: 'Menu printing from $1.84, 10 MOQ. Waterproof PVC, laminated & hardcover menus for restaurants, cafes, bars. Free proof in 4h, DHL 2-4 day USA delivery.',
-      ja: 'メニュー印刷 10 部から、¥258〜。防水 PVC・ラミネート・ハードカバー、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      ja: 'メニュー印刷 10 部から、¥258〜。防水 PVC・ラミネート・ハードカバー、レストラン・カフェ・バー向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'red-packets': {
@@ -594,7 +594,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。企業利是封 / 燙金利是封 / 婚慶 / 賀年 / 卡通 IP 訂製 + 局部 UV，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，國際認證體系。',
       en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV & wedding or CNY red packets. Free design proof, DHL 2-4 day USA. 30-second AI quote.',
-      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。企業ポチ袋・干支ポチ袋・新年ポチ袋にも対応。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり、国際認証体系。',
+      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。企業ポチ袋・干支ポチ袋・新年ポチ袋にも対応。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり、国際認証体系。',
     },
   },
   'banners': {
@@ -611,13 +611,13 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系。',
       'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified.',
-      'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
+      'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'books': {
     titles: {
       'zh-hk': '小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | 智印港',
-      'en': 'Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro',
+      'en': 'Saddle Stitch Booklet Printing from $1.84 | 10 MOQ + Free Proof | ZprintPro',
       'ja': '冊子印刷｜10部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
@@ -628,7 +628,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '書刊印刷 / 小冊子印刷 10 本起印，HK$6 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
       'en': 'Saddle stitch booklet printing from $1.84, 10 MOQ. Perfect bound / hardcover / catalogs. Free design proof, DHL 2-4 day USA delivery, free shipping $99+.',
-      'ja': '冊子印刷 10 部から、¥258〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 2 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
+      'ja': '冊子印刷 10 部から、¥258〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
     },
   },
   'educational': {

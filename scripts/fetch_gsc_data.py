@@ -2,7 +2,8 @@
 zprintpro GSC Data Fetcher (2026-07-06 新增, 替代 gsc_data.csv 手动 export)
 - 拉过去 90 天 Search Console data
 - OAuth2 service account (KeyFile)
-- 维度: query (单维度, 跟现有 gsc_data.csv 同 schema)
+- 维度: query (默认单维度, 跟现有 gsc_data.csv 同 schema);
+  可加 country / page / date 等多维 (2026-10-25 常态化: query,country 用于地域拆分)
 - 输出: 写到 gsc_data.csv (兼容现有 cron 解析)
 
 配置 (从 .env 或 .env.example):
@@ -14,6 +15,8 @@ Usage:
   python scripts/fetch_gsc_data.py                    # last 90 days, write to ./gsc_data.csv
   python scripts/fetch_gsc_data.py --days 60          # 自定义窗口
   python scripts/fetch_gsc_data.py --dry-run          # 不写 CSV, 只打印
+  python scripts/fetch_gsc_data.py --dimensions query,country --days 28   # query×country 地域拆分
+  python scripts/fetch_gsc_data.py --dimensions page --out gsc_page.csv   # page 维度单独出文件
 """
 from __future__ import annotations
 import argparse
@@ -133,12 +136,12 @@ def build_client(key_file: str, delegated_email: str):
     )
 
 
-def fetch_search_analytics(client, site_url: str, start: str, end: str, row_limit: int = 25000):
-    """拉搜索分析 data (dimension=query, aggregationType=byProperty 默认)."""
+def fetch_search_analytics(client, site_url: str, start: str, end: str, row_limit: int = 25000, dimensions: list[str] | None = None):
+    """拉搜索分析 data (默认 dimension=query, aggregationType=byProperty)."""
     request = {
         "startDate": start,
         "endDate": end,
-        "dimensions": ["query"],
+        "dimensions": dimensions or ["query"],
         "rowLimit": row_limit,
         "startRow": 0,
     }
@@ -174,22 +177,34 @@ def fetch_sites(client) -> list[dict]:
     return response.get("siteEntry", [])
 
 
-def write_csv(rows: list[dict], out_path: Path):
-    """写 CSV (跟现有 schema 兼容: 热门查询,点击次数,展示,点击率,排名)."""
+def write_csv(rows: list[dict], out_path: Path, dimensions: list[str] | None = None):
+    """写 CSV (默认跟现有 schema 兼容: 热门查询,点击次数,展示,点击率,排名).
+
+    多维 (如 query,country) 时 keys = [query, country], 在查询后追加维度列.
+    """
+    dims = dimensions or ["query"]
     out = io.StringIO()
     writer = csv.writer(out, lineterminator="\n")
-    writer.writerow(["热门查询", "点击次数", "展示", "点击率(%)", "排名"])
+    header = ["热门查询"]
+    if dims != ["query"]:
+        for d in dims[1:]:
+            header.append({"country": "国家/地区", "page": "页面", "date": "日期"}.get(d, d))
+    header += ["点击次数", "展示", "点击率(%)", "排名"]
+    writer.writerow(header)
     total_clicks = 0
     total_imps = 0
     for r in rows:
-        # API response keys: keys=['<query>'], clicks, impressions, ctr (0-1), position
+        # API response keys: keys=['<query>'] 或 keys=['<query>','<country>'], clicks, impressions, ctr (0-1), position
         keys = r.get("keys", [])
         kw = keys[0] if keys else ""
         clicks = r.get("clicks", 0)
         imps = r.get("impressions", 0)
         ctr = r.get("ctr", 0)
         pos = r.get("position", 0)
-        writer.writerow([kw, clicks, imps, f"{ctr * 100:.2f}", f"{pos:.2f}"])
+        if dims == ["query"]:
+            writer.writerow([kw, clicks, imps, f"{ctr * 100:.2f}", f"{pos:.2f}"])
+        else:
+            writer.writerow([kw] + [k for k in keys[1:]] + [clicks, imps, f"{ctr * 100:.2f}", f"{pos:.2f}"])
         total_clicks += clicks
         total_imps += imps
 
@@ -203,6 +218,7 @@ def main():
     parser.add_argument("--days", type=int, default=90, help="窗口天数 (默认 90, GSC 默认最大窗口)")
     parser.add_argument("--dry-run", action="store_true", help="只打印, 不写 CSV")
     parser.add_argument("--out", type=Path, default=DEFAULT_CSV, help="输出路径 (默认 ./gsc_data.csv)")
+    parser.add_argument("--dimensions", default="query", help="维度, 逗号分隔 (默认 query; 例: query,country / page)")
     parser.add_argument("--site-url", help="override GSC_SITE_URL env")
     parser.add_argument("--also-fetch-sitemaps", action="store_true", help="额外列 sitemap")
     args = parser.parse_args()
@@ -237,19 +253,20 @@ def main():
     print()
 
     client = build_client(key_path, info)
+    dimensions = [d.strip() for d in args.dimensions.split(",") if d.strip()]
     if args.dry_run:
         # 只调少量测试
-        rows = fetch_search_analytics(client, site_url, start.isoformat(), end.isoformat(), row_limit=10)
-        print(f"DRY RUN: {len(rows)} rows preview:")
+        rows = fetch_search_analytics(client, site_url, start.isoformat(), end.isoformat(), row_limit=10, dimensions=dimensions)
+        print(f"DRY RUN (dims={dimensions}): {len(rows)} rows preview:")
         for r in rows[:5]:
             print(f"  {r}")
         return 0
 
-    rows = fetch_search_analytics(client, site_url, start.isoformat(), end.isoformat())
-    print(f"Fetched {len(rows)} rows.")
+    rows = fetch_search_analytics(client, site_url, start.isoformat(), end.isoformat(), dimensions=dimensions)
+    print(f"Fetched {len(rows)} rows (dims={dimensions}).")
 
     # 4. 写 CSV
-    stats = write_csv(rows, args.out)
+    stats = write_csv(rows, args.out, dimensions=dimensions)
     print(f"\nWritten to: {args.out}")
     print(f"  rows:        {stats['rows']}")
     print(f"  total clicks:    {stats['total_clicks']}")
