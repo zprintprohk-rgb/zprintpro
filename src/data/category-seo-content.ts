@@ -3295,7 +3295,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '香港海報印刷 1 張起印：A2 128g 銅版紙 HK$6-9/張，A1 HK$10-16/張，標準 3-5 個工作天交貨。室內用銅版紙、半戶外用 PP 合成紙、戶外用 PVC 燈箱布，過膠防 UV 最長 3 年耐候。最大單張 3200×5000mm。',
+    featuredSnippet: '香港海報印刷 1 張起印：A2 157g 銅版紙 HK$9 起/張，A1 HK$45 起/張，標準 3-5 個工作天交貨。室內用銅版紙、半戶外用 PP 合成紙、戶外用 PVC 燈箱布，過膠防 UV 最長 3 年耐候。最大單張 3200×5000mm。',
     lastUpdated: '2026-10-14',
     h2: '香港海報印刷 — 展示環境×材質耐候×尺寸安裝完整指南',
     coreAdvantages: {
@@ -3357,7 +3357,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: '印刷', value: 'CMYK 大幅面數碼或噴繪，戶外級顏料墨水可選' },
         { label: '起印量', value: '1 張起（視尺寸）' },
         { label: '交期', value: '標準 3-5 個工作天' },
-        { label: '參考價', value: 'A2 128g 銅版紙 HK$6-9/張，A1 HK$10-16/張起' },
+        { label: '參考價', value: 'A2 157g 銅版紙 HK$9 起/張，A1 HK$45 起/張' },
       ],
     },
     serviceNodes: {
@@ -3393,7 +3393,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Poster printing in Hong Kong from 1 pc: A2 128gsm coated at HK$6-9/pc, A1 at HK$10-16/pc, standard 3-5 working days. Indoor coated paper, semi-outdoor PP synthetic, outdoor PVC banner stock with UV lamination lasting up to 3 years. Max single sheet 3200×5000mm.',
+    featuredSnippet: 'Poster printing in Hong Kong from 1 pc: A2 157gsm coated from HK$9/pc, A1 from HK$45/pc, standard 3-5 working days. Indoor coated paper, semi-outdoor PP synthetic, outdoor PVC banner stock with UV lamination lasting up to 3 years. Max single sheet 3200×5000mm.',
     lastUpdated: '2026-10-14',
     h2: 'Poster Printing — Display Environment, Material Durability, Size & Mounting Guide',
     coreAdvantages: {
@@ -3455,7 +3455,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: 'Printing', value: 'CMYK large-format digital or inkjet; outdoor pigment ink available' },
         { label: 'MOQ', value: 'From 1 pc (size dependent)' },
         { label: 'Turnaround', value: '3-5 working days standard' },
-        { label: 'Reference price', value: 'A2 128gsm coated HK$6-9/pc; A1 HK$10-16/pc' },
+        { label: 'Reference price', value: 'A2 157gsm coated from HK$9/pc; A1 from HK$45/pc' },
       ],
     },
     serviceNodes: {
@@ -3491,7 +3491,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    featuredSnippet: '香港のポスター印刷は1枚から。A2・128gコート紙がHK$6-9/枚、A1がHK$10-16/枚、標準3-5営業日。屋内はコート紙、半屋外はPP合成紙、屋外はPVCターポリン、UV対策ラミで最長3年耐候。最大単枚3200×5000mm。',
+    featuredSnippet: '香港のポスター印刷は1枚から。A2・157gコート紙がHK$9/枚から、A1がHK$45/枚から、標準3-5営業日。屋内はコート紙、半屋外はPP合成紙、屋外はPVCターポリン、UV対策ラミで最長3年耐候。最大単枚3200×5000mm。',
     lastUpdated: '2026-10-14',
     h2: 'ポスター印刷 — 展示環境×素材耐候性×サイズ設置完全ガイド',
     coreAdvantages: {
@@ -3553,7 +3553,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: '印刷', value: 'CMYK大判デジタルまたはインクジェット、屋外顔料インク対応' },
         { label: '最低ロット', value: '1枚から（サイズによる）' },
         { label: '納期', value: '標準3-5営業日' },
-        { label: '参考価格', value: 'A2・128gコート紙 HK$6-9/枚、A1 HK$10-16/枚' },
+        { label: '参考価格', value: 'A2・157gコート紙 HK$9/枚から、A1 HK$45/枚から' },
       ],
     },
     serviceNodes: {
@@ -3595,7 +3595,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const paperBagsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '紙袋印刷訂製 100 個起印, 牛皮紙袋 HK$1.5/個起 (200g 自帶環保文創感) / 白卡紙袋 HK$1.8/個起 (250g 印刷精細) / 珠光燙金升級款 HK$3.5/個起 (婚禮回禮適用), 3-7 天交期, DHL 全球 2-4 天. 香港順豐 1-2 個工作天直送, 5 款手挽 (扭繩/扁平/打孔/絲帶/棉繩). 全材質全尺寸 (小型 200×250×80 / 中型 280×350×100 / 大型 350×450×120 / 特大型 450×550×150 mm), 適用零售精品/咖啡烘焙/婚禮回禮/品牌活動.',
+    featuredSnippet: '紙袋印刷訂製 100 個起印, 牛皮紙袋 HK$8/個起 (200g 自帶環保文創感) / 白卡紙袋 HK$12/個起 (250g 印刷精細) / 珠光燙金升級款 HK$20/個起 (婚禮回禮適用), 3-7 天交期, DHL 全球 2-4 天. 香港順豐 1-2 個工作天直送, 5 款手挽 (扭繩/扁平/打孔/絲帶/棉繩). 全材質全尺寸 (小型 200×250×80 / 中型 280×350×100 / 大型 350×450×120 / 特大型 450×550×150 mm), 適用零售精品/咖啡烘焙/婚禮回禮/品牌活動.',
     lastUpdated: '2026-08-21',
     h2: '印刷紙袋 / 紙袋印刷 / 紙袋訂製 / 訂做紙袋 — 白卡/牛皮/特種紙, 100 個起印, 品牌包裝首選',
     coreAdvantages: {
@@ -3613,7 +3613,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. 小批量靈活起訂，100 個即可定制品牌紙袋',
           points: [
             '100 個起訂（數碼印刷），適合新品牌試產和限量活動',
-            '1,000 個以上柯式印刷，單價低至 HK$1.5/個，適合零售連鎖和大型活動',
+            '1,000 個以上柯式印刷，單價低至 HK$3/個，適合零售連鎖和大型活動',
             '支持多種提手選擇：棉繩、紙繩、絲帶、皮繩，提升品牌質感',
           ],
         },
@@ -3676,7 +3676,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
         '紙袋印刷最常用白卡紙（250–300g），潔白挺括、四色印刷效果最靚，適合服裝、美妝同精品零售；牛皮紙（120–150g）自帶環保文創感，咖啡店、手作品牌最常用；黑卡紙配燙金係珠寶、奢侈品嘅首選。印紙袋前可以先攞免費紙樣上手掂一掂。',
         '尺寸按內裝商品決定：細袋（150×80×200mm）裝化妝品、首飾；中袋（220×100×280mm）係最通用嘅購物袋，衫褲書籍都啱；大袋（320×120×380mm）裝大褸、禮盒。訂做紙袋如果唔肯定尺寸，攞件貨實物放入樣辦袋試裝最穩陣。',
         '提手決定成個袋嘅質感：棉繩經濟結實，承重 3–5kg；紙繩同牛皮紙袋最夾；絲帶柔軟優雅，婚禮回禮袋必選；加厚款承重可達 8–10kg，酒類、玻璃裝都托得起。提手顏色記得同品牌主色協調。',
-        '紙袋訂造嘅印刷工藝按預算揀：四色柯式印刷 1,000 個以上最抵，單價低至 HK$1.5/個；數碼印刷 100 個起、免製版，啱新店試款；想再升級可加燙金、UV 或擊凸 LOGO，成本每個加 HK$0.3–0.8，但開袋第一印象完全唔同。',
+        '紙袋訂造嘅印刷工藝按預算揀：四色柯式印刷 1,000 個以上最抵，單價低至 HK$3/個；數碼印刷 100 個起、免製版，啱新店試款；想再升級可加燙金、UV 或擊凸 LOGO，成本每個加 HK$0.3–0.8，但開袋第一印象完全唔同。',
         '好多客戶搜「紙袋訂製」「印紙袋」「紙袋訂做」時最關心起訂量同單價——呢度直接答你：數碼 100 個起、柯式 1,000 個起，5,000 個以上再有階梯折扣。旺季（聖誕、農曆新年）建議提早 2–3 星期落單，預留打樣修改時間。',
         '唔同行業有唔同袋路：服裝店用白卡中袋加棉繩，珠寶鐘錶用黑卡細袋配絲帶，婚禮回禮用珠光紙燙新人姓名，茶飲烘焙用牛皮紙平口袋最慳成本。我哋顧問會按你行業直接推薦現成規格，慳返自己摸索時間。',
         '訂做紙袋流程好直接：WhatsApp 或網站提交尺寸數量 → 30 秒 AI 即時報價 → 免費打樣確認 → 3–5 天出貨。急單可安排 2 天快印，順豐即日派件覆蓋港九新界；紙袋批發客戶仲可以分批出貨到唔同分店，慳倉又慳運費。',
@@ -3691,7 +3691,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: '膠裝書印刷價格點計？', a: '膠裝書（無線綴じ）10 本起印，32-200 頁常見規格，100 本以上享批量折扣。免費 4 小時打稿，3-5 個工作天交貨。確實價格用 30 秒 AI 報價按頁數同紙質即時計算。' },
       { q: '書刊印刷同印書有咩分別？', a: '書刊印刷泛指期刊、雜誌、公司刊物的定期印製；印書通常指單本或少量書籍（個人作品集、教材、紀念冊）。兩者都 10 本起印，騎馬釘適合 8-64 頁，膠裝/精裝適合 64 頁以上。' },
-      { q: '紙袋印刷最低多少個起？', a: '100 個起訂（數碼印刷）。1,000 個以上柯式印刷更經濟，單價低至 HK$1.5/個。' },
+      { q: '紙袋印刷最低多少個起？', a: '100 個起訂（數碼印刷）。1,000 個以上柯式印刷更經濟，單價低至 HK$3/個。' },
       { q: '紙袋有哪些材質？', a: '白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 選擇。' },
       { q: '紙袋可以承重多少？', a: '標準紙袋承重 3–5kg；加厚版可達 8–10kg。' },
       { q: '可以定制尺寸嗎？', a: '可以。支持完全訂製尺寸、形狀和開窗設計。' },
@@ -3702,14 +3702,14 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。紙袋可按箱規安排順豐或貨車；多分店可先送中央倉再分發。大量紙袋建議預約升降機時段以利卸貨。' },
       { q: '可以先報價再上傳刀模嗎？', a: '可以。請提供袋型（平底／方底）、尺寸、紙材克重、印刷色數、提手類型與數量；可先取得數碼／柯式報價，刀模確認後再批量生產以降低重工風險。' },
       // V3.8 集群 A 纸袋一击四词 (8/21 K3 拍板) — 4 词 FAQ 加厚
-      { q: '印刷紙袋 100 個起印大概多少錢？', a: '數碼印刷 100 個起印，HK$1.8-3.5/個；柯式印刷 1,000 個以上 HK$1.5/個 起，5,000 個以上階梯折扣 15-25%。具體報價看尺寸、材質、提手。' },
+      { q: '印刷紙袋 100 個起印大概多少錢？', a: '數碼印刷 100 個起印，HK$8 起/個；柯式印刷 1,000 個以上單價可低至 HK$3/個，大量訂單另有階梯折扣。具體報價看尺寸、材質、提手。' },
       { q: '紙袋印刷 最快幾耐可以取貨？', a: '數碼印刷 3-5 天；柯式印刷 5-7 天；急件 2-3 天可議。打樣 2-3 天，順豐即日派件覆蓋港九新界。' },
       { q: '紙袋訂製 流程係點？', a: '4 步：① WhatsApp 提交尺寸數量 → ② 30 秒 AI 即時報價 → ③ 免費打樣確認 → ④ 3-5 天順豐直送。旺季建議提早 2-3 星期落單預留打樣時間。' },
-      { q: '訂做紙袋 邊種材質最抵用？', a: '牛皮紙 (200g) 自帶環保文創感，HK$1.5/個 起最經濟，適合咖啡店、手作品牌；白卡紙 (250g) 印刷精細 HK$1.8/個 起，服裝美妝首選；珠光紙 + 燙金升級款 HK$3.5/個 起，婚禮回禮適用。' },
+      { q: '訂做紙袋 邊種材質最抵用？', a: '牛皮紙 (200g) 自帶環保文創感，HK$8/個 起最經濟，適合咖啡店、手作品牌；白卡紙 (250g) 印刷精細 HK$12/個 起，服裝美妝首選；珠光紙 + 燙金升級款 HK$20/個 起，婚禮回禮適用。' },
     ],
   },
   en: {
-    featuredSnippet: 'Custom paper bag printing from 100 pcs, kraft paper bags from US$0.19 each (200g eco-friendly kraft), white card bags from US$0.23 each (250g premium print), pearl foil gift bags from US$0.45 each (wedding favor upgrade), 3-7 day production, DHL global 2-4 day. 5 handle options (twisted rope/flat ribbon/die-cut/satin/cotton). Full size range (small 200×250×80 / medium 280×350×100 / large 350×450×120 / extra large 450×550×150 mm) for retail boutique, cafe, wedding favor, brand activation.',
+    featuredSnippet: 'Custom paper bag printing from 100 pcs, kraft paper bags from US$1.84 each (200g eco-friendly kraft), white card bags from US$2 each (250g premium print), pearl foil gift bags from US$4 each (wedding favor upgrade), 3-7 day production, DHL global 2-4 day. 5 handle options (twisted rope/flat ribbon/die-cut/satin/cotton). Full size range (small 200×250×80 / medium 280×350×100 / large 350×450×120 / extra large 450×550×150 mm) for retail boutique, cafe, wedding favor, brand activation.',
     lastUpdated: '2026-08-21',
     h2: 'Custom Paper Bags / Paper Bag Printing / Kraft Paper Bags / Gift Bags — White Card / Kraft / Specialty Paper, From 100 pcs, US Brand Packaging Essential',
     coreAdvantages: {
@@ -3727,7 +3727,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Low MOQ Flexibility — From 100 pcs',
           points: [
             '100 pcs minimum (digital printing) — perfect for new brand prototyping and limited events.',
-            '1,000+ pcs offset printing, unit price as low as US$0.19/pc for retail chains and large events.',
+            '1,000+ pcs offset printing, unit price from US$1.84/pc for retail chains and large events.',
             'Multiple handle options: cotton rope, paper rope, ribbon, and leather cord for elevated brand feel.',
           ],
         },
@@ -3802,7 +3802,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: 'Do you also print product catalogs?', a: 'Yes — catalog printing covers 8-64 page saddle-stitch and perfect-bound catalogs from 10 copies, same saddle stitch pricing from $1.20. For factory-direct bulk orders see our China catalog printing service page (10 MOQ, DHL 2-4 days).' },
-      { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.19/pc.' },
+      { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, from US$1.84/pc.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, black card, pearl paper, textured paper, eco recycled paper — 20+ options.' },
       { q: 'How much weight can paper bags hold?', a: 'Standard bags: 3–5kg; Reinforced version: 8–10kg.' },
       { q: 'Can sizes be customized?', a: 'Yes. Fully customizable sizes, shapes, and window designs supported.' },
@@ -3813,14 +3813,14 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit bag size, paper type, handle style, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file with dieline design. Our prepress team will check die line accuracy and bleed.' },
       // V3.8 Cluster A: 4-word FAQ (8/21 K3)
-      { q: 'How much do custom paper bags cost per piece for 100 pcs?', a: 'Digital printing from 100 pcs starts at US$0.23/pc. Offset runs of 1,000+ drop to US$0.19/pc. 5,000+ volumes unlock 15-25% tier discounts. Final price depends on size, paper, and handle.' },
+      { q: 'How much do custom paper bags cost per piece for 100 pcs?', a: 'Digital printing from 100 pcs starts at US$2/pc. Offset runs of 1,000+ from US$1.84/pc. 5,000+ volumes unlock additional tier discounts. Final price depends on size, paper, and handle.' },
       { q: 'What is the fastest turnaround for paper bag printing?', a: 'Digital 3-5 business days. Offset 5-7 business days. Rush 2-3 days available. DHL Express delivers in 2-4 days to US/UK/AU.' },
       { q: 'What is the custom paper bags process?', a: '4 steps: ① WhatsApp dimensions + quantity → ② 30-second AI instant quote → ③ Free sample confirmation → ④ 3-5 day production + DHL Express 2-4 days worldwide.' },
-      { q: 'Which paper material is most cost-effective for kraft paper bags?', a: '200gsm kraft paper is the most economical at US$0.19/pc for 1,000+ — perfect for coffee shops, eco brands, and handmade goods. White card (250gsm) at US$0.23/pc suits fashion/beauty retail. Pearl paper + foil stamping (US$0.45/pc) is the wedding favor upgrade.' },
+      { q: 'Which paper material is most cost-effective for kraft paper bags?', a: '200gsm kraft paper is the most economical from US$1.84/pc for 1,000+ — perfect for coffee shops, eco brands, and handmade goods. White card (250gsm) from US$2/pc suits fashion/beauty retail. Pearl paper + foil stamping (US$4/pc) is the wedding favor upgrade.' },
     ],
   },
   ja: {
-    featuredSnippet: '紙袋オーダーメイド 100 個から、クラフト紙袋 1個 ¥22 から、白カード紙袋 1個 ¥28 から、パール箔押し 1個 ¥55 から。3-7日納期、DHL グローバル 2-4日配送。',
+    featuredSnippet: '紙袋オーダーメイド 100 個から、クラフト紙袋 1個 ¥240 から、白カード紙袋 1個 ¥360 から、パール箔押し 1個 ¥600 から。3-7日納期、DHL グローバル 2-4日配送。',
     lastUpdated: '2026-08-21',
     h2: '紙袋印刷 / 印刷 紙袋 / 紙袋 オーダーメイド / クラフト紙袋 — 白カード/クラフト/特殊紙、100個から、ブランドパッケージの定番',
     coreAdvantages: {
@@ -3838,7 +3838,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. 小ロット対応、100個からブランド紙袋をカスタマイズ',
           points: [
             '100個から（デジタル印刷）。新ブランドの試作や限定イベントに最適。',
-            '1,000個以上はオフセット印刷で、単価HK$1.5／個までお得。小売チェーンや大規模イベントに最適。',
+            '1,000個以上はオフセット印刷で、単価¥240〜。小売チェーンや大規模イベントに最適。',
             '多様な取っ手選択：綿紐、紙紐、リボン、革紐。ブランドの質感を向上。',
           ],
         },
@@ -3912,7 +3912,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: '紙袋印刷の最小発注数は？', a: '100個から（デジタル印刷）。1,000個以上はオフセット印刷がお得で、単価HK$1.5／個まで。' },
+      { q: '紙袋印刷の最小発注数は？', a: '100個から（デジタル印刷）。1,000個以上はオフセット印刷がお得で、単価¥240〜。' },
       { q: 'どんな紙がありますか？', a: '白カード紙、クラフト紙、黒カード紙、パール紙、テクスチャ紙、エコ再生紙など20種類以上。' },
       { q: '紙袋の耐荷重は？', a: '標準紙袋は3–5kg。厚手版は8–10kg。' },
       { q: 'サイズはカスタマイズできますか？', a: 'はい。完全カスタマイズのサイズ、形状、窓デザインに対応。' },
@@ -3923,10 +3923,10 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりできますか？', a: 'はい。袋のサイズ、紙質、取っ手の種類、数量、印刷オプションをお知らせいただければ、見積もり可能です。確認後、AI / PDFファイルと展開図デザインをお送りください。プリプレスチームが展開図の精度と塗り足しを確認します。' },
       // V3.8 クラスタA：4語FAQ (8/21 K3)
-      { q: 'クラフト紙袋 100個から印刷した場合の単価は？', a: 'デジタル印刷100個から HK$1.8/個〜。オフセット印刷1,000個以上はHK$1.5/個〜、5,000個以上は15-25%の段階割引あり。最終単価はサイズ・材質・取っ手により異なります。' },
+      { q: 'クラフト紙袋 100個から印刷した場合の単価は？', a: 'デジタル印刷100個から ¥240〜。オフセット印刷1,000個以上は¥240〜、5,000個以上は段階割引あり。最終単価はサイズ・材質・取っ手により異なります。' },
       { q: '紙袋印刷の最短納期は？', a: 'デジタル印刷 3-5営業日。オフセット印刷 5-7営業日。特急 2-3営業日対応可能。DHL Expressで全世界2-4日配送。' },
       { q: '紙袋 オーダメイドの注文流程は？', a: '4ステップ：① WhatsAppでサイズと数量を送信 → ② 30秒AI即時見積もり → ③ 無料サンプル確認 → ④ 3-5日生産 + DHL Express全世界2-4日配送。繁忙期は2-3週間前のご注文推奨。' },
-      { q: 'クラフト紙袋で一番コストパフォーマンスが高い材質は？', a: '200gクラフト紙が一番お得で HK$1.5/個〜（1,000個以上）、カフェ・エコブランド・手作り商品に最適。白カード紙（250g）は HK$1.8/個〜でアパレル・美容小売向け。パール紙 + 箔押しアップグレード版は HK$3.5/個〜でブライダルギフト適用。' },
+      { q: 'クラフト紙袋で一番コストパフォーマンスが高い材質は？', a: '200gクラフト紙が一番お得で ¥240〜（1,000個以上）、カフェ・エコブランド・手作り商品に最適。白カード紙（250g）は ¥360〜でアパレル・美容小売向け。パール紙 + 箔押しアップグレード版は ¥600〜でブライダルギフト適用。' },
     ],
   },
 };
