@@ -3095,7 +3095,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Flyer printing in Hong Kong from 10 pcs — A5 single-side 128gsm gloss coated at HK$0.35/pc, standard 3-working-day turnaround with same-day rush available. Four sizes (A6/A5/A4/DL) and 80-300gsm stocks matched to your distribution scenario: street handout, letterbox drop, or counter pickup.',
+    featuredSnippet: 'Flyer printing in Hong Kong from 10 pcs — A5 single-side 128gsm gloss coated at US$0.40/pc, standard 3-working-day turnaround with same-day rush available. Four sizes (A6/A5/A4/DL) and 80-300gsm stocks matched to your distribution scenario: street handout, letterbox drop, or counter pickup.',
     lastUpdated: '2026-10-14',
     h2: 'Flyer Printing — Distribution Scenario, Size, Stock & Cost Guide',
     coreAdvantages: {
@@ -3156,7 +3156,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         { label: 'Printing', value: 'Single or double-sided CMYK, digital or offset' },
         { label: 'MOQ', value: '10 pcs' },
         { label: 'Turnaround', value: '3 working days standard; same-day rush available' },
-        { label: 'Reference price', value: 'A5 128gsm single-side from HK$0.35/pc; volume pricing on request' },
+        { label: 'Reference price', value: 'A5 128gsm single-side from US$0.40/pc; volume pricing on request' },
       ],
     },
     serviceNodes: {
@@ -3192,7 +3192,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    featuredSnippet: '香港のチラシ印刷は10枚から。A5片面128gコート紙がHK$0.35/枚〜、標準3営業日、即日特急便あり。A6/A5/A4/DLの4サイズ、80-300gsmの用紙を配布シーン（街頭配布・ポスティング・店頭設置）に合わせて選定します。',
+    featuredSnippet: '香港のチラシ印刷は10枚から。A5片面128gコート紙が¥50/枚〜、標準3営業日、即日特急便あり。A6/A5/A4/DLの4サイズ、80-300gsmの用紙を配布シーン（街頭配布・ポスティング・店頭設置）に合わせて選定します。',
     lastUpdated: '2026-10-14',
     h2: 'チラシ印刷 — 配布シーン×サイズ×用紙×コスト完全ガイド',
     coreAdvantages: {
@@ -3253,7 +3253,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         { label: '印刷', value: '片面または両面CMYK、デジタルまたはオフセット' },
         { label: '最低ロット', value: '10枚から' },
         { label: '納期', value: '標準3営業日、即日特急可' },
-        { label: '参考価格', value: 'A5 128g片面 HK$0.35/枚〜、量販は別途お見積り' },
+        { label: '参考価格', value: 'A5 128g片面 ¥50/枚〜、量販は別途お見積り' },
       ],
     },
     serviceNodes: {
