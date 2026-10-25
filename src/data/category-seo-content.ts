@@ -3801,7 +3801,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'Do you also print product catalogs?', a: 'Yes — catalog printing covers 8-64 page saddle-stitch and perfect-bound catalogs from 10 copies, same saddle stitch pricing from $1.20. For factory-direct bulk orders see our China catalog printing service page (10 MOQ, DHL 2-4 days).' },
+      { q: 'Do you also print product catalogs?', a: 'Yes — catalog printing covers 8-64 page saddle-stitch and perfect-bound catalogs from 10 copies, same saddle stitch pricing from $1.84. For factory-direct bulk orders see our China catalog printing service page (10 MOQ, DHL 2-4 days).' },
       { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, from US$1.84/pc.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, black card, pearl paper, textured paper, eco recycled paper — 20+ options.' },
       { q: 'How much weight can paper bags hold?', a: 'Standard bags: 3–5kg; Reinforced version: 8–10kg.' },
