@@ -1,0 +1,812 @@
+ZprintPro 七大词簇首页飞轮攻坚 · 全簇最优执行方案
+首席 SEO/AEO/GEO 数据战略分析师 · 终极作战文件
+日期：2026-10-27 版本：v3.0（去除包装盒簇，聚焦剩余七大词簇） 核心原则：每簇独立飞轮，按"排名可行性 × 商业价值 × 赛道趋势"三维排序
+
+〇、七大词簇总览与优先级矩阵
+优先级	词簇	赛道趋势	当前排名基础	商业价值	30天核心目标
+A	① 贴纸簇	→ 稳定	首页边缘 4.8-5.1	★★★★☆	首个非品牌点击
+A	② 同人誌/コミケ簇	↑ 季节上升	10.2 / 19.1	★★★★☆	en 进首页 + ja 排名改善
+B	③ 骑马钉/小册子/教材/学校簇	↓ 下降	退场中 9.6-19.3	★★★☆☆	止跌恢复展示
+B	④ 目录印刷簇	↓ 下降	18位	★★★☆☆	展示份额提升
+C	⑤ 海报/传单/即日印刷簇	↓↓ 强下降	有展示无点击	★★☆☆☆	守位不追
+C	⑥ 年賀状/卒アル簇	→ 季节波动	小样本 5.0	★★★☆☆	季节窗口捕获
+C	⑦ 纸袋/环保包装簇	↑ 上升	展示归零	★★★★☆	诊断+恢复
+一、词簇①：贴纸簇（A级 · 最快见效）
+1.1 词簇范围定义
+子簇	英文	繁中	日文
+小批量贴纸	small batch stickers, small batch sticker printing	貼紙印刷, 小批量貼紙	シール 印刷, 小ロット シール
+材质/工艺	vinyl stickers, waterproof stickers, die-cut stickers, kiss-cut stickers	防水貼紙, 模切貼紙, 透明貼紙	防水 シール, ダイカット シール, 透明 シール
+用途	product labels, packaging stickers, logo stickers, bottle labels	產品標籤, Logo貼紙, 瓶貼	商品 ラベル, ロゴ シール
+PVC	pvc stickers, pvc シール	PVC貼紙	pvc シール
+购买决策	sticker printing near me, custom stickers online, cheap stickers	貼紙印刷 邊度好	シール 印刷 安い
+1.2 当前数据诊断
+词	展示	排名	点击	前期对照	核心问题
+small batch sticker printing	49	4.8	0	62/6.1/0	首页但 CTR=0
+small batch stickers	28	5.1	0	43/5.5/0	同簇，不新建页
+pvc シール (ja)	19	19.0	0	23/20.4/0	中程，非本周主攻
+诊断结论：排名已在首页（4.8-5.1），瓶颈不是排名而是 CTR 断裂。
+
+1.3 竞品对标（深度分析）
+"small batch sticker printing" SERP 首页竞品拆解
+排名	竞品	Title 模式	为什么有点击	ZprintPro 差距
+1	Sticker Mule	"Custom Stickers - Free Shipping | Sticker Mule"	品牌认知 + "Free Shipping" 触发词	品牌知名度
+2	StickerApp	"Custom Stickers From $0.08 | No Minimum"	价格锚点 + "No Minimum"	价格透明度
+3	Printify	"Custom Sticker Printing | Print on Demand"	电商集成 + 品牌	平台生态
+4	ZprintPro ← 我们	（当前 title 冻结）	缺乏点击触发词	Title 无价格/无差异化
+5	StickerGiant	"Custom Stickers | Ships in 3 Days"	速度承诺	交期承诺
+6	UPrinting	"Custom Stickers | Free Proofing"	"Free Proofing" 降低决策门槛	打样承诺
+CTR 断裂根因分析：
+
+纯文本
+
+
+
+
+竞品 Title 中的高 CTR 触发词：
+  ✅ "Free Shipping"（Sticker Mule）
+  ✅ "From $0.08"（StickerApp）
+  ✅ "No Minimum"（StickerApp）
+  ✅ "Ships in 3 Days"（StickerGiant）
+  ✅ "Free Proofing"（UPrinting）
+
+ZprintPro 缺失：
+  ❌ 无价格锚点
+  ❌ 无速度承诺
+  ❌ 无免费打样/免费设计承诺
+  ❌ 无"Free"类触发词
+
+但文件要求 Title 冻结 → 必须从 Meta Description + 页面内容入手
+繁中市场 "貼紙印刷" 竞争分析
+竞品类型	代表	网站质量	SEO 水平	ZprintPro 机会
+港台本地印刷铺	旺角/深水埗印刷店	极差或无网站	几乎无	网站质量碾压
+大陆供应商	1688/阿里巴巴	平台页面	依赖平台	独立站+品牌
+Sticker Mule 繁中	有繁中版	好	有	价格+本地化
+繁中"貼紙印刷"竞争极弱，但当前文件未显示繁中贴纸页面有排名数据，需确认页面是否存在。
+
+日文市场 "シール 印刷" 竞争分析
+竞品	优势	弱点
+ラクスル	价格透明、品类全	无海外配送
+プリントパック	速度快、价格低	无设计服务
+シール印刷の達人	专精贴纸	品类单一
+グラフィック	品质高	价格高
+1.4 首页飞轮策略
+纯文本
+
+
+
+
+当前状态：排名 4.8（首页），CTR = 0
+飞轮瓶颈：不是排名，是 CTR
+
+飞轮设计：
+[保持排名 ≤6] → [优化 Meta Description] → [CTR 提升] → [首次点击] 
+    → [用户行为信号（停留时间、浏览深度）] → [排名巩固/微升] 
+    → [更多展示] → [更多点击] → 循环
+
+关键加速器：
+  1. Meta Description 加入价格锚点 + 速度承诺 + 免费打样
+  2. 页面首屏补真实 MOQ + 数量阶梯 + 材质对比
+  3. 内链从 category + 指南各 1 条（不多不少）
+  4. FAQ Schema 覆盖常见购买问题
+
+⚠️ 核心约束：Title 冻结，不改。
+1.5 逐页执行动作
+#	页面	具体动作	时间	验收标准
+1	/en/product/small-batch-stickers/	首屏后补：真实 MOQ（如 50pcs）、数量阶梯价格表（50/100/250/500/1000）、材质对比表（PVC/PP/牛皮纸/透明）、防水等级（IPX4/IPX6）、裁切选项（模切/半切/全切/方形/圆形）、生产时间、配送范围与时间	Day 1-5	内容完整度 100%，所有数据为真值
+2	/en/product/small-batch-stickers/	Meta Description 重写（不改 Title）：加入 "from $0.05/pc" + "50pcs MOQ" + "3-5 day production" + "Free sample"	Day 1	字符数 ≤160，含价格+速度+免费
+3	/en/category/stickers/	加 1条 自然商业锚内链指向 PDP，锚文本如 "order small batch stickers"	Day 3	内链存在且自然
+4	最相关指南（sticker guide）	加 1条 自然商业锚内链指向 PDP，锚文本如 "get a quote for custom stickers"	Day 3	内链存在且自然
+5	/zh-hk/category/stickers/	确认页面状态；若存在，检查 Title/H1/内容完整度	Day 2	审计完成
+6	/zh-hk/blog/sticker-guide/	明确定位为"材质知识"：PVC vs PP vs 牛皮纸 vs 透明，防水原理，裁切工艺	Day 5-8	与 buying-guide 无重复段落
+7	/zh-hk/blog/sticker-buying-guide/	明确定位为"采购决策"：如何选供应商、价格对比、打样流程、MOQ 谈判	Day 5-8	与 sticker-guide 无重复段落
+8	所有贴纸页面	添加 FAQ Schema（3-5个问题）	Day 5	Rich Results Test 通过
+Meta Description 优化方案（不改 Title）：
+
+纯文本
+
+
+
+
+优化前（推测）：
+"Small batch sticker printing for businesses and individuals. 
+High quality custom stickers..."
+
+优化后：
+"Custom stickers from 50 pieces — factory-direct from $0.05/pc. 
+Vinyl, kraft, waterproof & die-cut options. Production in 3-5 days, 
+worldwide shipping. Free sample before bulk order. → Get Quote Now"
+
+关键改动：
+  ✅ 具体 MOQ（50 pieces）
+  ✅ 价格锚点（from $0.05/pc）
+  ✅ 材质关键词（Vinyl, kraft, waterproof, die-cut）
+  ✅ 速度承诺（3-5 days）
+  ✅ 免费打样（Free sample）
+  ✅ CTA（Get Quote Now）
+FAQ Schema 内容：
+
+纯文本
+
+
+
+
+Q1: What is the minimum order for custom stickers?
+A: 50 pieces. We support small-batch orders for startups, 
+   e-commerce sellers, and event organizers.
+
+Q2: What materials are available?
+A: PVC (waterproof), PP, kraft paper, transparent PET, 
+   and metallic foil. All materials are available in 
+   matte or gloss finish.
+
+Q3: How long does sticker production take?
+A: 3-5 business days after artwork approval. 
+   Rush production (1-2 days) available for urgent orders.
+
+Q4: Can I get a free sample?
+A: Yes. We provide 1-2 free samples before bulk production 
+   so you can verify color, material, and cut quality.
+
+Q5: What file format do you need?
+A: AI, PDF, or PNG at 300dpi with 3mm bleed. 
+   We also accept JPG and will pre-check your file for free.
+1.6 30天目标与停止规则
+指标	目标	停止/回滚条件
+排名	守 ≤6（当前 4.8）	7天连续明显跌出首页→先查改稿与查询组合，不继续加文
+点击	0→出现首个非品牌点击	不强制时间，30天内有即可
+展示	不以 >30% 幅度继续收缩	若收缩>30%→检查是否有算法更新或竞品变化
+Title	冻结，不改	—
+繁中贴纸	确认页面存在且可索引	若不存在→新建
+二、词簇②：同人誌/コミケ簇（A级 · 冲刺首页）
+2.1 词簇范围定义
+子簇	英文	日文
+同人誌印刷	doujinshi printing, doujin printing, doujinshi print service	同人誌 印刷, 同人誌 印刷 会社, 同人誌 印刷 安い
+コミケ	comiket printing, comiket print service	コミケ 印刷, コミケ 新刊, コミケ 印刷 締切
+Zine	zine printing, zine printing service	—
+活动/展会	—	C109, コミックマーケット 印刷
+规格	doujinshi binding, doujinshi page count	同人誌 綴じ方, 同人誌 ページ数
+2.2 当前数据诊断
+词	展示	排名	点击	前期对照	核心判断
+doujinshi printing (en)	39	10.2	0	56/14.2/1	首页边缘，最适合冲刺
+doujin printing (en)	—	—	有点击	—	保持已有点击
+コミケ 印刷 (ja)	170	19.1	0	175/25.2/0	展示大、排名改善中但未进首页
+同人誌印刷 (ja)	—	—	—	—	需确认数据
+核心机会：
+
+doujinshi printing 排名 10.2，距首页（≤10）仅 0.2 位
+コミケ 印刷 展示 170 是所有词中最大的，但排名 19.1 需要大幅改善
+有明确的季节窗口（C109 等コミケ活动）
+2.3 竞品对标（深度分析）
+"doujinshi printing" 英文 SERP 分析
+排名	竞品	类型	核心优势	内容深度	弱点
+1	Print On (プリントオン)	日本同人印刷商	日本最大同人印刷商，有英文页面	深（规格表+价格表+入稿指南）	英文内容仍偏日式
+2	Blurb	自助出版平台	品牌大、全球配送	中	非专业同人印刷，无骑马钉/胶装选择
+3	Lulu	自助出版	品牌大	中	同上
+4	Mixam	英国印刷商	价格透明、在线报价	中	无同人誌专属内容
+5	小型同人印刷商	各类	专精	浅	网站质量差
+6-8	阿里巴巴供应商	平台	价格低	极浅	无品牌、无信任
+关键发现：
+
+纯文本
+
+
+
+
+英文 "doujinshi printing" 竞争分析：
+  - 没有一家有高质量的英文"同人誌印刷完全指南"
+  - Print On 有英文页面但内容偏日式翻译
+  - 缺少"海外同人作者如何从日本/中国印刷"的内容
+  - 缺少"入稿检查清单"（file check checklist）
+  - 缺少"国际配送时间逆算表"
+
+→ ZprintPro 的机会：做英文市场最好的同人誌印刷内容
+"コミケ 印刷" 日文 SERP 分析
+排名	竞品	核心优势	内容特点
+1	グラフィック (Graphic)	日本同人印刷第一品牌	有コミケ专属页面+締切逆算表
+2	プリントオン (Print On)	老牌同人印刷	有活动排期+特急プラン
+3	日光企画	价格低	简单但有效
+4	ポプルス	品质高	有详细的入稿指南
+5-8	其他日本印刷商	本地化	各有特色
+日文市场竞争激烈，但 ZprintPro 的差异化：
+
+国际配送（DHL/FedEx）
+多语言服务
+价格优势（中国工厂直供）
+海外同人作者专属服务
+2.4 首页飞轮策略
+纯文本
+
+
+
+
+英文飞轮（最优先，距首页仅 0.2 位）：
+
+[补 PDP 内容] → [排名 10.2→≤10] → [进入首页] → [首次点击] 
+    → [用户行为信号] → [排名巩固 8-10] → [更多展示] → 循环
+
+日文飞轮（季节驱动）：
+
+[コミケ C109 排期更新] → [活动页内容完善] → [展示增长] 
+    → [排名 19.1→12-16] → [点击] → 循环
+
+关键加速器：
+  1. 英文市场竞争弱 → 内容质量即可胜出
+  2. "入稿检查清单" → 独特价值（竞品没有）
+  3. "DHL 时间逆算表" → 解决海外同人作者最大痛点
+  4. コミケ有明确时间窗口 → 提前布局
+  5. 活动页 ↔ PDP 双向内链 → 权重互传
+2.5 逐页执行动作
+#	页面	具体动作	时间	目标词
+1	/en/product/doujinshi-printing/	PDP 接报价；补真实页数范围（8-200页）、装订选择（骑马钉/无线胶装/线装/中缝钉）、纸张选项（封面/内页分开）、文件检查清单（分辨率/出血/色彩模式）、国际交期（DHL 逆算）	Day 1-5	doujinshi printing
+2	/en/blog/comiket-printing-guide/ 或现有指南	接入稿检查 + C109/C110 活动排期 + 生产时间逆算表 + 海外作者专属指南	Day 3-7	comiket printing
+3	活动页 ↔ PDP	双向内链：活动页→PDP（"order your doujinshi now"），PDP→活动页（"check event schedule"）	Day 5	—
+4	/ja/comiket-c109/	更新 C109 排期（日期、场地、入稿截止日）；补印刷规格表；生产+DHL 时间逆算表	Day 1-5	コミケ 印刷
+5	/ja/product/doujinshi/	补正式报价表、页数/装订/纸张选择、入稿チェックリスト	Day 3-7	同人誌 印刷
+6	活动页 ↔ PDP (ja)	双向内链	Day 5	—
+独特内容①：入稿检查清单（File Check Checklist）
+
+纯文本
+
+
+
+
+✅ 分辨率：350dpi 以上（彩色）/ 600dpi 以上（黑白）
+✅ 出血：3mm（四边）
+✅ 色彩模式：CMYK（非 RGB）
+✅ 页数：4的倍数（骑马钉）/ 2的倍数（胶装）
+✅ 书脊宽度：根据页数和纸张厚度计算（提供计算器）
+✅ 文件格式：PDF/X-1a 或 AI（文字转曲）
+✅ 封面与内页分开提交
+✅ 跨页图注意中缝（骑马钉需预留 5mm）
+独特内容②：DHL 时间逆算表（以 C109 为例）
+
+纯文本
+
+
+
+
+┌─────────────────────────────────────────────────────────┐
+│  C109 时间逆算表（海外同人作者专用）                      │
+├─────────────────────────────────────────────────────────┤
+│  活动日：2026年12月30-31日（东京ビッグサイト）            │
+│  最晚到货：12月28日（留2天缓冲）                         │
+│  DHL 配送：5-7天（中国→日本）                            │
+│  最晚发货：12月21日                                      │
+│  生产时间：7-10天（含质检）                               │
+│  最晚入稿：12月11日                                      │
+│  打样确认：2-3天                                         │
+│  最晚下单：12月8日                                       │
+│                                                          │
+│  ⚠️ 特急プラン（3-5天生产）：最晚下单 12月13日           │
+│  ⚠️ 建议提前2周下单，避免年末物流高峰                    │
+└─────────────────────────────────────────────────────────┘
+2.6 AEO/GEO 专项
+FAQ Schema（英文 PDP）：
+
+纯文本
+
+
+
+
+Q1: What is the minimum page count for doujinshi printing?
+A: 8 pages for saddle-stitch binding, 20 pages for perfect binding. 
+   Maximum 200 pages for perfect binding.
+
+Q2: What binding options are available for doujinshi?
+A: Saddle stitch (for 8-64 pages), perfect binding (for 20-200 pages), 
+   and section-sewn binding (for premium editions).
+
+Q3: How long does doujinshi printing take?
+A: Standard production is 7-10 business days. Rush production (3-5 days) 
+   is available. International shipping via DHL takes 5-7 days.
+
+Q4: Can you ship doujinshi directly to Comiket or events in Japan?
+A: Yes. We can ship directly to your hotel, event venue, or a Japanese 
+   forwarding address. DHL delivery to Japan takes 5-7 business days.
+
+Q5: What file format should I submit?
+A: PDF/X-1a at 350dpi (color) or 600dpi (B&W), with 3mm bleed on all 
+   sides. Cover and inner pages should be submitted separately.
+GEO 可引用数据点：
+
+纯文本
+
+
+
+
+✅ "Comiket (Comic Market) is the world's largest self-published comic 
+   fair, held twice a year in Tokyo. C109 (December 2026) is expected 
+   to attract over 500,000 attendees across 2 days."
+
+✅ "For overseas doujinshi creators, the biggest challenge is timing: 
+   production + international shipping must be completed before the 
+   event. ZprintPro provides a reverse timeline calculator to help 
+   creators plan their orders."
+
+✅ "Saddle-stitch binding is the most popular choice for doujinshi 
+   under 64 pages, while perfect binding is preferred for thicker 
+   volumes. Section-sewn binding offers the highest durability for 
+   collector's editions."
+2.7 30天目标与停止规则
+指标	目标	停止/回滚条件
+doujinshi printing 排名	10.2→8-10（进入首页）	不用活动名称堆砌无关 SKU
+doujin printing 点击	保持已有点击	点击下降→保留原指南结构
+コミケ 印刷 排名	19.1→12-16	不新增第二个 C109 承接页
+首次非品牌点击	en 至少 1 次	活动日期或特急承诺无来源即停
+展示	コミケ 印刷保持 170+	—
+三、词簇③：骑马钉/小册子/教材/学校印刷簇（B级 · 止跌恢复）
+3.1 词簇范围定义
+子簇	英文	繁中	日文
+骑马钉	saddle stitch booklet printing, saddle stitch printing	騎馬釘印刷, 小冊子印刷	中綴じ 冊子 印刷
+教材	exercise book printing, textbook printing, school exercise book	教材印刷, 練習本印刷	教材 印刷製本, 教科書 印刷
+学校	school printing, school booklet printing	學校印刷	学校 印刷, 学校 教材
+工作簿	workbook printing	工作簿印刷	ワークブック 印刷
+3.2 当前数据诊断
+词/页面	展示	排名	点击	前期对照	核心问题
+saddle stitch booklet printing	15	9.6	0	94/3.46/2	展示暴跌 84%，排名从 3.46 退到 9.6
+/en/product/saddle-stitch-booklets/	251→96	—	3→0	—	页面展示腰斩
+/en/product/exercise-books/	235→69	—	2→0	—	展示暴跌 71%
+教材 印刷製本 (ja)	33	19.3	0	6/11.0/0	展示增长但排名后退
+教材 印刷 製本 (ja)	17	17.4	0	4/11.0/0	同簇
+诊断结论：
+
+这是下降赛道（宣传册/教材被电子化替代）
+但已有排名基础，需要止跌恢复而非追首页
+核心问题是真值不一致（不同页面的 MOQ/装订/纸张信息矛盾）
+3.3 竞品对标
+"saddle stitch booklet printing" SERP 分析
+排名	竞品	优势	弱点
+1	Vistaprint	品牌大、全品类、在线设计工具	非专精、品质一般、价格高
+2	Moo	设计感强、纸张品质好	价格高、非商业印刷定位
+3	PrintPlace	价格透明、在线报价	仅美国
+4	GotPrint	价格低	品质一般
+5-8	各类印刷商	各有特色	内容深度不足
+关键发现：
+
+竞争中等，但赛道在下降
+竞品内容以"在线报价+即时下单"为主
+缺少"页数/装订/纸张/跨页限制"的深度教育内容
+ZprintPro 的差异化：工厂直供价格 + 深度规格指南
+"教材 印刷製本" 日文竞争分析
+竞品	优势	弱点
+ラクスル	价格透明	教材非核心
+プリントパック	速度快	无教材专属内容
+学校教材専門印刷商	专精	网站质量差
+3.4 首页飞轮策略
+纯文本
+
+
+
+
+这不是"增长飞轮"，而是"恢复飞轮"：
+
+[诊断退场原因] → [修复真值不一致（P0-3）] → [恢复展示] 
+    → [排名回升] → [点击恢复] → [稳定]
+
+关键约束：
+  1. 真值未统一前禁止内容扩张
+  2. 不追首页，先恢复展示
+  3. 区分 exercise books vs textbooks 意图
+  4. 教材/学校采购是 B2B 场景，需要采购流程内容
+  5. 不以单日排名判断
+3.5 逐页执行动作
+#	页面	具体动作	时间	目标
+1	/en/product/saddle-stitch-booklets/	先完成 P0-3（真值统一）；补页数范围（8-64页）、装订说明、纸张选项（封面/内页）、跨页限制（中缝 5mm）、可采购信息（价格表+MOQ+交期）	Day 1-7	展示 15→30-50
+2	/en/category/books/	内链指向 saddle PDP，锚文本 "saddle stitch booklet printing"	Day 5	内链存在
+3	saddle 指南 blog	内链指向 PDP，锚文本 "order saddle stitch booklets"	Day 5	内链存在
+4	/en/product/exercise-books/	统一 MOQ/装订信息；补学校采购段（批量折扣、样品流程、交货时间）；明确区分 exercise books vs textbooks	Day 5-10	展示 69 停止下滑
+5	教材指南 hub	与 exercise-books PDP 互链；统一教材/教科書/ワークブック意图	Day 8-12	内链存在
+6	/ja/教材ガイド/	统一教材/教科書/ワークブック意图；PDP 接报价，指南接页数、装订、纸张与学校采购清单	Day 8-12	止住排名后退
+7	/zh-hk/category/books/ + saddle PDP	工艺/页数/跨页知识留 blog，价格与 MOQ 到 PDP	Day 10	词页分工清晰
+真值统一检查清单（P0-3）：
+
+纯文本
+
+
+
+
+必须统一的信息：
+  □ MOQ（最低起订量）：所有页面一致
+  □ 页数范围：骑马钉 8-64页，胶装 20-200页
+  □ 纸张选项：封面/内页分开列出
+  □ 价格区间：按数量阶梯
+  □ 生产时间：标准/加急
+  □ 配送时间：按地区
+
+⚠️ 任何页面的信息不一致都会导致 Google 信任度下降
+⚠️ 真值未统一前，禁止新增内容或修改 Title
+3.6 30天目标与停止规则
+指标	目标	停止/回滚条件
+saddle 展示	15→30-50（恢复观察阈值）	真值未统一前禁止内容扩张
+saddle 排名	先稳回首页，不保证恢复 3.46	展示继续归零→URL Inspection + 变更史
+exercise books 展示	69 停止下滑	不以单日排名判断
+exercise books 查询	若查询转向无关用途	收窄文案而非追词
+教材 (ja)	止住排名后退，恢复有效展示	不把多页机械合并；先看 query×page
+四、词簇④：目录印刷簇（B级 · 中程培育）
+4.1 词簇范围定义
+子簇	英文	繁中
+目录印刷	catalog printing, catalogue printing, product catalog printing	目錄印刷, 產品目錄印刷
+中国供应商	china catalog printing, catalogue printing china, catalog printing manufacturer	—
+供应商选择	catalog printing supplier, how to choose catalog printer	—
+打样/品质	catalog printing proof, color matching, print quality	打樣, 色差
+4.2 当前数据诊断
+词/页面	展示	排名	点击	前期对照	核心判断
+china catalog printing	78	18.0	0	102/18.7/0	中程，不承诺短期首页
+/en/blog/catalog-printing-china-supplier-guide/	203→103	—	0→1	—	展示降但已获首个点击
+/en/product/catalog-printing/	—	—	—	—	PDP 需确认状态
+核心判断：
+
+排名 18 位，距首页较远，不设 30 天首页硬承诺
+但已有首个点击（0→1），说明内容有吸引力
+策略是提升商业页展示份额与有效点击
+4.3 竞品对标
+"china catalog printing" SERP 分析
+排名	竞品	类型	优势	弱点
+1-3	阿里巴巴供应商	平台列表	价格极低、供应商多	无品牌、无内容、无信任
+4-5	中国印刷厂独立站	独立站	价格低	网站质量差、无 SEO
+6-7	Vistaprint/品牌商	品牌	品牌大	非中国直供
+8-10	各类印刷商	混合	各有特色	内容深度不足
+关键发现：
+
+纯文本
+
+
+
+
+"china catalog printing" 的搜索意图：
+  → 用户想找中国的目录印刷供应商
+  → 核心关注：价格、品质、交期、沟通、信任
+
+ZprintPro 的天然优势：
+  ✅ 中国工厂直供（价格）
+  ✅ 有英文网站（沟通）
+  ✅ 有品质保证内容（信任）
+  ✅ 有打样流程（降低风险）
+
+但当前问题：
+  ❌ 排名 18 位，需要建立权威
+  ❌ Guide 和 PDP 的意图分工不清
+  ❌ 缺少"供应商选择指南"的深度内容
+4.4 首页飞轮策略
+纯文本
+
+
+
+
+中程策略（不承诺30天首页）：
+
+[Guide 建立权威] → [PDP 承接交易] → [双向内链] 
+    → [展示份额提升] → [点击增长] → [排名缓慢提升]
+
+关键：
+  1. Guide 主接信息意图（supplier selection / 打样 / 色差 / 贸易风险）
+  2. PDP 主接交易意图（报价 / 下单 / 规格选择）
+  3. 不合并、不 301、不 canonical 归并
+  4. 建立"中国工厂直供"的信任叙事
+4.5 逐页执行动作
+#	页面	具体动作	时间
+1	/en/product/catalog-printing/	PDP 主接交易；补纸张选项（铜版纸/哑粉纸/特种纸）、装订（骑马钉/胶装/精装）、数量阶梯价格、打样流程、交期	Day 5-10
+2	/en/blog/catalog-printing-china-supplier-guide/	强化信息意图：供应商选择标准（5-7个维度）、打样流程详解、色差控制方法（Pantone/CMYK）、贸易与交付风险（付款/物流/验货）、常见问题	Day 5-10
+3	双向内链	Guide→PDP（"ready to order? Get a quote"），PDP→Guide（"how to choose a reliable supplier"）	Day 8
+4	FAQ Schema	两页各加 3-5 个 FAQ	Day 10
+Guide 内容结构（供应商选择指南）：
+
+纯文本
+
+
+
+
+1. 为什么选择中国印刷供应商？（成本优势 30-50%）
+2. 选择供应商的 7 个维度：
+   - 工厂实力（设备、产能）
+   - 品质认证（ISO 9001, FSC）
+   - 打样流程（免费/收费、时间）
+   - 色差控制（Pantone 匹配、CMYK 校准）
+   - 沟通能力（英文水平、响应速度）
+   - 贸易条款（付款方式、退款政策）
+   - 物流方案（DHL/FedEx/海运）
+3. 打样流程详解（从文件到样品到确认）
+4. 常见风险与避坑指南
+5. 如何验证供应商（工厂视频、客户评价、样品测试）
+6. FAQ
+7. CTA → PDP
+4.6 30天目标与停止规则
+指标	目标	停止/回滚条件
+展示份额	商业页（PDP）展示份额提升	若 PDP 份额下降→检查意图错配
+点击	有效点击增长（当前 0→1，目标 3+）	—
+排名	18位，不设30天首页硬承诺	—
+禁止	—	禁止为归并而 canonical/301
+五、词簇⑤：海报/传单/即日印刷簇（C级 · 守位不追）
+5.1 词簇范围定义
+子簇	英文	繁中
+海报	poster printing, a2 poster, a1 poster, large format poster	海報印刷, 印海報
+传单	flyer printing, flyer sizes, leaflet printing	傳單印刷, 宣傳單張
+即日	same day printing, rush printing	即日印刷
+零售	poster printing near me	海報印刷 邊度
+5.2 当前数据诊断
+词/页面	展示	排名	点击	前期对照	判断
+a2 poster (en)	44	11.9	0	21/34.4/0	排名改善中（34.4→11.9）
+/en/blog/flyer-sizes-compared/	222→124	—	0	—	信息页，次优先
+海報印刷 (zh-hk)	—	—	—	—	保留新 title 观察
+5.3 战略判断
+纯文本
+
+
+
+
+海报/传单是强下降赛道：
+  - 被电子屏幕、社交媒体、数字广告替代
+  - 搜索量长期趋势下降
+  - 但仍有存量需求（零售、活动、餐饮、学校）
+
+即日印刷是特殊需求：
+  - 搜索量小但意图极强（紧急需求）
+  - 如果能承接，转化率极高
+  - 但需要真实即日能力（不能虚假承诺）
+
+策略：守位不追，不投入大量资源。
+  - 海报：保留现有页面，观察排名改善
+  - 传单：信息页诊断，次优先
+  - 即日：如果有真实能力，可以做；没有则不做
+5.4 竞品对标
+"a2 poster printing" SERP
+竞品	优势	弱点
+Vistaprint	品牌大、在线设计	价格高、非工厂
+Moo	设计感、纸张好	价格极高
+本地印刷店	即日能力、面对面	无网站或网站差
+中国供应商	价格低	无即日能力、配送慢
+海报印刷的竞争格局：本地化需求强，跨境印刷商在"即日"场景无优势。但在"大批量+低价"场景有优势。
+
+5.5 逐页执行动作（最小化）
+#	页面	动作	时间
+1	/zh-hk/category/posters/	保留 10/26 新 title 观察，不做额外改动	观察
+2	poster-printing-guide	指南正文用自然锚指向 category/PDP，信息段避免重复"立即报价"模板	Day 10
+3	/en/blog/flyer-sizes-compared/	CTR/查询组合诊断，次优先	Day 15+
+4	/en/product/a2-posters/	观察 10/26 后改动效果，不额外干预	观察
+5	即日印刷	先确认是否有真实即日能力；有则做，无则不做	待确认
+5.6 30天目标
+指标	目标
+排名	不下降即可
+展示	不大幅收缩（>30%）
+点击	有则好，无则不追
+资源投入	最小化，不超过总资源 5%
+六、词簇⑥：年賀状/卒アル簇（C级 · 季节窗口）
+6.1 词簇范围定义
+子簇	日文
+年賀状	年賀状 印刷, 年賀状 早割, 年賀状 印刷 安い, 年賀状 2027
+卒アル	卒アル 販売, 卒業アルバム 印刷, 卒アル 製作
+相关	卒業記念品, 同窓会 印刷
+6.2 当前数据诊断
+词	展示	排名	点击	前期对照	判断
+卒アル販売	16	5.0	0	1/2.0/0	小样本高方差，守位争首击
+年賀状印刷	—	—	—	—	需确认真值
+6.3 竞品对标
+"卒アル 販売" / "卒業アルバム 印刷" SERP
+排名	竞品	优势	弱点
+1	学研	品牌强、学校渠道深	价格高、非印刷专精
+2	富士フイルム	品牌大、品质好	价格极高
+3	アスカネット	在线制作工具	非印刷厂
+4-6	小型卒アル制作公司	专精、价格灵活	网站质量参差
+"年賀状 印刷" SERP
+排名	竞品	优势	关键策略
+1	ラクスル	价格透明、早割力度大	早割 30-50% OFF
+2	プリントパック	速度快	即日/翌日配送
+3	年賀家族	设计感强	设计师模板
+4	ネットスクウェア	早割力度最大	早割 60% OFF
+5	しまうまプリント	价格低	1枚从 ¥30
+关键发现：
+
+年賀状市场竞争极其激烈，价格战严重
+早割是核心策略（30-60% OFF）
+ZprintPro 如果没有早割真值，不应强行进入
+卒アル竞争相对温和，且排名已在 5.0
+6.4 首页飞轮策略
+纯文本
+
+
+
+
+卒アル飞轮（守位争首击）：
+  排名 5.0 → 补内容（1冊起条件、装订差异、用途场景）→ 首次点击 
+  → 排名巩固 → 循环
+
+年賀状飞轮（条件启动）：
+  真值确认 → A/B 分支判断 → 只有 A 分支才扩大内链
+  无真值 → 转 B 分支（不做）
+
+⚠️ 核心约束：
+  - 16 展示为高方差小样本，不因一周回落重写 title
+  - 无标准规格或无早割真值时转 B 分支
+6.5 逐页执行动作
+#	页面	具体动作	时间	停止条件
+1	/ja/product/graduation-yearbook/	明确 1冊起的真实条件；3种装订差异（精装/软装/骑马钉）；学校/クラス/同窓会用途分段；制作流程与文件要求	Day 5-10	16展示为高方差小样本，不因一周回落重写 title
+2	年賀状页面	按 P0-1 A/B 分支推进	Day 5-15	无标准规格或无早割真值时转 B 分支
+3	年賀状内链	只有 A 分支才扩大年賀状内链	视 A/B 结果	B 分支则不做
+6.6 30天目标与停止规则
+指标	目标	停止条件
+卒アル排名	守 ≤8	不因一周回落重写 title
+卒アル展示	继续增长并争首击	—
+年賀状	真值闭环后 0→有展示	不承诺首页
+年賀状	无真值→转 B 分支	—
+七、词簇⑦：纸袋/环保包装簇（C级 · 诊断优先）
+7.1 词簇范围定义
+子簇	英文	繁中	日文
+纸袋	paper bags, eco paper bag, kraft paper bags, custom paper bags	紙袋印刷, 環保紙袋	紙袋 印刷, 紙袋 製作
+环保包装	eco-friendly packaging, sustainable packaging	環保包裝	エコパッケージ
+牛皮纸	kraft paper packaging, kraft bags	牛皮紙包裝	クラフト紙 パッケージ
+GSM	paper bag gsm, paper thickness	—	—
+7.2 当前数据诊断
+页面	展示	点击	核心问题
+/en/blog/eco-paper-bag-gsm/	103→0	0	展示归零，原因不明
+クラフト紙 パッケージ (ja)	—	—	中期培育
+核心问题：展示从 103 骤降到 0，但页面仍返回 200 + index/follow + 自指 canonical。需要诊断。
+
+7.3 诊断流程（E6 规则 · 严格执行）
+纯文本
+
+
+
+
+⚠️ 禁止直接重写！
+⚠️ 200 + index/follow + 自指 canonical 不能证明已被索引！
+
+诊断步骤：
+
+Step 1: GSC URL Inspection（Day 1）
+  → 输入完整 URL
+  → 确认"已收录"还是"未收录"
+  → 确认是否有手动操作（Manual Actions）
+  → 确认最后抓取时间
+
+Step 2: 变更史（Day 1-2）
+  → 近 4-8 周是否有任何改动？
+  → 内容、Title、Meta、内链、URL 结构
+  → 是否有其他页面抢占了同一关键词？
+
+Step 3: 内链检查（Day 2）
+  → 是否有内链指向该页面？
+  → 内链是否被移除？
+  → 锚文本是否自然？
+
+Step 4: 收录检查（Day 2）
+  → site:zprintpro.com/en/blog/eco-paper-bag-gsm/
+  → 确认是否在 Google 索引中
+
+Step 5: 竞品检查（Day 3）
+  → 搜索 "eco paper bag gsm"
+  → 确认是否有新的强竞品出现
+  → 确认搜索意图是否发生变化
+
+根据诊断结果决定：
+  A. 如果是索引问题 → 请求重新索引
+  B. 如果是内容问题 → 小幅修复
+  C. 如果是意图变化 → 调整内容方向
+  D. 如果是竞品变化 → 差异化内容
+  E. 如果原因不明 → 继续观察，不盲改
+7.4 竞品对标
+"eco paper bag gsm" SERP
+排名	竞品	内容类型	优势
+1-3	包装行业媒体	教育型文章	权威性
+4-5	纸袋制造商	产品页+指南	专业性
+6-8	环保组织/政府	标准/法规	可信度
+"eco paper bag gsm" 是一个信息型查询（用户想了解纸袋的克重/厚度），不是交易型。ZprintPro 的 blog 定位是正确的，但需要确保内容深度和权威性。
+
+7.5 逐页执行动作
+#	动作	时间	停止条件
+1	URL Inspection + 变更史诊断	Day 1-3	—
+2	根据诊断结果决定修复方案	Day 5-7	不盲改
+3	クラフト紙包装复用现有 PDP/category	Day 10+	不开新近似文章
+4	纸袋与包装盒的内链（语义相关）	Day 10	每源页每目标仅 1 条
+7.6 30天目标与停止规则
+指标	目标	停止条件
+诊断完成	解释 103→0 的原因	—
+修复	根据诊断结果执行	不盲改
+クラフト紙	保持展示、改善主 URL 份额	不进入本月首页硬目标
+八、跨词簇内链总架构
+纯文本
+
+
+
+
+┌─────────────────────────────────────────────────────────────────┐
+│                    七大词簇内链架构                               │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  词簇① 贴纸                                                     │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐                   │
+│  │ category │───→│   PDP    │←───│ Guide×2  │                   │
+│  │ stickers │    │ small-   │    │ sticker  │                   │
+│  │          │    │ batch    │    │ guide +  │                   │
+│  │          │    │ stickers │    │ buying   │                   │
+│  └──────────┘    └──────────┘    └──────────┘                   │
+│                                                                  │
+│  词簇② 同人誌/コミケ                                            │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐                   │
+│  │ 活动页   │←──→│   PDP    │←──→│  Guide   │                   │
+│  │ C109     │    │ doujinshi│    │ comiket  │                   │
+│  │          │    │ printing │    │ guide    │                   │
+│  └──────────┘    └──────────┘    └──────────┘                   │
+│                                                                  │
+│  词簇③ 骑马钉/教材                                              │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐                   │
+│  │ category │───→│   PDP    │←───│  Guide   │                   │
+│  │ books    │    │ saddle   │    │ saddle   │                   │
+│  │          │    │ stitch   │    │ guide    │                   │
+│  └──────────┘    └──────────┘    └──────────┘                   │
+│       │                                                          │
+│       └──→ exercise-books PDP ←──→ 教材指南 hub                 │
+│                                                                  │
+│  词簇④ 目录印刷                                                 │
+│  ┌──────────┐    ┌──────────┐                                    │
+│  │   PDP    │←──→│  Guide   │                                    │
+│  │ catalog  │    │ supplier │                                    │
+│  │ printing │    │ guide    │                                    │
+│  └──────────┘    └──────────┘                                    │
+│                                                                  │
+│  词簇⑤ 海报/传单（最小化）                                      │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐                   │
+│  │ category │───→│   PDP    │←───│  Guide   │                   │
+│  │ posters  │    │ a2/a1    │    │ poster   │                   │
+│  │          │    │ posters  │    │ guide    │                   │
+│  └──────────┘    └──────────┘    └──────────┘                   │
+│                                                                  │
+│  词簇⑥ 年賀状/卒アル                                            │
+│  ┌──────────┐    ┌──────────┐                                    │
+│  │ 卒アル   │    │ 年賀状   │                                    │
+│  │ PDP      │    │ A/B分支  │                                    │
+│  └──────────┘    └──────────┘                                    │
+│                                                                  │
+│  词簇⑦ 纸袋/环保                                                │
+│  ┌──────────┐    ┌──────────┐                                    │
+│  │ eco-paper│    │ クラフト │                                    │
+│  │ -bag-gsm │    │ 紙 包装  │                                    │
+│  │ (诊断中) │    │ (培育)   │                                    │
+│  └──────────┘    └──────────┘                                    │
+│                                                                  │
+│  跨簇内链（每源页每目标仅 1 条）：                                │
+│  贴纸 ↔ 包装（产品标签与包装相关）                               │
+│  同人誌 ↔ 骑马钉（装订工艺相关）                                 │
+│  教材 ↔ 骑马钉（装订工艺相关）                                   │
+│  纸袋 ↔ 环保包装（语义相关）                                     │
+│                                                                  │
+│  ⚠️ 规则：                                                       │
+│  - 每源页每个目标仅 1 条内链                                     │
+│  - 锚文本自然精确，不批量复制                                    │
+│  - 信息段避免重复"立即报价"模板                                  │
+│  - 指南正文用自然锚指向 category / PDP                           │
+└─────────────────────────────────────────────────────────────────┘
+九、30天总执行时间表
+天数	①贴纸(A)	②同人誌(A)	③骑马钉/教材(B)	④目录(B)	⑤海报(C)	⑥年賀状/卒アル(C)	⑦纸袋(C)
+Day 1-3	PDP 内容补充 + Meta 优化	PDP 补内容 + 入稿清单	P0-3 真值统一	—	—	—	诊断启动
+Day 3-5	内链加固（2条）	活动页更新 + 逆算表	—	—	—	—	诊断继续
+Day 5-8	繁中指南差异化	双向内链	saddle PDP 补内容	PDP 补内容	观察	卒アル补内容	诊断结论
+Day 8-12	FAQ Schema	FAQ Schema	exercise-books 统一	Guide 强化 + 双向内链	—	年賀状 A/B	修复（视诊断）
+Day 10-15	—	—	教材 hub 统一	FAQ Schema	指南内链	—	クラフト培育
+Day 15-20	—	—	ja 教材统一	—	传单诊断	—	—
+Day 20-25	—	—	—	—	—	—	—
+Day 25-30	全簇复盘	全簇复盘	全簇复盘	全簇复盘	全簇复盘	全簇复盘	全簇复盘
+十、资源分配与优先级
+优先级	词簇	资源占比	核心理由
+A	① 贴纸	20%	已在首页，只差 CTR 突破，最快见效
+A	② 同人誌/コミケ	25%	排名 10.2 距首页一步 + 季节窗口 + 英文竞争弱
+B	③ 骑马钉/教材	18%	下降赛道但已有基础，恢复即可
+B	④ 目录印刷	12%	中程培育，建立供应商权威
+C	⑤ 海报/传单	5%	守位不追，最小化投入
+C	⑥ 年賀状/卒アル	10%	季节窗口，卒阿尔守位
+C	⑦ 纸袋/环保	10%	先诊断再行动，不盲改
+十一、30天验收指标总表
+词簇	核心指标	30天目标	验证方式
+① 贴纸	首个非品牌点击	≥1 次	GSC
+① 贴纸	排名	守 ≤6	GSC
+② 同人誌	doujinshi printing 排名	10.2→8-10	GSC
+② 同人誌	コミケ 印刷排名	19.1→12-16	GSC
+② 同人誌	首次非品牌点击	≥1 次	GSC
+③ 骑马钉	展示恢复	15→30-50	GSC
+③ 教材	展示止跌	69 不再下滑	GSC
+④ 目录	有效点击	1→3+	GSC
+⑤ 海报	排名不下降	维持	GSC
+⑥ 卒アル	排名	守 ≤8	GSC
+⑥ 年賀状	展示	0→有展示（A分支）	GSC
+⑦ 纸袋	诊断完成	解释 103→0 原因	诊断报告
+十二、一句话总结
+贴纸和同人誌是最快能看到结果的冲刺（各 20-25% 资源），骑马钉和目录是恢复与培育（各 12-18%），海报/年賀状/纸袋是守位与诊断（各 5-10%）。30天后的验收标准不是"所有词都上首页"，而是"贴纸有首次点击、同人誌进入首页、骑马钉展示恢复、目录点击增长、纸袋诊断完成"。

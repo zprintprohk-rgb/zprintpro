@@ -1,0 +1,468 @@
+{
+  "probed_at": "2026-10-26T10:21:30Z",
+  "method": "Live HTTP GET; HTML head/body parsed. HTTP 200 and self-canonical do not prove Google indexing.",
+  "pages": [
+    {
+      "path": "/robots.txt",
+      "url": "https://zprintpro.com/robots.txt",
+      "status": 404,
+      "elapsed_s": 0.39,
+      "content_type": "text/html; charset=utf-8",
+      "title": "404: This page could not be found.",
+      "description": "",
+      "h1": [
+        "404"
+      ],
+      "canonical": "",
+      "robots": "noindex",
+      "text_length": 68,
+      "risk_snippets": []
+    },
+    {
+      "path": "/en/product/small-batch-stickers/",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "status": 200,
+      "elapsed_s": 2.17,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Small Batch Custom Stickers 50pcs from $0.045 | ZprintPro",
+      "description": "Custom small batch stickers from 50 pcs at $0.045/pc. No setup fees, free 2-hour digital proof, 4-day USA delivery. Waterproof PVC / BOPP / coated paper, die-cut any shape, foil + UV finish. Free US shipping $99+. 30s AI quote, WhatsApp 2h reply.",
+      "h1": [
+        "Small Batch Stickers 50+ | No Setup | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "robots": "index, follow",
+      "text_length": 20400,
+      "risk_snippets": [
+        "e: We resize your artwork for any custom shape at no extra charge. Submit AI, PDF, or high-res PNG. Free Sample Proof: Digital color proof before production. Physical sample ships via DHL Express (2-4 day delivery). Certified Quality & Global Delivery: Production runs on",
+        "er $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsAp",
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/zh-hk/category/stickers/",
+      "url": "https://zprintpro.com/zh-hk/category/stickers/",
+      "status": 200,
+      "elapsed_s": 1.28,
+      "content_type": "text/html; charset=utf-8",
+      "title": "貼紙印刷 10張起・防水透明異形貼紙・免費設計燙金 | 智印港",
+      "description": "貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC…",
+      "h1": [
+        "香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/category/stickers/",
+      "robots": "index, follow",
+      "text_length": 7715,
+      "risk_snippets": []
+    },
+    {
+      "path": "/ja/product/waterproof-stickers/",
+      "url": "https://zprintpro.com/ja/product/waterproof-stickers/",
+      "status": 200,
+      "elapsed_s": 1.17,
+      "content_type": "text/html; charset=utf-8",
+      "title": "防水ステッカー | PVC ダイカット | 10枚〜¥41〜 | ZprintPro",
+      "description": "防水ステッカー 10枚〜¥41〜。PVC防水／PP合成紙の2大面材、UV耐性インクで屋外3年の褪色対応。マット／グロスラミ、型抜き対応。設備ラベル、車用、ドリンクバケツに。5-7営業日発送、1時間無料デジタル校正、全国送料無料。",
+      "h1": [
+        "防水ステッカー｜PVC防水・屋外対応｜ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/ja/product/waterproof-stickers/",
+      "robots": "index, follow",
+      "text_length": 11528,
+      "risk_snippets": [
+        "mm〜300×400mm。ICCカラーマネジメントでブランドカラーを安定再現し、可変データ（連番／バーコード／QR）にも対応。 料金は透明：10枚から、版代・型代ゼロ。標準納期5-7営業日、お急ぎ便（24時間校正＋2日制作）は+20%。日本全国送料無料、DHL国際配送で2-4日納品。商品ページの30秒AI見積もりで即時お見積もり。 よくある質問 Q1: 本当に防水ですか？ はい。PVC防水ステッカーは雨・洗浄・短時間の浸水に対応。ラミ加工版は食洗機80°Cの高温サイクルにも耐え、洗う容器への貼付に最適です。 Q2: 屋外で",
+        "本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急24時間対応 標準3-5営業日、急ぎは最短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある",
+        "短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 防水ステッカーは何枚から？料金は？ + 10枚〜¥41〜、PVC防水素材、3-5営業日で全国配送。UV耐性インクで屋外3-5年。 防水ステッカーの屋外耐久年数は？ + PVC防水ステッカーはUV耐性インクで屋外3-5年、屋内5-7年。",
+        "国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 防水ステッカーは何枚から？料金は？ + 10枚〜¥41〜、PVC防水素材、3-5営業日で全国配送。UV耐性インクで屋外3-5年。 防水ステッカーの屋外耐久年数は？ + PVC防水ステッカーはUV耐性インクで屋外3-5年、屋内5-7年。マット/グロスラミネートで耐擦性向上。 シール印刷の最小ロ",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    },
+    {
+      "path": "/en/product/doujinshi-printing/",
+      "url": "https://zprintpro.com/en/product/doujinshi-printing/",
+      "status": 200,
+      "elapsed_s": 1.25,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Doujinshi Printing Comiket | 10 MOQ | USA | ZprintPro",
+      "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket | Free Design",
+      "h1": [
+        "Doujinshi Printing for Comiket & Doujin Events"
+      ],
+      "canonical": "https://zprintpro.com/en/product/doujinshi-printing/",
+      "robots": "index, follow",
+      "text_length": 12051,
+      "risk_snippets": [
+        "rinting for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+        " & Skincare, Education & Training, Wedding, Brand Activations. Doujinshi Printing from 10 pcs, from ¥7,500〜/部〜, standard lead time 5-7 days, free digital proof within 1 hour of file submission. ¥7,500〜/部〜 ¥7,500〜/部〜 Final quote by specs Free US shipping $99+ SKU DJ-",
+        " from ¥7,500〜/部〜, standard lead time 5-7 days, free digital proof within 1 hour of file submission. ¥7,500〜/部〜 ¥7,500〜/部〜 Final quote by specs Free US shipping $99+ SKU DJ-001 Minimum order 10pcs Standard lead time 5-7 days Quality guarantee Free reprint if unsatisf",
+        "0〜/部〜, standard lead time 5-7 days, free digital proof within 1 hour of file submission. ¥7,500〜/部〜 ¥7,500〜/部〜 Final quote by specs Free US shipping $99+ SKU DJ-001 Minimum order 10pcs Standard lead time 5-7 days Quality guarantee Free reprint if unsatisfied Free sh",
+        "n is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. A 24-hour rush is available before Comiket; during peak seasons (June-July and December) plan 10-15 business days ahead. Specifications + Material FSC-certified woodfree",
+        "ues, and folded formats for announcement pieces. The Comiket rhythm is the deadline math: C109 runs December 29-31, 2026 at Tokyo Big Sight, which means finished books need to be in your hands before load-in — not printing that week. Ordering 3-4 weeks ahead of the event",
+        "n upgrade for illustration-heavy books. Q3: How early should I order for C109? 3-4 weeks before the December 29-31 event is the safe window — it covers proofing, production and DHL 2-4 day shipping to Japan. Q4: Can I combine doujinshi with other peripherals? Yes — stick",
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A"
+      ]
+    },
+    {
+      "path": "/ja/product/doujinshi-printing/",
+      "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "status": 200,
+      "elapsed_s": 1.4,
+      "content_type": "text/html; charset=utf-8",
+      "title": "同人誌印刷 コミケ対応 10冊〜 小ロット 短納期 | ZprintPro",
+      "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro",
+      "h1": [
+        "同人誌印刷 コミケ・即売会対応"
+      ],
+      "canonical": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "robots": "index, follow",
+      "text_length": 6129,
+      "risk_snippets": [
+        "から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。 同人誌印刷 は 10部〜から、¥7,500〜/部〜 〜、標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。 ¥7,500〜/部〜 ¥7,500〜/部〜 仕様により正式見積 $500相当以上 送料無料 製品番号 DJ-001 最小注文数 10部〜 標準納期 5-7 営業日 品質保証 無料再印刷 送料無料 全国配送 30秒無料見積もり Wh",
+        "、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。 同人誌印刷 は 10部〜から、¥7,500〜/部〜 〜、標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。 ¥7,500〜/部〜 ¥7,500〜/部〜 仕様により正式見積 $500相当以上 送料無料 製品番号 DJ-001 最小注文数 10部〜 標準納期 5-7 営業日 品質保証 無料再印刷 送料無料 全国配送 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイン 無料サンプル 全国配送 100%満足保証 標準",
+        "育・研修、婚礼・冠婚葬祭、ブランドイベント。 同人誌印刷 は 10部〜から、¥7,500〜/部〜 〜、標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。 ¥7,500〜/部〜 ¥7,500〜/部〜 仕様により正式見積 $500相当以上 送料無料 製品番号 DJ-001 最小注文数 10部〜 標準納期 5-7 営業日 品質保証 無料再印刷 送料無料 全国配送 30秒無料見積もり WhatsAppで問い合わせ アジア自社工場 無料デザイン 無料サンプル 全国配送 100%満足保証 標準 5-7 営業日 HP",
+        "ットUV・マットラミネートで表紙絵を立てられます。製本はぺらぺらめくりやすい無線綴じ（中綴じ）、分厚い号には上製本、告知紙には折り加工の3方式から。 コミケの時間割は逆算がすべて：C109は2026年12月29日〜31日に東京ビッグサイトで開催。搬入日に手元に本がある状態がゴールで、印刷がその週では間に合いません。イベントの3〜4週間前までに発注すれば、校正・生産・日本へのDHL配送（2〜4日）に十分な余裕を持てます。即売会や一日イベントの通年スケジュールも同様です。入稿チェックリストは コミケ印刷準備ガイド 、初めての頒布",
+        "ができます。 Q2: 本文をフルカラーにできますか？ 可能です。標準は表紙カラー＋本文モノクロ、イラスト主体の本は全ページカラーへアップグレードできます。 Q3: C109に間に合わせる発注はいつ？ 12月29日〜31日の開催から逆算して3〜4週間前まで。校正・生産・DHL2〜4日の配送まで含めた安全圏です。 Q4: 同人誌と他グッズを一緒に発注できますか？ 可能です。ステッカー・アクリルスタンド・ポスターを同時発注・同便出荷でき、校正も一括で回せます。 データをお送りいただければ無料デジタル校正でお応えします——Whats",
+        "本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急24時間対応 標準3-5営業日、急ぎは最短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある",
+        "短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 同人誌印刷はどこがいい？コミケに間に合う？ + ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前24時間特急対応、DHLで2-4日。日本語サポートあり。 同人誌のページ数と製本は？ + 中綴じ8〜64ペー",
+        "国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 同人誌印刷はどこがいい？コミケに間に合う？ + ZprintProは10冊から、A5/B5、表紙カラー・本文モノクロ、コミケ前24時間特急対応、DHLで2-4日。日本語サポートあり。 同人誌のページ数と製本は？ + 中綴じ8〜64ページ、64ページ超は無線綴じ、A5/B5/A4。10冊から、"
+      ]
+    },
+    {
+      "path": "/zh-hk/product/doujinshi-printing/",
+      "url": "https://zprintpro.com/zh-hk/product/doujinshi-printing/",
+      "status": 200,
+      "elapsed_s": 1.65,
+      "content_type": "text/html; charset=utf-8",
+      "title": "同人誌印刷 10本起印 | Comiket前24小時特急對應 | 智印港",
+      "description": "同人誌印刷 10 本起印，Comiket 會期前 24 小時特急對應，DHL 直送日本 2-4 個工作天。A5/B5 標準尺寸,封面彩色、內頁單色,10 本起印,Comiket 會期前 24 小時特急對應。自營工場 DHL Express 直送日本 2-4 個工作天,繁中客服 + 日文客服雙語支援 | 即時報價",
+      "h1": [
+        "同人誌印刷 - Comiket / 即售會 / 創作展特化服務"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/product/doujinshi-printing/",
+      "robots": "index, follow",
+      "text_length": 5550,
+      "risk_snippets": [
+        "5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 同人誌印刷 10部〜起印，¥7,500〜/部〜 起，標準交期 5-7 天，提交檔案後 1 小時內免費數碼打稿。 ¥7,500〜/部〜 ¥7,500〜/部〜 實價按規格報價 滿$500包郵 產品編號 DJ-001 最低訂購量 10部〜 標準交期 5-7 天 品質保證 不滿意免費重印 滿$500包郵 港九新界順豐 30 秒 AI 報價 WhatsApp 即時查",
+        "急対応。 適配行業：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 同人誌印刷 10部〜起印，¥7,500〜/部〜 起，標準交期 5-7 天，提交檔案後 1 小時內免費數碼打稿。 ¥7,500〜/部〜 ¥7,500〜/部〜 實價按規格報價 滿$500包郵 產品編號 DJ-001 最低訂購量 10部〜 標準交期 5-7 天 品質保證 不滿意免費重印 滿$500包郵 港九新界順豐 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 免費打樣 送貨上門 100%滿意保證 標準 5-7 天 H",
+        "飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。 同人誌印刷 10部〜起印，¥7,500〜/部〜 起，標準交期 5-7 天，提交檔案後 1 小時內免費數碼打稿。 ¥7,500〜/部〜 ¥7,500〜/部〜 實價按規格報價 滿$500包郵 產品編號 DJ-001 最低訂購量 10部〜 標準交期 5-7 天 品質保證 不滿意免費重印 滿$500包郵 港九新界順豐 30 秒 AI 報價 WhatsApp 即時查詢 深圳自有工廠 免費設計 免費打樣 送貨上門 100%滿意保證 標準 5-7 天 HP Indigo 15",
+        "置。請註明尺寸、頁數、裝訂方式（膠裝或騎馬釘）以及印刷版本（內頁單色或全彩），我們會據此安排製程並進行對稿，確認版面無誤後才開始印刷。 最低起印量為 10 本，適合個人社團小量試印或會場首發。單價由 ¥7,500 起／部，頁數、尺寸、裝訂與彩色範圍都會影響最終報價，批量訂購歡迎查詢報價。 C109 直答：C109（コミケ109）將於 2026 年 12 月 29 日至 31 日在東京國際展示場舉行。以完工日倒推，建議活動前 3-4 週落單——預留打樣、生產（常規 5 天、加急 2-3 天）與 DHL 日本 2-4 天配送的完整",
+        "單？1 小時免費打稿 WhatsApp 客服 +86 198 8085 1334 或點擊「30 秒 AI 報價」· 2 小時內回覆 · 免費設計諮詢 30 秒 AI 報價 WhatsApp 即時查詢 ¥7,500〜/部〜 30 秒報價 WhatsApp 智印港 是全球智能印刷訂製平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。 香港九龍新蒲崗大有街3號萬廣大廈15樓C室 +86 198 8085 1334 [email protected] "
+      ]
+    },
+    {
+      "path": "/ja/comiket-c109/",
+      "url": "https://zprintpro.com/ja/comiket-c109/",
+      "status": 200,
+      "elapsed_s": 1.34,
+      "content_type": "text/html; charset=utf-8",
+      "title": "コミケ C109 同人誌印刷 | 10冊から 12/29開幕 | ZprintPro",
+      "description": "コミケ C109（2026年12月29-31日・東京ビッグサイト）向け同人誌印刷。10冊から、A5/B5、表紙カラー＋本文モノクロ、標準5-7営業日、開幕前24時間特急、DHL2-4日。締切逆算表と入稿チェックリスト付き。",
+      "h1": [
+        "コミケ C109 同人誌印刷"
+      ],
+      "canonical": "https://zprintpro.com/ja/comiket-c109/",
+      "robots": "index, follow",
+      "text_length": 3036,
+      "risk_snippets": [
+        "2/21〜12/23 12/23〜12/27 2 日 特急 12/23（水） 12/24 12/26〜12/28 1 日 品目と価格の考え方 同人誌は表紙フルカラー＋本文モノクロが標準構成で、単価は ¥7,500 から（製品ページ価格表どおり）。実際の単価はページ数・部数・用紙・製本で変動するため、見積りで確定します。 同人誌：10 冊から／A5・B5（A4 も相談可） ステッカー：10 枚から ポスター・カード類：1 部から（A2 オフセットは 10 枚から） まとめ発注なら校正も一括で回せます 入稿前チェックリスト 塗り足",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    },
+    {
+      "path": "/en/product/saddle-stitch-booklets/",
+      "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+      "status": 200,
+      "elapsed_s": 0.61,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Saddle Stitch Booklets A4/A5 | 10 MOQ $1.84 | ZprintPro",
+      "description": "Custom saddle stitch booklets from ZprintPro the US. Premium Custom, 4-color CMYK. 10-piece MOQ. Free US shipping over $100, DHL Express | Free Design",
+      "h1": [
+        "Saddle Stitch Booklets 100+ | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+      "robots": "index, follow",
+      "text_length": 16026,
+      "risk_snippets": [
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/en/product/exercise-books/",
+      "url": "https://zprintpro.com/en/product/exercise-books/",
+      "status": 200,
+      "elapsed_s": 0.62,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Exercise Books | Saddle-Stitched | 10 MOQ | ZprintPro",
+      "description": "Custom exercise books from ZprintPro the US. Perfect Bound, 4-color CMYK. 10-piece MOQ. Free US shipping over $100, DHL Express | Free Design",
+      "h1": [
+        "Exercise Books 100+ | Perfect Bound | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/en/product/exercise-books/",
+      "robots": "index, follow",
+      "text_length": 15557,
+      "risk_snippets": [
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/ja/blog/textbook-printing-guide/",
+      "url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "status": 200,
+      "elapsed_s": 1.11,
+      "content_type": "text/html; charset=utf-8",
+      "title": "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro",
+      "description": "教科書・教材の印刷製本ガイド：中綴じ/無線綴じ/上製本 3 製本方式、紙材質の選び方、100冊から HK$5-50/冊、納期 5-7 営業日、年度契約の進め方、ISBN バーコード対応。学校・塾・出版社の B2B 調達に。",
+      "h1": [
+        "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "robots": "index, follow",
+      "text_length": 9360,
+      "risk_snippets": [
+        "、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。 ¥7,500〜/部〜 詳細を見る 防水ステッカー / 屋外ステッカー · 無料デザイン · 印刷の専門家 · ZprintPro 防水ステッカー / 屋外ステッカー PVC、防水・UV・耐摩耗性に優れる。屋外使用、製品ラベル、車用ステッカー、設備サイン、記念品に最適。5-7日納期, DHL グローバル 2-4日。 ¥41 詳細を見",
+        "、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 適用業界：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。 ¥7,500〜/部〜 詳細を見る ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、銀行振込・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳市龍崗区平湖街道嘉城路1号（〒518",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    },
+    {
+      "path": "/zh-hk/category/books/",
+      "url": "https://zprintpro.com/zh-hk/category/books/",
+      "status": 200,
+      "elapsed_s": 1.06,
+      "content_type": "text/html; charset=utf-8",
+      "title": "小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | 智印港",
+      "description": "書刊印刷 / 小冊子印刷 10 本起印，HK$6 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。",
+      "h1": [
+        "香港小冊子印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/category/books/",
+      "robots": "index, follow",
+      "text_length": 8380,
+      "risk_snippets": []
+    },
+    {
+      "path": "/en/product/catalog-printing/",
+      "url": "https://zprintpro.com/en/product/catalog-printing/",
+      "status": 200,
+      "elapsed_s": 0.55,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Catalog Printing | 10 MOQ $4.60 | Free Ship | ZprintPro",
+      "description": "Custom catalog printing from ZprintPro the US. Saddle-Stitched, 4-color CMYK. 10-piece MOQ. Free US shipping over $100, DHL Express | Free Design",
+      "h1": [
+        "Catalog Printing 100+ | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/en/product/catalog-printing/",
+      "robots": "index, follow",
+      "text_length": 15793,
+      "risk_snippets": [
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/en/blog/catalog-printing-china-supplier-guide/",
+      "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "status": 200,
+      "elapsed_s": 2.09,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper",
+      "description": "How to choose a catalog printing China supplier in 2026? 4 binding types (saddle-stitch / perfect / spiral / case-bound)，4 paper stocks (157gsm coated / 128gsm offset / 200gsm matte / 250gsm artboard)，bulk wholesale 100/500/1000/5000 tier 15-30% discount. 4-word cluster 9/4 ranking target: catalog book printing，china catalog printing，catalog printing china，bulk catalog printing. 100 pcs MOQ, factory-direct pricing, DHL 2-4 day global, 30-second AI quote.",
+      "h1": [
+        "Catalog Printing China Supplier Guide: 4 Binding + 4 Paper"
+      ],
+      "canonical": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "robots": "index, follow",
+      "text_length": 22849,
+      "risk_snippets": [
+        "arantee with free reprint if not satisfied. All 4 scenarios include: free artwork preflight (within 24 hours), free ICC color profile matching, and a dedicated project manager assigned from quote to delivery. Rush production (3-5 days) available for +20-30% fee, subj",
+        "ory-direct pricing, dedicated project manager from quote to delivery, free artwork preflight within 24 hours, and DHL 2-4 day global delivery. Rush 3-5 days available for +20-30%. Frequently Asked Questions Q1: What is the minimum order for bulk catalog printing? A: ",
+        "rinting for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+        "tail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations. ¥7,500〜/部〜 View More Waterproof Stickers / Outdoor Stickers · Free Design · ZprintPro Waterproof stickers / outdoor stickers PVC with excellent water, UV, and abrasio",
+        "rinting for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+        "tail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations. ¥7,500〜/部〜 View More ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and secure settlement via bank wire, WeChat Pay, Al",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/en/product/a2-posters/",
+      "url": "https://zprintpro.com/en/product/a2-posters/",
+      "status": 200,
+      "elapsed_s": 0.55,
+      "content_type": "text/html; charset=utf-8",
+      "title": "A2 Poster Printing | 10 MOQ $2.30 | Free Ship | ZprintPro",
+      "description": "A2 poster printing at the standard 420x594mm retail size, 10-piece MOQ on 157g coated stock with 200gsm or photo-paper upgrades, offset or premium digital output. Ideal for store promos, mall pop-ups, education and gallery displays. Free digital proof, free SF shipping over HK$500, 30-second AI quote.",
+      "h1": [
+        "A2 Posters 100+ | Retail & Events | ZprintPro"
+      ],
+      "canonical": "https://zprintpro.com/en/product/a2-posters/",
+      "robots": "index, follow",
+      "text_length": 16373,
+      "risk_snippets": [
+        "gent orders same day DHL Express Direct Nationwide Coverage DHL door-to-door delivery across the US Free Sample Order with Confidence Free physical sample for bulk orders Quality Guarantee 100% Satisfaction Free reprint if not satisfied, full refund 24/7 Support Always A",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/zh-hk/category/posters/",
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "status": 200,
+      "elapsed_s": 0.64,
+      "content_type": "text/html; charset=utf-8",
+      "title": "海報印刷 A0/A1/A2・防水1張起印・展覽/MTR 燈箱 | 智印港",
+      "description": "海報印刷 A2 10 張起印 HK$9 起/張、A1 1 張起印 HK$45 起/張。A0/A1/A2 + 防水 + 啞膠亮膜 + 鑲裱，展覽、活動、店舖、餐廳、電影、演唱會通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。",
+      "h1": [
+        "香港 A2 海報印刷 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/category/posters/",
+      "robots": "index, follow",
+      "text_length": 7742,
+      "risk_snippets": []
+    },
+    {
+      "path": "/zh-hk/category/flyers/",
+      "url": "https://zprintpro.com/zh-hk/category/flyers/",
+      "status": 200,
+      "elapsed_s": 0.66,
+      "content_type": "text/html; charset=utf-8",
+      "title": "A5 宣傳單張印刷 10張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港",
+      "description": "宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 +…",
+      "h1": [
+        "香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/category/flyers/",
+      "robots": "index, follow",
+      "text_length": 6786,
+      "risk_snippets": []
+    },
+    {
+      "path": "/ja/product/graduation-yearbook/",
+      "url": "https://zprintpro.com/ja/product/graduation-yearbook/",
+      "status": 200,
+      "elapsed_s": 0.74,
+      "content_type": "text/html; charset=utf-8",
+      "title": "卒業記念アルバム印刷｜1冊〜¥1350〜｜中綴じ｜ZprintPro",
+      "description": "卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、1 冊から対応。中綴じ / 無線綴じ / 上製本の 3 方式、クラス写真・先生メッセージ・学校ロゴ全面対応。日本向け DHL Express 2-4 日配送、無料デザインモックアップ。",
+      "h1": [
+        "卒業記念アルバム印刷 | 1冊〜 3種類の製本"
+      ],
+      "canonical": "https://zprintpro.com/ja/product/graduation-yearbook/",
+      "robots": "index, follow",
+      "text_length": 5953,
+      "risk_snippets": [
+        "本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急24時間対応 標準3-5営業日、急ぎは最短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある",
+        "短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 印刷の最小注文数はいくつですか？ + ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせくだ",
+        "国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 FAQ よくある質問 印刷の最小注文数はいくつですか？ + ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせください。 印刷と納品にはどのくらい時間がかかりますか？ + ",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    },
+    {
+      "path": "/ja/nengajo-2027/",
+      "url": "https://zprintpro.com/ja/nengajo-2027/",
+      "status": 200,
+      "elapsed_s": 0.49,
+      "content_type": "text/html; charset=utf-8",
+      "title": "年賀状印刷 2027 早割受付中 | 10枚から ¥20〜 | ZprintPro",
+      "description": "2027年年賀状印刷の早割受付ページ。6 SKU すべて10枚から、1枚¥20〜（箔押し¥35〜）。127×178mm 標準サイズ、宛名オプション対応確認中、納期3〜5営業日、DHL国際2〜4日、無料入稿チェック。早割率・正式締切は確定次第本ページで更新。30秒AI見積り対応。",
+      "h1": [
+        "2027年年賀状印刷 — 早割受付中"
+      ],
+      "canonical": "https://zprintpro.com/ja/nengajo-2027/",
+      "robots": "index, follow",
+      "text_length": 2856,
+      "risk_snippets": [
+        "見積もり お問い合わせ 繁 EN 日 ホーム / Nengajo 2027 2027年年賀状印刷 — 早割受付中 2027年年賀状の早割受付を開始しました。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期3〜5営業日、DHL国際2〜4日、無料入稿チェック、30秒AI見積り対応。 ⚡ 早割のご案内 早割は「10月末までのご発注」を目安としています（既存口径、2026-11-01 に再確認）。確定した割引率と正式な締切日は、決まり次第こちらのページ",
+        "目安：10月末までのご発注、2026-11-01 再確認） 6 SKU の仕様と牌価（早割価格は確定後に掲載） SKU 仕様 最小数量 牌価（1枚） 早割価格 プレミアム（高級） 300g アート紙 127×178mm 10枚 ¥20〜 確定後に掲載 厚口400g 400g 厚口紙 127×178mm 10枚 ¥23〜 確定後に掲載 箔押し 金箔／銀箔 127×178mm 10枚 ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 1",
+        "（早割価格は確定後に掲載） SKU 仕様 最小数量 牌価（1枚） 早割価格 プレミアム（高級） 300g アート紙 127×178mm 10枚 ¥20〜 確定後に掲載 厚口400g 400g 厚口紙 127×178mm 10枚 ¥23〜 確定後に掲載 箔押し 金箔／銀箔 127×178mm 10枚 ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 10枚 ¥21〜 確定後に掲載 角丸 角丸カット 127×178mm 10枚 ¥20〜",
+        "格 プレミアム（高級） 300g アート紙 127×178mm 10枚 ¥20〜 確定後に掲載 厚口400g 400g 厚口紙 127×178mm 10枚 ¥23〜 確定後に掲載 箔押し 金箔／銀箔 127×178mm 10枚 ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 10枚 ¥21〜 確定後に掲載 角丸 角丸カット 127×178mm 10枚 ¥20〜 確定後に掲載 牌価の出所：products.ts（2026-10-15",
+        "〜 確定後に掲載 厚口400g 400g 厚口紙 127×178mm 10枚 ¥23〜 確定後に掲載 箔押し 金箔／銀箔 127×178mm 10枚 ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 10枚 ¥21〜 確定後に掲載 角丸 角丸カット 127×178mm 10枚 ¥20〜 確定後に掲載 牌価の出所：products.ts（2026-10-15 現取、商品ページと同期）。 発注からお届けまでのタイムライン デザイン／入稿",
+        "¥23〜 確定後に掲載 箔押し 金箔／銀箔 127×178mm 10枚 ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 10枚 ¥21〜 確定後に掲載 角丸 角丸カット 127×178mm 10枚 ¥20〜 確定後に掲載 牌価の出所：products.ts（2026-10-15 現取、商品ページと同期）。 発注からお届けまでのタイムライン デザイン／入稿 ： AI・PDF・Canva 対応、無料入稿チェック＋デジタル校正 印刷 3",
+        " ¥35〜 確定後に掲載 スポットUV 局部 UV 127×178mm 10枚 ¥27〜 確定後に掲載 マット マットラミネート 127×178mm 10枚 ¥21〜 確定後に掲載 角丸 角丸カット 127×178mm 10枚 ¥20〜 確定後に掲載 牌価の出所：products.ts（2026-10-15 現取、商品ページと同期）。 発注からお届けまでのタイムライン デザイン／入稿 ： AI・PDF・Canva 対応、無料入稿チェック＋デジタル校正 印刷 3〜5 営業日 ： 深圳平湖工場のオフセット印刷、出荷前全数色差検査 配",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    },
+    {
+      "path": "/en/blog/eco-paper-bag-gsm/",
+      "url": "https://zprintpro.com/en/blog/eco-paper-bag-gsm/",
+      "status": 200,
+      "elapsed_s": 0.8,
+      "content_type": "text/html; charset=utf-8",
+      "title": "Eco Paper Bag GSM Guide | 120g-250g Selection",
+      "description": "Differences in load capacity, tactile feel, and print quality across eco paper bag GSM weights. Selection guide for US retail and F&B brands with FSC certification notes.",
+      "h1": [
+        "Eco Paper Bag GSM Guide | 120g-250g Selection"
+      ],
+      "canonical": "https://zprintpro.com/en/blog/eco-paper-bag-gsm/",
+      "robots": "index, follow",
+      "text_length": 16765,
+      "risk_snippets": [
+        "rinting for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+        "tail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations. ¥7,500〜/部〜 View More Waterproof Stickers / Outdoor Stickers · Free Design · ZprintPro Waterproof stickers / outdoor stickers PVC with excellent water, UV, and abrasio",
+        "rinting for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. Best for: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.",
+        "tail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations. ¥7,500〜/部〜 View More ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and secure settlement via bank wire, WeChat Pay, Al",
+        "im copying is monitored and pursued (content ref ZP-OC-2610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping",
+        "610). Get Free Quote Reply within 4 hours · Free sample shipping Email Quote Reply within 4 hours · Free sample shipping"
+      ]
+    },
+    {
+      "path": "/zh-hk/category/paper-bags/",
+      "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "status": 200,
+      "elapsed_s": 0.55,
+      "content_type": "text/html; charset=utf-8",
+      "title": "紙袋印刷 100個起 HK$3-8/個 | 牛皮白卡環保袋 | 智印港",
+      "description": "紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$3-8/個，100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天。WhatsApp 30 秒即時報價，國際認證體系。",
+      "h1": [
+        "香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "robots": "index, follow",
+      "text_length": 7929,
+      "risk_snippets": []
+    },
+    {
+      "path": "/zh-hk/product/handle-bags/",
+      "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "status": 200,
+      "elapsed_s": 0.87,
+      "content_type": "text/html; charset=utf-8",
+      "title": "環保手挽袋 | 100%環保 多尺寸 | 100個起 HK$8起 | 智印港",
+      "description": "手挽袋/紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
+      "h1": [
+        "堅固手挽設計，承重能力強。適合購物中心、超市。智印港提供專業手挽紙袋服務，香港本地印刷，品質保證，價格透明。"
+      ],
+      "canonical": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "robots": "index, follow",
+      "text_length": 6050,
+      "risk_snippets": []
+    },
+    {
+      "path": "/ja/category/paper-bags/",
+      "url": "https://zprintpro.com/ja/category/paper-bags/",
+      "status": 200,
+      "elapsed_s": 0.55,
+      "content_type": "text/html; charset=utf-8",
+      "title": "紙袋印刷 100個〜 ¥240〜 | クラフト/白カード | ZprintPro",
+      "description": "紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証体系。",
+      "h1": [
+        "紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト"
+      ],
+      "canonical": "https://zprintpro.com/ja/category/paper-bags/",
+      "robots": "index, follow",
+      "text_length": 9371,
+      "risk_snippets": [
+        "本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応 深圳自社工場 15年以上の実績 彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理 即日納品 特急24時間対応 標準3-5営業日、急ぎは最短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 HK$8.00〜",
+        "短当日 国際配送 日本全国対応 DHL・FedExで日本全国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 HK$8.00〜 30秒見積もり WhatsApp ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、銀行振込・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で",
+        "国へ2〜4日配送 無料サンプル 安心の注文 大口注文で実物サンプルを無料提供 品質保証 100%満足保証 不満足な場合は無料再印刷、全額返金 24時間サポート 年中無休対応 プロのカスタマーサービスが24時間対応 HK$8.00〜 30秒見積もり WhatsApp ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、銀行振込・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。 自社工場：広東省深圳",
+        "湖街道嘉城路1号（〒518111）・香港サービス拠点：九龍新蒲崗 +86 198 8085 1334 [email protected] 月〜土 09:00 - 18:00 (GMT+8) 中国本土 24時間対応 · 香港現地サポート 会社概要 会社概要 ブランドストーリー 導入事例 印刷知識 採用情報 製品 紙袋印刷 チラシ印刷 ステッカー印刷 パッケージ印刷 ポスター印刷 教育印刷 ヘルプセンター 注文方法 支払い方法 配送 返品ポリシー プライバシーポリシー 利用規約 カスタマーサービス お問い合わせ よくある質問 "
+      ]
+    }
+  ]
+}
