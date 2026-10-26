@@ -61,3 +61,54 @@
 - 本契约是**执行顺序的第 -1 优先级**（先于任何内容任务、先于任何 SSoT 必读），但它**不改变**各 prompt 的业务规则；
 - 业务规则冲突时以 K3 最新拍板 > AGENTS.md > 本契约 > 各专项技能（per AGENTS.md §0.34.2）；
 - 本契约的落地脚本：`scripts/lane-status.mjs`（汇总）、`scripts/lane-preflight.py`（前置 + 上下文）、`scripts/lane-git-commit.py`（收尾 + 写总线），规则 SSoT = `AGENTS.md §0.35` 与 `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`。
+
+## 六、30 天窗口职责（2026-10-26 双引擎策略 §8.3 拍板，本 30 天优先于各 prompt 旧职责）
+
+> **签发**: `docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md` §8.3（K3 2026-10-26 指令）。
+> **适用**: 2026-10-26 至 2026-11-24 全部 5 条执行车道。与各 prompt 既有流程冲突时**以本节为准**；prompt 旧流程中与本节不冲突的细节（锁、门禁、报告格式）继续有效。
+
+### 6.1 五车道职责表
+
+| 车道 | 30 天职责 | 禁止 | 成功证据 |
+|---|---|---|---|
+| GSC feedback | 每日拉取并检测异常；按本报告口径生成机会 / 退场 / 内耗队列；**只提供任务，不直接改页面** | 混算聚合范围；把 0 展示写成没建页 | 当日数据文件 + 当日报告 + 异常分类 + 下一验证点 |
+| Daily content | 从**已拍板队列**选择 1 个最高价值小批；无合格任务可 `NO_OP` | 以篇数 / 词数交差；无来源数字；跨车道改文件 | 具体 URL diff + 真值对照 + 线上探针或明确的未推送原因 |
+| Weekly meta | 只处理**已解冻且有证据**的 title / description；检查 CTR 与真值 | 碰 10/26 冻结批次；为塞词破坏自然语言 | title 窗口检查 + 当量检查 + 修改前后词页证据 |
+| Blog deepfix | 修旧文价格、意图、内链和独特资产；优先已有点击 / 展示页 | 批量重写全部 blog；为 12 段骨架而 12 段 | 单篇问题—修复—证据闭环；无新增缺陷 |
+| Monthly matrix | 月度词页矩阵、资源重分配、GEO 探针、转化校准 | 把展示当市场量；把代理搜索当 AI 引用 | SCALE / HOLD / FIX / STOP 清单与下月拍板项 |
+
+### 6.2 每个原子任务的标准输入包
+
+```
+TASK_ID: <lane>-<date>-<target>-<sequence>
+INTENT: 修复什么已证实问题
+APPROVED_BY: K3 拍板记录 / 不需要拍板的既有规则
+TARGET_QUERY_OR_URL: 唯一主目标
+INPUT_EVIDENCE: GSC 行、线上探针、真值源、前序报告
+WRITE_SCOPE: 允许修改的最小文件集合
+DO_NOT_TOUCH: 冻结 title、其他车道文件、派生文件、301、名片/贺卡资产等
+TRUTH_SOURCE: products.ts / price-tables / 官方来源 / K3 拍板
+ACTION: 1 个小批动作，不夹带第二战略
+GATES: 锁、备份、计数/形状断言、encoding、tsc、品牌、JSON、相关 smoke
+ONLINE_VERIFY: 状态、title/H1、canonical、正文真值、schema、目标 URL
+REPORT: .hermes/logs/<YYYY-MM-DD>-<lane>.md
+STOP_IF: 缺真值、锁冲突、门禁失败、根因前提不成立
+NEXT_CHECK: 具体日期 + 指标 + 成功/失败阈值
+```
+
+### 6.3 成功判定：四方证据 + 线上结果（§8.5）
+
+一次自动任务只有同时满足才算 `OK`：
+1. `lane-runs.jsonl` 有本次 run 记录；
+2. wrapper 日志有真实 `dsh exit` / `run end exit`，且结果符合预期；
+3. 存在目标日期的本车道报告，内容含 `VERDICT / CONSUMED / DELIVERED / NEXT`；
+4. 调度器记录与本次触发一致；
+5. 若任务声称上线，必须有对应线上探针；若只是数据任务，必须有对应数据产物。
+
+文件 mtime、自我播报、`wrapper_exit=0` 或一篇其他车道报告均不能单独证明成功。历史缺口可以补诊断，但不得通过补跑把历史 MISSING 改写成"当时成功"。
+
+### 6.4 派生文件铁律（§8.4）
+
+SKU SEO 只改 `zprintpro-sku-seo-data.csv` 后运行 `scripts/csv-to-sku-seo.mjs`；不得手改 `src/data/sku-seo-data.ts`，冲突时回源头重新生成，不用 `--ours/--theirs` 手选。
+
+
