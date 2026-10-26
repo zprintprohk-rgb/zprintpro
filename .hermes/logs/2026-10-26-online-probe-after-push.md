@@ -26,3 +26,11 @@
 - **处置（需 K3）**：查 CF Dashboard build logs（本轮 push 23f9c81c 与上轮 ef3140ac 的 check run + 失败原因）；若 CF 侧配置/权限问题（私有仓库、build command、内存），修复后重推或手动重跑 build。
 - 数据来源: 本探针（urllib.request GET，UA=Mozilla/5.0，2026-10-26 19:00 / 19:05 Asia/Shanghai）。
 
+---
+
+## 勘误（2026-10-26 22:00 · §0.23 撤回声明）
+
+- **撤回上方「连续两次 CF build 疑似 FAILED」最终判读（L21-26）**：21:32/21:40 线上探针确认 **23f9c81c 的 CF build 实际部署成功**——saddle/exercise H1 已更新为「from 10 Copies」、年賀状撤早割已上线。19:00/19:05 看到的旧 H1 + robots 404 = **CF build 部署延迟/切换期**（build 完成但尚未切流），非 build 失败。
+- **robots.txt 404 独立成立**：它确实是线上问题（非 build 问题）——CF Pages 将 /robots.txt 视为保留路径，MetadataRoute / route handler / public 静态均被平台行为拦截。修复 = CF Pages Functions（`functions/robots.txt.ts`，commit 9ad7dbf3 + 028233aa）——见 `.hermes/logs/2026-10-26-cf-build-root-cause-diagnosis.md` §4.1。
+- 本勘误保留 19:00/19:05 原始探针数据（时间戳不可改写），仅纠正判读。
+
