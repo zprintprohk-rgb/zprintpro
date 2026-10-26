@@ -43,5 +43,5 @@
 ## 收尾状态
 - push: `8c3dd996..ef3140ac main -> main`（含本 lane 1cc5e123 + 同侪 4 commit 一并推送, 距上次 push b0e30769 07:10 = 11.5h ≫ 30min 硬下限; 攒批 ≥3 non-docs + ≥1 src 行为修复 ✓）
 - **.hermes docs 批（本报告 + 账本 order 28a + 总线记录 + 备份）本地 commit 待推**：src 批因并发早推（18:39）导致 docs 批落入 30min 硬下限窗口内 → 按 §0.25.8 commit 本地、不阻塞等待，随下一 push（gsc-feedback 20:13 lane 或次日 daily-content）自动携带（plain `git push origin main` 会带上所有本地 commit）。
-- 工作树 src/ 干净（同侪 ef3140ac 收口 robots.ts）; lane.lock 已释放（见下）
-- verify-deploy 后台运行中, 结果随收尾核对
+- 工作树 src/ 干净（同侪 ef3140ac 收口 robots.ts）; lane.lock 已释放（18:44）
+- **verify-deploy / 部署状态（P0 披露）**: CF Pages build 对 ef3140ac **FAILED**（check run 121526836891）; 本地 `npm run build` **PASS**（726 URLs / sitemap 全生成 / tsc 54=54）; 同日 07:10 push（b0e30769）CF build **success** → 失败非全站性, 疑似 CF 侧或特定批触发, **本地无法复现**（无 CF 日志权限, 私有仓库无 gh）; 处置建议: K3 查 CF Dashboard build logs; 下一 push（gsc-feedback 20:13 lane）自动重触发 build 观察。报告期内按「代码验收全绿 + CF 部署待核」记录。
