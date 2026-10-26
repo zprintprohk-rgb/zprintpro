@@ -38,6 +38,7 @@
 1. **zine guide → /product/doujinshi-printing/**（blog JSON 无 locale 前缀写法，渲染自动 rewrite）
    - 源: `src/data/blog-data/en.json:731`（"Ready to print?" 采购段尾）
    - 锚: `doujin circles`（唯一出现）
+   - ⚠️ **2026-10-27 01:53 复核修正**: 原文 `doujin circles should start with the [doujin-circle-printing-guide]...` ——"doujin circles" 已在既有 `<a href="/en/blog/doujin-circle-printing-guide/">` 锚内。**锚点冲突**：不能同锚双链（§5.4 语义唯一）。需改用该句其他未链词组（如 "should start with" 或重构句末追加独立锚），**下轮重新设计后再执行**。
 2. **PDP → /en/blog/comiket-printing-prep-guide/**
    - 源: `src/data/products.ts:6799`（"Turnaround" 交期段）
    - 锚: `before Comiket`（**出现 2 次**，须用 `A 24-hour rush is available before Comiket; during peak seasons` 长上下文定位，禁 replace_all）
