@@ -34,3 +34,10 @@
 - **robots.txt 404 独立成立**：它确实是线上问题（非 build 问题）——CF Pages 将 /robots.txt 视为保留路径，MetadataRoute / route handler / public 静态均被平台行为拦截。修复 = CF Pages Functions（`functions/robots.txt.ts`，commit 9ad7dbf3 + 028233aa）——见 `.hermes/logs/2026-10-26-cf-build-root-cause-diagnosis.md` §4.1。
 - 本勘误保留 19:00/19:05 原始探针数据（时间戳不可改写），仅纠正判读。
 
+## 验收（2026-10-26 22:16 · P0-2 robots.txt PASS）
+
+- **push c901bcb7（22:11:54，9 commit 含 CF Functions 方案）→ CF build 部署后探针**：`https://zprintpro.com/robots.txt` **HTTP 200**，内容 = 12 AI allow（GPTBot/OAI-SearchBot/ChatGPT-User/ClaudeBot/Claude-Web/anthropic-ai/PerplexityBot/Perplexity-User/Google-Extended/Applebot-Extended/Bytespider/CCBot）+ Sitemap ×2（sitemap.xml + sitemap-image.xml）+ 无 /_next/ Disallow → **P0-2 验收 PASS**。
+- **双方法（§0.23.2）**：`_probe_postpush.py`（urllib 带 UA）200 + 内容逐项验证 ✓；curl 带 UA 复核返回完整文本 ✓。无 UA 的 curl 被 CF challenge（`Attention Required!` 页）= CF 对裸 UA 的 bot 防护，非内容问题。
+- **既有部署保持**：saddle/exercise H1「from 10 Copies」200 ✓；年賀状 ja title「年賀状 2027 印刷 10枚から ¥20〜 オリジナル」200 ✓。
+- 数据来源: 本探针（urllib.request GET + curl，UA=Mozilla/5.0，2026-10-26 22:16 Asia/Shanghai）。
+

@@ -6,10 +6,10 @@
 ## VERDICT / CONSUMED / DELIVERED / NEXT
 
 ```
-VERDICT: PARTIAL（根因已锁定 + 已修复，待 CF build 验证）
-CONSUMED: page-probe-2026-10-26.json | 线上 buildId (404 页 SeRLJHLKAvmvq9PuB5jzy) vs 本地 buildId (TlWNpHi1QMOgnTZyapHRX) | scripts/generate-sitemap-content.mjs | src/app/robots.txt/route.ts | src/generated/sitemap-content.ts | package.json build:cf
-DELIVERED: 根因诊断 + 修复 commit（6076cade 删 app/robots.ts + 3b39a3f4 恢复 public/robots.txt + sitemap-content 重生成）+ 本地 build:cf 全链模拟（进行中）
-NEXT: 本地模拟 PASS → 3b39a3f4 的 CF build 应成功 → 线上探针 robots.txt 200 + 12 AI allow；若 CF build 仍 FAILED → K3 查 CF Dashboard build logs（build command / 环境变量 / 依赖安装）
+VERDICT: COMPLETE（P0-2 robots.txt 线上验收 PASS @22:16 — CF Pages Function edge 拦截生效）
+CONSUMED: page-probe-2026-10-26.json | 线上 buildId vs 本地 buildId | scripts/generate-sitemap-content.mjs | src/app/robots.txt/route.ts | src/generated/sitemap-content.ts | package.json build:cf | functions/robots.txt.ts
+DELIVERED: 根因诊断（CF 保留路径拦截 robots）+ 修复（CF Pages Function functions/robots.txt.ts edge 拦截，MetadataRoute/route handler/public 静态三路均被 CF 拦截）+ 线上验收 PASS（HTTP 200 + 12 AI allow + Sitemap×2 + 无 /_next/，双方法确认）
+NEXT: CF Dashboard → Security → Bots 允许 AI crawlers（K3 侧，CF edge 优先生效）；观察 manifest.webmanifest 500/403（同 CF 保留路径家族，非本轮范围）
 ```
 
 ## 1. 数据来源行（§0.23）
@@ -60,6 +60,13 @@ NEXT: 本地模拟 PASS → 3b39a3f4 的 CF build 应成功 → 线上探针 rob
 - **9 commit push 成功**（`7119c4a5..c901bcb7 main -> main` @ 22:11:54）：functions/robots.txt.ts（CF Function edge 拦截）+ src/app/robots.txt/route.ts 删除 + 诊断/勘误报告（cf-build-root-cause-diagnosis / five-lane-reliability / week1 执行报告勘误 / probe 勘误 / packaging 并行批）。
 - **functions/robots.txt.ts 内容验收确定性校验 PASS**（grep 逐项：User-agent ×12 AI + Sitemap ×2 + 无 /_next/ Disallow + Disallow 组完整）——与 public/robots.txt 双源一致（§0.23.2 双方法：read 工具 + grep）。
 - **CF build 已触发（c901bcb7）**——部署后探针：robots.txt 200 + 12 AI allow + sitemap-image + 无 /_next/。
+
+## 4.3 更新（22:16）：robots.txt 线上验收 PASS — CF Pages Function 生效
+
+- **线上探针双方法确认（§0.23.2）**：`_probe_postpush.py`（urllib 带 UA）→ `https://zprintpro.com/robots.txt` **HTTP 200** + 12 AI allow 全命中 + Sitemap ×2（sitemap.xml + sitemap-image.xml）+ **无 /_next/ Disallow**；curl 带 UA 复核 → 返回完整 robots 文本（首行 = Function 内嵌注释「CF Pages Functions now intercept」）。→ **P0-2 验收 PASS**。
+- **CF Functions 方案（functions/robots.txt.ts edge 拦截）为唯一线上生效路径**——MetadataRoute / route handler / public 静态三种在 CF 均被保留路径拦截（历史 404/403），Function 于 Next 之前 edge 层生效。
+- **注意**：无 UA 的 curl 请求 robots.txt 会返回 CF challenge 页（`Attention Required! | Cloudflare`）——CF 对裸 UA 的 bot 防护，**非 robots 内容问题**；带 UA（浏览器/标准爬虫）正常 200 返回真内容。AI crawler（GPTBot/ClaudeBot/PerplexityBot 等）有自己的 UA，正常读取。
+- **待 K3**：CF Dashboard → Security → Bots 允许 AI crawlers（CF edge 优先生效，策略 §9.1 K3 侧动作）。
 
 ## 5. 待 K3（若模拟/线上仍失败）
 

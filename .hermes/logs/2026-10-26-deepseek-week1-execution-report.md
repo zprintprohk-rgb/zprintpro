@@ -110,3 +110,10 @@ NEXT: CF build 完成后线上探针（robots.txt 200 + saddle/exercise H1 10 MO
 - **撤回本报告「CF build FAILED」段（§5 L84-87、L102）的 FAILED 结论**（原 commit a2a6ae6e，2026-10-26 18:55 前写）：21:32/21:40 线上探针确认 **23f9c81c 及后续 build 实际成功部署**（saddle/exercise H1「from 10 Copies」+ 年賀状撤早割全部上线）——ef3140ac 那次 FAILED（check run 121526836891）的根因 = `public/robots.txt` 删除致 `generate-sitemap-content.mjs` SKIP → `ROBOTS_TXT` 缺失 → `app/robots.txt/route.ts` import 失败（详见 `.hermes/logs/2026-10-26-cf-build-root-cause-diagnosis.md`，已 commit 7c0a37aa）。
 - **修正 P0-2 状态**：robots.txt **线上仍 404**（独立问题——CF Pages 将 /robots.txt 视为保留路径，MetadataRoute / route handler / public 静态均被拦截）——已改用 **CF Pages Functions**（`functions/robots.txt.ts` edge 拦截，commit 9ad7dbf3 + 028233aa）——**P0-2 验收标准「robots.txt 200」以此方案达成后转 PASS**。
 - 本勘误不改变 §5 其余结论（P0-3/年賀状/P0-4/E6/§8.3 均保持有效）。
+
+## 8. P0-2 验收完成（2026-10-26 22:16）
+
+- **push c901bcb7（22:11:54，9 commit 含 CF Functions 方案）→ build 部署后探针 PASS**：`robots.txt` **HTTP 200** + 12 AI allow + Sitemap ×2 + 无 /_next/（双方法：urllib + curl 带 UA，§0.23.2）。→ **P0-2 验收标准达成**（策略 §9.1：robots.txt 200 + 规则正确 + sitemap 可用）。
+- **CF Functions（functions/robots.txt.ts edge 拦截）为 robots.txt 线上唯一生效路径**——MetadataRoute / route handler / public 静态在 CF 均被保留路径拦截（详见 `.hermes/logs/2026-10-26-cf-build-root-cause-diagnosis.md` §4.3）。
+- **待 K3**：CF Dashboard → Security → Bots 允许 AI crawlers（CF edge 优先生效，策略 §9.1 K3 侧动作）。
+
