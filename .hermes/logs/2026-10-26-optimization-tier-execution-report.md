@@ -180,3 +180,13 @@ NEXT: 双条件②静默窗口（对端 01:37:50 最后写入 → 最早 01:52:5
 - 渲染保障：blog/[slug] L1128 dangerouslySetInnerHTML 直接输出 content HTML；L806-809 href rewrite 对 /en/ 前缀保持正确
 - 违规扫描：注入段无 brand/GSC/名片 命中 ✓；12 段回归基线不涉及（仅结构段数）✓
 - **等待**：并发双条件②（对端最后写入 01:57:26 → src 可写最早 02:12:26）+ push 30min 下限（bb7b157c 01:43:08 → 02:13:08）
+
+## 2.8 E1 落位完成（@02:02 commit 710feff6）
+
+- **落位**：`src/data/blog-data/en.json` sticker-guide content 采购段 → `<a href="/en/product/small-batch-stickers/">small-batch restocking for cross-border sellers</a>`（H2 "What's the minimum order?" 后 296 字符处，锚唯一，零新增文案）。
+- **执行纪律**：src 域静默 23.4min（sku-seo-data.ts 01:37:50 后）+ lane.lock 无 + src clean + 对端批次全部 docs-only（bag/poster/seven-clusters 报告明示未落 src）→ 判定 src 撞车风险 0 后落位。
+- **双方法验证（§0.23.2）**：方法1 Python JSON 解析——JSON 有效 ✓ 锚存在 ✓ 锚闭合 ✓ H2 数 11 保持 ✓；方法2 git diff——仅 1 文件 1 行变更，diff 内锚注入前后对比清晰 ✓。
+- **转义教训**：应用脚本首跑因 Python 单引号串内 `\"` → 裸 `"` 破坏 JSON；dry-run 用 `\\\"`（字面 `\"`）后通过，符合 §0.23.2「先 dump 真实样本再写」三闸门。
+- **备份**：`.hermes/_bak-blogdata-en-before-e1-20261027.json`（回滚用）。
+- **门禁**：encoding ✓ + brand-mentions A 类 0 ✓ + tsc 54=54 基线持平（quote-engine 既有测试错误，本轮零新增）✓ + sitemap 生成器幂等（无 diff）✓。
+- **pre-push 基线**：sticker-guide 页线上 200 + 旧锚文本存在 + E1 链接不存在（@02:00:51 捕获，归因确定性用）。
