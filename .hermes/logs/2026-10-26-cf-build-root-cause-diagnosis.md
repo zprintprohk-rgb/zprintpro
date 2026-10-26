@@ -55,6 +55,12 @@ NEXT: 本地模拟 PASS → 3b39a3f4 的 CF build 应成功 → 线上探针 rob
 - **修复（9ad7dbf3 已 commit，待 push）**：改用 **CF Pages Functions**（`functions/robots.txt.ts`，onRequestGet edge 拦截 /robots.txt，内容 = 12 AI allow + sitemap ×2，与 public/robots.txt 同步）——Functions 在 Next 之前于 edge 层拦截，平台原生保证生效。删除 `src/app/robots.txt/route.ts`（route handler 在 CF 无效）。
 - **待验**：push 后探针 robots.txt 200 + 内容正确。
 
+## 4.2 更新（22:11）：CF Functions 方案已 push，线上验收中
+
+- **9 commit push 成功**（`7119c4a5..c901bcb7 main -> main` @ 22:11:54）：functions/robots.txt.ts（CF Function edge 拦截）+ src/app/robots.txt/route.ts 删除 + 诊断/勘误报告（cf-build-root-cause-diagnosis / five-lane-reliability / week1 执行报告勘误 / probe 勘误 / packaging 并行批）。
+- **functions/robots.txt.ts 内容验收确定性校验 PASS**（grep 逐项：User-agent ×12 AI + Sitemap ×2 + 无 /_next/ Disallow + Disallow 组完整）——与 public/robots.txt 双源一致（§0.23.2 双方法：read 工具 + grep）。
+- **CF build 已触发（c901bcb7）**——部署后探针：robots.txt 200 + 12 AI allow + sitemap-image + 无 /_next/。
+
 ## 5. 待 K3（若模拟/线上仍失败）
 
 1. **CF Dashboard build logs**：查 3b39a3f4 与 ef3140ac / 23f9c81c 的 run——确认失败步骤（clean / generate-sitemap-content / next build / next-on-pages 哪一步）。
