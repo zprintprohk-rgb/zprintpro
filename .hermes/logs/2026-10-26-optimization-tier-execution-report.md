@@ -118,3 +118,46 @@ NEXT: 攒批 push 4 commit（22:41:54 窗口）→ 线上探针内链渲染 + �
 
 - **push 间隔边界**：f09f67e6 时间戳 22:41:30，距上次 c901bcb7（22:11:54）= 29.6 min，低于 §0.25.1 30 min 硬下限约 **24 秒**（命令块内 pre-push guard 运行后网络推送实际完成稍晚于时间戳）。已成功且不可撤回，**不重复推送**；记录供 K3 知悉，后续 push 从 f09f67e6 起重新计 30 min。
 - 数据来源: 线上探针 `_probe_links.py`（urllib+UA）+ curl+UA 文件落地（`%TEMP%\zp_saddle.html`），2026-10-26 22:47 Asia/Shanghai。
+
+---
+
+# 追加 · 2026-10-27 01:3x 优化级第二轮（诊断 + 内链方案，周末闸门内）
+
+> 指令: K3 2026-10-27 01:29 新 turn——按双引擎策略优化级继续执行。周末闸门: P0 未完全拍板前只做诊断 + 无风险内链。
+
+## VERDICT / CONSUMED / DELIVERED / NEXT（本轮）
+
+```
+VERDICT: PARTIAL（E6 诊断已交付 + E1/E4/E3 内链现状核验完成 + E1 落位方案就绪；src 落位因并发双条件②待窗口）
+CONSUMED: 策略 §5.1/§5.4 | sku-seo-data.ts / products.ts / blog-data en.json / buying-guides.ts / pillar-content.ts / category-seo-content.ts / blog-posts.ts | 子代理只读分析 | 对端会话 bb7b157c（doujin C109 内链）
+DELIVERED: ①E6 eco-paper-bag-gsm 诊断报告 ②E1/E4 无风险内链落位方案 ③E3 双向已达标核验 ④E4 双向闭环核验（PDP→指南/指南→PDP/C109→PDP 均已有）⑤执行纪律记录（对端并发 + 双条件②未满）
+NEXT: 双条件②静默窗口（对端 01:37:50 最后写入 → 最早 01:52:50）→ 落 E1 sticker-guide→PDP（blog-data en.json HTML <a>）→ 攒批 push（含本地 2 方案 docs）
+```
+
+## 2.4 E6 eco-paper-bag-gsm 退场诊断（@01:32，交付 `.hermes/logs/2026-10-27-e6-eco-paper-bag-gsm-diagnosis.md`）
+
+- **线上健康**（三闸门）: HTTP 200 + 自指 canonical + 无 X-Robots-Tag + 页面 166KB（`_probe_e6.py`）。
+- **发现（数据卫生）**:
+  1. Dual-source 带宽口径漂移: `cluster-content.ts` L266 description 写 **120gsm-350gsm**（未上线，该文件无 app 消费）；`pillar-content.ts` L409/419 写 **120g-250g**（线上实际渲染）。350 vs 250 需 K3 定 SSoT 口径。
+  2. 三语 PDP 内链不对称: zh-hk/en 各 2 PDP 链接（kraft-paper-bags/white-card-bags），**ja 仅 1 链接无 PDP**（结构性缺口，需新 copy 非无风险）。
+- **根因假设**（待 K3 GSC URL Inspection）: 线上健康 ≠ 已被索引；103→0 更可能属收录/查询关联变化或 10/22-26 批量改写后的相关性漂移。
+- **边界**（策略 E6 明示）: 不直接重写；URL Inspection 证据待 K3。
+
+## 2.5 E1/E4 内链现状核验 + 落位方案（@01:34-41，交付 `.hermes/logs/2026-10-27-e1-e4-internal-link-placement-plan.md`）
+
+| 项 | 现状 | 结论 |
+|---|---|---|
+| E1 sticker-buying-guide→PDP | ✅ 已达标（buying-guides.ts:147/115/179 三语） | 不加（§5.4 每源页每目标 1 条） |
+| E1 sticker category→PDP | ✅ 已达标（buying-guides.ts 三语） | 不加 |
+| E1 **sticker-guide(blog)→PDP** | ⚠️ 缺口（现有 4 个其他 PDP 链接，缺 small-batch-stickers） | **可补**：blog-data/en.json:40 锚 `small-batch restocking for cross-border sellers`（唯一出现）→ HTML `<a href="/en/product/small-batch-stickers/">`（该文件全篇 HTML 13 链接 0 markdown） |
+| E3 exercise↔textbooks | ✅ 双向已达标（sku-seo-data.ts 内链 + blog-data L699-700 教材指南→exercise SKU） | 不加 |
+| E4 指南→PDP | ✅ 已达标（comiket/doujin-circle/C109 页 3 项） | 不加 |
+| E4 PDP→指南 | ⚠️ 2 缺口（products.ts:6799→comiket-prep-guide；products.ts:6790→zine guide） | 待 K3/下轮（对端活跃期间不落） |
+| E4 PDP→C109 | 🔵 **对端已做**（bb7b157c 三语 body→/comiket-c109/） | **不重复**（幂等铁律） |
+
+## 2.6 并发纪律记录（§0.35.7）
+
+- 开工 @01:30 双条件通过（lane.lock 无 + src clean + 15min 静默）→ 分析期间发现**对端会话 01:37:50 写入 sku-seo-data.ts**（doujin C109 内链，commit bb7b157c @01:41:26）。
+- 对端为**七簇策略**执行层（同一工作树），仅触碰 sku-seo-data.ts doujin body，NEXT 全为 K3 拍板项。
+- 判定: 双条件②（对端 ≥15min 无写入）**不满足** → 本轮**不落 src**；E1 落位最早 01:52:50（对端 01:37:50 + 15min）。
+- 对端已 push（origin/main=bb7b157c，含 E6/§7 一并上线）；本地剩 2 方案 docs（e77961e5/b841bfbb）随 E1 攒批推。
