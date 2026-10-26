@@ -39,11 +39,13 @@
 
 ### K3-6 · small batch 服务边界 + en greeting 承诺清理
 - **现状**: small batch 线上已具 50pcs/$0.045/免费 2h 数字 proof/4-day USA；en greeting 线上 `$0.50` 系 white-card-bags HK$0.50 误用（真值 $0.13-0.23），且 h2「100 MOQ」vs 正文「10 MOQ」冲突；无来源案例/百分比（30% 回购率 / TikTok Paper Love GMV / 20% 溢价 / $0.07 / 78萬 GMV / LovePop / 70億枚）。
-- **请 K3**: ① 数字 proof vs 实体样区别、样品费/运费、4-day USA 与退款承诺的地区条件；② greeting 统一 $0.13-0.23 + MOQ=10；③ B1-B4/E1-E5 删除或证据化（§0.23 无来源即删）。
+- **2026-10-27 02:0x 新增证据（P1-B 包）**: ① **版/枚单位粒度冲突**——products.ts small-batch `minQ=10（A4 版）/ HK$38-120/A4` vs 线上 `50+ pcs / $0.045/pc`；采购表/页面需写清「每 A4 版 vs 每枚」两档口径（不改 $0.045 为 $0.05，停止条）。② **small-batch PDP 无 guide 出链**（线上双方法 02:08: PDP 仅导航链接，无 sticker-guide/buying-guide 正文链接）——E1 入链已补、出链未满，建议批内补 1-2 条零声明出链（PDP 采购段 → sticker-guide/buying-guide）。
+- **请 K3**: ① 数字 proof vs 实体样区别、样品费/运费、4-day USA 与退款承诺的地区条件；② greeting 统一 $0.13-0.23 + MOQ=10；③ B1-B4/E1-E5 删除或证据化（§0.23 无来源即删）；④ 版/枚口径 + PDP 出链许可。
 
 ### K3-7 · 性能与环保声明
 - **现状**: `100%環保`、户外 3–5 年、食洗机 80°C、防水年限、承重、FSC/100%环保等分散各处；无测试数据。
-- **请 K3**: 可公开范围（改有测试条件的材料/使用边界；无证据删除）。
+- **2026-10-27 02:0x 新增定位（BAG/POSTER 包线上探针）**: ① 🔴 **handle-bags H1「堅固手挽設計，承重能力強」无实测**（BAG-P1-08 停止条触发，优先裁决：删除或改「底卡加固／手挽加固設計」描述口径，products.ts finishing 有支撑）；② eco-paper-bags H1「FSC 認證或再生紙」绝对化 vs products.ts「依供應」——需证书证据否则条件化；③ a2/outdoor「防水防曬・戶外不褪色」无测试——建议改「可選 PP 裱貼／霧面護膜」材质口径；④ same-day-flyers「當天交貨・即日快遞」急件承诺 = K3-2 同族；⑤ 海报 price_range 口径（products.ts 整單 HK$95-1,017 vs 线上 HK$12.9起/張）需统一。
+- **请 K3**: 可公开范围（改有测试条件的材料/使用边界；无证据删除）——优先 ①承重 ②FSC。
 
 ### K3-8 · 转化接入
 - **现状**: GA4、008 有效询盘、订单未按 landing page 对齐；「带钱词」收入待校准。
@@ -78,5 +80,9 @@
 - **en eco 诊断**（DIAG-P3-14）: `.hermes/logs/2026-10-26-eco-paper-bag-gsm-diagnosis.md`（根因 H1-H4，修复方向 A-D 待拍板执行）。
 - **P1-en 无风险内链 ×6**（平行会话 a07c619d）: saddle/exercise/catalog 自然锚，线上 6/6 `<a>` 渲染 PASS。
 - **J1 内链补全（本轮）**: doujin PDP（三语）→ `/comiket-c109/` 活动页 3 处零声明自然锚（C109→PDP 方向已有）。
+- **E1 small-batch 入链（2026-10-27）**: sticker-guide 采购段 → `/en/product/small-batch-stickers/` 单锚上线（origin=dfe5132f，02:13 push）；线上双方法渲染确认（我方 11/11 探针 + 对端 §2.9 独立验收）。
+- **攒批 push 15 commits（2026-10-27 02:13）**: CF build SUCCESS；P1 主 URL 线上 11/11 200（zh 纸袋/海报/传单、en small-batch/saddle/exercise、en doujin + ja C109、robots AI allow）。
+- **P1 五主 URL 数据包全就绪（02:0x）**: BAG-P1-08（纸袋 6 SKU）/ POSTER-P1-09（海报传单 10 SKU）/ STICKER-P1-10 + BOOK-P1-11（en）——真值表 + 采购答案草稿 + K3 flag 清单，**K3 拍板后当日可落 category 首屏直答**。
+- **基线复测 SOP 预演 PASS（02:0x）**: `analyze_seven_clusters.py` 冻结输入复跑输出字节级一致（JSON hash 与 HEAD blob 相同）。
 
-> 数据来源: 见各台账行；CF check-runs = api.github.com 公开接口 2026-10-26 21:3x；线上探针 = urllib.request 2026-10-26 21:3x（UA Mozilla/5.0）。
+> 数据来源: 见各台账行；CF check-runs = api.github.com 公开接口 2026-10-26 21:3x / 2026-10-27 02:2x；线上探针 = Invoke-WebRequest 2026-10-27 02:1x-02:2x（UA Mozilla/5.0）。
