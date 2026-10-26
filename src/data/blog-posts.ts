@@ -1560,9 +1560,9 @@ const lpCatalogPrintingChinaSupplierGuide: BlogPostMeta = {
     ja: 'カタログ印刷中国サプライヤーガイド: 4 製本 + 4 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '中國目錄印刷供應商怎麼揀？4 種裝訂 (騎馬釘/膠裝/線裝/精裝) + 4 種紙質 (157g 銅版/128g 書紙/200g 啞粉/250g 咭紙) + bulk/wholesale 100/500/1000/5000 階梯 15-30% 折扣, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',
-    en: 'How to choose a catalog printing China supplier? 4 binding types (saddle-stitch / perfect / spiral / case-bound) + 4 paper stocks (157gsm coated / 128gsm offset / 200gsm matte / 250gsm artboard) + bulk wholesale 100/500/1000/5000 tier 15-30% discount. 4-word cluster 9/4 ranking target: catalog book printing + china catalog printing + catalog printing china + bulk catalog printing.',
-    ja: 'カタログ印刷中国サプライヤーの選び方? 4 製本タイプ (中綴じ/無線綴じ/糸かがり/上製本) + 4 紙質 (157g コート/128g 書籍/200g マット/250g カード) + 大量卸売 100/500/1000/5000 段階 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送.',
+    'zh-hk': '中國目錄印刷供應商怎麼揀？4 種裝訂 (騎馬釘/膠裝/線裝/精裝) + 4 種紙質 (157g 銅版/128g 書紙/200g 啞粉/250g 咭紙) + bulk/wholesale 100/500/1000/5000 階梯 15-30% 折扣.',
+    en: 'How to choose a catalog printing China supplier? 4 binding types (saddle-stitch / perfect / spiral / case-bound) + 4 paper stocks (157gsm coated / 128gsm offset / 200gsm matte / 250gsm artboard) + bulk wholesale 100/500/1000/5000 tier 15-30% discount.',
+    ja: 'カタログ印刷中国サプライヤーの選び方? 4 製本タイプ (中綴じ/無線綴じ/糸かがり/上製本) + 4 紙質 (157g コート/128g 書籍/200g マット/250g カード) + 大量卸売 100/500/1000/5000 段階 15-30% 割引.',
   },
   targetKeywords: {
     primary: 'catalog book printing',

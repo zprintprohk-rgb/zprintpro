@@ -718,7 +718,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T16: books 338 imps 结构战 - 5 词对齐 + 5 FAQ
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷) + bulk/wholesale 段
-    featuredSnippet: '騎馬釘小冊子印刷 10 本起 (數碼) / 500 本起柯式, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$6 起/本, 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 天郵件詢盤 + 3-4 週海運, 我方三錘碾壓. 8-32 頁品牌 catalog + 32-48 頁雜誌/活動場刊 + 48-64 頁 NGO 報告 + 非洲中東東南亞教育局批量採購 (50-200 本試印友好). 10 本起工廠直送價格 30 秒 AI 報價, 4 詞 cluster 9/4 期望進首頁: 畫冊印刷 / 產品型錄印刷 / 中國印刷供應商 / 大量印刷.',
+    featuredSnippet: '騎馬釘小冊子印刷 10 本起 (數碼) / 500 本起柯式, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$6 起/本, 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 天郵件詢盤 + 3-4 週海運, 我方三錘碾壓. 8-32 頁品牌 catalog + 32-48 頁雜誌/活動場刊 + 48-64 頁 NGO 報告 + 非洲中東東南亞教育局批量採購 (50-200 本試印友好). 10 本起工廠直送價格 30 秒 AI 報價.',
     lastUpdated: '2026-08-24',
     h2: '騎馬釘小冊子 / 騎馬釘書刊 / 畫冊印刷 / 產品型錄印刷 / 大量印刷 — 10 本起印, 8-64 頁全規格, 30 秒 AI 報價',
     coreAdvantages: {
@@ -818,7 +818,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   en: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (catalog book + china catalog + catalog printing china + bulk catalog) + bulk/wholesale 段
-    featuredSnippet: 'Saddle stitch booklets from 10 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 10-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders. Factory-direct bulk wholesale tier 500/1000/5000 pcs 15-30% discount. 4-word cluster 9/4 ranking target: catalog book printing + china catalog printing + catalog printing china + bulk catalog printing.',
+    featuredSnippet: 'Saddle stitch booklets from 10 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 10-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders. Factory-direct bulk wholesale tier 500/1000/5000 pcs 15-30% discount.',
     lastUpdated: '2026-08-24',
     h2: 'Saddle Stitch Booklet / Catalog Printing / China Catalog Printing / Bulk Catalog Printing / Book Printing — From 50 Copies, Instant Quote, 8-64 Pages',
     coreAdvantages: {
@@ -918,7 +918,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   ja: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     // 2026-08-24 v3.17 B3 批 1 改写: 4 词 cluster (カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送) + bulk/wholesale 段 + ジープリント 埋点 1 次
-    featuredSnippet: '中綴じ冊子印刷 10冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 10冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. 4 語 cluster 9/4 順位目標: カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送. ZprintPro.',
+    featuredSnippet: '中綴じ冊子印刷 10冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 10冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可). 工場直送大量卸売 500/1000/5000 冊 15-30% 割引. ZprintPro.',
     lastUpdated: '2026-08-24',
     h2: '中綴じ冊子 / カタログ印刷 / 大量印刷 / 卸売印刷 / 国際配送 — 10冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
