@@ -48,6 +48,13 @@ NEXT: 本地模拟 PASS → 3b39a3f4 的 CF build 应成功 → 线上探针 rob
 - 本地 `build:cf` 全链模拟（clean → generate-sitemap-content → next build → next-on-pages@1.13.16）后台执行。
 - 3b39a3f4 的 CF build 已由 push 触发——build 成功后线上探针：`robots.txt` 200 + 12 AI allow + 无 `/_next/`；saddle/exercise H1「from 10 Copies」；年賀状 title 无「早割」。
 
+## 4.1 更新（21:55 探针后）：CF build 已恢复 + robots 改用 CF Functions 方案
+
+- **3b39a3f4 build 部署成功**（21:40 探针确认）：saddle/exercise H1「from 10 Copies」+ 年賀状 ja title「年賀状 2027 印刷 10枚から ¥20〜 オリジナル」全部上线 → **CF build 从 3b39a3f4 起恢复**（根因修复：public/robots.txt 恢复 → generate-sitemap-content 不再 SKIP → route.ts import 正常 → build 成功）。
+- **robots.txt 仍 404**（21:40/21:55 探针，偶发 403 CF 挑战页）：**3b39a3f4 的 route handler（app/robots.txt/route.ts）在线上不生效**——CF Pages 将 /robots.txt 视为保留路径，route handler / MetadataRoute / public 静态三者均被平台行为拦截（sitemap.xml 同为 public 静态却 200——robots.txt 是唯一被 CF 保留的路径）。
+- **修复（9ad7dbf3 已 commit，待 push）**：改用 **CF Pages Functions**（`functions/robots.txt.ts`，onRequestGet edge 拦截 /robots.txt，内容 = 12 AI allow + sitemap ×2，与 public/robots.txt 同步）——Functions 在 Next 之前于 edge 层拦截，平台原生保证生效。删除 `src/app/robots.txt/route.ts`（route handler 在 CF 无效）。
+- **待验**：push 后探针 robots.txt 200 + 内容正确。
+
 ## 5. 待 K3（若模拟/线上仍失败）
 
 1. **CF Dashboard build logs**：查 3b39a3f4 与 ef3140ac / 23f9c81c 的 run——确认失败步骤（clean / generate-sitemap-content / next build / next-on-pages 哪一步）。
