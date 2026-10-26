@@ -89,11 +89,25 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - **push-gate-check 02:01:21 = BLOCKED**（距 bb7b157c 的 cf-check-run 13min / commit 20min，<30min 硬下限，需再等 ~17min）。
 - 按 §0.25.8: 本轮 commit 已落本地（4831ae59），**push 留给下一窗口**（对端 E1 落位亦将就绪，由对端或下一轮攒批推；共享分支常规流程，7 个完成态 docs commit 一并携带）。
 
-## 7. 下一步（NEXT）
+## 7. 第四轮补充（2026-10-27 02:02-02:1x，push 窗口未开期）
 
-1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、**K3-2 急件承诺**、**K3-7 防水/FSC/承重**）→ 拍板后当日落地（采购答案 + 声明治理 src 批）。
+### 7.1 P1-B en 侧数据就绪（本轮新增）
+- 交付: `.hermes/logs/2026-10-27-p1-b-en-small-batch-and-books-purchase-answers.md`。
+- 真值表: small-batch-stickers（HK$38-120/A4 版 / minQ 10 版 / 4 材料 / 10×10–300×400mm 模切）＋ saddle（HK$6-32/本）＋ exercise（HK$4-16/本）。
+- 口径冲突登记（K3-6）: **small-batch「版 vs 枚」单位粒度**（products.ts 10 A4 版 vs 线上 50+ pcs/$0.045）——不改 $0.045 为 $0.05（停止条）；saddle US$1.84-7.36 汇率口径；DHL 全球 2-4 天交期（K3-2 族）。
+- 声明 flag: saddle「vs Alibaba 黃頁 500+」「vs 郵件詢盤 2 天」**竞对对比文案**待 K3 确认。
+- 内链登记: E1 sticker-guide→PDP 锚已备（对端待落）；E2/E5 books 三语已链（对端核验）——不重复。
+- **至此 P1 五个主 URL 数据包全就绪**: BAG-P1-08 ✓ / POSTER-P1-09 ✓ / STICKER-P1-10 ✓ / BOOK-P1-11 ✓ / doujin+ja C109 ✓（R1 链接 + 台账）。
+
+### 7.2 并发与 push
+- 02:02 push-gate 仍 BLOCKED（距上次 15min）；按 §0.25.8 不阻塞等待——commit 本地，push 留给窗口（≥02:18）或下一轮。
+- src clean 保持；对端 01:59 后未见新 commit。
+
+## 8. 下一步（NEXT）
+
+1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、K3-2 急件/交期、K3-6 small batch 单位/服务边界、K3-7 防水/FSC/承重、比较性文案）→ 拍板后当日落地（采购答案 + 声明治理 src 批）。
 2. **K3-9 尾项**: CF Dashboard → Security → Bots 允许 AI crawlers（edge 优先生效）。
-3. **周 2（11-02 起）**: BAG-P1-08 zh 纸袋 + POSTER-P1-09 zh 海报（数据包就绪）+ STICKER-P1-10（small batch）。
+3. **周 2（11-02 起）**: P1-A zh 纸袋/海报 + P1-B small batch/books 采购答案执行（数据包全就绪）。
 4. **28 天复测**: 2026-11-23 同口径基线复跑（SOP 已预演验证 PASS）。
 
 > 数据来源: 见 §1（线上探针 / products.ts / 平行会话 git log / 台账）。本报告为内部文档（GSC/探针数据仅进 .hermes/ 与 docs/，未入客户可见内容，§0.23.1）。
