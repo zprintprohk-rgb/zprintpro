@@ -39,6 +39,7 @@
 - **small batch**: 最低 10 個 A4 版起印（線上亦按 50 枚/款起售，单位见 §3-1）；材料銅版/PP/透明PVC/Kraft；尺寸 10×10mm–300×400mm 模切任意形狀；免費數碼打樣（2h）；交期与配送见 K3-6。
 - **books**: 騎馬釘小冊子/練習簿 10 本起印；A4/A5；8-64 頁平攤翻閱；封面覆膜可選；價格 HK$6-32/本（saddle）／HK$4-16/本（exercise）。
 - **内链登记**: E1 sticker-guide→PDP 锚已备（对端待落）；E2/E5 books category 数据驱动+指南三语已链（对端核验）。
+- 🔶 **新观察（02:08 线上探针，双方法）**: **small-batch PDP 无任何 guide 出链**（live HTML 仅导航/页脚链接，无 sticker-guide/buying-guide/blog 正文链接）——E1「两条自然内链」出链侧未满足；对端 E1 只补了入链（guide→PDP）。**建议**: K3 批内 PDP body 采购段加 1-2 条零声明出链（→ sticker-guide / sticker-buying-guide，锚=产品名/描述性词），待 E1 归属方（对端）或 K3 排期，本轮不落 src。
 
 ## 6. NEXT
 
