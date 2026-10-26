@@ -53,11 +53,33 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - 未改: 五车道触发 / 定时任务 / sitemap XML / .hermes 车道产物（不扫他人半态）。
 - 门禁: 提交时由 pre-commit 门童全量执行（encoding/tsc/brand/gsc-leak/title-v5）；本轮 src 仅字符串锚点新增。
 
-## 4. 下一步（NEXT）
+## 5. 第二轮补充（2026-10-27 01:45-02:00，平行会话活跃期）
 
-1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径）→ 拍板后立即可执行（真值已就绪）。
+### 5.1 平行会话对齐（避免重复，已核其 4 个本地 commit e77961e5/b841bfbb/ad88c0d8/64bad1e9）
+- 其已交付: E1/E4/E3 内链核验方案（E1 sticker-guide→PDP 为其待落项；E4 三个缺口留待 K3/下轮；**PDP→C109 已确认我方完成，方案不再重复**）；E6 eco 诊断（线上健康 + 带宽漂移 120g-250g vs 120gsm-350gsm + ja 缺 PDP 链接）；packaging 簇（rigid/food/kraft **box**）D2/D3 前置（cleanup-plan + K3 决策包 10 域）——与纸袋簇无重叠。
+- 其 push 被 gate 挡下（01:43）后留窗口；我方同样不在本轮 push（HEAD 含其 4 个未推 commit，push 会代推对端工作）。
+
+### 5.2 BAG-P1-08 zh 纸袋采购答案内部数据包（本轮新增）
+- 交付: `.hermes/logs/2026-10-27-bag-p1-08-zh-paper-bags-purchase-answers.md`。
+- 真值表: 6 SKU（kraft/white-card/gift/eco/handle/large）price_range / basePrice_en / basePrice_ja / minQ=100 统一 / 材质克重 / 尺寸 / 工艺手挽（products.ts L1355-1900）。
+- 主 URL 内链: category ↔ 6 PDP **双向 6/6 已齐**（线上 01:5x 探针）→ 该子项已闭环，不新增链接。
+- 🔴 发现线上违规: **handle-bags H1「堅固手挽設計，承重能力強」无实测**（BAG-P1-08 停止条「无实测不写承重」触发）；eco H1「FSC 認證或再生紙」绝对化 vs products.ts「依供應」口径；category desc「免費設計打稿即日打樣」的「即日」待确认。全部列 K3-7 清单（§4 七项）。
+- 采购答案草稿（起印 100 / 各袋型价格带 / 尺寸 / 克重 / 手挽 / 免費數碼打樣 / 3-5 工作天 / 滿 $500 免運）待 K3 对环保声明拍板后落 category 首屏。
+
+### 5.3 基线冻结完整性校验（28 天复测 SOP 预演，本轮新增）
+- 用 DSH bundled python 复跑 `.kimi-work/seven-clusters-20261026/analyze_seven_clusters.py`（冻结输入不变）。
+- 输出与冻结产物**字节级一致**（seven-cluster-local-evidence.json hash `5cd5a028` = HEAD blob；queries/pages/summary CSV 无改动）→ 词表 v1.0 完好、幂等复跑成立。
+- 已还原工作树（无残留改动）；SOP（2026-11-23 用）端到端可用。
+
+### 5.4 本轮纪律
+- docs-only（未落 src）；未动五车道触发/定时任务；未触碰平行会话产物；未 push（30min 窗口 + 对端未推 commit 保护）。
+- 数据来源: products.ts / 线上探针 01:5x / 冻结目录脚本与产物 / git hash-object 比对。
+
+## 6. 下一步（NEXT）
+
+1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、**K3-7 纸袋环保声明（含 handle 承重）**）→ 拍板后立即可执行（真值已就绪）。
 2. **K3-9 尾项**: CF Dashboard → Security → Bots 允许 AI crawlers（edge 优先生效）。
 3. **周 2（11-02 起）**: BAG-P1-08 zh 纸袋类别采购答案 + POSTER-P1-09 + STICKER-P1-10（small batch 服务边界拍板后）。
-4. **28 天复测**: 2026-11-23 同口径基线复跑（`analyze_seven_clusters.py`，SOP 见基线冻结文档）。
+4. **28 天复测**: 2026-11-23 同口径基线复跑（SOP 已在本轮预演验证）。
 
 > 数据来源: 见 §1（线上探针 / products.ts / 平行会话 git log / 台账）。本报告为内部文档（GSC/探针数据仅进 .hermes/ 与 docs/，未入客户可见内容，§0.23.1）。
