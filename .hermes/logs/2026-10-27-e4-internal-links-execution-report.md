@@ -6,10 +6,10 @@
 ## VERDICT / CONSUMED / DELIVERED / NEXT
 
 ```
-VERDICT: PASS（E4 三缺口全部落位 + 门禁全绿 + 线上验收后确认）
+VERDICT: PASS（E4 三缺口全部落位 + 门禁全绿 + 线上验收 3/3 PASS + §9.1 无回归）
 CONSUMED: 策略 §5.1 E4 | blog-data/en.json（zine guide）| products.ts L6790/L6799（doujinshi PDP longDescriptionEn）| blog-posts.ts（目标 slug 存在性）| push-gate.log（窗口）
-DELIVERED: ①zine guide→doujinshi PDP 锚 ②PDP→zine guide 锚 ③PDP→comiket-prep-guide 锚（零新增文案，3 文件 4 行 diff）
-NEXT: 攒批 push（≥02:50:50 窗口，含 4 个本地 docs commit）→ 线上探针锚渲染验收 → 对端 sitemap lastmod 脏文件登记（本轮不携带）
+DELIVERED: ①zine guide→doujinshi PDP 锚 ②PDP→zine guide 锚 ③PDP→comiket-prep-guide 锚（零新增文案，3 文件 4 行 diff）+ 线上验收 PASS
+NEXT: E4 全链闭环；en P1 内链层完成——剩余为 K3 拍板项（年賀状三真值 / en greeting / saddle+exercise / catalog C4 / CF Bots / 五车道管理员 / 异常域 / 转化数据）
 ```
 
 ## 1. 数据来源行（§0.23）
@@ -31,7 +31,7 @@ NEXT: 攒批 push（≥02:50:50 窗口，含 4 个本地 docs commit）→ 线�
 | E4-3 | /en/product/doujinshi-printing/ | `before Comiket`（长上下文唯一） | /en/blog/comiket-printing-prep-guide/ | Turnaround 交期段 |
 
 - **与 01:53 方案修正点（双方法复核，§0.23.2）**: 原方案认为 zine guide "doujin circles" 已在既有 `<a href="/en/blog/doujin-circle-printing-guide/">` 锚内 → 锚点冲突需重设计。**实际 dump 证明**: 该锚文本为「doujinshi printing guide」（不同词组），`doujin circles` 是独立纯文本（全局 1 次出现、0 次在 `<a>` 内），**无冲突** → 直接用原锚，无需新文案。
-- 幂等: 三目标在源页当前 0 链接（apply 前 count=0 已验）→ apply 后各 1（count 断言 1）。
+- 幂等: 三目标在源页 content 层当前 0 链接（apply 前 count=0 已验）→ apply 后各 1（count 断言 1）。线上预基线（push 前 @02:45）：三锚**精确全串均未出现**（`<a href="/en/product/doujinshi-printing/">doujin circles</a>` 等，urllib+UA 三闸门）→ push 后出现 = 确定性归因；页面中已存在的 `href="/en/product/doujinshi-printing/"` 2 处均为**自动 related-card 网格**（非 content 锚），不违反 §5.4「每源页每个目标仅 1 条」content 层口径。
 - 门禁: encoding ✓（无 staged 前先跑，事后无新增异常）/ brand A 类 0 ✓ / tsc 54=54 基线持平（quote-engine 既有测试错误，零新增）✓ / JSON 解析三重 ✓ / diff 仅 3 文件 4 行 ✓。
 - 备份: `.hermes/_bak-blogdata-en-before-e4-20261027.json` + `.hermes/_bak-products-before-e4-20261027.ts`。
 
@@ -41,11 +41,11 @@ NEXT: 攒批 push（≥02:50:50 窗口，含 4 个本地 docs commit）→ 线�
 - small-batch PDP 出链: 需新增文案 → K3 决策域，未触碰（登记于对端 da71a9e4）。
 - E1（sticker-guide→PDP）: 上一轮已完成并线上验收，本轮无重复。
 
-## 3. 攒批 push（待 ≥02:50:50 窗口）
+## 3. 攒批 push（02:50:09 完成）
 
-- 本地 4 个未推 docs commit（E1 验收 2 + 对端 K3 队列/packaging 2）随本批携带。
-- 本轮新增: `feat(seo)` E4 三锚 + `docs(report)` 本报告。
-- push 前独立跑 `scripts/push-gate-check.mjs`（机器闸，独立调用，禁 `;` 串联）。
+- **push**: `dfe5132f..f4fe06bf main -> main` @02:50:09（6 commit：0b529f30/d051a103/22c1c2f7/a0619a4f 本地 docs 4 + 01b2d306 E4 src + f4fe06bf 方案状态更新），pre-push 门童全绿（5 道 0 red / 0 orange；shadow 2 yellow = GSC 来源行缺失于方案文件，非阻断）。
+- 本轮新增: `01b2d306`（E4 src + 报告）+ `f4fe06bf`（方案状态更新）。
+- push 前独立跑 `scripts/push-gate-check.mjs`（机器闸独立调用）→ OK（30min 硬下限满足）。
 
 ## 4. 数据诚信
 
@@ -53,7 +53,29 @@ NEXT: 攒批 push（≥02:50:50 窗口，含 4 个本地 docs commit）→ 线�
 - 无 GSC 后台数据进入客户可见内容；`doujin circles` 锚为既有自然词组。
 - 对端 sitemap lastmod 脏文件（public/sitemap-*.xml，纯 lastmod 2026-10-22→26 无 URL 变更）**非本轮范围，不携带**，登记待对端/下轮处理。
 
-## 5. 线上验收（push 后）
+## 5. 线上验收（push 后 @02:56 PASS，双方法）
 
-- 待 push 后探针: 三页锚渲染为合法 `<a>` + §9.1 基线无回归（robots 200 / doujinshi PDP 200 / zine guide 200 / C109 保持）。
-- 数据来源: 线上探针（urllib+UA 与 curl+UA 双方法，§0.23.2）。
+**Push**: 2026-10-27 02:50:09 `dfe5132f..f4fe06bf main -> main`（6 commit），pre-push 门童全绿 → CF build SUCCESS（check-run completed/success @02:56:26）→ 线上探针。
+
+### 5.1 E4 三锚渲染验收（3/3 PASS）
+
+| # | 源页 | 锚 → 目标 | 方法1（urllib+UA） | 方法2（curl 文件落地） |
+|---|---|---|---|---|
+| E4-1 | /en/blog/zine-small-batch-booklet-printing-guide/ | `doujin circles` → /en/product/doujinshi-printing/ | ✅ 页长 188848→188962 | ✅ 188543B 文件含完整 `<a href="/en/product/doujinshi-printing/">doujin circles</a>` |
+| E4-2 | /en/product/doujinshi-printing/ | `Saddle Stitch` → /en/blog/zine-small-batch-booklet-printing-guide/ | ✅ 页长 174576→174860 | ✅ 含 `<a href="/en/blog/zine-small-batch-booklet-printing-guide/">Saddle Stitch</a>`（td 内） |
+| E4-3 | /en/product/doujinshi-printing/ | `before Comiket` → /en/blog/comiket-printing-prep-guide/ | ✅ | ✅ 含 `<a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a>` |
+
+- **归因确定性**: pre-push 预基线（@02:45）三锚**精确全串均未出现** → push 后（@02:56）三锚全部 `<a>` 渲染 = 确定性归因于 01b2d306。
+- **残留复核（§0.23.2 三闸门）**: 页面中短语的其余出现均为**合法独立上下文**（meta description / img alt / JSON-LD schema / RSC flight payload / H3 标题「Perfect Binding vs Saddle Stitch」），锚点实例本身完整包裹；无「同一锚点位置」的纯文本残留。
+
+### 5.2 §9.1 基线无回归（PASS）
+
+- robots.txt: HTTP 200 + AI allow（User-agent: GPTBot）✓
+- /en/blog/comiket-printing-prep-guide/: 200 ✓
+- /ja/comiket-c109/: 200（C109 marker）✓
+- /en/product/doujinshi-printing/: 200（title/H1 保持）✓
+
+### 5.3 数据诚信
+
+- 数据来源: 线上探针 `_e4_probe.mjs`（urllib+UA @02:56）+ `_e4_verify_curl.mjs`（curl+UA 文件落地 188543B/174441B 权威）+ `_e4_residual.mjs`（逐上下文复核），2026-10-27 02:56 Asia/Shanghai。
+- 无 GSC 后台数据入客户可见内容；锚文本全部为源页既有精确词组（零新增文案）。
