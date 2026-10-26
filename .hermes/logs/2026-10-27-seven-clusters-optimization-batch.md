@@ -75,11 +75,24 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - docs-only（未落 src）；未动五车道触发/定时任务；未触碰平行会话产物；未 push（30min 窗口 + 对端未推 commit 保护）。
 - 数据来源: products.ts / 线上探针 01:5x / 冻结目录脚本与产物 / git hash-object 比对。
 
-## 6. 下一步（NEXT）
+## 6. 第三轮补充（2026-10-27 02:0x-02:3x，对端静默期）
 
-1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、**K3-7 纸袋环保声明（含 handle 承重）**）→ 拍板后立即可执行（真值已就绪）。
+### 6.1 POSTER-P1-09 zh 海报采购答案内部数据包（本轮新增）
+- 交付: `.hermes/logs/2026-10-27-poster-p1-09-zh-posters-purchase-answers.md`。
+- 真值表: flyers 7 SKU（minQ 10，HK$0.25-1.95/張 档）+ posters 3 SKU（a2 minQ 10 / a1+outdoor minQ 1）。
+- 主 URL 内链: zh category/posters → PDP **4/5**；**唯一缺口 = same-day-flyers 缺失**（零声明可补，锚=产品名「即日傳單印刷」，已备好一行，本轮未落 src）。
+- 🔴 声明 flag（K3-2/7）: same-day「當天交貨・即日快遞」急件承诺；a2/outdoor「防水防曬・不褪色」无实测；**海报 price_range 口径不一致**（products.ts HK$95-1,017 整單 vs category「HK$12.9起/張」）——同 catalog C4 价格带问题族。
+- 采购答案草稿已备（起印/价格/尺寸/材质/工艺/交期），K3 拍板后当日可落。
+
+### 6.2 并发状态与 push 决策
+- 对端自 d1619792（01:57）后静默；src clean；6 个累积 docs commit（我方 1 + 对端 5）。
+- 距我方 bb7b157c push（01:41）≥30min；距 60min 强制攒批（02:41）将到 → **本轮攒批 push**（含对端 5 个完成态 docs commit，均为文档产物，非 staged 半态；§0.25.9 + 共享分支常规流程）。
+
+## 7. 下一步（NEXT）
+
+1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、**K3-2 急件承诺**、**K3-7 防水/FSC/承重**）→ 拍板后当日落地（采购答案 + 声明治理 src 批）。
 2. **K3-9 尾项**: CF Dashboard → Security → Bots 允许 AI crawlers（edge 优先生效）。
-3. **周 2（11-02 起）**: BAG-P1-08 zh 纸袋类别采购答案 + POSTER-P1-09 + STICKER-P1-10（small batch 服务边界拍板后）。
-4. **28 天复测**: 2026-11-23 同口径基线复跑（SOP 已在本轮预演验证）。
+3. **周 2（11-02 起）**: BAG-P1-08 zh 纸袋 + POSTER-P1-09 zh 海报（数据包就绪）+ STICKER-P1-10（small batch）。
+4. **28 天复测**: 2026-11-23 同口径基线复跑（SOP 已预演验证 PASS）。
 
 > 数据来源: 见 §1（线上探针 / products.ts / 平行会话 git log / 台账）。本报告为内部文档（GSC/探针数据仅进 .hermes/ 与 docs/，未入客户可见内容，§0.23.1）。
