@@ -26,7 +26,9 @@
    - 源: `src/data/blog-data/en.json:40`（sticker-guide 正文，H2 "What's the minimum order? Can I print small batches?" 下采购/总结段）
    - 锚: `small-batch restocking for cross-border sellers`（**唯一出现**，零新增文案）
    - 原文: `...Our low MOQ suits new brand testing, limited-edition campaigns and small-batch restocking for cross-border sellers.`
-   - 落位: `...campaigns and [small-batch restocking for cross-border sellers](/en/product/small-batch-stickers/).`
+   - **落位形态（修正）**: 该文件全篇为 **HTML `<a>`（13 个）无 markdown**，既有内链均为无 class 普通 `<a>` → 落位:
+     `...campaigns and <a href="/en/product/small-batch-stickers/">small-batch restocking for cross-border sellers</a>.`
+   - ⚠️ 勿用 markdown `[text](url)`（sticker-guide 全篇 0 个 markdown 链接，避免风格不一）
    - ⚠️ blog-data JSON 属 lane.lock + §0.35.7 双条件保护区，执行前必查
 
 ## E4 落位（对端活跃期间不执行，留待 K3/下轮）
