@@ -10,26 +10,30 @@
 
 ### K3-1 · doujin 价格单位与币种
 - **现状**: 三语 doujin 显示 `¥7,500〜/部〜`；products.ts DJ-001 `price_range=¥7,500〜/部〜`、`basePrice=7500(JPY)`、`basePrice_en=1245`、`minQuantity=10`。
+- **2026-10-27 01:35 复核**: ja PDP body 仍含 `¥7,500`；C109 页 ja 段 `¥7,500 から`；zh body `單價由 ¥7,500 起／部`。
 - **问题**: ¥7,500 是「每部」还是「每单/其他规格」未定；en/zh 该显示 JPY 还是本地币种；basePrice_en=1245 的币种/倍率未核。
-- **请 K3 一句话**: ① ¥7,500 对应口径；② en/zh 显示币种与报价方式（推荐: en/zh 改为本地币并链 30 秒 AI 报价，不写换算假值）。
+- **请 K3 一句话**: ① ¥7,500 对应口径；② en/zh 显示币种与报价方式（分析师推荐: en/zh 改本地币并链 30 秒 AI 报价，不写换算假值；ja 保留 ¥7,500 若业务认可「每部」）。
 
 ### K3-2 · doujin MOQ 与 rush
-- **现状**: ja 描述写 50 冊（正文/H1 10 冊）——源已改 10（先遣 P0-3）；「コミケ前 24 時間特急」「即日発送」并存；C109 页承诺逆算。
-- **问题**: 10 vs 50 终裁；24h/即日、生产与国际配送边界；酒店/会场直送是否可承诺。
-- **请 K3**: 终裁 MOQ 数字与 rush 承诺边界（可兑现才保留，否则删）。
+- **现状**: ja 描述原写 50 冊（正文/H1 10 冊）；「コミケ前 24 時間特急」「即日発送」并存；C109 页承诺逆算。
+- **2026-10-27 01:35 复核**: **MOQ 50→10 已线上生效**（ja PDP body: 10冊=True、50冊=False；desc 亦 10冊〜）——此子项已闭环，无需再拍板。
+- **剩余问题**: 24h/即日、生产与国际配送边界；酒店/会场直送是否可承诺（C109 页 ja 段有「前日・会場受取」表述）。
+- **请 K3**: 只对 rush 承诺边界拍板（可兑现才保留，否则删）。
 
 ### K3-3 · 四页 MOQ（saddle/exercise/catalog/A2）
-- **现状**: saddle/exercise 源已改 H1 100→10（products.ts minQ=10）；catalog/A2 线上 H1 仍 100+（desc 10）。
-- **问题**: title 10 与 H1 100 哪一个是真（数字小批 10 vs offset 批量 100）；exercise 装订已统一 Saddle-Stitched 是否认可。
-- **请 K3**: 四页统一口径（推荐: 数字印刷 MOQ=10 为公开口径，H1 改 10；若业务上 offset 起印 100 需同时写清）。
+- **现状**: saddle/exercise H1 已改 100→10 且 **2026-10-27 01:35 线上已生效**（`from 10 Copies`）；catalog/A2 线上 H1 仍 100+（desc 10）。
+- **问题**: 仅剩 catalog/A2 的 H1 100+ 是否改 10（数字小批 10 vs offset 批量 100）；exercise 装订已统一 Saddle-Stitched 是否认可。
+- **请 K3**: ① 认可 catalog/A2 统一 MOQ=10（推荐: 数字印刷 MOQ=10 为公开口径，H1 改 10；若业务 offset 起印 100 需同时写清）；② exercise 装订 Saddle-Stitched 认可。
 
 ### K3-4 · ja 报价币种
-- **现状**: ja textbook description `HK$5-50/冊`（线上确认）、ja paper-bags 正文 `HK$8.00〜`；全站 ja 内容 50 处 HK$（含香港语境内容——语义正确，不在本项）。
+- **现状**: ja textbook description `HK$5-50/冊`（线上确认）；ja paper-bags 正文 `HK$8.00〜`；全站 ja 内容 50 处 HK$（含香港语境内容——语义正确，不在本项）。
+- **2026-10-27 01:35 复核**: `/ja/blog/textbook-printing-guide/` desc 仍为 `100冊から HK$5-50/冊`（HK$ 在线未变）。
 - **问题**: 日本站通用页应显示 JPY 的金额、适用范围、有效期；不能只换货币符号。
 - **请 K3**: textbook 与 paper-bags 的日元金额（或授权按 products.ts 真值换算）+ 有效期。
 
 ### K3-5 · 年賀状 A/B
 - **现状**: `/ja/nengajo-2027/` 主推 127×178mm；早割率/截止未定、宛名确认中；先遣已撤「早割受付中」承诺词。日本郵便一般年賀はがき = 100×148mm。
+- **2026-10-27 01:35 复核**: H1 `2027年年賀状印刷 — 10枚から ¥20〜`；desc 仍 `127×178mm 標準サイズ、宛名オプション対応確認中、納期3〜5営業日、DHL国際2〜…`。
 - **问题**: 100×148 可否生产；127×178 产品定位（若只是贺卡则不能借年賀状意图）；价格/早割/截止；宛名/投函是否提供。
 - **请 K3**: A 分支（统一规格/早割/宛名后推进）或 B 分支（转普通贺卡定位、不扩年賀状词）。
 
@@ -49,14 +53,10 @@
 
 ## B. 部署阻断（本轮新增，最高优先级）
 
-### K3-9 · Cloudflare Pages build 连续失败（P0-2/P0-3/年賀状/CAT-P0-06 全部未上线）
-- **证据（GitHub check-runs 2026-10-26 21:3x）**:
-  - `ef3140ac`（P0-2 robots + P0-3 MOQ，18:39 推）: CF Pages **conclusion=failure**，started/completed 同秒（10:42:32Z）→ **零时长失败 = 构建前拒绝（quota/账户/配置），非代码错误**。
-  - `23f9c81c`（18:53 推）: 同秒 **failure**（10:56:55Z）。
-  - 上次成功 build = `8c3dd996` @ 08:59（退场/进攻 title 批）。之后所有 src 修复（robots 单源化、MOQ 100→10、年賀状撤早割、本轮 catalog 清毒）**均未部署**。
-- **本地侧**: 本地 build PASS（726 URLs，`.next/server/app/robots.txt` 已生成）；tsc 54=54；门禁全绿。
-- **根因假设（高置信）**: 免费方案**月度 build quota 耗尽**（今天高频 push）；次因 CF 账户/构建配置变更。
-- **K3 动作（需 CF Dashboard，私有访问）**: ① 查 `zprintprohk-rgb/zprintpro` 最近 build logs（ef3140ac / 23f9c81c）失败原因；② 若 quota → 等重置或升级；③ 修复后手动重跑 build 或重推；④ 部署后我方可立即线上探针验收（robots 200 + saddle/exercise H1 10 + catalog description 无内部标记）。
+### K3-9 · Cloudflare Pages build / robots（已基本闭环，仅剩 K3 侧动作）
+- **进展（2026-10-26 22:xx—2026-10-27）**: 平行会话 9ad7dbf3/028233aa 改用 **CF Pages Function（functions/robots.txt.ts edge 拦截）** —— 22:16 线上验收 **PASS（robots.txt 200 + 12 AI allow + sitemap×2 + 无 /_next/）**；2026-10-27 01:35 本人复核同 PASS。
+- **根因修正**: 早期「零时长 build failure = quota 耗尽」假设**不成立**——build 已恢复（3b39a3f4 部署确认）；平行会话 7c0a37aa 定位: `generate-sitemap-content` SKIP → `ROBOTS_TXT` 缺失 → `route.ts` import 失败（构建侧问题，非账户 quota）。
+- **剩余 K3 动作**: CF Dashboard → Security → Bots **允许 AI crawlers**（CF edge 优先生效，§0.1 K3 侧动作）——完成后 AI 抓取允许即全链路闭环。
 
 ---
 
@@ -69,9 +69,14 @@
 ---
 
 ## 已闭环（无需决策，供知悉）
-- **CAT-P0-06**（catalog supplier guide 内部 ranking target 泄露）: 本轮 9 处清理完毕（blog-data ×3 + blog-posts ×3 + category-seo-content ×3），残留扫描 0，备份在 `.hermes/_bak-cat-cleanup-20261026/`。
-- **CORE-P0-02** 真值台账首版: `.hermes/logs/2026-10-26-seven-clusters-p0-truth-ledger.md`。
+- **robots（P0-2）**: CF Pages Function edge 拦截方案，线上 200 + 12 AI allow + sitemap×2（22:16 + 01:35 双复核 PASS）。
+- **saddle/exercise MOQ（P0-3）**: 线上 H1 `from 10 Copies`（01:35 复核生效）。
+- **doujin MOQ 50→10**: 线上已生效（01:35 复核 10冊）。
+- **CAT-P0-06**（catalog supplier guide 内部 ranking target 泄露）: 9 处清理完毕 + 线上三语 clean（01:35 复核）；备份在 `.hermes/_bak-cat-cleanup-20261026/`。
+- **CORE-P0-02** 真值台账首版: `.hermes/logs/2026-10-26-seven-clusters-p0-truth-ledger.md`（01:35 复核更新）。
 - **基线冻结 v1.0**: `docs/2026-10-26-seven-clusters-baseline-freeze.md` + `.kimi-work/seven-clusters-20261026/` 入库。
 - **en eco 诊断**（DIAG-P3-14）: `.hermes/logs/2026-10-26-eco-paper-bag-gsm-diagnosis.md`（根因 H1-H4，修复方向 A-D 待拍板执行）。
+- **P1-en 无风险内链 ×6**（平行会话 a07c619d）: saddle/exercise/catalog 自然锚，线上 6/6 `<a>` 渲染 PASS。
+- **J1 内链补全（本轮）**: doujin PDP（三语）→ `/comiket-c109/` 活动页 3 处零声明自然锚（C109→PDP 方向已有）。
 
 > 数据来源: 见各台账行；CF check-runs = api.github.com 公开接口 2026-10-26 21:3x；线上探针 = urllib.request 2026-10-26 21:3x（UA Mozilla/5.0）。

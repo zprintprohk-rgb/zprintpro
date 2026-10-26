@@ -32,25 +32,25 @@
 | 字段 | 值 |
 |---|---|
 | URL | `/robots.txt`（三语共用） |
-| 现值 | 线上 404（2026-10-26 21:3x 复核仍 404） |
-| 源头路径 | `src/app/robots.ts`（唯一 SSoT，commit ef3140ac） |
-| 证据 | 本地 build `.next/server/app/robots.txt` 已生成；线上 404 = CF build 未部署 |
-| CF 状态 | check-runs: ef3140ac=failure（started/completed 同秒）、23f9c81c=failure（同秒）；上次成功 build = 8c3dd996 @ 08:59 |
+| 现值 | 线上 200（2026-10-27 01:35 复核：12 AI allow + sitemap×2 + 无 /_next/ Disallow，双 UA） |
+| 源头路径 | `functions/robots.txt.ts`（CF Pages Function edge 拦截，平行会话方案，commit 9ad7dbf3/028233aa）；旧 `src/app/robots.ts` 已删（6076cade） |
+| 证据 | 2026-10-26 22:16 平行会话验收 PASS；2026-10-27 01:35 本人复核同 PASS；CF Functions edge 拦截为唯一线上生效路径 |
+| CF 状态 | build 已恢复（3b39a3f4 部署确认）；非 quota 耗尽——平行会话 7c0a37aa 定位：generate-sitemap-content SKIP → ROBOTS_TXT 缺失 → route import 失败 |
 | 适用 | 全站抓取规则；12 AI crawlers explicit Allow；sitemap 指向 sitemap.xml + sitemap-image.xml |
-| 状态 | ⛔ BLOCKED（源码 ✅，部署被 CF 阻断） |
-| 负责人 | K3（CF Dashboard 查 build logs／配额）；执行层提供证据包 |
-| K3 决策 | §K3-9：CF build 连续失败根因（零时长失败 → 疑似月度 build quota 耗尽或账户配置） |
+| 状态 | ✅ APPROVED（线上生效中） |
+| 负责人 | K3（CF Dashboard → Security → Bots 允许 AI crawlers，edge 优先生效） |
+| K3 决策 | §K3-9 更新：build 已恢复；待 K3 CF Dashboard 允许 AI crawlers |
 
 ### P0-B 同人价格／币种／MOQ／rush（DJ-P0-03）
 
 | 字段 | 值 |
 |---|---|
 | URL | `/en|zh-hk|ja/product/doujinshi-printing/` + `/ja/comiket-c109/` |
-| 现值 | 三语「¥7,500〜/部〜」按每本展示；ja 描述写 50 冊（正文/H1 10 冊）；24h 特急并存 |
+| 现值 | 三语「¥7,500〜/部〜」按每本展示；ja 描述已改 10冊（2026-10-27 01:35 复核：10冊=True、50冊=False）；24h 特急＋DHL 并存 |
 | 源头路径 | products.ts DJ-001: price_range `¥7,500〜/部〜` / basePrice 7500(JPY) / basePrice_en 1245 / minQuantity 10 / turnaround `5-7 営業日 (コミケ前 24時間特急対応)` |
 | 证据 | sku-seo-data ja body 50冊〜（先遣 P0-3 已改 10冊〜）；C109 页 L61 ¥7,500 から；blog-data ja L781 1冊 ¥7,500〜；page-probe 162 展示／17.41 位（ja PDP） |
 | 矛盾点 | ¥7,500 是每部、每单还是其他口径未定；en/zh 显示币种未定；basePrice_en=1245 的币种／倍率未核 |
-| 状态 | 🔶 UNKNOWN（价格/币种/MOQ 单位）；🔧 IN_PROGRESS（50冊→10冊已改源） |
+| 状态 | 🔶 UNKNOWN（价格/币种单位：K3-1）；🔶 UNKNOWN（rush/DHL 边界：K3-2）；MOQ 50→10 ✅ 线上已生效 |
 | 负责人 | K3（口径）→ 执行层（统一） |
 | K3 决策 | §K3-1（价格单位与币种）、§K3-2（MOQ 与 rush：10/50 冲突、24h/即日边界、酒店/会场直送） |
 
@@ -58,8 +58,8 @@
 
 | SKU | 线上 H1（2026-10-26 21:3x） | 线上 desc | products.ts minQ | 状态 |
 |---|---|---|---|---|
-| saddle-stitch-booklets | Saddle Stitch Booklets 100+ | 10-piece MOQ | 10（L5170） | 🔧 源已改 10（先遣），未部署 |
-| exercise-books | Exercise Books 100+ \| Perfect Bound | 10-piece MOQ；Perfect Bound | 10（L5784） | 🔧 源已改 10 + Saddle-Stitched（先遣），未部署 |
+| saddle-stitch-booklets | Saddle Stitch Booklets from 10 Copies（2026-10-27 01:35） | 10-piece MOQ | 10（L5170） | ✅ APPROVED（线上已生效） |
+| exercise-books | Exercise Books from 10 Copies \| Saddle-Stitched（01:35） | 10-piece MOQ；Saddle-Stitched | 10（L5784） | ✅ APPROVED（线上已生效；装订待 K3-3 认可） |
 | catalog-printing | Catalog Printing 100+ | 10-piece MOQ | 10（L5103） | 🔶 H1 100+ 仍在线；真值待 K3 |
 | a2-posters | A2 Posters 100+ | 10-piece MOQ | 10（L2490 区） | 🔶 H1 100+ 仍在线；真值待 K3 |
 
@@ -73,7 +73,7 @@
 | 字段 | 值 |
 |---|---|
 | URL | `/ja/blog/textbook-printing-guide/`、`/ja/category/paper-bags/`、ja paper-bags 正文 |
-| 现值 | ja textbook description `HK$5-50/冊`（线上已确认）；ja paper-bags 正文 `HK$8.00〜` |
+| 现值 | ja textbook description `HK$5-50/冊`（2026-10-27 01:35 复核仍在线：`100冊から HK$5-50/冊`）；ja paper-bags 正文 `HK$8.00〜`；ja calendar 内容仍有 `HK$3-8` |
 | 源头路径 | blog-data/ja.json L703 desc + blog-posts.ts L1810-1812 excerpt；products.ts textbooks price_range `HK$5-50/本`（minQ 100，L6007）；pricing.ts L898 |
 | 证据 | 2026-10-26 21:3x 线上探针：`/ja/blog/textbook-printing-guide/` desc 含 HK$5-50/冊 |
 | 全站 ja HK$ 面 | blog-data/ja.json 50 处 HK$（含贴纸 L48、食品 L104、海报 L120、纸袋 L148、包装 L546/590、红包 L790、练习册 L715、绘本 L740、Zine L732、fold L764、banner L772、calendar L835/841、香港语境内容 L498/505/541/574/582/676-679 等） |
@@ -91,7 +91,7 @@
 | 处置 | 本轮 9 处清理：blog-data ×3（en/zh-hk/ja description）、blog-posts.ts ×3（excerpt fallback）、category-seo-content.ts ×3（books featuredSnippet，CategoryPillarContent 渲染可见）；仅删内部标记句，保留用户价值描述；未夹带 title 改写或整篇重写 |
 | 备份 | `.hermes/_bak-cat-cleanup-20261026/`（5 文件） |
 | 残留扫描 | `cluster 9/4|順位目標|期望進首頁|ranking target` = 0（仅余代码注释 blog-posts.ts L1551，§0.23.1 允许） |
-| 状态 | 🧹 FIXED（源已清；线上验收待部署） |
+| 状态 | ✅ APPROVED（线上验收：2026-10-26 21:48 build 部署；2026-10-27 01:35 三语复核 leak=clean） |
 
 ### P0-F 年賀状 A／B（NENGA-P0-07）
 
@@ -147,17 +147,17 @@
 
 | 项 | 状态 |
 |---|---|
-| robots 源码 | ✅ APPROVED（源码）｜⛔ 部署被 CF 阻断 |
+| robots | ✅ APPROVED（线上 200 生效中；待 K3 CF Bots allow AI） |
 | doujin 价格/币种 | 🔶 UNKNOWN（K3-1/2） |
-| doujin MOQ 50→10 | 🔧 源已改 |
-| 四页 MOQ（saddle/exercise） | 🔧 源已改（K3-3 认可） |
-| 四页 MOQ（catalog/A2） | 🔶 UNKNOWN（K3-3） |
-| ja 币种 | 🔶 UNKNOWN（K3-4） |
-| catalog 内部目标泄露 | 🧹 FIXED（本轮） |
+| doujin MOQ 50→10 | ✅ 线上已生效（01:35 复核 10冊） |
+| 四页 MOQ（saddle/exercise） | ✅ APPROVED（线上已生效 10 Copies；exercise 装订待 K3-3 认可） |
+| 四页 MOQ（catalog/A2） | 🔶 UNKNOWN（H1 100+ 仍在线；K3-3） |
+| ja 币种 | 🔶 UNKNOWN（HK$5-50/冊 01:35 仍在线；K3-4） |
+| catalog 内部目标泄露 | ✅ APPROVED（线上三语 clean） |
 | 年賀状 | ⛔ BLOCKED（K3-5） |
 | en greeting 价格/案例 | 🔶 UNKNOWN（K3-6） |
 | small batch 服务边界 | 🔶 UNKNOWN（K3-6） |
 | 性能/环保声明 | 🔶 UNKNOWN（K3-7） |
 | 转化接入 | 🔶 UNKNOWN（K3-8） |
 
-**周末闸门结论**: 除 CAT-P0-06（已修）外，P0 未闭环项全部停在内部台账或源改动阶段；catalog/A2、doujin、ja 币种、年賀状、greeting 未决页下周不得进入公开扩写，可做内部台账与无风险诊断。
+**周末闸门结论（2026-10-27 更新）**: 已闭环可入公开扩写——robots、saddle/exercise MOQ、catalog 泄露（三页线上已生效）。仍未闭环（禁止公开扩写，可做内部台账与无风险诊断）——doujin 价格/币种、catalog/A2 H1、ja 币种、年賀状、greeting 价格/案例、small batch 服务边界、性能/环保声明、转化接入。
