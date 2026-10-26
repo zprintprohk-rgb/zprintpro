@@ -67,6 +67,14 @@ Get-ScheduledTaskInfo -TaskName 'ZP-gsc-feedback' | Select-Object LastRunTime, L
 - **周五错时**（weekly 20:52→22:22）仍待 K3 批准（§10 待拍板 5）——本报告不擅改调度。
 - **不补跑制造历史成功**（§8.5 纪律）：缺口保留 MISSING/STALE 记录，下一自然触发验收。
 
+## 4.1 追加证据（21:50）：daily-content 10/26 21:17 正常触发 exit=1
+
+- `cron-ZP-daily-content.log`：`run end 2026/10/26 21:17:06.55 exit=1`——**scheduler 正常触发但 lane-git-commit 失败**（无 lane-runs 记录，报告未落盘）。
+- 同日 18:17 harness 提前触发已 OK（`2026-10-26-daily-content.md` 存在，head=ef3140ac）——**10/26 daily-content = PARTIAL**（harness 路径活，scheduler 路径 21:17 失败）。
+- 佐证：lane-git-commit 21:17 失败前已 `git add` docs 策略文件 + evidence png + pycache——**与手动 commit 6076cade 内容重叠**（pre-commit 钩子 auto-stage 承接了残留 staged 变更）。
+- **K3 命令**：`Get-Content 'F:\zprintpro-nextjs\.hermes\logs\cron-ZP-daily-content.log' -Tail 60` 定位 exit=1 步骤（git add / commit / push 哪一步）。
+
+
 ## 5. NEXT_CHECK
 
 - 10/27 07:10 k3-review / 20:13 gsc-feedback：K3 跑 §3 命令后，四方证据应转 OK（lane-runs + wrapper dsh exit + 当日报告 + 调度记录）。
