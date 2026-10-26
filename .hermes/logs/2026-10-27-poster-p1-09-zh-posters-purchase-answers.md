@@ -31,15 +31,16 @@
 | a1-posters | HK$290-7,200（整單） | $4.60 | **1** | 157–200g銅版或相紙 | A1 594×841 |
 | outdoor-posters | HK$16-55/張 | $3.68 | 1 | 戶外PVC/PET/合成紙 | 依稿面 |
 
-## 3. 主 URL 内链现状（2026-10-27 02:1x 线上）
+## 3. 主 URL 内链现状（2026-10-27 02:1x 线上，双方法复核）
 
 | 方向 | 现状 | 结论 |
 |---|---|---|
-| zh category/posters → PDP | a2/a1/outdoor/flyers **4/5**；**same-day-flyers 缺失** | 🔶 **唯一内链缺口**（零声明可补，锚=产品名「即日傳單印刷」；已登记为待落一行） |
+| zh category/posters → PDP | a2/a1/outdoor **3/3** ＋ flyers 类目链（L1117-1119 渲染） | ✅ 已齐 |
+| zh category/flyers → PDP | same-day/a4/a5/eco/folded/thick **6/6**（02:1x 复核） | ✅ 已齐 |
 | PDP → category | a2/same-day 抽查 back-to-cat=True | ✅ 已齐 |
-| poster guide ↔ category | 待 K3 批内链批时一并核 | 🔶 次批 |
+| poster/flyer guide ↔ category | 随 K3 批内链时一并核 | 🔶 次批 |
 
-**结论**: POSTER-P1-09 内链仅 1 个缺口（category→same-day），**已备好一行落位**（见 §6 批次 2），本轮未落 src（避免与 category 页急件/防水声明工作纠缠）。
+**修正记录（§0.23.2 双方法）**: 初版本包曾记「posters 类目缺 same-day-flyers 内链」——**判断有误**。同一链接属 flyers 簇：posters 类目页的「flyers=True」是**类目互链**（→ /zh-hk/category/flyers/），same-day-flyers 是 flyers 类目的产品且其类目页已 6/6 链齐、PDP 回链类目。**zh 海报/传单簇主 URL 内链已全闭环，无缺口、不新增链接**。
 
 ## 4. 声明与口径治理（K3-2/K3-7 拍板项）
 
@@ -64,9 +65,8 @@
 ## 6. 推荐执行批次（K3 拍板后）
 
 1. **批次 1（急件/防水 K3-2/7 裁决）**: same-day + a2 + outdoor desc/H1 声明条件化（src 批）。
-2. **批次 2（零声明，可独立）**: category → same-day-flyers 补链 1 行（锚=「即日傳單印刷」产品名；不新增声明）。
-3. **批次 3（采购答案）**: category 首屏直答 + 价格口径统一（§4-3）。
-4. **guide 核链**: poster guide ↔ category/PDP 双向现状（随批次 2 一并核）。
+2. **批次 2（采购答案）**: category 首屏直答 + 价格口径统一（§4-3）。内链无缺口（§3 修正），不新增。
+3. **guide 核链**: poster/flyer guide ↔ category/PDP 双向现状（随批次 2 一并核）。
 
 ## 7. NEXT
 
