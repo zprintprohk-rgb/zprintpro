@@ -190,3 +190,14 @@ NEXT: 双条件②静默窗口（对端 01:37:50 最后写入 → 最早 01:52:5
 - **备份**：`.hermes/_bak-blogdata-en-before-e1-20261027.json`（回滚用）。
 - **门禁**：encoding ✓ + brand-mentions A 类 0 ✓ + tsc 54=54 基线持平（quote-engine 既有测试错误，本轮零新增）✓ + sitemap 生成器幂等（无 diff）✓。
 - **pre-push 基线**：sticker-guide 页线上 200 + 旧锚文本存在 + E1 链接不存在（@02:00:51 捕获，归因确定性用）。
+
+## 2.9 E1 线上验收通过（@02:20）
+
+- **部署**：攒批 push 15 commit @02:13:40（dfe5132f，距 bb7b157c 01:43:08 恰 30.5min 合规）；含 E1 src（710feff6）+ E6 诊断 + E1/E4 方案 + 对端 11 条 docs（bag/poster/seven-clusters/p1-b/packaging/round2）。待推批归零。
+- **验收双方法（§0.23.2）**：
+  - 方法1 urllib cache-buster：页长 197121→197283B，锚 `href="/en/product/small-batch-stickers/"` 出现 ✓ + 锚文本闭合 ✓
+  - 方法2 curl 文件落地（197836B）：渲染为合法 `<a href="/en/product/small-batch-stickers/">small-batch restocking for cross-border sellers</a>`，位于 H2 "What's the minimum order?" 采购段 ✓
+  - 后台轮询探针：尝试#1-3 部署中 → #4 部署完成（锚=True，197239B）
+- **§9.1 基线无回归**：robots 200（AI allow=15 + Sitemap=2）✓ / small-batch PDP 200（title "Small Batch Custom Stickers 50pcs from $0.045"，语义匹配低 MOQ 锚）✓ / saddle+exercise H1 "from 10 Copies" 保持 ✓ / 对端 doujin C109 en/ja 200 含 /comiket-c109/ 保持 ✓
+- **E1 语义闭环**：sticker 类目（buying-guides.ts 已有）✓ + 最相关指南（sticker-guide blog）✓ → 各 1 条自然商业锚 → PDP，符合 §5.1 E1 与 §5.4 每源页每目标 1 条。
+- **观察项（对端 da71a9e4 已登记，非本轮动作）**：small-batch PDP 无 guide 出链（E1 入链已补、出链未满）——PDP 无段落结构，补出链需新增文案属 K3 决策域，未触碰。
