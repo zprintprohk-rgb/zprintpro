@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "title": "ZprintPro 包装商业真值冲突台账 (PKG-P0-01 · D1)",
+    "created": "2026-10-26",
+    "role": "执行层 (DeepSeek) — 只盘点不猜值",
+    "strategic_ssot": "docs/2026-10-26-packaging-seo-aeo-geo-competitor-strategy.md §4.2 / §8 / §11",
+    "status_legend": {
+      "blocked": "未拍板冲突，发布阻断，K3 拍板前执行层不改源",
+      "needs-data": "无证据/待业务提供文件，不得写成已证实事实",
+      "conditioned": "可条件式但需真值确认（按订单确认/仅适用指定材料）",
+      "keep-approved": "K3 8/19 批准保留（纸袋先例 de3897ca），但需复核适用范围",
+      "clean": "可观察事实或已清",
+      "audit-p2": "D22-23 审计对象",
+      "watch": "观察项"
+    },
+    "owner_legend": {
+      "K3": "商业与合规真值拍板",
+      "business": "提供证据（刀模/试作/质检/认证/订单）",
+      "exec": "执行层清毒/内容/内链/门禁",
+      "lane": "定时车道",
+      "none": "已解决或无主"
+    }
+  },
+  "window": {
+    "current": ["2026-09-28", "2026-10-25"],
+    "previous": ["2026-08-31", "2026-09-27"],
+    "scope": "query×page×country 筛选包装词，展示量加权位置"
+  },
+  "pages": [
+    { "path": "/en/category/packaging/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Packaging Boxes 100 MOQ $0.51 | Food-Safe | ZprintPro", "h1": "Custom Packaging Boxes Made for USA · Food-Safe Paper Boxes / Bags / Greaseproof Cards", "note": "H1 过窄（Made for USA + 食品类前置），P1 D13" },
+    { "path": "/en/product/rigid-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Rigid Boxes | 100 MOQ $1.84 | Free Ship | ZprintPro", "h1": "Rigid Boxes 250+ | Magnetic Closure | ZprintPro", "note": "MOQ 三值冲突 P0 阻断" },
+    { "path": "/en/product/mailer-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Custom Kraft Mailer Boxes | 100 MOQ $0.80 | ZprintPro", "h1": "Mailer Boxes 100+ | Self-Lock | ZprintPro", "note": "" },
+    { "path": "/en/product/food-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Food-Safe Packaging Printing | 100 MOQ | ZprintPro", "h1": "Paper Food Packaging 100+ | Food-Grade Paper Boxes, Bags & Greaseproof Cards", "note": "" },
+    { "path": "/en/product/kraft-paper-packaging-box/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Kraft Paper Packaging Box | 300 MOQ $1.15 | ZprintPro", "h1": "Kraft Paper Packaging Box 300+ | ZprintPro", "note": "" },
+    { "path": "/en/product/cosmetic-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "Cosmetic Packaging Boxes | 100 MOQ $1.84 | ZprintPro", "h1": "Cosmetic Packaging Boxes — 4 Box Styles · Custom Inner Tray", "note": "" },
+    { "path": "/ja/category/packaging/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "パッケージ印刷 100個〜 ¥69〜 | 食品紙箱/紙袋 | ZprintPro", "h1": "パッケージ印刷 カスタム — 食品用紙箱 / 紙袋 / 耐油カード / ギフト箱", "note": "正文含「上製本箱」术语泄漏" },
+    { "path": "/ja/product/rigid-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "上製本箱（リジッドボックス）｜100個〜 ¥240〜｜ZprintPro", "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。", "note": "「上製本箱」作产品名 + 泛企业 H1，P0/P1" },
+    { "path": "/ja/product/kraft-paper-packaging-box/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "クラフト紙包装箱 特注 エコ 300個〜 ¥150〜 | ZprintPro", "h1": "クラフト紙パッケージボックス | エコ FSC認証 300個〜", "note": "H1 直接写エコ FSC認証，P0/P1" },
+    { "path": "/ja/product/food-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "食品包装箱印刷 小ロット 防油 100個〜 ¥101〜 | ZprintPro", "h1": "食品パッケージ箱 100個〜：FDA食品グレード・防油内層・PET窓対応", "note": "H1 直接写 FDA 食品グレード；正文含「上製本箱」" },
+    { "path": "/zh-hk/category/packaging/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "包裝盒訂製 100個起・食品紙盒/紙袋/防油卡 3D打稿 | 智印港", "h1": "香港包裝盒訂製 — 食品紙盒 / 食品紙袋 / 防油紙卡 / 禮盒 / 彩盒", "note": "H1 食品类词前置，通用意图收窄观察项" },
+    { "path": "/zh-hk/product/rigid-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "精裝禮盒 | 燙金 UV 100%訂製 | 100個起 HK$8起 | 智印港", "h1": "硬殼精裝，高檔奢華。適合高端產品、限量版商品。智印港提供專業精裝盒服務，香港本地印刷，品質保證，價格透明。", "note": "泛企业 H1" },
+    { "path": "/zh-hk/product/kraft-paper-packaging-box/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "牛皮紙包裝印刷盒 | 環保材質 | 300個起 HK$5起 | 智印港", "h1": "牛皮紙包裝印刷盒 | 250-350g 進口牛皮紙", "note": "250-350g vs products.ts 300-350g" },
+    { "path": "/zh-hk/product/food-boxes/", "status": 200, "robots": "index,follow", "canonical_self": true, "title": "食品包裝盒印刷 訂製 100個起 HK$2.5 防油紙卡 | 智印港", "h1": "紙質食品包裝印刷訂製｜食品紙盒・食品紙袋・防油紙卡｜FDA 食品級", "note": "H1 直接写 FDA 食品級，P0" },
+    { "path": "/en/product/custom-boxes/", "status": 404, "robots": "noindex", "canonical_self": false, "note": "不建新页（裁决 2）" },
+    { "path": "/en/product/custom-packaging-boxes/", "status": 404, "robots": "noindex", "canonical_self": false, "note": "不建新页（裁决 2）" }
+  ],
+  "claims": {
+    "moq": [
+      { "id": "PKG-T-MOQ-001", "url": "/en/product/rigid-boxes/", "source": "sku-seo-data.ts:1193,1195 / products.ts:3404 / price-tables/en/rigid-boxes.json:6", "value": "title=100 MOQ · H1=250+ · products.ts minQuantity=100 · price-table 首档 50", "status": "blocked", "owner": "K3", "action": "D2 拍板 rigid 真值；未拍板前不改任何源", "evidence": "双方法：线上 probe 2026-10-26 + 源码直读" },
+      { "id": "PKG-T-MOQ-002", "url": "/ja/product/rigid-boxes/", "source": "sku-seo-data.ts:1200 / price-tables/ja/rigid-boxes.json", "value": "title/正文=100個〜 · price-table 首档 50", "status": "blocked", "owner": "K3", "action": "随 PKG-T-MOQ-001 同一真值", "evidence": "同源链" },
+      { "id": "PKG-T-MOQ-003", "url": "/zh-hk|en/product/mailer-boxes/", "source": "products.ts:3208 (minQuantity=100) / price-tables/packaging.json:19-27 (首档 500)", "value": "minQuantity=100 但价格表无 100-499 档（500 起 HK$1.93）", "status": "needs-data", "owner": "K3", "action": "确认真实 MOQ 与价格表档位覆盖", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-004", "url": "/ja|en/product/kraft-paper-packaging-box/", "source": "sku-seo-data.ts:2489,2493,2496,2500", "value": "title/description=300 MOQ · en body=100-piece minimum · ja body=100枚から/100個〜即日発送", "status": "blocked", "owner": "K3", "action": "拍板 kraft 真实 MOQ；ja「即日発送」无源需清", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-005", "url": "/zh-hk|en/product/food-boxes/", "source": "products.ts:3006 (minQuantity=100) / price-tables/packaging.json:43-46 (首档 1000)", "value": "minQuantity=100 但价格表仅 1000/3000 两档", "status": "needs-data", "owner": "K3", "action": "确认真实 MOQ 与价格表档位", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-006", "url": "/zh-hk/product/white-card-boxes/", "source": "products.ts:6487 (minQuantity=500) / products.ts:6459 description_zh (「50-10,000 件」)", "value": "500 vs 50 起印", "status": "blocked", "owner": "K3", "action": "拍板 white-card 真实 MOQ", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-007", "url": "/zh-hk|en|ja/product/gang-run-card-boxes/", "source": "products.ts:6409 / sku-seo-data.ts:2518,2526,2533", "value": "500-10,000 全部一致", "status": "clean", "owner": "none", "action": "保留", "evidence": "多源一致" },
+      { "id": "PKG-T-MOQ-008", "url": "/zh-hk|en|ja/category/packaging/", "source": "category-seo-content.ts:84,143,201", "value": "「100-10,000 個彈性 MOQ」「全盒型 100 個起、異形刀模 500 個起」 vs SKU 层 300/500", "status": "needs-data", "owner": "K3", "action": "拍板 category 通用 MOQ 口径（按 SKU 或按场景）", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-009", "url": "/zh-hk/product/kraft-paper-packaging-box/", "source": "products.ts:6362-6366 variables.quantities (100/500/1000) vs products.ts:6311 minQuantity=300", "value": "价格变量档 100 起 vs minQuantity 300", "status": "blocked", "owner": "K3", "action": "拍板后统一 products.ts 内部字段", "evidence": "源码直读" },
+      { "id": "PKG-T-MOQ-010", "url": "全包装 PDP", "source": "products.ts variables.quantities 模板", "value": "cosmetic/folding/mailer/rigid 共享 100/500/1000 变量档", "status": "watch", "owner": "exec", "action": "与各 SKU 真值拍板后核对变量档", "evidence": "源码直读" }
+    ],
+    "price": [
+      { "id": "PKG-T-PR-001", "url": "/zh-hk/product/food-boxes/", "source": "products.ts:2982 title_zh (HK$4起) vs products.ts:2983,2999 (HK$2.5起/2.5-18) vs sku-seo-data.ts:1078 (HK$2.5)", "value": "HK$4 vs HK$2.5", "status": "blocked", "owner": "K3", "action": "拍板 food 起价与口径（对应规格/数量/币种）", "evidence": "双方法：源码直读 + 线上 probe title" },
+      { "id": "PKG-T-PR-002", "url": "/zh-hk/product/rigid-boxes/", "source": "products.ts:3380 title_zh (HK$4.5起) vs products.ts:3397 price_range (HK$8-42) vs products.ts:3398 basePrice=8 vs sku-seo-data.ts:1186 (HK$8起)", "value": "HK$4.5 vs HK$8", "status": "blocked", "owner": "K3", "action": "拍板 rigid 起价", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-003", "url": "/zh-hk/product/kraft-paper-packaging-box/", "source": "products.ts:6304 price_range (HK$1.5-1000) vs products.ts:6305 basePrice=5 vs sku-seo-data.ts:2482 (HK$5起)", "value": "HK$1.5 档位 vs HK$5 起", "status": "blocked", "owner": "K3", "action": "拍板 kraft 价格区间口径", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-004", "url": "/zh-hk/product/white-card-boxes/", "source": "products.ts:6482 price_range (HK$0.50-3.00/個) vs products.ts:6483 basePrice=129", "value": "HK$0.50-3.00/個 vs basePrice 129（疑似批次价混入）", "status": "blocked", "owner": "K3", "action": "拍板 white-card 单价口径（個 vs 批次）", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-005", "url": "/ja/product/gang-run-card-boxes/", "source": "products.ts:6388 descriptionJa (1個 ¥4.4 から) vs sku-seo-data.ts:2533 (500 個から ¥3,800 = ¥7.6/個)", "value": "¥4.4/個 vs ¥7.6/個", "status": "blocked", "owner": "K3", "action": "拍板 gang-run ja 单价", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-006", "url": "/en/product/gang-run-card-boxes/", "source": "products.ts:6388 descriptionEn (free shipping over $500) vs sku-seo-data.ts:2529 body (free US shipping over $99)", "value": "$500 vs $99 免运门槛", "status": "blocked", "owner": "K3", "action": "拍板免运门槛与适用范围（US/全球）", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-007", "url": "/en/product/rigid-boxes/", "source": "sku-seo-data.ts:1194 description (over $100) vs sku-seo-data.ts:1197 body (over $99)", "value": "$100 vs $99 同条目内冲突", "status": "blocked", "owner": "K3", "action": "随免运真值拍板统一", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-008", "url": "/en/product/mailer-boxes/", "source": "sku-seo-data.ts:1122 description (over $100) vs sku-seo-data.ts:1125 body (over $99)", "value": "$100 vs $99 同条目内冲突", "status": "blocked", "owner": "K3", "action": "同上", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-009", "url": "/zh-hk/category/packaging/", "source": "category-seo-content.ts:84 (白卡彩盒 HK$0.03/個起) vs products.ts:6404 (HK$129-17,214 批次价)", "value": "HK$0.03/個 vs HK$129 批次——口径需明确（個 vs 批）", "status": "needs-data", "owner": "K3", "action": "确认拼版单价口径与展示方式", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-010", "url": "/zh-hk|en|ja/blog/packaging-box-pricing-2026/ 与 /packaging-box-price-2026/", "source": "blog-posts.ts:1454,1929-1932", "value": "坑盒 500 個 HK$8-15/個（blog） vs price-tables/packaging.json mailer 500=HK$1.93（表）", "status": "audit-p2", "owner": "exec", "action": "D22-23 查询/内容/外链审计后裁决；blog 价格不得与表冲突", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-011", "url": "/en/product/cosmetic-boxes/", "source": "sku-seo-data.ts:1049-1053", "value": "en body 用 HK$8-65/pc（en 页应 USD）", "status": "watch", "owner": "exec", "action": "en 页币种口径统一（USD 或标注 HK$ 对照）", "evidence": "源码直读" },
+      { "id": "PKG-T-PR-012", "url": "全包装", "source": "§11 价格项", "value": "价格对应规格/数量/币种/含刀模·打样·运输/有效期 未定义", "status": "needs-data", "owner": "K3", "action": "拍板价格展示规范（AEO 条件化价格）", "evidence": "策略 §11" }
+    ],
+    "production_lead_time": [
+      { "id": "PKG-T-LT-001", "url": "/en/product/rigid-boxes/", "source": "sku-seo-data.ts:1190 (3-7) / 1197 (4 business days) / price-tables/en/rigid-boxes.json:14 (7-10) / category-seo-content.ts:144 (3-5/5-7) / FAQ (5-7)", "value": "3-5 / 3-7 / 4 / 5-7 / 7-10 并存", "status": "blocked", "owner": "K3", "action": "拍板生产交期口径与起算点", "evidence": "源码直读" },
+      { "id": "PKG-T-LT-002", "url": "/ja/product/mailer-boxes/", "source": "sku-seo-data.ts:1129 (7-10営業日) vs 1128-1132 body (3-5)", "value": "7-10 vs 3-5", "status": "blocked", "owner": "K3", "action": "拍板 mailer 交期", "evidence": "源码直读" },
+      { "id": "PKG-T-LT-003", "url": "/zh-hk|en|ja/product/gang-run-card-boxes/", "source": "products.ts:6394 (8-15 天) vs products.ts:6388 descriptionEn/Ja (8-12 day)", "value": "8-15 vs 8-12", "status": "blocked", "owner": "K3", "action": "拍板 gang-run 交期（凑版）", "evidence": "源码直读" },
+      { "id": "PKG-T-LT-004", "url": "/zh-hk|en|ja/category/packaging/", "source": "category-seo-content.ts:84,86,144,201,298", "value": "「3 天交貨」h2 vs「3-5 常規/2-3 快印/5-7 offset」techSpecs vs SKU 5-7", "status": "needs-data", "owner": "K3", "action": "拍板 category 交期口径并保持与 SKU 一致", "evidence": "源码直读" },
+      { "id": "PKG-T-LT-005", "url": "全包装", "source": "§11 交期项", "value": "起算点（文件确认后/付款后/打样后）未定义", "status": "needs-data", "owner": "K3", "action": "拍板交期拆解规范（文件确认/打样/量产/运输分开）", "evidence": "策略 §11" },
+      { "id": "PKG-T-LT-006", "url": "/zh-hk/product/kraft-paper-packaging-box/", "source": "sku-seo-data.ts:2483 (「48 小時快遞」)", "value": "48 小時快遞 vs 5-7 天生產", "status": "needs-data", "owner": "K3", "action": "确认该承诺口径（生产 or 运输 or 加急）", "evidence": "源码直读" }
+    ],
+    "shipping": [
+      { "id": "PKG-T-SH-001", "url": "全包装 PDP", "source": "sku-seo-data.ts bodies（DHL 全球 2-4 天 / US 4-day to lower 48 / gang-run FedEx Ground 5-7）", "value": "DHL 2-4 天 vs US 4 天 vs FedEx Ground 5-7——区域边界需确认", "status": "needs-data", "owner": "K3", "action": "拍板各区域运输真值与表述边界", "evidence": "源码直读" },
+      { "id": "PKG-T-SH-002", "url": "/zh-hk/category/packaging/ + zh PDP", "source": "category-seo-content.ts:84 / sku-seo-data bodies", "value": "港九新界順豐 1-2 天（多处一致）", "status": "conditioned", "owner": "K3", "action": "确认 HK 本地运输承诺口径", "evidence": "多源一致" },
+      { "id": "PKG-T-SH-003", "url": "/en 各 PDP", "source": "sku-seo-data.ts en bodies（「4-day delivery to the lower 48 states」「Asia factory」）", "value": "美国 4 天送达 + 亚洲工厂直发——不得造成美国本地工厂印象", "status": "needs-data", "owner": "business", "action": "确认美国运输真实时效；§7.3 实体一致性", "evidence": "策略 §7.3" },
+      { "id": "PKG-T-SH-004", "url": "/zh-hk/category/packaging/", "source": "category-seo-content.ts:152（旺角打樣中心）", "value": "旺角打樣中心存在性（实体为深圳主体）", "status": "needs-data", "owner": "business", "action": "确认香港服务节点/打样中心真实位置", "evidence": "源码直读 + AGENTS.md 实体" },
+      { "id": "PKG-T-SH-005", "url": "/ja 各 PDP", "source": "sku-seo-data.ts ja bodies", "value": "沖縄県・北海道も追加料金なし", "status": "keep-approved", "owner": "K3", "action": "K3 8/19 批准保留；复核适用范围", "evidence": "lane 报告 2026-10-26" }
+    ],
+    "proofing": [
+      { "id": "PKG-T-PF-001", "url": "/zh-hk|en|ja/category/packaging/ + 各 PDP", "source": "category-seo-content.ts:110,152,153,298,406 + sku-seo-data bodies", "value": "「免費打樣」并存「打樣當日完成」「2 小時」「1 小時數碼打稿」「5 天免費打樣」「免費色樣確認」——多口径且自矛盾", "status": "blocked", "owner": "K3", "action": "拍板打样产品矩阵（数码样/无地样/结构样/实物样、费用、时间、验证内容）", "evidence": "源码直读" },
+      { "id": "PKG-T-PF-002", "url": "/zh-hk|en|ja 各 PDP FAQ", "source": "sku-seo-data.ts bodies（HK$299 付費樣本套裝 / ¥4,980 実物サンプル）", "value": "免費打樣 vs 付費樣本套裝并存", "status": "blocked", "owner": "K3", "action": "拍板免费与付费打样边界", "evidence": "源码直读" },
+      { "id": "PKG-T-PF-003", "url": "各 PDP FAQ", "source": "sku-seo-data bodies（4 小時內免費 3D 渲染）", "value": "3D 渲染能力与时效", "status": "needs-data", "owner": "business", "action": "确认 3D 渲染真实能力（竞品 Packlane 有 3D 工具）", "evidence": "策略 §5.1" }
+    ],
+    "dieline": [
+      { "id": "PKG-T-DL-001", "url": "/zh-hk|en|ja/category/packaging/ + 各 PDP", "source": "category-seo-content.ts:168,201 + sku-seo-data bodies（免費刀模線模板下載）", "value": "「免費刀模」范围（全盒型 vs 拼版专用 vs 異形 500 起）未定义", "status": "needs-data", "owner": "K3", "action": "拍板免费刀模范围与条件", "evidence": "源码直读" },
+      { "id": "PKG-T-DL-002", "url": "各 PDP", "source": "sku-seo-data bodies（每個標準尺寸均提供免費刀模線模板下載）", "value": "模板资产是否存在（可下载资产为竞品差距）", "status": "needs-data", "owner": "business", "action": "业务提供真实刀模模板资产（PKG-P2-ASSET-01）", "evidence": "策略 §5.2" },
+      { "id": "PKG-T-DL-003", "url": "/zh-hk/category/packaging/", "source": "category-seo-content.ts:84,168,FAQ（「對比 e-print HK$300-800 刀模費行業慣例」「e-print / hk-printing 等同業照收刀模費」）", "value": "竞品刀模费推断（HK$300-800）无实证", "status": "needs-data", "owner": "K3", "action": "核实或撤除竞品价格对比（可观察事实才保留）", "evidence": "策略 §4.2" }
+    ],
+    "certification": [
+      { "id": "PKG-T-CER-001", "url": "/zh-hk|ja/product/food-boxes/ + category + fruit-food-label-stickers", "source": "sku-seo-data.ts:1080,1094,1101-1103 / category-seo-content.ts:84 / products.ts:6631,6634", "value": "FDA 食品級/FDA 標準紙/FDA 21 CFR 无证书证据（title/H1/imageAlt/features）", "status": "blocked", "owner": "K3", "action": "拍板 FDA 声明口径（证书/适用范围）；未拍板前执行层不改", "evidence": "线上 probe + 源码直读" },
+      { "id": "PKG-T-CER-002", "url": "全包装 PDP + category", "source": "sku-seo-data bodies（三種材質均採用 FSC 認證紙張）/ category-seo-content.ts:123", "value": "FSC 认证范围（证书主体/license code/适用 SKU·材料·订单）未定义；FSC 2026 商标标准要求 scope 内才可宣传", "status": "needs-data", "owner": "K3+business", "action": "提供 FSC license code 与 scope；范围外撤「FSC 認證」表述", "evidence": "FSC 官方标准 (策略 §4.2)" },
+      { "id": "PKG-T-CER-003", "url": "/zh-hk|en|ja/category/packaging/", "source": "category-seo-content.ts:278,297,398,407（SGS 認証取得済み/SGS 檢測）", "value": "SGS 认证声明无证书证据", "status": "needs-data", "owner": "K3+business", "action": "提供 SGS 报告/证书与适用范围", "evidence": "源码直读" },
+      { "id": "PKG-T-CER-004", "url": "/zh-hk/product/cosmetic-boxes/", "source": "products.ts:3087（藥機法 / FDA 21 CFR / EU 1223/2013 合規）", "value": "化妆品法规合规声明无文件", "status": "needs-data", "owner": "K3+business", "action": "确认合规依据或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-CER-005", "url": "/ja/category/packaging/", "source": "category-seo-content.ts:397,407（日本の食品衛生基準に準拠）", "value": "日本食品卫生标准合规声明无文件", "status": "needs-data", "owner": "K3+business", "action": "确认依据或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-CER-006", "url": "/zh-hk/product/food-boxes/", "source": "products.ts:2985（SGS 與香港衛生署標準通過）", "value": "香港卫生署标准通过声明", "status": "needs-data", "owner": "K3+business", "action": "确认或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-CER-007", "url": "food/cosmetic/mailer en description + gang-run en body", "source": "products.ts:2983,3083,3185（internationally certified quality management system）/ sku-seo-data.ts:2529（internationally certified factory in Asia, over a decade, clients across global markets）", "value": "残留「國際認證體系/國際認證工廠/十年經驗/全球客戶」无源声明（lane 今日已清 sku-seo-data 8 SKU body，但 products.ts 3 处 + gang-run en body 残留）", "status": "blocked", "owner": "exec", "action": "K3 拍板后按 PKG-P0-02 清毒（products.ts descriptionEn + gang-run en body）", "evidence": "源码直读 + lane 报告 2026-10-26" }
+    ],
+    "food_contact": [
+      { "id": "PKG-T-FC-001", "url": "/zh-hk/product/fruit-food-label-stickers/", "source": "products.ts:6634（SGS／FDA 通過，大豆油墨無遷移，可直接接觸食品）", "value": "直接食品接触声明无逐材料证据", "status": "blocked", "owner": "K3", "action": "拍板直接接触边界（材质/油墨/淋膜/检测文件/温度）", "evidence": "源码直读" },
+      { "id": "PKG-T-FC-002", "url": "food/rigid/mailer/kraft/cosmetic FAQ", "source": "sku-seo-data bodies（間接接觸 OK / 直接接觸需專用內襯）", "value": "间接接触条件式口径（较合理），但「食品級內襯」真实可用性需确认", "status": "conditioned", "owner": "K3+business", "action": "确认食品级内衬供应与证据", "evidence": "源码直读" },
+      { "id": "PKG-T-FC-003", "url": "/zh-hk|en|ja/product/food-boxes/", "source": "products.ts:2987,2994 + sku-seo-data bodies（PE/PLA 防油防濕）", "value": "PE/PLA 内层可用性", "status": "needs-data", "owner": "business", "action": "确认材料选项与供应", "evidence": "源码直读" },
+      { "id": "PKG-T-FC-004", "url": "/zh-hk/product/fruit-food-label-stickers/", "source": "products.ts:6635（0–4°C 冷藏保持黏性）", "value": "低温性能声明", "status": "needs-data", "owner": "business", "action": "确认或撤除", "evidence": "源码直读" }
+    ],
+    "performance": [
+      { "id": "PKG-T-PF2-001", "url": "/zh-hk|en|ja/product/folding-boxes/", "source": "products.ts:3287 + sku-seo-data.ts:1151-1161（80cm 跌落測試 5kg 不開口）", "value": "跌落测试声明无测试报告/条件", "status": "needs-data", "owner": "business", "action": "提供测试报告或改条件式/撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-002", "url": "/zh-hk|en|ja/category/packaging/", "source": "category-seo-content.ts:146,278,300,407（ISTA 標準壓縮/跌落測試）", "value": "ISTA 测试声明无报告", "status": "needs-data", "owner": "business", "action": "提供 ISTA 报告或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-003", "url": "/zh-hk/category/packaging/ buyingGuide", "source": "category-seo-content.ts:168（抗壓 80-200kg）", "value": "抗压绝对值无测试条件", "status": "needs-data", "owner": "business", "action": "确认或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-004", "url": "/zh-hk/product/kraft-paper-packaging-box/", "source": "products.ts:6295（承重 3–5 公斤）", "value": "承重声明无测试条件", "status": "needs-data", "owner": "business", "action": "确认或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-005", "url": "/zh-hk/product/kraft-paper-packaging-box/", "source": "products.ts:6292（完全生物降解 90 天內自然分解，無塑化劑殘留）", "value": "降解/无塑化剂声明无标准（ASTM/ISO）证据", "status": "blocked", "owner": "K3", "action": "拍板环保声明口径（可降解≠100%可堆肥）", "evidence": "源码直读 + 策略 §4.2" },
+      { "id": "PKG-T-PF2-006", "url": "/en/product/electronics-packaging-box/", "source": "products.ts:6191（防靜電選項 符合電子產品防護標準）", "value": "ESD 防护声明——策略明确不得未经证实宣称", "status": "blocked", "owner": "K3", "action": "拍板 ESD 承接边界或撤除", "evidence": "策略 §6.1 PKG-P1-EN-01" },
+      { "id": "PKG-T-PF2-007", "url": "/zh-hk/product/electronics-packaging-box/", "source": "products.ts:6194（尺寸公差 ≤0.5mm）", "value": "公差承诺", "status": "needs-data", "owner": "business", "action": "确认工艺公差或撤除", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-008", "url": "/zh-hk|en|ja/product/folding-boxes/ + tuck-end", "source": "products.ts:3286,6576（節省倉儲空間 70%）", "value": "70% 仓储节省为工程算术（可保留但需标注口径）", "status": "conditioned", "owner": "exec", "action": "标注计算口径或改条件式", "evidence": "源码直读" },
+      { "id": "PKG-T-PF2-009", "url": "/zh-hk|en|ja/product/gang-run-card-boxes/", "source": "products.ts:6390（成本直降 40-60%）", "value": "成本对比基线未定义（对比对象/口径）", "status": "needs-data", "owner": "K3", "action": "确认对比口径或改「可省刀模費/排版費」事实表述", "evidence": "源码直读" }
+    ],
+    "service_boundary": [
+      { "id": "PKG-T-SB-001", "url": "/zh-hk|en|ja/category/packaging/ FAQ", "source": "category-seo-content.ts:304,411（胶袋/真空袋不接，纸类专精）", "value": "纸类专精边界清晰", "status": "clean", "owner": "none", "action": "保留", "evidence": "多源一致" },
+      { "id": "PKG-T-SB-002", "url": "/en/product/electronics-packaging-box/", "source": "products.ts:6191", "value": "ESD/防静电是否承接未明确边界", "status": "blocked", "owner": "K3", "action": "拍板（关联 PKG-T-PF2-006）", "evidence": "策略 §11 服务边界" },
+      { "id": "PKG-T-SB-003", "url": "/zh-hk|en|ja/product/food-boxes/", "source": "sku-seo-data bodies（直接接觸需內襯/高衛生要求邊界）", "value": "高卫生要求食品承接边界", "status": "conditioned", "owner": "K3", "action": "拍板边界表述（学ラクスル拆开回答）", "evidence": "策略 §5.1" },
+      { "id": "PKG-T-SB-004", "url": "/zh-hk|ja/product/gang-run-card-boxes/", "source": "products.ts:6387（香港無對手價）/ sku-seo-data.ts:2533（香港無競合価格）", "value": "无对手价/无竞合价格——无证据竞品断言", "status": "blocked", "owner": "exec", "action": "P0 清毒撤除或改为可核验表述", "evidence": "源码直读" },
+      { "id": "PKG-T-SB-005", "url": "/en/category/packaging/", "source": "page.tsx:119 customH1Map", "value": "H1「Made for USA · Food-Safe」过窄", "status": "watch", "owner": "exec", "action": "D13 修（PKG-P1 通用意图），先过 title/H1 门检", "evidence": "线上 probe + 源码直读" },
+      { "id": "PKG-T-SB-006", "url": "/ja/product/rigid-boxes/ + ja category + ja food body", "source": "sku-seo-data.ts:1200,1202 + probes（contains_上製本箱 true ×3 页）", "value": "「上製本箱」术语泄漏（包装语境应为貼り箱/リジッドボックス）", "status": "blocked", "owner": "exec", "action": "D11-12 以貼り箱重写；全站扫残留", "evidence": "线上 probe + 源码直读" },
+      { "id": "PKG-T-SB-007", "url": "/ja/product/mailer-boxes/", "source": "sku-seo-data.ts:1130 h1（「Sturdy and durable」英文 H1）", "value": "ja H1 为英文残留", "status": "blocked", "owner": "exec", "action": "P0 清毒重写为自然日语", "evidence": "源码直读" },
+      { "id": "PKG-T-SB-008", "url": "/ja/product/kraft-paper-packaging-box/ + folding", "source": "sku-seo-data.ts:2500（100 枚から対応）/ 1164（100枚〜）", "value": "箱类用「枚」单位错误（应为個）", "status": "blocked", "owner": "exec", "action": "P0 清毒单位修正", "evidence": "源码直读" },
+      { "id": "PKG-T-SB-009", "url": "/ja/category/packaging/", "source": "category-seo-content.ts ja coreAdvantages（アジア自社工場直送）", "value": "「自社」工厂所有权声明需确认（主体为深圳彩龙）", "status": "needs-data", "owner": "K3+business", "action": "确认自社口径或改「アジア工場直送」", "evidence": "源码直读 + AGENTS.md 实体" }
+    ]
+  },
+  "truth_requests": [
+    { "seq": 1, "domain": "MOQ", "items": ["rigid 50/100/250 真实值", "kraft 100 vs 300", "white-card 50 vs 500", "food 100 与价格表 1000 档", "mailer 100 与价格表 500 档", "定型/異形/試作 MOQ 是否不同", "category 通用 MOQ 口径"], "blocking": "PKG-T-MOQ-001~009" },
+    { "seq": 2, "domain": "价格", "items": ["food HK$2.5 vs HK$4", "rigid HK$4.5 vs HK$8", "kraft HK$1.5 vs HK$5", "white-card basePrice=129 vs HK$0.50-3.00", "gang-run ja ¥4.4 vs ¥7.6", "免运门槛 $99 vs $100 vs $500", "价格对应规格/数量/币种/含刀模·打样·运输/有效期"], "blocking": "PKG-T-PR-001~012" },
+    { "seq": 3, "domain": "生产交期", "items": ["rigid 3-5/3-7/4/5-7/7-10 真实值", "mailer ja 7-10 vs 3-5", "gang-run 8-12 vs 8-15", "category 3 天 vs 3-5/5-7", "起算点定义", "kraft「48 小時快遞」口径"], "blocking": "PKG-T-LT-001~006" },
+    { "seq": 4, "domain": "运输交期", "items": ["DHL 全球 2-4 天边界", "美国 4 天送达真实性", "香港 1-2 天順豐", "旺角打樣中心存在性"], "blocking": "PKG-T-SH-001~004" },
+    { "seq": 5, "domain": "打样", "items": ["免费打样产品矩阵（数码/无地/结构/实物）", "免费 vs HK$299/¥4,980 付费样本边界", "免费 1h 数码打稿/2h/当日/5天 统一", "3D 渲染能力"], "blocking": "PKG-T-PF-001~003" },
+    { "seq": 6, "domain": "刀模", "items": ["免费刀模范围", "刀模模板资产", "竞品刀模费对比（e-print HK$300-800）核实或撤除"], "blocking": "PKG-T-DL-001~003" },
+    { "seq": 7, "domain": "认证", "items": ["FDA 证书与适用范围（food/fruit-label/category）", "FSC license code 与 scope", "SGS 证书", "薬機法/FDA 21 CFR/EU 1223/2013", "日本食品衛生基準", "香港衛生署标准"], "blocking": "PKG-T-CER-001~007" },
+    { "seq": 8, "domain": "食品接触", "items": ["直接接触边界（材质/油墨/淋膜/检测/温度）", "食品级内衬真实性", "PE/PLA 供应"], "blocking": "PKG-T-FC-001~004" },
+    { "seq": 9, "domain": "性能", "items": ["80cm 跌落/ISTA/抗压 80-200kg/承重 3-5kg 测试报告", "90 天降解/无塑化剂依据", "ESD 承接边界", "公差 ≤0.5mm", "40-60% 成本对比口径"], "blocking": "PKG-T-PF2-001~009" },
+    { "seq": 10, "domain": "服务边界", "items": ["ESD/高卫生食品承接", "「香港無對手價」撤除授权", "上製本箱→貼り箱术语替换授权", "自社工場口径"], "blocking": "PKG-T-SB-001~009" }
+  ],
+  "baseline_locked": {
+    "reference": ".kimi-work/packaging-research-20261026/packaging-local-evidence.json (2026-10-26 生成，同口径 query×page×country)",
+    "clusters": [
+      { "locale": "en", "cluster": "packaging boxes", "imps_cur": 30, "imps_prev": 30, "pos_cur": 43.53, "pos_prev": 40.23, "clicks_cur": 0 },
+      { "locale": "en", "cluster": "food packaging", "imps_cur": 21, "imps_prev": 31, "pos_cur": 27.86, "pos_prev": 35.29, "clicks_cur": 0 },
+      { "locale": "ja", "cluster": "packaging boxes", "imps_cur": 134, "imps_prev": 157, "pos_cur": 30.31, "pos_prev": 28.72, "clicks_cur": 0 },
+      { "locale": "zh-hk", "cluster": "packaging boxes", "imps_cur": 260, "imps_prev": 400, "pos_cur": 34.09, "pos_prev": 44.50, "clicks_cur": 1 },
+      { "locale": "zh-hk", "cluster": "food packaging", "imps_cur": 358, "imps_prev": 365, "pos_cur": 26.05, "pos_prev": 24.46, "clicks_cur": 0 }
+    ],
+    "watch_queries": [
+      { "query": "クラフト紙 パッケージ印刷", "locale": "ja", "imps": 48, "pos": 27.0, "note": "kraft PDP 主接" },
+      { "query": "クラフト紙 パッケージ 印刷", "locale": "ja", "imps": 46, "pos": 28.04, "note": "与上词共用主 URL" },
+      { "query": "electronics packaging supplier", "locale": "en", "imps": 5, "pos": 14.4, "note": "高意图供应商词" },
+      { "query": "food packaging supplier", "locale": "en", "imps": 5, "pos": 16.4, "note": "高意图供应商词" },
+      { "query": "食品包裝訂製", "locale": "zh-hk", "imps": 60, "pos": 18.44, "note": "food PDP 主接" },
+      { "query": "包裝盒訂製", "locale": "zh-hk", "imps": 44, "pos": 30.28, "note": "category 主接" },
+      { "query": "包裝盒印刷", "locale": "zh-hk", "imps": 69, "pos": 35.41, "note": "category 主接；cannibalization 66.7% 基线" },
+      { "query": "custom mailer boxes", "locale": "en", "imps": 9, "pos": 40.22, "note": "mailer PDP" },
+      { "query": "mailer box no minimum order", "locale": "en", "imps": 7, "pos": 78.71, "note": "无真实无 MOQ 方案则不优化" },
+      { "query": "牛皮紙盒", "locale": "zh-hk", "imps": 9, "pos": 2.33, "clicks": 1, "note": "小样本验证点" }
+    ],
+    "cannibalization_baseline": {
+      "食品包裝印刷_zh": { "blog_share": 0.505, "food_pdp_share": 0.275, "category_share": 0.22 },
+      "食品包裝訂製_zh": { "food_pdp_share": 0.534, "category_share": 0.46, "note": "PDP 份额基线 53.4%" },
+      "包裝盒印刷_zh": { "category_share": 0.687, "note": "category 份额基线 66.7%" },
+      "クラフト紙_ja": { "kraft_pdp_share": 0.667, "kraft_pdp_share2": 0.761 }
+    }
+  },
+  "execution_boundary": {
+    "done_today_by_lane": "2026-10-26 18:17 daily-content lane (order 28a) 已清 sku-seo-data.ts 8 包装 SKU body：国際認証体系 zh×7/ja×6、FDA 无源声明×26 组、zh 错场景×6（commit 1cc5e123, push ef3140ac 链）",
+    "not_done": ["title/H1/lead/desc/imageAlt/FAQ 层 FDA·FSC·环保声明", "category-seo-content.ts 声明", "products.ts descriptionEn 残留（国际认证体系×3）", "gang-run en body（internationally certified factory）", "blog 声明（packaging-box-price-2026 excerpt FDA 21 CFR 等）"],
+    "do_not_touch": ["gift-boxes→rigid-boxes 301 映射（middleware.ts:43）", "title 冻结域（未拍板前不批量预写新 title，per 策略 §7.1.3）", "被点名源头的任何数字字段（K3 拍板前）"],
+    "derivation_chain": "zprintpro-sku-seo-data.csv → scripts/csv-to-sku-seo.mjs → src/data/sku-seo-data.ts；不得只手改派生 TS（per 策略 §4.1 & AGENTS.md SOP-5）",
+    "deploy_note": "ef3140ac (18:38) CF build FAILED（check run 121526836891），本地 build PASS；线上可能为 b0e30769 build——probe 反映的线上状态可能滞后于 src"
+  }
+}
