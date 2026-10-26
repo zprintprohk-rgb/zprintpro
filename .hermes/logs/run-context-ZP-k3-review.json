@@ -1,11 +1,11 @@
 {
   "lane": "ZP-k3-review",
-  "generated_at": "2026-10-26 07:10:02",
+  "generated_at": "2026-10-27 07:10:02",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "a81f935853c1be6f",
-    "day": "2026-10-26",
+    "this_run_key": "27c93f65b8b82b43",
+    "day": "2026-10-27",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -30,7 +30,7 @@
       {
         "name": "prev_run_known",
         "ok": true,
-        "detail": "总线最近记录 verdict=OK @ 2026-10-16 07:15:32"
+        "detail": "总线最近记录 verdict=OK @ 2026-10-26 07:10:31"
       },
       {
         "name": "lane_status_available",
@@ -46,19 +46,19 @@
   },
   "lock": {
     "lane": "ZP-k3-review",
-    "pid": 3004,
-    "acquired_at": "2026-10-26 07:10:02",
-    "acquired_ts": 1792969802.2274718,
+    "pid": 17204,
+    "acquired_at": "2026-10-27 07:10:02",
+    "acquired_ts": 1793056202.4291081,
     "host": "JEROME"
   },
   "previous_run": {
     "bus_record": {
-      "run_id": "ZP-k3-review-20261016T071532",
+      "run_id": "ZP-k3-review-20261026T071031",
       "lane": "ZP-k3-review",
       "trigger": "schtasks",
-      "fired_at": "2026-10-16 07:15:32",
-      "ended_at": "2026-10-16 07:15:32",
-      "idempotency_key": "a6b35ea7b551a2d3",
+      "fired_at": "2026-10-26 07:10:31",
+      "ended_at": "2026-10-26 07:10:31",
+      "idempotency_key": "a81f935853c1be6f",
       "dsh_exit": null,
       "wrapper_exit": 0,
       "verdict": "OK",
@@ -67,16 +67,17 @@
       "guard": {
         "ok": true
       },
-      "report": ".hermes/logs/2026-10-15-ZP-k3-review.md",
-      "report_auto_generated": false,
+      "report": "NONE",
+      "report_auto_generated": true,
       "files": [],
       "pushed": true,
-      "head": "13399f41",
+      "head": "b0e30769",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-23-ZP-k3-review.md",
+    "latest_report": ".hermes/logs/2026-10-26-ZP-k3-review.md",
     "delivered_files_from_report": [
-      ".hermes/logs/2026-10-23-ZP-k3-review.md（本文件 = 本轮唯一产物；**零 src 改动、零第三方文件改写**——今日 01:20 并发会话活跃中（fa01cf58 等闸推送链在跑），本 lane 严守 .hermes/logs 写权）"
+      "(无 src 产物",
+      "仅报告/数据)"
     ]
   },
   "sibling_lanes": [

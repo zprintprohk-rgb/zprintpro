@@ -1,0 +1,38 @@
+[
+  {
+    "label": "E4-1 zine->PDP",
+    "status": 200,
+    "found": true,
+    "len": 188962
+  },
+  {
+    "label": "E4-2 PDP->zine",
+    "status": 200,
+    "found": true,
+    "len": 174860
+  },
+  {
+    "label": "E4-3 PDP->comiket",
+    "status": 200,
+    "found": true,
+    "len": 174860
+  },
+  {
+    "label": "BASE robots 200+AI",
+    "status": 200,
+    "found": true,
+    "len": 1385
+  },
+  {
+    "label": "BASE comiket guide 200",
+    "status": 200,
+    "found": true,
+    "len": 202187
+  },
+  {
+    "label": "BASE ja C109 200",
+    "status": 200,
+    "found": true,
+    "len": 71955
+  }
+]

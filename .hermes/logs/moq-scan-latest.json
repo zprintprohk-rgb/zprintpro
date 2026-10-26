@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-10-25T23:02:36",
+  "scannedAt": "2026-10-26T18:59:51",
   "truthSize": 82,
   "shapeProblems": [],
-  "hits": 8,
-  "drift": 8,
+  "hits": 0,
+  "drift": 0,
   "recount": [
     {
       "kind": "zh_本起",
@@ -51,78 +51,5 @@
       "scan": 0
     }
   ],
-  "findings": [
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2680,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…eaturedSnippet: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2680,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…t: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…of matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs M…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…oor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL glob…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…f matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 p…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2786,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 100,
-      "truth": 10,
-      "text": "…or vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2877,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 50,
-      "truth": 10,
-      "text": "…q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pc…"
-    },
-    {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2884,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 500,
-      "truth": 10,
-      "text": "…for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.'…"
-    }
-  ]
+  "findings": []
 }
