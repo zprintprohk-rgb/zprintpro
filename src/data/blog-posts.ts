@@ -495,7 +495,7 @@ const lpSaddleStitchBookletPrintingGuide: BlogPostMeta = {
   title: {
     'zh-hk': '騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ | 智印港',
     en: 'Saddle Stitch Booklet Printing Guide 2026 | ZprintPro',
-    ja: '中綴じ冊子印刷完全ガイド：ページ数・用紙・価格 | ZprintPro',
+    ja: '中綴じ冊子印刷 10冊から ¥258/冊〜 低MOQ ZprintPro',
   },
   excerpt: {
     'zh-hk': '騎馬釘小冊子印刷 10 本起 (數碼), 8-64 頁, HK$14-57/本 (500 本). 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
@@ -511,7 +511,7 @@ const lpPosterPrintingGuide: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-02',
   title: {
-    'zh-hk': '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點 | 智印港',
+    'zh-hk': '香港海報印刷 HK$9起：尺寸・紙質・工藝・設計要點 | 智印港',
     en: 'Poster Printing Size Guide: Paper & Finishes | ZprintPro',
     ja: 'ポスター印刷ガイド：サイズ・用紙・加工 | ZprintPro',
   },
@@ -856,7 +856,7 @@ const lpGraduationYearbook: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-09',
   title: {
-    'zh-hk': '畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智 | 智印港',
+    'zh-hk': '畢業紀念冊印刷 HK$45起 · 香港中學大學院校定制方案 智印港',
     en: 'US High School Yearbook Printing Guide | ZprintPro',
     ja: '卒業記念アルバム印刷ガイド：製本・用紙・パーソナ | ZprintPro',
   },
@@ -1519,7 +1519,7 @@ const lpPosterPrintingPrice: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-07',
   title: {
-    'zh-hk': 'A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣 | 智印港',
+    'zh-hk': 'A1 A2 海報印刷價格 HK$9起 單價紙材批量折扣 | 智印港',
     en: 'A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk',
     ja: 'A1 A2 ポスター印刷料金ガイド：単価・用紙・加工 | ZprintPro',
   },
@@ -2167,7 +2167,7 @@ const lpCny2027RedPacketPrintingGuide: BlogPostMeta = {
   title: {
     'zh-hk': "利是封印刷 2027：企業燙金訂製 100 個起 HK$1.1 起 | 智印港",
     en: "2027 CNY Red Packet Printing: 100 MOQ Foil | ZprintPro",
-    ja: "2027年 ポチ袋印刷：箔押し 100 枚から HK$1.1 起 | ZprintPro",
+    ja: "2027年 ポチ袋印刷：箔押し 100枚から ¥64 起 | ZprintPro",
   },
   excerpt: {
     'zh-hk': "2027 農曆新年（2 月 6 日）企業利是封訂製指南：燙金利是封 100 個起印 HK$1.10-4.80/個，浮雕／定製／卡通／環保／大號 6 款 SKU 價格對比，三色燙金、90×170mm 標準尺寸、免費刀模，標準 5-7 個工作天交貨，落單時間線同 6 條 FAQ 一次過睇清。",
