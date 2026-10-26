@@ -1,0 +1,11 @@
+﻿/en/blog/sticker-guide/ => 200 E1anchor=True
+/en/product/small-batch-stickers/ => 200
+/zh-hk/category/paper-bags/ => 200
+/zh-hk/category/posters/ => 200
+/zh-hk/category/flyers/ => 200 same-day-link=True
+/ja/comiket-c109/ => 200
+/en/product/doujinshi-printing/ => 200
+/zh-hk/product/kraft-paper-bags/ => 200
+/en/product/saddle-stitch-booklets/ => 200
+/en/product/exercise-books/ => 200
+/robots.txt => 200 AI-allow=True

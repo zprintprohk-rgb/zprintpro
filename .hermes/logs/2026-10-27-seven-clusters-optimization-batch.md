@@ -110,7 +110,16 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - **K3 队列**（01:40 刷新后无新拍板）: 无可执行新项；push + 验收为本轮唯一剩余执行动作。
 - push-gate 02:11 = BLOCKED（cf-check-run 距 30min 约 7min，~02:18 开）→ commit 本地（da71a9e4 已含观察），push 待下一轮执行。
 
-## 8. 下一步（NEXT）
+### 7.4 攒批 push + 全链路验收（02:13 push → 02:1x 验收 PASS）
+- **push 完成（02:13）**: 15 commits 全部上线（origin/main = dfe5132f；含对端 E1 src 链接 + 我方 7 docs + 对端 8 docs）。cf-check-run 确认 + gate 视角一致（"last push dfe5132f 2m ago"）。
+- **CF build SUCCESS**（check-runs completed/success，~02:1x）。
+- **线上验收 11/11 PASS**（探针结果存 `.hermes/_post-push-verify-result.txt`）:
+  - E1 锚 **渲染 True**（/en/blog/sticker-guide/ 含 `/en/product/small-batch-stickers/` href）✅
+  - P1 主 URL 全 200: zh 纸袋/海报/传单类目、en small-batch/saddle/exercise PDP、en doujin + ja C109、kraft PDP ✅
+  - robots.txt 200 + AI allow 保持 ✅
+- **下一 push 窗口**: 02:43（dfe5132f + 30min）；本会话不再 push。
+
+## 9. 下一步（NEXT）
 
 1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、K3-2 急件/交期、K3-6 small batch 单位/服务边界、K3-7 防水/FSC/承重、比较性文案）→ 拍板后当日落地（采购答案 + 声明治理 src 批）。
 2. **K3-9 尾项**: CF Dashboard → Security → Bots 允许 AI crawlers（edge 优先生效）。
