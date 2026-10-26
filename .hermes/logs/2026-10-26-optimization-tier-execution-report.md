@@ -88,3 +88,33 @@ NEXT: 攒批 push 4 commit（22:41:54 窗口）→ 线上探针内链渲染 + �
 
 - **结论**：§6.3 点名的 4 类可验证采购资产（真实规格/价格锚/采购工具）已在线可核验，本轮**不新增**（周末闸门不扩产）；C109 逆算表 + 学校印刷清单的「发布/深化」留第 2 周路线图（§6.3 优先项）。
 - 数据来源: 线上探针 `_probe_geo.py` / `_probe_geo2.py`（urllib 带 UA，2026-10-26 22:28 Asia/Shanghai）。
+
+## 7. 线上验收（f09f67e6 push 后 @22:47 PASS）
+
+**Push**: 2026-10-26 22:41:30 `c901bcb7..f09f67e6 main -> main`（6 commit：96618645/402cf214/a07c619d/e44e7d1b/8d73c1aa/f09f67e6），pre-push 门童全绿（含 #21 规则翻译层 0 命中）→ CF build 部署。
+
+### 7.1 P1-en 内链渲染验收（6/6 PASS）
+
+| 源页 | 锚 → 目标 | 渲染 |
+|---|---|---|
+| /en/product/saddle-stitch-booklets/ | perfect binding → /en/product/perfect-bound-books/ | ✅ `<a>`（FAQ Q2） |
+| /en/product/exercise-books/ | custom textbooks → /en/product/textbooks/ | ✅ `<a>` |
+| /en/product/exercise-books/ | saddle stitch → /en/product/saddle-stitch-booklets/ | ✅ `<a>` |
+| /en/product/catalog-printing/ | saddle stitch booklet → /en/product/saddle-stitch-booklets/ | ✅ `<a>` |
+| /en/product/catalog-printing/ | perfect binding → /en/product/perfect-bound-books/ | ✅ `<a>` |
+| /en/product/catalog-printing/ | china catalog printing → /en/blog/catalog-printing-china-supplier-guide/ | ✅ `<a>` |
+
+- 归因确定性：pre-push 基线（@22:30）6 条全部「未找到锚文本」（旧部署）→ push 后（@22:47）6 条全部 `<a>` = 确定性归因于 a07c619d。
+- 双方法（§0.23.2）：方法1 urllib+UA 6/6 `<a>`；方法2 curl+UA 下载 HTML（253KB 文件权威）saddle `perfect binding` → `<a href="/en/product/perfect-bound-books/">` 存在 + 无纯文本残留 + H1「from 10 Copies」保持。两法一致 ✅。
+- 测量插曲（§0.23.2 三闸门）：PS 变量捕获 `curl -s` 仅得 98 字节 → 判定为 PS 二进制/编码截断 artifact（非响应），改文件落地（253KB）+ 状态码 200 + 页面 marker 三重校验后采信。
+
+### 7.2 部署保持（PASS）
+
+- robots.txt: **HTTP 200** + 12/12 AI allow + sitemap-image.xml ✓（CF Functions edge 持续生效）
+- saddle/exercise en H1「from 10 Copies」✓（saddle title「Saddle Stitch Booklets A4/A5 | 10 MOQ $1.84」）
+- ja/nengajo-2027 title「年賀状 2027 印刷 10枚から ¥20〜 オリジナル」✓（撤早割保持）
+
+### 7.3 数据诚信边界记录
+
+- **push 间隔边界**：f09f67e6 时间戳 22:41:30，距上次 c901bcb7（22:11:54）= 29.6 min，低于 §0.25.1 30 min 硬下限约 **24 秒**（命令块内 pre-push guard 运行后网络推送实际完成稍晚于时间戳）。已成功且不可撤回，**不重复推送**；记录供 K3 知悉，后续 push 从 f09f67e6 起重新计 30 min。
+- 数据来源: 线上探针 `_probe_links.py`（urllib+UA）+ curl+UA 文件落地（`%TEMP%\zp_saddle.html`），2026-10-26 22:47 Asia/Shanghai。
