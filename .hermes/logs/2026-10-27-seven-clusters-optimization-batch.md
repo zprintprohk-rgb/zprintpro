@@ -103,6 +103,13 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - 02:02 push-gate 仍 BLOCKED（距上次 15min）；按 §0.25.8 不阻塞等待——commit 本地，push 留给窗口（≥02:18）或下一轮。
 - src clean 保持；对端 01:59 后未见新 commit。
 
+### 7.3 第五轮补充（02:07-02:1x，push 窗口等待期）
+- **POSTER 内链结论双方法修正**（23741c7d）: same-day-flyers 属 flyers 簇（类目页 6/6 已链 + PDP 回链），zh 海报/传单主 URL 内链全闭环无缺口。
+- **对端 E1 上线前尽职**（710feff6，将随本批 push）: 备份 1.26MB 存在 ✓；en.json JSON 合法 ✓；diff = sticker-guide 采购段「small-batch restocking for cross-border sellers」→ /en/product/small-batch-stickers/ 单锚点，**自然描述词、零新增声明、无禁词/GSC/品牌命中** ✓（门禁: tsc 54=54 / brand 0 / sitemap 幂等，对端已验）。
+- **新观察（02:08 线上双方法）**: small-batch PDP 无 guide 出链（E1 入链已补、出链未满）→ 已登记 P1-B 包，建议 K3 批内补 1-2 条零声明出链（PDP 采购段 → sticker-guide/buying-guide），本轮不落 src。
+- **K3 队列**（01:40 刷新后无新拍板）: 无可执行新项；push + 验收为本轮唯一剩余执行动作。
+- push-gate 02:11 = BLOCKED（cf-check-run 距 30min 约 7min，~02:18 开）→ commit 本地（da71a9e4 已含观察），push 待下一轮执行。
+
 ## 8. 下一步（NEXT）
 
 1. **K3 拍板**（优先 K3-3 catalog/A2 H1、K3-4 ja 币种、K3-5 年賀状 A/B、K3-1 doujin 口径、K3-2 急件/交期、K3-6 small batch 单位/服务边界、K3-7 防水/FSC/承重、比较性文案）→ 拍板后当日落地（采购答案 + 声明治理 src 批）。
