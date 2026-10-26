@@ -36,18 +36,18 @@ type Props = { params: { locale: Locale } };
 
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
-    title: '賀年卡・年賀狀印刷 2027 早鳥 | 10 張起 HK$1 起 | 智印港',
-    desc: '2027 賀年卡・年賀狀印刷早鳥優惠：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金／局部 UV／圓角／400g 厚卡可選，3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣。早鳥優惠名額與截單日確認後即時更新，WhatsApp 30 秒報價。',
+    title: '2027 賀年卡・年賀狀印刷 10 張起 HK$1 起 燙金UV | 智印港',
+    desc: '2027 賀年卡・年賀狀印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金／局部 UV／圓角／400g 厚卡可選，3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣。早鳥優惠名額與截單日確認後即時更新，WhatsApp 30 秒報價。',
     keywords: '年賀狀印刷,賀年卡印刷,新年卡印刷,2027 賀年卡,賀卡印刷早鳥,燙金賀卡,厚卡賀卡,圓角賀卡,香港賀卡訂製,企業賀年卡',
   },
   'en': {
-    title: 'Nengajo 2027 Early-Bird Printing | 10 MOQ | ZprintPro',
-    desc: 'Japanese New Year cards (nengajo) 2027 early-bird printing: 6 card SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock, 3-5 day production, DHL 2-4 day delivery, free digital proof. Early-bird terms confirmed soon. 30-second AI quote.',
+    title: 'Nengajo 2027 Printing | 10 MOQ from $0.13 | ZprintPro',
+    desc: 'Japanese New Year cards (nengajo) 2027 printing: 6 card SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock, 3-5 day production, DHL 2-4 day delivery, free digital proof. Early-bird terms confirmed soon. 30-second AI quote.',
     keywords: 'nengajo printing,japanese new year cards 2027,nengajo 2027,new year card printing,greeting card printing early bird,foil new year cards,custom nengajo,nengaja english,japan new year card service,new year postcard printing',
   },
   'ja': {
-    title: '年賀状印刷 2027 早割受付中 | 10枚から ¥20〜 | ZprintPro',
-    desc: '2027年年賀状印刷の早割受付ページ。6 SKU すべて10枚から、1枚¥20〜（箔押し¥35〜）。127×178mm 標準サイズ、宛名オプション対応確認中、納期3〜5営業日、DHL国際2〜4日、無料入稿チェック。早割率・正式締切は確定次第本ページで更新。30秒AI見積り対応。',
+    title: '年賀状 2027 印刷 10枚から ¥20〜 オリジナル | ZprintPro',
+    desc: '2027年年賀状印刷ページ。6 SKU すべて10枚から、1枚¥20〜（箔押し¥35〜）。127×178mm 標準サイズ、宛名オプション対応確認中、納期3〜5営業日、DHL国際2〜4日、無料入稿チェック。早割率・正式締切は確定次第本ページで更新。30秒AI見積り対応。',
     keywords: '年賀状印刷,年賀状 2027,オリジナル年賀状,箔押し 年賀状,年賀状 早割,年賀状 10枚から,宛名印刷,企業年賀状,数百枚 年賀状,年賀状 外注',
   },
 };
@@ -78,8 +78,8 @@ export default function Nengajo2027Page({ params }: Props) {
 
   const t = {
     'zh-hk': {
-      h1: '2027 賀年卡・年賀狀印刷 — 早鳥優惠受訂中',
-      lead: '2027 年賀狀／賀年卡早鳥受訂開始：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金、局部 UV、圓角、400g 厚卡可選。3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣，30 秒 AI 報價。',
+      h1: '2027 賀年卡・年賀狀印刷 — 10 張起 HK$1 起',
+      lead: '2027 年賀狀／賀年卡印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金、局部 UV、圓角、400g 厚卡可選。3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣，30 秒 AI 報價。',
       ebTitle: '早鳥優惠（名額制）',
       ebBody: '早鳥優惠以「10 月底前落單」為目安（既有口徑，2026-11-01 再確認）。確定嘅早鳥折扣率同正式截單日一經拍板，即刻喺本頁更新 + WhatsApp 逐客通知。',
       ebSlot: '早鳥折扣率・正式截單日：拍板後即刻更新（現行目安：10 月底前落單，2026-11-01 再確認）',
@@ -122,8 +122,8 @@ export default function Nengajo2027Page({ params }: Props) {
       whatsappText: '你好，我想查詢 2027 賀年卡／年賀狀早鳥優惠。SKU：高級／厚卡／燙金／UV／啞膠／圓角｜數量：＿＿張｜加工：＿＿',
     },
     en: {
-      h1: '2027 Nengajo & New Year Cards — Early-Bird Printing',
-      lead: 'Early-bird window open for 2027 Japanese New Year cards: 6 SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock. 3-5 day production, DHL 2-4 day delivery, free digital proof, 30-second AI quote.',
+      h1: '2027 Nengajo & New Year Cards — 10 MOQ from US$0.13',
+      lead: '2027 Japanese New Year card printing: 6 SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock. 3-5 day production, DHL 2-4 day delivery, free digital proof, 30-second AI quote.',
       ebTitle: 'Early-Bird Terms',
       ebBody: 'Working guidance: order by end of October (existing baseline, re-confirmed 2026-11-01). Confirmed discount rate and final deadline will be published on this page once approved.',
       ebSlot: 'Discount rate & final deadline: to be published once approved (working guidance: order by end of October, re-confirmed 2026-11-01)',
@@ -166,8 +166,8 @@ export default function Nengajo2027Page({ params }: Props) {
       whatsappText: 'Hi, I need a 2027 nengajo / New Year card early-bird quote. SKU: premium/400g/foil/UV/matte/rounded | Qty: ___ | Finish: ___',
     },
     ja: {
-      h1: '2027年年賀状印刷 — 早割受付中',
-      lead: '2027年年賀状の早割受付を開始しました。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期3〜5営業日、DHL国際2〜4日、無料入稿チェック、30秒AI見積り対応。',
+      h1: '2027年年賀状印刷 — 10枚から ¥20〜 オリジナルカード',
+      lead: '2027年年賀状印刷のご案内ページです。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期3〜5営業日、DHL国際2〜4日、無料入稿チェック、30秒AI見積り対応。',
       ebTitle: '早割のご案内',
       ebBody: '早割は「10月末までのご発注」を目安としています（既存口径、2026-11-01 に再確認）。確定した割引率と正式な締切日は、決まり次第こちらのページと WhatsApp でご案内します。',
       ebSlot: '早割率・正式締切日：確定次第更新（現行目安：10月末までのご発注、2026-11-01 再確認）',
