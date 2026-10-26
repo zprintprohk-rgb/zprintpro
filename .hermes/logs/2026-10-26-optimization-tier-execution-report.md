@@ -161,3 +161,22 @@ NEXT: 双条件②静默窗口（对端 01:37:50 最后写入 → 最早 01:52:5
 - 对端为**七簇策略**执行层（同一工作树），仅触碰 sku-seo-data.ts doujin body，NEXT 全为 K3 拍板项。
 - 判定: 双条件②（对端 ≥15min 无写入）**不满足** → 本轮**不落 src**；E1 落位最早 01:52:50（对端 01:37:50 + 15min）。
 - 对端已 push（origin/main=bb7b157c，含 E6/§7 一并上线）；本地剩 2 方案 docs（e77961e5/b841bfbb）随 E1 攒批推。
+
+## 2.7 E2/E5 内链覆盖补核（@01:56-59，只读）
+
+策略 §5.1 全表 E1-E6 逐项回读补核（避免漏项）:
+
+| 项 | 核验 | 结论 |
+|---|---|---|
+| E2 books category→saddle PDP | category 页 `getProductsByCategory('books')`（page.tsx:97）数据驱动渲染产品卡片（L411/474 products 组件）→ saddle-stitch-booklets 自动在内 | ✅ 已达标 |
+| E2 saddle 指南→PDP | blog-data 三语 saddle-stitch-booklet-printing-guide content 均含 `/product/saddle-stitch-booklets/` | ✅ 已达标 |
+| E5 supplier guide→catalog PDP | blog-data en catalog-printing-china-supplier-guide content 含 catalog PDP 链接 | ✅ en 达标（zh/ja 未链，但策略 E5 为 en 清单，不扩展） |
+| E5 catalog PDP→supplier guide | 既有（f09f67e6 P1-en 批已做，catalog body→china catalog guide） | ✅ 已达标 |
+
+**E1 落位就绪状态（@01:53-55 全预演通过）**:
+- 应用脚本 `_e1_apply.py`：备份（.hermes/_bak-blogdata-en-before-e1-20261027.json）+ 原子写入 + JSON 三重门 + H2 结构保持
+- dry-run 双方法：JSON 有效 ✓ 锚 URL 注入 ✓ 渲染后片段正确 ✓
+- 落位形态：blog-data/en.json sticker-guide content 采购段（H2 "What's the minimum order?" 后 296 字符处）→ `<a href="/en/product/small-batch-stickers/">small-batch restocking for cross-border sellers</a>`（en 版 10 个既有链接全带 /en/ 前缀，E1 同惯例；该文件 955 内链混合 class 形态，源页自身 4 个 PDP 链接均无 class → E1 用无 class `<a>` 一致）
+- 渲染保障：blog/[slug] L1128 dangerouslySetInnerHTML 直接输出 content HTML；L806-809 href rewrite 对 /en/ 前缀保持正确
+- 违规扫描：注入段无 brand/GSC/名片 命中 ✓；12 段回归基线不涉及（仅结构段数）✓
+- **等待**：并发双条件②（对端最后写入 01:57:26 → src 可写最早 02:12:26）+ push 30min 下限（bb7b157c 01:43:08 → 02:13:08）
