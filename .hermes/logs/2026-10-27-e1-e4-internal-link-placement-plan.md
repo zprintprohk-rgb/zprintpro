@@ -2,8 +2,8 @@
 
 > 任务源: `docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md` §5.1 E1/E4（en 作战清单）
 > 分析: 子代理 278dd484（只读分析，未改任何文件）+ 执行层独立核验（01:34-01:41）
-> **执行状态: 待并发窗口**——对端会话 01:37:50 写入 src/data/sku-seo-data.ts（doujinshi C109 内链），§0.35.7 双条件②不满足，本轮未落 src
-> 时间: 2026-10-27 01:41 Asia/Shanghai
+> **执行状态: E1 ✅（2026-10-27 02:13 push dfe5132f 上线 + 线上双方法验收）· E4 ✅（2026-10-27 02:43 commit 01b2d306，三缺口全部落位，push 待窗口）**
+> 时间: 2026-10-27 02:49 Asia/Shanghai（状态更新）
 
 ## 结论速览
 
@@ -31,22 +31,25 @@
    - ⚠️ 勿用 markdown `[text](url)`（sticker-guide 全篇 0 个 markdown 链接，避免风格不一）
    - ⚠️ blog-data JSON 属 lane.lock + §0.35.7 双条件保护区，执行前必查
 
-## E4 落位（对端活跃期间不执行，留待 K3/下轮）
+## E4 落位（2026-10-27 02:40 执行，commit 01b2d306）
 
-> ⚠️ 对端已做 PDP→C109（sku-seo-data.ts 三语），以下为**互补缺口**，避免与对端撞车：
+> ⚠️ 对端已做 PDP→C109（sku-seo-data.ts 三语，bb7b157c），以下为**互补缺口**执行结果：
 
-1. **zine guide → /product/doujinshi-printing/**（blog JSON 无 locale 前缀写法，渲染自动 rewrite）
-   - 源: `src/data/blog-data/en.json:731`（"Ready to print?" 采购段尾）
-   - 锚: `doujin circles`（唯一出现）
-   - ⚠️ **2026-10-27 01:53 复核修正**: 原文 `doujin circles should start with the [doujin-circle-printing-guide]...` ——"doujin circles" 已在既有 `<a href="/en/blog/doujin-circle-printing-guide/">` 锚内。**锚点冲突**：不能同锚双链（§5.4 语义唯一）。需改用该句其他未链词组（如 "should start with" 或重构句末追加独立锚），**下轮重新设计后再执行**。
-2. **PDP → /en/blog/comiket-printing-prep-guide/**
-   - 源: `src/data/products.ts:6799`（"Turnaround" 交期段）
-   - 锚: `before Comiket`（**出现 2 次**，须用 `A 24-hour rush is available before Comiket; during peak seasons` 长上下文定位，禁 replace_all）
-   - ⚠️ products.ts longDescription 无链接 rewrite，须写全量 `/en/blog/...`
-3. **PDP → /en/blog/zine-small-batch-booklet-printing-guide/**
-   - 源: `src/data/products.ts:6790`（Binding Options 装订表 Saddle Stitch 行）
-   - 锚: `Saddle Stitch`（**多次出现**，须用 `<td>Saddle Stitch</td><td>8-64 pages</td>` 定位；备选 `lays fully flat for reading` 条目内唯一）
-   - ⚠️ 同上，须全量 locale URL
+1. **zine guide → /en/product/doujinshi-printing/** ✅
+   - 源: `src/data/blog-data/en.json`（zine-small-batch-booklet-printing-guide content）
+   - 锚: `doujin circles`（全局唯一 1 次、0 锚内命中——**双方法 dump 修正 01:53 误判**：原文 `doujin circles should start with the <a href="/en/blog/doujin-circle-printing-guide/">doujinshi printing guide</a>`，`doujin circles` 为独立纯文本，无锚点冲突）
+   - 落位形态: `; <a href="/en/product/doujinshi-printing/">doujin circles</a> should start with the <a href="/en/blog/doujin-circle-printing-guide/">doujinshi printing guide</a>.`
+2. **PDP → /en/blog/comiket-printing-prep-guide/** ✅
+   - 源: `src/data/products.ts:6799`（Turnaround 交期段）
+   - 锚: `before Comiket`（长上下文 `A 24-hour rush is available before Comiket; during peak seasons` 唯一，禁 replace_all）
+   - 形态: `A 24-hour rush is available <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a>; during peak seasons`
+3. **PDP → /en/blog/zine-small-batch-booklet-printing-guide/** ✅
+   - 源: `src/data/products.ts:6790`（Binding Options 装订表 Saddle Stitch 行，`<td>Saddle Stitch</td><td>8-64 pages</td>` 唯一）
+   - 形态: `<td><a href="/en/blog/zine-small-batch-booklet-printing-guide/">Saddle Stitch</a></td><td>8-64 pages</td>`
+
+- 备份: `.hermes/_bak-blogdata-en-before-e4-20261027.json` + `.hermes/_bak-products-before-e4-20261027.ts`。
+- 门禁: encoding ✓ / brand A 类 0 ✓ / tsc 54=54 持平 ✓ / JSON 三重解析 ✓ / diff 3 文件 4 行 ✓。
+- 线上预基线（push 前 @02:45）: 三锚精确全串均未出现 → push 后出现 = 确定性归因；既有 `href="/en/product/doujinshi-printing/"` 2 处为自动 related-card 网格（非 content 锚）。
 
 ## 目标 URL 存在性（子代理 grep 命中）
 
