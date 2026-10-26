@@ -6787,7 +6787,7 @@ export const products: Product[] = [
 <table>
   <thead><tr><th>Binding</th><th>Page Range</th><th>Best For</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Saddle Stitch</td><td>8-64 pages</td><td>Thin manga, event booklets; lays fully flat for reading</td></tr>
+    <tr class="border-b border-gray-200"><td><a href="/en/blog/zine-small-batch-booklet-printing-guide/">Saddle Stitch</a></td><td>8-64 pages</td><td>Thin manga, event booklets; lays fully flat for reading</td></tr>
     <tr><td>Perfect Binding</td><td>65+ pages</td><td>Thick art books, anthologies; printable spine for shelf display</td></tr>
   </tbody>
 </table>
@@ -6796,7 +6796,7 @@ export const products: Product[] = [
 <h3>Bleed and Safe Zone (Read Before Uploading)</h3>
 <p>Keep 3mm bleed on all full-bleed artwork; place key linework, dialogue and signatures inside the 5mm safe zone from trim. For saddle stitch, reserve a 5mm binding margin at the spine side of spreads so staples never cover key art. Convert all fonts to outlines and submit in CMYK PDF.</p>
 <h3>Turnaround</h3>
-<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. A 24-hour rush is available before Comiket; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
+<p>Standard production is 5-7 business days, then DHL Express from our Shenzhen factory to Japan in 2-4 business days. A 24-hour rush is available <a href="/en/blog/comiket-printing-prep-guide/">before Comiket</a>; during peak seasons (June-July and December) plan 10-15 business days ahead.</p>
 `,
     longDescriptionJa: `<h3>製本の選び方：無線綴じ vs 中綴じ</h3>
 <table>
