@@ -15,9 +15,9 @@
 |---|---|---|
 | sku-seo-data.ts（B2） | 🔶 部分已清 | 同侪 9efc9da3（18:38）已清 boxes/stickers FDA→食品級（0 残留）；**真值冲突项仍待 K3**；无值依赖清毒（B2-2/17/22/23/30/31 等）待批 1 |
 | category-seo-content.ts（B1） | 🔴 全项未动 | e-print 竞品对比/FDA/FSC/SGS/ISTA/清关承诺/导航 FDA 全部在线（L84-411），B1 全项待批 1 |
-| products.ts（B3） | 🔴 源头未清 | 「internationally certified」9 处（含 food/mailer 2 处本域）；food description FDA 源头仍在线 |
+| products.ts（B3） | 🔴 源头未清 | 「internationally certified」9 处；**FDA 5 处源头**（food title/desc L2982-83、cosmetic features L3087、fruit-label L6631/6634）；线上 title/description/features 仍显示 FDA（2026-10-28 01:15 探针 18-28 处/页） |
 | blog-data（B4） | 🔴 全项未动 | FDA 21 CFR/GB 4806/FSC/65%/60%/多個残片全部在线，D20-21 + 批 1 |
-| 线上 | 🔶 部分更新 | 18:38 push 后 build SUCCESS + deploy live（daily-content 报告）；food/rigid title·H1 已反映 sku-seo 清毒 |
+| 线上 | 🔶 半清 | sku-seo body/H1 已清（zh「食品級」/ja「食品グレード」/en「Food-Grade」✅）；**title/description/features 仍渲染 products.ts 源头 FDA** |
 
 ---
 
@@ -141,7 +141,9 @@
 | B3-1 | products.ts「internationally certified quality management system」**9 处**：kraft-paper-bags(1365)/gift-bags(1555)/eco-paper-bags(1650)/handle-bags(1749)/jumbo-bags(1843)/a4-flyers(1917)/a1-posters(2550)/food-boxes(2983)/mailer-boxes(3185) | 无证认证断言 | **删除**；本域先清 food/mailer 2 处，纸袋/flyers/posters 交七簇会话 | CER-007 |
 | B3-2 | rigid title_zh HK$4.5 / food title_zh HK$4 / kraft price_range HK$1.5-1000 / white-card basePrice=129 | 冲突值 | **拍板后统一** | PR-001~004 |
 | B3-3 | kraft variables 100 vs minQuantity 300 | 冲突值 | **拍板后统一** | MOQ-009 |
-| B3-4 | food description_zh「FDA級食品接觸安全材質」＋ food descriptionEn「Food-grade material, safe」 | **FDA 源头残留**（sku-seo 已清） | **删除 FDA 断言**，改「食品級紙材（以訂單確認）」 | CER-001/FC-001 |
+| B3-4 | food title_zh L2982「HK$4起/個 FDA級」＋ description L2983「FDA級食品接觸安全材質」＋ descriptionEn「internationally certified」（B3-1 food 处） | **FDA 源头残留**（sku-seo H1 已清，源头未清——线上页面 title/description 仍显示 FDA，2026-10-28 01:15 线上探针 18-28 处/页） | **拍板后清**：title 去 FDA 并统一 HK$4 vs 2.5（PR-001）；description 改「食品級紙材（以訂單確認）」 | CER-001/FC-001 + PR-001 |
+| B3-5 | cosmetic features L3087「藥機法 / FDA 21 CFR / EU 1223/2013 合規」 | 合规文件前不得发布 | **拍板后删除** | CER-004 |
+| B3-6 | fruit-food-label title_zh L6631「FDA 食品級」＋ features L6634「SGS／FDA 通過…可直接接觸食品」 | 无检测文件 | **拍板后删除 FDA/SGS/直接接觸**（改「防水・防油標籤紙」） | CER-001/FC-001 |
 
 ### B4 · 博客源数据（`blog-data/*.json` + `blog-posts.ts`；D20-21 全量清毒预排 + P0-02 即时项）
 
