@@ -23,7 +23,7 @@
 ### K3-3 · 四页 MOQ（saddle/exercise/catalog/A2）
 - **现状**: saddle/exercise H1 已改 100→10 且 **2026-10-27 01:35 线上已生效**（`from 10 Copies`）；catalog/A2 线上 H1 仍 100+（desc 10）。
 - **问题**: 仅剩 catalog/A2 的 H1 100+ 是否改 10（数字小批 10 vs offset 批量 100）；exercise 装订已统一 Saddle-Stitched 是否认可。
-- **请 K3**: ① 认可 catalog/A2 统一 MOQ=10（推荐: 数字印刷 MOQ=10 为公开口径，H1 改 10；若业务 offset 起印 100 需同时写清）；② exercise 装订 Saddle-Stitched 认可。
+- **请 K3**: ① 认可 catalog/A2 统一 MOQ=10（推荐: 数字印刷 MOQ=10 为公开口径，H1 改 10；若业务 offset 起印 100 需同时写清）；② exercise 装订 Saddle-Stitched 认可；③ **书刊内页克重口径统一（新观察 12:1x）**——saddle desc「157g–200g」vs material「128g–157g」vs 选项 80/100/128g，随本批定 SSoT（建议: material/选项为准 128g–157g，desc 同步）。
 
 ### K3-4 · ja 报价币种
 - **现状**: ja textbook description `HK$5-50/冊`（线上确认）；ja paper-bags 正文 `HK$8.00〜`；全站 ja 内容 50 处 HK$（含香港语境内容——语义正确，不在本项）。
