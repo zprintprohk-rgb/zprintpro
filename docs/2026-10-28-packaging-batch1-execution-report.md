@@ -78,3 +78,24 @@
 | `sku-seo-data.ts` | 9 | ja gang-run：¥3,800/無競合価格/8-15 日納期×3/40〜60%/15年以上100か国15,000クライアント（与拍板 1000+ 客户冲突）→条件化；zh food body：PLA 可降解內層/全部材質 FSC 認證→可選（落單時註明） |
 
 **归零确认**：food zh FDA 12→0、category zh FDA 19→0、gang-run 三语 40-60%/HK$0.03/8-15 天→0、ja 30個〜/SGS検査済み/食品衛生基準→0。**移交登记**：products-content 七簇块（贺卡/贴纸/纸袋/传单/海报/利是封/月历/菜单/学校/请柬）的 FDA/SGS/internationally certified/FSC 認證取得 + security-stickers FDA 21 CFR 药标 + Sticker Mule 对比 → 七簇域/D20-21。
+
+## 九、线上终验（2026-10-28 07:47，CF build run 122537859295 已部署，P0-02 批 1 完成）
+
+**终验探针（18 URL × 24 毒串，`.hermes/tmp/probe-batch1-online.mjs`）**：
+
+| 毒串 | 终验 | 说明 |
+|---|---|---|
+| FDA / SGS / ISTA / internationally certified / 40-60% / Sturdy and durable / 打樣當日 / 即日打樣 / 8-15天交期 / 8-12 天 / 10-15 個工作天 / 無可塑剤 / 30個〜 / HK$0.03 / SGS検査済み / 旺角打樣中心 / 無對手價 / 食品衛生基準 / FSC認證盒 | **全部 0**（19/19 × 18 URL） | food/cosmetic/mailer/gang-run/category packaging ×3 locale |
+| `生分解性:2`（ja food） | 合规 | 条件化形态「エココート（生分解性はご注文時確認）」 |
+| `¥4.4:10`（ja gang-run）+ `¥4.4:2`（ja category） | 合规保留 | **价格真值**：ProductPageV9 L449 AEO 答案块 `${fromPrice()}` 运行时 JPY 换算（HK$129/500×17），P0 ③ 可保留 |
+| `e-print:4`（en cosmetic） | 误报 | 正则匹配 `fine-print ingredient lists` 子串，非真残留 |
+| fruit-food-labels 三语 404 | 探针 URL 错 | 真实 slug = `fruit-food-label-stickers`（sku-seo L52 body 印证），非线上问题 |
+
+**批 1 完成判定（双方法）**：① 门禁全绿 4 件（tsc 54=54 / title-v5 HARD=7 存量 / brand 0 / gsc 0）；② 线上探针 18 URL × 24 毒串 = 0 真残留（含伴随源 3 轮补漏）。**数据来源**：commit `2412ac6f`（批1）+ `46c83ac6`/`e066efe6`（伴随源补漏）+ `2db334a2`（gang-run 补漏）+ `310fb44b`/`51760784`（products-content/PDP/sku-seo 补漏）+ CF build run 122524728843/122537859295 + 探针 URL×pattern 计数（本文档 + `.hermes/tmp/probe-batch1-online.mjs` 输出）。
+
+**遗留（非 P0 清毒范围，登记移交）**：① 七簇域（贺卡/贴纸/纸袋/传单/海报/利是封/月历/菜单/学校/请柬）FDA/SGS/FSC 認證取得 + security-stickers FDA 21 CFR → 七簇域清毒批；② products-content 编造客户数字（17 間電商/5,000 社/30% UP 等）→ D15-19 资产审计；③ blog-data ja FDA 文章（baby-food/sticker 等）→ D20-21 blog 清毒；④ 探针 pattern 补 `5-7 営業日`/`3-5 天` 全站标准口径（price-tables lead_time 真值，非清毒对象，仅探针口径记录）。
+
+## 十、下一步
+
+- **D4-D5 kraft 草案落位（批 3）**：ja kraft 全字段三语 BLUF/H1/FAQ 草案（速览表 kraft MOQ A=300 已授权），落地到 `docs/2026-10-27-packaging-bluf-and-kraft-draft.md` 后进 `src/data`（kraft-boxes/folding/eco-boxes 关联字段）
+- D6-D13 后续：zh（D6-7）、en（D8-10）、rigid（D11-12）、LINK（D13）
