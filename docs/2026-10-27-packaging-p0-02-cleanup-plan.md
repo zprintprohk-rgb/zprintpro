@@ -255,3 +255,5 @@
 | category en/ja 全段 | ISTA/FSC/SGS/FDA/清關/40-60%/無料当日/自社工場直送 全清 | ✓ |
 
 **残留移交（非本批范围）**：七簇域（纸袋/flyers/posters/stickers/横幅/菜單/同人誌/药标/学校/海报）FDA 与认证断言；彩盒族 en body 8-15 days（corrugated/tuck-end/white-card，批 2 与 rigid 交期统一时处理）；gang-run ja title 混合中英（watch）；kraft blog 18,500 訂單數字来源（D22 审计）。
+
+**伴随源补漏（2026-10-28 线上复核，commit `46c83ac6`）**：product-faqs.ts（15 处）、CategoryIndustries/CategorySharpHooks（5 处）、seo.ts category meta（3 处）、category-conversion-blocks.ts（41 处）、products.ts kraft/folding（4 处）——全部包装域 FDA/SGS/FSC 绝对断言、拼版单价 HK$0.03/0.8、HK$300-800 行业对比、8-15 天、MOQ 30/50→100、生分解性/無可塑剤/国際環境基準/即日打樣/当日完成 已清。**教训固化：category 页渲染源不止 category-seo-content.ts，复核必须覆盖伴随组件（CategoryIndustries/SharpHooks/seo.ts/conversion-blocks）+ 线上探针。**
