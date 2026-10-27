@@ -71,6 +71,7 @@
 ### K3-10 · 车道调度缺口 —— 🔴 根因已精确收敛（2026-10-27 21:2x 四方验收更新）
 - **新铁证（wrapper 日志 cron-ZP-daily-content.log L57087，同款见于 gsc）**: `dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service` → **调度 run 秒败（dsh_exit=1）的直接原因是 Task Scheduler 上下文缺 DeepSeek 凭据**，不是任务未装载。
 - **关键对照**: 同日 18:17 harness run `dsh_exit=0` 成功（凭据在交互会话可用）→ 修复动作比预想轻: **K3 在管理员上下文重新存储一次 DEEPSEEK_API_KEY**（dsh credentials service / Models 页，或机器级 env），无需重注册 schtasks；weekly/blog/monthly 的 0x800710E0 另查（仍需管理员）。
+- **K3 修法（命令级，2026-10-28 01:0x 补齐）**: ① 管理员桌面打开 DSH Desktop web 界面（`dsh web` → Models 页）→ DeepSeek（deepseek-official 路由）填入 DEEPSEEK_API_KEY 保存 → 写入 `C:\Users\Administrator\.dsh\.credentials.yaml`（凭据文件存在已确认, 内容不读）; ② 无需改 wrapper / 无需重注册 schtasks; ③ 验证 = 下一班调度 lane（20:13/21:17/07:10 任一）wrapper 日志 dsh exit=0 且当日报告非 AUTO-FILL。执行层已验: dsh.cmd 帮助无 credentials 子命令, 唯 UI 写入路径（错误消息自述一致）。
 - **四方验收实录（10-27 晚）**: gsc 20:13:11 / daily 21:18:35 两 run 触发✓ 锁✓ 兜底报告 AUTO-FILL✓ 总线✓ push-gate✓，唯 dsh 零产出；详见 `.hermes/logs/2026-10-27-lane-acceptance-evening.md`。
 - **原诊断保留**: weekly-meta（10-23 MISSING）/ blog-deepfix（10-24 MISSING）/ monthly-matrix LastTaskResult=2147946720 = 调度器/执行器未装载, 需管理员重注册（5f42e7f3 附命令）；weekly 20:52→22:22 错时待批。
 - weekly-meta 10-24 20:52 漏跑（0x800710E0）/ gsc-feedback 10-25 20:13 漏跑 / blog-deepfix 10-25 23:47 漏跑（lane-status `need_human`，LastTaskResult=2147946720）——不补跑制造历史成功；下一触发自然恢复。注册/修复需 K3 管理员。
