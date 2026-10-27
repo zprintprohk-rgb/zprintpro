@@ -133,7 +133,7 @@ const T: Record<'zh-hk' | 'en' | 'ja', Record<string, any>> = {
     freeShipHK: 'US orders $99+',
     freeShipHKVal: 'free shipping',
     svcStdTitle: 'Standard 5-7 days',
-    svcStdDesc: 'HP Indigo 15K B2 digital line · free digital proof within 1 hour of file submission · 2.3-day average dispatch, rush same-day available',
+    svcStdDesc: 'HP Indigo 15K B2 digital line · free digital proof within 1 hour of file submission · fast dispatch with rush same-day available',
     svcDhlTitle: 'DHL worldwide 2-4 days',
     svcDhlDesc: 'Free US shipping $99+ · DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan',
     svcRushTitle: 'Rush Printing',

@@ -293,9 +293,9 @@ export const packagingBoxesFAQs: FAQItem[] = [
   },
   {
     question: {
-      'zh-hk': '包裝盒印刷 可以即日打樣嗎？',
-      'en': 'Can I get same-day packaging box sampling?',
-      'ja': '箱包装の即日サンプルは可能ですか？',
+      'zh-hk': '包裝盒印刷可以打樣嗎？',
+      'en': 'Can I get packaging box sampling?',
+      'ja': '箱包装のサンプルは可能ですか？',
     },
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，可安排打樣（日程以報價為準）。建議提前提供設計稿及尺寸規格。確認樣板後3-5個工作天可批量生產。',

@@ -5989,12 +5989,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>外盒多採 1200-1500g 灰板裱糊白卡 / 觸感紙 / 珠光紙 / 銅版紙。表面工藝: <strong>啞膠覆膜</strong> (主流高端) / <strong>觸感膜</strong> (絨面) / <strong>光膠覆膜</strong> (色彩鮮明)。Logo 區加燙金細線或局部 UV 提升精緻度。</p>
 
 <h3>法規標示與批次號印刷區</h3>
-<p>設計稿請預留成分表與批次號印刷區 (藥機法 / FDA 21 CFR / EU 1223/2013 合規)。打樣階段實測跌落與開合磨損, 確保瓶器在高溫 + 跨境運輸條件下無位移破損。</p>
+<p>設計稿請預留成分表與批次號印刷區 （美/日/歐法規合規印刷區）。打樣階段實測跌落與開合磨損, 確保瓶器在高溫 + 跨境運輸條件下無位移破損。</p>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品包裝盒 OEM / ODM 服務。100 個起印, 深圳平湖廠房直送, DHL Express 全球 2-4 個工作天配送, 國際品質認證。</p>
+<p>智印港 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品包裝盒 OEM / ODM 服務。100 個起印, 深圳平湖廠房直送, DHL Express 全球 2-4 個工作天配送。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。快遞盒因結構較簡單, 樣品 + 量產均能 5-7 天交付。</p></details>
 <details class="my-2"><summary><strong>化妝品包裝盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
@@ -6023,7 +6023,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>The inner tray is critical for cosmetic box integrity during shipping and at retail display. Three materials cover the full premium-to-eco spectrum:</p>
 <ul>
   <li><strong>EVA foam</strong>: Moldable around irregular bottle silhouettes. Best for fragile glass droppers, serum bottles.</li>
-  <li><strong>Molded pulp</strong>: 100% recyclable, curbside-compostable. Preferred by clean beauty and B-Corp brands.</li>
+  <li><strong>Molded pulp</strong>: 100% recyclable, curbside-eco option. Preferred by clean beauty and B-Corp brands.</li>
   <li><strong>PET vacuum-formed</strong>: Crystal-clear visibility. Showcases product through the tray, ideal for retail-shelf ready boxes and sample kits.</li>
 </ul>
 
@@ -6031,7 +6031,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>Outer wrap uses 1200-1500g grey board laminated with white card, soft-touch paper, pearlescent stock, or coated art paper. Surface options: <strong>matte lamination</strong> (flagship premium), <strong>soft-touch film</strong> (velvety suede-like grip), or <strong>gloss lamination</strong> (vivid saturation for color-heavy designs). Logo zones typically combine foil stamping with spot UV for tactile depth.</p>
 
 <h3>Compliance & Batch Number Area</h3>
-<p>Pre-press design reserves legal-mandated ingredient panels and batch/lot number zones per FDA 21 CFR, EU Regulation 1223/2013, and JP 薬機法. Production testing covers drop-test, hinge-cycle, and tropical-climate transit simulation. All boxes engineered to keep bottles and jars secure across hot, humid cross-border shipping lanes.</p>
+<p>Pre-press design reserves legal-mandated ingredient panels and batch/lot number zones per US, EU, and JP food/cosmetic labeling regulations. Production testing covers drop-test, hinge-cycle, and tropical-climate transit simulation. All boxes engineered to keep bottles and jars secure across hot, humid cross-border shipping lanes.</p>
 
 <h3>Why Choose ZprintPro for Cosmetic Packaging</h3>
 <ul>
@@ -6041,7 +6041,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Full-system integration</strong>: Pair your cosmetic box with matching stickers, paper bags, and mailer boxes for a unified brand unboxing. Order across categories in one consolidated shipment.</li>
 </ul>
 
-<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>internationally certified</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>quality-managed</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Cosmetic packaging boxes are the first physical touchpoint of any beauty brand. Best fit for indie skincare brands launching serums or moisturizers in glass dropper bottles, fragrance houses preparing PR gift sets for media editors, and subscription beauty boxes shipping curated assortments. Also ideal for direct-to-consumer beauty brands building unboxing experiences that drive social sharing, luxury hotel amenity programs seeking elevated guest gifts, and J-beauty / K-beauty brands expanding into global markets. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, UAE, and worldwide.</p>
@@ -6073,7 +6073,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -6102,16 +6102,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Food Boxes for Global Brands</h3>
-<p>ZprintPro food packaging boxes are designed for bakeries, tea brands, health supplement companies, and gift food producers across the US, UK, Australia, and global markets. Choose from 350g-400g food-grade white card or kraft with optional PE or PLA biodegradable inner lining. Our boxes pass FDA, LFGB, and SGS food-contact migration testing, ensuring safety for direct pastry, tea, and supplement contact. Optional window design (PET clear film or die-cut) and foil-stamped logos elevate shelf appeal.</p>
+<p>ZprintPro food packaging boxes are designed for bakeries, tea brands, health supplement companies, and gift food producers across the US, UK, Australia, and global markets. Choose from 350g-400g food-grade white card or kraft with optional PE or PLA eco inner lining. Our boxes are food-grade for direct pastry, tea, and supplement contact; compliance documentation confirmed per order. Optional window design (PET clear film or die-cut) and foil-stamped logos elevate shelf appeal.</p>
 
 <h3>Material & Safety Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -6125,10 +6125,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">350g White Card + PE Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Pastries, fried foods, takeaway</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g White Card + PLA Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Eco-friendly brands, vegan bakeries</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">350g Kraft + PE Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Artisan bread, organic tea</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">400g Clay-Coated Board</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Health supplements, gift packaging</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">350g White Card + PE Lining</td><td class="p-2 text-center">Food-grade</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Pastries, fried foods, takeaway</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g White Card + PLA Lining</td><td class="p-2 text-center">Food-grade</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Eco-friendly brands, vegan bakeries</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">350g Kraft + PE Lining</td><td class="p-2 text-center">Food-grade</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Artisan bread, organic tea</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">400g Clay-Coated Board</td><td class="p-2 text-center">Food-grade</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Health supplements, gift packaging</td></tr>
   </tbody>
 </table>
 
@@ -6153,39 +6153,39 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>Certified Food Safety:</strong> FDA (US), LFGB (EU), SGS migration tested, heavy-metal-free inks.</li>
+  <li><strong>Certified Food Safety:</strong> Food-grade materials, heavy-metal-free inks.</li>
   <li><strong>Low MOQ with Volume Discount:</strong> 100-box minimum, 15% off at 1,000+, 25% off at 5,000+.</li>
   <li><strong>Free Dieline Design:</strong> Custom box structure and dieline included. We handle tuck-end, auto-lock, and rigid box designs.</li>
-  <li><strong>Eco Options Available:</strong> PLA biodegradable lining, FSC-certified kraft, and soy-based inks for ESG-conscious brands.</li>
+  <li><strong>Eco Options Available:</strong> PLA eco lining, FSC-certified kraft, and soy-based inks for ESG-conscious brands.</li>
 </ul>
 
 <h3>Use Cases & Industries</h3>
-<p>Food packaging boxes are the silent salesperson on the shelf. ZprintPro serves pastry shops (cookie and cake boxes), tea brands (loose-leaf and bagged tea packaging), health supplement companies (powder and capsule boxes), confectionery brands (chocolate and candy gift boxes), and gift food producers (holiday and corporate gift sets). For US-based food businesses, our FDA-compliant materials and 100-MOQ are ideal for small-batch artisan production. For international clients in the UK, Australia, Korea, Singapore, and UAE, DHL Express delivers in 2-4 days.</p>
+<p>Food packaging boxes are the silent salesperson on the shelf. ZprintPro serves pastry shops (cookie and cake boxes), tea brands (loose-leaf and bagged tea packaging), health supplement companies (powder and capsule boxes), confectionery brands (chocolate and candy gift boxes), and gift food producers (holiday and corporate gift sets). For US-based food businesses, our food-grade materials and 100-MOQ are ideal for small-batch artisan production. For international clients in the UK, Australia, Korea, Singapore, and UAE, DHL Express delivers in 2-4 days.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>Are the boxes food-safe?</strong></summary><p>Yes. All materials are FDA (US) and LFGB (EU) compliant, with SGS migration testing. Inks are heavy-metal-free and water-based, preventing odor transfer or chemical leaching into food.</p></details>
+<details class="my-2"><summary><strong>Are the boxes food-safe?</strong></summary><p>Yes. All materials are food-grade. Inks are heavy-metal-free and water-based, preventing odor transfer or chemical leaching into food.</p></details>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 boxes. Volume discounts start at 1,000 boxes (15% off) and 5,000 boxes (25% off). For sample orders under 50, rush fees apply.</p></details>
 <details class="my-2"><summary><strong>Can I get a window in the box?</strong></summary><p>Yes. PET clear film windows and die-cut window openings are available. Window size and position are customizable. Add 1 day to production.</p></details>
-<details class="my-2"><summary><strong>Do you offer eco-friendly materials?</strong></summary><p>Yes. PLA biodegradable lining (compostable), FSC-certified kraft, recycled paperboard, and soy-based inks are all available. We can also calculate carbon footprint per order.</p></details>
+<details class="my-2"><summary><strong>Do you offer eco-friendly materials?</strong></summary><p>Yes. PLA eco lining (eco option), FSC-certified kraft, recycled paperboard, and soy-based inks are all available. We can also calculate carbon footprint per order.</p></details>
 <details class="my-2"><summary><strong>Can you print variable QR codes for batch tracking?</strong></summary><p>Yes. Variable data printing allows per-box QR codes linking to batch records, certificates of analysis, or anti-counterfeit verification. Submit an Excel/CSV file with the data.</p></details>
 <details class="my-2"><summary><strong>What about box structural design?</strong></summary><p>We provide free dieline design and 3D mockups. Standard tuck-end, auto-lock bottom, book-style, and rigid lid-base boxes are all available. Custom structures are quoted on request.</p></details>
 
 
 
 <h3>Compliance & Quality Management</h3>
-<p>internationally certified quality management system.</p>
+<p>Quality-managed production.</p>
 `,
     longDescriptionJa: `<h3>食品グレード材質対比</h3>
-<p>食品パッケージは 4 種類の食品安全素材から選択、食品衛生法・FDA/LFGB 準拠。</p>
+<p>食品パッケージは 4 種類の食品安全素材から選択、食品衛生法・Food-grade 準拠。</p>
 <table>
   <thead>
     <tr><th>素材</th><th>克重</th><th>食品安全</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>食品グレード白カード</td><td>350g–400g</td><td>FDA / LFGB / 食品衛生法</td><td>菓子・パン・弁当</td></tr>
-    <tr class="border-b border-gray-200"><td>食品グレードクラフト</td><td>300g–350g</td><td>FDA / LFGB / 食品衛生法</td><td>ベーカリー・オーガニック</td></tr>
-    <tr class="border-b border-gray-200"><td>耐油ラミネート紙</td><td>250g–300g</td><td>FDA / LFGB / 食品衛生法</td><td>揚げ物・惣菜</td></tr>
-    <tr><td>窓付き OPP フィルム</td><td>50μm + 厚紙</td><td>FDA / LFGB / 食品衛生法</td><td>中身を見せたい菓子・パン</td></tr>
+    <tr class="border-b border-gray-200"><td>食品グレード白カード</td><td>350g–400g</td><td>食品グレード</td><td>菓子・パン・弁当</td></tr>
+    <tr class="border-b border-gray-200"><td>食品グレードクラフト</td><td>300g–350g</td><td>食品グレード</td><td>ベーカリー・オーガニック</td></tr>
+    <tr class="border-b border-gray-200"><td>耐油ラミネート紙</td><td>250g–300g</td><td>食品グレード</td><td>揚げ物・惣菜</td></tr>
+    <tr><td>窓付き OPP フィルム</td><td>50μm + 厚紙</td><td>食品グレード</td><td>中身を見せたい菓子・パン</td></tr>
   </tbody>
 </table>
 
@@ -6209,18 +6209,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>4 色 CMYK 印刷</strong>：CMYK フルカラーで鮮やかなパッケージデザイン、ISO 12647 色彩管理</li>
   <li><strong>個別可変印刷</strong>：消費期限・ロット番号・QR コード 1 個ずつ印刷可能、トレーサビリティ管理</li>
   <li><strong>印前 AI 預検</strong>：食品安全適合チェック + 印刷適性チェックの 2 段階 AI 自動検証</li>
-  <li><strong>試作品特急対応</strong>：50 個の試作品を 5〜7 営業日で納品（寫真撮影・EC サイト掲載用）</li>
+  <li><strong>試作品対応</strong>：50 個の試作品、日程はご注文時確認（寫真撮影・EC サイト掲載用）</li>
 </ul>
 
 <h3>エコ・脱プラ素材のリクエスト</h3>
-<p>ZprintPro は <strong>FSC 認証紙・再生紙・竹パルプ</strong> などエコ素材を豊富にご用意。脱プラ対応では <strong>PLA（植物由来）透明フィルム・生分解性コート</strong>も使用可能。ESG 配慮の食品ブランド・オーガニック商品・サステナブル志向ブランドに好評です。エコ素材への切り替えは追加料金なしで対応します。</p>
+<p>ZprintPro は <strong>FSC 認証紙・再生紙・竹パルプ</strong> などエコ素材を豊富にご用意。脱プラ対応では <strong>PLA（植物由来）透明フィルム・エココート（生分解性はご注文時確認）</strong>も使用可能。ESG 配慮の食品ブランド・オーガニック商品・サステナブル志向ブランドに好評です。エコ素材への切り替えは追加料金なしで対応します。</p>
 
 <h3>食品安全基準と認証</h3>
-<p>ZprintPro の食品パッケージは世界 3 大食品安全基準に準拠。</p>
+<p>ZprintPro の食品パッケージは食品グレード素材に対応。</p>
 <ul>
-  <li><strong>FDA（米国食品医薬品局）</strong>：米国市場向け食品安全基準</li>
-  <li><strong>LFGB（ドイツ食品・日用品法）</strong>：欧州市場向け最高基準</li>
-  <li><strong>食品衛生法（日本）</strong>：日本国内販売向け完全準拠</li>
+  <li><strong>食品グレード基準</strong>：米国市場向け（ご注文時確認）</li>
+  <li><strong>食品グレード基準</strong>：欧州市場向け（ご注文時確認）</li>
+  <li><strong>食品グレード基準</strong>：日本国内向け（ご注文時確認）</li>
   <li><strong>水性インク・大豆インク</strong>：匂い移りゼロ、化學物質溶出なし</li>
   <li><strong>耐油・耐水ラミネート</strong>：内側に PE / EVOH ラミネートで食品の油分・水分の浸透を防ぐ</li>
 </ul>
@@ -6318,7 +6318,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -6347,13 +6347,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 
 <h3>智印港 2026-07-18 飛機盒參考價格</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>價格依據</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>參考價</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>參考價</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>參考價</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>參考價</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>參考價</td></tr></tbody></table><p><strong>對比 市場零售 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已可壓到 市場零售 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印港 深耕跨境電商印刷 <strong>多年</strong>,服務 <strong>全球跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>多個國家</strong>。所有訂單 國際認證體系、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價為現行參考價,非模擬價。</p>`,
     longDescriptionEn: `<h3>Mailer Boxes for E-Commerce Brands</h3>
@@ -6416,12 +6416,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How much weight can the box hold?</strong></summary><p>Folding carton mailers: 1-3kg. Corrugated B-flute: 3-8kg. Double-wall corrugated: 8-15kg. For heavier items, choose rigid mailer or double-wall construction.</p></details>
 <details class="my-2"><summary><strong>Do you offer custom sizes?</strong></summary><p>Yes. Any dimension from 100×80×30mm (small jewelry) to 600×400×300mm (large multi-item). We optimize the dieline for your product and shipping method.</p></details>
 <details class="my-2"><summary><strong>What about tape or adhesive closures?</strong></summary><p>Self-lock tuck-front design requires no tape. We also offer tear-strip closures (for returnable packaging) and adhesive strips on request.</p></details>
-<details class="my-2"><summary><strong>Are they eco-friendly?</strong></summary><p>Yes. All our mailers use FSC-certified paper. Corrugated and kraft mailers are 100% recyclable. Folding carton mailers with soy ink are recyclable and biodegradable.</p></details>
+<details class="my-2"><summary><strong>Are they eco-friendly?</strong></summary><p>Yes. All our mailers use FSC-certified paper. Corrugated and kraft mailers are 100% recyclable. Folding carton mailers with soy ink are recyclable and eco.</p></details>
 
 
 
 <h3>Compliance & Quality Management</h3>
-<p>internationally certified quality management system.</p>
+<p>Quality-managed production.</p>
 
 <p><em>Printed in our Asia facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for e-commerce mailer boxes, DTC shipping packaging, and branded unboxing.</em></p>
 
@@ -6435,7 +6435,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -6464,13 +6464,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Folding Boxes for Global Brands</h3>
 <p>ZprintPro folding boxes ship flat (saving 70% on shipping vs pre-assembled) and assemble in seconds at your facility. Standard tuck-end, auto-lock bottom, and straight tuck boxes cover most retail packaging needs — from cosmetics and electronics to food and pharmaceuticals. 350-400g white card or kraft with 4-color CMYK print, matte or gloss lamination, and optional foil accents. 100-box MOQ, 5-7 day production.</p>
@@ -6524,7 +6524,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Material Samples:</strong> Paper, lamination, and finish samples shipped via DHL for hands-on evaluation.</li>
 </ul>
 
-<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>internationally certified</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>quality-managed</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Folding boxes cover the broadest range of retail packaging needs. ZprintPro serves cosmetics and beauty (skincare, makeup, fragrance), pharmaceuticals (vitamins, supplements, OTC), food and beverage (tea, chocolate, snacks, dry goods), electronics (cables, accessories, small gadgets), retail apparel (folded clothing, accessories), candles and home goods (small décor, kitchenware), and DIY/craft brands (small parts, kits, supplies). For US-based brands, our 100-box MOQ supports small launches and pilot runs. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -6534,7 +6534,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is auto-lock bottom?</strong></summary><p>Auto-lock bottom (also called crash bottom) snaps together automatically when the box is opened — no manual folding required for the base. Ideal for high-volume e-commerce packing lines. Slightly more expensive but saves labor.</p></details>
 <details class="my-2"><summary><strong>Can I print inside the box?</strong></summary><p>Yes. Inside single or full-color print is available. Adds 1 day to production. Popular for branded pattern backgrounds and surprise reveals.</p></details>
 <details class="my-2"><summary><strong>What's the minimum order quantity?</strong></summary><p>100 boxes for standard sizes. 500 boxes for custom dieline designs (due to tooling setup). Volume discounts start at 1,000 (15% off).</p></details>
-<details class="my-2"><summary><strong>Are they food-safe?</strong></summary><p>Yes. Our 350-400g folding cartons pass FDA migration testing for indirect food contact. For direct food contact, FDA-compliant inner liners are available.</p></details>
+<details class="my-2"><summary><strong>Are they food-safe?</strong></summary><p>Yes. Our 350-400g folding cartons are tested for indirect food contact; compliance documentation is confirmed per order. For direct food contact, food-grade inner liners are available.</p></details>
 <details class="my-2"><summary><strong>Do you offer custom inserts?</strong></summary><p>Yes. EVA foam, paper pulp, molded fiber, and cardboard inserts are available. Custom die-cut inserts designed to fit your product perfectly.</p></details>
 
 <p><em>Printed in our Asia facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for folding cartons, retail packaging boxes, and e-commerce shipping solutions.</em></p>
@@ -6549,7 +6549,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -6578,13 +6578,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Rigid Boxes for Luxury Brands</h3>
 <p>ZprintPro rigid setup boxes deliver the ultimate luxury unboxing — pre-assembled, wrapped in premium paper, and built to last. Used by Apple's first-tier accessories, premium jewelry brands, and luxury spirits, our rigid boxes feature 800-1500gsm greyboard wrapped in art paper, specialty paper, fabric, or leatherette. Magnetic closures, ribbon pulls, and foil-stamped logos complete the experience. 250-box MOQ, 10-15 day production.</p>
@@ -6639,7 +6639,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Premium Proofing:</strong> Physical sample with all finishes applied before full production. DHL 2-4 day delivery.</li>
 </ul>
 
-<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>internationally certified</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>quality-managed</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Rigid boxes define the luxury tier of packaging. ZprintPro serves fine jewelry (engagement rings, watches, necklaces), premium spirits (single-malt whisky, cognac, champagne), luxury cosmetics (high-end skincare, designer fragrance), premium electronics (headphones, smartwatches), gourmet food (truffle collections, aged cheese, fine chocolate), corporate gifting (executive client gifts, awards), and limited-edition collectibles (artisan drops, signed editions). For US-based luxury brands, our 250-box MOQ supports limited drops and gift-with-purchase. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -11218,7 +11218,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -11247,13 +11247,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Three Binding Types Compared</h3>
 <p>Graduation yearbooks use 3 main binding types. The right choice depends on page count, budget, and intended use (display vs. archival keepsake).</p>
@@ -11378,7 +11378,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -11407,13 +11407,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Electronics Packaging Boxes for Secure Product Protection</h3>
 <p>ZprintPro's electronics packaging boxes are designed for packaging phones, earphones, chargers, and other 3C accessories. The outer box is constructed using 1200g greyboard laminated with art paper or specialty paper, providing a sturdy and durable structure. The inserts, including EVA foam trays, blister (PET/PVC), and molded pulp, are designed to secure products and absorb transport shock. Surface options such as gold foil, silver foil, spot UV, or soft-touch film enhance the visual appeal, while the magnetic flap structure improves the unboxing experience. We offer anti-static insert options to meet electronics protection standards. Our prepress process includes 3D structural rendering and die-cut confirmation, ensuring a tolerance of ≤0.5mm between the insert and the product.</p>
@@ -11464,7 +11464,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>Quality, Compliance, and Shipping</h3>
-<p>ZprintPro ensures top-quality printing with FSC-certified materials and internationally certified manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and quality-managed manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
     longDescriptionJa: `電子機器包裝箱をZprintProでご注文。1200gグレーボードにコート紙または特殊紙を貼り合わせ+内裝EVAフォームトレー・ブリスター・紙パルプモールドの3種類から選択。磁石式フタ構造で開閉体験向上。帯電防止内裝オプションで電子機器保護基準適合。3Cアクセサリー向けに最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、国際品質認証。</em></p>
@@ -11484,7 +11484,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
     <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
+    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可降解選項（落單時註明）</td><td>ESG 碳審計、社企、有機產品</td></tr>
   </tbody>
 </table>
 
@@ -11513,16 +11513,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材可選（落單時註明）、ISO 12647 色彩管理。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 10 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳平湖廠房出貨，特急交期以報價為準。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
 <details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳平湖廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Kraft Paper Packaging Boxes for Eco-Friendly Packaging</h3>
-<p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. These boxes are fully biodegradable and FSC-certified, making them ideal for organic food, artisan tea, handmade soap, and eco-food packaging. The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
+<p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. These boxes are fully eco and FSC-certified, making them ideal for organic food, artisan tea, handmade soap, and eco-food packaging. The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
 
 <h3>Material & GSM Specifications</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -11569,8 +11569,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>Quality, Compliance, and Shipping</h3>
-<p>ZprintPro ensures top-quality printing with FSC-certified materials and internationally certified manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the sign-up.</p>`,
-    longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証+完全生分解性。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包裝様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and quality-managed manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the sign-up.</p>`,
+    longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証紙（ご注文時指定）+完全生分解性はご注文時確認。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包裝様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、国際品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>

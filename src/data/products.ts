@@ -2984,7 +2984,7 @@ export const products: Product[] = [
     features: [
       '【食品級紙材】食品級紙材選項（以訂單確認）',
       '【350g／400g 紙板】高挺度，保護糕點與茶葉不變形',
-      '【PE／PLA 內層】防油防濕，可降解選項滿足環保需求',
+      '【PE／PLA 內層】防油防濕，環保選項（落單時註明）',
       '【窗口設計】PET 透明片或鏤空，展示內裝產品',
       '【燙金 LOGO】金／銀箔或局部 UV，提升品牌高級感',
       '【可變 QR Code】批次追溯與防偽，方便消費者查驗',
@@ -3182,7 +3182,7 @@ export const products: Product[] = [
     category: 'packaging',
     category_slug: 'packaging',
     name: '100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: '100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global | Gift Boxes & Custom Packaging', nameJa: '100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 | パッケージボックス・化粧箱', title_zh: '100 MOQ 快遞盒/飛機盒 · 跨境電商 FBA 標配 · DHL 2-4 天',
-    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping. Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。 2026 旺季重點: D2C 美妝配送、茶飲/手搖外送、訂閱盒盲盒、Kickstarter 集資送貨。',
+    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Built for e-commerce shipping. Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。 2026 旺季重點: D2C 美妝配送、茶飲/手搖外送、訂閱盒盲盒、Kickstarter 集資送貨。',
     features: [
       '電商出貨耐壓楞型可選',
       '滿版外印＋內側品牌訊息',

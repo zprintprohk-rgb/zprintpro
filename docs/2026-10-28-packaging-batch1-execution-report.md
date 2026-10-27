@@ -64,3 +64,17 @@
 - 线上复核（补漏后）：food/category ×3 locale FDA/SGS/即日打樣 归零确认
 - D4-D5 kraft 草案落位（速览表 kraft MOQ A=300 已授权）
 - K3 管理员按 K3-10 重存 dsh 凭据 → 恢复车道 → 新 GSC 导出 → 反馈环四指标首跑
+
+## 八、线上复核二轮补漏（2026-10-28 07:10-07:30，CF build 122524728843 已部署）
+
+**首轮补漏后探针仍有残留（en/ja 页残留比 zh 多）**，第二方法（探针上下文提取）定位到 **products-content.ts（9 个包装 SKU 块的详情页内容，完全不在台账 B1-B4 范围）** + ProductPageV9 全站服务标准区 + sku-seo 未覆盖字段：
+
+| 源 | 处数 | 清理内容 |
+|---|---|---|
+| `src/data/products-content.ts`（cosmetic/food/mailer/folding/rigid/magnetic/electronics/kraft/gang-run 9 块） | ~40 | en food 页 FDA=16/LFGB/SGS 断言（材质表 compliance 列 FDA/LFGB→Food-grade、pass FDA/SGS migration→条件化）、ja food FDA/LFGB/食品衛生法 认证清单→食品グレード（ご注文時確認）、internationally certified→quality-managed、可完全降解/生分解性/biodegradable/compostable→条件化、特急當日完工/最快24小時→以報價為準、編造数字（17 間電商/5,000 社/30% UP 等）登记移交 D15-19 |
+| `ProductPageV9.tsx` svcStdDesc | 1 | 全站 en PDP「2.3-day average dispatch, rush same-day available」→ fast dispatch with rush same-day available |
+| `product-faqs.ts` | 3 | packagingBoxesFAQs 即日打樣 问题文本（zh/en/ja）→ 打樣（answer 前轮已条件化） |
+| `products.ts` | 2 | food PE/PLA 可降解選項→環保選項（落單時註明）；mailer en desc Sturdy and durable→Built for e-commerce shipping |
+| `sku-seo-data.ts` | 9 | ja gang-run：¥3,800/無競合価格/8-15 日納期×3/40〜60%/15年以上100か国15,000クライアント（与拍板 1000+ 客户冲突）→条件化；zh food body：PLA 可降解內層/全部材質 FSC 認證→可選（落單時註明） |
+
+**归零确认**：food zh FDA 12→0、category zh FDA 19→0、gang-run 三语 40-60%/HK$0.03/8-15 天→0、ja 30個〜/SGS検査済み/食品衛生基準→0。**移交登记**：products-content 七簇块（贺卡/贴纸/纸袋/传单/海报/利是封/月历/菜单/学校/请柬）的 FDA/SGS/internationally certified/FSC 認證取得 + security-stickers FDA 21 CFR 药标 + Sticker Mule 对比 → 七簇域/D20-21。
