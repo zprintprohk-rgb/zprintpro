@@ -213,3 +213,45 @@
 ---
 
 > 本方案只盘点未改源：`src/` 零改动；未 commit/push 前与决策包同批处理（见执行报告）。
+
+---
+
+## Part F · 批 1 执行状态（2026-10-28，K3 05:44「指令按最优推荐执行」授权后）
+
+> 完整执行记录见 `docs/2026-10-28-packaging-batch1-execution-report.md`（commit `2412ac6f`）。本表为幂等标记（已清 ✓ / 本批未覆盖 →）。
+
+| 项 | 现值 | 状态 |
+|---|---|---|
+| B1-1 e-print 竞品对比（L84/L168/L169/L182） | 删除/重写（保留拼版免刀模費商业模式，去对家对比与 40-60%/HK$300-800） | ✓ |
+| B1-2/3 价格/交期 | 条件化「以報價為準」；food HK$2.5、100 個起（推荐值） | ✓ |
+| B1-5 打樣當日 | 删除（zh L144/164/185/186/191；en L279/298；ja L366/386/405） | ✓ |
+| B1-6/7 FSC/可降解/無塑化劑 | 环保纸材选项化（L123 zh、L345 ja）；FSC 保留「可选项」表述 | ✓ |
+| B1-13/14 抗壓/ISTA/清关 | 条件化「以訂單規格為準」；清关承诺删除（zh/en/ja 三语） | ✓ |
+| B1-18/19 FDA 断言（FAQ/nav） | 条件化/删除（L172 nav、L190 zh、L297 en、L404 ja、L411 ja） | ✓ |
+| B1-20 旺角打樣中心 | 条件化（zh L152、ja L374；同人誌域 L4004/4192 七簇移交） | ✓（包装域） |
+| B1-23 3D 模型/免費 5 天打樣 | 删除（L186 zh） | ✓ |
+| B1-27 nav FDA 标签 | 删除（L172） | ✓ |
+| B2-2 rigid en 2100-MOQ | 删除（sku-seo + CSV） | ✓ |
+| B2-17 mailer ja H1 英文 | 改日文 H1（TS L1130 + CSV） | ✓ |
+| B2-21 folding ja 100枚 | 枚→個（TS + CSV） | ✓ |
+| B2-22 無對手價/無競合 | 源头已无残留（双方法复核） | ✓（存量已清） |
+| B2-24 拼版 8-15 天 | 条件化「以報價為準」（zh/en desc+body、ja title） | ✓ |
+| B2-27 cosmetic 藥機法 features | products.ts 已删（P1-4）；sku-seo 无残留 | ✓ |
+| B2-29 fruit-label FDA/SGS | 同侪 9efc9da3 已清 TS；**CSV 10 单元格本批同步**（SGS/FDA/直接接觸/?起印） | ✓（CSV 补同步） |
+| B2-30/31 electronics 防靜電/公差 | 双方法复核无残留（TS+CSV） | ✓（存量已清） |
+| B2-32 white-card desc_zh 50-10,000 | 拍板后统一（D6-D7 zh 分工） | → |
+| B3-1 products.ts internationally certified | 本域 food(2983)/mailer(3185) 2 处已清；纸袋 5 + flyers/posters 2 处 = 七簇移交 | ✓（本域） |
+| B3-4 food title/desc FDA | 全清（title 改 HK$2.5 防油紙卡、desc 改食品級紙材以訂單確認） | ✓ |
+| B3-5 cosmetic features 藥機法 | 已删（P1-4） | ✓ |
+| B3-6 fruit-label title/features FDA | 已删（P1） | ✓ |
+| B4-1/2/3/4 price-2026/food/custom/kraft | 认证断言删 + 假统计删 + 50→100 对齐 + 价格条件化 | ✓ |
+| B4-6 gang-run 残片/40-60% | 40-60% 条件化（zh/en/ja）；型代断言/95% 待 D20-21 | ✓（部分） |
+| B4-7 cosmetics 假统计/FDA | 68%/45%/多年件/50 件起印已清；72%/48% 在 en/ja 版待 D20-21 | ✓（zh 已清） |
+| B4-8 baby food FDA/BPA-free | zh L371 已清；en/ja 版待 D20-21 | ✓（zh 已清） |
+| B4-10 tea 30 個/占位/24h 特急 | zh L182 已清；en/ja 版待 D20-21 | ✓（zh 已清） |
+| B4-11 custom-guide 假统计 | zh L131 已清（三处 重点摘要 + 關鍵洞察 ×2）；en/ja 版待 D20-21 | ✓（zh 已清） |
+| B4-12 ja「ZprintPro (ZprintPro)」 | 待 D20-21 | → |
+| 快遞盒/9大材質/食品級合規（L144/L553/L104 扩展） | zh 已清（e-print 76-87%/抗壓 80-120kg/FSC/500-多個/100 國家占位/FDA 175.300/總遷移量段） | ✓（zh 已清） |
+| category en/ja 全段 | ISTA/FSC/SGS/FDA/清關/40-60%/無料当日/自社工場直送 全清 | ✓ |
+
+**残留移交（非本批范围）**：七簇域（纸袋/flyers/posters/stickers/横幅/菜單/同人誌/药标/学校/海报）FDA 与认证断言；彩盒族 en body 8-15 days（corrugated/tuck-end/white-card，批 2 与 rigid 交期统一时处理）；gang-run ja title 混合中英（watch）；kraft blog 18,500 訂單數字来源（D22 审计）。
