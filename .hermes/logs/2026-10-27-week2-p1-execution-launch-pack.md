@@ -76,7 +76,7 @@
 - **文件**: `src/data/category-seo-content.ts` → paper-bags（zh-hk 段）`buyingGuide.paragraphs`
 - **插入点**: paragraphs 首段前新增「首屏直答」段（AEO 黄金法则 150 字内直接回答）
 - **文案**: BAG 包 §5（起印量 100 個統一 / 價格 HK$3-8・$5-12・$10-20・$6-15 分檔 / 尺寸含大袋基準 320×120×380 / 克重 120-200・200-300・280 / 手挽 5 種 / 免費數碼打樣 / 交期 3-5 工作天＋滿 HK$500 順豐 / 工藝燙金・UV・覆膜・擊凸）——**价格段须写「HK$3 起/個，按袋型分檔」**避免只覆盖 kraft 下限（数据卫生 §6）
-- **内链**: 袋型分工锚已登记（kraft/white-card/gift/eco/handle/large 6 锚已在 category 首屏）——不新增
+- **内链**: 袋型分工锚已登记（kraft/white-card/gift/eco/handle/large 6 锚已存在于 category↔6 PDP 双向，BAG 包 §3 双方法核）——不新增
 - **K3 依赖**: K3-7 裁决 §4（承重/FSC 优先）后同批治理 handle-bags H1「堅固手挽設計，承重能力強」与 eco H1「FSC 認證或再生紙」→ 1 src 批
 - **验收**: 线上 200 · 首屏 150 字含起印量+价格档 · 无「承重」「100%環保」绝对化残留（门童 #16 + 线上探针）
 
