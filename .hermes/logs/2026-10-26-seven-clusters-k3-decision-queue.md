@@ -85,6 +85,7 @@
 - **E1 small-batch 入链（2026-10-27）**: sticker-guide 采购段 → `/en/product/small-batch-stickers/` 单锚上线（origin=dfe5132f，02:13 push）；线上双方法渲染确认（我方 11/11 探针 + 对端 §2.9 独立验收）。
 - **攒批 push 15 commits（2026-10-27 02:13）**: CF build SUCCESS；P1 主 URL 线上 11/11 200（zh 纸袋/海报/传单、en small-batch/saddle/exercise、en doujin + ja C109、robots AI allow）。
 - **P1 五主 URL 数据包全就绪（02:0x）**: BAG-P1-08（纸袋 6 SKU）/ POSTER-P1-09（海报传单 10 SKU）/ STICKER-P1-10 + BOOK-P1-11（en）——真值表 + 采购答案草稿 + K3 flag 清单，**K3 拍板后当日可落 category 首屏直答**。
+- **周 2 启动执行包（2026-10-27 12:0x）**: `2026-10-27-week2-p1-execution-launch-pack.md`——23 带钱词 × 主 URL 落位缺口表（首页 6/23）+ 五页采购答案落地单（文件/入口/锚点/K3 门）+ **K3 决策速览表**（K3-1..7/9/10 每项一句话选项+推荐，拍板即解锁对应 §2 批）。
 - **基线复测 SOP 预演 PASS（02:0x）**: `analyze_seven_clusters.py` 冻结输入复跑输出字节级一致（JSON hash 与 HEAD blob 相同）。
 
 > 数据来源: 见各台账行；CF check-runs = api.github.com 公开接口 2026-10-26 21:3x / 2026-10-27 02:2x；线上探针 = Invoke-WebRequest 2026-10-27 02:1x-02:2x（UA Mozilla/5.0）。
