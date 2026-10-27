@@ -6384,14 +6384,14 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '拼版白卡彩盒(免刀模費) | 彩盒印刷 / 白卡盒 / 禮品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 彩盒印刷 500個起印 · 香港無對手價 · 智印港',
-    description: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '合版ホワイトカードボックス 1個 ¥4.4 から、固定型代不要、40-60% コスト削減、500個最低ロット、8-12 日納期、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
+    name: '拼版白卡彩盒(免刀模費) | 彩盒印刷 / 白卡盒 / 禮品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 彩盒印刷 500個起印 · 免刀模費 · 智印港',
+    description: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本更抵。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 個, 交期以報價為準。 適配行業: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Gang-run white card boxes with shared die-cut mold, no die-cut fee, lower cost, 500pc MOQ, lead time per quote, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. Best for: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '合版ホワイトカードボックス 固定型代不要、コスト削減、500個最低ロット、納期はご注文時に確認、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。 適合業種: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '拼版白卡彩盒 / 彩盒印刷 / 白卡盒訂製, 固定刀模共用, 免刀模費 + 免排版費, 成本更抵。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
     features: [
-      '【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%',
+      '【免刀模費】固定刀模共用, 拼版生產成本更抵',
       '【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡',
       '【3 種盒型】飛機盒 / 普通扣底盒 / 雙插盒, 8 檔標準尺寸(60x40x20 ~ 200x150x80mm)',
-      '【500-10,000 枚】湊版起印, 中小批量最優解',
-      '【8-15 天交期】湊版生產, 不接急件, 如實標註',
+      '【500-10,000 個】湊版起印, 中小批量最優解',
+      '【交期以報價為準】湊版生產, 不接急件, 如實標註',
       '【覆膜工藝】啞膜 / 光膜可選;銀卡類含印白墨 + 逆向 UV',
       '【加值工藝】可選燙金 / UV / 擊凸 / 貼膠片, 提升品牌質感',
     ],
@@ -6429,9 +6429,9 @@ export const products: Product[] = [
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja.webp' },
       alt: {
-        'zh-hk': '拼版白卡彩盒(免刀模費) - 固定刀模共用，免刀模費 + 免排版費，成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡)，3 種盒型 (飛機盒/扣底盒/雙插盒)，8 檔標準尺寸。500-10,000 枚，8-15 天交期。香港無對手價。',
-        en: 'Gang-Run White Card Boxes (No Die-Cut Fee) - Shared die-cut mold, no die-cut fee, no setup fee, 40-60% lower cost than custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, 8-15 day turnaround. Hong Kong zero-competition pricing.',
-        ja: 'Gang-Run White Card Boxes (No Die-Cut Fee) - 共有型代、型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。香港無競合価格。',
+        'zh-hk': '拼版白卡彩盒(免刀模費) - 固定刀模共用，免刀模費 + 免排版費，成本更抵。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡)，3 種盒型 (飛機盒/扣底盒/雙插盒)，8 檔標準尺寸。500-10,000 個，交期以報價為準。',
+        en: 'Gang-Run White Card Boxes (No Die-Cut Fee) - Shared die-cut mold, no die-cut fee, no setup fee, lower cost than custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, lead time per quote.',
+        ja: 'Gang-Run White Card Boxes (No Die-Cut Fee) - 共有型代、型代不要・版代不要、カスタム比コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、納期はご注文時に確認。',
       },
     },
   
