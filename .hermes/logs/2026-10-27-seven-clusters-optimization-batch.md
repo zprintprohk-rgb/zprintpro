@@ -141,3 +141,9 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - **30 天执行完整性矩阵** 2026-10-27-execution-completeness-matrix.md: 15 卡 + E1-E6 + J1 逐卡核对——无风险队列已空，剩余 = 纯 K3 拍板域 6 批 + 排期项（11-03/11-23）。
 - **线上复核（12:1x 双方法）**: 纸袋 category↔6 PDP 双向 6/6 PASS（纠正探针口径：white-card/gift/handle/large 不含 "paper-bags" 字样）；handle H1 承重 + eco H1 FSC 仍在线（K3-7 证据强化，队列已更新）。
 - **push**: 7 commits 本地（604566f0→822b079a，含对端 b56ba034）；后台任务 12:27 窗口推送中。
+### 10. 会话收尾（12:26）—— 推送移交与下会话验收指引
+- **待推送**: 8 commits（604566f0 → 本会话最后一 commit，含对端 b56ba034）。推送由后台任务 pwsh-4265f619c99d437c 在窗口（~12:28，自 40e1231e cf-check-run 11:57 + 30min）自动执行（fetch-guard + push），结果写 .hermes/_push-win-result.txt。
+- **下会话验收 3 步**（若结果文件已生成）: ① git fetch origin → git log -1 origin/main 确认新 head（非 40e1231e）② CF check-run on new head = completed/success ③ 线上探针 3 URL（paper-bags category / small-batch PDP / C109）200。
+- **本会话交付清单**: 周 2 启动执行包（23 词落位表 + 五页落地单 + K3 决策速览表）· 周 3 资产数据骨架 · P0 台账 K3-8 终局修正 + saddle 克重观察 · E1 7d 复查协议 · 执行完整性矩阵 · 带钱词 SSoT 三源核对 · K3 队列/报告全程更新。全部 docs-only，src 零改动（周末闸门 + K3 拍板域遵守）。
+- **待 K3**: 决策速览表（K3-1..7/9/10 每项一句话选项+推荐）→ 任一拍板即解锁对应 §2 批当日落地。
+- **排期**: 今晚 20:13/21:17 两 lane 四方验收（对端）· 11-02 周 2 启动 · 11-03 E1 7d 复查 · 11-23 同口径 28 天复测。
