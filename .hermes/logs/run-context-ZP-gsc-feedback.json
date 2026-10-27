@@ -1,11 +1,11 @@
 {
   "lane": "ZP-gsc-feedback",
-  "generated_at": "2026-10-26 20:13:01",
+  "generated_at": "2026-10-27 20:13:01",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "ddba9956586edce2",
-    "day": "2026-10-26",
+    "this_run_key": "aabde12b39bb6f5c",
+    "day": "2026-10-27",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -35,7 +35,7 @@
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=8"
+        "detail": "verdict=ATTENTION problems=7"
       },
       {
         "name": "lock_acquired",
@@ -46,9 +46,9 @@
   },
   "lock": {
     "lane": "ZP-gsc-feedback",
-    "pid": 7280,
-    "acquired_at": "2026-10-26 20:13:01",
-    "acquired_ts": 1793016781.7362843,
+    "pid": 1712,
+    "acquired_at": "2026-10-27 20:13:01",
+    "acquired_ts": 1793103182.086886,
     "host": "JEROME"
   },
   "previous_run": {
@@ -74,13 +74,13 @@
       "head": "07d53b90",
       "source": "lane-git-commit.py"
     },
-    "latest_report": ".hermes/logs/2026-10-15-ZP-gsc-feedback.md",
+    "latest_report": ".hermes/logs/2026-10-26-ZP-gsc-feedback.md",
     "delivered_files_from_report": [
-      ".hermes/logs/2026-10-15-ZP-gsc-feedback.md（本报告）",
-      ".hermes/logs/2026-10-15-gsc-suggested-src-fixes.md（FIX-1~FIX-13 状态更新 + 3 条新增线上实证）",
-      ".hermes/logs/2026-10-14-ZP-gsc-feedback.md（10-14 STALE 补记 · 闭合总线账本）",
-      ".hermes/industry-keyword-matrix.json（新增 `gsc_feedback_2026_10_15` block + `last_updated` / `last_updated_event` / `last_gsc_feedback_update` 3 处元数据，旧值以「前值(10-13):」保留）",
-      "GSC数据/index.json（补登 2026-10-15 档 ×12 · totalFiles 165→177 · **freshnessStatus STALE→FRESH（落盘日口径 0 天；档内数据日 10-12 = 龄 3 天）** + filesByDate/notes/actionRequired/stalenessNote 更新）"
+      "scripts/__pycache__/fetch_gsc_data.cpython-312.pyc",
+      "docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md",
+      "docs/2026-10-26-packaging-seo-aeo-geo-competitor-strategy.md",
+      "docs/2026-10-26-seven-clusters-seo-aeo-geo-global-strategy.md",
+      "docs/evidence/2026-10-26/"
     ]
   },
   "sibling_lanes": [
@@ -92,19 +92,17 @@
     },
     {
       "lane": "ZP-k3-review",
-      "status": "OK",
-      "report": "2026-10-26-ZP-k3-review.md",
+      "status": "STALE",
+      "report": null,
       "start": "07:10"
     }
   ],
   "retry_queue": [
     {
       "kind": "UNRESOLVED_DAY",
-      "day": "2026-10-24",
-      "status": "STALE",
-      "notes": [
-        "ran but no report file dated 2026-10-24"
-      ]
+      "day": "2026-10-26",
+      "status": "FAILED",
+      "notes": []
     }
   ],
   "instructions_to_lane": [

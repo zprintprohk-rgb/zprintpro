@@ -1,11 +1,11 @@
 {
   "lane": "ZP-daily-content",
-  "generated_at": "2026-10-26 21:17:02",
+  "generated_at": "2026-10-27 18:18:31",
   "repo": "F:\\zprintpro-nextjs",
   "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
   "idempotency": {
-    "this_run_key": "ee569c1ccb7f1494",
-    "day": "2026-10-26",
+    "this_run_key": "b937d57c4d2e5148",
+    "day": "2026-10-27",
     "rule": "key = sha256(lane|intent|target|day)[:16]; 消费者命中相同 key 即视为同一件事已处理 -> 跳过 (幂等)"
   },
   "preflight": {
@@ -35,7 +35,7 @@
       {
         "name": "lane_status_available",
         "ok": true,
-        "detail": "verdict=ATTENTION problems=8"
+        "detail": "verdict=ATTENTION problems=7"
       },
       {
         "name": "lock_acquired",
@@ -46,9 +46,9 @@
   },
   "lock": {
     "lane": "ZP-daily-content",
-    "pid": 30432,
-    "acquired_at": "2026-10-26 21:17:02",
-    "acquired_ts": 1793020622.9009585,
+    "pid": 26020,
+    "acquired_at": "2026-10-27 18:18:31",
+    "acquired_ts": 1793096311.1857657,
     "host": "JEROME"
   },
   "previous_run": {
@@ -91,8 +91,8 @@
     },
     {
       "lane": "ZP-k3-review",
-      "status": "OK",
-      "report": "2026-10-26-ZP-k3-review.md",
+      "status": "STALE",
+      "report": null,
       "start": "07:10"
     }
   ],
