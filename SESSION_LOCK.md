@@ -748,3 +748,10 @@
 | **验证** | tsc 54=基线 ✓ brand-lint A类0 ✓ 门童全绿（#4 ja 简体字形已修）✓ push-gate 两过（第二次被拦 15min 等待后过）✓ CF deploy PASS ×2 ✓ 线上探针：页脚 `ZP-OC-2610` ✓ / zh-hk waterproof-stickers `ZPQC-2610-ST` ✓ / en kraft-paper-bags `ZPQC-2610-PB` ✓ / ja saddle-stitch-booklets `ZPQC-2610-SSB` ✓ |
 | **push** | `cce4bf23`（12:46）+ `ffe0cf6e`（13:2x），两次均过机器闸 |
 | **遗留** | ① CF zone token 需 K3 生成（或手动开 Bot Fight Mode）② 轮换器接 monthly-matrix 待拍板 ③ hero 图未水印（保转化）④ `products.ts faqSchema` 确认为死数据，8 条英文指纹 QA 留存备未来接线 |
+
+## 声明区（2026-10-28 05:5x 追加）
+- **持有者**: deepseek hermes 会话（七簇 P1）
+- **意图**: STICKER-P1-10 出链侧补齐（en small-batch PDP body 加 2 条零声明自然锚 → sticker-guide / sticker-buying-guide；无风险内链类别，E1/J1 同款）
+- **写入范围**: src/data/sku-seo-data.ts（单行 body 字符串，2 锚）
+- **预计时长**: 10 min（commit+push 即释放）
+- **释放条件**: push 完成 + 线上探针确认锚渲染
