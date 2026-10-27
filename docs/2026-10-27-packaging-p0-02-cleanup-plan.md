@@ -9,6 +9,16 @@
 
 **状态字典**：`blocked`＝等 K3 真值拍板｜`needs-data`＝等业务证据｜`keep-approved`＝K3 8/19 已批保留（复核范围）｜`clean`＝已清/无需动作｜`audit-p2`＝D22-23 审计。
 
+**执行状态总览（2026-10-27 19:3x 三源复核）**：
+
+| 源 | 状态 | 说明 |
+|---|---|---|
+| sku-seo-data.ts（B2） | 🔶 部分已清 | 同侪 9efc9da3（18:38）已清 boxes/stickers FDA→食品級（0 残留）；**真值冲突项仍待 K3**；无值依赖清毒（B2-2/17/22/23/30/31 等）待批 1 |
+| category-seo-content.ts（B1） | 🔴 全项未动 | e-print 竞品对比/FDA/FSC/SGS/ISTA/清关承诺/导航 FDA 全部在线（L84-411），B1 全项待批 1 |
+| products.ts（B3） | 🔴 源头未清 | 「internationally certified」9 处（含 food/mailer 2 处本域）；food description FDA 源头仍在线 |
+| blog-data（B4） | 🔴 全项未动 | FDA 21 CFR/GB 4806/FSC/65%/60%/多個残片全部在线，D20-21 + 批 1 |
+| 线上 | 🔶 部分更新 | 18:38 push 后 build SUCCESS + deploy live（daily-content 报告）；food/rigid title·H1 已反映 sku-seo 清毒 |
+
 ---
 
 ## 0. 数据来源行（§0.23）
@@ -85,48 +95,53 @@
 
 ### B2 · `zprintpro-sku-seo-data.csv` → 生成器 → `sku-seo-data.ts`（拍板后改 CSV + 重跑 `scripts/csv-to-sku-seo.mjs`，禁手改派生）
 
-| # | SKU/字段 | 现值 | 动作 | 关联 claim |
-|---|---|---|---|---|
-| B2-1 | rigid en H1 | 「250+」 | **拍板后按真值改**（title 过门检） | MOQ-001 |
-| B2-2 | rigid en description | 「2100-MOQ」（残片） | **删除残句**（无值依赖，拍板后第一批） | MOQ-001 |
-| B2-3 | rigid en description vs body | free ship $100 vs $99 | **统一**（拍板后） | PR-007 |
-| B2-4 | rigid ja title | 「上製本箱（リジッドボックス）」 | **D11-D12 以「貼り箱（リジッドボックス）」重写** | SB-006 |
-| B2-5 | rigid ja/zh H1 | 泛企业文案 | **D11-D12 重写为产品 BLUF** | SB-006 |
-| B2-6 | rigid zh title | 「HK$4.5起」 | **拍板后统一**（HK$8-42 vs 4.5） | PR-002 |
-| B2-7 | food zh H1 | 「FDA 食品級」 | **删除 FDA 断言**（拍板后；D6-D7 同步） | CER-001 |
-| B2-8 | food zh title | 「HK$2.5」vs products.ts「HK$4」 | **拍板后统一** | PR-001 |
-| B2-9 | food ja H1 | 「FDA食品グレード」 | **删除 FDA 断言** | CER-001 |
-| B2-10 | food ×3 imageAlt | 「FDA食品級/FDA Food-Grade」 | **删除 FDA 断言** | CER-001 |
-| B2-11 | kraft zh H1 | 「250-350g」 | **拍板后对齐 products.ts SSoT**（300-350g 待业务确认） | gsm 冲突 |
-| B2-12 | kraft ja H1 | 「エコ FSC認証」 | **删除 エコ/FSC 断言**（D4-D5 kraft 重写时） | CER-002 |
-| B2-13 | kraft ja body | 「100枚から対応/100個〜即日発送」 | **枚→個 修正 + 删除即日発送**（D4-D5） | MOQ-004/SB-008/LT-006 |
-| B2-14 | kraft en body | 「100-piece minimum」vs title 300 | **拍板后统一** | MOQ-004 |
-| B2-15 | kraft zh desc | 「48 小時快遞」 | **条件化/删除**（口径未拍板） | LT-006 |
-| B2-16 | kraft features | 「完全生物降解 90 天／無塑化劑殘留」 | **删除或加标准限定**（ASTM/ISO 证据前） | PF2-005 |
-| B2-17 | mailer ja H1 | 「Sturdy and durable」（英文） | **重写自然日语**（缺陷修复，拍板后第一批） | SB-007 |
-| B2-18 | mailer en description vs body | $100 vs $99 | **统一** | PR-008 |
-| B2-19 | mailer ja desc | 「7-10営業日」vs body 3-5 | **拍板后统一** | LT-002 |
-| B2-20 | folding zh H1/body | 「80cm 跌落測試 5kg 不開口」 | **条件化/删除**（测试报告前） | PF2-001 |
-| B2-21 | folding ja | 「100枚〜」 | **枚→個 修正** | SB-008 |
-| B2-22 | gang-run zh/ja | 「香港無對手價/香港無競合価格」 | **删除**（无证据竞品断言） | SB-004 |
-| B2-23 | gang-run en body | 「internationally certified factory / decade / global clients」 | **删除** | CER-007 |
-| B2-24 | gang-run | zh 8-15 vs en/ja 8-12 天 | **拍板后统一** | LT-003 |
-| B2-25 | gang-run ja | ¥4.4 vs ¥3,800/500 | **拍板后统一** | PR-005 |
-| B2-26 | gang-run en | free ship $500 vs $99 | **拍板后统一** | PR-006 |
-| B2-27 | cosmetic zh features | 「藥機法/FDA 21 CFR/EU 1223/2013 合規」 | **删除**（合规文件前） | CER-004 |
-| B2-28 | cosmetic en body | HK$8-65/pc（en 页用 HK$） | **币种统一**（watch） | PR-011 |
-| B2-29 | fruit-food-label | 「FDA 食品級/SGS 通過/可直接接觸食品/0-4°C」 | **删除**（逐条证据前） | FC-001/004, CER-001 |
-| B2-30 | electronics en | 「防靜電符合電子產品防護標準」 | **删除**（PKG-P1-EN-01 明确禁止虚构 ESD） | PF2-006 |
-| B2-31 | electronics zh | 「公差 ≤0.5mm」 | **条件化/删除** | PF2-007 |
-| B2-32 | white-card desc_zh | 「50-10,000 件」vs minQ 500 | **拍板后统一**（products.ts 源头） | MOQ-006 |
+> **2026-10-27 18:38 同侪 9efc9da3（order 28b/28a）已清 sku-seo-data.ts 的 boxes/stickers FDA 断言**（FDA→食品級，当前 0 残留）——原 B2-7/9/10/29 的 **sku-seo 部分标记 ✅ 已完成**；**真值冲突（MOQ/价格/交期）仍待 K3 拍板后执行**；products.ts 源头残留见 B3 扩展。
+
+| # | SKU/字段 | 现值 | 动作 | 状态 | 关联 claim |
+|---|---|---|---|---|---|
+| B2-1 | rigid en H1 | 「250+」 | **拍板后按真值改**（title 过门检） | 待 K3 | MOQ-001 |
+| B2-2 | rigid en description | 「2100-MOQ」（残片） | **删除残句**（无值依赖，拍板后第一批） | 待执行 | MOQ-001 |
+| B2-3 | rigid en description vs body | free ship $100 vs $99 | **统一**（拍板后） | 待 K3 | PR-007 |
+| B2-4 | rigid ja title | 「上製本箱（リジッドボックス）」 | **D11-D12 以「貼り箱（リジッドボックス）」重写** | D11-D12 | SB-006 |
+| B2-5 | rigid ja/zh H1 | 泛企业文案 | **D11-D12 重写为产品 BLUF** | D11-D12 | SB-006 |
+| B2-6 | rigid zh title | 「HK$4.5起」 | **拍板后统一**（HK$8-42 vs 4.5） | 待 K3 | PR-002 |
+| B2-7 | food zh H1 | 「FDA 食品級」→「食品級」 | ✅ **已完成**（9efc9da3；products.ts 源头见 B3-4） | ✅ | CER-001 |
+| B2-8 | food zh title | 「HK$2.5」vs products.ts「HK$4」 | **拍板后统一**（title 已重写，价格口径仍冲突） | 待 K3 | PR-001 |
+| B2-9 | food ja H1 | 「FDA食品グレード」→「食品グレード・防油内層」 | ✅ **已完成**（9efc9da3） | ✅ | CER-001 |
+| B2-10 | food ×3 imageAlt | 「FDA食品級」→ 0 残留 | ✅ **已完成**（9efc9da3） | ✅ | CER-001 |
+| B2-11 | kraft zh H1 | 「250-350g」 | **拍板后对齐 products.ts SSoT**（300-350g 待业务确认） | 待 K3 | gsm 冲突 |
+| B2-12 | kraft ja H1 | 「エコ FSC認証」 | **删除 エコ/FSC 断言**（D4-D5 kraft 重写时） | D4-D5 | CER-002 |
+| B2-13 | kraft ja body | 「100枚から対応/100個〜即日発送」 | **枚→個 修正 + 删除即日発送**（D4-D5） | D4-D5 | MOQ-004/SB-008/LT-006 |
+| B2-14 | kraft en body | 「100-piece minimum」vs title 300 | **拍板后统一** | 待 K3 | MOQ-004 |
+| B2-15 | kraft zh desc | 「48 小時快遞」 | **条件化/删除**（口径未拍板） | 待 K3 | LT-006 |
+| B2-16 | kraft features | 「完全生物降解 90 天／無塑化劑殘留」 | **删除或加标准限定**（ASTM/ISO 证据前） | needs-data | PF2-005 |
+| B2-17 | mailer ja H1 | 「Sturdy and durable」（英文） | **重写自然日语**（缺陷修复，拍板后第一批） | 待执行 | SB-007 |
+| B2-18 | mailer en description vs body | $100 vs $99 | **统一** | 待 K3 | PR-008 |
+| B2-19 | mailer ja desc | 「7-10営業日」vs body 3-5 | **拍板后统一** | 待 K3 | LT-002 |
+| B2-20 | folding zh H1/body | 「80cm 跌落測試 5kg 不開口」 | **条件化/删除**（测试报告前） | needs-data | PF2-001 |
+| B2-21 | folding ja | 「100枚〜」 | **枚→個 修正** | 待执行 | SB-008 |
+| B2-22 | gang-run zh/ja | 「香港無對手價/香港無競合価格」 | **删除**（无证据竞品断言） | 待执行 | SB-004 |
+| B2-23 | gang-run en body | 「internationally certified factory / decade / global clients」 | **删除** | 待执行 | CER-007 |
+| B2-24 | gang-run | zh 8-15 vs en/ja 8-12 天 | **拍板后统一** | 待 K3 | LT-003 |
+| B2-25 | gang-run ja | ¥4.4 vs ¥3,800/500 | **拍板后统一** | 待 K3 | PR-005 |
+| B2-26 | gang-run en | free ship $500 vs $99 | **拍板后统一** | 待 K3 | PR-006 |
+| B2-27 | cosmetic zh features | 「藥機法/FDA 21 CFR/EU 1223/2013 合規」 | **删除**（合规文件前；sku-seo title FDA 已清，features 需复核） | 待复核 | CER-004 |
+| B2-28 | cosmetic en body | HK$8-65/pc（en 页用 HK$） | **币种统一**（watch） | watch | PR-011 |
+| B2-29 | fruit-food-label | 「FDA 食品級/SGS 通過/直接接觸」→「食品接觸安全」+ 食品級膠水 | ✅ **已完成**（9efc9da3）；products.ts 源头见 B3-4 | ✅ | FC-001/004, CER-001 |
+| B2-30 | electronics en | 「防靜電符合電子產品防護標準」 | **删除**（PKG-P1-EN-01 明确禁止虚构 ESD） | 待执行 | PF2-006 |
+| B2-31 | electronics zh | 「公差 ≤0.5mm」 | **条件化/删除** | 待执行 | PF2-007 |
+| B2-32 | white-card desc_zh | 「50-10,000 件」vs minQ 500 | **拍板后统一**（products.ts 源头） | 待 K3 | MOQ-006 |
 
 ### B3 · `src/data/products.ts`（P0-01 被点名源头，仅登记；拍板后执行）
 
+> **2026-10-27 复核修正**：「internationally certified quality management system」实际残留 **9 处**（台账原登记 3 处——双方法复核：git grep + read 工具逐行确认）。其中包装盒域 = food-boxes / mailer-boxes 2 处（本策略执行）；纸袋族 5 处 + flyers/posters 2 处属七簇策略域（协同或由对端执行，先登记不越域）。另 food description_zh「FDA級食品接觸安全材質」源头仍在（sku-seo 已清，源头未清）。
+
 | # | SKU | 现值 | 动作 | 关联 claim |
 |---|---|---|---|---|
-| B3-1 | food/cosmetic/mailer descriptionEn | 「internationally certified quality management system」×3 | **删除** | CER-007 |
+| B3-1 | products.ts「internationally certified quality management system」**9 处**：kraft-paper-bags(1365)/gift-bags(1555)/eco-paper-bags(1650)/handle-bags(1749)/jumbo-bags(1843)/a4-flyers(1917)/a1-posters(2550)/food-boxes(2983)/mailer-boxes(3185) | 无证认证断言 | **删除**；本域先清 food/mailer 2 处，纸袋/flyers/posters 交七簇会话 | CER-007 |
 | B3-2 | rigid title_zh HK$4.5 / food title_zh HK$4 / kraft price_range HK$1.5-1000 / white-card basePrice=129 | 冲突值 | **拍板后统一** | PR-001~004 |
 | B3-3 | kraft variables 100 vs minQuantity 300 | 冲突值 | **拍板后统一** | MOQ-009 |
+| B3-4 | food description_zh「FDA級食品接觸安全材質」＋ food descriptionEn「Food-grade material, safe」 | **FDA 源头残留**（sku-seo 已清） | **删除 FDA 断言**，改「食品級紙材（以訂單確認）」 | CER-001/FC-001 |
 
 ### B4 · 博客源数据（`blog-data/*.json` + `blog-posts.ts`；D20-21 全量清毒预排 + P0-02 即时项）
 
