@@ -37,7 +37,10 @@
 
 ## 收尾状态
 
-- push: 本次改动 commit `9efc9da3` 本地; 上次 push a2832ff7 @ 17:08 → 30min 硬下限满足（>60min）+ 攒批达标（src 行为修复 1 件 + 报告 1 件）→ **已随本报告同批推送**（见下）
-- 同侪并发: 今日同侪 8 commits（docs/K3 域: k3-7/k3-8 台账/E1/E4 完整性矩阵/geo 探针 kit/年賀状 A-B 包）; src 静默 16h（最后写入 01:37 已 commit）; lane.lock 由本 lane 持有（preflight 18:18 acquire）→ 收尾释放
-- 工具脚本（untracked 审计证据）: .hermes/_r28b_dump/_r28b_dump2/_r28b_recon/_r28b_fix_20261027.*（同 138 文件 _b1c* 先例）· 前置备份: .hermes/_bak-sku-seo-before-stickers-20261027.ts（已 commit）
-- 旧 ZP-daily-content 21:17 Windows 任务 10-26 21:17 仍触发过一次（preflight 生成 run-context 但无总线记录）— 已列入 request_human（管理员禁用）
+- push: **已推送** — 18:38 `b9feaf46..9a031bb5 main -> main`（链: 9efc9da3[src] → b9feaf46[同侪预检 docs] → 9a031bb5[本批 docs]）; 距上一可观测 push a2832ff7@17:08 满足 30min 硬下限 + 攒批达标; 同侪 18:37:46 的 b9feaf46 建在我 9efc9da3 之上, 历史线性无冲突
+- **CF Pages build**: 新 push 触发 run **122141676242**（verify-deploy @18:41 = in_progress, 待复查; 10-26 ef3140ac 失败批已被本 push 重新触发, 结果另行确认）
+- lane.lock: **已释放**（18:41, 我的锁 pid 26020, RELEASE_EXIT=0）
+- **同侪 18:3x 预检误判披露**: 同侪 readiness-check 文档判定「18:18 harness 崩溃孤儿锁」— 实为本 lane 运行中（其观察时点 18:34 早于本批总线记录 18:37 落盘, pid 已死属 preflight 正常退出）; 同侪处置正确（禁代删, 留待 3600s 陈旧规则）; 本批已于 18:38 推送, 锁 18:41 释放, 今晚 20:13/21:17 两 lane 无需陈旧接管
+- 同侪并发: 今日同侪 9 commits（docs/K3 域 + 预检）; src 静默 16h（最后写入 01:37 已 commit）; 无文件冲突
+- 工具脚本（untracked 审计证据）: .hermes/_r28b_dump/_r28b_dump2/_r28b_recon/_r28b_fix_20261027.*（同 138 文件 _b1c* 先例）· 前置备份: .hermes/_bak-sku-seo-before-stickers-20261027.ts（已 commit 于 9a031bb5）
+- 旧 ZP-daily-content 21:17 Windows 任务 **仍 Enabled**（同侪预检确认 Next Run 10-27 21:17）— request_human: 需管理员禁用
