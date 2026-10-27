@@ -635,9 +635,9 @@ const lpTeaBeverageGiftBox: BlogPostMeta = {
     ja: '茶・ドリンクギフトボックス印刷ガイド：リーフティ | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '手搖飲品店、茶葉電商、中式茶禮盒品牌老闆必睇。一個有質感的茶飲品牌禮盒決定客戶回購及節日送禮首選。智印港為香港本地及跨境茶飲品牌提供 100-50,000 個食品級內襯禮盒定制,FDA 認證紙材,5-10 個工作天交付。',
-    en: 'Bubble tea shops, loose-leaf tea e-commerce, and Chinese tea gift box brand owners — a premium tea gift box decides repeat purchase and seasonal gifting. ZprintPro supplies 100-50,000 piece FDA-certified food-grade inner liner gift boxes, 5-10 working day delivery from Asia factory.',
-    ja: 'タピオカ店、リーフティー EC、中華茶ギフトボックスブランドオーナー様へ。上質感ある茶ギフトボックスがリピートと季節ギフトを決める。FDA 認証食品グレード内装 100-50,000個小〜大ロット、5-10営業日納品。',
+    'zh-hk': '手搖飲品店、茶葉電商、中式茶禮盒品牌老闆必睇。一個有質感的茶飲品牌禮盒決定客戶回購及節日送禮首選。智印港為香港本地及跨境茶飲品牌提供 100-50,000 個食品級內襯禮盒定制,食品級紙材（以訂單確認）。',
+    en: 'Bubble tea shops, loose-leaf tea e-commerce, and Chinese tea gift box brand owners — a premium tea gift box decides repeat purchase and seasonal gifting. ZprintPro supplies 100-50,000 piece food-grade inner liner gift boxes (material confirmed per order).',
+    ja: 'タピオカ店、リーフティー EC、中華茶ギフトボックスブランドオーナー様へ。上質感ある茶ギフトボックスがリピートと季節ギフトを決める。食品グレード内装 100-50,000個小〜大ロット（材料はご注文時に確認）。',
   },
 };
 
@@ -1137,7 +1137,7 @@ const lpFoldingBoxCosmetics: BlogPostMeta = {
     ja: '折り畳み箱 カスタム ガイド · 化粧品・スキンケア | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '美妝護膚品牌、面膜品牌、精華液品牌、口紅品牌、彩妝品牌，手作護膚品品牌必睇。300g 牛卡 / 350g 白卡 / 400g 雙面白卡 / 300g 再生紙 / 350g 黑卡 5 款折疊盒材質,FSC 認證 + 大豆油墨 + 可回收標誌全套。',
+    'zh-hk': '美妝護膚品牌、面膜品牌、精華液品牌、口紅品牌、彩妝品牌，手作護膚品品牌必睇。300g 牛卡 / 350g 白卡 / 400g 雙面白卡 / 300g 再生紙 / 350g 黑卡 5 款折疊盒材質,大豆油墨選項 + 可回收標誌全套。',
     en: 'US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials — 300gsm kraft / 350gsm white card / 400gsm duplex / 300gsm recycled / 350gsm black card. FSC-certified + soy ink + recyclable mark.',
     ja: '日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。',
   },
@@ -1727,9 +1727,9 @@ const lpKraftPaperBoxTypesComparison2026: BlogPostMeta = {
     ja: '8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs ブック vs ドロワー vs ショルダー | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '8 大盒型 (牛皮紙盒 / 坑盒 / 彩盒 / 禮盒 / 飛機盒 / 書型盒 / 抽屜盒 / 天地盒) 5 維度 (結構 / 厚度 / 耐用度 / 單價 / 適用場景) 全對比. 100 個起印 HK$2.5/個起, FDA 21 CFR 175.300 + EU REACH + FSC 4 大認證, 智印港 2025-2026 年 18,500 訂單實證, 8 步選購流程 + 10 內鏈 + 30 秒 WhatsApp 報價.',
-    en: '8 box types 5-dimension comparison (structure / thickness / durability / unit price / use case). 100 MOQ from $0.32 USD/pc, FDA 21 CFR 175.300 + EU REACH + FSC 4 certifications, ZprintPro 18,500 orders 2025-2026, 8-step flow + 10 internal links + 30s WhatsApp quote.',
-    ja: '8 種ボックス 5 軸比較 (構造 / 厚み / 耐久性 / 単価 / 適用シーン). 100 個〜 ¥42/個〜, FDA 21 CFR 175.300 + EU REACH + FSC 4 大認証, ZprintPro 2025-2026 年 18,500 件実績, 8 ステップ発注フロー + 10 内部リンク + 30 秒 WhatsApp 見積.',
+    'zh-hk': '8 大盒型 (牛皮紙盒 / 坑盒 / 彩盒 / 禮盒 / 飛機盒 / 書型盒 / 抽屜盒 / 天地盒) 5 維度 (結構 / 厚度 / 耐用度 / 單價 / 適用場景) 全對比. 100 個起印 HK$2.5/個起, 食品級・環保紙材可選, 智印港 2025-2026 年 18,500 訂單實證, 8 步選購流程 + 10 內鏈 + 30 秒 WhatsApp 報價.',
+    en: '8 box types 5-dimension comparison (structure / thickness / durability / unit price / use case). 100 MOQ from $0.32 USD/pc, food-grade and eco paper options, ZprintPro 18,500 orders 2025-2026, 8-step flow + 10 internal links + 30s WhatsApp quote.',
+    ja: '8 種ボックス 5 軸比較 (構造 / 厚み / 耐久性 / 単価 / 適用シーン). 100 個〜 ¥42/個〜, 食品グレード・エコ紙材選択可, ZprintPro 2025-2026 年 18,500 件実績, 8 ステップ発注フロー + 10 内部リンク + 30 秒 WhatsApp 見積.',
   },
   targetKeywords: {
     primary: '牛皮紙盒',
@@ -1927,8 +1927,8 @@ const lpPackagingBoxPrice2026: BlogPostMeta = {
     ja: 'パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '2026 包裝盒印刷價格：精裝盒 / 摺盒 / 快遞盒 / 瓦楞盒。500/1000/5000 個階梯報價、4 種紙材、4 種工藝升級、FDA 21 CFR 食品級、FSC 認證。100 個起印，30 秒 AI 報價。',
-    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, FDA 21 CFR food-safe, FSC-certified, 100 MOQ.',
+    'zh-hk': '2026 包裝盒印刷價格：精裝盒 / 摺盒 / 快遞盒 / 瓦楞盒。500/1000/5000 個階梯報價、4 種紙材、4 種工藝升級、食品級・環保紙材可選。100 個起印，30 秒 AI 報價。',
+    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, food-grade and eco paper options, 100 MOQ.',
     ja: 'パッケージ箱印刷 100 個〜。2026 年実勢価格：段ボール 500 個 ¥120-220/個、カラー箱 1000 個 ¥180-300/個、ギフト箱 5000 個 ¥370-590/個。4 大コスト要因、5 種用紙、4 FAQ、WhatsApp 30 秒見積。',
   },
 };
