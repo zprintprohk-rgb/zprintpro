@@ -139,9 +139,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'beauty',
       scenarios: {
-        'zh-hk': ['磁吸翻蓋化妝品盒 · 4 種盒型', '燙金 LOGO + 內托定制', '100 個起印 · FDA 標準紙可選'],
-        en: ['Magnetic flip cosmetic box · 4 styles', 'Foil logo + custom insert tray', 'From 100 units · FDA-standard paper optional'],
-        ja: ['磁石式化粧品箱・4種の箱型', '箔押しロゴ + 内トレイカスタム', '100個から・FDA基準紙は選択可'],
+        'zh-hk': ['磁吸翻蓋化妝品盒 · 4 種盒型', '燙金 LOGO + 內托定制', '100 個起印 · 食品級紙材可選'],
+        en: ['Magnetic flip cosmetic box · 4 styles', 'Foil logo + custom insert tray', 'From 100 units · food-grade paper options'],
+        ja: ['磁石式化粧品箱・4種の箱型', '箔押しロゴ + 内トレイカスタム', '100個から・食品グレード紙は選択可'],
       },
       priority: 0, tier: 'A',
     },

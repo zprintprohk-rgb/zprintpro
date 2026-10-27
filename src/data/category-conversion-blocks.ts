@@ -532,7 +532,7 @@ categoryConversionBlocks['packaging:zh-hk'] = {
   "category": "packaging",
   "locale": "zh-hk",
   "title": "包裝盒訂製｜100個起印 免刀模費｜香港B2B定制包裝方案",
-  "metaDescription": "香港包裝盒訂製專家，100個起印低至HK$0.03/個，拼版免刀模費，FDA食品級+FSC認證可選。30秒AI即時報價，立即WhatsApp查詢：8619880851334",
+  "metaDescription": "香港包裝盒訂製專家，100個起印，拼版免刀模費，食品級紙材可選。30秒AI即時報價，立即WhatsApp查詢：8619880851334",
   "quickAnswers": [
     {
       "q": "包裝盒訂製最少要做幾多個？",
@@ -540,15 +540,15 @@ categoryConversionBlocks['packaging:zh-hk'] = {
     },
     {
       "q": "訂製包裝盒仲使唔使畀刀模費？",
-      "a": "拼版彩盒免刀模費，對比傳統印刷廠HK$300-800刀模費，100個起都可以開新盒，慳返開模成本。"
+      "a": "拼版彩盒免刀模費，100個起都可以開新盒，慳返開模成本。"
     },
     {
       "q": "由報價到交貨大概要幾耐？",
-      "a": "30秒AI即時報價，標準盒型3-5個工作天、拼版8-15天生產，香港本地1-2個工作天順豐直送，DHL全球2-4日送到。"
+      "a": "30秒AI即時報價，標準盒型3-5個工作天、拼版交期以報價為準，香港本地1-2個工作天順豐直送，DHL全球2-4日送到。"
     },
     {
       "q": "食品包裝印刷有咩認證要求？",
-      "a": "必須用食品級紙材加環保油墨選項（落單時註明），FDA認可（間接食品接觸）加FSC認證紙，可出SGS檢測文件；烘焙、茶葉、保健品盒100個起印，防潮處理同QR碼溯源都可以安排。"
+      "a": "必須用食品級紙材加環保油墨選項（落單時註明），合規文件以訂單確認；烘焙、茶葉、保健品盒100個起印，防潮處理同QR碼溯源都可以安排。"
     }
   ],
   "socialProof": [
@@ -561,8 +561,8 @@ categoryConversionBlocks['packaging:zh-hk'] = {
       "label": "全行業最低起印量"
     },
     {
-      "stat": "HK$0.03/個起",
-      "label": "白卡彩盒拼版價"
+      "stat": "免刀模費",
+      "label": "白卡彩盒拼版方案"
     },
     {
       "stat": "5大場景",
@@ -586,7 +586,7 @@ categoryConversionBlocks['packaging:zh-hk'] = {
       ],
       [
         "刀模費用",
-        "HK$300-800/款",
+        "按款式收費",
         "個別款式豁免",
         "拼版彩盒全免刀模費"
       ],
@@ -594,7 +594,7 @@ categoryConversionBlocks['packaging:zh-hk'] = {
         "交貨時間",
         "15-30工作日",
         "7-20工作日",
-        "8-15天，香港順豐1-2日送到"
+        "交期以報價為準，香港順豐1-2日送到"
       ],
       [
         "專人跟單",
@@ -628,7 +628,7 @@ categoryConversionBlocks['packaging:zh-hk'] = {
       },
       {
         "title": "批量生產",
-        "desc": "8-15天廠房生產，全程QC把關"
+        "desc": "廠房生產，交期以報價為準，全程QC把關"
       },
       {
         "title": "出貨驗貨",
@@ -657,11 +657,11 @@ categoryConversionBlocks['packaging:zh-hk'] = {
   "newFaqs": [
     {
       "q": "我哋係初創品牌，第一次做包裝盒應該點揀？",
-      "a": "建議由100個小批量試產開始，白卡彩盒低至HK$0.03/個仲要免刀模費，可以測試市場反應先再決定補貨，風險低好多。"
+      "a": "建議由100個小批量試產開始，白卡彩盒免刀模費，可以測試市場反應先再決定補貨，風險低好多。"
     },
     {
       "q": "做食品包裝有冇相關認證？",
-      "a": "我哋提供FDA食品級認證同FSC森林認證物料可選，適合餐飲外賣、零食、保健品等食品接觸類包裝，合規安全。"
+      "a": "我哋提供食品級紙材同環保紙材選項（落單時註明），適合餐飲外賣、零食、保健品等食品接觸類包裝。"
     },
     {
       "q": "包裝盒有邊幾款盒型同尺寸可以揀？",
@@ -669,7 +669,7 @@ categoryConversionBlocks['packaging:zh-hk'] = {
     },
     {
       "q": "跨境電商賣家點樣慳包裝成本？",
-      "a": "用100-10K彈性MOQ方案，細批量測試爆品、大批量補貨備用，配合拼版免刀模費政策，整體成本比傳統印刷廠低30%以上。"
+      "a": "用100-10K彈性MOQ方案，細批量測試爆品、大批量補貨備用，配合拼版免刀模費政策，整體成本更抵。"
     }
   ]
 };
@@ -678,7 +678,7 @@ categoryConversionBlocks['packaging:en'] = {
   "category": "packaging",
   "locale": "en",
   "title": "Custom Packaging Boxes | 100 MOQ, No Die Cut Fee | B2B Packaging Solutions",
-  "metaDescription": "Premium custom packaging boxes from 100 pcs starting at HK$0.03 each. No die-cut fee on gang-run orders, FDA & FSC-certified options. Get instant quote & WhatsApp us: +8619880851334",
+  "metaDescription": "Premium custom packaging boxes from 100 pcs. No die-cut fee on gang-run orders, food-grade paper options. Get instant quote & WhatsApp us: +8619880851334",
   "quickAnswers": [
     {
       "q": "What's the minimum order for custom packaging boxes?",
@@ -686,11 +686,11 @@ categoryConversionBlocks['packaging:en'] = {
     },
     {
       "q": "Do I have to pay die-cut fees for custom box shapes?",
-      "a": "Gang-run printed boxes include FREE die-cut fees, saving you HK$300-800 compared to traditional printers. Even 100-piece orders qualify for custom box shapes."
+      "a": "Gang-run printed boxes include FREE die-cut fees. Even 100-piece orders qualify for custom box shapes."
     },
     {
       "q": "How long does it take from quote to delivery?",
-      "a": "30-second AI instant quote, 8-15 day production, 1-2 working days local SF Express in Hong Kong, and 2-4 days worldwide via DHL."
+      "a": "30-second AI instant quote, production lead time confirmed per order, 1-2 working days local SF Express in Hong Kong, and 2-4 days worldwide via DHL."
     }
   ],
   "socialProof": [
@@ -703,8 +703,8 @@ categoryConversionBlocks['packaging:en'] = {
       "label": "Industry-low minimum order"
     },
     {
-      "stat": "From HK$0.03",
-      "label": "White card colour box price"
+      "stat": "No die-cut fee",
+      "label": "Gang-run colour boxes"
     },
     {
       "stat": "5 sectors",
@@ -728,7 +728,7 @@ categoryConversionBlocks['packaging:en'] = {
       ],
       [
         "Die-Cut Fee",
-        "HK$300 - 800 per design",
+        "Charged per design",
         "Waived on selected SKUs only",
         "Free on all gang-run colour boxes"
       ],
@@ -736,7 +736,7 @@ categoryConversionBlocks['packaging:en'] = {
         "Lead Time",
         "15 - 30 working days",
         "7 - 20 working days",
-        "8 - 15 days + 1-2 day SF Express in HK"
+        "Lead time per quote + 1-2 day SF Express in HK"
       ],
       [
         "Account Support",
@@ -770,7 +770,7 @@ categoryConversionBlocks['packaging:en'] = {
       },
       {
         "title": "Bulk Production",
-        "desc": "8-15 day factory run with full QC checkpoints"
+        "desc": "Factory run with full QC checkpoints (lead time per order)"
       },
       {
         "title": "Pre-Shipment Inspection",
@@ -799,11 +799,11 @@ categoryConversionBlocks['packaging:en'] = {
   "newFaqs": [
     {
       "q": "We're a startup — what's the best way to launch custom packaging?",
-      "a": "Start with a 100-piece small batch test run. White card colour boxes start at HK$0.03 each with free die-cut fees, so you can validate market fit before committing to larger volumes with far less risk."
+      "a": "Start with a 100-piece small batch test run. White card colour boxes come with free die-cut fees, so you can validate market fit before committing to larger volumes with far less risk."
     },
     {
       "q": "Do you offer food-safe and sustainable packaging certifications?",
-      "a": "Yes — FDA food-grade and FSC forest-certified materials are both available, ideal for F&B, snacks, supplements and any packaging with direct food contact. Fully compliant and traceable."
+      "a": "Yes — food-grade and eco paper options are available (specify at order), ideal for F&B, snacks, supplements and any packaging with direct food contact."
     },
     {
       "q": "What box styles and standard sizes are available?",
@@ -811,7 +811,7 @@ categoryConversionBlocks['packaging:en'] = {
     },
     {
       "q": "How can e-commerce brands reduce packaging costs?",
-      "a": "Use our flexible 100-10K MOQ model: small batches to test winners, larger runs for bestsellers. Combined with free gang-run die-cut fees, overall cost is typically 30% lower than traditional printers."
+      "a": "Use our flexible 100-10K MOQ model: small batches to test winners, larger runs for bestsellers. Combined with free gang-run die-cut fees, overall cost stays competitive."
     }
   ]
 };
@@ -1250,12 +1250,12 @@ categoryConversionBlocks['paper-bags:ja'] = {
 categoryConversionBlocks['packaging:ja'] = {
   "category": "packaging",
   "locale": "ja",
-  "title": "オリジナルパッケージ印刷｜小ロット30個〜・クラフト紙・食品グレード対応｜ZprintPro",
-  "metaDescription": "オリジナルパッケージ印刷は小ロット30個〜に対応。クラフト紙やFSC認証エコ紙、食品グレード紙＋大豆インク（SGS検査済み）から選べ、箔押し・UV加工にも対応。価格はお見積り制で、通常3日出荷・急行2日。30秒AI見積もり、無料型設計対応。20種類以上の箱型をDHL／FedExで日本全国へお届けします。",
+  "title": "オリジナルパッケージ印刷｜小ロット100個〜・クラフト紙・食品グレード対応｜ZprintPro",
+  "metaDescription": "オリジナルパッケージ印刷は小ロット100個〜に対応。クラフト紙やFSC認証エコ紙、食品グレード紙＋大豆インクから選べ、箔押し・UV加工にも対応。価格はお見積り制で、通常3日出荷・急行2日。30秒AI見積もり、無料型設計対応。20種類以上の箱型をDHL／FedExで日本全国へお届けします。",
   "quickAnswers": [
     {
       "q": "オリジナルパッケージの最小ロットは何個からですか？",
-      "a": "ウエディングボックスは30個〜、カラーボックスは50個〜、標準・工業用は100–200個〜。"
+      "a": "全箱型100個〜（婚礼・彩盒・常規工業款共通）、異形刀模500個〜。"
     },
     {
       "q": "クラフト紙でパッケージ印刷はできますか？",
@@ -1263,7 +1263,7 @@ categoryConversionBlocks['packaging:ja'] = {
     },
     {
       "q": "食品用パッケージは安全ですか？",
-      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み、日本の食品衛生基準に準拠しています。"
+      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用しています。合規性はご注文時に確認します。"
     }
   ],
   "socialProof": [
@@ -1272,11 +1272,11 @@ categoryConversionBlocks['packaging:ja'] = {
       "label": "B2B注文実績（累計）"
     },
     {
-      "stat": "30個〜",
-      "label": "小ロット対応（ウエディングボックス）"
+      "stat": "100個〜",
+      "label": "小ロット対応（全箱型共通）"
     },
     {
-      "stat": "HK$0.8〜",
+      "stat": "お見積り制",
       "label": "カラーボックス単価"
     },
     {
@@ -1301,7 +1301,7 @@ categoryConversionBlocks['packaging:ja'] = {
       ],
       [
         "クラフト紙／FSC認証エコ紙",
-        "エコ・オーガニックな印象、生分解性・無可塑剤",
+        "エコ・オーガニックな印象、環境配慮インク対応",
         "有機食品・サステナブルブランド・環境企業",
         "お見積り制"
       ],
@@ -1329,7 +1329,7 @@ categoryConversionBlocks['packaging:ja'] = {
       },
       {
         "title": "サンプル確認",
-        "desc": "実物サンプルで発色と構造をチェック（当日完成）"
+        "desc": "実物サンプルで発色と構造をチェック（日程はお見積りで確認）"
       },
       {
         "title": "データ確定",
@@ -1364,16 +1364,16 @@ categoryConversionBlocks['packaging:ja'] = {
     }
   ],
   "newFaqs": [
-    { "q": "オリジナルパッケージの最小ロットは何個からですか？", "a": "ウエディングボックスは30個〜、カラーボックスは50個〜、標準・工業用は100–200個〜。一般的な工場基準500–1,000個を大きく下回るので、スタートアップの試作や小ロット発注に向いています。" },
-    { "q": "クラフト紙でパッケージ印刷はできますか？", "a": "可能です。クラフト紙はエコ・オーガニックな印象が魅力で、全箱型でFSC認証エコ紙を選択可能。有機食品やサステナブルブランドのパッケージに最適で、欧米輸出向けの国際環境基準にも対応します。" },
-    { "q": "食品用パッケージは安全ですか？", "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み、日本の食品衛生基準に準拠しています。ベーカリーや健康食品、茶葉用の箱には防湿加工やQRコードの追加も可能です。" },
+    { "q": "オリジナルパッケージの最小ロットは何個からですか？", "a": "全箱型100個〜（婚礼・彩盒・常規工業款共通）、異形刀模500個〜。一般的な工場基準500–1,000個を大きく下回るので、スタートアップの試作や小ロット発注に向いています。" },
+    { "q": "クラフト紙でパッケージ印刷はできますか？", "a": "可能です。クラフト紙はエコ・オーガニックな印象が魅力で、全箱型でFSC認証エコ紙を選択可能。有機食品やサステナブルブランドのパッケージに最適で、欧米輸出向けの環境要件にも対応します（ご注文時に確認）。" },
+    { "q": "食品用パッケージは安全ですか？", "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用しています。合規性はご注文時に確認します。ベーカリーや健康食品、茶葉用の箱には防湿加工やQRコードの追加も可能です。" },
     {
       "q": "食品パッケージ印刷で防湿加工やQRコードには対応していますか？",
-      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用し、SGS検査済み。ベーカリーや茶葉、サプリメント用の箱には防湿加工を推奨しており、QRコードによるロット追跡も追加できます。"
+      "a": "はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用しています。合規性はご注文時に確認します。ベーカリーや茶葉、サプリメント用の箱には防湿加工を推奨しており、QRコードによるロット追跡も追加できます。"
     },
     {
       "q": "納期はどのくらいかかりますか？",
-      "a": "通常注文は3日出荷、急行サービスは2日、サンプルは当日完成です。5,000個以上の大口注文は約5–7日。DHL／FedExで日本全国へ配送します。"
+      "a": "納期はご注文時に確認します（通常・急行・サンプルとも）。5,000個以上の大口注文は納期をご相談ください。DHL／FedExで日本全国へ配送します。"
     },
     {
       "q": "選べる箱型はどのくらいありますか？",

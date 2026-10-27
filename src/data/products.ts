@@ -3284,7 +3284,7 @@ export const products: Product[] = [
     description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。 2026 旺季: 環保品牌限定、ESG 碳審計合規、月餅糕點禮盒、聖誕節日禮盒。',
     features: [
       '【平板出貨】節省倉儲空間 70% 以上，降低庫存成本',
-      '【自動鎖底】插口結構經 80cm 跌落測試，5kg 不開口',
+      '【自動鎖底】插口結構穩固，測試表現以訂單規格為準',
       '【300g–350g 白卡】高挺度摺疊，成型後棱角分明',
       '【E 坑瓦楞】可選加固，適合較重電商產品',
       '【燙金條碼】支援金／銀箔與可變條碼，品牌與物流兼顧',
@@ -6288,11 +6288,11 @@ export const products: Product[] = [
     description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands. 适配行业: Cross-border e-commerce, Food packaging, Beauty, Gifts, Luxury, Electronics, Baby products.', descriptionJa: 'クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。 适配行业: 越境EC、食品包装、美容、ギフト、贅沢品、エレクトロニクス、ベビー用品。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.',
     features: [
       '【300g–350g 牛皮卡】未漂白原漿，纖維粗獷自然',
-      '【FSC 認證】森林可持續來源，品牌環保形象加分',
-      '【完全生物降解】90 天內自然分解，無塑化劑殘留',
+      '【FSC 認證紙可選】森林可持續來源（落單時註明）',
+      '【環保紙材】生物降解表現以訂單確認',
       '【水性油墨】單色／雙色印刷，低 VOC 排放',
       '【燙黑／壓凹】樸實中帶精緻，適合文創與手作品牌',
-      '【自動鎖底】承重 3–5 公斤，底部穩固不塌',
+      '【自動鎖底】底部結構穩固，承重表現以訂單規格為準',
       '【免費色樣確認】每批紙張批次對色，確保一致性',
     ],
     specs: {

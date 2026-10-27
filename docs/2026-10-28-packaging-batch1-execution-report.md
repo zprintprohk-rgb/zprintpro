@@ -42,9 +42,25 @@
 2. **watch 项**（D22 审计）：gang-run ja title 混合中英（`拼版白卡彩盒...| 彩盒印刷...`）；彩盒族（corrugated/tuck-end/white-card）en body `8-15 days`；kraft blog `18,500 訂單實證` 数字来源；「超厚名片」CSV 行（名片展示层未拍板，不动）；blog 实力速览块【國際質量認證】【歐盟 CPR】；price-2026 `無中間商加價`。
 3. **线上复核重灾页**（push 后）：food/cosmetic/fruit-label/kraft/rigid/gang-run/mailer ×3 locale——products.ts 源头已清，待本批上线后 curl 复核。
 
-## 五、下一步
+## 六、线上复核补漏（2026-10-28 06:32-06:50，CF build 122509322140 已部署）
 
-- push-gate 窗口推送本批（6 src/数据文件 + 本报告，攒批达标）
-- 线上复核重灾页 → 更新清理方案 B1/B2/B3/B4 幂等标记
+**门童 0 命中 ≠ 线上干净（教训重演）**：线上探针发现 food/category 页仍有 FDA/SGS 渲染，定位到 **4 个批 1 未覆盖的伴随源**（渲染 packaging 页面的 companion 组件/数据）：
+
+| 源 | 处数 | 清理内容 |
+|---|---|---|
+| `src/data/product-faqs.ts` | 15 | packagingBoxesFAQs + food-boxes FAQ：FSC 認證→可选项、FDA 食品級/SGS 遷移測試→以訂單確認、10-15 個工作天→以報價為準、即日打樣→日程以報價為準（三语） |
+| `src/components/category/CategoryIndustries.tsx` + `CategorySharpHooks.tsx` | 5 | packaging 卡片 FDA 標準紙可選→食品級紙材可選（zh/en/ja） |
+| `src/lib/seo.ts` | 3 | packaging category metaDescription 三语 FDA 清除 |
+| `src/data/category-conversion-blocks.ts` | 41 | packaging:zh/en/ja 三块：meta/FAQ/socialProof/comparisonTable/orderFlow 的 FDA/FSC 绝对断言、HK$0.03/HK$0.8 拼版单价、HK$300-800 刀模費行业对比、8-15 天交期、30%/4820 型统计、30個/50個 MOQ→100（拍板）、生分解性・無可塑剤・国際環境基準・3日出荷・当日完成→条件化 |
+| `src/data/products.ts` | 4 | folding 80cm 跌落測試、kraft【FSC 認證】/完全生物降解 90 天/無塑化劑/承重 3-5 公斤→条件化 |
+
+合计 68 处（第二批 5+58+3 脚本 + 3 手动），全部计数断言 + grep 双方法复核。线上 category/food 页 FDA 将随本轮部署归零（复核见下轮）。
+
+**移交更新**：CategoryIndustries/SharpHooks pet_food 卡（stickers 类目 FDA）+ product-faqs 纸袋 即日打樣（L502/533）+ GMP 認證防偽標籤（L57）+ 通用 FAQ 可完全降解（generalProductFAQs L786）+ 餐牌/證書 打樣當日（conversion-blocks 七簇块）+ socialProof 4820+（watch）→ 七簇域/D22 审计。
+
+## 七、下一步
+
+- push-gate 窗口推送本批（7 src/数据文件 + 本报告，攒批达标；上次 push 06:30 → 最早 07:00）
+- 线上复核（补漏后）：food/category ×3 locale FDA/SGS/即日打樣 归零确认
 - D4-D5 kraft 草案落位（速览表 kraft MOQ A=300 已授权）
 - K3 管理员按 K3-10 重存 dsh 凭据 → 恢复车道 → 新 GSC 导出 → 反馈环四指标首跑

@@ -262,9 +262,9 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': 'エコ包装箱にはどんな素材が使えますか？',
     },
     answer: {
-      'zh-hk': '智印港提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
-      'en': 'ZprintPro offers FSC-certified eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks. Ideal for ESG-focused brands and organic product packaging. Same-day digital sampling available on request.',
-      'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。即日サンプルにも対応可能です。',
+      'zh-hk': '智印港提供環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷；FSC 認證紙材可選（落單時註明）。適合注重ESG的品牌及有機產品包裝。',
+      'en': 'ZprintPro offers eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks; FSC-certified paper available on request. Ideal for ESG-focused brands and organic product packaging.',
+      'ja': 'ZprintProではエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。FSC認証紙はご注文時に選択可能です。ESGに配慮したブランドやオーガニック商品の包装に最適です。',
     },
   },
   {
@@ -298,9 +298,9 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '箱包装の即日サンプルは可能ですか？',
     },
     answer: {
-      'zh-hk': '可以。針對九龍、港島及新界客戶，包裝盒印刷最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣或數碼樣。確認樣板後3-5個工作天可批量生產。',
-      'en': 'Yes. Packaging box sampling is available same-day at our Asia facility. Provide design files and dimensions in advance for same-day white or digital samples. Bulk production takes 3-5 working days after sample approval, with 2-4 day DHL / FedEx delivery to the US.',
-      'ja': 'はい。日本全国のお客様向けに、箱包装の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルまたはデジタルサンプルを手配できます。',
+      'zh-hk': '可以。針對九龍、港島及新界客戶，可安排打樣（日程以報價為準）。建議提前提供設計稿及尺寸規格。確認樣板後3-5個工作天可批量生產。',
+      'en': 'Yes. Packaging box sampling can be arranged (schedule per quote). Provide design files and dimensions in advance for white or digital samples. Bulk production takes 3-5 working days after sample approval, with 2-4 day DHL / FedEx delivery to the US.',
+      'ja': 'はい。箱包装のサンプルはご注文時に日程を確認のうえ手配します。デザインデータと寸法を事前にご提供いただければ、白サンプルまたはデジタルサンプルを手配できます。',
     },
   },
   {
@@ -335,9 +335,9 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '食品用のビニール袋・真空パックは作れますか？',
     },
     answer: {
-      'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（FDA 食品級 + FSC 認證紙）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，起印量按盒型而定、免費 2 小時打稿、WhatsApp 即時報價。',
-      'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (FDA food-grade + FSC-certified paper). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
-      'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、FDA 適合 + FSC 認証紙）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
+      'zh-hk': '唔做。智印港專注紙質食品包裝——食品紙盒、食品紙袋、防油紙卡（食品級紙材可選）。膠袋同真空袋唔喺我哋服務範圍；如你需要紙質食品包裝方案，起印量按盒型而定、免費 2 小時打稿、WhatsApp 即時報價。',
+      'en': 'No — we specialise in paper food packaging: food-safe paper boxes, paper bags and greaseproof paper cards (food-grade paper options). Plastic and vacuum bags are outside our scope. If you need a paper food packaging solution, the MOQ is 100 with a free 2-hour proof and an instant WhatsApp quote.',
+      'ja': 'いいえ。当社は紙製の食品パッケージ（食品用紙箱・紙袋・耐油紙カード、食品グレード素材対応）に特化しています。ビニール袋・真空パックは対応範囲外です。紙製の食品パッケージをご希望でしたら、100 個から、無料 2 時間校正、WhatsApp で即時お見積もり。',
     },
   },
   {
@@ -969,9 +969,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '食品パッケージ印刷の流れは？',
       },
       answer: {
-        'zh-hk': '食品包裝盒 100 個起印、HK$2.5 起/個。流程：提交檔案 → 1 小時免費數碼打稿 → 確認 → 10-15 個工作天生產交貨。FDA 認可食品級材質，免費刀模線模板。',
-        en: 'Food boxes from $0.74/pc at 100 MOQ. Process: submit files, free digital proof in 1 hour, approve, then 10-15 business day production. FDA-safe food-grade boards with free dieline templates.',
-        ja: '食品包装箱は100個〜¥101〜。入稿→1時間無料デジタル校正→確認→10-15営業日生産。FDA適合の食品グレード素材、型紙無料。',
+        'zh-hk': '食品包裝盒 100 個起印、HK$2.5 起/個。流程：提交檔案 → 1 小時免費數碼打稿 → 確認 → 生產交期以報價為準。食品級紙材選項（以訂單確認），免費刀模線模板。',
+        en: 'Food boxes from $0.74/pc at 100 MOQ. Process: submit files, free digital proof in 1 hour, approve, then production lead time is confirmed per order. Food-grade board options with free dieline templates.',
+        ja: '食品包装箱は100個〜¥101〜。入稿→1時間無料デジタル校正→確認→生産リードタイムはご注文時に確認。食品グレード素材対応、型紙無料。',
       },
     },
     {
@@ -981,9 +981,9 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: '食品包装箱の素材は食品に安全？',
       },
       answer: {
-        'zh-hk': '採用 FDA 認可食品級白卡/牛皮紙，可選防油淋膜，通過 SGS 遷移測試，間接接觸食品級別安全。',
-        en: 'FDA-compliant food-grade white card and kraft boards with optional grease-resistant coating, SGS migration tested for indirect food contact.',
-        ja: 'FDA適合の食品グレード白卡/クラフト紙、防油コーティング可、SGS移行テスト済み（間接接触級）。',
+        'zh-hk': '採用食品級白卡/牛皮紙，可選防油淋膜，合規要求以訂單確認。',
+        en: 'Food-grade white card and kraft boards with optional grease-resistant coating; compliance documentation is confirmed per order.',
+        ja: '食品グレードの白卡/クラフト紙、防油コーティング可。適合性はご注文時に確認。',
       },
     },
   ],
