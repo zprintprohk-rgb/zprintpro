@@ -133,3 +133,11 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - **双方法核验 PASS**: 23 词逐词对照 KPI 面板 .md 与 .json（海報印刷 278/15.0、small batch 49/4.8+28/5.1、saddle 15/9.6、コミケ 170/19.1、卒アル販売 16/5.0 等全部一致；missing 词 4 个与 JSON 一致）。
 - **对端**: b56ba034（packaging D4-D5 AEO BLUF + ja kraft）——包装车道，无重叠；双条件 src 零写入。
 - **push**: gate 12:08 BLOCKED（距 40e1231e push 11m）→ 窗口 ~12:27；本地 commit 604566f0，下轮窗口推。
+### 9. 续跑第 3-6 轮（12:10-12:22）—— 周 3 资产 + 台账合规 + 完整性矩阵（docs-only，K3 拍板域不擅动）
+- **周 3 资产数据骨架** 2026-10-27-week3-asset-data-skeletons.md: 纸袋报价尺寸模板（6 SKU 真值表 + 8 字段报价表单，products.ts L1355-1900）+ 学校印刷清单（saddle L5143 / exercise L5757 / perfect-bound L5224 真值表 + 9 项采购检查表）——零声明纯真值；C109 入稿清单/逆算表已在线上（对端），不重复。
+- **P0 台账 K3-8 终局修正**（§0.37 合规）: 台账仍列「转化接入 UNKNOWN 待拍板」→ 改 CLOSED（K3-8 终局，线下处理），周末闸门结论同步。
+- **新真值观察**: saddle 内页克重 desc「157g–200g」vs material「128g–157g」vs 选项 80/100/128g → 入台账 + K3-3 批（建议 material/选项为准）。
+- **E1 7d 复查协议** 2026-10-27-e1-7d-review-protocol.md（11-03 执行: 同口径双方法/阈值 ≤6 守位+首击+展示收缩门/§11.3 停止规则）。
+- **30 天执行完整性矩阵** 2026-10-27-execution-completeness-matrix.md: 15 卡 + E1-E6 + J1 逐卡核对——无风险队列已空，剩余 = 纯 K3 拍板域 6 批 + 排期项（11-03/11-23）。
+- **线上复核（12:1x 双方法）**: 纸袋 category↔6 PDP 双向 6/6 PASS（纠正探针口径：white-card/gift/handle/large 不含 "paper-bags" 字样）；handle H1 承重 + eco H1 FSC 仍在线（K3-7 证据强化，队列已更新）。
+- **push**: 7 commits 本地（604566f0→822b079a，含对端 b56ba034）；后台任务 12:27 窗口推送中。
