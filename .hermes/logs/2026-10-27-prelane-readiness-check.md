@@ -36,4 +36,12 @@
 - `schtasks /query /tn \ZP-gsc-feedback|\ZP-daily-content /fo LIST /v`（18:34）
 - 字节级 ASCII 检查: `.hermes/_prelane_check.cjs`（0 non-ASCII ×4）；锁内容直接读取
 - `run-context` mtime / wrapper 日志尾 / `lane-runs.jsonl`（47 条）
-- 校准状态: 已校准（2026-10-27 18:3x 实测）；校准日期 2026-10-27 18:40 Asia/Shanghai
+- 校准状态: ~~已校准（2026-10-27 18:3x 实测）~~ → **已修正（19:4x）**；校准日期 2026-10-27 18:40 Asia/Shanghai
+
+## 6. 撤回声明（§0.23 · 2026-10-27 19:4x）
+
+- **撤回对象**: 本报告 §3 「18:18 harness 崩溃遗留孤儿锁」判定（原 commit b9feaf46，撤回日期 2026-10-27 19:45）。
+- **实况（据 lane 会话 be5601a2 披露）**: 18:18 的 daily-content harness **正常跑完**（总线 ZP-daily-content-20261027T181700-harness，ended 18:37，verdict OK，push 9a031bb5@18:38），锁由本 lane 于 **18:41 正常释放**（RELEASE_EXIT=0）；pid 26020 已死属 **preflight 正常退出**，非崩溃；「总线无记录」系**记录在 run 结束时才写入**，我 18:34-18:37 的观察窗口早于落盘。
+- **我方处置保持正确**: 禁代删、留待 3600s 规则 —— lane 披露原文确认。
+- **修法教训入账**: 判「进程死 = 运行崩」前必须满足 ①15min 静默窗口（§0.35.7 双条件②）②等总线落盘（run 结束才写）③pid 归属先查 preflight 生命周期 —— 三缺一不下结论。本误判零操作损失（未代删、未干预），但判读纪律已按本条固化。
+- 19:40 复核: 锁已 FREE（lane 自己释放），今晚 20:13/21:17 无需任何接管。
