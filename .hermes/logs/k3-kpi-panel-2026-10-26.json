@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "pull": "2026-10-26",
+    "current_window": [
+      "2026-09-28",
+      "2026-10-25"
+    ],
+    "previous_window": [
+      "2026-08-31",
+      "2026-09-27"
+    ],
+    "generated_at": "2026-10-27T03:50:42.786Z",
+    "ruling": "K3 2026-10-27: K3-8 转化接入关闭(线下处理); 监控口径 = GSC 四指标 + 带钱词排名 + 首页词数 + 关键词行数",
+    "kpi_scope": "date×page (analysis JSON full_locale)",
+    "money_scope": "locale_opportunities 词级 (en/ja 相关市场过滤)",
+    "breadth_scope": "query×page×country, locale 按落地页 URL 前缀归属, pos=展示加权"
+  },
+  "kpi_card": [
+    {
+      "locale": "全站",
+      "imps_cur": 23014,
+      "imps_prev": 23794,
+      "clicks_cur": 461,
+      "clicks_prev": 384,
+      "ctr_cur": 0.0200312853045972,
+      "ctr_prev": 0.016138522316550392,
+      "pos_cur": 16.435550099939167,
+      "pos_prev": 17.219090947297637
+    },
+    {
+      "locale": "en",
+      "imps_cur": 5307,
+      "imps_prev": 6398,
+      "clicks_cur": 55,
+      "clicks_prev": 55,
+      "ctr_cur": 0.010363670623704541,
+      "ctr_prev": 0.008596436386370742,
+      "pos_cur": 13.361066515922365,
+      "pos_prev": 16.456225382932164
+    },
+    {
+      "locale": "ja",
+      "imps_cur": 2078,
+      "imps_prev": 2124,
+      "clicks_cur": 36,
+      "clicks_prev": 32,
+      "ctr_cur": 0.017324350336862367,
+      "ctr_prev": 0.015065913370998116,
+      "pos_cur": 16.724364773820984,
+      "pos_prev": 16.45436440677966
+    },
+    {
+      "locale": "其他(非三语落地页)",
+      "imps_cur": 24,
+      "imps_prev": 16,
+      "clicks_cur": 4,
+      "clicks_prev": 1,
+      "ctr_cur": 0.16666666666666666,
+      "ctr_prev": 0.0625,
+      "pos_cur": 3.33375,
+      "pos_prev": 3.186875
+    },
+    {
+      "locale": "zh-hk",
+      "imps_cur": 15605,
+      "imps_prev": 15256,
+      "clicks_cur": 366,
+      "clicks_prev": 296,
+      "ctr_cur": 0.02345402114706825,
+      "ctr_prev": 0.019402202412165705,
+      "pos_cur": 17.462821531560397,
+      "pos_prev": 17.660203198741478
+    }
+  ],
+  "money_words": {
+    "zh-hk": [
+      {
+        "query": "海報印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 278,
+        "pos_cur": 14.979532374100717,
+        "clicks_cur": 0,
+        "imps_prev": 168,
+        "pos_prev": 18.68595238095238,
+        "clicks_prev": 2,
+        "missing": false
+      },
+      {
+        "query": "印海報",
+        "source": "opportunities_csv",
+        "imps_cur": 124,
+        "pos_cur": 12.74,
+        "clicks_cur": 1,
+        "imps_prev": 133,
+        "pos_prev": 18.6,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "食品包裝印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 104,
+        "pos_cur": 9.11,
+        "clicks_cur": 0,
+        "imps_prev": 141,
+        "pos_prev": 7.967304964539006,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "貼紙印刷",
+        "missing": true
+      },
+      {
+        "query": "月曆印刷",
+        "missing": true
+      },
+      {
+        "query": "小冊子印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 61,
+        "pos_cur": 10.296065573770491,
+        "clicks_cur": 0,
+        "imps_prev": 52,
+        "pos_prev": 10.061538461538463,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "紙袋印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 62,
+        "pos_cur": 13.1,
+        "clicks_cur": 0,
+        "imps_prev": 74,
+        "pos_prev": 11.45,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "騎馬釘印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 51,
+        "pos_cur": 11.57,
+        "clicks_cur": 0,
+        "imps_prev": 49,
+        "pos_prev": 14.14,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "即日印刷",
+        "source": "opportunities_csv",
+        "imps_cur": 52,
+        "pos_cur": 6.9,
+        "clicks_cur": 1,
+        "imps_prev": 57,
+        "pos_prev": 8.891754385964912,
+        "clicks_prev": 2,
+        "missing": false
+      }
+    ],
+    "en": [
+      {
+        "query": "small batch sticker printing",
+        "source": "locale_opportunities",
+        "imps_cur": 49,
+        "pos_cur": 4.77469387755102,
+        "clicks_cur": 0,
+        "imps_prev": 62,
+        "pos_prev": 6.0525806451612905,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "small batch stickers",
+        "source": "locale_opportunities",
+        "imps_cur": 28,
+        "pos_cur": 5.068928571428572,
+        "clicks_cur": 0,
+        "imps_prev": 43,
+        "pos_prev": 5.536744186046512,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "doujinshi printing",
+        "source": "locale_opportunities",
+        "imps_cur": 39,
+        "pos_cur": 10.205128205128204,
+        "clicks_cur": 0,
+        "imps_prev": 56,
+        "pos_prev": 14.216071428571427,
+        "clicks_prev": 1,
+        "missing": false
+      },
+      {
+        "query": "saddle stitch booklet printing",
+        "source": "locale_opportunities",
+        "imps_cur": 15,
+        "pos_cur": 9.6,
+        "clicks_cur": 0,
+        "imps_prev": 94,
+        "pos_prev": 3.46,
+        "clicks_prev": 2,
+        "missing": false
+      },
+      {
+        "query": "china catalog printing",
+        "source": "locale_opportunities",
+        "imps_cur": 78,
+        "pos_cur": 17.99833333333333,
+        "clicks_cur": 0,
+        "imps_prev": 102,
+        "pos_prev": 18.725392156862746,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "large envelopes",
+        "source": "locale_opportunities",
+        "imps_cur": 19,
+        "pos_cur": 13.94421052631579,
+        "clicks_cur": 0,
+        "imps_prev": 7,
+        "pos_prev": 18.285714285714285,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "a2 poster",
+        "source": "locale_opportunities",
+        "imps_cur": 44,
+        "pos_cur": 11.93,
+        "clicks_cur": 0,
+        "imps_prev": 21,
+        "pos_prev": 34.42666666666667,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "corporate holiday cards",
+        "missing": true
+      }
+    ],
+    "ja": [
+      {
+        "query": "コミケ 印刷",
+        "source": "locale_opportunities",
+        "imps_cur": 170,
+        "pos_cur": 19.06129411764706,
+        "clicks_cur": 0,
+        "imps_prev": 175,
+        "pos_prev": 25.214114285714288,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "卒アル販売",
+        "source": "locale_opportunities",
+        "imps_cur": 16,
+        "pos_cur": 5,
+        "clicks_cur": 0,
+        "imps_prev": 1,
+        "pos_prev": 2,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "教材 印刷製本",
+        "source": "locale_opportunities",
+        "imps_cur": 33,
+        "pos_cur": 19.332727272727272,
+        "clicks_cur": 0,
+        "imps_prev": 6,
+        "pos_prev": 11,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "教材 印刷 製本",
+        "source": "locale_opportunities",
+        "imps_cur": 17,
+        "pos_cur": 17.408823529411762,
+        "clicks_cur": 0,
+        "imps_prev": 4,
+        "pos_prev": 11,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "pvc シール",
+        "source": "locale_opportunities",
+        "imps_cur": 19,
+        "pos_cur": 18.95,
+        "clicks_cur": 0,
+        "imps_prev": 23,
+        "pos_prev": 20.431304347826085,
+        "clicks_prev": 0,
+        "missing": false
+      },
+      {
+        "query": "年賀状印刷",
+        "missing": true
+      }
+    ]
+  },
+  "breadth": {
+    "current": {
+      "zh-hk": {
+        "queries": 582,
+        "firstPage": 242,
+        "mid": 107,
+        "deep": 233,
+        "imps": 7224,
+        "clicks": 57
+      },
+      "en": {
+        "queries": 580,
+        "firstPage": 187,
+        "mid": 122,
+        "deep": 271,
+        "imps": 1790,
+        "clicks": 8
+      },
+      "ja": {
+        "queries": 168,
+        "firstPage": 50,
+        "mid": 26,
+        "deep": 92,
+        "imps": 817,
+        "clicks": 2
+      },
+      "root/其他": {
+        "queries": 3,
+        "firstPage": 3,
+        "mid": 0,
+        "deep": 0,
+        "imps": 3,
+        "clicks": 0
+      }
+    },
+    "previous": {
+      "zh-hk": {
+        "queries": 600,
+        "firstPage": 245,
+        "mid": 107,
+        "deep": 248,
+        "imps": 7219,
+        "clicks": 47
+      },
+      "en": {
+        "queries": 655,
+        "firstPage": 183,
+        "mid": 128,
+        "deep": 344,
+        "imps": 2475,
+        "clicks": 10
+      },
+      "ja": {
+        "queries": 148,
+        "firstPage": 55,
+        "mid": 15,
+        "deep": 78,
+        "imps": 831,
+        "clicks": 2
+      }
+    }
+  },
+  "money_word_sources_note": "带钱词源固定: zh-hk = opportunities CSV (query 口径, 与策略 §3.3 一致); en/ja = locale_opportunities (相关市场过滤, 与策略 §3.1/3.2 一致); 缺记 = 窗口内无词级记录(0 展示或被匿名化)"
+}
