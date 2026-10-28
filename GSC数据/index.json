@@ -1,31 +1,39 @@
 {
   "schema": "gsc-data-index-v1",
-  "lastBuild": "2026-10-10T22:43:00+08:00",
+  "lastBuild": "2026-10-29T03:46:00+08:00",
   "host": "zprintpro.com",
   "freshnessGateHours": 72,
-  "totalFiles": 163,
+  "totalFiles": 238,
   "skippedFiles": 0,
-  "latestFreshData": "2026-10-09",
-  "stalenessDays": 1,
+  "latestFreshData": "2026-10-29",
+  "stalenessDays": 0,
   "freshnessStatus": "FRESH",
-  "stalenessNote": "10/9 档 ×12 xlsx 已于 2026-10-09 02:03-02:08 落盘 (24h/7d/28d × 三站点汇总+hk+jp+us, 本档仍无 3mo 窗 — 连续第 2 档缺, 品牌长窗对照待 10/12 拉新补拉); 数据日约 10/06-07 (GSC 滞后 2-3 天属正常) ⇒ FRESH。10/10 ZP-gsc-feedback lane 已消费并回灌 matrix gsc_feedback_2026_10_10 block。解析产物: .hermes/gsc-2026-10-09/extract.json (单行大 JSON, 车道沙箱无 node 不可逐词抽取) + compare-vs-0918.json (多行) + docs/2026-10-09-gsc-deep-audit-and-strategy.md / 2026-10-09-gsc-20day-delta-vs-0918.md。totalFiles = 151 (10/6 基数) + 12 (10/9 档) = 163。下一窗 10/12 前后 (请补 3mo 窗 + 多行 per-query 机器格式)。",
+  "stalenessNote": "10/29 重建轮 (C6/A15 收尾): K3 01:16-01:23 导出 4 新档 (24h/7d/28d/3mo 三站点汇总, 全国家口径) + 目录现存 10/15/10/16/10/19/10/23 各批 (共 5 批新档), 由 scripts/rebuild-gsc-index.mjs 扫描重建。28d KPI (09-29..10-26): clk 497 / imp 20,977 / CTR 2.37% / pos 13.52; 恢复系数 109.9% (全国家口径, 双方法)。totalFiles = 238 (含 gitignored xlsx, 实际目录计数); 数据日约 10-26 (GSC 滞后 2-3 天属正常) ⇒ FRESH。10/29 ZP-gsc-feedback lane 已消费并回灌 matrix (gsc_feedback_2026_10_29 block + priority_boost 食品包裝+1 / china catalog+1)。",
   "filesByDate": {
-    "2026-07-08": 7,
-    "2026-07-09": 7,
-    "2026-07-17": 7,
-    "2026-07-31": 7,
-    "2026-08-04": 7,
-    "2026-08-08": 7,
     "2026-08-09": 6,
     "2026-08-12": 4,
-    "2026-08-13": 28,
-    "2026-08-17": 28,
-    "extracted-0809": 7,
-    "2026-09-10": 12,
     "2026-09-18": 12,
     "2026-09-29": 16,
     "2026-10-05": 12,
-    "2026-10-09": 12
+    "2026-10-09": 12,
+    "2026-10-15": 12,
+    "2026-10-16": 4,
+    "2026-10-19": 4,
+    "2026-10-23": 8,
+    "2026-10-29": 4,
+    "2026-09-03": 18,
+    "extracted-0809": 7,
+    "2026-07-09": 7,
+    "2026-07-08": 7,
+    "2026-07-17": 7,
+    "2026-07-31": 7,
+    "2026-08-04": 7,
+    "2026-08-08": 14,
+    "2026-09-10": 12,
+    "2026-08-17": 28,
+    "2026-08-13": 28,
+    "2026-10-12": 1,
+    "2026-10-13": 1
   },
   "freshnessRule": ">72h = STALE, 禁止输出带数字结论, 触发刷新, 9/3 15:00 GSC 校准窗口",
   "dataDimensions": [
@@ -656,7 +664,7 @@
     }
   ],
   "gsc-api-fresh-data-format": "gsc-fresh-YYYY-MM-DD.json (per §J-1.1 落盘义务, 9/3 15:00 启用)",
-  "actionRequired": "下一校准窗 (建议 10/12 前后): ① 老板拉新档 → ② **补 3mo 窗** (连续两档缺) → ③ 同步落盘多行 per-query 机器格式 (或 gsc-fresh-YYYY-MM-DD.json 既定格式; 10/9 档单行 extract.json 致 4 个 T1 锁词在无 node 车道内 PENDING) → ④ 更新 index.json",
+  "actionRequired": "下一校准窗 (11-03 C4/C6 验证点): ① 老板导出 query×page×country 双档 (面板 §3 join 修复, 贴纸/月历词级已就位) ② 11-01 教科書 churn 47.1 月复盘 ③ 11-04 年賀状/貼紙 14 天位次复测 ④ index.json 每次 GSC 新档落盘后由本重建器重跑 (SOP-5, 禁手搓)",
   "notes": {
     "2026-09-10": {
       "files": 12,
@@ -707,6 +715,12 @@
         "docs/2026-10-09-gsc-20day-delta-vs-0918.md (9/18→10/09 20 天硬对比)"
       ],
       "note": "10/10 ZP-gsc-feedback lane 已消费并回灌 matrix gsc_feedback_2026_10_10 block (锚点表切换 10-09 验证矩阵); 落盘 10/9 02:03-02:08 = FRESH (报告前 1 日); 缺口: 无 3mo 窗 + 无多行机器格式 (致 4 个 zh T1 锁词 PENDING) — 已在 10/12 拉档 actionRequired 中提出"
+    },
+    "2026-10-29": {
+      "files": 4,
+      "source": "xlsx 真总量 (24h/7d/28d/3mo × 三站点汇总, 全国家口径, K3 01:16-01:23 导出)",
+      "consumed_by": ".hermes/logs/2026-10-29-ZP-gsc-feedback.md (恢复确认轮 RECOVERY 109.9%)",
+      "rebuilt_by": "scripts/rebuild-gsc-index.mjs (C6/A15 收尾, 2026-10-29)"
     }
   }
 }

@@ -67,7 +67,7 @@ function loadGscIndex() {
     return {
       exists: true,
       freshnessStatus: index.freshnessStatus || 'UNKNOWN',
-      stalenessDays: index.stalenessDays || -1,
+      stalenessDays: index.stalenessDays ?? -1,
       latestFreshData: index.latestFreshData || null,
       freshnessGateHours: index.freshnessGateHours || FRESHNESS_GATE_HOURS,
       totalFiles: index.totalFiles || 0,
