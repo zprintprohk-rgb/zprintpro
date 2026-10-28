@@ -91,3 +91,21 @@ tsc 54 / **title-v5 HARD 0**（本日 7→0 完整链条：small-batch→poster�
 **事实更正（§0.23 双方法）**：待办 4 原记「CSV 为 GBK 编码」**不实**——实测 `gbk` 解码在 0x86 字节失败、`utf-8` 解码完好、无 BOM；本批以 UTF-8 读写零转码。后续 CSV 编辑一律 UTF-8，勿再按 GBK 处理。
 
 **影响**：D22-25 欠账清零；「凭据恢复前窗口安全」的时限依赖解除——即使 lane 立即恢复并重跑生成器，TS 真值（价格/H1/title 全部批次）不受影响。
+
+---
+
+## 七、补遗 2（2026-10-28 15:4x）：数据驱动小批 #8 — 信封 MOQ en/ja 漏网 + 月曆 ja JPY
+
+**发现**：10-24 信封 zh MOQ 修复存在形态漏网——en 用 `500 pcs`、ja 用 `500枚から` 绕过了当时的 `500 個` 规则；全量 500 扫描另发现 ja 核心卖点 L1580 第 3 处。真值 = products.ts envelope SKU minQuantity=100（zh/en/ja featuredSnippet 均已写 100，同页 techSpecs/FAQ 却写 500 = 自相矛盾）。
+
+**改动（8 处，category-seo-content.ts）**：
+| # | 位置 | 旧 → 新 | 真值 |
+|---|---|---|---|
+| 1-2 | en techSpecs + FAQ | `500 pcs (digital printing)` → `100 pcs` | minQuantity=100 |
+| 3 | en coreAdvantages | `500 pcs minimum` → `100 pcs minimum` | 同上 |
+| 4-6 | ja coreAdvantages + techSpecs + FAQ | `500枚から` → `100枚から` | 同上 |
+| 7-8 | 月曆 ja featuredSnippet ×2 | `HK$3-8／冊` → `¥50〜` | basePrice_ja=50（basePrice=3 对应，ja 起价惯例） |
+
+**不猜值跳过（登记）**：信封 ja 价格 `HK$0.5/0.15`（envelope 无 basePrice_ja）、en FAQ `US$0.02/pc`（无 basePrice_en）→ K3-4 清单；餐牌 ja `HK$15/張起`（与 basePrice 5/8/28 均不对应）→ K3-4；贴纸 `HK$0.8`（basePrice_ja 46 不对应）；利是封（七簇域）；教科書（K3-4）。场景数量带 `100-500 pcs` / `500-5,000 pcs` 为典型量级非 MOQ 声明，保留。
+
+**不变量**：SGS 计数不变 · tsc 54=54 · 包块 `100-500 pcs` 数量带完好（断言负向后顾 `(?<![\d,-])500 pcs` 防带内子串误报——本周期第 3 次 substring 测量陷阱）。

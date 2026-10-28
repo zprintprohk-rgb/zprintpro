@@ -1478,7 +1478,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '3. Small Batch, High Value — Corporate Procurement Choice',
           points: [
-            '500 pcs minimum (digital printing) — ideal for SMEs and startups.',
+            '100 pcs minimum (digital printing) — ideal for SMEs and startups.',
             '5,000+ pcs offset printing, unit price as low as US$0.02/pc for large enterprises and events.',
             'Same-day delivery (digital, 500–2,000 pcs) — urgent business correspondence without delay.',
           ],
@@ -1512,7 +1512,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       title: 'Technical Specifications',
       items: [
         { label: 'Standard Sizes', value: 'DL(110×220mm), C5(162×229mm), C4(229×324mm), Chinese #5(110×220mm), #7(160×230mm), #9(230×320mm).' },
-        { label: 'Minimum Order', value: '500 pcs (digital printing). 5,000+ recommended for offset (more economical).' },
+        { label: 'Minimum Order', value: '100 pcs (digital printing). 5,000+ recommended for offset (more economical).' },
         { label: 'Turnaround', value: 'Same-day (digital, 500–2,000 pcs); Standard 2–3 days (offset); Prototyping same day.' },
         { label: 'File Requirements', value: 'AI / PDF, 300dpi, CMYK, 3mm bleed, envelope dieline design.' },
         { label: 'Window Size', value: 'Standard window 40×90mm. Position and size fully customizable. Clear film or open window.' },
@@ -1536,7 +1536,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'What is the minimum order for envelopes?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset printing, as low as US$0.02/pc.' },
+      { q: 'What is the minimum order for envelopes?', a: '100 pcs (digital printing). 5,000+ pcs recommended for offset printing, as low as US$0.02/pc.' },
       { q: 'What envelope sizes are available?', a: 'DL, C5, C4, Chinese #5/#7/#9. Fully custom sizes supported.' },
       { q: 'Do you print window envelopes?', a: 'Yes. Standard window 40×90mm. Position and size fully customizable.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, pearl paper, colored paper, textured paper — 20+ options.' },
@@ -1577,7 +1577,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '3. 小ロット高コスパ、企業購買の第一選択',
           points: [
-            '500枚から（デジタル印刷）。中小企業やスタートアップに最適。',
+            '100枚から（デジタル印刷）。中小企業やスタートアップに最適。',
             '5,000枚以上はオフセット印刷で、単価HK$0.15／枚までお得。大企業やイベントに最適。',
             '即日納品（デジタル、500–2,000枚）。緊急のビジネス書類を遅らせません。',
           ],
@@ -1611,7 +1611,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: '標準サイズ', value: 'DL(110×220mm)、C5(162×229mm)、C4(229×324mm)、中式5号(110×220mm)、7号(160×230mm)、9号(230×320mm)。' },
-        { label: '最小発注数', value: '500枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得。' },
+        { label: '最小発注数', value: '100枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得。' },
         { label: '納期', value: '即日（デジタル、500–2,000枚）。標準2–3日（オフセット）。サンプル当日。' },
         { label: 'ファイル要件', value: 'AI／PDF、300dpi、CMYK、3mmのbleed、封筒展開寸法デザイン。' },
         { label: '窓サイズ', value: '標準窓40×90mm。位置とサイズは完全カスタマイズ対応。透明フィルムまたは開空。' },
@@ -1636,7 +1636,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: 'クラフト紙のパッケージ印刷はできますか？', a: 'はい、クラフト紙（牛皮紙）100個から印刷可能。無漂白・リサイクル対応の環境配慮型で、EC梱包・ギフト用に最適。箔押し・エンボス加工も追加でき、FSC認証紙対応。3-5営業日納期、DHL 2-4日配送。' },
-      { q: '封筒印刷の最小発注数は？', a: '500枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得で、単価HK$0.15／枚まで。' },
+      { q: '封筒印刷の最小発注数は？', a: '100枚から（デジタル印刷）。5,000枚以上はオフセット印刷がお得で、単価HK$0.15／枚まで。' },
       { q: 'どんなサイズの封筒がありますか？', a: 'DL、C5、C4、中式5号／7号／9号。完全カスタマイズサイズも対応。' },
       { q: '窓付き封筒は印刷できますか？', a: 'はい。標準窓40×90mm。位置とサイズは完全カスタマイズ対応。' },
       { q: 'どんな紙がありますか？', a: '白カード紙、クラフト紙、パール紙、カラー紙、テクスチャ紙など20種類以上。' },
@@ -1877,7 +1877,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
-    featuredSnippet: 'カレンダー印刷 9-11月繁忙期 | 1冊から HK$3-8／冊 | 工場直送 | ZprintPro. 卓上 / 壁掛け / カード HK$3-8／冊, 2027 早期予約 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
+    featuredSnippet: 'カレンダー印刷 9-11月繁忙期 | 1冊から ¥50〜 | 工場直送 | ZprintPro. 卓上 / 壁掛け / カード ¥50〜, 2027 早期予約 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
     lastUpdated: '2026-08-19',
     h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 1冊から, 企業ギフト 9-11月繁忙期前夜',
     coreAdvantages: {
