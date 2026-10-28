@@ -50,7 +50,7 @@ export const CAT_KW_MAP_ZH_HK: Record<string, [string, string]> = {
  */
 export const SHARP_HOOKS_MAP_ZH_HK: Record<string, string> = {
   stickers:     '10張起印',
-  flyers:       '即日交貨',
+  flyers:       '最快24小時',
   packaging:    'AI即時報價',
   posters:      '防水材質',
   'paper-bags': '環保材質',

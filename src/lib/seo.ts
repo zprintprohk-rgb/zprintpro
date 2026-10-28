@@ -843,7 +843,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   // 优先使用自定义 title，没有则用默认格式
   const customTitle = seoData.titles?.[locale];
   const categoryTitle = customTitle || (locale === 'zh-hk'
-    ? `${name} | 即日交貨 | ${brandSuffix}`
+    ? `${name} | 最快24小時 | ${brandSuffix}`
     : locale === 'en'
     ? `${name} | Global Shipping | ${brandSuffix}`
     : `${name} | 配送対応 | ${brandSuffix}`);
@@ -936,7 +936,7 @@ export function generateProductMetadata(
   const priceText = (priceRange && locale === 'zh-hk') ? ` ${priceRange.split('/')[0]}起。` : '';
   const descPrefix = baseDesc.slice(0, 100);
   const descSuffix = locale === 'zh-hk' 
-    ? `立即查詢報價，滿$500免運費，即日交貨。`
+    ? `立即查詢報價，滿$500免運費，最快 24 小時交貨。`
     : locale === 'en'
     ? `Free design help. Free US shipping $99+. DHL 2-4 day delivery. Get a 30-second quote now.`
     : `今すぐ見積もり。全国配送対応。3〜5営業日でお届け。急ぎにも対応。`;
