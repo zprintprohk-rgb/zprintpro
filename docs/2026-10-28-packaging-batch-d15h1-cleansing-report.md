@@ -4,6 +4,12 @@
 > 依据：`docs/2026-10-28-data-driven-next-phase-strategy.md` §7 + 三市场小批延续
 > 数据来源：products.ts 价格真值表 + title-v5 门童对照（commit 记录见各 commit）；线上探针 curl 2026-10-28
 
+## 三、独立跨验（另一会话，12:1x，§0.23.2 第二方法）
+
+- 方法: `.hermes/_batch7_spotcheck.mjs`（title 域内 mustContain/anti 双向检查，UA 探针）
+- 批 #6/#7 same-day-flyers 三语 title 价格真值: **3/3 PASS** —— zh `HK$0.55起`（无 HK$1.30）/ en `from $0.95`（无 $0.16）/ ja `¥125〜`（无旧 ¥25 残留）；页面 200、title 实值见探针 JSON
+- 探针设计教训: 价格 anti 检查必须**限定 title/价格位域**，不可全页扫描——正文价格阶梯合法含多档位，首版全页扫描误报 0/3（非数据问题，是检查域错误）；已修正复跑
+
 ## 一、11:31 push（2b258d47）线上探针全绿
 
 | 探针 | 结果 |
