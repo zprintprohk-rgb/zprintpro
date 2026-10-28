@@ -11522,7 +11522,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Kraft Paper Packaging Boxes for Eco-Friendly Packaging</h3>
-<p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. These boxes are fully eco and FSC-certified, making them ideal for organic food, artisan tea, handmade soap, and eco-food packaging. The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
+<p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture; FSC-certified paper is available on request (within certified scope). The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with load capacity confirmed per order. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
 
 <h3>Material & GSM Specifications</h3>
 <table class="w-full border-collapse my-4 text-sm">
