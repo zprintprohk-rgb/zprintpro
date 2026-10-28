@@ -1,4 +1,4 @@
-# 七簇 30 天执行 — 优化级批次（2026-10-27 01:4x，第 1 周）
+﻿# 七簇 30 天执行 — 优化级批次（2026-10-27 01:4x，第 1 周）
 
 > 任务源: K3 指令「按 `docs/2026-10-26-seven-clusters-seo-aeo-geo-global-strategy.md` 优化级指令执行」。
 > 执行: DeepSeek 执行层 · 2026-10-27 01:31-01:5x · 接棒平行会话（优化级 P1 批，push 至 f09f67e6）。
@@ -161,3 +161,7 @@ NEXT: K3 拍板 §K3-1/3/4/5/6/7/8（catalog/A2 H1、ja 币种、年賀状 A/B�
 - **§0.37 合规修复（本轮核心交付）**: strategy-task-queue.json 中 MEASURE-20261028-ATTRIBUTION（GA4/008/订单归因）违反 K3 2026-10-27 终局红线 → 关闭为 CLOSED_BY_K3_S0.37 + last_review.note 登记。队列现状: READY=0 / WAITING_K3=5 / BLOCKED_INFRA=4 / SCHEDULED=3。注: 首版修复用 PowerShell ConvertTo-Json 引发全文件重排（297/290 行 churn）→ 已 git 恢复原格式 + edit 工具精确改（6+/5- 最小 diff）。教训: 结构化 SSoT 文件禁用 PowerShell 整文件重序列化。
 - **独立 7 天技术抽查（双方法）**: ja 包装 category ¥44 命中 / ja 貼り箱（貼り箱+¥1,260 53 命中）/ ja 急件 title「¥125〜・10枚〜」/ en food-boxes $0.74（数据层+线上 200）/ zh a1/a2 海报 HK$20/HK$16（数据层第二方法 PASS; 线上渲染探针因本机网络抖动多次 INVALID——记 INVALID 不计失败/0, 不据此改页面, 待网络恢复补线上）。
 - **并发态势**: 对端正在写 lane 运行时修复（lane-git-commit.py/lane-preflight.py/lane-status.mjs 等 25 文件未提交）→ 全程 docs-only, 不碰 scripts/。push 窗口: 上次 11:48, 我的 docs commit c1f339e9 本地待 ≥12:48 (60min 兜底)。
+- **12:59 推送完成**: 3d0fd5ac..dce59d85 (我的 2 docs commits), 0 unpushed; CF build in_progress (12:59 查) → success (13:0x 复查)。
+- **13:0x zh 海报价格三源不一致 (双方法线上实锤, 本轮新发现)**: category 页 desc A2 HK/A1 HK vs PDP title A2 HK/A1 HK (=basePrice) vs products.ts title_zh A2 HK.9。已并入 strategy-task-queue ZH-POSTER evidence + 七簇 K3 队列 watch item (commit f15cfb2e)。不擅改主 URL 价格声明。
+- **网络诊断教训**: zprintpro.com 双栈 (A 172.67.207.171/104.21.77.122 + AAAA), 本机 IPv6 无路由 → Invoke-WebRequest/curl 默认 IPv6 连接失败; curl -4 稳定可用。另: PowerShell 中 curl.exe 输出为多行数组, $html.Length=行数(40)≠字符数 → 早期 "FAIL len=40" 全为测量 bug 误判, 非站点问题 (§0.23.2 三闸门#1 教训: 先 dump 真实样本再下结论)。
+- **zh 海报线上补验完成 (curl -4)**: a1 PDP title「A1 大幅海報 厚紙 | 1張起印 HK」/ a2 PDP title「A2 海報印刷 420×594mm 10張起印 HK」/ category desc「HK·HK」全部实锤。
