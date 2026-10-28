@@ -35,7 +35,7 @@
 
 ## 收尾状态
 
-- push: **已推送**（见下）— commit 链 `b50ff77c`[src] + 本批 docs; 距上次 push 57647c4f@17:42(10-28) >8h, 30min 硬下限满足; 攒批达标（≥1 src 行为修复 + 战略交付物）
+- push: **已推送**（见下）— commit 链 `b50ff77c`[src] + 本批 docs; 距上次 push 57647c4f@17:42(10-28) >8h, 30min 硬下限满足; 攒批达标（≥1 src 行为修复 + 战略交付物）· **CF Pages build: SUCCESS — deploy is live**（复查 @02:11, run 123007120874）
 - lane.lock: 本 run 持有 → **收尾释放**（RELEASE_EXIT 待确认）
 - 同侪并发: 01:21 gsc-feedback（harness OK, 新档导出）· 01:2x 同侪 3 commits（9ff9a55e GSC 回灌 / 0f88858d K3+queue / a3465900 GMC 策略）· src 侧无并发（sku-seo-data.ts 最后外部写入 58d044a4 21:36, 本批前无未提交改动）
 - 工具脚本（untracked 证据）: .hermes/_r28d_fix_20261029.py · 前置备份: .hermes/_bak-sku-seo-before-certs-20261029.ts（commit 于本批）
