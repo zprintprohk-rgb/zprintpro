@@ -149,11 +149,11 @@
         ".hermes/logs/",
         "read-only GA4/008/order exports"
       ],
-      "approval_gate": "K3 read-only data access authorization",
+      "approval_gate": "SUPERSEDED by K3-8 终局 §0.37 (2026-10-27): GA4/008/订单线下处理非在线交易, 执行层不接入/不请求/不列入拍板队列",
       "owner_lane": "ZP-gsc-feedback",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-01",
-      "result": "KPI panel exists; qualified-inquiry attribution not verified"
+      "status": "CLOSED_BY_K3_S0.37",
+      "next_check": null,
+      "result": "KPI panel v1 (40e1231e) 覆盖监控口径(四指标+23带钱词+首页词数+关键词行数); 归因任务按 §0.37 终局关闭"
     },
     {
       "task_id": "GEO-20261103-AI-PROBE-S1",
@@ -285,6 +285,7 @@
   "last_review": {
     "period": "weekly",
     "date": "2026-10-28",
-    "report": ".hermes/logs/periodic-review-weekly-2026-10-28.json"
+    "report": ".hermes/logs/periodic-review-weekly-2026-10-28.json",
+    "note": "2026-10-28 §0.37 合规修复: MEASURE-ATTRIBUTION 关闭 (GA4/008/订单红线, K3 2026-10-27 终局)"
   }
 }
