@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T12:08:12.523Z",
+ "generated_at": "2026-10-28T18:20:29.590Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -676,9 +676,9 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 1,
    "name": "倒金字塔首段",
-   "status": "FAIL",
-   "evidence": "首段 487 字 > 200 字",
-   "reason": "改 roll-up-banner-printing-guide 首段到 100-200 字内直接回答核心问题"
+   "status": "PASS",
+   "evidence": "首段 160 字 | \"Roll-up banner printing starts at 10 sets at HK$85-300 per s…\"",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -694,9 +694,9 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 3/8 (H2 8)，非问句 5（例: Sizes and price tiers / Artwork specs and safe areas）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 8 = 18 个，问句 12 个（67%）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -713,7 +713,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "95 个数字 + 检出资料来源标记",
+   "evidence": "131 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -721,18 +721,18 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "roll-up-banner-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -1585,9 +1585,9 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/8 (H2 8)，非问句 8（例: サイズと価格ラダー / 生地：屋内・屋外・半屋外の選び分け）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 8 = 18 个，问句 10 个（56%）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1604,7 +1604,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "96 个数字 + 检出资料来源标记",
+   "evidence": "132 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1612,18 +1612,18 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "roll-up-banner-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2476,9 +2476,9 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 3/8 (H2 8)，非问句 5（例: 尺寸與套價階梯 / 交稿規格與出血安全區）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 8 = 18 个，问句 12 个（67%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2495,7 +2495,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "98 个数字 + 检出资料来源标记",
+   "evidence": "132 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -2503,18 +2503,18 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "roll-up-banner-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, FDA, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + FDA + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2755,54 +2755,54 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/packaging-box-pricing-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191478",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180513",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/poster-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192592",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189681",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/foil-stamping-3-applications-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=217538",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/hong-kong-printing-cost-baseline-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182748",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2810,7 +2810,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=168701",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=168717",
    "reason": ""
   },
   {
@@ -2819,7 +2819,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194263",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194331",
    "reason": ""
   },
   {
@@ -2828,7 +2828,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=161387",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=161403",
    "reason": ""
   },
   {
@@ -2926,9 +2926,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182292",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2962,27 +2962,27 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=184891",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/ja/blog/hong-kong-printing-cost-baseline-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "roll-up-banner-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=169621",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195390",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/ja/blog/print-specifications-reference-guide-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",

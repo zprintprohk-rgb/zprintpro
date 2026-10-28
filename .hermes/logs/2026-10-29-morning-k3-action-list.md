@@ -12,7 +12,7 @@
 
 | # | 动作 | 命令/位置 | 解锁什么 | 判据 |
 |---|---|---|---|---|
-| 1 | **dsh 凭据恢复**（P0，仍是第一阻塞） | `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\repair-dsh-scheduler-credential.ps1`（提升运行）或 DSH Models 页重存 | 全部 5 条 lane 的真实分析（daily/gsc/weekly/blog/monthly + k3-review） | 下轮 lane 产真实报告（`report_auto_generated=false`） |
+| 1 | **dsh 凭据恢复**（P0，02:19 状态：**Machine scope 已 SET**——修复已部分落地） | 若 Task Scheduler 下轮 (10-29 20:13) 仍 BLOCKED 则确认是否需重启/重注册调度器 | 全部 5 条 lane 的真实分析 | 下轮 lane 产真实报告（`report_auto_generated=false`）；01:57 harness 会话已实证恢复（order 30 cert 清毒, pushed） |
 | 2 | **GSC 新档导出**（P0，数据 16 天龄） | GSC 后台导出 28d + query×page×country 双档，最新日 ≥ 2026-10-26 | KPI 面板刷新（四指标）+ gsc-feedback 真实分析 + 7 天技术抽查数据层 | 导出文件落 `GSC数据/`，lane 10-29 20:13 消费 |
 | 3 | **009 SQL Apply**（P0，reviews A1 解锁） | Supabase Studio 执行 009 migration | SKU 评价功能（已 fail-closed 部署，组件隐藏中） | 组件显现 + `/api/reviews/` 返回真实数据 |
 
