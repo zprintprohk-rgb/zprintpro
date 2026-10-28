@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-10-28",
+  "run_at": "2026-10-28 20:13",
+  "trigger": "scheduled second fire of the same day (Windows Task Scheduler 20:13)",
+  "verdict": "OK",
+  "scope": "pipeline-health re-check only: retry-queue closure + index freshness + 7d ingestion. No new GSC pull, no recomputation of the 19:47 analysis.",
+  "idempotency": {
+    "this_run_key": "eeab665ac84424ea",
+    "same_as_previous_run": true,
+    "previous_run_id": "ZP-gsc-feedback-20261028T194739-35600",
+    "rule_applied": "same lane|intent|target|day -> analysis marked ALREADY_DONE(since 2026-10-28 19:47); compute moved to the unfinished item (observability of the data pipeline)"
+  },
+  "retry_closure": {
+    "queue_item": "UNRESOLVED_DAY 2026-10-28 / STALE / ran but no report file dated 2026-10-28",
+    "queue_source": ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-10-28 20:13:01 (retry_queue)",
+    "stale_judgement_source": ".hermes/logs/lane-status.json @ 2026-10-28 19:42",
+    "why_it_was_stale": "lane-status was generated at 19:42 while the previous run's preflight was 19:37:44 and its bus record closed at 19:47:39, so its report did not exist yet at generation time",
+    "evidence": [
+      ".hermes/logs/lane-runs.jsonl line 55: run_id ZP-gsc-feedback-20261028T194739-35600, dsh_exit=0, wrapper_exit=0, verdict=OK, report=.hermes/logs/2026-10-28-ZP-gsc-feedback.md, head=1a40ba71",
+      ".hermes/logs/2026-10-28-ZP-gsc-feedback.md exists with VERDICT/CONSUMED/DELIVERED/NEXT header and VERDICT=OK",
+      ".hermes/logs/gsc-daily-anomaly-2026-10-28.json exists (322 lines, 14 anomalies, 5 candidate tasks)"
+    ],
+    "action": "RETRY_OF closed; no re-run of the analysis; run-1 artifacts not rewritten"
+  },
+  "findings": [
+    {
+      "id": "GSC-A15",
+      "class": "INDEX_STALE_GATE_BLIND",
+      "severity": "P1",
+      "evidence": [
+        "GSC数据/index.json: lastBuild=2026-10-10T22:43:00+08:00, latestFreshData=2026-10-09, filesByDate max key=2026-10-09, freshnessStatus=FRESH, stalenessDays=1 (18 days without rebuild as of 2026-10-28)",
+        "on-disk exports newer than the index exist: 2026-10-15 (28d/24h/7d), 2026-10-16 (24h), 2026-10-19 (24h), 2026-10-23 (24h/7d); latest 28d batch = 2026-10-15",
+        "grep '2026-10-15|2026-10-16|2026-10-19|2026-10-23' in GSC数据/index.json = 0 hits",
+        "scripts/guards/gsc-source-guard.js line 147 raises GSC_STALE only when freshnessStatus === 'STALE'"
+      ],
+      "impact": "guard #9 check 2 is silent while the cliff 28d input is 16 days old; the 72h freshness rule effectively does not run and reports can cite stale data with a green gate",
+      "owner": "ops tooling / GSC index owner",
+      "action": "rebuild GSC数据/index.json from disk with the generator, then rerun guard #9; do not hand-edit the index (derived file; SOP-5 / contract 6.4)",
+      "generator_note": "grep 'gsc-data-index-v1|filesByDate' under scripts/ = 0 hits; the rebuild path must be identified by the owner or added as --rebuild-index"
+    },
+    {
+      "id": "GSC-A16",
+      "class": "INGEST_7D_UNUSED",
+      "severity": "P1",
+      "evidence": [
+        "GSC数据/*2026-10-23* = 8 files: 24h + 7d only (3-site summary, plus hk/jp/us 7d and 24h); the 10-23 batch contains no 28d and no 3mo export",
+        "latest 28d batch remains 2026-10-15 (cliff latest day 2026-10-12, age 16 days at this run)",
+        "scripts/gsc-cliff-detector.py line 93 reads only '{site}站点28天数据*.xlsx'; line 38 realtime patterns cover 24h only; there is no 7d branch"
+      ],
+      "impact": "a 7d export with file date 2026-10-23 (5 days old by export date) sits on disk but feeds no metric; the correct statement is 'no fresh 28d batch', not 'no fresh data'. This is also why the detector can only keep quoting the 24h window dated 2026-10-22.",
+      "owner": "ops tooling",
+      "action": "add a 7d fallback/parallel read to the detector and label every ratio with its source window; xlsx cannot be parsed in this sandbox, so no 7d value is estimated here",
+      "no_number_policy": "file dates only; no derived impression/click/CTR figure from the unparsed 7d workbook"
+    }
+  ],
+  "candidate_tasks": [
+    {
+      "TASK_ID": "GSC-20261028-C6",
+      "INTENT": "Restore the GSC freshness gate by rebuilding the stale index that makes guard #9 blind",
+      "APPROVED_BY": "K3 2026-09-02 §K.1.3 freshness gate (72h) + contract §6.4 derived-file discipline; tooling fix, no page change",
+      "TARGET_QUERY_OR_URL": "GSC数据/index.json",
+      "INPUT_EVIDENCE": "lastBuild 2026-10-10 vs on-disk exports 2026-10-23; guard #9 line 147 only checks freshnessStatus",
+      "WRITE_SCOPE": "GSC数据/index.json (via generator only)",
+      "DO_NOT_TOUCH": "src/; queue statuses; hand-edited index values",
+      "TRUTH_SOURCE": "actual files on disk under GSC数据/",
+      "ACTION": "rebuild the index, confirm filesByDate includes 2026-10-15/16/19/23 and latestFreshData is the newest export date, then rerun scripts/guards/gsc-source-guard.js",
+      "GATES": "index shape check (schema/totalFiles/filesByDate); guard #9 output diff; no src touched",
+      "ONLINE_VERIFY": "n/a (internal index)",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-gsc-feedback.md or ops report",
+      "STOP_IF": "no generator can be identified and a hand rebuild would change semantics",
+      "NEXT_CHECK": "2026-10-29"
+    },
+    {
+      "TASK_ID": "GSC-20261028-C7",
+      "INTENT": "Stop discarding the 7d GSC export when the 28d batch is older",
+      "APPROVED_BY": "recovery-mode read discipline (report must carry data age and a like-for-like window); tooling fix, no page change",
+      "TARGET_QUERY_OR_URL": "scripts/gsc-cliff-detector.py",
+      "INPUT_EVIDENCE": "10-23 batch has 7d but no 28d; detector line 93 only globs 28d; latest 28d batch 10-15",
+      "WRITE_SCOPE": "scripts/gsc-cliff-detector.py (+ its output labeling)",
+      "DO_NOT_TOUCH": "GSC data files; src/; historical cliff JSONs",
+      "TRUTH_SOURCE": "file names and export dates only until xlsx parsing is available",
+      "ACTION": "add 7d input support with an explicit window/source label, keep the fixed pre-cliff baseline for comparability, and never mix 7d and 28d denominators",
+      "GATES": "script-only change; rerun produces a labeled source window; no number without a parsed workbook",
+      "ONLINE_VERIFY": "n/a (internal tooling)",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-gsc-feedback.md or ops report",
+      "STOP_IF": "7d sheet layout is incompatible and no sample can be parsed to verify the mapping",
+      "NEXT_CHECK": "2026-10-30"
+    }
+  ],
+  "not_done": [
+    "no fresh GSC pull (pwsh/scripts unavailable in this sandbox; no credential use attempted)",
+    "no src change, no title/description change, no page consolidation, no redirect change",
+    "run-1 artifacts not rewritten: gsc-daily-anomaly-2026-10-28.json, gsc-cliff-2026-10-28.json, lane-status.json, lane-runs.jsonl",
+    "strategy-task-queue.json not mutated (still the 2026-10-28T06:00 version; GSC lane may only supply candidates)"
+  ],
+  "next_check": {
+    "date": "2026-10-29",
+    "must_check": [
+      "new 28d export present and its latest day (target >= 2026-10-26)",
+      "GSC数据/index.json rebuilt (lastBuild >= 2026-10-26) so guard #9 can raise STALE again",
+      "whether 貼紙印刷 recovers on a fresh window",
+      "whether 海報印刷 clicks return after the price decision (if released)"
+    ]
+  }
+}

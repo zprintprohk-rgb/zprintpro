@@ -2,20 +2,22 @@
 
 VERDICT: OK
 RECOVERY: 108.3%
-CONSUMED: run-context-ZP-gsc-feedback.json @ 2026-10-28 19:37:44 | lane-status.json @ 2026-10-28 11:30 | lane-results-bus-contract.md @ v1+§6/§7
-DELIVERED: .hermes/logs/gsc-daily-anomaly-2026-10-28.json, .hermes/logs/2026-10-28-ZP-gsc-feedback.md
-NEXT: 2026-10-29 先验新 GSC 导出是否到位（28d + query×page×country，最新日 ≥ 2026-10-26）；未到位则再次向 K3 报数据缺口（附具体导出清单），不做新结论
-RETRY_OF: ZP-gsc-feedback-20261027T201311（该轮为 MISSING_CREDENTIAL 空转 + 系统兜底占位报告，无真实产物；本轮补交其缺失的当日报告职责，不重做任何已交付数据动作）
-IDEMPOTENCY: this_run_key=eeab665ac84424ea；上一轮 aabde12b39bb6f5c（换日，新 key）；无 DUPLICATE_IDEMPOTENCY_KEY
+CONSUMED: run-context-ZP-gsc-feedback.json @ 2026-10-28 20:13:01（本 run；19:47 轮为 @19:37:44） | lane-status.json @ 2026-10-28 19:42 | lane-results-bus-contract.md @ v1+§6/§7
+DELIVERED: .hermes/logs/gsc-daily-anomaly-2026-10-28.json, .hermes/logs/gsc-pipeline-health-2026-10-28.json, .hermes/logs/2026-10-28-ZP-gsc-feedback.md
+NEXT: 2026-10-29 验两件：新 GSC 导出是否到位（28d + query×page×country，最新日 ≥ 2026-10-26）、`GSC数据/index.json` 是否重建（lastBuild ≥ 10-26，门童 #9 恢复报警）；未到位则报数据缺口（附导出清单），不写新结论
+RETRY_OF: (1) ZP-gsc-feedback-20261027T201311（MISSING_CREDENTIAL 空转 + 系统兜底占位，无真实产物；19:47 轮已补交当日报告职责）; (2) UNRESOLVED_DAY 2026-10-28（lane-status @19:42 判 STALE "ran but no report file dated 2026-10-28"）→ 已由 ZP-gsc-feedback-20261028T194739-35600 交付本文件收口，20:13 轮复核确认、不重做分析
+IDEMPOTENCY: 19:47 轮 key=eeab665ac84424ea；本轮 key 与之相同（同日同键，命中幂等，分析跳过）；更早 10-27 轮 aabde12b39bb6f5c；无 DUPLICATE_IDEMPOTENCY_KEY
 COVERAGE: ANALYSIS_DELIVERED / FRESH_PULL_NOT_EXECUTED（pwsh/脚本在本沙箱不可用）；分析基于最新可用全量导出，窗口见 §1
 CONFIDENCE: LOW（WARN_STALE，见 §1）
-SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 + 14 类异常 + 下一验证点（契约 §6.1 四项齐）；未拉新档 ≠ 空转，缺口已在 §8 明列
+SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 + 16 类异常（19:47 首批 14 + 20:13 复核新增 2）+ 下一验证点（契约 §6.1 四项齐）；未拉新档 ≠ 空转，缺口已在 §8 明列
+RUN: 2026-10-28 20:13 二次触发（计划任务当日第二次；idempotency_key=eeab665ac84424ea 与 19:47 轮相同 → 分析部分 ALREADY_DONE，本轮只做重试项收口 + 管道健康复核）
+RUN_DELTA: §10 新增（重试项收口 / 索引新鲜度失效 A15 / 7d 档未入链路 A16 / 队列只读复核）；新增机器可读产物 .hermes/logs/gsc-pipeline-health-2026-10-28.json
 
 ---
 
 ## 0. 本轮一句话结论
 
-**展示与点击已回到断崖前水平之上（日历日口径 108.3%，点击 +34.9%），但"已恢复"不能定稿**：一手 28d 文件最新日只到 2026-10-12（16 天龄），query 导出止 2026-10-25，date 导出止 2026-10-23；同时探测器的 `129.5%` 是一个**被 4 轮复用的冻结 24h 文件**算出来的，不能当作"今日恢复系数"。本轮把三件事拆开交付：① 用同日历日口径复算恢复曲线；② 把 14 类异常按可执行性分级；③ 给出机会 / 退场 / 内耗三个队列与 5 个候选任务包。**本轮未改任何页面、未改共享队列、未改任何总线文件。**
+**展示与点击已回到断崖前水平之上（日历日口径 108.3%，点击 +34.9%），但"已恢复"不能定稿**：一手 28d 文件最新日只到 2026-10-12（16 天龄），query 导出止 2026-10-25，date 导出止 2026-10-23；同时探测器的 `129.5%` 是一个**被 4 轮复用的冻结 24h 文件**算出来的，不能当作"今日恢复系数"。本轮把三件事拆开交付：① 用同日历日口径复算恢复曲线；② 把 16 类异常按可执行性分级；③ 给出机会 / 退场 / 内耗三个队列与候选任务包（19:47 首批 5 个 + 20:13 复核新增 C6/C7）。**本轮未改任何页面、未改共享队列、未改任何总线文件。**
 
 ---
 
@@ -131,7 +133,7 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 
 ---
 
-## 5. 异常分类（14 类，按可执行性排序）
+## 5. 异常分类（16 类，按可执行性排序；A15/A16 为 20:13 复核新增）
 
 > 箭头约定：全文默认 **上轮→本轮**；§4 已显式写"本轮 / 上轮"，无箭头歧义。
 
@@ -151,6 +153,8 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 | A12 | CHURN_BREACH | P1 | 教科書 印刷 9→35 展示、25.89→49.29（阈值 ≥30 已破） |
 | A13 | EN_CONSOLIDATION | P2 | en 展示 -17.1%，但排名 -3.10、CTR +0.18pp、首页词 +4、行数 -75 |
 | A14 | SEASONAL_OPEN | P2 | 年曆印刷 0→11（pos 6.09，1 点击）；利是封訂製 1 点击；ja 月曆簇 9→68；ja 畢業紀念冊簇 19→43（pos 58.79→29.33） |
+| **A15** | **INDEX_STALE_GATE_BLIND** | **P1** | `GSC数据/index.json` lastBuild=2026-10-10T22:43、latestFreshData=2026-10-09、filesByDate 最大 2026-10-09、却标 `FRESH/stalenessDays=1`；磁盘已有 10-15/16/19/23 导出（对该 index 检索这 4 个日期 = 0 命中）。`gsc-source-guard.js` L147 只在 `freshnessStatus==='STALE'` 时报 → **门童 #9 检查② 假阴性**，28d 实际 16 天龄 |
+| **A16** | **INGEST_7D_UNUSED** | **P1** | 10-23 批 8 个文件只有 24h+7d，无 28d/3mo；最新 28d 仍 10-15 档。`gsc-cliff-detector.py` L93 只 glob `{站点}站点28天数据*.xlsx`、L38 只认 24h → **7d 档（导出日 10-23）在盘但零消费**；"无新数据"应改述为"无新 28d 档" |
 
 ### 5.1 需要点名的三个"别误判"
 
@@ -210,8 +214,10 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 | `GSC-20261028-C3` | 貼紙印刷 失位诊断（双指南稀释 vs 索引 vs 意图迁移） | 类目 + 两篇指南 | none | 任务 J 锁词（只诊断） | 2026-11-04 |
 | `GSC-20261028-C4` | 修 KPI 面板带钱词 join（貼紙印刷/月曆印刷 不再是"无记录"） | `scripts/k3-kpi-panel.mjs` | 脚本 | §0.37 监控口径 | 2026-11-03 |
 | `GSC-20261028-C5` | 教科書 印刷 churn 诊断（≥30 阈值已破） | ja 教育页 | none | 10-09 大脑指令 #4（冻结优先） | 2026-11-01 |
+| `GSC-20261028-C6` | 重建 `GSC数据/index.json`（18 天未重建，导致门童 #9 假阴性） | `GSC数据/index.json`（派生，须生成器重建） | 生成器 only | §K.1.3 新鲜度闸门 | 2026-10-29 |
+| `GSC-20261028-C7` | 让 detector 消费 10-23 的 7d 档（现只吃 28d+24h） | `scripts/gsc-cliff-detector.py` | 脚本 | 恢复期同源同窗口径 | 2026-10-30 |
 
-每个任务的 `INPUT_EVIDENCE / DO_NOT_TOUCH / TRUTH_SOURCE / GATES / ONLINE_VERIFY / STOP_IF` 全文见 `.hermes/logs/gsc-daily-anomaly-2026-10-28.json` → `candidate_tasks`。
+C1-C5 的 `INPUT_EVIDENCE / DO_NOT_TOUCH / TRUTH_SOURCE / GATES / ONLINE_VERIFY / STOP_IF` 全文见 `.hermes/logs/gsc-daily-anomaly-2026-10-28.json` → `candidate_tasks`；C6-C7 全文见 `.hermes/logs/gsc-pipeline-health-2026-10-28.json` → `candidate_tasks`（20:13 复核新增，不改写前列文件）。
 
 ---
 
@@ -221,10 +227,56 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 - ❌ 未改 `src/`、未改 title/desc、未合并页面、未动 301、未动贺卡资产。
 - ❌ 未改 `strategy-task-queue.json`（跨车道避让；今日 06:00 已被复盘车道写入）。
 - ❌ 未改 `gsc-cliff-2026-10-28.json`、`lane-status.json`、`lane-runs.jsonl`。
-- ✅ 只新增两个文件：本报告 + `gsc-daily-anomaly-2026-10-28.json`。与今日其他车道（`2026-10-28-ZP-k3-review.md`、`2026-10-28-ZP-daily-content.md` 等）零文件重叠。
-- ⚠️ **总线自相矛盾，需下一轮注意**：`lane-status.json`（11:30 生成）仍把 10-27 gsc-feedback 记为 `OK / dsh_exit=null / report=NONE`；而 19:27 的修复报告四方对账结论是 `FAILED, dsh_exit=1 (MISSING_CREDENTIAL)`。本轮按后者认定上一轮为空转。**本会话 preflight 19:37 显示进程环境有 key，只能证明本次调用通过预检，不能证明计划任务凭据已修复**（10-28 07:10 k3-review 仍被 preflight 阻断）。恢复判定仍需真实 wrapper `dsh exit=0` + 四方一致。
+- ✅ 19:47 轮新增：本报告 + `gsc-daily-anomaly-2026-10-28.json`；20:13 复核轮再加 `gsc-pipeline-health-2026-10-28.json`（共 3 个文件，见 §10）。与今日其他车道（`2026-10-28-ZP-k3-review.md`、`2026-10-28-ZP-daily-content.md` 等）零文件重叠。
+- ⚠️ **总线自相矛盾，需下一轮注意**：19:47 轮读到的 `lane-status.json`（当时标 11:30 版）仍把 10-27 gsc-feedback 记为 `OK / dsh_exit=null / report=NONE`；20:13 轮读到的 19:42 版里，10-27 记录同样是 `OK / report=NONE`。而 19:27 的修复报告四方对账结论是 `FAILED, dsh_exit=1 (MISSING_CREDENTIAL)`。本轮按后者认定 10-27 为空转。**本会话 preflight 19:37/20:13 显示进程环境有 key，只能证明本次调用通过预检，不能证明计划任务凭据已修复**（10-28 07:10 k3-review 仍被 preflight 阻断）。恢复判定仍需真实 wrapper `dsh exit=0` + 四方一致。
 
 ---
+
+## 10. 20:13 二次触发复核（本 run；幂等，分析不重做）
+
+### 10.1 本轮定位
+
+- `run-context` @ 2026-10-28 20:13:01 的 `retry_queue` 只有 1 项：`UNRESOLVED_DAY 2026-10-28 / STALE / "ran but no report file dated 2026-10-28"`。
+- 该判定来自 `lane-status.json` @ 19:42（生成时间早于总线记录的 19:47:39 收尾）；总线记录 `ZP-gsc-feedback-20261028T194739-35600`（dsh_exit=0 / wrapper_exit=0 / verdict=OK / report=本文件 / head=1a40ba71）与本文件互为证据 → **重试项实质已收口**。
+- 本轮 `idempotency_key` = `eeab665ac84424ea`，与 19:47 轮相同。按契约 §2.1/§2.2：**分析部分 `ALREADY_DONE(since 2026-10-28 19:47)`**，算力只投入未完成项 = 数据可观测性 / 索引新鲜度 / 摄取链路复核。
+
+### 10.2 RETRY_OF 四方核对
+
+| 证据 | 内容 | 判定 |
+|---|---|---|
+| 总线 `lane-runs.jsonl`（第 55 行） | run_id `ZP-gsc-feedback-20261028T194739-35600`，dsh_exit=0，wrapper_exit=0，verdict=OK，report 指向本文件 | ✅ |
+| 报告文件 | 本文件在盘，首段四字段齐（VERDICT/CONSUMED/DELIVERED/NEXT），`VERDICT: OK` | ✅ |
+| lane-status 判 STALE 的原因 | 19:42 生成时本文件尚未落盘（上一轮 preflight 19:37:44、总线记录 19:47:39）→ 时序可解释，非真缺失 | ✅ |
+| 内容 | 14 类异常（首批）+ 3 队列 + 5 候选任务 + 下一验证点 | ✅ |
+
+结论：`RETRY_OF` 关闭；**不重跑分析、不改写 `gsc-daily-anomaly-2026-10-28.json`**。
+
+### 10.3 新发现 A15（P1 · 测量缺陷）：`index.json` 18 天未重建，门童 #9 新鲜度检查失效
+
+- 事实：`GSC数据/index.json` → `lastBuild=2026-10-10T22:43`、`latestFreshData=2026-10-09`、`filesByDate` 最大键 `2026-10-09`、却标 `freshnessStatus=FRESH` / `stalenessDays=1`。磁盘实际已有 `2026-10-15 / 10-16 / 10-19 / 10-23` 导出；对该 index 检索这 4 个日期 = **0 命中**。
+- 后果：`scripts/guards/gsc-source-guard.js` L147 **只在 `freshnessStatus === 'STALE'` 时**报 `GSC_STALE`。它现在读到 `FRESH` → **检查② 假阴性**；与此同时 cliff 28d 输入实际数据龄 16 天（§1.1）。"72h 禁数字结论"这道闸门等于长期静默。
+- 边界：**不手改 index.json**（派生文件须由生成器重建，SOP-5 / 契约 §6.4）。`scripts/` 下检索 `gsc-data-index-v1|filesByDate` = 0 命中，仓内未见重建器 → 需 owner 指明生成路径或补 `--rebuild-index`。
+- 处置：登记 `GSC-20261028-C6`；重建后复跑门童 #9，确认能重新报警。
+
+### 10.4 新发现 A16（P1 · 摄取缺陷）：10-23 的 7d 档在盘但未进分析链路
+
+- 事实：`GSC数据/*2026-10-23*` = 8 个文件，全部是 24h + 7d（三站点汇总 + hk/jp/us 的 7d/24h），**没有 28d / 3mo**；最新 28d 仍是 10-15 档（止 10-12，16 天龄）。
+- 检测器只取 `{站点}站点28天数据*.xlsx`（`scripts/gsc-cliff-detector.py` L93）+ 24h 档（L38），**无 7d 分支**。7d 档（导出日 2026-10-23，按导出日计 5 天龄）虽已落盘，既不进 cliff 系数、也不进本轮任何数字。
+- 影响：把本轮说成"完全没有新数据"会误导；精确表述是"**无新 28d 档；7d 档 5 天龄但零消费**"。这也解释了 detector 的 `recovery_ratio` 为何只能反复引用 10-22 的 24h 文件（A2）。
+- 边界：本沙箱不能解析 xlsx（pwsh/脚本不可用），**不估算任何 7d 数字**，只登记摄取缺口。
+- 处置：登记 `GSC-20261028-C7`；7d 回退须带窗口标签，且不得与 28d 分母混算。
+
+### 10.5 队列与文件边界（只读复核）
+
+- `strategy-task-queue.json` 仍为 `2026-10-28T06:00:00+08:00` 版本；本车道两项状态未变：`MEASURE-20261028-ATTRIBUTION`=`CLOSED_BY_K3_S0.37`、`GEO-20261103-AI-PROBE-S1`=`SCHEDULED`。**本轮未写**。
+- 未改 `src/`、title/desc、301、贺卡资产；未改 `lane-status.json` / `lane-runs.jsonl` / `gsc-cliff-2026-10-28.json` / `gsc-daily-anomaly-2026-10-28.json`。
+- 今日 sibling 产物（`2026-10-28-daily-content.md`、`2026-10-28-ZP-daily-content.md`、`2026-10-28-ZP-k3-review.md`）**未读改**；本轮新增/改动仅本车道文件（本报告 + `gsc-pipeline-health-2026-10-28.json`）。
+
+### 10.6 本轮增量结论
+
+- 恢复判定不变：**108.3%**（日历日 10-13..10-22，§2）；129.5% 仍是冻结 24h 输出，不进趋势；`WARN_STALE` 未解除。
+- 新增两条 P1 **管道缺陷**（A15/A16），都不需要改页面，只需修索引 / 修摄取；对应 `C6/C7`，全文见 `.hermes/logs/gsc-pipeline-health-2026-10-28.json`。
+- 下一验证点仍是 **2026-10-29**，新增两项硬检查：新 28d 档是否到位；`index.json` 是否重建（`lastBuild ≥ 2026-10-26`）且门童 #9 恢复报警能力。
 
 ## SOP-10 5 问门禁 (K3 §0.22)
 
@@ -248,7 +300,12 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 - .hermes/logs/2026-10-28-automation-runtime-repair-and-feedback-report.md (凭据/四方对账事实)
 - .hermes/logs/2026-10-27-nengajo-claims-inventory.md (NENGAJO_LIVE=true, commit 3eed6277, sitemap 已登记)
 - 线上探针: https://zprintpro.com/ja/nengajo-2027/ (HTTP 200, 2026-10-28; title/H1/6 SKU 表正常渲染)
-校准状态: 待校准 (下次校准 = K3 导出 2026-10-26..10-28 新档后)
+- GSC数据/index.json (lastBuild 2026-10-10T22:43; latestFreshData 2026-10-09; 与磁盘 10-15/16/19/23 导出不一致 → A15)
+- GSC数据/2026-10-23 批次 (8 文件 = 24h+7d; 无 28d/3mo) + GSC数据/2026-10-15 批次 (最新 28d, 止 10-12 → A16)
+- scripts/gsc-cliff-detector.py L38/L93 (只吃 28d+24h) + scripts/guards/gsc-source-guard.js L147 (只在 freshnessStatus==='STALE' 报)
+- .hermes/logs/gsc-pipeline-health-2026-10-28.json (2026-10-28 20:13 复核产物: A15/A16 + C6/C7)
+- .hermes/logs/lane-runs.jsonl 第 55 行 (run ZP-gsc-feedback-20261028T194739-35600, verdict=OK, report 指向本文件)
+校准状态: 待校准 (下次校准 = K3 导出 2026-10-26..10-28 新档 + GSC数据/index.json 重建后)
 撤回声明: 无 (本轮未撤回任何既有数字; 仅纠正 129.5% 的使用方式, 该值本身作为"冻结 24h 文件的输出"仍真实)
 ```
 
@@ -256,8 +313,8 @@ SUCCESS_EVIDENCE: gsc-cliff-2026-10-28.json（当日数据产物）+ 本报告 +
 
 | 日期 | 验证什么 | 成功阈值 |
 |---|---|---|
-| **2026-10-29** | 新 GSC 导出是否到位（28d + query×page×country，最新日 ≥10-26）；`lane-status.json` 是否已把 10-27 修正为 FAILED | 到位 → 用同口径复算 108.3% 是否成立；未到位 → 再次报数据缺口（附导出清单），不写新结论 |
+| **2026-10-29** | 新 GSC 导出是否到位（28d + query×page×country，最新日 ≥10-26）；`GSC数据/index.json` 是否重建（`lastBuild ≥ 10-26`，门童 #9 恢复报警）；`lane-status.json` 是否已把 10-27 修正为 FAILED | 到位 → 用同口径复算 108.3% 是否成立；未到位 → 再次报数据缺口（附导出清单），不写新结论；index 未重建 → C6 升级 |
 | 2026-11-01 | 教科書 印刷 churn 诊断（月复盘） | 分清索引/内耗/意图；不做无依据改写 |
-| 2026-11-03 | KPI 面板 join 修复；GEO 探针（既有 SCHEDULED，本车道不代跑） | 貼紙印刷/月曆印刷 不再显示"无记录" |
+| 2026-11-03 | KPI 面板 join 修复；GEO 探针（既有 SCHEDULED，本车道不代跑）；C6 重建后的门童 #9 复跑 | 貼紙印刷/月曆印刷 不再显示"无记录"；门童 #9 能在旧档上正确报 STALE |
 | 2026-11-04 | 年賀状簇上线后 14 天；CTR 池改动（若有）；貼紙印刷 14 天位次 | 年賀状有展示即报胜；貼紙印刷 回到 ≤25（≈上轮 24.52） |
 | 2026-11-06 | 海報印刷 结构裁决后 14 天 | 类目占比升、查询 CTR 回升 |

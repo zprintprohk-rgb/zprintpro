@@ -23,8 +23,8 @@
       "approval_gate": "K3 administrator stores a valid DeepSeek credential outside the repository",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-10-28",
-      "result": "MISSING_CREDENTIAL on 2026-10-27; no recovery claim until a real run succeeds"
+      "next_check": "2026-10-29",
+      "result": "DONE on 2026-10-28: credential stored (Machine) + smoke PASS; real run ZP-gsc-feedback four-party verified OK (dsh_exit=0, wrapper exit=0, lane-runs completed, report 2026-10-28-ZP-gsc-feedback.md VERDICT:OK, schtasks LastTaskResult=0)"
     },
     {
       "task_id": "ZH-POSTER-20261028-PROCUREMENT",

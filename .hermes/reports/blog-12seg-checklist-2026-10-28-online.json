@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T10:44:16.966Z",
+ "generated_at": "2026-10-28T12:08:12.523Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2755,54 +2755,54 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191462",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/packaging-box-pricing-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180497",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192576",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/poster-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189613",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=217522",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/foil-stamping-3-applications-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182680",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/zh-hk/blog/hong-kong-printing-cost-baseline-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "zh-hk",
@@ -2926,9 +2926,9 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182292",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: This operation was aborted (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
