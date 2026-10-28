@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T06:00:00+08:00",
+  "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
+  "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
+  "tasks": [
+    {
+      "task_id": "OPS-20261028-DSH-CREDENTIAL",
+      "source_strategy": "2026-10-28-three-strategy-completion-and-next-phase",
+      "market": "operations",
+      "target": "Windows Task Scheduler dsh --profile headless",
+      "evidence": [
+        ".hermes/logs/cron-ZP-daily-content.log",
+        ".hermes/logs/cron-ZP-gsc-feedback.log"
+      ],
+      "score": 100,
+      "score_model": "operational-blocker",
+      "write_scope": [
+        "scripts/",
+        ".hermes/cron-run/",
+        ".hermes/logs/"
+      ],
+      "approval_gate": "K3 administrator stores a valid DeepSeek credential outside the repository",
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "next_check": "2026-10-28",
+      "result": "MISSING_CREDENTIAL on 2026-10-27; no recovery claim until a real run succeeds"
+    },
+    {
+      "task_id": "ZH-POSTER-20261028-PROCUREMENT",
+      "source_strategy": "seven-clusters POSTER-P1-09",
+      "market": "zh-hk",
+      "target": "/zh-hk/category/posters/ and approved primary poster PDP only",
+      "evidence": [
+        "gsc-deep-analysis-2026-10-26: 海報印刷 278 imps, 0 clicks, pos 14.98",
+        "e-print poster official page: quantity/price/turnaround table",
+        "2026-10-27 execution matrix"
+      ],
+      "score": 98.45,
+      "score_model": "gsc-opportunity-v1",
+      "write_scope": [
+        "approved poster source fields only"
+      ],
+      "approval_gate": "K3-2 rush boundary and K3-7 claims policy",
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-04 after any approved release",
+      "result": "Internal links delivered; procurement answers not released"
+    },
+    {
+      "task_id": "ZH-PACKAGING-20261028-BATCH1",
+      "source_strategy": "packaging D2 batch 1",
+      "market": "zh-hk+en+ja",
+      "target": "Exact files and strings in docs/2026-10-28-packaging-batch1-execution-pack.md",
+      "evidence": [
+        "docs/2026-10-26-packaging-truth-ledger.md",
+        "docs/2026-10-27-packaging-k3-decision-package.md",
+        ".hermes/logs/2026-10-28-packaging-batch1-execution-pack-report.md"
+      ],
+      "score": 95,
+      "score_model": "analyst-priority-truth-risk",
+      "write_scope": [
+        "src/data/products.ts",
+        "src/data/category-seo-content.ts",
+        "src/data/blog-posts.ts",
+        "src/data/blog-data/zh-hk.json",
+        "zprintpro-sku-seo-data.csv then generator"
+      ],
+      "approval_gate": "K3 explicit approval of batch 1; preserve greeting-card assets and 301 mappings",
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-04 after release",
+      "result": "Execution pack ready; docs-only; production sources not changed"
+    },
+    {
+      "task_id": "EN-STICKER-20261028-SMALLBATCH",
+      "source_strategy": "dual-engine E1",
+      "market": "en",
+      "target": "/en/product/small-batch-stickers/",
+      "evidence": [
+        "gsc-deep-analysis-2026-10-26: small batch sticker printing 49 imps, 0 clicks, pos 4.77",
+        "Sticker Mule official custom stickers/samples pages",
+        "2026-10-27 execution matrix E1"
+      ],
+      "score": 90,
+      "score_model": "analyst-priority-near-page-one",
+      "write_scope": [
+        "approved small-batch PDP fields and necessary guide links only"
+      ],
+      "approval_gate": "K3-6 unit/price/case-study truth and approved outbound-link scope; title freeze remains",
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-03 for existing E1 link baseline; 7/14/28 days after any new release",
+      "result": "Inbound link delivered; procurement experiment not released"
+    },
+    {
+      "task_id": "EN-CATALOG-20261028-TRUTH",
+      "source_strategy": "dual-engine E5 + BOOK-P0-04",
+      "market": "en",
+      "target": "catalog guide/PDP division and catalog/A2 MOQ fields",
+      "evidence": [
+        "UPrinting official catalog/booklet pages",
+        "2026-10-27 execution matrix K3-3/K3-4"
+      ],
+      "score": 82,
+      "score_model": "analyst-priority-procurement-truth",
+      "write_scope": [
+        "approved catalog/A2 fields only"
+      ],
+      "approval_gate": "K3-3 MOQ and K3-4 currency truth",
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-06 after release",
+      "result": "Guide/PDP links and division delivered; truth fields pending"
+    },
+    {
+      "task_id": "JA-C109-20261028-DEADLINE",
+      "source_strategy": "dual-engine JA-P1-12 + J1",
+      "market": "ja",
+      "target": "/ja/comiket-c109/ and approved doujin PDP fields",
+      "evidence": [
+        "C109 announced for 2026-12-29 to 2026-12-31",
+        "Raksul booklet and Printpac doujin/ondemand official pages",
+        "gsc-deep-analysis-2026-10-26: ja doujin cluster pos improved to 19.06"
+      ],
+      "score": 88,
+      "score_model": "analyst-priority-time-window",
+      "write_scope": [
+        "approved C109/doujin content fields only"
+      ],
+      "approval_gate": "K3-1 price/currency and K3-2 rush/direct-delivery boundaries",
+      "owner_lane": "ZP-daily-content",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-04 and every 14 days through the C109 window",
+      "result": "Checklist, reverse schedule and J1 links delivered; claims pending"
+    },
+    {
+      "task_id": "MEASURE-20261028-ATTRIBUTION",
+      "source_strategy": "seven-clusters MEASURE-15 + K3-8",
+      "market": "all",
+      "target": "GA4 + 008 + orders by landing page and locale",
+      "evidence": [
+        "2026-10-27 execution matrix MEASURE-15",
+        "no observed unified conversion output as of 2026-10-28"
+      ],
+      "score": 93,
+      "score_model": "measurement-blocker",
+      "write_scope": [
+        ".hermes/logs/",
+        "read-only GA4/008/order exports"
+      ],
+      "approval_gate": "K3 read-only data access authorization",
+      "owner_lane": "ZP-gsc-feedback",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-01",
+      "result": "KPI panel exists; qualified-inquiry attribution not verified"
+    },
+    {
+      "task_id": "GEO-20261103-AI-PROBE-S1",
+      "source_strategy": "seven-clusters MEASURE-15",
+      "market": "all",
+      "target": "Fixed seven-cluster AI probe question set",
+      "evidence": [
+        "docs/2026-10-27-geo-ai-face-probe-kit-nov2026.md"
+      ],
+      "score": 75,
+      "score_model": "scheduled-measurement",
+      "write_scope": [
+        ".hermes/logs/",
+        ".hermes/reports/"
+      ],
+      "approval_gate": "Use fixed kit; record engine/date/answer/citation URL; never substitute ordinary web search",
+      "owner_lane": "ZP-gsc-feedback",
+      "status": "SCHEDULED",
+      "next_check": "2026-11-03",
+      "result": "Kit ready; no baseline claim before actual probes"
+    },
+    {
+      "task_id": "REVIEW-20261030-WEEKLY",
+      "source_strategy": "2026-10-28-data-driven-next-phase-strategy",
+      "market": "operations",
+      "target": "Weekly execution, strategy and recovery review",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/strategy-task-queue.json"
+      ],
+      "score": 85,
+      "score_model": "governance",
+      "write_scope": [
+        ".hermes/logs/",
+        "docs/"
+      ],
+      "approval_gate": "SCALE/HOLD/FIX/STOP only from observed evidence; no automatic prompt or production rewrites",
+      "owner_lane": "ZP-weekly-meta",
+      "status": "SCHEDULED",
+      "next_check": "2026-10-30",
+      "result": "Pending first upgraded weekly review"
+    },
+    {
+      "task_id": "REVIEW-20261101-MONTHLY",
+      "source_strategy": "2026-10-28-data-driven-next-phase-strategy",
+      "market": "operations",
+      "target": "Monthly market/cluster resource reallocation and next-month dispatch",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/strategy-task-queue.json",
+        "GSC and conversion coverage when available"
+      ],
+      "score": 85,
+      "score_model": "governance",
+      "write_scope": [
+        ".hermes/logs/",
+        "docs/"
+      ],
+      "approval_gate": "No ROI claim without conversion coverage; no AI citation claim without actual probe",
+      "owner_lane": "ZP-monthly-matrix",
+      "status": "SCHEDULED",
+      "next_check": "2026-11-01",
+      "result": "Pending first upgraded monthly review"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+      "source_strategy": "periodic-review-weekly-2026-10-28",
+      "market": "operations",
+      "target": "Resolve ZP-weekly-meta MISSING with bounded recovery: 触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo"
+      ],
+      "score": 100,
+      "score_model": "execution-health-blocker",
+      "write_scope": [
+        "K3-admin runtime/configuration only"
+      ],
+      "approval_gate": "K3 administrator action; no automatic retry",
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "next_check": "2026-10-29",
+      "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
+      "source_strategy": "periodic-review-weekly-2026-10-28",
+      "market": "operations",
+      "target": "Resolve ZP-blog-deepfix MISSING with bounded recovery: 触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+      ],
+      "score": 100,
+      "score_model": "execution-health-blocker",
+      "write_scope": [
+        "K3-admin runtime/configuration only"
+      ],
+      "approval_gate": "K3 administrator action; no automatic retry",
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "next_check": "2026-10-29",
+      "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+      "source_strategy": "periodic-review-weekly-2026-10-28",
+      "market": "operations",
+      "target": "Resolve ZP-monthly-matrix UNKNOWN with bounded recovery: 窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+      ],
+      "score": 100,
+      "score_model": "execution-health-blocker",
+      "write_scope": [
+        "K3-admin runtime/configuration only"
+      ],
+      "approval_gate": "K3 administrator action; no automatic retry",
+      "owner_lane": "K3-admin",
+      "status": "BLOCKED_INFRA",
+      "next_check": "2026-10-29",
+      "result": "Dispatched by weekly review from observed UNKNOWN; not a completed fix"
+    }
+  ],
+  "last_review": {
+    "period": "weekly",
+    "date": "2026-10-28",
+    "report": ".hermes/logs/periodic-review-weekly-2026-10-28.json"
+  }
+}

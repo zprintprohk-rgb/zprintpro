@@ -138,6 +138,10 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'school-flyers': '/product/school-flyers/',
   'textbooks': '/product/textbooks/',
 };
+// 2026-10-28 K3 拍板 P2-CONSOL-01: packaging-box-price-2026 退役 301 收拢到 pricing-2026 (en/zh-hk/ja 三语)
+const RETIRED_BLOG_REDIRECTS: Record<string, string> = {
+  'packaging-box-price-2026': '/blog/packaging-box-pricing-2026/',
+};
 
 // 2026-10-12 K3 拍板 SKU 压缩: 退役 PDP 直接 URL 301 收拢 (不影响 QUOTE_PRODUCT_MAP 既有映射)
 // 2026-10-12 17:5x K3 拍板①改指真 PDP: 原 place-cards/wedding-invitations/greeting-cards
@@ -214,6 +218,17 @@ export async function middleware(request: NextRequest) {
     const target = RETIRED_PRODUCT_REDIRECTS[retiredMatch[2]];
     if (target) {
       url.pathname = `/${retiredMatch[1]}${target}`;
+      return NextResponse.redirect(url, 301);
+    }
+  }
+
+
+  // 优先级2.66：退役 blog slug → 301 收拢 (K3 2026-10-28 P2-CONSOL-01)
+  const retiredBlogMatch = pathname.match(/^\/(zh-hk|en|ja)\/blog\/([a-z0-9-]+)\/?$/);
+  if (retiredBlogMatch) {
+    const blogTarget = RETIRED_BLOG_REDIRECTS[retiredBlogMatch[2]];
+    if (blogTarget) {
+      url.pathname = `/${retiredBlogMatch[1]}${blogTarget}`;
       return NextResponse.redirect(url, 301);
     }
   }

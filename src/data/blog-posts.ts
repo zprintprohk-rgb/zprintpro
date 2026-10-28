@@ -1916,22 +1916,6 @@ const lpRushPrintingDeliveryGuide: BlogPostMeta = {
   },
 };
 
-const lpPackagingBoxPrice2026: BlogPostMeta = {
-  slug: 'packaging-box-price-2026',
-  categoryKey: 'packaging',
-  source: 'daily',
-  date: '2026-08-28',
-  title: {
-    'zh-hk': '包裝盒印刷價格 2026：500/1000/5000 個幾錢？ | 智印港',
-    en: 'Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro',
-    ja: 'パッケージ箱印刷価格 2026：500/1000/5000 個でいくら？ | ZprintPro',
-  },
-  excerpt: {
-    'zh-hk': '2026 包裝盒印刷價格：精裝盒 / 摺盒 / 快遞盒 / 瓦楞盒。500/1000/5000 個階梯報價、4 種紙材、4 種工藝升級、食品級・環保紙材可選。100 個起印，30 秒 AI 報價。',
-    en: 'Packaging box printing pricing 2026 US: rigid box, folding carton, mailer box, corrugated box. 500/1000/5000 piece tier pricing, 4 paper materials, 4 finish upgrades, food-grade and eco paper options, 100 MOQ.',
-    ja: 'パッケージ箱印刷 100 個〜。2026 年実勢価格：段ボール 500 個 ¥120-220/個、カラー箱 1000 個 ¥180-300/個、ギフト箱 5000 個 ¥370-590/個。4 大コスト要因、5 種用紙、4 FAQ、WhatsApp 30 秒見積。',
-  },
-};
 
 // 2026-09-18 新需求承接 #1 (K3 2026-09-17 拍板: 4 篇新需求承接提前至 P0 三篇之前)
 // 依据: docs/2026-09-17-website-traffic-expansion-plan-v1.md §五 路径 1 第 1 项 + §四 差距矩阵 (zine en/zh-hk 侧空白)
@@ -2516,7 +2500,6 @@ export const blogPosts: BlogPostMeta[] = [
   lpCertificatePrintingGuide,
   lp2027CalendarCompleteGuide,
   lpRushPrintingDeliveryGuide,
-  lpPackagingBoxPrice2026,
   lpZineSmallBatchBookletGuide,
   lpChildrensPictureBookGuide,
   lpPhotoBookPrintingGuide,
