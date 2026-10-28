@@ -44,6 +44,7 @@ import { getProductSeo } from '@/data/product-seo';
 import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap, skuMoneyFAQs } from '@/data/product-faqs';
+import SkuReviews from '@/components/product/SkuReviews';
 // 2026-09-29 GSC Rich Results「未填写 aggregateRating/review」449 项修复:
 // 真实评价唯一来源 (K3 8/4 P0-2 裁决禁编造) — 当前 0 条 → rating/reviews 为 undefined,
 // generateProductJsonLd 自动跳过 aggregateRating/review (输出与修复前一致, 零回归)。
@@ -770,6 +771,8 @@ export default function ProductPage({
         </div>
       </main>
       )}
+      {/* SKU 客戶評價 (K3 2026-10-28 方案A · A1批): fail-closed — 遷移未 apply/無數據時整段隱藏; 只展示 approved, 紅線=零編造 */}
+      <SkuReviews slug={product.slug} locale={locale} />
     </>
   );
 }
