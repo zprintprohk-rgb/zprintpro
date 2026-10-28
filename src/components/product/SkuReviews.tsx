@@ -155,7 +155,8 @@ export default function SkuReviews({ slug, locale }: { slug: string; locale: Loc
 
   return (
     <section className="mt-16 pt-10 border-t border-gray-200" aria-label={t.heading}>
-      <div className="bg-white rounded-2xl border border-[#E5E7EB] p-6 md:p-8">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-2xl border border-[#E5E7EB] p-5 sm:p-6 md:p-8">
         <div className="flex items-baseline gap-3 mb-5">
           <h2 className="text-xl md:text-2xl font-bold text-[#1D3465]">{t.heading}</h2>
           <span className="text-sm text-gray-500">
@@ -262,6 +263,7 @@ export default function SkuReviews({ slug, locale }: { slug: string; locale: Loc
             </form>
           )}
         </div>
+          </div>
       </div>
     </section>
   );
