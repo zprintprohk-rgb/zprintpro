@@ -3377,7 +3377,7 @@ export const products: Product[] = [
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes / Custom Quote | Gift Boxes & Premium Packaging', nameJa: '上製本箱 / 上製本箱 見積もり | パッケージボックス・化粧箱', title_zh: '精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港',
+    name: '精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes / Custom Quote | Gift Boxes & Premium Packaging', nameJa: '貼り箱（リジッドボックス） / 見積もり | パッケージボックス・化粧箱', title_zh: '精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港',
     description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 适配行业:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. Best for:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 適用業界:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
     features: [
       '灰板裱面，結構挺括',
@@ -3452,7 +3452,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港精裝盒印刷 灰板＋特種裱面紙 燙金',
       en: 'Custom Packaging Boxes & Gift Boxes | Rigid Boxes | Professional Packaging Online',
-      ja: 'パッケージボックス / ギフトボックス | 上製本箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      ja: 'パッケージボックス / ギフトボックス | 貼り箱 | オリジナルパッケージ・最短3-5日 | ZprintPro'
     },
   },
   
