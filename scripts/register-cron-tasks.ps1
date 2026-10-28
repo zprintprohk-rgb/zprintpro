@@ -156,6 +156,11 @@ foreach ($L in $Lanes) {
     'rem 2026-09-19: preflight (lock + run-context) -> dsh reads results bus FIRST -> host git -> release lock',
     'set PYTHONIOENCODING=utf-8',
     'set PYTHONUTF8=1',
+    # Load the secret into this process only. Task Scheduler services may retain an old
+    # environment after a Machine/User value changes; reading it here avoids a service restart.
+    # The key is never echoed, written to the repository, or placed in the dsh command line.
+    'if not defined DEEPSEEK_API_KEY for /f "usebackq delims=" %%K in (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable(''DEEPSEEK_API_KEY'',''Machine'')"`) do set "DEEPSEEK_API_KEY=%%K"',
+    'if not defined DEEPSEEK_API_KEY for /f "usebackq delims=" %%K in (`powershell.exe -NoProfile -Command "[Environment]::GetEnvironmentVariable(''DEEPSEEK_API_KEY'',''User'')"`) do set "DEEPSEEK_API_KEY=%%K"',
     "cd /d `"$MainRepo`"",
     "echo ===== run start %DATE% %TIME% ===== >> `"$LogDir\cron-$($L.Name).log`"",
     "`"$Python`" `"$MainRepo\scripts\lane-preflight.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`" --acquire >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
@@ -174,7 +179,7 @@ foreach ($L in $Lanes) {
     "call `"$Dsh`" --profile headless `"$msg`" >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
     'set RC=%ERRORLEVEL%',
     "echo ===== dsh exit=%RC% -- host-side git commit/push -- ===== >> `"$LogDir\cron-$($L.Name).log`"",
-    ("`"$Python`" `"$MainRepo\scripts\lane-git-commit.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`"" + $(if ($L.Name -eq 'ZP-gsc-feedback') { ' --include-matrix' } else { '' }) + " >> `"$LogDir\cron-$($L.Name).log`" 2>&1"),
+    ("`"$Python`" `"$MainRepo\scripts\lane-git-commit.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`" --dsh-exit %RC%" + $(if ($L.Name -eq 'ZP-gsc-feedback') { ' --include-matrix' } else { '' }) + " >> `"$LogDir\cron-$($L.Name).log`" 2>&1"),
     "`"$Python`" `"$MainRepo\scripts\lane-preflight.py`" --lane `"$($L.Name)`" --repo `"$MainRepo`" --release >> `"$LogDir\cron-$($L.Name).log`" 2>&1",
     "echo ===== run end   %DATE% %TIME% exit=%RC% ===== >> `"$LogDir\cron-$($L.Name).log`"",
     'exit /b %RC%'

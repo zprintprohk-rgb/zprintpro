@@ -1,0 +1,238 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Isolated regression tests; never executes a production wrapper or remote push."""
+import datetime as dt
+import importlib.util
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+import tempfile
+import types
+import unittest
+
+ROOT = Path(__file__).resolve().parents[2]
+LANE_GIT = ROOT / "scripts" / "lane-git-commit.py"
+PREFLIGHT = ROOT / "scripts" / "lane-preflight.py"
+FEEDBACK = ROOT / "scripts" / "strategy-feedback.py"
+LANE = "ZP-daily-content"
+DAY = "2026-10-28"
+
+
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+class RuntimeTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(prefix="zp-lane-test-")
+        self.repo = Path(self.tmp.name)
+        subprocess.run(["git", "init", "-b", "main"], cwd=self.repo, check=True, capture_output=True)
+        subprocess.run(["git", "config", "user.email", "test@example.invalid"], cwd=self.repo, check=True)
+        subprocess.run(["git", "config", "user.name", "Isolated Test"], cwd=self.repo, check=True)
+        self.write("src/data/products.ts", "export {};\n")
+        self.write("src/data/blog-data/.keep", "")
+        self.write("package.json", "{}\n")
+        self.write("scripts/check-encoding.js", "process.exit(0);\n")
+        self.write("node_modules/tsx/dist/cli.mjs", "")
+        self.write("node_modules/typescript/bin/tsc", "")
+        self.commit_all("fixture")
+
+    def tearDown(self):
+        self.tmp.cleanup()
+
+    def write(self, rel, text):
+        path = self.repo / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        return path
+
+    def commit_all(self, message):
+        subprocess.run(["git", "add", "--all"], cwd=self.repo, check=True, capture_output=True)
+        subprocess.run(["git", "commit", "-m", message], cwd=self.repo, check=True, capture_output=True)
+
+    def commit_count(self):
+        result = subprocess.run(["git", "rev-list", "--count", "HEAD"], cwd=self.repo,
+                                check=True, capture_output=True, text=True)
+        return int(result.stdout.strip())
+
+    def run_finalize(self, dsh_exit):
+        return subprocess.run([sys.executable, str(LANE_GIT), "--lane", LANE, "--repo", str(self.repo),
+                               "--dsh-exit", str(dsh_exit), "--day", DAY],
+                              cwd=self.repo, capture_output=True, text=True, encoding="utf-8", errors="replace")
+
+    def bus(self):
+        path = self.repo / ".hermes" / "logs" / "lane-runs.jsonl"
+        return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+    def valid_report(self, day=DAY, auto=False):
+        verdict = "STALE" if auto else "OK"
+        marker = " (AUTO-FILL)" if auto else ""
+        self.write(f".hermes/logs/{day}-{LANE}.md",
+                   f"# report{marker}\n\nVERDICT: {verdict}\nCONSUMED: fixture\nDELIVERED: NONE\nNEXT: NONE\n")
+
+    def test_dsh_failure_has_zero_commit_and_failed_bus(self):
+        before = self.commit_count()
+        self.write("docs/must-not-commit.md", "failure output\n")
+        result = self.run_finalize(1)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(self.commit_count(), before)
+        row = self.bus()[-1]
+        self.assertEqual(row["verdict"], "FAILED")
+        self.assertEqual(row["dsh_exit"], 1)
+        self.assertFalse(row["pushed"])
+        self.assertIn("must-not-commit", subprocess.run(["git", "status", "--short", "--untracked-files=all"], cwd=self.repo,
+                                                        capture_output=True, text=True).stdout)
+
+    def test_dsh_zero_without_report_is_stale_and_not_committed(self):
+        before = self.commit_count()
+        self.write("docs/must-not-commit.md", "no report\n")
+        result = self.run_finalize(0)
+        self.assertEqual(result.returncode, 6)
+        self.assertEqual(self.commit_count(), before)
+        row = self.bus()[-1]
+        self.assertEqual(row["verdict"], "STALE")
+        self.assertEqual(row["dsh_exit"], 0)
+        self.assertTrue(row["report_auto_generated"])
+
+    def test_old_report_cannot_impersonate_today(self):
+        self.valid_report("2026-10-27")
+        before = self.commit_count()
+        result = self.run_finalize(0)
+        self.assertEqual(result.returncode, 6)
+        self.assertEqual(self.commit_count(), before)
+        self.assertEqual(self.bus()[-1]["verdict"], "STALE")
+
+    def test_auto_filled_today_is_not_ok(self):
+        self.valid_report(auto=True)
+        before = self.commit_count()
+        result = self.run_finalize(0)
+        self.assertEqual(result.returncode, 6)
+        self.assertEqual(self.commit_count(), before)
+        self.assertEqual(self.bus()[-1]["verdict"], "STALE")
+
+    def test_valid_report_with_no_changes_records_ok_without_commit(self):
+        self.valid_report()
+        self.commit_all("valid report already committed")
+        before = self.commit_count()
+        result = self.run_finalize(0)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertEqual(self.commit_count(), before)
+        self.assertEqual(self.bus()[-1]["verdict"], "OK")
+        self.assertEqual(self.bus()[-1]["dsh_exit"], 0)
+
+    def test_preflight_missing_credential_and_disallowed_model(self):
+        module = load_module("zp_preflight_test", PREFLIGHT)
+        fake_dsh = self.write("fake-dsh.cmd", "@echo off\n")
+        checks, blocked = module.check_dsh_runtime(
+            environ={"ZP_DSH_PATH": str(fake_dsh)},
+            runner=lambda *a, **k: types.SimpleNamespace(returncode=1, stdout=""))
+        self.assertIsNotNone(blocked)
+        self.assertFalse(next(c for c in checks if c["name"] == "dsh_credential_environment")["ok"])
+
+        def pro_runner(*args, **kwargs):
+            return types.SimpleNamespace(returncode=0, stdout="provider: deepseek-official\nmodel: deepseek-v4-pro\n")
+
+        checks, blocked = module.check_dsh_runtime(
+            environ={"ZP_DSH_PATH": str(fake_dsh), "DEEPSEEK_API_KEY": "dummy-test-only"}, runner=pro_runner)
+        self.assertIsNotNone(blocked)
+        self.assertFalse(next(c for c in checks if c["name"] == "dsh_effective_provider_model")["ok"])
+
+        def flash_runner(*args, **kwargs):
+            return types.SimpleNamespace(returncode=0, stdout="provider: deepseek-official\nmodel: deepseek-flash\n")
+
+        checks, blocked = module.check_dsh_runtime(
+            environ={"ZP_DSH_PATH": str(fake_dsh), "DEEPSEEK_API_KEY": "dummy-test-only"}, runner=flash_runner)
+        self.assertIsNone(blocked)
+        self.assertTrue(all(c["ok"] for c in checks))
+
+    def test_lane_status_latest_failure_overrides_earlier_ok(self):
+        day = dt.date.today().isoformat()
+        self.write("scripts/lane-status.mjs", (ROOT / "scripts" / "lane-status.mjs").read_text(encoding="utf-8"))
+        self.write(".hermes/cron-lanes.json", json.dumps({"lanes": [{
+            "task": LANE, "schedule": {"kind": "DAILY"}, "start": "00:00",
+            "reportGlob": "*-daily-content.md"
+        }], "watchdog": {}}))
+        self.valid_report(day)
+        rows = [
+            {"lane": LANE, "fired_at": f"{day} 00:01:00", "ended_at": f"{day} 00:02:00",
+             "verdict": "OK", "dsh_exit": 0, "report_auto_generated": False},
+            {"lane": LANE, "fired_at": f"{day} 01:01:00", "ended_at": f"{day} 01:02:00",
+             "verdict": "FAILED", "dsh_exit": 1, "blocked_reason": "MISSING_CREDENTIAL"},
+        ]
+        self.write(".hermes/logs/lane-runs.jsonl", "".join(json.dumps(r) + "\n" for r in rows))
+        self.write(f".hermes/logs/cron-{LANE}.log",
+                   f"===== run start {day.replace('-', '/')}  01:00:00 =====\n===== dsh exit=1\n")
+        result = subprocess.run([shutil.which("node") or "node", "scripts/lane-status.mjs", "--days=1", "--quiet", "--no-sched"],
+                                cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        output = json.loads((self.repo / ".hermes/logs/lane-status.json").read_text(encoding="utf-8"))
+        self.assertEqual(output["lanes"][0]["days"][0]["status"], "FAILED")
+        self.assertEqual(output["lanes"][0]["days"][0]["exit"], 1)
+        self.assertEqual(output["lanes"][0]["recovery_plan"]["action"], "request_human")
+
+    def test_newer_preflight_block_preserves_older_dsh_exit(self):
+        today = dt.date.today()
+        day = today.isoformat()
+        yesterday = (today - dt.timedelta(days=1)).isoformat()
+        self.write("scripts/lane-status.mjs", (ROOT / "scripts" / "lane-status.mjs").read_text(encoding="utf-8"))
+        self.write(".hermes/cron-lanes.json", json.dumps({"lanes": [{
+            "task": LANE, "schedule": {"kind": "DAILY"}, "start": "00:00",
+            "reportGlob": "*-daily-content.md"
+        }], "watchdog": {}}))
+        self.valid_report(day)
+        rows = [
+            {"lane": LANE, "fired_at": f"{yesterday} 00:01:00", "ended_at": f"{yesterday} 00:02:00",
+             "verdict": "OK", "dsh_exit": None},
+            {"lane": LANE, "fired_at": f"{day} 00:01:00", "ended_at": f"{day} 00:02:00",
+             "verdict": "BLOCKED", "dsh_exit": None, "blocked_reason": "DEEPSEEK_API_KEY absent"},
+        ]
+        self.write(".hermes/logs/lane-runs.jsonl", "".join(json.dumps(r) + "\n" for r in rows))
+        self.write(f".hermes/logs/cron-{LANE}.log",
+                   f"===== run start {yesterday.replace('-', '/')}  00:00:00 =====\n===== dsh exit=1\n"
+                   f"===== run start {day.replace('-', '/')}  00:00:00 =====\n===== preflight blocked, dsh NOT called =====\n")
+        result = subprocess.run([shutil.which("node") or "node", "scripts/lane-status.mjs", "--days=2", "--quiet", "--no-sched"],
+                                cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        output = json.loads((self.repo / ".hermes/logs/lane-status.json").read_text(encoding="utf-8"))
+        statuses = {row["day"]: row for row in output["lanes"][0]["days"]}
+        self.assertEqual(statuses[yesterday]["status"], "FAILED")
+        self.assertEqual(statuses[yesterday]["exit"], 1)
+        self.assertEqual(statuses[day]["status"], "BLOCKED")
+
+    def test_periodic_dispatch_is_idempotent_and_learning_is_zero(self):
+        queue = {"schema_version": 1, "tasks": [{
+            "task_id": "WAITING-1", "status": "WAITING_K3", "next_check": DAY,
+            "approval_gate": "K3", "evidence": [], "learning_evidence": {"baseline": "only-one-field"}
+        }]}
+        status = {"lanes": [{"task": LANE, "verdict": "BLOCKED",
+                             "recovery_plan": {"action": "request_human", "reason": "credential", "evidence": "audit"}}]}
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
+        self.write(".hermes/logs/lane-status.json", json.dumps(status))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        command = [sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                   "--repo", str(self.repo), "--write-queue"]
+        first = subprocess.run(command, cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(first.returncode, 0, first.stdout + first.stderr)
+        tasks_after_first = json.loads((self.repo / ".hermes/logs/strategy-task-queue.json").read_text(encoding="utf-8"))["tasks"]
+        second = subprocess.run(command, cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(second.returncode, 0, second.stdout + second.stderr)
+        tasks_after_second = json.loads((self.repo / ".hermes/logs/strategy-task-queue.json").read_text(encoding="utf-8"))["tasks"]
+        self.assertEqual(len(tasks_after_first), len(tasks_after_second))
+        self.assertEqual(len(tasks_after_second), 2)
+        self.assertEqual(tasks_after_second[-1]["owner_lane"], "K3-admin")
+        learning = (self.repo / ".hermes/logs/learning-candidates.jsonl").read_text(encoding="utf-8")
+        self.assertEqual(learning, "")
+        report = json.loads((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["dispatched_task_ids"], [])
+        self.assertEqual(report["learning_candidates"], [])
+        self.assertEqual(report["task_decisions"][0]["decision"], "HOLD")
+
+
+if __name__ == "__main__":
+    unittest.main(verbosity=2)

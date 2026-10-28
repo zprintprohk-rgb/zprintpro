@@ -94,11 +94,13 @@ function recoveryPlan(status, lane, day, notes, exitCode) {
              evidence: `Get-ScheduledTask -TaskName ${lane} | Get-ScheduledTaskInfo`, retry_after_days: null };
   }
   if (status === 'BLOCKED') {
+    if (/credential|DEEPSEEK_API_KEY|provider|model|dsh CLI/i.test(n)) return { action: 'request_human', reason: 'dsh 凭据/模型/运行时未通过预检; 不得盲目重试', evidence: 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1', retry_after_days: null };
     if (/锁|lock/i.test(n)) return { action: 'retry', reason: '锁竞争 (另一条 lane 或人手会话持锁)', evidence: '.hermes/locks/lane.lock', retry_after_days: 0 };
     if (/preflight|前置|repo/i.test(n)) return { action: 'request_human', reason: '前置检查不过 (repo/worktree/branch)', evidence: `.hermes/logs/run-context-${lane}.json`, retry_after_days: null };
     return { action: 'retry', reason: '前置不过, 下轮重试', evidence: seatbelt, retry_after_days: 0 };
   }
   if (status === 'FAILED') {
+    if (/credential|DEEPSEEK_API_KEY|provider|model|dsh CLI/i.test(n)) return { action: 'request_human', reason: 'dsh 凭据/模型/运行时失败; 需管理员修复后做一次受控 smoke test', evidence: 'powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1', retry_after_days: null };
     if (exitCode === 5) return { action: 'retry', reason: 'push 失败 (网络/远端)', evidence: `.hermes/logs/cron-${lane}.log`, retry_after_days: 0 };
     if (exitCode === 3) return { action: 'modify_payload', reason: 'encoding guard 拒绝 (需先修文件编码)', evidence: 'node scripts/check-encoding.js', retry_after_days: null };
     if (exitCode === 2) return { action: 'modify_payload', reason: 'git 操作失败 (冲突/状态异常)', evidence: 'git status --porcelain', retry_after_days: null };
@@ -140,33 +142,44 @@ function expectedStart(lane, d) {
   return null;
 }
 
-/** wrapper 日志尾部解析: 最近一次 run 的 start/end/dsh exit/guard
- *  注意: lane 会话同时把 dsh 的实时输出写进同一份 console 日志, 其中可能夹带【人手会话】在仓库里
- *  跑的同类命令输出 (实测 9/19 cron-ZP-blog-deepfix.log 就混入了人手会话的 lane-git 输出)。
- *  故 guard 命中只作 suspected 记录, 不作硬判据。 */
-function lastLogRun(lane) {
+/** Parse every wrapper run by day. A newer preflight block must never erase an older
+ *  day's dsh exit evidence. Guard text remains suspected because human output can share a log. */
+function logRunsByDay(lane) {
   const p = path.join(LOGS, `cron-${lane.task}.log`);
   let txt;
-  try { txt = fs.readFileSync(p, 'utf8'); } catch { return null; }
-  let start = null; let end = null; let dshExit = null; let guardBlocked = false; let commitOnly = false; let runsTotal = 0;
+  try { txt = fs.readFileSync(p, 'utf8'); } catch { return {}; }
+  const byDay = {};
+  let current = null;
+  let runsTotal = 0;
   for (const l of txt.split(/\r?\n/)) {
     let m = l.match(/^===== run start (\d{4})\/(\d{2})\/(\d{2})\s+\S*\s+(\d{1,2}):(\d{2}):(\d{2})/);
     if (m) {
       runsTotal++;
-      start = `${m[1]}-${m[2]}-${m[3]} ${pad(m[4])}:${m[5]}:${m[6]}`;
-      end = null; dshExit = null; guardBlocked = false; commitOnly = false;
+      const day = `${m[1]}-${m[2]}-${m[3]}`;
+      current = { start: `${day} ${pad(m[4])}:${m[5]}:${m[6]}`, end: null, dshExit: null,
+                  guardBlocked: false, commitOnly: false, runsTotal: 0,
+                  logFile: path.relative(REPO, p).replace(/\\/g, '/') };
+      byDay[day] = current;
       continue;
     }
+    if (!current) continue;
     m = l.match(/^===== dsh exit=(\d+)/);
-    if (m) { dshExit = Number(m[1]); continue; }
+    if (m) { current.dshExit = Number(m[1]); continue; }
     m = l.match(/^===== run end\s+.*exit=(\d+)/);
-    if (m) { end = m[1]; continue; }
-    if (/src commit 被拦|生产文件未过 guard|check-encoding FAILED/.test(l)) guardBlocked = true;
-    if (/只 commit 不 push|push 失败/.test(l)) commitOnly = true;
+    if (m) { current.end = m[1]; current.wrapperExit = Number(m[1]); continue; }
+    if (/src commit 被拦|生产文件未过 guard|check-encoding FAILED/.test(l)) current.guardBlocked = true;
+    if (/只 commit 不 push|push 失败/.test(l)) current.commitOnly = true;
   }
-  return start
-    ? { start, end, dshExit, wrapperExit: end == null ? null : Number(end), guardBlocked, commitOnly, runsTotal, logFile: path.relative(REPO, p).replace(/\\/g, '/') }
-    : null;
+  for (const row of Object.values(byDay)) {
+    row.runsTotal = runsTotal;
+    if (row.wrapperExit === undefined) row.wrapperExit = null;
+  }
+  return byDay;
+}
+
+function lastLogRun(lane) {
+  const rows = Object.values(logRunsByDay(lane));
+  return rows.length ? rows[rows.length - 1] : null;
 }
 
 /** 近似「该 lane 在该日是否跑过」: 解析全日志, 列出所有 run start 的日期集合 */
@@ -238,7 +251,9 @@ function main() {
 
 
   for (const lane of cfg.lanes) {
-    const logRun = lastLogRun(lane);
+    const logRuns = logRunsByDay(lane);
+    const logRunValues = Object.values(logRuns);
+    const logRun = logRunValues.length ? logRunValues[logRunValues.length - 1] : null;
     const ranOn = logRunDays(lane);
     const laneRuns = runsReal.filter((r) => r.lane === lane.task);
 
@@ -254,11 +269,16 @@ function main() {
       .map((f) => {
         const strict = f.name.match(/^(\d{4}-\d{2}-\d{2})-/);
         const anyDate = f.name.match(DATE_RE);
-        // 车道归属: 文件名必须带车道 token (short 名或完整 task 名), 否则绝不认
         const laneOwned = f.name.includes(laneToken) || f.name.includes(lane.task);
         const endsOk = Boolean(suffix) && f.name.endsWith(suffix);
         const dateToken = (strict || anyDate) ? (strict ? strict[1] : anyDate[0]) : null;
-        return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk };
+        let text = '';
+        try { text = fs.readFileSync(f.full, 'utf8'); } catch { /* unreadable = invalid */ }
+        const autoFilled = /AUTO-FILL(?:ED)?/.test(text);
+        const contractOk = ['VERDICT', 'CONSUMED', 'DELIVERED', 'NEXT']
+          .every((field) => new RegExp(`^${field}:\\s*\\S.*$`, 'm').test(text))
+          && /^VERDICT:\s*OK\s*$/m.test(text);
+        return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk, autoFilled, contractOk };
       })
       .filter((f) => f.owned)
       .sort((a, b) => Number(b.strict) - Number(a.strict) || b.dateToken.localeCompare(a.dateToken) || b.mtime - a.mtime);
@@ -272,10 +292,8 @@ function main() {
       const fireAt = new Date(d.getFullYear(), d.getMonth(), d.getDate(), hh, mm, 0);
       const graceOver = today.getTime() > fireAt.getTime() + GRACE_MIN * 60000;
 
-      const rec = laneRuns.find((r) => (r.fired_at || r.ended_at || '').startsWith(day)) || null;
-      // 报告归属: strict = 文件名以目标日开头 (e.g. 2026-09-19-blog-deepfix.md) -> 当权威证据;
-      // loose = 文件名含目标日 + 车道后缀 (e.g. 2026-09-18-daily-content.md) -> 仅参考证据,
-      //         两个条件必须同时满足, 否则 NONE (防 src/data 无关报告被误当本车道产物)。
+      // Latest record wins: an earlier OK must never mask a later FAILED/BLOCKED/STALE.
+      const rec = [...laneRuns].reverse().find((r) => (r.fired_at || r.ended_at || '').startsWith(day)) || null;
       const rep = mdFiles.find((f) => f.dateToken === day && (f.strict || f.loose)) || null;
       const hasRun = Boolean(rec) || ranOn.has(day);
 
@@ -284,30 +302,46 @@ function main() {
         status = graceOver ? 'MISSING' : 'PENDING';
         if (graceOver) notes.push('no wrapper log run-start and no bus record for this trigger');
       } else {
-        const exitCode = rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null);
+        const dayLog = logRuns[day] || null;
+        const logExit = dayLog ? dayLog.dshExit : null;
+        const exitCode = rec && typeof rec.dsh_exit === 'number' ? rec.dsh_exit : logExit;
         status = 'OK';
-        if (rec && rec.blocked_reason) { status = 'BLOCKED'; notes.push(rec.blocked_reason); }
+        if (rec && rec.blocked_reason) notes.push(rec.blocked_reason);
+        if (rec && ['FAILED', 'BLOCKED', 'STALE'].includes(rec.verdict)) status = rec.verdict;
         else if (typeof exitCode === 'number' && exitCode !== 0) status = 'FAILED';
+        else if (rec && rec.report_auto_generated) status = 'STALE';
         if (rec && rec.guard && rec.guard.ok === false) { notes.push('guard blocked src commit'); if (status === 'OK') status = 'STALE'; }
-        if (logRun && logRun.start.startsWith(day) && logRun.guardBlocked) { notes.push('guard-blocked message seen in console log (suspected: log may also carry human-session output)'); if (status === 'OK') status = 'STALE'; }
+        if (dayLog && dayLog.guardBlocked) { notes.push('guard-blocked message seen in console log (suspected: log may also carry human-session output)'); if (status === 'OK') status = 'STALE'; }
         if (!rep) {
           if (status === 'OK') status = 'STALE';
           notes.push(`ran but no report file dated ${day}`);
-        } else if (!rep.strict) {
-          notes.push(`report naming not date-first (${rep.name}) -> treated as reference only`);
+        } else {
+          if (!rep.strict) {
+            if (status === 'OK') status = 'STALE';
+            notes.push(`report naming not date-first (${rep.name}) -> not authoritative`);
+          }
+          if (rep.autoFilled || !rep.contractOk) {
+            if (status === 'OK') status = 'STALE';
+            notes.push(`report is AUTO-FILLED or lacks a complete OK contract (${rep.name})`);
+          }
         }
+        days.push({
+          day,
+          expected: start,
+          status,
+          state: VERDICT_TO_STATE[status] || 'pending',
+          recovery_plan: recoveryPlan(status, lane.task, day, notes, exitCode),
+          notes,
+          exit: exitCode,
+          report: rep ? rep.rel : null,
+          reportStrict: rep ? rep.strict : null,
+          idempotency_keys: laneRuns.filter((r) => (r.fired_at || r.ended_at || '').startsWith(day)).map((r) => r.idempotency_key).filter(Boolean),
+        });
       }
-      days.push({
-        day,
-        expected: start,
-        status,
-        state: VERDICT_TO_STATE[status] || 'pending',
-        recovery_plan: recoveryPlan(status, lane.task, day, notes, rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null)),
-        notes,
-        exit: rec ? rec.dsh_exit : (logRun && logRun.start.startsWith(day) ? logRun.dshExit : null),
-        report: rep ? rep.rel : null,
-        reportStrict: rep ? rep.strict : null,
-        idempotency_keys: laneRuns.filter((r) => (r.fired_at || r.ended_at || '').startsWith(day)).map((r) => r.idempotency_key).filter(Boolean),
+      if (!hasRun) days.push({
+        day, expected: start, status, state: VERDICT_TO_STATE[status] || 'pending',
+        recovery_plan: recoveryPlan(status, lane.task, day, notes, null), notes,
+        exit: null, report: null, reportStrict: null, idempotency_keys: [],
       });
     }
 

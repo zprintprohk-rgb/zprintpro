@@ -25,6 +25,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -177,12 +178,96 @@ def check_repo(repo):
     return True, f"repo OK, branch={branch}"
 
 
+DSH_DEFAULT = r"C:\Users\Administrator\AppData\Roaming\DSH Desktop\host-commands\desktop\bin\dsh.cmd"
+ALLOWED_FLASH_MODEL = re.compile(r"^deepseek-flash(?:[-.][a-z0-9._-]+)?$", re.IGNORECASE)
+
+
+def check_dsh_runtime(skip=False, environ=None, runner=subprocess.run):
+    """Validate the scheduled runtime without printing or persisting credentials.
+
+    The 2026-10-27 failure proved that a credential reference in .dsh is not enough:
+    Task Scheduler could not resolve it. Until a real credential-service run is proven,
+    DEEPSEEK_API_KEY must therefore be present in the wrapper process environment.
+    Presence is only a preflight check; a subsequent dsh exit=0 is still required.
+    """
+    env = os.environ if environ is None else environ
+    if skip:
+        return [{"name": "dsh_runtime", "ok": True,
+                 "detail": "TEST ONLY: runtime check explicitly skipped"}], None
+
+    checks = []
+    dsh = env.get("ZP_DSH_PATH") or DSH_DEFAULT
+    exe_ok = os.path.isfile(dsh)
+    checks.append({"name": "dsh_executable", "ok": exe_ok,
+                   "detail": "dsh CLI found" if exe_ok else f"dsh CLI missing: {dsh}"})
+
+    key_ok = bool((env.get("DEEPSEEK_API_KEY") or "").strip())
+    checks.append({"name": "dsh_credential_environment", "ok": key_ok,
+                   "detail": ("DEEPSEEK_API_KEY present in process environment (value not inspected)"
+                              if key_ok else
+                              "DEEPSEEK_API_KEY absent from scheduled process environment; "
+                              "restore it with scripts/repair-dsh-scheduler-credential.ps1")})
+
+    provider = None
+    model = None
+    config_ok = False
+    config_detail = "dsh executable unavailable; effective config not read"
+    if exe_ok:
+        try:
+            r = runner([dsh, "--profile", "headless", "--dump-config"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60)
+            if r.returncode == 0:
+                pm = re.search(r"^\s*provider:\s*([^\s#]+)\s*$", r.stdout or "", re.MULTILINE)
+                mm = re.search(r"^\s*model:\s*([^\s#]+)\s*$", r.stdout or "", re.MULTILINE)
+                provider = pm.group(1) if pm else None
+                model = mm.group(1) if mm else None
+                config_ok = provider == "deepseek-official" and bool(model and ALLOWED_FLASH_MODEL.match(model))
+                config_detail = (f"effective provider={provider or 'UNKNOWN'} model={model or 'UNKNOWN'}; "
+                                 + ("allowed" if config_ok else "expected deepseek-official + deepseek-flash variant"))
+            else:
+                config_detail = f"dsh --dump-config exited {r.returncode}; output suppressed"
+        except (OSError, subprocess.SubprocessError) as e:
+            config_detail = f"dsh --dump-config failed: {type(e).__name__}"
+    checks.append({"name": "dsh_effective_provider_model", "ok": config_ok, "detail": config_detail})
+
+    blocked = next((c["detail"] for c in checks if not c["ok"]), None)
+    return checks, blocked
+
+
+def write_blocked_report(repo, lane, day, reason, checks):
+    """Leave honest evidence when preflight prevents dsh from starting; never commit it."""
+    rel = f".hermes/logs/{day}-{lane}.md"
+    path = os.path.join(repo, rel)
+    if os.path.exists(path):
+        return rel
+    lines = [
+        f"# {lane} preflight BLOCKED (AUTO-FILL)", "",
+        "VERDICT: BLOCKED",
+        "CONSUMED: preflight only; dsh was not called",
+        "DELIVERED: NONE",
+        f"NEXT: K3-admin resolve preflight blocker before retry: {reason}", "",
+        f"Blocked at: {time.strftime('%Y-%m-%d %H:%M:%S')}",
+        f"Reason: {reason}", "",
+        "## Checks", "",
+    ]
+    lines += [f"- {'OK' if c['ok'] else 'FAIL'} `{c['name']}`: {c['detail']}" for c in checks]
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write("\n".join(lines) + "\n")
+        return rel
+    except OSError:
+        return "NONE"
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lane", required=True)
     ap.add_argument("--repo", default=REPO_DEFAULT)
     ap.add_argument("--acquire", action="store_true", help="执行前置检查并抢锁")
     ap.add_argument("--release", action="store_true", help="释放锁 (wrapper 收尾)")
+    ap.add_argument("--skip-runtime-check", action="store_true",
+                    help="TEST FIXTURES ONLY; production wrappers must never use this")
     args = ap.parse_args()
 
     repo = args.repo
@@ -215,7 +300,10 @@ def main():
     deps_ok, deps_msg = check_deps(repo)
     checks.append({"name": "deps_tree_integrity", "ok": deps_ok, "detail": deps_msg})
 
-    blocked = None if ok and deps_ok else (msg if not ok else deps_msg)
+    runtime_checks, runtime_blocked = check_dsh_runtime(skip=args.skip_runtime_check)
+    checks.extend(runtime_checks)
+    blocked = None if ok and deps_ok and not runtime_blocked else (
+        msg if not ok else (deps_msg if not deps_ok else runtime_blocked))
 
     # 锁检查 (陈旧可夺)
     lock_holder = None
@@ -254,8 +342,27 @@ def main():
                    "detail": (f"verdict={status.get('verdict')} problems={len(status.get('problems') or [])}"
                               if status else "lane-status.json 不可读 (node/脚本缺失?)")})
 
-    # 今日兄弟车道动作 (跨车道避让: 防 9/19 同文件撞车)
+    # Weekly/monthly review is produced on the host before dsh, so sandbox tool limits
+    # cannot turn it into a hand-written, evidence-free narrative.
     today = time.strftime("%Y-%m-%d")
+    review_period = {"ZP-weekly-meta": "weekly", "ZP-monthly-matrix": "monthly"}.get(args.lane)
+    if review_period:
+        feedback_script = os.path.join(repo, "scripts", "strategy-feedback.py")
+        try:
+            fr = subprocess.run([sys.executable, feedback_script, "--period", review_period,
+                                 "--date", today, "--repo", repo, "--write-queue"],
+                                cwd=repo, capture_output=True, text=True, timeout=120)
+            feedback_ok = fr.returncode == 0
+            feedback_detail = (f"periodic {review_period} review generated" if feedback_ok
+                               else f"strategy-feedback exited {fr.returncode}; output suppressed")
+        except (OSError, subprocess.SubprocessError) as e:
+            feedback_ok = False
+            feedback_detail = f"strategy-feedback failed: {type(e).__name__}"
+        checks.append({"name": "periodic_strategy_review", "ok": feedback_ok, "detail": feedback_detail})
+        if not feedback_ok:
+            blocked = blocked or feedback_detail
+
+    # 今日兄弟车道动作 (跨车道避让: 防 9/19 同文件撞车)
     siblings = []
     if status:
         for l in status.get("lanes", []):
@@ -332,13 +439,16 @@ def main():
         print(f"  [{'OK  ' if c['ok'] else 'FAIL'}] {c['name']}: {c['detail']}")
 
     if blocked:
+        blocked_report = write_blocked_report(repo, args.lane, today, blocked, checks)
         append_bus(repo, {
             "run_id": f"{args.lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}",
             "lane": args.lane, "trigger": "schtasks", "phase": "preflight",
             "fired_at": now, "ended_at": now,
             "idempotency_key": idempotency_key(args.lane, "run", "lane-default"),
+            "dsh_exit": None, "wrapper_exit": 10,
             "verdict": "BLOCKED", "state": "blocked", "blocked_reason": blocked,
-            "guard": {"ok": True}, "pushed": False, "source": "lane-preflight.py",
+            "guard": {"ok": True}, "report": blocked_report, "report_auto_generated": True,
+            "files": [], "pushed": False, "source": "lane-preflight.py",
         })
         print(f"\n[preflight] BLOCKED -> 禁止调用 dsh: {blocked}", file=sys.stderr)
         return 10

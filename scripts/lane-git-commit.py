@@ -10,11 +10,11 @@ scripts/lane-git-commit.py -- lane 产物 host 侧 git 提交器 (K3 C 修复, 2
 修复:
   wrapper .cmd 由 Task Scheduler 以 cmd.exe 运行 (host 侧, 不受 lane sandbox 限制),
   dsh lane 结束后 wrapper 追加调用本脚本:
-    python scripts/lane-git-commit.py --lane <name> --repo <main-worktree>
-  本脚本在 main worktree 检测 src/data + .hermes 改动 -> 跑 guard -> commit + push。
+    python scripts/lane-git-commit.py --lane <name> --repo <main-worktree> --dsh-exit <real-exit>
+  非零 dsh exit 或无效当日报告均禁止 commit/push; 通过后才检测白名单改动并跑 guard。
 
 用法:
-  python scripts/lane-git-commit.py --lane ZP-daily-content
+  python scripts/lane-git-commit.py --lane ZP-daily-content --dsh-exit 0
 环境:
   PYTHONIOENCODING=utf-8 (wrapper 已设)
 """
@@ -22,6 +22,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -56,6 +57,17 @@ ALLOWED_PATHS = [
     "scripts/",
 ]
 
+# Shared runtime state is evidence, not a lane deliverable. Excluding it prevents one
+# lane from committing another lane's bus rows, logs, locks or freshly generated status.
+RUNTIME_ONLY_PATHS = [
+    ".hermes/logs/lane-runs.jsonl",
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-status.md",
+    ".hermes/logs/cron-execution-report.md",
+    ".hermes/logs/run-context-",
+    ".hermes/logs/cron-",
+]
+
 
 def run(args, cwd=MAIN_REPO, check=True):
     r = subprocess.run(args, cwd=cwd, capture_output=True, text=True, encoding="utf-8", errors="replace")
@@ -69,23 +81,45 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--lane", required=True, help="lane name, e.g. ZP-daily-content")
     ap.add_argument("--repo", default=MAIN_REPO)
+    ap.add_argument("--dsh-exit", required=True, type=int,
+                    help="real dsh process exit code; nonzero forbids every commit/push")
+    ap.add_argument("--day", help="TEST FIXTURES ONLY: YYYY-MM-DD report ownership date")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--include-matrix", action="store_true",
                     help="仅 gsc-feedback lane 使用: 允许提交 .hermes/industry-keyword-matrix.json "
                          "(K3 拍板该文件由 gsc-feedback cron 单独提交)")
     args = ap.parse_args()
 
-    repo = args.repo
-    # linked worktree 的 .git 是文件 (gitdir 指针), 不是目录 -> 用 git rev-parse 验证
+    repo = os.path.abspath(args.repo)
+    day = args.day or time.strftime("%Y-%m-%d")
+    date = time.strftime("%Y-%m-%d %H:%M")
     probe = subprocess.run([GIT, "rev-parse", "--git-dir"], cwd=repo, capture_output=True, text=True)
     if probe.returncode != 0:
         print(f"[lane-git] repo 无效或非 git 仓库: {repo} -> 跳过", file=sys.stderr)
         return 1
 
-    # 1) 检测 main worktree 改动 (相对 HEAD) — 用 -z NUL 分隔避免路径解析偏移
+    # A failed model run can never be converted into a content/report commit.
+    if args.dsh_exit != 0:
+        reason = f"dsh exited {args.dsh_exit}; model execution failed before host finalize"
+        failure_report = write_failure_report(repo, args.lane, day, "FAILED", reason, args.dsh_exit)
+        write_exec_report(args.lane, repo, [], False, date, exit_code=args.dsh_exit,
+                          verdict="FAILED(dsh)", blocked_reason=reason,
+                          report_path=failure_report, report_auto=True,
+                          run_verdict="FAILED", dsh_exit=args.dsh_exit)
+        return args.dsh_exit if 0 < args.dsh_exit < 126 else 1
+
+    # dsh=0 is not success without today's own, complete, non-auto report.
+    report_path, report_error = validate_lane_report(repo, args.lane, day)
+    if report_error:
+        failure_report = write_failure_report(repo, args.lane, day, "STALE", report_error, 0)
+        write_exec_report(args.lane, repo, [], False, date, exit_code=6,
+                          verdict="STALE(invalid or missing same-day report)",
+                          blocked_reason=report_error, report_path=failure_report,
+                          report_auto=True, run_verdict="STALE", dsh_exit=0)
+        return 6
+
     r = run([GIT, "status", "--porcelain", "-z"], cwd=repo, check=False)
     changed = []
-    # -z 格式: "XY path\0" (重命名: "XY old\0new\0"), path 原样无引用
     tokens = r.stdout.split("\0")
     i = 0
     while i < len(tokens):
@@ -94,151 +128,95 @@ def main():
             i += 1
             continue
         status = tok[:2]
-        path = tok[3:]  # 跳过 "XY " (2 状态符 + 1 空格)
+        path = tok[3:]
         if status[0] in ("R", "C") and i + 1 < len(tokens):
-            # rename/copy: 下一个 token 是新路径
             path = tokens[i + 1]
             i += 2
         else:
             i += 1
-        # XY 任一列有改动即算 (工作树改动常见于 Y 列, 如 " M")
         if status[0] in ("M", "A", "D", "R", "C", "T", "?") or status[1] in ("M", "A", "D", "T", "U"):
             changed.append(path)
 
-    # 2) 白名单过滤
     allowed_paths = list(ALLOWED_PATHS)
     if args.include_matrix:
         allowed_paths.append(".hermes/industry-keyword-matrix.json")
     allowed = []
     for p in changed:
         norm = p.replace("\\", "/")
+        if any(norm == x or norm.startswith(x) for x in RUNTIME_ONLY_PATHS):
+            continue
         if any(norm.startswith(prefix) or norm == prefix for prefix in allowed_paths):
-            allowed.append(p)
+            allowed.append(norm)
         else:
             print(f"[lane-git] 跳过白名单外改动: {p}")
 
     if not allowed:
-        print(f"[lane-git] {args.lane}: 无可提交的白名单改动 (共 {len(changed)} 个原始改动) -> 不 commit")
+        print(f"[lane-git] {args.lane}: 无可提交改动; 当日报告有效, 写 OK 总线")
+        write_exec_report(args.lane, repo, [], False, date, report_path=report_path,
+                          run_verdict="OK", dsh_exit=0)
         return 0
 
     print(f"[lane-git] {args.lane}: 白名单改动 {len(allowed)} 个:")
     for p in allowed:
         print(f"  + {p}")
 
-    # 3) 跑 guard (encoding + 品牌) — 失败则 abort
-    guard_ok = True
-    try:
-        enc = run(["node", "scripts/check-encoding.js"], cwd=repo, check=False)
-        if enc.returncode != 0:
-            print("[lane-git] check-encoding FAILED -> abort commit", file=sys.stderr)
-            guard_ok = False
-    except FileNotFoundError:
-        pass
-    if not guard_ok:
+    enc = run(["node", "scripts/check-encoding.js"], cwd=repo, check=False)
+    if enc.returncode != 0:
+        reason = "check-encoding failed; no commit or push attempted"
+        write_exec_report(args.lane, repo, allowed, False, date, exit_code=3,
+                          verdict="FAILED(encoding guard)", blocked_reason=reason,
+                          report_path=report_path, run_verdict="FAILED", dsh_exit=0)
         return 3
 
     if args.dry_run:
         print(f"[lane-git] dry-run: 将 commit {len(allowed)} 文件 (未执行)")
         return 0
 
-    # 4) commit (lane 专用消息) — 分两类:
-    #    a) src 生产文件: 走预提交 hook 全量 guard (encoding/brand/GSC 硬拦)
-    #    b) .hermes/logs|reports 报告: 内部文档, 预提交 hook 的品牌/GSC guard 不适用
-    #       (报告含 GSC 决策数字但无来源行是常态), 用 --no-verify 单独提交, 防止
-    #       lane 自动提交因报告 guard 命中而整体失败
     src_files = [p for p in allowed if not p.startswith(".hermes/")]
-    # 2026-09-15 fix: matrix 必须被提交。matrix 以 .hermes/ 开头、不属于 logs/reports,
-    #   原分类导致 --include-matrix 白名单命中但两个 commit 桶都不含 → 静默丢弃 (永不 commit)。
-    #   归入 report 类 (内部数据文件, --no-verify 提交, 与其它 .hermes 数据一致)。
     report_files = [p for p in allowed if p.startswith(".hermes/logs/") or p.startswith(".hermes/reports/")
                     or (args.include_matrix and p == ".hermes/industry-keyword-matrix.json")]
-
-    # 2026-10-16 修复 (盲区2): 车道跑过但未落当日报告 -> 总线 report=NONE 且 verdict 照写 OK
-    #   (10-14 ZP-daily-content / ZP-gsc-feedback 实测)。此处自动生成诚实兑底报告并入报告桶,
-    #   保证总线 report 字段不再出现 NONE; 生成器不虚构 lane 内容, 只记骨架与产物清单。
-    fallback_created = False
-    if allowed and pick_lane_report(args.lane, report_files) == "NONE":
-        fallback_rel = os.path.join(".hermes", "logs", f"{time.strftime('%Y-%m-%d')}-{args.lane}.md")
-        fallback_abs = os.path.join(repo, fallback_rel)
-        try:
-            if not os.path.exists(fallback_abs):
-                stub = (
-                    f"# {args.lane} 车道报告 (AUTO-FILL)\n\n"
-                    f"> 本报告由 scripts/lane-git-commit.py 自动生成: 车道结束时未按要求落当日报告\n"
-                    f"> (契约强制 <YYYY-MM-DD>-<lane>.md), 兑底保证结果总线 report 字段不再出现 NONE。\n"
-                    f"> 生成时间: {time.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
-                    f"VERDICT: AUTO-FILLED (车道报告缺席, 需车道 prompt 自检报告落盘步骤)\n"
-                    f"CONSUMED: .hermes/logs/run-context-{args.lane}.json + lane-status.json\n"
-                    f"DELIVERED: {', '.join(src_files) if src_files else '(无 src 产物, 仅报告/数据)'}\n"
-                    f"NEXT: 对照 .hermes/cron-prompts/lane-results-bus-contract.md 报告命名条款整改\n"
-                )
-                with open(fallback_abs, "w", encoding="utf-8", newline="\n") as fh:
-                    fh.write(stub)
-                print(f"[lane-git] 兑底报告已生成: {fallback_rel}")
-            report_files = report_files + [fallback_rel.replace(os.sep, "/")]
-            fallback_created = True
-        except OSError as e:
-            print(f"[lane-git] 兑底报告生成失败: {e}", file=sys.stderr)
-
-    date = time.strftime("%Y-%m-%d %H:%M")
 
     if src_files:
         msg = f"cron({args.lane}): lane 产物自动提交 {date}"
         run([GIT, "add", "--"] + src_files, cwd=repo)
-        r = run([GIT, "commit", "-m", msg], cwd=repo, check=False)
+        # Pathspec is mandatory: never include unrelated staged human-session work.
+        r = run([GIT, "commit", "-m", msg, "--"] + src_files, cwd=repo, check=False)
         if r.returncode != 0 and "nothing to commit" not in r.stdout + r.stderr:
+            reason = f"pre-commit guard rejected {len(src_files)} production files; no report commit/push"
             print(f"[lane-git] src commit 被拦: {r.stdout}\n{r.stderr}", file=sys.stderr)
-            print(f"[lane-git] 提示: 生产文件未过 guard, 需人工处理 (不自动 --no-verify)", file=sys.stderr)
-            # 2026-10-10 修复 (门童被自己人绕过): 被拦下的 src 文件必须先从 index 撤出。
-            #   原实现只 print 后即调用 _commit_reports(), 而那里用 `git commit --no-verify`,
-            #   会把仍 staged 的生产文件一并带走 -> 门童的拦截被收尾步骤半路作废。
-            #   实测 797c84e3: 门童 #16 硬拦的 5 个生产文件被「lane 报告」commit 带走,
-            #   并随 00:46 push 上了 origin/main (线上红线 §0.23.1 泄漏), 由 ff08997d 补救。
-            #   撤出 index 只影响暂存区; 工作区改动原样保留, 交人工处理 (与 164 行语义一致)。
-            run([GIT, "reset", "--"] + src_files, cwd=repo, check=False)
-            # 2026-09-19 修复: 原实现在此 return 4 -> 跳过报告提交与执行报告写入 ->
-            # 9/19 blog-deepfix lane 整批成功却在 cron-execution-report.md 里没有任何记录
-            # (成功且无记录 = 主程序无从判断)。改为: 先落报告 + 写执行报告行, 再返回 4。
-            if report_files:
-                _commit_reports(repo, args, report_files, date)
-            write_exec_report(args.lane, args.repo, allowed, False, date,
-                              exit_code=4,
-                              verdict="FAILED(guard 拦下 src commit)",
-                              blocked_reason=f"pre-commit guard 拒绝 {len(src_files)} 个生产文件",
-                              report_files=report_files,
-                              report_auto=fallback_created)
+            write_exec_report(args.lane, repo, allowed, False, date, exit_code=4,
+                              verdict="FAILED(guard 拦下 src commit)", blocked_reason=reason,
+                              report_path=report_path, run_verdict="FAILED", dsh_exit=0)
             return 4
         print(f"[lane-git] src commit 完成: {msg} ({len(src_files)} 文件)")
 
-    if report_files:
-        if _commit_reports(repo, args, report_files, date) != 0:
-            return 4
+    if report_files and _commit_reports(repo, args, report_files, date) != 0:
+        write_exec_report(args.lane, repo, allowed, False, date, exit_code=4,
+                          verdict="FAILED(report commit)", blocked_reason="report commit failed",
+                          report_path=report_path, run_verdict="FAILED", dsh_exit=0)
+        return 4
 
-    # 5) push (host 侧, SSH 已认证) — §0.25 30min 间隔硬下限:
-    #    距上次 push <30min 只 commit 不 push (commit 已落本地, 下次 lane/手动 push 带走)
-    #    撞车判定: 用 origin/main 最新 commit 时间
     last_push = run([GIT, "log", "origin/main", "-1", "--format=%ct"], cwd=repo, check=False).stdout.strip()
-    now_ts = int(time.time())
     try:
-        last_ts = int(last_push)
-        gap = now_ts - last_ts
+        gap = int(time.time()) - int(last_push)
     except ValueError:
         gap = 99999
     pushed = False
     if gap < 1800:
-        print(f"[lane-git] 距上次 push {gap}s (<30min) -> 本次只 commit 不 push (§0.25 硬下限), "
-              f"commit 留待下次 lane/manual push")
+        print(f"[lane-git] 距上次 push {gap}s (<30min) -> 本次只 commit 不 push")
     else:
         r = run([GIT, "push", "origin", "main"], cwd=repo, check=False)
         if r.returncode != 0:
-            print(f"[lane-git] push 失败: {r.stdout}\n{r.stderr}", file=sys.stderr)
+            reason = "git push failed; see wrapper log"
+            write_exec_report(args.lane, repo, allowed, False, date, exit_code=5,
+                              verdict="FAILED(push)", blocked_reason=reason,
+                              report_path=report_path, run_verdict="FAILED", dsh_exit=0)
             return 5
         pushed = True
         print("[lane-git] push 完成 -> origin/main 已更新")
 
-    # 6) 统一执行报告 (K3 2026-09-15 拍板: 定时任务完成后要有可查看的执行报告与结果)
-    #    每次 lane 收尾追加一条记录到 .hermes/logs/cron-execution-report.md
-    write_exec_report(args.lane, args.repo, allowed, pushed, date, report_auto=fallback_created)
+    write_exec_report(args.lane, repo, allowed, pushed, date, report_path=report_path,
+                      run_verdict="OK", dsh_exit=0)
     return 0
 
 
@@ -293,39 +271,55 @@ def resolve_idempotency_key(lane, repo):
     return idempotency_key(lane, "run", "lane-default")
 
 
-def pick_lane_report(lane, allowed):
-    """从本次白名单改动里挑出**本车道自己的报告文件**。
-
-    2026-09-19 实测教训: 原实现取 "第一个 .md" -> 会把别人的文件写进报告列
-    (历史行: daily-content 写成 title-audit-2026-09-09.md / gsc-feedback 写成 cron-check-tonight.md;
-     当日实测又把 ZP-blog-deepfix 写成 .hermes/logs/cron-watchdog-alerts.md)。
-    口径: ① 优先 <YYYY-MM-DD>-<lane>.md (契约强制命名) ② 其次 *-<lane 短名>.md ③ 都没有写 NONE。
-    """
-    short = lane.replace("ZP-", "")
-    md = [p for p in (allowed or [])
-          if p.endswith(".md") and "cron-execution-report.md" not in p]
-    dated = sorted([p for p in md if os.path.basename(p).startswith(tuple(
-        f"{d}-" for d in [time.strftime('%Y-%m-%d', time.localtime()),
-                          time.strftime('%Y-%m-%d', time.localtime(time.time() - 86400))]))])
-    for p in dated:
-        if os.path.basename(p).endswith(f"-{short}.md") or os.path.basename(p).endswith(f"-{lane}.md"):
-            return p
-    named = [p for p in sorted(md) if p.endswith(f"-{short}.md") or p.endswith(f"-{lane}.md")]
-    if named:
-        return named[-1]
-    if dated:
-        return dated[-1]
-    return "NONE"
-
-
-def write_lane_run(record):
-    """追加一条结构化 run 记录到 .hermes/logs/lane-runs.jsonl (结果总线, K3 2026-09-19 指令)。
-
-    这是「定时任务把执行结果和数据交给主程序做判断依据」的机器可读载体,
-    由 scripts/lane-status.mjs 汇总成 lane-status.json / lane-status.md。
-    """
+def validate_lane_report(repo, lane, day):
+    """Accept only today's exact lane report with all four fields and VERDICT: OK."""
+    rel = f".hermes/logs/{day}-{lane}.md"
+    path = os.path.join(repo, rel)
+    if not os.path.isfile(path):
+        return None, f"missing exact same-day lane report: {rel}"
     try:
-        bus = os.path.join(MAIN_REPO, ".hermes", "logs", "lane-runs.jsonl")
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    except OSError as e:
+        return None, f"lane report unreadable: {type(e).__name__}"
+    if "AUTO-FILL" in text or "AUTO-FILLED" in text:
+        return None, "auto-filled reports are failure evidence, never OK evidence"
+    for field in ("VERDICT", "CONSUMED", "DELIVERED", "NEXT"):
+        if not re.search(rf"^{field}:\s*\S.*$", text, re.MULTILINE):
+            return None, f"same-day report lacks machine-readable {field}"
+    if not re.search(r"^VERDICT:\s*OK\s*$", text, re.MULTILINE):
+        return None, "same-day report VERDICT is not exactly OK (PARTIAL/BLOCKED/FAILED cannot finalize as OK)"
+    return rel, None
+
+
+def write_failure_report(repo, lane, day, verdict, reason, dsh_exit):
+    """Create failure evidence without overwriting an existing report or committing it."""
+    rel = f".hermes/logs/{day}-{lane}.md"
+    path = os.path.join(repo, rel)
+    if os.path.exists(path):
+        return rel
+    stub = (
+        f"# {lane} {verdict} (AUTO-FILL)\n\n"
+        f"VERDICT: {verdict}\n"
+        f"CONSUMED: host finalize only; dsh_exit={dsh_exit}\n"
+        f"DELIVERED: NONE\n"
+        f"NEXT: resolve the recorded failure; do not treat this AUTO-FILL as success\n\n"
+        f"Reason: {reason}\n"
+        f"Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n"
+    )
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(stub)
+        return rel
+    except OSError:
+        return "NONE"
+
+
+def write_lane_run(record, repo):
+    """Append one structured record to the repository-specific results bus."""
+    try:
+        bus = os.path.join(repo, ".hermes", "logs", "lane-runs.jsonl")
         os.makedirs(os.path.dirname(bus), exist_ok=True)
         with open(bus, "a", encoding="utf-8", newline="\n") as fh:
             fh.write(json.dumps(record, ensure_ascii=False) + "\n")
@@ -335,19 +329,13 @@ def write_lane_run(record):
 
 
 def write_exec_report(lane, repo, allowed, pushed, date,
-                      exit_code=0, verdict="✅ 完成", blocked_reason="", report_files=None,
-                      fired_at=None, report_auto=False):
-    """追加 lane 执行报告到统一总览文件 cron-execution-report.md (K3 要求可见).
-
-    2026-09-19 升级 (K3 指令「定时任务要有报告, 且报告要能作为判断依据」):
-      ① 报告路径不再取「字母序第一个 .md」(原实现会写错成别人的旧报告), 改为优先取本 lane
-         报告文件 (report_files 里第一个 .md);
-      ② 结果列写真实 verdict + exit_code, 不再恒写「✅ 完成」;
-      ③ 同时写结构化 lane-runs.jsonl (含 idempotency_key / state), 供 lane-status.mjs 汇总。
-    """
+                      exit_code=0, verdict="✅ 完成", blocked_reason="",
+                      fired_at=None, report_auto=False, dsh_exit=None,
+                      run_verdict=None, report_path=None):
+    """Append human and machine evidence with explicit, non-inferred verdicts."""
     fired_at = fired_at or time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    report = pick_lane_report(lane, report_files if report_files is not None else allowed)
-    pushed_txt = "✅ push" if pushed else "⏳ commit(未 push)"
+    report = report_path or "NONE"
+    pushed_txt = "✅ push" if pushed else "NO_PUSH"
     files = [p for p in allowed
              if not p.endswith(".md")
              and not p.startswith("scripts/")
@@ -378,31 +366,33 @@ def write_exec_report(lane, repo, allowed, pushed, date,
     except OSError as e:
         print(f"[lane-git] 执行报告写入失败: {e}", file=sys.stderr)
 
-    # 结果总线 (机器可读)
     try:
         head = run([GIT, "rev-parse", "--short", "HEAD"], cwd=repo, check=False).stdout.strip()
     except Exception:  # noqa: BLE001
         head = ""
+    final_verdict = run_verdict or ("OK" if exit_code == 0 else "FAILED")
+    state = {"OK": "completed", "FAILED": "failed", "BLOCKED": "blocked",
+             "STALE": "quarantined"}.get(final_verdict, "failed")
     write_lane_run({
-        "run_id": f"{lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}",
+        "run_id": f"{lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}-{os.getpid()}",
         "lane": lane,
         "trigger": "schtasks",
         "fired_at": fired_at,
-        "ended_at": time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()),
+        "ended_at": now,
         "idempotency_key": resolve_idempotency_key(lane, repo),
-        "dsh_exit": None,           # wrapper 侧已知; 本脚本无法读取, 由 lane-status.mjs 从 wrapper 日志补齐
+        "dsh_exit": dsh_exit,
         "wrapper_exit": exit_code,
-        "verdict": "OK" if exit_code == 0 else ("BLOCKED" if blocked_reason else "FAILED"),
-        "state": "completed" if exit_code == 0 else ("blocked" if blocked_reason else "failed"),
+        "verdict": final_verdict,
+        "state": state,
         "blocked_reason": blocked_reason,
-        "guard": {"ok": exit_code != 4},
+        "guard": {"ok": exit_code not in (3, 4)},
         "report": report,
         "report_auto_generated": bool(report_auto),
         "files": files,
         "pushed": bool(pushed),
         "head": head,
         "source": "lane-git-commit.py",
-    })
+    }, repo)
 
 
 if __name__ == "__main__":
