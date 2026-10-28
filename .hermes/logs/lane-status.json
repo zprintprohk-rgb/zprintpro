@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-27T03:59:54.887Z",
-  "generated_local": "2026-10-27 11:59",
+  "generated_at": "2026-10-28T17:21:27.561Z",
+  "generated_local": "2026-10-29 01:21",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
   "bus_file": ".hermes/logs/lane-runs.jsonl",
-  "bus_records": 47,
+  "bus_records": 58,
   "bus_records_test_excluded": 0,
-  "window_days": 2,
+  "window_days": 7,
   "state_machine": {
     "pending": [
       "running",
@@ -43,15 +43,15 @@
   },
   "need_human": [
     {
-      "problem": "ZP-daily-content scheduler LastTaskResult=1",
-      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
-    },
-    {
-      "problem": "ZP-gsc-feedback scheduler LastTaskResult=1",
+      "problem": "ZP-weekly-meta 2026-10-23 -> MISSING",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
       "problem": "ZP-weekly-meta scheduler LastTaskResult=2147946720",
+      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
+    },
+    {
+      "problem": "ZP-blog-deepfix 2026-10-24 -> MISSING",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
@@ -60,10 +60,6 @@
     },
     {
       "problem": "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-      "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
-    },
-    {
-      "problem": "ZP-k3-review 2026-10-27 -> STALE",
       "hint": "见对应 lane 的 recovery_plan; K3 动作类问题请一次性处理"
     },
     {
@@ -81,55 +77,69 @@
       "scheduler": {
         "Name": "ZP-daily-content",
         "State": "Ready",
-        "Last": "2026-10-26 21:17:02",
-        "Result": 1,
-        "Next": "2026-10-27 21:17:00"
+        "Last": "2026-10-28 21:17:02",
+        "Result": 0,
+        "Next": "2026-10-29 21:17:00"
       },
       "lastReportFile": {
-        "file": "2026-10-26-daily-content.md",
-        "dateToken": "2026-10-26",
-        "mtime": "2026-10-26T10:47:12.577Z"
+        "file": "2026-10-28-ZP-daily-content.md",
+        "dateToken": "2026-10-28",
+        "mtime": "2026-10-28T13:19:52.974Z"
       },
       "lastWrapperRun": {
-        "start": "2026-10-26 21:17:02",
-        "end": "1",
-        "dshExit": 1,
-        "wrapperExit": 1,
+        "start": "2026-10-28 21:17:02",
+        "end": "0",
+        "dshExit": 0,
         "guardBlocked": false,
         "commitOnly": false,
-        "runsTotal": 28,
-        "logFile": ".hermes/logs/cron-ZP-daily-content.log"
+        "runsTotal": 30,
+        "logFile": ".hermes/logs/cron-ZP-daily-content.log",
+        "wrapperExit": 0
       },
       "lastRunRecord": {
-        "run_id": "ZP-daily-content-20261026T181700-harness",
+        "run_id": "ZP-daily-content-20261028T212002-26012",
         "lane": "ZP-daily-content",
-        "trigger": "dsh-harness",
-        "fired_at": "2026-10-26 18:17:00",
-        "ended_at": "2026-10-26T18:39:01+08:00",
-        "idempotency_key": "harness-20261026-boxes-detox",
+        "trigger": "schtasks",
+        "fired_at": "2026-10-28 21:20:02",
+        "ended_at": "2026-10-28 21:20:02",
+        "idempotency_key": "85bb078d408a7774",
         "dsh_exit": 0,
-        "wrapper_exit": null,
-        "verdict": "OK",
-        "state": "completed",
-        "blocked_reason": "",
+        "wrapper_exit": 6,
+        "verdict": "STALE",
+        "state": "quarantined",
+        "blocked_reason": "auto-filled reports are failure evidence, never OK evidence",
         "guard": {
           "ok": true
         },
-        "report": ".hermes/logs/2026-10-26-daily-content.md",
-        "report_auto_generated": false,
-        "files": [
-          "src/data/sku-seo-data.ts",
-          ".hermes/logs/2026-10-26-daily-content.md",
-          ".hermes/logs/b1c-queue-progress.json",
-          ".hermes/_bak-sku-seo-before-boxes-20261026.ts"
-        ],
-        "pushed": true,
-        "head": "ef3140ac",
-        "source": "harness-lane"
+        "report": ".hermes/logs/2026-10-28-ZP-daily-content.md",
+        "report_auto_generated": true,
+        "files": [],
+        "pushed": false,
+        "head": "b2a8166c",
+        "source": "lane-git-commit.py"
       },
       "days": [
         {
-          "day": "2026-10-26",
+          "day": "2026-10-23",
+          "expected": "21:17",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-daily-content | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-24",
           "expected": "21:17",
           "status": "OK",
           "state": "completed",
@@ -141,6 +151,47 @@
           },
           "notes": [],
           "exit": 0,
+          "report": "2026-10-24-daily-content.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "db194f29ca1f621e",
+            "harness-20261024-paperbags"
+          ]
+        },
+        {
+          "day": "2026-10-25",
+          "expected": "21:17",
+          "status": "OK",
+          "state": "completed",
+          "recovery_plan": {
+            "action": "none",
+            "reason": "无异常",
+            "evidence": null,
+            "retry_after_days": null
+          },
+          "notes": [],
+          "exit": 0,
+          "report": "2026-10-25-daily-content.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "harness-20261025-books-currency-moq"
+          ]
+        },
+        {
+          "day": "2026-10-26",
+          "expected": "21:17",
+          "status": "STALE",
+          "state": "quarantined",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "跑过但无当日报告 (空转/零产出)",
+            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-26-daily-content.md)"
+          ],
+          "exit": 0,
           "report": "2026-10-26-daily-content.md",
           "reportStrict": true,
           "idempotency_keys": [
@@ -149,6 +200,53 @@
         },
         {
           "day": "2026-10-27",
+          "expected": "21:17",
+          "status": "FAILED",
+          "state": "failed",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "dsh/wrapper 退出码 1",
+            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-27-ZP-daily-content.md)"
+          ],
+          "exit": 1,
+          "report": "2026-10-27-ZP-daily-content.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "harness-20261027-stickers-detox",
+            "b937d57c4d2e5148"
+          ]
+        },
+        {
+          "day": "2026-10-28",
+          "expected": "21:17",
+          "status": "STALE",
+          "state": "quarantined",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "跑过但无当日报告 (空转/零产出)",
+            "evidence": ".hermes/logs/cron-ZP-daily-content.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "auto-filled reports are failure evidence, never OK evidence",
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-28-ZP-daily-content.md)"
+          ],
+          "exit": 0,
+          "report": "2026-10-28-ZP-daily-content.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "85bb078d408a7774",
+            "85bb078d408a7774",
+            "85bb078d408a7774",
+            "85bb078d408a7774"
+          ]
+        },
+        {
+          "day": "2026-10-29",
           "expected": "21:17",
           "status": "PENDING",
           "state": "pending",
@@ -183,48 +281,107 @@
       "scheduler": {
         "Name": "ZP-gsc-feedback",
         "State": "Ready",
-        "Last": "2026-10-26 20:13:01",
-        "Result": 1,
-        "Next": "2026-10-27 20:13:00"
+        "Last": "2026-10-28 20:13:01",
+        "Result": 0,
+        "Next": "2026-10-29 20:13:00"
       },
       "lastReportFile": {
-        "file": "2026-10-26-ZP-gsc-feedback.md",
-        "dateToken": "2026-10-26",
-        "mtime": "2026-10-26T12:13:04.579Z"
+        "file": "2026-10-29-ZP-gsc-feedback.md",
+        "dateToken": "2026-10-29",
+        "mtime": "2026-10-28T17:21:05.049Z"
       },
       "lastWrapperRun": {
-        "start": "2026-10-26 20:13:01",
-        "end": "1",
-        "dshExit": 1,
-        "wrapperExit": 1,
+        "start": "2026-10-28 20:13:01",
+        "end": "0",
+        "dshExit": 0,
         "guardBlocked": false,
-        "commitOnly": false,
-        "runsTotal": 20,
-        "logFile": ".hermes/logs/cron-ZP-gsc-feedback.log"
+        "commitOnly": true,
+        "runsTotal": 23,
+        "logFile": ".hermes/logs/cron-ZP-gsc-feedback.log",
+        "wrapperExit": 0
       },
       "lastRunRecord": {
-        "run_id": "ZP-gsc-feedback-20261024T201343",
+        "run_id": "ZP-gsc-feedback-20261029T012114-harness",
         "lane": "ZP-gsc-feedback",
-        "trigger": "schtasks",
-        "fired_at": "2026-10-24 20:13:43",
-        "ended_at": "2026-10-24 20:13:43",
-        "idempotency_key": "3667b5fb919620d9",
+        "trigger": "dsh-harness",
+        "fired_at": "2026-10-29 01:21:14",
+        "ended_at": "2026-10-28T17:21:14.494Z",
+        "idempotency_key": "0453ab66a64d9edd",
         "dsh_exit": null,
-        "wrapper_exit": 0,
+        "wrapper_exit": null,
         "verdict": "OK",
         "state": "completed",
         "blocked_reason": "",
         "guard": {
           "ok": true
         },
-        "report": ".hermes/logs/2026-10-23-ZP-k3-review.md",
+        "report": ".hermes/logs/2026-10-29-ZP-gsc-feedback.md",
         "report_auto_generated": false,
         "files": [],
-        "pushed": true,
-        "head": "07d53b90",
-        "source": "lane-git-commit.py"
+        "pushed": false,
+        "head": null,
+        "source": "harness-lane"
       },
       "days": [
+        {
+          "day": "2026-10-23",
+          "expected": "20:13",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-24",
+          "expected": "20:13",
+          "status": "FAILED",
+          "state": "failed",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "dsh/wrapper 退出码 1",
+            "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "ran but no report file dated 2026-10-24"
+          ],
+          "exit": 1,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": [
+            "3667b5fb919620d9"
+          ]
+        },
+        {
+          "day": "2026-10-25",
+          "expected": "20:13",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-gsc-feedback | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
         {
           "day": "2026-10-26",
           "expected": "20:13",
@@ -236,7 +393,9 @@
             "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
             "retry_after_days": 0
           },
-          "notes": [],
+          "notes": [
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-26-ZP-gsc-feedback.md)"
+          ],
           "exit": 1,
           "report": "2026-10-26-ZP-gsc-feedback.md",
           "reportStrict": true,
@@ -245,26 +404,69 @@
         {
           "day": "2026-10-27",
           "expected": "20:13",
-          "status": "PENDING",
-          "state": "pending",
+          "status": "FAILED",
+          "state": "failed",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "dsh/wrapper 退出码 1",
+            "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-27-ZP-gsc-feedback.md)"
+          ],
+          "exit": 1,
+          "report": "2026-10-27-ZP-gsc-feedback.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "aabde12b39bb6f5c"
+          ]
+        },
+        {
+          "day": "2026-10-28",
+          "expected": "20:13",
+          "status": "OK",
+          "state": "completed",
           "recovery_plan": {
             "action": "none",
-            "reason": "触发点未到或宽限期内",
+            "reason": "无异常",
+            "evidence": null,
+            "retry_after_days": null
+          },
+          "notes": [],
+          "exit": 0,
+          "report": "2026-10-28-ZP-gsc-feedback.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "eeab665ac84424ea",
+            "eeab665ac84424ea"
+          ]
+        },
+        {
+          "day": "2026-10-29",
+          "expected": "20:13",
+          "status": "OK",
+          "state": "completed",
+          "recovery_plan": {
+            "action": "none",
+            "reason": "无异常",
             "evidence": null,
             "retry_after_days": null
           },
           "notes": [],
           "exit": null,
-          "report": null,
-          "reportStrict": null,
-          "idempotency_keys": []
+          "report": "2026-10-29-ZP-gsc-feedback.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "0453ab66a64d9edd"
+          ]
         }
       ],
-      "verdict": "PENDING",
-      "state": "pending",
+      "verdict": "OK",
+      "state": "completed",
       "recovery_plan": {
         "action": "none",
-        "reason": "触发点未到或宽限期内",
+        "reason": "无异常",
         "evidence": null,
         "retry_after_days": null
       }
@@ -292,11 +494,11 @@
         "start": "2026-09-18 23:07:00",
         "end": "0",
         "dshExit": 0,
-        "wrapperExit": 0,
         "guardBlocked": false,
         "commitOnly": true,
         "runsTotal": 1,
-        "logFile": ".hermes/logs/cron-ZP-weekly-meta.log"
+        "logFile": ".hermes/logs/cron-ZP-weekly-meta.log",
+        "wrapperExit": 0
       },
       "lastRunRecord": {
         "run_id": "ZP-weekly-meta-20261010T001056",
@@ -321,13 +523,33 @@
         "head": "c32931c8",
         "source": "lane-git-commit.py"
       },
-      "days": [],
-      "verdict": "UNKNOWN",
-      "state": "pending",
+      "days": [
+        {
+          "day": "2026-10-23",
+          "expected": "20:52",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        }
+      ],
+      "verdict": "MISSING",
+      "state": "blocked",
       "recovery_plan": {
         "action": "request_human",
-        "reason": "窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
-        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta",
+        "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+        "evidence": "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
         "retry_after_days": null
       }
     },
@@ -354,11 +576,11 @@
         "start": "2026-10-10 05:37:00",
         "end": "0",
         "dshExit": 0,
-        "wrapperExit": 0,
         "guardBlocked": false,
         "commitOnly": false,
         "runsTotal": 3,
-        "logFile": ".hermes/logs/cron-ZP-blog-deepfix.log"
+        "logFile": ".hermes/logs/cron-ZP-blog-deepfix.log",
+        "wrapperExit": 0
       },
       "lastRunRecord": {
         "run_id": "ZP-blog-deepfix-20261010T054102",
@@ -381,13 +603,33 @@
         "head": "7f9b92a9",
         "source": "lane-git-commit.py"
       },
-      "days": [],
-      "verdict": "UNKNOWN",
-      "state": "pending",
+      "days": [
+        {
+          "day": "2026-10-24",
+          "expected": "23:47",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        }
+      ],
+      "verdict": "MISSING",
+      "state": "blocked",
       "recovery_plan": {
         "action": "request_human",
-        "reason": "窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
-        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix",
+        "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+        "evidence": "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo",
         "retry_after_days": null
       }
     },
@@ -451,61 +693,120 @@
       "scheduler": {
         "Name": "ZP-k3-review",
         "State": "Ready",
-        "Last": "2026-10-27 07:10:02",
+        "Last": "2026-10-28 07:10:02",
         "Result": 1,
-        "Next": "2026-10-28 07:10:00"
+        "Next": "2026-10-29 07:10:00"
       },
       "lastReportFile": {
-        "file": "2026-10-26-ZP-k3-review.md",
-        "dateToken": "2026-10-26",
-        "mtime": "2026-10-25T23:10:05.261Z"
+        "file": "2026-10-28-ZP-k3-review.md",
+        "dateToken": "2026-10-28",
+        "mtime": "2026-10-27T23:10:05.592Z"
       },
       "lastWrapperRun": {
-        "start": "2026-10-27 07:10:02",
-        "end": "1",
-        "dshExit": 1,
-        "wrapperExit": 1,
+        "start": "2026-10-28 07:10:05",
+        "end": null,
+        "dshExit": null,
         "guardBlocked": false,
         "commitOnly": false,
-        "runsTotal": 6,
-        "logFile": ".hermes/logs/cron-ZP-k3-review.log"
+        "runsTotal": 7,
+        "logFile": ".hermes/logs/cron-ZP-k3-review.log",
+        "wrapperExit": null
       },
       "lastRunRecord": {
-        "run_id": "ZP-k3-review-20261027T071033",
+        "run_id": "ZP-k3-review-20261028T071005",
         "lane": "ZP-k3-review",
         "trigger": "schtasks",
-        "fired_at": "2026-10-27 07:10:33",
-        "ended_at": "2026-10-27 07:10:33",
-        "idempotency_key": "27c93f65b8b82b43",
+        "phase": "preflight",
+        "fired_at": "2026-10-28 07:10:05",
+        "ended_at": "2026-10-28 07:10:05",
+        "idempotency_key": "71dfa5c66ba37e24",
         "dsh_exit": null,
-        "wrapper_exit": 0,
-        "verdict": "OK",
-        "state": "completed",
-        "blocked_reason": "",
+        "wrapper_exit": 10,
+        "verdict": "BLOCKED",
+        "state": "blocked",
+        "blocked_reason": "DEEPSEEK_API_KEY absent from scheduled process environment; restore it with scripts/repair-dsh-scheduler-credential.ps1",
         "guard": {
           "ok": true
         },
-        "report": ".hermes/logs/2026-10-26-ZP-gsc-feedback.md",
-        "report_auto_generated": false,
+        "report": ".hermes/logs/2026-10-28-ZP-k3-review.md",
+        "report_auto_generated": true,
         "files": [],
-        "pushed": true,
-        "head": "34773950",
-        "source": "lane-git-commit.py"
+        "pushed": false,
+        "source": "lane-preflight.py"
       },
       "days": [
         {
-          "day": "2026-10-26",
+          "day": "2026-10-23",
           "expected": "07:10",
-          "status": "OK",
-          "state": "completed",
+          "status": "MISSING",
+          "state": "blocked",
           "recovery_plan": {
-            "action": "none",
-            "reason": "无异常",
-            "evidence": null,
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
             "retry_after_days": null
           },
-          "notes": [],
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
           "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-24",
+          "expected": "07:10",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-25",
+          "expected": "07:10",
+          "status": "MISSING",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+            "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo",
+            "retry_after_days": null
+          },
+          "notes": [
+            "no wrapper log run-start and no bus record for this trigger"
+          ],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
+        },
+        {
+          "day": "2026-10-26",
+          "expected": "07:10",
+          "status": "FAILED",
+          "state": "failed",
+          "recovery_plan": {
+            "action": "retry",
+            "reason": "dsh/wrapper 退出码 1",
+            "evidence": ".hermes/logs/cron-ZP-k3-review.log",
+            "retry_after_days": 0
+          },
+          "notes": [
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-26-ZP-k3-review.md)"
+          ],
+          "exit": 1,
           "report": "2026-10-26-ZP-k3-review.md",
           "reportStrict": true,
           "idempotency_keys": [
@@ -515,32 +816,71 @@
         {
           "day": "2026-10-27",
           "expected": "07:10",
-          "status": "STALE",
-          "state": "quarantined",
+          "status": "FAILED",
+          "state": "failed",
           "recovery_plan": {
             "action": "retry",
-            "reason": "跑过但无当日报告 (空转/零产出)",
+            "reason": "dsh/wrapper 退出码 1",
             "evidence": ".hermes/logs/cron-ZP-k3-review.log",
             "retry_after_days": 0
           },
           "notes": [
             "ran but no report file dated 2026-10-27"
           ],
-          "exit": null,
+          "exit": 1,
           "report": null,
           "reportStrict": null,
           "idempotency_keys": [
             "27c93f65b8b82b43"
           ]
+        },
+        {
+          "day": "2026-10-28",
+          "expected": "07:10",
+          "status": "BLOCKED",
+          "state": "blocked",
+          "recovery_plan": {
+            "action": "request_human",
+            "reason": "dsh 凭据/模型/运行时未通过预检; 不得盲目重试",
+            "evidence": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1",
+            "retry_after_days": null
+          },
+          "notes": [
+            "DEEPSEEK_API_KEY absent from scheduled process environment; restore it with scripts/repair-dsh-scheduler-credential.ps1",
+            "report is AUTO-FILLED or lacks a complete OK contract (2026-10-28-ZP-k3-review.md)"
+          ],
+          "exit": null,
+          "report": "2026-10-28-ZP-k3-review.md",
+          "reportStrict": true,
+          "idempotency_keys": [
+            "71dfa5c66ba37e24"
+          ]
+        },
+        {
+          "day": "2026-10-29",
+          "expected": "07:10",
+          "status": "PENDING",
+          "state": "pending",
+          "recovery_plan": {
+            "action": "none",
+            "reason": "触发点未到或宽限期内",
+            "evidence": null,
+            "retry_after_days": null
+          },
+          "notes": [],
+          "exit": null,
+          "report": null,
+          "reportStrict": null,
+          "idempotency_keys": []
         }
       ],
-      "verdict": "STALE",
-      "state": "quarantined",
+      "verdict": "PENDING",
+      "state": "pending",
       "recovery_plan": {
-        "action": "retry",
-        "reason": "跑过但无当日报告 (空转/零产出)",
-        "evidence": ".hermes/logs/cron-ZP-k3-review.log",
-        "retry_after_days": 0
+        "action": "none",
+        "reason": "触发点未到或宽限期内",
+        "evidence": null,
+        "retry_after_days": null
       }
     }
   ],
@@ -549,9 +889,9 @@
     "scheduler": {
       "Name": "ZP-cron-watchdog",
       "State": "Ready",
-      "Last": "2026-10-27 06:43:01",
+      "Last": "2026-10-28 06:43:01",
       "Result": 0,
-      "Next": "2026-10-28 06:43:00"
+      "Next": "2026-10-29 06:43:00"
     }
   },
   "legacy_tasks_pending_removal": [
@@ -562,16 +902,19 @@
     }
   ],
   "problems": [
-    "ZP-daily-content scheduler LastTaskResult=1",
-    "ZP-gsc-feedback scheduler LastTaskResult=1",
+    "ZP-weekly-meta 2026-10-23 -> MISSING",
     "ZP-weekly-meta scheduler LastTaskResult=2147946720",
+    "ZP-blog-deepfix 2026-10-24 -> MISSING",
     "ZP-blog-deepfix scheduler LastTaskResult=2147946720",
     "ZP-monthly-matrix scheduler LastTaskResult=2147946720",
-    "ZP-k3-review 2026-10-27 -> STALE",
     "ZP-k3-review scheduler LastTaskResult=1"
   ],
   "warnings": [
-    "DUPLICATE_IDEMPOTENCY_KEY e5038594dc97fb9f: ZP-blog-deepfix-20261010T001710 与 ZP-blog-deepfix-20261010T004733 同日同目标重复处理"
+    "DUPLICATE_IDEMPOTENCY_KEY e5038594dc97fb9f: ZP-blog-deepfix-20261010T001710 与 ZP-blog-deepfix-20261010T004733 同日同目标重复处理",
+    "DUPLICATE_IDEMPOTENCY_KEY 85bb078d408a7774: ZP-daily-content-20261028T181731 与 ZP-daily-content-20261028T181740 同日同目标重复处理",
+    "DUPLICATE_IDEMPOTENCY_KEY 85bb078d408a7774: ZP-daily-content-20261028T181731 与 ZP-daily-content-20261028T181700-harness 同日同目标重复处理",
+    "DUPLICATE_IDEMPOTENCY_KEY eeab665ac84424ea: ZP-gsc-feedback-20261028T194739-35600 与 ZP-gsc-feedback-20261028T201821-36460 同日同目标重复处理",
+    "DUPLICATE_IDEMPOTENCY_KEY 85bb078d408a7774: ZP-daily-content-20261028T181731 与 ZP-daily-content-20261028T212002-26012 同日同目标重复处理"
   ],
   "verdict": "ATTENTION"
 }
