@@ -33,6 +33,7 @@ import { localizeSpecValue, localizeSpecField } from '@/data/product-specs-i18n'
 // 2026-09-19 K3 裁决 1: v10.1 决策 1-B 展示层 MOQ 口径 (数码线书刊/本册类 5 SKU = 1 本起印)
 import { getDisplayMinOrder, isDigitalLineBook, MOQ_AEO, MOQ_STANDARD_PARAGRAPH, isPaperGoodsSmallBatch, PAPER_GOODS_MOQ } from '@/data/print-method-policy';
 import { parseInlineLinks } from '@/utils/parseInlineLinks';
+import PdpPurchaseButtons from '@/components/product/PdpPurchaseButtons';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 
@@ -497,6 +498,9 @@ export function ProductPageV9({
               口徑與 price-table 小批量檔同源 (開機費 + 隨量遞減單張價), 不含任何競品 MOQ 數字
               2026-09-23 Q-1 (交付物4): 手工注入路線废止 → 模板化派生组件 MoqQaBlock
               (价格阶梯之后渲染, 见下方); 此处块移除, 原硬编码内容不渲染 */}
+
+          {/* K3 2026-10-29 拍板「立即購買」: 購買按鈕區 (數量 + 加入購物車 + 立即購買; 幣種口徑 = feed 同源) */}
+          <PdpPurchaseButtons product={product} locale={locale} />
 
           {/* CTA 行 */}
           <div className="mt-5 grid grid-cols-2 gap-3">
