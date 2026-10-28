@@ -43,6 +43,18 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
 复算后全站 grep：即日交貨/即日速遞/翌日配送 = 2（same-day 18:00 条件化 + keywords 搜索词——均合规）。
 门禁：tsc 54 / HARD 0 / brand 0 / gsc-leak 0。
 
+### 批 #11 线上复检（b2a8166c build PASS 后探针）
+
+探针 6/6 检测到页面「即日残留」→ §0.23.2 复算 dump 定位：**sku-seo title/desc 已清，但 src 组件层含急件词 44 处**。逐处判定：
+- **40+ 处条件化合规（保留）**：急件服务（特急 24 小时/最快当天）、数量范围（數碼 10-50 份/100-2,000 個）、「最快」软化（最快 24 小時/最快即日）、标准 SKU 条件（product-faqs 上午 11 時前確認）、same-day 专属（Header same-day-flyers/ProductPageV9 sameDayBadge）等。
+- **3 处无条件需修（批 #12 候选，daily lane 释放后执行）**：
+  1. `src/data/products.ts` L1555 gift-bags description「即日交貨，全港免費送貨」（sku-seo desc 已修——products.ts 真值源未对齐）
+  2. `src/lib/seo.ts` L846 zh-hk 分类 title 默认模板「${name} | 即日交貨」（所有未自定义分类页）
+  3. `src/lib/seo.ts` L939 zh-hk desc 后缀「立即查詢報價，滿$500免運費，即日交貨。」（所有 zh-hk 页面 desc 默认）
+- **h1-builder.ts L53 flyers h1「即日交貨」**：待查用法（若普通 flyers PDP 也用→误导→批 #12 一并处理）。
+
+**并发状态**：daily lane 21:17 触发持锁改 sku-seo-data.ts（CSV 归并生成）——批 #12（src 组件）按 §0.35.7 双条件待 daily 释放后执行；批 #8-11 手改需归并回 CSV（21:50 检查）。
+
 ## 四、复测登记（data-driven §3 第 8 条）
 
 | 项 | 上线日 | 冻结窗口 | 下一检查日 | 成功/失败条件 |
