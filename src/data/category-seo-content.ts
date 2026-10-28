@@ -107,7 +107,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '3. 高端工藝 + 免費設計支援，提升開箱體驗與品牌價值',
           points: [
             '支援燙金／燙銀、UV 凸字、局部塗層、窗口設計、絲帶孔位等高級工藝',
-            '提供免費打樣＋專業設計建議，確認結構與美觀度後再批量生產',
+            '提供免費數碼打樣＋專業設計建議，確認結構與美觀度後再批量生產',
             '可加 QR Code 追蹤碼，實現產品溯源與互動行銷',
           ],
         },
@@ -150,7 +150,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: '本地化服務節點',
       items: [
         { title: '打樣中心', description: '可預約查看實物樣本（燙金效果、紙質手感、結構強度）' },
-        { title: '免費打樣服務', description: '確認外觀與結構無誤後再批量生產，避免 costly 錯誤' },
+        { title: '免費數碼打樣', description: '提交檔案後 1 小時免費數碼打樣，確認後開印' },
         { title: '全港配送', description: '小批量順豐寄送，大批量安排貨車直送倉庫或辦公室' },
       ],
     },
