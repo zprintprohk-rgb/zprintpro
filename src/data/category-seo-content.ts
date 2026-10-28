@@ -170,6 +170,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '食品包裝專節：同一個盒型，食品類要額外處理三件事——<b>食品級紙材</b>（落單註明，可選 PE 淋膜保護印刷面）、<b>防潮處理</b>（烘焙、茶葉、冷藏出貨必備）、<b>合規文件</b>（出口訂單可提供材料說明）。月餅、年糕、曲奇等節慶禮盒，建議預留 3-4 週做打樣同對色。<a href="/zh-hk/product/food-boxes/">食品包裝盒產品頁</a>、<a href="/zh-hk/blog/food-packaging-printing-guide/">食品包裝印刷完全指南</a>、<a href="/zh-hk/blog/kraft-paper-box-types-comparison-2026/">牛皮紙盒指南</a>、<a href="/zh-hk/blog/tea-beverage-gift-box-printing-guide/">包裝盒設計流程</a>。'],
       links: [
         { label: '食品包裝訂製', href: '/zh-hk/product/food-boxes/' },
+        { label: '牛皮紙包裝盒訂製', href: '/zh-hk/product/kraft-paper-packaging-box/' },
         { label: '包裝盒訂製指南', href: '/zh-hk/blog/packaging-box-custom-guide/' },
         { label: '食品包裝印刷指南', href: '/zh-hk/blog/food-packaging-printing-guide/' },
         { label: '紙袋訂製', href: '/zh-hk/category/paper-bags/' },
@@ -205,7 +206,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
           points: [
-            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs. For deeper detail, read the [food packaging printing guide](/en/blog/food-packaging-printing-guide/), the [kraft vs corrugated box comparison](/en/blog/kraft-paper-box-types-comparison-2026/) and [2026 packaging box pricing](/en/blog/packaging-box-pricing-2026/); specs are on the [food packaging boxes](/en/product/food-boxes/) and [magnetic gift boxes](/en/product/magnetic-closure-gift-box/) pages.',
+            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs. For deeper detail, read the [food packaging printing guide](/en/blog/food-packaging-printing-guide/), the [kraft vs corrugated box comparison](/en/blog/kraft-paper-box-types-comparison-2026/) and [2026 packaging box pricing](/en/blog/packaging-box-pricing-2026/); specs are on the [food packaging boxes](/en/product/food-boxes/), [magnetic gift boxes](/en/product/magnetic-closure-gift-box/) and [custom electronics packaging boxes](/en/product/electronics-packaging-box/) pages.',
             'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
             'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
           ],
@@ -222,7 +223,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '3. Premium Finishes + Free Design Support, Elevating Brand Value',
           points: [
             'Support for foil stamping (gold/silver), UV embossing, spot coating, window design, ribbon holes, and more luxury finishes.',
-            'Free prototyping + professional design consultation. Confirm structure and aesthetics before mass production.',
+            'Free digital mockup + professional design consultation. Confirm structure and aesthetics via 3D rendering before mass production.',
             'Optional QR code tracking for product traceability and interactive marketing.',
           ],
         },
@@ -329,7 +330,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '3. 高級加工＋無料デザイン支援、ブランド価値向上',
           points: [
             '箔押し（金／銀）、UVエンボス、局部コーティング、窓開け、リボン穴など高級加工対応。',
-            '無料サンプル＋プロのデザイン相談。構造と外観を確認してから量産します。',
+            '無料デジタル校正＋プロのデザイン相談。構造と外観を 3D レンダリングで確認してから量産します。',
             'QRコード追跡で製品トレーサビリティとインタラクティブマーケティングを実現。',
           ],
         },
@@ -372,7 +373,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: 'ローカルサービス拠点',
       items: [
         { title: 'サンプル確認（予約製）', description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。' },
-        { title: '無料サンプルサービス', description: '外観と構造を確認してから量産し、高額なミスを防ぎます。' },
+        { title: '無料デジタル校正', description: 'データ提出後 1 時間で無料デジタル校正、確認後に本印刷。' },
         { title: '日本全国配送', description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。' },
       ],
     },
@@ -390,6 +391,8 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       ],
       links: [
         { label: 'パッケージ箱オーダーガイド', href: '/ja/blog/packaging-box-custom-guide/' },
+        { label: '貼り箱（リジッドボックス）', href: '/ja/product/rigid-boxes/' },
+        { label: '食品パッケージ箱', href: '/ja/product/food-boxes/' },
         { label: '化粧品パッケージ印刷', href: '/ja/blog/cosmetics-packaging-box-printing-guide/' },
         { label: '紙袋 印刷', href: '/ja/category/paper-bags/' },
         { label: 'ステッカー印刷', href: '/ja/category/stickers/' },
