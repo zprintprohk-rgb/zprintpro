@@ -44,3 +44,20 @@ Google **没有**可安装的"站点评分插件"。官方相关物: ① **Googl
 1. **C 方案**: 提供首批 3-5 条真实评价（WhatsApp 原话截图 + 客户署名同意）→ 执行层当日上线
 2. **A 方案**是否立项（含 Supabase apply 排期）
 3. MC feeds 配置确认结果
+
+---
+
+## 十、A1 批已执行（K3 拍板「执行方案A」后同日落地，commit dc5e625f，CF run 122770406382）
+
+| 交付 | 文件 | 说明 |
+|---|---|---|
+| 迁移 SQL | `supabase/migrations/009_create_product_reviews.sql` | product_reviews 表 + RLS（anon 只可插 pending / 只可读 approved）+ 每人每 SKU 每日一条唯一索引（DB 级频控） |
+| API | `src/app/api/reviews/route.ts`（edge） | POST：服务端校验+IP 哈希（可 SUPABASE_REVIEW_SALT 覆盖）+蜜罐静默弃置；GET：approved-only；**fail-closed 404**（迁移未 apply = 整段隐藏） |
+| 组件 | `src/components/product/SkuReviews.tsx` | approved 列表 + 星级表单（1-5 星/称呼可选/≥10 字/consent 勾选），三语（zh 繁体零简体/ja 无「份」/en 纯英），**fail-closed** |
+| 挂载 | `page.tsx` fragment 尾部 | v9 与 legacy 两种 PDP 布局共用一个挂载点 |
+
+**红线执行**：零编造（只有真实提交，pending 直到审核）· aggregateRating 管线未动（≥3 条真实评价规则不变）· consent DB 级强制（RLS WITH CHECK）· 蜜罐+长度+唯一索引三层防刷。
+
+**K3 唯一待办（管理员 2 分钟）**：Supabase SQL Editor 执行 `009_create_product_reviews.sql`（连同未 apply 的 001-008 一起）。执行后**无需重启**：表建好即功能自启（表单出现在全部 PDP），提交进 pending → Supabase Studio 表格中把 status 改 approved 即前台可见。审核动线：Studio → product_reviews → 按 created_at 倒序看 pending → 垃圾改 rejected、真实改 approved。
+
+**A2 候选（拍板后再建）**：站内审核页（替代 Studio 手改）、评价进 HTML（ISR，增强 AEO 可提取性）、真实评价 ≥3 后接 aggregateRating 星级。
