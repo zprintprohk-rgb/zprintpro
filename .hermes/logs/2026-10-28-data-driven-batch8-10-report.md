@@ -31,6 +31,18 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
 - push：fff300f3（20:45，30min 间隔满足——remote 20:05 + 40min）。
 - CF build：验证中（verify-deploy 待 PASS）。
 
+### 批 #11（探针复算漏网修复，b2a8166c @21:17）
+
+线上探针 8 项中 3 项检测到「即日残留」——§0.23.2 双方法复算定位本地漏网 3 处并修复：
+| 位置 | 原 | 新 | body 真值 |
+|---|---|---|---|
+| gift-bags zh desc | 即日交貨，全港免費送貨 | 順豐本地速遞 | 满 HK$500 免费顺丰（非全港无条件） |
+| outdoor-posters zh title | 即日速遞 | UV耐候 | PVC/PET 合成纸 + UV 耐候墨水 |
+| adhesive-posters zh title | 即日速遞 | 當日可取 | 數碼短單最快當日可取（快递当日≠生产当日） |
+
+复算后全站 grep：即日交貨/即日速遞/翌日配送 = 2（same-day 18:00 条件化 + keywords 搜索词——均合规）。
+门禁：tsc 54 / HARD 0 / brand 0 / gsc-leak 0。
+
 ## 四、复测登记（data-driven §3 第 8 条）
 
 | 项 | 上线日 | 冻结窗口 | 下一检查日 | 成功/失败条件 |
