@@ -35,7 +35,8 @@
         "gsc-deep-analysis-2026-10-26: 海報印刷 278 imps, 0 clicks, pos 14.98",
         "e-print poster official page: quantity/price/turnaround table",
         "2026-10-27 execution matrix",
-        "2026-10-28 双方法线上核验: zh 海报价格三源不一致 — category desc A2 HK$9起/A1 HK$45起 (线上实锤) vs PDP title A2 HK$16起/A1 HK$20起 (=basePrice 16/20, 线上实锤) vs products.ts title_zh A2 HK$12.9 — 采购答案发布前需价格裁决(推荐按 basePrice 对齐, 与 data-driven 小批#2 同口径; 若 9/45 来自真实报价表则 basePrice 需复核)"
+        "2026-10-28 双方法线上核验: zh 海报价格三源不一致 — category desc A2 HK$9起/A1 HK$45起 (线上实锤) vs PDP title A2 HK$16起/A1 HK$20起 (=basePrice 16/20, 线上实锤) vs products.ts title_zh A2 HK$12.9 — 采购答案发布前需价格裁决(推荐按 basePrice 对齐, 与 data-driven 小批#2 同口径; 若 9/45 来自真实报价表则 basePrice 需复核)",
+        "2026-10-15 title-v5 守卫历史: a2-posters PRICE_MISMATCH 9≠16 已登记 (2026-10-15-ZP-gsc-feedback.md L193), PDP title 侧已被 data-driven 小批#2 修至 16; 剩余未修面 = category-seo-content featuredSnippet/参考价表 (A2 9/A1 45), 无守卫覆盖, 2026-10-28 13:00 双方法线上复证实锤"
       ],
       "score": 98.45,
       "score_model": "gsc-opportunity-v1",

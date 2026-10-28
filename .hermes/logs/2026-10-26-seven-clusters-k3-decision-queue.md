@@ -105,3 +105,8 @@
   - **独立 7 天技术抽查（双方法）**: ja 包装 category ¥44 命中 / ja 貼り箱（貼り箱+¥1,260 53 命中）/ ja 急件 title ¥125〜 / en food-boxes 数据层 .74 / zh a2 海报数据层 HK（zh 线上探针因网络抖动 INVALID，数据层=第二方法已过; 待网络恢复补线上）。
   - K3 待拍板维持: K3-1..7/9/10（ZP-POSTER 采购答案=当前最高分 98.45）+ 包装批1（对端 379faa3f 执行包就绪）+ dsh 凭据重存（修复脚本 scripts/repair-dsh-scheduler-credential.ps1 已就位, K3 运行即自愈）。
 - **2026-10-28 13:0x 新增观察项 (ZH-POSTER 价格三源不一致, 双方法线上实锤)**: category 页 desc (featuredSnippet+参考价表) 显示 A2 157g HK 起/張 / A1 HK 起/張; PDP title 显示 A2 HK / A1 HK (=products.ts basePrice 16/20); products.ts title_zh 另有 A2 HK.9。→ 采购答案发布前需裁决: 推荐统一按 basePrice (16/20) 对齐 (与 data-driven 小批#2 同口径, 该批已把 PDP title 对齐 basePrice 并上线); 若 9/45 出自真实报价表则 basePrice 需复核。已并入 strategy-task-queue ZH-POSTER 任务 evidence。
+- **2026-10-28 20:3x 合并 K3 拍板速览（当晚 21:17 daily-content = dsh 凭据机器判据）**:
+  - **ONE-action P0-1 dsh 凭据**: 运行 scripts/repair-dsh-scheduler-credential.ps1（写 Machine scope DEEPSEEK_API_KEY，L63 已确认）或 DSH Models 页重存; 判据 = 21:17 daily-content lane 产真实报告 (dsh exit=0)。缺此 = 全部 lane 无真实分析。
+  - **ONE-action P0-2 reviews 009**: K3 已在 Supabase Studio Apply 009 migration (reviews A1 已交付 dc5e625f, fail-closed 设计中, 线上组件隐藏/API 空返回已验) → Apply 后即开放审核上评。
+  - **P1 价格裁决 (对端 5 项 + 本项)**: ① zh 海报 category 9/45 vs basePrice 16/20 (本项, 推荐 basePrice 对齐) ② NT$ 婚慶 2 SKU ③ white-card-boxes 129 vs 0.5-3.0 ④ corrugated/tuck-end en/ja 币种 ⑤ 三语交期矛盾 ⑥ 纸袋 from-价语义。全部 SSoT = 对端 _allsku_truth.tsv (83 SKU 权威真值表)。
+  - **参照 (对端 EOD 2026-10-28)**: MC 三步 (brand 重复修复) · 年賀状 5 问 (10-31) · 包装批 1 审批 (379faa3f 执行包就绪) · weekly/blog/monthly 0x800710E0 重注册。
