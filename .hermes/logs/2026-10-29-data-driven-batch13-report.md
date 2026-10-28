@@ -31,4 +31,10 @@ tsc 54 / title-v5 HARD 0 / brand 0 —— 全绿。CSV 即日発送 3 = ts 3（�
 
 校准报告（恢复 109.9% 双方法/28d KPI/23 词/锚点表）+ 矩阵 gsc_feedback_2026_10_29 block + anomaly json（双方法记录）——全部核对通过，peer 已排 11-01 教科書 churn 复盘 / 11-03 C4 C6 / 11-04 年賀状·貼紙——我侧仅补 11-04 复测提醒（schedule-c60ff77c）。
 
+## 五、上线验证（02:56，5597d239 build PASS）
+
+- push `e2ece10a..5597d239`：批 #13 3 commit + peer 后续 7 commit（blog-deepfix/reviews-ui/Buy Now/daily 复查）
+- 线上探针：ja service-areas 順丰翌日配送 0（順丰配送 4 ✓）/ doujinshi 国際認証体系 0（品質 27 中性保留 ✓）
+- **CSV 清毒归并**（peer b50ff77c 的 ts 清毒 CSV 未同步——已归并 9→0，保留中性品質，commit 待 03:46 窗口）
+
 数据来源：peer 9ff9a55e（K3 01:16-01:23 导出的 4 新档）、校准报告、lane-runs.jsonl、src body 真值。
