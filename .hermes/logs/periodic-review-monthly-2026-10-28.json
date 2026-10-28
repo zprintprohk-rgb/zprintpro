@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "period": "monthly",
+  "review_date": "2026-10-28",
+  "window_start": "2026-09-29",
+  "inputs": {
+    "queue": ".hermes\\logs\\strategy-task-queue.json",
+    "status": ".hermes\\logs\\lane-status.json",
+    "runs": ".hermes\\logs\\lane-runs.jsonl",
+    "status_available": true
+  },
+  "execution": {
+    "runs": 44,
+    "verdicts": {
+      "OK": 32,
+      "BLOCKED": 3,
+      "FAILED": 7,
+      "STALE": 2
+    },
+    "per_lane": {
+      "ZP-daily-content": {
+        "OK": 15,
+        "BLOCKED": 2,
+        "FAILED": 3,
+        "STALE": 2
+      },
+      "ZP-gsc-feedback": {
+        "OK": 7,
+        "FAILED": 2
+      },
+      "ZP-weekly-meta": {
+        "OK": 1
+      },
+      "ZP-blog-deepfix": {
+        "OK": 3
+      },
+      "ZP-monthly-matrix": {
+        "OK": 1
+      },
+      "ZP-k3-review": {
+        "OK": 5,
+        "FAILED": 2,
+        "BLOCKED": 1
+      }
+    },
+    "attention_lanes": [
+      {
+        "task": "ZP-weekly-meta",
+        "verdict": "MISSING",
+        "recovery_action": "request_human",
+        "evidence": "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo"
+      },
+      {
+        "task": "ZP-blog-deepfix",
+        "verdict": "MISSING",
+        "recovery_action": "request_human",
+        "evidence": "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+      },
+      {
+        "task": "ZP-monthly-matrix",
+        "verdict": "UNKNOWN",
+        "recovery_action": "request_human",
+        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+      },
+      {
+        "task": "ZP-k3-review",
+        "verdict": "BLOCKED",
+        "recovery_action": "request_human",
+        "evidence": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1"
+      }
+    ]
+  },
+  "task_decisions": [
+    {
+      "task_id": "OPS-20261028-DSH-CREDENTIAL",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-28"
+    },
+    {
+      "task_id": "ZH-POSTER-20261028-PROCUREMENT",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "ZH-PACKAGING-20261028-BATCH1",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "EN-STICKER-20261028-SMALLBATCH",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-03"
+    },
+    {
+      "task_id": "EN-CATALOG-20261028-TRUTH",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "JA-C109-20261028-DEADLINE",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "MEASURE-20261028-ATTRIBUTION",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-01"
+    },
+    {
+      "task_id": "GEO-20261103-AI-PROBE-S1",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": "2026-11-03"
+    },
+    {
+      "task_id": "REVIEW-20261030-WEEKLY",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": "2026-10-30"
+    },
+    {
+      "task_id": "REVIEW-20261101-MONTHLY",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": "2026-11-01"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-29"
+    }
+  ],
+  "dispatched_task_ids": [],
+  "proposed_task_ids": [
+    "FIX-MONTHLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+    "FIX-MONTHLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
+    "FIX-MONTHLY-2026-10-28-ZP-monthly-matrix-725c87e3"
+  ],
+  "learning_candidates": [],
+  "queue_write_enabled": true,
+  "guardrails": [
+    "no prompt self-rewrite",
+    "no permission expansion",
+    "no src writes",
+    "no commit/push",
+    "SCALE requires complete comparable evidence",
+    "WAITING_K3 cannot be self-approved"
+  ]
+}

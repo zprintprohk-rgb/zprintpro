@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-10-28",
+  "run_started_at": "2026-10-28 19:37:44",
+  "verdict": "OK",
+  "confidence": "LOW",
+  "confidence_reason": "query-level export ends 2026-10-25 (3d), date-level ends 2026-10-23 (5d), cliff 28d file latest day 2026-10-12 (16d) -> WARN_STALE; no fresh GSC pull executed in this sandbox (pwsh/scripts unavailable)",
+  "scope_discipline": [
+    "date x page (28d full property) != query (top-query aggregate) != query x page x country; totals are not reconcilable and are never subtracted across scopes.",
+    "28d window 2026-09-28..2026-10-25 spans pre-cliff and post-cliff days; its daily mean is NOT a current run-rate.",
+    "Recovery is computed only from the same source and same filter on both sides (date x country, hkg+jpn+usa, calendar day)."
+  ],
+  "data_windows": {
+    "cliff_28d_file": {
+      "latest_day": "2026-10-12",
+      "age_days_at_run": 16,
+      "export_file_date": "2026-10-15",
+      "file": "GSC数据/香港站点28天数据zprintpro.com-Performance-on-Search-2026-10-15.xlsx"
+    },
+    "realtime_24h_file": {
+      "window": "2026-10-22T00:00:00 ~ 2026-10-22T23:00:00",
+      "export_file_date": "2026-10-23",
+      "imps": 758.0,
+      "clicks": 21.0,
+      "reused_by_runs": ["2026-10-24", "2026-10-26", "2026-10-27", "2026-10-28"]
+    },
+    "query_export": {
+      "current": "2026-09-28..2026-10-25",
+      "previous": "2026-08-31..2026-09-27",
+      "rows_current": 1565,
+      "rows_previous": 1681
+    },
+    "date_country_export": {
+      "span": "56 days",
+      "last_day_with_rows": "2026-10-23",
+      "lines_including_header": 2553
+    }
+  },
+  "sources": [
+    ".hermes/logs/gsc-cliff-2026-10-28.json (generated 2026-10-28)",
+    ".hermes/logs/gsc-cliff-2026-10-20.json, -10-24.json, -10-27.json (input-file comparison)",
+    ".hermes/logs/gsc-deep-analysis-2026-10-26.json (window 2026-09-28..2026-10-25; 1565 rows)",
+    ".hermes/logs/k3-kpi-panel-2026-10-26.md + .json (generated 2026-10-27T03:50:42Z)",
+    ".hermes/logs/gsc-date-country-56d-2026-10-26.csv (2553 lines incl. header; calendar-day series)",
+    ".hermes/logs/gsc-query-country-2026-10-26.csv (1565 rows) + gsc-query-country-previous-28d-2026-10-26.csv (1681 rows)",
+    ".hermes/logs/gsc-opportunities-2026-10-26.csv (72-row filtered top list; not a full query export)",
+    ".hermes/logs/strategy-task-queue.json (generated 2026-10-28T06:00+08:00)",
+    ".hermes/logs/2026-10-28-automation-runtime-repair-and-feedback-report.md (runtime/credential facts)",
+    ".hermes/logs/2026-10-27-nengajo-claims-inventory.md (nengajo page live state; commit 3eed6277)",
+    "web_fetch https://zprintpro.com/ja/nengajo-2027/ (HTTP 200, 2026-10-28, title/H1/SKU table rendered)"
+  ],
+  "double_method": {
+    "claim": "pre-cliff daily impression baseline",
+    "method_1": "gsc-cliff combined_mean28 = 585.2 (sum of three sites' 28d mean, source file 10-13)",
+    "method_2": "date x country calendar-day sum 2026-09-25..2026-10-08 = 8154 / 14 = 582.4",
+    "agreement": "0.5% difference -> baseline accepted",
+    "claim_2": "current recovery state",
+    "method_1_result": "129.5% (24h realtime file 758 / 585.2) - REJECTED as recovery evidence",
+    "method_2_result": "108.3% (calendar-day 630.5 / 582.4, 2026-10-13..2026-10-22)",
+    "disagreement_action": "indicator investigated: the 24h file is a rolling 24h window from one frozen export and its numerator was reused by four runs; the calendar-day series is the correct comparator. Only method 2 is used.",
+    "method_3_context_only": "28d full-total 23014 vs 23794 = -3.3%; window spans pre-cliff days, therefore not used for recovery"
+  },
+  "recovery": {
+    "reported_ratio_pct": 108.3,
+    "definition": "3-market (hkg+jpn+usa) calendar-day impressions, 2026-10-13..2026-10-22 mean / 2026-09-25..2026-10-08 mean",
+    "precliff_mean_imps_per_day": 582.4,
+    "post_mean_imps_per_day": 630.5,
+    "post_days_used": 10,
+    "clicks_per_day": {"pre": 12.9, "post": 17.4, "delta_pct": 34.9},
+    "ctr_pct": {"pre": 2.21, "post": 2.76},
+    "last3_full_days_ratio_pct": 114.2,
+    "last3_full_days": ["2026-10-20", "2026-10-21", "2026-10-22"],
+    "weekend_ratio_pct": 75.5,
+    "weekend_days": ["2026-10-17", "2026-10-18"],
+    "consecutive_rise_days": 2,
+    "state": "BASIC_RECOVERY_PENDING_RECHECK",
+    "state_note": ">=90% threshold met on calendar-day method, but data is 5 days old and the 24h metric is frozen -> cannot be declared final; needs a fresh export to confirm.",
+    "detector_snapshot": {
+      "ratio": 1.295,
+      "imps": 758.0,
+      "clicks": 21.0,
+      "usable": false,
+      "reason": "same 2026-10-23 input file reused by 2026-10-24/26/27/28 runs; window is rolling 24h (10-22 00:00-23:00), not a calendar day; 758 vs calendar 10-22 total 679 (+11.6%) shows it is not interchangeable"
+    }
+  },
+  "spam_recovery_weekly": {
+    "detector_series_pct": [
+      {"date": "2026-10-12", "ratio_pct": 7.5, "usable": false},
+      {"date": "2026-10-13", "ratio_pct": 127.6, "usable": false},
+      {"date": "2026-10-15", "ratio_pct": 97.2, "usable": false},
+      {"date": "2026-10-20", "ratio_pct": 70.6, "usable": false},
+      {"date": "2026-10-24", "ratio_pct": 129.5, "usable": false},
+      {"date": "2026-10-26", "ratio_pct": 129.5, "usable": false},
+      {"date": "2026-10-27", "ratio_pct": 129.5, "usable": false},
+      {"date": "2026-10-28", "ratio_pct": 129.5, "usable": false}
+    ],
+    "calendar_day_weekly_pct": [
+      {"week": "2026-10-06..2026-10-12", "mean_imps": 515.0, "ratio_pct": 88.4, "note": "transition week, contains cliff days 10-09/10-10"},
+      {"week": "2026-10-13..2026-10-19", "mean_imps": 615.7, "ratio_pct": 105.7},
+      {"week": "2026-10-20..2026-10-23", "mean_imps": 659.3, "ratio_pct": 113.2, "note": "4 days, last day possibly partial"}
+    ],
+    "consecutive_weekly_rises": 2,
+    "index_coverage": "PENDING - no Pages/Index export this run; do not infer from impressions",
+    "manual_action": "NOT_VERIFIED - K3 three-item verification still outstanding; algorithmic hit has no reconsideration entry",
+    "next_core_update": {
+      "latest": "2026-12-12",
+      "two_thirds_probability_before": "2026-10-31",
+      "source": "inherited from 2026-10-13 external evidence (stanventures 2026-09-28), not re-verified this run",
+      "use": "scheduling reference only"
+    },
+    "mechanism_status": {
+      "guard_29_keyword_detox": "unchanged",
+      "cliff_detector": "NEEDS_FIX (A2: frozen 24h input + non-calendar window)",
+      "online_assertions": "unchanged from 2026-10-15",
+      "content_similarity_gate": "unchanged"
+    }
+  },
+  "daily_series_3market": [
+    {"date": "2026-10-12", "hk": 504, "jp": 74, "us": 98, "total": 676, "clicks": 21, "ctr_pct": 3.11},
+    {"date": "2026-10-13", "hk": 518, "jp": 86, "us": 114, "total": 718, "clicks": 25, "ctr_pct": 3.48},
+    {"date": "2026-10-14", "hk": 505, "jp": 112, "us": 124, "total": 741, "clicks": 28, "ctr_pct": 3.78},
+    {"date": "2026-10-15", "hk": 509, "jp": 95, "us": 104, "total": 708, "clicks": 23, "ctr_pct": 3.25},
+    {"date": "2026-10-16", "hk": 523, "jp": 79, "us": 69, "total": 671, "clicks": 13, "ctr_pct": 1.94},
+    {"date": "2026-10-17", "hk": 306, "jp": 60, "us": 71, "total": 437, "clicks": 6, "ctr_pct": 1.37},
+    {"date": "2026-10-18", "hk": 291, "jp": 74, "us": 77, "total": 442, "clicks": 11, "ctr_pct": 2.49},
+    {"date": "2026-10-19", "hk": 419, "jp": 98, "us": 76, "total": 593, "clicks": 15, "ctr_pct": 2.53},
+    {"date": "2026-10-20", "hk": 469, "jp": 83, "us": 86, "total": 638, "clicks": 17, "ctr_pct": 2.66},
+    {"date": "2026-10-21", "hk": 493, "jp": 92, "us": 93, "total": 678, "clicks": 19, "ctr_pct": 2.80},
+    {"date": "2026-10-22", "hk": 494, "jp": 88, "us": 97, "total": 679, "clicks": 17, "ctr_pct": 2.50},
+    {"date": "2026-10-23", "hk": 471, "jp": 94, "us": 77, "total": 642, "clicks": 9, "ctr_pct": 1.40, "partial_suspect": true}
+  ],
+  "kpi_four_metrics_28d_date_page": {
+    "all": {"imps_cur": 23014, "imps_prev": 23794, "clicks_cur": 461, "clicks_prev": 384, "ctr_cur_pct": 2.00, "ctr_prev_pct": 1.61, "pos_cur": 16.4, "pos_prev": 17.2},
+    "zh_hk": {"imps_cur": 15605, "imps_prev": 15256, "clicks_cur": 366, "clicks_prev": 296, "ctr_cur_pct": 2.35, "ctr_prev_pct": 1.94, "pos_cur": 17.5, "pos_prev": 17.7},
+    "en": {"imps_cur": 5307, "imps_prev": 6398, "clicks_cur": 55, "clicks_prev": 55, "ctr_cur_pct": 1.04, "ctr_prev_pct": 0.86, "pos_cur": 13.4, "pos_prev": 16.5},
+    "ja": {"imps_cur": 2078, "imps_prev": 2124, "clicks_cur": 36, "clicks_prev": 32, "ctr_cur_pct": 1.73, "ctr_prev_pct": 1.51, "pos_cur": 16.7, "pos_prev": 16.5},
+    "keyword_rows": {"zh_hk": {"cur": 582, "prev": 600}, "en": {"cur": 580, "prev": 655}, "ja": {"cur": 168, "prev": 148}},
+    "page1_words": {"zh_hk": {"cur": 242, "prev": 245}, "en": {"cur": 187, "prev": 183}, "ja": {"cur": 50, "prev": 55}},
+    "note": "date x page scope; not comparable with query-level or 3-market calendar-day numbers"
+  },
+  "money_words_page1": {
+    "zh_hk": {"measured_words": 7, "page1": 2, "labels": ["食品包裝印刷 pos 9.11", "即日印刷 pos 6.90"], "unmeasured_in_panel": ["貼紙印刷 pos 39.91 (fully present in query x country, panel join missed it)", "月曆印刷 pos 21.03 (same)"]},
+    "en": {"measured_words": 8, "page1": 3, "labels": ["small batch sticker printing pos 4.77", "small batch stickers pos 5.07", "saddle stitch booklet printing pos 9.60"]},
+    "ja": {"measured_words": 6, "page1": 1, "labels": ["卒アル販売 pos 5.00"]},
+    "total_page1": "6/23",
+    "caveat": "page-1 count is a lagging indicator: saddle stitch booklet printing is still counted page-1 at pos 9.60 while losing 84% of impressions and both clicks."
+  },
+  "locked_words_8_hkg_28d": [
+    {"word": "包裝盒印刷", "imps_cur": 49, "imps_prev": 57, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 30.22, "pos_prev": 34.72, "pos_delta": -4.50, "state": "IMPROVING_OFF_PAGE1"},
+    {"word": "包裝盒訂製", "imps_cur": 44, "imps_prev": 46, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 30.27, "pos_prev": 29.87, "pos_delta": 0.40, "state": "FLAT_OFF_PAGE1"},
+    {"word": "紙盒印刷", "imps_cur": 41, "imps_prev": 56, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 32.12, "pos_prev": 31.68, "pos_delta": 0.44, "state": "FLAT_OFF_PAGE1"},
+    {"word": "貼紙印刷", "imps_cur": 107, "imps_prev": 190, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 39.91, "pos_prev": 24.52, "pos_delta": 15.39, "state": "COLLAPSE"},
+    {"word": "宣傳單張", "imps_cur": 96, "imps_prev": 110, "clicks_cur": 0, "clicks_prev": 1, "pos_cur": 27.17, "pos_prev": 35.63, "pos_delta": -8.46, "state": "IMPROVING_OFF_PAGE1"},
+    {"word": "即日印刷", "imps_cur": 52, "imps_prev": 53, "clicks_cur": 1, "clicks_prev": 2, "pos_cur": 6.90, "pos_prev": 9.11, "pos_delta": -2.21, "state": "ONLY_CLICK_CARRIER"},
+    {"word": "書刊印刷", "imps_cur": 85, "imps_prev": 88, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 32.51, "pos_prev": 35.51, "pos_delta": -3.00, "state": "IMPROVING_OFF_PAGE1"},
+    {"word": "騎馬釘", "imps_cur": 48, "imps_prev": 53, "clicks_cur": 0, "clicks_prev": 0, "pos_cur": 19.65, "pos_prev": 18.68, "pos_delta": 0.97, "state": "BORDERLINE_11_20"}
+  ],
+  "locked_words_summary": {"imps_cur": 522, "imps_prev": 653, "imps_delta_pct": -20.1, "clicks_cur": 1, "clicks_prev": 3, "improved": 5, "worsened": 3},
+  "ctr_repair_pool": {
+    "criterion": "clicks = 0 in BOTH 28d windows AND pos_cur <= 20 (zh from opportunities/query-country; en/ja from opportunities)",
+    "count": 17,
+    "total_imps": 1057,
+    "items": [
+      {"query": "コミケ 印刷", "market": "ja", "imps": 169, "pos": 18.82, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "食品包裝印刷", "market": "zh-hk", "imps": 104, "pos": 9.11, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "china catalog printing", "market": "en", "imps": 70, "pos": 15.88, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "紙袋印刷", "market": "zh-hk", "imps": 62, "pos": 13.10, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "小冊子印刷", "market": "zh-hk", "imps": 61, "pos": 10.30, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "印刷紙袋", "market": "zh-hk", "imps": 61, "pos": 14.84, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "戶外貼紙", "market": "zh-hk", "imps": 60, "pos": 14.58, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "食品印刷", "market": "zh-hk", "imps": 54, "pos": 9.31, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "海報與印刷", "market": "zh-hk", "imps": 54, "pos": 11.61, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "騎馬釘印刷", "market": "zh-hk", "imps": 51, "pos": 11.57, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "a2 poster", "market": "en", "imps": 50, "pos": 11.70, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "small batch sticker printing", "market": "en", "imps": 49, "pos": 4.77, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "騎馬釘", "market": "zh-hk", "imps": 48, "pos": 19.65, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "大信封", "market": "zh-hk", "imps": 44, "pos": 3.47, "clicks_cur": 0, "clicks_prev": 0, "note": "highest-expectation item: pos 3.5 with 44 imps and zero clicks in both windows"},
+      {"query": "貼紙設計", "market": "zh-hk", "imps": 44, "pos": 18.38, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "食品包裝訂製", "market": "zh-hk", "imps": 40, "pos": 12.95, "clicks_cur": 0, "clicks_prev": 0},
+      {"query": "可移貼紙", "market": "zh-hk", "imps": 36, "pos": 19.50, "clicks_cur": 0, "clicks_prev": 0}
+    ]
+  },
+  "anomalies": [
+    {"id": "GSC-A1", "class": "DATA_STALE", "severity": "P1", "evidence": "cliff 28d files latest day 2026-10-12 (16d); query export ends 2026-10-25 (3d); date export ends 2026-10-23 (5d)", "impact": "no fresh-window conclusion; every number must carry its window", "owner": "K3", "action": "export new 28d + query x page x country files covering 2026-10-26..2026-10-28"},
+    {"id": "GSC-A2", "class": "FROZEN_METRIC", "severity": "P1", "evidence": "recovery_ratio 1.295 identical on 2026-10-24/26/27/28 from the same 2026-10-23 24h file (758 imps); on 2026-10-20 the input file was 2026-10-19 (413 imps, ratio 0.706)", "impact": "ratio reflects the input file, not the day; unusable as a trend or recovery coefficient", "owner": "ZP-gsc-feedback", "action": "stop quoting 1.295 as today's recovery; quote calendar-day 108.3% with window label"},
+    {"id": "GSC-A3", "class": "SCOPE_CONFLICT", "severity": "P2", "evidence": "24h file 758 imps vs calendar-day 2026-10-22 total 679 (+11.6%); 28d full total 23014 spans 2026-09-28..2026-10-25 including pre-cliff days", "impact": "cross-scope subtraction produces false cliffs and false recoveries", "owner": "ZP-gsc-feedback", "action": "keep scope labels; never derive a daily rate from a 28d total that straddles the cliff"},
+    {"id": "GSC-A4", "class": "RECOVERY_STATE", "severity": "P1", "evidence": "calendar-day 10-day mean 630.5 vs pre-cliff 582.4 = 108.3%; clicks 17.4/day vs 12.9 (+34.9%); CTR 2.76% vs 2.21%; last 3 full days 114.2%; weekends 75.5%", "impact": "impressions and clicks are at/above pre-cliff run-rate; weekend still soft; data 5 days old", "owner": "ZP-gsc-feedback", "action": "state BASIC_RECOVERY_PENDING_RECHECK, not final recovery; recheck on fresh export"},
+    {"id": "GSC-A5", "class": "CTR_SHOCK", "severity": "P1", "evidence": "海報印刷: imps 168->278 (+65%), pos 18.69->14.98 (better), clicks 2->0 (CTR 1.19%->0)", "impact": "position and impressions improved while clicks vanished; snippet/SERP-feature or intent mismatch suspected", "owner": "ZP-weekly-meta", "action": "SERP sample before any title change; poster price truth is already WAITING_K3, do not touch"},
+    {"id": "GSC-A6", "class": "ZERO_CLICK_PAGE1", "severity": "P1", "evidence": "17 queries, 1057 imps, 0 clicks in both windows, pos <= 20; worst expectation 大信封 pos 3.47 / 44 imps / 0 clicks", "impact": "systematic CTR underperformance on page 1-2; not a ranking problem", "owner": "ZP-weekly-meta", "action": "consume ctr_repair_pool; require SERP sample + title-freeze check per item"},
+    {"id": "GSC-A7", "class": "POSITION_COLLAPSE", "severity": "P1", "evidence": "貼紙印刷 hkg 24.52->39.91 (+15.39) and imps 190->107 (-43.7%); 両面カラー印刷 jpn 36.37->42.33 and imps 43->6 (-86%); en paper bags cluster 13.17->39.40 and imps 108->10 (-90.7%)", "impact": "locked money word 貼紙印刷 left page 2-4; en paper-bag cluster effectively lost", "owner": "ZP-blog-deepfix", "action": "diagnose before edit; 8-lock-word red line forbids slug/page removal"},
+    {"id": "GSC-A8", "class": "IMPRESSION_DECAY", "severity": "P1", "evidence": "saddle stitch booklet printing 94->15 (-84%), clicks 2->0, pos 3.46->9.60; a6 尺寸 83->0; 香港印刷公司 65->14; 亞加力匙扣訂製 49->0; paper bag gsm 47->0; custom foil stickers 39->0; en books cluster 323->98 (-70%), clicks 3->0", "impact": "retirement candidates; some are informational words losing zero-click SERP real estate", "owner": "ZP-monthly-matrix", "action": "STOP/HOLD judgement only at weekly/monthly review; STOP != deindex/delete"},
+    {"id": "GSC-A9", "class": "CANNIBALIZATION", "severity": "P1", "evidence": "海報印刷: 8 pages, top share 38.6%, 4 blogs = 301 of 516 query-page imps (58.3%) vs category 54 (10.5%); 印海報: 9 pages, top 27.4%; 貼紙印刷: 8 pages, sticker-guide 53 + sticker-buying-guide 53 (identical weight); 紙袋印刷: 8 pages, top 29.9%; 餐牌印刷: 5 pages, top 27.3%", "impact": "transactional queries are answered by blogs; commercial category cannot consolidate signals", "owner": "ZP-weekly-meta / ZP-monthly-matrix", "action": "decision pack only; consolidation is a K3 structural call, not an executor edit"},
+    {"id": "GSC-A10", "class": "MEASUREMENT_GAP", "severity": "P2", "evidence": "KPI panel reports 貼紙印刷 and 月曆印刷 as '0 / no word-level record', but query x country has 貼紙印刷(hkg) 107 imps pos 39.91 and 月曆印刷(hkg) 104 imps pos 21.03; query x page x country totals are 215 and 202", "impact": "money-word panel under-reports coverage; page-1 conclusion unchanged (both are >20) but the instrument is wrong", "owner": "K3-admin / ops tooling", "action": "fix the money-word join in scripts/k3-kpi-panel.mjs; do not hand-edit the panel output"},
+    {"id": "GSC-A11", "class": "BLIND_OPEN_NOT_TESTABLE", "severity": "P2", "evidence": "full 1565-row query x country export contains no 年賀状 / nengajo / holiday card / 賀年 / 賀卡 row except one unrelated 1-imp query; live probe 2026-10-28 returned HTTP 200 with title/H1/SKU table rendered; NENGAJO_LIVE=true + sitemap lastmod 2026-10-22 (commit 3eed6277); export ends 2026-10-25 = at most 3 days observable", "impact": "0 impressions at <=3 days is not a verdict; the 2026-10-16 Plan B trigger is superseded by the launch state", "owner": "ZP-gsc-feedback", "action": "recheck 2026-11-04 (14 days after launch); do not call it a failure today"},
+    {"id": "GSC-A12", "class": "CHURN_BREACH", "severity": "P1", "evidence": "教科書 印刷 (jpn) imps 9->35, pos 25.89->49.29 (+23.40 worse); the 2026-10-09 brain rule triggers diagnosis at pos >= 30", "impact": "churn word deteriorated past the trigger; ranking loss, not a CTR issue", "owner": "ZP-monthly-matrix", "action": "diagnosis only under title freeze; no page rewrite without K3"},
+    {"id": "GSC-A13", "class": "EN_CONSOLIDATION", "severity": "P2", "evidence": "en imps -17.1% (6398->5307) but pos 16.5->13.4 (better), CTR 0.86%->1.04%, page-1 words 183->187, keyword rows 655->580", "impact": "fewer, better-ranked queries - not a demand collapse; do not over-react to the impression drop", "owner": "ZP-gsc-feedback", "action": "watch one more window before any en intervention"},
+    {"id": "GSC-A14", "class": "SEASONAL_OPEN", "severity": "P2", "evidence": "年曆印刷 0->11 imps pos 6.09 with 1 click; 利是封訂製 25->28 with 1 click; 訂製利是封 31->26 with 1 click; ja 月曆簇 9->68 imps; ja 畢業紀念冊/卒アル簇 19->43 imps, pos 58.79->29.33; 燙金利是封 0->35 imps pos 1.00 but 0 clicks (33 of 35 from jpn)", "impact": "Q4 season is opening; calendar/red-packet words are early but real", "owner": "ZP-daily-content", "action": "candidate only; approval gates unchanged (WAITING_K3 stays WAITING_K3)"}
+  ],
+  "queues": {
+    "opportunity": [
+      {"rank": 1, "query": "海報印刷", "market": "zh-hk", "why": "278 imps, pos 14.98, 0 clicks, +110 imps; largest single pool", "blocked_by": "poster price three-source conflict already WAITING_K3 (ZH-POSTER-20261028-PROCUREMENT)"},
+      {"rank": 2, "query": "食品包裝印刷", "market": "zh-hk", "why": "104 imps at pos 9.11 with 0 clicks in two windows", "blocked_by": "title freeze + CTR evidence pack"},
+      {"rank": 3, "query": "燙金利是封", "market": "ja (jpn)", "why": "0->35 imps at pos 1.00, 0 clicks; seasonal red-packet window", "blocked_by": "intent/language mismatch check before any action"}
+    ],
+    "ctr_repair": ["大信封 (pos 3.47, 44 imps)", "食品包裝印刷 (pos 9.11, 104)", "食品印刷 (pos 9.31, 54)", "小冊子印刷 (pos 10.30, 61)", "騎馬釘印刷 (pos 11.57, 51)", "海報與印刷 (pos 11.61, 54)", "a2 poster (pos 11.70, 50)", "紙袋印刷 (pos 13.10, 62)", "印刷紙袋 (pos 14.84, 61)", "戶外貼紙 (pos 14.58, 60)", "china catalog printing (pos 15.88, 70)", "コミケ 印刷 (pos 18.82, 169)"],
+    "retirement_candidates": [
+      {"target": "saddle stitch booklet printing (en)", "evidence": "94->15 imps, 2->0 clicks, pos 3.46->9.60", "proposed": "HOLD/FIX, not STOP: it was a page-1 click carrier one window ago"},
+      {"target": "a6 尺寸", "evidence": "83->0 imps", "proposed": "STOP (informational, zero-click SERP)"},
+      {"target": "亞加力匙扣訂製", "evidence": "49->0 imps", "proposed": "STOP"},
+      {"target": "paper bag gsm", "evidence": "47->0 imps", "proposed": "STOP (answer absorbed by snippet)"},
+      {"target": "custom foil stickers", "evidence": "39->0 imps", "proposed": "FIX (has commercial intent)"},
+      {"target": "en paper bags cluster", "evidence": "108->10 imps, pos 13.17->39.40", "proposed": "FIX"}
+    ],
+    "cannibalization": [
+      {"query": "海報印刷", "pages": 8, "top_page_share": 0.386, "query_page_imps": 516, "note": "4 blogs 301 imps vs category 54"},
+      {"query": "印海報", "pages": 9, "top_page_share": 0.274, "query_page_imps": 350},
+      {"query": "貼紙印刷", "pages": 8, "top_page_share": 0.357, "query_page_imps": 215, "note": "sticker-guide and sticker-buying-guide both 53 imps"},
+      {"query": "紙袋印刷", "pages": 8, "top_page_share": 0.299, "query_page_imps": 147},
+      {"query": "餐牌印刷", "pages": 5, "top_page_share": 0.273, "query_page_imps": 46, "note": "most fragmented per impression"}
+    ]
+  },
+  "candidate_tasks": [
+    {
+      "TASK_ID": "GSC-20261028-C1",
+      "INTENT": "Resolve the page-1 zero-click anomaly for 大信封 and 食品包裝印刷 with evidence, without touching frozen titles blind",
+      "APPROVED_BY": "K3 2026-10-09 brain directive #2 (CTR c=0 two windows -> CTR repair pool); no new approval needed to prepare evidence",
+      "TARGET_QUERY_OR_URL": "大信封 -> /zh-hk/category/envelopes/ + /zh-hk/product/large-envelopes/ (both present in public/sitemap-zh-hk.xml); 食品包裝印刷 -> /zh-hk/category/packaging/ + /zh-hk/blog/food-packaging-printing-guide/",
+      "INPUT_EVIDENCE": "gsc-opportunities-2026-10-26.csv rows 大信封 (44 imps, pos 3.47, 0/0 clicks) and 食品包裝印刷 (104, 9.11, 0/0); ctr_gaps section",
+      "WRITE_SCOPE": "none (evidence pack only; owner lane performs any src edit)",
+      "DO_NOT_TOUCH": "title freeze batch, greeting-card assets, middleware 301, products.ts price, sku-seo-data.ts (CSV-derived)",
+      "TRUTH_SOURCE": "products.ts / price tables only; no invented CTR or position claims",
+      "ACTION": "produce per-URL SERP sample + current title/desc + expected-CTR reasoning; hand to weekly-meta",
+      "GATES": "title freeze check; SERP sample before proposal; no cross-locale text",
+      "ONLINE_VERIFY": "after any approved change, same query/page/window at 7/14/28 days",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-weekly-meta.md",
+      "STOP_IF": "SERP is a zero-click answer box or the query is not served by the assumed page",
+      "NEXT_CHECK": "2026-11-04"
+    },
+    {
+      "TASK_ID": "GSC-20261028-C2",
+      "INTENT": "Decide the poster query architecture: 4 blogs absorb 58.3% of 海報印刷 query-page impressions while the commercial category holds 10.5%",
+      "APPROVED_BY": "K3 structural call required; GSC feedback supplies evidence only",
+      "TARGET_QUERY_OR_URL": "/zh-hk/category/posters/ vs /zh-hk/blog/poster-printing-guide/ + retail-shop-poster-printing-guide + poster-buying-guide + poster-printing-price-guide",
+      "INPUT_EVIDENCE": "cannibalization section (516 imps, 8 pages, top share 38.6%); cluster pos 29.57 with 1492 imps and 5 clicks",
+      "WRITE_SCOPE": "none",
+      "DO_NOT_TOUCH": "poster price fields pending K3-2/K3-7; 301 mappings; greeting-card assets",
+      "TRUTH_SOURCE": "products.ts basePrice vs category desc (known three-source conflict)",
+      "ACTION": "present A/B/C: (A) merge 3 lower blogs into one guide, (B) keep blogs and strengthen category links, (C) leave as-is",
+      "GATES": "K3 decision; then daily-content scope",
+      "ONLINE_VERIFY": "post-decision 14/28 days on 海報印刷 CTR and category share",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-weekly-meta.md",
+      "STOP_IF": "price truth unresolved (already WAITING_K3)",
+      "NEXT_CHECK": "2026-11-06"
+    },
+    {
+      "TASK_ID": "GSC-20261028-C3",
+      "INTENT": "Diagnose why 貼紙印刷 (an 8-lock-protected word) fell 24.52 -> 39.91 while impressions dropped 43.7%",
+      "APPROVED_BY": "K3 2026-09-12 task J (8 lock words) - diagnosis allowed; no page rewrite",
+      "TARGET_QUERY_OR_URL": "貼紙印刷 (hkg) -> /zh-hk/category/stickers/ and /zh-hk/blog/sticker-guide/ + sticker-buying-guide",
+      "INPUT_EVIDENCE": "query x country hkg 107 vs 190 imps, pos 39.91 vs 24.52; cannibalization 8 pages, two guides tied at 53 imps",
+      "WRITE_SCOPE": "none",
+      "DO_NOT_TOUCH": "slug, page deletion, deployed titles (churn red line)",
+      "TRUTH_SOURCE": "GSC query x country cur/prev files",
+      "ACTION": "classify: duplicate-guide dilution vs indexation vs SERP intent shift; report with page-level evidence",
+      "GATES": "churn freeze; K3 before any consolidation",
+      "ONLINE_VERIFY": "position recovery to <=25 at 14/28 days",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-blog-deepfix.md",
+      "STOP_IF": "cannot separate the two near-identical guides' contribution with available data",
+      "NEXT_CHECK": "2026-11-04"
+    },
+    {
+      "TASK_ID": "GSC-20261028-C4",
+      "INTENT": "Fix the money-word join so 貼紙印刷 and 月曆印刷 are not reported as 'no word-level record'",
+      "APPROVED_BY": "K3 2026-10-27 §0.37 monitoring scope; tooling fix, no page change",
+      "TARGET_QUERY_OR_URL": "scripts/k3-kpi-panel.mjs money-word section",
+      "INPUT_EVIDENCE": "panel says 0/no record; query x country has 107 and 104 hkg imps",
+      "WRITE_SCOPE": "scripts/k3-kpi-panel.mjs (+ its test/output files)",
+      "DO_NOT_TOUCH": "panel JSON/MD by hand; src/; queue statuses",
+      "TRUTH_SOURCE": "gsc-query-country-*.csv",
+      "ACTION": "join on exact query string incl. variants, keep 0 only when the full export truly lacks the row",
+      "GATES": "tsc/build unaffected (script only); rerun panel; diff shows only the two words",
+      "ONLINE_VERIFY": "n/a (internal panel)",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-weekly-meta.md or ops report",
+      "STOP_IF": "join would require changing the source CSV",
+      "NEXT_CHECK": "2026-11-03"
+    },
+    {
+      "TASK_ID": "GSC-20261028-C5",
+      "INTENT": "Diagnose 教科書 印刷 churn past the >=30 trigger",
+      "APPROVED_BY": "K3 2026-10-09 brain directive #4 (churn watch, freeze discipline first)",
+      "TARGET_QUERY_OR_URL": "教科書 印刷 (jpn) -> relevant ja educational page",
+      "INPUT_EVIDENCE": "9->35 imps, pos 25.89->49.29",
+      "WRITE_SCOPE": "none",
+      "DO_NOT_TOUCH": "ja title freeze; category desc batch pending K3 A/B/C",
+      "TRUTH_SOURCE": "query x country cur/prev",
+      "ACTION": "diagnosis only: indexation, cannibalization, or SERP shift",
+      "GATES": "no rewrite without K3",
+      "ONLINE_VERIFY": "position at 14/28 days",
+      "REPORT": ".hermes/logs/<YYYY-MM-DD>-ZP-monthly-matrix.md",
+      "STOP_IF": "sample too small to separate signal from noise",
+      "NEXT_CHECK": "2026-11-01"
+    }
+  ],
+  "next_check": {
+    "date": "2026-10-29",
+    "must_check": [
+      "new GSC export present (28d + query x page x country) and its latest day",
+      "whether 30-day queue evidence was updated by its owner (this lane did not mutate the shared queue)",
+      "whether 貼紙印刷 position recovers on a fresh window",
+      "whether 海報印刷 clicks return after the price decision (if released)"
+    ],
+    "date_2": "2026-11-04",
+    "must_check_2": ["nengajo blind-open at 14 days post-launch", "CTR pool post-freeze if any change was approved", "貼紙印刷 / 教科書 印刷 14-day position"]
+  },
+  "not_done": [
+    "no fresh GSC pull (pwsh/scripts unavailable in this sandbox; no credential use attempted)",
+    "no src change, no title change, no page consolidation, no redirect change",
+    "strategy-task-queue.json not mutated (written today 06:00 by the review lane; status policy forbids GSC feedback from promoting WAITING_K3/BLOCKED_INFRA/SCHEDULED)",
+    "no edit to gsc-cliff-2026-10-28.json or any shared bus artifact"
+  ]
+}

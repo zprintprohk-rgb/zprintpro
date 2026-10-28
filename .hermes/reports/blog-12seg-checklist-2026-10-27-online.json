@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T11:46:24.842Z",
+ "generated_at": "2026-10-27T23:36:55.179Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -1874,7 +1874,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "PASS",
-   "evidence": "14 个块，长度 205/475/339/121/…",
+   "evidence": "14 个块，长度 168/475/339/121/…",
    "reason": ""
   },
   {
@@ -1901,7 +1901,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "216 个数字 + 检出资料来源标记",
+   "evidence": "214 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1973,7 +1973,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "PASS",
-   "evidence": "15 个块，长度 211/451/295/148/…",
+   "evidence": "15 个块，长度 211/450/295/148/…",
    "reason": ""
   },
   {
@@ -2171,7 +2171,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "PASS",
-   "evidence": "4 个块，长度 58/52/52/451",
+   "evidence": "4 个块，长度 58/52/52/450",
    "reason": ""
   },
   {
@@ -2369,7 +2369,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 451）",
+   "evidence": "仅 1 个合规快速答案块（长度分布 450）",
    "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
   },
   {
@@ -2414,8 +2414,8 @@
    "seg": 7,
    "name": "E-E-A-T 署名段",
    "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "evidence": "content 侧信号缺失: LinkedIn, FDA, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + FDA + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
   },
   {
    "locale": "zh-hk",
@@ -2468,7 +2468,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "PASS",
-   "evidence": "4 个块，长度 154/145/165/451",
+   "evidence": "4 个块，长度 154/145/165/450",
    "reason": ""
   },
   {
@@ -2513,8 +2513,8 @@
    "seg": 7,
    "name": "E-E-A-T 署名段",
    "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "evidence": "content 侧信号缺失: LinkedIn, FDA, EU REACH | Person(生成层承载,待 --online)",
+   "reason": "补 roll-up-banner-printing-guide 的 LinkedIn + FDA + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
   },
   {
    "locale": "zh-hk",
@@ -2666,7 +2666,7 @@
    "seg": 2,
    "name": "快速答案块",
    "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 451）",
+   "evidence": "仅 1 个合规快速答案块（长度分布 450）",
    "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
   },
   {
@@ -2756,7 +2756,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191496",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191422",
    "reason": ""
   },
   {
@@ -2765,7 +2765,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180467",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=180481",
    "reason": ""
   },
   {
@@ -2774,7 +2774,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192562",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192560",
    "reason": ""
   },
   {
@@ -2783,7 +2783,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189599",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189597",
    "reason": ""
   },
   {
@@ -2792,7 +2792,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=217492",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=217506",
    "reason": ""
   },
   {
@@ -2801,7 +2801,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182666",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182664",
    "reason": ""
   },
   {
@@ -2810,7 +2810,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=168687",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=168685",
    "reason": ""
   },
   {
@@ -2819,7 +2819,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194249",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194247",
    "reason": ""
   },
   {
@@ -2828,7 +2828,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=161373",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=161371",
    "reason": ""
   },
   {
@@ -2854,9 +2854,9 @@
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=188340",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: 请求失败: fetch failed (https://zprintpro.com/en/blog/poster-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "en",
