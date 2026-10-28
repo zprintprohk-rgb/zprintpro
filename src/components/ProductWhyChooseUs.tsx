@@ -41,12 +41,12 @@ const translations = {
       },
       {
         icon: Palette,
-        title: '免費打樣',
-        subtitle: '滿意再下單',
+        title: '免費數碼打樣',
+        subtitle: '1 小時出稿',
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '批量訂單免費提供實物樣板確認',
+        description: '提交檔案後 1 小時免費數碼打樣，確認後開印',
       },
       {
         icon: Shield,
@@ -100,12 +100,12 @@ const translations = {
       },
       {
         icon: Palette,
-        title: 'Free Sample',
+        title: 'Digital Proof',
         subtitle: 'Order with Confidence',
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: 'Free physical sample for bulk orders',
+        description: 'Free digital proof within 1 hour before production',
       },
       {
         icon: Shield,
@@ -159,12 +159,12 @@ const translations = {
       },
       {
         icon: Palette,
-        title: '無料サンプル',
+        title: 'デジタル校正',
         subtitle: '安心の注文',
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '大口注文で実物サンプルを無料提供',
+        description: 'データ提出後 1 時間で無料デジタル校正、確認後に本印刷',
       },
       {
         icon: Shield,

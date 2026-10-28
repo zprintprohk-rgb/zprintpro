@@ -84,7 +84,7 @@ const V9T: Record<'zh-hk' | 'en' | 'ja', V9Strings> = {
     fromSuffix: '起',
     orderNow: '立即訂購',
     moqLine: (q, u) => `${q}${u || '件'}起訂 · 量大更優`,
-    bannerCaps: ['免費打樣', '即日交貨', '國際認證體系', '全港順豐速遞'],
+    bannerCaps: ['AI即時報價', '即日交貨', '國際認證體系', '全港順豐速遞'],
     bannerSubtitle: '專業品質，價格透明，快速交貨',
     home: '首頁',
     bannerAlt: (name) => `${name}全品類實拍`,

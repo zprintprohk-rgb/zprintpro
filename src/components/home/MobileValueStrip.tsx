@@ -15,7 +15,7 @@ interface MobileValueStripProps {
 const TEXTS: Record<Locale, { main: string; sub: string }> = {
   'zh-hk': {
     main: '香港專業印刷 · 一站式定制服務',
-    sub: '一張起印｜免費打樣｜港九新界 $500+ 免費速遞｜最快 24 小時出貨',
+    sub: '一張起印｜免費數碼打樣｜港九新界 $500+ 免費速遞｜最快 24 小時出貨',
   },
   en: {
     main: 'Custom Printing, One-Stop Service',

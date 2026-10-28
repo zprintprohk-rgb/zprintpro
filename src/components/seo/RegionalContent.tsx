@@ -77,7 +77,7 @@ export function RegionalTrustBadges({ locale }: { locale: Locale }) {
     'zh-hk': [
       { icon: '🏭', label: '深圳自有工廠' },
       { icon: '🚚', label: '順豐直達' },
-      { icon: '🎨', label: '免費打樣' },
+      { icon: '🎨', label: '免費數碼打樣' },
       { icon: '⚡', label: '即日交貨' },
       { icon: '🌟', label: '15+ 年印刷經驗' },
     ],
