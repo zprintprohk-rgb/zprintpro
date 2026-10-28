@@ -161,7 +161,7 @@ function buildFeed(locale: Locale): string {
       const gpc = gpcByCategory[product.category_slug];
 
       let item = `    <item>
-      <g:id>${xmlEscape(product.sku_code)}</g:id>
+      <g:id>${xmlEscape(locale + '-' + product.sku_code)}</g:id>
       <g:title>${xmlEscape(localizedName)}</g:title>
       <g:description>${xmlEscape(localizedDesc.slice(0, 5000))}</g:description>
       <g:link>${xmlEscape(productUrl)}</g:link>

@@ -92,9 +92,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'restaurant',
       scenarios: {
-        'zh-hk': ['A5 外賣菜單 + 開業傳單', '防水塗層 · 油漬一抹即淨', '500 張起 · 翌日交貨'],
-        en: ['A5 takeaway menu + opening flyer', 'Waterproof coating · wipe-clean', 'From 500 · next-day delivery'],
-        ja: ['A5テイクアウトメニュー + 開業チラシ', '防水コート・油汚れも拭き取り', '500枚から・翌日納品'],
+        'zh-hk': ['A5 外賣菜單 + 開業傳單', '防水塗層 · 油漬一抹即淨', '10 張起 · 翌日交貨'],
+        en: ['A5 takeaway menu + opening flyer', 'Waterproof coating · wipe-clean', 'From 10 · next-day delivery'],
+        ja: ['A5テイクアウトメニュー + 開業チラシ', '防水コート・油汚れも拭き取り', '10枚から・翌日納品'],
       },
       priority: 0, tier: 'A',
     },
@@ -177,9 +177,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'apparel',
       scenarios: {
-        'zh-hk': ['服飾品牌購物袋 · 白卡/牛皮紙', '燙金 LOGO + 棉繩手挽', '500 個起 · FSC 認證'],
-        en: ['Apparel brand shopping bag · white/kraft card', 'Foil logo + cotton rope handle', 'From 500 · FSC-certified'],
-        ja: ['アパレルブランドショッパー・白/クラフト', '箔押しロゴ + 綿ロープハンドル', '500枚から・FSC認証'],
+        'zh-hk': ['服飾品牌購物袋 · 白卡/牛皮紙', '燙金 LOGO + 棉繩手挽', '100 個起 · FSC 認證'],
+        en: ['Apparel brand shopping bag · white/kraft card', 'Foil logo + cotton rope handle', 'From 100 · FSC-certified'],
+        ja: ['アパレルブランドショッパー・白/クラフト', '箔押しロゴ + 綿ロープハンドル', '100枚から・FSC認証'],
       },
       priority: 0, tier: 'A',
     },
@@ -466,9 +466,9 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'corp_business',
       scenarios: {
-        'zh-hk': ['企業商務信封 · 開窗/不開窗', '燙金 LOGO + 公司地址', '500 個起 · 5 天交貨'],
-        en: ['Corporate business envelope · window/plain', 'Foil logo + company address', 'From 500 · 5-day delivery'],
-        ja: ['企業封筒・窓付き/窓なし', '箔押しロゴ + 社名住所', '500枚から・5日納品'],
+        'zh-hk': ['企業商務信封 · 開窗/不開窗', '燙金 LOGO + 公司地址', '100 個起 · 5 天交貨'],
+        en: ['Corporate business envelope · window/plain', 'Foil logo + company address', 'From 100 · 5-day delivery'],
+        ja: ['企業封筒・窓付き/窓なし', '箔押しロゴ + 社名住所', '100枚から・5日納品'],
       },
       priority: 0, tier: 'A',
     },

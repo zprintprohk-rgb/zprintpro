@@ -52,9 +52,9 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 10枚から', '小ロット・版代不要・1枚から'],
     }},
     { key: 'restaurant', scenarios: {
-      'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '500 張起 · 即日打樣'],
-      en: ['Restaurant opening / menu flyers', 'Waterproof A5 · wipe-clean surface', 'From 500 · USA restaurant marketing'],
-      ja: ['飲食店開業 / メニューチラシ', 'A5防水コート・油汚れも拭き取り', '500枚から・即日校正'],
+      'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '10 張起 · 即日打樣'],
+      en: ['Restaurant opening / menu flyers', 'Waterproof A5 · wipe-clean surface', 'From 10 · USA restaurant marketing'],
+      ja: ['飲食店開業 / メニューチラシ', 'A5防水コート・油汚れも拭き取り', '10枚から・即日校正'],
     }},
     { key: 'event', scenarios: {
       'zh-hk': ['展會/活動單張 · 摺頁可選', 'A3 大尺寸 · 雙面滿版', '3 天急件可接'],
@@ -70,9 +70,9 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['化粧品箱4種・天地蓋/マグネット', '箔押しロゴ・マットPPラミ', '100個から・食品グレード紙は選択可'],
     }},
     { key: 'ecommerce', scenarios: {
-      'zh-hk': ['跨境電商快遞盒 · 雙層瓦楞', 'SKU 條碼 + GS1 合規印刷', '500 個起 · 全球 DHL 配送'],
-      en: ['Mailer boxes · 2-ply corrugated', 'SKU barcode + GS1 compliant', 'From 500 · free shipping over $99 USA'],
-      ja: ['越境ECメール便箱・複層段ボール', 'SKUバーコード+GS1準拠', '500個から・国際DHL配送'],
+      'zh-hk': ['跨境電商快遞盒 · 雙層瓦楞', 'SKU 條碼 + GS1 合規印刷', '100 個起 · 全球 DHL 配送'],
+      en: ['Mailer boxes · 2-ply corrugated', 'SKU barcode + GS1 compliant', 'From 100 · free shipping over $99 USA'],
+      ja: ['越境ECメール便箱・複層段ボール', 'SKUバーコード+GS1準拠', '100個から・国際DHL配送'],
     }},
     { key: 'tea_beverage', scenarios: {
       'zh-hk': ['茶飲品牌禮盒 · 天地蓋', '燙金 + 局部 UV · 高檔質感', '200 個起 · 月餅盒適用'],
@@ -123,9 +123,9 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['企業ロゴカレンダー・箔押し上製本', 'デスク/壁掛け・12ページ両面', '100部から・繁忙期60日前発注推奨'],
     }},
     { key: 'school', scenarios: {
-      'zh-hk': ['學校定制年曆 · 批量折扣', '校徽 LOGO + 校園照片', '500 本起 · 教師節禮品'],
-      en: ['School custom calendars · bulk discount', 'Crest logo + campus photos', 'From 500 · USA school districts'],
-      ja: ['学校カスタムカレンダー・大量割引', '校章ロゴ+キャンパス写真', '500部から・教師の日ギフト'],
+      'zh-hk': ['學校定制年曆 · 批量折扣', '校徽 LOGO + 校園照片', '1 本起 · 教師節禮品'],
+      en: ['School custom calendars · bulk discount', 'Crest logo + campus photos', 'From 1 · USA school districts'],
+      ja: ['学校カスタムカレンダー・大量割引', '校章ロゴ+キャンパス写真', '1部から・教師の日ギフト'],
     }},
     { key: 'real_estate', scenarios: {
       'zh-hk': ['房地產客戶禮品年曆', '高端燙金 + 項目 LOGO', '200 本起 · 客戶維繫'],
@@ -157,9 +157,9 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['結婚式ポチ袋・箔押しロゴ', '中式伝統赤・両面4色', '100個から・結婚式テーマ'],
     }},
     { key: 'corporate', scenarios: {
-      'zh-hk': ['企業年會紅包 · LOGO 定制', '燙金 + 局部 UV · 高檔', '500 個起 · 批量折扣'],
-      en: ['Corporate CNY red packets · logo custom', 'Foil + spot UV · premium', 'From 500 · bulk discount'],
-      ja: ['企業旧正月ポチ袋・ロゴカスタム', '箔押し+スポットUV・高級', '500個から・大量割引'],
+      'zh-hk': ['企業年會紅包 · LOGO 定制', '燙金 + 局部 UV · 高檔', '100 個起 · 批量折扣'],
+      en: ['Corporate CNY red packets · logo custom', 'Foil + spot UV · premium', 'From 100 · bulk discount'],
+      ja: ['企業旧正月ポチ袋・ロゴカスタム', '箔押し+スポットUV・高級', '100個から・大量割引'],
     }},
     { key: 'cartoon_ip', scenarios: {
       'zh-hk': ['卡通 IP 授權紅包', '正版授權 · 全彩印刷', '300 個起 · IP 主題定制'],
@@ -215,9 +215,9 @@ const categoryIndustryScenarios: Record<string, {
       ja: ['企業封筒・ロゴ印刷', '長3/C5・クラフト/白選択可', '100個から・ビジネスメール対応'],
     }},
     { key: 'finance', scenarios: {
-      'zh-hk': ['金融信封 · 防偽印刷', '中式傳統紅/牛皮 · 機密標識', '500 個起 · 銀行對賬單適用'],
-      en: ['Finance envelopes · anti-counterfeit', 'Traditional red/kraft · confidential', 'From 500 · bank statements'],
-      ja: ['金融封筒・偽造防止印刷', '中式伝統赤/クラフト・機密表示', '500個から・銀行明細書対応'],
+      'zh-hk': ['金融信封 · 防偽印刷', '中式傳統紅/牛皮 · 機密標識', '100 個起 · 銀行對賬單適用'],
+      en: ['Finance envelopes · anti-counterfeit', 'Traditional red/kraft · confidential', 'From 100 · bank statements'],
+      ja: ['金融封筒・偽造防止印刷', '中式伝統赤/クラフト・機密表示', '100個から・銀行明細書対応'],
     }},
     { key: 'school', scenarios: {
       'zh-hk': ['補習社通告信封 · 開窗可選', 'B5/C5 · 批量折扣', '300 個起 · 學期通告適用'],
