@@ -92,6 +92,17 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
   2. business-cards 名片页 title「免費設計即日交貨」（无条件——**§0.0 名片展示层未拍板**——登记 K3 裁决，不擅动）
 - **结论**：§2.1 无条件即日承诺（非名片域）**全站归零** ✓
 
+## 线上验证收尾（0edf8e1a build PASS @21:52）
+
+- **gift-bags zh desc 复算**：页面「即日交貨」×3 均为 ProductWhyChooseUs 组件服务卡（「即日交貨 特急24小時」——条件化合规）——desc 字段已清 ✓（探针误报由组件命中，§0.23.2 dump 定位确认）
+- **分类页 title**：抽查 envelopes/calendars/books 均自定义 title（「最快24小時」默认模板已上线——影响面为无自定义分类，推测极小）
+- **same-day 18:00 条件化保留** ✓
+- **daily FAIL 判据记录**：21:17 daily auto-fill 假成功（凭据未恢复）——11-01 GSC 拉取前需 K3 执行 repair-dsh-scheduler-credential.ps1
+
+## 今晚全部交付（跨日批次链，push 0edf8e1a）
+
+2b258d47（P2-CONSOL-01+小批#1）→ 37f4176a（批#4-7 HARD 3→0）→ fff300f3（批#8-10 急件清理）→ b2a8166c（批#11 漏网）→ 0edf8e1a（批#12 组件层 + CSV 归并 + daily 清毒收尾）——**§2.1 无条件即日承诺全站归零（非名片域）+ §2.3 ja 交期边界对齐完成**。
+
 **并发状态**：daily lane 21:17 触发持锁改 sku-seo-data.ts（CSV 归并生成）——批 #12（src 组件）按 §0.35.7 双条件待 daily 释放后执行；批 #8-11 手改需归并回 CSV（21:50 检查）。
 
 ## 四、复测登记（data-driven §3 第 8 条）
