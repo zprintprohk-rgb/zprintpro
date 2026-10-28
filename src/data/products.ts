@@ -6696,6 +6696,7 @@ export const products: Product[] = [
             price_range: '¥7,500〜/部〜',
       basePrice: 7500,
     basePrice_en: 1245.0,
+      basePrice_ja: 7500,
       weight_score: 0.7,
       isHot: true,
       isNew: true,

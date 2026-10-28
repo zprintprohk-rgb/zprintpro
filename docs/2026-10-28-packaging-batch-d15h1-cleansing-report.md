@@ -125,3 +125,22 @@ tsc 54 / **title-v5 HARD 0**（本日 7→0 完整链条：small-batch→poster�
 2. **corrugated/tuck-end en/ja body HK$1,517-7,278 / HK$1,538-7,478**：basePrice_en/ja 缺失 → feed 已按 fallback 汇率出 USD/JPY 价（$194.18/¥29,582），与 body HK$ 并存 = 价格不匹配拒批风险 → K3-4 给 en/ja 真值或授权换算
 3. **corrugated 三语交期矛盾**：en「8-15 days」vs ja「5〜7営業日・即日可」vs zh 无声明 → K3 交期真值（D15H1 待办 6 同项）
 4. ja 料金表促销阶梯（500個+15%OFF・1,000個+30%OFF）维持冻结（前案 docket 不变）
+
+---
+
+## 九、补遗 4（17:4x）：全站价格一致性审计（83 SKU 模块直读）+ doujinshi feed 19.5× 价差修复
+
+**审计方法**：`.hermes/_allsku_truth.tsv`（minQuantity/basePrice/basePrice_en/basePrice_ja/price_range 全字段）× 三类检查。注意：range 解析存在 A4/100張 单位噪音，已人工复核。
+
+**① feed fallback 汇率暴露面（basePrice_en/ja 缺失 → feed 按固定汇率出价，与页面 HKD 并存 = 价格不匹配拒批风险）**：
+- en 缺 6 SKU：gang-run-card-boxes($16.51) / white-card-boxes($16.51) / corrugated($194.18) / tuck-end($196.86) / foil-wedding($0.15) / wedding-thank-you($0.08)
+- ja 缺 8 SKU：上 4 + fruit-food-label-stickers(¥4) / **doujinshi(¥146,250，已修)** / foil-wedding(¥23) / wedding-thank-you(¥13)
+
+**② 已修（真值锚 = K3-1 记录原文「basePrice=7500(JPY)」+ ja 页面显示 ¥7,500）**：DJ-001 补 `basePrice_ja: 7500` → feed ja 价从兜底 ¥146,250（7500 被当 HKD ×19.5）纠正为 **¥7,500**，与页面/schema 一致。
+
+**③ 登记待 K3（价格 SSoT 队列）**：
+- **婚慶 2 SKU price_range 用 NT$（台幣）**：foil-wedding-invitations「NT$25-95/套」/ wedding-thank-you-cards「NT$15-55/套」——HK/全球站货币异常，且 basePrice(1.2/0.65) 与 range 不同币不同量级
+- **white-card-boxes 内部矛盾**：basePrice=129 vs range HK$0.50-3.00/個
+- **纸袋族 basePrice=range 上限**（kraft 8 vs range 3-8 等 6 SKU）——feed 显示 range 高端为"价"，业务语义（from 价 = range 哪端）待定
+- **a2/a1 海报 price_range 整单口径**（95-1,017 / 290-7,200 vs basePrice 16/20 每张）——同行已登记的 K3-2/7 族
+- corrugated/tuck-end en「8-15 days」vs ja「5〜7営業日・即日」三语交期矛盾（D15H1 待办 6）
