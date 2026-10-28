@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
   const descriptions = {
     'zh-hk': '智印港提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，順豐速遞上門 + 順豐快遞上門，品質保證。',
     en: 'ZprintPro offers global cross-border printing from our Shenzhen factory. Hong Kong-wide delivery with SF Express next-day, plus SF Express delivery. DHL Express worldwide shipping to US/UK/AU/JP and beyond.',
-    ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。順丰翌日配送 + 順丰翌日配送。DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
+    ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。順丰配送、DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
   };
   return {
     title: titles[locale],
@@ -155,7 +155,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
     },
     ja: {
       h1: '日本向け越境印刷サービス | 深圳工場から発送',
-      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。順丰翌日配送、国際認証、DHL国際配送。',
+      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。順丰配送、国際認証、DHL国際配送。',
       areas: [
         {
           title: '東京・関東エリア',
