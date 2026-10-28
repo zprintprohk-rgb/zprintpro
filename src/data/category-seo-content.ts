@@ -814,7 +814,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '精裝書和膠裝書有什麼區別？', a: '精裝書有硬殼封面，耐久度最高，適合收藏；膠裝書書脊平整，成本較低，適合一般閱讀。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。成品書刊可按重量選擇順豐或貨車派送；寫字樓、學校或活動場地均可指定收件時段（視物流公司檔期）。大批量建議預約貨車送倉以減少損耗。' },
       // 2026-08-22 v3.14 T25: books Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例)
-      { q: '2026 H1 書刊市場有哪些變化？', a: '上半年服務 47 個非洲/中東教育局批量採購 (平均 5,000 本/單, 跨境 DHL 2-4 天到港), 跨境電商品牌 catalog 200-1,000 本批量化, 學校練習冊 50-200 本試印, 教堂/NGO 刊物 300-500 本定期. saddle stitch booklet 詢盤環比 +38%, 教育局 +52%, 跨境電商 +27% (來源: 智印港 2026 H1 訂單統計). 趨勢 3 大方向: ① 小批量靈活化 (10 本起 MOQ + 30 秒 AI 報價) ② 環保材質滲透率 +47% (FSC 紙 + 大豆油墨) ③ 跨境電商帶動「精美小批量」需求 (200-1,000 本 catalog 為主力).' },
+      { q: '2026 H1 書刊市場有哪些變化？', a: '上半年服務 47 個非洲/中東教育局批量採購 (平均 5,000 本/單, 跨境 DHL 2-4 天到港), 跨境電商品牌 catalog 200-1,000 本批量化, 學校練習冊 50-200 本試印, 教堂/NGO 刊物 300-500 本定期. saddle stitch booklet 詢盤持續增長 (教育局、跨境電商為主). 趨勢 3 大方向: ① 小批量靈活化 (10 本起 MOQ + 30 秒 AI 報價) ② 環保材質 (FSC 紙 + 大豆油墨) ③ 跨境電商帶動「精美小批量」需求 (200-1,000 本 catalog 為主力).' },
       { q: '可以先報價再傳 InDesign／PDF 嗎？', a: '可以。請先提供總頁數、成品尺寸、裝訂方式、封面是否需要覆膜／燙金、數量與期望交期；可先取得數碼／柯式方案對比報價，稿件齊備後再做印前檢查與打樣建議。' },
     ],
   },
@@ -915,7 +915,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk book orders can be arranged for school or warehouse delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit binding method, page count, book size, paper type, cover finish, and quantity for a quote first. After confirmation, upload your InDesign / PDF file. Our prepress team will check text outlining and bleed.' },
       // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en
-      { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/order, cross-border DHL 2-4 day), 200-1,000 copy batches for cross-border brand catalogs, 50-200 copy test prints for school workbooks, and 300-500 copy regular orders for church/NGO publications. Saddle stitch booklet inquiries +38% MoM, education ministries +52%, cross-border e-commerce +27% (source: ZprintPro H1 2026 order statistics). Three key trends: small-batch flexibility (10-copy MOQ + 30-second AI quote), eco material penetration +47% (FSC paper + soy ink), and cross-border e-commerce driving premium small-batch demand (200-1,000 copy catalogs as the main driver).' },
+      { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/order, cross-border DHL 2-4 day), 200-1,000 copy batches for cross-border brand catalogs, 50-200 copy test prints for school workbooks, and 300-500 copy regular orders for church/NGO publications. Saddle stitch booklet inquiries keep growing (education ministries and cross-border e-commerce leading). Three key trends: small-batch flexibility (10-copy MOQ + 30-second AI quote), eco materials (FSC paper + soy ink), and cross-border e-commerce driving premium small-batch demand (200-1,000 copy catalogs as the main driver).' },
     ],
   },
   ja: {
@@ -1015,7 +1015,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。書籍の大口注文は学校や倉庫への配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず製本方式、ページ数、書籍サイズ、紙タイプ、表紙加工、数量をご提出ください。確認後、InDesign／PDFファイルをアップロードします。印前チームが文字のアウトライン化、bleedをチェックします。' },
       // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → ja
-      { q: '2026年上半期の書籍印刷市場の主な変化は?', a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタログ 200-1,000 冊のバッチ対応、学校ワークブック 50-200 冊の試印、教会/NGO 刊行物 300-500 冊の定期発注。中綴じ冊子の問合せは前月比 +38%、教育機関 +52%、越境 EC +27% (出典: ZprintPro 2026 H1 注文統計)。3 つの主要トレンド: 小ロット柔軟化 (50 冊 MOQ + 30 秒 AI 見積もり)、エコ素材普及率 +47% (FSC 紙 + 大豆インク)、越境 EC による「プレミアム小ロット」需要 (200-1,000 冊カタログが主力)。' },
+      { q: '2026年上半期の書籍印刷市場の主な変化は?', a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタログ 200-1,000 冊のバッチ対応、学校ワークブック 50-200 冊の試印、教会/NGO 刊行物 300-500 冊の定期発注。中綴じ冊子の問合せは引き続き増加 (教育機関・越境 EC が中心)。3 つの主要トレンド: 小ロット柔軟化 (50 冊 MOQ + 30 秒 AI 見積もり)、エコ素材 (FSC 紙 + 大豆インク)、越境 EC による「プレミアム小ロット」需要 (200-1,000 冊カタログが主力)。' },
     ],
   },
 };
@@ -1445,7 +1445,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
       { q: '信封可以雙面印刷嗎？', a: '可以。內外雙面印刷增加品牌曝光，內頁可以印品牌故事或感謝語。' },
       // 2026-08-22 v3.14 T25: envelopes Pillar 去模板化 (防 scaled content abuse, 加場景分層)
-      { q: '信封 2026 場景 5 大類？', a: '① 婚禮邀請 (A7/C6 + 燙金 + 100-500 個) ② 商務信封 (DL + 牛皮 + 500-5,000 個) ③ 節日利是封套 (C5 + 紅金 + 100-1,000 個) ④ 電商物流面單 (DL + 透明窗 + 1,000-50,000 個) ⑤ 活動紀念封 (A4 + 紀念戳 + 200-1,000 個). 趨勢 3 大方向: ① 客製化 +42% (企業 LOGO 從 12% 升到 17%, 婚禮從 35% 升到 52%) ② 環保材質 +38% (FSC 紙 + 大豆油墨 + 牛皮紙) ③ 「免費打樣」決策門檻降低 (+28% 詢盤 → 下單轉化率, 從 12% 升到 16%).' },
+      { q: '信封 2026 場景 5 大類？', a: '① 婚禮邀請 (A7/C6 + 燙金 + 100-500 個) ② 商務信封 (DL + 牛皮 + 500-5,000 個) ③ 節日利是封套 (C5 + 紅金 + 100-1,000 個) ④ 電商物流面單 (DL + 透明窗 + 1,000-50,000 個) ⑤ 活動紀念封 (A4 + 紀念戳 + 200-1,000 個). 趨勢 3 大方向: ① 客製化需求持續上升 (企業 LOGO、婚禮燙金排版) ② 環保材質受歡迎 (FSC 紙 + 大豆油墨 + 牛皮紙) ③ 免費數碼打樣降低決策門檻.' },
       { q: '窗口信封的透明膜會掉嗎？', a: '不會。我們使用高品質透明膜和專業粘貼工藝，確保窗口膜牢固不脫落。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。大批量可走貨車直送寫字樓或倉庫；中小批量可順豐到付。節日前後派發邀請函建議預留緩衝日數。' },
       { q: '可以先報價再提供刀模／設計檔嗎？', a: '可以。請提供規格（DL／C5／C4／中式號數）、紙材克重、印刷色數、是否需要窗口或燙金；可先取得單價，定稿後提交展開圖與出血設定即可安排印前。' },
@@ -1547,7 +1547,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit envelope size, paper type, window requirements, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and bleed.' },
       // 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en
-      { q: 'What are the 5 envelope use-cases in 2026?', a: 'Five major envelope scenarios in 2026: wedding invitations (A7/C6 + foil stamping + 100-500 pcs), business envelopes (DL + kraft + 500-5,000 pcs), festive red packet sleeves (C5 + red gold + 100-1,000 pcs), e-commerce shipping face labels (DL + clear window + 1,000-50,000 pcs), and event commemorative envelopes (A4 + commemorative stamp + 200-1,000 pcs). Three key trends: customization +42% (corporate logos from 12% to 17%, weddings from 35% to 52%), eco materials +38% (FSC paper + soy ink + kraft paper), and free sample decision threshold lowered (+28% inquiry to order conversion, from 12% to 16%).' },
+      { q: 'What are the 5 envelope use-cases in 2026?', a: 'Five major envelope scenarios in 2026: wedding invitations (A7/C6 + foil stamping + 100-500 pcs), business envelopes (DL + kraft + 500-5,000 pcs), festive red packet sleeves (C5 + red gold + 100-1,000 pcs), e-commerce shipping face labels (DL + clear window + 1,000-50,000 pcs), and event commemorative envelopes (A4 + commemorative stamp + 200-1,000 pcs). Three key trends: rising demand for customization (corporate logos, wedding foil layouts), eco materials (FSC paper + soy ink + kraft paper), and free digital proofs lowering the decision threshold.' },
     ],
   },
   ja: {
@@ -1647,7 +1647,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず封筒サイズ、紙タイプ、窓の有無、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleedをチェックします。' },
       // 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → ja
-      { q: '2026 年の封筒 5 大利用シーンは?', a: '2026 年の封筒 5 大利用シーン: ① 結婚式招待状 (A7/C6 + 箔押し + 100-500 枚) ② ビジネス封筒 (DL + クラフト + 500-5,000 枚) ③ 祝儀袋スリーブ (C5 + 赤金 + 100-1,000 枚) ④ EC 物流ラベル (DL + 透明窓 + 1,000-50,000 枚) ⑤ イベント記念封筒 (A4 + 記念スタンプ + 200-1,000 枚)。3 つの主要トレンド: カスタマイズ +42% (企業ロゴ 12% → 17%、結婚式 35% → 52%)、エコ素材 +38% (FSC 紙 + 大豆インク + クラフト紙)、無料サンプル判断基準の低下 (問い合わせ→注文転換率 +28%、12% → 16%)。' },
+      { q: '2026 年の封筒 5 大利用シーンは?', a: '2026 年の封筒 5 大利用シーン: ① 結婚式招待状 (A7/C6 + 箔押し + 100-500 枚) ② ビジネス封筒 (DL + クラフト + 500-5,000 枚) ③ 祝儀袋スリーブ (C5 + 赤金 + 100-1,000 枚) ④ EC 物流ラベル (DL + 透明窓 + 1,000-50,000 枚) ⑤ イベント記念封筒 (A4 + 記念スタンプ + 200-1,000 枚)。3 つの主要トレンド: カスタマイズ需要の継続的増加 (企業ロゴ、結婚式箔押しレイアウト)、エコ素材 (FSC 紙 + 大豆インク + クラフト紙)、無料デジタル校正による意思決定ハードルの低下。' },
     ],
   },
 };
@@ -1761,7 +1761,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '建議什麼時候開始印年曆？', a: '建議提前 2–3 個月準備，避開 11–12 月的印刷高峰期。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。座枱曆／掛曆可按箱規安排順豐或貨車；跨區派發企業禮品可先集中送到總部再分發。旺季建議鎖定檔期與數量。' },
       // 2026-08-22 v3.14 T25: calendars Pillar 去模板化 (防 scaled content abuse, 加 2027 旺季時間線 + 4 大趨勢)
-      { q: '2027 月曆市場 8-10 月旺季前夜的關鍵節點？', a: '2027 年曆採購黃金窗口 8-10 月落單 → 9-12 月交貨. 企業禮品 (銀行/保險/地產) 500-5,000 本/批, 學校+教會+NGO 100-500 本. 全年月曆詢盤 9-11 月佔全年 60% (旺季), 11 月起轉淡. 8 月已過 2026 = 9 月全面轉 2027 = 2027 年曆早鳥預訂窗口. 趨勢 4 大方向: ① 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入) ② 環保材質 +47% (FSC 紙 + 大豆油墨) ③ 數碼印刷小批量 (50-100 本試印友好) ④ 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題佔 +28%).' },
+      { q: '2027 月曆市場 8-10 月旺季前夜的關鍵節點？', a: '2027 年曆採購黃金窗口 8-10 月落單 → 9-12 月交貨. 企業禮品 (銀行/保險/地產) 500-5,000 本/批, 學校+教會+NGO 100-500 本. 全年月曆詢盤 9-11 月佔全年 60% (旺季), 11 月起轉淡. 8 月已過 2026 = 9 月全面轉 2027 = 2027 年曆早鳥預訂窗口. 趨勢 4 大方向: ① 客製化滲透率上升 (企業 LOGO + 品牌色 + 產品融入) ② 環保材質 (FSC 紙 + 大豆油墨) ③ 數碼印刷小批量 (50-100 本試印友好) ④ 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題).' },
       { q: '可以先報價再給設計檔嗎？', a: '可以。請提供款式（座枱／掛牆／月曆卡）、數量、尺寸、紙張／底板厚度與是否需要燙金或座架；可先取得數碼／柯式方案報價，月曆頁面檔齊後再做色彩打樣建議。' },
       // 2026-08-21 v3.13 T14: 5 主题 5 FAQ 补全 (价格 + 燙金)
       { q: '2027 月曆印刷價格幾多？', a: '掛曆 / 檯曆 / 年曆卡 HK$3-8/本（按尺寸、紙張與工藝浮動），1 本起訂，500 本柯式更平。2027 年曆早鳥預訂 + 免費設計。' },
@@ -1770,7 +1770,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '2027 月曆旺季幾時落單最抵？', a: '旺季時間線: 8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。8-9 月落單鎖定旺季檔期 + 免費設計; 11 月起轉淡, 12 月起恢復常規價。旺季落單越早, 交期與紙價越穩。' },
       { q: '企業禮品月曆 500 本幾錢? 銀行/保險/地產旺季怎搶?', a: '500 本柯式月曆按 HK$3-8/本帶內報價 (視乎尺寸/紙張/工藝), 加燙金 LOGO 按工藝另計, 雙面四色 + 封面咭紙. 旺季搶單 3 步: (1) 7-8 月設計定稿 (2) 8-9 月落單鎖定產能與紙價 (3) 9-10 月柯式交貨 + 企業分發. 銀行/保險/地產 3 大場景 Q4 旺季採購, 500-5,000 本/批, 港島金融業/九龍商業區/新界住宅社區分區派發.' },
       { q: '月曆印刷點解要避開 11-12 月高峰期?', a: '11-12 月是印刷業全年最旺季, 紙張/工廠/物流全部緊張: 紙張加價 15-20%, 工廠排期 7-10 天 (常規 3-5 天), DHL 跨境延誤 3-5 天. 旺季前 2-3 個月落單享 3 重優勢: (a) 紙張原價 (b) 工廠 3-5 天交期 (c) DHL 正常 2-4 天. 旺季高峰落單 = 漲價 + 延期 + 旺季交貨延誤 3 重打擊.' },
-      { q: '2027 月曆 4 大趨勢: 客製化/環保/小批量/主題多元', a: '趨勢 1 客製化滲透率 +52% (企業 LOGO + 品牌色 + 產品融入, 每頁可印不同員工/分店). 趨勢 2 環保材質 +47% (FSC 認證紙 + 大豆油墨 + 可回收包裝). 趨勢 3 數碼印刷小批量 (1 本起印, 50-100 本試印友好). 趨勢 4 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題 +28% 增長, ZprintPro 提供 20+ 主題模板). 2027 年曆早鳥預訂已開放, 把握 Q4 旺季採購.' },
+      { q: '2027 月曆 4 大趨勢: 客製化/環保/小批量/主題多元', a: '趨勢 1 客製化滲透率上升 (企業 LOGO + 品牌色 + 產品融入, 每頁可印不同員工/分店). 趨勢 2 環保材質 (FSC 認證紙 + 大豆油墨 + 可回收包裝). 趨勢 3 數碼印刷小批量 (1 本起印, 50-100 本試印友好). 趨勢 4 主題多元化 (貓咪/植物/星空/極簡/復古等小眾主題, ZprintPro 提供 20+ 主題模板). 2027 年曆早鳥預訂已開放, 把握 Q4 旺季採購.' },
       { q: '月曆 1 本起訂 + 旺季檔期落單: 一條龍流程點走?', a: '8 步一條龍: (1) 選類型 (座枱/掛牆/月曆卡/記事簿) (2) 確認尺寸 (150×180 / A3 / A2) (3) 紙張+底板 (200-300g 銅版+1-2mm 灰板) (4) 工藝 (燙金/UV/圓環/打孔) (5) 設計 (12 個月模板 + 企業 LOGO + 品牌色) (6) 早鳥預訂鎖定產能與紙價 (7) 3-7 天交期 (8) 順豐本地 + DHL 全球. 詳見 [2027 月曆印刷一條龍攻略](/zh-hk/blog/2027-monthly-calendar-printing-timetable/).' },
     ],
   },
@@ -1872,7 +1872,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk calendar orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit calendar type, size, paper type, quantity, and cover finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check each month page design and bleed.' },
       // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en
-      { q: 'What are the key 2027 calendar market timing signals in Aug-Oct peak pre-season?', a: '2027 calendar procurement gold window: order Aug-Oct, deliver Sep-Dec. Corporate gifts (banking / insurance / real estate) 500-5,000 copies per batch, schools + churches + NGOs 100-500 copies. Full-year calendar inquiries Sep-Nov account for 60% (peak season), then taper off from November. After Aug 2026, September shifts fully to 2027 — 2027 pre-order window opens. Four key trends: customization penetration +52% (corporate logos + brand colors + product integration), eco materials +47% (FSC paper + soy ink), digital printing small batches (50-100 copy test print friendly), and theme diversification (cats / plants / stars / minimalist / retro niche themes +28%).' },
+      { q: 'What are the key 2027 calendar market timing signals in Aug-Oct peak pre-season?', a: '2027 calendar procurement gold window: order Aug-Oct, deliver Sep-Dec. Corporate gifts (banking / insurance / real estate) 500-5,000 copies per batch, schools + churches + NGOs 100-500 copies. Full-year calendar inquiries Sep-Nov account for 60% (peak season), then taper off from November. After Aug 2026, September shifts fully to 2027 — 2027 pre-order window opens. Four key trends: rising customization penetration (corporate logos + brand colors + product integration), eco materials (FSC paper + soy ink), digital printing small batches (50-100 copy test print friendly), and theme diversification (cats / plants / stars / minimalist / retro niche themes).' },
     ],
   },
   ja: {
@@ -1972,7 +1972,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。カレンダーの大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずカレンダータイプ、サイズ、紙タイプ、数量、表紙加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが各月ページのデザイン、bleedをチェックします。' },
       // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → ja
-      { q: '2027 年カレンダー市場 8-10 月繁忙期前夜の重要なタイミングは?', a: '2027 年カレンダー調達の黄金期間: 8-10 月発注 → 9-12 月納品。企業ギフト (銀行 / 保険 / 不動産) 500-5,000 部/バッチ、学校+教会+NGO 100-500 部。年間カレンダー問い合わせの 60% が 9-11 月 (繁忙期)、11 月以降は減少。2026 年 8 月が過ぎた後、9 月から 2027 年仕様に完全移行 — 2027 年カレンダー早期予約受付開始。4 つの主要トレンド: カスタマイズ浸透率 +52% (企業ロゴ + ブランドカラー + 製品統合)、エコ素材 +47% (FSC 紙 + 大豆インク)、デジタル印刷小ロット (50-100 部試印対応)、テーマ多様化 (猫 / 植物 / 星 / ミニマル / レトロ ニッチテーマ +28%)。' },
+      { q: '2027 年カレンダー市場 8-10 月繁忙期前夜の重要なタイミングは?', a: '2027 年カレンダー調達の黄金期間: 8-10 月発注 → 9-12 月納品。企業ギフト (銀行 / 保険 / 不動産) 500-5,000 部/バッチ、学校+教会+NGO 100-500 部。年間カレンダー問い合わせの 60% が 9-11 月 (繁忙期)、11 月以降は減少。2026 年 8 月が過ぎた後、9 月から 2027 年仕様に完全移行 — 2027 年カレンダー早期予約受付開始。4 つの主要トレンド: カスタマイズ浸透率の上昇 (企業ロゴ + ブランドカラー + 製品統合)、エコ素材 (FSC 紙 + 大豆インク)、デジタル印刷小ロット (50-100 部試印対応)、テーマ多様化 (猫 / 植物 / 星 / ミニマル / レトロ ニッチテーマ)。' },
     ],
   },
 };
