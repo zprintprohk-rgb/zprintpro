@@ -54,4 +54,5 @@ tsc 54 / title-v5 HARD 3（存量）/ brand 0 / gsc-leak 0 —— 全绿
 
 1. **dsh 凭据重存**（K3-10）：重存后新 GSC 导出 → `node scripts/k3-kpi-panel.mjs --pull=<批次>` 刷新 KPI 面板（v1 基线已固化 10-27）
 2. **D15-21 实物资产**：刀模模板/样品文件（业务提供真实文件后发布）
-3. **watch 延续**：en 彩盒族 body 8-15 days 交期口径 + en category Made for USA 断言 + CSV 回源归并（D22-25）
+3. **watch 延续**：en 彩盒族 body 8-15 days 交期口径 + en category Made for USA 断言
+4. **CSV 回源归并（D22-25，优先级高）**：lane 契约（`lane-results-bus-contract.md` L112）规定 SKU SEO 只改 `zprintpro-sku-seo-data.csv` 后跑 `scripts/csv-to-sku-seo.mjs`。本批及此前批（P0-02 清毒 / D6-D14 / 本日 H1+title/desc）均直接改 `src/data/sku-seo-data.ts`——**必须归并回 CSV 防生成器重跑回滚**。归并清单（~40 行）：small-batch（title/desc ×3 语）、a1/a2 zh title、food ja/en desc、泛企业 H1 ×21、rigid H1 ×2、kraft/mailer/food（P0-02 批）等。**执行注意**：CSV 为 GBK 编码（§0.35.5 编码铁律）；归并后重跑生成器须 diff 校验 TS 无意外重排；凭据恢复前 lane 不会跑生成器，窗口安全。
