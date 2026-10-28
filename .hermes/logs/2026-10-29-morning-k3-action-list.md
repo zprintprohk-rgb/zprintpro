@@ -47,3 +47,7 @@
 **剩余 K3 动作 = 2 个**：#2 GSC 28d 新档导出（最紧，数据 17 天龄）· #3 009 SQL apply（昨晚深圳网络不通 api.supabase.com，本机实测项目域名 fetch failed；解法 = 代理规则补 supabase.com/supabase.co 或全局模式或手机热点，SQL v2 文本见上轮会话回复/`supabase/migrations/009`）。
 
 **今天排期提醒**：20:13 lane 消费新档（若 #2 完成）→ KPI 面板刷新；21:17 lane 恢复队列消费；reviews 组件在 #3 完成后自动显现。
+
+（来源：GMC 后台截图 ×4 + `.hermes/logs/2026-10-29-morning-k3-action-list.md`；校准日期 2026-10-29）
+
+**新增拍板项（10-29 凌晨 · GMC 四截图）**：GMC 路线三选一 —— A 维持（79 抑制结构性接受）/ B 暂停 HK 目的地 / C 建最小 checkout（唯一同时解 79 抑制 + Customer Reviews）。**GMC 选择参与模块与徽章 = 不集成**（无在线下单 → 无真实订单数据 = 政策违规 + §0.23 编造双红线；徽章无 seller rating 可显）。评估全文：`docs/2026-10-29-gmc-customer-reviews-vs-plan-a-evaluation.md`。009 SQL 仍为最高优先（reviews 解锁不受 GMC 影响）。
