@@ -82,6 +82,16 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
 - dsh_exit=0 但为 **auto-fill 假成功**（守卫隔离）——**凭据未恢复**（与 OPS-DSH-CREDENTIAL result「DONE」矛盾）——采纳 peer 判定：凭据仍缺，11-01 GSC 拉取前必须修复（Machine scope 重存未覆盖计划任务路径）。
 - daily 传单族 body 清毒（FDA/国際認証体系 删除）已收尾 commit（58d044a4，过全门禁）——防 CSV 生成覆盖丢失。
 
+## 批 #12 后全 src 复算（52 命中全分类）
+
+批 #12 上线后全 src（排除 .bak）即日交貨/即日速遞/翌日配送 = 52 命中，全部分类：
+- **条件化合规（保留）**：same-day 18:00 截单 / 急件特急 24 小时 / 最快 24-48 小時 / 指定產品即日速遞（QuoteForm）/ sameDayBadge / bannerCap 能力标签 / ProductTabs 服务语境
+- **冻结域（不动）**：Rush* 组件（RushDeliveryFAQ/Grid——翌日配送收费 FAQ）+ rush-printing-delivery 注释行
+- **批 #13 候选登记**：
+  1. service-areas ja「順丰翌日配送 + 順丰翌日配送」**词叠**（P0-02 同款——顺丰时效语境，下批去重）
+  2. business-cards 名片页 title「免費設計即日交貨」（无条件——**§0.0 名片展示层未拍板**——登记 K3 裁决，不擅动）
+- **结论**：§2.1 无条件即日承诺（非名片域）**全站归零** ✓
+
 **并发状态**：daily lane 21:17 触发持锁改 sku-seo-data.ts（CSV 归并生成）——批 #12（src 组件）按 §0.35.7 双条件待 daily 释放后执行；批 #8-11 手改需归并回 CSV（21:50 检查）。
 
 ## 四、复测登记（data-driven §3 第 8 条）
