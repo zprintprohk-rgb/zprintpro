@@ -23,7 +23,7 @@ create index if not exists idx_product_reviews_slug_status
 
 -- 每人每 SKU 每日一条 (DB 級頻控; API 无 service key, 由唯一表达式索引兜底)
 create unique index if not exists uq_product_reviews_iphash_day
-  on public.product_reviews (slug, ip_hash, (created_at at time zone 'utc')::date);
+  on public.product_reviews (slug, ip_hash, ((created_at at time zone 'utc')::date));
 
 alter table public.product_reviews enable row level security;
 
