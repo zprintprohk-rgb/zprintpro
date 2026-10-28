@@ -41,7 +41,16 @@ category-seo-content.ts 信封/书刊/月历三语 FAQ：
 
 ## 三、门禁
 
-tsc 54 / title-v5 HARD 3（存量）/ brand 0 / gsc-leak 0 —— 全绿
+tsc 54 / **title-v5 HARD 0**（本日 7→0 完整链条：small-batch→poster→food→same-day-flyers）/ brand 0 / gsc-leak 0 —— 全绿
+
+## 三-b、12:01 push（37f4176a）上线验证全绿
+
+批 #4-7 已上线：泛企业 H1 ×21 + 清毒 ×10 + ja JPY ×3 + same-day-flyers ×6 + 报告 ×3。线上探针 14/14：
+- ja H1 渲染 ✓（removable/handle-bags/textbooks/small-batch）
+- zh H1 渲染 ✓（thick-paper/eco-flyers/textbooks）
+- en rigid H1 `from 100` ✓
+- same-day 三语 title（HK$0.55 / $0.95 / ¥125）✓
+- envelopes category FAQ 三语无 +42% 残留 ✓
 
 ## 四、复测登记更新（data-driven §3 第 8 条）
 
