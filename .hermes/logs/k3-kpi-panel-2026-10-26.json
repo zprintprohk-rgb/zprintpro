@@ -9,7 +9,7 @@
       "2026-08-31",
       "2026-09-27"
     ],
-    "generated_at": "2026-10-27T03:50:42.786Z",
+    "generated_at": "2026-10-28T19:28:32.641Z",
     "ruling": "K3 2026-10-27: K3-8 转化接入关闭(线下处理); 监控口径 = GSC 四指标 + 带钱词排名 + 首页词数 + 关键词行数",
     "kpi_scope": "date×page (analysis JSON full_locale)",
     "money_scope": "locale_opportunities 词级 (en/ja 相关市场过滤)",

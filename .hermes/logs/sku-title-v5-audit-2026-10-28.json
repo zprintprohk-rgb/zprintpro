@@ -9,11 +9,12 @@
     "foil-stickers"
   ],
   "hardCount": 0,
-  "warnCount": 27,
+  "warnCount": 30,
   "hardByRule": {},
   "warnByRule": {
     "LONGTAIL_SOURCE": 13,
     "MOQ_UNVERIFIABLE": 6,
+    "BAND_FILL": 3,
     "FROZEN_FILLER_WORD": 2,
     "PRICE_UNVERIFIABLE": 2,
     "MOQ_DRIFT": 4
@@ -416,11 +417,15 @@
     {
       "slug": "small-bags",
       "locale": "ja",
-      "title": "小判紙袋｜100個〜 即日発送｜白カード 多サイズ｜ZprintPro",
-      "equiv": 56,
+      "title": "小判紙袋｜100個〜 白カード 多サイズ｜ZprintPro",
+      "equiv": 46,
       "frozen": false,
       "hard": [],
       "warn": [
+        {
+          "rule": "BAND_FILL",
+          "msg": "当量 46 < 50 (不足线)"
+        },
         {
           "rule": "MOQ_UNVERIFIABLE",
           "msg": "MOQ 100 无 products.ts minQuantity 可对照"
@@ -651,11 +656,16 @@
     {
       "slug": "a2-posters",
       "locale": "zh-hk",
-      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 即日交貨 | 智印港",
-      "equiv": 56,
+      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 | 智印港",
+      "equiv": 47,
       "frozen": false,
       "hard": [],
-      "warn": []
+      "warn": [
+        {
+          "rule": "BAND_FILL",
+          "msg": "当量 47 < 50 (不足线)"
+        }
+      ]
     },
     {
       "slug": "a2-posters",
@@ -696,8 +706,8 @@
     {
       "slug": "a1-posters",
       "locale": "ja",
-      "title": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro",
-      "equiv": 54,
+      "title": "A1 ポスター | 防水 DHL配送 | 1枚〜 ¥600〜 | ZprintPro",
+      "equiv": 53,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -705,8 +715,8 @@
     {
       "slug": "outdoor-posters",
       "locale": "zh-hk",
-      "title": "戶外海報 | 防水材質 即日速遞 | 1張起 HK$16起 | 智印港",
-      "equiv": 53,
+      "title": "戶外海報 | 防水材質 UV耐候 | 1張起 HK$16起 | 智印港",
+      "equiv": 51,
       "frozen": false,
       "hard": [],
       "warn": []
@@ -732,7 +742,7 @@
     {
       "slug": "display-posters",
       "locale": "zh-hk",
-      "title": "展架海報 | 防水材質 即日速遞 | 1個起 HK$32起 | 智印港",
+      "title": "展架海報 | 防水材質 60×160cm | 1個起 HK$32起 | 智印港",
       "equiv": 53,
       "frozen": false,
       "hard": [],
@@ -759,11 +769,16 @@
     {
       "slug": "art-posters",
       "locale": "zh-hk",
-      "title": "藝術海報 | 防水材質 即日速遞 | 1個起 HK$26起 | 智印港",
-      "equiv": 53,
+      "title": "藝術海報 | 美術紙 Giclée | 1個起 HK$26起 | 智印港",
+      "equiv": 49,
       "frozen": false,
       "hard": [],
-      "warn": []
+      "warn": [
+        {
+          "rule": "BAND_FILL",
+          "msg": "当量 49 < 50 (不足线)"
+        }
+      ]
     },
     {
       "slug": "art-posters",
@@ -786,7 +801,7 @@
     {
       "slug": "adhesive-posters",
       "locale": "zh-hk",
-      "title": "背膠海報 | 防水材質 即日速遞 | 1個起 HK$13起 | 智印港",
+      "title": "背膠海報 | 防水材質 當日可取 | 1個起 HK$13起 | 智印港",
       "equiv": 53,
       "frozen": false,
       "hard": [],
@@ -804,8 +819,8 @@
     {
       "slug": "adhesive-posters",
       "locale": "ja",
-      "title": "粘着ポスター | 防水 翌日配送 | 1枚〜 ¥390〜 | ZprintPro",
-      "equiv": 55,
+      "title": "粘着ポスター | 防水 DHL配送 | 1枚〜 ¥390〜 | ZprintPro",
+      "equiv": 54,
       "frozen": false,
       "hard": [],
       "warn": []

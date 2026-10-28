@@ -1,0 +1,21 @@
+# ZP-daily-content preflight BLOCKED (AUTO-FILL)
+
+VERDICT: BLOCKED
+CONSUMED: preflight only; dsh was not called
+DELIVERED: NONE
+NEXT: K3-admin resolve preflight blocker before retry: DEEPSEEK_API_KEY absent from scheduled process environment; restore it with scripts/repair-dsh-scheduler-credential.ps1
+
+Blocked at: 2026-10-29 01:56:52
+Reason: DEEPSEEK_API_KEY absent from scheduled process environment; restore it with scripts/repair-dsh-scheduler-credential.ps1
+
+## Checks
+
+- OK `repo_worktree_branch`: repo OK, branch=main
+- OK `deps_tree_integrity`: 依赖树 OK (328 个包)
+- OK `dsh_executable`: dsh CLI found
+- FAIL `dsh_credential_environment`: DEEPSEEK_API_KEY absent from scheduled process environment; restore it with scripts/repair-dsh-scheduler-credential.ps1
+- OK `dsh_effective_provider_model`: effective provider=deepseek-official model=deepseek-flash; allowed
+- OK `lock_free`: 无锁
+- OK `prev_run_known`: 总线最近记录 verdict=STALE @ 2026-10-28 21:20:02
+- OK `lane_status_available`: verdict=ATTENTION problems=6
+- FAIL `lock_acquired`: 前置检查未过, 未抢锁
