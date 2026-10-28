@@ -61,6 +61,27 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
 
 **small-bags 线上渲染异常登记**：线上 /ja/product/small-bags/ 渲染「紙袋印刷 ¥240」（paper-bags 分类 fallback，非本地「小判紙袋」）——本地代码正确（ts-only SKU，L4 注释）——疑 CF 边缘缓存旧版（3 次重抓一致）——非代码缺陷，待 TTL/重部署或 K3 触发 purge。
 
+## 批 #12（组件层无条件急件承诺 ×4，460be5d5）
+
+| 位置 | 原 | 新 |
+|---|---|---|
+| products.ts gift-bags description | 即日交貨，全港免費送貨 | 順豐本地速遞 |
+| seo.ts 分类 title 默认（zh-hk） | `${name} | 即日交貨` | `${name} | 最快24小時` |
+| seo.ts desc 后缀（zh-hk） | 立即查詢報價，滿$500免運費，即日交貨。 | 立即查詢報價，滿$500免運費，最快 24 小時交貨。 |
+| h1-builder.ts flyers hook | 即日交貨 | 最快24小時 |
+
+依据：§2.1 禁无条件即日承诺；「最快 24 小時」= product-faqs 加急件最快 24-48 小時真值（有条件）。门禁：tsc 54 / HARD 0 / brand 0 / gsc-leak 0。
+
+## CSV 归并（a1dc7537，lane 契约 L112）
+
+- 批 #8-11 title/desc 10 处归并回 zprintpro-sku-seo-data.csv（UTF-8/tab；生成器口径）。small-bags 为 ts-only（CSV 无行，生成器不覆盖）。
+- **CSV 残留登记（待下轮）**：imageAlt 即日発送/翌日配送 ~10 处 + keywords 即日速遞 30 处（搜索词部分合法）+ body 国際認証体系 9 处（§2.2 存量清毒）——生成器下次运行前必须先归并，否则残留回灌 ts。
+
+## 21:17 daily-content 机器判据 FAIL（3dae7eca，peer 判定）
+
+- dsh_exit=0 但为 **auto-fill 假成功**（守卫隔离）——**凭据未恢复**（与 OPS-DSH-CREDENTIAL result「DONE」矛盾）——采纳 peer 判定：凭据仍缺，11-01 GSC 拉取前必须修复（Machine scope 重存未覆盖计划任务路径）。
+- daily 传单族 body 清毒（FDA/国際認証体系 删除）已收尾 commit（58d044a4，过全门禁）——防 CSV 生成覆盖丢失。
+
 **并发状态**：daily lane 21:17 触发持锁改 sku-seo-data.ts（CSV 归并生成）——批 #12（src 组件）按 §0.35.7 双条件待 daily 释放后执行；批 #8-11 手改需归并回 CSV（21:50 检查）。
 
 ## 四、复测登记（data-driven §3 第 8 条）
