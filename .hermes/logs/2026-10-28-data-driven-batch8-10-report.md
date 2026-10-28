@@ -51,7 +51,15 @@ tsc 54 / title-v5 HARD 0（当量全过）/ brand 0 / gsc-leak 0 —— 全绿�
   1. `src/data/products.ts` L1555 gift-bags description「即日交貨，全港免費送貨」（sku-seo desc 已修——products.ts 真值源未对齐）
   2. `src/lib/seo.ts` L846 zh-hk 分类 title 默认模板「${name} | 即日交貨」（所有未自定义分类页）
   3. `src/lib/seo.ts` L939 zh-hk desc 后缀「立即查詢報價，滿$500免運費，即日交貨。」（所有 zh-hk 页面 desc 默认）
-- **h1-builder.ts L53 flyers h1「即日交貨」**：待查用法（若普通 flyers PDP 也用→误导→批 #12 一并处理）。
+- **h1-builder.ts L53 flyers h1「即日交貨」**：已确认 = SHARP_HOOKS_MAP_ZH_HK flyers 卖点（所有 flyers 分类页 H1 hook）——无条件→批 #12 改「最快24小時」（product-faqs 加急件最快 24-48 小時真值支撑）。
+
+**批 #12 最终清单（daily lane 释放后执行，src 组件层）**：
+1. `src/data/products.ts` L1555 gift-bags description「即日交貨，全港免費送貨」→「順豐本地速遞」（对齐 sku-seo）
+2. `src/lib/seo.ts` L846 zh-hk 分类 title 默认「${name} | 即日交貨」→「${name} | 最快24小時」
+3. `src/lib/seo.ts` L939 zh-hk desc 后缀「...即日交貨。」→「...最快 24 小時交貨。」
+4. `src/lib/h1-builder.ts` L53 flyers hook「即日交貨」→「最快24小時」
+
+**small-bags 线上渲染异常登记**：线上 /ja/product/small-bags/ 渲染「紙袋印刷 ¥240」（paper-bags 分类 fallback，非本地「小判紙袋」）——本地代码正确（ts-only SKU，L4 注释）——疑 CF 边缘缓存旧版（3 次重抓一致）——非代码缺陷，待 TTL/重部署或 K3 触发 purge。
 
 **并发状态**：daily lane 21:17 触发持锁改 sku-seo-data.ts（CSV 归并生成）——批 #12（src 组件）按 §0.35.7 双条件待 daily 释放后执行；批 #8-11 手改需归并回 CSV（21:50 检查）。
 
