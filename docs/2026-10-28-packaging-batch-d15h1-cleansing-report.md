@@ -73,3 +73,21 @@ tsc 54 / **title-v5 HARD 0**（本日 7→0 完整链条：small-batch→poster�
 4. **CSV 回源归并（D22-25，优先级高）**：lane 契约（`lane-results-bus-contract.md` L112）规定 SKU SEO 只改 `zprintpro-sku-seo-data.csv` 后跑 `scripts/csv-to-sku-seo.mjs`。本批及此前批（P0-02 清毒 / D6-D14 / 本日 H1+title/desc）均直接改 `src/data/sku-seo-data.ts`——**必须归并回 CSV 防生成器重跑回滚**。归并清单（~40 行）：small-batch（title/desc ×3 语）、a1/a2 zh title、food ja/en desc、泛企业 H1 ×21、rigid H1 ×2、kraft/mailer/food（P0-02 批）等。**执行注意**：CSV 为 GBK 编码（§0.35.5 编码铁律）；归并后重跑生成器须 diff 校验 TS 无意外重排；凭据恢复前 lane 不会跑生成器，窗口安全。
 5. **ja category 剩余 HK$ 残留 ×7（watch）**：本日已 JPY 化 3 处（包装带 8 价格 + 海报 A2/A1）——剩余：贴纸 L326（`HK$0.8` 类目级 vs basePrice_ja 46 不对应）、信封 ja ×4（`HK$0.5/0.15`，envelope basePrice_ja 未确认）、利是封 L2235（七簇移交域）、月历 L1880（`HK$3-8`）、教科书 L2471（`HK$24` vs basePrice_ja 1288 口径不同）——**逐项对照 basePrice_ja 后再 JPY 化，不猜值**。
 6. **en 彩盒族 body 8-15 days + HK$ 币种残留 ×3**（corrugated/tuck-end/white-cardboard en body `HK$1,517-7,278 per order`）——交期 8-15 为瓦楞工艺规格（登记待 K3 交期真值确认）；en 币种 HK$ 待 basePrice_en 对照确认。
+
+---
+
+## 六、补遗（2026-10-28 14:4x，本会话）：待办 4 CSV 回源归并（D22-25）已执行 ✅
+
+**方法**：`scripts/sync-ts-to-csv.mjs`（K3 方案 C 组件）dry-run → apply（自带备份 `.hermes/_bak-csv-before-backsync-1793169160574.csv`）→ 生成器复跑验证。
+
+| 步骤 | 结果 |
+|---|---|
+| sync dry-run | 计划回灌 83 行；**变更单元格 75 / 涉及行 28**（title/desc/h1/keywords/alt ×3 语全字段，覆盖 P0-02 至批 #7 全部直改） |
+| sync --apply | 后断言 PASS：83 行 × 18 字段与 ts 逐字一致，31 列不变 |
+| 生成器复跑（dry） | **漂移 0（此前 WARN 8 行 title 含批 #6/#7 same-day-flyers HK$0.55）· 字节级变化 0** —— lane 重跑生成器不再回滚任何真值 |
+| CSV 不变量 | 84 行（含表头）× 31 TAB 列 · **UTF-8 无 BOM** · 4 项真值抽查（same-day HK$0.55 / a1 HK$20 / a2 HK$16 / small-batch HK$38/A4）全过 |
+| 门禁 | tsc 54=54 · title-v5 HARD=0 · TS 零改动（本批仅 CSV） |
+
+**事实更正（§0.23 双方法）**：待办 4 原记「CSV 为 GBK 编码」**不实**——实测 `gbk` 解码在 0x86 字节失败、`utf-8` 解码完好、无 BOM；本批以 UTF-8 读写零转码。后续 CSV 编辑一律 UTF-8，勿再按 GBK 处理。
+
+**影响**：D22-25 欠账清零；「凭据恢复前窗口安全」的时限依赖解除——即使 lane 立即恢复并重跑生成器，TS 真值（价格/H1/title 全部批次）不受影响。
