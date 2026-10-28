@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-10-29",
+  "run_started_at": "2026-10-29 01:25:00",
+  "verdict": "OK",
+  "confidence": "MEDIUM",
+  "confidence_reason": "Fresh K3 exports 2026-10-29 (4 files: 24h/7d/28d/3mo site summary, full-country caliber); 28d latest day 2026-10-26 (3d old); 7d/24h windows 10-20..10-26 / 10-27T22..10-28T21; single export batch, no prev-window comparison file -> position deltas vs 10-26 panel are cross-batch and directional only",
+  "scope_discipline": [
+    "All four files are 'site summary' exports = FULL-COUNTRY caliber (evidence: 24h country sheet sums to the 24h chart total). NOT the hk+jp+us filtered caliber used by 2026-10-28 report (582.4 baseline). Recovery 109.9% is full-country; 108.3% (10-28) was three-country; not directly comparable, direction consistent (>100%).",
+    "date x page != query != page; totals never subtracted across scopes.",
+    "28d query sheet is truncated at 1000 rows (GSC export cap) -> row/homepage counts are query-level lower bounds, not the panel's query x page x country numbers.",
+    "Blind-word checks require exact query rows; zero impression in the top-1000 query sheet is 'no record', not proof of absence."
+  ],
+  "data_windows": {
+    "28d_site_summary": {
+      "window": "2026-09-29..2026-10-26",
+      "latest_day": "2026-10-26",
+      "age_days_at_run": 3,
+      "file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "chart_total": {"clicks": 497, "impressions": 20977, "ctr": 0.0237, "avg_pos": 13.52}
+    },
+    "7d_site_summary": {
+      "window": "2026-10-20..2026-10-26",
+      "file": "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "chart_total": {"clicks": 140, "impressions": 5498, "ctr": 0.0255, "avg_pos": 14.17}
+    },
+    "24h_site_summary": {
+      "window": "2026-10-27T22:00:00 ~ 2026-10-28T21:00:00",
+      "file": "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "chart_total": {"clicks": 15, "impressions": 793, "ctr": 0.0189, "avg_pos": 13.11},
+      "note": "rolling window incl. night hours; NOT a trend signal (A2 discipline)"
+    },
+    "3mo_site_summary": {
+      "window": "2026-07-27..2026-10-26",
+      "file": "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "note": "long-window comparison now available (brain-inject item 5)"
+    },
+    "previous_batch": "No prev-window export in this batch; 10-26 panel (k3-kpi-panel-2026-10-26) used for directional deltas only"
+  },
+  "sources": [
+    "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx (exported 01:16)",
+    "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx (01:16)",
+    "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx (01:17)",
+    "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx (01:23)",
+    ".hermes/logs/k3-kpi-panel-2026-10-26.md + .json (previous panel for directional deltas)",
+    ".hermes/logs/2026-10-28-ZP-gsc-feedback.md (previous run NEXT items)",
+    ".hermes/logs/gsc-daily-anomaly-2026-10-28.json (previous anomaly baseline)",
+    ".hermes/logs/2026-10-27-week2-p1-execution-launch-pack.md (23 money-word SSoT with main URLs)",
+    "analysis artifacts .hermes/_gsc_20261029_analysis2.txt (openpyxl parse of the 4 files, this run)"
+  ],
+  "double_method": {
+    "claim": "recovery ratio (full-country caliber)",
+    "method_1": "3mo file pre-cliff window 09-25..10-08 daily mean = 10006/14 = 714.71; latest 7d (10-20..10-26) = 5498/7 = 785.43 -> 785.43/714.71 = 109.9%",
+    "method_2": "28d file internal pre-cliff sub-window 09-29..10-08 = 7325/10 = 732.50 -> 785.43/732.50 = 107.2%",
+    "agreement": "2.7pp apart; root cause = pre-cliff window definition (09-25/26 lows 674/494 pull 3mo mean down). Method 1 adopted (window aligned to 10-28 report). Both >100%: recovery confirmed.",
+    "caliber_note": "10-28 report 108.3% used three-country baseline 582.4; full-country baseline here is 714.71. Different caliber, same direction."
+  },
+  "money_words_23_homepage": {
+    "hits": "6/23",
+    "zh": "食品包裝印刷 8.71 (首页) / 即日印刷 7.12 (首页, clk=1) / 海報印刷 14.87 / 印海報 12.83 / 小冊子印刷 10.41 / 紙袋印刷 14.43 / 騎馬釘印刷 12.14 / 貼紙印刷 40.49 / 月曆印刷 23.09",
+    "en": "small batch sticker printing 5.52 (首页) / small batch stickers 5.15 (首页) / saddle stitch booklet printing 9.60 (首页) / doujinshi printing 10.14 / china catalog printing 15.92 / large envelopes 14.06 / a2 poster 18.00 / corporate holiday cards: no record",
+    "ja": "卒アル販売 5.00 (首页, small sample) / コミケ 印刷 18.85 / 教材 印刷製本 17.31 / pvc シール 18.80 / 教材 印刷 制本: no record / 年賀状印刷: no record"
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "RESOLVED", "note": "28d latest day 2026-10-26 (3d old), fresh exports present"},
+    {"id": "A2", "name": "frozen_24h_chain", "status": "RESOLVED", "note": "K3 exported new 24h file; frozen 758-imp chain (4 rounds) terminated"},
+    {"id": "A15", "name": "index.json fake FRESH", "status": "OPEN (19 days)", "note": "lastBuild still 2026-10-10T22:43, freshnessStatus=FRESH lie persists; gate #9 blind; C6 needs owner rebuild generator; do not hand-edit derived file (SOP-5)"},
+    {"id": "A16", "name": "7d zero consumption", "status": "RESOLVED", "note": "7d file consumed this round (5,498 imps)"},
+    {"id": "NEW-1", "name": "貼紙印刷 lost homepage (40.49)", "severity": "P1", "note": "task-J locked word, most concrete regression; 118 imps 0 clicks; content fix then re-measure"},
+    {"id": "NEW-2", "name": "教科書印刷 churn worsening (34.6->47.1)", "severity": "P1", "note": "41 imps 0 clicks; 11-01 monthly review diagnosis"},
+    {"id": "NEW-3", "name": "a2 poster regression (11.9->18.0)", "severity": "P2", "note": "54 imps 0 clicks; en non-primary, observe"},
+    {"id": "NEW-4", "name": "海報印刷 287 imps 0 clicks (largest zero-click)", "severity": "P2", "note": "striking distance 14.87; price-caliber unify then poster content pickup (week-2 K3-2/K3-7 gates)"}
+  ],
+  "zero_click_high_impression": [
+    "海報印刷 287@14.9", "コミケ 印刷 177@18.9", "貼紙印刷 118@40.5", "食品包裝印刷 112@8.7",
+    "月曆印刷 109@23.1", "宣傳單張 108@28.3", "印刷公司 103@30.8", "宣傳單張印刷 102@27.2",
+    "書刊印刷 97@32.2", "poster 印刷 77@11.4", "china catalog printing 76@15.9", "紙袋印刷 65@14.4",
+    "印刷紙袋 64@16.8", "戶外貼紙 62@15.0", "食品印刷 59@9.2", "海報與印刷 56@11.8",
+    "騎馬釘印刷 56@12.1", "騎馬釘 55@19.2", "小冊子印刷 54@10.4", "a2 poster 54@18.0",
+    "クラフト紙 パッケージ印刷 54@26.3", "包裝盒印刷 54@31.4", "訂做紙袋 53@21.2", "月曆訂製 53@26.4",
+    "クラフト紙 パッケージ 印刷 52@27.1", "貼紙設計 51@17.8", "small batch sticker printing 50@5.5", "紙袋訂製 50@26.2"
+  ],
+  "striking_distance": [
+    "海報印刷 287@14.9", "コミケ 印刷 177@18.9", "印海報 126@12.8 clk1", "食品包裝印刷 112@8.7",
+    "poster 印刷 77@11.4", "china catalog printing 76@15.9", "紙袋印刷 65@14.4", "印刷紙袋 64@16.8",
+    "戶外貼紙 62@15.0", "食品印刷 59@9.2", "即日印刷 56@7.1 clk1", "海報與印刷 56@11.8",
+    "騎馬釘印刷 56@12.1", "騎馬釘 55@19.2", "小冊子印刷 54@10.4", "a2 poster 54@18.0",
+    "貼紙設計 51@17.8", "small batch sticker printing 50@5.5", "doujinshi printing 44@10.1",
+    "食品包裝訂製 39@13.6", "可移貼紙 38@19.7", "教材 印刷製本 36@17.3", "catalog printing china 34@19.4",
+    "a1 印刷 即日 33@8.3 clk1", "海報 33@18.9", "catalogue printing china 32@15.8", "包裝食品 裡印 31@9.5",
+    "利是封訂製 29@17.1 clk1"
+  ],
+  "pillar_verification_7d": {
+    "note": "GSC page-sheet presence = indexed and ranking signal (7d window 10-20..10-26)",
+    "strong": ["poster-printing-guide 422@7.7 clk5", "folded-leaflet-printing-guide 180@10.4 clk11", "saddle-stitch-booklet-printing-guide 103@10.0 clk3"],
+    "medium": ["category/flyers 102@23.7", "category/packaging 85@36.7", "category/posters 82@39.1", "category/paper-bags 70@50.6", "category/calendars 66@39.4", "category/red-packets 49@19.1 clk3", "category/stickers 42@44.1"],
+    "weak_or_new": ["category/educational 22@19.4", "ja/comiket-c109 20@7.3 clk2", "category/wedding-invitations 13@19.7", "category/envelopes 8@6.5", "ja/nengajo-2027 1@10.0 (new page, has impressions)"]
+  },
+  "blind_words": {
+    "年賀状印刷": "0", "2027年賀状": "0", "corporate holiday cards": "0", "business holiday cards": "0",
+    "nengajo": "3@8.7 (28d) / 1@9.0 (24h); /ja/nengajo-2027/ page has impressions but blind keywords not broken yet"
+  },
+  "rows_homepage_query_level": {
+    "rows": 1000, "pos_le_10": 503, "pos_11_20": 175, "pos_gt_20": 302,
+    "note": "28d query sheet (export cap 1000 rows); not the panel's query x page x country caliber"
+  },
+  "candidates": {
+    "C4": "KPI panel join fix (貼紙印刷/月曆印刷 now have word-level rows 118@40.5 / 109@23.1) - still due 11-03",
+    "C6": "GSC数据/index.json rebuild - OPEN 19 days (A15); owner rebuild generator required",
+    "NEW": "海報印刷 content pickup after price-caliber unify (week-2 K3-2/K3-7); 貼紙印刷 content fix then re-measure"
+  }
+}

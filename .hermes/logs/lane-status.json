@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-28T17:21:27.561Z",
-  "generated_local": "2026-10-29 01:21",
+  "generated_at": "2026-10-28T17:41:15.904Z",
+  "generated_local": "2026-10-29 01:41",
   "repo": "F:\\zprintpro-nextjs",
   "source_of_truth": "docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md",
   "trigger_layer": "Windows Task Scheduler (\\ZP-*) -> .hermes/cron-run/*.cmd -> dsh --profile headless",
@@ -288,7 +288,7 @@
       "lastReportFile": {
         "file": "2026-10-29-ZP-gsc-feedback.md",
         "dateToken": "2026-10-29",
-        "mtime": "2026-10-28T17:21:05.049Z"
+        "mtime": "2026-10-28T17:40:37.500Z"
       },
       "lastWrapperRun": {
         "start": "2026-10-28 20:13:01",

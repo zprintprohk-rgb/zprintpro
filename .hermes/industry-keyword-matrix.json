@@ -2246,6 +2246,44 @@
   },
   "priority_boost_history": [
     {
+      "date": "2026-10-29",
+      "trigger": "manual gsc-feedback-loop run (K3 立即执行 + 新档到位)",
+      "by_orchestrator": true,
+      "changes": [
+        {
+          "keyword": "食品包裝印刷",
+          "delta": "+1",
+          "reason": "28d 稳首页 8.71 + 112 imps 零点击 -> 词价值确认, 内容承接优先"
+        },
+        {
+          "keyword": "china catalog printing",
+          "delta": "+1",
+          "reason": "28d 18.0->15.9 显著升 + 76 imps en 买家词"
+        },
+        {
+          "keyword": "貼紙印刷",
+          "delta": "0 (观察)",
+          "reason": "40.49 锁词失守最明确, 不升不降待内容修复后复评"
+        },
+        {
+          "keyword": "月曆印刷",
+          "delta": "0 (观察)",
+          "reason": "23.09 20+, 待 11-03 面板 join 后复评"
+        },
+        {
+          "keyword": "教科書 印刷",
+          "delta": "0 (盯梢)",
+          "reason": "churn 34.6->47.1 恶化, 11/1 月复盘诊断"
+        }
+      ],
+      "rules_applied": {
+        "strong_homepage_stable": "+1",
+        "significant_climb_28d": "+1",
+        "lost_homepage": "observe",
+        "churn": "watch"
+      }
+    },
+    {
       "date": "2026-07-06",
       "trigger": "manual gsc-feedback-loop run",
       "by_orchestrator": true,
@@ -9937,7 +9975,7 @@
     "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
   },
-  "last_gsc_feedback_update": "2026-10-15 (新档消费轮 · 10-14 STALE 重做轮 · 新增 gsc_feedback_2026_10_15 block): 消费 10-15 档 ×12 (28d 数据日 10-12, 龄 3 天, alerts=[] ⇒ WARN_STALE 解除) + 恢复曲线三点 (7.5%→127.6%→97.2%, 分母固定 585.2) + **解除条件②达成 (三站 28d 日均 581.7/日 ≥500)** + 条件① 1/3 日 + 条件③ K3 GA4 待办 ⇒ 灾难维持橙观察级 + 锚点表刷新 (W1 判决转录: 海報印刷 11.9 / 貼紙印刷 29.9 软化 / saddle stitch 11.7 软化 / 教科書 17.4 / 年賀状 0) + CTR 池 W1 歼灭批上线 (99269163+a330f967, 线上 title 实测一致) + title-v5 hard 8 (PRICE_MISMATCH 7 + FILLER_WORD 1) + 门童 #29 252 槽 0 违规 + 301/路由 a2 探针 37 条 + 新增 3 项线上观察 (15,000+ 客户 claim / 纸袋页交期三口径 / 商品卡双品牌重复) + src 修复建议 13 条 + GSC数据/index.json STALE→FRESH + 补登 10-15 档 12 件 (totalFiles 165→177) + 补记 10-14 STALE 闭合报告) ‖ 前值(10-13): 2026-10-13 (恢复模式轮 · 新增 gsc_feedback_2026_10_13 block: STEP 0.5 断崖检测器消费 [无 CRITICAL_CLIFF · WARN_STALE×3 · 恢复系数 7.5%→127.6% 双方法一致] + 恢复曲线逐日序列 + 实时 24h 逐词位置 vs 28d 位置对照 [spam 压制解除信号 > 我方内容效果, 归因不做] + 灾难红→橙降级未解除 (strategy §1.2 三条件 1/3) + 盲开未破零 (10/16 判读) + 锚文 法2 8 词无消失 + title 实测 [ja ≈55-57 维持 / **en greeting-cards ≈84 新增超线**] + 301 6/6 + 门童 #29 10-13 0 违规 + src 修复 9 条 + GSC数据/index.json 诚实改 STALE 并补登 10-12/10-13 实时档) ‖ 前值(10-10): 2026-10-10 (v9.4 rearm 持续轮 · 10-09 档消费轮; 新增 gsc_feedback_2026_10_10 block: 消费 10-09 档 ×12 xlsx + 同仓解析 (extract.json 单行 / compare-vs-0918.json 多行) + docs 两份 10-09 盘点; **锚点表切换 10-09 验证矩阵 en 8 + ja 9 + zh 16**; 站点 28d hk 290/10,563 (7d 点击 88 三连升) / us 36/3,802 / jp 32/2,023; 20 天 pos≤10 350→486 (+38.9%); CTR c 值一等判据池 10 词; 盲开 年賀状/holiday cards 仍 0 但承接段已 live; churn 教科書 34.6; 质量三件套 ①✅486 ②proxy 48.6% ③✅≥27 + M1 hk 7d 88clk PASS; 锚文 8/8 满编 (FIX-1/2 转达标); title stickers 57 + ja greeting-cards ≈55; 301×2 新页×2 PASS; 品牌 智印港 14clk CTR 63.6%; priority_boost 0 UPDATE; P0 95.45%; PENDING 4 zh 锁词 + 3mo 窗; request_human 4 车道 0x80070020)",
+  "last_gsc_feedback_update": "2026-10-29 (数据到位轮 · 恢复确认轮): 消费 K3 01:23 导出 4 新档 (24h/7d/28d/3mo 三站点汇总, 全国家口径) + 恢复系数双方法 [方法1 3mo 档断崖前 714.71/日 vs 最新7d 785.43/日 = 109.9%; 方法2 28d 档子窗 732.50 = 107.2%; 差 2.7pp 归因断崖前窗口定义, 采用方法1; 全国家口径, 与 10/28 三站 108.3% 不可直接比但方向一致] + 28d KPI [clk 497 / imp 20,977 / CTR 2.37% / pos 13.52] + 最佳单日 10-26 (31clk/947imp/3.27%) + 带钱词 23 词首页 6/23 (zh 2/en 3/ja 1: 食品包裝 8.71·即日 7.12·small batch ×2·saddle 9.6·卒アル 5.0) + 恶化: 貼紙 40.49 / 月曆 23.09 / 教科書 47.1 (churn) / a2 poster 18.0; 改善: china catalog 15.9 / 教材製本 17.31 / コミケ 18.85 (锚达标) + 零点击高展示 28 词 (海報 287 居首) + striking distance 40 词 (pos 5-20) + 盲开词仍全 0 (nengajo 页有展示 3@8.7) + Pillar 验证 (poster-guide 422@7.7 最强) + A1/A2/A16 解除 + A15 持续 (C6 未修) + priority_boost: 食品包裝 +1 / china catalog +1, 其余观察",
   "gsc_feedback_2026_09_10": {
     "version": "gsc-feedback-v7-2026-09-10",
     "run_at": "2026-09-11T03:15:00+08:00",
@@ -12738,7 +12776,235 @@
       "next_update_window_prediction": "外部证据: 2026-09 spam 更新 9/24 启动、10/8 完成 (13d16h); 外部预测下次 core update 落在 9/24 起 45 天内、最迟 2026-12-12, 三分之二概率在万圣节 (10/31) 前 (stanventures 2026-09-28, 依据 = 2020/21/23/24/25 五年均有 11-12 月 core update + May 2026 core 后已 118 天无 core); 仓内口径 (recovery plan §1.2) = 下次窗口可能在 12 月, 恰在 CNY 利是封季前 ⇒ 若届时全绿可接恢复红利。两口径均支持「12 月前完成全站整改」",
       "guard_mechanisms": "门童 #29 / 断崖检测 / 线上断言 / 相似度闸门 四机制在宣布解除前一律不动 (strategy §1.2)"
     },
-    "gsc_feedback_2026_10_15": {
+  "gsc_feedback_2026_10_29":   {
+    "date": "2026-10-29",
+    "type": "数据到位轮 (K3 01:23 导出 4 新档; 全国家口径; 恢复确认轮)",
+    "files_consumed": [
+      "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx",
+      "3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx"
+    ],
+    "verdict": "OK · 恢复确认轮 (RECOVERY 109.9% 全国家口径)",
+    "kpi": {
+      "28d_0929_1026": {
+        "clicks": 497,
+        "impressions": 20977,
+        "ctr": "2.37%",
+        "avg_pos": 13.52
+      },
+      "7d_1020_1026": {
+        "clicks": 140,
+        "impressions": 5498,
+        "ctr": "2.55%",
+        "avg_pos": 14.17
+      },
+      "24h_1027T22_1028T21": {
+        "clicks": 15,
+        "impressions": 793,
+        "ctr": "1.89%",
+        "avg_pos": 13.11
+      }
+    },
+    "recovery": {
+      "method1_full_precliff": "3mo 档 09-25..10-08 复算 imp/日=714.71 -> 最新7d 785.43/714.71 = 109.9%",
+      "method2_samefile": "28d 档 09-29..10-08 子窗 732.50 -> 785.43/732.50 = 107.2%",
+      "two_methods_diff": "2.7pp, 根因=断崖前窗口定义 (09-25/26 低点 494/674 拉低 3mo 档均值); 采用方法1 (窗口与 10/28 报告对齐)",
+      "caliber_note": "新档=全国家口径; 10/28 报告 108.3% 为三站 (hk+jp+us) 口径 582.4 基线, 两者不可直接比较, 但方向一致均>100%",
+      "best_day": "10-26 clk=31 imp=947 ctr=3.27% (28d 窗口最佳单日)",
+      "low_point": "10-24 clk=10 imp=594 ctr=1.68%"
+    },
+    "money_words_23": {
+      "homepage_hits": "6/23 (zh 2/9 + en 3/8 + ja 1/6)",
+      "zh": {
+        "海報印刷": "imp287 pos14.87 clk0 11-20 (零点击高展示 #1)",
+        "印海報": "imp126 pos12.83 clk1 11-20",
+        "食品包裝印刷": "imp112 pos8.71 clk0 首页 (稳)",
+        "貼紙印刷": "imp118 pos40.49 clk0 20+ (恶化, 锁词失守最明确)",
+        "月曆印刷": "imp109 pos23.09 clk0 20+",
+        "小冊子印刷": "imp54 pos10.41 clk0 11-20",
+        "紙袋印刷": "imp65 pos14.43 clk0 11-20",
+        "騎馬釘印刷": "imp56 pos12.14 clk0 11-20",
+        "即日印刷": "imp56 pos7.12 clk1 首页 (唯一有点击首页带钱词)"
+      },
+      "en": {
+        "small batch sticker printing": "imp50 pos5.52 clk0 首页",
+        "small batch stickers": "imp26 pos5.15 clk0 首页",
+        "doujinshi printing": "imp44 pos10.14 clk0 11-20",
+        "saddle stitch booklet printing": "imp15 pos9.60 clk0 首页",
+        "china catalog printing": "imp76 pos15.92 clk0 11-20 (18.0->15.9 升)",
+        "large envelopes": "imp16 pos14.06 clk0 11-20",
+        "a2 poster": "imp54 pos18.00 clk0 11-20 (11.9->18.0 退)",
+        "corporate holiday cards": "0 无词级记录 (盲开未破零)"
+      },
+      "ja": {
+        "コミケ 印刷": "imp177 pos18.85 clk0 11-20 (锚 20.8 达标)",
+        "卒アル販売": "imp16 pos5.00 clk0 首页 (小样本)",
+        "教材 印刷製本": "imp36 pos17.31 clk0 11-20 (19.3->17.3 升)",
+        "教材 印刷 制本": "0 无词级记录 (面板 10-26 有 17.4, 新档归一化差异)",
+        "pvc シール": "imp20 pos18.80 clk0 11-20",
+        "年賀状印刷": "0 无词级记录 (盲开未破零)"
+      }
+    },
+    "zero_click_high_imp_28": [
+      "海報印刷 287@14.9",
+      "コミケ 印刷 177@18.9",
+      "貼紙印刷 118@40.5",
+      "食品包裝印刷 112@8.7",
+      "月曆印刷 109@23.1",
+      "宣傳單張 108@28.3",
+      "印刷公司 103@30.8",
+      "宣傳單張印刷 102@27.2",
+      "書刊印刷 97@32.2",
+      "poster 印刷 77@11.4",
+      "china catalog printing 76@15.9",
+      "紙袋印刷 65@14.4",
+      "印刷紙袋 64@16.8",
+      "戶外貼紙 62@15.0",
+      "食品印刷 59@9.2",
+      "海報與印刷 56@11.8",
+      "騎馬釘印刷 56@12.1",
+      "騎馬釘 55@19.2",
+      "小冊子印刷 54@10.4",
+      "a2 poster 54@18.0",
+      "クラフト紙 パッケージ印刷 54@26.3",
+      "包裝盒印刷 54@31.4",
+      "訂做紙袋 53@21.2",
+      "月曆訂製 53@26.4",
+      "クラフト紙 パッケージ 印刷 52@27.1",
+      "貼紙設計 51@17.8",
+      "small batch sticker printing 50@5.5",
+      "紙袋訂製 50@26.2"
+    ],
+    "striking_distance_top20": [
+      "海報印刷 287@14.9",
+      "コミケ 印刷 177@18.9",
+      "印海報 126@12.8 clk1",
+      "食品包裝印刷 112@8.7",
+      "poster 印刷 77@11.4",
+      "china catalog printing 76@15.9",
+      "紙袋印刷 65@14.4",
+      "印刷紙袋 64@16.8",
+      "戶外貼紙 62@15.0",
+      "食品印刷 59@9.2",
+      "即日印刷 56@7.1 clk1",
+      "海報與印刷 56@11.8",
+      "騎馬釘印刷 56@12.1",
+      "騎馬釘 55@19.2",
+      "小冊子印刷 54@10.4",
+      "a2 poster 54@18.0",
+      "貼紙設計 51@17.8",
+      "small batch sticker printing 50@5.5",
+      "doujinshi printing 44@10.1",
+      "食品包裝訂製 39@13.6"
+    ],
+    "anchors_1009_matrix": {
+      "en": {
+        "doujinshi printing": "10.1 (11.2 达标升)",
+        "china catalog printing": "15.9 (17.7 达标升)",
+        "large envelopes": "14.1 (13.8 持平)",
+        "saddle stitch booklet": "16.0 (主词 saddle stitch booklet printing 9.6 首页)",
+        "small batch sticker": "5.2 (5.6 达标升)",
+        "small batch label": "0 (29.0 差)",
+        "calendar sizes": "43.9 (44 持平)",
+        "holiday cards": "0 (簇 0 维持)"
+      },
+      "ja": {
+        "コミケ": "18.9 (20.8 达标升)",
+        "クラフト紙": "2.0 imp1 小样本",
+        "年賀状": "0 (盲开未破零)",
+        "卒アル": "5.0 (66 大幅改善, 小样本)",
+        "教科書": "47.1 (34.6 恶化 churn 盯梢)",
+        "特急激安": "0",
+        "社名入りカレンダー": "0",
+        "クリアポスター": "0",
+        "両面カラー": "43.0 (35.4 持平)"
+      },
+      "zh": {
+        "海報印刷": "14.9",
+        "貼紙印刷": "40.5 (恶化)",
+        "即日印刷": "7.1 clk1",
+        "月曆印刷": "23.1",
+        "年曆印刷": "6.2 clk1",
+        "利是封印刷": "21.1 clk1",
+        "書刊印刷": "32.2",
+        "騎馬釘印刷": "12.1",
+        "餐牌印刷": "10.2",
+        "傳單印刷": "19.0",
+        "紙袋印刷": "14.4",
+        "信封印刷": "10.0",
+        "包裝盒": "34.3",
+        "小冊子": "10.4",
+        "學校印刷": "21.2",
+        "易拉架": "50.4"
+      }
+    },
+    "blind_words": {
+      "年賀状印刷": "0 (28d+24h 双查)",
+      "2027年賀状": "0",
+      "corporate holiday cards": "0",
+      "business holiday cards": "0",
+      "nengajo": "3 imp pos8.7 (28d) / 1 imp pos9.0 (24h) -> /ja/nengajo-2027/ 页面有展示, 盲开词本身未破零"
+    },
+    "pillar_7d_pages": {
+      "poster-printing-guide": "422@7.7 clk5 (最强 Pillar)",
+      "folded-leaflet-printing-guide": "180@10.4 clk11",
+      "saddle-stitch-booklet-printing-guide": "103@10.0 clk3",
+      "category/flyers": "102@23.7 clk2",
+      "category/packaging": "85@36.7 clk0",
+      "category/posters": "82@39.1 clk0",
+      "category/paper-bags": "70@50.6 clk1",
+      "category/calendars": "66@39.4 clk1",
+      "category/red-packets": "49@19.1 clk3",
+      "category/stickers": "42@44.1 clk1",
+      "category/educational": "22@19.4 clk1",
+      "ja/comiket-c109": "20@7.3 clk2",
+      "category/wedding-invitations": "13@19.7 clk1",
+      "category/envelopes": "8@6.5 clk0",
+      "ja/nengajo-2027": "1@10.0 clk0 (新页有展示)"
+    },
+    "locale_7d": {
+      "zh-hk": "4615 imp / 108 clk",
+      "en": "1330 / 20",
+      "ja": "635 / 13"
+    },
+    "rows_homepage_28d_query": {
+      "rows": 1000,
+      "pos_le_10": 503,
+      "pos_11_20": 175,
+      "pos_gt_20": 302,
+      "note": "query 级, 导出上限 1000; 与面板 q×p×c 口径不同"
+    },
+    "country_28d_top": {
+      "中国香港": "12072/360 (2.98%)",
+      "美国": "2753/31 (1.13%)",
+      "日本": "2282/41 (1.80%)",
+      "台湾": "427/10",
+      "英国": "267/3",
+      "新加坡": "211/7 (3.32%)",
+      "加拿大": "179/8 (4.47%)",
+      "澳大利亚": "155/8 (5.16%)"
+    },
+    "anomalies": {
+      "A1 DATA_STALE": "已解除 (28d 最新日 10-26, 3 天龄)",
+      "A2 frozen_24h": "已解除 (K3 导出 10-29 新 24h 档; 冻结 758 imps 链终止)",
+      "A15 index.json 假 FRESH": "持续 (lastBuild 10-10, C6 未修)",
+      "A16 7d 零消费": "已解除 (本轮消费 7d 档 5,498 imps)",
+      "新观察": "貼紙印刷 40.49 锁词失守最明确; 教科書 34.6->47.1 churn 恶化; a2 poster 11.9->18.0 退"
+    },
+    "candidates": {
+      "C4 KPI 面板 join": "贴纸/月历 已有词级记录 (新档 118@40.5 / 109@23.1), 面板 join 修复仍待 11-03",
+      "C6 index.json 重建": "未修 (A15 19 天)",
+      "新候选": "海報印刷 287 imps 零点击 -> 价格口径统一后海报承接 (对齐周2 K3-2/K3-7 门)"
+    },
+    "next": [
+      "今晚 20:13 定时轮幂等键 0453ab66a64d9edd 命中 -> 分析跳过, 复核本 block",
+      "导出 3mo 窗已到位 (大脑指令 #5 长窗对照已满足)",
+      "貼紙印刷 40.5 / 月曆 23.1 / 教科書 47.1 三词盯梢 (11/1 月复盘)",
+      "盲开词 年賀状印刷/corporate holiday cards 持续 0 -> 11/4 验证点 (nengajo-2027 页已有展示)"
+    ]
+  },
+  "gsc_feedback_2026_10_15": {
       "version": "2026-10-15-v1",
       "run_at": "2026-10-15 22:43 (lane ZP-gsc-feedback, 新档消费轮 · 10-14 STALE 重做轮)",
       "report": ".hermes/logs/2026-10-15-ZP-gsc-feedback.md",

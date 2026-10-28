@@ -1,6 +1,6 @@
 # 定时任务状态 (lane-status)
 
-> 生成: 2026-10-29 01:21 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
+> 生成: 2026-10-29 01:41 · 触发层: Windows Task Scheduler `\ZP-*` → `.hermes/cron-run/*.cmd` → `dsh --profile headless`
 > 结构记录来源: `.hermes/logs/lane-runs.jsonl` (58 条真实记录, 逐步接入中) · 兜底证据: wrapper 原始日志 `.hermes/logs/cron-ZP-*.log`
 > SSoT: `docs/2026-09-19-scheduler-source-of-truth-and-results-bus.md`
 > **verdict: ATTENTION** — ZP-weekly-meta 2026-10-23 -> MISSING ; ZP-weekly-meta scheduler LastTaskResult=2147946720 ; ZP-blog-deepfix 2026-10-24 -> MISSING ; ZP-blog-deepfix scheduler LastTaskResult=2147946720 ; ZP-monthly-matrix scheduler LastTaskResult=2147946720 ; ZP-k3-review scheduler LastTaskResult=1

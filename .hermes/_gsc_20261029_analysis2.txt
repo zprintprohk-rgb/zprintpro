@@ -1,0 +1,200 @@
+### 各文件 sheet 清单
+  24小时三站点汇总数据zprintpro -> ['图表', '查询数', '网页', '国家_地区', '设备', '搜索结果呈现', '过滤器']
+  7天三站点汇总数据zprintpro.c -> ['图表', '查询数', '网页', '国家_地区', '设备', '搜索结果呈现', '过滤器']
+  28天三站点汇总数据zprintpro. -> ['图表', '查询数', '网页', '国家_地区', '设备', '搜索结果呈现', '过滤器']
+  3个月三站点汇总数据zprintpro. -> ['图表', '查询数', '网页', '国家_地区', '设备', '搜索结果呈现', '过滤器']
+====================================================================================================
+## A. 带钱词 23 词 (28d, 修正: strip + imp 最大主词行)
+### zh
+  [海報印刷] 主: imp=287 pos=14.87 clk=0 ctr=0.0000 -> 11-20 | 变体: 海報印刷(i287,p14.9); 海報印刷一張(i17,p4.2); 海報印刷即日(i14,p9.8)
+  [印海報] 主: imp=126 pos=12.83 clk=1 ctr=0.0079 -> 11-20 | 变体: 印海報(i126,p12.8); 印海報一張(i25,p11.9); 印海報店(i1,p11.0)
+  [食品包裝印刷] 主: imp=112 pos=8.71 clk=0 ctr=0.0000 -> 首页 | 变体: 食品包裝印刷(i112,p8.7)
+  [貼紙印刷] 主: imp=118 pos=40.49 clk=0 ctr=0.0000 -> 20+ | 变体: 貼紙印刷(i118,p40.5); 防水貼紙印刷(i7,p10.7); 香港貼紙印刷(i4,p19.2)
+  [月曆印刷] 主: imp=109 pos=23.09 clk=0 ctr=0.0000 -> 20+ | 变体: 月曆印刷(i109,p23.1); 月曆印刷香港(i3,p3.3)
+  [小冊子印刷] 主: imp=54 pos=10.41 clk=0 ctr=0.0000 -> 11-20 | 变体: 小冊子印刷(i54,p10.4); 香港小冊子印刷(i8,p10.6)
+  [紙袋印刷] 主: imp=65 pos=14.43 clk=0 ctr=0.0000 -> 11-20 | 变体: 紙袋印刷(i65,p14.4); 牛皮紙袋印刷(i1,p4.0)
+  [騎馬釘印刷] 主: imp=56 pos=12.14 clk=0 ctr=0.0000 -> 11-20 | 变体: 騎馬釘印刷(i56,p12.1)
+  [即日印刷] 主: imp=56 pos=7.12 clk=1 ctr=0.0179 -> 首页 | 变体: 即日印刷(i56,p7.1); 即日印刷旺角(i1,p11.0)
+### en
+  [small batch sticker printing] 主: imp=50 pos=5.52 clk=0 ctr=0.0000 -> 首页 | 变体: small batch sticker printing(i50,p5.5)
+  [small batch stickers] 主: imp=26 pos=5.15 clk=0 ctr=0.0000 -> 首页 | 变体: small batch stickers(i26,p5.2)
+  [doujinshi printing] 主: imp=44 pos=10.14 clk=0 ctr=0.0000 -> 11-20 | 变体: doujinshi printing(i44,p10.1)
+  [saddle stitch booklet printing] 主: imp=15 pos=9.60 clk=0 ctr=0.0000 -> 首页 | 变体: saddle stitch booklet printing(i15,p9.6)
+  [china catalog printing] 主: imp=76 pos=15.92 clk=0 ctr=0.0000 -> 11-20 | 变体: china catalog printing(i76,p15.9)
+  [large envelopes] 主: imp=16 pos=14.06 clk=0 ctr=0.0000 -> 11-20 | 变体: large envelopes(i16,p14.1)
+  [a2 poster] 主: imp=54 pos=18.00 clk=0 ctr=0.0000 -> 11-20 | 变体: a2 poster(i54,p18.0); a2 posters(i3,p4.3)
+  [corporate holiday cards] 无词级记录
+### ja
+  [コミケ 印刷] 主: imp=177 pos=18.85 clk=0 ctr=0.0000 -> 11-20 | 变体: コミケ 印刷(i177,p18.9)
+  [卒アル販売] 主: imp=16 pos=5.00 clk=0 ctr=0.0000 -> 首页 | 变体: 卒アル販売(i16,p5.0)
+  [教材 印刷製本] 主: imp=36 pos=17.31 clk=0 ctr=0.0000 -> 11-20 | 变体: 教材 印刷製本(i36,p17.3)
+  [教材 印刷 制本] 无词级记录
+  [pvc シール] 主: imp=20 pos=18.80 clk=0 ctr=0.0000 -> 11-20 | 变体: pvc シール(i20,p18.8)
+  [年賀状印刷] 无词级记录
+  首页命中: 6/23
+====================================================================================================
+## B. 零点击高展示词 (28d, imp>=50 & clk=0, 共 28)
+  海報印刷 imp=287 pos=14.9
+  コミケ 印刷 imp=177 pos=18.9
+  貼紙印刷 imp=118 pos=40.5
+  食品包裝印刷 imp=112 pos=8.7
+  月曆印刷 imp=109 pos=23.1
+  宣傳單張 imp=108 pos=28.3
+  印刷公司 imp=103 pos=30.8
+  宣傳單張印刷 imp=102 pos=27.2
+  書刊印刷 imp=97 pos=32.2
+  poster 印刷 imp=77 pos=11.4
+  china catalog printing imp=76 pos=15.9
+  紙袋印刷 imp=65 pos=14.4
+  印刷紙袋 imp=64 pos=16.8
+  戶外貼紙 imp=62 pos=15.0
+  食品印刷 imp=59 pos=9.2
+  海報與印刷 imp=56 pos=11.8
+  騎馬釘印刷 imp=56 pos=12.1
+  騎馬釘 imp=55 pos=19.2
+  小冊子印刷 imp=54 pos=10.4
+  a2 poster imp=54 pos=18.0
+  クラフト紙 パッケージ印刷 imp=54 pos=26.3
+  包裝盒印刷 imp=54 pos=31.4
+  訂做紙袋 imp=53 pos=21.2
+  月曆訂製 imp=53 pos=26.4
+  クラフト紙 パッケージ 印刷 imp=52 pos=27.1
+  貼紙設計 imp=51 pos=17.8
+  small batch sticker printing imp=50 pos=5.5
+  紙袋訂製 imp=50 pos=26.2
+====================================================================================================
+## C. Striking distance (28d, 5<=pos<=20, imp>=20, 共 40)
+  海報印刷 imp=287 pos=14.9 clk=0
+  コミケ 印刷 imp=177 pos=18.9 clk=0
+  印海報 imp=126 pos=12.8 clk=1
+  食品包裝印刷 imp=112 pos=8.7 clk=0
+  poster 印刷 imp=77 pos=11.4 clk=0
+  china catalog printing imp=76 pos=15.9 clk=0
+  紙袋印刷 imp=65 pos=14.4 clk=0
+  印刷紙袋 imp=64 pos=16.8 clk=0
+  戶外貼紙 imp=62 pos=15.0 clk=0
+  食品印刷 imp=59 pos=9.2 clk=0
+  即日印刷 imp=56 pos=7.1 clk=1
+  海報與印刷 imp=56 pos=11.8 clk=0
+  騎馬釘印刷 imp=56 pos=12.1 clk=0
+  騎馬釘 imp=55 pos=19.2 clk=0
+  小冊子印刷 imp=54 pos=10.4 clk=0
+  a2 poster imp=54 pos=18.0 clk=0
+  貼紙設計 imp=51 pos=17.8 clk=0
+  small batch sticker printing imp=50 pos=5.5 clk=0
+  doujinshi printing imp=44 pos=10.1 clk=0
+  食品包裝訂製 imp=39 pos=13.6 clk=0
+  可移貼紙 imp=38 pos=19.7 clk=0
+  教材 印刷製本 imp=36 pos=17.3 clk=0
+  catalog printing china imp=34 pos=19.4 clk=0
+  a1 印刷 即日 imp=33 pos=8.3 clk=1
+  海報 imp=33 pos=18.9 clk=0
+  catalogue printing china imp=32 pos=15.8 clk=0
+  包裝食品 裡印 imp=31 pos=9.5 clk=0
+  zprint imp=30 pos=8.2 clk=0
+  利是封訂製 imp=29 pos=17.1 clk=1
+  z print imp=29 pos=8.6 clk=0
+====================================================================================================
+## D. 锚点表 (10-09 矩阵, 28d, imp 最大行)
+### en
+  [doujinshi printing] imp=44 pos=10.1 clk=0
+  [china catalog printing] imp=76 pos=15.9 clk=0
+  [large envelopes] imp=16 pos=14.1 clk=0
+  [saddle stitch booklet] imp=7 pos=16.0 clk=0
+  [small batch sticker] imp=26 pos=5.2 clk=0
+  [small batch label] 0
+  [calendar sizes] imp=13 pos=43.9 clk=0
+  [holiday cards] 0
+### ja
+  [コミケ] imp=177 pos=18.9 clk=0
+  [クラフト紙] imp=1 pos=2.0 clk=0
+  [年賀状] 0
+  [卒アル] imp=16 pos=5.0 clk=0
+  [教科書] imp=41 pos=47.1 clk=0
+  [特急激安] 0
+  [社名入りカレンダー] 0
+  [クリアポスター] 0
+  [両面カラー] imp=12 pos=43.0 clk=0
+### zh
+  [海報印刷] imp=287 pos=14.9 clk=0
+  [貼紙印刷] imp=118 pos=40.5 clk=0
+  [即日印刷] imp=56 pos=7.1 clk=1
+  [月曆印刷] imp=109 pos=23.1 clk=0
+  [年曆印刷] imp=4 pos=6.2 clk=1
+  [利是封印刷] imp=53 pos=21.1 clk=1
+  [書刊印刷] imp=97 pos=32.2 clk=0
+  [騎馬釘印刷] imp=56 pos=12.1 clk=0
+  [餐牌印刷] imp=25 pos=10.2 clk=0
+  [傳單印刷] imp=11 pos=19.0 clk=0
+  [紙袋印刷] imp=65 pos=14.4 clk=0
+  [信封印刷] imp=4 pos=10.0 clk=0
+  [包裝盒] imp=22 pos=34.3 clk=0
+  [小冊子] imp=54 pos=10.4 clk=0
+  [學校印刷] imp=41 pos=21.2 clk=0
+  [易拉架] imp=7 pos=50.4 clk=0
+====================================================================================================
+## E. 盲开词 (28d + 24h)
+  [年賀状印刷] 28d: 0 | 24h: 0
+  [2027年賀状] 28d: 0 | 24h: 0
+  [corporate holiday cards] 28d: 0 | 24h: 0
+  [business holiday cards] 28d: 0 | 24h: 0
+  [nengajo] 28d: imp=3 p=8.7 | 24h: imp=1 p=9.0
+====================================================================================================
+## F. 行数/首页 (28d 查询表, query 级)
+  行数=1000 | <=10: 503 | 11-20: 175 | 20+: 302
+====================================================================================================
+## G. 7d 网页表 (10-20..10-26): 分站点归并 + 关键页验证
+  zh-hk: imp=4615 clk=108
+  en: imp=1330 clk=20
+  ja: imp=635 clk=13
+  other: imp=4 clk=1
+  /zh-hk/ imp=323 pos=12.6 clk=11
+  /en/ imp=56 pos=11.6 clk=1
+  /ja/ imp=7 pos=6.3 clk=1
+  /zh-hk/category/posters/ imp=82 pos=39.1 clk=0
+  /zh-hk/category/stickers/ imp=42 pos=44.1 clk=1
+  /zh-hk/category/paper-bags/ imp=70 pos=50.6 clk=1
+  /zh-hk/category/calendars/ imp=66 pos=39.4 clk=1
+  /zh-hk/category/envelopes/ imp=8 pos=6.5 clk=0
+  /zh-hk/category/flyers/ imp=102 pos=23.7 clk=2
+  /zh-hk/category/educational/ imp=22 pos=19.4 clk=1
+  /zh-hk/category/wedding-invitations/ imp=13 pos=19.7 clk=1
+  /zh-hk/category/packaging/ imp=85 pos=36.7 clk=0
+  /zh-hk/category/red-packets/ imp=49 pos=19.1 clk=3
+  /ja/nengajo-2027/ imp=1 pos=10.0 clk=0
+  /ja/comiket-c109/ imp=20 pos=7.3 clk=2
+  /zh-hk/blog/poster-printing-guide/ imp=422 pos=7.7 clk=5
+  /zh-hk/blog/folded-leaflet-printing-guide/ imp=180 pos=10.4 clk=11
+  /zh-hk/blog/saddle-stitch-booklet-printing-guide/ imp=103 pos=10.0 clk=3
+====================================================================================================
+## H. 24h 查询 top 15 (10-27 22:00..10-28 21:00)
+  china catalog printing imp=13 pos=10.8 clk=0
+  宣傳單張 imp=9 pos=38.1 clk=0
+  海報印刷 imp=8 pos=11.8 clk=1
+  學校印刷 imp=6 pos=5.8 clk=0
+  印刷 imp=6 pos=21.8 clk=0
+  膠裝書 imp=6 pos=30.8 clk=0
+  貼紙印刷 imp=6 pos=42.0 clk=0
+  騎馬釘印刷 imp=5 pos=11.0 clk=0
+  印刷公司 imp=5 pos=21.6 clk=0
+  宣傳單張印刷 imp=5 pos=31.4 clk=0
+  禮物紙袋邊度買 imp=4 pos=4.2 clk=0
+  透明貼紙印刷 imp=4 pos=7.0 clk=0
+  即日印刷 imp=4 pos=9.0 clk=0
+  騎馬釘書刊 imp=4 pos=9.2 clk=0
+  書刊印刷 imp=4 pos=33.8 clk=0
+====================================================================================================
+## I. 28d 国家 top 12
+  中国香港 imp=12072 clk=360 ctr=0.0298 pos=13.3
+  美国 imp=2753 clk=31 ctr=0.0113 pos=15.6
+  日本 imp=2282 clk=41 ctr=0.0180 pos=15.9
+  台湾 imp=427 clk=10 ctr=0.0234 pos=16.5
+  英国 imp=267 clk=3 ctr=0.0112 pos=11.8
+  中国 imp=240 clk=2 ctr=0.0083 pos=8.7
+  新加坡 imp=211 clk=7 ctr=0.0332 pos=7.8
+  加拿大 imp=179 clk=8 ctr=0.0447 pos=8.3
+  澳大利亚 imp=155 clk=8 ctr=0.0516 pos=8.0
+  印度 imp=155 clk=0 ctr=0.0000 pos=12.7
+  马来西亚 imp=129 clk=0 ctr=0.0000 pos=9.7
+  巴西 imp=118 clk=1 ctr=0.0085 pos=19.2
+DONE
