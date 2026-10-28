@@ -98,7 +98,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 小批量 + 快速交貨，降低庫存風險與上市週期',
           points: [
-            '全盒型 100 個起（異形刀模 500 個起），適合初創品牌試產',
+            '最低 100 個起（紙卡類盒型）；瓦楞／搭扣／拼版卡盒等工藝款 500 個起，適合初創品牌試產',
             '3-5 天出貨（常規），2-3 天快印（緊急訂單），深圳工廠直發 | 全港順豐速遞，無需海運等待',
             '單價低至 HK$0.8 起，經濟實惠，無需大量囤貨',
           ],
@@ -140,7 +140,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: '技術參數詳解',
       items: [
         { label: '尺寸範圍', value: '完全訂製，常見如 10×10×5cm（彩盒）、30×20×15cm（瓦楞箱）' },
-        { label: '起訂量', value: '100 個起（全盒型）；異形刀模 500 個起' },
+        { label: '起訂量', value: '100 個起（紙卡類盒型）；瓦楞／搭扣／拼版卡盒 500 個起' },
         { label: '交期', value: '常規 3-5 天出貨（數碼）／5-7 天（柯式）；快印 2-3 天交付；打樣日程以報價為準' },
         { label: '檔案要求', value: 'AI / PDF（CMYK，300dpi，含刀模線），刀模設計費用條件以報價為準' },
         { label: '結構測試', value: '瓦楞箱可進行結構測試（以訂單規格為準）' },
@@ -157,7 +157,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '包裝盒選購指南',
       paragraphs: [
-        '包裝盒訂製第一句結論：先定用途（運輸防撞定開箱體驗）、再揀盒型、最後先睇工藝。全盒型 100 個起、異形刀模 500 個起，3-5 天出貨，刀模設計費用條件以報價為準。用途定得清，紙材同預算即刻收窄一半。',
+        '包裝盒訂製第一句結論：先定用途（運輸防撞定開箱體驗）、再揀盒型、最後先睇工藝。最低 100 個起（紙卡類），瓦楞／搭扣／拼版卡盒 500 個起，3-5 天出貨，刀模設計費用條件以報價為準。用途定得清，紙材同預算即刻收窄一半。',
         '盒型按行業揀：電商物流用瓦楞飛機盒（E/F 坑，抗壓耐摔）；美妝護膚用白卡彩盒或磁吸禮盒，開箱有儀式感；婚禮喜糖用天地蓋細盒 100 個起；茶飲食品用摺盒加窗口，睇到內容物先好賣。20 幾款標準盒型之外仲可以全客製。',
         '紙盒訂製嘅紙材決定檔次：300–350g 白卡挺括顯色靚，係彩盒主流；牛皮紙環保自然，有機品牌最愛；瓦楞紙按坑紋分 E 坑（薄身彩箱）同 F 坑（細盒緩衝）；出口訂單可提供材料說明（以訂單確認）。',
         '食品包裝訂製有硬規矩：必須用食品級紙材同環保油墨選項（落單時註明），（合規檢測以訂單確認）；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以按訂單提供合規文件支援，慳返自己搵檢測嘅時間。',
@@ -181,11 +181,11 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: '包裝盒印刷價錢點計？', a: '包裝盒 100 個起印；價錢按盒型、尺寸、紙材與工藝計，8 檔標準尺寸免刀模費，拼版方案可再壓低單價。可參考摺疊盒 HK$2.5-15/個、精裝盒 HK$8-42/個 的價格帶，再用 30 秒 AI 即時報價取實價。' },
       { q: '包裝盒可以做內側印刷（裡印）嗎？', a: '可以。內側印刷可加深開箱品牌體驗；如需食品接觸面裡印，可安排食品級油墨並以 PE 淋膜保護印刷面，落單時註明即可，兩種方案可在免費打稿時一併確認。' },
       { q: '包裝盒訂製嘅刀模費幾錢？', a: '常規盒型（白卡彩盒／坑盒／卡盒）刀模費條件以報價為準。我哋嘅拼版免刀模費方案固定刀模共用，500 個起印即享免刀模費 + 免排版費。包裝盒訂製客戶可揀拼版彩盒壓低成本。' },
-      { q: '包裝盒印刷起印量最低幾多？', a: '全盒型 100 個起（婚禮喜糖盒、彩盒、常規工業款同一門檻）。拼版白卡彩盒 500 個起即享免刀模費。遠低於傳統工廠的 500–1,000 個標準。' },
+      { q: '包裝盒印刷起印量最低幾多？', a: '最低 100 個起（婚禮喜糖盒、彩盒、常規紙卡款同一門檻）；瓦楞、搭扣、拼版卡盒等工藝款 500 個起。紙卡類遠低於傳統工廠 1,000 個起的常態。' },
       { q: '紙盒訂製材質點揀：白卡 vs 坑紙 vs 銅版紙？', a: '白卡 300-350g 挺度極佳、色彩鮮豔，係彩盒主流（美妝、輕奢飾品、文創IP周邊首選）；坑盒（瓦楞）跨境電商 + 重物首選；銅版紙 250-300g 成本低、輕量商品適用。三種都支援環保紙材選項。' },
       { q: '包裝盒印刷交期幾耐？', a: '常規訂單 3-5 天出貨（數碼）／5-7 天（柯式）；快印服務 2-3 天交付；打樣日程以報價為準。紙盒印刷大批量訂單交期以報價為準。跨境客戶 DHL 全球 2-4 天送達，旺季（中秋/聖誕/農曆新年）請提早 3 星期落單。' },
       { q: '包裝盒訂製可以打樣嗎？要幾耐？', a: '可以。我哋提供數碼打樣，包括實物樣本（日程以報價為準）。確認結構同顏色先開印，印前團隊逐個檔案檢查出血、刀線同色彩模式，將出錯風險壓到最低。' },
-      { q: '包裝盒最低多少個起訂？', a: '全盒型 100 個起（婚禮喜糖、彩盒、常規工業款一致）；異形刀模 500 個起。遠低於傳統工廠的 500–1,000 個標準。' },
+      { q: '包裝盒最低多少個起訂？', a: '最低 100 個起（紙卡類盒型）；瓦楞／搭扣／拼版卡盒等工藝款 500 個起。紙卡類遠低於傳統工廠的 500–1,000 個標準。' },
       { q: '包裝盒有哪些盒型可選？', a: '天地蓋盒、書型盒、抽屜盒、折疊盒、飛機盒、磁吸盒等 20 餘種標準盒型，亦支持完全訂製設計。' },
       { q: '可以用環保紙張嗎？', a: '可以。所有盒型均可選環保紙張（視供應與訂單確認）。' },
       { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和環保油墨選項（落單時註明），合規要求以訂單確認。' },
@@ -214,7 +214,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. Low MOQ + Fast Turnaround, Reducing Inventory Risk',
           points: [
-            'Minimum order from 100 units across all box styles, with custom sizes and shaped die-cuts from 500 — low enough for startup brands to test the market.',
+            'Minimum order from 100 units on card-based styles; corrugated, tuck-end and gang-run styles from 500 units — low enough for startup brands to test the market.',
             '3-day standard delivery, 2-day rush service for urgent orders. Direct from our Asia factory with DHL Express worldwide delivery — no sea freight waiting.',
             'Unit price from US$0.10, economical without requiring bulk stockpiling.',
           ],
@@ -256,7 +256,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: 'Technical Specifications',
       items: [
         { label: 'Size Range', value: 'Fully customizable. Common sizes: 10×10×5cm (color box), 30×20×15cm (corrugated).' },
-        { label: 'Minimum Order', value: '100 units for all box styles; custom sizes and shaped die-cuts from 500 units.' },
+        { label: 'Minimum Order', value: '100 units for card-based styles; corrugated, tuck-end and gang-run styles from 500 units.' },
         { label: 'Turnaround', value: 'Standard: 3-5 days (digital) / 5-7 days (offset). Rush: 2-3 days. Prototyping: same day.' },
         { label: 'File Requirements', value: 'AI / PDF (CMYK, 300dpi, with die-cut lines). Free die-cut design provided.' },
         { label: 'Structural Testing', value: 'Structure-test documentation is available per order specifications.' },
@@ -273,7 +273,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Packaging Buying Guide',
       paragraphs: [
-        'Custom packaging boxes start with one decision: is this box for shipping protection or unboxing experience? That answer picks the style, and everything else follows. All box styles start at 100 units, with free dieline design and 3-5 day production.',
+        'Custom packaging boxes start with one decision: is this box for shipping protection or unboxing experience? That answer picks the style, and everything else follows. Card-based styles start at 100 units and corrugated, tuck-end and gang-run styles from 500, with free dieline design and 3-5 day production.',
         'Match box style to product. Corrugated mailer boxes (E/F flute) survive e-commerce shipping; white card folding cartons and magnetic rigid boxes give beauty brands a premium unboxing moment; two-piece favor boxes start at 100 units for weddings; window boxes let food products sell themselves on the shelf. Over 20 standard styles, plus fully custom structures.',
         'Paper stock sets the grade: 300–350gsm white card is the crisp, color-accurate standard for retail boxes; kraft reads eco and organic; E-flute corrugated handles thin retail cartons while F-flute cushions smaller boxes. Exporting to the US or EU? Certified paper options are available per order.',
         'Food packaging has hard rules. Food-grade paper and eco-friendly ink options are available; bakeries, tea, and supplement brands should add moisture-resistant coatings, and QR codes enable batch traceability. Compliance documentation support is confirmed per order.',
@@ -292,7 +292,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: 'How much does packaging box printing cost?', a: 'Packaging boxes start from 100 pcs. Price depends on box style, size, material and finishing; standard sizes share fixed dies (no die fee), and gang-run layouts reduce unit cost. Reference bands: folding boxes HK$2.5-15/pc, rigid boxes HK$8-42/pc. Get an instant quote in 30 seconds.' },
       { q: 'Can you print on the inside of the box (reverse printing)?', a: 'Yes. Inside printing adds brand colour, messages or serials. For direct food contact we use food-grade ink with a PE lining over the printed surface; outer printing plus an inner PE lining also meets indirect-contact requirements. Mention it on your order and both options are confirmed in the same free proof.' },
-      { q: 'What is the minimum order for packaging boxes?', a: 'From 100 units across all box styles — wedding favor, color and industrial alike; custom sizes and shaped die-cuts from 500 units. Far below traditional factory minimums of 500–1,000.' },
+      { q: 'What is the minimum order for packaging boxes?', a: 'From 100 units on card-based styles — wedding favor, color and industrial alike; corrugated, tuck-end and gang-run styles from 500 units. Card-based styles sit far below traditional factory minimums of 500–1,000.' },
       { q: 'What box styles are available?', a: 'Over 20 standard styles including rigid boxes, book-style boxes, drawer boxes, folding cartons, mailer boxes, and magnetic boxes. Fully custom designs also supported.' },
       { q: 'Can I use eco-friendly paper?', a: 'Yes. All box types are available with eco paper options (FSC-certified paper available per order).' },
       { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and eco-friendly ink options (specify at order); compliance requirements are confirmed per order.' },
@@ -321,7 +321,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '2. 小ロット対応＋迅速納品、在庫リスクを削減',
           points: [
-            '全箱型100個から — スタートアップブランドの試作に最適。',
+            '紙カード系の箱は100個から、段ボール・タック端・白カード箱などは500個から — スタートアップブランドの試作に最適。',
             '標準納期3-5日（見積りで確認）。アジアの工場から直送（深圳拠点）｜日本全国SFエクスプレス配送。',
             '単価HK$0.8～、大量在庫不要で経済的。',
           ],
@@ -363,7 +363,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       title: '技術仕様',
       items: [
         { label: 'サイズ範囲', value: '完全カスタマイズ。一般的なサイズ：10×10×5cm（カラーボックス）、30×20×15cm（段ボール）。' },
-        { label: '最小発注数', value: '100個から（全箱型共通、カスタム型抜きは500個から）。' },
+        { label: '最小発注数', value: '100個から（紙カード系箱型）；段ボール・タック端・白カード箱などは500個から。' },
         { label: '納期', value: '標準納期3-5日。サンプル日程は見積りでご確認ください。' },
         { label: 'ファイル要件', value: 'AI／PDF（CMYK、300dpi、型抜き線含む）。無料型設計サービスあり。' },
         { label: '構造テスト', value: '段ボール箱の構造テストはご注文時にご確認ください。' },
@@ -380,7 +380,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'パッケージ選び方ガイド',
       paragraphs: [
-        'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。全箱型100個からの小ロット対応。抜き型設計と納期の條件は見積りでご確認ください。',
+        'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。紙カード系箱型は100個からの小ロット対応（段ボール・タック端等は500個から）。抜き型設計と納期の條件は見積りでご確認ください。',
         '箱型は商品に合わせて。段ボールのメーラーボックス（E/Fフルート）はEC発送に強く、白カードの組み箱やマグネット式化粧箱はコスメブランドの開封体験を演出。キャラメル型や窓付き箱は食品の店頭訴求に。20種以上の定型＋完全カスタムに対応します。詳しくは[食品包装印刷ガイド](/ja/blog/food-packaging-printing-guide/)、[クラフト紙箱と段ボールの比較](/ja/blog/kraft-paper-box-types-comparison-2026/)、[2026 年パッケージ価格](/ja/blog/packaging-box-pricing-2026/)をご覧ください。',
         '用紙は300–350g白カードが発色・強度の標準。クラフト紙はエコ・オーガニックな印象、Eフルートは薄手の化粧箱、Fフルートは小箱の緩衝に。輸出の際は材料説明書を提供できます（ご注文時に確認）。',
         '食品パッケージには厳格なルールがあります。食品グレード紙と環境配慮インク（ご注文時に指定）も選択できます。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類はご注文時にご確認ください。',
@@ -401,7 +401,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: '箱の内側（裏印刷）はできますか？', a: 'できます。内側印刷でブランドカラーやメッセージ、シリアルを入れられます。食品に直接触れる面は食品グレードのインキ＋PE ラミネートで保護し、外側印刷＋内側 PE ラミネートでも間接接触用途に対応できます（ご注文時に確認）。ご注文時に「内側印刷あり」とご指定ください。無料校正で両案を確認できます。' },
       { q: 'パッケージ印刷の料金はいくらから？', a: '《料金表・最低ロット×単価》折りたたみ箱100個¥69〜／発送箱100個¥105〜／食品箱100個¥101〜／化粧品ボックス100個¥240〜（500個+15%OFF・1,000個+30%OFF）／貼り箱100個¥240〜／マグネット蓋ギフトボックス100個¥450〜／電子機器箱200個¥240〜／クラフト紙箱300個¥150〜。箱型・数量・紙材を30秒AI見積もりで入力すれば、配送・税込みの正確な金額を即座に確認できます。' },
-      { q: 'パッケージの最小発注数は？', a: '全箱型100個から（カスタム型抜きは500個から）。従来の工場基準500–1,000個を大きく下回ります。' },
+      { q: 'パッケージの最小発注数は？', a: '紙カード系箱型は100個から。段ボール・タック端・白カード箱などは500個から。従来の工場基準500–1,000個に対し、紙カード系は大きく下回ります。' },
       { q: '対応している箱型は？', a: '化粧箱、ブック型箱、引き出し箱、組み立て箱、ダンボール箱、磁石式箱など20種類以上の標準箱型。完全カスタムデザインも対応。' },
       { q: 'エコ紙は使えますか？', a: 'はい。全箱型でFSC認証エコ紙を選択可能です。' },
       { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と環境配慮インク（ご注文時に指定）を使用しています。合規要件はご注文時にご確認ください。' },

@@ -111,3 +111,17 @@ tsc 54 / **title-v5 HARD 0**（本日 7→0 完整链条：small-batch→poster�
 **不变量**：SGS 计数不变 · tsc 54=54 · 包块 `100-500 pcs` 数量带完好（断言负向后顾 `(?<![\d,-])500 pcs` 防带内子串误报——本周期第 3 次 substring 测量陷阱）。
 
 **补充观察（15:4x）**：贴纸族 9 SKU 的 basePrice_ja/basePrice 比率离散 20.0–186.4（如 0.20→4 与 0.22→41 并存、0.45→46 即 L326「不对应」出处）——ja 价格字段族无统一换算或定价口径，逐 SKU 逻辑不明。建议并入 K3-4 清单：K3 对「ja 价 = 业务定价（需口径说明）还是历史噪音（需重核）」给一句裁决，裁决前全部不转不改。
+
+---
+
+## 八、补遗 3（17:3x）：批 #9 — 包装类目 MOQ 分层重述（10-24 过度统一化修正）+ 新登记 K3 项
+
+**全 SKU 权威普查**（模块直读 83 SKU，`.hermes/_allsku_truth.tsv`；PDP fetch 普查被 CF 限速污染 63/99 无效，弃用）：包装族 = **12 SKU×100** + electronics **200** + kraft-packaging **300** + **4 SKU×500**（gang-run-card / white-card-boxes / corrugated / tuck-end）。
+
+**批 #9 改动（13 处，category-seo-content.ts）**：类目页「全盒型 100 / all box styles / 全箱型共通」统一声明 ×11 → 分层真值「最低 100 個起（紙卡類）；瓦楞／搭扣／拼版卡盒等工藝款 500 個起」三语；「遠低於 500–1,000 標準」比较句 ×2 加「紙卡類」限定（4 SKU 已在 500 档）。「From 100」下限声明类保留（语义为真）。tsc 54=54。
+
+**新登记 K3（价格/交期域，不猜值未动）**：
+1. **white-card-boxes 内部矛盾**：basePrice=129 vs price_range=HK$0.50-3.00/個（同 SKU 两个真值源互斥）→ 价格 SSoT 队列
+2. **corrugated/tuck-end en/ja body HK$1,517-7,278 / HK$1,538-7,478**：basePrice_en/ja 缺失 → feed 已按 fallback 汇率出 USD/JPY 价（$194.18/¥29,582），与 body HK$ 并存 = 价格不匹配拒批风险 → K3-4 给 en/ja 真值或授权换算
+3. **corrugated 三语交期矛盾**：en「8-15 days」vs ja「5〜7営業日・即日可」vs zh 无声明 → K3 交期真值（D15H1 待办 6 同项）
+4. ja 料金表促销阶梯（500個+15%OFF・1,000個+30%OFF）维持冻结（前案 docket 不变）
