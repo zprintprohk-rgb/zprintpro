@@ -51,7 +51,7 @@ export const CAT_KW_MAP_ZH_HK: Record<string, [string, string]> = {
 export const SHARP_HOOKS_MAP_ZH_HK: Record<string, string> = {
   stickers:     '10張起印',
   flyers:       '即日交貨',
-  packaging:    '免費打樣',
+  packaging:    'AI即時報價',
   posters:      '防水材質',
   'paper-bags': '環保材質',
   banners:      '含安裝',
@@ -159,7 +159,7 @@ export const SKU_SELLING_POINT_ZH_HK: Record<string, string> = {
 export const SHARP_HOOKS_MAP_EN: Record<string, string> = {
   stickers:     'Free Design',
   flyers:       'Same-Day Print',
-  packaging:    'Free Mockup',
+  packaging:    'Instant AI Quote',
   posters:      'No Setup Fee',
   'paper-bags': 'Eco-Friendly',
   banners:      'Free Shipping',
@@ -200,7 +200,7 @@ export const DEFAULT_HOOK_EN: Record<string, string> = {
 export const SHARP_HOOKS_MAP_JA: Record<string, string> = {
   stickers:     '無料デザイン',
   flyers:       '即日印刷',
-  packaging:    '無料サンプル',
+  packaging:    'AI見積もり30秒',
   posters:      '防水素材',
   'paper-bags': '環境配慮',
   banners:      '送料無料',
