@@ -42,7 +42,8 @@
 
 - **08:04 push 违规**：上次 07:36 → 08:04 = **28min < 30min 硬下限**。gate BLOCKED（cf-check-run 口径 23m）但链式命令仍执行 push——**教训：gate BLOCKED 立即停，绝不链式强推**。不回撤（force-push 更违规）。
 - **08:39 push 合规**：08:04 → 08:39 = **35min ≥ 30min**（gate cf-check-run 31m 过）。
-- 下次 push ≥ 09:09（f77abb2f + D6-D7 内容）。
+- **09:13 push 合规**：08:39 → 09:13 = **34min ≥ 30min**（gate cf-check-run 31m 过；gate 保守口径滞后 push 动作 ~3min，两次 BLOCKED 均遵守等待）。
+- **教训固化**：gate BLOCKED 立即停，绝不链式强推；**`git add -A` 禁止**——.hermes/ 有 1776 个历史积压文件，误加触发门童硬拦（5d655016 首 commit 被拦），一律精确路径 add。
 
 ## 五、验收（草案 §验收 5 条）
 
@@ -52,14 +53,20 @@
 4. ✅ 门禁全量：title-v5 HARD=7（存量）/ brand 0 / gsc 0 / encoding ✓ / tsc 54=54
 5. ✅ 线上复核：kraft 三语 title/H1/首段 + category 比较段渲染（探针 9 URL）
 
-## 六、下一步（D6-D7 zh，P1-ZH-01）
+## 六、D6-D7 zh（P1-ZH-01）→ **已完成（2026-10-28）**
 
-- kraft 对比文（kraft-paper-box-types-comparison-2026 zh-hk）：**kraft PDP 锚=0**（kraft 内容无采购入口）+ blog 内「牛皮紙卡紙（250-400g）」与 kraft PDP 300-350g **真值冲突** → 补锚 + 统一
-- tea-beverage-gift-box-printing-guide：category/packaging 链=0 → 补链
-- food blog 内链审计（food-packaging-printing-guide foodPDP:3 cat:2 ✓ 已达标；baby-food foodPDP:2 cat:1 ✓）
-- 基线：`包裝盒印刷` category 66.7% / `食品包裝訂製` food PDP 53.4%（GSC 11-23 复核）
+- ✅ kraft 对比文（kraft-paper-box-types-comparison-2026 zh-hk）：kraft PDP 锚补入（0→6 处）+ gsm 250-400→300-350 统一（与 kraft PDP 真值一致）
+- ✅ tea-beverage-gift-box-printing-guide：category/packaging 链补入（0→7 处）
+- ✅ food blog 内链审计（food-packaging-printing-guide foodPDP:3 cat:2 ✓ / baby-food foodPDP:2 cat:1 ✓ 已达标）
+- ✅ zh category 选型入口（8 盒型表/食品专节/FAQ/links 批 1 已达标）+ zh food PDP 采购答案（BLUF+直答块+PE/PLA 条件化 已达标）
+- ⏳ GSC 基线：`包裝盒印刷` category 66.7% / `食品包裝訂製` food PDP 53.4%（11-23 复核）
 
-## 七、移交登记（非批 3 范围）
+## 七、组件级 P0 清毒（5d655016，线上探针揪出）
+
+- 通用 PDP/分类/首页组件信任徽章：ProductPageV9 trustProof / ProductWhyChooseUs / TrustBadgeBlock / CategoryPageV9 bannerCaps / MobileValueStrip 的 `免費打樣/Free Sample/無料サンプル`（免费实物样断言）→ `免費數碼打樣/數碼打樣/Digital Proof/デジタル校正/AI即時報價/AI見積もり30秒`（1 小时免费数碼打样真实口径保留；en Free proof 保留）
+- **移交**（未清）：services/business-card/about/contact/nengajo/WeddingBundle/FreeSampleBanner（服务承诺页/名片 SEO 层未拍板/请柬七簇）→ 七簇清毒批
+
+## 八、移交登记（非批 3 范围）
 
 - 七簇域（贺卡/名片/摺頁/水果标签/贴纸/纸袋/传单/海报/利是封/月历/菜单/学校/请柬）description 免費打樣/48 小時快遞/FDA/SGS/FSC 認證取得 → 七簇清毒批
 - products-content 七簇块编造数字（5,000 社/30% UP 等）→ D15-19 资产审计
