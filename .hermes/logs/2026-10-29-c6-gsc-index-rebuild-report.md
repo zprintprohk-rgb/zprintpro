@@ -72,6 +72,15 @@
 2. **KPI 面板刷新受限**：`k3-kpi-panel.mjs --pull=2026-10-29` 需要 `gsc-deep-analysis-2026-10-29.json` + query×page×country CSV（10/29 批仅导出了 4 个汇总 xlsx，无 query 级产物）→ 面板 §3 join 待 11-03 验证点前 K3 导出 query×page×country 双档。校准报告 §2 已覆盖四指标（clk 497/imp 20,977/CTR 2.37%/pos 13.52）。
 3. **GSC 校准报告落位确认**：`docs/2026-10-29-gsc-calibration-report.md` 已在 docs\（commit 9ff9a55e），格式对齐 9/10 先例（§1 口径/§2 指标/§3 带钱词/§4 锚点/§5 盲开/§6 结论 + 数据来源行）✓
 
+## 六、push 与线上验收
+
+- commit `f98c8d89`（2026-10-29 03:50:58）+38 min 自 519604ff 03:14:06 → §0.25.1 30min 硬下限满足
+- push `519604ff..f98c8d89 main -> main`（03:56，cf-check-run 30m 窗口实测通过）→ 远端 head = 本地 head ✓
+- CF Pages check-run 已为 f98c8d89 生成（gate 下一轮自动识别 "last push f98c8d89"）
+- 线上 smoke：`/zh-hk/ /ja/ /en/` 全 200（`/` 308→`/zh-hk/` 为预期 x-default 跳转）✓
+- 门禁复盘：encoding 4 文件 UTF-8 LF ✓ · tsc 54=54 ✓ · brand A=0 ✓ · regression 🔴0 ✓ · gate#9 对本报告 exit 0（无 STALE）✓
+- 攒批判定：4 文件（2 scripts + 1 GSC数据 + 1 报告）≥3 非 docs → 满足 §0.25.9 阈值
+
 ## 数据来源
 
 ```
