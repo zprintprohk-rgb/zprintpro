@@ -37,3 +37,13 @@
 - 11-01 12:13 monthly-matrix · 11-01 23:47 blog-deepfix（同上）
 - 11-03 GEO-AI-PROBE-S1（kit 就绪 `docs/2026-10-27-geo-ai-face-probe-kit-nov2026.md`，实测前不声称基线）
 - **11-23 28 天同口径复测**（SOP 字节同验，裁决 SCALE/HOLD/FIX/STOP）
+
+---
+
+## 补正（01:2x · 主会话复核）
+
+**ONE-action #1 已完成，跳过**：dsh 凭据昨晚已恢复并四方验证（10-28 19:47 gsc-feedback schtasks 触发 `dsh_exit=0` verdict=OK + 20:18 幂等 OK + 21:17 daily-content dsh_exit=0（内容产出被 STALE 隔离后已由 58d044a4 收编为合法清毒）+ 10-29 01:21 harness 复核 OK）。**无需再跑 repair 脚本**——除非今晚 lane 再现 MISSING_CREDENTIAL。
+
+**剩余 K3 动作 = 2 个**：#2 GSC 28d 新档导出（最紧，数据 17 天龄）· #3 009 SQL apply（昨晚深圳网络不通 api.supabase.com，本机实测项目域名 fetch failed；解法 = 代理规则补 supabase.com/supabase.co 或全局模式或手机热点，SQL v2 文本见上轮会话回复/`supabase/migrations/009`）。
+
+**今天排期提醒**：20:13 lane 消费新档（若 #2 完成）→ KPI 面板刷新；21:17 lane 恢复队列消费；reviews 组件在 #3 完成后自动显现。
