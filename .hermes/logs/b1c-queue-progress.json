@@ -1,7 +1,7 @@
 {
   "schema": "b1c-queue-progress/v1",
-  "updated_at": "2026-10-27T18:37:00+08:00",
-  "updated_by": "ZP-daily-content-20261027T181700-harness",
+  "updated_at": "2026-10-29T02:05:00+08:00",
+  "updated_by": "ZP-daily-content-20261029T015700-harness",
   "clusters": [
     {
       "order": 1,
@@ -846,6 +846,55 @@
       "ssot": "src/data/sku-seo-data.ts (commit 9efc9da3)",
       "verdict": "OK",
       "note": "双方法 (39,64,10,28)->(23,6,6,0); 8 stickers 段 0 残留; SGS 全文件 28 清零; boxes cosmetic/food 非body FDA 10处收尾; 10-26 计数更正 (fruit-food 漏计 cert2/fda15/scn1/sgs7)"
+    },
+    {
+      "order": 29,
+      "cluster": "b1c 簇 28c flyers 族 6 SKU 清毒 (cert / FDA / 错场景模板句)",
+      "slugs": [
+        "a4-flyers",
+        "a5-flyers",
+        "double-sided-flyers",
+        "thick-paper-flyers",
+        "same-day-flyers",
+        "eco-flyers"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content (2026-10-28 lane run, RETRY_OF ZP-daily-content-20261028T181700-harness)",
+      "claimed_at": "2026-10-28T21:17:00+08:00",
+      "completed_at": "2026-10-28 (lane run; 墙钟未单独核验)",
+      "ssot": "src/data/sku-seo-data.ts (body-only 域; desc/h1/alt/kw 未动)",
+      "verdict": {
+        "why": "order 28 note 明示下一棒 = flyers 族 fda 6/cert 13/scn 6; 10-28 BLOCKED 报告的 NEXT 同样指定 order 28c。纯删除不可核验合规声明 + 改写错场景模板句, 不新增数字/价格/范围",
+        "counts_dual": "方法A 全文件短语计数 vs 方法B 逐 slug 上下文分解, 修前一致 (23 cert / 6 fda / 6 scn); 修后 (11 / 0 / 0)",
+        "removed": "zh body 6 x『国際認証体系工廠，』; ja body 6 x『国際認証体系の工場、』; en body 6 x『internationally certified production with full FDA compliance where applicable.』(整句删除)",
+        "rewritten": "zh 6 条模板句『小店餐廳的推廣單張、活動入口的指示牌、跨境零售品牌的精品包裝』-> 各 SKU 专属场景 (餐牌/活動派發/門市新品; 優惠單張/夾報郵寄/外賣加購; 雙面菜單價目/流程地圖/品牌對比; 長期餐牌卡/邀請式單張/厚卡; 展會急件/臨時活動/門市加急; 環保主題/FSC 紙張/換季物料)",
+        "residual": "flyers ja same-day description 仍含『国際認証体系品質。』x1 — desc 属 CSV 覆盖域, 车道无 node 不能 regen, 按 SOP-5 不直改 (登记 → 需 node 会话: 改 zprintpro-sku-seo-data.csv 后跑 scripts/csv-to-sku-seo.mjs)",
+        "residual_site": "全站 cert 余 10 = 利是封 3 + catalog ja 1 + 贺卡 ja 4 + 婚礼 ja 2 -> 下一棒 order 30",
+        "similarity": "未复算 8-gram Jaccard (车道无 node, 不虚报); 结构性事实 = 仅删除声明句 + 6 条 zh 模板句按 SKU 差异化改写, 段落结构不变"
+      },
+      "note": "车道读到本记录: 簇 28c flyers DONE; 下一棒 = order 30 全站 cert 余 10 (利是封/catalog/贺卡/婚礼) + flyers ja desc CSV 格 (需 node regen)"
+    },
+    {
+      "order": 30,
+      "cluster": "cert 残余族 9 SKU 同类清毒 (28d: red-packets/catalog/cards×4/wedding×2/same-day-flyers — 全文件 国際認証体系 归零, 保 FSC/大豆油墨/品質管理 generic)",
+      "slugs": [
+        "same-day-flyers",
+        "custom-red-packets",
+        "catalog-printing",
+        "premium-greeting-cards",
+        "spot-uv-greeting-cards",
+        "matte-greeting-cards",
+        "rounded-corner-greeting-cards",
+        "foil-wedding-invitations",
+        "wedding-thank-you-cards"
+      ],
+      "status": "DONE",
+      "claimed_by": "ZP-daily-content-20261029T015700-harness (K3 立即执行, 10-28 BLOCKED 续跑)",
+      "claimed_at": "2026-10-29T01:57:00+08:00",
+      "completed_at": "2026-10-29T02:05:00+08:00",
+      "ssot": "src/data/sku-seo-data.ts (commit b50ff77c)",
+      "verdict": "OK",
+      "note": "双方法 11->0 (M1 whole-file = M2 per-slug 84 slugs); 三棒合力后 国際認証体系/FDA/SGS/scn 全文件清零; order 29 (flyers, 58d044a4) 已核验登记"
     }
   ]
 }
