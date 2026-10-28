@@ -513,7 +513,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "ZprintPro Small Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, internationally certified. Same-day file confirmation by 11am HKT."
       },
       "ja": {
-        "title": "小判紙袋｜100個〜 即日発送｜白カード 多サイズ｜ZprintPro",
+        "title": "小判紙袋｜100個〜 白カード 多サイズ｜ZprintPro",
         "description": "小判紙袋は ZprintPro の紙袋印刷。白カード/クラフト/コート紙、マルチサイズ対応。100個〜、4色 CMYK、1 時間無料デザイン校正。DHL で日本へ 2-4 日配送、30 秒 AI 見積もり。",
         "h1": "小判紙袋 | アクセサリー 小物包装",
         "keywords": ["小型紙袋","小型紙袋 印刷","small bags"],
@@ -596,7 +596,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "A4傳單印刷 / 雙面四色 | 香港A4傳單印刷印刷 157g銅版紙或128g啞粉紙 | 智印港",
       "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro",
-      "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
+      "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜  | ZprintPro"
     }
   },
   "a5-flyers": {
@@ -632,7 +632,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "A5傳單印刷 / 雙面四色 | 香港A5傳單印刷印刷 128g銅版紙或100g書紙 | 智印港",
       "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro",
-      "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
+      "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜  | ZprintPro"
     }
   },
   "double-sided-flyers": {
@@ -668,7 +668,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "雙面傳單印刷 / 雙面四色 | 香港雙面傳單印刷印刷 157g銅版紙或128g啞粉紙 | 智印港",
       "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro",
-      "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
+      "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜  | ZprintPro"
     }
   },
   "folded-leaflets": {
@@ -740,7 +740,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "厚紙傳單印刷 / 雙面四色 | 香港厚紙傳單印刷印刷 200g或250g銅版紙 | 智印港",
       "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro",
-      "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro"
+      "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜  | ZprintPro"
     }
   },
   "same-day-flyers": {
@@ -848,7 +848,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | 智印港",
       "en": "A2 Poster Printing / Standard Retail Size | A2 Posters 420x594mm 157g Coated, 10 MOQ | ZprintPro",
-      "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 翌日配送 | ZprintPro"
+      "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 DHL配送 | ZprintPro"
     }
   },
   "a1-posters": {
@@ -873,7 +873,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "A1 posters are the impact choice for exhibitions and windows: at 594x841mm the format carries its own presence in venue traffic and storefront glass. ZprintPro A1 posters run from a single piece on 157-200g coated or photo stock, offset as standard with digital handling rush jobs, and PP lamination or foam-board mounting is available. Free digital proof before production; the 30-second AI quote prices options instantly.\n\nLarge-format decisions: exhibition back panels and roadshow boards take 200g with PP lamination for repeated handling; storefront and movie-poster walls usually pair 157g with mounting for flatness; wedding welcomes and school admissions show fine detail on photo paper. Foam-board mounting stands or hangs without a frame.\n\nScene playbook: exhibitions lead with A1 visuals and hand out A2; concerts and events build momentum with A1 arrays; property campaigns run development hero shots in windows; art reproduction keeps its gradation on photo paper. Window or short-run promo belongs on [adhesive posters](/en/product/adhesive-posters/); stand-mounted shows live at [display posters](/en/product/display-posters/); volume sizes drop back to [A2 posters](/en/product/a2-posters/); the map is at [poster printing](/en/category/posters/).\n\nSpecs: 300 DPI, CMYK, 3mm bleed, outlined fonts; free digital proof; single-piece MOQ; free SF shipping across Hong Kong.\n\n**FAQ**\n\n**Q1: Is it really 1-piece MOQ?**\nYes — single posters welcome; volume tiers apply naturally.\n\n**Q2: Can I get it mounted?**\nYes — PP lamination and foam-board mounting are standard add-ons; mounted boards stand or hang frameless.\n\n**Q3: Rush jobs?**\nYes — offset is standard and digital handles rush; a free digital proof confirms colour before production.\n\n**Q4: A1 or A2 — how to split?**\nA1 on impact points and traffic nodes, A2 for distribution and corridors; same artwork in two sizes saves design cost.\n\nReady when you are — free digital proof and the 30-second AI quote, or WhatsApp +86 198 8085 1334."
       },
       "ja": {
-        "title": "A1 ポスター | 防水 翌日配送 | 1枚〜 ¥600〜 | ZprintPro",
+        "title": "A1 ポスター | 防水 DHL配送 | 1枚〜 ¥600〜 | ZprintPro",
         "description": "A1ポスター印刷は594×841mmの大判サイズ、1枚から。157-200gコート紙または写真用紙、オフセット標準・納期急ぎはデジタル対応、PPラミネート・発泡ボード装着も選択可。展示会、店頭ウィンドウ、コンサート、不動産キャンペーンに最適。無料デジタル校正、30秒AI見積り。",
         "h1": "A1ポスター印刷 1枚〜：594×841mm 大判展示・157-200g",
         "keywords": ["A1ポスター","A1ポスター 印刷","ポスター印刷","大判ポスター","展示会ポスター","大型ポスター","A2ポスター","防水ポスター"],
@@ -992,7 +992,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | 智印港",
       "en": "Art Posters wall art for home decor, gallery walls — ZprintPro",
-      "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro"
+      "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 DHL配送 | ZprintPro"
     }
   },
   "adhesive-posters": {
@@ -1017,7 +1017,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "Adhesive posters made for small, fast runs: single-piece MOQ on digital output, with air-egress adhesive channels that let bubbles escape as you apply - one person can hang a poster flat without a squeegee crew. Cast vinyl faces take 6-12 months outdoors and even longer on indoor windows; contour die-cutting follows your vector outline for window, wall and vehicle shapes. Digital short runs are ready in as fast as the same day, so rush campaigns skip the offset queue entirely. Free digital proof before output, optional material samples for glass, painted walls or vehicle panels, DHL global 2-4 days, 30-second AI quote."
       },
       "ja": {
-        "title": "粘着ポスター | 防水 翌日配送 | 1枚〜 ¥390〜 | ZprintPro",
+        "title": "粘着ポスター | 防水 DHL配送 | 1枚〜 ¥390〜 | ZprintPro",
         "description": "粘着ポスター印刷は導気槽付き自粘の短納期出力、1枚から。キャストビニール／粘着PPで屋外耐候6-12ヶ月、異形カットでウィンドウ・壁面・車体に対応、最短当日受取。無料デジタル校正つき、30秒AI見積り。",
         "h1": "粘着ポスター 1枚〜：導気槽粘着・屋外6-12ヶ月",
         "keywords": ["粘着ポスター","粘着ポスター 印刷","adhesive posters","ポスター印刷","A1ポスター","A2ポスター","屋外ポスター","展示会ポスター","大判出力","防水ポスター"],
@@ -1028,7 +1028,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | 智印港",
       "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro",
-      "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro"
+      "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 DHL配送 | ZprintPro"
     }
   },
   "cosmetic-boxes": {
@@ -1676,7 +1676,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | 智印港",
       "en": "Custom pvc menus with laminated durable, premium materials — ZprintPro",
-      "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート 翌日配送 | ZprintPro"
+      "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート DHL配送 | ZprintPro"
     }
   },
   "laminated-menus": {
@@ -1712,7 +1712,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | 智印港",
       "en": "Custom laminated menus with laminated durable, premium materials — ZprintPro",
-      "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 翌日配送 | ZprintPro"
+      "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 DHL配送 | ZprintPro"
     }
   },
   "hardcover-menus": {
@@ -1820,7 +1820,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | 智印港",
       "en": "Custom outdoor vinyl banners with wind-resistant, premium materials — ZprintPro",
-      "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 翌日配送 | ZprintPro"
+      "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 DHL配送 | ZprintPro"
     }
   },
   "roll-up-banners": {
@@ -2000,7 +2000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | 智印港",
       "en": "Saddle stitch booklets A4/A5 from 10 copies | ZprintPro",
-      "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ・10冊〜 即日発送 | ZprintPro"
+      "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ・10冊〜  | ZprintPro"
     }
   },
   "perfect-bound-books": {
@@ -2144,7 +2144,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | 智印港",
       "en": "Custom business envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ 即日発送 | ZprintPro"
+      "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ  | ZprintPro"
     }
   },
   "colored-envelopes": {
@@ -2252,7 +2252,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | 智印港",
       "en": "Custom pearl envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ 即日発送 | ZprintPro"
+      "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ  | ZprintPro"
     }
   },
   "exercise-books": {
@@ -2314,7 +2314,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "賞状印刷｜金箔 銀箔 箔押し｜100枚〜¥386〜｜ZprintPro",
-        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro",
+        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、100枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro",
         "h1": "Exquisite certificates with foil stamping",
         "keywords": ["賞状印刷","賞状印刷 印刷","certificates","宿題バッグ印刷","学生手帳印刷","教師自作教材","クラス名札バッグ","卒業記念アルバム","卒業証書印刷","科目分類フォルダー"],
         "body": "証明書は、卒業・表彰・認定という大切な瞬間を形に残す、格式ある印刷物です。ZprintPro では、卒業証書、賞状、同窓会証書、研修証明書、栄誉証明書など、学校や企業・団体の公式文書にふさわしい証明書印刷を承っています。箔押し・エンボス・スポット UV などの高級加工にも対応し、受け取る人の記憶に残る一枚をお作りします。\n\n卒業式や入学式を控えた学校では、卒業証書や皆勤賞の賞状をまとめてご注文いただくケースが多くあります。学園祭・体育祭の記念証書や部活動の表彰状など、年間を通じて証明書が必要な場面は少なくありません。「教材 印刷製本」のラインアップの一環として、証明書印刷も同じ品質管理のもとでご提供しています。学期のピーク期（開校前 2 週間）は混み合いますので、早めのご相談が安心です。\n\n同窓会では、懐かしい母校の証書を再発行したり、記念の感謝状を制作したりと、卒業生の絆を深める印刷物として活躍します。企業や研修機関では、研修修了証・技能認定書・社内表彰状など、従業員のモチベーション向上につながる証明書をまとめて発行する機会が増えています。教育現場の「教材 印刷」にも対応する ZprintPro の一貫体制で、正確な部数管理と高品質な仕上がりをお約束します。\n\n用紙は 200g〜250g の浮水印紙（透かし入り用紙）や綿質紙を使用します。透かしによる偽造防止効果が高く、公式な証明書・認定書に最適です。サイズは A4（210×297mm）と A3（297×420mm）に対応し、四色印刷に加えて箔押し、エンボス（型押し）、偽造防止地紋、浮水印などの加工が可能。手にした時の重厚感まで、細部にこだわって仕上げます。\n\n価格はサイズ・加工内容に応じて 1 枚あたり HK$8〜40、最小注文数は 100 枚から承ります。標準納期は 3〜5 営業日、急ぎの場合は 24〜48 時間以内の対応も可能です。完成品は DHL・FedEx で日本全国へ 2〜4 日でお届けし、量産前にサンプルで色・紙質・加工の仕上がりをご確認いただけます。大量注文は段階割引がございますので、お気軽にご相談ください。\n\n原稿仕様：入稿データは AI／PDF／EPS 形式、解像度 300DPI 以上、フルカラー印刷のため CMYK カラーモード、3mm の塗り足し、フォントのアウトライン化を推奨します。箔押し・スポット UV・エンボスなどの加工位置は K100 黒版でご指定ください。デザインデータがない場合は、無料レイアウトサービスを提供します。\n\n**FAQ**\n**Q1: 証明書印刷の最小注文数はいくつですか？**\nA1: ZprintPro のほとんどの商品は 50〜100 部/枚からの最小注文です。証明書は 100 枚から承ります（少量でお急ぎの場合は別途ご相談ください）。大量注文は段階割引がありますので、お気軽にお問い合わせください。\n**Q2: 印刷と納品にはどのくらい時間がかかりますか？**\nA2: 標準納期は 3〜5 営業日、急ぎの場合は 24〜48 時間以内です。即日生産は多くの標準 SKU で対応可能で、正午までのデータ確定を推奨します。DHL・FedEx で日本全国へ 2〜4 日でお届けします。\n**Q3: 入稿データの仕様を教えてください。**\nA3: AI／PDF／EPS 形式、300DPI 以上、3mm の塗り足しを推奨します。フルカラー印刷は CMYK カラーモード、フォントはアウトライン化してください。箔押し・スポット UV・エンボスなどの加工には、加工位置を示す K100 黒版を別途ご支給ください。\n\n卒業式・表彰式の準備は、早めのご相談が安心です。ZprintPro の日本語サポートスタッフが、用紙選びから加工・納期までワンストップでご案内します。まずは WhatsApp でお気軽にお問い合わせください。30 秒の AI 即時見積もりで、概算価格と納期をすぐにご確認いただけます。"
