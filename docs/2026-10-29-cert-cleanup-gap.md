@@ -32,6 +32,15 @@
 | C | sku-seo-data.ts | 31 | **peer 活跃域——协调/等 peer 或静默后做** |
 | D | page.tsx 22 + products 7 + category-seo 8 + schema 4 + blocks 4 | 45 | 各产品页/分类页 |
 
+## 五、线上探针补充发现（3cf1a048 验证 12:14）
+
+批 #14（seo.ts）线上生效（ja paper-bags 国際認証体系 0 ✓），但 **zh 分类页组件层残留 5 处/页**（§0.23.2 dump 定位）：
+- **TrustBadgeBlock 徽章**「國際認證體系」（客户可见信任徽章）
+- **ProductWhyChooseUs 特色卡**「國際認證體系」（「即日交貨/全港順豐速遞」同款卡）
+- **分类页正文**「FSC 認證紙材與 國際認證體系把關品質」（category-seo-content 或页面 body）
+
+→ **批 D 扩展**：组件层（TrustBadgeBlock/WhyChooseUs/分类 body）+ page.tsx/products/category-seo/schema/blocks。「國際認證體系」徽章/卡替换候选：中性「品質保證」或「FSC 認證」（有证）——建议 FSC 语境合并。
+
 ## 四、数据来源
 
 ```
