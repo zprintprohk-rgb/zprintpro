@@ -121,6 +121,15 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - **lane 层口径修复（commit `44633c9a` prompt + `inject-recovery-mode` 源模板，C8 完整闭环）**：5 条 lane prompt 的 STEP 0.5 均要求报告 `RECOVERY:` 行，其中 gsc-feedback 硬编码读 `recovery_ratio_vs_precliff`（固定 585.2 单站和口径）——若不动，明日 lane 会继续把 1.355 当恢复系数（A17 原始问题在 lane 层的持续源头）。修复：gsc-feedback prompt 改读 `recovery_ratio_vs_mean28_dynamic`（全国家口径，与 109.9%/107.2% 一致）；`scripts/inject-recovery-mode-20261012.mjs` 源模板同步更新（注入器幂等含 MARK 跳过，防未来重注入回退）。其余 4 条 lane 无硬编码字段名，自然消费修复后 JSON。
 - **数据来源**：`scripts/gsc-cliff-detector.py` L31-56/L88-100/L130-145 · `scripts/inject-recovery-mode-20261012.mjs` L54-62 · `.hermes/cron-prompts/zprintpro-gsc-feedback-loop.md` L16-22 · GSC数据/ 目录实盘 · 实跑输出 gsc-cliff-2026-10-29.json · openpyxl 独立复算 749.18/1.058。
 
+### 7.8 明晨 06:43 看门狗 v4 三场景预演（三闸门 #3 确定性）
+
+模拟 `cron-watchdog.py` v4 dedup 逻辑（L254-268，per-calendar-day）对**真实今日 19:10 section**（5 条：3×0x800710E0 + weekly 10-23 MISSING + blog 10-24 MISSING）：
+- **场景 A**（明晨 06:43，调度未修，同 3 条 0x800710E0）：**3 条重见** ✓ — 每日可见，不被昨日 section 静默（v3「只新鲜一天」缺陷已修，v4 生效）
+- **场景 B**（3 旧 + 1 新如 weekly 10-29 MISSING）：**4 条** ✓ — 新增不被吞
+- **场景 C**（调度全修，0 告警）：**0 条** ✓
+- **结论**：3×0x800710E0 将持续每日告警直到 K3 管理员修调度器（§5 重注册）；看门狗不会掩盖未修事实（F6'/D6 闭环）。
+- **数据来源**：`scripts/cron-watchdog.py` L254-268 dedup 逻辑 · `.hermes/logs/cron-watchdog-alerts.md` 10-29 19:10 section 实文 · python 模拟 3 场景（匹配实际告警文本）。
+
 ### 7.6 登记（只登记不修）· T7：catalog-printing-china 页 FDA 食品級油墨 = 无证认证声明（§2.2 战略点名项）
 
 **发现（本轮补盘点，线上双证 + src 锚点）**：`src/app/[locale]/services/catalog-printing-china/page.tsx` 三语种各含 **FDA 食品級油墨声明**：
