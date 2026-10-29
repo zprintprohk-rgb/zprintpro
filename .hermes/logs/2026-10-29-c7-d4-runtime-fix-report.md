@@ -75,3 +75,24 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - blog-deepfix UNKNOWN = 窗口伪影（周六调度、周三手动 OK），非缺陷；weekly/monthly 三连 0x800710E0 仍等 K3 管理员重注册（k3-review §5 命令）。
 - K3 三件（token revoke ×2 / GMC re-review / Studio approve-delete）与 包装批1 拍板 仍待 K3。
 - T5（认证词清毒）由 peer 12:04-13:14 §2.2 系列执行中；T6（15,000+）待 K3 裁决，均不属本轮。
+
+## 7. 晚间追加（19:0x-19:1x · 执行层无 K3 依赖项闭环）
+
+### 7.1 D7 · k3-ceo-daily-review.md SSoT 文本漂移（k3-review §1.2 D7「低成本高收益, 建议随下轮 docs 批修正」）
+
+- **问题**：Step 5 落盘名仍写 `<YYYY-MM-DD>-k3-daily-review.md`（旧名），与契约 §7.1.3 权威名 `<YYYY-MM-DD>-ZP-<lane>.md` 冲突；§注册仍写「未注册/不得声称已在跑」，而 `\ZP-k3-review` 已注册实跑（bus 63 条 / 07:10 preflight OK / wrapper runsTotal=8）。后来者照错名落盘会再被判 STALE。
+- **修复**（commit `c5c845d0`，docs-only）：Step 5 改为 `<YYYY-MM-DD>-ZP-k3-review.md`；§注册更新为「已注册实跑」；Step 1 报告名同步契约权威名。
+- 验收：`read` 复核 3 处改点 + `grep 'k3-daily-review'` 在 .hermes/cron-prompts/ 归零。
+
+### 7.2 F6'/D6 · cron-watchdog.py 漏报修复（k3-review §1.2 F6'「看门狗部分恢复, 10-29 只报 1 条漏 3×0x800710E0 + k3-review Result=1」）
+
+- **根因**：告警去重用「全文件 contains」（L261 `a not in prev`），10-07 已记录的 0x800710E0 相同文本被**永久静默** → 持续未决的调度故障每日不再可见。
+- **修复**（commit `c02d2e52`，scripts 行为修复）：去重范围改为「最近一个告警 section」（`prev.rfind('\n## ')` 之后），活跃问题每天至少可见一次，修复后自动消失；文件仍是 K3 每周复盘单一事实源。
+- 验收：`cron-watchdog.py` 实跑 exit=1，新增 5 条告警（weekly/blog/monthly ×0x800710E0 + 2×MISSING），daily-content STALE 不重复；`unittest scripts/tests/test-lane-runtime.py` 9/9 PASS；tsc 54=54；brand A 类 0；encoding 干净。
+- 数据来源：`.hermes/logs/cron-watchdog-alerts.md` 10-29 19:10 section 实跑输出 · `git log origin/main..HEAD` · `scripts/tests/test-lane-runtime.py` unittest 实跑。
+
+### 7.3 队列与今晚验收
+
+- 队列 16 任务：DONE=3（T1-T3）/ WAITING_K3=5 / BLOCKED_INFRA=4 / SCHEDULED=3 / CLOSED_BY_K3_S0.37=1，**0 READY**（daily-content 今晚 21:17 预期 NO_OP，除非 K3 批 1 项）。
+- 今晚 20:13 gsc-feedback（幂等键 0453ab66 命中跳过）+ 21:17 daily-content 四方验收提醒已设（20:21 / 21:21 触发，判据：lane-runs.jsonl 新 run + wrapper dsh exit + 当日非兜底报告 + 调度器 LastTaskResult）。
+- 本轮 push 批：c5c845d0（D7 docs）+ c02d2e52（watchdog 行为修复）= ≥1 src/scripts 行为修复 达标（§0.25.9）；push 待 gate（peer 19:04 dca6652e 后 ≥30 min ≈ 19:34）。
