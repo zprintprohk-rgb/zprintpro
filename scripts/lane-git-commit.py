@@ -272,24 +272,40 @@ def resolve_idempotency_key(lane, repo):
 
 
 def validate_lane_report(repo, lane, day):
-    """Accept only today's exact lane report with all four fields and VERDICT: OK."""
-    rel = f".hermes/logs/{day}-{lane}.md"
-    path = os.path.join(repo, rel)
-    if not os.path.isfile(path):
-        return None, f"missing exact same-day lane report: {rel}"
-    try:
-        with open(path, "r", encoding="utf-8", errors="replace") as fh:
-            text = fh.read()
-    except OSError as e:
-        return None, f"lane report unreadable: {type(e).__name__}"
-    if "AUTO-FILL" in text or "AUTO-FILLED" in text:
-        return None, "auto-filled reports are failure evidence, never OK evidence"
-    for field in ("VERDICT", "CONSUMED", "DELIVERED", "NEXT"):
-        if not re.search(rf"^{field}:\s*\S.*$", text, re.MULTILINE):
-            return None, f"same-day report lacks machine-readable {field}"
-    if not re.search(r"^VERDICT:\s*OK\s*$", text, re.MULTILINE):
-        return None, "same-day report VERDICT is not exactly OK (PARTIAL/BLOCKED/FAILED cannot finalize as OK)"
-    return rel, None
+    """Accept only today's exact lane report with all four fields and VERDICT: OK.
+
+    D4 命名双轨兼容 (2026-10-29, k3-review §2.5/D4): harness 落盘短名
+    `<day>-<lane 去 ZP->.md` (e.g. 2026-10-29-daily-content.md), 而旧校验只认
+    契约长名 `<day>-ZP-<lane>.md` -> 真实 OK 报告被漏判, 收尾再生成 AUTO-FILL 兜底
+    -> lane-status STALE (实测 2026-10-29 daily-content / blog-deepfix).
+    lane-status.mjs L266-272 已双名兼容, 此处对齐: 候选双名, **跳过 AUTO-FILL 兜底
+    (失败证据), 取首个通过全字段校验的候选**; 全部候选皆 AUTO-FILL 才判缺失。
+    """
+    candidates = [f".hermes/logs/{day}-{lane}.md"]
+    if lane.startswith("ZP-"):
+        candidates.append(f".hermes/logs/{day}-{lane[3:]}.md")
+    existing = [(rel, os.path.join(repo, rel)) for rel in candidates if os.path.isfile(os.path.join(repo, rel))]
+    if not existing:
+        return None, f"missing exact same-day lane report: {' | '.join(candidates)}"
+    for rel, path in existing:
+        try:
+            with open(path, "r", encoding="utf-8", errors="replace") as fh:
+                text = fh.read()
+        except OSError as e:
+            return None, f"lane report unreadable: {type(e).__name__}"
+        if "AUTO-FILL" in text or "AUTO-FILLED" in text:
+            continue  # failure evidence, never OK evidence; try the sibling candidate
+        # D4 双轨兼容: 字段可为裸 `VERDICT: OK` 或 Markdown 粗体 `- **VERDICT: OK**`
+        # OK 后允许行尾或 `—` 破折号解释 (实测 blog-deepfix `**VERDICT: OK** — ...`)
+        for field in ("VERDICT", "CONSUMED", "DELIVERED", "NEXT"):
+            if not re.search(rf"^[-*\s]*\*?\*?{field}\*?\*?:\s*\S.*$", text, re.MULTILINE):
+                return None, f"same-day report lacks machine-readable {field}"
+        if not re.search(
+                r"^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–-])",
+                text, re.MULTILINE):
+            return None, "same-day report VERDICT is not exactly OK (PARTIAL/BLOCKED/FAILED cannot finalize as OK)"
+        return rel, None
+    return None, "all same-day lane report candidates are AUTO-FILL failure evidence; no real OK report"
 
 
 def write_failure_report(repo, lane, day, verdict, reason, dsh_exit):

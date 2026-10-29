@@ -26,6 +26,7 @@ import {
   getDisplayAnchor,
   convertToFromPrice,
   getPriceUnitWord,
+  localizePriceUnitToken,
 } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 // Step 4 (方案 (a)): 規格材質值三語化 (查不到 -> fallback 中文原文)
@@ -208,7 +209,8 @@ function V9ProductCard({ product, locale }: { product: Product; locale: Locale }
   const fromPrice = anchor
     ? anchor.big
     : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
-  const unitWord = getPriceUnitWord(product.price_range);
+  // 2026-10-29 T3: 单位词按 locale 本地化 (zh-hk 原样 '張' / en 'pcs' / ja '枚'), 避免 en 页显示 '10 張'
+  const unitWord = localizePriceUnitToken(getPriceUnitWord(product.price_range), locale);
   // 门控保证运行时 locale ∈ {zh-hk, en, ja} (B3)
   const t9 = V9T[locale as 'zh-hk' | 'en' | 'ja'];
   const moqLine = anchor

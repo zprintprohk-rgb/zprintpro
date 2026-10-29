@@ -734,7 +734,8 @@ export function convertPriceRangeString(priceRange: string, locale: Locale, cate
   const base = parseFloat(match[1]);
   const max = match[2] ? parseFloat(match[2]) : null;
   const unit = match[3] || '';
-  const unitStr = unit ? `/${unit}` : '';
+  // 2026-10-29 T3: en/ja 回退分支单位词本地化 ('/100張'→'/100 pcs'/'/100枚'), zh-hk 原样
+  const unitStr = unit ? `/${localizePriceUnitToken(unit, locale)}` : '';
   const { symbol } = BASE_EXCHANGE_RATES[locale];
 
   const minPrice = convertPrice(base, locale, categorySlug);
@@ -765,6 +766,38 @@ export function convertToFromPrice(priceRange: string, locale: Locale, categoryS
 export function getPriceUnitWord(priceRange: string): string {
   const unit = priceRange.split('/')[1] || '';
   return unit.replace(/^\d+/, '').trim();
+}
+
+/**
+ * 2026-10-29 T3 (k3-review §2.5): price_range 回退分支的单位本地化。
+ * 模板单位串在 en/ja 页面上原样输出中文量词 ('US$33.12/100張' / '[MOQ] 10 張')，
+ * 此处把 '100張'/'張'/'本'/'個' 等按 locale 映射为 en/ja 词 (先例: ProductPageV9 EN_UNIT_MAP/JA_UNIT_MAP,
+ * variable-i18n QUANTITIES_ZH2EN/JA)。zh-hk 原样返回。未知单位原样保留 (不发明翻译)。
+ */
+const UNIT_LOCALE: Record<string, { en: string; ja: string }> = {
+  '張': { en: 'pcs', ja: '枚' },
+  '個': { en: 'pcs', ja: '個' },
+  '本': { en: 'book', ja: '冊' },
+  '枚': { en: 'pcs', ja: '枚' },
+  '部': { en: 'copy', ja: '部' },
+  '套': { en: 'sets', ja: 'セット' },
+  '盒': { en: 'boxes', ja: '箱' },
+  '卷': { en: 'rolls', ja: '巻' },
+  '條': { en: 'rolls', ja: '巻' },
+  '米': { en: 'meters', ja: 'メートル' },
+  '塊': { en: 'pcs', ja: '枚' },
+};
+
+export function localizePriceUnitToken(token: string, locale: Locale): string {
+  if (locale === 'zh-hk') return token;
+  const m = token.match(/^(\d*)(.+)$/); // '100張' → digits='100', word='張'; '本' → digits='', word='本'
+  if (!m) return token;
+  const digits = m[1];
+  const word = m[2];
+  const map = UNIT_LOCALE[word];
+  if (!map) return token; // 未知单位 → 原样 (诚实显示)
+  const loc = locale === 'ja' ? map.ja : map.en;
+  return digits ? (locale === 'ja' ? `${digits}${loc}` : `${digits} ${loc}`) : loc;
 }
 
 

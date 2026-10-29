@@ -283,6 +283,72 @@
       "status": "BLOCKED_INFRA",
       "next_check": "2026-10-29",
       "result": "Dispatched by weekly review from observed UNKNOWN; not a completed fix"
+    },
+    {
+      "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
+      "source_strategy": "2026-10-29-ZP-k3-review §2.5 T1 (P1)",
+      "market": "en",
+      "target": "category-conversion-blocks.ts calendars en block — FAQ L2241 '50 pcs' / socialProof L2250-2251 / comparisonTable L2275-2293 ×4, 对齐同页 1 MOQ 真值 (products.ts minQuantity=1)",
+      "evidence": [
+        "products.ts: calendars 6 SKU + mini-calendars 全部 minQuantity=1, price_range HK$3-8/本 (L4027-4034 等)",
+        "线上 /en/category/calendars/ 200: title '1 MOQ' + seo-faq 'From 1 pc (digital printing). 500+ pcs recommended for offset' 与 conversion-block FAQ 'digital runs start at just 50 pcs' 同页冲突 (2026-10-29 12:2x curl 双证)",
+        "zh-hk 同 block 真值: quickAnswer '1 本起訂（數碼印刷）' + socialProof '1本起' + comparisonTable '1 本起'"
+      ],
+      "score": 90,
+      "score_model": "k3-review-P1-truth-defect",
+      "write_scope": [
+        "src/data/category-conversion-blocks.ts (calendars en 字段 only)"
+      ],
+      "approval_gate": "k3-review §2.5 T1 classify + products.ts 真值对照 + 线上双证; 不夹带 title/名片域",
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "next_check": "2026-10-29",
+      "result": "REGISTERED 2026-10-29 by manual session per k3-review P3; fix in single batch"
+    },
+    {
+      "task_id": "TRUTH-T2-20261029-MINI-CALENDARS-1000",
+      "source_strategy": "2026-10-29-ZP-k3-review §2.5 T2 (P1)",
+      "market": "en",
+      "target": "sku-seo-data.ts mini-calendars en body FAQ Q3 'Orders start at 1,000 units' → 对齐同文 '1-unit minimum (bulk 300+ offset)' / 页面 1 MOQ (body 为 ts 权威例外域, 非 CSV 派生, 直接改 ts)",
+      "evidence": [
+        "sku-seo-data.ts L1557 en body: FAQ Q3 'Orders start at 1,000 units' vs 同文 'Pricing runs HK$3-8 per book at a 1-unit minimum (bulk 300+ offset)' 自相矛盾",
+        "products.ts mini-calendars: minQuantity=1",
+        "zh-hk body '最低起印量 1 本' / ja body 'オフセットは300部から' 均无 1,000 口径 — en 独有矛盾",
+        "CSV zprintpro-sku-seo-data.csv 正文 EN 列为空 → body 是 ts 权威 (csv-to-sku-seo.mjs 注释: 'seo.body — ts 权威例外域')"
+      ],
+      "score": 90,
+      "score_model": "k3-review-P1-truth-defect",
+      "write_scope": [
+        "src/data/sku-seo-data.ts (mini-calendars en body FAQ only)"
+      ],
+      "approval_gate": "k3-review §2.5 T2 classify + products.ts 真值对照 + 同文矛盾双证; 不夹带 title/名片域",
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "next_check": "2026-10-29",
+      "result": "REGISTERED 2026-10-29 by manual session per k3-review P3; fix in single batch"
+    },
+    {
+      "task_id": "TRUTH-T3-20261029-EN-UNIT-LOCALIZE",
+      "source_strategy": "2026-10-29-ZP-k3-review §2.5 T3 (P1)",
+      "market": "en",
+      "target": "en 类目页量词未本地化: CategoryPageV9 卡 L244 unitWord 原样 '張' + convertPriceRangeString 回退保留 '/100張' → 线上 'US$33.12/100張' 'MOQ 10 張' (greeting-cards 无锚/无独立价, 走回退路径)",
+      "evidence": [
+        "线上 /en/category/greeting-cards/ 200: 'US$33.12/100張' + 'MOQ 10 張' 中文量词 (2026-10-29 12:2x curl)",
+        "pricing.ts convertPriceRangeString L731-752: fallback 分支 unit 原样保留 ('/100張'), 未本地化; DISPLAY_ANCHOR_OVERRIDES/UNIT_PRICE_ANCHORS 无 greeting-cards 条目 → getDisplayAnchor null",
+        "CategoryPageV9.tsx L244: {t9.moqTag} {minQuantity} {unitWord.replace('/','')} 三语同用 raw unitWord",
+        "ProductPageV9 已有 EN_UNIT_MAP/JA_UNIT_MAP (張→pcs/枚) 先例; variable-i18n.ts QUANTITIES_ZH2EN/JA (100張→100 pcs/100枚) 存在但未接入类目卡渲染路径"
+      ],
+      "score": 90,
+      "score_model": "k3-review-P1-truth-defect",
+      "write_scope": [
+        "src/lib/pricing.ts (convertPriceRangeString fallback 单位本地化)",
+        "src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx (L244 unitWord 本地化)"
+      ],
+      "approval_gate": "k3-review §2.5 T3 classify + 线上双证 + 既有本地化映射先例; 不夹带 title/名片域",
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "next_check": "2026-10-29",
+      "result": "REGISTERED 2026-10-29 by manual session per k3-review P3; fix in single batch"
     }
   ],
   "last_review": {

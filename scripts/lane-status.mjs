@@ -275,9 +275,13 @@ function main() {
         let text = '';
         try { text = fs.readFileSync(f.full, 'utf8'); } catch { /* unreadable = invalid */ }
         const autoFilled = /AUTO-FILL(?:ED)?/.test(text);
-        const contractOk = ['VERDICT', 'CONSUMED', 'DELIVERED', 'NEXT']
-          .every((field) => new RegExp(`^${field}:\\s*\\S.*$`, 'm').test(text))
-          && /^VERDICT:\s*OK\s*$/m.test(text);
+        // D4 双轨兼容 (2026-10-29): harness 真实 OK 报告字段可能为裸 `VERDICT: OK`
+        // 或 Markdown 粗体 `**VERDICT: OK**` / `- **VERDICT: OK**` (实测
+        // 2026-10-29 daily-content / blog-deepfix 为粗体, gsc-feedback / k3-review 为裸),
+        // 两种形态都必须是可判定的 OK 契约; AUTO-FILL 兜底一律不认。
+        const fieldRe = (field) => new RegExp(`^[-*\\s]*\\*?\\*?${field}\\*?\\*?:\\s*\\S.*$`, 'm');
+        const contractOk = ['VERDICT', 'CONSUMED', 'DELIVERED', 'NEXT'].every((field) => fieldRe(field).test(text))
+          && /^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–-])/m.test(text);
         return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk, autoFilled, contractOk };
       })
       .filter((f) => f.owned)

@@ -2238,7 +2238,7 @@ categoryConversionBlocks['calendars:en'] = {
     },
     {
       "q": "What sizes do custom calendars come in?",
-      "a": "Desk calendars come in 150×180mm and 200×230mm, wall calendars in A3 (297×420mm) and A2 (420×594mm), and calendar cards in 100×150mm. Every size is fully customizable with your branding, and digital runs start at just 50 pcs with 3-5 day turnaround."
+      "a": "Desk calendars come in 150×180mm and 200×230mm, wall calendars in A3 (297×420mm) and A2 (420×594mm), and calendar cards in 100×150mm. Every size is fully customizable with your branding, and digital runs start at just 1 pc with 3-5 day turnaround."
     }
   ],
   "socialProof": [
@@ -2247,7 +2247,7 @@ categoryConversionBlocks['calendars:en'] = {
       "label": "Orders delivered to global B2B and corporate buyers"
     },
     {
-      "stat": "50 pcs",
+      "stat": "1 pc",
       "label": "Digital printing minimum for low-risk 2027 test runs"
     },
     {
@@ -2272,25 +2272,25 @@ categoryConversionBlocks['calendars:en'] = {
         "Desk Calendar (Easel) - 150×180 / 200×230mm",
         "Foil-stamped year, spot UV, metal ring binding, 2mm thickened base",
         "Office desks, reception counters, corporate gifts",
-        "From 50 pcs (digital)"
+        "From 1 pc (digital)"
       ],
       [
         "Wall Calendar - A3 (297×420mm) / A2 (420×594mm)",
         "Hole punch & hanging string, waterproof lamination, foil accents",
         "Homes, offices, schools, restaurants",
-        "From 50 pcs (digital)"
+        "From 1 pc (digital)"
       ],
       [
         "Calendar Card - 100×150mm postcard size",
         "Double-sided color printing, lamination",
         "Mail giveaways, event handouts, trade shows, promos",
-        "From 50 pcs (digital)"
+        "From 1 pc (digital)"
       ],
       [
         "Planner Calendar",
         "Ring binding, variable data printing (unique names or branch info per copy)",
         "Employee benefits, client gifts, school souvenirs, VIP gifts",
-        "From 50 pcs (digital)"
+        "From 1 pc (digital)"
       ]
     ],
     "note": "Magnetic fridge calendars are also available. Paper: 200g-300gsm art or matte stock with 1-2mm greyboard bases. Offset runs at 500+ pcs are more economical for corporate bulk; foil and specialty finishes are quote-based via WhatsApp."
