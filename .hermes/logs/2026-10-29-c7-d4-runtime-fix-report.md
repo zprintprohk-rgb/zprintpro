@@ -87,9 +87,10 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 ### 7.2 F6'/D6 · cron-watchdog.py 漏报修复（k3-review §1.2 F6'「看门狗部分恢复, 10-29 只报 1 条漏 3×0x800710E0 + k3-review Result=1」）
 
 - **根因**：告警去重用「全文件 contains」（L261 `a not in prev`），10-07 已记录的 0x800710E0 相同文本被**永久静默** → 持续未决的调度故障每日不再可见。
-- **修复**（commit `c02d2e52`，scripts 行为修复）：去重范围改为「最近一个告警 section」（`prev.rfind('\n## ')` 之后），活跃问题每天至少可见一次，修复后自动消失；文件仍是 K3 每周复盘单一事实源。
-- 验收：`cron-watchdog.py` 实跑 exit=1，新增 5 条告警（weekly/blog/monthly ×0x800710E0 + 2×MISSING），daily-content STALE 不重复；`unittest scripts/tests/test-lane-runtime.py` 9/9 PASS；tsc 54=54；brand A 类 0；encoding 干净。
-- 数据来源：`.hermes/logs/cron-watchdog-alerts.md` 10-29 19:10 section 实跑输出 · `git log origin/main..HEAD` · `scripts/tests/test-lane-runtime.py` unittest 实跑。
+- **修复 v3**（commit `c02d2e52`，scripts 行为修复）：去重范围改为「最近一个告警 section」（`prev.rfind('\n## ')` 之后），活跃问题至少可见一次；文件仍是 K3 每周复盘单一事实源。
+- **修复 v4**（commit `e3c54dbf`，v3 缺陷修正）：v3 按「最近 section」去重 → 今天 19:10 报了 3 条后，明早 06:43 会拿昨天 section 静默今日 → **只新鲜一天**，F6' 失效形态复发。v4 改为**按日历日去重**：仅当最近 section 属于**今天**才去重；昨日 section 不静默今日 → 活跃问题**每一天**至少可见一次，修复后自动消失。
+- 验收：v4 边缘用例（今日 section 含 A,B → 只补 C；昨日 section 含全 3 → 今日全 3 重见；空文件 → 全 3）3/3 符合语义；实跑 `[PASS] 告警均为今日已记录项`（当日 section 内无新增，exit 0，无重复追加）；`unittest scripts/tests/test-lane-runtime.py` 9/9 PASS；tsc 54=54；brand A 类 0；encoding 干净。
+- 数据来源：`.hermes/logs/cron-watchdog-alerts.md` 10-29 19:10 + 19:42 section 实跑输出 · v4 边缘用例 python 单测 · `git log origin/main..HEAD` · `scripts/tests/test-lane-runtime.py` unittest 实跑。
 
 ### 7.3 队列与今晚验收
 
