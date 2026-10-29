@@ -91,9 +91,37 @@ def main():
 
     for site_zh, code in SITES.items():
         f = latest_file(f'{site_zh}站点28天数据*.xlsx')
+        caliber = 'single-site'
+        fallback = None
+        if f:
+            _frows = read_daily(f)
+            _flage = (date.today() - datetime.strptime(_frows[-1]['date'], '%Y-%m-%d').date()).days if _frows else 999
+            if _flage > STALE_DAYS:
+                # A17 (2026-10-29): 单站档过旧 (age>5) 但 K3 已改导三站点汇总形态 ->
+                # 回退读汇总档 (全国家口径) 避免 WARN_STALE 误报; 记录双口径证据。
+                fb = latest_file('28天三站点汇总数据*.xlsx')
+                if fb:
+                    fbrows = read_daily(fb)
+                    fb_age = (date.today() - datetime.strptime(fbrows[-1]['date'], '%Y-%m-%d').date()).days if fbrows else 999
+                    if fbrows and fb_age < _flage:
+                        fallback = {'old': f, 'old_age': _flage, 'new': fb, 'new_age': fb_age}
+                        f = fb
+                        caliber = 'full-country'
+        if not f:
+            # A17 修复 (2026-10-29): K3 自 10-15 后改导「三站点汇总」形态 (全国家口径),
+            # 单站形态不再出新档 -> 回退读汇总档作为全站序列, 标注 caliber 防口径混算。
+            f = latest_file('28天三站点汇总数据*.xlsx')
+            caliber = 'full-country'
+            if f:
+                report['alerts'].append({'level': 'INFO_CALIBER_SWITCH', 'site': code,
+                                         'detail': f'单站档缺失, 回退汇总档 {f.name} (全国家口径, 非单站)'})
         if not f:
             report['alerts'].append({'level': 'WARN_NO_FILE', 'site': code, 'detail': '找不到 28 天档'})
             continue
+        if fallback:
+            report['alerts'].append({'level': 'INFO_CALIBER_SWITCH', 'site': code,
+                                     'detail': f'单站档 {fallback["old"].name} 过旧 {fallback["old_age"]}d, 回退汇总档 '
+                                               f'{fallback["new"].name} ({fallback["new_age"]}d, 全国家口径)'})
         rows = read_daily(f)
         if len(rows) < 8:
             report['alerts'].append({'level': 'WARN_NO_FILE', 'site': code, 'detail': f'{f.name} 行数不足 ({len(rows)})'})
@@ -114,6 +142,7 @@ def main():
             'total28_imps': sum(r['imps'] for r in rows), 'total28_clicks': sum(r['clicks'] for r in rows),
             'cliff_ratio': round(last['imps'] / prior7_mean, 3) if prior7_mean else None,
             'depression_ratio': round(trail3_mean / mean28, 3) if mean28 else None,
+            'caliber': caliber,
         }
         report['sites'][code] = s
 
@@ -133,15 +162,27 @@ def main():
         if hours:
             combined_mean = sum(s['mean28_imps'] for s in report['sites'].values())
             rt_imps = sum(h['imps'] for h in hours)
+            # A17 修复 (2026-10-29): 单站档缺失时 sites 的 mean28 已切换为全国家口径,
+            # 与固定 585.2 (三站和, 单站口径) 基线不可比 -> 动态分母改用同口径全国家 mean28 并标注。
+            calibers = {s['caliber'] for s in report['sites'].values()}
+            base_is_full_country = bool(calibers) and calibers == {'full-country'}
+            dynamic_denom = combined_mean if combined_mean else None
+            dynamic_denom_caliber = 'full-country' if base_is_full_country else 'single-site-sum'
+            ratio_dynamic = round(rt_imps / dynamic_denom, 3) if dynamic_denom else None
+            # 固定断崖前基线仍按原口径输出, 但加 caliber 标签防与车道 109.9% (全国家) 混算
+            fixed_ratio = round(rt_imps / PRECLIFF_BASELINE_COMBINED, 3) if PRECLIFF_BASELINE_COMBINED else None
             report['realtime_24h'] = {
                 'file': rt.name, 'hours': len(hours),
                 'window': f'{hours[0]["hour"]} ~ {hours[-1]["hour"]}',
                 'imps': rt_imps, 'clicks': sum(h['clicks'] for h in hours),
                 # 主指标: 固定断崖前基线分母 (逐日可比, "连续 3 日" 判定依据)
-                'recovery_ratio_vs_precliff': round(rt_imps / PRECLIFF_BASELINE_COMBINED, 3) if PRECLIFF_BASELINE_COMBINED else None,
+                'recovery_ratio_vs_precliff': fixed_ratio,
+                'recovery_ratio_vs_precliff_caliber': 'single-site-sum (hk+jp+us 三站和 585.2, 与全国家 714.71 不可比)',
                 # 次要参考: 动态 28d mean28 分母 (窗口随导出滑动, 日间不可比)
-                'recovery_ratio_vs_mean28_dynamic': round(rt_imps / combined_mean, 3) if combined_mean else None,
+                'recovery_ratio_vs_mean28_dynamic': ratio_dynamic,
+                'recovery_ratio_vs_mean28_dynamic_caliber': dynamic_denom_caliber,
                 'baseline': {'combined_mean28': PRECLIFF_BASELINE_COMBINED, 'source': PRECLIFF_BASELINE_SOURCE},
+                'caliber': 'full-country' if base_is_full_country else 'single-site',
             }
 
     LOG_DIR.mkdir(parents=True, exist_ok=True)

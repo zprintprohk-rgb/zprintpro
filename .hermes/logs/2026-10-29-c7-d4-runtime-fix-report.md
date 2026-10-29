@@ -107,3 +107,14 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - 其余 1 行命中多为 ja 术语（国際認証 = 09-19 K3 拍板译法）与 FSC/ISO 有证保留，需对端 #15 按上下文裁决；business-cards-printing 页 3 行命中属 §0.0 名片域（K3 未裁，不越域）。
 - 全树现状（method2 行级单计数，含变体 國際認證體系/国際認証体系/國際品質認證/国際品質/internationally certified/international certifications）：products-content.ts 245 · sku-seo-data.ts 31 · category-seo-content.ts 15 · catalog-printing-china 13 · category-conversion-blocks 11 · seo.ts 4 · 其余 15 文件各 1-3（business-cards-printing 3 / about 2 / buying-guides 2 / 组件+页面 10 文件各 1）。**method1（子串计数）337+ 为叠加口径，以 method2 行级为准**。
 - **处置（本轮不修）**：catalog-printing-china 页 13 处 src 残留 + 线上活残留 = 建议对端 #15 补清（§2.2 同款：FSC/ISO 12647 有证保留，無证「國際認證體系/internationally certified」→ 中性表述）；products-content.ts 等派生文件走 SOP-5 源修复。本登记仅证据 + 建议，不改 src（peer 活跃 + 执行层无 K3 依赖项优先级内不夹带）。
+
+### 7.5 A17/C8 · gsc-cliff-detector 输入分裂修复（scripts 行为修复，10-30 C8 验证点前置）
+
+**问题（A17，gsc-feedback 车道 §6 登记 P1）**：K3 自 10-15 起改导「三站点汇总」形态（全国家口径），detector glob 仍只匹配 `<站点>站点28天数据*.xlsx`（单站形态）→ 永远读 10-15 旧档（止 10-12，17 天龄）→ WARN_STALE ×3 误报 + 24h 恢复系数 135.5%（分母 585.2 = 三站和单站口径）与车道 109.9%（全国家 714.71）口径混用。
+
+**修复（commit `待填`，scripts 行为修复，§0.25.9 ≥1 src 行为修复达标）**：
+- 单站档过旧（age>STALE_DAYS）或缺失时，回退读 `28天三站点汇总数据*.xlsx`（全国家口径），记录 `caliber: full-country` + `INFO_CALIBER_SWITCH` 告警（含新旧档证据行）；不再误报 WARN_STALE。
+- 24h 恢复系数：固定 585.2 分母保留但加 `recovery_ratio_vs_precliff_caliber` 标签（单站和三站和，与全国家不可比）；动态分母改用同口径全国家 mean28 并标注 `full-country`。
+- 双方法验证（§0.23.2）：实跑 → WARN_STALE ×3 消除、caliber=full-country、latest 10-26 age 3d、mean28 749.2；方法 2 独立解析汇总档 28d 日均 749.18（×28=20,977 与车道 28d 总量一致）✓；排序回归：单站档较新时仍优先单站（不误回退）✓；tsc 54=54；encoding clean。
+- **边界**：detector 会把同一全站序列复制到 hk/jp/us 三键（汇总档无分站数据）——诚实标注 caliber 而非伪造分站数据；历史 gsc-cliff JSON 不改写。
+- **数据来源**：`scripts/gsc-cliff-detector.py` L31-56/L88-100/L130-145 · GSC数据/ 目录实盘（10-29 4 新档 = 三站点汇总形态，最新单站档 10-15）· 实跑输出 gsc-cliff-2026-10-29.json · openpyxl 独立复算 749.18。
