@@ -65,6 +65,10 @@ blog/contact/service-areas 4 处清毒（blog「internationally certified factor
 
 v9+about 清毒线上生效：zh 分类页 國際認證體系 0（ISO 12647 3 特色卡 ✓）/ ja paper-bags 0 / zh about 0（FSC 14 保留 ✓）。**新发现**：certificate-printing-guide 线上 16 处残留 → blog-data zh-hk.json 全文件 50 处 + en.json 54 处（§0.23.2 三语复算，ja 0）——**批 E 登记**（blog-data 语义替换，§0.35.5 锁已查无，形态多样待 dump）。
 
+## 十一、批 D-1 线上全绿（13:2x，bcf6bcac）
+
+blog/contact/service-areas 4 处清毒线上生效：zh/en contact 國際認證體系 0（zh ISO 12647 3 ✓ 信任块）+ service-areas 0 + 分类页 0/about 0/ja 0（复探）。**§2.2 累计 62 清**。注：peer 本地 commit 9a2e081f（真值批 T1-T3 calendars MOQ 50→1——§0.35.7 不代持，等 peer 推）；批 D 剩余 category-conversion-blocks 4 + sku-seo 31（peer 域避让）。
+
 ## 四、数据来源
 
 ```
