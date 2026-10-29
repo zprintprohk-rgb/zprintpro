@@ -132,3 +132,11 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 
 **处置（本轮不修，只登记）**：FDA 声明撤/留需 K3-7 claims policy 裁决或对端 #15 按 §2.2 同款执行（有证保留 FSC/ISO 12647，無证 FDA/食品級/損壞率 < 0.5% → 中性表述「可選食品級油墨選項」）；catalog-printing-china 页属对端 #15 域 + peer 活跃（§0.35.7 双条件②未满足），执行层不夹带。本登记证据 + 建议入 `strategy-task-queue.json` 候选（§7.2 纪律：由 GSC/daily 车道消费，不自行批准）。
 - **数据来源**：catalog-printing-china/page.tsx L165/180/254/269/344/359 · 线上 zh-hk curl 探针（HTTP 200，22:0x）· docs/2026-08-28-07-28-3-blogs-en-rewrite-report.md L6-10（K3 8/19 12件事 + FDA 21 CFR 公开法规来源）· 七簇 K3 决策队列 L113 · strategy-task-queue.json（16 任务 FDA 命中 0）· docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md §2.2。
+
+### 7.7 线上验收 · T1-T3 已在线上生效（124b0b11 批 13:53 部署确认）
+
+k3-review §2.5 T1-T3（队列 DONE）线上复核（22:0x，三闸门 #2 响应有效性：HTTP 200 + 合理长度 230-327 KB；确定性：单次探针 + 词频计数）：
+- **T1 calendars en**（`category-conversion-blocks.ts` L2241 50 pcs 对齐 1 MOQ）：线上 `/en/category/calendars/` `50 pcs` **0** 命中（已消除）· `1 pc` 24 / `1 MOQ` 24 / `From 1 pc` 17 ✓
+- **T2 mini-calendars en**（`sku-seo-data.ts` L1557 1,000 units → 1 unit）：线上 `/en/product/mini-calendars/` `1,000 units` **0** · `1-unit minimum` 2 / `1 unit` 2 ✓
+- **T3 greeting-cards en 量词本地化**（pricing.ts localizePriceUnitToken + CategoryPageV9 unitWord）：线上 `/en/category/greeting-cards/` `100張` **0** / `10 張` **0** / `pieces` 0 / `per 100` 0 ✓
+- **数据来源**：线上 curl 探针 ×3（HTTP 200）· src 锚点（category-conversion-blocks.ts L2241 / sku-seo-data.ts L1557 / pricing.ts L736-751）· commit 124b0b11（13:53 批）· CF build 已验证。
