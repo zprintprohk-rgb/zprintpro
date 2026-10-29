@@ -69,6 +69,18 @@ v9+about 清毒线上生效：zh 分类页 國際認證體系 0（ISO 12647 3 �
 
 blog/contact/service-areas 4 处清毒线上生效：zh/en contact 國際認證體系 0（zh ISO 12647 3 ✓ 信任块）+ service-areas 0 + 分类页 0/about 0/ja 0（复探）。**§2.2 累计 62 清**。注：peer 本地 commit 9a2e081f（真值批 T1-T3 calendars MOQ 50→1——§0.35.7 不代持，等 peer 推）；批 D 剩余 category-conversion-blocks 4 + sku-seo 31（peer 域避让）。
 
+## 十二、批 E-1/小批/批 E-2 上线登记（14:30-15:30）+ page.tsx 补清（16:00 推）
+
+**批 E-1（blog-data 104 处）上线**：e0e81c02（zh 國際認證體系 50→0 + en internationally certified 54→0，FSC/ISO 保留），peer 推 24c9347d 时带入（14:30，F4' 全链路 CLOSED）。线上 cert-guide 探针：zh 國際認證體系 4→**0** / en internationally certified 12→**0**（schema HowTo + products.ts kraft descriptionEn 源修生效）。
+
+**小批 0fb64f11（15:00）**：blog-posts + buying-guides 無證認證詞 5 处（線上 cert-guide 残留源 2 文件），verify PASS。
+
+**批 E-2 c7a1b665（15:30）**：blog-data 品質認證 zh 18 + en 27 + 残留 2（zh-hk/ja 校园文章 en 混入词 → 品質管理體系/品質管理システム，FAQ 整句重写「EU REACH 比品質管理體系重要?」「品質管理體系是加分項」）+ **products.ts 源修 internationally certified 7**（SOP-5，「internationally certified quality management system」→「quality management system」）+ **schema-extensions 3 语 6 处**（國際認證體系/国際認証 → 深圳自有工廠/Asia factory/アジア自社工場，线上 cert-guide HowTo 残留源）。verify PASS（15:38）。
+
+**page.tsx 补清（c7a1b665 后探针发现）**：blog/[slug]/page.tsx L194 certificate-printing-guide en description「+ 4 certifications (ISO 14298:2021/FSC/G7/**international quality certification**)」→「quality management」（zh 页面 meta 用 en description，线上 6 处同源渲染；本地 grep 复算 0，tsc 54）。**16:00 推**（30min 硬下限 c7a1b665 15:30 + 30）+ 复探 cert-guide 归零。
+
+**§2.2 累计 218 清**（62 + 104 + 5 + 47）。**剩余**：批 C category-seo 7 + catalog 5（peer 域避让）+ sku-seo 2 + category-conversion-blocks 1 + business-cards 1（待 K3 §0.0）+ **products-content 批 B ~145（生成器 b81463a6 一次性搬移不可寻 + 源 products.ts 0「國際品質認證」——SOP-5 源修断，需 K3 裁决直改例外）**。
+
 ## 四、数据来源
 
 ```

@@ -191,7 +191,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-31 zprintpro-blog-deepfix v1.4 + §0.30 v2.2 拍板: en T1 速赢词 "certificate printing" (zh-hk 證書印刷 pos 11.4 CTR 12.5%) 3 locale 同步, 8000+ chars, 9 段 + 4 FAQ + 5 內鏈 + 2 callout + 2 table + JSON-LD 4 schema
     'certificate-printing-guide': {
       title: 'Certificate Printing Guide 2026: Materials, Finishes, Sizes & Compliance | ZprintPro',
-      description: '2026 Certificate Printing 8000+ word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical) + 4 materials (200-300gsm C2S/parchment/cotton/specialty) + 4 finishes (foil/spot UV/embossing/texture) + 4 sizes (A4/A5/A3/custom) + 4 certifications (ISO 14298:2021/FSC/G7/international quality certification) + 6 FAQs. ZprintPro dual-factory HK+Shenzhen, 10-10,000 piece runs, 3-5 business day production, $0.45-0.85/pc base, Free Shipping $99+ USA, WhatsApp 198 8085 1334.',
+      description: '2026 Certificate Printing 8000+ word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical) + 4 materials (200-300gsm C2S/parchment/cotton/specialty) + 4 finishes (foil/spot UV/embossing/texture) + 4 sizes (A4/A5/A3/custom) + 4 certifications (ISO 14298:2021/FSC/G7/quality management) + 6 FAQs. ZprintPro dual-factory HK+Shenzhen, 10-10,000 piece runs, 3-5 business day production, $0.45-0.85/pc base, Free Shipping $99+ USA, WhatsApp 198 8085 1334.',
       date: '2026-08-31', category: 'Printing',
       content: '',
     },
