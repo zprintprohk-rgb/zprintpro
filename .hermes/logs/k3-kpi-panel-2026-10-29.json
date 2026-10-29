@@ -1,0 +1,107 @@
+{
+ "meta": {
+  "breadth_scope": "全国家（三站点汇总, 2026-10-29 导出）",
+  "current_window": "2026-09-29..2026-10-26 (28d)",
+  "previous_window": "10-26 面板 28d 窗口（10-26 导出, 整体前移 1 天）",
+  "kpi_scope": "28d 全国家四指标（§0.37）",
+  "money_scope": "23 带钱词 SSoT 首页位（6/23）",
+  "generated_at": "2026-10-29T20:10+08:00",
+  "pull": "执行层晚间核验补产（k3-review 07:16 未产面板）",
+  "ruling": "§0.37 K3 监控口径",
+  "note": "口径变更：10-29 导出为三站点汇总（无 per-property 列）→ per-locale 卡用国家/地区表代理（中国香港/日本/美国）；10-26 面板为 per-property 拆分。全站 KPI 与 k3-review 报告双方法一致（图表 sheet 独立求和 497/20,977/13.52 = 报告值）"
+ },
+ "breadth": {
+  "current": "28d 全国家 09-29..10-26（10-29 导出）",
+  "previous": "28d 10-26 导出（10-26 面板）"
+ },
+ "kpi_card": [
+  {
+   "locale": "全站",
+   "imps_cur": 20977,
+   "imps_prev": 23014,
+   "clicks_cur": 497,
+   "clicks_prev": 461,
+   "ctr_cur": 0.0237,
+   "ctr_prev": 0.02,
+   "pos_cur": 13.52,
+   "pos_prev": 16.44
+  },
+  {
+   "locale": "中国香港",
+   "imps_cur": 12072,
+   "imps_prev": null,
+   "clicks_cur": 360,
+   "clicks_prev": null,
+   "ctr_cur": 0.0298,
+   "ctr_prev": null,
+   "pos_cur": 13.28,
+   "pos_prev": null
+  },
+  {
+   "locale": "日本",
+   "imps_cur": 2282,
+   "imps_prev": null,
+   "clicks_cur": 41,
+   "clicks_prev": null,
+   "ctr_cur": 0.018,
+   "ctr_prev": null,
+   "pos_cur": 15.92,
+   "pos_prev": null
+  },
+  {
+   "locale": "美国",
+   "imps_cur": 2753,
+   "imps_prev": null,
+   "clicks_cur": 31,
+   "clicks_prev": null,
+   "ctr_cur": 0.0113,
+   "ctr_prev": null,
+   "pos_cur": 15.61,
+   "pos_prev": null
+  },
+  {
+   "locale": "移动设备",
+   "imps_cur": 8160,
+   "imps_prev": null,
+   "clicks_cur": 208,
+   "clicks_prev": null,
+   "ctr_cur": 0.0255,
+   "ctr_prev": null,
+   "pos_cur": 10.45,
+   "pos_prev": null
+  }
+ ],
+ "money_words": {
+  "zh-hk": {
+   "食品包裝印刷": {
+    "pos_28d": 8.71,
+    "clk": 0
+   },
+   "即日印刷": {
+    "pos_28d": 7.12,
+    "clk": 1
+   }
+  },
+  "en": {
+   "small batch sticker printing": {
+    "pos_28d": 5.52,
+    "imp": 50
+   },
+   "small batch stickers": {
+    "pos_28d": 5.15,
+    "imp": 26
+   },
+   "saddle stitch booklet printing": {
+    "pos_28d": 9.6,
+    "imp": 15
+   }
+  },
+  "ja": {
+   "卒アル販売": {
+    "pos_28d": 5.0,
+    "imp": 16
+   }
+  }
+ },
+ "money_word_sources_note": "带钱词源固定: zh-hk = opportunities CSV (query 口径, 与策略 §3.3 一致); en/ja = locale_opportunities (相关市场过滤, 与策略一致); pos 为 10-29 全国家 28d 档查询页排名 (独立 xlsx 复算)"
+}
