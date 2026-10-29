@@ -251,24 +251,30 @@ def main():
 
     os.makedirs(LOGS, exist_ok=True)
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    # 去重 v3 (2026-10-29, k3-review F6'/D6 修复): 改为「最近一个告警 section」内去重,
-    # 不再用全文件去重 — 旧实现把 10-07 已记录的 0x800710E0 文本永久静默,
-    # 导致持续未决的调度故障 (weekly/blog/monthly) 每日不再可见 (10-29 只报 1 条漏 3 条)。
-    # 语义: 活跃问题每天至少可见一次 (对比上一轮告警 section), 修复后自动消失;
-    # 文件仍是 K3 每周复盘的单一事实源, 不再漏报持续故障。
+    today = ts[:10]
+    # 去重 v4 (2026-10-29, k3-review F6'/D6 修复): 按「日历日」去重 — 仅当最近一个告警
+    # section 属于**今天**时才去重; 上一轮告警若来自更早的日期, 今日全部重新可见。
+    # 旧实现全文件去重: 10-07 已记录的 0x800710E0 文本被永久静默, 持续未决的调度故障
+    # (weekly/blog/monthly) 每日不可见 (10-29 只报 1 条漏 3 条)。
+    # v3 曾按「最近 section」去重: 今天 19:10 报了 3 条后, 明早 06:43 又会被昨天 section
+    # 静默 → 只新鲜一天。v4 改为按日历日: 活跃问题**每一天**至少可见一次, 修复后自动消失。
     prev_last_section = ""
+    prev_section_day = ""
     try:
         with open(ALERT, "r", encoding="utf-8") as fh:
             prev = fh.read()
-        # 取最后一个 "## <ts> ..." 之后的内容 (最近一轮告警)
+        # 取最后一个 "## <YYYY-MM-DD> ..." section 及其日期
         idx = prev.rfind("\n## ")
         if idx >= 0:
             prev_last_section = prev[idx:]
+            m = __import__("re").match(r"\n## (\d{4}-\d{2}-\d{2})", prev_last_section)
+            if m:
+                prev_section_day = m.group(1)
     except OSError:
         pass
-    fresh = [a for a in alerts if a not in prev_last_section]
+    fresh = alerts if prev_section_day != today else [a for a in alerts if a not in prev_last_section]
     if not fresh:
-        print("\n[PASS] 告警均为上一轮已记录项 (最近 section 内无新增), 文件未追加")
+        print("\n[PASS] 告警均为今日已记录项 (当日 section 内无新增), 文件未追加")
         return 0
     with open(ALERT, "a", encoding="utf-8", newline="\n") as fh:
         fh.write(f"\n## {ts} 车道对账告警\n\n")
