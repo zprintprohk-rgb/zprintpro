@@ -27,7 +27,7 @@
 | 批 | 文件 | 处数 | 说明 |
 |---|---|---|---|
 | #14 已完成 | seo.ts 繁体+日文 | 12 | 「國際認證體系 9 + 国際認証体系 3 → 0」已 commit |
-| A | seo.ts 英文 | 9 | 「internationally certified.」分类模板——下一步 |
+| A 已完成 | seo.ts 英文+填充 | 17 | 「internationally certified 9 + 填充模板 3 语 + 補清 3 → seo.ts 全归零」已 commit（FSC/ISO 12647 保留） |
 | B | products-content.ts | 72 | 模板级语义替换（删 internationally certified 留 ISO/FSC）——大批 |
 | C | sku-seo-data.ts | 31 | **peer 活跃域——协调/等 peer 或静默后做** |
 | D | page.tsx 22 + products 7 + category-seo 8 + schema 4 + blocks 4 | 45 | 各产品页/分类页 |
