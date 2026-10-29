@@ -125,7 +125,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2024-03-15', category: '行業趨勢',
       content: '',
     },
-    'hong-kong-printing-guide': { title: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day', description: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, internationally certified factory-direct pricing.', date: '2024-05-20', category: 'Printing Guide', content: '' },
+    'hong-kong-printing-guide': { title: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day', description: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, factory-direct pricing.', date: '2024-05-20', category: 'Printing Guide', content: '' },
     'design-file-specs': {
       title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂',
       description: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤，確保印刷成品完美無瑕。',
@@ -155,7 +155,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-08-31 zprintpro-blog-deepfix v1.4 + §0.30 v2.2 拍板: zh-hk T1 速赢词 "證書印刷" (pos 11.4, CTR 12.5%) 写新 Pillar Page, 3 locale 同步, 8000+ chars, 9 段 + 4 FAQ + 5 內鏈 + 2 callout + 2 table + JSON-LD 4 schema (FAQPage + HowTo + Article + BreadcrumbList)
     'certificate-printing-guide': {
       title: '證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港 ZprintPro',
-      description: '2026 香港證書印刷 8000+ 字攻略：7 大場景（學業/企業/機構/活動/培訓/婚禮/醫療）+ 4 種材質（200-300gsm 雙粉咭/仿羊皮紙/棉紙/特種紙）+ 4 種工藝（燙金/局部UV/擊凸/壓紋）+ 4 種呎吋（A4/A5/A3/自訂）+ 4 大合規認證（ISO 14298:2021/FSC/G7/國際認證體系）+ 4 條 FAQ。智印港 ZprintPro 香港深圳雙廠，10-10,000 張小至大批量，3-5 個工作天交付，WhatsApp 198 8085 1334。',
+      description: '2026 香港證書印刷 8000+ 字攻略：7 大場景（學業/企業/機構/活動/培訓/婚禮/醫療）+ 4 種材質（200-300gsm 雙粉咭/仿羊皮紙/棉紙/特種紙）+ 4 種工藝（燙金/局部UV/擊凸/壓紋）+ 4 種呎吋（A4/A5/A3/自訂）+ 3 大合規認證（ISO 14298:2021/FSC/G7）+ 4 條 FAQ。智印港 ZprintPro 香港深圳雙廠，10-10,000 張小至大批量，3-5 個工作天交付，WhatsApp 198 8085 1334。',
       date: '2026-08-31', category: '印刷',
       content: '',
     },

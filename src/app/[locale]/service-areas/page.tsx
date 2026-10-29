@@ -147,7 +147,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
           title: 'Other Regions',
           districts: 'Canada · Singapore · Europe (DE / FR / NL / IT / ES) · Middle East · Southeast Asia',
           delivery: 'Standard 7-14 business days. Express options available.',
-          note: 'Contact us for a custom quote to your country. internationally certified + FSC-certified prints.',
+          note: 'Contact us for a custom quote to your country. FSC-certified prints.',
         },
       ],
       cta: 'Get a Free Quote',

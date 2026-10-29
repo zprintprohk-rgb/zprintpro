@@ -69,7 +69,7 @@ const translations = {
     trustBand: [
       { title: "免費打樣", sub: "滿意再下單" },
       { title: "即日交貨", sub: "特急24小時" },
-      { title: "國際認證體系", sub: "品質管理" },
+      { title: "ISO 12647 色彩", sub: "色彩管理" },
       { title: "順豐直達", sub: "全港覆蓋" },
     ],
     faqTitle: "常見問題",
