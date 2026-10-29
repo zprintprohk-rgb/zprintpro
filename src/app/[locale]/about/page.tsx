@@ -38,7 +38,7 @@ export async function generateMetadata({
 const translations = {
   'zh-hk': {
     metaTitle: '關於智印港 | 香港印刷公司推薦 | 深圳工廠直送 · 多年經驗',
-    metaDesc: '智印港 ZprintPro 扎根香港多年，專注為本地及全球企業提供高品質印刷服務。國際認證體系、FSC環保認證，累計服務全球客戶。',
+    metaDesc: '智印港 ZprintPro 扎根香港多年，專注為本地及全球企業提供高品質印刷服務。FSC環保認證，累計服務全球客戶。',
     h1: '關於智印港 ZprintPro',
     subtitle: '扎根香港超過多年，專注高品質印刷服務',
     storyTitle: '品牌故事',
@@ -47,7 +47,7 @@ const translations = {
 以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,
     advantageTitle: '核心優勢',
     advantages: [
-      { title: '品質保證', desc: '國際認證體系 + FSC 認證 · 進口四色柯式 + 數碼印刷 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 全球企業客戶信賴。' },
+      { title: '品質保證', desc: 'FSC 認證 · 進口四色柯式 + 數碼印刷 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 全球企業客戶信賴。' },
       { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/) · [查看服務承諾 SLA 適用條款](/zh-hk/faq/)' },
       { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
     ],
@@ -59,7 +59,7 @@ const translations = {
     ],
     certTitle: '資質認證',
     certs: [
-      { name: '國際認證體系', desc: '質量管理體系認證，確保每個生產環節標準化' },
+      { name: 'ISO 12647 色彩', desc: '印刷色彩標準化管理，確保色彩一致性' },
       { name: 'FSC 認證', desc: '森林管理委員會認證，環保紙張可追溯來源' },
       { name: '大豆油墨', desc: '採用環保大豆油墨，VOC排放低於行業標準50%' },
     ],
@@ -194,16 +194,16 @@ const translations = {
 
   en: {
     metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
-    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. internationally certified + FSC certified, over a decade experience, global clients. 72-hour worldwide delivery from our Hong Kong factory.',
+    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. FSC certified, over a decade experience, global clients. 72-hour worldwide delivery from our Hong Kong factory.',
     h1: 'About ZprintPro',
     subtitle: 'Premium printing service shipping to 50+ countries from Hong Kong since 2012',
     storyTitle: 'Our Story',
-    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by global businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by internationally certified + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
+    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by global businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by FSC certification, no minimums, free design mockups, and 30-second AI quotes.
 
 Our vision is "Smarter Printing, Brighter Future." Through intelligent production workflows, fully personalized customization, and eco-friendly materials, we help every brand stand out with distinctive, high-quality print that lifts recognition and competitiveness. Every order — whether 100 stickers for a DTC startup, 5,000 flyers for a community event, or 50,000 retail-ready packaging units — gets the same dedication to color accuracy, fast turnaround, and worldwide delivery to your door.`,
     advantageTitle: 'Core Advantages',
     advantages: [
-      { title: 'Quality Assurance', desc: 'internationally certified + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by global global brands.' },
+      { title: 'Quality Assurance', desc: 'FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by global global brands.' },
       { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. global order fulfilment. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/) · [View SLA Terms](/en/faq/)' },
       { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
@@ -215,7 +215,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     ],
     certTitle: 'Certifications',
     certs: [
-      { name: 'Quality Certification', desc: 'Quality management system certification ensuring standardized production' },
+      { name: 'ISO 12647 Color', desc: 'International print color standard for consistent output' },
       { name: 'FSC Certified', desc: 'Forest Stewardship Council certified, eco paper with traceable sources' },
       { name: 'Soy-based Inks', desc: 'Environmentally friendly soy inks with 50% lower VOC emissions' },
     ],
@@ -227,7 +227,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-19 P0-A: Company credentials block (cert number + issuer + validity)
     credTitle: 'Company Credentials · Verifiable',
-    credSubtitle: 'Third-party certification · internationally certified quality management · FSC forest certified paper available · Periodic renewal',
+    credSubtitle: 'Third-party certification · quality management · FSC forest certified paper available · Periodic renewal',
     // 2026-08-24 F1-batch-6 data layer refactor (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
     // object → array of {name, items: [{label, value}]} for generic UI filter
     credentials: [
@@ -345,7 +345,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
   ja: {
     metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 多年の実績',
-    metaDesc: '智印港 ZprintProは香港で長年の実績を持ち、高品質な印刷サービスを提供しています。国際認証、FSC認証、幅広いお客様にサービスを提供。',
+    metaDesc: '智印港 ZprintProは香港で長年の実績を持ち、高品質な印刷サービスを提供しています。FSC認証、幅広いお客様にサービスを提供。',
     h1: 'ZprintProについて',
     subtitle: '香港で多年以上、高品質印刷に専念',
     storyTitle: 'ブランドストーリー',
@@ -354,7 +354,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 「智印未来」（より賢いな印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から多年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
-      { title: '品質保証', desc: '国際認証 + FSC 認証 · 輸入四色オフセット + デジタル印刷 + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
+      { title: '品質保証', desc: 'FSC 認証 · 輸入四色オフセット + デジタル印刷 + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
       { title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · [SLA適用条件を見る](/ja/faq/)' },
       { title: '専門的なサービス', desc: '無料デザイン相談、無料型抜き設計、無料カラープルーフ。専任のアカウントマネージャーが見積もりから納品までワンストップでサポートします。' },
     ],
@@ -366,7 +366,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     ],
     certTitle: '認証資格',
     certs: [
-      { name: '国際認証', desc: '品質管理システム認証。各生産工程の標準化を保証。' },
+      { name: 'ISO 12647 カラー', desc: '印刷色標準化管理。色彩の一貫性を保証。' },
       { name: 'FSC 認証', desc: '森林管理協議会認証。環境配慮型紙の溯源が可能。' },
       { name: '大豆インク', desc: '環境配慮型大豆インクを採用。VOC排出量は業界標準の50%以下。' },
     ],
