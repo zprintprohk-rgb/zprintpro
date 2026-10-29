@@ -46,6 +46,12 @@
 6 组件 11 处清毒（TrustBadges 3语徽章→「ISO 12647 色彩/Color/カラー」+ SUBHEADING 3语 + FloatingQuoteCTA/CategorySharpHooks/HeroBanner「品質保證」/HowItWorks/FactoryTrust「品質管理」）——组件层残留复算 0（§0.23.2）。线上探针的 zh 分类页 5 处（徽章/特色卡/正文）已覆盖。
 **新发现**：products-content L63「國際品質認證把關」（FAQ 模板族）——批 B 域；「進口印刷設備把關」中性保留。
 
+## 七、peer F5' 交叉核验（68b51fcc）与批 B 调整（12:2x）
+
+- **peer F5'-EXTENDED 统计全树 210 处**（我的 3 词精确口径 157——**口径差异登记**：peer 更宽（含「Certified/認證」全变体 + 派生字段），我按「國際認證體系/国際認証体系/internationally certified」三词——§0.23.2 双方法：两口径方向一致，数字不同源于词表宽度，非冲突）
+- **products-content 为脚本化派生**（头部声明「从 products.ts 物理搬移 3 长文本字段（脚本化生成）」）→ **批 B 改道 SOP-5 源修**：改 products.ts 源字段 + 重跑生成器，**禁手改 products-content**
+- 批 B 状态：改道登记（生成器脚本名待查，下轮定位）；products.ts 7 处 + products-content 72 处同源一并处理
+
 ## 四、数据来源
 
 ```
