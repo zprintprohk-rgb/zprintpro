@@ -803,7 +803,7 @@ export function ProductPageV9({
                       <a href={`${localePrefix}/product/${p.slug}/`} className="hover:text-[#2873F5]">{normalizeTitle(getProductDisplayTitle(p, locale))}</a>
                     </h3>
                     <div className="font-mono text-[16px] font-bold text-[#F87314]">
-                      {a ? a.big : p.price_range}
+                      {a ? a.big : (locale === 'zh-hk' ? p.price_range : convertToFromPrice(p.price_range, locale, p.category_slug, p.slug))}
                       <span className="text-[13px] font-normal text-[#6B7280]">{a ? `${a.unitLabel}${t.fromSuffix}` : ''}</span>
                     </div>
                   </div>

@@ -19,6 +19,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Search, X, Loader2, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { convertToFromPrice } from '@/lib/pricing';
 
 interface SearchApiResult {
   type: 'product';
@@ -418,7 +419,7 @@ export function SearchDropdown({
                           </div>
                         </div>
                         <span className="text-xs text-gray-400 whitespace-nowrap">
-                          {p.price_range}
+                          {locale === 'zh-hk' ? p.price_range : convertToFromPrice(p.price_range, locale, p.category_slug, p.slug)}
                         </span>
                       </Link>
                     );

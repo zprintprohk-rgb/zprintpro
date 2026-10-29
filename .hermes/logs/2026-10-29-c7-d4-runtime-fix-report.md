@@ -53,9 +53,10 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 
 ## 5. Push 与线上验收
 
-- **T1-T3 src 批已完成并 commit（70024963）**：peer 13:14 push bcf6bcac 后窗口重开，T1-T3 与 D4 同批 commit；push 等待 peer 的 cf-check-run ≥30 min（后台异步 job，§0.25.8 不阻塞主循环）。
-- 攒批：2 scripts + 4 src 行为/数据修复 + 队列 + 报告 = ≥1 src 行为修复（pricing 单位本地化）+ ≥3 非 docs → 达标（§0.25.9）。
-- push 后必验：CF check-run success + curl `/en/category/calendars/`（50 pcs 全消失、From 1 pc 生效）+ `/en/category/greeting-cards/`（无 100張/10 張，显示 100 pcs/pcs）+ `/en/product/mini-calendars/`（无 1,000 units）。
+- **T1-T3 src 批已完成并 commit（70024963→9a2e081f amend）**：peer 13:14 push bcf6bcac 后窗口重开，T1-T3 与 D4 同批 commit；push 等待 peer 的 cf-check-run ≥30 min（后台异步 job，§0.25.8 不阻塞主循环）。
+- **T3 延展（同缺陷类，线上证据 §4 已含 PDP）**：除 pricing.ts 回退 + CategoryPageV9 L244 外，同根因 live 渲染路径一并修：ProductPageV9 L806 相关产品格 / RelatedProducts.tsx L64 / SearchDropdown L421（`p.price_range` 原样 → en/ja 走 convertToFromPrice，zh-hk 原样）/ HotProducts L260（`[MOQ] 10 張` → localizePriceUnitToken）/ search 页 ProductCard L111（`price_range.split('-')[0]` → en/ja 换算）。`components/product/ProductCard.tsx`+`product/RelatedProducts.tsx` = 无 import 死代码（仅注释提及），不修。
+- 攒批：2 scripts + 6 src 行为/数据修复 + 队列 + 报告 = ≥1 src 行为修复（pricing 单位本地化）+ ≥3 非 docs → 达标（§0.25.9）。
+- push 后必验：CF check-run success + curl `/en/category/calendars/`（50 pcs 全消失、From 1 pc 生效）+ `/en/category/greeting-cards/`（无 100張/10 張，显示 100 pcs/pcs）+ `/en/product/mini-calendars/`（无 1,000 units）+ `/en/product/premium-greeting-cards/`（PDP 相关格无 100張）。
 
 ## 6. 遗留（不属本轮）
 

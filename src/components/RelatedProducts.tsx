@@ -7,7 +7,7 @@ import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductsByCategory, getProductDisplayTitle, getProductImageAlt } from '@/data/products';
 import { getProductMainImage } from '@/lib/product-image';
-import { getDisplayAnchor } from '@/lib/pricing';
+import { getDisplayAnchor, convertToFromPrice } from '@/lib/pricing';
 
 interface RelatedProductsProps {
   currentProduct: Product;
@@ -61,7 +61,7 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
                 {getProductDisplayTitle(product, locale)}
               </h3>
               <p className="text-sm text-[#F87314] font-semibold mt-1">
-                {(() => { const a = getDisplayAnchor(product.slug, locale); return a ? `${a.big} ${a.unitLabel}${locale === 'zh-hk' ? '起' : locale === 'en' ? 'from' : '〜'}` : product.price_range; })()}
+                {(() => { const a = getDisplayAnchor(product.slug, locale); return a ? `${a.big} ${a.unitLabel}${locale === 'zh-hk' ? '起' : locale === 'en' ? 'from' : '〜'}` : (locale === 'zh-hk' ? product.price_range : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)); })()}
               </p>
             </div>
           </a>

@@ -12,6 +12,7 @@ import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductDisplayTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 import { getProductMainImage } from '@/lib/product-image';
+import { convertToFromPrice } from '@/lib/pricing';
 
 interface ProductCardProps {
   product: Product;
@@ -108,7 +109,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
         <div className="flex items-center justify-between">
           <div>
             <span className="text-[#2873F5] font-bold text-lg">
-              {product.price_range.split('-')[0]}
+              {locale === 'zh-hk' ? product.price_range.split('-')[0] : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
             </span>
             <span className="text-xs text-gray-400 ml-1">{t.from}</span>
           </div>
