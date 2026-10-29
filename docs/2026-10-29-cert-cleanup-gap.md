@@ -48,9 +48,18 @@
 
 ## 七、peer F5' 交叉核验（68b51fcc）与批 B 调整（12:2x）
 
-- **peer F5'-EXTENDED 统计全树 210 处**（我的 3 词精确口径 157——**口径差异登记**：peer 更宽（含「Certified/認證」全变体 + 派生字段），我按「國際認證體系/国際認証体系/internationally certified」三词——§0.23.2 双方法：两口径方向一致，数字不同源于词表宽度，非冲突）
+- **peer F5'-EXTENDED 统计全树 210 处**（我 3 词精确口径 157——**口径差异登记**：peer 更宽（含「Certified/認證」全变体 + 派生字段）；全 src 复算精确口径实为 **234 处**（含「international certification」大小写变体）——§0.23.2 双方法：方向一致，数字差异源于词表宽度，非冲突
 - **products-content 为脚本化派生**（头部声明「从 products.ts 物理搬移 3 长文本字段（脚本化生成）」）→ **批 B 改道 SOP-5 源修**：改 products.ts 源字段 + 重跑生成器，**禁手改 products-content**
-- 批 B 状态：改道登记（生成器脚本名待查，下轮定位）；products.ts 7 处 + products-content 72 处同源一并处理
+- 批 B 状态：改道登记（生成器脚本名待查，下轮定位）；products.ts 7 处 + products-content 145 处同源一并处理
+
+## 八、批 D-1 完成（13:1x，commit 待推 13:35）
+
+blog/contact/service-areas 4 处清毒（blog「internationally certified factory-direct pricing」→factory-direct + 「4 大合規認證（…/國際認證體系）」→「3 大合規認證（ISO 14298:2021/FSC/G7）」+ contact 信任块→「ISO 12647 色彩」+ service-areas en）——tsc 54 ✓ brand 0 ✓ build PASS。
+
+## 九、§2.2 累计进度（13:1x）
+
+**已清 58 处**（seo.ts 29 + 组件 11 + v9 4 + about 10 + D-1 4）——seo.ts/组件/v9/about/blog/contact/service-areas 层归零。
+**剩余 ~176**（精确口径 234 基）：products-content 145（SOP-5 源修待确认）+ sku-seo-data 31 + page.tsx 24（catalog 9 peer 域避让 + business-cards 2 待 K3）+ category-seo 9 + products 7 + blocks/schema/blog-posts/buying-guides 13。
 
 ## 四、数据来源
 
