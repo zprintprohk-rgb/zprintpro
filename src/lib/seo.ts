@@ -103,7 +103,7 @@ export const siteConfig = {
   // 用於 Schema.org default og:description / email signature / press-kit fallback
   // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 global printing partner 品牌定位
   description:
-    'ZprintPro is a global printing partner for businesses, schools, and creative teams — premium custom printing with internationally certified + FSC certification, 30-second AI quotes, free design mockups, no minimums, and worldwide delivery to 50+ countries.',
+    'ZprintPro is a global printing partner for businesses, schools, and creative teams — premium custom printing with FSC certification, 30-second AI quotes, free design mockups, no minimums, and worldwide delivery to 50+ countries.',
   // 2026-06-15 P0: NAP 统一修复
   // 2026-06-28 修正: zh-hk NAP.telephone 之前写 "+852 5905 1334" 假号, 客户拨不通 → 改真实 +86 198 8085 1334
   // NAP schema.telephone 跟 address.country 无强匹配要求, HK 地址 + +86 电话 GSC 不扣分
@@ -322,7 +322,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
     // - Added 5 sharp hooks: USA-targeted, Free Shipping $99+, Free Proof, 5-7 day DHL, quality-certified
     // - Title 94 → 60 chars (Google SERP no truncation)
     title: 'Custom Printing Service USA · Free Shipping + Free Proof | ZprintPro',
-    description: 'Custom printing service for USA businesses. Stickers, packaging boxes, paper bags, flyers, posters. 30-second AI quote. Free US shipping on $99+. Free design proof in 4h. 5-7 day DHL delivery. internationally certified.',
+    description: 'Custom printing service for USA businesses. Stickers, packaging boxes, paper bags, flyers, posters. 30-second AI quote. Free US shipping on $99+. Free design proof in 4h. 5-7 day DHL delivery.',
     keywords: 'custom printing service USA, online printing USA, custom stickers wholesale, packaging boxes supplier USA, paper bags wholesale, 30 second print quote, custom labels USA, rush printing USA, sticker printing USA, eco friendly printing USA, made for US businesses, custom printing DHL express',
   },
   ja: {
@@ -443,7 +443,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
-      'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified + FSC-certified.',
+      'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. FSC-certified.',
       'ja': '特急印刷・チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
     },
   },
@@ -538,9 +538,9 @@ const categorySeoData: Record<string, {
       ja: '同人誌印刷,コミケ印刷,即売会,A5同人誌,B5同人誌,アクリルスタンド,ポストカード,和紙テープ,エコトートバッグ,ホログラムステッカー,VTuber グッズ,推し活グッズ',
     },
     descriptions: {
-      'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、國際品質認證。繁體中文客服,日本在地支援。',
-      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, postcard sets and eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, internationally certified. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、国際認証取得。日本語サポート完備。',
+      'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理。繁體中文客服,日本在地支援。',
+      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, postcard sets and eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
+      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理。日本語サポート完備。',
     },
   },
   'envelopes': {
@@ -557,7 +557,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '大信封印刷 HK$0.60 起/個,一般信封 HK$0.22 起,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 訂製,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,DHL 全球 2-4 天速遞。',
-      en: 'Custom envelope printing from US$0.14/pc (business) or US$0.28/pc (C4 large), 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. internationally certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
+      en: 'Custom envelope printing from US$0.14/pc (business) or US$0.28/pc (C4 large), 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
       ja: '封筒印刷 100 個から対応. C4・C5・DL・クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. 国際認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 日本全国 + 沖縄・北海道対応.',
     },
   },
@@ -610,7 +610,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
-      'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified.',
+      'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
@@ -645,8 +645,8 @@ const categorySeoData: Record<string, {
       ja: '教科書印刷,教科書 印刷,証明書印刷,学校印刷,ワークブック,教材印刷,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
     },
     descriptions: {
-      'zh-hk': '學校印刷．證書印刷：作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + 國際品質認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'School printing for USA schools & institutions: exercise books / workbooks / textbooks / student handbooks / certificates + school bulk pricing. Free shipping over $99 to USA. FSC-certified + internationally certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 5-7 day door-to-door delivery to USA.',
+      'zh-hk': '學校印刷．證書印刷：作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'School printing for USA schools & institutions: exercise books / workbooks / textbooks / student handbooks / certificates + school bulk pricing. Free shipping over $99 to USA. FSC-certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 5-7 day door-to-door delivery to USA.',
       ja: '教科書印刷．証明書印刷：ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + 国際品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -720,7 +720,7 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
     },
     descriptions: {
       'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印港提供多種${categoryName}選擇，最快即日交貨。`,
-      en: `Custom ${categoryNameEn.toLowerCase()} printing with free shipping over $99 to USA. Quality guaranteed, transparent pricing. Made for US small businesses & global brands. DHL Express 2-4 day or FedEx Ground. Free quote in 30 seconds. Rush orders welcome. internationally certified.`,
+      en: `Custom ${categoryNameEn.toLowerCase()} printing with free shipping over $99 to USA. Quality guaranteed, transparent pricing. Made for US small businesses & global brands. DHL Express 2-4 day or FedEx Ground. Free quote in 30 seconds. Rush orders welcome.`,
       ja: `プロの${categoryNameJa}印刷サービス。品質保証、透明な価格。最短3〜5営業日で全国へお届け。無料見積もり、急ぎ対応可能。`,
     },
   };
@@ -949,10 +949,10 @@ export function generateProductMetadata(
     metaDescription = fullDesc.slice(0, 157) + '...';
   } else if (fullDesc.length < 150) {
     const padding = locale === 'zh-hk'
-      ? ` 國際品質認證，全球配送。`
+      ? ` 全球配送。`
       : locale === 'en'
-      ? ` internationally certified. Worldwide shipping.`
-      : ` 国際認証取得。全国配送対応。`;
+      ? ` Worldwide shipping.`
+      : ` 全国配送対応。`;
     metaDescription = fullDesc + padding;
     if (metaDescription.length > 160) {
       metaDescription = metaDescription.slice(0, 157) + '...';
