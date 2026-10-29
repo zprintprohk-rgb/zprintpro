@@ -96,3 +96,13 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - 队列 16 任务：DONE=3（T1-T3）/ WAITING_K3=5 / BLOCKED_INFRA=4 / SCHEDULED=3 / CLOSED_BY_K3_S0.37=1，**0 READY**（daily-content 今晚 21:17 预期 NO_OP，除非 K3 批 1 项）。
 - 今晚 20:13 gsc-feedback（幂等键 0453ab66 命中跳过）+ 21:17 daily-content 四方验收提醒已设（20:21 / 21:21 触发，判据：lane-runs.jsonl 新 run + wrapper dsh exit + 当日非兜底报告 + 调度器 LastTaskResult）。
 - 本轮 push 批：c5c845d0（D7 docs）+ c02d2e52（watchdog 行为修复）= ≥1 src/scripts 行为修复 达标（§0.25.9）；push 待 gate（peer 19:04 dca6652e 后 ≥30 min ≈ 19:34）。
+
+### 7.4 登记（只登记不修）· T5/F5' 残留补盘点：catalog-printing-china 页为 F5'-EXTENDED 注册盲区 + 线上活残留
+
+**背景**：k3-review T5（P1）=「無证认证声明」清毒；对端 §2.2 批 E-2（blog-data/products/schema/page.tsx）已完成，且七簇队列 10-29 12:0x 注册 F5'-EXTENDED = 全 src 树 210 处（products-content.ts 143 派生→SOP-5 / sku-seo-data.ts 29 / seo.ts 17 / products.ts 7 / category-conversion-blocks 3 / category-seo-content 3 / blog-posts 2 / schema-extensions 2 / components 4 / buying-guides 1）。
+
+**本次补盘点发现（双方法，数据来源：`git ls-files src/` + node 逐行计数 · ripgrep 同口径复核 · 线上 curl 探针 19:2x）**：
+- **F5'-EXTENDED 注册清单未含 `src/app/[locale]/services/catalog-printing-china/page.tsx`** —— 实为盲区：src 13 行 / 线上 zh-hk 14×國際認證體系 + 2×internationally certified、en 14×internationally certified（HTTP 200，heroSubtitle「國際認證體系 + FSC 認證」+ trustBadge「國際認證體系」+ FAQ + meta desc 均客户可见）。
+- 其余 1 行命中多为 ja 术语（国際認証 = 09-19 K3 拍板译法）与 FSC/ISO 有证保留，需对端 #15 按上下文裁决；business-cards-printing 页 3 行命中属 §0.0 名片域（K3 未裁，不越域）。
+- 全树现状（method2 行级单计数，含变体 國際認證體系/国際認証体系/國際品質認證/国際品質/internationally certified/international certifications）：products-content.ts 245 · sku-seo-data.ts 31 · category-seo-content.ts 15 · catalog-printing-china 13 · category-conversion-blocks 11 · seo.ts 4 · 其余 15 文件各 1-3（business-cards-printing 3 / about 2 / buying-guides 2 / 组件+页面 10 文件各 1）。**method1（子串计数）337+ 为叠加口径，以 method2 行级为准**。
+- **处置（本轮不修）**：catalog-printing-china 页 13 处 src 残留 + 线上活残留 = 建议对端 #15 补清（§2.2 同款：FSC/ISO 12647 有证保留，無证「國際認證體系/internationally certified」→ 中性表述）；products-content.ts 等派生文件走 SOP-5 源修复。本登记仅证据 + 建议，不改 src（peer 活跃 + 执行层无 K3 依赖项优先级内不夹带）。
