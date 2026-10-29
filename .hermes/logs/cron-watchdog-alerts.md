@@ -57,3 +57,15 @@
 
 - **车道结果异常**: ZP-weekly-meta 2026-10-23 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
 - **车道结果异常**: ZP-blog-deepfix 2026-10-24 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-10-29 06:43:19 车道对账告警
+
+- **车道结果异常**: ZP-daily-content 2026-10-29 -> STALE -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+
+## 2026-10-29 19:10:15 车道对账告警
+
+- **车道结果异常**: ZP-weekly-meta 2026-10-23 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-weekly-meta scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix 2026-10-24 -> MISSING -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-blog-deepfix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细
+- **车道结果异常**: ZP-monthly-matrix scheduler LastTaskResult=2147946720 -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细

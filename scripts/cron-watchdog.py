@@ -251,16 +251,24 @@ def main():
 
     os.makedirs(LOGS, exist_ok=True)
     ts = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    # 去重: 同一条告警文本已存在则不重复追加 (历史欠账不刷屏; 文件仍是 K3 每周复盘的单一事实源)
-    prev = ""
+    # 去重 v3 (2026-10-29, k3-review F6'/D6 修复): 改为「最近一个告警 section」内去重,
+    # 不再用全文件去重 — 旧实现把 10-07 已记录的 0x800710E0 文本永久静默,
+    # 导致持续未决的调度故障 (weekly/blog/monthly) 每日不再可见 (10-29 只报 1 条漏 3 条)。
+    # 语义: 活跃问题每天至少可见一次 (对比上一轮告警 section), 修复后自动消失;
+    # 文件仍是 K3 每周复盘的单一事实源, 不再漏报持续故障。
+    prev_last_section = ""
     try:
         with open(ALERT, "r", encoding="utf-8") as fh:
             prev = fh.read()
+        # 取最后一个 "## <ts> ..." 之后的内容 (最近一轮告警)
+        idx = prev.rfind("\n## ")
+        if idx >= 0:
+            prev_last_section = prev[idx:]
     except OSError:
         pass
-    fresh = [a for a in alerts if a not in prev]
+    fresh = [a for a in alerts if a not in prev_last_section]
     if not fresh:
-        print("\n[PASS] 告警均为历史已记录项 (去重后无新增), 文件未追加")
+        print("\n[PASS] 告警均为上一轮已记录项 (最近 section 内无新增), 文件未追加")
         return 0
     with open(ALERT, "a", encoding="utf-8", newline="\n") as fh:
         fh.write(f"\n## {ts} 车道对账告警\n\n")
