@@ -112,7 +112,7 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 
 **问题（A17，gsc-feedback 车道 §6 登记 P1）**：K3 自 10-15 起改导「三站点汇总」形态（全国家口径），detector glob 仍只匹配 `<站点>站点28天数据*.xlsx`（单站形态）→ 永远读 10-15 旧档（止 10-12，17 天龄）→ WARN_STALE ×3 误报 + 24h 恢复系数 135.5%（分母 585.2 = 三站和单站口径）与车道 109.9%（全国家 714.71）口径混用。
 
-**修复（commit `待填`，scripts 行为修复，§0.25.9 ≥1 src 行为修复达标）**：
+**修复（commit `f2e1dd1f` + 产物 `6c4fe56f`，scripts 行为修复，§0.25.9 ≥1 src 行为修复达标）**：
 - 单站档过旧（age>STALE_DAYS）或缺失时，回退读 `28天三站点汇总数据*.xlsx`（全国家口径），记录 `caliber: full-country` + `INFO_CALIBER_SWITCH` 告警（含新旧档证据行）；不再误报 WARN_STALE。
 - 24h 恢复系数：固定 585.2 分母保留但加 `recovery_ratio_vs_precliff_caliber` 标签（单站和三站和，与全国家不可比）；动态分母改用同口径全国家 mean28 并标注 `full-country`。
 - 双方法验证（§0.23.2）：实跑 → WARN_STALE ×3 消除、caliber=full-country、latest 10-26 age 3d、mean28 749.2；方法 2 独立解析汇总档 28d 日均 749.18（×28=20,977 与车道 28d 总量一致）✓；排序回归：单站档较新时仍优先单站（不误回退）✓；tsc 54=54；encoding clean。
