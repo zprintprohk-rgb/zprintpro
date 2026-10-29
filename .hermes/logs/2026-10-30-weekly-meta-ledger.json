@@ -1,0 +1,207 @@
+{
+  "schema": "weekly-meta-ledger/v1",
+  "date": "2026-10-30",
+  "lane": "ZP-weekly-meta",
+  "idempotency_key": "2d920c1eb06bb1a1",
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-weekly-meta.json @ 2026-10-30 07:01:28",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-10-29T22:43:03.988Z",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md (v1 + 2026-10-26 §6 + 2026-10-28 §7)",
+    "periodic_review": ".hermes/logs/periodic-review-weekly-2026-10-30.json/.md",
+    "gsc_index": "GSC数据/index.json (lastBuild 2026-10-29T03:46, FRESH, stalenessDays 0, totalFiles 238)",
+    "gsc_cliff": ".hermes/logs/gsc-cliff-2026-10-30.json",
+    "gsc_lane_report": ".hermes/logs/2026-10-29-ZP-gsc-feedback.md",
+    "queue": ".hermes/logs/strategy-task-queue.json",
+    "b1c": ".hermes/logs/b1c-queue-progress.json (order 1-30)"
+  },
+  "previous_run": {
+    "run_id": "ZP-weekly-meta-20261010T001056",
+    "verdict": "OK",
+    "retry_queue": [],
+    "retry_of": null
+  },
+  "recovery": {
+    "value_pct": 105.8,
+    "caliber": "full-country, same-caliber dynamic (24h 793 / 28d mean 749.2)",
+    "source_field": "gsc-cliff-2026-10-30.json realtime_24h.recovery_ratio_vs_mean28_dynamic",
+    "alternate_same_file": {
+      "value_pct": 135.5,
+      "caliber": "single-site-sum, fixed 585.2 denominator (hk+jp+us), NOT comparable to full-country",
+      "usage": "must never be quoted alone"
+    },
+    "prior_lane_method": {
+      "value_pct": 109.9,
+      "caliber": "7d mean 785.43 / 3mo pre-cliff 714.71 (2026-10-29 lane)",
+      "note": "different window definition; direction consistent >100%, not directly comparable to 105.8"
+    },
+    "detector_health_today": {
+      "sites_28d_input": "28天三站点汇总数据...2026-10-29.xlsx, latest_date 2026-10-26, data_age_days 4",
+      "warn_stale": 0,
+      "info_caliber_switch": 3,
+      "a17_status": "PARTIALLY_FIXED (28d leg now consumes 10-29 aggregate; 24h leg still reuses the 10-29 24h file, so 10-29 and 10-30 report identical 793 imps)"
+    }
+  },
+  "kpi": {
+    "window_28d": "2026-09-29..2026-10-26",
+    "clicks_28d": 497,
+    "impressions_28d": 20977,
+    "ctr_28d_pct": 2.37,
+    "avg_position_28d": 13.52,
+    "window_7d": "2026-10-20..2026-10-26",
+    "clicks_7d": 140,
+    "impressions_7d": 5498,
+    "ctr_7d_pct": 2.55,
+    "position_7d": 14.17,
+    "best_day": {"date": "2026-10-26", "clicks": 31, "impressions": 947, "ctr_pct": 3.27},
+    "money_words_homepage": "6/23"
+  },
+  "title_equiv_audit_zh_hk": {
+    "rule": "scripts/guards/title-equiv.js — CJK/fullwidth x2, others x1; target 50-57, hard block >=58",
+    "method": "in-lane hand computation (node/pwsh unavailable); reproducible with the same regex",
+    "slots": [
+      {"slug": "stickers", "equiv": 56, "band": "OK", "action": "none"},
+      {"slug": "flyers", "equiv": 59, "band": "TRIM", "action": "BLOCKED_10_26_FREEZE (poster_flyer_rush cluster)"},
+      {"slug": "packaging", "equiv": 53, "band": "OK", "action": "none"},
+      {"slug": "posters", "equiv": 53, "band": "OK", "action": "none"},
+      {"slug": "paper-bags", "equiv": 52, "band": "OK", "action": "none"},
+      {"slug": "calendars", "equiv_before": 83, "equiv_after": 52, "band_before": "TRIM", "band_after": "OK", "action": "TRIMMED"},
+      {"slug": "japan-doujin", "equiv": 66, "band": "TRIM", "action": "BLOCKED_10_26_FREEZE (doujin/comiket cluster)"},
+      {"slug": "envelopes", "equiv_before": 62, "equiv_after": 56, "band_before": "TRIM", "band_after": "OK", "action": "TRIMMED"},
+      {"slug": "menus", "equiv": 54, "band": "OK", "action": "none"},
+      {"slug": "red-packets", "equiv": 56, "band": "OK", "action": "none"},
+      {"slug": "banners", "equiv": 47, "band": "FILL", "action": "none (FILL is not a block; filling = expansion, out of batch scope)"},
+      {"slug": "books", "equiv": 57, "band": "OK", "action": "none"},
+      {"slug": "educational", "equiv": 55, "band": "OK", "action": "none"},
+      {"slug": "greeting-cards", "equiv": 72, "band": "TRIM", "action": "BLOCKED_S0_0_ASSET (§0.0 display/SEO layer pending K3 a/b/c)"},
+      {"slug": "wedding-invitations", "equiv": 53, "band": "OK", "action": "none"},
+      {"slug": "place-cards", "equiv": 38, "band": "FILL", "action": "none"}
+    ]
+  },
+  "changes": [
+    {
+      "id": "WM-1030-1",
+      "file": "src/lib/seo.ts",
+      "line": 513,
+      "slot": "categorySeoData.calendars.titles['zh-hk']",
+      "before": "月曆印刷 2027 | 1本起印・300本起上機・Q4旺季・60天預訂・免費設計・燙金精裝 | 智印港",
+      "after": "月曆印刷 2027 | 1本起印・燙金精裝・免費設計 | 智印港",
+      "equiv_before": 83,
+      "equiv_after": 52,
+      "kept": ["主詞 月曆印刷 前置", "年份 2027", "真值 MOQ 1本起印", "工藝 燙金精裝", "免費設計", "品牌 智印港 末尾一次"],
+      "removed": ["300本起上機 (与线上正文/规格 500本以上柯式 不一致, 无 products.ts 支撑)", "Q4旺季 (檔期口號)", "60天預訂 (建議口徑, 非產品事實)"],
+      "removed_numbers": ["300", "60"],
+      "added_numbers": [],
+      "basis": "≥58 = 阻断线 (K3 2026-09-19 裁决); live probe 2026-10-30 HTTP 200 证实该 83 当量版本在线"
+    },
+    {
+      "id": "WM-1030-2",
+      "file": "src/lib/seo.ts",
+      "line": 549,
+      "slot": "categorySeoData.envelopes.titles['zh-hk']",
+      "before": "大信封印刷 100個起・C4/C5/DL・急件即日・DHL 全球 2-4 天 | 智印港",
+      "after": "大信封印刷 100個起・C4/C5/DL・急件即日・DHL全球 | 智印港",
+      "equiv_before": 62,
+      "equiv_after": 56,
+      "kept": ["主詞 大信封印刷 前置", "真值 MOQ 100個起", "規格 C4/C5/DL", "急件即日", "DHL 全球", "品牌 智印港 末尾一次"],
+      "removed": ["2-4 天 (与同页规格 即日/2-3 天柯式 不一致, 交期多口徑未裁)"],
+      "removed_numbers": ["2-4"],
+      "added_numbers": [],
+      "basis": "≥58 = 阻断线; live probe 2026-10-30 HTTP 200 证实该 62 当量版本在线"
+    }
+  ],
+  "meta_description_status": {
+    "writes": 0,
+    "reason": "zero-click 池中所有 pos<=20 候选均落在 10/26 冻结批或既有词面已齐备; 其余 pos>20 摘要层不可测",
+    "zero_click_pool_28d": 28,
+    "top_candidates": [
+      {"query": "海報印刷", "imps": 287, "pos": 14.9, "clicks": 0, "blocker": "ZH-POSTER-20261028-PROCUREMENT (WAITING_K3, price arbitration)"},
+      {"query": "コミケ 印刷", "imps": 177, "pos": 18.9, "clicks": 0, "blocker": "JA-C109-20261028-DEADLINE (WAITING_K3)"},
+      {"query": "貼紙印刷", "imps": 118, "pos": 40.5, "clicks": 0, "blocker": "position 40.5 — ranking problem, meta cannot fix (NEW-1 P1)"},
+      {"query": "食品包裝印刷", "imps": 112, "pos": 8.7, "clicks": 0, "blocker": "ZH-PACKAGING-20261028-BATCH1 (WAITING_K3); also 10-10 word-face was overwritten by 10-23 truth batch"},
+      {"query": "月曆印刷", "imps": 109, "pos": 23.1, "clicks": 0, "blocker": "desc already carries word + HK$3-8 + 1本起; pos>20 unmeasurable"},
+      {"query": "宣傳單張", "imps": 108, "pos": 28.3, "clicks": 0, "blocker": "pos>20 unmeasurable; flyers cluster frozen"},
+      {"query": "宣傳單張印刷", "imps": 102, "pos": 27.2, "clicks": 0, "blocker": "desc already carries word; pos>20 unmeasurable"},
+      {"query": "印刷公司", "imps": 103, "pos": 30.8, "clicks": 0, "blocker": "multi-URL aggregation (cannibalization), not a single-page meta fix"},
+      {"query": "書刊印刷", "imps": 97, "pos": 32.2, "clicks": 0, "blocker": "desc already carries word; pos>20 unmeasurable"},
+      {"query": "poster 印刷", "imps": 77, "pos": 11.4, "clicks": 0, "blocker": "same posters freeze"},
+      {"query": "china catalog printing", "imps": 76, "pos": 15.9, "clicks": 0, "blocker": "EN-CATALOG-20261028-TRUTH (WAITING_K3)"},
+      {"query": "紙袋印刷", "imps": 65, "pos": 14.4, "clicks": 0, "blocker": "desc already carries 紙袋印刷/印刷紙袋; paperbags cluster frozen"}
+    ]
+  },
+  "guards_weekly": {
+    "#25_title_band": {"slots": 252, "existing_issues": 0, "trend": "0 -> 0 (10-23..10-26)", "verdict": "PASS"},
+    "#27_title_v5": {"slots": 252, "hard": 7, "hard_rule": "PRICE_MISMATCH", "warn": 28, "trend": "7 -> 7 -> 7 -> 7 (10-23..10-26)", "verdict": "FLAT_NOT_INCREASING"},
+    "#28_image_alt": {"daily_json": null, "note": "pre-commit only, no daily full-scan output; last live interception 2026-10-14 (folded-leaflets)", "verdict": "NOT_MEASURED"},
+    "#29_keywords_detox": {"slots": 252, "issues": 0, "exempted": 6, "trend": "0 -> 0 (10-23..10-26)", "verdict": "PASS"}
+  },
+  "similarity_review": {
+    "status": "NOT_COMPUTED_IN_LANE",
+    "reason": "pwsh/node disabled in this lane sandbox (v9.4 rearm); 8-gram Jaccard cannot be computed without fabrication",
+    "net_new_prose_this_week": [
+      ".hermes/logs/2026-10-27-bag-p1-08-zh-paper-bags-purchase-answers.md",
+      ".hermes/logs/2026-10-27-poster-p1-09-zh-posters-purchase-answers.md",
+      ".hermes/logs/2026-10-27-p1-b-en-small-batch-and-books-purchase-answers.md",
+      ".hermes/logs/2026-10-28-data-driven-batch8-10-report.md (6 zh template sentences rewritten, no new paragraphs)",
+      ".hermes/logs/2026-10-29-blog-deepfix.md (roll-up-banner-printing-guide x3 locales rewritten)"
+    ],
+    "last_measured_baseline": {"date": "2026-10-16", "file": ".hermes/analysis/b1c6b-similarity-2026-10-16.json", "worst_8gram": 0.141, "red_line": 0.60},
+    "owner": "host wrapper / next node session",
+    "command": "reuse .hermes/_b1c6b_similarity.cjs / _b1c7_similarity.cjs (same 8-gram caliber) on the three weekly artifacts; write results to .hermes/analysis/",
+    "risk_if_skipped": "cannot certify 'no near-duplicate prose added this week'; must not claim PASS"
+  },
+  "learning_review": {
+    "entered_learning_candidates": 0,
+    "reason": "10-10 meta word-face batch attribution invalid: packaging/zh-hk slot was overwritten by the 10-23 truth batch (current desc has no 食品包裝印刷), and the surviving slots are all pos>16.8 where CTR is structurally near-zero => INSUFFICIENT_DATA, not a valid retest",
+    "evidence": [
+      ".hermes/logs/2026-10-10-ZP-weekly-meta.md",
+      ".hermes/logs/2026-10-29-ZP-gsc-feedback.md §3.1/§11.3",
+      "src/lib/seo.ts L465 (current packaging desc)"
+    ]
+  },
+  "decisions": [
+    {"task_id": "REVIEW-20261030-WEEKLY", "decision": "DONE", "reason": "this report + ledger + SCALE/HOLD/FIX/STOP table"},
+    {"task_id": "ZH-POSTER-20261028-PROCUREMENT", "decision": "HOLD", "reason": "WAITING_K3: poster price 9/45 vs basePrice 16/20 unresolved"},
+    {"task_id": "ZH-PACKAGING-20261028-BATCH1", "decision": "HOLD", "reason": "WAITING_K3 approval gate"},
+    {"task_id": "EN-STICKER-20261028-SMALLBATCH", "decision": "HOLD", "reason": "WAITING_K3 unit/price truth"},
+    {"task_id": "EN-CATALOG-20261028-TRUTH", "decision": "HOLD", "reason": "WAITING_K3 MOQ/currency truth"},
+    {"task_id": "JA-C109-20261028-DEADLINE", "decision": "HOLD", "reason": "WAITING_K3 price/rush boundaries"},
+    {"task_id": "MEASURE-20261028-ATTRIBUTION", "decision": "STOP", "reason": "closed by K3 §0.37 (no GA4/008/order integration)"},
+    {"task_id": "GEO-20261103-AI-PROBE-S1", "decision": "HOLD", "reason": "scheduled 2026-11-03"},
+    {"task_id": "REVIEW-20261101-MONTHLY", "decision": "HOLD", "reason": "scheduled 2026-11-01"},
+    {"task_id": "TRUTH-T1-20261029-CALENDARS-50PCS", "decision": "STOP", "reason": "terminal DONE 2026-10-29"},
+    {"task_id": "TRUTH-T2-20261029-MINI-CALENDARS-1000", "decision": "STOP", "reason": "terminal DONE 2026-10-29"},
+    {"task_id": "TRUTH-T3-20261029-EN-UNIT-LOCALIZE", "decision": "STOP", "reason": "terminal DONE 2026-10-29"},
+    {"task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7", "decision": "FIX", "reason": "owner K3-admin; 0x80070020 file-lock failures persist on 3 lanes"},
+    {"task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd", "decision": "FIX", "reason": "owner K3-admin"},
+    {"task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3", "decision": "FIX", "reason": "owner K3-admin"},
+    {"task_id": "CATEGORY-TITLE-EQUIV-20261030", "decision": "PROPOSED_NOT_WRITTEN", "reason": "queue is a derived file and must not be hand-edited; proposal only, owner ZP-weekly-meta, next_check 2026-11-06"}
+  ],
+  "open_findings": [
+    {"id": "F-WM-1", "severity": "P1", "finding": "/zh-hk/category/flyers/ title = 59 equiv (>57 by 2) and /category/japan-doujin/ = 66; both inside the 10/26 frozen cluster URL-division table, so not touched this run", "next": "K3 confirm freeze scope or unfreeze for a title-only TRIM"},
+    {"id": "F-WM-2", "severity": "P1", "finding": "/category/greeting-cards/ zh title = 72 equiv with no brand suffix; en title still says 'Business & Holiday Card Printing from $0.50' (false price; 真值 $0.13-0.23) and the word 'Business' touches the §0.0 display layer", "next": "K3 §0.0 (a)/(b)/(c) ruling; not executable by this lane"},
+    {"id": "F-WM-3", "severity": "P2", "finding": "en/ja category titles are outside #25/#27 coverage (252 audit slots are SKU-only); spot check shows several en titles >57 and ja calendars title far above band", "next": "dedicated category-title audit batch with locale-native review"},
+    {"id": "F-WM-4", "severity": "P2", "finding": "detector 24h leg still reuses 2026-10-29 file (10-29 and 10-30 both 793 imps); ratio 135.5% still uses fixed 585.2 denominator", "next": "C8 completion, owner infra"},
+    {"id": "F-WM-5", "severity": "P2", "finding": "10-10 packaging desc word-face change was overwritten by 10-23 truth batch without an attribution note", "next": "packaging batch1 package to decide whether to restore 食品包裝印刷 word face at pos 8.7"}
+  ],
+  "verification": {
+    "in_lane": [
+      "2 TRIM-target old strings absent / 2 new strings present (grep); the 2 evaluated-then-reverted lines (flyers L432, japan-doujin L530) are byte-identical to the pre-run state",
+      "live probe 2026-10-30: /zh-hk/category/calendars/ HTTP 200 with 83-equiv title; /zh-hk/category/envelopes/ HTTP 200 with 62-equiv title (before-state confirmed)",
+      "no new numbers added (only removals: 300/60/2-4)",
+      "no description, slug, route, 301, price, MOQ, schema, image field touched",
+      "grep: 0 hits for 激安/業界最安/最安値/Made in USA/US-based in the two new strings"
+    ],
+    "not_run": [
+      "node scripts/guards/title-equiv.js / title-band-guard / title-v5-guard",
+      "tsc --noEmit (54=54 baseline)",
+      "pre-commit guard chain (encoding/brand/i18n/gsc-leak/entity)",
+      "post-deploy curl of new titles (wrapper pushes after lane exit)"
+    ]
+  },
+  "next_checks": [
+    {"date": "2026-11-06", "check": "calendars/envelopes 新 title 在 28d 档的索引与 CTR; 阈值 = 两页 28d imp 不低于 109/62 的 80% 且 月曆印刷 类词出现 >=1 点击", "owner": "ZP-weekly-meta"},
+    {"date": "2026-11-06", "check": "flyers 59 / japan-doujin 66 / greeting-cards 72 的冻结解除或 K3 裁示", "owner": "K3"},
+    {"date": "2026-11-03", "check": "detector 24h leg 是否消费新档 (C8 收口)", "owner": "infra"},
+    {"date": "2026-11-23", "check": "七簇基线同口径复跑 (10-26 冻结版)", "owner": "ZP-monthly-matrix"}
+  ]
+}
