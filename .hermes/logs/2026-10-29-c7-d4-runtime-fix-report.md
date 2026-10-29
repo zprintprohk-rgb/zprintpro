@@ -130,8 +130,10 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 
 **覆盖范围核实**：七簇 K3 决策队列 L113 无 FDA 条目 · strategy-task-queue.json 16 任务 FDA 命中 0 · peer F5'-EXTENDED 210 处清单（只覆盖 認證體系/internationally certified 类）不含 FDA 声明 · **= 登记盲区，新登记 T7**。
 
+**确定性复核（三闸门 #3，node 探针 3 语 × 3 次 = 9 次全一致，22:2x）**：zh-hk FDA=6/food=8（3次一致）· en FDA=6/food=6（3次一致）· ja FDA=6/food=8（3次一致）；全部 HTTP 200 + len 128-138 KB。en food=6 为 food-grade 词（少 2 因 zh/ja 另有「食品級/食品グレード」词形计数差异，口径一致）。
+
 **处置（本轮不修，只登记）**：FDA 声明撤/留需 K3-7 claims policy 裁决或对端 #15 按 §2.2 同款执行（有证保留 FSC/ISO 12647，無证 FDA/食品級/損壞率 < 0.5% → 中性表述「可選食品級油墨選項」）；catalog-printing-china 页属对端 #15 域 + peer 活跃（§0.35.7 双条件②未满足），执行层不夹带。本登记证据 + 建议入 `strategy-task-queue.json` 候选（§7.2 纪律：由 GSC/daily 车道消费，不自行批准）。
-- **数据来源**：catalog-printing-china/page.tsx L165/180/254/269/344/359 · 线上 zh-hk curl 探针（HTTP 200，22:0x）· docs/2026-08-28-07-28-3-blogs-en-rewrite-report.md L6-10（K3 8/19 12件事 + FDA 21 CFR 公开法规来源）· 七簇 K3 决策队列 L113 · strategy-task-queue.json（16 任务 FDA 命中 0）· docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md §2.2。
+- **数据来源**：catalog-printing-china/page.tsx L165/180/254/269/344/359 · 线上 node 探针 3 语 ×3（HTTP 200，22:2x）· docs/2026-08-28-07-28-3-blogs-en-rewrite-report.md L6-10（K3 8/19 12件事 + FDA 21 CFR 公开法规来源）· 七簇 K3 决策队列 L113 · strategy-task-queue.json（16 任务 FDA 命中 0）· docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md §2.2。
 
 ### 7.7 线上验收 · T1-T3 已在线上生效（124b0b11 批 13:53 部署确认）
 
