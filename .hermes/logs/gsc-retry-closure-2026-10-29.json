@@ -1,0 +1,276 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-10-29",
+  "run": {
+    "trigger": "schtasks 20:13",
+    "started_at": "2026-10-29 20:13:02",
+    "mode": "retry_backfill + idempotent_review",
+    "idempotency_key": "0453ab66a64d9edd",
+    "idempotency_hit": "ZP-gsc-feedback-20261029T012114-harness (2026-10-29 01:21, same day/target -> analysis ALREADY_DONE)",
+    "preflight": "ok (run-context-ZP-gsc-feedback.json @ 2026-10-29 20:13:02)",
+    "reanalysis_performed": false,
+    "src_touched": false,
+    "strategy_task_queue_touched": false,
+    "sibling_files_touched": false
+  },
+  "retry_queue": [
+    {
+      "day": "2026-10-24",
+      "queue_status": "FAILED",
+      "queue_note": "ran but no report file dated 2026-10-24",
+      "failure_class": "REPORT_MISATTRIBUTION (not an analysis gap)",
+      "bus_record": {
+        "run_id": "ZP-gsc-feedback-20261024T201343",
+        "fired_at": "2026-10-24 20:13:43",
+        "wrapper_exit": 0,
+        "dsh_exit": null,
+        "verdict_recorded": "OK",
+        "report_field": ".hermes/logs/2026-10-23-ZP-k3-review.md",
+        "report_auto_generated": false,
+        "pushed": true,
+        "head": "07d53b90",
+        "defect": "report field points at another lane's previous-day report (k3-review 10-23); no 2026-10-24 gsc-feedback report exists -> lane-status correctly judged FAILED"
+      },
+      "detector_evidence": {
+        "file": ".hermes/logs/gsc-cliff-2026-10-24.json",
+        "alerts": "WARN_STALE x3 (28d file = 2026-10-15 batch, latest day 2026-10-12, age 12d)",
+        "realtime_24h": "758 imps / 21 clicks, window 2026-10-22T00:00..23:00 (frozen 10-23 file, reused by 10-24/26/27/28)"
+      },
+      "day_metrics_recovered": {
+        "window": "2026-10-24 single calendar day",
+        "caliber": "full-country, 28d site-summary daily series exported 2026-10-29",
+        "impressions": 594,
+        "clicks": 10,
+        "ctr": "1.68%",
+        "note": "lowest day of the post-cliff recovery segment (10-25 = 749 / 10-26 = 947)"
+      },
+      "coverage": [
+        "gsc-deep-analysis-2026-10-26.json window 2026-09-28..2026-10-25 includes 10-24",
+        ".hermes/logs/2026-10-29-ZP-gsc-feedback.md section 1.1 daily series carries the 10-24 value"
+      ],
+      "verdict": "CLOSED_DIAGNOSED",
+      "historical_verdict_preserved": "FAILED (per contract 6.3: historical MISSING/FAILED must not be rewritten as success)",
+      "action_left": "none analytical; attribution defect already fixed in current wrapper (validate_lane_report requires the exact same-day lane report and skips auto-filled placeholder reports)"
+    },
+    {
+      "day": "2026-10-26",
+      "queue_status": "FAILED",
+      "queue_note": "report is an auto-filled placeholder or lacks a complete OK contract (2026-10-26-ZP-gsc-feedback.md)",
+      "failure_class": "REPORT_ABSENT_AUTOFILL (analysis artifact DID exist; only the lane report was missing)",
+      "bus_record": "NO row for lane ZP-gsc-feedback on 2026-10-26 in .hermes/logs/lane-runs.jsonl (verified: only daily-content / k3-review rows that day)",
+      "report_on_disk": {
+        "file": ".hermes/logs/2026-10-26-ZP-gsc-feedback.md",
+        "content": "auto-filled placeholder stub, generated 2026-10-26 20:13:04 by scripts/lane-git-commit.py",
+        "lane_status_exit": 1
+      },
+      "analysis_artifacts_that_existed": [
+        ".hermes/logs/gsc-deep-analysis-2026-10-26.json (current window 2026-09-28..2026-10-25, 1565 rows; previous 2026-08-31..2026-09-27, 1681 rows)",
+        ".hermes/logs/gsc-query-country-2026-10-26.csv + previous-28d variant",
+        ".hermes/logs/gsc-query-page-country-2026-10-26.csv + previous-28d variant",
+        ".hermes/logs/gsc-date-country-56d-2026-10-26.csv + gsc-date-page-56d",
+        ".hermes/logs/gsc-opportunities-2026-10-26.csv",
+        ".hermes/logs/page-probe-2026-10-26.json"
+      ],
+      "substance_recovered": {
+        "scope": "full-property date/page (do not mix with query scope)",
+        "totals_cur": {"clicks": 461, "impressions": 23014, "ctr": "2.00%", "avg_pos": 16.44},
+        "totals_prev": {"clicks": 384, "impressions": 23794, "ctr": "1.61%", "avg_pos": 17.22},
+        "delta": "clicks +20.1%, impressions -3.3%, avg pos -0.78 (improved)",
+        "locale": "zh-hk +2.3% imps / +23.6% clicks; en -17.1% imps but pos 16.46->13.36 and CTR 0.86->1.04% (consolidation, not decay); ja -2.2% imps / +12.5% clicks",
+        "market": "query scope (not date/page, must not be added to the totals above): hkg 51 clk/4852 imp; usa 7/1157 (-493 imps, pos -3.15); jpn 2/847; other 6/677"
+      },
+      "coverage": [
+        ".hermes/logs/2026-10-28-ZP-gsc-feedback.md section 3 + anomaly A13 consumed this exact file (461/23014 vs 384/23794)",
+        ".hermes/logs/2026-10-29-ZP-gsc-feedback.md re-based the same questions on the newer full-country 28d batch"
+      ],
+      "new_increment_delivered_now": "CTR-gap pool intent tiering (48 words / 800 impressions, window 2026-09-28..2026-10-25) - never carried into any lane report; see ctr_pool_backfill_10_26",
+      "verdict": "CLOSED_DIAGNOSED",
+      "historical_verdict_preserved": "FAILED"
+    },
+    {
+      "day": "2026-10-27",
+      "queue_status": "FAILED",
+      "queue_note": "report is an auto-filled placeholder or lacks a complete OK contract (2026-10-27-ZP-gsc-feedback.md)",
+      "failure_class": "REPORT_ABSENT_AUTOFILL + ZERO_ANALYSIS_ARTIFACT",
+      "bus_record": {
+        "run_id": "ZP-gsc-feedback-20261027T201311",
+        "fired_at": "2026-10-27 20:13:11",
+        "wrapper_exit": 0,
+        "dsh_exit": null,
+        "report_field": "NONE",
+        "report_auto_generated": true,
+        "pushed": false,
+        "head": "b6d32b35"
+      },
+      "cross_lane_note": "same defect class hit the other direction: ZP-k3-review-20261027T071033 has report '.hermes/logs/2026-10-26-ZP-gsc-feedback.md' (another lane's previous-day report)",
+      "detector_evidence": {
+        "file": ".hermes/logs/gsc-cliff-2026-10-27.json",
+        "alerts": "WARN_STALE x3 (28d file = 2026-10-15, latest day 2026-10-12, age 15d)",
+        "realtime_24h": "still the 2026-10-23 file (758 imps / 21 clicks, window 10-22) -> a 10-27 report could not have produced a live recovery number"
+      },
+      "day_metrics_recovered": {
+        "available": false,
+        "why": "on-disk windows do not cover 2026-10-27: 28d = 09-29..10-26, 7d = 10-20..10-26, 24h = 10-27T22:00..10-28T21:00 (only the last 2 hours of 10-27)",
+        "options": "a fresh GSC export whose window includes 10-27 (GSC retains 16 months) would be required; not requested now because the 10-28/10-29 windows already bound the adjacent trend",
+        "fabrication_guard": "no number was estimated or inferred for 2026-10-27"
+      },
+      "verdict": "UNRECONSTRUCTABLE_NO_FABRICATION",
+      "historical_verdict_preserved": "FAILED (and stays FAILED; not retroactively 'covered')"
+    }
+  ],
+  "retry_summary": {
+    "items": 3,
+    "closed_diagnosed": 2,
+    "unreconstructable": 1,
+    "reanalysis_performed": false,
+    "second_retry_same_cause": false,
+    "note": "All three days were already bounded by later runs; this pass closes the evidence gaps rather than re-running analysis, and adds one never-delivered increment (CTR intent tiering)."
+  },
+  "a15_recheck": {
+    "status_before_this_run": "OPEN (19 days) per .hermes/logs/gsc-daily-anomaly-2026-10-29.json written 01:25",
+    "status_now": "RESOLVED",
+    "evidence": {
+      "file": "GSC数据/index.json",
+      "lastBuild": "2026-10-29T03:46:00+08:00",
+      "latestFreshData": "2026-10-29",
+      "stalenessDays": 0,
+      "freshnessStatus": "FRESH",
+      "filesByDate_2026_10_29": 4,
+      "totalFiles": 238
+    },
+    "fix_evidence": [
+      "scripts/rebuild-gsc-index.mjs exists (new generator, SOP-5 compliant)",
+      ".hermes/logs/2026-10-29-c6-gsc-index-rebuild-report.md documents the rebuild + gate #9 one-line fix (stalenessDays || -1 -> ?? -1) + commit f98c8d89 03:50:58"
+    ],
+    "supersedes": ".hermes/logs/gsc-daily-anomaly-2026-10-29.json A15 field (was written before the 03:46 rebuild) - do not resurface as open"
+  },
+  "residual_defect_A17": {
+    "name": "DETECTOR_INPUT_SPLIT",
+    "status": "OPEN",
+    "fact": "gsc-cliff-2026-10-29.json still consumes the 2026-10-15 per-site 28d batch (latest day 2026-10-12, age 17d) and raises WARN_STALE x3, although 4 fresh exports dated 2026-10-29 sit in GSC数据/",
+    "cause": "scripts/gsc-cliff-detector.py L93 globs only '{site}站点28天数据*.xlsx'; the 10-29 batch is named '28天三站点汇总数据...'. File patterns for the summary batch are not accepted.",
+    "impact": "the recovery-mode block requires RECOVERY to be sourced from gsc-cliff-<date>.json, but that file's inputs are 17d old -> the mandatory line cannot be sourced from it; lane reports must compute the ratio manually and label the caliber",
+    "not_a_regression_of": "A15 (index freshness) - that gate is fixed; this is the detector's own input selection",
+    "candidate_task": "GSC-20261029-C8"
+  },
+  "instrument_reconciliation": {
+    "question": "which recovery ratio is canonical on 2026-10-29",
+    "inputs": {
+      "detector_24h_imps": 793,
+      "detector_fixed_baseline": 585.2,
+      "detector_baseline_note": "PRECLIFF_BASELINE_COMBINED constant = sum of mean28 in gsc-cliff-2026-10-13.json (28d window ending 2026-10-05)",
+      "lane_precliff_baseline": 714.71,
+      "lane_baseline_note": "3mo file pre-cliff 2026-09-25..2026-10-08 daily mean (10006/14)",
+      "lane_latest_7d_daily": 785.43,
+      "lane_method2_baseline": 732.50
+    },
+    "methods": [
+      {"id": "detector_as_written", "formula": "793 / 585.2", "result": "135.5%"},
+      {"id": "detector_rebased", "formula": "793 / 714.71", "result": "111.0%"},
+      {"id": "lane_method_1", "formula": "785.43 / 714.71", "result": "109.9%"},
+      {"id": "lane_method_2", "formula": "785.43 / 732.50", "result": "107.2%"}
+    ],
+    "agreement": "after aligning the denominator, 111.0% / 109.9% / 107.2% agree within 3.8pp (1.1pp between the two primary methods); the 135.5% figure is a denominator artifact, not a recovery jump",
+    "canonical": "109.9% (same-batch 3mo pre-cliff vs 7d, full-country caliber)",
+    "rule": "never quote 135.5% as the recovery ratio; if the detector number is cited, it must be labeled 'fixed 585.2 baseline, 28d window ending 10-05' and cannot be compared with 108.3% (three-country) or 109.9% (full-country)"
+  },
+  "ctr_pool_backfill_10_26": {
+    "source": ".hermes/logs/gsc-deep-analysis-2026-10-26.json -> ctr_gaps[]",
+    "window": "2026-09-28..2026-10-25 (query scope)",
+    "pool": {"words": 48, "impressions": 800, "clicks": 0, "note": "every entry has clicks_cur = 0; impressions are the sum of imps_cur"},
+    "tiers": {
+      "commercial": {
+        "count": 18,
+        "impressions": 384,
+        "words": [
+          "食品包裝印刷 104@9.11",
+          "食品印刷 54@9.31",
+          "small batch sticker printing 49@4.77",
+          "small batch stickers 28@5.07",
+          "餐牌印刷 27@9.37 (clk 1->0)",
+          "喜帖印刷 15@9.60",
+          "saddle stitch booklet printing 15@9.60 (94->15 imps, 2->0 clk)",
+          "印刷海報 14@9.07",
+          "印刷信封 10@2.70",
+          "a2印刷 9@3.44",
+          "同人誌印刷 9@3.33",
+          "a3 海報 印刷 9@7.00",
+          "small batch custom stickers 8@9.25",
+          "school exercise book printing 8@5.75",
+          "海報打印 8@9.12",
+          "exercise book printing 6@7.00",
+          "海報 印刷 6@7.83",
+          "印刷報價 5@7.20"
+        ],
+        "action": "title/meta / answer-block candidates after re-pull of the 10-29 28d query rows; 18 words carry 48% of the pool's impressions"
+      },
+      "ambiguous": {
+        "count": 22,
+        "impressions": 321,
+        "words": [
+          "大信封 44@3.47", "燙金利是封 35@1.00", "large envelope 32@3.69", "zprint 32@8.44",
+          "包裝食品 裡印 29@9.24", "z print 23@7.87", "卒アル販売 16@5.00", "畢業紀念冊香港 14@1.72",
+          "印poster 13@6.46", "pvc貼紙 11@7.18", "海報尺寸 9@8.33", "flash collect alipay 8@7.13",
+          "batch stickers 6@2.17", "燙金貼紙 6@5.33", "卒アル 販売 6@7.00", "食品包裝材質 6@4.67",
+          "四六判 中綴じ 6@5.33", "poster尺寸 5@8.40", "pvc menus 5@4.80", "卒業アルバム 販売 5@1.20",
+          "zprints 5@5.40", "買紙袋 5@9.20"
+        ],
+        "note": "3 brand variants (zprint / z print / zprints = 60 imps, 2 clicks in the prior window, 0 now) are NOT CTR defects - brand SERP answers absorb the click; do not rewrite titles for them",
+        "action": "judge intent before touching (10-28 report already flagged 燙金利是封 as intent mismatch, not a CTR fault)"
+      },
+      "informational": {
+        "count": 8,
+        "impressions": 95,
+        "words": [
+          "邊度有紙袋買 23@7.87", "a5 flyer size 17@8.59", "a5 vs a6 flyer 14@6.36",
+          "印喜帖價格 11@9.09", "a2 size poster 10@8.40", "喜帖價錢 7@8.86",
+          "喜帖價格 7@5.57", "シール pvcとは 6@9.33"
+        ],
+        "action": "AEO / answer-block material, not title/meta work"
+      }
+    },
+    "usage_rule": "weekly-meta consumes the commercial tier first and must re-verify each word against the 2026-10-29 28d export before editing; this lane changes no page"
+  },
+  "candidate_tasks": [
+    {
+      "task_id": "GSC-20261029-C8",
+      "intent": "let gsc-cliff-detector consume the site-summary batches (24h/7d/28d) so a fresh export cannot leave the detector 17d stale",
+      "target": "scripts/gsc-cliff-detector.py L38/L93",
+      "write_scope": "script only (no page, no data file)",
+      "approval": "recovery-mode block item 1 / contract 7.2 (evidence + candidate only)",
+      "owner": "infra (K3-admin for scheduled-process validation)",
+      "next_check": "2026-10-30",
+      "acceptance": "gsc-cliff-2026-10-30.json has no WARN_STALE when a same-day export exists; ratio states its baseline window"
+    },
+    {
+      "task_id": "GSC-20261029-C9",
+      "intent": "hand the intent-tiered CTR pool (18 commercial / 384 imps) to weekly-meta as its ordered worklist",
+      "target": ".hermes/logs/gsc-retry-closure-2026-10-29.json -> ctr_pool_backfill_10_26",
+      "write_scope": "none for this lane",
+      "approval": "10-09 brain directive #2 (CTR repair pool) - no new K3 decision",
+      "owner": "weekly-meta",
+      "next_check": "2026-11-06"
+    }
+  ],
+  "red_lines": [
+    "no src/ change; no title/description; no 301; no greeting-card asset; no middleware",
+    "strategy-task-queue.json not written (sibling lane wrote it today)",
+    "matrix not rewritten (already backfilled by the 01:21 run; nesting anomaly registered by C6 report, not hand-fixed)",
+    "index.json / gsc-cliff-*.json / lane-status.json / lane-runs.jsonl not modified",
+    "historical FAILED days not rewritten as OK"
+  ],
+  "sources": [
+    ".hermes/logs/run-context-ZP-gsc-feedback.json (2026-10-29 20:13:02)",
+    ".hermes/logs/lane-status.json (2026-10-29T11:43:10.127Z = 19:43 local)",
+    ".hermes/cron-prompts/lane-results-bus-contract.md (sections 2, 6.3, 7.1-7.2)",
+    ".hermes/logs/lane-runs.jsonl lines 41,45,47,49 (10-24 / 10-26 absence / 10-27 / k3-review cross-attribution)",
+    ".hermes/logs/2026-10-26-ZP-gsc-feedback.md + 2026-10-27-ZP-gsc-feedback.md (auto-filled placeholder stubs)",
+    ".hermes/logs/gsc-cliff-2026-10-24.json / -26 / -27 / -29 (WARN_STALE + realtime window)",
+    ".hermes/logs/gsc-deep-analysis-2026-10-26.json (ctr_gaps 48 entries + full_total)",
+    ".hermes/logs/2026-10-29-ZP-gsc-feedback.md (daily series 10-24 = 594/10; recovery 109.9%)",
+    "GSC数据/index.json (lastBuild 2026-10-29T03:46, FRESH) + .hermes/logs/2026-10-29-c6-gsc-index-rebuild-report.md",
+    "scripts/gsc-cliff-detector.py L38-43/L93 (input globs + fixed 585.2 baseline)",
+    "scripts/lane-git-commit.py L274-308 (current same-day exact-report validation)"
+  ]
+}
