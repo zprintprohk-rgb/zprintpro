@@ -313,7 +313,7 @@ const labels: Record<string, Record<string, string>> = {
     title: 'Quickly Find Your Use Case',
     subtitle: 'Start with 3 of the most common industries to see what you can print in this category.',
     moreLink: 'View All Industry Solutions →',
-    fallbackHook: 'Professional printing service, 100 MOQ, internationally certified, 30-second AI instant quote',
+    fallbackHook: 'Professional printing service, 100 MOQ, 30-second AI instant quote',
   },
   ja: {
     title: 'あなたの用途を素早く見つける',

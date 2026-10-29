@@ -224,7 +224,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
               ? '多年印刷經驗 · 全球客戶 · 全球多國發貨'
               : locale === 'ja'
               ? '長年の印刷実績 · 国際認証 · グローバル顧客 · 多国へ発送'
-              : 'Over a decade in business · Internationally certified · Global customers · Ships worldwide'}
+              : 'Over a decade in business · Global customers · Ships worldwide'}
           </p>
           <a
             href={`/${locale}/quote/`}
