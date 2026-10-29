@@ -510,7 +510,7 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '月曆印刷 2027 | 1本起印・300本起上機・Q4旺季・60天預訂・免費設計・燙金精裝 | 智印港',
+      'zh-hk': '月曆印刷 2027 | 1本起印・燙金精裝・免費設計 | 智印港',
       en: 'Calendar Printing 2027 from $0.40 | 1 MOQ | ZprintPro',
       ja: 'カレンダー印刷 2027 1部〜・300部からオフセット · Q4繁忙期 + 60日予約 + 箔押し上製本 | ZprintPro',
     },
@@ -546,7 +546,7 @@ const categorySeoData: Record<string, {
   'envelopes': {
     // 2026-08-26 K3 批 1 十五词 (大信封 pos 2.21 第 1 优先) + 信封顏色/彩色信封/信封 封面 + Pearl Envelopes + China Price Quote + 大型封筒 注入
     titles: {
-      'zh-hk': '大信封印刷 100個起・C4/C5/DL・急件即日・DHL 全球 2-4 天 | 智印港',  // 2026-09-03 D-9/2-32 校准后 R2 摘果: 大信封 7d pos 2.16/89 imp/0 click
+      'zh-hk': '大信封印刷 100個起・C4/C5/DL・急件即日・DHL全球 | 智印港',  // 2026-09-03 D-9/2-32 校准后 R2 摘果: 大信封 7d pos 2.16/89 imp/0 click
       en: 'Pearl Envelopes Printing 100 MOQ + Custom Color + China Envelope Printing Price Quote + DHL Global | ZprintPro',
       ja: '大型封筒 印刷 A2/B4 + C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ | 100枚〜・ISO認証・DHL全国 | ZprintPro',
     },
