@@ -118,3 +118,17 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - 双方法验证（§0.23.2）：实跑 → WARN_STALE ×3 消除、caliber=full-country、latest 10-26 age 3d、mean28 749.2；方法 2 独立解析汇总档 28d 日均 749.18（×28=20,977 与车道 28d 总量一致）✓；排序回归：单站档较新时仍优先单站（不误回退）✓；tsc 54=54；encoding clean。
 - **边界**：detector 会把同一全站序列复制到 hk/jp/us 三键（汇总档无分站数据）——诚实标注 caliber 而非伪造分站数据；历史 gsc-cliff JSON 不改写。
 - **数据来源**：`scripts/gsc-cliff-detector.py` L31-56/L88-100/L130-145 · GSC数据/ 目录实盘（10-29 4 新档 = 三站点汇总形态，最新单站档 10-15）· 实跑输出 gsc-cliff-2026-10-29.json · openpyxl 独立复算 749.18。
+
+### 7.6 登记（只登记不修）· T7：catalog-printing-china 页 FDA 食品級油墨 = 无证认证声明（§2.2 战略点名项）
+
+**发现（本轮补盘点，线上双证 + src 锚点）**：`src/app/[locale]/services/catalog-printing-china/page.tsx` 三语种各含 **FDA 食品級油墨声明**：
+- zh-hk：L165 `{ title: 'FDA 食品級油墨', desc: '大豆油墨 + 食品級油墨可選...' }` + L180 FAQ `'...FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%...'`
+- en：L254 `'FDA Food-Grade Ink'` + L269 FAQ 同款；ja：L344 `'FDA食品グレードインク'` + L359 FAQ 同款
+- 线上 zh-hk 探针（22:0x，HTTP 200）：**FDA 命中 6 / 食品級 8**（hero/FAQ/desc 均客户可见）
+
+**SOP-10 5问 #3 判定（原数据/拍板来源）**：K3 8/19 拍板「12 件事属实」= FSC-C123456 + 15年 + 1,000+客户 + 海德堡 6+1 + 12行业 + 24h SLA + 国际顶级 + ISO 9001 —— **不含 FDA**；FDA 21 CFR §176.170/176.180 仅为 blog 引用的公开法规（材料合规性，8/28 en/ja rewrite 数据来源），**不等于「本站油墨已获 FDA 认证」**。⇒「FDA 食品級油墨」+「損壞率 < 0.5%」均为**无来源声明**（§0.23 / §2.2「先清除未经证实的食品接触/FDA/FSC 声明，再补可证明的材质、用途、打样与报价输入」明确点名）。
+
+**覆盖范围核实**：七簇 K3 决策队列 L113 无 FDA 条目 · strategy-task-queue.json 16 任务 FDA 命中 0 · peer F5'-EXTENDED 210 处清单（只覆盖 認證體系/internationally certified 类）不含 FDA 声明 · **= 登记盲区，新登记 T7**。
+
+**处置（本轮不修，只登记）**：FDA 声明撤/留需 K3-7 claims policy 裁决或对端 #15 按 §2.2 同款执行（有证保留 FSC/ISO 12647，無证 FDA/食品級/損壞率 < 0.5% → 中性表述「可選食品級油墨選項」）；catalog-printing-china 页属对端 #15 域 + peer 活跃（§0.35.7 双条件②未满足），执行层不夹带。本登记证据 + 建议入 `strategy-task-queue.json` 候选（§7.2 纪律：由 GSC/daily 车道消费，不自行批准）。
+- **数据来源**：catalog-printing-china/page.tsx L165/180/254/269/344/359 · 线上 zh-hk curl 探针（HTTP 200，22:0x）· docs/2026-08-28-07-28-3-blogs-en-rewrite-report.md L6-10（K3 8/19 12件事 + FDA 21 CFR 公开法规来源）· 七簇 K3 决策队列 L113 · strategy-task-queue.json（16 任务 FDA 命中 0）· docs/2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md §2.2。
