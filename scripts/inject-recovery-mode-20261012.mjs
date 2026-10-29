@@ -56,7 +56,7 @@ ${MARK_END}
 > 1. **STEP 0.5 (新, 先于一切)**: 跑 \`python scripts/gsc-cliff-detector.py\` 并读 \`.hermes/logs/gsc-cliff-<当日>.json\`:
 >    - \`CRITICAL_CLIFF\` → 当日报告只写断崖证据 + 升级 K3, 不做词表动作;
 >    - \`WARN_STALE\` → 报告标注「数据龄 >5 天, 需 K3 导出新档」, 后续判读降置信;
->    - 每次报告必含 \`RECOVERY: <recovery_ratio_vs_precliff>%\` 与**逐日序列** (从 10-12 起累积, 画恢复曲线)。
+>    - 每次报告必含 \`RECOVERY: <recovery_ratio_vs_mean28_dynamic>%\`（A17 修复后口径: 优先同口径动态分母, 全国家 caliber 与 109.9%/107.2% 恢复链一致; \`recovery_ratio_vs_precliff\` 为固定 585.2 单站和口径不得当恢复系数）与**逐日序列** (从 10-12 起累积, 画恢复曲线)。
 > 2. 恢复判读口径: 恢复系数连续 3 日抬升 = 再评估启动信号; 重回 ≥60% = 部分恢复; ≥90% = 基本恢复。10-09 大脑区的 8 锁词 / 盲开词 (年賀状 / corporate holiday cards) 追踪**继续**, 但结论必须区分「spam 压制导致的位置失真」与「真实需求信号」—— spam 恢复前, 位置数据整体失真, CTR c 值判据照旧有效 (c 是相对量)。
 > 3. 恢复期内每周报告加一节「spam 恢复周报」: 恢复系数曲线 / 索引覆盖率变化 / 人工处罚页状态 (K3 核验后登记) / 下次 Google 更新窗口预测。
 ${MARK_END}
