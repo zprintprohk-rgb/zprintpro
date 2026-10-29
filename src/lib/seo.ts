@@ -417,7 +417,7 @@ const categorySeoData: Record<string, {
       'ja': 'シール印刷,ステッカー印刷,オリジナルシール,オリジナルステッカー,防水ステッカー,透明ステッカー,金箔ステッカー,ダイカットステッカー,小ロットステッカー,ロゴステッカー,ラベル印刷,UVステッカー,マットステッカー,光沢ステッカー',
     },
     descriptions: {
-      'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
+      'zh-hk': '貼紙印刷 10 張起印，HK$0.22 起/張（大量檔）。防水抗 UV / 透明 / 燙金 / 異形裁切 / 啞膠亮膜，餐廳、品牌、電商跨境通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，FSC 認證。',
       'en': 'Small batch sticker printing from $0.05, 10 MOQ — custom waterproof, clear & die-cut stickers. Free proof in 4 hours, free shipping $99+, DHL 2-4 day USA delivery.',
       'ja': 'small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
     },
@@ -441,7 +441,7 @@ const categorySeoData: Record<string, {
       'ja': 'チラシ印刷,オリジナルチラシ,両面チラシ,A4 チラシ,A5 チラシ,折込チラシ,急ピッチチラシ,飲食店チラシ,イベントチラシ,店舗チラシ,開業チラシ',
     },
     descriptions: {
-      'zh-hk': '宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
+      'zh-hk': '宣傳單張印刷 / 傳單印刷 10 張起印，HK$0.18 起/張（大量檔）。A4 / A5 / A3 / 雙面 / 折頁，餐廳、地產、活動、新店開業通用。免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，FSC 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
       'en': 'Custom flyer printing from $0.06, 10 MOQ. A4 / A5 / A3 / double-sided / folded for retail, restaurants, real estate, events. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified + FSC-certified.',
       'ja': '特急印刷・チラシ印刷・宣伝チラシ・両面カラー 10 枚から、¥10〜。A4・A5・A3・折り込み対応、飲食店・不動産・イベント・開業向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。',
@@ -502,9 +502,9 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       // 2026-08-26 K3 §6 轨 1 CTR 修复: 起价前置 + 美妝護膚/餐廳外賣机会词 + DHL 全球 + 5 sharp hook (Free Shipping / Free Design / 100 MOQ / Made for USA / Free Proof)
-      'zh-hk': '紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$3-8/個，100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天。WhatsApp 30 秒即時報價，國際認證體系。',
+      'zh-hk': '紙袋印刷 / 印刷紙袋 / 訂做紙袋 HK$3-8/個，100 個起印。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿即日打樣。美妝護膚、餐廳外賣、服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天。WhatsApp 30 秒即時報價。',
       en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft, white card & gift bags. Free proof in 4h, free shipping $99+, DHL 2-4 day USA.',
-      ja: '紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証体系。',
+      ja: '紙袋印刷・オリジナル紙袋 100 個から、¥240〜。FSC 認証クラフト紙袋・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり。',
     },
   },
    
@@ -520,9 +520,9 @@ const categorySeoData: Record<string, {
       ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー,箔押しカレンダー,上製本カレンダー,学校カレンダー,事務用品,Q4繁忙期,60日予約,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '月曆印刷 2027 1 本起印，大批量上印刷機更抵，HK$3-8/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單，免費設計打稿。港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送，國際認證體系，WhatsApp 30 秒即時報價。',
+      'zh-hk': '月曆印刷 2027 1 本起印，大批量上印刷機更抵，HK$3-8/本。座檯月曆 / 掛牆月曆 / 月曆訂製 + 燙金精裝 + 企業 LOGO。Q4 旺季建議提前 60 天下單，免費設計打稿。港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送，WhatsApp 30 秒即時報價。',
       en: 'Custom calendar printing 2027, 1 MOQ, bulk offset for large runs. Desk & wall calendars + foil hardcover + corporate logo. Free proof in 4h, DHL 2-4 day USA. Made for USA, ideal for corporate gifts & schools.',
-      ja: 'カレンダー印刷 2027 1 部〜、オフセット大量対応。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証体系。',
+      ja: 'カレンダー印刷 2027 1 部〜、オフセット大量対応。デスク・壁掛け・企業カレンダー + 箔押し上製本 + 企業ロゴ。Q4 繁忙期は 60 日前のご注文を推奨。無料デザイン校正・日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり。',
     },
   },
 'japan-doujin': {
@@ -556,7 +556,7 @@ const categorySeoData: Record<string, {
       ja: '封筒印刷,カスタム封筒,クラフト封筒,窓付き封筒,カラー封筒,C4 封筒,C5 封筒,企業封筒,ロゴ封筒,長3封筒,洋形封筒,エアメール封筒,印刷封筒,社名入り封筒,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '大信封印刷 HK$0.60 起/個,一般信封 HK$0.22 起,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 訂製,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,國際認證體系紙材,DHL 全球 2-4 天速遞。',
+      'zh-hk': '大信封印刷 HK$0.60 起/個,一般信封 HK$0.22 起,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 訂製,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,DHL 全球 2-4 天速遞。',
       en: 'Custom envelope printing from US$0.14/pc (business) or US$0.28/pc (C4 large), 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. internationally certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
       ja: '封筒印刷 100 個から対応. C4・C5・DL・クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. 国際認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 日本全国 + 沖縄・北海道対応.',
     },
@@ -574,7 +574,7 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 10 張起，過膠餐牌 HK$5 起/張、PVC 防水 HK$8 起、精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 過膠 4 種材質，茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時，標準 3-5 天交貨，趕單 WhatsApp 加急，國際認證體系 + FSC 認證。',
+      'zh-hk': '餐牌印刷 10 張起，過膠餐牌 HK$5 起/張、PVC 防水 HK$8 起、精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 過膠 4 種材質，茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時，標準 3-5 天交貨，趕單 WhatsApp 加急，FSC 認證。',
       en: 'Menu printing from $1.84, 10 MOQ. Waterproof PVC, laminated & hardcover menus for restaurants, cafes, bars. Free proof in 4h, DHL 2-4 day USA delivery.',
       ja: 'メニュー印刷 10 部から、¥258〜。防水 PVC・ラミネート・ハードカバー、レストラン・カフェ・バー向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
@@ -592,9 +592,9 @@ const categorySeoData: Record<string, {
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
     descriptions: {
-      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。企業利是封 / 燙金利是封 / 婚慶 / 賀年 / 卡通 IP 訂製 + 局部 UV，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，國際認證體系。',
+      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。企業利是封 / 燙金利是封 / 婚慶 / 賀年 / 卡通 IP 訂製 + 局部 UV，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價。',
       en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV & wedding or CNY red packets. Free design proof, DHL 2-4 day USA. 30-second AI quote.',
-      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。企業ポチ袋・干支ポチ袋・新年ポチ袋にも対応。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり、国際認証体系。',
+      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。企業ポチ袋・干支ポチ袋・新年ポチ袋にも対応。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'banners': {
@@ -609,7 +609,7 @@ const categorySeoData: Record<string, {
       'ja': '屋外バナー印刷,カスタム屋外バナー,ロールアップバナー,X スタンドバナー,展示バナー,車両広告,防水バナー,UV耐性バナー,イベントバナー,現場バナー,商店街バナー',
     },
     descriptions: {
-      'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系。',
+      'zh-hk': '戶外橫額印刷 1 個起印，HK$30 起/個。易拉寶 / X 架 / 展覽 / 車身廣告 + 防水防 UV + 多種尺寸，展覽、活動、店舖、工地通用。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
       'en': 'Custom outdoor banner printing from $12, 1 MOQ. Roll-up / X-stand / exhibition / vehicle wrap, waterproof & UV-resistant for events, exhibitions, retail, construction. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote. internationally certified.',
       'ja': '屋外バナー印刷 1 枚から、¥1,500〜。ロールアップ・X スタンド・展示・車両広告、防水・耐 UV、イベント・展示・店舗・現場向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
@@ -626,7 +626,7 @@ const categorySeoData: Record<string, {
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
     descriptions: {
-      'zh-hk': '書刊印刷 / 小冊子印刷 10 本起印，HK$6 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系 + FSC 認證。',
+      'zh-hk': '書刊印刷 / 小冊子印刷 10 本起印，HK$6 起/本。騎馬釘 / 膠裝 / 精裝 / 兒童繪本 / 教材 / 公司年報 / 產品目錄。免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，FSC 認證。',
       'en': 'Saddle stitch booklet printing from $1.84, 10 MOQ. Perfect bound / hardcover / catalogs. Free design proof, DHL 2-4 day USA delivery, free shipping $99+.',
       'ja': '冊子印刷 10 部から、¥258〜。中綴じ・無線綴じ・上製本・児童書・テキスト・社内報・カタログ、学校・出版・ブランド・EC 向け。無料デザイン校正 4 時間、日本全国 DHL 2-4 日配送。急ぎ注文は 24-48 時間特急対応。30 秒 AI 無料見積もり。',
     },
