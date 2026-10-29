@@ -97,3 +97,10 @@ zh 食品包裝印刷 112@8.7（首屏零点击）· en small batch sticker prin
 3. **明天 10-30 20:52 weekly-meta 复盘**：需管理员修复调度器凭据（scripts/repair-dsh-scheduler-credential.ps1 -Apply -SmokeTest 或 register-cron-tasks.ps1），否则复盘 lane BLOCKED（GSC 全国家 28d KPI + 带钱词 6/23 + 锚点表已由 9ff9a55e 回灌备好）
 4. **11-01/11-03/11-04 三个验证点**按预排执行（见四）
 5. **§2.2 剩余清毒**：批 B products-content ~145 生成器不可寻（b81463a6 一次性搬移）需 K3 裁决 SOP-5 直改例外；批 C/catalog/sku 为 peer 域避让
+
+## 七、10-30 早间复核（K3 指令二轮：2 天执行日志 + 新数据）
+
+1. **A17 口径混算闭环（C8，昨晚 44633c9a/c567bf7e/3cf86bc0）**：gsc-feedback 车道 RECOVERY 口径改读 `recovery_ratio_vs_mean28_dynamic`（全国家单序列分母）；cliff detector 已消费 10-29 三站点汇总批（`gsc-cliff-2026-10-30.json` 07:00：hk/jp/us 均全国家 28d 档 4d 龄，cliff_ratio 1.247 / depression 1.019 / **recovery_vs_mean28 = 1.058**）。本报告 109.9%（方法 1 断崖前 714.71 vs 最新 7d 785.43）与 1.058（detector 实时口径）为**不同算法，方向一致均 >100%**，不混算。
+2. **weekly 复盘（periodic-review-weekly-2026-10-30 07:01）**：5 个 WAITING_K3 任务（ZH-POSTER/ZH-PACKAGING/EN-STICKER/EN-CATALOG/JA-C109）全部 HOLD（approval gate 未满足，执行层不得自我批准）；ZP-blog-deepfix + ZP-monthly-matrix BLOCKED_INFRA（需 K3/管理员修调度器）；无新 FIX、0 learning candidates。
+3. **11-01 批次前置就绪（10-30 07:02 验证）**：Python312 + googleapiclient ✓ / PYTHONIOENCODING=utf-8 ✓ / 凭据 .env + gsc-key.json ✓ / 代理 7892 ✓ / fetch dry-run 2858 行 ✓ / k3-kpi-panel.mjs ✓。数据 10-31 完整后拉新窗口（e36d64fa 提醒已设）。
+4. **优先级判定（保持）**：K3 B1（ZH-POSTER 16/20）+ B2（包装批 1）批准 = 唯一瓶颈；10-30 20:52 weekly-meta lane 需调度器修复（0x800710E0），否则复盘 lane BLOCKED；11-01 monthly-matrix 配合教科書 churn 47.1 诊断。
