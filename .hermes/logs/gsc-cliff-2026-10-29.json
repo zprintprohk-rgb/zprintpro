@@ -55,7 +55,7 @@
     "clicks": 15.0,
     "recovery_ratio_vs_precliff": 1.355,
     "recovery_ratio_vs_precliff_caliber": "single-site-sum (hk+jp+us 三站和 585.2, 与全国家 714.71 不可比)",
-    "recovery_ratio_vs_mean28_dynamic": 0.353,
+    "recovery_ratio_vs_mean28_dynamic": 1.058,
     "recovery_ratio_vs_mean28_dynamic_caliber": "full-country",
     "baseline": {
       "combined_mean28": 585.2,
