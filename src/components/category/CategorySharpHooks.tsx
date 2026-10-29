@@ -307,7 +307,7 @@ const labels: Record<string, Record<string, string>> = {
     title: '快速選擇您的場景',
     subtitle: '從 3 個最常見的行業開始，了解這個品類適合印什麼。',
     moreLink: '查看完整行業方案 →',
-    fallbackHook: '專業印刷服務, 100 個起印, 國際認證體系, 30 秒 AI 即時報價',
+    fallbackHook: '專業印刷服務, 100 個起印, 30 秒 AI 即時報價',
   },
   en: {
     title: 'Quickly Find Your Use Case',

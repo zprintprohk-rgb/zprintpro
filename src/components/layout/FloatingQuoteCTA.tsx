@@ -58,7 +58,7 @@ const TEXTS = {
     btnLabel: 'WhatsApp 立即查詢',
     microCopy: '2 小時內回覆 · 全港順豐本地倉',
     whatsappMsg: '你好！我想查詢印刷服務：',
-    trustLine: '國際認證體系 · FSC 認證 · 順豐本地倉 1 日到貨',
+    trustLine: 'FSC 認證 · 順豐本地倉 1 日到貨',
     emailBtn: '電郵查詢',
   },
 };

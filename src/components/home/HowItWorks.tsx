@@ -221,7 +221,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
         <div className="mt-6 md:mt-8 -mb-6 md:-mb-8 bg-gray-100 rounded-xl overflow-hidden flex flex-col sm:flex-row items-stretch">
           <p className="text-slate-700 text-xs sm:text-sm font-medium leading-snug text-center sm:text-left px-5 md:px-6 py-3 flex-1 flex items-center justify-center sm:justify-start">
             {locale === 'zh-hk'
-              ? '多年印刷經驗 · 國際認證體系 · 全球客戶 · 全球多國發貨'
+              ? '多年印刷經驗 · 全球客戶 · 全球多國發貨'
               : locale === 'ja'
               ? '長年の印刷実績 · 国際認証 · グローバル顧客 · 多国へ発送'
               : 'Over a decade in business · Internationally certified · Global customers · Ships worldwide'}

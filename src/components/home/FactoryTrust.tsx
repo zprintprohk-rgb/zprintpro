@@ -9,7 +9,7 @@ import type { Locale } from '@/lib/seo';
 const TEXTS = {
   'zh-hk': {
     title: '實力工廠 · 自家廠房實拍',
-    subtitle: '柯式印刷機 × 商標輪轉機 · 國際認證體系品質管理 · 多年印刷經驗',
+    subtitle: '柯式印刷機 × 商標輪轉機 · 品質管理 · 多年印刷經驗',
     caption1: '柯式印刷機組 — 宣傳單張 / 包裝盒 / 畫冊專色量產',
     alt1: '智印港工廠柯式印刷機實拍',
   },
