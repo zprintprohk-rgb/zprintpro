@@ -41,6 +41,11 @@
 
 → **批 D 扩展**：组件层（TrustBadgeBlock/WhyChooseUs/分类 body）+ page.tsx/products/category-seo/schema/blocks。「國際認證體系」徽章/卡替换候选：中性「品質保證」或「FSC 認證」（有证）——建议 FSC 语境合并。
 
+## 六、组件批已完成（12:2x，commit 待推）
+
+6 组件 11 处清毒（TrustBadges 3语徽章→「ISO 12647 色彩/Color/カラー」+ SUBHEADING 3语 + FloatingQuoteCTA/CategorySharpHooks/HeroBanner「品質保證」/HowItWorks/FactoryTrust「品質管理」）——组件层残留复算 0（§0.23.2）。线上探针的 zh 分类页 5 处（徽章/特色卡/正文）已覆盖。
+**新发现**：products-content L63「國際品質認證把關」（FAQ 模板族）——批 B 域；「進口印刷設備把關」中性保留。
+
 ## 四、数据来源
 
 ```
