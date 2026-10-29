@@ -59,7 +59,11 @@ blog/contact/service-areas 4 处清毒（blog「internationally certified factor
 ## 九、§2.2 累计进度（13:1x）
 
 **已清 58 处**（seo.ts 29 + 组件 11 + v9 4 + about 10 + D-1 4）——seo.ts/组件/v9/about/blog/contact/service-areas 层归零。
-**剩余 ~176**（精确口径 234 基）：products-content 145（SOP-5 源修待确认）+ sku-seo-data 31 + page.tsx 24（catalog 9 peer 域避让 + business-cards 2 待 K3）+ category-seo 9 + products 7 + blocks/schema/blog-posts/buying-guides 13。
+**剩余 ~280**（精确口径 234 + blog-data 104）：products-content 145（SOP-5 源修待确认）+ **blog-data zh 50 + en 54**（形态多样：國際認證體系+質量管理體系認證/標準/FSC 認證紙 等——需语义替换，§0.35.5 锁已查无） + sku-seo-data 31 + page.tsx 24（catalog 9 peer 域避让 + business-cards 2 待 K3）+ category-seo 9 + products 7 + blocks/schema/blog-posts/buying-guides 13。
+
+## 十、dfee0190 线上验证（13:15）
+
+v9+about 清毒线上生效：zh 分类页 國際認證體系 0（ISO 12647 3 特色卡 ✓）/ ja paper-bags 0 / zh about 0（FSC 14 保留 ✓）。**新发现**：certificate-printing-guide 线上 16 处残留 → blog-data zh-hk.json 全文件 50 处 + en.json 54 处（§0.23.2 三语复算，ja 0）——**批 E 登记**（blog-data 语义替换，§0.35.5 锁已查无，形态多样待 dump）。
 
 ## 四、数据来源
 
