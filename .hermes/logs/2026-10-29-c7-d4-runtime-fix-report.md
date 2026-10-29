@@ -58,6 +58,17 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - 攒批：2 scripts + 6 src 行为/数据修复 + 队列 + 报告 = ≥1 src 行为修复（pricing 单位本地化）+ ≥3 非 docs → 达标（§0.25.9）。
 - push 后必验：CF check-run success + curl `/en/category/calendars/`（50 pcs 全消失、From 1 pc 生效）+ `/en/category/greeting-cards/`（无 100張/10 張，显示 100 pcs/pcs）+ `/en/product/mini-calendars/`（无 1,000 units）+ `/en/product/premium-greeting-cards/`（PDP 相关格无 100張）。
 
+### ✅ 5.1 Push 与线上验收结果（2026-10-29 13:52-14:00）
+
+- **Push 完成**：`124b0b11` @ 13:53（cf-check-run 05:52:54Z = success）；等待对端 push 其 2 个 docs commit（34cf54c0/4e7a9e6f，于 124b0b11 之前）后，后台 waiter 仅推我自己的 124b0b11（§0.35.7 未代推 peer commits）。
+- **线上验收（三闸门 #2，curl 带浏览器 UA，全部 200）**：
+  - `/en/category/calendars/`：`50 pcs` = **0**（修复前 15），`From 1 pc` = 17，`1 MOQ` = 24 ✓ T1
+  - `/en/category/greeting-cards/`：`100張` = **0**（修复前 12），`10 張` = **0**（修复前 4），`US$33.12/100 pcs` = 4（修复前 `US$33.12/100張`）✓ T3
+  - `/en/product/mini-calendars/`：`1,000 units` = **0**，`Orders start at 1 unit` = 2 ✓ T2
+  - `/en/product/premium-greeting-cards/`：`100張` = **1**（修复前 18；剩余 1 处为 RSC flight payload `"price_range":"HK$100-180/100張"` 序列化数据，非渲染展示串），`100 pcs` = 18 ✓
+  - `/zh-hk/category/greeting-cards/`：`100張` = 12（zh-hk 原样保留，正确）；`/ja/category/greeting-cards/`：`100張` = 0，`10 枚` = 6（ja 本地化生效）✓ 无回归
+- **数据来源**：GitHub check-runs API `repos/zprintprohk-rgb/zprintpro/commits/124b0b11/check-runs`（Cloudflare Pages completed success 05:52:54Z）；curl 线上四页（browser-UA，状态 200）；本报告 §4 修复前基线（12:38-12:51 同口径 curl）。
+
 ## 6. 遗留（不属本轮）
 
 - host 归一短名为 dsh harness 行为，不在本仓库可修范围；校验器兼容已覆盖双轨。
