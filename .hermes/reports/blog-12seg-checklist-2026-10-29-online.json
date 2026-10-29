@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-29T23:05:46.020Z",
+ "generated_at": "2026-10-29T23:15:14.366Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -577,27 +577,27 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 1,
    "name": "倒金字塔首段",
-   "status": "FAIL",
-   "evidence": "首段 230 字 > 200 字",
-   "reason": "改 hong-kong-printing-cost-baseline-2026 首段到 100-200 字内直接回答核心问题"
+   "status": "PASS",
+   "evidence": "首段 197 字 | \"Hong Kong printing prices 2026: flyers from HK$0.25/sheet , …\"",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 0 个合规快速答案块（长度分布 ∅）",
-   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "3 个块，长度 163/164/148",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/10 (H2 10)，非问句 10（例: The Key Numbers at a Glance / Methodology: How This Baseli）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 13 = 13 个，问句 10 个（77%）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -614,7 +614,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "215 个数字 + 检出资料来源标记",
+   "evidence": "239 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -622,18 +622,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -668,7 +668,7 @@
    "seg": 11,
    "name": "语义锚点内链",
    "status": "PASS",
-   "evidence": "23 条达标内链",
+   "evidence": "26 条达标内链",
    "reason": ""
   },
   {
@@ -1477,18 +1477,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 460）",
-   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "4 个块，长度 95/85/79/460",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/10 (H2 10)，非问句 10（例: 主要数字一覧 / 算出方法: このベースラインの作り方）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 13 = 13 个，问句 10 个（77%）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1505,7 +1505,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "219 个数字 + 检出资料来源标记",
+   "evidence": "241 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1513,18 +1513,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1559,7 +1559,7 @@
    "seg": 11,
    "name": "语义锚点内链",
    "status": "PASS",
-   "evidence": "23 条达标内链",
+   "evidence": "26 条达标内链",
    "reason": ""
   },
   {
@@ -2368,18 +2368,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 450）",
-   "reason": "为 hong-kong-printing-cost-baseline-2026 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "4 个块，长度 67/68/56/450",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 1/10 (H2 10)，非问句 9（例: 關鍵數字一覽 / 品類價格基準表（16 品類・82 SKU））",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 13 = 13 个，问句 10 个（77%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2396,7 +2396,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "218 个数字 + 检出资料来源标记",
+   "evidence": "243 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -2404,18 +2404,18 @@
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn, FDA, EU REACH | Person(生成层承载,待 --online)",
-   "reason": "补 hong-kong-printing-cost-baseline-2026 的 LinkedIn + FDA + EU REACH（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2450,7 +2450,7 @@
    "seg": 11,
    "name": "语义锚点内链",
    "status": "PASS",
-   "evidence": "23 条达标内链",
+   "evidence": "26 条达标内链",
    "reason": ""
   },
   {
