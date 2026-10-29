@@ -117,7 +117,8 @@ peer 12:04-12:45 持续推送 §2.2 认证词清毒（T5 族），`CategoryPageV
 - 24h 恢复系数：固定 585.2 分母保留但加 `recovery_ratio_vs_precliff_caliber` 标签（单站和三站和，与全国家不可比）；动态分母改用同口径全国家 mean28 并标注 `full-country`。
 - 双方法验证（§0.23.2）：实跑 → WARN_STALE ×3 消除、caliber=full-country、latest 10-26 age 3d、mean28 749.2；方法 2 独立解析汇总档 28d 日均 749.18（×28=20,977 与车道 28d 总量一致）✓；排序回归：单站档较新时仍优先单站（不误回退）✓；tsc 54=54；encoding clean。
 - **边界**：detector 会把同一全站序列复制到 hk/jp/us 三键（汇总档无分站数据）——诚实标注 caliber 而非伪造分站数据；历史 gsc-cliff JSON 不改写。
-- **数据来源**：`scripts/gsc-cliff-detector.py` L31-56/L88-100/L130-145 · GSC数据/ 目录实盘（10-29 4 新档 = 三站点汇总形态，最新单站档 10-15）· 实跑输出 gsc-cliff-2026-10-29.json · openpyxl 独立复算 749.18。
+- **补修（commit `待填2`，§0.23 自查）**：首版修复后 `ratio_dynamic` 出现伪值——`combined_mean = sum(3×749.2) = 2247.6`（三键读同一全站序列，求和把分母放大 3 倍）→ ratio 0.353。修正：全国家口径下 dynamic 分母取**单序列 mean28**（749.2）而非求和。双方法验证：实跑 `ratio_dynamic=1.058`，方法 2 独立复算 793/(20977/28=749.18)=1.058 一致 ✓；WARN_STALE ×3 仍消除；tsc 54=54；encoding clean。
+- **数据来源**：`scripts/gsc-cliff-detector.py` L31-56/L88-100/L130-145 · GSC数据/ 目录实盘（10-29 4 新档 = 三站点汇总形态，最新单站档 10-15）· 实跑输出 gsc-cliff-2026-10-29.json · openpyxl 独立复算 749.18 / 1.058。
 
 ### 7.6 登记（只登记不修）· T7：catalog-printing-china 页 FDA 食品級油墨 = 无证认证声明（§2.2 战略点名项）
 

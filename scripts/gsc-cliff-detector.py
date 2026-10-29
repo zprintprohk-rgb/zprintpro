@@ -160,13 +160,18 @@ def main():
     if rt:
         hours = read_hourly(rt)
         if hours:
-            combined_mean = sum(s['mean28_imps'] for s in report['sites'].values())
             rt_imps = sum(h['imps'] for h in hours)
             # A17 修复 (2026-10-29): 单站档缺失时 sites 的 mean28 已切换为全国家口径,
             # 与固定 585.2 (三站和, 单站口径) 基线不可比 -> 动态分母改用同口径全国家 mean28 并标注。
             calibers = {s['caliber'] for s in report['sites'].values()}
             base_is_full_country = bool(calibers) and calibers == {'full-country'}
-            dynamic_denom = combined_mean if combined_mean else None
+            if base_is_full_country:
+                # 三键读同一全站序列: 求和会把分母放大 3 倍 (749.2×3=2247.6 伪值),
+                # 正确分母 = 单序列 mean28 (749.2) -> ratio 与车道 109.9%/107.2% 同量级。
+                dynamic_denom = next(iter(report['sites'].values()))['mean28_imps']
+            else:
+                dynamic_denom = sum(s['mean28_imps'] for s in report['sites'].values())
+            dynamic_denom = dynamic_denom if dynamic_denom else None
             dynamic_denom_caliber = 'full-country' if base_is_full_country else 'single-site-sum'
             ratio_dynamic = round(rt_imps / dynamic_denom, 3) if dynamic_denom else None
             # 固定断崖前基线仍按原口径输出, 但加 caliber 标签防与车道 109.9% (全国家) 混算
