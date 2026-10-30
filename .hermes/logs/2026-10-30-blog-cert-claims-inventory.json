@@ -1,0 +1,294 @@
+{
+  "generated": "2026-10-30",
+  "method": "唯一词组聚合(正则取具体条款号/认证名)",
+  "unique_phrases": 19,
+  "total_occurrences": 528,
+  "phrases": [
+    {
+      "phrase": "EU REACH",
+      "count": 259,
+      "files": {
+        "zh-hk.json": 94,
+        "en.json": 87,
+        "ja.json": 78
+      },
+      "posts": {
+        "flyer-printing-guide": 3,
+        "food-packaging-printing-guide": 1,
+        "poster-printing-guide": 9,
+        "restaurant-menu-printing-guide": 6,
+        "calendar-printing-guide": 5,
+        "packaging-box-pricing-2026": 27,
+        "sticker-material-pvc-vinyl-removable": 35,
+        "instant-printing-30s-ai-quote-flow": 3,
+        "foil-stamping-3-applications-2026": 36,
+        "campus-education-printing-pillar-guide": 36,
+        "kraft-paper-box-types-comparison-2026": 33,
+        "hong-kong-printing-cost-baseline-2026": 3,
+        "print-specifications-reference-guide-2026": 33,
+        "school-exercise-book-printing-guide": 9,
+        "zine-small-batch-booklet-printing-guide": 3,
+        "childrens-picture-book-printing-guide": 9,
+        "roll-up-banner-printing-guide": 3,
+        "sticker-guide": 2,
+        "etsy-seller-printing-guide": 3
+      },
+      "sample": "，長期操作進口六色膠印機，服務多個行業、全球客戶；廠房通過FSC 認證，印刷品符合 FDA 21 CFR 與 EU REACH 標準，支援 24 小時急件 SLA 與 DHL / FedEx 全球 2-4 天配送（LinkedIn：智印"
+    },
+    {
+      "phrase": "FDA 21 CFR 175.300",
+      "count": 108,
+      "files": {
+        "zh-hk.json": 41,
+        "en.json": 35,
+        "ja.json": 32
+      },
+      "posts": {
+        "sticker-guide": 6,
+        "poster-printing-guide": 5,
+        "restaurant-menu-printing-guide": 2,
+        "packaging-box-pricing-2026": 19,
+        "sticker-material-pvc-vinyl-removable": 22,
+        "foil-stamping-3-applications-2026": 24,
+        "kraft-paper-box-types-comparison-2026": 17,
+        "print-specifications-reference-guide-2026": 12,
+        "school-exercise-book-printing-guide": 1
+      },
+      "sample": "紙印刷有咩認證同品質保證？</h2> <p>智印港（深圳彩龍印刷）持有 國際質量管理體系認證，食品級貼紙通過 FDA 21 CFR 175.300 間接食品接觸測試，出口歐盟符合 REACH 法規。印刷精度 ±0.05mm（海德堡 SM102-5+L 五色"
+    },
+    {
+      "phrase": "FDA 食品級",
+      "count": 27,
+      "files": {
+        "zh-hk.json": 24,
+        "ja.json": 3
+      },
+      "posts": {
+        "pet-food-sticker-printing-guide": 3,
+        "cosmetics-packaging-box-printing-guide": 4,
+        "product-label-printing-guide": 1,
+        "baby-product-label-sticker-printing-guide": 2,
+        "baby-food-packaging-box-printing-guide": 3,
+        "packaging-box-pricing-2026": 2,
+        "sticker-material-pvc-vinyl-removable": 3,
+        "foil-stamping-3-applications-2026": 1,
+        "campus-education-printing-pillar-guide": 6,
+        "kraft-paper-box-types-comparison-2026": 1,
+        "school-exercise-book-printing-guide": 1
+      },
+      "sample": "寵物食品新品牌點樣印合格標籤？比較防水貼紙、防油貼紙、透明貼紙 3 種材質，分析 FDA 食品級認證、BPA-free 油墨、QR Code 追溯系統，附 4 條品牌創辦人 FAQ，協助 100-多年件 M"
+    },
+    {
+      "phrase": "GB 4806.8-2022",
+      "count": 25,
+      "files": {
+        "zh-hk.json": 11,
+        "en.json": 7,
+        "ja.json": 7
+      },
+      "posts": {
+        "food-packaging-printing-guide": 25
+      },
+      "sample": "</p><p class=\"text-sm\">直接接觸食品必須用食品級材質：總遷移量 ≤ 10 mg/dm²（GB 4806.8-2022）、FDA 21 CFR 176.170（間接食品接觸）、FSC 認證紙＋大豆油墨。智印港可提供對應檢測報告。"
+    },
+    {
+      "phrase": "FDA 21 CFR 175.105",
+      "count": 15,
+      "files": {
+        "zh-hk.json": 4,
+        "en.json": 7,
+        "ja.json": 4
+      },
+      "posts": {
+        "baby-product-label-sticker-printing-guide": 6,
+        "baby-food-packaging-box-printing-guide": 6,
+        "etsy-seller-printing-guide": 3
+      },
+      "sample": "ng>BPA-free，無鄰苯二甲酸酯</strong>:嬰兒產品直接接觸口腔,歐盟 EN 14372、美國 FDA 21 CFR 175.105 雙重認證,確保零遷移</li><li><strong>耐冷藏 -20°C 至 121°C</strong>:"
+    },
+    {
+      "phrase": "FDA 21 CFR 176.170",
+      "count": 13,
+      "files": {
+        "zh-hk.json": 11,
+        "en.json": 1,
+        "ja.json": 1
+      },
+      "posts": {
+        "food-packaging-printing-guide": 13
+      },
+      "sample": "xt-sm\">直接接觸食品必須用食品級材質：總遷移量 ≤ 10 mg/dm²（GB 4806.8-2022）、FDA 21 CFR 176.170（間接食品接觸）、FSC 認證紙＋大豆油墨。智印港可提供對應檢測報告。</p></div> <h2>食品包裝印"
+    },
+    {
+      "phrase": "SGS",
+      "count": 13,
+      "files": {
+        "zh-hk.json": 5,
+        "en.json": 4,
+        "ja.json": 4
+      },
+      "posts": {
+        "poster-printing-guide": 2,
+        "finance-summit-gift-bag-printing-guide": 7,
+        "food-packaging-printing-guide": 4
+      },
+      "sample": "油墨對照 FDA 21 CFR 175.300,出口歐盟紙材與油墨對照 EU REACH 1907/2006,SGS 重金屬測試報告可索取。</p> <p>落單前想睇實價同交期，直接到<a href=\"/zh-hk/catego"
+    },
+    {
+      "phrase": "FDA food-grade",
+      "count": 13,
+      "files": {
+        "en.json": 13
+      },
+      "posts": {
+        "packaging-trends": 1,
+        "baby-product-label-sticker-printing-guide": 1,
+        "baby-food-packaging-box-printing-guide": 3,
+        "packaging-box-pricing-2026": 1,
+        "sticker-material-pvc-vinyl-removable": 1,
+        "campus-education-printing-pillar-guide": 5,
+        "kraft-paper-box-types-comparison-2026": 1
+      },
+      "sample": "/product/food-boxes/\">custom food packaging boxes</a> (FDA food-grade stocks, 100 MOQ).</p> <h3>Trend 1: Minimalism Continue"
+    },
+    {
+      "phrase": "Cert No. available on request",
+      "count": 10,
+      "files": {
+        "en.json": 10
+      },
+      "posts": {
+        "campus-education-printing-pillar-guide": 8,
+        "print-specifications-reference-guide-2026": 2
+      },
+      "sample": "CFR 175.300 (printing ink and food contact materials), Cert No. available on request, applies to student lunch card + textbook cover contac"
+    },
+    {
+      "phrase": "FDA 21 CFR 131.110",
+      "count": 9,
+      "files": {
+        "zh-hk.json": 3,
+        "en.json": 3,
+        "ja.json": 3
+      },
+      "posts": {
+        "baby-product-label-sticker-printing-guide": 9
+      },
+      "sample": "-relaxed mb-4\"><strong>A1：</strong>美國市場嬰兒奶粉標籤需 <strong>FDA 21 CFR 131.110</strong>（嬰兒配方奶粉營養成分聲明）<strong>21 CFR 175.105</strong>（"
+    },
+    {
+      "phrase": "21 CFR 175.300",
+      "count": 9,
+      "files": {
+        "zh-hk.json": 3,
+        "en.json": 3,
+        "ja.json": 3
+      },
+      "posts": {
+        "campus-education-printing-pillar-guide": 9
+      },
+      "sample": "disc pl-5 space-y-1\"> <li><strong>FDA 食品級油墨</strong> - 21 CFR 175.300 (印刷油墨與食品接觸材料), 認證書編號 [證書編號備索], 適用於學生午餐證 + 教材封面接觸場景</li"
+    },
+    {
+      "phrase": "EC 1907/2006",
+      "count": 9,
+      "files": {
+        "zh-hk.json": 3,
+        "en.json": 3,
+        "ja.json": 3
+      },
+      "posts": {
+        "campus-education-printing-pillar-guide": 9
+      },
+      "sample": " + 教材封面接觸場景</li> <li><strong>EU REACH 化學品安全</strong> - EC 1907/2006 (化學品註冊、評估、授權和限制), 認證書編號 [證書編號備索], 適用於歐洲市場校園產品出口</li> <"
+    },
+    {
+      "phrase": "FDA Food-Grade",
+      "count": 5,
+      "files": {
+        "en.json": 5
+      },
+      "posts": {
+        "poster-printing-guide": 1,
+        "baby-food-packaging-box-printing-guide": 1,
+        "sticker-material-pvc-vinyl-removable": 1,
+        "campus-education-printing-pillar-guide": 1,
+        "school-exercise-book-printing-guide": 1
+      },
+      "sample": "ging-printing-guide/\" class=\"text-[#1A56DB] underline\">FDA Food-Grade Packaging Guide</a></li></ul></div>  <p class=\"my-4\">📲"
+    },
+    {
+      "phrase": "21 CFR 175.105",
+      "count": 3,
+      "files": {
+        "zh-hk.json": 1,
+        "en.json": 1,
+        "ja.json": 1
+      },
+      "posts": {
+        "baby-product-label-sticker-printing-guide": 3
+      },
+      "sample": "trong>FDA 21 CFR 131.110</strong>（嬰兒配方奶粉營養成分聲明）<strong>21 CFR 175.105</strong>（粘合劑間接接觸食品認證）<strong>21 CFR 101.9</strong>（營養標"
+    },
+    {
+      "phrase": "21 CFR 101.9",
+      "count": 3,
+      "files": {
+        "zh-hk.json": 1,
+        "en.json": 1,
+        "ja.json": 1
+      },
+      "posts": {
+        "baby-product-label-sticker-printing-guide": 3
+      },
+      "sample": "聲明）<strong>21 CFR 175.105</strong>（粘合劑間接接觸食品認證）<strong>21 CFR 101.9</strong>（營養標籤強制內容）。智印港提供完整合規文件包，可直接通過 FDA 進口檢查，覆蓋 Kari"
+    },
+    {
+      "phrase": "eu reach",
+      "count": 3,
+      "files": {
+        "zh-hk.json": 1,
+        "en.json": 1,
+        "ja.json": 1
+      },
+      "posts": {
+        "print-specifications-reference-guide-2026": 3
+      },
+      "sample": "/ 擊凸 / 出血 / dpi / pantone 專色 / 數碼 vs 柯式 / fda 21 cfr / eu reach / fsc 認證 / 印刷規格 / 印刷模式 / 紙張尺寸 / 業務場景 / 香港工廠 / 跨境印刷 / 智"
+    },
+    {
+      "phrase": "21 CFR 176.170",
+      "count": 2,
+      "files": {
+        "en.json": 1,
+        "ja.json": 1
+      },
+      "posts": {
+        "food-packaging-printing-guide": 2
+      },
+      "sample": "istant, direct food contact</td><td class=\"border p-2\">21 CFR 176.170</td></tr><tr><td class=\"border p-2\">Takeout / fast foo"
+    },
+    {
+      "phrase": "LFGB §30/31",
+      "count": 1,
+      "files": {
+        "zh-hk.json": 1
+      },
+      "posts": {
+        "food-packaging-printing-guide": 1
+      },
+      "sample": "r><td class=\"border p-2\">德國</td><td class=\"border p-2\">LFGB §30/31</td><td class=\"border p-2\">感官測試（氣味、味道轉移）要求較嚴</td><td c"
+    },
+    {
+      "phrase": "FDA Food Grade",
+      "count": 1,
+      "files": {
+        "en.json": 1
+      },
+      "posts": {
+        "foil-stamping-3-applications-2026": 1
+      },
+      "sample": "G procurement first choice.</li> <li><strong>Soy Ink + FDA Food Grade</strong> - 100% soy-based eco ink, FDA 21 CFR 175.300 "
+    }
+  ]
+}

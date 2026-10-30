@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T19:12:00+08:00 (sticker body 补遗 + 全站模板遗留登记)",
+  "generated_at": "2026-10-30T19:50:00+08:00 (blog 认证词组清单登记)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -463,6 +463,19 @@
       "owner_lane": "manual",
       "status": "WAITING_K3",
       "created_at": "2026-10-30T19:12:00+08:00"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
+      "source_strategy": "SOP-10 #3 12 件属实清单（不含 FDA/SGS/REACH/ISO 22000/LFGB）",
+      "market": "all",
+      "target": "src/data/blog-data/{zh-hk,en,ja}.json 认证词组 19 个 / 528 次",
+      "evidence": "`.hermes/logs/2026-10-30-blog-cert-claims-inventory.md`（唯一词组+次数+文件分布+样例; 顶层: EU REACH 259 / FDA 21 CFR 175.300 108 / FDA 食品級 27 / GB 4806.8-2022 25 / SGS 13 / Cert No. available on request 10）。口径声明: 不可与 daily-content 车道「296 处/8 文件」互证（扫描面不同）",
+      "score": 0.72,
+      "write_scope": "仅 blog-data 三语 JSON；按 K3 勾选的 A/B/C 分组机械替换（A 删测试号保工艺 / B 条件化 / C 保留法规引用）",
+      "approval_gate": "WAITING_K3: 一句话批准「A 组全删 / B 组条件化 / C 组保留」或指定例外",
+      "owner_lane": "manual",
+      "status": "WAITING_K3",
+      "created_at": "2026-10-30T19:50:00+08:00"
     }
   ],
   "last_review": {
