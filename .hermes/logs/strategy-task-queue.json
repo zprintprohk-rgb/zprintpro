@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T13:50:00Z",
+  "generated_at": "2026-10-30T22:45:00+08:00 (K3 按最优推荐执行: 3 条 WAITING_K3 -> DONE)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -461,13 +461,13 @@
       "write_scope": "全站批量改动 (需 K3 放行 §0.25.10.5); 建议改为「lead time/proof timing confirmed at quote」",
       "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 打稿/交期一律改「报价确认」, 删「100% 退款」与「$5.99 样本包」, AEO 答案块同批改",
       "owner_lane": "manual",
-      "status": "READY",
+      "status": "DONE",
       "created_at": "2026-10-30T19:12:00+08:00",
-      "result": {
-        "approved_at": "2026-10-30T21:48:10+08:00",
-        "approved_by": "K3 (chat)",
-        "note": "裁决单最优推荐执行"
-      }
+      "result": "EXECUTED d450abbc: AEO 答案块 ProductPageV9 L446-451 三语 (en/ja/zh) 承诺改「报价确认/見積りで確認」；未改全站其他模板（本任务 scope 仅答案块）。选(1) 全站口径由同批模板串任务覆盖。",
+      "completed_at": "2026-10-30T22:45:00+08:00",
+      "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+      "next_check": "2026-11-06",
+      "execution_commit": "d450abbc"
     },
     {
       "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
@@ -479,13 +479,13 @@
       "write_scope": "src/data/products-content.ts 共享模板串 (66/64/71/18/10/20 处); 属全站批量改动 §0.25.10.5, 需 K3 放行",
       "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 全站一次性条件化 (3-4 条模板串, ~250 SKU), 打稿/交期一律「报价确认」",
       "owner_lane": "manual",
-      "status": "READY",
+      "status": "DONE",
       "created_at": "2026-10-30T19:12:00+08:00",
-      "result": {
-        "approved_at": "2026-10-30T21:48:10+08:00",
-        "approved_by": "K3 (chat)",
-        "note": "裁决单最优推荐执行"
-      }
+      "result": "EXECUTED d450abbc: products-content.ts 336 处共享模板串条件化 — 標準訂單3-5工作天 64+7、DHL Express/FedEx 全球2-4天 149、DHL Express 全球2-4天 73、ja 直送2-4日 20、ja 完工後24-48 20、打稿1小時 3；全部改为「报价确认/見積りで確認」，零新增数字。",
+      "completed_at": "2026-10-30T22:45:00+08:00",
+      "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+      "next_check": "2026-11-06",
+      "execution_commit": "d450abbc"
     },
     {
       "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
@@ -510,13 +510,13 @@
       "write_scope": "a1-posters 单 SKU 三处数字 + 可能连带 category-seo-content 海报价表; 需先定口径再改",
       "approval_gate": "K3 2026-10-30 21:48 指令: a1-posters 选(3) — 分产品线展示: 柯式 A1 basePrice 20 / 喷绘成品 290 起 / 喷绘基材 45-56, 页面标注适用形态",
       "owner_lane": "manual",
-      "status": "READY",
+      "status": "DONE",
       "created_at": "2026-10-30T19:52:00+08:00",
-      "result": {
-        "approved_at": "2026-10-30T21:48:10+08:00",
-        "approved_by": "K3 (chat)",
-        "note": "裁决单最优推荐执行"
-      }
+      "result": "EXECUTED d450abbc (选3 分产品线展示): a1-posters zh+en 长描述新增「价格按产品线」— 柯式A1 20起 / 噴繪成品 290起 / 噴繪基材 45-56；ja 无独立长描述故跳过 (已记录)。price_range/basePrice 数值未改; 卡片 from 价与 basePrice 的展示规则仍待产品线选择器设计。",
+      "completed_at": "2026-10-30T22:45:00+08:00",
+      "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+      "next_check": "2026-11-06",
+      "execution_commit": "d450abbc"
     },
     {
       "task_id": "DIAG-20261030-STICKER-REGRESSION",
