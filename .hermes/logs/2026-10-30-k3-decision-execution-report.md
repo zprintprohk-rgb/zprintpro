@@ -101,15 +101,20 @@
 
 ## 5. 线上验收（2026-10-30 19:05 首轮，部署确认后）
 
-CF build 部署判定窗口：19:03→19:05 轮询 7 次，`old=false`（旧 FAQ 消失）→ 部署生效。
+CF build 部署判定窗口：第一轮 19:03→19:05 轮询 7 次 `old=false`；第三轮 19:36→19:40 轮询 11 次 `deployed=true`。
 
-| 页面 | 结果 | 说明 |
+| 页面 | 第三轮结果 | 说明 |
 |---|---|---|
-| `/ja/comiket-c109/` | ✅ PASS | 12/7 倒排真值已无、¥7,500 保留 |
-| `/en/product/small-batch-stickers/` | ⚠️ 批次项 PASS | 100 stickers minimum / 50-sticker MOQ / 4-day USA / paid sample kit / $99 / $9.95 flat / Rush 2-day 全部消失；仅剩「free digital proof within 1 hour」= **全站 AEO 答案块模板**（见 §5.1） |
-| `/ja/product/small-batch-stickers/` | ⚠️ 批次项 PASS | 「4 日米国配送 / 99 ドル以上送料無料 / DHL 国際配送で 2-4 日」已无；仅剩「1 時間以内に無料デジタル校正」= **全站 AEO 答案块** + 服务卡模板 |
-| `/zh-hk/category/posters/` | ⚠️ | 首轮残留来自类目 **meta description**（`src/lib/seo.ts`），e30b9609 已修，待第三轮部署后复验 |
-| `/en/services/catalog-printing-china/` | ⚠️ | 首轮残留为 trustItem **标题**「FDA Food-Grade Ink」，e30b9609 已修，待复验 |
+| `/zh-hk/category/posters/` | ✅ PASS | meta description + 页内均 A2 HK$16 / A1 HK$20，旧 HK$9/HK$45 已无 |
+| `/en/services/catalog-printing-china/` | ✅ PASS | Soy-Based Ink Options + 10 MOQ + supplier guide 链接；FDA Food-Grade Ink 已无 |
+| `/zh-hk/services/catalog-printing-china/` | ✅ PASS | 大豆油墨可選；FDA 食品級油墨 已无 |
+| `/ja/services/catalog-printing-china/` | ✅ PASS | 大豆インク対応；FDA食品グレードインク 已无 |
+| `/zh-hk/category/packaging/` | ✅ PASS | 打樣當日完成 已无 |
+| `/en/product/small-batch-stickers/` | ✅ PASS（批次项） | 10 stickers (A4 sheet-based layouts) 在位；100 stickers minimum / 50-sticker MOQ / 4-day USA / paid sample kit / $99 / $9.95 flat / Rush 2-day 全部消失 |
+| `/ja/comiket-c109/` | ✅ PASS（第一轮） | 12/7 倒排真值已无、¥7,500 保留 |
+| `/ja/product/small-batch-stickers/` | ✅ 批次项 | 4 日米国配送 / 99 ドル以上送料無料 / DHL 国際配送で 2-4 日 已无 |
+
+**第二轮验收汇总：6/6 PASS**（探针：pos 全命中 + neg 全清零；curl UA 伪装 + 200 + 长度校验）。
 
 ### 5.1 全站模板遗留（超裁决 #3 单 SKU 范围，登记待 K3）
 
