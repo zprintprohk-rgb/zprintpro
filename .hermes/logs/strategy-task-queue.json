@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T23:42:00+08:00 (SKU-SEO US 运输承诺收口 DONE)",
+  "generated_at": "2026-10-30T23:55:00+08:00 (海报 blog 旧假价精确位置补证)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -585,16 +585,13 @@
       "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
       "market": "all",
       "target": "blog [slug] 模板 H1 渲染 = title（含品牌後綴分隔符，三語一致）；zh poster H1 仍含 HK$9 與裁決 #1 新價 16/20 衝突；kraft-paper-box H1 缺失",
-      "evidence": [
-        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
-        "線上探針 2026-10-30 21:48（5 URL H1 實抽，3 語一致帶品牌）"
-      ],
+      "evidence": ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md,線上探針 2026-10-30 21:48（5 URL H1 實抽，3 語一致帶品牌） || 2026-10-30 23:55 精确复核 (zh-hk blog-data 实扫, 与裁决 #1 A2 HK$16 / A1 HK$20 冲突): ① poster-printing-guide **title**: 「香港海報印刷 HK$9起：尺寸・紙質・工藝・設計要點」; ② poster-printing-guide content: 「HK$9 起/張、A1 1 張起印 HK$45 起/張, 3-5 個工作天交貨」; ③ poster-size-guide content: 「HK$9 起/張（10 張起印）」(2 处) + 「HK$9 起/張（157g 銅版紙）」+ 「HK$9 起/張，急件附加費另計」; ④ poster-printing-price-guide **title**: 「A1 A2 海報印刷價格 HK$9起 單價紙材批量折扣」. 另一并发现在同类: paper-materials/hotel-amenity/catalog/calendar 的「HK$9-15」等为**其他品类真实阶梯价**, 不在本条范围。",
       "score": 0.68,
       "score_model": "analyst-priority",
       "write_scope": [
         "src/app/[locale]/blog/[slug]/page.tsx"
       ],
-      "approval_gate": "K3 approves site-wide blog H1 template change (§0.25.10.5 site-wide batch)",
+      "approval_gate": "WAITING_K3: 海报簇 blog 旧假价是否按裁决 #1 改为 A2 HK$16 / A1 HK$20 —— (1) 允许改 2 个 title + 3 处 content (2) 只改 content 不动 title (3) 维持现状到 11-06 复测后",
       "owner_lane": "manual-executor",
       "status": "WAITING_K3",
       "next_check": "2026-11-06",
