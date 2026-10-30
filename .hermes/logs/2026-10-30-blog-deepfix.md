@@ -211,3 +211,11 @@
 ## 当日累计（三轮）
 
 **基线 44 / 现存 11 / 已修 33 / 剩余待修 11**（早 13 + 晚 5 + 夜 15）
+
+## 补充（21:41 窗口 push + 终验，2026-10-30 21:51）
+
+- **push**：✅ `dbfd6564..0491448f main -> main`（21:41:59，§0.25 30min 窗口内；head 含对端合并提交，本批修复已在内）
+- **curl 3 URL 全 200**：zh-hk 案例OK / en CaseOK / ja 顧客事例OK（新内容线上生效）
+- **段12 online**：三语全 PASS——generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo]，内嵌 0，blocks 6+0
+- **12 段骨架最终态**：**PASS 36 / FAIL 0 / WARN 0 / SKIP 0 / INVALID 0**（三语 100% 达标含线上断言）
+- verify-deploy 以 385b7433 查询无对应 CF build（实际 head 0491448f 含对端提交），以 curl 200 + marker + 段12 线上断言为准判定 deploy live
