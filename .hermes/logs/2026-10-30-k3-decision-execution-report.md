@@ -145,21 +145,46 @@ CF build 部署判定窗口：第一轮 19:03→19:05 轮询 7 次 `old=false`�
 
 ## 6. 复测登记（7/14/28 天）
 
-| 复测点 | 日期 | 验收基线 | 决策 |
+| 复测点 | 日期 | 验收基线（已用 10-30 KPI 面板锁定） | 决策 |
 |---|---|---|---|
-| 7 天 | **2026-11-06** | 海报 287@14.9 零点击 / small-batch 50@5.5 / C109 20@7.3 / 包装 FDA-SGS 无证声明确认 | 技术+收录验收 |
-| 14 天 | 2026-11-13 | 方向性（MOQ/价格/交期口径一致性） | 方向性复测 |
-| 28 天 | 2026-11-27 | SCALE/HOLD/FIX/STOP（对比裁决前 GSC 基线） | 决策复测 |
+| 7 天 | **2026-11-06** | 全站 496 clk / 21,127 imp / CTR 2.35% / pos 13.56；带钱词严格 7/23；海报 14.94（286 imp，零点击）；small-batch sticker printing 5.5；C109 相关 ja 20@7.3 | 技术+收录验收 |
+| 14 天 | 2026-11-13 | 方向性（MOQ/价格/交期口径一致性 + 带钱词进出首页） | 方向性复测 |
+| 28 天 | 2026-11-27 | SCALE/HOLD/FIX/STOP（对比 10-30 面板基线） | 决策复测 |
 
 复测字段: baseline / change / online_verify / retest / decision / confounders（缺任一项不得称「已验证」）。
+基线 SSoT: `.hermes/logs/k3-kpi-panel-2026-10-30.json`（复测时用同脚本、同 sheet、同口径重算）。
+
+## 7. 本轮新增交付（不需 K3 拍板即可执行的部分）
+
+| 产物 | 路径 | 用途 |
+|---|---|---|
+| K3 KPI 面板（10-30） | `.hermes/logs/k3-kpi-panel-2026-10-30.md` / `.json` | §0.37 四指标 + 带钱词严格/宽双口径 + 关键词行数；双方法差异 0 |
+| blog 认证词组清单 | `.hermes/logs/2026-10-30-blog-cert-claims-inventory.md` / `.json` | 19 词组 / 528 次，含 A（删号保工艺）/B（条件化）/C（保留法规引用）建议，K3 一句话即可批准 |
+| 队列登记 | `.hermes/logs/strategy-task-queue.json` | 新增 3 条 WAITING_K3：AEO 答案块模板、SKU body 运输承诺遗留、blog 认证词组 |
+
+## 8. 车道总线四方验收（2026-10-30 19:45，§0.35.4）
+
+`node scripts/lane-status.mjs --days=1` → verdict=ATTENTION problems=5，逐条核实后**无新增事故**：
+
+| 车道 | verdict | 四方核实结论 |
+|---|---|---|
+| ZP-daily-content | OK | 总线有记录 + 报告 `2026-10-30-ZP-daily-content.md`（19:08）+ 已随本轮 push 上车 |
+| ZP-weekly-meta | OK | 07:09 补跑成功，报告存在 |
+| ZP-gsc-feedback | PENDING | **不是故障**：该车道每日 ~20:20 触发（10-28 20:18 / 10-29 20:20），观测时 19:45 尚未到点 |
+| ZP-blog-deepfix | UNKNOWN | 周六 23:47 才跑，今日非调度日（今晨 07:22 有一轮补跑报告） |
+| ZP-monthly-matrix | UNKNOWN | 每月 1 号 12:13，今日非调度日 |
+| ZP-k3-review | BLOCKED | 与 7:10 报告一致（凭据/锁），属已知 K3 管理员项 |
 
 ---
 
 ## 数据来源
 - GSC: `GSC数据/` 2026-10-30 09:03 三档 xlsx（全国家口径）+ `gsc-cliff-2026-10-30.json`（detector 重跑）
+- KPI: `GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx`（图表/查询数/网页/国家_地区/设备 5 sheet 实读，openpyxl）→ `.hermes/logs/k3-kpi-panel-2026-10-30.json`
 - 裁决: `.hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md`（1-5 全 A，K3 10-30 09:59 指令）
 - 执行包: `docs/2026-10-28-packaging-batch1-execution-pack.md`
 - 源码真值: `src/data/products.ts`（basePrice/minQuantity）线上实锤 curl 2026-10-30
-- commit: 7b396bd9（10:29）+ e5d3cd5f（07:22 lane）+ 9f7b348c（19:02）+ e30b9609（19:1x）
+- commit: 7b396bd9（10:29）+ e5d3cd5f（07:22 lane）+ 9f7b348c（19:02）+ e30b9609（19:35 推）+ eac031bb / 21710c56（docs）
 - 全站免运: `src/components/{HowItWorks,ProductTabs,WhyChooseUs}.tsx`（HK$500 ×4 处一致）
-- 线上验收: curl zprintpro.com 2026-10-30 19:03-19:10（UA 伪装, 200 + 长度校验, 部署轮询 7 次取稳定态）
+- 线上验收: curl zprintpro.com 2026-10-30 19:03-19:40（UA 伪装, 200 + 长度校验, 部署轮询 7/11 次取稳定态）
+- 车道总线: `.hermes/logs/lane-runs.jsonl` + `node scripts/lane-status.mjs --days=1`（19:45）
+- blog 认证清单: `src/data/blog-data/{zh-hk,en,ja}.json` 三语实扫（正则取具体条款号/认证名 + 唯一词组聚合）
