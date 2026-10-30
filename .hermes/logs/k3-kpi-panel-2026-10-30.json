@@ -520,5 +520,4222 @@
     "ctr": 2.37,
     "avg_pos": 13.52,
     "page1": 6
-  }
+  },
+  "pages_top": [
+    {
+      "url": "https://zprintpro.com/zh-hk/",
+      "clk": 49.0,
+      "imp": 974.0,
+      "ctr": 5.03,
+      "pos": 13.7
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clk": 25.0,
+      "imp": 878.0,
+      "ctr": 2.85,
+      "pos": 13.92
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clk": 18.0,
+      "imp": 1454.0,
+      "ctr": 1.24,
+      "pos": 8.46
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+      "clk": 18.0,
+      "imp": 225.0,
+      "ctr": 8.0,
+      "pos": 5.77
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clk": 17.0,
+      "imp": 508.0,
+      "ctr": 3.35,
+      "pos": 10.78
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+      "clk": 14.0,
+      "imp": 104.0,
+      "ctr": 13.46,
+      "pos": 6.22
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/red-packets/",
+      "clk": 12.0,
+      "imp": 197.0,
+      "ctr": 6.09,
+      "pos": 17.77
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+      "clk": 11.0,
+      "imp": 176.0,
+      "ctr": 6.25,
+      "pos": 5.71
+    },
+    {
+      "url": "https://zprintpro.com/en/",
+      "clk": 9.0,
+      "imp": 208.0,
+      "ctr": 4.33,
+      "pos": 7.95
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clk": 8.0,
+      "imp": 242.0,
+      "ctr": 3.31,
+      "pos": 7.9
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/foil-stickers/",
+      "clk": 7.0,
+      "imp": 82.0,
+      "ctr": 8.54,
+      "pos": 8.59
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clk": 6.0,
+      "imp": 356.0,
+      "ctr": 1.69,
+      "pos": 10.13
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "clk": 6.0,
+      "imp": 228.0,
+      "ctr": 2.63,
+      "pos": 14.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+      "clk": 6.0,
+      "imp": 94.0,
+      "ctr": 6.38,
+      "pos": 7.01
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/exercise-books/",
+      "clk": 6.0,
+      "imp": 74.0,
+      "ctr": 8.11,
+      "pos": 6.85
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/zine-small-batch-booklet-printing-guide/",
+      "clk": 6.0,
+      "imp": 60.0,
+      "ctr": 10.0,
+      "pos": 6.65
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/flyers/",
+      "clk": 5.0,
+      "imp": 370.0,
+      "ctr": 1.35,
+      "pos": 22.85
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+      "clk": 5.0,
+      "imp": 217.0,
+      "ctr": 2.3,
+      "pos": 12.94
+    },
+    {
+      "url": "https://zprintpro.com/en/product/doujinshi-printing/",
+      "clk": 5.0,
+      "imp": 215.0,
+      "ctr": 2.33,
+      "pos": 6.8
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+      "clk": 5.0,
+      "imp": 173.0,
+      "ctr": 2.89,
+      "pos": 8.61
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+      "clk": 5.0,
+      "imp": 46.0,
+      "ctr": 10.87,
+      "pos": 5.09
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clk": 4.0,
+      "imp": 313.0,
+      "ctr": 1.28,
+      "pos": 22.04
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/calendars/",
+      "clk": 4.0,
+      "imp": 229.0,
+      "ctr": 1.75,
+      "pos": 32.97
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "clk": 4.0,
+      "imp": 217.0,
+      "ctr": 1.84,
+      "pos": 35.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+      "clk": 4.0,
+      "imp": 216.0,
+      "ctr": 1.85,
+      "pos": 14.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "clk": 4.0,
+      "imp": 165.0,
+      "ctr": 2.42,
+      "pos": 16.52
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+      "clk": 4.0,
+      "imp": 98.0,
+      "ctr": 4.08,
+      "pos": 10.13
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/packaging/",
+      "clk": 4.0,
+      "imp": 82.0,
+      "ctr": 4.88,
+      "pos": 28.66
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clk": 4.0,
+      "imp": 65.0,
+      "ctr": 6.15,
+      "pos": 28.57
+    },
+    {
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "clk": 4.0,
+      "imp": 59.0,
+      "ctr": 6.78,
+      "pos": 10.51
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/doujinshi-printing/",
+      "clk": 4.0,
+      "imp": 46.0,
+      "ctr": 8.7,
+      "pos": 8.59
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/fruit-food-label-stickers/",
+      "clk": 4.0,
+      "imp": 23.0,
+      "ctr": 17.39,
+      "pos": 57.09
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/textbooks/",
+      "clk": 4.0,
+      "imp": 20.0,
+      "ctr": 20.0,
+      "pos": 22.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "clk": 3.0,
+      "imp": 274.0,
+      "ctr": 1.09,
+      "pos": 35.41
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/large-envelopes/",
+      "clk": 3.0,
+      "imp": 212.0,
+      "ctr": 1.42,
+      "pos": 5.51
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/business-envelopes/",
+      "clk": 3.0,
+      "imp": 183.0,
+      "ctr": 1.64,
+      "pos": 7.43
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+      "clk": 3.0,
+      "imp": 180.0,
+      "ctr": 1.67,
+      "pos": 6.95
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/large-bags/",
+      "clk": 3.0,
+      "imp": 138.0,
+      "ctr": 2.17,
+      "pos": 15.42
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/educational/",
+      "clk": 3.0,
+      "imp": 71.0,
+      "ctr": 4.23,
+      "pos": 20.13
+    },
+    {
+      "url": "https://zprintpro.com/en/category/calendars/",
+      "clk": 3.0,
+      "imp": 65.0,
+      "ctr": 4.62,
+      "pos": 8.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/graduation-yearbook/",
+      "clk": 3.0,
+      "imp": 55.0,
+      "ctr": 5.45,
+      "pos": 3.96
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/comiket-printing-prep-guide/",
+      "clk": 3.0,
+      "imp": 34.0,
+      "ctr": 8.82,
+      "pos": 5.18
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/die-cut-stickers/",
+      "clk": 3.0,
+      "imp": 32.0,
+      "ctr": 9.38,
+      "pos": 6.47
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "clk": 3.0,
+      "imp": 32.0,
+      "ctr": 9.38,
+      "pos": 24.84
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/fluorescent-stickers/",
+      "clk": 3.0,
+      "imp": 27.0,
+      "ctr": 11.11,
+      "pos": 12.63
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clk": 2.0,
+      "imp": 403.0,
+      "ctr": 0.5,
+      "pos": 21.83
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clk": 2.0,
+      "imp": 358.0,
+      "ctr": 0.56,
+      "pos": 26.56
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clk": 2.0,
+      "imp": 314.0,
+      "ctr": 0.64,
+      "pos": 35.24
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clk": 2.0,
+      "imp": 270.0,
+      "ctr": 0.74,
+      "pos": 8.36
+    },
+    {
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "clk": 2.0,
+      "imp": 257.0,
+      "ctr": 0.78,
+      "pos": 8.99
+    },
+    {
+      "url": "https://zprintpro.com/en/product/a2-posters/",
+      "clk": 2.0,
+      "imp": 209.0,
+      "ctr": 0.96,
+      "pos": 11.72
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clk": 2.0,
+      "imp": 173.0,
+      "ctr": 1.16,
+      "pos": 36.85
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+      "clk": 2.0,
+      "imp": 136.0,
+      "ctr": 1.47,
+      "pos": 18.63
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+      "clk": 2.0,
+      "imp": 106.0,
+      "ctr": 1.89,
+      "pos": 51.06
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+      "clk": 2.0,
+      "imp": 95.0,
+      "ctr": 2.11,
+      "pos": 6.44
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/removable-stickers/",
+      "clk": 2.0,
+      "imp": 93.0,
+      "ctr": 2.15,
+      "pos": 11.39
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/pearl-envelopes/",
+      "clk": 2.0,
+      "imp": 83.0,
+      "ctr": 2.41,
+      "pos": 5.77
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+      "clk": 2.0,
+      "imp": 80.0,
+      "ctr": 2.5,
+      "pos": 23.68
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/waterproof-stickers/",
+      "clk": 2.0,
+      "imp": 79.0,
+      "ctr": 2.53,
+      "pos": 18.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/about/",
+      "clk": 2.0,
+      "imp": 69.0,
+      "ctr": 2.9,
+      "pos": 4.14
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/vehicle-wraps/",
+      "clk": 2.0,
+      "imp": 59.0,
+      "ctr": 3.39,
+      "pos": 29.37
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/photo-book-printing-guide/",
+      "clk": 2.0,
+      "imp": 56.0,
+      "ctr": 3.57,
+      "pos": 7.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/eco-flyers/",
+      "clk": 2.0,
+      "imp": 54.0,
+      "ctr": 3.7,
+      "pos": 12.65
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-table-card-printing-guide/",
+      "clk": 2.0,
+      "imp": 45.0,
+      "ctr": 4.44,
+      "pos": 7.31
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+      "clk": 2.0,
+      "imp": 44.0,
+      "ctr": 4.55,
+      "pos": 7.98
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/laminated-menus/",
+      "clk": 2.0,
+      "imp": 44.0,
+      "ctr": 4.55,
+      "pos": 9.02
+    },
+    {
+      "url": "https://zprintpro.com/en/category/flyers/",
+      "clk": 2.0,
+      "imp": 43.0,
+      "ctr": 4.65,
+      "pos": 5.3
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/school-exercise-book-printing-guide/",
+      "clk": 2.0,
+      "imp": 42.0,
+      "ctr": 4.76,
+      "pos": 10.81
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-materials/",
+      "clk": 2.0,
+      "imp": 38.0,
+      "ctr": 5.26,
+      "pos": 10.29
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/menu-buying-guide/",
+      "clk": 2.0,
+      "imp": 38.0,
+      "ctr": 5.26,
+      "pos": 13.84
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-invitation-envelope-printing-guide/",
+      "clk": 2.0,
+      "imp": 35.0,
+      "ctr": 5.71,
+      "pos": 10.26
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/industrial-nameplate-printing-guide/",
+      "clk": 2.0,
+      "imp": 34.0,
+      "ctr": 5.88,
+      "pos": 7.62
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/perfect-bound-books/",
+      "clk": 2.0,
+      "imp": 29.0,
+      "ctr": 6.9,
+      "pos": 16.97
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/hong-kong-printing-cost-baseline-2026/",
+      "clk": 2.0,
+      "imp": 28.0,
+      "ctr": 7.14,
+      "pos": 6.96
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/hardcover-books/",
+      "clk": 2.0,
+      "imp": 28.0,
+      "ctr": 7.14,
+      "pos": 13.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/comiket-c109/",
+      "clk": 2.0,
+      "imp": 27.0,
+      "ctr": 7.41,
+      "pos": 6.37
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/company-intro/",
+      "clk": 2.0,
+      "imp": 26.0,
+      "ctr": 7.69,
+      "pos": 5.04
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+      "clk": 2.0,
+      "imp": 26.0,
+      "ctr": 7.69,
+      "pos": 6.81
+    },
+    {
+      "url": "https://zprintpro.com/",
+      "clk": 2.0,
+      "imp": 18.0,
+      "ctr": 11.11,
+      "pos": 3.89
+    },
+    {
+      "url": "https://zprintpro.com/ja/",
+      "clk": 2.0,
+      "imp": 18.0,
+      "ctr": 11.11,
+      "pos": 5.83
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/red-packets/",
+      "clk": 2.0,
+      "imp": 18.0,
+      "ctr": 11.11,
+      "pos": 14.94
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/thick-greeting-cards-400g/",
+      "clk": 2.0,
+      "imp": 16.0,
+      "ctr": 12.5,
+      "pos": 7.19
+    },
+    {
+      "url": "https://zprintpro.com/en/category/wedding-invitations/",
+      "clk": 2.0,
+      "imp": 14.0,
+      "ctr": 14.29,
+      "pos": 14.57
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/a1-posters/",
+      "clk": 2.0,
+      "imp": 11.0,
+      "ctr": 18.18,
+      "pos": 5.45
+    },
+    {
+      "url": "https://zprintpro.com/en/product/custom-calendars/",
+      "clk": 2.0,
+      "imp": 10.0,
+      "ctr": 20.0,
+      "pos": 17.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/wedding-seating-charts/",
+      "clk": 2.0,
+      "imp": 7.0,
+      "ctr": 28.57,
+      "pos": 7.86
+    },
+    {
+      "url": "http://zprintpro.com/",
+      "clk": 2.0,
+      "imp": 6.0,
+      "ctr": 33.33,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/gang-run-card-boxes/",
+      "clk": 2.0,
+      "imp": 5.0,
+      "ctr": 40.0,
+      "pos": 4.6
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/books/",
+      "clk": 1.0,
+      "imp": 522.0,
+      "ctr": 0.19,
+      "pos": 43.99
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/packaging/",
+      "clk": 1.0,
+      "imp": 385.0,
+      "ctr": 0.26,
+      "pos": 32.48
+    },
+    {
+      "url": "https://zprintpro.com/en/product/catalog-printing/",
+      "clk": 1.0,
+      "imp": 320.0,
+      "ctr": 0.31,
+      "pos": 21.47
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "clk": 1.0,
+      "imp": 212.0,
+      "ctr": 0.47,
+      "pos": 45.56
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+      "clk": 1.0,
+      "imp": 203.0,
+      "ctr": 0.49,
+      "pos": 22.07
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/stickers/",
+      "clk": 1.0,
+      "imp": 194.0,
+      "ctr": 0.52,
+      "pos": 40.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+      "clk": 1.0,
+      "imp": 169.0,
+      "ctr": 0.59,
+      "pos": 56.04
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+      "clk": 1.0,
+      "imp": 130.0,
+      "ctr": 0.77,
+      "pos": 13.16
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/2027-monthly-calendar-printing-timetable/",
+      "clk": 1.0,
+      "imp": 119.0,
+      "ctr": 0.84,
+      "pos": 9.64
+    },
+    {
+      "url": "https://zprintpro.com/en/product/a1-posters/",
+      "clk": 1.0,
+      "imp": 118.0,
+      "ctr": 0.85,
+      "pos": 18.27
+    },
+    {
+      "url": "https://zprintpro.com/en/product/a4-flyers/",
+      "clk": 1.0,
+      "imp": 111.0,
+      "ctr": 0.9,
+      "pos": 13.86
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "clk": 1.0,
+      "imp": 109.0,
+      "ctr": 0.92,
+      "pos": 18.77
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+      "clk": 1.0,
+      "imp": 98.0,
+      "ctr": 1.02,
+      "pos": 31.27
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/a5-vs-a6-flyer-size/",
+      "clk": 1.0,
+      "imp": 95.0,
+      "ctr": 1.05,
+      "pos": 6.34
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/cny-2027-red-packet-printing-guide/",
+      "clk": 1.0,
+      "imp": 92.0,
+      "ctr": 1.09,
+      "pos": 4.66
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/kraft-paper-packaging-box/",
+      "clk": 1.0,
+      "imp": 91.0,
+      "ctr": 1.1,
+      "pos": 20.63
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+      "clk": 1.0,
+      "imp": 80.0,
+      "ctr": 1.25,
+      "pos": 32.05
+    },
+    {
+      "url": "https://zprintpro.com/en/category/japan-doujin/",
+      "clk": 1.0,
+      "imp": 78.0,
+      "ctr": 1.28,
+      "pos": 8.81
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/colored-envelopes/",
+      "clk": 1.0,
+      "imp": 67.0,
+      "ctr": 1.49,
+      "pos": 6.4
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/restaurant-opening-flyer-printing-guide/",
+      "clk": 1.0,
+      "imp": 67.0,
+      "ctr": 1.49,
+      "pos": 6.45
+    },
+    {
+      "url": "https://zprintpro.com/en/product/adhesive-posters/",
+      "clk": 1.0,
+      "imp": 67.0,
+      "ctr": 1.49,
+      "pos": 28.21
+    },
+    {
+      "url": "https://zprintpro.com/en/payment-methods/",
+      "clk": 1.0,
+      "imp": 66.0,
+      "ctr": 1.52,
+      "pos": 5.53
+    },
+    {
+      "url": "https://zprintpro.com/en/product/a5-flyers/",
+      "clk": 1.0,
+      "imp": 65.0,
+      "ctr": 1.54,
+      "pos": 10.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-design/",
+      "clk": 1.0,
+      "imp": 65.0,
+      "ctr": 1.54,
+      "pos": 15.38
+    },
+    {
+      "url": "https://zprintpro.com/en/about/",
+      "clk": 1.0,
+      "imp": 63.0,
+      "ctr": 1.59,
+      "pos": 7.3
+    },
+    {
+      "url": "https://zprintpro.com/en/product/perfect-bound-books/",
+      "clk": 1.0,
+      "imp": 57.0,
+      "ctr": 1.75,
+      "pos": 25.28
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/self-publishing-printing-guide/",
+      "clk": 1.0,
+      "imp": 55.0,
+      "ctr": 1.82,
+      "pos": 6.45
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+      "clk": 1.0,
+      "imp": 54.0,
+      "ctr": 1.85,
+      "pos": 11.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/restaurant-menu-printing-guide/",
+      "clk": 1.0,
+      "imp": 51.0,
+      "ctr": 1.96,
+      "pos": 7.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/clear-vs-matte-stickers/",
+      "clk": 1.0,
+      "imp": 51.0,
+      "ctr": 1.96,
+      "pos": 7.94
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "clk": 1.0,
+      "imp": 51.0,
+      "ctr": 1.96,
+      "pos": 11.98
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/envelopes/",
+      "clk": 1.0,
+      "imp": 45.0,
+      "ctr": 2.22,
+      "pos": 8.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/service-areas/",
+      "clk": 1.0,
+      "imp": 45.0,
+      "ctr": 2.22,
+      "pos": 10.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/folded-leaflets/",
+      "clk": 1.0,
+      "imp": 45.0,
+      "ctr": 2.22,
+      "pos": 34.13
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/certificates/",
+      "clk": 1.0,
+      "imp": 39.0,
+      "ctr": 2.56,
+      "pos": 11.26
+    },
+    {
+      "url": "https://zprintpro.com/en/product/waterproof-stickers/",
+      "clk": 1.0,
+      "imp": 39.0,
+      "ctr": 2.56,
+      "pos": 11.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/instant-printing-30s-ai-quote-flow/",
+      "clk": 1.0,
+      "imp": 37.0,
+      "ctr": 2.7,
+      "pos": 7.78
+    },
+    {
+      "url": "https://zprintpro.com/en/category/envelopes/",
+      "clk": 1.0,
+      "imp": 36.0,
+      "ctr": 2.78,
+      "pos": 12.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/eco-printing/",
+      "clk": 1.0,
+      "imp": 36.0,
+      "ctr": 2.78,
+      "pos": 13.39
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/japan-doujin/",
+      "clk": 1.0,
+      "imp": 35.0,
+      "ctr": 2.86,
+      "pos": 9.17
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/magnetic-closure-gift-box/",
+      "clk": 1.0,
+      "imp": 33.0,
+      "ctr": 3.03,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/corrugated-boxes/",
+      "clk": 1.0,
+      "imp": 32.0,
+      "ctr": 3.12,
+      "pos": 22.09
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/same-day-flyers/",
+      "clk": 1.0,
+      "imp": 30.0,
+      "ctr": 3.33,
+      "pos": 20.67
+    },
+    {
+      "url": "https://zprintpro.com/en/product/kraft-paper-bags/",
+      "clk": 1.0,
+      "imp": 29.0,
+      "ctr": 3.45,
+      "pos": 22.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/real-estate-flyer-printing-guide/",
+      "clk": 1.0,
+      "imp": 27.0,
+      "ctr": 3.7,
+      "pos": 5.3
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/kraft-paper-box-types-comparison-2026/",
+      "clk": 1.0,
+      "imp": 27.0,
+      "ctr": 3.7,
+      "pos": 5.37
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/rigid-boxes/",
+      "clk": 1.0,
+      "imp": 27.0,
+      "ctr": 3.7,
+      "pos": 5.74
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/outdoor-vinyl-banners/",
+      "clk": 1.0,
+      "imp": 26.0,
+      "ctr": 3.85,
+      "pos": 6.04
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/foil-stamping-3-applications-2026/",
+      "clk": 1.0,
+      "imp": 26.0,
+      "ctr": 3.85,
+      "pos": 7.85
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/magnetic-closure-gift-box/",
+      "clk": 1.0,
+      "imp": 24.0,
+      "ctr": 4.17,
+      "pos": 8.79
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/greeting-card-buying-guide/",
+      "clk": 1.0,
+      "imp": 23.0,
+      "ctr": 4.35,
+      "pos": 6.13
+    },
+    {
+      "url": "https://zprintpro.com/en/category/paper-bags/",
+      "clk": 1.0,
+      "imp": 23.0,
+      "ctr": 4.35,
+      "pos": 11.26
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/pvc-menus/",
+      "clk": 1.0,
+      "imp": 22.0,
+      "ctr": 4.55,
+      "pos": 7.23
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/foil-greeting-cards/",
+      "clk": 1.0,
+      "imp": 21.0,
+      "ctr": 4.76,
+      "pos": 8.1
+    },
+    {
+      "url": "https://zprintpro.com/en/category/red-packets/",
+      "clk": 1.0,
+      "imp": 21.0,
+      "ctr": 4.76,
+      "pos": 19.48
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/thick-paper-flyers/",
+      "clk": 1.0,
+      "imp": 20.0,
+      "ctr": 5.0,
+      "pos": 4.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/magnetic-calendars/",
+      "clk": 1.0,
+      "imp": 18.0,
+      "ctr": 5.56,
+      "pos": 6.72
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/white-card-bags/",
+      "clk": 1.0,
+      "imp": 18.0,
+      "ctr": 5.56,
+      "pos": 8.06
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "clk": 1.0,
+      "imp": 18.0,
+      "ctr": 5.56,
+      "pos": 19.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/cosmetic-boxes/",
+      "clk": 1.0,
+      "imp": 17.0,
+      "ctr": 5.88,
+      "pos": 9.65
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/gift-bags/",
+      "clk": 1.0,
+      "imp": 17.0,
+      "ctr": 5.88,
+      "pos": 31.71
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/tuck-end-boxes/",
+      "clk": 1.0,
+      "imp": 16.0,
+      "ctr": 6.25,
+      "pos": 4.62
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/disposable-menus/",
+      "clk": 1.0,
+      "imp": 16.0,
+      "ctr": 6.25,
+      "pos": 27.62
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/apparel-clothing-tag-printing-guide/",
+      "clk": 1.0,
+      "imp": 14.0,
+      "ctr": 7.14,
+      "pos": 8.36
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-favor-bag-printing-guide/",
+      "clk": 1.0,
+      "imp": 13.0,
+      "ctr": 7.69,
+      "pos": 6.92
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/security-stickers/",
+      "clk": 1.0,
+      "imp": 12.0,
+      "ctr": 8.33,
+      "pos": 7.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/custom-red-packets/",
+      "clk": 1.0,
+      "imp": 9.0,
+      "ctr": 11.11,
+      "pos": 9.56
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/religious-ceremony-printing-guide/",
+      "clk": 1.0,
+      "imp": 8.0,
+      "ctr": 12.5,
+      "pos": 3.88
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hotel-keycard-sleeve-printing-guide/",
+      "clk": 1.0,
+      "imp": 8.0,
+      "ctr": 12.5,
+      "pos": 5.25
+    },
+    {
+      "url": "https://zprintpro.com/en/comiket-c109/",
+      "clk": 1.0,
+      "imp": 8.0,
+      "ctr": 12.5,
+      "pos": 5.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/matte-greeting-cards/",
+      "clk": 1.0,
+      "imp": 8.0,
+      "ctr": 12.5,
+      "pos": 5.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/certificates/",
+      "clk": 1.0,
+      "imp": 8.0,
+      "ctr": 12.5,
+      "pos": 50.25
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/large-red-packets/",
+      "clk": 1.0,
+      "imp": 7.0,
+      "ctr": 14.29,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/en/category/place-cards/",
+      "clk": 1.0,
+      "imp": 7.0,
+      "ctr": 14.29,
+      "pos": 19.29
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/paper-bags/",
+      "clk": 1.0,
+      "imp": 7.0,
+      "ctr": 14.29,
+      "pos": 28.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/custom-red-packets/",
+      "clk": 1.0,
+      "imp": 6.0,
+      "ctr": 16.67,
+      "pos": 4.33
+    },
+    {
+      "url": "https://zprintpro.com/en/category/menus/",
+      "clk": 1.0,
+      "imp": 6.0,
+      "ctr": 16.67,
+      "pos": 6.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/foil-greeting-cards/",
+      "clk": 1.0,
+      "imp": 6.0,
+      "ctr": 16.67,
+      "pos": 6.83
+    },
+    {
+      "url": "https://zprintpro.com/en/product/rigid-boxes/",
+      "clk": 1.0,
+      "imp": 6.0,
+      "ctr": 16.67,
+      "pos": 20.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/payment/success/",
+      "clk": 1.0,
+      "imp": 5.0,
+      "ctr": 20.0,
+      "pos": 17.6
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/nengajo-2027/",
+      "clk": 1.0,
+      "imp": 4.0,
+      "ctr": 25.0,
+      "pos": 2.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/payment-methods/",
+      "clk": 1.0,
+      "imp": 4.0,
+      "ctr": 25.0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/thick-paper-flyer-printing-restaurant-takeout-guide/",
+      "clk": 1.0,
+      "imp": 3.0,
+      "ctr": 33.33,
+      "pos": 2.67
+    },
+    {
+      "url": "https://zprintpro.com/en/product/acrylic-keychain/",
+      "clk": 1.0,
+      "imp": 3.0,
+      "ctr": 33.33,
+      "pos": 5.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/industrial-nameplate-printing-guide/",
+      "clk": 1.0,
+      "imp": 3.0,
+      "ctr": 33.33,
+      "pos": 7.67
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/real-estate-floor-plan-poster-printing-guide/",
+      "clk": 1.0,
+      "imp": 3.0,
+      "ctr": 33.33,
+      "pos": 8.33
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/photo-book-printing-guide/",
+      "clk": 1.0,
+      "imp": 3.0,
+      "ctr": 33.33,
+      "pos": 9.33
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/rush-printing-hk-guide/",
+      "clk": 1.0,
+      "imp": 2.0,
+      "ctr": 50.0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/finance-summit-gift-bag-printing-guide/",
+      "clk": 1.0,
+      "imp": 1.0,
+      "ctr": 100.0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cosmetic-card-boxes-gang-run-japan/",
+      "clk": 1.0,
+      "imp": 1.0,
+      "ctr": 100.0,
+      "pos": 14.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/marathon-event-poster-printing-guide/",
+      "clk": 0,
+      "imp": 293.0,
+      "ctr": 0,
+      "pos": 6.83
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/calendar-printing-guide/",
+      "clk": 0,
+      "imp": 163.0,
+      "ctr": 0,
+      "pos": 27.31
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/a2-posters/",
+      "clk": 0,
+      "imp": 162.0,
+      "ctr": 0,
+      "pos": 25.83
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+      "clk": 0,
+      "imp": 156.0,
+      "ctr": 0,
+      "pos": 45.28
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/paper-bag-printing-guide/",
+      "clk": 0,
+      "imp": 147.0,
+      "ctr": 0,
+      "pos": 20.41
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-invitation-pricing-guide/",
+      "clk": 0,
+      "imp": 135.0,
+      "ctr": 0,
+      "pos": 7.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-buying-guide/",
+      "clk": 0,
+      "imp": 132.0,
+      "ctr": 0,
+      "pos": 59.28
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/paper-materials/",
+      "clk": 0,
+      "imp": 128.0,
+      "ctr": 0,
+      "pos": 31.26
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+      "clk": 0,
+      "imp": 124.0,
+      "ctr": 0,
+      "pos": 39.53
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/flyer-sizes-compared/",
+      "clk": 0,
+      "imp": 116.0,
+      "ctr": 0,
+      "pos": 6.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/kraft-paper-bags/",
+      "clk": 0,
+      "imp": 103.0,
+      "ctr": 0,
+      "pos": 9.9
+    },
+    {
+      "url": "https://zprintpro.com/en/product/saddle-stitch-booklets/",
+      "clk": 0,
+      "imp": 100.0,
+      "ctr": 0,
+      "pos": 10.31
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/poster-printing-price-guide/",
+      "clk": 0,
+      "imp": 92.0,
+      "ctr": 0,
+      "pos": 5.95
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "clk": 0,
+      "imp": 72.0,
+      "ctr": 0,
+      "pos": 6.17
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/a5-vs-a6-flyer-size/",
+      "clk": 0,
+      "imp": 70.0,
+      "ctr": 0,
+      "pos": 7.59
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/sticker-materials/",
+      "clk": 0,
+      "imp": 68.0,
+      "ctr": 0,
+      "pos": 9.91
+    },
+    {
+      "url": "https://zprintpro.com/en/product/large-envelopes/",
+      "clk": 0,
+      "imp": 66.0,
+      "ctr": 0,
+      "pos": 6.82
+    },
+    {
+      "url": "https://zprintpro.com/en/product/exercise-books/",
+      "clk": 0,
+      "imp": 66.0,
+      "ctr": 0,
+      "pos": 8.17
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-size-guide/",
+      "clk": 0,
+      "imp": 65.0,
+      "ctr": 0,
+      "pos": 6.86
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/graduation-yearbook/",
+      "clk": 0,
+      "imp": 64.0,
+      "ctr": 0,
+      "pos": 26.7
+    },
+    {
+      "url": "https://zprintpro.com/en/product/double-sided-flyers/",
+      "clk": 0,
+      "imp": 61.0,
+      "ctr": 0,
+      "pos": 24.67
+    },
+    {
+      "url": "https://zprintpro.com/en/product/cosmetic-boxes/",
+      "clk": 0,
+      "imp": 61.0,
+      "ctr": 0,
+      "pos": 31.49
+    },
+    {
+      "url": "https://zprintpro.com/en/product/roll-stickers/",
+      "clk": 0,
+      "imp": 59.0,
+      "ctr": 0,
+      "pos": 39.42
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/foil-red-packets/",
+      "clk": 0,
+      "imp": 58.0,
+      "ctr": 0,
+      "pos": 2.03
+    },
+    {
+      "url": "https://zprintpro.com/en/product/food-boxes/",
+      "clk": 0,
+      "imp": 58.0,
+      "ctr": 0,
+      "pos": 28.83
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/eco-paper-bags/",
+      "clk": 0,
+      "imp": 56.0,
+      "ctr": 0,
+      "pos": 33.34
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/certificate-printing-guide/",
+      "clk": 0,
+      "imp": 53.0,
+      "ctr": 0,
+      "pos": 8.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/art-posters/",
+      "clk": 0,
+      "imp": 53.0,
+      "ctr": 0,
+      "pos": 18.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/flyer-buying-guide/",
+      "clk": 0,
+      "imp": 51.0,
+      "ctr": 0,
+      "pos": 7.84
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/roll-up-banner-printing-guide/",
+      "clk": 0,
+      "imp": 51.0,
+      "ctr": 0,
+      "pos": 9.27
+    },
+    {
+      "url": "https://zprintpro.com/en/product/same-day-flyers/",
+      "clk": 0,
+      "imp": 51.0,
+      "ctr": 0,
+      "pos": 10.39
+    },
+    {
+      "url": "https://zprintpro.com/en/product/pvc-menus/",
+      "clk": 0,
+      "imp": 50.0,
+      "ctr": 0,
+      "pos": 8.92
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/print-specifications-reference-guide-2026/",
+      "clk": 0,
+      "imp": 50.0,
+      "ctr": 0,
+      "pos": 9.36
+    },
+    {
+      "url": "https://zprintpro.com/en/product/removable-stickers/",
+      "clk": 0,
+      "imp": 49.0,
+      "ctr": 0,
+      "pos": 22.78
+    },
+    {
+      "url": "https://zprintpro.com/en/category/educational/",
+      "clk": 0,
+      "imp": 49.0,
+      "ctr": 0,
+      "pos": 32.57
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/cosmetic-boxes/",
+      "clk": 0,
+      "imp": 48.0,
+      "ctr": 0,
+      "pos": 5.21
+    },
+    {
+      "url": "https://zprintpro.com/en/product/eco-flyers/",
+      "clk": 0,
+      "imp": 48.0,
+      "ctr": 0,
+      "pos": 18.31
+    },
+    {
+      "url": "https://zprintpro.com/en/product/vehicle-wraps/",
+      "clk": 0,
+      "imp": 48.0,
+      "ctr": 0,
+      "pos": 19.98
+    },
+    {
+      "url": "https://zprintpro.com/en/product/die-cut-stickers/",
+      "clk": 0,
+      "imp": 48.0,
+      "ctr": 0,
+      "pos": 27.29
+    },
+    {
+      "url": "https://zprintpro.com/en/product/pearl-envelopes/",
+      "clk": 0,
+      "imp": 47.0,
+      "ctr": 0,
+      "pos": 6.55
+    },
+    {
+      "url": "https://zprintpro.com/en/product/transparent-stickers/",
+      "clk": 0,
+      "imp": 45.0,
+      "ctr": 0,
+      "pos": 10.18
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/menus/",
+      "clk": 0,
+      "imp": 45.0,
+      "ctr": 0,
+      "pos": 16.91
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/contact/",
+      "clk": 0,
+      "imp": 44.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/electronics-packaging-box/",
+      "clk": 0,
+      "imp": 43.0,
+      "ctr": 0,
+      "pos": 25.74
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clk": 0,
+      "imp": 43.0,
+      "ctr": 0,
+      "pos": 26.23
+    },
+    {
+      "url": "https://zprintpro.com/en/contact/",
+      "clk": 0,
+      "imp": 41.0,
+      "ctr": 0,
+      "pos": 8.17
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-cost-baseline-2026/",
+      "clk": 0,
+      "imp": 39.0,
+      "ctr": 0,
+      "pos": 4.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0,
+      "imp": 39.0,
+      "ctr": 0,
+      "pos": 7.49
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/services/",
+      "clk": 0,
+      "imp": 38.0,
+      "ctr": 0,
+      "pos": 6.34
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/textbooks/",
+      "clk": 0,
+      "imp": 37.0,
+      "ctr": 0,
+      "pos": 42.35
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/books/",
+      "clk": 0,
+      "imp": 37.0,
+      "ctr": 0,
+      "pos": 45.08
+    },
+    {
+      "url": "https://zprintpro.com/en/product/mailer-boxes/",
+      "clk": 0,
+      "imp": 37.0,
+      "ctr": 0,
+      "pos": 49.89
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/a5-vs-a6-flyer-size/",
+      "clk": 0,
+      "imp": 36.0,
+      "ctr": 0,
+      "pos": 4.89
+    },
+    {
+      "url": "https://zprintpro.com/ja/about/",
+      "clk": 0,
+      "imp": 36.0,
+      "ctr": 0,
+      "pos": 5.31
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/restaurant-opening-flyer-printing-guide/",
+      "clk": 0,
+      "imp": 35.0,
+      "ctr": 0,
+      "pos": 8.49
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/calendars/",
+      "clk": 0,
+      "imp": 35.0,
+      "ctr": 0,
+      "pos": 22.8
+    },
+    {
+      "url": "https://zprintpro.com/en/product/security-stickers/",
+      "clk": 0,
+      "imp": 35.0,
+      "ctr": 0,
+      "pos": 32.51
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/2027-calendar-printing-complete-guide/",
+      "clk": 0,
+      "imp": 34.0,
+      "ctr": 0,
+      "pos": 9.41
+    },
+    {
+      "url": "https://zprintpro.com/en/category/posters/",
+      "clk": 0,
+      "imp": 34.0,
+      "ctr": 0,
+      "pos": 12.15
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/food-boxes/",
+      "clk": 0,
+      "imp": 34.0,
+      "ctr": 0,
+      "pos": 20.35
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/banner-buying-guide/",
+      "clk": 0,
+      "imp": 33.0,
+      "ctr": 0,
+      "pos": 30.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+      "clk": 0,
+      "imp": 33.0,
+      "ctr": 0,
+      "pos": 38.18
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-materials/",
+      "clk": 0,
+      "imp": 32.0,
+      "ctr": 0,
+      "pos": 5.62
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/adhesive-posters/",
+      "clk": 0,
+      "imp": 30.0,
+      "ctr": 0,
+      "pos": 11.9
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/rush-printing-delivery-guide/",
+      "clk": 0,
+      "imp": 29.0,
+      "ctr": 0,
+      "pos": 11.1
+    },
+    {
+      "url": "https://zprintpro.com/en/product/fluorescent-stickers/",
+      "clk": 0,
+      "imp": 29.0,
+      "ctr": 0,
+      "pos": 16.1
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/comiket-printing-prep-guide/",
+      "clk": 0,
+      "imp": 29.0,
+      "ctr": 0,
+      "pos": 22.31
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/mtr-advertising-specs/",
+      "clk": 0,
+      "imp": 28.0,
+      "ctr": 0,
+      "pos": 4.07
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/mailer-boxes/",
+      "clk": 0,
+      "imp": 28.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/category/books/",
+      "clk": 0,
+      "imp": 28.0,
+      "ctr": 0,
+      "pos": 11.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/desk-calendars/",
+      "clk": 0,
+      "imp": 28.0,
+      "ctr": 0,
+      "pos": 28.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/help-center/",
+      "clk": 0,
+      "imp": 27.0,
+      "ctr": 0,
+      "pos": 5.81
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-red-packet-printing-guide/",
+      "clk": 0,
+      "imp": 27.0,
+      "ctr": 0,
+      "pos": 10.78
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/",
+      "clk": 0,
+      "imp": 25.0,
+      "ctr": 0,
+      "pos": 6.24
+    },
+    {
+      "url": "https://zprintpro.com/en/product/outdoor-vinyl-banners/",
+      "clk": 0,
+      "imp": 25.0,
+      "ctr": 0,
+      "pos": 20.56
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/corrugated-boxes/",
+      "clk": 0,
+      "imp": 24.0,
+      "ctr": 0,
+      "pos": 11.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/double-sided-flyers/",
+      "clk": 0,
+      "imp": 24.0,
+      "ctr": 0,
+      "pos": 27.54
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/desk-calendars/",
+      "clk": 0,
+      "imp": 24.0,
+      "ctr": 0,
+      "pos": 45.96
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/",
+      "clk": 0,
+      "imp": 23.0,
+      "ctr": 0,
+      "pos": 7.39
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/wall-calendars/",
+      "clk": 0,
+      "imp": 23.0,
+      "ctr": 0,
+      "pos": 28.35
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-design/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 7.14
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/place-cards/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 8.18
+    },
+    {
+      "url": "https://zprintpro.com/en/product/corrugated-boxes/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 9.09
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 10.73
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/die-cut-stickers/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 16.59
+    },
+    {
+      "url": "https://zprintpro.com/en/product/eco-paper-bags/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 21.09
+    },
+    {
+      "url": "https://zprintpro.com/en/product/fruit-food-label-stickers/",
+      "clk": 0,
+      "imp": 22.0,
+      "ctr": 0,
+      "pos": 26.32
+    },
+    {
+      "url": "https://zprintpro.com/en/product/kraft-paper-packaging-box/",
+      "clk": 0,
+      "imp": 21.0,
+      "ctr": 0,
+      "pos": 6.24
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0,
+      "imp": 21.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/adhesive-banners/",
+      "clk": 0,
+      "imp": 21.0,
+      "ctr": 0,
+      "pos": 12.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/rigid-boxes/",
+      "clk": 0,
+      "imp": 21.0,
+      "ctr": 0,
+      "pos": 29.76
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/exercise-books/",
+      "clk": 0,
+      "imp": 20.0,
+      "ctr": 0,
+      "pos": 8.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/eco-paper-bags/",
+      "clk": 0,
+      "imp": 19.0,
+      "ctr": 0,
+      "pos": 5.79
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/mini-calendars/",
+      "clk": 0,
+      "imp": 19.0,
+      "ctr": 0,
+      "pos": 6.42
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/outdoor-vinyl-banners/",
+      "clk": 0,
+      "imp": 19.0,
+      "ctr": 0,
+      "pos": 8.32
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/eco-paper-bag-gsm/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 5.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/flyer-printing-guide/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/foil-stickers/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 8.11
+    },
+    {
+      "url": "https://zprintpro.com/en/product/foil-red-packets/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 14.28
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/pet-food-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 26.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/perfect-bound-books/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 44.17
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/custom-calendars/",
+      "clk": 0,
+      "imp": 18.0,
+      "ctr": 0,
+      "pos": 52.83
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/foil-stickers/",
+      "clk": 0,
+      "imp": 17.0,
+      "ctr": 0,
+      "pos": 8.53
+    },
+    {
+      "url": "https://zprintpro.com/en/product/magnetic-closure-gift-box/",
+      "clk": 0,
+      "imp": 17.0,
+      "ctr": 0,
+      "pos": 25.88
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/quote/",
+      "clk": 0,
+      "imp": 16.0,
+      "ctr": 0,
+      "pos": 5.31
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "clk": 0,
+      "imp": 16.0,
+      "ctr": 0,
+      "pos": 9.12
+    },
+    {
+      "url": "https://zprintpro.com/en/product/outdoor-posters/",
+      "clk": 0,
+      "imp": 16.0,
+      "ctr": 0,
+      "pos": 17.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/company-news/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 4.53
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/graduation-yearbook-printing-guide/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 7.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/pearl-envelopes/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 10.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/folded-leaflets/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 12.07
+    },
+    {
+      "url": "https://zprintpro.com/en/product/folded-leaflets/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 16.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/outdoor-posters/",
+      "clk": 0,
+      "imp": 15.0,
+      "ctr": 0,
+      "pos": 21.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/press-kit/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 3.93
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/adhesive-banners/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 5.07
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/large-envelope-printing-c4-c5/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 5.71
+    },
+    {
+      "url": "https://zprintpro.com/en/service-areas/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 8.14
+    },
+    {
+      "url": "https://zprintpro.com/en/product/graduation-yearbook/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 13.07
+    },
+    {
+      "url": "https://zprintpro.com/en/product/art-posters/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 18.36
+    },
+    {
+      "url": "https://zprintpro.com/en/product/laminated-menus/",
+      "clk": 0,
+      "imp": 14.0,
+      "ctr": 0,
+      "pos": 19.21
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/childrens-picture-book-printing-guide/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 6.38
+    },
+    {
+      "url": "https://zprintpro.com/en/product/wall-calendars/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 6.69
+    },
+    {
+      "url": "https://zprintpro.com/en/cart/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 6.77
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/2027-calendar-printing-complete-guide/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/spiral-notebooks/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 7.69
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/greeting-cards/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 8.38
+    },
+    {
+      "url": "https://zprintpro.com/en/product/certificates/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 8.54
+    },
+    {
+      "url": "https://zprintpro.com/en/product/handle-bags/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 8.92
+    },
+    {
+      "url": "https://zprintpro.com/en/help-center/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 9.46
+    },
+    {
+      "url": "https://zprintpro.com/en/product/textbooks/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 14.69
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/laminated-menus/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 17.31
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/magnetic-calendars/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 20.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/school-flyers/",
+      "clk": 0,
+      "imp": 13.0,
+      "ctr": 0,
+      "pos": 21.85
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/double-sided-flyers/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 4.17
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/kraft-paper-bags/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 4.25
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/display-posters/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 4.25
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/hardcover-menus/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 6.08
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/saddle-stitch-booklet-printing-guide/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 6.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/white-card-boxes/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 11.92
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/stickers/",
+      "clk": 0,
+      "imp": 12.0,
+      "ctr": 0,
+      "pos": 22.58
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/fluorescent-stickers/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 4.55
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/doujin-circle-printing-guide/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 5.09
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/clear-vs-matte-stickers/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 5.27
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/tuck-end-boxes/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 5.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/packaging-color-psychology/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 5.64
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/zine-small-batch-booklet-printing-guide/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 5.73
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/2027-monthly-calendar-printing-timetable/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 6.18
+    },
+    {
+      "url": "https://zprintpro.com/en/product/embossed-red-packets/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 6.45
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/poster-size-guide/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 11.09
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/spiral-notebooks/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 12.55
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/large-bags/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 13.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/roll-stickers/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 14.36
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/flyers/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 16.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/roll-up-banners/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 19.55
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/banners/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 30.73
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/mini-calendars/",
+      "clk": 0,
+      "imp": 11.0,
+      "ctr": 0,
+      "pos": 40.09
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/comiket-printing-prep-guide/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 4.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/flyer-sizes-compared/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/matte-greeting-cards/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 5.8
+    },
+    {
+      "url": "https://zprintpro.com/en/product/mini-calendars/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 6.7
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/eco-tote-bag/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/posters/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/photo-frame-calendars/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/business-envelopes/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 11.5
+    },
+    {
+      "url": "https://zprintpro.com/en/faq/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 13.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/wedding-invitation-cost-guide/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 16.7
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/handle-bags/",
+      "clk": 0,
+      "imp": 10.0,
+      "ctr": 0,
+      "pos": 34.1
+    },
+    {
+      "url": "https://zprintpro.com/en/product/white-card-bags/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 3.67
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/2027-monthly-calendar-printing-timetable/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/packaging-box-price-2026/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 5.22
+    },
+    {
+      "url": "https://zprintpro.com/en/quote/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 6.56
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/photo-book-printing-guide/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 6.89
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/2027-calendar-printing-complete-guide/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 7.11
+    },
+    {
+      "url": "https://zprintpro.com/ja/contact/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 7.67
+    },
+    {
+      "url": "https://zprintpro.com/en/product/colored-envelopes/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 7.78
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/outdoor-posters/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 9.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/embossed-red-packets/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 11.33
+    },
+    {
+      "url": "https://zprintpro.com/en/product/hardcover-menus/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 17.22
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/hardcover-books/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 18.56
+    },
+    {
+      "url": "https://zprintpro.com/en/category/packaging/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 23.22
+    },
+    {
+      "url": "https://zprintpro.com/en/product/desk-calendars/",
+      "clk": 0,
+      "imp": 9.0,
+      "ctr": 0,
+      "pos": 27.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/rounded-corner-greeting-cards/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 2.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/spot-uv-greeting-cards/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 4.25
+    },
+    {
+      "url": "https://zprintpro.com/en/product/thick-paper-flyers/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 4.88
+    },
+    {
+      "url": "https://zprintpro.com/en/product/thick-greeting-cards-400g/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 6.88
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/cart/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 7.25
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/faq/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/en/product/magnetic-calendars/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 8.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/rush-printing-delivery-guide/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/envelopes/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 9.38
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/zine-small-batch-booklet-printing-guide/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 9.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/payment-methods/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 9.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/custom-card-boxes-small-batch-usa/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 10.62
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/roll-up-banners/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 13.75
+    },
+    {
+      "url": "https://zprintpro.com/en/product/folding-boxes/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 15.38
+    },
+    {
+      "url": "https://zprintpro.com/en/product/spiral-notebooks/",
+      "clk": 0,
+      "imp": 8.0,
+      "ctr": 0,
+      "pos": 54.25
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/a4-flyers/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 2.71
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/electronics-packaging-box/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 5.14
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/product-label-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 5.29
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/foil-red-packets/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 5.29
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/food-packaging-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 5.86
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/cmyk-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/wedding-invitation-envelope-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 7.29
+    },
+    {
+      "url": "https://zprintpro.com/en/product/can-badge/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 7.71
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/etsy-seller-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 7.86
+    },
+    {
+      "url": "https://zprintpro.com/en/nengajo-2027/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cosmetics-packaging-box-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 8.29
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/greeting-card-buying-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 8.71
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 9.43
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/menus/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 17.14
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 17.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/postcard-set/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 19.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/adhesive-posters/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 27.57
+    },
+    {
+      "url": "https://zprintpro.com/en/category/greeting-cards/",
+      "clk": 0,
+      "imp": 7.0,
+      "ctr": 0,
+      "pos": 32.43
+    },
+    {
+      "url": "https://zprintpro.com/en/product/hardcover-books/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/candle-soap-label-printing-guide/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/cartoon-red-packets/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 4.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/wedding-invitation-cost-guide/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 5.17
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/trade-show-banner-printing-guide/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 6.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/greeting-cards/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 6.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/cartoon-red-packets/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 6.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/company-intro/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 6.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/packaging-box-price-2026/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/eco-red-packets/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/legal/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 9.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/name-tags-badges/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 9.67
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/gang-run-card-boxes-hk-guide/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 9.83
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/wedding-suite-bundle/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 11.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/business-envelopes/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 11.83
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/japan-doujin/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 12.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/wedding-invitations/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 23.33
+    },
+    {
+      "url": "https://zprintpro.com/en/product/photo-frame-calendars/",
+      "clk": 0,
+      "imp": 6.0,
+      "ctr": 0,
+      "pos": 29.17
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/gang-run-card-boxes/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 1.8
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/packaging-box-custom-guide/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/en/press-kit/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 4.8
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/hong-kong-printing-guide/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 5.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/white-card-boxes/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/media-merchandise-box-printing-guide/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 6.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/self-publishing-printing-guide/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 6.8
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/ip-character-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 7.2
+    },
+    {
+      "url": "https://zprintpro.com/en/product/display-posters/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 7.8
+    },
+    {
+      "url": "https://zprintpro.com/en/product/roll-up-banners/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 8.4
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/eco-red-packets/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 9.2
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/flyer-sizes-compared/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/security-stickers/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 13.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/catalog-printing/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 16.6
+    },
+    {
+      "url": "https://zprintpro.com/en/services/rush-printing-delivery/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 19.8
+    },
+    {
+      "url": "https://zprintpro.com/en/product/gift-bags/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 20.4
+    },
+    {
+      "url": "https://zprintpro.com/ja/services/rush-printing-delivery/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 20.8
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/folding-boxes/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 22.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/eco-printing/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 26.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/mailer-boxes/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 28.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/gang-run-card-boxes/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 30.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/display-posters/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 36.4
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/services/catalog-printing-china/",
+      "clk": 0,
+      "imp": 5.0,
+      "ctr": 0,
+      "pos": 72.2
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/candle-soap-label-printing-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 3.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/faq/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 3.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/electronics-packaging-box/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 4.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/thick-greeting-cards-400g/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/folding-boxes/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 5.75
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/flyer-distribution-strategy/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/menu-buying-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/car-dealership-amenity-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/paper-bag-buying-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 9.25
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/retail-shop-poster-printing-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 9.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/rush-printing-delivery-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 11.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/flyer-printing-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 11.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/adhesive-banners/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 11.75
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/large-envelopes/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 12.25
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/large-red-packets/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 15.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/doujin-circle-printing-guide/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 22.25
+    },
+    {
+      "url": "https://zprintpro.com/en/product/premium-greeting-cards/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 22.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/vehicle-wraps/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 22.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/eco-flyers/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 24.25
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/banners/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 33.5
+    },
+    {
+      "url": "https://zprintpro.com/en/category/banners/",
+      "clk": 0,
+      "imp": 4.0,
+      "ctr": 0,
+      "pos": 50.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/product-label-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 1.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/a5-flyers/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/acrylic-keychain/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/restaurant-menu-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/thick-paper-flyer-printing-restaurant-takeout-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 4.33
+    },
+    {
+      "url": "https://zprintpro.com/en/product/foil-greeting-cards/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 4.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/art-posters/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 4.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/drink-menus/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 4.33
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/media-merchandise-box-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 5.33
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/self-publishing-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 5.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/white-card-bags/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sports-merchandise-gift-box-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 7.33
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/print-specifications-reference-guide-2026/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/tuck-end-boxes/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/instant-printing-30s-ai-quote-flow/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 8.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/wedding-invitation-cost-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 8.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/rounded-corner-greeting-cards/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 9.67
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/photo-frame-calendars/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 10.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/custom-red-packets/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 10.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/packaging-buying-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 11.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/pvc-card-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 11.67
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/spot-uv-greeting-cards/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 15.33
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/wall-calendars/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 30.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/disposable-menus/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 47.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/apparel-clothing-tag-printing-guide/",
+      "clk": 0,
+      "imp": 3.0,
+      "ctr": 0,
+      "pos": 53.0
+    },
+    {
+      "url": "https://www.zprintpro.com/en/category/packaging/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/hardcover-menus/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/trade-show-banner-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sports-merchandise-gift-box-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/cny-2027-red-packet-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/poster-printing-price-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/poster-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/folded-leaflet-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 4.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/wedding-suite-bundle/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 4.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/rigid-vs-folding-boxes/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 5.0
+    },
+    {
+      "url": "https://zprintpro.com/en/services/catalog-printing-china/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 5.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/cosmetics-packaging-box-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/medical-device-packaging-box-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 5.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/same-day-flyers-printing-hong-kong-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/cosmetic-card-boxes-gang-run-japan/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/ip-character-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/catalog-printing-china-supplier-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 6.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/foil-stamping-3-applications-2026/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/foil-wedding-invitations/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/removable-stickers/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/tea-beverage-gift-box-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/white-card-boxes/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/rush-printing-hk-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/help-center/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/business-card-design/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/custom-card-boxes-small-batch-usa/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/eco-paper-bag-gsm/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/cart/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 8.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/food-packaging-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/trade-program/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/paper-materials/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 9.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/financial-institution-gift-bag-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/paper-bag-buying-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/postcard-set/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/campus-education-printing-pillar-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 10.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/gang-run-card-boxes-hk-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 10.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/catalog-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 11.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/premium-greeting-cards/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 11.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/marathon-event-poster-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 11.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/religious-ceremony-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 12.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/product-label-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 13.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/poster-size-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 16.0
+    },
+    {
+      "url": "https://zprintpro.com/en/case-studies/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 19.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/pvc-menus/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 22.5
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/apparel-shopping-bag-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 24.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/graduation-yearbook-printing-guide/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 35.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/gift-bags/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 35.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/foil-stamping-3-applications-2026/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 38.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/drink-menus/",
+      "clk": 0,
+      "imp": 2.0,
+      "ctr": 0,
+      "pos": 38.5
+    },
+    {
+      "url": "https://www.zprintpro.com/en/category/flyers/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/hotel-keycard-sleeve-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/paper-materials/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/school-flyers/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/thick-paper-flyers/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/premium-greeting-cards/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/wedding-place-cards/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 1.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/apparel-clothing-tag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/catalog-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/childrens-picture-book-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/gang-run-card-boxes-hk-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/poster-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/eco-red-packets/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 2.0
+    },
+    {
+      "url": "https://www.zprintpro.com/en/category/posters/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/cross-border-ecommerce-shipping-box-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/wedding-table-card-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/help-center/#returns",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/wedding-table-card-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/can-badge/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/catalog-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 3.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/large-envelope-printing-c4-c5/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/real-estate-brochure-box-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/cross-border-ecommerce-shipping-box-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/poster-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 5.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/jewellery-shopping-bag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 5.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 5.0
+    },
+    {
+      "url": "https://zprintpro.com/en",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/saddle-stitch-booklet-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/flyer-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/greeting-card-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/packaging-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/school-exercise-book-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/wedding-seating-charts/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/place-cards/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/wedding-place-cards/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/financial-institution-gift-bag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/folding-box-cosmetics-brand-eco-friendly-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/construction-material-sample-book-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/folding-box-cosmetics-brand-eco-friendly-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/textbook-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/large-bags/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/kraft-paper-box-types-comparison-2026/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/real-estate-floor-plan-poster-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 9.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/hotel-keycard-sleeve-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/kraft-paper-box-types-comparison-2026/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/paper-bag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/wedding-favor-bag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/tea-beverage-gift-box-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/legal/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/nengajo-2027/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/drink-menus/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/name-tags-badges/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/packaging-trends/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 10.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/magnetic-closure-gift-box-ecommerce-brand-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 11.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/packaging-color-psychology/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 11.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/poster-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 11.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/calendar-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 11.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/calendar-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 12.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/baby-product-label-sticker-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 16.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/insights/hk-print-inquiry-index/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 20.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/cartoon-red-packets/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 22.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/finance-summit-gift-bag-printing-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 27.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/flyer-buying-guide/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 27.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/case-studies/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 29.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/educational/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 31.0
+    },
+    {
+      "url": "https://zprintpro.com/en/payment/success/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 39.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/company-news/",
+      "clk": 0,
+      "imp": 1.0,
+      "ctr": 0,
+      "pos": 41.0
+    }
+  ],
+  "pages_total": 602
 }

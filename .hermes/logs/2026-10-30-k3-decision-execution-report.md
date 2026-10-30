@@ -154,6 +154,20 @@ CF build 部署判定窗口：第一轮 19:03→19:05 轮询 7 次 `old=false`�
 复测字段: baseline / change / online_verify / retest / decision / confounders（缺任一项不得称「已验证」）。
 基线 SSoT: `.hermes/logs/k3-kpi-panel-2026-10-30.json`（复测时用同脚本、同 sheet、同口径重算）。
 
+**复测器（本轮新建）**：`scripts/k3-retest.py --xlsx "<新导出>.xlsx"` —— 读新档自动对 10-30 基线出四指标 delta + 5 个任务落地页 delta + 23 带钱词严格口径 delta；已用 10-30 同档自检（全部 delta = 0，双方法一致）。
+
+**任务落地页基线（10-30 28d，网页 sheet 实读）**：
+
+| 页面 | 点击 | 展示 | CTR | 均位 | 解读 |
+|---|---|---|---|---|---|
+| /zh-hk/category/posters/ | 1 | 212 | 0.47% | **45.56** | 极弱页，本次价格真值修正正好落此 |
+| /zh-hk/category/packaging/ | 1 | 385 | 0.26% | **32.48** | 同上，弱页 |
+| /en/product/small-batch-stickers/ | 2 | 257 | 0.78% | **8.99** | 已近首页邻域，MOQ 修正影响最直接 |
+| /en/services/catalog-printing-china/ | 0 | 2 | 0.00% | 5.00 | 展示量太小，单看排名无意义 |
+| /ja/comiket-c109/ | 2 | 27 | **7.41%** | 6.37 | CTR 最高，倒排真值删除后需观察转化话术影响 |
+
+> 口径提醒：catalog 页 28d 仅 2 次展示，任何「排名 5.0」都不可作为结论；海报/包装页均位 45/32 说明**不是价格口径拖累，而是收录与相关性**，11-06 复测应重点看展示量是否随口径统一而恢复。
+
 ## 7. 本轮新增交付（不需 K3 拍板即可执行的部分）
 
 | 产物 | 路径 | 用途 |
