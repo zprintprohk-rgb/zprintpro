@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T10:31:00+08:00 (execution writeback 7b396bd9)",
+  "generated_at": "2026-10-30T19:12:00+08:00 (sticker body 补遗 + 全站模板遗留登记)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -98,9 +98,9 @@
       "owner_lane": "ZP-daily-content",
       "status": "DONE",
       "next_check": "2026-11-06 (7天复测)",
-      "result": "EXECUTED 7b396bd9: CSV 回源 H1 50+→10+ / desc 删 4-day+proof / kw 删 50-minimum + 生成器重跑; EN body ts-only 区删 Free Shipping $99/4-day/food-grade/rush; zh 贴纸域 SGS×6 无证声明删 + 500張起印→10(minQuantity 全 10 确认). 遗留: zh CSV FAQ 100張起訂 待 K3.",
+      "result": "EXECUTED 7b396bd9 + 9f7b348c: CSV 回源 H1 50+→10+ / desc 删 4-day+proof / kw 删 50-minimum + 生成器重跑; EN body 前段+尾部 FAQ 全清 (Q2 MOQ 100→10 / Q3 proof+sample 报价确认 / Q4 运输报价确认); ja 同 SKU 4 日米国配送/DHL 2-4 日/1 時間校正/¥2,980 条件化; zh 贴纸域 SGS×6 删 + 500張起印→10. 首轮脚本全局替换越界 removable-stickers 已逐行复原 (staged 仅 3 行). 遗留: zh CSV FAQ 100張起訂 待 K3.",
       "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
-      "execution_commit": "7b396bd9"
+      "execution_commit": "7b396bd9, 9f7b348c"
     },
     {
       "task_id": "EN-CATALOG-20261028-TRUTH",
@@ -437,6 +437,32 @@
       "status": "READY",
       "next_check": "2026-10-31",
       "result": "Dispatched by weekly review from observed BLOCKED; not a completed fix"
+    },
+    {
+      "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
+      "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #3 执行副作用审查",
+      "market": "all",
+      "target": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx:446-452 (AEO 答案块模板) + ProductWhyChooseUs.tsx:167 + TrustBadgeBlock.tsx:62",
+      "evidence": "线上 curl 2026-10-30 19:05: /en/product/small-batch-stickers/ 与 /ja/... 仍渲染「standard lead time 5-7 days, free digital proof within 1 hour of file submission」「データ提出後 1 時間で無料デジタル校正」; 属跨 ~250 SKU 全站模板, 单 SKU 裁决 #3 未授权",
+      "score": 0.7,
+      "write_scope": "全站批量改动 (需 K3 放行 §0.25.10.5); 建议改为「lead time/proof timing confirmed at quote」",
+      "approval_gate": "WAITING_K3: 是否允许全站模板改口径 (1) 全站改 (2) 仅贴纸/海报等已批 SKU 例外 (3) 维持现状",
+      "owner_lane": "manual",
+      "status": "WAITING_K3",
+      "created_at": "2026-10-30T19:12:00+08:00"
+    },
+    {
+      "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
+      "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #3 执行副作用审查",
+      "market": "en",
+      "target": "src/data/sku-seo-data.ts 其余 ~70 SKU body (Free US shipping over $99 / 4-day delivery / Rush 2-day)",
+      "evidence": "grep 2026-10-30: 除 small-batch 外仍有大量 SKU body 含未确认运输承诺 (removable/die-cut/waterproof/roll-labels/kraft-bags/flyers 等); 老模板, 非本批范围",
+      "score": 0.65,
+      "write_scope": "跨 SKU 批量 (需 K3 放行); 逐 SKU 回源 CSV 或 body 条件化",
+      "approval_gate": "WAITING_K3: 是否以「贴纸族 6 SKU」为下一批试点, 或全站一次性条件化",
+      "owner_lane": "manual",
+      "status": "WAITING_K3",
+      "created_at": "2026-10-30T19:12:00+08:00"
     }
   ],
   "last_review": {

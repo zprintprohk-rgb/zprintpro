@@ -2,7 +2,7 @@
 
 > 日期: 2026-10-30（Asia/Shanghai）| 执行层: deepseek hermes（ZprintPro SEO/AEO/GEO 数据战略分析师）
 > 依据: `.hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md`（K3 指令「1-5 全部按推荐」）+ 三份战略文件优先级
-> 状态: **5/5 任务执行完成 + push 7b396bd9（含 e5d3cd5f 车道产物）+ 线上验收进行中（等 CF build 部署）**
+> 状态: **5/5 任务执行完成；push 三轮：7b396bd9（主批 + e5d3cd5f 车道产物）→ 9f7b348c（贴纸 body 尾部 FAQ 补齐）→ e30b9609（海报 meta + catalog 标题）；线上验收见 §5**
 
 ---
 
@@ -85,14 +85,40 @@
 
 ## 4. Push
 
-- `7b396bd9`（src 9 文件）+ `e5d3cd5f`（blog-deepfix 车道 docs 报告，07:22 lane 产物随批推）→ **d9cfce55..7b396bd9 main→main**（push_exit=0）
-- 间隔：距 d9cfce55（07:16）**3h13min ≥ 30min 硬下限** ✓（push-gate-check: window open, 188m）
-- 攒批：9 个 src 文件 ≥3 ✓
+- 第一轮：`7b396bd9`（src 9 文件）+ `e5d3cd5f`（blog-deepfix 车道 docs，07:22 lane 产物随批推）→ **d9cfce55..7b396bd9**（10:29，push_exit=0；距上次 3h13min ≥ 30min ✓）
+- 第二轮：`9f7b348c`（贴纸 body 尾部 FAQ 补齐）+ `f11976a8`（执行报告）→ **7b396bd9..9f7b348c**（19:02，距上次 8h33min ✓）
+- 第三轮：`e30b9609`（海报 meta + catalog 标题）→ 等 30min 窗口（≥19:32）后台异步推送
+- 攒批：每轮均满足 ≥1 src 行为修复 / ≥3 非 docs 文件条件
 
-## 5. 线上验收（进行中）
+## 4.1 首轮漏项与收口（诚实记录）
 
-- CF build 部署中（10:29 push），后台轮询器 `_tmp_wait_deploy.cjs` 等新版上线
-- 探针目标（5 页面 × pos/neg）：见验收补充段（build 完成后跑全量）
+| 项 | 现象 | 处置 |
+|---|---|---|
+| 贴纸 body 尾部 FAQ 漏改 | 7b396bd9 只改 body 前 4 段；线上 curl 实测 body 尾部 FAQ 仍渲染「100 stickers minimum / 50-sticker MOQ / 4-day USA / paid sample kit $29 / Free US shipping $99 / Rush 2-day」 | 9f7b348c 补齐（EN Q2-Q4 + 尾句；ja 同 SKU 的 4 日米国配送 / 2-4 日 / 1 時間校正 / ¥2,980 / 48 時間 全条件化） |
+| 脚本全局替换越界 | 首轮修复脚本 `src.replace()` 全局命中，误改 removable-stickers 等 SKU 的 ja body（staged 出现 L160 越界） | 按 `git diff --cached` 逐 hunk 核对，用 HEAD 原文**逐行复原**；最终 staged diff 仅 3 行且全在 small-batch 块内 |
+| 海报 meta 未改 | `src/lib/seo.ts` 类目 descriptions 仍 HK$9/HK$45 | e30b9609 改 zh-hk 为 HK$16/HK$20 |
+| catalog FDA 标题未改 | 首轮只改 desc，`title` 仍是「FDA …」 | e30b9609 三语标题改为大豆油墨/大豆インク措辞 |
+
+## 5. 线上验收（2026-10-30 19:05 首轮，部署确认后）
+
+CF build 部署判定窗口：19:03→19:05 轮询 7 次，`old=false`（旧 FAQ 消失）→ 部署生效。
+
+| 页面 | 结果 | 说明 |
+|---|---|---|
+| `/ja/comiket-c109/` | ✅ PASS | 12/7 倒排真值已无、¥7,500 保留 |
+| `/en/product/small-batch-stickers/` | ⚠️ 批次项 PASS | 100 stickers minimum / 50-sticker MOQ / 4-day USA / paid sample kit / $99 / $9.95 flat / Rush 2-day 全部消失；仅剩「free digital proof within 1 hour」= **全站 AEO 答案块模板**（见 §5.1） |
+| `/ja/product/small-batch-stickers/` | ⚠️ 批次项 PASS | 「4 日米国配送 / 99 ドル以上送料無料 / DHL 国際配送で 2-4 日」已无；仅剩「1 時間以内に無料デジタル校正」= **全站 AEO 答案块** + 服务卡模板 |
+| `/zh-hk/category/posters/` | ⚠️ | 首轮残留来自类目 **meta description**（`src/lib/seo.ts`），e30b9609 已修，待第三轮部署后复验 |
+| `/en/services/catalog-printing-china/` | ⚠️ | 首轮残留为 trustItem **标题**「FDA Food-Grade Ink」，e30b9609 已修，待复验 |
+
+### 5.1 全站模板遗留（超裁决 #3 单 SKU 范围，登记待 K3）
+
+线上仍存在（**跨全部 ~250 SKU**，改动属全站批量改动 §0.25.10.5，需 K3 放行）：
+
+1. `src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx:446-452` AEO 答案块模板：「standard lead time 5-7 days, free digital proof within 1 hour of file submission.」/「標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。」
+2. `src/components/ProductWhyChooseUs.tsx:167` + `src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx:62`：「データ提出後 1 時間で無料デジタル校正、確認後に本印刷」
+3. `src/data/products-content.ts` small-batch `longDescriptionJa` 仍含「DHL/FedEx 直送 2-4 日」「完工後 24-48 時間」等 ja 市场配送表述（ja 侧，裁决 #3 未授权）
+4. `src/data/sku-seo-data.ts` 其余 ~70 个 SKU 的 body 仍普遍含「Free US shipping over $99 / 4-day delivery」（老模板），非本批范围
 
 ## 6. 复测登记（7/14/28 天）
 
@@ -111,5 +137,6 @@
 - 裁决: `.hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md`（1-5 全 A，K3 10-30 09:59 指令）
 - 执行包: `docs/2026-10-28-packaging-batch1-execution-pack.md`
 - 源码真值: `src/data/products.ts`（basePrice/minQuantity）线上实锤 curl 2026-10-30
-- commit: 7b396bd9（10-30 10:29）+ e5d3cd5f（10-30 07:22 lane）
+- commit: 7b396bd9（10:29）+ e5d3cd5f（07:22 lane）+ 9f7b348c（19:02）+ e30b9609（19:1x）
 - 全站免运: `src/components/{HowItWorks,ProductTabs,WhyChooseUs}.tsx`（HK$500 ×4 处一致）
+- 线上验收: curl zprintpro.com 2026-10-30 19:03-19:10（UA 伪装, 200 + 长度校验, 部署轮询 7 次取稳定态）
