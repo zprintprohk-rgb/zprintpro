@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T22:45:00+08:00 (K3 按最优推荐执行: 3 条 WAITING_K3 -> DONE)",
+  "generated_at": "2026-10-30T14:37:00Z",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -621,6 +621,22 @@
       "status": "READY",
       "next_check": "2026-11-06",
       "result": "Dispatched from §6.3 feasibility check; BLOCKED items: 真實刀模(0 files) / C109 倒排(天數未確認)"
+    },
+    {
+      "task_id": "FIX-20261030-SKU-SEO-US-SHIPPING-LEGACY",
+      "status": "READY",
+      "score": 70,
+      "market": "en",
+      "source_strategy": "2026-10-30 K3 全站模板(1)",
+      "approval_gate": "K3 2026-10-30 21:48 全站模板选(1) 已批 — 本项为 SKU-BODY 任务未覆盖面 (sku-seo-data.ts 30 处 'Free US shipping $99/4-day/5-7 day production'), 执行须 SOP-5: CSV 4 行源修 + node scripts/csv-to-sku-seo.mjs --apply 重跑, 禁手改派生文件",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv",
+        "src/data/sku-seo-data.ts (仅生成器输出)"
+      ],
+      "next_check": "2026-10-31",
+      "result": {
+        "note": "SKU-BODY 任务 DONE 时未覆盖本面; 2026-10-30 22:37 登记"
+      }
     }
   ],
   "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
