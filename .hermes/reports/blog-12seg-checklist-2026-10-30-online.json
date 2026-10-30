@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T12:19:57.846Z",
+ "generated_at": "2026-10-30T13:08:16.568Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -793,9 +793,9 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 Standard Paper Size / 2. CMYK vs RGB vs Pantone: 3）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 7 = 17 个，问句 14 个（82%）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -812,7 +812,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "402 个数字 + 检出资料来源标记",
+   "evidence": "400 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -820,9 +820,9 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -1684,9 +1684,9 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 標準紙サイズ: 印刷スペック第 1 歩 / 2. CMYK vs RGB vs Pantone: 印）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 7 = 17 个，问句 14 个（82%）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1703,7 +1703,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "377 个数字 + 检出资料来源标记",
+   "evidence": "376 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1711,9 +1711,9 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2575,9 +2575,9 @@
    "slug": "print-specifications-reference-guide-2026",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 1/17 (H2 10 + H3 7)，非问句 16（例: 1. A1-A6 標準紙張尺寸: 印刷規格第一步 / 2. CMYK vs RGB vs Pantone: 印）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 + H3 7 = 17 个，问句 14 个（82%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2594,7 +2594,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "377 个数字 + 检出资料来源标记",
+   "evidence": "376 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
