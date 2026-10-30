@@ -37,7 +37,7 @@ type Props = { params: { locale: Locale } };
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: '2027 賀年卡・年賀狀印刷 10 張起 HK$1 起 燙金UV | 智印港',
-    desc: '2027 賀年卡・年賀狀印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金／局部 UV／圓角／400g 厚卡可選，3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣。早鳥優惠名額與截單日確認後即時更新，WhatsApp 30 秒報價。',
+    desc: '2027 賀年卡・年賀狀印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金／局部 UV／圓角／400g 厚卡可選，交期與配送時效以報價確認，免費打樣。早鳥優惠名額與截單日確認後即時更新，WhatsApp 30 秒報價。',
     keywords: '年賀狀印刷,賀年卡印刷,新年卡印刷,2027 賀年卡,賀卡印刷早鳥,燙金賀卡,厚卡賀卡,圓角賀卡,香港賀卡訂製,企業賀年卡',
   },
   'en': {
@@ -79,7 +79,7 @@ export default function Nengajo2027Page({ params }: Props) {
   const t = {
     'zh-hk': {
       h1: '2027 賀年卡・年賀狀印刷 — 10 張起 HK$1 起',
-      lead: '2027 年賀狀／賀年卡印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金、局部 UV、圓角、400g 厚卡可選。3-5 個工作天交貨，DHL 全球 2-4 天，免費打樣，30 秒 AI 報價。',
+      lead: '2027 年賀狀／賀年卡印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金、局部 UV、圓角、400g 厚卡可選。交期與配送時效以報價確認，免費打樣，30 秒 AI 報價。',
       ebTitle: '早鳥優惠（名額制）',
       ebBody: '早鳥優惠以「10 月底前落單」為目安（既有口徑，2026-11-01 再確認）。確定嘅早鳥折扣率同正式截單日一經拍板，即刻喺本頁更新 + WhatsApp 逐客通知。',
       ebSlot: '早鳥折扣率・正式截單日：拍板後即刻更新（現行目安：10 月底前落單，2026-11-01 再確認）',
@@ -97,8 +97,8 @@ export default function Nengajo2027Page({ params }: Props) {
       timelineTitle: '由落單到寄達：發注時間線',
       timeline: [
         ['設計／入稿', 'AI／PDF／Canva 檔都得，免費入稿檢查 + 數碼打樣'],
-        ['生產 3-5 個工作天', '深圳平湖廠房柯式印刷，出貨前全檢色差'],
-        ['本地／國際配送', '香港滿 HK$500 免費順豐 1-2 天；DHL 全球 2-4 天'],
+        ['生產（時程以報價確認）', '深圳平湖廠房柯式印刷，出貨前全檢色差'],
+        ['本地／國際配送', '香港滿 HK$500 免費順豐；DHL 全球配送，時效以報價確認'],
         ['投函／派賀', '日本投函締切以日本郵便當年官方案内為準（本頁唔代公佈）'],
       ],
       atenaTitle: '宛名印刷選項',
@@ -108,7 +108,7 @@ export default function Nengajo2027Page({ params }: Props) {
         { q: '最少要印幾多張？', a: '6 款賀卡全部 10 張起印，小批量數碼可做，大批量轉柯式更抵；實際以報價為準。' },
         { q: '早鳥優惠幾時截？', a: '以「10 月底前落單」為目安（既有口徑，2026-11-01 再確認）；正式折扣率同截單日拍板後會喺本頁即時更新。' },
         { q: '可以代印宛名（收件人資料）嗎？', a: '宛名印刷可否代做及費用確認中，確認後喺本頁公佈；需要嘅話可以喺 WhatsApp 先登記需求。' },
-        { q: '幾時落單先趕得切寄出？', a: '生產 3-5 個工作天 + DHL 2-4 天，建議 12 月中旬前完成落單留返郵寄時間；投函締切請以日本郵便官方案内為準。' },
+        { q: '幾時落單先趕得切寄出？', a: '生產與 DHL 配送時程以報價確認，建議及早落單留返郵寄時間；投函締切請以日本郵便官方案内為準。' },
       ],
       relatedTitle: '延伸閱讀與直接落單',
       related: [
@@ -141,8 +141,8 @@ export default function Nengajo2027Page({ params }: Props) {
       timelineTitle: 'From order to delivery',
       timeline: [
         ['Artwork / upload', 'AI / PDF / Canva accepted; free prepress check + digital proof'],
-        ['Production 3-5 days', 'Offset printing at our Shenzhen Pinghu plant, 100% color QC'],
-        ['Shipping', 'DHL international 2-4 days; US free shipping $99+'],
+        ['Production', 'Offset printing at our Shenzhen Pinghu plant, 100% color QC; schedule confirmed at quote'],
+        ['Shipping', 'DHL international delivery; timeframe confirmed at quote'],
         ['Mailing', 'Japan Post mailing deadlines follow the official annual guidance (not republished here)'],
       ],
       atenaTitle: 'Recipient-name (atena) printing',
@@ -185,8 +185,8 @@ export default function Nengajo2027Page({ params }: Props) {
       timelineTitle: '発注からお届けまでのタイムライン',
       timeline: [
         ['デザイン／入稿', 'AI・PDF・Canva 対応、無料入稿チェック＋デジタル校正'],
-        ['印刷 3〜5 営業日', '深圳平湖工場のオフセット印刷、出荷前全数色差検査'],
-        ['配送', 'DHL 国際 2〜4 日（日本宛も対応）'],
+        ['印刷（日程は見積りで確認）', '深圳平湖工場のオフセット印刷、出荷前全数色差検査'],
+        ['配送', 'DHL 国際配送（日程は見積りで確認）'],
         ['投函', '年賀状の投函締切は日本郵便の当年公式案内をご参照ください'],
       ],
       atenaTitle: '宛名印刷オプション',
@@ -196,7 +196,7 @@ export default function Nengajo2027Page({ params }: Props) {
         { q: '最少注文枚数は？', a: '6 SKU すべて10枚から。小ロットはデジタル印刷、ロットが上がるとオフセットで単価が下がります。実額は見積りでご確認ください。' },
         { q: '早割の締切はいつ？', a: '「10月末までのご発注」を目安としています（既存口径、2026-11-01 再確認）。正式な割引率と締切日は確定次第、本ページで更新します。' },
         { q: '宛名印刷はできますか？', a: '対応可否と価格は確認中です。確定次第本ページでご案内します。ご希望は WhatsApp で事前登録いただけます。' },
-        { q: '1月1日までに届く締切は？', a: '印刷3〜5営業日＋DHL 2〜4日のため、12月中旬までのご発注が安心です。投函締切は日本郵便の当年公式案内をご参照ください。' },
+        { q: '1月1日までに届く締切は？', a: '印刷・DHL 国際配送の日程は見積りで確認します。投函締切は日本郵便の当年公式案内をご参照ください。' },
       ],
       relatedTitle: '関連ページ',
       related: [
