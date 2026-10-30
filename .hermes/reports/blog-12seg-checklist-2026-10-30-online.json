@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30T13:10:58.372Z",
+ "generated_at": "2026-10-30T13:25:15.636Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -874,36 +874,36 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 1,
    "name": "倒金字塔首段",
-   "status": "FAIL",
-   "evidence": "首段 211 字 > 200 字",
-   "reason": "改 school-exercise-book-printing-guide 首段到 100-200 字内直接回答核心问题"
+   "status": "PASS",
+   "evidence": "首段 192 字 | \"Schools dread 3 pain points: MOQ too high (5,000+), paper to…\"",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "school-exercise-book-printing-guide",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 0 个合规快速答案块（长度分布 ∅）",
-   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "3 个块，长度 141/156/118",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "school-exercise-book-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/7 (H2 7)，非问句 7（例: Back-to-School 2026 Market / 4 Paper Stocks）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 10 = 10 个，问句 8 个（80%）",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "school-exercise-book-printing-guide",
    "seg": 4,
    "name": "比较表格",
-   "status": "FAIL",
-   "evidence": "仅 0 个 <table>（需 >=2）",
-   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -911,7 +911,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "94 个数字 + 检出资料来源标记",
+   "evidence": "128 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -919,18 +919,18 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "school-exercise-book-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
-   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -1774,27 +1774,27 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 460）",
-   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "4 个块，长度 84/72/55/460",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/6 (H2 6)，非问句 6（例: 4 用紙 / 3 製本 + 4 規格）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 11 = 11 个，问句 9 个（82%）",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 4,
    "name": "比较表格",
-   "status": "FAIL",
-   "evidence": "仅 0 个 <table>（需 >=2）",
-   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1802,7 +1802,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "80 个数字 + 检出资料来源标记",
+   "evidence": "145 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1810,18 +1810,18 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
-   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2665,27 +2665,27 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 2,
    "name": "快速答案块",
-   "status": "FAIL",
-   "evidence": "仅 1 个合规快速答案块（长度分布 450）",
-   "reason": "为 school-exercise-book-printing-guide 增加 >=3 个 40-60 字快速答案块"
+   "status": "PASS",
+   "evidence": "4 个块，长度 85/66/54/450",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "school-exercise-book-printing-guide",
    "seg": 3,
    "name": "H2 问句段群",
-   "status": "FAIL",
-   "evidence": "问句 0/8 (H2 8)，非问句 8（例: 2026 Q3-Q4 開學季市場概況 / 4 種紙材點揀）",
-   "reason": "把陈述式标题改为用户真实搜索问句"
+   "status": "PASS",
+   "evidence": "H2 11 = 11 个，问句 8 个（73%）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
    "slug": "school-exercise-book-printing-guide",
    "seg": 4,
    "name": "比较表格",
-   "status": "FAIL",
-   "evidence": "仅 0 个 <table>（需 >=2）",
-   "reason": "为 school-exercise-book-printing-guide 增加材质×维度表 + 价格/工艺/时效表"
+   "status": "PASS",
+   "evidence": "2 个 <table>",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2693,7 +2693,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "133 个数字 + 检出资料来源标记",
+   "evidence": "178 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -2710,9 +2710,9 @@
    "slug": "school-exercise-book-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
-   "reason": "补 school-exercise-book-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "zh-hk",
@@ -2819,7 +2819,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194931",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194904",
    "reason": ""
   },
   {
@@ -2900,7 +2900,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=227288",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=227384",
    "reason": ""
   },
   {
@@ -2971,27 +2971,27 @@
    "slug": "roll-up-banner-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=176146",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: len 0 < 20000（疑似占位/错误页） (https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195992",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/print-specifications-reference-guide-2026/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=154942",
-   "reason": ""
+   "status": "INVALID",
+   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/school-exercise-book-printing-guide/)",
+   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
   }
  ]
 }
