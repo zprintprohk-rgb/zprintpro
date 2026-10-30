@@ -277,7 +277,8 @@
       "evidence": [
         ".hermes/logs/lane-status.json",
         ".hermes/logs/lane-runs.jsonl",
-        "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+        "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo",
+        "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
       ],
       "score": 100,
       "score_model": "execution-health-blocker",
@@ -301,9 +302,21 @@
             "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
           ],
           "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+        },
+        {
+          "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
+          "observed_at": "2026-10-30",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
+          ],
+          "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
         }
       ],
-      "recurrence_count": 1,
+      "recurrence_count": 2,
       "last_seen": "2026-10-30"
     },
     {

@@ -10,27 +10,28 @@
     "status_available": true
   },
   "execution": {
-    "runs": 28,
+    "runs": 30,
     "verdicts": {
-      "FAILED": 6,
-      "OK": 16,
-      "BLOCKED": 2,
-      "STALE": 4
+      "OK": 18,
+      "STALE": 5,
+      "BLOCKED": 6,
+      "PENDING": 1
     },
     "per_lane": {
       "ZP-gsc-feedback": {
-        "FAILED": 2,
-        "OK": 4
+        "OK": 5,
+        "STALE": 1,
+        "PENDING": 1
       },
       "ZP-daily-content": {
+        "STALE": 3,
         "OK": 8,
-        "FAILED": 2,
-        "STALE": 4
+        "BLOCKED": 4
       },
       "ZP-k3-review": {
-        "FAILED": 2,
-        "BLOCKED": 2,
-        "OK": 1
+        "STALE": 1,
+        "OK": 2,
+        "BLOCKED": 2
       },
       "ZP-blog-deepfix": {
         "OK": 2
@@ -48,9 +49,9 @@
       },
       {
         "task": "ZP-blog-deepfix",
-        "verdict": "MISSING",
+        "verdict": "SCHEDULER_FAILED",
         "recovery_action": "request_human",
-        "evidence": "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+        "evidence": "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
       },
       {
         "task": "ZP-monthly-matrix",
@@ -76,38 +77,38 @@
     },
     {
       "task_id": "ZH-POSTER-20261028-PROCUREMENT",
-      "status": "WAITING_K3",
-      "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-04"
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
     },
     {
       "task_id": "ZH-PACKAGING-20261028-BATCH1",
-      "status": "WAITING_K3",
-      "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-04"
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
     },
     {
       "task_id": "EN-STICKER-20261028-SMALLBATCH",
-      "status": "WAITING_K3",
-      "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-03"
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
     },
     {
       "task_id": "EN-CATALOG-20261028-TRUTH",
-      "status": "WAITING_K3",
-      "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
       "next_check": "2026-11-06"
     },
     {
       "task_id": "JA-C109-20261028-DEADLINE",
-      "status": "WAITING_K3",
-      "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-04"
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
     },
     {
       "task_id": "MEASURE-20261028-ATTRIBUTION",
@@ -185,12 +186,40 @@
       "decision": "HOLD",
       "reason": "retest is not due or lacks a concrete date",
       "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
     }
   ],
   "dispatched_task_ids": [],
   "proposed_task_ids": [
     "FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
-    "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+    "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
     "FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
     "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b"
   ],
@@ -206,9 +235,9 @@
       "reason": "active_lane_recurred"
     },
     {
-      "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+      "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
       "existing_task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
-      "reason": "active_target_recurred"
+      "reason": "active_lane_recurred"
     },
     {
       "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",

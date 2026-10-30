@@ -5,13 +5,13 @@
 ## Execution health
 
 - Window: 2026-10-24 to 2026-10-30
-- Runs: 28; verdicts: {"FAILED": 6, "OK": 16, "BLOCKED": 2, "STALE": 4}
+- Runs: 30; verdicts: {"OK": 18, "STALE": 5, "BLOCKED": 6, "PENDING": 1}
 - Current lanes requiring attention: 4
 
 | lane | verdict | recovery | evidence |
 |---|---|---|---|
 | ZP-weekly-meta | SCHEDULER_FAILED | request_human | Get-ScheduledTaskInfo -TaskName ZP-weekly-meta |
-| ZP-blog-deepfix | MISSING | request_human | Get-ScheduledTask -TaskName ZP-blog-deepfix \| Get-ScheduledTaskInfo |
+| ZP-blog-deepfix | SCHEDULER_FAILED | request_human | Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix |
 | ZP-monthly-matrix | SCHEDULER_FAILED | request_human | Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix |
 | ZP-k3-review | BLOCKED | retry | .hermes/locks/lane.lock |
 
@@ -20,11 +20,11 @@
 | task | previous status | decision | reason |
 |---|---|---|---|
 | OPS-20261028-DSH-CREDENTIAL | BLOCKED_INFRA | FIX | infrastructure blocker requires its designated owner |
-| ZH-POSTER-20261028-PROCUREMENT | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
-| ZH-PACKAGING-20261028-BATCH1 | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
-| EN-STICKER-20261028-SMALLBATCH | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
-| EN-CATALOG-20261028-TRUTH | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
-| JA-C109-20261028-DEADLINE | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| ZH-POSTER-20261028-PROCUREMENT | DONE | STOP | terminal task state |
+| ZH-PACKAGING-20261028-BATCH1 | DONE | STOP | terminal task state |
+| EN-STICKER-20261028-SMALLBATCH | DONE | STOP | terminal task state |
+| EN-CATALOG-20261028-TRUTH | DONE | STOP | terminal task state |
+| JA-C109-20261028-DEADLINE | DONE | STOP | terminal task state |
 | MEASURE-20261028-ATTRIBUTION | CLOSED_BY_K3_S0.37 | HOLD | retest is not due or lacks a concrete date |
 | GEO-20261103-AI-PROBE-S1 | SCHEDULED | HOLD | retest is not due or lacks a concrete date |
 | REVIEW-20261030-WEEKLY | SCHEDULED | HOLD | insufficient comparable outcome evidence; no win/loss claim |
@@ -36,6 +36,10 @@
 | TRUTH-T2-20261029-MINI-CALENDARS-1000 | DONE | STOP | terminal task state |
 | TRUTH-T3-20261029-EN-UNIT-LOCALIZE | DONE | STOP | terminal task state |
 | FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b | READY | HOLD | retest is not due or lacks a concrete date |
+| FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261030-SKU-BODY-SHIPPING-LEGACY | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261030-BLOG-CERT-PHRASES | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261030-A1-POSTER-PRICE-TRIPLE | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
 
 ## Dispatch and learning
 
