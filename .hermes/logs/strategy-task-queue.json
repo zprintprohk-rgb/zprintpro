@@ -1,6 +1,6 @@
-{
+﻿{
   "schema_version": 1,
-  "generated_at": "2026-10-30T19:52:00+08:00 (a1-posters 三层数字分歧登记)",
+  "generated_at": "2026-10-30T13:38:57.307Z",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -502,11 +502,118 @@
       "owner_lane": "manual",
       "status": "WAITING_K3",
       "created_at": "2026-10-30T19:52:00+08:00"
+    },
+    {
+      "task_id": "DIAG-20261030-STICKER-REGRESSION",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+      "market": "zh-hk",
+      "target": "貼紙印刷 40.88 位 / 120 展示 / 0 點擊 — 五因定位（詞頁/收錄/內鏈/內容/競品）",
+      "evidence": [
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+        ".hermes/logs/2026-10-30-ZP-gsc-feedback.md",
+        ".hermes/logs/k3-kpi-panel-2026-10-30.json"
+      ],
+      "score": 0.78,
+      "score_model": "analyst-priority",
+      "write_scope": [
+        ".hermes/logs/"
+      ],
+      "approval_gate": "none (diagnosis only, zero src change)",
+      "owner_lane": "manual-executor",
+      "status": "DONE",
+      "next_check": "2026-11-04",
+      "result": "DONE 2026-10-30: 主因=價格三層不一致+MOQ 同頁多值(50 無真值)+無條件交期/打樣承諾+category 首屏無直答；排除 收錄(4頁200自canonical)/內鏈(34處)/MOQ 500(食品標籤 SKU 合法真值)。未改 src。"
+    },
+    {
+      "task_id": "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+      "market": "zh-hk",
+      "target": "src/data/category-seo-content.ts L2698/L2700/L2742/L2743（50 張起訂×3 無 SKU 支撐 + 打樣當日 + 無條件即日交貨）+ category 首屏直答塊",
+      "evidence": [
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+        "src/data/products.ts（9 貼紙 SKU：8×minQuantity 10 + fruit-food-label 500）"
+      ],
+      "score": 0.76,
+      "score_model": "analyst-priority",
+      "write_scope": [
+        "src/data/category-seo-content.ts"
+      ],
+      "approval_gate": "K3 approves zh sticker scope (decision sheet #3 explicitly scoped EN only)",
+      "owner_lane": "manual-executor",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-04",
+      "result": "Proposed minimal diff A1-A5 in diagnosis report §5.1 (5 lines, single file); freeze-safe (no title/H1 change)"
+    },
+    {
+      "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+      "market": "zh-hk",
+      "target": "src/data/blog-data/zh-hk.json（sticker-buying-guide 材質參考價表 HK$0.5-1.5 / 1.2-3 / 2-5）vs category 卡起訂價 HK$0.38-0.58 vs products.ts basePrice 0.20-1.15",
+      "evidence": [
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+        "線上探針 2026-10-30 21:45（三層價格集實抽）"
+      ],
+      "score": 0.72,
+      "score_model": "analyst-priority",
+      "write_scope": [
+        "src/data/blog-data/zh-hk.json",
+        "src/data/category-seo-content.ts"
+      ],
+      "approval_gate": "K3 approves zh sticker price alignment (same scope block as FIX-...-ZH-TRUTH-CONFLICT)",
+      "owner_lane": "manual-executor",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-04",
+      "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+      "market": "all",
+      "target": "blog [slug] 模板 H1 渲染 = title（含品牌後綴分隔符，三語一致）；zh poster H1 仍含 HK$9 與裁決 #1 新價 16/20 衝突；kraft-paper-box H1 缺失",
+      "evidence": [
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+        "線上探針 2026-10-30 21:48（5 URL H1 實抽，3 語一致帶品牌）"
+      ],
+      "score": 0.68,
+      "score_model": "analyst-priority",
+      "write_scope": [
+        "src/app/[locale]/blog/[slug]/page.tsx"
+      ],
+      "approval_gate": "K3 approves site-wide blog H1 template change (§0.25.10.5 site-wide batch)",
+      "owner_lane": "manual-executor",
+      "status": "WAITING_K3",
+      "next_check": "2026-11-06",
+      "result": "Template-level defect affecting all blog posts; H1 should not carry brand separator"
+    },
+    {
+      "task_id": "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+      "market": "zh-hk/en/ja",
+      "target": "§6.3 三項可做資產：PDF 入稿檢查清單 / 學校採購清單 / 紙袋報價尺寸模板（刀模下載與 C109 倒排維持 BLOCKED）",
+      "evidence": [
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+        "public/ 檔案清點（pdf/ai/eps/zip=0，故刀模下載不可做）",
+        "src/data/price-tables/（紙袋與 exercise-books 真實階梯價）"
+      ],
+      "score": 0.66,
+      "score_model": "analyst-priority",
+      "write_scope": [
+        "src/data/",
+        "src/app/[locale]/"
+      ],
+      "approval_gate": "none for content assets built from existing truth; no new numbers, no die-line download claim",
+      "owner_lane": "manual-executor",
+      "status": "READY",
+      "next_check": "2026-11-06",
+      "result": "Dispatched from §6.3 feasibility check; BLOCKED items: 真實刀模(0 files) / C109 倒排(天數未確認)"
     }
   ],
   "last_review": {
     "period": "weekly",
     "date": "2026-10-30",
-    "report": ".hermes/logs/periodic-review-weekly-2026-10-30.json"
+    "report": ".hermes/logs/periodic-review-weekly-2026-10-30.json",
+    "at": "2026-10-30T13:38:57.307Z",
+    "by": "manual-executor (deepseek-flash)",
+    "note": "P1 貼紙倒退診斷完成 + 3 條 WAITING_K3 修復任務 + 1 條包裝採購資產 READY（裁決 1-5 已於 2026-10-30 19:51 同儕執行，本輪不重做）"
   }
 }
