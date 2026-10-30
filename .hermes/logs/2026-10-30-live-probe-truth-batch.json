@@ -1,0 +1,102 @@
+{
+  "schema": "daily-content-live-probe/v1",
+  "lane": "ZP-daily-content",
+  "run": "2026-10-30 21:17 scheduled round",
+  "probed_during": "2026-10-30 21:17+08:00 车道窗口内（run-context 生成 21:17:01 之后；沙箱无时钟命令，不记秒级时间）",
+  "method": "web_fetch 直接 GET 线上 URL（无 cookie / 无 UA 伪装），HTTP 200 + 正文文本比对；同页重复抓取一次（cache-bust query）验证确定性。沙箱 pwsh 被禁，本轮未跑 node/curl/guards。",
+  "probes": [
+    {
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "http": 200,
+      "repeat": "https://zprintpro.com/en/product/small-batch-stickers/?cachebust=20261030T2120 同结果（确定性通过）",
+      "fixed_confirmed": [
+        "MOQ 10（Minimum order 10pc；FAQ 'MOQ is 10 stickers'）",
+        "'100 stickers minimum' 已无",
+        "'4-day USA delivery' / 'paid sample kit $29' / '$99 flat' 已无",
+        "Q2/Q3/Q4 尾部 FAQ 已改为 'confirmed at quote'"
+      ],
+      "residual_claims_live": [
+        "Same-Day Express Delivery | order today · delivered by 12pm tomorrow（顶部徽标）",
+        "hero/answer block: 'standard lead time 5-7 days, free digital proof within 1 hour of file submission.'",
+        "Free US shipping $99+（buy-box + 'DHL worldwide 2-4 days' 段 + FAQ）",
+        "Quality guarantee: Free reprint if unsatisfied（buy-box）",
+        "WhyChooseUs: '100% Satisfaction / Free reprint if not satisfied, full refund'",
+        "WhyChooseUs: 'Free digital proof within 1 hour before production' / 'Rush 24h Available / Standard 3-5 days, urgent orders same day'",
+        "FAQ: 'Free digital proof in 1 hour, free US shipping over $99' / '2-4 business day delivery to US addresses via DHL / FedEx'",
+        "'15+ Years Experience' + 'ISO-certified quality manufacturing'",
+        "'10-piece sample pack for $5.99'（正文与 FAQ 各一次）"
+      ]
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "http": 200,
+      "fixed_confirmed": [
+        "技术规格 参考价: 'A2 157g 銅版紙 HK$16 起/張，A1 HK$20 起/張'（= K3 裁决 #1 真值）"
+      ],
+      "residual_claims_live": [
+        "FAQ Q1: '128g 銅版紙 A2 約 HK$6-9/張、A1 約 HK$10-16/張（100 張批量價）'（批量口径，与规格表起始价并存，需标注为批量价）"
+      ],
+      "price_inconsistency": {
+        "sku": "a2-posters",
+        "numbers_on_same_page": {
+          "product_title_h3": "HK$12.9/張",
+          "card_unit_price": "HK$2.20 每張起",
+          "card_batch_total": "10張起批 · 整批 HK$160",
+          "spec_reference": "A2 HK$16 起/張"
+        },
+        "arithmetic": "整批 160 ÷ 10 = 16.0/張；卡片单价 2.20 × 7.27 ≈ 16.0（2.20 恰为 16 的 USD 折算值却标 HK$）",
+        "consistent_pairs": "16（规格表）= 16（整批÷10）；12.9 与 2.20 为另一口径"
+      }
+    },
+    {
+      "url": "https://zprintpro.com/en/category/posters/",
+      "http": 200,
+      "price_inconsistency": {
+        "sku": "a2-posters",
+        "numbers_on_same_page": {
+          "card_unit_price": "$0.28/sheet",
+          "card_batch_total": "From 10 pcs · batch $20",
+          "cross_locale_check": "zh 卡 HK$2.20 × (1/7.86) ≈ $0.28；batch $20 ÷ 10 = $2.00/张"
+        },
+        "arithmetic": "batch 20 ÷ 10 = 2.00/sheet vs 标价 0.28/sheet → 单价低报约 7.1 倍；与 zh 卡同一形态（多一次汇率折算）",
+        "a1_note": "A1 卡 $3.71-5.76/sheet = zh HK$29.00-45.00 ÷ 7.8（单次换算，正常），但与规格表 A1 HK$20 起及裁决 #1 仍不一致"
+      }
+    }
+  ],
+  "findings": [
+    {
+      "id": "N1-CATEGORY-CARD-UNIT-PRICE-FX",
+      "severity": "P1-candidate",
+      "status": "UNREGISTERED before this run",
+      "claim": "类目卡「每張起」单价被多折算一次汇率：A2 zh 显示 HK$2.20/張、en 显示 $0.28/sheet，而同卡整批价（HK$160 / $20 for 10）折算为 16.0 / 2.00 per sheet。单价与整批价自相矛盾，客户可见。",
+      "evidence": "两次独立 GET（zh/en 各一）+ 同页算术；en 值 ≈ zh 值 ÷ 7.86，zh 值 ≈ 16 ÷ 7.27 → 同一多折算形态",
+      "scope_guess": "至少 a2-posters 一张；是否波及全部类目卡需 host 侧读 pricing.ts / CategoryPageV9 定价渲染路径确认（本轮无 node/git 权限）",
+      "not_done": "未改任何 src；未断定根因（可能为显示层换算 / basePrice 单位 / anchor override 缺失）"
+    },
+    {
+      "id": "N2-REFUND-AND-SAMPLE-CLAIMS-LIVE",
+      "severity": "P1-candidate",
+      "status": "PARTIALLY covered by existing WAITING_K3 (template) but the 100%-refund / $5.99 sample-pack copy is NOT in any registered task",
+      "claim": "K3 裁决 #3 选 A/B 明确「无证案例/100%退款 不发布」「proof/sample 未确认不宣传」，但线上 small-batch PDP 仍渲染 '100% Satisfaction · Free reprint if not satisfied, full refund' 与 '10-piece sample pack for $5.99'。",
+      "evidence": "同 N1 的 en PDP 抓取（HTTP 200）正文逐字",
+      "not_done": "未改任何 src；未判定这些串属 SKU 字段还是全站组件（buy-box / TrustBadgeBlock / products-content）"
+    }
+  ],
+  "existing_task_mapping": {
+    "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM": ["standard lead time 5-7 days, free digital proof within 1 hour", "Free digital proof within 1 hour before production"],
+    "FIX-20261030-SKU-BODY-SHIPPING-LEGACY": ["Free US shipping $99+", "DHL worldwide 2-4 days", "2-4 business day delivery to US addresses"],
+    "FIX-20261030-A1-POSTER-PRICE-TRIPLE": ["A1 HK$29.00-45.00 vs 规格表 HK$20 起 vs basePrice 20"],
+    "not_registered": ["N1 类目卡单价多折算", "N2 full refund / $5.99 sample pack"]
+  },
+  "guardrails": {
+    "src_writes": 0,
+    "files_written": [
+      ".hermes/logs/2026-10-30-ZP-daily-content.md",
+      ".hermes/logs/archive/2026-10-30-ZP-daily-content-1817-run.md",
+      ".hermes/logs/2026-10-30-live-probe-truth-batch.json"
+    ],
+    "sibling_files_touched": [],
+    "queue_rewritten": false,
+    "reason_no_queue_write": "strategy-task-queue.json 今日 19:52 已由同侪写入；run-context 跨车道避让规则禁止同日二次改写"
+  }
+}
