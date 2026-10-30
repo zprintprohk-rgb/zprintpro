@@ -189,6 +189,26 @@ CF build 部署判定窗口：第一轮 19:03→19:05 轮询 7 次 `old=false`�
 | ZP-monthly-matrix | UNKNOWN | 每月 1 号 12:13，今日非调度日 |
 | ZP-k3-review | BLOCKED | 与 7:10 报告一致（凭据/锁），属已知 K3 管理员项 |
 
+## 9. 已批 5 任务对应 SKU 的残余扫描（2026-10-30 19:52）
+
+扫描面：`sku-seo-data.ts` + `products-content.ts`，覆盖 #1 海报（a2/a1）、#2 包装批1（food/kraft/rigid/gift/mailer）、#3 贴纸（small-batch）、#4 catalog（saddle-stitch/perfect-bound/photo）、#5 C109（doujinshi）共 15 个 SKU。
+
+**结论：0 处 SKU 独有违规；47 处命中全部落在共享模板上。**
+
+| 命中串 | 处数 | 归属 |
+|---|---|---|
+| `標準訂單 3-5 個工作天完成…日本客戶 DHL 國際速遞 2-4 個工作天到貨…` | **64** | 全站 zh FAQ 模板 |
+| `<em>…DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。…</em>` | **66** | 全站 em 模板（含一句重复 bug） |
+| `DHL/FedEx 直送 2-4 日`（ja） | 18 | ja 全站 |
+| ja 配送表行（DHL/FedEx/EMS/工場） | 10–20 各 | ja 全站 |
+| `提交後 1 小時免費數碼打稿` | 3 | 共享 |
+| `DHL 2-4 day delivery.` | 3 | 共享 |
+| `午前 11 時までのデータ確定で当日仕上げ` | 2 | ja 共享 |
+
+**含义（对决策重要）**：裁决单 #1-#5 的单 SKU 层面已经清干净；线上还能看到的运输/打稿承诺**全部来自全站模板**。因此 K3 只需对「全站模板」做一个决定（全站一次改 / 先贴纸族 6 SKU / 维持现状），即可解锁这一整类问题，不需要逐 SKU 审批。
+
+**新发现的真值分歧（已登记，未改动）**：`a1-posters` 存在三层数字——`products.ts basePrice=20`（裁决 #1 认定值）、`price_range='HK$290-7,200 · 噴繪成品'`、`longDescriptionEn 'A1 inkjet 1 poster HK$45/56'`。三者指向不同产品形态（柯式 A1 / 喷绘成品 / 喷绘基材单张），执行层无法判断客户下单应见哪个价，已登记 `FIX-20261030-A1-POSTER-PRICE-TRIPLE`（WAITING_K3，含三选项）。
+
 ---
 
 ## 数据来源

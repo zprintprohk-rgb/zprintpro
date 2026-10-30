@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T19:52:00+08:00 (全站模板证据加强)",
+  "generated_at": "2026-10-30T19:52:00+08:00 (a1-posters 三层数字分歧登记)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -476,6 +476,19 @@
       "owner_lane": "manual",
       "status": "WAITING_K3",
       "created_at": "2026-10-30T19:50:00+08:00"
+    },
+    {
+      "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
+      "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #1 (A2 HK$16 / A1 HK$20) 执行副作用审查",
+      "market": "zh-hk",
+      "target": "src/data/products.ts a1-posters (basePrice 20 / price_range 'HK$290-7,200 · 噴繪成品') + src/data/products-content.ts a1-posters longDescriptionEn 'A1 inkjet substrates: 1 poster HK$45 (Yupo/eco) or HK$56 (photo paper); 10 posters HK$29/HK$36; 50 at HK$14.50/HK$18'",
+      "evidence": "2026-10-30 实测三层数字互不一致: ① products.ts basePrice=20 (裁决 #1 认定的 A1 真值) ② price_range='HK$290-7,200 · 噴繪成品 · 不含安裝裱貼' (喷绘成品档) ③ longDescriptionEn 写 '1 poster at HK$45 / HK$56' (A1 喷绘基材档)。三种口径指向不同产品形态(柯式 vs 喷绘成品 vs 喷绘基材单张), 执行层无法判断哪个是客户下单时应看到的价, 故未改动。",
+      "score": 0.6,
+      "write_scope": "a1-posters 单 SKU 三处数字 + 可能连带 category-seo-content 海报价表; 需先定口径再改",
+      "approval_gate": "WAITING_K3: a1-posters 对外参考价以哪个为准 —— (1) basePrice 20 (柯式 A1) (2) price_range 290+ (喷绘成品) (3) 分产品线分别展示 (柯式/喷绘成品/喷绘基材)",
+      "owner_lane": "manual",
+      "status": "WAITING_K3",
+      "created_at": "2026-10-30T19:52:00+08:00"
     }
   ],
   "last_review": {
