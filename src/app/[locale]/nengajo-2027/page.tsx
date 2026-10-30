@@ -42,12 +42,12 @@ const metaMap: Record<string, { title: string; desc: string; keywords: string }>
   },
   'en': {
     title: 'Nengajo 2027 Printing | 10 MOQ from $0.13 | ZprintPro',
-    desc: 'Japanese New Year cards (nengajo) 2027 printing: 6 card SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock, 3-5 day production, DHL 2-4 day delivery, free digital proof. Early-bird terms confirmed soon. 30-second AI quote.',
+    desc: 'Japanese New Year cards (nengajo) 2027 printing: 6 card SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock, lead time and shipping confirmed at quote, free digital proof. Early-bird terms confirmed soon. 30-second AI quote.',
     keywords: 'nengajo printing,japanese new year cards 2027,nengajo 2027,new year card printing,greeting card printing early bird,foil new year cards,custom nengajo,nengaja english,japan new year card service,new year postcard printing',
   },
   'ja': {
     title: '年賀状 2027 印刷 10枚から ¥20〜 オリジナル | ZprintPro',
-    desc: '2027年年賀状印刷ページ。6 SKU すべて10枚から、1枚¥20〜（箔押し¥35〜）。127×178mm 標準サイズ、宛名オプション対応確認中、納期3〜5営業日、DHL国際2〜4日、無料入稿チェック。早割率・正式締切は確定次第本ページで更新。30秒AI見積り対応。',
+    desc: '2027年年賀状印刷ページ。6 SKU すべて10枚から、1枚¥20〜（箔押し¥35〜）。127×178mm 標準サイズ、宛名オプション対応確認中、納期・配送はお見積りで確認、無料入稿チェック。早割率・正式締切は確定次第本ページで更新。30秒AI見積り対応。',
     keywords: '年賀状印刷,年賀状 2027,オリジナル年賀状,箔押し 年賀状,年賀状 早割,年賀状 10枚から,宛名印刷,企業年賀状,数百枚 年賀状,年賀状 外注',
   },
 };
@@ -123,7 +123,7 @@ export default function Nengajo2027Page({ params }: Props) {
     },
     en: {
       h1: '2027 Nengajo & New Year Cards — 10 MOQ from US$0.13',
-      lead: '2027 Japanese New Year card printing: 6 SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock. 3-5 day production, DHL 2-4 day delivery, free digital proof, 30-second AI quote.',
+      lead: '2027 Japanese New Year card printing: 6 SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock. lead time and shipping confirmed at quote, free digital proof, 30-second AI quote.',
       ebTitle: 'Early-Bird Terms',
       ebBody: 'Working guidance: order by end of October (existing baseline, re-confirmed 2026-11-01). Confirmed discount rate and final deadline will be published on this page once approved.',
       ebSlot: 'Discount rate & final deadline: to be published once approved (working guidance: order by end of October, re-confirmed 2026-11-01)',
@@ -152,7 +152,7 @@ export default function Nengajo2027Page({ params }: Props) {
         { q: 'What is the minimum order?', a: 'All 6 card SKUs start from 10 pcs; small runs are digital, larger runs move to offset for better unit price.' },
         { q: 'When does the early-bird end?', a: 'Working guidance is end of October (baseline, re-confirmed 2026-11-01); the confirmed rate and deadline will be posted here once approved.' },
         { q: 'Can you print recipient names (atena)?', a: 'Availability and pricing are being confirmed; register your requirement on WhatsApp meanwhile.' },
-        { q: 'How late can I order for January 1 delivery?', a: 'Production is 3-5 working days plus DHL 2-4 days; we recommend ordering by mid-December, and Japan Post mailing deadlines follow their official annual guidance.' },
+        { q: 'How late can I order for January 1 delivery?', a: 'Production and shipping timelines are confirmed at quote; we recommend ordering by mid-December, and Japan Post mailing deadlines follow their official annual guidance.' },
       ],
       relatedTitle: 'Related',
       related: [
@@ -167,7 +167,7 @@ export default function Nengajo2027Page({ params }: Props) {
     },
     ja: {
       h1: '2027年年賀状印刷 — 10枚から ¥20〜 オリジナルカード',
-      lead: '2027年年賀状印刷のご案内ページです。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期3〜5営業日、DHL国際2〜4日、無料入稿チェック、30秒AI見積り対応。',
+      lead: '2027年年賀状印刷のご案内ページです。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期・配送はお見積りで確認、無料入稿チェック、30秒AI見積り対応。',
       ebTitle: '早割のご案内',
       ebBody: '早割は「10月末までのご発注」を目安としています（既存口径、2026-11-01 に再確認）。確定した割引率と正式な締切日は、決まり次第こちらのページと WhatsApp でご案内します。',
       ebSlot: '早割率・正式締切日：確定次第更新（現行目安：10月末までのご発注、2026-11-01 再確認）',

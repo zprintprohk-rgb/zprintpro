@@ -445,10 +445,10 @@ export function ProductPageV9({
           {/* v9.2.2 裁决3.1 (P1, 随 C2): AEO 答案块 — 首屏副标下 40-60 字「直接答案句」(价格+起订+交期三要素一句话); C3: ja 版 */}
           <p className="mt-3 bg-[#F2F6FF] rounded-[10px] px-4 py-3 text-[15px] text-[#17284C] leading-[1.75]">
             {isEn
-              ? `${productTitle} from ${product.minQuantity} ${displayUnit}, from ${anchor?.big || convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug)}, standard lead time 5-7 days, free digital proof within 1 hour of file submission.`
+              ? `${productTitle} from ${product.minQuantity} ${displayUnit}, from ${anchor?.big || convertToFromPrice(product.price_range, 'en', product.category_slug, product.slug)}; lead time and proof timing are confirmed at quote.`
               : isJa
-              ? `${productTitle} は ${product.minQuantity}${displayUnit}から、${anchor?.big || fromPrice()} 〜、標準納期 5-7 営業日、ファイル提出後 1 時間以内に無料デジタル校正。`
-              : `${productTitle} ${product.minQuantity}${unitWord}起印，${anchor?.big || product.price_range} 起，標準交期 5-7 天，提交檔案後 1 小時內免費數碼打稿。`}
+              ? `${productTitle} は ${product.minQuantity}${displayUnit}から、${anchor?.big || fromPrice()} 〜。納期・校正の時期はお見積りで確認します。`
+              : `${productTitle} ${product.minQuantity}${unitWord}起印，${anchor?.big || product.price_range} 起，交期與打稿時效以報價確認。`}
           </p>
 
           {/* 價格盒 */}
