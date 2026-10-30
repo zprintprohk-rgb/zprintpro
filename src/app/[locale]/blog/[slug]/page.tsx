@@ -1092,7 +1092,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           <span className="text-[#333333] line-clamp-1">{post.category}</span>
         </nav>
         <h1 className="text-[clamp(28px,3.4vw,44px)] font-extrabold tracking-[-0.01em] leading-[1.25] text-[#111827] max-w-[900px]">
-          {post.title}
+          {/* 2026-10-30 §0.37 校准: H1 只放主题，剥掉 title 末尾品牌后缀（title 保留品牌供 SERP，H1 不与面包屑/品牌重复） */}
+          {post.title.replace(new RegExp(`\\s*[|｜]\\s*${getBrandName(locale).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*$`, 'u'), '')}
         </h1>
         <p className="mt-4 text-[15px] text-[#6B7280]">
           {t.published} {post.date} <span className="mx-1.5 text-[#D1D5DB]">·</span> {t.authorPrefix}{t.author}

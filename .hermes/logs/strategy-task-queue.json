@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T13:38:57.307Z",
+  "generated_at": "2026-10-30T13:50:00Z",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -459,10 +459,15 @@
       "evidence": "线上 curl 2026-10-30 19:05: /en/product/small-batch-stickers/ 与 /ja/... 仍渲染「standard lead time 5-7 days, free digital proof within 1 hour of file submission」「データ提出後 1 時間で無料デジタル校正」; 属跨 ~250 SKU 全站模板, 单 SKU 裁决 #3 未授权",
       "score": 0.7,
       "write_scope": "全站批量改动 (需 K3 放行 §0.25.10.5); 建议改为「lead time/proof timing confirmed at quote」",
-      "approval_gate": "WAITING_K3: 是否允许全站模板改口径 (1) 全站改 (2) 仅贴纸/海报等已批 SKU 例外 (3) 维持现状",
+      "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 打稿/交期一律改「报价确认」, 删「100% 退款」与「$5.99 样本包」, AEO 答案块同批改",
       "owner_lane": "manual",
-      "status": "WAITING_K3",
-      "created_at": "2026-10-30T19:12:00+08:00"
+      "status": "READY",
+      "created_at": "2026-10-30T19:12:00+08:00",
+      "result": {
+        "approved_at": "2026-10-30T21:48:10+08:00",
+        "approved_by": "K3 (chat)",
+        "note": "裁决单最优推荐执行"
+      }
     },
     {
       "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
@@ -472,10 +477,15 @@
       "evidence": "实测 2026-10-30 19:50 (products-content.ts 精确字符串计数): ① `<em>…DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。…</em>` = **66 处**(全站共享, 且句内重复 bug); ② zh FAQ「標準訂單 3-5 個工作天完成…日本客戶 DHL 國際速遞 2-4 個工作天到貨」= **64 处**; ③ zh FAQ「國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨」= **71 处**; ④ ja「DHL/FedEx 直送 2-4 日」li = **18 处**; ⑤ ja 配送表行(DHL/FedEx/EMS) 各 **10 处**; ⑥ ja 工場直送行「完工後 24-48 時間」= **20 处**。 线上证据: curl /ja/product/small-batch-stickers/ 19:50 同页出现 meta「配送方法・納期は見積りで確認」与 longDescription「DHL/FedEx 直送 2-4 日」「完工後 24-48 時間」并存 = 客户可见自相矛盾。 已在本批修掉的仅 small-batch 独有项(短納期特急 1 处)。",
       "score": 0.65,
       "write_scope": "src/data/products-content.ts 共享模板串 (66/64/71/18/10/20 处); 属全站批量改动 §0.25.10.5, 需 K3 放行",
-      "approval_gate": "WAITING_K3: 全站模板是否改口径 —— (1) 全站一次性条件化 (改 3–4 条模板串, 影响 ~250 SKU) (2) 仅先改贴纸族 6 SKU (3) 维持现状只登记",
+      "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 全站一次性条件化 (3-4 条模板串, ~250 SKU), 打稿/交期一律「报价确认」",
       "owner_lane": "manual",
-      "status": "WAITING_K3",
-      "created_at": "2026-10-30T19:12:00+08:00"
+      "status": "READY",
+      "created_at": "2026-10-30T19:12:00+08:00",
+      "result": {
+        "approved_at": "2026-10-30T21:48:10+08:00",
+        "approved_by": "K3 (chat)",
+        "note": "裁决单最优推荐执行"
+      }
     },
     {
       "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
@@ -498,10 +508,15 @@
       "evidence": "2026-10-30 实测三层数字互不一致: ① products.ts basePrice=20 (裁决 #1 认定的 A1 真值) ② price_range='HK$290-7,200 · 噴繪成品 · 不含安裝裱貼' (喷绘成品档) ③ longDescriptionEn 写 '1 poster at HK$45 / HK$56' (A1 喷绘基材档)。三种口径指向不同产品形态(柯式 vs 喷绘成品 vs 喷绘基材单张), 执行层无法判断哪个是客户下单时应看到的价, 故未改动。",
       "score": 0.6,
       "write_scope": "a1-posters 单 SKU 三处数字 + 可能连带 category-seo-content 海报价表; 需先定口径再改",
-      "approval_gate": "WAITING_K3: a1-posters 对外参考价以哪个为准 —— (1) basePrice 20 (柯式 A1) (2) price_range 290+ (喷绘成品) (3) 分产品线分别展示 (柯式/喷绘成品/喷绘基材)",
+      "approval_gate": "K3 2026-10-30 21:48 指令: a1-posters 选(3) — 分产品线展示: 柯式 A1 basePrice 20 / 喷绘成品 290 起 / 喷绘基材 45-56, 页面标注适用形态",
       "owner_lane": "manual",
-      "status": "WAITING_K3",
-      "created_at": "2026-10-30T19:52:00+08:00"
+      "status": "READY",
+      "created_at": "2026-10-30T19:52:00+08:00",
+      "result": {
+        "approved_at": "2026-10-30T21:48:10+08:00",
+        "approved_by": "K3 (chat)",
+        "note": "裁决单最优推荐执行"
+      }
     },
     {
       "task_id": "DIAG-20261030-STICKER-REGRESSION",
@@ -608,12 +623,5 @@
       "result": "Dispatched from §6.3 feasibility check; BLOCKED items: 真實刀模(0 files) / C109 倒排(天數未確認)"
     }
   ],
-  "last_review": {
-    "period": "weekly",
-    "date": "2026-10-30",
-    "report": ".hermes/logs/periodic-review-weekly-2026-10-30.json",
-    "at": "2026-10-30T13:38:57.307Z",
-    "by": "manual-executor (deepseek-flash)",
-    "note": "P1 貼紙倒退診斷完成 + 3 條 WAITING_K3 修復任務 + 1 條包裝採購資產 READY（裁決 1-5 已於 2026-10-30 19:51 同儕執行，本輪不重做）"
-  }
+  "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
 }
