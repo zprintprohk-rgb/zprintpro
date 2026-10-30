@@ -206,7 +206,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
           points: [
-            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs. For deeper detail, read the [food packaging printing guide](/en/blog/food-packaging-printing-guide/), the [kraft vs corrugated box comparison](/en/blog/kraft-paper-box-types-comparison-2026/) and [2026 packaging box pricing](/en/blog/packaging-box-pricing-2026/); specs are on the [food packaging boxes](/en/product/food-boxes/), [magnetic gift boxes](/en/product/magnetic-closure-gift-box/) and [custom electronics packaging boxes](/en/product/electronics-packaging-box/) pages.',
+            'We offer 12 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs. For deeper detail, read the [food packaging printing guide](/en/blog/food-packaging-printing-guide/), the [kraft vs corrugated box comparison](/en/blog/kraft-paper-box-types-comparison-2026/) and [2026 packaging box pricing](/en/blog/packaging-box-pricing-2026/); specs are on the [food packaging boxes](/en/product/food-boxes/), [magnetic gift boxes](/en/product/magnetic-closure-gift-box/) and [custom electronics packaging boxes](/en/product/electronics-packaging-box/) pages.',
             'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
             'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
           ],
@@ -484,7 +484,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       items: [
         { label: '尺寸範圍', value: 'X展架 60×160cm、80×180cm；易拉寶 85×200cm；Backdrop 最大 3.2m×無限長；橫幅任意尺寸' },
         { label: '起訂量', value: '1 件起訂（數碼噴繪），10 件以上享批量折扣' },
-        { label: '交期', value: 'X展架／易拉寶即日；Backdrop 1–2 天；大型橫幅 2–3 天；打樣當日完成' },
+        { label: '交期', value: 'X展架／易拉寶即日；Backdrop 1–2 天；大型橫幅 2–3 天' },
         { label: '解析度', value: '720dpi（標準）、1440dpi（高精度），支援 ICC 色彩管理' },
         { label: '檔案要求', value: 'AI / PDF / TIFF，100–150dpi（依輸出尺寸），CMYK，建議原圖解析度 ≥100dpi' },
       ],
@@ -1087,7 +1087,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
       items: [
         { label: '標準尺寸', value: 'A4(210×297mm)、A5(148×210mm)、DL(99×210mm)、正方形(150×150mm)，支持完全訂製' },
         { label: '起訂量', value: '10 份起訂（數碼印刷），100 份以上柯式印刷更經濟' },
-        { label: '交期', value: '即日交貨（數碼，10–50 份）；標準 2–3 天（柯式）；打樣當日完成' },
+        { label: '交期', value: '即日交貨（數碼，10–50 份）；標準 2–3 天（柯式）' },
         { label: '檔案要求', value: 'AI / PDF / PSD，300dpi，CMYK，預留 3mm 出血位' },
         { label: '防水等級', value: 'PVC 和過膠餐牌達 IPX4 防水等級，可承受潑濺和擦拭' },
       ],
@@ -2762,7 +2762,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
         '形狀方面，標準圓形、方形免刀模費最抵印；異形模切（吉祥物輪廓、品牌 LOGO 外形）辨識度最高，首次只需收刀模工本費，之後翻印唔使再收。貼紙訂製仲可以做半穿（kiss-cut），一張紙撕起每個獨立圖案。',
         '工藝加乘：過啞膠高級防刮、過光膠鮮豔防水、燙金燙銀提升奢華感、擊凸做立體觸感。1,000 張以上柯式印刷單價可低至 HK$0.1/張；可變數據印刷仲可以每張印唔同序號、QR Code 或會員名。',
         '行業場景速配：餐飲外賣用防水封口貼，美妝護膚用透明貼做樽身標籤，零售精品用燙金貼做禮盒封口，寵物食品用耐油標籤，文創 IP 用異形模切貼紙做周邊。我哋有各行業現成規格表，照住揀就得。',
-        '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 10 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
+        '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 10 張起免製版；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
         '落單流程：提交尺寸、數量、材質 → 30 秒 AI 報價 → 免費檢查檔案（CMYK、300dpi、出血 3mm）→ 數碼即日、柯式 2–3 天交貨。急單順豐即日派件，港九新界全覆蓋；長期合作客戶可分批出貨，大量訂單仲可以分袋分包，方便門市派發。',
       ],
       links: [
@@ -3298,7 +3298,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '香港海報印刷 1 張起印：A2 157g 銅版紙 HK$9 起/張，A1 HK$45 起/張，標準 3-5 個工作天交貨。室內用銅版紙、半戶外用 PP 合成紙、戶外用 PVC 燈箱布，過膠防 UV 最長 3 年耐候。最大單張 3200×5000mm。',
+    featuredSnippet: '香港海報印刷 1 張起印：A2 157g 銅版紙 HK$16 起/張，A1 HK$20 起/張，標準 3-5 個工作天交貨。室內用銅版紙、半戶外用 PP 合成紙、戶外用 PVC 燈箱布，過膠防 UV 最長 3 年耐候。最大單張 3200×5000mm。',
     lastUpdated: '2026-10-14',
     h2: '香港海報印刷 — 展示環境×材質耐候×尺寸安裝完整指南',
     coreAdvantages: {
@@ -3360,7 +3360,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: '印刷', value: 'CMYK 大幅面數碼或噴繪，戶外級顏料墨水可選' },
         { label: '起印量', value: '1 張起（視尺寸）' },
         { label: '交期', value: '標準 3-5 個工作天' },
-        { label: '參考價', value: 'A2 157g 銅版紙 HK$9 起/張，A1 HK$45 起/張' },
+        { label: '參考價', value: 'A2 157g 銅版紙 HK$16 起/張，A1 HK$20 起/張' },
       ],
     },
     serviceNodes: {
@@ -3396,7 +3396,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Poster printing in Hong Kong from 1 pc: A2 157gsm coated from HK$9/pc, A1 from HK$45/pc, standard 3-5 working days. Indoor coated paper, semi-outdoor PP synthetic, outdoor PVC banner stock with UV lamination lasting up to 3 years. Max single sheet 3200×5000mm.',
+    featuredSnippet: 'Poster printing in Hong Kong from 1 pc: A2 157gsm coated from HK$16/pc, A1 from HK$20/pc, standard 3-5 working days. Indoor coated paper, semi-outdoor PP synthetic, outdoor PVC banner stock with UV lamination lasting up to 3 years. Max single sheet 3200×5000mm.',
     lastUpdated: '2026-10-14',
     h2: 'Poster Printing — Display Environment, Material Durability, Size & Mounting Guide',
     coreAdvantages: {
@@ -3458,7 +3458,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         { label: 'Printing', value: 'CMYK large-format digital or inkjet; outdoor pigment ink available' },
         { label: 'MOQ', value: 'From 1 pc (size dependent)' },
         { label: 'Turnaround', value: '3-5 working days standard' },
-        { label: 'Reference price', value: 'A2 157gsm coated from HK$9/pc; A1 from HK$45/pc' },
+        { label: 'Reference price', value: 'A2 157gsm coated from HK$16/pc; A1 from HK$20/pc' },
       ],
     },
     serviceNodes: {

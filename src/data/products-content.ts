@@ -1357,11 +1357,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
@@ -1695,11 +1695,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
@@ -1930,11 +1930,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
@@ -1961,7 +1961,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>口徑說明：10 張檔為起訂價（HK$38 × 2.35 起訂係數，小尺寸）；100 張檔為基準價 × 尺寸倍率（小 ×1 / 中 ×1.5 / 大 ×2.2）；500 張檔已計 15% 批量折扣。選用 PP / PET 材質或異形模切按上方加價另計。</p>
 `,
     longDescriptionEn: `<h3>Small Batch Stickers for Global Brands</h3>
-<p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order as few as 50 stickers with no setup fees, and we'll cut, print, and ship within 3-5 days. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
+<p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order from 10 stickers (sheet-based A4 layouts) with no setup fees, and we'll cut, print, and ship after artwork approval. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
 
 <h3>Material & Quantity Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -1975,11 +1975,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">White Vinyl</td><td class="p-2 text-center">50 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Indoor/outdoor product labels</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Clear Vinyl</td><td class="p-2 text-center">50 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Glass-surface labels, no-edge effect</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Holographic Vinyl</td><td class="p-2 text-center">50 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Beauty, cosmetics, premium product</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Kraft Paper</td><td class="p-2 text-center">100 pcs</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Eco-friendly brands, organic products</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Metallic Foil</td><td class="p-2 text-center">100 pcs</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Luxury, wedding, special events</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">White Vinyl</td><td class="p-2 text-center">10 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Indoor/outdoor product labels</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Clear Vinyl</td><td class="p-2 text-center">10 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Glass-surface labels, no-edge effect</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Holographic Vinyl</td><td class="p-2 text-center">10 pcs</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Beauty, cosmetics, premium product</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Kraft Paper</td><td class="p-2 text-center">10 pcs</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Eco-friendly brands, organic products</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Metallic Foil</td><td class="p-2 text-center">10 pcs</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Luxury, wedding, special events</td></tr>
   </tbody>
 </table>
 
@@ -2004,19 +2004,19 @@ export const productsContent: Record<string, ProductContentEntry> = {
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>No Minimum Setup Fees:</strong> Start at 50 stickers for vinyl or 100 for paper/foil. No plate fees, no setup surcharges.</li>
-  <li><strong>3-5 Day Production:</strong> Standard 3-5 business days. Same-day file confirmation by 11am (HKT) for next-day dispatch.</li>
+  <li><strong>No Minimum Setup Fees:</strong> Start at 10 stickers (A4 sheet layouts). No plate fees, no setup surcharges.</li>
+  <li><strong>Production After Artwork Approval:</strong> Standard turnaround confirmed at quote; final production time depends on quantity, material and finishing.</li>
   <li><strong>Free Design Service:</strong> We resize your artwork for any custom shape at no extra charge. Submit AI, PDF, or high-res PNG.</li>
-  <li><strong>Free Sample Proof:</strong> Digital color proof before production. Physical sample ships via DHL Express (2-4 day delivery).</li>
+  <li><strong>Digital Proof Before Production:</strong> Digital color proof before production; physical sample availability and timing confirmed at quote.</li>
 </ul>
 
-<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>internationally certified</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs with <strong>ISO 12647-2</strong> color management and certified paper options (FSC-certified paper available on request), and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases &amp; Industries</h3>
-<p>Best fit for Etsy and Shopify sellers running 50-200 sticker runs per product launch, wedding planners using 100-300 favor stickers per event, and indie candle/soap makers producing 200-500 product labels per batch. 50-sticker minimum supports boutique iteration. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Best fit for Etsy and Shopify sellers running 50-200 sticker runs per product launch, wedding planners using 100-300 favor stickers per event, and indie candle/soap makers producing 200-500 product labels per batch. A 10-sticker sheet-based start supports boutique iteration. International orders ship via DHL Express after production, timing confirmed at quote.</p>
 
 <h3>Sample Pack &amp; Tier Pricing</h3>
-<p><strong>10-piece sample pack for $5.99</strong> — test any size, shape, or material before committing to a full run. Digital proof ships within 2 hours; physical sample ships via DHL Express in 2-4 days. Compare directly with Sticker Mule's 50-piece sample at $68: that's <strong>$1.36/sticker vs our $0.60/sticker at 100 pieces</strong> — 56% lower per-sticker cost for the same waterproof vinyl quality.</p>
+<p><strong>10-piece sample pack for $5.99</strong> — test any size, shape, or material before committing to a full run. Digital proof is provided before production; physical sample availability and timing are confirmed at quote.</p>
 
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
@@ -2025,31 +2025,30 @@ export const productsContent: Record<string, ProductContentEntry> = {
       <th class="p-2 text-center">Vinyl (per pc)</th>
       <th class="p-2 text-center">Paper/Kraft (per pc)</th>
       <th class="p-2 text-center">Holographic/Foil (per pc)</th>
-      <th class="p-2 text-center">Production</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">10-piece sample</td><td class="p-2 text-center">$0.60</td><td class="p-2 text-center">$0.45</td><td class="p-2 text-center">$0.90</td><td class="p-2 text-center">2-4 days</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">50 pieces</td><td class="p-2 text-center">$0.55</td><td class="p-2 text-center">$0.40</td><td class="p-2 text-center">$0.85</td><td class="p-2 text-center">3-5 days</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">100 pieces</td><td class="p-2 text-center">$0.42</td><td class="p-2 text-center">$0.30</td><td class="p-2 text-center">$0.65</td><td class="p-2 text-center">3-5 days</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">500 pieces</td><td class="p-2 text-center">$0.30 (-15%)</td><td class="p-2 text-center">$0.22 (-15%)</td><td class="p-2 text-center">$0.48 (-15%)</td><td class="p-2 text-center">3-5 days</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">1,000 pieces</td><td class="p-2 text-center">$0.24 (-25%)</td><td class="p-2 text-center">$0.18 (-25%)</td><td class="p-2 text-center">$0.40 (-25%)</td><td class="p-2 text-center">4-6 days</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">5,000 pieces</td><td class="p-2 text-center">$0.18 (-35%)</td><td class="p-2 text-center">$0.13 (-35%)</td><td class="p-2 text-center">$0.30 (-35%)</td><td class="p-2 text-center">5-7 days</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">10 pcs</td><td class="p-2 text-center">$0.60</td><td class="p-2 text-center">$0.45</td><td class="p-2 text-center">$0.90</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">50 pcs</td><td class="p-2 text-center">$0.55</td><td class="p-2 text-center">$0.40</td><td class="p-2 text-center">$0.85</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">100 pcs</td><td class="p-2 text-center">$0.42</td><td class="p-2 text-center">$0.30</td><td class="p-2 text-center">$0.65</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">500 pcs</td><td class="p-2 text-center">$0.30 (-15%)</td><td class="p-2 text-center">$0.22 (-15%)</td><td class="p-2 text-center">$0.48 (-15%)</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">1,000 pcs</td><td class="p-2 text-center">$0.24 (-25%)</td><td class="p-2 text-center">$0.18 (-25%)</td><td class="p-2 text-center">$0.40 (-25%)</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">5,000 pcs</td><td class="p-2 text-center">$0.18 (-35%)</td><td class="p-2 text-center">$0.13 (-35%)</td><td class="p-2 text-center">$0.30 (-35%)</td></tr>
   </tbody>
 </table>
-<p><em>All prices include 4C CMYK printing, free die-cut setup, and free DHL Express worldwide shipping on orders over $100. Volume discounts auto-applied at quote.</em></p>
+<p><em>All prices include 4C CMYK printing and free die-cut setup. Shipping and volume discounts are confirmed at quote.</em></p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ) for small batch stickers?</strong></summary><p>MOQ is <strong>50 stickers for vinyl/clear</strong> and <strong>100 stickers for paper, kraft, holographic, and foil</strong>. The 10-piece sample pack at $5.99 lets you test quality before committing — same waterproof vinyl, same color management, just smaller quantity.</p></details>
-<details class="my-2"><summary><strong>How much do small batch stickers cost per piece?</strong></summary><p>At 100 pieces: <strong>$0.42/pc for vinyl, $0.30/pc for paper</strong>. Compared to Sticker Mule at $1.36/sticker (50-piece pack), we deliver 56% lower per-sticker cost with equivalent international quality and faster DHL Express 2-4 day global shipping. 500+ pieces unlock 15% off; 1,000+ unlocks 25% off.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time for small batches?</strong></summary><p>Standard 3-5 business days after artwork approval. <strong>Rush 1-2 day production</strong> available for vinyl stickers under 500 pieces. DHL Express global shipping adds 2-4 days. Sample pack ships in 2-4 days via DHL Express.</p></details>
-<details class="my-2"><summary><strong>Can I order a sample pack before placing a full order?</strong></summary><p>Yes. The 10-piece sample pack at $5.99 ships in 2-4 days via DHL Express. The $5.99 fee is refunded on any subsequent full order over $50. We also provide free digital color proofing within 2 hours of file upload.</p></details>
-<details class="my-2"><summary><strong>Why are your prices lower than Sticker Mule for the same quality?</strong></summary><p>Our internationally certified Shenzhen factory has lower unit costs than US-based printers, and we ship direct to your door via DHL Express in 2-4 days (not 7-14 days). $0.42/pc vinyl at 100 pieces vs Sticker Mule's $1.36/pc — 56% lower for the same waterproof, UV-resistant quality. Free die-cut setup on all orders.</p></details>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>50 stickers for vinyl and clear materials. 100 stickers for paper, kraft, foil, and holographic materials. Volume discounts start at 500 (15% off).</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ) for small batch stickers?</strong></summary><p>MOQ is <strong>10 stickers</strong> (A4 sheet-based layouts), subject to material, size and spec confirmation. The 10-piece sample pack at $5.99 lets you test quality before committing — same waterproof vinyl, same color management, just smaller quantity.</p></details>
+<details class="my-2"><summary><strong>How much do small batch stickers cost per piece?</strong></summary><p>At 100 pieces: <strong>$0.42/pc for vinyl, $0.30/pc for paper</strong>. 500+ pieces unlock 15% off; 1,000+ unlocks 25% off. Exact pricing is confirmed at quote for your material, size and quantity.</p></details>
+<details class="my-2"><summary><strong>What is the production lead time for small batches?</strong></summary><p>Production starts after artwork approval; final lead time depends on quantity, material and finishing, and is confirmed at quote.</p></details>
+<details class="my-2"><summary><strong>Can I order a sample pack before placing a full order?</strong></summary><p>Yes. The 10-piece sample pack at $5.99 lets you test any size, shape or material. We also provide free digital color proofing before production.</p></details>
+<details class="my-2"><summary><strong>Why are your prices competitive?</strong></summary><p>Our Shenzhen factory production and direct global shipping keep unit costs competitive while maintaining ISO 12647-2 color management. Free die-cut setup on all orders. Exact pricing is confirmed at quote.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>MOQ is 10 stickers (A4 sheet-based layouts) across vinyl, paper, kraft, foil and holographic materials. Volume discounts start at 500 (15% off).</p></details>
 <details class="my-2"><summary><strong>Can I order multiple designs on one sheet?</strong></summary><p>Yes. We can print multiple designs on a single sheet (mixed sheet). Submit separate AI/PDF files and we arrange them for you at no extra charge.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>AI, PDF, PNG (300 DPI minimum), and JPG. CMYK color mode recommended. We provide free file review and CMYK conversion.</p></details>
-<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 3-5 business days after artwork approval. Rush 1-2 day production available for vinyl stickers (small batches).</p></details>
-<details class="my-2"><summary><strong>Can I get a sample before ordering?</strong></summary><p>Yes. We offer digital color proofing free. Physical samples ship via DHL Express for $25 (refunded on full order placement).</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Production starts after artwork approval; lead time is confirmed at quote based on quantity, material and finishing.</p></details>
+<details class="my-2"><summary><strong>Can I get a sample before ordering?</strong></summary><p>We offer free digital color proofing before production. Physical sample availability and cost are confirmed at quote.</p></details>
 <details class="my-2"><summary><strong>Are the stickers waterproof?</strong></summary><p>Vinyl stickers with our lamination are fully waterproof. Paper and kraft stickers are water-resistant (brief splash only). For outdoor or wet use, choose vinyl.</p></details>
 
 
@@ -2253,11 +2252,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
@@ -2499,11 +2498,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
@@ -2738,11 +2737,11 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <ul>
   <li>模切時需預留足夠線寬（≥0.5mm）與橋位，避免細節斷裂</li>
   <li>支援可變 QR Code 與流水號印刷，方便企業進行渠道管理與批次追溯</li>
-  <li>防水貼紙通過 SGS 食品接觸安全認證，適用食品外包裝</li>
+  <li>防水貼紙適用食品外包裝（材料合規以訂單確認）</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。10 張起印，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>

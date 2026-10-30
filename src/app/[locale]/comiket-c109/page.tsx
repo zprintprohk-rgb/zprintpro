@@ -42,7 +42,7 @@ type Block = { h: string; p?: string[]; ul?: string[]; table?: { head: string[];
 
 const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: string }[]; cta: string }> = {
   ja: {
-    qa: '直答：コミケ C109（2026 年 12 月 29-31 日）に間に合わせるなら、<b>12 月 7 日までに入稿</b>が安全圏です。同人誌は 10 冊から、A5/B5、表紙フルカラー＋本文モノクロ、標準 5-7 営業日、開幕前 24 時間特急、DHL 2-4 日。',
+    qa: '直答：コミケ C109（2026 年 12 月 29-31 日）向けの同人誌印刷は 10 冊から対応、A5/B5、表紙フルカラー＋本文モノクロ、標準生産 5-7 営業日、開幕前 24 時間特急（データ完成前提）、DHL 2-4 日。入稿締切の逆算はページ下部のチェックリストとプラン表を参考に、主催者公式発表で日程を確認してください。',
     blocks: [
       {
         h: '締切逆算カレンダー',
@@ -50,9 +50,9 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
         table: {
           head: ['プラン', '入稿', '出荷', '会場到着', '余裕'],
           rows: [
-            ['ゆとり', '12/7（月）', '12/14〜12/16', '12/16〜12/20', '9 日以上'],
-            ['標準', '12/14（月）', '12/21〜12/23', '12/23〜12/27', '2 日'],
-            ['特急', '12/23（水）', '12/24', '12/26〜12/28', '1 日'],
+            ['ゆとり', '早めの入稿（日にちは見積りで確認）', '生産 5-7 営業日', 'DHL 2-4 日', '9 日以上'],
+            ['標準', '入稿日に見積りで確認', '生産 5-7 営業日', 'DHL 2-4 日', '2 日'],
+            ['特急', 'データ完成が前提', '24 時間特急', '航空便・通関状況による', '1 日'],
           ],
         },
       },
@@ -84,13 +84,13 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
     faq: [
       { q: 'コミケ C109 はいつ開催ですか？', a: '2026 年 12 月 29-31 日、東京ビッグサイトです。日程・搬入時刻は主催者の公式発表を必ずご確認ください。' },
       { q: '何冊から注文できますか？', a: '同人誌は 10 冊からです。ステッカーは 10 枚から、ポスター・カード類は 1 部から注文できます。' },
-      { q: '開幕前に特急で間に合いますか？', a: 'データが完成していれば 24 時間特急に対応できます。ただし航空便・通関の遅延で 1 日ずれると当日に間に合わないため、12 月 7 日までの入稿をおすすめします。' },
+      { q: '開幕前に特急で間に合いますか？', a: 'データが完成していれば 24 時間特急に対応できます。ただし航空便・通関の遅延で 1 日ずれると当日に間に合わない場合があるため、余裕を持った入稿を推奨します。日程・搬入時刻は主催者の公式発表をご確認ください。' },
       { q: '入稿から会場到着まで何日ですか？', a: '標準生産 5-7 営業日＋DHL 2-4 日で、入稿から最短 7 日・余裕を見て 12-14 日です。' },
     ],
     cta: '仕様が固まっていなくても相談できます。部数と締切から逆算して現実的なスケジュールを組みます。',
   },
   en: {
-    qa: 'Direct answer: to be ready for Comiket C109 (December 29-31, 2026), <b>submit artwork by December 7</b> for a safe margin. Doujinshi starts at 10 copies, A5/B5, colour cover with mono text, 5-7 working days standard, 24-hour pre-event rush, DHL 2-4 days.',
+    qa: 'Direct answer: doujinshi printing for Comiket C109 (December 29-31, 2026) starts at 10 copies, A5/B5, colour cover with mono text, 5-7 working days standard production, 24-hour pre-event rush (subject to finished files), DHL 2-4 days. Use the checklist and plan table below to work backwards from your deadline, and confirm event dates on the organiser official announcement.',
     blocks: [
       {
         h: 'Deadline countdown',
@@ -98,9 +98,9 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
         table: {
           head: ['Plan', 'Artwork in', 'Ships', 'Arrives', 'Buffer'],
           rows: [
-            ['Relaxed', 'Dec 7 (Mon)', 'Dec 14-16', 'Dec 16-20', '9+ days'],
-            ['Standard', 'Dec 14 (Mon)', 'Dec 21-23', 'Dec 23-27', '2 days'],
-            ['Rush', 'Dec 23 (Wed)', 'Dec 24', 'Dec 26-28', '1 day'],
+            ['Relaxed', 'Submit early (date confirmed at quote)', '5-7 working days production', 'DHL 2-4 days', '9+ days'],
+            ['Standard', 'Date confirmed at quote', '5-7 working days production', 'DHL 2-4 days', '2 days'],
+            ['Rush', 'Subject to finished files', '24-hour rush', 'Depends on flight / customs', '1 day'],
           ],
         },
       },
@@ -126,13 +126,13 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
     faq: [
       { q: 'When is Comiket C109?', a: 'December 29-31, 2026 at Tokyo Big Sight. Always confirm dates and move-in times on the organiser official announcement.' },
       { q: 'What is the minimum order?', a: '10 copies for doujinshi, 10 pieces for stickers, and 1 piece for posters and cards.' },
-      { q: 'Can rush production make a late deadline?', a: '24-hour rush works if the file is finished. A one-day flight or customs delay can still cost you the event, so December 7 intake is the safer target.' },
+      { q: 'Can rush production make a late deadline?', a: '24-hour rush works if the file is finished. A one-day flight or customs delay can still cost you the event, so submit with a comfortable margin. Always confirm event dates on the organiser official announcement.' },
       { q: 'How long from artwork to arrival?', a: '5-7 working days of production plus 2-4 days DHL: about 7 days at best, 12-14 days with a comfortable margin.' },
     ],
     cta: 'Send your spec even if it is not final — we will work backwards from your copy count and deadline into a schedule that holds.',
   },
   'zh-hk': {
-    qa: '直答：要趕上 Comiket C109（2026 年 12 月 29-31 日），<b>12 月 7 日前交稿</b>屬安全範圍。同人誌 10 本起印、A5／B5、封面彩色＋內頁單色、標準 5-7 個工作天、開幕前 24 小時特急、DHL 2-4 天。',
+    qa: '直答：Comiket C109（2026 年 12 月 29-31 日）同人誌印刷：10 本起印、A5／B5、封面彩色＋內頁單色、標準 5-7 個工作天、開幕前 24 小時特急（以檔案完成為前提）、DHL 2-4 天。截稿倒排請參考下方檢查清單同方案表，活動日期以主辦方官方公告為準。',
     blocks: [
       {
         h: '截稿逆算時間表',
@@ -140,9 +140,9 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
         table: {
           head: ['方案', '交稿', '出貨', '到場', '餘裕'],
           rows: [
-            ['寬鬆', '12/7（一）', '12/14〜12/16', '12/16〜12/20', '9 日以上'],
-            ['標準', '12/14（一）', '12/21〜12/23', '12/23〜12/27', '2 日'],
-            ['特急', '12/23（三）', '12/24', '12/26〜12/28', '1 日'],
+            ['寬鬆', '提早交稿（日期以報價確認）', '生產 5-7 個工作天', 'DHL 2-4 天', '9 日以上'],
+            ['標準', '交稿日以報價確認', '生產 5-7 個工作天', 'DHL 2-4 天', '2 日'],
+            ['特急', '以檔案完成為前提', '24 小時特急', '視航班／通關情況', '1 日'],
           ],
         },
       },
@@ -168,7 +168,7 @@ const BODY: Record<string, { qa: string; blocks: Block[]; faq: { q: string; a: s
     faq: [
       { q: 'Comiket C109 幾時舉行？', a: '2026 年 12 月 29-31 日，東京ビッグサイト。日期同搬入時間請以主辦方官方公告為準。' },
       { q: '最少印幾本？', a: '同人誌 10 本起印，貼紙 10 張起印，海報同卡片 1 張起印。' },
-      { q: '臨近開幕可以用特急嗎？', a: '檔案完成的話可走 24 小時特急；但航班或通關延誤一日就會趕不上，所以建議 12 月 7 日前交稿。' },
+      { q: '臨近開幕可以用特急嗎？', a: '檔案完成的話可走 24 小時特急；但航班或通關延誤一日就可能趕不上，所以建議預留餘裕交稿。活動日期同搬入時間請以主辦方官方公告為準。' },
       { q: '由交稿到收貨要幾日？', a: '標準生產 5-7 個工作天加 DHL 2-4 天，最快約 7 日，預留餘裕約 12-14 日。' },
     ],
     cta: '規格未定都可以先問——我們按部數同截稿倒推，給你一個行得通的時間表。',

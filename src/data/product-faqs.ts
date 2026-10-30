@@ -852,7 +852,7 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: 'A2ポスターの印刷料金は？',
       },
       answer: {
-        'zh-hk': 'A2 海報 10 張起印，HK$9 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
+        'zh-hk': 'A2 海報 10 張起印，HK$16 起/張（157g 銅版紙）。200g 或 PP 合成紙另計，1-2 個工作天交貨，即日特急可選。',
         en: 'A2 posters start from $2.30/pc at 10 MOQ (157gsm gloss paper). 200gsm and PP synthetic upgrades available, 1-2 business day production with same-day rush option.',
         ja: 'A2ポスターは10枚〜¥300〜（157gコート紙）。200g・PP合成紙も対応、1-2営業日生産、特急当日仕上げ可。',
       },

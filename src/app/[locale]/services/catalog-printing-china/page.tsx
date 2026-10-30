@@ -162,7 +162,7 @@ const T: Record<string, {
     trustItems: [
       { title: '國際認證體系', desc: '深圳工廠通過國際質量管理體系認證, 多年印刷經驗' },
       { title: 'FSC 認證紙張', desc: '所有紙張 FSC 認證, 可持續森林採購, 歐美品牌首選' },
-      { title: 'FDA 食品級油墨', desc: '大豆油墨 + 食品級油墨可選, 化妝品 / 食品 catalog 適用' },
+      { title: 'FDA 食品級油墨', desc: '大豆油墨可選, 化妝品 / 食品 catalog 適用（材料合規以訂單確認）' },
       { title: 'DDP 完稅到門', desc: '深圳直發 DHL Express 2-4 天, 收件人零稅務負擔 (DDP 預付)' },
     ],
     h2_compare: '我方 vs 歐美工廠 vs QinPrinting 對比',
@@ -177,7 +177,7 @@ const T: Record<string, {
     ],
     h2_faq: '常見問題 (FAQ)',
     faqs: [
-      { q: '深圳工廠品質點樣保證？', a: '深圳工廠多年印刷經驗, 國際認證體系, FSC 紙張認證, FDA 食品級油墨. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },
+      { q: '深圳工廠品質點樣保證？', a: '深圳工廠多年印刷經驗, 國際認證體系, FSC 紙張認證, 大豆油墨可選. 每批出貨前 100% QC 抽樣, 損壞率 < 0.5%. 出貨影片可即時提供.' },
       { q: 'MOQ 真係 10 本？', a: '係, 10 本起印, 採用柯式數碼混合印刷. 1000 本以上純柯式印刷, 單價更低. 樣書打樣可低至 1 本 (按成本收費).' },
       { q: '從深圳運去美國要幾耐？要交稅嗎？', a: 'DHL Express 2-4 個工作天到達美國 / 英國 / 澳洲. DDP (Delivered Duty Paid) 完稅到門, 收件人零稅務負擔, 唔需要額外付關稅或 VAT.' },
       { q: '可以先打樣確認再批量生產嗎？', a: '可以, 5 天數碼打樣 (1-3 本), 確認滿意後批量生產可全額抵扣. 樣書費用透明, 比歐美便宜 80%.' },
@@ -251,7 +251,7 @@ const T: Record<string, {
     trustItems: [
       { title: 'Certified Factory', desc: 'Shenzhen factory internationally certified, over a decade of printing experience, 100% QC sampling before shipment.' },
       { title: 'FSC Certified Paper', desc: 'All paper FSC certified, sustainable forestry, top choice for European and US brands.' },
-      { title: 'FDA Food-Grade Ink', desc: 'Soy-based ink + food-grade ink options available for cosmetics / food catalog.' },
+      { title: 'FDA Food-Grade Ink', desc: 'Soy-based ink options available for cosmetics / food catalog (material compliance confirmed at quote).' },
       { title: 'DDP Duty Pre-Paid', desc: 'Shenzhen direct DHL Express 2-4 days, recipient zero tax burden (DDP pre-paid).' },
     ],
     h2_compare: 'Us vs Western Printers vs QinPrinting Comparison',
@@ -266,7 +266,7 @@ const T: Record<string, {
     ],
     h2_faq: 'Frequently Asked Questions',
     faqs: [
-      { q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has over a decade of printing experience, internationally certified, FSC paper certified, FDA food-grade ink. 100% QC sampling before each shipment, damage rate < 0.5%. Shipping video available on request.' },
+      { q: 'How is Shenzhen factory quality guaranteed?', a: 'Shenzhen factory has over a decade of printing experience, internationally certified, FSC paper certified, soy-based ink options. 100% QC sampling before each shipment, damage rate < 0.5%. Shipping video available on request.' },
       { q: 'Is the MOQ really 10 pcs?', a: 'Yes, 10 pcs MOQ with offset + digital hybrid printing. 1000+ pcs uses pure offset printing for lower unit cost. Sample proofing as low as 1 pc (at cost).' },
       { q: 'How long does shipping from Shenzhen to USA take? Any duty?', a: 'DHL Express 2-4 business days to US / UK / AU. DDP (Delivered Duty Paid) means recipient pays zero tax — no separate customs or VAT charges.' },
       { q: 'Can I get a sample proof before bulk production?', a: 'Yes, 5-day digital proofing (1-3 pcs), and the sample cost is fully deductible from bulk production. Sample cost is 80% cheaper than Western printers.' },
@@ -341,7 +341,7 @@ const T: Record<string, {
     trustItems: [
       { title: '国際認証', desc: '深セン工場は国際認証取得, 長年の印刷経験, 出荷前 100% QC サンプリング.' },
       { title: 'FSC認証紙', desc: '全紙FSC認証, 持続可能な森林調達, 欧米ブランド第一選択.' },
-      { title: 'FDA食品グレードインク', desc: '大豆インク+食品グレードインクオプション, 化粧品/食品カタログ対応.' },
+      { title: 'FDA食品グレードインク', desc: '大豆インクオプション対応, 化粧品/食品カタログ対応（材料適合は注文確認）.' },
       { title: 'DDP関税込み', desc: '深セン直送DHL Express 2-4日, 受取人税負担ゼロ（DDP前払い）.' },
     ],
     h2_compare: '当社 vs 欧米工場 vs QinPrinting 比較',
@@ -356,7 +356,7 @@ const T: Record<string, {
     ],
     h2_faq: 'よくある質問 (FAQ)',
     faqs: [
-      { q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は長年の印刷経験, 国際認証取得, FSC紙認証, FDA食品グレードインク. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },
+      { q: '深セン工場の品質はどのように保証されていますか？', a: '深セン工場は長年の印刷経験, 国際認証取得, FSC紙認証, 大豆インクオプション. 出荷前100% QCサンプリング, 破損率 < 0.5%. 出荷動画も即時提供可能.' },
       { q: '本当にMOQ 10部からですか？', a: 'はい, 10部から対応, オフセット+デジタルハイブリッド印刷. 1000部以上は純粋オフセット印刷で単価さらに低下. サンプル校正は1部から（実費）対応可能.' },
       { q: '深センから米国への配送時間は？関税はかかりますか？', a: 'DHL Express 2-4営業日で米国/英国/オーストラリアへ. DDP（Delivered Duty Paid）関税込みで受取人税負担ゼロ, 別途関税やVATの支払い不要.' },
       { q: '量産前にサンプル校正は可能ですか？', a: 'はい, 5日間デジタル校正（1-3部）, サンプル費用は量産費から全額控除可能. サンプル費用は欧米より80%安い.' },
@@ -718,6 +718,10 @@ export default function CatalogPrintingChinaPage({ params }: Props) {
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Catalog 类目页 + Books 类目页 + Packaging 类目页 */}
+              <Link href={`${localePrefix}/blog/catalog-printing-china-supplier-guide/`} className="block bg-indigo-50 hover:bg-indigo-100 rounded-2xl p-6 border-2 border-indigo-200 transition-colors">
+                <h3 className="text-lg font-bold text-indigo-900 mb-2">📖 {locale === 'en' ? 'China Catalog Supplier Guide' : locale === 'ja' ? '中国カタログ仕入ガイド' : '中國 Catalog 供應商選型指南'}</h3>
+                <p className="text-sm text-indigo-700">{locale === 'en' ? 'How to choose a China catalog factory — MOQ, QC, delivery' : locale === 'ja' ? '中国カタログ工場の選び方 — MOQ・QC・納期' : '點樣揀中國 catalog 廠 — MOQ / QC / 交期'}</p>
+              </Link>
               <Link href={`${localePrefix}/category/books/`} className="block bg-blue-50 hover:bg-blue-100 rounded-2xl p-6 border-2 border-blue-200 transition-colors">
                 <h3 className="text-lg font-bold text-blue-900 mb-2">📚 {locale === 'en' ? 'Books & Catalog Category' : locale === 'ja' ? 'カタログ・書籍カテゴリ' : '書冊 / Catalog 印刷類目'}</h3>
                 <p className="text-sm text-blue-700">{locale === 'en' ? 'Saddle stitch / perfect bound / wire-O / hardcover — 10 MOQ' : locale === 'ja' ? '中綴じ・無線綴じ・Wire-O・上製本 — 10部から' : '騎馬釘 / 膠裝 / Wire-O / 精裝 — 10 本起'}</p>
