@@ -274,12 +274,8 @@ def resolve_idempotency_key(lane, repo):
 def validate_lane_report(repo, lane, day):
     """Accept only today's exact lane report with all four fields and VERDICT: OK.
 
-    D4 命名双轨兼容 (2026-10-29, k3-review §2.5/D4): harness 落盘短名
-    `<day>-<lane 去 ZP->.md` (e.g. 2026-10-29-daily-content.md), 而旧校验只认
-    契约长名 `<day>-ZP-<lane>.md` -> 真实 OK 报告被漏判, 收尾再生成 AUTO-FILL 兜底
-    -> lane-status STALE (实测 2026-10-29 daily-content / blog-deepfix).
-    lane-status.mjs L266-272 已双名兼容, 此处对齐: 候选双名, **跳过 AUTO-FILL 兜底
-    (失败证据), 取首个通过全字段校验的候选**; 全部候选皆 AUTO-FILL 才判缺失。
+    AUTO-FILL is inspected only on the machine-readable VERDICT line. A real report
+    may discuss an earlier AUTO-FILL incident in its prose without becoming a stub.
     """
     candidates = [f".hermes/logs/{day}-{lane}.md"]
     if lane.startswith("ZP-"):
@@ -293,15 +289,17 @@ def validate_lane_report(repo, lane, day):
                 text = fh.read()
         except OSError as e:
             return None, f"lane report unreadable: {type(e).__name__}"
-        if "AUTO-FILL" in text or "AUTO-FILLED" in text:
-            continue  # failure evidence, never OK evidence; try the sibling candidate
-        # D4 双轨兼容: 字段可为裸 `VERDICT: OK` 或 Markdown 粗体 `- **VERDICT: OK**`
-        # OK 后允许行尾或 `—` 破折号解释 (实测 blog-deepfix `**VERDICT: OK** — ...`)
+        verdict_line = re.search(r"^[-*\s]*\*?\*?VERDICT\*?\*?:.*$", text, re.MULTILINE)
+        auto_fill = (verdict_line and re.search(
+            r"VERDICT\*?\*?:\s*\*?\*?(?:STALE|FAILED|BLOCKED|MISSING)\*?\*?\s*[（(]?AUTO-FILL(?:ED)?",
+            verdict_line.group(0)))
+        if auto_fill:
+            continue  # marker follows a failure value; trailing prose on real OK is harmless
         for field in ("VERDICT", "CONSUMED", "DELIVERED", "NEXT"):
             if not re.search(rf"^[-*\s]*\*?\*?{field}\*?\*?:\s*\S.*$", text, re.MULTILINE):
                 return None, f"same-day report lacks machine-readable {field}"
         if not re.search(
-                r"^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–-])",
+                r"^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–\-:：()（）])",
                 text, re.MULTILINE):
             return None, "same-day report VERDICT is not exactly OK (PARTIAL/BLOCKED/FAILED cannot finalize as OK)"
         return rel, None
@@ -309,14 +307,14 @@ def validate_lane_report(repo, lane, day):
 
 
 def write_failure_report(repo, lane, day, verdict, reason, dsh_exit):
-    """Create failure evidence without overwriting an existing report or committing it."""
-    rel = f".hermes/logs/{day}-{lane}.md"
+    """Create separate failure evidence; never displace a real same-day lane report."""
+    rel = f".hermes/logs/{day}-{lane}.failure.md"
     path = os.path.join(repo, rel)
     if os.path.exists(path):
         return rel
     stub = (
         f"# {lane} {verdict} (AUTO-FILL)\n\n"
-        f"VERDICT: {verdict}\n"
+        f"VERDICT: {verdict} (AUTO-FILL)\n"
         f"CONSUMED: host finalize only; dsh_exit={dsh_exit}\n"
         f"DELIVERED: NONE\n"
         f"NEXT: resolve the recorded failure; do not treat this AUTO-FILL as success\n\n"
@@ -396,6 +394,7 @@ def write_exec_report(lane, repo, allowed, pushed, date,
         "fired_at": fired_at,
         "ended_at": now,
         "idempotency_key": resolve_idempotency_key(lane, repo),
+        "key_consumed": final_verdict == "OK",
         "dsh_exit": dsh_exit,
         "wrapper_exit": exit_code,
         "verdict": final_verdict,

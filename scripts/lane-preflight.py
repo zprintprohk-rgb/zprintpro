@@ -445,6 +445,7 @@ def main():
             "lane": args.lane, "trigger": "schtasks", "phase": "preflight",
             "fired_at": now, "ended_at": now,
             "idempotency_key": idempotency_key(args.lane, "run", "lane-default"),
+            "key_consumed": False,
             "dsh_exit": None, "wrapper_exit": 10,
             "verdict": "BLOCKED", "state": "blocked", "blocked_reason": blocked,
             "guard": {"ok": True}, "report": blocked_report, "report_auto_generated": True,

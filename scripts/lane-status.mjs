@@ -237,10 +237,11 @@ function main() {
   const problems = [];
   const warnings = [];
 
-  // 幂等键去重 (P3-10): 同一 key 出现两次 = 同一 intent+target+day 被处理了两次 -> 重复处理告警
+  // Only completed OK runs consume work. A preflight BLOCKED row never called dsh,
+  // so retrying the same key after the blocker clears is recovery, not duplicate processing.
   for (const r of runsReal) {
     const k = r.idempotency_key;
-    if (!k) continue;
+    if (!k || r.key_consumed === false || r.verdict !== 'OK' || (r.state && r.state !== 'completed')) continue;
     if (seenIdem.has(k)) warnings.push(`DUPLICATE_IDEMPOTENCY_KEY ${k}: ${seenIdem.get(k)} 与 ${r.run_id} 同日同目标重复处理`);
     else seenIdem.set(k, r.run_id);
   }
@@ -274,18 +275,18 @@ function main() {
         const dateToken = (strict || anyDate) ? (strict ? strict[1] : anyDate[0]) : null;
         let text = '';
         try { text = fs.readFileSync(f.full, 'utf8'); } catch { /* unreadable = invalid */ }
-        const autoFilled = /AUTO-FILL(?:ED)?/.test(text);
-        // D4 双轨兼容 (2026-10-29): harness 真实 OK 报告字段可能为裸 `VERDICT: OK`
-        // 或 Markdown 粗体 `**VERDICT: OK**` / `- **VERDICT: OK**` (实测
-        // 2026-10-29 daily-content / blog-deepfix 为粗体, gsc-feedback / k3-review 为裸),
-        // 两种形态都必须是可判定的 OK 契约; AUTO-FILL 兜底一律不认。
+        const verdictLine = text.match(/^[-*\s]*\*?\*?VERDICT\*?\*?:.*$/m)?.[0] || '';
+        const autoFilled = /VERDICT\*?\*?:\s*\*?\*?(?:STALE|FAILED|BLOCKED|MISSING)\*?\*?\s*[（(]?AUTO-FILL(?:ED)?/.test(verdictLine);
+        // Only the machine VERDICT line declares a placeholder. Prose may document
+        // an earlier AUTO-FILL incident. OK may be followed by CJK/ASCII punctuation.
         const fieldRe = (field) => new RegExp(`^[-*\\s]*\\*?\\*?${field}\\*?\\*?:\\s*\\S.*$`, 'm');
         const contractOk = ['VERDICT', 'CONSUMED', 'DELIVERED', 'NEXT'].every((field) => fieldRe(field).test(text))
-          && /^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–-])/m.test(text);
+          && /^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–\-:：()（）])/m.test(text);
         return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk, autoFilled, contractOk };
       })
       .filter((f) => f.owned)
-      .sort((a, b) => Number(b.strict) - Number(a.strict) || b.dateToken.localeCompare(a.dateToken) || b.mtime - a.mtime);
+      .sort((a, b) => Number(b.contractOk && !b.autoFilled) - Number(a.contractOk && !a.autoFilled)
+        || Number(b.strict) - Number(a.strict) || b.dateToken.localeCompare(a.dateToken) || b.mtime - a.mtime);
 
     const days = [];
     for (const d of window) {

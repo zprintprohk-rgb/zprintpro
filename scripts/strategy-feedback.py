@@ -110,6 +110,7 @@ def fix_task_for_lane(lane, period, review_day):
         "task_id": task_id,
         "source_strategy": f"periodic-review-{period}-{review_day}",
         "market": "operations",
+        "lane_task": name,
         "target": f"Resolve {name} {lane.get('verdict')} with bounded recovery: {recovery.get('reason') or 'inspect evidence'}",
         "evidence": [".hermes/logs/lane-status.json", ".hermes/logs/lane-runs.jsonl", recovery.get("evidence") or "wrapper log"],
         "score": 100,
@@ -172,6 +173,8 @@ def render_markdown(report):
         "## Dispatch and learning",
         "",
         f"- New FIX task IDs: {', '.join(report['dispatched_task_ids']) if report['dispatched_task_ids'] else 'NONE (or already present)'}",
+        f"- Recurred existing task IDs: {', '.join(report['recurred_task_ids']) if report['recurred_task_ids'] else 'NONE'}",
+        f"- Suppressed duplicates: {len(report['suppressed_duplicates'])} (deduplication is recorded, not misreported as a write failure)",
         f"- Learning candidates: {len(report['learning_candidates'])}",
         "- Learning gate: baseline + change + online_verify + retest are all mandatory. No automatic prompt, permission or production rewrites are permitted.",
         "",
@@ -230,9 +233,19 @@ def main():
     attention = []
     for lane in status.get("lanes", []):
         scheduler_failed = bool(lane.get("scheduler") and int(lane["scheduler"].get("Result") or 0) != 0)
-        if lane.get("verdict") in ("FAILED", "BLOCKED", "STALE", "MISSING") or (lane.get("verdict") == "UNKNOWN" and scheduler_failed):
-            recovery = lane.get("recovery_plan") or {}
-            attention.append({"task": lane.get("task"), "verdict": lane.get("verdict"),
+        lane_failed = lane.get("verdict") in ("FAILED", "BLOCKED", "STALE", "MISSING")
+        if lane_failed or scheduler_failed:
+            recovery = dict(lane.get("recovery_plan") or {})
+            effective_verdict = lane.get("verdict")
+            if scheduler_failed and not lane_failed:
+                # A manual OK is delivery evidence, not proof that the natural Windows
+                # trigger recovered. Keep both facts instead of hiding the scheduler fault.
+                effective_verdict = "SCHEDULER_FAILED"
+                recovery = {"action": "request_human",
+                            "reason": f"Windows Task Scheduler LastTaskResult={lane['scheduler'].get('Result')}; manual/other-trigger OK does not prove natural schedule recovery",
+                            "evidence": f"Get-ScheduledTaskInfo -TaskName {lane.get('task')}"}
+                lane = dict(lane, verdict=effective_verdict, recovery_plan=recovery)
+            attention.append({"task": lane.get("task"), "verdict": effective_verdict,
                               "recovery_action": recovery.get("action", "UNSPECIFIED"),
                               "evidence": recovery.get("evidence") or ".hermes/logs/lane-status.json",
                               "lane": lane})
@@ -240,7 +253,6 @@ def main():
     candidates = []
     proposed = []
     existing_ids = {t.get("task_id") for t in tasks}
-    active_targets = {t.get("target") for t in tasks if t.get("status") not in TERMINAL_TASK_STATUSES}
     for task in tasks:
         decision, reason, due = task_decision(task, review_day)
         decisions.append({"task_id": task.get("task_id"), "status": task.get("status"),
@@ -260,12 +272,54 @@ def main():
             continue  # one shared credential blocker; do not spawn one duplicate per lane
         proposed.append(fix_task_for_lane(row["lane"], args.period, review_day))
     new_tasks = []
+    recurred_task_ids = []
+    suppressed_duplicates = []
+    active_by_target = {t.get("target"): t for t in tasks if t.get("status") not in TERMINAL_TASK_STATUSES}
+    def lane_identity(task):
+        if task.get("lane_task"):
+            return task["lane_task"]
+        match = re.match(r"Resolve (ZP-[A-Za-z0-9-]+)\b", str(task.get("target") or ""))
+        return match.group(1) if match else None
+    active_by_lane = {lane_identity(t): t for t in tasks
+                      if t.get("status") not in TERMINAL_TASK_STATUSES and lane_identity(t)}
     for task in proposed:
-        if task["task_id"] not in existing_ids and task.get("target") not in active_targets:
+        if task["task_id"] in existing_ids:
+            suppressed_duplicates.append({"proposed_task_id": task["task_id"],
+                                          "existing_task_id": task["task_id"], "reason": "existing_task_id"})
+            continue
+        existing = active_by_target.get(task.get("target"))
+        recurrence_reason = "active_target_recurred"
+        if existing is None and task.get("lane_task"):
+            existing = active_by_lane.get(task["lane_task"])
+            recurrence_reason = "active_lane_recurred"
+        if existing is None:
             new_tasks.append(task)
             existing_ids.add(task["task_id"])
-            active_targets.add(task.get("target"))
-    if args.write_queue and new_tasks:
+            active_by_target[task.get("target")] = task
+            if task.get("lane_task"):
+                active_by_lane[task["lane_task"]] = task
+            continue
+
+        # Recurrence is evidence, not a dispatch failure and not a second ticket.
+        # The review-date + proposed-ID observation key makes replaying one review idempotent.
+        suppressed_duplicates.append({"proposed_task_id": task["task_id"],
+                                      "existing_task_id": existing.get("task_id"), "reason": recurrence_reason})
+        recurred_task_ids.append(existing.get("task_id"))
+        if args.write_queue:
+            observations = existing.setdefault("recurrence_observations", [])
+            observation_key = f"{args.period}|{review_day}|{task['task_id']}"
+            if not any(row.get("observation_key") == observation_key for row in observations):
+                observations.append({"observation_key": observation_key, "observed_at": str(review_day),
+                                     "period": args.period, "proposed_task_id": task["task_id"],
+                                     "evidence": task.get("evidence", []), "result": task.get("result")})
+            existing["recurrence_count"] = len(observations)
+            existing["last_seen"] = str(review_day)
+            existing["next_check"] = task.get("next_check")
+            existing["evidence"] = list(dict.fromkeys((existing.get("evidence") or []) + (task.get("evidence") or [])))
+            existing["result"] = (f"Recurred on {review_day}; existing task retained and updated. "
+                                  "Recurrence is not resolution; no automatic close or permission expansion.")
+    recurred_task_ids = list(dict.fromkeys(recurred_task_ids))
+    if args.write_queue and (new_tasks or recurred_task_ids):
         tasks.extend(new_tasks)
         queue["last_review"] = {"period": args.period, "date": str(review_day),
                                 "report": f".hermes/logs/periodic-review-{args.period}-{review_day}.json"}
@@ -286,6 +340,8 @@ def main():
         "task_decisions": decisions,
         "dispatched_task_ids": [t["task_id"] for t in new_tasks] if args.write_queue else [],
         "proposed_task_ids": [t["task_id"] for t in proposed],
+        "recurred_task_ids": recurred_task_ids,
+        "suppressed_duplicates": suppressed_duplicates,
         "learning_candidates": candidates,
         "queue_write_enabled": bool(args.write_queue),
         "guardrails": ["no prompt self-rewrite", "no permission expansion", "no src writes", "no commit/push",

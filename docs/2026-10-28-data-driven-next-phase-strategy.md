@@ -131,4 +131,16 @@ score = 100 × (
 4. 接通 GA4/008/订单 landing page 覆盖率；执行 11 月 AI 面探针。
 5. 11 月按队列到期日做 7/14/28 天复测，周/月报告自动产生 FIX 任务与资源调整建议。
 
+### 7.1 K3 裁决单 1-5 复测登记（2026-10-30 追加，commit 7b396bd9 落地）
+
+| 任务 | 裁决 | 7 天复测 (11-06) | 14 天 (11-13) | 28 天 (11-27) |
+|---|---|---|---|---|
+| ZH-POSTER | A2 HK$16/A1 HK$20 真值统一 | 海报印刷 287@14.9 零点击词 — 价格统一后 CTR/排名 | 口径一致性 | SCALE/HOLD/FIX/STOP |
+| ZH-PACKAGING | 执行包全值（MOQ/起价/免运冲突登记） | 包装类目可见内容无 FDA/SGS 残留 | 免运 HK$99 vs HK$500 K3 确认 | 同上 |
+| EN-STICKER | 10 起/$0.55 + proof 不宣传 | small-batch 50@5.5 零点击词 — MOQ 统一后 | 单位 pcs 一致性 | 同上 |
+| EN-CATALOG | MOQ 10 + guide 双向链接 | catalog 页 FDA 残留 = 0 | guide MOQ 100→10 一致性 | 同上 |
+| JA-C109 | ¥7,500 条件化 + 倒排留空 | C109 20@7.3 2clk — 12/7 删除后 | 日期分项可见一致 | 同上 |
+
+复测字段：baseline / change / online_verify / retest / decision / confounders（缺任一项不得称「已验证」，per §6.4）。
+
 数据来源：2026-10-26 GSC 冻结导出、三份战略及执行证据、2026-10-28 竞品官方页面研究。详细审计见 `.hermes/logs/2026-10-28-three-strategy-completion-and-next-phase.md`。
