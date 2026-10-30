@@ -8,7 +8,7 @@ import { Locale } from '@/lib/seo';
 /** 品牌與服務介紹（修訂輪7 唐總逐字修訂 2026-09-10: HP Indigo 15K B2 / 1 小時打稿 / 急單即日出貨 / 撤 ISO 12647 / 一張起印;
  *  繁體化: 急單即日出貨; 站內其他位置（leadbar 6K/2 小時、CTA 2 小時、已服務客戶段 500 張起印）待唐總拍板是否同步） */
 export const TRUST_COPY_INTRO =
-  '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，提交檔案後 1 小時內免費數碼打稿、平均 2.3 天出貨，急單即日出貨；FSC 認證紙材把關品質。我們熟悉跨境印刷需求，提供 IP 保護、價格透明與全球物流支援，一張起印，靈活承接小批量與大宗訂單。';
+  '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關品質。我們熟悉跨境印刷需求，提供 IP 保護、價格透明與全球物流支援，一張起印，靈活承接小批量與大宗訂單。';
 
 /** 物流承諾行（修訂輪2 指定文案: 本地 24 小時達 + DHL 全球 2-4 日） */
 export const TRUST_COPY_LOGISTICS = '順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球 2-4 日';
@@ -25,7 +25,7 @@ export const TRUST_CARDS: TrustCard[] = [
   { icon: Factory, title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控' },
   { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天' },
   { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
-  { icon: Clock, title: '數碼打樣', sub: '1 小時出稿', desc: '提交檔案後 1 小時免費數碼打樣，確認後開印' },
+  { icon: Clock, title: '數碼打樣', sub: '時效以報價確認', desc: '免費數碼打樣，確認後開印；出稿時效以報價確認' },
   { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
   { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
 ];
@@ -42,7 +42,7 @@ const EN_CARDS: TrustCard[] = [
   { icon: Factory, title: 'Shenzhen ISO Factory', sub: '15+ Years Experience', desc: 'Owned production facility in Shenzhen, operated by Cailong Printing. ISO-certified quality manufacturing.' },
   { icon: Zap, title: 'Same-Day Delivery', sub: 'Rush 24h Available', desc: 'Standard 3-5 days, urgent orders same day' },
   { icon: Truck, title: 'DHL Express Direct', sub: 'Nationwide Coverage', desc: 'DHL door-to-door delivery across the US' },
-  { icon: Clock, title: 'Digital Proof', sub: 'Confirm Before Production', desc: 'Free digital proof within 1 hour before production' },
+  { icon: Clock, title: 'Digital Proof', sub: 'Confirm Before Production', desc: 'Free digital proof before production; timing confirmed at quote' },
   { icon: ShieldCheck, title: 'Quality Guarantee', sub: '100% Satisfaction', desc: 'Free reprint if not satisfied, full refund' },
   { icon: Headphones, title: '24/7 Support', sub: 'Always Available', desc: 'Professional customer service online 24/7' },
 ];
@@ -59,7 +59,7 @@ const JA_CARDS: TrustCard[] = [
   { icon: Factory, title: '深圳自社工場', sub: '15年以上の実績', desc: '彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理' },
   { icon: Zap, title: '即日納品', sub: '特急24時間対応', desc: '標準3-5営業日、急ぎは最短当日' },
   { icon: Truck, title: '国際配送', sub: '日本全国対応', desc: 'DHL・FedExで日本全国へ2〜4日配送' },
-  { icon: Clock, title: 'デジタル校正', sub: '本生産前に確認', desc: 'データ提出後 1 時間で無料デジタル校正、確認後に本印刷' },
+  { icon: Clock, title: 'デジタル校正', sub: '本生産前に確認', desc: '無料デジタル校正、確認後に本印刷。校正時期は見積りで確認' },
   { icon: ShieldCheck, title: '品質保証', sub: '100%満足保証', desc: '不満足な場合は無料再印刷、全額返金' },
   { icon: Headphones, title: '24時間サポート', sub: '年中無休対応', desc: 'プロのカスタマーサービスが24時間対応' },
 ];

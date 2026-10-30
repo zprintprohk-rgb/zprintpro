@@ -42,11 +42,11 @@ const translations = {
       {
         icon: Palette,
         title: '免費數碼打樣',
-        subtitle: '1 小時出稿',
+        subtitle: '出稿時效以報價確認',
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '提交檔案後 1 小時免費數碼打樣，確認後開印',
+        description: '免費數碼打樣，確認後開印；出稿時效以報價確認',
       },
       {
         icon: Shield,
@@ -105,7 +105,7 @@ const translations = {
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: 'Free digital proof within 1 hour before production',
+        description: 'Free digital proof before production; timing confirmed at quote',
       },
       {
         icon: Shield,
