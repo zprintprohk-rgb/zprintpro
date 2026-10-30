@@ -1,0 +1,524 @@
+{
+  "pull": "2026-10-30",
+  "source": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+  "window": "2026-09-30 → 2026-10-27",
+  "four_metrics": {
+    "clicks": 496.0,
+    "impressions": 21127.0,
+    "ctr": 2.35,
+    "avg_pos": 13.56,
+    "dual_method": {
+      "A_chart": [
+        496.0,
+        21127.0,
+        2.35,
+        13.56
+      ],
+      "B_country": [
+        496.0,
+        21127.0,
+        2.35,
+        13.56
+      ],
+      "consistent": true
+    }
+  },
+  "by_country": {
+    "中国香港": {
+      "clk": 360.0,
+      "imp": 12229.0,
+      "ctr": 2.94,
+      "pos": 13.39
+    },
+    "日本": {
+      "clk": 40.0,
+      "imp": 2296.0,
+      "ctr": 1.74,
+      "pos": 16.61
+    },
+    "美国": {
+      "clk": 30.0,
+      "imp": 2743.0,
+      "ctr": 1.09,
+      "pos": 15.42
+    }
+  },
+  "by_device": {
+    "桌面": {
+      "clk": 279.0,
+      "imp": 12653.0,
+      "ctr": 2.21,
+      "pos": 15.53
+    },
+    "移动设备": {
+      "clk": 205.0,
+      "imp": 8193.0,
+      "ctr": 2.5,
+      "pos": 10.45
+    },
+    "平板电脑": {
+      "clk": 12.0,
+      "imp": 281.0,
+      "ctr": 4.27,
+      "pos": 15.47
+    }
+  },
+  "keyword_rows": 1000,
+  "page_rows": 602,
+  "money_words": {
+    "total": 23,
+    "on_page1_strict": 7,
+    "on_page1_loose": 12,
+    "strict": [
+      {
+        "locale": "zh-hk",
+        "word": "海報印刷",
+        "hit": {
+          "q": "海報印刷",
+          "pos": 14.94,
+          "clk": 1.0,
+          "imp": 286.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "印海報",
+        "hit": {
+          "q": "印海報",
+          "pos": 12.79,
+          "clk": 1.0,
+          "imp": 125.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "食品包裝印刷",
+        "hit": {
+          "q": "食品包裝印刷",
+          "pos": 8.6,
+          "clk": 0,
+          "imp": 113.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "貼紙印刷",
+        "hit": {
+          "q": "貼紙印刷",
+          "pos": 40.88,
+          "clk": 0,
+          "imp": 120.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "月曆印刷",
+        "hit": {
+          "q": "月曆印刷",
+          "pos": 23.71,
+          "clk": 0,
+          "imp": 109.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "小冊子印刷",
+        "hit": {
+          "q": "小冊子印刷",
+          "pos": 10.6,
+          "clk": 0,
+          "imp": 52.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "紙袋印刷",
+        "hit": {
+          "q": "紙袋印刷",
+          "pos": 15.11,
+          "clk": 0,
+          "imp": 64.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "騎馬釘印刷",
+        "hit": {
+          "q": "騎馬釘印刷",
+          "pos": 12.23,
+          "clk": 0,
+          "imp": 61.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "即日印刷",
+        "hit": {
+          "q": "即日印刷",
+          "pos": 7.39,
+          "clk": 1.0,
+          "imp": 56.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "small batch sticker printing",
+        "hit": {
+          "q": "small batch sticker printing",
+          "pos": 5.5,
+          "clk": 0,
+          "imp": 46.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "small batch stickers",
+        "hit": {
+          "q": "small batch stickers",
+          "pos": 5.04,
+          "clk": 0,
+          "imp": 25.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "doujinshi printing",
+        "hit": {
+          "q": "doujinshi printing",
+          "pos": 10.0,
+          "clk": 0,
+          "imp": 43.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "saddle stitch booklet printing",
+        "hit": {
+          "q": "saddle stitch booklet printing",
+          "pos": 9.71,
+          "clk": 0,
+          "imp": 14.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "china catalog printing",
+        "hit": {
+          "q": "china catalog printing",
+          "pos": 15.79,
+          "clk": 0,
+          "imp": 72.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "large envelopes",
+        "hit": {
+          "q": "large envelopes",
+          "pos": 13.64,
+          "clk": 0,
+          "imp": 11.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "a2 poster",
+        "hit": {
+          "q": "a2 poster",
+          "pos": 17.2,
+          "clk": 0,
+          "imp": 54.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "corporate holiday cards",
+        "hit": null
+      },
+      {
+        "locale": "ja",
+        "word": "コミケ 印刷",
+        "hit": {
+          "q": "コミケ 印刷",
+          "pos": 18.99,
+          "clk": 0,
+          "imp": 173.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "卒アル販売",
+        "hit": {
+          "q": "卒アル販売",
+          "pos": 5.0,
+          "clk": 0,
+          "imp": 16.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "教材 印刷製本",
+        "hit": {
+          "q": "教材 印刷製本",
+          "pos": 20.69,
+          "clk": 0,
+          "imp": 39.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "教材 印刷 製本",
+        "hit": {
+          "q": "教材 印刷 製本",
+          "pos": 17.42,
+          "clk": 0,
+          "imp": 19.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "pvc シール",
+        "hit": {
+          "q": "pvc シール",
+          "pos": 18.75,
+          "clk": 0,
+          "imp": 20.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "年賀状印刷",
+        "hit": null
+      }
+    ],
+    "loose": [
+      {
+        "locale": "zh-hk",
+        "word": "海報印刷",
+        "hit": {
+          "q": "a1海報印刷價格",
+          "pos": 1.0,
+          "clk": 0,
+          "imp": 1.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "印海報",
+        "hit": {
+          "q": "印海報店",
+          "pos": 11.0,
+          "clk": 0,
+          "imp": 1.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "食品包裝印刷",
+        "hit": {
+          "q": "食品包裝印刷",
+          "pos": 8.6,
+          "clk": 0,
+          "imp": 113.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "貼紙印刷",
+        "hit": {
+          "q": "透明貼紙印刷",
+          "pos": 9.0,
+          "clk": 0,
+          "imp": 8.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "月曆印刷",
+        "hit": {
+          "q": "月曆印刷香港",
+          "pos": 3.33,
+          "clk": 0,
+          "imp": 3.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "小冊子印刷",
+        "hit": {
+          "q": "小冊子印刷",
+          "pos": 10.6,
+          "clk": 0,
+          "imp": 52.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "紙袋印刷",
+        "hit": {
+          "q": "牛皮紙袋印刷",
+          "pos": 4.0,
+          "clk": 0,
+          "imp": 1.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "騎馬釘印刷",
+        "hit": {
+          "q": "騎馬釘印刷",
+          "pos": 12.23,
+          "clk": 0,
+          "imp": 61.0
+        }
+      },
+      {
+        "locale": "zh-hk",
+        "word": "即日印刷",
+        "hit": {
+          "q": "即日印刷",
+          "pos": 7.39,
+          "clk": 1.0,
+          "imp": 56.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "small batch sticker printing",
+        "hit": {
+          "q": "small batch sticker printing",
+          "pos": 5.5,
+          "clk": 0,
+          "imp": 46.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "small batch stickers",
+        "hit": {
+          "q": "small batch stickers",
+          "pos": 5.04,
+          "clk": 0,
+          "imp": 25.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "doujinshi printing",
+        "hit": {
+          "q": "doujinshi printing",
+          "pos": 10.0,
+          "clk": 0,
+          "imp": 43.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "saddle stitch booklet printing",
+        "hit": {
+          "q": "saddle stitch booklet printing near me",
+          "pos": 2.0,
+          "clk": 0,
+          "imp": 2.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "china catalog printing",
+        "hit": {
+          "q": "china catalog printing",
+          "pos": 15.79,
+          "clk": 0,
+          "imp": 72.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "large envelopes",
+        "hit": {
+          "q": "large envelopes",
+          "pos": 13.64,
+          "clk": 0,
+          "imp": 11.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "a2 poster",
+        "hit": {
+          "q": "a2 poster cost",
+          "pos": 1.0,
+          "clk": 0,
+          "imp": 1.0
+        }
+      },
+      {
+        "locale": "en",
+        "word": "corporate holiday cards",
+        "hit": null
+      },
+      {
+        "locale": "ja",
+        "word": "コミケ 印刷",
+        "hit": {
+          "q": "コミケ 印刷",
+          "pos": 18.99,
+          "clk": 0,
+          "imp": 173.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "卒アル販売",
+        "hit": {
+          "q": "卒アル販売",
+          "pos": 5.0,
+          "clk": 0,
+          "imp": 16.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "教材 印刷製本",
+        "hit": {
+          "q": "教材 印刷製本",
+          "pos": 20.69,
+          "clk": 0,
+          "imp": 39.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "教材 印刷 製本",
+        "hit": {
+          "q": "教材 印刷 製本",
+          "pos": 17.42,
+          "clk": 0,
+          "imp": 19.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "pvc シール",
+        "hit": {
+          "q": "pvc シール",
+          "pos": 18.75,
+          "clk": 0,
+          "imp": 20.0
+        }
+      },
+      {
+        "locale": "ja",
+        "word": "年賀状印刷",
+        "hit": null
+      }
+    ]
+  },
+  "prev_panel_2026_10_29": {
+    "clicks": 497,
+    "impressions": 20977,
+    "ctr": 2.37,
+    "avg_pos": 13.52,
+    "page1": 6
+  }
+}
