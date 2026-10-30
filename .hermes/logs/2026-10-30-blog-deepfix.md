@@ -151,3 +151,63 @@
 ## 当日累计（两轮）
 
 **基线 44 / 现存 26 / 已修 18 / 剩余待修 26**（早场修 13 + 晚场修 5；台账已随 d9cfce55 + db5bb236 提交）
+
+---
+
+# 夜场第三轮（K3「深度思考…继续下一步」）— school-exercise-book
+
+**VERDICT: OK**（push 受 §0.25 30min 窗口约束，排入 21:42 后台窗口）— 深度分析后修复 school-exercise-book-printing-guide 三语 **段 FAIL 15→0**，本地 commit 385b7433，基线 26→11。
+**CONSUMED:** GSC 28d 2026-10-30 档（10-30 09:03 导出）+ blog-12seg-baseline.json（26 条）+ products.ts 真值（exercise-books HK$4-16/本 minQ 10；textbooks HK$5-50/本 minQ 100）+ 3 locale 全文。
+**DELIVERED:** 该篇深度扩写（en 5,664→10,247 +81%；zh 5,961→8,938 87%；ja 3,790→8,123 79%）：en 首段 192 字、3 快速答案块、H2 问句化（en 80%/ja 82%/zh 73%）、**2 张真值对比表**（纸材/装订规格）、en/ja 案例标题匹配、LinkedIn+FDA+EU REACH、新增文件规格段/EEAT 段/Q4 时间线段 + ja 发单流程/数量成本/罫线/配送段、excerpt+schemas 5 类；基线 26→11（自动递减 15 条）。
+**NEXT:** ① 剩余 11 条：campus 6、poster 4、packaging 1；② 挂账：title 当量 81/59（与「不动 title」冲突）；③ 挂账：正文「100 MOQ / HK$3.5/本」vs products.ts「minQ 10 / HK$4-16/本」存量分歧（标题含 100 MOQ → 不动 title，待 K3 裁决统一口径）；④ build 首次 worker crash（0xC0000409 瞬时），重跑 PASS。
+
+**RECOVERY: 151.7%**（gsc-cliff-2026-10-30.json，24h 888 imps/15 clk vs 断崖前 585.2；full-country 动态 117.7%）
+
+**BUS_UNAVAILABLE:** run-context-blog-deepfix.json 仍缺失；总线行待 push 后追加。
+
+数据来源:
+- GSC 28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx（网页 sheet）
+- blog-12seg-baseline.json（26 → 11）
+- products.ts 真值：exercise-books HK$4-16/本 / minQuantity 10；textbooks HK$5-50/本 / minQuantity 100；saddle-stitch-booklets HK$6-32/本；spiral-notebooks HK$8-40/本
+- K3 拍板 12 件事（15 年 / ISO 9001 / 24h SLA / FSC）
+- 联网搜索（本批沿用 10-30 已跑 6 query 记录 + 之前 4 query；号码全走白名单）
+
+## 1. 当日修复 blog（第三轮）
+
+| 项 | 值 |
+|---|---|
+| slug | `school-exercise-book-printing-guide`（練習簿印刷完全指南） |
+| 选文理由 | 剩余 26 条中 **15 条 FAIL（58%）** 最破碎；Q4 开学季品类（B1c/Q4 恢复期优先）；原篇仅 3.8-6k 字属极浅存量 |
+| 排除说明 | campus 6 FAIL（47 imps，留 NEXT 首选）；poster 4 FAIL 但 en/ja 仅 2/1 imps；packaging ja 1 FAIL |
+| 幂等 | git log 最近仅 9/20-21 FAQ/段12 修补，无深度重写 |
+
+## 2. 修复内容摘要
+
+- **en**（5,664→10,247）：首段 211→192 字答案前置；3 个 bg-*-50 快速答案块（MOQ/纸材/交期）；5 个 H2 问句化（含 Customer Cases）；**2 张表**（4 纸材对比 + 3 装订/4 规格对比，数据全部来自正文既有声明 + products.ts 规格真值）；新增「档案规格」「EEAT/合规」「Q4 落单时间线」3 段。
+- **zh-hk**（5,961→8,938）：同构（港式繁中原生）；5 H2 问句化（73%）；2 表；新增档案规格/合规/Q4 时间线 3 段。
+- **ja**（3,790→8,123）：同构（敬语原生）；4 H2 问句化（82%）+ 案例标题 顧客事例；2 表；新增入稿仕様/コンプライアンス/Q4 スケジュール + **発注フロー/数量別コスト/罫線選び/配送アフター** 4 段（全部源自既有 FAQ 六步与正文数字，零新声明）。
+- 全 locale：excerpt + schemas 5 类、lastUpdated 2026-10-30；术语（道林紙/上質紙/wood-free）按 locale 行业标准词；zh-hk 单品牌智印港、en/ja ZprintPro。
+- **12 段骨架：PASS 33 / FAIL 0 / WARN 0 / SKIP 3**（段12 online 待 push 后）。
+
+## 3. 恢复模式闸门
+
+- **8-gram 相似度**：PASS——vs campus 6.6%/5.0%/4.6%、vs textbook 2.4%/0.1%/0.1%、vs 自身旧版 21.2%/14.6%/16.6%（全部 ≪60% 红线）
+- **GSC 命中词保护**：3 locale 60 短语全部 ≥ 修复前 0 删（80gsm 7→11、HK$3.5 4→7、道林紙 7→10、100 本 7→9 等）
+
+## 4. 5 步 verify
+
+1. encoding：✅ 5 文件 UTF-8 LF
+2. tsc：✅ 54 = 基线持平
+3. build：✅ 重跑 PASS（723 URLs / Blog 121）；首次 0xC0000409 worker 瞬时 crash 已复验排除
+4. push：⏳ 排入 21:42 后台窗口（§0.25 30min 硬下限，上次 push 21:11）
+5. curl/段12：⏳ push 后同窗口执行
+
+## 5. 挂账
+
+1. **products.ts 真值分歧**：正文「100 MOQ / HK$3.5/本」vs SKU 真值「minQ 10 / HK$4-16/本」。标题含「100 MOQ」且不动 title → 本轮新内容用中性口径（表格用纸材/装订规格与正文既有价），未再放大分歧；**请 K3 裁决**正文与标题是否按 SKU 真值统一。
+2. title 当量 81/59 超 50-57（同 print-spec，挂账）。
+3. build 首次 worker crash（瞬时，已重跑 PASS）。
+
+## 当日累计（三轮）
+
+**基线 44 / 现存 11 / 已修 33 / 剩余待修 11**（早 13 + 晚 5 + 夜 15）
