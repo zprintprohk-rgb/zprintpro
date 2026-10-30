@@ -83,3 +83,71 @@
 - **门童 #14 段 12 线上断言**：三语全 PASS——generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo]，内嵌 JSON-LD = 0，blocks 6+0
 - **12 段骨架最终态**：**PASS 36 / FAIL 0 / WARN 0 / SKIP 0 / INVALID 0**（三语 12 铁律 100% 达标，含线上断言）
 - **git 状态**：内容 push d9cfce55（origin_ssh/main 已同步）；本报告本地 commit（docs-only，未达 §0.25.9 攒批阈值 + 距上次 push <30min，push 留下一周期）
+
+---
+
+# 晚场第二轮（K3 21:05 再次「立即执行」）
+
+**VERDICT: OK** — 按最新 GSC 28d 导出（2026-10-30 09:03 新档）排序选中 print-specifications-reference-guide-2026（53 imps 最高 + zh-hk 50 imps @ pos 9.36 零点击），三语 5 条段 FAIL 全修（段3 问句率 1/17→14/17=82%；en/ja 段6 案例标题匹配），已推送 db5bb236。
+**CONSUMED:** GSC 28天三站点汇总 2026-10-30 (2).xlsx（网页 sheet 603 行）+ blog-12seg-baseline.json（31 条）+ products.ts 真值 + 3 locale 全文。
+**DELIVERED:** print-specifications 三语修复（14 标题问句化 + 案例标题 Client→Customer/クライアント→顧客事例 + 补 excerpt + schemas 5 类 + lastUpdated/dateModified→2026-10-30）；基线 31→26（自动递减 5 条）；证据 JSON 留档。
+**NEXT:** ① 剩余 26 条存量——school-exercise-book（15 条）下批首选；② 挂账：print-spec title 当量 94/89/78（与「不动 title」硬约束冲突，待 K3 裁决）；③ 主题集群 20 链结构未重建（段11 14 链 PASS，按需后续）。
+
+**RECOVERY: 151.7%**（gsc-cliff-detector.py 重跑用 10-30 新档：24h 实时 888 imps/15 clk vs 断崖前 585.2 → 151.7%；full-country 动态 117.7%；较上午 135.5% 继续回升）
+
+**BUS_UNAVAILABLE:** run-context-blog-deepfix.json 仍缺失；本轮总线行已追加（harness 行）→ 下一轮消费者可读。
+
+数据来源:
+- GSC 28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx（K3 2026-10-30 09:03 导出；网页 sheet）
+- blog-12seg-baseline.json（31 → 26）
+- products.ts 真值 / K3 拍板 12 件事
+- 联网搜索 6 query（余额恢复后补跑：gwg.org PDF/X-6 / ukugi.com FDA 21 CFR+EU REACH / papersizes.org A 系列 / mailing.com offset vs digital / heyijiapack.com 成本拐点 / neenahpaper.com）——内容数字 100% 走白名单，未引用第三方数字
+
+## 1. 当日修复 blog 清单（晚场第 2 篇）
+
+| 项 | 值 |
+|---|---|
+| slug | `print-specifications-reference-guide-2026`（印刷規格完全指南） |
+| 选文理由 | 28d imps 排序：zh-hk 50 imps @ **pos 9.36 零点击**（零点击 striking-distance）+ en 3 imps；三语 5 条段 FAIL（en 段3/6、ja 段3/6、zh 段3） |
+| 排除说明 | school-exercise 15 FAIL 但仅 43 imps；campus 47 imps 但段3 也小（6 FAIL 留 NEXT）；poster 1929 imps 但 zh-hk 页已达标（FAIL 仅 en/ja 2/1 imps） |
+| 幂等 | git log 无该 slug 近期深度重写（最近 9/19-20 B3 FAQ/段12 修补） |
+
+## 2. 联网搜索 query（6 条，余额恢复后补跑）
+
+1. print specification standards 2026 A-series paper sizes CMYK PDF/X-1a
+2. FDA 21 CFR 175.300 food contact printing EU REACH 2026
+3. A1 A2 A3 A4 A5 A6 paper sizes mm table 2026
+4. offset vs digital printing break even quantity 2026
+5. （早间轮）4 query 记录见上文
+6. 来源：gwg.org / ukugi.com / papersizes.org / mailing.com / heyijiapack.com / neenahpaper.com——内容数字 100% 来自 products.ts 白名单（§0.36.2#1）
+
+## 3. 修复内容摘要（每 locale）
+
+- **en**（27,798→27,846）：14 个 H2/H3 问句化（保留编号+关键词，段3 1/17→14/17=82%）；"Client Case"→"Customer Case"（段6）；补 excerpt 209 字 + schemas 5 类；dateModified/lastUpdated→2026-10-30
+- **ja**（20,457→20,432）：14 标题问句化（敬语原生）；"クライアント事例"→"顧客事例"（段6）；excerpt 123 字 + schemas 5 类
+- **zh-hk**（19,431→19,396）：15 标题问句化（港式繁中原生，保留「客戶案例」段6 已 PASS）；excerpt 104 字 + schemas 5 类
+- 12 段骨架：**PASS 36 / FAIL 0 / WARN 0 / SKIP 0**（含线上断言，generated 6 块无重复渲染）
+- 长度：en 27,846 / zh 19,396（70%）/ ja 20,432（73%）
+
+## 4. 5 步 verify
+
+1. check-encoding：✅ 5 文件 UTF-8 LF
+2. tsc：✅ 54 = 基线持平
+3. build：✅ exit 0（723 URLs / Blog 121）
+4. push：✅ db5bb236（caf43c67..db5bb236）；pre-push #14 基线 5 条递减 0 新增 + #21 0 命中
+5. curl：✅ 6 URL 全 200（print-spec ×3 marker 案例OK/CaseOK/顧客事例OK + LD+；cmyk-guide ×3 对照）+ 段12 online PASS
+
+## 5. GSC 命中词保护（0 删）
+
+- 3 locale 48 短语全部 ≥ 修复前：print mode 5→6 / bleed 12→13 / offset 26→28 / digital 15→17 / 印刷模式 11→11 / 出血 16→16；标题改写仅重组语序，关键词全保留
+- title/meta/slug **未动**（title 当量 94/89/78 存量缺陷→挂账，不与硬约束冲突）
+- 现有段落 0 删（仅标题改写）
+
+## 挂账（待 K3 裁决）
+
+1. **print-spec title 当量超限**：en 94 / ja 89 / zh 78（目标 50-57）。硬约束「不动 title」→ 未改；blog-standard 门禁 3 条 FAIL 留存。请 K3 裁决：是否允许按 50-57 重写该篇 title（GSC 命中词将保留主词+品牌）。
+2. 主题集群 20 链：段11 现有 14 链 PASS，5 节点双向集群结构未重建（按需）。
+
+## 当日累计（两轮）
+
+**基线 44 / 现存 26 / 已修 18 / 剩余待修 26**（早场修 13 + 晚场修 5；台账已随 d9cfce55 + db5bb236 提交）
