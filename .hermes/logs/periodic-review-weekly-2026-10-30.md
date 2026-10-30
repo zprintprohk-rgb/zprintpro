@@ -5,13 +5,15 @@
 ## Execution health
 
 - Window: 2026-10-24 to 2026-10-30
-- Runs: 25; verdicts: {"FAILED": 6, "OK": 12, "STALE": 6, "BLOCKED": 1}
-- Current lanes requiring attention: 2
+- Runs: 28; verdicts: {"FAILED": 6, "OK": 16, "BLOCKED": 2, "STALE": 4}
+- Current lanes requiring attention: 4
 
 | lane | verdict | recovery | evidence |
 |---|---|---|---|
+| ZP-weekly-meta | SCHEDULER_FAILED | request_human | Get-ScheduledTaskInfo -TaskName ZP-weekly-meta |
 | ZP-blog-deepfix | MISSING | request_human | Get-ScheduledTask -TaskName ZP-blog-deepfix \| Get-ScheduledTaskInfo |
-| ZP-monthly-matrix | UNKNOWN | request_human | Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix |
+| ZP-monthly-matrix | SCHEDULER_FAILED | request_human | Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix |
+| ZP-k3-review | BLOCKED | retry | .hermes/locks/lane.lock |
 
 ## Task decisions
 
@@ -33,10 +35,13 @@
 | TRUTH-T1-20261029-CALENDARS-50PCS | DONE | STOP | terminal task state |
 | TRUTH-T2-20261029-MINI-CALENDARS-1000 | DONE | STOP | terminal task state |
 | TRUTH-T3-20261029-EN-UNIT-LOCALIZE | DONE | STOP | terminal task state |
+| FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b | READY | HOLD | retest is not due or lacks a concrete date |
 
 ## Dispatch and learning
 
 - New FIX task IDs: NONE (or already present)
+- Recurred existing task IDs: FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7, FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd, FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3
+- Suppressed duplicates: 4 (deduplication is recorded, not misreported as a write failure)
 - Learning candidates: 0
 - Learning gate: baseline + change + online_verify + retest are all mandatory. No automatic prompt, permission or production rewrites are permitted.
 

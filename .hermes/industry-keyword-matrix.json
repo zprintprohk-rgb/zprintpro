@@ -1,4 +1,77 @@
 {
+  "gsc_feedback_2026_10_30": {
+    "date": "2026-10-30",
+    "type": "每日证据轮 (09:03 三档新导出; 全国家口径; C8 输入分裂收口验证轮)",
+    "report": ".hermes/logs/2026-10-30-ZP-gsc-feedback.md",
+    "anomaly_json": ".hermes/logs/gsc-daily-anomaly-2026-10-30.json",
+    "run_type": "结果总线契约(-1) > 恢复模式 > 大脑区 > v9.3; retry_queue=[] ⇒ 无 RETRY_OF; idempotency_key a34a393117e6e8ff",
+    "files_consumed": [
+      "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30.xlsx",
+      "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (1).xlsx",
+      "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx"
+    ],
+    "verdict": "OK · 恢复维持轮 (RECOVERY 117.7% dynamic; same-caliber 28d 105.6%)",
+    "kpi_28d_0930_1027": {
+      "clicks": 496,
+      "impressions": 21127,
+      "ctr": "2.35%",
+      "avg_pos": 13.56,
+      "keyword_rows": 1000,
+      "page_rows": 602,
+      "dual_method": "chart 496/21,127/2.35%/13.56 = country 496/21,127/2.35%/13.56 (diff 0)"
+    },
+    "kpi_24h_1029T05_1030T04": {
+      "clicks": 15,
+      "impressions": 888
+    },
+    "recovery": {
+      "headline_dynamic": "117.7% = 888 / 754.5 (full-country)",
+      "same_caliber_28d": "105.6% = 754.5 / 714.71 (prev 104.8% = 749.2 / 714.71)",
+      "precliff_fixed": "151.7% = 888 / 585.2 — single-site-sum denominator, NOT comparable; do not cite alone",
+      "day_over_day": "10-29 105.8% -> 10-30 117.7% (+11.9pp); 2 fresh points, 3rd pending 10-31",
+      "frozen_plateau": "10-24..10-28 130.3% x4 = same frozen 24h input, not independent observations"
+    },
+    "money_words_23": {
+      "homepage_hits_strict": "7/23 (zh 2 / en 4 / ja 1)",
+      "homepage_hits_loose": "12/23",
+      "new_page1": "doujinshi printing 10.0 (43 imp); saddle stitch booklet printing 9.71 stable",
+      "first_click": "海報印刷 286 imp / 1 clk / 0.35% / pos 14.94 (10-29 was 287 imp / 0 clk)",
+      "persistent_deep": "貼紙印刷 40.88 / 月曆印刷 23.71",
+      "worsened": "教材 印刷製本 17.31 -> 20.69 (ja); pos 20+",
+      "improved": "a2 poster 18.0 -> 17.2; large envelopes 14.06 -> 13.64; china catalog 15.92 -> 15.79"
+    },
+    "anomalies": {
+      "A1_DATA_STALE": "RESOLVED (28d latest 10-27, 3d)",
+      "A2_frozen_24h": "RESOLVED (888 imps fresh window)",
+      "A15_index_fake_FRESH": "RESOLVED (10-29 03:46 rebuild; not hand-edited)",
+      "A17_C8_detector_input_split": "CLOSED (0 WARN_STALE; 28d + 24h legs both consume 10-30 batch; only INFO_CALIBER_SWITCH x3)",
+      "A18_index_not_rebuilt_10_30": "OPEN P2 (index lastBuild 10-29; owner runs scripts/rebuild-gsc-index.mjs; do not hand-edit)",
+      "A19_3mo_not_refreshed": "OPEN P2 (no 3mo export for 10-30; pre-cliff 714.71 from 10-29 long window)",
+      "NEW-6_CTR_ZERO_PAGE1": "16 page-level URLs pos<=10 imp>=50 clk=0; hand to weekly-meta only after SERP-feature check"
+    },
+    "candidates": {
+      "O1_CTR_pool": "16 page1 zero-click URLs + 6 query-level c=0 words -> ZP-weekly-meta; no blind title edits",
+      "O2_poster": "海報印刷 first click but category/posters 212@45.56 + blog poster-buying 132@59.28 weak -> 11-06",
+      "O3_calendar": "月曆印刷 23.71; category title trimmed today -> 11-06",
+      "O4_sticker": "貼紙印刷 40.88 (frozen cluster) -> 11-04",
+      "O5_ja_textbook": "教材 印刷製本 20.69 -> 11-01 monthly diagnosis",
+      "O7_join": "C4 panel join + task J hkg 8 words -> 11-03"
+    },
+    "rows_homepage_28d_query": {
+      "rows": 1000,
+      "pos_le_10": 503,
+      "pos_11_20": 175,
+      "pos_gt_20": 302,
+      "note": "query level, export cap 1000; not the panel query x page x country caliber"
+    },
+    "next": [
+      "2026-10-31 third consecutive fresh recovery reading",
+      "2026-11-01 monthly: ja textbook churn / sticker / calendar",
+      "2026-11-03 C4 join + task J hkg 8 locked words + gate #9 on rebuilt index",
+      "2026-11-04 年賀状 cluster / 貼紙 14-day positions",
+      "2026-11-06 poster price / sticker MOQ / catalog FDA / calendar title 7d effect"
+    ]
+  },
   "version": "2026-09-13-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
@@ -2245,6 +2318,62 @@
     ]
   },
   "priority_boost_history": [
+    {
+      "date": "2026-10-30",
+      "trigger": "scheduled gsc-feedback-loop run (20:13; 10-30 exports 09:03, full-country)",
+      "by_orchestrator": true,
+      "changes": [
+        {
+          "keyword": "海報印刷",
+          "delta": "+1",
+          "reason": "286 imp 0->1 clk, pos 14.94 stable; first CTR evidence after 287-imp zero-click 10-29; price truth landed 10-30"
+        },
+        {
+          "keyword": "小冊子印刷",
+          "delta": "+1",
+          "reason": "10.6 pos / 52 imp, striking-distance boundary; zh booklet intent"
+        },
+        {
+          "keyword": "doujinshi printing",
+          "delta": "+1",
+          "reason": "10.0 entered strict page1, 43 imp, en buyer word"
+        },
+        {
+          "keyword": "食品包裝印刷",
+          "delta": "0 (hold)",
+          "reason": "8.6 page1 but 113 imp 0 clk; already +1 on 10-29; CTR problem, not queue priority"
+        },
+        {
+          "keyword": "china catalog printing",
+          "delta": "0 (hold)",
+          "reason": "15.79 stable; already +1 on 10-29"
+        },
+        {
+          "keyword": "貼紙印刷",
+          "delta": "0 (observe)",
+          "reason": "40.88 persistent; frozen stickers cluster"
+        },
+        {
+          "keyword": "月曆印刷",
+          "delta": "0 (observe)",
+          "reason": "23.71; calendars title trimmed today, wait for 11-06"
+        },
+        {
+          "keyword": "教材 印刷製本",
+          "delta": "0 (watch)",
+          "reason": "17.31 -> 20.69 worsening; 11-01 monthly diagnosis"
+        }
+      ],
+      "rules_applied": {
+        "first_click_after_zero_click": "+1",
+        "striking_distance_boundary": "+1",
+        "new_page1_entry": "+1",
+        "page1_zero_click": "hold (CTR problem)",
+        "frozen_cluster": "observe",
+        "churn_worsening": "watch"
+      },
+      "queue_numeric_fields_touched": false
+    },
     {
       "date": "2026-10-29",
       "trigger": "manual gsc-feedback-loop run (K3 立即执行 + 新档到位)",

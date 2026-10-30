@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-10-30",
+  "run_started_at": "2026-10-30 20:13:01",
+  "verdict": "OK",
+  "confidence": "MEDIUM",
+  "confidence_reason": "2026-10-30 09:03 K3 exports (24h/7d/28d site-summary, full-country caliber); 28d latest day 2026-10-27 (3d old, within 72h gate); NO 3mo refresh for 10-30; 7d file on disk but not parsed in-lane (pwsh/node blocked by sandbox, so no 7d values claimed); query x page x country join still absent; day-over-day position deltas are cross-window (window shifted +1 day) and directional only.",
+  "scope_discipline": [
+    "All exports are 'three-site summary' but actually FULL-COUNTRY caliber (site summary totals = country sheet totals). This is NOT the hk+jp+us filtered caliber; recovery ratios from different calibers are never subtracted from each other.",
+    "date x page != query != page. 28d panel totals are date x page; the 23 money-word positions are query-level; page-level lists are page-level. Totals are never added/subtracted across these scopes.",
+    "28d query sheet is capped at top-1000 rows; row/page1 counts are lower bounds, not full-universe counts.",
+    "A missing query row in the top-1000 export is 'no record', not proof of zero demand.",
+    "Only the 24h ratio 117.7% is used as the mandated recovery headline (dynamic mean28 denominator); the fixed 585.2 pre-cliff denominator (151.7%) is a single-site-sum caliber and is NOT comparable."
+  ],
+  "data_windows": {
+    "28d_site_summary": {
+      "window": "2026-09-30..2026-10-27",
+      "latest_day": "2026-10-27",
+      "age_days_at_run": 3,
+      "file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+      "chart_total": {"clicks": 496, "impressions": 21127, "ctr": 0.0235, "avg_pos": 13.56},
+      "dual_method": {"A_chart": [496, 21127, 2.35, 13.56], "B_country": [496, 21127, 2.35, 13.56], "consistent": true}
+    },
+    "7d_site_summary": {
+      "file": "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (1).xlsx",
+      "note": "on disk (09:03 export); values NOT cited in this run because no machine-readable 7d extraction exists and the lane cannot run node/pwsh."
+    },
+    "24h_site_summary": {
+      "window": "2026-10-29T05:00:00 ~ 2026-10-30T04:00:00",
+      "file": "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30.xlsx",
+      "chart_total": {"clicks": 15, "impressions": 888},
+      "note": "rolling window incl. night hours; single-day noise, not a trend by itself (A2 discipline)"
+    },
+    "3mo_site_summary": {
+      "status": "MISSING_FOR_2026_10_30",
+      "last_available": "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-29.xlsx (window 2026-07-27..2026-10-26, pre-cliff daily mean 714.71)"
+    }
+  },
+  "sources": [
+    "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30.xlsx",
+    "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (1).xlsx",
+    "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+    ".hermes/logs/gsc-cliff-2026-10-30.json (detector output, 24h 888 / dynamic 1.177)",
+    ".hermes/logs/k3-kpi-panel-2026-10-30.json + .md (28d four metrics, by country/device, 23 money words, page leaders)",
+    ".hermes/logs/2026-10-30-k3-decision-execution-report.md (09:03 exports + C8 24h leg confirmation)",
+    ".hermes/logs/2026-10-30-ZP-weekly-meta.md (07:10 same-day reading 105.8%; superseded snapshot, documented for reconciliation)",
+    ".hermes/logs/2026-10-30-ZP-daily-content.md (cross-lane consistency: 117.7%)",
+    ".hermes/logs/2026-10-29-ZP-gsc-feedback.md (previous run baseline + retry closure)",
+    ".hermes/logs/gsc-daily-anomaly-2026-10-29.json (previous anomaly baseline)",
+    "GSC数据/index.json (lastBuild 2026-10-29T03:46, totalFiles 238; NOT rebuilt for 10-30 exports)",
+    ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-10-30 20:13:01",
+    ".hermes/logs/lane-status.json @ 2026-10-30T11:43:19.365Z"
+  ],
+  "detector_2026_10_30": {
+    "input_28d": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+    "latest_date": "2026-10-27",
+    "data_age_days": 3,
+    "latest_day_imps": 939,
+    "prior7d_mean_imps": 785.4,
+    "trailing3d_mean_imps": 878.3,
+    "mean28_imps": 754.5,
+    "total28_clicks": 496,
+    "cliff_ratio": 1.196,
+    "depression_ratio": 1.164,
+    "warn_stale": 0,
+    "critical_cliff": 0,
+    "alerts": [
+      "INFO_CALIBER_SWITCH x3: single-site 28d files are 18d old -> fallback to three-site summary (full-country), expected by C8 design"
+    ],
+    "realtime_24h": {
+      "imps": 888,
+      "clicks": 15,
+      "recovery_ratio_vs_precliff": 1.517,
+      "recovery_ratio_vs_precliff_caliber": "single-site-sum fixed 585.2 (hk+jp+us), NOT comparable with full-country 714.71",
+      "recovery_ratio_vs_mean28_dynamic": 1.177,
+      "recovery_ratio_vs_mean28_dynamic_caliber": "full-country"
+    }
+  },
+  "recovery": {
+    "headline_pct": 117.7,
+    "headline_formula": "888 (24h imps) / 754.5 (28d mean, full-country) = 1.177",
+    "same_caliber_28d_pct": 105.6,
+    "same_caliber_28d_formula": "754.5 / 714.71 (3mo pre-cliff daily mean, 2026-10-29 export) = 105.6%",
+    "same_caliber_28d_prev_pct": 104.8,
+    "same_caliber_28d_prev_formula": "749.2 (10-29 28d mean) / 714.71 = 104.8%",
+    "day_over_day_24h_pct": {"2026-10-29": 105.8, "2026-10-30": 117.7, "delta_pp": 11.9},
+    "precliff_fixed_pct": 151.7,
+    "precliff_fixed_warning": "888 / 585.2 = 151.7%; denominator is a fixed single-site-sum from gsc-cliff-2026-10-13. Do NOT cite as a recovery jump and do NOT subtract from 105.6/117.7.",
+    "streak_status": "2 consecutive fresh readings (10-29 105.8% -> 10-30 117.7%); the mandated 3-day rise is NOT yet confirmed. 10-31 is the third reading. 10-24..10-28 detector ratios (130.3% x4) are a frozen-input plateau, not independent observations.",
+    "series": [
+      {"date": "2026-10-12", "imps_24h": 44, "ratio_pct": 7.5, "metric": "precliff_only", "read": "cliff window"},
+      {"date": "2026-10-13", "imps_24h": 747, "ratio_pct": 127.6, "metric": "precliff_only", "read": "single point, 43h gap"},
+      {"date": "2026-10-15", "imps_24h": 569, "ratio_pct": 97.8, "metric": "dynamic", "read": "fresh"},
+      {"date": "2026-10-16", "imps_24h": null, "ratio_pct": 121.4, "metric": "dynamic", "read": "fresh at the time"},
+      {"date": "2026-10-17", "imps_24h": null, "ratio_pct": 121.4, "metric": "dynamic", "read": "FROZEN repeat of 10-16"},
+      {"date": "2026-10-19", "imps_24h": null, "ratio_pct": 71.0, "metric": "dynamic", "read": "fresh at the time"},
+      {"date": "2026-10-20", "imps_24h": null, "ratio_pct": 71.0, "metric": "dynamic", "read": "FROZEN repeat of 10-19"},
+      {"date": "2026-10-24", "imps_24h": null, "ratio_pct": 130.3, "metric": "dynamic", "read": "frozen-input plateau start"},
+      {"date": "2026-10-26", "imps_24h": null, "ratio_pct": 130.3, "metric": "dynamic", "read": "FROZEN repeat"},
+      {"date": "2026-10-27", "imps_24h": null, "ratio_pct": 130.3, "metric": "dynamic", "read": "FROZEN repeat"},
+      {"date": "2026-10-28", "imps_24h": null, "ratio_pct": 130.3, "metric": "dynamic", "read": "FROZEN repeat"},
+      {"date": "2026-10-29", "imps_24h": 793, "ratio_pct": 105.8, "metric": "dynamic", "read": "fresh (10-29 export batch)"},
+      {"date": "2026-10-30", "imps_24h": 888, "ratio_pct": 117.7, "metric": "dynamic", "read": "fresh (10-30 export batch)"}
+    ],
+    "gaps": ["2026-10-14", "2026-10-18", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-25"]
+  },
+  "four_metrics_28d": {
+    "clicks": 496,
+    "impressions": 21127,
+    "ctr_pct": 2.35,
+    "avg_pos": 13.56,
+    "keyword_rows": 1000,
+    "page_rows": 602,
+    "by_country": {
+      "中国香港": {"clk": 360, "imp": 12229, "ctr_pct": 2.94, "pos": 13.39},
+      "日本": {"clk": 40, "imp": 2296, "ctr_pct": 1.74, "pos": 16.61},
+      "美国": {"clk": 30, "imp": 2743, "ctr_pct": 1.09, "pos": 15.42}
+    },
+    "by_device": {
+      "桌面": {"clk": 279, "imp": 12653, "ctr_pct": 2.21, "pos": 15.53},
+      "移动设备": {"clk": 205, "imp": 8193, "ctr_pct": 2.50, "pos": 10.45},
+      "平板电脑": {"clk": 12, "imp": 281, "ctr_pct": 4.27, "pos": 15.47}
+    },
+    "prev_2026_10_29": {"clicks": 497, "impressions": 20977, "ctr_pct": 2.37, "avg_pos": 13.52, "page1_money_words": 6}
+  },
+  "money_words_23": {
+    "homepage_hits_strict": "7/23",
+    "homepage_hits_loose": "12/23",
+    "strict_note": "strict = normalized query exactly equals the 23-word SSoT; comparable with 10-29 (6/23). Loose = containing long-tails, expansion reference only.",
+    "words": [
+      {"locale": "zh-hk", "word": "海報印刷", "pos": 14.94, "clk": 1, "imp": 286, "band": "11-20", "delta_pos_vs_1029": 0.07, "note": "FIRST CLICK after 287 imp 0 clk on 10-29; CTR 0.35%"},
+      {"locale": "zh-hk", "word": "印海報", "pos": 12.79, "clk": 1, "imp": 125, "band": "11-20", "delta_pos_vs_1029": -0.04},
+      {"locale": "zh-hk", "word": "食品包裝印刷", "pos": 8.6, "clk": 0, "imp": 113, "band": "page1", "delta_pos_vs_1029": -0.11, "note": "largest page1 zero-click money word"},
+      {"locale": "zh-hk", "word": "貼紙印刷", "pos": 40.88, "clk": 0, "imp": 120, "band": "20+", "delta_pos_vs_1029": 0.39},
+      {"locale": "zh-hk", "word": "月曆印刷", "pos": 23.71, "clk": 0, "imp": 109, "band": "20+", "delta_pos_vs_1029": 0.62},
+      {"locale": "zh-hk", "word": "小冊子印刷", "pos": 10.6, "clk": 0, "imp": 52, "band": "11-20", "delta_pos_vs_1029": 0.19},
+      {"locale": "zh-hk", "word": "紙袋印刷", "pos": 15.11, "clk": 0, "imp": 64, "band": "11-20", "delta_pos_vs_1029": 0.68},
+      {"locale": "zh-hk", "word": "騎馬釘印刷", "pos": 12.23, "clk": 0, "imp": 61, "band": "11-20", "delta_pos_vs_1029": 0.09},
+      {"locale": "zh-hk", "word": "即日印刷", "pos": 7.39, "clk": 1, "imp": 56, "band": "page1", "delta_pos_vs_1029": 0.27},
+      {"locale": "en", "word": "small batch sticker printing", "pos": 5.5, "clk": 0, "imp": 46, "band": "page1", "delta_pos_vs_1029": -0.02},
+      {"locale": "en", "word": "small batch stickers", "pos": 5.04, "clk": 0, "imp": 25, "band": "page1", "delta_pos_vs_1029": -0.11},
+      {"locale": "en", "word": "doujinshi printing", "pos": 10.0, "clk": 0, "imp": 43, "band": "page1", "delta_pos_vs_1029": -0.14, "note": "entered page1"},
+      {"locale": "en", "word": "saddle stitch booklet printing", "pos": 9.71, "clk": 0, "imp": 14, "band": "page1", "delta_pos_vs_1029": 0.11},
+      {"locale": "en", "word": "china catalog printing", "pos": 15.79, "clk": 0, "imp": 72, "band": "11-20", "delta_pos_vs_1029": -0.13},
+      {"locale": "en", "word": "large envelopes", "pos": 13.64, "clk": 0, "imp": 11, "band": "11-20", "delta_pos_vs_1029": -0.42},
+      {"locale": "en", "word": "a2 poster", "pos": 17.2, "clk": 0, "imp": 54, "band": "11-20", "delta_pos_vs_1029": -0.8},
+      {"locale": "en", "word": "corporate holiday cards", "pos": null, "clk": null, "imp": null, "band": "NO_DATA", "delta_pos_vs_1029": null},
+      {"locale": "ja", "word": "コミケ 印刷", "pos": 18.99, "clk": 0, "imp": 173, "band": "11-20", "delta_pos_vs_1029": 0.14},
+      {"locale": "ja", "word": "卒アル販売", "pos": 5.0, "clk": 0, "imp": 16, "band": "page1", "delta_pos_vs_1029": 0.0},
+      {"locale": "ja", "word": "教材 印刷製本", "pos": 20.69, "clk": 0, "imp": 39, "band": "20+", "delta_pos_vs_1029": 3.38},
+      {"locale": "ja", "word": "教材 印刷 製本", "pos": 17.42, "clk": 0, "imp": 19, "band": "11-20", "delta_pos_vs_1029": null},
+      {"locale": "ja", "word": "pvc シール", "pos": 18.75, "clk": 0, "imp": 20, "band": "11-20", "delta_pos_vs_1029": -0.05},
+      {"locale": "ja", "word": "年賀状印刷", "pos": null, "clk": null, "imp": null, "band": "NO_DATA", "delta_pos_vs_1029": null}
+    ]
+  },
+  "ctr_zero_page1": {
+    "page_level_28d_pos_le_10_imp_ge_50_clk_0": [
+      "en/blog/marathon-event-poster-printing-guide 293@6.83 c0",
+      "zh-hk/blog/wedding-invitation-pricing-guide 135@7.64 c0",
+      "en/blog/flyer-sizes-compared 116@6.75 c0",
+      "zh-hk/product/kraft-paper-bags 103@9.9 c0",
+      "en/blog/poster-printing-price-guide 92@5.95 c0",
+      "zh-hk/blog/design-file-specs 72@6.17 c0",
+      "ja/blog/a5-vs-a6-flyer-size 70@7.59 c0",
+      "ja/blog/sticker-materials 68@9.91 c0",
+      "en/product/large-envelopes 66@6.82 c0",
+      "en/product/exercise-books 66@8.17 c0",
+      "zh-hk/blog/poster-size-guide 65@6.86 c0",
+      "zh-hk/product/foil-red-packets 58@2.03 c0",
+      "en/blog/certificate-printing-guide 53@8.75 c0",
+      "zh-hk/blog/flyer-buying-guide 51@7.84 c0",
+      "en/blog/roll-up-banner-printing-guide 51@9.27 c0",
+      "en/product/pvc-menus 50@8.92 c0"
+    ],
+    "query_level_page1_c0_two_consecutive_files": [
+      "食品包裝印刷 113@8.6 c0 (10-29: 112@8.71 c0)",
+      "small batch sticker printing 46@5.5 c0 (10-29: 50@5.52 c0)",
+      "small batch stickers 25@5.04 c0 (10-29: 26@5.15 c0)",
+      "doujinshi printing 43@10.0 c0 (10-29: 44@10.14 c0)",
+      "saddle stitch booklet printing 14@9.71 c0 (10-29: 15@9.60 c0)",
+      "卒アル販売 16@5.0 c0 (10-29: 16@5.0 c0)"
+    ],
+    "query_level_page2_c0_two_consecutive_files": [
+      "小冊子印刷 52@10.6 c0 (10-29: 54@10.41 c0)",
+      "紙袋印刷 64@15.11 c0 (10-29: 65@14.43 c0)",
+      "騎馬釘印刷 61@12.23 c0 (10-29: 56@12.14 c0)",
+      "china catalog printing 72@15.79 c0 (10-29: 76@15.92 c0)",
+      "a2 poster 54@17.2 c0 (10-29: 54@18.0 c0)",
+      "コミケ 印刷 173@18.99 c0 (10-29: 177@18.85 c0)",
+      "pvc シール 20@18.75 c0 (10-29: 20@18.80 c0)",
+      "教材 印刷 製本 19@17.42 c0 (10-29: no row; 1 file only)",
+      "large envelopes 11@13.64 c0 (10-29: 16@14.06 c0)"
+    ],
+    "discipline": "c=0 for two consecutive files = CTR repair candidate only; NOT an instruction to edit. Verify SERP feature / snippet absorption first (foil-red-packets at pos 2.03 with 58 imp and 0 clk is a classic snippet/navigation absorption pattern, not necessarily a title defect)."
+  },
+  "zero_click_money_words": [
+    "食品包裝印刷 113@8.6", "貼紙印刷 120@40.88", "月曆印刷 109@23.71", "小冊子印刷 52@10.6",
+    "紙袋印刷 64@15.11", "騎馬釘印刷 61@12.23", "small batch sticker printing 46@5.5", "small batch stickers 25@5.04",
+    "doujinshi printing 43@10.0", "saddle stitch booklet printing 14@9.71", "china catalog printing 72@15.79",
+    "large envelopes 11@13.64", "a2 poster 54@17.2", "コミケ 印刷 173@18.99", "卒アル販売 16@5.0",
+    "教材 印刷製本 39@20.69", "教材 印刷 製本 19@17.42", "pvc シール 20@18.75"
+  ],
+  "zero_click_pages_28d_top": [
+    "en/blog/marathon-event-poster-printing-guide 293@6.83",
+    "ja/product/a2-posters 162@25.83",
+    "en/blog/calendar-printing-guide 163@27.31",
+    "zh-hk/product/catalog-printing 156@45.28",
+    "zh-hk/blog/paper-bag-printing-guide 147@20.41",
+    "zh-hk/blog/wedding-invitation-pricing-guide 135@7.64",
+    "zh-hk/blog/poster-buying-guide 132@59.28",
+    "zh-hk/blog/paper-materials 128@31.26",
+    "zh-hk/blog/sticker-guide 124@39.53",
+    "en/blog/flyer-sizes-compared 116@6.75",
+    "zh-hk/product/kraft-paper-bags 103@9.9",
+    "en/product/saddle-stitch-booklets 100@10.31"
+  ],
+  "striking_distance_money_words": [
+    "海報印刷 286@14.94 c1", "印海報 125@12.79 c1", "紙袋印刷 64@15.11 c0", "騎馬釘印刷 61@12.23 c0",
+    "china catalog printing 72@15.79 c0", "a2 poster 54@17.2 c0", "コミケ 印刷 173@18.99 c0",
+    "pvc シール 20@18.75 c0"
+  ],
+  "striking_distance_note": "pos 11-20 and imp>=20 only; large envelopes (11 imp) and 教材 印刷 製本 (19 imp) are below the impression floor and are therefore excluded from this list.",
+  "pillar_page_28d": {
+    "zh-hk/blog/poster-printing-guide": "1454 imp / 18 clk / 1.24% / pos 8.46 (largest impression page, CTR gap, not c=0)",
+    "zh-hk/": "974 / 49 / 5.03% / 13.70",
+    "zh-hk/product/a2-posters": "878 / 25 / 2.85% / 13.92",
+    "zh-hk/blog/folded-leaflet-printing-guide": "508 / 17 / 3.35% / 10.78",
+    "zh-hk/blog/saddle-stitch-booklet-printing-guide": "356 / 6 / 1.69% / 10.13",
+    "zh-hk/blog/doujin-circle-printing-guide": "225 / 18 / 8.00% / 5.77",
+    "ja/product/doujinshi-printing": "228 / 6 / 2.63% / 14.75",
+    "zh-hk/category/red-packets": "197 / 12 / 6.09% / 17.77",
+    "zh-hk/blog/mtr-advertising-specs": "176 / 11 / 6.25% / 5.71",
+    "zh-hk/blog/childrens-picture-book-printing-guide": "104 / 14 / 13.46% / 6.22",
+    "en/category/stickers": "59 / 4 / 6.78% / 10.51"
+  },
+  "crawl_status": "NOT_AVAILABLE — the 10-30 batch has Search Performance only (24h/7d/28d), no Crawl/Indexing export; no indexation claim is made.",
+  "blind_words": {
+    "年賀状印刷": "no record in the 28d query export (top-1000); not proof of zero demand",
+    "2027年賀状": "no record",
+    "corporate holiday cards": "no record",
+    "business holiday cards": "no record",
+    "nengajo_page_signal": "/zh-hk/nengajo-2027/ 4 imp / 1 clk / CTR 25% / pos 2.75 in the 28d page sheet; the page now has both impressions and a first click, but the blind keyword cluster itself is not broken yet. 11-04 verification point unchanged."
+  },
+  "task_j_8_lockwords": {
+    "status": "NOT_COMPUTED_TODAY",
+    "reason": "Task J requires hkg query x country caliber. The 10-30 batch is three-site summary (full-country) with no query x country join; using the full-country query sheet would repeat the A10/A3 caliber-mixing error.",
+    "last_valid_2026_10_28_hkg": {
+      "包裝盒印刷": "49 imp / 30.22 pos",
+      "包裝盒訂製": "44 / 30.27",
+      "紙盒印刷": "41 / 32.12",
+      "貼紙印刷": "107 / 39.91",
+      "宣傳單張": "96 / 27.17",
+      "即日印刷": "52 / 6.90 / 1 clk",
+      "書刊印刷": "85 / 32.51",
+      "騎馬釘": "48 / 19.65"
+    },
+    "next_check": "2026-11-03 (after K3 exports query x page x country)"
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "RESOLVED", "note": "28d latest day 2026-10-27, 3d old, within 72h gate."},
+    {"id": "A2", "name": "frozen_24h_chain", "status": "RESOLVED", "note": "New 24h export 888 imps (window 10-29T05..10-30T04); the 758-imp frozen chain is dead."},
+    {"id": "A15", "name": "index.json fake FRESH", "status": "RESOLVED (2026-10-29 03:46 rebuild)", "note": "lastBuild 2026-10-29T03:46, latestFreshData 2026-10-29, FRESH. Not hand-edited."},
+    {"id": "A17/C8", "name": "DETECTOR_INPUT_SPLIT", "status": "CLOSED", "note": "0 WARN_STALE. sites.*.file = 28d three-site summary 2026-10-30 (2).xlsx; realtime_24h = 24h 2026-10-30.xlsx (888). Only INFO_CALIBER_SWITCH x3 because single-site files are 18d old. C8's 28d leg and 24h leg are both fixed."},
+    {"id": "A18", "name": "INDEX_NOT_REBUILT_FOR_10_30", "status": "OPEN (P2)", "severity": "P2", "note": "GSC数据/index.json still lastBuild 2026-10-29 and filesByDate has no 2026-10-30 entry, so gate #9 cannot verify the age of today's cited xlsx. Derived file: do NOT hand-edit (SOP-5). Owner must run scripts/rebuild-gsc-index.mjs."},
+    {"id": "A19", "name": "3MO_NOT_REFRESHED", "status": "OPEN (P2)", "severity": "P2", "note": "No 3mo export for 2026-10-30; pre-cliff denominator still 714.71 from the 10-29 long window. Dynamic ratio 117.7% is unaffected; the fixed pre-cliff ratio 151.7% remains unusable."},
+    {"id": "NEW-1", "name": "貼紙印刷 locked word still deep", "status": "PERSISTENT", "severity": "P1", "note": "40.88 (10-29 40.49), 120 imp, 0 clk. Do not churn title; frozen stickers cluster. Re-measure after 11-04/11-06."},
+    {"id": "NEW-2", "name": "月曆印刷 worsening", "status": "WATCH", "severity": "P2", "note": "23.71 (10-29 23.09), 109 imp, 0 clk. Calendars category title was trimmed today by ZP-weekly-meta; effect measurable from 11-06, not before."},
+    {"id": "NEW-3", "name": "教材 印刷製本 worsening", "status": "WATCH", "severity": "P1", "note": "20.69 (10-29 17.31), 39 imp, 0 clk. ja textbook churn; 11-01 monthly review diagnosis. No src action in this lane."},
+    {"id": "NEW-4", "name": "海報印刷 first click", "status": "IMPROVED (partial)", "severity": "P3", "note": "286 imp, 1 clk, CTR 0.35%, pos 14.94. No longer the largest zero-click word, but CTR is still far below page-1 norms; price truth fix landed 10-30, effect from 11-06."},
+    {"id": "NEW-5", "name": "CTR flat while impressions rise", "status": "OBSERVE", "severity": "P3", "note": "28d 496 clk / 21,127 imp / 2.35% vs 497 / 20,977 / 2.37%. Impressions +150, clicks -1. Not a recovery break; monitor 11-06."},
+    {"id": "NEW-6", "name": "CTR_ZERO_PAGE1_CLUSTER", "status": "OPEN (evidence)", "severity": "P2", "note": "16 page-level URLs at pos<=10 with imp>=50 and 0 clicks, incl. en marathon poster 293@6.83, zh wedding pricing 135@7.64, en flyer sizes 116@6.75, zh foil-red-packets 58@2.03. Hand to weekly-meta as an ordered pool ONLY after SERP-feature check; no blind title edits."}
+  ],
+  "queues": {
+    "opportunity": [
+      {"task_id": "GSC-20261030-O1", "intent": "CTR pool: 16 page-level zero-click URLs + 6 page1 + 9 page2 query-level c=0 words", "owner": "ZP-weekly-meta", "write_scope": "none in this lane; weekly-meta decides per unfrozen/evidence rule", "next_check": "2026-11-06", "accept": "SERP feature checked first; no brand/utility query title edits"},
+      {"task_id": "GSC-20261030-O2", "intent": "Poster cluster: 海報印刷 first click but category/posters 212@45.56 and blog poster-buying 132@59.28 remain structurally weak", "owner": "ZP-daily-content / weekly-meta", "write_scope": "none in this lane", "next_check": "2026-11-06", "accept": "indexation/relevance evidence before any content claim"},
+      {"task_id": "GSC-20261030-O3", "intent": "Calendar: 月曆印刷 23.71 + category/calendars 229@32.97; category title trimmed today", "owner": "ZP-weekly-meta", "write_scope": "none", "next_check": "2026-11-06", "accept": "7d page-level impressions >= 80% of 10-30 baseline; month word >=1 click"},
+      {"task_id": "GSC-20261030-O4", "intent": "Sticker: 貼紙印刷 40.88 + category/stickers 194@40.73; frozen cluster", "owner": "ZP-daily-content", "write_scope": "none until freeze lifts", "next_check": "2026-11-04", "accept": "no title churn before 14-day window"},
+      {"task_id": "GSC-20261030-O5", "intent": "ja textbook churn: 教材 印刷製本 17.31 -> 20.69", "owner": "ZP-monthly-matrix", "write_scope": "none", "next_check": "2026-11-01", "accept": "separate indexation vs intent vs cannibalization"},
+      {"task_id": "GSC-20261030-O6", "intent": "foil-red-packets 58@2.03 with 0 clicks: verify SERP feature / snippet absorption before any title action", "owner": "ZP-weekly-meta", "write_scope": "none", "next_check": "2026-11-06", "accept": "SERP screenshot/feature check recorded; no blind edit"},
+      {"task_id": "GSC-20261030-O7", "intent": "C4 panel join + task J hkg 8 locked words", "owner": "ZP-gsc-feedback (next run) / K3 export", "write_scope": "none", "next_check": "2026-11-03", "accept": "query x page x country export present; no caliber mixing"}
+    ],
+    "exit_review": [
+      {"url": "zh-hk/category/books", "imp": 522, "pos": 43.99, "clk": 1, "ctr_pct": 0.19, "action": "REVIEW structural relevance/indexation; do NOT delete or noindex automatically"},
+      {"url": "zh-hk/category/posters", "imp": 212, "pos": 45.56, "clk": 1, "ctr_pct": 0.47, "action": "REVIEW after 11-06 poster price effect"},
+      {"url": "zh-hk/category/stickers", "imp": 194, "pos": 40.73, "clk": 1, "ctr_pct": 0.52, "action": "REVIEW; frozen cluster"},
+      {"url": "zh-hk/product/catalog-printing", "imp": 156, "pos": 45.28, "clk": 0, "ctr_pct": 0.0, "action": "REVIEW catalog PDP vs service page"},
+      {"url": "zh-hk/blog/sticker-buying-guide", "imp": 106, "pos": 51.06, "clk": 2, "ctr_pct": 1.89, "action": "REVIEW; overlap with sticker-guide 124@39.53"}
+    ],
+    "internal_cannibalization": {
+      "status": "PENDING_JOIN",
+      "reason": "No query x page x country join in the 10-30 batch; page-level overlap is a hypothesis only.",
+      "hypotheses": [
+        "Poster intent spread over 5 URLs: blog poster-printing-guide 1454@8.46 (18 clk), product/a2-posters 878@13.92 (25 clk), category/posters 212@45.56 (1 clk), blog poster-buying 132@59.28 (0), blog poster-size 65@6.86 (0).",
+        "Calendar intent spread: product/custom-calendars 313@22.04 (4 clk), category/calendars 229@32.97 (4 clk), blog 2027 timetable 119@9.64 (1 clk), en blog calendar guide 163@27.31 (0).",
+        "Sticker intent spread: product/waterproof 217@12.94 (5 clk), category/stickers 194@40.73 (1), blog sticker-guide 124@39.53 (0), blog sticker-buying 106@51.06 (2)."
+      ],
+      "next_check": "2026-11-03"
+    }
+  },
+  "priority_boost": {
+    "changes": [
+      {"keyword": "海報印刷", "delta": "+1", "reason": "286 imp 0->1 click, pos 14.94 stable; first CTR evidence after 287-imp zero-click; price truth landed 10-30"},
+      {"keyword": "小冊子印刷", "delta": "+1", "reason": "10.6 pos, 52 imp, striking-distance boundary; zh booklet intent"},
+      {"keyword": "doujinshi printing", "delta": "+1", "reason": "10.0 entered page1 strict, 43 imp, en buyer word"},
+      {"keyword": "食品包裝印刷", "delta": "0 (hold)", "reason": "8.6 page1 but 113 imp 0 clk; already +1 on 10-29; CTR problem, not queue priority"},
+      {"keyword": "china catalog printing", "delta": "0 (hold)", "reason": "15.79 stable; already +1 on 10-29"},
+      {"keyword": "貼紙印刷", "delta": "0 (observe)", "reason": "40.88 persistent; frozen cluster"},
+      {"keyword": "月曆印刷", "delta": "0 (observe)", "reason": "23.71; category title trimmed today, wait for 11-06"},
+      {"keyword": "教材 印刷製本", "delta": "0 (watch)", "reason": "17.31 -> 20.69 worsening; 11-01 diagnosis"}
+    ],
+    "writes_to_queue_numeric_fields": false,
+    "note": "Only priority_boost_history is appended (evidence layer). Queue numeric fields are left untouched; no task was approved or re-statused by this lane."
+  },
+  "next": [
+    {"date": "2026-10-31", "check": "third consecutive fresh recovery reading (24h dynamic) + detector still 0 WARN_STALE", "pass": "ratio >100% and no WARN_STALE/CRITICAL"},
+    {"date": "2026-11-01", "check": "monthly review: ja textbook churn (教材 印刷製本 20.69) + 貼紙/月曆 20+ positioning", "pass": "diagnosis separates indexation / intent / cannibalization"},
+    {"date": "2026-11-03", "check": "C4 panel join (query x page x country) + task J 8 hkg locked words + gate #9 re-run against a rebuilt index", "pass": "all 8 words have hkg rows; no caliber mixing"},
+    {"date": "2026-11-04", "check": "年賀状 cluster / 貼紙印刷 14-day positions", "pass": "年賀状 any impression = win; 貼紙 <=25"},
+    {"date": "2026-11-06", "check": "poster price / sticker MOQ / catalog FDA / calendar title 7d effect vs 10-30 baseline", "pass": "page imp >=80% of baseline and >=1 click on target money word"}
+  ]
+}
