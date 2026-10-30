@@ -222,3 +222,19 @@ CF build 部署判定窗口：第一轮 19:03→19:05 轮询 7 次 `old=false`�
 - 线上验收: curl zprintpro.com 2026-10-30 19:03-19:40（UA 伪装, 200 + 长度校验, 部署轮询 7/11 次取稳定态）
 - 车道总线: `.hermes/logs/lane-runs.jsonl` + `node scripts/lane-status.mjs --days=1`（19:45）
 - blog 认证清单: `src/data/blog-data/{zh-hk,en,ja}.json` 三语实扫（正则取具体条款号/认证名 + 唯一词组聚合）
+
+## 10. 部署状态实测校正 (2026-10-30 23:2x)
+
+> 对端 commit 971f848b 登记「CF Pages build 三连无 check-run，线上停留旧构建」。我用**被删串**做判据实测，结论与之相反：
+
+| 判据 | commit | 线上结果 | 判定 |
+|---|---|---|---|
+| zh 全站模板「標準訂單 3-5 個工作天完成…」是否仍在线 | d450abbc | 已消失，新口径「報價確認」出现 39 次 | **已部署** |
+| en PDP「standard lead time 5-7 days」「free digital proof within 1 hour」 | 88cdf1ca | 均已消失 | **已部署** |
+| zh/en/ja ProductWhyChooseUs + TrustBadgeBlock 旧串（1 小時免費數碼打樣 / Free digital proof within 1 hour before production / データ提出後 1 時間で無料デジタル校正） | 6f23d599 | 4 处全部已清 | **已部署** |
+
+结论：线上已是包含 d450abbc / 88cdf1ca / 6f23d599 的新构建；971f848b 所述属 **check-run 上报缺口**（或期间已 retry 成功），不是构建失效。
+
+**反向教训**：若按「停留旧构建」的推断去重复推送或催 K3 retry，会白烧 CF build 配额。本次以「commit 删除了哪些串、线上是否还在」作为唯一判据，属 §0.23.2 要求的可复核口径。
+
+另：/design-file-specs/ 返回 404 —— 该路径本身不存在（711231f8 的资产落在其他页面），**不能**作为部署新旧证据，已在本次判据中剔除。
