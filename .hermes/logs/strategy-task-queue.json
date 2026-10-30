@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T19:50:00+08:00 (blog 认证词组清单登记)",
+  "generated_at": "2026-10-30T19:52:00+08:00 (全站模板证据加强)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -456,10 +456,10 @@
       "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #3 执行副作用审查",
       "market": "en",
       "target": "src/data/sku-seo-data.ts 其余 ~70 SKU body (Free US shipping over $99 / 4-day delivery / Rush 2-day)",
-      "evidence": "grep 2026-10-30: 除 small-batch 外仍有大量 SKU body 含未确认运输承诺 (removable/die-cut/waterproof/roll-labels/kraft-bags/flyers 等); 老模板, 非本批范围",
+      "evidence": "实测 2026-10-30 19:50 (products-content.ts 精确字符串计数): ① `<em>…DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。…</em>` = **66 处**(全站共享, 且句内重复 bug); ② zh FAQ「標準訂單 3-5 個工作天完成…日本客戶 DHL 國際速遞 2-4 個工作天到貨」= **64 处**; ③ zh FAQ「國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨」= **71 处**; ④ ja「DHL/FedEx 直送 2-4 日」li = **18 处**; ⑤ ja 配送表行(DHL/FedEx/EMS) 各 **10 处**; ⑥ ja 工場直送行「完工後 24-48 時間」= **20 处**。 线上证据: curl /ja/product/small-batch-stickers/ 19:50 同页出现 meta「配送方法・納期は見積りで確認」与 longDescription「DHL/FedEx 直送 2-4 日」「完工後 24-48 時間」并存 = 客户可见自相矛盾。 已在本批修掉的仅 small-batch 独有项(短納期特急 1 处)。",
       "score": 0.65,
-      "write_scope": "跨 SKU 批量 (需 K3 放行); 逐 SKU 回源 CSV 或 body 条件化",
-      "approval_gate": "WAITING_K3: 是否以「贴纸族 6 SKU」为下一批试点, 或全站一次性条件化",
+      "write_scope": "src/data/products-content.ts 共享模板串 (66/64/71/18/10/20 处); 属全站批量改动 §0.25.10.5, 需 K3 放行",
+      "approval_gate": "WAITING_K3: 全站模板是否改口径 —— (1) 全站一次性条件化 (改 3–4 条模板串, 影响 ~250 SKU) (2) 仅先改贴纸族 6 SKU (3) 维持现状只登记",
       "owner_lane": "manual",
       "status": "WAITING_K3",
       "created_at": "2026-10-30T19:12:00+08:00"

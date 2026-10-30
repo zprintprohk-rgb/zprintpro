@@ -2100,7 +2100,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
   <li><strong>4 色 CMYK 印刷</strong>：500 枚以上はオフセット機で大量印刷、コスト削減</li>
   <li><strong>可変データ印刷</strong>：1 枚ごとに違う QR コード・番号・名前印刷、限定商品・イベント名札に最適</li>
   <li><strong>即日仕上げ対応</strong>：A4 サイズ 1〜50 枚は当日仕上げ（自社工場受取・特急料金）</li>
-  <li><strong>短納期特急</strong>：100〜500 枚は 1〜2 営業日納品</li>
+  <li><strong>短納期特急</strong>：データ完成が前提、納期は見積もりで確認</li>
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
