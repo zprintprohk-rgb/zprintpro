@@ -162,7 +162,7 @@ const T: Record<string, {
     trustItems: [
       { title: '國際認證體系', desc: '深圳工廠通過國際質量管理體系認證, 多年印刷經驗' },
       { title: 'FSC 認證紙張', desc: '所有紙張 FSC 認證, 可持續森林採購, 歐美品牌首選' },
-      { title: 'FDA 食品級油墨', desc: '大豆油墨可選, 化妝品 / 食品 catalog 適用（材料合規以訂單確認）' },
+      { title: '大豆油墨可選', desc: '大豆油墨可選, 化妝品 / 食品 catalog 適用（材料合規以訂單確認）' },
       { title: 'DDP 完稅到門', desc: '深圳直發 DHL Express 2-4 天, 收件人零稅務負擔 (DDP 預付)' },
     ],
     h2_compare: '我方 vs 歐美工廠 vs QinPrinting 對比',
@@ -251,7 +251,7 @@ const T: Record<string, {
     trustItems: [
       { title: 'Certified Factory', desc: 'Shenzhen factory internationally certified, over a decade of printing experience, 100% QC sampling before shipment.' },
       { title: 'FSC Certified Paper', desc: 'All paper FSC certified, sustainable forestry, top choice for European and US brands.' },
-      { title: 'FDA Food-Grade Ink', desc: 'Soy-based ink options available for cosmetics / food catalog (material compliance confirmed at quote).' },
+      { title: 'Soy-Based Ink Options', desc: 'Soy-based ink options available for cosmetics / food catalog (material compliance confirmed at quote).' },
       { title: 'DDP Duty Pre-Paid', desc: 'Shenzhen direct DHL Express 2-4 days, recipient zero tax burden (DDP pre-paid).' },
     ],
     h2_compare: 'Us vs Western Printers vs QinPrinting Comparison',
@@ -341,7 +341,7 @@ const T: Record<string, {
     trustItems: [
       { title: '国際認証', desc: '深セン工場は国際認証取得, 長年の印刷経験, 出荷前 100% QC サンプリング.' },
       { title: 'FSC認証紙', desc: '全紙FSC認証, 持続可能な森林調達, 欧米ブランド第一選択.' },
-      { title: 'FDA食品グレードインク', desc: '大豆インクオプション対応, 化粧品/食品カタログ対応（材料適合は注文確認）.' },
+      { title: '大豆インク対応', desc: '大豆インクオプション対応, 化粧品/食品カタログ対応（材料適合は注文確認）.' },
       { title: 'DDP関税込み', desc: '深セン直送DHL Express 2-4日, 受取人税負担ゼロ（DDP前払い）.' },
     ],
     h2_compare: '当社 vs 欧米工場 vs QinPrinting 比較',
