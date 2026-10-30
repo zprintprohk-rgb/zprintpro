@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28T06:00:00+08:00",
+  "generated_at": "2026-10-30T10:31:00+08:00 (execution writeback 7b396bd9)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -44,11 +44,13 @@
       "write_scope": [
         "approved poster source fields only"
       ],
-      "approval_gate": "K3-2 rush boundary and K3-7 claims policy",
+      "approval_gate": "K3 2026-10-30 裁决单#1 选A: A2 HK$16/A1 HK$20 (basePrice) 为业务真值统一 category featuredSnippet/参考价表; 急件仅条件化; 无证据声明删除; title 冻结不动",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-04 after any approved release",
-      "result": "Internal links delivered; procurement answers not released"
+      "status": "DONE",
+      "next_check": "2026-11-06 (7天复测)",
+      "result": "EXECUTED 7b396bd9: category featuredSnippet/参考价表 A2 HK$9/A1 HK$45 → basePrice 真值 16/20 (zh+en 4 处) + a2-posters FAQ HK$9→16. 遗留: blog-posts L1522 title HK$9起 冻结面不动 + products.ts title_zh HK$12.9 另列 diff 复核.",
+      "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+      "execution_commit": "7b396bd9"
     },
     {
       "task_id": "ZH-PACKAGING-20261028-BATCH1",
@@ -69,11 +71,13 @@
         "src/data/blog-data/zh-hk.json",
         "zprintpro-sku-seo-data.csv then generator"
       ],
-      "approval_gate": "K3 explicit approval of batch 1; preserve greeting-card assets and 301 mappings",
+      "approval_gate": "K3 2026-10-30 裁决单#2 选A: 按 docs/2026-10-28-packaging-batch1-execution-pack.md 全部推荐值 (rigid MOQ 100 / kraft MOQ 300 / food HK$2.5 / rigid HK$8 / 免运 HK$99); FDA/SGS/藥機法/EU/衛生署无文件声明删; FSC 仅保留有条件纸材; 无测试声明删或条件化; 交期分工艺",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-04 after release",
-      "result": "Execution pack ready; docs-only; production sources not changed"
+      "status": "DONE",
+      "next_check": "2026-11-06 (7天复测)",
+      "result": "EXECUTED 7b396bd9: 执行包 P1-P4 串双方法复核 — P1/P3/P4 全 0 命中(10-23/28 批已处理) + P2 补打樣當日完成×3 删 + FSC eco-friendly→eco-friendly. 核心值确认 food 2.5/rigid 8/MOQ 100/300 已落地. 登记冲突: 裁决单免运 HK$99 vs 全站既有 HK$500(4 组件一致), 执行层保持 HK$500 待 K3 确认.",
+      "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+      "execution_commit": "7b396bd9"
     },
     {
       "task_id": "EN-STICKER-20261028-SMALLBATCH",
@@ -90,11 +94,13 @@
       "write_scope": [
         "approved small-batch PDP fields and necessary guide links only"
       ],
-      "approval_gate": "K3-6 unit/price/case-study truth and approved outbound-link scope; title freeze remains",
+      "approval_gate": "K3 2026-10-30 裁决单#3 选A: 10 stickers 起 from US$0.55 注明条件; 单位统一 stickers/pcs; proof/sample 未确认不宣传 (选B); 生产/运输留空只写报价确认; 无证案例/100%退款/4-day USA 不发布; 仅批准站内链接",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-03 for existing E1 link baseline; 7/14/28 days after any new release",
-      "result": "Inbound link delivered; procurement experiment not released"
+      "status": "DONE",
+      "next_check": "2026-11-06 (7天复测)",
+      "result": "EXECUTED 7b396bd9: CSV 回源 H1 50+→10+ / desc 删 4-day+proof / kw 删 50-minimum + 生成器重跑; EN body ts-only 区删 Free Shipping $99/4-day/food-grade/rush; zh 贴纸域 SGS×6 无证声明删 + 500張起印→10(minQuantity 全 10 确认). 遗留: zh CSV FAQ 100張起訂 待 K3.",
+      "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+      "execution_commit": "7b396bd9"
     },
     {
       "task_id": "EN-CATALOG-20261028-TRUTH",
@@ -110,11 +116,13 @@
       "write_scope": [
         "approved catalog/A2 fields only"
       ],
-      "approval_gate": "K3-3 MOQ and K3-4 currency truth",
+      "approval_gate": "K3 2026-10-30 裁决单#4 选A: catalog MOQ 10 copies; en A2 MOQ 10; USD 业务价 (缺失不以 HKD 换算); 生产/运输分开未确认只写报价确认; PDP 接交易 supplier guide 接选型 保留双向链接",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-06 after release",
-      "result": "Guide/PDP links and division delivered; truth fields pending"
+      "status": "DONE",
+      "next_check": "2026-11-06 (7天复测)",
+      "result": "EXECUTED 7b396bd9: FDA 三语 6 处无证声明条件化 + 服务页补 supplier guide 双向链接 + blog-data guide MOQ 100→10 (zh 8 处/en 6 处, bulk 阶梯 100/500/1000/5000 保留). 遗留: zh FAQ 样本 US$15 可退 100本起 样本政策待 K3.",
+      "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+      "execution_commit": "7b396bd9"
     },
     {
       "task_id": "JA-C109-20261028-DEADLINE",
@@ -131,11 +139,13 @@
       "write_scope": [
         "approved C109/doujin content fields only"
       ],
-      "approval_gate": "K3-1 price/currency and K3-2 rush/direct-delivery boundaries",
+      "approval_gate": "K3 2026-10-30 裁决单#5 选A: ja JPY ¥7,500 为指定规格/数量订单起价(非每部单价)写条件; en/zh 不得复制¥7,500 用本市场已确认价; rush 条件化不承诺24h; 日本直送不宣传会场/酒店直送; 倒排真值留空=>不发布安全入稿日只保留检查清单; 日期表达分开",
       "owner_lane": "ZP-daily-content",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-04 and every 14 days through the C109 window",
-      "result": "Checklist, reverse schedule and J1 links delivered; claims pending"
+      "status": "DONE",
+      "next_check": "2026-11-06 (7天复测)",
+      "result": "EXECUTED 7b396bd9: 倒排真值安全入稿日 12/7 三语 qa/逆算表/FAQ 删除留空(只保留检查清单+日期分项 受付確定/生产/出荷/运输/到着); ¥7,500 仅 ja 条件化(规格/数量指定, 见积り确定); en/zh 未复制; rush 条件化保留(データ完成前提); 会场直送不宣传(前日まで手元受け取り).",
+      "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+      "execution_commit": "7b396bd9"
     },
     {
       "task_id": "MEASURE-20261028-ATTRIBUTION",
@@ -229,7 +239,8 @@
       "evidence": [
         ".hermes/logs/lane-status.json",
         ".hermes/logs/lane-runs.jsonl",
-        "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo"
+        "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
+        "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
       ],
       "score": 100,
       "score_model": "execution-health-blocker",
@@ -239,8 +250,24 @@
       "approval_gate": "K3 administrator action; no automatic retry",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-10-29",
-      "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+      "next_check": "2026-10-31",
+      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "recurrence_observations": [
+        {
+          "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
+          "observed_at": "2026-10-30",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
+          ],
+          "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+        }
+      ],
+      "recurrence_count": 1,
+      "last_seen": "2026-10-30"
     },
     {
       "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
@@ -260,8 +287,24 @@
       "approval_gate": "K3 administrator action; no automatic retry",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-10-29",
-      "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+      "next_check": "2026-10-31",
+      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "recurrence_observations": [
+        {
+          "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+          "observed_at": "2026-10-30",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+          ],
+          "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+        }
+      ],
+      "recurrence_count": 1,
+      "last_seen": "2026-10-30"
     },
     {
       "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
@@ -281,8 +324,24 @@
       "approval_gate": "K3 administrator action; no automatic retry",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-10-29",
-      "result": "Dispatched by weekly review from observed UNKNOWN; not a completed fix"
+      "next_check": "2026-10-31",
+      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "recurrence_observations": [
+        {
+          "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
+          "observed_at": "2026-10-30",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+          ],
+          "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+        }
+      ],
+      "recurrence_count": 1,
+      "last_seen": "2026-10-30"
     },
     {
       "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
@@ -355,11 +414,34 @@
       "result": "CLOSED 2026-10-29 by manual/sibling batch: fix commit 124b0b11 (T3 延展 wiring) + T1/T2 源内对齐 + CF build success + 线上复验全绿 (24c9347d F4' CLOSED, b95d85c5 验收登记, 四页 curl 双方法); 本 run 幂等复核: 源内 '50 pcs'/'1,000 units' 仅剩合法语境, unitWord 本地化已接入 CategoryPageV9 L213/L246 + pricing.ts L791",
       "completed_at": "2026-10-29T18:30:00+08:00",
       "completed_by": "ZP-daily-content-20261029T1817-harness (NO_OP run, 幂等核验)"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+      "source_strategy": "periodic-review-weekly-2026-10-30",
+      "market": "operations",
+      "lane_task": "ZP-k3-review",
+      "target": "Resolve ZP-k3-review BLOCKED with bounded recovery: 锁竞争 (另一条 lane 或人手会话持锁)",
+      "evidence": [
+        ".hermes/logs/lane-status.json",
+        ".hermes/logs/lane-runs.jsonl",
+        ".hermes/locks/lane.lock"
+      ],
+      "score": 100,
+      "score_model": "execution-health-blocker",
+      "write_scope": [
+        ".hermes/logs/",
+        "scripts/"
+      ],
+      "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
+      "owner_lane": "ZP-k3-review",
+      "status": "READY",
+      "next_check": "2026-10-31",
+      "result": "Dispatched by weekly review from observed BLOCKED; not a completed fix"
     }
   ],
   "last_review": {
-    "reviewed_at": "2026-10-29T18:30:00+08:00",
-    "reviewed_by": "ZP-daily-content-20261029T1817-harness",
-    "note": "T1-T3 READY -> DONE (交付已由同侪批闭环, 本 run 幂等复核不重做)"
+    "period": "weekly",
+    "date": "2026-10-30",
+    "report": ".hermes/logs/periodic-review-weekly-2026-10-30.json"
   }
 }
