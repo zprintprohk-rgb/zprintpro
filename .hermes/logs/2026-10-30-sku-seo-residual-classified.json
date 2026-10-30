@@ -1,0 +1,301 @@
+{
+  "byField": {
+    "description": 10,
+    "body": 26,
+    "other": 1
+  },
+  "bySku": {
+    "waterproof-stickers": 2,
+    "transparent-stickers": 2,
+    "removable-stickers": 1,
+    "die-cut-stickers": 2,
+    "foil-stickers": 2,
+    "security-stickers": 2,
+    "kraft-paper-bags": 1,
+    "white-card-bags": 1,
+    "gift-bags": 1,
+    "eco-paper-bags": 1,
+    "handle-bags": 1,
+    "small-bags": 1,
+    "large-bags": 1,
+    "a4-flyers": 1,
+    "a5-flyers": 1,
+    "double-sided-flyers": 1,
+    "thick-paper-flyers": 1,
+    "same-day-flyers": 1,
+    "eco-flyers": 1,
+    "outdoor-posters": 1,
+    "cosmetic-boxes": 2,
+    "mailer-boxes": 1,
+    "folding-boxes": 1,
+    "rigid-boxes": 1,
+    "magnetic-closure-gift-box": 2,
+    "electronics-packaging-box": 1,
+    "kraft-paper-packaging-box": 1,
+    "fruit-food-label-stickers": 1,
+    "graduation-yearbook": 1,
+    "wedding-thank-you-cards": 1
+  },
+  "csvCoveredCount": 10,
+  "rows": [
+    {
+      "line": 78,
+      "sku": "waterproof-stickers",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Waterproof stickers, 10 pcs MOQ from $0.32. PVC waterproof / PP synthetic "
+    },
+    {
+      "line": 81,
+      "sku": "waterproof-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom waterproof stickers built for outdoor use: PVC waterproof stock with UV-re"
+    },
+    {
+      "line": 114,
+      "sku": "transparent-stickers",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Clear stickers, 10 pcs MOQ from $0.41. Transparent PET with optional white"
+    },
+    {
+      "line": 117,
+      "sku": "transparent-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom clear stickers that disappear onto glass, clear boxes and bottles - only y"
+    },
+    {
+      "line": 153,
+      "sku": "removable-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom removable stickers designed for US small business, DTC brands, and cross-b"
+    },
+    {
+      "line": 222,
+      "sku": "die-cut-stickers",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Die-Cut Stickers custom printing, any shape cutting. Free design mockup, 1"
+    },
+    {
+      "line": 225,
+      "sku": "die-cut-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom die-cut stickers designed for US small business, DTC brands, and cross-bor"
+    },
+    {
+      "line": 258,
+      "sku": "foil-stickers",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Foil stickers, 10 pcs MOQ from $0.51. Gold, silver, rose gold and more hot"
+    },
+    {
+      "line": 261,
+      "sku": "foil-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom foil stickers with metallic shine that gets your label noticed on the shel"
+    },
+    {
+      "line": 294,
+      "sku": "security-stickers",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Security stickers, 10 pcs MOQ from $0.41. VOID tamper-evident, destructibl"
+    },
+    {
+      "line": 297,
+      "sku": "security-stickers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom security stickers that protect brands and assets: VOID tamper-evident labe"
+    },
+    {
+      "line": 333,
+      "sku": "kraft-paper-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Quick answer: 100 pcs MOQ, from US$1.84/pc (size, paper weight and handle style),"
+    },
+    {
+      "line": 369,
+      "sku": "white-card-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Quick answer: 100 pcs MOQ, from US$2.76/pc (size and paper weight), free digital "
+    },
+    {
+      "line": 405,
+      "sku": "gift-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom gift bags designed for US small business, DTC brands, and cross-border e-c"
+    },
+    {
+      "line": 441,
+      "sku": "eco-paper-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom eco paper bags for US brands that must show a paper trail: 100-piece minim"
+    },
+    {
+      "line": 477,
+      "sku": "handle-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom handle bags designed for US small business, DTC brands, and cross-border e"
+    },
+    {
+      "line": 510,
+      "sku": "small-bags",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Custom small paper bags for jewelry and cosmetics, 100 MOQ. White card / k"
+    },
+    {
+      "line": 549,
+      "sku": "large-bags",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom large bags designed for US small business, DTC brands, and cross-border e-"
+    },
+    {
+      "line": 585,
+      "sku": "a4-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom a4 flyers designed for US small business, DTC brands, and cross-border e-c"
+    },
+    {
+      "line": 621,
+      "sku": "a5-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom a5 flyers designed for US small business, DTC brands, and cross-border e-c"
+    },
+    {
+      "line": 657,
+      "sku": "double-sided-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom double-sided flyers designed for US small business, DTC brands, and cross-"
+    },
+    {
+      "line": 729,
+      "sku": "thick-paper-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom thick paper flyers designed for US small business, DTC brands, and cross-b"
+    },
+    {
+      "line": 765,
+      "sku": "same-day-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom same-day flyers designed for US small business, DTC brands, and cross-bord"
+    },
+    {
+      "line": 801,
+      "sku": "eco-flyers",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom eco flyers designed for US small business, DTC brands, and cross-border e-"
+    },
+    {
+      "line": 909,
+      "sku": "outdoor-posters",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Outdoor posters fail for one reason: the substrate and ink are chosen for how the"
+    },
+    {
+      "line": 1050,
+      "sku": "cosmetic-boxes",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Cosmetic Boxes, premium rigid paperboard. Free Design, 100 MOQ, Free Shipp"
+    },
+    {
+      "line": 1053,
+      "sku": "cosmetic-boxes",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Quick answer: 100 pcs MOQ, HK$8-65/pc (box style and finishing), free digital pro"
+    },
+    {
+      "line": 1125,
+      "sku": "mailer-boxes",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Quick answer: 100 pcs MOQ, HK$3.5-10/pc (size and flute type), free digital proof"
+    },
+    {
+      "line": 1158,
+      "sku": "folding-boxes",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Custom folding boxes that ship flat and save 70% warehouse space. Auto-loc"
+    },
+    {
+      "line": 1197,
+      "sku": "rigid-boxes",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Quick answer: 100 pcs MOQ, HK$8-42/pc (size, grey-board thickness and finishing),"
+    },
+    {
+      "line": 2418,
+      "sku": "magnetic-closure-gift-box",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Magnetic Closure Gift Box with premium rigid board and magnetic snap shut."
+    },
+    {
+      "line": 2421,
+      "sku": "magnetic-closure-gift-box",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom magnetic closure gift box designed for US small business, DTC brands, and "
+    },
+    {
+      "line": 2457,
+      "sku": "electronics-packaging-box",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom electronics packaging box designed for US small business, DTC brands, and "
+    },
+    {
+      "line": 2493,
+      "sku": "kraft-paper-packaging-box",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"Custom kraft paper packaging box designed for US small business, DTC brands, and "
+    },
+    {
+      "line": 2565,
+      "sku": "fruit-food-label-stickers",
+      "loc": "ja",
+      "field": "other",
+      "snip": "\"body\": \"Custom fruit & food label stickers designed for US small business, DTC brands, an"
+    },
+    {
+      "line": 2634,
+      "sku": "graduation-yearbook",
+      "loc": "en",
+      "field": "description",
+      "snip": "\"description\": \"Graduation Yearbook, hardcover & softcover binding. Free Design, 1 MOQ, Fr"
+    },
+    {
+      "line": 2997,
+      "sku": "wedding-thank-you-cards",
+      "loc": "en",
+      "field": "body",
+      "snip": "\"body\": \"After the celebration, the thank you card is the final impression guests carry ho"
+    }
+  ]
+}

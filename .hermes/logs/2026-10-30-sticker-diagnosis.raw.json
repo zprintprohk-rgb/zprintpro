@@ -1,0 +1,986 @@
+{
+  "queries": [
+    {
+      "q": "燙銀貼紙",
+      "clk": 2.0,
+      "imp": 4.0,
+      "pos": 7.5
+    },
+    {
+      "q": "異形貼紙",
+      "clk": 1.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "貼紙印刷",
+      "clk": 0.0,
+      "imp": 120.0,
+      "pos": 40.88
+    },
+    {
+      "q": "戶外貼紙",
+      "clk": 0.0,
+      "imp": 62.0,
+      "pos": 15.74
+    },
+    {
+      "q": "貼紙設計",
+      "clk": 0.0,
+      "imp": 53.0,
+      "pos": 17.47
+    },
+    {
+      "q": "small batch sticker printing",
+      "clk": 0.0,
+      "imp": 46.0,
+      "pos": 5.5
+    },
+    {
+      "q": "可移貼紙",
+      "clk": 0.0,
+      "imp": 37.0,
+      "pos": 20.14
+    },
+    {
+      "q": "貼紙訂製",
+      "clk": 0.0,
+      "imp": 34.0,
+      "pos": 32.41
+    },
+    {
+      "q": "貼紙",
+      "clk": 0.0,
+      "imp": 33.0,
+      "pos": 55.67
+    },
+    {
+      "q": "透明貼紙",
+      "clk": 0.0,
+      "imp": 28.0,
+      "pos": 22.32
+    },
+    {
+      "q": "印貼紙",
+      "clk": 0.0,
+      "imp": 26.0,
+      "pos": 41.81
+    },
+    {
+      "q": "small batch stickers",
+      "clk": 0.0,
+      "imp": 25.0,
+      "pos": 5.04
+    },
+    {
+      "q": "環保材質貼紙",
+      "clk": 0.0,
+      "imp": 22.0,
+      "pos": 11.64
+    },
+    {
+      "q": "pvc シール",
+      "clk": 0.0,
+      "imp": 20.0,
+      "pos": 18.75
+    },
+    {
+      "q": "sticker roll printing",
+      "clk": 0.0,
+      "imp": 12.0,
+      "pos": 38.83
+    },
+    {
+      "q": "pvc貼紙",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 7.18
+    },
+    {
+      "q": "戶外可移貼紙",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 15.91
+    },
+    {
+      "q": "防水貼紙",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 30.64
+    },
+    {
+      "q": "small batch custom stickers",
+      "clk": 0.0,
+      "imp": 10.0,
+      "pos": 9.7
+    },
+    {
+      "q": "透明貼紙印刷",
+      "clk": 0.0,
+      "imp": 8.0,
+      "pos": 9.0
+    },
+    {
+      "q": "custom fluorescent stickers",
+      "clk": 0.0,
+      "imp": 8.0,
+      "pos": 22.12
+    },
+    {
+      "q": "sticker rolls",
+      "clk": 0.0,
+      "imp": 8.0,
+      "pos": 35.25
+    },
+    {
+      "q": "防水貼紙印刷",
+      "clk": 0.0,
+      "imp": 7.0,
+      "pos": 10.71
+    },
+    {
+      "q": "batch stickers",
+      "clk": 0.0,
+      "imp": 6.0,
+      "pos": 2.17
+    },
+    {
+      "q": "anti-counterfeit sticker manufacturer",
+      "clk": 0.0,
+      "imp": 6.0,
+      "pos": 71.5
+    },
+    {
+      "q": "燙金貼紙",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 5.2
+    },
+    {
+      "q": "シール pvcとは",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 9.6
+    },
+    {
+      "q": "clear stickers",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 10.4
+    },
+    {
+      "q": "sticker transparent",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 13.2
+    },
+    {
+      "q": "印 貼紙 少量 香港",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 17.0
+    },
+    {
+      "q": "pvcシールとは",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 20.6
+    },
+    {
+      "q": "pvc ステッカー",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 22.6
+    },
+    {
+      "q": "die cut stickers",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 52.0
+    },
+    {
+      "q": "香港 貼紙 印刷",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 24.5
+    },
+    {
+      "q": "車身廣告貼紙",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 40.25
+    },
+    {
+      "q": "removable sticker",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 53.75
+    },
+    {
+      "q": "車身貼紙價錢",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 54.5
+    },
+    {
+      "q": "what are the best places to print custom vinyl stickers in small batches?",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 1.0
+    },
+    {
+      "q": "不殘膠貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 3.0
+    },
+    {
+      "q": "透明pvc貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 3.0
+    },
+    {
+      "q": "pvc 貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 4.67
+    },
+    {
+      "q": "型抜きステッカー",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 5.67
+    },
+    {
+      "q": "waterproof outdoor stickers",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 8.0
+    },
+    {
+      "q": "removable stickers",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 14.33
+    },
+    {
+      "q": "香港貼紙印刷",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 15.0
+    },
+    {
+      "q": "印貼紙少量香港",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 17.0
+    },
+    {
+      "q": "transparent stickers",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 18.0
+    },
+    {
+      "q": "即日印貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 18.67
+    },
+    {
+      "q": "蛍光 ステッカー",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 22.67
+    },
+    {
+      "q": "security sticker printing",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 30.67
+    },
+    {
+      "q": "環保貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 31.33
+    },
+    {
+      "q": "防水 貼紙",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 50.0
+    },
+    {
+      "q": "シール 型 抜き",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 51.67
+    },
+    {
+      "q": "sticker printing",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 57.0
+    },
+    {
+      "q": "roll sticker paper",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 64.0
+    },
+    {
+      "q": "pvc贴纸",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 3.0
+    },
+    {
+      "q": "模切貼紙",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 4.5
+    },
+    {
+      "q": "客制化貼紙",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 6.5
+    },
+    {
+      "q": "custom removable stickers",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 7.5
+    },
+    {
+      "q": "防水貼紙專賣店",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 13.0
+    },
+    {
+      "q": "pvcステッカー",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 14.0
+    },
+    {
+      "q": "transparent stickers online",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 16.0
+    },
+    {
+      "q": "pvc sticker waterproof",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 20.0
+    },
+    {
+      "q": "stickers that leave no residue",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 20.5
+    },
+    {
+      "q": "蛍光ステッカー",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 23.5
+    },
+    {
+      "q": "透明 貼紙",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 26.0
+    },
+    {
+      "q": "箔押し ステッカー",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 34.5
+    },
+    {
+      "q": "型 抜き ステッカー",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 47.0
+    },
+    {
+      "q": "貼紙製作",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 51.5
+    },
+    {
+      "q": "die cut sticker",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 53.5
+    },
+    {
+      "q": "security stickers for retail",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 56.0
+    },
+    {
+      "q": "label sticker",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 72.0
+    },
+    {
+      "q": "custom die cut letter stickers",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 83.0
+    },
+    {
+      "q": "are pvc stickers waterproof",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "batch sticker",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "golden sticker",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "sticker pvc waterproof",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "ステッカー印刷 安い",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 1.0
+    },
+    {
+      "q": "pvc 防水 貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 3.0
+    },
+    {
+      "q": "stickers fluorescent",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 3.0
+    },
+    {
+      "q": "clear transparent stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 5.0
+    },
+    {
+      "q": "evaluate the printing services company moo on custom stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 5.0
+    },
+    {
+      "q": "weather-resistant stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 5.0
+    },
+    {
+      "q": "防偽貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 6.0
+    },
+    {
+      "q": "print transparent stickers wholesale",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "q": "印刷貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "q": "貼紙 設計",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "q": "防水pvc貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "q": "防水貼紙材質",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "q": "outdoor stickers for plastic",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 9.0
+    },
+    {
+      "q": "vinyl sticker 中文",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 9.0
+    },
+    {
+      "q": "燙金 貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 9.0
+    },
+    {
+      "q": "custom stickers small batch",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 10.0
+    },
+    {
+      "q": "is pvc sticker waterproof",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 10.0
+    },
+    {
+      "q": "合成紙貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 10.0
+    },
+    {
+      "q": "貼紙印刷 急件",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 10.0
+    },
+    {
+      "q": "clear background stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 11.0
+    },
+    {
+      "q": "copper foil stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 11.0
+    },
+    {
+      "q": "removable custom stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 11.0
+    },
+    {
+      "q": "verwijderbare stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 11.0
+    },
+    {
+      "q": "快速印貼紙",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 11.0
+    },
+    {
+      "q": "all weather stickers",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 12.0
+    },
+    {
+      "q": "what is the best website to buy die‑cut custom stickers in small batches?",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 12.0
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://zprintpro.com/zh-hk/product/foil-stickers/",
+      "clk": 7.0,
+      "imp": 82.0,
+      "pos": 8.59
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+      "clk": 5.0,
+      "imp": 217.0,
+      "pos": 12.94
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+      "clk": 4.0,
+      "imp": 216.0,
+      "pos": 14.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+      "clk": 4.0,
+      "imp": 65.0,
+      "pos": 28.57
+    },
+    {
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "clk": 4.0,
+      "imp": 59.0,
+      "pos": 10.51
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/fruit-food-label-stickers/",
+      "clk": 4.0,
+      "imp": 23.0,
+      "pos": 57.09
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/die-cut-stickers/",
+      "clk": 3.0,
+      "imp": 32.0,
+      "pos": 6.47
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/fluorescent-stickers/",
+      "clk": 3.0,
+      "imp": 27.0,
+      "pos": 12.63
+    },
+    {
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "clk": 2.0,
+      "imp": 257.0,
+      "pos": 8.99
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+      "clk": 2.0,
+      "imp": 106.0,
+      "pos": 51.06
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/removable-stickers/",
+      "clk": 2.0,
+      "imp": 93.0,
+      "pos": 11.39
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/waterproof-stickers/",
+      "clk": 2.0,
+      "imp": 79.0,
+      "pos": 18.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-materials/",
+      "clk": 2.0,
+      "imp": 38.0,
+      "pos": 10.29
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/stickers/",
+      "clk": 1.0,
+      "imp": 194.0,
+      "pos": 40.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-design/",
+      "clk": 1.0,
+      "imp": 65.0,
+      "pos": 15.38
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/clear-vs-matte-stickers/",
+      "clk": 1.0,
+      "imp": 51.0,
+      "pos": 7.94
+    },
+    {
+      "url": "https://zprintpro.com/en/product/waterproof-stickers/",
+      "clk": 1.0,
+      "imp": 39.0,
+      "pos": 11.33
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/security-stickers/",
+      "clk": 1.0,
+      "imp": 12.0,
+      "pos": 7.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+      "clk": 0.0,
+      "imp": 124.0,
+      "pos": 39.53
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/sticker-materials/",
+      "clk": 0.0,
+      "imp": 68.0,
+      "pos": 9.91
+    },
+    {
+      "url": "https://zprintpro.com/en/product/roll-stickers/",
+      "clk": 0.0,
+      "imp": 59.0,
+      "pos": 39.42
+    },
+    {
+      "url": "https://zprintpro.com/en/product/removable-stickers/",
+      "clk": 0.0,
+      "imp": 49.0,
+      "pos": 22.78
+    },
+    {
+      "url": "https://zprintpro.com/en/product/die-cut-stickers/",
+      "clk": 0.0,
+      "imp": 48.0,
+      "pos": 27.29
+    },
+    {
+      "url": "https://zprintpro.com/en/product/transparent-stickers/",
+      "clk": 0.0,
+      "imp": 45.0,
+      "pos": 10.18
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "clk": 0.0,
+      "imp": 43.0,
+      "pos": 26.23
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0.0,
+      "imp": 39.0,
+      "pos": 7.49
+    },
+    {
+      "url": "https://zprintpro.com/en/product/security-stickers/",
+      "clk": 0.0,
+      "imp": 35.0,
+      "pos": 32.51
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/roll-stickers/",
+      "clk": 0.0,
+      "imp": 33.0,
+      "pos": 38.18
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-materials/",
+      "clk": 0.0,
+      "imp": 32.0,
+      "pos": 5.62
+    },
+    {
+      "url": "https://zprintpro.com/en/product/fluorescent-stickers/",
+      "clk": 0.0,
+      "imp": 29.0,
+      "pos": 16.1
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-design/",
+      "clk": 0.0,
+      "imp": 22.0,
+      "pos": 7.14
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/die-cut-stickers/",
+      "clk": 0.0,
+      "imp": 22.0,
+      "pos": 16.59
+    },
+    {
+      "url": "https://zprintpro.com/en/product/fruit-food-label-stickers/",
+      "clk": 0.0,
+      "imp": 22.0,
+      "pos": 26.32
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 21.0,
+      "pos": 8.0
+    },
+    {
+      "url": "https://zprintpro.com/en/product/foil-stickers/",
+      "clk": 0.0,
+      "imp": 18.0,
+      "pos": 8.11
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/pet-food-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 18.0,
+      "pos": 26.67
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/foil-stickers/",
+      "clk": 0.0,
+      "imp": 17.0,
+      "pos": 8.53
+    },
+    {
+      "url": "https://zprintpro.com/ja/category/stickers/",
+      "clk": 0.0,
+      "imp": 12.0,
+      "pos": 22.58
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/fluorescent-stickers/",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 4.55
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/clear-vs-matte-stickers/",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 5.27
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/roll-stickers/",
+      "clk": 0.0,
+      "imp": 11.0,
+      "pos": 14.36
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 9.0,
+      "pos": 6.56
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/product-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 7.0,
+      "pos": 5.29
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0.0,
+      "imp": 7.0,
+      "pos": 9.43
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 7.0,
+      "pos": 17.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/candle-soap-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 6.0,
+      "pos": 4.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/ip-character-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 7.2
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/security-stickers/",
+      "clk": 0.0,
+      "imp": 5.0,
+      "pos": 13.0
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/candle-soap-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 3.75
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/car-dealership-amenity-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 7.5
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/",
+      "clk": 0.0,
+      "imp": 4.0,
+      "pos": 9.25
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/product-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 3.0,
+      "pos": 1.67
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/ip-character-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/pharmaceutical-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 6.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/removable-stickers/",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/product-label-printing-guide/",
+      "clk": 0.0,
+      "imp": 2.0,
+      "pos": 13.5
+    },
+    {
+      "url": "https://zprintpro.com/en/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/ja/blog/hotel-amenity-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 7.0
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/baby-product-label-sticker-printing-guide/",
+      "clk": 0.0,
+      "imp": 1.0,
+      "pos": 16.0
+    }
+  ],
+  "structure": {
+    "category": 3,
+    "product": 28,
+    "blog": 28,
+    "cat_imp": 265.0,
+    "prod_imp": 1591.0,
+    "blog_imp": 660.0
+  }
+}

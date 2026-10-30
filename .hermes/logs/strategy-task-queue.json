@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T14:37:00Z",
+  "generated_at": "2026-10-30T23:42:00+08:00 (SKU-SEO US 运输承诺收口 DONE)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -624,7 +624,7 @@
     },
     {
       "task_id": "FIX-20261030-SKU-SEO-US-SHIPPING-LEGACY",
-      "status": "READY",
+      "status": "DONE",
       "score": 70,
       "market": "en",
       "source_strategy": "2026-10-30 K3 全站模板(1)",
@@ -634,9 +634,37 @@
         "src/data/sku-seo-data.ts (仅生成器输出)"
       ],
       "next_check": "2026-10-31",
-      "result": {
-        "note": "SKU-BODY 任务 DONE 时未覆盖本面; 2026-10-30 22:37 登记"
-      }
+      "result": "EXECUTED 3046c03a: sku-seo-data.ts US 运输/打稿承诺 169 处 -> 0。SOP-5 回源 CSV 24 行(SEO描述/H1/等列, en 为主) + 生成器 --apply(断言 A-E PASS) + ts-only body 34 行手改 + small-bags(CSV 无此行, ts-only) 直接改 TS。残留复核 8 类全 0: Free Shipping on US orders over $99 / Free US shipping $99 / 4-day delivery / 4-day USA / Rush 2-day / $9.95 flat / 24-hour proof / 1-hour digital proof。门禁: 生成器 PASS / encoding / brand A=0 / gsc-leak / title-v5 HARD=0 / tsc 54=54。",
+      "execution_commit": "3046c03a",
+      "completed_at": "2026-10-30T23:42:00+08:00",
+      "completed_by": "manual/deepseek-flash 2026-10-30 23:4x"
+    },
+    {
+      "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase §10 P1 + §9.3 非目标；车道 GSC-20261030-O4 frozen cluster(11-04)",
+      "market": "en,ja",
+      "target": "src/lib/seo.ts stickers 分类页 titles[en], titles[ja]（当前当量 100 / 83，超 57 上限）",
+      "evidence": "本次诊断实测: en `Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro` = 当量 100; ja `シール印刷 10枚〜・オリジナルステッカー 防水/透明/ダイカット・2-4日発送 | ZprintPro` = 当量 83; zh 56 合规不动。两稿还内嵌 Free Proof / Free US Shipping / 2-4日発送 三处未确认承诺。备稿已核当量: en `Small Batch Sticker Printing from $0.05/pc | ZprintPro`(54) / ja `シール印刷 10枚〜 防水・透明・ダイカット対応 | ZprintPro`(56)。诊断全文 .hermes/logs/2026-10-30-sticker-cluster-diagnosis.md",
+      "score": 0.75,
+      "write_scope": "仅 seo.ts stickers titles[en]/titles[ja] 两个字符串; 不碰 zh 标题、不碰正文、不碰其他簇",
+      "approval_gate": "SCHEDULED 2026-11-04 冻结解除后执行; 属规则合规修正(58 阻断线)+去未确认承诺, 非追排名变化; 执行后必跑门童 #27 + 三语 JSON + gsc-leak",
+      "owner_lane": "manual",
+      "status": "SCHEDULED",
+      "scheduled_for": "2026-11-04",
+      "created_at": "2026-10-30T23:2:00+08:00"
+    },
+    {
+      "task_id": "DIAG-20261030-STICKER-CLUSTER",
+      "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase §10 P1「貼紙印刷倒退诊断（执行层）」",
+      "market": "zh-hk,en,ja",
+      "target": "贴纸簇: 貼紙印刷 40.88 / 分类页 40.73 / en 分类页 10.51",
+      "evidence": "诊断完成: ① 站内结构三语 parity(h2 13/13/13、内链 134/133/134、schema 全同) ⇒ 排除内容/结构不足 ② 真因=主词绑定弱分类页(33.2 加权) + en/ja title 当量 100/83 超限 + 8 个位置 5-20 的词 0 点击(摘要/意图) ③ en 10.51 vs zh 40.73 结构相同 ⇒ 市场竞争力差异。报告 .hermes/logs/2026-10-30-sticker-cluster-diagnosis.md",
+      "score": 0.8,
+      "write_scope": "诊断层无写入; 修复动作已拆到 FIX-20261104-STICKER-CATEGORY-TITLE-EQ(SCHEDULED) 与摘要审查",
+      "approval_gate": "无需 K3 (诊断); 修复按 11-04 窗口",
+      "owner_lane": "manual",
+      "status": "DONE",
+      "created_at": "2026-10-30T23:2:00+08:00"
     }
   ],
   "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
