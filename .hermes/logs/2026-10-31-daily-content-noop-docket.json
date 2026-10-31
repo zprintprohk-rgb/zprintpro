@@ -1,0 +1,181 @@
+{
+  "schema": "daily-content-docket/v1",
+  "generated_at": "2026-10-31T21:17:02+08:00",
+  "lane": "ZP-daily-content",
+  "run_mode": "NO_OP_GATE_DRIVEN",
+  "idempotency_key": "8c2e2ecd65c22043",
+  "reason": "B1c 队列 38/38 DONE; strategy-task-queue 中本车道 READY=0; 其余 READY/SCHEDULED/WAITING_K3 均非本车道所有权或未到期",
+  "eligibility_audit": {
+    "b1c_queue": {
+      "records": 38,
+      "done": 38,
+      "open": 0,
+      "verdict": "EXHAUSTED",
+      "source": ".hermes/logs/b1c-queue-progress.json"
+    },
+    "strategy_queue": {
+      "tasks": 31,
+      "done": 15,
+      "closed_by_k3_s037": 1,
+      "scheduled": 4,
+      "blocked_infra": 4,
+      "ready": 2,
+      "waiting_k3": 5,
+      "daily_owned_total": 8,
+      "daily_owned_ready": 0,
+      "source": ".hermes/logs/strategy-task-queue.json"
+    }
+  },
+  "not_consumed": [
+    {
+      "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+      "status": "READY",
+      "owner_lane": "ZP-k3-review",
+      "why_not": "跨车道所有权; 本车道无该车道写权限, 消费即抢活"
+    },
+    {
+      "task_id": "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS",
+      "status": "READY",
+      "owner_lane": "manual-executor",
+      "why_not": "owner=manual-executor; 交付物为新建内容资产块 (src/data + src/app), 属新结构而非小改; 本沙箱无 node/tsc/build 验收能力, 无法在当轮完成 4 件审查"
+    }
+  ],
+  "blocked_daily_targets": [
+    {
+      "task_id": "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+      "status": "WAITING_K3",
+      "note": "zh 贴纸类目 50張起訂/打樣當日/即日交貨 3 处; K3 未批 scope"
+    },
+    {
+      "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+      "status": "WAITING_K3",
+      "note": "贴纸三层价格 3-14x 差; 需 K3 价格口径"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
+      "status": "WAITING_K3",
+      "note": "海报簇 blog 旧假价 HK$9 与裁决 #1 (A2 16 / A1 20) 冲突; 改 title/content 需 K3 选项"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
+      "status": "WAITING_K3",
+      "note": "blog-data 三语 19 词组/528 次 A/B/C 分组待 K3 一句话"
+    },
+    {
+      "task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
+      "status": "WAITING_K3",
+      "note": "13 处冲突已执行 2 处 (b4b0c0f2), 余 11 处待 K3 排批"
+    },
+    {
+      "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
+      "status": "SCHEDULED",
+      "note": "冻结窗 2026-11-04 才可动 seo.ts stickers titles[en]/[ja]"
+    }
+  ],
+  "next_action_2026_11_01": {
+    "id": "D1-NENGAJO-EARLYBIRD-EXPIRY",
+    "window_reason": "早割口径原文为「10月末まで」; 2026-10-31 当日仍成立, 2026-11-01 起失效。本轮不改是日期边界, 不是时间/工期拖延。",
+    "replacement_policy": "删除具体月份/截止承诺, 统一改「早割の適用条件・期限は見積りで確認」; 不新增折扣率、不新增日期、不承诺交期。",
+    "sites": [
+      {
+        "file": "src/data/blog-posts.ts",
+        "line": 2238,
+        "field": "title.ja",
+        "old": "年賀状印刷 2027：1枚¥20〜 箔押し 早割10月末 | ZprintPro",
+        "proposed": "年賀状印刷 2027：1枚¥20〜 箔押し 10枚から | ZprintPro",
+        "requires_title_signoff": true
+      },
+      {
+        "file": "src/data/blog-posts.ts",
+        "line": 2243,
+        "field": "description.ja",
+        "old": "早割は10月末までが目安。",
+        "proposed": "早割の適用条件・期限は見積りで確認。"
+      },
+      {
+        "file": "src/data/blog-posts.ts",
+        "line": 2215,
+        "field": "description.ja (christmas-card post)",
+        "old": "年賀状まとめ発注で早割 10/31 まで。",
+        "proposed": "年賀状まとめ発注の早割適用は見積りで確認。"
+      },
+      {
+        "file": "src/data/blog-data/ja.json",
+        "line": 833,
+        "field": "description",
+        "old": "早割は10月末までが目安。",
+        "proposed": "早割の適用条件・期限は見積りで確認。"
+      },
+      {
+        "file": "src/data/blog-data/ja.json",
+        "line": 836,
+        "field": "content (3 变体/3 处)",
+        "old": "早割は10月末までが目安（2026-10-31時点の口径、2026-11-01に再確認）",
+        "proposed": "早割の適用条件・期限は見積りで確認（2026-11-01 更新）",
+        "occurrences_expected": 3,
+        "variant_note": "实际有 3 种措辞: 「早割は10月末までが目安（…）」「早割の目安は10月末です（…）」「早割は10月末までが目安です（…）」; 需分别匹配, 不可一次性全局替换"
+      },
+      {
+        "file": "src/data/category-seo-content.ts",
+        "line": 4476,
+        "field": "buyingGuide.paragraphs[1]",
+        "old": "年賀状の早割は10月末までが目安で、11月以降は印刷が混み合い納期が伸びます。",
+        "proposed": "早割の適用条件・期限は見積りで確認してください。11月以降は印刷が混み合い納期が伸びます。"
+      },
+      {
+        "file": "src/data/category-seo-content.ts",
+        "line": 4477,
+        "field": "buyingGuide.paragraphs[2]",
+        "old": "10月末までのご注文で早割対象(早割期限 2026-10-31、年度末 2027-10 に再確認)。",
+        "proposed": "早割の適用条件・期限は見積りで確認（2026-11-01 更新）。"
+      },
+      {
+        "file": "src/data/category-seo-content.ts",
+        "line": 4489,
+        "field": "FAQ",
+        "old": "2027年賀状は10月中のご注文で早割対象。",
+        "proposed": "2027年賀状の早割適用条件・期限は見積りで確認。"
+      },
+      {
+        "file": "src/app/[locale]/nengajo-2027/page.tsx",
+        "line": 172,
+        "field": "ebBody / ebSlot (L173) / FAQ (L197)",
+        "old": "既存口径、2026-11-01 に再確認",
+        "proposed": "2026-11-01 更新: 適用条件・期限は見積りで確認",
+        "occurrences_expected": 3
+      }
+    ],
+    "gates_next_run": [
+      "node scripts/guards/title-v5-guard.js (仅当改 blog title)",
+      "node scripts/guards/i18n-guard.js",
+      "node scripts/guards/gsc-leak-guard.js",
+      "node scripts/check-brand-mentions.mjs --strict",
+      "node scripts/guards/blog-quality-12-rules-guard.js --baseline --online",
+      "curl 线上 /ja/blog/new-year-card-printing-2027-guide/ 与 /ja/category/greeting-cards/ 复核早割词归零"
+    ],
+    "stop_if": "若 K3 在 11-01 前给出新的早割口径/折扣率, 以 K3 口径替换本默认方案"
+  },
+  "residual_truth_families": [
+    {
+      "id": "D2-DHL-2-4DAY",
+      "pattern": "2[-〜~–]4\\s*(日|days|営業日)",
+      "scope": "src/ (ts + blog-data json)",
+      "lexical_matches": 651,
+      "caveat": "词族计数, 含合法比较语境/keywords/alt 字段; 非全部为承诺, 编辑前须逐条判真",
+      "source_domain_split": {
+        "csv_derived": ["zprintpro-sku-seo-data.csv", "src/data/sku-seo-data.ts (生成器产物)"],
+        "ts_owned": ["src/data/products-content.ts", "src/data/category-seo-content.ts", "src/data/category-conversion-blocks.ts", "src/data/product-faqs.ts", "src/data/blog-posts.ts", "src/data/buying-guides.ts", "src/data/pillar-content.ts", "src/data/blog-data/*.json", "src/app/[locale]/layout.tsx"]
+      },
+      "gate": "CSV 域必须回源 CSV + node scripts/csv-to-sku-seo.mjs --apply (SOP-5); 本沙箱无 node, 本轮不得手改派生 ts",
+      "recommended_batch": "先做 ts 域单文件单簇 (nengajo/greeting-cards), CSV 域交 node 会话一次重生成"
+    }
+  ],
+  "evidence": [
+    ".hermes/logs/run-context-ZP-daily-content.json (2026-10-31 21:17:02, preflight ok, retry_queue [])",
+    ".hermes/logs/lane-status.json (2026-10-30T11:43:19Z, 昨日快照)",
+    ".hermes/logs/2026-10-31-ZP-gsc-feedback.md (20:19, A21 口径回退, O4/O6, NO_FRESH_EXPORT)",
+    ".hermes/logs/gsc-cliff-2026-10-31.json (24h 888/15, dynamic 1.177, data_age_days 4)",
+    ".hermes/logs/2026-10-31-ZP-daily-content.md (18:17 轮, 87a5467c, 281->0)",
+    ".git/logs/HEAD (HEAD da9a96f1 20:19; 最后 src 提交 87a5467c 18:19)"
+  ]
+}
