@@ -151,9 +151,10 @@ ja   : items=83 mpnTags=0 identifier_exists_false=83 brand=ジープリント id
 **P1 观察窗（48h，K3 点击驱动）**：GMC 复审结果 → 79 商品恢复；GSC brand 计数归零。判定标准：GMC 状态从「未获批准」转「已批准/需要处理」，GSC 受影响项 51 → 0。
 
 **P2 本周（我方执行，不需 K3）**：
-1. **feed 价格语义预检**：feed `g:price` 是单价（HK$8.00），PDP 展示为 MOQ 总价（HK$800 / 100 個）。Google 比对落地页价格时可能触发「价格不匹配」，建议核对是否需改用 MOQ 总价或加 `unit_pricing_measure`。
-2. **`functions/` 死代码清理**：4 个文件已无运行时意义，建议删除并加一行 README 说明"OpenNext 构建不含此目录"，防后人再往里加接口。
-3. **订单可查性**：当前确认页靠 localStorage 快照（换设备/清缓存即看不到）。可加 service-role 代理接口按 orderId 读取（UUID 不可枚举），让确认页真正自洽。
+1. **~~feed 价格语义预检~~（已部分完成）**：feed 同时输出 `g:price` 与 `g:sale_price`，线上实测 **83/83 项两者完全相等** —— Google 规范要求 `sale_price` 必须**低于** `price`，相等值会被忽略并可能触发价格类提示。已在 commit `ea9ffb73` 移除 `g:sale_price`（本无折扣数据源，不输出）。**剩余待核**：`g:price` 为单价（PK-002 = HK$8.00），PDP 展示 MOQ 总价（HK$800 / 100 個），需确认 Google 价格比对口径是否需改用 MOQ 总价或补 `unit_pricing_measure`。
+2. **BC-001 定价存疑（不擅改，请 K3 定）**：`premium-greeting-cards` 三币种自洽（HK$1.00 / US$0.13 / ¥20，min Qty 10），确为 `products.ts` 真值；但「premium」定位下 HK$1/張 偏低，若为历史占位值需 K3 裁决后回源修改（禁手改派生文件）。
+3. **`functions/` 死代码清理**：4 个文件已无运行时意义，建议删除并加一行 README 说明"OpenNext 构建不含此目录"，防后人再往里加接口。
+4. **订单可查性**：当前确认页靠 localStorage 快照（换设备/清缓存即看不到）。可加 service-role 代理接口按 orderId 读取（UUID 不可枚举），让确认页真正自洽。
 
 **P3 后续（有数据再做）**：真实评价 ≥3 条后启用 `aggregateRating`（现为 0 条，红线=零编造）；Customer Reviews opt-in 维持不集成（K3 已拍板）。
 
@@ -165,5 +166,6 @@ ja   : items=83 mpnTags=0 identifier_exists_false=83 brand=ジープリント id
 |---|---|---|
 | `98da6841` | feed 移除 `g:mpn`（brand 重复 51 根因） | ✅ 已推送并线上验证 |
 | `1bb7a2a7` | 新建 `/api/create-payment-session` + 结算/确认页打通（购买交易根因） | ⏳ 后台链待 30min 窗口自动推送 + 验证 |
+| `ea9ffb73` | feed 移除 `g:sale_price`（无折扣时不应输出，83/83 相等） | ⏳ 同批发车 |
 
 **数据来源与校准**：见文首；所有计数（83/51/17×3/54）均以线上探针 + 仓内源双向核对，探针误命中已剔除（§3）。
