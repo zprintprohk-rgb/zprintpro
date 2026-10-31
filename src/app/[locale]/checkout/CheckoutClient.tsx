@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { useCart } from '@/lib/cart-context';
 import { Locale } from '@/lib/seo';
 import { Package, ArrowRight, Mail, Phone, MapPin, User, FileText, ShoppingBag, Building2, Smartphone, MessageCircle, Wallet } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { BankTransferInfo, type WireTransferInfo } from '@/components/payment/BankTransferInfo';
 import { createPaymentSession, type CreatePaymentSessionResponse } from '@/lib/airwallex';
 
@@ -164,6 +164,9 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
   const { items, totalPrice, clearCart } = useCart();
   const localePrefix = `/${locale}`;
 
+  // 2026-11-01: 提交成功标记 — 下单后清空购物车会触发空车守卫, 见下方 useEffect 注释
+  const submittedRef = useRef(false);
+
   const [form, setForm] = useState({
     name: '',
     phone: '',
@@ -199,7 +202,11 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
     } catch {
       // ignore
     }
-    if (items.length === 0) {
+    // 2026-11-01 GMC「用户无法完成购买交易」修复 2/N:
+    //   下单成功后 clearCart() 会让 items 变空, 触发下面的空车守卫把客户弹回 /cart/,
+    //   订单确认页与银行收款账户永远看不到 (线上实测: 提交后落在 /cart/ 显示"購物車是空的")。
+    //   submittedRef 让守卫在"刚提交成功、正在跳确认页"时让路。
+    if (items.length === 0 && !submittedRef.current) {
       router.push(`${localePrefix}/cart/`);
     }
   }, [items.length, router, localePrefix]);
@@ -217,7 +224,22 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
     );
   }
 
-  if (items.length === 0) {
+  if (items.length === 0 && submittedRef.current) {
+    // 2026-11-01: 已提交成功、正跳确认页 — 不渲染空车 UI（否则闪一下“購物車是空的”）
+    return (
+      <main className="min-h-screen bg-gray-50 py-16">
+        <div className="max-w-[1320px] mx-auto px-4 text-center">
+          <div className="bg-white rounded-xl border border-gray-100 p-12 max-w-md mx-auto">
+            <p className="text-gray-700 font-medium">
+              {locale === 'zh-hk' ? '正在生成訂單…' : locale === 'ja' ? '注文を作成しています…' : 'Creating your order…'}
+            </p>
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  if (items.length === 0 && !submittedRef.current) {
     return (
       <main className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-[1320px] mx-auto px-4 text-center">
@@ -340,6 +362,8 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
 
       // 2026-06-25 Phase 0: 全部走 OrderConfirmation 页,无中间 step
       // bank_transfer 显示 DBS 账户,wechat_qr / alipay_qr 显示对应 QR 码
+      // 2026-11-01: 先立标记再清空购物车, 否则空车守卫会在跳转前把客户弹回 /cart/
+      submittedRef.current = true;
       clearCart();
       router.push(`${localePrefix}/order-confirmation/?order=${session.orderId}`);
     } catch (err) {
