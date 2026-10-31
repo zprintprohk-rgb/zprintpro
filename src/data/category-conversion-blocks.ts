@@ -841,7 +841,7 @@ categoryConversionBlocks['flyers:zh-hk'] = {
       "label": "香港累計訂單，餐飲零售樓上舖都用"
     },
     {
-      "stat": "100張起",
+      "stat": "10張起",
       "label": "小批量都印，新店試水無壓力"
     },
     {
