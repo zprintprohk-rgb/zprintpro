@@ -218,7 +218,8 @@ def main():
     parser.add_argument("--days", type=int, default=90, help="窗口天数 (默认 90, GSC 默认最大窗口)")
     parser.add_argument("--dry-run", action="store_true", help="只打印, 不写 CSV")
     parser.add_argument("--out", type=Path, default=DEFAULT_CSV, help="输出路径 (默认 ./gsc_data.csv)")
-    parser.add_argument("--dimensions", default="query", help="维度, 逗号分隔 (默认 query; 例: query,country / page)")
+    parser.add_argument("--dimensions", default="query", help="维度, 逗号分隔 (默认 query; 例: query,country / page / query,page,country)")
+    parser.add_argument("--end", help="窗口结束日 YYYY-MM-DD (默认 yesterday); 用于与已冻结 GSC 导出基线对齐窗口")
     parser.add_argument("--site-url", help="override GSC_SITE_URL env")
     parser.add_argument("--also-fetch-sitemaps", action="store_true", help="额外列 sitemap")
     args = parser.parse_args()
@@ -247,7 +248,19 @@ def main():
     print()
 
     # 3. 拉数据
-    end = date.today() - timedelta(days=1)  # GSC API 通常 yesterday 是最新完整数据
+    # 2026-10-31: 新增 --end。默认 yesterday（GSC API 通常 yesterday 才完整），
+    # 但战略基线（如 09-30..10-27 冻结导出）需要显式对齐窗口，否则 query×page 份额无法与基线比较。
+    if args.end:
+        try:
+            end = date.fromisoformat(args.end)
+        except ValueError:
+            print(f"❌ --end 需 YYYY-MM-DD 格式, 收到: {args.end}", file=sys.stderr)
+            return 2
+        if end > date.today():
+            print(f"❌ --end 不能晚于今天 ({end.isoformat()})", file=sys.stderr)
+            return 2
+    else:
+        end = date.today() - timedelta(days=1)  # GSC API 通常 yesterday 是最新完整数据
     start = end - timedelta(days=args.days - 1)
     print(f"Fetching GSC search analytics: {start} ~ {end} ({args.days} days)")
     print()

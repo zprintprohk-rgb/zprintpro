@@ -1,0 +1,754 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-31T15:14:08.597Z",
+  "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+  "window": "2026-09-30..2026-10-27",
+  "dimension": "query×page",
+  "coverage": {
+    "note": "GSC query 维度会省略低频匿名查询, 故 query×page 合计必然小于 site 合计; 本基线只用于同维度份额比较, 不可与 xlsx 全站总量相加或混算",
+    "rows": 1870,
+    "clicks": 72,
+    "imps": 11050
+  },
+  "results": [
+    {
+      "locale": "zh-hk",
+      "cluster": "flyers",
+      "query": "宣傳單張",
+      "found": true,
+      "total": {
+        "imps": 123,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 30.46
+      },
+      "pages": 2,
+      "top_page": "https://zprintpro.com/zh-hk/category/flyers/",
+      "top_share": 87,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/flyers/",
+          "imps": 107,
+          "clicks": 0,
+          "pos": 32.95,
+          "share": 87
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+          "imps": 16,
+          "clicks": 0,
+          "pos": 13.81,
+          "share": 13
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "flyers",
+      "query": "宣傳單張印刷",
+      "found": true,
+      "total": {
+        "imps": 128,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 34.62
+      },
+      "pages": 4,
+      "top_page": "https://zprintpro.com/zh-hk/category/flyers/",
+      "top_share": 77.3,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/flyers/",
+          "imps": 99,
+          "clicks": 0,
+          "pos": 28.73,
+          "share": 77.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+          "imps": 20,
+          "clicks": 0,
+          "pos": 57.85,
+          "share": 15.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+          "imps": 5,
+          "clicks": 0,
+          "pos": 38,
+          "share": 3.9
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a5-flyers/",
+          "imps": 4,
+          "clicks": 0,
+          "pos": 60,
+          "share": 3.1
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "stickers",
+      "query": "貼紙印刷",
+      "found": true,
+      "total": {
+        "imps": 245,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 53.42
+      },
+      "pages": 10,
+      "top_page": "https://zprintpro.com/zh-hk/category/stickers/",
+      "top_share": 33.9,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "imps": 83,
+          "clicks": 0,
+          "pos": 39.41,
+          "share": 33.9
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "imps": 66,
+          "clicks": 0,
+          "pos": 55.64,
+          "share": 26.9
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+          "imps": 62,
+          "clicks": 0,
+          "pos": 71.21,
+          "share": 25.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "imps": 15,
+          "clicks": 0,
+          "pos": 50.07,
+          "share": 6.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+          "imps": 10,
+          "clicks": 0,
+          "pos": 61.4,
+          "share": 4.1
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "stickers",
+      "query": "貼紙訂製",
+      "found": true,
+      "total": {
+        "imps": 52,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 33.86
+      },
+      "pages": 6,
+      "top_page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+      "top_share": 30.8,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+          "imps": 16,
+          "clicks": 0,
+          "pos": 25.5,
+          "share": 30.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/sticker-buying-guide/",
+          "imps": 15,
+          "clicks": 0,
+          "pos": 43.6,
+          "share": 28.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/stickers/",
+          "imps": 13,
+          "clicks": 0,
+          "pos": 36.46,
+          "share": 25
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/small-batch-stickers/",
+          "imps": 6,
+          "clicks": 0,
+          "pos": 31.83,
+          "share": 11.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/removable-stickers/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 11,
+          "share": 1.9
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "books",
+      "query": "書刊印刷",
+      "found": true,
+      "total": {
+        "imps": 202,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 44.36
+      },
+      "pages": 4,
+      "top_page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "top_share": 45.5,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "imps": 92,
+          "clicks": 0,
+          "pos": 30.41,
+          "share": 45.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "imps": 90,
+          "clicks": 0,
+          "pos": 55.08,
+          "share": 44.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "imps": 10,
+          "clicks": 0,
+          "pos": 77.1,
+          "share": 5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+          "imps": 10,
+          "clicks": 0,
+          "pos": 43.4,
+          "share": 5
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "books",
+      "query": "印書",
+      "found": true,
+      "total": {
+        "imps": 148,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 42.87
+      },
+      "pages": 7,
+      "top_page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "top_share": 34.5,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+          "imps": 51,
+          "clicks": 0,
+          "pos": 32.39,
+          "share": 34.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/books/",
+          "imps": 47,
+          "clicks": 0,
+          "pos": 46.32,
+          "share": 31.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+          "imps": 41,
+          "clicks": 0,
+          "pos": 49.12,
+          "share": 27.7
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/hardcover-books/",
+          "imps": 4,
+          "clicks": 0,
+          "pos": 52.75,
+          "share": 2.7
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/textbooks/",
+          "imps": 3,
+          "clicks": 0,
+          "pos": 73.33,
+          "share": 2
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "posters",
+      "query": "海報印刷",
+      "found": true,
+      "total": {
+        "imps": 567,
+        "clicks": 1,
+        "ctr": 0.18,
+        "pos_weighted": 34.01
+      },
+      "pages": 10,
+      "top_page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "top_share": 37,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+          "imps": 210,
+          "clicks": 1,
+          "pos": 9.78,
+          "share": 37
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/a2-posters/",
+          "imps": 93,
+          "clicks": 0,
+          "pos": 37.27,
+          "share": 16.4
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/posters/",
+          "imps": 64,
+          "clicks": 0,
+          "pos": 61.72,
+          "share": 11.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/retail-shop-poster-printing-guide/",
+          "imps": 60,
+          "clicks": 0,
+          "pos": 65.95,
+          "share": 10.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/poster-buying-guide/",
+          "imps": 55,
+          "clicks": 0,
+          "pos": 65.75,
+          "share": 9.7
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "query": "紙盒印刷",
+      "found": true,
+      "total": {
+        "imps": 73,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 41.99
+      },
+      "pages": 3,
+      "top_page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "top_share": 57.5,
+      "concentration": "mixed",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "imps": 42,
+          "clicks": 0,
+          "pos": 33.62,
+          "share": 57.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "imps": 23,
+          "clicks": 0,
+          "pos": 52.13,
+          "share": 31.5
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/corrugated-boxes/",
+          "imps": 8,
+          "clicks": 0,
+          "pos": 56.75,
+          "share": 11
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "query": "包裝盒訂製",
+      "found": true,
+      "total": {
+        "imps": 47,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 31.51
+      },
+      "pages": 3,
+      "top_page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "top_share": 95.7,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "imps": 45,
+          "clicks": 0,
+          "pos": 31.6,
+          "share": 95.7
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/cosmetic-boxes/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 28,
+          "share": 2.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 31,
+          "share": 2.1
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "query": "包裝盒印刷",
+      "found": true,
+      "total": {
+        "imps": 74,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 36.27
+      },
+      "pages": 5,
+      "top_page": "https://zprintpro.com/zh-hk/category/packaging/",
+      "top_share": 70.3,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/packaging/",
+          "imps": 52,
+          "clicks": 0,
+          "pos": 32.04,
+          "share": 70.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/kraft-paper-packaging-box/",
+          "imps": 18,
+          "clicks": 0,
+          "pos": 49.67,
+          "share": 24.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/white-card-boxes/",
+          "imps": 2,
+          "clicks": 0,
+          "pos": 22,
+          "share": 2.7
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/corrugated-boxes/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 39,
+          "share": 1.4
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/food-boxes/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 41,
+          "share": 1.4
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "seasonal",
+      "query": "利是封印刷",
+      "found": true,
+      "total": {
+        "imps": 69,
+        "clicks": 1,
+        "ctr": 1.45,
+        "pos_weighted": 18.57
+      },
+      "pages": 4,
+      "top_page": "https://zprintpro.com/zh-hk/category/red-packets/",
+      "top_share": 75.4,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/category/red-packets/",
+          "imps": 52,
+          "clicks": 1,
+          "pos": 22.33,
+          "share": 75.4
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "imps": 9,
+          "clicks": 0,
+          "pos": 7.11,
+          "share": 13
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/wedding-red-packet-printing-guide/",
+          "imps": 7,
+          "clicks": 0,
+          "pos": 5.86,
+          "share": 10.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/custom-red-packets/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 15,
+          "share": 1.4
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "wedding",
+      "query": "喜帖印刷",
+      "found": true,
+      "total": {
+        "imps": 15,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 16.13
+      },
+      "pages": 2,
+      "top_page": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+      "top_share": 73.3,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+          "imps": 11,
+          "clicks": 0,
+          "pos": 9.36,
+          "share": 73.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+          "imps": 4,
+          "clicks": 0,
+          "pos": 34.75,
+          "share": 26.7
+        }
+      ]
+    },
+    {
+      "locale": "zh-hk",
+      "cluster": "education",
+      "query": "學校印刷",
+      "found": true,
+      "total": {
+        "imps": 42,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 19.12
+      },
+      "pages": 5,
+      "top_page": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+      "top_share": 47.6,
+      "concentration": "split",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/campus-education-printing-pillar-guide/",
+          "imps": 20,
+          "clicks": 0,
+          "pos": 6.7,
+          "share": 47.6
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/category/educational/",
+          "imps": 16,
+          "clicks": 0,
+          "pos": 33,
+          "share": 38.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/school-flyers/",
+          "imps": 3,
+          "clicks": 0,
+          "pos": 32,
+          "share": 7.1
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+          "imps": 2,
+          "clicks": 0,
+          "pos": 2,
+          "share": 4.8
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/product/folded-leaflets/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 41,
+          "share": 2.4
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "cluster": "stickers",
+      "query": "small batch sticker printing",
+      "found": true,
+      "total": {
+        "imps": 46,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 5.5
+      },
+      "pages": 1,
+      "top_page": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "top_share": 100,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/en/product/small-batch-stickers/",
+          "imps": 46,
+          "clicks": 0,
+          "pos": 5.5,
+          "share": 100
+        }
+      ]
+    },
+    {
+      "locale": "en",
+      "cluster": "catalog",
+      "query": "china catalog printing",
+      "found": true,
+      "total": {
+        "imps": 77,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 17.35
+      },
+      "pages": 3,
+      "top_page": "https://zprintpro.com/en/product/catalog-printing/",
+      "top_share": 72.7,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/en/product/catalog-printing/",
+          "imps": 56,
+          "clicks": 0,
+          "pos": 13.62,
+          "share": 72.7
+        },
+        {
+          "page": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+          "imps": 20,
+          "clicks": 0,
+          "pos": 25.2,
+          "share": 26
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/services/catalog-printing-china/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 69,
+          "share": 1.3
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "cluster": "doujin",
+      "query": "コミケ 印刷",
+      "found": true,
+      "total": {
+        "imps": 174,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 19.23
+      },
+      "pages": 2,
+      "top_page": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "top_share": 94.3,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/ja/product/doujinshi-printing/",
+          "imps": 164,
+          "clicks": 0,
+          "pos": 17.33,
+          "share": 94.3
+        },
+        {
+          "page": "https://zprintpro.com/ja/blog/comiket-printing-prep-guide/",
+          "imps": 10,
+          "clicks": 0,
+          "pos": 50.4,
+          "share": 5.7
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "cluster": "education",
+      "query": "教材 印刷製本",
+      "found": true,
+      "total": {
+        "imps": 44,
+        "clicks": 0,
+        "ctr": 0,
+        "pos_weighted": 24.93
+      },
+      "pages": 3,
+      "top_page": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "top_share": 70.5,
+      "concentration": "concentrated",
+      "detail": [
+        {
+          "page": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+          "imps": 31,
+          "clicks": 0,
+          "pos": 11.97,
+          "share": 70.5
+        },
+        {
+          "page": "https://zprintpro.com/ja/product/textbooks/",
+          "imps": 12,
+          "clicks": 0,
+          "pos": 56.67,
+          "share": 27.3
+        },
+        {
+          "page": "https://zprintpro.com/zh-hk/blog/textbook-printing-guide/",
+          "imps": 1,
+          "clicks": 0,
+          "pos": 46,
+          "share": 2.3
+        }
+      ]
+    },
+    {
+      "locale": "ja",
+      "cluster": "education",
+      "query": "教科書印刷",
+      "found": false
+    }
+  ]
+}
