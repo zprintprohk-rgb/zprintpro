@@ -103,9 +103,9 @@
       "evidence_gap": "Existing long guides cover material broadly; query-to-page attribution and conflicting MOQ/turnaround conditions need review before any rewrite.",
       "target_slug": "sticker-guide",
       "action": "review_then_rewrite_only_if_new_decision_value_exists",
-      "status": "review_or_rewrite",
-      "last_delivered": null,
-      "recheck_after": null,
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-07",
       "source_window": "2026-09-30..2026-10-27",
       "baseline": {
         "貼紙印刷": {
@@ -125,9 +125,35 @@
         "Block commercial claims when 10/100-copy or 2-3/5-7-day conditions cannot be tied to an approved SKU source."
       ],
       "learning": {
-        "last_failure_mode": null,
-        "next_run_constraints": []
-      }
+        "last_failure_mode": "conflicting_commercial_truth",
+        "next_run_constraints": [
+          "交期/价格/MOQ 必须逐项对照 products.ts SKU 的 description/title/minQuantity；原文 3-5 天与 SKU 5-7 天冲突时以 SKU 为准",
+          "不存在 SKU 的产品类型（如螢光貼紙）不得出现在价格表；改为真实存在的 SKU（卷裝貼紙）",
+          "无 finishings 参数的加成百分比视为无源数字，只可定性（轻/中/高）或引用真实 SKU 牌价对比"
+        ]
+      },
+      "delivered_url": "/zh-hk/blog/sticker-guide/",
+      "delivery_note": "review_or_rewrite 完成：既有 sticker-guide 已覆盖材质/工艺/流程/FAQ 采购决策，按「review_then_rewrite_only_if_new_decision_value_exists」未新写泛文；本轮做结构维护（段2 快速答案块 2→4、段7 LinkedIn+EU REACH 措辞、段8 15 原子、段11 内链 8→11、excerpt/schemas 补）＋商业真值口径修正（交期 3-5→5-7 per 防水貼紙 SKU description；螢光貼紙 SKU 不存在→卷裝貼紙；工藝 % 加成为无源→定性）。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "貼紙印刷": {
+              "impressions": 120,
+              "clicks": 0,
+              "position": 40.88
+            },
+            "貼紙訂製": {
+              "impressions": 34,
+              "clicks": 0,
+              "position": 32.41
+            }
+          },
+          "action": "review_or_rewrite_delivered (structure maintenance + commercial truth reconciliation)",
+          "judgement": "交付前基线；7 天（2026-11-07）复测 貼紙印刷／貼紙訂製 展示与排名"
+        }
+      ]
     },
     {
       "cluster": "books-zh-hk",

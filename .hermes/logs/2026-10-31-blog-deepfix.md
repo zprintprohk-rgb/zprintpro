@@ -178,3 +178,39 @@ NEXT: ① 2026-11-07 复测 宣傳單張／宣傳單張印刷（117/103 imps @ p
 - **段12 online（zh-hk）**：PASS（generated 6 块、内嵌 0）
 - **tsc 54=基线 / build 723 URLs / encoding / brand --strict / gsc-leak 全绿**
 - **队列**：flyers-zh-hk → `remeasure`，last_delivered 2026-10-31，recheck_after 2026-11-07，learning.next_run_constraints 已写
+
+---
+
+# 第五轮 · v1 队列驱动（stickers-zh-hk，review_or_rewrite）
+
+VERDICT: OK
+CONSUMED: 重要文件今日档（队列 v1 于 17:30 回写后无更新战略文件；`zprintpro-blog-deepfix.md` v1 156 行）＋ `blog-money-keyword-queue.json`（8 项；stickers-zh-hk 为 priority_order 第 2）＋ GSC 28d 2026-10-30 档 ＋ `products.ts` sticker SKU 真值（9 个 sticker SKU：minQuantity 全 10、waterproof description「5-7 天交期」、无 finishings 参数、无荧光 SKU）＋ 锁 lane.lock FREE ＋ run-context 缺失（BUS_UNAVAILABLE）
+DELIVERED: **结构维护**（非新成长文，按 prompt 第 0 优先级 #3 如实标注）——sticker-guide zh-hk 8,844→10,373 字：段2 快速答案块 2→4、段7 LinkedIn URL + EU REACH 措辞、段8 15 条【】原子、段11 内链 8→11、补 excerpt/schemas；**商业真值对账**：交期 3-5→**5-7 個工作天**（per 防水貼紙 SKU description）、螢光貼紙（SKU 不存在）→卷裝貼紙（HK$0.20-5.50 真实 SKU）、工藝 % 加成（无 finishings 依据）→定性档位；12 段 zh-hk 全 PASS；队列回写 `remeasure` + recheck 2026-11-07
+NEXT: ① 2026-11-07 复测 貼紙印刷（120 imps @ pos 40.88）／貼紙訂製（34 imps @ 32.41）；② 队列下一优先 books-zh-hk（review_or_rewrite，textbook-printing-guide）；③ en/ja sticker-guide 段2/6/7/8 存量缺口（本轮仅 zh-hk，未同步三语）
+
+数据来源: `.hermes/cron-prompts/blog-money-keyword-queue.json` · `GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx` · `src/data/products.ts`（waterproof-stickers／transparent-stickers／removable-stickers／die-cut-stickers／foil-stickers／security-stickers／roll-stickers／small-batch-stickers／fruit-food-label-stickers SKU） · `src/data/blog-data/zh-hk.json`（sticker-guide） · 锁 `.hermes/locks/lane.lock`（FREE）
+
+## 一、选题执行（队列状态机）
+
+| 步 | 结论 |
+|---|---|
+| 到期 remeasure | 无（flyers recheck 2026-11-07、posters 2026-11-07、其余 2026-11-28） |
+| priority_order | 第 1（flyers-zh-hk）已 remeasure；第 2 = **stickers-zh-hk**（review_or_rewrite）→ 本轮选择 |
+| review 判定 | 既有 sticker-guide 已覆盖采购决策（计价/材质/工艺/流程/区分标签/MOQ/户外/设计/认证/FAQ 8 组）→ **不新写泛文**；缺口为结构项（段2/7/8/11）与商业真值口径冲突 → 结构维护 + 真值对账 |
+| 幂等 | 队列 last_delivered 为空；git log 无近期深度重写 |
+
+## 二、商业真值对账（products.ts 唯一真值）
+
+1. **交期冲突（队列核心 gap）**：原文「3-5 個工作天，24 小時加急」vs SKU `waterproof-stickers` description「**5-7 天交期**」+ title「5-7天交期」→ 按 SKU 改为 **5-7 個工作天**（6 处：intro／QA／流程／流程步骤／FAQ Q2／急件句），急件改为「可查詢加急產能」不再给未核准 24h SLA。
+2. **不存在 SKU**：价格表「螢光貼紙 0.52-2.00」在 products.ts 无对应 SKU → 换为**卷裝貼紙 HK$0.20-5.50/張**（roll-stickers，真实 SKU）。
+3. **无源加成**：工藝表「+10-15%／+30-50%／+15-20%／+40-60%」（sticker SKU 均无 finishings 参数）→ 改定性档位（輕微／中等／較高／最高）；燙金句改为真实 SKU 牌价对比（燙金 HK$0.78 起 vs PVC HK$0.22 起）。
+4. 已核一致：10 張起印（9 个 SKU minQuantity 全 10）；PVC 0.22-1.00／透明 0.38-1.50／可移 0.45-1.60／異形 0.58-2.20／燙金 0.78-2.80／防偽 1.15-4.00／小批量 A4 38-120 全部与 SKU price_range 一致。
+5. 食品標籤 500 張起：fruit-food-label-stickers minQuantity=500 ✓（新增 QA 块已注明）。
+
+## 三、验收
+
+- 12 段骨架 zh-hk：**PASS 11 / FAIL 0**（段12 online 待部署；段2 4 块、段8 15 原子、段11 11 链）
+- GSC 命中词保护：18 短语全部 ≥ 修复前（5-7 個工作天 0→7、EU REACH 0→3 为新增正确措辞）
+- 8-gram 相似度：PASS（≤3.6%，自身旧版 0.5%）
+- encoding ✓／tsc 54=基线 ✓／build 723 URLs ✓／brand --strict A 类 0 ✓／gsc-leak 0 ✓
+- 队列回写 `remeasure` + `measurement_history` + `learning.last_failure_mode = conflicting_commercial_truth`
