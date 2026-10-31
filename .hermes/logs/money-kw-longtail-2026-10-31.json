@@ -1,0 +1,233 @@
+[
+  {
+    "locale": "zh-hk",
+    "head": "宣傳單張",
+    "exact_imp": 123.0,
+    "exact_clk": 0.0,
+    "longtail_count": 2,
+    "longtail_imp": 129.0,
+    "longtail_ratio": 0.512,
+    "top_longtails": [
+      {
+        "q": "宣傳單張印刷",
+        "imp": 128.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/category/flyers/"
+      },
+      {
+        "q": "澳門宣傳單張印刷",
+        "imp": 1.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/product/folded-leaflets/"
+      }
+    ]
+  },
+  {
+    "locale": "zh-hk",
+    "head": "貼紙印刷",
+    "exact_imp": 245.0,
+    "exact_clk": 0.0,
+    "longtail_count": 6,
+    "longtail_imp": 24.0,
+    "longtail_ratio": 0.089,
+    "top_longtails": [
+      {
+        "q": "透明貼紙印刷",
+        "imp": 9.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/product/transparent-stickers/"
+      },
+      {
+        "q": "防水貼紙印刷",
+        "imp": 8.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/product/waterproof-stickers/"
+      },
+      {
+        "q": "香港貼紙印刷",
+        "imp": 4.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/blog/sticker-guide/"
+      }
+    ]
+  },
+  {
+    "locale": "zh-hk",
+    "head": "貼紙訂製",
+    "exact_imp": 52.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "書刊印刷",
+    "exact_imp": 202.0,
+    "exact_clk": 0.0,
+    "longtail_count": 1,
+    "longtail_imp": 1.0,
+    "longtail_ratio": 0.005,
+    "top_longtails": [
+      {
+        "q": "澳門書刊印刷",
+        "imp": 1.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/blog/book-buying-guide/"
+      }
+    ]
+  },
+  {
+    "locale": "zh-hk",
+    "head": "印書",
+    "exact_imp": 148.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "海報印刷",
+    "exact_imp": 567.0,
+    "exact_clk": 1.0,
+    "longtail_count": 10,
+    "longtail_imp": 66.0,
+    "longtail_ratio": 0.104,
+    "top_longtails": [
+      {
+        "q": "海報印刷一張",
+        "imp": 26.0,
+        "clk": 1.0,
+        "top_page": "/zh-hk/product/art-posters/"
+      },
+      {
+        "q": "海報印刷即日",
+        "imp": 16.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/"
+      },
+      {
+        "q": "a3海報印刷",
+        "imp": 15.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/blog/poster-printing-guide/"
+      }
+    ]
+  },
+  {
+    "locale": "zh-hk",
+    "head": "紙盒印刷",
+    "exact_imp": 73.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "包裝盒訂製",
+    "exact_imp": 47.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "包裝盒印刷",
+    "exact_imp": 74.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "利是封印刷",
+    "exact_imp": 69.0,
+    "exact_clk": 1.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "zh-hk",
+    "head": "喜帖印刷",
+    "exact_imp": 15.0,
+    "exact_clk": 0.0,
+    "longtail_count": 2,
+    "longtail_imp": 5.0,
+    "longtail_ratio": 0.25,
+    "top_longtails": [
+      {
+        "q": "喜帖印刷香港",
+        "imp": 4.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/category/wedding-invitations/"
+      },
+      {
+        "q": "喜帖印刷少量",
+        "imp": 1.0,
+        "clk": 0.0,
+        "top_page": "/zh-hk/category/wedding-invitations/"
+      }
+    ]
+  },
+  {
+    "locale": "zh-hk",
+    "head": "學校印刷",
+    "exact_imp": 42.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "en",
+    "head": "small batch sticker printing",
+    "exact_imp": 46.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "en",
+    "head": "china catalog printing",
+    "exact_imp": 77.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "ja",
+    "head": "コミケ 印刷",
+    "exact_imp": 174.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  },
+  {
+    "locale": "ja",
+    "head": "教材 印刷製本",
+    "exact_imp": 44.0,
+    "exact_clk": 0.0,
+    "longtail_count": 0,
+    "longtail_imp": 0,
+    "longtail_ratio": 0.0,
+    "top_longtails": []
+  }
+]
