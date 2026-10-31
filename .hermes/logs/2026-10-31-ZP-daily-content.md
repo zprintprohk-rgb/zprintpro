@@ -42,6 +42,7 @@
 
 - 同侪最后 src 写 17:30 / 提交 17:37（本 run 18:17 起, 静默 ≥40min）→ §0.35.7 ② 满足; ① 收尾信号: 本 run 前 src 仅 1 个同侪旧 uncommitted（merchant-feed, 13:18, 有意的 #3.5 注释改写）→ 本 run 只 stage 自己 7 文件, **未碰 merchant-feed / strategy-task-queue.json / 同侪任何在途文件**
 - push 带出同侪 docs commit 7d7beaf6（本就完成, 无副作用）; 距上次 push c991ba7f@17:31 > 30min ✓; 攒批 = ≥1 src 行为修复（281 处真值修复）✓
+- **CF Pages build: SUCCESS — deploy is live**（复查 18:28, run 124512144233）
 - 幂等键: `harness-20261031-cert-detox-7files`
 
 ## 数据来源
