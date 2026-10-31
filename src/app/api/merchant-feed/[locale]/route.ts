@@ -171,8 +171,10 @@ function buildFeed(locale: Locale): string {
       <g:availability>in_stock</g:availability>
       <g:brand>${xmlEscape(brandByLocale[locale])}</g:brand>
       <g:condition>new</g:condition>
-      <g:mpn>${xmlEscape(product.sku_code)}</g:mpn>
-      <!-- 2026-09-29: 定制印刷商品无 GTIN → identifier_exists=false (避免 GMC「缺少 GTIN」警告) -->
+      <!-- 2026-10-31: 移除 g:mpn — 定制印刷品無廠商零件號; mpn+brand 是 Google 跨語商品聚類鍵,
+           三語 feed 同 mpn (sku_code) 而各語品牌不同 → GSC「字段 brand 重複」51 項根因。
+           移除後 identifier_exists=false 語義一致 (無 GTIN/無 MPN, Google 定制品官方推荐形態),
+           聚類鍵消失 → 三語 item 各自獨立 → 品牌冲突消解。 -->
       <g:identifier_exists>false</g:identifier_exists>
       ${gpc ? `<g:google_product_category>${xmlEscape(gpc)}</g:google_product_category>` : ''}
       <g:product_type>${xmlEscape(product.category)}</g:product_type>
