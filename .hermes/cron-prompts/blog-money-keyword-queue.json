@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T23:58:00+08:00",
+  "updated_at": "2026-11-01T03:45:00+08:00",
   "source_window": "2026-09-30..2026-10-27",
   "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
@@ -342,8 +342,20 @@
             "教科書印刷": null
           },
           "query_page": {
-            "書刊印刷": { "imps": 202, "urls": 4, "top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 45.5, "concentration": "split" },
-            "印書": { "imps": 148, "urls": 7, "top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 34.5, "concentration": "split" }
+            "書刊印刷": {
+              "imps": 202,
+              "urls": 4,
+              "top_url": "/zh-hk/blog/book-buying-guide/",
+              "top_share_pct": 45.5,
+              "concentration": "split"
+            },
+            "印書": {
+              "imps": 148,
+              "urls": 7,
+              "top_url": "/zh-hk/blog/book-buying-guide/",
+              "top_share_pct": 34.5,
+              "concentration": "split"
+            }
           },
           "action": "review_or_rewrite_delivered (commercial truth reconciliation + 12-seg completion)",
           "judgement": "交付前基線；7 天（2026-11-07）復測 書刊印刷／印書 展示、排名與點擊；教科書印刷 本窗口無匹配，維持 NO_CURRENT_BASELINE"
@@ -998,6 +1010,11 @@
       "by": "executor (deepseek, ZP-blog-deepfix)",
       "change": "books-zh-hk 交付回寫: status review_or_rewrite→remeasure; 更正 MOQ 判讀——教科書屬 ED-004(educational 類, minQuantity=100) 故「100 本起」為真; 膠裝/精裝屬 BK-003/BK-004(books 類, minQuantity=10) 故原文「100 本起」為假, 已改 10 本起",
       "evidence": "src/data/products.ts L5141-5332 (BK-002/003/004) + L5977-6045 (ED-004); .hermes/logs/2026-10-31-blog-deepfix.md 第六轮"
+    },
+    {
+      "date": "2026-11-01",
+      "finding": "测量底座审计 v2（NO_OP 轮，未改内容）：28d 全国家 21,127 imps，市场占比 zh-hk 57.9% / en-us 13.0% / ja 10.9% / apac 5.3% / en-other 2.9%；12 条 query×page 承接浓度：zh-hk 带钱词（貼紙印刷 33.9% split、書刊印刷 45.5% split、海報印刷 37% split）呈分散，packaging/catalog/comiket 单 URL 集中（70-96%）；small batch sticker printing pos 5.5 单 URL 100% 承接 0 点击 = 纯 CTR 缺口非内容缺口。建议：zh-hk 下一杠杆为承接页 title/meta + 内链收口；en sticker 做 snippet 测试；country×query 仍不可联接（xlsx 独立 sheet）。",
+      "source": ".hermes/logs/money-keyword-measurement-audit-2026-11-01.json + GSC 28d 2026-10-30 档 + 队列 query_page_evidence"
     }
   ]
 }
