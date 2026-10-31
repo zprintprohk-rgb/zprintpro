@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30T23:55:00+08:00 (海报 blog 旧假价精确位置补证)",
+  "generated_at": "2026-10-31T03:30:00Z",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -662,6 +662,28 @@
       "owner_lane": "manual",
       "status": "DONE",
       "created_at": "2026-10-30T23:2:00+08:00"
+    },
+    {
+      "task_id": "FIX-20261031-DHL-SHIPPING-CLAIMS",
+      "status": "READY",
+      "score": 68,
+      "market": "zh-hk/en/ja",
+      "source_strategy": "2026-10-30 K3 全站模板(1)",
+      "approval_gate": "K3 2026-10-30 21:48 全站模板选(1): 交期(含运输/急件)一律报价确认 — 本项为 d450abbc+88cdf1ca+6f23d599 未覆盖的 DHL 运输/急件承诺串",
+      "write_scope": [
+        "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx",
+        "src/components/seo/RegionalContent.tsx",
+        "src/app/[locale]/product/[slug]/page.tsx"
+      ],
+      "targets": [
+        "TrustBadgeBlock L14 zh 物流行(24小時達/DHL 2-4日) L26 zh 即日交貨(3-5日/當天) L40 en DHL 3-5/5-7 days L43 en Same-Day L44 en DHL Express Direct L57 ja 航空便3-5日 L60 ja 即日納品(3-5営業日) L61 ja 2〜4日配送",
+        "RegionalContent L13 zh DHL 2-4日 L20 en 3-5/5-7 days L26 ja 納期厳守（航空便3-5日） L27 ja 航空便3-5日 L93 ja 航空便3-5日",
+        "product/[slug]/page.tsx L589 en/ja DHL/FedEx 3-5 days USA 2-4 days Japan"
+      ],
+      "next_check": "2026-10-31",
+      "result": {
+        "note": "双条件②不满足(对端11:28活跃)暂缓; 目标已精确定位"
+      }
     }
   ],
   "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
