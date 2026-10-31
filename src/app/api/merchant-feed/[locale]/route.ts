@@ -167,7 +167,8 @@ function buildFeed(locale: Locale): string {
       <g:link>${xmlEscape(productUrl)}</g:link>
       <g:image_link>${xmlEscape(fullImageUrl)}</g:image_link>
       <g:price>${priceStr} ${currency}</g:price>
-      <g:sale_price>${priceStr} ${currency}</g:sale_price>
+      <!-- 2026-11-01: 移除 g:sale_price — Google 规范要求 sale_price 必须低于 price; 无折扣数据源时
+           83/83 项两者相等 (线上实测), 相等值会被忽略并可能触发价格类提示。无折扣不输出。 -->
       <g:availability>in_stock</g:availability>
       <g:brand>${xmlEscape(brandByLocale[locale])}</g:brand>
       <g:condition>new</g:condition>
