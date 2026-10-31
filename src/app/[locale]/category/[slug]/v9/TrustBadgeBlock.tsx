@@ -11,7 +11,7 @@ export const TRUST_COPY_INTRO =
   '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務香港及東南亞、美國、日本及全球客戶。廠房配備海德堡柯式印刷機組與 HP Indigo 15K B2 數碼產線，打稿與出貨時效以報價確認；FSC 認證紙材把關品質。我們熟悉跨境印刷需求，提供 IP 保護、價格透明與全球物流支援，一張起印，靈活承接小批量與大宗訂單。';
 
 /** 物流承諾行（修訂輪2 指定文案: 本地 24 小時達 + DHL 全球 2-4 日） */
-export const TRUST_COPY_LOGISTICS = '順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球 2-4 日';
+export const TRUST_COPY_LOGISTICS = '順豐香港本地送貨 · 港島/九龍/新界 24小時達 · DHL 全球配送，時效以報價確認';
 
 export interface TrustCard {
   icon: LucideIcon;
@@ -23,7 +23,7 @@ export interface TrustCard {
 /** 6 張信任卡片（文案 = ProductWhyChooseUs zh-hk 逐字, 圖標 = 首頁同款 lucide 白色圖標塊） */
 export const TRUST_CARDS: TrustCard[] = [
   { icon: Factory, title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控' },
-  { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天' },
+  { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準與急件時效按稿件確認及產能報價確認' },
   { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
   { icon: Clock, title: '數碼打樣', sub: '時效以報價確認', desc: '免費數碼打樣，確認後開印；出稿時效以報價確認' },
   { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
@@ -37,10 +37,10 @@ export const TRUST_CARDS: TrustCard[] = [
 const EN_INTRO =
   'ZprintPro is the international printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and beyond. We understand the unique requirements of international printing and offer IP-protected, ISO-certified quality manufacturing with worldwide logistics support.';
 const EN_LOGISTICS =
-  'Worldwide shipping via DHL Express: 3-5 days to US/UK/Australia · 5-7 days to Europe · Tracking number provided';
+  'Worldwide shipping via DHL Express; transit times confirmed at quote · Tracking number provided';
 const EN_CARDS: TrustCard[] = [
   { icon: Factory, title: 'Shenzhen ISO Factory', sub: '15+ Years Experience', desc: 'Owned production facility in Shenzhen, operated by Cailong Printing. ISO-certified quality manufacturing.' },
-  { icon: Zap, title: 'Same-Day Delivery', sub: 'Rush 24h Available', desc: 'Standard 3-5 days, urgent orders same day' },
+  { icon: Zap, title: 'Same-Day Delivery', sub: 'Rush 24h Available', desc: 'Timing confirmed at quote, urgent orders subject to cutoff and capacity' },
   { icon: Truck, title: 'DHL Express Direct', sub: 'Nationwide Coverage', desc: 'DHL door-to-door delivery across the US' },
   { icon: Clock, title: 'Digital Proof', sub: 'Confirm Before Production', desc: 'Free digital proof before production; timing confirmed at quote' },
   { icon: ShieldCheck, title: 'Quality Guarantee', sub: '100% Satisfaction', desc: 'Free reprint if not satisfied, full refund' },
@@ -54,11 +54,11 @@ const EN_CARDS: TrustCard[] = [
 const JA_INTRO =
   '智印港（ZprintPro）は、彩龍印刷が運営する国際印刷サービスブランドです。深圳自社工場から、DHL Express で日本を含む全世界へ高品質印刷を輸出しています。日本市場特有の品質基準への適合、厳密な納期管理、日本語対応スタッフによる丁寧なサポートで、深圳から日本への高品質印刷輸出を実現します。';
 const JA_LOGISTICS =
-  '深圳から日本へ国際配送（航空便3-5日、税関対応可）· DHL/FedEx追跡番号付き · 日本全国対応';
+  '深圳から日本へ国際配送 · DHL/FedEx追跡番号付き · 日本全国対応（時期は見積りで確認）';
 const JA_CARDS: TrustCard[] = [
   { icon: Factory, title: '深圳自社工場', sub: '15年以上の実績', desc: '彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理' },
-  { icon: Zap, title: '即日納品', sub: '特急24時間対応', desc: '標準3-5営業日、急ぎは最短当日' },
-  { icon: Truck, title: '国際配送', sub: '日本全国対応', desc: 'DHL・FedExで日本全国へ2〜4日配送' },
+  { icon: Zap, title: '即日納品', sub: '特急24時間対応', desc: '日程は見積りで確認、特急は受付・生産状況による' },
+  { icon: Truck, title: '国際配送', sub: '日本全国対応', desc: 'DHL・FedExで日本全国へ配送（時期は見積りで確認）' },
   { icon: Clock, title: 'デジタル校正', sub: '本生産前に確認', desc: '無料デジタル校正、確認後に本印刷。校正時期は見積りで確認' },
   { icon: ShieldCheck, title: '品質保証', sub: '100%満足保証', desc: '不満足な場合は無料再印刷、全額返金' },
   { icon: Headphones, title: '24時間サポート', sub: '年中無休対応', desc: 'プロのカスタマーサービスが24時間対応' },

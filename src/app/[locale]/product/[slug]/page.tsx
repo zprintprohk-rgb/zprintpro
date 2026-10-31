@@ -586,7 +586,7 @@ export default function ProductPage({
                       <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
                       {locale === 'en' ? 'Free shipping over $500' : '$500 相当以上 送料無料'}
                     </span>
-                    <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx 3-5 days to USA, 2-4 days to Japan' : 'DHL/FedEx アメリカ3-5日、日本2-4日'}</span>
+                    <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx worldwide; transit times confirmed at quote' : 'DHL/FedEx 全球配送、時効は見積りで確認'}</span>
                   </div>
                 )}
                 <div className="flex flex-wrap gap-5 mt-3">
