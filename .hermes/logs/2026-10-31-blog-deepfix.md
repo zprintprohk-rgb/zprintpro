@@ -168,3 +168,13 @@ NEXT: ① 2026-11-07 复测 宣傳單張／宣傳單張印刷（117/103 imps @ p
 - `gsc-leak-guard`：0 命中（数据来源行已去 GSC 黑话）
 - encoding：UTF-8 LF；tsc：54=基线；build：见下条
 - 队列 JSON 解析通过；`重要文件` 副本已同步
+
+## 六、终验（2026-10-31 17:36）
+
+- **commit**：c1b0c282（4 files：zh-hk.json + 队列双语副本 + 报告）
+- **push**：✅ `b4b0c0f2..c991ba7f main -> main`（含对端合并提交）
+- **CF build**：✅ success（17:36:48）
+- **curl**：`/zh-hk/blog/flyer-printing-guide/` 200 + 案例OK；`/zh-hk/category/flyers/` 200
+- **段12 online（zh-hk）**：PASS（generated 6 块、内嵌 0）
+- **tsc 54=基线 / build 723 URLs / encoding / brand --strict / gsc-leak 全绿**
+- **队列**：flyers-zh-hk → `remeasure`，last_delivered 2026-10-31，recheck_after 2026-11-07，learning.next_run_constraints 已写
