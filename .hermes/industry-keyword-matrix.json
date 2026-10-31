@@ -1,4 +1,89 @@
 {
+  "gsc_feedback_2026_10_31": {
+    "date": "2026-10-31",
+    "type": "每日证据轮 (无新导出; 恢复读数冻结复读; 72h 数据龄闸门本轮被击穿)",
+    "report": ".hermes/logs/2026-10-31-ZP-gsc-feedback.md",
+    "anomaly_json": ".hermes/logs/gsc-daily-anomaly-2026-10-31.json",
+    "run_type": "结果总线契约(-1) > 恢复模式 > 大脑区 > v9.3; retry_queue=[] ⇒ 无 RETRY_OF; idempotency_key cb2dc08c4c5ca4cf (已消费, 执行完成口径 OK; 恢复指标 UNVERIFIED)",
+    "files_consumed": [
+      "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx (carried; no 10-31 batch)",
+      "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30.xlsx (carried; window ends 10-30T04)",
+      "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (1).xlsx (on disk, not parsed)"
+    ],
+    "verdict": "OK · 执行完成轮 (data_status NO_FRESH_EXPORT 2026-10-31; RECOVERY 117.7% CARRIED, not a new reading; 2/3 fresh points)",
+    "freshness": {
+      "new_export_2026_10_31": false,
+      "newest_batch": "2026-10-30 09:03",
+      "file_age_hours": 35,
+      "data_age_days": 4,
+      "data_latest_day": "2026-10-27",
+      "gate": "72h DATA-AGE gate breached (4d); file-age gate passed (35h)",
+      "index_json": "lastBuild 2026-10-30T21:33 / totalFiles 241 / latestFreshData 2026-10-30 / FRESH by file age (A18 RESOLVED)"
+    },
+    "detector_2026_10_31": {
+      "path": ".hermes/logs/gsc-cliff-2026-10-31.json",
+      "identity_with_10_30": "same 24h window 10-29T05..10-30T04, same 888 imp / 15 clk, same dynamic 117.7%, same 28d totals; only data_age_days 3 -> 4",
+      "classification": "FROZEN_REPEAT (recomputation, not observation)",
+      "alerts": "0 CRITICAL / 0 WARN_STALE / INFO_CALIBER_SWITCH x3 (single-site 28d files 19d old -> fallback)"
+    },
+    "recovery": {
+      "headline_dynamic": "117.7% = 888 / 754.5 (full-country) — CARRIED, not a 10-31 reading",
+      "same_caliber_28d": "105.6% = 754.5 / 714.71 (carried)",
+      "precliff_fixed": "151.7% = 888 / 585.2 — single-site-sum denominator, secondary only; do not headline",
+      "streak": "2/3 confirmed fresh points (10-29 105.8%, 10-30 117.7%); third NOT ESTABLISHED (no 10-31 export)",
+      "frozen_plateau_precedent": "10-24..10-28 130.3% x4 same frozen 24h input"
+    },
+    "money_words_23": {
+      "status": "CARRIED / unchanged (same 10-30 28d query sheet)",
+      "homepage_hits_strict": "7/23 (zh 2 / en 4 / ja 1)",
+      "homepage_hits_loose": "12/23",
+      "persistent_deep": "貼紙印刷 40.88 (120 imp / 0 clk); 月曆印刷 23.71 (109 / 0)",
+      "worsened": "教材 印刷製本 20.69 (39 / 0), from 17.31 on 10-29",
+      "partial_improved": "海報印刷 286 imp / 1 clk / pos 14.94 (carried)",
+      "no_data": "corporate holiday cards; 年賀状印刷"
+    },
+    "extended_money_words_17": {
+      "source": ".hermes/logs/money-keyword-query-evidence-2026-10-31.json (today's re-extraction; data not new)",
+      "seasonal_signal": "利是封印刷 55 imp / 1 clk / pos 21.6 (only extended word with a click)",
+      "deep_zero_click": "宣傳單張 117@29.37; 宣傳單張印刷 103@29.02; 書刊印刷 101@32.28; 印書 52@31.96; 包裝盒印刷 54@31.89; 包裝盒訂製 47@31.51; 紙盒印刷 46@33.30; 貼紙訂製 34@32.41; 學校印刷 42@19.12; 喜帖印刷 15@16.13",
+      "caliber_warning": "full-country only; NOT the hkg task-J table"
+    },
+    "anomalies": {
+      "A1_DATA_STALE": "REOPENED P1 (4d > 72h data-age gate)",
+      "A2_frozen_24h": "REOPENED P1 (no 10-31 24h export; artifact repeats 10-30 window)",
+      "A15_index_fake_FRESH": "RESOLVED (lastBuild 2026-10-30T21:33; not hand-edited)",
+      "A17_C8": "CLOSED but vacuous today (0 WARN_STALE = no new input, not freshness proof)",
+      "A18_index_not_rebuilt_10_30": "RESOLVED (index includes 2026-10-30, 3 files)",
+      "A19_3mo_not_refreshed": "OPEN P2 (pre-cliff 714.71 still from 10-29 long window)",
+      "A20_NO_FRESH_EXPORT": "OPEN P1 (owner K3-admin; export 10-31 24h/7d/28d/3mo)",
+      "A21_CALIBER_REGRESSION": "OPEN P2 (daily-content + blog-deepfix headlined 151.7% fixed caliber)",
+      "A22_METADATA_MISMATCH": "OPEN P3 (blog-deepfix says latest day 10-30; sheet ends 10-27)",
+      "NEW-7_Q4_red_packet": "NEW evidence P3 (利是封印刷 55/1/21.6)"
+    },
+    "candidates": {
+      "O1_fresh_export": "K3-admin export 2026-10-31 batch -> 11-01",
+      "O2_freshness_definition": "unify file-age vs data-age gate -> 11-03 (rule change needs K3)",
+      "O3_ctr_pool": "16 page-level zero-click URLs + 6 page1 + 9 page2 c=0 words -> ZP-weekly-meta; no blind title edits",
+      "O4_poster": "海報印刷 first click but category/posters 212@45.56 + blog poster-buying 132@59.28 weak -> 11-06",
+      "O5_calendar": "月曆印刷 23.71; category title trimmed 10-30 -> 11-06",
+      "O6_sticker": "貼紙印刷 40.88 (frozen cluster) -> 11-04",
+      "O7_ja_textbook": "教材 印刷製本 20.69 -> 11-01 monthly diagnosis",
+      "O8_extended_money": "利是封/喜帖/學校 + 宣傳單張/書刊 -> ZP-monthly-matrix 11-01",
+      "O9_join": "C4 panel join + task J hkg 8 words -> 11-03",
+      "O10_geo_probe": "GEO AI probe S1 -> 11-03 (fixed kit, record engine/date/answer/citation URL)"
+    },
+    "priority_boost": {
+      "changes": [],
+      "reason": "no new GSC data (frozen repeat); boost on identical inputs would manufacture motion",
+      "queue_numeric_fields_touched": false
+    },
+    "next": [
+      "2026-11-01 fresh 10-31/11-01 export + third consecutive fresh reading + monthly review consumption",
+      "2026-11-03 C4 join + task J hkg 8 locked words + gate #9 + GEO AI probe S1",
+      "2026-11-04 年賀状 cluster / 貼紙 14-day positions",
+      "2026-11-06 poster price / sticker MOQ / catalog FDA / calendar title 7d effect"
+    ]
+  },
   "gsc_feedback_2026_10_30": {
     "date": "2026-10-30",
     "type": "每日证据轮 (09:03 三档新导出; 全国家口径; C8 输入分裂收口验证轮)",
@@ -2318,6 +2403,18 @@
     ]
   },
   "priority_boost_history": [
+    {
+      "date": "2026-10-31",
+      "trigger": "scheduled gsc-feedback-loop run (20:13; NO new GSC export; 10-30 batch carried)",
+      "by_orchestrator": true,
+      "changes": [],
+      "no_change_reason": "gsc-cliff-2026-10-31.json is a FROZEN_REPEAT of the 10-30 inputs (same 24h window 10-29T05..10-30T04, same 888 imp / 15 clk, same 117.7%). No fresh reading -> no boost. Adding boosts on identical inputs would manufacture motion.",
+      "rules_applied": {
+        "no_new_data": "hold all",
+        "frozen_repeat": "not an observation; never counted as a new day"
+      },
+      "queue_numeric_fields_touched": false
+    },
     {
       "date": "2026-10-30",
       "trigger": "scheduled gsc-feedback-loop run (20:13; 10-30 exports 09:03, full-country)",

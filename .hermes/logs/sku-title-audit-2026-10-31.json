@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-31",
+  "guard": "#25 title-band-guard",
+  "rule": "MIN=50 WARN>57 HARD>=58 (半角当量, SSoT title-equiv.js)",
+  "slotCount": 252,
+  "existingIssues": [
+    {
+      "slug": "small-bags",
+      "locale": "ja",
+      "title": "小判紙袋｜100個〜 白カード 多サイズ｜ZprintPro",
+      "equiv": 46,
+      "band": "FILL"
+    },
+    {
+      "slug": "a2-posters",
+      "locale": "zh-hk",
+      "title": "A2 海報印刷 420×594mm 10張起印 HK$16起 | 智印港",
+      "equiv": 47,
+      "band": "FILL"
+    },
+    {
+      "slug": "art-posters",
+      "locale": "zh-hk",
+      "title": "藝術海報 | 美術紙 Giclée | 1個起 HK$26起 | 智印港",
+      "equiv": 49,
+      "band": "FILL"
+    }
+  ]
+}
