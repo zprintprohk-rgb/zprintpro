@@ -1982,7 +1982,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const redPacketsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '香港利是封印刷 100 個起印，燙金利是封 HK$1.10起，標準 5-7 個工作天交貨。銅版紙/珠光紙/觸感紙三大材質，燙金、擊凸、局部UV、過膠六大工藝，30 秒 AI 報價，港九新界免費速遞。國際認證體系工廠，FSC 認證紙張可選。',
+    featuredSnippet: '香港利是封印刷 100 個起印，燙金利是封 HK$1.10起，標準 5-7 個工作天交貨。銅版紙/珠光紙/觸感紙三大材質，燙金、擊凸、局部UV、過膠六大工藝，30 秒 AI 報價，港九新界免費速遞。自有工廠，FSC 認證紙張可選。',
     lastUpdated: '2026-10-13',
     h2: '香港利是封印刷 — 材質×工藝×尺寸完整指南',
     coreAdvantages: {
@@ -2008,7 +2008,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
           heading: '3. 免費設計 3 稿・品質合規齊全',
           points: [
             '48 小時內出 3 個設計方向，含 2 輪修改，無隱藏收費',
-            '國際認證體系工廠質檢，FSC 認證紙張與大豆油墨可選',
+            '自有工廠質檢，FSC 認證紙張與大豆油墨可選',
             '30 秒 AI 報價即時出價，WhatsApp 客服一對一跟進',
           ],
         },
@@ -2042,7 +2042,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         { label: '標準交期', value: '5-7 個工作天（複雜工藝 7-8 天）' },
         { label: '價格區間', value: 'HK$1.10-7.50/個（視工藝與數量）' },
         { label: '常用尺寸', value: '標準三摺 90×170mm；大號 100×190mm' },
-        { label: '認證', value: '國際認證體系；FSC 紙張可選' },
+        { label: '認證', value: 'FSC 紙張可選' },
         { label: '報價', value: '30 秒 AI 即時報價' },
       ],
     },
@@ -2104,7 +2104,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
           heading: '3. Free design and certified quality',
           points: [
             '3 design concepts within 48 hours with 2 revision rounds, no hidden fees',
-            'internationally certified production; FSC paper and soy inks available',
+            'quality-managed production; FSC paper and soy inks available',
             'Instant 30-second AI quote with WhatsApp follow-up',
           ],
         },
@@ -2138,7 +2138,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         { label: 'Turnaround', value: '5-7 business days (7-8 complex)' },
         { label: 'Price range', value: 'HK$1.10-7.50/pc by finishing and volume' },
         { label: 'Sizes', value: 'Standard tri-fold 90x170mm; large 100x190mm' },
-        { label: 'Certification', value: 'International quality certification; FSC paper options' },
+        { label: 'Certification', value: 'FSC paper options' },
         { label: 'Quoting', value: 'Instant 30-second AI quote' },
       ],
     },
@@ -3024,7 +3024,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '國際認證體系廠房',
+          heading: '自有廠房',
           points: [
             '色彩管理標準化，批次之間偏差小',
             'FSC 認證紙張可供選擇',
@@ -3070,7 +3070,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: '30 秒 AI 報價', description: '上傳尺寸數量即時獲價，或 WhatsApp +86 198 8085 1334 人工報價。' },
         { title: '免費稿件檢查', description: '檢查出血、解像度、色彩模式，發現問題即時通知。' },
-        { title: '印刷及品檢', description: '國際認證體系流程，出貨前抽檢色彩與裁切。' },
+        { title: '印刷及品檢', description: '自有工廠流程，出貨前抽檢色彩與裁切。' },
         { title: '香港本地及全球配送', description: '順豐本地速遞，海外 DHL 2-4 天。' },
       ],
     },
@@ -4240,7 +4240,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
           points: [
             '6 大核心材質:300g 銅版紙、350g 剛古紙、300g 棉紙、特種金 / 銀卡紙、種子紙 (可種植)、立體鐳射紙。',
             '4 大核心工藝:燙金 / 燙銀、UV 局部、模切異形、3D 立體彈起,適配跨境爆款需求。',
-            '順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙材 + 國際品質認證。',
+            '順豐本地滿 HK$500 免費 + DHL 全球 2-4 天配送 + FSC 認證紙材。',
           ],
         },
       ],
@@ -4276,7 +4276,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         { label: '打樣時間', value: '數碼打樣 24 小時 / 4 小時免費打樣 (含實物寄送)' },
         { label: '量產交期', value: '常規 3-5 工作天,加急 24-48 小時可議' },
         { label: '檔案要求', value: 'AI / PSD / PDF / CDR, 300dpi, CMYK, 出血 3mm, 文字轉外框' },
-        { label: '環保認證', value: 'FSC 認證紙 + 大豆油墨 + 國際認證體系 + 可回收' },
+        { label: '環保認證', value: 'FSC 認證紙 + 大豆油墨 + 可回收' },
       ],
     },
     serviceNodes: {
@@ -4364,7 +4364,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
         { label: 'Proof Time', value: 'Digital proof 24h / 4h free proof (with physical sample shipping)' },
         { label: 'Production Lead Time', value: 'Standard 3-5 business days, rush 24-48h available' },
         { label: 'File Requirements', value: 'AI / PSD / PDF / CDR, 300dpi, CMYK, 3mm bleed, outlined text' },
-        { label: 'Eco Certifications', value: 'FSC-certified + soy ink + internationally certified + recyclable' },
+        { label: 'Eco Certifications', value: 'FSC-certified + soy ink + recyclable' },
       ],
     },
     serviceNodes: {

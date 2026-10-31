@@ -3872,7 +3872,7 @@ categoryConversionBlocks['books:zh-hk'] = {
   "category": "books",
   "locale": "zh-hk",
   "title": "騎馬釘小冊子印刷 10本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
-  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，國際認證體系，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
+  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 10 本起印（數碼）。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
   "quickAnswers": [
     {
       "q": "騎馬釘小冊子印刷幾多錢一本？",
@@ -4021,7 +4021,7 @@ categoryConversionBlocks['books:en'] = {
   "category": "books",
   "locale": "en",
   "title": "Saddle Stitch Booklet Printing from $1.20 | 10 MOQ + Free Proof | ZprintPro",
-  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. internationally certified + FSC-certified.",
+  "metaDescription": "Custom saddle stitch booklet printing from $1.20 with a 10-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. FSC-certified.",
   "quickAnswers": [
     {
       "q": "How much does booklet printing cost?",
@@ -4033,7 +4033,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "How fast can you print and ship custom books?",
-      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is internationally certified + FSC-certified."
+      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is FSC-certified."
     }
   ],
   "socialProof": [
@@ -4157,7 +4157,7 @@ categoryConversionBlocks['books:en'] = {
     },
     {
       "q": "Do you ship book printing orders to the USA?",
-      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is internationally certified + FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
+      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is FSC-certified, and a free digital proof is ready in 4 hours before anything goes to press."
     }
   ]
 };

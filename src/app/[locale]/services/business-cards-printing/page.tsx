@@ -30,12 +30,12 @@ type Props = { params: { locale: Locale } };
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: '名片印刷 10張起・燙金/UV/圓角・免費設計即日交貨 | 智印港',
-    desc: '香港名片印刷・咭片訂製：90×54mm 標準尺寸，10 張起印，燙金 / 局部 UV / 圓角 / 雙面印刷工藝，免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價，國際認證體系。',
+    desc: '香港名片印刷・咭片訂製：90×54mm 標準尺寸，10 張起印，燙金 / 局部 UV / 圓角 / 雙面印刷工藝，免費設計打稿 4 小時，最快即日交貨，港九新界滿 HK$500 免費順豐，DHL 全球 2-4 天配送。WhatsApp 30 秒即時報價。',
     keywords: '名片印刷,咭片印刷,印咭片,名片訂製,咭片訂製,燙金名片,UV名片,圓角名片,雙面名片,香港名片,business card printing,名片報價',
   },
   en: {
     title: 'Business Card Printing from 10 pcs | Foil / Spot UV / Rounded Corners | ZprintPro',
-    desc: 'Custom business card printing from 10 pcs. Standard 90×54mm with foil stamping, spot UV, rounded corners, double-sided printing. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote, internationally certified.',
+    desc: 'Custom business card printing from 10 pcs. Standard 90×54mm with foil stamping, spot UV, rounded corners, double-sided printing. Free design proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
     keywords: 'business card printing,custom business cards,premium business cards,foil business cards,spot uv business cards,rounded corner business cards,double sided business cards,name cards,USA business card printing,small batch business cards',
   },
   ja: {
