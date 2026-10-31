@@ -11,6 +11,7 @@
 
 import type { Locale } from '@/types/locale';
 import type { SchemaOrgData } from '@/types/seo';
+import { PRODUCT_BRAND_NAME } from '@/lib/brand';
 
 // 2026-07-18 修复: 强制使用生产域名, 防止 CF Pages 环境变量 NEXT_PUBLIC_SITE_URL
 // 被误配为 pages.dev 预览域名导致 schema URL 污染 (GSC 实测已发生)
@@ -532,9 +533,12 @@ export function generateCategoryItemListJsonLd(
           // Google 商家信息对该字段的校验极不稳定(自由文本也反复判无效), 该字段为可选项,
           // 移除后商品摘要/商家信息校验可通过, 不影响排名。
           // GSC「商家信息」要求: 提供全局品牌标识符
+          // 2026-11-01 GMC「字段 brand 重复」(51→60) 修复: 三语统一集团品牌常量 —
+          //   旧值随语种取值，与页面 Product 节点在 hreflang 归并后形成多品牌冲突。
+          //   可见品牌分层不变 (UI/标题按语种)，仅结构化数据统一。
           brand: {
             '@type': 'Brand',
-            name: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
+            name: PRODUCT_BRAND_NAME,
           },
           // 2026-08-04 K3 P0-2: 删 aggregateRating 假数据 (K3 v2 §3.3 约束 4: 无真实评价数据, 不可编造)
           // 7/13 注释加的 "公司级综合评分 4.9/128" 是假数据, 7/28 v2.1 拍板删但 schema-extensions.ts 漏改

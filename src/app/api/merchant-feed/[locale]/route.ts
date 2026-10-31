@@ -49,6 +49,12 @@ const brandByLocale: Record<keyof typeof localeConfig, string> = {
 
 type Locale = keyof typeof localeConfig;
 
+/**
+ * 2026-11-01 GMC「字段 brand 重复」修复: feed 商品品牌必须与实际页面 Product.brand 一致 (同为集团品牌常量)。
+ * brandByLocale 仅用于 feed 频道元数据 (channel title/description 的人读文案)。
+ */
+import { PRODUCT_BRAND_NAME } from '@/lib/brand';
+
 // 颜色映射：为常见品类提供默认颜色
 // Google Merchant Center color 属性用于产品搜索过滤
 const colorBySlug: Record<string, string> = {
@@ -170,7 +176,7 @@ function buildFeed(locale: Locale): string {
       <!-- 2026-11-01: 移除 g:sale_price — Google 规范要求 sale_price 必须低于 price; 无折扣数据源时
            83/83 项两者相等 (线上实测), 相等值会被忽略并可能触发价格类提示。无折扣不输出。 -->
       <g:availability>in_stock</g:availability>
-      <g:brand>${xmlEscape(brandByLocale[locale])}</g:brand>
+      <g:brand>${xmlEscape(PRODUCT_BRAND_NAME)}</g:brand>
       <g:condition>new</g:condition>
       <!-- 2026-10-31: 移除 g:mpn — 定制印刷品無廠商零件號; mpn+brand 是 Google 跨語商品聚類鍵,
            三語 feed 同 mpn (sku_code) 而各語品牌不同 → GSC「字段 brand 重複」51 項根因。

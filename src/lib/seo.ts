@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 
 import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
+import { PRODUCT_BRAND_NAME } from '@/lib/brand';
 
 /**
  * 2026-07-22 定稿 (user 拍板): Schema.org / GSC / favicon 统一 gsc-logo.png (3 locale 通用)
@@ -1272,7 +1273,11 @@ export function generateProductJsonLd(
     url: `${siteConfig.url}/${locale}/product/${slug}/`,
     brand: {
       '@type': 'Brand',
-      name: brandName,
+      // 2026-11-01 GMC「字段 brand 重复」(51→60) 终局修复:
+      //   本节点 @id 为 per-locale 节点，Google 按 hreflang 将三语页面归并为同一商品；
+      //   旧实现让商品品牌随语种取值，同一商品于是出现多个品牌值 → Duplicate field: brand。
+      //   现统一为集团品牌常量（见 @/lib/brand）。可见品牌分层与 seller 均不变。
+      name: PRODUCT_BRAND_NAME,
       url: siteConfig.url,
       logo: siteConfig.logo,
     },
