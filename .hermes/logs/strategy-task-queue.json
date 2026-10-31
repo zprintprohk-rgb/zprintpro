@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T08:47:00Z",
+  "generated_at": "2026-10-31T17:32:00+08:00 ((3) 先行执行完毕, 余 11 处待排批)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -699,10 +699,14 @@
       "evidence": "审计完成 (.hermes/logs/2026-10-31-five-category-truth-audit.md): 13 处冲突 —— flyers: H1「100張起」vs MOQ 10、卡「50 張起」、title/desc 起价 HK$0.18 vs 真值最低 0.25、卡价 0.14/0.31; books: 「1 本起訂」与「無線膠裝 100 本起」vs MOQ 10、卡价 1.20/0.87 vs 最低 6; posters: 卡 alt「10張起印 HK$12.9」(裁决 #1 已定 16)、卡价 2.20 vs 最低 13、说明段「A2 約 HK$6-9／A1 HK$10-16（100張批量）」vs price_range 95-1,017/290-7,200; stickers: 单位「每個」应为「張」(2 处), 数量与价格一致; packaging: MOQ 100/200/300/500 与逐 SKU 完全一致, 仅需补「哪个盒型对应哪个 MOQ」标注。词形假设已证伪: flyers H1/title/desc 均已含「宣傳單張」(正文 12 次), 战略 §3.1 第4条应从缺口降级。",
       "score": 0.85,
       "write_scope": "5 个 category 页的可见数字与单位; 未改任何值, 仅审计",
-      "approval_gate": "WAITING_K3: 三选一 — (1) 全部按 products.ts 真值统一 (2) 保留区间但补条件标注 (3) 只先修 flyers H1「100張起」+ posters alt「HK$12.9」两处最刺眼矛盾",
+      "approval_gate": "剩余 11 处待 K3 (1) 排批: flyers 卡价 0.14/0.31 与 title/desc 起价 0.18、books「1本起訂」/「無線膠裝100本起」/卡价 1.20/0.87、posters 卡价 2.20 与批量段 A2 6-9/A1 10-16、stickers 单位「每個」→「張」; 建议 11-06 复测前一次审完",
       "owner_lane": "manual",
       "status": "WAITING_K3",
-      "created_at": "2026-10-31T12:40:00+08:00"
+      "created_at": "2026-10-31T12:40:00+08:00",
+      "result": "PARTIAL: K3 2026-10-31 批准 (3) 先行 + (1) 排批。已执行 b4b0c0f2: ① flyers socialProof stat 100張起→10張起 (category-conversion-blocks.ts L844, label 未动) ② posters a2-posters title_zh/description HK$12.9→HK$16 (products.ts, 同时把标题当量 58→56 修回合规)。线上复验 2026-10-31 17:30:21 双项生效 (flyers 社交证明 10張起, posters 类目/PDP 无 HK$12.9)。",
+      "execution_commit": "b4b0c0f2",
+      "online_verified": "2026-10-31T17:30:21+08:00 flyers category 10張起 / posters category+PDP 无 HK$12.9",
+      "next_check": "2026-11-06"
     }
   ],
   "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
