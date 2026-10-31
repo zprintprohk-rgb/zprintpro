@@ -50,7 +50,7 @@
 4. 结算页把 `wireTransferInfo`/`currency`/`orderNumber` 写入 localStorage 快照
 5. 确认页统一取源（DB ∪ localStorage）+ JPY/CNY 金额单位修正
 
-### 1.4 端到端验证（2026-11-01 03:22 实跑，生产环境）
+### 1.4 端到端验证（2026-11-01 03:22-03:26：API 层 + 真实浏览器点击路径）
 
 | 检查 | 结果 |
 |---|---|
@@ -60,7 +60,19 @@
 | 银行信息回传 | `DBS Bank (Hong Kong) Limited` · `7949835442` · `DHBKHKHH` ✅ |
 | 订单确认页可达 | `200` · 55,601 字节 · HTML 完整 ✅ |
 | 币种白名单 | `EUR` → 400 ✅ / `JPY` → 200 且 `amountMajor 80000`（无小数膨胀）✅ |
-| **落库** | ❌ `persisted:false — supabase_service_role_not_configured`（详见 K3 动作 4） |
+| **落库** | ❌ `persisted:false — supabase_service_role_not_configured`（详见 K3 动作 1） |
+
+**真实浏览器点击路径（第二层验证，2026-11-01 03:24）**：
+
+| 步骤 | 结果 |
+|---|---|
+| PDP「加入購物車」 | ✅ localStorage `zprintpro-cart` 写入 1 件 |
+| `/cart/` | ✅ 显示 背膠海報 HK$13.00 · 小計/合計 HK$13.00 · 運費「結算時計算」· 「前往結算」 |
+| 点「前往結算」 | ✅ 进入 `/zh-hk/checkout/`：11 个表单域 · **銀行電匯/微信支付/支付寶** · 「提交訂單」 |
+| 填表 + 提交 | ⚠️ **订单建成**（`7ca20602…` / `ZP20261031-4767` / HK$13 / wire 已存 localStorage）**但落在 `/cart/` 显示「購物車是空的」** |
+
+⇒ 发现**第二处断点（仅真实点击能暴露）**：`clearCart()` 后空车守卫抢先 `router.push('/cart/')`，覆盖了去订单确认页的跳转 → **客户（与 GMC 审查员）永远看不到确认页与 DBS 收款账户**。
+已修（`07a6f7b9`）：`submittedRef` 标记让守卫让路 + 渲染「正在生成訂單…」过渡态。
 
 ---
 
@@ -144,3 +156,4 @@
 | `1bb7a2a7` | **新建 `/api/create-payment-session`** + 结算/确认页打通 | ✅ 已上线（03:15 build SUCCESS）+ 端到端验通 |
 | `ea9ffb73` | feed 移除 `g:sale_price`（83/83 与 price 相等） | ✅ 已上线 |
 | `414549e5` | **Product.brand 三语统一**（brand 重复终局修复） | ⏳ 待 03:40 后窗口构建 |
+| `07a6f7b9` | **空车守卫让路**（提交后不再弹回 /cart/，客户能看到收款账户） | ⏳ 同批发车 |
