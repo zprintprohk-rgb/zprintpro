@@ -214,3 +214,10 @@ NEXT: ① 2026-11-07 复测 貼紙印刷（120 imps @ pos 40.88）／貼紙訂�
 - 8-gram 相似度：PASS（≤3.6%，自身旧版 0.5%）
 - encoding ✓／tsc 54=基线 ✓／build 723 URLs ✓／brand --strict A 类 0 ✓／gsc-leak 0 ✓
 - 队列回写 `remeasure` + `measurement_history` + `learning.last_failure_mode = conflicting_commercial_truth`
+
+## 四、终验（2026-10-31 23:24）
+
+- **push**：✅ `e5be3f58..74a80039 main -> main`
+- **curl**：`/zh-hk/blog/sticker-guide/` 200 + **「5-7 個工作天」线上生效**；`/zh-hk/category/stickers/` 200
+- **段12 online**：三语全 PASS（generated 6 块、内嵌 0）；汇总 PASS=28 / FAIL=8（8 条为 en/ja sticker-guide 存量段2/6/7/8，本轮按队列仅 zh-hk）
+- CF build：curl 已证线上新内容生效（verify-deploy 轮询超时未取到明确状态，以 curl+marker+段12 为准）
