@@ -103,6 +103,14 @@
 
 > 若 K3 认为「香港页面 schema 里出现集团品牌」不可接受，备选方案是给三语商品加 per-locale `sku` 让其成为三个独立商品；但该方案依赖 Google 以 sku+brand 而非 hreflang 聚类，确定性低于本方案。
 
+**上线验证（2026-11-01 04:07 实测）**：
+
+```
+adhesive-posters / white-card-bags / mailer-boxes / kraft-paper-bags  ×  zh-hk·en·ja
+  schemaBrand=[ZprintPro] （12/12 全部统一）  titleBrand=ok（可见品牌仍按语种）
+feed g:brand: zh-hk=ZprintPro  en=ZprintPro  ja=ZprintPro
+```
+
 ---
 
 ## 3. 顺带澄清（避免误操作）
@@ -122,10 +130,10 @@
 
 | # | 动作 | 说明 |
 |---|---|---|
-| 1 | **补 `SUPABASE_SERVICE_ROLE_KEY`**（CF Pages → Settings → Environment variables → Production） | 实测缺失，订单当前只发邮件不落库；补后无需改代码，下次构建生效 |
-| 2 | **等品牌修复构建完成**（约 30-40 分钟后），再回 GSC 点「验证修正情况」 | 现在点必然再被拒（页面仍带旧品牌值） |
-| 3 | GMC 复审结果观察 | 你已提交「我已解决此问题」；购买链路已实测可完成，预计通过 |
-| 4 | 忽略/删除 2 封探针订单邮件（`New Order ZP20261031-7145` 等） | 端到端验证产生，未落库，无需在 Supabase 清理 |
+| 1 | **无需重配 `SUPABASE_SERVICE_ROLE_KEY`**（已确认你早已设为 Secret） | 问题在读取侧：`NEXT_PUBLIC_*` 是**构建时内联**所以能读，Secret 是**运行时绑定**，edge route 里 `process.env` 不一定能拿到。已改为进程内自诊断（只报变量名），上线后一测即知是「名字差异 / 只设了 Preview / 通道问题」三种中的哪一种；无需你动手 |
+| 2 | **等品牌修复构建完成后，回 GSC 点「验证修正情况」** | 品牌统一已上线验证（见 §2.3），但 Google 需重爬（通常 3-7 天），现在点仍可能被判“页面仍受影响” |
+| 3 | GMC 复审结果观察 | 你已提交「我已解决此问题」；购买链路已实测可完成（API + 浏览器点击 + 空车守卫修复） |
+| 4 | 忽略/删除 2 封探针订单邮件（`ZP20261031-7145` / `ZP20261031-4767`） | 端到端验证产生，未落库，无需在 Supabase 清理 |
 | 5 | 吊销 10-29 遗留的两枚 CF API token | 随时 |
 
 **验收标准**：GSC 受影响项 60 → 0（Google 重抓后，通常 3-7 天）；GMC 79 商品 → 已批准。
@@ -156,4 +164,5 @@
 | `1bb7a2a7` | **新建 `/api/create-payment-session`** + 结算/确认页打通 | ✅ 已上线（03:15 build SUCCESS）+ 端到端验通 |
 | `ea9ffb73` | feed 移除 `g:sale_price`（83/83 与 price 相等） | ✅ 已上线 |
 | `414549e5` | **Product.brand 三语统一**（brand 重复终局修复） | ⏳ 待 03:40 后窗口构建 |
-| `07a6f7b9` | **空车守卫让路**（提交后不再弹回 /cart/，客户能看到收款账户） | ⏳ 同批发车 |
+| `07a6f7b9` | **空车守卫让路**（提交后不再弹回 /cart/，客户能看到收款账户） | ✅ 已上线 |
+| `e2080c2a` | env 自诊断（只报变量名）+ 不再要求重配 Secret | ⏳ 待窗口构建（约 04:29） |
