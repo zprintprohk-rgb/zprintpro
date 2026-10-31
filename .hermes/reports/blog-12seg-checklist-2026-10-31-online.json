@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T03:17:22.693Z",
+ "generated_at": "2026-10-31T03:26:00.907Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -299,7 +299,7 @@
    "seg": 3,
    "name": "H2 问句段群",
    "status": "PASS",
-   "evidence": "H2 4 + H3 2 = 6 个，问句 4 个（67%）",
+   "evidence": "H2 5 + H3 2 = 7 个，问句 5 个（71%）",
    "reason": ""
   },
   {
@@ -317,7 +317,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "68 个数字 + 检出资料来源标记",
+   "evidence": "75 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -325,18 +325,18 @@
    "slug": "poster-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "en",
    "slug": "poster-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
-   "reason": "补 poster-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "en",
@@ -1018,9 +1018,9 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -1190,7 +1190,7 @@
    "seg": 3,
    "name": "H2 问句段群",
    "status": "PASS",
-   "evidence": "H2 5 + H3 2 = 7 个，问句 5 个（71%）",
+   "evidence": "H2 6 + H3 2 = 8 个，问句 6 个（75%）",
    "reason": ""
   },
   {
@@ -1208,7 +1208,7 @@
    "seg": 5,
    "name": "原创数据段",
    "status": "PASS",
-   "evidence": "86 个数字 + 检出资料来源标记",
+   "evidence": "93 个数字 + 检出资料来源标记",
    "reason": ""
   },
   {
@@ -1216,18 +1216,18 @@
    "slug": "poster-printing-guide",
    "seg": 6,
    "name": "客户案例",
-   "status": "FAIL",
-   "evidence": "无客户案例段，也无「待校准」标注",
-   "reason": "补 1 个一手案例（行业+用量+结果）或显式标「待 008 案例库校准」"
+   "status": "PASS",
+   "evidence": "检出客户案例段标记",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "poster-printing-guide",
    "seg": 7,
    "name": "E-E-A-T 署名段",
-   "status": "FAIL",
-   "evidence": "content 侧信号缺失: LinkedIn | Person(生成层承载,待 --online)",
-   "reason": "补 poster-printing-guide 的 LinkedIn（FDA/EU REACH 属正文引用, 必须写在 content 内）"
+   "status": "PASS",
+   "evidence": "Person(生成层承载,待 --online) + LinkedIn + FDA + EU REACH（content 侧）",
+   "reason": ""
   },
   {
    "locale": "ja",
@@ -2783,7 +2783,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=190243",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191286",
    "reason": ""
   },
   {
@@ -2864,7 +2864,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=226580",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=228891",
    "reason": ""
   },
   {
@@ -2917,81 +2917,81 @@
    "slug": "packaging-box-pricing-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/packaging-box-pricing-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=186143",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182894",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/poster-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=165435",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193226",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/foil-stamping-3-applications-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=215213",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "hong-kong-printing-cost-baseline-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/hong-kong-printing-cost-baseline-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189125",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "roll-up-banner-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/roll-up-banner-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=176146",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "print-specifications-reference-guide-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/print-specifications-reference-guide-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195942",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "school-exercise-book-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/school-exercise-book-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=165521",
+   "reason": ""
   }
  ]
 }
