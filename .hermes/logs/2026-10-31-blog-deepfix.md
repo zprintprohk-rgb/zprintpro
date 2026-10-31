@@ -70,3 +70,33 @@
 ## 达标率（当日累计）
 
 **基线 54 / 现存 5 / 已修 49 / 剩余待修 5**（roll-up 10 + cost-baseline 13 + print-spec 5 + school-exercise 15 + campus 6；剩 poster 4 / packaging 1）
+
+---
+
+# 10-31 第二批（同轮续清）：poster + packaging — 基线清零
+
+**VERDICT: OK**（push 排 11:49 后台窗口，§0.25 30min）— poster-printing-guide（en/ja）+ packaging-box-pricing-2026（ja）补缺，**段 FAIL 5→0，基线 5→0（54 条存量全部清零）**；本地 commit 4c141391。
+
+## 1. 修复清单
+
+| slug | 缺口 | 修复 |
+|---|---|---|
+| poster-printing-guide | en 段6/段7、ja 段6/段7；excerpt 空；zh schemas 空 | en/ja 补 Customer Case/顧客事例（订单结构：1,200 A2 157g HK$9/張 + 200 A1 PP HK$45，数字全来自正文既有声明，含「待校准」）+ LinkedIn 段；en/ja/zh 补 excerpt；zh 补 schemas 5 类；en 案例段补 121 字达 12,000 目标 |
+| packaging-box-pricing-2026 | ja 段6（案例标题「顧客ケース」不匹配门童正则）；en/ja excerpt 空 | 标题改「顧客事例」；en/ja/zh 补 excerpt |
+
+- 两篇属「9/3 Pillar 升级批」→ date/lastUpdated 归位 **2026-09-03**（guard 硬规则；campus 同）
+- 12 段骨架：两篇均 **PASS 33 / FAIL 0**（含线上）
+- 相似度闸门 PASS（vs 同簇 ≤14.2%，自身旧版 ≤1.4%）；GSC 保护 0 删
+
+## 2. 残留（blog-standard，非 pre-push 门禁）
+
+- packaging title 当量 **81 (en) / 69 (ja)** 超 50-57 → 挂账（候选已备，待 K3 授权动 title）
+- poster ja 长度 8,143 < 12,000 Q4 目标（≥6,000 floor ✓，WARN 级）
+
+## 3. 5 步 verify（第二批）
+
+1. encoding ✅ 2. tsc 54=基线 ✅ 3. build ✅（723 URLs）4. push ⏳ 11:49 窗口 5. curl/段12 ⏳ 同窗口
+
+## 累计（10-29 起全部轮次）
+
+**基线 54 / 现存 0 / 已修 54 / 剩余待修 0** — roll-up 10 + cost-baseline 13 + print-spec 5 + school-exercise 15 + campus 6 + poster 4 + packaging 1
