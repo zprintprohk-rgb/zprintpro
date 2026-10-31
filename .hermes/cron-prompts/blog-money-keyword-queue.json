@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T23:40:00+08:00",
+  "updated_at": "2026-10-31T23:58:00+08:00",
   "source_window": "2026-09-30..2026-10-27",
   "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
@@ -289,12 +289,12 @@
       ],
       "primary_url": "/zh-hk/category/books/",
       "search_intent": "book and textbook procurement by binding, page count, paper, colour, proof and school-use conditions",
-      "evidence_gap": "Existing textbook guide is reusable; binding decision depth and 1/10/100-copy source consistency require audit. 教科書印刷 has no exact or containing match in this GSC file.",
+      "evidence_gap": "RESOLVED 2026-10-31: 1/10/100-copy 口径已按 SKU 核实——教科書 ED-004(educational) minQuantity=100；騎馬釘/膠裝/精裝 BK-002/003/004 minQuantity=10。原「Existing textbook guide is reusable; binding decision depth and 1/10/100-copy source consistency require audit」已由第 6 轮交付关闭；教科書印刷 在本 GSC 档仍无精确或包含匹配（NO_CURRENT_BASELINE）。",
       "target_slug": "textbook-printing-guide",
       "action": "review_then_rewrite_only_if_new_decision_value_exists",
-      "status": "review_or_rewrite",
-      "last_delivered": null,
-      "recheck_after": null,
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-07",
       "source_window": "2026-09-30..2026-10-27",
       "baseline": {
         "書刊印刷": {
@@ -315,9 +315,40 @@
         "Link to books and educational only where the procurement context is relevant."
       ],
       "learning": {
-        "last_failure_mode": null,
-        "next_run_constraints": []
+        "last_failure_mode": "commercial_truth_and_segment_gaps",
+        "next_run_constraints": [
+          "改任何 MOQ 前逐 SKU 對照 products.ts minQuantity 與 quantities：教科書 ED-004（educational 類）minQuantity=100，books 類 BK-002/003/004 minQuantity=10，兩者不可互套",
+          "客戶可見正文不得出現 products.ts 等內部檔名，統一寫「依 SKU 牌價／規格」",
+          "段6/7/8 缺口按 12 段骨架一次補齊：案例須標「待 008 案例庫校準」，FDA／EU REACH 只作法規對照，不得寫成認證取得"
+        ]
       },
+      "delivered_url": "/zh-hk/blog/textbook-printing-guide/",
+      "delivery_note": "review_or_rewrite 完成：既有 textbook-printing-guide 已覆蓋製本／紙材／價錢／年度合約／校對／交期／FAQ，按「review_then_rewrite_only_if_new_decision_value_exists」不新建近義 slug。本輪＝商業真值對賬＋12 段補缺：膠裝 100 本起→10 本起（BK-003 minQuantity=10，48-400 頁）、精裝 100 本起→10 本起（BK-004 minQuantity=10），教科書 100 本起保留（ED-004 minQuantity=100）；清除 3 處 products.ts 內部檔名；補段2 快速答案 ×3、段6 客戶案例（待 008 校準）、段7 E-E-A-T（LinkedIn + FDA 21 CFR 175.300 + EU REACH 1907/2006）、段8 七條【】GEO 原子＋數據來源行。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "書刊印刷": {
+              "impressions": 101,
+              "clicks": 0,
+              "position": 32.28
+            },
+            "印書": {
+              "impressions": 52,
+              "clicks": 0,
+              "position": 31.96
+            },
+            "教科書印刷": null
+          },
+          "query_page": {
+            "書刊印刷": { "imps": 202, "urls": 4, "top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 45.5, "concentration": "split" },
+            "印書": { "imps": 148, "urls": 7, "top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 34.5, "concentration": "split" }
+          },
+          "action": "review_or_rewrite_delivered (commercial truth reconciliation + 12-seg completion)",
+          "judgement": "交付前基線；7 天（2026-11-07）復測 書刊印刷／印書 展示、排名與點擊；教科書印刷 本窗口無匹配，維持 NO_CURRENT_BASELINE"
+        }
+      ],
       "query_page_evidence": {
         "window": "2026-09-30..2026-10-27",
         "dimension": "query×page",
@@ -961,6 +992,12 @@
       "change": "flyers-zh-hk.evidence_gap 更正: 词形缺口不成立(实测 87%/77% 且 H1/title/desc 已承接)",
       "evidence": ".hermes/logs/money-kw-share-baseline-2026-10-31.md",
       "previous": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation."
+    },
+    {
+      "at": "2026-10-31T23:58+08:00",
+      "by": "executor (deepseek, ZP-blog-deepfix)",
+      "change": "books-zh-hk 交付回寫: status review_or_rewrite→remeasure; 更正 MOQ 判讀——教科書屬 ED-004(educational 類, minQuantity=100) 故「100 本起」為真; 膠裝/精裝屬 BK-003/BK-004(books 類, minQuantity=10) 故原文「100 本起」為假, 已改 10 本起",
+      "evidence": "src/data/products.ts L5141-5332 (BK-002/003/004) + L5977-6045 (ED-004); .hermes/logs/2026-10-31-blog-deepfix.md 第六轮"
     }
   ]
 }
