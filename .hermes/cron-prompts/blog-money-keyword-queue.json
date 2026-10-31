@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31",
+  "source_window": "2026-09-30..2026-10-27",
+  "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+  "measurement_scope": "all countries; query, page and country tables are not joined",
+  "selection_policy": {
+    "max_articles_per_run": 1,
+    "executable_statuses": [
+      "queued",
+      "review_or_rewrite",
+      "remeasure"
+    ],
+    "priority_order": [
+      "flyers-zh-hk",
+      "stickers-zh-hk",
+      "books-zh-hk",
+      "packaging-zh-hk",
+      "posters-zh-hk"
+    ],
+    "rules": [
+      "Consume the previous lane result before selecting work.",
+      "Do not select an item whose recheck_after is later than the run date unless new GSC evidence justifies it.",
+      "Do not create an article when review_or_rewrite can close the evidence gap.",
+      "A commercial truth conflict changes the item to blocked_waiting_k3; never choose a value independently.",
+      "A delivered item becomes remeasure for 7/14/28-day checks, then completed; it cannot be regenerated without a new evidence gap.",
+      "NO_OP is valid when no item has enough verified evidence or information gain."
+    ]
+  },
+  "items": [
+    {
+      "cluster": "flyers-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "宣傳單張",
+        "宣傳單張印刷"
+      ],
+      "primary_url": "/zh-hk/category/flyers/",
+      "search_intent": "transactional procurement: size, paper, sides, quantity, artwork and quote conditions",
+      "evidence_gap": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation.",
+      "target_slug": "flyer-printing-buying-guide",
+      "action": "create_one_if_slug_is_free_and_facts_are_verified",
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-07",
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "宣傳單張": {
+          "impressions": 117,
+          "clicks": 0,
+          "position": 29.37
+        },
+        "宣傳單張印刷": {
+          "impressions": 103,
+          "clicks": 0,
+          "position": 29.02
+        }
+      },
+      "constraints": [
+        "Do not invent or reconcile MOQ, price, turnaround, certification or capacity without an approved source.",
+        "Support the category page; do not target the transaction head term with the blog URL.",
+        "Add natural bidirectional links only when both pages and slugs exist."
+      ],
+      "learning": {
+        "last_failure_mode": "queue_evidence_gap_inaccurate",
+        "next_run_constraints": [
+          "队列 evidence_gap 标「No general guide was found」时，必须先查 src/data/blog-data/*.json 与 blog-posts.ts 是否存在已覆盖该意图的文章",
+          "blog-posts.ts 存在但 blog-data 无正文的孤儿 slug（如 flyer-buying-guide）视为缺陷，需报告并等拍板后处理，不得擅自删条目"
+        ]
+      },
+      "delivered_url": "/zh-hk/blog/flyer-printing-guide/",
+      "delivery_note": "队列原定新建 flyer-printing-buying-guide；审计发现既有 flyer-printing-guide 已覆盖采购指南意图（zh-hk 原 6,870 字，H2 覆盖：宣傳單張幾錢/尺寸/紙質/單雙面/MOQ/交期/工藝/設計/FAQ），按 selection_policy「Do not create an article when review_or_rewrite can close the evidence gap」改为复写修复，未新建近义 slug。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "宣傳單張": {
+              "impressions": 117,
+              "clicks": 0,
+              "position": 29.37
+            },
+            "宣傳單張印刷": {
+              "impressions": 103,
+              "clicks": 0,
+              "position": 29.02
+            }
+          },
+          "action": "review_or_rewrite_delivered (repair, no new article)",
+          "judgement": "交付前基线；7 天（2026-11-07）复测 GSC 主词展示/排名/点击"
+        }
+      ]
+    },
+    {
+      "cluster": "stickers-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "貼紙印刷",
+        "貼紙訂製"
+      ],
+      "primary_url": "/zh-hk/category/stickers/",
+      "search_intent": "transactional sticker selection by material, adhesive, finish, use surface and quantity",
+      "evidence_gap": "Existing long guides cover material broadly; query-to-page attribution and conflicting MOQ/turnaround conditions need review before any rewrite.",
+      "target_slug": "sticker-guide",
+      "action": "review_then_rewrite_only_if_new_decision_value_exists",
+      "status": "review_or_rewrite",
+      "last_delivered": null,
+      "recheck_after": null,
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "貼紙印刷": {
+          "impressions": 120,
+          "clicks": 0,
+          "position": 40.88
+        },
+        "貼紙訂製": {
+          "impressions": 34,
+          "clicks": 0,
+          "position": 32.41
+        }
+      },
+      "constraints": [
+        "Do not create another generic sticker guide.",
+        "Do not merge, redirect or canonicalize pages without query-by-page evidence.",
+        "Block commercial claims when 10/100-copy or 2-3/5-7-day conditions cannot be tied to an approved SKU source."
+      ],
+      "learning": {
+        "last_failure_mode": null,
+        "next_run_constraints": []
+      }
+    },
+    {
+      "cluster": "books-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "書刊印刷",
+        "印書",
+        "教科書印刷"
+      ],
+      "primary_url": "/zh-hk/category/books/",
+      "search_intent": "book and textbook procurement by binding, page count, paper, colour, proof and school-use conditions",
+      "evidence_gap": "Existing textbook guide is reusable; binding decision depth and 1/10/100-copy source consistency require audit. 教科書印刷 has no exact or containing match in this GSC file.",
+      "target_slug": "textbook-printing-guide",
+      "action": "review_then_rewrite_only_if_new_decision_value_exists",
+      "status": "review_or_rewrite",
+      "last_delivered": null,
+      "recheck_after": null,
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "書刊印刷": {
+          "impressions": 101,
+          "clicks": 0,
+          "position": 32.28
+        },
+        "印書": {
+          "impressions": 52,
+          "clicks": 0,
+          "position": 31.96
+        },
+        "教科書印刷": null
+      },
+      "constraints": [
+        "Do not use an old 教科書印刷 position as the current baseline.",
+        "Do not repeat institution counts, certifications or turnaround claims without a decision record.",
+        "Link to books and educational only where the procurement context is relevant."
+      ],
+      "learning": {
+        "last_failure_mode": null,
+        "next_run_constraints": []
+      }
+    },
+    {
+      "cluster": "packaging-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "紙盒印刷",
+        "包裝盒訂製",
+        "包裝盒印刷"
+      ],
+      "primary_url": "/zh-hk/category/packaging/",
+      "search_intent": "custom packaging procurement by box type, material, structure, quantity, finishing and proof",
+      "evidence_gap": "Long pricing and box-type guides already exist; 100/500-unit and imposition conditions need commercial-truth reconciliation before content changes.",
+      "target_slug": "packaging-box-pricing-2026",
+      "alternate_slug": "kraft-paper-box-types-comparison-2026",
+      "action": "commercial_truth_audit_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": null,
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "紙盒印刷": {
+          "impressions": 46,
+          "clicks": 0,
+          "position": 33.3
+        },
+        "包裝盒訂製": {
+          "impressions": 47,
+          "clicks": 0,
+          "position": 31.51
+        },
+        "包裝盒印刷": {
+          "impressions": 54,
+          "clicks": 0,
+          "position": 31.89
+        }
+      },
+      "constraints": [
+        "Packaging batch 1 remains WAITING_K3; do not publish commercial changes.",
+        "Do not create a generic packaging trends article.",
+        "After approval, rewrite only one existing guide and preserve its slug."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": [
+          "Require the K3 decision record before changing queue status."
+        ]
+      }
+    },
+    {
+      "cluster": "posters-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "海報印刷"
+      ],
+      "primary_url": "/zh-hk/category/posters/",
+      "search_intent": "poster procurement by size, paper, artwork, quantity and delivery conditions",
+      "evidence_gap": "The head term is already at position 14.94; category, guide and PDP attribution must be measured before deciding whether any rewrite is useful.",
+      "target_slug": "poster-printing-guide",
+      "action": "measure_query_page_attribution_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": "2026-11-07",
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "海報印刷": {
+          "impressions": 286,
+          "clicks": 1,
+          "position": 14.94
+        }
+      },
+      "constraints": [
+        "Poster commercial work remains WAITING_K3.",
+        "Do not change titles, prices, canonicals or redirects.",
+        "Do not rebuild the existing poster guide family."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": [
+          "Require query-by-page data and the K3 decision record before content work."
+        ]
+      }
+    },
+    {
+      "cluster": "stickers-en",
+      "locale": "en",
+      "money_queries": [
+        "small batch sticker printing"
+      ],
+      "primary_url": "/en/category/stickers/",
+      "search_intent": "small-batch sticker purchase with proof, specification and fulfilment clarity",
+      "evidence_gap": "Position is already 5.50; query-to-page attribution, CTR and enquiry evidence are more useful than another article.",
+      "target_slug": null,
+      "action": "measurement_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": "2026-11-28",
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "small batch sticker printing": {
+          "impressions": 46,
+          "clicks": 0,
+          "position": 5.5
+        }
+      },
+      "constraints": [
+        "The en sticker commercial item remains WAITING_K3.",
+        "Do not create another small-batch synonym article."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": []
+      }
+    },
+    {
+      "cluster": "catalog-en",
+      "locale": "en",
+      "money_queries": [
+        "china catalog printing"
+      ],
+      "primary_url": "/en/category/books/",
+      "search_intent": "catalog procurement, binding and international order conditions",
+      "evidence_gap": "Commercial truth and query-to-page attribution are pending; no automatic content production.",
+      "target_slug": null,
+      "action": "measurement_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": "2026-11-28",
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "china catalog printing": {
+          "impressions": 72,
+          "clicks": 0,
+          "position": 15.79
+        }
+      },
+      "constraints": [
+        "The en catalog commercial item remains WAITING_K3."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": []
+      }
+    },
+    {
+      "cluster": "comiket-ja",
+      "locale": "ja",
+      "money_queries": [
+        "コミケ 印刷"
+      ],
+      "primary_url": "/ja/category/japan-doujin/",
+      "search_intent": "event-driven doujin printing by deadline, binding, page count and copy quantity",
+      "evidence_gap": "C109 commercial dates and commitments are not approved; retain measurement only.",
+      "target_slug": null,
+      "action": "measurement_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": "2026-11-28",
+      "source_window": "2026-09-30..2026-10-27",
+      "baseline": {
+        "コミケ 印刷": {
+          "impressions": 173,
+          "clicks": 0,
+          "position": 18.99
+        }
+      },
+      "constraints": [
+        "The ja C109 commercial item remains WAITING_K3.",
+        "Do not invent event deadlines, express turnaround or translated claims."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": []
+      }
+    }
+  ],
+  "audit_notes": [
+    {
+      "date": "2026-10-31",
+      "finding": "blog-posts.ts 注册 flyer-buying-guide（三语 title 齐备）但 blog-data 三语均无正文，线上页面 HTTP 200 空内容（soft-404）；flyer-printing-guide 曾链向该空页，已改指向 a5-vs-a6-flyer-size。待 K3 裁决：删除条目或后续以独立角度补正文。",
+      "source": "GSC 28d 2026-10-30 档 + products.ts + 线上 curl"
+    }
+  ]
+}

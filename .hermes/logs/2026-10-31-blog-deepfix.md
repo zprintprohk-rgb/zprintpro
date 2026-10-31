@@ -100,3 +100,71 @@
 ## 累计（10-29 起全部轮次）
 
 **基线 54 / 现存 0 / 已修 54 / 剩余待修 0** — roll-up 10 + cost-baseline 13 + print-spec 5 + school-exercise 15 + campus 6 + poster 4 + packaging 1
+
+## 补充（11:49 窗口 push + 终验，2026-10-31 11:55）
+
+- **push**：✅ `227c5b41..662a0a63 main -> main`（11:49:29，§0.25 30min 窗口内；head 含对端合并提交）
+- **CF build**：✅ success（11:55:28）
+- **curl 6 URL 全 200**：poster en CaseOK / poster ja 顧客事例OK / packaging ja 顧客事例OK（新内容线上生效；poster zh + packaging en/zh 对照组 200）
+- **段12 online**：三语全 PASS——generated 6 块、内嵌 0
+- **基线终态：fails = 0（54 条存量全部清零）**
+
+---
+
+# 第四轮 · v1 队列驱动（带钱词深层 Blog 车道 2026-10-31-money-keyword-v1）
+
+VERDICT: OK
+CONSUMED: 重要文件今日新档（`2026-10-31-money-keyword-seo-aeo-geo-global-strategy.md` 22,722B／`zprintpro-blog-deepfix.md` v1 156 行／`blog-money-keyword-queue.json` v1 8 项／`2026-10-31-money-keyword-strategy-and-cron-upgrade.md`）＋ `docs/` 同档副本 + GSC 28d 2026-10-30 档（窗口 2026-09-30..2026-10-27）＋ `products.ts` flyer SKU 真值（a5-flyers minQuantity 10／quantities 100×1·500×0.8·1,000×0.65·5,000×0.5／finishings 雙面+20%·摺疊+35%／sizes A5×0.65·A4×1·A3×1.8）＋ 锁状态 lane.lock FREE ＋ run-context-blog-deepfix.json 缺失（BUS_UNAVAILABLE）
+DELIVERED: `flyer-printing-guide` zh-hk 实质复写修复（6,870→8,347 字，+1,477）：MOQ 双档位说明（數碼 10 張／柯式 100 張阶梯，全部 products.ts 溯源）、客户案例段（待案例庫校準）、LinkedIn URL、12 条【】GEO 原子、内链 9→12、死链改指真实页、数据来源行；**12 段骨架 zh-hk 全 PASS（段12 online 待部署）**；队列回写 `remeasure` + `last_delivered 2026-10-31` + `recheck_after 2026-11-07`
+NEXT: ① 2026-11-07 复测 宣傳單張／宣傳單張印刷（117/103 imps @ pos 29.37/29.02 交付前基线）；② en/ja flyer 页段1/6/7/8 存量缺口（本轮按队列仅 zh-hk，未同步三语）；③ `flyer-buying-guide` 孤儿空页待 K3 裁决；④ 若 commit 被 sibling 未提交 route.ts 的品牌门禁挡，则保持 staged 待下轮随批
+
+数据来源: `重要文件/2026-10-31-money-keyword-seo-aeo-geo-global-strategy.md` · `重要文件/zprintpro-blog-deepfix.md` · `.hermes/cron-prompts/blog-money-keyword-queue.json` · `GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx` · `src/data/products.ts`（a5-flyers／a4-flyers／double-sided-flyers SKU 块） · `src/data/blog-posts.ts`（slug 占用核查） · 线上 curl（flyer-buying-guide 空内容确认）
+
+## 一、选题执行（队列状态机）
+
+| 步 | 结论 |
+|---|---|
+| 队列体检 | 8 项：1 `queued`（flyers-zh-hk）、2 `review_or_rewrite`（stickers／books）、5 `blocked_waiting_k3`；无 `remeasure` 到期项（posters 2026-11-07、其余 2026-11-28） |
+| 第一优先 | flyers-zh-hk（queue 唯一 `queued`，priority_order 第 1） |
+| **审计纠正** | 队列 evidence_gap 写「No general flyer procurement guide was found」**不成立**：`flyer-printing-guide` 已存在（zh-hk 6,870 字，H2 覆盖 宣傳單張幾錢／尺寸／紙質／單雙面／MOQ／交期／工藝／設計／FAQ），另 `a5-vs-a6-flyer-size`（12,820 zh）与 `folded-leaflet-printing-guide`（7,331 zh）已覆盖尺寸/摺法深度 |
+| 动作调整 | 按 selection_policy「Do not create an article when review_or_rewrite can close the evidence gap」→ **不新建** `flyer-printing-buying-guide`（避免近义 slug），改为复写修复既有 `flyer-printing-guide` |
+| 幂等 | git log 无该 slug 近期深度重写；队列 last_delivered 为空 ✓ |
+
+## 二、商业真值对账（products.ts 唯一真值）
+
+正文原缺口与真值对照（全部可溯源，无编造）：
+- **MOQ**：SKU `minQuantity=10`（數碼）＋ `quantities` 阵列自 100 張起（柯式共用版 8 折/6.5 折/5 折）→ 原文「標準起印量係 100 張」与「10 張起」自相矛盾 → 已改为**双档位说明**（數碼 10 張／柯式 100 張阶梯），价格表起印量列同步改「數碼 10 張／柯式 100 張」。
+- **折扣阶梯**（500 張 8 折／1,000 張 6.5 折／5,000 張 5 折）＝ products.ts `quantities.discount` 真值 ✓（保留）。
+- **雙面 +20%** ＝ `finishings.double.surcharge=20` ✓（保留）；**摺疊 +35%** ✓（atoms 新增）。
+- **A3 ×1.8** ＝ `sizes.a3.multiplier=1.8` ✓（保留）。
+- **特殊工藝 500 張起印**：products.ts 无此参数 → 改为「起印量視工藝而定，落單前由報價確認」（不再给无源数字）。
+
+## 三、修复清单（zh-hk，1 篇）
+
+1. 段1 首段 83 字 PASS（保留）
+2. 段2 快速答案块 8 个 PASS
+3. 段3 H2 11 个/问句 6（55%）PASS（新增案例 H2 非问句，整体仍 ≥50%）
+4. 段4 表格 2 张 PASS
+5. 段5 116 数字 + 新增 **數據來源** 行（GSC 后台表述按 §0.23.1 已从客户可见内容移除，只在报告保留）
+6. 段6 新增 **客戶案例：茶餐廳 5,000 張街派傳單**（含「待案例庫校準」）
+7. 段7 作者段补 **LinkedIn URL**（linkedin.com/in/zprintpro-engineer）
+8. 段8 新增 **12 条【】GEO 知识原子**（15 年／10 張起／A5 牌價／數量折扣／雙面加幅／尺寸倍率／交期／FSC／FDA／EU REACH／24h SLA／DHL）
+9. 段9 FAQ 6 组 PASS；段10 CTA 3 处 PASS
+10. 段11 内链 9→**12 条**（+ a5-vs-a6-flyer-size、folded-leaflet-printing-guide、category/flyers）
+11. 死链修复：原「傳單印刷選購指南」指向空页 `flyer-buying-guide` → 改指 `a5-vs-a6-flyer-size`
+12. 段12 online 待部署后判定
+
+## 四、审计发现（待 K3 裁决）
+
+1. **孤儿 slug**：`blog-posts.ts` 注册 `flyer-buying-guide`（三语 title 齐备），但 `blog-data` 三语均无正文 → 线上 HTTP 200 空内容（soft-404）。已把文章内链改走真实页；**待裁决：删除条目 或 后续以独立角度补正文**（不擅自删他人资产）。
+2. **队列 evidence gap 口径**：本次发现「无通用指南」的判断未核已存在文章；已写入 `learning.next_run_constraints`，下轮不得重犯。
+3. **en/ja flyer 页存量缺口**：段1（en 679 字超长）／段6／段7／段8 缺；本轮按队列仅 zh-hk，未自动同步三语（新 prompt 3.3 明确默认仅队列 locale）。
+
+## 五、验收
+
+- 12 段骨架 zh-hk：**PASS / 0 FAIL**（段12 SKIP→push 后 online）
+- FAQ 6 组可解析（page.tsx extractFaqFromHtml 预检口径）
+- `check-brand-mentions.mjs --strict`：A 类 0 命中
+- `gsc-leak-guard`：0 命中（数据来源行已去 GSC 黑话）
+- encoding：UTF-8 LF；tsc：54=基线；build：见下条
+- 队列 JSON 解析通过；`重要文件` 副本已同步
