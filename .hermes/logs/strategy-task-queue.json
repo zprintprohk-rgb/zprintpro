@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T17:32:00+08:00 ((3) 先行执行完毕, 余 11 处待排批)",
+  "generated_at": "2026-10-31T23:20:00+08:00 (17 词承接基线首测 + 主 URL 认定偏差登记)",
   "source_of_truth": "docs/2026-10-28-data-driven-next-phase-strategy.md",
   "status_policy": "Only READY tasks with satisfied approval_gate may be consumed by daily-content. WAITING_K3/BLOCKED_INFRA/SCHEDULED must not be rewritten as READY by an executor.",
   "tasks": [
@@ -707,6 +707,19 @@
       "execution_commit": "b4b0c0f2",
       "online_verified": "2026-10-31T17:30:21+08:00 flyers category 10張起 / posters category+PDP 无 HK$12.9",
       "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
+      "source_strategy": "2026-10-31-money-keyword-seo-aeo-geo-global-strategy §2.2/§6/§8 承接层 KPI（主 URL 展示份额）",
+      "market": "zh-hk,en,ja",
+      "target": "17 带钱查询的主交易 URL 认定",
+      "evidence": "2026-10-31 query×page 联接首测 (.hermes/logs/money-kw-share-baseline-2026-10-31.md, 1,870+2,159 行): 9 词实际第一 URL 与战略指定不符 —— 貼紙訂製(blog sticker-guide 31% > 分类 30%)、書刊印刷(blog book-buying-guide 46% vs 分类 45%)、印書(blog 34% vs 分类 32%)、海報印刷(blog poster-printing-guide 37% 第一, 分类未进前二, 第二为 a2 PDP 16%)、學校印刷(blog campus pillar 48% vs 分类 38%)、small batch sticker printing(PDP 100%, 仅 1 URL)、china catalog printing(PDP 73%)、コミケ 印刷(PDP 94%)、教材 印刷製本(blog textbook-guide 70% vs PDP 27%)。另 2 词一致但份额低: 貼紙印刷(分类 34%, blog sticker-guide 27%, 10 个 URL 分流)、紙盒印刷(分类 58%)。宣传单张被证伪为「强承接」: 宣傳單張 87%、宣傳單張印刷 77% 均指向 /zh-hk/category/flyers/。",
+      "score": 0.9,
+      "write_scope": "不改页面; 需修正战略 §2.2/§6 的「主 URL」认定与 11-06 复测对象 (en sticker/catalog/ja 同人应以 PDP 为承接主体, 非 category)",
+      "approval_gate": "WAITING_K3: (1) 承认实测承接主体并改写主 URL 认定 (2) 反向执行 —— 把 PDP 承接的 en/ja 交易词改由 category 承接 (需改内链/内容, 成本高) (3) 先只做 zh-hk 海报分流诊断, en/ja 维持现状",
+      "owner_lane": "manual",
+      "status": "WAITING_K3",
+      "created_at": "2026-10-31T23:20:00+08:00"
     }
   ],
   "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"

@@ -1,0 +1,756 @@
+{
+  "generated": "2026-10-31",
+  "source": [
+    "GSC数据/money-kw-query-page-2026-10-31.csv",
+    "GSC数据/money-kw-query-page-country-2026-10-31.csv"
+  ],
+  "items": [
+    {
+      "locale": "zh-hk",
+      "query": "宣傳單張",
+      "designated": "/zh-hk/category/flyers/",
+      "status": "OK",
+      "total_imp": 123.0,
+      "urls": 2,
+      "top_url": "/zh-hk/category/flyers/",
+      "top_share_pct": 87.0,
+      "top_clk": 0.0,
+      "top_pos": 32.95,
+      "pages": [
+        {
+          "url": "/zh-hk/category/flyers/",
+          "imp": 107.0,
+          "clk": 0.0,
+          "share_pct": 87.0,
+          "pos": 32.95
+        },
+        {
+          "url": "/zh-hk/product/a4-flyers/",
+          "imp": 16.0,
+          "clk": 0.0,
+          "share_pct": 13.0,
+          "pos": 13.81
+        }
+      ],
+      "country_of_top_url": {
+        "chn": 1.0,
+        "hkg": 106.0
+      },
+      "verdict": "✅ 与指定一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "宣傳單張印刷",
+      "designated": "/zh-hk/category/flyers/",
+      "status": "OK",
+      "total_imp": 128.0,
+      "urls": 4,
+      "top_url": "/zh-hk/category/flyers/",
+      "top_share_pct": 77.3,
+      "top_clk": 0.0,
+      "top_pos": 28.73,
+      "pages": [
+        {
+          "url": "/zh-hk/category/flyers/",
+          "imp": 99.0,
+          "clk": 0.0,
+          "share_pct": 77.3,
+          "pos": 28.73
+        },
+        {
+          "url": "/zh-hk/product/a4-flyers/",
+          "imp": 20.0,
+          "clk": 0.0,
+          "share_pct": 15.6,
+          "pos": 57.85
+        },
+        {
+          "url": "/zh-hk/product/same-day-flyers/",
+          "imp": 5.0,
+          "clk": 0.0,
+          "share_pct": 3.9,
+          "pos": 38.0
+        },
+        {
+          "url": "/zh-hk/product/a5-flyers/",
+          "imp": 4.0,
+          "clk": 0.0,
+          "share_pct": 3.1,
+          "pos": 60.0
+        }
+      ],
+      "country_of_top_url": {
+        "aus": 1.0,
+        "hkg": 98.0
+      },
+      "verdict": "✅ 与指定一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "貼紙印刷",
+      "designated": "/zh-hk/category/stickers/",
+      "status": "OK",
+      "total_imp": 245.0,
+      "urls": 10,
+      "top_url": "/zh-hk/category/stickers/",
+      "top_share_pct": 33.9,
+      "top_clk": 0.0,
+      "top_pos": 39.41,
+      "pages": [
+        {
+          "url": "/zh-hk/category/stickers/",
+          "imp": 83.0,
+          "clk": 0.0,
+          "share_pct": 33.9,
+          "pos": 39.41
+        },
+        {
+          "url": "/zh-hk/blog/sticker-guide/",
+          "imp": 66.0,
+          "clk": 0.0,
+          "share_pct": 26.9,
+          "pos": 55.64
+        },
+        {
+          "url": "/zh-hk/blog/sticker-buying-guide/",
+          "imp": 62.0,
+          "clk": 0.0,
+          "share_pct": 25.3,
+          "pos": 71.21
+        },
+        {
+          "url": "/zh-hk/product/small-batch-stickers/",
+          "imp": 15.0,
+          "clk": 0.0,
+          "share_pct": 6.1,
+          "pos": 50.07
+        },
+        {
+          "url": "/zh-hk/product/transparent-stickers/",
+          "imp": 10.0,
+          "clk": 0.0,
+          "share_pct": 4.1,
+          "pos": 61.4
+        }
+      ],
+      "country_of_top_url": {
+        "grc": 1.0,
+        "hkg": 80.0,
+        "jpn": 1.0,
+        "usa": 1.0
+      },
+      "verdict": "⚠️ 一致但份额低"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "貼紙訂製",
+      "designated": "/zh-hk/category/stickers/",
+      "status": "OK",
+      "total_imp": 52.0,
+      "urls": 6,
+      "top_url": "/zh-hk/blog/sticker-guide/",
+      "top_share_pct": 30.8,
+      "top_clk": 0.0,
+      "top_pos": 25.5,
+      "pages": [
+        {
+          "url": "/zh-hk/blog/sticker-guide/",
+          "imp": 16.0,
+          "clk": 0.0,
+          "share_pct": 30.8,
+          "pos": 25.5
+        },
+        {
+          "url": "/zh-hk/blog/sticker-buying-guide/",
+          "imp": 15.0,
+          "clk": 0.0,
+          "share_pct": 28.8,
+          "pos": 43.6
+        },
+        {
+          "url": "/zh-hk/category/stickers/",
+          "imp": 13.0,
+          "clk": 0.0,
+          "share_pct": 25.0,
+          "pos": 36.46
+        },
+        {
+          "url": "/zh-hk/product/small-batch-stickers/",
+          "imp": 6.0,
+          "clk": 0.0,
+          "share_pct": 11.5,
+          "pos": 31.83
+        },
+        {
+          "url": "/zh-hk/product/removable-stickers/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 1.9,
+          "pos": 11.0
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 16.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "書刊印刷",
+      "designated": "/zh-hk/category/books/",
+      "status": "OK",
+      "total_imp": 202.0,
+      "urls": 4,
+      "top_url": "/zh-hk/blog/book-buying-guide/",
+      "top_share_pct": 45.5,
+      "top_clk": 0.0,
+      "top_pos": 30.41,
+      "pages": [
+        {
+          "url": "/zh-hk/blog/book-buying-guide/",
+          "imp": 92.0,
+          "clk": 0.0,
+          "share_pct": 45.5,
+          "pos": 30.41
+        },
+        {
+          "url": "/zh-hk/category/books/",
+          "imp": 90.0,
+          "clk": 0.0,
+          "share_pct": 44.6,
+          "pos": 55.08
+        },
+        {
+          "url": "/zh-hk/product/catalog-printing/",
+          "imp": 10.0,
+          "clk": 0.0,
+          "share_pct": 5.0,
+          "pos": 77.1
+        },
+        {
+          "url": "/zh-hk/product/saddle-stitch-booklets/",
+          "imp": 10.0,
+          "clk": 0.0,
+          "share_pct": 5.0,
+          "pos": 43.4
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 92.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "印書",
+      "designated": "/zh-hk/category/books/",
+      "status": "OK",
+      "total_imp": 148.0,
+      "urls": 7,
+      "top_url": "/zh-hk/blog/book-buying-guide/",
+      "top_share_pct": 34.5,
+      "top_clk": 0.0,
+      "top_pos": 32.39,
+      "pages": [
+        {
+          "url": "/zh-hk/blog/book-buying-guide/",
+          "imp": 51.0,
+          "clk": 0.0,
+          "share_pct": 34.5,
+          "pos": 32.39
+        },
+        {
+          "url": "/zh-hk/category/books/",
+          "imp": 47.0,
+          "clk": 0.0,
+          "share_pct": 31.8,
+          "pos": 46.32
+        },
+        {
+          "url": "/zh-hk/product/catalog-printing/",
+          "imp": 41.0,
+          "clk": 0.0,
+          "share_pct": 27.7,
+          "pos": 49.12
+        },
+        {
+          "url": "/zh-hk/product/hardcover-books/",
+          "imp": 4.0,
+          "clk": 0.0,
+          "share_pct": 2.7,
+          "pos": 52.75
+        },
+        {
+          "url": "/zh-hk/product/textbooks/",
+          "imp": 3.0,
+          "clk": 0.0,
+          "share_pct": 2.0,
+          "pos": 73.33
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 51.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "海報印刷",
+      "designated": "/zh-hk/category/posters/",
+      "status": "OK",
+      "total_imp": 567.0,
+      "urls": 10,
+      "top_url": "/zh-hk/blog/poster-printing-guide/",
+      "top_share_pct": 37.0,
+      "top_clk": 1.0,
+      "top_pos": 9.78,
+      "pages": [
+        {
+          "url": "/zh-hk/blog/poster-printing-guide/",
+          "imp": 210.0,
+          "clk": 1.0,
+          "share_pct": 37.0,
+          "pos": 9.78
+        },
+        {
+          "url": "/zh-hk/product/a2-posters/",
+          "imp": 93.0,
+          "clk": 0.0,
+          "share_pct": 16.4,
+          "pos": 37.27
+        },
+        {
+          "url": "/zh-hk/category/posters/",
+          "imp": 64.0,
+          "clk": 0.0,
+          "share_pct": 11.3,
+          "pos": 61.72
+        },
+        {
+          "url": "/zh-hk/blog/retail-shop-poster-printing-guide/",
+          "imp": 60.0,
+          "clk": 0.0,
+          "share_pct": 10.6,
+          "pos": 65.95
+        },
+        {
+          "url": "/zh-hk/blog/poster-buying-guide/",
+          "imp": 55.0,
+          "clk": 0.0,
+          "share_pct": 9.7,
+          "pos": 65.75
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 202.0,
+        "gbr": 1.0,
+        "mac": 2.0,
+        "pol": 1.0,
+        "sgp": 4.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "紙盒印刷",
+      "designated": "/zh-hk/category/packaging/",
+      "status": "OK",
+      "total_imp": 73.0,
+      "urls": 3,
+      "top_url": "/zh-hk/category/packaging/",
+      "top_share_pct": 57.5,
+      "top_clk": 0.0,
+      "top_pos": 33.62,
+      "pages": [
+        {
+          "url": "/zh-hk/category/packaging/",
+          "imp": 42.0,
+          "clk": 0.0,
+          "share_pct": 57.5,
+          "pos": 33.62
+        },
+        {
+          "url": "/zh-hk/product/kraft-paper-packaging-box/",
+          "imp": 23.0,
+          "clk": 0.0,
+          "share_pct": 31.5,
+          "pos": 52.13
+        },
+        {
+          "url": "/zh-hk/product/corrugated-boxes/",
+          "imp": 8.0,
+          "clk": 0.0,
+          "share_pct": 11.0,
+          "pos": 56.75
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 42.0
+      },
+      "verdict": "⚠️ 一致但份额低"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "包裝盒訂製",
+      "designated": "/zh-hk/category/packaging/",
+      "status": "OK",
+      "total_imp": 47.0,
+      "urls": 3,
+      "top_url": "/zh-hk/category/packaging/",
+      "top_share_pct": 95.7,
+      "top_clk": 0.0,
+      "top_pos": 31.6,
+      "pages": [
+        {
+          "url": "/zh-hk/category/packaging/",
+          "imp": 45.0,
+          "clk": 0.0,
+          "share_pct": 95.7,
+          "pos": 31.6
+        },
+        {
+          "url": "/zh-hk/product/cosmetic-boxes/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 2.1,
+          "pos": 28.0
+        },
+        {
+          "url": "/zh-hk/product/kraft-paper-packaging-box/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 2.1,
+          "pos": 31.0
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 45.0
+      },
+      "verdict": "✅ 与指定一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "包裝盒印刷",
+      "designated": "/zh-hk/category/packaging/",
+      "status": "OK",
+      "total_imp": 74.0,
+      "urls": 5,
+      "top_url": "/zh-hk/category/packaging/",
+      "top_share_pct": 70.3,
+      "top_clk": 0.0,
+      "top_pos": 32.04,
+      "pages": [
+        {
+          "url": "/zh-hk/category/packaging/",
+          "imp": 52.0,
+          "clk": 0.0,
+          "share_pct": 70.3,
+          "pos": 32.04
+        },
+        {
+          "url": "/zh-hk/product/kraft-paper-packaging-box/",
+          "imp": 18.0,
+          "clk": 0.0,
+          "share_pct": 24.3,
+          "pos": 49.67
+        },
+        {
+          "url": "/zh-hk/product/white-card-boxes/",
+          "imp": 2.0,
+          "clk": 0.0,
+          "share_pct": 2.7,
+          "pos": 22.0
+        },
+        {
+          "url": "/zh-hk/product/corrugated-boxes/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 1.4,
+          "pos": 39.0
+        },
+        {
+          "url": "/zh-hk/product/food-boxes/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 1.4,
+          "pos": 41.0
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 52.0
+      },
+      "verdict": "✅ 与指定一致"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "利是封印刷",
+      "designated": null,
+      "status": "OK",
+      "total_imp": 69.0,
+      "urls": 4,
+      "top_url": "/zh-hk/category/red-packets/",
+      "top_share_pct": 75.4,
+      "top_clk": 1.0,
+      "top_pos": 22.33,
+      "pages": [
+        {
+          "url": "/zh-hk/category/red-packets/",
+          "imp": 52.0,
+          "clk": 1.0,
+          "share_pct": 75.4,
+          "pos": 22.33
+        },
+        {
+          "url": "/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "imp": 9.0,
+          "clk": 0.0,
+          "share_pct": 13.0,
+          "pos": 7.11
+        },
+        {
+          "url": "/zh-hk/blog/wedding-red-packet-printing-guide/",
+          "imp": 7.0,
+          "clk": 0.0,
+          "share_pct": 10.1,
+          "pos": 5.86
+        },
+        {
+          "url": "/zh-hk/product/custom-red-packets/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 1.4,
+          "pos": 15.0
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 52.0
+      },
+      "verdict": "待定（战略未指定）"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "喜帖印刷",
+      "designated": null,
+      "status": "OK",
+      "total_imp": 15.0,
+      "urls": 2,
+      "top_url": "/zh-hk/product/wedding-thank-you-cards/",
+      "top_share_pct": 73.3,
+      "top_clk": 0.0,
+      "top_pos": 9.36,
+      "pages": [
+        {
+          "url": "/zh-hk/product/wedding-thank-you-cards/",
+          "imp": 11.0,
+          "clk": 0.0,
+          "share_pct": 73.3,
+          "pos": 9.36
+        },
+        {
+          "url": "/zh-hk/category/wedding-invitations/",
+          "imp": 4.0,
+          "clk": 0.0,
+          "share_pct": 26.7,
+          "pos": 34.75
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 11.0
+      },
+      "verdict": "待定（战略未指定）"
+    },
+    {
+      "locale": "zh-hk",
+      "query": "學校印刷",
+      "designated": "/zh-hk/category/educational/",
+      "status": "OK",
+      "total_imp": 42.0,
+      "urls": 5,
+      "top_url": "/zh-hk/blog/campus-education-printing-pillar-guide/",
+      "top_share_pct": 47.6,
+      "top_clk": 0.0,
+      "top_pos": 6.7,
+      "pages": [
+        {
+          "url": "/zh-hk/blog/campus-education-printing-pillar-guide/",
+          "imp": 20.0,
+          "clk": 0.0,
+          "share_pct": 47.6,
+          "pos": 6.7
+        },
+        {
+          "url": "/zh-hk/category/educational/",
+          "imp": 16.0,
+          "clk": 0.0,
+          "share_pct": 38.1,
+          "pos": 33.0
+        },
+        {
+          "url": "/zh-hk/product/school-flyers/",
+          "imp": 3.0,
+          "clk": 0.0,
+          "share_pct": 7.1,
+          "pos": 32.0
+        },
+        {
+          "url": "/zh-hk/blog/graduation-yearbook-printing-guide/",
+          "imp": 2.0,
+          "clk": 0.0,
+          "share_pct": 4.8,
+          "pos": 2.0
+        },
+        {
+          "url": "/zh-hk/product/folded-leaflets/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 2.4,
+          "pos": 41.0
+        }
+      ],
+      "country_of_top_url": {
+        "hkg": 19.0,
+        "prt": 1.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "en",
+      "query": "small batch sticker printing",
+      "designated": "/en/category/stickers/",
+      "status": "OK",
+      "total_imp": 46.0,
+      "urls": 1,
+      "top_url": "/en/product/small-batch-stickers/",
+      "top_share_pct": 100.0,
+      "top_clk": 0.0,
+      "top_pos": 5.5,
+      "pages": [
+        {
+          "url": "/en/product/small-batch-stickers/",
+          "imp": 46.0,
+          "clk": 0.0,
+          "share_pct": 100.0,
+          "pos": 5.5
+        }
+      ],
+      "country_of_top_url": {
+        "idn": 1.0,
+        "isr": 1.0,
+        "usa": 44.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "en",
+      "query": "china catalog printing",
+      "designated": "/en/category/books/",
+      "status": "OK",
+      "total_imp": 77.0,
+      "urls": 3,
+      "top_url": "/en/product/catalog-printing/",
+      "top_share_pct": 72.7,
+      "top_clk": 0.0,
+      "top_pos": 13.62,
+      "pages": [
+        {
+          "url": "/en/product/catalog-printing/",
+          "imp": 56.0,
+          "clk": 0.0,
+          "share_pct": 72.7,
+          "pos": 13.62
+        },
+        {
+          "url": "/en/blog/catalog-printing-china-supplier-guide/",
+          "imp": 20.0,
+          "clk": 0.0,
+          "share_pct": 26.0,
+          "pos": 25.2
+        },
+        {
+          "url": "/zh-hk/services/catalog-printing-china/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 1.3,
+          "pos": 69.0
+        }
+      ],
+      "country_of_top_url": {
+        "can": 11.0,
+        "gbr": 5.0,
+        "usa": 40.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "ja",
+      "query": "コミケ 印刷",
+      "designated": "/ja/category/japan-doujin/",
+      "status": "OK",
+      "total_imp": 174.0,
+      "urls": 2,
+      "top_url": "/ja/product/doujinshi-printing/",
+      "top_share_pct": 94.3,
+      "top_clk": 0.0,
+      "top_pos": 17.33,
+      "pages": [
+        {
+          "url": "/ja/product/doujinshi-printing/",
+          "imp": 164.0,
+          "clk": 0.0,
+          "share_pct": 94.3,
+          "pos": 17.33
+        },
+        {
+          "url": "/ja/blog/comiket-printing-prep-guide/",
+          "imp": 10.0,
+          "clk": 0.0,
+          "share_pct": 5.7,
+          "pos": 50.4
+        }
+      ],
+      "country_of_top_url": {
+        "jpn": 164.0
+      },
+      "verdict": "❌ 与指定不一致"
+    },
+    {
+      "locale": "ja",
+      "query": "教材 印刷製本",
+      "designated": "/ja/category/educational/",
+      "status": "OK",
+      "total_imp": 44.0,
+      "urls": 3,
+      "top_url": "/ja/blog/textbook-printing-guide/",
+      "top_share_pct": 70.5,
+      "top_clk": 0.0,
+      "top_pos": 11.97,
+      "pages": [
+        {
+          "url": "/ja/blog/textbook-printing-guide/",
+          "imp": 31.0,
+          "clk": 0.0,
+          "share_pct": 70.5,
+          "pos": 11.97
+        },
+        {
+          "url": "/ja/product/textbooks/",
+          "imp": 12.0,
+          "clk": 0.0,
+          "share_pct": 27.3,
+          "pos": 56.67
+        },
+        {
+          "url": "/zh-hk/blog/textbook-printing-guide/",
+          "imp": 1.0,
+          "clk": 0.0,
+          "share_pct": 2.3,
+          "pos": 46.0
+        }
+      ],
+      "country_of_top_url": {
+        "jpn": 31.0
+      },
+      "verdict": "❌ 与指定不一致"
+    }
+  ]
+}
