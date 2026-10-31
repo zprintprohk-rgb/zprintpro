@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-10-31T23:40:00+08:00",
   "source_window": "2026-09-30..2026-10-27",
   "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
@@ -37,7 +37,7 @@
       ],
       "primary_url": "/zh-hk/category/flyers/",
       "search_intent": "transactional procurement: size, paper, sides, quantity, artwork and quote conditions",
-      "evidence_gap": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation.",
+      "evidence_gap": "No general flyer procurement guide exists (real gap). 词形缺口已被 2026-10-31 query×page 实测证伪: /zh-hk/category/flyers/ 承接 宣傳單張 87%（2 URL）与 宣傳單張印刷 77%（4 URL），且 H1/title/meta description 均已含「宣傳單張」——原稿「category 主要用傳單、词形承接不齐」不成立，禁止据该假设改词。仍待处理的是 10/100 張起等商业口径（见 2026-10-31-five-category-truth-audit.md）。",
       "target_slug": "flyer-printing-buying-guide",
       "action": "create_one_if_slug_is_free_and_facts_are_verified",
       "status": "remeasure",
@@ -89,7 +89,21 @@
           "action": "review_or_rewrite_delivered (repair, no new article)",
           "judgement": "交付前基线；7 天（2026-11-07）复测 GSC 主词展示/排名/点击"
         }
-      ]
+      ],
+      "query_page_evidence": {
+        "source": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "宣傳單張": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 87,
+          "urls": 2
+        },
+        "宣傳單張印刷": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 77,
+          "urls": 4
+        },
+        "measured_at": "2026-10-31T23:20+08:00"
+      }
     },
     {
       "cluster": "stickers-zh-hk",
@@ -374,6 +388,13 @@
       "date": "2026-10-31",
       "finding": "blog-posts.ts 注册 flyer-buying-guide（三语 title 齐备）但 blog-data 三语均无正文，线上页面 HTTP 200 空内容（soft-404）；flyer-printing-guide 曾链向该空页，已改指向 a5-vs-a6-flyer-size。待 K3 裁决：删除条目或后续以独立角度补正文。",
       "source": "GSC 28d 2026-10-30 档 + products.ts + 线上 curl"
+    },
+    {
+      "at": "2026-10-31T23:40+08:00",
+      "by": "executor (deepseek)",
+      "change": "flyers-zh-hk.evidence_gap 更正: 词形缺口不成立(实测 87%/77% 且 H1/title/desc 已承接)",
+      "evidence": ".hermes/logs/money-kw-share-baseline-2026-10-31.md",
+      "previous": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation."
     }
   ]
 }

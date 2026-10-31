@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T15:14:41.600Z",
+  "updated_at": "2026-10-31T23:40:00+08:00",
   "source_window": "2026-09-30..2026-10-27",
   "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
   "measurement_scope": "all countries; query, page and country tables are not joined",
@@ -37,7 +37,7 @@
       ],
       "primary_url": "/zh-hk/category/flyers/",
       "search_intent": "transactional procurement: size, paper, sides, quantity, artwork and quote conditions",
-      "evidence_gap": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation.",
+      "evidence_gap": "No general flyer procurement guide exists (real gap). 词形缺口已被 2026-10-31 query×page 实测证伪: /zh-hk/category/flyers/ 承接 宣傳單張 87%（2 URL）与 宣傳單張印刷 77%（4 URL），且 H1/title/meta description 均已含「宣傳單張」——原稿「category 主要用傳單、词形承接不齐」不成立，禁止据该假设改词。仍待处理的是 10/100 張起等商业口径（见 2026-10-31-five-category-truth-audit.md）。",
       "target_slug": "flyer-printing-buying-guide",
       "action": "create_one_if_slug_is_free_and_facts_are_verified",
       "status": "remeasure",
@@ -91,86 +91,18 @@
         }
       ],
       "query_page_evidence": {
-        "window": "2026-09-30..2026-10-27",
-        "dimension": "query×page",
-        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
-        "measured_at": "2026-10-31T15:14:08.597Z",
-        "intent_primary_url": "/zh-hk/category/flyers/",
-        "queries": [
-          {
-            "query": "宣傳單張",
-            "found": true,
-            "imps": 123,
-            "clicks": 0,
-            "ctr_pct": 0,
-            "pos_weighted": 30.46,
-            "urls_with_impressions": 2,
-            "observed_top_url": "/zh-hk/category/flyers/",
-            "observed_top_share_pct": 87,
-            "concentration": "concentrated",
-            "top5": [
-              {
-                "url": "/zh-hk/category/flyers/",
-                "imps": 107,
-                "share_pct": 87,
-                "clicks": 0,
-                "pos": 32.95
-              },
-              {
-                "url": "/zh-hk/product/a4-flyers/",
-                "imps": 16,
-                "share_pct": 13,
-                "clicks": 0,
-                "pos": 13.81
-              }
-            ]
-          },
-          {
-            "query": "宣傳單張印刷",
-            "found": true,
-            "imps": 128,
-            "clicks": 0,
-            "ctr_pct": 0,
-            "pos_weighted": 34.62,
-            "urls_with_impressions": 4,
-            "observed_top_url": "/zh-hk/category/flyers/",
-            "observed_top_share_pct": 77.3,
-            "concentration": "concentrated",
-            "top5": [
-              {
-                "url": "/zh-hk/category/flyers/",
-                "imps": 99,
-                "share_pct": 77.3,
-                "clicks": 0,
-                "pos": 28.73
-              },
-              {
-                "url": "/zh-hk/product/a4-flyers/",
-                "imps": 20,
-                "share_pct": 15.6,
-                "clicks": 0,
-                "pos": 57.85
-              },
-              {
-                "url": "/zh-hk/product/same-day-flyers/",
-                "imps": 5,
-                "share_pct": 3.9,
-                "clicks": 0,
-                "pos": 38
-              },
-              {
-                "url": "/zh-hk/product/a5-flyers/",
-                "imps": 4,
-                "share_pct": 3.1,
-                "clicks": 0,
-                "pos": 60
-              }
-            ]
-          }
-        ],
-        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+        "source": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "宣傳單張": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 87,
+          "urls": 2
+        },
+        "宣傳單張印刷": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 77,
+          "urls": 4
+        },
+        "measured_at": "2026-10-31T23:20+08:00"
       }
     },
     {
@@ -1022,6 +954,13 @@
       "finding": "blog-posts.ts 注册 flyer-buying-guide（三语 title 齐备）但 blog-data 三语均无正文，线上页面 HTTP 200 空内容（soft-404）；flyer-printing-guide 曾链向该空页，已改指向 a5-vs-a6-flyer-size。待 K3 裁决：删除条目或后续以独立角度补正文。",
       "source": "GSC 28d 2026-10-30 档 + products.ts + 线上 curl"
     },
-    "2026-10-31 22:5x: 补 query×page 实测承接 (GSC API, 窗口 2026-09-30..10-27, 与冻结基线同窗) 到 8 个 items 的 observed 字段; 未改 status/main_url; split 仅作假设线索"
+    "2026-10-31 22:5x: 补 query×page 实测承接 (GSC API, 窗口 2026-09-30..10-27, 与冻结基线同窗) 到 8 个 items 的 observed 字段; 未改 status/main_url; split 仅作假设线索",
+    {
+      "at": "2026-10-31T23:40+08:00",
+      "by": "executor (deepseek)",
+      "change": "flyers-zh-hk.evidence_gap 更正: 词形缺口不成立(实测 87%/77% 且 H1/title/desc 已承接)",
+      "evidence": ".hermes/logs/money-kw-share-baseline-2026-10-31.md",
+      "previous": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation."
+    }
   ]
 }
