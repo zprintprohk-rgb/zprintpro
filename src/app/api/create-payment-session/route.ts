@@ -54,8 +54,48 @@ const DEFAULT_WIRE: Omit<WireTransferInfo, 'reference_template' | 'snapshot_at'>
   branch_code: '478',
 };
 
-function buildWireTransferInfo(): WireTransferInfo {
-  const env = process.env;
+/**
+ * 2026-11-01 修正: Pages 的 Secret 类型变量（如 SUPABASE_SERVICE_ROLE_KEY）是**运行时绑定**，
+ * 在 @cloudflare/next-on-pages 下不保证出现在 process.env（process.env 仅确保有构建时内联的 NEXT_PUBLIC_*）。
+ * 官方通道 = getOptionalRequestContext().env。两路合并，前者优先。
+ */
+interface RuntimeEnvResult {
+  env: Record<string, string | undefined>;
+  diag: {
+    /** 运行时实际可见的 SUPABASE/SERVICE/RESEND/STRIPE 变量名（只报名，不报值） */
+    processEnvCandidates: string[];
+    processEnvKeyCount: number;
+    /** NODE_ENV 供确认跑在 production 上 */
+    nodeEnv: string | null;
+  };
+}
+
+/**
+ * 2026-11-01: 环境读取 + 自诊断。
+ * 不再尝试导入 @cloudflare/next-on-pages/api（该子路径无类型且可能拉入 Node 内置，构建风险大于收益）；
+ * 先由 process.env 读，再用 diag 报告«运行时到底能看到哪些变量名»——用以区分三种情况：
+ *   a) 名存在但拼写不同 → 看 candidates
+ *   b) 名不存在 → Secret 可能只设到 Preview 环境，或未触发新部署
+ *   c) 存在但取不到值 → 需改走绑定通道
+ */
+async function getRuntimeEnv(): Promise<RuntimeEnvResult> {
+  const bag: Record<string, string | undefined> = {};
+  for (const [k, v] of Object.entries(process.env)) {
+    if (typeof v === 'string') bag[k] = v;
+  }
+  return {
+    env: bag,
+    diag: {
+      processEnvCandidates: Object.keys(process.env).filter((k) =>
+        /SUPABASE|SERVICE|RESEND|STRIPE/i.test(k)
+      ),
+      processEnvKeyCount: Object.keys(process.env).length,
+      nodeEnv: process.env.NODE_ENV ?? null,
+    },
+  };
+}
+
+function buildWireTransferInfo(env: Record<string, string | undefined>): WireTransferInfo {
   return {
     bank_name: env.NEXT_PUBLIC_BANK_NAME || DEFAULT_WIRE.bank_name,
     account_number: env.NEXT_PUBLIC_BANK_ACCOUNT || DEFAULT_WIRE.account_number,
@@ -90,10 +130,12 @@ function makeOrderNumber(): string {
 /** 双 schema 自适应落库：先 001 主 schema，失败再试旧 v2 列；返回实际生效的 schema 名或错误 */
 async function persistOrder(
   row: Record<string, unknown>,
-  legacyRow: Record<string, unknown>
+  legacyRow: Record<string, unknown>,
+  env: Record<string, string | undefined>
 ): Promise<{ ok: boolean; schema?: string; error?: string }> {
-  const url = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  const url = env.SUPABASE_URL || env.NEXT_PUBLIC_SUPABASE_URL;
+  const serviceKey =
+    env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_SERVICE_ROLE_KE || env.SUPABASE_SERVICE_KEY;
   if (!url || !serviceKey) {
     return { ok: false, error: 'supabase_service_role_not_configured' };
   }
@@ -123,6 +165,7 @@ async function persistOrder(
 
 export async function POST(request: NextRequest) {
   const cors = corsHeaders(request.headers.get('origin'));
+  const { env, diag: runtimeDiag } = await getRuntimeEnv();
 
   let body: any;
   try {
@@ -171,7 +214,7 @@ export async function POST(request: NextRequest) {
   // amount 为最小单位（HKD/USD 分, JPY/CNY 整数元）→ 主单位
   const amountMajor = currency === 'JPY' || currency === 'CNY' ? amount : amount / 100;
 
-  const wireTransferInfo = paymentMethod === 'bank_transfer' ? buildWireTransferInfo() : undefined;
+  const wireTransferInfo = paymentMethod === 'bank_transfer' ? buildWireTransferInfo(env) : undefined;
 
   // ── 落库（best-effort，永不阻断客户） ──────────────────────────────
   const primaryRow: Record<string, unknown> = {
@@ -211,10 +254,21 @@ export async function POST(request: NextRequest) {
 
   let persist: { ok: boolean; schema?: string; error?: string };
   try {
-    persist = await persistOrder(primaryRow, legacyRow);
+    persist = await persistOrder(primaryRow, legacyRow, env);
   } catch (e) {
     persist = { ok: false, error: e instanceof Error ? e.message : 'persist_failed' };
   }
+
+  // 2026-11-01 自诊断: 只报“变量名是否存在” (不泄值), 供上线核对 Secret 是否真的进了运行时绑定
+  const envDiag = {
+    supabaseUrl: Boolean(env.SUPABASE_URL || env.NEXT_PUBLIC_SUPABASE_URL),
+    serviceRoleKey: Boolean(
+      env.SUPABASE_SERVICE_ROLE_KEY || env.SUPABASE_SERVICE_ROLE_KE || env.SUPABASE_SERVICE_KEY
+    ),
+    serviceRoleCandidates: Object.keys(env).filter((k) => /SERVICE_ROLE/i.test(k)),
+    runtimeBindingSource: env.SUPABASE_SERVICE_ROLE_KEY ? 'binding_or_process' : 'absent',
+    ...runtimeDiag,
+  };
 
   // ── 订单通知邮件（best-effort，5s 上限，失败不影响下单） ────────────
   try {
@@ -257,6 +311,7 @@ export async function POST(request: NextRequest) {
       amountMajor,
       ...(wireTransferInfo ? { wireTransferInfo } : {}),
       persisted: persist.ok,
+      envDiag,
       ...(persist.ok ? {} : { persistError: persist.error }),
     },
     { status: 200, headers: cors }
