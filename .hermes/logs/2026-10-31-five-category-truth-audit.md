@@ -107,3 +107,8 @@ MOQ 实测 `100個起 / 200個起 / 300個起 / 500個起` **与 products.ts 逐
 | 其余 11 处 | 按 K3 (1) 排批，11-06 复测前一次审完 | — |
 
 **更正**：首次审计把 F1 记为「H1 区大标题」，实测 location 为 socialProof 统计块；flyers 真实 H1 为「香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件」，不含 100張起。数字结论不变，位置已更正。
+
+**补正（2026-10-31 23:58，第 6 轮 blog-deepfix 双方法复核）**：§1「books 5 SKU 全部 MOQ=10」的口径**只覆盖 books 类的 BK-001~BK-005**（catalog / saddle / perfect / hardcover / spiral）。**教科書 SKU = ED-004，属 educational 类，minQuantity=100**（products.ts L5977-6045）。因此：
+- 博客内「教科書 100 本起」为**真值**，不在本审计 B1/B2 冲突范围；
+- B1「1 本起訂」、B2「無線膠裝 100 本起」仍与 books 类 minQuantity=10 冲突，维持 WAITING_K3 结论不变；
+- 该类目页数字本轮**未改动**（仅修博客正文，write_scope 限 `src/data/blog-data/zh-hk.json`）。
