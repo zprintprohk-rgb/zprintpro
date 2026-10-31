@@ -290,10 +290,32 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
   // Get order details from whichever source
   const items = dbOrder?.quote_data?.items as any[] || localOrder?.items || [];
   const form = dbOrder?.quote_data?.contact as any || localOrder?.form || {};
-  const total = dbOrder?.amount ? dbOrder.amount / 100 : localOrder?.total || 0;
-  const currency = dbOrder?.currency || 'HKD';
+  /* 2026-11-01: 金额按币种换算 — JPY/CNY 无小数位 (checkout toSmallestUnit 不 ×100), 其余为分 */
+  const total = dbOrder?.amount
+    ? ((dbOrder as any).currency === 'JPY' || (dbOrder as any).currency === 'CNY'
+        ? dbOrder.amount
+        : dbOrder.amount / 100)
+    : localOrder?.total || 0;
+  const currency = (dbOrder as any)?.currency || (localOrder as any)?.currency || 'HKD';
 
   const isZh = locale === 'zh-hk';
+
+  /* 2026-11-01: 统一数据源 — orders 表 RLS 仅 admin 可读 (migration 001),
+     确认页的 Supabase 查询在浏览器端必然为空 → 实际展示走 localStorage 快照。
+     故 wire 信息 / 单号 / 支付方式必须两条路同时取, 否则客户看不到收款账户
+     = GMC「用户无法完成购买交易」根因之一。 */
+  const effectiveWire =
+    (dbOrder as any)?.wire_transfer_info || (localOrder as any)?.wireTransferInfo || null;
+  const effectivePayMethod =
+    (dbOrder as any)?.payment_method || (localOrder as any)?.paymentMethod || 'bank_transfer';
+  const effectiveOrderNumber =
+    (dbOrder as any)?.order_number ||
+    (localOrder as any)?.orderNumber ||
+    (dbOrder as any)?.id ||
+    (localOrder as any)?.id ||
+    orderId;
+  const effectiveCurrency = currency;
+  const effectiveAmount = total;
 
   if (!order) {
     return (
@@ -416,15 +438,15 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                 </div>
               ) : status === 'pending' || status === 'awaiting_wire_transfer' ? (
                 /* Pending state: branch on payment_method */
-                dbOrder?.payment_method === 'bank_transfer' && dbOrder.wire_transfer_info ? (
+                effectivePayMethod === 'bank_transfer' && effectiveWire ? (
                   /* 2026-06-25: 银行电汇 — 显示 DBS 账户信息 + 国内客户 QR 备用 */
                   <>
                     <h2 className="font-bold text-[#333333] mb-3">{t.bankInfoTitle}</h2>
                     <BankTransferInfo
-                      wireTransferInfo={dbOrder.wire_transfer_info}
-                      orderNumber={dbOrder.order_number || dbOrder.id}
-                      amount={(dbOrder.amount || 0) / 100}
-                      currency={dbOrder.currency || 'HKD'}
+                      wireTransferInfo={effectiveWire}
+                      orderNumber={effectiveOrderNumber}
+                      amount={effectiveAmount}
+                      currency={effectiveCurrency}
                       t={{
                         title: t.bankInfoTitle,
                         subtitle: t.bankInfoSubtitle,
@@ -528,12 +550,12 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                   /* Fallback: 历史 airwallex 订单 / 未知 payment_method → 银行电汇 (降级) */
                   <>
                     <h2 className="font-bold text-[#333333] mb-3">{t.bankInfoTitle}</h2>
-                    {dbOrder?.wire_transfer_info ? (
+                    {effectiveWire ? (
                       <BankTransferInfo
-                        wireTransferInfo={dbOrder.wire_transfer_info}
-                        orderNumber={dbOrder.order_number || dbOrder.id}
-                        amount={(dbOrder.amount || 0) / 100}
-                        currency={dbOrder.currency || 'HKD'}
+                        wireTransferInfo={effectiveWire}
+                        orderNumber={effectiveOrderNumber}
+                        amount={effectiveAmount}
+                        currency={effectiveCurrency}
                         t={{
                           title: t.bankInfoTitle,
                           subtitle: t.bankInfoSubtitle,

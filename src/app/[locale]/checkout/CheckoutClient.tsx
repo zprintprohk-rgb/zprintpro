@@ -321,15 +321,20 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
       });
 
       // Save to localStorage as fallback (订单确认页 fallback)
+      // 2026-11-01: 一并保存 wireTransferInfo / currency — orders 表 RLS 仅 admin 可读,
+      //   确认页读 DB 必然拿不到 → 银行账户信息只能走 localStorage 快照, 否则客户看不到收款账户
       const orderData = {
         id: session.orderId,
+        orderNumber: (session as any).orderNumber,
         items,
         total: totalPrice,
+        currency: (session as any).currency || currencyMap[locale],
         form,
         date: new Date().toISOString(),
         locale,
         paymentMethod: session.paymentMethod,
         displayCurrency: currencyMap[locale],
+        wireTransferInfo: session.wireTransferInfo || null,
       };
       localStorage.setItem('zprintpro-current-order', JSON.stringify(orderData));
 
