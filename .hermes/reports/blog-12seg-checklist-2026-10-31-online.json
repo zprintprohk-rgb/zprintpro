@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-31T15:47:59.993Z",
+ "generated_at": "2026-10-31T20:06:18.269Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2926,36 +2926,36 @@
    "slug": "sticker-material-pvc-vinyl-removable",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: len 0 < 20000（疑似占位/错误页） (https://zprintpro.com/ja/blog/sticker-material-pvc-vinyl-removable/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=182894",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "poster-printing-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/poster-printing-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=166597",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "campus-education-printing-pillar-guide",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/campus-education-printing-pillar-guide/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193226",
+   "reason": ""
   },
   {
    "locale": "ja",
    "slug": "foil-stamping-3-applications-2026",
    "seg": 12,
    "name": "Schema 块",
-   "status": "INVALID",
-   "evidence": "段12 线上断言无效: HTTP 503 (https://zprintpro.com/ja/blog/foil-stamping-3-applications-2026/)",
-   "reason": "网络/限流问题；重跑或串行降速，绝不视为通过"
+   "status": "PASS",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=106936",
+   "reason": ""
   },
   {
    "locale": "ja",

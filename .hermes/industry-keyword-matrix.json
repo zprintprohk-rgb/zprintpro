@@ -1,4 +1,112 @@
 {
+  "gsc_feedback_2026_11_01": {
+    "date": "2026-11-01",
+    "type": "每日证据轮 (API 直取恢复数据可用性; xlsx 10-31/11-01 仍缺; 同方法两窗首测 + 任务J hkg 首份 API 基线)",
+    "report": ".hermes/logs/2026-11-01-ZP-gsc-feedback.md",
+    "anomaly_json": ".hermes/logs/gsc-daily-anomaly-2026-11-01.json",
+    "run_type": "结果总线契约(-1) > 恢复模式 > 大脑区 > v9.3; retry_queue=[] ⇒ 无 RETRY_OF; idempotency_key ca85b3bed63b9b6e (已消费, 执行完成口径 OK)",
+    "files_consumed": [
+      "GSC数据/gsc-date-page-28d-end1031.csv (API, 2026-10-04..10-29, 6,092 行, 490 clk / 24,297 imp)",
+      "GSC数据/gsc-date-page-28d-end1027.csv (API 基线, 2026-09-30..10-27, 503 / 25,095)",
+      "GSC数据/money-kw-query-page-end1031.csv (1,724 行, 74 / 10,192)",
+      "GSC数据/gsc-query-country-28d-end1031.csv (1,506 行, 74 / 7,572; hkg/jpn/usa 分国家)"
+    ],
+    "verdict": "OK · 执行完成轮 (data_status FRESH_API_2026_11_01 partial; RECOVERY 117.7% CARRIED; streak 2/3)",
+    "data_availability": {
+      "api_pull_present": true,
+      "pulled_by": "同日同侪会话 2026-11-01 09:5x (scripts/fetch_gsc_data.py --end)",
+      "xlsx_2026_10_31_or_11_01": false,
+      "newest_xlsx_batch": "2026-10-30 09:03",
+      "api_latest_data_day": "2026-10-29",
+      "kpi_data_age_hours_at_run": 68,
+      "detector_data_age_days": 5,
+      "index_json": "lastBuild 2026-10-30T21:33 / totalFiles 241 / filesByDate 无 2026-11-01 (A27)"
+    },
+    "kpi_api_same_method": {
+      "baseline_28d": {"window": "2026-09-30..2026-10-27", "clicks": 503, "imps": 25095, "ctr_pct": 2.0, "pos": 17.06},
+      "new_26d": {"window": "2026-10-04..2026-10-29", "clicks": 490, "imps": 24297, "ctr_pct": 2.02, "pos": 17.12},
+      "per_day": {"clicks": "17.96 -> 18.85 (+4.96%)", "imps": "896.3 -> 934.5 (+4.26%)"},
+      "last7": {"imps_per_day": "966.4 -> 1003.7 (+3.86%)", "clicks": "136 -> 132 (-2.94%)"},
+      "dual_method": "日序列 26 天求和 = 文件总量 (490 / 24,297); CTR 490/24,297 = 2.0167% -> 2.02%; 平均排名单方法",
+      "cross_method_warning": "xlsx 同窗 496/21,127/pos 13.56 vs API 503/25,095/pos 17.06; 混比会造出假恶化 (A24)"
+    },
+    "recovery": {
+      "headline_dynamic": "117.7% = 888 / 754.5 (CARRIED / FROZEN_REPEAT, 24h 窗仍 10-29T05..10-30T04)",
+      "precliff_fixed": "151.7% = 888 / 585.2 (单站和三站和口径, 仅次要; 不得作首值)",
+      "same_caliber_28d": "105.6% (carried)",
+      "streak": "2/3 confirmed fresh points; third NOT ESTABLISHED (10-31 与 11-01 均为冻结复读)",
+      "api_caliber_gap": "无 API 口径 pre-cliff 分母, 新鲜日序列无法换算恢复率 (A26); 需 owner 定恢复 SSoT"
+    },
+    "money_words_23_api_country": {
+      "caliber": "API query x country, 2026-10-04..10-29; zh-hk->hkg / en->usa / ja->jpn; 不可与 xlsx 查询级表相减",
+      "homepage_hits_strict": "6/23 (zh 2 / en 3 / ja 1)",
+      "page1_zero_click": "食品包裝印刷 108@8.46/0; small batch sticker printing 33@5.64/0; small batch stickers 15@5.20/0; saddle stitch 6@6.67/0; 卒アル販売 16@5.00/0",
+      "deep_20plus": "月曆印刷 102@27.07/0; 貼紙印刷 105@39.71/0; 教材 印刷製本 40@24.75/0",
+      "no_row": "corporate holiday cards; 年賀状印刷 (截断子集缺行, 不等于零需求)"
+    },
+    "task_j_8_hkg_api_baseline": {
+      "status": "10-28 以来首份 hkg 表 (API 口径, 8/8 有行); 今日为新基线, 不与 10-28 xlsx 相减 (A25b)",
+      "lines": {
+        "包裝盒印刷": "47 imp / 0 clk / 32.57",
+        "包裝盒訂製": "43 / 0 / 32.86",
+        "紙盒印刷": "44 / 0 / 35.00",
+        "貼紙印刷": "105 / 0 / 39.71",
+        "宣傳單張": "104 / 0 / 32.79",
+        "即日印刷": "52 / 1 / 7.81",
+        "書刊印刷": "101 / 0 / 31.67",
+        "騎馬釘": "60 / 0 / 19.00"
+      },
+      "structure": "1/8 首页 (即日印刷, 1 clk); 7/8 在 19-40 名且 0 clk",
+      "next_check": "2026-11-03 同调用取首个真 delta"
+    },
+    "same_method_word_deltas_17": {
+      "worsened": "喜帖印刷 15@16.13 -> 7@27.71 (+11.58); 月曆印刷 206@32.93 -> 189@37.07 (+4.15); 教材 印刷製本 44@24.93 -> 45@28.44 (+3.51); 宣傳單張 123@30.46 -> 108@33.86 (+3.40, share 87->97.2%); 利是封印刷 69@18.57 -> 58@21.45 (+2.88)",
+      "improved": "a2 poster 17.20 -> 15.20; コミケ 19.23 -> 17.94 (imp -25); 海報印刷 34.01 -> 33.36 (imp -47); china catalog 17.35 -> 17.07",
+      "flat": "貼紙印刷 53.42 -> 53.36 (0 clk); small batch sticker printing 5.50 -> 5.65 (0 clk); 書刊印刷 44.36 -> 44.65"
+    },
+    "churn_watch": {
+      "教科書": "教科書 印刷 (jpn) 45 imp @47.71/0; 无空格变体两窗 0 展示 ⇒ 旧 47.1 作废",
+      "教材 印刷製本": "same-method 24.93 -> 28.44 恶化",
+      "喜帖印刷": "15 -> 7 imp, 16.13 -> 27.71; 真恶化 P1",
+      "月曆印刷": "32.93 -> 37.07; title trim 效果最早 11-06"
+    },
+    "internal_split_evidence": {
+      "status": "CONFIRMED_AT_QUERY_PAGE (country attribution pending)",
+      "貼紙印刷": "9 URL, top category/stickers 76 @38.75 (32.2%); blog 66 @55.08 + 60 @71.08",
+      "海報印刷": "10 URL, top blog poster-printing-guide 199 @9.49 (38.3%, 首页资产是 blog); product/a2 80 @35.58",
+      "書刊印刷": "4 URL, top blog book-buying 94 @30.52 (43.9%) vs category/books 91 @55.70",
+      "月曆印刷": "4 URL, top product/custom-calendars 91 @28.78 (48.1%) vs category/calendars 84 @42.21",
+      "包裝盒訂製": "2 URL, category/packaging 95.3% (CONCENTRATED, 问题在深度)",
+      "small batch sticker printing": "2 URL, 97.1% 单页 (CONCENTRATED, 纯 CTR 问题)"
+    },
+    "anomalies": {
+      "A1_DATA_STALE": "PARTIALLY_RESOLVED P1 (KPI 面 68h 内; detector 面 5 天外)",
+      "A2_frozen_24h": "OPEN P1 (仍复读 10-30 窗)",
+      "A19_3mo": "OPEN P2",
+      "A20_NO_FRESH_EXPORT": "DOWNGRADED P2 (API 通路已补)",
+      "A21_CALIBER_REGRESSION": "RECURRING P2 (11-01 daily-content 再次 151.7% 首值; 连续第 2 天)",
+      "A23_API_DELTA_WINDOW_LABEL": "NEW P3 (delta 标 10-31, 实止 10-29)",
+      "A24_API_VS_XLSX": "NEW P2 (同窗 3,968 展示差 / 3.5 位差)",
+      "A25_COUNTRY_COVERAGE": "NEW P2 (7,572/24,297 = 31.2%)",
+      "A25b_TASK_J_METHOD_SHIFT": "NEW P2 (新基线, 不相减)",
+      "A26_RECOVERY_NOT_API_COMPUTABLE": "NEW P1 (无 API pre-cliff 分母)",
+      "A27_INDEX_NOT_REBUILT": "NEW P3 (无 2026-11-01 条目)",
+      "A28_MONTHLY_DUE_NO_REPORT": "NEW P2 (REVIEW-20261101-MONTHLY owner monthly-matrix)",
+      "NEW-8_WEDDING_COLLAPSE": "NEW P1 (喜帖 +11.58 位, imp -53%)",
+      "NEW-9_INTERNAL_SPLIT": "NEW P2 (4 簇 SPLIT)"
+    },
+    "priority_boost": {
+      "changes": [],
+      "reason": "新鲜数据已到但无任何跨过 boost 规则的改善: 无新首页进入 (doujinshi 10.00->11.09 退出), 无新首点击, 主锁词持平或恶化 (貼紙 53.36 / 月曆 37.07 / 教材 28.44 / 喜帖 27.71); 此时加 boost 是制造动能",
+      "queue_numeric_fields_touched": false
+    },
+    "next": [
+      "2026-11-02 数据日 10-29 越 72h 前重新 --end 拉取",
+      "2026-11-03 任务J hkg 第二测 + C4 国家归属 + 门童 #9 index 重建 + GEO AI 探针 S1",
+      "2026-11-04 年賀状簇 / 貼紙 14 天",
+      "2026-11-06 poster price / sticker MOQ / catalog / calendar 7d + 喜帖/利是封复核"
+    ]
+  },
   "gsc_feedback_2026_10_31": {
     "date": "2026-10-31",
     "type": "每日证据轮 (无新导出; 恢复读数冻结复读; 72h 数据龄闸门本轮被击穿)",
@@ -2403,6 +2511,20 @@
     ]
   },
   "priority_boost_history": [
+    {
+      "date": "2026-11-01",
+      "trigger": "scheduled gsc-feedback-loop run (20:13; NO xlsx export, but sibling API pull 09:5x delivered 4 fresh CSVs)",
+      "by_orchestrator": true,
+      "changes": [],
+      "no_change_reason": "Fresh data exists for the first time in 3 days, but it does not cross any boost rule: no new page-1 entry (doujinshi printing slipped 10.00 -> 11.09), no new first click, and the locked words are flat or worse (貼紙印刷 53.36, 月曆印刷 37.07, 教材 印刷製本 28.44, 喜帖印刷 27.71). Adding boosts here would manufacture motion from a window shift.",
+      "rules_applied": {
+        "no_new_page1_entry": "hold all",
+        "no_new_first_click": "hold all",
+        "worsening_watch": "hold (monthly diagnosis first)",
+        "caliber_change": "new API country table adopted as baseline only; no delta vs 10-28 xlsx"
+      },
+      "queue_numeric_fields_touched": false
+    },
     {
       "date": "2026-10-31",
       "trigger": "scheduled gsc-feedback-loop run (20:13; NO new GSC export; 10-30 batch carried)",
