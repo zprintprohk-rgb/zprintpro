@@ -1,0 +1,629 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-01T01:51:21.662Z",
+  "windows": {
+    "baseline": "2026-09-30..2026-10-27",
+    "new": "2026-10-04..2026-10-31"
+  },
+  "caliber": "API query×page / date×page，两窗口同方法；不与 xlsx 全站 query 口径相加",
+  "four_metrics_new_28d": {
+    "clicks": 490,
+    "imps": 24297,
+    "ctr_pct": 2.02,
+    "pos_weighted": 17.12,
+    "baseline_2026_10_30": {
+      "clicks": 496,
+      "imps": 21127,
+      "ctr_pct": 2.35,
+      "pos": 13.56,
+      "window": "2026-09-30..2026-10-27"
+    },
+    "note": "两窗口不同（28d 滑动 4 天），只作方向性对比"
+  },
+  "last7d": {
+    "window": "2026-10-23..2026-10-29",
+    "mean_imps": 1003.7,
+    "clicks": 132,
+    "mean_clicks": 18.86
+  },
+  "daily": [
+    {
+      "date": "2026-10-04",
+      "imps": 794,
+      "clicks": 16
+    },
+    {
+      "date": "2026-10-05",
+      "imps": 1013,
+      "clicks": 19
+    },
+    {
+      "date": "2026-10-06",
+      "imps": 970,
+      "clicks": 10
+    },
+    {
+      "date": "2026-10-07",
+      "imps": 942,
+      "clicks": 17
+    },
+    {
+      "date": "2026-10-08",
+      "imps": 915,
+      "clicks": 13
+    },
+    {
+      "date": "2026-10-09",
+      "imps": 747,
+      "clicks": 11
+    },
+    {
+      "date": "2026-10-10",
+      "imps": 637,
+      "clicks": 14
+    },
+    {
+      "date": "2026-10-11",
+      "imps": 860,
+      "clicks": 17
+    },
+    {
+      "date": "2026-10-12",
+      "imps": 932,
+      "clicks": 23
+    },
+    {
+      "date": "2026-10-13",
+      "imps": 1026,
+      "clicks": 29
+    },
+    {
+      "date": "2026-10-14",
+      "imps": 1218,
+      "clicks": 30
+    },
+    {
+      "date": "2026-10-15",
+      "imps": 1075,
+      "clicks": 27
+    },
+    {
+      "date": "2026-10-16",
+      "imps": 1005,
+      "clicks": 16
+    },
+    {
+      "date": "2026-10-17",
+      "imps": 656,
+      "clicks": 10
+    },
+    {
+      "date": "2026-10-18",
+      "imps": 651,
+      "clicks": 14
+    },
+    {
+      "date": "2026-10-19",
+      "imps": 882,
+      "clicks": 21
+    },
+    {
+      "date": "2026-10-20",
+      "imps": 975,
+      "clicks": 25
+    },
+    {
+      "date": "2026-10-21",
+      "imps": 968,
+      "clicks": 22
+    },
+    {
+      "date": "2026-10-22",
+      "imps": 1005,
+      "clicks": 24
+    },
+    {
+      "date": "2026-10-23",
+      "imps": 908,
+      "clicks": 9
+    },
+    {
+      "date": "2026-10-24",
+      "imps": 709,
+      "clicks": 10
+    },
+    {
+      "date": "2026-10-25",
+      "imps": 898,
+      "clicks": 20
+    },
+    {
+      "date": "2026-10-26",
+      "imps": 1121,
+      "clicks": 32
+    },
+    {
+      "date": "2026-10-27",
+      "imps": 1156,
+      "clicks": 19
+    },
+    {
+      "date": "2026-10-28",
+      "imps": 1027,
+      "clicks": 24
+    },
+    {
+      "date": "2026-10-29",
+      "imps": 1207,
+      "clicks": 18
+    }
+  ],
+  "word_deltas": [
+    {
+      "query": "宣傳單張",
+      "locale": "zh-hk",
+      "cluster": "flyers",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 123,
+        "clicks": 0,
+        "pos": 30.46,
+        "urls": 2,
+        "top": "/zh-hk/category/flyers/",
+        "share": 87
+      },
+      "new": {
+        "imps": 108,
+        "clicks": 0,
+        "pos": 33.86,
+        "urls": 2,
+        "top": "/zh-hk/category/flyers/",
+        "share": 97.2
+      },
+      "d_imps": -15,
+      "d_clicks": 0,
+      "d_pos": 3.4,
+      "d_share": 10.2
+    },
+    {
+      "query": "宣傳單張印刷",
+      "locale": "zh-hk",
+      "cluster": "flyers",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 128,
+        "clicks": 0,
+        "pos": 34.62,
+        "urls": 4,
+        "top": "/zh-hk/category/flyers/",
+        "share": 77.3
+      },
+      "new": {
+        "imps": 130,
+        "clicks": 0,
+        "pos": 35.69,
+        "urls": 4,
+        "top": "/zh-hk/category/flyers/",
+        "share": 76.2
+      },
+      "d_imps": 2,
+      "d_clicks": 0,
+      "d_pos": 1.07,
+      "d_share": -1.1
+    },
+    {
+      "query": "貼紙印刷",
+      "locale": "zh-hk",
+      "cluster": "stickers",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 245,
+        "clicks": 0,
+        "pos": 53.42,
+        "urls": 10,
+        "top": "/zh-hk/category/stickers/",
+        "share": 33.9
+      },
+      "new": {
+        "imps": 236,
+        "clicks": 0,
+        "pos": 53.36,
+        "urls": 9,
+        "top": "/zh-hk/category/stickers/",
+        "share": 32.2
+      },
+      "d_imps": -9,
+      "d_clicks": 0,
+      "d_pos": -0.06,
+      "d_share": -1.7
+    },
+    {
+      "query": "貼紙訂製",
+      "locale": "zh-hk",
+      "cluster": "stickers",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 52,
+        "clicks": 0,
+        "pos": 33.86,
+        "urls": 6,
+        "top": "/zh-hk/blog/sticker-guide/",
+        "share": 30.8
+      },
+      "new": {
+        "imps": 42,
+        "clicks": 0,
+        "pos": 32.47,
+        "urls": 5,
+        "top": "/zh-hk/blog/sticker-buying-guide/",
+        "share": 31
+      },
+      "d_imps": -10,
+      "d_clicks": 0,
+      "d_pos": -1.39,
+      "d_share": 0.2
+    },
+    {
+      "query": "書刊印刷",
+      "locale": "zh-hk",
+      "cluster": "books",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 202,
+        "clicks": 0,
+        "pos": 44.36,
+        "urls": 4,
+        "top": "/zh-hk/blog/book-buying-guide/",
+        "share": 45.5
+      },
+      "new": {
+        "imps": 214,
+        "clicks": 0,
+        "pos": 44.65,
+        "urls": 4,
+        "top": "/zh-hk/blog/book-buying-guide/",
+        "share": 43.9
+      },
+      "d_imps": 12,
+      "d_clicks": 0,
+      "d_pos": 0.29,
+      "d_share": -1.6
+    },
+    {
+      "query": "印書",
+      "locale": "zh-hk",
+      "cluster": "books",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 148,
+        "clicks": 0,
+        "pos": 42.87,
+        "urls": 7,
+        "top": "/zh-hk/blog/book-buying-guide/",
+        "share": 34.5
+      },
+      "new": {
+        "imps": 148,
+        "clicks": 0,
+        "pos": 43.51,
+        "urls": 7,
+        "top": "/zh-hk/blog/book-buying-guide/",
+        "share": 33.1
+      },
+      "d_imps": 0,
+      "d_clicks": 0,
+      "d_pos": 0.64,
+      "d_share": -1.4
+    },
+    {
+      "query": "海報印刷",
+      "locale": "zh-hk",
+      "cluster": "posters",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 567,
+        "clicks": 1,
+        "pos": 34.01,
+        "urls": 10,
+        "top": "/zh-hk/blog/poster-printing-guide/",
+        "share": 37
+      },
+      "new": {
+        "imps": 520,
+        "clicks": 1,
+        "pos": 33.36,
+        "urls": 10,
+        "top": "/zh-hk/blog/poster-printing-guide/",
+        "share": 38.3
+      },
+      "d_imps": -47,
+      "d_clicks": 0,
+      "d_pos": -0.65,
+      "d_share": 1.3
+    },
+    {
+      "query": "紙盒印刷",
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 73,
+        "clicks": 0,
+        "pos": 41.99,
+        "urls": 3,
+        "top": "/zh-hk/category/packaging/",
+        "share": 57.5
+      },
+      "new": {
+        "imps": 63,
+        "clicks": 0,
+        "pos": 42.13,
+        "urls": 3,
+        "top": "/zh-hk/category/packaging/",
+        "share": 61.9
+      },
+      "d_imps": -10,
+      "d_clicks": 0,
+      "d_pos": 0.14,
+      "d_share": 4.4
+    },
+    {
+      "query": "包裝盒訂製",
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 47,
+        "clicks": 0,
+        "pos": 31.51,
+        "urls": 3,
+        "top": "/zh-hk/category/packaging/",
+        "share": 95.7
+      },
+      "new": {
+        "imps": 43,
+        "clicks": 0,
+        "pos": 32.86,
+        "urls": 2,
+        "top": "/zh-hk/category/packaging/",
+        "share": 95.3
+      },
+      "d_imps": -4,
+      "d_clicks": 0,
+      "d_pos": 1.35,
+      "d_share": -0.4
+    },
+    {
+      "query": "包裝盒印刷",
+      "locale": "zh-hk",
+      "cluster": "packaging",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 74,
+        "clicks": 0,
+        "pos": 36.27,
+        "urls": 5,
+        "top": "/zh-hk/category/packaging/",
+        "share": 70.3
+      },
+      "new": {
+        "imps": 61,
+        "clicks": 0,
+        "pos": 37.41,
+        "urls": 3,
+        "top": "/zh-hk/category/packaging/",
+        "share": 75.4
+      },
+      "d_imps": -13,
+      "d_clicks": 0,
+      "d_pos": 1.14,
+      "d_share": 5.1
+    },
+    {
+      "query": "利是封印刷",
+      "locale": "zh-hk",
+      "cluster": "seasonal",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 69,
+        "clicks": 1,
+        "pos": 18.57,
+        "urls": 4,
+        "top": "/zh-hk/category/red-packets/",
+        "share": 75.4
+      },
+      "new": {
+        "imps": 58,
+        "clicks": 1,
+        "pos": 21.45,
+        "urls": 4,
+        "top": "/zh-hk/category/red-packets/",
+        "share": 77.6
+      },
+      "d_imps": -11,
+      "d_clicks": 0,
+      "d_pos": 2.88,
+      "d_share": 2.2
+    },
+    {
+      "query": "喜帖印刷",
+      "locale": "zh-hk",
+      "cluster": "wedding",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 15,
+        "clicks": 0,
+        "pos": 16.13,
+        "urls": 2,
+        "top": "/zh-hk/product/wedding-thank-you-cards/",
+        "share": 73.3
+      },
+      "new": {
+        "imps": 7,
+        "clicks": 0,
+        "pos": 27.71,
+        "urls": 2,
+        "top": "/zh-hk/category/wedding-invitations/",
+        "share": 71.4
+      },
+      "d_imps": -8,
+      "d_clicks": 0,
+      "d_pos": 11.58,
+      "d_share": -1.9
+    },
+    {
+      "query": "學校印刷",
+      "locale": "zh-hk",
+      "cluster": "education",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 42,
+        "clicks": 0,
+        "pos": 19.12,
+        "urls": 5,
+        "top": "/zh-hk/blog/campus-education-printing-pillar-guide/",
+        "share": 47.6
+      },
+      "new": {
+        "imps": 49,
+        "clicks": 0,
+        "pos": 18.51,
+        "urls": 5,
+        "top": "/zh-hk/blog/campus-education-printing-pillar-guide/",
+        "share": 49
+      },
+      "d_imps": 7,
+      "d_clicks": 0,
+      "d_pos": -0.61,
+      "d_share": 1.4
+    },
+    {
+      "query": "small batch sticker printing",
+      "locale": "en",
+      "cluster": "stickers",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 46,
+        "clicks": 0,
+        "pos": 5.5,
+        "urls": 1,
+        "top": "/en/product/small-batch-stickers/",
+        "share": 100
+      },
+      "new": {
+        "imps": 34,
+        "clicks": 0,
+        "pos": 5.65,
+        "urls": 2,
+        "top": "/en/product/small-batch-stickers/",
+        "share": 97.1
+      },
+      "d_imps": -12,
+      "d_clicks": 0,
+      "d_pos": 0.15,
+      "d_share": -2.9
+    },
+    {
+      "query": "china catalog printing",
+      "locale": "en",
+      "cluster": "catalog",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 77,
+        "clicks": 0,
+        "pos": 17.35,
+        "urls": 3,
+        "top": "/en/product/catalog-printing/",
+        "share": 72.7
+      },
+      "new": {
+        "imps": 82,
+        "clicks": 0,
+        "pos": 17.07,
+        "urls": 3,
+        "top": "/en/product/catalog-printing/",
+        "share": 62.2
+      },
+      "d_imps": 5,
+      "d_clicks": 0,
+      "d_pos": -0.28,
+      "d_share": -10.5
+    },
+    {
+      "query": "コミケ 印刷",
+      "locale": "ja",
+      "cluster": "doujin",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 174,
+        "clicks": 0,
+        "pos": 19.23,
+        "urls": 2,
+        "top": "/ja/product/doujinshi-printing/",
+        "share": 94.3
+      },
+      "new": {
+        "imps": 149,
+        "clicks": 0,
+        "pos": 17.94,
+        "urls": 2,
+        "top": "/ja/product/doujinshi-printing/",
+        "share": 90.6
+      },
+      "d_imps": -25,
+      "d_clicks": 0,
+      "d_pos": -1.29,
+      "d_share": -3.7
+    },
+    {
+      "query": "教材 印刷製本",
+      "locale": "ja",
+      "cluster": "education",
+      "old_found": true,
+      "new_found": true,
+      "old": {
+        "imps": 44,
+        "clicks": 0,
+        "pos": 24.93,
+        "urls": 3,
+        "top": "/ja/blog/textbook-printing-guide/",
+        "share": 70.5
+      },
+      "new": {
+        "imps": 45,
+        "clicks": 0,
+        "pos": 28.44,
+        "urls": 2,
+        "top": "/ja/blog/textbook-printing-guide/",
+        "share": 64.4
+      },
+      "d_imps": 1,
+      "d_clicks": 0,
+      "d_pos": 3.51,
+      "d_share": -6.1
+    },
+    {
+      "query": "教科書印刷",
+      "locale": "ja",
+      "cluster": "education",
+      "old_found": false,
+      "new_found": false
+    }
+  ]
+}
