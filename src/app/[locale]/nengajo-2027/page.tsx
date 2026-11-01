@@ -9,7 +9,7 @@
  *   HKD 1.0/1.2/1.8/1.4/1.1/1.0 · USD 0.13/0.15/0.23/0.18/0.14/0.13 · JPY 20/23/35/27/21/20 · 10枚から · 127×178mm
  * K3 待办1 填值位（死线 10/21, 三处）:
  *   [1] 早割割引率 → 各语 ebSlot 早割率句 + 価格表「早割」列（现「確定後に掲載」）
- *   [2] 正式締切日 → 各语 ebSlot 締切句 + FAQ A2（现「10月末目安・2026-11-01 再確認」既有 K3 口径）
+ *   [2] 正式締切日 → 各语 ebSlot 締切句 + FAQ A2（10月末目安は 2026-11-01 已覆核，后续以 K3 拍板为准）
  *   [3] 宛名印刷可否 → 各语 atenaBody（现「確認中」；拍「不提供」则改「対応外」）
  * 纪律: 无编造数字; 日本郵便投函締切只指向官方当年案内; ja 禁詞表（超低价系/最高级表现系，见 i18n-guard JA 禁词规则）零使用;
  *       品牌 ja/en=ZprintPro / zh-hk=智印港 单品牌分层; 不新建 SKU、不动 greeting-cards 资产。
@@ -81,8 +81,8 @@ export default function Nengajo2027Page({ params }: Props) {
       h1: '2027 賀年卡・年賀狀印刷 — 10 張起 HK$1 起',
       lead: '2027 年賀狀／賀年卡印刷：6 款賀卡全部 10 張起印，HK$1 起，127×178mm 標準尺寸，燙金、局部 UV、圓角、400g 厚卡可選。交期與配送時效以報價確認，免費打樣，30 秒 AI 報價。',
       ebTitle: '早鳥優惠（名額制）',
-      ebBody: '早鳥優惠以「10 月底前落單」為目安（既有口徑，2026-11-01 再確認）。確定嘅早鳥折扣率同正式截單日一經拍板，即刻喺本頁更新 + WhatsApp 逐客通知。',
-      ebSlot: '早鳥折扣率・正式截單日：拍板後即刻更新（現行目安：10 月底前落單，2026-11-01 再確認）',
+      ebBody: '早鳥優惠以「10 月底前落單」為目安（已於 2026-11-01 覆核）。11 月後落單嘅折扣率同截單安排，以每次報價回覆為準，並喺本頁同 WhatsApp 更新。',
+      ebSlot: '早鳥折扣率・正式截單日：以每次報價回覆為準（10 月底前落單嘅早鳥目安已於 2026-11-01 覆核）',
       tableTitle: '6 款賀卡規格・牌價（早鳥價確認後更新）',
       tableCols: ['SKU', '規格', '起印量', '牌價（每張）', '早鳥價'],
       tableRows: [
@@ -106,7 +106,7 @@ export default function Nengajo2027Page({ params }: Props) {
       faqTitle: '賀年卡・年賀狀常見問題',
       faqs: [
         { q: '最少要印幾多張？', a: '6 款賀卡全部 10 張起印，小批量數碼可做，大批量轉柯式更抵；實際以報價為準。' },
-        { q: '早鳥優惠幾時截？', a: '以「10 月底前落單」為目安（既有口徑，2026-11-01 再確認）；正式折扣率同截單日拍板後會喺本頁即時更新。' },
+        { q: '早鳥優惠幾時截？', a: '以「10 月底前落單」為目安（已於 2026-11-01 覆核）；11 月後嘅折扣率同截單安排以每次報價回覆為準。' },
         { q: '可以代印宛名（收件人資料）嗎？', a: '宛名印刷可否代做及費用確認中，確認後喺本頁公佈；需要嘅話可以喺 WhatsApp 先登記需求。' },
         { q: '幾時落單先趕得切寄出？', a: '生產與 DHL 配送時程以報價確認，建議及早落單留返郵寄時間；投函締切請以日本郵便官方案内為準。' },
       ],
@@ -125,8 +125,8 @@ export default function Nengajo2027Page({ params }: Props) {
       h1: '2027 Nengajo & New Year Cards — 10 MOQ from US$0.13',
       lead: '2027 Japanese New Year card printing: 6 SKUs from 10 pcs, from US$0.13/card, 127×178mm standard, foil / spot UV / rounded corners / 400g stock. lead time and shipping confirmed at quote, free digital proof, 30-second AI quote.',
       ebTitle: 'Early-Bird Terms',
-      ebBody: 'Working guidance: order by end of October (existing baseline, re-confirmed 2026-11-01). Confirmed discount rate and final deadline will be published on this page once approved.',
-      ebSlot: 'Discount rate & final deadline: to be published once approved (working guidance: order by end of October, re-confirmed 2026-11-01)',
+      ebBody: 'Working guidance (reviewed 2026-11-01): order by end of October. For November orders, the applicable rate and cut-off are confirmed at quote and then published on this page.',
+      ebSlot: 'Discount rate & deadline: confirmed at quote (October early-bird guideline reviewed 2026-11-01)',
       tableTitle: '6 Card SKUs & List Prices (early-bird to be confirmed)',
       tableCols: ['SKU', 'Spec', 'MOQ', 'List price', 'Early-bird'],
       tableRows: [
@@ -150,7 +150,7 @@ export default function Nengajo2027Page({ params }: Props) {
       faqTitle: 'FAQ',
       faqs: [
         { q: 'What is the minimum order?', a: 'All 6 card SKUs start from 10 pcs; small runs are digital, larger runs move to offset for better unit price.' },
-        { q: 'When does the early-bird end?', a: 'Working guidance is end of October (baseline, re-confirmed 2026-11-01); the confirmed rate and deadline will be posted here once approved.' },
+        { q: 'When does the early-bird end?', a: 'Working guidance is end of October (reviewed 2026-11-01); for November orders the rate and deadline are confirmed at quote.' },
         { q: 'Can you print recipient names (atena)?', a: 'Availability and pricing are being confirmed; register your requirement on WhatsApp meanwhile.' },
         { q: 'How late can I order for January 1 delivery?', a: 'Production and shipping timelines are confirmed at quote; we recommend ordering by mid-December, and Japan Post mailing deadlines follow their official annual guidance.' },
       ],
@@ -169,8 +169,8 @@ export default function Nengajo2027Page({ params }: Props) {
       h1: '2027年年賀状印刷 — 10枚から ¥20〜 オリジナルカード',
       lead: '2027年年賀状印刷のご案内ページです。6 SKU すべて10枚から、1枚¥20〜。127×178mm 標準サイズ、箔押し・スポットUV・角丸・厚口400gから選べます。納期・配送はお見積りで確認、無料入稿チェック、30秒AI見積り対応。',
       ebTitle: '早割のご案内',
-      ebBody: '早割は「10月末までのご発注」を目安としています（既存口径、2026-11-01 に再確認）。確定した割引率と正式な締切日は、決まり次第こちらのページと WhatsApp でご案内します。',
-      ebSlot: '早割率・正式締切日：確定次第更新（現行目安：10月末までのご発注、2026-11-01 再確認）',
+      ebBody: '早割は「10月末までのご発注」を目安としていました（2026-11-01 見直し済み）。11月以降の割引率と締切日は、お見積り時にご案内します。',
+      ebSlot: '早割率・正式締切日：お見積り時にご案内（10月末までのご発注という目安は 2026-11-01 に見直し済み）',
       tableTitle: '6 SKU の仕様と牌価（早割価格は確定後に掲載）',
       tableCols: ['SKU', '仕様', '最小数量', '牌価（1枚）', '早割価格'],
       tableRows: [
@@ -194,7 +194,7 @@ export default function Nengajo2027Page({ params }: Props) {
       faqTitle: 'よくある質問',
       faqs: [
         { q: '最少注文枚数は？', a: '6 SKU すべて10枚から。小ロットはデジタル印刷、ロットが上がるとオフセットで単価が下がります。実額は見積りでご確認ください。' },
-        { q: '早割の締切はいつ？', a: '「10月末までのご発注」を目安としています（既存口径、2026-11-01 再確認）。正式な割引率と締切日は確定次第、本ページで更新します。' },
+        { q: '早割の締切はいつ？', a: '「10月末までのご発注」を目安としていました（2026-11-01 見直し済み）。11月以降の割引率・締切はお見積り時にご案内します。正式な割引率と締切日は確定次第、本ページで更新します。' },
         { q: '宛名印刷はできますか？', a: '対応可否と価格は確認中です。確定次第本ページでご案内します。ご希望は WhatsApp で事前登録いただけます。' },
         { q: '1月1日までに届く締切は？', a: '印刷・DHL 国際配送の日程は見積りで確認します。投函締切は日本郵便の当年公式案内をご参照ください。' },
       ],
