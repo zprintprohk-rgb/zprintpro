@@ -44,6 +44,7 @@
 
 - 同侪最后 src 写 04:05（本 run 18:17, 静默 ≥14h）；src clean（无 uncommitted）；只 stage 自己 6 文件, 未碰任何在途文件
 - push 前 ahead 仅 1 commit（本批）, push 后 `1b12681c..919a6f4e` ✓；30min 下限（上推 10-31 18:5x）已过
+- **CF Pages build: SUCCESS — deploy is live**（复查 18:27, run 124820653869）
 - 幂等键: `harness-20261101-earlybird-review`
 
 ## 数据来源
