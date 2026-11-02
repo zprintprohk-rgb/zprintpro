@@ -1,0 +1,50 @@
+{
+  "schema": "gsc-api-pull-record/v1",
+  "date": "2026-11-02",
+  "trigger": "manual-analysis-session (首席分析师 P1 数据新鲜度恢复; 11-01 gsc-feedback NEXT①)",
+  "owner": "deepseek-hermes-analysis-session",
+  "pulls": [
+    {
+      "file": "GSC数据/gsc-date-page-28d-end1102.csv",
+      "dimensions": "date,page",
+      "window": "2026-10-05..2026-11-01 (28d)",
+      "rows": 6119,
+      "clicks": 485,
+      "impressions": 24729,
+      "latest_data_day": "2026-10-30",
+      "cmd": "py -3 scripts/fetch_gsc_data.py --end 2026-11-01 --days 28 --dimensions date,page --out GSC数据/gsc-date-page-28d-end1102.csv",
+      "exit": 0,
+      "fired_at": "2026-11-02 07:1x (Asia/Shanghai)",
+      "proxy": "http://127.0.0.1:7892 (404 on root = reached Google)"
+    },
+    {
+      "file": "GSC数据/gsc-query-country-28d-end1102.csv",
+      "dimensions": "query,country",
+      "window": "2026-10-05..2026-11-01 (28d)",
+      "rows": 1522,
+      "clicks": 70,
+      "impressions": 7776,
+      "coverage_note": "query×country 档覆盖约 31% 展示 (7776/24729), 与 11-01 A25 一致; 缺失行可能为截断而非零",
+      "cmd": "py -3 scripts/fetch_gsc_data.py --end 2026-11-01 --days 28 --dimensions query,country --out GSC数据/gsc-query-country-28d-end1102.csv",
+      "exit": 0,
+      "fired_at": "2026-11-02 07:1x (Asia/Shanghai)"
+    }
+  ],
+  "index_rebuild": {
+    "file": "GSC数据/index.json",
+    "cmd": "node scripts/rebuild-gsc-index.mjs --write",
+    "exit": 0,
+    "result": "totalFiles=249 latestFreshData=2026-10-31 stalenessDays=2 freshnessStatus=FRESH",
+    "closes": ["A27 (INDEX_NOT_REBUILT_FOR_API_CSVS)"],
+    "sop5": "生成器产出, 非手搓"
+  },
+  "status_changes": {
+    "A1_DATA_STALE": "PARTIALLY_RESOLVED -> KPI plane FRESH (data day 10-30, ~55h < 72h); detector 28d 输入仍止 10-27 (两平面两闸门, 不变)",
+    "A2_FROZEN_24H_CHAIN": "OPEN (未动; 24h 需 K3 手工导出 xlsx)",
+    "A19_3MO_NOT_REFRESHED": "OPEN (未动; 需 K3 3mo 导出)",
+    "A24_API_VS_XLSX_METHOD_SPLIT": "本批仅 API-vs-API 使用, 未混算",
+    "A25_COUNTRY_PULL_COVERAGE": "复现 31% (结构性, 非异常)"
+  },
+  "money_words_23_remeasure": "2026-11-02 月度矩阵审计补做 (A28 测量面) 已用本档复算, 见 docs/2026-11-02-next-step-and-k3-decision-upgrade.md §3; 未冒充 ZP-monthly-matrix 车道报告",
+  "boundary": "未修改 src/; 未 commit/push; 未手动触发生产 wrapper; 未代提交他人 untracked 产物 (11-01 同侪 end1027/end1031)"
+}

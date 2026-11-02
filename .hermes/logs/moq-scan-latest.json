@@ -1,9 +1,9 @@
 {
-  "scannedAt": "2026-11-01T10:19:20",
+  "scannedAt": "2026-11-02T13:22:02",
   "truthSize": 82,
   "shapeProblems": [],
-  "hits": 8,
-  "drift": 8,
+  "hits": 557,
+  "drift": 42,
   "recount": [
     {
       "kind": "zh_本起",
@@ -53,76 +53,382 @@
   ],
   "findings": [
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2683,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 157,
+      "slug": "removable-stickers",
+      "kind": "ja_枚から",
       "found": 100,
       "truth": 10,
-      "text": "…eaturedSnippet: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球…"
+      "text": "…防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2683,
-      "slug": "〔品類級〕stickers",
-      "kind": "zh_個起(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 222,
+      "slug": "die-cut-stickers",
+      "kind": "en_MOQ",
       "found": 100,
       "truth": 10,
-      "text": "…t: '貼紙印刷 10 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',…"
+      "text": "…m printing, any shape cutting. Free design mockup, 100 MOQ. Production and delivery timi…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2789,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 229,
+      "slug": "die-cut-stickers",
+      "kind": "ja_枚から",
       "found": 100,
       "truth": 10,
-      "text": "…of matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs M…"
+      "text": "…防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2789,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_MOQ(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 589,
+      "slug": "a4-flyers",
+      "kind": "ja_枚から",
       "found": 100,
       "truth": 10,
-      "text": "…oor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL glob…"
+      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2789,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 625,
+      "slug": "a5-flyers",
+      "kind": "ja_枚から",
       "found": 100,
       "truth": 10,
-      "text": "…f matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 p…"
+      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2789,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 733,
+      "slug": "thick-paper-flyers",
+      "kind": "ja_枚から",
       "found": 100,
       "truth": 10,
-      "text": "…or vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL…"
+      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2880,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
-      "found": 50,
+      "file": "src/data/sku-seo-data.ts",
+      "line": 805,
+      "slug": "eco-flyers",
+      "kind": "ja_枚から",
+      "found": 100,
       "truth": 10,
-      "text": "…q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pc…"
+      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
     },
     {
-      "file": "src/data/category-seo-content.ts",
-      "line": 2887,
-      "slug": "〔品類級〕stickers",
-      "kind": "en_pcs(品類級)",
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1209,
+      "slug": "rigid-boxes",
+      "kind": "zh_個起",
       "found": 500,
+      "truth": 100,
+      "text": "…\"zh-hk\": \"一般為100個起訂，定制盒型需500個起。\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1816,
+      "slug": "outdoor-vinyl-banners",
+      "kind": "ja_枚から",
+      "found": 10,
+      "truth": 1,
+      "text": "…は 50〜100 個/部/枚からの最小注文です。各商品ページでもご確認いただけます。即日少量の急ぎは 10 枚から対応し、大量注文は段階割引があります。お気軽にお問い合わせく…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1852,
+      "slug": "roll-up-banners",
+      "kind": "ja_枚から",
+      "found": 10,
+      "truth": 1,
+      "text": "…0 個/部/枚からの最小注文が標準です。詳しくは各商品ページをご覧ください。即日で少量が必要な場合は 10 枚から対応します。大量注文は段階割引があります。お気軽にお問い合わ…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1870,
+      "slug": "adhesive-banners",
+      "kind": "zh_起印(無單位)",
+      "found": 10,
+      "truth": 1,
+      "text": "…\"title\": \"背膠噴繪 透明・10起印・HK$10起・4小時打稿 | 智印港\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1888,
+      "slug": "adhesive-banners",
+      "kind": "ja_枚から",
+      "found": 10,
+      "truth": 1,
+      "text": "…品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量の急ぎは 10 枚から対応します。大量注文は段階割引がありますので、お気軽にお問い…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 1924,
+      "slug": "vehicle-wraps",
+      "kind": "ja_枚から",
+      "found": 10,
+      "truth": 1,
+      "text": "…ですか？**\\n最小注文数は商品によって異なり、50〜100 個/部/枚が目安です。即日の少量急ぎは 10 枚から対応します。まとめ発注には段階割引があります。お気軽にお問い…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2073,
+      "slug": "hardcover-books",
+      "kind": "zh_本起",
+      "found": 100,
       "truth": 10,
-      "text": "…for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.'…"
+      "text": "…\"zh-hk\": \"一般為100本起訂，畫冊和精裝書建議200本起。\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2073,
+      "slug": "hardcover-books",
+      "kind": "zh_本起",
+      "found": 200,
+      "truth": 10,
+      "text": "…\"zh-hk\": \"一般為100本起訂，畫冊和精裝書建議200本起。\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2217,
+      "slug": "large-envelopes",
+      "kind": "zh_個起",
+      "found": 500,
+      "truth": 100,
+      "text": "…\"zh-hk\": \"一般為500個起訂，彩色和特殊材質需1000個起。\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2217,
+      "slug": "large-envelopes",
+      "kind": "zh_個起",
+      "found": 1000,
+      "truth": 100,
+      "text": "…\"zh-hk\": \"一般為500個起訂，彩色和特殊材質需1000個起。\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2269,
+      "slug": "exercise-books",
+      "kind": "zh_本起",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"keywords\": [\"作業簿印刷\",\"作業簿\",\"校簿印刷\",\"校 簿 印刷\",\"100本起\",\"250g特種紙\",\"A4功課袋\",\"A4練習冊\",\"A…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2327,
+      "slug": "certificates",
+      "kind": "ja_枚から",
+      "found": 50,
+      "truth": 100,
+      "text": "…\"ja\": \"賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro\"…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2339,
+      "slug": "school-flyers",
+      "kind": "zh_張起",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"description\": \"學校單張/學校 印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2353,
+      "slug": "school-flyers",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2356,
+      "slug": "school-flyers",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…印刷製本」のラインアップを持つ ZprintPro なら、チラシから冊子まで一括でご依頼いただけます。100 枚からの小ロットにも対応し、急ぎの際は 48 時間の国際速達にも対…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2356,
+      "slug": "school-flyers",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…1 枚あたり HK$0.2〜0.8 と、全校配布にも安心のリーズナブルな価格設定です。最小注文数は 100 枚から承り、標準納期は 3〜5 営業日、急ぎの場合は 24〜48…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2356,
+      "slug": "school-flyers",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…n**FAQ**\\n**Q1: 学校フライヤーの最小注文数はいくつですか？**\\nA1: 最小注文は 100 枚からです。当社の多くの商品は 50〜100 枚/部/冊からの受注…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2392,
+      "slug": "textbooks",
+      "kind": "ja_枚から",
+      "found": 10,
+      "truth": 100,
+      "text": "…くの商品は 50〜100 冊/部/枚からの受注で、大量注文は段階割引がございます。お急ぎの少量注文は 10 枚からご相談ください。\\n**Q2: 印刷と納品にはどのくらい時間…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2662,
+      "slug": "premium-greeting-cards",
+      "kind": "zh_張起",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"title\": \"高級賀卡印刷 燙金・局部UV 100張起 HK$100起 | 智印港\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2669,
+      "slug": "premium-greeting-cards",
+      "kind": "en_pcs",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"title\": \"Premium Greeting Cards 100pcs Foil & UV | ZprintPro\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2670,
+      "slug": "premium-greeting-cards",
+      "kind": "en_pcs",
+      "found": 100,
+      "truth": 10,
+      "text": "…ot UV & matte lamination, 300gsm. 127×178mm, from 100 pcs HK$100. Xmas, New Year, weddi…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2677,
+      "slug": "premium-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…ラミネート、箔押し、部分UV、角丸加工に対応し、サイズ・型抜きもオーダー可能。127×178mm標準、100枚〜HK$100〜。クリスマスカード・年賀状・結婚式サンキューカ…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2680,
+      "slug": "premium-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…ントにより安定した色を再現します。\\n\\n料金は 100 枚あたり HK$100〜180、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセッ…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2680,
+      "slug": "premium-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…アート紙（マット調）からお選びいただけます。\\n\\n**Q2: 最小注文数はどのくらいですか？** 100 枚からご注文いただけます。大量注文は段階割引があります。\\n\\n*…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2778,
+      "slug": "spot-uv-greeting-cards",
+      "kind": "en_pcs",
+      "found": 100,
+      "truth": 10,
+      "text": "…highlights on matte base, 300gsm. 127×178mm, from 100 pcs HK$140. Birthday, Christmas,…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2785,
+      "slug": "spot-uv-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…カード印刷：マット下地に光沢UVのコントラスト、300gコート紙または合成紙。127×178mm標準、100枚〜HK$140〜。誕生日・クリスマス・年賀状・ブランドカードに…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2788,
+      "slug": "spot-uv-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…に無料の型抜きチェックを行います。\\n\\n料金は 100 枚あたり HK$140〜260、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセッ…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2788,
+      "slug": "spot-uv-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…版で UV をかける位置をご指定いただけます。\\n\\n**Q3: 最小注文数はどのくらいですか？** 100 枚からご注文いただけます。大量注文は段階割引がありますので、お気軽…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2806,
+      "slug": "matte-greeting-cards",
+      "kind": "zh_張起",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"title\": \"啞膜賀卡印刷 防指紋・柔順 100張起 HK$110起 | 智印港\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2814,
+      "slug": "matte-greeting-cards",
+      "kind": "en_pcs",
+      "found": 100,
+      "truth": 10,
+      "text": "…int-resistant, 300gsm art or eco. 127×178mm, from 100 pcs HK$110. Xmas, New Year & than…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2821,
+      "slug": "matte-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…ード印刷：なめらかなマット加工、指紋防止仕上げ、300gマット紙またはエコ紙。127×178mm標準、100枚〜HK$110〜。クリスマス・年賀・感謝・誕生日カードに最適、…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2842,
+      "slug": "rounded-corner-greeting-cards",
+      "kind": "zh_張起",
+      "found": 100,
+      "truth": 10,
+      "text": "…\"title\": \"圓角賀卡印刷 R3mm模切 100張起 HK$100起 即日 | 智印港\",…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2850,
+      "slug": "rounded-corner-greeting-cards",
+      "kind": "en_pcs",
+      "found": 100,
+      "truth": 10,
+      "text": "…cards: soft R3mm die-cut, 300gsm. 127×178mm, from 100 pcs HK$100. Birthday, Christmas,…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2857,
+      "slug": "rounded-corner-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…ングカード印刷：R3mmのやさしい丸角型抜き、300gコート紙またはアート紙。127×178mm標準、100枚〜HK$100〜。誕生日・クリスマス・年賀状・感謝・記念カード…"
+    },
+    {
+      "file": "src/data/sku-seo-data.ts",
+      "line": 2860,
+      "slug": "rounded-corner-greeting-cards",
+      "kind": "ja_枚から",
+      "found": 100,
+      "truth": 10,
+      "text": "…に無料の型抜きチェックを行います。\\n\\n料金は 100 枚あたり HK$100〜170、最小注文は 100 枚からです。小ロットはデジタル印刷で当日対応し、大量注文はオフセッ…"
     }
   ]
 }
