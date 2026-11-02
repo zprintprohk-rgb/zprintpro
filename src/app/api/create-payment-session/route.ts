@@ -128,6 +128,37 @@ function makeOrderNumber(): string {
 }
 
 /** 双 schema 自适应落库：先 001 主 schema，失败再试旧 v2 列；返回实际生效的 schema 名或错误 */
+let ordersColumnsCache: string[] | null = null;
+
+/** 2026-11-02: 运行时发现 orders 真实列名 —— 线上表形态与任一迁移文件都不一致
+ *  （001 的 CREATE IF NOT EXISTS 被旧表短路；实测 customer_email / payment_method 均不存在），
+ *  不再猜 schema，直接从 PostgREST OpenAPI 读列名，按存在的列组装 payload。 */
+async function getOrdersColumns(
+  url: string,
+  serviceKey: string
+): Promise<string[] | null> {
+  if (ordersColumnsCache) return ordersColumnsCache;
+  try {
+    const res = await fetch(`${url}/rest/v1/`, {
+      headers: {
+        apikey: serviceKey,
+        Authorization: `Bearer ${serviceKey}`,
+        Accept: 'application/openapi+json',
+      },
+      signal: AbortSignal.timeout(5000),
+    });
+    if (!res.ok) return null;
+    const spec = (await res.json()) as {
+      definitions?: Record<string, { properties?: Record<string, unknown> }>;
+    };
+    const props = spec?.definitions?.orders?.properties;
+    ordersColumnsCache = props ? Object.keys(props) : null;
+  } catch {
+    ordersColumnsCache = null;
+  }
+  return ordersColumnsCache;
+}
+
 async function persistOrder(
   row: Record<string, unknown>,
   legacyRow: Record<string, unknown>,
@@ -156,6 +187,24 @@ async function persistOrder(
     return { ok: false, schema: label, error: text.slice(0, 300) };
   };
 
+  // ① 自适应：按线上真实列名组装（列名缓存于模块作用域）
+  const cols = await getOrdersColumns(url, serviceKey);
+  if (cols && cols.length > 0) {
+    const adaptive: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(row)) {
+      if (cols.includes(k)) adaptive[k] = v;
+    }
+    // legacy 列名补集（amount/currency/quote_data/file_url 等旧形态）
+    for (const [k, v] of Object.entries(legacyRow)) {
+      if (cols.includes(k) && !(k in adaptive)) adaptive[k] = v;
+    }
+    if (Object.keys(adaptive).length > 0) {
+      const adaptiveResult = await post(adaptive, `adaptive(${Object.keys(adaptive).length} cols)`);
+      if (adaptiveResult.ok) return adaptiveResult;
+    }
+  }
+
+  // ② 回退：001 主 schema → 旧 v2 列
   const primary = await post(row, 'orders_v1');
   if (primary.ok) return primary;
   const legacy = await post(legacyRow, 'orders_legacy_v2');
