@@ -1263,8 +1263,10 @@ export function generateProductJsonLd(
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
-    // 2026-09-30 W2: 实体对齐锚点 — 三语种同 sku, @id 为 per-locale 页面节点（跨语对齐靠 sku+brand+hreflang）
-    '@id': `${siteConfig.url}/${locale}/product/${slug}/#product`,
+    // 2026-11-02: 移除 '@id' — RSC flight 载荷会携带同一 schema 的副本（Google 连 flight 一起解析，
+    // contact 页实测：raw Organization 1 → RRT 解析出 2），同 '@id' 的两份会被 Google 合并成一个商品节点，
+    // 重复字段即报「Duplicate field: brand」→ 商家信息判无效（GSC 76 项）。
+    // 去掉 @id 后两份不再合并；本站无其他节点引用 #product（speakable 的 #product-title 是 CSS 选择器，无关）。
     name,
     description,
     image: absImage,
