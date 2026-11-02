@@ -1,0 +1,633 @@
+{
+ "taskj_hkg": [
+  {
+   "kw": "包裝盒印刷",
+   "first_clk": 0.0,
+   "first_imp": 47.0,
+   "first_pos": 32.57,
+   "second_clk": 0.0,
+   "second_imp": 47.0,
+   "second_pos": 33.23,
+   "delta_pos": 0.66
+  },
+  {
+   "kw": "包裝盒訂製",
+   "first_clk": 0.0,
+   "first_imp": 43.0,
+   "first_pos": 32.86,
+   "second_clk": 0.0,
+   "second_imp": 45.0,
+   "second_pos": 33.98,
+   "delta_pos": 1.12
+  },
+  {
+   "kw": "紙盒印刷",
+   "first_clk": 0.0,
+   "first_imp": 44.0,
+   "first_pos": 35.0,
+   "second_clk": 0.0,
+   "second_imp": 45.0,
+   "second_pos": 35.93,
+   "delta_pos": 0.93
+  },
+  {
+   "kw": "貼紙印刷",
+   "first_clk": 0.0,
+   "first_imp": 105.0,
+   "first_pos": 39.71,
+   "second_clk": 0.0,
+   "second_imp": 114.0,
+   "second_pos": 39.39,
+   "delta_pos": -0.32
+  },
+  {
+   "kw": "宣傳單張",
+   "first_clk": 0.0,
+   "first_imp": 104.0,
+   "first_pos": 32.79,
+   "second_clk": 0.0,
+   "second_imp": 110.0,
+   "second_pos": 33.01,
+   "delta_pos": 0.22
+  },
+  {
+   "kw": "即日印刷",
+   "first_clk": 1.0,
+   "first_imp": 52.0,
+   "first_pos": 7.81,
+   "second_clk": 1.0,
+   "second_imp": 55.0,
+   "second_pos": 7.75,
+   "delta_pos": -0.06
+  },
+  {
+   "kw": "書刊印刷",
+   "first_clk": 0.0,
+   "first_imp": 101.0,
+   "first_pos": 31.67,
+   "second_clk": 0.0,
+   "second_imp": 104.0,
+   "second_pos": 31.65,
+   "delta_pos": -0.02
+  },
+  {
+   "kw": "騎馬釘",
+   "first_clk": 0.0,
+   "first_imp": 60.0,
+   "first_pos": 19.0,
+   "second_clk": 0.0,
+   "second_imp": 63.0,
+   "second_pos": 19.05,
+   "delta_pos": 0.05
+  }
+ ],
+ "monthly_same_method": [
+  {
+   "kw": "海報印刷",
+   "new": [
+    278,
+    1,
+    14.41
+   ],
+   "old": [
+    286,
+    1,
+    14.94
+   ],
+   "delta_pos": -0.53
+  },
+  {
+   "kw": "印海報",
+   "new": [
+    131,
+    1,
+    13.36
+   ],
+   "old": null
+  },
+  {
+   "kw": "宣傳單張印刷",
+   "new": [
+    113,
+    0,
+    29.31
+   ],
+   "old": [
+    103,
+    0,
+    29.02
+   ],
+   "delta_pos": 0.29
+  },
+  {
+   "kw": "宣傳單張",
+   "new": [
+    121,
+    0,
+    33.74
+   ],
+   "old": [
+    117,
+    0,
+    29.37
+   ],
+   "delta_pos": 4.37
+  },
+  {
+   "kw": "書刊印刷",
+   "new": [
+    112,
+    0,
+    31.98
+   ],
+   "old": [
+    101,
+    0,
+    32.28
+   ],
+   "delta_pos": -0.3
+  },
+  {
+   "kw": "印書",
+   "new": [
+    56,
+    0,
+    31.5
+   ],
+   "old": [
+    52,
+    0,
+    31.96
+   ],
+   "delta_pos": -0.46
+  },
+  {
+   "kw": "貼紙印刷",
+   "new": [
+    127,
+    0,
+    38.06
+   ],
+   "old": [
+    120,
+    0,
+    40.88
+   ],
+   "delta_pos": -2.82
+  },
+  {
+   "kw": "貼紙訂製",
+   "new": [
+    34,
+    0,
+    30.59
+   ],
+   "old": [
+    34,
+    0,
+    32.41
+   ],
+   "delta_pos": -1.82
+  },
+  {
+   "kw": "紙盒印刷",
+   "new": [
+    49,
+    0,
+    36.88
+   ],
+   "old": [
+    46,
+    0,
+    33.3
+   ],
+   "delta_pos": 3.58
+  },
+  {
+   "kw": "包裝盒訂製",
+   "new": [
+    48,
+    0,
+    34.1
+   ],
+   "old": [
+    47,
+    0,
+    31.51
+   ],
+   "delta_pos": 2.59
+  },
+  {
+   "kw": "包裝盒印刷",
+   "new": [
+    50,
+    0,
+    32.8
+   ],
+   "old": [
+    54,
+    0,
+    31.89
+   ],
+   "delta_pos": 0.91
+  },
+  {
+   "kw": "利是封印刷",
+   "new": [
+    54,
+    1,
+    23.63
+   ],
+   "old": [
+    55,
+    1,
+    21.6
+   ],
+   "delta_pos": 2.03
+  },
+  {
+   "kw": "喜帖印刷",
+   "new": [
+    10,
+    0,
+    29.4
+   ],
+   "old": [
+    15,
+    0,
+    16.13
+   ],
+   "delta_pos": 13.27
+  },
+  {
+   "kw": "學校印刷",
+   "new": [
+    51,
+    0,
+    18.8
+   ],
+   "old": [
+    42,
+    0,
+    19.12
+   ],
+   "delta_pos": -0.32
+  },
+  {
+   "kw": "食品包裝印刷",
+   "new": [
+    118,
+    0,
+    8.42
+   ],
+   "old": [
+    112,
+    0,
+    8.7
+   ],
+   "delta_pos": -0.28
+  },
+  {
+   "kw": "即日印刷",
+   "new": [
+    60,
+    1,
+    7.93
+   ],
+   "old": [
+    52,
+    1,
+    7.81
+   ],
+   "delta_pos": 0.12
+  },
+  {
+   "kw": "小冊子印刷",
+   "new": [
+    45,
+    0,
+    10.71
+   ],
+   "old": null
+  },
+  {
+   "kw": "紙袋印刷",
+   "new": [
+    66,
+    0,
+    16.24
+   ],
+   "old": null
+  },
+  {
+   "kw": "騎馬釘印刷",
+   "new": [
+    65,
+    0,
+    12.78
+   ],
+   "old": null
+  },
+  {
+   "kw": "月曆印刷",
+   "new": [
+    116,
+    0,
+    25.3
+   ],
+   "old": null
+  },
+  {
+   "kw": "small batch sticker printing",
+   "new": [
+    35,
+    0,
+    5.66
+   ],
+   "old": [
+    46,
+    0,
+    5.5
+   ],
+   "delta_pos": 0.16
+  },
+  {
+   "kw": "small batch stickers",
+   "new": [
+    21,
+    0,
+    5.1
+   ],
+   "old": null
+  },
+  {
+   "kw": "saddle stitch booklet printing",
+   "new": [
+    6,
+    0,
+    6.67
+   ],
+   "old": null
+  },
+  {
+   "kw": "doujinshi printing",
+   "new": [
+    50,
+    0,
+    10.06
+   ],
+   "old": [
+    48,
+    0,
+    10.0
+   ],
+   "delta_pos": 0.06
+  },
+  {
+   "kw": "large envelopes",
+   "new": [
+    8,
+    0,
+    13.88
+   ],
+   "old": null
+  },
+  {
+   "kw": "china catalog printing",
+   "new": [
+    72,
+    0,
+    14.96
+   ],
+   "old": [
+    72,
+    0,
+    15.79
+   ],
+   "delta_pos": -0.83
+  },
+  {
+   "kw": "a2 poster",
+   "new": [
+    59,
+    1,
+    18.68
+   ],
+   "old": null
+  },
+  {
+   "kw": "corporate holiday cards",
+   "new": null,
+   "old": null
+  },
+  {
+   "kw": "卒アル販売",
+   "new": [
+    16,
+    0,
+    5.0
+   ],
+   "old": null
+  },
+  {
+   "kw": "コミケ 印刷",
+   "new": [
+    170,
+    0,
+    22.04
+   ],
+   "old": [
+    173,
+    0,
+    18.99
+   ],
+   "delta_pos": 3.05
+  },
+  {
+   "kw": "教材 印刷 製本",
+   "new": [
+    25,
+    0,
+    22.2
+   ],
+   "old": null
+  },
+  {
+   "kw": "教材 印刷製本",
+   "new": [
+    46,
+    0,
+    28.67
+   ],
+   "old": [
+    39,
+    0,
+    20.69
+   ],
+   "delta_pos": 7.98
+  },
+  {
+   "kw": "pvc シール",
+   "new": [
+    19,
+    0,
+    17.79
+   ],
+   "old": null
+  },
+  {
+   "kw": "年賀状印刷",
+   "new": null,
+   "old": null
+  },
+  {
+   "kw": "教科書 印刷",
+   "new": [
+    50,
+    0,
+    47.5
+   ],
+   "old": null
+  }
+ ],
+ "c4_country": {
+  "貼紙印刷": {
+   "hkg": {
+    "total_imp": 241.0,
+    "urls": 10,
+    "top_url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "top_share": 33.2,
+    "top_pos": 39.52
+   },
+   "grc": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "top_share": 100.0,
+    "top_pos": 38.0
+   },
+   "jpn": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "top_share": 100.0,
+    "top_pos": 45.0
+   },
+   "usa": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "top_share": 100.0,
+    "top_pos": 26.0
+   },
+   "phl": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+    "top_share": 100.0,
+    "top_pos": 47.0
+   }
+  },
+  "海報印刷": {
+   "hkg": {
+    "total_imp": 557.0,
+    "urls": 10,
+    "top_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "top_share": 36.3,
+    "top_pos": 9.76
+   },
+   "gbr": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "top_share": 100.0,
+    "top_pos": 13.0
+   },
+   "mac": {
+    "total_imp": 2.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "top_share": 100.0,
+    "top_pos": 4.5
+   },
+   "pol": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "top_share": 100.0,
+    "top_pos": 11.0
+   },
+   "sgp": {
+    "total_imp": 4.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "top_share": 100.0,
+    "top_pos": 12.25
+   },
+   "usa": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "top_share": 100.0,
+    "top_pos": 7.0
+   },
+   "swe": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "top_share": 100.0,
+    "top_pos": 46.0
+   }
+  },
+  "書刊印刷": {
+   "hkg": {
+    "total_imp": 202.0,
+    "urls": 4,
+    "top_url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+    "top_share": 45.5,
+    "top_pos": 30.41
+   }
+  },
+  "月曆印刷": {
+   "hkg": {
+    "total_imp": 206.0,
+    "urls": 4,
+    "top_url": "https://zprintpro.com/zh-hk/category/calendars/",
+    "top_share": 47.1,
+    "top_pos": 38.9
+   }
+  },
+  "包裝盒訂製": {
+   "hkg": {
+    "total_imp": 47.0,
+    "urls": 3,
+    "top_url": "https://zprintpro.com/zh-hk/category/packaging/",
+    "top_share": 95.7,
+    "top_pos": 31.6
+   }
+  },
+  "small batch sticker printing": {
+   "idn": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "top_share": 100.0,
+    "top_pos": 1.0
+   },
+   "isr": {
+    "total_imp": 1.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "top_share": 100.0,
+    "top_pos": 5.0
+   },
+   "usa": {
+    "total_imp": 44.0,
+    "urls": 1,
+    "top_url": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "top_share": 100.0,
+    "top_pos": 5.61
+   }
+  }
+ }
+}

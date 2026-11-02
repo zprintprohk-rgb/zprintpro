@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-02",
+  "run_started_at": "2026-11-02 20:13:03 (scheduled trigger; 沙箱 QUOTA 失败后同会话恢复, 实际写盘 2026-11-03 06:1x Asia/Shanghai)",
+  "verdict": "OK",
+  "verdict_scope": "Recovery of the failed 2026-11-02 run (same idempotency key, key_consumed=false). Lane execution complete: daily data file + report + anomaly classification + next checkpoints all delivered, consuming the sibling 11-02 07:1x API pull. NOT a claim that the 24h recovery metric is fresh or that the site has recovered.",
+  "data_status": "FRESH_API_2026_11_02 (partial: 28d window 2026-10-05..2026-11-01 requested, latest data day 2026-10-30; ~68h at scheduled trigger 11-02 20:13, ~78h at actual write 11-03 06:18 - KPI plane re-opens on A1 at execution time). GSC数据/index.json rebuilt 2026-11-02 07:19 (latestFreshData 2026-10-31, stalenessDays 2, FRESH; A27 closed).",
+  "recovery_status": "UNVERIFIED (no fresh 24h reading; 117.7% is CARRIED from the frozen 10-29T05..10-30T04 window of gsc-cliff-2026-11-01.json; streak stays 2/3; A2/A26 open)",
+  "verdict_reason": "The 11-02 07:1x sibling session (gsc-api-pull-2026-11-02.json + docs/2026-11-02-next-step-and-k3-decision-upgrade.md) pulled two fresh API CSVs (date x page 6,119 rows / 485 clk / 24,729 imp; query x country 1,522 rows / 70 clk / 7,776 imp) and rebuilt the index. This run consumes them: four metrics trend (API-vs-API, near-identical windows), the first true same-method task-J hkg delta (O3 done), 23-word country table cross-checked against the docs monthly baseline (row sums match), and C4 country attribution at query x country level (splits are intra-market, not cross-market). No src/page/queue-status write (lane discipline §6.1).",
+  "confidence": "MEDIUM",
+  "confidence_reason": "Word-level rows are dual-verified (my grep of gsc-query-country-28d-end1102.csv sums exactly match the independent docs/2026-11-02 §3.1 table: 海報印刷 262, 貼紙印刷 118, コミケ 印刷 144, doujinshi printing 48, china catalog printing 71, small batch sticker printing 35, 學校印刷 50). Four-metric totals come from two independent written records (api-pull JSON + docs) that agree on 485/24,729, but the daily-series re-sum (method C used on 11-01) is not runnable in this sandbox (no pwsh/node) and average position is not recomputed (single-method value unavailable this round). query x country covers 7,776/24,729 = 31.4% (structural, A25).",
+  "idempotency": {
+    "key": "06481dde1d50b86a",
+    "consumed": true,
+    "reason": "Same key as the failed ZP-gsc-feedback-20261102T201308-33844 run (key_consumed=false). Per contract §7.1.5 a retry of the same key after failure recovery is a recovery, not duplicate processing. This run completed the 2026-11-02 target, so the key is consumed under the execution-complete reading of OK."
+  },
+  "retry_of": "ZP-gsc-feedback-20261102T201308-33844",
+  "retry_note": "run-context.retry_queue = []. The 11-02 20:13 run FAILED (dsh_exit=1, QUOTA/model failure per cron log + lane-runs.jsonl; report auto-filled .failure.md, key not consumed). This run recovers the same 2026-11-02 target with the fresh 11-02 API data. The 11-01 OK run's deliverables are inherited as ALREADY_DONE (not redone).",
+  "scope_discipline": [
+    "API-vs-API only; never subtract across xlsx/API methods (A24). The docs 11-02 monthly baseline (query-level) and this run's country table are different rulers; both presented, never mixed.",
+    "query x country rows are complete per pair but the file is a 31.4% truncated subset; an absent row may be truncation, not zero demand (A25).",
+    "The end1031 vs end1102 four-metric comparison overlaps 25 of 26 window days; it is a window-shift trend, not an independent second measurement. No regression conclusion is drawn from it.",
+    "Task-J hkg delta is the first true same-method delta (end1031 country pull vs end1102 country pull, both API). It is NOT subtracted from the 10-28 xlsx hkg table (A25b now resolved by having a same-caliber second reading).",
+    "24h recovery ratio still requires a 24h export and a same-caliber pre-cliff denominator; no API-caliber recovery percentage is invented (A26).",
+    "The 72h freshness gate is evaluated per plane and per timestamp: KPI plane at scheduled trigger (~68h, inside) vs at actual write (~78h, outside). Both reported, never merged."
+  ],
+  "data_availability": {
+    "api_pull_present": true,
+    "pulled_by": "同日同侪会话 2026-11-02 07:1x (scripts/fetch_gsc_data.py --end 2026-11-01 --days 28)",
+    "xlsx_2026_11_01_or_11_02": false,
+    "newest_xlsx_batch": "2026-10-30 09:03 (frozen 24h/7d/28d/3mo)",
+    "api_files": [
+      "GSC数据/gsc-date-page-28d-end1102.csv (6,119 rows, 485 clk / 24,729 imp, latest data day 2026-10-30)",
+      "GSC数据/gsc-query-country-28d-end1102.csv (1,522 rows, 70 clk / 7,776 imp = 31.4% coverage)"
+    ],
+    "api_latest_data_day": "2026-10-30",
+    "kpi_data_age_hours_at_trigger": 68,
+    "kpi_data_age_hours_at_write": 78,
+    "detector_data_age_days": 6,
+    "index_json": "lastBuild 2026-11-02T07:19 / totalFiles 249 / latestFreshData 2026-10-31 / stalenessDays 2 / FRESH (A27 closed by rebuild)"
+  },
+  "kpi_api_same_method": {
+    "prev_pull_26d": {"window": "2026-10-04..2026-10-29", "clicks": 490, "imps": 24297, "ctr_pct": 2.02, "pos": 17.12},
+    "new_pull_26d": {"window": "2026-10-05..2026-10-30", "clicks": 485, "imps": 24729, "ctr_pct": 1.96, "pos": "NOT_RECOMPUTED (single-method value unavailable in sandbox)"},
+    "per_day": {"clicks": "18.85 -> 18.65 (-1.0%)", "imps": "934.5 -> 951.1 (+1.8%)"},
+    "ctr_pp": "2.02% -> 1.96% (-0.06pp)",
+    "window_note": "end1031 vs end1102 overlap 25/26 days; window-shift trend only, not an independent second measurement.",
+    "dual_method": "Totals 485/24,729 from two independent records (gsc-api-pull-2026-11-02.json + docs/2026-11-02 §一); daily-series re-sum not runnable in this sandbox (11-01 file was dual-verified 490/24,297).",
+    "cross_method_warning": "xlsx 同窗 496/21,127/pos 13.56 vs API 485/24,729/pos n/a; 混比会造出假恶化 (A24)"
+  },
+  "money_words_23_api_country": {
+    "caliber": "API query x country, 2026-10-05..2026-10-30; zh-hk->hkg / en->usa / ja->jpn; 不可与 xlsx 查询级表相减 (A24); 与 docs/2026-11-02 §3.1 查询级表互补",
+    "homepage_hits_strict": "6/23 (zh 2 / en 3 / ja 1) - unchanged vs 11-01",
+    "page1_zero_click": "食品包裝印刷 106@8.39/0; small batch sticker printing 34@5.65/0; small batch stickers 15@5.40/0; saddle stitch booklet printing 5@7.40/0; 卒アル販売 16@5.00/0",
+    "page1_with_click": "即日印刷 55@7.75/1",
+    "deep_20plus": "月曆印刷 105@26.29/0; 貼紙印刷 114@39.39/0; 教材 印刷製本 42@26.79/0",
+    "no_row": "corporate holiday cards; 年賀状印刷 (截断子集缺行, 不等于零需求)",
+    "country_deltas_vs_1101_same_caliber": {
+      "improved": "印海報 12.99->12.24 (-0.75); 月曆印刷 27.07->26.29 (-0.78); 貼紙印刷 39.71->39.39 (-0.32); コミケ 印刷 17.65->17.64 (-0.01); pvc シール 18.44->18.06 (-0.38); 教材 印刷 製本 19.18->20.54 (+1.36 WORSEN)",
+      "worsened": "教材 印刷製本 24.75->26.79 (+2.04); a2 poster 16.16->17.16 (+1.00); large envelopes 14.86->15.60 (+0.74); saddle stitch booklet printing 6.67->7.40 (+0.73); 紙袋印刷 16.63->17.05 (+0.42); 海報印刷 13.94->14.16 (+0.22)",
+      "flat": "小冊子印刷 10.71; 卒アル販売 5.00; china catalog printing 16.00; small batch sticker printing 5.65; 騎馬釘印刷 12.96"
+    }
+  },
+  "task_j_8_hkg_api_delta": {
+    "status": "O3 DONE - first true same-method delta (end1031 country pull vs end1102 country pull, both API query x country; A25b resolved)",
+    "lines": {
+      "包裝盒印刷": "47/0/33.23 (base 32.57, Δ+0.66)",
+      "包裝盒訂製": "45/0/33.98 (base 32.86, Δ+1.12)",
+      "紙盒印刷": "45/0/35.93 (base 35.00, Δ+0.93)",
+      "貼紙印刷": "114/0/39.39 (base 39.71, Δ-0.32)",
+      "宣傳單張": "110/0/33.01 (base 32.79, Δ+0.22)",
+      "即日印刷": "55/1/7.75 (base 7.81, Δ-0.06)",
+      "書刊印刷": "104/0/31.65 (base 31.67, Δ-0.02)",
+      "騎馬釘": "63/0/19.05 (base 19.00, Δ+0.05)"
+    },
+    "structure": "1/8 首页 (即日印刷, 唯一 1 clk); 7/8 深在 19-40 名且 0 clk; 全部 delta 落在 ±1.12 内 = 锁词稳定但卡死, 无批次归因",
+    "watch": "包裝盒簇 3 词 (包裝盒印刷 +0.66 / 包裝盒訂製 +1.12 / 紙盒印刷 +0.93) 同向微退, 系 task J 重中之重 (P0 coverage), 下一轮同法第三测确认",
+    "next_check": "2026-11-03 (第三测, 同法同调用)"
+  },
+  "c4_country_attribution": {
+    "status": "PARTIAL_AT_QUERY_COUNTRY (query x page x country 三方 join 仍无; C4 从 pending 推进为 intra-market 实证)",
+    "splits": {
+      "貼紙印刷": "hkg 114 (97.4%) / grc 1 / jpn 1 / phl 1 / usa 1 -> 内耗在 hkg 市场内",
+      "海報印刷": "hkg 254 (96.6%) / sgp 4 / mac 2 / gbr 1 / irl 1 -> 内耗在 hkg 市场内",
+      "書刊印刷": "hkg 104 only -> 内耗在 hkg 市场内",
+      "月曆印刷": "hkg 105 only -> 内耗在 hkg 市场内",
+      "small batch sticker printing": "usa 34 (97.1%) / zaf 1 -> 内耗在 usa 市场内",
+      "china catalog printing": "usa 44 (61.1%) / can 19 (26.4%) / gbr 8 (11.1%) -> EN 市场簇",
+      "doujinshi printing": "usa 36 + aus/can/che/idn/mys/nor/nzl/sgp/tha 共 12 -> EN 市场簇"
+    },
+    "conclusion": "内部拆流是各市场内的页面结构问题 (同一市场多 URL 承接), 不是跨市场需求分散 -> O5 canonical URL 命名清单应逐市场做",
+    "next_check": "2026-11-03 (canonical URL 清单交给 monthly-matrix)"
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "RE_OPENED_AT_WRITE", "severity": "P1", "note": "KPI 面: 数据日 10-30, 调度触发时 ~68h (72h 内), 实际写盘时 ~78h (越线 ~6h) - 双时间戳分别报。detector 面 28d 输入仍止 10-27 (6 天)。NEXT: 11-03 20:13 前必须再拉。"},
+    {"id": "A2", "name": "FROZEN_24H_CHAIN", "status": "OPEN", "severity": "P1", "note": "无 gsc-cliff-2026-11-02.json; 24h 链仍冻结 10-29T05..10-30T04 (888/15/117.7%)。第三个 fresh 24h 读数仍不可得; 需 K3 手工导出 24h xlsx。"},
+    {"id": "A15", "name": "INDEX_FAKE_FRESH", "status": "RESOLVED", "note": "index 按文件龄报 FRESH; 11-02 07:19 重建后 latestFreshData=2026-10-31, 门童 #9 可见 API CSV。"},
+    {"id": "A18", "name": "INDEX_NOT_REBUILT_FOR_10_30", "status": "RESOLVED", "note": "11-02 重建覆盖 10-31 档。"},
+    {"id": "A19", "name": "3MO_NOT_REFRESHED", "status": "OPEN", "severity": "P2", "note": "无 3mo 新导出; pre-cliff 714.71 仍来自 10-29 长窗。动态 117.7% 不受影响。"},
+    {"id": "A20", "name": "NO_FRESH_EXPORT", "status": "DOWNGRADED", "severity": "P2", "note": "API 路径已恢复数据可用性; 手工导出仅阻塞 24h/3mo 构件。"},
+    {"id": "A21", "name": "CALIBER_REGRESSION_CROSS_LANE", "status": "NO_RECURRENCE_2026_11_02", "severity": "P2", "note": "11-02 ZP-daily-content 首值正确用 117.7% (CARRIED 标注)。连续两天复发后首日无复发, 但机器守卫建议仍在案。"},
+    {"id": "A22", "name": "CROSS_LANE_METADATA_MISMATCH", "status": "CLOSED", "severity": "P3", "note": "blog-deepfix 周六未跑; 无新元数据事件。"},
+    {"id": "A23", "name": "API_DELTA_WINDOW_LABEL_MISMATCH", "status": "RESOLVED", "severity": "P3", "note": "本轮无新 delta JSON; api-pull 记录窗口标注 (2026-10-05..2026-11-01 / 数据日 10-30) 与 docs 一致。"},
+    {"id": "A24", "name": "API_VS_XLSX_METHOD_SPLIT", "status": "DISCIPLINE_MAINTAINED", "severity": "P2", "note": "本轮全部 API-vs-API; 未与 xlsx 混算 (docs §三亦遵守)。"},
+    {"id": "A25", "name": "COUNTRY_PULL_COVERAGE_31PCT", "status": "PERSISTENT", "severity": "P2", "note": "query x country 档 7,776/24,729 = 31.4% (11-01: 31.2%); 结构性截断, 有行可信任, 缺行不等于零。"},
+    {"id": "A25b", "name": "TASK_J_METHOD_WINDOW_SHIFT", "status": "RESOLVED", "severity": "P2", "note": "已有第二个同法 API 读数 (end1102), 首个真 delta 在本轮给出 (O3 DONE); 不再与 10-28 xlsx 相减。"},
+    {"id": "A26", "name": "RECOVERY_METRIC_NOT_API_COMPUTABLE", "status": "OPEN", "severity": "P1", "note": "无 API 口径 pre-cliff 分母; 新鲜 API 数据无法产出恢复系数。docs §3.2.6 请求 K3 拍板 O2「恢复 SSoT 口径 = API 26d daily」。"},
+    {"id": "A27", "name": "INDEX_NOT_REBUILT_FOR_API_CSVS", "status": "RESOLVED", "severity": "P3", "note": "index.json 11-02 07:19 重建 (249 文件, 含 end1102 CSV, filesByDate 2026-10-31=2); 门童 #9 可见。"},
+    {"id": "A28", "name": "MONTHLY_REVIEW_DUE_NO_LANE_REPORT", "status": "OPEN", "severity": "P2", "note": "ZP-monthly-matrix 调度 LastTaskResult=2147946720 持续 (lane-status need_human)。docs §三 已补 23 词月度基线测量面, 但正式车道报告仍缺; owner 是 monthly 车道, 本 lane 只记录。"},
+    {"id": "A29", "name": "DSH_QUOTA_INCIDENT_1102", "status": "RESOLVED_THIS_RUN", "severity": "P1", "note": "11-02 07:10 k3-review + 20:13 gsc-feedback 两轮 QUOTA 失败 (docs §2.1: Insufficient Balance); 本恢复轮得以执行 = 余额已恢复。恢复后无需配置改动。"},
+    {"id": "NEW-1", "name": "STICKER_LOCKED_WORD_DEEP", "status": "PERSISTENT", "severity": "P1", "note": "貼紙印刷 hkg 114@39.39/0 clk (Δ-0.32 微进); 9-URL split 仍在。11-04 复测 (只复测不动 title)。"},
+    {"id": "NEW-2", "name": "CALENDAR_MIXED_SIGNAL", "status": "WATCH", "severity": "P2", "note": "月曆印刷 hkg 105@26.29 (vs 27.07, -0.78 微进) 但仍 20+ 深位 0 clk; title trim 效果判读窗 11-06。"},
+    {"id": "NEW-3", "name": "JA_TEXTBOOK_WORSENING", "status": "WATCH", "severity": "P1", "note": "教材 印刷製本 40@24.75 -> 42@26.79 (+2.04 连续恶化); 教材 印刷 製本 22@19.18 -> 24@20.54 (+1.36 越过页 2 边界)。月度诊断须分索引/意图/内耗。"},
+    {"id": "NEW-4", "name": "POSTER_PAGE1_BUT_BLOG", "status": "OBSERVE", "severity": "P2", "note": "海報印刷 页 1 资产仍是 blog guide (11-01: 199 imp @9.49/1 clk), 交易页 35-61; 本轮无 query-page 档复测, O6 11-06 判定。"},
+    {"id": "NEW-5", "name": "IMPRESSIONS_UP_CLICKS_FLAT", "status": "OBSERVE", "severity": "P3", "note": "新窗 imp/day +1.8% / clk/day -1.0% (窗口滑动噪声级); last-7 本轮无法重算 (无脚本), 11-01 值 (imps +3.9%/clks -2.9%) 继承观察。"},
+    {"id": "NEW-6", "name": "CTR_ZERO_ON_PAGE1", "status": "OPEN", "severity": "P2", "note": "5 个页 1 零点击词不变 (食品包裝印刷 106@8.39 / small batch sticker printing 34@5.65 / small batch stickers 15@5.40 / saddle stitch 5@7.40 / 卒アル販売 16@5.00); 交 weekly-meta 周五, 先 SERP 特征检查。"},
+    {"id": "NEW-7", "name": "Q4_RED_PACKET_COOLING", "status": "WATCH", "severity": "P3", "note": "利是封印刷 hkg 48@24.81/1 clk (11-01 hkg 50@23.80, +1.01 微退); 季节候选, O11 11-06 分类。"},
+    {"id": "NEW-8", "name": "WEDDING_WORD_COLLAPSE", "status": "WATCH", "severity": "P1", "note": "喜帖印刷 hkg 8@28.00/0 (11-01 7@27.71, 小样本); 索引+落地页检查优先于任何内容动作 (O10)。"},
+    {"id": "NEW-9", "name": "INTERNAL_SPLIT_CONFIRMED_INTRAMARKET", "status": "CONFIRMED_AT_QUERY_COUNTRY", "severity": "P2", "note": "貼紙 9 URL / 海報 10 / 書刊 4 / 月曆 4 top-URL share 32-48% (11-01 query-page 实证) + 本轮国家归属: 全为各市场内部分流 (C4 推进); 包装簇集中 (95.3%)。"},
+    {"id": "NEW-10", "name": "PACKAGING_CLUSTER_SLIGHT_WORSENING", "status": "NEW", "severity": "P2", "note": "包裝盒印刷 +0.66 / 包裝盒訂製 +1.12 / 紙盒印刷 +0.93 同向微退 (首个真 delta), 系 P0 coverage 重中之重; 下一轮第三测确认趋势后再归因。"}
+  ],
+  "tasks": [
+    {"task_id": "GSC-20261101-O1", "intent": "把 API 拉取固化为每日数据路径 (scripts/fetch_gsc_data.py --end), 摆脱手工导出依赖", "owner": "ZP-k3-review + K3 (infra)", "status": "PARTIAL", "note": "11-01 与 11-02 连续两日由同侪会话拉取成功, 但仍是手工触发非定时; 未注册新 lane", "next_check": "2026-11-03", "accept": "定时 API 拉取 + 运行日志; 无需手工步骤"},
+    {"task_id": "GSC-20261101-O2", "intent": "定恢复 SSoT 口径 (API 26d daily vs xlsx 24h) 并重推同口径 pre-cliff 基线 (关 A26)", "owner": "K3 (rule change) + ZP-k3-review", "status": "WAITING_K3", "note": "docs §3.2.6 推荐「API 26d daily」, 待 K3 一句话", "next_check": "2026-11-03", "accept": "一个书面口径; 恢复系数仅凭该方法可算"},
+    {"task_id": "GSC-20261101-O3", "intent": "任务J hkg 8 锁词首个同法 delta", "owner": "ZP-gsc-feedback", "status": "DONE_THIS_RUN", "note": "end1102 二次拉取已得首个真 delta (全部 ±1.12 内); 下一测 11-03 第三拉", "next_check": "2026-11-03", "accept": "同调用 8 行, 不含 xlsx 相减"},
+    {"task_id": "GSC-20261101-O4", "intent": "CTR 池: small batch sticker printing 34@5.65/0, 卒アル販売 16@5.00/0, 食品包裝印刷 106@8.39/0, 即日印刷 55@7.75/1", "owner": "ZP-weekly-meta", "status": "SCHEDULED", "next_check": "2026-11-06", "accept": "先 SERP 特征检查; 1 例页 1 零点击修复并复测"},
+    {"task_id": "GSC-20261101-O5", "intent": "内耗: 貼紙 9 URL / 海報 10 / 書刊 4 / 月曆 4 每词簇选一个 canonical 承接 URL", "owner": "ZP-monthly-matrix (with weekly-meta)", "status": "PARTIAL", "note": "C4 国家归属已证 intra-market (本轮); 命名清单待 monthly-matrix 出", "next_check": "2026-11-03", "accept": "每词簇一个具名 canonical URL; 无 K3 不 redirect/noindex"},
+    {"task_id": "GSC-20261101-O6", "intent": "海报: 页 1 资产是 blog guide (199 imp @9.49/1 clk), 交易页 35-61", "owner": "ZP-daily-content / weekly-meta", "status": "SCHEDULED", "next_check": "2026-11-06", "accept": "blog->产品路径或交易页提升, 按证据二选一"},
+    {"task_id": "GSC-20261101-O7", "intent": "月曆: title trim 7d 效果判读", "owner": "ZP-weekly-meta", "status": "SCHEDULED", "note": "country 面 -0.78 微进 (26.29), 仍 20+ 深位", "next_check": "2026-11-06", "accept": "7d 页展示 >= 基线 80% 且带钱词 >=1 clk"},
+    {"task_id": "GSC-20261101-O8", "intent": "貼紙: 14 天复测 (不动 title)", "owner": "ZP-daily-content", "status": "SCHEDULED", "next_check": "2026-11-04", "accept": "14 天窗内零 title churn; 只复测"},
+    {"task_id": "GSC-20261101-O9", "intent": "ja 教材 churn: 教材 印刷製本 26.79 (连续恶化)", "owner": "ZP-monthly-matrix", "status": "OPEN", "note": "monthly lane 缺报告 (A28); docs §三 已补测量面", "next_check": "下次 monthly run", "accept": "分索引/意图/内耗三因; 无 ROI 断言"},
+    {"task_id": "GSC-20261101-O10", "intent": "喜帖印刷 collapse: 8@28.00/0 (小样本)", "owner": "ZP-monthly-matrix + weekly-meta", "status": "SCHEDULED", "next_check": "2026-11-06", "accept": "重写前先索引+落地页检查"},
+    {"task_id": "GSC-20261101-O11", "intent": "Q4 利是封: 48@24.81/1 clk 季节冷却", "owner": "ZP-monthly-matrix", "status": "SCHEDULED", "next_check": "2026-11-06", "accept": "季节候选分类即可"},
+    {"task_id": "GSC-20261101-O12", "intent": "GEO AI 探针 S1 (queue GEO-20261103-AI-PROBE-S1, owner 本 lane)", "owner": "ZP-gsc-feedback", "status": "SCHEDULED", "note": "未注册 W4 每日 lane, 手动探针为准", "next_check": "2026-11-03", "accept": "固定 kit; 记录 engine/date/answer/citation URL; 不得用普通搜索替代"}
+  ],
+  "next": [
+    {"date": "2026-11-03", "check": "API 数据日 10-30 已越 72h (~92h); 20:13 前必须再拉 (否则 A1 KPI 面正式回退 STALE)", "pass": "latest data day 2026-10-31 或更晚"},
+    {"date": "2026-11-03", "check": "任务J hkg 第三测 (同法同调用) + C4 canonical URL 清单交 monthly-matrix + 门童 #9 确认 index FRESH + GEO AI 探针 S1 (O12)", "pass": "8 行同调用; 每词簇具名 URL; index 含新 CSV; probe 记录四要素"},
+    {"date": "2026-11-04", "check": "貼紙印刷 14 天复测 (只复测不动 title) + 年賀状簇破零检查", "pass": "貼紙 <= 25 或按 11-01 基线判; 年賀状任一展示 = 进展"},
+    {"date": "2026-11-06", "check": "7 天复测: 海报价 / 贴纸 MOQ / catalog FDA / 日历 title / 喜帖 / 利是封 (基线=10-30 KPI 面板)", "pass": "目标页展示 >= 基线 80% 且带钱词 >=1 clk"}
+  ]
+}

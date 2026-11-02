@@ -1,0 +1,6032 @@
+{
+ "24h": {
+  "file": "24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (1).xlsx",
+  "overview": null,
+  "series": {
+   "first": "2026-11-02T03:00:00",
+   "last": "2026-11-03T02:00:00",
+   "rows": 24,
+   "clicks": 23.0,
+   "imps": 977.0,
+   "ctr": 2.35,
+   "pos": 15.93
+  },
+  "filter": [
+   [
+    "过滤器",
+    "值"
+   ],
+   [
+    "搜索类型",
+    "网页（基于文本）"
+   ],
+   [
+    "时间范围",
+    "过去 24 小时"
+   ]
+  ],
+  "queries_rows": 211,
+  "money_exact": [
+   {
+    "kw": "月曆印刷",
+    "clk": 0.0,
+    "imp": 10.0,
+    "ctr": 0.0,
+    "pos": 10.9
+   },
+   {
+    "kw": "印海報",
+    "clk": 0.0,
+    "imp": 7.0,
+    "ctr": 0.0,
+    "pos": 35.14
+   },
+   {
+    "kw": "利是封印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 18.83
+   },
+   {
+    "kw": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 26.5
+   },
+   {
+    "kw": "書刊印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 30.83
+   },
+   {
+    "kw": "貼紙訂製",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 31.5
+   },
+   {
+    "kw": "海報印刷",
+    "clk": 0.0,
+    "imp": 5.0,
+    "ctr": 0.0,
+    "pos": 30.2
+   },
+   {
+    "kw": "pvc シール",
+    "clk": 0.0,
+    "imp": 4.0,
+    "ctr": 0.0,
+    "pos": 12.25
+   },
+   {
+    "kw": "china catalog printing",
+    "clk": 0.0,
+    "imp": 4.0,
+    "ctr": 0.0,
+    "pos": 17.75
+   },
+   {
+    "kw": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 4.0,
+    "ctr": 0.0,
+    "pos": 30.75
+   },
+   {
+    "kw": "宣傳單張",
+    "clk": 0.0,
+    "imp": 4.0,
+    "ctr": 0.0,
+    "pos": 38.5
+   },
+   {
+    "kw": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 3.0,
+    "ctr": 0.0,
+    "pos": 14.33
+   },
+   {
+    "kw": "包裝盒訂製",
+    "clk": 0.0,
+    "imp": 3.0,
+    "ctr": 0.0,
+    "pos": 31.33
+   },
+   {
+    "kw": "コミケ 印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 13.5
+   },
+   {
+    "kw": "騎馬釘印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 15.5
+   },
+   {
+    "kw": "印書",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 25.0
+   },
+   {
+    "kw": "包裝盒印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 28.5
+   },
+   {
+    "kw": "紙盒印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 32.0
+   },
+   {
+    "kw": "喜帖印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 33.5
+   },
+   {
+    "kw": "教材 印刷製本",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 37.5
+   },
+   {
+    "kw": "教科書 印刷",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 43.0
+   },
+   {
+    "kw": "a2 poster",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 52.5
+   },
+   {
+    "kw": "即日印刷",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 9.0
+   },
+   {
+    "kw": "doujinshi printing",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 10.0
+   },
+   {
+    "kw": "小冊子印刷",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 14.0
+   },
+   {
+    "kw": "紙袋印刷",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 15.0
+   },
+   {
+    "kw": "學校印刷",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 27.0
+   },
+   {
+    "kw": "教材 印刷 製本",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 59.0
+   }
+  ],
+  "top_queries": [
+   {
+    "q": "智印港",
+    "clk": 3.0,
+    "imp": 3.0,
+    "pos": 1.0
+   },
+   {
+    "q": "zprintpro",
+    "clk": 2.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "q": "a1海報",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 1.0
+   },
+   {
+    "q": "月曆印刷",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 10.9
+   },
+   {
+    "q": "防水貼紙",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 5.88
+   },
+   {
+    "q": "印海報",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 35.14
+   },
+   {
+    "q": "a1 印刷 即日",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 5.33
+   },
+   {
+    "q": "c109",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 8.33
+   },
+   {
+    "q": "利是封印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 18.83
+   },
+   {
+    "q": "公司年曆",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 20.17
+   },
+   {
+    "q": "印刷公司",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 20.33
+   },
+   {
+    "q": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 26.5
+   },
+   {
+    "q": "書刊印刷",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 30.83
+   },
+   {
+    "q": "貼紙訂製",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 31.5
+   },
+   {
+    "q": "透明貼",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 21.6
+   },
+   {
+    "q": "香港印刷",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 21.6
+   },
+   {
+    "q": "海報印刷",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 30.2
+   },
+   {
+    "q": "個人化利是封",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 10.25
+   },
+   {
+    "q": "印刷",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 11.5
+   },
+   {
+    "q": "pvc シール",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 12.25
+   },
+   {
+    "q": "騎馬釘書刊",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 12.5
+   },
+   {
+    "q": "china catalog printing",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 17.75
+   },
+   {
+    "q": "adhesive posters",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 18.25
+   },
+   {
+    "q": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 30.75
+   },
+   {
+    "q": "宣傳單張",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 38.5
+   },
+   {
+    "q": "貼紙",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 42.0
+   },
+   {
+    "q": "a2 印刷 即日",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 2.67
+   },
+   {
+    "q": "a3 海報 印刷",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 10.33
+   },
+   {
+    "q": "ステッカー印刷 小ロット",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 10.67
+   },
+   {
+    "q": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 14.33
+   },
+   {
+    "q": "年曆訂製",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 16.67
+   },
+   {
+    "q": "wholesale catalog printing",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 19.67
+   },
+   {
+    "q": "利是封訂製",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 24.0
+   },
+   {
+    "q": "包裝盒訂製",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 31.33
+   },
+   {
+    "q": "環保印刷",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 32.0
+   },
+   {
+    "q": "易拉架尺寸",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 40.0
+   },
+   {
+    "q": "pôster a2",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 41.0
+   },
+   {
+    "q": "戶外貼紙",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 44.33
+   },
+   {
+    "q": "印貼紙香港",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 47.0
+   },
+   {
+    "q": "印袋",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 65.67
+   }
+  ],
+  "pages_rows": 233,
+  "top_pages": [
+   {
+    "url": "https://zprintpro.com/zh-hk/",
+    "clk": 5.0,
+    "imp": 81.0,
+    "ctr": 0.0617,
+    "pos": 9.67
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+    "clk": 3.0,
+    "imp": 12.0,
+    "ctr": 0.25,
+    "pos": 10.92
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+    "clk": 1.0,
+    "imp": 19.0,
+    "ctr": 0.0526,
+    "pos": 11.11
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+    "clk": 1.0,
+    "imp": 13.0,
+    "ctr": 0.0769,
+    "pos": 14.38
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+    "clk": 1.0,
+    "imp": 11.0,
+    "ctr": 0.0909,
+    "pos": 18.73
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-bags/",
+    "clk": 1.0,
+    "imp": 8.0,
+    "ctr": 0.125,
+    "pos": 4.62
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+    "clk": 1.0,
+    "imp": 8.0,
+    "ctr": 0.125,
+    "pos": 5.12
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/pearl-envelopes/",
+    "clk": 1.0,
+    "imp": 6.0,
+    "ctr": 0.1667,
+    "pos": 2.83
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/certificates/",
+    "clk": 1.0,
+    "imp": 6.0,
+    "ctr": 0.1667,
+    "pos": 15.5
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-envelopes/",
+    "clk": 1.0,
+    "imp": 5.0,
+    "ctr": 0.2,
+    "pos": 3.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+    "clk": 1.0,
+    "imp": 5.0,
+    "ctr": 0.2,
+    "pos": 3.4
+   },
+   {
+    "url": "https://zprintpro.com/en/product/perfect-bound-books/",
+    "clk": 1.0,
+    "imp": 3.0,
+    "ctr": 0.3333,
+    "pos": 5.33
+   },
+   {
+    "url": "https://zprintpro.com/ja/",
+    "clk": 1.0,
+    "imp": 2.0,
+    "ctr": 0.5,
+    "pos": 3.0
+   },
+   {
+    "url": "https://zprintpro.com/en/product/removable-stickers/",
+    "clk": 1.0,
+    "imp": 2.0,
+    "ctr": 0.5,
+    "pos": 6.5
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/a1-posters/",
+    "clk": 1.0,
+    "imp": 1.0,
+    "ctr": 1.0,
+    "pos": 1.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/art-posters/",
+    "clk": 1.0,
+    "imp": 1.0,
+    "ctr": 1.0,
+    "pos": 1.0
+   },
+   {
+    "url": "https://zprintpro.com/en/category/stickers/",
+    "clk": 1.0,
+    "imp": 1.0,
+    "ctr": 1.0,
+    "pos": 17.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+    "clk": 0.0,
+    "imp": 27.0,
+    "ctr": 0.0,
+    "pos": 17.15
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/books/",
+    "clk": 0.0,
+    "imp": 26.0,
+    "ctr": 0.0,
+    "pos": 54.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+    "clk": 0.0,
+    "imp": 24.0,
+    "ctr": 0.0,
+    "pos": 7.33
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clk": 0.0,
+    "imp": 24.0,
+    "ctr": 0.0,
+    "pos": 11.88
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+    "clk": 0.0,
+    "imp": 23.0,
+    "ctr": 0.0,
+    "pos": 7.91
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "clk": 0.0,
+    "imp": 23.0,
+    "ctr": 0.0,
+    "pos": 18.09
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "clk": 0.0,
+    "imp": 20.0,
+    "ctr": 0.0,
+    "pos": 39.5
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+    "clk": 0.0,
+    "imp": 20.0,
+    "ctr": 0.0,
+    "pos": 61.5
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "clk": 0.0,
+    "imp": 19.0,
+    "ctr": 0.0,
+    "pos": 3.37
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+    "clk": 0.0,
+    "imp": 19.0,
+    "ctr": 0.0,
+    "pos": 30.58
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+    "clk": 0.0,
+    "imp": 18.0,
+    "ctr": 0.0,
+    "pos": 13.17
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+    "clk": 0.0,
+    "imp": 17.0,
+    "ctr": 0.0,
+    "pos": 7.59
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+    "clk": 0.0,
+    "imp": 16.0,
+    "ctr": 0.0,
+    "pos": 10.81
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+    "clk": 0.0,
+    "imp": 15.0,
+    "ctr": 0.0,
+    "pos": 40.2
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+    "clk": 0.0,
+    "imp": 14.0,
+    "ctr": 0.0,
+    "pos": 9.79
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/sticker-guide/",
+    "clk": 0.0,
+    "imp": 14.0,
+    "ctr": 0.0,
+    "pos": 29.71
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 5.46
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/kraft-paper-bags/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 6.62
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 12.85
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 15.92
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 25.15
+   },
+   {
+    "url": "https://zprintpro.com/en/product/a2-posters/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 28.08
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+    "clk": 0.0,
+    "imp": 13.0,
+    "ctr": 0.0,
+    "pos": 40.08
+   }
+  ],
+  "countries": [
+   {
+    "c": "中国香港",
+    "clk": 18.0,
+    "imp": 640.0,
+    "pos": 14.09
+   },
+   {
+    "c": "日本",
+    "clk": 2.0,
+    "imp": 129.0,
+    "pos": 23.91
+   },
+   {
+    "c": "美国",
+    "clk": 1.0,
+    "imp": 62.0,
+    "pos": 24.45
+   },
+   {
+    "c": "台湾",
+    "clk": 1.0,
+    "imp": 35.0,
+    "pos": 12.23
+   },
+   {
+    "c": "巴西",
+    "clk": 1.0,
+    "imp": 5.0,
+    "pos": 32.4
+   },
+   {
+    "c": "中国",
+    "clk": 0.0,
+    "imp": 13.0,
+    "pos": 6.62
+   },
+   {
+    "c": "沙特阿拉伯",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 26.45
+   },
+   {
+    "c": "澳大利亚",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 9.33
+   },
+   {
+    "c": "澳门",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 11.67
+   },
+   {
+    "c": "新加坡",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 5.0
+   },
+   {
+    "c": "英国",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 8.6
+   },
+   {
+    "c": "德国",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 10.6
+   },
+   {
+    "c": "泰国",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 1.75
+   },
+   {
+    "c": "巴基斯坦",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 8.75
+   },
+   {
+    "c": "马来西亚",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.33
+   },
+   {
+    "c": "韩国",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 9.0
+   },
+   {
+    "c": "阿拉伯联合酋长国",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 25.67
+   },
+   {
+    "c": "乌干达",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "c": "乌克兰",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 3.0
+   },
+   {
+    "c": "丹麦",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.0
+   },
+   {
+    "c": "以色列",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 7.0
+   },
+   {
+    "c": "荷兰",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 7.5
+   },
+   {
+    "c": "奥地利",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 8.0
+   },
+   {
+    "c": "罗马尼亚",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 8.0
+   },
+   {
+    "c": "哥伦比亚",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 77.0
+   },
+   {
+    "c": "加拿大",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "印度",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "黎巴嫩",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "墨西哥",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "塞尔维亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "科威特",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "斯里兰卡",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "希腊",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "津巴布韦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "比利时",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "尼日利亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "多哥",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "南非",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "未知地区",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "埃塞俄比亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "法国",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "冈比亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "加纳",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 13.0
+   },
+   {
+    "c": "挪威",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 46.0
+   },
+   {
+    "c": "伊朗",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 47.0
+   },
+   {
+    "c": "俄罗斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 47.0
+   },
+   {
+    "c": "菲律宾",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 100.0
+   }
+  ]
+ },
+ "7d": {
+  "file": "7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (2).xlsx",
+  "overview": null,
+  "series": {
+   "first": "2026-10-25",
+   "last": "2026-10-31",
+   "rows": 7,
+   "clicks": 132.0,
+   "imps": 6255.0,
+   "ctr": 2.11,
+   "pos": 15.6
+  },
+  "filter": [
+   [
+    "过滤器",
+    "值"
+   ],
+   [
+    "搜索类型",
+    "网页（基于文本）"
+   ],
+   [
+    "日期",
+    "过去 7 天"
+   ]
+  ],
+  "queries_rows": 573,
+  "money_exact": [
+   {
+    "kw": "海報印刷",
+    "clk": 1.0,
+    "imp": 51.0,
+    "ctr": 0.0196,
+    "pos": 15.92
+   },
+   {
+    "kw": "a2 poster",
+    "clk": 1.0,
+    "imp": 17.0,
+    "ctr": 0.0588,
+    "pos": 40.76
+   },
+   {
+    "kw": "宣傳單張",
+    "clk": 0.0,
+    "imp": 43.0,
+    "ctr": 0.0,
+    "pos": 36.72
+   },
+   {
+    "kw": "コミケ 印刷",
+    "clk": 0.0,
+    "imp": 38.0,
+    "ctr": 0.0,
+    "pos": 40.53
+   },
+   {
+    "kw": "月曆印刷",
+    "clk": 0.0,
+    "imp": 37.0,
+    "ctr": 0.0,
+    "pos": 23.27
+   },
+   {
+    "kw": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 37.0,
+    "ctr": 0.0,
+    "pos": 29.97
+   },
+   {
+    "kw": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 35.0,
+    "ctr": 0.0,
+    "pos": 33.31
+   },
+   {
+    "kw": "書刊印刷",
+    "clk": 0.0,
+    "imp": 34.0,
+    "ctr": 0.0,
+    "pos": 32.03
+   },
+   {
+    "kw": "印海報",
+    "clk": 0.0,
+    "imp": 31.0,
+    "ctr": 0.0,
+    "pos": 13.0
+   },
+   {
+    "kw": "騎馬釘印刷",
+    "clk": 0.0,
+    "imp": 25.0,
+    "ctr": 0.0,
+    "pos": 11.96
+   },
+   {
+    "kw": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 24.0,
+    "ctr": 0.0,
+    "pos": 9.17
+   },
+   {
+    "kw": "即日印刷",
+    "clk": 0.0,
+    "imp": 18.0,
+    "ctr": 0.0,
+    "pos": 8.94
+   },
+   {
+    "kw": "教科書 印刷",
+    "clk": 0.0,
+    "imp": 18.0,
+    "ctr": 0.0,
+    "pos": 42.11
+   },
+   {
+    "kw": "china catalog printing",
+    "clk": 0.0,
+    "imp": 17.0,
+    "ctr": 0.0,
+    "pos": 14.47
+   },
+   {
+    "kw": "紙袋印刷",
+    "clk": 0.0,
+    "imp": 17.0,
+    "ctr": 0.0,
+    "pos": 17.24
+   },
+   {
+    "kw": "教材 印刷製本",
+    "clk": 0.0,
+    "imp": 17.0,
+    "ctr": 0.0,
+    "pos": 48.12
+   },
+   {
+    "kw": "doujinshi printing",
+    "clk": 0.0,
+    "imp": 16.0,
+    "ctr": 0.0,
+    "pos": 10.38
+   },
+   {
+    "kw": "學校印刷",
+    "clk": 0.0,
+    "imp": 16.0,
+    "ctr": 0.0,
+    "pos": 15.5
+   },
+   {
+    "kw": "利是封印刷",
+    "clk": 0.0,
+    "imp": 15.0,
+    "ctr": 0.0,
+    "pos": 24.6
+   },
+   {
+    "kw": "印書",
+    "clk": 0.0,
+    "imp": 15.0,
+    "ctr": 0.0,
+    "pos": 32.87
+   },
+   {
+    "kw": "紙盒印刷",
+    "clk": 0.0,
+    "imp": 15.0,
+    "ctr": 0.0,
+    "pos": 47.8
+   },
+   {
+    "kw": "包裝盒訂製",
+    "clk": 0.0,
+    "imp": 12.0,
+    "ctr": 0.0,
+    "pos": 43.17
+   },
+   {
+    "kw": "包裝盒印刷",
+    "clk": 0.0,
+    "imp": 9.0,
+    "ctr": 0.0,
+    "pos": 38.78
+   },
+   {
+    "kw": "教材 印刷 製本",
+    "clk": 0.0,
+    "imp": 9.0,
+    "ctr": 0.0,
+    "pos": 40.33
+   },
+   {
+    "kw": "喜帖印刷",
+    "clk": 0.0,
+    "imp": 8.0,
+    "ctr": 0.0,
+    "pos": 34.12
+   },
+   {
+    "kw": "貼紙訂製",
+    "clk": 0.0,
+    "imp": 7.0,
+    "ctr": 0.0,
+    "pos": 18.43
+   },
+   {
+    "kw": "pvc シール",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 16.33
+   },
+   {
+    "kw": "small batch sticker printing",
+    "clk": 0.0,
+    "imp": 3.0,
+    "ctr": 0.0,
+    "pos": 18.0
+   },
+   {
+    "kw": "small batch stickers",
+    "clk": 0.0,
+    "imp": 2.0,
+    "ctr": 0.0,
+    "pos": 5.5
+   },
+   {
+    "kw": "小冊子印刷",
+    "clk": 0.0,
+    "imp": 1.0,
+    "ctr": 0.0,
+    "pos": 16.0
+   }
+  ],
+  "top_queries": [
+   {
+    "q": "智印港",
+    "clk": 3.0,
+    "imp": 4.0,
+    "pos": 1.0
+   },
+   {
+    "q": "zprintpro",
+    "clk": 2.0,
+    "imp": 9.0,
+    "pos": 3.56
+   },
+   {
+    "q": "海報印刷",
+    "clk": 1.0,
+    "imp": 51.0,
+    "pos": 15.92
+   },
+   {
+    "q": "a2 poster",
+    "clk": 1.0,
+    "imp": 17.0,
+    "pos": 40.76
+   },
+   {
+    "q": "防水貼紙",
+    "clk": 1.0,
+    "imp": 14.0,
+    "pos": 16.5
+   },
+   {
+    "q": "a2 printing",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 6.67
+   },
+   {
+    "q": "證書紙材質",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 1.75
+   },
+   {
+    "q": "車身廣告",
+    "clk": 1.0,
+    "imp": 3.0,
+    "pos": 26.0
+   },
+   {
+    "q": "a2 printing price",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "q": "海報 印刷",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "q": "zprint",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "q": "zprinting",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "q": "カーラッピング 激安",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "q": "再生紙印刷",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "q": "燙銀貼紙",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 8.0
+   },
+   {
+    "q": "傳單印刷",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 15.0
+   },
+   {
+    "q": "印刷公司",
+    "clk": 0.0,
+    "imp": 52.0,
+    "pos": 23.56
+   },
+   {
+    "q": "印刷",
+    "clk": 0.0,
+    "imp": 51.0,
+    "pos": 18.96
+   },
+   {
+    "q": "宣傳單張",
+    "clk": 0.0,
+    "imp": 43.0,
+    "pos": 36.72
+   },
+   {
+    "q": "コミケ 印刷",
+    "clk": 0.0,
+    "imp": 38.0,
+    "pos": 40.53
+   },
+   {
+    "q": "月曆印刷",
+    "clk": 0.0,
+    "imp": 37.0,
+    "pos": 23.27
+   },
+   {
+    "q": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 37.0,
+    "pos": 29.97
+   },
+   {
+    "q": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 35.0,
+    "pos": 33.31
+   },
+   {
+    "q": "書刊印刷",
+    "clk": 0.0,
+    "imp": 34.0,
+    "pos": 32.03
+   },
+   {
+    "q": "印海報",
+    "clk": 0.0,
+    "imp": 31.0,
+    "pos": 13.0
+   },
+   {
+    "q": "膠裝書",
+    "clk": 0.0,
+    "imp": 29.0,
+    "pos": 33.21
+   },
+   {
+    "q": "騎馬釘印刷",
+    "clk": 0.0,
+    "imp": 25.0,
+    "pos": 11.96
+   },
+   {
+    "q": "騎馬釘",
+    "clk": 0.0,
+    "imp": 25.0,
+    "pos": 20.16
+   },
+   {
+    "q": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 9.17
+   },
+   {
+    "q": "摺頁印刷",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 17.17
+   },
+   {
+    "q": "c109",
+    "clk": 0.0,
+    "imp": 23.0,
+    "pos": 10.22
+   },
+   {
+    "q": "易拉架製作",
+    "clk": 0.0,
+    "imp": 23.0,
+    "pos": 63.26
+   },
+   {
+    "q": "騎馬釘書刊",
+    "clk": 0.0,
+    "imp": 21.0,
+    "pos": 16.52
+   },
+   {
+    "q": "custom labels small batch",
+    "clk": 0.0,
+    "imp": 21.0,
+    "pos": 34.43
+   },
+   {
+    "q": "膠裝書印刷",
+    "clk": 0.0,
+    "imp": 21.0,
+    "pos": 36.9
+   },
+   {
+    "q": "貼海報",
+    "clk": 0.0,
+    "imp": 21.0,
+    "pos": 65.0
+   },
+   {
+    "q": "即日印刷",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 8.94
+   },
+   {
+    "q": "透明貼",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 22.28
+   },
+   {
+    "q": "膠裝書價格",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 37.89
+   },
+   {
+    "q": "教科書 印刷",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 42.11
+   }
+  ],
+  "pages_rows": 448,
+  "top_pages": [
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+    "clk": 9.0,
+    "imp": 191.0,
+    "ctr": 0.0471,
+    "pos": 9.02
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/",
+    "clk": 8.0,
+    "imp": 415.0,
+    "ctr": 0.0193,
+    "pos": 12.73
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "clk": 7.0,
+    "imp": 403.0,
+    "ctr": 0.0174,
+    "pos": 9.37
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clk": 4.0,
+    "imp": 153.0,
+    "ctr": 0.0261,
+    "pos": 14.1
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+    "clk": 4.0,
+    "imp": 47.0,
+    "ctr": 0.0851,
+    "pos": 8.13
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+    "clk": 4.0,
+    "imp": 31.0,
+    "ctr": 0.129,
+    "pos": 6.94
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+    "clk": 3.0,
+    "imp": 76.0,
+    "ctr": 0.0395,
+    "pos": 10.03
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/red-packets/",
+    "clk": 3.0,
+    "imp": 62.0,
+    "ctr": 0.0484,
+    "pos": 12.5
+   },
+   {
+    "url": "https://zprintpro.com/ja/comiket-c109/",
+    "clk": 3.0,
+    "imp": 47.0,
+    "ctr": 0.0638,
+    "pos": 5.94
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+    "clk": 3.0,
+    "imp": 34.0,
+    "ctr": 0.0882,
+    "pos": 8.21
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-bags/",
+    "clk": 3.0,
+    "imp": 25.0,
+    "ctr": 0.12,
+    "pos": 6.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+    "clk": 3.0,
+    "imp": 25.0,
+    "ctr": 0.12,
+    "pos": 7.72
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/exercise-books/",
+    "clk": 3.0,
+    "imp": 21.0,
+    "ctr": 0.1429,
+    "pos": 9.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/eco-flyers/",
+    "clk": 3.0,
+    "imp": 15.0,
+    "ctr": 0.2,
+    "pos": 11.33
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/flyers/",
+    "clk": 2.0,
+    "imp": 128.0,
+    "ctr": 0.0156,
+    "pos": 25.04
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+    "clk": 2.0,
+    "imp": 75.0,
+    "ctr": 0.0267,
+    "pos": 27.67
+   },
+   {
+    "url": "https://zprintpro.com/en/",
+    "clk": 2.0,
+    "imp": 42.0,
+    "ctr": 0.0476,
+    "pos": 10.95
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+    "clk": 2.0,
+    "imp": 39.0,
+    "ctr": 0.0513,
+    "pos": 5.41
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/wall-calendars/",
+    "clk": 2.0,
+    "imp": 39.0,
+    "ctr": 0.0513,
+    "pos": 52.87
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "clk": 2.0,
+    "imp": 30.0,
+    "ctr": 0.0667,
+    "pos": 11.47
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/educational/",
+    "clk": 2.0,
+    "imp": 21.0,
+    "ctr": 0.0952,
+    "pos": 15.24
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/foil-stickers/",
+    "clk": 2.0,
+    "imp": 20.0,
+    "ctr": 0.1,
+    "pos": 18.35
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/about/",
+    "clk": 2.0,
+    "imp": 16.0,
+    "ctr": 0.125,
+    "pos": 2.44
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/vehicle-wraps/",
+    "clk": 2.0,
+    "imp": 16.0,
+    "ctr": 0.125,
+    "pos": 24.81
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/textbooks/",
+    "clk": 2.0,
+    "imp": 13.0,
+    "ctr": 0.1538,
+    "pos": 40.0
+   },
+   {
+    "url": "https://zprintpro.com/en/blog/hong-kong-printing-cost-baseline-2026/",
+    "clk": 2.0,
+    "imp": 6.0,
+    "ctr": 0.3333,
+    "pos": 3.17
+   },
+   {
+    "url": "https://zprintpro.com/ja/category/stickers/",
+    "clk": 2.0,
+    "imp": 3.0,
+    "ctr": 0.6667,
+    "pos": 1.67
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+    "clk": 1.0,
+    "imp": 123.0,
+    "ctr": 0.0081,
+    "pos": 19.03
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+    "clk": 1.0,
+    "imp": 103.0,
+    "ctr": 0.0097,
+    "pos": 11.16
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+    "clk": 1.0,
+    "imp": 99.0,
+    "ctr": 0.0101,
+    "pos": 20.33
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+    "clk": 1.0,
+    "imp": 96.0,
+    "ctr": 0.0104,
+    "pos": 8.23
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+    "clk": 1.0,
+    "imp": 88.0,
+    "ctr": 0.0114,
+    "pos": 50.99
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+    "clk": 1.0,
+    "imp": 79.0,
+    "ctr": 0.0127,
+    "pos": 7.77
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "clk": 1.0,
+    "imp": 77.0,
+    "ctr": 0.013,
+    "pos": 15.39
+   },
+   {
+    "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "clk": 1.0,
+    "imp": 74.0,
+    "ctr": 0.0135,
+    "pos": 16.43
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "clk": 1.0,
+    "imp": 57.0,
+    "ctr": 0.0175,
+    "pos": 34.04
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+    "clk": 1.0,
+    "imp": 56.0,
+    "ctr": 0.0179,
+    "pos": 41.27
+   },
+   {
+    "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+    "clk": 1.0,
+    "imp": 41.0,
+    "ctr": 0.0244,
+    "pos": 17.0
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+    "clk": 1.0,
+    "imp": 41.0,
+    "ctr": 0.0244,
+    "pos": 24.71
+   },
+   {
+    "url": "https://zprintpro.com/en/product/a1-posters/",
+    "clk": 1.0,
+    "imp": 33.0,
+    "ctr": 0.0303,
+    "pos": 8.76
+   }
+  ],
+  "countries": [
+   {
+    "c": "中国香港",
+    "clk": 97.0,
+    "imp": 3665.0,
+    "pos": 14.23
+   },
+   {
+    "c": "日本",
+    "clk": 13.0,
+    "imp": 778.0,
+    "pos": 27.56
+   },
+   {
+    "c": "美国",
+    "clk": 6.0,
+    "imp": 778.0,
+    "pos": 15.18
+   },
+   {
+    "c": "印度",
+    "clk": 3.0,
+    "imp": 37.0,
+    "pos": 15.59
+   },
+   {
+    "c": "澳门",
+    "clk": 3.0,
+    "imp": 29.0,
+    "pos": 5.83
+   },
+   {
+    "c": "中国",
+    "clk": 2.0,
+    "imp": 58.0,
+    "pos": 5.88
+   },
+   {
+    "c": "加拿大",
+    "clk": 2.0,
+    "imp": 39.0,
+    "pos": 7.97
+   },
+   {
+    "c": "台湾",
+    "clk": 1.0,
+    "imp": 180.0,
+    "pos": 14.74
+   },
+   {
+    "c": "新加坡",
+    "clk": 1.0,
+    "imp": 64.0,
+    "pos": 8.7
+   },
+   {
+    "c": "菲律宾",
+    "clk": 1.0,
+    "imp": 13.0,
+    "pos": 5.62
+   },
+   {
+    "c": "泰国",
+    "clk": 1.0,
+    "imp": 12.0,
+    "pos": 13.0
+   },
+   {
+    "c": "斯洛文尼亚",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 7.0
+   },
+   {
+    "c": "奥地利",
+    "clk": 1.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "澳大利亚",
+    "clk": 0.0,
+    "imp": 54.0,
+    "pos": 13.19
+   },
+   {
+    "c": "英国",
+    "clk": 0.0,
+    "imp": 51.0,
+    "pos": 11.8
+   },
+   {
+    "c": "巴西",
+    "clk": 0.0,
+    "imp": 42.0,
+    "pos": 19.43
+   },
+   {
+    "c": "马来西亚",
+    "clk": 0.0,
+    "imp": 32.0,
+    "pos": 6.72
+   },
+   {
+    "c": "巴基斯坦",
+    "clk": 0.0,
+    "imp": 30.0,
+    "pos": 9.97
+   },
+   {
+    "c": "沙特阿拉伯",
+    "clk": 0.0,
+    "imp": 30.0,
+    "pos": 19.23
+   },
+   {
+    "c": "德国",
+    "clk": 0.0,
+    "imp": 26.0,
+    "pos": 10.81
+   },
+   {
+    "c": "西班牙",
+    "clk": 0.0,
+    "imp": 19.0,
+    "pos": 9.32
+   },
+   {
+    "c": "荷兰",
+    "clk": 0.0,
+    "imp": 17.0,
+    "pos": 10.29
+   },
+   {
+    "c": "印度尼西亚",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 4.67
+   },
+   {
+    "c": "韩国",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 8.33
+   },
+   {
+    "c": "法国",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 11.0
+   },
+   {
+    "c": "越南",
+    "clk": 0.0,
+    "imp": 14.0,
+    "pos": 5.29
+   },
+   {
+    "c": "俄罗斯",
+    "clk": 0.0,
+    "imp": 14.0,
+    "pos": 28.86
+   },
+   {
+    "c": "孟加拉",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 12.36
+   },
+   {
+    "c": "尼日利亚",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 5.4
+   },
+   {
+    "c": "乌克兰",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 5.5
+   },
+   {
+    "c": "南非",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 5.6
+   },
+   {
+    "c": "瑞士",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 8.62
+   },
+   {
+    "c": "墨西哥",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 7.14
+   },
+   {
+    "c": "新西兰",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 7.29
+   },
+   {
+    "c": "比利时",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 10.57
+   },
+   {
+    "c": "意大利",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 16.43
+   },
+   {
+    "c": "瑞典",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 6.33
+   },
+   {
+    "c": "埃塞俄比亚",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 10.6
+   },
+   {
+    "c": "斯里兰卡",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 6.0
+   },
+   {
+    "c": "塞尔维亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 6.25
+   },
+   {
+    "c": "肯尼亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 7.5
+   },
+   {
+    "c": "罗马尼亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 9.75
+   },
+   {
+    "c": "希腊",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 10.75
+   },
+   {
+    "c": "保加利亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 22.0
+   },
+   {
+    "c": "爱尔兰",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 24.25
+   },
+   {
+    "c": "哥伦比亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 29.75
+   },
+   {
+    "c": "匈牙利",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 2.33
+   },
+   {
+    "c": "埃及",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.0
+   },
+   {
+    "c": "坦桑尼亚",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.67
+   },
+   {
+    "c": "芬兰",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 6.0
+   },
+   {
+    "c": "阿根廷",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 6.67
+   },
+   {
+    "c": "捷克",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 7.0
+   },
+   {
+    "c": "葡萄牙",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 9.67
+   },
+   {
+    "c": "柬埔寨",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 13.0
+   },
+   {
+    "c": "阿拉伯联合酋长国",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 14.33
+   },
+   {
+    "c": "秘鲁",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 22.0
+   },
+   {
+    "c": "土耳其",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 27.67
+   },
+   {
+    "c": "波兰",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 43.0
+   },
+   {
+    "c": "伊朗",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 65.0
+   },
+   {
+    "c": "斐济",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "c": "阿塞拜疆",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 1.5
+   },
+   {
+    "c": "蒙古",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 2.5
+   },
+   {
+    "c": "加纳",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 3.5
+   },
+   {
+    "c": "黎巴嫩",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 3.5
+   },
+   {
+    "c": "立陶宛",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 3.5
+   },
+   {
+    "c": "摩洛哥",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.0
+   },
+   {
+    "c": "丹麦",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.5
+   },
+   {
+    "c": "突尼斯",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.5
+   },
+   {
+    "c": "以色列",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.0
+   },
+   {
+    "c": "约旦",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "c": "伊拉克",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 6.0
+   },
+   {
+    "c": "巴拿马",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 6.0
+   },
+   {
+    "c": "科威特",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 6.5
+   },
+   {
+    "c": "斯威士兰",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 8.0
+   },
+   {
+    "c": "缅甸",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 55.5
+   },
+   {
+    "c": "格鲁吉亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "未知地区",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "斯洛伐克",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "津巴布韦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 3.0
+   },
+   {
+    "c": "亚美尼亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "拉脱维亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "瑙鲁",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "喀麦隆",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "西撒哈拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "哈萨克斯坦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "老挝",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "尼泊尔",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "波多黎各",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "科特迪瓦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "克罗地亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "厄瓜多尔",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "萨尔瓦多",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "荷属圣马丁岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "乌干达",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "毛里求斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 8.0
+   },
+   {
+    "c": "格林纳达",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "卢森堡",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "塔吉克斯坦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "安哥拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "阿尔巴尼亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "多米尼加共和国",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "东帝汶",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "特立尼达和多巴哥",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "法属圭亚那",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "阿鲁巴",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 18.0
+   },
+   {
+    "c": "委内瑞拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 41.0
+   },
+   {
+    "c": "巴哈马",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 58.0
+   },
+   {
+    "c": "贝宁",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 73.0
+   },
+   {
+    "c": "文莱",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 76.0
+   }
+  ]
+ },
+ "28d": {
+  "file": "28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+  "overview": null,
+  "series": {
+   "first": "2026-10-04",
+   "last": "2026-10-31",
+   "rows": 28,
+   "clicks": 504.0,
+   "imps": 22114.0,
+   "ctr": 2.28,
+   "pos": 14.03
+  },
+  "filter": [
+   [
+    "过滤器",
+    "值"
+   ],
+   [
+    "搜索类型",
+    "网页（基于文本）"
+   ],
+   [
+    "日期",
+    "过去 28 天"
+   ]
+  ],
+  "queries_rows": 1000,
+  "money_exact": [
+   {
+    "kw": "海報印刷",
+    "clk": 1.0,
+    "imp": 278.0,
+    "ctr": 0.0036,
+    "pos": 14.41
+   },
+   {
+    "kw": "印海報",
+    "clk": 1.0,
+    "imp": 131.0,
+    "ctr": 0.0076,
+    "pos": 13.36
+   },
+   {
+    "kw": "即日印刷",
+    "clk": 1.0,
+    "imp": 60.0,
+    "ctr": 0.0167,
+    "pos": 7.93
+   },
+   {
+    "kw": "a2 poster",
+    "clk": 1.0,
+    "imp": 59.0,
+    "ctr": 0.0169,
+    "pos": 18.68
+   },
+   {
+    "kw": "利是封印刷",
+    "clk": 1.0,
+    "imp": 54.0,
+    "ctr": 0.0185,
+    "pos": 23.63
+   },
+   {
+    "kw": "コミケ 印刷",
+    "clk": 0.0,
+    "imp": 170.0,
+    "ctr": 0.0,
+    "pos": 22.04
+   },
+   {
+    "kw": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 127.0,
+    "ctr": 0.0,
+    "pos": 38.06
+   },
+   {
+    "kw": "宣傳單張",
+    "clk": 0.0,
+    "imp": 121.0,
+    "ctr": 0.0,
+    "pos": 33.74
+   },
+   {
+    "kw": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 118.0,
+    "ctr": 0.0,
+    "pos": 8.42
+   },
+   {
+    "kw": "月曆印刷",
+    "clk": 0.0,
+    "imp": 116.0,
+    "ctr": 0.0,
+    "pos": 25.3
+   },
+   {
+    "kw": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 113.0,
+    "ctr": 0.0,
+    "pos": 29.31
+   },
+   {
+    "kw": "書刊印刷",
+    "clk": 0.0,
+    "imp": 112.0,
+    "ctr": 0.0,
+    "pos": 31.98
+   },
+   {
+    "kw": "china catalog printing",
+    "clk": 0.0,
+    "imp": 72.0,
+    "ctr": 0.0,
+    "pos": 14.96
+   },
+   {
+    "kw": "紙袋印刷",
+    "clk": 0.0,
+    "imp": 66.0,
+    "ctr": 0.0,
+    "pos": 16.24
+   },
+   {
+    "kw": "騎馬釘印刷",
+    "clk": 0.0,
+    "imp": 65.0,
+    "ctr": 0.0,
+    "pos": 12.78
+   },
+   {
+    "kw": "印書",
+    "clk": 0.0,
+    "imp": 56.0,
+    "ctr": 0.0,
+    "pos": 31.5
+   },
+   {
+    "kw": "學校印刷",
+    "clk": 0.0,
+    "imp": 51.0,
+    "ctr": 0.0,
+    "pos": 18.8
+   },
+   {
+    "kw": "doujinshi printing",
+    "clk": 0.0,
+    "imp": 50.0,
+    "ctr": 0.0,
+    "pos": 10.06
+   },
+   {
+    "kw": "包裝盒印刷",
+    "clk": 0.0,
+    "imp": 50.0,
+    "ctr": 0.0,
+    "pos": 32.8
+   },
+   {
+    "kw": "教科書 印刷",
+    "clk": 0.0,
+    "imp": 50.0,
+    "ctr": 0.0,
+    "pos": 47.5
+   },
+   {
+    "kw": "紙盒印刷",
+    "clk": 0.0,
+    "imp": 49.0,
+    "ctr": 0.0,
+    "pos": 36.88
+   },
+   {
+    "kw": "包裝盒訂製",
+    "clk": 0.0,
+    "imp": 48.0,
+    "ctr": 0.0,
+    "pos": 34.1
+   },
+   {
+    "kw": "教材 印刷製本",
+    "clk": 0.0,
+    "imp": 46.0,
+    "ctr": 0.0,
+    "pos": 28.67
+   },
+   {
+    "kw": "小冊子印刷",
+    "clk": 0.0,
+    "imp": 45.0,
+    "ctr": 0.0,
+    "pos": 10.71
+   },
+   {
+    "kw": "small batch sticker printing",
+    "clk": 0.0,
+    "imp": 35.0,
+    "ctr": 0.0,
+    "pos": 5.66
+   },
+   {
+    "kw": "貼紙訂製",
+    "clk": 0.0,
+    "imp": 34.0,
+    "ctr": 0.0,
+    "pos": 30.59
+   },
+   {
+    "kw": "教材 印刷 製本",
+    "clk": 0.0,
+    "imp": 25.0,
+    "ctr": 0.0,
+    "pos": 22.2
+   },
+   {
+    "kw": "small batch stickers",
+    "clk": 0.0,
+    "imp": 21.0,
+    "ctr": 0.0,
+    "pos": 5.1
+   },
+   {
+    "kw": "pvc シール",
+    "clk": 0.0,
+    "imp": 19.0,
+    "ctr": 0.0,
+    "pos": 17.79
+   },
+   {
+    "kw": "卒アル販売",
+    "clk": 0.0,
+    "imp": 16.0,
+    "ctr": 0.0,
+    "pos": 5.0
+   },
+   {
+    "kw": "喜帖印刷",
+    "clk": 0.0,
+    "imp": 10.0,
+    "ctr": 0.0,
+    "pos": 29.4
+   },
+   {
+    "kw": "large envelopes",
+    "clk": 0.0,
+    "imp": 8.0,
+    "ctr": 0.0,
+    "pos": 13.88
+   },
+   {
+    "kw": "saddle stitch booklet printing",
+    "clk": 0.0,
+    "imp": 6.0,
+    "ctr": 0.0,
+    "pos": 6.67
+   }
+  ],
+  "top_queries": [
+   {
+    "q": "智印港",
+    "clk": 19.0,
+    "imp": 29.0,
+    "pos": 1.45
+   },
+   {
+    "q": "zprintpro",
+    "clk": 5.0,
+    "imp": 19.0,
+    "pos": 2.84
+   },
+   {
+    "q": "證書紙材質",
+    "clk": 2.0,
+    "imp": 16.0,
+    "pos": 2.81
+   },
+   {
+    "q": "doujin printing",
+    "clk": 2.0,
+    "imp": 15.0,
+    "pos": 9.07
+   },
+   {
+    "q": "燙銀貼紙",
+    "clk": 2.0,
+    "imp": 4.0,
+    "pos": 7.5
+   },
+   {
+    "q": "海報印刷",
+    "clk": 1.0,
+    "imp": 278.0,
+    "pos": 14.41
+   },
+   {
+    "q": "印海報",
+    "clk": 1.0,
+    "imp": 131.0,
+    "pos": 13.36
+   },
+   {
+    "q": "即日印刷",
+    "clk": 1.0,
+    "imp": 60.0,
+    "pos": 7.93
+   },
+   {
+    "q": "a2 poster",
+    "clk": 1.0,
+    "imp": 59.0,
+    "pos": 18.68
+   },
+   {
+    "q": "利是封印刷",
+    "clk": 1.0,
+    "imp": 54.0,
+    "pos": 23.63
+   },
+   {
+    "q": "紙袋",
+    "clk": 1.0,
+    "imp": 39.0,
+    "pos": 31.38
+   },
+   {
+    "q": "a1 印刷 即日",
+    "clk": 1.0,
+    "imp": 33.0,
+    "pos": 8.21
+   },
+   {
+    "q": "a2 印刷 即日",
+    "clk": 1.0,
+    "imp": 26.0,
+    "pos": 4.12
+   },
+   {
+    "q": "alipay flash collect",
+    "clk": 1.0,
+    "imp": 25.0,
+    "pos": 3.4
+   },
+   {
+    "q": "zprint",
+    "clk": 1.0,
+    "imp": 25.0,
+    "pos": 8.4
+   },
+   {
+    "q": "利是封訂製",
+    "clk": 1.0,
+    "imp": 25.0,
+    "pos": 19.6
+   },
+   {
+    "q": "訂製利是封",
+    "clk": 1.0,
+    "imp": 25.0,
+    "pos": 21.52
+   },
+   {
+    "q": "禮物紙袋邊度買",
+    "clk": 1.0,
+    "imp": 23.0,
+    "pos": 5.65
+   },
+   {
+    "q": "印海報一張",
+    "clk": 1.0,
+    "imp": 22.0,
+    "pos": 8.64
+   },
+   {
+    "q": "防水貼紙",
+    "clk": 1.0,
+    "imp": 21.0,
+    "pos": 20.24
+   },
+   {
+    "q": "海報印刷一張",
+    "clk": 1.0,
+    "imp": 20.0,
+    "pos": 3.4
+   },
+   {
+    "q": "車身廣告",
+    "clk": 1.0,
+    "imp": 20.0,
+    "pos": 35.45
+   },
+   {
+    "q": "大紙袋",
+    "clk": 1.0,
+    "imp": 14.0,
+    "pos": 4.14
+   },
+   {
+    "q": "a2 printing",
+    "clk": 1.0,
+    "imp": 13.0,
+    "pos": 7.92
+   },
+   {
+    "q": "a2 poster printing",
+    "clk": 1.0,
+    "imp": 12.0,
+    "pos": 24.08
+   },
+   {
+    "q": "公司信封",
+    "clk": 1.0,
+    "imp": 11.0,
+    "pos": 1.0
+   },
+   {
+    "q": "海報 印刷",
+    "clk": 1.0,
+    "imp": 8.0,
+    "pos": 7.25
+   },
+   {
+    "q": "急件印刷",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 6.83
+   },
+   {
+    "q": "海報紙質",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 7.33
+   },
+   {
+    "q": "a2 print",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 29.33
+   },
+   {
+    "q": "環保紙",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 35.17
+   },
+   {
+    "q": "ポチ袋 オリジナル 小ロット",
+    "clk": 1.0,
+    "imp": 5.0,
+    "pos": 12.2
+   },
+   {
+    "q": "年曆印刷",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 6.25
+   },
+   {
+    "q": "騎馬釘頁數",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 10.0
+   },
+   {
+    "q": "印傳單",
+    "clk": 1.0,
+    "imp": 3.0,
+    "pos": 13.0
+   },
+   {
+    "q": "a2 printing price",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "q": "燙金印刷少量",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 1.0
+   },
+   {
+    "q": "易拉架standard size",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 8.5
+   },
+   {
+    "q": "燙金卡片",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 8.5
+   },
+   {
+    "q": "吊牌印刷",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 23.0
+   }
+  ],
+  "pages_rows": 598,
+  "top_pages": [
+   {
+    "url": "https://zprintpro.com/zh-hk/",
+    "clk": 49.0,
+    "imp": 1118.0,
+    "ctr": 0.0438,
+    "pos": 12.96
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clk": 24.0,
+    "imp": 862.0,
+    "ctr": 0.0278,
+    "pos": 13.55
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "clk": 19.0,
+    "imp": 1515.0,
+    "ctr": 0.0125,
+    "pos": 8.71
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+    "clk": 19.0,
+    "imp": 567.0,
+    "ctr": 0.0335,
+    "pos": 10.25
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+    "clk": 14.0,
+    "imp": 117.0,
+    "ctr": 0.1197,
+    "pos": 5.95
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+    "clk": 13.0,
+    "imp": 215.0,
+    "ctr": 0.0605,
+    "pos": 5.81
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+    "clk": 13.0,
+    "imp": 182.0,
+    "ctr": 0.0714,
+    "pos": 6.42
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/red-packets/",
+    "clk": 12.0,
+    "imp": 210.0,
+    "ctr": 0.0571,
+    "pos": 17.47
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+    "clk": 9.0,
+    "imp": 291.0,
+    "ctr": 0.0309,
+    "pos": 7.93
+   },
+   {
+    "url": "https://zprintpro.com/en/",
+    "clk": 8.0,
+    "imp": 209.0,
+    "ctr": 0.0383,
+    "pos": 8.02
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+    "clk": 7.0,
+    "imp": 229.0,
+    "ctr": 0.0306,
+    "pos": 12.0
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/foil-stickers/",
+    "clk": 7.0,
+    "imp": 82.0,
+    "ctr": 0.0854,
+    "pos": 9.72
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+    "clk": 6.0,
+    "imp": 391.0,
+    "ctr": 0.0153,
+    "pos": 10.13
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+    "clk": 6.0,
+    "imp": 219.0,
+    "ctr": 0.0274,
+    "pos": 15.06
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+    "clk": 6.0,
+    "imp": 92.0,
+    "ctr": 0.0652,
+    "pos": 6.92
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+    "clk": 6.0,
+    "imp": 46.0,
+    "ctr": 0.1304,
+    "pos": 4.52
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/flyers/",
+    "clk": 5.0,
+    "imp": 399.0,
+    "ctr": 0.0125,
+    "pos": 23.23
+   },
+   {
+    "url": "https://zprintpro.com/en/product/doujinshi-printing/",
+    "clk": 5.0,
+    "imp": 213.0,
+    "ctr": 0.0235,
+    "pos": 6.85
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+    "clk": 5.0,
+    "imp": 186.0,
+    "ctr": 0.0269,
+    "pos": 6.86
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+    "clk": 5.0,
+    "imp": 159.0,
+    "ctr": 0.0314,
+    "pos": 9.67
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-bags/",
+    "clk": 5.0,
+    "imp": 135.0,
+    "ctr": 0.037,
+    "pos": 14.18
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+    "clk": 5.0,
+    "imp": 79.0,
+    "ctr": 0.0633,
+    "pos": 24.46
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/eco-flyers/",
+    "clk": 5.0,
+    "imp": 51.0,
+    "ctr": 0.098,
+    "pos": 12.24
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+    "clk": 4.0,
+    "imp": 259.0,
+    "ctr": 0.0154,
+    "pos": 36.85
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/calendars/",
+    "clk": 4.0,
+    "imp": 222.0,
+    "ctr": 0.018,
+    "pos": 35.6
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "clk": 4.0,
+    "imp": 185.0,
+    "ctr": 0.0216,
+    "pos": 14.79
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "clk": 4.0,
+    "imp": 110.0,
+    "ctr": 0.0364,
+    "pos": 10.26
+   },
+   {
+    "url": "https://zprintpro.com/ja/category/packaging/",
+    "clk": 4.0,
+    "imp": 88.0,
+    "ctr": 0.0455,
+    "pos": 29.07
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/educational/",
+    "clk": 4.0,
+    "imp": 78.0,
+    "ctr": 0.0513,
+    "pos": 19.32
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/exercise-books/",
+    "clk": 4.0,
+    "imp": 70.0,
+    "ctr": 0.0571,
+    "pos": 7.74
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/zine-small-batch-booklet-printing-guide/",
+    "clk": 4.0,
+    "imp": 59.0,
+    "ctr": 0.0678,
+    "pos": 6.68
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/textbooks/",
+    "clk": 4.0,
+    "imp": 28.0,
+    "ctr": 0.1429,
+    "pos": 27.89
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/fruit-food-label-stickers/",
+    "clk": 4.0,
+    "imp": 21.0,
+    "ctr": 0.1905,
+    "pos": 59.1
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+    "clk": 3.0,
+    "imp": 346.0,
+    "ctr": 0.0087,
+    "pos": 21.95
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+    "clk": 3.0,
+    "imp": 287.0,
+    "ctr": 0.0105,
+    "pos": 8.01
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+    "clk": 3.0,
+    "imp": 268.0,
+    "ctr": 0.0112,
+    "pos": 37.16
+   },
+   {
+    "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+    "clk": 3.0,
+    "imp": 241.0,
+    "ctr": 0.0124,
+    "pos": 11.08
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+    "clk": 3.0,
+    "imp": 215.0,
+    "ctr": 0.014,
+    "pos": 13.6
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-price-guide/",
+    "clk": 3.0,
+    "imp": 171.0,
+    "ctr": 0.0175,
+    "pos": 21.04
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+    "clk": 3.0,
+    "imp": 110.0,
+    "ctr": 0.0273,
+    "pos": 57.2
+   }
+  ],
+  "countries": [
+   {
+    "c": "中国香港",
+    "clk": 358.0,
+    "imp": 12931.0,
+    "pos": 13.61
+   },
+   {
+    "c": "日本",
+    "clk": 45.0,
+    "imp": 2466.0,
+    "pos": 19.52
+   },
+   {
+    "c": "美国",
+    "clk": 33.0,
+    "imp": 2747.0,
+    "pos": 15.25
+   },
+   {
+    "c": "台湾",
+    "clk": 11.0,
+    "imp": 520.0,
+    "pos": 16.03
+   },
+   {
+    "c": "加拿大",
+    "clk": 8.0,
+    "imp": 169.0,
+    "pos": 7.98
+   },
+   {
+    "c": "新加坡",
+    "clk": 7.0,
+    "imp": 215.0,
+    "pos": 7.32
+   },
+   {
+    "c": "澳大利亚",
+    "clk": 7.0,
+    "imp": 174.0,
+    "pos": 9.74
+   },
+   {
+    "c": "澳门",
+    "clk": 5.0,
+    "imp": 99.0,
+    "pos": 5.75
+   },
+   {
+    "c": "中国",
+    "clk": 3.0,
+    "imp": 238.0,
+    "pos": 8.21
+   },
+   {
+    "c": "印度",
+    "clk": 3.0,
+    "imp": 156.0,
+    "pos": 12.56
+   },
+   {
+    "c": "泰国",
+    "clk": 3.0,
+    "imp": 72.0,
+    "pos": 10.9
+   },
+   {
+    "c": "荷兰",
+    "clk": 3.0,
+    "imp": 62.0,
+    "pos": 8.55
+   },
+   {
+    "c": "英国",
+    "clk": 2.0,
+    "imp": 248.0,
+    "pos": 11.2
+   },
+   {
+    "c": "越南",
+    "clk": 2.0,
+    "imp": 85.0,
+    "pos": 13.06
+   },
+   {
+    "c": "巴西",
+    "clk": 1.0,
+    "imp": 136.0,
+    "pos": 19.88
+   },
+   {
+    "c": "德国",
+    "clk": 1.0,
+    "imp": 90.0,
+    "pos": 9.93
+   },
+   {
+    "c": "菲律宾",
+    "clk": 1.0,
+    "imp": 80.0,
+    "pos": 8.0
+   },
+   {
+    "c": "印度尼西亚",
+    "clk": 1.0,
+    "imp": 75.0,
+    "pos": 6.64
+   },
+   {
+    "c": "俄罗斯",
+    "clk": 1.0,
+    "imp": 50.0,
+    "pos": 16.62
+   },
+   {
+    "c": "意大利",
+    "clk": 1.0,
+    "imp": 27.0,
+    "pos": 9.81
+   },
+   {
+    "c": "加纳",
+    "clk": 1.0,
+    "imp": 18.0,
+    "pos": 21.17
+   },
+   {
+    "c": "葡萄牙",
+    "clk": 1.0,
+    "imp": 16.0,
+    "pos": 10.06
+   },
+   {
+    "c": "土耳其",
+    "clk": 1.0,
+    "imp": 16.0,
+    "pos": 18.25
+   },
+   {
+    "c": "蒙古",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 2.17
+   },
+   {
+    "c": "斐济",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 2.25
+   },
+   {
+    "c": "斯洛文尼亚",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 5.75
+   },
+   {
+    "c": "特立尼达和多巴哥",
+    "clk": 1.0,
+    "imp": 4.0,
+    "pos": 8.25
+   },
+   {
+    "c": "奥地利",
+    "clk": 1.0,
+    "imp": 2.0,
+    "pos": 2.5
+   },
+   {
+    "c": "马来西亚",
+    "clk": 0.0,
+    "imp": 127.0,
+    "pos": 9.26
+   },
+   {
+    "c": "巴基斯坦",
+    "clk": 0.0,
+    "imp": 102.0,
+    "pos": 15.38
+   },
+   {
+    "c": "沙特阿拉伯",
+    "clk": 0.0,
+    "imp": 89.0,
+    "pos": 19.71
+   },
+   {
+    "c": "韩国",
+    "clk": 0.0,
+    "imp": 83.0,
+    "pos": 7.04
+   },
+   {
+    "c": "法国",
+    "clk": 0.0,
+    "imp": 52.0,
+    "pos": 8.79
+   },
+   {
+    "c": "西班牙",
+    "clk": 0.0,
+    "imp": 48.0,
+    "pos": 8.02
+   },
+   {
+    "c": "孟加拉",
+    "clk": 0.0,
+    "imp": 48.0,
+    "pos": 12.25
+   },
+   {
+    "c": "南非",
+    "clk": 0.0,
+    "imp": 46.0,
+    "pos": 8.02
+   },
+   {
+    "c": "尼日利亚",
+    "clk": 0.0,
+    "imp": 33.0,
+    "pos": 6.06
+   },
+   {
+    "c": "瑞士",
+    "clk": 0.0,
+    "imp": 33.0,
+    "pos": 6.42
+   },
+   {
+    "c": "瑞典",
+    "clk": 0.0,
+    "imp": 26.0,
+    "pos": 7.73
+   },
+   {
+    "c": "阿拉伯联合酋长国",
+    "clk": 0.0,
+    "imp": 26.0,
+    "pos": 22.31
+   },
+   {
+    "c": "肯尼亚",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 8.62
+   },
+   {
+    "c": "墨西哥",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 9.58
+   },
+   {
+    "c": "新西兰",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 9.88
+   },
+   {
+    "c": "伊朗",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 18.88
+   },
+   {
+    "c": "罗马尼亚",
+    "clk": 0.0,
+    "imp": 22.0,
+    "pos": 6.32
+   },
+   {
+    "c": "阿根廷",
+    "clk": 0.0,
+    "imp": 22.0,
+    "pos": 17.14
+   },
+   {
+    "c": "以色列",
+    "clk": 0.0,
+    "imp": 19.0,
+    "pos": 10.05
+   },
+   {
+    "c": "爱尔兰",
+    "clk": 0.0,
+    "imp": 19.0,
+    "pos": 11.79
+   },
+   {
+    "c": "埃及",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 6.5
+   },
+   {
+    "c": "柬埔寨",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 7.11
+   },
+   {
+    "c": "乌克兰",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 8.94
+   },
+   {
+    "c": "比利时",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 11.56
+   },
+   {
+    "c": "波兰",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 11.83
+   },
+   {
+    "c": "丹麦",
+    "clk": 0.0,
+    "imp": 16.0,
+    "pos": 6.25
+   },
+   {
+    "c": "牙买加",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 2.47
+   },
+   {
+    "c": "保加利亚",
+    "clk": 0.0,
+    "imp": 14.0,
+    "pos": 12.07
+   },
+   {
+    "c": "斯里兰卡",
+    "clk": 0.0,
+    "imp": 13.0,
+    "pos": 5.08
+   },
+   {
+    "c": "芬兰",
+    "clk": 0.0,
+    "imp": 12.0,
+    "pos": 6.67
+   },
+   {
+    "c": "埃塞俄比亚",
+    "clk": 0.0,
+    "imp": 12.0,
+    "pos": 8.0
+   },
+   {
+    "c": "秘鲁",
+    "clk": 0.0,
+    "imp": 12.0,
+    "pos": 9.25
+   },
+   {
+    "c": "希腊",
+    "clk": 0.0,
+    "imp": 12.0,
+    "pos": 9.5
+   },
+   {
+    "c": "匈牙利",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 5.09
+   },
+   {
+    "c": "科威特",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 5.18
+   },
+   {
+    "c": "坦桑尼亚",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 12.18
+   },
+   {
+    "c": "捷克",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 7.4
+   },
+   {
+    "c": "哥伦比亚",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 14.7
+   },
+   {
+    "c": "摩洛哥",
+    "clk": 0.0,
+    "imp": 9.0,
+    "pos": 3.11
+   },
+   {
+    "c": "黎巴嫩",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 2.88
+   },
+   {
+    "c": "拉脱维亚",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 11.38
+   },
+   {
+    "c": "智利",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 12.38
+   },
+   {
+    "c": "津巴布韦",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 14.25
+   },
+   {
+    "c": "委内瑞拉",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 16.0
+   },
+   {
+    "c": "阿尔及利亚",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 4.0
+   },
+   {
+    "c": "塞浦路斯",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 4.43
+   },
+   {
+    "c": "立陶宛",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 4.71
+   },
+   {
+    "c": "尼泊尔",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 5.71
+   },
+   {
+    "c": "塞尔维亚",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 8.29
+   },
+   {
+    "c": "乌干达",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 20.43
+   },
+   {
+    "c": "突尼斯",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 24.86
+   },
+   {
+    "c": "伊拉克",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 3.83
+   },
+   {
+    "c": "厄瓜多尔",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 5.0
+   },
+   {
+    "c": "挪威",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 11.33
+   },
+   {
+    "c": "缅甸",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 22.0
+   },
+   {
+    "c": "哥斯达黎加",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 2.6
+   },
+   {
+    "c": "老挝",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 5.6
+   },
+   {
+    "c": "斯洛伐克",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 13.0
+   },
+   {
+    "c": "毛里求斯",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.25
+   },
+   {
+    "c": "哈萨克斯坦",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.5
+   },
+   {
+    "c": "巴拿马",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.5
+   },
+   {
+    "c": "卢森堡",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.0
+   },
+   {
+    "c": "亚美尼亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.25
+   },
+   {
+    "c": "赞比亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.5
+   },
+   {
+    "c": "约旦",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.75
+   },
+   {
+    "c": "巴勒斯坦",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 6.0
+   },
+   {
+    "c": "阿尔巴尼亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 7.0
+   },
+   {
+    "c": "波多黎各",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 7.5
+   },
+   {
+    "c": "克罗地亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 8.25
+   },
+   {
+    "c": "阿曼",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 15.0
+   },
+   {
+    "c": "文莱",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 21.0
+   },
+   {
+    "c": "马耳他",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 26.0
+   },
+   {
+    "c": "海地",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 4.33
+   },
+   {
+    "c": "喀麦隆",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.33
+   },
+   {
+    "c": "斯威士兰",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 6.0
+   },
+   {
+    "c": "圭亚那",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 7.0
+   },
+   {
+    "c": "冰岛",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 9.0
+   },
+   {
+    "c": "科索沃",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 10.67
+   },
+   {
+    "c": "阿塞拜疆",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 1.5
+   },
+   {
+    "c": "格鲁吉亚",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 1.5
+   },
+   {
+    "c": "白俄罗斯",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 2.0
+   },
+   {
+    "c": "卡塔尔",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.5
+   },
+   {
+    "c": "波斯尼亚和黑塞哥维那",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.0
+   },
+   {
+    "c": "多米尼加共和国",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "c": "马尔代夫",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "c": "塞内加尔",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 8.5
+   },
+   {
+    "c": "不丹",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 10.5
+   },
+   {
+    "c": "巴哈马",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 58.5
+   },
+   {
+    "c": "巴林",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "巴巴多斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "博茨瓦纳",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "莱索托",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "叙利亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "乌兹别克斯坦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "未知地区",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "法罗群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "洪都拉斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "危地马拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "瑙鲁",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "西撒哈拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "玻利维亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "科特迪瓦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "泽西岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "巴拉圭",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "卢旺达",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "萨尔瓦多",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "南苏丹",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "荷属圣马丁岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "格林纳达",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "塔吉克斯坦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "安哥拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "伯利兹",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "摩尔多瓦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "马拉维",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "东帝汶",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "阿富汗",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "法属圭亚那",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "莫桑比克",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "乌拉圭",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "阿鲁巴",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 18.0
+   },
+   {
+    "c": "贝宁",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 73.0
+   }
+  ]
+ },
+ "3mo": {
+  "file": "3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+  "overview": null,
+  "series": {
+   "first": "2026-08-01",
+   "last": "2026-10-31",
+   "rows": 92,
+   "clicks": 1279.0,
+   "imps": 65252.0,
+   "ctr": 1.96,
+   "pos": 17.35
+  },
+  "filter": [
+   [
+    "过滤器",
+    "值"
+   ],
+   [
+    "搜索类型",
+    "网页（基于文本）"
+   ],
+   [
+    "日期",
+    "过去 3 个月"
+   ]
+  ],
+  "queries_rows": 1000,
+  "money_exact": [
+   {
+    "kw": "海報印刷",
+    "clk": 3.0,
+    "imp": 638.0,
+    "ctr": 0.0047,
+    "pos": 18.37
+   },
+   {
+    "kw": "即日印刷",
+    "clk": 3.0,
+    "imp": 163.0,
+    "ctr": 0.0184,
+    "pos": 8.42
+   },
+   {
+    "kw": "saddle stitch booklet printing",
+    "clk": 2.0,
+    "imp": 111.0,
+    "ctr": 0.018,
+    "pos": 4.8
+   },
+   {
+    "kw": "印海報",
+    "clk": 1.0,
+    "imp": 418.0,
+    "ctr": 0.0024,
+    "pos": 18.92
+   },
+   {
+    "kw": "月曆印刷",
+    "clk": 1.0,
+    "imp": 409.0,
+    "ctr": 0.0024,
+    "pos": 20.27
+   },
+   {
+    "kw": "宣傳單張",
+    "clk": 1.0,
+    "imp": 400.0,
+    "ctr": 0.0025,
+    "pos": 34.34
+   },
+   {
+    "kw": "china catalog printing",
+    "clk": 1.0,
+    "imp": 280.0,
+    "ctr": 0.0036,
+    "pos": 17.47
+   },
+   {
+    "kw": "利是封印刷",
+    "clk": 1.0,
+    "imp": 188.0,
+    "ctr": 0.0053,
+    "pos": 24.76
+   },
+   {
+    "kw": "doujinshi printing",
+    "clk": 1.0,
+    "imp": 135.0,
+    "ctr": 0.0074,
+    "pos": 12.81
+   },
+   {
+    "kw": "a2 poster",
+    "clk": 1.0,
+    "imp": 112.0,
+    "ctr": 0.0089,
+    "pos": 22.32
+   },
+   {
+    "kw": "貼紙印刷",
+    "clk": 0.0,
+    "imp": 477.0,
+    "ctr": 0.0,
+    "pos": 32.02
+   },
+   {
+    "kw": "宣傳單張印刷",
+    "clk": 0.0,
+    "imp": 391.0,
+    "ctr": 0.0,
+    "pos": 28.39
+   },
+   {
+    "kw": "コミケ 印刷",
+    "clk": 0.0,
+    "imp": 390.0,
+    "ctr": 0.0,
+    "pos": 24.14
+   },
+   {
+    "kw": "食品包裝印刷",
+    "clk": 0.0,
+    "imp": 383.0,
+    "ctr": 0.0,
+    "pos": 11.31
+   },
+   {
+    "kw": "紙袋印刷",
+    "clk": 0.0,
+    "imp": 223.0,
+    "ctr": 0.0,
+    "pos": 13.72
+   },
+   {
+    "kw": "書刊印刷",
+    "clk": 0.0,
+    "imp": 215.0,
+    "ctr": 0.0,
+    "pos": 33.58
+   },
+   {
+    "kw": "騎馬釘印刷",
+    "clk": 0.0,
+    "imp": 195.0,
+    "ctr": 0.0,
+    "pos": 18.53
+   },
+   {
+    "kw": "包裝盒印刷",
+    "clk": 0.0,
+    "imp": 192.0,
+    "ctr": 0.0,
+    "pos": 35.18
+   },
+   {
+    "kw": "印書",
+    "clk": 0.0,
+    "imp": 178.0,
+    "ctr": 0.0,
+    "pos": 31.9
+   },
+   {
+    "kw": "包裝盒訂製",
+    "clk": 0.0,
+    "imp": 174.0,
+    "ctr": 0.0,
+    "pos": 30.67
+   },
+   {
+    "kw": "small batch sticker printing",
+    "clk": 0.0,
+    "imp": 172.0,
+    "ctr": 0.0,
+    "pos": 7.69
+   },
+   {
+    "kw": "紙盒印刷",
+    "clk": 0.0,
+    "imp": 164.0,
+    "ctr": 0.0,
+    "pos": 35.73
+   },
+   {
+    "kw": "小冊子印刷",
+    "clk": 0.0,
+    "imp": 131.0,
+    "ctr": 0.0,
+    "pos": 10.27
+   },
+   {
+    "kw": "貼紙訂製",
+    "clk": 0.0,
+    "imp": 126.0,
+    "ctr": 0.0,
+    "pos": 26.85
+   },
+   {
+    "kw": "small batch stickers",
+    "clk": 0.0,
+    "imp": 105.0,
+    "ctr": 0.0,
+    "pos": 5.41
+   },
+   {
+    "kw": "教材 印刷製本",
+    "clk": 0.0,
+    "imp": 100.0,
+    "ctr": 0.0,
+    "pos": 37.99
+   },
+   {
+    "kw": "教科書 印刷",
+    "clk": 0.0,
+    "imp": 93.0,
+    "ctr": 0.0,
+    "pos": 44.34
+   },
+   {
+    "kw": "學校印刷",
+    "clk": 0.0,
+    "imp": 82.0,
+    "ctr": 0.0,
+    "pos": 26.7
+   },
+   {
+    "kw": "pvc シール",
+    "clk": 0.0,
+    "imp": 67.0,
+    "ctr": 0.0,
+    "pos": 19.52
+   },
+   {
+    "kw": "教材 印刷 製本",
+    "clk": 0.0,
+    "imp": 53.0,
+    "ctr": 0.0,
+    "pos": 35.53
+   },
+   {
+    "kw": "喜帖印刷",
+    "clk": 0.0,
+    "imp": 51.0,
+    "ctr": 0.0,
+    "pos": 22.76
+   },
+   {
+    "kw": "large envelopes",
+    "clk": 0.0,
+    "imp": 26.0,
+    "ctr": 0.0,
+    "pos": 15.12
+   },
+   {
+    "kw": "卒アル販売",
+    "clk": 0.0,
+    "imp": 17.0,
+    "ctr": 0.0,
+    "pos": 4.82
+   }
+  ],
+  "top_queries": [
+   {
+    "q": "智印港",
+    "clk": 42.0,
+    "imp": 62.0,
+    "pos": 1.27
+   },
+   {
+    "q": "zprintpro",
+    "clk": 7.0,
+    "imp": 22.0,
+    "pos": 2.82
+   },
+   {
+    "q": "a2 印刷 即日",
+    "clk": 5.0,
+    "imp": 50.0,
+    "pos": 3.9
+   },
+   {
+    "q": "doujin printing",
+    "clk": 4.0,
+    "imp": 38.0,
+    "pos": 10.16
+   },
+   {
+    "q": "a2 printing",
+    "clk": 4.0,
+    "imp": 35.0,
+    "pos": 23.0
+   },
+   {
+    "q": "海報印刷",
+    "clk": 3.0,
+    "imp": 638.0,
+    "pos": 18.37
+   },
+   {
+    "q": "印刷公司",
+    "clk": 3.0,
+    "imp": 175.0,
+    "pos": 29.89
+   },
+   {
+    "q": "即日印刷",
+    "clk": 3.0,
+    "imp": 163.0,
+    "pos": 8.42
+   },
+   {
+    "q": "海報印刷一張",
+    "clk": 3.0,
+    "imp": 34.0,
+    "pos": 7.21
+   },
+   {
+    "q": "證書紙材質",
+    "clk": 3.0,
+    "imp": 33.0,
+    "pos": 4.61
+   },
+   {
+    "q": "車身廣告",
+    "clk": 2.0,
+    "imp": 146.0,
+    "pos": 43.16
+   },
+   {
+    "q": "saddle stitch booklet printing",
+    "clk": 2.0,
+    "imp": 111.0,
+    "pos": 4.8
+   },
+   {
+    "q": "利是封訂製",
+    "clk": 2.0,
+    "imp": 86.0,
+    "pos": 23.2
+   },
+   {
+    "q": "印海報一張",
+    "clk": 2.0,
+    "imp": 83.0,
+    "pos": 27.84
+   },
+   {
+    "q": "z print",
+    "clk": 2.0,
+    "imp": 74.0,
+    "pos": 9.28
+   },
+   {
+    "q": "zprint",
+    "clk": 2.0,
+    "imp": 63.0,
+    "pos": 10.06
+   },
+   {
+    "q": "alipay flash collect",
+    "clk": 2.0,
+    "imp": 50.0,
+    "pos": 4.62
+   },
+   {
+    "q": "畢業紀念冊香港",
+    "clk": 2.0,
+    "imp": 45.0,
+    "pos": 6.11
+   },
+   {
+    "q": "大紙袋",
+    "clk": 2.0,
+    "imp": 37.0,
+    "pos": 5.35
+   },
+   {
+    "q": "a2 poster printing",
+    "clk": 2.0,
+    "imp": 35.0,
+    "pos": 32.0
+   },
+   {
+    "q": "急件印刷",
+    "clk": 2.0,
+    "imp": 8.0,
+    "pos": 6.88
+   },
+   {
+    "q": "紙袋零售",
+    "clk": 2.0,
+    "imp": 6.0,
+    "pos": 24.67
+   },
+   {
+    "q": "印海報價錢",
+    "clk": 2.0,
+    "imp": 5.0,
+    "pos": 9.8
+   },
+   {
+    "q": "燙銀貼紙",
+    "clk": 2.0,
+    "imp": 4.0,
+    "pos": 7.5
+   },
+   {
+    "q": "flyer printing",
+    "clk": 2.0,
+    "imp": 3.0,
+    "pos": 4.67
+   },
+   {
+    "q": "印海報",
+    "clk": 1.0,
+    "imp": 418.0,
+    "pos": 18.92
+   },
+   {
+    "q": "月曆印刷",
+    "clk": 1.0,
+    "imp": 409.0,
+    "pos": 20.27
+   },
+   {
+    "q": "宣傳單張",
+    "clk": 1.0,
+    "imp": 400.0,
+    "pos": 34.34
+   },
+   {
+    "q": "china catalog printing",
+    "clk": 1.0,
+    "imp": 280.0,
+    "pos": 17.47
+   },
+   {
+    "q": "利是封印刷",
+    "clk": 1.0,
+    "imp": 188.0,
+    "pos": 24.76
+   },
+   {
+    "q": "餐牌印刷",
+    "clk": 1.0,
+    "imp": 169.0,
+    "pos": 12.69
+   },
+   {
+    "q": "貼紙",
+    "clk": 1.0,
+    "imp": 150.0,
+    "pos": 51.87
+   },
+   {
+    "q": "doujinshi printing",
+    "clk": 1.0,
+    "imp": 135.0,
+    "pos": 12.81
+   },
+   {
+    "q": "a2 poster",
+    "clk": 1.0,
+    "imp": 112.0,
+    "pos": 22.32
+   },
+   {
+    "q": "紙袋",
+    "clk": 1.0,
+    "imp": 94.0,
+    "pos": 31.14
+   },
+   {
+    "q": "訂製利是封",
+    "clk": 1.0,
+    "imp": 87.0,
+    "pos": 22.24
+   },
+   {
+    "q": "防水貼紙",
+    "clk": 1.0,
+    "imp": 71.0,
+    "pos": 19.9
+   },
+   {
+    "q": "a1 印刷 即日",
+    "clk": 1.0,
+    "imp": 65.0,
+    "pos": 7.63
+   },
+   {
+    "q": "公司信封",
+    "clk": 1.0,
+    "imp": 49.0,
+    "pos": 1.0
+   },
+   {
+    "q": "pvc menu",
+    "clk": 1.0,
+    "imp": 41.0,
+    "pos": 16.63
+   }
+  ],
+  "pages_rows": 735,
+  "top_pages": [
+   {
+    "url": "https://zprintpro.com/zh-hk/",
+    "clk": 123.0,
+    "imp": 2201.0,
+    "ctr": 0.0559,
+    "pos": 15.15
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+    "clk": 69.0,
+    "imp": 2863.0,
+    "ctr": 0.0241,
+    "pos": 14.28
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/doujin-circle-printing-guide/",
+    "clk": 42.0,
+    "imp": 610.0,
+    "ctr": 0.0689,
+    "pos": 6.58
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+    "clk": 27.0,
+    "imp": 2330.0,
+    "ctr": 0.0116,
+    "pos": 9.8
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/same-day-flyers/",
+    "clk": 27.0,
+    "imp": 662.0,
+    "ctr": 0.0408,
+    "pos": 15.06
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/mtr-advertising-specs/",
+    "clk": 25.0,
+    "imp": 641.0,
+    "ctr": 0.039,
+    "pos": 7.03
+   },
+   {
+    "url": "https://zprintpro.com/en/",
+    "clk": 22.0,
+    "imp": 583.0,
+    "ctr": 0.0377,
+    "pos": 9.14
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+    "clk": 21.0,
+    "imp": 788.0,
+    "ctr": 0.0266,
+    "pos": 11.2
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+    "clk": 21.0,
+    "imp": 732.0,
+    "ctr": 0.0287,
+    "pos": 10.22
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/red-packets/",
+    "clk": 19.0,
+    "imp": 586.0,
+    "ctr": 0.0324,
+    "pos": 20.49
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/foil-stickers/",
+    "clk": 18.0,
+    "imp": 279.0,
+    "ctr": 0.0645,
+    "pos": 8.06
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/services/rush-printing-delivery/",
+    "clk": 17.0,
+    "imp": 691.0,
+    "ctr": 0.0246,
+    "pos": 17.41
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/certificates/",
+    "clk": 17.0,
+    "imp": 305.0,
+    "ctr": 0.0557,
+    "pos": 10.03
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/flyers/",
+    "clk": 16.0,
+    "imp": 1139.0,
+    "ctr": 0.014,
+    "pos": 27.94
+   },
+   {
+    "url": "https://zprintpro.com/en/product/doujinshi-printing/",
+    "clk": 16.0,
+    "imp": 708.0,
+    "ctr": 0.0226,
+    "pos": 9.42
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+    "clk": 16.0,
+    "imp": 631.0,
+    "ctr": 0.0254,
+    "pos": 16.61
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/exercise-books/",
+    "clk": 16.0,
+    "imp": 303.0,
+    "ctr": 0.0528,
+    "pos": 7.41
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/childrens-picture-book-printing-guide/",
+    "clk": 16.0,
+    "imp": 159.0,
+    "ctr": 0.1006,
+    "pos": 5.74
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+    "clk": 13.0,
+    "imp": 543.0,
+    "ctr": 0.0239,
+    "pos": 8.21
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/posters/",
+    "clk": 12.0,
+    "imp": 906.0,
+    "ctr": 0.0132,
+    "pos": 40.9
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/pearl-envelopes/",
+    "clk": 12.0,
+    "imp": 260.0,
+    "ctr": 0.0462,
+    "pos": 5.41
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/calendars/",
+    "clk": 11.0,
+    "imp": 956.0,
+    "ctr": 0.0115,
+    "pos": 24.15
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-bags/",
+    "clk": 11.0,
+    "imp": 396.0,
+    "ctr": 0.0278,
+    "pos": 15.19
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a4-flyers/",
+    "clk": 11.0,
+    "imp": 336.0,
+    "ctr": 0.0327,
+    "pos": 35.62
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/blog/graduation-yearbook-printing-guide/",
+    "clk": 10.0,
+    "imp": 304.0,
+    "ctr": 0.0329,
+    "pos": 6.66
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/educational/",
+    "clk": 10.0,
+    "imp": 196.0,
+    "ctr": 0.051,
+    "pos": 19.31
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/stickers/",
+    "clk": 9.0,
+    "imp": 1023.0,
+    "ctr": 0.0088,
+    "pos": 35.25
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+    "clk": 9.0,
+    "imp": 903.0,
+    "ctr": 0.01,
+    "pos": 32.47
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/large-envelopes/",
+    "clk": 9.0,
+    "imp": 640.0,
+    "ctr": 0.0141,
+    "pos": 5.58
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+    "clk": 9.0,
+    "imp": 562.0,
+    "ctr": 0.016,
+    "pos": 15.86
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/graduation-yearbook/",
+    "clk": 9.0,
+    "imp": 129.0,
+    "ctr": 0.0698,
+    "pos": 5.54
+   },
+   {
+    "url": "https://zprintpro.com/ja/product/magnetic-closure-gift-box/",
+    "clk": 9.0,
+    "imp": 126.0,
+    "ctr": 0.0714,
+    "pos": 10.5
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/category/packaging/",
+    "clk": 8.0,
+    "imp": 1301.0,
+    "ctr": 0.0061,
+    "pos": 33.26
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/about/",
+    "clk": 8.0,
+    "imp": 159.0,
+    "ctr": 0.0503,
+    "pos": 5.06
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/die-cut-stickers/",
+    "clk": 8.0,
+    "imp": 135.0,
+    "ctr": 0.0593,
+    "pos": 6.32
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/foil-wedding-invitations/",
+    "clk": 8.0,
+    "imp": 107.0,
+    "ctr": 0.0748,
+    "pos": 13.17
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+    "clk": 7.0,
+    "imp": 762.0,
+    "ctr": 0.0092,
+    "pos": 34.57
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+    "clk": 7.0,
+    "imp": 727.0,
+    "ctr": 0.0096,
+    "pos": 21.24
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+    "clk": 7.0,
+    "imp": 489.0,
+    "ctr": 0.0143,
+    "pos": 39.48
+   },
+   {
+    "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+    "clk": 7.0,
+    "imp": 415.0,
+    "ctr": 0.0169,
+    "pos": 13.66
+   }
+  ],
+  "countries": [
+   {
+    "c": "中国香港",
+    "clk": 922.0,
+    "imp": 34698.0,
+    "pos": 15.17
+   },
+   {
+    "c": "日本",
+    "clk": 118.0,
+    "imp": 6618.0,
+    "pos": 19.54
+   },
+   {
+    "c": "美国",
+    "clk": 88.0,
+    "imp": 10989.0,
+    "pos": 20.97
+   },
+   {
+    "c": "台湾",
+    "clk": 17.0,
+    "imp": 1190.0,
+    "pos": 14.42
+   },
+   {
+    "c": "新加坡",
+    "clk": 14.0,
+    "imp": 518.0,
+    "pos": 8.94
+   },
+   {
+    "c": "澳大利亚",
+    "clk": 13.0,
+    "imp": 473.0,
+    "pos": 12.52
+   },
+   {
+    "c": "中国",
+    "clk": 12.0,
+    "imp": 755.0,
+    "pos": 8.24
+   },
+   {
+    "c": "加拿大",
+    "clk": 12.0,
+    "imp": 618.0,
+    "pos": 19.4
+   },
+   {
+    "c": "澳门",
+    "clk": 11.0,
+    "imp": 213.0,
+    "pos": 6.18
+   },
+   {
+    "c": "英国",
+    "clk": 9.0,
+    "imp": 1135.0,
+    "pos": 16.51
+   },
+   {
+    "c": "印度",
+    "clk": 5.0,
+    "imp": 565.0,
+    "pos": 23.89
+   },
+   {
+    "c": "马来西亚",
+    "clk": 5.0,
+    "imp": 454.0,
+    "pos": 16.57
+   },
+   {
+    "c": "意大利",
+    "clk": 5.0,
+    "imp": 106.0,
+    "pos": 18.03
+   },
+   {
+    "c": "菲律宾",
+    "clk": 4.0,
+    "imp": 567.0,
+    "pos": 39.77
+   },
+   {
+    "c": "泰国",
+    "clk": 4.0,
+    "imp": 257.0,
+    "pos": 24.47
+   },
+   {
+    "c": "越南",
+    "clk": 3.0,
+    "imp": 418.0,
+    "pos": 41.99
+   },
+   {
+    "c": "德国",
+    "clk": 3.0,
+    "imp": 272.0,
+    "pos": 13.93
+   },
+   {
+    "c": "荷兰",
+    "clk": 3.0,
+    "imp": 209.0,
+    "pos": 15.66
+   },
+   {
+    "c": "韩国",
+    "clk": 3.0,
+    "imp": 156.0,
+    "pos": 7.66
+   },
+   {
+    "c": "巴西",
+    "clk": 2.0,
+    "imp": 351.0,
+    "pos": 18.64
+   },
+   {
+    "c": "印度尼西亚",
+    "clk": 2.0,
+    "imp": 327.0,
+    "pos": 22.27
+   },
+   {
+    "c": "巴基斯坦",
+    "clk": 2.0,
+    "imp": 235.0,
+    "pos": 18.24
+   },
+   {
+    "c": "法国",
+    "clk": 2.0,
+    "imp": 169.0,
+    "pos": 20.69
+   },
+   {
+    "c": "墨西哥",
+    "clk": 2.0,
+    "imp": 155.0,
+    "pos": 37.12
+   },
+   {
+    "c": "土耳其",
+    "clk": 1.0,
+    "imp": 215.0,
+    "pos": 49.7
+   },
+   {
+    "c": "俄罗斯",
+    "clk": 1.0,
+    "imp": 163.0,
+    "pos": 26.86
+   },
+   {
+    "c": "南非",
+    "clk": 1.0,
+    "imp": 133.0,
+    "pos": 17.1
+   },
+   {
+    "c": "西班牙",
+    "clk": 1.0,
+    "imp": 127.0,
+    "pos": 14.13
+   },
+   {
+    "c": "尼日利亚",
+    "clk": 1.0,
+    "imp": 112.0,
+    "pos": 7.71
+   },
+   {
+    "c": "爱尔兰",
+    "clk": 1.0,
+    "imp": 77.0,
+    "pos": 31.25
+   },
+   {
+    "c": "伊朗",
+    "clk": 1.0,
+    "imp": 46.0,
+    "pos": 30.5
+   },
+   {
+    "c": "葡萄牙",
+    "clk": 1.0,
+    "imp": 44.0,
+    "pos": 9.57
+   },
+   {
+    "c": "加纳",
+    "clk": 1.0,
+    "imp": 44.0,
+    "pos": 12.98
+   },
+   {
+    "c": "奥地利",
+    "clk": 1.0,
+    "imp": 33.0,
+    "pos": 8.94
+   },
+   {
+    "c": "立陶宛",
+    "clk": 1.0,
+    "imp": 31.0,
+    "pos": 5.39
+   },
+   {
+    "c": "塞浦路斯",
+    "clk": 1.0,
+    "imp": 15.0,
+    "pos": 5.2
+   },
+   {
+    "c": "蒙古",
+    "clk": 1.0,
+    "imp": 13.0,
+    "pos": 9.15
+   },
+   {
+    "c": "斯洛文尼亚",
+    "clk": 1.0,
+    "imp": 9.0,
+    "pos": 4.89
+   },
+   {
+    "c": "特立尼达和多巴哥",
+    "clk": 1.0,
+    "imp": 9.0,
+    "pos": 7.0
+   },
+   {
+    "c": "斐济",
+    "clk": 1.0,
+    "imp": 7.0,
+    "pos": 3.0
+   },
+   {
+    "c": "安哥拉",
+    "clk": 1.0,
+    "imp": 7.0,
+    "pos": 8.0
+   },
+   {
+    "c": "巴林",
+    "clk": 1.0,
+    "imp": 6.0,
+    "pos": 22.83
+   },
+   {
+    "c": "沙特阿拉伯",
+    "clk": 0.0,
+    "imp": 335.0,
+    "pos": 31.26
+   },
+   {
+    "c": "孟加拉",
+    "clk": 0.0,
+    "imp": 187.0,
+    "pos": 34.36
+   },
+   {
+    "c": "阿拉伯联合酋长国",
+    "clk": 0.0,
+    "imp": 167.0,
+    "pos": 21.2
+   },
+   {
+    "c": "新西兰",
+    "clk": 0.0,
+    "imp": 101.0,
+    "pos": 15.96
+   },
+   {
+    "c": "乌克兰",
+    "clk": 0.0,
+    "imp": 101.0,
+    "pos": 28.77
+   },
+   {
+    "c": "瑞士",
+    "clk": 0.0,
+    "imp": 83.0,
+    "pos": 7.45
+   },
+   {
+    "c": "瑞典",
+    "clk": 0.0,
+    "imp": 74.0,
+    "pos": 9.93
+   },
+   {
+    "c": "阿根廷",
+    "clk": 0.0,
+    "imp": 69.0,
+    "pos": 11.78
+   },
+   {
+    "c": "以色列",
+    "clk": 0.0,
+    "imp": 66.0,
+    "pos": 16.8
+   },
+   {
+    "c": "肯尼亚",
+    "clk": 0.0,
+    "imp": 60.0,
+    "pos": 6.65
+   },
+   {
+    "c": "波兰",
+    "clk": 0.0,
+    "imp": 60.0,
+    "pos": 13.23
+   },
+   {
+    "c": "罗马尼亚",
+    "clk": 0.0,
+    "imp": 56.0,
+    "pos": 7.55
+   },
+   {
+    "c": "埃及",
+    "clk": 0.0,
+    "imp": 55.0,
+    "pos": 11.78
+   },
+   {
+    "c": "比利时",
+    "clk": 0.0,
+    "imp": 54.0,
+    "pos": 11.07
+   },
+   {
+    "c": "约旦",
+    "clk": 0.0,
+    "imp": 52.0,
+    "pos": 47.44
+   },
+   {
+    "c": "摩洛哥",
+    "clk": 0.0,
+    "imp": 47.0,
+    "pos": 37.38
+   },
+   {
+    "c": "柬埔寨",
+    "clk": 0.0,
+    "imp": 43.0,
+    "pos": 13.26
+   },
+   {
+    "c": "爱沙尼亚",
+    "clk": 0.0,
+    "imp": 42.0,
+    "pos": 53.19
+   },
+   {
+    "c": "丹麦",
+    "clk": 0.0,
+    "imp": 38.0,
+    "pos": 10.16
+   },
+   {
+    "c": "阿尔及利亚",
+    "clk": 0.0,
+    "imp": 38.0,
+    "pos": 43.66
+   },
+   {
+    "c": "斯里兰卡",
+    "clk": 0.0,
+    "imp": 34.0,
+    "pos": 5.12
+   },
+   {
+    "c": "秘鲁",
+    "clk": 0.0,
+    "imp": 34.0,
+    "pos": 14.09
+   },
+   {
+    "c": "哥伦比亚",
+    "clk": 0.0,
+    "imp": 30.0,
+    "pos": 12.47
+   },
+   {
+    "c": "希腊",
+    "clk": 0.0,
+    "imp": 29.0,
+    "pos": 7.76
+   },
+   {
+    "c": "伊拉克",
+    "clk": 0.0,
+    "imp": 29.0,
+    "pos": 19.83
+   },
+   {
+    "c": "芬兰",
+    "clk": 0.0,
+    "imp": 28.0,
+    "pos": 6.36
+   },
+   {
+    "c": "埃塞俄比亚",
+    "clk": 0.0,
+    "imp": 28.0,
+    "pos": 7.0
+   },
+   {
+    "c": "智利",
+    "clk": 0.0,
+    "imp": 28.0,
+    "pos": 8.21
+   },
+   {
+    "c": "科威特",
+    "clk": 0.0,
+    "imp": 27.0,
+    "pos": 6.41
+   },
+   {
+    "c": "挪威",
+    "clk": 0.0,
+    "imp": 26.0,
+    "pos": 8.42
+   },
+   {
+    "c": "保加利亚",
+    "clk": 0.0,
+    "imp": 26.0,
+    "pos": 8.92
+   },
+   {
+    "c": "匈牙利",
+    "clk": 0.0,
+    "imp": 25.0,
+    "pos": 8.76
+   },
+   {
+    "c": "津巴布韦",
+    "clk": 0.0,
+    "imp": 24.0,
+    "pos": 8.67
+   },
+   {
+    "c": "捷克",
+    "clk": 0.0,
+    "imp": 22.0,
+    "pos": 10.64
+   },
+   {
+    "c": "牙买加",
+    "clk": 0.0,
+    "imp": 21.0,
+    "pos": 7.19
+   },
+   {
+    "c": "坦桑尼亚",
+    "clk": 0.0,
+    "imp": 20.0,
+    "pos": 10.15
+   },
+   {
+    "c": "缅甸",
+    "clk": 0.0,
+    "imp": 20.0,
+    "pos": 10.75
+   },
+   {
+    "c": "尼泊尔",
+    "clk": 0.0,
+    "imp": 19.0,
+    "pos": 6.63
+   },
+   {
+    "c": "塞尔维亚",
+    "clk": 0.0,
+    "imp": 19.0,
+    "pos": 6.74
+   },
+   {
+    "c": "厄瓜多尔",
+    "clk": 0.0,
+    "imp": 18.0,
+    "pos": 6.89
+   },
+   {
+    "c": "文莱",
+    "clk": 0.0,
+    "imp": 16.0,
+    "pos": 12.31
+   },
+   {
+    "c": "委内瑞拉",
+    "clk": 0.0,
+    "imp": 16.0,
+    "pos": 15.56
+   },
+   {
+    "c": "拉脱维亚",
+    "clk": 0.0,
+    "imp": 16.0,
+    "pos": 23.0
+   },
+   {
+    "c": "哈萨克斯坦",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 5.93
+   },
+   {
+    "c": "赞比亚",
+    "clk": 0.0,
+    "imp": 15.0,
+    "pos": 7.07
+   },
+   {
+    "c": "斯洛伐克",
+    "clk": 0.0,
+    "imp": 14.0,
+    "pos": 17.0
+   },
+   {
+    "c": "乌干达",
+    "clk": 0.0,
+    "imp": 12.0,
+    "pos": 12.92
+   },
+   {
+    "c": "黎巴嫩",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 2.82
+   },
+   {
+    "c": "突尼斯",
+    "clk": 0.0,
+    "imp": 11.0,
+    "pos": 17.36
+   },
+   {
+    "c": "乌兹别克斯坦",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 3.8
+   },
+   {
+    "c": "波多黎各",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 5.9
+   },
+   {
+    "c": "亚美尼亚",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 8.0
+   },
+   {
+    "c": "卡塔尔",
+    "clk": 0.0,
+    "imp": 10.0,
+    "pos": 17.8
+   },
+   {
+    "c": "格鲁吉亚",
+    "clk": 0.0,
+    "imp": 9.0,
+    "pos": 4.33
+   },
+   {
+    "c": "多米尼加共和国",
+    "clk": 0.0,
+    "imp": 9.0,
+    "pos": 5.89
+   },
+   {
+    "c": "卢森堡",
+    "clk": 0.0,
+    "imp": 9.0,
+    "pos": 9.0
+   },
+   {
+    "c": "关岛",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 3.62
+   },
+   {
+    "c": "毛里求斯",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 6.0
+   },
+   {
+    "c": "巴拿马",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 6.0
+   },
+   {
+    "c": "冰岛",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 6.75
+   },
+   {
+    "c": "老挝",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 7.12
+   },
+   {
+    "c": "克罗地亚",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 7.5
+   },
+   {
+    "c": "卢旺达",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 8.38
+   },
+   {
+    "c": "阿曼",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 10.0
+   },
+   {
+    "c": "马耳他",
+    "clk": 0.0,
+    "imp": 8.0,
+    "pos": 21.62
+   },
+   {
+    "c": "哥斯达黎加",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 4.43
+   },
+   {
+    "c": "伯利兹",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 6.0
+   },
+   {
+    "c": "科特迪瓦",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 6.14
+   },
+   {
+    "c": "阿尔巴尼亚",
+    "clk": 0.0,
+    "imp": 7.0,
+    "pos": 13.14
+   },
+   {
+    "c": "圭亚那",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 5.67
+   },
+   {
+    "c": "玻利维亚",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 6.5
+   },
+   {
+    "c": "巴拉圭",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 9.5
+   },
+   {
+    "c": "叙利亚",
+    "clk": 0.0,
+    "imp": 6.0,
+    "pos": 16.17
+   },
+   {
+    "c": "马尔代夫",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 3.0
+   },
+   {
+    "c": "白俄罗斯",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 4.6
+   },
+   {
+    "c": "洪都拉斯",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 6.0
+   },
+   {
+    "c": "巴勒斯坦",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 6.6
+   },
+   {
+    "c": "莫桑比克",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 8.0
+   },
+   {
+    "c": "科索沃",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 8.0
+   },
+   {
+    "c": "阿塞拜疆",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 9.2
+   },
+   {
+    "c": "巴哈马",
+    "clk": 0.0,
+    "imp": 5.0,
+    "pos": 26.8
+   },
+   {
+    "c": "刚果 - 金沙萨",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 3.5
+   },
+   {
+    "c": "喀麦隆",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.25
+   },
+   {
+    "c": "巴布亚新几内亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.5
+   },
+   {
+    "c": "斯威士兰",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 4.75
+   },
+   {
+    "c": "利比亚",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.25
+   },
+   {
+    "c": "马其顿",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.5
+   },
+   {
+    "c": "博茨瓦纳",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 5.75
+   },
+   {
+    "c": "波斯尼亚和黑塞哥维那",
+    "clk": 0.0,
+    "imp": 4.0,
+    "pos": 9.75
+   },
+   {
+    "c": "塞舌尔",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 3.33
+   },
+   {
+    "c": "阿富汗",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 4.33
+   },
+   {
+    "c": "海地",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 4.33
+   },
+   {
+    "c": "马拉维",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 4.33
+   },
+   {
+    "c": "索马里",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 4.33
+   },
+   {
+    "c": "巴巴多斯",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.33
+   },
+   {
+    "c": "尼加拉瓜",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.67
+   },
+   {
+    "c": "萨尔瓦多",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 5.67
+   },
+   {
+    "c": "塞内加尔",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 7.33
+   },
+   {
+    "c": "吉尔吉斯斯坦",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 8.33
+   },
+   {
+    "c": "圣卢西亚",
+    "clk": 0.0,
+    "imp": 3.0,
+    "pos": 8.33
+   },
+   {
+    "c": "吉布提",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 2.0
+   },
+   {
+    "c": "莱索托",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 3.5
+   },
+   {
+    "c": "南苏丹",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.0
+   },
+   {
+    "c": "纳米比亚",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 4.5
+   },
+   {
+    "c": "库克群岛",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.0
+   },
+   {
+    "c": "马达加斯加",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "c": "东帝汶",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 5.5
+   },
+   {
+    "c": "也门",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 6.0
+   },
+   {
+    "c": "危地马拉",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 6.5
+   },
+   {
+    "c": "摩尔多瓦",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 8.5
+   },
+   {
+    "c": "不丹",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 10.5
+   },
+   {
+    "c": "阿鲁巴",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 12.5
+   },
+   {
+    "c": "贝宁",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 41.0
+   },
+   {
+    "c": "安道尔",
+    "clk": 0.0,
+    "imp": 2.0,
+    "pos": 66.0
+   },
+   {
+    "c": "汤加",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "圣文森特和格林纳丁斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "未知地区",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 1.0
+   },
+   {
+    "c": "法罗群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "黑山",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 2.0
+   },
+   {
+    "c": "刚果 - 布拉柴维尔",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 3.0
+   },
+   {
+    "c": "马里",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "瑙鲁",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "所罗门群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 4.0
+   },
+   {
+    "c": "西撒哈拉",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "多哥",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 5.0
+   },
+   {
+    "c": "泽西岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "苏里南",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 6.0
+   },
+   {
+    "c": "荷属圣马丁岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 7.0
+   },
+   {
+    "c": "曼岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 8.0
+   },
+   {
+    "c": "北马里亚纳群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 8.0
+   },
+   {
+    "c": "古巴",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "格林纳达",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "塔吉克斯坦",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "瓦努阿图",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 9.0
+   },
+   {
+    "c": "开曼群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "法属波利尼西亚",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 10.0
+   },
+   {
+    "c": "法属圭亚那",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "乌拉圭",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "英属维尔京群岛",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 11.0
+   },
+   {
+    "c": "塞拉利昂",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 19.0
+   },
+   {
+    "c": "圣基茨和尼维斯",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 30.0
+   },
+   {
+    "c": "直布罗陀",
+    "clk": 0.0,
+    "imp": 1.0,
+    "pos": 41.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,815 @@
+[
+ {
+  "idx": 0,
+  "task": {
+   "task_id": "OPS-20261028-DSH-CREDENTIAL",
+   "source_strategy": "2026-10-28-three-strategy-completion-and-next-phase",
+   "market": "operations",
+   "target": "Windows Task Scheduler dsh --profile headless",
+   "evidence": [
+    ".hermes/logs/cron-ZP-daily-content.log",
+    ".hermes/logs/cron-ZP-gsc-feedback.log"
+   ],
+   "score": 100,
+   "score_model": "operational-blocker",
+   "write_scope": [
+    "scripts/",
+    ".hermes/cron-run/",
+    ".hermes/logs/"
+   ],
+   "approval_gate": "K3 administrator stores a valid DeepSeek credential outside the repository",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-10-29",
+   "result": "DONE on 2026-10-28: credential stored (Machine) + smoke PASS; real run ZP-gsc-feedback four-party verified OK (dsh_exit=0, wrapper exit=0, lane-runs completed, report 2026-10-28-ZP-gsc-feedback.md VERDICT:OK, schtasks LastTaskResult=0)"
+  }
+ },
+ {
+  "idx": 1,
+  "task": {
+   "task_id": "ZH-POSTER-20261028-PROCUREMENT",
+   "source_strategy": "seven-clusters POSTER-P1-09",
+   "market": "zh-hk",
+   "target": "/zh-hk/category/posters/ and approved primary poster PDP only",
+   "evidence": [
+    "gsc-deep-analysis-2026-10-26: 海報印刷 278 imps, 0 clicks, pos 14.98",
+    "e-print poster official page: quantity/price/turnaround table",
+    "2026-10-27 execution matrix",
+    "2026-10-28 双方法线上核验: zh 海报价格三源不一致 — category desc A2 HK$9起/A1 HK$45起 (线上实锤) vs PDP title A2 HK$16起/A1 HK$20起 (=basePrice 16/20, 线上实锤) vs products.ts title_zh A2 HK$12.9 — 采购答案发布前需价格裁决(推荐按 basePrice 对齐, 与 data-driven 小批#2 同口径; 若 9/45 来自真实报价表则 basePrice 需复核)",
+    "2026-10-15 title-v5 守卫历史: a2-posters PRICE_MISMATCH 9≠16 已登记 (2026-10-15-ZP-gsc-feedback.md L193), PDP title 侧已被 data-driven 小批#2 修至 16; 剩余未修面 = category-seo-content featuredSnippet/参考价表 (A2 9/A1 45), 无守卫覆盖, 2026-10-28 13:00 双方法线上复证实锤",
+    "2026-10-29 新 GSC 批 (K3 导出 01:16-01:23, 全国家口径, 回灌 9ff9a55e): 海報印刷 287 imps @ 0 clk = 全站零点击词第一 (gsc-daily-anomaly-2026-10-29.json) + a2 poster 退至 18.0 (11.9→18.0 恶化) + striking distance 词在列 — 采购答案缺口二次确认, 价格裁决仍为唯一阻塞"
+   ],
+   "score": 98.45,
+   "score_model": "gsc-opportunity-v1",
+   "write_scope": [
+    "approved poster source fields only"
+   ],
+   "approval_gate": "K3 2026-10-30 裁决单#1 选A: A2 HK$16/A1 HK$20 (basePrice) 为业务真值统一 category featuredSnippet/参考价表; 急件仅条件化; 无证据声明删除; title 冻结不动",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-06 (7天复测)",
+   "result": "EXECUTED 7b396bd9: category featuredSnippet/参考价表 A2 HK$9/A1 HK$45 → basePrice 真值 16/20 (zh+en 4 处) + a2-posters FAQ HK$9→16. 遗留: blog-posts L1522 title HK$9起 冻结面不动 + products.ts title_zh HK$12.9 另列 diff 复核.",
+   "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+   "execution_commit": "7b396bd9"
+  }
+ },
+ {
+  "idx": 2,
+  "task": {
+   "task_id": "ZH-PACKAGING-20261028-BATCH1",
+   "source_strategy": "packaging D2 batch 1",
+   "market": "zh-hk+en+ja",
+   "target": "Exact files and strings in docs/2026-10-28-packaging-batch1-execution-pack.md",
+   "evidence": [
+    "docs/2026-10-26-packaging-truth-ledger.md",
+    "docs/2026-10-27-packaging-k3-decision-package.md",
+    ".hermes/logs/2026-10-28-packaging-batch1-execution-pack-report.md"
+   ],
+   "score": 95,
+   "score_model": "analyst-priority-truth-risk",
+   "write_scope": [
+    "src/data/products.ts",
+    "src/data/category-seo-content.ts",
+    "src/data/blog-posts.ts",
+    "src/data/blog-data/zh-hk.json",
+    "zprintpro-sku-seo-data.csv then generator"
+   ],
+   "approval_gate": "K3 2026-10-30 裁决单#2 选A: 按 docs/2026-10-28-packaging-batch1-execution-pack.md 全部推荐值 (rigid MOQ 100 / kraft MOQ 300 / food HK$2.5 / rigid HK$8 / 免运 HK$99); FDA/SGS/藥機法/EU/衛生署无文件声明删; FSC 仅保留有条件纸材; 无测试声明删或条件化; 交期分工艺",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-06 (7天复测)",
+   "result": "EXECUTED 7b396bd9: 执行包 P1-P4 串双方法复核 — P1/P3/P4 全 0 命中(10-23/28 批已处理) + P2 补打樣當日完成×3 删 + FSC eco-friendly→eco-friendly. 核心值确认 food 2.5/rigid 8/MOQ 100/300 已落地. 登记冲突: 裁决单免运 HK$99 vs 全站既有 HK$500(4 组件一致), 执行层保持 HK$500 待 K3 确认.",
+   "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+   "execution_commit": "7b396bd9"
+  }
+ },
+ {
+  "idx": 3,
+  "task": {
+   "task_id": "EN-STICKER-20261028-SMALLBATCH",
+   "source_strategy": "dual-engine E1",
+   "market": "en",
+   "target": "/en/product/small-batch-stickers/",
+   "evidence": [
+    "gsc-deep-analysis-2026-10-26: small batch sticker printing 49 imps, 0 clicks, pos 4.77",
+    "Sticker Mule official custom stickers/samples pages",
+    "2026-10-27 execution matrix E1"
+   ],
+   "score": 90,
+   "score_model": "analyst-priority-near-page-one",
+   "write_scope": [
+    "approved small-batch PDP fields and necessary guide links only"
+   ],
+   "approval_gate": "K3 2026-10-30 裁决单#3 选A: 10 stickers 起 from US$0.55 注明条件; 单位统一 stickers/pcs; proof/sample 未确认不宣传 (选B); 生产/运输留空只写报价确认; 无证案例/100%退款/4-day USA 不发布; 仅批准站内链接",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-06 (7天复测)",
+   "result": "EXECUTED 7b396bd9 + 9f7b348c: CSV 回源 H1 50+→10+ / desc 删 4-day+proof / kw 删 50-minimum + 生成器重跑; EN body 前段+尾部 FAQ 全清 (Q2 MOQ 100→10 / Q3 proof+sample 报价确认 / Q4 运输报价确认); ja 同 SKU 4 日米国配送/DHL 2-4 日/1 時間校正/¥2,980 条件化; zh 贴纸域 SGS×6 删 + 500張起印→10. 首轮脚本全局替换越界 removable-stickers 已逐行复原 (staged 仅 3 行). 遗留: zh CSV FAQ 100張起訂 待 K3.",
+   "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+   "execution_commit": "7b396bd9, 9f7b348c"
+  }
+ },
+ {
+  "idx": 4,
+  "task": {
+   "task_id": "EN-CATALOG-20261028-TRUTH",
+   "source_strategy": "dual-engine E5 + BOOK-P0-04",
+   "market": "en",
+   "target": "catalog guide/PDP division and catalog/A2 MOQ fields",
+   "evidence": [
+    "UPrinting official catalog/booklet pages",
+    "2026-10-27 execution matrix K3-3/K3-4"
+   ],
+   "score": 82,
+   "score_model": "analyst-priority-procurement-truth",
+   "write_scope": [
+    "approved catalog/A2 fields only"
+   ],
+   "approval_gate": "K3 2026-10-30 裁决单#4 选A: catalog MOQ 10 copies; en A2 MOQ 10; USD 业务价 (缺失不以 HKD 换算); 生产/运输分开未确认只写报价确认; PDP 接交易 supplier guide 接选型 保留双向链接",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-06 (7天复测)",
+   "result": "EXECUTED 7b396bd9: FDA 三语 6 处无证声明条件化 + 服务页补 supplier guide 双向链接 + blog-data guide MOQ 100→10 (zh 8 处/en 6 处, bulk 阶梯 100/500/1000/5000 保留). 遗留: zh FAQ 样本 US$15 可退 100本起 样本政策待 K3.",
+   "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+   "execution_commit": "7b396bd9"
+  }
+ },
+ {
+  "idx": 5,
+  "task": {
+   "task_id": "JA-C109-20261028-DEADLINE",
+   "source_strategy": "dual-engine JA-P1-12 + J1",
+   "market": "ja",
+   "target": "/ja/comiket-c109/ and approved doujin PDP fields",
+   "evidence": [
+    "C109 announced for 2026-12-29 to 2026-12-31",
+    "Raksul booklet and Printpac doujin/ondemand official pages",
+    "gsc-deep-analysis-2026-10-26: ja doujin cluster pos improved to 19.06"
+   ],
+   "score": 88,
+   "score_model": "analyst-priority-time-window",
+   "write_scope": [
+    "approved C109/doujin content fields only"
+   ],
+   "approval_gate": "K3 2026-10-30 裁决单#5 选A: ja JPY ¥7,500 为指定规格/数量订单起价(非每部单价)写条件; en/zh 不得复制¥7,500 用本市场已确认价; rush 条件化不承诺24h; 日本直送不宣传会场/酒店直送; 倒排真值留空=>不发布安全入稿日只保留检查清单; 日期表达分开",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-11-06 (7天复测)",
+   "result": "EXECUTED 7b396bd9: 倒排真值安全入稿日 12/7 三语 qa/逆算表/FAQ 删除留空(只保留检查清单+日期分项 受付確定/生产/出荷/运输/到着); ¥7,500 仅 ja 条件化(规格/数量指定, 见积り确定); en/zh 未复制; rush 条件化保留(データ完成前提); 会场直送不宣传(前日まで手元受け取り).",
+   "decision_sheet": ".hermes/logs/2026-10-30-k3-commercial-truth-decision-sheet.md",
+   "execution_commit": "7b396bd9"
+  }
+ },
+ {
+  "idx": 6,
+  "task": {
+   "task_id": "MEASURE-20261028-ATTRIBUTION",
+   "source_strategy": "seven-clusters MEASURE-15 + K3-8",
+   "market": "all",
+   "target": "GA4 + 008 + orders by landing page and locale",
+   "evidence": [
+    "2026-10-27 execution matrix MEASURE-15",
+    "no observed unified conversion output as of 2026-10-28"
+   ],
+   "score": 93,
+   "score_model": "measurement-blocker",
+   "write_scope": [
+    ".hermes/logs/",
+    "read-only GA4/008/order exports"
+   ],
+   "approval_gate": "SUPERSEDED by K3-8 终局 §0.37 (2026-10-27): GA4/008/订单线下处理非在线交易, 执行层不接入/不请求/不列入拍板队列",
+   "owner_lane": "ZP-gsc-feedback",
+   "status": "CLOSED_BY_K3_S0.37",
+   "next_check": null,
+   "result": "KPI panel v1 (40e1231e) 覆盖监控口径(四指标+23带钱词+首页词数+关键词行数); 归因任务按 §0.37 终局关闭"
+  }
+ },
+ {
+  "idx": 7,
+  "task": {
+   "task_id": "GEO-20261103-AI-PROBE-S1",
+   "source_strategy": "seven-clusters MEASURE-15",
+   "market": "all",
+   "target": "Fixed seven-cluster AI probe question set",
+   "evidence": [
+    "docs/2026-10-27-geo-ai-face-probe-kit-nov2026.md"
+   ],
+   "score": 75,
+   "score_model": "scheduled-measurement",
+   "write_scope": [
+    ".hermes/logs/",
+    ".hermes/reports/"
+   ],
+   "approval_gate": "Use fixed kit; record engine/date/answer/citation URL; never substitute ordinary web search",
+   "owner_lane": "ZP-gsc-feedback",
+   "status": "SCHEDULED",
+   "next_check": "2026-11-03",
+   "result": "Kit ready; no baseline claim before actual probes"
+  }
+ },
+ {
+  "idx": 8,
+  "task": {
+   "task_id": "REVIEW-20261030-WEEKLY",
+   "source_strategy": "2026-10-28-data-driven-next-phase-strategy",
+   "market": "operations",
+   "target": "Weekly execution, strategy and recovery review",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/strategy-task-queue.json"
+   ],
+   "score": 85,
+   "score_model": "governance",
+   "write_scope": [
+    ".hermes/logs/",
+    "docs/"
+   ],
+   "approval_gate": "SCALE/HOLD/FIX/STOP only from observed evidence; no automatic prompt or production rewrites",
+   "owner_lane": "ZP-weekly-meta",
+   "status": "SCHEDULED",
+   "next_check": "2026-10-30",
+   "result": "Pending first upgraded weekly review"
+  }
+ },
+ {
+  "idx": 9,
+  "task": {
+   "task_id": "REVIEW-20261101-MONTHLY",
+   "source_strategy": "2026-10-28-data-driven-next-phase-strategy",
+   "market": "operations",
+   "target": "Monthly market/cluster resource reallocation and next-month dispatch",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/strategy-task-queue.json",
+    "GSC and conversion coverage when available"
+   ],
+   "score": 85,
+   "score_model": "governance",
+   "write_scope": [
+    ".hermes/logs/",
+    "docs/"
+   ],
+   "approval_gate": "No ROI claim without conversion coverage; no AI citation claim without actual probe",
+   "owner_lane": "ZP-monthly-matrix",
+   "status": "SCHEDULED",
+   "next_check": "2026-11-01",
+   "result": "Pending first upgraded monthly review"
+  }
+ },
+ {
+  "idx": 10,
+  "task": {
+   "task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+   "source_strategy": "periodic-review-weekly-2026-10-28",
+   "market": "operations",
+   "target": "Resolve ZP-weekly-meta MISSING with bounded recovery: 触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    "Get-ScheduledTask -TaskName ZP-weekly-meta | Get-ScheduledTaskInfo",
+    "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    "K3-admin runtime/configuration only"
+   ],
+   "approval_gate": "K3 administrator action; no automatic retry",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-10-31",
+   "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "recurrence_observations": [
+    {
+     "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
+     "observed_at": "2026-10-30",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-weekly-meta-a9b34876",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-weekly-meta"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    }
+   ],
+   "recurrence_count": 1,
+   "last_seen": "2026-10-30"
+  }
+ },
+ {
+  "idx": 11,
+  "task": {
+   "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
+   "source_strategy": "periodic-review-weekly-2026-10-28",
+   "market": "operations",
+   "target": "Resolve ZP-blog-deepfix MISSING with bounded recovery: 触发点已过但无任何 run 记录 (调度器/执行器未装载)",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo",
+    "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    "K3-admin runtime/configuration only"
+   ],
+   "approval_gate": "K3 administrator action; no automatic retry",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-10-31",
+   "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "recurrence_observations": [
+    {
+     "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+     "observed_at": "2026-10-30",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-73a3f1eb",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTask -TaskName ZP-blog-deepfix | Get-ScheduledTaskInfo"
+     ],
+     "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+    },
+    {
+     "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
+     "observed_at": "2026-10-30",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-blog-deepfix-3ff1c6ff",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-blog-deepfix"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    }
+   ],
+   "recurrence_count": 2,
+   "last_seen": "2026-10-30"
+  }
+ },
+ {
+  "idx": 12,
+  "task": {
+   "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+   "source_strategy": "periodic-review-weekly-2026-10-28",
+   "market": "operations",
+   "target": "Resolve ZP-monthly-matrix UNKNOWN with bounded recovery: 窗口内无应触发日, 但调度器 LastTaskResult=2147946720 (从未成功跑过)",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    "K3-admin runtime/configuration only"
+   ],
+   "approval_gate": "K3 administrator action; no automatic retry",
+   "owner_lane": "K3-admin",
+   "status": "BLOCKED_INFRA",
+   "next_check": "2026-10-31",
+   "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+   "recurrence_observations": [
+    {
+     "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
+     "observed_at": "2026-10-30",
+     "period": "weekly",
+     "proposed_task_id": "FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
+     "evidence": [
+      ".hermes/logs/lane-status.json",
+      ".hermes/logs/lane-runs.jsonl",
+      "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+     ],
+     "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+    }
+   ],
+   "recurrence_count": 1,
+   "last_seen": "2026-10-30"
+  }
+ },
+ {
+  "idx": 13,
+  "task": {
+   "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
+   "source_strategy": "2026-10-29-ZP-k3-review §2.5 T1 (P1)",
+   "market": "en",
+   "target": "category-conversion-blocks.ts calendars en block — FAQ L2241 '50 pcs' / socialProof L2250-2251 / comparisonTable L2275-2293 ×4, 对齐同页 1 MOQ 真值 (products.ts minQuantity=1)",
+   "evidence": [
+    "products.ts: calendars 6 SKU + mini-calendars 全部 minQuantity=1, price_range HK$3-8/本 (L4027-4034 等)",
+    "线上 /en/category/calendars/ 200: title '1 MOQ' + seo-faq 'From 1 pc (digital printing). 500+ pcs recommended for offset' 与 conversion-block FAQ 'digital runs start at just 50 pcs' 同页冲突 (2026-10-29 12:2x curl 双证)",
+    "zh-hk 同 block 真值: quickAnswer '1 本起訂（數碼印刷）' + socialProof '1本起' + comparisonTable '1 本起'"
+   ],
+   "score": 90,
+   "score_model": "k3-review-P1-truth-defect",
+   "write_scope": [
+    "src/data/category-conversion-blocks.ts (calendars en 字段 only)"
+   ],
+   "approval_gate": "k3-review §2.5 T1 classify + products.ts 真值对照 + 线上双证; 不夹带 title/名片域",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-10-29",
+   "result": "CLOSED 2026-10-29 by manual/sibling batch: fix commit 124b0b11 (T3 延展 wiring) + T1/T2 源内对齐 + CF build success + 线上复验全绿 (24c9347d F4' CLOSED, b95d85c5 验收登记, 四页 curl 双方法); 本 run 幂等复核: 源内 '50 pcs'/'1,000 units' 仅剩合法语境, unitWord 本地化已接入 CategoryPageV9 L213/L246 + pricing.ts L791",
+   "completed_at": "2026-10-29T18:30:00+08:00",
+   "completed_by": "ZP-daily-content-20261029T1817-harness (NO_OP run, 幂等核验)"
+  }
+ },
+ {
+  "idx": 14,
+  "task": {
+   "task_id": "TRUTH-T2-20261029-MINI-CALENDARS-1000",
+   "source_strategy": "2026-10-29-ZP-k3-review §2.5 T2 (P1)",
+   "market": "en",
+   "target": "sku-seo-data.ts mini-calendars en body FAQ Q3 'Orders start at 1,000 units' → 对齐同文 '1-unit minimum (bulk 300+ offset)' / 页面 1 MOQ (body 为 ts 权威例外域, 非 CSV 派生, 直接改 ts)",
+   "evidence": [
+    "sku-seo-data.ts L1557 en body: FAQ Q3 'Orders start at 1,000 units' vs 同文 'Pricing runs HK$3-8 per book at a 1-unit minimum (bulk 300+ offset)' 自相矛盾",
+    "products.ts mini-calendars: minQuantity=1",
+    "zh-hk body '最低起印量 1 本' / ja body 'オフセットは300部から' 均无 1,000 口径 — en 独有矛盾",
+    "CSV zprintpro-sku-seo-data.csv 正文 EN 列为空 → body 是 ts 权威 (csv-to-sku-seo.mjs 注释: 'seo.body — ts 权威例外域')"
+   ],
+   "score": 90,
+   "score_model": "k3-review-P1-truth-defect",
+   "write_scope": [
+    "src/data/sku-seo-data.ts (mini-calendars en body FAQ only)"
+   ],
+   "approval_gate": "k3-review §2.5 T2 classify + products.ts 真值对照 + 同文矛盾双证; 不夹带 title/名片域",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-10-29",
+   "result": "CLOSED 2026-10-29 by manual/sibling batch: fix commit 124b0b11 (T3 延展 wiring) + T1/T2 源内对齐 + CF build success + 线上复验全绿 (24c9347d F4' CLOSED, b95d85c5 验收登记, 四页 curl 双方法); 本 run 幂等复核: 源内 '50 pcs'/'1,000 units' 仅剩合法语境, unitWord 本地化已接入 CategoryPageV9 L213/L246 + pricing.ts L791",
+   "completed_at": "2026-10-29T18:30:00+08:00",
+   "completed_by": "ZP-daily-content-20261029T1817-harness (NO_OP run, 幂等核验)"
+  }
+ },
+ {
+  "idx": 15,
+  "task": {
+   "task_id": "TRUTH-T3-20261029-EN-UNIT-LOCALIZE",
+   "source_strategy": "2026-10-29-ZP-k3-review §2.5 T3 (P1)",
+   "market": "en",
+   "target": "en 类目页量词未本地化: CategoryPageV9 卡 L244 unitWord 原样 '張' + convertPriceRangeString 回退保留 '/100張' → 线上 'US$33.12/100張' 'MOQ 10 張' (greeting-cards 无锚/无独立价, 走回退路径)",
+   "evidence": [
+    "线上 /en/category/greeting-cards/ 200: 'US$33.12/100張' + 'MOQ 10 張' 中文量词 (2026-10-29 12:2x curl)",
+    "pricing.ts convertPriceRangeString L731-752: fallback 分支 unit 原样保留 ('/100張'), 未本地化; DISPLAY_ANCHOR_OVERRIDES/UNIT_PRICE_ANCHORS 无 greeting-cards 条目 → getDisplayAnchor null",
+    "CategoryPageV9.tsx L244: {t9.moqTag} {minQuantity} {unitWord.replace('/','')} 三语同用 raw unitWord",
+    "ProductPageV9 已有 EN_UNIT_MAP/JA_UNIT_MAP (張→pcs/枚) 先例; variable-i18n.ts QUANTITIES_ZH2EN/JA (100張→100 pcs/100枚) 存在但未接入类目卡渲染路径"
+   ],
+   "score": 90,
+   "score_model": "k3-review-P1-truth-defect",
+   "write_scope": [
+    "src/lib/pricing.ts (convertPriceRangeString fallback 单位本地化)",
+    "src/app/[locale]/category/[slug]/v9/CategoryPageV9.tsx (L244 unitWord 本地化)"
+   ],
+   "approval_gate": "k3-review §2.5 T3 classify + 线上双证 + 既有本地化映射先例; 不夹带 title/名片域",
+   "owner_lane": "ZP-daily-content",
+   "status": "DONE",
+   "next_check": "2026-10-29",
+   "result": "CLOSED 2026-10-29 by manual/sibling batch: fix commit 124b0b11 (T3 延展 wiring) + T1/T2 源内对齐 + CF build success + 线上复验全绿 (24c9347d F4' CLOSED, b95d85c5 验收登记, 四页 curl 双方法); 本 run 幂等复核: 源内 '50 pcs'/'1,000 units' 仅剩合法语境, unitWord 本地化已接入 CategoryPageV9 L213/L246 + pricing.ts L791",
+   "completed_at": "2026-10-29T18:30:00+08:00",
+   "completed_by": "ZP-daily-content-20261029T1817-harness (NO_OP run, 幂等核验)"
+  }
+ },
+ {
+  "idx": 16,
+  "task": {
+   "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+   "source_strategy": "periodic-review-weekly-2026-10-30",
+   "market": "operations",
+   "lane_task": "ZP-k3-review",
+   "target": "Resolve ZP-k3-review BLOCKED with bounded recovery: 锁竞争 (另一条 lane 或人手会话持锁)",
+   "evidence": [
+    ".hermes/logs/lane-status.json",
+    ".hermes/logs/lane-runs.jsonl",
+    ".hermes/locks/lane.lock"
+   ],
+   "score": 100,
+   "score_model": "execution-health-blocker",
+   "write_scope": [
+    ".hermes/logs/",
+    "scripts/"
+   ],
+   "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
+   "owner_lane": "ZP-k3-review",
+   "status": "READY",
+   "next_check": "2026-10-31",
+   "result": "Dispatched by weekly review from observed BLOCKED; not a completed fix"
+  }
+ },
+ {
+  "idx": 17,
+  "task": {
+   "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
+   "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #3 执行副作用审查",
+   "market": "all",
+   "target": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx:446-452 (AEO 答案块模板) + ProductWhyChooseUs.tsx:167 + TrustBadgeBlock.tsx:62",
+   "evidence": "线上 curl 2026-10-30 19:05: /en/product/small-batch-stickers/ 与 /ja/... 仍渲染「standard lead time 5-7 days, free digital proof within 1 hour of file submission」「データ提出後 1 時間で無料デジタル校正」; 属跨 ~250 SKU 全站模板, 单 SKU 裁决 #3 未授权",
+   "score": 0.7,
+   "write_scope": "全站批量改动 (需 K3 放行 §0.25.10.5); 建议改为「lead time/proof timing confirmed at quote」",
+   "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 打稿/交期一律改「报价确认」, 删「100% 退款」与「$5.99 样本包」, AEO 答案块同批改",
+   "owner_lane": "manual",
+   "status": "DONE",
+   "created_at": "2026-10-30T19:12:00+08:00",
+   "result": "EXECUTED d450abbc: AEO 答案块 ProductPageV9 L446-451 三语 (en/ja/zh) 承诺改「报价确认/見積りで確認」；未改全站其他模板（本任务 scope 仅答案块）。选(1) 全站口径由同批模板串任务覆盖。",
+   "completed_at": "2026-10-30T22:45:00+08:00",
+   "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+   "next_check": "2026-11-06",
+   "execution_commit": "d450abbc"
+  }
+ },
+ {
+  "idx": 18,
+  "task": {
+   "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
+   "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #3 执行副作用审查",
+   "market": "en",
+   "target": "src/data/sku-seo-data.ts 其余 ~70 SKU body (Free US shipping over $99 / 4-day delivery / Rush 2-day)",
+   "evidence": "实测 2026-10-30 19:50 (products-content.ts 精确字符串计数): ① `<em>…DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。…</em>` = **66 处**(全站共享, 且句内重复 bug); ② zh FAQ「標準訂單 3-5 個工作天完成…日本客戶 DHL 國際速遞 2-4 個工作天到貨」= **64 处**; ③ zh FAQ「國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨」= **71 处**; ④ ja「DHL/FedEx 直送 2-4 日」li = **18 处**; ⑤ ja 配送表行(DHL/FedEx/EMS) 各 **10 处**; ⑥ ja 工場直送行「完工後 24-48 時間」= **20 处**。 线上证据: curl /ja/product/small-batch-stickers/ 19:50 同页出现 meta「配送方法・納期は見積りで確認」与 longDescription「DHL/FedEx 直送 2-4 日」「完工後 24-48 時間」并存 = 客户可见自相矛盾。 已在本批修掉的仅 small-batch 独有项(短納期特急 1 处)。",
+   "score": 0.65,
+   "write_scope": "src/data/products-content.ts 共享模板串 (66/64/71/18/10/20 处); 属全站批量改动 §0.25.10.5, 需 K3 放行",
+   "approval_gate": "K3 2026-10-30 21:48 指令: 全站模板选(1) — 全站一次性条件化 (3-4 条模板串, ~250 SKU), 打稿/交期一律「报价确认」",
+   "owner_lane": "manual",
+   "status": "DONE",
+   "created_at": "2026-10-30T19:12:00+08:00",
+   "result": "EXECUTED d450abbc: products-content.ts 336 处共享模板串条件化 — 標準訂單3-5工作天 64+7、DHL Express/FedEx 全球2-4天 149、DHL Express 全球2-4天 73、ja 直送2-4日 20、ja 完工後24-48 20、打稿1小時 3；全部改为「报价确认/見積りで確認」，零新增数字。",
+   "completed_at": "2026-10-30T22:45:00+08:00",
+   "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+   "next_check": "2026-11-06",
+   "execution_commit": "d450abbc"
+  }
+ },
+ {
+  "idx": 19,
+  "task": {
+   "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
+   "source_strategy": "SOP-10 #3 12 件属实清单（不含 FDA/SGS/REACH/ISO 22000/LFGB）",
+   "market": "all",
+   "target": "src/data/blog-data/{zh-hk,en,ja}.json 认证词组 19 个 / 528 次",
+   "evidence": "`.hermes/logs/2026-10-30-blog-cert-claims-inventory.md`（唯一词组+次数+文件分布+样例; 顶层: EU REACH 259 / FDA 21 CFR 175.300 108 / FDA 食品級 27 / GB 4806.8-2022 25 / SGS 13 / Cert No. available on request 10）。口径声明: 不可与 daily-content 车道「296 处/8 文件」互证（扫描面不同）",
+   "score": 0.72,
+   "write_scope": "仅 blog-data 三语 JSON；按 K3 勾选的 A/B/C 分组机械替换（A 删测试号保工艺 / B 条件化 / C 保留法规引用）",
+   "approval_gate": "WAITING_K3: 一句话批准「A 组全删 / B 组条件化 / C 组保留」或指定例外",
+   "owner_lane": "manual",
+   "status": "WAITING_K3",
+   "created_at": "2026-10-30T19:50:00+08:00"
+  }
+ },
+ {
+  "idx": 20,
+  "task": {
+   "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
+   "source_strategy": "2026-10-30-k3-commercial-truth-decision-sheet #1 (A2 HK$16 / A1 HK$20) 执行副作用审查",
+   "market": "zh-hk",
+   "target": "src/data/products.ts a1-posters (basePrice 20 / price_range 'HK$290-7,200 · 噴繪成品') + src/data/products-content.ts a1-posters longDescriptionEn 'A1 inkjet substrates: 1 poster HK$45 (Yupo/eco) or HK$56 (photo paper); 10 posters HK$29/HK$36; 50 at HK$14.50/HK$18'",
+   "evidence": "2026-10-30 实测三层数字互不一致: ① products.ts basePrice=20 (裁决 #1 认定的 A1 真值) ② price_range='HK$290-7,200 · 噴繪成品 · 不含安裝裱貼' (喷绘成品档) ③ longDescriptionEn 写 '1 poster at HK$45 / HK$56' (A1 喷绘基材档)。三种口径指向不同产品形态(柯式 vs 喷绘成品 vs 喷绘基材单张), 执行层无法判断哪个是客户下单时应看到的价, 故未改动。",
+   "score": 0.6,
+   "write_scope": "a1-posters 单 SKU 三处数字 + 可能连带 category-seo-content 海报价表; 需先定口径再改",
+   "approval_gate": "K3 2026-10-30 21:48 指令: a1-posters 选(3) — 分产品线展示: 柯式 A1 basePrice 20 / 喷绘成品 290 起 / 喷绘基材 45-56, 页面标注适用形态",
+   "owner_lane": "manual",
+   "status": "DONE",
+   "created_at": "2026-10-30T19:52:00+08:00",
+   "result": "EXECUTED d450abbc (选3 分产品线展示): a1-posters zh+en 长描述新增「价格按产品线」— 柯式A1 20起 / 噴繪成品 290起 / 噴繪基材 45-56；ja 无独立长描述故跳过 (已记录)。price_range/basePrice 数值未改; 卡片 from 价与 basePrice 的展示规则仍待产品线选择器设计。",
+   "completed_at": "2026-10-30T22:45:00+08:00",
+   "completed_by": "manual/deepseek-flash 2026-10-30 22:4x",
+   "next_check": "2026-11-06",
+   "execution_commit": "d450abbc"
+  }
+ },
+ {
+  "idx": 21,
+  "task": {
+   "task_id": "DIAG-20261030-STICKER-REGRESSION",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+   "market": "zh-hk",
+   "target": "貼紙印刷 40.88 位 / 120 展示 / 0 點擊 — 五因定位（詞頁/收錄/內鏈/內容/競品）",
+   "evidence": [
+    ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+    ".hermes/logs/2026-10-30-ZP-gsc-feedback.md",
+    ".hermes/logs/k3-kpi-panel-2026-10-30.json"
+   ],
+   "score": 0.78,
+   "score_model": "analyst-priority",
+   "write_scope": [
+    ".hermes/logs/"
+   ],
+   "approval_gate": "none (diagnosis only, zero src change)",
+   "owner_lane": "manual-executor",
+   "status": "DONE",
+   "next_check": "2026-11-04",
+   "result": "DONE 2026-10-30: 主因=價格三層不一致+MOQ 同頁多值(50 無真值)+無條件交期/打樣承諾+category 首屏無直答；排除 收錄(4頁200自canonical)/內鏈(34處)/MOQ 500(食品標籤 SKU 合法真值)。未改 src。"
+  }
+ },
+ {
+  "idx": 22,
+  "task": {
+   "task_id": "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+   "market": "zh-hk",
+   "target": "src/data/category-seo-content.ts L2698/L2700/L2742/L2743（50 張起訂×3 無 SKU 支撐 + 打樣當日 + 無條件即日交貨）+ category 首屏直答塊",
+   "evidence": [
+    ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+    "src/data/products.ts（9 貼紙 SKU：8×minQuantity 10 + fruit-food-label 500）"
+   ],
+   "score": 0.76,
+   "score_model": "analyst-priority",
+   "write_scope": [
+    "src/data/category-seo-content.ts"
+   ],
+   "approval_gate": "K3 approves zh sticker scope (decision sheet #3 explicitly scoped EN only)",
+   "owner_lane": "manual-executor",
+   "status": "WAITING_K3",
+   "next_check": "2026-11-04",
+   "result": "Proposed minimal diff A1-A5 in diagnosis report §5.1 (5 lines, single file); freeze-safe (no title/H1 change)"
+  }
+ },
+ {
+  "idx": 23,
+  "task": {
+   "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+   "market": "zh-hk",
+   "target": "src/data/blog-data/zh-hk.json（sticker-buying-guide 材質參考價表 HK$0.5-1.5 / 1.2-3 / 2-5）vs category 卡起訂價 HK$0.38-0.58 vs products.ts basePrice 0.20-1.15",
+   "evidence": [
+    ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+    "線上探針 2026-10-30 21:45（三層價格集實抽）"
+   ],
+   "score": 0.72,
+   "score_model": "analyst-priority",
+   "write_scope": [
+    "src/data/blog-data/zh-hk.json",
+    "src/data/category-seo-content.ts"
+   ],
+   "approval_gate": "K3 approves zh sticker price alignment (same scope block as FIX-...-ZH-TRUTH-CONFLICT)",
+   "owner_lane": "manual-executor",
+   "status": "WAITING_K3",
+   "next_check": "2026-11-04",
+   "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions"
+  }
+ },
+ {
+  "idx": 24,
+  "task": {
+   "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+   "market": "all",
+   "target": "blog [slug] 模板 H1 渲染 = title（含品牌後綴分隔符，三語一致）；zh poster H1 仍含 HK$9 與裁決 #1 新價 16/20 衝突；kraft-paper-box H1 缺失",
+   "evidence": ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md,線上探針 2026-10-30 21:48（5 URL H1 實抽，3 語一致帶品牌） || 2026-10-30 23:55 精确复核 (zh-hk blog-data 实扫, 与裁决 #1 A2 HK$16 / A1 HK$20 冲突): ① poster-printing-guide **title**: 「香港海報印刷 HK$9起：尺寸・紙質・工藝・設計要點」; ② poster-printing-guide content: 「HK$9 起/張、A1 1 張起印 HK$45 起/張, 3-5 個工作天交貨」; ③ poster-size-guide content: 「HK$9 起/張（10 張起印）」(2 处) + 「HK$9 起/張（157g 銅版紙）」+ 「HK$9 起/張，急件附加費另計」; ④ poster-printing-price-guide **title**: 「A1 A2 海報印刷價格 HK$9起 單價紙材批量折扣」. 另一并发现在同类: paper-materials/hotel-amenity/catalog/calendar 的「HK$9-15」等为**其他品类真实阶梯价**, 不在本条范围。",
+   "score": 0.68,
+   "score_model": "analyst-priority",
+   "write_scope": [
+    "src/app/[locale]/blog/[slug]/page.tsx"
+   ],
+   "approval_gate": "WAITING_K3: 海报簇 blog 旧假价是否按裁决 #1 改为 A2 HK$16 / A1 HK$20 —— (1) 允许改 2 个 title + 3 处 content (2) 只改 content 不动 title (3) 维持现状到 11-06 复测后",
+   "owner_lane": "manual-executor",
+   "status": "WAITING_K3",
+   "next_check": "2026-11-06",
+   "result": "Template-level defect affecting all blog posts; H1 should not carry brand separator"
+  }
+ },
+ {
+  "idx": 25,
+  "task": {
+   "task_id": "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase",
+   "market": "zh-hk/en/ja",
+   "target": "§6.3 三項可做資產：PDF 入稿檢查清單 / 學校採購清單 / 紙袋報價尺寸模板（刀模下載與 C109 倒排維持 BLOCKED）",
+   "evidence": [
+    ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md",
+    "public/ 檔案清點（pdf/ai/eps/zip=0，故刀模下載不可做）",
+    "src/data/price-tables/（紙袋與 exercise-books 真實階梯價）"
+   ],
+   "score": 0.66,
+   "score_model": "analyst-priority",
+   "write_scope": [
+    "src/data/",
+    "src/app/[locale]/"
+   ],
+   "approval_gate": "none for content assets built from existing truth; no new numbers, no die-line download claim",
+   "owner_lane": "manual-executor",
+   "status": "READY",
+   "next_check": "2026-11-06",
+   "result": "Dispatched from §6.3 feasibility check; BLOCKED items: 真實刀模(0 files) / C109 倒排(天數未確認)"
+  }
+ },
+ {
+  "idx": 26,
+  "task": {
+   "task_id": "FIX-20261030-SKU-SEO-US-SHIPPING-LEGACY",
+   "status": "DONE",
+   "score": 70,
+   "market": "en",
+   "source_strategy": "2026-10-30 K3 全站模板(1)",
+   "approval_gate": "K3 2026-10-30 21:48 全站模板选(1) 已批 — 本项为 SKU-BODY 任务未覆盖面 (sku-seo-data.ts 30 处 'Free US shipping $99/4-day/5-7 day production'), 执行须 SOP-5: CSV 4 行源修 + node scripts/csv-to-sku-seo.mjs --apply 重跑, 禁手改派生文件",
+   "write_scope": [
+    "zprintpro-sku-seo-data.csv",
+    "src/data/sku-seo-data.ts (仅生成器输出)"
+   ],
+   "next_check": "2026-10-31",
+   "result": "EXECUTED 3046c03a: sku-seo-data.ts US 运输/打稿承诺 169 处 -> 0。SOP-5 回源 CSV 24 行(SEO描述/H1/等列, en 为主) + 生成器 --apply(断言 A-E PASS) + ts-only body 34 行手改 + small-bags(CSV 无此行, ts-only) 直接改 TS。残留复核 8 类全 0: Free Shipping on US orders over $99 / Free US shipping $99 / 4-day delivery / 4-day USA / Rush 2-day / $9.95 flat / 24-hour proof / 1-hour digital proof。门禁: 生成器 PASS / encoding / brand A=0 / gsc-leak / title-v5 HARD=0 / tsc 54=54。",
+   "execution_commit": "3046c03a",
+   "completed_at": "2026-10-30T23:42:00+08:00",
+   "completed_by": "manual/deepseek-flash 2026-10-30 23:4x",
+   "targets": [
+    "追加 (10-31 复验): ja small-batch-stickers twitter meta 'DHL グローバル 2-4 日' + JSON-LD FAQ '2〜4日でお届け' (sku-seo ja body/FAQ 族)"
+   ]
+  }
+ },
+ {
+  "idx": 27,
+  "task": {
+   "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase §10 P1 + §9.3 非目标；车道 GSC-20261030-O4 frozen cluster(11-04)",
+   "market": "en,ja",
+   "target": "src/lib/seo.ts stickers 分类页 titles[en], titles[ja]（当前当量 100 / 83，超 57 上限）",
+   "evidence": "本次诊断实测: en `Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro` = 当量 100; ja `シール印刷 10枚〜・オリジナルステッカー 防水/透明/ダイカット・2-4日発送 | ZprintPro` = 当量 83; zh 56 合规不动。两稿还内嵌 Free Proof / Free US Shipping / 2-4日発送 三处未确认承诺。备稿已核当量: en `Small Batch Sticker Printing from $0.05/pc | ZprintPro`(54) / ja `シール印刷 10枚〜 防水・透明・ダイカット対応 | ZprintPro`(56)。诊断全文 .hermes/logs/2026-10-30-sticker-cluster-diagnosis.md",
+   "score": 0.75,
+   "write_scope": "仅 seo.ts stickers titles[en]/titles[ja] 两个字符串; 不碰 zh 标题、不碰正文、不碰其他簇",
+   "approval_gate": "SCHEDULED 2026-11-04 冻结解除后执行; 属规则合规修正(58 阻断线)+去未确认承诺, 非追排名变化; 执行后必跑门童 #27 + 三语 JSON + gsc-leak",
+   "owner_lane": "manual",
+   "status": "SCHEDULED",
+   "scheduled_for": "2026-11-04",
+   "created_at": "2026-10-30T23:2:00+08:00"
+  }
+ },
+ {
+  "idx": 28,
+  "task": {
+   "task_id": "DIAG-20261030-STICKER-CLUSTER",
+   "source_strategy": "2026-10-30-three-strategy-completion-and-next-phase §10 P1「貼紙印刷倒退诊断（执行层）」",
+   "market": "zh-hk,en,ja",
+   "target": "贴纸簇: 貼紙印刷 40.88 / 分类页 40.73 / en 分类页 10.51",
+   "evidence": "诊断完成: ① 站内结构三语 parity(h2 13/13/13、内链 134/133/134、schema 全同) ⇒ 排除内容/结构不足 ② 真因=主词绑定弱分类页(33.2 加权) + en/ja title 当量 100/83 超限 + 8 个位置 5-20 的词 0 点击(摘要/意图) ③ en 10.51 vs zh 40.73 结构相同 ⇒ 市场竞争力差异。报告 .hermes/logs/2026-10-30-sticker-cluster-diagnosis.md",
+   "score": 0.8,
+   "write_scope": "诊断层无写入; 修复动作已拆到 FIX-20261104-STICKER-CATEGORY-TITLE-EQ(SCHEDULED) 与摘要审查",
+   "approval_gate": "无需 K3 (诊断); 修复按 11-04 窗口",
+   "owner_lane": "manual",
+   "status": "DONE",
+   "created_at": "2026-10-30T23:2:00+08:00"
+  }
+ },
+ {
+  "idx": 29,
+  "task": {
+   "task_id": "FIX-20261031-DHL-SHIPPING-CLAIMS",
+   "status": "DONE",
+   "score": 68,
+   "market": "zh-hk/en/ja",
+   "source_strategy": "2026-10-30 K3 全站模板(1)",
+   "approval_gate": "K3 2026-10-30 21:48 全站模板选(1): 交期(含运输/急件)一律报价确认 — 本项为 d450abbc+88cdf1ca+6f23d599 未覆盖的 DHL 运输/急件承诺串",
+   "write_scope": [
+    "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx",
+    "src/components/seo/RegionalContent.tsx",
+    "src/app/[locale]/product/[slug]/page.tsx"
+   ],
+   "targets": [
+    "TrustBadgeBlock L14 zh 物流行(24小時達/DHL 2-4日) L26 zh 即日交貨(3-5日/當天) L40 en DHL 3-5/5-7 days L43 en Same-Day L44 en DHL Express Direct L57 ja 航空便3-5日 L60 ja 即日納品(3-5営業日) L61 ja 2〜4日配送",
+    "RegionalContent L13 zh DHL 2-4日 L20 en 3-5/5-7 days L26 ja 納期厳守（航空便3-5日） L27 ja 航空便3-5日 L93 ja 航空便3-5日",
+    "product/[slug]/page.tsx L589 en/ja DHL/FedEx 3-5 days USA 2-4 days Japan"
+   ],
+   "next_check": "2026-10-31",
+   "result": {
+    "execution_commit": "6585b83b",
+    "stamp_commit": "8440472e",
+    "verified": "线上三页全绿 14:57 (en a2-posters/zh posters/ja nengajo)",
+    "note": "13 处 DHL 运输/急件承诺 → 报价确认; ja small-batch 2-4日残留转 SKU-SEO 任务"
+   }
+  }
+ },
+ {
+  "idx": 30,
+  "task": {
+   "task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
+   "source_strategy": "2026-10-31-money-keyword-seo-aeo-geo-global-strategy §7 第1-2周「五大 category 商业真值审计；冲突项保持 WAITING_K3」",
+   "market": "zh-hk",
+   "target": "zh-hk/category/{flyers,stickers,books,packaging,posters} 可见 MOQ/起价/交期",
+   "evidence": "审计完成 (.hermes/logs/2026-10-31-five-category-truth-audit.md): 13 处冲突 —— flyers: H1「100張起」vs MOQ 10、卡「50 張起」、title/desc 起价 HK$0.18 vs 真值最低 0.25、卡价 0.14/0.31; books: 「1 本起訂」与「無線膠裝 100 本起」vs MOQ 10、卡价 1.20/0.87 vs 最低 6; posters: 卡 alt「10張起印 HK$12.9」(裁决 #1 已定 16)、卡价 2.20 vs 最低 13、说明段「A2 約 HK$6-9／A1 HK$10-16（100張批量）」vs price_range 95-1,017/290-7,200; stickers: 单位「每個」应为「張」(2 处), 数量与价格一致; packaging: MOQ 100/200/300/500 与逐 SKU 完全一致, 仅需补「哪个盒型对应哪个 MOQ」标注。词形假设已证伪: flyers H1/title/desc 均已含「宣傳單張」(正文 12 次), 战略 §3.1 第4条应从缺口降级。",
+   "score": 0.85,
+   "write_scope": "5 个 category 页的可见数字与单位; 未改任何值, 仅审计",
+   "approval_gate": "剩余 11 处待 K3 (1) 排批: flyers 卡价 0.14/0.31 与 title/desc 起价 0.18、books「1本起訂」/「無線膠裝100本起」/卡价 1.20/0.87、posters 卡价 2.20 与批量段 A2 6-9/A1 10-16、stickers 单位「每個」→「張」; 建议 11-06 复测前一次审完",
+   "owner_lane": "manual",
+   "status": "WAITING_K3",
+   "created_at": "2026-10-31T12:40:00+08:00",
+   "result": "PARTIAL: K3 2026-10-31 批准 (3) 先行 + (1) 排批。已执行 b4b0c0f2: ① flyers socialProof stat 100張起→10張起 (category-conversion-blocks.ts L844, label 未动) ② posters a2-posters title_zh/description HK$12.9→HK$16 (products.ts, 同时把标题当量 58→56 修回合规)。线上复验 2026-10-31 17:30:21 双项生效 (flyers 社交证明 10張起, posters 类目/PDP 无 HK$12.9)。",
+   "execution_commit": "b4b0c0f2",
+   "online_verified": "2026-10-31T17:30:21+08:00 flyers category 10張起 / posters category+PDP 无 HK$12.9",
+   "next_check": "2026-11-06"
+  }
+ },
+ {
+  "idx": 31,
+  "task": {
+   "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
+   "source_strategy": "2026-10-31-money-keyword-seo-aeo-geo-global-strategy §2.2/§6/§8 承接层 KPI（主 URL 展示份额）",
+   "market": "zh-hk,en,ja",
+   "target": "17 带钱查询的主交易 URL 认定",
+   "evidence": "2026-10-31 query×page 联接首测 (.hermes/logs/money-kw-share-baseline-2026-10-31.md, 1,870+2,159 行): 9 词实际第一 URL 与战略指定不符 —— 貼紙訂製(blog sticker-guide 31% > 分类 30%)、書刊印刷(blog book-buying-guide 46% vs 分类 45%)、印書(blog 34% vs 分类 32%)、海報印刷(blog poster-printing-guide 37% 第一, 分类未进前二, 第二为 a2 PDP 16%)、學校印刷(blog campus pillar 48% vs 分类 38%)、small batch sticker printing(PDP 100%, 仅 1 URL)、china catalog printing(PDP 73%)、コミケ 印刷(PDP 94%)、教材 印刷製本(blog textbook-guide 70% vs PDP 27%)。另 2 词一致但份额低: 貼紙印刷(分类 34%, blog sticker-guide 27%, 10 个 URL 分流)、紙盒印刷(分类 58%)。宣传单张被证伪为「强承接」: 宣傳單張 87%、宣傳單張印刷 77% 均指向 /zh-hk/category/flyers/。",
+   "score": 0.9,
+   "write_scope": "不改页面; 需修正战略 §2.2/§6 的「主 URL」认定与 11-06 复测对象 (en sticker/catalog/ja 同人应以 PDP 为承接主体, 非 category)",
+   "approval_gate": "WAITING_K3: (1) 承认实测承接主体并改写主 URL 认定 (2) 反向执行 —— 把 PDP 承接的 en/ja 交易词改由 category 承接 (需改内链/内容, 成本高) (3) 先只做 zh-hk 海报分流诊断, en/ja 维持现状",
+   "owner_lane": "manual",
+   "status": "WAITING_K3",
+   "created_at": "2026-10-31T23:20:00+08:00"
+  }
+ }
+]
