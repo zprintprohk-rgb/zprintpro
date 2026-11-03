@@ -1,0 +1,15 @@
+## run s1-c2-perplexity-r2
+- 日期时间: 2026-11-03 12:29 (+08:00)
+- AI 面/版本: Perplexity Web (访客/未登录新建会话, 界面 zh-Hant)
+- 固定条件: 地区=zh-Hant 界面 / 界面语言中文 出口=本机默认网络 (未改出口) 执行=zwork browser pane (独立会话, 非 AutoGLM 扩展)
+- prompt: Which printing companies offer Comiket doujinshi printing with international shipping?
+- 答案原文: QinPrinting offers custom doujinshi printing and lists offices in Canada and Australia, though the available information doesn’t explicitly confirm international shipping. ZprintPro explicitly lists shipping to the U.S. and Japan, but doesn’t establish delivery to other countries.
+- 引用 URL（按展示顺序）: 展示层仅给来源 chip（如 "zprintpro +1"），完整 URL 列表未展开 → 以 chip 标签登记
+- ZP 引用: 未确认 — 同一 chip 形态（qinprinting +1）
+- ZP 品牌提及: 有（ZprintPro 正文提及）
+- 异常域命中: 无
+- 竞品 TOP3: QinPrinting + ZprintPro（仅两家）
+- 截图: 无（浏览器面板文本采集；原始文本可复跑）
+- 与同簇另一跑差异: 与 r1 一致：同样只列 QinPrinting 与 ZprintPro 两家，且同样点明 ZP「ships to the U.S. and Japan」但未证明其他国家；仅措辞细节不同 → 稳定
+- 判读: 稳定: 两跑均有 ZP 引用且方向一致
+- 数据尾注: 10 个来源
