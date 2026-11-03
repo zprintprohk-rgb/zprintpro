@@ -3,7 +3,7 @@
 > 日期：2026-11-03（Asia/Shanghai）
 > 角色：ZprintPro 首席 SEO／AEO／GEO 数据战略分析师
 > 依据：2026-10-31-money-keyword-seo-aeo-geo-global-strategy.md（最新）· 2026-10-30-three-strategy-completion-and-next-phase.md · zprintpro-blog-deepfix.md v1 · 2026-10-28-data-driven-next-phase-strategy.md · 2026-10-26-dual-engine-seo-aeo-geo-deep-strategy.md · 2026-11-02-next-step-and-k3-decision-upgrade.md · 2026-10-27-geo-ai-face-probe-kit-nov2026.md
-> 本轮性质：**数据复盘（近 3 日 GSC 四档全量）+ 任务J hkg 同法第二测（O3）+ C4 国家归属 + 23 词同法月度基线 + 恢复链第 3 个 fresh 读数 + GEO AI 探针 S1 首测（C1 完成，C2-C7 执行中）**。未修改任何 `src/`，未 commit／push（攒批纪律 §0.25.9 留给车道/手动批次）。
+> 本轮性质：**数据复盘（近 3 日 GSC 四档全量）+ 任务J hkg 同法第二测（O3）+ C4 国家归属 + 23 词同法月度基线 + 恢复链第 3 个 fresh 读数 + GEO AI 探针 S1 首测（C1 完成含 ZP 引用实锤，C1-r2/C2-C7 因扩展断连 SKIPPED）**。未修改任何 `src/`，未 commit／push（攒批纪律 §0.25.9 留给车道/手动批次）。
 
 ## 〇、一句话结论
 
@@ -20,7 +20,7 @@
 | 28d | 2026-10-04 → 10-31 | 504 | 22,114 | 2.28% | 14.03 | 3d |
 | 3mo | 2026-08-01 → 10-31 | 1,279 | 65,252 | 1.96% | 17.35 | 3d |
 
-- **24h 档是 10-30 以来第一个 fresh 读数**（此前 10-31/11-01/11-02 三份 lane 报告全部是冻结复读 888/15/117.7%）。窗口覆盖 11-02 白天 + 11-03 凌晨，与 10-30 冻结窗（10-29T05→10-30T04）口径相同（全国家、网页搜索、UTC+8 时区）。A2（24h 冻结链）与 A26（无 pre-cliff 分母）在 xlsx 口径下解除；API 口径的恢复 SSoT 选择仍待 K3（O2，见 §六）。
+- **24h 档是 10-30 以来第一个 fresh 读数**（此前 10-31/11-01/11-02 三份 lane 报告全部是冻结复读 888/15/117.7%）。窗口覆盖 11-02 白天 + 11-03 凌晨，与 10-30 冻结窗（10-29T05→10-30T04）口径相同（全国家、网页搜索、UTC+8 时区）。A2（24h 冻结链）与 A26（无 pre-cliff 分母）在 xlsx 口径下解除；API 口径的恢复 SSoT 选择仍待 K3（O2，见 §八）。
 - 门童 #9 index.json 已于 11-02 由手动会话重建（A27 关闭）；API CSV（end1102，数据日 10-30）与 11-03 xlsx 并存，按 A24 只做同法比较。
 
 ## 二、恢复链：第 3 个 fresh 读数（持续抬升，未触发「连续 3 日」）
@@ -53,7 +53,7 @@
 
 **新增可见行（上期无精确匹配，本期入列）**：印海報 13.36、小冊子印刷 10.71、紙袋印刷 16.24、騎馬釘印刷 12.78、月曆印刷 25.30、small batch stickers 5.10、saddle stitch booklet printing 6.67、a2 poster 18.68、卒アル販売 5.00、pvc シール 17.79、教科書 印刷 47.50。`corporate holiday cards` 与 `年賀状印刷` 在本档**仍无精确匹配**（盲区不变）。
 
-**en small batch sticker printing**：pos 5.5→5.66 持平、单 URL 100% 承接、46→35 imp、0 点击 → **纯 CTR 缺口确认**（承接与排名健康，杠杆在 snippet/价格/CTA，非内容）。
+**en small batch sticker printing**：pos 5.5→5.66 持平、单 URL 100% 承接、46→35 imp、0 点击 → **纯 CTR 缺口确认**（承接与排名健康，杠杆在 snippet/价格/CTA，非内容）。并行会话同日 SERP 测量（`en-smallbatch-serp-measure-2026-11-03.md`）给出竞品摘要钩子对照：stickermule「as few as 10 / free online proofs / 4-day turnaround」、customstickers「No Minimum / Free Shipping over $35」、thestickybrand「100 × $35 打包价」——我方 meta 首句为材质清单（MOQ 后置），**snippet 首句缺「10 pcs 低起量」钩子**，是 0 点击的直接原因候选（FIX 假设：meta 首句 MOQ 前置，不新增数字，11-07 复测验证）。
 
 ## 四、任务J hkg 同法第二测（O3，API query×country，窗口 10-05..11-01 vs 首测 10-04..10-29）
 
@@ -83,15 +83,17 @@
 
 **关键结论**：所有「split」簇的 URL 分流**全部发生在 hkg 市场内部**（blog vs category vs PDP 之间），**无跨市场内耗**（无 zh-hk 页抢 en/ja 词、反之亦然）。因此内耗处置 = zh-hk 站内「承接页 title/meta + 内链收口」（11-01 测量审计同结论），**排除 hreflang/多语实体问题**；禁止 301/canonical 合并（§0.31 未证实前不动）。海報印刷 blog 36.3% 承接主交易词 = 策略明令禁止的「blog 抢 head term」，O6 二选一定策（11-06）证据已齐。
 
-## 六、GEO AI 探针 S1 首测（今日到期 · 执行中）
+## 六、GEO AI 探针 S1 首测（今日到期 · PARTIAL）
 
-- AI 面：Perplexity（Google 账号登录、免费版）；固定条件已登记；浏览器会话：AutoGLM + Chrome。
-- **C1（食品包裝盒小批量，zh-hk）已完成 r1+r2 首跑**：
+- AI 面：Perplexity（Google 账号登录、免费版）；固定条件已登记；浏览器会话：AutoGLM + Chrome（扩展已装 Chrome 路径）。
+- **C1（食品包裝盒小批量，zh-hk）r1 完成**：
   - **ZP 引用：有 — zprintpro.com 为 source #2/9**（紧邻 e-print 之后）；答案表直接引用智印港「常規食品盒 100 個起、HK$2.5-2.8/個；精裝/磁吸盒 HK$8-12/個；3-5 工作天、急件+20%」——**与 K3 10-30 裁决后的站内真值一致**（food HK$2.5 / rigid HK$8 / MOQ 100），证明包装批 1 真值已被答案引擎正确读取。
   - **异常域命中：hkprint58.com 为 source #3**（按纪律登记「归属待核」，不公开定性，处置权在 K3）。
   - 竞品 TOP3：e-print > ZprintPro > HK Print 58（另有 PackLab、hk-printing、kingpac、servicecorps 在列）。
-  - C2-C7 执行中（C1-r2 首跑超时已重试）。
-- 产物目录：`.hermes/geo/geo-ai-probe-2026-11/`（每跑一记录 + raw 证据 + 收尾 summary）。
+- **C1-r2 与 C2-C7 均 SKIPPED：浏览器扩展连接故障**——AutoGLM 扩展在服务重启后无法建立 WS 连接（6 次重试全失败：timeout/service_lost/Extension did not connect in time）。**未用 web_search 顶替**（kit 红线）。补跑路径：11-03~11-07 窗口内由稳定浏览器会话执行（chrome://extensions 关闭重开 AutoGLM 或重启 Chrome 修复连接）。
+- 产物目录：`.hermes/geo/geo-ai-probe-2026-11/`（`s1-c1-perplexity-r1.md` + raw、`s1-c1-perplexity-r2.md` FAILED 记录、`summary-s1.md`）。
+- 判读：C1 本簇以 r1 单跑为唯一证据（当日记「不稳定」，S2 补复跑）；其余 6 簇无数据。
+- **与并行 web_search 基线对照（kit 口径：只对照方向，不混算）**：同侪会话同日建立 `geo_citation_baseline-2026-11-03.md`（web_search 法，11 探针，**0/11 命中**）——而 Perplexity AI 面 C1 即命中 source #2/9。**首个信号：AI 面对 C1 类采购问题的引用表现优于普通检索面**，且引用的是真值正确的内容（包装批 1 数字），为后续 W1-W3 动作提供方向锚点（S2 复测验证稳定性）。
 
 ## 七、近 3 日执行/定时任务报告复盘
 
@@ -114,7 +116,7 @@
 | **P0** | K3 管理员：`schtasks /change /tn ZP-monthly-matrix /st 12:13`（0x800710E0 持续 → 按 register-cron-tasks.ps1 重建） | ⏳ 待 K3 |
 | **P0** | K3 决策 O2：恢复口径 SSoT 选(1) API 26d daily（关闭 A26，车道停止引用冻结 xlsx 读数） | ⏳ 待 K3 |
 | **P0** | K3 决策 §2.3 模板真值 A/B/C（推荐 A：全站一次「confirmed at quote」，线上已实测 39+ 处新口径） | ⏳ 待 K3 |
-| P1 | GEO AI 探针 S1 全 7 簇完成 + summary（C1 已完成，C2-C7 执行中） | 🏃 执行中 |
+| P1 | GEO AI 探针 S1：C1-r1 完成（ZP 引用 #2/9 实锤），C1-r2/C2-C7 SKIPPED（扩展断连），窗口内补跑 | 🟡 部分完成 |
 | P1 | 任务J hkg 第二测（O3） | ✅ 本轮完成 |
 | P1 | C4 国家归属 | ✅ 本轮完成 |
 | P1 | 23 词月度同法基线（A28 补强，xlsx 口径） | ✅ 本轮完成 |
