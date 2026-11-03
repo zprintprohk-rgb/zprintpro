@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-11-03T17:12:49.561Z",
+  "window": "2026-10-06..2026-11-02 (28d ending 11-02, API query×country, country=hkg)",
+  "source_csv": "GSC数据/gsc-query-country-28d-end1103.csv",
+  "method": "imp-weighted mean position (same as second test); simple mean kept as cross-check",
+  "csv_rows_total": 1576,
+  "taskj_hkg_third": [
+    {
+      "kw": "即日印刷",
+      "second_pos": 7.75,
+      "second_imp": 55,
+      "third_clk": 1,
+      "third_imp": 57,
+      "third_pos_weighted": 7.79,
+      "third_pos_simple": 7.79,
+      "delta_pos_vs_second": 0.04,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "騎馬釘",
+      "second_pos": 19.05,
+      "second_imp": 63,
+      "third_clk": 0,
+      "third_imp": 64,
+      "third_pos_weighted": 19.28,
+      "third_pos_simple": 19.28,
+      "delta_pos_vs_second": 0.23,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "書刊印刷",
+      "second_pos": 31.65,
+      "second_imp": 104,
+      "third_clk": 0,
+      "third_imp": 113,
+      "third_pos_weighted": 32.04,
+      "third_pos_simple": 32.04,
+      "delta_pos_vs_second": 0.39,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "貼紙印刷",
+      "second_pos": 39.39,
+      "second_imp": 114,
+      "third_clk": 0,
+      "third_imp": 123,
+      "third_pos_weighted": 37.85,
+      "third_pos_simple": 37.85,
+      "delta_pos_vs_second": -1.54,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "宣傳單張",
+      "second_pos": 33.01,
+      "second_imp": 110,
+      "third_clk": 0,
+      "third_imp": 118,
+      "third_pos_weighted": 33.92,
+      "third_pos_simple": 33.92,
+      "delta_pos_vs_second": 0.91,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "包裝盒印刷",
+      "second_pos": 33.23,
+      "second_imp": 47,
+      "third_clk": 0,
+      "third_imp": 49,
+      "third_pos_weighted": 34.24,
+      "third_pos_simple": 34.24,
+      "delta_pos_vs_second": 1.01,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "紙盒印刷",
+      "second_pos": 35.93,
+      "second_imp": 45,
+      "third_clk": 0,
+      "third_imp": 49,
+      "third_pos_weighted": 37.06,
+      "third_pos_simple": 37.06,
+      "delta_pos_vs_second": 1.13,
+      "rows_hkg": 1
+    },
+    {
+      "kw": "包裝盒訂製",
+      "second_pos": 33.98,
+      "second_imp": 45,
+      "third_clk": 0,
+      "third_imp": 48,
+      "third_pos_weighted": 34.71,
+      "third_pos_simple": 34.71,
+      "delta_pos_vs_second": 0.73,
+      "rows_hkg": 1
+    }
+  ],
+  "sanity": {
+    "kw_rows_sum": 8,
+    "kw_imp_sum": 621
+  }
+}
