@@ -1,0 +1,116 @@
+{
+  "schema": "gsc-canonical-candidates-v1",
+  "date": "2026-11-03",
+  "produced_by": "ZP-gsc-feedback (20:13 lane)",
+  "owner_next": "ZP-monthly-matrix (with ZP-weekly-meta for snippet side)",
+  "purpose": "Handoff of query x page x country evidence for the O5 canonical/承接 URL naming task. Candidate evidence only.",
+  "source": {
+    "file": ".hermes/logs/gsc-2026-11-03-taskj-c4-monthly.json",
+    "upstream_csv": "GSC数据/money-kw-query-page-country-2026-10-31.csv",
+    "window": "2026-09-30..2026-10-27",
+    "caliber": "query x page x country, GSC API export"
+  },
+  "hard_constraints": [
+    "No redirect, canonical tag, noindex, or 301 change without K3 approval (AGENTS.md 0.31 / contract 6.1).",
+    "All splits are intra-market: hkg clusters split inside hkg; EN clusters split inside usa/EN. There is no hreflang or cross-market cause to fix.",
+    "Blog-vs-trade-page choice is a strategy decision, not an execution-layer call.",
+    "Positions and shares are from one window; do not subtract from the 11-03 xlsx positions (A24)."
+  ],
+  "clusters": [
+    {
+      "query": "貼紙印刷",
+      "market": "hkg",
+      "classification": "split",
+      "total_imp": 241,
+      "urls": 10,
+      "top_url_observed": "https://zprintpro.com/zh-hk/category/stickers/",
+      "top_share_pct": 33.2,
+      "top_pos": 39.52,
+      "problem": "10 URLs split the same hkg demand; the category holds only one third. Ranking is also deep (39.5).",
+      "candidate_primary": "https://zprintpro.com/zh-hk/category/stickers/",
+      "candidate_note": "Observed top URL is the natural transaction page; the other 9 URLs were not named in the export and need a page-level pull before a full consolidation list exists.",
+      "do_not": "Do not merge the other 9 URLs or add canonical until the page-level list is pulled and K3 approves."
+    },
+    {
+      "query": "海報印刷",
+      "market": "hkg",
+      "classification": "split_blog_vs_trade",
+      "total_imp": 557,
+      "urls": 10,
+      "top_url_observed": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "top_share_pct": 36.3,
+      "top_pos": 9.76,
+      "problem": "The blog guide is the page-1 asset and takes 36.3% of a 557-imp commercial query; transaction pages sit separately. This is the forbidden 'blog captures the head term' pattern.",
+      "candidate_primary": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/ (traffic asset, keep)",
+      "candidate_secondary_observed": [
+        "https://zprintpro.com/zh-hk/product/a1-posters/ (observed in the usa row at pos 7.0)",
+        "https://zprintpro.com/zh-hk/product/a2-posters/ (observed in the swe row at pos 46.0)"
+      ],
+      "candidate_note": "O6 decision on 11-06: strengthen the blog-to-product path OR lift the trade page. Not both in one batch.",
+      "do_not": "Do not 301 the blog or canonical it to a product page."
+    },
+    {
+      "query": "書刊印刷",
+      "market": "hkg",
+      "classification": "split_blog",
+      "total_imp": 202,
+      "urls": 4,
+      "top_url_observed": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "top_share_pct": 45.5,
+      "top_pos": 30.41,
+      "problem": "A blog buying guide is the top URL for a commercial query at pos 30.4; the trade page is not the top asset.",
+      "candidate_primary": "https://zprintpro.com/zh-hk/blog/book-buying-guide/ (observed top)",
+      "candidate_note": "Only 4 URLs, so consolidation is cheap, but the deeper issue is ranking (30.4). Diagnose intent/landing before any canonical.",
+      "do_not": "Do not treat top-share 45.5% as a duplicate-content problem without the full 4-URL list."
+    },
+    {
+      "query": "月曆印刷",
+      "market": "hkg",
+      "classification": "split",
+      "total_imp": 206,
+      "urls": 4,
+      "top_url_observed": "https://zprintpro.com/zh-hk/category/calendars/",
+      "top_share_pct": 47.1,
+      "top_pos": 38.9,
+      "problem": "Category is already the top URL but only 47.1% of 4 URLs and pos 38.9; ranking and intra-page intent are the issue, not the choice of URL.",
+      "candidate_primary": "https://zprintpro.com/zh-hk/category/calendars/",
+      "candidate_note": "Q4 season: the 24h row already shows 月曆印刷 pos 10.9 / 10 imp. Re-check after the season lift before touching structure.",
+      "do_not": "Do not churn the category title during the Q4 window."
+    },
+    {
+      "query": "包裝盒訂製",
+      "market": "hkg",
+      "classification": "concentrated",
+      "total_imp": 47,
+      "urls": 3,
+      "top_url_observed": "https://zprintpro.com/zh-hk/category/packaging/",
+      "top_share_pct": 95.7,
+      "top_pos": 31.6,
+      "problem": "No split: one category holds 95.7%. The problem is depth (31.6), not URL dispersion.",
+      "candidate_primary": "https://zprintpro.com/zh-hk/category/packaging/",
+      "candidate_note": "Pair with the packaging-cluster diagnosis (three words worse on two methods); no canonical action.",
+      "do_not": "Do not consolidate anything here."
+    },
+    {
+      "query": "small batch sticker printing",
+      "market": "usa",
+      "classification": "concentrated",
+      "total_imp": 44,
+      "urls": 1,
+      "top_url_observed": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "top_share_pct": 100.0,
+      "top_pos": 5.61,
+      "problem": "No split and page-1 ranking, but 0 clicks on 35 imp (28d). This is a pure snippet/CTA problem, not a canonical problem.",
+      "candidate_primary": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "candidate_note": "SERP measurement on 11-03 found competitors lead with MOQ hooks ('as few as 10'); our meta opens with material. Hand to weekly-meta 11-06 as one-variable test.",
+      "do_not": "Do not rewrite the page body or add new numbers."
+    }
+  ],
+  "summary_for_monthly": {
+    "split_clusters": ["貼紙印刷", "海報印刷", "書刊印刷", "月曆印刷"],
+    "concentrated_but_deep": ["包裝盒訂製"],
+    "concentrated_and_page1_but_zero_click": ["small batch sticker printing"],
+    "decision_needed": "For split clusters: pick one承接 URL per cluster and a content/link path, not a redirect. For concentrated clusters: fix ranking/snippet. For the EN PDP: fix snippet, not structure.",
+    "no_action_this_run": true
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-03",
+  "run_started_at": "2026-11-03 20:13:03 (Asia/Shanghai, scheduled trigger)",
+  "verdict": "OK",
+  "verdict_scope": "Lane execution complete for 2026-11-03: consumed K3 11-03 four-window xlsx exports, produced today's anomaly ledger + report + canonical-candidate handoff. NOT a claim that the site has fully recovered, NOT a claim that the API plane is fresh, and NOT a claim that task-J third measurement was executed (no API pull today; see A32).",
+  "data_status": "FRESH_XLSX_2026_11_03 (all four windows: 24h/7d/28d/3mo, data day 2026-10-31, age ~68h at 20:13 < 72h) / API plane STALE (data day 2026-10-30, age ~92h, no end1103 pull).",
+  "data_availability": {
+    "xlsx_batch": {
+      "date": "2026-11-03",
+      "exported_by": "K3 manual export 2026-11-03 06:15-06:16 (per docs/2026-11-03-chief-analyst-execution-report.md)",
+      "files": [
+        "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (1).xlsx",
+        "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (2).xlsx",
+        "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+        "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx"
+      ],
+      "sheets_per_workbook": ["图表", "查询数", "网页", "国家_地区", "设备", "搜索结果呈现", "过滤器"],
+      "parsed_by": "same-day analyst session -> .hermes/logs/gsc-xlsx-2026-11-03-analysis.json + .hermes/logs/gsc-2026-11-03-taskj-c4-monthly.json"
+    },
+    "api_pull": {
+      "present": false,
+      "latest_api_files": [
+        "GSC数据/gsc-date-page-28d-end1102.csv (2026-10-05..2026-10-30)",
+        "GSC数据/gsc-query-country-28d-end1102.csv (2026-10-05..2026-10-30, 31.4% coverage)"
+      ],
+      "api_latest_data_day": "2026-10-30",
+      "api_age_hours_at_2013": 92,
+      "note": "No end1103 API pull exists; sandbox blocks pwsh/python. Task-J third measurement therefore NOT executed (A32)."
+    },
+    "detector": {
+      "file": ".hermes/logs/gsc-cliff-2026-11-03.json",
+      "produced": "same-day file already on disk (author not recorded in the file; this lane did not re-run the script; pwsh blocked in lane sandbox)",
+      "alert_level": "INFO only (3 x INFO_CALIBER_SWITCH, no CRITICAL_CLIFF, no WARN_STALE)",
+      "data_age_days": 3
+    },
+    "index_json": {
+      "lastBuild": "2026-11-02T07:19:00+08:00",
+      "totalFiles": 249,
+      "latestFreshData": "2026-10-31",
+      "stalenessDays": 2,
+      "freshnessStatus": "FRESH",
+      "gap": "filesByDate has no 2026-11-03 entry although 4 xlsx exist in the directory (A27b)"
+    }
+  },
+  "kpi_xlsx_4windows": {
+    "caliber": "xlsx, three-site aggregate (full-country), web search only, Asia/Shanghai, K3 export 2026-11-03 06:15-06:16",
+    "24h": {"window": "2026-11-02T03:00:00..2026-11-03T02:00:00", "clicks": 23, "imps": 977, "ctr_pct": 2.35, "pos": 15.93, "data_age_hours_at_2013": 18},
+    "7d": {"window": "2026-10-25..2026-10-31", "clicks": 132, "imps": 6255, "ctr_pct": 2.11, "pos": 15.60, "per_day_clicks": 18.86, "per_day_imps": 893.6},
+    "28d": {"window": "2026-10-04..2026-10-31", "clicks": 504, "imps": 22114, "ctr_pct": 2.28, "pos": 14.03, "per_day_clicks": 18.0, "per_day_imps": 789.8},
+    "3mo": {"window": "2026-08-01..2026-10-31", "clicks": 1279, "imps": 65252, "ctr_pct": 1.96, "pos": 17.35, "per_day_clicks": 13.9, "per_day_imps": 709.3}
+  },
+  "kpi_xlsx_same_method_trend": {
+    "prev_28d": {"window": "2026-09-30..2026-10-27", "clicks": 496, "imps": 21127, "ctr_pct": 2.35, "pos": 13.56, "per_day_clicks": 17.71, "per_day_imps": 754.5, "source": "clicks/imps from gsc-cliff-2026-11-01.json sites totals (496/21127); pos 13.56 only in written records (11-02 matrix / k3-review / chief report), not independently recomputed"},
+    "new_28d": {"window": "2026-10-04..2026-10-31", "clicks": 504, "imps": 22114, "ctr_pct": 2.28, "pos": 14.03},
+    "delta": {"clicks_per_day": "+1.6%", "imps_per_day": "+4.7%", "ctr_pp": "-0.07", "pos": "+0.47 (worse; old pos not independently recomputed)"},
+    "window_note": "Windows overlap 24/28 days; this is a window-shift trend, not an independent second measurement. No subtraction across xlsx and API (A24).",
+    "within_batch_gradient": "24h 977 imp > 7d/day 893.6 > 28d/day 789.8; clicks 23 > 18.86 > 18.0. Same export batch, same caliber: recent day is above both averages, but a single day is not a trend."
+  },
+  "recovery": {
+    "headline": "RECOVERY: 123.7%",
+    "formula": "977 / 789.8 (recovery_ratio_vs_mean28_dynamic, full-country, mean28 from 28d export ending 2026-10-31)",
+    "source": ".hermes/logs/gsc-cliff-2026-11-03.json realtime_24h",
+    "fixed_precliff_secondary": "167.0% = 977 / 585.2 (single-site-sum pre-cliff baseline; explicitly NOT comparable to full-country and must NOT be used as the recovery coefficient per A17)",
+    "alternate_dynamic_secondary": "129.5% = 977 / 754.5 (28d window ending 2026-10-27; valid only for trend-line continuity, see A31)",
+    "window_note": "The 24h window (2026-11-02T03..2026-11-03T02) is 2 days newer than the 28d export's last day (2026-10-31); the denominator does not contain the 24h window. 123.7% is relative to the nearest 28d mean, not a same-window ratio.",
+    "full_country_series": [
+      {"date": "2026-10-29", "window": "2026-10-27T22..2026-10-28T21", "imps": 793, "clicks": 15, "mean28": 749.2, "ratio_pct": 105.8},
+      {"date": "2026-10-30", "window": "2026-10-29T05..2026-10-30T04", "imps": 888, "clicks": 15, "mean28": 754.5, "ratio_pct": 117.7},
+      {"date": "2026-11-03", "window": "2026-11-02T03..2026-11-03T02", "imps": 977, "clicks": 23, "mean28": 789.8, "ratio_pct": 123.7}
+    ],
+    "legacy_series_not_comparable": [
+      {"date": "2026-10-12", "imps": 44, "clicks": 1, "ratio_pct": 7.5, "note": "precliff ratio only; post-cliff trough"},
+      {"date": "2026-10-13", "imps": 747, "clicks": 20, "ratio_pct": 127.6, "note": "precliff ratio only (no dynamic field)"},
+      {"date": "2026-10-15", "imps": 569, "clicks": 19, "ratio_pct": 97.8, "note": "per-site-sum denominator"},
+      {"date": "2026-10-16", "imps": 706, "clicks": 24, "ratio_pct": 121.4, "note": "per-site-sum denominator; repeated on 10-17"},
+      {"date": "2026-10-19", "imps": 413, "clicks": 8, "ratio_pct": 71.0, "note": "per-site-sum denominator; repeated on 10-20"},
+      {"date": "2026-10-22", "imps": 758, "clicks": 21, "ratio_pct": 130.3, "note": "per-site-sum denominator; repeated on 10-24/26/27/28"}
+    ],
+    "streak": "3 distinct full-country fresh readings, monotonic 105.8 -> 117.7 -> 123.7, but NOT on 3 consecutive days (10-31/11-01/11-02 had no fresh 24h reading). 'Continuous 3-day rise = re-evaluation trigger' NOT met.",
+    "level": "基本恢复 (>=90% threshold): all three full-country fresh points are >=100% (105.8 / 117.7 / 123.7). Metric-level only; NOT a claim that the penalty is lifted, that rankings recovered, or that index coverage is normal.",
+    "caliber_guard": "Only full-country dynamic points are placed on one curve. Legacy 10-12..10-28 points use the three-site-sum denominator and are listed separately, never joined to the full-country curve."
+  },
+  "money_words_23_xlsx_28d": {
+    "caliber": "xlsx 28d 2026-10-04..2026-10-31, exact-match query rows; positions are xlsx-caliber (do NOT subtract from API country positions; direction-only comparison in next block)",
+    "homepage_hits_strict": "6/23 (pos <= 10): 食品包裝印刷 8.42, 即日印刷 7.93, small batch sticker printing 5.66, small batch stickers 5.10, saddle stitch booklet printing 6.67, 卒アル販売 5.00",
+    "page1_with_click": "即日印刷 60 imp / 1 clk",
+    "page1_zero_click": "5 words, 196 imp total, 0 clk: 食品包裝印刷 118@8.42; small batch sticker printing 35@5.66; small batch stickers 21@5.10; 卒アル販売 16@5.00; saddle stitch booklet printing 6@6.67",
+    "deep_20plus": "貼紙印刷 38.06 (127 imp); 宣傳單張 33.74 (121); 書刊印刷 31.98 (112); 包裝盒印刷 32.80 (50); 喜帖印刷 29.40 (10); 教材 印刷製本 28.67 (46); 月曆印刷 25.30 (116); コミケ 印刷 22.04 (170); 利是封印刷 23.63 (54)",
+    "striking_distance_11_20": "小冊子印刷 10.71; doujinshi printing 10.06; 印海報 13.36 (1 clk); large envelopes 13.88; 海報印刷 14.41 (1); china catalog printing 14.96; 紙袋印刷 16.24; pvc シール 17.79; a2 poster 18.68 (1); 騎馬釘印刷 12.78",
+    "no_row": "corporate holiday cards; 年賀状印刷 (blind-word check: still 0 exact-match rows in the top-N dump; a truncated/absent row is not zero demand)",
+    "ctr_c_value": "NOT_RECOMPUTED this run (no script). Zero-click + impressions used as a proxy pool; c-value and two-window confirmation handed to weekly-meta 2026-11-06. Do not change title/description from this proxy.",
+    "blind_words_4": "年賀状印刷 / corporate holiday cards: no exact row in top-N dump. 2027年賀状 / business holiday cards: not decidable from top-N (full 1000-row query sheet not dumped to a searchable file). Not zero demand; 11-04 zero-impression recheck continues.",
+    "rows": {
+      "食品包裝印刷": {"imp": 118, "clk": 0, "pos": 8.42},
+      "即日印刷": {"imp": 60, "clk": 1, "pos": 7.93},
+      "月曆印刷": {"imp": 116, "clk": 0, "pos": 25.30},
+      "貼紙印刷": {"imp": 127, "clk": 0, "pos": 38.06},
+      "印海報": {"imp": 131, "clk": 1, "pos": 13.36},
+      "海報印刷": {"imp": 278, "clk": 1, "pos": 14.41},
+      "宣傳單張": {"imp": 121, "clk": 0, "pos": 33.74},
+      "書刊印刷": {"imp": 112, "clk": 0, "pos": 31.98},
+      "喜帖印刷": {"imp": 10, "clk": 0, "pos": 29.40},
+      "利是封印刷": {"imp": 54, "clk": 1, "pos": 23.63},
+      "包裝盒印刷": {"imp": 50, "clk": 0, "pos": 32.80},
+      "small batch sticker printing": {"imp": 35, "clk": 0, "pos": 5.66},
+      "small batch stickers": {"imp": 21, "clk": 0, "pos": 5.10},
+      "saddle stitch booklet printing": {"imp": 6, "clk": 0, "pos": 6.67},
+      "china catalog printing": {"imp": 72, "clk": 0, "pos": 14.96},
+      "doujinshi printing": {"imp": 50, "clk": 0, "pos": 10.06},
+      "large envelopes": {"imp": 8, "clk": 0, "pos": 13.88},
+      "卒アル販売": {"imp": 16, "clk": 0, "pos": 5.00},
+      "教材 印刷製本": {"imp": 46, "clk": 0, "pos": 28.67},
+      "pvc シール": {"imp": 19, "clk": 0, "pos": 17.79},
+      "a2 poster": {"imp": 59, "clk": 1, "pos": 18.68},
+      "コミケ 印刷": {"imp": 170, "clk": 0, "pos": 22.04},
+      "小冊子印刷": {"imp": 45, "clk": 0, "pos": 10.71}
+    }
+  },
+  "two_method_direction_check": {
+    "purpose": "Same-day API (data day 10-30) vs xlsx (data day 10-31) positions for the same 23 words. Different rulers: never subtract values; only check whether both methods point the same direction.",
+    "agreement": "19/23 words within +/-1.5 positions: e.g. 食品包裝印刷 8.39/8.42, 即日印刷 7.75/7.93, small batch sticker printing 5.65/5.66, small batch stickers 5.40/5.10, saddle stitch 7.40/6.67, 卒アル 5.00/5.00, 月曆 26.29/25.30, 貼紙 39.39/38.06, pvc 18.06/17.79, 宣傳單張 33.01/33.74, 書刊 31.65/31.98.",
+    "divergences_gt_1_5": {
+      "コミケ 印刷": "API 17.64 vs xlsx 22.04 (+4.40) - do not average",
+      "a2 poster": "API 17.16 vs xlsx 18.68 (+1.52)",
+      "large envelopes": "API 15.60 vs xlsx 13.88 (-1.72)",
+      "喜帖印刷": "API 28.00 vs xlsx 29.40 (+1.40, boundary)"
+    },
+    "direction_conclusions": {
+      "packaging_cluster_worse": "Both methods worse: 包裝盒印刷 +0.66 (API) / +0.91 (xlsx); 包裝盒訂製 +1.12 / +2.59; 紙盒印刷 +0.93 / +3.58. NEW-10 upgraded to CONFIRMED_TWO_METHODS (direction only).",
+      "sticker_slightly_better": "Both methods better: 貼紙印刷 -0.32 (API) / -2.82 (xlsx); still 38.06 deep and 0 clicks.",
+      "ja_textbook_worse": "Both worse: 教材 印刷製本 +2.04 (API) / +7.98 (xlsx); confirmed deterioration.",
+      "wedding_collapse": "API 28.00 / xlsx 29.40, both far below prior 16.13 (xlsx old window); confirmed collapse, small impressions (10)."
+    }
+  },
+  "task_j_8_hkg": {
+    "status": "SECOND_MEASUREMENT_DONE_2026_11_02 / THIRD_MEASUREMENT_NOT_RUN_2026_11_03",
+    "blocked_reason": "No end1103 API pull; sandbox blocks pwsh/python (A32).",
+    "second_measurement_lines": {
+      "包裝盒印刷": "47/0/33.23 (base 32.57, delta +0.66)",
+      "包裝盒訂製": "45/0/33.98 (base 32.86, delta +1.12)",
+      "紙盒印刷": "45/0/35.93 (base 35.00, delta +0.93)",
+      "貼紙印刷": "114/0/39.39 (base 39.71, delta -0.32)",
+      "宣傳單張": "110/0/33.01 (base 32.79, delta +0.22)",
+      "即日印刷": "55/1/7.75 (base 7.81, delta -0.06)",
+      "書刊印刷": "104/0/31.65 (base 31.67, delta -0.02)",
+      "騎馬釘": "63/0/19.05 (base 19.00, delta +0.05)"
+    },
+    "structure": "1/8 page 1 (即日印刷, only 1 click); 7/8 deep at 19-40 with 0 clicks; all deltas within +/-1.12 = stable but stuck.",
+    "next_check": "2026-11-04 (same API call; command in report section 11)"
+  },
+  "c4_country_attribution": {
+    "status": "DELIVERED_NAMED_CANDIDATES (query x page x country, window 2026-09-30..2026-10-27)",
+    "source": "GSC数据/money-kw-query-page-country-2026-10-31.csv -> .hermes/logs/gsc-2026-11-03-taskj-c4-monthly.json",
+    "handoff": ".hermes/logs/gsc-canonical-candidates-2026-11-03.json",
+    "conclusion": "All splits are intra-market (hkg cluster splits inside hkg; en cluster inside usa/EN). No hreflang/cross-market cause. Do NOT 301/canonical-merge without K3; the list is candidate evidence for monthly-matrix."
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "DUAL_PLANE_XLSX_FRESH_API_STALE", "severity": "P1", "note": "xlsx plane: 4 fresh windows, data day 10-31, ~68h at 20:13 (<72h) -> resolved. API plane: data day 10-30, ~92h, no end1103 pull -> STALE. Planes reported separately, never merged."},
+    {"id": "A2", "name": "FROZEN_24H_CHAIN", "status": "RESOLVED_2026_11_03", "severity": "P1", "note": "Fresh 24h window 2026-11-02T03..2026-11-03T02: 977 imp / 23 clk / pos 15.93. First new 24h reading since 10-30; the 888/15/117.7% freeze is over."},
+    {"id": "A15", "name": "INDEX_FAKE_FRESH", "status": "RESOLVED", "severity": "P3", "note": "Index rebuild 11-02 aligns latestFreshData with 10-31."},
+    {"id": "A18", "name": "INDEX_NOT_REBUILT_FOR_10_30", "status": "RESOLVED", "severity": "P3", "note": "Covered by 11-02 rebuild."},
+    {"id": "A19", "name": "3MO_NOT_REFRESHED", "status": "RESOLVED_2026_11_03", "severity": "P2", "note": "3mo 2026-08-01..10-31: 1,279 clk / 65,252 imp / 1.96% / pos 17.35. Long window no longer stale."},
+    {"id": "A20", "name": "NO_FRESH_EXPORT", "status": "RESOLVED_2026_11_03", "severity": "P2", "note": "All four xlsx windows freshly exported by K3 06:15-06:16."},
+    {"id": "A21", "name": "CALIBER_REGRESSION_CROSS_LANE", "status": "RECURRENCE_LABELED_2026_11_03", "severity": "P2", "note": "ZP-daily-content 11-03 headline RECOVERY = 167.0% (fixed single-site-sum pre-cliff, explicitly not usable as a recovery coefficient per A17) with 123.7% as secondary; ZP-k3-review used 129.5% (older dynamic denominator). Both lanes labeled the caliber, so no silent mix, but first-value discipline is still inconsistent. Recommend a one-line machine guard: first RECOVERY value must equal gsc-cliff-<date>.realtime_24h.recovery_ratio_vs_mean28_dynamic."},
+    {"id": "A22", "name": "CROSS_LANE_METADATA_MISMATCH", "status": "CLOSED", "severity": "P3", "note": "No new metadata event."},
+    {"id": "A23", "name": "API_DELTA_WINDOW_LABEL_MISMATCH", "status": "DISCIPLINE_MAINTAINED", "severity": "P3", "note": "Task-J JSON carries first/second values without a window label; the chief report states 10-05..11-01 vs 10-04..10-29, while the 11-02 ledger recorded 10-05..10-30 for the KPI file. Label drift remains; no new delta today and no values were subtracted across windows."},
+    {"id": "A24", "name": "API_VS_XLSX_METHOD_SPLIT", "status": "DISCIPLINE_MAINTAINED", "severity": "P2", "note": "Both rulers are shown side by side with direction-only checks; no subtraction, no averaged position."},
+    {"id": "A25", "name": "COUNTRY_PULL_COVERAGE_31PCT", "status": "PERSISTENT", "severity": "P2", "note": "7,776/24,729 = 31.4% (11-02). No new country pull today."},
+    {"id": "A25b", "name": "TASK_J_METHOD_WINDOW_SHIFT", "status": "RESOLVED_SECOND_TEST", "severity": "P2", "note": "Second same-method API reading delivered 11-02. Third measurement blocked today by A32, not by methodology."},
+    {"id": "A26", "name": "RECOVERY_METRIC_NOT_API_COMPUTABLE", "status": "PARTIALLY_RESOLVED_XLSX_CALIBER", "severity": "P1", "note": "A 24h xlsx reading plus a same-batch 28d denominator now yields a computable full-country dynamic ratio (123.7%). API-caliber recovery remains impossible (no 24h API export). O2 (which caliber is SSoT) still WAITING_K3."},
+    {"id": "A27", "name": "INDEX_NOT_REBUILT_FOR_API_CSVS", "status": "RESOLVED", "severity": "P3", "note": "11-02 rebuild includes end1102 CSVs."},
+    {"id": "A27b", "name": "INDEX_INVENTORY_LAG_XLSX_1103", "status": "NEW", "severity": "P3", "note": "GSC数据/index.json lastBuild 11-02 07:19 and filesByDate has no 2026-11-03 key, while 4 xlsx dated 11-03 exist in the directory. Gate #9 still reads FRESH by date (latestFreshData 10-31), but its file inventory is incomplete. Owner: manual/index rebuild script."},
+    {"id": "A28", "name": "MONTHLY_REVIEW_DUE_NO_LANE_REPORT", "status": "OPEN_DAY3", "severity": "P2", "note": "ZP-monthly-matrix 2026-11-01 MISSING, scheduler LastTaskResult=2147946720 (0x800710E0), next natural trigger 12-01. The 11-03 xlsx gives the measurement panel but not the monthly lane report. Owner: K3-admin."},
+    {"id": "A29", "name": "DSH_QUOTA_INCIDENT_1102", "status": "RESOLVED", "severity": "P1", "note": "Both 11-03 lanes executed (k3-review 07:16 OK, daily-content 18:17 OK); balance restored."},
+    {"id": "A30", "name": "DETECTOR_SITE_LEVEL_DUPLICATED_AGGREGATE", "status": "NEW", "severity": "P2", "note": "gsc-cliff-2026-11-03.json sites.hk/jp/us are byte-identical (all 789.8 / 22,114 / 504) because the single-site exports are 22 days old and the detector fell back to the three-site aggregate (INFO_CALIBER_SWITCH x3). Any reader treating sites.hk as Hong-Kong-only will be wrong. The aggregate ratio itself (977/789.8) is correct for full-country."},
+    {"id": "A31", "name": "DUAL_DYNAMIC_DENOMINATOR", "status": "NEW", "severity": "P2", "note": "Two full-country dynamic denominators circulate for the same 977 imp: 789.8 (28d ending 10-31, today's detector field -> 123.7%) and 754.5 (28d ending 10-27, prior trend line -> 129.5%). Both are valid for their own window; they must never be mixed inside one trend line without a label. Lane official value = the detector field = 123.7%."},
+    {"id": "A32", "name": "API_PULL_NOT_RUN_1103", "status": "NEW_BLOCKED_INFRA", "severity": "P1", "note": "No end1103 CSV; API plane data day 10-30 = ~92h. Task-J third measurement and the API daily series could not run in this sandbox (pwsh/python blocked; no API tool). Not a data-integrity failure, but a coverage gap. Retry 2026-11-04 with the command in report section 11."},
+    {"id": "NEW-1", "name": "STICKER_LOCKED_WORD_DEEP", "status": "IMPROVING_NOT_SOLVED", "severity": "P1", "note": "貼紙印刷 38.06 (xlsx, -2.82) / 39.39 (API, -0.32); 127 imp 0 clk. Still far from O8 target <=25. 14-day verdict 11-04."},
+    {"id": "NEW-2", "name": "CALENDAR_MIXED_SIGNAL", "status": "WATCH", "severity": "P2", "note": "28d 25.30 / 116 imp / 0 clk, but 24h row 月曆印刷 pos 10.9 / 10 imp and custom-calendars page 1 clk / 19 imp in 24h. Q4 season signal; title effect window 11-06; daily-content calendar copy fix pushed today (c0552853) -> re-measure 11-10."},
+    {"id": "NEW-3", "name": "JA_TEXTBOOK_WORSENING", "status": "CONFIRMED_TWO_METHODS", "severity": "P1", "note": "教材 印刷製本 28.67 (+7.98 xlsx; +2.04 API); 教科書 印刷 47.50 (50 imp). Two rulers agree on direction. Monthly diagnosis (index/intent/split), no content action in this lane."},
+    {"id": "NEW-4", "name": "POSTER_PAGE1_BUT_BLOG", "status": "CONFIRMED_AT_QUERY_PAGE_COUNTRY", "severity": "P2", "note": "海報印刷: blog/poster-printing-guide is top URL at 36.3% share, pos 9.76, 557 hkg imp across 10 URLs; trade pages a1/a2 posters are separate. Blog is capturing the head term. O6 decision 11-06; no 301."},
+    {"id": "NEW-5", "name": "IMPRESSIONS_UP_CLICKS_FLAT", "status": "OBSERVE", "severity": "P3", "note": "28d vs prior 28d: imp/day +4.7%, clk/day +1.6%, CTR -0.07pp, pos +0.47 worse. Window shift, not a regression conclusion."},
+    {"id": "NEW-6", "name": "CTR_ZERO_ON_PAGE1", "status": "OPEN_5_WORDS_196_IMP", "severity": "P2", "note": "5 page-1 words, 196 imp, 0 clk. Largest single hole: 食品包裝印刷 118 imp @8.42 / 0 clk. Hand to weekly-meta 11-06; SERP feature check before any snippet change."},
+    {"id": "NEW-7", "name": "Q4_RED_PACKET_COOLING", "status": "WATCH", "severity": "P3", "note": "利是封印刷 54 imp / 1 clk / 23.63 (xlsx) vs 24.81 (API); season candidate, O11 11-06."},
+    {"id": "NEW-8", "name": "WEDDING_WORD_COLLAPSE", "status": "CONFIRMED", "severity": "P1", "note": "喜帖印刷 29.40 (xlsx, was 16.13) / 28.00 (API), impressions fell 15 -> 10. Index + landing check before any content action (O10)."},
+    {"id": "NEW-9", "name": "INTERNAL_SPLIT_CONFIRMED_INTRAMARKET", "status": "CONFIRMED_WITH_NAMED_URLS", "severity": "P2", "note": "Top-URL shares 33.2% (stickers, 10 URLs), 36.3% (poster blog, 10), 45.5% (book blog, 4), 47.1% (calendars, 4), 95.7% (packaging, 3), 100% (small batch PDP, 1). Splits are intra-market; packaging is concentrated but deep."},
+    {"id": "NEW-10", "name": "PACKAGING_CLUSTER_SLIGHT_WORSENING", "status": "CONFIRMED_TWO_METHODS", "severity": "P2", "note": "API +0.66/+1.12/+0.93 and xlsx +0.91/+2.59/+3.58 for 包裝盒印刷/訂製/紙盒印刷. Two independent rulers point the same way; monthly diagnosis first, no title churn."},
+    {"id": "NEW-11", "name": "FOOD_PACKAGING_PAGE1_ZERO_CLICK", "status": "NEW", "severity": "P1", "note": "食品包裝印刷: 118 imp, 0 clk, pos 8.42 on 28d (was 112/0/8.70). Largest page-1 zero-click block within the 23 money words (a whole-site query scan is not available this run). This is a snippet/CTR problem candidate, not a ranking problem; hand to weekly-meta with SERP feature check first."},
+    {"id": "NEW-12", "name": "BRAND_CLICK_SHARE_24H", "status": "OBSERVE", "severity": "P3", "note": "24h: 智印港 3 clk / 3 imp (pos 1) + zprintpro 2 clk / 2 imp (pos 1) = 5/23 clicks (21.7%) from brand terms. Single-day observation; brand CTR baseline (K3 target 40%) not judged from one day."}
+  ],
+  "tasks": [
+    {"task_id": "GSC-20261101-O1", "intent": "Make the API pull a daily path instead of a manual step", "owner": "ZP-k3-review + K3 (infra)", "status": "REGRESSED_2026_11_03", "note": "No end1103 pull today; two prior days were manual sibling pulls. A32.", "next_check": "2026-11-04"},
+    {"task_id": "GSC-20261101-O2", "intent": "Decide the recovery SSoT caliber (API 26d daily vs xlsx 24h) and restate the pre-cliff baseline", "owner": "K3 (rule change)", "status": "WAITING_K3", "note": "123.7% is computable in xlsx caliber; API caliber still impossible. A31 adds a second denominator that strengthens the need for one written rule.", "next_check": "2026-11-04"},
+    {"task_id": "GSC-20261101-O3", "intent": "Task-J hkg third same-method measurement", "owner": "ZP-gsc-feedback", "status": "BLOCKED_INFRA_TODAY", "note": "Second measurement done 11-02; third needs end1103 API pull (A32).", "next_check": "2026-11-04"},
+    {"task_id": "GSC-20261101-O4", "intent": "CTR pool: page-1 zero-click words", "owner": "ZP-weekly-meta", "status": "SCHEDULED", "note": "5 words / 196 imp / 0 clk; 食品包裝印刷 118@8.42 is the top candidate (NEW-11). SERP feature check before snippet change.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O5", "intent": "Name one candidate承接 URL per split cluster", "owner": "ZP-monthly-matrix (with weekly-meta)", "status": "DELIVERED_CANDIDATES", "note": "C4 JSON gives shares/positions; handoff file written (gsc-canonical-candidates-2026-11-03.json). Candidate only; no redirect/noindex without K3.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O6", "intent": "Poster: blog vs trade page", "owner": "ZP-daily-content / weekly-meta", "status": "SCHEDULED", "note": "Blog 36.3% @9.76 vs trade pages; evidence complete, decide 11-06.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O7", "intent": "Calendar title 7d effect", "owner": "ZP-weekly-meta", "status": "SCHEDULED", "note": "28d 25.30 / 24h 10.9; title unchanged. Daily-content copy fix c0552853 shifts the copy measurement to 11-10.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O8", "intent": "Sticker 14-day retest (no title change)", "owner": "ZP-daily-content", "status": "DATA_READY", "note": "38.06 (xlsx) / 39.39 (API); verdict 11-04: <=25 or hold.", "next_check": "2026-11-04"},
+    {"task_id": "GSC-20261101-O9", "intent": "ja textbook churn diagnosis", "owner": "ZP-monthly-matrix", "status": "OPEN", "note": "28.67; 教科書 47.50; two methods worse. Monthly lane report still missing (A28).", "next_check": "next monthly run"},
+    {"task_id": "GSC-20261101-O10", "intent": "Wedding-print collapse: index + landing check", "owner": "ZP-monthly-matrix + weekly-meta", "status": "SCHEDULED", "note": "29.40 / 10 imp; check index and landing page before content.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O11", "intent": "Q4 red packet season classification", "owner": "ZP-monthly-matrix", "status": "SCHEDULED", "note": "23.63 / 54 imp / 1 clk; classify only.", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261101-O12", "intent": "GEO AI probe S1", "owner": "ZP-gsc-feedback", "status": "DONE_BY_PEER_PARTIAL", "note": "7 clusters x 2 runs completed by zwork session 12:22-12:33 (docs/2026-11-03-geo-probe-s1-completion.md). Citation URLs not fully captured (chip not expanded) -> S2 11-20..24. Not redone by this lane.", "next_check": "2026-11-20"}
+  ],
+  "candidate_tasks": [
+    {"task_id": "GSC-20261103-C1", "target": "食品包裝印刷 page-1 zero click (118 imp / 0 clk / pos 8.42)", "owner": "ZP-weekly-meta", "why": "Largest page-1 CTR hole within the 23 money words; ranking is already good", "gate": "SERP feature check first; one snippet variable; no new numbers", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261103-C2", "target": "4 split clusters consolidation candidates", "owner": "ZP-monthly-matrix", "why": "Top-URL share 33-47% within the same market", "gate": "No redirect/noindex without K3; blog-vs-trade is a strategy decision", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261103-C3", "target": "API pull end1103 + task-J third test", "owner": "ZP-gsc-feedback / K3-admin", "why": "API plane is 92h stale and the third measurement is due", "gate": "Same call (`--end 2026-11-02 --days 28`), same country filter", "next_check": "2026-11-04"},
+    {"task_id": "GSC-20261103-C4", "target": "ja textbook diagnosis (教材 28.67 / 教科書 47.50)", "owner": "ZP-monthly-matrix", "why": "Two methods agree on worsening", "gate": "Split index/intent/internal-split before content change", "next_check": "next monthly run"}
+  ],
+  "next": [
+    {"date": "2026-11-04", "check": "API pull `python scripts/fetch_gsc_data.py --end 2026-11-02 --days 28` + task-J third test (same 8 rows); sticker 14-day verdict; 年賀状 cluster zero-impression check", "pass": "API CSV lands with data day >= 2026-10-31; 8 task-J rows; sticker <=25 or documented hold; 年賀状 any impression = progress"},
+    {"date": "2026-11-06", "check": "weekly-meta CTR batch (food packaging, small batch sticker, 卒アル, saddle stitch, 即日) + poster O6 + calendar title + wedding/red packet", "pass": "SERP feature check recorded; one variable changed; re-measure scheduled"},
+    {"date": "2026-11-10", "check": "Calendar copy fix (daily-content c0552853) 7-day effect", "pass": "target page impressions >= 80% of baseline and >=1 money-word click"},
+    {"date": "2026-12-01", "check": "Monthly lane natural trigger (A28 still open)", "pass": "ZP-monthly-matrix run record + monthly review report"}
+  ]
+}
