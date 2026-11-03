@@ -1,3 +1,16 @@
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 BEGIN -->
+# 2026-11-03 最新执行块：证据分流与学习闭环
+
+> 本块是当前执行口径，置于历史恢复／增产指令之前；不取代 K3 拍板、AGENTS.md、结果总线契约和商业真值门禁。配置文本更新不等于自然定时调度已验证恢复。
+
+1. **先读证据再选题**：依次消费结果总线、不晚于当日的最新 `.hermes/logs/gsc-daily-anomaly-*.json`、最新 `.hermes/logs/periodic-review-weekly-*.json`（月度再加 `periodic-review-monthly-*`）、`evidence_handoffs`、本车道队列及上轮报告。缺失可选输入必须写 `available:false`，不得编造。
+2. **统一口径**：xlsx 文件新鲜不代表 API 平面新鲜；首个 `RECOVERY` 值必须使用当日 detector 的 `recovery_ratio_vs_mean28_dynamic`。123.7% 是 2026-11-03 全国家曝光指标口径，不等于排名、处罚、询盘、订单或收入恢复。
+3. **FIX／MEASURE／SCALE 分流**：页一高展示零点击只进入 FIX 候选，先记录 SERP feature 与真实 title/snippet，再决定单变量修改；深位词、query×page 分散和 AI 缺席进入 MEASURE，不直接发长文、301、canonical 或 noindex；只有 `baseline + change + production_deploy + online_verify + retest + scale_evidence` 全部齐全才可 SCALE。
+4. **实验账本**：每项 FIX 必须记录审批门、冻结 baseline、唯一变更、production deploy／CF 状态、线上核验、D1/D2 健康检查及 7/14/28 天复测、结果、失败原因和下一动作。窗口移动只是观察，不是实验胜负。
+5. **重试与退出**：同因失败不得无间隔重试；写明 retry_at／cooldown、恢复条件和 owner。复测完成、WAITING_K3、BLOCKED_INFRA 或有依据的 NO_OP 都是合法退出，禁止为产文而产文。
+6. **学习只沉淀证据**：周／月反馈由既有 `scripts/strategy-feedback.py` 生成；未部署或缺 online_verify 不得进入学习候选。不得自行放宽权限、自批准 WAITING_K3、自动改写共享 prompt，或新建 cron／Kimi Automation。
+<!-- EVIDENCE-LEARNING-CLOSED-LOOP-2026-11-03 END -->
+
 <!-- RECOVERY-MODE-2026-10-12 BEGIN -->
 > # 🚨 【恢复模式 · 限定凌驾级】spam 命中恢复期 (K3 2026-10-12 拍板 · SSoT: `docs/2026-10-12-recovery-lane-defense-plan.md`)
 >
