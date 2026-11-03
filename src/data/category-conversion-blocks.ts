@@ -1391,7 +1391,7 @@ categoryConversionBlocks['calendars:zh-hk'] = {
   "category": "calendars",
   "locale": "zh-hk",
   "title": "月曆印刷 | 香港月曆訂製 | 座枱曆/掛曆/月曆卡 2027 企業禮品｜智印港",
-  "metaDescription": "香港月曆印刷同月曆訂製一條龍，座枱曆、掛曆、年曆卡、記事簿月曆任揀，燙金年份、局部UV、圓環裝訂都做。1本起訂（數碼），批量300本起上印刷機，月曆價錢掛曆HK$18起、檯曆HK$9起、年曆卡HK$3起，數碼3-5日交貨，順豐到港。2027企業禮品月曆早鳥9折連免費設計，WhatsApp 8619880851334 報價落單搞掂。",
+  "metaDescription": "香港月曆印刷同月曆訂製一條龍，座枱曆、掛曆、年曆卡、記事簿月曆任揀，燙金年份、局部UV、圓環裝訂都做。1本起訂（數碼），批量300本起上印刷機，月曆價錢掛曆HK$18起、檯曆HK$9起、年曆卡HK$3起，數碼3-5日交貨，順豐到港。2027企業禮品月曆免費設計，WhatsApp 8619880851334 報價落單搞掂。",
   "quickAnswers": [
     {
       "q": "香港月曆印刷幾多錢？月曆價錢點計？",
@@ -1481,7 +1481,7 @@ categoryConversionBlocks['calendars:zh-hk'] = {
       },
       {
         "title": "落單付款",
-        "desc": "銀行轉賬或轉數快，2027 早鳥預訂窗口內落單鎖價"
+        "desc": "銀行轉賬或轉數快，2027 訂單可先鎖定產能，價格以報價回覆為準"
       },
       {
         "title": "交貨收貨",
@@ -1495,8 +1495,8 @@ categoryConversionBlocks['calendars:zh-hk'] = {
       "message": "你好，我想訂製【座枱曆/掛曆】，尺寸【A3 / 150×180mm】，數量【300】本，需要【印公司logo + 燙金年份】，麻煩報個月曆價錢同交期，多謝！"
     },
     {
-      "label": "2027 早鳥查詢",
-      "message": "你好，想幫公司做【2027 年企業禮品月曆】，款式【座枱曆/記事簿月曆】，數量【500】本，想問下早鳥預訂同免費設計點樣申請，謝謝！"
+      "label": "2027 批量查詢",
+      "message": "你好，想幫公司做【2027 年企業禮品月曆】，款式【座枱曆/記事簿月曆】，數量【500】本，想問下批量預訂同免費設計點樣安排，謝謝！"
     },
     {
       "label": "趕旺季交貨",
@@ -1504,16 +1504,16 @@ categoryConversionBlocks['calendars:zh-hk'] = {
     }
   ],
   "newFaqs": [
-    { "q": "香港月曆印刷幾多錢？月曆價錢點計？", "a": "視乎款式同數量：掛曆 / 檯曆 / 年曆卡一律 HK$3-8/本起（按尺寸與工藝浮動），1 本起訂，大批量上印刷機更抵，燙金另計。2027 年曆早鳥預訂連免費設計，實價以 WhatsApp 報價為準。" },
-    { "q": "月曆訂製最快幾日有貨？", "a": "數碼印刷標準 3-5 日，柯式 5-7 日，急件 2-3 日（數碼）。11-12 月旺季工廠排期會拉長到 7-10 日，想趕 Q4 交貨建議 10 月底前確認鎖定檔期。" },
+    { "q": "香港月曆印刷幾多錢？月曆價錢點計？", "a": "視乎款式同數量：掛曆 / 檯曆 / 年曆卡一律 HK$3-8/本起（按尺寸與工藝浮動），1 本起訂，大批量上印刷機更抵，燙金另計。2027 年曆批量預訂連免費設計，實價以 WhatsApp 報價為準。" },
+    { "q": "月曆訂製最快幾日有貨？", "a": "數碼印刷標準 3-5 日，柯式 5-7 日，急件 2-3 日（數碼）。11-12 月旺季工廠排期會拉長到 7-10 日，想趕 Q4 交貨建議盡早確認鎖定檔期，11 月起檔期以報價回覆為準。" },
     { "q": "月曆最少訂幾多本？有咩尺寸揀？", "a": "1 本起訂（數碼印刷），大批量上印刷機更經濟，燙金可選。座枱曆 150×180 / 200×230mm，掛曆 A3/A2，月曆卡 100×150mm，支援完全訂製。" },
     {
       "q": "2027 月曆幾時開始訂最穩陣？",
-      "a": "最好提前 2-3 個月準備：8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。拖到 11-12 月高峰期，紙張加價 15-20%、工廠排期拉長到 7-10 日，交貨風險大增。想穩陣趕 Q4 旺季，10 月底前確認，早鳥預訂連免費設計。"
+      "a": "最好提前 2-3 個月準備：8-9 月落單 → 9-11 月柯式印刷 → 10-12 月旺季交貨。拖到 11-12 月高峰期，紙張加價 15-20%、工廠排期拉長到 7-10 日，交貨風險大增。想穩陣趕 Q4 旺季，建議盡早確認；11 月起檔期同價格以報價回覆為準，免費設計照舊。"
     },
     {
       "q": "月曆印刷有咩辦法慳多啲？",
-      "a": "三個位可以慳：(1) 數量上大批量轉柯式印刷；(2) 揀檯曆或者月曆卡，單價低過掛曆；(3) 2027 早鳥期預訂兼免費設計。詳細報價 WhatsApp 傾。"
+      "a": "三個位可以慳：(1) 數量上大批量轉柯式印刷；(2) 揀檯曆或者月曆卡，單價低過掛曆；(3) 2027 批量預訂兼免費設計。詳細報價 WhatsApp 傾。"
     },
     {
       "q": "我冇設計檔，可以做月曆嗎？",
@@ -2316,7 +2316,7 @@ categoryConversionBlocks['calendars:en'] = {
       },
       {
         "title": "Order Confirmation",
-        "desc": "Lock quantities and specs; 2027 early-bird pre-orders secure discount pricing before the rush"
+        "desc": "Lock quantities and specs; 2027 pre-orders reserve production capacity, with pricing confirmed in your quote"
       },
       {
         "title": "Production & Delivery",
@@ -2331,7 +2331,7 @@ categoryConversionBlocks['calendars:en'] = {
     },
     {
       "label": "2027 Corporate Pre-Order",
-      "message": "Hi, we're planning [2027 corporate gift calendars], type [desk / wall / planner], quantity [____ pcs], delivery by [month: ____]. How do we apply the early-bird discount and free design, thanks!"
+      "message": "Hi, we're planning [2027 corporate gift calendars], type [desk / wall / planner], quantity [____ pcs], delivery by [month: ____]. How do we arrange the 2027 pre-order and free design, thanks!"
     },
     {
       "label": "Rush / Peak-Season Order",
@@ -2342,11 +2342,11 @@ categoryConversionBlocks['calendars:en'] = {
     { "q": "How long does calendar printing take, and when should I order 2027 calendars?", "a": "Standard turnaround is 3-5 days for digital printing and 5-7 days for offset, plus 2-4 business days worldwide via DHL Express / FedEx. For 2027 corporate calendars, order 2-3 months ahead: the August-October ordering window feeds September-December delivery, ahead of the November-December factory rush." },
     {
       "q": "When should I order 2027 calendars?",
-      "a": "Work backward from your distribution date and order 2-3 months before calendars need to be in hand. The seasonal rhythm runs August-October ordering into September-December delivery, with September-November concentrating roughly 60% of annual calendar demand. Ordering before the November-December peak helps lock factory schedules and paper pricing, and 2027 pre-orders placed in the early-bird window also earn 10% off with free design support."
+      "a": "Work backward from your distribution date and order 2-3 months before calendars need to be in hand. The seasonal rhythm runs August-October ordering into September-December delivery, with September-November concentrating roughly 60% of annual calendar demand. Ordering before the November-December peak helps lock factory schedules and paper pricing, and 2027 pre-orders reserve production slots, with pricing confirmed in your quote and free design support."
     },
     {
       "q": "How do I keep custom calendar costs down?",
-      "a": "Three practical levers: move to offset printing at 500+ copies where unit prices drop, favor compact formats such as calendar cards or desk easels over full A2 wall spreads, and order inside the 2027 early-bird window for 10% off plus free design. Foil stamping, spot UV, and variable-data personalization are quoted as add-ons."
+      "a": "Three practical levers: move to offset printing at 500+ copies where unit prices drop, favor compact formats such as calendar cards or desk easels over full A2 wall spreads, and place the 2027 order early to lock production capacity, with free design included. Foil stamping, spot UV, and variable-data personalization are quoted as add-ons."
     },
     {
       "q": "I don't have print-ready artwork - can you still produce my calendar?",

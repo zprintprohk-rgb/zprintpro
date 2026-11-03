@@ -647,7 +647,7 @@ export const envelopesFAQs: FAQItem[] = [
 ];
 
 // 2026-09-08 K3 v4.0 指令 A7: calendars 品类专属 FAQ（替代通用兜底，9/15 季节死线）
-// 数据锚: products.ts calendars 6 SKU 实价 HK$3-8/本・13 页设计・柯式 500 本起・Q4 高峰建议 10 月底前确认
+// 数据锚: products.ts calendars 6 SKU 实价 HK$3-8/本・13 页设计・柯式 500 本起・Q4 高峰建议尽早确认（11 月起以报价为准）
 export const calendarsFAQs: FAQItem[] = [
   {
     question: {
@@ -675,14 +675,14 @@ export const calendarsFAQs: FAQItem[] = [
   },
   {
     question: {
-      'zh-hk': '9 月落單印月曆仲嚟得切嗎？交貨時間幾耐？',
-      'en': 'If we order calendars in September, is it still in time? What is the lead time?',
-      'ja': '9 月にカレンダーを発注して間に合いますか？',
+      'zh-hk': '月曆落單要幾早？交貨時間幾耐？',
+      'en': 'How early should we order calendars, and what is the lead time?',
+      'ja': 'カレンダーはいつまでに発注すれば間に合いますか？',
     },
     answer: {
-      'zh-hk': 'Q4 為月曆高峰期，產能按落單先後排產，建議 10 月底前確認訂單；愈早落單愈穩陣，急件檔期請 WhatsApp 對時間表。',
-      'en': 'Q4 is peak season and production slots fill in order of confirmation - lock your order by end of October to be safe. Rush scheduling available via WhatsApp.',
-      'ja': 'Q4 はピークシーズンで、製造枠は発注確定順に埋まります。10 月末までのご発注を推奨。特急の日程は WhatsApp でご相談ください。',
+      'zh-hk': 'Q4 為月曆高峰期，產能按落單先後排產，愈早落單愈穩陣；11 月起檔期以報價回覆為準，急件請 WhatsApp 對時間表。',
+      'en': 'Q4 is peak season and production slots fill in order of confirmation - the earlier you confirm, the safer the slot. From November, capacity and timing are confirmed per quotation; rush scheduling available via WhatsApp.',
+      'ja': 'Q4 はピークシーズンで、製造枠は発注確定順に埋まります。お早めのご発注が安全です。11月以降の日程は都度お見積りで確認のうえ確定します。特急の日程は WhatsApp でご相談ください。',
     },
   },
   {

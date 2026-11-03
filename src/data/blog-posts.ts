@@ -2294,7 +2294,7 @@ const dcCorporateCalendar2027: BlogPostMeta = {
     ja: "企業カレンダー印刷 2027：サイズ・製本 1部〜 | ZprintPro",
   },
   excerpt: {
-    'zh-hk': "企業月曆訂製指南：六款類型（座檯/掛牆/訂製/迷你/相框/磁石）規格×紙材×檔期一次講清，1 本起印 HK$3-8/本，Q4 旺季 10 月底前確認，附 6 條 FAQ。",
+    'zh-hk': "企業月曆訂製指南：六款類型（座檯/掛牆/訂製/迷你/相框/磁石）規格×紙材×檔期一次講清，1 本起印 HK$3-8/本，Q4 旺季建議盡早確認，附 6 條 FAQ。",
     en: "A practical guide to corporate calendar printing for 2027: six calendar types compared, paper and binding choices, single-copy MOQ from US$0.40, volume tips and the Q4 production window.",
     ja: "企業カレンダー印刷の発注ガイド。6 タイプの規格比較、用紙と製本の選び方、1部からの小ロット、Q4 繁忙期のスケジュールまで、6 つの FAQ とともに解説します。",
   },
