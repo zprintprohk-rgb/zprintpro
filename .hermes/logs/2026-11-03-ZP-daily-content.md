@@ -50,6 +50,7 @@
 - 3 个 dirty 文件 = **本 lane 旧任务 11-01 产物**（同车道, 非外人对端）→ 收口入库属本 lane 职责; 已披露于 commit message
 - push 前 ahead 仅 1 commit; 30min 下限（上推 11-01 18:5x）远超 ✓; 攒批 = ≥1 src 行为修复 ✓
 - 幂等键: `harness-20261103-calendar-window-close`
+- **CF Pages build: SUCCESS — deploy is live**（复查 18:39, run 125864247445）
 
 ## 数据来源
 
