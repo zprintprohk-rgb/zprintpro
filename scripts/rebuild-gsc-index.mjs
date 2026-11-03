@@ -90,11 +90,10 @@ const now = new Date();
 const nowIso = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}T${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:00+08:00`;
 
 const stalenessNote =
-  `10/29 重建轮 (C6/A15 收尾): K3 01:16-01:23 导出 4 新档 (24h/7d/28d/3mo 三站点汇总, 全国家口径) + ` +
-  `目录现存 10/15/10/16/10/19/10/23 各批 (共 5 批新档), 由 scripts/rebuild-gsc-index.mjs 扫描重建。` +
-  `28d KPI (09-29..10-26): clk 497 / imp 20,977 / CTR 2.37% / pos 13.52; 恢复系数 109.9% (全国家口径, 双方法)。` +
-  `totalFiles = ${scan.total} (含 gitignored xlsx, 实际目录计数); 数据日约 10-26 (GSC 滞后 2-3 天属正常) ⇒ ${freshnessStatus}。` +
-  `10/29 ZP-gsc-feedback lane 已消费并回灌 matrix (gsc_feedback_2026_10_29 block + priority_boost 食品包裝+1 / china catalog+1)。`;
+  `目录扫描 totalFiles=${scan.total}（含 gitignored xlsx，按实际目录计数）；最新导出日期=${scan.latestFreshData || 'UNKNOWN'}，` +
+  `stalenessDays=${stalenessDays} ⇒ ${freshnessStatus}。文件清单 FRESH 只表示最新导出日期通过门禁，` +
+  `不代表 API 各数据平面都新鲜。xlsx/API 的 data day、窗口和国家口径须在最新 anomaly ledger 中分别核验，` +
+  `不得在此硬编码某一批 KPI 或把不同口径的恢复系数串成一条曲线。`;
 
 const rebuilt = {
   schema: existing.schema || 'gsc-data-index-v1',
@@ -113,8 +112,9 @@ const rebuilt = {
   files: existing.files || [],
   'gsc-api-fresh-data-format': existing['gsc-api-fresh-data-format'] || 'gsc-fresh-YYYY-MM-DD.json',
   actionRequired:
-    `下一校准窗 (11-03 C4/C6 验证点): ① 老板导出 query×page×country 双档 (面板 §3 join 修复, 贴纸/月历词级已就位) ` +
-    `② 11-01 教科書 churn 47.1 月复盘 ③ 11-04 年賀状/貼紙 14 天位次复测 ④ index.json 每次 GSC 新档落盘后由本重建器重跑 (SOP-5, 禁手搓)`,
+    `① 每批 GSC 新档落盘后运行 node scripts/rebuild-gsc-index.mjs，再用 --write 写回（SOP-5，禁手搓派生文件） ` +
+    `② 消费最新 gsc-daily-anomaly-*.json，分别确认 xlsx/API data day、窗口与国家口径 ` +
+    `③ 文件清单 FRESH 不得替代 API 新鲜度、Task-J 到期复测或自然调度验证`,
   notes: {
     ...(existing.notes || {}),
     '2026-10-29': {

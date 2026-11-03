@@ -77,7 +77,195 @@ def complete_learning_evidence(task):
     evidence = task.get("learning_evidence")
     if not isinstance(evidence, dict):
         return False
-    return all(field in evidence and evidence[field] not in (None, "", False, [], {}) for field in REQUIRED_LEARNING_FIELDS)
+    if not all(field in evidence and evidence[field] not in (None, "", False, [], {}) for field in REQUIRED_LEARNING_FIELDS):
+        return False
+    online = evidence.get("online_verify")
+    if isinstance(online, dict):
+        if online.get("deployed") is False or online.get("production_deployed") is False:
+            return False
+        if str(online.get("status") or "").upper() in {"NOT_DEPLOYED", "PENDING", "MISSING", "FAILED"}:
+            return False
+    return True
+
+
+def latest_dated_json(logs, prefix, review_day):
+    """Return the newest usable dated JSON no later than the review date."""
+    try:
+        names = os.listdir(logs)
+    except OSError:
+        return None, {}
+    candidates = []
+    for name in names:
+        match = re.fullmatch(re.escape(prefix) + r"(\d{4}-\d{2}-\d{2})\.json", name)
+        if not match:
+            continue
+        day = parse_day(match.group(1))
+        if day and day <= review_day:
+            candidates.append((day, name))
+    if not candidates:
+        return None, {}
+    _, name = max(candidates)
+    path = os.path.join(logs, name)
+    value = read_json(path, None)
+    return (path, value) if isinstance(value, dict) else (None, {})
+
+
+def latest_dated_document(repo, suffix, review_day):
+    docs = os.path.join(repo, "docs")
+    try:
+        names = os.listdir(docs)
+    except OSError:
+        return None, ""
+    candidates = []
+    for name in names:
+        match = re.fullmatch(r"(\d{4}-\d{2}-\d{2})-" + re.escape(suffix) + r"\.md", name)
+        if not match:
+            continue
+        day = parse_day(match.group(1))
+        if day and day <= review_day:
+            candidates.append((day, name))
+    if not candidates:
+        return None, ""
+    path = os.path.join(docs, max(candidates)[1])
+    try:
+        with open(path, "r", encoding="utf-8", errors="replace") as fh:
+            return path, fh.read()
+    except OSError:
+        return None, ""
+
+
+def money_query_handoffs(anomaly, source, review_day):
+    money = anomaly.get("money_words_23_xlsx_28d") or {}
+    rows = money.get("rows") or {}
+    window = (anomaly.get("kpi_xlsx_4windows") or {}).get("28d", {}).get("window")
+    task_dates = {row.get("task_id"): row.get("next_check") for row in anomaly.get("tasks", [])}
+    handoffs = []
+    for query, metrics in rows.items():
+        if not isinstance(metrics, dict):
+            continue
+        try:
+            impressions = float(metrics.get("imp") or 0)
+            clicks = float(metrics.get("clk") or 0)
+            position = float(metrics.get("pos"))
+        except (TypeError, ValueError):
+            continue
+        if position <= 10 and impressions > 0 and clicks == 0:
+            route = "FIX"
+            owner = "ZP-weekly-meta"
+            gate = "Record SERP features and the real title/snippet first; change at most one snippet variable after approval"
+            next_check = task_dates.get("GSC-20261101-O4")
+            action = "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion"
+        elif position > 20:
+            route = "MEASURE"
+            owner = "ZP-monthly-matrix"
+            gate = "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect"
+            next_check = None
+            action = "Deep-position measurement only; establish a comparable baseline before any content work"
+        else:
+            continue
+        handoffs.append({
+            "handoff_id": f"GSC-{route}-{review_day}-{hashlib.sha256(query.encode('utf-8')).hexdigest()[:8]}",
+            "route": route,
+            "query": query,
+            "owner_lane": owner,
+            "status": "PROPOSE_ONLY",
+            "baseline": {"window": window, "impressions": int(impressions), "clicks": int(clicks), "position": position,
+                         "source": source},
+            "required_action": action,
+            "approval_gate": gate,
+            "production_deploy": None,
+            "online_verify": None,
+            "retest": {"next_check": next_check, "required_windows": ["7d", "14d", "28d"]},
+            "learning_evidence_complete": False,
+            "scale_allowed": False,
+        })
+    route_order = {"FIX": 0, "MEASURE": 1}
+    return sorted(handoffs, key=lambda row: (route_order[row["route"]], -row["baseline"]["impressions"], row["query"]))
+
+
+def candidate_task_handoffs(anomaly, source):
+    rows = []
+    for task in anomaly.get("candidate_tasks", []):
+        target = str(task.get("target") or "")
+        route = "FIX" if ("zero click" in target.lower() or "api pull" in target.lower()) else "MEASURE"
+        rows.append({
+            "task_id": task.get("task_id"), "route": route, "target": target,
+            "owner_lane": task.get("owner"), "why": task.get("why"),
+            "approval_gate": task.get("gate"), "next_check": task.get("next_check"),
+            "status": "PROPOSE_ONLY", "source": source, "scale_allowed": False,
+        })
+    return rows
+
+
+def build_gsc_handoff(logs, review_day):
+    path, anomaly = latest_dated_json(logs, "gsc-daily-anomaly-", review_day)
+    if not path:
+        return {"available": False, "source": None, "items": [], "candidate_tasks": [], "tasks": [],
+                "reason": "No gsc-daily-anomaly-YYYY-MM-DD.json on or before the review date"}
+    source = os.path.basename(path)
+    data_availability = anomaly.get("data_availability") or {}
+    return {
+        "available": True,
+        "source": source,
+        "anomaly_date": anomaly.get("date"),
+        "data_status": anomaly.get("data_status"),
+        "xlsx_availability": data_availability.get("xlsx_batch", {}),
+        "api_availability": data_availability.get("api_pull", {}),
+        "kpi_28d": (anomaly.get("kpi_xlsx_4windows") or {}).get("28d"),
+        "recovery": {
+            "official_headline": (anomaly.get("recovery") or {}).get("headline"),
+            "formula": (anomaly.get("recovery") or {}).get("formula"),
+            "guard": "Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery",
+        },
+        "items": money_query_handoffs(anomaly, source, review_day),
+        "candidate_tasks": candidate_task_handoffs(anomaly, source),
+        "tasks": anomaly.get("tasks", []),
+    }
+
+
+def build_blog_handoff(repo, review_day):
+    path = os.path.join(repo, ".hermes", "cron-prompts", "blog-money-keyword-queue.json")
+    queue = read_json(path, None)
+    if not isinstance(queue, dict):
+        return {"available": False, "source": None, "items": [], "status_counts": {},
+                "reason": "Optional blog-money-keyword-queue.json is missing or invalid"}
+    items = []
+    counts = {}
+    for item in queue.get("items", []):
+        status = str(item.get("status") or "UNKNOWN")
+        counts[status] = counts.get(status, 0) + 1
+        recheck = parse_day(item.get("recheck_after"))
+        if status == "remeasure":
+            decision = "REMEASURE_DUE" if recheck and recheck <= review_day else "REMEASURE_NOT_DUE"
+            route = "MEASURE"
+        elif status == "blocked_waiting_k3":
+            decision = "HOLD_WAITING_K3"
+            route = "HOLD"
+        else:
+            decision = "HOLD_UNVERIFIED"
+            route = "HOLD"
+        items.append({"cluster": item.get("cluster"), "locale": item.get("locale"), "status": status,
+                      "route": route, "decision": decision, "recheck_after": str(recheck) if recheck else None,
+                      "source_window": item.get("source_window"), "baseline": item.get("baseline"),
+                      "delivered_url": item.get("delivered_url"), "scale_allowed": False})
+    return {"available": True, "source": ".hermes/cron-prompts/blog-money-keyword-queue.json",
+            "source_window": queue.get("source_window"), "status_counts": counts, "items": items,
+            "guard": "A moving GSC window is an observation, not an experiment win/loss; no automatic article generation"}
+
+
+def build_geo_handoff(repo, review_day, anomaly):
+    path, text = latest_dated_document(repo, "geo-probe-s1-completion", review_day)
+    if not path:
+        return {"available": False, "source": None, "status": "UNKNOWN", "action": "Do not infer AI citations"}
+    s2_next = None
+    for task in anomaly.get("tasks", []):
+        if str(task.get("task_id") or "").endswith("-O12"):
+            s2_next = task.get("next_check")
+            break
+    return {"available": True, "source": os.path.relpath(path, repo), "status": "S1_COMPLETE_CITATION_URLS_PARTIAL",
+            "s2_window": "2026-11-20..2026-11-24", "s2_next_check": s2_next,
+            "action": "MEASURE at S2; capture complete citation URLs. Do not rerun S1 or create content solely from absence",
+            "completion_evidence_found": bool(text)}
 
 
 def task_decision(task, review_day):
@@ -168,6 +356,45 @@ def render_markdown(report):
     lines += ["", "## Task decisions", "", "| task | previous status | decision | reason |", "|---|---|---|---|"]
     for row in report["task_decisions"]:
         lines.append(f"| {row['task_id']} | {row['status']} | {row['decision']} | {row['reason']} |")
+
+    gsc = report["evidence_handoffs"]["gsc"]
+    lines += ["", "## GSC evidence handoffs", ""]
+    if not gsc["available"]:
+        lines.append(f"- UNAVAILABLE: {gsc['reason']}")
+    else:
+        kpi = gsc.get("kpi_28d") or {}
+        lines += [
+            f"- Source: {gsc['source']}; 28d window: {kpi.get('window')}",
+            f"- Freshness: {gsc.get('data_status')}",
+            f"- Recovery: {gsc['recovery'].get('official_headline')}; {gsc['recovery']['guard']}",
+            "",
+            "| route | query | baseline (imp/clk/pos) | owner | required gate |",
+            "|---|---|---|---|---|",
+        ]
+        for row in gsc["items"]:
+            base = row["baseline"]
+            gate = row["approval_gate"].replace("|", "\\|")
+            lines.append(f"| {row['route']} | {row['query']} | {base['impressions']}/{base['clicks']}/{base['position']} | "
+                         f"{row['owner_lane']} | {gate} |")
+        lines.append(f"- Upstream anomaly tasks retained: {len(gsc['tasks'])}; candidate handoffs: {len(gsc['candidate_tasks'])}.")
+
+    blog = report["evidence_handoffs"]["blog"]
+    lines += ["", "## Blog queue remeasurement", ""]
+    if not blog["available"]:
+        lines.append(f"- UNAVAILABLE: {blog['reason']}")
+    else:
+        lines += [f"- Source window: {blog.get('source_window')}; statuses: {json.dumps(blog['status_counts'], ensure_ascii=False)}",
+                  "", "| cluster | status | decision | recheck |", "|---|---|---|---|"]
+        for row in blog["items"]:
+            lines.append(f"| {row['cluster']} | {row['status']} | {row['decision']} | {row['recheck_after'] or '—'} |")
+
+    geo = report["evidence_handoffs"]["geo"]
+    lines += ["", "## GEO measurement", ""]
+    if geo["available"]:
+        lines.append(f"- {geo['status']}; S2 {geo['s2_window']}: {geo['action']}")
+    else:
+        lines.append("- UNAVAILABLE: do not infer AI citations or manufacture a baseline.")
+
     lines += [
         "",
         "## Dispatch and learning",
@@ -175,16 +402,18 @@ def render_markdown(report):
         f"- New FIX task IDs: {', '.join(report['dispatched_task_ids']) if report['dispatched_task_ids'] else 'NONE (or already present)'}",
         f"- Recurred existing task IDs: {', '.join(report['recurred_task_ids']) if report['recurred_task_ids'] else 'NONE'}",
         f"- Suppressed duplicates: {len(report['suppressed_duplicates'])} (deduplication is recorded, not misreported as a write failure)",
-        f"- Learning candidates: {len(report['learning_candidates'])}",
-        "- Learning gate: baseline + change + online_verify + retest are all mandatory. No automatic prompt, permission or production rewrites are permitted.",
+        f"- Learning candidates: {len(report['learning_candidates'])}; SCALE-eligible: {len(report['learning']['scale_allowed_task_ids'])}",
+        "- Learning gate: baseline + change + production online_verify + retest are all mandatory. GSC movement alone is not a win/loss.",
+        "- FIX/MEASURE handoffs are proposals only. No automatic prompt, permission, canonical, redirect or production rewrites are permitted.",
         "",
         "## Measurement limits",
         "",
         "- GSC impressions are not market size; query/page/country aggregates are not interchangeable.",
+        "- Fresh xlsx inventory does not prove that the API plane is fresh.",
         "- No conversion ROI claim without GA4/008/order landing-page coverage.",
         "- No AI citation claim without fixed-engine probe answers and citation URLs.",
         "",
-        "Data sources: .hermes/logs/lane-runs.jsonl, .hermes/logs/lane-status.json, .hermes/logs/strategy-task-queue.json.",
+        "Data sources: .hermes/logs/lane-runs.jsonl, .hermes/logs/lane-status.json, .hermes/logs/strategy-task-queue.json, latest eligible anomaly/blog/GEO evidence listed above.",
     ]
     return "\n".join(lines) + "\n"
 
@@ -328,16 +557,32 @@ def main():
     old_candidates = read_jsonl(learning_path)
     merged = {c.get("candidate_id"): c for c in old_candidates + candidates if c.get("candidate_id")}
     write_text(learning_path, "".join(json.dumps(merged[k], ensure_ascii=False) + "\n" for k in sorted(merged)))
+
+    gsc_handoff = build_gsc_handoff(logs, review_day)
+    blog_handoff = build_blog_handoff(repo, review_day)
+    anomaly_for_geo = read_json(os.path.join(logs, gsc_handoff["source"]), {}) if gsc_handoff["available"] else {}
+    geo_handoff = build_geo_handoff(repo, review_day, anomaly_for_geo)
+    decision_by_id = {row.get("task_id"): row.get("decision") for row in decisions}
+    scale_allowed = [task.get("task_id") for task in tasks
+                     if decision_by_id.get(task.get("task_id")) == "SCALE"
+                     and complete_learning_evidence(task) and task.get("scale_evidence")]
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "period": args.period,
         "review_date": str(review_day),
         "window_start": str(window_start),
         "inputs": {"queue": os.path.relpath(queue_path, repo), "status": os.path.relpath(status_path, repo),
-                   "runs": os.path.relpath(runs_path, repo), "status_available": bool(status)},
+                   "runs": os.path.relpath(runs_path, repo), "status_available": bool(status),
+                   "anomaly_available": gsc_handoff["available"], "blog_available": blog_handoff["available"],
+                   "geo_available": geo_handoff["available"]},
         "execution": {"runs": len(window_runs), "verdicts": verdicts, "per_lane": per_lane,
                       "attention_lanes": [{k: v for k, v in row.items() if k != "lane"} for row in attention]},
         "task_decisions": decisions,
+        "evidence_handoffs": {"gsc": gsc_handoff, "blog": blog_handoff, "geo": geo_handoff},
+        "learning": {"required_fields": list(REQUIRED_LEARNING_FIELDS),
+                     "production_deploy_required": True, "scale_allowed_task_ids": scale_allowed,
+                     "proposal_only": True,
+                     "rule": "FIX/MEASURE evidence cannot become SCALE without baseline + change + online_verify + retest + scale_evidence"},
         "dispatched_task_ids": [t["task_id"] for t in new_tasks] if args.write_queue else [],
         "proposed_task_ids": [t["task_id"] for t in proposed],
         "recurred_task_ids": recurred_task_ids,
@@ -345,7 +590,8 @@ def main():
         "learning_candidates": candidates,
         "queue_write_enabled": bool(args.write_queue),
         "guardrails": ["no prompt self-rewrite", "no permission expansion", "no src writes", "no commit/push",
-                       "SCALE requires complete comparable evidence", "WAITING_K3 cannot be self-approved"],
+                       "SCALE requires complete comparable evidence", "WAITING_K3 cannot be self-approved",
+                       "no automatic canonical/redirect/article from a moving GSC window"],
     }
     json_path = os.path.join(logs, f"periodic-review-{args.period}-{review_day}.json")
     md_path = os.path.join(logs, f"periodic-review-{args.period}-{review_day}.md")

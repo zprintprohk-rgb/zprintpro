@@ -334,6 +334,88 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(report["learning_candidates"], [])
         self.assertEqual(report["task_decisions"][0]["decision"], "HOLD")
 
+    def test_periodic_missing_optional_evidence_is_explicit_and_nonfatal(self):
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": []}))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        result = subprocess.run([sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                                 "--repo", str(self.repo)], cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.json").read_text(encoding="utf-8"))
+        for plane in ("gsc", "blog", "geo"):
+            self.assertFalse(report["evidence_handoffs"][plane]["available"])
+
+    def test_periodic_anomaly_routes_ctr_to_fix_and_deep_words_to_measure(self):
+        anomaly = {
+            "date": DAY,
+            "data_status": "FRESH_XLSX / API_STALE",
+            "data_availability": {"xlsx_batch": {"date": DAY}, "api_pull": {"present": False}},
+            "kpi_xlsx_4windows": {"28d": {"window": "2026-10-04..2026-10-31"}},
+            "recovery": {"headline": "RECOVERY: 123.7%", "formula": "977 / 789.8"},
+            "money_words_23_xlsx_28d": {"rows": {
+                "食品包裝印刷": {"imp": 118, "clk": 0, "pos": 8.42},
+                "貼紙印刷": {"imp": 127, "clk": 0, "pos": 38.06}
+            }},
+            "tasks": [{"task_id": "GSC-20261101-O4", "next_check": "2026-11-06"},
+                      {"task_id": "GSC-20261101-O12", "next_check": "2026-11-20"}],
+            "candidate_tasks": [{"task_id": "C1", "target": "食品包裝印刷 page-1 zero click",
+                                 "owner": "ZP-weekly-meta", "gate": "SERP feature check first"}]
+        }
+        self.write(f".hermes/logs/gsc-daily-anomaly-{DAY}.json", json.dumps(anomaly, ensure_ascii=False))
+        self.write(".hermes/cron-prompts/blog-money-keyword-queue.json", json.dumps({
+            "source_window": "2026-10-04..2026-10-31", "items": [
+                {"cluster": "books-zh-hk", "status": "remeasure", "recheck_after": "2026-11-07"},
+                {"cluster": "catalog-en", "status": "blocked_waiting_k3"}
+            ]}, ensure_ascii=False))
+        self.write(f"docs/{DAY}-geo-probe-s1-completion.md", "S1 complete; citation URLs partial; S2 2026-11-20..24\n")
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": []}))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        result = subprocess.run([sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                                 "--repo", str(self.repo)], cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.json").read_text(encoding="utf-8"))
+        rows = {row["query"]: row for row in report["evidence_handoffs"]["gsc"]["items"]}
+        self.assertEqual(rows["食品包裝印刷"]["route"], "FIX")
+        self.assertIn("SERP", rows["食品包裝印刷"]["approval_gate"])
+        self.assertFalse(rows["食品包裝印刷"]["scale_allowed"])
+        self.assertEqual(rows["貼紙印刷"]["route"], "MEASURE")
+        self.assertEqual(report["evidence_handoffs"]["blog"]["items"][0]["decision"], "REMEASURE_NOT_DUE")
+        self.assertEqual(report["evidence_handoffs"]["geo"]["status"], "S1_COMPLETE_CITATION_URLS_PARTIAL")
+        self.assertEqual(report["learning"]["scale_allowed_task_ids"], [])
+
+    def test_periodic_undeployed_change_cannot_enter_learning_or_scale(self):
+        queue = {"tasks": [{
+            "task_id": "NOT-DEPLOYED", "status": "READY", "next_check": DAY,
+            "learning_evidence": {"baseline": "before", "change": "snippet",
+                                  "online_verify": {"deployed": False}, "retest": "after"},
+            "scale_evidence": "unverified claim"
+        }]}
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        result = subprocess.run([sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                                 "--repo", str(self.repo)], cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["learning_candidates"], [])
+        self.assertEqual(report["learning"]["scale_allowed_task_ids"], [])
+        self.assertEqual((self.repo / ".hermes/logs/learning-candidates.jsonl").read_text(encoding="utf-8"), "")
+
+    def test_periodic_same_input_replay_is_byte_idempotent_without_queue_write(self):
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": []}))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        command = [sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                   "--repo", str(self.repo)]
+        outputs = []
+        for _ in range(2):
+            result = subprocess.run(command, cwd=self.repo, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+            outputs.append(tuple((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.{ext}").read_bytes()
+                                 for ext in ("json", "md")))
+        self.assertEqual(outputs[0], outputs[1])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
