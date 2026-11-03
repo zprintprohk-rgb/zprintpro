@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-11-03T18:23:43.785Z",
+  "source": "GSC数据/money-kw-query-page-country-2026-10-31.csv (window 09-30..10-27, query×page×country)",
+  "grain_note": "与 28d xlsx 全国家基线不同 grain；份额与位次仅作承接归因参考",
+  "o6_data": {
+    "海報印刷": {
+      "total_imp": 567,
+      "total_clk": 1,
+      "url_count": 10,
+      "top_share": 37,
+      "urls": [
+        {
+          "url": "/zh-hk/blog/poster-printing-guide/",
+          "clk": 1,
+          "imp": 210,
+          "pos_weighted": 9.78,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/product/a2-posters/",
+          "clk": 0,
+          "imp": 93,
+          "pos_weighted": 37.26,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/category/posters/",
+          "clk": 0,
+          "imp": 64,
+          "pos_weighted": 61.72,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/blog/retail-shop-poster-printing-guide/",
+          "clk": 0,
+          "imp": 60,
+          "pos_weighted": 65.95,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/blog/poster-buying-guide/",
+          "clk": 0,
+          "imp": 55,
+          "pos_weighted": 65.75,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/",
+          "clk": 0,
+          "imp": 51,
+          "pos_weighted": 24.43,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/product/a1-posters/",
+          "clk": 0,
+          "imp": 23,
+          "pos_weighted": 24.83,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/product/art-posters/",
+          "clk": 0,
+          "imp": 6,
+          "pos_weighted": 33.83,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/blog/poster-printing-price-guide/",
+          "clk": 0,
+          "imp": 4,
+          "pos_weighted": 53,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/product/adhesive-posters/",
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 11,
+          "top_country": "hkg"
+        }
+      ]
+    },
+    "喜帖印刷": {
+      "total_imp": 15,
+      "total_clk": 0,
+      "url_count": 2,
+      "top_share": 73.3,
+      "urls": [
+        {
+          "url": "/zh-hk/product/wedding-thank-you-cards/",
+          "clk": 0,
+          "imp": 11,
+          "pos_weighted": 9.36,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/category/wedding-invitations/",
+          "clk": 0,
+          "imp": 4,
+          "pos_weighted": 34.75,
+          "top_country": "hkg"
+        }
+      ]
+    },
+    "利是封印刷": {
+      "total_imp": 69,
+      "total_clk": 1,
+      "url_count": 4,
+      "top_share": 75.4,
+      "urls": [
+        {
+          "url": "/zh-hk/category/red-packets/",
+          "clk": 1,
+          "imp": 52,
+          "pos_weighted": 22.33,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/blog/cny-2027-red-packet-printing-guide/",
+          "clk": 0,
+          "imp": 9,
+          "pos_weighted": 7.11,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/blog/wedding-red-packet-printing-guide/",
+          "clk": 0,
+          "imp": 7,
+          "pos_weighted": 5.86,
+          "top_country": "hkg"
+        },
+        {
+          "url": "/zh-hk/product/custom-red-packets/",
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 15,
+          "top_country": "hkg"
+        }
+      ]
+    }
+  }
+}
