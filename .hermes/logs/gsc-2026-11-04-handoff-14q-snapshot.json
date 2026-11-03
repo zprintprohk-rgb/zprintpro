@@ -1,0 +1,273 @@
+{
+  "generated_at": "2026-11-03T17:30:10.865Z",
+  "source_csv": "GSC数据/gsc-query-country-28d-end1103.csv (API, window 2026-10-06..2026-11-02, data day 11-02)",
+  "grain_note": "query×country 现值快照 — 与 28d xlsx 全国家基线不同 grain，只作 MEASURE/FIX 路由的当前态补充，不作同法对比",
+  "handoff_snapshot": {
+    "食品包裝印刷": {
+      "route": "FIX",
+      "total_imp_all_countries": 114,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 114,
+          "pos_weighted": 8.53,
+          "rows": 1
+        }
+      }
+    },
+    "small batch sticker printing": {
+      "route": "FIX",
+      "total_imp_all_countries": 30,
+      "countries": {
+        "usa": {
+          "clk": 0,
+          "imp": 29,
+          "pos_weighted": 5.83,
+          "rows": 1
+        },
+        "zaf": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 6,
+          "rows": 1
+        }
+      }
+    },
+    "small batch stickers": {
+      "route": "FIX",
+      "total_imp_all_countries": 20,
+      "countries": {
+        "deu": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 5,
+          "rows": 1
+        },
+        "gbr": {
+          "clk": 0,
+          "imp": 2,
+          "pos_weighted": 3,
+          "rows": 1
+        },
+        "jpn": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 5,
+          "rows": 1
+        },
+        "mex": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 8,
+          "rows": 1
+        },
+        "usa": {
+          "clk": 0,
+          "imp": 15,
+          "pos_weighted": 5.4,
+          "rows": 1
+        }
+      }
+    },
+    "卒アル販売": {
+      "route": "FIX",
+      "total_imp_all_countries": 16,
+      "countries": {
+        "jpn": {
+          "clk": 0,
+          "imp": 16,
+          "pos_weighted": 5,
+          "rows": 1
+        }
+      }
+    },
+    "saddle stitch booklet printing": {
+      "route": "FIX",
+      "total_imp_all_countries": 5,
+      "countries": {
+        "usa": {
+          "clk": 0,
+          "imp": 5,
+          "pos_weighted": 7.4,
+          "rows": 1
+        }
+      }
+    },
+    "コミケ 印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 163,
+      "countries": {
+        "jpn": {
+          "clk": 0,
+          "imp": 162,
+          "pos_weighted": 22.4,
+          "rows": 1
+        },
+        "pol": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 17,
+          "rows": 1
+        }
+      }
+    },
+    "貼紙印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 129,
+      "countries": {
+        "aut": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 7,
+          "rows": 1
+        },
+        "grc": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 38,
+          "rows": 1
+        },
+        "hkg": {
+          "clk": 0,
+          "imp": 123,
+          "pos_weighted": 37.85,
+          "rows": 1
+        },
+        "jpn": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 45,
+          "rows": 1
+        },
+        "nor": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 46,
+          "rows": 1
+        },
+        "phl": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 47,
+          "rows": 1
+        },
+        "usa": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 26,
+          "rows": 1
+        }
+      }
+    },
+    "宣傳單張": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 118,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 118,
+          "pos_weighted": 33.92,
+          "rows": 1
+        }
+      }
+    },
+    "月曆印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 115,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 115,
+          "pos_weighted": 25.92,
+          "rows": 1
+        }
+      }
+    },
+    "書刊印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 114,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 113,
+          "pos_weighted": 32.04,
+          "rows": 1
+        },
+        "usa": {
+          "clk": 0,
+          "imp": 1,
+          "pos_weighted": 7,
+          "rows": 1
+        }
+      }
+    },
+    "利是封印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 56,
+      "countries": {
+        "hkg": {
+          "clk": 1,
+          "imp": 56,
+          "pos_weighted": 24.07,
+          "rows": 1
+        }
+      }
+    },
+    "包裝盒印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 49,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 49,
+          "pos_weighted": 34.24,
+          "rows": 1
+        }
+      }
+    },
+    "教材 印刷製本": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 47,
+      "countries": {
+        "jpn": {
+          "clk": 0,
+          "imp": 47,
+          "pos_weighted": 29.98,
+          "rows": 1
+        }
+      }
+    },
+    "喜帖印刷": {
+      "route": "MEASURE",
+      "total_imp_all_countries": 11,
+      "countries": {
+        "hkg": {
+          "clk": 0,
+          "imp": 11,
+          "pos_weighted": 31.45,
+          "rows": 1
+        }
+      }
+    }
+  },
+  "live_snippets": [
+    {
+      "url": "https://zprintpro.com/ja/category/stickers/",
+      "status": 200,
+      "title": "シール印刷 10枚〜・オリジナルステッカー 防水/透明/ダイカット・2-4日発送 | ZprintPro",
+      "titleEquiv": 83,
+      "desc": "small batch ステッカー印刷・PVC シール・ダイカット 10 枚から、¥8〜。防水・透明・金箔ステッカーを小ロット対応、小売・飲食・EC ブランド向け。無料デザイン校正 4 時間、最短即日発送、日本全国 DHL 2-4 日配送、沖縄・北海道対応。30 秒 AI 無料見積もり、国際認証品質。",
+      "descLen": 151,
+      "h1": "ダイカットステッカー 防水印刷 — 防水 / 透明 / ダイカット / 商品ラベル"
+    },
+    {
+      "url": "https://zprintpro.com/en/category/books/",
+      "status": 200,
+      "title": "Saddle Stitch Booklet Printing from $1.84 | 10 MOQ + Free Proof | ZprintPro",
+      "titleEquiv": 75,
+      "desc": "Saddle stitch booklet printing from $1.84, 10 MOQ. Perfect bound / hardcover / catalogs. Free design proof, DHL 2-4 day USA delivery, free shipping $99+.",
+      "descLen": 153,
+      "h1": "Saddle Stitch Booklet Printing Free Shipping · 10 MOQ · Perfect Bound &amp; Hardcover · USA"
+    }
+  ]
+}
