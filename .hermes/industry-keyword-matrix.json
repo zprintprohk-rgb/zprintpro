@@ -1,4 +1,118 @@
 {
+  "gsc_feedback_2026_11_04": {
+    "date": "2026-11-04",
+    "type": "每日证据轮 (数据平面翻转: API FRESH 11-02 / xlsx STALE 10-31; 无 11-04 detector ⇒ 恢复 available:false; 页1零点击池扩至 16 行/632 展示; 海报家族 156 行/8 点击; blog 抢头系统性候选; 喜帖改判 intent 错配)",
+    "report": ".hermes/logs/2026-11-04-ZP-gsc-feedback.md",
+    "anomaly_json": ".hermes/logs/gsc-daily-anomaly-2026-11-04.json",
+    "run_type": "结果总线契约(-1) > 恢复模式 > 2026-11-03 证据分流块 > 大脑区; retry_queue 1 项 (11-02 FAILED) = ALREADY_DONE, 零重写; 新日新 target, key f9e73f25c028348a",
+    "files_consumed": [
+      "GSC数据/gsc-query-country-28d-end1103.csv (11-04 01:15 API, 1576 行 / 74 clk / 8332 imp, 窗 10-06..11-02)",
+      "GSC数据/gsc-query-country-28d-end1102.csv (窗 10-05..11-01, 1522 / 70 / 7776)",
+      "gsc-2026-11-04-taskj-third.json + gsc-2026-11-04-handoff-14q-snapshot.json",
+      "gsc-2026-11-04-o6-poster-attribution.json + gsc-2026-11-04-foil-redpacket-locale.json",
+      "gsc-cliff-2026-11-03.json (最后官方 123.7%)",
+      "gsc-daily-anomaly-2026-11-03.json (A/NEW/O 基线)",
+      "periodic-review-weekly-2026-11-03.json (runs=43, 14 handoffs)",
+      "GSC数据/index.json (11-03 21:30 重建, 253 文件)",
+      "lane-runs.jsonl (95 条) + lane-status.json (11-04 06:43)"
+    ],
+    "verdict": "OK · 执行完成轮 (API 面 FRESH / xlsx 面 STALE 92h / detector available:false; 零 src 写入; 零 title; 零队列状态翻转)",
+    "data_status": {
+      "api": "FRESH · 数据日 11-02 · ~44h @20:13 · 1576 行 / 74 clk / 8332 imp · 截断集, 非全站 KPI (A25)",
+      "xlsx": "STALE · 11-03 批 · 7d/28d/3mo 数据日 10-31 · ~92h · 24h 窗止 11-03 02:00 (~42h) · 无 11-04 导出 (A36)",
+      "detector": "available:false · 无 gsc-cliff-2026-11-04.json",
+      "index": "lastBuild 11-03 21:30 · 253 文件 · latestFreshData 11-03 · FRESH · 11-04 CSV 未入册 (A33)"
+    },
+    "api_adjacent_windows": {
+      "end1102": "2026-10-05..11-01 · 1522 行 / 70 clk / 7776 imp / CTR 0.900%",
+      "end1103": "2026-10-06..11-02 · 1576 行 / 74 clk / 8332 imp / CTR 0.888%",
+      "delta": "+4 clk (+5.7%) / +556 imp (+7.1%) / +54 行 / CTR -0.012pp",
+      "exactness": "27/28 天重叠 ⇒ 差值 = 11-02 当日 − 10-05 当日 (该导出粒度内算术恒等, 非估算); 不代表全站; 不与 xlsx 相减"
+    },
+    "page1_zero_click_pool": {
+      "rule": "query×country · clicks=0 · imp>=20 · pos<11 · 窗 10-06..11-02",
+      "totals": "16 行 / 632 展示 / 0 点击; 12 行 / 411 展示 在 23 词表外",
+      "top_rows": "食品包裝印刷 114@8.53 (23词内) / poster 印刷 75@10.95 / 食品印刷 62@7.90 / 小冊子印刷 43@10.74 / 大信封 36@3.94 / doujinshi printing 35@10.91 / 燙金利是封 jpn 33@1.00 / 包裝食品 裡印 31@9.39 / z print usa 31@8.90 / small batch sticker printing 29@5.83 / a1海報 twn 27@1.00 / 海報size 27@9.19",
+      "top5_rank_zero_click": "燙金利是封 jpn 1.00 / a1海報 twn 1.00 / 大信封 3.94 / 海報尺寸 4.85",
+      "gate": "只进候选池; 先录 SERP feature + 真实 snippet; 每页 1 变量; 禁止据池改 title/description"
+    },
+    "poster_family": {
+      "rows": "156 行 query×country, 仅 8 行有点击 (合计 8 clk)",
+      "head": "海報印刷 258/1/14.52 (CTR 0.39%) · 印海報 128/1/13.62 · poster 印刷 75/0/10.95 · 海報與印刷 53/0/12.02 · a2 poster usa 50/0/20.62",
+      "attribution": "blog/poster-printing-guide 37% @9.78 (210 imp, 唯一 1 clk); product/a2-posters 93 @37.26; category/posters 64 @61.72",
+      "reading": "覆盖不是问题, 摘要/意图选择才是; 不回应以新增长文"
+    },
+    "internal_split": {
+      "pattern": "blog 抢 head, 交易页深位 —— 至少 3 簇同型",
+      "poster": "blog 9.78 vs product 37.26 vs category 61.72",
+      "red_packet": "category 52@22.33/1clk vs blog 9@7.11 与 7@5.86",
+      "books": "blog 45.5% share @30.41 (11-03 C4)",
+      "wedding": "喜帖印刷 top = product/wedding-thank-you-cards @9.36 (11 imp) vs category/wedding-invitations @34.75 ⇒ intent 错配 (O10 改判)",
+      "action": "MEASURE / monthly 候选; 无 K3 拍板不 canonical/301/合并/改内链"
+    },
+    "locale_suspects": {
+      "燙金利是封_jpn": "33 imp / 0 clk / pos 1.00; 最可能承接 /ja/product/foil-red-packets/ (探针 200, ja title 箔押しポチ袋印刷, 当量 55); 归属为推断非 join (A35)",
+      "a1海報_twn": "27 imp / 0 clk / pos 1.00; 承接页未定",
+      "discipline": "探针 hreflang:[] 疑为 9/18 大小写假阴性, 不据此判 hreflang 缺失; 不改 title"
+    },
+    "recovery": {
+      "available": false,
+      "reason": "无 gsc-cliff-2026-11-04.json + 无 11-04 24h 导出; API 无 24h 维度与 pre-cliff 分母 (A26)",
+      "last_official": "123.7% = 977 / 789.8 (full-country, 28d 止 10-31, 24h 窗止 11-03 02:00)",
+      "series": "10-29 105.8% → 10-30 117.7% → 11-03 123.7% (3 点, 非连续 3 日; 今日无新点)",
+      "guards": "167.0% (585.2 固定基线) 不得当恢复系数; 129.5% (754.5 旧分母) 不得与 123.7% 同线; 10-12..10-28 三站和点不并入"
+    },
+    "anomalies_update": {
+      "A1": "PLANES_FLIPPED: API FRESH 44h / xlsx STALE 92h",
+      "A2": "REOPENED (24h 窗仍止 11-03 02:00, ~42h)",
+      "A19": "REOPENED (3mo 仍 11-03 批)",
+      "A20": "REOPENED (无 11-04 四档导出)",
+      "A21": "STABLE_TODAY (11-04 两份同侪报告均 available:false + 123.7% last official)",
+      "A27b": "RESOLVED 11-03 / 以 A33 重开",
+      "A28": "OPEN_DAY4 (monthly 11-01 MISSING, 2147946720)",
+      "A30": "UNCHANGED (无 detector)",
+      "A31": "UNCHANGED (双动态分母)",
+      "A32": "RESOLVED_2026_11_04 (end1103 拉取 + 任务J 三测)",
+      "A33": "NEW (11-04 CSV 未入册)",
+      "A34": "NEW (页1零点击池 16 行/632)",
+      "A35": "NEW (locale/country 错配嫌疑)",
+      "A36": "NEW (xlsx 未补 11-04, K3 导出)",
+      "A37": "NEW_INFRA (k3 09:15 git push failed, ssh-agent 停用)",
+      "A38": "NEW (ja 利是封页正文中文残留 + 简体「质」; 客户可见 i18n 污染; 交内容车道)",
+      "NEW-1": "HOLD (貼紙 37.85 / 38.06 vs <=25)",
+      "NEW-3": "教材 29.98 API / 28.67 xlsx (仍深位)",
+      "NEW-6": "扩池 16 行 / 632",
+      "NEW-8": "喜帖改判 intent 错配",
+      "NEW-9": "blog 抢头系统性候选",
+      "NEW-10": "包裝盒 三窗两法同向微退",
+      "NEW-11": "食品包裝 114@8.53 (API)",
+      "NEW-12": "z print usa 31@8.90 (品牌变体, 不做全站品牌占比)"
+    },
+    "tasks": {
+      "O1": "MANUAL_PULL_ONLY (01:15 人工/同侪, 非自动化)",
+      "O2": "WAITING_K3 (恢复口径)",
+      "O3": "DONE_2026_11_04 (8/8 行; 貼紙 -1.54; 包裝盒簇 +0.73..+1.13)",
+      "O4": "SCHEDULED 11-06 (池 5词/196 → 16行/632)",
+      "O5": "DELIVERED_CANDIDATES",
+      "O6": "EVIDENCE_COMPLETE / 决策 11-06",
+      "O7": "SCHEDULED 11-06 (25.30 xlsx / 25.92 API)",
+      "O8": "VERDICT HOLD (11-07 复测)",
+      "O9": "OPEN (monthly 缺, A28)",
+      "O10": "REFINED_INTENT_MISMATCH",
+      "O11": "SCHEDULED 11-06 (类目 52@22.33; blog 7.11/5.86)",
+      "O12": "DONE_BY_PEER_PARTIAL (S2 11-20..24)",
+      "queue_write": "strategy-task-queue.json 零写入; 未翻转任何 SCHEDULED/WAITING_K3"
+    },
+    "candidate_tasks": ["GSC-20261104-C1 页1零点击 triage", "GSC-20261104-C2 top-5 零点击 4 行", "GSC-20261104-C3 海报家族 + blog 抢头", "GSC-20261104-C4 数据面 xlsx + --end 2026-11-03 + detector"],
+    "next": [
+      "2026-11-05 四档 xlsx 补导 + API --end 2026-11-03 (勿重拉 end 11-02) + detector",
+      "2026-11-06 weekly-meta CTR 批 (食品包裝 + 4 top-5 行) + O6/O7/O10/O11",
+      "2026-11-07 貼紙 + blog 复测",
+      "2026-11-10 月曆 copy 修复 7 天效果",
+      "2026-11-20 GEO S2 引用 URL",
+      "2026-12-01 monthly 自然触发 (A28)"
+    ]
+  },
   "gsc_feedback_2026_11_03": {
     "date": "2026-11-03",
     "type": "每日证据轮 (K3 11-03 四档 xlsx 全新鲜; A2 冻结链解除; A19 3mo 解除; 恢复链第 3 个全国家 fresh 点 123.7%; 双方法方向校验; C4 具名 URL 交接)",

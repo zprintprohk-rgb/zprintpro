@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-04",
+  "run_started_at": "2026-11-04 20:13:02 (Asia/Shanghai, scheduled trigger)",
+  "verdict": "OK",
+  "verdict_scope": "Lane execution complete for 2026-11-04: consumed the same-day API end1103 pull and the same-day peer probes, produced this anomaly ledger + FIX/MEASURE queue inputs + report. NOT a claim that the KPI panel is fresh (no 11-04 xlsx export), NOT a recovery reading (no gsc-cliff-2026-11-04.json), NOT a claim that any page was fixed.",
+  "data_availability": {
+    "api_pull": {
+      "present": true,
+      "files": [
+        "GSC数据/gsc-query-country-28d-end1103.csv"
+      ],
+      "window": "2026-10-06..2026-11-02 (28d ending 11-02, query x country)",
+      "data_day": "2026-11-02",
+      "age_hours_at_2013": 44,
+      "rows": 1576,
+      "clicks": 74,
+      "impressions": 8332,
+      "pulled_by": "same-day analyst session 2026-11-04 01:15 (python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-02); this lane did not re-run it and did not modify the file",
+      "prior_file": "GSC数据/gsc-query-country-28d-end1102.csv (window 2026-10-05..2026-11-01, data day 11-01, 1522 rows / 70 clk / 7776 imp)",
+      "coverage_note": "query x country export is a truncated slice (on the 11-02 batch it covered 31.4% of date-page impressions and 14.4% of clicks). No same-batch date-page pull exists for end1103, so the coverage ratio cannot be recomputed today. Do NOT use these totals as site-wide KPI and do NOT subtract them from the xlsx 28d panel (A24/A25)."
+    },
+    "xlsx_batch": {
+      "present_new_for_1104": false,
+      "latest_batch": "2026-11-03",
+      "files": [
+        "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (1).xlsx",
+        "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (2).xlsx",
+        "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+        "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx"
+      ],
+      "data_day_7d_28d_3mo": "2026-10-31",
+      "age_hours_at_2013": 92,
+      "status": "STALE (>72h) for 7d/28d/3mo",
+      "24h_window": "2026-11-02T03:00..2026-11-03T02:00",
+      "24h_age_hours_at_2013": 42
+    },
+    "detector": {
+      "available": false,
+      "missing_file": ".hermes/logs/gsc-cliff-2026-11-04.json",
+      "last_file": ".hermes/logs/gsc-cliff-2026-11-03.json",
+      "last_official_recovery_pct": 123.7,
+      "note": "Recovery coefficient for 2026-11-04 is NOT computable: no new 24h export and no detector run (pwsh/python blocked in this lane sandbox; not retried). The 123.7% value is carried as the last official reading, never presented as today's value."
+    },
+    "index_json": {
+      "lastBuild": "2026-11-03T21:30:00+08:00",
+      "totalFiles": 253,
+      "latestFreshData": "2026-11-03",
+      "stalenessDays": 0,
+      "freshnessStatus": "FRESH",
+      "filesByDate_2026_11_03": 4,
+      "gap": "filesByDate has no 2026-11-04 key and the 11-04-created gsc-query-country-28d-end1103.csv is not registered (A33). Gate #9 still reads FRESH by export date; the inventory is one file behind."
+    },
+    "periodic_review_weekly": {
+      "available": true,
+      "files": [
+        ".hermes/logs/periodic-review-weekly-2026-11-03.json",
+        ".hermes/logs/periodic-review-weekly-2026-11-03.md"
+      ],
+      "runs": 43,
+      "verdicts": "OK 32 / STALE 4 / FAILED 2 / BLOCKED 1 / PENDING 4",
+      "attention_lanes": "ZP-gsc-feedback SCHEDULER_FAILED, ZP-monthly-matrix MISSING, ZP-k3-review SCHEDULER_FAILED",
+      "attention_correction": "The ZP-gsc-feedback and ZP-k3-review SCHEDULER_FAILED items were built from the 06:43 lane-status snapshot and are superseded: gsc 11-03 20:25 dsh_exit=0, k3 11-03 07:16 dsh_exit=0, and the 11-04 01:1x Task Scheduler read shows LastTaskResult=0 for gsc/k3/daily. Only ZP-monthly-matrix (2147946720) survives.",
+      "gsc_handoffs": "14 handoffs from 11-03 (5 FIX PROPOSE_ONLY / 9 MEASURE PROPOSE_ONLY), all learning_evidence_complete=false and scale_allowed=false. Not self-approved today."
+    },
+    "evidence_handoffs": {
+      "available": false,
+      "note": "No .hermes/**/evidence_handoffs* file exists in the repo. The 14-word handoff is carried by .hermes/logs/gsc-2026-11-04-handoff-14q-snapshot.json (same API grain)."
+    },
+    "peer_artifacts_consumed_readonly": [
+      ".hermes/logs/gsc-2026-11-04-taskj-third.json (task-J hkg third test, 8/8 rows)",
+      ".hermes/logs/gsc-2026-11-04-handoff-14q-snapshot.json (14 words, query x country current values)",
+      ".hermes/logs/gsc-2026-11-04-o6-poster-attribution.json (poster / wedding / red-packet URL attribution)",
+      ".hermes/logs/gsc-2026-11-04-o6-live-titles.json",
+      ".hermes/logs/gsc-2026-11-04-j1-live-probe.json",
+      ".hermes/logs/gsc-2026-11-04-e2-live-probe.json",
+      ".hermes/logs/gsc-2026-11-04-foil-redpacket-locale.json (ja + zh-hk foil red packet page probe)",
+      ".hermes/logs/2026-11-04-analyst-taskj-third-and-verdicts.md",
+      ".hermes/logs/2026-11-04-attention-coverage-audit.md",
+      ".hermes/logs/2026-11-04-nengajo-break-zero-verification.md",
+      ".hermes/logs/2026-11-04-00-a2-probe.md",
+      ".hermes/logs/2026-11-04-ZP-daily-content.md",
+      ".hermes/logs/2026-11-04-ZP-k3-review.md"
+    ]
+  },
+  "api_kpi_28d_adjacent_windows": {
+    "caliber": "same script, same dimensions (query x country), 28-day windows offset by one day; 27 of 28 days overlap",
+    "end1102": {"window": "2026-10-05..2026-11-01", "rows": 1522, "clicks": 70, "impressions": 7776, "ctr_pct": 0.9},
+    "end1103": {"window": "2026-10-06..2026-11-02", "rows": 1576, "clicks": 74, "impressions": 8332, "ctr_pct": 0.888},
+    "delta": {"clicks": 4, "clicks_pct": 5.7, "impressions": 556, "impressions_pct": 7.1, "rows": 54, "ctr_pp": -0.012},
+    "exactness_note": "Because the two windows differ by exactly one dropped day (10-05) and one added day (11-02), the delta equals value(11-02) minus value(10-05) inside this export. It is arithmetically exact for this grain, not an estimate. It says nothing about site-wide totals (truncated export) and nothing about position (no weighted mean computed this run).",
+    "no_mixing": "Not subtracted from, nor averaged with, the xlsx 28d panel (504 clicks / 22114 imp / 2.28% / pos 14.03)."
+  },
+  "page1_zero_click_pool_api": {
+    "rule": "query x country, clicks = 0, impressions >= 20, position < 11, window 2026-10-06..2026-11-02",
+    "totals": {"rows": 16, "impressions": 632, "clicks": 0, "new_rows_vs_23_word_pool": 12, "new_rows_impressions": 411},
+    "why_new": "The 11-03 pool was limited to the 23 money words from the xlsx export (5 rows / 196 imp). This scan runs on the fresh API export and therefore surfaces query variants that are not in the 23-word list.",
+    "rows": [
+      {"query": "食品包裝印刷", "country": "hkg", "imp": 114, "clk": 0, "pos": 8.53, "family": "food_packaging", "in_23_words": true, "note": "NEW-11 carried; largest page-1 hole in the 23-word list"},
+      {"query": "poster 印刷", "country": "hkg", "imp": 75, "clk": 0, "pos": 10.95, "family": "poster", "in_23_words": false, "note": "mixed-language variant; page-1 bottom"},
+      {"query": "食品印刷", "country": "hkg", "imp": 62, "clk": 0, "pos": 7.90, "family": "food_packaging", "in_23_words": false, "note": "food packaging family variant"},
+      {"query": "小冊子印刷", "country": "hkg", "imp": 43, "clk": 0, "pos": 10.74, "family": "booklet", "in_23_words": true, "note": "in the 23-word list; also listed as striking distance on 11-03"},
+      {"query": "大信封", "country": "hkg", "imp": 36, "clk": 0, "pos": 3.94, "family": "envelope", "in_23_words": false, "note": "top-5 zero-click; long-running R2 word (pos 2.16 / 89 imp / 0 clk on 9/2)"},
+      {"query": "doujinshi printing", "country": "usa", "imp": 35, "clk": 0, "pos": 10.91, "family": "books", "in_23_words": true, "note": "carried"},
+      {"query": "燙金利是封", "country": "jpn", "imp": 33, "clk": 0, "pos": 1.0, "family": "red_packet", "in_23_words": false, "note": "rank 1 in Japan with zero clicks; locale-mismatch suspect (A35)"},
+      {"query": "包裝食品 裡印", "country": "hkg", "imp": 31, "clk": 0, "pos": 9.39, "family": "food_packaging", "in_23_words": false, "note": "odd long-tail spelling; needs human read before any use"},
+      {"query": "z print", "country": "usa", "imp": 31, "clk": 0, "pos": 8.90, "family": "brand_variant", "in_23_words": false, "note": "brand-ish variant, not a money word; brand entity / snippet observation only"},
+      {"query": "small batch sticker printing", "country": "usa", "imp": 29, "clk": 0, "pos": 5.83, "family": "stickers", "in_23_words": true, "note": "carried; MOQ hook hypothesis already scheduled 11-06/11-07"},
+      {"query": "a1海報", "country": "twn", "imp": 27, "clk": 0, "pos": 1.0, "family": "poster", "in_23_words": false, "note": "rank 1 in Taiwan with zero clicks; market/locale suspect (A35)"},
+      {"query": "海報size", "country": "hkg", "imp": 27, "clk": 0, "pos": 9.19, "family": "poster", "in_23_words": false, "note": "size-intent variant"},
+      {"query": "邊度有紙袋買", "country": "hkg", "imp": 25, "clk": 0, "pos": 7.88, "family": "paper_bag", "in_23_words": false, "note": "question-form query (where to buy paper bags)"},
+      {"query": "即日急件", "country": "hkg", "imp": 24, "clk": 0, "pos": 7.83, "family": "rush", "in_23_words": false, "note": "rush family variant"},
+      {"query": "海報印刷即日", "country": "hkg", "imp": 20, "clk": 0, "pos": 9.55, "family": "poster", "in_23_words": false, "note": "same-day intent variant"},
+      {"query": "海報尺寸", "country": "hkg", "imp": 20, "clk": 0, "pos": 4.85, "family": "poster", "in_23_words": false, "note": "top-5 zero-click; size intent"}
+    ],
+    "top5_rank_zero_click": [
+      {"query": "燙金利是封", "country": "jpn", "imp": 33, "pos": 1.0},
+      {"query": "a1海報", "country": "twn", "imp": 27, "pos": 1.0},
+      {"query": "大信封", "country": "hkg", "imp": 36, "pos": 3.94},
+      {"query": "海報尺寸", "country": "hkg", "imp": 20, "pos": 4.85}
+    ],
+    "caveats": [
+      "A zero-click row is a candidate, not a diagnosis: SERP features, local pack, image packs, AI overviews and pure navigational intent can absorb clicks.",
+      "Position is the export's average position; it is not a SERP-feature measurement.",
+      "Do not rewrite title/description from this table. The gate is: real SERP feature record + one snippet variable + re-measure date.",
+      "Rows with imp < 20 are excluded by the rule; small-sample rows are not promoted."
+    ]
+  },
+  "poster_query_family_scan": {
+    "method": "grep of the end1103 CSV for 海報|poster, row count and click count read from the matched lines (not a sum of impressions; partial sums are deliberately not published)",
+    "query_country_rows": 156,
+    "rows_with_any_click": 8,
+    "clicks_in_family": 8,
+    "head_rows": [
+      {"query": "海報印刷", "country": "hkg", "imp": 258, "clk": 1, "pos": 14.52},
+      {"query": "印海報", "country": "hkg", "imp": 128, "clk": 1, "pos": 13.62},
+      {"query": "poster 印刷", "country": "hkg", "imp": 75, "clk": 0, "pos": 10.95},
+      {"query": "海報與印刷", "country": "hkg", "imp": 53, "clk": 0, "pos": 12.02},
+      {"query": "海報", "country": "hkg", "imp": 40, "clk": 0, "pos": 18.23},
+      {"query": "a2 poster", "country": "usa", "imp": 50, "clk": 0, "pos": 20.62},
+      {"query": "海報size", "country": "hkg", "imp": 27, "clk": 0, "pos": 9.19},
+      {"query": "海報印刷即日", "country": "hkg", "imp": 22, "clk": 0, "pos": 9.55},
+      {"query": "室內海報", "country": "hkg", "imp": 21, "clk": 0, "pos": 17.86},
+      {"query": "海報尺寸", "country": "hkg", "imp": 20, "clk": 0, "pos": 4.85}
+    ],
+    "reading": "Coverage is not the poster problem: the site appears for 150+ poster query variants and holds page-1 positions for several of them, yet 148 of 156 rows produce zero clicks. The head term converts at 0.39% (1/258) and the click-bearing variants are almost all transactional short forms (印海報 / 海報印刷一張 / 海報紙質). This is a snippet/intent-selection problem, not a coverage problem.",
+    "link_to_o6": "Same-day URL attribution (gsc-2026-11-04-o6-poster-attribution.json) shows /zh-hk/blog/poster-printing-guide/ holding 37% share at pos 9.78 (210 imp, the single click), while /zh-hk/product/a2-posters/ sits at pos 37.26 (93 imp) and /zh-hk/category/posters/ at pos 61.72 (64 imp). Blog takes the head, the trade pages are deep.",
+    "action": "MEASURE only. No canonical, no redirect, no page rewrite. O6 decision stays 2026-11-06; this scan supplies the query-side evidence for it."
+  },
+  "internal_split_intelligence": {
+    "source": ".hermes/logs/gsc-2026-11-04-o6-poster-attribution.json (query x page x country, window 2026-09-30..2026-10-27)",
+    "pattern": "blog page outranks the commercial page for the head term in at least 3 clusters",
+    "cases": [
+      {"cluster": "海報印刷", "blog_url": "/zh-hk/blog/poster-printing-guide/", "blog_pos": 9.78, "blog_share_pct": 37, "trade_url": "/zh-hk/product/a2-posters/", "trade_pos": 37.26, "note": "blog holds the only click"},
+      {"cluster": "利是封印刷", "blog_url": "/zh-hk/blog/cny-2027-red-packet-printing-guide/", "blog_pos": 7.11, "blog_share_pct": null, "trade_url": "/zh-hk/category/red-packets/", "trade_pos": 22.33, "note": "category has 52 imp / 1 clk; the wedding red-packet blog is at 5.86"},
+      {"cluster": "書刊印刷", "blog_url": "/zh-hk/blog/book-buying-guide/", "blog_pos": 30.41, "blog_share_pct": 45.5, "trade_url": null, "trade_pos": null, "note": "from 11-03 C4; trade page position not measured"}
+    ],
+    "wedding_intent_mismatch": {
+      "query": "喜帖印刷",
+      "top_url": "/zh-hk/product/wedding-thank-you-cards/",
+      "top_pos": 9.36,
+      "top_imp": 11,
+      "second_url": "/zh-hk/category/wedding-invitations/",
+      "second_pos": 34.75,
+      "reading": "The head query is being answered by a thank-you-card product, not by the wedding invitation category. Position 9.36 with 11 impressions and 0 clicks is consistent with an intent mismatch (and/or SERP feature), not only with an index problem. This sharpens O10 from 'index + landing check' to 'intent-to-URL check first'."
+    },
+    "action": "MEASURE / hand to monthly-matrix as candidate evidence; no structural change without K3."
+  },
+  "locale_country_suspects": [
+    {
+      "query": "燙金利是封",
+      "country": "jpn",
+      "imp": 33,
+      "clk": 0,
+      "pos": 1.0,
+      "probable_url": "/ja/product/foil-red-packets/",
+      "evidence": "same-day probe gsc-2026-11-04-foil-redpacket-locale.json: the ja page exists (200) with title 箔押しポチ袋印刷 | 12色 100個から HK$1.10起 | (brand) and titleEquiv 55; the zh-hk page exists with title 燙金利是封印刷 ... titleEquiv 56",
+      "attribution_status": "INFERRED, NOT JOINED: no query x page pull exists for the 10-06..11-02 window, so the URL is the most probable carrier, not a proven one",
+      "hypothesis": "A Japanese-localized page ranks #1 in Japan for a Chinese-language query. Japanese searchers using Chinese characters may be a different audience than the ja page's snippet promises, which would explain 33 impressions at rank 1 with zero clicks. Alternative explanation: SERP feature absorption.",
+      "probe_discipline_note": "The same probe reports hreflang: [] for both pages. That is very likely the known 9/18 false-negative pattern (Next.js renders hrefLang camelCase; the probe matches lowercase). This report does NOT treat hreflang as missing.",
+      "action": "MEASURE. Request a query x page x country pull for this query before any snippet change. No title change (frozen batch)."
+    },
+    {
+      "query": "a1海報",
+      "country": "twn",
+      "imp": 27,
+      "clk": 0,
+      "pos": 1.0,
+      "probable_url": "not determined",
+      "evidence": "query x country row only; no page-level pull for this window and no Taiwan-market probe today",
+      "hypothesis": "Traditional-Chinese query ranking #1 in Taiwan with zero clicks: possible SERP feature absorption or intent mismatch (size lookup vs purchase)",
+      "action": "MEASURE. Do not touch pages; add to the 11-06 triage list only if a page-level pull confirms the carrier."
+    }
+  ],
+  "recovery": {
+    "available": false,
+    "reason": "no gsc-cliff-2026-11-04.json and no new 24h xlsx export; the 24h window is still the 11-03 one (ends 11-03 02:00, ~42h old)",
+    "last_official": {"pct": 123.7, "formula": "977 / 789.8", "field": "recovery_ratio_vs_mean28_dynamic", "caliber": "full-country", "source": ".hermes/logs/gsc-cliff-2026-11-03.json"},
+    "full_country_series": [
+      {"date": "2026-10-29", "imps": 793, "mean28": 749.2, "ratio_pct": 105.8},
+      {"date": "2026-10-30", "imps": 888, "mean28": 754.5, "ratio_pct": 117.7},
+      {"date": "2026-11-03", "imps": 977, "mean28": 789.8, "ratio_pct": 123.7}
+    ],
+    "streak": "Still 3 fresh points, not 3 consecutive days. No new point today, so the re-evaluation trigger is unchanged (NOT met).",
+    "caliber_guard": "Do not join the 10-12..10-28 three-site-sum points to this curve. Do not substitute 167.0% (fixed pre-cliff) or 129.5% (older dynamic denominator) as the headline.",
+    "metric_plane_note": "API freshness does not restore the recovery metric: the API export has no 24h dimension and no pre-cliff denominator. A26 stays open; O2 (which caliber is SSoT) stays WAITING_K3."
+  },
+  "anomalies": [
+    {"id": "A1", "name": "DATA_STALE", "status": "PLANES_FLIPPED_API_FRESH_XLSX_STALE", "severity": "P1", "note": "API plane FRESH: data day 11-02, ~44h at 20:13. xlsx plane STALE: 7d/28d/3mo data day 10-31, ~92h > 72h, no 11-04 export. This is the mirror image of 11-03. The two planes are reported separately and never merged."},
+    {"id": "A2", "name": "FROZEN_24H_CHAIN", "status": "REOPENED_2026_11_04", "severity": "P1", "note": "No 11-04 24h export: the last 24h window still ends 2026-11-03 02:00 (~42h). 977/23/2.35%/15.93 remains the last reading. Reopened as a stale-reading condition, not as a data error."},
+    {"id": "A19", "name": "3MO_NOT_REFRESHED", "status": "REOPENED_2026_11_04", "severity": "P2", "note": "3mo file is still the 11-03 batch (data day 10-31, ~92h). Resolved on 11-03, reopened with the xlsx staleness."},
+    {"id": "A20", "name": "NO_FRESH_EXPORT", "status": "REOPENED_2026_11_04", "severity": "P2", "note": "No four-window export dated 2026-11-04 exists. Owner: K3 manual export."},
+    {"id": "A21", "name": "CALIBER_REGRESSION_CROSS_LANE", "status": "STABLE_TODAY", "severity": "P2", "note": "Both 11-04 peer reports (k3-review, daily-content) use RECOVERY: available:false with 123.7% as the last official value. No fixed-caliber or stale-denominator headline appeared today."},
+    {"id": "A24", "name": "API_VS_XLSX_METHOD_SPLIT", "status": "DISCIPLINE_MAINTAINED", "severity": "P2", "note": "API adjacent-window delta and xlsx 28d panel are shown in separate blocks; no subtraction, no averaged position."},
+    {"id": "A25", "name": "COUNTRY_PULL_COVERAGE", "status": "CANNOT_RECOMPUTE_TODAY", "severity": "P2", "note": "No same-batch date-page pull for end1103, so the query x country coverage ratio is unknown for today's export. The 11-02 ratio (31.4% imps / 14.4% clicks) must not be quoted as today's."},
+    {"id": "A26", "name": "RECOVERY_METRIC_NOT_API_COMPUTABLE", "status": "OPEN_PLANE_LIMIT", "severity": "P1", "note": "API recovery is structurally impossible: no 24h dimension and no pre-cliff denominator. Only an xlsx 24h + same-batch 28d can produce the full-country dynamic ratio."},
+    {"id": "A27b", "name": "INDEX_INVENTORY_LAG", "status": "RESOLVED_1103_REOPENED_AS_A33", "severity": "P3", "note": "The 11-03 21:30 rebuild fixed the 11-03 xlsx inventory (totalFiles 253, filesByDate 2026-11-03 = 4, latestFreshData 11-03). It predates the 11-04 API CSV, so a new lag item is opened as A33."},
+    {"id": "A28", "name": "MONTHLY_REVIEW_DUE_NO_LANE_REPORT", "status": "OPEN_DAY4", "severity": "P1", "note": "ZP-monthly-matrix 2026-11-01 MISSING; scheduler LastTaskResult=2147946720 (0x800710E0); next natural trigger 12-01. The monthly review is also the only consumer of O5/O9/O10/O11 structural candidates, so those stay un-adjudicated. Owner: K3-admin."},
+    {"id": "A30", "name": "DETECTOR_SITE_LEVEL_DUPLICATED_AGGREGATE", "status": "UNCHANGED", "severity": "P2", "note": "No detector run today. The last detector file still carries byte-identical hk/jp/us blocks (aggregate fallback). Do not read sites.hk as Hong Kong."},
+    {"id": "A31", "name": "DUAL_DYNAMIC_DENOMINATOR", "status": "UNCHANGED", "severity": "P2", "note": "789.8 (28d ending 10-31 -> 123.7%) and 754.5 (28d ending 10-27 -> 129.5%) both remain valid for their own windows; never mix in one line."},
+    {"id": "A32", "name": "API_PULL_NOT_RUN_1103", "status": "RESOLVED_2026_11_04", "severity": "P1", "note": "The end1103 pull landed at 01:15 (1576 rows, data day 11-02) after the oauth2 connectivity check returned 404-through-proxy (= reachable). Task-J third test ran on it. This closes the 11-03 coverage gap."},
+    {"id": "A33", "name": "INDEX_LAG_1104_API_CSV", "status": "NEW", "severity": "P3", "note": "index.json lastBuild 2026-11-03 21:30 has no 2026-11-04 key; gsc-query-country-28d-end1103.csv (created 11-04 01:15) is not registered. Gate #9 still reads FRESH by export date; inventory is one file behind. Owner: rebuild-gsc-index (shell blocked here)."},
+    {"id": "A34", "name": "PAGE1_ZERO_CLICK_POOL_EXPANDED", "status": "NEW", "severity": "P2", "note": "Rule-based scan of the fresh API export (pos < 11, imp >= 20, 0 clicks) finds 16 rows / 632 imp / 0 clk, of which 12 rows / 411 imp are outside the 23-word list. Includes four top-5-rank zero-click rows. Candidate pool only; SERP feature check is the gate."},
+    {"id": "A35", "name": "LOCALE_COUNTRY_MISMATCH_SUSPECT", "status": "NEW", "severity": "P2", "note": "燙金利是封 ranks #1 in jpn (33 imp, 0 clk) and a1海報 ranks #1 in twn (27 imp, 0 clk). For the red-packet query the probable carrier is /ja/product/foil-red-packets/ (probed today, ja title present). Attribution is inferred, not joined. MEASURE only."},
+    {"id": "A36", "name": "XLSX_BATCH_NOT_REFRESHED_1104", "status": "NEW", "severity": "P1", "note": "No 2026-11-04 four-window export. 7d/28d/3mo data day 10-31 (~92h at 20:13) and the 24h window ends 11-03 02:00 (~42h). Consequence: no KPI four-metric update and no recovery reading today. Owner: K3 manual export."},
+    {"id": "A37", "name": "GIT_SSH_INTERMITTENT_PUSH_FAILURE", "status": "NEW_INFRA", "severity": "P2", "note": "ZP-k3-review 09:15 bus record: dsh_exit=0 / wrapper_exit=5 / 'git push failed'; its report exists and files=[] . Same-day daily-content diagnosis: ssh-agent service Stopped/Disabled, intermittent publickey failure, mitigated with GIT_SSH_COMMAND pointing at id_ed25519. Affects every lane's delivery, including this one (host wrapper). Owner: K3-admin (enable ssh-agent) or wrapper env injection."},
+    {"id": "A38", "name": "JA_PAGE_ZH_FRAGMENTS", "status": "NEW_CUSTOMER_VISIBLE", "severity": "P2", "note": "Live fetch of https://zprintpro.com/ja/product/foil-red-packets/ (2026-11-04, HTTP 200) shows untranslated Chinese blocks inside the Japanese product page: spec bullets 【120g–150g紅色紙張】喜慶質感，挺度適中 / 【三色燙金】金／銀／玫瑰金 / 【免費刀模】 / 【燙金定位】±0.3mm / 【節慶檔期】農曆新年前3週, plus table header 適用場景, cell 独特的质感 (simplified 质), and Chinese forms 海德堡 4 色機 / 寫真 / 精確 where the same page elsewhere uses ハイデルベルグ / 写真. This is a plausible mechanism for the jpn 燙金利是封 ranking (A35): the ja page can match a Chinese query precisely because it still contains Chinese text. Customer-visible i18n defect, but the fix belongs to a content lane, not this one."},
+    {"id": "NEW-1", "name": "STICKER_LOCKED_WORD_DEEP", "status": "HOLD_VERDICT_2026_11_04", "severity": "P1", "note": "貼紙印刷 37.85 (API third test, -1.54) / 38.06 (xlsx 28d). Both directions positive, both far above the O8 target of <=25. 14-day verdict = HOLD: no title change, no new long-form sticker page; remeasure 11-07 via blog-deepfix."},
+    {"id": "NEW-2", "name": "CALENDAR_MIXED_SIGNAL", "status": "WATCH", "severity": "P2", "note": "月曆印刷 115 imp / 0 clk / 25.92 (API). 24h xlsx row had 10.9. Copy fix c0552853 measurement stays 11-10."},
+    {"id": "NEW-3", "name": "JA_TEXTBOOK_WORSENING", "status": "CONFIRMED_TWO_METHODS", "severity": "P1", "note": "教材 印刷製本 jpn 47 imp / 0 clk / 29.98 (API end1103) vs 28.67 (xlsx 28d) - still deep, direction unchanged. The prior API pull used a different window, so no cross-pull delta is asserted today. 教科書 印刷 remains flagged at 47.50 (50 imp). Monthly diagnosis still missing (A28)."},
+    {"id": "NEW-4", "name": "POSTER_BLOG_TAKES_HEAD", "status": "EVIDENCE_COMPLETE_FOR_O6", "severity": "P2", "note": "Blog holds 37% share at pos 9.78 with the only click; trade pages at 37.26 and 61.72. Query-family scan adds 156 rows / 8 clicks. Decision stays 11-06."},
+    {"id": "NEW-5", "name": "IMPRESSIONS_UP_CLICKS_FLAT", "status": "OBSERVE", "severity": "P3", "note": "API adjacent windows: +7.1% imps, +5.7% clicks, CTR -0.012pp. This is a one-day swap inside a truncated export, not a trend."},
+    {"id": "NEW-6", "name": "CTR_ZERO_ON_PAGE1", "status": "OPEN_EXPANDED_16_ROWS_632_IMP", "severity": "P2", "note": "Was 5 words / 196 imp on 11-03; the API scan widens the pool to 16 rows / 632 imp / 0 clk (12 new rows / 411 imp). Hand to weekly-meta 11-06 with SERP feature check."},
+    {"id": "NEW-7", "name": "Q4_RED_PACKET_CORE", "status": "WATCH_UPGRADED_EVIDENCE", "severity": "P2", "note": "利是封印刷 hkg 56 imp / 1 clk / 24.07 (API); 燙金利是封 hkg 2 imp @1.00 and jpn 33 imp @1.00 / 0 clk. Category /zh-hk/category/red-packets/ holds 52 imp @22.33 while two blog posts rank 7.11 and 5.86 -> same blog-head pattern. Season window open."},
+    {"id": "NEW-8", "name": "WEDDING_INTENT_MISMATCH", "status": "REFINED_FROM_COLLAPSE", "severity": "P1", "note": "喜帖印刷: /zh-hk/product/wedding-thank-you-cards/ at pos 9.36 (11 imp) vs /zh-hk/category/wedding-invitations/ at 34.75. Ranking is fine on the wrong page; intent mismatch is the better hypothesis than index loss. Check before any content action (O10)."},
+    {"id": "NEW-9", "name": "INTERNAL_SPLIT_BLOG_HEAD_PATTERN", "status": "CONFIRMED_SYSTEMIC_CANDIDATE", "severity": "P2", "note": "Three clusters now show a blog page outranking the commercial target for the head term (poster 9.78 vs 37.26; red packet 7.11/5.86 vs 22.33; book blog 45.5% share). Candidate evidence for monthly; no canonical/redirect."},
+    {"id": "NEW-10", "name": "PACKAGING_CLUSTER_SLIGHT_WORSENING", "status": "CONFIRMED_TWO_METHODS", "severity": "P2", "note": "Third test: +1.01/+0.73/+1.13 (包裝盒印刷/訂製/紙盒印刷); second test +0.66/+1.12/+0.93; xlsx +0.91/+2.59/+3.58. Two windows, two methods, same direction. MEASURE only (packaging batch 1 truth still WAITING_K3)."},
+    {"id": "NEW-11", "name": "FOOD_PACKAGING_PAGE1_ZERO_CLICK", "status": "CONFIRMED_API_114_IMP", "severity": "P1", "note": "食品包裝印刷 hkg 114 imp / 0 clk / 8.53 (API) vs 118 / 8.42 (xlsx). Still the largest page-1 CTR hole and the top FIX candidate for 11-06."},
+    {"id": "NEW-12", "name": "BRAND_VARIANT_Z_PRINT", "status": "NEW_OBSERVE", "severity": "P3", "note": "z print usa 31 imp / 0 clk / 8.90. Brand-adjacent variant (old domain was z-printpro.com). Not a money word; observe only. Brand rows 智印港 (20 clk / 28 imp across hkg+twn+usa) and zprintpro (6 clk / 15 imp) are noted but NOT turned into a site-wide brand click share: the export is truncated (A25)."}
+  ],
+  "tasks": [
+    {"task_id": "GSC-20261101-O1", "intent": "Make the API pull a daily automated path", "owner": "ZP-k3-review + K3 (infra)", "status": "MANUAL_PULL_ONLY_2026_11_04", "note": "Today's pull was manual (analyst 01:15). No scheduler-driven pull exists. Do not describe this as automation."},
+    {"task_id": "GSC-20261101-O2", "intent": "Decide the recovery SSoT caliber", "owner": "K3 (rule change)", "status": "WAITING_K3", "note": "Unchanged. Today's missing 24h export demonstrates the dependency: without the xlsx 24h window the coefficient cannot exist at all."},
+    {"task_id": "GSC-20261101-O3", "intent": "Task-J hkg third same-method measurement", "owner": "ZP-gsc-feedback", "status": "DONE_2026_11_04", "note": "8/8 rows on the end1103 pull; sticker -1.54, packaging cluster +0.73..+1.13. Delivered by the analyst session and consumed here; not re-run."},
+    {"task_id": "GSC-20261101-O4", "intent": "CTR pool: page-1 zero-click words", "owner": "ZP-weekly-meta", "status": "SCHEDULED_1106_POOL_EXPANDED", "note": "Input expands from 5 words / 196 imp to 16 rows / 632 imp (12 new rows / 411 imp). Gate unchanged: SERP feature + one variable + re-measure."},
+    {"task_id": "GSC-20261101-O5", "intent": "One candidate carrying URL per split cluster", "owner": "ZP-monthly-matrix (with weekly-meta)", "status": "DELIVERED_CANDIDATES", "note": "11-03 handoff stands. Today adds the systemic blog-head pattern (NEW-9). Candidate only; no redirect/noindex/canonical without K3."},
+    {"task_id": "GSC-20261101-O6", "intent": "Poster: blog vs trade page", "owner": "ZP-daily-content / weekly-meta", "status": "EVIDENCE_COMPLETE_DECISION_1106", "note": "Attribution + query-family scan both landed today. Decision date unchanged (11-06); this lane does not decide."},
+    {"task_id": "GSC-20261101-O7", "intent": "Calendar title 7d effect", "owner": "ZP-weekly-meta", "status": "SCHEDULED", "note": "28d 25.30 (xlsx) / 25.92 (API); 24h 10.9. Title unchanged; copy-fix window 11-10."},
+    {"task_id": "GSC-20261101-O8", "intent": "Sticker 14-day retest (no title change)", "owner": "ZP-daily-content", "status": "VERDICT_HOLD_2026_11_04", "note": "37.85 / 38.06 vs target <=25. HOLD; remeasure 11-07."},
+    {"task_id": "GSC-20261101-O9", "intent": "ja textbook churn diagnosis", "owner": "ZP-monthly-matrix", "status": "OPEN", "note": "29.98 API / 28.67 xlsx; monthly report still missing (A28)."},
+    {"task_id": "GSC-20261101-O10", "intent": "Wedding-print collapse: index + landing check", "owner": "ZP-monthly-matrix + weekly-meta", "status": "REFINED_INTENT_MISMATCH", "note": "Thank-you-card product at 9.36 holds the head query; category at 34.75. Check intent->URL before index or content."},
+    {"task_id": "GSC-20261101-O11", "intent": "Q4 red packet season classification", "owner": "ZP-monthly-matrix", "status": "SCHEDULED", "note": "Adds: category 52 imp @22.33 / 1 clk; blog posts 7.11 and 5.86; 燙金利是封 jpn rank 1 zero clicks (A35). Classify only."},
+    {"task_id": "GSC-20261101-O12", "intent": "GEO AI probe S1", "owner": "ZP-gsc-feedback", "status": "DONE_BY_PEER_PARTIAL", "note": "S1 done 11-03; citation URLs partial. S2 window 11-20..24. Do not rerun S1."}
+  ],
+  "candidate_tasks": [
+    {"task_id": "GSC-20261104-C1", "route": "FIX", "target": "Page-1 zero-click pool triage: 16 rows / 632 imp, 12 new rows / 411 imp", "owner_lane": "ZP-weekly-meta", "why": "Largest single-day expansion of measured CTR waste; ranking already exists", "approval_gate": "Record SERP features and real snippets first; one variable per page; no new numbers; no batch title rewrite", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261104-C2", "route": "MEASURE", "target": "Top-5-rank zero-click rows: 大信封 3.94 (36 imp), 燙金利是封 jpn 1.00 (33), a1海報 twn 1.00 (27), 海報尺寸 4.85 (20)", "owner_lane": "ZP-weekly-meta + ZP-monthly-matrix", "why": "Rank-1/3-5 impressions with zero clicks is a stronger CTR/intent signal than page-1 bottom", "approval_gate": "Needs page-level attribution (query x page x country) and, for the two foreign-market rows, a market/locale read; no title change", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261104-C3", "route": "MEASURE", "target": "Poster query family: 156 rows / 8 clicks; blog head vs trade pages", "owner_lane": "ZP-monthly-matrix", "why": "Coverage is broad but conversion is near zero; systemic blog-head pattern in 3 clusters", "approval_gate": "No canonical/redirect/page merge without K3; O6 decision is 11-06", "next_check": "2026-11-06"},
+    {"task_id": "GSC-20261104-C4", "route": "FIX", "target": "Data plane: 11-04 four-window xlsx export + API pull --end 2026-11-03", "owner_lane": "K3-admin / next lane", "why": "xlsx 92h stale and no 11-04 detector => KPI panel and recovery are UNKNOWN; API plane will be 68h old by tomorrow 20:13", "approval_gate": "Export by K3; pull with the same script/dimensions (do NOT re-pull --end 2026-11-02)", "next_check": "2026-11-05"},
+    {"task_id": "GSC-20261104-C5", "route": "FIX", "target": "/ja/product/foil-red-packets/ body still contains Chinese blocks (A38)", "owner_lane": "ZP-daily-content / ZP-blog-deepfix", "why": "Customer-visible i18n pollution on a ja product page; also the plausible reason a Chinese query ranks #1 in jpn (A35)", "approval_gate": "Body language only; do not touch title / price / MOQ / lead time; run i18n-guard after the edit", "next_check": "2026-11-06"}
+  ],
+  "next": [
+    {"date": "2026-11-05", "check": "API pull `python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-03` (data day 11-03) + K3 four-window xlsx export for 11-04/11-05 + daily detector", "pass": "CSV lands with data day >= 11-03; xlsx data day >= 11-02; gsc-cliff-<date>.json exists with recovery_ratio_vs_mean28_dynamic non-null"},
+    {"date": "2026-11-06", "check": "weekly-meta CTR batch: 食品包裝印刷 (114@8.53) + 4 new top-5 rows + small batch/卒アル/saddle; O6 poster decision; O7 calendar; O10 wedding intent; O11 red packet", "pass": "SERP feature recorded; one variable per page; re-measure date set; no batch rewrite"},
+    {"date": "2026-11-07", "check": "Sticker/blog remeasure (blog-money-keyword-queue recheck_after 11-07); sticker O8 second read", "pass": "Same query/page/window; position before->after stated; no SCALE from one window"},
+    {"date": "2026-11-10", "check": "Calendar copy fix (c0552853) 7-day effect", "pass": "target page impressions >= 80% of baseline and >= 1 money-word click"},
+    {"date": "2026-11-20", "check": "GEO S2 probe with complete citation URLs", "pass": "engine/date/answer/citation URL all recorded"},
+    {"date": "2026-12-01", "check": "ZP-monthly-matrix natural trigger (A28 open, day 4)", "pass": "run record + monthly review report; O5/O9/O10/O11 adjudicated there"}
+  ]
+}
