@@ -12,6 +12,7 @@
 | 批 2 | ② packaging category desc 首句词形 | desc only | 低 | 11-13 `食品包裝印刷`（基线 118 imp / 0 clk / pos 8.42） |
 | 批 3 | ③ ja textbook blog desc 过短 | desc only | 低 | 11-13 `教材 印刷製本`（基线 31 imp / pos 11.97 jpn） |
 | 批 4 | ④ en catalog blog title 58 + desc 331 | title 与 desc **分两批** | 中（title churn） | 11-20 `china catalog printing`（PDP 40 imp / 13.30） |
+| 批 5 | ⑤ ja foil-red-packets PDP desc 96 过短 | desc only | 低 | 11-20 `燙金利是封` jpn（基线 33 imp / pos 1.00 / 0 clk） |
 
 ## B. 逐字稿
 
@@ -56,6 +57,13 @@
 
   真值来源：MOQ 10 / free proof / DHL 2-4 day —— 均取自同页与 PDP 现有文案。
 - **分两批**：先 desc（批 4a），14 天后再 title（批 4b），否则无法归因。
+
+### ⑤ `/ja/product/foil-red-packets/` — desc 96 → 150-160（季节窗口）
+
+- 现状：`箔押し祝儀袋印刷：12色の箔、パール紙・ソフトタッチ紙・コート紙の組み合わせガイド、大面積は分割版見当で対応。100個から HK$1.10起、5-7営業日、無料デザイン3案。30秒AI見積り。`（**96 字符**）
+- 背景（11-04 复核）：`燙金利是封` 在 **jpn 33 imp / pos 1.00 / 0 clk**，承接页是 `/zh-hk/product/foil-red-packets/`——这是**查询语言匹配**（中文查询）的合理结果，**不是 hreflang 缺陷**；ja 页本身已本地化良好（lang ja-JP、`箔押しポチ袋印刷`、title 当量 55）。
+- 拟改方向：补 用途（御祝儀/ご祝儀袋・結婚式・お年玉）・数量段（100個から）・納期（5-7営業日）・無料デザイン3案 —— 全部为同页既有事实，**不新增价格/折扣承诺**。
+- 风险：低（desc only；ja 季节窗口 11-12 月）。
 
 ## C. 执行前必查（车道自查 5 条）
 
