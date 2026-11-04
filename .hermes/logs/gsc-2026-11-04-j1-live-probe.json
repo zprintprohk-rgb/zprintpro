@@ -1,0 +1,110 @@
+[
+  {
+    "url": "/ja/blog/textbook-printing-guide/",
+    "status": 200,
+    "bytes": 162551,
+    "title": "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro",
+    "titleEquiv": 54,
+    "desc": "教科書・教材の印刷製本ガイド：中綴じ/無線綴じ/上製本 3 製本方式、紙材質の選び方、100冊から HK$5-50/冊、納期 5-7 営業日、年度契約の進め方、ISBN バーコード対応。学校・塾・出版社の B2B 調達に。",
+    "descLen": 111,
+    "h1": "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro",
+    "robots": "index, follow",
+    "canonical": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+    "markers": {
+      "binding": [
+        "中綴じ",
+        "無線綴じ",
+        "製本",
+        "綴じ"
+      ],
+      "volume": [
+        "部数",
+        "ロット"
+      ],
+      "proof": [
+        "校正"
+      ],
+      "moq_claim": [
+        "部から",
+        "冊から"
+      ],
+      "link_to_cat": [
+        "/ja/category/educational",
+        "/ja/product/textbooks"
+      ]
+    }
+  },
+  {
+    "url": "/ja/product/textbooks/",
+    "status": 200,
+    "bytes": 278833,
+    "title": "教科書印刷｜中綴じ 無線綴じ｜100冊〜¥1288〜｜ZprintPro",
+    "titleEquiv": 54,
+    "desc": "教科書の教科書は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100冊〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+    "descLen": 131,
+    "h1": "教科書印刷｜中綴じ 無線綴じ 100冊〜 ¥1288〜",
+    "robots": "index, follow",
+    "canonical": "https://zprintpro.com/ja/product/textbooks/",
+    "markers": {
+      "binding": [
+        "中綴じ",
+        "無線綴じ",
+        "製本",
+        "綴じ"
+      ],
+      "volume": [
+        "部数",
+        "ロット"
+      ],
+      "proof": [
+        "校正",
+        "入稿"
+      ],
+      "moq_claim": [
+        "冊から"
+      ],
+      "link_to_cat": [
+        "/ja/category/educational",
+        "/ja/product/textbooks"
+      ]
+    }
+  },
+  {
+    "url": "/ja/category/educational/",
+    "status": 200,
+    "bytes": 278374,
+    "title": "教科書印刷・証明書印刷 学校一括割引・FSC認証 | ZprintPro",
+    "titleEquiv": 56,
+    "desc": "教科書印刷．証明書印刷：ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + 国際品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 業界: 卒業記念アルバム（中高大）・塾・予備校教材・学校一括印刷・保護者会イベント・賞状・証明書。",
+    "descLen": 134,
+    "h1": "教科書印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品",
+    "robots": "index, follow",
+    "canonical": "https://zprintpro.com/ja/category/educational/",
+    "markers": {
+      "binding": [
+        "中綴じ",
+        "無線綴じ",
+        "製本",
+        "綴じ"
+      ],
+      "volume": [
+        "部数",
+        "10部",
+        "100部",
+        "ロット"
+      ],
+      "proof": [
+        "校正",
+        "入稿"
+      ],
+      "moq_claim": [
+        "部から",
+        "冊から"
+      ],
+      "link_to_cat": [
+        "/ja/category/educational",
+        "/ja/product/textbooks"
+      ]
+    }
+  }
+]
