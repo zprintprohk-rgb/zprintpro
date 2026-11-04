@@ -1,0 +1,24 @@
+﻿SPN2 RUN START 2026-11-04 08:41:19
+ERR|pass1|https://hkprint58.com/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|远程服务器返回错误: (429) Too Many Requests。
+OK|pass1|https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html|HTTP 200|final https://web.archive.org/web/20261104005153/https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html
+OK|pass1|https://hkprint58.com/faq/faq-bd8520663ab2.html|HTTP 200|final https://web.archive.org/web/20261104005631/https://hkprint58.com/faq/faq-bd8520663ab2.html
+ERR|pass1|https://hkprint58.com/case/skincare-brand-packaging-case.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://zprintpro.com/en/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://zprintpro.com/en/product/waterproof-stickers/|The operation has timed out.
+ERR|pass1|https://zprintpro.com/en/product/a4-flyers/|The operation has timed out.
+ERR|pass1|https://zprintpro.com/en/product/mailer-boxes/|The operation has timed out.
+ERR|pass1|https://zprintpro.com/en/product/saddle-stitch-booklets/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://zprintpro.com/zh-hk/category/packaging/|The operation has timed out.
+ERR|pass1|https://z-printpro.com/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass2|https://hkprint58.com/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass2|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|基础连接已经关闭: 发送时发生错误。
+ERR|pass2|https://hkprint58.com/case/skincare-brand-packaging-case.html|基础连接已经关闭: 发送时发生错误。
+ERR|pass2|https://zprintpro.com/en/|远程服务器返回错误: (429) Too Many Requests。
+OK|pass2|https://zprintpro.com/en/product/waterproof-stickers/|HTTP 200|final https://web.archive.org/web/20261104011052/https://zprintpro.com/en/product/waterproof-stickers/
+ERR|pass2|https://zprintpro.com/en/product/a4-flyers/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass2|https://zprintpro.com/en/product/mailer-boxes/|基础连接已经关闭: 发送时发生错误。
+ERR|pass2|https://zprintpro.com/en/product/saddle-stitch-booklets/|基础连接已经关闭: 发送时发生错误。
+OK|pass2|https://zprintpro.com/zh-hk/category/packaging/|HTTP 200|final https://web.archive.org/web/20261104012821/https://zprintpro.com/zh-hk/category/packaging/
+OK|pass2|https://z-printpro.com/|HTTP 200|final https://web.archive.org/web/20261104013329/https://zprintpro.com/zh-hk/
+SPN2 RUN END 2026-11-04 10:06:37

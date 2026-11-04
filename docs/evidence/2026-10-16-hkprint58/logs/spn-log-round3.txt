@@ -1,0 +1,14 @@
+﻿SPN3 RUN START 2026-11-04 10:07:27
+ERR|pass1|https://hkprint58.com/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://hkprint58.com/case/skincare-brand-packaging-case.html|远程服务器返回错误: (429) Too Many Requests。
+OK|pass1|https://zprintpro.com/en/|HTTP 200|final https://web.archive.org/web/20261104010536/https://zprintpro.com/en/
+OK|pass1|https://zprintpro.com/en/product/a4-flyers/|HTTP 200|final https://web.archive.org/web/20261104011657/https://zprintpro.com/en/product/a4-flyers/
+ERR|pass1|https://zprintpro.com/en/product/mailer-boxes/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass1|https://zprintpro.com/en/product/saddle-stitch-booklets/|远程服务器返回错误: (429) Too Many Requests。
+OK|pass2|https://hkprint58.com/|HTTP 200|final https://web.archive.org/web/20261104004233/https://hkprint58.com/
+ERR|pass2|https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html|远程服务器返回错误: (429) Too Many Requests。
+OK|pass2|https://hkprint58.com/case/skincare-brand-packaging-case.html|HTTP 200|final https://web.archive.org/web/20261104010108/https://hkprint58.com/case/skincare-brand-packaging-case.html
+ERR|pass2|https://zprintpro.com/en/product/mailer-boxes/|远程服务器返回错误: (429) Too Many Requests。
+ERR|pass2|https://zprintpro.com/en/product/saddle-stitch-booklets/|远程服务器返回错误: (429) Too Many Requests。
+SPN3 RUN END 2026-11-04 10:43:32

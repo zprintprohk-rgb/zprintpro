@@ -1,0 +1,60 @@
+To: abuse-noc@hkdns.hk (hosting/network abuse contact per APNIC RDAP for IP 219.234.31.65)
+Cc: DomainAbuse@service.aliyun.com (registrar of record for hkprint58.com, per RDAP: Alibaba Cloud Computing Ltd. d/b/a HiChina, IANA ID 1599)
+From: zprintpro@outlook.com (authorized agent of the copyright owner)
+Subject: DMCA Takedown Notice - Copyright Infringement at hkprint58.com (IP 219.234.31.65)
+Date: 2026-11-04 (UTC+8)
+
+Dear Abuse Team,
+
+This is a notice under the DMCA (17 U.S.C. 512) and equivalent applicable law, served on behalf of the copyright owner.
+
+1. COPYRIGHT OWNER / CLAIMANT
+Shenzhen Cailong Printing & Packaging Co., Ltd. (legal representative: Tang Yunti)
+Address: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen 518111, Guangdong, China
+Email: zprintpro@outlook.com | Phone/WhatsApp: +86 198 8085 1334
+This notice is submitted by the copyright owner through its authorized agent (the sender of this email, acting on the owner's documented instruction).
+
+2. ORIGINAL WORKS
+The website zprintpro.com (online since May 8, 2026; predecessor site z-printpro.com online since December 28, 2025) contains original Traditional Chinese and English marketing copy, product FAQs, brand narrative and site structure, created and first published by the copyright owner. First publication is documented in the owner's private version-control history and by independent third-party archiving, e.g. Internet Archive snapshot:
+https://web.archive.org/web/20261016100704/https://zprintpro.com/zh-hk/
+
+3. INFRINGING WEBSITE / MATERIAL
+The website hkprint58.com (brand shown as "Xinyinba / Xin Yin Bar"; hosted at IP 219.234.31.65 via CNAME chain hkprint58.gotoip3.com -> ssl8.hk.xp94.com; domain hkprint58.com registered 2024-11-18 via Alibaba Cloud/HiChina) reproduces our copyrighted content on a mass scale:
+
+- Product URL slugs: 35 of 39 sampled product slugs are identical to ours (systematic copying, not coincidence).
+- Verbatim copy: our homepage process text "14 類別 84 款產品，30 秒 AI 即時報價。" and "即日急件 18:00 截單，翌日中午 12:00 前送達" appear on hkprint58.com exactly as published on our site; our English product FAQs are reproduced with only the brand name machine-replaced ("Xinyinba").
+- Brand: our brand name "ZprintPro / 智印港" and our brand narrative are displayed on their pages (e.g. https://hkprint58.com/en/brand and the navigation of every page).
+- Their own sitemap lastmod shows the current infringing design was mass-published on 2026-08-28 - months after our first publication - followed by repeated re-publication batches tracking our release cadence (2026-09-05 through 2026-10-13).
+- The infringing site offers the same printing services to the same markets, causing customer and search-result confusion.
+
+4. INFRINGING URLS (representative list)
+https://hkprint58.com/
+https://hkprint58.com/en/
+https://hkprint58.com/en/tiezhiyinshua/waterproof-stickers.html
+https://hkprint58.com/en/chuandanyinshua/a4-flyers.html
+https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html
+https://hkprint58.com/faq/faq-bd8520663ab2.html
+https://hkprint58.com/en/brand
+https://hkprint58.com/order
+https://hkprint58.com/baozhuangheyinshua/food-boxes.html
+(The www.hkprint58.com mirror serves identical content.)
+
+5. ORIGINAL URLS (corresponding works)
+https://zprintpro.com/zh-hk/
+https://zprintpro.com/en/
+https://zprintpro.com/en/product/waterproof-stickers/
+https://zprintpro.com/en/product/a4-flyers/
+https://zprintpro.com/zh-hk/faq/
+https://zprintpro.com/en/about/
+https://zprintpro.com/zh-hk/product/food-boxes/
+
+6. STATEMENTS
+- I have a good-faith belief that the use of the material described above is not authorized by the copyright owner, its agent, or the law.
+- The information in this notice is accurate; under penalty of perjury I state that I am authorized to act on behalf of the owner of the exclusive rights described above.
+- We request that you expeditiously remove or disable access to the infringing material, and notify us of the action taken.
+
+Sincerely,
+Authorized agent of
+Shenzhen Cailong Printing & Packaging Co., Ltd.
+zprintpro@outlook.com
+2026-11-04 (UTC+8)

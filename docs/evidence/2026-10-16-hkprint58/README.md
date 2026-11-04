@@ -47,3 +47,17 @@ SHA256SUMS.txt 全量哈希
 
 **待补存 12 URL**（IA 恢复后跑 `.hermes/tmp/evidence-20261016/spn-round2.ps1`，间隔 170s，侵权方 5 页优先；我方原创性已由首页快照 + git 历史 + 本证据库入库 commit 三重锚定，补存为增量加固）:
 对方 5 页（home / en-waterproof-stickers / zhiyingang-brand-story / faq-bd8520663ab2 / case-skincare）+ 我方 en 首页 + 4 产品页 + zh-hk packaging 品类页 + 旧站 z-printpro.com（本地已存其 301 → 新站实证，旧站无独立存档页面可存）。
+
+### Round2 结果（2026-11-04 08:41-10:06，日志 `logs/spn-log-round2.txt`）
+
+**成功 4/12**（新封存快照，均 HTTP 200）：
+
+| URL | 快照 | 性质 |
+|---|---|---|
+| hkprint58.com/gongsixinwen/zhiyingang-brand-story.html | [20261104005153](https://web.archive.org/web/20261104005153/https://hkprint58.com/gongsixinwen/zhiyingang-brand-story.html) | ⭐ 侵权重点页固定（品牌 slug 页，DMCA 清单内） |
+| hkprint58.com/faq/faq-bd8520663ab2.html | [20261104005631](https://web.archive.org/web/20261104005631/https://hkprint58.com/faq/faq-bd8520663ab2.html) | ⭐ 侵权重点页固定（FAQ hash 页，DMCA 清单内） |
+| zprintpro.com/en/product/waterproof-stickers/ | [20261104011052](https://web.archive.org/web/20261104011052/https://zprintpro.com/en/product/waterproof-stickers/) | 我方原创对照页 |
+| zprintpro.com/zh-hk/category/packaging/ | [20261104012821](https://web.archive.org/web/20261104012821/https://zprintpro.com/zh-hk/category/packaging/) | 我方原创对照页 |
+| z-printpro.com/（301 → zprintpro.com/zh-hk/ 终态封存） | [20261104013329](https://web.archive.org/web/20261104013329/https://zprintpro.com/zh-hk/) | 旧站迁移实证（存档终态即 301 落点） |
+
+仍待补存 7 URL（IA 匿名 429 限流/超时）：对方 3（home / en-waterproof-stickers / case-skincare）+ 我方 4（/en/ 、a4-flyers 、mailer-boxes 、saddle-stitch-booklets）→ round3 后台继续（`spn-log-round3.txt`）。累计状态：**对方侵权现状 2/5 页已 SPN 固定 + 5 页本地 HTML 原件 + 9 截图；我方 4+1 页已 SPN 固定**。DMCA 已提交（举报 ID 1-0797000042125），补存为持续增量加固。
