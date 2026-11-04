@@ -121,14 +121,14 @@
 
 ## 三、竞品研究转化为采购信息架构，而非复制承诺
 
-| 市场 | 核对对象 | 可借鉴 | 不可复制 |
-|---|---|---|---|
-| zh-hk 海报 | e-print poster | 尺寸、纸张、数量、价格、交期的采购路径 | 对方价格与交付承诺 |
-| zh-hk 贴纸 | e-print digital stickers | 材质、形状、工艺、数量选择 | 对方 SKU 与 MOQ |
-| zh-hk 书刊 | Print100 booklet | 装订、页数、纸张、印刷条件 | 对方生产条件 |
-| zh-hk 包装 | Print100 packaging | 盒型、材质、结构、工艺、打样信息 | 未核实的食品／认证承诺 |
-| en 贴纸 | Sticker Mule、Aura Print | 小批量、proof、artwork、材质选择顺序 | 免费 proof、交期、价格保证 |
-| ja 冊子／教材 | ラクスル、ブックホン | 装订决策、页数、纸张、数据校验、采购步骤 | 日本本地活动与交期承诺 |
+| 市场       | 核对对象                     | 可借鉴                      | 不可复制             |     |
+| ---      | ---                      | ---                      | ---              | --- |
+| zh-hk 海报 | e-print poster           | 尺寸、纸张、数量、价格、交期的采购路径      | 对方价格与交付承诺        |     |
+| zh-hk 贴纸 | e-print digital stickers | 材质、形状、工艺、数量选择            | 对方 SKU 与 MOQ     |     |
+| zh-hk 书刊 | Print100 booklet         | 装订、页数、纸张、印刷条件            | 对方生产条件           |     |
+| zh-hk 包装 | Print100 packaging       | 盒型、材质、结构、工艺、打样信息         | 未核实的食品／认证承诺      |     |
+| en 贴纸    | Sticker Mule、Aura Print  | 小批量、proof、artwork、材质选择顺序 | 免费 proof、交期、价格保证 |     |
+| ja 冊子／教材 | ラクスル、ブックホン               | 装订决策、页数、纸张、数据校验、采购步骤     | 日本本地活动与交期承诺      |     |
 
 Google 官方规则对本阶段的约束：
 
