@@ -84,3 +84,64 @@
 - 四份诊断包（同日）：`2026-11-04-o6-poster-decision-pack.md`、`2026-11-03-meta-ctr-decision-pack-1106.md`、`2026-11-04-j1-textbook-diagnosis.md`、`2026-11-04-e2-catalog-diagnosis.md`
 - 线上实抓：`.hermes/logs/gsc-2026-11-04-o6-live-titles.json`、`gsc-2026-11-04-j1-live-probe.json`、`gsc-2026-11-04-e2-live-probe.json`、`_snippet_probe_1103.cjs` 输出
 - 基线数字：`.hermes/logs/2026-11-03-ZP-gsc-feedback.md`、`gsc-2026-11-04-handoff-14q-snapshot.json`、`gsc-2026-11-04-taskj-third.json`
+
+---
+
+## E. 2026-11-05 归因修正增补（首席分析师，PROPOSE_ONLY）
+
+> 来源：`docs/2026-11-05-food-packaging-fix-attribution-correction.md`。页级归因（`money-kw-query-page-country-2026-10-31.csv`，窗 09-30..10-27）证明 `食品包裝印刷` 页 1 ranker 是 **blog `food-packaging-printing-guide`**（pos 8.56 / 111 imp），**不是** category（pos 63.83）。本增补修正批 2 的复测锚点并新增批 1b；逐字稿沿用本文档 B-①/B-② 写法。
+
+### E-1（新）｜`/zh-hk/blog/food-packaging-printing-guide/` — desc 英→中（变量=desc only）
+
+- 现值：`Food-grade packaging printing essentials — from kraft boxes to food-safe lamination, certifications to design best practices.`（**英文 125 字符**，2026-11-05 07:5x 线上实抓）
+- 拟改（**152 字符**，已实测）：
+
+  > 食品包裝印刷完全指南：直接接觸食品須用食品級材質與油墨，材料合規以訂單確認。智印港 100 個起印、HK$2.5 起/個、無開版費無刀模費；標準 3-5 個工作天交貨、1 小時免費數碼打稿、滿 HK$500 順豐免運、DHL 全球 2-4 天。拆解 6 大食品類型材質對照、紙材比較與設計實務，30 秒 AI 報價。
+
+- 真值来源：全部为该页现有可见正文（2026-11-05 实抓）：100 個起印/HK$2.5 起/個/無開版費無刀模費/3-5 個工作天/1 小時免費數碼打稿/滿 HK$500 順豐免運/DHL 全球 2-4 天/6 大食品類型材質對照/合規以訂單確認——**不新增任何数值**。
+- 复测锚点（同词同页同国家）：`食品包裝印刷`（基线 112 imp / 0 clk / pos 8.39，API 10-08..11-04）＋ `食品印刷`（62 / 0 / 7.48）；11-13（7d）／11-20（14d）。
+- 依赖注记：若 K3 在 11-06 前对认证断言/价格条件化拍板（`FIX-20261030-BLOG-CERT-PHRASES`）并改动该页正文，本逐字稿须由当时正文重推导。
+- 风险：低（desc only；与批 1 poster blog 同款语言错配修复类别）。
+
+### E-2（改锚）｜批 2 复测锚点修正（category desc 逐字稿与真值来源不变）
+
+- ~~`食品包裝印刷`（该页 pos 63.83，不在页 1，无法归因）~~ → **`食品包裝訂製`（category 25@10.20 页 1 边缘 / query 级 30@12.30，category 为主 ranker）＋ `包裝盒印刷`（49@33.33）＋ `包裝盒訂製`（47@35.30）＋ `紙盒印刷`（42@33.62）**（hkg，API 10-08..11-04）。
+- 复测以展示份额/位置为主要观察项（这些词在 30-35 位深位），点击为次要。
+- 判读：category desc 首句词形修复仍长期必要（词形与摘要卫生），但不把 `食品包裝印刷` 记为其复测锚点。
+
+### E-3 顺带观察（只测不批）
+
+- zh-hk blog desc 英文残留为系统性问题（poster 197 英文 + food 125 英文两例已确认）；11-06 单批上线后，对 zh-hk blog desc 全量做语言普查。
+- en food-boxes desc 181 字符超带（杠杆小，不进本批）。
+
+---
+
+## F. 2026-11-05 晚·池行 triage 增补（首席分析师，PROPOSE_ONLY）
+
+> 来源：`docs/2026-11-05-pool-snippet-evidence-sweep.md`。运行面事件：**11-05 20:13 gsc 车道被陈旧锁 BLOCKED**（锁=dead pid 25932，20:10 daily preflight 遗留；daily 21:17 按 3600s 陈旧规则自行接管，gsc 下次自然触发 11-06 20:13）——本批不受影响，仅知悉。
+
+### F-1 池内其余行不进 11-06 批（维持单批单变量）——2026-11-05 20:3x 页级归因实证修正
+
+| 池行 | **实证页 1 ranker**（09-30..10-27） | snippet 状态 | triage |
+|---|---|---|---|
+| poster 印刷 75@10.95 / 海報尺寸 20@4.85 / 海報size 27@9.19 | **`/zh-hk/blog/poster-printing-guide/`**（10.18/7.19/9.64） | desc 197 英文 | **批 1 实证对准**；3 行共 122 imp 同受益，复测可加锚 |
+| 大信封 36@3.94 | **`/zh-hk/product/large-envelopes/`**（3.56/36） | title 当量 ~55 / desc 134 中文 | **MEASURE**（长期 top-5 零点击，9/2 即 2.16/89/0；title 词形「大號信封」≈「大信封」） |
+| 小冊子印刷 43@10.74 | **`/zh-hk/blog/saddle-stitch-booklet-printing-guide/`**（10.19/48） | desc **113** 短 + **含「vs Alibaba 黃頁」** | 后续批 desc 候选；brand lint 前置 |
+| 邊度有紙袋買 25@7.88 | **`/zh-hk/product/handle-bags/`**（8.52/23） | desc 124 短 | **MEASURE**（question 词 PAA 假设）；desc 候选 |
+| 即日急件 24@7.83 / 海報印刷即日 20@9.55 | **`/zh-hk/blog/rush-printing-hk-guide/`**（6.40/9.33） | desc **109** 短；**title「\| 智 \| 智印港」双品牌残留** | 后续批 desc 候选；title 缺陷须 title-v5 门禁评估（单变量） |
+| doujinshi printing 35@10.91 | **`/en/product/doujinshi-printing/`**（10.42/31） | 观察 | en books title 75 超带属 saddle 词族，与 doujinshi 无关 |
+| 燙金利是封 jpn 33@1.0 / a1海報 twn 27@1.0 | ja foil-red-packets / 待定 | 批 5 已覆盖 ja desc | **MEASURE**（跨市场 locale/意图，A35） |
+| 包裝食品 裡印 31@9.39 / z print 31@8.90 | 待归因 / 品牌变体 | — | HOLD / 观察 |
+
+### F-2 后续批 desc 候选（不进 11-06 批，11-13 后窗口另立批，各自单变量）
+
+- **rush blog** `/zh-hk/blog/rush-printing-hk-guide/` desc **109**（短 41-51）——锚 `即日急件` 24@7.83 ＋ `海報印刷即日` 20@9.55 ＋ `即日印刷` 39@10.59（唯一有点击行）。
+- **saddle-stitch blog** `/zh-hk/blog/saddle-stitch-booklet-printing-guide/` desc **113**（短 37-47；去「vs Alibaba 黃頁」需 brand lint）——锚 `小冊子印刷` 43@10.74。
+- **handle-bags PDP** `/zh-hk/product/handle-bags/` desc **124**（短 26-36）——锚 `邊度有紙袋買` 25@7.88（MEASURE 观察，desc 修复不抢跑）。
+- 候选只登记不批；SERP 证据 + 审批后按同一 desc-only 流程执行。
+
+### F-3 登记
+
+- **rush blog title 双品牌残留**：`即日急件印刷全攻略：…\| 智 \| 智印港`——客户可见缺陷，title-v5 门禁评估后单变量处理（不进 11-06 批）。
+- `/zh-hk/product/envelopes/` slug 未注册（返回首页兜底 title）——仅登记，当前无 GSC 展示证据。
+- 当量数值为启发式（CJK×2+ASCII）；任何 title 改动上线前必过 `scripts/guards/title-equiv.js`。
