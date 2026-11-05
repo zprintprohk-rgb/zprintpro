@@ -1,0 +1,242 @@
+{
+ "window": "2026-10-08..2026-11-04",
+ "data_day": "2026-11-04",
+ "source": "GSC数据/gsc-query-country-28d-end1105.csv",
+ "method": "query-country same as taskj 1-4; zero-click pool = pos<=10 & clicks=0",
+ "taskj_fifth_hkg": {
+  "包裝盒印刷": {
+   "imp": 49,
+   "clk": 0,
+   "pos": 33.33
+  },
+  "包裝盒訂製": {
+   "imp": 47,
+   "clk": 0,
+   "pos": 35.3
+  },
+  "紙盒印刷": {
+   "imp": 47,
+   "clk": 0,
+   "pos": 37.32
+  },
+  "貼紙印刷": {
+   "imp": 114,
+   "clk": 0,
+   "pos": 38.09
+  },
+  "宣傳單張": {
+   "imp": 118,
+   "clk": 0,
+   "pos": 34.44
+  },
+  "即日印刷": {
+   "imp": 53,
+   "clk": 1,
+   "pos": 7.4
+  },
+  "書刊印刷": {
+   "imp": 110,
+   "clk": 0,
+   "pos": 32.88
+  },
+  "騎馬釘": {
+   "imp": 65,
+   "clk": 0,
+   "pos": 19.54
+  }
+ },
+ "page1_zero_click_pool": {
+  "食品包裝印刷": {
+   "imp": 112,
+   "clk": 0,
+   "pos_w": 8.39,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "食品印刷": {
+   "imp": 62,
+   "clk": 0,
+   "pos_w": 7.48,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "大信封": {
+   "imp": 40,
+   "clk": 0,
+   "pos_w": 4.17,
+   "countries": [
+    "can",
+    "hkg",
+    "mys",
+    "pak",
+    "usa"
+   ]
+  },
+  "z print": {
+   "imp": 36,
+   "clk": 0,
+   "pos_w": 8.94,
+   "countries": [
+    "gbr",
+    "hkg",
+    "mex",
+    "usa"
+   ]
+  },
+  "包裝食品 裡印": {
+   "imp": 32,
+   "clk": 0,
+   "pos_w": 9.22,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "燙金利是封": {
+   "imp": 31,
+   "clk": 0,
+   "pos_w": 1.0,
+   "countries": [
+    "hkg",
+    "jpn"
+   ]
+  },
+  "a1海報": {
+   "imp": 30,
+   "clk": 0,
+   "pos_w": 1.23,
+   "countries": [
+    "hkg",
+    "twn"
+   ]
+  },
+  "small batch sticker printing": {
+   "imp": 27,
+   "clk": 0,
+   "pos_w": 6.0,
+   "countries": [
+    "usa",
+    "zaf"
+   ]
+  },
+  "海報size": {
+   "imp": 27,
+   "clk": 0,
+   "pos_w": 9.19,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "即日急件": {
+   "imp": 24,
+   "clk": 0,
+   "pos_w": 7.71,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "海報印刷即日": {
+   "imp": 24,
+   "clk": 0,
+   "pos_w": 9.59,
+   "countries": [
+    "hkg",
+    "sgp"
+   ]
+  },
+  "邊度有紙袋買": {
+   "imp": 24,
+   "clk": 0,
+   "pos_w": 7.96,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "alipay flash collect": {
+   "imp": 21,
+   "clk": 0,
+   "pos_w": 3.24,
+   "countries": [
+    "jpn",
+    "kor",
+    "mng",
+    "mys",
+    "nld",
+    "sgp",
+    "tha",
+    "usa"
+   ]
+  },
+  "海報尺寸": {
+   "imp": 19,
+   "clk": 0,
+   "pos_w": 4.53,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "china catalog printing": {
+   "imp": 18,
+   "clk": 0,
+   "pos_w": 8.5,
+   "countries": [
+    "can"
+   ]
+  },
+  "印喜帖價格": {
+   "imp": 18,
+   "clk": 0,
+   "pos_w": 7.17,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "large envelope": {
+   "imp": 17,
+   "clk": 0,
+   "pos_w": 3.7,
+   "countries": [
+    "cze",
+    "hrv",
+    "kor",
+    "lva",
+    "qat",
+    "rou",
+    "tur",
+    "vnm"
+   ]
+  },
+  "small batch stickers": {
+   "imp": 17,
+   "clk": 0,
+   "pos_w": 5.24,
+   "countries": [
+    "aus",
+    "deu",
+    "gbr",
+    "jpn",
+    "mex",
+    "usa"
+   ]
+  },
+  "澳門易拉架size": {
+   "imp": 17,
+   "clk": 0,
+   "pos_w": 8.0,
+   "countries": [
+    "hkg"
+   ]
+  },
+  "卒アル販売": {
+   "imp": 16,
+   "clk": 0,
+   "pos_w": 5.0,
+   "countries": [
+    "jpn"
+   ]
+  }
+ },
+ "pool_total_imps": 1530,
+ "pool_rows": 466
+}

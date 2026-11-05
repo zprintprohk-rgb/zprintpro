@@ -1,0 +1,37 @@
+{
+ "date": "2026-11-05",
+ "actor": "manual-chief-analyst-session",
+ "action": "API pull end1105 (refresh API plane; preempt 11-05 20:13 gsc pull per k3-review NEXT)",
+ "command": "python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-04 --out GSC数据/gsc-query-country-28d-end1105.csv",
+ "result": {
+  "rows": 1507,
+  "clicks": 74,
+  "imps": 8115
+ },
+ "window": "2026-10-08..2026-11-04",
+ "data_day": "2026-11-04 (aggregated window; cross-check by gsc lane 20:13)",
+ "prev_adjacent": {
+  "file": "gsc-query-country-28d-end1104.csv",
+  "clicks": 78,
+  "imps": 8433,
+  "window": "2026-10-07..2026-11-03"
+ },
+ "adjacent_shift": {
+  "clicks": -4,
+  "imps": -318,
+  "note": "27/28 day overlap; arithmetic within export granularity (A25); lower totals may reflect newest-day partial processing"
+ },
+ "index_rebuild": {
+  "script": "node scripts/rebuild-gsc-index.mjs --write",
+  "result": "see index.json totalFiles (expect 256)"
+ },
+ "live_verify_1106_batch": {
+  "note": "5 target fields checked 2026-11-05 07:4x; all HTTP 200",
+  "01_poster_blog_desc": "197 chars English - matches sheet before",
+  "02_packaging_category_desc": "136 chars - matches sheet before",
+  "03_ja_textbook_desc": "111 chars - LIVE CONTAINS HK$5-50/冊 + 年度契約 claims (JPY truth conflict, D3 family); supports sheet rewrite (no price in proposed)",
+  "04_en_catalog_title_desc": "title 58 (阻断线) / desc 331 - matches sheet before",
+  "05_ja_foil_redpackets_desc": "96 chars - matches sheet before; title live 42 chars '箔押しポチ袋印刷 | 12色 100個から HK$1.10起'"
+ },
+ "discipline": "no src changes; no commit/push; evidence for lanes"
+}

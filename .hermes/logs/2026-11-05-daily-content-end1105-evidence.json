@@ -1,0 +1,112 @@
+{
+  "schema": "daily-content-evidence/v1",
+  "lane": "ZP-daily-content",
+  "date": "2026-11-05",
+  "verdict": "OK",
+  "no_op": true,
+  "idempotency_key": "d2815f1d3c164f1d",
+  "data_plane": {
+    "api": {
+      "file": "GSC数据/gsc-query-country-28d-end1105.csv",
+      "pull_log": ".hermes/logs/gsc-2026-11-05-api-pull-end1105.json",
+      "rows": 1507,
+      "clicks": 74,
+      "impressions": 8115,
+      "window": "2026-10-08..2026-11-04",
+      "data_day": "2026-11-04",
+      "age_hours_at_2117": 21.3,
+      "status": "FRESH",
+      "pulled_by": "manual-chief-analyst-session 2026-11-05 07:38; this lane read only"
+    },
+    "xlsx": {
+      "latest_batch": "2026-11-03",
+      "data_day_28d": "2026-10-31",
+      "age_hours_at_2117": 117.3,
+      "status": "STALE",
+      "note": "no 2026-11-04 / 2026-11-05 four-tier export"
+    },
+    "detector": {
+      "expected_file": ".hermes/logs/gsc-cliff-2026-11-05.json",
+      "present": false,
+      "last_official": {
+        "file": ".hermes/logs/gsc-cliff-2026-11-03.json",
+        "recovery_pct": 123.7,
+        "formula": "977 / 789.8",
+        "note": "11-03 reading; not today's value"
+      }
+    },
+    "index_json": {
+      "lastBuild": "2026-11-05T07:38:00+08:00",
+      "totalFiles": 256,
+      "latestFreshData": "2026-11-03",
+      "end1105_registered": false
+    }
+  },
+  "taskj_hkg_8_words": [
+    {"kw": "包裝盒印刷", "prev_pos": 34.24, "prev_imp": 49, "prev_clk": 0, "cur_pos": 33.33, "cur_imp": 49, "cur_clk": 0, "delta_pos": -0.91},
+    {"kw": "包裝盒訂製", "prev_pos": 34.71, "prev_imp": 48, "prev_clk": 0, "cur_pos": 35.30, "cur_imp": 47, "cur_clk": 0, "delta_pos": 0.59},
+    {"kw": "紙盒印刷", "prev_pos": 37.06, "prev_imp": 49, "prev_clk": 0, "cur_pos": 37.32, "cur_imp": 47, "cur_clk": 0, "delta_pos": 0.26},
+    {"kw": "貼紙印刷", "prev_pos": 37.85, "prev_imp": 123, "prev_clk": 0, "cur_pos": 38.09, "cur_imp": 114, "cur_clk": 0, "delta_pos": 0.24},
+    {"kw": "宣傳單張", "prev_pos": 33.92, "prev_imp": 118, "prev_clk": 0, "cur_pos": 34.44, "cur_imp": 118, "cur_clk": 0, "delta_pos": 0.52},
+    {"kw": "即日印刷", "prev_pos": 7.79, "prev_imp": 57, "prev_clk": 1, "cur_pos": 7.40, "cur_imp": 53, "cur_clk": 1, "delta_pos": -0.39},
+    {"kw": "書刊印刷", "prev_pos": 32.04, "prev_imp": 113, "prev_clk": 0, "cur_pos": 32.88, "cur_imp": 110, "cur_clk": 0, "delta_pos": 0.84},
+    {"kw": "騎馬釘", "prev_pos": 19.28, "prev_imp": 64, "prev_clk": 0, "cur_pos": 19.54, "cur_imp": 65, "cur_clk": 0, "delta_pos": 0.26}
+  ],
+  "taskj_summary": {
+    "prev_imp": 621,
+    "cur_imp": 603,
+    "prev_clk": 1,
+    "cur_clk": 1,
+    "mean_delta_pos": 0.18,
+    "improved": 2,
+    "worsened": 6,
+    "reading": "all |delta| < 1 position; flat/noise; 貼紙 still HOLD (~13 positions from <=25)"
+  },
+  "page1_zero_click_observations": {
+    "pool_rule_today": "pos<=10 & clicks=0 (no impressions floor)",
+    "pool_rows_today": 466,
+    "pool_imps_today": 1530,
+    "pool_rule_prev": "impressions>=20 & position<11",
+    "pool_rows_prev": 16,
+    "pool_imps_prev": 632,
+    "comparability": "NOT comparable; rule changed, do not trend row/imp counts",
+    "rows": [
+      {"query": "食品包裝印刷", "country": ["hkg"], "imp": 112, "clk": 0, "pos": 8.39, "prev_pos": 8.53},
+      {"query": "食品印刷", "country": ["hkg"], "imp": 62, "clk": 0, "pos": 7.48, "prev_pos": 7.90},
+      {"query": "燙金利是封", "country": ["hkg", "jpn"], "imp": 31, "clk": 0, "pos": 1.00, "prev_pos": 1.00, "note": "rank 1, zero clicks, seasonal"},
+      {"query": "a1海報", "country": ["hkg", "twn"], "imp": 30, "clk": 0, "pos": 1.23, "prev_pos": 1.00, "note": "country set changed"},
+      {"query": "大信封", "country": ["can", "hkg", "mys", "pak", "usa"], "imp": 40, "clk": 0, "pos": 4.17, "prev_pos": 3.94, "note": "country set changed"},
+      {"query": "海報尺寸", "country": ["hkg"], "imp": 19, "clk": 0, "pos": 4.53, "prev_pos": 4.85},
+      {"query": "small batch sticker printing", "country": ["usa", "zaf"], "imp": 27, "clk": 0, "pos": 6.00, "prev_pos": 5.83, "note": "country set changed"}
+    ]
+  },
+  "a38_diagnosis": {
+    "summary": "ja PDP Chinese residual is template-level, not a single-page typo; en PDP is affected by the same features block",
+    "live_verified": [
+      "https://zprintpro.com/en/product/foil-red-packets/ (HTTP 200, 6 Chinese feature bullets)",
+      "https://zprintpro.com/ja/product/foil-red-packets/ (HTTP 200, 6 Chinese feature bullets + Chinese table headers + 8色 vs 12色 + HK$ body vs ¥64 price + 智印港（ZprintPro）)"
+    ],
+    "sources": [
+      {"file": "src/data/products.ts", "detail": "76 `features: [` arrays; single Chinese array per SKU; featuresEn/featuresJa = 0 matches"},
+      {"file": "src/app/[locale]/product/[slug]/v9/ProductPageV9.tsx", "lines": "665-670", "detail": "product.features rendered raw for every locale; no locale branch / no localizeSpecValue"},
+      {"file": "src/data/products-content.ts", "lines": "6784+ (foil-red-packets longDescriptionJa block)", "detail": "Chinese table headers 適用場景/克重; 独特的质感 (simplified); 加値工藝; 8 色箔押し; 海德堡 4 色機 / 寫真 / 精確; HK$1.10-4.80 in ja body"},
+      {"file": "src/app/[locale]/category/[slug]/v9/TrustBadgeBlock.tsx", "lines": "55", "detail": "ja copy uses 智印港（ZprintPro）(dual-brand on ja)"},
+      {"file": "src/components/seo/RegionalContent.tsx", "lines": "30", "detail": "ja expertIntro uses 智印港（ZprintPro）(dual-brand on ja)"}
+    ],
+    "requires": [
+      "native ja rewrite of longDescriptionJa (no price/MOQ/turnaround change)",
+      "localization strategy for 76 features arrays (translate vs hide vs per-locale data) - K3/scope decision",
+      "title 12色 vs body 8色 conflict needs products.ts / K3 truth ruling",
+      "node guards + tsc + i18n guard before any src write"
+    ],
+    "executed_this_run": false,
+    "reason_not_executed": "no READY queue task for ZP-daily-content; src gates (node/tsc/i18n) unavailable in this sandbox; scope exceeds a single small batch"
+  },
+  "guards": {
+    "pwsh": "blocked (v9.4 rearm); not retried",
+    "node_guards_run": false,
+    "tsc_run": false,
+    "src_writes": 0,
+    "near_duplicate_jaccard": "N/A (no new prose)"
+  }
+}
