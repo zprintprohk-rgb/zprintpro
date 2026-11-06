@@ -19,11 +19,12 @@
 ### ① `/zh-hk/blog/poster-printing-guide/` — desc（现为英文 197 字符）
 
 - 现值：`From A3 to A0 posters, art paper to PP film, UV printing to foil stamping — …breaks down poster printing sizes, paper choices, finishing options, and design tips for maximum visual impact.`
-- 拟改（中文，目标 150-160 字符）：
+- **A41 改稿（2026-11-06 23:3x，双方法复算确认）**：旧稿价格（A2 HK$16／A1 HK$20）取自 category 真值，与该 blog 自身 title「HK$9起」及正文（A2 10 張起印 HK$9 起/張、A1 1 張起印 HK$45 起/張；HK$9×46 / HK$45×28 为正文主导价）矛盾 → **禁逐字执行旧稿**。
+- 拟改（中文，152 字符，已实测；blog 真值版）：
 
-  > 香港海報印刷 A2 10 張起、HK$16 起/張；A1 1 張起、HK$20 起/張。尺寸 A3-A0、紙質與過膜選擇、免費設計打稿 4 小時、滿 HK$500 順豐免運、DHL 全球 2-4 天。含尺寸・紙質・工藝・設計要點，30 秒即時報價。
+  > 香港海報印刷指南：拆解 A3 至 A0 尺寸、紙質、UV 印刷／燙金等工藝、防水與啞膠膜選項及設計要點，展覽、活動、店舖、餐廳宣傳適用。智印港 A2 10 張起印 HK$9 起/張、A1 1 張起印 HK$45 起/張，3-5 個工作天交貨；滿 HK$500 順豐免運，DHL 全球 2-4 天，30 秒 AI 即時報價。
 
-- 真值来源：A2 10 張/HK$16 起、A1 1 張/HK$20 起、免費設計打稿 4 小時、滿 HK$500 順豐免運、DHL 2-4 天 —— 均取自同日线上抓取的 `/zh-hk/category/posters/` desc 与 blog title（`HK$9起` 已在 title）。
+- 真值来源（2026-11-06 23:3x curl 实抓，全部为该页可见正文/标题）：`HK$9起`（title）· `A2 10 張起印 HK$9 起/張`·`A1 1 張起印 HK$45 起/張`·`3-5 個工作天`（×21）·`滿 HK$500`·`順豐免運`·`DHL 全球`·`30 秒 AI 即時報價`·`防水`（×62）·`啞膠`（×26）·`展覽/活動/餐廳`（×30/94/56）—— **不新增任何数值**；category 的 A2 HK$16/A1 HK$20 **不得**进入本页 desc。
 
 ### ② `/zh-hk/category/packaging/` — desc（现 136 字符，首句主词为「包裝盒印刷訂製」）
 

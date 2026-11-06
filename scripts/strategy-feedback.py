@@ -134,11 +134,37 @@ def latest_dated_document(repo, suffix, review_day):
         return None, ""
 
 
+def _task_rows(anomaly):
+    """tasks may be a list of dicts (legacy 11-04: id/next/status) OR a map
+    key->status-string/dict (11-06+: O1..O12 + queue_write). Yields (key, value)
+    for both shapes so downstream code never assumes a single shape."""
+    tasks = anomaly.get("tasks") or []
+    if isinstance(tasks, dict):
+        for key, value in tasks.items():
+            yield str(key), value
+    elif isinstance(tasks, list):
+        for row in tasks:
+            if isinstance(row, dict):
+                key = row.get("task_id") or row.get("id") or "?"
+                yield str(key), row
+
+
+def _task_date_map(anomaly):
+    """Unified task_id -> next_check map across both tasks shapes."""
+    out = {}
+    for key, value in _task_rows(anomaly):
+        if isinstance(value, dict):
+            out[key] = value.get("next_check") or value.get("next")
+        else:
+            out[key] = None  # status string carries no concrete next_check
+    return out
+
+
 def money_query_handoffs(anomaly, source, review_day):
     money = anomaly.get("money_words_23_xlsx_28d") or {}
     rows = money.get("rows") or {}
     window = (anomaly.get("kpi_xlsx_4windows") or {}).get("28d", {}).get("window")
-    task_dates = {row.get("task_id"): row.get("next_check") for row in anomaly.get("tasks", [])}
+    task_dates = _task_date_map(anomaly)
     handoffs = []
     for query, metrics in rows.items():
         if not isinstance(metrics, dict):
@@ -153,7 +179,7 @@ def money_query_handoffs(anomaly, source, review_day):
             route = "FIX"
             owner = "ZP-weekly-meta"
             gate = "Record SERP features and the real title/snippet first; change at most one snippet variable after approval"
-            next_check = task_dates.get("GSC-20261101-O4")
+            next_check = task_dates.get("O4") or task_dates.get("GSC-20261101-O4")
             action = "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion"
         elif position > 20:
             route = "MEASURE"
@@ -258,9 +284,9 @@ def build_geo_handoff(repo, review_day, anomaly):
     if not path:
         return {"available": False, "source": None, "status": "UNKNOWN", "action": "Do not infer AI citations"}
     s2_next = None
-    for task in anomaly.get("tasks", []):
-        if str(task.get("task_id") or "").endswith("-O12"):
-            s2_next = task.get("next_check")
+    for key, value in _task_rows(anomaly):
+        if key.endswith("-O12") or key == "O12":
+            s2_next = value.get("next_check") if isinstance(value, dict) else None
             break
     return {"available": True, "source": os.path.relpath(path, repo), "status": "S1_COMPLETE_CITATION_URLS_PARTIAL",
             "s2_window": "2026-11-20..2026-11-24", "s2_next_check": s2_next,
