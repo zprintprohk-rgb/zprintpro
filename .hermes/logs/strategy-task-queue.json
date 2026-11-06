@@ -327,7 +327,8 @@
       "evidence": [
         ".hermes/logs/lane-status.json",
         ".hermes/logs/lane-runs.jsonl",
-        "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
+        "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix",
+        "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
       ],
       "score": 100,
       "score_model": "execution-health-blocker",
@@ -337,8 +338,8 @@
       "approval_gate": "K3 administrator action; no automatic retry",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-10-31",
-      "result": "Recurred on 2026-10-30; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "next_check": "2026-11-07",
+      "result": "Recurred on 2026-11-06; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "recurrence_observations": [
         {
           "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
@@ -351,10 +352,22 @@
             "Get-ScheduledTaskInfo -TaskName ZP-monthly-matrix"
           ],
           "result": "Dispatched by weekly review from observed SCHEDULER_FAILED; not a completed fix"
+        },
+        {
+          "observation_key": "weekly|2026-11-06|FIX-WEEKLY-2026-11-06-ZP-monthly-matrix-7c1a1493",
+          "observed_at": "2026-11-06",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-11-06-ZP-monthly-matrix-7c1a1493",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
+          ],
+          "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
         }
       ],
-      "recurrence_count": 1,
-      "last_seen": "2026-10-30"
+      "recurrence_count": 2,
+      "last_seen": "2026-11-06"
     },
     {
       "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
@@ -722,5 +735,9 @@
       "created_at": "2026-10-31T23:20:00+08:00"
     }
   ],
-  "last_review": "2026-10-30 K3 三句话裁决: 全站模板(1) + a1-posters(3) + 年賀状牌価 ¥20-35 (其余留空=不发布)"
+  "last_review": {
+    "period": "weekly",
+    "date": "2026-11-06",
+    "report": ".hermes/logs/periodic-review-weekly-2026-11-06.json"
+  }
 }

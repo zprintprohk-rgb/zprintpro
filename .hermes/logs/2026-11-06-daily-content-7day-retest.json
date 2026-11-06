@@ -1,0 +1,321 @@
+{
+  "schema": "daily-content-7day-retest/v1",
+  "lane": "ZP-daily-content",
+  "run": "2026-11-06 21:17 schtasks",
+  "generated_at": "2026-11-06T21:17:02+08:00",
+  "method": "read-only live probes (web_fetch, one request per URL) + comparison against strategy-task-queue.json next_check=2026-11-06 entries and their execution commits",
+  "recovery": {
+    "available": false,
+    "reason": "no .hermes/logs/gsc-cliff-2026-11-06.json (also no 11-04/11-05); 3rd consecutive day",
+    "last_official": {
+      "date": "2026-11-03",
+      "ratio": 123.7,
+      "numerator": 977,
+      "denominator": 789.8,
+      "scope": "full-country 24h vs same-batch 28d dynamic mean",
+      "source": ".hermes/logs/gsc-cliff-2026-11-03.json"
+    }
+  },
+  "bus": {
+    "run_context": ".hermes/logs/run-context-ZP-daily-content.json @ 2026-11-06 21:17:02",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-04 06:43 (stale, not rebuilt)",
+    "previous_run": "ZP-daily-content-20261106T181731-harness (OK; year-card expansion + A38 decision pack; src zero write)",
+    "retry_queue": [],
+    "sibling_lanes_today": [
+      "ZP-gsc-feedback 20:24 OK (report + anomaly + weekly-meta gate)",
+      "ZP-weekly-meta 20:52 BLOCKED at preflight (strategy-feedback exited 1; dsh not called)",
+      "ZP-k3-review 07:10 no bus record, no report"
+    ]
+  },
+  "queue": {
+    "b1c": "order 1-30 DONE; queue drained",
+    "ready_total": 2,
+    "ready_for_daily_content": 0,
+    "ready_other": [
+      "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS (owner manual-executor; needs asset build + src write + gates)",
+      "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b (owner ZP-k3-review; lock-contention recovery; write_scope .hermes/logs + scripts)"
+    ],
+    "scheduled_total": 4,
+    "scheduled_overdue": [
+      "FIX-20261104-STICKER-CATEGORY-TITLE-EQ (scheduled 2026-11-04; owner weekly-meta; blocked today by 20:52 preflight failure)"
+    ],
+    "waiting_k3": [
+      "FIX-20261031-FIVE-CATEGORY-TRUTH (remaining 11 items)",
+      "FIX-20261030-BLOG-CERT-PHRASES",
+      "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+      "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+      "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
+      "FIX-20261031-PRIMARY-URL-MISMATCH"
+    ]
+  },
+  "probes": [
+    {
+      "target_task": "ZH-POSTER-20261028-PROCUREMENT",
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "http": 200,
+      "result": "CORE_PASS_SECONDARY_FAIL",
+      "pass": [
+        "参考价 A2 157g 銅版紙 HK$16 起/張，A1 HK$20 起/張 (execution 7b396bd9 target)",
+        "A2 商品卡标题 HK$16/張，未再出现 HK$12.9"
+      ],
+      "fail": [
+        "同页 FAQ 仍写 A2 約 HK$6-9/張、A1 約 HK$10-16/張（100 張批量價）",
+        "A2 商品卡显示 HK$2.20 每張起 + 10張起批 · 整批 HK$160（2.20 是 300 件档单价，起价锚点错位）",
+        "A1 商品卡显示 HK$29.00-45.00 每張起（与参考价 HK$20 起不一致）"
+      ]
+    },
+    {
+      "target_task": "ZH-POSTER-20261028-PROCUREMENT",
+      "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "http": 200,
+      "result": "CORE_PASS_SECONDARY_FAIL",
+      "pass": [
+        "title: A2 海報印刷 420×594mm 10張起印 HK$16起 | 智印港",
+        "MOQ 10，HK$16.00 × 10 = HK$160.00",
+        "首屏正文含「交期與打稿時效以報價確認」"
+      ],
+      "fail": [
+        "正文同时写「1-2天交貨」与「今天下單 · 明天 12 點前到」",
+        "正文价格叙事写「HK$2.20 起」，与 title 的 HK$16 起、MOQ 10 的 HK$16/張 并列出现",
+        "「DHL 全球 2-4 天」仍为无条件句"
+      ]
+    },
+    {
+      "target_task": "ZH-PACKAGING-20261028-BATCH1",
+      "url": "https://zprintpro.com/zh-hk/category/packaging/",
+      "http": 200,
+      "result": "CORE_PASS_SECONDARY_FAIL",
+      "pass": [
+        "标题/首屏/FAQ 均为 100 個起印，弹性 MOQ 100-10K",
+        "食品盒 HK$2.5/個起、化妆品盒 HK$8/個起 与 products.ts 真值一致",
+        "卡片 MOQ 全部 100 個（food/cosmetic/mailer/folding）"
+      ],
+      "fail": [
+        "FAQ 仍写「香港本地1-2個工作天順豐直送，DHL全球2-4日送到」",
+        "FAQ 仍写「標準盒型3-5個工作天」；同页 featuredSnippet 写「交期以報價單為準」"
+      ]
+    },
+    {
+      "target_task": "EN-STICKER-20261028-SMALLBATCH",
+      "url": "https://zprintpro.com/en/product/small-batch-stickers/",
+      "http": 200,
+      "result": "PRIMARY_PASS_SECONDARY_FAIL",
+      "pass": [
+        "title: Small Batch Stickers from $0.55 | 10pcs | ZprintPro",
+        "Minimum order 10pc; 10 × $0.55 = $5.50; MOQ 10",
+        "首屏正文: lead time and proof timing are confirmed at quote",
+        "FAQ Q2/Q3/Q4: MOQ 10 / proof timing at quote / shipping timing at quote"
+      ],
+      "fail": [
+        "价格卡仍写 Free US shipping $99+",
+        "配送条仍写 Free US shipping $99+ · DHL Express / FedEx 3-5 days to the USA, 2-4 days to Japan",
+        "服务条仍写 DHL worldwide 2-4 days",
+        "FAQ 答案仍写 free digital proof in 1 hour / 3-5 business days / 2-4 business days to US addresses",
+        "步骤 5 仍写 Custom stickers printed in 2–3 days",
+        "规格 bullet 仍写【1–2 天交付】"
+      ]
+    },
+    {
+      "target_task": "EN-STICKER-20261028-SMALLBATCH",
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "http": 200,
+      "result": "PRIMARY_PASS_SECONDARY_FAIL",
+      "pass": [
+        "title: 小ロットステッカー | 10枚〜 ¥69〜 | 防水PVC | ZprintPro",
+        "最小注文数10枚; ¥69 × 10 = ¥690; MOQ 10",
+        "首屏正文: 納期・校正の時期はお見積りで確認します"
+      ],
+      "fail": [
+        "服务条: DHL 世界配送 2-4 日 / 日本全国へ国際配送（航空便3-5日）",
+        "FAQ: 1時間無料校正 / 3-5営業日 / 2〜4日でお届け",
+        "Why ZprintPro 段首: 智印港（ZprintPro）は…（A38 source C ja brand double-write still live）"
+      ]
+    },
+    {
+      "target_task": "JA-C109-20261028-DEADLINE",
+      "url": "https://zprintpro.com/ja/comiket-c109/",
+      "http": 200,
+      "result": "SAFE_DATE_PASS_RESIDUAL_DAYS",
+      "pass": [
+        "硬性安全入稿日 12/7 已消失",
+        "入稿日改为「入稿日に見積りで確認」/「早めの入稿（日にちは見積りで確認）」",
+        "搬入段改为手元受け取り，未宣传会场直送",
+        "页脚保留「主催者の公式発表をご確認ください」"
+      ],
+      "fail": [
+        "仍写「入稿から最短 7 日・余裕を見て 12-14 日」= 派生交期承诺",
+        "仍写「標準生産 5-7 営業日＋DHL 2-4 日」「開幕前 24 時間特急」",
+        "¥7,500 写作「単価は ¥7,500 から」，未写 K3 裁决的「指定規格・数量の受注額ベース」条件"
+      ]
+    },
+    {
+      "target_task": "TRUTH-T1-20261029-CALENDARS-50PCS",
+      "url": "https://zprintpro.com/en/category/calendars/",
+      "http": 200,
+      "result": "CORE_PASS_SECONDARY_FAIL",
+      "pass": [
+        "title: Calendar Printing 2027 from $0.40 | 1 MOQ | ZprintPro",
+        "6 张商品卡全部 [MOQ] 1 book",
+        "FAQ: digital runs start at just 1 pc",
+        "未再出现 50 pcs / 1,000 units 的 MOQ 口径"
+      ],
+      "fail": [
+        "FAQ 仍写 Standard turnaround is 3-5 days for digital printing and 5-7 days for offset, plus 2-4 business days worldwide via DHL Express / FedEx"
+      ]
+    },
+    {
+      "target_task": "TRUTH-T3-20261029-EN-UNIT-LOCALIZE",
+      "url": "https://zprintpro.com/en/category/greeting-cards/",
+      "http": 200,
+      "result": "UNIT_PASS_BRAND_AND_CLAIMS_FAIL",
+      "pass": [
+        "英文类目卡单位已本地化: US$33.12/100 pcs / US$39.74/100 pcs（不再出现 /100張）"
+      ],
+      "fail": [
+        "类目标题: Business & Holiday Card Printing from $0.50 | Corporate Christmas 10 MOQ | ZprintPro（§0.0 展示层/SEO 层 pending K3 (a)/(b)/(c)）",
+        "商品卡: Thick Business Cards (400g+)（同上）",
+        "标题/首屏: Free Shipping / Same Day 24h Rush USA，而卡片写 free shipping over $99；承诺未条件化",
+        "6 张卡最低 US$33.12/100 pcs ≈ US$0.3312/pc，标题 from $0.50 在抓取到的 6 张卡上无法复现（需真值核对）"
+      ]
+    },
+    {
+      "target_task": "ZH-STICKER-UNIT (FIX-20261031-FIVE-CATEGORY-TRUTH adjacent)",
+      "url": "https://zprintpro.com/zh-hk/category/stickers/",
+      "http": 200,
+      "result": "PARTIAL_UNIT_FAIL",
+      "pass": [
+        "8/9 张贴纸卡使用「張」为单位（10 張起訂 / HK$0.38/張起 等）",
+        "MOQ 与 10 張起印一致"
+      ],
+      "fail": [
+        "防水貼紙卡仍写「HK$0.42每個起」+「10個起批」（同页其余为「張」）"
+      ]
+    },
+    {
+      "target_task": "FIX-WEEKLY-20261104-STICKER-TITLE (weekly-meta, overdue)",
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "http": 200,
+      "result": "OVERDUE_CONFIRMED",
+      "pass": [],
+      "fail": [
+        "title 逐字仍为 Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro",
+        "与 11-04/11-05/11-06 20:1x 三次测量一致；20:52 weekly-meta preflight BLOCKED，未执行",
+        "H1/FAQ 仍写 1-2 day digital turnaround / 2-3 working days / average shipping 2.3 days"
+      ]
+    }
+  ],
+  "residual_register": [
+    {
+      "id": "R1",
+      "severity": "P1",
+      "owner": "weekly-meta",
+      "page": "/en/category/stickers/",
+      "claim": "title 仍含 Free Proof + Free US Shipping，且当量超 58 阻断线（队列记 100 / 11-05 车道记 104）",
+      "policy": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ（SCHEDULED 11-04，逾期）；title-v5 58 阻断线",
+      "action": "weekly-meta 单批执行（今日 20:52 已 BLOCKED）"
+    },
+    {
+      "id": "R2",
+      "severity": "P1",
+      "owner": "daily-content",
+      "page": "/en/product/small-batch-stickers/",
+      "claim": "Free US shipping $99+ / DHL Express FedEx 3-5 days USA, 2-4 days Japan / DHL worldwide 2-4 days",
+      "policy": "K3 2026-10-30 裁决单#3：生产/运输留空只写报价确认（EN-STICKER task）",
+      "action": "PROPOSE_ONLY；需模板级小批 + 门禁"
+    },
+    {
+      "id": "R3",
+      "severity": "P1",
+      "owner": "daily-content",
+      "page": "/en/product/small-batch-stickers/",
+      "claim": "free digital proof in 1 hour / 3-5 business days / 2-4 business days to US / printed in 2-3 days / 【1–2 天交付】",
+      "policy": "同上：proof timing + lead time 一律 quote-confirm",
+      "action": "PROPOSE_ONLY；FAQ + steps + specs 三处"
+    },
+    {
+      "id": "R4",
+      "severity": "P1",
+      "owner": "daily-content",
+      "page": "/ja/product/small-batch-stickers/",
+      "claim": "DHL 世界配送 2-4 日 / 航空便3-5日 / 1時間無料校正 / 3-5営業日 / 2〜4日でお届け",
+      "policy": "同上 ja 侧",
+      "action": "PROPOSE_ONLY"
+    },
+    {
+      "id": "R5",
+      "severity": "P1",
+      "owner": "K3 (price truth)",
+      "page": "/zh-hk/category/posters/ + /zh-hk/product/a2-posters/",
+      "claim": "A2 出现 6-9 / 16 / 2.20 三个起价；A1 出现 10-16 / 20 / 29-45 三个起价",
+      "policy": "FIX-20261031-FIVE-CATEGORY-TRUTH（WAITING_K3）；NEW-13 已登记",
+      "action": "K3 一句话定唯一真值，或授权「起价一律只展示 MOQ 档」"
+    },
+    {
+      "id": "R6",
+      "severity": "P1",
+      "owner": "daily-content",
+      "page": "/zh-hk/product/a2-posters/",
+      "claim": "1-2天交貨 + 明天12點前到 与 交期以報價確認 / 標準3-5 同页并存",
+      "policy": "K3 2026-10-30 全站模板(1)：交期一律报价确认",
+      "action": "PROPOSE_ONLY；PDP 正文与 shipping strip 两处"
+    },
+    {
+      "id": "R7",
+      "severity": "P0 (display-layer pending K3)",
+      "owner": "K3",
+      "page": "/en/category/greeting-cards/ + /en/product/thick-greeting-cards-400g/",
+      "claim": "Business & Holiday Card Printing / Thick Business Cards (400g+)",
+      "policy": "AGENTS §0.0 2026-09-12 解禁块：接单已解禁，展示层/SEO 层 (a)/(b)/(c) 未裁决；既有贺卡资产不得删改",
+      "action": "STOP_AND_ESCALATE：不删不改，等 K3 裁决"
+    },
+    {
+      "id": "R8",
+      "severity": "P1",
+      "owner": "daily-content",
+      "page": "/en/category/greeting-cards/",
+      "claim": "Free Shipping / Same Day 24h Rush USA / 4-Hour Free Proof / Standard 3-5 days, rush 24-48h",
+      "policy": "K3 2026-10-30 全站模板(1) + 未确认承诺纪律",
+      "action": "PROPOSE_ONLY；与 R7 分开，避免夹带名片展示层"
+    },
+    {
+      "id": "R9",
+      "severity": "P2",
+      "owner": "daily-content",
+      "page": "/zh-hk/category/stickers/",
+      "claim": "防水貼紙卡 HK$0.42每個起 / 10個起批（同页其余为張）",
+      "policy": "FIX-20261104 单位本地化口径（T3 已 DONE，此卡漏网）",
+      "action": "PROPOSE_ONLY；单卡单位修正"
+    },
+    {
+      "id": "R10",
+      "severity": "P2",
+      "owner": "daily-content",
+      "page": "/ja/comiket-c109/",
+      "claim": "入稿から最短 7 日・12-14 日 / 標準5-7+24h特急/¥7,500 単価表記",
+      "policy": "K3 裁决单#5：安全入稿日留空只保留检查清单；¥7,500 为指定规格/数量订单起价条件句",
+      "action": "PROPOSE_ONLY；去掉派生天数承诺，保留检查清单"
+    }
+  ],
+  "write_decision": {
+    "src_writes": 0,
+    "reason": [
+      "queue has no READY task owned by daily-content (only ASSET-... owned by manual-executor, needs asset build + src + gates)",
+      "sandbox pwsh blocked (0xC0000142 on first attempt) -> cannot run tsc / title-v5 / 12-rules / encoding / regen / 8-gram gates",
+      "R2-R6/R8-R10 are template-level or price/truth-dependent and fall under K3 2026-10-30 all-site template (1) / §0.25.10.5, not a single-SKU small batch",
+      "R7 is a §0.0 display-layer decision pending K3 (a)/(b)/(c); must not delete or rewrite existing greeting-card assets",
+      "sibling ZP-weekly-meta 20:52 BLOCKED; its overdue sticker title batch must not be taken over by this lane"
+    ]
+  },
+  "gates": {
+    "run": false,
+    "reason": "no src write; pwsh blocked; all checks that could run were read-only greps and live probes",
+    "not_claimed": [
+      "tsc 54=54",
+      "title-v5 hard=0",
+      "blog 12 rules",
+      "encoding",
+      "8-gram Jaccard",
+      "CF build"
+    ]
+  }
+}
