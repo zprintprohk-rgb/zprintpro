@@ -1,0 +1,118 @@
+{
+  "generated_by": "ZP-gsc-feedback",
+  "generated_at": "2026-11-06T20:13:00+08:00",
+  "purpose": "20:52 weekly-meta 单批的进场门 (evidence only; 本车道不改页、不批状态)",
+  "consume_by": "ZP-weekly-meta 2026-11-06 20:52",
+  "method": "web_fetch 渲染文本 (2026-11-06 20:0x-20:1x, 每 URL 单次). 注意: 渲染文本含 <title> 与正文, 但**不含 meta description** ⇒ 本门只能核 title 与正文真值, desc before 值必须由执行车道自查",
+  "batches": [
+    {
+      "id": "B1-poster-blog-desc",
+      "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "variable": "desc only",
+      "live_title": "香港海報印刷 HK$9起：尺寸・紙質・工藝・設計要點 | 智印港",
+      "live_body_prices": {
+        "A2": "10 張起印 HK$9 起/張",
+        "A1": "1 張起印 HK$45 起/張",
+        "A0": "HK$144 起/張",
+        "A2_250g": "HK$17 起/張",
+        "A1_PP": "HK$45 起/張"
+      },
+      "proposed_desc_prices": {
+        "A2": "HK$16 起/張",
+        "A1": "HK$20 起/張"
+      },
+      "verdict": "NO_GO_AS_WRITTEN",
+      "reason": "拟改 desc 的 A2 HK$16 / A1 HK$20 与目标页正文 A2 HK$9 / A1 HK$45 冲突; 且与同页 title「HK$9起」在**同一条 SERP 摘要内自相矛盾** (title 9 vs desc 16). 数字本身在 /zh-hk/category/posters/ 技术规格段为真 (A2 HK$16 起 / A1 HK$20 起), 但搬到 blog 即变错值",
+      "required_action": "A(推荐) desc 去价格, 只留尺寸/材质/交期口径; B 用本页正文数字 HK$9/HK$45 (但与 category 参考价仍冲突); C 推迟到 K3 价格真值裁决 (FIX-20261031-FIVE-CATEGORY-TRUTH) 后 11-13 再做. 禁 C 之前逐字执行",
+      "recheck": "11-13 (7d) 同词同页同窗: 海報印刷 245 imp / 1 clk / 14.80 (end1105) + 海報尺寸 19 / 4.53 + 海報size 27 / 9.19"
+    },
+    {
+      "id": "B1b-food-blog-desc",
+      "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "variable": "desc only",
+      "live_title": "食品包裝印刷完全指南：材質、安全、法規與設計實務 | 智印港",
+      "truth_checks": {
+        "MOQ": "100 個起 (页面正文 + FAQ Q3 一致)",
+        "price": "HK$2.5 起/個 (正文 + 价格表 + FAQ Q3 一致)",
+        "opening_fee": "無開版費、無刀模費 (正文 + 价格表一致)",
+        "lead_time": "標準 3-5 個工作天 (正文 + 价格表 + FAQ Q4 一致)",
+        "proof": "提交檔案 1 小時內免費數碼打稿 (正文 + 价格表一致)",
+        "shipping": "港九新界滿 HK$500 順豐免運 / DHL 全球 2-4 個工作天 (正文 + 价格表一致)",
+        "six_categories": "6 大食品類型表存在 (烘焙/外賣/冷凍/糖果/飲品/嬰幼)"
+      },
+      "verdict": "GO_ON_TRUTH",
+      "reason": "拟改 desc 的每个数字均在本页正文可核; 且正文已写「材料合規要求以訂單確認」, 与拟改 desc 的「合規以訂單確認」一致; 未新增未拍板数字",
+      "required_action": "执行前仍须自查 desc 现值 = 英文 125 (本门读不到 meta); 单变量; 复测锚 食品包裝印刷 112/0/8.39 + 食品印刷 62/0/7.48 (end1105)",
+      "recheck": "11-13 (7d) / 11-20 (14d)"
+    },
+    {
+      "id": "B2-packaging-category-desc",
+      "url": "https://zprintpro.com/zh-hk/category/packaging/",
+      "variable": "desc only",
+      "verdict": "UNVERIFIED_TODAY",
+      "reason": "本车道今日未抓该页正文; 拟改 desc 的 HK$2.5/100個起/1小時打稿/3-5天/滿HK$500 免運 与 food blog 同源, 但 category 页是否同值未核",
+      "required_action": "执行车道自行 before 值核对 + 页面真值抽读; 不得以 food blog 真值替代 category 真值"
+    },
+    {
+      "id": "B3-ja-textbook-desc",
+      "url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "variable": "desc only",
+      "verdict": "UNVERIFIED_TODAY",
+      "reason": "未抓; 拟改稿含 100冊から / 3製本方式 / 見積り, 属页面既有表述但今日未复核; 且该页所属 j1 诊断记录的 JPY 价格冲突仍在 (D3)",
+      "required_action": "before 值 + 日文正文真值自查; 禁写具体价格"
+    },
+    {
+      "id": "B4-en-catalog-title-desc",
+      "url": "https://zprintpro.com/en/blog/catalog-printing-china-supplier-guide/",
+      "variable": "desc (title 分 14 天后)",
+      "verdict": "UNVERIFIED_TODAY",
+      "reason": "未抓; title 58 为阻断线, 已记录 11-04/11-05; 今日未重测",
+      "required_action": "title 批必须过 scripts/guards/title-v5-guard.js; 不得与 desc 同批"
+    },
+    {
+      "id": "B5-ja-foil-red-packets-desc",
+      "url": "https://zprintpro.com/ja/product/foil-red-packets/",
+      "variable": "desc only",
+      "verdict": "HOLD_A38",
+      "reason": "同页正文仍有中文残留 (11-04/11-05 两次独立抓取证实, 6 块 + 简体「质」); 若同批改 desc, 摘要承诺与正文语言不一致会被放大; 且同页 12色 vs 8色 / HK$ vs ¥ 未裁决",
+      "required_action": "先由内容车道清 A38 正文语言 (只改正文, 不碰 title/价格/MOQ/交期), 再单批 desc; 或 K3 明确允许先 desc 后正文"
+    },
+    {
+      "id": "OVERDUE-en-sticker-category-title",
+      "url": "https://zprintpro.com/en/category/stickers/",
+      "variable": "title only",
+      "live_title": "Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro",
+      "verdict": "OVERDUE_DAY2_UNCHANGED",
+      "reason": "队列 FIX-20261104-STICKER-CATEGORY-TITLE-EQ scheduled_for 2026-11-04, 今日 20:1x 实抓 title 与 11-04/11-05 测量字符串**逐字一致** ⇒ 仍未执行. 当量口径: 队列记 100, 11-05 车道测得 104; 两值均 > 58 阻断线, 结论不因口径差改变",
+      "required_action": "单批执行 (en 54 备稿已核), 必过 title-v5 门禁; 不得与 batch 1-5 同批",
+      "note": "同页 H1 含 'Made for USA Small Business' — 非 i18n 禁词字面 (禁的是 Made in USA / US-based / American-made), 但属产地邻近表述, 记 WATCH 交 K3 判读, 本车道不判违规"
+    },
+    {
+      "id": "UNVERIFIED-ja-sticker-title",
+      "url": "https://zprintpro.com/ja/category/stickers/",
+      "variable": "title only",
+      "verdict": "UNVERIFIED_TODAY",
+      "reason": "今日未抓; 83 当量为 11-04 携带值"
+    },
+    {
+      "id": "UNVERIFIED-en-books-title",
+      "url": "https://zprintpro.com/en/category/books/",
+      "variable": "title only",
+      "verdict": "UNVERIFIED_TODAY",
+      "reason": "今日未抓; 75 当量为 11-04 携带值"
+    }
+  ],
+  "lane_discipline": {
+    "no_page_change": true,
+    "no_queue_flip": true,
+    "no_title_change": true,
+    "shared_files_untouched": [
+      "src/",
+      "GSC数据/",
+      "docs/",
+      "strategy-task-queue.json",
+      "lane-status.json",
+      "lane-runs.jsonl"
+    ]
+  }
+}

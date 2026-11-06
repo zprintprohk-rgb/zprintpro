@@ -1,0 +1,254 @@
+{
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T20:13:00+08:00",
+  "report": ".hermes/logs/2026-11-06-ZP-gsc-feedback.md",
+  "gate_file": ".hermes/logs/gsc-2026-11-06-weekly-meta-gate.json",
+  "idempotency_key": "4701da413249cbb9",
+  "run_kind": "每日证据轮 (无新原始数据; 相邻窗增量 + 20:52 批进场门)",
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-11-06 20:13:03 (preflight ok; retry_queue 2; lock pid 5308)",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-04 06:43 (local; 未重建 2 天; verdict=ATTENTION; problems=2)",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+    "prompts": [
+      ".hermes/cron-prompts/zprintpro-gsc-feedback-loop.md",
+      ".hermes/cron-prompts/sop-10-gate.md"
+    ],
+    "api_csv": [
+      "GSC数据/gsc-query-country-28d-end1105.csv (1507 行 / 74 clk / 8115 imp / 窗 2026-10-08..11-04)",
+      "GSC数据/gsc-query-country-28d-end1104.csv (8433 imp / 78 clk / 窗 2026-10-07..11-03)"
+    ],
+    "analyst_artifacts": [
+      ".hermes/logs/gsc-2026-11-05-analyst-anomaly.json (taskj 五测 + 466 行池 + pool_total_imps 1530)",
+      ".hermes/logs/gsc-2026-11-05-api-pull-end1105.json (拉取回执 + 相邻窗位移 -4 clk / -318 imp)",
+      "docs/2026-11-05-pool-snippet-evidence-sweep.md (池行 snippet + 页级归因实证)",
+      "docs/2026-11-04-weekly-meta-execution-sheet-1106.md (11-06 逐字稿 + E/F 增补)"
+    ],
+    "other": [
+      ".hermes/logs/2026-11-06-ZP-daily-content.md (18:17 sibling, 零 src)",
+      ".hermes/logs/2026-11-05-ZP-k3-review.md",
+      ".hermes/logs/2026-11-05-ZP-gsc-feedback.md (AUTO-FILL BLOCKED)",
+      ".hermes/logs/lane-runs.jsonl (100 条; 11-06 仅 daily 18:17)",
+      ".hermes/logs/strategy-task-queue.json (READY 1 / SCHEDULED 1 关键 / WAITING_K3 5)",
+      ".hermes/logs/gsc-cliff-2026-11-03.json (最后官方 123.7%)",
+      "GSC数据/index.json (lastBuild 2026-11-05; 256 文件)"
+    ]
+  },
+  "data_planes": {
+    "rule": "两平面分开报, 不相减不换算 (A24/A25)",
+    "api": {
+      "file": "gsc-query-country-28d-end1105.csv",
+      "data_day": "2026-11-04",
+      "age_hours_at_2013": 44,
+      "status": "FRESH",
+      "margin_to_72h": "28h (11-08 00:00 到线)",
+      "totals": "1507 行 / 74 clk / 8115 imp",
+      "prev_adjacent": "end1104: 8433 imp / 78 clk (窗 10-07..11-03)",
+      "adjacent_delta": "-318 imp (-3.8%) / -4 clk (-5.1%); 27/28 天重叠, 差值=11-04 当日 - 10-07 当日, 该导出粒度内算术恒等",
+      "pull_today": false,
+      "note": "今日无 end1106 拉取 ⇒ 任务J 无第六测; 也不得重拉 end1105"
+    },
+    "xlsx": {
+      "batch": "2026-11-03 批 (K3 11-03 06:15 导出)",
+      "data_day": "2026-10-31",
+      "age_hours_at_2013": 140,
+      "status": "STALE",
+      "stale_days": 3,
+      "missing_exports": ["2026-11-04", "2026-11-05", "2026-11-06"],
+      "kpi_refresh": false,
+      "carried_values": {
+        "24h": "23 clk / 977 imp / 2.35% / 15.93 (窗止 2026-11-03 02:00, age 90h)",
+        "7d": "132 / 6255 / 2.11% / 15.60",
+        "28d": "504 / 22114 / 2.28% / 14.03",
+        "3mo": "1279 / 65252 / 1.96% / 17.35"
+      }
+    },
+    "detector": {
+      "file": null,
+      "status": "available:false",
+      "missing_days": ["2026-11-04", "2026-11-05", "2026-11-06"],
+      "consecutive_missing": 3
+    },
+    "index": {
+      "lastBuild": "2026-11-05",
+      "totalFiles": 256,
+      "latestFreshData": "2026-11-03",
+      "verdict": "FRESH (72h 门)",
+      "note": "index 重建了 11-05 批次, 但 latestFreshData 仍 11-03 (xlsx 未更新); 不是失败证据"
+    }
+  },
+  "recovery": {
+    "available": false,
+    "reason": "第 3 日无当日 detector + 无 11-04..11-06 四档 xlsx; API query×country 无 24h 维度与 pre-cliff 分母, 不能替代 (A26)",
+    "last_official": {
+      "value": 123.7,
+      "ratio": "977 / 789.8",
+      "caliber": "full-country",
+      "source": "gsc-cliff-2026-11-03.json",
+      "window_24h_end": "2026-11-03T02:00",
+      "evidence_age_hours": 90
+    },
+    "series": [
+      {"date": "2026-10-29", "ratio": 105.8, "imps": 793, "clicks": 15, "denom": 749.2},
+      {"date": "2026-10-30", "ratio": 117.7, "imps": 888, "clicks": 15, "denom": 754.5},
+      {"date": "2026-11-03", "ratio": 123.7, "imps": 977, "clicks": 23, "denom": 789.8}
+    ],
+    "streak": "3 个 fresh 点单调抬升, 但 10-31/11-01/11-02/11-04/11-05/11-06 无新点 ⇒ 「连续 3 日抬升 = 再评估启动」未触发 (冻结第 3 天)",
+    "level": "指标层面 >=90% = 基本恢复; 但这是 11-03 的读数, 不是今日; 处罚解除/排名恢复/索引覆盖 = UNKNOWN",
+    "forbidden_calibers": {
+      "167.0": "977 / 585.2 固定基线; A17 明令不得当恢复系数",
+      "129.5": "977 / 754.5 旧动态分母; A31 不得与 123.7% 同线"
+    }
+  },
+  "taskj": {
+    "status": "FIFTH_TEST_INHERITED (end1105, 2026-11-05 分析师计算); 本车道复核 8/8 行; 今日无第六测",
+    "method": "query×country hkg imp-weighted pos",
+    "delta_4th_to_5th": [
+      {"kw": "包裝盒印刷", "imp_4": 50, "imp_5": 49, "pos_4": 33.38, "pos_5": 33.33, "dpos": -0.05},
+      {"kw": "包裝盒訂製", "imp_4": 50, "imp_5": 47, "pos_4": 34.98, "pos_5": 35.30, "dpos": 0.32},
+      {"kw": "紙盒印刷", "imp_4": 47, "imp_5": 47, "pos_4": 37.32, "pos_5": 37.32, "dpos": 0.0},
+      {"kw": "貼紙印刷", "imp_4": 119, "imp_5": 114, "pos_4": 37.56, "pos_5": 38.09, "dpos": 0.53},
+      {"kw": "宣傳單張", "imp_4": 120, "imp_5": 118, "pos_4": 34.36, "pos_5": 34.44, "dpos": 0.08},
+      {"kw": "即日印刷", "imp_4": 54, "imp_5": 53, "pos_4": 7.48, "pos_5": 7.40, "dpos": -0.08},
+      {"kw": "書刊印刷", "imp_4": 115, "imp_5": 110, "pos_4": 32.78, "pos_5": 32.88, "dpos": 0.10},
+      {"kw": "騎馬釘", "imp_4": 67, "imp_5": 65, "pos_4": 19.46, "pos_5": 19.54, "dpos": 0.08}
+    ],
+    "conclusion": "包裝盒簇由「连续两窗同向微退」转为**平台期** (第三次相邻窗: -0.05 / +0.32 / 0.00, 无单调恶化); 貼紙回吐 +0.53 但仍 38.09 深位 0 点击; 即日印刷唯一有点击锁词 (1 clk / 7.40, 微进 0.08)"
+  },
+  "money_rows_checked": [
+    {"kw": "食品包裝印刷", "country": "hkg", "clk": 0, "imp": 112, "pos": 8.39, "prev_pos_end1104": 8.41, "prev_pos_end1103": 8.53, "read": "页1 最大单点 CTR 洞, 连续第 2 窗; 位置三窗微进 (8.53 -> 8.41 -> 8.39) 但 0 点击"},
+    {"kw": "食品印刷", "country": "hkg", "clk": 0, "imp": 62, "pos": 7.48, "prev_pos_end1104": 7.64, "read": "同族, 略进 0.16 仍 0 点击"},
+    {"kw": "燙金利是封", "country": "jpn", "clk": 0, "imp": 29, "pos": 1.0, "prev_imp": 33, "read": "连续 3 窗 jpn pos 1.00 / 0 点击 (季节窗)"},
+    {"kw": "燙金利是封", "country": "hkg", "clk": 0, "imp": 2, "pos": 1.0, "read": "hkg 侧体量极小"},
+    {"kw": "a1海報", "country": "twn", "clk": 0, "imp": 27, "pos": 1.0, "read": "与上一窗逐位相同 (3@3.33 hkg + 27@1.00 twn)"},
+    {"kw": "大信封", "country": "hkg", "clk": 0, "imp": 35, "pos": 4.2, "prev_pos": 4.03, "read": "top-5 零点击第 3 个月; 另有 5 国 6 imp"},
+    {"kw": "海報印刷", "country": "hkg", "clk": 1, "imp": 245, "pos": 14.8, "prev_imp": 251, "read": "簇头唯一点击, CTR 0.41%"},
+    {"kw": "海報尺寸", "country": "hkg", "clk": 0, "imp": 19, "pos": 4.53, "prev_pos": 4.85, "read": "top-5 零点击"},
+    {"kw": "海報size", "country": "hkg", "clk": 0, "imp": 27, "pos": 9.19, "read": "逐位相同"},
+    {"kw": "月曆印刷", "country": "hkg", "clk": 0, "imp": 118, "pos": 24.81, "prev_pos": 24.61, "read": "平台; copy 修复窗 11-10"},
+    {"kw": "喜帖印刷", "country": "hkg", "clk": 0, "imp": 12, "pos": 33.75, "prev_pos_end1104": 31.92, "earlier_api_reference": 28.0, "read": "相邻两 API 窗继续恶化 (31.92 -> 33.75, +1.83); xlsx 16.13/29.40 属另一平面, 不与本条连线"},
+    {"kw": "教材 印刷製本", "country": "jpn", "clk": 0, "imp": 46, "pos": 30.87, "read": "两窗逐位相同 (46@30.87) ⇒ 恶化停止, 平台"},
+    {"kw": "小冊子印刷", "country": "hkg", "clk": 0, "imp": 34, "pos": 10.5, "prev_imp": 37, "read": "页1 底缘, 实体 ranker 为 saddle-stitch blog"},
+    {"kw": "貼紙印刷", "country": "hkg", "clk": 0, "imp": 114, "pos": 38.09, "read": "O8 HOLD 维持, 距 <=25 目标 13 位"},
+    {"kw": "doujinshi printing", "country": "usa", "clk": 0, "imp": 34, "pos": 10.91, "prev_imp": 37, "read": "页1 边缘, 12 国长尾 (多数 1 imp)"},
+    {"kw": "small batch sticker printing", "country": "usa", "clk": 0, "imp": 26, "pos": 6.0, "prev_pos": 5.83, "read": "页1 零点击, 摘要/MOQ 钩子假设待 11-07"},
+    {"kw": "china catalog printing", "country": "usa", "clk": 0, "imp": 55, "pos": 14.6, "read": "42 行中最大单国; 页2 顶"}
+  ],
+  "data_integrity_checks": {
+    "identical_rows_4th_vs_5th": [
+      "紙盒印刷 47@37.32",
+      "a1海報 hkg 3@3.33 + twn 27@1.00",
+      "教材 印刷製本 46@30.87",
+      "海報size 27@9.19"
+    ],
+    "explanation": "低量词 (1-2 imp/日) 在换入/换出日皆为 0 展示时会逐位相同; 同批相邻行 (食品印刷/小批貼紙/月曆/喜帖) 均有变化 ⇒ 不判 CSV 复读/缓存",
+    "caliber_note": "end1104 与 end1105 都是同脚本同维度拉取 (--days 28), 相邻窗 27/28 重叠 ⇒ 差值仅代表单日换手, 不代表趋势"
+  },
+  "page1_pool": {
+    "rule_drift": {
+      "prev_rule_11_04": "clicks=0 AND imp>=20 AND pos<11 ⇒ 16 行 / 632 imp",
+      "analyst_rule_11_05": "clicks=0 AND pos<=10 (无 imp 门槛) ⇒ 466 行 / 1530 imp",
+      "verdict": "RULES_NOT_COMPARABLE",
+      "warning": "不得写「池从 16 行扩到 466 行」; 两数是不同指标. 11-05 分析师 JSON 只公布 20 个具名行, 其余聚合不可回溯 ⇒ 16 行口径今日**不可重算** (无脚本)"
+    },
+    "top5_zero_click": [
+      {"kw": "燙金利是封", "countries": ["hkg", "jpn"], "imp": 31, "pos_w": 1.0},
+      {"kw": "a1海報", "countries": ["hkg", "twn"], "imp": 30, "pos_w": 1.23},
+      {"kw": "alipay flash collect", "countries": ["jpn", "kor", "mng", "mys", "nld", "sgp", "tha", "usa"], "imp": 21, "pos_w": 3.24},
+      {"kw": "large envelope", "countries": ["cze", "hrv", "kor", "lva", "qat", "rou", "tur", "vnm"], "imp": 17, "pos_w": 3.7},
+      {"kw": "大信封", "countries": ["arg", "can", "hkg", "mys", "pak", "usa"], "imp": 40, "pos_w": 4.17, "csv_row_sum_imp": 41, "note": "JSON 聚合 40 与逐行相加 41 差 1; pos_w 4.17 亦无法由这些行的 imp 加权复算 (hkg 单行 4.20); 点名行以 CSV 为准"},
+      {"kw": "海報尺寸", "countries": ["hkg"], "imp": 19, "pos_w": 4.53}
+    ],
+    "new_entrants": {
+      "alipay_flash_collect": "支付方式 how-to 类 query 在 8 个市场 pos 3.24 / 21 imp / 0 clk — 与印刷钱词无关, 记 cross-intent 观察, 不改页",
+      "large_envelope": "英文单数变体在 8 个非目标市场 (cze/hrv/kor/lva/qat/rou/tur/vnm) pos 3.70 / 17 imp / 0 clk — 非 usa/gbr/aus; 疑似全球兜底排名, 交 monthly 判读, 本车道不动"
+    },
+    "gate": "只进候选池; 需真实 SERP feature + before snippet; 每页 1 变量; 禁据池改 title/desc"
+  },
+  "batch_gate": {
+    "file": ".hermes/logs/gsc-2026-11-06-weekly-meta-gate.json",
+    "summary": {
+      "B1_poster_blog_desc": "NO_GO_AS_WRITTEN (desc 拟价 HK$16/HK$20 vs 页内 HK$9/HK$45; 与同页 title HK$9 同摘要自相矛盾)",
+      "B1b_food_blog_desc": "GO_ON_TRUTH (7 项数字全在本页正文可核)",
+      "B2_packaging_category_desc": "UNVERIFIED_TODAY",
+      "B3_ja_textbook_desc": "UNVERIFIED_TODAY",
+      "B4_en_catalog_title_desc": "UNVERIFIED_TODAY",
+      "B5_ja_foil_desc": "HOLD_A38",
+      "overdue_en_sticker_title": "OVERDUE_DAY2_UNCHANGED (线上 title 逐字未变)",
+      "ja_sticker_title": "UNVERIFIED_TODAY",
+      "en_books_title": "UNVERIFIED_TODAY"
+    },
+    "price_truth_evidence": {
+      "poster_blog": "A2 HK$9 / A1 HK$45 / A0 HK$144 (正文)",
+      "poster_category_spec": "A2 HK$16 起 / A1 HK$20 起 (技术规格段)",
+      "poster_category_card_A2": "HK$2.20/張起 + 整批 HK$160 (10 張 ⇒ HK$16/張)",
+      "poster_category_card_A1": "HK$29.00-45.00/張起",
+      "a2_product_title": "HK$16/張",
+      "conclusion": "A2 至少 3 值 (9 / 16 / 2.20), A1 至少 3 值 (20 / 29-45 / 45) — FIX-20261031-FIVE-CATEGORY-TRUTH 的新证据, 不是本车道可裁决项"
+    }
+  },
+  "anomalies": {
+    "A1_DATA_STALE": "DUAL_PLANE_DAY3: API 44h FRESH / xlsx 140h STALE / detector 缺 3 日",
+    "A2_FROZEN_24H_CHAIN": "OPEN_DAY3 (24h 窗止 11-03 02:00, 证据龄 90h)",
+    "A19_3MO": "OPEN (3mo 仍 11-03 批, 140h)",
+    "A20_NO_FRESH_EXPORT": "OPEN_DAY3 (11-04/05/06 均无四档)",
+    "A26_RECOVERY_METRIC": "OPEN (第 3 日 available:false)",
+    "A28_MONTHLY": "OPEN_DAY6 (11-01 MISSING, 2147946720, next 12-01)",
+    "A31_DUAL_DENOM": "UNCHANGED (789.8 / 754.5)",
+    "A34_PAGE1_POOL": "RULE_DRIFT (16/632 vs 466/1530 不可比; 今日不可重算)",
+    "A35_LOCALE_COUNTRY": "UNCHANGED (燙金 jpn / a1海報 twn 均 pos 1 / 0 clk; 无 page join)",
+    "A36_XLSX_NOT_REFRESHED": "ESCALATED_P1_DEAD_LETTER_CANDIDATE (3 日 3 次同因; 契约 §2.4 同因连续 2 次应停自动重试)",
+    "A37_GIT_SSH": "UNCHANGED (host 侧 push; 本车道看不到今日 push 结果)",
+    "A38_JA_ZH_FRAGMENTS": "OPEN (11-05 两次抓取复现; 今日未重抓, 内容车道 owner)",
+    "A39_POOL_RULE_DRIFT": "NEW (同叫「页1零点击池」两套阈值, 466/1530 与 16/632 不可比)",
+    "A40_CROSS_INTENT_TOPN": "NEW (alipay flash collect / large envelope 在非目标市场 top-5 零点击; 交 monthly 判读)",
+    "A41_BATCH_PRICE_CONFLICT": "NEW P1 (11-06 批1 拟改 desc 价格与目标页正文/标题冲突, 若逐字执行将把冲突写进 SERP 摘要)",
+    "A42_TITLE_EQ_CALIBER": "NEW P3 (同一字符串: 队列记 100 当量 / 11-05 车道测 104; 两值均 >58, 结论不变但口径需统一)",
+    "A43_RUN_GAP_PATTERN": "NEW P2 (11-04 daily 21:17 / 11-05 watchdog 06:43 / 11-06 k3 07:10 三处缺跑; lane-status 停在 11-04 06:43)",
+    "NEW-6": "OPEN (池规则漂移, 今日不可比)",
+    "NEW-8": "CONFIRMED_TWO_ADJACENT_API_WINDOWS (喜帖 31.92 -> 33.75, +1.83; 更早窗 API 28.00 仅参照)",
+    "NEW-10": "FLATTENED (包裝盒簇第三窗 -0.05/+0.32/0.00, 恶化停止)",
+    "NEW-11": "OPEN (食品包裝 112@8.39 / 0 clk)",
+    "NEW-13": "NEW (A2/A1 海报价各 >=3 值, 已落到 category 页, 不只首页)"
+  },
+  "tasks": {
+    "O1": "MANUAL_PULL_ONLY (今日无拉取; end1105 为 11-05 人工)",
+    "O2": "WAITING_K3 (恢复 SSoT; 第 3 日缺料反而强化 A 方案)",
+    "O3": "FIFTH_TEST_INHERITED / NO_SIXTH_TODAY",
+    "O4": "SCHEDULED_TODAY_2052 (门: B1 NO-GO / B1b GO / 其余 UNVERIFIED)",
+    "O5": "DELIVERED_CANDIDATES (11-03 清单有效)",
+    "O6": "DECISION_DUE_TODAY (11-06; 本车道只交证据)",
+    "O7": "SCHEDULED_TODAY_2052 (月曆 118@24.81, copy 窗 11-10)",
+    "O8": "HOLD (38.09; 11-07 复测)",
+    "O9": "OPEN (教材 30.87 平台; monthly 缺)",
+    "O10": "INTENT_MISMATCH_OPEN (喜帖 33.75, 4 窗恶化; 承接页 = thank-you-cards)",
+    "O11": "SCHEDULED_TODAY_2052 (利是封 54/1clk + 燙金 jpn 1.00)",
+    "O12": "DONE_BY_PEER_PARTIAL (S2 11-20..24)",
+    "queue_write": "零写入; 未翻转任何 SCHEDULED/WAITING_K3/READY"
+  },
+  "candidate_tasks": [
+    {"id": "GSC-20261106-C1", "route": "FIX", "target": "11-06 批1 desc 价格冲突: 去价格或改口径", "owner": "weekly-meta + K3(价格真值)", "gate": "A41; 禁逐字执行"},
+    {"id": "GSC-20261106-C2", "route": "FIX", "target": "逾期 sticker title (en 100/104, ja 83)", "owner": "weekly-meta", "gate": "title-v5 + 单批"},
+    {"id": "GSC-20261106-C3", "route": "FIX", "target": "数据面: 11-04..11-06 四档 + detector + --end 2026-11-05", "owner": "K3-admin", "gate": "同因第 3 次 ⇒ 停止自动重试, 等人工"},
+    {"id": "GSC-20261106-C4", "route": "MEASURE", "target": "A2/A1 海报价 3 值归并 (D3/FIVE-CATEGORY-TRUTH)", "owner": "K3", "gate": "价格真值不可由执行层自决"},
+    {"id": "GSC-20261106-C5", "route": "MEASURE", "target": "池指标口径统一 (16/632 规则写死为 SSoT)", "owner": "monthly / 分析师", "gate": "A39; 不改今日结论"}
+  ],
+  "next_checks": [
+    {"date": "2026-11-06 20:52", "what": "weekly-meta 单批 (B1b GO / B1 改稿 / sticker title)", "pass": "单变量 + title-v5 + 复测日"},
+    {"date": "2026-11-07 23:47", "what": "blog-deepfix 复测 + 貼紙 14 天第二窗", "pass": "同词同页同窗, 写 before→after"},
+    {"date": "2026-11-08", "what": "API 面到 72h 线 (11-08 00:00)", "pass": "有 end1107 拉取则继续 FRESH"},
+    {"date": "2026-11-10", "what": "月曆 copy (c0552853) 7 天效果", "pass": "imp >= 基线 80% 且带钱词 >=1 clk"},
+    {"date": "2026-11-13", "what": "B1/B1b 若上线后 7d CTR", "pass": "同词同页同窗, 基线 245/1 与 112/0"},
+    {"date": "2026-11-20", "what": "GEO S2 引用 URL 补全", "pass": "engine/date/answer/citation URL 四要素"},
+    {"date": "2026-12-01", "what": "monthly 自然触发", "pass": "run 记录 + 月复盘报告"}
+  ],
+  "write_isolation": {
+    "written": [
+      ".hermes/logs/2026-11-06-ZP-gsc-feedback.md",
+      ".hermes/logs/gsc-daily-anomaly-2026-11-06.json",
+      ".hermes/logs/gsc-2026-11-06-weekly-meta-gate.json",
+      ".hermes/industry-keyword-matrix.json (只追加一个 block)"
+    ],
+    "untouched": ["src/", "GSC数据/", "docs/", "strategy-task-queue.json", "lane-status.json", "lane-runs.jsonl", "同侪报告"]
+  }
+}
