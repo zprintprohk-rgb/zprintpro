@@ -65,3 +65,11 @@
 - 运行面: lane-runs.jsonl + 2026-11-06-ZP-weekly-meta.md (AUTO-FILL BLOCKED) + daily 11-06 报告 (R2-R10 K3 待批)
 校准状态: 🟢 已校准 — 三法对照贴纸 + 两法年賀状 + title 当量门童实测 + 修复对保留/移除逐项标注
 ```
+
+---
+
+## 6. 推送状态补记（收尾实测，非初始计划）
+
+- **push 被 pre-push 门童 #21 拦截**（PUSH_EXIT=1）：`[RULE-TRANSLATION-GUARD] 4 处规则翻译层漂移` — 对端 11-07 10:37 会话修改 `zprintpro-daily-content-1x7w.md` / `zprintpro-blog-deepfix.md` / `zprintpro-weekly-meta-refresh.md`（SSoT 生成位置）后**未同步 `rule-translation-guard.js --stamp` 台账** → 全仓任何 push 被拦（门童 #21 口径：SSoT/生成位置/门禁断言三者绑定）
+- **处置（代持禁止）**：不替对端 stamp；本 commit `bbbbe05e`（报告 + bus + title-equiv 证据）**留本地**，待对端提交其 prompt 改动 + stamp 后随下轮 push；bus 记录已就地修正 `pushed=false`
+- 其余门童全 PASS（12 段骨架 324 PASS / 0 FAIL、基线对账 0 新增）—— 本批内容干净，仅对端在途 prompt 改动触发全仓闸
