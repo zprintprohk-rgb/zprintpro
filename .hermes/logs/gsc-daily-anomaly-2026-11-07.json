@@ -1,0 +1,720 @@
+{
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T20:13:03+08:00",
+  "report": ".hermes/logs/2026-11-07-ZP-gsc-feedback.md",
+  "idempotency_key": "9b2ebe84434083de",
+  "run_kind": "daily four-window differential + money-keyword handoff (no page writes)",
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-11-07 20:13:03 (preflight 9/9 ok; retry_queue 1; lock pid 11776)",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-04 06:43 local (STALE_STATUS: 3 days old; verdict=ATTENTION; problems=2)",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+    "prompts": [
+      ".hermes/cron-prompts/zprintpro-gsc-feedback-loop.md",
+      ".hermes/cron-prompts/sop-10-gate.md"
+    ],
+    "raw_xlsx": [
+      "GSC数据/24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07 (1).xlsx",
+      "GSC数据/7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+      "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+      "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx (carried; no 11-07 3mo)"
+    ],
+    "analysis_artifacts": [
+      ".hermes/logs/gsc-2026-11-07-workbook-schema.json (10:00)",
+      ".hermes/logs/gsc-2026-11-07-four-window-analysis.json (10:31)",
+      ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json (10:31)",
+      ".hermes/logs/periodic-review-weekly-2026-11-07.json/.md (10:43)"
+    ],
+    "attribution_baseline": ".hermes/logs/money-kw-share-baseline-2026-10-31.md (query x page join, 2026-10-31; attribution only, not current KPI)",
+    "siblings": [
+      ".hermes/logs/2026-11-07-ZP-daily-content.md (18:17 harness; src zero writes)",
+      ".hermes/logs/2026-11-06-ZP-weekly-meta.md (AUTO-FILL BLOCKED: strategy-feedback exited 1)",
+      ".hermes/logs/lane-runs.jsonl (104 records; 11-07 k3-review 07:10 absent)",
+      ".hermes/logs/strategy-task-queue.json",
+      "GSC数据/index.json (lastBuild 2026-11-05; latestFreshData 2026-11-03)"
+    ]
+  },
+  "status_gate": {
+    "verdict": "STALE_STATUS",
+    "lane_status_generated_local": "2026-11-04 06:43",
+    "lane_status_age_days": 3,
+    "guard": "No lane-repair task dispatched from the stale status. Manual bus/scheduler reconciliation used instead; lane-status.json was not rewritten (shared run evidence, not a lane artifact).",
+    "bus_reconciliation": {
+      "records": 104,
+      "last_runs": [
+        "2026-11-06 20:24 gsc-feedback OK (head 5f0d8e1d)",
+        "2026-11-06 20:52 weekly-meta BLOCKED (preflight: strategy-feedback exited 1; key_consumed false)",
+        "2026-11-06 21:26 daily-content OK (head 3566b962)",
+        "2026-11-07 18:17 daily-content OK (harness; push blocked by guard #21)"
+      ],
+      "gaps": [
+        "2026-11-07 07:10 k3-review: no bus record and no report (4th run gap)",
+        "2026-11-01 12:13 monthly-matrix: MISSING; scheduler LastTaskResult=2147946720 (7th day)"
+      ]
+    }
+  },
+  "data_status": "XLSX_2026_11_07_PARTIAL_3MO_CARRIED",
+  "data_availability": {
+    "xlsx_batch": {
+      "export_date": "2026-11-07",
+      "exported_by": "K3 export 2026-11-07 08:41 (per 2026-11-07-ZP-daily-content.md)",
+      "windows_present": ["24h", "7d", "28d"],
+      "windows_missing": ["3mo"],
+      "windows_detail": {
+        "24h": "2026-11-06T03:00:00..2026-11-07T02:00:00 (24 hourly observations)",
+        "7d": "2026-10-29..2026-11-04",
+        "28d": "2026-10-08..2026-11-04",
+        "3mo": "carried 2026-11-03: 2026-08-01..2026-10-31"
+      },
+      "status": "FRESH_PARTIAL",
+      "note": "Fresh xlsx inventory does not prove the API plane is fresh; the two planes are reported separately."
+    },
+    "api_pull": {
+      "latest": "GSC数据/gsc-query-country-28d-end1105.csv",
+      "data_day": "2026-11-04",
+      "age_hours_at_2013": 68.2,
+      "margin_to_72h_hours": 3.8,
+      "status": "FRESH_UNTIL_2026_11_08_00_00",
+      "pulled_today": false,
+      "caliber": "query x country API export, 1,507 rows, 28d window ending 2026-11-04; not comparable to all-country xlsx totals"
+    },
+    "detector": {
+      "file": null,
+      "status": "available:false",
+      "error": "python scripts/gsc-cliff-detector.py failed once: uv trampoline could not spawn Python child (entity not found, os error 2); not retried",
+      "missing_days": ["2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07"]
+    },
+    "index": {
+      "lastBuild": "2026-11-05T07:38:00+08:00",
+      "totalFiles": 256,
+      "latestFreshData": "2026-11-03",
+      "verdict": "INDEX_LAGS_EXPORT",
+      "note": "The 11-07 export is proven by file presence and parsed sheets, not by index.json; index was not rebuilt after the 11-07 export."
+    }
+  },
+  "kpi_xlsx_4windows": {
+    "24h": {
+      "window": "2026-11-06T03:00:00..2026-11-07T02:00:00",
+      "observations": 24,
+      "clicks": 12,
+      "impressions": 803,
+      "ctr_pct": 1.4944,
+      "position": 12.5218,
+      "previous_2026_11_03": {
+        "window": "2026-11-02T03:00:00..2026-11-03T02:00:00",
+        "clicks": 23,
+        "impressions": 977,
+        "ctr_pct": 2.3541,
+        "position": 15.9332
+      },
+      "delta": {
+        "clicks": -11,
+        "clicks_pct": -47.8,
+        "impressions": -174,
+        "impressions_pct": -17.8,
+        "ctr_pp": -0.8597,
+        "position_delta_positive_is_worse": -3.4114
+      },
+      "read": "Health signal only. Different weekday (Tue vs Fri) and one-day sample; never compared with 28d position."
+    },
+    "7d": {
+      "window": "2026-10-29..2026-11-04",
+      "observations": 7,
+      "clicks": 135,
+      "impressions": 6912,
+      "ctr_pct": 1.9531,
+      "position": 15.9627,
+      "previous_2026_11_03": {
+        "window": "2026-10-25..2026-10-31",
+        "clicks": 132,
+        "impressions": 6255,
+        "ctr_pct": 2.1103,
+        "position": 15.5953
+      },
+      "delta": {
+        "clicks": 3,
+        "clicks_pct": 2.27,
+        "impressions": 657,
+        "impressions_pct": 10.5,
+        "ctr_pp": -0.1572,
+        "position_delta_positive_is_worse": 0.3674
+      },
+      "read": "Risk window: impressions up 10.5% but CTR down 0.157pp and average position worse. Overlap is only 3 of 7 days; this is a 4-day roll, not an experiment."
+    },
+    "28d": {
+      "window": "2026-10-08..2026-11-04",
+      "observations": 28,
+      "clicks": 538,
+      "impressions": 23183,
+      "ctr_pct": 2.3207,
+      "position": 14.2796,
+      "previous_2026_11_03": {
+        "window": "2026-10-04..2026-10-31",
+        "clicks": 504,
+        "impressions": 22114,
+        "ctr_pct": 2.2791,
+        "position": 14.0266
+      },
+      "delta": {
+        "clicks": 34,
+        "clicks_pct": 6.75,
+        "impressions": 1069,
+        "impressions_pct": 4.83,
+        "ctr_pp": 0.0416,
+        "position_delta_positive_is_worse": 0.253
+      },
+      "read": "Volume and CTR up slightly; average position slightly worse. 24 of 28 days overlap; movement is not an independent SEO outcome."
+    },
+    "3mo": {
+      "carried": true,
+      "export_date": "2026-11-03",
+      "window": "2026-08-01..2026-10-31",
+      "observations": 92,
+      "clicks": 1279,
+      "impressions": 65252,
+      "ctr_pct": 1.9601,
+      "position": 17.355,
+      "monthly_partition": {
+        "2026-08": {"clicks": 321, "impressions": 19031, "ctr_pct": 1.6867, "position": 25.1262},
+        "2026-09": {"clicks": 413, "impressions": 22162, "ctr_pct": 1.8636, "position": 14.2209},
+        "2026-10": {"clicks": 545, "impressions": 24059, "ctr_pct": 2.2653, "position": 14.0948}
+      },
+      "read": "Background only; no 2026-11-07 3mo export. Calendar months partition the same daily chart and do not prove a September-change effect."
+    }
+  },
+  "recovery": {
+    "available": false,
+    "official_headline": "Last official 123.7% (977 / 789.8, full-country, 24h window ending 2026-11-03T02:00, gsc-cliff-2026-11-03.json)",
+    "headline": "96.98% DERIVED_SAME_BATCH (803 / 827.96), not a detector output; last official remains 123.7%",
+    "formula": "803 / (23183 / 28) = 803 / 827.9643 = 0.96985",
+    "derived": {
+      "value_pct": 96.98,
+      "numerator_imps": 803,
+      "denominator_mean28_imps": 827.9643,
+      "caliber": "full-country, same 2026-11-07 batch (24h numerator / 28d daily mean)",
+      "status": "PROVISIONAL_NOT_DETECTOR"
+    },
+    "decomposition_vs_last_official": {
+      "numerator_change_pct": -17.8,
+      "denominator_change_pct": 4.84,
+      "ratio_change_pct": -21.6,
+      "note": "The 26.7-point drop (123.7 to 96.98) is a relative ratio, not an absolute traffic index. The denominator moved with the rolling 28d window."
+    },
+    "series": [
+      {"date": "2026-10-29", "ratio_pct": 105.8, "imps": 793, "clicks": 15, "denom": 749.2},
+      {"date": "2026-10-30", "ratio_pct": 117.7, "imps": 888, "clicks": 15, "denom": 754.5},
+      {"date": "2026-11-03", "ratio_pct": 123.7, "imps": 977, "clicks": 23, "denom": 789.8},
+      {"date": "2026-11-07", "ratio_pct": 96.98, "imps": 803, "clicks": 12, "denom": 827.9643, "status": "DERIVED_NOT_DETECTOR"}
+    ],
+    "streak": "The 3-point monotone rise is not extended: the 11-07 derived point is below the 11-03 point, but the 28d denominator rose 4.8%. No '3 consecutive rises' trigger; no 'recovery lost' claim either.",
+    "level": "The derived 96.98% is approximately parity with the rolling 28d mean. Penalty status, ranking recovery and index coverage remain UNKNOWN.",
+    "forbidden_calibers": {
+      "137.2": "803 / 585.2 fixed pre-cliff baseline; A17 forbids using it as the recovery coefficient",
+      "167.0": "977 / 585.2 fixed baseline for 11-03; same prohibition",
+      "129.5": "977 / 754.5 old dynamic denominator; A31 forbids stringing it with the 123.7% point"
+    },
+    "guard": "Impression-metric ratio only; not ranking, penalty, enquiry, order or revenue recovery."
+  },
+  "money_words_23_xlsx_28d": {
+    "caliber": "Exact-match query rows, all-country 28d xlsx 2026-10-08..2026-11-04. 29 money rows present; query sheet capped at 1,000 rows; missing row is NO_CURRENT_BASELINE, not zero demand.",
+    "rows": {
+      "食品包裝印刷": {"imp": 116, "clk": 0, "pos": 8.36, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "即日印刷": {"imp": 58, "clk": 1, "pos": 7.55, "page1": true, "zero_click": false, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "月曆印刷": {"imp": 125, "clk": 0, "pos": 24.44, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "貼紙印刷": {"imp": 131, "clk": 0, "pos": 37.65, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "印海報": {"imp": 124, "clk": 0, "pos": 14.15, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "海報印刷": {"imp": 261, "clk": 1, "pos": 14.83, "page1": false, "zero_click": false, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "宣傳單張": {"imp": 127, "clk": 0, "pos": 34.73, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "書刊印刷": {"imp": 121, "clk": 0, "pos": 33.08, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "喜帖印刷": {"imp": 16, "clk": 0, "pos": 36.25, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "利是封印刷": {"imp": 59, "clk": 1, "pos": 24.42, "page1": false, "zero_click": false, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "包裝盒印刷": {"imp": 53, "clk": 0, "pos": 33.3, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "small batch sticker printing": {"imp": 27, "clk": 0, "pos": 6.0, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "small batch stickers": {"imp": 19, "clk": 0, "pos": 5.42, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "saddle stitch booklet printing": {"imp": 5, "clk": 0, "pos": 7.4, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "china catalog printing": {"imp": 98, "clk": 0, "pos": 14.15, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_IMPROVEMENT", "transition": "UNCHANGED"},
+      "doujinshi printing": {"imp": 55, "clk": 0, "pos": 9.98, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "ENTERED_PAGE_1"},
+      "large envelopes": {"imp": 1, "clk": 0, "pos": 7.0, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "ENTERED_PAGE_1"},
+      "卒アル販売": {"imp": 16, "clk": 0, "pos": 5.0, "page1": true, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "教材 印刷製本": {"imp": 51, "clk": 0, "pos": 31.49, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "pvc シール": {"imp": 22, "clk": 0, "pos": 15.91, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_IMPROVEMENT", "transition": "UNCHANGED"},
+      "a2 poster": {"imp": 49, "clk": 1, "pos": 25.8, "page1": false, "zero_click": false, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "コミケ 印刷": {"imp": 163, "clk": 0, "pos": 22.88, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_WORSENING", "transition": "UNCHANGED"},
+      "小冊子印刷": {"imp": 34, "clk": 0, "pos": 10.5, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "宣傳單張印刷": {"imp": 117, "clk": 0, "pos": 28.9, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "紙盒印刷": {"imp": 54, "clk": 0, "pos": 36.72, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "貼紙訂製": {"imp": 38, "clk": 0, "pos": 29.29, "page1": false, "zero_click": true, "two_window": "CONFIRMED_TWO_WINDOW_IMPROVEMENT", "transition": "UNCHANGED"},
+      "包裝盒訂製": {"imp": 53, "clk": 0, "pos": 34.43, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "學校印刷": {"imp": 53, "clk": 0, "pos": 19.04, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"},
+      "印書": {"imp": 56, "clk": 0, "pos": 31.38, "page1": false, "zero_click": true, "two_window": "NOT_CONSECUTIVE", "transition": "UNCHANGED"}
+    },
+    "summary": {
+      "exact_rows_present": 29,
+      "page1_count": 8,
+      "page1_zero_click_count": 7,
+      "page1_impressions": 297,
+      "page1_zero_click_impressions": 239,
+      "deep_20plus_count": 15,
+      "three_window_zero_click_rows": 24,
+      "three_window_zero_click_page1_rows": 7,
+      "three_window_zero_click_note": "24 of 29 money rows had 0 clicks in all three exports (2026-10-30, 2026-11-03, 2026-11-07); 7 of the 8 page1 rows did. This is direct c=0 multi-window evidence read row by row, not a new formula.",
+      "total_impressions": 2102,
+      "total_clicks": 4,
+      "note": "The 7-row / 239-impression zero-click pool is computed on the 29 exact-match money rows only. It is not comparable to the 466-row / 1,530-impression pool (different threshold and no impression floor)."
+    },
+    "two_window_rule": "Confirmed two-window direction requires both consecutive windows to move the same way with |delta position| > 0.5. The +0.50 包裝盒印刷 case is exactly at the edge and is not counted; -0.41 貼紙印刷 and +0.42 海報印刷 also fail the gate."
+  },
+  "industry_head_28d": {
+    "rows": {
+      "印刷": {"imp": 78, "clk": 1, "pos": 20.19},
+      "印刷公司": {"imp": 142, "clk": 2, "pos": 26.8, "two_window": "CONFIRMED_TWO_WINDOW_IMPROVEMENT"},
+      "香港印刷": {"imp": 23, "clk": 1, "pos": 13.09}
+    },
+    "missing_current_baseline": ["printing company", "printing services", "印刷廠", "印刷服務", "網上印刷"]
+  },
+  "task_j_locked_words": {
+    "caliber": "Eight v9.3 task-J locked words. Seven are present in the 2026-11-07 28d xlsx exact rows; 騎馬釘 is absent and is NOT replaced by an older API value.",
+    "rows": {
+      "包裝盒印刷": {"imp": 53, "clk": 0, "pos": 33.3, "source": "2026-11-07 28d xlsx"},
+      "紙盒印刷": {"imp": 54, "clk": 0, "pos": 36.72, "source": "2026-11-07 28d xlsx"},
+      "包裝盒訂製": {"imp": 53, "clk": 0, "pos": 34.43, "source": "2026-11-07 28d xlsx"},
+      "貼紙印刷": {"imp": 131, "clk": 0, "pos": 37.65, "source": "2026-11-07 28d xlsx"},
+      "宣傳單張": {"imp": 127, "clk": 0, "pos": 34.73, "source": "2026-11-07 28d xlsx"},
+      "即日印刷": {"imp": 58, "clk": 1, "pos": 7.55, "source": "2026-11-07 28d xlsx"},
+      "書刊印刷": {"imp": 121, "clk": 0, "pos": 33.08, "source": "2026-11-07 28d xlsx"}
+    },
+    "missing_today": [
+      {
+        "query": "騎馬釘",
+        "status": "NO_CURRENT_XLSX_BASELINE",
+        "reason": "Not present in the 2026-11-07 28d xlsx exact rows",
+        "last_known_api_only": {"imp": 65, "clk": 0, "pos": 19.54, "source": "GSC数据/gsc-query-country-28d-end1105.csv", "data_day": "2026-11-04", "country": "hkg"},
+        "rule": "Last-known API value is context only; it is not today's KPI and must not be carried into a current baseline."
+      }
+    ],
+    "summary": "6 of the 7 present words are deeper than position 20; only 即日印刷 is on page 1 (7.55) and only it has a click. 包裝盒 cluster is at the +0.50 threshold edge; 貼紙/宣傳單張/書刊 remain deep with zero clicks."
+  },
+  "page1_transitions": {
+    "entered": ["doujinshi printing", "large envelopes"],
+    "dropped": [],
+    "guard": "large envelopes entered with 1 impression only; that is a sample-size artifact, not a win."
+  },
+  "product_snippet_structure": {
+    "24h": {"share_of_impressions_pct": 35.5, "ctr_pct": 1.05, "non_snippet_ctr_pct": 1.74},
+    "7d": {"share_of_impressions_pct": 38.9, "share_of_clicks_pct": 30.4, "ctr_pct": 1.52, "non_snippet_ctr_pct": 2.23},
+    "28d": {"share_of_impressions_pct": 38.7, "share_of_clicks_pct": 35.3, "ctr_pct": 2.12, "non_snippet_ctr_pct": 2.45, "position": 28.94},
+    "read": "About 39% of 28d impressions and 35% of clicks come from product snippets at position 28.94; snippet CTR is below non-snippet CTR in all three windows. Structural dependency on product rich results; the feed/product truth owner is outside this lane."
+  },
+  "country_28d": {
+    "2026-11-07": {
+      "HK": {"impressions": 13651, "clicks": 382, "ctr_pct": 2.7983, "position": 13.61},
+      "JP": {"impressions": 2720, "clicks": 47, "ctr_pct": 1.7279, "position": 21.28},
+      "US": {"impressions": 2658, "clicks": 33, "ctr_pct": 1.2415, "position": 15.45}
+    },
+    "2026-11-03": {
+      "HK": {"impressions": 12931, "clicks": 358, "ctr_pct": 2.7685, "position": 13.61},
+      "JP": {"impressions": 2466, "clicks": 45, "ctr_pct": 1.8248, "position": 19.52},
+      "US": {"impressions": 2747, "clicks": 33, "ctr_pct": 1.2013, "position": 15.25}
+    },
+    "guard": "Country is searcher location, not locale-site performance. Windows overlap; movement is not an experiment."
+  },
+  "queues": {
+    "opportunity": [
+      {"id": "OPP-20261107-01", "type": "PAGE1_ZERO_CLICK", "size": "7 queries / 239 impressions / 0 clicks", "route": "FIX", "owner_lane": "ZP-weekly-meta"},
+      {"id": "OPP-20261107-02", "type": "PAGE1_ENTRY", "queries": ["doujinshi printing", "large envelopes"], "route": "WATCH", "owner_lane": "ZP-gsc-feedback", "caveat": "large envelopes has 1 impression only"},
+      {"id": "OPP-20261107-03", "type": "TWO_WINDOW_IMPROVEMENT", "queries": ["china catalog printing", "pvc シール", "貼紙訂製", "印刷公司"], "route": "HOLD_RETEST", "owner_lane": "ZP-gsc-feedback"},
+      {"id": "OPP-20261107-04", "type": "PRODUCT_SNIPPET_CTR", "size": "38.7% of 28d impressions / 35.3% of clicks", "route": "MEASURE", "owner_lane": "ZP-monthly-matrix"},
+      {"id": "OPP-20261107-05", "type": "MARKET_CTR_GAP", "detail": "HK 2.80% vs JP 1.73% vs US 1.24% (searcher location, not locale attribution)", "route": "MEASURE", "owner_lane": "ZP-monthly-matrix"}
+    ],
+    "exit": [
+      {"id": "EXIT-20261107-01", "query": "教材 印刷製本", "reason": "20.69 to 28.67 to 31.49 across three exports; ja textbook blog holds 70% share and has a known JPY price conflict", "action": "stop adding ja textbook content until price truth and language are resolved"},
+      {"id": "EXIT-20261107-02", "query": "喜帖印刷", "reason": "16.13 to 29.40 to 36.25; wedding-thank-you-cards PDP holds 73% share for a wedding-invitation query (intent mismatch)", "action": "no content expansion; intent diagnosis first"},
+      {"id": "EXIT-20261107-03", "query": "a2 poster", "reason": "17.20 to 18.68 to 25.80; deep drift", "action": "no new poster content; defend the existing product page"},
+      {"id": "EXIT-20261107-04", "query": "コミケ 印刷", "reason": "18.99 to 22.04 to 22.88; seasonal C109 cycle", "action": "no new page; wait for the event cycle"},
+      {"id": "EXIT-20261107-05", "query": "宣傳單張", "reason": "29.37 to 33.74 to 34.73; category/flyers holds 87% share", "action": "no new flyer article; check snippet/internal links"},
+      {"id": "EXIT-20261107-06", "query": "利是封印刷", "reason": "21.60 to 23.63 to 24.42; seasonal window, red-packets category holds 75%", "action": "protect only, do not expand"},
+      {"id": "EXIT-20261107-07", "query": "印海報", "reason": "12.79 to 13.36 to 14.15 and the only click was lost; likely the same poster blog intent as 海報印刷", "action": "merge intent; no separate page"}
+    ],
+    "internal_friction": [
+      {"id": "IF-20261107-01", "cluster": "posters", "urls": ["/zh-hk/blog/poster-printing-guide/ 1,507 imp @9.11", "/zh-hk/product/a2-posters/ 827 imp @13.01", "/zh-hk/category/posters/ 262 imp @42.85"], "evidence": "10-31 query x page share: 海報印刷 first URL is the blog at 37%, a2 PDP 16%, category not top-2", "status": "HYPOTHESIS_NO_CURRENT_JOIN"},
+      {"id": "IF-20261107-02", "cluster": "books", "urls": ["/zh-hk/category/books/ 631 imp @48.07", "/zh-hk/blog/book-buying-guide/ 417 imp @35.75", "/zh-hk/blog/saddle-stitch-booklet-printing-guide/ 391 imp @10.22", "/zh-hk/product/saddle-stitch-booklets/ 306 imp @37.23"], "evidence": "10-31 share: 書刊印刷 blog 46% vs category 45%; 印書 blog 34% vs category 32% (near-tie rotation)", "status": "HYPOTHESIS_NO_CURRENT_JOIN"},
+      {"id": "IF-20261107-03", "cluster": "stickers", "urls": ["/zh-hk/category/stickers/ 34% share", "/zh-hk/blog/sticker-guide/ 27%", "10 URLs total"], "evidence": "10-31 share baseline; 貼紙訂製 first URL is a blog at 31%, second blog 29%", "status": "HYPOTHESIS_NO_CURRENT_JOIN"}
+    ]
+  },
+  "handoffs": [
+    {
+      "handoff_id": "GSC-20261107-FIX-01",
+      "route": "FIX",
+      "query": "食品包裝印刷",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 116, "clicks": 0, "position": 8.36, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "UNKNOWN", "candidate": "/zh-hk/blog/food-packaging-printing-guide/ 298 imp @7.59 in the page table", "note": "Page table is not a query x page join; candidate only"},
+      "required_action": "Capture the ranking URL, live title/snippet and SERP features first; then propose at most one snippet variable. Do not touch price.",
+      "approval_gate": "Query-to-page attribution plus SERP/snippet evidence before any change; title-v5 gate #27 and commercial-truth check if the title changes.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with a documented blocker."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-02",
+      "route": "FIX",
+      "query": "small batch sticker printing",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 27, "clicks": 0, "position": 6.0, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/en/product/small-batch-stickers/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (100% share)"},
+      "required_action": "Inspect the product page title, snippet and offer (10 MOQ / $0.05) against the query; one variable at a time.",
+      "approval_gate": "Existing SCHEDULED sticker title task FIX-20261104-STICKER-CATEGORY-TITLE-EQ must land first; no second title change in the same window.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "One approved snippet/title change deployed and online-verified, or HOLD with a documented blocker."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-03",
+      "route": "FIX",
+      "query": "small batch stickers",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 19, "clicks": 0, "position": 5.42, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/en/product/small-batch-stickers/", "confidence": "MEDIUM", "source": "singular measured at 100% on 2026-10-31; plural assumed same PDP, not measured"},
+      "required_action": "Verify the ranking URL; if the same PDP, treat as one intent with FIX-02 and do not create a second task.",
+      "approval_gate": "Deduplicate against FIX-02 by URL and query family; no separate page or second snippet change.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Confirmed same-URL family and merged into one FIX, or a documented separate URL with its own evidence."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-04",
+      "route": "FIX",
+      "query": "doujinshi printing",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 55, "clicks": 0, "position": 9.98, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "UNKNOWN", "candidate": "/en/product/doujinshi-printing/ or /en/blog/doujin-* (not joined)", "note": "The zh page /zh-hk/blog/doujin-circle-printing-guide/ has 221 imp @5.93; locale does not prove the EN ranker"},
+      "required_action": "Capture the EN ranking URL and snippet; new page1 entry, so observe one window before any change.",
+      "approval_gate": "One full observation window plus query-to-page attribution; no new content from a single page1 entry.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Attribution recorded; a stable page1 position across two windows before any FIX, otherwise HOLD."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-05",
+      "route": "FIX",
+      "query": "saddle stitch booklet printing",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 5, "clicks": 0, "position": 7.4, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "LOW", "candidate": "/en/blog/saddle-stitch-booklet-printing-guide/ or /en/product/saddle-stitch-booklets/", "note": "5 impressions only; both candidates are inferred from the page table"},
+      "required_action": "Treat as a low-sample watch item; capture the URL and snippet, do not change anything on 5 impressions.",
+      "approval_gate": "Minimum sample threshold (>=20 impressions) before a FIX; otherwise HOLD.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Sample reaches the threshold with a stable page1 position, or HOLD with the sample caveat."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-06",
+      "route": "FIX",
+      "query": "卒アル販売",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 16, "clicks": 0, "position": 5.0, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "UNKNOWN", "note": "No query x page join for this query in the 10-31 baseline"},
+      "required_action": "Capture the ja ranking URL and snippet; pos 5.0 has been identical for three exports, so check for a stale snippet rather than a rank problem.",
+      "approval_gate": "Attribution plus three-window stability evidence before any change.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Snippet source recorded and one approved change online-verified, or HOLD with a documented blocker."
+    },
+    {
+      "handoff_id": "GSC-20261107-FIX-07",
+      "route": "FIX",
+      "query": "large envelopes",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-weekly-meta",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 1, "clicks": 0, "position": 7.0, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "UNKNOWN", "note": "1 impression; entered page1 on a single impression"},
+      "required_action": "Do not act. Record as a sample-size artifact and wait for >=20 impressions.",
+      "approval_gate": "Sample threshold; no snippet/title change from a 1-impression row.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Sample reaches the threshold, or the row disappears; either way no page change from this evidence."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-01",
+      "route": "MEASURE",
+      "query": "コミケ 印刷",
+      "classification": "SEASONAL_MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 163, "clicks": 0, "position": 22.88, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/ja/product/doujinshi-printing/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (94% share)"},
+      "required_action": "Diagnose whether the 22.88 position is a seasonal SERP (event/official pages) or a page-level issue; capture the SERP composition and index status.",
+      "approval_gate": "Measurement only; no new page, article, canonical or redirect. Seasonal timing must be separated from a permanent decline.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Root-cause note with a comparable baseline; next FIX/HOLD decision has an owner and retest date."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-02",
+      "route": "MEASURE",
+      "query": "宣傳單張",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 127, "clicks": 0, "position": 34.73, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/zh-hk/category/flyers/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (87% share)"},
+      "required_action": "Compare the query position (34.73) with the page-level average (23.91) and check snippet/internal-link mismatch; no new article.",
+      "approval_gate": "Measurement only; page-level and query-level numbers are different calibers and cannot be joined in the current export.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Root-cause note or HOLD with a documented blocker; no page added."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-03",
+      "route": "MEASURE",
+      "query": "印海報",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 124, "clicks": 0, "position": 14.15, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "MEDIUM", "candidate": "/zh-hk/blog/poster-printing-guide/ (holds 37% of 海報印刷)", "note": "Variant query not measured in the 10-31 join"},
+      "required_action": "Test whether 印海報 and 海報印刷 resolve to the same URL; if yes, merge the intent and stop treating them as two opportunities.",
+      "approval_gate": "Attribution first; no separate page or second poster article. The poster price truth is WAITING_K3 (FIX-20261031-FIVE-CATEGORY-TRUTH).",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Same-URL merge confirmed, or two distinct URLs with separate evidence; no new page."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-04",
+      "route": "MEASURE",
+      "query": "利是封印刷",
+      "classification": "SEASONAL_MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 59, "clicks": 1, "position": 24.42, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/zh-hk/category/red-packets/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (75% share)"},
+      "required_action": "Protect the seasonal page; measure the CNY ramp and CTR; do not add a second red-packet article.",
+      "approval_gate": "Seasonal window; no page or title change before the season peak unless a truth defect is proven.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Seasonal curve documented and the page protected; no duplicate page."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-05",
+      "route": "MEASURE",
+      "query": "教材 印刷製本",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 51, "clicks": 0, "position": 31.49, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/ja/blog/textbook-printing-guide/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (70% share)"},
+      "required_action": "Check the known JPY price conflict and language quality on the ja textbook blog before treating the position drop as an SEO issue.",
+      "approval_gate": "Commercial truth and language fixes are content-lane work; this lane only records evidence. No price change without K3 truth.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Root-cause note covering the price/language issue; a content owner and retest date assigned, or HOLD."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-06",
+      "route": "MEASURE",
+      "query": "a2 poster",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 49, "clicks": 1, "position": 25.8, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": null, "confidence": "LOW", "candidate": "/en/product/a2-posters/", "note": "EN query; the zh PDP in the page table is not proof of the EN ranker"},
+      "required_action": "Capture the EN URL and check whether the position drop is a product-feed/snippet change or a page change.",
+      "approval_gate": "Attribution plus feed/product truth check; no title/meta change from a 7.12-position move in an overlapping window.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Root-cause note with the feed/page evidence; next decision owned and dated."
+    },
+    {
+      "handoff_id": "GSC-20261107-MEASURE-07",
+      "route": "MEASURE",
+      "query": "喜帖印刷",
+      "classification": "MONEY",
+      "status": "PROPOSE_ONLY",
+      "owner_lane": "ZP-gsc-feedback",
+      "baseline": {"window": "28d 2026-10-08..2026-11-04", "latest_export": "2026-11-07", "impressions": 16, "clicks": 0, "position": 36.25, "source": "gsc-2026-11-07-money-keyword-delta.json"},
+      "ranking_url_attribution": {"url": "/zh-hk/product/wedding-thank-you-cards/", "confidence": "HIGH", "source": "money-kw-share-baseline-2026-10-31.md (73% share)"},
+      "required_action": "Confirm the intent mismatch: a thank-you-card PDP ranks for a wedding-invitation query. Do not add content until the intended landing page is decided.",
+      "approval_gate": "Intent/landing-page decision needs K3 or monthly owner; no redirect, canonical or new page from this lane.",
+      "retry_at": "2026-11-14",
+      "cooldown_days": 7,
+      "production_deploy": null,
+      "online_verify": null,
+      "retest": {"next_check": "2026-11-14", "required_windows": ["7d", "14d", "28d"]},
+      "exit_criteria": "Intent mismatch confirmed with a page-level plan and owner, or HOLD; no page change from this lane."
+    }
+  ],
+  "no_current_baseline": {
+    "queries": ["printing company", "printing services", "印刷廠", "印刷服務", "教科書印刷", "網上印刷"],
+    "rule": "Missing current exact row is NO_CURRENT_BASELINE, not zero demand. Do not carry old values and do not dispatch a content task."
+  },
+  "tasks": {
+    "O1": {"label": "API pull cadence", "status": "MANUAL_PULL_ONLY", "next_check": "2026-11-08"},
+    "O2": {"label": "Recovery SSoT caliber", "status": "WAITING_K3", "next_check": null},
+    "O3": {"label": "Task J eight locked words", "status": "FOUR_WINDOW_XLSX_BASELINE", "next_check": "2026-11-14"},
+    "O4": {"label": "CTR zero-click pool", "status": "PROPOSED_7_ROWS_239_IMP", "next_check": "2026-11-14"},
+    "O5": {"label": "Canonical candidates", "status": "CARRIED", "next_check": "2026-12-01"},
+    "O6": {"label": "Poster cluster", "status": "MEASURE", "next_check": "2026-11-14"},
+    "O7": {"label": "Calendar copy", "status": "RETEST_2026_11_10", "next_check": "2026-11-10"},
+    "O8": {"label": "Sticker 14-day", "status": "HOLD", "next_check": "2026-11-14"},
+    "O9": {"label": "Ja textbook", "status": "MEASURE", "next_check": "2026-11-14"},
+    "O10": {"label": "Wedding invitations", "status": "MEASURE_INTENT_MISMATCH", "next_check": "2026-11-14"},
+    "O11": {"label": "Red packets", "status": "PROTECT_SEASONAL", "next_check": "2026-11-14"},
+    "O12": {"label": "GEO S1/S2", "status": "S1_PARTIAL_S2_2026_11_20_24", "next_check": "2026-11-20"}
+  },
+  "candidate_tasks": [
+    {
+      "task_id": "MEASURE-20261107-PRODUCT-SNIPPET-STRUCTURE",
+      "target": "Product-snippet structure: 38.7% of 28d impressions and 35.3% of clicks at position 28.94; snippet CTR below non-snippet CTR",
+      "owner": "ZP-monthly-matrix",
+      "why": "Structural dependency on product rich results; if the snippet surface changes, clicks move without any page change",
+      "gate": "Measurement only; no feed or product change from this lane. Requires product truth owner.",
+      "next_check": "2026-12-01"
+    },
+    {
+      "task_id": "MEASURE-20261107-PAGE-INTERNAL-FRICTION",
+      "target": "Poster/books/stickers page-level overlap (no current query x page join; 10-31 baseline only)",
+      "owner": "ZP-monthly-matrix",
+      "why": "Multiple URLs compete for one intent; the category page is the weakest in posters and books",
+      "gate": "Needs a fresh query x page join and K3 primary-URL decision (FIX-20261031-PRIMARY-URL-MISMATCH); no redirect/canonical/new page",
+      "next_check": "2026-12-01"
+    }
+  ],
+  "anomalies": {
+    "A1": {"level": "P2", "state": "PARTIALLY_RESOLVED", "detail": "11-07 24h/7d/28d xlsx landed; 3mo still carried 11-03. API end1105 remains data day 11-04 (68.2h)."},
+    "A2": {"level": "P2", "state": "CLOSED_TODAY", "detail": "New 24h window 2026-11-06T03:00..2026-11-07T02:00; no longer a frozen repeat."},
+    "A36": {"level": "P1", "state": "CLOSED_BY_HUMAN", "detail": "XLSX_NOT_REFRESHED resolved: K3 exported 11-07 24h/7d/28d. It had been a dead-letter candidate after three days."},
+    "A39": {"level": "P2", "state": "CALIBER_PINNED_FOR_MONEY_SUBSET", "detail": "7 rows / 239 impressions with pos<=10 and 0 clicks on the 29 exact money rows. Still not comparable to the 466-row / 1,530-impression pool."},
+    "A40": {"level": "P3", "state": "WATCH_SAMPLE_TOO_SMALL", "detail": "large envelopes entered page1 with 1 impression; alipay flash collect is not in today's exact rows."},
+    "A41": {"level": "P1", "state": "OPEN_CARRIED", "detail": "Poster blog description price conflict (title 9 / body 9-45 / category 16-20); B1 remains NO-GO as written until K3 price truth."},
+    "A42": {"level": "P3", "state": "RESOLVED_FOR_STICKER_PAIR", "detail": "Daily lane ran title-equiv: en 100 to 55, ja 83 to 52. The old 100 vs 104 note is superseded for this pair."},
+    "A43": {"level": "P1", "state": "OPEN", "detail": "Run gaps: 11-07 07:10 k3-review missing; 11-06 20:52 weekly-meta preflight BLOCKED; lane-status still 11-04 06:43."},
+    "A44": {"level": "P1", "state": "NEW", "detail": "Detector/runtime unavailable: python via uv trampoline failed (os error 2). No gsc-cliff-2026-11-07.json."},
+    "A45": {"level": "P2", "state": "NEW", "detail": "Recovery denominator drift: 123.7% to 96.98% = 24h -17.8% and 28d mean +4.84%. The ratio is not day-comparable; do not report it as a traffic collapse."},
+    "NEW-8": {"level": "P2", "state": "CONFIRMED_TWO_WINDOW_WORSENING", "detail": "喜帖印刷 16.13 to 29.40 to 36.25; thank-you-card PDP holds 73% share."},
+    "NEW-10": {"level": "P2", "state": "THRESHOLD_EDGE", "detail": "包裝盒印刷 31.89 to 32.80 to 33.30; the latest delta is exactly +0.50, not >0.50, so it is not in the confirmed worsening list. Watch next window."},
+    "NEW-14": {"level": "P2", "state": "NEW", "detail": "Product snippet dependency: 38.7% of 28d impressions, 35.3% of clicks, CTR 2.12% vs 2.45% non-snippet."},
+    "NEW-15": {"level": "P3", "state": "NEW", "detail": "3mo window missing from the 11-07 export; the 3mo KPI is carried and labelled, not presented as today's data."},
+    "NEW-16": {"level": "P3", "state": "NEW", "detail": "Near-threshold movers not dispatched: 貼紙印刷 -0.41, 海報印刷 +0.42, 即日印刷 -0.38; 7d alone never dispatches."}
+  },
+  "next_checkpoints": [
+    {"date": "2026-11-08T00:00", "check": "API end1105 reaches the 72h line; pull --end 2026-11-07 (data day 11-06) before it does"},
+    {"date": "2026-11-10", "check": "Calendar copy 7-day effect (existing O7)"},
+    {"date": "2026-11-13T20:52", "check": "Weekly-meta natural run; consume the 7 FIX handoffs plus the overdue sticker title pack, if preflight passes"},
+    {"date": "2026-11-14", "check": "Handoff retest: same query, page and window; 7d/14d/28d; no SCALE from one window"},
+    {"date": "2026-11-20..24", "check": "GEO S2 citation URLs"},
+    {"date": "2026-12-01", "check": "Monthly matrix natural trigger; product-snippet and internal-friction review"}
+  ],
+  "need_human": [
+    {
+      "id": "HUMAN-20261107-01",
+      "owner": "K3-admin",
+      "problem": "Python runtime broken in the lane (uv trampoline, os error 2); detector and API pull cannot run",
+      "evidence": "python scripts/gsc-cliff-detector.py -> exit 1",
+      "command": "powershell -NoProfile -Command \"python -c \\\"print(1)\\\"\" ; if it fails, repair the uv/Python trampoline, then run: python scripts\\gsc-cliff-detector.py"
+    },
+    {
+      "id": "HUMAN-20261107-02",
+      "owner": "K3",
+      "problem": "3mo window missing from the 11-07 export; 3mo KPI is still 11-03 (2026-08-01..2026-10-31)",
+      "evidence": "GSC数据/ has 24h/7d/28d for 11-07 but no 3mo file",
+      "command": "Export GSC 3 months (all countries, web search) as GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx"
+    },
+    {
+      "id": "HUMAN-20261107-03",
+      "owner": "K3-admin",
+      "problem": "weekly-meta 11-06 preflight BLOCKED (strategy-feedback exited 1); the 7 FIX handoffs and the overdue sticker title pack cannot be consumed until the 11-13 run or a manual rerun",
+      "evidence": ".hermes/logs/2026-11-06-ZP-weekly-meta.md; 11-07 10:43 weekly review exists, so the script itself is usable",
+      "command": "python scripts/strategy-feedback.py --period weekly --date 2026-11-07 --repo F:\\zprintpro-nextjs --write-queue"
+    },
+    {
+      "id": "HUMAN-20261107-04",
+      "owner": "K3",
+      "problem": "Poster price truth still WAITING_K3; B1 (poster blog description) stays NO-GO as written",
+      "evidence": "A2 values 9 / 16 / 2.20; A1 values 20 / 29-45 / 45",
+      "command": "One-line decision: either authorize price-free descriptions or name the single true A2/A1 price."
+    },
+    {
+      "id": "HUMAN-20261107-05",
+      "owner": "K3-admin",
+      "problem": "monthly-matrix MISSING since 2026-11-01; scheduler LastTaskResult=2147946720 (7th day)",
+      "evidence": ".hermes/logs/lane-status.json; next natural trigger 2026-12-01",
+      "command": "schtasks /change /tn ZP-monthly-matrix /st 12:13"
+    },
+    {
+      "id": "HUMAN-20261107-06",
+      "owner": "K3-admin",
+      "problem": "k3-review 11-07 07:10 missing (4th run gap); lane-status 3 days stale",
+      "evidence": "lane-runs.jsonl 104 records; no 2026-11-07 k3 bus record",
+      "command": "node scripts/lane-status.mjs --days=7"
+    },
+    {
+      "id": "HUMAN-20261107-07",
+      "owner": "K3-admin",
+      "problem": "Pre-push guard #21 blocks pushes after the 11-07 10:37 peer prompt edits were not stamped; this report's push may also stay local",
+      "evidence": "2026-11-07-ZP-daily-content.md section 6 (PUSH_EXIT=1, RULE-TRANSLATION-GUARD)",
+      "command": "node scripts/guards/rule-translation-guard.js --stamp (by the prompt owner, not this lane)"
+    }
+  ],
+  "honesty_boundaries": [
+    "No detector output today; 96.98% is derived from the same batch with the same formula and is not an official series point.",
+    "24h is a one-day health signal with a different weekday; it is not compared with 28d position.",
+    "7d and 28d overlap 3/7 and 24/28 days; movements are rolls, not experiments.",
+    "No query x page join in the 11-07 exports; attribution uses the 2026-10-31 baseline and is marked as such.",
+    "No SERP feature snapshot and no meta-description read; FIX gates require them before any change.",
+    "No page, title, canonical, redirect, noindex, queue-status or src write by this lane.",
+    "No GA4 / 008 / order data; no conversion or ROI conclusion (K3 2026-10-27 section 0.37).",
+    "No AI citation conclusion; GEO S2 is still 2026-11-20..24."
+  ]
+}

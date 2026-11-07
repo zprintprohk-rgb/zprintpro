@@ -338,8 +338,8 @@
       "approval_gate": "K3 administrator action; no automatic retry",
       "owner_lane": "K3-admin",
       "status": "BLOCKED_INFRA",
-      "next_check": "2026-11-07",
-      "result": "Recurred on 2026-11-06; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
+      "next_check": "2026-11-05",
+      "result": "Recurred on 2026-11-04; existing task retained and updated. Recurrence is not resolution; no automatic close or permission expansion.",
       "recurrence_observations": [
         {
           "observation_key": "weekly|2026-10-30|FIX-WEEKLY-2026-10-30-ZP-monthly-matrix-769033ac",
@@ -364,10 +364,22 @@
             "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
           ],
           "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
+        },
+        {
+          "observation_key": "weekly|2026-11-04|FIX-WEEKLY-2026-11-04-ZP-monthly-matrix-08d19aec",
+          "observed_at": "2026-11-04",
+          "period": "weekly",
+          "proposed_task_id": "FIX-WEEKLY-2026-11-04-ZP-monthly-matrix-08d19aec",
+          "evidence": [
+            ".hermes/logs/lane-status.json",
+            ".hermes/logs/lane-runs.jsonl",
+            "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
+          ],
+          "result": "Dispatched by weekly review from observed MISSING; not a completed fix"
         }
       ],
-      "recurrence_count": 2,
-      "last_seen": "2026-11-06"
+      "recurrence_count": 3,
+      "last_seen": "2026-11-04"
     },
     {
       "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
@@ -737,7 +749,7 @@
   ],
   "last_review": {
     "period": "weekly",
-    "date": "2026-11-06",
-    "report": ".hermes/logs/periodic-review-weekly-2026-11-06.json"
+    "date": "2026-11-04",
+    "report": ".hermes/logs/periodic-review-weekly-2026-11-04.json"
   }
 }

@@ -1,0 +1,1316 @@
+{
+  "schema_version": 2,
+  "period": "weekly",
+  "review_date": "2026-11-07",
+  "window_start": "2026-11-01",
+  "inputs": {
+    "queue": ".hermes\\logs\\strategy-task-queue.json",
+    "status": ".hermes\\logs\\lane-status.json",
+    "runs": ".hermes\\logs\\lane-runs.jsonl",
+    "status_available": true,
+    "status_freshness": {
+      "available": true,
+      "generated_local": "2026-11-04 06:43",
+      "age_days": 3,
+      "stale": true,
+      "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
+    },
+    "anomaly_available": true,
+    "blog_available": true,
+    "geo_available": true
+  },
+  "execution": {
+    "runs": 20,
+    "verdicts": {
+      "OK": 15,
+      "FAILED": 3,
+      "BLOCKED": 2
+    },
+    "per_lane": {
+      "ZP-daily-content": {
+        "OK": 9
+      },
+      "ZP-gsc-feedback": {
+        "OK": 4,
+        "FAILED": 1,
+        "BLOCKED": 1
+      },
+      "ZP-k3-review": {
+        "FAILED": 2,
+        "OK": 2
+      },
+      "ZP-weekly-meta": {
+        "BLOCKED": 1
+      }
+    },
+    "status_freshness": {
+      "available": true,
+      "generated_local": "2026-11-04 06:43",
+      "age_days": 3,
+      "stale": true,
+      "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
+    },
+    "attention_lanes": []
+  },
+  "task_decisions": [
+    {
+      "task_id": "OPS-20261028-DSH-CREDENTIAL",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "ZH-POSTER-20261028-PROCUREMENT",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "ZH-PACKAGING-20261028-BATCH1",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "EN-STICKER-20261028-SMALLBATCH",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "EN-CATALOG-20261028-TRUTH",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "JA-C109-20261028-DEADLINE",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "MEASURE-20261028-ATTRIBUTION",
+      "status": "CLOSED_BY_K3_S0.37",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
+    },
+    {
+      "task_id": "GEO-20261103-AI-PROBE-S1",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "next_check": "2026-11-03"
+    },
+    {
+      "task_id": "REVIEW-20261030-WEEKLY",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "next_check": "2026-10-30"
+    },
+    {
+      "task_id": "REVIEW-20261101-MONTHLY",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "next_check": "2026-11-01"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+      "status": "BLOCKED_INFRA",
+      "decision": "FIX",
+      "reason": "infrastructure blocker requires its designated owner",
+      "next_check": "2026-11-05"
+    },
+    {
+      "task_id": "TRUTH-T1-20261029-CALENDARS-50PCS",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "TRUTH-T2-20261029-MINI-CALENDARS-1000",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "TRUTH-T3-20261029-EN-UNIT-LOCALIZE",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-10-29"
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+      "status": "READY",
+      "decision": "HOLD",
+      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "FIX-20261030-SKU-BODY-SHIPPING-LEGACY",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "DIAG-20261030-STICKER-REGRESSION",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-04"
+    },
+    {
+      "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS",
+      "status": "READY",
+      "decision": "HOLD",
+      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "FIX-20261030-SKU-SEO-US-SHIPPING-LEGACY",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
+      "status": "SCHEDULED",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
+    },
+    {
+      "task_id": "DIAG-20261030-STICKER-CLUSTER",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261031-DHL-SHIPPING-CLAIMS",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-10-31"
+    },
+    {
+      "task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": "2026-11-06"
+    },
+    {
+      "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
+      "status": "WAITING_K3",
+      "decision": "HOLD",
+      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    }
+  ],
+  "evidence_handoffs": {
+    "gsc": {
+      "available": true,
+      "source": "gsc-daily-anomaly-2026-11-06.json",
+      "anomaly_date": "2026-11-06",
+      "data_status": null,
+      "xlsx_availability": {},
+      "api_availability": {},
+      "kpi_28d": null,
+      "recovery": {
+        "official_headline": null,
+        "formula": null,
+        "guard": "Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery"
+      },
+      "items": [],
+      "focus_delta": {
+        "available": true,
+        "source": "gsc-2026-11-07-money-keyword-delta.json",
+        "analysis_date": "2026-11-07",
+        "query_count": 38,
+        "industry_head_count": 8,
+        "page1_count": 8,
+        "page1_zero_click_count": 7,
+        "entered_page1": [
+          "doujinshi printing",
+          "large envelopes"
+        ],
+        "dropped_out_page1": [],
+        "confirmed_two_window_worsening": [
+          "a2 poster",
+          "コミケ 印刷",
+          "利是封印刷",
+          "印海報",
+          "喜帖印刷",
+          "宣傳單張",
+          "教材 印刷製本"
+        ],
+        "confirmed_two_window_improvement": [
+          "china catalog printing",
+          "pvc シール",
+          "印刷公司",
+          "貼紙訂製"
+        ],
+        "missing_current_baseline": [
+          "printing company",
+          "printing services",
+          "印刷廠",
+          "印刷服務",
+          "教科書印刷",
+          "網上印刷"
+        ],
+        "short_window_worsening_not_for_dispatch": [
+          {
+            "query": "學校印刷",
+            "previous": {
+              "impressions": 16,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 15.5
+            },
+            "current": {
+              "impressions": 11,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 23.73
+            },
+            "delta_position": 8.23
+          },
+          {
+            "query": "印海報",
+            "previous": {
+              "impressions": 31,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 13.0
+            },
+            "current": {
+              "impressions": 30,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 21.2
+            },
+            "delta_position": 8.2
+          },
+          {
+            "query": "貼紙訂製",
+            "previous": {
+              "impressions": 7,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 18.43
+            },
+            "current": {
+              "impressions": 14,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 25.93
+            },
+            "delta_position": 7.5
+          },
+          {
+            "query": "a2 poster",
+            "previous": {
+              "impressions": 17,
+              "clicks": 1,
+              "ctr_pct": 5.8824,
+              "position": 40.76
+            },
+            "current": {
+              "impressions": 12,
+              "clicks": 1,
+              "ctr_pct": 8.3333,
+              "position": 47.33
+            },
+            "delta_position": 6.57
+          },
+          {
+            "query": "海報印刷",
+            "previous": {
+              "impressions": 51,
+              "clicks": 1,
+              "ctr_pct": 1.9608,
+              "position": 15.92
+            },
+            "current": {
+              "impressions": 42,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 21.29
+            },
+            "delta_position": 5.37
+          },
+          {
+            "query": "書刊印刷",
+            "previous": {
+              "impressions": 34,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 32.03
+            },
+            "current": {
+              "impressions": 41,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 36.54
+            },
+            "delta_position": 4.51
+          },
+          {
+            "query": "教材 印刷製本",
+            "previous": {
+              "impressions": 17,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 48.12
+            },
+            "current": {
+              "impressions": 19,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 51.11
+            },
+            "delta_position": 2.99
+          },
+          {
+            "query": "喜帖印刷",
+            "previous": {
+              "impressions": 8,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 34.12
+            },
+            "current": {
+              "impressions": 12,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 36.75
+            },
+            "delta_position": 2.63
+          },
+          {
+            "query": "香港印刷",
+            "previous": {
+              "impressions": 6,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 11.33
+            },
+            "current": {
+              "impressions": 11,
+              "clicks": 1,
+              "ctr_pct": 9.0909,
+              "position": 13.91
+            },
+            "delta_position": 2.58
+          },
+          {
+            "query": "宣傳單張",
+            "previous": {
+              "impressions": 43,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 36.72
+            },
+            "current": {
+              "impressions": 40,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 38.67
+            },
+            "delta_position": 1.95
+          },
+          {
+            "query": "small batch stickers",
+            "previous": {
+              "impressions": 2,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 5.5
+            },
+            "current": {
+              "impressions": 4,
+              "clicks": 0,
+              "ctr_pct": 0.0,
+              "position": 7.0
+            },
+            "delta_position": 1.5
+          }
+        ],
+        "items": [
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-87656b1b",
+            "route": "FIX",
+            "query": "食品包裝印刷",
+            "language_hint": "zh-hk",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 116,
+              "clicks": 0,
+              "position": 8.36,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-be4c5311",
+            "route": "FIX",
+            "query": "doujinshi printing",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 55,
+              "clicks": 0,
+              "position": 9.98,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "ENTERED_PAGE_1",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-a6fd35a6",
+            "route": "FIX",
+            "query": "small batch sticker printing",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 27,
+              "clicks": 0,
+              "position": 6.0,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-812d0c66",
+            "route": "FIX",
+            "query": "small batch stickers",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 19,
+              "clicks": 0,
+              "position": 5.42,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-ac0137c7",
+            "route": "FIX",
+            "query": "卒アル販売",
+            "language_hint": "ja",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 16,
+              "clicks": 0,
+              "position": 5.0,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-96ed7022",
+            "route": "FIX",
+            "query": "saddle stitch booklet printing",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 5,
+              "clicks": 0,
+              "position": 7.4,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-FIX-2026-11-07-521b1bdc",
+            "route": "FIX",
+            "query": "large envelopes",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-weekly-meta",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 1,
+              "clicks": 0,
+              "position": 7.0,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "NOT_CONSECUTIVE",
+            "page1_transition": "ENTERED_PAGE_1",
+            "required_action": "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change",
+            "approval_gate": "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-4c5ebffb",
+            "route": "MEASURE",
+            "query": "コミケ 印刷",
+            "language_hint": "ja",
+            "classification": "SEASONAL_MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 163,
+              "clicks": 0,
+              "position": 22.88,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-7dfc8cca",
+            "route": "MEASURE",
+            "query": "宣傳單張",
+            "language_hint": "zh-hk",
+            "classification": "MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 127,
+              "clicks": 0,
+              "position": 34.73,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-1ad4c104",
+            "route": "MEASURE",
+            "query": "印海報",
+            "language_hint": "zh-hk",
+            "classification": "MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 124,
+              "clicks": 0,
+              "position": 14.15,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-8dadc080",
+            "route": "MEASURE",
+            "query": "利是封印刷",
+            "language_hint": "zh-hk",
+            "classification": "SEASONAL_MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 59,
+              "clicks": 1,
+              "position": 24.42,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-ffa9859a",
+            "route": "MEASURE",
+            "query": "教材 印刷製本",
+            "language_hint": "ja",
+            "classification": "MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 51,
+              "clicks": 0,
+              "position": 31.49,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-99d055a2",
+            "route": "MEASURE",
+            "query": "a2 poster",
+            "language_hint": "en",
+            "classification": "MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 49,
+              "clicks": 1,
+              "position": 25.8,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          },
+          {
+            "handoff_id": "GSC-DELTA-MEASURE-2026-11-07-549df6a3",
+            "route": "MEASURE",
+            "query": "喜帖印刷",
+            "language_hint": "zh-hk",
+            "classification": "MONEY",
+            "owner_lane": "ZP-gsc-feedback",
+            "status": "PROPOSE_ONLY",
+            "baseline": {
+              "window": "28d same-xlsx-calibre series",
+              "latest_export": "2026-11-07",
+              "impressions": 16,
+              "clicks": 0,
+              "position": 36.25,
+              "source": "gsc-2026-11-07-money-keyword-delta.json"
+            },
+            "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+            "page1_transition": "UNCHANGED",
+            "required_action": "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision",
+            "approval_gate": "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows",
+            "cooldown_days": 7,
+            "retry_at": "2026-11-14",
+            "exit_criteria": "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date",
+            "production_deploy": null,
+            "online_verify": null,
+            "retest": {
+              "next_check": "2026-11-14",
+              "required_windows": [
+                "7d",
+                "14d",
+                "28d"
+              ]
+            },
+            "learning_evidence_complete": false,
+            "scale_allowed": false
+          }
+        ],
+        "guard": "Same-window movements are diagnostic evidence, not independent experiment wins/losses; missing rows are not zero demand"
+      },
+      "candidate_tasks": [
+        {
+          "task_id": null,
+          "route": "MEASURE",
+          "target": "11-06 批1 desc 价格冲突: 去价格或改口径",
+          "owner_lane": "weekly-meta + K3(价格真值)",
+          "why": null,
+          "approval_gate": "A41; 禁逐字执行",
+          "next_check": null,
+          "status": "PROPOSE_ONLY",
+          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "scale_allowed": false
+        },
+        {
+          "task_id": null,
+          "route": "MEASURE",
+          "target": "逾期 sticker title (en 100/104, ja 83)",
+          "owner_lane": "weekly-meta",
+          "why": null,
+          "approval_gate": "title-v5 + 单批",
+          "next_check": null,
+          "status": "PROPOSE_ONLY",
+          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "scale_allowed": false
+        },
+        {
+          "task_id": null,
+          "route": "MEASURE",
+          "target": "数据面: 11-04..11-06 四档 + detector + --end 2026-11-05",
+          "owner_lane": "K3-admin",
+          "why": null,
+          "approval_gate": "同因第 3 次 ⇒ 停止自动重试, 等人工",
+          "next_check": null,
+          "status": "PROPOSE_ONLY",
+          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "scale_allowed": false
+        },
+        {
+          "task_id": null,
+          "route": "MEASURE",
+          "target": "A2/A1 海报价 3 值归并 (D3/FIVE-CATEGORY-TRUTH)",
+          "owner_lane": "K3",
+          "why": null,
+          "approval_gate": "价格真值不可由执行层自决",
+          "next_check": null,
+          "status": "PROPOSE_ONLY",
+          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "scale_allowed": false
+        },
+        {
+          "task_id": null,
+          "route": "MEASURE",
+          "target": "池指标口径统一 (16/632 规则写死为 SSoT)",
+          "owner_lane": "monthly / 分析师",
+          "why": null,
+          "approval_gate": "A39; 不改今日结论",
+          "next_check": null,
+          "status": "PROPOSE_ONLY",
+          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "scale_allowed": false
+        }
+      ],
+      "tasks": {
+        "O1": "MANUAL_PULL_ONLY (今日无拉取; end1105 为 11-05 人工)",
+        "O2": "WAITING_K3 (恢复 SSoT; 第 3 日缺料反而强化 A 方案)",
+        "O3": "FIFTH_TEST_INHERITED / NO_SIXTH_TODAY",
+        "O4": "SCHEDULED_TODAY_2052 (门: B1 NO-GO / B1b GO / 其余 UNVERIFIED)",
+        "O5": "DELIVERED_CANDIDATES (11-03 清单有效)",
+        "O6": "DECISION_DUE_TODAY (11-06; 本车道只交证据)",
+        "O7": "SCHEDULED_TODAY_2052 (月曆 118@24.81, copy 窗 11-10)",
+        "O8": "HOLD (38.09; 11-07 复测)",
+        "O9": "OPEN (教材 30.87 平台; monthly 缺)",
+        "O10": "INTENT_MISMATCH_OPEN (喜帖 33.75, 4 窗恶化; 承接页 = thank-you-cards)",
+        "O11": "SCHEDULED_TODAY_2052 (利是封 54/1clk + 燙金 jpn 1.00)",
+        "O12": "DONE_BY_PEER_PARTIAL (S2 11-20..24)",
+        "queue_write": "零写入; 未翻转任何 SCHEDULED/WAITING_K3/READY"
+      }
+    },
+    "blog": {
+      "available": true,
+      "source": ".hermes/cron-prompts/blog-money-keyword-queue.json",
+      "source_window": "2026-10-08..2026-11-04",
+      "status_counts": {
+        "remeasure": 3,
+        "blocked_waiting_k3": 5
+      },
+      "items": [
+        {
+          "cluster": "flyers-zh-hk",
+          "locale": "zh-hk",
+          "status": "remeasure",
+          "route": "MEASURE",
+          "decision": "REMEASURE_NOT_DUE",
+          "recheck_after": "2026-11-14",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "宣傳單張": {
+              "impressions": 117,
+              "clicks": 0,
+              "position": 29.37
+            },
+            "宣傳單張印刷": {
+              "impressions": 103,
+              "clicks": 0,
+              "position": 29.02
+            }
+          },
+          "delivered_url": "/zh-hk/blog/flyer-printing-guide/",
+          "scale_allowed": false
+        },
+        {
+          "cluster": "stickers-zh-hk",
+          "locale": "zh-hk",
+          "status": "remeasure",
+          "route": "MEASURE",
+          "decision": "REMEASURE_NOT_DUE",
+          "recheck_after": "2026-11-14",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "貼紙印刷": {
+              "impressions": 120,
+              "clicks": 0,
+              "position": 40.88
+            },
+            "貼紙訂製": {
+              "impressions": 34,
+              "clicks": 0,
+              "position": 32.41
+            }
+          },
+          "delivered_url": "/zh-hk/blog/sticker-guide/",
+          "scale_allowed": false
+        },
+        {
+          "cluster": "books-zh-hk",
+          "locale": "zh-hk",
+          "status": "remeasure",
+          "route": "MEASURE",
+          "decision": "REMEASURE_NOT_DUE",
+          "recheck_after": "2026-11-14",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "書刊印刷": {
+              "impressions": 101,
+              "clicks": 0,
+              "position": 32.28
+            },
+            "印書": {
+              "impressions": 52,
+              "clicks": 0,
+              "position": 31.96
+            },
+            "教科書印刷": null
+          },
+          "delivered_url": "/zh-hk/blog/textbook-printing-guide/",
+          "scale_allowed": false
+        },
+        {
+          "cluster": "packaging-zh-hk",
+          "locale": "zh-hk",
+          "status": "blocked_waiting_k3",
+          "route": "HOLD",
+          "decision": "HOLD_WAITING_K3",
+          "recheck_after": null,
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "紙盒印刷": {
+              "impressions": 46,
+              "clicks": 0,
+              "position": 33.3
+            },
+            "包裝盒訂製": {
+              "impressions": 47,
+              "clicks": 0,
+              "position": 31.51
+            },
+            "包裝盒印刷": {
+              "impressions": 54,
+              "clicks": 0,
+              "position": 31.89
+            }
+          },
+          "delivered_url": null,
+          "scale_allowed": false
+        },
+        {
+          "cluster": "posters-zh-hk",
+          "locale": "zh-hk",
+          "status": "blocked_waiting_k3",
+          "route": "HOLD",
+          "decision": "HOLD_WAITING_K3",
+          "recheck_after": "2026-11-07",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "海報印刷": {
+              "impressions": 286,
+              "clicks": 1,
+              "position": 14.94
+            }
+          },
+          "delivered_url": null,
+          "scale_allowed": false
+        },
+        {
+          "cluster": "stickers-en",
+          "locale": "en",
+          "status": "blocked_waiting_k3",
+          "route": "HOLD",
+          "decision": "HOLD_WAITING_K3",
+          "recheck_after": "2026-11-28",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "small batch sticker printing": {
+              "impressions": 46,
+              "clicks": 0,
+              "position": 5.5
+            }
+          },
+          "delivered_url": null,
+          "scale_allowed": false
+        },
+        {
+          "cluster": "catalog-en",
+          "locale": "en",
+          "status": "blocked_waiting_k3",
+          "route": "HOLD",
+          "decision": "HOLD_WAITING_K3",
+          "recheck_after": "2026-11-28",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "china catalog printing": {
+              "impressions": 72,
+              "clicks": 0,
+              "position": 15.79
+            }
+          },
+          "delivered_url": null,
+          "scale_allowed": false
+        },
+        {
+          "cluster": "comiket-ja",
+          "locale": "ja",
+          "status": "blocked_waiting_k3",
+          "route": "HOLD",
+          "decision": "HOLD_WAITING_K3",
+          "recheck_after": "2026-11-28",
+          "source_window": "2026-10-04..2026-10-31",
+          "baseline": {
+            "コミケ 印刷": {
+              "impressions": 173,
+              "clicks": 0,
+              "position": 18.99
+            }
+          },
+          "delivered_url": null,
+          "scale_allowed": false
+        }
+      ],
+      "guard": "A moving GSC window is an observation, not an experiment win/loss; no automatic article generation"
+    },
+    "geo": {
+      "available": true,
+      "source": "docs\\2026-11-03-geo-probe-s1-completion.md",
+      "status": "S1_COMPLETE_CITATION_URLS_PARTIAL",
+      "s2_window": "2026-11-20..2026-11-24",
+      "s2_next_check": null,
+      "action": "MEASURE at S2; capture complete citation URLs. Do not rerun S1 or create content solely from absence",
+      "completion_evidence_found": true
+    }
+  },
+  "learning": {
+    "required_fields": [
+      "baseline",
+      "change",
+      "production_deploy",
+      "online_verify",
+      "retest"
+    ],
+    "production_deploy_required": true,
+    "scale_allowed_task_ids": [],
+    "proposal_only": true,
+    "rule": "FIX/MEASURE evidence cannot become SCALE without baseline + change + production_deploy + online_verify + retest + scale_evidence"
+  },
+  "dispatched_task_ids": [],
+  "proposed_task_ids": [],
+  "recurred_task_ids": [],
+  "suppressed_duplicates": [],
+  "learning_candidates": [],
+  "queue_write_enabled": false,
+  "guardrails": [
+    "no prompt self-rewrite",
+    "no permission expansion",
+    "no src writes",
+    "no commit/push",
+    "SCALE requires complete comparable evidence",
+    "WAITING_K3 cannot be self-approved",
+    "no automatic canonical/redirect/article from a moving GSC window"
+  ]
+}
