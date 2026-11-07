@@ -4,7 +4,8 @@
 
 This program summarizes observed execution evidence. It does not call an LLM, change
 prompts, approve business claims, touch src/, commit, or push. A learning candidate
-requires baseline + change + online_verify + retest in the same task record.
+requires baseline + change + production_deploy + online_verify + retest in the same
+task record. Moving GSC windows alone never qualify as an experiment outcome.
 """
 import argparse
 import datetime as dt
@@ -20,8 +21,9 @@ try:
 except Exception:
     pass
 
-REQUIRED_LEARNING_FIELDS = ("baseline", "change", "online_verify", "retest")
+REQUIRED_LEARNING_FIELDS = ("baseline", "change", "production_deploy", "online_verify", "retest")
 TERMINAL_TASK_STATUSES = {"DONE", "STOPPED", "CANCELLED"}
+NEGATIVE_EVIDENCE_STATUSES = {"NOT_DEPLOYED", "PENDING", "MISSING", "FAILED", "NOT_VERIFIED", "STALE"}
 
 
 def read_json(path, fallback):
@@ -79,11 +81,14 @@ def complete_learning_evidence(task):
         return False
     if not all(field in evidence and evidence[field] not in (None, "", False, [], {}) for field in REQUIRED_LEARNING_FIELDS):
         return False
-    online = evidence.get("online_verify")
-    if isinstance(online, dict):
-        if online.get("deployed") is False or online.get("production_deployed") is False:
-            return False
-        if str(online.get("status") or "").upper() in {"NOT_DEPLOYED", "PENDING", "MISSING", "FAILED"}:
+    for field in ("production_deploy", "online_verify"):
+        plane = evidence.get(field)
+        if isinstance(plane, dict):
+            if plane.get("deployed") is False or plane.get("production_deployed") is False or plane.get("verified") is False:
+                return False
+            if str(plane.get("status") or "").upper() in NEGATIVE_EVIDENCE_STATUSES:
+                return False
+        elif str(plane).strip().upper() in NEGATIVE_EVIDENCE_STATUSES:
             return False
     return True
 
@@ -108,6 +113,131 @@ def latest_dated_json(logs, prefix, review_day):
     path = os.path.join(logs, name)
     value = read_json(path, None)
     return (path, value) if isinstance(value, dict) else (None, {})
+
+
+def latest_money_delta_json(logs, review_day):
+    """Read gsc-YYYY-MM-DD-money-keyword-delta.json without confusing it with anomaly files."""
+    try:
+        names = os.listdir(logs)
+    except OSError:
+        return None, {}
+    candidates = []
+    for name in names:
+        match = re.fullmatch(r"gsc-(\d{4}-\d{2}-\d{2})-money-keyword-delta\.json", name)
+        if not match:
+            continue
+        day = parse_day(match.group(1))
+        if day and day <= review_day:
+            candidates.append((day, name))
+    if not candidates:
+        return None, {}
+    path = os.path.join(logs, max(candidates)[1])
+    value = read_json(path, None)
+    return (path, value) if isinstance(value, dict) else (None, {})
+
+
+def focus_delta_handoff(delta, source, review_day):
+    rows = delta.get("focus_query_deltas_28d") or []
+    items = []
+    missing = []
+    entered = []
+    dropped = []
+    worsening = []
+    improving = []
+    page1_count = 0
+    page1_zero_click = 0
+    head_total = 0
+    retry_at = str(review_day + dt.timedelta(days=7))
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        query = str(row.get("query") or "")
+        if not query:
+            continue
+        classification = row.get("classification") or "MONEY"
+        if classification == "INDUSTRY_HEAD":
+            head_total += 1
+        observations = row.get("observations_28d") or []
+        latest = observations[-1] if observations else {}
+        if latest.get("position") is None:
+            missing.append(query)
+            continue
+        if row.get("latest_page1"):
+            page1_count += 1
+        transition = row.get("page1_transition")
+        if transition == "ENTERED_PAGE_1":
+            entered.append(query)
+        elif transition == "DROPPED_OUT_PAGE_1":
+            dropped.append(query)
+        two_window = row.get("two_window_direction")
+        if two_window == "CONFIRMED_TWO_WINDOW_WORSENING":
+            worsening.append(query)
+        elif two_window == "CONFIRMED_TWO_WINDOW_IMPROVEMENT":
+            improving.append(query)
+        if row.get("latest_page1") and row.get("latest_zero_click"):
+            page1_zero_click += 1
+            route = "FIX"
+            owner = "ZP-weekly-meta"
+            action = "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change"
+            gate = "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite"
+            exit_criteria = "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker"
+        elif two_window == "CONFIRMED_TWO_WINDOW_WORSENING" or transition == "DROPPED_OUT_PAGE_1":
+            route = "MEASURE"
+            owner = "ZP-gsc-feedback"
+            action = "Check index, intent, query-by-page attribution, page changes and commercial truth before any content decision"
+            gate = "Measurement only; no automatic article, canonical, redirect, noindex or expansion from moving windows"
+            exit_criteria = "Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date"
+        else:
+            continue
+        items.append({
+            "handoff_id": f"GSC-DELTA-{route}-{review_day}-{hashlib.sha256(query.encode('utf-8')).hexdigest()[:8]}",
+            "route": route,
+            "query": query,
+            "language_hint": row.get("language_hint") or row.get("market_inference_from_language") or "unclassified",
+            "classification": classification,
+            "owner_lane": owner,
+            "status": "PROPOSE_ONLY",
+            "baseline": {"window": "28d same-xlsx-calibre series", "latest_export": latest.get("export_date"),
+                         "impressions": latest.get("impressions"), "clicks": latest.get("clicks"),
+                         "position": latest.get("position"), "source": source},
+            "two_window_direction": two_window,
+            "page1_transition": transition,
+            "required_action": action,
+            "approval_gate": gate,
+            "cooldown_days": 7,
+            "retry_at": retry_at,
+            "exit_criteria": exit_criteria,
+            "production_deploy": None,
+            "online_verify": None,
+            "retest": {"next_check": retry_at, "required_windows": ["7d", "14d", "28d"]},
+            "learning_evidence_complete": False,
+            "scale_allowed": False,
+        })
+    short_window = []
+    for row in delta.get("seven_day_focus_deltas") or []:
+        if row.get("direction") == "WORSE":
+            short_window.append({"query": row.get("query"), "previous": row.get("previous_11_03"),
+                                 "current": row.get("current_11_07"), "delta_position": row.get("delta_position")})
+    short_window.sort(key=lambda row: (-float(row.get("delta_position") or 0), str(row.get("query"))))
+    items.sort(key=lambda row: ({"FIX": 0, "MEASURE": 1}[row["route"]],
+                                -int(row["baseline"].get("impressions") or 0), row["query"]))
+    return {
+        "available": True,
+        "source": source,
+        "analysis_date": delta.get("analysis_date"),
+        "query_count": len(rows),
+        "industry_head_count": head_total,
+        "page1_count": page1_count,
+        "page1_zero_click_count": page1_zero_click,
+        "entered_page1": sorted(entered),
+        "dropped_out_page1": sorted(dropped),
+        "confirmed_two_window_worsening": sorted(worsening),
+        "confirmed_two_window_improvement": sorted(improving),
+        "missing_current_baseline": sorted(missing),
+        "short_window_worsening_not_for_dispatch": short_window,
+        "items": items,
+        "guard": "Same-window movements are diagnostic evidence, not independent experiment wins/losses; missing rows are not zero demand",
+    }
 
 
 def latest_dated_document(repo, suffix, review_day):
@@ -199,9 +329,12 @@ def money_query_handoffs(anomaly, source, review_day):
                          "source": source},
             "required_action": action,
             "approval_gate": gate,
+            "cooldown_days": 7,
+            "retry_at": next_check or str(review_day + dt.timedelta(days=7)),
+            "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
             "production_deploy": None,
             "online_verify": None,
-            "retest": {"next_check": next_check, "required_windows": ["7d", "14d", "28d"]},
+            "retest": {"next_check": next_check or str(review_day + dt.timedelta(days=7)), "required_windows": ["7d", "14d", "28d"]},
             "learning_evidence_complete": False,
             "scale_allowed": False,
         })
@@ -225,9 +358,16 @@ def candidate_task_handoffs(anomaly, source):
 
 def build_gsc_handoff(logs, review_day):
     path, anomaly = latest_dated_json(logs, "gsc-daily-anomaly-", review_day)
+    delta_path, delta = latest_money_delta_json(logs, review_day)
+    focus_delta = focus_delta_handoff(delta, os.path.basename(delta_path), review_day) if delta_path else {
+        "available": False, "source": None, "items": [],
+        "reason": "No gsc-YYYY-MM-DD-money-keyword-delta.json on or before the review date",
+    }
     if not path:
-        return {"available": False, "source": None, "items": [], "candidate_tasks": [], "tasks": [],
-                "reason": "No gsc-daily-anomaly-YYYY-MM-DD.json on or before the review date"}
+        return {"available": bool(delta_path), "source": os.path.basename(delta_path) if delta_path else None,
+                "items": [], "candidate_tasks": [], "tasks": [], "focus_delta": focus_delta,
+                "recovery": {"guard": "Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery"},
+                "reason": "No gsc-daily-anomaly-YYYY-MM-DD.json; independent focus-delta evidence may still be available"}
     source = os.path.basename(path)
     data_availability = anomaly.get("data_availability") or {}
     return {
@@ -244,6 +384,7 @@ def build_gsc_handoff(logs, review_day):
             "guard": "Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery",
         },
         "items": money_query_handoffs(anomaly, source, review_day),
+        "focus_delta": focus_delta,
         "candidate_tasks": candidate_task_handoffs(anomaly, source),
         "tasks": anomaly.get("tasks", []),
     }
@@ -334,6 +475,9 @@ def fix_task_for_lane(lane, period, review_day):
         "owner_lane": "K3-admin" if human else name,
         "status": "BLOCKED_INFRA" if human else "READY",
         "next_check": str(review_day + dt.timedelta(days=1)),
+        "retry_at": str(review_day + dt.timedelta(days=1)),
+        "cooldown_days": 1,
+        "exit_criteria": "Fresh scheduler/bus/report evidence agrees; repeated same-cause failure stops automatic retry",
         "result": f"Dispatched by {period} review from observed {lane.get('verdict')}; not a completed fix",
     }
 
@@ -342,6 +486,7 @@ def fix_task_for_strategy(task, period, review_day):
     original = task["task_id"]
     task_id = f"FIX-{period.upper()}-{review_day}-{original}"
     waiting = task.get("status") == "WAITING_K3"
+    retry_at = str(review_day + dt.timedelta(days=7 if period == "weekly" else 30))
     return {
         "task_id": task_id,
         "source_strategy": f"periodic-review-{period}-{review_day}",
@@ -354,7 +499,10 @@ def fix_task_for_strategy(task, period, review_day):
         "approval_gate": task.get("approval_gate", "Preserve all existing gates"),
         "owner_lane": task.get("owner_lane", "ZP-daily-content"),
         "status": "WAITING_K3" if waiting else "READY",
-        "next_check": str(review_day + dt.timedelta(days=7 if period == "weekly" else 30)),
+        "next_check": retry_at,
+        "retry_at": retry_at,
+        "cooldown_days": 7 if period == "weekly" else 30,
+        "exit_criteria": "Approved bounded FIX is deployed, online-verified and retested, or HOLD/STOP has documented evidence",
         "result": "FIX proposal only; no production change has been made",
     }
 
@@ -370,6 +518,8 @@ def render_markdown(report):
         f"- Window: {report['window_start']} to {report['review_date']}",
         f"- Runs: {report['execution']['runs']}; verdicts: {json.dumps(report['execution']['verdicts'], ensure_ascii=False)}",
         f"- Current lanes requiring attention: {len(report['execution']['attention_lanes'])}",
+        f"- Lane status: {json.dumps(report['execution']['status_freshness'], ensure_ascii=False)}",
+        "- STALE_STATUS: no lane-repair task was dispatched from stale status; refresh bus/scheduler reconciliation first." if report['execution']['status_freshness'].get('stale') else "- Lane-status freshness gate passed or status is absent; absence is not proof of health.",
         "",
         "| lane | verdict | recovery | evidence |",
         "|---|---|---|---|",
@@ -404,6 +554,27 @@ def render_markdown(report):
                          f"{row['owner_lane']} | {gate} |")
         lines.append(f"- Upstream anomaly tasks retained: {len(gsc['tasks'])}; candidate handoffs: {len(gsc['candidate_tasks'])}.")
 
+    delta = gsc.get("focus_delta") or {}
+    lines += ["", "### Same-window focus-query delta", ""]
+    if not delta.get("available"):
+        lines.append(f"- UNAVAILABLE: {delta.get('reason')}")
+    else:
+        lines += [
+            f"- Source: {delta['source']}; queries: {delta['query_count']}; industry-head: {delta['industry_head_count']}; page-1: {delta['page1_count']}; page-1 zero-click: {delta['page1_zero_click_count']}.",
+            f"- Entered page 1: {', '.join(delta['entered_page1']) or 'NONE'}; dropped out: {', '.join(delta['dropped_out_page1']) or 'NONE'}.",
+            f"- Confirmed two-window worsening: {', '.join(delta['confirmed_two_window_worsening']) or 'NONE'}.",
+            f"- Missing current baseline: {', '.join(delta['missing_current_baseline']) or 'NONE'}; missing is not zero demand.",
+            "",
+            "| route | query | latest imp/clk/pos | owner | retry | exit criteria |",
+            "|---|---|---|---|---|---|",
+        ]
+        for row in delta["items"]:
+            base = row["baseline"]
+            exit_criteria = row["exit_criteria"].replace("|", "\\|")
+            lines.append(f"| {row['route']} | {row['query']} | {base['impressions']}/{base['clicks']}/{base['position']} | "
+                         f"{row['owner_lane']} | {row['retry_at']} | {exit_criteria} |")
+        lines.append(f"- {delta['guard']}")
+
     blog = report["evidence_handoffs"]["blog"]
     lines += ["", "## Blog queue remeasurement", ""]
     if not blog["available"]:
@@ -429,7 +600,7 @@ def render_markdown(report):
         f"- Recurred existing task IDs: {', '.join(report['recurred_task_ids']) if report['recurred_task_ids'] else 'NONE'}",
         f"- Suppressed duplicates: {len(report['suppressed_duplicates'])} (deduplication is recorded, not misreported as a write failure)",
         f"- Learning candidates: {len(report['learning_candidates'])}; SCALE-eligible: {len(report['learning']['scale_allowed_task_ids'])}",
-        "- Learning gate: baseline + change + production online_verify + retest are all mandatory. GSC movement alone is not a win/loss.",
+        "- Learning gate: baseline + change + production_deploy + online_verify + retest are all mandatory. GSC movement alone is not a win/loss.",
         "- FIX/MEASURE handoffs are proposals only. No automatic prompt, permission, canonical, redirect or production rewrites are permitted.",
         "",
         "## Measurement limits",
@@ -461,15 +632,22 @@ def main():
     tasks = queue.setdefault("tasks", [])
     status = read_json(status_path, {})
     runs = read_jsonl(runs_path)
+    status_day = parse_day(status.get("generated_local") or status.get("generated_at"))
+    status_age_days = (review_day - status_day).days if status_day else None
+    status_stale = bool(status) and (status_day is None or status_age_days > 1)
+    status_freshness = {"available": bool(status), "generated_local": status.get("generated_local") or status.get("generated_at"),
+                        "age_days": status_age_days, "stale": status_stale,
+                        "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"}
     days = 7 if args.period == "weekly" else 30
     window_start = review_day - dt.timedelta(days=days - 1)
     window_runs = [r for r in runs if record_day(r) and window_start <= record_day(r) <= review_day and not r.get("test_record")]
-    # Reconciled day status is authoritative for historical rows too. Raw bus verdicts
-    # may contain the 2026-10-27 AUTO-FILLED/OK incident and must not poison reviews.
+    # Reconciled day status is authoritative only when fresh. Raw bus verdicts may
+    # contain the 2026-10-27 AUTO-FILLED/OK incident and must not poison reviews.
     reconciled = {}
-    for lane_row in status.get("lanes", []):
-        for day_row in lane_row.get("days", []):
-            reconciled[(lane_row.get("task"), day_row.get("day"))] = day_row.get("status")
+    if not status_stale:
+        for lane_row in status.get("lanes", []):
+            for day_row in lane_row.get("days", []):
+                reconciled[(lane_row.get("task"), day_row.get("day"))] = day_row.get("status")
     verdicts = {}
     per_lane = {}
     for row in window_runs:
@@ -486,7 +664,7 @@ def main():
         per_lane.setdefault(lane, {})
         per_lane[lane][verdict] = per_lane[lane].get(verdict, 0) + 1
     attention = []
-    for lane in status.get("lanes", []):
+    for lane in (status.get("lanes", []) if not status_stale else []):
         scheduler_failed = bool(lane.get("scheduler") and int(lane["scheduler"].get("Result") or 0) != 0)
         lane_failed = lane.get("verdict") in ("FAILED", "BLOCKED", "STALE", "MISSING")
         if lane_failed or scheduler_failed:
@@ -599,16 +777,18 @@ def main():
         "window_start": str(window_start),
         "inputs": {"queue": os.path.relpath(queue_path, repo), "status": os.path.relpath(status_path, repo),
                    "runs": os.path.relpath(runs_path, repo), "status_available": bool(status),
+                   "status_freshness": status_freshness,
                    "anomaly_available": gsc_handoff["available"], "blog_available": blog_handoff["available"],
                    "geo_available": geo_handoff["available"]},
         "execution": {"runs": len(window_runs), "verdicts": verdicts, "per_lane": per_lane,
+                      "status_freshness": status_freshness,
                       "attention_lanes": [{k: v for k, v in row.items() if k != "lane"} for row in attention]},
         "task_decisions": decisions,
         "evidence_handoffs": {"gsc": gsc_handoff, "blog": blog_handoff, "geo": geo_handoff},
         "learning": {"required_fields": list(REQUIRED_LEARNING_FIELDS),
                      "production_deploy_required": True, "scale_allowed_task_ids": scale_allowed,
                      "proposal_only": True,
-                     "rule": "FIX/MEASURE evidence cannot become SCALE without baseline + change + online_verify + retest + scale_evidence"},
+                     "rule": "FIX/MEASURE evidence cannot become SCALE without baseline + change + production_deploy + online_verify + retest + scale_evidence"},
         "dispatched_task_ids": [t["task_id"] for t in new_tasks] if args.write_queue else [],
         "proposed_task_ids": [t["task_id"] for t in proposed],
         "recurred_task_ids": recurred_task_ids,

@@ -261,7 +261,7 @@ class RuntimeTests(unittest.TestCase):
             "task_id": "FIX-OLD", "status": "BLOCKED_INFRA", "target": target,
             "next_check": "2026-10-28", "evidence": ["old-evidence"], "result": "not fixed"
         }]}
-        status = {"lanes": [{"task": LANE, "verdict": "BLOCKED",
+        status = {"generated_local": DAY, "lanes": [{"task": LANE, "verdict": "BLOCKED",
                              "recovery_plan": {"action": "request_human", "reason": "credential", "evidence": "audit"}}]}
         self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
         self.write(".hermes/logs/lane-status.json", json.dumps(status))
@@ -288,7 +288,7 @@ class RuntimeTests(unittest.TestCase):
             "target": f"Resolve {LANE} MISSING with bounded recovery: old trigger gap",
             "next_check": "2026-10-28", "evidence": ["old-evidence"]
         }]}
-        status = {"lanes": [{"task": LANE, "verdict": "OK",
+        status = {"generated_local": DAY, "lanes": [{"task": LANE, "verdict": "OK",
                              "scheduler": {"Result": 2147946720}, "recovery_plan": {"action": "none"}}]}
         self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
         self.write(".hermes/logs/lane-status.json", json.dumps(status))
@@ -311,7 +311,7 @@ class RuntimeTests(unittest.TestCase):
             "task_id": "WAITING-1", "status": "WAITING_K3", "next_check": DAY,
             "approval_gate": "K3", "evidence": [], "learning_evidence": {"baseline": "only-one-field"}
         }]}
-        status = {"lanes": [{"task": LANE, "verdict": "BLOCKED",
+        status = {"generated_local": DAY, "lanes": [{"task": LANE, "verdict": "BLOCKED",
                              "recovery_plan": {"action": "request_human", "reason": "credential", "evidence": "audit"}}]}
         self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
         self.write(".hermes/logs/lane-status.json", json.dumps(status))
@@ -384,11 +384,91 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(report["evidence_handoffs"]["geo"]["status"], "S1_COMPLETE_CITATION_URLS_PARTIAL")
         self.assertEqual(report["learning"]["scale_allowed_task_ids"], [])
 
+    def test_periodic_focus_delta_routes_and_anomaly_task_map(self):
+        anomaly = {
+            "date": DAY,
+            "tasks": {"O4": {"next_check": "2026-11-14"}, "O12": {"next_check": "2026-11-20"}},
+            "money_words_23_xlsx_28d": {"rows": {}},
+        }
+        delta = {
+            "analysis_date": DAY,
+            "focus_query_deltas_28d": [
+                {"query": "食品包裝印刷", "classification": "MONEY", "latest_page1": True,
+                 "latest_zero_click": True, "page1_transition": "UNCHANGED", "two_window_direction": "NOT_CONSECUTIVE",
+                 "observations_28d": [{"export_date": DAY, "impressions": 116, "clicks": 0, "position": 8.36}]},
+                {"query": "宣傳單張", "classification": "MONEY", "latest_page1": False,
+                 "latest_zero_click": True, "page1_transition": "UNCHANGED",
+                 "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+                 "observations_28d": [{"export_date": DAY, "impressions": 127, "clicks": 0, "position": 34.73}]},
+                {"query": "small batch sticker printing", "classification": "MONEY", "latest_page1": True,
+                 "latest_zero_click": False, "page1_transition": "ENTERED_PAGE_1",
+                 "two_window_direction": "NOT_CONSECUTIVE",
+                 "observations_28d": [{"export_date": DAY, "impressions": 8, "clicks": 1, "position": 6.0}]},
+                {"query": "書刊印刷", "classification": "MONEY", "latest_page1": False,
+                 "latest_zero_click": True, "page1_transition": "DROPPED_OUT_PAGE_1",
+                 "two_window_direction": "NOT_CONSECUTIVE",
+                 "observations_28d": [{"export_date": DAY, "impressions": 121, "clicks": 0, "position": 11.2}]},
+                {"query": "教科書印刷", "classification": "MONEY", "latest_page1": False,
+                 "latest_zero_click": False, "page1_transition": "NO_CURRENT_BASELINE",
+                 "two_window_direction": None,
+                 "observations_28d": [{"export_date": DAY, "impressions": None, "clicks": None, "position": None}]},
+                {"query": "印刷", "classification": "INDUSTRY_HEAD", "latest_page1": False,
+                 "latest_zero_click": False, "page1_transition": "UNCHANGED", "two_window_direction": "NOT_CONSECUTIVE",
+                 "observations_28d": [{"export_date": DAY, "impressions": 78, "clicks": 1, "position": 20.19}]},
+            ],
+            "seven_day_focus_deltas": [{"query": "海報印刷", "previous_11_03": 15.92,
+                                         "current_11_07": 21.29, "delta_position": 5.37, "direction": "WORSE"}],
+        }
+        self.write(f".hermes/logs/gsc-daily-anomaly-{DAY}.json", json.dumps(anomaly, ensure_ascii=False))
+        self.write(f".hermes/logs/gsc-{DAY}-money-keyword-delta.json", json.dumps(delta, ensure_ascii=False))
+        self.write(f"docs/{DAY}-geo-probe-s1-completion.md", "S1 complete\n")
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": []}))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        result = subprocess.run([sys.executable, str(FEEDBACK), "--period", "weekly", "--date", DAY,
+                                 "--repo", str(self.repo)], cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.json").read_text(encoding="utf-8"))
+        focus = report["evidence_handoffs"]["gsc"]["focus_delta"]
+        rows = {row["query"]: row for row in focus["items"]}
+        self.assertEqual(rows["食品包裝印刷"]["route"], "FIX")
+        self.assertEqual(rows["宣傳單張"]["route"], "MEASURE")
+        self.assertEqual(rows["書刊印刷"]["route"], "MEASURE")
+        self.assertNotIn("small batch sticker printing", rows)
+        self.assertNotIn("教科書印刷", rows)
+        self.assertEqual(focus["entered_page1"], ["small batch sticker printing"])
+        self.assertEqual(focus["dropped_out_page1"], ["書刊印刷"])
+        self.assertEqual(focus["missing_current_baseline"], ["教科書印刷"])
+        self.assertEqual(focus["industry_head_count"], 1)
+        self.assertEqual(focus["page1_count"], 2)
+        self.assertEqual(focus["page1_zero_click_count"], 1)
+        self.assertEqual(rows["宣傳單張"]["retry_at"], "2026-11-04")
+        self.assertIn("no automatic article", rows["宣傳單張"]["approval_gate"])
+        self.assertEqual(report["evidence_handoffs"]["geo"]["s2_next_check"], "2026-11-20")
+
+    def test_periodic_stale_lane_status_cannot_dispatch_lane_repair(self):
+        status = {"generated_local": "2026-11-04 06:43", "lanes": [{
+            "task": LANE, "verdict": "FAILED", "recovery_plan": {"action": "request_human", "reason": "old failure"}
+        }]}
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": []}))
+        self.write(".hermes/logs/lane-status.json", json.dumps(status))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        result = subprocess.run([sys.executable, str(FEEDBACK), "--period", "weekly", "--date", "2026-11-07",
+                                 "--repo", str(self.repo), "--write-queue"], cwd=self.repo, capture_output=True, text=True)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        report = json.loads((self.repo / ".hermes/logs/periodic-review-weekly-2026-11-07.json").read_text(encoding="utf-8"))
+        self.assertTrue(report["execution"]["status_freshness"]["stale"])
+        self.assertEqual(report["execution"]["attention_lanes"], [])
+        self.assertEqual(report["proposed_task_ids"], [])
+        queue = json.loads((self.repo / ".hermes/logs/strategy-task-queue.json").read_text(encoding="utf-8"))
+        self.assertEqual(queue["tasks"], [])
+
     def test_periodic_undeployed_change_cannot_enter_learning_or_scale(self):
         queue = {"tasks": [{
             "task_id": "NOT-DEPLOYED", "status": "READY", "next_check": DAY,
             "learning_evidence": {"baseline": "before", "change": "snippet",
-                                  "online_verify": {"deployed": False}, "retest": "after"},
+                                  "production_deploy": {"deployed": False},
+                                  "online_verify": {"deployed": True, "status": "OK"}, "retest": "after"},
             "scale_evidence": "unverified claim"
         }]}
         self.write(".hermes/logs/strategy-task-queue.json", json.dumps(queue))
