@@ -3382,6 +3382,8 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         '安裝方式要和材質匹配：膠帶或藍丁膠只適合 200g 以下的室內紙質海報；背膠自粘適用於玻璃、金屬和光滑牆面；吊旗和展場吊掛要選過膠後打孔的工藝，否則紙張會從孔位撕裂；戶外長期建議鋁框繃裝，框架可重用，換畫面即可。色彩方面，大幅面印刷比小幅面更容易出問題：RGB 轉 CMYK 的色域損失令螢幕鮮豔的顏色變灰，大面積實地色容易出現墨量不均，多張拼接若分批印刷會有色差。我們的固定做法是同一訂單同一台機器一次印完、實地色建議加深、出印前提供 CMYK 預覽確認——這三招解決九成的大幅面色彩問題。',
       ],
       links: [
+        { label: '海報印刷尺寸・紙質・工藝指南（支援本類目決策）', href: '/zh-hk/blog/poster-printing-guide/' },
+        { label: 'A2 海報印刷（10 張起產品規格）', href: '/zh-hk/product/a2-posters/' },
         { label: '傳單印刷（返回主推頁：派發物料）', href: '/zh-hk/category/flyers/' },
         { label: '摺頁印刷（兄弟頁：多面摺疊傳單）', href: '/zh-hk/product/folded-leaflets/' },
         { label: '包裝盒印刷（跨簇：視覺展示物料）', href: '/zh-hk/category/packaging/' },
@@ -4587,6 +4589,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
           '婚慶套裝 9 折優惠:喜帖 + 信封 + 婚禮禮袋 + 席卡 + 桌牌 + 迎賓牌 + 利是封 一站印齊,享 9 折 + 免費寄樣,適合婚慶全套 / 海外婚禮 / 教堂 / 酒店婚禮。',
         ],
         links: [
+          { label: '婚禮感謝卡（賓客答謝；請柬主頁為本類目）', href: '/zh-hk/product/wedding-thank-you-cards/' },
           { label: '喜帖 vs 賀卡 vs 貼紙', href: '/zh-hk/category/greeting-cards/' },
           { label: '婚嫁利是封', href: '/zh-hk/blog/wedding-red-packet-printing-guide/' },
         ],
