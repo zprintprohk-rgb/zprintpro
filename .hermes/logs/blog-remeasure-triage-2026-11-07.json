@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "lane": "ZP-blog-deepfix",
+  "date": "2026-11-07",
+  "generated_at": "2026-11-08T00:05+08:00",
+  "idempotency_key": "e2c2a2a60f4db26d",
+  "trigger": "schtasks weekly SAT 23:47 (preflight ok, lock pid 44956)",
+  "output_class": "MEASURE",
+  "articles_written": 0,
+  "src_writes": 0,
+  "queue_writes": 0,
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-blog-deepfix.json @ 2026-11-07 23:47:00",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-07T14:48:17Z",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md",
+    "queue": ".hermes/cron-prompts/blog-money-keyword-queue.json (updated_at 2026-11-07)",
+    "gsc_delta": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json (analysis_date 2026-11-07)",
+    "gsc_page_baseline": ".hermes/logs/money-kw-share-baseline-2026-10-31.md / .json (query x page, measured 2026-10-31)",
+    "truth_source": "src/data/products.ts (a4-flyers L1911-1988, a5-flyers L1992-2069)",
+    "locks": {
+      "lane_lock": "held by ZP-blog-deepfix pid 44956 @ 2026-11-07 23:47:00",
+      "session_lock": "SESSION_LOCK.md last entry = released 2026-10-23; no active human holder"
+    }
+  },
+  "measurement_rules": {
+    "frozen_baseline_policy": "keep each item's original frozen baseline; append observations only",
+    "window_overlap": "7d window 2026-10-29..11-04 overlaps previous export by 3/7 days; 28d window 2026-10-08..11-04 overlaps 24/28 days; movement is not an experiment result",
+    "two_window_threshold": "a direction is called only when |delta_position| > 0.5 in two consecutive exports; otherwise NOT_CONSECUTIVE",
+    "attribution_caveat": "query table and page table are not joined in the 11-07 export; 2026-10-31 query x page shares are 7 days old and are attribution-only"
+  },
+  "items": [
+    {
+      "cluster": "flyers-zh-hk",
+      "queue_status": "remeasure",
+      "frozen_baseline": {
+        "window": "2026-09-30..2026-10-27",
+        "宣傳單張": {"impressions": 117, "clicks": 0, "position": 29.37},
+        "宣傳單張印刷": {"impressions": 103, "clicks": 0, "position": 29.02}
+      },
+      "observations": [
+        {"date": "2026-11-03", "window": "2026-10-04..2026-10-31", "宣傳單張": {"impressions": 121, "clicks": 0, "position": 33.74}, "宣傳單張印刷": {"impressions": 113, "clicks": 0, "position": 29.31}},
+        {"date": "2026-11-07", "window": "2026-10-08..2026-11-04", "宣傳單張": {"impressions": 127, "clicks": 0, "position": 34.73}, "宣傳單張印刷": {"impressions": 117, "clicks": 0, "position": 28.90}}
+      ],
+      "deltas": {
+        "28d_vs_frozen": {"宣傳單張": {"impressions": 10, "impressions_pct": 8.5, "position": 5.36, "direction": "WORSE"}, "宣傳單張印刷": {"impressions": 14, "impressions_pct": 13.6, "position": -0.12, "direction": "STABLE"}},
+        "28d_consecutive": {"宣傳單張": "CONFIRMED_TWO_WINDOW_WORSENING (+4.37 then +0.99)", "宣傳單張印刷": "NOT_CONSECUTIVE (+0.29 then -0.41)"},
+        "7d": {"宣傳單張": {"impressions": 40, "position": 38.67, "delta": 1.95, "direction": "WORSE"}, "宣傳單張印刷": {"impressions": 33, "position": 29.42, "delta": -0.55, "direction": "STABLE"}}
+      },
+      "query_page": {
+        "source": "2026-10-31 query x page baseline",
+        "宣傳單張": {"top_url": "/zh-hk/category/flyers/", "share_pct": 87, "urls": 2},
+        "宣傳單張印刷": {"top_url": "/zh-hk/category/flyers/", "share_pct": 77, "urls": 4},
+        "blog_share": "blog/flyer-printing-guide is not among the top 2 URLs for either money query"
+      },
+      "delivered_url": "/zh-hk/blog/flyer-printing-guide/",
+      "production_deploy": true,
+      "online_verify": {
+        "method": "web_fetch GET, HTTP 200, 2026-11-08 00:0x +08",
+        "markers_present": ["快速答案：宣傳單張印刷幾錢？", "10 張起印、HK$0.25 起/張", "數碼 10 張／柯式 100 張", "15 年印刷經驗"],
+        "note": "10-31 bus record says pushed=false, but the live page already carries the 10-31 rewrite; push mechanism not verifiable from this sandbox (no git access)"
+      },
+      "diagnosis": "The money query is answered by /zh-hk/category/flyers/ at 87%/77% share; the blog is not the ranking URL, so another blog rewrite cannot move this query. The 28d deterioration already appears in the window ending 2026-10-31, i.e. mostly before the 10-31 category label fix; it cannot be attributed to the blog rewrite either. No content lever verified.",
+      "decision": "MEASURE",
+      "owner": "ZP-blog-deepfix (content) + ZP-weekly-meta (category snippet if it becomes a page-1 zero-click case)",
+      "retry_at": "2026-11-14",
+      "exit_criteria": "Same-window remeasure. If 宣傳單張 28d position stays >30 and category share >=70%, keep MEASURE and do not touch the blog. If the blog enters the top-3 URLs with >=10% share and still loses the query, then a bounded single-variable content fix is justified."
+    },
+    {
+      "cluster": "stickers-zh-hk",
+      "queue_status": "remeasure",
+      "frozen_baseline": {
+        "window": "2026-09-30..2026-10-27",
+        "貼紙印刷": {"impressions": 120, "clicks": 0, "position": 40.88},
+        "貼紙訂製": {"impressions": 34, "clicks": 0, "position": 32.41}
+      },
+      "observations": [
+        {"date": "2026-11-03", "window": "2026-10-04..2026-10-31", "貼紙印刷": {"impressions": 127, "clicks": 0, "position": 38.06}, "貼紙訂製": {"impressions": 34, "clicks": 0, "position": 30.59}},
+        {"date": "2026-11-07", "window": "2026-10-08..2026-11-04", "貼紙印刷": {"impressions": 131, "clicks": 0, "position": 37.65}, "貼紙訂製": {"impressions": 38, "clicks": 0, "position": 29.29}}
+      ],
+      "deltas": {
+        "28d_vs_frozen": {"貼紙印刷": {"impressions": 11, "impressions_pct": 9.2, "position": -3.23, "direction": "BETTER"}, "貼紙訂製": {"impressions": 4, "impressions_pct": 11.8, "position": -3.12, "direction": "BETTER"}},
+        "28d_consecutive": {"貼紙印刷": "NOT_CONSECUTIVE (-2.82 then -0.41; second window below 0.5 threshold)", "貼紙訂製": "CONFIRMED_TWO_WINDOW_IMPROVEMENT (-1.82 then -1.30)"},
+        "7d": {"貼紙印刷": {"impressions": 44, "position": 28.43, "delta": -4.88, "direction": "BETTER"}, "貼紙訂製": {"impressions": 14, "position": 25.93, "delta": 7.50, "direction": "WORSE"}}
+      },
+      "query_page": {
+        "source": "2026-10-31 query x page baseline",
+        "貼紙印刷": {"urls": 10, "top_url": "/zh-hk/category/stickers/", "top_share_pct": 33.9, "blog_guide_share_pct": 26.9, "blog_guide_position": 55.64, "concentration": "split"},
+        "貼紙訂製": {"urls": 6, "top_url": "/zh-hk/blog/sticker-guide/", "top_share_pct": 30.8, "blog_guide_position": 25.5, "concentration": "split"}
+      },
+      "delivered_url": "/zh-hk/blog/sticker-guide/",
+      "production_deploy": true,
+      "online_verify": {
+        "method": "not re-probed this run (same 2026-10-31 batch as flyer/textbook, both proven live)",
+        "note": "no page-level GSC row for this URL in the 11-07 top-20 page table; page-level movement is UNMEASURED"
+      },
+      "diagnosis": "28d direction is improving but the 7d window contradicts it for 貼紙訂製 (+7.50 worse). 貼紙印刷 is a 10-URL split whose ranking URL is the category, not the guide (guide at 55.6). The primary-URL question (FIX-20261031-PRIMARY-URL-MISMATCH) is WAITING_K3, so a rewrite would pre-empt a structural decision. No information gain verified.",
+      "decision": "MEASURE",
+      "owner": "ZP-blog-deepfix (measure) + K3 (primary-URL decision)",
+      "retry_at": "2026-11-14",
+      "exit_criteria": "Same-window remeasure. If both windows agree on <=-0.5 improvement, HOLD and stop touching the guide. If both windows worsen and the guide is still the top URL for 貼紙訂製 with <20% share, write an attribution diagnosis (no 301/canonical) and escalate the primary-URL decision."
+    },
+    {
+      "cluster": "books-zh-hk",
+      "queue_status": "remeasure",
+      "frozen_baseline": {
+        "window": "2026-09-30..2026-10-27",
+        "書刊印刷": {"impressions": 101, "clicks": 0, "position": 32.28},
+        "印書": {"impressions": 52, "clicks": 0, "position": 31.96},
+        "教科書印刷": null
+      },
+      "observations": [
+        {"date": "2026-11-03", "window": "2026-10-04..2026-10-31", "書刊印刷": {"impressions": 112, "clicks": 0, "position": 31.98}, "印書": {"impressions": 56, "clicks": 0, "position": 31.50}, "教科書印刷": null},
+        {"date": "2026-11-07", "window": "2026-10-08..2026-11-04", "書刊印刷": {"impressions": 121, "clicks": 0, "position": 33.08}, "印書": {"impressions": 56, "clicks": 0, "position": 31.38}, "教科書印刷": null}
+      ],
+      "deltas": {
+        "28d_vs_frozen": {"書刊印刷": {"impressions": 20, "impressions_pct": 19.8, "position": 0.80, "direction": "WORSE"}, "印書": {"impressions": 4, "impressions_pct": 7.7, "position": -0.58, "direction": "BETTER"}, "教科書印刷": "NO_CURRENT_BASELINE"},
+        "28d_consecutive": {"書刊印刷": "NOT_CONSECUTIVE (-0.30 then +1.10)", "印書": "STABLE (-0.46 then -0.12)"},
+        "7d": {"書刊印刷": {"impressions": 41, "position": 36.54, "delta": 4.51, "direction": "WORSE"}, "印書": {"impressions": 16, "position": 30.94, "delta": -1.93, "direction": "BETTER"}}
+      },
+      "query_page": {
+        "source": "2026-10-31 query x page baseline",
+        "書刊印刷": {"top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 45.5, "top_position": 30.41, "category_share_pct": 44.6, "category_position": 55.08, "concentration": "split"},
+        "印書": {"top_url": "/zh-hk/blog/book-buying-guide/", "top_share_pct": 34.5, "top_position": 32.39, "concentration": "split"},
+        "教科書印刷": {"found": false, "note": "no exact or contained row in the current 28d export; NO_CURRENT_BASELINE"}
+      },
+      "delivered_url": "/zh-hk/blog/textbook-printing-guide/",
+      "production_deploy": true,
+      "online_verify": {
+        "method": "web_fetch GET, HTTP 200, 2026-11-08 00:0x +08",
+        "markers_present": ["教科書 SKU 100 本起", "騎馬釘、膠裝、精裝 10 本起", "數據來源 ... 2026-10-31 校準"],
+        "note": "the 10-31 rewrite is live"
+      },
+      "diagnosis": "Metric-target mismatch: the delivered page is /blog/textbook-printing-guide/, but 書刊印刷 and 印書 are served 45.5%/34.5% by /blog/book-buying-guide/. The two remeasure queries therefore cannot evaluate the delivered page; the page's own target query (教科書印刷) has no current baseline. Flat movement here is not evidence that the rewrite failed.",
+      "decision": "MEASURE",
+      "owner": "ZP-blog-deepfix (metric correction) + ZP-gsc-feedback (export rows for 教科書/教材 query)",
+      "retry_at": "2026-11-14",
+      "exit_criteria": "Before any content decision: (a) obtain a current baseline for 教科書印刷 / 教材 印刷製本, or use page-level metrics for textbook-printing-guide; (b) keep 書刊印刷/印書 assigned to book-buying-guide. Only if (a) shows the delivered page losing its own query with a verified content gap may a single-variable rewrite be proposed."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-20261107-FLYER-PRICE-FLOOR",
+      "severity": "P2",
+      "target_url": "/zh-hk/blog/flyer-printing-guide/",
+      "target_file": "src/data/blog-data/zh-hk.json",
+      "location": "flyer-printing-guide.content, second table (尺寸 / 適合場景 / 單張成本), rows A4 單面 and A5 單面",
+      "observed": {
+        "A4_單面": "HK$0.15-0.30",
+        "A5_單面": "HK$0.08-0.18"
+      },
+      "truth": {
+        "a4-flyers": {"basePrice": 0.35, "price_range": "HK$0.35-0.95/張", "minQuantity": 10, "max_volume_discount": 0.5},
+        "a5-flyers": {"basePrice": 0.25, "price_range": "HK$0.25-0.65/張", "minQuantity": 10, "max_volume_discount": 0.5},
+        "floor_derivation": "A4 0.35 x 0.5 = 0.175; A5 0.25 x 0.5 = 0.125. Observed lows 0.15 and 0.08 are below any price the SKU ladder can produce."
+      },
+      "consistency": "The same article's first table already states A5 HK$0.25 起/張 and A4 HK$0.35 起/張, and the quick-answer block repeats it. The second table contradicts the page itself.",
+      "proposed_patch": {
+        "A4_單面": "HK$0.15-0.30 -> HK$0.35 起",
+        "A5_單面": "HK$0.08-0.18 -> HK$0.25 起",
+        "clarifying_sentence_after_table": "單張成本隨數量階梯變動：以上「起」為 100 張檔牌價，5,000 張按 5 折計算。",
+        "write_scope": "single content string in src/data/blog-data/zh-hk.json, no title/excerpt/lastUpdated change"
+      },
+      "why_not_applied_this_run": [
+        "pwsh is designated blocked for this lane per the v9.4 note, so the mandatory gates (encoding / tsc / content guards) were not executed; the lane prompt STOP_IF includes gate failure",
+        "the table needs a coherent single-sided pair plus a clarifying clause, not a blind literal swap; the same literal appears in a second article in the same file",
+        "no git access to verify the working tree is clean of sibling edits at the byte level"
+      ],
+      "approval_gate": "products.ts truth only; no new commercial value. Not part of the K3 WAITING_K3 price decision because it removes an impossible claim instead of choosing a new price.",
+      "owner": "ZP-blog-deepfix",
+      "retry_at": "2026-11-14",
+      "exit_criteria": "Patch applied, JSON parses, page renders HK$0.35 / HK$0.25 in both tables, encoding + tsc + guards recorded with real exit codes, online marker re-probe PASS."
+    }
+  ],
+  "idempotency_notes": {
+    "queue_11_07_observation": "already present in blog-money-keyword-queue.json (all three items, source gsc-2026-11-07-money-keyword-delta.json); this run did not duplicate it",
+    "queue_not_rewritten": "the queue file was updated today (updated_at 2026-11-07) by the analysis session; cross-lane collision guard forbids rewriting it in this run. No state change was required anyway: recheck_after 2026-11-14 already encodes the next action.",
+    "prior_delivery": "2026-10-31 three rewrites delivered (rounds 4/5/6); flyer and textbook live-verified on 2026-11-08, sticker not separately re-probed; no re-delivery"
+  },
+  "lane_status_consumed": {
+    "verdict": "ATTENTION",
+    "problems": 9,
+    "siblings_today": {
+      "ZP-daily-content": "FAILED (dsh exit 1, no src files)",
+      "ZP-gsc-feedback": "FAILED (push failed after a successful analysis; files under docs/assets/2026-11-07 only)",
+      "ZP-k3-review": "MISSING"
+    },
+    "implication": "no sibling wrote src/data/blog-data today; the only write conflict surface is the queue, which is left untouched"
+  }
+}

@@ -5,14 +5,18 @@
 ## Execution health
 
 - Window: 2026-11-01 to 2026-11-07
-- Runs: 20; verdicts: {"OK": 15, "FAILED": 3, "BLOCKED": 2}
-- Current lanes requiring attention: 0
-- Lane status: {"available": true, "generated_local": "2026-11-04 06:43", "age_days": 3, "stale": true, "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"}
-- STALE_STATUS: no lane-repair task was dispatched from stale status; refresh bus/scheduler reconciliation first.
+- Runs: 23; verdicts: {"OK": 14, "FAILED": 6, "STALE": 1, "BLOCKED": 2}
+- Current lanes requiring attention: 5
+- Lane status: {"available": true, "generated_local": "2026-11-07 22:48", "age_days": 0, "stale": false, "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"}
+- Lane-status freshness gate passed or status is absent; absence is not proof of health.
 
 | lane | verdict | recovery | evidence |
 |---|---|---|---|
-| NONE | — | — | — |
+| ZP-daily-content | FAILED | request_human | powershell -NoProfile -ExecutionPolicy Bypass -File scripts\repair-dsh-scheduler-credential.ps1 |
+| ZP-gsc-feedback | FAILED | retry | .hermes/logs/cron-ZP-gsc-feedback.log |
+| ZP-weekly-meta | BLOCKED | request_human | .hermes/logs/run-context-ZP-weekly-meta.json |
+| ZP-monthly-matrix | MISSING | request_human | Get-ScheduledTask -TaskName ZP-monthly-matrix \| Get-ScheduledTaskInfo |
+| ZP-k3-review | MISSING | request_human | Get-ScheduledTask -TaskName ZP-k3-review \| Get-ScheduledTaskInfo |
 
 ## Task decisions
 
@@ -53,13 +57,35 @@
 
 ## GSC evidence handoffs
 
-- Source: gsc-daily-anomaly-2026-11-06.json; 28d window: None
-- Freshness: None
-- Recovery: None; Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery
+- Source: gsc-daily-anomaly-2026-11-07.json; 28d window: 2026-10-08..2026-11-04
+- Freshness: XLSX_2026_11_07_PARTIAL_3MO_CARRIED
+- Recovery: 96.98% DERIVED_SAME_BATCH (803 / 827.96), not a detector output; last official remains 123.7%; Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery
 
 | route | query | baseline (imp/clk/pos) | owner | required gate |
 |---|---|---|---|---|
-- Upstream anomaly tasks retained: 13; candidate handoffs: 5.
+| FIX | 食品包裝印刷 | 116/0/8.36 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | doujinshi printing | 55/0/9.98 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | small batch sticker printing | 27/0/6.0 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | small batch stickers | 19/0/5.42 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | 卒アル販売 | 16/0/5.0 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | saddle stitch booklet printing | 5/0/7.4 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| FIX | large envelopes | 1/0/7.0 | ZP-weekly-meta | Record SERP features and the real title/snippet first; change at most one snippet variable after approval |
+| MEASURE | コミケ 印刷 | 163/0/22.88 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 貼紙印刷 | 131/0/37.65 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 宣傳單張 | 127/0/34.73 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 月曆印刷 | 125/0/24.44 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 書刊印刷 | 121/0/33.08 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 宣傳單張印刷 | 117/0/28.9 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 利是封印刷 | 59/1/24.42 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 印書 | 56/0/31.38 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 紙盒印刷 | 54/0/36.72 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 包裝盒印刷 | 53/0/33.3 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 包裝盒訂製 | 53/0/34.43 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 教材 印刷製本 | 51/0/31.49 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | a2 poster | 49/1/25.8 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 貼紙訂製 | 38/0/29.29 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+| MEASURE | 喜帖印刷 | 16/0/36.25 | ZP-monthly-matrix | Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect |
+- Upstream anomaly tasks retained: 12; candidate handoffs: 2.
 
 ### Same-window focus-query delta
 
@@ -108,8 +134,8 @@
 ## Dispatch and learning
 
 - New FIX task IDs: NONE (or already present)
-- Recurred existing task IDs: NONE
-- Suppressed duplicates: 0 (deduplication is recorded, not misreported as a write failure)
+- Recurred existing task IDs: FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7, FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3, FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b
+- Suppressed duplicates: 3 (deduplication is recorded, not misreported as a write failure)
 - Learning candidates: 0; SCALE-eligible: 0
 - Learning gate: baseline + change + production_deploy + online_verify + retest are all mandatory. GSC movement alone is not a win/loss.
 - FIX/MEASURE handoffs are proposals only. No automatic prompt, permission, canonical, redirect or production rewrites are permitted.

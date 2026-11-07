@@ -10,9 +10,9 @@
     "status_available": true,
     "status_freshness": {
       "available": true,
-      "generated_local": "2026-11-04 06:43",
-      "age_days": 3,
-      "stale": true,
+      "generated_local": "2026-11-07 22:48",
+      "age_days": 0,
+      "stale": false,
       "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
     },
     "anomaly_available": true,
@@ -20,19 +20,22 @@
     "geo_available": true
   },
   "execution": {
-    "runs": 20,
+    "runs": 23,
     "verdicts": {
-      "OK": 15,
-      "FAILED": 3,
+      "OK": 14,
+      "FAILED": 6,
+      "STALE": 1,
       "BLOCKED": 2
     },
     "per_lane": {
       "ZP-daily-content": {
-        "OK": 9
+        "OK": 8,
+        "STALE": 1,
+        "FAILED": 2
       },
       "ZP-gsc-feedback": {
         "OK": 4,
-        "FAILED": 1,
+        "FAILED": 2,
         "BLOCKED": 1
       },
       "ZP-k3-review": {
@@ -45,12 +48,43 @@
     },
     "status_freshness": {
       "available": true,
-      "generated_local": "2026-11-04 06:43",
-      "age_days": 3,
-      "stale": true,
+      "generated_local": "2026-11-07 22:48",
+      "age_days": 0,
+      "stale": false,
       "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
     },
-    "attention_lanes": []
+    "attention_lanes": [
+      {
+        "task": "ZP-daily-content",
+        "verdict": "FAILED",
+        "recovery_action": "request_human",
+        "evidence": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\repair-dsh-scheduler-credential.ps1"
+      },
+      {
+        "task": "ZP-gsc-feedback",
+        "verdict": "FAILED",
+        "recovery_action": "retry",
+        "evidence": ".hermes/logs/cron-ZP-gsc-feedback.log"
+      },
+      {
+        "task": "ZP-weekly-meta",
+        "verdict": "BLOCKED",
+        "recovery_action": "request_human",
+        "evidence": ".hermes/logs/run-context-ZP-weekly-meta.json"
+      },
+      {
+        "task": "ZP-monthly-matrix",
+        "verdict": "MISSING",
+        "recovery_action": "request_human",
+        "evidence": "Get-ScheduledTask -TaskName ZP-monthly-matrix | Get-ScheduledTaskInfo"
+      },
+      {
+        "task": "ZP-k3-review",
+        "verdict": "MISSING",
+        "recovery_action": "request_human",
+        "evidence": "Get-ScheduledTask -TaskName ZP-k3-review | Get-ScheduledTaskInfo"
+      }
+    ]
   },
   "task_decisions": [
     {
@@ -281,18 +315,751 @@
   "evidence_handoffs": {
     "gsc": {
       "available": true,
-      "source": "gsc-daily-anomaly-2026-11-06.json",
-      "anomaly_date": "2026-11-06",
-      "data_status": null,
-      "xlsx_availability": {},
-      "api_availability": {},
-      "kpi_28d": null,
+      "source": "gsc-daily-anomaly-2026-11-07.json",
+      "anomaly_date": "2026-11-07",
+      "data_status": "XLSX_2026_11_07_PARTIAL_3MO_CARRIED",
+      "xlsx_availability": {
+        "export_date": "2026-11-07",
+        "exported_by": "K3 export 2026-11-07 08:41 (per 2026-11-07-ZP-daily-content.md)",
+        "windows_present": [
+          "24h",
+          "7d",
+          "28d"
+        ],
+        "windows_missing": [
+          "3mo"
+        ],
+        "windows_detail": {
+          "24h": "2026-11-06T03:00:00..2026-11-07T02:00:00 (24 hourly observations)",
+          "7d": "2026-10-29..2026-11-04",
+          "28d": "2026-10-08..2026-11-04",
+          "3mo": "carried 2026-11-03: 2026-08-01..2026-10-31"
+        },
+        "status": "FRESH_PARTIAL",
+        "note": "Fresh xlsx inventory does not prove the API plane is fresh; the two planes are reported separately."
+      },
+      "api_availability": {
+        "latest": "GSC数据/gsc-query-country-28d-end1105.csv",
+        "data_day": "2026-11-04",
+        "age_hours_at_2013": 68.2,
+        "margin_to_72h_hours": 3.8,
+        "status": "FRESH_UNTIL_2026_11_08_00_00",
+        "pulled_today": false,
+        "caliber": "query x country API export, 1,507 rows, 28d window ending 2026-11-04; not comparable to all-country xlsx totals"
+      },
+      "kpi_28d": {
+        "window": "2026-10-08..2026-11-04",
+        "observations": 28,
+        "clicks": 538,
+        "impressions": 23183,
+        "ctr_pct": 2.3207,
+        "position": 14.2796,
+        "previous_2026_11_03": {
+          "window": "2026-10-04..2026-10-31",
+          "clicks": 504,
+          "impressions": 22114,
+          "ctr_pct": 2.2791,
+          "position": 14.0266
+        },
+        "delta": {
+          "clicks": 34,
+          "clicks_pct": 6.75,
+          "impressions": 1069,
+          "impressions_pct": 4.83,
+          "ctr_pp": 0.0416,
+          "position_delta_positive_is_worse": 0.253
+        },
+        "read": "Volume and CTR up slightly; average position slightly worse. 24 of 28 days overlap; movement is not an independent SEO outcome."
+      },
       "recovery": {
-        "official_headline": null,
-        "formula": null,
+        "official_headline": "96.98% DERIVED_SAME_BATCH (803 / 827.96), not a detector output; last official remains 123.7%",
+        "formula": "803 / (23183 / 28) = 803 / 827.9643 = 0.96985",
         "guard": "Impression-metric recovery only; not ranking, penalty, enquiry, order or revenue recovery"
       },
-      "items": [],
+      "items": [
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-87656b1b",
+          "route": "FIX",
+          "query": "食品包裝印刷",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 116,
+            "clicks": 0,
+            "position": 8.36,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-be4c5311",
+          "route": "FIX",
+          "query": "doujinshi printing",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 55,
+            "clicks": 0,
+            "position": 9.98,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-a6fd35a6",
+          "route": "FIX",
+          "query": "small batch sticker printing",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 27,
+            "clicks": 0,
+            "position": 6.0,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-812d0c66",
+          "route": "FIX",
+          "query": "small batch stickers",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 19,
+            "clicks": 0,
+            "position": 5.42,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-ac0137c7",
+          "route": "FIX",
+          "query": "卒アル販売",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 5.0,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-96ed7022",
+          "route": "FIX",
+          "query": "saddle stitch booklet printing",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 5,
+            "clicks": 0,
+            "position": 7.4,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-FIX-2026-11-07-521b1bdc",
+          "route": "FIX",
+          "query": "large envelopes",
+          "owner_lane": "ZP-weekly-meta",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 1,
+            "clicks": 0,
+            "position": 7.0,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "CTR diagnosis proposal; do not batch-rewrite titles/meta and do not infer conversion",
+          "approval_gate": "Record SERP features and the real title/snippet first; change at most one snippet variable after approval",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-4c5ebffb",
+          "route": "MEASURE",
+          "query": "コミケ 印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 163,
+            "clicks": 0,
+            "position": 22.88,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-e63b7d18",
+          "route": "MEASURE",
+          "query": "貼紙印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 131,
+            "clicks": 0,
+            "position": 37.65,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-7dfc8cca",
+          "route": "MEASURE",
+          "query": "宣傳單張",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 127,
+            "clicks": 0,
+            "position": 34.73,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-08ebeb24",
+          "route": "MEASURE",
+          "query": "月曆印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 125,
+            "clicks": 0,
+            "position": 24.44,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-dd6074bb",
+          "route": "MEASURE",
+          "query": "書刊印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 121,
+            "clicks": 0,
+            "position": 33.08,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-e752bf51",
+          "route": "MEASURE",
+          "query": "宣傳單張印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 117,
+            "clicks": 0,
+            "position": 28.9,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-8dadc080",
+          "route": "MEASURE",
+          "query": "利是封印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 59,
+            "clicks": 1,
+            "position": 24.42,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-8c0db43b",
+          "route": "MEASURE",
+          "query": "印書",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 56,
+            "clicks": 0,
+            "position": 31.38,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-84d03c9b",
+          "route": "MEASURE",
+          "query": "紙盒印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 54,
+            "clicks": 0,
+            "position": 36.72,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-dacc1081",
+          "route": "MEASURE",
+          "query": "包裝盒印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 53,
+            "clicks": 0,
+            "position": 33.3,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-8324c019",
+          "route": "MEASURE",
+          "query": "包裝盒訂製",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 53,
+            "clicks": 0,
+            "position": 34.43,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-ffa9859a",
+          "route": "MEASURE",
+          "query": "教材 印刷製本",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 51,
+            "clicks": 0,
+            "position": 31.49,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-99d055a2",
+          "route": "MEASURE",
+          "query": "a2 poster",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 49,
+            "clicks": 1,
+            "position": 25.8,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-3b721f47",
+          "route": "MEASURE",
+          "query": "貼紙訂製",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 38,
+            "clicks": 0,
+            "position": 29.29,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        },
+        {
+          "handoff_id": "GSC-MEASURE-2026-11-07-549df6a3",
+          "route": "MEASURE",
+          "query": "喜帖印刷",
+          "owner_lane": "ZP-monthly-matrix",
+          "status": "PROPOSE_ONLY",
+          "baseline": {
+            "window": "2026-10-08..2026-11-04",
+            "impressions": 16,
+            "clicks": 0,
+            "position": 36.25,
+            "source": "gsc-daily-anomaly-2026-11-07.json"
+          },
+          "required_action": "Deep-position measurement only; establish a comparable baseline before any content work",
+          "approval_gate": "Check index, intent, query-by-page attribution and commercial gates; no automatic article, canonical or redirect",
+          "cooldown_days": 7,
+          "retry_at": "2026-11-14",
+          "exit_criteria": "Evidence-backed FIX/HOLD decision with owner and comparable retest; moving windows alone cannot close as a win",
+          "production_deploy": null,
+          "online_verify": null,
+          "retest": {
+            "next_check": "2026-11-14",
+            "required_windows": [
+              "7d",
+              "14d",
+              "28d"
+            ]
+          },
+          "learning_evidence_complete": false,
+          "scale_allowed": false
+        }
+      ],
       "focus_delta": {
         "available": true,
         "source": "gsc-2026-11-07-money-keyword-delta.json",
@@ -1017,80 +1784,91 @@
       },
       "candidate_tasks": [
         {
-          "task_id": null,
+          "task_id": "MEASURE-20261107-PRODUCT-SNIPPET-STRUCTURE",
           "route": "MEASURE",
-          "target": "11-06 批1 desc 价格冲突: 去价格或改口径",
-          "owner_lane": "weekly-meta + K3(价格真值)",
-          "why": null,
-          "approval_gate": "A41; 禁逐字执行",
-          "next_check": null,
+          "target": "Product-snippet structure: 38.7% of 28d impressions and 35.3% of clicks at position 28.94; snippet CTR below non-snippet CTR",
+          "owner_lane": "ZP-monthly-matrix",
+          "why": "Structural dependency on product rich results; if the snippet surface changes, clicks move without any page change",
+          "approval_gate": "Measurement only; no feed or product change from this lane. Requires product truth owner.",
+          "next_check": "2026-12-01",
           "status": "PROPOSE_ONLY",
-          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "source": "gsc-daily-anomaly-2026-11-07.json",
           "scale_allowed": false
         },
         {
-          "task_id": null,
+          "task_id": "MEASURE-20261107-PAGE-INTERNAL-FRICTION",
           "route": "MEASURE",
-          "target": "逾期 sticker title (en 100/104, ja 83)",
-          "owner_lane": "weekly-meta",
-          "why": null,
-          "approval_gate": "title-v5 + 单批",
-          "next_check": null,
+          "target": "Poster/books/stickers page-level overlap (no current query x page join; 10-31 baseline only)",
+          "owner_lane": "ZP-monthly-matrix",
+          "why": "Multiple URLs compete for one intent; the category page is the weakest in posters and books",
+          "approval_gate": "Needs a fresh query x page join and K3 primary-URL decision (FIX-20261031-PRIMARY-URL-MISMATCH); no redirect/canonical/new page",
+          "next_check": "2026-12-01",
           "status": "PROPOSE_ONLY",
-          "source": "gsc-daily-anomaly-2026-11-06.json",
-          "scale_allowed": false
-        },
-        {
-          "task_id": null,
-          "route": "MEASURE",
-          "target": "数据面: 11-04..11-06 四档 + detector + --end 2026-11-05",
-          "owner_lane": "K3-admin",
-          "why": null,
-          "approval_gate": "同因第 3 次 ⇒ 停止自动重试, 等人工",
-          "next_check": null,
-          "status": "PROPOSE_ONLY",
-          "source": "gsc-daily-anomaly-2026-11-06.json",
-          "scale_allowed": false
-        },
-        {
-          "task_id": null,
-          "route": "MEASURE",
-          "target": "A2/A1 海报价 3 值归并 (D3/FIVE-CATEGORY-TRUTH)",
-          "owner_lane": "K3",
-          "why": null,
-          "approval_gate": "价格真值不可由执行层自决",
-          "next_check": null,
-          "status": "PROPOSE_ONLY",
-          "source": "gsc-daily-anomaly-2026-11-06.json",
-          "scale_allowed": false
-        },
-        {
-          "task_id": null,
-          "route": "MEASURE",
-          "target": "池指标口径统一 (16/632 规则写死为 SSoT)",
-          "owner_lane": "monthly / 分析师",
-          "why": null,
-          "approval_gate": "A39; 不改今日结论",
-          "next_check": null,
-          "status": "PROPOSE_ONLY",
-          "source": "gsc-daily-anomaly-2026-11-06.json",
+          "source": "gsc-daily-anomaly-2026-11-07.json",
           "scale_allowed": false
         }
       ],
       "tasks": {
-        "O1": "MANUAL_PULL_ONLY (今日无拉取; end1105 为 11-05 人工)",
-        "O2": "WAITING_K3 (恢复 SSoT; 第 3 日缺料反而强化 A 方案)",
-        "O3": "FIFTH_TEST_INHERITED / NO_SIXTH_TODAY",
-        "O4": "SCHEDULED_TODAY_2052 (门: B1 NO-GO / B1b GO / 其余 UNVERIFIED)",
-        "O5": "DELIVERED_CANDIDATES (11-03 清单有效)",
-        "O6": "DECISION_DUE_TODAY (11-06; 本车道只交证据)",
-        "O7": "SCHEDULED_TODAY_2052 (月曆 118@24.81, copy 窗 11-10)",
-        "O8": "HOLD (38.09; 11-07 复测)",
-        "O9": "OPEN (教材 30.87 平台; monthly 缺)",
-        "O10": "INTENT_MISMATCH_OPEN (喜帖 33.75, 4 窗恶化; 承接页 = thank-you-cards)",
-        "O11": "SCHEDULED_TODAY_2052 (利是封 54/1clk + 燙金 jpn 1.00)",
-        "O12": "DONE_BY_PEER_PARTIAL (S2 11-20..24)",
-        "queue_write": "零写入; 未翻转任何 SCHEDULED/WAITING_K3/READY"
+        "O1": {
+          "label": "API pull cadence",
+          "status": "MANUAL_PULL_ONLY",
+          "next_check": "2026-11-08"
+        },
+        "O2": {
+          "label": "Recovery SSoT caliber",
+          "status": "WAITING_K3",
+          "next_check": null
+        },
+        "O3": {
+          "label": "Task J eight locked words",
+          "status": "FOUR_WINDOW_XLSX_BASELINE",
+          "next_check": "2026-11-14"
+        },
+        "O4": {
+          "label": "CTR zero-click pool",
+          "status": "PROPOSED_7_ROWS_239_IMP",
+          "next_check": "2026-11-14"
+        },
+        "O5": {
+          "label": "Canonical candidates",
+          "status": "CARRIED",
+          "next_check": "2026-12-01"
+        },
+        "O6": {
+          "label": "Poster cluster",
+          "status": "MEASURE",
+          "next_check": "2026-11-14"
+        },
+        "O7": {
+          "label": "Calendar copy",
+          "status": "RETEST_2026_11_10",
+          "next_check": "2026-11-10"
+        },
+        "O8": {
+          "label": "Sticker 14-day",
+          "status": "HOLD",
+          "next_check": "2026-11-14"
+        },
+        "O9": {
+          "label": "Ja textbook",
+          "status": "MEASURE",
+          "next_check": "2026-11-14"
+        },
+        "O10": {
+          "label": "Wedding invitations",
+          "status": "MEASURE_INTENT_MISMATCH",
+          "next_check": "2026-11-14"
+        },
+        "O11": {
+          "label": "Red packets",
+          "status": "PROTECT_SEASONAL",
+          "next_check": "2026-11-14"
+        },
+        "O12": {
+          "label": "GEO S1/S2",
+          "status": "S1_PARTIAL_S2_2026_11_20_24",
+          "next_check": "2026-11-20"
+        }
       }
     },
     "blog": {
@@ -1280,7 +2058,7 @@
       "source": "docs\\2026-11-03-geo-probe-s1-completion.md",
       "status": "S1_COMPLETE_CITATION_URLS_PARTIAL",
       "s2_window": "2026-11-20..2026-11-24",
-      "s2_next_check": null,
+      "s2_next_check": "2026-11-20",
       "action": "MEASURE at S2; capture complete citation URLs. Do not rerun S1 or create content solely from absence",
       "completion_evidence_found": true
     }
@@ -1299,9 +2077,34 @@
     "rule": "FIX/MEASURE evidence cannot become SCALE without baseline + change + production_deploy + online_verify + retest + scale_evidence"
   },
   "dispatched_task_ids": [],
-  "proposed_task_ids": [],
-  "recurred_task_ids": [],
-  "suppressed_duplicates": [],
+  "proposed_task_ids": [
+    "FIX-WEEKLY-2026-11-07-ZP-gsc-feedback-4924bebc",
+    "FIX-WEEKLY-2026-11-07-ZP-weekly-meta-41362e31",
+    "FIX-WEEKLY-2026-11-07-ZP-monthly-matrix-d92c2cb5",
+    "FIX-WEEKLY-2026-11-07-ZP-k3-review-81c89540"
+  ],
+  "recurred_task_ids": [
+    "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+    "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+    "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b"
+  ],
+  "suppressed_duplicates": [
+    {
+      "proposed_task_id": "FIX-WEEKLY-2026-11-07-ZP-weekly-meta-41362e31",
+      "existing_task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
+      "reason": "active_lane_recurred"
+    },
+    {
+      "proposed_task_id": "FIX-WEEKLY-2026-11-07-ZP-monthly-matrix-d92c2cb5",
+      "existing_task_id": "FIX-WEEKLY-2026-10-28-ZP-monthly-matrix-725c87e3",
+      "reason": "active_lane_recurred"
+    },
+    {
+      "proposed_task_id": "FIX-WEEKLY-2026-11-07-ZP-k3-review-81c89540",
+      "existing_task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+      "reason": "active_lane_recurred"
+    }
+  ],
   "learning_candidates": [],
   "queue_write_enabled": false,
   "guardrails": [
