@@ -5183,7 +5183,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、進口印刷設備把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A2 Posters for Global Brands</h3>
-<p>ZprintPro A2 posters (420×594mm) are the mid-format workhorse for retail, event, and campaign signage. Choose from 150-300g gloss or matte art paper with full 4-color CMYK printing. Heidelberg offset presses deliver sharp text and saturated color, with optional matte or gloss lamination for durability. Indoor wall mounting, window display, or framed art. 100-poster MOQ, 2-3 day production, free design service.</p>
+<p>ZprintPro A2 posters (420×594mm) are the mid-format workhorse for retail, event, and campaign signage. Choose from 150-300g gloss or matte art paper with full 4-color CMYK printing. Heidelberg offset presses deliver sharp text and saturated color, with optional matte or gloss lamination for durability. Indoor wall mounting, window display, or framed art. 10-poster MOQ, 2-3 day production, free design service.</p>
 
 <h3>Paper & Weight Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -5228,7 +5228,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
   <li><strong>Heidelberg Offset Quality:</strong> Premium offset printing with 90%+ color saturation and crisp halftone reproduction.</li>
-  <li><strong>Low MOQ with Volume Discount:</strong> 100-poster minimum, 15% off at 250+, 25% off at 500+, 35% off at 2,500+.</li>
+  <li><strong>Low MOQ with Volume Discount:</strong> 10-poster minimum, 15% off at 250+, 25% off at 500+, 35% off at 2,500+.</li>
   <li><strong>Free Layout & Bleed Check:</strong> We prepress your file at no charge. CMYK conversion, bleed verification included.</li>
   <li><strong>Free Design Service:</strong> 3 layout concepts free with every order. Professional designers tailor to your industry.</li>
 </ul>
@@ -5236,10 +5236,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>quality-managed</strong> lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and 4-color offset presses. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>A2 posters are the most versatile mid-format signage. ZprintPro serves retail stores (sale and seasonal signage), event companies (concert, festival, conference posters), real estate agents (open house and listing), restaurants (menu boards and promo posters), gyms and fitness studios (class schedules and trainer promotions), educational institutions (event and program posters), and small businesses (campaign announcements). For US-based small businesses, our 100-poster MOQ with 2-3 day production supports fast event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>A2 posters are the most versatile mid-format signage. ZprintPro serves retail stores (sale and seasonal signage), event companies (concert, festival, conference posters), real estate agents (open house and listing), restaurants (menu boards and promo posters), gyms and fitness studios (class schedules and trainer promotions), educational institutions (event and program posters), and small businesses (campaign announcements). For US-based small businesses, our 10-poster MOQ with 2-3 day production supports fast event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 posters. Volume discounts start at 250 (15% off), 500 (25% off), and 2,500+ (35% off).</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 posters. Volume discounts start at 250 (15% off), 500 (25% off), and 2,500+ (35% off).</p></details>
 <details class="my-2"><summary><strong>Can I get same-day printing?</strong></summary><p>Yes. For orders up to 200 posters with file confirmation by 11am (HKT), same-day dispatch available. US delivery via DHL Express arrives 2-4 business days after dispatch.</p></details>
 <details class="my-2"><summary><strong>What's the difference between gloss and matte?</strong></summary><p>Gloss posters have vibrant colors and high shine — ideal for product photography and bold graphics. Matte posters have a refined, anti-glare finish — ideal for text-heavy posters, menus, and gallery-style displays.</p></details>
 <details class="my-2"><summary><strong>Can I get lamination?</strong></summary><p>Yes. Matte and gloss lamination add durability and water resistance. Add 1 day to production. Recommended for high-traffic or outdoor-indoor signage.</p></details>
