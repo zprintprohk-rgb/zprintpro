@@ -1,1350 +1,1368 @@
 {
-    "schema_version":  1,
-    "updated_at":  "2026-11-08",
-    "source_window":  "2026-10-08..2026-11-04",
-    "source_file":  "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
-    "measurement_scope":  "all countries; query, page and country tables are not joined",
-    "latest_evidence_handoff":  {
-                                    "date":  "2026-11-07",
-                                    "source":  ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
-                                    "observation_window":  "2026-10-08..2026-11-04",
-                                    "xlsx_status":  "AVAILABLE; data day 2026-11-04",
-                                    "api_status":  "NOT_EVALUATED; API freshness was not checked in this review",
-                                    "baseline_policy":  "Keep each item\u0027s original frozen baseline and append current observations to measurement_history; a moving window is not an experiment win/loss.",
-                                    "action_policy":  "Page-1 zero-click queries are FIX candidates only after SERP/snippet audit; deep positions and split attribution are MEASURE. No automatic new article, canonical, redirect or K3 self-approval.",
-                                    "geo_status":  "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1"
-                                },
-    "selection_policy":  {
-                             "max_articles_per_run":  1,
-                             "executable_statuses":  [
-                                                         "queued",
-                                                         "review_or_rewrite",
-                                                         "remeasure"
-                                                     ],
-                             "priority_order":  [
-                                                    "flyers-zh-hk",
-                                                    "stickers-zh-hk",
-                                                    "books-zh-hk",
-                                                    "packaging-zh-hk",
-                                                    "posters-zh-hk"
-                                                ],
-                             "rules":  [
-                                           "Consume the previous lane result before selecting work.",
-                                           "Do not select an item whose recheck_after is later than the run date unless new GSC evidence justifies it.",
-                                           "Page-1 zero-click queries require SERP feature and real title/snippet diagnosis before a bounded FIX.",
-                                           "Deep-position queries require index, intent, query-by-page attribution and page-change diagnosis before content work.",
-                                           "Create or rewrite at most one article only after a genuine procurement information gap is verified; no information gain means NO_OP.",
-                                           "Do not create an article when review_or_rewrite can close the evidence gap.",
-                                           "A commercial truth conflict changes the item to blocked_waiting_k3; never choose a value independently.",
-                                           "A delivered item becomes remeasure for 7/14/28-day checks, then completed; it cannot be regenerated without a new evidence gap.",
-                                           "NO_OP is valid when no item has enough verified evidence or information gain."
-                                       ]
-                         },
-    "items":  [
-                  {
-                      "cluster":  "flyers-zh-hk",
-                      "locale":  "zh-hk",
-                      "money_queries":  [
-                                            "宣傳單張",
-                                            "宣傳單張印刷"
-                                        ],
-                      "primary_url":  "/zh-hk/category/flyers/",
-                      "search_intent":  "transactional procurement: size, paper, sides, quantity, artwork and quote conditions",
-                      "evidence_gap":  "No general flyer procurement guide exists (real gap). 词形缺口已被 2026-10-31 query×page 实测证伪: /zh-hk/category/flyers/ 承接 宣傳單張 87%（2 URL）与 宣傳單張印刷 77%（4 URL），且 H1/title/meta description 均已含「宣傳單張」——原稿「category 主要用傳單、词形承接不齐」不成立，禁止据该假设改词。仍待处理的是 10/100 張起等商业口径（见 2026-10-31-five-category-truth-audit.md）。",
-                      "target_slug":  "flyer-printing-buying-guide",
-                      "action":  "create_one_if_slug_is_free_and_facts_are_verified",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-10-31",
-                      "recheck_after":  "2026-11-14",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "宣傳單張":  {
-                                                    "impressions":  117,
-                                                    "clicks":  0,
-                                                    "position":  29.37
-                                                },
-                                       "宣傳單張印刷":  {
-                                                      "impressions":  103,
-                                                      "clicks":  0,
-                                                      "position":  29.02
-                                                  }
-                                   },
-                      "constraints":  [
-                                          "Do not invent or reconcile MOQ, price, turnaround, certification or capacity without an approved source.",
-                                          "Support the category page; do not target the transaction head term with the blog URL.",
-                                          "Add natural bidirectional links only when both pages and slugs exist."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "queue_evidence_gap_inaccurate",
-                                       "next_run_constraints":  [
-                                                                    "队列 evidence_gap 标「No general guide was found」时，必须先查 src/data/blog-data/*.json 与 blog-posts.ts 是否存在已覆盖该意图的文章",
-                                                                    "blog-posts.ts 存在但 blog-data 无正文的孤儿 slug（如 flyer-buying-guide）视为缺陷，需报告并等拍板后处理，不得擅自删条目"
-                                                                ]
-                                   },
-                      "delivered_url":  "/zh-hk/blog/flyer-printing-guide/",
-                      "delivery_note":  "队列原定新建 flyer-printing-buying-guide；审计发现既有 flyer-printing-guide 已覆盖采购指南意图（zh-hk 原 6,870 字，H2 覆盖：宣傳單張幾錢/尺寸/紙質/單雙面/MOQ/交期/工藝/設計/FAQ），按 selection_policy「Do not create an article when review_or_rewrite can close the evidence gap」改为复写修复，未新建近义 slug。",
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-10-31",
-                                                      "window":  "2026-09-30..2026-10-27",
-                                                      "baseline":  {
-                                                                       "宣傳單張":  {
-                                                                                    "impressions":  117,
-                                                                                    "clicks":  0,
-                                                                                    "position":  29.37
-                                                                                },
-                                                                       "宣傳單張印刷":  {
-                                                                                      "impressions":  103,
-                                                                                      "clicks":  0,
-                                                                                      "position":  29.02
-                                                                                  }
-                                                                   },
-                                                      "action":  "review_or_rewrite_delivered (repair, no new article)",
-                                                      "judgement":  "交付前基线；7 天（2026-11-07）复测 GSC 主词展示/排名/点击"
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "宣傳單張":  {
-                                                                                       "impressions":  121,
-                                                                                       "clicks":  0,
-                                                                                       "position":  33.74
-                                                                                   },
-                                                                          "宣傳單張印刷":  null
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "NO_CURRENT_BASELINE for 宣傳單張印刷; overlapping-window movement is not a win/loss. Keep remeasure and recheck on 2026-11-07."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-07",
-                                                      "window":  "2026-10-08..2026-11-04",
-                                                      "source":  ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
-                                                      "observation":  {
-                                                                          "宣傳單張":  {
-                                                                                       "impressions":  127,
-                                                                                       "clicks":  0,
-                                                                                       "position":  34.73
-                                                                                   },
-                                                                          "宣傳單張印刷":  {
-                                                                                         "impressions":  117,
-                                                                                         "clicks":  0,
-                                                                                         "position":  28.90
-                                                                                     }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为‘都要写长文’。"
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-08",
-                                                      "action":  "commercial_truth_fix_delivered",
-                                                      "change":  "既有 flyer-printing-guide 第二张尺寸表仅修 A4/A5 单面价格为 HK$0.35 起／HK$0.25 起，并补 100 张档牌价与 5,000 张 5 折的阶梯说明；A4/A5 双面区间、title、excerpt、lastUpdated 未动，未新建文章。",
-                                                      "commit":  "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
-                                                      "deploy":  "Cloudflare Pages completed/success at 2026-11-07T16:32:21Z",
-                                                      "online_verify":  "PASS; .hermes/logs/risk-query-online-verify-2026-11-08.json",
-                                                      "retest":  [
-                                                                     "2026-11-14",
-                                                                     "2026-11-21"
-                                                                 ],
-                                                      "judgement":  "FIX_DEPLOYED，不等于排名提升；保留冻结 baseline 与历史窗口观察，进入 MEASURE，不得 SCALE。"
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "source":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "宣傳單張":  {
-                                                               "top_url":  "/zh-hk/category/flyers/",
-                                                               "share_pct":  87,
-                                                               "urls":  2
-                                                           },
-                                                  "宣傳單張印刷":  {
-                                                                 "top_url":  "/zh-hk/category/flyers/",
-                                                                 "share_pct":  77,
-                                                                 "urls":  4
-                                                             },
-                                                  "measured_at":  "2026-10-31T23:20+08:00"
-                                              }
-                  },
-                  {
-                      "cluster":  "stickers-zh-hk",
-                      "locale":  "zh-hk",
-                      "money_queries":  [
-                                            "貼紙印刷",
-                                            "貼紙訂製"
-                                        ],
-                      "primary_url":  "/zh-hk/category/stickers/",
-                      "search_intent":  "transactional sticker selection by material, adhesive, finish, use surface and quantity",
-                      "evidence_gap":  "Existing long guides cover material broadly; query-to-page attribution and conflicting MOQ/turnaround conditions need review before any rewrite.",
-                      "target_slug":  "sticker-guide",
-                      "action":  "review_then_rewrite_only_if_new_decision_value_exists",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-10-31",
-                      "recheck_after":  "2026-11-14",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "貼紙印刷":  {
-                                                    "impressions":  120,
-                                                    "clicks":  0,
-                                                    "position":  40.88
-                                                },
-                                       "貼紙訂製":  {
-                                                    "impressions":  34,
-                                                    "clicks":  0,
-                                                    "position":  32.41
-                                                }
-                                   },
-                      "constraints":  [
-                                          "Do not create another generic sticker guide.",
-                                          "Do not merge, redirect or canonicalize pages without query-by-page evidence.",
-                                          "Block commercial claims when 10/100-copy or 2-3/5-7-day conditions cannot be tied to an approved SKU source."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "conflicting_commercial_truth",
-                                       "next_run_constraints":  [
-                                                                    "交期/价格/MOQ 必须逐项对照 products.ts SKU 的 description/title/minQuantity；原文 3-5 天与 SKU 5-7 天冲突时以 SKU 为准",
-                                                                    "不存在 SKU 的产品类型（如螢光貼紙）不得出现在价格表；改为真实存在的 SKU（卷裝貼紙）",
-                                                                    "无 finishings 参数的加成百分比视为无源数字，只可定性（轻/中/高）或引用真实 SKU 牌价对比"
-                                                                ]
-                                   },
-                      "delivered_url":  "/zh-hk/blog/sticker-guide/",
-                      "delivery_note":  "review_or_rewrite 完成：既有 sticker-guide 已覆盖材质/工艺/流程/FAQ 采购决策，按「review_then_rewrite_only_if_new_decision_value_exists」未新写泛文；本轮做结构维护（段2 快速答案块 2→4、段7 LinkedIn+EU REACH 措辞、段8 15 原子、段11 内链 8→11、excerpt/schemas 补）＋商业真值口径修正（交期 3-5→5-7 per 防水貼紙 SKU description；螢光貼紙 SKU 不存在→卷裝貼紙；工藝 % 加成为无源→定性）。",
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-10-31",
-                                                      "window":  "2026-09-30..2026-10-27",
-                                                      "baseline":  {
-                                                                       "貼紙印刷":  {
-                                                                                    "impressions":  120,
-                                                                                    "clicks":  0,
-                                                                                    "position":  40.88
-                                                                                },
-                                                                       "貼紙訂製":  {
-                                                                                    "impressions":  34,
-                                                                                    "clicks":  0,
-                                                                                    "position":  32.41
-                                                                                }
-                                                                   },
-                                                      "action":  "review_or_rewrite_delivered (structure maintenance + commercial truth reconciliation)",
-                                                      "judgement":  "交付前基线；7 天（2026-11-07）复测 貼紙印刷／貼紙訂製 展示与排名"
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "貼紙印刷":  {
-                                                                                       "impressions":  127,
-                                                                                       "clicks":  0,
-                                                                                       "position":  38.06
-                                                                                   },
-                                                                          "貼紙訂製":  null
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "NO_CURRENT_BASELINE for 貼紙訂製; direction improved but the query remains deep. Keep remeasure and recheck on 2026-11-07; no article or canonical action."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-07",
-                                                      "window":  "2026-10-08..2026-11-04",
-                                                      "source":  ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
-                                                      "observation":  {
-                                                                          "貼紙印刷":  {
-                                                                                       "impressions":  131,
-                                                                                       "clicks":  0,
-                                                                                       "position":  37.65
-                                                                                   },
-                                                                          "貼紙訂製":  {
-                                                                                       "impressions":  38,
-                                                                                       "clicks":  0,
-                                                                                       "position":  29.29
-                                                                                   }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为“都要写长文”。"
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/zh-hk/category/stickers/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "貼紙印刷",
-                                                                      "found":  true,
-                                                                      "imps":  245,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  53.42,
-                                                                      "urls_with_impressions":  10,
-                                                                      "observed_top_url":  "/zh-hk/category/stickers/",
-                                                                      "observed_top_share_pct":  33.9,
-                                                                      "concentration":  "split",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/stickers/",
-                                                                                       "imps":  83,
-                                                                                       "share_pct":  33.9,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  39.41
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/sticker-guide/",
-                                                                                       "imps":  66,
-                                                                                       "share_pct":  26.9,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  55.64
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/sticker-buying-guide/",
-                                                                                       "imps":  62,
-                                                                                       "share_pct":  25.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  71.21
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/small-batch-stickers/",
-                                                                                       "imps":  15,
-                                                                                       "share_pct":  6.1,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  50.07
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/transparent-stickers/",
-                                                                                       "imps":  10,
-                                                                                       "share_pct":  4.1,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  61.4
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "貼紙訂製",
-                                                                      "found":  true,
-                                                                      "imps":  52,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  33.86,
-                                                                      "urls_with_impressions":  6,
-                                                                      "observed_top_url":  "/zh-hk/blog/sticker-guide/",
-                                                                      "observed_top_share_pct":  30.8,
-                                                                      "concentration":  "split",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/sticker-guide/",
-                                                                                       "imps":  16,
-                                                                                       "share_pct":  30.8,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  25.5
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/sticker-buying-guide/",
-                                                                                       "imps":  15,
-                                                                                       "share_pct":  28.8,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  43.6
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/stickers/",
-                                                                                       "imps":  13,
-                                                                                       "share_pct":  25,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  36.46
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/small-batch-stickers/",
-                                                                                       "imps":  6,
-                                                                                       "share_pct":  11.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  31.83
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/removable-stickers/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  1.9,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  11
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "books-zh-hk",
-                      "locale":  "zh-hk",
-                      "money_queries":  [
-                                            "書刊印刷",
-                                            "印書",
-                                            "教科書印刷"
-                                        ],
-                      "primary_url":  "/zh-hk/category/books/",
-                      "search_intent":  "book and textbook procurement by binding, page count, paper, colour, proof and school-use conditions",
-                      "evidence_gap":  "RESOLVED 2026-10-31: 1/10/100-copy 口径已按 SKU 核实——教科書 ED-004(educational) minQuantity=100；騎馬釘/膠裝/精裝 BK-002/003/004 minQuantity=10。原「Existing textbook guide is reusable; binding decision depth and 1/10/100-copy source consistency require audit」已由第 6 轮交付关闭；教科書印刷 在本 GSC 档仍无精确或包含匹配（NO_CURRENT_BASELINE）。",
-                      "target_slug":  "textbook-printing-guide",
-                      "action":  "review_then_rewrite_only_if_new_decision_value_exists",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-10-31",
-                      "recheck_after":  "2026-11-14",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "書刊印刷":  {
-                                                    "impressions":  101,
-                                                    "clicks":  0,
-                                                    "position":  32.28
-                                                },
-                                       "印書":  {
-                                                  "impressions":  52,
-                                                  "clicks":  0,
-                                                  "position":  31.96
-                                              },
-                                       "教科書印刷":  null
-                                   },
-                      "constraints":  [
-                                          "Do not use an old 教科書印刷 position as the current baseline.",
-                                          "Do not repeat institution counts, certifications or turnaround claims without a decision record.",
-                                          "Link to books and educational only where the procurement context is relevant."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "commercial_truth_and_segment_gaps",
-                                       "next_run_constraints":  [
-                                                                    "改任何 MOQ 前逐 SKU 對照 products.ts minQuantity 與 quantities：教科書 ED-004（educational 類）minQuantity=100，books 類 BK-002/003/004 minQuantity=10，兩者不可互套",
-                                                                    "客戶可見正文不得出現 products.ts 等內部檔名，統一寫「依 SKU 牌價／規格」",
-                                                                    "段6/7/8 缺口按 12 段骨架一次補齊：案例須標「待 008 案例庫校準」，FDA／EU REACH 只作法規對照，不得寫成認證取得"
-                                                                ]
-                                   },
-                      "delivered_url":  "/zh-hk/blog/textbook-printing-guide/",
-                      "delivery_note":  "review_or_rewrite 完成：既有 textbook-printing-guide 已覆蓋製本／紙材／價錢／年度合約／校對／交期／FAQ，按「review_then_rewrite_only_if_new_decision_value_exists」不新建近義 slug。本輪＝商業真值對賬＋12 段補缺：膠裝 100 本起→10 本起（BK-003 minQuantity=10，48-400 頁）、精裝 100 本起→10 本起（BK-004 minQuantity=10），教科書 100 本起保留（ED-004 minQuantity=100）；清除 3 處 products.ts 內部檔名；補段2 快速答案 ×3、段6 客戶案例（待 008 校準）、段7 E-E-A-T（LinkedIn + FDA 21 CFR 175.300 + EU REACH 1907/2006）、段8 七條【】GEO 原子＋數據來源行。",
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-10-31",
-                                                      "window":  "2026-09-30..2026-10-27",
-                                                      "baseline":  {
-                                                                       "書刊印刷":  {
-                                                                                    "impressions":  101,
-                                                                                    "clicks":  0,
-                                                                                    "position":  32.28
-                                                                                },
-                                                                       "印書":  {
-                                                                                  "impressions":  52,
-                                                                                  "clicks":  0,
-                                                                                  "position":  31.96
-                                                                              },
-                                                                       "教科書印刷":  null
-                                                                   },
-                                                      "query_page":  {
-                                                                         "書刊印刷":  {
-                                                                                      "imps":  202,
-                                                                                      "urls":  4,
-                                                                                      "top_url":  "/zh-hk/blog/book-buying-guide/",
-                                                                                      "top_share_pct":  45.5,
-                                                                                      "concentration":  "split"
-                                                                                  },
-                                                                         "印書":  {
-                                                                                    "imps":  148,
-                                                                                    "urls":  7,
-                                                                                    "top_url":  "/zh-hk/blog/book-buying-guide/",
-                                                                                    "top_share_pct":  34.5,
-                                                                                    "concentration":  "split"
-                                                                                }
-                                                                     },
-                                                      "action":  "review_or_rewrite_delivered (commercial truth reconciliation + 12-seg completion)",
-                                                      "judgement":  "交付前基線；7 天（2026-11-07）復測 書刊印刷／印書 展示、排名與點擊；教科書印刷 本窗口無匹配，維持 NO_CURRENT_BASELINE"
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "書刊印刷":  {
-                                                                                       "impressions":  112,
-                                                                                       "clicks":  0,
-                                                                                       "position":  31.98
-                                                                                   },
-                                                                          "印書":  null,
-                                                                          "教科書印刷":  null
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "NO_CURRENT_BASELINE for 印書 and 教科書印刷; do not reuse an old value as current. Keep remeasure and recheck on 2026-11-07."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-07",
-                                                      "window":  "2026-10-08..2026-11-04",
-                                                      "source":  ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
-                                                      "observation":  {
-                                                                          "書刊印刷":  {
-                                                                                       "impressions":  121,
-                                                                                       "clicks":  0,
-                                                                                       "position":  33.08
-                                                                                   },
-                                                                          "印書":  {
-                                                                                     "impressions":  56,
-                                                                                     "clicks":  0,
-                                                                                     "position":  31.38
-                                                                                 },
-                                                                          "教科書印刷":  null
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "教科書印刷为 NO_CURRENT_BASELINE。窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为“都要写长文”。"
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/zh-hk/category/books/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "書刊印刷",
-                                                                      "found":  true,
-                                                                      "imps":  202,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  44.36,
-                                                                      "urls_with_impressions":  4,
-                                                                      "observed_top_url":  "/zh-hk/blog/book-buying-guide/",
-                                                                      "observed_top_share_pct":  45.5,
-                                                                      "concentration":  "split",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/book-buying-guide/",
-                                                                                       "imps":  92,
-                                                                                       "share_pct":  45.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  30.41
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/books/",
-                                                                                       "imps":  90,
-                                                                                       "share_pct":  44.6,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  55.08
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/catalog-printing/",
-                                                                                       "imps":  10,
-                                                                                       "share_pct":  5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  77.1
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/saddle-stitch-booklets/",
-                                                                                       "imps":  10,
-                                                                                       "share_pct":  5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  43.4
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "印書",
-                                                                      "found":  true,
-                                                                      "imps":  148,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  42.87,
-                                                                      "urls_with_impressions":  7,
-                                                                      "observed_top_url":  "/zh-hk/blog/book-buying-guide/",
-                                                                      "observed_top_share_pct":  34.5,
-                                                                      "concentration":  "split",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/book-buying-guide/",
-                                                                                       "imps":  51,
-                                                                                       "share_pct":  34.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  32.39
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/books/",
-                                                                                       "imps":  47,
-                                                                                       "share_pct":  31.8,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  46.32
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/catalog-printing/",
-                                                                                       "imps":  41,
-                                                                                       "share_pct":  27.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  49.12
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/hardcover-books/",
-                                                                                       "imps":  4,
-                                                                                       "share_pct":  2.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  52.75
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/textbooks/",
-                                                                                       "imps":  3,
-                                                                                       "share_pct":  2,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  73.33
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "packaging-zh-hk",
-                      "locale":  "zh-hk",
-                      "money_queries":  [
-                                            "紙盒印刷",
-                                            "包裝盒訂製",
-                                            "包裝盒印刷"
-                                        ],
-                      "primary_url":  "/zh-hk/category/packaging/",
-                      "search_intent":  "custom packaging procurement by box type, material, structure, quantity, finishing and proof",
-                      "evidence_gap":  "Long pricing and box-type guides already exist; 100/500-unit and imposition conditions need commercial-truth reconciliation before content changes.",
-                      "target_slug":  "packaging-box-pricing-2026",
-                      "alternate_slug":  "kraft-paper-box-types-comparison-2026",
-                      "action":  "commercial_truth_audit_only",
-                      "status":  "blocked_waiting_k3",
-                      "last_delivered":  null,
-                      "recheck_after":  null,
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "紙盒印刷":  {
-                                                    "impressions":  46,
-                                                    "clicks":  0,
-                                                    "position":  33.3
-                                                },
-                                       "包裝盒訂製":  {
-                                                     "impressions":  47,
-                                                     "clicks":  0,
-                                                     "position":  31.51
-                                                 },
-                                       "包裝盒印刷":  {
-                                                     "impressions":  54,
-                                                     "clicks":  0,
-                                                     "position":  31.89
-                                                 }
-                                   },
-                      "constraints":  [
-                                          "Packaging batch 1 remains WAITING_K3; do not publish commercial changes.",
-                                          "Do not create a generic packaging trends article.",
-                                          "After approval, rewrite only one existing guide and preserve its slug."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "commercial_truth_gate",
-                                       "next_run_constraints":  [
-                                                                    "Require the K3 decision record before changing queue status."
-                                                                ]
-                                   },
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "紙盒印刷":  null,
-                                                                          "包裝盒訂製":  null,
-                                                                          "包裝盒印刷":  {
-                                                                                        "impressions":  50,
-                                                                                        "clicks":  0,
-                                                                                        "position":  32.80
-                                                                                    }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "NO_CURRENT_BASELINE for 紙盒印刷 and 包裝盒訂製; retain blocked_waiting_k3 and diagnose before content work."
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/zh-hk/category/packaging/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "紙盒印刷",
-                                                                      "found":  true,
-                                                                      "imps":  73,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  41.99,
-                                                                      "urls_with_impressions":  3,
-                                                                      "observed_top_url":  "/zh-hk/category/packaging/",
-                                                                      "observed_top_share_pct":  57.5,
-                                                                      "concentration":  "mixed",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/packaging/",
-                                                                                       "imps":  42,
-                                                                                       "share_pct":  57.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  33.62
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/kraft-paper-packaging-box/",
-                                                                                       "imps":  23,
-                                                                                       "share_pct":  31.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  52.13
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/corrugated-boxes/",
-                                                                                       "imps":  8,
-                                                                                       "share_pct":  11,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  56.75
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "包裝盒訂製",
-                                                                      "found":  true,
-                                                                      "imps":  47,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  31.51,
-                                                                      "urls_with_impressions":  3,
-                                                                      "observed_top_url":  "/zh-hk/category/packaging/",
-                                                                      "observed_top_share_pct":  95.7,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/packaging/",
-                                                                                       "imps":  45,
-                                                                                       "share_pct":  95.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  31.6
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/cosmetic-boxes/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  2.1,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  28
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/kraft-paper-packaging-box/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  2.1,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  31
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "包裝盒印刷",
-                                                                      "found":  true,
-                                                                      "imps":  74,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  36.27,
-                                                                      "urls_with_impressions":  5,
-                                                                      "observed_top_url":  "/zh-hk/category/packaging/",
-                                                                      "observed_top_share_pct":  70.3,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/packaging/",
-                                                                                       "imps":  52,
-                                                                                       "share_pct":  70.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  32.04
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/kraft-paper-packaging-box/",
-                                                                                       "imps":  18,
-                                                                                       "share_pct":  24.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  49.67
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/white-card-boxes/",
-                                                                                       "imps":  2,
-                                                                                       "share_pct":  2.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  22
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/corrugated-boxes/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  1.4,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  39
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/food-boxes/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  1.4,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  41
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "posters-zh-hk",
-                      "locale":  "zh-hk",
-                      "money_queries":  [
-                                            "海報印刷"
-                                        ],
-                      "primary_url":  "/zh-hk/category/posters/",
-                      "search_intent":  "poster procurement by size, paper, artwork, quantity and delivery conditions",
-                      "evidence_gap":  "The head term is already at position 14.94; category, guide and PDP attribution must be measured before deciding whether any rewrite is useful.",
-                      "target_slug":  "poster-printing-guide",
-                      "action":  "remeasure_primary_url_alignment",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-11-08",
-                      "recheck_after":  "2026-11-14",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "海報印刷":  {
-                                                    "impressions":  286,
-                                                    "clicks":  1,
-                                                    "position":  14.94
-                                                }
-                                   },
-                      "constraints":  [
-                                          "K3 2026-11-08 01:38 approved /zh-hk/category/posters/ as the primary URL; prices and certifications remain outside this approval.",
-                                          "Do not change titles, prices, canonicals or redirects.",
-                                          "Do not rebuild the existing poster guide family."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "waiting_k3_resolved_for_primary_url_only",
-                                       "next_run_constraints":  [
-                                                                    "Measure query-by-page attribution on 2026-11-14 and 2026-11-21; do not interpret deployment as ranking improvement.",
-                                                                    "Any later price, certification, title, canonical or redirect work requires separate authorization."
-                                                                ]
-                                   },
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "海報印刷":  {
-                                                                                       "impressions":  278,
-                                                                                       "clicks":  1,
-                                                                                       "position":  14.41
-                                                                                   }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "Head-term movement is not proof of consolidation success. Keep blocked_waiting_k3 and measure blog/trade attribution; no 301 or canonical."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-08",
-                                                      "action":  "primary_url_alignment_delivered",
-                                                      "approval":  "K3 2026-11-08 01:38 directly approved poster and wedding primary URLs.",
-                                                      "change":  "海报主承接=/zh-hk/category/posters/；类目新增指南与 A2 PDP 支持链接，指南首段明确类目负责交易、指南负责选购与完稿。未改 title/H1、价格、认证、canonical、301、noindex。",
-                                                      "commit":  "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
-                                                      "deploy":  "Cloudflare Pages completed/success at 2026-11-07T17:51:49Z",
-                                                      "online_verify":  "PASS 4/4 at 2026-11-07T17:52:34.266Z; .hermes/logs/poster-wedding-primary-url-online-2026-11-08.json",
-                                                      "retest":  [
-                                                                     "2026-11-14",
-                                                                     "2026-11-21"
-                                                                 ],
-                                                      "judgement":  "FIX_DEPLOYED，不等于排名提升；MEASURE，不得 SCALE。"
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/zh-hk/category/posters/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "海報印刷",
-                                                                      "found":  true,
-                                                                      "imps":  567,
-                                                                      "clicks":  1,
-                                                                      "ctr_pct":  0.18,
-                                                                      "pos_weighted":  34.01,
-                                                                      "urls_with_impressions":  10,
-                                                                      "observed_top_url":  "/zh-hk/blog/poster-printing-guide/",
-                                                                      "observed_top_share_pct":  37,
-                                                                      "concentration":  "split",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/poster-printing-guide/",
-                                                                                       "imps":  210,
-                                                                                       "share_pct":  37,
-                                                                                       "clicks":  1,
-                                                                                       "pos":  9.78
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/product/a2-posters/",
-                                                                                       "imps":  93,
-                                                                                       "share_pct":  16.4,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  37.27
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/category/posters/",
-                                                                                       "imps":  64,
-                                                                                       "share_pct":  11.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  61.72
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/retail-shop-poster-printing-guide/",
-                                                                                       "imps":  60,
-                                                                                       "share_pct":  10.6,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  65.95
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/poster-buying-guide/",
-                                                                                       "imps":  55,
-                                                                                       "share_pct":  9.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  65.75
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "stickers-en",
-                      "locale":  "en",
-                      "money_queries":  [
-                                            "small batch sticker printing"
-                                        ],
-                      "primary_url":  "/en/category/stickers/",
-                      "search_intent":  "small-batch sticker purchase with proof, specification and fulfilment clarity",
-                      "evidence_gap":  "Commercial truth is approved and deployed. Page-1 zero-click persists, but the current US-English Google SERP is unavailable; real displayed title/snippet and SERP features remain unverified. No new procurement information gap is proven.",
-                      "target_slug":  null,
-                      "action":  "remeasure_serp_snippet",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-10-30",
-                      "recheck_after":  "2026-11-28",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "small batch sticker printing":  {
-                                                                            "impressions":  46,
-                                                                            "clicks":  0,
-                                                                            "position":  5.5
-                                                                        }
-                                   },
-                      "constraints":  [
-                                          "K3 2026-10-30 approved 10 stickers from US$0.55 with verified fulfilment wording; strategy-task-queue.json is DONE with commits 7b396bd9, 9f7b348c.",
-                                          "Do not create another small-batch synonym article.",
-                                          "Keep title, description, H1 and body unchanged during the current page-level measurement window; any later snippet test requires real SERP evidence and separate bounded approval."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "stale_queue_gate_after_k3_approval",
-                                       "next_run_constraints":  [
-                                                                    "Before applying blocked_waiting_k3, reconcile strategy-task-queue.json, the K3 decision record and execution commits.",
-                                                                    "On 2026-11-28 refresh same-scope GSC and query-by-page evidence and capture the real US-English SERP; if unavailable, retain SERP_UNAVAILABLE rather than inferring the displayed snippet.",
-                                                                    "Do not treat overlapping 28-day windows as independent experiment results or deployment as a CTR/ranking win."
-                                                                ]
-                                   },
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "small batch sticker printing":  {
-                                                                                                               "impressions":  35,
-                                                                                                               "clicks":  0,
-                                                                                                               "position":  5.66
-                                                                                                           },
-                                                                          "small batch stickers":  {
-                                                                                                       "impressions":  21,
-                                                                                                       "clicks":  0,
-                                                                                                       "position":  5.10
-                                                                                                   }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "Page-1 zero-click is a FIX candidate after SERP/snippet audit; no unverified prior experiment is assumed and no new article is generated."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-08",
-                                                      "source":  ".hermes/logs/2026-11-08-small-batch-serp-diagnosis.md",
-                                                      "latest_gsc":  {
-                                                                         "window":  "2026-10-08..2026-11-04",
-                                                                         "small batch sticker printing":  {
-                                                                                                              "impressions":  27,
-                                                                                                              "clicks":  0,
-                                                                                                              "position":  6.00
-                                                                                                          },
-                                                                         "small batch stickers":  {
-                                                                                                      "impressions":  19,
-                                                                                                      "clicks":  0,
-                                                                                                      "position":  5.42
-                                                                                                  }
-                                                                     },
-                                                      "serp_status":  "SERP_UNAVAILABLE; direct Google fetch ConnectTimeoutError and in-app browser ERR_CONNECTION_TIMED_OUT; no current Google title/snippet/rank/feature claim.",
-                                                      "production_observation":  "HTTP 200, self-canonical, index/follow; current title, description and H1 are recorded in the diagnosis report.",
-                                                      "action":  "hold_measure_no_op",
-                                                      "judgement":  "Corrected the stale commercial WAITING_K3 gate. Concentrated PDP attribution supports SERP/CTR diagnosis, not another article. Exact-match wording is only a hypothesis; the 2026-10-30 page changes remain inside the 2-4 week measurement window. No src change, commit, push or deployment."
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/en/category/stickers/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "small batch sticker printing",
-                                                                      "found":  true,
-                                                                      "imps":  46,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  5.5,
-                                                                      "urls_with_impressions":  1,
-                                                                      "observed_top_url":  "/en/product/small-batch-stickers/",
-                                                                      "observed_top_share_pct":  100,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/en/product/small-batch-stickers/",
-                                                                                       "imps":  46,
-                                                                                       "share_pct":  100,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  5.5
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "catalog-en",
-                      "locale":  "en",
-                      "money_queries":  [
-                                            "china catalog printing"
-                                        ],
-                      "primary_url":  "/en/category/books/",
-                      "search_intent":  "catalog procurement, binding and international order conditions",
-                      "evidence_gap":  "Commercial truth and query-to-page attribution are pending; no automatic content production.",
-                      "target_slug":  null,
-                      "action":  "measurement_only",
-                      "status":  "blocked_waiting_k3",
-                      "last_delivered":  null,
-                      "recheck_after":  "2026-11-28",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "china catalog printing":  {
-                                                                      "impressions":  72,
-                                                                      "clicks":  0,
-                                                                      "position":  15.79
-                                                                  }
-                                   },
-                      "constraints":  [
-                                          "The en catalog commercial item remains WAITING_K3 for blog content decisions.",
-                                          "PDP H1 MOQ truth resolved by K3-3 A ruling; execution belongs to weekly-meta single-variable batch (proposed 2026-11-09)."
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "commercial_truth_gate",
-                                       "next_run_constraints":  [
-
-                                                                ]
-                                   },
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "china catalog printing":  {
-                                                                                                         "impressions":  72,
-                                                                                                         "clicks":  0,
-                                                                                                         "position":  14.96
-                                                                                                     }
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "Commercial truth remains gated; measure the concentrated PDP before deciding whether any rewrite is justified."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-09",
-                                                      "window":  "2026-10-08..2026-11-04",
-                                                      "source":  ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json + docs/2026-11-09-three-site-inventory-flywheel-next-step.md",
-                                                      "observation":  {
-                                                                          "china catalog printing":  {
-                                                                                                         "position":  14.15,
-                                                                                                         "impressions":  98,
-                                                                                                         "clicks":  0
-                                                                                                     }
-                                                                      },
-                                                      "action":  "diagnosis_only",
-                                                      "judgement":  "PDP 72.7% concentrated (usa 40@13.30). Live en H1 \u0027Catalog Printing 100+\u0027 contradicts title/desc/body 10 MOQ; K3-3 A (2026-10-26) approved H1-\u003e10, A2 fixed 11-08 (74ffa5a9), catalog missed. FIX_PROPOSED: en H1 single-variable -\u003e \u0027Catalog Printing 10+ | ZprintPro\u0027; zh-hk desc 100-\u003e10本起印 and ja desc 100-\u003e10冊 separate single-variable batches; ja H1 English H1 registered. SERP_UNAVAILABLE (both engines blocked). Retest 2026-11-14/11-21; no SCALE without six-element evidence."
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/en/category/books/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "china catalog printing",
-                                                                      "found":  true,
-                                                                      "imps":  77,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  17.35,
-                                                                      "urls_with_impressions":  3,
-                                                                      "observed_top_url":  "/en/product/catalog-printing/",
-                                                                      "observed_top_share_pct":  72.7,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/en/product/catalog-printing/",
-                                                                                       "imps":  56,
-                                                                                       "share_pct":  72.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  13.62
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/en/blog/catalog-printing-china-supplier-guide/",
-                                                                                       "imps":  20,
-                                                                                       "share_pct":  26,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  25.2
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/services/catalog-printing-china/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  1.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  69
-                                                                                   }
-                                                                               ]
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  },
-                  {
-                      "cluster":  "comiket-ja",
-                      "locale":  "ja",
-                      "money_queries":  [
-                                            "コミケ 印刷"
-                                        ],
-                      "primary_url":  "/ja/category/japan-doujin/",
-                      "search_intent":  "event-driven doujin printing by deadline, binding, page count and copy quantity",
-                      "evidence_gap":  "K3 2026-10-30 已按推荐裁决 JA-C109，strategy-task-queue.json 为 DONE、执行 commit 为 7b396bd9；2026-11-08 仅补齐 ¥7,500 为指定规格／数量的订单起价而非每部单价，进入复测。",
-                      "target_slug":  null,
-                      "action":  "remeasure_commercial_truth_fix",
-                      "status":  "remeasure",
-                      "last_delivered":  "2026-11-08",
-                      "recheck_after":  "2026-11-14",
-                      "source_window":  "2026-10-04..2026-10-31",
-                      "baseline":  {
-                                       "コミケ 印刷":  {
-                                                      "impressions":  173,
-                                                      "clicks":  0,
-                                                      "position":  18.99
-                                                  }
-                                   },
-                      "constraints":  [
-                                          "准备指南、官方日期、rush、安全截稿日及未批准项保持不动。",
-                                          "Do not invent event deadlines, express turnaround or translated claims.",
-                                          "不得把订单起价写成每部单价，也不得借本次修复改 title、canonical 或 301。"
-                                      ],
-                      "learning":  {
-                                       "last_failure_mode":  "stale_queue_gate_after_k3_approval",
-                                       "next_run_constraints":  [
-                                                                    "把项目标为 blocked_waiting_k3 前，先核对 strategy-task-queue.json、K3 裁决记录和后续执行 commit，禁止沿用陈旧 WAITING_K3 状态。"
-                                                                ]
-                                   },
-                      "measurement_history":  [
-                                                  {
-                                                      "date":  "2026-11-03",
-                                                      "window":  "2026-10-04..2026-10-31",
-                                                      "source":  ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
-                                                      "observation":  {
-                                                                          "コミケ 印刷":  {
-                                                                                         "impressions":  170,
-                                                                                         "clicks":  0,
-                                                                                         "position":  22.04
-                                                                                     },
-                                                                          "教材 印刷製本":  {
-                                                                                          "impressions":  46,
-                                                                                          "clicks":  0,
-                                                                                          "position":  28.67
-                                                                                      },
-                                                                          "教科書印刷":  null
-                                                                      },
-                                                      "action":  "window_observation_only",
-                                                      "judgement":  "C109 dates and commitments remain gated; textbook deterioration requires index/intent/attribution diagnosis, not automatic content generation. 教科書印刷 is NO_CURRENT_BASELINE."
-                                                  },
-                                                  {
-                                                      "date":  "2026-11-08",
-                                                      "action":  "commercial_truth_fix_delivered",
-                                                      "change":  "DJ-001 的 ¥7,500〜/部〜 改为 ¥7,500〜/注文〜，JA body 明确这是指定规格／数量的订单开始价格而非每部单价；准备指南、rush、官方日期及倒排未动。",
-                                                      "approval":  "K3 2026-10-30 1–5 全部按推荐；strategy-task-queue.json JA-C109=DONE；执行 commit 7b396bd9",
-                                                      "commit":  "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
-                                                      "deploy":  "Cloudflare Pages completed/success at 2026-11-07T16:32:21Z",
-                                                      "online_verify":  "PASS; .hermes/logs/risk-query-online-verify-2026-11-08.json",
-                                                      "retest":  [
-                                                                     "2026-11-14",
-                                                                     "2026-11-21"
-                                                                 ],
-                                                      "judgement":  "FIX_DEPLOYED，不等于排名提升；保留冻结 baseline，进入 MEASURE，不得 SCALE。"
-                                                  }
-                                              ],
-                      "query_page_evidence":  {
-                                                  "window":  "2026-09-30..2026-10-27",
-                                                  "dimension":  "query×page",
-                                                  "source_csv":  "GSC数据/money-kw-query-page-2026-10-31.csv",
-                                                  "measured_at":  "2026-10-31T15:14:08.597Z",
-                                                  "intent_primary_url":  "/ja/category/japan-doujin/",
-                                                  "queries":  [
-                                                                  {
-                                                                      "query":  "コミケ 印刷",
-                                                                      "found":  true,
-                                                                      "imps":  174,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  19.23,
-                                                                      "urls_with_impressions":  2,
-                                                                      "observed_top_url":  "/ja/product/doujinshi-printing/",
-                                                                      "observed_top_share_pct":  94.3,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/ja/product/doujinshi-printing/",
-                                                                                       "imps":  164,
-                                                                                       "share_pct":  94.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  17.33
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/ja/blog/comiket-printing-prep-guide/",
-                                                                                       "imps":  10,
-                                                                                       "share_pct":  5.7,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  50.4
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "教材 印刷製本",
-                                                                      "found":  true,
-                                                                      "imps":  44,
-                                                                      "clicks":  0,
-                                                                      "ctr_pct":  0,
-                                                                      "pos_weighted":  24.93,
-                                                                      "urls_with_impressions":  3,
-                                                                      "observed_top_url":  "/ja/blog/textbook-printing-guide/",
-                                                                      "observed_top_share_pct":  70.5,
-                                                                      "concentration":  "concentrated",
-                                                                      "top5":  [
-                                                                                   {
-                                                                                       "url":  "/ja/blog/textbook-printing-guide/",
-                                                                                       "imps":  31,
-                                                                                       "share_pct":  70.5,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  11.97
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/ja/product/textbooks/",
-                                                                                       "imps":  12,
-                                                                                       "share_pct":  27.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  56.67
-                                                                                   },
-                                                                                   {
-                                                                                       "url":  "/zh-hk/blog/textbook-printing-guide/",
-                                                                                       "imps":  1,
-                                                                                       "share_pct":  2.3,
-                                                                                       "clicks":  0,
-                                                                                       "pos":  46
-                                                                                   }
-                                                                               ]
-                                                                  },
-                                                                  {
-                                                                      "query":  "教科書印刷",
-                                                                      "found":  false,
-                                                                      "note":  "窗口内该查询无展示记录（API 精确匹配亦为空）"
-                                                                  }
-                                                              ],
-                                                  "interpretation_rule":  "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
-                                                  "caution":  "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
-                                                  "total_discrepancy_note":  "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
-                                              }
-                  }
-              ],
-    "audit_notes":  [
-                        {
-                            "date":  "2026-10-31",
-                            "finding":  "blog-posts.ts 注册 flyer-buying-guide（三语 title 齐备）但 blog-data 三语均无正文，线上页面 HTTP 200 空内容（soft-404）；flyer-printing-guide 曾链向该空页，已改指向 a5-vs-a6-flyer-size。待 K3 裁决：删除条目或后续以独立角度补正文。",
-                            "source":  "GSC 28d 2026-10-30 档 + products.ts + 线上 curl"
-                        },
-                        "2026-10-31 22:5x: 补 query×page 实测承接 (GSC API, 窗口 2026-09-30..10-27, 与冻结基线同窗) 到 8 个 items 的 observed 字段; 未改 status/main_url; split 仅作假设线索",
-                        {
-                            "at":  "2026-10-31T23:40+08:00",
-                            "by":  "executor (deepseek)",
-                            "change":  "flyers-zh-hk.evidence_gap 更正: 词形缺口不成立(实测 87%/77% 且 H1/title/desc 已承接)",
-                            "evidence":  ".hermes/logs/money-kw-share-baseline-2026-10-31.md",
-                            "previous":  "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation."
-                        },
-                        {
-                            "at":  "2026-10-31T23:58+08:00",
-                            "by":  "executor (deepseek, ZP-blog-deepfix)",
-                            "change":  "books-zh-hk 交付回寫: status review_or_rewrite→remeasure; 更正 MOQ 判讀——教科書屬 ED-004(educational 類, minQuantity=100) 故「100 本起」為真; 膠裝/精裝屬 BK-003/BK-004(books 類, minQuantity=10) 故原文「100 本起」為假, 已改 10 本起",
-                            "evidence":  "src/data/products.ts L5141-5332 (BK-002/003/004) + L5977-6045 (ED-004); .hermes/logs/2026-10-31-blog-deepfix.md 第六轮"
-                        },
-                        {
-                            "date":  "2026-11-01",
-                            "finding":  "测量底座审计 v2（NO_OP 轮，未改内容）：28d 全国家 21,127 imps，市场占比 zh-hk 57.9% / en-us 13.0% / ja 10.9% / apac 5.3% / en-other 2.9%；12 条 query×page 承接浓度：zh-hk 带钱词（貼紙印刷 33.9% split、書刊印刷 45.5% split、海報印刷 37% split）呈分散，packaging/catalog/comiket 单 URL 集中（70-96%）；small batch sticker printing pos 5.5 单 URL 100% 承接 0 点击 = 纯 CTR 缺口非内容缺口。建议：zh-hk 下一杠杆为承接页 title/meta + 内链收口；en sticker 做 snippet 测试；country×query 仍不可联接（xlsx 独立 sheet）。",
-                            "source":  ".hermes/logs/money-keyword-measurement-audit-2026-11-01.json + GSC 28d 2026-10-30 档 + 队列 query_page_evidence"
-                        },
-                        {
-                            "date":  "2026-11-08",
-                            "by":  "Kimi Work 人手会话（风险词优先级修复）",
-                            "finding":  [
-                                            "JA 教材：blog-data、blog-posts.ts 摘要与正文中的 HK$5-50/冊 已统一为 100冊から 基本仕様 ¥1,288〜，表头改为価格条件；commit 74ffa5a9，生产验收 PASS，11/14 与 11/21 复测。",
-                                            "EN a2 poster：H1 与 4 处 MOQ 已统一为 10+／10-poster／10 posters；commit 74ffa5a9，生产验收 PASS，11/14 与 11/21 复测。",
-                                            "海报簇：10/31 快照为指南 37%、A2 PDP 16%；主 URL、标题／价格／认证仍 WAITING_K3，本轮不改页、不另写长文。",
-                                            "喜帖印刷：10/31 快照为 wedding-thank-you-cards 73%、wedding-invitations 27%，属搜索意图错接；保持 WAITING_K3，不自行移类目或 canonical／301。",
-                                            "利是封印刷：10/31 快照类目承接 75%，季节性强，本轮 NO_OP，不改页、不新增文章。"
-                                        ],
-                            "query_page_api_status":  "2026-11-08 两次刷新失败（ProxyConnectionError／直连 TimeoutError）；份额继续引用 2026-10-31 快照，不冒充今日联接。",
-                            "source":  ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .hermes/logs/risk-query-online-verify-2026-11-08.json + .hermes/logs/2026-11-08-risk-query-priority-execution.md"
-                        },
-                        {
-                            "date":  "2026-11-08",
-                            "by":  "Kimi Work 人手会话（海报／喜帖主承接 URL 拍板执行）",
-                            "approval":  "K3 2026-11-08 01:38 直接拍板海报与喜帖主承接 URL。",
-                            "finding":  [
-                                            "海报主承接=/zh-hk/category/posters/；海报指南继续负责选购／完稿，A2 PDP 负责 A2 产品规格；已建立类目到指南／A2 的支持链接及指南到交易类目的明确分工。",
-                                            "喜帖主承接=/zh-hk/category/wedding-invitations/；wedding-thank-you-cards 只承接婚礼感谢卡／宾客答谢，zh-hk 关键词已去除喜帖印刷、结婚请帖、囍帖订制、烫金请帖，并补请柬类目链接；类目已反向链接感谢卡。",
-                                            "保留 2026-10-31 query×page 历史基线：海报指南 37%、A2 PDP 16%；感谢卡 73%、请柬类目 27%。这些不是 2026-11-08 新联接。",
-                                            "commit 9acc3d16b85ecb9c1ca15fdea6c0777492dc9249；title/H1、价格、认证、canonical、301、noindex 均未改；海报指南旧价格与认证表述为残余风险，另案授权。"
-                                        ],
-                            "deploy":  "Cloudflare Pages completed/success at 2026-11-07T17:51:49Z",
-                            "online_verify":  "PASS 4/4 at 2026-11-07T17:52:34.266Z; .hermes/logs/poster-wedding-primary-url-online-2026-11-08.json",
-                            "retest":  [
-                                           "2026-11-14",
-                                           "2026-11-21"
-                                       ],
-                            "judgement":  "MEASURE；部署不等于排名提升，不得 SCALE。",
-                            "source":  ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .hermes/logs/2026-11-08-poster-wedding-primary-url-execution.md"
-                        }
-                    ]
+  "schema_version": 1,
+  "updated_at": "2026-11-08",
+  "source_window": "2026-10-08..2026-11-04",
+  "source_file": "GSC数据/28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+  "measurement_scope": "all countries; query, page and country tables are not joined",
+  "latest_evidence_handoff": {
+    "date": "2026-11-07",
+    "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
+    "observation_window": "2026-10-08..2026-11-04",
+    "xlsx_status": "AVAILABLE; data day 2026-11-04",
+    "api_status": "NOT_EVALUATED; API freshness was not checked in this review",
+    "baseline_policy": "Keep each item's original frozen baseline and append current observations to measurement_history; a moving window is not an experiment win/loss.",
+    "action_policy": "Page-1 zero-click queries are FIX candidates only after SERP/snippet audit; deep positions and split attribution are MEASURE. No automatic new article, canonical, redirect or K3 self-approval.",
+    "geo_status": "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1"
+  },
+  "selection_policy": {
+    "max_articles_per_run": 1,
+    "executable_statuses": [
+      "queued",
+      "review_or_rewrite",
+      "remeasure"
+    ],
+    "priority_order": [
+      "flyers-zh-hk",
+      "stickers-zh-hk",
+      "books-zh-hk",
+      "packaging-zh-hk",
+      "posters-zh-hk"
+    ],
+    "rules": [
+      "Consume the previous lane result before selecting work.",
+      "Do not select an item whose recheck_after is later than the run date unless new GSC evidence justifies it.",
+      "Page-1 zero-click queries require SERP feature and real title/snippet diagnosis before a bounded FIX.",
+      "Deep-position queries require index, intent, query-by-page attribution and page-change diagnosis before content work.",
+      "Create or rewrite at most one article only after a genuine procurement information gap is verified; no information gain means NO_OP.",
+      "Do not create an article when review_or_rewrite can close the evidence gap.",
+      "A commercial truth conflict changes the item to blocked_waiting_k3; never choose a value independently.",
+      "A delivered item becomes remeasure for 7/14/28-day checks, then completed; it cannot be regenerated without a new evidence gap.",
+      "NO_OP is valid when no item has enough verified evidence or information gain."
+    ]
+  },
+  "items": [
+    {
+      "cluster": "flyers-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "宣傳單張",
+        "宣傳單張印刷"
+      ],
+      "primary_url": "/zh-hk/category/flyers/",
+      "search_intent": "transactional procurement: size, paper, sides, quantity, artwork and quote conditions",
+      "evidence_gap": "No general flyer procurement guide exists (real gap). 词形缺口已被 2026-10-31 query×page 实测证伪: /zh-hk/category/flyers/ 承接 宣傳單張 87%（2 URL）与 宣傳單張印刷 77%（4 URL），且 H1/title/meta description 均已含「宣傳單張」——原稿「category 主要用傳單、词形承接不齐」不成立，禁止据该假设改词。仍待处理的是 10/100 張起等商业口径（见 2026-10-31-five-category-truth-audit.md）。",
+      "target_slug": "flyer-printing-buying-guide",
+      "action": "create_one_if_slug_is_free_and_facts_are_verified",
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-14",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "宣傳單張": {
+          "impressions": 117,
+          "clicks": 0,
+          "position": 29.37
+        },
+        "宣傳單張印刷": {
+          "impressions": 103,
+          "clicks": 0,
+          "position": 29.02
+        }
+      },
+      "constraints": [
+        "Do not invent or reconcile MOQ, price, turnaround, certification or capacity without an approved source.",
+        "Support the category page; do not target the transaction head term with the blog URL.",
+        "Add natural bidirectional links only when both pages and slugs exist."
+      ],
+      "learning": {
+        "last_failure_mode": "queue_evidence_gap_inaccurate",
+        "next_run_constraints": [
+          "队列 evidence_gap 标「No general guide was found」时，必须先查 src/data/blog-data/*.json 与 blog-posts.ts 是否存在已覆盖该意图的文章",
+          "blog-posts.ts 存在但 blog-data 无正文的孤儿 slug（如 flyer-buying-guide）视为缺陷，需报告并等拍板后处理，不得擅自删条目"
+        ]
+      },
+      "delivered_url": "/zh-hk/blog/flyer-printing-guide/",
+      "delivery_note": "队列原定新建 flyer-printing-buying-guide；审计发现既有 flyer-printing-guide 已覆盖采购指南意图（zh-hk 原 6,870 字，H2 覆盖：宣傳單張幾錢/尺寸/紙質/單雙面/MOQ/交期/工藝/設計/FAQ），按 selection_policy「Do not create an article when review_or_rewrite can close the evidence gap」改为复写修复，未新建近义 slug。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "宣傳單張": {
+              "impressions": 117,
+              "clicks": 0,
+              "position": 29.37
+            },
+            "宣傳單張印刷": {
+              "impressions": 103,
+              "clicks": 0,
+              "position": 29.02
+            }
+          },
+          "action": "review_or_rewrite_delivered (repair, no new article)",
+          "judgement": "交付前基线；7 天（2026-11-07）复测 GSC 主词展示/排名/点击"
+        },
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "宣傳單張": {
+              "impressions": 121,
+              "clicks": 0,
+              "position": 33.74
+            },
+            "宣傳單張印刷": null
+          },
+          "action": "window_observation_only",
+          "judgement": "NO_CURRENT_BASELINE for 宣傳單張印刷; overlapping-window movement is not a win/loss. Keep remeasure and recheck on 2026-11-07."
+        },
+        {
+          "date": "2026-11-07",
+          "window": "2026-10-08..2026-11-04",
+          "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
+          "observation": {
+            "宣傳單張": {
+              "impressions": 127,
+              "clicks": 0,
+              "position": 34.73
+            },
+            "宣傳單張印刷": {
+              "impressions": 117,
+              "clicks": 0,
+              "position": 28.9
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为‘都要写长文’。"
+        },
+        {
+          "date": "2026-11-08",
+          "action": "commercial_truth_fix_delivered",
+          "change": "既有 flyer-printing-guide 第二张尺寸表仅修 A4/A5 单面价格为 HK$0.35 起／HK$0.25 起，并补 100 张档牌价与 5,000 张 5 折的阶梯说明；A4/A5 双面区间、title、excerpt、lastUpdated 未动，未新建文章。",
+          "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+          "deploy": "Cloudflare Pages completed/success at 2026-11-07T16:32:21Z",
+          "online_verify": "PASS; .hermes/logs/risk-query-online-verify-2026-11-08.json",
+          "retest": [
+            "2026-11-14",
+            "2026-11-21"
+          ],
+          "judgement": "FIX_DEPLOYED，不等于排名提升；保留冻结 baseline 与历史窗口观察，进入 MEASURE，不得 SCALE。"
+        }
+      ],
+      "query_page_evidence": {
+        "source": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "宣傳單張": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 87,
+          "urls": 2
+        },
+        "宣傳單張印刷": {
+          "top_url": "/zh-hk/category/flyers/",
+          "share_pct": 77,
+          "urls": 4
+        },
+        "measured_at": "2026-10-31T23:20+08:00"
+      }
+    },
+    {
+      "cluster": "stickers-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "貼紙印刷",
+        "貼紙訂製"
+      ],
+      "primary_url": "/zh-hk/category/stickers/",
+      "search_intent": "transactional sticker selection by material, adhesive, finish, use surface and quantity",
+      "evidence_gap": "Existing long guides cover material broadly; query-to-page attribution and conflicting MOQ/turnaround conditions need review before any rewrite.",
+      "target_slug": "sticker-guide",
+      "action": "review_then_rewrite_only_if_new_decision_value_exists",
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-14",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "貼紙印刷": {
+          "impressions": 120,
+          "clicks": 0,
+          "position": 40.88
+        },
+        "貼紙訂製": {
+          "impressions": 34,
+          "clicks": 0,
+          "position": 32.41
+        }
+      },
+      "constraints": [
+        "Do not create another generic sticker guide.",
+        "Do not merge, redirect or canonicalize pages without query-by-page evidence.",
+        "Block commercial claims when 10/100-copy or 2-3/5-7-day conditions cannot be tied to an approved SKU source."
+      ],
+      "learning": {
+        "last_failure_mode": "conflicting_commercial_truth",
+        "next_run_constraints": [
+          "交期/价格/MOQ 必须逐项对照 products.ts SKU 的 description/title/minQuantity；原文 3-5 天与 SKU 5-7 天冲突时以 SKU 为准",
+          "不存在 SKU 的产品类型（如螢光貼紙）不得出现在价格表；改为真实存在的 SKU（卷裝貼紙）",
+          "无 finishings 参数的加成百分比视为无源数字，只可定性（轻/中/高）或引用真实 SKU 牌价对比"
+        ]
+      },
+      "delivered_url": "/zh-hk/blog/sticker-guide/",
+      "delivery_note": "review_or_rewrite 完成：既有 sticker-guide 已覆盖材质/工艺/流程/FAQ 采购决策，按「review_then_rewrite_only_if_new_decision_value_exists」未新写泛文；本轮做结构维护（段2 快速答案块 2→4、段7 LinkedIn+EU REACH 措辞、段8 15 原子、段11 内链 8→11、excerpt/schemas 补）＋商业真值口径修正（交期 3-5→5-7 per 防水貼紙 SKU description；螢光貼紙 SKU 不存在→卷裝貼紙；工藝 % 加成为无源→定性）。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "貼紙印刷": {
+              "impressions": 120,
+              "clicks": 0,
+              "position": 40.88
+            },
+            "貼紙訂製": {
+              "impressions": 34,
+              "clicks": 0,
+              "position": 32.41
+            }
+          },
+          "action": "review_or_rewrite_delivered (structure maintenance + commercial truth reconciliation)",
+          "judgement": "交付前基线；7 天（2026-11-07）复测 貼紙印刷／貼紙訂製 展示与排名"
+        },
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "貼紙印刷": {
+              "impressions": 127,
+              "clicks": 0,
+              "position": 38.06
+            },
+            "貼紙訂製": null
+          },
+          "action": "window_observation_only",
+          "judgement": "NO_CURRENT_BASELINE for 貼紙訂製; direction improved but the query remains deep. Keep remeasure and recheck on 2026-11-07; no article or canonical action."
+        },
+        {
+          "date": "2026-11-07",
+          "window": "2026-10-08..2026-11-04",
+          "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
+          "observation": {
+            "貼紙印刷": {
+              "impressions": 131,
+              "clicks": 0,
+              "position": 37.65
+            },
+            "貼紙訂製": {
+              "impressions": 38,
+              "clicks": 0,
+              "position": 29.29
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为“都要写长文”。"
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/zh-hk/category/stickers/",
+        "queries": [
+          {
+            "query": "貼紙印刷",
+            "found": true,
+            "imps": 245,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 53.42,
+            "urls_with_impressions": 10,
+            "observed_top_url": "/zh-hk/category/stickers/",
+            "observed_top_share_pct": 33.9,
+            "concentration": "split",
+            "top5": [
+              {
+                "url": "/zh-hk/category/stickers/",
+                "imps": 83,
+                "share_pct": 33.9,
+                "clicks": 0,
+                "pos": 39.41
+              },
+              {
+                "url": "/zh-hk/blog/sticker-guide/",
+                "imps": 66,
+                "share_pct": 26.9,
+                "clicks": 0,
+                "pos": 55.64
+              },
+              {
+                "url": "/zh-hk/blog/sticker-buying-guide/",
+                "imps": 62,
+                "share_pct": 25.3,
+                "clicks": 0,
+                "pos": 71.21
+              },
+              {
+                "url": "/zh-hk/product/small-batch-stickers/",
+                "imps": 15,
+                "share_pct": 6.1,
+                "clicks": 0,
+                "pos": 50.07
+              },
+              {
+                "url": "/zh-hk/product/transparent-stickers/",
+                "imps": 10,
+                "share_pct": 4.1,
+                "clicks": 0,
+                "pos": 61.4
+              }
+            ]
+          },
+          {
+            "query": "貼紙訂製",
+            "found": true,
+            "imps": 52,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 33.86,
+            "urls_with_impressions": 6,
+            "observed_top_url": "/zh-hk/blog/sticker-guide/",
+            "observed_top_share_pct": 30.8,
+            "concentration": "split",
+            "top5": [
+              {
+                "url": "/zh-hk/blog/sticker-guide/",
+                "imps": 16,
+                "share_pct": 30.8,
+                "clicks": 0,
+                "pos": 25.5
+              },
+              {
+                "url": "/zh-hk/blog/sticker-buying-guide/",
+                "imps": 15,
+                "share_pct": 28.8,
+                "clicks": 0,
+                "pos": 43.6
+              },
+              {
+                "url": "/zh-hk/category/stickers/",
+                "imps": 13,
+                "share_pct": 25,
+                "clicks": 0,
+                "pos": 36.46
+              },
+              {
+                "url": "/zh-hk/product/small-batch-stickers/",
+                "imps": 6,
+                "share_pct": 11.5,
+                "clicks": 0,
+                "pos": 31.83
+              },
+              {
+                "url": "/zh-hk/product/removable-stickers/",
+                "imps": 1,
+                "share_pct": 1.9,
+                "clicks": 0,
+                "pos": 11
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "books-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "書刊印刷",
+        "印書",
+        "教科書印刷"
+      ],
+      "primary_url": "/zh-hk/category/books/",
+      "search_intent": "book and textbook procurement by binding, page count, paper, colour, proof and school-use conditions",
+      "evidence_gap": "RESOLVED 2026-10-31: 1/10/100-copy 口径已按 SKU 核实——教科書 ED-004(educational) minQuantity=100；騎馬釘/膠裝/精裝 BK-002/003/004 minQuantity=10。原「Existing textbook guide is reusable; binding decision depth and 1/10/100-copy source consistency require audit」已由第 6 轮交付关闭；教科書印刷 在本 GSC 档仍无精确或包含匹配（NO_CURRENT_BASELINE）。",
+      "target_slug": "textbook-printing-guide",
+      "action": "review_then_rewrite_only_if_new_decision_value_exists",
+      "status": "remeasure",
+      "last_delivered": "2026-10-31",
+      "recheck_after": "2026-11-14",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "書刊印刷": {
+          "impressions": 101,
+          "clicks": 0,
+          "position": 32.28
+        },
+        "印書": {
+          "impressions": 52,
+          "clicks": 0,
+          "position": 31.96
+        },
+        "教科書印刷": null
+      },
+      "constraints": [
+        "Do not use an old 教科書印刷 position as the current baseline.",
+        "Do not repeat institution counts, certifications or turnaround claims without a decision record.",
+        "Link to books and educational only where the procurement context is relevant."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_and_segment_gaps",
+        "next_run_constraints": [
+          "改任何 MOQ 前逐 SKU 對照 products.ts minQuantity 與 quantities：教科書 ED-004（educational 類）minQuantity=100，books 類 BK-002/003/004 minQuantity=10，兩者不可互套",
+          "客戶可見正文不得出現 products.ts 等內部檔名，統一寫「依 SKU 牌價／規格」",
+          "段6/7/8 缺口按 12 段骨架一次補齊：案例須標「待 008 案例庫校準」，FDA／EU REACH 只作法規對照，不得寫成認證取得"
+        ]
+      },
+      "delivered_url": "/zh-hk/blog/textbook-printing-guide/",
+      "delivery_note": "review_or_rewrite 完成：既有 textbook-printing-guide 已覆蓋製本／紙材／價錢／年度合約／校對／交期／FAQ，按「review_then_rewrite_only_if_new_decision_value_exists」不新建近義 slug。本輪＝商業真值對賬＋12 段補缺：膠裝 100 本起→10 本起（BK-003 minQuantity=10，48-400 頁）、精裝 100 本起→10 本起（BK-004 minQuantity=10），教科書 100 本起保留（ED-004 minQuantity=100）；清除 3 處 products.ts 內部檔名；補段2 快速答案 ×3、段6 客戶案例（待 008 校準）、段7 E-E-A-T（LinkedIn + FDA 21 CFR 175.300 + EU REACH 1907/2006）、段8 七條【】GEO 原子＋數據來源行。",
+      "measurement_history": [
+        {
+          "date": "2026-10-31",
+          "window": "2026-09-30..2026-10-27",
+          "baseline": {
+            "書刊印刷": {
+              "impressions": 101,
+              "clicks": 0,
+              "position": 32.28
+            },
+            "印書": {
+              "impressions": 52,
+              "clicks": 0,
+              "position": 31.96
+            },
+            "教科書印刷": null
+          },
+          "query_page": {
+            "書刊印刷": {
+              "imps": 202,
+              "urls": 4,
+              "top_url": "/zh-hk/blog/book-buying-guide/",
+              "top_share_pct": 45.5,
+              "concentration": "split"
+            },
+            "印書": {
+              "imps": 148,
+              "urls": 7,
+              "top_url": "/zh-hk/blog/book-buying-guide/",
+              "top_share_pct": 34.5,
+              "concentration": "split"
+            }
+          },
+          "action": "review_or_rewrite_delivered (commercial truth reconciliation + 12-seg completion)",
+          "judgement": "交付前基線；7 天（2026-11-07）復測 書刊印刷／印書 展示、排名與點擊；教科書印刷 本窗口無匹配，維持 NO_CURRENT_BASELINE"
+        },
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "書刊印刷": {
+              "impressions": 112,
+              "clicks": 0,
+              "position": 31.98
+            },
+            "印書": null,
+            "教科書印刷": null
+          },
+          "action": "window_observation_only",
+          "judgement": "NO_CURRENT_BASELINE for 印書 and 教科書印刷; do not reuse an old value as current. Keep remeasure and recheck on 2026-11-07."
+        },
+        {
+          "date": "2026-11-07",
+          "window": "2026-10-08..2026-11-04",
+          "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
+          "observation": {
+            "書刊印刷": {
+              "impressions": 121,
+              "clicks": 0,
+              "position": 33.08
+            },
+            "印書": {
+              "impressions": 56,
+              "clicks": 0,
+              "position": 31.38
+            },
+            "教科書印刷": null
+          },
+          "action": "window_observation_only",
+          "judgement": "教科書印刷为 NO_CURRENT_BASELINE。窗口观察，不是实验胜负；继续 MEASURE。首页零点击、深位词、信息缺口三类不得混为“都要写长文”。"
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/zh-hk/category/books/",
+        "queries": [
+          {
+            "query": "書刊印刷",
+            "found": true,
+            "imps": 202,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 44.36,
+            "urls_with_impressions": 4,
+            "observed_top_url": "/zh-hk/blog/book-buying-guide/",
+            "observed_top_share_pct": 45.5,
+            "concentration": "split",
+            "top5": [
+              {
+                "url": "/zh-hk/blog/book-buying-guide/",
+                "imps": 92,
+                "share_pct": 45.5,
+                "clicks": 0,
+                "pos": 30.41
+              },
+              {
+                "url": "/zh-hk/category/books/",
+                "imps": 90,
+                "share_pct": 44.6,
+                "clicks": 0,
+                "pos": 55.08
+              },
+              {
+                "url": "/zh-hk/product/catalog-printing/",
+                "imps": 10,
+                "share_pct": 5,
+                "clicks": 0,
+                "pos": 77.1
+              },
+              {
+                "url": "/zh-hk/product/saddle-stitch-booklets/",
+                "imps": 10,
+                "share_pct": 5,
+                "clicks": 0,
+                "pos": 43.4
+              }
+            ]
+          },
+          {
+            "query": "印書",
+            "found": true,
+            "imps": 148,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 42.87,
+            "urls_with_impressions": 7,
+            "observed_top_url": "/zh-hk/blog/book-buying-guide/",
+            "observed_top_share_pct": 34.5,
+            "concentration": "split",
+            "top5": [
+              {
+                "url": "/zh-hk/blog/book-buying-guide/",
+                "imps": 51,
+                "share_pct": 34.5,
+                "clicks": 0,
+                "pos": 32.39
+              },
+              {
+                "url": "/zh-hk/category/books/",
+                "imps": 47,
+                "share_pct": 31.8,
+                "clicks": 0,
+                "pos": 46.32
+              },
+              {
+                "url": "/zh-hk/product/catalog-printing/",
+                "imps": 41,
+                "share_pct": 27.7,
+                "clicks": 0,
+                "pos": 49.12
+              },
+              {
+                "url": "/zh-hk/product/hardcover-books/",
+                "imps": 4,
+                "share_pct": 2.7,
+                "clicks": 0,
+                "pos": 52.75
+              },
+              {
+                "url": "/zh-hk/product/textbooks/",
+                "imps": 3,
+                "share_pct": 2,
+                "clicks": 0,
+                "pos": 73.33
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "packaging-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "紙盒印刷",
+        "包裝盒訂製",
+        "包裝盒印刷"
+      ],
+      "primary_url": "/zh-hk/category/packaging/",
+      "search_intent": "custom packaging procurement by box type, material, structure, quantity, finishing and proof",
+      "evidence_gap": "Long pricing and box-type guides already exist; 100/500-unit and imposition conditions need commercial-truth reconciliation before content changes.",
+      "target_slug": "packaging-box-pricing-2026",
+      "alternate_slug": "kraft-paper-box-types-comparison-2026",
+      "action": "commercial_truth_audit_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": null,
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "紙盒印刷": {
+          "impressions": 46,
+          "clicks": 0,
+          "position": 33.3
+        },
+        "包裝盒訂製": {
+          "impressions": 47,
+          "clicks": 0,
+          "position": 31.51
+        },
+        "包裝盒印刷": {
+          "impressions": 54,
+          "clicks": 0,
+          "position": 31.89
+        }
+      },
+      "constraints": [
+        "Packaging batch 1 remains WAITING_K3; do not publish commercial changes.",
+        "Do not create a generic packaging trends article.",
+        "After approval, rewrite only one existing guide and preserve its slug."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": [
+          "Require the K3 decision record before changing queue status."
+        ]
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "紙盒印刷": null,
+            "包裝盒訂製": null,
+            "包裝盒印刷": {
+              "impressions": 50,
+              "clicks": 0,
+              "position": 32.8
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "NO_CURRENT_BASELINE for 紙盒印刷 and 包裝盒訂製; retain blocked_waiting_k3 and diagnose before content work."
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/zh-hk/category/packaging/",
+        "queries": [
+          {
+            "query": "紙盒印刷",
+            "found": true,
+            "imps": 73,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 41.99,
+            "urls_with_impressions": 3,
+            "observed_top_url": "/zh-hk/category/packaging/",
+            "observed_top_share_pct": 57.5,
+            "concentration": "mixed",
+            "top5": [
+              {
+                "url": "/zh-hk/category/packaging/",
+                "imps": 42,
+                "share_pct": 57.5,
+                "clicks": 0,
+                "pos": 33.62
+              },
+              {
+                "url": "/zh-hk/product/kraft-paper-packaging-box/",
+                "imps": 23,
+                "share_pct": 31.5,
+                "clicks": 0,
+                "pos": 52.13
+              },
+              {
+                "url": "/zh-hk/product/corrugated-boxes/",
+                "imps": 8,
+                "share_pct": 11,
+                "clicks": 0,
+                "pos": 56.75
+              }
+            ]
+          },
+          {
+            "query": "包裝盒訂製",
+            "found": true,
+            "imps": 47,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 31.51,
+            "urls_with_impressions": 3,
+            "observed_top_url": "/zh-hk/category/packaging/",
+            "observed_top_share_pct": 95.7,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/zh-hk/category/packaging/",
+                "imps": 45,
+                "share_pct": 95.7,
+                "clicks": 0,
+                "pos": 31.6
+              },
+              {
+                "url": "/zh-hk/product/cosmetic-boxes/",
+                "imps": 1,
+                "share_pct": 2.1,
+                "clicks": 0,
+                "pos": 28
+              },
+              {
+                "url": "/zh-hk/product/kraft-paper-packaging-box/",
+                "imps": 1,
+                "share_pct": 2.1,
+                "clicks": 0,
+                "pos": 31
+              }
+            ]
+          },
+          {
+            "query": "包裝盒印刷",
+            "found": true,
+            "imps": 74,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 36.27,
+            "urls_with_impressions": 5,
+            "observed_top_url": "/zh-hk/category/packaging/",
+            "observed_top_share_pct": 70.3,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/zh-hk/category/packaging/",
+                "imps": 52,
+                "share_pct": 70.3,
+                "clicks": 0,
+                "pos": 32.04
+              },
+              {
+                "url": "/zh-hk/product/kraft-paper-packaging-box/",
+                "imps": 18,
+                "share_pct": 24.3,
+                "clicks": 0,
+                "pos": 49.67
+              },
+              {
+                "url": "/zh-hk/product/white-card-boxes/",
+                "imps": 2,
+                "share_pct": 2.7,
+                "clicks": 0,
+                "pos": 22
+              },
+              {
+                "url": "/zh-hk/product/corrugated-boxes/",
+                "imps": 1,
+                "share_pct": 1.4,
+                "clicks": 0,
+                "pos": 39
+              },
+              {
+                "url": "/zh-hk/product/food-boxes/",
+                "imps": 1,
+                "share_pct": 1.4,
+                "clicks": 0,
+                "pos": 41
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "posters-zh-hk",
+      "locale": "zh-hk",
+      "money_queries": [
+        "海報印刷"
+      ],
+      "primary_url": "/zh-hk/category/posters/",
+      "search_intent": "poster procurement by size, paper, artwork, quantity and delivery conditions",
+      "evidence_gap": "The head term is already at position 14.94; category, guide and PDP attribution must be measured before deciding whether any rewrite is useful.",
+      "target_slug": "poster-printing-guide",
+      "action": "remeasure_primary_url_alignment",
+      "status": "remeasure",
+      "last_delivered": "2026-11-08",
+      "recheck_after": "2026-11-14",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "海報印刷": {
+          "impressions": 286,
+          "clicks": 1,
+          "position": 14.94
+        }
+      },
+      "constraints": [
+        "K3 2026-11-08 01:38 approved /zh-hk/category/posters/ as the primary URL; prices and certifications remain outside this approval.",
+        "Do not change titles, prices, canonicals or redirects.",
+        "Do not rebuild the existing poster guide family."
+      ],
+      "learning": {
+        "last_failure_mode": "waiting_k3_resolved_for_primary_url_only",
+        "next_run_constraints": [
+          "Measure query-by-page attribution on 2026-11-14 and 2026-11-21; do not interpret deployment as ranking improvement.",
+          "Any later price, certification, title, canonical or redirect work requires separate authorization."
+        ]
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "海報印刷": {
+              "impressions": 278,
+              "clicks": 1,
+              "position": 14.41
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "Head-term movement is not proof of consolidation success. Keep blocked_waiting_k3 and measure blog/trade attribution; no 301 or canonical."
+        },
+        {
+          "date": "2026-11-08",
+          "action": "primary_url_alignment_delivered",
+          "approval": "K3 2026-11-08 01:38 directly approved poster and wedding primary URLs.",
+          "change": "海报主承接=/zh-hk/category/posters/；类目新增指南与 A2 PDP 支持链接，指南首段明确类目负责交易、指南负责选购与完稿。未改 title/H1、价格、认证、canonical、301、noindex。",
+          "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+          "deploy": "Cloudflare Pages completed/success at 2026-11-07T17:51:49Z",
+          "online_verify": "PASS 4/4 at 2026-11-07T17:52:34.266Z; .hermes/logs/poster-wedding-primary-url-online-2026-11-08.json",
+          "retest": [
+            "2026-11-14",
+            "2026-11-21"
+          ],
+          "judgement": "FIX_DEPLOYED，不等于排名提升；MEASURE，不得 SCALE。"
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/zh-hk/category/posters/",
+        "queries": [
+          {
+            "query": "海報印刷",
+            "found": true,
+            "imps": 567,
+            "clicks": 1,
+            "ctr_pct": 0.18,
+            "pos_weighted": 34.01,
+            "urls_with_impressions": 10,
+            "observed_top_url": "/zh-hk/blog/poster-printing-guide/",
+            "observed_top_share_pct": 37,
+            "concentration": "split",
+            "top5": [
+              {
+                "url": "/zh-hk/blog/poster-printing-guide/",
+                "imps": 210,
+                "share_pct": 37,
+                "clicks": 1,
+                "pos": 9.78
+              },
+              {
+                "url": "/zh-hk/product/a2-posters/",
+                "imps": 93,
+                "share_pct": 16.4,
+                "clicks": 0,
+                "pos": 37.27
+              },
+              {
+                "url": "/zh-hk/category/posters/",
+                "imps": 64,
+                "share_pct": 11.3,
+                "clicks": 0,
+                "pos": 61.72
+              },
+              {
+                "url": "/zh-hk/blog/retail-shop-poster-printing-guide/",
+                "imps": 60,
+                "share_pct": 10.6,
+                "clicks": 0,
+                "pos": 65.95
+              },
+              {
+                "url": "/zh-hk/blog/poster-buying-guide/",
+                "imps": 55,
+                "share_pct": 9.7,
+                "clicks": 0,
+                "pos": 65.75
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "stickers-en",
+      "locale": "en",
+      "money_queries": [
+        "small batch sticker printing"
+      ],
+      "primary_url": "/en/category/stickers/",
+      "search_intent": "small-batch sticker purchase with proof, specification and fulfilment clarity",
+      "evidence_gap": "Commercial truth is approved and deployed. Page-1 zero-click persists, but the current US-English Google SERP is unavailable; real displayed title/snippet and SERP features remain unverified. No new procurement information gap is proven.",
+      "target_slug": null,
+      "action": "remeasure_serp_snippet",
+      "status": "remeasure",
+      "last_delivered": "2026-10-30",
+      "recheck_after": "2026-11-28",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "small batch sticker printing": {
+          "impressions": 46,
+          "clicks": 0,
+          "position": 5.5
+        }
+      },
+      "constraints": [
+        "K3 2026-10-30 approved 10 stickers from US$0.55 with verified fulfilment wording; strategy-task-queue.json is DONE with commits 7b396bd9, 9f7b348c.",
+        "Do not create another small-batch synonym article.",
+        "Keep title, description, H1 and body unchanged during the current page-level measurement window; any later snippet test requires real SERP evidence and separate bounded approval."
+      ],
+      "learning": {
+        "last_failure_mode": "stale_queue_gate_after_k3_approval",
+        "next_run_constraints": [
+          "Before applying blocked_waiting_k3, reconcile strategy-task-queue.json, the K3 decision record and execution commits.",
+          "On 2026-11-28 refresh same-scope GSC and query-by-page evidence and capture the real US-English SERP; if unavailable, retain SERP_UNAVAILABLE rather than inferring the displayed snippet.",
+          "Do not treat overlapping 28-day windows as independent experiment results or deployment as a CTR/ranking win."
+        ]
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "small batch sticker printing": {
+              "impressions": 35,
+              "clicks": 0,
+              "position": 5.66
+            },
+            "small batch stickers": {
+              "impressions": 21,
+              "clicks": 0,
+              "position": 5.1
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "Page-1 zero-click is a FIX candidate after SERP/snippet audit; no unverified prior experiment is assumed and no new article is generated."
+        },
+        {
+          "date": "2026-11-08",
+          "source": ".hermes/logs/2026-11-08-small-batch-serp-diagnosis.md",
+          "latest_gsc": {
+            "window": "2026-10-08..2026-11-04",
+            "small batch sticker printing": {
+              "impressions": 27,
+              "clicks": 0,
+              "position": 6
+            },
+            "small batch stickers": {
+              "impressions": 19,
+              "clicks": 0,
+              "position": 5.42
+            }
+          },
+          "serp_status": "SERP_UNAVAILABLE; direct Google fetch ConnectTimeoutError and in-app browser ERR_CONNECTION_TIMED_OUT; no current Google title/snippet/rank/feature claim.",
+          "production_observation": "HTTP 200, self-canonical, index/follow; current title, description and H1 are recorded in the diagnosis report.",
+          "action": "hold_measure_no_op",
+          "judgement": "Corrected the stale commercial WAITING_K3 gate. Concentrated PDP attribution supports SERP/CTR diagnosis, not another article. Exact-match wording is only a hypothesis; the 2026-10-30 page changes remain inside the 2-4 week measurement window. No src change, commit, push or deployment."
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/en/category/stickers/",
+        "queries": [
+          {
+            "query": "small batch sticker printing",
+            "found": true,
+            "imps": 46,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 5.5,
+            "urls_with_impressions": 1,
+            "observed_top_url": "/en/product/small-batch-stickers/",
+            "observed_top_share_pct": 100,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/en/product/small-batch-stickers/",
+                "imps": 46,
+                "share_pct": 100,
+                "clicks": 0,
+                "pos": 5.5
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "catalog-en",
+      "locale": "en",
+      "money_queries": [
+        "china catalog printing"
+      ],
+      "primary_url": "/en/category/books/",
+      "search_intent": "catalog procurement, binding and international order conditions",
+      "evidence_gap": "Commercial truth and query-to-page attribution are pending; no automatic content production.",
+      "target_slug": null,
+      "action": "measurement_only",
+      "status": "blocked_waiting_k3",
+      "last_delivered": null,
+      "recheck_after": "2026-11-28",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "china catalog printing": {
+          "impressions": 72,
+          "clicks": 0,
+          "position": 15.79
+        }
+      },
+      "constraints": [
+        "The en catalog commercial item remains WAITING_K3 for blog content decisions.",
+        "PDP H1 MOQ truth resolved by K3-3 A ruling; execution belongs to weekly-meta single-variable batch (proposed 2026-11-09)."
+      ],
+      "learning": {
+        "last_failure_mode": "commercial_truth_gate",
+        "next_run_constraints": []
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "china catalog printing": {
+              "impressions": 72,
+              "clicks": 0,
+              "position": 14.96
+            }
+          },
+          "action": "window_observation_only",
+          "judgement": "Commercial truth remains gated; measure the concentrated PDP before deciding whether any rewrite is justified."
+        },
+        {
+          "date": "2026-11-09",
+          "window": "2026-10-08..2026-11-04",
+          "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json + docs/2026-11-09-three-site-inventory-flywheel-next-step.md",
+          "observation": {
+            "china catalog printing": {
+              "position": 14.15,
+              "impressions": 98,
+              "clicks": 0
+            }
+          },
+          "action": "diagnosis_only",
+          "judgement": "PDP 72.7% concentrated (usa 40@13.30). Live en H1 'Catalog Printing 100+' contradicts title/desc/body 10 MOQ; K3-3 A (2026-10-26) approved H1->10, A2 fixed 11-08 (74ffa5a9), catalog missed. FIX_PROPOSED: en H1 single-variable -> 'Catalog Printing 10+ | ZprintPro'; zh-hk desc 100->10本起印 and ja desc 100->10冊 separate single-variable batches; ja H1 English H1 registered. SERP_UNAVAILABLE (both engines blocked). Retest 2026-11-14/11-21; no SCALE without six-element evidence."
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "change_deployed_single_variable",
+          "change": "en PDP H1 \"Catalog Printing 100+ | ZprintPro\" -> \"Catalog Printing 10+ | ZprintPro\" (K3-3 A approved; 74ffa5a9 precedent; CSV source + generator apply, byte-level delta=1, assertions PASS)",
+          "commit": "a33abd3b",
+          "online_verify": "CF Pages success (run 128890190650); live H1 assertion PASS (10+ present, 100+ absent), title unchanged (10 MOQ $4.60)",
+          "baseline": {
+            "query": "china catalog printing",
+            "imp": 98,
+            "pos": 14.15,
+            "clk": 0,
+            "window": "28d to 11-07",
+            "primary_url_share": "72.7% PDP"
+          },
+          "next_retest": [
+            "2026-11-14 (D1/D2 + first same-caliber retest)",
+            "2026-11-21 (28d window)"
+          ],
+          "decision_rule": "FIX_DEPLOYED -> MEASURE; no SCALE without baseline+change+approval+deploy+online_verify+retest"
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/en/category/books/",
+        "queries": [
+          {
+            "query": "china catalog printing",
+            "found": true,
+            "imps": 77,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 17.35,
+            "urls_with_impressions": 3,
+            "observed_top_url": "/en/product/catalog-printing/",
+            "observed_top_share_pct": 72.7,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/en/product/catalog-printing/",
+                "imps": 56,
+                "share_pct": 72.7,
+                "clicks": 0,
+                "pos": 13.62
+              },
+              {
+                "url": "/en/blog/catalog-printing-china-supplier-guide/",
+                "imps": 20,
+                "share_pct": 26,
+                "clicks": 0,
+                "pos": 25.2
+              },
+              {
+                "url": "/zh-hk/services/catalog-printing-china/",
+                "imps": 1,
+                "share_pct": 1.3,
+                "clicks": 0,
+                "pos": 69
+              }
+            ]
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    },
+    {
+      "cluster": "comiket-ja",
+      "locale": "ja",
+      "money_queries": [
+        "コミケ 印刷"
+      ],
+      "primary_url": "/ja/category/japan-doujin/",
+      "search_intent": "event-driven doujin printing by deadline, binding, page count and copy quantity",
+      "evidence_gap": "K3 2026-10-30 已按推荐裁决 JA-C109，strategy-task-queue.json 为 DONE、执行 commit 为 7b396bd9；2026-11-08 仅补齐 ¥7,500 为指定规格／数量的订单起价而非每部单价，进入复测。",
+      "target_slug": null,
+      "action": "remeasure_commercial_truth_fix",
+      "status": "remeasure",
+      "last_delivered": "2026-11-08",
+      "recheck_after": "2026-11-14",
+      "source_window": "2026-10-04..2026-10-31",
+      "baseline": {
+        "コミケ 印刷": {
+          "impressions": 173,
+          "clicks": 0,
+          "position": 18.99
+        }
+      },
+      "constraints": [
+        "准备指南、官方日期、rush、安全截稿日及未批准项保持不动。",
+        "Do not invent event deadlines, express turnaround or translated claims.",
+        "不得把订单起价写成每部单价，也不得借本次修复改 title、canonical 或 301。"
+      ],
+      "learning": {
+        "last_failure_mode": "stale_queue_gate_after_k3_approval",
+        "next_run_constraints": [
+          "把项目标为 blocked_waiting_k3 前，先核对 strategy-task-queue.json、K3 裁决记录和后续执行 commit，禁止沿用陈旧 WAITING_K3 状态。"
+        ]
+      },
+      "measurement_history": [
+        {
+          "date": "2026-11-03",
+          "window": "2026-10-04..2026-10-31",
+          "source": ".hermes/logs/gsc-daily-anomaly-2026-11-03.json",
+          "observation": {
+            "コミケ 印刷": {
+              "impressions": 170,
+              "clicks": 0,
+              "position": 22.04
+            },
+            "教材 印刷製本": {
+              "impressions": 46,
+              "clicks": 0,
+              "position": 28.67
+            },
+            "教科書印刷": null
+          },
+          "action": "window_observation_only",
+          "judgement": "C109 dates and commitments remain gated; textbook deterioration requires index/intent/attribution diagnosis, not automatic content generation. 教科書印刷 is NO_CURRENT_BASELINE."
+        },
+        {
+          "date": "2026-11-08",
+          "action": "commercial_truth_fix_delivered",
+          "change": "DJ-001 的 ¥7,500〜/部〜 改为 ¥7,500〜/注文〜，JA body 明确这是指定规格／数量的订单开始价格而非每部单价；准备指南、rush、官方日期及倒排未动。",
+          "approval": "K3 2026-10-30 1–5 全部按推荐；strategy-task-queue.json JA-C109=DONE；执行 commit 7b396bd9",
+          "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+          "deploy": "Cloudflare Pages completed/success at 2026-11-07T16:32:21Z",
+          "online_verify": "PASS; .hermes/logs/risk-query-online-verify-2026-11-08.json",
+          "retest": [
+            "2026-11-14",
+            "2026-11-21"
+          ],
+          "judgement": "FIX_DEPLOYED，不等于排名提升；保留冻结 baseline，进入 MEASURE，不得 SCALE。"
+        }
+      ],
+      "query_page_evidence": {
+        "window": "2026-09-30..2026-10-27",
+        "dimension": "query×page",
+        "source_csv": "GSC数据/money-kw-query-page-2026-10-31.csv",
+        "measured_at": "2026-10-31T15:14:08.597Z",
+        "intent_primary_url": "/ja/category/japan-doujin/",
+        "queries": [
+          {
+            "query": "コミケ 印刷",
+            "found": true,
+            "imps": 174,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 19.23,
+            "urls_with_impressions": 2,
+            "observed_top_url": "/ja/product/doujinshi-printing/",
+            "observed_top_share_pct": 94.3,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/ja/product/doujinshi-printing/",
+                "imps": 164,
+                "share_pct": 94.3,
+                "clicks": 0,
+                "pos": 17.33
+              },
+              {
+                "url": "/ja/blog/comiket-printing-prep-guide/",
+                "imps": 10,
+                "share_pct": 5.7,
+                "clicks": 0,
+                "pos": 50.4
+              }
+            ]
+          },
+          {
+            "query": "教材 印刷製本",
+            "found": true,
+            "imps": 44,
+            "clicks": 0,
+            "ctr_pct": 0,
+            "pos_weighted": 24.93,
+            "urls_with_impressions": 3,
+            "observed_top_url": "/ja/blog/textbook-printing-guide/",
+            "observed_top_share_pct": 70.5,
+            "concentration": "concentrated",
+            "top5": [
+              {
+                "url": "/ja/blog/textbook-printing-guide/",
+                "imps": 31,
+                "share_pct": 70.5,
+                "clicks": 0,
+                "pos": 11.97
+              },
+              {
+                "url": "/ja/product/textbooks/",
+                "imps": 12,
+                "share_pct": 27.3,
+                "clicks": 0,
+                "pos": 56.67
+              },
+              {
+                "url": "/zh-hk/blog/textbook-printing-guide/",
+                "imps": 1,
+                "share_pct": 2.3,
+                "clicks": 0,
+                "pos": 46
+              }
+            ]
+          },
+          {
+            "query": "教科書印刷",
+            "found": false,
+            "note": "窗口内该查询无展示记录（API 精确匹配亦为空）"
+          }
+        ],
+        "interpretation_rule": "concentrated(主URL≥70%) = 承接已集中, 杠杆在排名/摘要; split(≤50%) = 高概率承接分散, 但需多窗重复且轮换才可确认内耗; 禁止据此直接 301/canonical/砍页",
+        "caution": "observed_top_url 是当前实测承接页, 不等于战略意图主 URL; 若实测 top 是 blog 而意图是 category, 应先修交易页, 不应把 blog 升为主 URL",
+        "total_discrepancy_note": "query×page 合计(11,050 imp) 与 xlsx 全站 query 口径(21,127 imp) 不同源: GSC query 维度会省略低频匿名查询; 只用份额比较, 不与全站总量相加"
+      }
+    }
+  ],
+  "audit_notes": [
+    {
+      "date": "2026-10-31",
+      "finding": "blog-posts.ts 注册 flyer-buying-guide（三语 title 齐备）但 blog-data 三语均无正文，线上页面 HTTP 200 空内容（soft-404）；flyer-printing-guide 曾链向该空页，已改指向 a5-vs-a6-flyer-size。待 K3 裁决：删除条目或后续以独立角度补正文。",
+      "source": "GSC 28d 2026-10-30 档 + products.ts + 线上 curl"
+    },
+    "2026-10-31 22:5x: 补 query×page 实测承接 (GSC API, 窗口 2026-09-30..10-27, 与冻结基线同窗) 到 8 个 items 的 observed 字段; 未改 status/main_url; split 仅作假设线索",
+    {
+      "at": "2026-10-31T23:40+08:00",
+      "by": "executor (deepseek)",
+      "change": "flyers-zh-hk.evidence_gap 更正: 词形缺口不成立(实测 87%/77% 且 H1/title/desc 已承接)",
+      "evidence": ".hermes/logs/money-kw-share-baseline-2026-10-31.md",
+      "previous": "No general flyer procurement guide was found. Category wording mainly uses 傳單 while GSC queries use 宣傳單張; 10/100-copy conditions require commercial-truth reconciliation."
+    },
+    {
+      "at": "2026-10-31T23:58+08:00",
+      "by": "executor (deepseek, ZP-blog-deepfix)",
+      "change": "books-zh-hk 交付回寫: status review_or_rewrite→remeasure; 更正 MOQ 判讀——教科書屬 ED-004(educational 類, minQuantity=100) 故「100 本起」為真; 膠裝/精裝屬 BK-003/BK-004(books 類, minQuantity=10) 故原文「100 本起」為假, 已改 10 本起",
+      "evidence": "src/data/products.ts L5141-5332 (BK-002/003/004) + L5977-6045 (ED-004); .hermes/logs/2026-10-31-blog-deepfix.md 第六轮"
+    },
+    {
+      "date": "2026-11-01",
+      "finding": "测量底座审计 v2（NO_OP 轮，未改内容）：28d 全国家 21,127 imps，市场占比 zh-hk 57.9% / en-us 13.0% / ja 10.9% / apac 5.3% / en-other 2.9%；12 条 query×page 承接浓度：zh-hk 带钱词（貼紙印刷 33.9% split、書刊印刷 45.5% split、海報印刷 37% split）呈分散，packaging/catalog/comiket 单 URL 集中（70-96%）；small batch sticker printing pos 5.5 单 URL 100% 承接 0 点击 = 纯 CTR 缺口非内容缺口。建议：zh-hk 下一杠杆为承接页 title/meta + 内链收口；en sticker 做 snippet 测试；country×query 仍不可联接（xlsx 独立 sheet）。",
+      "source": ".hermes/logs/money-keyword-measurement-audit-2026-11-01.json + GSC 28d 2026-10-30 档 + 队列 query_page_evidence"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Kimi Work 人手会话（风险词优先级修复）",
+      "finding": [
+        "JA 教材：blog-data、blog-posts.ts 摘要与正文中的 HK$5-50/冊 已统一为 100冊から 基本仕様 ¥1,288〜，表头改为価格条件；commit 74ffa5a9，生产验收 PASS，11/14 与 11/21 复测。",
+        "EN a2 poster：H1 与 4 处 MOQ 已统一为 10+／10-poster／10 posters；commit 74ffa5a9，生产验收 PASS，11/14 与 11/21 复测。",
+        "海报簇：10/31 快照为指南 37%、A2 PDP 16%；主 URL、标题／价格／认证仍 WAITING_K3，本轮不改页、不另写长文。",
+        "喜帖印刷：10/31 快照为 wedding-thank-you-cards 73%、wedding-invitations 27%，属搜索意图错接；保持 WAITING_K3，不自行移类目或 canonical／301。",
+        "利是封印刷：10/31 快照类目承接 75%，季节性强，本轮 NO_OP，不改页、不新增文章。"
+      ],
+      "query_page_api_status": "2026-11-08 两次刷新失败（ProxyConnectionError／直连 TimeoutError）；份额继续引用 2026-10-31 快照，不冒充今日联接。",
+      "source": ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .hermes/logs/risk-query-online-verify-2026-11-08.json + .hermes/logs/2026-11-08-risk-query-priority-execution.md"
+    },
+    {
+      "date": "2026-11-08",
+      "by": "Kimi Work 人手会话（海报／喜帖主承接 URL 拍板执行）",
+      "approval": "K3 2026-11-08 01:38 直接拍板海报与喜帖主承接 URL。",
+      "finding": [
+        "海报主承接=/zh-hk/category/posters/；海报指南继续负责选购／完稿，A2 PDP 负责 A2 产品规格；已建立类目到指南／A2 的支持链接及指南到交易类目的明确分工。",
+        "喜帖主承接=/zh-hk/category/wedding-invitations/；wedding-thank-you-cards 只承接婚礼感谢卡／宾客答谢，zh-hk 关键词已去除喜帖印刷、结婚请帖、囍帖订制、烫金请帖，并补请柬类目链接；类目已反向链接感谢卡。",
+        "保留 2026-10-31 query×page 历史基线：海报指南 37%、A2 PDP 16%；感谢卡 73%、请柬类目 27%。这些不是 2026-11-08 新联接。",
+        "commit 9acc3d16b85ecb9c1ca15fdea6c0777492dc9249；title/H1、价格、认证、canonical、301、noindex 均未改；海报指南旧价格与认证表述为残余风险，另案授权。"
+      ],
+      "deploy": "Cloudflare Pages completed/success at 2026-11-07T17:51:49Z",
+      "online_verify": "PASS 4/4 at 2026-11-07T17:52:34.266Z; .hermes/logs/poster-wedding-primary-url-online-2026-11-08.json",
+      "retest": [
+        "2026-11-14",
+        "2026-11-21"
+      ],
+      "judgement": "MEASURE；部署不等于排名提升，不得 SCALE。",
+      "source": ".hermes/logs/money-kw-share-baseline-2026-10-31.md + .hermes/logs/2026-11-08-poster-wedding-primary-url-execution.md"
+    }
+  ]
 }
