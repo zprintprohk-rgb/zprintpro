@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-11-09T11:54:29.442Z",
+  "qc": "GSC数据/gsc-query-country-28d-end1103.csv",
+  "qp": "GSC数据/money-kw-query-page-country-2026-10-31.csv",
+  "items": [
+    {
+      "query": "china catalog printing",
+      "baseline": {
+        "imp": 98,
+        "pos": 14.15,
+        "clk": 0,
+        "note": "28d to 11-07; A/B/C deployed 11-09 (H1 en + zh/ja desc), attribution by en grain"
+      },
+      "current": {
+        "can": {
+          "imp": 19,
+          "clk": 0,
+          "pos_w": 8.74
+        },
+        "gbr": {
+          "imp": 8,
+          "clk": 0,
+          "pos_w": 23.75
+        },
+        "usa": {
+          "imp": 43,
+          "clk": 0,
+          "pos_w": 15.35
+        }
+      }
+    },
+    {
+      "query": "catalog printing china",
+      "baseline": {},
+      "current": {
+        "gbr": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 1
+        },
+        "usa": {
+          "imp": 30,
+          "clk": 0,
+          "pos_w": 15.03
+        }
+      }
+    },
+    {
+      "query": "教材 印刷製本",
+      "baseline": {
+        "note": "jpn blog pos 11.97 (31 imp) query×page grain; price fix 74ffa5a9 deployed 11-08",
+        "primary": "jpn"
+      },
+      "current": {
+        "jpn": {
+          "imp": 47,
+          "clk": 0,
+          "pos_w": 29.98
+        }
+      }
+    },
+    {
+      "query": "貼紙印刷",
+      "baseline": {},
+      "current": {
+        "aut": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 7
+        },
+        "grc": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 38
+        },
+        "hkg": {
+          "imp": 123,
+          "clk": 0,
+          "pos_w": 37.85
+        },
+        "jpn": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 45
+        },
+        "nor": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 46
+        },
+        "phl": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 47
+        },
+        "usa": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 26
+        }
+      }
+    },
+    {
+      "query": "宣傳單張",
+      "baseline": {},
+      "current": {
+        "hkg": {
+          "imp": 118,
+          "clk": 0,
+          "pos_w": 33.92
+        }
+      }
+    },
+    {
+      "query": "書刊印刷",
+      "baseline": {},
+      "current": {
+        "hkg": {
+          "imp": 113,
+          "clk": 0,
+          "pos_w": 32.04
+        },
+        "usa": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 7
+        }
+      }
+    },
+    {
+      "query": "喜帖印刷",
+      "baseline": {
+        "note": "9acc3d16 split: thank-you-cards PDP was 73% owner; recheck primary URL attribution"
+      },
+      "current": {
+        "hkg": {
+          "imp": 11,
+          "clk": 0,
+          "pos_w": 31.45
+        }
+      }
+    },
+    {
+      "query": "海報印刷",
+      "baseline": {
+        "note": "9acc3d16 split: primary = category/posters; blog 37% -> watch share shift"
+      },
+      "current": {
+        "hkg": {
+          "imp": 258,
+          "clk": 1,
+          "pos_w": 14.52
+        },
+        "gbr": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 13
+        },
+        "irl": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 38
+        },
+        "mac": {
+          "imp": 2,
+          "clk": 0,
+          "pos_w": 4.5
+        },
+        "sgp": {
+          "imp": 4,
+          "clk": 0,
+          "pos_w": 12.25
+        }
+      }
+    },
+    {
+      "query": "a2 poster",
+      "baseline": {},
+      "current": {
+        "hkg": {
+          "imp": 6,
+          "clk": 1,
+          "pos_w": 10.17
+        },
+        "bel": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 50
+        },
+        "esp": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 50
+        },
+        "jpn": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 1
+        },
+        "usa": {
+          "imp": 50,
+          "clk": 0,
+          "pos_w": 20.62
+        }
+      }
+    },
+    {
+      "query": "nengajo 2027",
+      "baseline": {
+        "note": "break-zero 11-04: 6-7 imp/0 clk across ind/ita/jpn/phl/usa; watch growth in season window"
+      },
+      "current": {
+        "ind": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 1
+        },
+        "ita": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 7
+        },
+        "jpn": {
+          "imp": 1,
+          "clk": 0,
+          "pos_w": 10
+        },
+        "phl": {
+          "imp": 2,
+          "clk": 0,
+          "pos_w": 9
+        },
+        "usa": {
+          "imp": 2,
+          "clk": 0,
+          "pos_w": 8.5
+        }
+      }
+    }
+  ],
+  "page_attribution": {
+    "china catalog printing /en/product/catalog-printing": {
+      "total_imp": 77,
+      "matched_imp": 56,
+      "share": 72.7,
+      "byUrl": {
+        "/en/product/catalog-printing/": 56,
+        "/en/blog/catalog-printing-china-supplier-guide/": 20,
+        "/zh-hk/services/catalog-printing-china/": 1
+      }
+    },
+    "海報印刷 /zh-hk/category/posters": {
+      "total_imp": 567,
+      "matched_imp": 64,
+      "share": 11.3,
+      "byUrl": {
+        "/zh-hk/blog/poster-printing-guide/": 210,
+        "/zh-hk/product/a2-posters/": 93,
+        "/zh-hk/category/posters/": 64,
+        "/zh-hk/blog/retail-shop-poster-printing-guide/": 60,
+        "/zh-hk/blog/poster-buying-guide/": 55,
+        "/zh-hk/": 51
+      }
+    },
+    "喜帖印刷 /zh-hk/product/wedding-thank-you-cards": {
+      "total_imp": 15,
+      "matched_imp": 15,
+      "share": 100,
+      "byUrl": {
+        "/zh-hk/product/wedding-thank-you-cards/": 11,
+        "/zh-hk/category/wedding-invitations/": 4
+      }
+    }
+  },
+  "decision_rules": {
+    "SCALE": "requires repeatable improvement across windows + six-piece evidence; single-window or manual run never scales",
+    "FIX_DEPLOYED": "A/B/C catalog (11-09) + risk-query fixes (74ffa5a9) + split (9acc3d16): compare per-grain baselines; pos/imp shifts without confounders -> HOLD/MEASURE continuation",
+    "CONFOUNDERS": "multi-variable deployed set by 11-09: catalog H1(A) + zh/ja desc(B/C) same cluster; risk-query price/MOQ fixes; poster/wedding primary-URL split + 9acc3d16 internal links; calendars copy fix c0552853 (11-03); attribute per query grain, not site-wide",
+    "SERP": "if real SERP still unavailable (network), record SERP_UNAVAILABLE; do not substitute casual snapshots"
+  }
+}

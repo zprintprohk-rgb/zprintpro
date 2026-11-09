@@ -1,0 +1,155 @@
+{
+  "verified_at": "2026-11-08T00:33:27+08:00",
+  "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+  "method": "Production HTML text assertions; no ranking claim. Flyer assertions target the new single-sided prices and tier note, not the unchanged double-sided range.",
+  "overall_pass": true,
+  "results": [
+    {
+      "key": "flyers_zh_hk",
+      "requested_url": "https://zprintpro.com/zh-hk/blog/flyer-printing-guide/",
+      "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/zh-hk/blog/flyer-printing-guide/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/zh-hk/blog/flyer-printing-guide/",
+      "robots": "index, follow",
+      "meta_description": "From A4 to A5, bi-fold to tri-fold, art paper to book paper — a complete guide to flyer printing in Hong Kong.",
+      "h1": [
+        "香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略"
+      ],
+      "markers": {
+        "a4_single_price": {
+          "value": "HK$0.35 起",
+          "count": 10,
+          "pass": true
+        },
+        "a5_single_price": {
+          "value": "HK$0.25 起",
+          "count": 14,
+          "pass": true
+        },
+        "quantity_tier_note": {
+          "value": "單張成本隨數量階梯變動：以上『起』為 100 張檔牌價，5,000 張按 5 折計算。",
+          "count": 2,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "textbook_ja",
+      "requested_url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/ja/blog/textbook-printing-guide/",
+      "robots": "index, follow",
+      "meta_description": "教科書・教材の印刷製本ガイド：中綴じ/無線綴じ/上製本 3 製本方式、紙材質の選び方、100冊から 基本仕様 ¥1,288〜、納期 5-7 営業日、年度契約の進め方、ISBN バーコード対応。学校・塾・出版社の B2B 調達に。",
+      "h1": [
+        "教科書・教材の印刷製本 100冊から 3製本方式 | ZprintPro"
+      ],
+      "markers": {
+        "approved_price": {
+          "value": "基本仕様 ¥1,288〜",
+          "count": 10,
+          "pass": true
+        },
+        "price_condition_header": {
+          "value": "価格条件",
+          "count": 2,
+          "pass": true
+        },
+        "old_hkd_range": {
+          "value": "HK$5-50/冊",
+          "count": 0,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "doujinshi_ja",
+      "requested_url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/ja/product/doujinshi-printing/",
+      "robots": "index, follow",
+      "meta_description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け10冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro",
+      "h1": [
+        "同人誌印刷 コミケ・即売会対応"
+      ],
+      "markers": {
+        "order_start_price": {
+          "value": "¥7,500〜/注文〜",
+          "count": 9,
+          "pass": true
+        },
+        "not_per_copy_note": {
+          "value": "1部あたりの単価ではありません",
+          "count": 2,
+          "pass": true
+        },
+        "old_per_copy_price": {
+          "value": "¥7,500〜/部〜",
+          "count": 0,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "a2_en",
+      "requested_url": "https://zprintpro.com/en/product/a2-posters/",
+      "commit": "74ffa5a9668034e47a3e93b6d0c76dac902e4c91",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/en/product/a2-posters/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/en/product/a2-posters/",
+      "robots": "index, follow",
+      "meta_description": "A2 poster printing at the standard 420x594mm retail size, 10-piece MOQ on 157g coated stock with 200gsm or photo-paper upgrades, offset or premium digital output. Ideal for store promos, mall pop-ups, education and gallery displays. Free digital proof, free SF shipping over HK$500, 30-second AI quote.",
+      "h1": [
+        "A2 Posters 10+ | Retail & Events | ZprintPro"
+      ],
+      "markers": {
+        "approved_h1": {
+          "value": "A2 Posters 10+ | Retail & Events | ZprintPro",
+          "count": 1,
+          "pass": true
+        },
+        "moq_body": {
+          "value": "10-poster MOQ",
+          "count": 6,
+          "pass": true
+        },
+        "minimum_body": {
+          "value": "10-poster minimum",
+          "count": 3,
+          "pass": true
+        },
+        "faq_moq": {
+          "value": "10 posters",
+          "count": 3,
+          "pass": true
+        },
+        "old_moq_hyphen": {
+          "value": "100-poster",
+          "count": 0,
+          "pass": true
+        },
+        "old_moq_words": {
+          "value": "100 posters",
+          "count": 0,
+          "pass": true
+        }
+      },
+      "pass": true
+    }
+  ]
+}

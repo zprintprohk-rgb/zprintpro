@@ -1,0 +1,134 @@
+{
+  "verified_at": "2026-11-07T17:52:34.266Z",
+  "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+  "method": "Production HTML SSR marker and href assertions plus canonical/robots checks; no ranking claim. Keyword metadata is asserted in the source target block.",
+  "overall_pass": true,
+  "results": [
+    {
+      "key": "posters_category_zh_hk",
+      "requested_url": "https://zprintpro.com/zh-hk/category/posters/",
+      "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/zh-hk/category/posters/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/zh-hk/category/posters/",
+      "robots": "index, follow",
+      "markers": {
+        "guide_role_label": {
+          "value": "海報印刷尺寸・紙質・工藝指南（支援本類目決策）",
+          "count": 2,
+          "pass": true
+        },
+        "a2_role_label": {
+          "value": "A2 海報印刷（10 張起產品規格）",
+          "count": 2,
+          "pass": true
+        },
+        "guide_href": {
+          "value": "href=\"/zh-hk/blog/poster-printing-guide/\"",
+          "count": 1,
+          "pass": true
+        },
+        "a2_href": {
+          "value": "href=\"/zh-hk/product/a2-posters/\"",
+          "count": 5,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "poster_guide_zh_hk",
+      "requested_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "robots": "index, follow",
+      "markers": {
+        "page_role": {
+          "value": "頁面分工：",
+          "count": 2,
+          "pass": true
+        },
+        "primary_query_role": {
+          "value": "海報印刷／印海報",
+          "count": 2,
+          "pass": true
+        },
+        "transaction_role": {
+          "value": "交易主頁",
+          "count": 2,
+          "pass": true
+        },
+        "category_href": {
+          "value": "href=\"/zh-hk/category/posters/\"",
+          "count": 6,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "wedding_invitations_category_zh_hk",
+      "requested_url": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/zh-hk/category/wedding-invitations/",
+      "robots": "index, follow",
+      "markers": {
+        "thank_you_role_label": {
+          "value": "婚禮感謝卡（賓客答謝；請柬主頁為本類目）",
+          "count": 2,
+          "pass": true
+        },
+        "thank_you_href": {
+          "value": "href=\"/zh-hk/product/wedding-thank-you-cards/\"",
+          "count": 4,
+          "pass": true
+        }
+      },
+      "pass": true
+    },
+    {
+      "key": "wedding_thank_you_zh_hk",
+      "requested_url": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+      "commit": "9acc3d16b85ecb9c1ca15fdea6c0777492dc9249",
+      "http_status": 200,
+      "final_url": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+      "cf_cache_status": "DYNAMIC",
+      "age": null,
+      "canonical": "https://zprintpro.com/zh-hk/product/wedding-thank-you-cards/",
+      "robots": "index, follow",
+      "markers": {
+        "intent_clarification": {
+          "value": "呢頁只承接婚禮感謝卡同賓客答謝需求",
+          "count": 2,
+          "pass": true
+        },
+        "invitation_category_anchor": {
+          "value": "喜帖印刷類目",
+          "count": 2,
+          "pass": true
+        },
+        "invitation_category_href": {
+          "value": "href=\"/zh-hk/category/wedding-invitations/\"",
+          "count": 3,
+          "pass": true
+        }
+      },
+      "pass": true
+    }
+  ],
+  "source_keyword_assertions": {
+    "new_keywords_present": true,
+    "invitation_keywords_absent": true,
+    "invitation_category_link_present": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-07T23:58:20.524744+08:00",
+  "window": {
+    "start": "2026-10-08",
+    "end": "2026-11-04",
+    "days": 28
+  },
+  "site_url": "sc-domain:zprintpro.com",
+  "auth_config_ok": true,
+  "queries": {},
+  "errors": [
+    {
+      "stage": "api",
+      "error_type": "TimeoutError",
+      "error": "[WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。"
+    }
+  ],
+  "interpretation_limits": [
+    "query×page is an attribution aggregate, not a locale×country join",
+    "same-window movement is not an independent SEO experiment",
+    "API freshness is evaluated separately from the 2026-11-07 xlsx exports"
+  ]
+}
