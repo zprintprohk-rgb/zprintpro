@@ -1,0 +1,20 @@
+[
+  {
+    "url": "/zh-hk/category/flyers/",
+    "status": 200,
+    "title": "A5 宣傳單張印刷 10張起・A4/A5/A3 雙面 | HK$0.18 起 | (brand)",
+    "titleEquiv": 59,
+    "descLen": 156,
+    "hasSingle10": true,
+    "priceAfterFix": true
+  },
+  {
+    "url": "/zh-hk/category/books/",
+    "status": 200,
+    "title": "小冊子印刷 10本起・騎馬釘/膠裝/精裝 教材繪本急印 | (brand)",
+    "titleEquiv": 57,
+    "descLen": 141,
+    "hasSingle10": false,
+    "priceAfterFix": true
+  }
+]
