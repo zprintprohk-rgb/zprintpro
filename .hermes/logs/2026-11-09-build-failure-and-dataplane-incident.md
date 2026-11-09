@@ -40,3 +40,4 @@
 - `.hermes/logs/lane-runs.jsonl` #110-#112 · `2026-11-09-ZP-{gsc-feedback,daily-content}.md`
 - GitHub check-runs API（匿名）：84a31eea=failure@15:19:59Z；ee3fdef4 无 run（登记时）
 - `git reflog origin/main`：11 月 push 计数 47
+\n## 五、增补（2026-11-10 01:4x）：API 拉取失败根因 = 代理宕机\n\n- 昨晚 20:38 gsc 车道未拉数据的根因定位：**Clash/mihomo 代理（127.0.0.1:7892）进程已宕**（端口拒绝连接，Test-NetConnection=False），直连 oauth2.googleapis.com=000（GFW）→ 与 11-03 夜同款故障；本轮分析师补拉 end1108 亦失败（ProxyConnectionError）\n- **owner = K3/主机**：重启代理进程后，执行「python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-09 --out GSC数据/gsc-query-country-28d-end1109.csv」即可恢复 API 面\n- ee3fdef4 构建 01:29 仍未触发（2h20m）→ 与代理宕机同窗出现，疑似主机网络面整体异常（非 CF 配额：11 月 push 实数 47）\n- 复测影响：11-14 复测的 qc 档（--end 11-13）在代理恢复前无法预生成；runbook 的 NO_NEW_DATA 守卫会正确兜底\n
