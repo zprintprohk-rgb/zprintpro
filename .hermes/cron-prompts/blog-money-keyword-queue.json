@@ -1106,6 +1106,28 @@
             "2026-11-21 (28d window)"
           ],
           "decision_rule": "FIX_DEPLOYED -> MEASURE; no SCALE without baseline+change+approval+deploy+online_verify+retest"
+        },
+        {
+          "date": "2026-11-09",
+          "kind": "change_deployed_single_variable_bc",
+          "change": "P2 B/C desc MOQ alignment: zh desc \"畫冊印刷/畫冊印刷 100 起\" -> \"畫冊印刷 10 本起印\" (dedupe + K3-3 A truth); ja desc \"100〜\" -> \"10冊〜\" (align title). Two variables on independent locale/query grains (zh-hk vs jpn), attribution isolated",
+          "commit": "392c5f30",
+          "online_verify": "CF Pages success (run 128985513618); L3 assertions PASS: zh-hk desc contains 10 本起印 & no 100 起 residue, ja desc contains 10冊〜 & no 100〜 residue",
+          "baseline": {
+            "zh": {
+              "query_grain": "zh-hk 畫冊印刷族",
+              "note": "desc 126 chars pre-change"
+            },
+            "ja": {
+              "query_grain": "jpn カタログ印刷族",
+              "note": "desc 122 chars pre-change"
+            }
+          },
+          "next_retest": [
+            "2026-11-14 (first same-caliber retest with H1 batch a33abd3b)",
+            "2026-11-21"
+          ],
+          "decision_rule": "FIX_DEPLOYED -> MEASURE; no SCALE without six-piece evidence"
         }
       ],
       "query_page_evidence": {
