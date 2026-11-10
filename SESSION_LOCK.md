@@ -1,5 +1,28 @@
 # SESSION_LOCK — 并发会话写锁（看门狗文件）
 
+## ✅ 已释放 — 2026-11-08 01:53 Kimi Work 人手会话（海报／喜帖主承接 URL 拍板执行）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **K3 拍板** | 2026-11-08 01:38「直接拍板海报与喜帖的主承接 URL」；海报主 URL=`/zh-hk/category/posters/`，喜帖主 URL=`/zh-hk/category/wedding-invitations/` |
+| **写入范围** | `src/data/category-seo-content.ts`、`src/data/blog-data/zh-hk.json`、`src/data/sku-seo-data.ts`、`zprintpro-sku-seo-data.csv`、`.hermes/` 证据与报告、`SESSION_LOCK.md`；仅做页面分工、关键词与内链最小修正 |
+| **禁止范围** | 不改 title／H1、价格、认证、canonical、301、noindex、贺卡资产，不新建海报或喜帖文章，不移除任何 SKU／URL |
+| **双条件核验** | ① 2026-11-08 01:39 `lane.lock` 不存在，`git status --porcelain -- src/` 无输出；② 最近目标源码写入为 2026-11-08 00:20:23，至 01:41 已静默 >15 分钟 |
+| **预计时长** | < 90 min |
+| **释放条件** | 本地门禁、commit／push（过 30 分钟机器闸）、生产验收与 11/14、11/21 复测登记完成；不代提交他人工作树改动 |
+| **释放结果** | commit `9acc3d16b85ecb9c1ca15fdea6c0777492dc9249` 已推送；Cloudflare Pages 于 2026-11-07T17:51:49Z 成功；四个生产 URL 验收 4/4 PASS，证据 `.hermes/logs/poster-wedding-primary-url-online-2026-11-08.json`；学习队列进入 MEASURE，11/14、11/21 复测；报告 `.hermes/logs/2026-11-08-poster-wedding-primary-url-execution.md`。未 stage／commit 学习队列、锁文件、报告或他人改动。 |
+
+## ✅ 已释放 — 2026-11-08 00:35 Kimi Work 人手会话（风险词优先级修复）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | Kimi Work 主会话（首席 SEO/AEO/GEO 数据战略分析师执行） |
+| **意图** | 风险词根因修复：宣傳單張价格地板、JA 教材币种、C109 已批准订单起价口径、EN A2 已批准 MOQ；海报／喜帖主 URL 与结构项保持 WAITING_K3 |
+| **写入范围** | `src/data/blog-data/zh-hk.json`、`src/data/blog-data/ja.json`、`src/data/blog-posts.ts`（仅教材 JA 价格摘要与同源注释）、`src/data/products.ts`、`src/data/products-content.ts`、`src/data/sku-seo-data.ts`、`zprintpro-sku-seo-data.csv`、`.hermes/` 证据与报告、`SESSION_LOCK.md`；不碰 title、canonical、301、贺卡资产、海报／喜帖结构 |
+| **双条件核验** | ① 2026-11-08 00:07 `git status --porcelain -- src/` 为空，`lane.lock` 不存在；② 最新他人提交／写入 2026-11-07 23:52:35，至 00:12 已静默 ≥15 分钟 |
+| **释放结果** | commit `74ffa5a9` 已推送且 HEAD=origin/main；Cloudflare Pages success；四个生产 URL 文字级验收 4/4 PASS；学习队列 JSON 校验通过，报告 `.hermes/logs/2026-11-08-risk-query-priority-execution.md` 已落盘；海报／喜帖仍 WAITING_K3、利是封 NO_OP；11/14 与 11/21 复测。未清理或代提交他人工作树改动。 |
+
 ## ✅ 已释放 — 2026-10-23 14:2x deepseek hermes 会话（B 层批次 1 完成并全链路验证：commit 6fbbaaaa 已推送 origin/main；5/5 新 money-FAQ 部署后渲染 PASS；交接报告 .hermes/logs/2026-10-23-b-layer-execution-report.md）
 
 | 项 | 值 |
@@ -755,3 +778,14 @@
 - **写入范围**: src/data/sku-seo-data.ts（单行 body 字符串，2 锚）
 - **预计时长**: 10 min（commit+push 即释放）
 - **释放条件**: push 完成 + 线上探针确认锚渲染
+
+## 🔒 持有中 — 2026-11-10 08:3x AutoClaw 会话（三站点 SEO/AEO/GEO 盘点 + 结构化数据核验）
+
+| 项 | 值 |
+|---|---|
+| **持有者** | AutoClaw 主会话（首席 SEO/AEO/GEO 数据战略分析师角色） |
+| **意图** | GSC 结构化数据核验与修正（品牌字段重复已由 11-01/11-02 修复，本轮做线上实证；新发现 category 页 Product 节点 9×2 重复 → 删独立 ItemList 发射）；飞轮学习账本落地；盘点报告 |
+| **写入范围** | src/app/[locale]/category/[slug]/page.tsx（1 处 3 行→注释+1 行）· .hermes/logs/（报告/账本）· .hermes/cron-prompts/lane-results-bus-contract.md（追加 §8）· docs/2026-11-10-*.md · SESSION_LOCK.md；不碰 title / 价格 / MOQ / 交期 / 贺卡资产 / middleware 301 |
+| **双条件核验** | ① 2026-11-10 08:26 git status --porcelain -- src/ = 0 行；② 最后一次 src 写入 = 2026-11-09 12:43（19h+ 静默），lane.lock 不存在 |
+| **预计时长** | < 60 min |
+| **释放条件** | 门禁全绿 + commit + push（过 push-gate-check.mjs）+ 线上 JSON-LD 复验 + 报告落盘 |

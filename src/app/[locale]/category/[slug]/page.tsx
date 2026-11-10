@@ -357,7 +357,10 @@ export default function CategoryPage({
       <CategoryViewTracker category={localizedCategoryName} productSlug={slug} />
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage + HowTo + Speakable */}
       <JsonLd data={breadcrumbJsonLd} />
-      <JsonLd data={itemListJsonLd} />
+      {/* 2026-11-10 修复（重复 Product 节点）：itemListJsonLd 已作为 CollectionPage.mainEntity 嵌入下一行，
+          此处再单独渲染会把同一份 ItemList 输出两次 → 每页 9 个 SKU 变成 18 个 Product 节点
+          （线上实测 /zh-hk/category/stickers/ = 18 个，GSC「产品摘要」受影响项为此被重复计入）。
+          保留 CollectionPage + mainEntity（页型信号 + 列表一次给全），删除本行重复发射。 */}
       <JsonLd data={collectionJsonLd} />
       <JsonLd data={businessJsonLd} />
       {howToJsonLd && <JsonLd data={howToJsonLd} />}

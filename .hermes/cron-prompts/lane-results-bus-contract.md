@@ -111,4 +111,56 @@ NEXT_CHECK: 具体日期 + 指标 + 成功/失败阈值
 
 SKU SEO 只改 `zprintpro-sku-seo-data.csv` 后运行 `scripts/csv-to-sku-seo.mjs`；不得手改 `src/data/sku-seo-data.ts`，冲突时回源头重新生成，不用 `--ours/--theirs` 手选。
 
+## 七、2026-10-28 队列、周/月复盘与有证据学习（当前优先级）
 
+> 本节根据三份 2026-10-26 战略的完成度审计与 10 月 27 日 `MISSING_CREDENTIAL + AUTO-FILLED/OK` 事故新增。与各 prompt 旧职责冲突时以本节为准；既有业务红线、K3 拍板优先级和真值门禁不变。
+
+### 7.1 运行时与成功口径
+
+1. preflight 任一 `dsh_executable / dsh_credential_environment / dsh_effective_provider_model` 失败时，dsh 不会被调用；车道不得写 src、不得把失败改成内容任务、不得自动重试凭据错误。
+2. host 收尾必须收到真实 `--dsh-exit`。非零即 `FAILED`；dsh=0 但缺当日 exact 报告、报告非本车道、缺四字段或 `VERDICT` 非 OK 时为 `STALE`。二者均禁止 commit/push。
+3. 当日权威报告采用双名兼容：`.hermes/logs/<YYYY-MM-DD>-ZP-<lane>.md` 或 `.hermes/logs/<YYYY-MM-DD>-<lane>.md`；旧日期、其他车道报告不得冒充。真实完整 OK 候选优先于 AUTO-FILL 占位，不依赖 mtime 判断成功。
+4. AUTO-FILL 只按机器可读 VERDICT 行中**失败状态值后的占位标记**识别；真实 OK 报告正文可以复盘历史 AUTO-FILL 事故。新 host 失败证据写 `.failure.md`，不得覆盖正式报告。
+5. preflight BLOCKED 必须写 `key_consumed:false`；只有实际 OK/completed 才消费幂等键。同一键在故障解除后重试是恢复，不是重复处理。
+6. 共享总线、wrapper 日志、run-context 和 lane-status 是运行证据，不属于任何单车道的可提交产物。
+
+### 7.2 策略任务队列
+
+队列 SSoT：`.hermes/logs/strategy-task-queue.json`；战略口径：`docs/2026-10-28-data-driven-next-phase-strategy.md`。
+
+- **GSC feedback**：只更新证据、异常分类和候选任务；不得直接改页面，不得把 `WAITING_K3 / BLOCKED_INFRA / SCHEDULED` 改成 READY。
+- **Daily content**：只消费 `status=READY` 且 `approval_gate_satisfied=true` 的任务；每项只有一个主 URL/一个小批，遵守 write_scope。没有合格任务写 `NO_OP`，不得为了有产出而自行批准或扩权。
+- **WAITING_K3**：只能由 K3 在队列外明确拍板后，由有权限的人更新状态；执行层不得从 prompt 推断“已经批准”。
+- **BLOCKED_INFRA**：交指定 owner（凭据/管理员问题为 K3-admin），不得派成 daily 的页面改写任务。
+
+### 7.3 Weekly / Monthly 自动复盘
+
+1. preflight 已在 dsh 前执行：`python scripts/strategy-feedback.py --period weekly|monthly --date <当日> --repo <repo> --write-queue`。
+2. Weekly 开工必须先读 `periodic-review-weekly-<date>.json/.md`，再汇总执行健康、线上交付、词页证据和待拍板项；旧 title/meta 流程只能在复盘之后、且只处理已解冻有证据页面。
+3. Monthly 开工必须先读 `periodic-review-monthly-<date>.json/.md`，再做三市场/七簇资源重分配、下月队列、转化覆盖率与 AI 面证据审计。
+4. 每个到期任务给 `SCALE / HOLD / FIX / STOP`。证据不足一律 HOLD；FIX 由脚本以确定 task_id 幂等派发，重复运行不得重复排队；STOP 不等于自动删页/noindex。
+5. 脚本失败或产物不可读时，本轮报告必须 FAILED/BLOCKED，不得手编一份看似完整的周/月结论。
+6. 车道手动/其他入口 OK 不覆盖 Windows `LastTaskResult!=0`；复盘必须独立保留 `SCHEDULER_FAILED`，只有自然调度四方验收成功才可关闭管理员故障。
+7. 同一故障复发时更新旧任务的 `last_seen / recurrence_count / next_check / evidence / result`，并记录 `recurred_task_ids / suppressed_duplicates`；同 target 或同 lane 均不得重复造单。同一 review 重跑不得重复增加 recurrence。
+
+### 7.4 学习与自进化的硬边界
+
+1. 只有同一任务同时存在 `learning_evidence.baseline / change / online_verify / retest` 才可进入 `.hermes/logs/learning-candidates.jsonl`。缺任一项都不是学习样本。
+2. 复测必须使用同词、同页、同聚合范围和可比窗口；7 天只验技术，14 天看方向，28 天才允许 SCALE/HOLD/FIX/STOP 经营判断。
+3. 学习候选仅是 `PROPOSE_ONLY`。不得自动改 prompt、不得自动扩大写权限、不得把单页偶然波动泛化为全站规则；共享规则提升必须附证据并经复核。
+4. 没有 GA4/008/订单 landing page 覆盖率不得生成 ROI 结论；没有固定 AI 引擎答案原文与引用 URL 不得生成 GEO 引用增长结论。GA4/008/订单在线接入任务已按 K3 §0.37 关闭，不得重新请求或复活。
+
+
+
+## 八、飞轮学习账本（2026-11-10 起生效 · 第 -1.5 优先级）
+
+> 来源：`docs/2026-11-07-three-market-seo-aeo-geo-flywheel-strategy.md` §7/§8 的六件齐判据 + 11-09 的「窗口稀释」实测。与本节冲突时以本节判据为准；业务红线与 K3 拍板优先级不变。
+
+1. **账本 SSoT**：`.hermes/logs/flywheel-learning-ledger.json`（机器读）。每个实验含 `baseline / change / approval_gate / production_deploy / online_verify / retest / verdict / owner_lane / do_not_touch / confounders`。`verdict ∈ PROPOSED|APPROVED|DEPLOYED|MEASURE|HOLD|FIX|SCALE|STOP|NO_OP|BLOCKED`。
+2. **开工必读（STEP 0 第二句）**：读完 `run-context-<lane>.json` 与 `lane-status.json` 后，立即读本账本中 `owner_lane = 本车道` 的条目 + `window_math`。**未读账本不得派出任何复测/改写任务**。
+3. **收尾必回写**：本轮若推进了某实验（部署 / 线上核验 / 复测读数），必须更新该条目的 `production_deploy`、`online_verify`、`retest`、`verdict` 与证据路径；新增实验按同字段追加。**只写自己消费/产出的条目**，不覆盖他车道条目。
+4. **决策级窗口铁律**（11-09 A46 实测）：`window_math.dilution_table` 给出每个导出日的「变更后天数占比」。**只有 7d 达 100% 或 28d ≥82% 的窗才允许输出 SCALE/HOLD/FIX/STOP 经营判断**；11-14 的 28d 一律 `BACKGROUND_ONLY`，禁止作为回滚依据。
+5. **单变量**：同一页同一窗口不得双改；同 commit 携带多簇时必须按「页 × 语种 × 查询粒度」分开归因，并在 `confounders` 登记。
+6. **不得自批**：账本里的 `approval_gate` 是外部拍板记录。执行层**只能**把 `PROPOSED → APPROVED` 之外的字段填实；`APPROVED` 只能由 K3 拍板后由有权限的人写入。把 `HOLD/MEASURE` 直接改 `SCALE` 视为伪造学习结论。
+7. **无 online_verify 不进学习**：部署但未做线上核验的项停留 `DEPLOYED`；进入 `learning-candidates.jsonl` 仍需 §7.4 的四件齐。
+8. **数据供给阻断时**：`data_supply.status != OK` 时，所有复测项写 `BLOCKED` + `data_supply` 原因与 K3 动作，**不得用旧档重算冒充当日读数**（§0.23 红线）。
