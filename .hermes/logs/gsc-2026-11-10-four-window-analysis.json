@@ -1,0 +1,777 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-11-10",
+  "scope": "zprintpro.com web search, all countries; locale is not inferred from country; query/page/country sheets not joined",
+  "freshness": "11-10 has 24h/7d/28d only. Latest 3mo export remains 11-03; no 11-10 3mo file exists.",
+  "workbooks": {
+    "2026-10-30": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30.xlsx",
+        "chart": {
+          "window": "2026-10-29T05:00:00..2026-10-30T04:00:00",
+          "observations": 24,
+          "clicks": 15,
+          "impressions": 888,
+          "ctr_pct": 1.6892,
+          "impression_weighted_position": 13.9132,
+          "clicks_per_observation": 0.625,
+          "impressions_per_observation": 37.0
+        },
+        "query_rows_exported": 165,
+        "query_sheet_truncated_at_1000": false
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (1).xlsx",
+        "chart": {
+          "window": "2026-10-21..2026-10-27",
+          "observations": 7,
+          "clicks": 133,
+          "impressions": 5635,
+          "ctr_pct": 2.3602,
+          "impression_weighted_position": 14.2963,
+          "clicks_per_observation": 19.0,
+          "impressions_per_observation": 805.0
+        },
+        "query_rows_exported": 521,
+        "query_sheet_truncated_at_1000": false
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-10-30 (2).xlsx",
+        "chart": {
+          "window": "2026-09-30..2026-10-27",
+          "observations": 28,
+          "clicks": 496,
+          "impressions": 21127,
+          "ctr_pct": 2.3477,
+          "impression_weighted_position": 13.5616,
+          "clicks_per_observation": 17.7143,
+          "impressions_per_observation": 754.5357
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true
+      }
+    },
+    "2026-11-03": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (1).xlsx",
+        "chart": {
+          "window": "2026-11-02T03:00:00..2026-11-03T02:00:00",
+          "observations": 24,
+          "clicks": 23,
+          "impressions": 977,
+          "ctr_pct": 2.3541,
+          "impression_weighted_position": 15.9332,
+          "clicks_per_observation": 0.9583,
+          "impressions_per_observation": 40.7083
+        },
+        "query_rows_exported": 211,
+        "query_sheet_truncated_at_1000": false
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03 (2).xlsx",
+        "chart": {
+          "window": "2026-10-25..2026-10-31",
+          "observations": 7,
+          "clicks": 132,
+          "impressions": 6255,
+          "ctr_pct": 2.1103,
+          "impression_weighted_position": 15.5953,
+          "clicks_per_observation": 18.8571,
+          "impressions_per_observation": 893.5714
+        },
+        "query_rows_exported": 573,
+        "query_sheet_truncated_at_1000": false
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+        "chart": {
+          "window": "2026-10-04..2026-10-31",
+          "observations": 28,
+          "clicks": 504,
+          "impressions": 22114,
+          "ctr_pct": 2.2791,
+          "impression_weighted_position": 14.0266,
+          "clicks_per_observation": 18.0,
+          "impressions_per_observation": 789.7857
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true
+      },
+      "3mo": {
+        "source": "GSC数据\\3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+        "chart": {
+          "window": "2026-08-01..2026-10-31",
+          "observations": 92,
+          "clicks": 1279,
+          "impressions": 65252,
+          "ctr_pct": 1.9601,
+          "impression_weighted_position": 17.355,
+          "clicks_per_observation": 13.9022,
+          "impressions_per_observation": 709.2609
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true
+      }
+    },
+    "2026-11-07": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07 (1).xlsx",
+        "chart": {
+          "window": "2026-11-06T03:00:00..2026-11-07T02:00:00",
+          "observations": 24,
+          "clicks": 12,
+          "impressions": 803,
+          "ctr_pct": 1.4944,
+          "impression_weighted_position": 12.5218,
+          "clicks_per_observation": 0.5,
+          "impressions_per_observation": 33.4583
+        },
+        "query_rows_exported": 110,
+        "query_sheet_truncated_at_1000": false
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+        "chart": {
+          "window": "2026-10-29..2026-11-04",
+          "observations": 7,
+          "clicks": 135,
+          "impressions": 6912,
+          "ctr_pct": 1.9531,
+          "impression_weighted_position": 15.9627,
+          "clicks_per_observation": 19.2857,
+          "impressions_per_observation": 987.4286
+        },
+        "query_rows_exported": 604,
+        "query_sheet_truncated_at_1000": false
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-07.xlsx",
+        "chart": {
+          "window": "2026-10-08..2026-11-04",
+          "observations": 28,
+          "clicks": 538,
+          "impressions": 23183,
+          "ctr_pct": 2.3207,
+          "impression_weighted_position": 14.2796,
+          "clicks_per_observation": 19.2143,
+          "impressions_per_observation": 827.9643
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true
+      }
+    },
+    "2026-11-10": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-10.xlsx",
+        "chart": {
+          "window": "2026-11-09T07:00:00..2026-11-10T06:00:00",
+          "observations": 24,
+          "clicks": 31,
+          "impressions": 1124,
+          "ctr_pct": 2.758,
+          "impression_weighted_position": 14.1028,
+          "clicks_per_observation": 1.2917,
+          "impressions_per_observation": 46.8333
+        },
+        "query_rows_exported": 233,
+        "query_sheet_truncated_at_1000": false
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-10.xlsx",
+        "chart": {
+          "window": "2026-11-01..2026-11-07",
+          "observations": 7,
+          "clicks": 148,
+          "impressions": 7202,
+          "ctr_pct": 2.055,
+          "impression_weighted_position": 14.5918,
+          "clicks_per_observation": 21.1429,
+          "impressions_per_observation": 1028.8571
+        },
+        "query_rows_exported": 637,
+        "query_sheet_truncated_at_1000": false
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-10.xlsx",
+        "chart": {
+          "window": "2026-10-11..2026-11-07",
+          "observations": 28,
+          "clicks": 552,
+          "impressions": 24215,
+          "ctr_pct": 2.2796,
+          "impression_weighted_position": 14.4867,
+          "clicks_per_observation": 19.7143,
+          "impressions_per_observation": 864.8214
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true
+      }
+    }
+  },
+  "same_window_comparisons": {
+    "kpi_11_07_to_11_10": {
+      "24h": {
+        "previous": {
+          "window": "2026-11-06T03:00:00..2026-11-07T02:00:00",
+          "observations": 24,
+          "clicks": 12,
+          "impressions": 803,
+          "ctr_pct": 1.4944,
+          "impression_weighted_position": 12.5218,
+          "clicks_per_observation": 0.5,
+          "impressions_per_observation": 33.4583
+        },
+        "current": {
+          "window": "2026-11-09T07:00:00..2026-11-10T06:00:00",
+          "observations": 24,
+          "clicks": 31,
+          "impressions": 1124,
+          "ctr_pct": 2.758,
+          "impression_weighted_position": 14.1028,
+          "clicks_per_observation": 1.2917,
+          "impressions_per_observation": 46.8333
+        },
+        "clicks_delta": 19,
+        "impressions_delta": 321,
+        "position_delta_positive_is_worse": 1.581
+      },
+      "7d": {
+        "previous": {
+          "window": "2026-10-29..2026-11-04",
+          "observations": 7,
+          "clicks": 135,
+          "impressions": 6912,
+          "ctr_pct": 1.9531,
+          "impression_weighted_position": 15.9627,
+          "clicks_per_observation": 19.2857,
+          "impressions_per_observation": 987.4286
+        },
+        "current": {
+          "window": "2026-11-01..2026-11-07",
+          "observations": 7,
+          "clicks": 148,
+          "impressions": 7202,
+          "ctr_pct": 2.055,
+          "impression_weighted_position": 14.5918,
+          "clicks_per_observation": 21.1429,
+          "impressions_per_observation": 1028.8571
+        },
+        "clicks_delta": 13,
+        "impressions_delta": 290,
+        "position_delta_positive_is_worse": -1.3709
+      },
+      "28d": {
+        "previous": {
+          "window": "2026-10-08..2026-11-04",
+          "observations": 28,
+          "clicks": 538,
+          "impressions": 23183,
+          "ctr_pct": 2.3207,
+          "impression_weighted_position": 14.2796,
+          "clicks_per_observation": 19.2143,
+          "impressions_per_observation": 827.9643
+        },
+        "current": {
+          "window": "2026-10-11..2026-11-07",
+          "observations": 28,
+          "clicks": 552,
+          "impressions": 24215,
+          "ctr_pct": 2.2796,
+          "impression_weighted_position": 14.4867,
+          "clicks_per_observation": 19.7143,
+          "impressions_per_observation": 864.8214
+        },
+        "clicks_delta": 14,
+        "impressions_delta": 1032,
+        "position_delta_positive_is_worse": 0.2071
+      }
+    },
+    "money_focus_28d": {
+      "exact_rows_present": 29,
+      "page1_count": 6,
+      "page1_queries": [
+        "食品包裝印刷",
+        "即日印刷",
+        "small batch sticker printing",
+        "saddle stitch booklet printing",
+        "large envelopes",
+        "卒アル販売"
+      ],
+      "page1_zero_click_count": 5,
+      "deep_20plus_count": 15,
+      "total_impressions_present_rows": 2116,
+      "total_clicks_present_rows": 5
+    },
+    "industry_head_28d": {
+      "exact_rows_present": 3,
+      "page1_count": 0,
+      "page1_queries": [],
+      "page1_zero_click_count": 0,
+      "deep_20plus_count": 2,
+      "total_impressions_present_rows": 264,
+      "total_clicks_present_rows": 5
+    },
+    "money_focus_7d": {
+      "exact_rows_present": 25,
+      "page1_count": 2,
+      "page1_queries": [
+        "即日印刷",
+        "doujinshi printing"
+      ],
+      "page1_zero_click_count": 1,
+      "deep_20plus_count": 16,
+      "total_impressions_present_rows": 542,
+      "total_clicks_present_rows": 1
+    },
+    "industry_head_7d": {
+      "exact_rows_present": 3,
+      "page1_count": 0,
+      "page1_queries": [],
+      "page1_zero_click_count": 0,
+      "deep_20plus_count": 2,
+      "total_impressions_present_rows": 82,
+      "total_clicks_present_rows": 5
+    },
+    "page1_transitions_28d": [
+      "small batch stickers",
+      "doujinshi printing"
+    ],
+    "page1_transitions_7d": [
+      "食品包裝印刷",
+      "small batch stickers",
+      "doujinshi printing"
+    ],
+    "confirmed_two_window_worsening_28d": [
+      "印海報",
+      "宣傳單張",
+      "喜帖印刷",
+      "教材 印刷製本",
+      "a2 poster",
+      "コミケ 印刷"
+    ],
+    "confirmed_two_window_improvement_28d": [
+      "月曆印刷"
+    ]
+  },
+  "three_month_context": {
+    "source": "3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+    "whole_window": {
+      "window": "2026-08-01..2026-10-31",
+      "observations": 92,
+      "clicks": 1279,
+      "impressions": 65252,
+      "ctr_pct": 1.9601,
+      "impression_weighted_position": 17.355,
+      "clicks_per_observation": 13.9022,
+      "impressions_per_observation": 709.2609
+    },
+    "calendar_months_from_daily_chart": {
+      "2026-08": {
+        "window": "2026-08-01..2026-08-31",
+        "observations": 31,
+        "clicks": 321,
+        "impressions": 19031,
+        "ctr_pct": 1.6867,
+        "impression_weighted_position": 25.1262,
+        "clicks_per_observation": 10.3548,
+        "impressions_per_observation": 613.9032
+      },
+      "2026-09": {
+        "window": "2026-09-01..2026-09-30",
+        "observations": 30,
+        "clicks": 413,
+        "impressions": 22162,
+        "ctr_pct": 1.8636,
+        "impression_weighted_position": 14.2209,
+        "clicks_per_observation": 13.7667,
+        "impressions_per_observation": 738.7333
+      },
+      "2026-10": {
+        "window": "2026-10-01..2026-10-31",
+        "observations": 31,
+        "clicks": 545,
+        "impressions": 24059,
+        "ctr_pct": 2.2653,
+        "impression_weighted_position": 14.0948,
+        "clicks_per_observation": 17.5806,
+        "impressions_per_observation": 776.0968
+      }
+    },
+    "note": "Calendar-month groups partition the same 3mo daily chart. They provide long-window context, not proof of a September-change causal effect."
+  },
+  "country_28d_independent_aggregates": {
+    "2026-10-30": {
+      "中国香港": {
+        "impressions": 12229,
+        "clicks": 360,
+        "ctr_pct": 2.9438,
+        "position": 13.39
+      },
+      "日本": {
+        "impressions": 2296,
+        "clicks": 40,
+        "ctr_pct": 1.7422,
+        "position": 16.61
+      },
+      "美国": {
+        "impressions": 2743,
+        "clicks": 30,
+        "ctr_pct": 1.0937,
+        "position": 15.42
+      }
+    },
+    "2026-11-03": {
+      "中国香港": {
+        "impressions": 12931,
+        "clicks": 358,
+        "ctr_pct": 2.7685,
+        "position": 13.61
+      },
+      "日本": {
+        "impressions": 2466,
+        "clicks": 45,
+        "ctr_pct": 1.8248,
+        "position": 19.52
+      },
+      "美国": {
+        "impressions": 2747,
+        "clicks": 33,
+        "ctr_pct": 1.2013,
+        "position": 15.25
+      }
+    },
+    "2026-11-07": {
+      "中国香港": {
+        "impressions": 13651,
+        "clicks": 382,
+        "ctr_pct": 2.7983,
+        "position": 13.61
+      },
+      "日本": {
+        "impressions": 2720,
+        "clicks": 47,
+        "ctr_pct": 1.7279,
+        "position": 21.28
+      },
+      "美国": {
+        "impressions": 2658,
+        "clicks": 33,
+        "ctr_pct": 1.2415,
+        "position": 15.45
+      }
+    },
+    "2026-11-10": {
+      "中国香港": {
+        "impressions": 14113,
+        "clicks": 389,
+        "ctr_pct": 2.7563,
+        "position": 13.8
+      },
+      "日本": {
+        "impressions": 2898,
+        "clicks": 53,
+        "ctr_pct": 1.8288,
+        "position": 21.49
+      },
+      "美国": {
+        "impressions": 2806,
+        "clicks": 33,
+        "ctr_pct": 1.1761,
+        "position": 15.89
+      }
+    }
+  },
+  "page_28d_top20_independent_aggregates": [
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "clicks": 18,
+      "impressions": 1424,
+      "ctr_pct": 1.264,
+      "position": 9.55
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/",
+      "clicks": 59,
+      "impressions": 1332,
+      "ctr_pct": 4.4294,
+      "position": 12.41
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "clicks": 19,
+      "impressions": 792,
+      "ctr_pct": 2.399,
+      "position": 13.91
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "clicks": 19,
+      "impressions": 659,
+      "ctr_pct": 2.8832,
+      "position": 9.17
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/books/",
+      "clicks": 1,
+      "impressions": 648,
+      "ctr_pct": 0.1543,
+      "position": 49.58
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "clicks": 2,
+      "impressions": 496,
+      "ctr_pct": 0.4032,
+      "position": 20.78
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "clicks": 1,
+      "impressions": 438,
+      "ctr_pct": 0.2283,
+      "position": 35.74
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "clicks": 2,
+      "impressions": 414,
+      "ctr_pct": 0.4831,
+      "position": 21.92
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "clicks": 6,
+      "impressions": 408,
+      "ctr_pct": 1.4706,
+      "position": 11.78
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/flyers/",
+      "clicks": 3,
+      "impressions": 402,
+      "ctr_pct": 0.7463,
+      "position": 23.94
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "clicks": 6,
+      "impressions": 375,
+      "ctr_pct": 1.6,
+      "position": 20.8
+    },
+    {
+      "url": "https://zprintpro.com/en/product/catalog-printing/",
+      "clicks": 0,
+      "impressions": 358,
+      "ctr_pct": 0.0,
+      "position": 20.16
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/packaging/",
+      "clicks": 1,
+      "impressions": 357,
+      "ctr_pct": 0.2801,
+      "position": 37.39
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "clicks": 10,
+      "impressions": 341,
+      "ctr_pct": 2.9326,
+      "position": 7.99
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "clicks": 2,
+      "impressions": 329,
+      "ctr_pct": 0.6079,
+      "position": 37.61
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "clicks": 1,
+      "impressions": 285,
+      "ctr_pct": 0.3509,
+      "position": 32.55
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "clicks": 3,
+      "impressions": 282,
+      "ctr_pct": 1.0638,
+      "position": 7.56
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+      "clicks": 8,
+      "impressions": 282,
+      "ctr_pct": 2.8369,
+      "position": 10.24
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+      "clicks": 4,
+      "impressions": 272,
+      "ctr_pct": 1.4706,
+      "position": 22.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "clicks": 1,
+      "impressions": 271,
+      "ctr_pct": 0.369,
+      "position": 42.51
+    }
+  ],
+  "guardrails": [
+    "24h is descriptive only and is never compared with 28d position.",
+    "7d and 28d windows overlap heavily across exports; movement is not an independent SEO experiment.",
+    "Query sheets are capped at 1000 rows. Missing rows are NO_CURRENT_BASELINE, not zero demand.",
+    "Country is searcher location, not locale-site performance. Page tables cannot be joined to query rows.",
+    "No enquiry, order, revenue or AI-citation conclusion is made from GSC."
+  ],
+  "two_method_reconciliation": {
+    "2026-10-30": {
+      "7d": {
+        "method_1": {
+          "clicks": 133,
+          "impressions": 5635,
+          "weighted_position": 14.2963,
+          "focus_page1": 5
+        },
+        "method_2": {
+          "clicks": 133,
+          "impressions": 5635,
+          "weighted_position": 14.296273291925466,
+          "focus_page1": 5,
+          "query_rows": 521
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 496,
+          "impressions": 21127,
+          "weighted_position": 13.5616,
+          "focus_page1": 7
+        },
+        "method_2": {
+          "clicks": 496,
+          "impressions": 21127,
+          "weighted_position": 13.561641501396316,
+          "focus_page1": 7,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    },
+    "2026-11-03": {
+      "7d": {
+        "method_1": {
+          "clicks": 132,
+          "impressions": 6255,
+          "weighted_position": 15.5953,
+          "focus_page1": 3
+        },
+        "method_2": {
+          "clicks": 132,
+          "impressions": 6255,
+          "weighted_position": 15.595251798561154,
+          "focus_page1": 3,
+          "query_rows": 573
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 504,
+          "impressions": 22114,
+          "weighted_position": 14.0266,
+          "focus_page1": 6
+        },
+        "method_2": {
+          "clicks": 504,
+          "impressions": 22114,
+          "weighted_position": 14.0265714027313,
+          "focus_page1": 6,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    },
+    "2026-11-07": {
+      "7d": {
+        "method_1": {
+          "clicks": 135,
+          "impressions": 6912,
+          "weighted_position": 15.9627,
+          "focus_page1": 5
+        },
+        "method_2": {
+          "clicks": 135,
+          "impressions": 6912,
+          "weighted_position": 15.962673611111112,
+          "focus_page1": 5,
+          "query_rows": 604
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 538,
+          "impressions": 23183,
+          "weighted_position": 14.2796,
+          "focus_page1": 8
+        },
+        "method_2": {
+          "clicks": 538,
+          "impressions": 23183,
+          "weighted_position": 14.279601432083853,
+          "focus_page1": 8,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    },
+    "2026-11-10": {
+      "7d": {
+        "method_1": {
+          "clicks": 148,
+          "impressions": 7202,
+          "weighted_position": 14.5918,
+          "focus_page1": 2
+        },
+        "method_2": {
+          "clicks": 148,
+          "impressions": 7202,
+          "weighted_position": 14.591793946126074,
+          "focus_page1": 2,
+          "query_rows": 637
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 552,
+          "impressions": 24215,
+          "weighted_position": 14.4867,
+          "focus_page1": 6
+        },
+        "method_2": {
+          "clicks": 552,
+          "impressions": 24215,
+          "weighted_position": 14.48671897584142,
+          "focus_page1": 6,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    }
+  },
+  "headline_assessment": {
+    "sitewide_volume_universally_down": false,
+    "basis": "11-07 vs 11-03: 7d clicks 135 vs 132 and impressions 6912 vs 6255; 28d clicks 538 vs 504 and impressions 23183 vs 22114.",
+    "money_rankings_universally_down": null,
+    "basis_for_word_level_decision": "Use focus_query_deltas_28d and seven_day_focus_deltas; no single 24h cross-window comparison."
+  }
+}
