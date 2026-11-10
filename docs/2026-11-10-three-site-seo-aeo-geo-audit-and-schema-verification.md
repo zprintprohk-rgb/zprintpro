@@ -258,8 +258,12 @@
 | `node scripts/check-encoding.js` | ✅ PASS（无编码问题） |
 | `npx tsc --noEmit` | ✅ 54 = 基线 54（零新增） |
 | 反审门童（--commit） | ✅ 🔴 0 / 🟠 1 / 🟡 3（shadow）；CRED·BRAND·PHONE·SECRET 计数全 0 |
-| push 闸门 | ✅ 上次 push 527 分钟前，窗口已开 |
-| 部署与线上复验 | 见下方回填（推送后写入） |
+| push 闸门 | ✅ 上次 push 527 分钟前，窗口已开（`push-gate-check.mjs` 独立调用，exit 0） |
+| 推送 | ✅ `ee3fdef4..c1f99244`（`main -> main`），HEAD = origin/main |
+| CF Pages 构建 | ✅ **success**（run 129542582418；首次检查 `in_progress`，约 4 分钟后 success）—— 印证 11-09 的构建滞留为瞬态，构建面已恢复 |
+| 线上复验（部署后，Node 探针 `verify-category-nodes.mjs`） | ✅ 分类页：`/zh-hk|en|ja/category/stickers/` = **9 个 Product 节点 / 9 个唯一 / 重复 0**（修复前 18），每个 SKU `brand` 只 1 次、`@id` 0 个、`CollectionPage` 1 个、`ItemList` 1 个；`/zh-hk/category/posters/` = 6/6/0。商品页：`/ja/product/white-card-boxes/` 与 `/zh-hk/product/cartoon-red-packets/` = 1 节点 / brand 1 次 / 无 `@id` |
+
+**结论**：分类页重复发射已消除（18 → 9），商品页未受影响，品牌字段单值无 `@id` 的结构保持。GSC「产品摘要」受影响项会在 Google 重抓后随之收缩（不承诺具体降幅）。
 
 ---
 

@@ -789,3 +789,14 @@
 | **双条件核验** | ① 2026-11-10 08:26 git status --porcelain -- src/ = 0 行；② 最后一次 src 写入 = 2026-11-09 12:43（19h+ 静默），lane.lock 不存在 |
 | **预计时长** | < 60 min |
 | **释放条件** | 门禁全绿 + commit + push（过 push-gate-check.mjs）+ 线上 JSON-LD 复验 + 报告落盘 |
+---
+
+### ✅ 释放 — 2026-11-10 09:0x AutoClaw 会话（三站点盘点 + 结构化数据核验）
+
+| 项 | 值 |
+|---|---|
+| **释放** | 本会话正式释放写锁 |
+| **交付** | commit `c1f99244` 已推送（`ee3fdef4..c1f99244`）；CF Pages build **success**（run 129542582418）；线上复验 PASS：`/zh-hk|en|ja/category/stickers/` = 9 Product 节点 / 9 唯一 / 重复 0（修复前 18），商品页 1 节点 / brand 1 次 / 无 `@id` |
+| **落地面** | `src/app/[locale]/category/[slug]/page.tsx`（删 1 行重复 ItemList 发射）· `.hermes/logs/flywheel-learning-ledger.json`（新）· `.hermes/cron-prompts/lane-results-bus-contract.md`（§8）· `docs/2026-11-10-three-site-seo-aeo-geo-audit-and-schema-verification.md`（新）· `SESSION_LOCK.md` |
+| **遗留（未推送）** | 报告 §6.3 的部署回填（docs-only），按 §0.25.8 commit 留本地，由下一自然轮（11-10 20:13 / 21:17）carry；**不阻塞等待窗口** |
+| **未做（已登记，非遗漏）** | GEO S1 复测（11-10 到期，22 次探针未跑 → 账本标 BLOCKED）· GSC 四档补导（K3 动作）· A49/A50/A51（等 K3 或 11-13 窗） |
