@@ -1,0 +1,528 @@
+{
+  "lane": "ZP-gsc-feedback",
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T20:13:03+08:00",
+  "report": ".hermes/logs/2026-11-11-ZP-gsc-feedback.md",
+  "idempotency_key": "68e715db3c2ba383",
+  "run_kind": "new 11-11 GSC batch consumed + first partial post-change 7d window + money-word page-1 pool re-sum + retry-queue adjudication (zero page writes)",
+  "verdict": "OK",
+  "verdict_definition": "Lane deliverables complete AND KPI updated from the 2026-11-11 batch (report + this ledger + anomaly classes + next check). NOT deployment effectiveness, NOT recovery confirmation, NOT ranking improvement.",
+  "data_gate": {
+    "no_new_data": false,
+    "kpi_updated": true,
+    "page_writes": 0,
+    "new_batch": "2026-11-11",
+    "windows_present": ["24h", "7d", "28d"],
+    "windows_missing": ["3mo"],
+    "reason": "11-11 24h/7d/28d landed. 24h window ends 2026-11-11T16; 7d/28d data day 2026-11-09. 3mo missing for the third consecutive batch. API plane still end1105; detector still absent; index still at 11-03."
+  },
+  "consumed": {
+    "run_context": ".hermes/logs/run-context-ZP-gsc-feedback.json @ 2026-11-11 20:13:03 (preflight 9/9 ok; lock pid 31400; retry_queue 3; key 68e715db3c2ba383)",
+    "lane_status": ".hermes/logs/lane-status.json @ 2026-11-09 06:43 local (61.5h old; STALE_STATUS; file bus_records=108 at generation; lane-runs.jsonl now #114; verdict=ATTENTION)",
+    "contract": ".hermes/cron-prompts/lane-results-bus-contract.md (sections 6.1 / 7.1 / 7.2 / 7.4 / 8)",
+    "prompts": [
+      ".hermes/cron-prompts/zprintpro-gsc-feedback-loop.md",
+      ".hermes/cron-prompts/sop-10-gate.md"
+    ],
+    "flywheel_ledger": ".hermes/logs/flywheel-learning-ledger.json @ 2026-11-10 08:35 (read-only; owner_lane=ZP-gsc-feedback has 10 entries + window_math + data_supply)",
+    "gsc_artifacts": [
+      ".hermes/logs/gsc-2026-11-11-four-window-analysis.json",
+      ".hermes/logs/gsc-2026-11-11-money-keyword-delta.json",
+      ".hermes/logs/gsc-2026-11-10-four-window-analysis.json",
+      ".hermes/logs/gsc-2026-11-10-money-keyword-delta.json",
+      ".hermes/logs/gsc-daily-anomaly-2026-11-10.json",
+      ".hermes/logs/gsc-2026-11-07-four-window-analysis.json",
+      ".hermes/logs/gsc-cliff-2026-11-03.json",
+      "GSC数据/index.json",
+      "GSC数据/{24小时,7天,28天}三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-11.xlsx (inventory only; not re-parsed)",
+      "GSC数据/3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx (carried)",
+      "GSC数据/gsc-query-country-28d-end1105.csv (data day 2026-11-04)"
+    ],
+    "prior_reports": [
+      ".hermes/logs/2026-11-02-ZP-gsc-feedback.md (retry item, OK)",
+      ".hermes/logs/2026-11-05-ZP-gsc-feedback.md (retry item, AUTO-FILL BLOCKED)",
+      ".hermes/logs/2026-11-07-ZP-gsc-feedback.md (retry item, OK content / FAILED machine for push)",
+      ".hermes/logs/2026-11-10-ZP-gsc-feedback.md (previous run, OK)",
+      ".hermes/logs/2026-11-10-scheduler-truth-refresh.md (01:29)",
+      "docs/2026-11-09-retest-1114-runbook.md (read-only)"
+    ],
+    "sibling_same_day_readonly": [
+      "dafd9229 (18:25 daily 11-11 report; sticker third window 35.35, data day 11-07)",
+      "d3293241 (wedding cluster src fix; zero hours inside the 11-11 GSC window)",
+      "ac483318 (geo worsening-six evidence pack v3)",
+      "a6aabc39 (11-11 four-window verdict + five-window velocity layer)"
+    ],
+    "repo_state": {
+      "local_main": "a6aabc39ef746a97bd4a07d3d398217719a84cf9",
+      "origin_main": "d3293241f6f68f722aa10617c5bfaaeca005bc11",
+      "ahead_by": 2,
+      "ahead_commits": ["ac483318", "a6aabc39"],
+      "note": "Both unpushed commits are docs-only; this lane writes only its report and this ledger. Host wrapper commits/pushes after lane exit."
+    }
+  },
+  "status_gate": {
+    "verdict": "STALE_STATUS",
+    "lane_status_generated_local": "2026-11-09 06:43",
+    "lane_status_age_hours": 61.5,
+    "replaced_by": "lane-runs.jsonl #112-114 + 2026-11-10-scheduler-truth-refresh.md (01:29) + flywheel ledger scheduler_truth (01:29)",
+    "guard": "Stale lane-status was NOT used to dispatch ops repairs. The 11-09 snapshot's six problems are superseded; only monthly-matrix remains broken."
+  },
+  "data_availability": {
+    "xlsx_batch": {
+      "export_date": "2026-11-11",
+      "windows_present": ["24h", "7d", "28d"],
+      "windows_missing": ["3mo"],
+      "data_days": {
+        "24h_window_end": "2026-11-11T16:00:00",
+        "7d": "2026-11-09",
+        "28d": "2026-11-09",
+        "3mo": "2026-10-31"
+      },
+      "ages_hours_at_2013": {
+        "24h": 4.2,
+        "7d": 44.2,
+        "28d": 44.2,
+        "3mo": 260.2
+      },
+      "status": "FRESH_PARTIAL_72H_MARGIN_27_8H",
+      "freshness_note": "7d/28d pass the 72h gate with 27.8h to spare; they cross it at 2026-11-13 00:00. The 11-12 run must use a new export.",
+      "export_lag_days": 3,
+      "export_lag_evidence": [
+        "2026-11-03 export -> 28d data day 2026-10-31",
+        "2026-11-07 export -> 28d data day 2026-11-04",
+        "2026-11-10 export -> 28d data day 2026-11-07",
+        "2026-11-11 export -> 28d data day 2026-11-09"
+      ]
+    },
+    "api_pull": {
+      "latest": "GSC数据/gsc-query-country-28d-end1105.csv",
+      "data_day": "2026-11-04",
+      "age_hours_at_2013": 164.2,
+      "status": "STALE",
+      "pulled_today": false,
+      "cause": "Clash/mihomo proxy 127.0.0.1:7892 down; direct connection blocked"
+    },
+    "detector": {
+      "latest_file": ".hermes/logs/gsc-cliff-2026-11-03.json",
+      "status": "available:false",
+      "missing_days": ["2026-11-04", "2026-11-05", "2026-11-06", "2026-11-07", "2026-11-08", "2026-11-09", "2026-11-10", "2026-11-11"],
+      "cause": "pwsh blocked in the v9.4 lane sandbox; detector cannot be run or retried"
+    },
+    "index": {
+      "lastBuild": "2026-11-05T07:38:00+08:00",
+      "latestFreshData": "2026-11-03",
+      "missing_batches": ["2026-11-07", "2026-11-10", "2026-11-11"],
+      "status": "NOT_REBUILT_AFTER_THREE_BATCHES",
+      "impact": "guard #9 reads index for freshness and would treat all three batches as absent",
+      "anomaly": "A47 recurrence 2"
+    },
+    "overall": "PARTIAL_RECOVERY: xlsx plane fresh (three windows), API/detector/index still broken. The ledger data_supply.status=BROKEN_DAY6 is stale for xlsx but still accurate for API/detector/index."
+  },
+  "kpi_11_11": {
+    "caliber": "GSC xlsx 2026-11-11 batch, all countries, web search; today's readings, not carried (except 3mo)",
+    "windows": {
+      "24h": {"window": "2026-11-10T17:00:00..2026-11-11T16:00:00", "clicks": 17, "impressions": 940, "ctr_pct": 1.8085, "avg_position": 11.6273, "age_hours": 4.2},
+      "7d": {"window": "2026-11-03..2026-11-09", "clicks": 158, "impressions": 7528, "ctr_pct": 2.0988, "avg_position": 13.9523, "age_hours": 44.2},
+      "28d": {"window": "2026-10-13..2026-11-09", "clicks": 567, "impressions": 24997, "ctr_pct": 2.2683, "avg_position": 14.5784, "age_hours": 44.2},
+      "3mo": {"window": "2026-08-01..2026-10-31", "clicks": 1279, "impressions": 65252, "ctr_pct": 1.9601, "avg_position": 17.355, "age_hours": 260.2, "carried_from": "2026-11-03"}
+    },
+    "two_method_reconciliation": "7d and 28d clicks/impressions/weighted_position/focus_page1 match across both methods (match=true). CTR independently recomputed as clicks/impressions: 17/940=1.8085%, 158/7528=2.0988%, 567/24997=2.2683%."
+  },
+  "kpi_deltas_11_10_to_11_11": {
+    "caliber": "rolling-window batch-over-batch; NOT independent experiments",
+    "24h": {"clicks": "31 -> 17 (-14, -45.2%)", "impressions": "1124 -> 940 (-184, -16.4%)", "ctr": "2.7580% -> 1.8085% (-0.9495pp)", "position": "14.1028 -> 11.6273 (-2.4755 better)", "overlap": "0/24h; different weekday mix (Mon-dominant vs Tue/Wed)", "warning": "single day, 17 clicks; position improves while clicks fall; do not read as traffic collapse"},
+    "7d": {"clicks": "148 -> 158 (+10, +6.8%)", "impressions": "7202 -> 7528 (+326, +4.5%)", "ctr": "2.0550% -> 2.0988% (+0.0438pp)", "position": "14.5918 -> 13.9523 (-0.6395 better)", "overlap": "5/7 days (2026-11-03..11-07)", "note": "second consecutive improving 7d window: 15.9627 -> 14.5918 -> 13.9523"},
+    "28d": {"clicks": "552 -> 567 (+15, +2.7%)", "impressions": "24215 -> 24997 (+782, +3.2%)", "ctr": "2.2796% -> 2.2683% (-0.0113pp)", "position": "14.4867 -> 14.5784 (+0.0917 worse)", "overlap": "26/28 days (2026-10-13..11-07)"},
+    "interpretation_guard": "7d improves while 28d is volume-up/efficiency-flat. This is the normal shape of overlapping rolling windows, not two independent facts and not a trend reversal."
+  },
+  "money_words_28d": {
+    "window": "2026-10-13..2026-11-09",
+    "rows": 29,
+    "defined_money_words": 30,
+    "impressions": 2101,
+    "clicks": 5,
+    "page1_rows": 6,
+    "page1_zero_click_rows": 5,
+    "page1_zero_click_impressions": 147,
+    "page1_zero_click_sum_method": "row sum: 食品包裝印刷 107 + small batch sticker printing 20 + saddle stitch booklet printing 3 + large envelopes 1 + 卒アル販売 16 = 147; the 11-10 value 149 is recomputable the same way (106+21+5+1+16), so both methods agree.",
+    "deep_20plus_rows": 15,
+    "page1_queries": ["食品包裝印刷", "即日印刷", "small batch sticker printing", "saddle stitch booklet printing", "large envelopes", "卒アル販売"],
+    "page1_with_clicks": [{"query": "即日印刷", "impressions": 58, "clicks": 2, "ctr_pct": 3.4483, "position": 8.09}],
+    "page1_transitions_28d": [],
+    "confirmed_two_window_worsening_28d": [
+      {"query": "印海報", "prev_pos": 15.09, "pos": 15.65, "delta": 0.56, "impressions": 119, "clicks": 0},
+      {"query": "海報印刷", "prev_pos": 15.55, "pos": 16.49, "delta": 0.94, "impressions": 224, "clicks": 1, "note": "newly entered the two-window worsening list"},
+      {"query": "宣傳單張", "prev_pos": 35.42, "pos": 36.31, "delta": 0.89, "impressions": 137, "clicks": 0},
+      {"query": "喜帖印刷", "prev_pos": 40.96, "pos": 42.35, "delta": 1.39, "impressions": 26, "clicks": 0, "caution": "small sample; worsening decelerated from +4.71 to +1.39"},
+      {"query": "small batch sticker printing", "prev_pos": 6.52, "pos": 7.15, "delta": 0.63, "impressions": 20, "clicks": 0},
+      {"query": "教材 印刷製本", "prev_pos": 34.32, "pos": 35.51, "delta": 1.19, "impressions": 57, "clicks": 0},
+      {"query": "a2 poster", "prev_pos": 29.75, "pos": 38.92, "delta": 9.17, "impressions": 39, "clicks": 1, "note": "accelerating; 11-18 retest focus"},
+      {"query": "コミケ 印刷", "prev_pos": 23.97, "pos": 24.96, "delta": 0.99, "impressions": 134, "clicks": 0}
+    ],
+    "confirmed_two_window_improvement_28d": [
+      {"query": "貼紙印刷", "prev_pos": 35.35, "pos": 34.58, "delta": -0.77, "impressions": 142, "clicks": 0, "note": "five-export monotonic improvement 40.88/38.06/37.65/35.35/34.58; zero clicks"},
+      {"query": "學校印刷", "prev_pos": 17.71, "pos": 17.04, "delta": -0.67, "impressions": 50, "clicks": 0}
+    ],
+    "single_window_notable": [
+      {"query": "月曆印刷", "prev_pos": 23.09, "pos": 22.59, "delta": -0.50, "impressions": 141, "clicks": 0, "note": "three-export monotonic improvement 24.44/23.09/22.59 but NOT in the machine two-window list; treat as single-window notable, no SCALE"},
+      {"query": "china catalog printing", "prev_pos": 13.78, "pos": 13.19, "delta": -0.59, "impressions": 102, "clicks": 0, "note": "pre-existing improving trend: 15.79 -> 14.96 -> 14.15 -> 13.78 -> 13.19; confounder for the 11-09 H1 change"},
+      {"query": "包裝盒印刷", "prev_pos": 33.10, "pos": 32.15, "delta": -0.95, "impressions": 53, "clicks": 0},
+      {"query": "包裝盒訂製", "prev_pos": 34.46, "pos": 34.21, "delta": -0.25, "impressions": 57, "clicks": 0},
+      {"query": "香港印刷", "prev_pos": 11.55, "pos": 11.25, "delta": -0.30, "impressions": 28, "clicks": 2},
+      {"query": "利是封印刷", "prev_pos": 23.84, "pos": 23.61, "delta": -0.23, "impressions": 59, "clicks": 1},
+      {"query": "印刷公司", "prev_pos": 26.63, "pos": 26.90, "delta": 0.27, "impressions": 149, "clicks": 2}
+    ],
+    "attribution_red_line": "All eight confirmed-worsening words have 28d windows with 26/28 days BEFORE 2026-11-08. Their worsening is pre-change drift plus two post-change days and MUST NOT be recorded as deployment failure. Likewise the two improving words cannot be attributed to the deployment."
+  },
+  "money_words_7d": {
+    "window": "2026-11-03..2026-11-09",
+    "exact_rows_present": 26,
+    "page1_count": 3,
+    "page1_queries": ["食品包裝印刷", "即日印刷", "doujinshi printing"],
+    "page1_zero_click_count": 2,
+    "deep_20plus_count": 14,
+    "total_impressions_present_rows": 487,
+    "total_clicks_present_rows": 1,
+    "status": "MEMBERSHIP_AND_TOTALS_ONLY",
+    "reason": "A53 recurrence 2: seven_day_focus_deltas still pairs previous_11_03 vs current_11_07. All 7d word-level deltas and 7d page-1 transitions are NOT_EVALUABLE."
+  },
+  "task_j_lockwords_28d": {
+    "source": "8 T1 locked words per 2026-09-12 v9.3 directive",
+    "page1_count": 1,
+    "zero_click_count": 6,
+    "rows": [
+      {"word": "包裝盒印刷", "impressions": 53, "clicks": 0, "position": 32.15, "status": "DEEP_ZERO_CLICK"},
+      {"word": "紙盒印刷", "impressions": 57, "clicks": 0, "position": 36.25, "status": "DEEP_ZERO_CLICK"},
+      {"word": "包裝盒訂製", "impressions": 57, "clicks": 0, "position": 34.21, "status": "DEEP_ZERO_CLICK"},
+      {"word": "貼紙印刷", "impressions": 142, "clicks": 0, "position": 34.58, "status": "FIVE_EXPORT_IMPROVING_ZERO_CLICK"},
+      {"word": "宣傳單張", "impressions": 137, "clicks": 0, "position": 36.31, "status": "TWO_WINDOW_WORSENING"},
+      {"word": "即日印刷", "impressions": 58, "clicks": 2, "position": 8.09, "status": "ONLY_PAGE1_WITH_CLICKS"},
+      {"word": "書刊印刷", "impressions": 128, "clicks": 0, "position": 33.59, "status": "DEEP_ZERO_CLICK"},
+      {"word": "騎馬釘", "impressions": null, "clicks": null, "position": null, "status": "NO_CURRENT_BASELINE", "note": "absent from the 30-word exact table; missing row is not zero demand"}
+    ]
+  },
+  "country_28d_independent": {
+    "caliber": "independent country tables; only HK/JP/US; unsampled rest-of-world; NOT summable to the 24,997 sitewide total (sum = 20,444)",
+    "2026-11-11": {
+      "中国香港": {"impressions": 14468, "clicks": 395, "ctr_pct": 2.7302, "position": 13.82},
+      "日本": {"impressions": 3110, "clicks": 53, "ctr_pct": 1.7042, "position": 21.80},
+      "美国": {"impressions": 2866, "clicks": 35, "ctr_pct": 1.2212, "position": 15.79}
+    },
+    "deltas_vs_11_10": {
+      "中国香港": {"impressions": 355, "clicks": 6, "ctr_pp": -0.0261, "position": 0.02},
+      "日本": {"impressions": 212, "clicks": 0, "ctr_pp": -0.1246, "position": 0.31},
+      "美国": {"impressions": 60, "clicks": 2, "ctr_pp": 0.0451, "position": -0.10}
+    },
+    "note": "Searcher location, not locale-site performance. All three markets gain impressions; only US CTR rises. Sum of HK+JP+US = 20,444, not the sitewide 24,997."
+  },
+  "page_28d_notable": [
+    {"url": "/zh-hk/blog/poster-printing-guide/", "clicks": 16, "impressions": 1349, "ctr_pct": 1.186, "position": 9.71, "role": "poster cluster's real page-1 asset is still the blog"},
+    {"url": "/zh-hk/", "clicks": 58, "impressions": 1373, "ctr_pct": 4.2243, "position": 12.38},
+    {"url": "/zh-hk/product/a2-posters/", "clicks": 22, "impressions": 802, "ctr_pct": 2.7431, "position": 13.89},
+    {"url": "/zh-hk/blog/folded-leaflet-printing-guide/", "clicks": 20, "impressions": 708, "ctr_pct": 2.8249, "position": 8.87},
+    {"url": "/zh-hk/category/books/", "clicks": 2, "impressions": 677, "ctr_pct": 0.2954, "position": 50.11},
+    {"url": "/zh-hk/category/flyers/", "clicks": 3, "impressions": 399, "ctr_pct": 0.7519, "position": 24.37, "note": "over-band title (59)"},
+    {"url": "/en/product/catalog-printing/", "clicks": 1, "impressions": 358, "ctr_pct": 0.2793, "position": 19.80, "note": "window contains only one post-change day; cannot judge the 11-09 H1 change"},
+    {"url": "/zh-hk/product/food-boxes/", "clicks": 2, "impressions": 336, "ctr_pct": 0.5952, "position": 29.64},
+    {"url": "/zh-hk/blog/design-file-specs/", "clicks": 0, "impressions": 301, "ctr_pct": 0.0, "position": 5.51, "note": "page-1 zero-click single-page sample (OPP-06); no SERP/title truthed, no dispatch"},
+    {"url": "/zh-hk/category/posters/", "clicks": 1, "impressions": 288, "ctr_pct": 0.3472, "position": 42.03, "note": "named primary door on 11-08, but page-level baseline is 32.3 positions behind the blog"}
+  ],
+  "three_month_context": {
+    "source": "3个月三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-03.xlsx",
+    "months": {
+      "2026-08": {"clicks": 321, "impressions": 19031, "ctr_pct": 1.6867, "position": 25.1262},
+      "2026-09": {"clicks": 413, "impressions": 22162, "ctr_pct": 1.8636, "position": 14.2209},
+      "2026-10": {"clicks": 545, "impressions": 24059, "ctr_pct": 2.2653, "position": 14.0948}
+    },
+    "note": "Calendar-month groups partition the same 3mo daily chart; background only, not proof of any single change."
+  },
+  "measurement": {
+    "recompute_if_lag_changes": true,
+    "A46_retest_window_dilution": {
+      "lag_rule": "data_day = export_date - 3 (proven four times: 11-03->10-31, 11-07->11-04, 11-10->11-07, 11-11->11-09)",
+      "batch_1111_structure": {
+        "7d_window": "2026-11-03..2026-11-09",
+        "7d_post_change_days_c1": "2/7 = 28.6%",
+        "7d_post_change_days_c2": "1/7 = 14.3%",
+        "28d_window": "2026-10-13..2026-11-09",
+        "28d_post_change_days_c1": "2/28 = 7.1%",
+        "28d_post_change_days_c2": "1/28 = 3.6%",
+        "conclusion": "The 11-11 7d window is the first to contain post-change days, so direction is readable; the 28d window is still 26/28 pre-change, so deployment effectiveness is NOT judgeable."
+      },
+      "table": [
+        {"export": "2026-11-14", "data_day": "2026-11-11", "w7": "2026-11-05..2026-11-11", "w7_post_c2_pct": 42.9, "w28": "2026-10-15..2026-11-11", "w28_post_c2_pct": 10.7, "w28_overlap_pct": 75.0},
+        {"export": "2026-11-18", "data_day": "2026-11-15", "w7": "2026-11-09..2026-11-15", "w7_post_c2_pct": 100, "w28": "2026-10-19..2026-11-15", "w28_post_c2_pct": 25.0, "w28_overlap_pct": 60.7},
+        {"export": "2026-11-21", "data_day": "2026-11-18", "w7": "2026-11-12..2026-11-18", "w7_post_c2_pct": 100, "w28": "2026-10-22..2026-11-18", "w28_post_c2_pct": 35.7, "w28_overlap_pct": 50.0},
+        {"export": "2026-11-28", "data_day": "2026-11-25", "w7": "2026-11-19..2026-11-25", "w7_post_c2_pct": 100, "w28": "2026-10-29..2026-11-25", "w28_post_c2_pct": 60.7, "w28_overlap_pct": 25.0},
+        {"export": "2026-12-04", "data_day": "2026-12-01", "w7": "2026-11-25..2026-12-01", "w7_post_c2_pct": 100, "w28": "2026-11-04..2026-12-01", "w28_post_c2_pct": 82.1, "w28_overlap_pct": 3.6},
+        {"export": "2026-12-10", "data_day": "2026-12-07", "w7": "2026-12-01..2026-12-07", "w7_post_c2_pct": 100, "w28": "2026-11-10..2026-12-07", "w28_post_c2_pct": 100, "w28_overlap_pct": 0}
+      ],
+      "decision_rule": [
+        "2026-11-14: direction + truth consistency only; 28d BACKGROUND_ONLY; not a rollback basis",
+        "2026-11-18: first 7d decision-grade window",
+        "2026-11-21: 7d decision-grade; 28d still background",
+        "2026-12-04: 28d reaches 82.1% post-change; business read allowed",
+        "2026-12-10: clean 28d"
+      ],
+      "runbook_conflict": "docs/2026-11-09-retest-1114-runbook.md rule 1 still keeps the numeric gate 14.15 -> <=10 at 11-14. With 10.7% post-change days, a true 4-position gain appears as ~0.43. Recommend moving the numeric gate to 11-18 (7d) / 12-04 (28d). This lane did not edit the runbook."
+    },
+    "A52_window_precedes_deploy_mislabel": {
+      "source": "commit ff3f3b4b message: '7d window (first fully post-deploy) pos improves -1.37 with clicks+13'",
+      "workbook_fact": "11-10 7d window = 2026-11-01..2026-11-07; deployments on 2026-11-08 and 2026-11-09",
+      "post_change_days_in_7d": 0,
+      "status": "HISTORICAL_WORDING_OPEN",
+      "verdict": "The -1.37 / +13 numbers are reproducible, but they cannot be attributed to the 11-08/11-09 deployments. The peer commit is not rewritten."
+    },
+    "A53_money_7d_block_stale": {
+      "file": ".hermes/logs/gsc-2026-11-11-money-keyword-delta.json",
+      "seven_day_focus_deltas_pairs": "previous_11_03 vs current_11_07",
+      "expected_pair": "previous_11_07 vs current_11_10, or previous_11_10 vs current_11_11",
+      "status": "STALE_7D_WORD_BLOCK_RECURRENCE_2",
+      "consequence": "Any 7d word-level verdict and any 7d page-1 transition for 11-11 is NOT_EVALUABLE until regenerated."
+    },
+    "A55_window_fraction_label_1111": {
+      "source": "commit a6aabc39 message: 'direction-only per window discipline (7d=42.9% post-change)'",
+      "workbook_fact": "11-11 7d (2026-11-03..2026-11-09) is 28.6% post-change for the 11-08 deployment and 14.3% for the 11-09 12:44 change; 42.9% is the 11-14 export (data day 11-11) forecast",
+      "status": "LABEL_MISMATCH_P3",
+      "verdict": "Numbers are not fabricated, but the label is attached to the wrong batch. Correct wording at the next readout; do not rewrite the peer commit."
+    },
+    "two_window_rule_note": {
+      "query": "月曆印刷",
+      "series_pos": [24.44, 23.09, 22.59],
+      "status": "MONOTONIC_BUT_NOT_IN_MACHINE_TWO_WINDOW_LIST",
+      "verdict": "The machine rule is undocumented; record as single-window notable and do not SCALE."
+    },
+    "catalog_pre_trend_confounder": {
+      "query": "china catalog printing",
+      "series_pos": [15.79, 14.96, 14.15, 13.78, 13.19],
+      "note": "Improving for four consecutive exports BEFORE and around the 11-09 H1 change. Any post-change improvement cannot be attributed to the H1 change alone."
+    }
+  },
+  "recovery": {
+    "available": false,
+    "today_file": null,
+    "last_official": {"date": "2026-11-03", "ratio_pct": 123.7, "numerator_imps": 977, "denominator_mean28": 789.8, "caliber": "full-country", "source": ".hermes/logs/gsc-cliff-2026-11-03.json"},
+    "latest_derived": {"date": "2026-11-11", "ratio_pct": 105.3, "formula": "940 / (24997 / 28) = 940 / 892.75", "tag": "DERIVED_NOT_DETECTOR", "weekday_confound": "24h window 11-10T17..11-11T16 (Tue/Wed) vs 11-10 window 11-09T07..11-10T06 (Mon-dominant); weekday mix not controlled"},
+    "prior_derived": [
+      {"date": "2026-11-07", "ratio_pct": 96.98, "formula": "803 / 827.9643", "tag": "DERIVED_NOT_DETECTOR"},
+      {"date": "2026-11-10", "ratio_pct": 130.0, "formula": "1124 / 864.8214", "tag": "DERIVED_NOT_DETECTOR"}
+    ],
+    "incomparable_frozen": {"date": "2026-10-28", "ratio_pct": 130.3, "denominator": 581.7, "caliber": "three-site-sum", "rule": "do not merge into the full-country series"},
+    "series_full_country": [
+      {"date": "2026-10-29", "imps": 793, "clicks": 15, "denominator": 749.2, "ratio_pct": 105.8},
+      {"date": "2026-10-30", "imps": 888, "clicks": 15, "denominator": 754.5, "ratio_pct": 117.7},
+      {"date": "2026-11-03", "imps": 977, "clicks": 23, "denominator": 789.8, "ratio_pct": 123.7, "official": true},
+      {"date": "2026-11-07", "imps": 803, "clicks": 12, "denominator": 827.96, "ratio_pct": 96.98, "derived": true},
+      {"date": "2026-11-10", "imps": 1124, "clicks": 31, "denominator": 864.82, "ratio_pct": 130.0, "derived": true, "weekday_confound": true},
+      {"date": "2026-11-11", "imps": 940, "clicks": 17, "denominator": 892.75, "ratio_pct": 105.3, "derived": true, "weekday_confound": true}
+    ],
+    "streak": {"consecutive_rise": 0, "required": 3, "note": "Official points are not consecutive (missing 2026-10-31..11-02); derived points do not count"},
+    "unknowns": ["penalty status", "ranking recovery", "index coverage"],
+    "guard": "No denominator switch; 105.3%, 130.0% and 96.98% must always carry DERIVED_NOT_DETECTOR. Do not read the sequence as a single recovery curve."
+  },
+  "retry_queue_resolution": [
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-11-02",
+      "status": "ALREADY_DONE",
+      "run_id": "ZP-gsc-feedback-20261102T201308-33844",
+      "evidence": ".hermes/logs/2026-11-02-ZP-gsc-feedback.md first block VERDICT: OK + gsc-daily-anomaly-2026-11-02.json",
+      "action": "none (no rewrite; machine verdict stays FAILED per contract 6.3)"
+    },
+    {
+      "kind": "UNRESOLVED_DAY",
+      "day": "2026-11-05",
+      "status": "SUPERSEDED_NOT_REWRITTEN",
+      "evidence": ".hermes/logs/2026-11-05-ZP-gsc-feedback.md: VERDICT BLOCKED / DELIVERED NONE (lock held 3.0 min by ZP-daily-content; dsh not called)",
+      "action": "no backfill: its data window (data day <= 2026-11-04) is covered by 11-06/11-07/11-10/11-11 runs; backfilling would fabricate a historical reading"
+    },
+    {
+      "kind": "RETRY_OF",
+      "run_id": "ZP-gsc-feedback-20261107T202328-28680",
+      "queue_reason": "git push failed; see wrapper log",
+      "status": "CLOSED_CONTENT_AND_REMOTE",
+      "evidence": ["11-07 commits f8f9c737 and c1f1a7f8 are in the ancestry", "origin/main = d3293241 descends from c1f1a7f8"],
+      "action": "none (no rewrite; machine verdict stays FAILED per contract 6.3)"
+    }
+  ],
+  "handoff_ledger": {
+    "source": ".hermes/logs/gsc-daily-anomaly-2026-11-10.json handoff_ledger.items[] (14 items) + 1 new promotion",
+    "baseline_caliber": "28d, window 2026-10-13..2026-11-09, 11-11 batch",
+    "dispatch_policy": "Zero new dispatches this run. Items are rebased to 11-11 values; status transitions only. Same cause -> recurrence, never a duplicate task_id.",
+    "counts": {"FIX": 7, "MEASURE": 8, "total": 15},
+    "pre_change_warning": "Every item below is measured in a window with 26/28 days BEFORE the 11-08 deployment. No item can be judged today.",
+    "items": [
+      {"id": "FIX-01", "query": "食品包裝印刷", "route": "FIX", "imp": 107, "clk": 0, "pos": 8.63, "status": "OPEN_NO_EXECUTION", "owner_lane": "ZP-weekly-meta", "next_check": "2026-11-13"},
+      {"id": "FIX-02", "query": "small batch sticker printing", "route": "FIX", "imp": 20, "clk": 0, "pos": 7.15, "status": "DIAGNOSED_NO_CHANGE", "owner_lane": "ZP-gsc-feedback", "next_check": "2026-11-28"},
+      {"id": "FIX-03", "query": "small batch stickers", "route": "FIX", "imp": 51, "clk": 0, "pos": 15.88, "status": "DIAGNOSED_NO_CHANGE_DROPPED_PAGE1", "owner_lane": "ZP-gsc-feedback", "next_check": "2026-11-28"},
+      {"id": "FIX-04", "query": "doujinshi printing", "route": "FIX", "imp": 53, "clk": 0, "pos": 10.30, "status": "OPEN_NO_EXECUTION_EDGE_OF_PAGE1", "owner_lane": "ZP-weekly-meta", "next_check": "2026-11-13"},
+      {"id": "FIX-05", "query": "saddle stitch booklet printing", "route": "FIX", "imp": 3, "clk": 0, "pos": 7.00, "status": "SAMPLE_GATE", "owner_lane": "ZP-weekly-meta", "gate": "<20 impressions"},
+      {"id": "FIX-06", "query": "卒アル販売", "route": "FIX", "imp": 16, "clk": 0, "pos": 5.00, "status": "OPEN_NO_EXECUTION", "owner_lane": "ZP-weekly-meta", "next_check": "2026-11-13", "note": "position exactly 5.00 in five consecutive exports"},
+      {"id": "FIX-07", "query": "large envelopes", "route": "FIX", "imp": 1, "clk": 0, "pos": 7.00, "status": "SAMPLE_GATE", "owner_lane": "ZP-weekly-meta", "gate": "1 impression = artifact"},
+      {"id": "MEASURE-01", "query": "コミケ 印刷", "route": "MEASURE", "imp": 134, "clk": 0, "pos": 24.96, "status": "DEPLOYED_PRE_WINDOW_WORSENING", "commit": "74ffa5a9", "next_check": "2026-11-14 / 11-18"},
+      {"id": "MEASURE-02", "query": "宣傳單張", "route": "MEASURE", "imp": 137, "clk": 0, "pos": 36.31, "status": "DEPLOYED_PRE_WINDOW_WORSENING", "commit": "74ffa5a9", "next_check": "2026-11-14 / 11-18"},
+      {"id": "MEASURE-03", "query": "印海報", "route": "MEASURE", "imp": 119, "clk": 0, "pos": 15.65, "status": "DEPLOYED_PRE_WINDOW_WORSENING", "commit": "9acc3d16", "next_check": "2026-11-14 / 11-21"},
+      {"id": "MEASURE-04", "query": "利是封印刷", "route": "MEASURE", "imp": 59, "clk": 1, "pos": 23.61, "status": "NO_OP_ACCEPTED", "next_check": "seasonal window"},
+      {"id": "MEASURE-05", "query": "教材 印刷製本", "route": "MEASURE", "imp": 57, "clk": 0, "pos": 35.51, "status": "DEPLOYED_PRE_WINDOW_WORSENING", "commit": "74ffa5a9", "next_check": "2026-11-14 / 11-18"},
+      {"id": "MEASURE-06", "query": "a2 poster", "route": "MEASURE", "imp": 39, "clk": 1, "pos": 38.92, "status": "DEPLOYED_PRE_WINDOW_WORSENING_ACCELERATING", "commit": "74ffa5a9", "next_check": "2026-11-14 / 11-18"},
+      {"id": "MEASURE-07", "query": "喜帖印刷", "route": "MEASURE", "imp": 26, "clk": 0, "pos": 42.35, "status": "DEPLOYED_PRE_WINDOW_WORSENING_DECELERATING_SMALL_SAMPLE", "commit": "9acc3d16", "next_check": "2026-11-14 / 11-21"},
+      {"id": "MEASURE-08", "query": "海報印刷", "route": "MEASURE", "imp": 224, "clk": 1, "pos": 16.49, "status": "NEW_TWO_WINDOW_WORSENING", "commit": "9acc3d16", "next_check": "2026-11-14 / 11-21"}
+    ]
+  },
+  "experiment_ledger_backfill_pending": {
+    "reason": "No writeback was mandatory this run: no deployment, no online_verify, and no 11-14 retest reading (the 11-11 window has only 2/28 post-change days). The ledger was last written 2026-11-10 by a peer; this lane did not rewrite it. Required measurement notes are recorded here for the next ledger owner.",
+    "entries": [
+      {"id": "EXP-1108-FLYERS-CLUSTER", "measurement_note": "宣傳單張 137imp/0clk/36.31，两窗恶化；28d 26/28 天在变更前；7d 词级 A53 不可用", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1108-POSTER-PRIMARY-URL", "measurement_note": "海報印刷 224imp/1clk/16.49（新进两窗恶化）；印海報 119/0/15.65；category/posters 288/1/42.03 vs blog/poster-printing-guide 1349/16/9.71（32.3 位差，IF-05）", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1108-WEDDING-PRIMARY-URL", "measurement_note": "喜帖印刷 26imp/0/42.35，小样本；恶化减速（+4.71->+1.39）", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1108-JA-DOUJINSHI-UNIT", "measurement_note": "コミケ 134imp/0/24.96，季节窗", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1108-JA-TEXTBOOK-PRICE", "measurement_note": "教材 57imp/0/35.51", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1108-EN-A2-POSTER", "measurement_note": "a2 poster 39imp/1clk/38.92，+9.17 加速恶化", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1109-CATALOG-EN-H1", "measurement_note": "china catalog 102imp/0/13.19；五档单调改善 15.79/14.96/14.15/13.78/13.19 = confounder", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-1109-CATALOG-DESC", "measurement_note": "无独立词级基线；7d 词块 A53 复发 2 不可用", "verdict_unchanged": "DEPLOYED"},
+      {"id": "EXP-STICKER-THIRD-WINDOW", "measurement_note": "貼紙印刷 142imp/0/34.58（第 5 档：40.88/38.06/37.65/35.35/34.58）；数据日 11-09 已达 gate，但仍按 14 天/12-04 决策窗 HOLD，不动 title", "verdict_unchanged": "HOLD"},
+      {"id": "EXP-BOOKS-DUAL-PAGE", "measurement_note": "書刊 128imp/0/33.59；印書 59/0/31.25；category/books 677/2/50.11，双深位", "verdict_unchanged": "MEASURE"},
+      {"id": "EXP-REDPACKETS-SEASON", "measurement_note": "利是封 59imp/1clk/23.61，季节窗未到", "verdict_unchanged": "NO_OP"}
+    ]
+  },
+  "anomalies": {
+    "resolved_today": [
+      {"id": "A1", "name": "DATA_STALE", "from": "RESOLVED_TODAY_THIN", "to": "RESOLVED_TODAY_THIN", "evidence": "11-11 batch; 7d/28d data day 11-09; age 44.2h < 72h (margin 27.8h)"},
+      {"id": "A2", "name": "FROZEN_24H", "from": "CLOSED_TODAY", "to": "CLOSED_TODAY", "evidence": "24h window ends 2026-11-11T16; age 4.2h"},
+      {"id": "A36", "name": "XLSX_NOT_REFRESHED", "from": "CLOSED_BY_HUMAN", "to": "CLOSED_BY_HUMAN", "evidence": "11-11 24h/7d/28d landed"}
+    ],
+    "reopened_or_recurred": [
+      {"id": "A43", "name": "RUN_GAP", "status": "PARTIAL_UNCHANGED", "evidence": "gsc 11-08 MISSING; monthly day 11; 11-11 daily OK"},
+      {"id": "A44", "name": "DETECTOR_RUNTIME", "status": "OPEN_DAY8", "evidence": "no gsc-cliff file since 11-03; pwsh blocked"},
+      {"id": "A45", "name": "RECOVERY_DENOMINATOR", "status": "OPEN_RISK_UP", "evidence": "new derived 105.3% circulating alongside 96.98% and 130.0%"},
+      {"id": "A46", "name": "RETEST_WINDOW_DILUTION", "status": "CONFIRMED_BY_1111_BATCH", "evidence": "11-11 7d has 2/7 post-change and 28d has 2/28; 11-14 still 42.9% / 10.7%"},
+      {"id": "A47", "name": "GSC_INDEX_NOT_REBUILT", "status": "RECURRENCE_2", "evidence": "latestFreshData 11-03; 11-07, 11-10 and 11-11 batches all missing"},
+      {"id": "A48", "name": "LANE_PULL_INCAPABLE", "status": "OPEN", "evidence": "no API / detector / xlsx re-parse in the v9.4 sandbox"},
+      {"id": "A49", "name": "CATALOG_PAGE_TRUTH_CONFLICT", "status": "OPEN_NO_NEW_EVIDENCE", "evidence": "no page re-probe this run"},
+      {"id": "A50", "name": "EN_PAGE_ZH_BLOCK", "status": "OPEN_OBSERVATION"},
+      {"id": "A51", "name": "FLYERS_TITLE_OVER_BAND", "status": "OPEN_OVERDUE_DAY7", "evidence": "flyers title equivalence 59 > 58; owner weekly-meta 11-13"},
+      {"id": "A52", "name": "WINDOW_PRECEDES_DEPLOY_MISLABEL", "status": "HISTORICAL_WORDING_OPEN", "evidence": "ff3f3b4b's 11-10 7d label remains uncorrected; today's batch is not affected"},
+      {"id": "A53", "name": "MONEY_7D_BLOCK_STALE", "status": "RECURRENCE_2", "evidence": "gsc-2026-11-11-money-keyword-delta.json seven_day_focus_deltas pairs 11-03 vs 11-07", "recovery_plan": "modify_payload (regenerate; until then 7d word verdicts = NOT_EVALUABLE)"},
+      {"id": "A54", "name": "GEO_PROBE_OWNER_CONFLICT", "status": "OPEN", "evidence": "strategy-task-queue owner=ZP-gsc-feedback; flywheel ledger owner=ZP-weekly-meta; no S1 probe on 11-11", "recovery_plan": "request_human (K3 assigns owner; no AI citation claim)"}
+    ],
+    "new": [
+      {"id": "A55", "name": "WINDOW_FRACTION_LABEL_1111", "level": "P3", "evidence": "a6aabc39 says 7d=42.9% post-change, but the 11-11 7d is 28.6% (11-08) / 14.3% (11-09); 42.9% is the 11-14 export forecast", "recovery_plan": "modify_payload (correct wording at the next readout; do not rewrite the peer commit)"},
+      {"id": "A56", "name": "BUS_HEAD_PLACEHOLDER", "level": "P3", "evidence": "lane-runs.jsonl #114 (daily 11-11 harness) has pushed=true and head='REPLACE'", "recovery_plan": "modify_payload (bus writer fixes the placeholder; this lane does not edit the shared bus)"}
+    ],
+    "carry": [
+      {"id": "NEW-15", "status": "OPEN_3RD_BATCH", "note": "3mo missing for the third consecutive batch (11-07, 11-10, 11-11); carrying 11-03 (data day 10-31, 260.2h)"},
+      {"id": "NEW-14", "status": "OPEN", "note": "no new product-snippet structure data; EN catalog 358 imp / 1 clk, design-file-specs 301 imp / 0 clk / 5.51 are single-page samples"},
+      {"id": "NEW-16", "status": "OPEN", "note": "box printing -0.95 / box custom -0.25 / HK printing -0.30; single window, no dispatch"},
+      {"id": "NEW-10", "status": "THRESHOLD_EDGE", "note": "box printing 33.10 -> 32.15; box custom 34.46 -> 34.21"},
+      {"id": "A39", "status": "CALIBER_PINNED"},
+      {"id": "A38", "status": "OPEN", "note": "ja body Chinese remnants"},
+      {"id": "A40", "status": "WATCH"},
+      {"id": "A28", "status": "MISSING_DAY11", "note": "monthly 11-01 absent; next 12-01"},
+      {"id": "NEW-1", "status": "HOLD", "note": "sticker gate met but 14-day/12-04 decision window still open"},
+      {"id": "NEW-13", "status": "OPEN"},
+      {"id": "NEW-8", "status": "DEPLOYED_PENDING_RETEST"},
+      {"id": "NEW-9", "status": "DEPLOYED_PENDING_RETEST"}
+    ]
+  },
+  "queues": {
+    "opportunity": [
+      {"id": "OPP-01", "status": "OPEN_POOL_UNCHANGED", "note": "page-1 zero-click pool 5 words / 147 imp / 0 clk (11-10: 149); shrinkage is only 2 impressions, not clicks"},
+      {"id": "OPP-02", "status": "CLOSED_NO_NEW_ENTRANT", "note": "28d page1_transitions=[]; small batch stickers still 15.88; large envelopes 1 imp artifact"},
+      {"id": "OPP-03", "status": "TWO_WORDS_ZERO_CLICK", "note": "貼紙印刷 34.58 (five-export improvement) and 學校印刷 17.04, both 0 clk -> MEASURE, not SCALE"},
+      {"id": "OPP-04", "status": "MEASURE_TO_MONTHLY"},
+      {"id": "OPP-05", "status": "MEASURE_TO_MONTHLY", "note": "HK 2.7302% / JP 1.7042% / US 1.2212%; searcher location, not locale performance"},
+      {"id": "OPP-06", "status": "NEW_OBSERVATION", "note": "/zh-hk/blog/design-file-specs/ 301 imp / 0 clk / pos 5.51; not a money word; no SERP/title truth, no dispatch"}
+    ],
+    "exit": [
+      {"id": "EXIT-01", "word": "教材 印刷製本", "status": "DEPLOYED_MEASURE"},
+      {"id": "EXIT-02", "word": "喜帖印刷", "status": "DEPLOYED_MEASURE"},
+      {"id": "EXIT-03", "word": "a2 poster", "status": "DEPLOYED_MEASURE"},
+      {"id": "EXIT-04", "word": "コミケ 印刷", "status": "SEASONAL_HOLD"},
+      {"id": "EXIT-05", "word": "宣傳單張", "status": "DEPLOYED_MEASURE"},
+      {"id": "EXIT-06", "word": "利是封印刷", "status": "NO_OP"},
+      {"id": "EXIT-07", "word": "印海報", "status": "DEPLOYED_MEASURE"},
+      {"id": "EXIT-08", "word": "海報印刷", "status": "NEW_TWO_WINDOW_WORSENING", "note": "merged with 印海報 for observation; no rollback"},
+      {"id": "NOTE", "status": "NO_STATUS_CHANGE", "note": "All eight two-window worsening words have 26/28 pre-change days; do not convert them back to 'failed'"}
+    ],
+    "internal_friction": [
+      {"id": "IF-01", "status": "DEPLOYED_AWAIT_SHARE", "note": "posters: category 288 imp / 1 clk / 42.03 vs blog 1349 / 16 / 9.71; do not roll back if 11-21 flat"},
+      {"id": "IF-02", "status": "MEASURE", "note": "books: category 677 / 2 / 50.11 vs blog 449 / 1 / 36.06; both deep"},
+      {"id": "IF-03", "status": "HOLD_GATE_MET", "note": "stickers: 142 imp / 0 clk / 34.58; data day 11-09 meets gate, but 14-day/12-04 decision window keeps HOLD"},
+      {"id": "IF-04", "status": "MEASURE", "note": "food packaging: PDP 336 / 2 / 29.64; blog side not in the 11-11 top20 -> NO_CURRENT_BASELINE; no join, no dispatch"},
+      {"id": "IF-05", "status": "NEW_K3_REVIEW_CANDIDATE", "note": "poster primary URL: category is 32.3 positions behind the blog; revisit the URL choice at 11-21 if share does not converge; no rollback recommendation"}
+    ]
+  },
+  "need_human": [
+    {
+      "id": "D1",
+      "priority": "P0",
+      "problem": "Data plane only partially restored: 11-11 3mo missing (3rd consecutive batch); API still end1105 (164.2h, proxy down); detector empty day 8; index not rebuilt after 11-07/11-10/11-11",
+      "action": "K3 exports 11-11 3mo and restarts proxy 7892; host runs the four commands",
+      "paste_command": "cd F:\\zprintpro-nextjs; python scripts\\fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-11; python scripts\\gsc-cliff-detector.py; node scripts\\rebuild-gsc-index.mjs --write",
+      "deadline_note": "7d/28d cross 72h at 2026-11-13 00:00"
+    },
+    {
+      "id": "D2",
+      "priority": "P1",
+      "problem": "11-14 retest window is structurally diluted: 7d 42.9% and 28d 10.7% post-change; the 11-11 batch has only 2/28 post-change days",
+      "action": "Approve 11-14 = direction/truth only (28d BACKGROUND_ONLY), delete the runbook numeric gate at 11-14, move it to 11-18 (7d) / 12-04 (28d)",
+      "options": ["A: adopt window arithmetic (recommended)", "B: keep the 28d numeric gate (dilution risk)", "C: wait until 12-10 (too late)"]
+    },
+    {
+      "id": "D3",
+      "priority": "P2",
+      "problem": "GEO AI probe owner conflict (A54): strategy-task-queue owner=ZP-gsc-feedback next_check 2026-11-03; flywheel ledger owner=ZP-weekly-meta; neither ran",
+      "action": "K3 assigns one owner (recommend ZP-weekly-meta); no AI citation claim until fixed kit probes are actually run",
+      "options": ["A: weekly-meta owner (recommended)", "B: gsc-feedback weekly add-on", "C: defer to December"]
+    },
+    {
+      "id": "D4",
+      "priority": "P1",
+      "problem": "Over-band title family overdue day 7: flyers 59 plus stickers en 100 / ja 83",
+      "action": "Authorize one single-variable batch at 11-13 weekly-meta (en stickers 100->55, ja stickers 83->52, zh-hk flyers 59-><=57), title-v5 #27 PASS, record as 11-14 confounder",
+      "options": ["A: 11-13 single batch (recommended)", "B: wait until 11-22", "C: hand to daily-content (owner drift)"]
+    }
+  ],
+  "next_check": [
+    {"date": "2026-11-12T20:13", "check": "new export required; 7d/28d cross 72h at 11-13 00:00", "pass": "11-12 three windows land; otherwise A1 reopens"},
+    {"date": "2026-11-13T20:52", "check": "weekly-meta first run after script fix", "pass": "preflight passes; single-variable batch with title-v5 PASS"},
+    {"date": "2026-11-14", "check": "first retest (11 experiments / 15 handoffs)", "pass": "direction + truth consistency only; 28d BACKGROUND_ONLY; 7d only 42.9%"},
+    {"date": "2026-11-18", "check": "first 100% post-change 7d window", "pass": "7d direction + delta position; same direction as 11-14; a2 poster stops falling"},
+    {"date": "2026-11-21", "check": "second window; poster/wedding share convergence", "pass": "7d decision-grade; 28d background; IF-05 review trigger"},
+    {"date": "2026-11-28", "check": "small batch retest (US SERP + same-caliber 28d)", "pass": "SERP recorded or SERP_UNAVAILABLE"},
+    {"date": "2026-12-01", "check": "monthly natural trigger (day-11 gap)", "pass": "run record + monthly report"},
+    {"date": "2026-12-04", "check": "28d reaches 82.1% post-change", "pass": "business read allowed; six-piece set required for SCALE"},
+    {"date": "2026-12-10", "check": "clean 28d (100% post-change)", "pass": "full-window verdict"}
+  ],
+  "provenance": {
+    "sources": [
+      "run-context-ZP-gsc-feedback.json 2026-11-11 20:13:03",
+      "lane-status.json 2026-11-09 06:43 (file bus_records=108 at generation; lane-runs.jsonl now #114; STALE_STATUS)",
+      "gsc-2026-11-11-four-window-analysis.json / gsc-2026-11-11-money-keyword-delta.json",
+      "gsc-2026-11-10-four-window-analysis.json / gsc-2026-11-10-money-keyword-delta.json / gsc-daily-anomaly-2026-11-10.json",
+      "gsc-cliff-2026-11-03.json",
+      "GSC数据 11-11 xlsx inventory; end1105 CSV (data day 2026-11-04)",
+      "flywheel-learning-ledger.json 2026-11-10 08:35 (read-only)",
+      "2026-11-10-scheduler-truth-refresh.md (01:29)",
+      "docs/2026-11-09-retest-1114-runbook.md (read-only)",
+      ".hermes/logs/2026-11-11-ZP-daily-content.md (read-only)",
+      ".git/logs/HEAD L672-677; refs heads/main = a6aabc39; refs remotes/origin/main = d3293241"
+    ],
+    "calibration": "GREEN for batch windows, ages, two-method reconciliation, money-word row sums, git chain. AMBER for 24h weekday confound, country aggregates (independent, not summable), 3mo carried. RED for detector.",
+    "retraction": "none",
+    "guard": "No write to src/, docs/, GSC数据/, flywheel-learning-ledger.json, strategy-task-queue.json, lane-status.json, lane-runs.jsonl, or any sibling lane report."
+  },
+  "honesty_bounds": [
+    "No deployment-effectiveness conclusion: the 11-11 28d window has 26/28 days before 2026-11-08 (only 2 post-change days); the 7d window has 2/7.",
+    "Recovery is available:false; 123.7% is the 11-03 official value; 105.3% / 130.0% / 96.98% are derived and weekday-confounded.",
+    "The 7d word-level block in the 11-11 money delta is stale (11-03 vs 11-07, A53 recurrence 2), so 7d word verdicts are NOT_EVALUABLE.",
+    "Country tables are independent and cover only HK/JP/US; they sum to 20,444, not the sitewide 24,997.",
+    "24h is a single day with a different weekday mix (Tue/Wed vs Mon-dominant); the -45.2% click change is not a trend.",
+    "3mo is carried from 11-03 (data day 2026-10-31, 260.2h).",
+    "The 11-11 analysis commit a6aabc39 labels the 7d fraction as 42.9%; the workbook fact is 28.6% / 14.3%. Recorded as A55; the peer file is not rewritten.",
+    "月曆印刷 is monotonic improving (24.44/23.09/22.59) but absent from the machine two-window list; treated as single-window notable, not SCALE.",
+    "The flywheel ledger was not rewritten this run because there was no deployment, online verify or 11-14 retest reading; pending notes are in experiment_ledger_backfill_pending.",
+    "Bus record and wrapper log for this run are written by the host after lane exit.",
+    "No GA4/008/order data and no AI-citation conclusion in this ledger (K3 0.37; A54)."
+  ]
+}
