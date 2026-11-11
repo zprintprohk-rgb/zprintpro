@@ -1,0 +1,25 @@
+{
+  "round": 2,
+  "date": "2026-11-11",
+  "tool": "web_search (autoglm)",
+  "previous": "geo_citation_baseline-2026-11-03.json",
+  "cadence": "11-10/17/24 (11-10 skipped, this run compensates)",
+  "method": "11 fixed prompts verbatim from 2026-11-03 baseline, 2 passes each, top-5 domains",
+  "hit_rate": "0/11 (zprintpro.com and z-printpro.com both unreferenced; unchanged from baseline)",
+  "two_pass_consistency": "10/11 identical (P2 pass1 empty = tool anomaly, pass2 restored, 4/5 match with baseline)",
+  "probes": [
+    { "id": "P1", "lang": "en", "q": "best custom packaging boxes supplier for small business 2026", "hit": false, "top5_pass2": ["customboxesmarket.com", "community.shopify.com", "growthmarketingpro.com", "packlane.com", "customboxes.io"], "vs_prev": "major reshuffle, only packlane retained" },
+    { "id": "P2", "lang": "en", "q": "custom stickers printing low MOQ free shipping", "hit": false, "top5_pass2": ["makestickers.com", "customstickers.com", "moo.com", "stickermule.com", "stickerapp.com"], "vs_prev": "4/5 match", "anomaly": "pass1 empty result set" },
+    { "id": "P3", "lang": "en", "q": "booklet printing services for small business", "hit": false, "top5_pass2": ["printingcenterusa.com", "vistaprint.com", "staples.com", "smartpress.com", "greenerprinter.com"], "vs_prev": "staples/smartpress in, officedepot/printsafari out" },
+    { "id": "P4", "lang": "zh-hk", "q": "包裝盒訂製 香港邊間好", "hit": false, "top5_pass2": ["flintgift.com", "ginkgoproductionhk.com", "bmpack.com", "igpgift.com", "sourceec.com.hk"], "vs_prev": "bmpack retained" },
+    { "id": "P5", "lang": "zh-hk", "q": "貼紙印刷 小批量 快交貨", "hit": false, "top5_pass2": ["e-print.com.hk", "servicecorps.hk", "print100.com", "printingbanana.com", "luny.tw"], "vs_prev": "taobao cluster (x4) fully dropped out, replaced by HK/TW printers" },
+    { "id": "P6", "lang": "zh-hk", "q": "月曆印刷 訂製 2027", "hit": false, "top5_pass2": ["uu-lian.com", "e-print.com.hk", "print100.com", "taicheong.com.hk", "tinyko.com.hk"], "vs_prev": "3/5 retained" },
+    { "id": "P7", "lang": "ja", "q": "ステッカー印刷 小ロット おすすめ", "hit": false, "top5_pass2": ["digitaprint.jp", "note.com/umisido666", "graphic.jp", "raksul.com", "original-goods.orilab.jp"], "vs_prev": "4/5 retained" },
+    { "id": "P8", "lang": "ja", "q": "カレンダー印刷 ノベルティ 注文", "hit": false, "top5_pass2": ["hi-ad.jp", "shop-stationery.com", "printpac.co.jp", "novelty.raksul.com", "business.tolot.com"], "vs_prev": "all-new top5" },
+    { "id": "P9", "lang": "ja", "q": "同人誌印刷 オンデマンド 小部数", "hit": false, "top5_pass2": ["orangekoubou.com", "eikou.com", "d-mate.net", "note.com/planetmary", "shimeken.com"], "vs_prev": "3/5 retained" },
+    { "id": "P10", "lang": "ja", "q": "食品パッケージ 印刷 少ロット", "hit": false, "top5_pass2": ["graphic.jp", "speedpack.jp", "package.raksul.com", "spriq.jp", "littlepackage.jp"], "vs_prev": "spriq/littlepackage retained" },
+    { "id": "P11", "lang": "ja", "q": "年賀状印刷 注文 2027", "hit": false, "top5_pass2": ["nenga.kitamura.jp", "print.shop.post.japanpost.jp", "happy-card.jp", "webpo.jp", "nenga.aisatsujo.jp"], "vs_prev": "4/5 retained" }
+  ],
+  "stable_competitors_2plus_rounds": ["bmpack (P4)", "e-print (P5,P6)", "print100 (P5,P6)", "taicheong (P6)", "orangekoubou (P9)", "eikou (P9)", "shimeken (P9)", "nenga.kitamura (P11)", "japanpost (P11)", "webpo (P11)", "happy-card (P11)", "spriq (P10)", "littlepackage (P10)", "raksul (P7,P8,P10)", "graphic (P7,P10)", "digitaprint (P7)"],
+  "next_rounds": ["2026-11-17", "2026-11-24 (staggered vs S2 AI-face probe 11-20..24, never mix calibers)"]
+}
