@@ -1867,3 +1867,9 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 **同族規則**: `GATE_COVERAGE_BLIND_SPOT`（同批 E0）· 避坑 12 註釋（Git for Windows sh 外部工具不保證）
 
 **配套**: scripts/canonical/pre-commit (= .githooks/pre-commit, #26 sha256 同步) · 門童 #24
+
+## A53 实例（2026-11-11 修复 by 手会话）
+- 现象：analyze_gsc_20261111.py 的 seven_day_focus_deltas 仍比较 11-03 vs 11-07（previous_7 锚点未随克隆更新），且键名 current_11_07 实装 11-11 数据（双重失真：数据错 + 标签错）。
+- 根因：克隆生成器（make_analyze_11xx.py）只更新了 FILES/KPI/输出名锚点，漏掉 internal 比较锚点 previous_7 / 键名对。
+- 规则：克隆分析器时，生成器必须对所有 internal 日期锚点（previous_* / current_* / 键名三元组）逐一 rep() + 计数断言；漏一即 A53。修法已在 analyze_gsc_20261111.py（previous_7=11-10、键 previous_11_10/current_11_11）。
+- 由 gsc lane 20:32 报告正式挂出（A53 复发），手会话同轮修复。

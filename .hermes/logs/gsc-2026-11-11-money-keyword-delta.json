@@ -1983,549 +1983,544 @@
   "seven_day_focus_deltas": [
     {
       "query": "食品包裝印刷",
-      "previous_11_03": {
-        "impressions": 24,
+      "previous_11_10": {
+        "impressions": 21,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 9.17
+        "position": 10.38
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 24,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 8.71
       },
-      "delta_position": -0.46,
-      "direction": "STABLE",
-      "page1_transition": "UNCHANGED"
+      "delta_position": -1.67,
+      "direction": "BETTER",
+      "page1_transition": "ENTERED_PAGE_1"
     },
     {
       "query": "即日印刷",
-      "previous_11_03": {
-        "impressions": 18,
-        "clicks": 0,
-        "ctr_pct": 0.0,
-        "position": 8.94
+      "previous_11_10": {
+        "impressions": 13,
+        "clicks": 1,
+        "ctr_pct": 7.6923,
+        "position": 8.85
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 15,
         "clicks": 1,
         "ctr_pct": 6.6667,
         "position": 8.53
       },
-      "delta_position": -0.41,
+      "delta_position": -0.32,
       "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "月曆印刷",
-      "previous_11_03": {
-        "impressions": 37,
+      "previous_11_10": {
+        "impressions": 42,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 23.27
+        "position": 16.98
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 33,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 16.91
       },
-      "delta_position": -6.36,
-      "direction": "BETTER",
+      "delta_position": -0.07,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "貼紙印刷",
-      "previous_11_03": {
-        "impressions": 35,
+      "previous_11_10": {
+        "impressions": 43,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 33.31
+        "position": 26.74
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 39,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 25.67
       },
-      "delta_position": -7.64,
+      "delta_position": -1.07,
       "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "印海報",
-      "previous_11_03": {
-        "impressions": 31,
+      "previous_11_10": {
+        "impressions": 24,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 13.0
+        "position": 23.29
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 18,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 18.61
       },
-      "delta_position": 5.61,
-      "direction": "WORSE",
+      "delta_position": -4.68,
+      "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "海報印刷",
-      "previous_11_03": {
-        "impressions": 51,
-        "clicks": 1,
-        "ctr_pct": 1.9608,
-        "position": 15.92
+      "previous_11_10": {
+        "impressions": 38,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 20.13
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 31,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 19.65
       },
-      "delta_position": 3.73,
-      "direction": "WORSE",
+      "delta_position": -0.48,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "宣傳單張",
-      "previous_11_03": {
-        "impressions": 43,
+      "previous_11_10": {
+        "impressions": 31,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 36.72
+        "position": 39.13
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 32,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 41.0
       },
-      "delta_position": 4.28,
+      "delta_position": 1.87,
       "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "書刊印刷",
-      "previous_11_03": {
-        "impressions": 34,
+      "previous_11_10": {
+        "impressions": 35,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 32.03
+        "position": 37.91
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 30,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 37.53
       },
-      "delta_position": 5.5,
-      "direction": "WORSE",
+      "delta_position": -0.38,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "喜帖印刷",
-      "previous_11_03": {
-        "impressions": 8,
+      "previous_11_10": {
+        "impressions": 15,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 34.12
+        "position": 44.6
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 14,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 49.71
       },
-      "delta_position": 15.59,
+      "delta_position": 5.11,
       "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "利是封印刷",
-      "previous_11_03": {
-        "impressions": 15,
+      "previous_11_10": {
+        "impressions": 17,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 24.6
+        "position": 21.29
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 15,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 21.47
       },
-      "delta_position": -3.13,
-      "direction": "BETTER",
+      "delta_position": 0.18,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "包裝盒印刷",
-      "previous_11_03": {
-        "impressions": 9,
+      "previous_11_10": {
+        "impressions": 13,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 38.78
+        "position": 28.54
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 11,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 27.55
       },
-      "delta_position": -11.23,
-      "direction": "BETTER",
+      "delta_position": -0.99,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "small batch sticker printing",
-      "previous_11_03": {
-        "impressions": 3,
-        "clicks": 0,
-        "ctr_pct": 0.0,
-        "position": 18.0
-      },
-      "current_11_07": {
+      "previous_11_10": null,
+      "current_11_11": {
         "impressions": 1,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 11.0
       },
-      "delta_position": -7.0,
-      "direction": "BETTER",
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "small batch stickers",
-      "previous_11_03": {
-        "impressions": 2,
+      "previous_11_10": {
+        "impressions": 38,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 5.5
+        "position": 19.29
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 40,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 18.65
       },
-      "delta_position": 13.15,
-      "direction": "WORSE",
-      "page1_transition": "DROPPED_OUT_PAGE_1"
+      "delta_position": -0.64,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
     },
     {
       "query": "saddle stitch booklet printing",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "china catalog printing",
-      "previous_11_03": {
-        "impressions": 17,
+      "previous_11_10": {
+        "impressions": 47,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 14.47
+        "position": 12.62
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 35,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 13.03
       },
-      "delta_position": -1.44,
-      "direction": "BETTER",
+      "delta_position": 0.41,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "doujinshi printing",
-      "previous_11_03": {
-        "impressions": 16,
+      "previous_11_10": {
+        "impressions": 12,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 10.38
+        "position": 10.0
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 13,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 10.0
       },
-      "delta_position": -0.38,
+      "delta_position": 0.0,
       "direction": "STABLE",
-      "page1_transition": "ENTERED_PAGE_1"
+      "page1_transition": "UNCHANGED"
     },
     {
       "query": "large envelopes",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "卒アル販売",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "教材 印刷製本",
-      "previous_11_03": {
-        "impressions": 17,
+      "previous_11_10": {
+        "impressions": 14,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 48.12
+        "position": 49.14
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 13,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 48.31
       },
-      "delta_position": 0.19,
+      "delta_position": -0.83,
       "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "pvc シール",
-      "previous_11_03": {
-        "impressions": 6,
+      "previous_11_10": {
+        "impressions": 9,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 16.33
+        "position": 13.44
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 6,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 14.5
       },
-      "delta_position": -1.83,
-      "direction": "BETTER",
+      "delta_position": 1.06,
+      "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "a2 poster",
-      "previous_11_03": {
-        "impressions": 17,
-        "clicks": 1,
-        "ctr_pct": 5.8824,
-        "position": 40.76
+      "previous_11_10": {
+        "impressions": 9,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 47.33
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 11,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 43.27
       },
-      "delta_position": 2.51,
-      "direction": "WORSE",
+      "delta_position": -4.06,
+      "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "コミケ 印刷",
-      "previous_11_03": {
-        "impressions": 38,
+      "previous_11_10": {
+        "impressions": 18,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 40.53
+        "position": 17.94
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 14,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 18.36
       },
-      "delta_position": -22.17,
-      "direction": "BETTER",
+      "delta_position": 0.42,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "小冊子印刷",
-      "previous_11_03": {
+      "previous_11_10": {
         "impressions": 1,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 16.0
+        "position": 14.0
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 1,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 18.0
       },
-      "delta_position": 2.0,
+      "delta_position": 4.0,
       "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "宣傳單張印刷",
-      "previous_11_03": {
-        "impressions": 37,
+      "previous_11_10": {
+        "impressions": 29,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 29.97
+        "position": 28.66
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 28,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 26.46
       },
-      "delta_position": -3.51,
+      "delta_position": -2.2,
       "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "教科書印刷",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "紙盒印刷",
-      "previous_11_03": {
-        "impressions": 15,
+      "previous_11_10": {
+        "impressions": 16,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 47.8
+        "position": 32.56
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 16,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 31.5
       },
-      "delta_position": -16.3,
+      "delta_position": -1.06,
       "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "貼紙訂製",
-      "previous_11_03": {
-        "impressions": 7,
+      "previous_11_10": {
+        "impressions": 13,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 18.43
+        "position": 27.62
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 8,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 23.25
       },
-      "delta_position": 4.82,
-      "direction": "WORSE",
+      "delta_position": -4.37,
+      "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "包裝盒訂製",
-      "previous_11_03": {
-        "impressions": 12,
+      "previous_11_10": {
+        "impressions": 17,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 43.17
+        "position": 31.12
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 14,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 28.36
       },
-      "delta_position": -14.81,
+      "delta_position": -2.76,
       "direction": "BETTER",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "學校印刷",
-      "previous_11_03": {
-        "impressions": 16,
+      "previous_11_10": {
+        "impressions": 12,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 15.5
+        "position": 23.08
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 11,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 22.73
       },
-      "delta_position": 7.23,
-      "direction": "WORSE",
+      "delta_position": -0.35,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "印書",
-      "previous_11_03": {
+      "previous_11_10": {
         "impressions": 15,
         "clicks": 0,
         "ctr_pct": 0.0,
-        "position": 32.87
+        "position": 30.47
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 14,
         "clicks": 0,
         "ctr_pct": 0.0,
         "position": 30.43
       },
-      "delta_position": -2.44,
-      "direction": "BETTER",
+      "delta_position": -0.04,
+      "direction": "STABLE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "印刷",
-      "previous_11_03": {
-        "impressions": 51,
-        "clicks": 0,
-        "ctr_pct": 0.0,
-        "position": 18.96
+      "previous_11_10": {
+        "impressions": 32,
+        "clicks": 1,
+        "ctr_pct": 3.125,
+        "position": 20.94
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 39,
         "clicks": 1,
         "ctr_pct": 2.5641,
         "position": 22.54
       },
-      "delta_position": 3.58,
+      "delta_position": 1.6,
       "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "印刷公司",
-      "previous_11_03": {
-        "impressions": 52,
-        "clicks": 0,
-        "ctr_pct": 0.0,
-        "position": 23.56
+      "previous_11_10": {
+        "impressions": 35,
+        "clicks": 2,
+        "ctr_pct": 5.7143,
+        "position": 23.77
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 31,
         "clicks": 1,
         "ctr_pct": 3.2258,
         "position": 28.84
       },
-      "delta_position": 5.28,
+      "delta_position": 5.07,
       "direction": "WORSE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "香港印刷",
-      "previous_11_03": {
-        "impressions": 6,
-        "clicks": 0,
-        "ctr_pct": 0.0,
+      "previous_11_10": {
+        "impressions": 15,
+        "clicks": 2,
+        "ctr_pct": 13.3333,
         "position": 11.33
       },
-      "current_11_07": {
+      "current_11_11": {
         "impressions": 10,
         "clicks": 1,
         "ctr_pct": 10.0,
@@ -2537,40 +2532,40 @@
     },
     {
       "query": "印刷服務",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "印刷廠",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "網上印刷",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "printing company",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
     },
     {
       "query": "printing services",
-      "previous_11_03": null,
-      "current_11_07": null,
+      "previous_11_10": null,
+      "current_11_11": null,
       "delta_position": null,
       "direction": "NO_COMPARABLE_BASELINE",
       "page1_transition": "UNCHANGED"
