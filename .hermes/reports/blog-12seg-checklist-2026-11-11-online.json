@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T10:56:56.829Z",
+ "generated_at": "2026-11-11T12:34:36.065Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2756,7 +2756,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192921",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192867",
    "reason": ""
   },
   {
