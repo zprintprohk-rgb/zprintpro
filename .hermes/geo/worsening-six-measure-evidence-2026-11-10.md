@@ -1,0 +1,93 @@
+# 恶化六词 MEASURE 证据包（§7 飞轮 · 喂 11-14 复测）
+
+**日期**：2026-11-10 · 性质：测量证据，零页面改动
+**数据源**：`GSC数据/money-kw-query-page-end1031.csv`（query×page，28d 止 10-31——当前唯一 query×page 产物）+ 11-10 四窗 JSON + git 取证
+**纪律**：主 URL 与商业真值裁决前不改正文/canonical/301（§7）；本包只固化归属与假设。
+
+## 1. 落地页归属（28d 止 10-31，展示聚合）
+
+| 词簇 | 主落地 | 归属量化 | 判定 |
+|---|---|---|---|
+| **海報簇**（海報印刷 199 + 印海報 104 + a0/a1/60×80 等十余长尾） | **`/zh-hk/blog/poster-printing-guide/`** | 博客合计 ≈ 340+imp；PDP 仅拾取尺寸词（a2 poster printing 6 / a1 海報 5） | **交易意图被博客页承接**——PDP 收复需 K3 海报价格拍板（9/45 vs 16/20）后才能动分工 |
+| **宣傳單張**（135+99） | **`/zh-hk/category/flyers/`**（类目页） | PDP 只得 a4/a5/same-day 碎片（19/6/6） | 类目页即主承接，恶化在页面质量/摘要/内链，无意图错位 |
+| **喜帖** | `blog/wedding-invitation-pricing-guide/`（價格词 30imp）+ `category/wedding-invitations/`（印刷词 11imp） | ⚠️ **`喜帖印刷`(2imp) + `喜帖印刷香港`(1imp) 落在 `/product/wedding-thank-you-cards/`** | **§7 疑似的意图错接实证成立**（规模小但方向确凿） |
+| **教材 印刷製本**（ja） | **`/ja/blog/textbook-printing-guide/`**（48imp）vs `/ja/product/textbooks/`（28imp） | 博客/PDP 分裂 | 与海报同构：製本意图未明确归 PDP；§7 的语言/价格检查仍先行 |
+| **コミケ 印刷** | `/ja/product/doujinshi-printing/`（135imp ✓ 正确 PDP）+ blog guide（14） | 展示 173→146 递减 | **落地无错位，纯季节衰减**——HOLD，不派单 |
+
+## 2. 页面变更取证（git，截至 11-10）
+
+| 触点 | 最近变更 | 时点 |
+|---|---|---|
+| 海报/喜帖承接分工 | `9acc3d16` 明确海报与喜帖主承接页面分工（sku-seo + category-seo-content，4 文件） | **11-8 01:46** |
+| 风险词价格/起订量口径 | `74ffa5a9`（blog ja/zh + products + sku-seo，7 文件） | **11-8 00:20** |
+| 教材 ja 博客 | `74ffa5a9`（价格与起订量口径修正） | 11-8 |
+| a2-posters EN | H1 修复 `a33abd3b` | 11-9 |
+
+⇒ 六词中有四个（海报/喜帖/教材/a2）在 **11-8~11-9 已有承接或 H1 级变更在位**——11-14 复测是这些变更的第一个可读窗口（7d 窗 11-08..11-13）。
+
+## 3. 11-14 复测判读表（预填判据）
+
+| 词 | 若 11-14 28d 读数… | 则 |
+|---|---|---|
+| 海報印刷/印海報 | 位置止跌或回落 | 11-8 分工生效 → 继续复测；仍升 → PDP 收复方案升级 K3（价格拍板联动） |
+| 喜帖印刷 | 仍在 40+ | thank-you-cards 内链/承接修正提案（需 K3 批，非 canonical） |
+| 宣傳單張 | 类目页摘要重写后（11-13 weekly-meta 批 1 若含）再读 | 先看 11-13 批是否覆盖 |
+| 教材 印刷製本 | ja PDP/博客比份变化 | 语言质量结论 + 价格拍板依赖 |
+| a2 poster | H1 修复窗口 | 改善 → 记录；仍恶化 → PDP 深度诊断 |
+| コミケ 印刷 | 随季节自然回落 | HOLD 不变 |
+
+## 4. K3 联动（拍板优先级更新）
+
+- **海报价格裁决（category 9/45 vs PDP 16/20）现在同时卡住两条线**：① 海报簇 PDP 收复（最大恶化簇的根治）② D3 A50 en/ja 中文块止损的贺卡单列。建议在本周拍板窗口优先处理。
+
+---
+
+# v2 追加（2026-11-11 · 归属补漏 + 收录探针 + 价格面实锤）
+
+## 5. 書刊印刷归属补漏（blog-deepfix books-zh-hk 项）
+
+`書刊印刷` = **blog/book-buying-guide (94imp) + category/books (91imp) 双头分裂**；`騎馬釘書刊`(45) 落 saddle-stitch-booklets PDP、`膠裝書刊`(32) 落 category。与海报同构（非 PDP 主承接）。books-zh-hk 复写的排名 URL 是 blog+category 双头，11-14 判读时需分别看两 URL。
+
+## 6. 收录探针（site: 实测 2026-11-11，autoglm 口径）
+
+六簇主落地**全部已收录** ✅（恶化非索引问题）。SERP 摘要层发现四条：
+
+1. **zh 貼紙双指南并排**（sticker-buying-guide 選購指南 vs sticker-guide 完全指南）——b1c 已差异化改写，同簇双 URL 共存监控中。
+2. **en 海報五指南同簇**（printing-guide / buying-guide / retail-shop / size-chart / price-guide）——b1c 差异化后各占一角，但同簇 5 URL 自竞风险继续监控。
+3. **价格面实锤 ×2（归 11-13 价格面收口批或 K3 拍板证据）**：
+   - `foil-wedding-invitations` zh-hk 页 snippet 报 **NT$25-95/套** —— K3 裁决单「NT$ 婚慶 2 SKU」项的活证据，仍在线；
+   - **a2 poster 三价锚并存**：blog $0.42@1000 / category US$0.85 / PDP $2.30@10MOQ，缺数量语境，与 lane 已立的 flyers 四面不一致同族。
+4. **事实陈旧**：`wedding-invitation-pricing-guide` snippet「2026 龍年」（龙年=2024/25；2026=馬年）——带钱页摘要事实过期，候选 11-13/14 内容批（非价格字段）。
+
+## 7. 宣傳單張类目页内链健康（假说排除）
+
+`category/flyers` 内链 = **81 条 / 12 文件**（zh blog 21 + en 17 + ja 17 + category-seo-content 7 + about/footer/buying-guides/product-seo 等）——hub-spoke 内链充足。宣傳單張恶化（29.37→35.42）**非内链缺失**；剩余假设 = 摘要/SERP features/竞品挤压，11-13 weekly-meta 批（zh flyers 59+ 改稿在列）后读数。
+
+## 8. 教材 ja 指南复核（74ffa5a9 后）
+
+价格口径已修且生效：`100冊から 基本仕様 ¥1,288〜 (products.ts 実価格)`，来源标注 products.ts，语言抽查无机械翻译痕迹。剩余恶化驱动 = 博客/PDP 比份（48/28）+ 竞争；无新增页面动作，11-14 读数。
+
+---
+
+# v3 追加（2026-11-11 晚 · 婚庆簇修复批已 commit d3293241，本地→已推→CF in_progress）
+
+## 9. 本批已修（commit d3293241，3 文件 19+/19-，守门全绿 HARD=0）
+
+| 类 | 数 | 明细 |
+|---|---|---|
+| 生肖陈旧（2026=馬年） | 14 | 『2026 龍年』→『2026 年』（blog-posts 6 / zh-hk.json 7 / category-seo-content 1）；龍鳳喜帖等正当词 9/9 保护完好 |
+| 编造统计清除（§0.23） | 5 | 50,000 對 / 32,000-36,000 對 / 30-40% / 35,000 對 / HK$15 億（婚慶業協會·婚姻登記處 attributed 无源）→ 中性重写 |
+| 断裂残句 | 3 | 利是封『市場規模約 HK。』＋喜帖摘要『結婚 ** 對</strong>，喜帖市場 **HK</strong>。』（AEO 首段黄金区）＋category『突破 HK$15 億』句 —— 整句重写（§0.23.1 半截残留教训） |
+| live 标题品牌 glitch | 6 | 『\| 智 \| 智印港』→『\| 智印港』（利是封/體育禮盒/服裝紙袋/即日急件/包裝盒價格/A1A2海報），live curl 实证后修复；当量 53-55 全过带 |
+
+## 10. 登记 → 11-13 批（新发现，未修）
+
+1. **纸袋指南同类断裂残句 ≥2**：『智印港 2026 上半年週均產出 ** 個客製 kraft 袋**』＋『**2024 年 US** → 2026 年 US → 2034 年 US，』（早年数字清洗遗留，同族缺陷；纸袋篇 + 市场统计段）。
+2. **favor-bag title 存量超带**：L652『香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 \| 智印港』= 60 当量（>57，本就存在非本批触碰；守门存量不拦）→ 11-13 title 批收窄（建议去『婚慶』2 字 → 56）。
+3. **a2 poster 类目 $0.85 来源未定位**：pricing.ts 锚 = en 2.3-4.6，category 页 US$0.85/pc 非锚表值（疑似 tier 折算 or 另一 SKU）→ 11-13 价格面收口批先定位再改。
+4. **a4-flyers 四面实证**（double-method 确认）：title/basePrice 0.35 vs description 0.3 vs **schema 0.31（HKD tier@10）** vs 类目锚 0.18（A5）；en 面 schema = **$0.04**（0.31 HKD×汇率管道值）vs 标题 $0.55 —— schema 面价格锚失真最重（Merchant 面可见），修法需 K3 定「哪个面是商业真值」后统一消费者。
+5. **婚庆SERP 摘要陈旧**：『2026 龍年』在 Google 摘要中仍显示 → 本批 push 后等重爬，11-14 复探 site: 确认摘要刷新。
+
+## 11. 撞车自报（§0.25.2）
+
+2026-11-11 ~18:51 push d3293241，距 lane 上次 push dafd9229（18:27:40）**24 分钟 < 30min 硬下限**；push-gate 判 BLOCKED（差 6 分钟）但同一命令链无条件执行了 push。原因 = 命令拼接失误（gate 与 push 未分段）。实际冲突风险≈0（lane 已收尾、无并发写），CF build quota +1。已入 error-patterns：**gate BLOCKED 输出后必须中止命令链，禁止同链接续 push**。
