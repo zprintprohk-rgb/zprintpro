@@ -654,7 +654,7 @@ const lpWeddingFavorBag: BlogPostMeta = {
     ja: 'ウェディング ギフトバッグ・招待状印刷ガイド2026 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,一個有質感的婚禮禮袋、喜帖、伴手禮袋決定賓客的第一印象。智印港為香港婚慶市場提供 100-3,000 個小批量定制,絲帶手挽、燙金、個性化新人姓名,5-10 個工作天交付。',
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 年結婚旺季,一個有質感的婚禮禮袋、喜帖、伴手禮袋決定賓客的第一印象。智印港為香港婚慶市場提供 100-3,000 個小批量定制,絲帶手挽、燙金、個性化新人姓名,5-10 個工作天交付。',
     en: 'Engaged couples, wedding planners, and venues — premium wedding favor bags and invitations set the first impression for guests. ZprintPro supplies 100-3,000 small-batch custom orders with satin ribbon handles, foil stamping, and personalized names, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、上質感のあるギフトバッグと招待状がゲストの第一印象を決める。サテンリボン持ち手・箔押し・新郎新婦名パーソナライズ、100-3,000個小ロット、5-10営業日納品。',
   },
@@ -671,7 +671,7 @@ const lpWeddingInvitationPricing: BlogPostMeta = {
     ja: '結婚式招待状 価格ガイド 2026：50〜500個の中華式 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,中式喜帖、西式邀請卡、教堂婚禮、集團婚禮 4 大場景,50-500 個 4 檔實價對比,白卡紙 / 珠光紙 / 萊妮紋紙 / 棉紙 4 種材質 + 燙金 / 燙銀 / UV / 擊凸 6 種工藝,智印港小批量定制 5-10 個工作天交付。',
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 年結婚旺季,中式喜帖、西式邀請卡、教堂婚禮、集團婚禮 4 大場景,50-500 個 4 檔實價對比,白卡紙 / 珠光紙 / 萊妮紋紙 / 棉紙 4 種材質 + 燙金 / 燙銀 / UV / 擊凸 6 種工藝,智印港小批量定制 5-10 個工作天交付。',
     en: 'Couples, wedding planners, and venues — 2026 dragon-year wedding season pricing for Chinese-style invites, Western-style cards, church weddings, and group weddings. 4 quantity tiers (50/100/300/500), 4 materials, 6 finishing options, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、中華式招待状・西洋式カード・教会式・合同式4大シーン、50〜500個4段階リアル価格比較、素材4種・加工6種、5-10営業日納品。',
   },
@@ -714,7 +714,7 @@ const lpWeddingTableCard: BlogPostMeta = {
     ja: '結婚式 テーブルカード・席次表印刷ガイド 2026 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年婚宴枱卡 / 席位圖 / 桌牌 / 席次表 4 大場景,100-500 張 4 檔實價,白卡紙 / 珠光紙 / 棉紙 / 燙金紙 4 種材質對比,中英文 / 數字座位 / 客製化圖案 3 大設計風格,智印港 5-10 個工作天交付。',
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 年婚宴枱卡 / 席位圖 / 桌牌 / 席次表 4 大場景,100-500 張 4 檔實價,白卡紙 / 珠光紙 / 棉紙 / 燙金紙 4 種材質對比,中英文 / 數字座位 / 客製化圖案 3 大設計風格,智印港 5-10 個工作天交付。',
     en: 'Couples, wedding planners, and venues — 2026 dragon year guide for wedding table cards, seating charts, place cards, and escort cards. 4 quantity tiers (100/200/500/1000), 4 materials, 3 design styles, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダル テーブルカード・席次表・場札・席札4大シーン、100〜500枚4段階価格、素材4種・デザイン3スタイル、5-10営業日納品。',
   },
@@ -764,12 +764,12 @@ const lpWeddingRedPacket: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-08',
   title: {
-    'zh-hk': '香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智 | 智印港',
+    'zh-hk': '香港婚禮利是封印刷指南 · 2026 年婚嫁旺季必備 | 智印港',
     en: 'Wedding Red Packet Printing Guide 2026 | ZprintPro',
     ja: 'ウエディング レッド packet 印刷ガイド2026 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,一套精美的婚禮利是封決定賓客對婚禮的第一印象。智印港為香港婚慶市場提供 100-10,000 個小至大批量定制,燙金新人姓名、個性化祝福語、繁體中文工藝,5-10 個工作天交付。',
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 年結婚旺季,一套精美的婚禮利是封決定賓客對婚禮的第一印象。智印港為香港婚慶市場提供 100-10,000 個小至大批量定制,燙金新人姓名、個性化祝福語、繁體中文工藝,5-10 個工作天交付。',
     en: 'Engaged couples, wedding planners, and venues — premium wedding red packets set the first impression for guests. ZprintPro supplies 100-10,000 piece custom orders with foil-stamped couple names, personalized blessings, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダルシーズン、精致な結婚祝儀袋がゲストの第一印象を決める。ZprintProは100-10,000個カスタムオーダー対応、箔押し新郎新婦名・パーソナライズ祝福・繁体字工芸、5-10営業日納品。',
   },
@@ -910,7 +910,7 @@ const lpWeddingEnvelope: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-10',
   title: {
-    'zh-hk': '香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印港',
+    'zh-hk': '香港婚禮邀請信封印刷指南 · 2026 年婚嫁旺季必備 | 智印港',
     en: 'Wedding Invitation Envelope Printing Guide 2026 | ZprintPro',
     ja: 'ウエディング招待状封筒印刷ガイド2026：パール・箔 | ZprintPro',
   },
@@ -1273,7 +1273,7 @@ const lpSportsMerchandiseGiftBox: BlogPostMeta = {
   source: 'daily',
   date: '2026-07-20',
   title: {
-    'zh-hk': '體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智 | 智印港',
+    'zh-hk': '體育賽事紀念禮盒印刷指南 · 球隊周邊收藏版定製 | 智印港',
     en: 'Sports Event Merchandise Gift Box Printing Guide | ZprintPro',
     ja: 'スポーツイベント記念ギフトボックス印刷ガイド | ZprintPro',
   },
@@ -1291,7 +1291,7 @@ const lpApparelShoppingBag: BlogPostMeta = {
   source: 'daily',
   date: '2026-07-21',
   title: {
-    'zh-hk': '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智 | 智印港',
+    'zh-hk': '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港',
     en: 'Apparel Brand Shopping Bag Printing Guide | ZprintPro',
     ja: 'アパレルブランドショッピングバッグ印刷ガイド | ZprintPro',
   },
@@ -1423,7 +1423,7 @@ const lpRushPrintingHKGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-26',
   title: {
-    'zh-hk': '即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智 | 智印港',
+    'zh-hk': '即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港',
     en: 'Same-Day Printing HK Guide: Where Fastest? How Much? What',
     ja: '当日特急印刷 全ガイド：どこが一番早い？料金は？ | ZprintPro',
   },
@@ -1446,7 +1446,7 @@ const lpPackagingBoxPricing2026: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-26',
   title: {
-    'zh-hk': '包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智 | 智印港',
+    'zh-hk': '包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智印港',
     en: 'Packaging Box Printing Price 2026: How Much for | ZprintPro',
     ja: 'パッケージ印刷価格 2026：500/1000/5000 個でそれ | ZprintPro',
   },
@@ -1487,7 +1487,7 @@ const lpPosterSizeGuide: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-05',
   title: {
-    'zh-hk': 'A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智 | 智印港',
+    'zh-hk': 'A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智印港',
     en: 'A1 A2 Poster Size Chart mm/cm/in + 12 Uses 3-5 Days |',
     ja: 'A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | Z | ZprintPro',
   },
