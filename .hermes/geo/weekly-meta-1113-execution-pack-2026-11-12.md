@@ -30,15 +30,17 @@
 
 ## 3. a4 價格面 A/B/C（荐 K3 · 商业真值裁决，执行层不擅改）
 
-实证（double-method，11-11 定案）：title/basePrice 0.35 vs description 0.3 vs **schema 0.31**（HKD tier@10 管道值）vs 类目锚 0.18（A5）；**en 面 schema = $0.04**（0.31 HKD 汇率换算伪值，Merchant 面可见）。
+> **2026-11-12 22:45 精修（追到管道级）**：`src/lib/price-data.generated.ts` L7542 锚表实存且值 = zh 0.31 / en 0.04 / ja 6.3（源 flyers.json eprint×0.95）；同表 L3334 价阶 qty10 = **HKD 140 / USD 18 / JPY 2,800（即 14 / 1.8 / 280 每张）**。故 0.31/0.04 是**批量档单张价（as-low-as）**，不是 MOQ-10 单价；schema 已按 2026-09-14 修复跟随锚（= hero 显示）。真正矛盾 = **同页 hero(0.31) vs 标题(0.35) vs 描述(0.3)** 三面 + **MOQ 10 实付 14/张 与「0.31 起 + 10 MOQ」并读产生 45× 预期落差**（GMC 价格准确性口径风险）。
 
-| 选项 | 内容 | 代价/风险 |
+| 选项 | 内容 | 评价 |
 |---|---|---|
-| **A** | 统一到 tier 真值：schema 与 title 都用 tier@10（0.31） | title 数字变 → 4 面重写 + Merchant 重审 |
-| **B**（荐） | **schema = products.ts basePrice 单源**（zh 0.35 / en 0.55 / ja 70），description 0.3→0.35 对齐；类目锚加数量语境 | 不动 marketing 锚；只改 schema 计算管道 + 一处 desc；en $0.04 伪值顺带根治 |
-| C | 全维持现值，仅加数量语境标注 | $0.04 伪值残留（Merchant 面失真不解决） |
+| **A** | 全站统一「as-low-as + 批量量级标注」：标题/hero/desc/schema 一律 0.31/0.04/6.3，且每处必带批量语境（如「起（5,000 張）」）；MOQ 10 另标 14/張 | 真话最彻底，但要改 4 面 × 3 语 + GMC 重审；改动面最大 |
+| **B**（荐） | **schema 改挂 MOQ-10 价阶真值（14 / 1.8 / 280）+ 标题保留「起」但补批量语境锚（HK$0.31 起（5,000張））** | 解决 GMC 最大风险面（schema=实付价）；营销面改动小；需 1 处 seo.ts 管道改（offers 取价阶 qty=MOQ 行而非锚表 priceDisplay）+ 三语标题微调 |
+| C | 维持现值 | 45× 落差 + $0.04 伪低价残留 → GMC 风险不解决；不荐 |
 
-推荐 **B**：改 `seo.ts` offers.price 管道读 basePrice_{locale}（单一真值源），1 个 src 行为修复即根治四面中两面。
+**推荐 B 的落地坐标（K3 一句话即发）**：`src/app/[locale]/product/[slug]/page.tsx` offerData 分支 1 改为「价阶表 qty=minQuantity 行的 priceHKD/USD/JPY」，删 getUnitPriceAnchor 优先级；标题侧仅 flyers 三语补「起（批量）」语境（过 title-v5）。
+
+> ⚠️ 同一病灶波及全站：任何「锚表 priceDisplay（批量单张）+ MOQ 小数量」组合都可能有同类落差 → 建议 11-13 批顺带跑一次全站 SKU 量级审计（`priceDisplay` vs `tiers[qty=MOQ]` 比值 > 5× 者列清单），归 K3 拍板批量处置。
 
 ## 4. 数据供给时钟（K3 行动项）
 
