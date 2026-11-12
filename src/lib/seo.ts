@@ -408,8 +408,10 @@ const categorySeoData: Record<string, {
       // 2026-09-19 全站起訂量修正: 1張起印 (與 minQuantity 100 不符) → 10張起印 (真實口徑)
       // 2026-09-30 A1/A4/B4 批: zh 去英文前缀主词前置「貼紙印刷」; ja 日文主词前置「シール印刷」; en 补 Label
       'zh-hk': '貼紙印刷 10張起・防水透明異形貼紙・免費設計燙金 | 智印港',
-      en: 'Small Batch Sticker & Label Printing from $0.05 | 10 MOQ + Free Proof + Free US Shipping | ZprintPro',
-      ja: 'シール印刷 10枚〜・オリジナルステッカー 防水/透明/ダイカット・2-4日発送 | ZprintPro',
+      // 2026-11-13 weekly-meta 批: en 104→55 超带瘦身（Label/Free Proof/US Shipping 降层 keywords+desc）
+      en: 'Small Batch Sticker Printing $0.05 · 10 MOQ | ZprintPro',
+      // 2026-11-13 weekly-meta 批: ja 83→56 超带瘦身（ja 带钱词 ステッカー印刷 前置; 透明/ダイカット 留 keywords）
+      ja: 'ステッカー印刷 10枚〜 オリジナル 防水 短納期 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -430,7 +432,8 @@ const categorySeoData: Record<string, {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
       // 2026-09-19 全站起訂量修正: 100張起/100 MOQ/100枚〜 → 10 (真實口徑)
-      'zh-hk': 'A5 宣傳單張印刷 10張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
+      // 2026-11-13 weekly-meta 批: zh 59→56 最小 churn（去 /A3, A3 词留 keywords）
+      'zh-hk': 'A5 宣傳單張印刷 10張起・A4/A5 雙面 | HK$0.18 起 | 智印港',
       en: 'Custom Flyer Printing from $0.06 | 10 MOQ + Free Shipping | ZprintPro',
       ja: 'A5 チラシ印刷 10枚〜・両面カラー・即日対応 | ZprintPro',
     },

@@ -1,5 +1,7 @@
 # 11-13 weekly-meta 批执行包（2026-11-12 预置 · 供 lane 消费 · 全部坐标 + 验证结果）
 
+> **【APPLIED 2026-11-12 22:35 手会话已落地】** 第 1/2 节 src 编辑已全部应用并过守门（encoding ✓ / title-v5 #27 HARD=0 ✓ / tsc 54=54 ✓），commit 随本包一并提交；lane 明日**只需 push + live curl 验证**，勿重复应用（幂等）。验证点：三语类目页 live title 当量 ≤57；paper-bag 页 US$4.83 billion 可检索。
+
 **预置人**：首席 SEO/AEO/GEO 数据战略分析师（手会话）· **批窗口**：2026-11-13 20:52 ZP-weekly-meta
 **守门预告**：title 改动过 title-v5 #27（本包草稿已用 `scripts/guards/title-equiv.js` 真模块预验，全 PASS 50-57 带）；改后三语 live curl 复验。
 
