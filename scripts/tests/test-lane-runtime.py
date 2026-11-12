@@ -416,8 +416,8 @@ class RuntimeTests(unittest.TestCase):
                  "latest_zero_click": False, "page1_transition": "UNCHANGED", "two_window_direction": "NOT_CONSECUTIVE",
                  "observations_28d": [{"export_date": DAY, "impressions": 78, "clicks": 1, "position": 20.19}]},
             ],
-            "seven_day_focus_deltas": [{"query": "海報印刷", "previous_11_03": 15.92,
-                                         "current_11_07": 21.29, "delta_position": 5.37, "direction": "WORSE"}],
+            "seven_day_focus_deltas": [{"query": "海報印刷", "previous_11_10": 15.92,
+                                         "current_11_11": 21.29, "delta_position": 5.37, "direction": "WORSE"}],
         }
         self.write(f".hermes/logs/gsc-daily-anomaly-{DAY}.json", json.dumps(anomaly, ensure_ascii=False))
         self.write(f".hermes/logs/gsc-{DAY}-money-keyword-delta.json", json.dumps(delta, ensure_ascii=False))
@@ -445,6 +445,11 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(rows["宣傳單張"]["retry_at"], "2026-11-04")
         self.assertIn("no automatic article", rows["宣傳單張"]["approval_gate"])
         self.assertEqual(report["evidence_handoffs"]["geo"]["s2_next_check"], "2026-11-20")
+        self.assertEqual(focus["short_window_worsening_not_for_dispatch"], [{
+            "query": "海報印刷", "previous": 15.92, "current": 21.29,
+            "previous_field": "previous_11_10", "current_field": "current_11_11",
+            "delta_position": 5.37,
+        }])
 
     def test_periodic_stale_lane_status_cannot_dispatch_lane_repair(self):
         status = {"generated_local": "2026-11-04 06:43", "lanes": [{
@@ -495,6 +500,143 @@ class RuntimeTests(unittest.TestCase):
             outputs.append(tuple((self.repo / f".hermes/logs/periodic-review-weekly-{DAY}.{ext}").read_bytes()
                                  for ext in ("json", "md")))
         self.assertEqual(outputs[0], outputs[1])
+
+    def test_finalize_preserves_partial_and_no_op_verdicts(self):
+        for verdict in ("PARTIAL", "NO_OP"):
+            with self.subTest(verdict=verdict):
+                self.write(f".hermes/logs/{DAY}-{LANE}.md",
+                           f"VERDICT: {verdict}\nCONSUMED: fixture\n"
+                           "DELIVERED: analysis only\nNEXT: external input required\n")
+                self.commit_all(f"committed {verdict} report")
+                before = self.commit_count()
+                result = self.run_finalize(0)
+                self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+                self.assertEqual(self.commit_count(), before)
+                row = self.bus()[-1]
+                self.assertEqual(row["verdict"], verdict)
+                self.assertEqual(row["state"], "completed")
+                self.assertTrue(row["key_consumed"])
+                self.assertEqual(row["wrapper_exit"], 0)
+
+    def test_lane_status_distinguishes_partial_attention_from_no_op(self):
+        today = dt.date.today()
+        days = [(today - dt.timedelta(days=1)).isoformat(), today.isoformat()]
+        self.write("scripts/lane-status.mjs", (ROOT / "scripts" / "lane-status.mjs").read_text(encoding="utf-8"))
+        self.write(".hermes/cron-lanes.json", json.dumps({"lanes": [{
+            "task": LANE, "schedule": {"kind": "DAILY"}, "start": "00:00",
+            "reportGlob": "*-daily-content.md",
+        }]}))
+        rows = []
+        for day, verdict in zip(days, ("NO_OP", "PARTIAL")):
+            report = f"{day}-daily-content.md"
+            self.write(f".hermes/logs/{report}",
+                       f"VERDICT: {verdict}\nCONSUMED: fixture\nDELIVERED: analysis\nNEXT: follow up only\n")
+            rows.append({"run_id": f"run-{verdict}", "lane": LANE, "fired_at": f"{day} 00:00:00",
+                         "idempotency_key": f"key-{verdict}", "key_consumed": True,
+                         "verdict": verdict, "state": "completed", "dsh_exit": 0,
+                         "report_auto_generated": False})
+        self.write(".hermes/logs/lane-runs.jsonl", "".join(json.dumps(row) + "\n" for row in rows))
+        result = subprocess.run([shutil.which("node") or "node", "scripts/lane-status.mjs",
+                                 "--days=2", "--quiet", "--no-sched"], cwd=self.repo,
+                                capture_output=True, text=True)
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        output = json.loads((self.repo / ".hermes/logs/lane-status.json").read_text(encoding="utf-8"))
+        statuses = {row["day"]: row for row in output["lanes"][0]["days"]}
+        self.assertEqual(statuses[days[1]]["status"], "PARTIAL")
+        self.assertEqual(statuses[days[1]]["state"], "completed")
+        self.assertEqual(statuses[days[1]]["recovery_plan"]["action"], "modify_payload")
+        self.assertIn("NEXT", statuses[days[1]]["recovery_plan"]["reason"])
+        self.assertEqual(statuses[days[0]]["status"], "NO_OP")
+        self.assertEqual(statuses[days[0]]["state"], "completed")
+        self.assertEqual(statuses[days[0]]["recovery_plan"]["action"], "none")
+
+    def test_preflight_refreshes_stale_status_and_suppresses_resolved_retry(self):
+        today = dt.date.today().isoformat()
+        yesterday = (dt.date.today() - dt.timedelta(days=1)).isoformat()
+        other = "ZP-gsc-feedback"
+        self.write("scripts/lane-status.mjs", (ROOT / "scripts" / "lane-status.mjs").read_text(encoding="utf-8"))
+        self.write(".hermes/cron-lanes.json", json.dumps({"lanes": [
+            {"task": LANE, "schedule": {"kind": "DAILY"}, "start": "00:00", "reportGlob": "*-daily-content.md"},
+            {"task": other, "schedule": {"kind": "DAILY"}, "start": "00:00", "reportGlob": "*-gsc-feedback.md"},
+        ]}))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"generated_local": "2000-01-01 00:00", "lanes": []}))
+        self.write(f".hermes/logs/{yesterday}-daily-content.md",
+                   "VERDICT: STALE (AUTO-FILL)\nCONSUMED: host\nDELIVERED: NONE\nNEXT: old failure\n")
+        for lane, suffix in ((LANE, "daily-content"), (other, "gsc-feedback")):
+            self.write(f".hermes/logs/{today}-{suffix}.md",
+                       "VERDICT: OK\nCONSUMED: fixture\nDELIVERED: current report\nNEXT: NONE\n")
+        rows = [
+            {"run_id": "old-stale", "lane": LANE, "fired_at": f"{yesterday} 00:00:00",
+             "verdict": "STALE", "state": "quarantined", "dsh_exit": 0, "report_auto_generated": True},
+            {"run_id": "new-ok", "lane": LANE, "fired_at": f"{today} 00:00:00",
+             "verdict": "OK", "state": "completed", "dsh_exit": 0, "report_auto_generated": False},
+            {"run_id": "sibling-ok", "lane": other, "fired_at": f"{today} 00:00:00",
+             "verdict": "OK", "state": "completed", "dsh_exit": 0, "report_auto_generated": False},
+        ]
+        self.write(".hermes/logs/lane-runs.jsonl", "".join(json.dumps(row) + "\n" for row in rows))
+        result = subprocess.run([sys.executable, str(PREFLIGHT), "--lane", LANE, "--repo", str(self.repo),
+                                 "--acquire", "--skip-runtime-check"], cwd=self.repo,
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        context = json.loads((self.repo / f".hermes/logs/run-context-{LANE}.json").read_text(encoding="utf-8"))
+        self.assertEqual(context["retry_queue"], [])
+        self.assertEqual(context["suppressed_retry_queue"][0]["kind"], "SUPPRESSED_RESOLVED_DAY")
+        self.assertEqual(context["suppressed_retry_queue"][0]["resolved_by_day"], today)
+        self.assertEqual([row["lane"] for row in context["sibling_lanes"]], [other])
+        status_check = next(row for row in context["preflight"]["checks"] if row["name"] == "lane_status_available")
+        self.assertIn("refreshed_stale=True", status_check["detail"])
+
+    def test_preflight_partial_follows_next_without_repeating_delivery(self):
+        today = dt.date.today().isoformat()
+        report = f".hermes/logs/{today}-daily-content.md"
+        self.write(report, "VERDICT: PARTIAL\nCONSUMED: fixture\nDELIVERED: completed analysis\n"
+                           "NEXT: wait for approved commercial truth; do not rewrite delivered analysis\n")
+        previous = {"run_id": "partial-run", "lane": LANE, "fired_at": f"{today} 00:00:00",
+                    "verdict": "PARTIAL", "state": "completed", "key_consumed": True}
+        self.write(".hermes/logs/lane-runs.jsonl", json.dumps(previous) + "\n")
+        self.write(".hermes/logs/lane-status.json", json.dumps({
+            "generated_local": f"{today} 01:00", "lanes": [{"task": LANE, "days": [{
+                "day": today, "status": "PARTIAL", "report": report,
+            }]}],
+        }))
+        result = subprocess.run([sys.executable, str(PREFLIGHT), "--lane", LANE, "--repo", str(self.repo),
+                                 "--acquire", "--skip-runtime-check"], cwd=self.repo,
+                                capture_output=True, text=True, encoding="utf-8", errors="replace")
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        context = json.loads((self.repo / f".hermes/logs/run-context-{LANE}.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(context["retry_queue"]), 1)
+        follow_up = context["retry_queue"][0]
+        self.assertEqual(follow_up["kind"], "FOLLOW_UP_PARTIAL")
+        self.assertIn("approved commercial truth", follow_up["next"])
+        self.assertEqual(follow_up["candidate_files"], [])
+
+    def test_focus_delta_respects_queue_cooldown_and_low_sample_gate(self):
+        module = load_module("zp_feedback_constraint_test", FEEDBACK)
+        review_day = dt.date(2026, 11, 13)
+        delta = {"focus_query_deltas_28d": [
+            {"query": "small batch sticker printing", "classification": "MONEY", "latest_page1": True,
+             "latest_zero_click": True, "observations_28d": [{
+                 "export_date": "2026-11-12", "impressions": 21, "clicks": 0, "position": 7.29,
+             }]},
+            {"query": "saddle stitch booklet printing", "classification": "MONEY", "latest_page1": True,
+             "latest_zero_click": True, "observations_28d": [{
+                 "export_date": "2026-11-12", "impressions": 1, "clicks": 0, "position": 4.0,
+             }]},
+        ]}
+        gsc = {"focus_delta": module.focus_delta_handoff(delta, "fixture.json", review_day)}
+        blog = {"available": True, "items": [{
+            "cluster": "stickers-en", "decision": "REMEASURE_NOT_DUE", "recheck_after": "2026-11-28",
+            "money_queries": ["small batch sticker printing"],
+        }]}
+        module.apply_blog_queue_constraints(gsc, blog, review_day)
+        rows = {row["query"]: row for row in gsc["focus_delta"]["items"]}
+        small_batch = rows["small batch sticker printing"]
+        self.assertEqual(small_batch["route"], "HOLD")
+        self.assertEqual(small_batch["retry_at"], "2026-11-28")
+        self.assertEqual(small_batch["queue_constraint"]["cluster"], "stickers-en")
+        low_sample = rows["saddle stitch booklet printing"]
+        self.assertEqual(low_sample["route"], "HOLD")
+        self.assertIn("at least 20", low_sample["approval_gate"])
 
 
 if __name__ == "__main__":

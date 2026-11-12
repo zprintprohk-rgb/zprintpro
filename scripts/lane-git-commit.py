@@ -118,6 +118,11 @@ def main():
                           report_auto=True, run_verdict="STALE", dsh_exit=0)
         return 6
 
+    report_verdict = read_lane_report_verdict(repo, report_path)
+    if report_verdict not in FINALIZABLE_VERDICTS:
+        # Defensive guard: validation and bus persistence must never disagree.
+        return 6
+
     r = run([GIT, "status", "--porcelain", "-z"], cwd=repo, check=False)
     changed = []
     tokens = r.stdout.split("\0")
@@ -151,9 +156,10 @@ def main():
             print(f"[lane-git] 跳过白名单外改动: {p}")
 
     if not allowed:
-        print(f"[lane-git] {args.lane}: 无可提交改动; 当日报告有效, 写 OK 总线")
+        print(f"[lane-git] {args.lane}: 无可提交改动; 当日报告有效, 写 {report_verdict} 总线")
         write_exec_report(args.lane, repo, [], False, date, report_path=report_path,
-                          run_verdict="OK", dsh_exit=0)
+                          verdict=f"{report_verdict}（真实报告收尾）",
+                          run_verdict=report_verdict, dsh_exit=0)
         return 0
 
     print(f"[lane-git] {args.lane}: 白名单改动 {len(allowed)} 个:")
@@ -216,7 +222,7 @@ def main():
         print("[lane-git] push 完成 -> origin/main 已更新")
 
     write_exec_report(args.lane, repo, allowed, pushed, date, report_path=report_path,
-                      run_verdict="OK", dsh_exit=0)
+                      run_verdict=report_verdict, dsh_exit=0)
     return 0
 
 
@@ -271,11 +277,30 @@ def resolve_idempotency_key(lane, repo):
     return idempotency_key(lane, "run", "lane-default")
 
 
-def validate_lane_report(repo, lane, day):
-    """Accept only today's exact lane report with all four fields and VERDICT: OK.
+FINALIZABLE_VERDICTS = ("OK", "PARTIAL", "NO_OP")
+REPORT_VERDICT_RE = (
+    r"^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?(OK|PARTIAL|NO_OP)\*?\*?"
+    r"(?=\s*$|\s*[—–\-:：()（）])"
+)
 
-    AUTO-FILL is inspected only on the machine-readable VERDICT line. A real report
-    may discuss an earlier AUTO-FILL incident in its prose without becoming a stub.
+
+def read_lane_report_verdict(repo, report_path):
+    """Return the validated machine verdict without weakening report validation."""
+    try:
+        with open(os.path.join(repo, report_path), "r", encoding="utf-8", errors="replace") as fh:
+            match = re.search(REPORT_VERDICT_RE, fh.read(), re.MULTILINE)
+            return match.group(1) if match else None
+    except (OSError, TypeError):
+        return None
+
+
+def validate_lane_report(repo, lane, day):
+    """Accept today's complete OK/PARTIAL/NO_OP report, preserving its real verdict.
+
+    PARTIAL means delivered work plus explicit follow-up, not OK. NO_OP is valid only
+    with the same four-field evidence contract. Failure/placeholder reports never pass.
+    AUTO-FILL is inspected only on the machine-readable VERDICT line, so historical
+    prose about an earlier placeholder cannot invalidate a real report.
     """
     candidates = [f".hermes/logs/{day}-{lane}.md"]
     if lane.startswith("ZP-"):
@@ -294,16 +319,14 @@ def validate_lane_report(repo, lane, day):
             r"VERDICT\*?\*?:\s*\*?\*?(?:STALE|FAILED|BLOCKED|MISSING)\*?\*?\s*[（(]?AUTO-FILL(?:ED)?",
             verdict_line.group(0)))
         if auto_fill:
-            continue  # marker follows a failure value; trailing prose on real OK is harmless
+            continue
         for field in ("VERDICT", "CONSUMED", "DELIVERED", "NEXT"):
             if not re.search(rf"^[-*\s]*\*?\*?{field}\*?\*?:\s*\S.*$", text, re.MULTILINE):
                 return None, f"same-day report lacks machine-readable {field}"
-        if not re.search(
-                r"^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–\-:：()（）])",
-                text, re.MULTILINE):
-            return None, "same-day report VERDICT is not exactly OK (PARTIAL/BLOCKED/FAILED cannot finalize as OK)"
+        if not re.search(REPORT_VERDICT_RE, text, re.MULTILINE):
+            return None, "same-day report VERDICT must be exactly OK, PARTIAL or NO_OP; failure verdicts cannot finalize"
         return rel, None
-    return None, "all same-day lane report candidates are AUTO-FILL failure evidence; no real OK report"
+    return None, "all same-day lane report candidates are AUTO-FILL failure evidence; no finalizable report"
 
 
 def write_failure_report(repo, lane, day, verdict, reason, dsh_exit):
@@ -385,7 +408,8 @@ def write_exec_report(lane, repo, allowed, pushed, date,
     except Exception:  # noqa: BLE001
         head = ""
     final_verdict = run_verdict or ("OK" if exit_code == 0 else "FAILED")
-    state = {"OK": "completed", "FAILED": "failed", "BLOCKED": "blocked",
+    state = {"OK": "completed", "PARTIAL": "completed", "NO_OP": "completed",
+             "FAILED": "failed", "BLOCKED": "blocked",
              "STALE": "quarantined"}.get(final_verdict, "failed")
     write_lane_run({
         "run_id": f"{lane}-{time.strftime('%Y%m%dT%H%M%S', time.localtime())}-{os.getpid()}",
@@ -394,7 +418,7 @@ def write_exec_report(lane, repo, allowed, pushed, date,
         "fired_at": fired_at,
         "ended_at": now,
         "idempotency_key": resolve_idempotency_key(lane, repo),
-        "key_consumed": final_verdict == "OK",
+        "key_consumed": final_verdict in FINALIZABLE_VERDICTS,
         "dsh_exit": dsh_exit,
         "wrapper_exit": exit_code,
         "verdict": final_verdict,

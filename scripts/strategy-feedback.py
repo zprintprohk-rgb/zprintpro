@@ -176,11 +176,18 @@ def focus_delta_handoff(delta, source, review_day):
             improving.append(query)
         if row.get("latest_page1") and row.get("latest_zero_click"):
             page1_zero_click += 1
-            route = "FIX"
-            owner = "ZP-weekly-meta"
-            action = "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change"
-            gate = "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite"
-            exit_criteria = "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker"
+            if int(latest.get("impressions") or 0) < 20:
+                route = "HOLD"
+                owner = "ZP-gsc-feedback"
+                action = "Low-sample page-1 zero-click query; observe only and do not dispatch a snippet/content change"
+                gate = "Internal evidence threshold: at least 20 same-window impressions or an explicit K3 priority decision"
+                exit_criteria = "Sufficient same-window evidence or explicit priority decision; otherwise remain HOLD"
+            else:
+                route = "FIX"
+                owner = "ZP-weekly-meta"
+                action = "Inspect query-by-page, SERP features and real title/snippet; propose at most one snippet-variable change"
+                gate = "SERP/snippet evidence and commercial truth approval precede any change; no batch title/meta rewrite"
+                exit_criteria = "SERP snapshot and snippet source recorded; one approved FIX deployed and online-verified, or HOLD with documented blocker"
         elif two_window == "CONFIRMED_TWO_WINDOW_WORSENING" or transition == "DROPPED_OUT_PAGE_1":
             route = "MEASURE"
             owner = "ZP-gsc-feedback"
@@ -215,11 +222,17 @@ def focus_delta_handoff(delta, source, review_day):
         })
     short_window = []
     for row in delta.get("seven_day_focus_deltas") or []:
-        if row.get("direction") == "WORSE":
-            short_window.append({"query": row.get("query"), "previous": row.get("previous_11_03"),
-                                 "current": row.get("current_11_07"), "delta_position": row.get("delta_position")})
+        if row.get("direction") != "WORSE":
+            continue
+        previous_key = next((key for key in sorted(row) if re.fullmatch(r"previous_[0-9_]+", key)), None)
+        current_key = next((key for key in sorted(row) if re.fullmatch(r"current_[0-9_]+", key)), None)
+        if not previous_key or not current_key:
+            continue
+        short_window.append({"query": row.get("query"), "previous": row.get(previous_key),
+                             "current": row.get(current_key), "previous_field": previous_key,
+                             "current_field": current_key, "delta_position": row.get("delta_position")})
     short_window.sort(key=lambda row: (-float(row.get("delta_position") or 0), str(row.get("query"))))
-    items.sort(key=lambda row: ({"FIX": 0, "MEASURE": 1}[row["route"]],
+    items.sort(key=lambda row: ({"FIX": 0, "MEASURE": 1, "HOLD": 2}[row["route"]],
                                 -int(row["baseline"].get("impressions") or 0), row["query"]))
     return {
         "available": True,
@@ -413,11 +426,47 @@ def build_blog_handoff(repo, review_day):
             route = "HOLD"
         items.append({"cluster": item.get("cluster"), "locale": item.get("locale"), "status": status,
                       "route": route, "decision": decision, "recheck_after": str(recheck) if recheck else None,
+                      "money_queries": list(item.get("money_queries") or []),
                       "source_window": item.get("source_window"), "baseline": item.get("baseline"),
                       "delivered_url": item.get("delivered_url"), "scale_allowed": False})
     return {"available": True, "source": ".hermes/cron-prompts/blog-money-keyword-queue.json",
             "source_window": queue.get("source_window"), "status_counts": counts, "items": items,
             "guard": "A moving GSC window is an observation, not an experiment win/loss; no automatic article generation"}
+
+
+def apply_blog_queue_constraints(gsc_handoff, blog_handoff, review_day):
+    """Prevent a GSC FIX proposal from overriding an active queue HOLD/cooldown."""
+    if not blog_handoff.get("available"):
+        return
+    constraints = {}
+    for item in blog_handoff.get("items", []):
+        decision = item.get("decision")
+        if decision not in ("HOLD_WAITING_K3", "HOLD_UNVERIFIED", "REMEASURE_NOT_DUE"):
+            continue
+        for query in item.get("money_queries") or []:
+            constraints[query] = item
+    focus = gsc_handoff.get("focus_delta") or {}
+    for row in focus.get("items") or []:
+        constraint = constraints.get(row.get("query"))
+        if not constraint:
+            continue
+        recheck = constraint.get("recheck_after")
+        if recheck:
+            row["retry_at"] = recheck
+            row["retest"] = {"next_check": recheck, "required_windows": ["7d", "14d", "28d"]}
+        row["queue_constraint"] = {"cluster": constraint.get("cluster"),
+                                   "decision": constraint.get("decision"),
+                                   "recheck_after": recheck}
+        if row.get("route") == "FIX":
+            row["route"] = "HOLD"
+            row["owner_lane"] = "ZP-gsc-feedback"
+            row["required_action"] = "Respect the active queue cooldown/HOLD; perform only the scheduled measurement"
+            row["approval_gate"] = "Do not dispatch title, snippet or content changes until the queue gate opens"
+            row["exit_criteria"] = "Recheck on the queue date or retain HOLD_WAITING_K3; no duplicate FIX dispatch"
+            row["handoff_id"] = (f"GSC-DELTA-HOLD-{review_day}-"
+                                 f"{hashlib.sha256(row['query'].encode('utf-8')).hexdigest()[:8]}")
+    focus.get("items", []).sort(key=lambda row: ({"FIX": 0, "MEASURE": 1, "HOLD": 2}[row["route"]],
+                                                  -int(row["baseline"].get("impressions") or 0), row["query"]))
 
 
 def build_geo_handoff(repo, review_day, anomaly):
@@ -764,6 +813,7 @@ def main():
 
     gsc_handoff = build_gsc_handoff(logs, review_day)
     blog_handoff = build_blog_handoff(repo, review_day)
+    apply_blog_queue_constraints(gsc_handoff, blog_handoff, review_day)
     anomaly_for_geo = read_json(os.path.join(logs, gsc_handoff["source"]), {}) if gsc_handoff["available"] else {}
     geo_handoff = build_geo_handoff(repo, review_day, anomaly_for_geo)
     decision_by_id = {row.get("task_id"): row.get("decision") for row in decisions}

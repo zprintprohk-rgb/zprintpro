@@ -26,6 +26,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -99,6 +100,19 @@ def newest_report(repo, lane):
     except OSError:
         pass
     return os.path.relpath(rep, repo).replace("\\", "/"), files
+
+
+def report_field(repo, report_path, field):
+    """Read one machine contract field from a lane report without inferring outcomes."""
+    if not report_path:
+        return ""
+    try:
+        with open(os.path.join(repo, report_path), "r", encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    except OSError:
+        return ""
+    match = re.search(rf"^[-*\s]*\*?\*?{re.escape(field)}\*?\*?:\s*(\S.*)$", text, re.MULTILINE)
+    return match.group(1).strip() if match else ""
 
 
 def last_run_record(repo, lane):
@@ -328,23 +342,29 @@ def main():
                    "detail": (f"总线最近记录 verdict={prev.get('verdict')} @ {prev.get('ended_at')}"
                               if prev else "总线无本车道记录 (可能是首次/总线刚启用) -> 以报告文件为准")})
 
-    # 结果总线汇总 (lane-status.json) — 若不存在, 现场生成
+    # 结果总线汇总: 缺失或日期陈旧都现场重建, 再计算兄弟车道与恢复队列.
+    today = time.strftime("%Y-%m-%d")
     status_path = os.path.join(repo, ".hermes", "logs", "lane-status.json")
     status = read_json(status_path)
-    if not status:
+    status_was_stale = bool(status) and str(status.get("generated_local") or "")[:10] != today
+    status_refresh_detail = "not_needed"
+    if not status or status_was_stale:
         try:
-            subprocess.run(["node", "scripts/lane-status.mjs", "--days=7", "--quiet"],
-                           cwd=repo, capture_output=True, text=True, timeout=120)
-        except (OSError, subprocess.SubprocessError):
-            pass
+            refresh = subprocess.run([shutil.which("node") or "node", "scripts/lane-status.mjs", "--days=7", "--quiet"],
+                                     cwd=repo, capture_output=True, text=True, timeout=120)
+            status_refresh_detail = f"exit={refresh.returncode}"
+            if refresh.returncode not in (0, 1):
+                status_refresh_detail += f"; stderr={refresh.stderr[-300:]}"
+        except (OSError, subprocess.SubprocessError) as e:
+            status_refresh_detail = f"failed={type(e).__name__}"
         status = read_json(status_path)
     checks.append({"name": "lane_status_available", "ok": status is not None,
-                   "detail": (f"verdict={status.get('verdict')} problems={len(status.get('problems') or [])}"
-                              if status else "lane-status.json 不可读 (node/脚本缺失?)")})
+                   "detail": ((f"verdict={status.get('verdict')} problems={len(status.get('problems') or [])}; "
+                               f"refreshed_stale={status_was_stale}; refresh={status_refresh_detail}")
+                              if status else f"lane-status.json 不可读; refresh={status_refresh_detail}")})
 
     # Weekly/monthly review is produced on the host before dsh, so sandbox tool limits
     # cannot turn it into a hand-written, evidence-free narrative.
-    today = time.strftime("%Y-%m-%d")
     review_period = {"ZP-weekly-meta": "weekly", "ZP-monthly-matrix": "monthly"}.get(args.lane)
     if review_period:
         feedback_script = os.path.join(repo, "scripts", "strategy-feedback.py")
@@ -376,22 +396,38 @@ def main():
                 siblings.append({"lane": l.get("task"), "status": "ran-today",
                                  "report": None, "start": l.get("start")})
 
-    # 待重做队列 (由上一轮 verdict 推导)
+    # 恢复队列: PARTIAL 只跟进 NEXT, NO_OP 不重试; 后续终态已闭合的历史异常不重复派发.
     retry = []
+    suppressed_retries = []
     if prev:
         v = prev.get("verdict")
-        if v in ("FAILED", "BLOCKED", "STALE", "PARTIAL"):
+        if v in ("FAILED", "BLOCKED", "STALE"):
             retry.append({"kind": "RETRY_OF", "run_id": prev.get("run_id"),
                           "reason": prev.get("blocked_reason") or v,
                           "candidate_files": prev.get("files") or []})
+        elif v == "PARTIAL":
+            retry.append({"kind": "FOLLOW_UP_PARTIAL", "run_id": prev.get("run_id"),
+                          "reason": "真实交付已完成; 仅处理 NEXT, 不得重做 DELIVERED",
+                          "next": report_field(repo, prev_report, "NEXT"),
+                          "report": prev_report, "candidate_files": []})
     if status:
         for l in status.get("lanes", []):
             if l.get("task") != args.lane:
                 continue
-            for d in l.get("days", []):
-                if d.get("status") in ("FAILED", "BLOCKED", "STALE") and d.get("day") >= today[:8] + "01":
-                    retry.append({"kind": "UNRESOLVED_DAY", "day": d["day"], "status": d["status"],
-                                  "notes": d.get("notes") or []})
+            lane_days = l.get("days", [])
+            terminal_days = sorted(d.get("day") for d in lane_days
+                                   if d.get("status") in ("OK", "PARTIAL", "NO_OP") and d.get("day"))
+            for d in lane_days:
+                if d.get("status") not in ("FAILED", "BLOCKED", "STALE") or d.get("day") < today[:8] + "01":
+                    continue
+                later_terminal = next((day for day in terminal_days if day > d.get("day")), None)
+                if later_terminal:
+                    suppressed_retries.append({"kind": "SUPPRESSED_RESOLVED_DAY", "day": d.get("day"),
+                                               "status": d.get("status"), "resolved_by_day": later_terminal,
+                                               "reason": "后续日期已有 OK/PARTIAL/NO_OP 真实终态报告; 历史总线不改写, 不重复恢复"})
+                    continue
+                retry.append({"kind": "UNRESOLVED_DAY", "day": d["day"], "status": d["status"],
+                              "notes": d.get("notes") or []})
 
     # 抢锁 (前置检查通过才抢)
     lock_info = None
@@ -424,11 +460,13 @@ def main():
         },
         "sibling_lanes": siblings,
         "retry_queue": retry,
+        "suppressed_retry_queue": suppressed_retries,
         "instructions_to_lane": [
             "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
-            "retry_queue 非空时优先重做其中的未完成项, 报告首段写 RETRY_OF(<run_id>)",
+            "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
+            "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
             "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",
-            "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行",
+            "报告名 <YYYY-MM-DD>-<lane>.md, 首段必含 VERDICT/CONSUMED/DELIVERED/NEXT 四行; PARTIAL 不得写成 OK",
         ],
     }
     write_json(ctx_path, ctx)

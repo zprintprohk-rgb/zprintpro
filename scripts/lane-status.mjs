@@ -71,6 +71,8 @@ const STATE_MACHINE = {
 };
 const VERDICT_TO_STATE = {
   OK: 'completed',
+  PARTIAL: 'completed',
+  NO_OP: 'completed',
   PENDING: 'pending',
   MISSING: 'blocked',
   FAILED: 'failed',
@@ -78,6 +80,8 @@ const VERDICT_TO_STATE = {
   STALE: 'quarantined',
   UNKNOWN: 'pending',
 };
+const FINALIZABLE_VERDICTS = ['OK', 'PARTIAL', 'NO_OP'];
+const SUCCESS_VERDICTS = new Set(FINALIZABLE_VERDICTS);
 
 /**
  * 恢复分类 (P3-11) —— 让执行层知道下一步该干什么, 而不是只看到"失败了":
@@ -110,7 +114,14 @@ function recoveryPlan(status, lane, day, notes, exitCode) {
     if (/guard/i.test(n)) return { action: 'modify_payload', reason: 'pre-commit guard 拦下 src commit -> 必须先让改动过对应断言', evidence: `node scripts/guards/sop10-guard.js`, retry_after_days: null };
     return { action: 'retry', reason: '跑过但无当日报告 (空转/零产出)', evidence: `.hermes/logs/cron-${lane}.log`, retry_after_days: 0 };
   }
-  if (status === 'OK') return { action: 'none', reason: '无异常', evidence: null, retry_after_days: null };
+  if (status === 'PARTIAL') {
+    return { action: 'modify_payload', reason: 'PARTIAL 已有真实交付, 不是空转; 下轮只处理报告 NEXT 与缺失外部输入, 禁止重做 DELIVERED',
+             evidence: `.hermes/logs/run-context-${lane}.json`, retry_after_days: null };
+  }
+  if (status === 'OK' || status === 'NO_OP') {
+    return { action: 'none', reason: status === 'NO_OP' ? '有完整证据的合法 NO_OP, 无需重试' : '无异常',
+             evidence: null, retry_after_days: null };
+  }
   return { action: 'none', reason: '触发点未到或宽限期内', evidence: null, retry_after_days: null };
 }
 
@@ -237,11 +248,11 @@ function main() {
   const problems = [];
   const warnings = [];
 
-  // Only completed OK runs consume work. A preflight BLOCKED row never called dsh,
-  // so retrying the same key after the blocker clears is recovery, not duplicate processing.
+  // OK, PARTIAL and evidence-backed NO_OP all consume delivered work; PARTIAL still
+  // enters attention for its NEXT items. BLOCKED never called dsh and is not consumption.
   for (const r of runsReal) {
     const k = r.idempotency_key;
-    if (!k || r.key_consumed === false || r.verdict !== 'OK' || (r.state && r.state !== 'completed')) continue;
+    if (!k || r.key_consumed === false || !SUCCESS_VERDICTS.has(r.verdict) || (r.state && r.state !== 'completed')) continue;
     if (seenIdem.has(k)) warnings.push(`DUPLICATE_IDEMPOTENCY_KEY ${k}: ${seenIdem.get(k)} 与 ${r.run_id} 同日同目标重复处理`);
     else seenIdem.set(k, r.run_id);
   }
@@ -278,11 +289,13 @@ function main() {
         const verdictLine = text.match(/^[-*\s]*\*?\*?VERDICT\*?\*?:.*$/m)?.[0] || '';
         const autoFilled = /VERDICT\*?\*?:\s*\*?\*?(?:STALE|FAILED|BLOCKED|MISSING)\*?\*?\s*[（(]?AUTO-FILL(?:ED)?/.test(verdictLine);
         // Only the machine VERDICT line declares a placeholder. Prose may document
-        // an earlier AUTO-FILL incident. OK may be followed by CJK/ASCII punctuation.
+        // an earlier AUTO-FILL incident. Accepted verdicts keep their distinct meaning.
         const fieldRe = (field) => new RegExp(`^[-*\\s]*\\*?\\*?${field}\\*?\\*?:\\s*\\S.*$`, 'm');
+        const verdictMatch = text.match(/^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?(OK|PARTIAL|NO_OP)\*?\*?(?=\s*$|\s*[—–\-:：()（）])/m);
+        const reportVerdict = verdictMatch ? verdictMatch[1] : null;
         const contractOk = ['VERDICT', 'CONSUMED', 'DELIVERED', 'NEXT'].every((field) => fieldRe(field).test(text))
-          && /^[-*\s]*\*?\*?VERDICT\*?\*?:\s*\*?\*?OK\*?\*?(?=\s*$|\s*[—–\-:：()（）])/m.test(text);
-        return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk, autoFilled, contractOk };
+          && Boolean(reportVerdict);
+        return { ...f, dateToken, laneOwned, owned: laneOwned && Boolean(dateToken), strict: Boolean(strict) && laneOwned, loose: Boolean(anyDate) && laneOwned && endsOk, autoFilled, contractOk, reportVerdict };
       })
       .filter((f) => f.owned)
       .sort((a, b) => Number(b.contractOk && !b.autoFilled) - Number(a.contractOk && !a.autoFilled)
@@ -310,24 +323,33 @@ function main() {
         const dayLog = logRuns[day] || null;
         const logExit = dayLog ? dayLog.dshExit : null;
         const exitCode = rec && typeof rec.dsh_exit === 'number' ? rec.dsh_exit : logExit;
-        status = 'OK';
+        status = rec && SUCCESS_VERDICTS.has(rec.verdict) ? rec.verdict : 'OK';
         if (rec && rec.blocked_reason) notes.push(rec.blocked_reason);
         if (rec && ['FAILED', 'BLOCKED', 'STALE'].includes(rec.verdict)) status = rec.verdict;
         else if (typeof exitCode === 'number' && exitCode !== 0) status = 'FAILED';
         else if (rec && rec.report_auto_generated) status = 'STALE';
-        if (rec && rec.guard && rec.guard.ok === false) { notes.push('guard blocked src commit'); if (status === 'OK') status = 'STALE'; }
-        if (dayLog && dayLog.guardBlocked) { notes.push('guard-blocked message seen in console log (suspected: log may also carry human-session output)'); if (status === 'OK') status = 'STALE'; }
+        if (rec && rec.guard && rec.guard.ok === false) { notes.push('guard blocked src commit'); if (SUCCESS_VERDICTS.has(status)) status = 'STALE'; }
+        if (dayLog && dayLog.guardBlocked) { notes.push('guard-blocked message seen in console log (suspected: log may also carry human-session output)'); if (SUCCESS_VERDICTS.has(status)) status = 'STALE'; }
         if (!rep) {
-          if (status === 'OK') status = 'STALE';
+          if (SUCCESS_VERDICTS.has(status)) status = 'STALE';
           notes.push(`ran but no report file dated ${day}`);
         } else {
           if (!rep.strict) {
-            if (status === 'OK') status = 'STALE';
+            if (SUCCESS_VERDICTS.has(status)) status = 'STALE';
             notes.push(`report naming not date-first (${rep.name}) -> not authoritative`);
           }
           if (rep.autoFilled || !rep.contractOk) {
-            if (status === 'OK') status = 'STALE';
-            notes.push(`report is AUTO-FILLED or lacks a complete OK contract (${rep.name})`);
+            if (SUCCESS_VERDICTS.has(status)) status = 'STALE';
+            notes.push(`report is AUTO-FILLED or lacks a complete OK/PARTIAL/NO_OP contract (${rep.name})`);
+          } else if (SUCCESS_VERDICTS.has(status)) {
+            status = rep.reportVerdict;
+          }
+          // Narrow compatibility repair for the proven legacy OK-only host bug.
+          // Never rewrite the historical bus row, and never mask any other STALE cause.
+          if (status === 'STALE' && rep.contractOk && !rep.autoFilled
+              && /VERDICT is not exactly OK/.test(notes.join(' '))) {
+            status = rep.reportVerdict;
+            notes.push('legacy OK-only host misclassification corrected from the complete real report; historical bus row preserved');
           }
         }
         days.push({
@@ -351,7 +373,7 @@ function main() {
     }
 
     const last = days[days.length - 1] || null;
-    if (last && !['OK', 'PENDING'].includes(last.status)) problems.push(`${lane.task} ${last.day} -> ${last.status}`);
+    if (last && !['OK', 'NO_OP', 'PENDING'].includes(last.status)) problems.push(`${lane.task} ${last.day} -> ${last.status}`);
 
     const s = sched[lane.task] || null;
     // 调度器自身也有结论: LastTaskResult != 0 就是 Windows 侧的失败信号 (常被 wrapper exit=0 掩盖)
@@ -475,7 +497,9 @@ function main() {
     L.push('');
     L.push('| verdict | 含义 |');
     L.push('|---------|------|');
-    L.push('| OK | 跑过且产出「文件名日期 == 目标日」的报告 |');
+    L.push('| OK | 跑过且产出「文件名日期 == 目标日」的完整真实报告 |');
+    L.push('| PARTIAL | 已完成且有真实交付, 但 NEXT/外部输入仍需跟进; completed + ATTENTION, 不重做 DELIVERED |');
+    L.push('| NO_OP | 四字段证据完整的合法无变更退出; completed, 不重试、不算异常 |');
     L.push('| MISSING | 触发点已过 45min 仍无 wrapper 日志 / 无总线记录 |');
     L.push('| FAILED | dsh exit != 0 |');
     L.push('| BLOCKED | 前置检查拒绝执行 |');
