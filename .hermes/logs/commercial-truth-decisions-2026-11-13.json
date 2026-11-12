@@ -1,0 +1,537 @@
+{
+  "schema_version": 1,
+  "decision_id": "CT-20261113-D1-D6",
+  "created_at": "2026-11-13T03:10:02+08:00",
+  "status": "DECIDED_STRATEGY_NOT_DEPLOYED",
+  "document": "docs/2026-11-13-commercial-truth-optimal-value-decisions.md",
+  "approval": {
+    "actor": "K3",
+    "date": "2026-11-13",
+    "instruction": "按最优值方案进行拍板把值更新任务策略与方案",
+    "scope": "Commercial-truth decision records, task strategy, queues and Harness prompts only; no production deployment is claimed by this record.",
+    "numeric_value_policy": "Existing K3 approvals and matching SKU data are inherited. This instruction does not fabricate new historical approvals for numbers."
+  },
+  "truth_precedence": [
+    "latest_explicit_k3_decision",
+    "matching_sku_products_and_price_tables",
+    "official_event_or_regulatory_fact",
+    "verified_company_policy_or_capacity_record",
+    "delete_absolute_claim_or_quote_confirmation"
+  ],
+  "global_rules": [
+    {
+      "id": "PRICE_CONDITIONS",
+      "action": "CONDITIONAL",
+      "rule": "A displayed price must bind SKU, specification, quantity, currency and effective date; otherwise remove the price hook and explain cost variables."
+    },
+    {
+      "id": "FULFILMENT",
+      "action": "CONDITIONAL",
+      "rule": "Proof, production, dispatch, transport and delivery are separate. Unverified timing is quote/order confirmation only."
+    },
+    {
+      "id": "CERTIFICATION",
+      "action": "DELETE_OR_CONDITIONAL",
+      "rule": "No certificate file means no ZprintPro certification claim. Neutral regulatory education may remain; material compliance is confirmed at quote/order."
+    },
+    {
+      "id": "STATISTICS",
+      "action": "DELETE",
+      "rule": "Remove unsourced orders, customers, institutions, satisfaction, ratios, capacity and delivery averages."
+    },
+    {
+      "id": "REFUNDS",
+      "action": "DELETE_OR_CONDITIONAL",
+      "rule": "Remove unverified refund guarantees, free samples and satisfaction guarantees; do not substitute contact details for a policy."
+    },
+    {
+      "id": "DERIVED_DATA",
+      "action": "SOURCE_FIRST",
+      "rule": "For sku-seo-data.ts, edit zprintpro-sku-seo-data.csv and rerun node scripts/csv-to-sku-seo.mjs --apply; never hand-edit the derived file."
+    },
+    {
+      "id": "EXPERIMENT_TRUTH_PRECEDENCE",
+      "action": "RESET_MEASUREMENT",
+      "rule": "An experiment hold does not preserve known false claims. A truth fix is a separate deployment and resets its measurement baseline on the actual deploy date."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D1",
+      "subject": "posters",
+      "markets": [
+        "zh-hk",
+        "en"
+      ],
+      "status": "DECIDED",
+      "inherited_decisions": [
+        "ZH-POSTER-20261028-PROCUREMENT DONE; execution 7b396bd9",
+        "FIX-20261030-A1-POSTER-PRICE-TRIPLE DONE; execution d450abbc",
+        "K3 2026-11-08 primary URL /zh-hk/category/posters/"
+      ],
+      "fields": [
+        {
+          "field": "a2_standard_digital",
+          "action": "KEEP",
+          "value": {
+            "moq": 10,
+            "unit": "posters",
+            "from_price_hkd": 16
+          },
+          "evidence": "K3 2026-10-30 + products.ts a2-posters"
+        },
+        {
+          "field": "a1_offset",
+          "action": "KEEP",
+          "value": {
+            "base_price_hkd": 20
+          },
+          "evidence": "K3 2026-10-30 three-product-line decision"
+        },
+        {
+          "field": "a1_inkjet_finished",
+          "action": "KEEP",
+          "value": {
+            "from_price_hkd": 290
+          },
+          "evidence": "K3 2026-10-30 three-product-line decision"
+        },
+        {
+          "field": "a1_inkjet_substrate",
+          "action": "KEEP",
+          "value": {
+            "price_hkd_min": 45,
+            "price_hkd_max": 56
+          },
+          "evidence": "K3 2026-10-30 three-product-line decision"
+        },
+        {
+          "field": "a1_modeled_small_batch",
+          "action": "CONDITIONAL",
+          "value": "Keep modeled-small-batch and factory-calibration labels; exclude from title, FAQ, schema and answer blocks as a calibrated universal price."
+        },
+        {
+          "field": "maximum_size_3200x5000",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "Remove unverified absolute maximum; oversized work is subject to material, joining, artwork and quote confirmation."
+        },
+        {
+          "field": "legacy_bulk_prices",
+          "action": "DELETE_OR_REPLACE",
+          "value": "Remove unbound A2 6-9/A1 10-16 style ranges. Keep only SKU+specification+quantity-bound prices."
+        },
+        {
+          "field": "proof_production_transport",
+          "action": "CONDITIONAL",
+          "value": "Quote/order confirmation; production and transport separate; rush subject to artwork and capacity."
+        },
+        {
+          "field": "orders_satisfaction_weathering",
+          "action": "DELETE",
+          "value": "Remove unsourced statistics and weathering-life guarantees."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261031-FIVE-CATEGORY-TRUTH",
+        "FIX-20261113-POSTER-BLOG-TRUTH"
+      ],
+      "forbidden": [
+        "Do not merge the three A1 product lines into one price",
+        "Do not change primary URL, canonical or redirect"
+      ]
+    },
+    {
+      "id": "D2",
+      "subject": "stickers_and_flyers",
+      "markets": [
+        "zh-hk"
+      ],
+      "status": "DECIDED",
+      "fields": [
+        {
+          "field": "standard_sticker_moq",
+          "action": "KEEP_OR_REPLACE",
+          "value": {
+            "moq": 10,
+            "unit": "stickers",
+            "scope": "matching ordinary sticker SKUs"
+          },
+          "evidence": "products.ts: eight matching sticker SKUs"
+        },
+        {
+          "field": "fruit_food_label_moq",
+          "action": "KEEP",
+          "value": {
+            "moq": 500,
+            "unit": "stickers"
+          },
+          "evidence": "products.ts fruit-food-label-stickers"
+        },
+        {
+          "field": "outdoor_removable_100_moq",
+          "action": "DELETE_OR_REPLACE",
+          "value": "Remove unsupported category-wide 100; use the matching removable/outdoor SKU value."
+        },
+        {
+          "field": "sheet_vs_piece_units",
+          "action": "CONDITIONAL",
+          "value": "10 A4 sheets and 10 stickers/pcs are different units and must not be interchanged."
+        },
+        {
+          "field": "bleed",
+          "action": "REPLACE_OR_CONDITIONAL",
+          "value": {
+            "default_mm": 3,
+            "exception": "matching die-line or product template wins"
+          }
+        },
+        {
+          "field": "proof_production_transport",
+          "action": "CONDITIONAL",
+          "value": "Quote/order confirmation; remove unconditional same-day, 2-3/5-7-day and same-day-proof promises."
+        },
+        {
+          "field": "three_layer_prices",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "Align guide/category/PDP only when SKU, material, size, quantity and process match; otherwise remove guide prices and use cost variables plus quote CTA."
+        },
+        {
+          "field": "statistics",
+          "action": "DELETE",
+          "value": "Remove unsourced orders, average delivery, satisfaction and customer ratios."
+        },
+        {
+          "field": "flyer_moq",
+          "action": "KEEP",
+          "value": {
+            "moq": 10,
+            "unit": "flyers"
+          }
+        },
+        {
+          "field": "flyer_from_price",
+          "action": "CONDITIONAL",
+          "value": {
+            "a5_base_price_hkd": 0.25,
+            "rule": "Do not present 0.18/0.14 as an unconditional category price; quantity-tier card prices require their exact SKU and tier."
+          }
+        },
+        {
+          "field": "flyer_turnaround",
+          "action": "CONDITIONAL",
+          "value": "Quote/order confirmation; do not show parallel 3-day and 2-3-day standards."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
+        "FIX-20261030-STICKER-PRICE-THREE-LAYER",
+        "FIX-20261031-FIVE-CATEGORY-TRUTH"
+      ],
+      "forbidden": [
+        "Do not delete the legitimate 500-unit food-label MOQ",
+        "Do not copy en 10 stickers/US$0.55 into zh A4-sheet products"
+      ]
+    },
+    {
+      "id": "D3",
+      "subject": "en_small_batch_stickers",
+      "markets": [
+        "en"
+      ],
+      "status": "DECIDED",
+      "inherited_decisions": [
+        "EN-STICKER-20261028-SMALLBATCH DONE; executions 7b396bd9 and 9f7b348c"
+      ],
+      "fields": [
+        {
+          "field": "moq",
+          "action": "KEEP",
+          "value": {
+            "quantity": 10,
+            "unit": "stickers/pcs per design"
+          }
+        },
+        {
+          "field": "from_price",
+          "action": "KEEP_CONDITIONAL",
+          "value": {
+            "currency": "USD",
+            "from": 0.55,
+            "rule": "Show applicable specification and quantity; not a universal unit price"
+          }
+        },
+        {
+          "field": "zh_a4_sheet_product",
+          "action": "KEEP_SEPARATE",
+          "value": "Keep matching zh HK$38-120/A4 conditions; do not inherit en MOQ or USD price."
+        },
+        {
+          "field": "proof_sample",
+          "action": "CONDITIONAL",
+          "value": "Type, cost, requirement and timing at quote/order confirmation."
+        },
+        {
+          "field": "production_transport",
+          "action": "CONDITIONAL",
+          "value": "Separate and quote/order confirmation; no unverified 4-day USA or DHL promise."
+        },
+        {
+          "field": "statistics_refund_cases",
+          "action": "DELETE",
+          "value": "Remove unsourced orders, reviews, refund guarantees and cases."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL"
+      ],
+      "measurement": {
+        "current_state": "remeasure; original recheck_after 2026-11-28",
+        "if_truth_fix_deployed": "Mark old snippet experiment RESET_BY_TRUTH_FIX and start a new baseline on the actual deployment date",
+        "if_not_deployed": "Keep original 2026-11-28 SERP recheck"
+      }
+    },
+    {
+      "id": "D4",
+      "subject": "catalog",
+      "markets": [
+        "en",
+        "zh-hk",
+        "ja"
+      ],
+      "status": "DECIDED",
+      "inherited_decisions": [
+        "EN-CATALOG-20261028-TRUTH DONE; execution 7b396bd9",
+        "en H1 a33abd3b",
+        "zh/ja descriptions 392c5f30"
+      ],
+      "fields": [
+        {
+          "field": "moq",
+          "action": "KEEP",
+          "value": {
+            "quantity": 10,
+            "unit": "copies"
+          }
+        },
+        {
+          "field": "currency_price",
+          "action": "KEEP_CONDITIONAL",
+          "value": {
+            "en_base_price_usd": 4.6,
+            "rule": "Only matching SKU conditions; never invent USD by converting HKD"
+          }
+        },
+        {
+          "field": "proof",
+          "action": "CONDITIONAL",
+          "value": "Type, cost, timing and production inclusion at quote/order confirmation; remove parallel 1h/4h promises."
+        },
+        {
+          "field": "production_transport",
+          "action": "CONDITIONAL",
+          "value": "Separate and quote/order confirmation; remove parallel at-quote and 3-5-day promises."
+        },
+        {
+          "field": "colour_accuracy",
+          "action": "DELETE_OR_REPLACE",
+          "value": "Remove 90%+/95%+ without a measurement protocol; use qualitative ICC, file-check and proof-confirmation workflow."
+        },
+        {
+          "field": "certification_refund_sample",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "No unsupported certification, refund or sample promise."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261113-CATALOG-TRUTH-RESIDUAL"
+      ],
+      "measurement": {
+        "preserve_history": [
+          "a33abd3b",
+          "392c5f30",
+          "2026-11-14 and 2026-11-21 planned retests"
+        ],
+        "if_truth_fix_deployed": "RESET_BY_TRUTH_FIX with a new actual-deployment baseline"
+      }
+    },
+    {
+      "id": "D5",
+      "subject": "ja_education_campus_c109",
+      "markets": [
+        "ja"
+      ],
+      "status": "DECIDED",
+      "inherited_decisions": [
+        "JA-C109-20261028-DEADLINE DONE; execution 7b396bd9",
+        "DJ-001 /注文 correction 74ffa5a9668034e47a3e93b6d0c76dac902e4c91"
+      ],
+      "fields": [
+        {
+          "field": "c109_event",
+          "action": "KEEP",
+          "value": {
+            "dates": "2026-12-29..2026-12-31",
+            "venue": "Tokyo Big Sight",
+            "source": "https://www.comiket.co.jp/info-a/C109/C109Info.html"
+          }
+        },
+        {
+          "field": "c109_order_price",
+          "action": "KEEP_CONDITIONAL",
+          "value": {
+            "currency": "JPY",
+            "from": 7500,
+            "unit": "order",
+            "rule": "Specified specification and quantity; not per-copy"
+          }
+        },
+        {
+          "field": "safe_submission_deadline",
+          "action": "DELETE",
+          "value": "No reverse-calculated safe submission date without production and transport truth."
+        },
+        {
+          "field": "rush",
+          "action": "CONDITIONAL",
+          "value": "Artwork, specification, quantity, capacity and quote confirmation; no unconditional 24h."
+        },
+        {
+          "field": "venue_hotel_delivery_and_dhl",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "No unverified venue/hotel direct delivery; method, region, cost and timing at quote confirmation."
+        },
+        {
+          "field": "education_prices",
+          "action": "CONDITIONAL",
+          "value": "Use only matching SKU JPY data with specification, quantity and date; no currency-conversion substitute."
+        },
+        {
+          "field": "certification_refund_market_numbers",
+          "action": "DELETE",
+          "value": "Remove unsourced certification, refunds, market size and monthly statistics."
+        },
+        {
+          "field": "internal_filenames",
+          "action": "DELETE_OR_REPLACE",
+          "value": "Remove products.ts and similar internal names from user-facing copy; keep evidence in execution reports."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261113-JA-EDUCATION-C109-TRUTH"
+      ]
+    },
+    {
+      "id": "D6",
+      "subject": "legacy_blog_claims",
+      "markets": [
+        "zh-hk",
+        "en",
+        "ja"
+      ],
+      "status": "DECIDED",
+      "fields": [
+        {
+          "field": "prices_discounts_moq",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "Keep only SKU+specification+quantity+currency+date-bound values; otherwise remove price hook."
+        },
+        {
+          "field": "certifications",
+          "action": "A_B_C_CONTEXT_REVIEW",
+          "value": "A: remove self-claims and retain process knowledge; B: material/order compliance confirmation; C: retain neutral public-regulation explanation only."
+        },
+        {
+          "field": "orders_customers_satisfaction",
+          "action": "DELETE",
+          "value": "Remove unsourced statistics and ratios."
+        },
+        {
+          "field": "refunds_samples_guarantees",
+          "action": "DELETE_OR_CONDITIONAL",
+          "value": "Only formal policy conditions may remain."
+        },
+        {
+          "field": "fulfilment",
+          "action": "CONDITIONAL",
+          "value": "Production, dispatch, transport and delivery separate; unverified values at quote/order confirmation."
+        },
+        {
+          "field": "fake_cases_reviews_authority",
+          "action": "DELETE",
+          "value": "Remove fabricated social proof and authority."
+        },
+        {
+          "field": "official_facts",
+          "action": "KEEP",
+          "value": "Keep with official source and separate from ZprintPro promises."
+        },
+        {
+          "field": "price_titles",
+          "action": "REPLACE_CONDITIONAL",
+          "value": "Prefer evergreen titles without price; preserve slug and pass current 50-57 equivalent plus freeze rules."
+        }
+      ],
+      "execution_task_ids": [
+        "FIX-20261030-BLOG-CERT-PHRASES",
+        "FIX-20261113-POSTER-BLOG-TRUTH",
+        "FIX-20261113-JA-EDUCATION-C109-TRUTH"
+      ],
+      "forbidden": [
+        "No blind global replacement of the 528 certification-pattern matches",
+        "No canonical, redirect, noindex or greeting-card asset changes"
+      ]
+    }
+  ],
+  "queue_consumption": {
+    "required_task_status": "READY",
+    "required_decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+    "one_bounded_task_per_lane_run": true,
+    "same_file_cross_lane_same_day": "BLOCK",
+    "done_history_immutable": true,
+    "partial_reexecute_only_remaining_scope": true,
+    "decision_document_is_not_deploy_proof": true,
+    "auto_scale": false
+  },
+  "measurement_policy": {
+    "append_history_only": true,
+    "required": [
+      "baseline",
+      "change",
+      "approval_gate",
+      "production_deploy",
+      "online_verify",
+      "retest",
+      "exit_criteria"
+    ],
+    "truth_fix_reset": "RESET_BY_TRUTH_FIX",
+    "health_checks": [
+      "D1",
+      "D2"
+    ],
+    "retests": [
+      "7d",
+      "14d",
+      "28d"
+    ],
+    "moving_window_is_experiment_result": false,
+    "learning_without_deploy_and_online_verify": false
+  },
+  "external_research_policy": {
+    "used_for": "Procurement information architecture and conditional presentation only",
+    "not_used_for": "ZprintPro prices, MOQ, turnaround, certifications, reviews, refunds or delivery promises",
+    "official_urls": [
+      "https://www.e-print.com.hk/products_Labels",
+      "https://www.stickermule.com/custom-stickers",
+      "https://www.uprinting.com/blog/uprinting-faq-series-printing-turnaround-times-explained/",
+      "https://www.printpac.co.jp/global/inquiry/faq.html",
+      "https://raksul.com/print/booklet/",
+      "https://raksul.com/guide/create-data/knowledge-of-printing/extra-length-from-trim-mask/",
+      "https://www.comiket.co.jp/info-a/C109/C109Info.html"
+    ]
+  },
+  "queue_update": {
+    "updated_at": "2026-11-13T03:10:02+08:00",
+    "production_src_modified_by_this_batch": false,
+    "commit_or_push_by_this_batch": false
+  }
+}

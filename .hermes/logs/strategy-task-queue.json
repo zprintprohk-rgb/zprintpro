@@ -519,11 +519,19 @@
       "target": "src/data/blog-data/{zh-hk,en,ja}.json 认证词组 19 个 / 528 次",
       "evidence": "`.hermes/logs/2026-10-30-blog-cert-claims-inventory.md`（唯一词组+次数+文件分布+样例; 顶层: EU REACH 259 / FDA 21 CFR 175.300 108 / FDA 食品級 27 / GB 4806.8-2022 25 / SGS 13 / Cert No. available on request 10）。口径声明: 不可与 daily-content 车道「296 处/8 文件」互证（扫描面不同）",
       "score": 0.72,
-      "write_scope": "仅 blog-data 三语 JSON；按 K3 勾选的 A/B/C 分组机械替换（A 删测试号保工艺 / B 条件化 / C 保留法规引用）",
-      "approval_gate": "WAITING_K3: 一句话批准「A 组全删 / B 组条件化 / C 组保留」或指定例外",
-      "owner_lane": "manual",
-      "status": "WAITING_K3",
-      "created_at": "2026-10-30T19:50:00+08:00"
+      "write_scope": [
+        "src/data/blog-data/zh-hk.json (certification claims only, context-reviewed)",
+        "src/data/blog-data/en.json (certification claims only, context-reviewed)",
+        "src/data/blog-data/ja.json (certification claims only, context-reviewed)"
+      ],
+      "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D6: A组删自有认证/测试声明并保留工艺知识；B组材料与订单合规确认；C组仅保留公共法规中性解释。禁止无上下文全局替换。",
+      "owner_lane": "ZP-blog-deepfix",
+      "status": "READY",
+      "created_at": "2026-10-30T19:50:00+08:00",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "strategy_update": "WAITING_K3 reconciled to READY by D6. Execute one bounded certification-truth batch; preserve neutral regulatory education and emit before/after evidence.",
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
     },
     {
       "task_id": "FIX-20261030-A1-POSTER-PRICE-TRIPLE",
@@ -576,13 +584,16 @@
       "score": 0.76,
       "score_model": "analyst-priority",
       "write_scope": [
-        "src/data/category-seo-content.ts"
+        "src/data/category-seo-content.ts (stickers block only; MOQ/bleed/fulfilment/statistics)"
       ],
-      "approval_gate": "K3 approves zh sticker scope (decision sheet #3 explicitly scoped EN only)",
-      "owner_lane": "manual-executor",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-04",
-      "result": "Proposed minimal diff A1-A5 in diagnosis report §5.1 (5 lines, single file); freeze-safe (no title/H1 change)"
+      "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D2: 普通匹配SKU 10张、食品标签500张；默认3mm出血且模板优先；proof/生产/运输报价或订单确认；无源统计删除。",
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "result": "Proposed minimal diff A1-A5 in diagnosis report §5.1 (5 lines, single file); freeze-safe (no title/H1 change)",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "strategy_update": "ZH sticker category truth approved. Do not change title/H1/primary URL; do not delete the legitimate food-label MOQ 500.",
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
     },
     {
       "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
@@ -596,14 +607,16 @@
       "score": 0.72,
       "score_model": "analyst-priority",
       "write_scope": [
-        "src/data/blog-data/zh-hk.json",
-        "src/data/category-seo-content.ts"
+        "src/data/blog-data/zh-hk.json (sticker-buying-guide price table only; category writes removed)"
       ],
-      "approval_gate": "K3 approves zh sticker price alignment (same scope block as FIX-...-ZH-TRUTH-CONFLICT)",
-      "owner_lane": "manual-executor",
-      "status": "WAITING_K3",
-      "next_check": "2026-11-04",
-      "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions"
+      "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D2/D6: 指南价格仅在SKU+材质+尺寸+数量+工艺一致时保留；否则撤下价格表数字，改成本构成与报价入口。",
+      "owner_lane": "ZP-blog-deepfix",
+      "status": "READY",
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "result": "Same material differs 3-14x across guide/category/PDP; guide price table lacks size/qty/process conditions",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "strategy_update": "Category write scope removed to prevent overlap with FIX-20261030-STICKER-ZH-TRUTH-CONFLICT. Do not force basePrice into unrelated quantity tiers.",
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
     },
     {
       "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
@@ -620,7 +633,9 @@
       "owner_lane": "manual-executor",
       "status": "WAITING_K3",
       "next_check": "2026-11-06",
-      "result": "Template-level defect affecting all blog posts; H1 should not carry brand separator"
+      "result": "Template-level defect affecting all blog posts; H1 should not carry brand separator",
+      "strategy_update": "Poster legacy prices are split into FIX-20261113-POSTER-BLOG-TRUTH. The site-wide H1 brand-suffix template change is outside D1-D6 and remains gated; do not use this task to duplicate poster truth edits.",
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
     },
     {
       "task_id": "ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS",
@@ -723,15 +738,33 @@
       "target": "zh-hk/category/{flyers,stickers,books,packaging,posters} 可见 MOQ/起价/交期",
       "evidence": "审计完成 (.hermes/logs/2026-10-31-five-category-truth-audit.md): 13 处冲突 —— flyers: H1「100張起」vs MOQ 10、卡「50 張起」、title/desc 起价 HK$0.18 vs 真值最低 0.25、卡价 0.14/0.31; books: 「1 本起訂」与「無線膠裝 100 本起」vs MOQ 10、卡价 1.20/0.87 vs 最低 6; posters: 卡 alt「10張起印 HK$12.9」(裁决 #1 已定 16)、卡价 2.20 vs 最低 13、说明段「A2 約 HK$6-9／A1 HK$10-16（100張批量）」vs price_range 95-1,017/290-7,200; stickers: 单位「每個」应为「張」(2 处), 数量与价格一致; packaging: MOQ 100/200/300/500 与逐 SKU 完全一致, 仅需补「哪个盒型对应哪个 MOQ」标注。词形假设已证伪: flyers H1/title/desc 均已含「宣傳單張」(正文 12 次), 战略 §3.1 第4条应从缺口降级。",
       "score": 0.85,
-      "write_scope": "5 个 category 页的可见数字与单位; 未改任何值, 仅审计",
-      "approval_gate": "剩余 11 处待 K3 (1) 排批: flyers 卡价 0.14/0.31 与 title/desc 起价 0.18、books「1本起訂」/「無線膠裝100本起」/卡价 1.20/0.87、posters 卡价 2.20 与批量段 A2 6-9/A1 10-16、stickers 单位「每個」→「張」; 建议 11-06 复测前一次审完",
-      "owner_lane": "manual",
-      "status": "WAITING_K3",
+      "write_scope": [
+        "src/data/category-seo-content.ts (flyers/books/packaging/posters residual fields only; stickers excluded)",
+        "src/data/category-conversion-blocks.ts (flyers/books/packaging/posters residual display fields only)",
+        "src/data/products.ts (only explicitly approved residual display truth; do not regenerate SKU prices)"
+      ],
+      "approval_gate": "K3 2026-10-31 (1)排批 + K3 2026-11-13 CT-20261113-D1-D6 D1/D2：只处理b4b0c0f2之后剩余字段；价格须绑定SKU/规格/数量，否则删除价格钩；交期与proof按报价/订单确认。",
+      "owner_lane": "ZP-daily-content",
+      "status": "READY",
       "created_at": "2026-10-31T12:40:00+08:00",
       "result": "PARTIAL: K3 2026-10-31 批准 (3) 先行 + (1) 排批。已执行 b4b0c0f2: ① flyers socialProof stat 100張起→10張起 (category-conversion-blocks.ts L844, label 未动) ② posters a2-posters title_zh/description HK$12.9→HK$16 (products.ts, 同时把标题当量 58→56 修回合规)。线上复验 2026-10-31 17:30:21 双项生效 (flyers 社交证明 10張起, posters 类目/PDP 无 HK$12.9)。",
       "execution_commit": "b4b0c0f2",
       "online_verified": "2026-10-31T17:30:21+08:00 flyers category 10張起 / posters category+PDP 无 HK$12.9",
-      "next_check": "2026-11-06"
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "remaining_scope": [
+        "flyers: unsupported 50-unit badge, unbound 0.18/0.14/0.31 prices and fulfilment conflicts; preserve deployed MOQ 10",
+        "books: 1/100-copy claims versus matching books MOQ 10; preserve educational textbook ED-004 MOQ 100; remove unbound 1.20/0.87 price hooks",
+        "packaging: retain per-SKU MOQ and prices; add box-type/SKU condition labels only",
+        "posters: remove unbound 2.20 and old bulk ranges; preserve A2 16 and the approved three A1 product lines",
+        "stickers excluded: owned by FIX-20261030-STICKER-ZH-TRUTH-CONFLICT"
+      ],
+      "preconditions": [
+        "Do not rerun b4b0c0f2 delivered changes",
+        "Do not run on the same day as another category-seo-content.ts writer"
+      ],
+      "strategy_update": "PARTIAL reconciled to READY for remaining scope only. Historical result and execution_commit b4b0c0f2 are preserved.",
+      "strategy_updated_at": "2026-11-13T03:10:02+08:00"
     },
     {
       "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
@@ -745,11 +778,144 @@
       "owner_lane": "manual",
       "status": "WAITING_K3",
       "created_at": "2026-10-31T23:20:00+08:00"
+    },
+    {
+      "task_id": "FIX-20261113-POSTER-BLOG-TRUTH",
+      "source_strategy": "CT-20261113-D1-D6",
+      "score_model": "commercial-truth-residual-priority",
+      "status": "READY",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "created_at": "2026-11-13T03:10:02+08:00",
+      "result": "NOT_EXECUTED",
+      "production_deploy": null,
+      "online_verify": null,
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "market": "zh-hk",
+      "target": "/zh-hk/blog/poster-printing-guide/ only in first bounded run",
+      "evidence": [
+        "D1",
+        "D6",
+        ".hermes/logs/2026-10-30-sticker-ranking-regression-diagnosis.md"
+      ],
+      "score": 88,
+      "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D1/D6: 清旧价格/时效/认证/统计/退款；保留A2 16与A1三产品线；标题优先无价格常青值且须过50-57当量与冻结规则。",
+      "owner_lane": "ZP-blog-deepfix",
+      "write_scope": [
+        "src/data/blog-data/zh-hk.json (poster-printing-guide only in first run)",
+        "src/data/blog-posts.ts (poster-printing-guide metadata only if title/excerpt contains the same false claim)"
+      ],
+      "measurement_reset": true,
+      "idempotency": "One existing article only; no new poster article, slug, canonical, redirect or primary-URL change."
+    },
+    {
+      "task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+      "source_strategy": "CT-20261113-D1-D6",
+      "score_model": "commercial-truth-residual-priority",
+      "status": "READY",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "created_at": "2026-11-13T03:10:02+08:00",
+      "result": "NOT_EXECUTED",
+      "production_deploy": null,
+      "online_verify": null,
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "market": "en",
+      "target": "/en/product/small-batch-stickers/ residual truth only",
+      "evidence": [
+        "D3",
+        "EN-STICKER-20261028-SMALLBATCH DONE 7b396bd9, 9f7b348c"
+      ],
+      "score": 90,
+      "approval_gate": "K3 2026-10-30 inherited + K3 2026-11-13 CT-20261113-D1-D6 D3: 10 stickers/pcs per design; from US$0.55 with conditions; proof/production/transport quote/order confirmation.",
+      "owner_lane": "ZP-daily-content",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv (small-batch-stickers rows only, then generator)",
+        "src/data/products.ts (ST-004 matching residual fields only)",
+        "src/data/products-content.ts (small-batch-stickers matching residual fields only)",
+        "src/data/sku-seo-data.ts (generator output only; never hand-edit)"
+      ],
+      "required_generator": "node scripts/csv-to-sku-seo.mjs --apply",
+      "measurement_reset": true,
+      "reset_marker": "RESET_BY_TRUTH_FIX",
+      "idempotency": "Do not redo deployed MOQ/H1 history. Correct only remaining conflicts; if not deployed, keep 2026-11-28 SERP recheck."
+    },
+    {
+      "task_id": "FIX-20261113-CATALOG-TRUTH-RESIDUAL",
+      "source_strategy": "CT-20261113-D1-D6",
+      "score_model": "commercial-truth-residual-priority",
+      "status": "READY",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "created_at": "2026-11-13T03:10:02+08:00",
+      "result": "NOT_EXECUTED",
+      "production_deploy": null,
+      "online_verify": null,
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "market": "en+zh-hk+ja",
+      "target": "catalog-printing residual proof/fulfilment/colour claims only",
+      "evidence": [
+        "D4",
+        "EN-CATALOG-20261028-TRUTH DONE 7b396bd9",
+        "a33abd3b",
+        "392c5f30"
+      ],
+      "score": 87,
+      "approval_gate": "K3 2026-10-30 inherited + K3 2026-11-13 CT-20261113-D1-D6 D4: MOQ 10 copies保持不变；proof/生产/运输报价或订单确认；无测量协议的90%+/95%+删除或改ICC/打样流程。",
+      "owner_lane": "ZP-daily-content",
+      "write_scope": [
+        "zprintpro-sku-seo-data.csv (catalog-printing rows only, then generator)",
+        "src/data/products.ts (BK-001 matching residual fields only)",
+        "src/data/products-content.ts (catalog-printing matching residual fields only)",
+        "src/data/sku-seo-data.ts (generator output only; never hand-edit)"
+      ],
+      "required_generator": "node scripts/csv-to-sku-seo.mjs --apply",
+      "measurement_reset": true,
+      "reset_marker": "RESET_BY_TRUTH_FIX",
+      "idempotency": "Do not repeat en H1 or zh/ja description deployments. Keep their history and reset only if a new truth fix actually deploys."
+    },
+    {
+      "task_id": "FIX-20261113-JA-EDUCATION-C109-TRUTH",
+      "source_strategy": "CT-20261113-D1-D6",
+      "score_model": "commercial-truth-residual-priority",
+      "status": "READY",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "created_at": "2026-11-13T03:10:02+08:00",
+      "result": "NOT_EXECUTED",
+      "production_deploy": null,
+      "online_verify": null,
+      "next_check": "D1/D2 + 7/14/28d after actual deployment",
+      "market": "ja",
+      "target": "ja campus/textbook/C109 residual commercial claims",
+      "evidence": [
+        "D5",
+        "D6",
+        "JA-C109-20261028-DEADLINE DONE 7b396bd9",
+        "74ffa5a9668034e47a3e93b6d0c76dac902e4c91"
+      ],
+      "score": 86,
+      "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D5/D6: 官方C109事实保留；¥7,500仅指定规格/数量订单起价；无源认证/退款/统计删除；特急/运输/配送报价确认；教材价格仅匹配SKU JPY。",
+      "owner_lane": "ZP-blog-deepfix",
+      "write_scope": [
+        "src/data/blog-data/ja.json (campus-education/textbook/comiket matching slugs only)",
+        "src/data/blog-posts.ts (matching ja metadata only if it repeats the same false claim)",
+        "zprintpro-sku-seo-data.csv (matching DJ/ED rows only, then generator)",
+        "src/data/products.ts and src/data/products-content.ts (matching approved DJ/ED residual fields only)",
+        "src/data/sku-seo-data.ts (generator output only; never hand-edit)"
+      ],
+      "required_generator": "node scripts/csv-to-sku-seo.mjs --apply (only if CSV rows change)",
+      "measurement_reset": true,
+      "reset_marker": "RESET_BY_TRUTH_FIX",
+      "idempotency": "Do not reopen completed C109 order-price or /注文 decisions. No new safe submission date, venue/hotel delivery or currency conversion."
     }
   ],
   "last_review": {
     "period": "weekly",
     "date": "2026-11-04",
     "report": ".hermes/logs/periodic-review-weekly-2026-11-04.json"
+  },
+  "commercial_truth_decision": {
+    "decision_id": "CT-20261113-D1-D6",
+    "record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+    "document": "docs/2026-11-13-commercial-truth-optimal-value-decisions.md",
+    "updated_at": "2026-11-13T03:10:02+08:00",
+    "consumption_rule": "Only READY tasks with a decision_record and bounded write_scope may be consumed. DONE history is immutable; PARTIAL executes remaining scope only."
   }
 }

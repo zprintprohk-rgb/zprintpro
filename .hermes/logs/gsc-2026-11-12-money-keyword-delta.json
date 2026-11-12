@@ -1,0 +1,4242 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-11-12",
+  "method": "Exact-match, same-window; positive position delta is worse.",
+  "focus_query_deltas_28d": [
+    {
+      "query": "即日印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 56,
+          "clicks": 1,
+          "ctr_pct": 1.7857,
+          "position": 7.39
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 60,
+          "clicks": 1,
+          "ctr_pct": 1.6667,
+          "position": 7.93
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 58,
+          "clicks": 1,
+          "ctr_pct": 1.7241,
+          "position": 7.55
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 60,
+          "clicks": 2,
+          "ctr_pct": 3.3333,
+          "position": 7.9
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 58,
+          "clicks": 2,
+          "ctr_pct": 3.4483,
+          "position": 8.09
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 55,
+          "clicks": 2,
+          "ctr_pct": 3.6364,
+          "position": 8.16
+        }
+      ],
+      "position_deltas": [
+        0.54,
+        -0.38,
+        0.35,
+        0.19,
+        0.07
+      ],
+      "latest_delta_11_11_to_11_12": 0.07,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "香港印刷",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 12.53
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 17,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.53
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 23,
+          "clicks": 1,
+          "ctr_pct": 4.3478,
+          "position": 13.09
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 29,
+          "clicks": 2,
+          "ctr_pct": 6.8966,
+          "position": 11.55
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 28,
+          "clicks": 2,
+          "ctr_pct": 7.1429,
+          "position": 11.25
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 27,
+          "clicks": 2,
+          "ctr_pct": 7.4074,
+          "position": 11.63
+        }
+      ],
+      "position_deltas": [
+        -1.0,
+        1.56,
+        -1.54,
+        -0.3,
+        0.38
+      ],
+      "latest_delta_11_11_to_11_12": 0.38,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "海報印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 286,
+          "clicks": 1,
+          "ctr_pct": 0.3497,
+          "position": 14.94
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 278,
+          "clicks": 1,
+          "ctr_pct": 0.3597,
+          "position": 14.41
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 261,
+          "clicks": 1,
+          "ctr_pct": 0.3831,
+          "position": 14.83
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 248,
+          "clicks": 1,
+          "ctr_pct": 0.4032,
+          "position": 15.55
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 224,
+          "clicks": 1,
+          "ctr_pct": 0.4464,
+          "position": 16.49
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 206,
+          "clicks": 1,
+          "ctr_pct": 0.4854,
+          "position": 17.23
+        }
+      ],
+      "position_deltas": [
+        -0.53,
+        0.42,
+        0.72,
+        0.94,
+        0.74
+      ],
+      "latest_delta_11_11_to_11_12": 0.74,
+      "latest_direction": "STABLE",
+      "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印海報",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 125,
+          "clicks": 1,
+          "ctr_pct": 0.8,
+          "position": 12.79
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 131,
+          "clicks": 1,
+          "ctr_pct": 0.7634,
+          "position": 13.36
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 124,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.15
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 121,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.09
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 119,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.65
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 118,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.91
+        }
+      ],
+      "position_deltas": [
+        0.57,
+        0.79,
+        0.94,
+        0.56,
+        0.26
+      ],
+      "latest_delta_11_11_to_11_12": 0.26,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "利是封印刷",
+      "language_hint": "zh-hk",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 55,
+          "clicks": 1,
+          "ctr_pct": 1.8182,
+          "position": 21.6
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 54,
+          "clicks": 1,
+          "ctr_pct": 1.8519,
+          "position": 23.63
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 59,
+          "clicks": 1,
+          "ctr_pct": 1.6949,
+          "position": 24.42
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 56,
+          "clicks": 1,
+          "ctr_pct": 1.7857,
+          "position": 23.84
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 59,
+          "clicks": 1,
+          "ctr_pct": 1.6949,
+          "position": 23.61
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 60,
+          "clicks": 1,
+          "ctr_pct": 1.6667,
+          "position": 23.65
+        }
+      ],
+      "position_deltas": [
+        2.03,
+        0.79,
+        -0.58,
+        -0.23,
+        0.04
+      ],
+      "latest_delta_11_11_to_11_12": 0.04,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "月曆印刷",
+      "language_hint": "zh-hk",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 109,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.71
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 116,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 25.3
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 125,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.44
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 134,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.09
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 141,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.59
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 141,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.48
+        }
+      ],
+      "position_deltas": [
+        1.59,
+        -0.86,
+        -1.35,
+        -0.5,
+        -0.11
+      ],
+      "latest_delta_11_11_to_11_12": -0.11,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "貼紙印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 120,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.88
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 127,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 38.06
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 131,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 37.65
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 139,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.35
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 142,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.58
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 136,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.35
+        }
+      ],
+      "position_deltas": [
+        -2.82,
+        -0.41,
+        -2.3,
+        -0.77,
+        -0.23
+      ],
+      "latest_delta_11_11_to_11_12": -0.23,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "貼紙訂製",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.41
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 30.59
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 38,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.29
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 37,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.3
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 36,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.58
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 42,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.64
+        }
+      ],
+      "position_deltas": [
+        -1.82,
+        -1.3,
+        0.01,
+        -0.72,
+        0.06
+      ],
+      "latest_delta_11_11_to_11_12": 0.06,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "貼紙订制",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "可移貼紙",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 37,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.14
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 33,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.67
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.18
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 38,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.13
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 37,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.14
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.64
+        }
+      ],
+      "position_deltas": [
+        -0.47,
+        -0.49,
+        -2.05,
+        -0.99,
+        -0.5
+      ],
+      "latest_delta_11_11_to_11_12": -0.5,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "宣傳單張",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 117,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.37
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 121,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.74
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 127,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.73
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 129,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.42
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 137,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.31
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 136,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.46
+        }
+      ],
+      "position_deltas": [
+        4.37,
+        0.99,
+        0.69,
+        0.89,
+        0.15
+      ],
+      "latest_delta_11_11_to_11_12": 0.15,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "宣传单张",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "宣傳單張印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 103,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.02
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 113,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.31
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 117,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.9
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 120,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.86
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 123,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.32
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 126,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.17
+        }
+      ],
+      "position_deltas": [
+        0.29,
+        -0.41,
+        -0.04,
+        -0.54,
+        -0.15
+      ],
+      "latest_delta_11_11_to_11_12": -0.15,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "摺頁印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 50,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.38
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 62,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 27.0
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 60,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 25.88
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 60,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.27
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 63,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.13
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.72
+        }
+      ],
+      "position_deltas": [
+        -4.38,
+        -1.12,
+        -1.61,
+        -1.14,
+        -0.41
+      ],
+      "latest_delta_11_11_to_11_12": -0.41,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印書",
+      "language_hint": "zh-hk",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 52,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.96
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.5
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.38
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 60,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.28
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 59,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.25
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 59,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.05
+        }
+      ],
+      "position_deltas": [
+        -0.46,
+        -0.12,
+        -0.1,
+        -0.03,
+        -0.2
+      ],
+      "latest_delta_11_11_to_11_12": -0.2,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "書刊印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 101,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.28
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 112,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.98
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 121,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.08
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 125,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.34
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 128,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.59
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 129,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.74
+        }
+      ],
+      "position_deltas": [
+        -0.3,
+        1.1,
+        0.26,
+        0.25,
+        0.15
+      ],
+      "latest_delta_11_11_to_11_12": 0.15,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "书籍印刷",
+      "language_hint": "zh-hk",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.6
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.6
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.6
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        0.0,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "教科書印刷",
+      "language_hint": "ambiguous_zh_ja",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "學校印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 42,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.12
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.8
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.04
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 52,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.71
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 50,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.04
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.02
+        }
+      ],
+      "position_deltas": [
+        -0.32,
+        0.24,
+        -1.33,
+        -0.67,
+        0.98
+      ],
+      "latest_delta_11_11_to_11_12": 0.98,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "包裝盒訂製",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 47,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.51
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.1
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.43
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.46
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.21
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.45
+        }
+      ],
+      "position_deltas": [
+        2.59,
+        0.33,
+        0.03,
+        -0.25,
+        0.24
+      ],
+      "latest_delta_11_11_to_11_12": 0.24,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "包裝盒印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.89
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 50,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.8
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.3
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 50,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.1
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.15
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 52,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.08
+        }
+      ],
+      "position_deltas": [
+        0.91,
+        0.5,
+        -0.2,
+        -0.95,
+        -0.07
+      ],
+      "latest_delta_11_11_to_11_12": -0.07,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "紙盒印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 46,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.3
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 49,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.88
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.72
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 55,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.42
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.25
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.38
+        }
+      ],
+      "position_deltas": [
+        3.58,
+        -0.16,
+        -0.3,
+        -0.17,
+        0.13
+      ],
+      "latest_delta_11_11_to_11_12": 0.13,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "紙盒訂製",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 46,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 30.37
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.88
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.1
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.88
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.76
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.19
+        }
+      ],
+      "position_deltas": [
+        1.51,
+        0.22,
+        -0.22,
+        -0.12,
+        0.43
+      ],
+      "latest_delta_11_11_to_11_12": 0.43,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "禮盒訂製",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 30,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 41.93
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 38,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 47.11
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 41,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 47.76
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 49,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 46.51
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 46.15
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 46.09
+        }
+      ],
+      "position_deltas": [
+        5.18,
+        0.65,
+        -1.25,
+        -0.36,
+        -0.06
+      ],
+      "latest_delta_11_11_to_11_12": -0.06,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "喜帖印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.13
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.4
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.25
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.96
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 26,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 42.35
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 27,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 42.59
+        }
+      ],
+      "position_deltas": [
+        13.27,
+        6.85,
+        4.71,
+        1.39,
+        0.24
+      ],
+      "latest_delta_11_11_to_11_12": 0.24,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "小冊子印刷",
+      "language_hint": "ambiguous_zh_ja",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 52,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.6
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 45,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.71
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.5
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 29,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.59
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.04
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.25
+        }
+      ],
+      "position_deltas": [
+        0.11,
+        -0.21,
+        0.09,
+        0.45,
+        0.21
+      ],
+      "latest_delta_11_11_to_11_12": 0.21,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "a2印刷",
+      "language_hint": "zh-hk",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.91
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.91
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.5
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.67
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.18
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.18
+        }
+      ],
+      "position_deltas": [
+        0.0,
+        2.59,
+        1.17,
+        -0.49,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "證書印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.89
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.89
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.12
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        }
+      ],
+      "position_deltas": [
+        0.0,
+        -0.11,
+        0.0,
+        0.23,
+        -0.12
+      ],
+      "latest_delta_11_11_to_11_12": -0.12,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "ENTERED_PAGE_1",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "易拉架印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 42,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.31
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 48,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 37.85
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 44,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 39.2
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 44,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.02
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 44,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 39.45
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 40,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.12
+        }
+      ],
+      "position_deltas": [
+        2.54,
+        1.35,
+        0.82,
+        -0.57,
+        0.67
+      ],
+      "latest_delta_11_11_to_11_12": 0.67,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "食品包裝印刷",
+      "language_hint": "zh-hk",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 113,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.6
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 118,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.42
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 116,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.36
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 106,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.71
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 107,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.63
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 107,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.53
+        }
+      ],
+      "position_deltas": [
+        -0.18,
+        -0.06,
+        0.35,
+        -0.08,
+        -0.1
+      ],
+      "latest_delta_11_11_to_11_12": -0.1,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "catalog printing china",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 34,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.38
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 35,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.89
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.0
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.23
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 41,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.95
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 41,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.95
+        }
+      ],
+      "position_deltas": [
+        -0.49,
+        -4.89,
+        0.23,
+        0.72,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "catalogs printing china",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.22
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.14
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 21.0
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.2
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.4
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.4
+        }
+      ],
+      "position_deltas": [
+        -2.08,
+        0.86,
+        1.2,
+        -1.8,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "china catalog printing",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 72,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.79
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 72,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.96
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 98,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.15
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 104,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.78
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 102,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.19
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 91,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.98
+        }
+      ],
+      "position_deltas": [
+        -0.83,
+        -0.81,
+        -0.37,
+        -0.59,
+        0.79
+      ],
+      "latest_delta_11_11_to_11_12": 0.79,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "small batch sticker printing",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 46,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.5
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 35,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.66
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 27,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.0
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.52
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 20,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.15
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.29
+        }
+      ],
+      "position_deltas": [
+        0.16,
+        0.34,
+        0.52,
+        0.63,
+        0.14
+      ],
+      "latest_delta_11_11_to_11_12": 0.14,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "small batch stickers",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.04
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.1
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.42
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 49,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.12
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.88
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.88
+        }
+      ],
+      "position_deltas": [
+        0.06,
+        0.32,
+        10.7,
+        -0.24,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "saddle stitch booklet printing",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 14,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.71
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.67
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.4
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.4
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 4.0
+        }
+      ],
+      "position_deltas": [
+        -3.04,
+        0.73,
+        0.0,
+        -0.4,
+        -3.0
+      ],
+      "latest_delta_11_11_to_11_12": -3.0,
+      "latest_direction": "BETTER",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "doujinshi printing",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 43,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 50,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.06
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 55,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.98
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 52,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.17
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.3
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 60,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.53
+        }
+      ],
+      "position_deltas": [
+        0.06,
+        -0.08,
+        0.19,
+        0.13,
+        0.23
+      ],
+      "latest_delta_11_11_to_11_12": 0.23,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "large envelopes",
+      "language_hint": "en",
+      "classification": "AMBIGUOUS",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.64
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.88
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        0.24,
+        -6.88,
+        0.0,
+        0.0,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "a2 poster",
+      "language_hint": "en",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.2
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 59,
+          "clicks": 1,
+          "ctr_pct": 1.6949,
+          "position": 18.68
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 49,
+          "clicks": 1,
+          "ctr_pct": 2.0408,
+          "position": 25.8
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 48,
+          "clicks": 1,
+          "ctr_pct": 2.0833,
+          "position": 29.75
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 39,
+          "clicks": 1,
+          "ctr_pct": 2.5641,
+          "position": 38.92
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 38,
+          "clicks": 1,
+          "ctr_pct": 2.6316,
+          "position": 40.0
+        }
+      ],
+      "position_deltas": [
+        1.48,
+        7.12,
+        3.95,
+        9.17,
+        1.08
+      ],
+      "latest_delta_11_11_to_11_12": 1.08,
+      "latest_direction": "WORSE",
+      "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "corporate holiday cards",
+      "language_hint": "en",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "business holiday cards",
+      "language_hint": "en",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "教材 印刷製本",
+      "language_hint": "ja",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 39,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.69
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 46,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.67
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.49
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 53,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 34.32
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.51
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.95
+        }
+      ],
+      "position_deltas": [
+        7.98,
+        2.82,
+        2.83,
+        1.19,
+        1.44
+      ],
+      "latest_delta_11_11_to_11_12": 1.44,
+      "latest_direction": "WORSE",
+      "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "コミケ 印刷",
+      "language_hint": "ja",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 173,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.99
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 170,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.04
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 163,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.88
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 146,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.97
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 134,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.96
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 129,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 25.74
+        }
+      ],
+      "position_deltas": [
+        3.05,
+        0.84,
+        1.09,
+        0.99,
+        0.78
+      ],
+      "latest_delta_11_11_to_11_12": 0.78,
+      "latest_direction": "STABLE",
+      "two_window_direction": "CONFIRMED_TWO_WINDOW_WORSENING",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "卒アル販売",
+      "language_hint": "ja",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 5.0
+        }
+      ],
+      "position_deltas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": true,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "pvc シール",
+      "language_hint": "ja",
+      "classification": "MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 20,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.75
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.79
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 22,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.91
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.22
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.71
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.71
+        }
+      ],
+      "position_deltas": [
+        -0.96,
+        -1.88,
+        0.31,
+        -0.51,
+        0.0
+      ],
+      "latest_delta_11_11_to_11_12": 0.0,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": true,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "年賀状印刷",
+      "language_hint": "ja",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "2027年賀状",
+      "language_hint": "ja",
+      "classification": "SEASONAL_MONEY",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印刷",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 35,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.03
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 61,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.8
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 78,
+          "clicks": 1,
+          "ctr_pct": 1.2821,
+          "position": 20.19
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 92,
+          "clicks": 1,
+          "ctr_pct": 1.087,
+          "position": 20.1
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 104,
+          "clicks": 1,
+          "ctr_pct": 0.9615,
+          "position": 20.8
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 110,
+          "clicks": 1,
+          "ctr_pct": 0.9091,
+          "position": 20.32
+        }
+      ],
+      "position_deltas": [
+        -2.23,
+        0.39,
+        -0.09,
+        0.7,
+        -0.48
+      ],
+      "latest_delta_11_11_to_11_12": -0.48,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印刷公司",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": 112,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.58
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": 131,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.03
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": 142,
+          "clicks": 2,
+          "ctr_pct": 1.4085,
+          "position": 26.8
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": 143,
+          "clicks": 2,
+          "ctr_pct": 1.3986,
+          "position": 26.63
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": 149,
+          "clicks": 2,
+          "ctr_pct": 1.3423,
+          "position": 26.9
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": 147,
+          "clicks": 2,
+          "ctr_pct": 1.3605,
+          "position": 26.76
+        }
+      ],
+      "position_deltas": [
+        -1.55,
+        -1.23,
+        -0.17,
+        0.27,
+        -0.14
+      ],
+      "latest_delta_11_11_to_11_12": -0.14,
+      "latest_direction": "STABLE",
+      "two_window_direction": "NOT_CONSECUTIVE",
+      "page1_transition": "UNCHANGED",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印刷服務",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "印刷廠",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "網上印刷",
+      "language_hint": "zh-hk",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "printing company",
+      "language_hint": "en",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    },
+    {
+      "query": "printing services",
+      "language_hint": "en",
+      "classification": "INDUSTRY_HEAD",
+      "observations_28d": [
+        {
+          "export_date": "2026-10-30",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-03",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-07",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-10",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-11",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        },
+        {
+          "export_date": "2026-11-12",
+          "impressions": null,
+          "clicks": null,
+          "ctr_pct": null,
+          "position": null
+        }
+      ],
+      "position_deltas": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "latest_delta_11_11_to_11_12": null,
+      "latest_direction": "NO_COMPARABLE_BASELINE",
+      "two_window_direction": null,
+      "page1_transition": "NO_CURRENT_BASELINE",
+      "latest_page1": false,
+      "latest_zero_click": false,
+      "caution": "Exact row in all-country top-1000 export. Missing row is NO_CURRENT_BASELINE, not zero demand."
+    }
+  ],
+  "seven_day_focus_deltas": [
+    {
+      "query": "即日印刷",
+      "previous_11_11": {
+        "impressions": 15,
+        "clicks": 1,
+        "ctr_pct": 6.6667,
+        "position": 8.53
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 1,
+        "ctr_pct": 7.6923,
+        "position": 8.38
+      },
+      "delta_position": -0.15,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "香港印刷",
+      "previous_11_11": {
+        "impressions": 10,
+        "clicks": 1,
+        "ctr_pct": 10.0,
+        "position": 5.6
+      },
+      "current_11_12": {
+        "impressions": 8,
+        "clicks": 1,
+        "ctr_pct": 12.5,
+        "position": 6.88
+      },
+      "delta_position": 1.28,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "海報印刷",
+      "previous_11_11": {
+        "impressions": 31,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 19.65
+      },
+      "current_11_12": {
+        "impressions": 32,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 19.88
+      },
+      "delta_position": 0.23,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印海報",
+      "previous_11_11": {
+        "impressions": 18,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 18.61
+      },
+      "current_11_12": {
+        "impressions": 17,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 18.65
+      },
+      "delta_position": 0.04,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "利是封印刷",
+      "previous_11_11": {
+        "impressions": 15,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 21.47
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 20.92
+      },
+      "delta_position": -0.55,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "月曆印刷",
+      "previous_11_11": {
+        "impressions": 33,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 16.91
+      },
+      "current_11_12": {
+        "impressions": 32,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 16.03
+      },
+      "delta_position": -0.88,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "貼紙印刷",
+      "previous_11_11": {
+        "impressions": 39,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 25.67
+      },
+      "current_11_12": {
+        "impressions": 35,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 23.46
+      },
+      "delta_position": -2.21,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "貼紙訂製",
+      "previous_11_11": {
+        "impressions": 8,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 23.25
+      },
+      "current_11_12": {
+        "impressions": 12,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 24.17
+      },
+      "delta_position": 0.92,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "貼紙订制",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "可移貼紙",
+      "previous_11_11": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 12.38
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 9.0
+      },
+      "delta_position": -3.38,
+      "direction": "BETTER",
+      "page1_transition": "ENTERED_PAGE_1"
+    },
+    {
+      "query": "宣傳單張",
+      "previous_11_11": {
+        "impressions": 32,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 41.0
+      },
+      "current_11_12": {
+        "impressions": 31,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 41.48
+      },
+      "delta_position": 0.48,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "宣传单张",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "宣傳單張印刷",
+      "previous_11_11": {
+        "impressions": 28,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 26.46
+      },
+      "current_11_12": {
+        "impressions": 28,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 24.79
+      },
+      "delta_position": -1.67,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "摺頁印刷",
+      "previous_11_11": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 9.82
+      },
+      "current_11_12": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 8.64
+      },
+      "delta_position": -1.18,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印書",
+      "previous_11_11": {
+        "impressions": 14,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 30.43
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 29.23
+      },
+      "delta_position": -1.2,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "書刊印刷",
+      "previous_11_11": {
+        "impressions": 30,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 37.53
+      },
+      "current_11_12": {
+        "impressions": 28,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 37.18
+      },
+      "delta_position": -0.35,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "书籍印刷",
+      "previous_11_11": {
+        "impressions": 5,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 7.6
+      },
+      "current_11_12": {
+        "impressions": 5,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 7.6
+      },
+      "delta_position": 0.0,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "教科書印刷",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "學校印刷",
+      "previous_11_11": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 22.73
+      },
+      "current_11_12": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 24.91
+      },
+      "delta_position": 2.18,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "包裝盒訂製",
+      "previous_11_11": {
+        "impressions": 14,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 28.36
+      },
+      "current_11_12": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 27.91
+      },
+      "delta_position": -0.45,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "包裝盒印刷",
+      "previous_11_11": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 27.55
+      },
+      "current_11_12": {
+        "impressions": 10,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 26.9
+      },
+      "delta_position": -0.65,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "紙盒印刷",
+      "previous_11_11": {
+        "impressions": 16,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 31.5
+      },
+      "current_11_12": {
+        "impressions": 12,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 31.0
+      },
+      "delta_position": -0.5,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "紙盒訂製",
+      "previous_11_11": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 28.85
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 30.46
+      },
+      "delta_position": 1.61,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "禮盒訂製",
+      "previous_11_11": {
+        "impressions": 16,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 39.38
+      },
+      "current_11_12": {
+        "impressions": 16,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 40.38
+      },
+      "delta_position": 1.0,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "喜帖印刷",
+      "previous_11_11": {
+        "impressions": 14,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 49.71
+      },
+      "current_11_12": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 50.23
+      },
+      "delta_position": 0.52,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "小冊子印刷",
+      "previous_11_11": {
+        "impressions": 1,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 18.0
+      },
+      "current_11_12": {
+        "impressions": 2,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 16.5
+      },
+      "delta_position": -1.5,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "a2印刷",
+      "previous_11_11": {
+        "impressions": 4,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 10.0
+      },
+      "current_11_12": {
+        "impressions": 4,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 10.0
+      },
+      "delta_position": 0.0,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "證書印刷",
+      "previous_11_11": {
+        "impressions": 2,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 9.5
+      },
+      "current_11_12": {
+        "impressions": 1,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 9.0
+      },
+      "delta_position": -0.5,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "易拉架印刷",
+      "previous_11_11": {
+        "impressions": 10,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 37.6
+      },
+      "current_11_12": {
+        "impressions": 9,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 36.11
+      },
+      "delta_position": -1.49,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "食品包裝印刷",
+      "previous_11_11": {
+        "impressions": 24,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 8.71
+      },
+      "current_11_12": {
+        "impressions": 27,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 8.33
+      },
+      "delta_position": -0.38,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "catalog printing china",
+      "previous_11_11": {
+        "impressions": 12,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 15.17
+      },
+      "current_11_12": {
+        "impressions": 12,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 15.17
+      },
+      "delta_position": 0.0,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "catalogs printing china",
+      "previous_11_11": {
+        "impressions": 2,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 26.0
+      },
+      "current_11_12": {
+        "impressions": 2,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 26.0
+      },
+      "delta_position": 0.0,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "china catalog printing",
+      "previous_11_11": {
+        "impressions": 35,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 13.03
+      },
+      "current_11_12": {
+        "impressions": 34,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 13.15
+      },
+      "delta_position": 0.12,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "small batch sticker printing",
+      "previous_11_11": {
+        "impressions": 1,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 11.0
+      },
+      "current_11_12": {
+        "impressions": 3,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 7.67
+      },
+      "delta_position": -3.33,
+      "direction": "BETTER",
+      "page1_transition": "ENTERED_PAGE_1"
+    },
+    {
+      "query": "small batch stickers",
+      "previous_11_11": {
+        "impressions": 40,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 18.65
+      },
+      "current_11_12": {
+        "impressions": 38,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 19.26
+      },
+      "delta_position": 0.61,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "saddle stitch booklet printing",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "doujinshi printing",
+      "previous_11_11": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 10.0
+      },
+      "current_11_12": {
+        "impressions": 16,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 11.06
+      },
+      "delta_position": 1.06,
+      "direction": "WORSE",
+      "page1_transition": "DROPPED_OUT_PAGE_1"
+    },
+    {
+      "query": "large envelopes",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "a2 poster",
+      "previous_11_11": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 43.27
+      },
+      "current_11_12": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 43.0
+      },
+      "delta_position": -0.27,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "corporate holiday cards",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "business holiday cards",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "教材 印刷製本",
+      "previous_11_11": {
+        "impressions": 13,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 48.31
+      },
+      "current_11_12": {
+        "impressions": 11,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 55.09
+      },
+      "delta_position": 6.78,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "コミケ 印刷",
+      "previous_11_11": {
+        "impressions": 14,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 18.36
+      },
+      "current_11_12": {
+        "impressions": 12,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 22.75
+      },
+      "delta_position": 4.39,
+      "direction": "WORSE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "卒アル販売",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "pvc シール",
+      "previous_11_11": {
+        "impressions": 6,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 14.5
+      },
+      "current_11_12": {
+        "impressions": 6,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 14.5
+      },
+      "delta_position": 0.0,
+      "direction": "STABLE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "年賀状印刷",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "2027年賀状",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印刷",
+      "previous_11_11": {
+        "impressions": 39,
+        "clicks": 1,
+        "ctr_pct": 2.5641,
+        "position": 22.54
+      },
+      "current_11_12": {
+        "impressions": 39,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 21.18
+      },
+      "delta_position": -1.36,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印刷公司",
+      "previous_11_11": {
+        "impressions": 31,
+        "clicks": 1,
+        "ctr_pct": 3.2258,
+        "position": 28.84
+      },
+      "current_11_12": {
+        "impressions": 26,
+        "clicks": 0,
+        "ctr_pct": 0.0,
+        "position": 27.81
+      },
+      "delta_position": -1.03,
+      "direction": "BETTER",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印刷服務",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "印刷廠",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "網上印刷",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "printing company",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    },
+    {
+      "query": "printing services",
+      "previous_11_11": null,
+      "current_11_12": null,
+      "delta_position": null,
+      "direction": "NO_COMPARABLE_BASELINE",
+      "page1_transition": "UNCHANGED"
+    }
+  ],
+  "limitations": [
+    "24h is descriptive only; do not compare its position with 28d.",
+    "Overlapping windows are observations, not independent experiments or deployment attribution.",
+    "Missing top-1000 query row = NO_CURRENT_BASELINE, not zero demand.",
+    "Exact query and contains-group aggregations are separate; no independent-dimension joins.",
+    "Country is searcher location, not a locale-site filter.",
+    "MONEY/SEASONAL_MONEY are procurement-intent labels, not observed enquiries/orders/revenue.",
+    "No AI citation/GEO growth claim without actual fixed-kit probes and citation URLs."
+  ]
+}

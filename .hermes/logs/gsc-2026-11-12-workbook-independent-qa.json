@@ -1,0 +1,57 @@
+{
+  "summary_checks_printed": [
+    {
+      "cell": "Summary!J6",
+      "expected": -10,
+      "actual": -10,
+      "match": true
+    },
+    {
+      "cell": "Summary!K6",
+      "expected": 0.2255,
+      "actual": 0.2255000000000003,
+      "match": true
+    },
+    {
+      "cell": "Summary!J7",
+      "expected": -9,
+      "actual": -9,
+      "match": true
+    },
+    {
+      "cell": "Summary!K7",
+      "expected": -0.3882,
+      "actual": -0.3881999999999994,
+      "match": true
+    },
+    {
+      "cell": "Summary!J8",
+      "expected": -7,
+      "actual": -7,
+      "match": true
+    },
+    {
+      "cell": "Summary!K8",
+      "expected": -0.0302,
+      "actual": -0.03020000000000067,
+      "match": true
+    },
+    {
+      "cell": "Summary!D11",
+      "expected": 7,
+      "actual": 7,
+      "match": true
+    },
+    {
+      "cell": "Summary!D12",
+      "expected": 6,
+      "actual": 6,
+      "match": true
+    }
+  ],
+  "focus_formula_rows": 54,
+  "focus_formula_matches": 54,
+  "focus_formula_errors": [],
+  "all_independent_checks_match": true,
+  "note": "Independent raw-JSON expectations compared with formulas-library verification copy. Original retains charts/styles and is the delivery file."
+}
