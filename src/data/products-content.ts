@@ -1961,7 +1961,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p>口徑說明：10 張檔為起訂價（HK$38 × 2.35 起訂係數，小尺寸）；100 張檔為基準價 × 尺寸倍率（小 ×1 / 中 ×1.5 / 大 ×2.2）；500 張檔已計 15% 批量折扣。選用 PP / PET 材質或異形模切按上方加價另計。</p>
 `,
     longDescriptionEn: `<h3>Small Batch Stickers for Global Brands</h3>
-<p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order from 10 stickers (sheet-based A4 layouts) with no setup fees, and we'll cut, print, and ship after artwork approval. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
+<p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order from 10 stickers per design with no setup fees, and we'll cut, print, and ship after artwork approval. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
 
 <h3>Material & Quantity Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -2004,7 +2004,7 @@ export const productsContent: Record<string, ProductContentEntry> = {
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>No Minimum Setup Fees:</strong> Start at 10 stickers (A4 sheet layouts). No plate fees, no setup surcharges.</li>
+  <li><strong>No Minimum Setup Fees:</strong> Start at 10 stickers per design. No plate fees, no setup surcharges.</li>
   <li><strong>Production After Artwork Approval:</strong> Standard turnaround confirmed at quote; final production time depends on quantity, material and finishing.</li>
   <li><strong>Free Design Service:</strong> We resize your artwork for any custom shape at no extra charge. Submit AI, PDF, or high-res PNG.</li>
   <li><strong>Digital Proof Before Production:</strong> Digital color proof before production; physical sample availability and timing confirmed at quote.</li>
@@ -2039,12 +2039,12 @@ export const productsContent: Record<string, ProductContentEntry> = {
 <p><em>All prices include 4C CMYK printing and free die-cut setup. Shipping and volume discounts are confirmed at quote.</em></p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ) for small batch stickers?</strong></summary><p>MOQ is <strong>10 stickers</strong> (A4 sheet-based layouts), subject to material, size and spec confirmation. Digital proof is provided before production; physical sample options and timing are confirmed at quote.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ) for small batch stickers?</strong></summary><p>MOQ is <strong>10 stickers per design</strong>, subject to material, size and spec confirmation. Digital proof is provided before production; physical sample options and timing are confirmed at quote.</p></details>
 <details class="my-2"><summary><strong>How much do small batch stickers cost per piece?</strong></summary><p>At 100 pieces: <strong>$0.42/pc for vinyl, $0.30/pc for paper</strong>. 500+ pieces unlock 15% off; 1,000+ unlocks 25% off. Exact pricing is confirmed at quote for your material, size and quantity.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time for small batches?</strong></summary><p>Production starts after artwork approval; final lead time depends on quantity, material and finishing, and is confirmed at quote.</p></details>
 <details class="my-2"><summary><strong>Can I order a sample pack before placing a full order?</strong></summary><p>Digital color proofing is provided before production. Physical sample availability, size options, cost and timing are confirmed at quote.</p></details>
 <details class="my-2"><summary><strong>Why are your prices competitive?</strong></summary><p>Our Shenzhen factory production and direct global shipping keep unit costs competitive while maintaining ISO 12647-2 color management. Free die-cut setup on all orders. Exact pricing is confirmed at quote.</p></details>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>MOQ is 10 stickers (A4 sheet-based layouts) across vinyl, paper, kraft, foil and holographic materials. Volume discounts start at 500 (15% off).</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>MOQ is 10 stickers per design across vinyl, paper, kraft, foil and holographic materials. Volume discounts start at 500 (15% off).</p></details>
 <details class="my-2"><summary><strong>Can I order multiple designs on one sheet?</strong></summary><p>Yes. We can print multiple designs on a single sheet (mixed sheet). Submit separate AI/PDF files and we arrange them for you at no extra charge.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>AI, PDF, PNG (300 DPI minimum), and JPG. CMYK color mode recommended. We provide free file review and CMYK conversion.</p></details>
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Production starts after artwork approval; lead time is confirmed at quote based on quantity, material and finishing.</p></details>
