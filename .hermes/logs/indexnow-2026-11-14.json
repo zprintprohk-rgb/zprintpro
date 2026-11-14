@@ -17,7 +17,8 @@
   "status": "200 (both the 2-URL targeted POST and the 297-URL full batch)",
   "notes": [
     "首轮 297-URL POST 400 (ContentType 缺 charset) → 补 'application/json; charset=utf-8' 后 200",
-    "IndexNow 覆盖 Bing/Yandex/Seznam/Naver; Google 侧需 GSC URL 检查 / 等待自然重抓",
+    "⚠️ IndexNow 仅 Bing/Yandex/Seznam/Naver 消费, Google 不参与 — Google 侧重抓只能靠 GSC URL Inspection (K3 真人) 或自然重抓",
+    "Google sitemap ping 端点已弃用 (2026-06 移除, 实测 404); 仓库无 Google Indexing API 凭据",
     "GSC 侧建议: 重抓落地后再点一次「验证修复」或对 2 URL 用 URL Inspection 请求编入索引"
   ],
   "evidence": "本文件 + .hermes/logs/2026-11-14-brand-duplicate-resolution.md"

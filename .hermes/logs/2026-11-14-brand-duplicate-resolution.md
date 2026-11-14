@@ -79,3 +79,17 @@ JSON-LD 的完整拷贝（Next.js App Router 序列化服务端元素树的固�
   （zh-hk=智印港 / ja=ジープリント）—— 维持 K3 单品牌分层拍板，不因本次改回。
 - **数据来源**: GSC 商家信息截图（用户提供，2026-11-14）；CF Pages API deployments 列表（11/2-11/14）；
   线上 curl 探针（本报告 §1，2026-11-14 16:00+08）；git log c4605923/9b46dc5c/414549e5/c1f99244。
+
+## 8. 增补（2026-11-14 第二轮穷尽验证）
+
+1. **Google 侧重抓信号盘点**（结论: 无可自动手段，只能 K3 真人 URL Inspection）:
+   - Google **sitemap ping 端点已弃用**（2026-06 移除，实测 `google.com/ping?sitemap=...` 返回 404）；
+   - **IndexNow 仅 Bing/Yandex/Seznam/Naver 消费，Google 不参与** —— 297 URL 提交只对 Bing 系有效；
+   - 仓库**无 Google Indexing API / GSC URL Inspection service account 凭据**（`.hermes/credentials/` 为空；
+     现行 GSC 数据流 = K3 手动导出 GSC数据/）→ 执行层无法自助触发 Google 重抓。
+   ⇒ Google 侧唯一动作 = 报告 §6 K3 真人 3 件（URL Inspection 请求编入索引 + 重跑验证修复 + 7 天复查）。
+2. **sitemap 覆盖确认**: 受影响 2 URL 均在 `sitemap-ja.xml`（241 URL）内，Google 可发现。
+3. **merchant feed 三语全面质量扫描**（2026-11-14 16:40+08，线上实测）: 3 locale × 83 items 全部合规 ——
+   单 `<g:brand>`（ZprintPro）/ price 格式（HKD|USD|JPY）/ availability=in_stock / condition=new /
+   identifier_exists=false / link+image_link 绝对生产域 —— **0 issue**，排除「还有其他商家信息问题」。
+4. **部署确认**: commit `3f899c5d` → CF Pages 部署 `cc67cf17` **success**（build+deploy 全绿）。
