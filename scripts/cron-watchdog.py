@@ -63,6 +63,20 @@ def run_lane_status():
         return None, f"lane-status.json 读取失败: {e}"
 
 
+def run_coordination_board():
+    """Refresh the shared lane handoff after lane-status; never fabricate a DSH result."""
+    script = os.path.join(REPO, "scripts", "build-coordination-board.py")
+    try:
+        result = subprocess.run([sys.executable, script, "--repo", REPO],
+                                cwd=REPO, capture_output=True, text=True, timeout=120)
+        if result.returncode != 0:
+            return None, f"build-coordination-board exit={result.returncode}; output suppressed"
+        with open(os.path.join(LOGS, "coordination-board.json"), "r", encoding="utf-8") as fh:
+            return json.load(fh), ""
+    except (OSError, ValueError, subprocess.SubprocessError) as e:
+        return None, f"coordination-board 构建/读取失败: {type(e).__name__}: {e}"
+
+
 def fallback_mtime_rows():
     rows = []
     for name, pats, limit_h in FALLBACK_LANES:
@@ -233,6 +247,14 @@ def main():
         ) or "—"
         for p in status.get("problems", []):
             alerts.append(f"- **车道结果异常**: {p} -> 见 `.hermes/logs/lane-status.md` 逐 lane 明细")
+
+        board, board_err = run_coordination_board()
+        if board_err:
+            alerts.append(f"- **协同板构建失败**: {board_err} -> 所有车道必须保持阻断/NO_OP, 不得退回独立执行")
+            print(f"[watchdog] {board_err}", file=sys.stderr)
+        else:
+            ready = sum(len(rows) for rows in board.get("lane_assignments", {}).values())
+            print(f"[watchdog] 协同板已刷新: {len(board.get('tasks', []))} tasks / {ready} READY assignments")
 
     lock_alert = check_stale_lock()
     if lock_alert:

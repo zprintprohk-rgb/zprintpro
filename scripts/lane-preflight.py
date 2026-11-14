@@ -382,6 +382,30 @@ def main():
         if not feedback_ok:
             blocked = blocked or feedback_detail
 
+    # Shared coordination board: one evidence/approval/retest contract for every lane.
+    # A builder failure is a hard stop; missing optional GSC/review inputs degrade inside
+    # the builder to NO_CURRENT_BASELINE and are not themselves a failure.
+    board = None
+    board_path = os.path.join(repo, ".hermes", "logs", "coordination-board.json")
+    board_script = os.path.join(repo, "scripts", "build-coordination-board.py")
+    try:
+        br = subprocess.run([sys.executable, board_script, "--repo", repo, "--date", today],
+                            cwd=repo, capture_output=True, text=True, timeout=120)
+        board_ok = br.returncode == 0
+        board_detail = ("coordination board rebuilt" if board_ok
+                        else f"build-coordination-board exited {br.returncode}; output suppressed")
+    except (OSError, subprocess.SubprocessError) as e:
+        board_ok = False
+        board_detail = f"build-coordination-board failed: {type(e).__name__}"
+    if board_ok:
+        board = read_json(board_path)
+        if board is None:
+            board_ok = False
+            board_detail = "coordination-board.json missing or invalid after builder exit=0"
+    checks.append({"name": "coordination_board", "ok": board_ok, "detail": board_detail})
+    if not board_ok:
+        blocked = blocked or board_detail
+
     # 今日兄弟车道动作 (跨车道避让: 防 9/19 同文件撞车)
     siblings = []
     if status:
@@ -461,8 +485,20 @@ def main():
         "sibling_lanes": siblings,
         "retry_queue": retry,
         "suppressed_retry_queue": suppressed_retries,
+        "coordination": {
+            "board_path": ".hermes/logs/coordination-board.json",
+            "available": board_ok,
+            "run_date": today,
+            "ready_task_ids": (board or {}).get("lane_assignments", {}).get(args.lane, []),
+            "ready_tasks": (board or {}).get("lane_assignment_details", {}).get(args.lane, []),
+            "input_availability": (board or {}).get("inputs", {}),
+            "scheduler_recovery": "NOT_PROVEN",
+        },
         "instructions_to_lane": [
             "先读本文件与 .hermes/logs/lane-status.json, 再决定今天做什么 (契约第 -1 优先级)",
+            "必须先消费 coordination.ready_tasks 与共享板的上游证据; 只有 status=READY 且 owner_lane=本车道的任务可执行",
+            "WAITING_K3/BLOCKED_INFRA/SCHEDULED/MEASURE_HOLD 不得被本车道改写为 READY; 复测未到不得叠加新变量",
+            "缺 GSC/周报等可选输入时保留 available=false 与 NO_CURRENT_BASELINE; 不得造数, 也不得退回独立选词/独立写文",
             "FOLLOW_UP_PARTIAL 只处理报告 NEXT, 不重做 DELIVERED; 其他 retry_queue 项才按 RETRY_OF(<run_id>) 恢复",
             "NO_OP 是证据完整的合法退出, 不自动重试; suppressed_retry_queue 已闭合, 不得重新派发",
             "sibling_lanes 里今日已改过的文件, 本轮不得再次改写 (跨车道避让, 防撞车)",

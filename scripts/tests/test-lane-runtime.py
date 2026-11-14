@@ -16,6 +16,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[2]
 LANE_GIT = ROOT / "scripts" / "lane-git-commit.py"
 PREFLIGHT = ROOT / "scripts" / "lane-preflight.py"
+BUILDER = ROOT / "scripts" / "build-coordination-board.py"
 FEEDBACK = ROOT / "scripts" / "strategy-feedback.py"
 LANE = "ZP-daily-content"
 DAY = "2026-10-28"
@@ -39,6 +40,7 @@ class RuntimeTests(unittest.TestCase):
         self.write("src/data/blog-data/.keep", "")
         self.write("package.json", "{}\n")
         self.write("scripts/check-encoding.js", "process.exit(0);\n")
+        self.write("scripts/build-coordination-board.py", BUILDER.read_text(encoding="utf-8"))
         self.write("node_modules/tsx/dist/cli.mjs", "")
         self.write("node_modules/typescript/bin/tsc", "")
         self.commit_all("fixture")
@@ -637,6 +639,72 @@ class RuntimeTests(unittest.TestCase):
         low_sample = rows["saddle stitch booklet printing"]
         self.assertEqual(low_sample["route"], "HOLD")
         self.assertIn("at least 20", low_sample["approval_gate"])
+
+    def prepare_coordination_fixture(self, tasks):
+        today = dt.date.today().isoformat()
+        self.write(".hermes/logs/strategy-task-queue.json", json.dumps({"tasks": tasks}, ensure_ascii=False))
+        self.write(".hermes/cron-prompts/blog-money-keyword-queue.json", json.dumps({
+            "source_window": "2026-10-14..2026-11-10",
+            "latest_evidence_handoff": {"serp_status": "SERP_UNAVAILABLE"},
+            "items": [],
+        }, ensure_ascii=False))
+        self.write(".hermes/logs/lane-status.json", json.dumps({"generated_local": today, "lanes": []}))
+        self.write(".hermes/logs/lane-runs.jsonl", "")
+        return today
+
+    def run_coordination_preflight(self):
+        return subprocess.run([sys.executable, str(PREFLIGHT), "--lane", LANE, "--repo", str(self.repo),
+                               "--acquire", "--skip-runtime-check"], cwd=self.repo,
+                              capture_output=True, text=True, encoding="utf-8", errors="replace")
+
+    def test_coordination_board_is_rebuilt_and_injected_into_run_context(self):
+        today = self.prepare_coordination_fixture([{
+            "task_id": "READY-COORDINATED", "status": "READY", "owner_lane": LANE,
+            "target": "海報印刷 bounded truth fixture", "score": 88, "next_check": DAY,
+            "approval_gate": "approved fixture", "write_scope": [".hermes/logs/"], "evidence": ["fixture"],
+        }])
+        result = self.run_coordination_preflight()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        context = json.loads((self.repo / f".hermes/logs/run-context-{LANE}.json").read_text(encoding="utf-8"))
+        self.assertTrue(context["coordination"]["available"])
+        self.assertEqual(context["coordination"]["ready_task_ids"], ["READY-COORDINATED"])
+        self.assertEqual(context["coordination"]["ready_tasks"][0]["baseline"]["rows"]["海報印刷"],
+                         "NO_CURRENT_BASELINE")
+        self.assertTrue(any("coordination.ready_tasks" in row for row in context["instructions_to_lane"]))
+        check = next(row for row in context["preflight"]["checks"] if row["name"] == "coordination_board")
+        self.assertTrue(check["ok"])
+        self.assertEqual(context["coordination"]["run_date"], today)
+
+    def test_coordination_board_never_promotes_gated_task_states(self):
+        self.prepare_coordination_fixture([
+            {"task_id": "READY-ONE", "status": "READY", "owner_lane": LANE, "score": 10,
+             "target": "approved fixture", "write_scope": [".hermes/logs/"]},
+            {"task_id": "WAITING-ONE", "status": "WAITING_K3", "owner_lane": LANE, "score": 100,
+             "target": "unapproved structural change", "approval_gate": "WAITING_K3"},
+            {"task_id": "HOLD-ONE", "status": "MEASURE_HOLD", "owner_lane": LANE, "score": 99,
+             "target": "future retest", "next_check": "2999-01-01"},
+        ])
+        result = self.run_coordination_preflight()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        board = json.loads((self.repo / ".hermes/logs/coordination-board.json").read_text(encoding="utf-8"))
+        self.assertEqual(board["lane_assignments"][LANE], ["READY-ONE"])
+        states = {row["task_id"]: row["status"] for row in board["tasks"]}
+        self.assertEqual(states["WAITING-ONE"], "WAITING_K3")
+        self.assertEqual(states["HOLD-ONE"], "MEASURE_HOLD")
+
+    def test_coordination_missing_gsc_degrades_without_blocking_preflight(self):
+        self.prepare_coordination_fixture([{
+            "task_id": "READY-NO-GSC", "status": "READY", "owner_lane": LANE,
+            "target": "教科書印刷 fixture", "write_scope": [".hermes/logs/"],
+        }])
+        result = self.run_coordination_preflight()
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        board = json.loads((self.repo / ".hermes/logs/coordination-board.json").read_text(encoding="utf-8"))
+        self.assertFalse(board["inputs"]["gsc_delta"]["available"])
+        task = next(row for row in board["tasks"] if row["task_id"] == "READY-NO-GSC")
+        self.assertEqual(task["baseline"]["status"], "NO_CURRENT_BASELINE")
+        context = json.loads((self.repo / f".hermes/logs/run-context-{LANE}.json").read_text(encoding="utf-8"))
+        self.assertEqual(context["coordination"]["ready_task_ids"], ["READY-NO-GSC"])
 
 
 if __name__ == "__main__":
