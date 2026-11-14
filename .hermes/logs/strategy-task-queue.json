@@ -205,9 +205,13 @@
    ],
    "approval_gate": "SCALE/HOLD/FIX/STOP only from observed evidence; no automatic prompt or production rewrites",
    "owner_lane": "ZP-weekly-meta",
-   "status": "SCHEDULED",
+   "status": "DONE",
    "next_check": "2026-10-30",
-   "result": "Pending first upgraded weekly review"
+   "result": "REPORT_COMPLETE 2026-11-13: deterministic weekly review generated. This closes the first-review deliverable only; it is not evidence that natural Windows scheduling recovered.",
+   "completed_at": "2026-11-13",
+   "report": ".hermes/logs/periodic-review-weekly-2026-11-13.md",
+   "scheduler_recovery": "NOT_PROVEN",
+   "reconciled_at": "2026-11-14T10:23:20+08:00"
   },
   {
    "task_id": "REVIEW-20261101-MONTHLY",
@@ -229,7 +233,8 @@
    "owner_lane": "ZP-monthly-matrix",
    "status": "SCHEDULED",
    "next_check": "2026-11-01",
-   "result": "Pending first upgraded monthly review"
+   "result": "HISTORICAL_MISSING: no 2026-11-01 monthly execution report was found. Do not fabricate or backfill a past natural run; next valid monthly review must use current evidence and identify itself as a current run.",
+   "reconciled_at": "2026-11-14T10:23:20+08:00"
   },
   {
    "task_id": "FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7",
@@ -472,9 +477,16 @@
    ],
    "approval_gate": "Use recovery_plan; stop after repeated same-cause failure",
    "owner_lane": "ZP-k3-review",
-   "status": "READY",
+   "status": "CLOSED_RESOLVED",
    "next_check": "2026-10-31",
-   "result": "Dispatched by weekly review from observed BLOCKED; not a completed fix"
+   "result": "CLOSED 2026-11-14: the old 2026-10-30 lock-contention incident was followed by successful k3 review deliveries. Do not retry the historical lock event; current scheduler failures are tracked separately.",
+   "closed_at": "2026-11-14",
+   "retry_allowed": false,
+   "closure_evidence": [
+    ".hermes/logs/2026-11-13-ZP-k3-review.md",
+    ".hermes/logs/lane-runs.jsonl"
+   ],
+   "reconciled_at": "2026-11-14T10:23:20+08:00"
   },
   {
    "task_id": "FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM",
@@ -689,9 +701,24 @@
    "write_scope": "仅 seo.ts stickers titles[en]/titles[ja] 两个字符串; 不碰 zh 标题、不碰正文、不碰其他簇",
    "approval_gate": "SCHEDULED 2026-11-04 冻结解除后执行; 属规则合规修正(58 阻断线)+去未确认承诺, 非追排名变化; 执行后必跑门童 #27 + 三语 JSON + gsc-leak",
    "owner_lane": "manual",
-   "status": "SCHEDULED",
+   "status": "DONE",
    "scheduled_for": "2026-11-04",
-   "created_at": "2026-10-30T23:2:00+08:00"
+   "created_at": "2026-10-30T23:2:00+08:00",
+   "result": "EXECUTED 2026-11-12 by ae277dfa. The 2026-11-13 k3 review independently observed the en/ja sticker titles and zh-hk flyer title live. Scope closed at title layer only; unrelated commercial-truth residuals remain in their own tasks.",
+   "execution_commit": "ae277dfa",
+   "completed_at": "2026-11-12",
+   "production_deploy": {
+    "status": "DEPLOYED_AND_ONLINE_VERIFIED",
+    "evidence": ".hermes/logs/2026-11-13-ZP-k3-review.md sections 3.5-3.6"
+   },
+   "online_verify": {
+    "status": "PASS",
+    "date": "2026-11-13",
+    "evidence": ".hermes/logs/2026-11-13-ZP-k3-review.md",
+    "scope": "en/ja sticker category titles and zh-hk flyer title; title layer only"
+   },
+   "next_check": "2026-11-21 (earliest 7d decision export; overlapping windows remain observations)",
+   "reconciled_at": "2026-11-14T10:23:20+08:00"
   },
   {
    "task_id": "DIAG-20261030-STICKER-CLUSTER",
@@ -814,9 +841,15 @@
    "status": "DONE",
    "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
    "created_at": "2026-11-13T03:10:02+08:00",
-   "result": "NOT_EXECUTED",
-   "production_deploy": null,
-   "online_verify": null,
+   "result": "EXECUTED 2026-11-13: ff97d235 changed products-content.ts and sku-seo-data.ts (6+/6-), separating per-design sticker MOQ from A4-sheet yield and retaining conditional US$0.55 wording. RESET_BY_TRUTH_FIX applies to the old experiment.",
+   "production_deploy": {
+    "status": "PUSHED_NOT_INDEPENDENTLY_ONLINE_VERIFIED",
+    "pushed": true,
+    "head": "ff97d235",
+    "evidence": ".hermes/logs/lane-runs.jsonl run_id=ZP-daily-content-20261113T182529-harness",
+    "note": "Bus evidence proves push/head only; it does not prove a Cloudflare deployment or live-page assertions."
+   },
+   "online_verify": "PENDING",
    "next_check": "2026-11-18",
    "market": "en",
    "target": "/en/product/small-batch-stickers/ residual truth only",
@@ -837,14 +870,21 @@
    "measurement_reset": true,
    "reset_marker": "RESET_BY_TRUTH_FIX",
    "idempotency": "Do not redo deployed MOQ/H1 history. Correct only remaining conflicts; if not deployed, keep 2026-11-28 SERP recheck.",
-   "execution_commit": "PENDING",
-   "note": " | executed 2026-11-13 daily harness: 5+1 处 A4-sheet/pcs MOQ 口径分离 per CT-D3 (sku-seo body+FAQ / products-content L1964 L2007 L2042 L2047); from US$0.55 conditional; RESET_BY_TRUTH_FIX"
+   "execution_commit": "ff97d235",
+   "note": " | executed 2026-11-13 daily harness: 5+1 处 A4-sheet/pcs MOQ 口径分离 per CT-D3 (sku-seo body+FAQ / products-content L1964 L2007 L2042 L2047); from US$0.55 conditional; RESET_BY_TRUTH_FIX",
+   "completed_at": "2026-11-13",
+   "completed_by": "ZP-daily-content-20261113T182529-harness",
+   "reconciled_at": "2026-11-14T10:23:20+08:00",
+   "reconciliation_evidence": [
+    ".hermes/logs/2026-11-13-ZP-daily-content.md",
+    ".hermes/logs/lane-runs.jsonl"
+   ]
   },
   {
    "task_id": "FIX-20261113-CATALOG-TRUTH-RESIDUAL",
    "source_strategy": "CT-20261113-D1-D6",
    "score_model": "commercial-truth-residual-priority",
-   "status": "READY",
+   "status": "DONE",
    "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
    "created_at": "2026-11-13T03:10:02+08:00",
    "result": "NOT_EXECUTED",
@@ -871,7 +911,9 @@
    "required_generator": "node scripts/csv-to-sku-seo.mjs --apply",
    "measurement_reset": true,
    "reset_marker": "RESET_BY_TRUTH_FIX",
-   "idempotency": "Do not repeat en H1 or zh/ja description deployments. Keep their history and reset only if a new truth fix actually deploys."
+   "idempotency": "Do not repeat en H1 or zh/ja description deployments. Keep their history and reset only if a new truth fix actually deploys.",
+   "execution_commit": "c172b3d2",
+   "note": " | executed 2026-11-14 daily harness per CT-D4: proof/transport quote-confirmed + colour ICC/打样 (sku-seo catalog body/FAQ/CTA + products.ts zh/en/ja desc x8); RESET_BY_TRUTH_FIX; US$99 免运 K3 待批不动"
   },
   {
    "task_id": "FIX-20261113-JA-EDUCATION-C109-TRUTH",
@@ -919,5 +961,10 @@
   "document": "docs/2026-11-13-commercial-truth-optimal-value-decisions.md",
   "updated_at": "2026-11-13T03:10:02+08:00",
   "consumption_rule": "Only READY tasks with a decision_record and bounded write_scope may be consumed. DONE history is immutable; PARTIAL executes remaining scope only."
+ },
+ "queue_reconciliation_2026_11_14": {
+  "at": "2026-11-14T10:23:20+08:00",
+  "audit": ".hermes/logs/2026-11-14-queue-reconciliation-audit.json",
+  "rule": "Observed execution and online evidence reconciled narrowly; DONE history and missing monthly history were not rewritten."
  }
 }
