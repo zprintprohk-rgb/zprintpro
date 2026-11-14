@@ -271,6 +271,8 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 
 ### 8.3 关键词优先级（en 主战场，zh-hk/ja 次之）
 
+> 口径说明：下表为**提案级关键词清单**（供 Phase 1 内容立项用），非「当前排名/流量」主张；上线前须按 11-14／11-21 GSC 复测的实际 query×page 基线 + 商业真值门核验，缺证据的深位词不派单（沿用 11-13 飞轮纪律，禁止把本表数字写进客户可见内容）。
+
 | 层级 | en | zh-hk | ja |
 |---|---|---|---|
 | P0 | print on demand calendar printing / calendar printing no minimum order / one piece calendar printing | 月曆印刷 一件／掛曆 一本起印 | カレンダー 1冊から印刷／壁掛けカレンダー 1枚 |
