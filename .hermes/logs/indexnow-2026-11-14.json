@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-14",
+  "trigger": "GSC 商家信息「字段 brand 重复」验证失败 (2026-11-14, 受影响 2 项: ja white-card-boxes / ja die-cut-stickers) — 强制重抓以清除 Google 陈旧解析快照",
+  "api": "https://api.indexnow.org/indexnow",
+  "key": "b4743800634c73a56fc734e58d77a5d9",
+  "keyLocation": "https://zprintpro.com/b4743800634c73a56fc734e58d77a5d9.txt",
+  "method": "POST application/json; charset=utf-8",
+  "urlList": [
+    "https://zprintpro.com/ja/product/white-card-boxes/",
+    "https://zprintpro.com/ja/product/die-cut-stickers/"
+  ],
+  "fullProductBatch": {
+    "count": 297,
+    "scope": "3 locale (zh-hk/en/ja) × 99 product slugs",
+    "urlFile": "built from src/data/products.ts slugs"
+  },
+  "status": "200 (both the 2-URL targeted POST and the 297-URL full batch)",
+  "notes": [
+    "首轮 297-URL POST 400 (ContentType 缺 charset) → 补 'application/json; charset=utf-8' 后 200",
+    "IndexNow 覆盖 Bing/Yandex/Seznam/Naver; Google 侧需 GSC URL 检查 / 等待自然重抓",
+    "GSC 侧建议: 重抓落地后再点一次「验证修复」或对 2 URL 用 URL Inspection 请求编入索引"
+  ],
+  "evidence": "本文件 + .hermes/logs/2026-11-14-brand-duplicate-resolution.md"
+}

@@ -2,6 +2,14 @@
 
 import { useState } from 'react';
 
+/**
+ * 2026-11-14 (门童 #30 固化): 移除客户端组件内的 FAQPage schema script ——
+ *   'use client' 组件渲染 `<script type="application/ld+json">` 会把整个 schema
+ *   序列化进 RSC flight 载荷, 页面出现两份 schema → Google 解析器两份都吃 →
+ *   GSC 商家信息「字段 brand 重复」(2026-11-02 查案: JsonLd.tsx 已去 'use client')。
+ *   FAQPage schema 一律由服务端组件/页面输出 (本组件仅保留手风琴交互)。
+ */
+
 const faqData: Record<string, { q: string; a: string }[]> = {
   'zh-hk': [
     {
@@ -87,22 +95,9 @@ export default function RushDeliveryFAQ({ locale }: { locale: string }) {
   const [openIdx, setOpenIdx] = useState<number>(0);
   const faqs = faqData[locale] || faqData['en'];
 
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  };
-
   return (
     <section className="mb-12">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      {/* 2026-11-14 (门童 #30): FAQPage schema 已移除 —— 由服务端组件输出, 客户端禁渲染 ld+json */}
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
         {locale === 'zh-hk'
           ? '即日速遞常見問題'

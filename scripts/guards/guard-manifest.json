@@ -1,7 +1,7 @@
 {
   "schema": "guard-manifest/v1",
   "note": "門童編號與規則 ID 是**共享命名空間**：新增前必須先查本清單避免撞號（K3 2026-09-19 建議）。產生器：scripts/gen-guard-manifest.mjs；校驗：node scripts/gen-guard-manifest.mjs（有衝突 exit 1）",
-  "generatedAt": "2026-10-11T23:03:39.213Z",
+  "generatedAt": "2026-11-14T08:29:51.691Z",
   "guardNumbers": {
     "1": [
       "scripts\\guards\\common.js",
@@ -47,7 +47,8 @@
     ],
     "9": [
       "scripts\\guards\\gsc-source-guard.js",
-      "scripts\\check-regression-guard.js"
+      "scripts\\check-regression-guard.js",
+      "scripts\\rebuild-gsc-index.mjs"
     ],
     "11": [
       "scripts\\guards\\pillar-guard.js"
@@ -134,6 +135,10 @@
     "29": [
       "scripts\\guards\\keywords-detox-guard.js",
       "scripts\\inject-recovery-mode-20261012.mjs"
+    ],
+    "30": [
+      "scripts\\guards\\ldjson-client-guard.js",
+      "scripts\\check-regression-guard.js"
     ]
   },
   "ruleIds": {
@@ -447,6 +452,9 @@
     "CF_PAGES": [
       "scripts\\install-hooks.mjs"
     ],
+    "CF_ZONE_ID": [
+      "scripts\\cf-bot-hardening.sh"
+    ],
     "CHECK_ONLY": [
       "scripts\\apply-sku-compress-20260922.mjs",
       "scripts\\install-hooks.mjs"
@@ -456,6 +464,9 @@
     ],
     "CJK_IDEOGRAPH_RE": [
       "scripts\\guards\\i18n-guard.js"
+    ],
+    "CLOUDFLARE_API_TOKEN": [
+      "scripts\\cf-bot-hardening.sh"
     ],
     "CN_TOKENS": [
       "scripts\\audit-ja-cn-word-pollution.cjs"
@@ -486,6 +497,12 @@
     ],
     "CONTENT_MAP": [
       "scripts\\rewrite-blog-content-v3.mjs"
+    ],
+    "COPY_FINGERPRINT_CODE": [
+      "scripts\\rotate-copy-fingerprint.mjs"
+    ],
+    "COPY_FINGERPRINT_ISSUED_AT": [
+      "scripts\\rotate-copy-fingerprint.mjs"
     ],
     "COUNT_MISLEADING": [
       "scripts\\guards\\count-guard.js"
@@ -577,6 +594,9 @@
     "CTA_TRIGGERS_ZHHK": [
       "scripts\\audit-seo-meta.ts"
     ],
+    "CTR_FROZEN": [
+      "scripts\\v28_5-build-manifest.mjs"
+    ],
     "CUSTOMER_VISIBLE_FILES": [
       "scripts\\guards\\ce-truncation-guard.js",
       "scripts\\guards\\gsc-leak-guard.js"
@@ -608,6 +628,9 @@
     "DECLARED_APPLIED_IS_NOT_EFFECTIVE": [
       "scripts\\probe-skill-handover.mjs"
     ],
+    "DEEPSEEK_API_KEY": [
+      "scripts\\lane-status.mjs"
+    ],
     "DELETIONS_ONLY": [
       "scripts\\moq10-repair-drift.ts"
     ],
@@ -622,6 +645,9 @@
     ],
     "DESC_OPS": [
       "scripts\\apply-kw-flywheel-w1-20260922.mjs"
+    ],
+    "DEST_ROOT": [
+      "scripts\\v28_5-image-rollback.mjs"
     ],
     "DIGITAL_LINE_BOOK_SLUGS": [
       "scripts\\moq10-books-minquantity-10.mjs"
@@ -768,8 +794,14 @@
     "FILLER_WORD": [
       "scripts\\guards\\title-v5-guard.js"
     ],
+    "FINALIZABLE_VERDICTS": [
+      "scripts\\lane-status.mjs"
+    ],
     "FIX_MODE": [
       "scripts\\check-encoding.js"
+    ],
+    "FLIGHT_PAYLOAD_DUPLICATE_SCHEMA": [
+      "scripts\\guards\\ldjson-client-guard.js"
     ],
     "FORBIDDEN_NAP": [
       "scripts\\audit-seo-meta.ts"
@@ -795,12 +827,18 @@
     "FROZEN_SLOTS": [
       "scripts\\gen-title-flywheel.mjs"
     ],
+    "FS_PUBLIC": [
+      "scripts\\v28_5-image-deploy.mjs"
+    ],
     "FULL_EXEMPT_PATHS": [
       "scripts\\guards\\common.js",
       "scripts\\guards\\credibility-guard.js",
       "scripts\\guards\\cron-prompts-exemption-guard.js",
       "scripts\\check-regression-guard.js",
       "scripts\\probe-skill-handover.mjs"
+    ],
+    "GATE_HOURS": [
+      "scripts\\rebuild-gsc-index.mjs"
     ],
     "GENERATED_END": [
       "scripts\\assert-sku-seo-keys.mjs"
@@ -851,7 +889,8 @@
       "scripts\\guards\\gsc-source-guard.js"
     ],
     "GSC_STALE": [
-      "scripts\\guards\\gsc-source-guard.js"
+      "scripts\\guards\\gsc-source-guard.js",
+      "scripts\\rebuild-gsc-index.mjs"
     ],
     "GUARDED_FILES": [
       "scripts\\guards\\institutional-promise-guard.js"
@@ -969,6 +1008,9 @@
       "scripts\\generate-sitemap.js",
       "scripts\\indexnow-submit.mjs"
     ],
+    "INDEX_PATH": [
+      "scripts\\rebuild-gsc-index.mjs"
+    ],
     "INDUSTRIES_EDU": [
       "scripts\\moq10-category-page-check.ts"
     ],
@@ -1075,6 +1117,9 @@
     "LATIN_ALLOW": [
       "scripts\\generate-title-batch.mjs"
     ],
+    "LDJSON_IN_CLIENT_COMPONENT": [
+      "scripts\\guards\\ldjson-client-guard.js"
+    ],
     "LEDGER_ESCALATE_AT": [
       "scripts\\sku-title-census.mjs"
     ],
@@ -1091,11 +1136,17 @@
     "LEGIT_MIX_TOKENS": [
       "scripts\\guards\\common.js"
     ],
+    "LIB_ROOT": [
+      "scripts\\v28_5-image-deploy.mjs"
+    ],
     "LINE_RULES": [
       "scripts\\moq10-fix-category-hooks.mjs"
     ],
     "LITERAL_RULES": [
       "scripts\\guards\\cron-prompts-exemption-guard.js"
+    ],
+    "LIVE_SLUGS": [
+      "scripts\\v28_5-build-manifest.mjs"
     ],
     "LOCALE_KEYS": [
       "scripts\\locale-audit\\fix.js"
@@ -1210,6 +1261,9 @@
     "MINQTY_WARNINGS": [
       "scripts\\guards\\price-band-guard.js"
     ],
+    "MIN_GAP_MS": [
+      "scripts\\push-gate-check.mjs"
+    ],
     "MIN_INTERNAL_LINKS": [
       "scripts\\guards\\internal-links-cta-guard.js"
     ],
@@ -1232,6 +1286,9 @@
     "MONEY_SET": [
       "scripts\\fix-title-batch-T2-1b.mjs"
     ],
+    "MONEY_WORDS": [
+      "scripts\\k3-kpi-panel.mjs"
+    ],
     "MOQ_BELOW_MIN": [
       "scripts\\guards\\title-v5-guard.js"
     ],
@@ -1251,6 +1308,7 @@
       "scripts\\gen-llms.ts"
     ],
     "MOQ_PATTERNS": [
+      "scripts\\guards\\price-truth-guard.js",
       "scripts\\moq10-books-context-scan.ts",
       "scripts\\moq10-diag3.ts",
       "scripts\\moq25-anchor-scan.ts"
@@ -1539,6 +1597,9 @@
     "PRICE_MISMATCH": [
       "scripts\\guards\\title-v5-guard.js"
     ],
+    "PRICE_PATTERNS": [
+      "scripts\\guards\\price-truth-guard.js"
+    ],
     "PRICE_RANGE_RE": [
       "scripts\\aeo-desc-census-20260922.mjs"
     ],
@@ -1698,6 +1759,9 @@
     "REQUIRED_VERSION": [
       "scripts\\pre-deploy-check.sh"
     ],
+    "RETIRED_SLUGS": [
+      "scripts\\v28_5-build-manifest.mjs"
+    ],
     "RETRACTION_KEYWORDS": [
       "scripts\\guards\\count-guard.js"
     ],
@@ -1771,6 +1835,10 @@
     ],
     "SERVICE_RE": [
       "scripts\\generate-title-batch.mjs"
+    ],
+    "SESSION_LOCK": [
+      "scripts\\push-gate-check.mjs",
+      "scripts\\v28_5-build-manifest.mjs"
     ],
     "SETUP_FEE": [
       "scripts\\gen-posters-json.mjs"
@@ -1983,6 +2051,9 @@
     "STYLE_RULES": [
       "scripts\\seedream-prompt-router.js"
     ],
+    "SUCCESS_VERDICTS": [
+      "scripts\\lane-status.mjs"
+    ],
     "T1_REWRITE": [
       "scripts\\audit-sku-quality.mjs",
       "scripts\\_tmp-draft-ctx.mjs",
@@ -2148,6 +2219,9 @@
     "URL_LIST": [
       "scripts\\_indexnow-w6w7.js"
     ],
+    "URL_ROOT": [
+      "scripts\\v28_5-image-deploy.mjs"
+    ],
     "USE_PRODUCTS_TRUTH": [
       "scripts\\generate-title-batch.mjs",
       "scripts\\resolve-moq-conflicts.mjs"
@@ -2216,5 +2290,5 @@
       ".githooks/pre-push"
     ]
   },
-  "maxGuardNumber": 29
+  "maxGuardNumber": 30
 }
