@@ -10,7 +10,7 @@
     "status_available": true,
     "status_freshness": {
       "available": true,
-      "generated_local": "2026-11-13 00:29",
+      "generated_local": "2026-11-13 06:43",
       "age_days": 0,
       "stale": false,
       "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
@@ -20,18 +20,20 @@
     "geo_available": true
   },
   "execution": {
-    "runs": 16,
+    "runs": 18,
     "verdicts": {
-      "OK": 12,
-      "FAILED": 2,
-      "BLOCKED": 1,
-      "PARTIAL": 1
+      "FAILED": 3,
+      "OK": 11,
+      "STALE": 1,
+      "PARTIAL": 1,
+      "PENDING": 2
     },
     "per_lane": {
       "ZP-daily-content": {
-        "OK": 8,
-        "FAILED": 1,
-        "BLOCKED": 1
+        "FAILED": 2,
+        "STALE": 1,
+        "OK": 7,
+        "PENDING": 1
       },
       "ZP-gsc-feedback": {
         "FAILED": 1,
@@ -40,11 +42,14 @@
       },
       "ZP-blog-deepfix": {
         "OK": 1
+      },
+      "ZP-k3-review": {
+        "PENDING": 1
       }
     },
     "status_freshness": {
       "available": true,
-      "generated_local": "2026-11-13 00:29",
+      "generated_local": "2026-11-13 06:43",
       "age_days": 0,
       "stale": false,
       "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"
@@ -129,9 +134,9 @@
     },
     {
       "task_id": "REVIEW-20261030-WEEKLY",
-      "status": "SCHEDULED",
-      "decision": "HOLD",
-      "reason": "insufficient comparable outcome evidence; no win/loss claim",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
       "next_check": "2026-10-30"
     },
     {
@@ -185,7 +190,7 @@
     },
     {
       "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
-      "status": "READY",
+      "status": "CLOSED_RESOLVED",
       "decision": "HOLD",
       "reason": "insufficient comparable outcome evidence; no win/loss claim",
       "next_check": "2026-10-31"
@@ -206,9 +211,9 @@
     },
     {
       "task_id": "FIX-20261030-BLOG-CERT-PHRASES",
-      "status": "WAITING_K3",
+      "status": "READY",
       "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
+      "reason": "retest is not due or lacks a concrete date",
       "next_check": null
     },
     {
@@ -227,17 +232,17 @@
     },
     {
       "task_id": "FIX-20261030-STICKER-ZH-TRUTH-CONFLICT",
-      "status": "WAITING_K3",
+      "status": "READY",
       "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-04"
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
     },
     {
       "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
-      "status": "WAITING_K3",
+      "status": "READY",
       "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-04"
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
     },
     {
       "task_id": "FIX-20261030-BLOG-H1-BRAND-SUFFIX",
@@ -262,10 +267,10 @@
     },
     {
       "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
-      "status": "SCHEDULED",
-      "decision": "HOLD",
-      "reason": "retest is not due or lacks a concrete date",
-      "next_check": null
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-21"
     },
     {
       "task_id": "DIAG-20261030-STICKER-CLUSTER",
@@ -283,16 +288,44 @@
     },
     {
       "task_id": "FIX-20261031-FIVE-CATEGORY-TRUTH",
-      "status": "WAITING_K3",
+      "status": "READY",
       "decision": "HOLD",
-      "reason": "approval gate is not satisfied; executor must not self-approve",
-      "next_check": "2026-11-06"
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
     },
     {
       "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
       "status": "WAITING_K3",
       "decision": "HOLD",
       "reason": "approval gate is not satisfied; executor must not self-approve",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261113-POSTER-BLOG-TRUTH",
+      "status": "READY",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+      "status": "DONE",
+      "decision": "STOP",
+      "reason": "terminal task state",
+      "next_check": "2026-11-18"
+    },
+    {
+      "task_id": "FIX-20261113-CATALOG-TRUTH-RESIDUAL",
+      "status": "READY",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
+      "next_check": null
+    },
+    {
+      "task_id": "FIX-20261113-JA-EDUCATION-C109-TRUTH",
+      "status": "READY",
+      "decision": "HOLD",
+      "reason": "retest is not due or lacks a concrete date",
       "next_check": null
     }
   ],
@@ -723,12 +756,12 @@
             "required_action": "Respect the active queue cooldown/HOLD; perform only the scheduled measurement",
             "approval_gate": "Do not dispatch title, snippet or content changes until the queue gate opens",
             "cooldown_days": 7,
-            "retry_at": "2026-11-28",
+            "retry_at": "2026-11-18",
             "exit_criteria": "Recheck on the queue date or retain HOLD_WAITING_K3; no duplicate FIX dispatch",
             "production_deploy": null,
             "online_verify": null,
             "retest": {
-              "next_check": "2026-11-28",
+              "next_check": "2026-11-18",
               "required_windows": [
                 "7d",
                 "14d",
@@ -740,7 +773,7 @@
             "queue_constraint": {
               "cluster": "stickers-en",
               "decision": "REMEASURE_NOT_DUE",
-              "recheck_after": "2026-11-28"
+              "recheck_after": "2026-11-18"
             }
           },
           {
@@ -896,10 +929,9 @@
     "blog": {
       "available": true,
       "source": ".hermes/cron-prompts/blog-money-keyword-queue.json",
-      "source_window": "2026-10-08..2026-11-04",
+      "source_window": "2026-10-14..2026-11-10",
       "status_counts": {
-        "remeasure": 6,
-        "blocked_waiting_k3": 2
+        "remeasure": 8
       },
       "items": [
         {
@@ -988,10 +1020,10 @@
         {
           "cluster": "packaging-zh-hk",
           "locale": "zh-hk",
-          "status": "blocked_waiting_k3",
-          "route": "HOLD",
-          "decision": "HOLD_WAITING_K3",
-          "recheck_after": null,
+          "status": "remeasure",
+          "route": "MEASURE",
+          "decision": "REMEASURE_NOT_DUE",
+          "recheck_after": "2026-11-14",
           "money_queries": [
             "紙盒印刷",
             "包裝盒訂製",
@@ -1045,7 +1077,7 @@
           "status": "remeasure",
           "route": "MEASURE",
           "decision": "REMEASURE_NOT_DUE",
-          "recheck_after": "2026-11-28",
+          "recheck_after": "2026-11-18",
           "money_queries": [
             "small batch sticker printing"
           ],
@@ -1063,9 +1095,9 @@
         {
           "cluster": "catalog-en",
           "locale": "en",
-          "status": "blocked_waiting_k3",
-          "route": "HOLD",
-          "decision": "HOLD_WAITING_K3",
+          "status": "remeasure",
+          "route": "MEASURE",
+          "decision": "REMEASURE_NOT_DUE",
           "recheck_after": "2026-11-28",
           "money_queries": [
             "china catalog printing"

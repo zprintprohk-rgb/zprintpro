@@ -5,9 +5,9 @@
 ## Execution health
 
 - Window: 2026-11-07 to 2026-11-13
-- Runs: 16; verdicts: {"OK": 12, "FAILED": 2, "BLOCKED": 1, "PARTIAL": 1}
+- Runs: 18; verdicts: {"FAILED": 3, "OK": 11, "STALE": 1, "PARTIAL": 1, "PENDING": 2}
 - Current lanes requiring attention: 3
-- Lane status: {"available": true, "generated_local": "2026-11-13 00:29", "age_days": 0, "stale": false, "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"}
+- Lane status: {"available": true, "generated_local": "2026-11-13 06:43", "age_days": 0, "stale": false, "guard": "STALE_STATUS or unknown freshness cannot dispatch lane-repair tasks; use fresh bus and scheduler evidence"}
 - Lane-status freshness gate passed or status is absent; absence is not proof of health.
 
 | lane | verdict | recovery | evidence |
@@ -28,7 +28,7 @@
 | JA-C109-20261028-DEADLINE | DONE | STOP | terminal task state |
 | MEASURE-20261028-ATTRIBUTION | CLOSED_BY_K3_S0.37 | HOLD | retest is not due or lacks a concrete date |
 | GEO-20261103-AI-PROBE-S1 | SCHEDULED | HOLD | insufficient comparable outcome evidence; no win/loss claim |
-| REVIEW-20261030-WEEKLY | SCHEDULED | HOLD | insufficient comparable outcome evidence; no win/loss claim |
+| REVIEW-20261030-WEEKLY | DONE | STOP | terminal task state |
 | REVIEW-20261101-MONTHLY | SCHEDULED | HOLD | insufficient comparable outcome evidence; no win/loss claim |
 | FIX-WEEKLY-2026-10-28-ZP-weekly-meta-f3e926f7 | BLOCKED_INFRA | FIX | infrastructure blocker requires its designated owner |
 | FIX-WEEKLY-2026-10-28-ZP-blog-deepfix-4231b4bd | BLOCKED_INFRA | FIX | infrastructure blocker requires its designated owner |
@@ -36,22 +36,26 @@
 | TRUTH-T1-20261029-CALENDARS-50PCS | DONE | STOP | terminal task state |
 | TRUTH-T2-20261029-MINI-CALENDARS-1000 | DONE | STOP | terminal task state |
 | TRUTH-T3-20261029-EN-UNIT-LOCALIZE | DONE | STOP | terminal task state |
-| FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b | READY | HOLD | insufficient comparable outcome evidence; no win/loss claim |
+| FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b | CLOSED_RESOLVED | HOLD | insufficient comparable outcome evidence; no win/loss claim |
 | FIX-20261030-AEO-ANSWER-BLOCK-PROOF-CLAIM | DONE | STOP | terminal task state |
 | FIX-20261030-SKU-BODY-SHIPPING-LEGACY | DONE | STOP | terminal task state |
-| FIX-20261030-BLOG-CERT-PHRASES | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261030-BLOG-CERT-PHRASES | READY | HOLD | retest is not due or lacks a concrete date |
 | FIX-20261030-A1-POSTER-PRICE-TRIPLE | DONE | STOP | terminal task state |
 | DIAG-20261030-STICKER-REGRESSION | DONE | STOP | terminal task state |
-| FIX-20261030-STICKER-ZH-TRUTH-CONFLICT | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
-| FIX-20261030-STICKER-PRICE-THREE-LAYER | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261030-STICKER-ZH-TRUTH-CONFLICT | READY | HOLD | retest is not due or lacks a concrete date |
+| FIX-20261030-STICKER-PRICE-THREE-LAYER | READY | HOLD | retest is not due or lacks a concrete date |
 | FIX-20261030-BLOG-H1-BRAND-SUFFIX | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
 | ASSET-20261030-PACKAGING-PROCUREMENT-ASSETS | READY | HOLD | insufficient comparable outcome evidence; no win/loss claim |
 | FIX-20261030-SKU-SEO-US-SHIPPING-LEGACY | DONE | STOP | terminal task state |
-| FIX-20261104-STICKER-CATEGORY-TITLE-EQ | SCHEDULED | HOLD | retest is not due or lacks a concrete date |
+| FIX-20261104-STICKER-CATEGORY-TITLE-EQ | DONE | STOP | terminal task state |
 | DIAG-20261030-STICKER-CLUSTER | DONE | STOP | terminal task state |
 | FIX-20261031-DHL-SHIPPING-CLAIMS | DONE | STOP | terminal task state |
-| FIX-20261031-FIVE-CATEGORY-TRUTH | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261031-FIVE-CATEGORY-TRUTH | READY | HOLD | retest is not due or lacks a concrete date |
 | FIX-20261031-PRIMARY-URL-MISMATCH | WAITING_K3 | HOLD | approval gate is not satisfied; executor must not self-approve |
+| FIX-20261113-POSTER-BLOG-TRUTH | READY | HOLD | retest is not due or lacks a concrete date |
+| FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL | DONE | STOP | terminal task state |
+| FIX-20261113-CATALOG-TRUTH-RESIDUAL | READY | HOLD | retest is not due or lacks a concrete date |
+| FIX-20261113-JA-EDUCATION-C109-TRUTH | READY | HOLD | retest is not due or lacks a concrete date |
 
 ## GSC evidence handoffs
 
@@ -77,7 +81,7 @@
 | MEASURE | コミケ 印刷 | 129/0/25.74 | ZP-gsc-feedback | 2026-11-14 | Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date |
 | MEASURE | 教材 印刷製本 | 56/0/36.95 | ZP-gsc-feedback | 2026-11-20 | Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date |
 | MEASURE | a2 poster | 38/1/40.0 | ZP-gsc-feedback | 2026-11-20 | Root-cause evidence recorded with a comparable baseline; next FIX/HOLD decision has an owner and retest date |
-| HOLD | small batch sticker printing | 21/0/7.29 | ZP-gsc-feedback | 2026-11-28 | Recheck on the queue date or retain HOLD_WAITING_K3; no duplicate FIX dispatch |
+| HOLD | small batch sticker printing | 21/0/7.29 | ZP-gsc-feedback | 2026-11-18 | Recheck on the queue date or retain HOLD_WAITING_K3; no duplicate FIX dispatch |
 | HOLD | 卒アル販売 | 16/0/5.0 | ZP-gsc-feedback | 2026-11-20 | Sufficient same-window evidence or explicit priority decision; otherwise remain HOLD |
 | HOLD | 證書印刷 | 7/0/10.0 | ZP-gsc-feedback | 2026-11-20 | Sufficient same-window evidence or explicit priority decision; otherwise remain HOLD |
 | HOLD | 书籍印刷 | 5/0/7.6 | ZP-gsc-feedback | 2026-11-20 | Sufficient same-window evidence or explicit priority decision; otherwise remain HOLD |
@@ -86,17 +90,17 @@
 
 ## Blog queue remeasurement
 
-- Source window: 2026-10-08..2026-11-04; statuses: {"remeasure": 6, "blocked_waiting_k3": 2}
+- Source window: 2026-10-14..2026-11-10; statuses: {"remeasure": 8}
 
 | cluster | status | decision | recheck |
 |---|---|---|---|
 | flyers-zh-hk | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
 | stickers-zh-hk | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
 | books-zh-hk | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
-| packaging-zh-hk | blocked_waiting_k3 | HOLD_WAITING_K3 | — |
+| packaging-zh-hk | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
 | posters-zh-hk | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
-| stickers-en | remeasure | REMEASURE_NOT_DUE | 2026-11-28 |
-| catalog-en | blocked_waiting_k3 | HOLD_WAITING_K3 | 2026-11-28 |
+| stickers-en | remeasure | REMEASURE_NOT_DUE | 2026-11-18 |
+| catalog-en | remeasure | REMEASURE_NOT_DUE | 2026-11-28 |
 | comiket-ja | remeasure | REMEASURE_NOT_DUE | 2026-11-14 |
 
 ## GEO measurement

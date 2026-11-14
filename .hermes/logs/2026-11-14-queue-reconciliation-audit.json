@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-14T10:23:20+08:00",
+  "scope": "Narrow queue accounting reconciliation; no src or Git writes",
+  "strategy_task_changes": [
+    {
+      "task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+      "changed_fields": [
+        "status",
+        "result",
+        "execution_commit",
+        "production_deploy",
+        "online_verify",
+        "reset_marker",
+        "next_check"
+      ],
+      "before": {
+        "status": "DONE",
+        "result": "NOT_EXECUTED",
+        "execution_commit": "PENDING",
+        "production_deploy": null,
+        "online_verify": null,
+        "reset_marker": "RESET_BY_TRUTH_FIX",
+        "next_check": "2026-11-18"
+      },
+      "after": {
+        "status": "DONE",
+        "result": "EXECUTED 2026-11-13: ff97d235 changed products-content.ts and sku-seo-data.ts (6+/6-), separating per-design sticker MOQ from A4-sheet yield and retaining conditional US$0.55 wording. RESET_BY_TRUTH_FIX applies to the old experiment.",
+        "execution_commit": "ff97d235",
+        "production_deploy": {
+          "status": "PUSHED_NOT_INDEPENDENTLY_ONLINE_VERIFIED",
+          "pushed": true,
+          "head": "ff97d235",
+          "evidence": ".hermes/logs/lane-runs.jsonl run_id=ZP-daily-content-20261113T182529-harness",
+          "note": "Bus evidence proves push/head only; it does not prove a Cloudflare deployment or live-page assertions."
+        },
+        "online_verify": "PENDING",
+        "reset_marker": "RESET_BY_TRUTH_FIX",
+        "next_check": "2026-11-18"
+      }
+    },
+    {
+      "task_id": "FIX-20261104-STICKER-CATEGORY-TITLE-EQ",
+      "changed_fields": [
+        "status",
+        "result",
+        "execution_commit",
+        "production_deploy",
+        "online_verify",
+        "next_check"
+      ],
+      "before": {
+        "status": "SCHEDULED",
+        "result": null,
+        "execution_commit": null,
+        "production_deploy": null,
+        "online_verify": null,
+        "next_check": null
+      },
+      "after": {
+        "status": "DONE",
+        "result": "EXECUTED 2026-11-12 by ae277dfa. The 2026-11-13 k3 review independently observed the en/ja sticker titles and zh-hk flyer title live. Scope closed at title layer only; unrelated commercial-truth residuals remain in their own tasks.",
+        "execution_commit": "ae277dfa",
+        "production_deploy": {
+          "status": "DEPLOYED_AND_ONLINE_VERIFIED",
+          "evidence": ".hermes/logs/2026-11-13-ZP-k3-review.md sections 3.5-3.6"
+        },
+        "online_verify": {
+          "status": "PASS",
+          "date": "2026-11-13",
+          "evidence": ".hermes/logs/2026-11-13-ZP-k3-review.md",
+          "scope": "en/ja sticker category titles and zh-hk flyer title; title layer only"
+        },
+        "next_check": "2026-11-21 (earliest 7d decision export; overlapping windows remain observations)"
+      }
+    },
+    {
+      "task_id": "REVIEW-20261030-WEEKLY",
+      "changed_fields": [
+        "status",
+        "result",
+        "report",
+        "scheduler_recovery"
+      ],
+      "before": {
+        "status": "SCHEDULED",
+        "result": "Pending first upgraded weekly review",
+        "report": null,
+        "scheduler_recovery": null
+      },
+      "after": {
+        "status": "DONE",
+        "result": "REPORT_COMPLETE 2026-11-13: deterministic weekly review generated. This closes the first-review deliverable only; it is not evidence that natural Windows scheduling recovered.",
+        "report": ".hermes/logs/periodic-review-weekly-2026-11-13.md",
+        "scheduler_recovery": "NOT_PROVEN"
+      }
+    },
+    {
+      "task_id": "FIX-WEEKLY-2026-10-30-ZP-k3-review-ca005d9b",
+      "changed_fields": [
+        "status",
+        "result",
+        "retry_allowed"
+      ],
+      "before": {
+        "status": "READY",
+        "result": "Dispatched by weekly review from observed BLOCKED; not a completed fix",
+        "retry_allowed": null
+      },
+      "after": {
+        "status": "CLOSED_RESOLVED",
+        "result": "CLOSED 2026-11-14: the old 2026-10-30 lock-contention incident was followed by successful k3 review deliveries. Do not retry the historical lock event; current scheduler failures are tracked separately.",
+        "retry_allowed": false
+      }
+    },
+    {
+      "task_id": "REVIEW-20261101-MONTHLY",
+      "changed_fields": [
+        "status",
+        "result"
+      ],
+      "before": {
+        "status": "SCHEDULED",
+        "result": "Pending first upgraded monthly review"
+      },
+      "after": {
+        "status": "SCHEDULED",
+        "result": "HISTORICAL_MISSING: no 2026-11-01 monthly execution report was found. Do not fabricate or backfill a past natural run; next valid monthly review must use current evidence and identify itself as a current run."
+      }
+    }
+  ],
+  "blog_queue_before": {
+    "updated_at": "2026-11-13",
+    "source_window": "2026-10-08..2026-11-04",
+    "latest_evidence_handoff": {
+      "date": "2026-11-07",
+      "source": ".hermes/logs/gsc-2026-11-07-money-keyword-delta.json",
+      "observation_window": "2026-10-08..2026-11-04",
+      "xlsx_status": "AVAILABLE; data day 2026-11-04",
+      "api_status": "NOT_EVALUATED; API freshness was not checked in this review",
+      "baseline_policy": "Keep each item's original frozen baseline and append current observations to measurement_history; a moving window is not an experiment win/loss.",
+      "action_policy": "Page-1 zero-click queries are FIX candidates only after SERP/snippet audit; deep positions and split attribution are MEASURE. No automatic new article, canonical, redirect or K3 self-approval.",
+      "geo_status": "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1"
+    },
+    "small_batch_recheck_after": "2026-11-28",
+    "small_batch_commercial_truth": {
+      "decision_id": "D3",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "execution_task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+      "execution_status": "READY_NOT_DEPLOYED",
+      "measurement_reset_after_deploy": true
+    }
+  },
+  "blog_queue_after": {
+    "updated_at": "2026-11-14",
+    "source_window": "2026-10-14..2026-11-10",
+    "latest_evidence_handoff": {
+      "date": "2026-11-12",
+      "source": ".hermes/logs/gsc-2026-11-12-money-keyword-delta.json",
+      "observation_window": "2026-10-14..2026-11-10",
+      "xlsx_status": "AVAILABLE; 7d/28d data day 2026-11-10; latest 3mo export remains 2026-11-03",
+      "api_status": "NOT_EVALUATED; no current query-page join is claimed",
+      "baseline_policy": "Keep each item's original frozen baseline and append current observations to measurement_history; a moving window is not an experiment win/loss.",
+      "action_policy": "Page-1 zero-click queries are FIX candidates only after SERP/snippet audit; deep positions and split attribution are MEASURE. No automatic new article, canonical, redirect or K3 self-approval.",
+      "geo_status": "S1 complete with partial citation URLs; S2 2026-11-20..2026-11-24; do not rerun S1",
+      "serp_status": "SERP_UNAVAILABLE; do not infer live displayed titles/snippets",
+      "coordination_board": ".hermes/logs/coordination-board.json"
+    },
+    "small_batch_recheck_after": "2026-11-18",
+    "small_batch_commercial_truth": {
+      "decision_id": "D3",
+      "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
+      "execution_task_id": "FIX-20261113-SMALLBATCH-TRUTH-RESIDUAL",
+      "execution_status": "DONE_PUSHED_ONLINE_VERIFY_PENDING",
+      "measurement_reset_after_deploy": true,
+      "execution_commit": "ff97d235",
+      "production_deploy": "PUSHED_NOT_INDEPENDENTLY_ONLINE_VERIFIED",
+      "online_verify": "PENDING",
+      "experiment_status": "RESET_BY_TRUTH_FIX"
+    }
+  },
+  "backups": ".hermes/tmp/queue-reconciliation-backup-20261114",
+  "unchanged_guards": [
+    "REVIEW-20261101-MONTHLY remains SCHEDULED and historically missing",
+    "FIX-20261031-PRIMARY-URL-MISMATCH remains WAITING_K3",
+    "poster primary URL remains /zh-hk/category/posters/",
+    "no natural-scheduler recovery is inferred"
+  ]
+}

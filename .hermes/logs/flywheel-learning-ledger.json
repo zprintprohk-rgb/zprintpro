@@ -259,6 +259,30 @@
       "blocked_reason": "11-10 复测未执行（本次会话未跑 22 次探针调用）"
     }
   ],
+  "retest_gate_2026_11_14": {
+    "attempted_at": "2026-11-14T20:13:00+08:00",
+    "owner_lane": "ZP-gsc-feedback",
+    "status": "BLOCKED",
+    "reason_code": "NO_NEW_EXPORT_DATA_SUPPLY_STALE",
+    "data_supply_note": "No 2026-11-13 or 2026-11-14 GSC export exists. Latest export 2026-11-12 carries 7d/28d data day 2026-11-10 and is 92.2h old at 20:13 (>72h). Current query x page join absent; SERP_UNAVAILABLE.",
+    "available_window": { "7d": "2026-11-04..2026-11-10", "28d": "2026-10-14..2026-11-10", "post_change_7d": "28.6-42.9%", "post_change_28d": "7.1-10.7%" },
+    "blocked_experiment_ids": [
+      "EXP-1108-FLYERS-CLUSTER",
+      "EXP-1108-POSTER-PRIMARY-URL",
+      "EXP-1108-WEDDING-PRIMARY-URL",
+      "EXP-1108-JA-DOUJINSHI-UNIT",
+      "EXP-1108-JA-TEXTBOOK-PRICE",
+      "EXP-1108-EN-A2-POSTER",
+      "EXP-1109-CATALOG-EN-H1",
+      "EXP-1109-CATALOG-DESC",
+      "EXP-STICKER-THIRD-WINDOW",
+      "EXP-BOOKS-DUAL-PAGE"
+    ],
+    "verdict_policy": "Per contract 8.8 every due retest is recorded BLOCKED with the data-supply reason. Entry-level verdict (DEPLOYED / HOLD / MEASURE) is intentionally NOT rewritten so deployment history is preserved; this block is the authoritative retest status for 2026-11-14.",
+    "k3_action": "Export 2026-11-13 and 2026-11-14 24h/7d/28d (+3mo) into GSC数据/, restart proxy 7892, run python scripts/gsc-cliff-detector.py, run node scripts/rebuild-gsc-index.mjs --write. Do not relabel the 2026-11-12 batch as a 11-14 retest.",
+    "evidence": ".hermes/logs/2026-11-14-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-14.json",
+    "next_check": "2026-11-18"
+  },
   "data_supply": {
     "status": "BROKEN_DAY6",
     "latest_xlsx": "2026-11-07（24h/7d/28d；缺 3mo）",

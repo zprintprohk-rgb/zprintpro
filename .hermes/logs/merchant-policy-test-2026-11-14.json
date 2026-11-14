@@ -1,0 +1,12 @@
+{
+  "verdict": "PASS",
+  "locales": 3,
+  "productsPerLocale": 83,
+  "productAssertions": 249,
+  "categoryAssertions": 249,
+  "feedAssertions": 249,
+  "validOffersAcrossThreeLocales": 249,
+  "shippingAssertions": "PDP + category + feed: no unconditional shippingDetails or g:shipping",
+  "returnAssertions": "finite window=14 days; quality-defect condition; no unsupported offer-level fields",
+  "priceAssertions": "PDP = category = feed = getProductOfferPrice; no zero-price Offers"
+}
