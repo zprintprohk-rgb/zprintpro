@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
 import { PRODUCT_BRAND_NAME } from '@/lib/brand';
+import { getMerchantReturnPolicy } from '@/lib/merchant-policy';
 
 /**
  * 2026-07-22 定稿 (user 拍板): Schema.org / GSC / favicon 统一 gsc-logo.png (3 locale 通用)
@@ -1256,12 +1257,14 @@ export function generateProductJsonLd(
   })();
   const mq = procurement?.minQuantity ?? null;
   const quoteUrl = `${siteConfig.url}/${locale}/quote/`;
+  // 2026-11-14 真值收口：只输出 products.ts 可追溯的 MOQ／单位。
+  // 免费打样、1 小时打样及 DHL 全球派送并非全 SKU 统一条件，不得写入采购承诺。
   const sourcingKeywords = mq
     ? locale === 'zh-hk'
-      ? `MOQ ${mq}${unitText}起, 免費數碼打稿, 1小時打樣, 跨境DHL全球派送`
+      ? `MOQ ${mq}${unitText}起`
       : locale === 'ja'
-        ? `最小ロット${mq}${unitText}, 無料デジタル校正, 1時間校正対応, DHL国際配送`
-        : `MOQ ${mq} pcs, free digital proof, 1-hour proofing, ships worldwide via DHL`
+        ? `最小ロット${mq}${unitText}`
+        : `MOQ ${mq} pcs`
     : null;
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
@@ -1340,74 +1343,10 @@ export function generateProductJsonLd(
         '@type': 'Organization',
         name: brandName,
       },
-      shippingDetails: locale === 'zh-hk'
-        ? {
-            '@type': 'OfferShippingDetails',
-            shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'HKD' },
-            shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'HK' },
-            deliveryTime: {
-              '@type': 'ShippingDeliveryTime',
-              handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' },
-              transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
-            },
-          }
-        : locale === 'ja'
-        ? {
-            '@type': 'OfferShippingDetails',
-            shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'JPY' },
-            shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'JP' },
-            deliveryTime: {
-              '@type': 'ShippingDeliveryTime',
-              handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
-              transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
-            },
-          }
-        : [
-            {
-              '@type': 'OfferShippingDetails',
-              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
-              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'US' },
-              deliveryTime: {
-                '@type': 'ShippingDeliveryTime',
-                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
-                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
-              },
-            },
-            {
-              '@type': 'OfferShippingDetails',
-              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
-              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'GB' },
-              deliveryTime: {
-                '@type': 'ShippingDeliveryTime',
-                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
-                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
-              },
-            },
-            {
-              '@type': 'OfferShippingDetails',
-              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
-              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
-              deliveryTime: {
-                '@type': 'ShippingDeliveryTime',
-                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
-                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
-              },
-            },
-          ],
-      hasMerchantReturnPolicy: {
-        '@type': 'MerchantReturnPolicy',
-        returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
-        merchantReturnDays: 0,
-        // 2026-09-14 GMC P0-C fix: MerchantReturnNotPermitted must NOT carry returnMethod/returnFees
-        //   (NotPermitted + ReturnByMail + FreeReturn combo is self-contradictory → GMC「return policy rejected」).
-        //   Google validation for NotPermitted: keep only category + days:0 + description + applicableCountry.
-        description: locale === 'zh-hk'
-          ? '定制印刷產品不適用退貨政策，出廠前提供數碼樣確認'
-          : locale === 'ja'
-          ? 'オーダーメイド印刷品は返品不可、発送前にデジタル校正を提供'
-          : 'Custom printed products are non-returnable. Digital proof provided before production.',
-        applicableCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
-      },
+      // 2026-11-14：撤下无条件 shippingDetails。legal 明示运费另计且仅满足
+      // 地区／门槛条件时免运；没有逐 SKU 费用与履约真值时，宁缺勿错。
+      // 退货仅针对法定披露的质量缺陷等情形，14 天是申请窗口而非无条件退货承诺。
+      hasMerchantReturnPolicy: getMerchantReturnPolicy(locale as Locale),
       },
       })
   };

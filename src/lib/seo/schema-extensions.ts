@@ -12,6 +12,8 @@
 import type { Locale } from '@/types/locale';
 import type { SchemaOrgData } from '@/types/seo';
 import { PRODUCT_BRAND_NAME } from '@/lib/brand';
+import { getMerchantReturnPolicy } from '@/lib/merchant-policy';
+import { getProductOfferPrice } from '@/lib/pricing';
 
 // 2026-07-18 修复: 强制使用生产域名, 防止 CF Pages 环境变量 NEXT_PUBLIC_SITE_URL
 // 被误配为 pages.dev 预览域名导致 schema URL 污染 (GSC 实测已发生)
@@ -490,11 +492,8 @@ export function generateCategoryItemListJsonLd(
   productList: Product[],
   locale: Locale
 ): SchemaOrgData {
-  // 2026-07-11 修复 GSC 「应指定 offers、review 或 aggregateRating」错误
-  // 原因: nested @type:Product 缺少 offers 字段, Google 拒绝展示富媒体搜索结果
-  // 修复: 用 product.basePrice + locale 对应货币构造 offers, 消除 GSC 17 items 报错
-  // 2026-07-11 追加修复: 补全 image(严重) + description + https://availability
-  const currency = locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD';
+  // 2026-11-14 商家真值收口：分类页不得把 HKD basePrice 直接配成 USD/JPY。
+  // Offer 价格与 PDP／Merchant Feed 共用 getProductOfferPrice；无有效报价则不输出。
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -518,6 +517,7 @@ export function generateCategoryItemListJsonLd(
       const generalImg = product.images?.[0];
       const imageUrl = localeImg || generalImg || '/images/placeholder.jpg';
       const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `${SITE_URL}${imageUrl}`;
+      const offerPrice = getProductOfferPrice(product, locale);
       return {
         '@type': 'ListItem',
         position: index + 1,
@@ -545,55 +545,23 @@ export function generateCategoryItemListJsonLd(
           // 现已确认 Zprintpro 0 真实 Trustpilot/Google Reviews 集成, 删 aggregateRating 块
           // Google Rich Results Test 不要求 aggregateRating, 缺它只是不显示星级, 不影响 SEO 排名
           // 等 8/12 后接入真实 Trustpilot API 再加回
-          offers: {
-            '@type': 'Offer',
-            price: product.basePrice,
-            // GMC「商家信息」要求: sku 字段 (Batch A 2026-08-11)
-            sku: product.slug,
-            priceCurrency: currency,
-            // GSC「商家信息」要求: 提供报价有效期起始日
-            validFrom: '2026-01-01',
-            priceValidUntil: '2027-12-31',
-            // Google 不支持 MadeToOrder 枚举值，使用 InStock 表示可下单
-            availability: 'https://schema.org/InStock',
-            url: productUrl,
-            // GSC「商家信息」要求: 退换货政策（定制印刷品通常不接受退货）
-            hasMerchantReturnPolicy: {
-              '@type': 'MerchantReturnPolicy',
-              applicableCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
-              returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
-              merchantReturnDays: 0,
-            },
-            // GSC「商家信息」要求: 配送详情，按地区差异化
-            shippingDetails: {
-              '@type': 'OfferShippingDetails',
-              // 2026-07-18 GSC「未填写 shippingRate」×48 修复: 免运费声明 (与 3 locale 免邮口径一致)
-              shippingRate: {
-                '@type': 'MonetaryAmount',
-                value: '0',
-                currency,
-              },
-              shippingDestination: {
-                '@type': 'DefinedRegion',
-                addressCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
-              },
-              deliveryTime: {
-                '@type': 'ShippingDeliveryTime',
-                handlingTime: {
-                  '@type': 'QuantitativeValue',
-                  minValue: locale === 'zh-hk' ? 1 : 1,
-                  maxValue: locale === 'zh-hk' ? 2 : 3,
-                  unitCode: 'DAY',
+          ...(offerPrice
+            ? {
+                offers: {
+                  '@type': 'Offer',
+                  price: offerPrice.price,
+                  sku: product.slug,
+                  priceCurrency: offerPrice.currency,
+                  validFrom: '2026-01-01',
+                  priceValidUntil: '2027-12-31',
+                  availability: 'https://schema.org/InStock',
+                  url: productUrl,
+                  // 与 PDP 同源：仅质量缺陷等法定披露情形，签收后 14 天内申请。
+                  hasMerchantReturnPolicy: getMerchantReturnPolicy(locale),
+                  // 无逐 SKU 运费与履约真值，不输出无条件 shippingDetails。
                 },
-                transitTime: {
-                  '@type': 'QuantitativeValue',
-                  minValue: locale === 'zh-hk' ? 1 : 3,
-                  maxValue: locale === 'zh-hk' ? 2 : locale === 'ja' ? 5 : 7,
-                  unitCode: 'DAY',
-                },
-              },
-            },
-          },
+              }
+            : {}),
         },
       };
     }),

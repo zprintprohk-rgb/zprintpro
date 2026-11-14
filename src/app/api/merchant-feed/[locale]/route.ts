@@ -54,6 +54,7 @@ type Locale = keyof typeof localeConfig;
  * brandByLocale 仅用于 feed 频道元数据 (channel title/description 的人读文案)。
  */
 import { PRODUCT_BRAND_NAME } from '@/lib/brand';
+import { getProductOfferPrice } from '@/lib/pricing';
 
 // 颜色映射：为常见品类提供默认颜色
 // Google Merchant Center color 属性用于产品搜索过滤
@@ -78,25 +79,8 @@ function getColor(slug: string, categorySlug: string): string {
   return 'White';
 }
 
-// ============================================================================
-// 2026-10-06 C1 locale 真值价格:
-//   旧版直接输出 HKD basePrice 数值 × locale 币种 (ja feed 实测 "1.00 JPY", 实际 ¥20)。
-//   取 locale 专属定价 (basePrice_en/_ja), 缺失时按 src/lib/pricing.ts
-//   LIVE_FX_RATES_FALLBACK 同款汇率换算 (USD 0.128 / JPY 19.5), 口径一致可追溯。
-// ============================================================================
-const HKD_FALLBACK_RATES = { USD: 0.128, JPY: 19.5 } as const;
-
-type ProductLike = (typeof products)[number];
-
-function getLocalePrice(product: ProductLike, locale: Locale): number {
-  if (locale === 'en') {
-    return product.basePrice_en ?? Number((product.basePrice * HKD_FALLBACK_RATES.USD).toFixed(2));
-  }
-  if (locale === 'ja') {
-    return product.basePrice_ja ?? Math.round(product.basePrice * HKD_FALLBACK_RATES.JPY);
-  }
-  return product.basePrice; // zh-hk: HKD 真值
-}
+// 2026-11-14：Feed 价格与 PDP／分类页 ItemList 共用 getProductOfferPrice，
+// 不再维护第二套 basePrice_en/_ja 或汇率换算分支，避免落地页价格不匹配。
 
 function formatPrice(value: number, currency: string): string {
   // JPY 按价格规范 0 位小数, 其余 2 位
@@ -140,7 +124,6 @@ function xmlEscape(str: string): string {
 
 function buildFeed(locale: Locale): string {
   const config = localeConfig[locale];
-  const currency = config.currency;
 
   const items = products
     .filter((p) => p.slug && p.basePrice != null && p.basePrice > 0)
@@ -162,8 +145,9 @@ function buildFeed(locale: Locale): string {
       const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `${SITE_URL}${imageUrl}`;
 
       const color = getColor(product.slug, product.category_slug);
-      const priceValue = getLocalePrice(product, locale);
-      const priceStr = formatPrice(priceValue, currency);
+      const offerPrice = getProductOfferPrice(product, locale);
+      if (!offerPrice || Number(offerPrice.price) <= 0) return '';
+      const priceStr = formatPrice(Number(offerPrice.price), offerPrice.currency);
       const gpc = gpcByCategory[product.category_slug];
 
       let item = `    <item>
@@ -172,7 +156,7 @@ function buildFeed(locale: Locale): string {
       <g:description>${xmlEscape(localizedDesc.slice(0, 5000))}</g:description>
       <g:link>${xmlEscape(productUrl)}</g:link>
       <g:image_link>${xmlEscape(fullImageUrl)}</g:image_link>
-      <g:price>${priceStr} ${currency}</g:price>
+      <g:price>${priceStr} ${offerPrice.currency}</g:price>
       <!-- 2026-11-01: 移除 g:sale_price — Google 规范要求 sale_price 必须低于 price; 无折扣数据源时
            83/83 项两者相等 (线上实测), 相等值会被忽略并可能触发价格类提示。无折扣不输出。 -->
       <g:availability>in_stock</g:availability>
@@ -185,11 +169,8 @@ function buildFeed(locale: Locale): string {
       <g:identifier_exists>false</g:identifier_exists>
       ${gpc ? `<g:google_product_category>${xmlEscape(gpc)}</g:google_product_category>` : ''}
       <g:product_type>${xmlEscape(product.category)}</g:product_type>
-      <g:shipping>
-        <g:country>${config.country}</g:country>
-        <g:service>Standard</g:service>
-        <g:price>0.00 ${currency}</g:price>
-      </g:shipping>
+      <!-- 2026-11-14: 撤下全商品 0 元运费。legal 为运费另计／条件免运；
+           待取得分国家、重量与门槛真值后，在 GMC 账户级或 feed 按条件配置。 -->
       <g:custom_label_0>printing</g:custom_label_0>
       <g:custom_label_1>${xmlEscape(product.category_slug)}</g:custom_label_1>`;
 

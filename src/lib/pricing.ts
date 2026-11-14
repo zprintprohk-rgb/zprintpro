@@ -903,6 +903,34 @@ export function getUnitPriceAnchor(slug: string, locale: string): { price: numbe
     unitLabel: l.unitLabel,
   };
 }
+
+export interface MerchantOfferPrice {
+  price: string;
+  currency: 'HKD' | 'USD' | 'JPY';
+}
+
+/**
+ * Single active-price source for PDP, category ItemList and Merchant Feed.
+ * This preserves the PDP's existing precedence: localized unit-price anchor,
+ * then the localized from-price derived from price_range. Missing or malformed
+ * price data returns null rather than emitting a fabricated zero-price Offer.
+ */
+export function getProductOfferPrice(
+  product: { slug: string; price_range: string; category_slug: string },
+  locale: Locale,
+): MerchantOfferPrice | null {
+  const currency = locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD';
+  const anchor = getUnitPriceAnchor(product.slug, locale);
+  if (anchor) {
+    return { price: anchor.price.toFixed(2).replace(/\.00$/, ''), currency };
+  }
+
+  if (!product.price_range?.match(/[\d.]+/)) return null;
+  const displayPrice = convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
+  const num = (displayPrice || '').replace(/[^\d.]/g, '').match(/[\d.]+/);
+  if (!num) return null;
+  return { price: parseFloat(num[0]).toFixed(2).replace(/\.00$/, ''), currency };
+}
 /**
  * 2026-07-26 K3 展示层单价锚（唯一入口）
  * PDP hero / 信任条 / 卡片一律走 getDisplayAnchor，禁止直接拿 price_range 整批起价当主锚。

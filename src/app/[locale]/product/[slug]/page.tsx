@@ -54,7 +54,7 @@ import { getProductAggregateRating, getProductReviews } from '@/data/product-rev
 //   已隨死代碼一併移除 (本檔非 PDP 正文渲染組件, 保留只會形成兩處並存的維護困惑)
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
-import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
+import { convertPriceRangeString, convertToFromPrice, getProductOfferPrice, getDisplayAnchor } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { getPriceTableForSlug } from '@/lib/price-injector';
 import ReferencePriceBlock from '@/components/pdp/referencepriceblock';
@@ -207,39 +207,11 @@ export default function ProductPage({
   // 2026-06-10 Phase B 修复 P0-1：使用 locale 本地化的 name / description（不再传 product.name / product.description）
   // 之前 en/ja 页直接传中文，导致 Product JSON-LD name 字段是 "牛皮紙袋" 等中文。
   // productTitle / productDescription 来自 getProductTitle / getProductDescription，已经按 locale 切换。
-  // v9.2.2 裁决3.3 (P1, 随 C2): Product+Offer schema — 有价格表 SKU 挂真实 Offer (price/priceCurrency 取自 price_range 源值),
-  // 无表 SKU 只挂 Product 不挂 Offer (禁编造价格)。price_range 是站内真实报价源 (HK$/NT$/¥ 原币种),
-  // priceCurrency 显式标注源币种, 不做跨币换算 (schema 价格 = 真实参考价)。
-  const priceTable = getPriceTableForSlug(slug);
-  // 2026-09-12 GSC P0 修复: 原逻辑「无价格表 → offerData=null → 不挂 offers」导致 Product schema
-  //   缺 offers, GSC 报「应指定 offers、review 或 aggregateRating」(严重问题, 商品摘要无法展示)。
-  //   review/aggregateRating 因站内 0 真实评价被 §0.23 禁止编造 → 唯一合法出路 = offers。
-  //   修复口径: 无价格表时回退用 price_range (站内真实报价源, 与 v9.2.2 裁决3.3 同口径, 不跨币换算, 不编造);
-  //   两者皆无 → 仍不挂 offers (宁缺不造)。
-  const hasPriceRange = !!((product.price_range || '').match(/[\d.]+/));
-  // 2026-09-14 GMC P0-A/B fix: schema price must equal page display price + shipping currency.
-  //   Old logic used first price_range number (HK$0.22) + inferred currency (always HKD) → en/ja pages
-  //   schema price HKD but page shows USD/JPY, shipping USD/JPY → GMC「shipping currency ≠ item price
-  //   currency」mismatch (68 items, 28.8%).
-  //   Fix: prefer getUnitPriceAnchor (same source as page, UNIT_PRICE_ANCHORS[slug][locale].priceDisplay),
-  //   currency follows locale (zh-hk=HKD / en=USD / ja=JPY) → schema price = page price = shipping currency.
-  let offerData: { price: string; currency: string } | null | undefined;
-  const anchor = getUnitPriceAnchor(slug, locale);
-  if (anchor) {
-    offerData = { price: anchor.price.toFixed(2).replace(/\.00$/, ''), currency: locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD' };
-  } else if (priceTable || hasPriceRange) {
-    // 2026-09-14 GMC P0-B fix: fallback branch uses page-converted price (convertToFromPrice = page display),
-    //   currency forced to locale (not inferred from price_range symbol), else no-anchor SKUs schema price
-    //   HKD + shipping USD/JPY → GMC「shipping currency ≠ item price currency」mismatch.
-    const displayPrice = convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
-    const num = (displayPrice || '').replace(/[^\d.]/g, '').match(/[\d.]+/);
-    offerData = {
-      price: num ? parseFloat(num[0]).toFixed(2).replace(/\.00$/, '') : '0',
-      currency: locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
-    };
-  } else {
-    offerData = null;
-  }
+  // 2026-11-14 商家真值收口：PDP／分类页 ItemList／Merchant Feed 共用同一
+  // localized active-price helper。优先沿用页面 unit-price anchor，缺失时回退
+  // price_range 的本地化起价；无有效数字则不输出 Offer，禁止拿 HKD basePrice
+  // 直接配 USD/JPY，也不得以 0 补价。
+  const offerData = getProductOfferPrice(product, locale);
   // 2026-09-29 GSC「未填写 aggregateRating/review」449 项修复: 真实评价模块接线 —
   // 当前 0 条真实评价 → productRating=null, productReviews=[] → schema 维持不输出 (零回归)。
   // K3 提供 WhatsApp/邮件真实反馈或接入 Google Customer Reviews 后自动生效。
