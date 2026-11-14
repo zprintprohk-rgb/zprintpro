@@ -4,6 +4,7 @@
 > 角色：ZprintPro 首席 SEO／AEO／GEO 数据战略分析师
 > 输入：客户 5 问（MOQ=1／单本价格／SI·HR·AT 运费／API 自动化／时效）+ 长期 POD 一件代发合作意向
 > 指令：穷尽能力分析三语言站点（zh-hk／en／ja）订单自动化的可执行方案；先解决报价，再解决运费与 DDP 税费计算；按「挂历 $19.9、台历 $19.9、单本重量 ~0.7kg」为基准定价锚。
+> **二轮修订（2026-11-14 09:33 拍板意向）**：定价改为 **$49.9 全包（一本，DDP 到欧洲）**；后端增加**人工审核环节**；问：可以自动化实现吗？—— 本修订版回答：可以，并给出全包成本模型与「人工审核闸 + 前后全自动」架构（§0.1）。
 > 性质：策略与执行方案（docs），不承诺生产页面已修改；数字均带来源或「待实测」标注。
 
 ---
@@ -15,6 +16,37 @@
 3. **欧盟 2026-07-01 新政是 DDP 计算的硬约束**：€150 免税额度取消，≤€150 B2C 包裹改征固定 €3 关税（芬兰海关口径「每票」，Lexology 口径「每件」，需按承运商最终口径固化）；IOSS 仍用于代收增值税。SI 22%／HR 25%／AT 20% VAT 税率已核实。
 4. **两个 P0 阻塞项决定「全程无需人工」能否闭环**：① 线上卡收单（现仅银行电汇／微信／支付宝 QR，PayPal 审核中——全自动 API 下单必须补线上收单）；② IOSS 注册与欧盟中介（深圳主体需指定欧盟财政代表）。二者未落地前，API 可先做「下单+文件自动质检+半自动履约」。
 5. 本报告为 docs-only 交付（未改 src，未 push），按 §0.25.9 攒批规则留本地 commit，随下个 cron 窗口推送。
+6. **二轮修订（本日）**：定价改 **$49.9 全包 DDP**（一本，EU 经济件，含产品+经济件运费+进口 VAT+€3 关税+DDP 服务费，终端到手零税）；后端新增**人工审核闸**。**可以自动化实现**——全链路（下单/文件/支付/状态回传）自动，人工审核由 ZprintPro 后台执行（SLA ≤4 工作小时、一键批准/驳回），分销商侧零人工。**前提**：① 经济件（Express 须加价，否则亏损）；② IOSS 注册 + 线上卡收单（仍是 P0 阻塞）；③ 生产实测成本 ≤$8/本（§0.1 毛利测算）。
+
+---
+
+## 0.1 二轮修订：$49.9 全包 + 人工审核（本日拍板意向）
+
+### 0.1.1 $49.9 全包毛利测算（一本，EU 经济件 DDP，SI 22% VAT 为例）
+
+| 项 | 金额 | 说明 |
+|---|---|---|
+| 终端实付（全包） | $49.9 | 含税价（DDP，到手零税） |
+| IOSS VAT（含税价内扣） | −$9.0 | 22/122 × $49.9；HR 25% → $10.0；AT 20% → $8.3（EU 价格含税口径） |
+| 固定关税（€3） | −$3.2 | 2026-07-01 新政平税（每票/每件口径待承运商固化） |
+| DDP 服务费（承运商代缴） | −$5.0 | 待承运商报价（€5–10 取中） |
+| 生产成本（中值） | −$8.0 | 实测区间 ¥45–75（$6–10），**待生产实测** |
+| 经济件运费（中值） | −$10.0 | 云途/燕文 ¥55–90（$8–13），**待物流实测** |
+| 收款手续费 ~3.5% | −$1.7 | 卡收单/PayPal 通道 |
+| **毛利** | **≈ $13（≈26%）** | 若生产 $6/运费 $8 → ≈$17（34%）；若走 DHL Express（$30–45）→ **亏损** |
+
+**结论**：$49.9 全包（经济件）数学可行；**Express 必须加价单列**（建议 +$25 → 全包 Express $74.9，待 DHL 实测校准）。此模型把客户报价从「三栏明细」简化为「一个数字」，更利于自动化与 AEO 引用（单一答案）。
+
+### 0.1.2 人工审核环节设计（自动化答案）
+
+- **自动化覆盖**：下单 → PDF 自动质检 → 支付 → 状态/跟踪回传全自动（分销商侧零人工）。
+- **人工审核闸（ZprintPro 后台）**：`paid → file_preflight → under_review → approved/rejected`。审核台 = 订单列表 + PDF 预览 + 自动质检报告 + 地址/收款核验 + 一键批准/驳回（附原因）。
+- **SLA**：≤4 工作小时完成（按每日生产截单倒排优先级）；驳回自动 webhook + 邮件通知分销商，重传后重新排队。
+- **为什么这是「可自动化」的关键**：把不可自动化的质量/合规判断收敛为**单一人工闸**，闸前（文件/支付/下单）与闸后（生产→出运→回传）全自动——这是 POD 业界标准（Printful 同构），既保护品牌（印刷客诉 80% 源于文件问题），又满足客户「无需人工操作」诉求（人工在 ZprintPro 侧，不在分销商侧）。
+
+### 0.1.3 与 §1–§10 的关系
+
+本修订**取代**原方案中的分列计价口径（§1 Q2/Q3、§4.2–4.3、§5.2 示例、§6.1/§6.5、§8.2、§10 相关行已同步更新）；原 $19.9 保留为「产品件」内部组件基准与规格变量加价起点。非 EU 区域（US/JP/HK）另表定价，不受本修订影响。
 
 ---
 
@@ -22,23 +54,23 @@
 
 | # | 客户问题 | 答复（en 主口径） | 关键数字 |
 |---|---|---|---|
-| 1 | 每单只印 1 本、无起订量？ | Yes. MOQ is 1 piece for POD calendar orders. The single-piece price follows the POD price band ($19.9), separate from wholesale tier pricing. | MOQ=1；单本 $19.9 |
-| 2 | 1 本 A3 挂历（297×420mm）13 张全彩金属圈+挂勾价格 | US$19.9 per piece (product price, print + metal spiral binding + hanger + free file preflight; shipping & duties quoted separately). | $19.9／本 |
-| 3 | 发斯洛文尼亚／克罗地亚／奥地利运费 | Economy (tracked, 5–10 business days): approx US$8–13; DHL Express (2–4 business days): approx US$30–40. DDP taxes extra: VAT (SI 22% / HR 25% / AT 20%) + €3 flat duty (EU new rule since 2026-07-01) + DDP handling fee. Exact rate confirmed at quote. | 经济件 $8–13；Express $30–40；VAT 22/25/20%；€3 |
-| 4 | 提供 API 实现订单自动化？ | Yes. Roadmap: Quote API → File Upload API (auto PDF preflight) → Order API (shipping info) → production → webhook tracking callback. Phase 1 semi-automated (human QC), Phase 2 fully automated. Integration window ~4–8 weeks after contract & spec sign-off. | 4–8 周对接 |
+| 1 | 每单只印 1 本、无起订量？ | Yes. MOQ is 1 piece for POD calendar orders. Single-piece all-in price **US$49.9** (DDP), separate from wholesale tier pricing. | MOQ=1；单本全包 $49.9 |
+| 2 | 1 本 A3 挂历（297×420mm）13 张全彩金属圈+挂勾价格 | **US$49.9 all-in per piece** (DDP to EU: print + metal spiral binding + hanger + tracked economy shipping + import VAT + €3 duty; recipient pays nothing at delivery). Express upgrade +$25. | $49.9／本全包（EU 经济件） |
+| 3 | 发斯洛文尼亚／克罗地亚／奥地利运费 | Included in the $49.9 all-in price (tracked economy, 5–10 business days, DDP). Express upgrade (2–4 days): +$25. | 运费已含；Express +$25 |
+| 4 | 提供 API 实现订单自动化？ | Yes. Quote API → File Upload API (auto PDF preflight) → Order API (shipping info) → **backend manual QC gate (approved within 4 working hours)** → production → webhook tracking callback. Fully automated on the reseller side. Integration window ~4–8 weeks. | 4–8 周对接；审核 SLA ≤4h |
 | 5 | 生产+派送一般多久 | Production 2–3 business days + shipping 5–10 (economy) / 2–4 (Express) → 7–13 business days total (economy), 4–7 (Express) to SI/HR/AT. Q4 peak adds buffer; confirmed at quote. | 全链路 7–13（经济）／4–7（Express）工作日 |
 
 **英文回复草稿（可直接发客户）**：
 
 > Thank you for considering a long-term POD partnership with ZprintPro. Direct answers:
-> 1. **MOQ**: 1 piece — no minimum. Each order can be a single calendar at the POD price of **US$19.9** (A3 wall, 13 sheets, full-color, metal spiral binding + hanger; desk calendar same price band).
-> 2. **Pricing model**: product price and shipping/duties are quoted separately at checkout, so you control the final price to your end customer. Estimated landed cost to Slovenia/Croatia/Austria for one ~0.7kg calendar: **economy ~US$8–13** (tracked, 5–10 days) or **DHL Express ~US$30–40** (2–4 days), plus import VAT (SI 22% / HR 25% / AT 20%) and a flat €3 EU duty (in effect since 2026-07-01). We can ship **DDP** so your customer pays nothing at delivery.
-> 3. **API**: yes — we are rolling out a public order API (quote → PDF upload with automated file check → order with shipping info → production → webhook with tracking number). Fully automated workflow is the target; first integration typically takes 4–8 weeks.
+> 1. **MOQ**: 1 piece — no minimum. Each order can be a single calendar at the **all-in price of US$49.9** (A3 wall, 13 sheets, full-color, metal spiral binding + hanger; desk calendar same price).
+> 2. **All-in pricing (DDP)**: **US$49.9 per piece delivered** to your customer in Slovenia/Croatia/Austria — print + tracked economy shipping (5–10 business days) + import VAT (SI 22% / HR 25% / AT 20%) + the flat €3 EU duty (new rule since 2026-07-01) + DDP handling. **Your customer pays nothing at delivery.** Express upgrade (2–4 days): +US$25.
+> 3. **API**: yes — fully automated on your side: quote → PDF upload with automated file check → order with shipping info → our backend runs a manual QC gate (approved within 4 working hours, you are notified automatically) → production → webhook with tracking number. First integration typically takes 4–8 weeks.
 > 4. **Turnaround**: production 2–3 business days + shipping 5–10 days economy / 2–4 days express. Total to SI/HR/AT: 7–13 business days (economy) or 4–7 (express). Q4 peak season adds buffer; we confirm exact dates at quote.
 >
 > We are ready to sign a POD service agreement and start technical onboarding. Please share your expected monthly volume so we can lock rates.
 
-（zh-hk 摘要版：MOQ 1 本、$19.9/本、SI/HR/AT 經濟件約 $8–13 ／ DHL 約 $30–40、VAT 22/25/20%＋€3 關稅、DDP 到付零稅、API 4–8 週對接、全鏈路 7–13 個工作天。）
+（zh-hk 摘要版：MOQ 1 本、**全包 US$49.9/本（DDP 到 SI/HR/AT，含產品+經濟件運費+進口 VAT+€3 關稅+代繳手續費，終端到付零稅）**、Express 加 US$25、人工審核 ≤4 工作小時（ZprintPro 後台執行，分銷商零人工）、API 4–8 週對接、全鏈路 7–13 個工作天。）
 
 ---
 
@@ -64,17 +96,17 @@
 
 | P | 问题 | 关键子问题 | 本方案落点 |
 |---|---|---|---|
-| P0-1 | 报价问题 | 单本 $19.9 是否覆盖成本；规格变量（A2/双面/材质/圈装）加价；数量分档（1/2–5/6–20/21+）；三语价格锚一致；与 products.ts 真值同步（wall/desk `minQuantity:1` 已具备，`price_range HK$3-8/本` 是批量口径，需补「单本 POD 价」字段） | §4 报价引擎 |
+| P0-1 | 报价问题 | 单本 **$49.9 全包**（DDP，EU 经济件）是否覆盖成本；规格变量（A2/双面/材质/圈装）加价；Express 加价；三语价格锚一致；与 products.ts 真值同步（wall/desk `minQuantity:1` 已具备，`price_range HK$3-8/本` 是批量口径，需补「单本 POD 全包价」字段） | §4 报价引擎 |
 | P0-2 | 运费问题 | 国家×重量×时效费率表（SI/HR/AT 起，扩展 EU27）；体积重（0.7kg 实重→1kg 计费）；经济件 vs Express 双档；免运门槛与 POD 不适用 | §5.1 运费 |
 | P0-2 | 税费 DDP 问题 | VAT 表（SI 22/HR 25/AT 20）；2026-07-01 新政 €3 平税；IOSS 注册与欧盟中介；DDP 服务费；DDP vs DAP 口径统一 | §5.2–5.3 DDP |
 | P0-3 | 支付问题 | 线上卡收单（PayPal 审核中／其他通道）；多币种结算；退款流程 | §6.4 |
 | P0-3 | 文件问题 | PDF 上传（R2）；自动质检（13 页/出血 3mm/CMYK/尺寸/≤25MB）；拒收与重印兜底 | §6.3 |
-| P0-3 | 履约问题 | 订单状态机；深圳生产队列（拼版/印刷/质检拍照/包装）；承运商取件；tracking 回传 | §6.5 |
+| P0-3 | 履约问题 | 订单状态机（含 **under_review 人工审核闸**）；深圳生产队列（拼版/印刷/质检拍照/包装）；承运商取件；tracking 回传 | §6.5 / §6.7 |
 | P0-3 | 回传对账 | webhook 验签与重试；订单/税费/IOSS 月报导出；分销商对账 | §6.6 |
 
 ---
 
-## 4. P0-1 报价引擎：$19.9 定价模型（先解决报价）
+## 4. P0-1 报价引擎：$49.9 全包定价模型（先解决报价）
 
 ### 4.1 单本成本分解（估计区间，待生产实测确认——不得当作已承诺成本）
 
@@ -83,30 +115,33 @@
 | 生产成本（深圳单本数码）：A3 13 页 250g 双面全彩 + 金属圈 + 挂勾 + 单件包装 | ¥45–75（约 $6–10） | 参考：Made-in-China 同类挂历批量价 ~$2.5/本（MOQ 500）；POD 单本数码显著高于批量价。**待生产实测** |
 | 经济件运费（0.7kg→1kg 计费，SI/HR/AT） | ¥55–90（约 $8–13） | 云途标准 ~¥70–90/kg；燕文挂号 ~¥60–80/kg（欧美 5–10 工作日）。**待物流账号实测** |
 | DHL Express（0.7kg→1kg） | ¥260–320（约 $36–45） | 香港代理首重 0.5kg ¥174–218 起、大陆 DHL ¥272 起；住宅+¥50。**待 DHL 账号实测** |
-| 税费（DDP）：VAT（按货值+运费计） | SI €4.0–4.5 / HR €4.5–5.0 / AT €3.6–4.0 | 以 $19.9（≈€18）+ 运费 €9–10 为税基 |
+| 税费（DDP）：IOSS VAT（含税价内扣，按终端实付 $49.9 计） | SI ≈$9.0 / HR ≈$10.0 / AT ≈$8.3 | EU 价格含税口径：VAT = 全包价 × r/(100+r)；IOSS 申报按实付全价 |
 | 固定关税（2026-07-01 新政） | €3/票 | 芬兰海关口径「每票」；Lexology「每件」——按承运商最终口径固化 |
 | DDP 服务费（承运商代缴） | €5–10/票 | DHL Express DDP / 邮政 PDDP |
 | 收款手续费 | ~3.5% | 卡收单/PayPal 通道 |
 
-**结论：单本到欧盟的全成本约 $25–35（经济件）／$50–60（Express）——必须分列计价，$19.9 只是产品价。**
+**结论：单本到欧盟的全成本约 $25–35（经济件）／$50–60（Express）。$49.9 全包（经济件 DDP）毛利 ≈26%（中值成本，见 §0.1.1）；Express 走全包价即亏损 → 必须加价单列。**
 
-### 4.2 报价结构（checkout 三栏式，与 Printful 同构）
+### 4.2 报价结构（checkout 全包式，一个数字）
 
 ```
-Product (1 × A3 Wall Calendar, 13p, spiral + hanger)   $19.90
-Shipping (YunExpress standard, 0.7kg → SI)             $11.00
-DDP taxes (VAT 22% + €3 duty + handling)               $13.50
+1 × A3 Wall Calendar, 13p, spiral + hanger — ALL-IN DDP (EU economy)   $49.90
+  (含: 产品 + 经济件运费 + 进口 VAT + €3 关税 + DDP 代缴服务费; 终端到手零税)
+Express upgrade (DHL, 2–4 days)                                      +$25.00
 ─────────────────────────────────────────────────────
-Total (DDP, customer pays nothing on delivery)         $44.40
+Total (DDP)                                                          $49.90 / $74.90
 ```
+
+> 全包价把客户报价从三栏明细简化为**一个数字**（$49.9），自动化与 AEO 引用都更简单（单一答案）；内部仍拆成本明细（§0.1.1）用于毛利与 IOSS 申报。
 
 ### 4.3 计价规则（服务端，`POST /api/v1/quote`）
 
-- **基准锚**：A3 挂历 / 台历（标准规格）单本 **$19.9**（en）；zh-hk ≈ **HK$155**、ja ≈ **¥3,980**（按 0.128／19.5 实时汇率换算，锚值由 K3 拍板）。
-- **规格变量**（增量）：A2 挂历 +$8；双面 +$4；300g 哑粉 +$2；磁吸/相框款 +$6（以上为建议值，待生产成本实测后校准）。
-- **数量分档**：1 本 $19.9（MOQ=1，无起订）；2–5 本 ×0.95；6–20 本 ×0.88；21+ 本 ×0.80——POD 单本价与现有批量价（`INDEPENDENT_PRICES` wall-calendars en $0.40–1.10/pc 为 500+ 批量口径）之间用分档衔接，避免两套价格打架。
+- **基准锚**：A3 挂历 / 台历（标准规格）单本**全包 $49.9**（EU 经济件 DDP）；zh-hk ≈ **HK$390**、ja ≈ **¥7,600**（按 0.128／19.5 汇率换算，锚值由 K3 拍板）。内部「产品件」组件基准 $19.9 仅作规格变量与成本核算起点。
+- **规格变量**（增量，加在全包价上）：A2 挂历 +$8；双面 +$4；300g 哑粉 +$2；磁吸/相框款 +$6（建议值，待生产成本实测后校准）。
+- **Express 加价**：+$25（全包 Express $74.9；待 DHL 实测校准，覆盖 $30–45 运费差）。
+- **区域分档**：EU27 经济件统一 $49.9 全包（VAT 差异由毛利吸收：SI 22%／HR 25%／AT 20%）；US／JP／HK 等非 EU 区域另表（复用现有市场定价）。
 - **三语一致**：en/zh-hk/ja 同一 SKU 同一实体价（多语种实体对齐口径，per §0.36.2-5），仅币种与本地化展示不同。
-- **真值同步**：`products.ts` wall-calendars/desk-calendars 增加 `podPrice` 字段（$19.9），`price_range` 保留批量口径但 FAQ 说明「单本 POD 价 $19.9，MOQ=1」——**改动需 K3 拍板后走 11-13 商业真值纪律**（title-v5 门童、products.ts 对照）。
+- **真值同步**：`products.ts` wall-calendars/desk-calendars 增加 `podPrice` 字段（全包 $49.9，EU 经济件 DDP），`price_range` 保留批量口径但 FAQ 说明「单本 POD 全包价 $49.9，MOQ=1」——**改动需 K3 拍板后走 11-13 商业真值纪律**（title-v5 门童、products.ts 对照）。
 
 ### 4.4 报价引擎技术落点
 
@@ -133,19 +168,20 @@ Total (DDP, customer pays nothing on delivery)         $44.40
 
 | 项 | 值 | 来源状态 |
 |---|---|---|
-| 增值税（进口 VAT） | SI 22% / HR 25% / AT 20%（计税基 = 货值 + 运费） | ✅ 已核实（Stripe／thevatapi 2026 口径） |
+| 增值税（进口 VAT） | SI 22% / HR 25% / AT 20%（EU 含税价内扣：VAT = 全包价 × r/(100+r)；IOSS 申报按终端实付全价 $49.9 为税基） | ✅ 已核实（Stripe／thevatapi 2026 口径） |
 | 固定关税 | ≤€150 B2C 包裹 **€3/票**（芬兰海关 tulli.fi 口径）；Lexology 表述「€3/件」 | ⚠️ 两源口径不同，按承运商（DHL/邮政）最终清关口径固化 |
 | 原 €150 免税 | 已取消（2026-07-01，Reg. (EU) 2026/382 + Delegated Reg. (EU) 2026/1022） | ✅ 已核实 |
 | IOSS | ≤€150 B2C 由卖家代收 VAT，任一 EU 成员国注册 + 月报；非欧盟主体需指定欧盟财政中介 | ✅ 已核实 |
 | HS 4910（印刷日历）常规税率 | 大概率 0%（需核实）；在平税机制下按 €3 处理 | ⚠️ 待核实 |
 | DDP 服务费 | 承运商代缴税费手续费 €5–10/票 | 待承运商报价 |
 
-**示例（SI，一本 $19.9 + 经济件运费 $11）**：
-- 货值+运费 ≈ €27.5（$19.9≈€18.3 + $11≈€9.2）
-- VAT = 22% × €27.5 ≈ **€6.05**
-- 固定关税 ≈ **€3**
+**示例（SI，一本 $49.9 全包，经济件 DDP）**：
+- 终端实付 **$49.9**（含税价，DDP，到手零税）
+- IOSS VAT（含税价内扣）：$49.9 × 22/122 ≈ **$9.0**（HR 25% → $10.0；AT 20% → $8.3）
+- 固定关税 ≈ **€3（≈$3.2）**（承运商 DDP 代缴）
 - DDP 服务费 ≈ **€5**
-- 税费合计 ≈ **€14.05（≈$15.4）**，终端含税到手 ≈ $46.3（产品+运费+税）
+- 内部成本：生产 $6–10 + 经济件运费 $8–13 + 收款 3.5% ≈ $1.7
+- 毛利（中值：生产 $8／运费 $10）≈ $49.9 − 9.0 − 3.2 − 5.0 − 8 − 10 − 1.7 ≈ **$13（≈26%）**——可行；若走 DHL Express（$30–45）则亏损 → **Express 必须加价单列（+$25）**
 
 ### 5.3 IOSS 与 DDP 落地决策
 
@@ -161,20 +197,22 @@ Total (DDP, customer pays nothing on delivery)         $44.40
 ### 6.1 端到端流程
 
 ```
-客户/分销商系统 → POST /api/v1/quote（计价含运费+DDP）
+客户/分销商系统 → POST /api/v1/quote（全包计价 $49.9，可查明细）
                 → POST /api/v1/files（R2 上传 PDF → 自动质检 → file_id + 预览图）
                 → POST /api/v1/orders（幂等键 + 收货信息 + webhook_url → order_id + 支付链接）
                 → 支付（线上卡收单，待打通；一期可银行电汇/QR 半自动）
+                → 【后端人工审核闸】支付+文件 preflight 通过 → 审核台（PDF 预览+质检报告+地址收款核验）
+                  一键批准/驳回（SLA ≤4 工作小时）→ 自动通知分销商（webhook + 邮件）
                 → 深圳生产队列（拼版→印刷→质检拍照→包装→承运商取件）
                 → tracking 号回传：webhook POST（HMAC 验签）+ 客户邮件（RESEND 已有）
-                → 状态推进：pending→paid→in_production→shipped→delivered
+                → 状态推进：pending→paid→file_preflight→under_review→approved→in_production→shipped→delivered
 ```
 
 ### 6.2 端点设计（edge runtime 兼容；复用 `src/lib/api-security.ts` 四件套）
 
 | 端点 | 方法 | 功能 | 鉴权 |
 |---|---|---|---|
-| `/api/v1/quote` | POST | 服务端计价（product+规格+数量+收货国 → product/shipping/duties/total） | 公开（限流） |
+| `/api/v1/quote` | POST | 服务端计价（product+规格+数量+收货国 → **全包价 $49.9** + 可选明细 product/shipping/duties） | 公开（限流） |
 | `/api/v1/shipping-rates?country=&weight=` | GET | 运费+税费查询（前端计算器用） | 公开（限流） |
 | `/api/v1/files` | POST | R2 presigned 上传；自动质检；返回 file_id | X-ZP-Key |
 | `/api/v1/orders` | POST | 建单（幂等键）；返回 order_id + 支付链接 | X-ZP-Key |
@@ -194,7 +232,7 @@ Total (DDP, customer pays nothing on delivery)         $44.40
   "locale": "en"
 }
 ```
-**响应**：`{ "order_id": "ZP20261114-0001", "payment_url": "...", "status": "pending_payment", "total": {"product": 19.9, "shipping": 11.0, "duties": 15.4, "currency": "USD"} }`
+**响应**：`{ "order_id": "ZP20261114-0001", "payment_url": "...", "status": "pending_payment", "total": {"all_in_ddp": 49.9, "express_upgrade": 25.0, "currency": "USD"}, "review": {"sla_hours": 4} }`
 
 ### 6.3 PDF 文件规范与自动质检（拒收规则）
 
@@ -218,8 +256,9 @@ Total (DDP, customer pays nothing on delivery)         $44.40
 ### 6.5 履约状态机与兜底
 
 ```
-draft → quote_issued → pending_payment → paid → file_preflight → in_production
-        → qc_pass → shipped(tracking_no) → delivered
+draft → quote_issued → pending_payment → paid → file_preflight → under_review
+        → approved → in_production → qc_pass → shipped(tracking_no) → delivered
+        → rejected → needs_revision（分销商重传后回到 file_preflight 重新排队）
 异常：file_rejected / qc_fail(重印) / refunded / cancelled
 ```
 - 生产侧：订单按 SKU+规格拼版（POD 小单混拼 A3），印刷→质检拍照（证据留档，per 履约真值）→单件包装→承运商取件。
@@ -229,6 +268,18 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 
 - webhook 事件幂等 + HMAC 验签 + 失败重试（3 次，退避）。
 - 月结对账：订单号/金额/税费三栏 + IOSS 申报数据导出（`/api/v1/reports/ioss?month=`，仅 X-ZP-Key 管理员 scope）。
+
+### 6.7 后台人工审核环节（二轮修订新增）
+
+| 项 | 设计 |
+|---|---|
+| 触发 | 支付成功 + 文件 preflight 通过 → 自动进审核队列（按「每日生产截单」倒排优先级） |
+| 审核台（新后台 UI） | 订单列表（状态/国家/金额）+ PDF 预览 + 自动质检报告 + 地址与收款核验 + **一键批准/驳回**（驳回必填原因） |
+| SLA | ≤4 工作小时完成审核；超时预警升级；驳回自动 webhook + 邮件通知分销商，重传重新排队 |
+| 分销商视角 | **零人工**（审核在 ZprintPro 后台执行，不暴露给分销商系统；API 状态显示 `under_review`，webhook 事件 `order.status_changed` 自动推进） |
+| 为什么可自动化 | 把不可自动化的质量/合规判断收敛为**单一人工闸**，闸前（下单/文件/支付）与闸后（生产→出运→回传）全自动——POD 业界标准做法（Printful 同构），印刷客诉 80% 源于文件问题，人工闸保护品牌与履约真值 |
+
+**API 侧体现**：`/api/v1/orders/:id` 返回 `status: "under_review"` + `review_eta`（≤4h）；`/api/v1/orders` 响应不变；webhook 新增 `order.review_approved` / `order.review_rejected` 事件（rejected 附 `reason` 与重传指引）。
 
 ---
 
@@ -255,19 +306,19 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 | `/zh-hk/services/pod-api` | 按需印刷一件代發 API | 月曆印刷 一件／按需印刷 一件代發／印刷 API |
 | `/ja/services/pod-api` | オンデマンド印刷 API（敬语口径） | カレンダー 1冊から印刷／オンデマンド印刷 API |
 | `/en/services/print-on-demand-api`（API 文档页） | 端点/鉴权/文件规范/webhook；开发者向 | calendar printing API / POD fulfillment API |
-| 报价计算器组件 | 互动：规格×数量×国家 → 三栏总价（含 DDP） | GEO 引用磁铁 |
+| 报价计算器组件 | 互动：规格×数量×国家 → **全包价**（$49.9 起，DDP）+ Express 加价 | GEO 引用磁铁 |
 
 ### 8.2 AEO/GEO 内容要点
 
-- **FAQPage（三语，答案与 §1/§5/§7 数字逐字一致）**：MOQ=1？单本 $19.9 含什么？到 SI/HR/AT 运费多少？DDP 是否含税？API 怎么接？时效多久？
-- **Schema**：`Service` + `FAQPage` + `HowTo`（接入 API 四步）+ `Product`（wall/desk calendars，$19.9）+ 复用既有 Organization/BreadcrumbList。必须 Google Rich Results Test 可验证（§0.36.3 交付标准）。
+- **FAQPage（三语，答案与 §1/§5/§7 数字逐字一致）**：MOQ=1？单本 $49.9 全包含什么（产品+经济件运费+进口 VAT+€3 关税，DDP 到手零税）？到 SI/HR/AT 要多久？Express 加价多少？API 怎么接（人工审核 SLA ≤4h）？时效多久？
+- **Schema**：`Service` + `FAQPage` + `HowTo`（接入 API 四步）+ `Product`（wall/desk calendars，$49.9 全包）+ 复用既有 Organization/BreadcrumbList。必须 Google Rich Results Test 可验证（§0.36.3 交付标准）。
 - **GEO 探针固定问题集**（S2 口径，固定引擎+固定问题+完整答案+URL 归档，落 `.hermes/geo/`）：
   - "Can I order just one custom calendar with no minimum order?"
   - "Print on demand calendar printing price for one piece"
   - "Shipping cost and import tax to Slovenia for a printed calendar"
   - "Which printing company offers a POD fulfillment API?"
 - **季节窗口**：11 月正值 2027 日历采购高峰（站点产品命名已是 2027 年曆），POD 日历是当季最强采购词簇——内容排期优先 Q4。
-- **商业真值纪律（11-13 飞轮 P0 教训复用）**：$19.9、€3、VAT 表、时效、MOQ=1 必须同时出现在 products.ts、FAQ、Schema、API 文档，且与报价引擎同源；禁止在内容里再发明数字。
+- **商业真值纪律（11-13 飞轮 P0 教训复用）**：$49.9、€3、VAT 表、时效、MOQ=1、Express +$25 必须同时出现在 products.ts、FAQ、Schema、API 文档，且与报价引擎同源；禁止在内容里再发明数字。
 
 ### 8.3 关键词优先级（en 主战场，zh-hk/ja 次之）
 
@@ -285,10 +336,10 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 
 | 阶段 | 内容 | 验收门（baseline+change+approval+deploy+verify+retest 六件齐） | 依赖 K3 |
 |---|---|---|---|
-| Phase 0（1–2 周） | 成本与费率实测：生产单本实测成本；DHL/云途/燕文真实报价；IOSS 中介询价；€3 口径固化；EU27 VAT 表冻结 | 实测数字落 docs + 冻结商业真值表 | 拍板 $19.9 锚、DDP 全站口径、EU 市场优先级 |
-| Phase 1（2–4 周） | `quote-engine` 扩展（SI/HR/AT markets + ddp.ts + 真实运费表）；`POST /api/v1/quote`；结算页三栏显示 | tsc 54=54、门童全绿、线上三语页面数字一致、API 返回与页面同源 | 价格锚值、运费档位 |
-| Phase 2（4–8 周） | R2 文件上传 + 自动质检；`/api/v1/orders` + 状态机；支付桥接（PayPal 打通优先）；生产队列半自动 | 端到端 1 单试跑（分销商模拟）PASS；拒收/重印兜底演练 | PayPal 审核结果；IOSS 注册启动 |
-| Phase 3（8–12 周） | webhook 全自动 + 对账 + IOSS 月报；分销商控制台；欧盟中转仓 C 方案评估（月单量阈值触发） | 全自动 10 单无人工介入验收；对账平账；IOSS 首月申报成功 | 中转仓/量级决策 |
+| Phase 0（1–2 周） | 成本与费率实测：生产单本实测成本；DHL/云途/燕文真实报价；IOSS 中介询价；€3 口径固化；EU27 VAT 表冻结 | 实测数字落 docs + 冻结商业真值表 | 拍板 $49.9 全包锚、DDP 全站口径、EU 市场优先级 |
+| Phase 1（2–4 周） | `quote-engine` 扩展（SI/HR/AT markets + ddp.ts + 真实运费表）；`POST /api/v1/quote`（全包价）；结算页一个数字 | tsc 54=54、门童全绿、线上三语页面数字一致、API 返回与页面同源 | 价格锚值、Express 加价额 |
+| Phase 2（4–8 周） | R2 文件上传 + 自动质检；`/api/v1/orders` + 状态机（含 **under_review**）；**后台人工审核台**（一键批准/驳回 + SLA）；支付桥接（PayPal 打通优先）；生产队列半自动 | 端到端 1 单试跑（含审核闸）PASS；拒收/驳回/重印兜底演练 | PayPal 审核结果；IOSS 注册启动 |
+| Phase 3（8–12 周） | webhook 全自动 + 对账 + IOSS 月报；分销商控制台；欧盟中转仓 C 方案评估（月单量阈值触发） | 全自动 10 单（审核闸内）无人工介入验收；对账平账；IOSS 首月申报成功 | 中转仓/量级决策 |
 
 **节奏纪律**：每次部署走 §0.25 攒批 + 30min 机器闸 + §0.25.10 审查全绿 4 件；POD 页面上线属新功能区首发（非小改动），须走预览+确认流程（§0.25.10.5）。
 
@@ -296,14 +347,18 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 
 ## 10. 风险与开放问题（需 K3 拍板）
 
-1. **$19.9 是否终局零售锚**？成本区间（§4.1）未实测前，一切 $19.9 相关文案不得上线（数据诚信红线）。
+1. **$49.9 全包是否终局零售锚**（EU 经济件 DDP；zh-hk HK$390 / ja ¥7,600 建议锚；非 EU 另表）？成本区间（§4.1）未实测前，一切 $49.9 相关文案不得上线（数据诚信红线）。
 2. **DDP 全站统一口径**：`legal` ja「买方承担税费」 vs `catalog-printing-china`「DDP 零税到付」冲突，须裁决 DDP 为主承诺 + DAP 兜底说明。
 3. **IOSS 注册主体与欧盟中介**：深圳主体需指定财政代表（月报+费用），是否委托第三方。
 4. **线上卡收单**：PayPal 审核进度；若长期不过，评估 Stripe HK / Airwallex HK 收单路线（P0 阻塞项）。
 5. **欧盟中转仓 C 方案**：何时启、投多少（建议月单量 >200–300 再评估）。
-6. **products.ts 真值更新**：wall/desk-calendars 增 `podPrice` 字段（$19.9）与「MOQ=1、单本价」FAQ——涉及客户可见内容，走 title-v5 门童 + 商业真值批。
+6. **products.ts 真值更新**：wall/desk-calendars 增 `podPrice` 字段（全包 $49.9）与「MOQ=1、单本全包价」FAQ——涉及客户可见内容，走 title-v5 门童 + 商业真值批。
 7. **€3 关税「每票 vs 每件」口径**：以实际承运商（DHL/邮政）清关结果为准，先按「每票」计、预留参数。
 8. **名片禁令不受影响**：本方案仅日历/台历 POD，不触碰 §0.0 关联面。
+9. **人工审核 SLA 与口径**：≤4 工作小时是否可行（需配审核人力）；驳回重传机制与「审核不通过不扣费」承诺。
+10. **Express 加价额**：+$25 是否覆盖 DHL 实际运费差（$30–45），待 DHL 账号实测后冻结。
+11. **IOSS VAT 计基**：按终端实付全价 $49.9（含税价内扣）申报，确认与中介/海关口径一致；全包价是否含税对外展示（EU 价格含税口径）。
+12. **审核人力排班**：POD 上线前确定审核台负责人与节假日值班（影响 SLA 承诺）。
 
 ---
 
@@ -320,7 +375,7 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 - 中国批量挂历价 ~$2.5/本（MOQ 500）：[Made-in-China calendar printing](https://www.madeinchina.com/mall/show-2024-Hot-Selling-Custom-Design-Monthly-Spiral-Binding-Wall-Calendar-Printing_1222510.html#1)
 - HS 4910（印刷日历）：[zolltarifnummer Tischkalender 4910.00.00](https://www.zolltarifnummer.com/einreihung/tischkalender)（税率待核）
 
-**估计待实测（未拍板前不得上线为承诺）**：§4.1 生产成本区间（¥45–75）、DDP 服务费（€5–10）、税费示例数字、$19.9 三语换算锚（HK$155/¥3,980）、Phase 2–3 时间窗。
+**估计待实测（未拍板前不得上线为承诺）**：§4.1 生产成本区间（¥45–75）、DDP 服务费（€5–10）、$49.9 全包毛利测算（§0.1.1）、三语换算锚（HK$390/¥7,600）、Express 加价（+$25）、审核 SLA（≤4h）、Phase 2–3 时间窗。
 
 **仓库内依据**：`src/lib/pricing.ts`（多币种与 INDEPENDENT_PRICES）、`src/lib/quote-engine/{markets,shipping,tax}.ts`、`src/app/quote-desk/`、`src/app/api/{quote,create-payment-session,order-notify}/route.ts`、`src/data/products.ts`（wall/desk-calendars `minQuantity:1`、`price_range HK$3-8/本`）、`src/app/[locale]/legal/page.tsx`（ja 买方承担税费口径）、`src/app/[locale]/services/catalog-printing-china/page.tsx`（DDP 文案）、`SESSION_LOCK.md`（已释放，无并发持有）。
 
@@ -331,7 +386,7 @@ draft → quote_issued → pending_payment → paid → file_preflight → in_pr
 1. **架构差异**：已核对 pricing.ts/quote-engine/quote-desk/api 路由现状与两份飞轮文档（11-07、11-13），方案在既有 quote-engine 体系内扩展，未臆断冲突。
 2. **约束适用范围**：D1–D6 商业真值裁决、title 冻结域、名片 §0.0、贺卡资产、middleware 301 均未触及；本报告 docs-only。
 3. **原数据/拍板来源**：外部数字全部带 URL+日期；内部数字标注文件路径；未实测数字一律标「待实测」，不写成承诺。
-4. **字段值策略**：$19.9 锚、VAT/€3/时效等未拍板值仅出现在方案建议，不写入任何生产内容。
+4. **字段值策略**：$49.9 全包锚、VAT/€3/Express 加价/时效等未拍板值仅出现在方案建议，不写入任何生产内容。
 5. **Markdown 渲染**：本报告为 docs，未改 user-facing 文本，无需 parseInlineLinks。
 
-**最终结论**：订单自动化的可执行顺序 = 先报价（服务端真值计价 + $19.9 分列模型）→ 再运费与 DDP（EU27 市场 + €3 新政 + IOSS）→ 后全链路 API（文件质检→订单状态机→webhook 回传）。两个 P0 阻塞（线上卡收单、IOSS 注册）决定「全程无需人工」能否真正闭环，先于一切内容营销投入推进。
+**最终结论**：订单自动化的可执行顺序 = 先报价（$49.9 全包锚 + 服务端真值计价）→ 再运费与 DDP（EU27 市场 + €3 新政 + IOSS）→ 后全链路 API（文件质检→**人工审核闸**→订单状态机→webhook 回传）。**$49.9 全包 + 后端人工审核可以自动化实现**：全链路自动、人工仅作单一审核闸（≤4h，ZprintPro 侧执行，分销商零人工）；前提是经济件 DDP（Express 加价）与两个 P0 阻塞（线上卡收单、IOSS 注册）先打通，二者先于一切内容营销投入推进。
