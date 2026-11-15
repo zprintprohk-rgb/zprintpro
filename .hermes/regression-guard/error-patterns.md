@@ -1873,3 +1873,8 @@ node scripts/check-encoding.js → ⚠️ CRLF: ...txt (57 lines with \r\n)   ex
 - 根因：克隆生成器（make_analyze_11xx.py）只更新了 FILES/KPI/输出名锚点，漏掉 internal 比较锚点 previous_7 / 键名对。
 - 规则：克隆分析器时，生成器必须对所有 internal 日期锚点（previous_* / current_* / 键名三元组）逐一 rep() + 计数断言；漏一即 A53。修法已在 analyze_gsc_20261111.py（previous_7=11-10、键 previous_11_10/current_11_11）。
 - 由 gsc lane 20:32 报告正式挂出（A53 复发），手会话同轮修复。
+
+## A54 实例（2026-11-16 · 手会话）
+- 现象：克隆 analyze_gsc_20261116.py 时，引号级 token 替换（\"2026-11-12\"→\"2026-11-16\"）命不中输出文件名（日期在长字符串内），导致新分析**覆盖**旧批 JSON（gsc-2026-11-12-*.json 被 11-16 数据覆写）。
+- 修复：git checkout 恢复 11-12 JSON（ce09a937）+ 输出名正则替换后重跑。
+- 规则：克隆生成器必须 ① 显式断言输出文件名含新日期 ② 跑完后 git status 检查是否意外修改旧批产物；**A53 族补充：日期锚点审计 = 引号 token + 长字符串内嵌日期两类都要扫**。
