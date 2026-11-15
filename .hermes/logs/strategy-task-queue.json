@@ -772,10 +772,10 @@
    ],
    "approval_gate": "K3 2026-10-31 (1)排批 + K3 2026-11-13 CT-20261113-D1-D6 D1/D2：只处理b4b0c0f2之后剩余字段；价格须绑定SKU/规格/数量，否则删除价格钩；交期与proof按报价/订单确认。",
    "owner_lane": "ZP-daily-content",
-   "status": "READY",
+   "status": "DONE",
    "created_at": "2026-10-31T12:40:00+08:00",
    "result": "PARTIAL: K3 2026-10-31 批准 (3) 先行 + (1) 排批。已执行 b4b0c0f2: ① flyers socialProof stat 100張起→10張起 (category-conversion-blocks.ts L844, label 未动) ② posters a2-posters title_zh/description HK$12.9→HK$16 (products.ts, 同时把标题当量 58→56 修回合规)。线上复验 2026-10-31 17:30:21 双项生效 (flyers 社交证明 10張起, posters 类目/PDP 无 HK$12.9)。",
-   "execution_commit": "b4b0c0f2",
+   "execution_commit": "74581d7f",
    "online_verified": "2026-10-31T17:30:21+08:00 flyers category 10張起 / posters category+PDP 无 HK$12.9",
    "next_check": "D1/D2 + 7/14/28d after actual deployment",
    "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
@@ -791,7 +791,8 @@
     "Do not run on the same day as another category-seo-content.ts writer"
    ],
    "strategy_update": "PARTIAL reconciled to READY for remaining scope only. Historical result and execution_commit b4b0c0f2 are preserved.",
-   "strategy_updated_at": "2026-11-13T03:10:02+08:00"
+   "strategy_updated_at": "2026-11-13T03:10:02+08:00",
+   "note": " | executed 2026-11-15 daily harness per CT-D1/D2: books 1->10 本起訂 x4 / flyers 0.18->0.25 / posters meta 6-9->16起; 7 处 100張批量價已绑定保留; RESET_BY_TRUTH_FIX"
   },
   {
    "task_id": "FIX-20261031-PRIMARY-URL-MISMATCH",
