@@ -1533,7 +1533,7 @@ categoryConversionBlocks['posters:zh-hk'] = {
   "category": "posters",
   "locale": "zh-hk",
   "title": "海報印刷｜印海報 A0-A3 大圖輸出・戶外防水 PVC 1 張起｜智印港",
-  "metaDescription": "香港海報印刷｜印海報 1 張起印，A2 128g銅版紙 HK$6-9/張、A1 HK$10-16/張，500 張減 30%，1,000 張以上轉柯式再降 40%。室內銅版紙/PP，戶外防水 PVC 抗 UV，MTR 燈箱 12-sheet 大圖輸出都做，最快即日交貨，DHL 全球 2-4 天，WhatsApp 報價。",
+  "metaDescription": "香港海報印刷｜印海報 1 張起印，A2 128g銅版紙 由 HK$16/張 起、A1 由 HK$20/張 起，500 張減 30%，1,000 張以上轉柯式再降 40%。室內銅版紙/PP，戶外防水 PVC 抗 UV，MTR 燈箱 12-sheet 大圖輸出都做，最快即日交貨，DHL 全球 2-4 天，WhatsApp 報價。",
   "quickAnswers": [
     {
       "q": "海報印刷幾多錢一張？",
