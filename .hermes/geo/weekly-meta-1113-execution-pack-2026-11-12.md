@@ -40,7 +40,7 @@
 
 **推荐 B 的落地坐标（K3 一句话即发）**：`src/app/[locale]/product/[slug]/page.tsx` offerData 分支 1 改为「价阶表 qty=minQuantity 行的 priceHKD/USD/JPY」，删 getUnitPriceAnchor 优先级；标题侧仅 flyers 三语补「起（批量）」语境（过 title-v5）。
 
-> ⚠️ 同一病灶波及全站：任何「锚表 priceDisplay（批量单张）+ MOQ 小数量」组合都可能有同类落差 → 建议 11-13 批顺带跑一次全站 SKU 量级审计（`priceDisplay` vs `tiers[qty=MOQ]` 比值 > 5× 者列清单），归 K3 拍板批量处置。
+> ⚠️ **2026-11-16 全站量级审计已完成（`.hermes/logs/price-scale-audit-20261116.json`）**：20 个锚定 SKU 中 **15 个 ratio≥5×**。TOP：custom-flyers **86.8×**（display 0.08 vs MOQ-10 实付 6.9/張）、a5-flyers 58.3×（0.14 vs 8）、a4-flyers 44.6×（0.31 vs 14）、folded/special-fold 42×、perfect-bound 35.4×、防水/数码/卷装贴纸 ~17×、saddle-stitch 15.5×、same-day 14.7×、eco 11.1×。**结论升级**：这不是 a4 孤例，而是「起价 = 批量档 as-low-as + MOQ 10 并读」的全站模式 → 需要 K3 一次性拍板全站口径（schema 挂 MOQ 价阶 + 标题补批量语境），而非逐 SKU 修补；a4/a5/custom-flyers 三个带钱 SKU 优先。
 
 ## 4. 数据供给时钟（K3 行动项）
 
