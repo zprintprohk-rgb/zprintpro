@@ -600,12 +600,14 @@
    ],
    "approval_gate": "K3 2026-11-13 CT-20261113-D1-D6 D2: 普通匹配SKU 10张、食品标签500张；默认3mm出血且模板优先；proof/生产/运输报价或订单确认；无源统计删除。",
    "owner_lane": "ZP-daily-content",
-   "status": "READY",
+   "status": "DONE",
    "next_check": "D1/D2 + 7/14/28d after actual deployment",
    "result": "Proposed minimal diff A1-A5 in diagnosis report §5.1 (5 lines, single file); freeze-safe (no title/H1 change)",
    "decision_record": ".hermes/logs/commercial-truth-decisions-2026-11-13.json",
    "strategy_update": "ZH sticker category truth approved. Do not change title/H1/primary URL; do not delete the legitimate food-label MOQ 500.",
-   "strategy_updated_at": "2026-11-13T03:10:02+08:00"
+   "strategy_updated_at": "2026-11-13T03:10:02+08:00",
+   "execution_commit": "7425d28d",
+   "note": " | executed 2026-11-16 daily harness per CT-D2: 5 处 (95% 无源统计/即日交貨 x3 条件化/50張起->10張起); RESET_BY_TRUTH_FIX"
   },
   {
    "task_id": "FIX-20261030-STICKER-PRICE-THREE-LAYER",
