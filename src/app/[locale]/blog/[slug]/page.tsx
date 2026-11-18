@@ -142,7 +142,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'flyer-printing-guide': { title: 'Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99+', description: 'Custom flyer printing guide for US small business. Standard sizes (4x6 / 5x7 / 8.5x11 / A4), paper (glossy/matte/recycled/silk), finishing (UV coating/lamination/folding), 25-5000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.', date: '2026-07-02', category: 'Printing Guide', content: '' },
     'food-packaging-printing-guide': {
       title: '食品包裝印刷完全指南：材質、安全認證與設計實務',
-      description: '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印港為您拆解食品包裝印刷的每個關鍵環節。',
+      description: '外賣盒、餐盒、烘焙盒、月餅禮盒——食品包裝盒印刷 100 個起 HK$2.5 起/個，牛皮紙/白卡紙可選，燙金 UV 工藝，3-5 天交貨，30 秒 AI 報價。智印港拆解食品級材質、安全認證與設計實務，適合烘焙坊、茶葉品牌、餐廳外賣。',
       date: '2026-07-02', category: '包裝知識',
       content: '',
     },

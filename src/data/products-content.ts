@@ -5138,7 +5138,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
   },
   'a2-posters': {
-    longDescription: `<h3>材質與紙張對比</h3>
+    longDescription: `<div class="bg-amber-50 border-l-4 border-amber-500 p-4 my-4"><p class="font-semibold mb-1">⚡ 快速答案 (40 秒讀完)</p><p class="text-sm">A2 海報 = 420 × 594 mm（16.5 × 23.4 吋），10 張起印 HK$16 起/張。157g 銅版紙為基準，200g 厚紙／相紙可升級，PP 合成紙防水可選，雙面四色印刷；常規 1-2 個工作天，即日急件可選；順豐香港本地配送，DHL 全球 2-4 天。A1（594×841mm）面積是 A2 的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起）。延伸閱讀：<a href="/zh-hk/blog/poster-size-guide/" class="text-blue-600 underline">A1 A2 海報尺寸對照表</a> · <a href="/zh-hk/blog/poster-printing-price-guide/" class="text-blue-600 underline">A1 A2 海報印刷價格指南</a></p></div>
+<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
   <thead><tr><th>紙材</th><th>特性</th><th>適用場景</th></tr></thead>
@@ -5169,7 +5170,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。1 張起印，48 小時快遞，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳平湖廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>

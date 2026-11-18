@@ -462,7 +462,7 @@ const lpFoodPackagingGuide: BlogPostMeta = {
     ja: '食品パッケージ印刷完全ガイド：材質、安全性、法規 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印港為您拆解食品包裝印刷的每個關鍵環節。',
+    'zh-hk': '外賣盒、餐盒、烘焙盒、月餅禮盒——食品包裝盒印刷 100 個起 HK$2.5 起/個，牛皮紙/白卡紙可選，燙金 UV 工藝，3-5 天交貨，30 秒 AI 報價。智印港拆解食品級材質、安全認證與設計實務，適合烘焙坊、茶葉品牌、餐廳外賣。',
     en: 'Food-grade packaging printing essentials — from kraft boxes to food-safe lamination, certifications to design best practices.',
     ja: '食品グレードパッケージ印刷の選び方—クラフト紙箱から食品対応ラミネート、認証からデザイン実務まで徹底解説。',
   },

@@ -869,6 +869,31 @@ export const skuMoneyFAQs: Record<string, FAQItem[]> = {
         ja: 'A2は420×594mmです。午前中のデータ確定で即日生産可能、標準1-2営業日。',
       },
     },
+    {
+      // 2026-11-18 議程二 PAA FAQ (方案 A 有界單變量): GSC 28d zh-hk a2-posters 789 imp pos 13.52; PAA 海報size/海報尺寸/a2 poster; 真值 = products.ts a2/a1-posters
+      question: {
+        'zh-hk': 'A2 海報尺寸係幾多吋？',
+        en: 'What is the A2 poster size in inches?',
+        ja: 'A2ポスターのサイズは何インチ？',
+      },
+      answer: {
+        'zh-hk': 'A2 = 420 × 594 mm，即 16.5 × 23.4 吋——正好是 A1 的一半、A3 的兩倍。零售櫥窗與展銷會畫架最常用 A2。',
+        en: '420 × 594 mm = 16.5 × 23.4 inches — exactly half an A1 and double an A3. Retail windows and trade-show easels use A2 most.',
+        ja: 'A2＝420×594mm（16.5×23.4インチ）。A1の半分、A3の2倍にあたり、小売店のショーウィンドウや展示会のイーゼルでよく使われるサイズです。',
+      },
+    },
+    {
+      question: {
+        'zh-hk': 'A1 海報係咪 A2 嘅兩倍價錢？',
+        en: 'Is A1 twice the price of A2?',
+        ja: 'A1はA2の2倍の価格ですか？',
+      },
+      answer: {
+        'zh-hk': '面積上是的——A1（594×841mm）正好是 A2（420×594mm）的兩倍，單價以美元計亦約兩倍（A1 US$4.60 起、A2 US$2.30 起）。A1 1 張起印、A2 10 張起印，實際售價視紙材與數量而定，以 30 秒 AI 報價為準。',
+        en: 'In area, exactly — A1 (594×841mm) is double A2 (420×594mm), and the entry price follows: A1 from US$4.60/pc vs A2 from US$2.30/pc. A1 prints from 1 sheet and A2 from 10; final price depends on paper and quantity — check the 30-sec AI quote.',
+        ja: '面積はその通り——A1（594×841mm）はA2（420×594mm）のちょうど2倍で、単価も約2倍（A1 ¥600〜、A2 ¥300〜）。A1は1枚から、A2は10枚から注文でき、実際の価格は用紙・数量により異なります。',
+      },
+    },
   ],
   'same-day-flyers': [
     {

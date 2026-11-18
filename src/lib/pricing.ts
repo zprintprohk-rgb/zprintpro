@@ -14,7 +14,7 @@
 
 import { Locale } from './seo';
 import { getLiveRatesHKDLocal } from './quote-engine/fx';
-import { UNIT_PRICE_ANCHORS } from './price-data.generated';
+import { UNIT_PRICE_ANCHORS, getPriceTableForSlug } from './price-data.generated';
 
 // 2026-07-13 Step 2: 实时汇率 (with 静态 fallback)
 // pricing.ts 历史用硬编码汇率 (USD 0.128, JPY 19.5, GBP 0.101, AUD 0.195).
@@ -904,6 +904,35 @@ export function getUnitPriceAnchor(slug: string, locale: string): { price: numbe
   };
 }
 
+/**
+ * 2026-11-18 价格口径 B（试点, 议程一）: schema offer 专用 MOQ 价阶取价。
+ * 背景: UNIT_PRICE_ANCHORS.priceDisplay = 批量档 as-low-as（全表最低单档）,
+ * 与 MOQ 档实价落差 ≥5x 者 15/20（custom-flyers 86.8x）→ GMC 价格准确性风险
+ * （审计档 .hermes/logs/price-scale-audit-20261116.json）。
+ * 本函数只服务机器层（schema offer / Merchant Feed, 经 getProductOfferPrice 分支1）,
+ * 显示层（getDisplayAnchor → getUnitPriceAnchor）不经过此函数, 原样保留。
+ * 取价: PRICE_TABLES defaultConfig 档中 qty === minQuantity 的行（与该 SKU 价格表
+ * 首行一致）, 单价 = 该档批价 / qty（保持 offer 现有「单价」语义不变, 只换档位来源）;
+ * 币种取档位原生 priceHKD/priceUSD/priceJPY。
+ * 找不到表 / 档位 / 币种值 → null, 调用方回退 anchor.priceDisplay（零回归）。
+ */
+export function getSchemaMoqTierPrice(
+  slug: string,
+  minQuantity: number | null | undefined,
+  currency: 'HKD' | 'USD' | 'JPY',
+): { price: number; qty: number } | null {
+  if (!minQuantity || minQuantity <= 0) return null;
+  const table = getPriceTableForSlug(slug);
+  if (!table || !Array.isArray(table.configs) || table.configs.length === 0) return null;
+  const config = table.configs[table.defaultConfigIndex] ?? table.configs[0];
+  if (!config || !Array.isArray(config.tiers)) return null;
+  const tier = config.tiers.find((t) => t.qty === minQuantity);
+  if (!tier) return null;
+  const batch = currency === 'JPY' ? tier.priceJPY : currency === 'USD' ? tier.priceUSD : tier.priceHKD;
+  if (typeof batch !== 'number' || !Number.isFinite(batch) || batch <= 0) return null;
+  return { price: batch / tier.qty, qty: tier.qty };
+}
+
 export interface MerchantOfferPrice {
   price: string;
   currency: 'HKD' | 'USD' | 'JPY';
@@ -916,12 +945,21 @@ export interface MerchantOfferPrice {
  * price data returns null rather than emitting a fabricated zero-price Offer.
  */
 export function getProductOfferPrice(
-  product: { slug: string; price_range: string; category_slug: string },
+  product: { slug: string; price_range: string; category_slug: string; minQuantity?: number | null },
   locale: Locale,
 ): MerchantOfferPrice | null {
   const currency = locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD';
   const anchor = getUnitPriceAnchor(product.slug, locale);
   if (anchor) {
+    // 2026-11-18 价格口径 B（试点, 议程一）: 分支1 schema/feed 价改取 PRICE_TABLES
+    // qty=minQuantity 档真实单价（getSchemaMoqTierPrice）; anchor.priceDisplay 是批量档
+    // as-low-as, 与 MOQ 实价落差 ≥5x 达 15/20（custom-flyers 86.8x, 审计档
+    // .hermes/logs/price-scale-audit-20261116.json）。MOQ 档缺失时回退 anchor 旧值,
+    // 分支2（无锚 SKU convertToFromPrice 路径）原样不动。
+    const moqTier = getSchemaMoqTierPrice(product.slug, product.minQuantity ?? null, currency);
+    if (moqTier) {
+      return { price: moqTier.price.toFixed(2).replace(/\.00$/, ''), currency };
+    }
     return { price: anchor.price.toFixed(2).replace(/\.00$/, ''), currency };
   }
 
