@@ -177,9 +177,9 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
     'food-packaging-printing-guide': {
-      title: 'Food Packaging Printing Guide: Materials, Safety & Compliance',
-      description: 'Food-grade packaging printing essentials — from kraft boxes to food-safe lamination, certifications to design best practices.',
-      date: '2026-07-02', category: 'Packaging Guide',
+      title: '食品包裝印刷完全指南：材質、安全認證與設計實務',
+      description: '外賣盒、餐盒、烘焙盒、月餅禮盒——食品包裝盒印刷 100 個起 HK$2.5 起/個，牛皮紙/白卡紙可選，燙金 UV 工藝，3-5 天交貨，30 秒 AI 報價。智印港拆解食品級材質、安全認證與設計實務，適合烘焙坊、茶葉品牌、餐廳外賣。',
+      date: '2026-07-02', category: '包裝知識',
       content: '',
     },
     'paper-bag-printing-guide': {
