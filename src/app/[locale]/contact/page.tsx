@@ -29,6 +29,8 @@ const translations = {
     slaLink: "[查看服務承諾 SLA 適用條款](/zh-hk/faq/)",
     quoteTitle: "免費獲取報價",
     quoteSubtitle: "1分鐘提交需求，專屬顧問極速回覆",
+    // 2026-11-19 K3 指令: 紅色粗字 — 提醒報價回覆郵件可能進垃圾郵件資料夾
+    spamNote: "報價回覆郵件可能會被誤判為垃圾郵件，提交後請務必留意垃圾郵件資料夾，以免錯過回覆",
     promiseSecure: "資料嚴格保密",
     promiseNoSpam: "無騷擾跟進",
     promiseVolume: "量大價優",
@@ -86,6 +88,7 @@ const translations = {
     slaLink: "[View SLA Terms](/en/faq/)",
     quoteTitle: "Get Your Free Quote",
     quoteSubtitle: "Submit in 1 minute, personal advisor responds fast",
+    spamNote: "Our quote reply email may be filtered into your spam/junk folder — after submitting, please check your spam folder so you do not miss our reply.",
     promiseSecure: "Data strictly confidential",
     promiseNoSpam: "No spam follow-up",
     promiseVolume: "Volume discounts",
@@ -142,6 +145,7 @@ const translations = {
     slaLink: "[SLA適用条件を見る](/ja/faq/)",
     quoteTitle: "無料お見積もり",
     quoteSubtitle: "1分で送信、専属アドバイザーが迅速に対応",
+    spamNote: "お見積りの返信メールが迷惑メールフォルダに振り分けられる場合があります。送信後は迷惑メールフォルダも必ずご確認ください",
     promiseSecure: "データ厳格保密",
     promiseNoSpam: "迷惑フォローアップなし",
     promiseVolume: "大量割引",
@@ -317,6 +321,8 @@ export default function ContactPage({ params }: ContactPageProps) {
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">{t.quoteTitle}</h2>
                 <p className="text-slate-500">{t.quoteSubtitle}</p>
+                {/* 2026-11-19 K3 指令: 紅色粗字 — 垃圾郵件查收提醒 (server render, 表單載入前即可見) */}
+                <p className="mt-2 text-sm font-bold text-red-600">⚠️ {t.spamNote}</p>
               </div>
               <ContactFormWrapper locale={locale} />
             </div>

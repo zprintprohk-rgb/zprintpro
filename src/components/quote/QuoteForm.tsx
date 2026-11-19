@@ -96,9 +96,13 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       namePlaceholder: '請輸入您的姓名（選填）',
       phone: '聯絡電話',
       phonePlaceholder: '請輸入手提電話（例如：5123 4567）',
+      // 2026-11-19 K3 指令: 紅色粗字 — 必須填手提電話, 固網收不到 WhatsApp
+      phoneNote: '請務必填寫手提電話號碼，以便透過 WhatsApp 即時聯絡您（固網電話無法接收 WhatsApp 訊息）',
       email: '電郵地址 (必填)',
       emailPlaceholder: '請輸入常用電郵地址（報價以郵件回覆）',
       emailNote: '報價將通過此電郵回覆, 請務必確認電郵地址正確無誤',
+      // 2026-11-19 K3 指令: 紅色粗字 — 回覆郵件可能進垃圾郵件資料夾
+      spamNote: '報價回覆郵件可能會被誤判為垃圾郵件，請務必同時檢查垃圾郵件資料夾，以免錯過報價回覆',
       category: '產品類型',
       categoryPlaceholder: '請選擇產品類型',
       quantity: '印刷數量',
@@ -137,9 +141,11 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       namePlaceholder: 'Your name (optional)',
       phone: 'Phone Number',
       phonePlaceholder: 'Enter your phone number',
+      phoneNote: 'Please provide a mobile (cell) number, not a landline, so we can reach you on WhatsApp — landlines cannot receive WhatsApp messages.',
       email: 'Email Address (required)',
       emailPlaceholder: 'Your email (quote will be sent here)',
       emailNote: 'We will reply to your quote via this email — please double-check it is correct.',
+      spamNote: 'Our quote reply email may be filtered into your spam/junk folder — please also check your spam folder so you do not miss our reply.',
       category: 'Product Type',
       categoryPlaceholder: 'Select product type',
       quantity: 'Quantity',
@@ -178,9 +184,11 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       namePlaceholder: 'お名前（任意）',
       phone: '電話番号',
       phonePlaceholder: '電話番号を入力',
+      phoneNote: 'WhatsAppで即時にご連絡するため、必ず携帯電話番号（固定電話ではなく）をご記入ください',
       email: 'メールアドレス（必須）',
       emailPlaceholder: 'メールアドレス（見積もりをこちらに送信）',
       emailNote: '見積もりはメールでお送りします。メールアドレスが正しいことをご確認ください。',
+      spamNote: 'お見積りの返信メールが迷惑メールフォルダに振り分けられる場合があります。送信後は迷惑メールフォルダも必ずご確認ください',
       category: '製品タイプ',
       categoryPlaceholder: '製品タイプを選択',
       quantity: '数量',
@@ -462,6 +470,11 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
               placeholder={t.phonePlaceholder}
               className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
             />
+            {/* 2026-11-19 K3 指令: 紅色粗字 — 必須留手提電話, 否則 WhatsApp 聯絡不了 (contact 頁專屬, QuoteForm 僅 contact 使用) */}
+            <p className="mt-1.5 flex items-start gap-1.5 text-[13px] font-bold text-red-600">
+              <AlertCircle className="mt-0.5 h-3.5 w-3.5 flex-shrink-0" />
+              <span>{t.phoneNote}</span>
+            </p>
             {form.formState.errors.phone && (
               <p className="mt-1.5 text-sm text-red-500 flex items-center gap-1">
                 <AlertCircle className="w-4 h-4" /> {form.formState.errors.phone.message}
@@ -481,6 +494,11 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
               className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
             />
             <p className="mt-1 flex items-start gap-1.5 text-xs text-gray-400"><svg className="mt-0.5 h-3.5 w-3.5 flex-shrink-0 text-[#F87314]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg><span>{t.emailNote}</span></p>
+            {/* 2026-11-19 K3 指令: 紅色粗字 — 報價回覆可能進垃圾郵件, 提醒客戶查收 */}
+            <p className="mt-1 flex items-start gap-1.5 text-[13px] font-bold text-red-600">
+              <AlertCircle className="mt-0.5 h-3.5 w-3.5 flex-shrink-0" />
+              <span>{t.spamNote}</span>
+            </p>
             {form.formState.errors.email && (
               <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
                 <AlertCircle className="w-4 h-4" /> {form.formState.errors.email.message}
