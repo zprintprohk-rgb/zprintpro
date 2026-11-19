@@ -1,11 +1,11 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 // import { useSearchParams } from 'next/navigation'; // 静态导出不能用 useSearchParams，改用 window.location
-import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2, MessageCircle } from 'lucide-react';
+import { Send, Paperclip, CheckCircle, AlertCircle, Loader2, MessageCircle } from 'lucide-react';
 import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
 import { generateQuoteRef, generateQuoteSheetLink, generateWhatsAppLink, type QuoteSheetContext } from '@/lib/whatsapp';
@@ -34,7 +34,6 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'fallback'>('idle');
   const [lastSheet, setLastSheet] = useState<QuoteSheetContext | null>(null);
   const [files, setFiles] = useState<File[]>([]);
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const [productSlug, setProductSlug] = useState<string | null>(null);
 
   useEffect(() => {
@@ -91,7 +90,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     'zh-hk': {
       contactInfo: '聯絡資訊',
       printNeeds: '印刷需求',
-      messageAttach: '留言與附件',
+      messageAttach: '留言與設計稿',
       name: '姓名',
       namePlaceholder: '請輸入您的姓名（選填）',
       phone: '聯絡電話',
@@ -113,6 +112,11 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: '請詳細說明印刷需求：例如品類、紙質、工藝要求、交貨時間等...',
       attachment: '附件上傳',
       attachmentNote: '拖拽設計稿至此，或點擊上傳',
+      // 2026-11-19 K3 拍板: 移除附件上傳模組 (Supabase user-uploads 桶無建置記錄 + uploadToSupabase 類型白名單缺口 + supabase.co 主網絡不可達)
+      // 改為 WhatsApp/電郵傳稿指引 — 檔案直達 K3 手機/郵箱, 零靜默丟失
+      attachmentGuideTitle: '有設計稿或參考圖？',
+      attachmentGuideBody: '為確保您的檔案 100% 送達，請透過 WhatsApp 直接發送（推薦，急單優先處理），或電郵至 zprintpro@outlook.com 並註明您的聯絡電話，以便對應詢盤。',
+      attachmentGuideWhatsapp: 'WhatsApp 發送設計稿',
       submit: '獲取免費報價 →',
       submitting: '發送中...',
       successTitle: '✅ 詢價已提交！',
@@ -136,7 +140,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     en: {
       contactInfo: 'Contact Information',
       printNeeds: 'Printing Requirements',
-      messageAttach: 'Message & Attachments',
+      messageAttach: 'Message & Design Files',
       name: 'Name',
       namePlaceholder: 'Your name (optional)',
       phone: 'Phone Number',
@@ -156,6 +160,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: 'Please describe your printing needs: product type, paper, finishing, delivery time...',
       attachment: 'Attachment Upload',
       attachmentNote: 'Drag & drop design files, or click to upload',
+      attachmentGuideTitle: 'Have design files or reference images?',
+      attachmentGuideBody: 'To make sure your files always reach us, send them directly via WhatsApp (recommended — rush orders get priority), or email zprintpro@outlook.com with your phone number so we can match your inquiry.',
+      attachmentGuideWhatsapp: 'Send files via WhatsApp',
       submit: 'Get My Free Quote →',
       submitting: 'Sending...',
       successTitle: '✅ Inquiry Submitted!',
@@ -179,7 +186,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     ja: {
       contactInfo: '連絡先情報',
       printNeeds: '印刷のご要望',
-      messageAttach: 'メッセージと添付ファイル',
+      messageAttach: 'メッセージとデザインファイル',
       name: 'お名前',
       namePlaceholder: 'お名前（任意）',
       phone: '電話番号',
@@ -199,6 +206,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: '印刷のご要望を詳しくご記入ください：製品、紙質、加工、納期など...',
       attachment: 'ファイル添付',
       attachmentNote: 'ドラッグ&ドロップでデザインファイルをアップロード',
+      attachmentGuideTitle: 'デザインファイルや参考画像をお持ちですか？',
+      attachmentGuideBody: 'ファイルを確実に受け取れるよう、WhatsAppで直接お送りください（推奨・特急のご注文を優先対応）。またはお電話番号を明記のうえ、zprintpro@outlook.com までメールでお送りください。',
+      attachmentGuideWhatsapp: 'WhatsAppでファイルを送る',
       submit: '無料見積もりを取得 →',
       submitting: '送信中...',
       successTitle: '✅ 依頼を送信しました！',
@@ -244,30 +254,6 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       fallbackCta: 'WhatsAppで見積もりを送る',
     },
   }[locale];
-
-  const handleFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    const selected = Array.from(e.target.files || []);
-    const valid = selected.filter((f) => {
-      if (f.size > 10 * 1024 * 1024) {
-        alert(t.fileTooLarge);
-        return false;
-      }
-      return true;
-    });
-    setFiles((prev) => {
-      const combined = [...prev, ...valid];
-      if (combined.length > 5) {
-        alert(t.maxFiles);
-        return prev;
-      }
-      return combined;
-    });
-    if (fileInputRef.current) fileInputRef.current.value = '';
-  }, [t]);
-
-  const removeFile = useCallback((index: number) => {
-    setFiles((prev) => prev.filter((_, i) => i !== index));
-  }, []);
 
   const onSubmit = async (data: QuoteFormValues) => {
     setIsSubmitting(true);
@@ -586,42 +572,29 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
             )}
           </div>
 
-          {/* 附件上傳 — 拖拽區 (2026-06-08 美化) */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">{t.attachment}</label>
-            <div
-              onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-slate-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors cursor-pointer"
-            >
-              <input
-                ref={fileInputRef}
-                type="file"
-                multiple
-                accept=".pdf,.ai,.psd,.png,.jpg,.jpeg,.zip,.rar"
-                className="hidden"
-                onChange={handleFileChange}
-              />
-              <Upload className="text-3xl text-slate-300 mx-auto mb-2 w-8 h-8" />
-              <p className="text-sm font-medium text-slate-700">{t.attachmentNote}</p>
-              <p className="text-xs text-slate-400 mt-1">PDF / AI / PSD / PNG / JPG（單個最大10MB，最多5個檔案）</p>
+          {/* 2026-11-19 K3 拍板: 附件上傳模組移除 — Supabase user-uploads 桶無建置記錄 +
+              uploadToSupabase 類型白名單不含 ai/psd/zip/rar + supabase.co 主網絡實測不可達 (HTTP 000),
+              上傳結果 K3 永遠收不到 → 改為 WhatsApp/電郵傳稿指引 (檔案直達, 零靜默丟失) */}
+          <div className="rounded-xl border border-blue-100 bg-blue-50/50 p-4">
+            <p className="text-sm font-bold text-[#333333] mb-1.5 flex items-center gap-1.5">
+              <Paperclip className="w-4 h-4 text-[#2873F5] flex-shrink-0" /> {t.attachmentGuideTitle}
+            </p>
+            <p className="text-[13px] text-gray-600 leading-relaxed">{t.attachmentGuideBody}</p>
+            <div className="mt-2.5 flex flex-wrap gap-2">
+              <a
+                href={generateWhatsAppLink(locale, { source: 'contact-attachment-guide' })}
+                target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-[#25D366] text-white text-[13px] font-bold px-3 py-2 hover:brightness-105 transition-colors"
+              >
+                <MessageCircle className="w-3.5 h-3.5" /> {t.attachmentGuideWhatsapp}
+              </a>
+              <a
+                href="mailto:zprintpro@outlook.com"
+                className="inline-flex items-center rounded-lg border border-gray-200 bg-white text-[13px] font-semibold text-gray-700 px-3 py-2 hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
+              >
+                zprintpro@outlook.com
+              </a>
             </div>
-
-            {files.length > 0 && (
-              <div className="mt-3 space-y-2">
-                {files.map((file, idx) => (
-                  <div key={idx} className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2">
-                    <div className="flex items-center gap-2 min-w-0">
-                      <Paperclip className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                      <span className="text-sm text-gray-600 truncate">{file.name}</span>
-                      <span className="text-xs text-gray-400 flex-shrink-0">({(file.size / 1024 / 1024).toFixed(1)}MB)</span>
-                    </div>
-                    <button type="button" onClick={() => removeFile(idx)} className="p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0">
-                      <X className="w-4 h-4 text-gray-500" />
-                    </button>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </div>
