@@ -146,16 +146,23 @@ function registerYate98(slug: string, data: any) {
 }
 
 // e-print schema: { products: [{ sku, config: {...}, tiers: [...] }] }
+// 2026-11-20 same-day-flyers 結構升級為 configs: [{label, tiers}]（A4/A5 拆分，拍板單 §四-3），
+// 此處同時兼容單 config（p.tiers）與多 config（p.configs）兩種 schema
 function registerEprint(slug: string, data: any) {
-  // eprint 顶层是 products array, 走 products[i].tiers
-  const configs = data.products.flatMap((p: any) =>
-    p.tiers.map((t: any) => ({
-      config: `${p.sku} | ${p.config?.size || ''} | ${p.config?.paper || ''} | ${p.config?.print || p.config?.binding || ''}`,
-      productSku: p.sku,
-      productConfig: p.config,
-      tiers: [t],
-    }))
-  );
+  // eprint 顶层是 products array, 走 products[i].tiers 或 products[i].configs[].tiers
+  const configs = data.products.flatMap((p: any) => {
+    const groups = p.tiers
+      ? [{ label: '', tiers: p.tiers }]
+      : (p.configs || []).map((c: any) => ({ label: c.label?.['zh-hk'] || '', tiers: c.tiers || [] }));
+    return groups.flatMap((g: any) =>
+      g.tiers.map((t: any) => ({
+        config: `${p.sku} | ${g.label} | ${p.config?.size || ''} | ${p.config?.paper || ''} | ${p.config?.print || p.config?.binding || ''}`,
+        productSku: p.sku,
+        productConfig: p.config,
+        tiers: [t],
+      }))
+    );
+  });
   const t: TableRegistry = {
     meta: {
       sku: data._meta?.category || 'flyers', // eprint 用 category 字段

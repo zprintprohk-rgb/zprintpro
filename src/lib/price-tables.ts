@@ -38,6 +38,9 @@ const SKU_INDEX: Map<string, PriceTier[]> = (() => {
   const map = new Map<string, PriceTier[]>();
   for (const table of TABLES) {
     for (const p of table.products) {
+      // 2026-11-20: same-day-flyers 已升級為 configs[] 結構（A4/A5 拆分, 拍板單 §四-3），
+      // 本遺留引擎無 config 維度，跳過此類產品（調用方回退展示價邏輯），避免 spread undefined 崩潰
+      if (!p.tiers) continue;
       // tiers 升序排序一次, 后续插值依赖有序
       map.set(p.sku, [...p.tiers].sort((a, b) => a.qty - b.qty));
     }
