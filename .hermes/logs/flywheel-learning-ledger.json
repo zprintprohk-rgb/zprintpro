@@ -1,327 +1,1016 @@
 {
-  "schema_version": "1.0",
-  "generated_at": "2026-11-10T08:35:00+08:00",
-  "role": "飞轮学习账本（machine-readable）— 5 条车道每轮开工先读、收尾回写",
-  "policy_source": "docs/2026-11-07-three-market-seo-aeo-geo-flywheel-strategy.md §7/§8",
-  "contract": ".hermes/cron-prompts/lane-results-bus-contract.md §8",
-  "hard_rules": {
-    "single_variable": "一个实验只允许一个变量；同页同窗不得双改",
-    "no_self_approval": "WAITING_K3 项执行层不得自批（含 title / 价格 / MOQ / 交期 / 主 URL）",
-    "decision_grade_window": "只有「变更后天数占比」达标的窗口才可判胜负：7d 需 100%，28d 需 ≥82%",
-    "no_learning_without_online_verify": "无 online_verify 证据的项不得进入 learning 状态（只能停在 DEPLOYED）",
-    "no_fabrication": "不得编造 review / aggregateRating / 认证 / 客户数；数字只来自 products.ts 与已部署线上事实",
-    "stop_is_not_delete": "STOP/NO_OP = 停止追加投入，不等于删页 / noindex / 301"
-  },
-  "verdict_enum": ["PROPOSED", "APPROVED", "DEPLOYED", "MEASURE", "HOLD", "FIX", "SCALE", "STOP", "NO_OP", "BLOCKED"],
-  "window_math": {
-    "export_lag_days": 3,
-    "export_lag_evidence": ["11-03 导出 → 28d 数据日 10-31", "11-07 导出 → 28d 数据日 11-04"],
-    "baseline_windows": { "7d": "2026-10-29..2026-11-04", "28d": "2026-10-08..2026-11-04", "data_day": "2026-11-04" },
-    "dilution_table": [
-      { "export_date": "2026-11-14", "window7d_post_change_pct": 42.9, "window28d_post_change_pct": 10.7, "usable_for_verdict": "DIRECTION_ONLY" },
-      { "export_date": "2026-11-18", "window7d_post_change_pct": 100, "window28d_post_change_pct": 28.6, "usable_for_verdict": "7D" },
-      { "export_date": "2026-11-21", "window7d_post_change_pct": 100, "window28d_post_change_pct": 39.3, "usable_for_verdict": "7D" },
-      { "export_date": "2026-11-28", "window7d_post_change_pct": 100, "window28d_post_change_pct": 64.3, "usable_for_verdict": "7D" },
-      { "export_date": "2026-12-04", "window7d_post_change_pct": 100, "window28d_post_change_pct": 82.1, "usable_for_verdict": "28D" },
-      { "export_date": "2026-12-10", "window7d_post_change_pct": 100, "window28d_post_change_pct": 100, "usable_for_verdict": "28D_CLEAN" }
-    ]
-  },
-  "experiments": [
-    {
-      "id": "EXP-1108-FLYERS-CLUSTER",
-      "cluster": "flyers",
-      "locale": "zh-hk",
-      "words": ["宣傳單張"],
-      "baseline": { "imp": 127, "clk": 0, "pos": 34.73, "data_day": "2026-11-04" },
-      "change": { "commit": "74ffa5a9", "date": "2026-11-08", "what": "A4 單面 HK$0.35 起 / A5 0.25 起 + 阶梯说明（价格真值）" },
-      "approval_gate": "K3 价格真值已批（11-08 执行报告 4/4 PASS）",
-      "production_deploy": { "commit": "74ffa5a9", "online_verify": "4/4 PASS" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-18", "note": "11-14 只判方向（42.9% 变更后），28d 仅背景" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback",
-      "do_not_touch": ["title（等 weekly-meta 11-13 单批）", "canonical", "301"],
-      "confounders": ["同 commit 携带 ja textbook / ja doujinshi / en A2 三簇，归因按页×语种×查询粒度隔离"]
-    },
-    {
-      "id": "EXP-1108-POSTER-PRIMARY-URL",
-      "cluster": "posters",
-      "locale": "zh-hk",
-      "words": ["海報印刷", "印海報"],
-      "baseline": { "imp": 261, "clk": 1, "pos": 14.83, "secondary": { "word": "印海報", "imp": 124, "clk": 0, "pos": 14.15 } },
-      "change": { "commit": "9acc3d16", "date": "2026-11-08", "what": "主承接 = /zh-hk/category/posters/（指南退居选购辅助）" },
-      "approval_gate": "K3 2026-11-08 01:38 拍板「直接拍板海报与喜帖的主承接 URL」",
-      "production_deploy": { "commit": "9acc3d16", "online_verify": "4/4 PASS" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-21", "note": "看份额是否向 category 收敛；不因首窗未收敛回滚" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-1108-WEDDING-PRIMARY-URL",
-      "cluster": "wedding-invitations",
-      "locale": "zh-hk",
-      "words": ["喜帖印刷"],
-      "baseline": { "imp": 16, "clk": 0, "pos": 36.25 },
-      "change": { "commit": "9acc3d16", "date": "2026-11-08", "what": "喜帖主承接 = /zh-hk/category/wedding-invitations/；感谢卡只做答谢意图" },
-      "approval_gate": "同上 K3 拍板",
-      "production_deploy": { "commit": "9acc3d16", "online_verify": "4/4 PASS" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-21", "note": "样本小（16 imp），只判意图匹配与 73% 集中度是否收敛" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-1108-JA-DOUJINSHI-UNIT",
-      "cluster": "japan-doujin",
-      "locale": "ja",
-      "words": ["コミケ 印刷"],
-      "baseline": { "imp": 163, "clk": 0, "pos": 22.88 },
-      "change": { "commit": "74ffa5a9", "date": "2026-11-08", "what": "订单起价单位 /部→/注文 + 免责句（价格可理解性）" },
-      "approval_gate": "K3 已批（价格单位事实修正）",
-      "production_deploy": { "commit": "74ffa5a9" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-18" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback",
-      "do_not_touch": ["活动日期 / 截稿承诺（未核实前禁写）", "新建同人簇页面"]
-    },
-    {
-      "id": "EXP-1108-JA-TEXTBOOK-PRICE",
-      "cluster": "educational",
-      "locale": "ja",
-      "words": ["教材 印刷製本"],
-      "baseline": { "imp": 51, "clk": 0, "pos": 31.49 },
-      "change": { "commit": "74ffa5a9", "date": "2026-11-08", "what": "正文 + description + blog excerpt 同源改 ¥1,288〜（价格真值对齐）" },
-      "approval_gate": "K3 已批",
-      "production_deploy": { "commit": "74ffa5a9" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-21" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-1108-EN-A2-POSTER",
-      "cluster": "posters",
-      "locale": "en",
-      "words": ["a2 poster"],
-      "baseline": { "imp": 49, "clk": 1, "pos": 25.80 },
-      "change": { "commit": "74ffa5a9", "date": "2026-11-08", "what": "EN A2 H1 + 4 处 MOQ 100→10（单一变量：真值）" },
-      "approval_gate": "K3 已批",
-      "production_deploy": { "commit": "74ffa5a9" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-18" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-1109-CATALOG-EN-H1",
-      "cluster": "catalog",
-      "locale": "en",
-      "words": ["china catalog printing"],
-      "baseline": { "imp": 98, "clk": null, "pos": 14.15 },
-      "change": { "commit": "a33abd3b", "date": "2026-11-09", "what": "en H1 100+ → 10+（MOQ 真值）" },
-      "approval_gate": "K3 P0 批（11-09 p0 执行）",
-      "production_deploy": { "commit": "a33abd3b", "cf_run": "128890190650" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-18", "note": "不因窗口改善直接 SCALE" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback",
-      "confounders": ["同日 12:44 同 SKU 另一变量（zh/ja desc，392c5f30）→ 跨语种归因需分开"]
-    },
-    {
-      "id": "EXP-1109-CATALOG-DESC",
-      "cluster": "catalog",
-      "locale": "zh-hk+ja",
-      "words": ["畫冊印刷", "カタログ印刷"],
-      "baseline": { "note": "同簇基线并入 EXP-1109-CATALOG-EN-H1" },
-      "change": { "commit": "392c5f30", "date": "2026-11-09", "what": "zh desc 100 起→10 本起印；ja 100〜→10冊〜" },
-      "approval_gate": "K3 P2 批",
-      "production_deploy": { "commit": "392c5f30", "cf_run": "128985513618" },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-18" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-1108-SMALLBATCH-SNIPPET",
-      "cluster": "stickers",
-      "locale": "en",
-      "words": ["small batch sticker printing", "small batch stickers"],
-      "baseline": { "imp": 27, "clk": 0, "pos": 6.00, "secondary": { "imp": 19, "clk": 0, "pos": 5.42 } },
-      "change": { "commit": null, "date": null, "what": "NONE — 11-08 诊断判 HOLD/MEASURE（PDP 100% 承接、非内耗；SERP 不可得）" },
-      "approval_gate": "需 K3 一句话才可做 snippet 单变量",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-11-28", "note": "若 SERP 仍不可得，继续 SERP_UNAVAILABLE，不编造" },
-      "verdict": "MEASURE",
-      "owner_lane": "ZP-weekly-meta",
-      "do_not_touch": ["新建同义长文（首页零点击是摘要问题，不是内容量问题）"]
-    },
-    {
-      "id": "EXP-STICKER-THIRD-WINDOW",
-      "cluster": "stickers",
-      "locale": "zh-hk",
-      "words": ["貼紙印刷", "貼紙訂製"],
-      "baseline": { "imp": 131, "clk": 0, "pos": 37.65, "secondary": { "word": "貼紙訂製", "pos": 29.29 } },
-      "change": { "commit": null, "date": null, "what": "NONE — 第三窗 gate 未达（需 ≥11-09 档，数据断供）" },
-      "approval_gate": "无（纯测量）",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-12-04" },
-      "verdict": "HOLD",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-REDPACKETS-SEASON",
-      "cluster": "red-packets",
-      "locale": "zh-hk",
-      "words": ["利是封印刷"],
-      "baseline": { "imp": 59, "clk": 1, "pos": 24.42 },
-      "change": { "commit": null, "date": null, "what": "NO_OP — 季节窗 + 承接已集中（red-packets 75%）" },
-      "approval_gate": "无",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2027-01-05", "note": "春节前 6-8 周为真窗，11 月不作为判据" },
-      "verdict": "NO_OP",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-FOODBOX-OPP01",
-      "cluster": "packaging",
-      "locale": "zh-hk",
-      "words": ["食品包裝印刷"],
-      "baseline": { "imp": 116, "clk": 0, "pos": 8.36 },
-      "change": { "commit": null, "date": null, "what": "NONE — 页一零点击池（OPP-01），先取 SERP 快照再定 snippet 单变量" },
-      "approval_gate": "K3 既定 title 审批（同页同窗不得双改）",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2026-11-13", "decision_grade_by": "2026-11-21" },
-      "verdict": "BLOCKED",
-      "owner_lane": "ZP-weekly-meta",
-      "blocked_reason": "SERP feature 不可得（本机出口 INVALID）；weekly-meta 11-06 BLOCKED，下一窗 11-13"
-    },
-    {
-      "id": "EXP-BOOKS-DUAL-PAGE",
-      "cluster": "books",
-      "locale": "zh-hk",
-      "words": ["書刊印刷", "印書"],
-      "baseline": { "blog": { "imp": 92, "pos": 30.41 }, "category": { "imp": 90, "pos": 55.08 } },
-      "change": { "commit": null, "date": null, "what": "NONE — 双页均深位（30+），无页一竞争者 → 纯 MEASURE，禁 301/canonical" },
-      "approval_gate": "无",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2026-11-14", "decision_grade_by": "2026-12-04" },
-      "verdict": "MEASURE",
-      "owner_lane": "ZP-gsc-feedback"
-    },
-    {
-      "id": "EXP-SCHEMA-CATEGORY-DUP-NODES",
-      "cluster": "technical",
-      "locale": "all",
-      "words": [],
-      "baseline": { "note": "线上实测 2026-11-10：/zh-hk/category/stickers/ JSON-LD 内 18 个 Product 节点（9 SKU × 2）" },
-      "change": { "commit": "LOCAL-2026-11-10", "date": "2026-11-10", "what": "删除独立 itemListJsonLd 发射（保留 CollectionPage.mainEntity = ItemList）" },
-      "approval_gate": "执行层缺陷修复（重复结构化数据，非内容/价格/URL 变更）",
-      "production_deploy": { "commit": "pending-push", "cf_run": null },
-      "online_verify": { "method": "node 探针统计 Product 节点数与 brandCount", "target": "/zh-hk/category/stickers/ 应为 9 节点 + 其余 3 locale 抽样" },
-      "retest": { "first": "2026-11-14", "note": "GSC「产品摘要」受影响项应在下次重抓后下降（非承诺）" },
-      "verdict": "FIX",
-      "owner_lane": "manual-executor"
-    },
-    {
-      "id": "EXP-SCHEMA-BRAND-DUP",
-      "cluster": "technical",
-      "locale": "all",
-      "words": [],
-      "baseline": { "note": "GSC 商家信息「字段 brand 重复」3 项（3 个修复前旧抓取示例：ja white-card-boxes 11-02 / ja die-cut-stickers 11-01 / zh-hk cartoon-red-packets 10-30）" },
-      "change": { "commit": "414549e5 + c4605923", "date": "2026-11-01 / 2026-11-02", "what": "① Product.brand 统一集团常量 PRODUCT_BRAND_NAME（跨语归并冲突）② 移除 Product @id（RSC flight 副本与 SSR 副本被合并 → 重复字段）" },
-      "approval_gate": "已批（GMC 修复批）",
-      "production_deploy": { "commit": "c4605923", "note": "已在线上（d7a8d5d7 祖先链）" },
-      "online_verify": { "at": "2026-11-10T08:20+08:00", "result": "3 个示例 URL 全部 = 1 个 Product 节点 / brandCount=1 / 无 @id / offers 在位 / 无 aggregateRating", "verdict": "PASS" },
-      "retest": { "first": "2026-11-17", "note": "等 Google 重抓清除 3 项；GSC「验证修正情况」已于 11-02 启动" },
-      "verdict": "DEPLOYED",
-      "owner_lane": "manual-executor"
-    },
-    {
-      "id": "EXP-SCHEMA-RATING-GAP",
-      "cluster": "technical",
-      "locale": "all",
-      "words": [],
-      "baseline": { "note": "GSC 产品摘要改进建议：未填写 aggregateRating 1,034 项 / 未填写 review 1,034 项；关键项「应指定 offers/review/aggregateRating」= 0" },
-      "change": { "commit": null, "date": null, "what": "NONE — 政策禁编造（K3 8/4 P0-2）；schema 层已条件化（product-reviews.ts 有真实评价才输出）" },
-      "approval_gate": "K3 业务动作：启动真实评价收集（订单后 WhatsApp 邀请 / Trustpilot / Google Customer Reviews）",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "K3 决策后", "note": "无真实评价前，该项持续作为「增强建议」存在，不影响内容有效性" },
-      "verdict": "HOLD",
-      "owner_lane": "manual-executor",
-      "do_not_touch": ["自造 review / aggregateRating", "假评审人姓名"]
-    },
-    {
-      "id": "EXP-GEO-S1",
-      "cluster": "geo",
-      "locale": "all",
-      "words": [],
-      "baseline": { "note": "S1 基线 2026-11-03：0/11 探针命中（两遍一致）；口径 = web_search（source_check 不可用，与 09-30 序列不可比）" },
-      "change": { "commit": null, "date": null, "what": "NONE — 只测量" },
-      "approval_gate": "探针口径冻结（S2 于 2026-11-20..24）",
-      "production_deploy": { "commit": null },
-      "retest": { "first": "2026-11-10", "decision_grade_by": "2026-11-24", "note": "复测节奏 11-10 / 11-17 / 11-24，同工具同 11 问题；无命中增长证据前禁称「AI 引用增长」" },
-      "verdict": "MEASURE",
-      "owner_lane": "ZP-weekly-meta",
-      "blocked_reason": "11-10 复测未执行（本次会话未跑 22 次探针调用）"
-    }
+ "schema_version": "1.0",
+ "generated_at": "2026-11-10T08:35:00+08:00",
+ "role": "飞轮学习账本（machine-readable）— 5 条车道每轮开工先读、收尾回写",
+ "policy_source": "docs/2026-11-07-three-market-seo-aeo-geo-flywheel-strategy.md §7/§8",
+ "contract": ".hermes/cron-prompts/lane-results-bus-contract.md §8",
+ "hard_rules": {
+  "single_variable": "一个实验只允许一个变量；同页同窗不得双改",
+  "no_self_approval": "WAITING_K3 项执行层不得自批（含 title / 价格 / MOQ / 交期 / 主 URL）",
+  "decision_grade_window": "只有「变更后天数占比」达标的窗口才可判胜负：7d 需 100%，28d 需 ≥82%",
+  "no_learning_without_online_verify": "无 online_verify 证据的项不得进入 learning 状态（只能停在 DEPLOYED）",
+  "no_fabrication": "不得编造 review / aggregateRating / 认证 / 客户数；数字只来自 products.ts 与已部署线上事实",
+  "stop_is_not_delete": "STOP/NO_OP = 停止追加投入，不等于删页 / noindex / 301"
+ },
+ "verdict_enum": [
+  "PROPOSED",
+  "APPROVED",
+  "DEPLOYED",
+  "MEASURE",
+  "HOLD",
+  "FIX",
+  "SCALE",
+  "STOP",
+  "NO_OP",
+  "BLOCKED"
+ ],
+ "window_math": {
+  "export_lag_days": 3,
+  "export_lag_evidence": [
+   "11-03 导出 → 28d 数据日 10-31",
+   "11-07 导出 → 28d 数据日 11-04"
   ],
-  "retest_gate_2026_11_14": {
-    "attempted_at": "2026-11-14T20:13:00+08:00",
-    "owner_lane": "ZP-gsc-feedback",
-    "status": "BLOCKED",
-    "reason_code": "NO_NEW_EXPORT_DATA_SUPPLY_STALE",
-    "data_supply_note": "No 2026-11-13 or 2026-11-14 GSC export exists. Latest export 2026-11-12 carries 7d/28d data day 2026-11-10 and is 92.2h old at 20:13 (>72h). Current query x page join absent; SERP_UNAVAILABLE.",
-    "available_window": { "7d": "2026-11-04..2026-11-10", "28d": "2026-10-14..2026-11-10", "post_change_7d": "28.6-42.9%", "post_change_28d": "7.1-10.7%" },
-    "blocked_experiment_ids": [
-      "EXP-1108-FLYERS-CLUSTER",
-      "EXP-1108-POSTER-PRIMARY-URL",
-      "EXP-1108-WEDDING-PRIMARY-URL",
-      "EXP-1108-JA-DOUJINSHI-UNIT",
-      "EXP-1108-JA-TEXTBOOK-PRICE",
-      "EXP-1108-EN-A2-POSTER",
-      "EXP-1109-CATALOG-EN-H1",
-      "EXP-1109-CATALOG-DESC",
-      "EXP-STICKER-THIRD-WINDOW",
-      "EXP-BOOKS-DUAL-PAGE"
-    ],
-    "verdict_policy": "Per contract 8.8 every due retest is recorded BLOCKED with the data-supply reason. Entry-level verdict (DEPLOYED / HOLD / MEASURE) is intentionally NOT rewritten so deployment history is preserved; this block is the authoritative retest status for 2026-11-14.",
-    "k3_action": "Export 2026-11-13 and 2026-11-14 24h/7d/28d (+3mo) into GSC数据/, restart proxy 7892, run python scripts/gsc-cliff-detector.py, run node scripts/rebuild-gsc-index.mjs --write. Do not relabel the 2026-11-12 batch as a 11-14 retest.",
-    "evidence": ".hermes/logs/2026-11-14-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-14.json",
-    "next_check": "2026-11-18"
+  "baseline_windows": {
+   "7d": "2026-10-29..2026-11-04",
+   "28d": "2026-10-08..2026-11-04",
+   "data_day": "2026-11-04"
   },
-  "data_supply": {
-    "status": "BROKEN_DAY6",
-    "latest_xlsx": "2026-11-07（24h/7d/28d；缺 3mo）",
-    "latest_api": "end1105（数据日 2026-11-04）",
-    "detector_latest": "2026-11-03（123.7% 官方值）",
-    "index_json": "lastBuild 2026-11-05 / latestFreshData 2026-11-03（未收录 11-07 批，A47）",
-    "root_cause": "Clash/mihomo 代理 127.0.0.1:7892 宕机 + 直连被墙（000）→ API 拉取不可用",
-    "owner": "K3 / 主机",
-    "k3_actions": [
-      "重启代理进程（7892）",
-      "导出 11-08 / 11-09 / 11-10 四档（24h/7d/28d/3mo，全国家、网页搜索）→ GSC数据/",
-      "python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-09",
-      "python scripts/gsc-cliff-detector.py",
-      "node scripts/rebuild-gsc-index.mjs --write"
-    ],
-    "blocked_experiments": ["全部 11-14 复测项", "EXP-STICKER-THIRD-WINDOW", "GEO S1 复测（11-10）"]
+  "dilution_table": [
+   {
+    "export_date": "2026-11-14",
+    "window7d_post_change_pct": 42.9,
+    "window28d_post_change_pct": 10.7,
+    "usable_for_verdict": "DIRECTION_ONLY"
+   },
+   {
+    "export_date": "2026-11-18",
+    "window7d_post_change_pct": 100,
+    "window28d_post_change_pct": 28.6,
+    "usable_for_verdict": "7D"
+   },
+   {
+    "export_date": "2026-11-21",
+    "window7d_post_change_pct": 100,
+    "window28d_post_change_pct": 39.3,
+    "usable_for_verdict": "7D"
+   },
+   {
+    "export_date": "2026-11-28",
+    "window7d_post_change_pct": 100,
+    "window28d_post_change_pct": 64.3,
+    "usable_for_verdict": "7D"
+   },
+   {
+    "export_date": "2026-12-04",
+    "window7d_post_change_pct": 100,
+    "window28d_post_change_pct": 82.1,
+    "usable_for_verdict": "28D"
+   },
+   {
+    "export_date": "2026-12-10",
+    "window7d_post_change_pct": 100,
+    "window28d_post_change_pct": 100,
+    "usable_for_verdict": "28D_CLEAN"
+   }
+  ]
+ },
+ "experiments": [
+  {
+   "id": "EXP-1108-FLYERS-CLUSTER",
+   "cluster": "flyers",
+   "locale": "zh-hk",
+   "words": [
+    "宣傳單張"
+   ],
+   "baseline": {
+    "imp": 127,
+    "clk": 0,
+    "pos": 34.73,
+    "data_day": "2026-11-04"
+   },
+   "change": {
+    "commit": "74ffa5a9",
+    "date": "2026-11-08",
+    "what": "A4 單面 HK$0.35 起 / A5 0.25 起 + 阶梯说明（价格真值）"
+   },
+   "approval_gate": "K3 价格真值已批（11-08 执行报告 4/4 PASS）",
+   "production_deploy": {
+    "commit": "74ffa5a9",
+    "online_verify": "4/4 PASS"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-18",
+    "note": "11-14 只判方向（42.9% 变更后），28d 仅背景"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback",
+   "do_not_touch": [
+    "title（等 weekly-meta 11-13 单批）",
+    "canonical",
+    "301"
+   ],
+   "confounders": [
+    "同 commit 携带 ja textbook / ja doujinshi / en A2 三簇，归因按页×语种×查询粒度隔离"
+   ]
   },
-  "scheduler_truth": {
-    "checked_at": "2026-11-10 01:29",
-    "healthy": ["ZP-daily-content 0", "ZP-gsc-feedback 0", "ZP-k3-review 0", "ZP-blog-deepfix 0"],
-    "watch": ["ZP-weekly-meta exit=1（脚本已修 1e85b0d4，11-13 20:52 首验）"],
-    "broken": ["ZP-monthly-matrix 2147946720（11-01 起第 9 天，需管理员重建）"],
-    "note": "11-09 06:43 快照的 four 0x800710E0 已过时，不得再引用为当前状态"
+  {
+   "id": "EXP-1108-POSTER-PRIMARY-URL",
+   "cluster": "posters",
+   "locale": "zh-hk",
+   "words": [
+    "海報印刷",
+    "印海報"
+   ],
+   "baseline": {
+    "imp": 261,
+    "clk": 1,
+    "pos": 14.83,
+    "secondary": {
+     "word": "印海報",
+     "imp": 124,
+     "clk": 0,
+     "pos": 14.15
+    }
+   },
+   "change": {
+    "commit": "9acc3d16",
+    "date": "2026-11-08",
+    "what": "主承接 = /zh-hk/category/posters/（指南退居选购辅助）"
+   },
+   "approval_gate": "K3 2026-11-08 01:38 拍板「直接拍板海报与喜帖的主承接 URL」",
+   "production_deploy": {
+    "commit": "9acc3d16",
+    "online_verify": "4/4 PASS"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-21",
+    "note": "看份额是否向 category 收敛；不因首窗未收敛回滚"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback"
   },
-  "counters": {
-    "blog": { "zh_hk_unique": 101, "en_unique": 102, "ja_unique": 101, "blog_posts_ts_entries": 111, "blog_posts_ts_unique_slugs": 110, "union_unique": 102, "intersect_3_locale": 101, "measured_at": "2026-11-10T08:25+08:00" },
-    "blog_12seg_fails": 0,
-    "blog_12seg_baseline_updated_at": "2026-10-31T03:26:00Z",
-    "money_words_28d": { "words": 29, "imp": 2102, "clk": 4, "page1_rows": 8, "page1_zero_click_rows": 7, "page1_zero_click_imp": 239, "data_day": "2026-11-04" },
-    "kpi_28d": { "clk": 538, "imp": 23183, "ctr_pct": 2.3207, "pos": 14.2796, "data_day": "2026-11-04" }
+  {
+   "id": "EXP-1108-WEDDING-PRIMARY-URL",
+   "cluster": "wedding-invitations",
+   "locale": "zh-hk",
+   "words": [
+    "喜帖印刷"
+   ],
+   "baseline": {
+    "imp": 16,
+    "clk": 0,
+    "pos": 36.25
+   },
+   "change": {
+    "commit": "9acc3d16",
+    "date": "2026-11-08",
+    "what": "喜帖主承接 = /zh-hk/category/wedding-invitations/；感谢卡只做答谢意图"
+   },
+   "approval_gate": "同上 K3 拍板",
+   "production_deploy": {
+    "commit": "9acc3d16",
+    "online_verify": "4/4 PASS"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-21",
+    "note": "样本小（16 imp），只判意图匹配与 73% 集中度是否收敛"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback"
   },
-  "next_actions_by_date": {
-    "2026-11-10": ["K3 补四档导出 + 重启代理（阻塞全部复测）", "月曆 EXP-1103-CALFAQ 7 天窗读数（基线在 11-03 报告）", "GEO S1 复测（11 问题 × 2 遍，同工具）"],
-    "2026-11-13": ["weekly-meta 首验：7 项 FIX 残留 + 海报 desc + 超带 title 三页（en stickers 100 / ja stickers 83 / zh-hk flyers 59）单变量单批"],
-    "2026-11-14": ["14 项首轮复测：只判方向 + 真值一致性；28d 标 BACKGROUND_ONLY", "schema 修复线上复验（category 节点数 9）"],
-    "2026-11-18": ["首个 7d 100% 变更后窗：可判方向强弱"],
-    "2026-11-21": ["第二窗：海报/喜帖份额是否收敛；28d 仍只作背景"],
-    "2026-11-28": ["small batch 复测（美国英文 SERP + 同口径 28d）"],
-    "2026-12-01": ["monthly-matrix 自然轮（能否闭第 9 天缺口）"],
-    "2026-12-04": ["28d 达 82% 变更后天数：首个可做 SCALE/HOLD/FIX/STOP 的经营判据窗"]
+  {
+   "id": "EXP-1108-JA-DOUJINSHI-UNIT",
+   "cluster": "japan-doujin",
+   "locale": "ja",
+   "words": [
+    "コミケ 印刷"
+   ],
+   "baseline": {
+    "imp": 163,
+    "clk": 0,
+    "pos": 22.88
+   },
+   "change": {
+    "commit": "74ffa5a9",
+    "date": "2026-11-08",
+    "what": "订单起价单位 /部→/注文 + 免责句（价格可理解性）"
+   },
+   "approval_gate": "K3 已批（价格单位事实修正）",
+   "production_deploy": {
+    "commit": "74ffa5a9"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-18"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback",
+   "do_not_touch": [
+    "活动日期 / 截稿承诺（未核实前禁写）",
+    "新建同人簇页面"
+   ]
+  },
+  {
+   "id": "EXP-1108-JA-TEXTBOOK-PRICE",
+   "cluster": "educational",
+   "locale": "ja",
+   "words": [
+    "教材 印刷製本"
+   ],
+   "baseline": {
+    "imp": 51,
+    "clk": 0,
+    "pos": 31.49
+   },
+   "change": {
+    "commit": "74ffa5a9",
+    "date": "2026-11-08",
+    "what": "正文 + description + blog excerpt 同源改 ¥1,288〜（价格真值对齐）"
+   },
+   "approval_gate": "K3 已批",
+   "production_deploy": {
+    "commit": "74ffa5a9"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-21"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback"
+  },
+  {
+   "id": "EXP-1108-EN-A2-POSTER",
+   "cluster": "posters",
+   "locale": "en",
+   "words": [
+    "a2 poster"
+   ],
+   "baseline": {
+    "imp": 49,
+    "clk": 1,
+    "pos": 25.8
+   },
+   "change": {
+    "commit": "74ffa5a9",
+    "date": "2026-11-08",
+    "what": "EN A2 H1 + 4 处 MOQ 100→10（单一变量：真值）"
+   },
+   "approval_gate": "K3 已批",
+   "production_deploy": {
+    "commit": "74ffa5a9"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-18"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback"
+  },
+  {
+   "id": "EXP-1109-CATALOG-EN-H1",
+   "cluster": "catalog",
+   "locale": "en",
+   "words": [
+    "china catalog printing"
+   ],
+   "baseline": {
+    "imp": 98,
+    "clk": null,
+    "pos": 14.15
+   },
+   "change": {
+    "commit": "a33abd3b",
+    "date": "2026-11-09",
+    "what": "en H1 100+ → 10+（MOQ 真值）"
+   },
+   "approval_gate": "K3 P0 批（11-09 p0 执行）",
+   "production_deploy": {
+    "commit": "a33abd3b",
+    "cf_run": "128890190650"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-18",
+    "note": "不因窗口改善直接 SCALE"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback",
+   "confounders": [
+    "同日 12:44 同 SKU 另一变量（zh/ja desc，392c5f30）→ 跨语种归因需分开"
+   ]
+  },
+  {
+   "id": "EXP-1109-CATALOG-DESC",
+   "cluster": "catalog",
+   "locale": "zh-hk+ja",
+   "words": [
+    "畫冊印刷",
+    "カタログ印刷"
+   ],
+   "baseline": {
+    "note": "同簇基线并入 EXP-1109-CATALOG-EN-H1"
+   },
+   "change": {
+    "commit": "392c5f30",
+    "date": "2026-11-09",
+    "what": "zh desc 100 起→10 本起印；ja 100〜→10冊〜"
+   },
+   "approval_gate": "K3 P2 批",
+   "production_deploy": {
+    "commit": "392c5f30",
+    "cf_run": "128985513618"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-18"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "ZP-gsc-feedback"
+  },
+  {
+   "id": "EXP-1108-SMALLBATCH-SNIPPET",
+   "cluster": "stickers",
+   "locale": "en",
+   "words": [
+    "small batch sticker printing",
+    "small batch stickers"
+   ],
+   "baseline": {
+    "imp": 27,
+    "clk": 0,
+    "pos": 6.0,
+    "secondary": {
+     "imp": 19,
+     "clk": 0,
+     "pos": 5.42
+    }
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 11-08 诊断判 HOLD/MEASURE（PDP 100% 承接、非内耗；SERP 不可得）"
+   },
+   "approval_gate": "需 K3 一句话才可做 snippet 单变量",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-11-28",
+    "note": "若 SERP 仍不可得，继续 SERP_UNAVAILABLE，不编造"
+   },
+   "verdict": "MEASURE",
+   "owner_lane": "ZP-weekly-meta",
+   "do_not_touch": [
+    "新建同义长文（首页零点击是摘要问题，不是内容量问题）"
+   ],
+   "note": "真值修复 ff97d235（11-13）独立线上验收已补齐 11-19（CF a9f218f0=success + PDP 断言全过：10 stickers per design/$0.55 条件化/被禁残留 0 命中，记录 .hermes/logs/verify-2026-11-19-smallbatch-truth-residual.md）；复测窗 7d≈11-21 导出、14d 11-27、28d 12-04；en 簇恶化轨迹始于 11-10 窗（早于修复）→ 窗口成熟前 NOT_MEASURABLE 不判因果。新增待批：ja meta 残留 S1（prep pack A1）。",
+   "updated_at": "2026-11-19T23:25:00+08:00"
+  },
+  {
+   "id": "EXP-STICKER-THIRD-WINDOW",
+   "cluster": "stickers",
+   "locale": "zh-hk",
+   "words": [
+    "貼紙印刷",
+    "貼紙訂製"
+   ],
+   "baseline": {
+    "imp": 131,
+    "clk": 0,
+    "pos": 37.65,
+    "secondary": {
+     "word": "貼紙訂製",
+     "pos": 29.29
+    }
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 第三窗 gate 未达（需 ≥11-09 档，数据断供）"
+   },
+   "approval_gate": "无（纯测量）",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-12-04"
+   },
+   "verdict": "HOLD",
+   "owner_lane": "ZP-gsc-feedback",
+   "note": "11-19 第六窗 29.94 破 30 线（六窗 38.06→29.94 累计 -8.12，imp 179 +20.9%）；14 天规则 ≥5 目标未达（差 4.94 位）→ HOLD 维持不动 title；进入 title 评估讨论窗口（非授权），建议 11-21 SMALLBATCH 复测窗一并议（第七窗 11-23 若 ≤27 讨论 title 微调 vs 仅 desc/snippet 单变量）。证据 .hermes/logs/2026-11-19-ZP-daily-content.md",
+   "updated_at": "2026-11-19T23:25:00+08:00"
+  },
+  {
+   "id": "EXP-REDPACKETS-SEASON",
+   "cluster": "red-packets",
+   "locale": "zh-hk",
+   "words": [
+    "利是封印刷"
+   ],
+   "baseline": {
+    "imp": 59,
+    "clk": 1,
+    "pos": 24.42
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NO_OP — 季节窗 + 承接已集中（red-packets 75%）"
+   },
+   "approval_gate": "无",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2027-01-05",
+    "note": "春节前 6-8 周为真窗，11 月不作为判据"
+   },
+   "verdict": "NO_OP",
+   "owner_lane": "ZP-gsc-feedback"
+  },
+  {
+   "id": "EXP-FOODBOX-OPP01",
+   "cluster": "packaging",
+   "locale": "zh-hk",
+   "words": [
+    "食品包裝印刷"
+   ],
+   "baseline": {
+    "imp": 116,
+    "clk": 0,
+    "pos": 8.36
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 页一零点击池（OPP-01），先取 SERP 快照再定 snippet 单变量"
+   },
+   "approval_gate": "K3 既定 title 审批（同页同窗不得双改）",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2026-11-13",
+    "decision_grade_by": "2026-11-21"
+   },
+   "verdict": "PROPOSED",
+   "owner_lane": "ZP-weekly-meta",
+   "blocked_reason": "SERP feature 不可得（本机出口 INVALID）；weekly-meta 11-06 BLOCKED，下一窗 11-13",
+   "note": "BLOCKED(SERP_UNAVAILABLE) 解除：11-19 真实 SERP 取证成功（AI 概覽引用 JoinPrint+3、我方承接=博客第 4 位、GSC 小组件 125/0/7.9 双方法互证，记录 .hermes/logs/serp-evidence-2026-11-19-food-packaging.md）；有界提案 P-a/P-b/P-c 已列 prep pack B 组待 K3 三选一。",
+   "updated_at": "2026-11-19T23:25:00+08:00"
+  },
+  {
+   "id": "EXP-BOOKS-DUAL-PAGE",
+   "cluster": "books",
+   "locale": "zh-hk",
+   "words": [
+    "書刊印刷",
+    "印書"
+   ],
+   "baseline": {
+    "blog": {
+     "imp": 92,
+     "pos": 30.41
+    },
+    "category": {
+     "imp": 90,
+     "pos": 55.08
+    }
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 双页均深位（30+），无页一竞争者 → 纯 MEASURE，禁 301/canonical"
+   },
+   "approval_gate": "无",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "decision_grade_by": "2026-12-04"
+   },
+   "verdict": "MEASURE",
+   "owner_lane": "ZP-gsc-feedback"
+  },
+  {
+   "id": "EXP-SCHEMA-CATEGORY-DUP-NODES",
+   "cluster": "technical",
+   "locale": "all",
+   "words": [],
+   "baseline": {
+    "note": "线上实测 2026-11-10：/zh-hk/category/stickers/ JSON-LD 内 18 个 Product 节点（9 SKU × 2）"
+   },
+   "change": {
+    "commit": "LOCAL-2026-11-10",
+    "date": "2026-11-10",
+    "what": "删除独立 itemListJsonLd 发射（保留 CollectionPage.mainEntity = ItemList）"
+   },
+   "approval_gate": "执行层缺陷修复（重复结构化数据，非内容/价格/URL 变更）",
+   "production_deploy": {
+    "commit": "pending-push",
+    "cf_run": null
+   },
+   "online_verify": {
+    "method": "node 探针统计 Product 节点数与 brandCount",
+    "target": "/zh-hk/category/stickers/ 应为 9 节点 + 其余 3 locale 抽样"
+   },
+   "retest": {
+    "first": "2026-11-14",
+    "note": "GSC「产品摘要」受影响项应在下次重抓后下降（非承诺）"
+   },
+   "verdict": "FIX",
+   "owner_lane": "manual-executor"
+  },
+  {
+   "id": "EXP-SCHEMA-BRAND-DUP",
+   "cluster": "technical",
+   "locale": "all",
+   "words": [],
+   "baseline": {
+    "note": "GSC 商家信息「字段 brand 重复」3 项（3 个修复前旧抓取示例：ja white-card-boxes 11-02 / ja die-cut-stickers 11-01 / zh-hk cartoon-red-packets 10-30）"
+   },
+   "change": {
+    "commit": "414549e5 + c4605923",
+    "date": "2026-11-01 / 2026-11-02",
+    "what": "① Product.brand 统一集团常量 PRODUCT_BRAND_NAME（跨语归并冲突）② 移除 Product @id（RSC flight 副本与 SSR 副本被合并 → 重复字段）"
+   },
+   "approval_gate": "已批（GMC 修复批）",
+   "production_deploy": {
+    "commit": "c4605923",
+    "note": "已在线上（d7a8d5d7 祖先链）"
+   },
+   "online_verify": {
+    "at": "2026-11-10T08:20+08:00",
+    "result": "3 个示例 URL 全部 = 1 个 Product 节点 / brandCount=1 / 无 @id / offers 在位 / 无 aggregateRating",
+    "verdict": "PASS"
+   },
+   "retest": {
+    "first": "2026-11-17",
+    "note": "等 Google 重抓清除 3 项；GSC「验证修正情况」已于 11-02 启动"
+   },
+   "verdict": "DEPLOYED",
+   "owner_lane": "manual-executor"
+  },
+  {
+   "id": "EXP-SCHEMA-RATING-GAP",
+   "cluster": "technical",
+   "locale": "all",
+   "words": [],
+   "baseline": {
+    "note": "GSC 产品摘要改进建议：未填写 aggregateRating 1,034 项 / 未填写 review 1,034 项；关键项「应指定 offers/review/aggregateRating」= 0"
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 政策禁编造（K3 8/4 P0-2）；schema 层已条件化（product-reviews.ts 有真实评价才输出）"
+   },
+   "approval_gate": "K3 业务动作：启动真实评价收集（订单后 WhatsApp 邀请 / Trustpilot / Google Customer Reviews）",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "K3 决策后",
+    "note": "无真实评价前，该项持续作为「增强建议」存在，不影响内容有效性"
+   },
+   "verdict": "HOLD",
+   "owner_lane": "manual-executor",
+   "do_not_touch": [
+    "自造 review / aggregateRating",
+    "假评审人姓名"
+   ]
+  },
+  {
+   "id": "EXP-GEO-S1",
+   "cluster": "geo",
+   "locale": "all",
+   "words": [],
+   "baseline": {
+    "note": "S1 基线 2026-11-03：0/11 探针命中（两遍一致）；口径 = web_search（source_check 不可用，与 09-30 序列不可比）"
+   },
+   "change": {
+    "commit": null,
+    "date": null,
+    "what": "NONE — 只测量"
+   },
+   "approval_gate": "探针口径冻结（S2 于 2026-11-20..24）",
+   "production_deploy": {
+    "commit": null
+   },
+   "retest": {
+    "first": "2026-11-10",
+    "decision_grade_by": "2026-11-24",
+    "note": "复测节奏 11-10 / 11-17 / 11-24，同工具同 11 问题；无命中增长证据前禁称「AI 引用增长」"
+   },
+   "verdict": "MEASURE",
+   "owner_lane": "ZP-weekly-meta",
+   "blocked_reason": "11-10 复测未执行（本次会话未跑 22 次探针调用）"
+  },
+  {
+   "id": "EXP-1119-CONSISTENCY-GATE",
+   "verdict": "HOLD",
+   "created_at": "2026-11-19T23:25:00+08:00",
+   "note": "11-23 行三簇一致性闸门完成：红级 S1-S4（ja sb meta 4日米国配送/ja DJ meta 无支撑/¥7,500 泄漏 en+zh 且语义相反/免邮四口径）+ READY-CANDIDATE 漏网（95%+ ×4 源、50-book MOQ ×5）；A 组 11 项机械修复已入 prep pack 待 K3 放行。证据 docs/2026-11-19-sprint-pool-main-url-and-procurement-gap-decision-pack.md + docs/2026-11-19-meta-truth-alignment-prep-pack.md"
+  },
+  {
+   "id": "EXP-1119-SEASONAL-AUDIT",
+   "verdict": "MEASURE",
+   "created_at": "2026-11-19T23:25:00+08:00",
+   "note": "11-24 行提前执行：月曆簇 MOQ 真值三页在位+2027 四件套齐+PDP 首屏已解（缺口：博客旧 MOQ ×2+柯式 500/300 分裂 DIAG）；利是封簇子任务旧文案假设经双方法复测撤回（live=当前版），保留 G1-G4+pearl 意图错配+nengajo 3 TBC 过期（死线 10/21）。证据 docs/2026-11-19-sprint-pool-main-url-and-procurement-gap-decision-pack.md §3.5"
+  },
+  {
+   "id": "EXP-1119-CONTACT-DEPLOY",
+   "verdict": "DEPLOYED",
+   "created_at": "2026-11-19T23:25:00+08:00",
+   "note": "K3 11-19 contact 指令两条：15248366+6745d798 均 CF success（6745d798 由人手会话 18:3x 过 push-gate v2 后推送验收）；三语 contact 页 live 全清（zh/en 附件 0 残留、ja 仅 Footer「オンラインファイルアップロード」能力声明过时→prep pack B9）。"
+  },
+  {
+   "id": "EXP-1119-GUARD-BLINDSPOTS",
+   "verdict": "FIX",
+   "created_at": "2026-11-19T23:25:00+08:00",
+   "note": "两条守卫盲区已入 error-patterns（SIMPLIFIED_SCAN_NAME_ONLY_BLIND_SPOT：scan-simplified 只扫名称 vs products.ts 简体 ×17 实锤；PHONE_GUARD_LITERAL_WITHOUT_PLUS_BLIND_SPOT：裸号 85290616204 ×6 组件存活）；guard 升级与 6 处硬编码回白名单待批（prep pack A10/A11）。"
   }
+ ],
+ "retest_gate_2026_11_14": {
+  "attempted_at": "2026-11-14T20:13:00+08:00",
+  "owner_lane": "ZP-gsc-feedback",
+  "status": "BLOCKED",
+  "reason_code": "NO_NEW_EXPORT_DATA_SUPPLY_STALE",
+  "data_supply_note": "No 2026-11-13 or 2026-11-14 GSC export exists. Latest export 2026-11-12 carries 7d/28d data day 2026-11-10 and is 92.2h old at 20:13 (>72h). Current query x page join absent; SERP_UNAVAILABLE.",
+  "available_window": {
+   "7d": "2026-11-04..2026-11-10",
+   "28d": "2026-10-14..2026-11-10",
+   "post_change_7d": "28.6-42.9%",
+   "post_change_28d": "7.1-10.7%"
+  },
+  "blocked_experiment_ids": [
+   "EXP-1108-FLYERS-CLUSTER",
+   "EXP-1108-POSTER-PRIMARY-URL",
+   "EXP-1108-WEDDING-PRIMARY-URL",
+   "EXP-1108-JA-DOUJINSHI-UNIT",
+   "EXP-1108-JA-TEXTBOOK-PRICE",
+   "EXP-1108-EN-A2-POSTER",
+   "EXP-1109-CATALOG-EN-H1",
+   "EXP-1109-CATALOG-DESC",
+   "EXP-STICKER-THIRD-WINDOW",
+   "EXP-BOOKS-DUAL-PAGE"
+  ],
+  "verdict_policy": "Per contract 8.8 every due retest is recorded BLOCKED with the data-supply reason. Entry-level verdict (DEPLOYED / HOLD / MEASURE) is intentionally NOT rewritten so deployment history is preserved; this block is the authoritative retest status for 2026-11-14.",
+  "k3_action": "Export 2026-11-13 and 2026-11-14 24h/7d/28d (+3mo) into GSC数据/, restart proxy 7892, run python scripts/gsc-cliff-detector.py, run node scripts/rebuild-gsc-index.mjs --write. Do not relabel the 2026-11-12 batch as a 11-14 retest.",
+  "evidence": ".hermes/logs/2026-11-14-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-14.json",
+  "next_check": "2026-11-18"
+ },
+ "retest_gate_2026_11_18": {
+  "attempted_at": "2026-11-18T20:13:00+08:00",
+  "owner_lane": "ZP-gsc-feedback",
+  "status": "DIRECTION_ONLY_NOT_DECISION_GRADE",
+  "reason_code": "DATA_DAY_2026_11_13_BELOW_FIRST_100PCT_WINDOW",
+  "data_supply_note": "Latest export is 2026-11-16 (24h/7d/28d; first post-11-12 batch). Its 7d/28d data day is 2026-11-13, i.e. 116.2h old at 20:13 on 2026-11-18 (>72h). No 2026-11-13/14/15/17/18 workbook exists. 3mo is still carried from 2026-11-03. Current query x page join absent; SERP_UNAVAILABLE. The batch had never been consumed at the four-window KPI layer before this run (late arrival backfill).",
+  "available_window": {
+   "7d": "2026-11-07..2026-11-13",
+   "28d": "2026-10-17..2026-11-13",
+   "post_change_7d": "C1 6/7 = 85.7%; C2 4.5/7 = 64.3%",
+   "post_change_28d": "C1 6/28 = 21.4%; C2 5/28 = 17.9%"
+  },
+  "decision_grade_not_reached": {
+   "why": "window_math.dilution_table maps export_date 2026-11-18 to a 100% 7d post-change window, but a window is 100% only when the DATA DAY reaches 2026-11-14 (C1) / 2026-11-16 (C2). The 11-16 export stops at data day 11-13.",
+   "c1_100pct_7d_requires_data_day": "2026-11-14",
+   "c2_100pct_7d_requires_data_day": "2026-11-16",
+   "correction": "Key the dilution table by data_day (derived from the workbook window), not by export date. Recorded as A65 in .hermes/logs/gsc-daily-anomaly-2026-11-18.json.",
+   "28d_status": "BACKGROUND_ONLY (2026-12-04 remains the earliest business-read date, subject to the actual data day)"
+  },
+  "direction_reads": [
+   {
+    "experiment_id": "EXP-1108-FLYERS-CLUSTER",
+    "query": "宣傳單張",
+    "read_28d": "136 -> 135 imp, 36.46 -> 38.09 pos (+1.63 worse), 0 clk",
+    "direction": "WORSE",
+    "note": "direction only"
+   },
+   {
+    "experiment_id": "EXP-1108-POSTER-PRIMARY-URL",
+    "query": "海報印刷 / 印海報",
+    "read_28d": "海報 206 -> 187 imp, 17.23 -> 18.24; 印海報 118 -> 103 imp, 15.91 -> 16.38",
+    "direction": "WORSE",
+    "note": "six consecutive 28d exports; share check still needs a current join"
+   },
+   {
+    "experiment_id": "EXP-1108-WEDDING-PRIMARY-URL",
+    "query": "喜帖印刷",
+    "read_28d": "27 -> 32 imp, 42.59 -> 43.84 pos (+1.25 worse), 0 clk",
+    "direction": "WORSE",
+    "note": "small sample; intent-match not measurable without a join"
+   },
+   {
+    "experiment_id": "EXP-1108-JA-DOUJINSHI-UNIT",
+    "query": "コミケ 印刷",
+    "read_28d": "129 -> 119 imp, 25.74 -> 27.37 pos (+1.63 worse), 0 clk",
+    "direction": "WORSE",
+    "note": "C109 season window still ahead"
+   },
+   {
+    "experiment_id": "EXP-1108-JA-TEXTBOOK-PRICE",
+    "query": "教材 印刷製本",
+    "read_28d": "56 -> 58 imp, 36.95 -> 40.00 pos (+3.05 worse), 0 clk",
+    "direction": "WORSE",
+    "note": "mix expansion, not a CTR story"
+   },
+   {
+    "experiment_id": "EXP-1108-EN-A2-POSTER",
+    "query": "a2 poster",
+    "read_28d": "38 -> 40 imp, 40.00 -> 43.02 pos (+3.02 worse), 1 clk",
+    "direction": "WORSE",
+    "note": "did NOT stop falling as of data day 11-13; the 7d block shows 43.27 -> 40.08 but its key labels are unverifiable (A66)"
+   },
+   {
+    "experiment_id": "EXP-1109-CATALOG-EN-H1",
+    "query": "china catalog printing",
+    "read_28d": "41 -> 42 imp, 14.95 -> 14.62 pos (-0.33 better), 0 clk",
+    "direction": "STABLE",
+    "note": "no meaningful move; 7d 35 -> 20 imp (13.03 -> 13.65)"
+   },
+   {
+    "experiment_id": "EXP-1109-CATALOG-DESC",
+    "query": "畫冊印刷 / カタログ印刷",
+    "read_28d": null,
+    "direction": "NO_CURRENT_BASELINE",
+    "note": "neither query has a focus row in the 11-16 delta; not read, not inferred"
+   },
+   {
+    "experiment_id": "EXP-STICKER-THIRD-WINDOW",
+    "query": "貼紙印刷",
+    "read_28d": "136 -> 148 imp, 34.35 -> 32.58 pos (-1.77 better), 0 clk",
+    "direction": "IMPROVING_BUT_DEEP",
+    "note": "seventh consecutive 28d improvement; the pos <= 30 gate is NOT met"
+   },
+   {
+    "experiment_id": "EXP-BOOKS-DUAL-PAGE",
+    "query": "書刊印刷 / 印書",
+    "read_28d": "書刊 129 -> 133 imp, 33.74 -> 33.83; 印書 59 -> 62 imp, 31.05 -> 31.84",
+    "direction": "STABLE_DEEP",
+    "note": "no page-1 competitor; 301/canonical still forbidden"
+   }
+  ],
+  "verdict_policy": "Per contract 8.8 every due retest is recorded as DIRECTION_ONLY with the data-supply reason. Entry-level verdicts (DEPLOYED / HOLD / MEASURE) are intentionally NOT rewritten so deployment history is preserved; this block is the authoritative retest status for 2026-11-18. No SCALE/HOLD/FIX/STOP is issued from an 85.7%/21.4% window.",
+  "blocked_experiment_ids": [
+   "EXP-1108-FLYERS-CLUSTER",
+   "EXP-1108-POSTER-PRIMARY-URL",
+   "EXP-1108-WEDDING-PRIMARY-URL",
+   "EXP-1108-JA-DOUJINSHI-UNIT",
+   "EXP-1108-JA-TEXTBOOK-PRICE",
+   "EXP-1108-EN-A2-POSTER",
+   "EXP-1109-CATALOG-EN-H1",
+   "EXP-1109-CATALOG-DESC",
+   "EXP-STICKER-THIRD-WINDOW",
+   "EXP-BOOKS-DUAL-PAGE"
+  ],
+  "k3_action": "Export 2026-11-17/18 24h/7d/28d (+3mo) into GSC数据/, restart proxy 7892, run python scripts/gsc-cliff-detector.py, run node scripts/rebuild-gsc-index.mjs --write. Re-key the dilution table to data_day (A65). Do not relabel the 2026-11-16 batch as a 2026-11-18 retest result.",
+  "evidence": ".hermes/logs/2026-11-18-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-18.json",
+  "next_check": "first export with data day >= 2026-11-14 (C1) or >= 2026-11-16 (C2); 2026-11-21 share check; 2026-12-04 28d business read"
+ },
+ "data_supply": {
+  "status": "BROKEN_DAY6",
+  "latest_xlsx": "2026-11-07（24h/7d/28d；缺 3mo）",
+  "latest_api": "end1105（数据日 2026-11-04）",
+  "detector_latest": "2026-11-03（123.7% 官方值）",
+  "index_json": "lastBuild 2026-11-05 / latestFreshData 2026-11-03（未收录 11-07 批，A47）",
+  "root_cause": "Clash/mihomo 代理 127.0.0.1:7892 宕机 + 直连被墙（000）→ API 拉取不可用",
+  "owner": "K3 / 主机",
+  "k3_actions": [
+   "重启代理进程（7892）",
+   "导出 11-08 / 11-09 / 11-10 四档（24h/7d/28d/3mo，全国家、网页搜索）→ GSC数据/",
+   "python scripts/fetch_gsc_data.py --dimensions query,country --days 28 --end 2026-11-09",
+   "python scripts/gsc-cliff-detector.py",
+   "node scripts/rebuild-gsc-index.mjs --write"
+  ],
+  "blocked_experiments": [
+   "全部 11-14 复测项",
+   "EXP-STICKER-THIRD-WINDOW",
+   "GEO S1 复测（11-10）"
+  ],
+  "updated_at": "2026-11-19T23:25:00+08:00",
+  "note_1119": "11-19 三窗导出到位（28d 数据日 11-16）；3mo 缺第 8 批（连续）；54 词差分+四窗复算双方法一致（reconciliation_all_match=true）为当前测量 SSoT：.hermes/logs/gsc-2026-11-19-money-keyword-delta.json + gsc-2026-11-19-four-window-analysis.json。counters 区保持 11-10 口径不动（避免跨词集口径漂移），11-19 快照以上述 JSON 为准。"
+ },
+ "scheduler_truth": {
+  "checked_at": "2026-11-10 01:29",
+  "healthy": [
+   "ZP-daily-content 0",
+   "ZP-gsc-feedback 0",
+   "ZP-k3-review 0",
+   "ZP-blog-deepfix 0"
+  ],
+  "watch": [
+   "ZP-weekly-meta exit=1（脚本已修 1e85b0d4，11-13 20:52 首验）"
+  ],
+  "broken": [
+   "ZP-monthly-matrix 2147946720（11-01 起第 9 天，需管理员重建）"
+  ],
+  "note": "11-09 06:43 快照的 four 0x800710E0 已过时，不得再引用为当前状态",
+  "updated_at": "2026-11-19T23:25:00+08:00",
+  "note_1119": "两种故障模式并存：①配额快速失败（11-18 21:17 daily、11-19 20:13 gsc-feedback，dsh QUOTA Insufficient Balance 0 秒失败，preflight 全过）②触发跳过（11-19 21:17 daily 未触发：调度器 LastRunTime 仍 11-18 21:17、无 wrapper 无总线记录）。S4U canary 仍未应用（11-19 18:02 四方对账 .hermes/logs/2026-11-19-watchdog-four-party-verification.json：Set-ScheduledTask 拒 PT5M，修复脚本已备 10 分钟版待管理员）。K3 充值/换 key = 最高优先管理员动作。"
+ },
+ "counters": {
+  "blog": {
+   "zh_hk_unique": 101,
+   "en_unique": 102,
+   "ja_unique": 101,
+   "blog_posts_ts_entries": 111,
+   "blog_posts_ts_unique_slugs": 110,
+   "union_unique": 102,
+   "intersect_3_locale": 101,
+   "measured_at": "2026-11-10T08:25+08:00"
+  },
+  "blog_12seg_fails": 0,
+  "blog_12seg_baseline_updated_at": "2026-10-31T03:26:00Z",
+  "money_words_28d": {
+   "words": 29,
+   "imp": 2102,
+   "clk": 4,
+   "page1_rows": 8,
+   "page1_zero_click_rows": 7,
+   "page1_zero_click_imp": 239,
+   "data_day": "2026-11-04"
+  },
+  "kpi_28d": {
+   "clk": 538,
+   "imp": 23183,
+   "ctr_pct": 2.3207,
+   "pos": 14.2796,
+   "data_day": "2026-11-04"
+  }
+ },
+ "next_actions_by_date": {
+  "2026-11-10": [
+   "K3 补四档导出 + 重启代理（阻塞全部复测）",
+   "月曆 EXP-1103-CALFAQ 7 天窗读数（基线在 11-03 报告）",
+   "GEO S1 复测（11 问题 × 2 遍，同工具）"
+  ],
+  "2026-11-13": [
+   "weekly-meta 首验：7 项 FIX 残留 + 海报 desc + 超带 title 三页（en stickers 100 / ja stickers 83 / zh-hk flyers 59）单变量单批"
+  ],
+  "2026-11-14": [
+   "14 项首轮复测：只判方向 + 真值一致性；28d 标 BACKGROUND_ONLY",
+   "schema 修复线上复验（category 节点数 9）"
+  ],
+  "2026-11-18": [
+   "首个 7d 100% 变更后窗：可判方向强弱"
+  ],
+  "2026-11-21": "SMALLBATCH 7d 复测窗评估 + 貼紙 title 评估讨论（第七窗 11-23 若 ≤27 议 title 微调）；blog-deepfix 单篇或 NO_OP；周六 Harness 动态只读验收",
+  "2026-11-28": [
+   "small batch 复测（美国英文 SERP + 同口径 28d）"
+  ],
+  "2026-12-01": [
+   "monthly-matrix 自然轮（能否闭第 9 天缺口）"
+  ],
+  "2026-12-04": [
+   "28d 达 82% 变更后天数：首个可做 SCALE/HOLD/FIX/STOP 的经营判据窗"
+  ],
+  "2026-11-20": "K3 充值/换 dsh key（先决）；weekly 复盘 20:52（预期配额受阻则顺延）；采纳冲刺池主 URL 定标+prep pack 立案",
+  "2026-11-24": "W4 GEO 探针第 4 轮（固定问题集，11-10/17/24 节奏）；nengajo 3 TBC 补拍；月曆/利是封缺口已审计待 K3（§3.5）"
+ },
+ "updated_at": "2026-11-19T23:25:00+08:00",
+ "update_log": [
+  {
+   "at": "2026-11-19T23:25:00+08:00",
+   "by": "manual-session-1119-round7",
+   "summary": "回写 11-19 五轮证据：SMALLBATCH 线上验收补齐/貼紙六窗破30线/FOODBOX SERP 取证→PROPOSED/一致性闸门 4 红/季节审计/contact 部署/守卫盲区 2 条/调度双故障模式。未触碰 APPROVED 门；verdict 均为合法枚举。",
+   "evidence": [
+    ".hermes/logs/verify-2026-11-19-smallbatch-truth-residual.md",
+    ".hermes/logs/serp-evidence-2026-11-19-food-packaging.md",
+    "docs/2026-11-19-sprint-pool-main-url-and-procurement-gap-decision-pack.md",
+    "docs/2026-11-19-meta-truth-alignment-prep-pack.md",
+    ".hermes/logs/2026-11-19-ZP-daily-content.md",
+    ".hermes/logs/2026-11-19-watchdog-four-party-verification.json"
+   ]
+  }
+ ],
+ "retest_gate_2026_11_20": {
+  "attempted_at": "2026-11-20T20:13:00+08:00",
+  "owner_lane": "ZP-gsc-feedback",
+  "status": "FIRST_CLEAN_7D_WINDOW_TECHNICAL_ONLY",
+  "reason_code": "DATA_DAY_2026_11_16_REACHED_FIRST_100PCT_7D_BUT_DATA_92_2H_STALE_AND_28D_ONLY_28_6PCT",
+  "data_supply_note": "Latest export is 2026-11-19 (24h/7d/28d; first batch after 11-16). Its 7d/28d data day is 2026-11-16, i.e. 92.2h old at 20:13 on 2026-11-20 (>72h). No 2026-11-20 workbook exists; 11-13/14/15/17/18/20 are missing. 3mo is still carried from 2026-11-03 (data day 10-31, 500.2h; 6 batches missing). Current query x page join absent; SERP_UNAVAILABLE except the peer-captured food-packaging SERP. The 11-19 batch was never consumed at the KPI layer before this run (the 11-19 lane run failed; daily consumed one sticker row only).",
+  "available_window": {
+   "7d": "2026-11-10..2026-11-16",
+   "28d": "2026-10-20..2026-11-16",
+   "post_change_7d": "C1 7/7 = 100%; C2 7/7 = 100%",
+   "post_change_28d": "C1 8/28 = 28.6%; C2 7/28 = 25.0%"
+  },
+  "first_clean_7d_window": {
+   "reached": true,
+   "export_date": "2026-11-19",
+   "data_day": "2026-11-16",
+   "c1_requires_data_day": "2026-11-14",
+   "c2_requires_data_day": "2026-11-16",
+   "correction_to_dilution_table": "The table maps export 2026-11-18 to 100% 7d, but no 11-18 export exists. The first export whose data day reaches 11-16 is 2026-11-19 (one-export drift, A65).",
+   "guardrail": "Contract 8.4: 7d verifies technical only; 14d reads direction; 28d is required for SCALE/HOLD/FIX/STOP. The 11-18 production changes are outside this 7d window (24h only, about 20h)."
+  },
+  "direction_reads": [
+   {
+    "experiment_id": "EXP-1108-FLYERS-CLUSTER",
+    "query": "宣傳單張",
+    "read_7d": "45.10 -> 46.00 pos (+0.90), 28 -> 31 imp, 0 clk",
+    "read_28d": "38.09 -> 39.39 pos (+1.30), 135 -> 134 imp, 0 clk",
+    "direction": "WORSE",
+    "note": "7 consecutive worsening steps (8 readings); technical only"
+   },
+   {
+    "experiment_id": "EXP-1108-POSTER-PRIMARY-URL",
+    "query": "海報印刷 / 印海報",
+    "read_7d": "海報 23.77 -> 28.02 (+4.25); 印海報 19.05 -> 21.04 (+1.99)",
+    "read_28d": "海報 18.24 -> 20.37 (+2.13), 187 -> 186 imp, 1 clk; 印海報 16.38 -> 16.81 (+0.43)",
+    "direction": "WORSE",
+    "note": "share check still needs a current join; 11-21 due"
+   },
+   {
+    "experiment_id": "EXP-1108-WEDDING-PRIMARY-URL",
+    "query": "喜帖印刷",
+    "read_7d": "51.62 -> 51.10 (-0.52), 13 -> 10 imp, 0 clk",
+    "read_28d": "43.84 -> 44.78 (+0.94), 32 -> 36 imp, 0 clk",
+    "direction": "WORSE_28D_7D_MARGINAL_BETTER",
+    "note": "still at 51; not a win"
+   },
+   {
+    "experiment_id": "EXP-1108-JA-DOUJINSHI-UNIT",
+    "query": "コミケ 印刷",
+    "read_7d": "25.08 -> 35.97 (+10.89), 12 -> 29 imp, 0 clk",
+    "read_28d": "27.37 -> 30.49 (+3.12), 119 -> 110 imp, 0 clk",
+    "direction": "WORSE",
+    "note": "C109 on 12-29..31 is ahead; season window not yet"
+   },
+   {
+    "experiment_id": "EXP-1108-JA-TEXTBOOK-PRICE",
+    "query": "教材 印刷製本",
+    "read_7d": "49.29 -> 46.36 (-2.93), 14 -> 14 imp, 0 clk",
+    "read_28d": "40.00 -> 43.95 (+3.95), 58 -> 57 imp, 0 clk",
+    "direction": "WORSE_28D_7D_BETTER_STILL_DEEP",
+    "note": "mix expansion, not a CTR story"
+   },
+   {
+    "experiment_id": "EXP-1108-EN-A2-POSTER",
+    "query": "a2 poster",
+    "read_7d": "40.08 -> 45.80 (+5.72), 12 -> 10 imp, 0 clk",
+    "read_28d": "43.02 -> 43.39 (+0.37), 40 -> 44 imp, 1 clk",
+    "direction": "WORSE_7D_28D_PLATEAU",
+    "note": "first near-flat 28d delta but 43rd is a plateau, not a stop-fall"
+   },
+   {
+    "experiment_id": "EXP-1109-CATALOG-EN-H1",
+    "query": "china catalog printing",
+    "read_7d": "13.65 -> 21.30 (+7.65), 20 -> 23 imp, 0 clk",
+    "read_28d": "13.98 -> 14.99 (+1.01), 102 -> 101 imp, 0 clk",
+    "direction": "WORSE",
+    "note": "dropped out of the top 20 on the 7d read"
+   },
+   {
+    "experiment_id": "EXP-1109-CATALOG-DESC",
+    "query": "畫冊印刷 / カタログ印刷",
+    "read_7d": null,
+    "read_28d": null,
+    "direction": "NO_CURRENT_BASELINE",
+    "note": "neither query has a focus row; not read, not inferred"
+   },
+   {
+    "experiment_id": "EXP-STICKER-THIRD-WINDOW",
+    "query": "貼紙印刷",
+    "read_7d": "28.73 -> 27.55 (-1.18), 49 -> 74 imp, 0 clk",
+    "read_28d": "32.58 -> 29.94 (-2.64), 148 -> 179 imp, 0 clk",
+    "direction": "IMPROVING",
+    "note": "first 28d position <= 30 (8 readings, 7 consecutive improvements); milestone peer-reported by daily 11-20 and by the analyst title discussion pack"
+   },
+   {
+    "experiment_id": "EXP-BOOKS-DUAL-PAGE",
+    "query": "書刊印刷 / 印書",
+    "read_7d": "書刊 35.91 -> 38.60 (+2.69); 印書 31.87 -> 33.80 (+1.93)",
+    "read_28d": "書刊 33.83 -> 35.45 (+1.62), 133 -> 140 imp; 印書 31.84 -> 32.16 (+0.32), 62 -> 61 imp; 0 clk",
+    "direction": "WORSE_7D_DEEP_STABLE_28D",
+    "note": "no page-1 competitor; 301/canonical still forbidden"
+   }
+  ],
+  "counts": {
+   "7d": "6 worse / 3 better / 1 no baseline",
+   "28d": "8 worse / 1 better (sticker)"
+  },
+  "blocked_for_business_verdict": [
+   "EXP-1108-FLYERS-CLUSTER",
+   "EXP-1108-POSTER-PRIMARY-URL",
+   "EXP-1108-WEDDING-PRIMARY-URL",
+   "EXP-1108-JA-DOUJINSHI-UNIT",
+   "EXP-1108-JA-TEXTBOOK-PRICE",
+   "EXP-1108-EN-A2-POSTER",
+   "EXP-1109-CATALOG-EN-H1",
+   "EXP-1109-CATALOG-DESC",
+   "EXP-STICKER-THIRD-WINDOW",
+   "EXP-BOOKS-DUAL-PAGE"
+  ],
+  "verdict_policy": "Per contract 8.4 a 7d window is technical verification only; 14d reads direction; 28d is required for SCALE/HOLD/FIX/STOP. No business verdict is issued from a 28.6% post-change 28d window. Entry-level verdicts (DEPLOYED / HOLD / MEASURE / PROPOSED) are intentionally NOT rewritten so deployment history is preserved; this block is the authoritative retest status for 2026-11-20. No APPROVED gate was touched.",
+  "k3_action": "Export 2026-11-20 (plus 11-13/14/15/17/18) 24h/7d/28d/3mo into GSC数据/, restart proxy 7892, run python scripts/gsc-cliff-detector.py, run node scripts/rebuild-gsc-index.mjs --write. Re-key the dilution table to data_day (A65). Sync data_supply machine fields with note_1119 (A58). Do not relabel the 2026-11-19 batch as a 2026-11-20 retest result.",
+  "evidence": ".hermes/logs/2026-11-20-ZP-gsc-feedback.md; .hermes/logs/gsc-daily-anomaly-2026-11-20.json; .hermes/logs/gsc-2026-11-19-four-window-analysis.json; .hermes/logs/gsc-2026-11-19-money-keyword-delta.json",
+  "next_check": "2026-11-21 share check (requires current query x page join) and sticker seventh window (requires data day >= 2026-11-18); 14d clean windows at data day >= 2026-11-22 (C1) / 2026-11-23 (C2); 2026-12-04 28d business read"
+ }
 }

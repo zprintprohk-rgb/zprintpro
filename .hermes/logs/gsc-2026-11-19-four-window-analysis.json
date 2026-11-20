@@ -1,0 +1,2587 @@
+{
+  "schema_version": 1,
+  "analysis_date": "2026-11-19",
+  "previous_export": "2026-11-16",
+  "scope": "zprintpro.com web search, all countries; query/page/country sheets are independent and never joined",
+  "freshness": "11-19 24h/7d/28d arrived; no new 3mo export in this batch.",
+  "workbooks": {
+    "2026-11-16": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-16.xlsx",
+        "chart": {
+          "window": "2026-11-14T22:00:00..2026-11-15T21:00:00",
+          "observations": 24,
+          "clicks": 12,
+          "impressions": 805,
+          "ctr_pct": 1.4907,
+          "impression_weighted_position": 18.3039,
+          "clicks_per_observation": 0.5,
+          "impressions_per_observation": 33.5417
+        },
+        "query_rows_exported": 224,
+        "query_sheet_truncated_at_1000": false,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-16.xlsx",
+        "chart": {
+          "window": "2026-11-07..2026-11-13",
+          "observations": 7,
+          "clicks": 144,
+          "impressions": 8103,
+          "ctr_pct": 1.7771,
+          "impression_weighted_position": 14.3437,
+          "clicks_per_observation": 20.5714,
+          "impressions_per_observation": 1157.5714
+        },
+        "query_rows_exported": 685,
+        "query_sheet_truncated_at_1000": false,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-16.xlsx",
+        "chart": {
+          "window": "2026-10-17..2026-11-13",
+          "observations": 28,
+          "clicks": 544,
+          "impressions": 26350,
+          "ctr_pct": 2.0645,
+          "impression_weighted_position": 14.6801,
+          "clicks_per_observation": 19.4286,
+          "impressions_per_observation": 941.0714
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      }
+    },
+    "2026-11-19": {
+      "24h": {
+        "source": "GSC数据\\24小时三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+        "chart": {
+          "window": "2026-11-17T21:00:00..2026-11-18T20:00:00",
+          "observations": 24,
+          "clicks": 21,
+          "impressions": 1138,
+          "ctr_pct": 1.8453,
+          "impression_weighted_position": 14.1649,
+          "clicks_per_observation": 0.875,
+          "impressions_per_observation": 47.4167
+        },
+        "query_rows_exported": 263,
+        "query_sheet_truncated_at_1000": false,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      },
+      "7d": {
+        "source": "GSC数据\\7天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+        "chart": {
+          "window": "2026-11-10..2026-11-16",
+          "observations": 7,
+          "clicks": 130,
+          "impressions": 8283,
+          "ctr_pct": 1.5695,
+          "impression_weighted_position": 15.5229,
+          "clicks_per_observation": 18.5714,
+          "impressions_per_observation": 1183.2857
+        },
+        "query_rows_exported": 761,
+        "query_sheet_truncated_at_1000": false,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      },
+      "28d": {
+        "source": "GSC数据\\28天三站点汇总数据zprintpro.com-Performance-on-Search-2026-11-19.xlsx",
+        "chart": {
+          "window": "2026-10-20..2026-11-16",
+          "observations": 28,
+          "clicks": 554,
+          "impressions": 27879,
+          "ctr_pct": 1.9872,
+          "impression_weighted_position": 14.9511,
+          "clicks_per_observation": 19.7857,
+          "impressions_per_observation": 995.6786
+        },
+        "query_rows_exported": 1000,
+        "query_sheet_truncated_at_1000": true,
+        "available_sheets": [
+          "图表",
+          "查询数",
+          "网页",
+          "国家_地区",
+          "设备",
+          "搜索结果呈现",
+          "过滤器"
+        ]
+      }
+    }
+  },
+  "guardrails": [
+    "Overlapping moving windows are observations, not independent experiments.",
+    "Missing top-1000 exact query row = NO_CURRENT_BASELINE, not zero demand.",
+    "Country is searcher location, not locale-site performance.",
+    "MONEY is procurement intent, not observed orders or revenue.",
+    "11-18 production changes have at most one day in the current data window and cannot be judged for outcome.",
+    "No GEO growth claim without fixed-kit complete answers and citation URLs."
+  ],
+  "same_window_comparisons": {
+    "kpi_11_16_to_11_19": {
+      "24h": {
+        "previous": {
+          "window": "2026-11-14T22:00:00..2026-11-15T21:00:00",
+          "observations": 24,
+          "clicks": 12,
+          "impressions": 805,
+          "ctr_pct": 1.4907,
+          "impression_weighted_position": 18.3039,
+          "clicks_per_observation": 0.5,
+          "impressions_per_observation": 33.5417
+        },
+        "current": {
+          "window": "2026-11-17T21:00:00..2026-11-18T20:00:00",
+          "observations": 24,
+          "clicks": 21,
+          "impressions": 1138,
+          "ctr_pct": 1.8453,
+          "impression_weighted_position": 14.1649,
+          "clicks_per_observation": 0.875,
+          "impressions_per_observation": 47.4167
+        },
+        "clicks_delta": 9,
+        "impressions_delta": 333,
+        "ctr_delta_pp": 0.3546,
+        "position_delta_positive_is_worse": -4.139
+      },
+      "7d": {
+        "previous": {
+          "window": "2026-11-07..2026-11-13",
+          "observations": 7,
+          "clicks": 144,
+          "impressions": 8103,
+          "ctr_pct": 1.7771,
+          "impression_weighted_position": 14.3437,
+          "clicks_per_observation": 20.5714,
+          "impressions_per_observation": 1157.5714
+        },
+        "current": {
+          "window": "2026-11-10..2026-11-16",
+          "observations": 7,
+          "clicks": 130,
+          "impressions": 8283,
+          "ctr_pct": 1.5695,
+          "impression_weighted_position": 15.5229,
+          "clicks_per_observation": 18.5714,
+          "impressions_per_observation": 1183.2857
+        },
+        "clicks_delta": -14,
+        "impressions_delta": 180,
+        "ctr_delta_pp": -0.2076,
+        "position_delta_positive_is_worse": 1.1792
+      },
+      "28d": {
+        "previous": {
+          "window": "2026-10-17..2026-11-13",
+          "observations": 28,
+          "clicks": 544,
+          "impressions": 26350,
+          "ctr_pct": 2.0645,
+          "impression_weighted_position": 14.6801,
+          "clicks_per_observation": 19.4286,
+          "impressions_per_observation": 941.0714
+        },
+        "current": {
+          "window": "2026-10-20..2026-11-16",
+          "observations": 28,
+          "clicks": 554,
+          "impressions": 27879,
+          "ctr_pct": 1.9872,
+          "impression_weighted_position": 14.9511,
+          "clicks_per_observation": 19.7857,
+          "impressions_per_observation": 995.6786
+        },
+        "clicks_delta": 10,
+        "impressions_delta": 1529,
+        "ctr_delta_pp": -0.0773,
+        "position_delta_positive_is_worse": 0.271
+      }
+    },
+    "page1_transitions_28d": [],
+    "page1_transitions_7d": [
+      "即日印刷",
+      "香港印刷",
+      "可移貼紙"
+    ],
+    "confirmed_two_window_worsening_28d": [
+      "海報印刷",
+      "宣傳單張",
+      "喜帖印刷",
+      "小冊子印刷",
+      "證書印刷",
+      "易拉架印刷",
+      "教材 印刷製本",
+      "コミケ 印刷",
+      "印刷"
+    ],
+    "confirmed_two_window_improvement_28d": [
+      "月曆印刷",
+      "貼紙印刷",
+      "可移貼紙",
+      "摺頁印刷",
+      "紙盒印刷"
+    ],
+    "latest_page1_focus_28d": [
+      "即日印刷",
+      "书籍印刷",
+      "食品包裝印刷",
+      "small batch sticker printing",
+      "卒アル販売",
+      "印刷廠"
+    ],
+    "latest_page1_zero_click_focus_28d": [
+      "书籍印刷",
+      "食品包裝印刷",
+      "small batch sticker printing",
+      "卒アル販売",
+      "印刷廠"
+    ]
+  },
+  "contains_groups_28d": {
+    "海報": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 50,
+      "impressions": 722,
+      "clicks": 4,
+      "ctr_pct": 0.554,
+      "impression_weighted_position": 15.9084,
+      "top_queries": [
+        {
+          "query": "海報印刷",
+          "impressions": 186,
+          "clicks": 1,
+          "ctr_pct": 0.5376,
+          "position": 20.37
+        },
+        {
+          "query": "印海報",
+          "impressions": 104,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.81
+        },
+        {
+          "query": "a1海報",
+          "impressions": 85,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 1.0
+        },
+        {
+          "query": "海報與印刷",
+          "impressions": 68,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 17.25
+        },
+        {
+          "query": "海報印刷即日",
+          "impressions": 32,
+          "clicks": 1,
+          "ctr_pct": 3.125,
+          "position": 9.53
+        },
+        {
+          "query": "海報印刷一張",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 3.71
+        },
+        {
+          "query": "海報size",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.04
+        },
+        {
+          "query": "貼海報",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 65.0
+        },
+        {
+          "query": "海報尺寸",
+          "impressions": 18,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.94
+        },
+        {
+          "query": "海報",
+          "impressions": 16,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 21.5
+        },
+        {
+          "query": "印海報一張",
+          "impressions": 13,
+          "clicks": 1,
+          "ctr_pct": 7.6923,
+          "position": 7.54
+        },
+        {
+          "query": "室內海報",
+          "impressions": 12,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.58
+        }
+      ]
+    },
+    "海报": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 1,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 3.0,
+      "top_queries": [
+        {
+          "query": "演唱会海报",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 3.0
+        }
+      ]
+    },
+    "貼紙": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 51,
+      "impressions": 903,
+      "clicks": 3,
+      "ctr_pct": 0.3322,
+      "impression_weighted_position": 23.8175,
+      "top_queries": [
+        {
+          "query": "貼紙印刷",
+          "impressions": 179,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.94
+        },
+        {
+          "query": "貼紙",
+          "impressions": 118,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 37.22
+        },
+        {
+          "query": "戶外貼紙",
+          "impressions": 84,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.12
+        },
+        {
+          "query": "可移貼紙",
+          "impressions": 71,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 12.62
+        },
+        {
+          "query": "貼紙訂製",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.72
+        },
+        {
+          "query": "貼紙設計",
+          "impressions": 60,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.2
+        },
+        {
+          "query": "防水貼紙",
+          "impressions": 53,
+          "clicks": 1,
+          "ctr_pct": 1.8868,
+          "position": 10.85
+        },
+        {
+          "query": "透明貼紙",
+          "impressions": 43,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.19
+        },
+        {
+          "query": "印貼紙",
+          "impressions": 26,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 42.92
+        },
+        {
+          "query": "戶外可移貼紙",
+          "impressions": 23,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.04
+        },
+        {
+          "query": "透明貼紙印刷",
+          "impressions": 18,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.78
+        },
+        {
+          "query": "觀塘印貼紙",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.53
+        }
+      ]
+    },
+    "贴纸": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 1,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 2.0,
+      "top_queries": [
+        {
+          "query": "pvc贴纸",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 2.0
+        }
+      ]
+    },
+    "宣傳單張": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 2,
+      "impressions": 273,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 33.7231,
+      "top_queries": [
+        {
+          "query": "宣傳單張印刷",
+          "impressions": 139,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.26
+        },
+        {
+          "query": "宣傳單張",
+          "impressions": 134,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 39.39
+        }
+      ]
+    },
+    "宣传单张": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "傳單": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 7,
+      "impressions": 334,
+      "clicks": 1,
+      "ctr_pct": 0.2994,
+      "impression_weighted_position": 31.4205,
+      "top_queries": [
+        {
+          "query": "宣傳單張印刷",
+          "impressions": 139,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 28.26
+        },
+        {
+          "query": "宣傳單張",
+          "impressions": 134,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 39.39
+        },
+        {
+          "query": "摺頁傳單",
+          "impressions": 45,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.49
+        },
+        {
+          "query": "傳單",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.8
+        },
+        {
+          "query": "傳單印刷",
+          "impressions": 2,
+          "clicks": 1,
+          "ctr_pct": 50.0,
+          "position": 11.0
+        },
+        {
+          "query": "印傳單",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 12.0
+        },
+        {
+          "query": "餐廳傳單",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.5
+        }
+      ]
+    },
+    "摺頁": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 4,
+      "impressions": 114,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 21.833,
+      "top_queries": [
+        {
+          "query": "摺頁印刷",
+          "impressions": 65,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 18.66
+        },
+        {
+          "query": "摺頁傳單",
+          "impressions": 45,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.49
+        },
+        {
+          "query": "摺頁加工",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 72.67
+        },
+        {
+          "query": "摺頁尺寸",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 1.0
+        }
+      ]
+    },
+    "折頁": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 2,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 7.0,
+      "top_queries": [
+        {
+          "query": "三折頁尺寸",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        }
+      ]
+    },
+    "書刊": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 5,
+      "impressions": 337,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 36.1459,
+      "top_queries": [
+        {
+          "query": "書刊印刷",
+          "impressions": 140,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.45
+        },
+        {
+          "query": "騎馬釘書刊",
+          "impressions": 76,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.42
+        },
+        {
+          "query": "膠裝書刊",
+          "impressions": 61,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 46.56
+        },
+        {
+          "query": "書刊",
+          "impressions": 58,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 44.45
+        },
+        {
+          "query": "澳門書刊印刷",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        }
+      ]
+    },
+    "书刊": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "印書": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 61,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 32.16,
+      "top_queries": [
+        {
+          "query": "印書",
+          "impressions": 61,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 32.16
+        }
+      ]
+    },
+    "教科书": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "教科書": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 64,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 39.39,
+      "top_queries": [
+        {
+          "query": "教科書 印刷",
+          "impressions": 64,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 39.39
+        }
+      ]
+    },
+    "教材": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 5,
+      "impressions": 143,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 47.7355,
+      "top_queries": [
+        {
+          "query": "教材 印刷製本",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 43.95
+        },
+        {
+          "query": "教材 印刷 製本",
+          "impressions": 36,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 45.53
+        },
+        {
+          "query": "教材 テキスト印刷",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.62
+        },
+        {
+          "query": "教材 製本",
+          "impressions": 21,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 68.86
+        },
+        {
+          "query": "教材 印刷",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 52.2
+        }
+      ]
+    },
+    "包裝盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 4,
+      "impressions": 132,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 31.8154,
+      "top_queries": [
+        {
+          "query": "包裝盒訂製",
+          "impressions": 56,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.71
+        },
+        {
+          "query": "包裝盒印刷",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 30.29
+        },
+        {
+          "query": "包裝盒",
+          "impressions": 24,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 31.92
+        },
+        {
+          "query": "食物包裝盒",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 1.0
+        }
+      ]
+    },
+    "包装盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "紙盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 5,
+      "impressions": 137,
+      "clicks": 1,
+      "ctr_pct": 0.7299,
+      "impression_weighted_position": 29.8325,
+      "top_queries": [
+        {
+          "query": "紙盒印刷",
+          "impressions": 61,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.0
+        },
+        {
+          "query": "紙盒訂製",
+          "impressions": 57,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 33.37
+        },
+        {
+          "query": "牛皮紙盒",
+          "impressions": 16,
+          "clicks": 1,
+          "ctr_pct": 6.25,
+          "position": 2.56
+        },
+        {
+          "query": "牛皮紙盒包裝",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 4.0
+        },
+        {
+          "query": "客製紙盒",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 1.0
+        }
+      ]
+    },
+    "纸盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "禮盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 3,
+      "impressions": 71,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 42.1958,
+      "top_queries": [
+        {
+          "query": "禮盒訂製",
+          "impressions": 51,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 47.86
+        },
+        {
+          "query": "禮盒訂做",
+          "impressions": 19,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.16
+        },
+        {
+          "query": "磁吸禮盒",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 1.0
+        }
+      ]
+    },
+    "礼盒": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "學校": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 2,
+      "impressions": 85,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 18.9554,
+      "top_queries": [
+        {
+          "query": "學校印刷",
+          "impressions": 71,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.89
+        },
+        {
+          "query": "學校 印刷",
+          "impressions": 14,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 29.43
+        }
+      ]
+    },
+    "学校": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "喜帖": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 8,
+      "impressions": 82,
+      "clicks": 1,
+      "ctr_pct": 1.2195,
+      "impression_weighted_position": 26.7207,
+      "top_queries": [
+        {
+          "query": "喜帖印刷",
+          "impressions": 36,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 44.78
+        },
+        {
+          "query": "印喜帖價格",
+          "impressions": 20,
+          "clicks": 1,
+          "ctr_pct": 5.0,
+          "position": 5.65
+        },
+        {
+          "query": "印喜帖價錢",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.5
+        },
+        {
+          "query": "喜帖印刷香港",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.5
+        },
+        {
+          "query": "印喜帖推薦香港",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.67
+        },
+        {
+          "query": "喜帖價錢",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.0
+        },
+        {
+          "query": "喜帖印刷少量",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.67
+        },
+        {
+          "query": "喜帖價格",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 6.0
+        }
+      ]
+    },
+    "利是封": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 9,
+      "impressions": 148,
+      "clicks": 1,
+      "ctr_pct": 0.6757,
+      "impression_weighted_position": 21.642,
+      "top_queries": [
+        {
+          "query": "利是封印刷",
+          "impressions": 59,
+          "clicks": 1,
+          "ctr_pct": 1.6949,
+          "position": 24.27
+        },
+        {
+          "query": "利是封訂製",
+          "impressions": 28,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.86
+        },
+        {
+          "query": "訂製利是封",
+          "impressions": 25,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.48
+        },
+        {
+          "query": "2027利是封",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.09
+        },
+        {
+          "query": "個人化利是封",
+          "impressions": 10,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.4
+        },
+        {
+          "query": "訂制利是封",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 26.67
+        },
+        {
+          "query": "公司利是封",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 13.8
+        },
+        {
+          "query": "利是封",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 3.0
+        },
+        {
+          "query": "燙金利是封",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.0
+        }
+      ]
+    },
+    "月曆": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 10,
+      "impressions": 303,
+      "clicks": 1,
+      "ctr_pct": 0.33,
+      "impression_weighted_position": 23.2112,
+      "top_queries": [
+        {
+          "query": "月曆印刷",
+          "impressions": 140,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 20.4
+        },
+        {
+          "query": "月曆訂製",
+          "impressions": 72,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 25.97
+        },
+        {
+          "query": "訂制月曆",
+          "impressions": 41,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.15
+        },
+        {
+          "query": "訂製月曆",
+          "impressions": 14,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.0
+        },
+        {
+          "query": "印月曆",
+          "impressions": 12,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.58
+        },
+        {
+          "query": "座檯月曆",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 47.73
+        },
+        {
+          "query": "免費座枱月曆2027",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 40.6
+        },
+        {
+          "query": "月曆印刷香港",
+          "impressions": 5,
+          "clicks": 1,
+          "ctr_pct": 20.0,
+          "position": 9.4
+        },
+        {
+          "query": "月曆尺寸",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 7.0
+        },
+        {
+          "query": "月曆 尺寸",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 3.0
+        }
+      ]
+    },
+    "月历": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 0,
+      "impressions": 0,
+      "clicks": 0,
+      "ctr_pct": null,
+      "impression_weighted_position": null,
+      "top_queries": []
+    },
+    "catalog": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 24,
+      "impressions": 323,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 20.7276,
+      "top_queries": [
+        {
+          "query": "china catalog printing",
+          "impressions": 101,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.99
+        },
+        {
+          "query": "catalogue printing china",
+          "impressions": 54,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 14.0
+        },
+        {
+          "query": "catalog printing china",
+          "impressions": 37,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.57
+        },
+        {
+          "query": "bulk catalog printing",
+          "impressions": 35,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 24.74
+        },
+        {
+          "query": "wholesale catalog printing",
+          "impressions": 32,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 16.16
+        },
+        {
+          "query": "cheap catalog printing china",
+          "impressions": 9,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 26.44
+        },
+        {
+          "query": "catalog printing costs",
+          "impressions": 8,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 35.12
+        },
+        {
+          "query": "catalogs printing china",
+          "impressions": 6,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.33
+        },
+        {
+          "query": "catalog printing factory china",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 23.2
+        },
+        {
+          "query": "catalog printing manufacturer china",
+          "impressions": 5,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 57.6
+        },
+        {
+          "query": "product catalog printing company china",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 57.75
+        },
+        {
+          "query": "custom catalog printing china",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 26.0
+        }
+      ]
+    },
+    "sticker": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 30,
+      "impressions": 167,
+      "clicks": 1,
+      "ctr_pct": 0.5988,
+      "impression_weighted_position": 18.311,
+      "top_queries": [
+        {
+          "query": "small batch stickers",
+          "impressions": 59,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 15.34
+        },
+        {
+          "query": "waterproof synthetic paper stickers",
+          "impressions": 15,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 21.93
+        },
+        {
+          "query": "small batch sticker printing",
+          "impressions": 13,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 8.92
+        },
+        {
+          "query": "small batch custom stickers",
+          "impressions": 11,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 10.0
+        },
+        {
+          "query": "custom fluorescent stickers",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 19.71
+        },
+        {
+          "query": "sticker rolls",
+          "impressions": 7,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 36.57
+        },
+        {
+          "query": "anti-counterfeit sticker manufacturer",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 64.5
+        },
+        {
+          "query": "are pvc stickers waterproof",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 11.75
+        },
+        {
+          "query": "batch stickers",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 2.25
+        },
+        {
+          "query": "stickers that don't leave residue",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 22.0
+        },
+        {
+          "query": "vinyl sticker 中文",
+          "impressions": 4,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 9.25
+        },
+        {
+          "query": "cheap die cut stickers with unique custom shapes.",
+          "impressions": 3,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 3.0
+        }
+      ]
+    },
+    "コミケ": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 110,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 30.49,
+      "top_queries": [
+        {
+          "query": "コミケ 印刷",
+          "impressions": 110,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 30.49
+        }
+      ]
+    },
+    "卒アル": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 1,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 2.0,
+      "top_queries": [
+        {
+          "query": "卒アル販売",
+          "impressions": 1,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 2.0
+        }
+      ]
+    },
+    "年賀状": {
+      "match_rule": "case-insensitive substring within independent query sheet; not exact-query KPI",
+      "matched_rows": 1,
+      "impressions": 2,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "impression_weighted_position": 2.0,
+      "top_queries": [
+        {
+          "query": "年賀状 2027",
+          "impressions": 2,
+          "clicks": 0,
+          "ctr_pct": 0.0,
+          "position": 2.0
+        }
+      ]
+    }
+  },
+  "page1_zero_click_pool_28d": [
+    {
+      "query": "c109 日期",
+      "impressions": 131,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.54
+    },
+    {
+      "query": "食品包裝印刷",
+      "impressions": 125,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.93
+    },
+    {
+      "query": "a1海報",
+      "impressions": 85,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 1.0
+    },
+    {
+      "query": "食品印刷",
+      "impressions": 72,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.01
+    },
+    {
+      "query": "大信封",
+      "impressions": 52,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 4.38
+    },
+    {
+      "query": "餐牌印刷",
+      "impressions": 44,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.2
+    },
+    {
+      "query": "即日急件",
+      "impressions": 39,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 8.26
+    },
+    {
+      "query": "澳門易拉架size",
+      "impressions": 39,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.49
+    },
+    {
+      "query": "ステッカー 小ロット",
+      "impressions": 37,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.16
+    },
+    {
+      "query": "alipay flash collect",
+      "impressions": 34,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.26
+    },
+    {
+      "query": "包裝食品 裡印",
+      "impressions": 31,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.32
+    },
+    {
+      "query": "ステッカー 印刷 小ロット",
+      "impressions": 29,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.76
+    },
+    {
+      "query": "禮物紙袋邊度買",
+      "impressions": 29,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.38
+    },
+    {
+      "query": "a1 印刷 即日",
+      "impressions": 27,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.19
+    },
+    {
+      "query": "a2 印刷 即日",
+      "impressions": 26,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.92
+    },
+    {
+      "query": "海報印刷一張",
+      "impressions": 24,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.71
+    },
+    {
+      "query": "邊度有紙袋買",
+      "impressions": 22,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.41
+    },
+    {
+      "query": "食品包装",
+      "impressions": 19,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.95
+    },
+    {
+      "query": "海報尺寸",
+      "impressions": 18,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.94
+    },
+    {
+      "query": "透明貼紙印刷",
+      "impressions": 18,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.78
+    },
+    {
+      "query": "a1 poster",
+      "impressions": 16,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 8.12
+    },
+    {
+      "query": "印刷公司報價",
+      "impressions": 16,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.94
+    },
+    {
+      "query": "噴繪布",
+      "impressions": 16,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 4.81
+    },
+    {
+      "query": "大紙袋",
+      "impressions": 15,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 1.73
+    },
+    {
+      "query": "ラベル 印刷 小ロット",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.43
+    },
+    {
+      "query": "c109 doujin",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.92
+    },
+    {
+      "query": "small batch sticker printing",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 8.92
+    },
+    {
+      "query": "印刷 企業",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.69
+    },
+    {
+      "query": "doujin printing",
+      "impressions": 12,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 8.75
+    },
+    {
+      "query": "同人紙",
+      "impressions": 12,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.0
+    },
+    {
+      "query": "2027利是封",
+      "impressions": 11,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.09
+    },
+    {
+      "query": "small batch custom stickers",
+      "impressions": 11,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.0
+    },
+    {
+      "query": "パッケージ 印刷 食品",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.1
+    },
+    {
+      "query": "信封印刷",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.7
+    },
+    {
+      "query": "畢業紀念冊香港",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.7
+    },
+    {
+      "query": "c109 時間",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.78
+    },
+    {
+      "query": "クラフト紙 パッケージ",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 2.11
+    },
+    {
+      "query": "ステッカー印刷 小ロット ロゴ",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.44
+    },
+    {
+      "query": "彩色信封",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 2.0
+    },
+    {
+      "query": "畢業紀念冊",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.44
+    },
+    {
+      "query": "電子賀卡設計價錢",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.0
+    },
+    {
+      "query": "saddle stitch 中文",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.88
+    },
+    {
+      "query": "海報紙質",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.62
+    },
+    {
+      "query": "背膠",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.5
+    },
+    {
+      "query": "c109 comiket",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.0
+    },
+    {
+      "query": "c109 配置",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.29
+    },
+    {
+      "query": "zprints",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.29
+    },
+    {
+      "query": "新蒲崗影印舖",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.14
+    },
+    {
+      "query": "a2 尺寸",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 2.0
+    },
+    {
+      "query": "a2 打印",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 8.33
+    },
+    {
+      "query": "a5 vs a6 flyer",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 6.33
+    },
+    {
+      "query": "how to import paper bags",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 7.5
+    },
+    {
+      "query": "ステッカー印刷 小ロット 企業",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 9.0
+    },
+    {
+      "query": "作業簿",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.5
+    },
+    {
+      "query": "信封印刷價格",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 4.83
+    },
+    {
+      "query": "卒業アルバム 販売サイト",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 2.83
+    },
+    {
+      "query": "同人誌印刷",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 4.67
+    },
+    {
+      "query": "環境配慮素材 紙袋",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 4.83
+    },
+    {
+      "query": "維利印刷價錢",
+      "impressions": 6,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.0
+    },
+    {
+      "query": "2027 red packet design",
+      "impressions": 5,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 3.0
+    }
+  ],
+  "striking_distance_10_20_zero_click_28d": [
+    {
+      "query": "印海報",
+      "impressions": 104,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.81
+    },
+    {
+      "query": "china catalog printing",
+      "impressions": 101,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.99
+    },
+    {
+      "query": "戶外貼紙",
+      "impressions": 84,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.12
+    },
+    {
+      "query": "騎馬釘印刷",
+      "impressions": 73,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.29
+    },
+    {
+      "query": "紙袋印刷",
+      "impressions": 72,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.07
+    },
+    {
+      "query": "可移貼紙",
+      "impressions": 71,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 12.62
+    },
+    {
+      "query": "學校印刷",
+      "impressions": 71,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.89
+    },
+    {
+      "query": "gold foil red packets",
+      "impressions": 69,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 19.62
+    },
+    {
+      "query": "海報與印刷",
+      "impressions": 68,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.25
+    },
+    {
+      "query": "poster 印刷",
+      "impressions": 66,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.24
+    },
+    {
+      "query": "印刷紙袋",
+      "impressions": 65,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.12
+    },
+    {
+      "query": "摺頁印刷",
+      "impressions": 65,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.66
+    },
+    {
+      "query": "訂做紙袋",
+      "impressions": 60,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.5
+    },
+    {
+      "query": "貼紙設計",
+      "impressions": 60,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.2
+    },
+    {
+      "query": "doujinshi printing",
+      "impressions": 59,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.22
+    },
+    {
+      "query": "small batch stickers",
+      "impressions": 59,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.34
+    },
+    {
+      "query": "catalogue printing china",
+      "impressions": 54,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.0
+    },
+    {
+      "query": "透明貼紙",
+      "impressions": 43,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.19
+    },
+    {
+      "query": "防水ステッカー",
+      "impressions": 41,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.71
+    },
+    {
+      "query": "食品包裝訂製",
+      "impressions": 41,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 13.44
+    },
+    {
+      "query": "catalog printing china",
+      "impressions": 37,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.57
+    },
+    {
+      "query": "ステッカー印刷 小ロット",
+      "impressions": 36,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.75
+    },
+    {
+      "query": "クラフト紙 パッケージ 印刷",
+      "impressions": 35,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.23
+    },
+    {
+      "query": "wholesale catalog printing",
+      "impressions": 32,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.16
+    },
+    {
+      "query": "クラフト紙 パッケージ印刷",
+      "impressions": 31,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 12.74
+    },
+    {
+      "query": "環保印刷",
+      "impressions": 28,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.75
+    },
+    {
+      "query": "pvc シール",
+      "impressions": 26,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.38
+    },
+    {
+      "query": "戶外可移貼紙",
+      "impressions": 23,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.04
+    },
+    {
+      "query": "海報size",
+      "impressions": 23,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.04
+    },
+    {
+      "query": "a4 double folding leaflet printing",
+      "impressions": 22,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.5
+    },
+    {
+      "query": "paper bag gsm",
+      "impressions": 21,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.48
+    },
+    {
+      "query": "澳門易拉架尺寸",
+      "impressions": 16,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.88
+    },
+    {
+      "query": "school exercise book printing",
+      "impressions": 15,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.47
+    },
+    {
+      "query": "eco flyer",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.57
+    },
+    {
+      "query": "poster printing hk",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.43
+    },
+    {
+      "query": "小冊子印刷",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.93
+    },
+    {
+      "query": "殺菌貼紙",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.57
+    },
+    {
+      "query": "螺旋とじ",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.29
+    },
+    {
+      "query": "食品パッケージ 製作",
+      "impressions": 14,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 13.36
+    },
+    {
+      "query": "印請帖價錢",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 17.77
+    },
+    {
+      "query": "膠片餐牌",
+      "impressions": 13,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.54
+    },
+    {
+      "query": "comiket 109",
+      "impressions": 12,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 10.75
+    },
+    {
+      "query": "ステッカー 少量",
+      "impressions": 12,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 12.08
+    },
+    {
+      "query": "a1 posters",
+      "impressions": 11,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 13.18
+    },
+    {
+      "query": "a2 ポスター プリント",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.7
+    },
+    {
+      "query": "a2印刷",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.2
+    },
+    {
+      "query": "peel and stick posters wholesale",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.0
+    },
+    {
+      "query": "x架",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 11.3
+    },
+    {
+      "query": "個人化利是封",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 13.4
+    },
+    {
+      "query": "傳單",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 16.8
+    },
+    {
+      "query": "壁掛けカレンダーサイズ",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.6
+    },
+    {
+      "query": "海報大小",
+      "impressions": 10,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.4
+    },
+    {
+      "query": "mtr poster",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.33
+    },
+    {
+      "query": "urgent printing",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 18.78
+    },
+    {
+      "query": "年曆訂製",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.22
+    },
+    {
+      "query": "證書印刷",
+      "impressions": 9,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 12.22
+    },
+    {
+      "query": "what gsm for paper bags",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 14.38
+    },
+    {
+      "query": "スパコミ ギリギリ 印刷",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 15.62
+    },
+    {
+      "query": "急件",
+      "impressions": 8,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 19.38
+    },
+    {
+      "query": "custom fluorescent stickers",
+      "impressions": 7,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 19.71
+    }
+  ],
+  "country_28d_independent_aggregates": {
+    "中国香港": {
+      "impressions": 15923,
+      "clicks": 395,
+      "ctr_pct": 2.4807,
+      "position": 13.93
+    },
+    "日本": {
+      "impressions": 3707,
+      "clicks": 54,
+      "ctr_pct": 1.4567,
+      "position": 23.03
+    },
+    "美国": {
+      "impressions": 3225,
+      "clicks": 30,
+      "ctr_pct": 0.9302,
+      "position": 15.9
+    }
+  },
+  "page_28d_top30_independent_aggregates": [
+    {
+      "url": "https://zprintpro.com/zh-hk/",
+      "impressions": 1488,
+      "clicks": 60,
+      "ctr_pct": 4.0323,
+      "position": 12.64
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/poster-printing-guide/",
+      "impressions": 1194,
+      "clicks": 11,
+      "ctr_pct": 0.9213,
+      "position": 10.86
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a2-posters/",
+      "impressions": 825,
+      "clicks": 18,
+      "ctr_pct": 2.1818,
+      "position": 12.98
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/folded-leaflet-printing-guide/",
+      "impressions": 764,
+      "clicks": 21,
+      "ctr_pct": 2.7487,
+      "position": 7.89
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/books/",
+      "impressions": 714,
+      "clicks": 2,
+      "ctr_pct": 0.2801,
+      "position": 51.31
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/roll-up-banner-printing-guide/",
+      "impressions": 582,
+      "clicks": 1,
+      "ctr_pct": 0.1718,
+      "position": 20.57
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/design-file-specs/",
+      "impressions": 549,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 5.89
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/comiket-c109/",
+      "impressions": 538,
+      "clicks": 3,
+      "ctr_pct": 0.5576,
+      "position": 9.46
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/food-boxes/",
+      "impressions": 484,
+      "clicks": 2,
+      "ctr_pct": 0.4132,
+      "position": 23.3
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/book-buying-guide/",
+      "impressions": 479,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 36.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/saddle-stitch-booklet-printing-guide/",
+      "impressions": 474,
+      "clicks": 7,
+      "ctr_pct": 1.4768,
+      "position": 16.73
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/handle-bags/",
+      "impressions": 455,
+      "clicks": 1,
+      "ctr_pct": 0.2198,
+      "position": 18.52
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/rush-printing-hk-guide/",
+      "impressions": 443,
+      "clicks": 10,
+      "ctr_pct": 2.2573,
+      "position": 8.56
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/saddle-stitch-booklets/",
+      "impressions": 424,
+      "clicks": 1,
+      "ctr_pct": 0.2358,
+      "position": 61.87
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/flyers/",
+      "impressions": 401,
+      "clicks": 3,
+      "ctr_pct": 0.7481,
+      "position": 25.78
+    },
+    {
+      "url": "https://zprintpro.com/ja/product/small-batch-stickers/",
+      "impressions": 395,
+      "clicks": 4,
+      "ctr_pct": 1.0127,
+      "position": 14.45
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/custom-calendars/",
+      "impressions": 395,
+      "clicks": 7,
+      "ctr_pct": 1.7722,
+      "position": 19.39
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/",
+      "impressions": 395,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 37.76
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/hong-kong-printing-guide/",
+      "impressions": 334,
+      "clicks": 5,
+      "ctr_pct": 1.497,
+      "position": 24.25
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/catalog-printing/",
+      "impressions": 334,
+      "clicks": 2,
+      "ctr_pct": 0.5988,
+      "position": 46.48
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/food-packaging-printing-guide/",
+      "impressions": 330,
+      "clicks": 2,
+      "ctr_pct": 0.6061,
+      "position": 7.21
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/posters/",
+      "impressions": 329,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 37.82
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/blog/certificate-printing-guide/",
+      "impressions": 325,
+      "clicks": 10,
+      "ctr_pct": 3.0769,
+      "position": 5.74
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/a1-posters/",
+      "impressions": 317,
+      "clicks": 4,
+      "ctr_pct": 1.2618,
+      "position": 12.13
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/transparent-stickers/",
+      "impressions": 316,
+      "clicks": 3,
+      "ctr_pct": 0.9494,
+      "position": 14.66
+    },
+    {
+      "url": "https://zprintpro.com/en/product/catalog-printing/",
+      "impressions": 312,
+      "clicks": 1,
+      "ctr_pct": 0.3205,
+      "position": 20.3
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/stickers/",
+      "impressions": 306,
+      "clicks": 1,
+      "ctr_pct": 0.3268,
+      "position": 37.49
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/product/waterproof-stickers/",
+      "impressions": 293,
+      "clicks": 6,
+      "ctr_pct": 2.0478,
+      "position": 9.9
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/packaging/",
+      "impressions": 290,
+      "clicks": 0,
+      "ctr_pct": 0.0,
+      "position": 43.29
+    },
+    {
+      "url": "https://zprintpro.com/zh-hk/category/paper-bags/",
+      "impressions": 287,
+      "clicks": 3,
+      "ctr_pct": 1.0453,
+      "position": 42.14
+    }
+  ],
+  "two_method_reconciliation": {
+    "2026-11-16": {
+      "7d": {
+        "method_1": {
+          "clicks": 144,
+          "impressions": 8103,
+          "weighted_position": 14.3437,
+          "focus_page1": 7
+        },
+        "method_2": {
+          "clicks": 144,
+          "impressions": 8103,
+          "weighted_position": 14.343749228680737,
+          "focus_page1": 7,
+          "query_rows": 685
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 544,
+          "impressions": 26350,
+          "weighted_position": 14.6801,
+          "focus_page1": 5
+        },
+        "method_2": {
+          "clicks": 544,
+          "impressions": 26350,
+          "weighted_position": 14.680102466793167,
+          "focus_page1": 5,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    },
+    "2026-11-19": {
+      "7d": {
+        "method_1": {
+          "clicks": 130,
+          "impressions": 8283,
+          "weighted_position": 15.5229,
+          "focus_page1": 5
+        },
+        "method_2": {
+          "clicks": 130,
+          "impressions": 8283,
+          "weighted_position": 15.522878184232768,
+          "focus_page1": 5,
+          "query_rows": 761
+        },
+        "match": true
+      },
+      "28d": {
+        "method_1": {
+          "clicks": 554,
+          "impressions": 27879,
+          "weighted_position": 14.9511,
+          "focus_page1": 6
+        },
+        "method_2": {
+          "clicks": 554,
+          "impressions": 27879,
+          "weighted_position": 14.951077872233578,
+          "focus_page1": 6,
+          "query_rows": 1000
+        },
+        "match": true
+      }
+    }
+  },
+  "reconciliation_all_match": true
+}

@@ -1,0 +1,774 @@
+{
+  "generated": "2026-11-18",
+  "ask": "议程一 价格口径 B (schema offer = MOQ 价阶) 落地后验证 — §0.23.2 方法1 机械对照",
+  "method": "typescript.transpileModule 转译真实修改后 src/lib/pricing.ts + src/lib/price-data.generated.ts, vm 沙箱调真 getProductOfferPrice(slug, locale) ×3, 与独立复算 PRICE_TABLES[defaultConfig].tiers[qty===minQuantity] 档单价 (batch/qty) 断言全等; 另交叉验证 products.ts minQuantity 真值 / 审计档 moqUnitHKD / anchor.batchPrice÷qty",
+  "inputs": {
+    "audit": ".hermes/logs/price-scale-audit-20261116.json (20 锚 SKU, 15 个 ≥5x, custom-flyers 86.8x)",
+    "priceData": "src/lib/price-data.generated.ts (PRICE_TABLE_MAP L5, getPriceTableForSlug L7491, UNIT_PRICE_ANCHORS L7496)",
+    "pricing": "src/lib/pricing.ts (getSchemaMoqTierPrice + getProductOfferPrice 分支1, 本次修改)",
+    "minQuantitySource": "src/data/products.ts (Product.minQuantity, L34 必填 number)"
+  },
+  "verdict": "FAIL",
+  "asserts": {
+    "localeRowsTotal": 57,
+    "localeRowsEqual": 57,
+    "auditHkdRows": 19,
+    "auditHkdWithinTol": 18,
+    "anchorBatchConsistent": 19,
+    "anchorBatchTotal": 19,
+    "minQtyMatchCount": 19
+  },
+  "failures": [
+    "white-card-bags: 档位 qty===100 不存在"
+  ],
+  "auditCrosscheckIssues": [
+    {
+      "slug": "roll-stickers",
+      "issue": "审计行内部矛盾: bulkUnitHKD=0.42 ≠ 自身 display_zh(anchor priceDisplay)=0.2; moqUnitHKD=7.1 与同簇行雷同, 疑复制污染",
+      "tableTruth": "PRICE_TABLES 档位单价 5.5000 与锚表 batchPrice/qty 一致 → 以表格为准",
+      "impact": "不影响落地主断言 (schema 价 vs 表格全等); 仅该审计行 ratioBefore 失真"
+    }
+  ],
+  "minQtyNotes": [
+    "custom-flyers: minQuantity 回退锚表 qty=10 (products.ts 无此 slug, 无 PDP/schema 输出)",
+    "special-fold-leaflets: minQuantity 回退锚表 qty=10 (products.ts 无此 slug, 无 PDP/schema 输出)",
+    "digital-stickers: minQuantity 回退锚表 qty=10 (products.ts 无此 slug, 无 PDP/schema 输出)",
+    "white-card-bags: products.ts minQuantity=100 ≠ 审计 moq=500"
+  ],
+  "rows": [
+    {
+      "slug": "custom-flyers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "UNIT_PRICE_ANCHORS.qty (products.ts 无此 slug, 死锚回退)",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 69,
+        "USD": 9,
+        "JPY": 1380
+      },
+      "refUnitPrice": {
+        "zh-hk": "6.90",
+        "en": "0.90",
+        "ja": "138"
+      },
+      "schemaPrice": {
+        "zh-hk": "6.90",
+        "en": "0.90",
+        "ja": "138"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 6.9,
+      "hkdUnitCheck": {
+        "computed": 6.9,
+        "audit": 6.9,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 6.9,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 86.8,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "a5-flyers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 80,
+        "USD": 10,
+        "JPY": 1600
+      },
+      "refUnitPrice": {
+        "zh-hk": "8",
+        "en": "1",
+        "ja": "160"
+      },
+      "schemaPrice": {
+        "zh-hk": "8",
+        "en": "1",
+        "ja": "160"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 8,
+      "hkdUnitCheck": {
+        "computed": 8,
+        "audit": 8,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 8,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 58.3,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "a4-flyers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 140,
+        "USD": 18,
+        "JPY": 2800
+      },
+      "refUnitPrice": {
+        "zh-hk": "14",
+        "en": "1.80",
+        "ja": "280"
+      },
+      "schemaPrice": {
+        "zh-hk": "14",
+        "en": "1.80",
+        "ja": "280"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 14,
+      "hkdUnitCheck": {
+        "computed": 14,
+        "audit": 14,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 14,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 44.6,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "folded-leaflets",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 161,
+        "USD": 21,
+        "JPY": 3220
+      },
+      "refUnitPrice": {
+        "zh-hk": "16.10",
+        "en": "2.10",
+        "ja": "322"
+      },
+      "schemaPrice": {
+        "zh-hk": "16.10",
+        "en": "2.10",
+        "ja": "322"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 16.1,
+      "hkdUnitCheck": {
+        "computed": 16.1,
+        "audit": 16.1,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 16.1,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 42,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "special-fold-leaflets",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "UNIT_PRICE_ANCHORS.qty (products.ts 无此 slug, 死锚回退)",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 161,
+        "USD": 21,
+        "JPY": 3220
+      },
+      "refUnitPrice": {
+        "zh-hk": "16.10",
+        "en": "2.10",
+        "ja": "322"
+      },
+      "schemaPrice": {
+        "zh-hk": "16.10",
+        "en": "2.10",
+        "ja": "322"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 16.1,
+      "hkdUnitCheck": {
+        "computed": 16.1,
+        "audit": 16.1,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 16.1,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 42,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "perfect-bound-books",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 308,
+        "USD": 39,
+        "JPY": 6160
+      },
+      "refUnitPrice": {
+        "zh-hk": "30.80",
+        "en": "3.90",
+        "ja": "616"
+      },
+      "schemaPrice": {
+        "zh-hk": "30.80",
+        "en": "3.90",
+        "ja": "616"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 30.8,
+      "hkdUnitCheck": {
+        "computed": 30.8,
+        "audit": 30.8,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 30.8,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 35.4,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "waterproof-stickers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 71,
+        "USD": 9,
+        "JPY": 1420
+      },
+      "refUnitPrice": {
+        "zh-hk": "7.10",
+        "en": "0.90",
+        "ja": "142"
+      },
+      "schemaPrice": {
+        "zh-hk": "7.10",
+        "en": "0.90",
+        "ja": "142"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 7.1,
+      "hkdUnitCheck": {
+        "computed": 7.1,
+        "audit": 7.1,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 7.1,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 16.9,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "digital-stickers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "UNIT_PRICE_ANCHORS.qty (products.ts 无此 slug, 死锚回退)",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 71,
+        "USD": 9,
+        "JPY": 1420
+      },
+      "refUnitPrice": {
+        "zh-hk": "7.10",
+        "en": "0.90",
+        "ja": "142"
+      },
+      "schemaPrice": {
+        "zh-hk": "7.10",
+        "en": "0.90",
+        "ja": "142"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 7.1,
+      "hkdUnitCheck": {
+        "computed": 7.1,
+        "audit": 7.1,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 7.1,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 16.9,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "roll-stickers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 55,
+        "USD": 7,
+        "JPY": 1100
+      },
+      "refUnitPrice": {
+        "zh-hk": "5.50",
+        "en": "0.70",
+        "ja": "110"
+      },
+      "schemaPrice": {
+        "zh-hk": "5.50",
+        "en": "0.70",
+        "ja": "110"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 7.1,
+      "hkdUnitCheck": {
+        "computed": 5.5,
+        "audit": 7.1,
+        "ok": false
+      },
+      "anchorBatchPerQtyHKD": 5.5,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 16.9,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "saddle-stitch-booklets",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 179,
+        "USD": 23,
+        "JPY": 3580
+      },
+      "refUnitPrice": {
+        "zh-hk": "17.90",
+        "en": "2.30",
+        "ja": "358"
+      },
+      "schemaPrice": {
+        "zh-hk": "17.90",
+        "en": "2.30",
+        "ja": "358"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 17.9,
+      "hkdUnitCheck": {
+        "computed": 17.9,
+        "audit": 17.9,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 17.9,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 15.5,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "same-day-flyers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 184,
+        "USD": 24,
+        "JPY": 3680
+      },
+      "refUnitPrice": {
+        "zh-hk": "18.40",
+        "en": "2.40",
+        "ja": "368"
+      },
+      "schemaPrice": {
+        "zh-hk": "18.40",
+        "en": "2.40",
+        "ja": "368"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 18.4,
+      "hkdUnitCheck": {
+        "computed": 18.4,
+        "audit": 18.4,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 18.4,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 14.7,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "eco-flyers",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 80,
+        "USD": 10,
+        "JPY": 1600
+      },
+      "refUnitPrice": {
+        "zh-hk": "8",
+        "en": "1",
+        "ja": "160"
+      },
+      "schemaPrice": {
+        "zh-hk": "8",
+        "en": "1",
+        "ja": "160"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 8,
+      "hkdUnitCheck": {
+        "computed": 8,
+        "audit": 8,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 8,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 11.1,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "a2-posters",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 160,
+        "USD": 20,
+        "JPY": 3200
+      },
+      "refUnitPrice": {
+        "zh-hk": "16",
+        "en": "2",
+        "ja": "320"
+      },
+      "schemaPrice": {
+        "zh-hk": "16",
+        "en": "2",
+        "ja": "320"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 16,
+      "hkdUnitCheck": {
+        "computed": 16,
+        "audit": 16,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 16,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 7.3,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "exercise-books",
+      "minQuantity_productsTs": 10,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 10,
+      "minQty_match": true,
+      "tierQty": 10,
+      "tierBatch": {
+        "HKD": 53,
+        "USD": 7,
+        "JPY": 1060
+      },
+      "refUnitPrice": {
+        "zh-hk": "5.30",
+        "en": "0.70",
+        "ja": "106"
+      },
+      "schemaPrice": {
+        "zh-hk": "5.30",
+        "en": "0.70",
+        "ja": "106"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 5.3,
+      "hkdUnitCheck": {
+        "computed": 5.3,
+        "audit": 5.3,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 5.3,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 5.9,
+      "ratioAfter_zh_vsTableHKD": 1
+    },
+    {
+      "slug": "corrugated-boxes",
+      "minQuantity_productsTs": 500,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 500,
+      "minQty_match": true,
+      "tierQty": 500,
+      "tierBatch": {
+        "HKD": 1517,
+        "USD": 194,
+        "JPY": 30340
+      },
+      "refUnitPrice": {
+        "zh-hk": "3.03",
+        "en": "0.39",
+        "ja": "60.68"
+      },
+      "schemaPrice": {
+        "zh-hk": "3.03",
+        "en": "0.39",
+        "ja": "60.68"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 3.03,
+      "hkdUnitCheck": {
+        "computed": 3.034,
+        "audit": 3.03,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 3.034,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 5.4,
+      "ratioAfter_zh_vsTableHKD": 0.999
+    },
+    {
+      "slug": "tuck-end-boxes",
+      "minQuantity_productsTs": 500,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 500,
+      "minQty_match": true,
+      "tierQty": 500,
+      "tierBatch": {
+        "HKD": 1538,
+        "USD": 197,
+        "JPY": 30760
+      },
+      "refUnitPrice": {
+        "zh-hk": "3.08",
+        "en": "0.39",
+        "ja": "61.52"
+      },
+      "schemaPrice": {
+        "zh-hk": "3.08",
+        "en": "0.39",
+        "ja": "61.52"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 3.08,
+      "hkdUnitCheck": {
+        "computed": 3.076,
+        "audit": 3.08,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 3.076,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 4.4,
+      "ratioAfter_zh_vsTableHKD": 1.001
+    },
+    {
+      "slug": "white-card-boxes",
+      "minQuantity_productsTs": 500,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 500,
+      "minQty_match": true,
+      "tierQty": 500,
+      "tierBatch": {
+        "HKD": 129,
+        "USD": 17,
+        "JPY": 2580
+      },
+      "refUnitPrice": {
+        "zh-hk": "0.26",
+        "en": "0.03",
+        "ja": "5.16"
+      },
+      "schemaPrice": {
+        "zh-hk": "0.26",
+        "en": "0.03",
+        "ja": "5.16"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 0.26,
+      "hkdUnitCheck": {
+        "computed": 0.258,
+        "audit": 0.26,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 0.258,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 2.9,
+      "ratioAfter_zh_vsTableHKD": 1.008
+    },
+    {
+      "slug": "gang-run-card-boxes",
+      "minQuantity_productsTs": 500,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 500,
+      "minQty_match": true,
+      "tierQty": 500,
+      "tierBatch": {
+        "HKD": 272,
+        "USD": 35,
+        "JPY": 5440
+      },
+      "refUnitPrice": {
+        "zh-hk": "0.54",
+        "en": "0.07",
+        "ja": "10.88"
+      },
+      "schemaPrice": {
+        "zh-hk": "0.54",
+        "en": "0.07",
+        "ja": "10.88"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 0.54,
+      "hkdUnitCheck": {
+        "computed": 0.544,
+        "audit": 0.54,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 0.544,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 2.5,
+      "ratioAfter_zh_vsTableHKD": 0.993
+    },
+    {
+      "slug": "a1-posters",
+      "minQuantity_productsTs": 1,
+      "minQuantity_source": "products.ts",
+      "moq_audit": 1,
+      "minQty_match": true,
+      "tierQty": 1,
+      "tierBatch": {
+        "HKD": 45,
+        "USD": 6,
+        "JPY": 900
+      },
+      "refUnitPrice": {
+        "zh-hk": "45",
+        "en": "6",
+        "ja": "900"
+      },
+      "schemaPrice": {
+        "zh-hk": "45",
+        "en": "6",
+        "ja": "900"
+      },
+      "schemaCurrency": {
+        "zh-hk": "HKD",
+        "en": "USD",
+        "ja": "JPY"
+      },
+      "auditMoqUnitHKD": 45,
+      "hkdUnitCheck": {
+        "computed": 45,
+        "audit": 45,
+        "ok": true
+      },
+      "anchorBatchPerQtyHKD": 45,
+      "anchorConsistent": true,
+      "ratioBefore_audit": 1.6,
+      "ratioAfter_zh_vsTableHKD": 1
+    }
+  ],
+  "tsc": {
+    "command": "node node_modules/typescript/bin/tsc --noEmit (Select-String \"error TS\" | Measure-Object)",
+    "errorCount": 54,
+    "baseline": 54,
+    "note": "54=54 持平; src/lib/pricing.ts 0 新增错误 (匹配 pricing.ts 的错误全为存量 quote-engine/__tests__/debug-pricing.ts)"
+  },
+  "sixFieldsUntouched": {
+    "seoTs": "src/lib/seo.ts generateProductJsonLd offers: validFrom/priceValidUntil/sku/availability/itemCondition 未改 (只换 offerData.price 来源)",
+    "schemaExtensionsTs": "src/lib/seo/schema-extensions.ts generateCategoryItemListJsonLd offers: 同上未改, price 仍经 getProductOfferPrice 同源取得 (§0.20.5 同源一并改)",
+    "merchantFeed": "src/app/api/merchant-feed/[locale]/route.ts:148 同源 getProductOfferPrice, 随分支1一并切换为 MOQ 档价 (GMC 价格准确性即为本次整改目标)"
+  },
+  "displayUntouched": "显示层 getDisplayAnchor (pricing.ts) → getUnitPriceAnchor 原样保留; page.tsx offerData (L214) 仅进 generateProductJsonLd, 不进 hero/title/desc"
+}

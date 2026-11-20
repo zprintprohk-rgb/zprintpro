@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T10:22:36.877Z",
+ "generated_at": "2026-11-14T12:20:24.246Z",
  "online": true,
  "site": "https://zprintpro.com",
  "segments": [
@@ -2756,7 +2756,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192867",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192899",
    "reason": ""
   },
   {
@@ -2765,7 +2765,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=181965",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=181997",
    "reason": ""
   },
   {
@@ -2774,7 +2774,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194010",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=194042",
    "reason": ""
   },
   {
@@ -2783,7 +2783,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192167",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=192199",
    "reason": ""
   },
   {
@@ -2792,7 +2792,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=218800",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=218832",
    "reason": ""
   },
   {
@@ -2801,7 +2801,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=187164",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=187196",
    "reason": ""
   },
   {
@@ -2810,7 +2810,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=175081",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=175113",
    "reason": ""
   },
   {
@@ -2819,7 +2819,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195584",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=195616",
    "reason": ""
   },
   {
@@ -2828,7 +2828,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=170480",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=170512",
    "reason": ""
   },
   {
@@ -2837,7 +2837,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=212560",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=212680",
    "reason": ""
   },
   {
@@ -2846,7 +2846,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=211414",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=211534",
    "reason": ""
   },
   {
@@ -2855,7 +2855,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191112",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=191232",
    "reason": ""
   },
   {
@@ -2864,7 +2864,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=229398",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=229518",
    "reason": ""
   },
   {
@@ -2873,7 +2873,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=255315",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=255435",
    "reason": ""
   },
   {
@@ -2882,7 +2882,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=225546",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=225666",
    "reason": ""
   },
   {
@@ -2891,7 +2891,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=208317",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=208437",
    "reason": ""
   },
   {
@@ -2900,7 +2900,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=227690",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=227810",
    "reason": ""
   },
   {
@@ -2909,7 +2909,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=185454",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=185574",
    "reason": ""
   },
   {
@@ -2918,7 +2918,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=187038",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=187090",
    "reason": ""
   },
   {
@@ -2927,7 +2927,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183763",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=183815",
    "reason": ""
   },
   {
@@ -2936,7 +2936,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167313",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=167365",
    "reason": ""
   },
   {
@@ -2945,7 +2945,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193942",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=193994",
    "reason": ""
   },
   {
@@ -2954,7 +2954,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=215929",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=215981",
    "reason": ""
   },
   {
@@ -2963,7 +2963,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189841",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=189893",
    "reason": ""
   },
   {
@@ -2972,7 +2972,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=176905",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=176957",
    "reason": ""
   },
   {
@@ -2981,7 +2981,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=196701",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=196753",
    "reason": ""
   },
   {
@@ -2990,7 +2990,7 @@
    "seg": 12,
    "name": "Schema 块",
    "status": "PASS",
-   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=166390",
+   "evidence": "generated=[WebSite,Article,BreadcrumbList,SpeakableSpecification,FAQPage,HowTo] 内嵌=[] blocks=6+0 len=166442",
    "reason": ""
   }
  ]

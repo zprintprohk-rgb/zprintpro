@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "verified_at": "2026-11-19 18:02 +08:00",
+  "lane": "ZP-cron-watchdog",
+  "verdict": "CANARY_NOT_APPLIED_NATURAL_RUN_NOT_VERIFIED",
+  "apply_result": {
+    "path": ".hermes/backups/harness-s4u-20261119-143944/apply-result.json",
+    "harness_applied": true,
+    "watchdog_canary_invoked": false,
+    "production_task_started": false,
+    "outcome": "FAILED_PARTIAL_STATE_POSSIBLE",
+    "error": "Set-ScheduledTask rejected RestartInterval=PT5M with HRESULT 0x80041318; Harness updates remain applied and read-back verified."
+  },
+  "four_party_reconciliation": {
+    "scheduler": {
+      "status": "FAIL_CANARY_NOT_CHANGED",
+      "LogonType": "Interactive",
+      "StartWhenAvailable": false,
+      "RestartCount": 2,
+      "RestartInterval": "PT5M",
+      "LastRunTime": "2026-11-19 09:03:15",
+      "LastTaskResult": 2147946720,
+      "LastTaskResultHex": "0x800710E0",
+      "NextRunTime": "2026-11-20 06:43:00"
+    },
+    "wrapper_log": {
+      "status": "NO_CURRENT_DAY_NATURAL_RUN",
+      "source": ".hermes/logs/cron-ZP-cron-watchdog.log",
+      "latest_observed_start": "2026-11-13 06:43:01.62",
+      "latest_observed_end": "2026-11-13 06:43:07.90",
+      "latest_observed_exit": 1
+    },
+    "results_bus": {
+      "status": "NO_CURRENT_DAY_WATCHDOG_RECORD",
+      "source": ".hermes/logs/lane-runs.jsonl",
+      "records_observed": 129,
+      "note": "The bus is a lane finalization record; watchdog requires scheduler, wrapper and same-day report reconciliation as well."
+    },
+    "same_day_report": {
+      "status": "MISSING",
+      "expected": ".hermes/logs/2026-11-19-ZP-cron-watchdog.md",
+      "alert_log_latest_entry": "2026-11-13 06:43:07"
+    }
+  },
+  "repair_preparation": {
+    "script": "scripts/repair-zp-scheduler-logon.ps1",
+    "change": "RestartInterval changed from 5 minutes to 10 minutes after the observed Set-ScheduledTask validation error.",
+    "syntax_check": "PASS",
+    "ascii_check": "PASS",
+    "canary_default_scope_unchanged": true,
+    "applied_by_this_agent": false
+  },
+  "next_gate": "Administrator reruns canary-only repair with a new BackupDir. Do not use -All. After the next natural run, repeat all four checks; configuration success alone is not recovery."
+}

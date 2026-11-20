@@ -1,7 +1,7 @@
 ﻿{
-    "audited_at":  "2026-11-14 10:17:20 +08:00",
-    "mode":  "audit_only",
-    "administrator":  false,
+    "audited_at":  "2026-11-20 18:56:18 +08:00",
+    "mode":  "before_apply",
+    "administrator":  true,
     "note":  "Values are configuration metadata only; no credentials are read or displayed.",
     "tasks":  [
                   {
@@ -15,8 +15,8 @@
                       "RestartInterval":  "PT5M",
                       "MultipleInstances":  "IgnoreNew",
                       "LastTaskResult":  2147946720,
-                      "LastRunTime":  "11/13/2026 21:32:01",
-                      "NextRunTime":  "11/14/2026 21:17:00"
+                      "LastRunTime":  "11/19/2026 23:20:19",
+                      "NextRunTime":  "11/20/2026 21:17:00"
                   },
                   {
                       "Name":  "ZP-gsc-feedback",
@@ -28,9 +28,9 @@
                       "RestartCount":  2,
                       "RestartInterval":  "PT5M",
                       "MultipleInstances":  "IgnoreNew",
-                      "LastTaskResult":  2147946720,
-                      "LastRunTime":  "11/13/2026 21:32:01",
-                      "NextRunTime":  "11/14/2026 20:13:00"
+                      "LastTaskResult":  1,
+                      "LastRunTime":  "11/19/2026 20:13:01",
+                      "NextRunTime":  "11/20/2026 20:13:00"
                   },
                   {
                       "Name":  "ZP-weekly-meta",
@@ -56,9 +56,9 @@
                       "RestartCount":  2,
                       "RestartInterval":  "PT5M",
                       "MultipleInstances":  "IgnoreNew",
-                      "LastTaskResult":  0,
-                      "LastRunTime":  "11/07/2026 23:47:00",
-                      "NextRunTime":  "11/14/2026 23:47:00"
+                      "LastTaskResult":  2147946720,
+                      "LastRunTime":  "11/15/2026 18:25:40",
+                      "NextRunTime":  "11/21/2026 23:47:00"
                   },
                   {
                       "Name":  "ZP-monthly-matrix",
@@ -85,8 +85,8 @@
                       "RestartInterval":  "PT5M",
                       "MultipleInstances":  "IgnoreNew",
                       "LastTaskResult":  2147946720,
-                      "LastRunTime":  "11/14/2026 08:51:14",
-                      "NextRunTime":  "11/15/2026 07:10:00"
+                      "LastRunTime":  "11/20/2026 09:06:38",
+                      "NextRunTime":  "11/21/2026 07:10:00"
                   },
                   {
                       "Name":  "ZP-cron-watchdog",
@@ -99,8 +99,8 @@
                       "RestartInterval":  "PT5M",
                       "MultipleInstances":  "IgnoreNew",
                       "LastTaskResult":  2147946720,
-                      "LastRunTime":  "11/14/2026 08:51:14",
-                      "NextRunTime":  "11/15/2026 06:43:00"
+                      "LastRunTime":  "11/20/2026 09:06:38",
+                      "NextRunTime":  "11/21/2026 06:43:00"
                   }
               ]
 }
