@@ -4,10 +4,12 @@ interface Props {
   locale: string;
 }
 
+// 2026-11-21 真值修復 (TASK-BANNER-RUSH-TRUTH): 移除無條件「明天12點前到」承諾，
+// 改為有條件口徑（截稿/產能/送達時段以報價確認），與 11-20 即日傳單/A2 拍板單一致；zh-hk 簡繁錯字「速递」一併修正。
 const copy: Record<string, { text: string; sub: string }> = {
-  'zh-hk': { text: '印刷即日速递送货', sub: '今天下單·明天12點前到' },
-  'en': { text: 'Same-Day Rush Delivery', sub: 'Order today·By 12PM tomorrow' },
-  'ja': { text: '即日速達配送', sub: '本日注文・翌日12時まで' },
+  'zh-hk': { text: '印刷即日速遞送貨', sub: '今天下單 · 急件截稿與送達以報價確認' },
+  'en': { text: 'Same-Day Rush Delivery', sub: 'Order today · rush cutoff & timing confirmed at quote' },
+  'ja': { text: '即日速達配送', sub: '本日注文・特急締切・配送は見積りで確認' },
 };
 
 export default function RushDeliveryBadge({ locale }: Props) {
